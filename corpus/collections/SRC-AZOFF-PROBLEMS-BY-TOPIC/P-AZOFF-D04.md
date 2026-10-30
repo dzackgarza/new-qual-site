@@ -5,7 +5,10 @@ kind: problem
 title: Limits of entire functions converging uniformly on line segments
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Entire Functions
+  - Cauchy Integral Formula
 relations: []
 review: draft
 audit:

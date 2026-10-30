@@ -5,7 +5,9 @@ kind: problem
 title: Cauchy-type integrals are analytic off the curve
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Holomorphic Functions
+  - Cauchy Integral Formula
 relations: []
 review: draft
 audit:

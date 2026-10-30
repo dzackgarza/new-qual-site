@@ -5,7 +5,8 @@ kind: problem
 title: Riemann integrability of $g$ when $\abs{g(x)-g(y)}\le\abs{f(x)-f(y)}$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Riemann Integration
 relations: []
 review: draft
 audit:

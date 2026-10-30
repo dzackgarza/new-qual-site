@@ -5,7 +5,10 @@ kind: problem
 title: Locally uniform limits of analytic functions are analytic
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Morera's Theorem
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

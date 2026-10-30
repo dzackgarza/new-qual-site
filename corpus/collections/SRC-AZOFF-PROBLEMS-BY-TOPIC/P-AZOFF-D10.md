@@ -5,7 +5,9 @@ kind: problem
 title: Liouville's theorem via Cauchy's formula
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Liouville's Theorem
+  - Cauchy Integral Formula
 relations: []
 review: draft
 audit:

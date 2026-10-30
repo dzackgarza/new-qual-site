@@ -5,7 +5,9 @@ kind: problem
 title: Fourier transforms of compactly supported continuous functions are entire
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Entire Functions
+  - Morera's Theorem
 relations: []
 review: draft
 audit:

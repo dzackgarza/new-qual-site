@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA23E
 kind: problem
-title: "Continuous function analytic off the real line is entire"
+title: A continuous function analytic off the real line is entire
 classification:
   areas:
   - complex-analysis

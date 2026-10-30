@@ -5,7 +5,9 @@ kind: problem
 title: No polynomials converge uniformly to $1/z$ on the unit circle
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Contour Integration
 relations: []
 review: draft
 audit:

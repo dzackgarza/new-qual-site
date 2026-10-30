@@ -5,7 +5,9 @@ kind: problem
 title: Cauchy's theorem for rectangles via Green's theorem
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy's Theorem
+  - Green's Theorem
 relations: []
 review: draft
 audit:
