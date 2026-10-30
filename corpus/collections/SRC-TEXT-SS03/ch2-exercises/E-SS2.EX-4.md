@@ -65,3 +65,7 @@ $$
 $$
 for every $\xi\in\CC$.
 :::
+
+::: {.remark title="Variations"}
+A common form of this exercise lets the reader assume the identity for real $\xi$ and asks only for the extension to all $\xi\in\CC$, with every step justified: both sides are entire functions of $\xi$ (the integral by differentiation under the integral sign, or Morera with Fubini), and they agree on $\RR$, so they agree on $\CC$ by the identity theorem.
+:::
