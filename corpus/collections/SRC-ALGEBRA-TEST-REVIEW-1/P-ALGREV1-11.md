@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGREV1-11
 kind: problem
-title: Equal coprime powers in an integral domain
+title: Equal powers with distinct exponents in an integral domain
 classification:
   areas:
   - algebra

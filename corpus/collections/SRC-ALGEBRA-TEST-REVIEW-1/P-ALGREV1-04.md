@@ -25,9 +25,11 @@ audit:
 ::: {.problem}
 Suppose that $\phi:\ZZ_8\to\ZZ_{20}$ is a group homomorphism with $\phi(3)=15$.
 
-1. Determine $\phi(x)$.
-2. Determine the image and kernel of $\phi$.
-3. Determine $\phi^{-1}(5)$.
+(a) Determine $\phi(x)$.
+
+(b) Determine the image and kernel of $\phi$.
+
+(c) Determine $\phi^{-1}(5)$.
 :::
 
 ::: {.solution}
