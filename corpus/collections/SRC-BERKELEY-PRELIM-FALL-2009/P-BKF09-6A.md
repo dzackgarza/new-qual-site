@@ -6,7 +6,8 @@ title: Finite continued fractions as ratios of determinants
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

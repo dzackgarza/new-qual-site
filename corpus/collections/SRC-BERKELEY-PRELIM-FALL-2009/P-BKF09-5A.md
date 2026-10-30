@@ -6,7 +6,8 @@ title: Minkowski sum of closed connected subsets of $\RR^2$ need not be closed
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 ---

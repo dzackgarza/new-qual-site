@@ -6,7 +6,8 @@ title: Solution of $xy'+y=y^2$ with $y(1)=2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 ---

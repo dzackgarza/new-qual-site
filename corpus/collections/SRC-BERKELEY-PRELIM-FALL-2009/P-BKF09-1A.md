@@ -6,7 +6,8 @@ title: Generating function $\sum p(k)z^k$ of a polynomial sequence is rational
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 ---

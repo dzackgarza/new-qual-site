@@ -6,7 +6,8 @@ title: Convergence of the improper integral $\int_1^\infty x^2\cos(x^\beta)\,dx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 ---

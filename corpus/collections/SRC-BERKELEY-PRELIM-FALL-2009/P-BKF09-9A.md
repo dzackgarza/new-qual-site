@@ -6,7 +6,8 @@ title: Locally uniform convergence of $(1+z/n)^n$ to $e^z$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

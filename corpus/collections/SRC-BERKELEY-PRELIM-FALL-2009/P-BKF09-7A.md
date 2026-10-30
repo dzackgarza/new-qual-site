@@ -6,7 +6,8 @@ title: The Schwarzian derivative is holomorphic at a simple pole
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

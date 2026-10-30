@@ -6,7 +6,8 @@ title: Number of fifth powers in $\ZZ/6464\ZZ$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 ---

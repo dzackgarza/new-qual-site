@@ -6,7 +6,8 @@ title: No polynomial in the entries of a $2\times2$ matrix always gives an eigen
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

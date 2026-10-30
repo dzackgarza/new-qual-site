@@ -6,7 +6,8 @@ title: Real matrices with $P^TP=P$ are orthogonal projections $A(A^TA)^{-1}A^T$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 ---

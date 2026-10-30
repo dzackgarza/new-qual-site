@@ -6,7 +6,8 @@ title: The numerical range of a normal matrix is a convex polygon
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 ---
