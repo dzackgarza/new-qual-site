@@ -26,13 +26,11 @@ audit:
 ---
 
 ::: {.problem}
-8. Let h be a harmonic function on the punctured disk
-
+8. Let $h$ be a harmonic function on the punctured disk
 $$
-U : = \left\{ z \in \CC : 0 < \abs{ z } < 1 \right\} .
+U \coloneqq \{z \in \CC \st 0 < \abs{z} < 1\}.
 $$
-
-Show that there exists a constant $c \in \RR$ and a holomorphic function f on U such that $\mathrm { R e } f ( z ) = h ( z ) + c \log \abs{ z }$ for all $z \in U$
+Show that there exists a constant $c \in \RR$ and a holomorphic function $f$ on $U$ such that $\Re f(z) = h(z) + c\log\abs{z}$ for all $z \in U$.
 :::
 
 ::: {.solution}

@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Compute: $\int _ { 0 } ^ { \infty } { \frac { d x } { 1 + x ^ { 3 } } } .$
+Problem 3. Compute: $\displaystyle\int_{0}^{\infty} \frac{dx}{1 + x^{3}}$.
 :::
 
 ::: {.solution}

@@ -27,9 +27,8 @@ audit:
 
 ::: {.problem}
 5. Use contour integration to evaluate
-
 $$
-\int _ { 0 } ^ { + \infty } { \frac { d x } { x ^ { 1 / 3 } ( 1 + x ) } } .
+\int_{0}^{+\infty} \frac{dx}{x^{1/3}(1 + x)}.
 $$
 :::
 

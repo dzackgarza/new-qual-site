@@ -26,12 +26,10 @@ audit:
 
 ::: {.problem}
 7. How many zeros does the polynomial
-
 $$
-z ^ { 9 } + z ^ { 5 } - 8 z ^ { 3 } - z + 2
+z^{9} + z^{5} - 8z^{3} - z + 2
 $$
-
-have between the circles $\{ \abs{ z } = 1 \}$ and $\{ \abs{ z } = 2 \}$ . Justify your answer.
+have between the circles $\{\abs{z} = 1\}$ and $\{\abs{z} = 2\}$? Justify your answer.
 :::
 
 ::: {.solution}

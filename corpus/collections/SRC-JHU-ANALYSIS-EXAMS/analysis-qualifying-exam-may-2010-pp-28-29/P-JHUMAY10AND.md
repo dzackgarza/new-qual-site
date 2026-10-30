@@ -25,13 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-4. Let h be a harmonic function on the domain
-
+4. Let $h$ be a harmonic function on the domain
 $$
-U : = \left\{ z \in \CC : \abs{ z } > 1 \right\} .
+U \coloneqq \{z \in \CC \st \abs{z} > 1\}.
 $$
-
-Show that there exists a constant $c \in \RR$ and a holomorphic function $f$ on $U$ such that $\mathrm { R e } f ( z ) = h ( z ) + c \log \abs{ z }$ for all $z \in U$
+Show that there exists a constant $c \in \RR$ and a holomorphic function $f$ on $U$ such that $\Re f(z) = h(z) + c\log\abs{z}$ for all $z \in U$.
 :::
 
 ::: {.solution}

@@ -26,9 +26,9 @@ audit:
 ---
 
 ::: {.problem}
-2. (a) (15 points) Show that there is no one-to-one holomorphic mapping of the open annulus $\{ z : 1 < \abs{ z } < 2 \}$ onto the punctured unit disc $\{ z : 0 < \abs{ z } < 1 \}$ . (HINT: consider the inverse mapping)
+2. (a) (15 points) Show that there is no one-to-one holomorphic mapping of the open annulus $\{z \st 1 < \abs{z} < 2\}$ onto the punctured unit disc $\{z \st 0 < \abs{z} < 1\}$. (HINT: consider the inverse mapping)
 
-(b) (5 points) Give an example of a one-to-one $C ^ { \infty }$ mapping of the open annulus $\{ z : 1 < \abs{ z } < 2 \}$ onto the punctured unit disc $\{ z : 0 < \abs{ z } < 1 \}$
+(b) (5 points) Give an example of a one-to-one $C^{\infty}$ mapping of the open annulus $\{z \st 1 < \abs{z} < 2\}$ onto the punctured unit disc $\{z \st 0 < \abs{z} < 1\}$.
 :::
 
 ::: {.solution}

@@ -27,12 +27,10 @@ audit:
 
 ::: {.problem}
 2. How many solutions does the equation
-
 $$
-z + e ^ { - z } = 2 + i
+z + e^{-z} = 2 + i
 $$
-
-have in the half-plane Re $z > 0 ?$ Prove that your answer is correct.
+have in the half-plane $\Re z > 0$? Prove that your answer is correct.
 :::
 
 ::: {.solution}

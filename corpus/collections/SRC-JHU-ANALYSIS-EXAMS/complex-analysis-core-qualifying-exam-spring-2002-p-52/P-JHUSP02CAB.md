@@ -27,12 +27,10 @@ audit:
 
 ::: {.problem}
 2. Evaluate the integral
-
 $$
-\int _ { 0 } ^ { 2 \pi } { \frac { d x } { a ^ { 2 } + \cos ^ { 2 } x } } .
+\int_{0}^{2\pi} \frac{dx}{a^{2} + \cos^{2} x},
 $$
-
-Where $a > 1$
+where $a > 1$.
 :::
 
 ::: {.solution}

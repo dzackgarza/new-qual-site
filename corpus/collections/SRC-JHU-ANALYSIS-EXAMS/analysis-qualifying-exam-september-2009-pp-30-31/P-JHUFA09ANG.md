@@ -26,11 +26,9 @@ audit:
 ---
 
 ::: {.problem}
-7. Let $f:H\to D$ be a holomorphic map from the upper half plane
+7. Let $f \colon H \to D$ be a holomorphic map from the upper half plane $H = \{z \in \CC \st \Im z > 0\}$ to the unit disk $D = \{z \in \CC \st \abs{z} < 1\}$.
 
-$H = \left\{ z \in \CC : \operatorname { I m } z > 0 \right\}$ to the unit disk $D = \{ z \in \CC : \abs{ z } < 1 \}$
-
-Suppose that $f ( i ) = 1 / 2$ . Determine the maximal possible value of $\abs{ f ^ { \prime } ( i ) }$
+Suppose that $f(i) = 1/2$. Determine the maximal possible value of $\abs{f'(i)}$.
 :::
 
 ::: {.solution}

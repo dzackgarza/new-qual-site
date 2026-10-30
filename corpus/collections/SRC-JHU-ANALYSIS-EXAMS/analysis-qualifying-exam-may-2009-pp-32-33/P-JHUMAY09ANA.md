@@ -26,12 +26,10 @@ audit:
 ---
 
 ::: {.problem}
-1. Find all meromorphic functions f on C such that
-
+1. Find all meromorphic functions $f$ on $\CC$ such that
 $$
-\abs{ f ( z ) } \leq { \frac { \log ( 2 + \abs{ z } ^ { 2 } ) } { \abs{ z } } } \qquad { \mathrm { f o r ~ a l l ~ } } z \neq 0 .
+\abs{f(z)} \leq \frac{\log(2 + \abs{z}^{2})}{\abs{z}} \qquad \text{for all } z \neq 0.
 $$
-
 Give explicit formulas for the functions and give a proof for your answer.
 :::
 

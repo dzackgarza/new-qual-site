@@ -26,9 +26,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $D=\{z\in\CC:\abs{z}<1\}$ and $H=\{w\in\CC:\operatorname{Im}w>0\}$. Let $f:D\to H$ be holomorphic.
+Let $D = \{z \in \CC \st \abs{z} < 1\}$ and $H = \{w \in \CC \st \Im w > 0\}$. Let $f \colon D \to H$ be holomorphic.
 
-Suppose that $f ( 0 ) = 3 i$ . Find the maximal possible value of $\abs{ f ^ { \prime } ( 0 ) }$
+Suppose that $f(0) = 3i$. Find the maximal possible value of $\abs{f'(0)}$.
 :::
 
 ::: {.solution}

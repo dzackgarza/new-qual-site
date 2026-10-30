@@ -25,19 +25,16 @@ audit:
 ---
 
 ::: {.problem}
-Question 1.2. Fix a measurable function $f : \RR ^ { 2 }$ R and, for every $x , y \in \RR ,$ , let
-
+Question 1.2. Fix a measurable function $f \colon \RR^{2} \to \RR$ and, for every $x, y \in \RR$, let
 $$
-f _ { x } : \RR \to \RR a n d f _ { y } : \RR \to \RR
+f_{x} \colon \RR \to \RR \quad \text{and} \quad f_{y} \colon \RR \to \RR
 $$
-
-be given by $f _ { x } ( z ) = f ( x , z )$ and $f _ { y } ( z ) = f ( z , y )$ . Show that there exists such an f so that $f _ { x } \in L ^ { 1 } ( \RR )$ for a.e. x and $f _ { y } \in L ^ { 1 } ( \RR )$ for a.e. y but
-
+be given by $f_{x}(z) = f(x, z)$ and $f_{y}(z) = f(z, y)$. Show that there exists such an $f$ so that $f_{x} \in L^{1}(\RR)$ for a.e. $x$ and $f_{y} \in L^{1}(\RR)$ for a.e. $y$ but
 $$
-\int _ { \RR } \left( \int _ { \RR } f _ { x } ( y ) d y \right) d x \neq \int _ { \RR } \left( \int _ { \RR } f _ { y } ( x ) d x \right) d y .
+\int_{\RR} \left(\int_{\RR} f_{x}(y) \, dy\right) dx \neq \int_{\RR} \left(\int_{\RR} f_{y}(x) \, dx\right) dy.
 $$
 
-What does Fubini’s theorem imply about such $f ?$ What about Tonelli’s theorem?
+What does Fubini's theorem imply about such $f$? What about Tonelli's theorem?
 :::
 
 ::: {.solution}

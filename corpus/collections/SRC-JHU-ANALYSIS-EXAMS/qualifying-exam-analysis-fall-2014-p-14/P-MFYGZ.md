@@ -33,19 +33,15 @@ audit:
 ---
 
 ::: {.problem}
-2. Let $f \in L ^ { 1 } ( \RR ^ { d } )$ and $M _ { f }$ denote the Hardy-Littlewood maximal function of $f ;$ in other words,
-
+2. Let $f \in L^{1}(\RR^{d})$ and $M_{f}$ denote the Hardy–Littlewood maximal function of $f$; in other words,
 $$
-M _ { f } ( x ) = \operatorname* { s u p } _ { B } { \frac { 1 } { m ( B ) } } \int _ { B } \abs{ f ( y ) } d y , \quad x \in \RR ^ { d }
+M_{f}(x) = \sup_{B} \frac{1}{m(B)}\int_{B} \abs{f(y)} \, dy, \quad x \in \RR^{d},
 $$
-
-where the supremum is taken over all balls containing the point x. Prove that
-
+where the supremum is taken over all balls containing the point $x$. Prove that
 $$
-m \big ( \{ x : M _ { f } ( x ) > \alpha \} \big ) \leq \frac { A } { \alpha } \norm{  f }  _ { L ^ { 1 } ( \RR ^ { d } ) } , \quad \forall \alpha > 0
+m\bigl(\{x \st M_{f}(x) > \alpha\}\bigr) \leq \frac{A}{\alpha}\norm{f}_{L^{1}(\RR^{d})}, \quad \forall \alpha > 0,
 $$
-
-where A is a constant depending only on d and $\begin{array} { r } { \norm{  f }  _ { L ^ { 1 } ( \RR ^ { d } ) } = \int _ { \RR ^ { d } } \abs{ f ( x ) } d x . } \end{array}$
+where $A$ is a constant depending only on $d$ and $\norm{f}_{L^{1}(\RR^{d})} = \int_{\RR^{d}} \abs{f(x)} \, dx$.
 :::
 
 ::: {.solution}

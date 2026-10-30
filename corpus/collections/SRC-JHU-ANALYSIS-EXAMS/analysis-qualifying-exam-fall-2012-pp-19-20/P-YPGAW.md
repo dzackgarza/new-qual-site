@@ -24,15 +24,14 @@ audit:
 ---
 
 ::: {.problem}
-5. For each natural number n, let $f _ { n } : [ 0 , 1 ] \to \RR$ be a sequence of absolutely integrable functions, and let $f : [ 0 , 1 ] \to \RR$ be another absolutely integrable function such that
-
+5. For each natural number $n$, let $f_{n} \colon [0, 1] \to \RR$ be a sequence of absolutely integrable functions, and let $f \colon [0, 1] \to \RR$ be another absolutely integrable function such that
 $$
-\int _ { 0 } ^ { 1 } \abs{ f _ { n } ( x ) - f ( x ) } d x \to 0 , \qquad { \mathrm { a s } } \quad n \to \infty .
+\int_{0}^{1} \abs{f_{n}(x) - f(x)} \, dx \to 0, \qquad \text{as} \quad n \to \infty.
 $$
 
-(a) Show that there exists a subsequence $f _ { n _ { j } }$ of $f _ { n }$ which converges to $f$ pointwise almost everywhere.
+(a) Show that there exists a subsequence $f_{n_{j}}$ of $f_{n}$ which converges to $f$ pointwise almost everywhere.
 
-(b) Give a counterexample to show that the assertion fails if ”pointwise almost everywhere” is replaced by ”uniformly”.
+(b) Give a counterexample to show that the assertion fails if "pointwise almost everywhere" is replaced by "uniformly".
 :::
 
 ::: {.solution}

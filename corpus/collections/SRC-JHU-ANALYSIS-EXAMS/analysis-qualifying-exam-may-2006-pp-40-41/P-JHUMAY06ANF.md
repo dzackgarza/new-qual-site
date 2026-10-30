@@ -26,12 +26,10 @@ audit:
 
 ::: {.problem}
 6. Find all the poles of the function
-
 $$
-f ( z ) = \frac { e ^ { \pi z } } { ( z ^ { 2 } + 1 ) ^ { 2 } } .
+f(z) = \frac{e^{\pi z}}{(z^{2} + 1)^{2}}.
 $$
-
-Determine the residue of f at each pole.
+Determine the residue of $f$ at each pole.
 :::
 
 ::: {.solution}

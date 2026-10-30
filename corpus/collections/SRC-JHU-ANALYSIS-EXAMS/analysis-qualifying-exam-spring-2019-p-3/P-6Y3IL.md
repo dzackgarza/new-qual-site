@@ -24,23 +24,18 @@ audit:
 ---
 
 ::: {.problem}
-Question 1.1. Suppose that $f _ { j } \in L ^ { 2 } ( \RR ^ { d } ) , j = 1 , 2 , . . . ,$ and $f \in L ^ { 2 } (  { \RR } ^ { d } )$ satisfy
-
+Question 1.1. Suppose that $f_{j} \in L^{2}(\RR^{d})$, $j = 1, 2, \ldots$, and $f \in L^{2}(\RR^{d})$ satisfy
 $$
-\operatorname* { l i m } _ { j \to \infty } \int _ { \RR ^ { d } } f _ { j } g = \int _ { \RR ^ { d } } f g
+\lim_{j \to \infty} \int_{\RR^{d}} f_{j}g = \int_{\RR^{d}} fg
 $$
-
-for all $g \in L ^ { 2 } (  { \RR } ^ { d } )$ . That is, $f _ { j }$ converges to f weakly in $L ^ { 2 } .$ . Suppose that the sequence satisfies the uniform bound
-
+for all $g \in L^{2}(\RR^{d})$. That is, $f_{j}$ converges to $f$ weakly in $L^{2}$. Suppose that the sequence satisfies the uniform bound
 $$
-\operatorname* { s u p } _ { x \in \RR ^ { d } } ( 1 + \norm{ x } ) ^ { d } \abs{ f _ { j } ( x ) } \leq M < \infty .\tag{A}
+\sup_{x \in \RR^{d}} (1 + \norm{x})^{d}\abs{f_{j}(x)} \leq M < \infty. \tag{A}
 $$
 
 Determine whether condition (A), together with weak convergence, implies
 $$
-\norm{f_j}_2\to\norm{f}_2
-\qquad\text{and hence}\qquad
-\norm{f_j-f}_2\to0.
+\norm{f_j}_2 \to \norm{f}_2 \qquad \text{and hence} \qquad \norm{f_j - f}_2 \to 0.
 $$
 If not, give a counterexample.
 :::

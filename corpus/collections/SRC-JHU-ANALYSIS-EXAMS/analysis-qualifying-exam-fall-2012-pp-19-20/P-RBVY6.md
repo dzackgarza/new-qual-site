@@ -24,10 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-2. Let $\textstyle f ( x ) = { \frac { 1 } { x ^ { 2 } + 1 } }$ . Use residues to compute the Fourier transform
-
+2. Let $f(x) = \frac{1}{x^{2} + 1}$. Use residues to compute the Fourier transform
 $$
-{ \widehat { f } } ( t ) = \int _ { - \infty } ^ { + \infty } f ( x ) e ^ { - i t x } d x ~ .
+\widehat{f}(t) = \int_{-\infty}^{+\infty} f(x)e^{-itx} \, dx.
 $$
 :::
 

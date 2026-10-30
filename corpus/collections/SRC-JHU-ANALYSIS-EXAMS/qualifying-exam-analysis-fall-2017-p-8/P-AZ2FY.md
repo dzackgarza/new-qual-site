@@ -25,17 +25,13 @@ audit:
 ---
 
 ::: {.problem}
-3. For a Radon measure $\mu ,$ with $\textstyle \int _ { \RR ^ { n } } d \mu = C$ . Prove that for all $\epsilon > 0$ , there exists a set $E _ { \epsilon } \subset \RR ^ { n }$ such that
+3. For a Radon measure $\mu$, with $\int_{\RR^{n}} d\mu = C$. Prove that for all $\epsilon > 0$, there exists a set $E_{\epsilon} \subset \RR^{n}$ such that
 $$
-\mathcal M^1(E_\epsilon)
-:=\inf_{E_\epsilon\subset\bigcup_i B_i}
-\sum_i\operatorname{diam}(B_i)
-<10\epsilon,
+\mathcal{M}^1(E_\epsilon) \coloneqq \inf_{E_\epsilon \subset \bigcup_i B_i} \sum_i \operatorname{diam}(B_i) < 10\epsilon,
 $$
-and for any $x\notin E_\epsilon$ and $r>0$,
-
+and for any $x \notin E_\epsilon$ and $r > 0$,
 $$
-\int _ { B _ { r } ( x ) } d \mu \leq \frac { C r } { \epsilon } .
+\int_{B_{r}(x)} d\mu \leq \frac{Cr}{\epsilon}.
 $$
 
 (Hint: use Vitali covering lemma.)

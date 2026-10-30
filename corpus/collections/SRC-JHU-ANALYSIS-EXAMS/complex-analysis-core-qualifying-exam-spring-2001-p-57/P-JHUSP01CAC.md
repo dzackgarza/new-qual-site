@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Question 3. Assume that $f _ { n }$ is holomorphic in $\abs{ z } < 1$ and $\abs{ f _ { n } } \leq 1 0$ . Assume also that $\lim_{n\to\infty} f_n(2^{-j})$ exists for each $j = 1 , 2 , \dots$ . Prove that $\lim_{n\to\infty} f_n(z)$ exists for all z with $\abs{ z } < 1$
+Question 3. Assume that $f_{n}$ is holomorphic in $\abs{z} < 1$ and $\abs{f_{n}} \leq 10$. Assume also that $\lim_{n \to \infty} f_{n}(2^{-j})$ exists for each $j = 1, 2, \dots$. Prove that $\lim_{n \to \infty} f_{n}(z)$ exists for all $z$ with $\abs{z} < 1$.
 :::
 
 ::: {.solution}

@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-2) Find all entire analytic functions satisfying $\abs{ f ( z ) } \leq \abs{ e ^ { z } }$ for all $z \in \CC$
+2) Find all entire analytic functions satisfying $\abs{f(z)} \leq \abs{e^{z}}$ for all $z \in \CC$.
 :::
 
 ::: {.solution}

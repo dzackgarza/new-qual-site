@@ -19,18 +19,14 @@ audit:
 
 ::: {.problem}
 7. Let
-
 $$
-f \ast g ( x ) : = \int _ { - \infty } ^ { + \infty } f ( y ) g ( x - y ) d y
+f * g(x) \coloneqq \int_{-\infty}^{+\infty} f(y)g(x - y) \, dy
 $$
+denote the convolution of $f$ and $g$.
 
-denote the convolution of f and $g .$
+(a) Let $f, g \in L^{2}(\RR)$ be two square-integrable functions on $\RR$ (with the usual Lebesgue measure). Show that the convolution $f * g$ is a bounded continuous function on $\RR$.
 
-(a) Let $f , g \in L ^ { 2 } ( \RR )$ be two square-integrable functions on $\RR$ (with the usual Lebesgue measure).
-Show that the convolution $f * g$ bounded continuous function on R.
-
-(b) Instead let $h \in L ^ { 1 } ( \RR )$ be fixed.
-Show that $A ( f ) = f * h$ is a bounded operator $L ^ { 1 } ( \RR ) \to L ^ { 1 } ( \RR )$
+(b) Instead let $h \in L^{1}(\RR)$ be fixed. Show that $A(f) = f * h$ is a bounded operator $L^{1}(\RR) \to L^{1}(\RR)$.
 :::
 
 ::: {.solution}

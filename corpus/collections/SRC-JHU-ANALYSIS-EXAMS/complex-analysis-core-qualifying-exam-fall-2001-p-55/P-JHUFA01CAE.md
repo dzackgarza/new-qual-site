@@ -33,19 +33,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $D_r(0)=\{z\in\CC:\abs{z}<r\}$ and $\Delta=D_1(0)$.
-Use the following subordination result: if $F:\Delta\to\CC$
-is injective and holomorphic, and $g:\Delta\to F(\Delta)$
-is holomorphic with $g(0)=F(0)$, then
-$g(D_r(0))\subset F(D_r(0))$ for $0\leq r<1$.
-Prove that if $g$ is holomorphic on $\Delta$, $g(0)=0$
-and $\abs{\operatorname{Re}g(z)}<1$ for every $z\in\Delta$, then
-
+Let $D_r(0) = \{z \in \CC \st \abs{z} < r\}$ and $\Delta = D_1(0)$. Use the following subordination result: if $F \colon \Delta \to \CC$ is injective and holomorphic, and $g \colon \Delta \to F(\Delta)$ is holomorphic with $g(0) = F(0)$, then $g(D_r(0)) \subset F(D_r(0))$ for $0 \leq r < 1$. Prove that if $g$ is holomorphic on $\Delta$, $g(0) = 0$ and $\abs{\Re g(z)} < 1$ for every $z \in \Delta$, then
 $$
-\abs{ g ( z ) } \leq { \frac { 2 } { \pi } } \log \left\{ { \frac { 1 + \abs{ z } } { 1 - \abs{ z } } } \right\}
+\abs{g(z)} \leq \frac{2}{\pi}\log\left\{\frac{1 + \abs{z}}{1 - \abs{z}}\right\}
 $$
-
-for all $z \in D _ { 1 } ( 0 )$
+for all $z \in D_{1}(0)$.
 :::
 
 ::: {.solution}

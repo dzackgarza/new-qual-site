@@ -27,9 +27,8 @@ audit:
 
 ::: {.problem}
 6. (20 points) Evaluate the integral:
-
 $$
-\int _ { 0 } ^ { \infty } { \frac { u ^ { 2 } d u } { u ^ { 6 } + 1 } }
+\int_{0}^{\infty} \frac{u^{2} \, du}{u^{6} + 1}
 $$
 :::
 

@@ -25,14 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-3. Let H be an infinite dimensional Hilbert space.
-   Determine if the following statements are true or false.
-   If true, provide a proof.
-   If false, provide a counter example.
+3. Let $H$ be an infinite dimensional Hilbert space. Determine if the following statements are true or false. If true, provide a proof. If false, provide a counter example.
 
-(a) A sequence $\left\{ f _ { n } \right\}$ in H with $\norm{ f _ { n } } = 1$ for all n has a subsequence that converges in H.
+(a) A sequence $\{f_{n}\}$ in $H$ with $\norm{f_{n}} = 1$ for all $n$ has a subsequence that converges in $H$.
 
-(b) A sequence $\left\{ f _ { n } \right\}$ in H with $\norm{  f _ { n } }  = 1$ for all n has a subsequence that converges weakly in H.
+(b) A sequence $\{f_{n}\}$ in $H$ with $\norm{f_{n}} = 1$ for all $n$ has a subsequence that converges weakly in $H$.
 :::
 
 ::: {.solution}

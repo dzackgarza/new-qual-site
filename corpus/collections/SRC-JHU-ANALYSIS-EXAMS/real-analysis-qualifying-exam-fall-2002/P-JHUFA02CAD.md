@@ -26,10 +26,9 @@ audit:
 ---
 
 ::: {.problem}
-4. Let K be a closed convex subset of a Hilbert space H. Show that for each $x \in H$ , there is a unique $y \in K$ such that
-
+4. Let $K$ be a closed convex subset of a Hilbert space $H$. Show that for each $x \in H$, there is a unique $y \in K$ such that
 $$
-\norm{  x - y }  = i n f _ { z \in K } \norm{  x - z } 
+\norm{x - y} = \inf_{z \in K} \norm{x - z}.
 $$
 :::
 

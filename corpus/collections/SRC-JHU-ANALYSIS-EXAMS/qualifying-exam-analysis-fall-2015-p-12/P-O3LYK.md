@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-4. Let $U \subset \CC$ be an open set containing $\overline { { \boldsymbol { D } } } ( \boldsymbol { P } , \boldsymbol { r } )$ . Prove that if $f : U \to \CC$ is a holomorphic function such that $f$ is nowhere zero on $\partial D ( P , r )$ and $g : U \to \CC$ is a holomorphic function sufficiently uniformly close to $f$ on $\partial D ( P , r )$ , then the number of zeros of $f$ in $D ( P , r )$ equals the number of zeros of g in $D ( P , r )$ (counting multiplicity).
+4. Let $U \subset \CC$ be an open set containing $\overline{D}(P, r)$. Prove that if $f \colon U \to \CC$ is a holomorphic function such that $f$ is nowhere zero on $\partial D(P, r)$ and $g \colon U \to \CC$ is a holomorphic function sufficiently uniformly close to $f$ on $\partial D(P, r)$, then the number of zeros of $f$ in $D(P, r)$ equals the number of zeros of $g$ in $D(P, r)$ (counting multiplicity).
 :::
 
 ::: {.solution}

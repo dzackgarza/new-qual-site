@@ -25,8 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-3. Let U be a bounded domain in C, and let $f : U \to U$ such that f is holomorphic.
-   Let $P \in U$ and suppose that $f ( P ) = P$ . Prove that $\abs{ f ^ { \prime } ( P ) } \leq 1$
+3. Let $U$ be a bounded domain in $\CC$, and let $f \colon U \to U$ such that $f$ is holomorphic. Let $P \in U$ and suppose that $f(P) = P$. Prove that $\abs{f'(P)} \leq 1$.
 :::
 
 ::: {.hint}

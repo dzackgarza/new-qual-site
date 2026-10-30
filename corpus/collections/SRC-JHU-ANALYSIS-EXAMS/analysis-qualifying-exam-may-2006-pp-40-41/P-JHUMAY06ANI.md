@@ -26,13 +26,11 @@ audit:
 ---
 
 ::: {.problem}
-9. Suppose that f is in $L ^ { 1 } ( \RR )$ . Prove directly (i.e., without citing properties of the Fourier transform) that the function
-
+9. Suppose that $f$ is in $L^{1}(\RR)$. Prove directly (i.e., without citing properties of the Fourier transform) that the function
 $$
-\widehat { f } ( t ) = \int _ { \RR } e ^ { - i x t } f ( x ) d x
+\widehat{f}(t) = \int_{\RR} e^{-ixt}f(x) \, dx
 $$
-
-is uniformly continuous and ${ \widehat { f } } ( t ) \to 0 { \mathrm { ~ a s ~ } } t \to \infty$
+is uniformly continuous and $\widehat{f}(t) \to 0$ as $t \to \infty$.
 :::
 
 ::: {.solution}

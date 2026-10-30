@@ -30,13 +30,10 @@ audit:
 
 ::: {.problem}
 2. How many zeros does the polynomial
-
 $$
-z ^ { 7 } - 4 z ^ { 3 } + z - { \textstyle { \frac { 1 } { 2 } } }
+z^{7} - 4z^{3} + z - \tfrac{1}{2}
 $$
-
-have in the unit disk $\{\abs{z}<1\}$? How many zeros does it
-have in the disk $\{\abs{z}<2\}$ of radius two? Justify your answers.
+have in the unit disk $\{\abs{z} < 1\}$? How many zeros does it have in the disk $\{\abs{z} < 2\}$ of radius two? Justify your answers.
 :::
 
 ::: {.solution}

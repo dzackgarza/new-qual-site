@@ -26,19 +26,17 @@ audit:
 ---
 
 ::: {.problem}
-3. Let $\mathcal { O } ( D )$ denote the space of holomorphic functions on the unit disk D and let
-
+3. Let $\mathcal{O}(D)$ denote the space of holomorphic functions on the unit disk $D$ and let
 $$
-{ \mathcal H } = { \mathcal O } ( D ) \cap L ^ { 2 } ( D ) = \left\{ f \in { \mathcal O } ( D ) : \int _ { D } \abs{ f } ^ { 2 } d x d y < + \infty \right\} .
-$$
-
-a) Show that for all compact sets $K \subset D$ , there is a constant $C _ { K } \in \RR ^ { + }$ such that
-
-$$
-\operatorname* { s u p } _ { z \in K } \abs{ f ( z ) } \leq C _ { K } \norm{ f } _ { L ^ { 2 } ( D ) } .
+\mathcal{H} = \mathcal{O}(D) \cap L^{2}(D) = \left\{f \in \mathcal{O}(D) \st \int_{D} \abs{f}^{2} \, dx \, dy < +\infty\right\}.
 $$
 
-b) Show that H is a closed subspace of $L ^ { 2 } ( D )$ and hence is a Hilbert space.
+a) Show that for all compact sets $K \subset D$, there is a constant $C_{K} \in \RR^{+}$ such that
+$$
+\sup_{z \in K} \abs{f(z)} \leq C_{K}\norm{f}_{L^{2}(D)}.
+$$
+
+b) Show that $\mathcal{H}$ is a closed subspace of $L^{2}(D)$ and hence is a Hilbert space.
 :::
 
 ::: {.solution}
