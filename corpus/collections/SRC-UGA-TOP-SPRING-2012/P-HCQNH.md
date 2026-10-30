@@ -35,16 +35,6 @@ Suppose that $U$ and $V$ are open subsets of a space $X$, with $X = U \cup V$.
 Find, with proof, a general formula relating the Euler characteristics of $X, U, V$, and $U \cap V$.
 :::
 
-::: {.problem}
-Let $X$ be a topological space and let $U,V\subset X$ be open subsets with $X=U\cup V$.
-Prove that the Euler characteristics of $U$, $V$, $U\cap V$, and $X$ obey the relation
-$$
-\chi(X)=\chi(U)+\chi(V)-\chi(U\cap V).
-$$
-
-(You may assume that the homologies of $U$, $V$, $U\cap V$, $X$ are finite-dimensional so that their Euler characteristics are well-defined.)
-:::
-
 ::: {.solution}
 
 ::: pf
@@ -210,4 +200,8 @@ Rearrange the equality in step [](#s5){.pf-ref}.
 
 :::
 
+:::
+
+::: remark
+One printing of this problem states the formula and assumes that the homologies of $U$, $V$, $U\cap V$ and $X$ are finite-dimensional.
 :::

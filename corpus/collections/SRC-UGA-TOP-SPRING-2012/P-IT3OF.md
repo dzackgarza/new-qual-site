@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-For any integer $n \geq 2$ let $X_n$ denote the space formed by attaching a 2-cell to the circle $S^1$ via the attaching map
+For any integer $n \geq 2$ let $X_n$ denote the space formed by attaching a $2$-cell to the circle $S^1$ via the attaching map
 $$
 \begin{aligned}
 a_n:S^1&\longrightarrow S^1,\\
