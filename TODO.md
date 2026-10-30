@@ -784,7 +784,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/review.md
   - [x] wiki/algebra/rings-and-ideals/commutative-algebra.md
   - [x] wiki/algebra/rings-and-ideals/domains-and-factorization.md
-  - [ ] wiki/algebra/rings-and-ideals/ideals-and-quotients.md
+  - [x] wiki/algebra/rings-and-ideals/ideals-and-quotients.md
   - [ ] wiki/algebra/rings-and-ideals/index.md
   - [ ] wiki/algebra/rings-and-ideals/number-theory.md
   - [ ] wiki/algebra/rings-and-ideals/polynomial-rings.md
