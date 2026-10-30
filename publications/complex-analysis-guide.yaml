@@ -97,7 +97,7 @@ sections:
       - ref: PR-JKE6C
       - ref: D-OAFF5
       - ref: PR-TVPCM
-      - ref: E-TZJKN
+      - ref: E-SS1.EX-11
       - ref: D-V6UQJ
       - ref: PR-QNDSD
   - slug: harmonic-functions

@@ -110,3 +110,7 @@ Both $\Delta u$ and $\Delta v$ are real-valued, so the real and imaginary parts 
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The statement is often posed without the Wirtinger hint: show directly that $u$ and $v$ are harmonic. Differentiate the Cauchy–Riemann equations $u_x=v_y$, $u_y=-v_x$ once more and use the equality of mixed partials of the $C^\infty$ functions $u,v$: $u_{xx}+u_{yy}=v_{yx}-v_{xy}=0$ and $v_{xx}+v_{yy}=u_{xy}-u_{yx}=0$.
+:::
