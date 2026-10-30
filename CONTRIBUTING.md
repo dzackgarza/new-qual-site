@@ -272,6 +272,7 @@ A textbook section number, exam problem number, or other source locator belongs 
 ```
 
 The rendered source-collections panel combines the collection name with that appearance comment.
+A card whose statement is one part of a textbook exercise, or contains that exercise as one of its parts, is listed in that book's collection, with a comment that names the part, such as `3.4(b)` or `2.9 as part (a)`.
 A card carries no `subtitle:` for provenance.
 
 **Reading task:** ask whether the title names the mathematics or merely says where it came from.
