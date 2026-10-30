@@ -94,3 +94,7 @@ Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+No group of order $36$ is simple. The normal subgroup of order $3$ or $9$ found above is neither trivial nor all of $G$.
+:::
