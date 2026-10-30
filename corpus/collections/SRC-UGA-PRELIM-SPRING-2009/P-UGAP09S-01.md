@@ -5,7 +5,9 @@ kind: problem
 title: Uniform continuity and its negation
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Uniform Continuity
+  - Logic and Quantifiers
 relations: []
 review: draft
 audit:

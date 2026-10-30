@@ -5,7 +5,8 @@ kind: problem
 title: Prove $x+1/x$ is continuous at $3$ from the $\varepsilon$-$\delta$ definition
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Continuity
 relations: []
 review: draft
 audit:

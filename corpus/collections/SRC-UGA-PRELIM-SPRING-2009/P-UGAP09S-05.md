@@ -5,7 +5,9 @@ kind: problem
 title: The range of a linear map is a subspace of dimension at most the domain
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Maps
+  - Vector Spaces
 relations: []
 review: draft
 audit:

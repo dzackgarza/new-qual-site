@@ -2,10 +2,13 @@
 schema: qual/card@1
 id: P-UGAP09S-08
 kind: problem
-title: Three short matrix, line-integral, and derivative computations
+title: A non-diagonalizable real $2\times2$ matrix, $\int_C xy^2\,dy$ around a triangle, and $f^{(10)}(0)$ for $\cos(x^2)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Diagonalization
+  - Line Integrals
+  - Taylor Series
 relations: []
 review: draft
 audit:
@@ -18,16 +21,18 @@ audit:
 ::: {.problem}
 No proofs are required.
 
-1. Give an example of a matrix $A\in M_2(\RR)$ that is not diagonalizable.
-2. Calculate
-   $$
-   \int_C xy^2\,dy,
-   $$
-   where $C$ is the right triangle with vertices $(0,0)$, $(1,0)$, and $(0,1)$, oriented counterclockwise.
-3. Compute $f^{(10)}(0)$ for
-   $$
-   f(x)=\cos(x^2).
-   $$
+(a) Give an example of a matrix $A\in M_2(\RR)$ that is not diagonalizable.
+
+(b) Calculate
+$$
+\int_C xy^2\,dy,
+$$
+where $C$ is the right triangle with vertices $(0,0)$, $(1,0)$, and $(0,1)$, oriented counterclockwise.
+
+(c) Compute $f^{(10)}(0)$ for
+$$
+f(x)=\cos(x^2).
+$$
 :::
 
 ::: {.solution}

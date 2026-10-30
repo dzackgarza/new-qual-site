@@ -5,7 +5,9 @@ kind: problem
 title: Absolute convergence of the termwise product of two series
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Series of Numbers
+  - Convergence Tests
 relations: []
 review: draft
 audit:

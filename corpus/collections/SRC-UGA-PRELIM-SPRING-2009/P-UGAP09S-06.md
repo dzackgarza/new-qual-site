@@ -5,7 +5,9 @@ kind: problem
 title: A self-adjoint matrix with spectrum $\{0,1\}$ is idempotent
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Spectral Theorem
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

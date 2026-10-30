@@ -2,10 +2,12 @@
 schema: qual/card@1
 id: P-UGAP09S-03
 kind: problem
-title: Prescribe an arbitrary derivative as $1/\sqrt{3+x^4}$
+title: A function whose $n$th derivative is $1/\sqrt{3+x^4}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integrals
+  - Induction
 relations: []
 review: draft
 audit:

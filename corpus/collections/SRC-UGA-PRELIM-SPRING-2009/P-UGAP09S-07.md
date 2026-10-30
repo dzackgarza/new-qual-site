@@ -2,10 +2,12 @@
 schema: qual/card@1
 id: P-UGAP09S-07
 kind: problem
-title: Continuity at the origin of two rational functions on $\RR^2$
+title: Continuity at the origin of $x^3y/(x^4+y^4)$ and $x^3y^2/(x^2+y^2)^2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Continuity
+  - Multivariable Calculus
 relations: []
 review: draft
 audit:
@@ -15,15 +17,18 @@ audit:
 ---
 
 ::: {.problem}
-Determine, with proof, which of the following functions $\RR^2\to\RR$ are continuous:
+Determine, with proof, which, if either, of the following functions $\RR^2\to\RR$ are continuous.
+
+(a)
 $$
 f(x,y)=
 \begin{cases}
 \dfrac{x^3y}{x^4+y^4},&(x,y)\ne(0,0),\\
-0,&(x,y)=(0,0),
+0,&(x,y)=(0,0).
 \end{cases}
 $$
-and
+
+(b)
 $$
 g(x,y)=
 \begin{cases}
