@@ -28,63 +28,13 @@ Holomorphic and analytic are equivalent: the Cauchy integral formula gives the p
 
 [[T-GROTS]]
 
-::: {.proof}
-Let $f$ be holomorphic on a domain $D$, let $z_0\in D$, and let $r_0>0$ with $D(z_0, r_0)\subseteq D$.
-Fix $0<R<r_0$ and $z\in D(z_0,R)$.
-By the Cauchy integral formula,
-$$
-f(z) = {1\over 2\pi i}\oint_{\abs{w-z_0}=R} {f(w)\over w-z}\dw
-= {1\over 2\pi i}\oint_{\abs{w-z_0}=R} {f(w)\over (w-z_0)\qty{1 - {z-z_0\over w-z_0}}}\dw
-.$$
-For $\abs{w-z_0}=R$, $\abs{z-z_0\over w-z_0} = \abs{z-z_0}/R < 1$, so the geometric series $\sum_{n\geq 0}\qty{z-z_0\over w-z_0}^n$ converges uniformly in $w$ on $\partial D(z_0,R)$ and may be integrated term by term:
-$$
-f(z) = \sum_{n=0}^\infty \qty{ {1\over 2\pi i}\oint_{\abs{w-z_0}=R} {f(w)\over (w-z_0)^{n+1}}\dw } (z-z_0)^n
-= \sum_{n=0}^\infty {f^{(n)}(z_0)\over n!}(z-z_0)^n
-,$$
-the last equality by the Cauchy integral formula for derivatives.
-The series converges on $D(z_0,R)$ for every $R<r_0$, so its radius of convergence is at least $r_0$.
-
-:::
-
 [[T-K66DJ]]
 
-::: {.remark title="The coefficient formula"}
-By the integral formula, for $f$ holomorphic on $D_R(z_0)$, all $k\geq 0$ and all $0<r<R$:
-$$
-c_k = {1\over 2\pi r^k} \int_0^{2\pi} f(z_0 + re^{i\theta}) e^{-ik\theta}\dtheta
-.$$
-Bounding the integrand gives the [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimate]], and the same formula for $k<0$ on an annulus gives the coefficients of the [[complex-analysis/singularities/laurent-series|Laurent series]].
-
-:::
-
 [[PR-4BVDD]]
-
-::: {.proof}
-On the disc $\abs z\leq R$, the terms of $e^z = \sum_{n\geq 0} z^n/n!$ satisfy $\abs{z^n/n!}\leq R^n/n!$, and $\sum_{n\geq 0} R^n/n! = e^R < \infty$.
-By the Weierstrass $M\dash$test, the series converges uniformly on $\abs z\leq R$.
-
-:::
 
 ## Abel's theorem
 
 [[FT-3ZL25]]
-
-::: {.proof}
-Let $B_n \coloneqq \sum_{k=1}^n b_k$ and $B_0\coloneqq 0$, and choose $M$ with $\abs{B_n}\leq M$ for all $n$.
-Since $a_n$ decreases to $0$, $a_n\geq 0$ for all $n$.
-Summation by parts ([[PR-2MTPE]] with $m=1$ and the roles of the two sequences exchanged) gives
-$$
-\sum_{k=1}^n a_k b_k = a_n B_n + \sum_{k=1}^{n-1} B_k (a_k - a_{k+1})
-.$$
-Since $\abs{a_n B_n}\leq M a_n \to 0$, the first term tends to $0$.
-Since $a_k$ is decreasing, $a_k - a_{k+1}\geq 0$, so
-$$
-\sum_{k=1}^{n-1} \abs{B_k (a_k - a_{k+1})} \leq M\sum_{k=1}^{n-1}(a_k - a_{k+1}) = M(a_1 - a_n) \leq M a_1
-,$$
-and the series $\sum_{k\geq 1} B_k(a_k - a_{k+1})$ converges absolutely.
-Hence the partial sums $\sum_{k=1}^n a_k b_k$ converge.
-
-:::
 
 [[T-B7YTE]]
 
@@ -107,19 +57,6 @@ So a radial limit can exist at a point where the series diverges, and the conver
 :::
 
 [[PR-2MTPE]]
-
-::: {.proof}
-Define $A_n \coloneqq \sum_{k\leq n} a_k$, use $a_k = A_k - A_{k-1}$, reindex, and peel off the top and bottom terms:
-$$
-\begin{aligned}
-\sum_{m\leq k \leq n} a_k b_k
-&= \sum_{m\leq k \leq n} (A_k - A_{k-1}) b_k \\
-&= \sum_{m\leq k \leq n} A_kb_k - \sum_{m-1\leq k \leq n-1} A_{k} b_{k+1} \\
-&= A_nb_n - A_{m-1} b_{m} + \sum_{m\leq k \leq n-1} A_k(b_k - b_{k+1}) \\
-&= A_nb_n - A_{m-1} b_{m} - \sum_{m\leq k \leq n-1} A_k(b_{k+1} - b_{k})
-\end{aligned}.$$
-
-:::
 
 [[E-EG3W7]]
 

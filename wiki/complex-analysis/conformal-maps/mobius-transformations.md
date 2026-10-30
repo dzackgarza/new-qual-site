@@ -15,28 +15,13 @@ topics:
 
 [[FE-O47RH]]
 
-::: {.remark title="Holomorphic with nonvanishing derivative is conformal"}
-Let $f$ be holomorphic at $z_0$ with $f'(z_0)\neq 0$, and let $\gamma$ be a smooth curve with $\gamma(0)=z_0$ and $\gamma'(0)\neq 0$.
-By the chain rule $(f\circ\gamma)'(0) = f'(z_0)\,\gamma'(0)$, so $f$ multiplies every tangent vector at $z_0$ by the same nonzero complex number $f'(z_0)$: it rotates by $\arg f'(z_0)$ and scales by $\abs{f'(z_0)}$.
-Hence the signed angle between two curves through $z_0$ equals the signed angle between their images.
-
-:::
-
-::: {.fact title="Checking conformality"}
-A function $f$ holomorphic at $p$ with $f'(p)\neq 0$ is conformal at $p$.
-
-:::
-
 ::: {.example title="Complex conjugation"}
 The map $f(z)=\bar z$ has invertible real Jacobian $\operatorname{diag}(1,-1)$ at every point, but it fails the Cauchy--Riemann equations, so it has no complex derivative.
 It reverses signed angles and is not conformal.
 
 :::
 
-::: {.remark title="Inverses"}
-An injective holomorphic map $f$ on an open set $U$ has $f'\neq 0$ on $U$, and $\inverseof{f}\colon f(U)\to U$ is holomorphic ([[P-Z776N]]). The biholomorphisms of an open set $\Omega$ onto itself therefore form a group $\Aut_\CC(\Omega)$, computed for the disc on [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms]].
-
-:::
+The group $\Aut_\CC(\DD)$ is computed on [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms]].
 
 ## The transformations
 
