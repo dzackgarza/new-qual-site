@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\mathcal{F}$ denote the family of holomorphic functions $f : \Delta \to \CC$ such that (i) $f$ omits all strictly negative real numbers, and (ii) $f(0) = 1$.
+Let $\mathcal{F}$ denote the family of holomorphic functions $f : \DD \to \CC$ such that (i) $f$ omits all strictly negative real numbers, and (ii) $f(0) = 1$.
 Find the maximum value of $\abs{f'(0)}$ as $f \in \mathcal{F}$.
 :::
 

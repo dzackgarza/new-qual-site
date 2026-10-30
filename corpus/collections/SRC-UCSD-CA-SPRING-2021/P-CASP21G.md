@@ -15,10 +15,10 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\{f_n\}$ be a sequence of automorphisms of the unit disc $\Delta$, converging locally uniformly in $\Delta$ to a nonconstant function $f$.
-Show that $f$ is an automorphism of $\Delta$.
+Let $\{f_n\}$ be a sequence of automorphisms of the unit disc $\DD$, converging locally uniformly in $\DD$ to a nonconstant function $f$.
+Show that $f$ is an automorphism of $\DD$.
 
-Hint: Examine the family $\mathcal{F}$ consisting of the inverse automorphisms $f_n^{-1} : \Delta \to \Delta$.
+Hint: Examine the family $\mathcal{F}$ consisting of the inverse automorphisms $f_n^{-1} : \DD \to \DD$.
 :::
 
 ::: {.solution}
