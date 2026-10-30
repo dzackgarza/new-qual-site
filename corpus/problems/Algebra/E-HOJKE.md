@@ -40,7 +40,7 @@ Number the three conditions (1), (2), (3) in the order stated.
 ::: pf
 
 ::: {.pf-step #field-implies-simple}
-(1) implies (2).
+Condition (1) implies condition (2).
 
 ::: pf-proof
 Let $I$ be a nonzero ideal of the field $A$ and $0\neq x\in I$.
@@ -50,7 +50,7 @@ Then $1=x^{-1}x\in I$, so $a=a\cdot1\in I$ for every $a\in A$ and $I=A$.
 :::
 
 ::: {.pf-step #simple-implies-injective}
-(2) implies (3).
+Condition (2) implies condition (3).
 
 ::: pf-proof
 Let $\varphi\colon A\to B$ be a ring homomorphism to a field.
@@ -61,7 +61,7 @@ By (2), $\ker\varphi=0$, so $\varphi$ is injective.
 :::
 
 ::: pf-qed
-(3) implies (1), which closes the cycle $(1)\Rightarrow(2)\Rightarrow(3)\Rightarrow(1)$ with steps [](#field-implies-simple){.pf-ref} and [](#simple-implies-injective){.pf-ref}.
+Condition (3) implies condition (1), which closes the cycle $(1)\Rightarrow(2)\Rightarrow(3)\Rightarrow(1)$ with steps [](#field-implies-simple){.pf-ref} and [](#simple-implies-injective){.pf-ref}.
 Let $0\neq x\in A$ and suppose $(x)\neq A$.
 The proper ideal $(x)$ lies in a maximal ideal $\mathfrak m$ (Zorn's lemma), and $\pi\colon A\to A/\mathfrak m$ is a homomorphism to a field.
 By (3), $\mathfrak m=\ker\pi=0$, so $x\in\mathfrak m=0$, a contradiction.
@@ -73,5 +73,5 @@ Hence $(x)=A$, so $x$ is a unit, and $A$ is a field.
 :::
 
 ::: {.remark title="Variations"}
-(2) implies (1) directly, without Zorn's lemma: for $0\neq x\in A$ the ideal $Ax$ is nonzero, so $Ax=A$ by (2), and $1=rx$ for some $r\in A$.
+Condition (2) implies condition (1) directly, without Zorn's lemma: for $0\neq x\in A$ the ideal $Ax$ is nonzero, so $Ax=A$ by (2), and $1=rx$ for some $r\in A$.
 :::
