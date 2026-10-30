@@ -768,7 +768,7 @@ def test_check_rejects_a_directory_with_no_index_page(tmp_path: Path) -> None:
 def test_a_citation_renders_against_the_bibliography(wiki_site: Path) -> None:
     """Pandoc reads `[@key]` as a citation and leaves the key as the element's
     own text, so without citeproc the reader is shown `[@dummit_foote_2004]`.
-    citeproc resolves it against `references.bib`: the reader gets an author-date
+    citeproc resolves it against `references.yaml`: the reader gets an author-date
     reference in place and a bibliography entry to look it up in."""
     # Pandoc's HTML writer wraps its output, so a name can straddle two lines.
     html = (wiki_site / "build" / "quarto" / "_site" / "wiki" / "citations.html").read_text()
@@ -791,7 +791,7 @@ def test_a_citation_renders_against_the_bibliography(wiki_site: Path) -> None:
     # with, and what is searchable is the region the indexer is pointed at.
     body = html.split("data-pagefind-body", 1)[1]
     assert "Dummit, D. S. and R. M. Foote" in body
-    assert "references.bib" not in body
+    assert "references.yaml" not in body
     assert "style.csl" not in body
 
 

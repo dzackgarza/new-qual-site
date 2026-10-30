@@ -3,7 +3,7 @@
 #
 # This registry says which books a card may name as its source. It does not
 # resolve citations: `[@key]` is resolved by citeproc against
-# `references.bib`, whose keys are the ones the authored wiki writes.
+# `references.yaml`, whose keys are the ones the authored wiki writes.
 - id: ahlfors
   name: Ahlfors, Complex Analysis
 - id: artin

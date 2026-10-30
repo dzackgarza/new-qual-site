@@ -1,0 +1,1287 @@
+# The works the authored text cites, exported from the Zotero library by
+# tools/sync_bibliography.py. Do not edit: add the work to Zotero instead.
+references:
+- id: Abb16
+  author:
+  - family: Abbott
+    given: Stephen
+  call-number: QA300 .A18 2015
+  citation-key: Abb16
+  collection-title: Undergraduate texts in mathematics
+  DOI: 10.1007/978-1-4939-2712-8
+  edition: Second edition, corrected at 2nd printing
+  ISBN: 978-1-4939-2712-8
+  issued:
+  - year: 2016
+  language: en
+  number-of-pages: '312'
+  publisher: Springer
+  publisher-place: New York Heidelberg Dordrecht London
+  source: K10plus ISBN
+  title: Understanding Analysis
+  type: book
+  volume: '1'
+- id: Ahl73
+  author:
+  - family: Ahlfors
+    given: Lars V.
+  citation-key: Ahl73
+  issued:
+  - year: 1973
+  publisher: McGraw-Hill
+  publisher-place: New York
+  title: Complex Analysis
+  type: book
+- id: Ahl79
+  author:
+  - family: Ahlfors
+    given: Lars V.
+  citation-key: Ahl79
+  collection-title: International Series in Pure and Applied Mathematics
+  edition: 3rd
+  ISBN: 978-0-07-000657-7
+  issued:
+  - year: 1979
+  language: en
+  note: Formerly cataloged in error as D. Martin's review of the 2nd edition (Proc.
+    Edinburgh Math. Soc. 16 (1968), 85-86); replaced with the actual book, latest
+    (3rd) edition.
+  number-of-pages: '331'
+  publisher: McGraw-Hill
+  publisher-place: New York
+  title: 'Complex analysis: an introduction to the theory of analytic functions of
+    one complex variable'
+  type: book
+- id: AM18
+  author:
+  - family: Atiyah
+    given: Michael F.
+  - family: Macdonald
+    given: Ian G.
+  citation-key: AM18
+  collection-title: Addison-Wesley Series in Mathematics
+  DOI: 10.1201/9780429493638
+  ISBN: 978-0-429-96218-9
+  issued:
+  - year: 2018
+  publisher: CRC Press
+  title: Introduction to Commutative algebra
+  type: book
+- id: Apo74
+  author:
+  - family: Apostol
+    given: Tom M.
+  citation-key: Apo74
+  collection-title: Addison-Wesley series in mathematics
+  edition: 2. ed
+  ISBN: 978-0-201-00288-1
+  issued:
+  - year: 1974
+  language: en
+  number-of-pages: '492'
+  publisher: Addison-Wesley
+  publisher-place: Reading, Mass.
+  source: K10plus ISBN
+  title: 'Mathematical analysis: a modern approach to advanced calculus'
+  title-short: Mathematical analysis
+  type: book
+- id: Arn73
+  author:
+  - family: Arnold
+    given: V. I.
+  citation-key: Arn73
+  issued:
+  - year: 1973
+  publisher: MIT Press
+  publisher-place: Cambridge, MA
+  title: Ordinary Differential Equations
+  type: book
+- id: Art11
+  author:
+  - family: Artin
+    given: Michael
+  call-number: QA154.2 .A77 2011
+  citation-key: Art11
+  edition: 2nd ed
+  ISBN: 978-0-13-241377-0
+  issued:
+  - year: 2011
+  number-of-pages: '543'
+  publisher: Pearson Education
+  publisher-place: Boston, MA
+  source: Library of Congress ISBN
+  title: Algebra
+  type: book
+- id: Art91
+  author:
+  - family: Artin
+    given: Michael
+  citation-key: Art91
+  issued:
+  - year: 1991
+  publisher: Prentice Hall
+  publisher-place: Englewood Cliffs, NJ
+  title: Algebra
+  type: book
+- id: Bor12
+  accessed:
+  - year: 2026
+    month: 9
+    day: 12
+  author:
+  - family: Borcherds
+    given: Richard E.
+  citation-key: Bor12
+  issued:
+  - year: 2012
+  note: 'Published: University of California, Berkeley'
+  title: 'Math 256A: Algebraic Geometry'
+  type: document
+  URL: https://math.berkeley.edu/~reb/courses/256A/
+- id: Bro96
+  author:
+  - family: Browder
+    given: Andrew
+  citation-key: Bro96
+  collection-title: Undergraduate Texts in Mathematics
+  issued:
+  - year: 1996
+  publisher: Springer-Verlag
+  publisher-place: New York
+  title: 'Mathematical Analysis: An Introduction'
+  type: book
+- id: CE12
+  author:
+  - family: Cieliebak
+    given: Kai
+  - family: Eliashberg
+    given: Y.
+  call-number: QA665 .C54 2012
+  citation-key: CE12
+  collection-number: v. 59
+  collection-title: Colloquium publications
+  ISBN: 978-0-8218-8533-8
+  issued:
+  - year: 2012
+  number-of-pages: '364'
+  publisher: American Mathematical Society
+  publisher-place: Providence, R.I
+  source: Library of Congress ISBN
+  title: 'From Stein to Weinstein and back: symplectic geometry of affine complex
+    manifolds'
+  title-short: From Stein to Weinstein and back
+  type: book
+- id: Con78
+  author:
+  - family: Conway
+    given: John B.
+  citation-key: Con78
+  collection-number: '11'
+  collection-title: Graduate Texts in Mathematics
+  DOI: 10.1007/978-1-4612-6313-5
+  edition: Second Edition
+  ISBN: 978-0-387-90328-6
+  issued:
+  - year: 1978
+  language: en
+  number-of-pages: '321'
+  publisher: Springer New York
+  publisher-place: New York, NY
+  source: K10plus ISBN
+  title: Functions of One complex Variable I
+  type: book
+- id: Cul66
+  accessed:
+  - year: 2026
+    month: 10
+    day: 29
+  author:
+  - family: Culver
+    given: Walter J.
+  citation-key: Cul66
+  container-title: Proceedings of the American Mathematical Society
+  container-title-short: Proc. Am. Math. Soc.
+  DOI: 10.1090/S0002-9939-1966-0202740-6
+  ISSN: 1088-6826, 0002-9939
+  issue: '5'
+  issued:
+  - year: 1966
+    month: 10
+  language: en
+  page: 1146–1151
+  source: DOI.org (Crossref)
+  title: On the existence and uniqueness of the real logarithm of a matrix
+  type: article-journal
+  URL: https://www.ams.org/proc/1966-017-05/S0002-9939-1966-0202740-6/
+  volume: '17'
+- id: DF04
+  author:
+  - family: Dummit
+    given: David Steven
+  - family: Foote
+    given: Richard M.
+  call-number: QA162 .D85 2004
+  citation-key: DF04
+  edition: 3rd ed
+  ISBN: 978-0-471-45234-8
+  issued:
+  - year: 2004
+  number-of-pages: '932'
+  publisher: Wiley
+  publisher-place: Hoboken, NJ
+  source: Library of Congress ISBN
+  title: Abstract Algebra
+  type: book
+- id: EH00
+  author:
+  - family: Eisenbud
+    given: David
+  - family: Harris
+    given: Joe
+  call-number: '516.35'
+  citation-key: EH00
+  collection-number: '197'
+  collection-title: Graduate texts in mathematics
+  DOI: 10.1007/b97680
+  ISBN: 978-0-387-98637-1
+  issued:
+  - year: 2000
+  language: en
+  publisher: Springer
+  publisher-place: New York
+  source: BnF ISBN
+  title: The geometry of schemes
+  type: book
+- id: Eis95
+  author:
+  - family: Eisenbud
+    given: David
+  call-number: QA251.3.E38 1995
+  citation-key: Eis95
+  collection-title: Graduate texts in mathematics
+  ISBN: 978-0-387-94269-8
+  issued:
+  - year: 1995
+  number-of-pages: xvi+785
+  publisher: Springer-Verlag
+  publisher-place: New York
+  title: Commutative algebra with a View Toward algebraic geometry
+  type: book
+  volume: '150'
+- id: Eur15
+  author:
+  - family: Eur
+    given: Christopher
+  citation-key: Eur15
+  genre: Senior thesis
+  issued:
+  - year: 2015
+    month: 3
+    day: 23
+  note: 'Advisor: Melody Chan'
+  publisher: Harvard University
+  title: An introduction to toric varieties
+  type: thesis
+  URL: https://people.math.harvard.edu/~ceur/notes_pdf/Eur_Senior_Thesis_Final.pdf
+- id: FB09
+  author:
+  - family: Freitag
+    given: E.
+  - family: Busam
+    given: Rolf
+  call-number: QA331 .F775513 2009
+  citation-key: FB09
+  collection-title: Universitext
+  DOI: 10.1007/978-3-540-93983-2
+  edition: 2nd ed., [2nd English ed.]
+  ISBN: 978-3-540-93982-5
+  issued:
+  - year: 2009
+  language: en
+  number-of-pages: '532'
+  publisher: Springer
+  publisher-place: Berlin
+  source: Library of Congress ISBN
+  title: Complex Analysis
+  type: book
+- id: FH91
+  author:
+  - family: Fulton
+    given: William
+  - family: Harris
+    given: Joe
+  call-number: 515.722 3
+  citation-key: FH91
+  collection-number: '129'
+  collection-title: Graduate texts in mathematics
+  edition: Corr. 5. print
+  ISBN: 978-0-387-97495-8
+  issued:
+  - year: 1991
+  language: en
+  number-of-pages: '551'
+  publisher: Springer
+  publisher-place: New York Berlin Paris [etc.]
+  source: BnF ISBN
+  title: 'Representation theory: A first course'
+  title-short: Representation theory
+  type: book
+- id: Fol13
+  author:
+  - family: Folland
+    given: G. B.
+  citation-key: Fol13
+  edition: 2nd ed
+  ISBN: 978-1-118-62639-9
+  issued:
+  - year: 2013
+  language: en
+  note: 'OCLC: 1058192204'
+  publisher: John Wiley & Sons, Incorporated, Wiley
+  publisher-place: New York
+  source: Open WorldCat
+  title: 'Real analysis: Modern techniques and Their applications'
+  title-short: Real Analysis
+  type: book
+  volume: '1'
+- id: Ful93
+  author:
+  - family: Fulton
+    given: William
+  call-number: QA571 .F85 1993
+  citation-key: Ful93
+  collection-number: no. 131
+  collection-title: Annals of mathematics studies
+  DOI: 10.1515/9781400882526
+  ISBN: 978-0-691-00049-7
+  issued:
+  - year: 1993
+  number-of-pages: '157'
+  publisher: Princeton University Press
+  publisher-place: Princeton, N.J
+  source: Library of Congress ISBN
+  title: Introduction to toric varieties
+  type: book
+- id: Ful95
+  author:
+  - family: Fulton
+    given: William
+  citation-key: Ful95
+  collection-number: '153'
+  collection-title: Graduate Texts in Mathematics
+  issued:
+  - year: 1995
+  publisher: Springer-Verlag
+  publisher-place: New York
+  title: 'Algebraic Topology: A First Course'
+  type: book
+- id: Gam01
+  author:
+  - family: Gamelin
+    given: Theodore W.
+  call-number: QA300 .G25 2001
+  citation-key: Gam01
+  collection-title: Undergraduate texts in mathematics
+  DOI: 10.1007/978-0-387-21607-2
+  ISBN: 978-0-387-95069-3
+  issued:
+  - year: 2001
+  number-of-pages: '478'
+  publisher: Springer
+  publisher-place: New York
+  source: Library of Congress ISBN
+  title: Complex Analysis
+  type: book
+- id: Gat21
+  author:
+  - family: Gathmann
+    given: Andreas
+  citation-key: Gat21
+  issued:
+  - year: 2021
+  - year: 2022
+  language: en
+  note: Current class notes for the Algebraic Geometry Master course; complete notes
+    last updated April 28, 2026.
+  title: Algebraic Geometry
+  type: manuscript
+  URL: https://agag-gathmann.math.rptu.de/en/alggeom.php
+  volume: '1'
+- id: GH81
+  author:
+  - family: Greenberg
+    given: Marvin J.
+  - family: Harper
+    given: John R.
+  citation-key: GH81
+  collection-number: '58'
+  collection-title: Mathematics Lecture Note Series
+  issued:
+  - year: 1981
+  publisher: Benjamin/Cummings
+  publisher-place: Reading, MA
+  title: 'Algebraic Topology: A First Course'
+  type: book
+- id: GH94
+  accessed:
+  - year: 2026
+    month: 6
+    day: 19
+  author:
+  - family: Griffiths
+    given: Phillip
+  - family: Harris
+    given: Joseph
+  citation-key: GH94
+  collection-title: Wiley classics library
+  DOI: 10.1002/9781118032527
+  edition: '1'
+  ISBN: 978-0-471-05059-9
+  issued:
+  - year: 1994
+    month: 8
+    day: 2
+  language: en
+  number-of-pages: '1'
+  publisher: Wiley
+  publisher-place: New York
+  source: DOI.org (Crossref)
+  title: Principles of algebraic geometry
+  type: book
+  URL: https://onlinelibrary.wiley.com/doi/book/10.1002/9781118032527
+- id: GP25
+  author:
+  - family: Guillemin
+    given: Victor
+  - family: Pollack
+    given: Alan
+  citation-key: GP25
+  DOI: 10.1090/chel/370
+  ISBN: 978-1-4704-1135-0
+  issued:
+  - year: 2025
+  language: en
+  note: 'OCLC: 1564490986'
+  publisher: American Mathematical Society
+  publisher-place: Providence
+  source: Open WorldCat
+  title: Differential Topology
+  type: book
+- id: Har07
+  accessed:
+  - year: 2026
+    month: 9
+    day: 12
+  author:
+  - literal: Harvard University Department of Mathematics
+  citation-key: Har07
+  citation-label: Har07
+  issued:
+  - year: 2007
+  title: Sample Questions from Past Qualifying Exams
+  type: document
+  URL: https://www.math.harvard.edu/media/alggeom.pdf
+- id: Har10a
+  accessed:
+  - year: 2026
+    month: 6
+    day: 11
+  author:
+  - family: Hartshorne
+    given: Robin
+  citation-key: Har10a
+  collection-number: '52'
+  collection-title: Graduate texts in mathematics
+  DOI: 10.1007/978-1-4757-3849-0
+  edition: Softcover reprint
+  ISBN: 978-1-4419-2807-8
+  issued:
+  - year: 2010
+  language: en
+  license: http://www.springer.com/tdm
+  number-of-pages: '496'
+  publisher: Springer
+  publisher-place: New York, N.Y
+  source: K10plus ISBN
+  title: Algebraic Geometry
+  type: book
+  URL: http://link.springer.com/10.1007/978-1-4757-3849-0
+  volume: '52'
+- id: Har10b
+  accessed:
+  - year: 2026
+    month: 6
+    day: 12
+  author:
+  - family: Harris
+    given: Joe
+  citation-key: Har10b
+  collection-number: '133'
+  collection-title: Graduate texts in mathematics
+  DOI: 10.1007/978-1-4757-2189-8
+  ISBN: 978-1-4419-3099-6
+  issued:
+  - year: 2010
+  language: en
+  license: http://www.springer.com/tdm
+  number-of-pages: '328'
+  publisher: Springer
+  publisher-place: New York Heidelberg
+  source: K10plus ISBN
+  title: 'Algebraic geometry: A first course'
+  title-short: Algebraic geometry
+  type: book
+  URL: http://link.springer.com/10.1007/978-1-4757-2189-8
+  volume: '133'
+- id: Hat02
+  author:
+  - family: Hatcher
+    given: Allen
+  call-number: QA612 .H42 2002
+  citation-key: Hat02
+  edition: 14th printing 2015
+  ISBN: 978-0-521-79540-1
+  issued:
+  - year: 2002
+  language: en
+  number-of-pages: '544'
+  publisher: Cambridge University Press
+  publisher-place: Cambridge ; New York
+  source: Library of Congress ISBN
+  title: Algebraic Topology
+  type: book
+- id: Her64
+  author:
+  - family: Herstein
+    given: I. N.
+  citation-key: Her64
+  issued:
+  - year: 1964
+  publisher: Blaisdell
+  publisher-place: New York
+  title: Topics in Algebra
+  type: book
+- id: HK71
+  author:
+  - family: Hoffman
+    given: Kenneth
+  - family: Kunze
+    given: Ray Alden
+  call-number: QA251 .H67 1971
+  citation-key: HK71
+  edition: 2d ed
+  ISBN: 978-0-13-536797-1
+  issued:
+  - year: 1971
+  number-of-pages: '407'
+  publisher: Prentice-Hall
+  publisher-place: Englewood Cliffs, N.J
+  source: Library of Congress ISBN
+  title: Linear Algebra
+  type: book
+- id: Hun74
+  author:
+  - family: Hungerford
+    given: Thomas W.
+  citation-key: Hun74
+  collection-number: '73'
+  collection-title: Graduate Texts in Mathematics
+  DOI: 10.1007/978-1-4612-6101-8
+  ISBN: 978-1-4612-6103-2
+  issued:
+  - year: 1974
+  language: en
+  number-of-pages: '509'
+  publisher: Springer New York
+  publisher-place: New York, NY
+  source: K10plus ISBN
+  title: Algebra
+  type: book
+  volume: '1'
+- id: Kap42
+  accessed:
+  - year: 2026
+    month: 10
+    day: 29
+  author:
+  - family: Kaplansky
+    given: Irving
+  citation-key: Kap42
+  container-title: Duke Mathematical Journal
+  container-title-short: Duke Math. J.
+  DOI: 10.1215/S0012-7094-42-00922-0
+  ISSN: 0012-7094, 1547-7398
+  issue: '2'
+  issued:
+  - year: 1942
+    month: 6
+    day: 1
+  page: 303–321
+  source: DOI.org (Crossref)
+  title: Maximal fields with valuations
+  type: article-journal
+  URL: https://projecteuclid.org/journals/duke-mathematical-journal/volume-9/issue-2/Maximal-fields-with-valuations/10.1215/S0012-7094-42-00922-0.full
+  volume: '9'
+- id: Kap49
+  accessed:
+  - year: 2026
+    month: 10
+    day: 29
+  author:
+  - family: Kaplansky
+    given: Irving
+  citation-key: Kap49
+  container-title: Transactions of the American Mathematical Society
+  container-title-short: Trans. Am. Math. Soc.
+  DOI: 10.1090/S0002-9947-1949-0031470-3
+  ISSN: 1088-6850, 0002-9947
+  issue: '2'
+  issued:
+  - year: 1949
+  language: en
+  page: 464–491
+  source: DOI.org (Crossref)
+  title: Elementary divisors and modules
+  type: article-journal
+  URL: https://www.ams.org/tran/1949-066-02/S0002-9947-1949-0031470-3/
+  volume: '66'
+- id: Kir92
+  author:
+  - family: Kirwan
+    given: Frances
+  citation-key: Kir92
+  collection-number: '23'
+  collection-title: London Mathematical Society Student Texts
+  ISBN: 0-521-42353-8
+  issued:
+  - year: 1992
+  publisher: Cambridge University Press
+  publisher-place: Cambridge
+  title: Complex algebraic curves
+  type: book
+  URL: https://doi.org/10.1017/CBO9780511623929
+- id: KM98
+  author:
+  - family: Kollár
+    given: János
+  - family: Mori
+    given: Shigefumi
+  call-number: QA571 .K65 1998
+  citation-key: KM98
+  collection-number: '134'
+  collection-title: Cambridge tracts in mathematics
+  ISBN: 978-0-521-63277-5
+  issued:
+  - year: 1998
+  number-of-pages: '254'
+  publisher: Cambridge University Press
+  publisher-place: Cambridge ; New York
+  source: Library of Congress ISBN
+  title: Birational geometry of algebraic varieties
+  type: book
+- id: Lan10
+  author:
+  - family: Lang
+    given: Serge
+  citation-key: Lan10
+  collection-number: '103'
+  collection-title: Graduate texts in mathematics
+  edition: 4. ed., repr
+  ISBN: 978-1-4419-3135-1
+  issued:
+  - year: 2010
+  language: en
+  number-of-pages: '485'
+  publisher: Springer
+  publisher-place: New York
+  source: K10plus ISBN
+  title: Complex Analysis
+  type: book
+- id: Laz04
+  author:
+  - family: Lazarsfeld
+    given: Robert
+  call-number: '516.35'
+  citation-key: Laz04
+  collection-title: Ergebnisse der Mathematik und ihrer Grenzgebiete
+  ISBN: 978-3-540-22533-1
+  issued:
+  - year: 2004
+  language: en
+  number-of-pages: xviii+385
+  publisher: Springer-Verlag
+  publisher-place: Berlin
+  source: BnF ISBN
+  title: Positivity in algebraic geometry. I
+  type: book
+  volume: 48,49
+- id: Lee13
+  author:
+  - family: Lee
+    given: John M.
+  call-number: QA613 .L44 2013
+  citation-key: Lee13
+  collection-number: '218'
+  collection-title: Graduate texts in mathematics
+  DOI: 10.1007/978-1-4419-9982-5
+  edition: 2nd ed
+  ISBN: 978-1-4419-9981-8
+  issued:
+  - year: 2013
+  language: en
+  number-of-pages: '708'
+  publisher: Springer
+  publisher-place: New York ; London
+  source: Library of Congress ISBN
+  title: Introduction to smooth manifolds
+  type: book
+  volume: '218'
+- id: Mas19
+  author:
+  - family: Massey
+    given: William S.
+  citation-key: Mas19
+  collection-number: '127'
+  collection-title: Graduate texts in mathematics
+  DOI: 10.1007/978-1-4939-9063-4
+  edition: '1'
+  ISBN: 978-1-4939-9063-4
+  issued:
+  - year: 2019
+  language: en
+  number-of-pages: '1'
+  publisher: Springer
+  publisher-place: New York Heidelberg
+  source: K10plus ISBN
+  title: A basic course in algebraic topology
+  type: book
+- id: Mas91
+  author:
+  - family: Massey
+    given: William S.
+  citation-key: Mas91
+  collection-number: '127'
+  collection-title: Graduate Texts in Mathematics
+  issued:
+  - year: 1991
+  publisher: Springer-Verlag
+  publisher-place: New York
+  title: A Basic Course in Algebraic Topology
+  type: book
+- id: Mil08a
+  accessed:
+  - year: 2026
+    month: 9
+    day: 12
+  author:
+  - family: Milne
+    given: J. S.
+  citation-key: Mil08a
+  issued:
+  - year: 2008
+  title: Algebraic Geometry
+  type: document
+  URL: https://www.jmilne.org/math/CourseNotes/AG510.pdf
+- id: Mil97
+  author:
+  - family: Milnor
+    given: John W.
+  call-number: QA613.6 .M55 1997
+  citation-key: Mil97
+  collection-title: Princeton landmarks in mathematics
+  edition: Rev. ed
+  ISBN: 978-0-691-04833-8
+  issued:
+  - year: 1997
+  number-of-pages: '64'
+  publisher: Princeton University Press
+  publisher-place: Princeton, N.J
+  source: Library of Congress ISBN
+  title: Topology from the Differentiable Viewpoint
+  type: book
+- id: Mir25
+  author:
+  - family: Miranda
+    given: Rick
+  citation-key: Mir25
+  DOI: 10.1090/gsm/005
+  ISBN: 978-1-4704-8116-2
+  issued:
+  - year: 2025
+  language: en
+  note: 'OCLC: 1534116771'
+  publisher: American Mathematical Society
+  publisher-place: Providence, Rhode Island
+  source: Open WorldCat
+  title: Algebraic curves and Riemann surfaces
+  type: book
+- id: Mum94
+  author:
+  - family: Mumford
+    given: David
+  citation-key: Mum94
+  collection-number: v.1358
+  collection-title: Lecture Notes in Mathematics Ser
+  DOI: 10.1007/978-3-662-21581-4
+  ISBN: 978-3-540-50497-9
+  issued:
+  - year: 1994
+  language: en
+  number-of-pages: '1'
+  publisher: Springer Berlin / Heidelberg
+  publisher-place: Berlin, Heidelberg
+  source: K10plus ISBN
+  title: The Red Book of varieties and schemes
+  type: book
+- id: Mun00
+  author:
+  - family: Munkres
+    given: James R.
+  call-number: QA611 .M82 2000
+  citation-key: Mun00
+  edition: 2nd ed
+  ISBN: 978-0-13-181629-9
+  issued:
+  - year: 2000
+  number-of-pages: '537'
+  publisher: Prentice Hall, Inc
+  publisher-place: Upper Saddle River, NJ
+  source: Library of Congress ISBN
+  title: Topology
+  type: book
+- id: Mun84
+  author:
+  - family: Munkres
+    given: James Raymond
+  call-number: '514.2'
+  citation-key: Mun84
+  ISBN: 978-0-201-04586-4
+  issued:
+  - year: 1984
+  language: en
+  publisher: Addison-Wesley publ
+  publisher-place: Redwood city (calif) [etc.]
+  source: BnF ISBN
+  title: Elements of algebraic topology
+  type: book
+- id: Mun91
+  author:
+  - family: Munkres
+    given: James R.
+  call-number: QA300 .M75 1991
+  citation-key: Mun91
+  ISBN: 978-0-201-51035-5
+  issued:
+  - year: 1991
+  number-of-pages: '366'
+  publisher: Addison-Wesley Pub. Co., Advanced Book Program
+  publisher-place: Redwood City, Calif
+  source: Library of Congress ISBN
+  title: Analysis on manifolds
+  type: book
+- id: PA12
+  accessed:
+  - year: 2026
+    month: 9
+    day: 12
+  citation-key: PA12
+  editor:
+  - family: Pippich
+    given: Anna
+    non-dropping-particle: von
+  - family: Aryasomayajula
+    given: Anilatmaja
+  issued:
+  - year: 2012
+  note: 'Published: Humboldt-Universität zu Berlin, Summer Term 2012'
+  title: Solutions for Exercises, BMS Basic Course Algebraic Geometry
+  type: document
+  URL: http://didaktik1.mathematik.hu-berlin.de/files/solnsalgeom.pdf
+- id: RBKG13
+  author:
+  - family: Rodríguez
+    given: Rubí E.
+  - family: Bers
+    given: Lipman
+  - family: Kra
+    given: Irwin
+  - family: Gilman
+    given: Jane
+  call-number: QA331.7 .R63 2013
+  citation-key: RBKG13
+  collection-number: '245'
+  collection-title: Graduate Texts in Mathematics
+  edition: 2nd ed
+  ISBN: 978-1-4419-7322-1
+  issued:
+  - year: 2013
+  number-of-pages: '306'
+  publisher: Springer
+  publisher-place: New York
+  source: Library of Congress ISBN
+  title: 'Complex analysis: In the Spirit of Lipman Bers'
+  title-short: Complex analysis
+  type: book
+- id: Ros97
+  author:
+  - family: Ross
+    given: Sheldon
+  citation-key: Ros97
+  edition: '5'
+  issued:
+  - year: 1997
+  publisher: Prentice-Hall
+  publisher-place: Upper Saddle River, NJ
+  title: A First Course in Probability
+  type: book
+- id: Rud64
+  author:
+  - family: Rudin
+    given: Walter
+  citation-key: Rud64
+  edition: '2'
+  issued:
+  - year: 1964
+  publisher: McGraw-Hill
+  publisher-place: New York
+  title: Principles of Mathematical Analysis
+  type: book
+- id: Rud74
+  author:
+  - family: Rudin
+    given: Walter
+  call-number: QA300 .R82 1974
+  citation-key: Rud74
+  collection-title: McGraw-Hill series in higher mathematics
+  edition: 2d ed
+  ISBN: 978-0-07-054233-4
+  issued:
+  - year: 1974
+  language: en
+  number-of-pages: '452'
+  publisher: McGraw-Hill
+  publisher-place: New York
+  source: Library of Congress ISBN
+  title: Real and complex analysis
+  type: book
+  volume: '1'
+- id: Rud76
+  author:
+  - family: Rudin
+    given: Walter
+  citation-key: Rud76
+  edition: '3'
+  ISBN: 978-0-07-085613-4
+  issued:
+  - year: 1976
+  language: en
+  publisher: McGraw--Hill
+  publisher-place: New York
+  title: Principles of Mathematical analysis
+  type: book
+  volume: '1'
+- id: Sam61
+  accessed:
+  - year: 2026
+    month: 10
+    day: 29
+  author:
+  - family: Samuel
+    given: Pierre
+  citation-key: Sam61
+  container-title: Illinois Journal of Mathematics
+  container-title-short: Ill. J. Math.
+  DOI: 10.1215/ijm/1255629643
+  ISSN: 0019-2082
+  issue: '1'
+  issued:
+  - year: 1961
+    month: 3
+    day: 1
+  source: DOI.org (Crossref)
+  title: On unique factorization domains
+  type: article-journal
+  URL: https://projecteuclid.org/journals/illinois-journal-of-mathematics/volume-5/issue-1/On-unique-factorization-domains/10.1215/ijm/1255629643.full
+  volume: '5'
+- id: Sar07
+  author:
+  - family: Sarason
+    given: Donald
+  citation-key: Sar07
+  DOI: 10.1090/mbk/049
+  edition: Second edition
+  ISBN: 978-1-4704-1199-2
+  issued:
+  - year: 2007
+  language: en
+  number-of-pages: '1'
+  publisher: American Mathematical Society
+  publisher-place: Providence, Rhode Island
+  source: K10plus ISBN
+  title: Complex Function Theory
+  type: book
+- id: Ser55
+  author:
+  - family: Serre
+    given: Jean-Pierre
+  citation-key: Ser55
+  container-title: Annals of Mathematics
+  container-title-short: Ann. Math.
+  DOI: 10.2307/1969915
+  ISSN: 0003-486X
+  issue: '2'
+  issued:
+  - year: 1955
+  language: en
+  page: 197--278
+  title: Faisceaux algébriques cohérents
+  type: article-journal
+  volume: '61'
+- id: Ser73
+  accessed:
+  - year: 2025
+    month: 3
+    day: 14
+  author:
+  - family: Serre
+    given: Jean-Pierre
+  citation-key: Ser73
+  collection-title: Graduate Texts in Mathematics
+  DOI: 10.1007/978-1-4684-9884-4
+  ISBN: 978-0-387-90041-4
+  issued:
+  - year: 1973
+  license: http://www.springer.com/tdm
+  publisher: Springer
+  publisher-place: New York, NY
+  source: DOI.org (Crossref)
+  title: A course in arithmetic
+  type: book
+  URL: http://link.springer.com/10.1007/978-1-4684-9884-4
+  volume: '7'
+- id: Ser77
+  author:
+  - family: Serre
+    given: Jean-Pierre
+  call-number: QA171 .S5313
+  citation-key: Ser77
+  collection-number: '42'
+  collection-title: Graduate texts in mathematics
+  DOI: 10.1007/978-1-4684-9458-7
+  ISBN: 978-0-387-90190-9
+  issued:
+  - year: 1977
+  language: eng fre
+  number-of-pages: '170'
+  publisher: Springer-Verlag
+  publisher-place: New York
+  source: Library of Congress ISBN
+  title: Linear representations of finite groups
+  type: book
+- id: Sha13
+  accessed:
+  - year: 2026
+    month: 7
+    day: 5
+  author:
+  - family: Shafarevich
+    given: Igor R.
+  citation-key: Sha13
+  DOI: 10.1007/978-3-642-37956-7
+  edition: '3'
+  ISBN: 978-3-642-37956-7
+  issued:
+  - year: 2013
+  language: en
+  license: http://www.springer.com/tdm
+  publisher: Springer Berlin Heidelberg
+  publisher-place: Berlin, Heidelberg
+  source: DOI.org (Crossref)
+  title: 'Basic algebraic geometry 1: Varieties in projective space'
+  type: book
+  URL: http://link.springer.com/10.1007/978-3-642-57908-0
+- id: Sha94
+  author:
+  - family: Shafarevich
+    given: Igor R.
+  citation-key: Sha94
+  DOI: 10.1007/978-3-642-57908-0
+  edition: '2'
+  ISBN: 978-3-540-54812-8
+  issued:
+  - year: 1994
+  publisher: Springer
+  publisher-place: Berlin
+  title: 'Basic Algebraic Geometry 1: Varieties in Projective Space'
+  translator:
+  - family: Reid
+    given: Miles
+  type: book
+- id: Smi96
+  author:
+  - family: Smith
+    given: Roy
+  citation-key: Smi96
+  issued:
+  - year: 1996
+  title: Algebra Course Notes (843-1 through 845-3)
+  type: manuscript
+  URL: https://www.math.uga.edu/directory/people/roy-smith
+- id: Spa66
+  author:
+  - family: Spanier
+    given: E.H.
+  citation-key: Spa66
+  DOI: 10.1007/978-1-4684-9322-1
+  ISBN: 978-0-387-94426-5
+  issued:
+  - year: 1966
+  publisher: Springer-Verlag
+  title: Algebraic Topology
+  type: book
+- id: Spi99
+  author:
+  - family: Spivak
+    given: Michael
+  citation-key: Spi99
+  edition: '3'
+  issued:
+  - year: 1999
+  publisher: Publish or Perish
+  publisher-place: Houston, TX
+  title: A Comprehensive Introduction to Differential Geometry
+  type: book
+  volume: '1'
+- id: SS03
+  author:
+  - family: Stein
+    given: Elias M.
+  - family: Shakarchi
+    given: Rami
+  call-number: QA331 .S743 2003
+  citation-key: SS03
+  collection-number: '2'
+  collection-title: Princeton lectures in analysis
+  ISBN: 978-0-691-11385-2
+  issued:
+  - year: 2003
+  number-of-pages: '379'
+  publisher: Princeton University Press
+  publisher-place: Princeton, N.J
+  source: Library of Congress ISBN
+  title: Complex Analysis
+  type: book
+- id: SS03a
+  author:
+  - family: Stein
+    given: Elias M.
+  - family: Shakarchi
+    given: Rami
+  citation-key: Ste03
+  edition: 1st ed
+  ISBN: 978-0-691-11384-5
+  issued:
+  - year: 2003
+  language: en
+  number-of-pages: '1'
+  publisher: Princeton University Press
+  publisher-place: New Jersey
+  source: K10plus ISBN
+  title: 'Fourier analysis: An introduction'
+  title-short: Fourier Analysis
+  type: book
+  volume: '1'
+- id: SS05
+  author:
+  - family: Stein
+    given: Elias M.
+  - family: Shakarchi
+    given: Rami
+  call-number: QA320 .S84 2005
+  citation-key: SS05
+  collection-number: v. 3
+  collection-title: Princeton lectures in analysis
+  ISBN: 978-0-691-11386-9
+  issued:
+  - year: 2005
+  number-of-pages: '402'
+  publisher: Princeton University Press
+  publisher-place: Princeton, N.J
+  source: Library of Congress ISBN
+  title: 'Real analysis: Measure theory, Integration, and hilbert spaces'
+  title-short: Real analysis
+  type: book
+- id: Tay19
+  author:
+  - family: Taylor
+    given: Michael E.
+  call-number: QA331.7 .T3925 2019
+  citation-key: Tay19
+  collection-number: volume 202
+  collection-title: Graduate studies in mathematics
+  ISBN: 978-1-4704-5286-5
+  issued:
+  - year: 2019
+  number-of-pages: '480'
+  publisher: American Mathematical Society
+  publisher-place: Providence, Rhode Island
+  source: Library of Congress ISBN
+  title: Introduction to complex analysis
+  type: book
+- id: Vak07
+  accessed:
+  - year: 2026
+    month: 9
+    day: 12
+  author:
+  - family: Vakil
+    given: Ravi
+  citation-key: Vak07
+  issued:
+  - year: 2007
+  note: 'Published: Stanford University, Math 216, 2005–2006'
+  title: 'Foundations of Algebraic Geometry: Problem Sets'
+  type: document
+  URL: https://math.stanford.edu/~vakil/0506-216/216psjun2807.pdf
+- id: Vak25
+  author:
+  - family: Vakil
+    given: Ravi
+  citation-key: Vak25
+  DOI: 10.2307/jj.30669912
+  ISBN: 978-0-691-26867-5
+  issued:
+  - year: 2025
+  language: en
+  number-of-pages: '1'
+  publisher: Princeton University Press
+  publisher-place: Princeton
+  source: K10plus ISBN
+  title: 'The Rising Sea: Foundations of algebraic geometry'
+  title-short: The rising sea
+  type: book
+- id: Wei94
+  accessed:
+  - year: 2026
+    month: 6
+    day: 11
+  author:
+  - family: Weibel
+    given: Charles A.
+  call-number: QA169 .W45 1994
+  citation-key: Wei94
+  collection-number: '38'
+  collection-title: Cambridge studies in advanced mathematics
+  DOI: 10.1017/CBO9781139644136
+  edition: '1'
+  ISBN: 978-0-521-43500-0
+  issued:
+  - year: 1994
+  license: https://www.cambridge.org/core/terms
+  number-of-pages: '450'
+  publisher: Cambridge University Press
+  publisher-place: Cambridge [England] ; New York
+  source: Library of Congress ISBN
+  title: An introduction to homological algebra
+  type: book
+  URL: https://www.cambridge.org/core/product/identifier/9781139644136/type/book

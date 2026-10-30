@@ -257,7 +257,7 @@ class PandocServer:
         The server runs in PandocPure and cannot open a file, so the bibliography
         and the style both travel in `files` and are named by path. Both are
         base64-encoded like the abbreviations: the server reads a `files` value as
-        base64 whenever it parses as base64, and a BibTeX file that happened to do
+        base64 whenever it parses as base64, and a bibliography that happened to do
         so was decoded to bytes and rejected as invalid UTF-8. Encoding removes the
         guess.
 
@@ -269,9 +269,9 @@ class PandocServer:
         files = {"abbreviations": abbreviations}
         citeproc: dict[str, object] = {}
         if citations is not None:
-            files["references.bib"] = base64.b64encode(citations.bibliography.encode()).decode()
+            files["references.yaml"] = base64.b64encode(citations.bibliography.encode()).decode()
             files["style.csl"] = base64.b64encode(citations.style.encode()).decode()
-            citeproc = {"citeproc": True, "bibliography": ["references.bib"], "csl": "style.csl"}
+            citeproc = {"citeproc": True, "bibliography": ["references.yaml"], "csl": "style.csl"}
         requests = [
             {
                 "text": text,

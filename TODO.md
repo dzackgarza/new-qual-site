@@ -574,7 +574,7 @@ mathematical correction under its own node, not under copy policy.
 
   Round 4 (revision `e6068b271c`, algebraic-geometry wiki) injected the node below;
   `audited-deployment` needs it.
-  - **`ad4-ag-content`**. **Needs:** none.
+  - **`ad4-ag-content`**. **Needs:** none. **Closed.**
     - [x] T-BIRINV (blowups-and-classification): link text makes "Fano, Calabi--Yau" read as
       birational invariants; only general type (Kodaira dimension) is.
     - [x] PR-IV2INSEP closing paragraph: "isomorphic as schemes, not over k" contradicts the
@@ -593,8 +593,8 @@ mathematical correction under its own node, not under copy policy.
       vanishing-and-duality, families, derived-functors-and-vanishing, toric/criteria,
       toric/affine-computations, the curves-and-surfaces pages, classes-of-morphism,
       fibres-and-images, finite-and-flat (PR-RJ3P7), smooth-unramified-etale.
-    - [ ] resources: bibliography key `[07]` has no author part.
-      Citeproc builds the label from family names and the entry has one literal corporate author; see COMPLAINTS.md, "Citation label drops a corporate author".
+    - [x] resources: bibliography key `[07]` has no author part.
+      The bibliography is CSL YAML, and the Zotero item carries `citation-label: Har07`.
     - [x] P-AGXMISCTSENPONEBUNDLE statement "where the fibers smooth curves" lacks a verb;
       check the source first.
     - [x] toric/surfaces-and-morphisms: lead uses $u_i, b_i$, T-TORSURF uses $v_i, a_i$.

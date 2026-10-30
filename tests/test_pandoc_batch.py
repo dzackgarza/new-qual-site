@@ -122,7 +122,7 @@ def test_citation_keeps_its_locator() -> None:
             str(pandoc_executable()),
             "--citeproc",
             "--bibliography",
-            str(vocabularies / "references.bib"),
+            str(vocabularies / "references.yaml"),
             "--csl",
             str(vocabularies / "citation-style.csl"),
             "--to",
@@ -137,3 +137,13 @@ def test_citation_keeps_its_locator() -> None:
     )
     assert "[DuFo04, Section 10.1, Exercise 8]" in result.stdout
     assert "[DuFo04, p. 5]" in result.stdout
+
+
+def test_corporate_author_citation_renders_its_label() -> None:
+    """A corporate author has no family name to build a label from, so the
+    bibliography gives `Har07` an explicit `citation-label`, and the server's
+    citeproc read of the committed bibliography renders it."""
+    with PandocServer() as pandoc:
+        (result,) = pandoc.read_markdown(["See [@Har07].\n"], model.MARKDOWN, model.load_citations(model.VOCABULARIES))
+    text = json.dumps(json.loads(result.output)["blocks"][0])
+    assert '"[Har07]"' in text

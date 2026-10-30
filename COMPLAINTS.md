@@ -72,14 +72,3 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** reconcile the shared PR installation with `QUAL-09`'s direct-to-main workflow before changing branch protection.
 
-### Citation label drops a corporate author
-
-- **Object and need:** the `Har07` entry in `vocabularies/references.bib`, cited on `wiki/algebraic-geometry/resources.md`.
-
-- **Observed evidence:** its author is the single literal name `{Harvard University Department of Mathematics}`. Pandoc 3.11 citeproc with `vocabularies/citation-style.csl` renders the citation and the bibliography label as `[07]`. A biblatex `shorthand` or `label` field does not change the label.
-
-- **Impact and owner:** every citation of `Har07` shows a label without an author part. The auto-generated citation label belongs to citeproc; the entry belongs to the Zotero library that `tools/sync_bibliography.py` exports.
-
-- **Uncertainty:** no other entry in the file has a literal author, so the scope is one entry today.
-
-- **Repair:** give the Zotero item, or the export, an explicit citation label that citeproc accepts, then regenerate the bibliography with `tools/sync_bibliography.py`.

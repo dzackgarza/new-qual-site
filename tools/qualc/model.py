@@ -1053,9 +1053,9 @@ VOCABULARIES = Path(__file__).resolve().parents[2] / "vocabularies"
 
 
 def load_citations(root: Path) -> Citations:
-    """The BibTeX the corpus cites, and the style its references are set in."""
+    """The CSL bibliography the corpus cites, and the style its references are set in."""
     return Citations(
-        bibliography=(root / "references.bib").read_text(),
+        bibliography=(root / "references.yaml").read_text(),
         style=(root / "citation-style.csl").read_text(),
     )
 
@@ -1074,7 +1074,7 @@ def drop_bibliography(element: pf.Element, document: pf.Doc) -> list[pf.Block] |
 
 
 # Pandoc records the citeproc request in the document's metadata, so a page's
-# stringified text ends `references.bibstyle.csl` and every page in the search
+# stringified text ends `references.yamlstyle.csl` and every page in the search
 # index matches a search for either name. They describe the request, not the page.
 CITEPROC_METADATA = ("bibliography", "csl")
 
