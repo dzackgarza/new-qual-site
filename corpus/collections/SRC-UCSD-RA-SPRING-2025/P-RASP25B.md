@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP25B
 kind: problem
-title: "Atomless probability measure is inner regular on diameter"
+title: "An atomless Borel probability measure is uniformly small on sets of small diameter"
 classification:
   areas:
   - real-analysis
