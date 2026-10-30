@@ -116,7 +116,6 @@ A uniformly convergent series of differentiable functions need not be differenti
 
 [[PR-WIMIM]]
 
-[[PR-TOK44]]
 
 [[PR-NQ64T]]
 

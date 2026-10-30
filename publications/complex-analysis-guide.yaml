@@ -61,7 +61,6 @@ sections:
       - Power Series
     items:
       - ref: PR-NQ64T
-      - ref: PR-TOK44
       - ref: PR-WIMIM
       - ref: PR-5WUAP
       - ref: FF-IAUQG
