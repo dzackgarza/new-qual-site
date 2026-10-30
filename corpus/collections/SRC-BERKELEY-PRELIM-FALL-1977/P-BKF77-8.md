@@ -5,22 +5,22 @@ kind: problem
 title: Second-order ODE with initial conditions
 classification:
   areas:
-  - prelim
+    - prelim
   topics:
-  - Calculus
+    - Ordinary Differential Equations
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-11
-- event: solution-written
-  by: chatgpt
-  date: 2026-09-11
-- event: solution-reviewed
-  by: chatgpt
-  date: 2026-09-11
-  note: "Solved the repeated-root homogeneous equation, found a trigonometric particular solution, and imposed both initial conditions."
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-11
+  - event: solution-written
+    by: chatgpt
+    date: 2026-09-11
+  - event: solution-reviewed
+    by: chatgpt
+    date: 2026-09-11
+    note: "Solved the repeated-root homogeneous equation, found a trigonometric particular solution, and imposed both initial conditions."
 ---
 ::: {.problem}
 Find all solutions of
