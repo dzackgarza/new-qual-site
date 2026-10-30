@@ -15,6 +15,10 @@ default:
 check:
     uv run qualc check
 
+# Validate the YAML and schema of every changed card staged in the Git index
+check-staged:
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring check-staged
+
 # Resolve a card ID or path to its current editable corpus path
 path-card card:
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring path {{quote(card)}}
