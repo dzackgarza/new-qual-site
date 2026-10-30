@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLARA11S-07
 kind: problem
 title: Goursat's theorem for triangular contours
-classification: {areas: [real-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Cauchy Integral Formula, Contour Integration]}
 relations: []
 review: draft
 ---

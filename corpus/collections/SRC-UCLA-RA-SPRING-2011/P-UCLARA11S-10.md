@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLARA11S-10
 kind: problem
 title: Extremal derivative for a holomorphic map from a half-disk to the disk
-classification: {areas: [real-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Schwarz Lemma, Conformal Maps]}
 relations: []
 review: draft
 ---

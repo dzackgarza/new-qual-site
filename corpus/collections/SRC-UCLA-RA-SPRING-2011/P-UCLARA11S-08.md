@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLARA11S-08
 kind: problem
 title: Subharmonic functions, pointwise extrema, and norms of holomorphic matrix functions
-classification: {areas: [real-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Subharmonic Functions, Holomorphic Functions]}
 relations: []
 review: draft
 ---

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLARA11S-12
 kind: problem
 title: Finiteness and parameter-independence of the solutions to $\log z=t/z$
-classification: {areas: [real-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Holomorphic Functions, Zeros]}
 relations: []
 review: draft
 ---

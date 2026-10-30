@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLARA11S-11
 kind: problem
 title: Analytic continuation and residue of a Bose-Einstein integral
-classification: {areas: [real-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Analytic Continuation, Residues]}
 relations: []
 review: draft
 ---

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLARA11S-09
 kind: problem
 title: A bounded holomorphic function off the middle-thirds Cantor set is constant
-classification: {areas: [real-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Removable Singularities, Holomorphic Functions]}
 relations: []
 review: draft
 ---
