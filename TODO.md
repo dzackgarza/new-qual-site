@@ -969,7 +969,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/real-analysis/fubini-tonelli/index.md
   - [x] wiki/real-analysis/fubini-tonelli/statements.md
   - [x] wiki/real-analysis/fubini-tonelli/which-one-applies.md
-  - [ ] wiki/real-analysis/functional-analysis/banach-and-hilbert.md
+  - [x] wiki/real-analysis/functional-analysis/banach-and-hilbert.md
   - [ ] wiki/real-analysis/functional-analysis/index.md
   - [ ] wiki/real-analysis/functional-analysis/operators.md
   - [ ] wiki/real-analysis/functional-analysis/which-big-theorem.md
