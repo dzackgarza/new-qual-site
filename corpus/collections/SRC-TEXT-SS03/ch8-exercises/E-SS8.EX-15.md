@@ -20,16 +20,13 @@ audit:
 ::: {.exercise}
 Here are two properties enjoyed by automorphisms of the upper half-plane.
 
-(a) Suppose $\Phi$ is an automorphism of H that fixes three distinct points on the real axis.
-Then Φ is the identity.
+(a) Suppose $\Phi$ is an automorphism of $\halfplane$ that fixes three distinct points on the real axis. Then $\Phi$ is the identity.
 
-(b) Suppose $( x _ { 1 } , x _ { 2 } , x _ { 3 } )$ and $( y _ { 1 } , y _ { 2 } , y _ { 3 } )$ are two pairs of three distinct points on the real axis with
-
+(b) Suppose $(x_1, x_2, x_3)$ and $(y_1, y_2, y_3)$ are two pairs of three distinct points on the real axis with
 $$
-x _ {1} <   x _ {2} <   x _ {3} \quad \text { and } \quad y _ {1} <   y _ {2} <   y _ {3}.
+x_1 < x_2 < x_3 \quad \text{and} \quad y_1 < y_2 < y_3.
 $$
-
-Prove that there exists (a unique) automorphism Φ of H so that $\Phi ( x _ { j } ) = y _ { j }$ ， $j = 1 , 2 , 3$ . The same conclusion holds if $y _ { 3 } < y _ { 1 } < y _ { 2 }$ or $y _ { 2 } < y _ { 3 } < y _ { 1 }$
+Prove that there exists (a unique) automorphism $\Phi$ of $\halfplane$ so that $\Phi(x_j) = y_j$, $j = 1, 2, 3$. The same conclusion holds if $y_3 < y_1 < y_2$ or $y_2 < y_3 < y_1$.
 :::
 
 ::: {.solution}

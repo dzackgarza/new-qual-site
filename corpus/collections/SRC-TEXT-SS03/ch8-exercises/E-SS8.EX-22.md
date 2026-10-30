@@ -18,13 +18,11 @@ audit:
 ---
 
 ::: {.exercise}
-If $P$ is a simply connected region bounded by a polygon with vertices $a _ { 1 } , \ldots , a _ { n }$ and angles $\alpha _ { 1 } \pi , \ldots , \alpha _ { n } \pi$ , and $F$ is a conformal map of the disc D to $P ,$ then there exist complex numbers $B _ { 1 } , \ldots , B _ { n }$ on the unit circle, and constants $c _ { 1 }$ and $c _ { 2 }$ so that
-
+If $P$ is a simply connected region bounded by a polygon with vertices $a_1, \ldots, a_n$ and angles $\alpha_1\pi, \ldots, \alpha_n\pi$, and $F$ is a conformal map of the disc $\DD$ to $P$, then there exist complex numbers $B_1, \ldots, B_n$ on the unit circle, and constants $c_1$ and $c_2$ so that
 $$
-F (z) = c _ {1} \int_ {1} ^ {z} \frac {d \zeta}{(\zeta - B _ {1}) ^ {\beta_ {1}} \cdots (\zeta - B _ {n}) ^ {\beta_ {n}}} + c _ {2}.
+F(z) = c_1 \int_1^z \frac{d\zeta}{(\zeta - B_1)^{\beta_1} \cdots (\zeta - B_n)^{\beta_n}} + c_2.
 $$
-
-[Hint: This follows from the standard correspondence between H and D and an argument similar to that used in the proof of Theorem 4.7.]
+[Hint: This follows from the standard correspondence between $\halfplane$ and $\DD$ and an argument similar to that used in the proof of Theorem 4.7.]
 :::
 
 ::: {.solution}

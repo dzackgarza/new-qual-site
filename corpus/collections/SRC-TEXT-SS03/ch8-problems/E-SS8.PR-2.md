@@ -18,29 +18,25 @@ audit:
 ---
 
 ::: {.exercise}
-The angle between two non-zero complex numbers z and $w$ (taken in that order) is simply the oriented angle, in $( - \pi , \pi ]$ , that is formed between the two vectors in $\RR ^ { 2 }$ corresponding to the points z and w. This oriented angle, say $\alpha ,$ is uniquely determined by the two quantities
-
+The angle between two non-zero complex numbers $z$ and $w$ (taken in that order) is simply the oriented angle, in $(-\pi, \pi]$, that is formed between the two vectors in $\RR^2$ corresponding to the points $z$ and $w$. This oriented angle, say $\alpha$, is uniquely determined by the two quantities
 $$
-\frac {(z , w)}{\abs{ z } \abs{ w }} \quad \mathrm{and} \quad \frac {(z , - i w)}{\abs{ z } \abs{ w }}
+\frac{(z, w)}{\abs{z}\abs{w}} \quad \text{and} \quad \frac{(z, -iw)}{\abs{z}\abs{w}}
 $$
+which are simply the cosine and sine of $\alpha$, respectively. Here, the notation $(\cdot, \cdot)$ corresponds to the usual Euclidean inner product in $\RR^2$, which in terms of complex numbers takes the form $(z, w) = \Re(z\overline{w})$.
 
-which are simply the cosine and sine of $\alpha ,$ respectively.
-Here, the notation $( \cdot , \cdot )$ corresponds to the usual Euclidian inner product in $\RR ^ { 2 }$ , which in terms of complex numbers takes the form $( z , w ) = \operatorname { R e } ( z { \overline { { w } } } )$
+In particular, we may now consider two smooth curves $\gamma \colon [a, b] \to \CC$ and $\eta \colon [a, b] \to \CC$ that intersect at $z_0$, say $\gamma(t_0) = \eta(t_0) = z_0$, for some $t_0 \in (a, b)$. If the quantities $\gamma'(t_0)$ and $\eta'(t_0)$ are non-zero, then they represent the tangents to the curves $\gamma$ and $\eta$ at the point $z_0$, and we say that the two curves intersect at $z_0$ at the angle formed by the two vectors $\gamma'(t_0)$ and $\eta'(t_0)$.
 
-In particular, we may now consider two smooth curves $\gamma : [ a , b ] \to \CC$ and $\eta :$ $[ a , b ] \to \CC$ that intersect at $z _ { 0 }$ , say $\gamma ( t _ { 0 } ) = \eta ( t _ { 0 } ) = z _ { 0 }$ , for some $t _ { 0 } \in ( a , b )$ . If the quantities $\gamma ^ { \prime } ( t _ { 0 } )$ and $\eta ^ { \prime } ( t _ { 0 } )$ are non-zero, then they represent the tangents to the curves $\gamma$ and $\eta$ at the point $z _ { 0 }$ , and we say that the two curves intersect at $z _ { 0 }$ at the angle formed by the two vectors $\gamma ^ { \prime } ( t _ { 0 } )$ and $\eta ^ { \prime } ( t _ { 0 } )$
+A holomorphic function $f$ defined near $z_0$ is said to preserve angles at $z_0$ if for any two smooth curves $\gamma$ and $\eta$ intersecting at $z_0$, the angle formed between the curves $\gamma$ and $\eta$ at $z_0$ equals the angle formed between the curves $f \circ \gamma$ and $f \circ \eta$ at $f(z_0)$. (See Figure 12 for an illustration.) In particular, we assume that the tangents to the curves $\gamma$, $\eta$, $f \circ \gamma$, and $f \circ \eta$ at the point $z_0$ and $f(z_0)$ are all non-zero.
 
-A holomorphic function $f$ defined near $z _ { 0 }$ is said to preserve angles at $z _ { 0 }$ if for any two smooth curves $\gamma$ and $\eta$ intersecting at $z _ { 0 }$ , the angle formed between the curves $\gamma$ and $\eta$ at $z _ { \mathrm { 0 } }$ equals the angle formed between the curves $f \circ \gamma$ and $f \circ \eta$ at $f ( z _ { 0 } )$ . (See Figure 12 for an illustration.)
-In particular, we assume that the tangents to the curves $\gamma , \eta , f \circ \gamma$ , and $f \circ \eta$ at the point $z _ { 0 }$ and $f ( z _ { 0 } )$ are all non-zero.
+Figure 12. Preservation of angles at $z_0$
 
-Figure 12. Preservation of angles at $z _ { \mathrm { 0 } }$
-
-(a) Prove that if $f : \Omega \to \CC$ is holomorphic, and $f ^ { \prime } ( z _ { 0 } ) \neq 0$ , then $f$ preserves angles at $z _ { \mathrm { 0 } }$ . [Hint: Observe that
-
+(a) Prove that if $f \colon \Omega \to \CC$ is holomorphic, and $f'(z_0) \neq 0$, then $f$ preserves angles at $z_0$. [Hint: Observe that
 $$
-(f ^ {\prime} (z _ {0}) \gamma^ {\prime} (t _ {0}), f ^ {\prime} (z _ {0}) \eta^ {\prime} (t _ {0})) = \abs{ f ^ {\prime} (z _ {0}) } ^ {2} (\gamma^ {\prime} (t _ {0}), \eta^ {\prime} (t _ {0})). ]
+(f'(z_0)\gamma'(t_0), f'(z_0)\eta'(t_0)) = \abs{f'(z_0)}^2 (\gamma'(t_0), \eta'(t_0)).
 $$
+]
 
-(b) Conversely, prove the following: suppose $f : \Omega \to \CC$ is a complex-valued function, that is real-diferentiable at $z _ { 0 } \in \Omega$ , and $J _ { f } ( z _ { 0 } ) \ne 0$ . If f preserves angles at $z _ { \mathrm { 0 } }$ , then $f$ is holomorphic at $z _ { \mathrm { 0 } }$ with $f ^ { \prime } ( z _ { 0 } ) \neq 0$
+(b) Conversely, prove the following: suppose $f \colon \Omega \to \CC$ is a complex-valued function, that is real-differentiable at $z_0 \in \Omega$, and $J_f(z_0) \neq 0$. If $f$ preserves angles at $z_0$, then $f$ is holomorphic at $z_0$ with $f'(z_0) \neq 0$.
 :::
 
 ::: {.solution}

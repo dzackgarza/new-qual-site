@@ -18,14 +18,11 @@ audit:
 ---
 
 ::: {.exercise}
-Prove that the function u defined by
-
+Prove that the function $u$ defined by
 $$
-u (x, y) = \operatorname{Re} \left(\frac {i + z}{i - z}\right) \quad \text { and } \quad u (0, 1) = 0
+u(x, y) = \Re\left( \frac{i + z}{i - z} \right) \quad \text{and} \quad u(0, 1) = 0
 $$
-
-is harmonic in the unit disc and vanishes on its boundary.
-Note that u is not bounded in D.
+is harmonic in the unit disc and vanishes on its boundary. Note that $u$ is not bounded in $\DD$.
 :::
 
 ::: {.solution}

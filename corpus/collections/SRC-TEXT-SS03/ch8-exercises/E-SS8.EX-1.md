@@ -18,11 +18,11 @@ audit:
 ---
 
 ::: {.exercise}
-A holomorphic mapping $f : U \to V$ is a local bijection on U if for every $z \in U$ there exists an open disc $D \subset U$ centered at z, so that $f : D \to f ( D )$ is a bijection.
+A holomorphic mapping $f \colon U \to V$ is a local bijection on $U$ if for every $z \in U$ there exists an open disc $D \subset U$ centered at $z$, so that $f \colon D \to f(D)$ is a bijection.
 
-Prove that a holomorphic map $f : U \to V$ is a local bijection on U if and only if $f ^ { \prime } ( z ) \neq 0$ for all $z \in U$
+Prove that a holomorphic map $f \colon U \to V$ is a local bijection on $U$ if and only if $f'(z) \neq 0$ for all $z \in U$.
 
-[Hint: Use Rouch´e’s theorem as in the proof of Proposition 1.1.]
+[Hint: Use Rouché's theorem as in the proof of Proposition 1.1.]
 :::
 
 ::: {.solution}

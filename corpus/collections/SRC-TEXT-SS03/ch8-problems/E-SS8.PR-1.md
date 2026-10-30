@@ -17,15 +17,13 @@ audit:
 ---
 
 ::: {.exercise}
-Let $f$ be a complex-valued $C ^ { 1 }$ function defined in the neighborhood of a point $z _ { \mathrm { 0 } }$ . There are several notions closely related to conformality at $z _ { 0 }$ . We say that $f$ is isogonal at $z _ { 0 }$ if whenever $\gamma ( t )$ and $\eta ( t )$ are two smooth curves with $\gamma ( 0 ) =$ $\eta ( 0 ) = z _ { 0 }$ , that make an angle θ there $( \abs{ \theta } < \pi )$ , then $f ( \gamma ( t ) )$ and $f ( \eta ( t ) )$ make an angle of $\theta ^ { \prime }$ at $t = 0$ with $\abs{ \theta ^ { \prime } } = \abs{ \theta }$ for all θ. Also, $f$ is said to be isotropic if it magnifies lengths by some factor for all directions emanating from $z _ { 0 }$ , that is, if the limit
-
+Let $f$ be a complex-valued $C^1$ function defined in the neighborhood of a point $z_0$. There are several notions closely related to conformality at $z_0$. We say that $f$ is isogonal at $z_0$ if whenever $\gamma(t)$ and $\eta(t)$ are two smooth curves with $\gamma(0) = \eta(0) = z_0$, that make an angle $\theta$ there ($\abs{\theta} < \pi$), then $f(\gamma(t))$ and $f(\eta(t))$ make an angle of $\theta'$ at $t = 0$ with $\abs{\theta'} = \abs{\theta}$ for all $\theta$. Also, $f$ is said to be isotropic if it magnifies lengths by some factor for all directions emanating from $z_0$, that is, if the limit
 $$
-\lim _ {r \to 0} \frac {\abs{ f (z _ {0} + r e ^ {i \theta}) - f (z _ {0}) }}{r}
+\lim_{r \to 0} \frac{\abs{f(z_0 + re^{i\theta}) - f(z_0)}}{r}
 $$
+exists, is non-zero, and independent of $\theta$.
 
-exists, is non-zero, and independent of $\theta .$
-
-Then $f$ is isogonal at $z _ { 0 }$ if and only if it is isotropic at $z _ { \mathrm { 0 } } ;$ moreover, $f$ is isogonal at $z _ { 0 }$ if and only if either $f ^ { \prime } ( z _ { 0 } )$ exists and is non-zero, or the same holds for $f$ replaced by ${ \overline { { f } } } .$
+Then $f$ is isogonal at $z_0$ if and only if it is isotropic at $z_0$; moreover, $f$ is isogonal at $z_0$ if and only if either $f'(z_0)$ exists and is non-zero, or the same holds for $f$ replaced by $\overline{f}$.
 :::
 
 ::: {.solution}

@@ -21,18 +21,16 @@ audit:
 We consider conformal mappings to triangles.
 
 (a) Show that
-
 $$
-\int_ {0} ^ {z} z ^ {- \beta_ {1}} (1 - z) ^ {- \beta_ {2}} d z,
+\int_0^z z^{-\beta_1} (1 - z)^{-\beta_2}\, dz,
 $$
+with $0 < \beta_1 < 1$, $0 < \beta_2 < 1$, and $1 < \beta_1 + \beta_2 < 2$, maps $\halfplane$ to a triangle whose vertices are the images of $0$, $1$, and $\infty$, and with angles $\alpha_1\pi$, $\alpha_2\pi$, and $\alpha_3\pi$, where $\alpha_j + \beta_j = 1$ and $\beta_1 + \beta_2 + \beta_3 = 2$.
 
-with $0 < \beta _ { 1 } < 1 , \ 0 < \beta _ { 2 } < 1$ , and $1 < \beta _ { 1 } + \beta _ { 2 } < 2$ , maps $\halfplane$ to a triangle whose vertices are the images of 0, 1, and $\infty ;$ , and with angles $\alpha _ { 1 } \pi$ , $\alpha_2\pi$, and $\alpha _ { 3 } \pi _ { \ i }$ where $\alpha _ { j } + \beta _ { j } = 1$ and $\beta _ { 1 } + \beta _ { 2 } + \beta _ { 3 } = 2$
+(b) What happens when $\beta_1 + \beta_2 = 1$?
 
-(b) What happens when $\beta _ { 1 } + \beta _ { 2 } = 1 ?$
+(c) What happens when $0 < \beta_1 + \beta_2 < 1$?
 
-(c) What happens when $0 < \beta _ { 1 } + \beta _ { 2 } < 1 ?$
-
-(d) In (a), the length of the side of the triangle opposite angle $\alpha _ { j } \pi$ is $\begin{array} { r l } {  { \frac { \sin ( \alpha _ { j } \pi ) } { \pi } \Gamma ( \alpha _ { 1 } ) \Gamma ( \alpha _ { 2 } ) \Gamma ( \alpha _ { 3 } ) } } \end{array}$
+(d) In (a), the length of the side of the triangle opposite angle $\alpha_j\pi$ is $\frac{\sin(\alpha_j\pi)}{\pi} \Gamma(\alpha_1)\Gamma(\alpha_2)\Gamma(\alpha_3)$.
 :::
 
 ::: {.solution}

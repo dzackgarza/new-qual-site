@@ -25,20 +25,16 @@ audit:
 Other examples of elliptic integrals providing conformal maps from the upper half-plane to rectangles are given below.
 
 (a) The function
-
 $$
-\int_ {0} ^ {z} \frac {d \zeta}{\sqrt {\zeta (\zeta - 1) (\zeta - \lambda)}}, \quad \mathrm{with} \lambda \in \RR \mathrm{and} \lambda \neq 1
+\int_0^z \frac{d\zeta}{\sqrt{\zeta(\zeta - 1)(\zeta - \lambda)}}, \quad \text{with } \lambda \in \RR \text{ and } \lambda \neq 1
 $$
-
 maps the upper half-plane conformally to a rectangle, one of whose vertices is the image of the point at infinity.
 
-(b) In the case $\lambda = - 1$ , the image of
-
+(b) In the case $\lambda = -1$, the image of
 $$
-\int_ {0} ^ {z} \frac {d \zeta}{\sqrt {\zeta (\zeta^ {2} - 1)}}
+\int_0^z \frac{d\zeta}{\sqrt{\zeta(\zeta^2 - 1)}}
 $$
-
-is a square whose side lengths are $\textstyle { \frac { \Gamma ^ { 2 } ( 1 / 4 ) } { 2 { \sqrt { 2 \pi } } } }$
+is a square whose side lengths are $\frac{\Gamma^2(1/4)}{2\sqrt{2\pi}}$.
 :::
 
 ::: {.solution}

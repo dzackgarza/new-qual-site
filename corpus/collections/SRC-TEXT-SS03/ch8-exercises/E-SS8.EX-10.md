@@ -18,18 +18,13 @@ audit:
 ---
 
 ::: {.exercise}
-Let $F : \halfplane \to \CC$ be a holomorphic function that satisfies
-
+Let $F \colon \halfplane \to \CC$ be a holomorphic function that satisfies
 $$
-\abs{ F (z) } \leq 1 \quad \text { and } \quad F (i) = 0.
+\abs{F(z)} \leq 1 \quad \text{and} \quad F(i) = 0.
 $$
-
-Figure 11. Successive conformal maps in Exercise 8
-
 Prove that
-
 $$
-\abs{ F (z) } \leq \abs{ \frac {z - i}{z + i} } \quad \text {   for   all   } z \in \halfplane.
+\abs{F(z)} \leq \abs{\frac{z - i}{z + i}} \quad \text{for all } z \in \halfplane.
 $$
 :::
 

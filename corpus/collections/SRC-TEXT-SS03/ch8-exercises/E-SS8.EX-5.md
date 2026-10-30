@@ -18,9 +18,9 @@ audit:
 ---
 
 ::: {.exercise}
-Prove that $f ( z ) = - { \textstyle \frac { 1 } { 2 } } ( z + 1 / z )$ is a conformal map from the half-disc $\left\{ z = x + i y : \abs{ z } < 1 , \ y > 0 \right\}$ to the upper half-plane.
+Prove that $f(z) = -\frac{1}{2}(z + 1/z)$ is a conformal map from the half-disc $\{z = x + iy : \abs{z} < 1,\ y > 0\}$ to the upper half-plane.
 
-[Hint: The equation $f ( z ) = w$ reduces to the quadratic equation $z ^ { 2 } + 2 w z + 1 = 0$ 2 which has two distinct roots in C whenever w $\neq \pm 1$ . This is certainly the case if $w \in \halfplane . ]$
+[Hint: The equation $f(z) = w$ reduces to the quadratic equation $z^2 + 2wz + 1 = 0$, which has two distinct roots in $\CC$ whenever $w \neq \pm 1$. This is certainly the case if $w \in \halfplane$.]
 :::
 
 ::: {.solution}

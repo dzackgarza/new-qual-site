@@ -18,12 +18,11 @@ audit:
 ---
 
 ::: {.exercise}
-A complex number $w \in \DD$ is a fixed point for the map $f : \DD \to \DD { \mathrm { i f ~ } } f ( w ) = w$
+A complex number $w \in \DD$ is a fixed point for the map $f \colon \DD \to \DD$ if $f(w) = w$.
 
-(a) Prove that if $f : \DD \to \DD$ is analytic and has two distinct fixed points, then f is the identity, that is, $f ( z ) = z { \mathrm { ~ f o r } }$ all $z \in \DD$
+(a) Prove that if $f \colon \DD \to \DD$ is analytic and has two distinct fixed points, then $f$ is the identity, that is, $f(z) = z$ for all $z \in \DD$.
 
-(b) Must every holomorphic function $f : \DD \to \DD$ have a fixed point?
-[Hint: Consider the upper half-plane.]
+(b) Must every holomorphic function $f \colon \DD \to \DD$ have a fixed point? [Hint: Consider the upper half-plane.]
 :::
 
 ::: {.solution}
