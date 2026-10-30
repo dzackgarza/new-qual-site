@@ -655,7 +655,7 @@ mathematical correction under its own node, not under copy policy.
     - [x] UGA Spring 2003 #1b and UGA Fall 2015 extractions lose text. MinerU Flash drops the same locations on every run; they are transcribed from page renders and noted in each extraction.
     - [x] UGA Fall 2015 P-5RZWO, P-MOL6S, P-TOIEK, P-3CU65: informal solutions with errors (S/A and f/g mismatches, "take ε→0", "(Maybe not necessary?)", a recurrence in place of a closed form) and "Goal" paragraphs; rewrite under STYLE-08.
     - [x] P-3CU65: the title claims more than the problem asks.
-    **Acceptance:** each item read and repaired.
+    **Acceptance:** each item read and repaired. **Closed.**
 
   - **`ad6-site`**. **Needs:** none. Round 6 at 1c16b39fdc; report in the session scratchpad r6-site.md.
     - [x] bibliography.html: [StSh03] labels both Stein–Shakarchi Complex Analysis and Fourier Analysis; give each a distinct citation label in Zotero and re-export.
