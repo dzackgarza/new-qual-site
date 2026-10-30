@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-**REVISIT** Let $f,g : S^1 \rightarrow X$, $P = X \cup_f B^2 \cong X \coprod B^2 / \sim$, where $x \sim f(x)$, $Q = X \cup_g B^2$.
+Let $f,g : S^1 \rightarrow X$, $P = X \cup_f B^2 \cong X \coprod B^2 / \sim$, where $x \sim f(x)$ for $x\in S^1=\partial B^2$, $Q = X \cup_g B^2$.
 Show that $f\simeq g \implies P\simeq Q$.
 :::
 
@@ -22,76 +22,52 @@ Show that $f\simeq g \implies P\simeq Q$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #z}
 
-Let $H:S^1\times I\to X$ be a homotopy from $f$ to $g$.
+Let $H:S^1\times I\to X$ be a homotopy from $f$ to $g$, and let
+$$
+Z=X\cup_H(B^2\times I),
+$$
+the space obtained by attaching $B^2\times I$ to $X$ along $S^1\times I$ by $H$. Then $P$ and $Q$ are the subspaces $X\cup(B^2\times\{0\})$ and $X\cup(B^2\times\{1\})$ of $Z$.
 
 ::: pf-proof
 
-This is the hypothesis $f\simeq g$.
+On $S^1\times\{0\}$ the attaching map is $H_0=f$, and on $S^1\times\{1\}$ it is $H_1=g$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #pair}
 
-Form
-$$
-R=X\cup_H(S^1\times I)\cup_g B^2,
-$$
-where $S^1\times\{0\}$ is attached to $X$ by $f$, $S^1\times\{1\}$ is attached to $X$ by $g$, and the boundary of the disk is attached along the top circle.
+The pair $(B^2\times I,\ S^1\times I\cup B^2\times\{0\})$ admits a deformation retraction of $B^2\times I$ onto $S^1\times I\cup B^2\times\{0\}$.
 
 ::: pf-proof
 
-This is the mapping-cylinder construction for the homotopy, followed by attachment of the $2$-cell at the $g$ end.
+Project $B^2\times I$ radially from the point $(0,2)\in\RR^2\times\RR$. This is Hatcher, Proposition 0.16 and the example before it: $(D^n\times I,\ \partial D^n\times I\cup D^n\times\{0\})$ is a deformation-retract pair.
 
 :::
 
 :::
 
-::: {.pf-step #s3}
+::: {.pf-step #dr}
 
-Collapsing the cylinder $S^1\times I$ toward its bottom end gives a deformation retraction
-$$
-R\simeq X\cup_f B^2=P.
-$$
+$Z$ deformation retracts onto $P$, and likewise onto $Q$.
 
 ::: pf-proof
 
-Under the bottomward collapse, the disk together with the cylinder is again a disk whose boundary is identified with $X$ by $f$. The homotopy $H$ specifies the attaching points throughout the collapse, so it descends to the quotient.
+The deformation retraction of Step [](#pair){.pf-ref} is stationary on $S^1\times I$, so it is compatible with the attaching map $H$ and descends to a deformation retraction of $Z$ onto $X\cup_H(S^1\times I\cup B^2\times\{0\})=X\cup_f B^2=P$; extend it by the identity on $X$. Reversing the $I$-coordinate gives the deformation retraction onto $Q$. This is Hatcher, Proposition 0.18.
 
 :::
 
 :::
 
-::: {.pf-step #s4}
+::: pf-qed
 
-Collapsing the same cylinder toward its top end gives a deformation retraction
+By Step [](#dr){.pf-ref}, the inclusions $P\hookrightarrow Z$ and $Q\hookrightarrow Z$ are homotopy equivalences, so
 $$
-R\simeq X\cup_g B^2=Q.
+\boxed{P=X\cup_f B^2\simeq X\cup_g B^2=Q.}
 $$
-
-::: pf-proof
-
-The analogous topward collapse leaves the disk attached by $g$.
-
-:::
-
-:::
-
-::: pf-step
-
-Therefore
-$$
-\boxed{X\cup_f B^2\simeq X\cup_g B^2}.
-$$
-
-::: pf-proof
-
-Both spaces are homotopy-equivalent to $R$ by steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
-
-:::
 
 :::
 

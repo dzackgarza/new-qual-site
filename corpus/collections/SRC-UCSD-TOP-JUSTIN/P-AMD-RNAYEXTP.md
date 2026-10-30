@@ -18,7 +18,7 @@ For each of the following $f: S^1 \rightarrow S^1$, identify the corresponding $
 
 1. $z\mapsto z^n$
 
-2. $\bar{x} \mapsto -\bar{x}$
+2. the antipodal map $z \mapsto -z$
 
 3. $e^{i\theta} \mapsto e^{2\pi i\sin\theta}$
 :::

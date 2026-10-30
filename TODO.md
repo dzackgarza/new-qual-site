@@ -534,7 +534,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-TOP-FALL-2023
   - [x] SRC-UCSD-TOP-FALL-2024
   - [x] SRC-UCSD-TOP-FALL-2025
-  - [ ] SRC-UCSD-TOP-JUSTIN
+  - [x] SRC-UCSD-TOP-JUSTIN
   - [ ] SRC-UCSD-TOP-QUAL-FALL-2017
   - [ ] SRC-UCSD-TOP-SPRING-2000
   - [ ] SRC-UCSD-TOP-SPRING-2001
@@ -1746,6 +1746,16 @@ mathematical correction under its own node, not under copy policy.
     decide the gluing maps, and rewrite the statement and the solution.
     **Acceptance:** the card statement names each face map, and the solution computes the
     space for that gluing.
+  - **`ad-ucsd-justin-missing-items`**. **Needs:** none. SRC-UCSD-TOP-JUSTIN lacks cards for
+    items present in the sheet extractions: sheet 2 #11 (first half), sheet 4 #2-4 and #6-16,
+    sheet 7 #9, sheet 11 #5, and sheet 13 #2-18. Sheets 5, 6 and 9 have no checked-in extraction.
+    **Acceptance:** each listed item is a card in the collection in source order, and sheets 5,
+    6 and 9 are extracted and compared with their cards.
+  - **`ad-justin-band-figure`**. **Needs:** none. P-AMD-CM4OPBUE (sheet 3 #4): the left band
+    figure appears to have interlinked bands, and the solution claims the surface is planar with
+    boundary circles capped to give $S^2$. Read the figure from the page render, decide the
+    surface, and rewrite the solution. **Acceptance:** the solution identifies each surface from
+    the figure as drawn.
 
 ### Marking a node closed
 

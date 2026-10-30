@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Define $M$ as the group ring $R = \ZZ[\ZZ_2]$ with the action $(\cdot) \times -1$.
+Let $R = \ZZ[\ZZ_2]$ be the group ring, and let $M$ be $\ZZ$ with the generator of $\ZZ_2$ acting by $-1$.
 Construct a free resolution of $M$ and compute $\Tor_R^*(M, M)$.
 :::
 

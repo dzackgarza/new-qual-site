@@ -15,7 +15,7 @@ review: draft
 
 ::: {.problem}
 Let $\alpha: S^n \to S^n,~ \alpha(p) = -p$ be the antipodal map on $S^n$.
-Show that $n ~\text{odd} \implies f \simeq \text{id}$.
+Show that $n ~\text{odd} \implies \alpha \simeq \text{id}$.
 :::
 
 ::: {.solution}

@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f,g \rightarrow S^n$ be such that $\forall x\in X, f(x) \neq -g(x)$.
+Let $f,g: X \rightarrow S^n$ be such that $\forall x\in X, f(x) \neq -g(x)$.
 Show that $f \simeq g$.
 :::
 

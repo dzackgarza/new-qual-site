@@ -2,22 +2,21 @@
 schema: qual/card@1
 id: P-AMD-HEIDFSO2
 kind: problem
-title: $H_*(X; \QQ) = H_*(X;\ZZ)\otimes\QQ$ and $H^*(X; \ZZ) = \operatorname{Hom}(H_*(X;
-  \ZZ), \QQ)$
+title: $H_*(X;\QQ)=H_*(X;\ZZ)\otimes\QQ$ and $H^*(X;\QQ)=\operatorname{Hom}(H_*(X;\ZZ),\QQ)$
 classification:
   areas:
-  - topology
+    - topology
   topics:
-  - Homology
-  - Cohomology
-  - Homological Algebra
+    - Homology
+    - Cohomology
+    - Homological Algebra
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: claude-opus-5-5
-  date: 2026-10-29
-  note: The source printed H^*(X; Z) on the left of the cohomology formula and omitted the conjunction; it now reads H^*(X; Q) = Hom(H_*(X; Z), Q).
+  - event: source-checked
+    by: claude-opus-5-5
+    date: 2026-10-29
+    note: The source printed H^*(X; Z) on the left of the cohomology formula and omitted the conjunction; it now reads H^*(X; Q) = Hom(H_*(X; Z), Q).
 ---
 
 ::: {.problem}
