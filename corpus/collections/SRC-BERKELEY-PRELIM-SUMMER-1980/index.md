@@ -35,7 +35,7 @@ source:
   - P-BERK80S-17
   - P-BERK80S-18
   - P-BERK80S-19
-  - P-BERK80S-20
+  - P-BERK77S-08
   date:
     kind: academic-term
     term: summer

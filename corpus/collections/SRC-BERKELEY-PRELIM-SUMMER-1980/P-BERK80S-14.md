@@ -6,7 +6,8 @@ title: Normal form for anticommuting involutions
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

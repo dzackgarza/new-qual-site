@@ -6,7 +6,8 @@ title: Absolute and conditional convergence of a logarithmic power series
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -32,11 +33,11 @@ $$
 
 Determine the values of $(a,b,c)$ for which the series
 
-1. converges absolutely;
+(a) converges absolutely;
 
-2. converges but not absolutely;
+(b) converges but not absolutely;
 
-3. diverges.
+(c) diverges.
 :::
 
 ::: {.solution}

@@ -6,7 +6,8 @@ title: Subsequence convergence for oscillatory functions
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: $(x^3+2x+1)^{50}$ modulo the ideal $(x-5,14)$ of $\ZZ[x]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

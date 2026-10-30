@@ -6,7 +6,8 @@ title: Zeros of a polynomial in an annulus
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

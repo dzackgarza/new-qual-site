@@ -6,7 +6,8 @@ title: The integral of a branch of $\sqrt{z^2-1}$ around $\abs{z}=2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

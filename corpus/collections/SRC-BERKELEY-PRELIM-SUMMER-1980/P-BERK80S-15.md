@@ -6,7 +6,8 @@ title: Left and right radicals of a bilinear form have equal dimension
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

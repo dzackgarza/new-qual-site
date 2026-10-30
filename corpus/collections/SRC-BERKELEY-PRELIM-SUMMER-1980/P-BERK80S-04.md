@@ -6,7 +6,8 @@ title: Conjugates of a subgroup in a finite group
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -26,9 +27,9 @@ audit:
 ::: {.problem}
 Let $G$ be a finite group and let $H\subsetneq G$ be a proper subgroup.
 
-1. Show that the number of subgroups of $G$ of the form $xHx^{-1}$, for $x\in G$, is at most the index $[G:H]$.
+(a) Show that the number of subgroups of $G$ of the form $xHx^{-1}$, for $x\in G$, is at most the index $[G:H]$.
 
-2. Prove that some element of $G$ is not contained in any subgroup of the form $xHx^{-1}$, $x\in G$.
+(b) Prove that some element of $G$ is not contained in any subgroup of the form $xHx^{-1}$, $x\in G$.
 :::
 
 ::: {.solution}
@@ -99,8 +100,8 @@ $$
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves part 1. By step [](#s2){.pf-ref}, some element of $G$ lies in no
-subgroup $xHx^{-1}$, which proves part 2.
+Step [](#s1){.pf-ref} proves part (a). By step [](#s2){.pf-ref}, some element of $G$ lies in no
+subgroup $xHx^{-1}$, which proves part (b).
 
 :::
 

@@ -6,7 +6,8 @@ title: Uncountably many connected components in a subset of the real line
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

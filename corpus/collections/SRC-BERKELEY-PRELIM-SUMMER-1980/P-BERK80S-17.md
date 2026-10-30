@@ -6,7 +6,8 @@ title: Fixed point of a monotone real function
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

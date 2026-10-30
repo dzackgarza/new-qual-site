@@ -6,7 +6,8 @@ title: Real matrix with prescribed invariant subspaces and minimal polynomial
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Real matrix roots of four matrix equations
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -26,22 +27,22 @@ audit:
 ::: {.problem}
 Which of the following matrix equations have a real matrix solution $X$? (It is not necessary to exhibit solutions.)
 
-(1)
+(a)
 $$
 X^3=\begin{pmatrix}0&0&0\\1&0&0\\2&3&0\end{pmatrix},
 $$
 
-(2)
+(b)
 $$
 2X^5+X=\begin{pmatrix}3&5&0\\5&1&9\\0&9&0\end{pmatrix},
 $$
 
-(3)
+(c)
 $$
 X^6+2X^4+10X=\begin{pmatrix}0&-1\\1&0\end{pmatrix},
 $$
 
-(4)
+(d)
 $$
 X^4=\begin{pmatrix}3&4&0\\0&3&0\\0&0&-3\end{pmatrix}.
 $$
@@ -53,7 +54,7 @@ $$
 
 ::: {.pf-step #s1}
 
-Equation (1) has no real matrix solution.
+Equation (a) has no real matrix solution.
 
 ::: pf-proof
 
@@ -80,7 +81,7 @@ contrary to $N\ne0$. Thus no such $X$ exists.
 
 ::: {.pf-step #s2}
 
-Equation (2) has a real matrix solution.
+Equation (b) has a real matrix solution.
 
 ::: pf-proof
 
@@ -122,7 +123,7 @@ $$
 
 ::: {.pf-step #s3}
 
-Equation (3) has a real matrix solution.
+Equation (c) has a real matrix solution.
 
 ::: pf-proof
 
@@ -156,7 +157,7 @@ $$
 
 ::: {.pf-step #s4}
 
-Equation (4) has no real matrix solution.
+Equation (d) has no real matrix solution.
 
 ::: pf-proof
 
@@ -193,12 +194,12 @@ which is impossible over $\RR$.
 
 The equations with a real matrix solution are exactly
 $$
-\boxed{\text{equations (2) and (3).}}
+\boxed{\text{equations (b) and (c).}}
 $$
 
 ::: pf-proof
 
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give solutions of equations (2) and (3), and steps [](#s1){.pf-ref} and [](#s4){.pf-ref} rule out equations (1) and (4).
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give solutions of equations (b) and (c), and steps [](#s1){.pf-ref} and [](#s4){.pf-ref} rule out equations (a) and (d).
 
 :::
 
