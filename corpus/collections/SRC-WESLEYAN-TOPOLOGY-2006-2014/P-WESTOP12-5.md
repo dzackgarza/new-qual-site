@@ -144,7 +144,7 @@ $$
 is an open cover of $K$.
 By compactness, choose
 $$
-y_1,dots,y_m\in K
+y_1,\dots,y_m\in K
 $$
 such that
 $$

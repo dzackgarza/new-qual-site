@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESTOP14-6
 kind: problem
-title: Three disk-identification spaces from the June 2014 Wesleyan exam
+title: Fundamental groups, homology, and manifold status of three hexagon identification spaces
 classification: {areas: [topology], topics: []}
 relations: []
 review: draft

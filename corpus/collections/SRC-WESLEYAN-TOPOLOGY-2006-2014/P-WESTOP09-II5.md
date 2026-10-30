@@ -7,21 +7,27 @@ classification: {areas: [topology], topics: []}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
-  note: The source diagram is represented only by an image placeholder in the retained Markdown. The text preserves the exactness of both rows, commutativity, and the hypotheses on the vertical maps alpha, beta, gamma, and delta, but not the object or horizontal-map labels.
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
 ---
 
 ::: {.problem}
-Consider the commutative diagram in the source, whose two rows are exact. The vertical maps are labeled $\alpha,\beta,\gamma,\delta$ in order. Prove that if $\alpha$ is surjective and $\beta$ and $\delta$ are injective, then $\gamma$ is injective.
-
-The objects and horizontal-map labels in the diagram are unrecovered from the retained Markdown extraction.
+Suppose the diagram
+$$
+\begin{array}{ccccccccccccc}
+0&\to&A&\xrightarrow{i}&B&\xrightarrow{j}&C&\xrightarrow{k}&D&\xrightarrow{\ell}&E&\to&0\\
+&&\downarrow{\scriptstyle\alpha}&&\downarrow{\scriptstyle\beta}&&\downarrow{\scriptstyle\gamma}&&\downarrow{\scriptstyle\delta}&&\downarrow{\scriptstyle\varepsilon}&&\\
+0&\to&A'&\xrightarrow{i'}&B'&\xrightarrow{j'}&C'&\xrightarrow{k'}&D'&\xrightarrow{\ell'}&E'&\to&0
+\end{array}
+$$
+is commutative and that the rows are exact. Show that if $\alpha$ is surjective and $\beta$ and $\delta$ are injective, then $\gamma$ is injective.
 :::
 
 ::: {.solution}
 
-Write the two exact rows abstractly as
+Only the part of the diagram from $A$ to $D$ is used. Write the maps
+$i,j,k$ as $f,g,h$ and $i',j',k'$ as $f',g',h'$, so the two exact rows are
 $$
 A\xrightarrow{f}B\xrightarrow{g}C\xrightarrow{h}D
 $$
