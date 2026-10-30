@@ -23,6 +23,10 @@ Let $R$ be a unital ring, show that there is a ring homomorphism $\mathrm{Hom}_R
 Conclude that if $R$ is commutative, then there is a ring isomorphism $\mathrm{Hom}_R(R, R) \cong R$.
 :::
 
+::: {.remark title="Variations"}
+The homomorphism is an isomorphism for every unital ring: $\operatorname{End}_R({}_RR)\cong R^{\mathrm{op}}$ as rings.
+:::
+
 ::: {.solution}
 Let $\Phi\colon \operatorname{Hom}_R(R,R) \to R^{\mathrm{op}}$ be evaluation at $1$, $\Phi(f) = f(1)$. For $a\in R$ let $f_a\colon R\to R$ be $f_a(r)=ra$.
 
