@@ -83,6 +83,10 @@ source:
   - name: V.1
     problems:
     - P-BTFTU
+    - id: E-AMD-HICDBVN4
+      comment: Hungerford 5.1.4(d)
+    - id: E-75GIT
+      comment: Hungerford 5.1.7
     - P-LQXXN
     - P-PTEW6
     - P-3GQBI
