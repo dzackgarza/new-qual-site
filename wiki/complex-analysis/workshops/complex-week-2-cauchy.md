@@ -48,27 +48,27 @@ $$
 f(z)=\frac{a_{-n}}{(z-z_0)^n}+\frac{a_{-n+1}}{(z-z_0)^{n-1}}+\cdots+\frac{a_{-1}}{z-z_0}+G(z),
 $$
 with $G$ holomorphic in a neighborhood of $z_0$ [@SS03, Theorem 3.1.3].
-Recall that the sum of the negative powers is the [[D-C3JIU|principal part]] of $f$ at $z_0$, and the coefficient $a_{-1}$ is the [[D-C3JIU|residue]] $\res_{z_0}f$.
+Recall that the sum of the negative powers is the [[D-C3JIU|principal part]] of $f$ at $z_0$, and the coefficient $a_{-1}$ is the [[D-C3JIU|residue]] $\Res_{z_0}f$.
 Multiplying the expansion by $(z-z_0)^n$ and differentiating $n-1$ times gives
 $$
-\res_{z_0}f=\lim_{z\to z_0}\frac1{(n-1)!}\left(\frac{d}{dz}\right)^{n-1}\bigl((z-z_0)^nf(z)\bigr).
+\Res_{z_0}f=\lim_{z\to z_0}\frac1{(n-1)!}\left(\frac{d}{dz}\right)^{n-1}\bigl((z-z_0)^nf(z)\bigr).
 $$
 [@SS03, Theorem 3.1.4]
 
-At a simple pole $c$ this reads $\res_cf=\lim_{z\to c}(z-c)f(z)$.
+At a simple pole $c$ this reads $\Res_cf=\lim_{z\to c}(z-c)f(z)$.
 If $f=g/h$ near $c$ with $g,h$ holomorphic, $h(c)=0$ and $h'(c)\neq0$, then
 $$
-\res_cf=\lim_{z\to c}\frac{(z-c)\,g(z)}{h(z)}=\frac{g(c)}{h'(c)},
+\Res_cf=\lim_{z\to c}\frac{(z-c)\,g(z)}{h(z)}=\frac{g(c)}{h'(c)},
 $$
 since $h(z)/(z-c)\to h'(c)$.
 
 The [[T-WFXQP|residue at infinity]] is
 $$
-\res_\infty f=-\res_0\left(\frac1{z^2}f\!\left(\frac1z\right)\right).
+\Res_\infty f=-\Res_0\left(\frac1{z^2}f\!\left(\frac1z\right)\right).
 $$
 If $f(z)\to0$ as $\abs{z}\to\infty$, then $g(w)\coloneqq f(1/w)$ extends holomorphically to $w=0$ with $g(0)=0$, so $w^{-2}g(w)$ has residue $g'(0)$ at $0$, and
 $$
-\res_\infty f=-\lim_{\abs{z}\to\infty}zf(z).
+\Res_\infty f=-\lim_{\abs{z}\to\infty}zf(z).
 $$
 
 ### Bounds
