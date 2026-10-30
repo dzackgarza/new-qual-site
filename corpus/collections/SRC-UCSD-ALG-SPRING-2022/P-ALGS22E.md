@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS22E
 kind: problem
-title: "Galois group of Q(zeta_n) is (Z/nZ)*"
+title: "The Galois group of $\\QQ(\\zeta_n)/\\QQ$ is $(\\ZZ/n\\ZZ)^\\times$"
 classification:
   areas:
   - algebra

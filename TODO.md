@@ -410,7 +410,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-ALG-SPRING-2019
   - [x] SRC-UCSD-ALG-SPRING-2020
   - [x] SRC-UCSD-ALG-SPRING-2021
-  - [ ] SRC-UCSD-ALG-SPRING-2022
+  - [x] SRC-UCSD-ALG-SPRING-2022
   - [ ] SRC-UCSD-ALG-SPRING-2023
   - [ ] SRC-UCSD-ALG-SPRING-2024
   - [ ] SRC-UCSD-ALG-SPRING-2025
@@ -553,7 +553,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-TOP-SPRING-2022
   - [x] SRC-UCSD-TOP-SPRING-2023
   - [x] SRC-UCSD-TOP-SPRING-2024
-  - [ ] SRC-UCSD-TOP-SPRING-2025
+  - [x] SRC-UCSD-TOP-SPRING-2025
   - [ ] SRC-UCSD-TOP-SPRING-2026
   - [ ] SRC-UCSD-TOP-SUMMER-2015
   - [ ] SRC-UGA-ALG-FALL-2012

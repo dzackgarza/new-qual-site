@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS22B
 kind: problem
-title: "A_n has no subgroup of index n/2 for n ≥ 5"
+title: "$A_n$ has no subgroup of index $n/2$ for $n \\geq 5$"
 classification:
   areas:
   - algebra
