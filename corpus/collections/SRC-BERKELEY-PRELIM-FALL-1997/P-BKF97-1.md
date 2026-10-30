@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF97-1
 kind: problem
 title: Convergence of the recurrence $x_{n+1}=1/(2+x_n)$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

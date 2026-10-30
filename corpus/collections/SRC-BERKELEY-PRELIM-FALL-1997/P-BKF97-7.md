@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF97-7
 kind: problem
 title: Monotonicity of the index of symmetric quadratic forms
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

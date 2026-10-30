@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF97-6
 kind: problem
 title: Distinct real exponentials are linearly independent
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

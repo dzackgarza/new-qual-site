@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF97-8
 kind: problem
 title: Pairwise trivially intersecting normal subgroups and direct products
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:
