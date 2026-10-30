@@ -65,7 +65,7 @@ sections:
       - ref: P-ZHTDW
       - ref: P-HGRO31
       - ref: E-AMD-IWU3CMM5
-      - ref: P-USPU6
+      - ref: P-M504F03-1
       - ref: P-M504F03-3
       - ref: P-4ZDQQ
       # Algebra Week 4 Rings
