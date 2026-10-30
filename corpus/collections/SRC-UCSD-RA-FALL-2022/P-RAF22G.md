@@ -31,7 +31,7 @@ Let $\alpha = (\alpha_1, \cdots, \alpha_n)$ with $\alpha_i$ nonnegative integers
 
 1. Prove that there exists a natural number $N$ and $C > 0$ such that
 $$
-\abs{\langle F, \varphi \rangle} \leq C \sum_{\multiindexsize{\alpha} \leq N} \sup_x \abs{\partial^\alpha \varphi(x)}, \quad \forall \varphi \in C_c^\infty.
+\abs{\langle F, \varphi \rangle} \leq C \sum_{\multiindexsize{\alpha} \leq N} \sup_{\abs{x} \leq 1} \abs{\partial^\alpha \varphi(x)}, \quad \forall \varphi \in C_c^\infty.
 $$
 
 2. If $\varphi \in C_c^\infty$ and $\partial^\alpha \varphi(0) = 0$ for all $\multiindexsize{\alpha} \leq N$, then $\langle F, \varphi \rangle = 0$.
@@ -45,11 +45,11 @@ $$
 
 ::: {.pf-step #s1}
 
-(1) There are $N\in\NN$ and $C>0$ with $\abs{\langle F,\varphi\rangle}\le C\sum_{\multiindexsize{\alpha}\le N}\sup_x\abs{\partial^\alpha\varphi(x)}$ for every $\varphi\in C_c^\infty$.
+(1) There are $N\in\NN$ and $C>0$ with $\abs{\langle F,\varphi\rangle}\le C\sum_{\multiindexsize{\alpha}\le N}\sup_{\abs{x}\le1}\abs{\partial^\alpha\varphi(x)}$ for every $\varphi\in C_c^\infty$.
 
 ::: pf-proof
 
-Choose $\chi\in C_c^\infty(\RR^n)$ with $\chi=1$ on a neighborhood of $0$, and let $K=\operatorname{supp}\chi$. Since
+Choose $\chi\in C_c^\infty(\RR^n)$ with $\chi=1$ on a neighborhood of $0$ and $K=\operatorname{supp}\chi\subset\{\abs{x}\le1\}$. Since
 $$
 \operatorname{supp}F=\{0\},
 $$
@@ -71,12 +71,12 @@ $$
 \sup_x\abs{\partial^\alpha\psi(x)}
 \qquad(\psi\in\mathcal D_K).
 $$
-Applying this to $\psi=\chi\varphi$ and using Leibniz's rule gives, after absorbing the finitely many derivatives of $\chi$ into the constant,
+Applying this to $\psi=\chi\varphi$ and using Leibniz's rule gives, after absorbing the finitely many derivatives of $\chi$ into the constant and using that $\chi\varphi$ and its derivatives vanish off $\{\abs{x}\le1\}$,
 $$
 \boxed{
 \abs{\langle F,\varphi\rangle}
 \le C\sum_{\multiindexsize{\alpha}\le N}
-\sup_x\abs{\partial^\alpha\varphi(x)}.}
+\sup_{\abs{x}\le1}\abs{\partial^\alpha\varphi(x)}.}
 $$
 
 :::

@@ -38,7 +38,7 @@ If false, give a counterexample or prove your assertion.
    If $f \in L^1(\RR, m)$ and $\int_a^{a+1} \abs{f(x)}^2 \, dx < \infty$ for every $a \in \RR$, then $f \in L^2(\RR, m)$.
 
 3. Let $f$ be a tempered distribution on $\RR^n$, with Fourier transform defined by $\langle \hat{f}, \varphi \rangle = \langle f, \hat{\varphi} \rangle$ for $\varphi \in \mathcal{S}$.
-   Recall that for a distribution, $\langle \tau_y^\vee f, \varphi \rangle = \langle f, \tau_{-y} \varphi \rangle$.
+   Recall that for $f$ a distribution, $\langle \tau_y f, \varphi \rangle = \langle f, \tau_{-y} \varphi \rangle$ for compactly supported $\varphi$, and for a regular function $(\tau_y f)(x) = f(x-y)$.
    Then it must hold
 $$
 \widehat{(\tau_y f)}(\xi) = e^{-2\pi i \langle \xi, y \rangle} \hat{f}(\xi), \quad \forall y \in \RR^n.
