@@ -17,75 +17,82 @@ review: draft
 ::: {.problem}
 What is the Jordan normal form over $\CC$ of a $7 \times 7$ matrix $A$ which satisfies all of the following conditions:
 
-a.
-$A$ has real coefficients,
-
-b.
-$\mathrm{rk} A=5$,
-
-c.
-$\mathrm{rk} A^{2}=4$,
-
-d.
-$\mathrm{rk} A-I=6$,
-
-e.
-$\mathrm{rk} A^{3}-I=4$,
-
-f.
-$\operatorname{tr} A=1 ?$
+a. $A$ has real coefficients,
+b. $\operatorname{rk} A=5$,
+c. $\operatorname{rk} A^{2}=4$,
+d. $\operatorname{rk}(A-I)=6$,
+e. $\operatorname{rk}(A^{3}-I)=4$,
+f. $\operatorname{tr} A=1$?
 :::
 
 ::: {.solution}
-\envlist
 
-- We'll use rank-nullity throughout: $\rank M + \dim \ker M = 7$.
-- Also note that 
-$$
-Av = \lambda v
-\implies
-A^nv = A^{n-1}Av = A^{n-1}\lambda v = \cdots = \lambda^n v
-,$$
-  so if $\lambda \in \Spec(A)$ then $\lambda^n\in \Spec(A^n)$.
-  Conversely, $\lambda\in \Spec(A^n) \implies \lambda^{1\over n}\in \Spec(A)$, which we'll use several times.
-- Since $5 = \rank A = \rank(A - 0\cdot I)$,  we have $\dim \ker(A-0\cdot I) = 2$ contributing an eigenvalue of $\lambda = 0$ with multiplicity $2$.
+Write $\zeta=e^{2\pi i/3}$, $J_k(\lambda)$ for the Jordan block of size $k$ with eigenvalue $\lambda$, and $n_\lambda(B)=\dim\ker(B-\lambda I)$. Rank-nullity gives $\dim\ker M=7-\operatorname{rk}M$.
 
-- Since $4 = \rank A^2 = \rank(A^2 - 0\cdot \lambda) = \rank(A-0\cdot \lambda)^2$, we have that $\dim \ker(A-0\cdot I)^2 = 3$.
-  Since $\dim \ker (A-0\cdot I)^1 = 2 < 3$, this means there is 1 generalized eigenvector associated to $\lambda = 0$.
+::: pf
 
-- Since $6 = \rank(A-1\cdot I)$, $\dim \ker (A- 1\cdot I) = 1$, contributing $\lambda = 1$ with multiplicity 1.
-- Since $\rank(A^3-1\cdot I) = 4$, we have $\dim \ker (A^3-1\cdot I) = 3$, contributing $\lambda = 1$ *now to $\Spec(A^3)$* instead of $\Spec(A)$.
-  Thus some unknown cube roots of 1 are contributed to $\Spec(A)$, so any of $1=\zeta_3^0, \zeta_3, \zeta_3^2$ are possibilities at this point.
-  Call these three contributions $z_1, z_2, z_3$, which may not be distinct.
+::: {.pf-step #zero}
 
-- Now use that $\tr(A) = \sum_{i=1}^n \lambda_i$ is the sum of the diagonal on $\JCF(A)$, using that trace is a similarity invariant, to write
-$$
-1 = \tr(A) = (0 + 0) + (0) + (1) + (z_1 + z_2 + z_3) \implies z_1 + z_2 + z_3 = 0 
-,$$
-which is actually enough to force $z_1 = 1, z_2 = \zeta_3, z_3 = \zeta_3^2$, since no other combination sums to zero.
-That $1 + \zeta_3 + \zeta_3^2 = 0$ is a general fact.
+The eigenvalue $0$ has Jordan blocks of sizes exactly $1$ and $k$ for some $k\ge2$.
 
-- Since $\lambda=1$ occurs twice as an eigenvalue but $\dim \ker(A-1\cdot I) = 1$, the two copies of $\lambda = 1$ must occur in a nontrivial Jordan block.
-- So we get a Jordan form
-$$
-\JCF(A) = 
-\begin{bmatrix}
-0 & & & & & & 
-\\
-& 0 & 1 & & & & 
-\\
-& & 0 & & & & 
-\\
-& & & 1 & 1 & & 
-\\
-& & & & 1 & & 
-\\
-& & & & & \zeta_3 & 
-\\
-& & & & & & \zeta_3^2
-\\
-\end{bmatrix}
-.$$
+::: pf-proof
+
+$\dim\ker A=2$, so $0$ has two blocks, of sizes $a\le b$. $\dim\ker A^2=\min(a,2)+\min(b,2)=3$, which forces $a=1$ and $b\ge2$.
 
 :::
 
+:::
+
+::: {.pf-step #roots}
+
+The eigenvalues $1$, $\zeta$ and $\zeta^2$ each have exactly one Jordan block.
+
+::: pf-proof
+
+$x^3-1=(x-1)(x-\zeta)(x-\zeta^2)$ with pairwise coprime factors, so
+$$
+\ker(A^3-I)=\ker(A-I)\oplus\ker(A-\zeta I)\oplus\ker(A-\zeta^2I),
+$$
+and this space has dimension $3$. $\dim\ker(A-I)=1$. Since $A$ is real, complex conjugation maps $\ker(A-\zeta I)$ onto $\ker(A-\zeta^2 I)$, so these have equal dimension, which is therefore $1$.
+
+:::
+
+:::
+
+::: {.pf-step #other}
+
+$A$ has no eigenvalue outside $\{0,1,\zeta,\zeta^2\}$, the blocks for $\zeta$ and $\zeta^2$ have one common size $c$, and the block for $1$ has size $c+1$.
+
+::: pf-proof
+
+Let the block for $1$ have size $m$, and let the remaining eigenvalues, other than $0$, $1$, $\zeta$, $\zeta^2$, have total multiplicity $r$. Conjugation of the real matrix $A$ preserves the Jordan structure, so the $\zeta$ and $\zeta^2$ blocks have one size $c$. By Step [](#zero){.pf-ref}, $1+k+m+2c+r=7$ with $k\ge2$, so $m+2c+r\le4$. The trace is
+$$
+1=m+c(\zeta+\zeta^2)+s=m-c+s,
+$$
+where $s$ is the sum of the $r$ remaining eigenvalues. If $r>0$, then $m=c=1$ and $r\le1$, so $r=1$ and $s=1$. The eigenvalue $s=1$ is not a remaining eigenvalue, a contradiction. Hence $r=0$ and $m=c+1$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By Step [](#other){.pf-ref}, $1+k+(c+1)+2c=7$, so $k+3c=5$ with $k\ge2$ and $c\ge1$. Thus $c=1$, $k=2$ and $m=2$, and
+$$
+\boxed{J=J_1(0)\oplus J_2(0)\oplus J_2(1)\oplus J_1(\zeta)\oplus J_1(\zeta^2)
+=\begin{pmatrix}
+0&&&&&&\\
+&0&1&&&&\\
+&&0&&&&\\
+&&&1&1&&\\
+&&&&1&&\\
+&&&&&\zeta&\\
+&&&&&&\zeta^2
+\end{pmatrix}.}
+$$
+
+:::
+
+:::
+
+:::
