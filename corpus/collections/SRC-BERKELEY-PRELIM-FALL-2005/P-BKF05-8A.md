@@ -6,7 +6,8 @@ title: Smallest symmetric group containing an element of order 111
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

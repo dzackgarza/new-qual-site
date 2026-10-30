@@ -6,7 +6,8 @@ title: Dirichlet convergence for a monotone sine integral
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Realizable pairs of characteristic and minimal polynomials
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

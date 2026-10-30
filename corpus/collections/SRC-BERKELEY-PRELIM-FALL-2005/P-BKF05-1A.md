@@ -6,7 +6,8 @@ title: Lebesgue number for an open cover of a compact metric space
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

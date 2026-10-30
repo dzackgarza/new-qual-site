@@ -6,7 +6,8 @@ title: Representations of $5\cdot17\cdot37$ as a sum of two squares
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

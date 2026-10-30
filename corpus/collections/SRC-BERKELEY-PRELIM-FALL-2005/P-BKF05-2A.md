@@ -6,7 +6,8 @@ title: Partial fractions for proper complex rational functions
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

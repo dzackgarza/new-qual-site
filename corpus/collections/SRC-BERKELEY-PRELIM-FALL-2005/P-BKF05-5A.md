@@ -6,7 +6,8 @@ title: A differential inequality forcing finite-time blowup
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

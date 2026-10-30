@@ -6,7 +6,8 @@ title: The Cayley transform of a Hermitian operator is unitary
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

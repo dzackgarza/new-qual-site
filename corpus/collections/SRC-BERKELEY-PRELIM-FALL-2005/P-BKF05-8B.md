@@ -6,7 +6,8 @@ title: The integral of $e^{iz}/z$ over a large upper semicircle tends to zero
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

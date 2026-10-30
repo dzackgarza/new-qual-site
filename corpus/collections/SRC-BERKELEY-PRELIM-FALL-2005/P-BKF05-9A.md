@@ -6,7 +6,8 @@ title: Convolution preserves rapid decrease on the integers
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

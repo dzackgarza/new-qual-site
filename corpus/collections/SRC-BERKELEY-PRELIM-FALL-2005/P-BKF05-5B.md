@@ -6,7 +6,8 @@ title: Cyclicity of the unit group $(\FF_p[x]/(x^3))^\times$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

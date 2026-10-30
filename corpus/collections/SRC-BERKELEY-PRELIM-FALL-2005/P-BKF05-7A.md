@@ -6,7 +6,8 @@ title: Zeros of a quintic in a closed annulus
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

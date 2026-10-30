@@ -6,7 +6,8 @@ title: The ideal $(x^m-1,x^n-1)$ in $\ZZ[x]$ is principal
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
