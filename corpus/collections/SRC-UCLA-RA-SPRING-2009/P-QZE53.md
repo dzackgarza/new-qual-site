@@ -2,9 +2,9 @@
 schema: qual/card@1
 id: P-QZE53
 kind: problem
-title: Local integrability of $F(z)=\int_{\CC}\frac{1}{z-w}\,d\mu(w)$, integrability
-  along almost every horizontal line, and $\mu(S)=\frac{1}{2\pi i}\int_{\partial S}F(z)\,dz$
-  for almost every axis-parallel square
+title: Local integrability of $F(z)=\int_{\CC}\frac{1}{z-w}\,d\mu(w)$, integrability along
+  almost every horizontal line, and $\mu(S)=\frac{1}{2\pi i}\int_{\partial S}F(z)\,dz$ for
+  almost every axis-parallel square
 classification:
   areas:
   - real-analysis
@@ -19,6 +19,13 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The exam defines almost all squares by their lower-left and upper-right vertices lying
+    off a null subset of C^2, but axis-parallel squares form a null subset of C^2, so that
+    definition excludes nothing it should; the statement now measures squares by corner and
+    side length.
 ---
 
 ::: {.problem}
@@ -28,7 +35,7 @@ a. Prove that $F(z) = \int_\CC \frac{1}{z-w}\,d\mu(w)$ exists for almost all $z\
 
 b. Prove that for almost every horizontal line $L$ and all compact $K\subseteq L$, $\int_K \abs{F(x+iy)}\,dx < \infty$.
 
-c. Prove that for almost all open squares $S$ with sides parallel to the axes, $$\mu(S) = \frac{1}{2\pi i}\int_{\partial S} F(z)\,dz.$$
+c. Prove that for almost every open square $S=(a,a+s)\times(c,c+s)$ with sides parallel to the axes, that is, for all $(a,c,s)$ outside a Lebesgue null subset of $\RR^2\times(0,\infty)$, $$\mu(S) = \frac{1}{2\pi i}\int_{\partial S} F(z)\,dz.$$
 :::
 
 ::: {.solution}
