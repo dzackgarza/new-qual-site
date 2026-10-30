@@ -1038,7 +1038,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/topology/resources/index.md
   - [x] wiki/topology/resources/problems.md
   - [x] wiki/topology/resources/solutions.md
-  - [ ] wiki/topology/resources/topics.md
+  - [x] wiki/topology/resources/topics.md
   - [ ] wiki/topology/review.md
   - [ ] wiki/topology/surfaces/index.md
   - [ ] wiki/topology/surfaces/surfaces-and-manifolds.md
