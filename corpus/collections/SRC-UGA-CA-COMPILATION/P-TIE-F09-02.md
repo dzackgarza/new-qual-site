@@ -23,7 +23,7 @@ audit:
 ::: {.problem}
 Let $f$ be a continuous function in the region
 $$
-D = \{z \mid \abs{z} > R,\ 0 \le \arg z \le \theta\} \quad \text{where} \quad 1 \le \theta \le 2\pi.
+D = \{z \mid \abs{z} > R,\ 0 \le \arg z \le \theta\} \quad \text{where} \quad 0 \le \theta \le 2\pi.
 $$
 If there exists $k$ such that $\lim_{z\to\infty} zf(z) = k$ for $z$ in the region $D$. Show that
 $$
@@ -168,7 +168,7 @@ $$
 
 ::: pf-proof
 
-Given any $\delta>0$, apply step [](#s1-3){.pf-ref} with
+If $\theta=0$, then $L$ is a single point and both sides are $0$. Let $\theta>0$. Given any $\delta>0$, apply step [](#s1-3){.pf-ref} with
 $$
 \varepsilon=\frac{\delta}{\theta}.
 $$
@@ -193,4 +193,8 @@ Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 
+:::
+
+::: remark
+One printing of this problem restricts to $1\le\theta\le2\pi$. The proof does not use the restriction.
 :::
