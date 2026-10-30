@@ -279,9 +279,9 @@ sections:
       if $f\colon\DD\to\DD$ is holomorphic with $f(0)=0$, then $\abs{f(z)}\le\abs{z}$ for all
       $z\in\DD$ and $\abs{f'(0)}\le1$, and if $\abs{f(z)}=\abs{z}$ for some $z\ne0$ or
       $\abs{f'(0)}=1$, then $f(z)=e^{i\theta}z$ for some $\theta\in\RR$. For $a\in\DD$,
-      $\varphi_a(z)=\frac{a-z}{1-\bar az}$ is an automorphism of $\DD$ with
-      $\varphi_a\circ\varphi_a=\id$ that exchanges $a$ and $0$, and
-      $\Aut(\DD)=\{e^{i\theta}\varphi_a:\theta\in\RR,\ a\in\DD\}$.
+      $\psi_a(z)=\frac{a-z}{1-\bar az}$ is an automorphism of $\DD$ with
+      $\psi_a\circ\psi_a=\id$ that exchanges $a$ and $0$, and
+      $\Aut(\DD)=\{e^{i\theta}\psi_a:\theta\in\RR,\ a\in\DD\}$.
     topics:
       - Conformal Maps
       - Fractional Linear Transformations
