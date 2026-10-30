@@ -32,6 +32,8 @@ Let $(X, \mathcal{M}, \mu)$ be a finite measure space, and $0 \leq f_1 \leq f_2 
 (a) Prove that $\mu(f_j^{-1}((r, \infty])) \to \mu(f^{-1}((r, \infty)))$ as $j \to \infty$ for every $r \geq 0$, $r \in \RR$.
 
 (b) Prove that $\int_X f \, d\mu = \int_0^\infty \mu(f^{-1}((r, \infty))) \, dr$.
+
+(Hint: You could use (a), taking $f_j$ to be a sequence of simple functions that converge monotonically to $f$.)
 :::
 
 ::: {.solution}

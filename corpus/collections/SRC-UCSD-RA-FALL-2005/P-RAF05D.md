@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that $\ell^\infty$ (the space of all bounded sequences of complex numbers with the sup norm) is not separable.
+Prove that $\ell^\infty$ (the space of all bounded sequences of complex numbers with the sup norm) is not separable. (Hint: Try proof by contradiction.)
 :::
 
 ::: {.solution}

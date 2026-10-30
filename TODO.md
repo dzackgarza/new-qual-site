@@ -483,7 +483,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-CA-SPRING-2025
   - [x] SRC-UCSD-CA-SPRING-2026
   - [x] SRC-UCSD-RA-FALL-2004
-  - [ ] SRC-UCSD-RA-FALL-2005
+  - [x] SRC-UCSD-RA-FALL-2005
   - [ ] SRC-UCSD-RA-FALL-2006
   - [ ] SRC-UCSD-RA-FALL-2007
   - [ ] SRC-UCSD-RA-FALL-2009
