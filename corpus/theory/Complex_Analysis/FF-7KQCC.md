@@ -6,6 +6,7 @@ title: Value of $\arctan(1/\sqrt 3)$
 slogan: '$\arctan(1/\sqrt3)=\pi/6$: the principal angle whose tangent is $1/\sqrt3$.'
 prompts:
 - What is $\arctan\qty{1 \over \sqrt 3}$?
+- What is $\arctan\qty{\sqrt{3} \over 3}$?
 classification:
   areas:
   - complex-analysis
@@ -16,5 +17,5 @@ review: draft
 ---
 
 ::: {.fact}
-$\arctan\qty{1\over \sqrt 3} = {\pi\over 6}$
+$\arctan\qty{1\over \sqrt 3} = \arctan\qty{\sqrt 3\over 3} = {\pi\over 6}$
 :::

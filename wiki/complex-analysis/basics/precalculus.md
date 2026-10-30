@@ -98,7 +98,7 @@ In particular $x^2 + bx + c = \qty{x+ {b\over 2}}^2 + c - \qty{b\over 2}^2$.
 
 [[FF-Y6IOA]] [[FF-WDDTM]] [[FF-A7OEY]]
 
-[[FF-7KQCC]] [[FF-2VUTS]] [[FF-2ABHQ]]
+[[FF-7KQCC]] [[FF-2ABHQ]]
 
 ::: {.remark}
 The root of unity $e^{2\pi i k/n}$ has rectangular coordinates $\qty{\cos(2\pi k/n), \sin(2\pi k/n)}$, so $e^{2\pi i/3} = -\frac12 + \frac{\sqrt3}{2}i$ and $e^{2\pi i/6} = \frac12 + \frac{\sqrt3}{2}i$.
