@@ -6,7 +6,8 @@ title: The elementary symmetric polynomial map on $\CC^3$ is surjective but not 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

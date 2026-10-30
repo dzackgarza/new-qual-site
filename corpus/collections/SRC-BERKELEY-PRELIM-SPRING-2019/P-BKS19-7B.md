@@ -6,7 +6,8 @@ title: Conjugacy in $\GL_2^+(\RR)$ versus $\GL_2(\RR)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

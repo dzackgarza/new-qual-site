@@ -6,7 +6,8 @@ title: Moore determinant over $\ZZ/2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

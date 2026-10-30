@@ -6,7 +6,8 @@ title: Evaluation of $\int_{-\infty}^\infty x\sin x/(1+x^2)^2\,dx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

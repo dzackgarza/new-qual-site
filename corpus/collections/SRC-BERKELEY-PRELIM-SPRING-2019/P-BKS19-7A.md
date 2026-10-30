@@ -6,7 +6,8 @@ title: Complex matrices with $A^{37}=I$ are diagonalizable
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

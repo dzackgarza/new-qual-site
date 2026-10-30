@@ -12,7 +12,6 @@ review: draft
 completion: complete
 provenance:
 - assets/attachments/Spring_2019_prelim.pdf
-- assets/attachments/Spring_2019_prelim_solutions.pdf
 source:
   source_kind: university-exam
   institution: berkeley

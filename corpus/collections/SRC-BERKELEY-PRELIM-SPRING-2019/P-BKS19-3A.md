@@ -6,7 +6,8 @@ title: Sup-norm bound $\max\abs{f}\le\frac18\max\abs{f''}$ with zero boundary va
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Roots of $e^z=3z^6$ in the upper half of the unit disk
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

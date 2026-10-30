@@ -6,7 +6,8 @@ title: For fast-growing $f$, the sum $\sum 1/f(n)$ avoids a given countable set
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

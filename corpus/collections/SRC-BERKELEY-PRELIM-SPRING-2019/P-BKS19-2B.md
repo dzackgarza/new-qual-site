@@ -6,7 +6,8 @@ title: Gaussian integral via $F(t)^2+G(t)$ constant
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

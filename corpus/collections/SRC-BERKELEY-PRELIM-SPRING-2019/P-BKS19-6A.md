@@ -6,7 +6,8 @@ title: Invertible matrices with $YX=aXY$ exist iff $a^n=1$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

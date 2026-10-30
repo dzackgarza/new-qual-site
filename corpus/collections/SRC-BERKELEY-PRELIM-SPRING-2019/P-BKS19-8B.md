@@ -6,7 +6,8 @@ title: Boolean rings are commutative of characteristic 2
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

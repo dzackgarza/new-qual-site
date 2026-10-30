@@ -6,7 +6,8 @@ title: Square roots in $S_6$ of elements of $A_6$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

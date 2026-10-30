@@ -6,7 +6,8 @@ title: Bound on the zeros of a monic complex polynomial
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
