@@ -16,7 +16,6 @@ audit:
   note: Checked against Problem 4 of the retained UCLA Basic Examination, Fall 2008.
 ---
 ::: {.problem}
-
 (a) Let $K,F\subset\RR^2$, with $K$ closed and bounded and $F$ closed.
 Prove that if $K\cap F=\varnothing$, then
 $$

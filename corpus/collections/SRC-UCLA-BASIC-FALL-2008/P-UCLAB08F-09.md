@@ -16,7 +16,6 @@ audit:
   note: Checked against Problem 9 of the retained UCLA Basic Examination, Fall 2008.
 ---
 ::: {.problem}
-
 (a) Prove that every linear transformation $T\colon\CC^n\to\CC^n$ has a nonzero eigenvector.
 
 (b) Is (a) true for every linear transformation $T\colon\RR^n\to\RR^n$?

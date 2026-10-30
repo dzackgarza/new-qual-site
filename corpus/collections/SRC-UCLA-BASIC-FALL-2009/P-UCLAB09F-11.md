@@ -16,7 +16,6 @@ audit:
   note: Checked against Problem 11 of the retained UCLA Basic Examination, Fall 2009.
 ---
 ::: {.problem}
-
 (i) State the Cayley--Hamilton theorem for matrices $A\in M_n(\CC)$.
 
 (ii) Prove the theorem directly for diagonalizable matrices.

@@ -16,7 +16,6 @@ audit:
   note: Checked against Problem 2 of the retained UCLA Basic Examination, Fall 2009.
 ---
 ::: {.problem}
-
 (i) Let $(X,d)$ be a complete metric space.
 A map $T\colon X\to X$ is a contraction if there is $0<\lambda<1$ such that
 $$

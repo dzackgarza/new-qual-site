@@ -16,7 +16,6 @@ audit:
   note: Checked against Problem 1 of the retained UCLA Basic Examination, Fall 2009.
 ---
 ::: {.problem}
-
 (i) For each $n\in\NN$, let $f_n\colon\NN\to\RR$ satisfy $\abs{f_n(m)}\le 1$ for all $m,n\in\NN$.
 Prove that there is an infinite subsequence of distinct positive integers $(n_i)$ such that, for each $m\in\NN$, the sequence $f_{n_i}(m)$ converges.
 

@@ -16,7 +16,6 @@ audit:
   note: Checked against Problem 9 of the retained UCLA Basic Examination, Spring 2007.
 ---
 ::: {.problem}
-
 (a) Define what it means for a function $f$ to be Riemann integrable on $[0,1]$.
 
 (b) Prove that every continuous function on $[0,1]$ is Riemann integrable.

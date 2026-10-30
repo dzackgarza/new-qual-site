@@ -16,7 +16,6 @@ audit:
   note: Checked against Problem 11 of the retained UCLA Basic Examination, Spring 2007.
 ---
 ::: {.problem}
-
 (a) Consider
 $$
 u^3+xv-y=0,\qquad v^3+yu-x=0.
