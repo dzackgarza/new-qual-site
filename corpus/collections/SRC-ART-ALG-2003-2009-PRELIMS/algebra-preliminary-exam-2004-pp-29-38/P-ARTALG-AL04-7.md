@@ -7,6 +7,7 @@ classification:
   areas:
   - algebra
   topics:
+  - Local Rings
   - Commutative Algebra
 relations: []
 review: draft

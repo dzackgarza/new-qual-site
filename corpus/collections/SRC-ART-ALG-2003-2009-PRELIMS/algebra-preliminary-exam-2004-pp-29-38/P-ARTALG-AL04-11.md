@@ -7,7 +7,7 @@ classification:
   areas:
   - algebra
   topics:
-  - Galois Theory
+  - Finite Fields
 relations: []
 review: draft
 audit:

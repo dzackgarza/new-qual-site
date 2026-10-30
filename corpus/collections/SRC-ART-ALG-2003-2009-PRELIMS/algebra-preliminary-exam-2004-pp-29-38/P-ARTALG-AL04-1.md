@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Group Theory
+  - Sylow Theory
+  - Solvable Groups
+  - Simple Groups
 relations: []
 review: draft
 audit:

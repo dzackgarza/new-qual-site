@@ -8,6 +8,7 @@ classification:
   - algebra
   topics:
   - Galois Theory
+  - Splitting Fields
 relations: []
 review: draft
 audit:

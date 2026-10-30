@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - Group Theory
+  - Sylow Theory
+  - Semidirect Products
 relations: []
 review: draft
 audit:

@@ -7,7 +7,10 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Euclidean Domains
+  - Unique Factorization Domains
+  - Principal Ideal Domains
+  - Counterexamples
 relations: []
 review: draft
 audit:
