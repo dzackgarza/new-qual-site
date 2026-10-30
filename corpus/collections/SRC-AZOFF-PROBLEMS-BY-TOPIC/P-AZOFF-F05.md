@@ -144,3 +144,7 @@ Step [](#s4){.pf-ref} is the requested classification.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+Characterize all entire functions with a pole of order $m$ at $\infty$. (They are exactly the polynomials of degree $m$.)
+:::
