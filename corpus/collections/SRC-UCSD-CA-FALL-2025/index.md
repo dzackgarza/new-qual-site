@@ -17,7 +17,7 @@ source:
   institution: ucsd
   area: complex-analysis
   problems:
-  - P-CAFA25A
+  - P-CASP15C
   - P-CAFA25B
   - P-CAFA25C
   - P-CAFA25D
