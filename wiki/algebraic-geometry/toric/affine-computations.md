@@ -16,17 +16,11 @@ A Hilbert basis $m_1,\ldots,m_r$ of $S_\sigma$ gives a closed embedding $U_\sigm
 
 ![A two-dimensional cone in $N$ with its dual cone shaded, ray generators marked](/assets/algebraic-geometry/toric/dual-cone-lattice-computation.png)
 
-For a full-dimensional cone $\sigma$, the number of elements of the Hilbert basis of $S_\sigma$ is the embedding dimension of $U_\sigma$ at its torus-fixed point; a two-dimensional cone whose Hilbert basis has four elements gives a surface in $\AA^4$ that does not embed in $\AA^3$.
-For the cone over the rational normal curve of degree $d$, the relations are the $2\times2$ minors of $\begin{pmatrix}x_0&x_1&\cdots&x_{d-1}\\x_1&x_2&\cdots&x_d\end{pmatrix}$.
-
 ## Smooth affine toric varieties
 
 [[PR-TORSMAFF]]
 
 [[PR-FULCOTAN]]
-
-$U_\sigma$ is smooth exactly when the minimal ray generators of $\sigma$ are part of a basis of $N$.
-For full-dimensional $\sigma$, the Zariski cotangent space at the torus-fixed point has dimension equal to the size of the Hilbert basis of $S_\sigma$, which equals $\dim U_\sigma$ exactly in the smooth case.
 
 For a two-dimensional cone with primitive ray generators $u_1,u_2$, $\abs{\det(u_1,u_2)}=1$ exactly when $U_\sigma$ is smooth, and $\Cl(U_\sigma)$ is cyclic of order $\abs{\det(u_1,u_2)}$.
 
@@ -34,25 +28,16 @@ For a two-dimensional cone with primitive ray generators $u_1,u_2$, $\abs{\det(u
 
 [[D-FULSAT]]
 
-A finitely generated affine semigroup need not contain every lattice point in the cone it spans.
-Saturation tests whether it already equals the lattice points of that cone in its group completion; passing to the saturation gives the normalization of the semigroup ring.
-
 ## The quadric cone
 
 [[FE-TORCD]]
 
 ![The quadric cone $V(y^2 - xz)$, the affine toric variety of the cone on $(0,1)$, $(2,-1)$](/assets/algebraic-geometry/toric/quadric-cone-surface-plot.png)
 
-The quadric cone $V(y^2-xz)$ is normal and not smooth, the line $x=y=0$ is a Weil divisor on it that is not Cartier, and its class group is $\ZZ/2$.
-
 [[FE-FULQUOT]]
-
-As $V(y^2-xz)\subseteq\AA^3$ it is cut out by the $2\times2$ minor of $\begin{pmatrix}x&y\\y&z\end{pmatrix}$; as $\AA^2/\{\pm1\}$ it is the $A_1$ quotient singularity, and $\Cl\cong\ZZ/2$ is the character group of $\{\pm1\}$.
 
 ## Resolving it
 
 [[FE-TORMINRES]]
 
 ![The lattice points of the convex hull of $\sigma \intersect N$, marked as the rays of the minimal resolution](/assets/algebraic-geometry/toric/minimal-resolution-by-convex-hull-of-cone.png)
-
-The minimal resolution of a toric surface $U_\sigma$ subdivides $\sigma$ by the rays through the lattice points on the compact edges of the convex hull of $(\sigma\cap N)\setminus\{0\}$.
