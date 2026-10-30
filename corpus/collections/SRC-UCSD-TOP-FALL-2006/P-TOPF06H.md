@@ -42,11 +42,11 @@ A cone contracts to its cone point.
 
 ::: pf-step
 
-If $X$ is connected, enlarge the two open cone neighborhoods slightly so that their intersection deformation retracts onto $X$ and is connected.
+Read "connected" as path-connected, as van Kampen requires; the two notions agree for CW complexes and manifolds. Enlarge the two open cone neighborhoods slightly so that their intersection deformation retracts onto $X$ and is path-connected.
 
 ::: pf-proof
 
-Using the quotient model $X\times[-1,1]$ with the end copies collapsed, take the images of $X\times(-1,1]$ and $X\times[-1,1)$. Their intersection is $X\times(-1,1)$, homotopy equivalent to $X$ and connected.
+Using the quotient model $X\times[-1,1]$ with the end copies collapsed, take the images of $X\times(-1,1]$ and $X\times[-1,1)$. Their intersection is $X\times(-1,1)$, homotopy equivalent to $X$ and path-connected.
 
 :::
 

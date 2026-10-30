@@ -520,7 +520,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-TOP-FALL-2002
   - [x] SRC-UCSD-TOP-FALL-2003
   - [x] SRC-UCSD-TOP-FALL-2004
-  - [ ] SRC-UCSD-TOP-FALL-2006
+  - [x] SRC-UCSD-TOP-FALL-2006
   - [ ] SRC-UCSD-TOP-FALL-2007
   - [ ] SRC-UCSD-TOP-FALL-2008
   - [ ] SRC-UCSD-TOP-FALL-2009
