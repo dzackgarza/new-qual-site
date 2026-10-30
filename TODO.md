@@ -575,7 +575,7 @@ mathematical correction under its own node, not under copy policy.
   Round 4 (revision `e6068b271c`, algebraic-geometry wiki) injected the node below;
   `audited-deployment` needs it.
   - **`ad4-ag-content`**. **Needs:** none.
-    - [ ] T-BIRINV (blowups-and-classification): link text makes "Fano, Calabi--Yau" read as
+    - [x] T-BIRINV (blowups-and-classification): link text makes "Fano, Calabi--Yau" read as
       birational invariants; only general type (Kodaira dimension) is.
     - [ ] PR-IV2INSEP closing paragraph: "isomorphic as schemes, not over k" contradicts the
       card's "need not be isomorphic as k-schemes" ($X = \PP^1$).

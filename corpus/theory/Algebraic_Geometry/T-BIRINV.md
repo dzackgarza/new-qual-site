@@ -39,7 +39,7 @@ The inverse pullbacks are constructed in [[P-AGH288PLURIGENUS]], following the m
 :::
 
 ::: {.remark title="Plurigenera and Kodaira dimension"}
-The invariants $p_g$, $q$, and $P_m$ are defined in [[D-COHEULER]]. Since every plurigenus is birationally invariant, the asymptotic growth of the sequence $P_m$ is birationally invariant. Hence Kodaira dimension and the property of being of general type in [[D-VARFANO]] are birational invariants for smooth projective varieties.
+The invariants $p_g$, $q$, and $P_m$ are defined in [[D-COHEULER]]. Since every plurigenus is birationally invariant, the asymptotic growth of the sequence $P_m$ is birationally invariant. Hence Kodaira dimension and the property of being [[D-VARFANO|of general type]] are birational invariants for smooth projective varieties.
 :::
 
 ::: {.proposition title="Characteristic-zero Hodge comparison"}
