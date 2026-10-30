@@ -5,7 +5,8 @@ kind: problem
 title: Define a limit and prove $\sqrt{x}\to1/2$ as $x\to1/4$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Limits
 relations: []
 review: draft
 audit:
@@ -15,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Give the $\varepsilon$-$\delta$ definition for the existence of
+Let $f:\RR\to\RR$ be a function. Give the $\varepsilon$-$\delta$ definition for the existence of
 $$
 \lim_{x\to x_0}f(x).
 $$

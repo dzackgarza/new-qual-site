@@ -5,7 +5,9 @@ kind: problem
 title: Uniform convergence permits passage of the limit through an integral
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Integrals
 relations: []
 review: draft
 audit:

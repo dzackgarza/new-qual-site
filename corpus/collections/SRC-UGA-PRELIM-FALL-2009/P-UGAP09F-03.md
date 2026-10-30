@@ -5,7 +5,8 @@ kind: problem
 title: Prove a weighted finite geometric-sum formula by induction
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Induction
 relations: []
 review: draft
 audit:

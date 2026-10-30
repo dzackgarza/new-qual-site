@@ -2,10 +2,11 @@
 schema: qual/card@1
 id: P-UGAP09F-07
 kind: problem
-title: Diagonalize a two-by-two Hermitian complex matrix
+title: Diagonalize a $2\times2$ Hermitian complex matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Diagonalization
 relations: []
 review: draft
 audit:

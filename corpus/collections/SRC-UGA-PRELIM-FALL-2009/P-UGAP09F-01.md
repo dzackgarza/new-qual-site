@@ -5,7 +5,8 @@ kind: problem
 title: Formalize, negate, and take the converse of a quantified implication
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Logic and Quantifiers
 relations: []
 review: draft
 audit:

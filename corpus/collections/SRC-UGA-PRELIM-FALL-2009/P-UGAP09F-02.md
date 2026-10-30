@@ -5,7 +5,10 @@ kind: problem
 title: Three calculus computations involving differentiation, Taylor series, and a triple integral
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Differentiation
+  - Taylor Series
+  - Multivariable Calculus
 relations: []
 review: draft
 audit:

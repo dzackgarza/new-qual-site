@@ -5,7 +5,10 @@ kind: problem
 title: Existing partial derivatives need not imply continuity, and a sufficient differentiability criterion
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Multivariable Calculus
+  - Differentiation
+  - Continuity
 relations: []
 review: draft
 audit:

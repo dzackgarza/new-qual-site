@@ -5,7 +5,9 @@ kind: problem
 title: Dimension and basis of a trigonometric function space
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Vector Spaces
+  - Bases
 relations: []
 review: draft
 audit:
