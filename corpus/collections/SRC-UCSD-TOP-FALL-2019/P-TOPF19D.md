@@ -15,6 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
+Recall the definition of complex projective space $\CP^n = (\CC^{n+1} - \{\vec{0}\})/\sim$, where $(z_0, \ldots, z_n) \sim (w_0, \ldots, w_n)$ if and only if there exists a nonzero complex number $a$ such that $z_i = a \cdot w_i$ for all $0 \leq i \leq n$.
 When $n$ is even, show that any continuous map $f : \CP^n \to \CP^n$ has a fixed point.
 :::
 

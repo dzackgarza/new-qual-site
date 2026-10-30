@@ -23,13 +23,25 @@ Show that $H_{n-1}(M; \ZZ)$ is torsion-free if and only if $M$ is orientable.
 
 ::: pf
 
+::: {.pf-step #top}
+
+$H_n(M;\ZZ)\cong\ZZ$ if $M$ is orientable and $H_n(M;\ZZ)=0$ if not, while $H_n(M;\ZZ/2)\cong\ZZ/2$ in both cases.
+
+::: pf-proof
+
+This is the standard computation of the top homology of a closed connected $n$-manifold (Hatcher, Theorem 3.26).
+
+:::
+
+:::
+
 ::: {.pf-step #s1}
 
 If $M$ is orientable, then $H_{n-1}(M;\ZZ)$ is torsion-free.
 
 ::: pf-proof
 
-Poincaré duality gives $H_{n-1}(M;\ZZ)\cong H^1(M;\ZZ)$. The universal coefficient theorem gives $H^1(M;\ZZ)\cong\operatorname{Hom}(H_1(M),\ZZ)$, which is torsion-free.
+Poincaré duality gives $H_{n-1}(M;\ZZ)\cong H^1(M;\ZZ)$. The universal coefficient theorem gives $H^1(M;\ZZ)\cong\operatorname{Hom}(H_1(M),\ZZ)$, because $\operatorname{Ext}(H_0(M),\ZZ)=\operatorname{Ext}(\ZZ,\ZZ)=0$, and a group of homomorphisms into $\ZZ$ is torsion-free.
 
 :::
 
@@ -37,25 +49,23 @@ Poincaré duality gives $H_{n-1}(M;\ZZ)\cong H^1(M;\ZZ)$. The universal coeffici
 
 ::: {.pf-step #s2}
 
-If $M$ is nonorientable, then $H_{n-1}(M;\ZZ)$ has nonzero $2$-torsion.
+If $M$ is nonorientable, then $H_{n-1}(M;\ZZ)$ has an element of order $2$.
 
 ::: pf-proof
 
-For a connected closed nonorientable manifold, Poincaré duality with the orientation local system gives $H_{n-1}(M;\ZZ)\cong H^1(M;\widetilde{\ZZ})$. Equivalently, using the orientation double cover and its deck involution, the orientation character contributes a nontrivial order-$2$ class in codimension one. In the standard integral homology form of Poincaré duality for closed manifolds, this is the canonical $\ZZ/2$ torsion summand detected by nonorientability.
+The universal coefficient theorem for homology gives
+$$
+H_n(M;\ZZ/2)\cong \bigl(H_n(M;\ZZ)\otimes\ZZ/2\bigr)\oplus\operatorname{Tor}(H_{n-1}(M;\ZZ),\ZZ/2).
+$$
+By Step [](#top){.pf-ref} the left side is $\ZZ/2$ and $H_n(M;\ZZ)=0$, so $\operatorname{Tor}(H_{n-1}(M;\ZZ),\ZZ/2)\cong\ZZ/2$. This group is the $2$-torsion subgroup $\{x : 2x=0\}$ of $H_{n-1}(M;\ZZ)$, so it has an element of order $2$.
 
 :::
 
 :::
 
-::: pf-step
+::: pf-qed
 
-Therefore $H_{n-1}(M;\ZZ)$ is torsion-free exactly when $M$ is orientable.
-
-::: pf-proof
-
-Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
-
-:::
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give both directions.
 
 :::
 

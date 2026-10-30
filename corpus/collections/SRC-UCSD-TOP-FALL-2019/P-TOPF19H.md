@@ -23,6 +23,7 @@ Let $M$ be a compact, orientable $3$-dimensional manifold.
 Suppose the boundary of $M$ is a surface $\Sigma$ of genus $g$.
 Let $i_* : H_1(\Sigma; \QQ) \to H_1(M; \QQ)$ be the map induced by the inclusion of the boundary.
 Show that the dimension of $\ker i_*$ equals $g$.
+(This is the so-called "half dies, half lives" lemma.)
 :::
 
 ::: {.solution}

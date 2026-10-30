@@ -16,7 +16,8 @@ review: draft
 
 ::: {.problem}
 Let $M, N$ be two closed, oriented, $n$-dimensional manifolds.
-Show that the mapping degree of a continuous map $f : M \to N$ must be divisible by $[\pi_1(N), f_*(\pi_1(M))]$, the index of the subgroup $f_*(\pi_1(M))$ in $\pi_1(N)$.
+Show that the mapping degree of a continuous map $f : M \to N$ must be divisible by $[\pi_1(N) : f_*(\pi_1(M))]$, the index of the subgroup $f_*(\pi_1(M))$ in $\pi_1(N)$.
+(Recall that $f$ has degree $k$ if it sends the fundamental class $[M] \in H_n(M; \ZZ)$ to $k$ times the fundamental class $[N]$.)
 :::
 
 ::: {.solution}

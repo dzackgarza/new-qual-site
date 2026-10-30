@@ -16,7 +16,9 @@ review: draft
 ::: {.problem}
 Let $f : \RR^n \to \RR^n$ be a continuous map.
 Suppose that there exists a uniform constant $C$ such that $\norm{f(\vec{x}) - \vec{x}} \leq C$ for any $\vec{x} \in \RR^n$.
+(Here $\norm{\cdot}$ denotes the standard norm of a vector.)
 Prove that $f$ is surjective.
+(It would be helpful to start with the simple case $n = 2$.)
 :::
 
 ::: {.solution}

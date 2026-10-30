@@ -23,55 +23,33 @@ Show that $f$ is homotopic to $g$ if and only if they have the same mapping degr
 
 ::: pf
 
-::: {.pf-step #s1}
+::: {.pf-step #hopf}
 
-Since $S^3$ is $2$-connected, obstruction theory gives a natural bijection
-$$[T^3,S^3]\cong H^3(T^3;\ZZ).$$
-
-::: pf-proof
-
-For a CW complex of dimension at most $3$ and a $2$-connected target whose first nonzero homotopy group is $\pi_3(S^3)=\ZZ$, the primary obstruction/classification class in $H^3(-;\ZZ)$ completely classifies maps up to homotopy.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Under this bijection, a map $f:T^3\to S^3$ corresponds to $f^*u$, where $u$ is the fundamental cohomology generator of $S^3$.
+For a CW complex $X$ of dimension $n$, the map $[X,S^n]\to H^n(X;\ZZ)$, $[f]\mapsto f^*u$, is a bijection, where $u\in H^n(S^n;\ZZ)$ is a generator.
 
 ::: pf-proof
 
-The universal degree-$3$ class represents the first Postnikov stage of $S^3$ through dimension $3$.
+This is the Hopf classification theorem (Hatcher, Corollary 4.57): $S^n$ is $(n-1)$-connected with $\pi_n(S^n)\cong\ZZ$, so maps from an $n$-dimensional complex are classified by obstruction theory through the class $f^*u$.
 
 :::
 
 :::
 
-::: {.pf-step #s3}
+::: {.pf-step #degree}
 
-Since $H^3(T^3;\ZZ)\cong\ZZ$, one has
-$$f^*u=(\deg f)\,v,$$
-where $v$ is the orientation generator of $T^3$.
+For $f:T^3\to S^3$, $f^*u=(\deg f)\,v$, where $v\in H^3(T^3;\ZZ)\cong\ZZ$ is the orientation generator.
 
 ::: pf-proof
 
-This is the cohomological definition of mapping degree between closed oriented $3$-manifolds.
+$T^3$ and $S^3$ are closed connected oriented $3$-manifolds, $v$ and $u$ are dual to the fundamental classes, and $\langle f^*u,[T^3]\rangle=\langle u,f_*[T^3]\rangle=\deg f$.
 
 :::
 
 :::
 
-::: pf-step
+::: pf-qed
 
-Consequently
-$$\boxed{f\simeq g\iff\deg f=\deg g.}$$
-
-::: pf-proof
-
-By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, equality of homotopy classes is exactly equality of the corresponding integers.
-
-:::
+$T^3$ has a CW structure of dimension $3$ (the product of three circles, each with one $0$-cell and one $1$-cell). By Steps [](#hopf){.pf-ref} and [](#degree){.pf-ref}, $f\simeq g$ if and only if $f^*u=g^*u$, which holds if and only if $\deg f=\deg g$.
 
 :::
 
