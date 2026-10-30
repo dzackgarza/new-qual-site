@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. Let $A$ be a $3\times3$ real matrix satisfying $A^3=I$.
+Let $A$ be a $3\times3$ real matrix satisfying $A^3=I$.
 Show that $A$ is similar over $\RR$ to a matrix of the form
 $$
 \begin{pmatrix}

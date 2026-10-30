@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. If the terms of a series $\sum a_n$ are rearranged, the limiting value can sometimes change.
+If the terms of a series $\sum a_n$ are rearranged, the limiting value can sometimes change.
 Find all resulting limiting values of each of the following series, and prove your assertions:
 $$
 \sum_{n=1}^{\infty}\frac{(-1)^n}{n},
@@ -136,13 +136,15 @@ $$
 $$
 is
 $$
-\boxed{\RR}.
+\boxed{\RR},
 $$
-
+and rearrangements also diverge to $+\infty$ and to $-\infty$.
 
 ::: pf-proof
 
 Step [](#s1-3){.pf-ref} constructs, for every prescribed $L\in\RR$, a rearrangement converging to $L$. Conversely, every finite limiting value of a rearrangement is by definition a real number.
+
+For $+\infty$, run the construction of step [](#s1-3){.pf-ref} with the target $L$ replaced by $m$ in the $m$-th positive block: add unused positive terms until the partial sum exceeds $m$, then add one unused negative term. By step [](#s1-1){.pf-ref} each block terminates, and every term is eventually used. After the $m$-th block every partial sum is at least $m-1$, because the single negative term that follows has absolute value at most $1$. Hence the partial sums tend to $+\infty$. Interchanging the roles of the positive and negative terms gives $-\infty$.
 
 :::
 

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. (a) State and prove the rank-nullity theorem.
+(a) State and prove the rank-nullity theorem.
 
 (b) Suppose $V,W,U$ are finite-dimensional real vector spaces and $T:V\to W$, $S:W\to U$ are linear maps.
 Suppose further that $T$ is one-to-one, $S$ is onto, and $S\circ T=0$.

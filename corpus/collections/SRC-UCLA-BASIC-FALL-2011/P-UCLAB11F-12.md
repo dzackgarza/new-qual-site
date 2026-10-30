@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. Let $A$ be an $m\times n$ real matrix and let $b\in\RR^m$.
+Let $A$ be an $m\times n$ real matrix and let $b\in\RR^m$.
 Suppose $Ax$ and $Ay$ both have minimal distance to $b$ among all vectors in $\operatorname{image}(A)$.
 Prove that
 $$

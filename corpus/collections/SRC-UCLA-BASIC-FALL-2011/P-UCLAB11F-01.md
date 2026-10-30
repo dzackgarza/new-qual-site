@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Let $(X,d)$ be a compact metric space and let $f:X\to X$ satisfy
+Let $(X,d)$ be a compact metric space and let $f:X\to X$ satisfy
 $$
 d(f(x),f(y))<d(x,y)\qquad\text{for all }x\ne y.
 $$

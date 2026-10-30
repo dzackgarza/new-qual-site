@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Assume that a complex matrix $A$ satisfies
+Assume that a complex matrix $A$ satisfies
 $$
 \ker(A-\lambda I)=\ker((A-\lambda I)^2)
 $$

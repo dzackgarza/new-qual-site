@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. A function $f:\RR^n\to\RR$ is called convex if
+A function $f:\RR^n\to\RR$ is called convex if
 $$
 f(\alpha x+(1-\alpha)y)\le \alpha f(x)+(1-\alpha)f(y)
 $$

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Prove that the set of real numbers can be written as the union of uncountably many pairwise disjoint subsets, each of which is uncountable.
+Prove that the set of real numbers can be written as the union of uncountably many pairwise disjoint subsets, each of which is uncountable.
 :::
 
 ::: {.solution}
