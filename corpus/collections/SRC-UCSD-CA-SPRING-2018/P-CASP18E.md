@@ -17,6 +17,8 @@ review: draft
 ::: {.problem}
 Let $\alpha_n := 1 - \frac{1}{n^2}$.
 Construct a function $f \in H(\DD)$ whose sequence of zeros (counting multiplicity) is precisely $\{\alpha_n\}$ and for which $\abs{f(z)} \leq 1$ in $\DD$.
+
+Hint: $\varphi_\alpha(z) = \frac{\alpha - z}{1 - \bar\alpha z}$ has a simple zero at $z = \alpha$ and $\abs{\varphi_\alpha(z)} \leq 1$ in $\DD$.
 :::
 
 ::: {.solution}
