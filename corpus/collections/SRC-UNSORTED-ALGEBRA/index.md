@@ -66,7 +66,6 @@ source:
   - id: E-AMD-FPHQEZZL
   - id: E-AMD-GEZ3H4G7
   - id: E-AMD-GLBUESVX
-  - id: E-AMD-GY2JTPQI
   - id: E-AMD-H4KPWJ75
   - id: E-AMD-H6ID66W4
   - id: E-AMD-H7JVMMY4
@@ -85,10 +84,8 @@ source:
   - id: E-AMD-JPKP6MG6
   - id: E-AMD-JRUQKWKO
   - id: E-AMD-KCLZUB2B
-  - id: E-AMD-KDSJ3FW4
   - id: E-AMD-KGEXBKIW
   - id: E-AMD-KJ3EIH6T
-  - id: E-AMD-KRMOU3CI
   - id: E-AMD-LDJWILVY
   - id: E-AMD-LJNBDMIP
   - id: E-AMD-LSAG5UZT
