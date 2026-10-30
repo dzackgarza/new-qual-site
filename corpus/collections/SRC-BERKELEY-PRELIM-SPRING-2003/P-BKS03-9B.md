@@ -22,6 +22,8 @@ Let $A\subseteq\RR$ be uncountable.
 (a) Show that $A$ has at least one accumulation point.
 
 (b) Show that $A$ has uncountably many accumulation points.
+
+(Recall that a point is an accumulation point of $A$ if and only if it is the limit of a sequence of distinct terms from $A$.)
 :::
 
 ::: {.solution}
