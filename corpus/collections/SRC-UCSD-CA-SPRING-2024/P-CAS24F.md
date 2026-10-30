@@ -5,16 +5,17 @@ kind: problem
 title: 'Iterates of a holomorphic self-map with $f(0)=0$ and $\abs{f''(0)}<1$ tend to $0$'
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics:
-  - Schwarz Lemma
-  - Holomorphic Functions
+    - Schwarz Lemma
+    - Holomorphic Functions
+    - Iteration
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: muse-spark-1.2
-  date: 2026-08-30
+  - event: solution-written
+    by: muse-spark-1.2
+    date: 2026-08-30
 ---
 
 ::: {.problem}
