@@ -27,7 +27,7 @@ Other theorems whose conclusion is that a holomorphic function is constant are c
 [[E-IPIKC]]
 [[E-GQMTN]]
 [[P-57CAX]]
-[[E-BXDQY]]
+[[P-BERK81S-17]]
 [[E-O5SOQ]]
 [[E-U2X4C]]
 [[E-JLGWE]]
