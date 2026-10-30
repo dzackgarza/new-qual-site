@@ -17,7 +17,7 @@ relations:
 - kind: uses
   target: D-SCHGLUE
 - kind: uses
-  target: PR-QX0VL
+  target: P-AGH242AGREEDENSE
 review: draft
 prompts:
 - Give a scheme that is not separated.
@@ -41,7 +41,7 @@ Thus $X$ is not separated over $k$.
 ::: {.remark}
 The two chart inclusions $\AA_k^1\to X$ agree on the punctured affine line but send the origin to different points.
 For comparison, two $S$-morphisms from a reduced $S$-scheme $Z$ to a separated $S$-scheme $Y$ that agree on a dense open subset of $Z$ are equal [@Har10a, Exercise II.4.2], as proved in [[P-AGH242AGREEDENSE]].
-The reducedness of the source and separatedness of the target are separate hypotheses ([[PR-QX0VL]]).
+The reducedness of the source and separatedness of the target are separate hypotheses ([[P-AGH242AGREEDENSE|morphisms agreeing on a dense open subset]]).
 Here the source $\AA_k^1$ is reduced, so the conclusion fails only because $X$ is not separated.
 The doubled line is also a standard example of a scheme that is not a classical variety, which shows why separatedness is imposed in the scheme-theoretic definition of a variety.
 :::

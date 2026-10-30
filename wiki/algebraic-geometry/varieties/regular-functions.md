@@ -23,4 +23,4 @@ $\AA^2 \sm \theset{0}$ is quasi-affine and not affine: a function regular off a 
 
 Two regular functions that agree on a dense open set agree, so a rational function is determined by its restriction to any nonempty open set on which it is regular.
 
-[[PR-QX0VL]]
+[[P-AGH242AGREEDENSE]]
