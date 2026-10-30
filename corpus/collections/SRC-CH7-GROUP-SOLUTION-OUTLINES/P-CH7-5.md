@@ -5,14 +5,15 @@ kind: problem
 title: Equality of cosets of $3\ZZ$ in $\ZZ$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+    - Cosets and Lagrange's Theorem
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: claude-opus-5
-  date: 2026-09-16
-  note: Stated the subgroup H of Exercise 3 and moved the three coset pairs out of the solution block into the statement, per page 1 of Ch7Sltns.pdf.
+  - event: source-checked
+    by: claude-opus-5
+    date: 2026-09-16
+    note: Stated the subgroup H of Exercise 3 and moved the three coset pairs out of the solution block into the statement, per page 1 of Ch7Sltns.pdf.
 ---
 
 ::: {.problem}

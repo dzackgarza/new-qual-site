@@ -5,14 +5,15 @@ kind: problem
 title: Cosets of the Klein four-subgroup in $A_4$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+    - Cosets and Lagrange's Theorem
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: claude-opus-5
-  date: 2026-09-16
-  note: Wrote the statement in math mode and added a remark that Table 5.1, which the solution's alpha labels refer to, is not in the source; page 1 of Ch7Sltns.pdf.
+  - event: source-checked
+    by: claude-opus-5
+    date: 2026-09-16
+    note: Wrote the statement in math mode and added a remark that Table 5.1, which the solution's alpha labels refer to, is not in the source; page 1 of Ch7Sltns.pdf.
 ---
 
 ::: {.problem}

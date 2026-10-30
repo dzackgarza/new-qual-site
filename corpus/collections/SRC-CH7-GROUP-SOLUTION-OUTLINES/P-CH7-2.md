@@ -5,14 +5,15 @@ kind: problem
 title: Index of the Klein four-subgroup in $S_4$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+    - Cosets and Lagrange's Theorem
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: claude-opus-5
-  date: 2026-09-16
-  note: Stated the subgroup H of Exercise 1 in the statement, per page 1 of Ch7Sltns.pdf.
+  - event: source-checked
+    by: claude-opus-5
+    date: 2026-09-16
+    note: Stated the subgroup H of Exercise 1 in the statement, per page 1 of Ch7Sltns.pdf.
 ---
 
 ::: {.problem}

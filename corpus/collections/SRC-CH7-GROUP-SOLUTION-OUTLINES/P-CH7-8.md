@@ -5,7 +5,8 @@ kind: problem
 title: Cosets of $\langle a^5\rangle$ in a cyclic group of order $15$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+    - Cosets and Lagrange's Theorem
 relations: []
 review: draft
 ---
