@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find $\int _ { 0 } ^ { x _ { 0 } } { \sqrt { 1 - { \frac { x ^ { 2 } } { x _ { 0 } ^ { 2 } } } } } d x .$
+Find $\int_0^{x_0} \sqrt{1 - \frac{x^2}{x_0^2}}\, dx$.
 :::
 
 ::: {.solution}

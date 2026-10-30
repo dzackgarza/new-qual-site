@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the flux of the vector field $\vec { A } = q \frac { \vec { r } } { r ^ { 3 } } , q = \mathrm { C o n s t }$ , through the sphere containing the origin equals 4πq.
+Show that the flux of the vector field $\vec{A} = q\frac{\vec{r}}{r^3}$, $q = \mathrm{Const}$, through the sphere containing the origin equals $4\pi q$.
 :::
 
 ::: {.solution}

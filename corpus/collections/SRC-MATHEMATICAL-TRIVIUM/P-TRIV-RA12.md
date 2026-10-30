@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find $\operatorname* { l i m } _ { x \to 0 } { \frac { \sin x } { x } }$
+Find $\lim_{x \to 0} \frac{\sin x}{x}$.
 :::
 
 ::: {.solution}

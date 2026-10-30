@@ -16,8 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-For what values of α the following integrals are convergent?
-(a) $\int _ { 0 } ^ { 1 } { \frac { d x } { x ^ { \alpha } } } .$ (b) $\int _ { 1 } ^ { \infty } { \frac { d x } { x ^ { \alpha } } } .$
+For what values of $\alpha$ the following integrals are convergent?
+
+(a) $\int_0^1 \frac{dx}{x^\alpha}$, (b) $\int_1^{\infty} \frac{dx}{x^\alpha}$.
 :::
 
 ::: {.solution}

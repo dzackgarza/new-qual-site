@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-$\mathrm { C a l c u l a t e } \int e ^ { 2 x } \sin { x } d x .$
+Calculate $\int e^{2x}\sin x\, dx$.
 :::
 
 ::: {.solution}

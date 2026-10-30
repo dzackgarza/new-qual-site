@@ -17,12 +17,10 @@ audit:
 
 ::: {.problem}
 Consider the integral
-
 $$
-I _ { n } = \int _ { - \infty } ^ { \infty } { \frac { d x } { x } } \sin ( x ) \prod _ { k = 1 } ^ { n } \cos \left( { \frac { x } { 2 k + 1 } } \right) .
+I_n = \int_{-\infty}^{\infty} \frac{dx}{x}\sin(x)\prod_{k=1}^{n} \cos\left( \frac{x}{2k + 1} \right).
 $$
-
-Show that $I _ { n } = \pi$ for n = 1, 2, 3, 4, 5, 6. Compute $I _ { 7 }$
+Show that $I_n = \pi$ for $n = 1, 2, 3, 4, 5, 6$. Compute $I_7$.
 :::
 
 ::: {.solution}

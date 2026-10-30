@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-$\mathrm { C a l c u l a t e } \int \log { x d x } .$
+Calculate $\int \log x\, dx$.
 :::
 
 ::: {.solution}

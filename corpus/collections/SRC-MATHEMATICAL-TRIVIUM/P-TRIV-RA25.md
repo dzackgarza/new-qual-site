@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find $\int _ { { \sqrt { 2 } } } ^ { \infty } { \frac { d x } { x + x ^ { \sqrt { 2 } } } } .$
+Find $\int_{\sqrt{2}}^{\infty} \frac{dx}{x + x^{\sqrt{2}}}$.
 :::
 
 ::: {.solution}

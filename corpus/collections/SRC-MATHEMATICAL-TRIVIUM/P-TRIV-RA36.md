@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Find the surface area of
 
-(a) the two-dimensional sphere $S ^ { 2 }$ of radius R.
+(a) the two-dimensional sphere $S^2$ of radius $R$.
 
-(b) the two-dimensional torus $T ^ { 2 }$ formed by rotation of the center of a circle of radius $R _ { 1 }$ along a circle of radius $R _ { 2 } , R _ { 2 } > R _ { 1 }$
+(b) the two-dimensional torus $T^2$ formed by rotation of the center of a circle of radius $R_1$ along a circle of radius $R_2$, $R_2 > R_1$.
 :::
 
 ::: {.solution}

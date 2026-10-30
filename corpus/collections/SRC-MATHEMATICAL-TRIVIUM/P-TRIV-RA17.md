@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-$\mathrm { C a l c u l a t e } \int \frac { x ^ { 5 } + 2 } { x ^ { 2 } - 1 } d x$
+Calculate $\int \frac{x^5 + 2}{x^2 - 1}\, dx$.
 :::
 
 ::: {.solution}

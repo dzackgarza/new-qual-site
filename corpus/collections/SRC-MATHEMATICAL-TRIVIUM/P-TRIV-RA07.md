@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the minimal value of the function $f ( x ) = \frac { \lambda } { 4 } ( x ^ { 2 } - v ^ { 2 } ) ^ { 2 } - \epsilon x , \lambda , \epsilon > 0$ , to the leading order in $\epsilon \ll 1$
+Find the minimal value of the function $f(x) = \frac{\lambda}{4}(x^2 - v^2)^2 - \epsilon x$, $\lambda, \epsilon > 0$, to the leading order in $\epsilon \ll 1$.
 :::
 
 ::: {.remark}

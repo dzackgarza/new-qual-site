@@ -16,11 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Consider the function $J ( a ) = \sum _ { n = 0 } ^ { \infty } n e ^ { - a n }$ defined for positive a .
+Consider the function $J(a) = \sum_{n=0}^{\infty} ne^{-an}$ defined for positive $a$.
 
-(a) Write an explicit expression for J(a).
+(a) Write an explicit expression for $J(a)$.
 
-(b) Expand J(a) around the point a = 0 up to $O ( a ^ { 0 } )$
+(b) Expand $J(a)$ around the point $a = 0$ up to $O(a^0)$.
 :::
 
 ::: {.solution}

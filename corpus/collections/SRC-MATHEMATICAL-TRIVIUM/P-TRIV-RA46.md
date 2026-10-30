@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate the inverse Fourier image f (x) of the function $\tilde { f } ( k ) = - \frac { 1 } { \pi } \frac { k } { a ^ { 2 } + k ^ { 2 } } .$
+Calculate the inverse Fourier image $f(x)$ of the function $\tilde{f}(k) = -\frac{1}{\pi}\frac{k}{a^2 + k^2}$.
 :::
 
 ::: {.remark}

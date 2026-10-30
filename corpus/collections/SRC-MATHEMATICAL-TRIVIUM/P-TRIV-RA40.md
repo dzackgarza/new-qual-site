@@ -16,15 +16,15 @@ audit:
 ---
 
 ::: {.problem}
-" 20-dimensional watermelon"
+"20-dimensional watermelon"
 
-(a) Find the surface area of the unit n-dimensional sphere $S ^ { n }$ Indication: Use the notion of Gamma function $\Gamma ( a ) \equiv \int _ { 0 } ^ { \infty } e ^ { - x } x ^ { a - 1 } d x$
+(a) Find the surface area of the unit $n$-dimensional sphere $S^n$. *Indication:* Use the notion of Gamma function $\Gamma(a) \equiv \int_0^{\infty} e^{-x}x^{a-1}\, dx$.
 
-(b) Find the volume $V _ { n }$ of the unit n-dimensional ball $B ^ { n }$
+(b) Find the volume $V_n$ of the unit $n$-dimensional ball $B^n$.
 
-(c) Denote by $V _ { n , a }$ the volume of a layer of depth a adjacent to the surface of $B ^ { n } , 0 < a < 1$ . Compute the ratio $\frac { V _ { n , a } } { V _ { n } }$ and investigate the limit $n \to \infty$
+(c) Denote by $V_{n,a}$ the volume of a layer of depth $a$ adjacent to the surface of $B^n$, $0 < a < 1$. Compute the ratio $\frac{V_{n,a}}{V_n}$ and investigate the limit $n \to \infty$.
 
-(d) Assuming the watermelon rind has a thickness 0.1 of its radius, find what fraction of the total volume of the 20-dimensional watermelon would be occupied by its rind.
+(d) Assuming the watermelon rind has a thickness $0.1$ of its radius, find what fraction of the total volume of the 20-dimensional watermelon would be occupied by its rind.
 :::
 
 ::: {.solution}

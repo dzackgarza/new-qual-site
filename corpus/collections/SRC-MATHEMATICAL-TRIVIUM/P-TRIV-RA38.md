@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the volume of the three-dimensional ball $B ^ { 3 }$
+Find the volume of the three-dimensional ball $B^3$.
 :::
 
 ::: {.remark}

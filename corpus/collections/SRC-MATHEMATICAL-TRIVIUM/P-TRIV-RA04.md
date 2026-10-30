@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find $f ^ { ( 1 0 0 ) } ( 0 )$ , if $f ( x ) = ( x ^ { 1 0 0 } + x ) e ^ { 1 0 0 x }$
+Find $f^{(100)}(0)$, if $f(x) = (x^{100} + x)e^{100x}$.
 :::
 
 ::: {.solution}

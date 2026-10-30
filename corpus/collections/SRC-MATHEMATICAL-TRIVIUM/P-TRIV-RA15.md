@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-$\mathrm { C a l c u l a t e } \int \frac { d x } { \tan x }$
+Calculate $\int \frac{dx}{\tan x}$.
 :::
 
 ::: {.solution}

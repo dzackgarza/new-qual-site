@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute the series $\sum _ { n = 1 } ^ { \infty } { \frac { ( - 1 ) ^ { n } } { n } }$
+Compute the series $\sum_{n=1}^{\infty} \frac{(-1)^n}{n}$.
 :::
 
 ::: {.solution}

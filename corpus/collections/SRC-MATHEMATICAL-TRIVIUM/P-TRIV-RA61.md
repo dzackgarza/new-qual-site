@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\int _ { 0 } ^ { \pi } \log ( 1 - 2 a \cos x + a ^ { 2 } ) d x = 0 { \mathrm { ~ f o r ~ } } \abs{ a } < 1$
+Show that $\int_0^{\pi} \log(1 - 2a\cos x + a^2)\, dx = 0$ for $\abs{a} < 1$.
 :::
 
 ::: {.solution}

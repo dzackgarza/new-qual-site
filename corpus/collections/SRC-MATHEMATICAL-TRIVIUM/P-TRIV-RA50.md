@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate the Fourier image $\tilde { f } ( \vec { k } )$ of the function $f ( \vec { r } ) = \left\{ \begin{array} { l l } { f _ { 0 } , r \leqslant r _ { 0 } , } \\ { 0 , r > r _ { 0 } } \end{array} \right.$ in R3.
+Calculate the Fourier image $\tilde{f}(\vec{k})$ of the function $f(\vec{r}) = \begin{cases} f_0, & r \leqslant r_0, \\ 0, & r > r_0 \end{cases}$ in $\RR^3$.
 :::
 
 ::: {.remark}

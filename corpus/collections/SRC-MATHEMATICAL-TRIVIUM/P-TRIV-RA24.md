@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find $\int _ { - \infty } ^ { \infty } e ^ { - x ^ { - 4 } - x ^ { 4 } } \sin ^ { 5 } x d x .$
+Find $\int_{-\infty}^{\infty} e^{-x^{-4} - x^4}\sin^5 x\, dx$.
 :::
 
 ::: {.solution}

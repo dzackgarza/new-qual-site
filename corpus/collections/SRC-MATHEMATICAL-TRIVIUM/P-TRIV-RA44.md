@@ -16,12 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-The electric field $\vec { E }$ created by a point charge q at a certain distance from it r in vacuum is given by $\vec { E } = k _ { e } q \frac { \vec { r } } { r ^ { 3 } }$ , where $k _ { e }$ is a constant.
+The electric field $\vec{E}$ created by a point charge $q$ at a certain distance from it $r$ in vacuum is given by $\vec{E} = k_e q\frac{\vec{r}}{r^3}$, where $k_e$ is a constant.
 
-(a) Consider the charged ring of radius R with the linear charge density $\frac { d q } { d l } \equiv \rho .$ Find the total magnitude of the electric field created by this ring at a distance d from its center along the axis orthogonal to it.
+(a) Consider the charged ring of radius $R$ with the linear charge density $\frac{dq}{dl} \equiv \rho$. Find the total magnitude of the electric field created by this ring at a distance $d$ from its center along the axis orthogonal to it.
 
-(b) Consider the charged disk of radius R with surface charge density $\frac { d q } { d A } \equiv \sigma$ Find the total magnitude of the electric field created by this disk at a distance d from its center along the axis orthogonal to it.
-Investigate the limit $R \to \infty$
+(b) Consider the charged disk of radius $R$ with surface charge density $\frac{dq}{dA} \equiv \sigma$. Find the total magnitude of the electric field created by this disk at a distance $d$ from its center along the axis orthogonal to it. Investigate the limit $R \to \infty$.
 :::
 
 ::: {.solution}

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the cosine integral $\mathrm { C i } x \equiv - \int _ { x } ^ { \infty } \frac { \cos t } { t } d t$ for large enough x can be approximated as $\mathrm { C i } x \approx { \frac { \sin x } { x } }$ . Find the region of x for which the relative error of this approximation is less than $1 0 ^ { - 4 }$
+Show that the cosine integral $\operatorname{Ci} x \equiv -\int_x^{\infty} \frac{\cos t}{t}\, dt$ for large enough $x$ can be approximated as $\operatorname{Ci} x \approx \frac{\sin x}{x}$. Find the region of $x$ for which the relative error of this approximation is less than $10^{-4}$.
 :::
 
 ::: {.remark}

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find $\int _ { 0 } ^ { \pi ^ { 2 } } \cos { \sqrt { x } } d x .$
+Find $\int_0^{\pi^2} \cos\sqrt{x}\, dx$.
 :::
 
 ::: {.solution}

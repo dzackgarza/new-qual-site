@@ -16,9 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-(a) The functions f (x) and $g ( x )$ are related by $f ( x ) = g ( a x )$ . How are their Fourier images related?
+(a) The functions $f(x)$ and $g(x)$ are related by $f(x) = g(ax)$. How are their Fourier images related?
 
-(b) The functions f (x) and $g ( x )$ are related by $f ( x ) = g ( x - x _ { 0 } )$ . How are their Fourier images related?
+(b) The functions $f(x)$ and $g(x)$ are related by $f(x) = g(x - x_0)$. How are their Fourier images related?
 :::
 
 ::: {.remark}

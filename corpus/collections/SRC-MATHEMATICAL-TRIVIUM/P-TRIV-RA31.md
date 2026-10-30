@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate $J ( y ) = \int _ { 0 } ^ { \infty } e ^ { - a x } \frac { \sin x y } { x } d x , a > 0 .$
+Calculate $J(y) = \int_0^{\infty} e^{-ax}\frac{\sin xy}{x}\, dx$, $a > 0$.
 :::
 
 ::: {.solution}

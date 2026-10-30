@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find local minima and local maxima of the function $f ( x , y ) = x y \log ( x ^ { 2 } + y ^ { 2 } )$ $( x , y ) \neq ( 0 , 0 )$
+Find local minima and local maxima of the function $f(x, y) = xy\log(x^2 + y^2)$, $(x, y) \neq (0, 0)$.
 :::
 
 ::: {.solution}

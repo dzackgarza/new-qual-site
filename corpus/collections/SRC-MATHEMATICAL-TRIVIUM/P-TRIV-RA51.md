@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate the Fourier image $\tilde { f } ( \vec { k } )$ of the function $f ( \vec { r } ) = f _ { 0 } \left( \frac { 1 } { r } + \frac { 1 } { a } \right) e ^ { - \frac { 2 r } { a } }$ in $\RR ^ { 3 }$
+Calculate the Fourier image $\tilde{f}(\vec{k})$ of the function $f(\vec{r}) = f_0\left( \frac{1}{r} + \frac{1}{a} \right)e^{-\frac{2r}{a}}$ in $\RR^3$.
 :::
 
 ::: {.remark}

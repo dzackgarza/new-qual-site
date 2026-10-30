@@ -16,7 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-Compute the following series: (a) $\sum _ { k = 0 } ^ { n } r ^ { k } e ^ { i k \phi } ,$ (b) $\sum _ { k = 0 } ^ { n } r ^ { k } \cos k \phi ,$ (c) $\sum _ { k = 0 } ^ { n } r ^ { k } \sin k \phi .$
+Compute the following series:
+
+(a) $\sum_{k=0}^{n} r^k e^{ik\phi}$, (b) $\sum_{k=0}^{n} r^k\cos k\phi$, (c) $\sum_{k=0}^{n} r^k\sin k\phi$.
 :::
 
 ::: {.solution}

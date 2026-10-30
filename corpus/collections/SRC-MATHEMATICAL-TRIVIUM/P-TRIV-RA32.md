@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-A body moves in (xy)-plane along the trajectory y = log cos x. Find the path length of the body when $x \in [ 0 , \frac { \pi } { 6 } ]$
+A body moves in $(xy)$-plane along the trajectory $y = \log\cos x$. Find the path length of the body when $x \in [0, \frac{\pi}{6}]$.
 :::
 
 ::: {.solution}

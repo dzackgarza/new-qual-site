@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find ${ \frac { d } { d x } } \ f ( g ( x ) ) \evalfrom _ { x = 0 }$ , where $f ( u ) = \cosh u , g ( u ) = \sqrt { 1 - u ^ { 2 } } .$
+Find $\frac{d}{dx} f(g(x))\evalfrom_{x=0}$, where $f(u) = \cosh u$, $g(u) = \sqrt{1 - u^2}$.
 :::
 
 ::: {.solution}

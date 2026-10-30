@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute the sum $\sum _ { n = 1 } ^ { \infty } { \frac { x ^ { n - 1 } } { n ( n + 1 ) } }$ for all possible values of x.
+Compute the sum $\sum_{n=1}^{\infty} \frac{x^{n-1}}{n(n+1)}$ for all possible values of $x$.
 :::
 
 ::: {.solution}

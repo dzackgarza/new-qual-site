@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find $\int _ { 0 } ^ { \infty } x ^ { n } e ^ { - x } d x , n \in \ZZ , n > 0 .$
+Find $\int_0^{\infty} x^n e^{-x}\, dx$, $n \in \ZZ$, $n > 0$.
 :::
 
 ::: {.solution}

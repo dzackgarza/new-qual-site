@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate the Fourier image $\tilde { f } ( \vec { k } )$ of the function $f ( \vec { r } ) = \alpha \frac { e ^ { - \mu r } } { r }$ , where $r = \norm{ \vec { r } }$ $\vec { r } \in \RR ^ { 3 }$ , and α and µ are constants.
+Calculate the Fourier image $\tilde{f}(\vec{k})$ of the function $f(\vec{r}) = \alpha\frac{e^{-\mu r}}{r}$, where $r = \abs{\vec{r}}$, $\vec{r} \in \RR^3$, and $\alpha$ and $\mu$ are constants.
 :::
 
 ::: {.remark}

@@ -16,8 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-For what values of α and $\beta$ the following integrals are convergent?
-(a) $\int _ { 0 } ^ { 1 } { \frac { d x } { x ^ { \alpha } \log ^ { \beta } x } } ,$ (b) $\int _ { 1 } ^ { \infty } { \frac { d x } { x ^ { \alpha } \log ^ { \beta } x } } .$
+For what values of $\alpha$ and $\beta$ the following integrals are convergent?
+
+(a) $\int_0^1 \frac{dx}{x^\alpha\log^\beta x}$, (b) $\int_1^{\infty} \frac{dx}{x^\alpha\log^\beta x}$.
 :::
 
 ::: {.remark}

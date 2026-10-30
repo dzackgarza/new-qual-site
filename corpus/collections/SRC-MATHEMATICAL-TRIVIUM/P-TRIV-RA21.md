@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find $\int _ { 0 } ^ { \infty } e ^ { - x ^ { 2 } } d x .$
+Find $\int_0^{\infty} e^{-x^2}\, dx$.
 :::
 
 ::: {.solution}

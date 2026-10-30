@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find a function f (x) such that its Fourier image ${ \tilde { f } } ( p ) = c f ( p )$ , where c is a constant.
+Find a function $f(x)$ such that its Fourier image $\tilde{f}(p) = cf(p)$, where $c$ is a constant.
 :::
 
 ::: {.remark}

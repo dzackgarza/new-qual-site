@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute the series $J ( a ) = \sum _ { n = - \infty } ^ { \infty } \abs{ 2 n + 1 } e ^ { - a \abs{ 2 n + 1 } }$ for $a > 0$
+Compute the series $J(a) = \sum_{n=-\infty}^{\infty} \abs{2n + 1}e^{-a\abs{2n + 1}}$ for $a > 0$.
 :::
 
 ::: {.solution}

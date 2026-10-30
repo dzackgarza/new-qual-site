@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the implicit function of three arguments, $f ( x , y , z ) = 0$ . Show that $\frac { \partial z } { \partial y } \cdot \frac { \partial y } { \partial x } \cdot \frac { \partial x } { \partial z } = - 1$ . Give an analogue of this statement for the implicit function of n arguments, $f ( x _ { 1 } , . . . , x _ { n } ) = 0$
+Consider the implicit function of three arguments, $f(x, y, z) = 0$. Show that $\frac{\partial z}{\partial y} \cdot \frac{\partial y}{\partial x} \cdot \frac{\partial x}{\partial z} = -1$. Give an analogue of this statement for the implicit function of $n$ arguments, $f(x_1, \ldots, x_n) = 0$.
 :::
 
 ::: {.remark}

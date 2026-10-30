@@ -16,11 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Calculate the Fourier image $\tilde { f } ( \boldsymbol { k } )$ of the function f (x), if f (x) is given by
+Calculate the Fourier image $\tilde{f}(k)$ of the function $f(x)$, if $f(x)$ is given by
 
-(a) $f ( x ) = { \left\{ \begin{array} { l l } { f _ { 0 } , \abs{ x } \leqslant x _ { 0 } , } \\ { 0 , \abs{ x } > x _ { 0 } } \end{array} \right. }$
+(a) $f(x) = \begin{cases} f_0, & \abs{x} \leqslant x_0, \\ 0, & \abs{x} > x_0 \end{cases}$
 
-(b) $f ( x ) = \left\{ { \begin{array} { l } { e ^ { - a x } , x \geqslant 0 , a > 0 , } \\ { 0 , x < 0 } \end{array} } \right.$
+(b) $f(x) = \begin{cases} e^{-ax}, & x \geqslant 0, \ a > 0, \\ 0, & x < 0 \end{cases}$
 :::
 
 ::: {.remark}

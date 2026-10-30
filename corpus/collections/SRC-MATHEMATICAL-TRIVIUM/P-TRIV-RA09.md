@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find local minima and local maxima of the function $f ( x , y , z ) = x ^ { 2 } + y ^ { 2 } + z ^ { 2 }$ on a surface defined by equation $\displaystyle \frac { x ^ { 2 } } { a ^ { 2 } } + \frac { y ^ { 2 } } { b ^ { 2 } } + \frac { z ^ { 2 } } { c ^ { 2 } } = 1 , 0 < a < b < c .$
+Find local minima and local maxima of the function $f(x, y, z) = x^2 + y^2 + z^2$ on a surface defined by equation $\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1$, $0 < a < b < c$.
 :::
 
 ::: {.solution}

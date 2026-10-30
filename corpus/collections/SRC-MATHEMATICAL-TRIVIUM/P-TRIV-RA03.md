@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find $f ^ { ( n ) } ( 0 )$ , if $f ( x ) = e ^ { - \frac { 1 } { x ^ { 2 } } } , x \in \RR , n > 0 ,$
+Find $f^{(n)}(0)$, if $f(x) = e^{-\frac{1}{x^2}}$, $x \in \RR$, $n > 0$.
 :::
 
 ::: {.remark}
