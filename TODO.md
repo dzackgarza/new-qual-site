@@ -70,7 +70,7 @@ mathematical correction under its own node, not under copy policy.
   Reading checklist. Each item is read once, in full, against its source; its repairs are
   committed before the item is ticked.
   Collections (the collection page and every problem page it lists):
-  - [ ] SRC-AG-EXAM-PROBLEMS-2015
+  - [x] SRC-AG-EXAM-PROBLEMS-2015
   - [ ] SRC-AG-HOMEWORK
   - [ ] SRC-AGX-MISC-AG-PROBLEMS
   - [ ] SRC-AGX-VARIETIES-PROBLEMS
@@ -507,7 +507,7 @@ mathematical correction under its own node, not under copy policy.
   - [ ] SRC-UCSD-RA-SPRING-2013
   - [ ] SRC-UCSD-RA-SPRING-2015
   - [x] SRC-UCSD-RA-SPRING-2016
-  - [ ] SRC-UCSD-RA-SPRING-2017
+  - [x] SRC-UCSD-RA-SPRING-2017
   - [ ] SRC-UCSD-RA-SPRING-2018
   - [ ] SRC-UCSD-RA-SPRING-2020
   - [ ] SRC-UCSD-RA-SPRING-2021
