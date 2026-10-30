@@ -29,8 +29,9 @@ $$
 $$
 Show that either
 
-1. $f(x) = g(x)$ almost everywhere, or
-2. There exists a measurable set $E \subseteq [a, b]$ such that
+(a) $f(x) = g(x)$ almost everywhere, or
+
+(b) There exists a measurable set $E \subseteq [a, b]$ such that
 $$
 \int _{E} f(x) \, dx > \int _{E} g(x) \, dx .
 $$
