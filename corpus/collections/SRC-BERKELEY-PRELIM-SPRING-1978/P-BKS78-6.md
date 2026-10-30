@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS78-6
 kind: problem
 title: The sum of two algebraic numbers is algebraic
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

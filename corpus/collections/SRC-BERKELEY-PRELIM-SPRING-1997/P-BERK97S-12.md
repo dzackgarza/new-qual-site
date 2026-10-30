@@ -6,7 +6,8 @@ title: Integral of $\sin^2x/x^2$ over $\RR$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

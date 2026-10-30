@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS78-7
 kind: problem
 title: Volume enclosed by an ellipsoid
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Calculus]}
 relations: []
 review: draft
 audit:

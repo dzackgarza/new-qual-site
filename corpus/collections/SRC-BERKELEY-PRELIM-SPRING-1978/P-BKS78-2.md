@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS78-2
 kind: problem
 title: Continuous maps have closed graphs, but the converse can fail
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

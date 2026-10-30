@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS78-8
 kind: problem
 title: Local existence and finite-time obstruction for $x'=x^2+t^2$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Calculus]}
 relations: []
 review: draft
 audit:
@@ -16,9 +16,11 @@ $$
 x'=x^2+t^2,\qquad x(0)=1.
 $$
 
-1. Prove that there is a solution on $[0,b]$ for some $b>0$.
-2. Give an explicit such $b$.
-3. Find $c>0$ such that no solution exists on $[0,c]$.
+(a) Prove that there is a solution on $[0,b]$ for some $b>0$.
+
+(b) Give an explicit such $b$.
+
+(c) Find $c>0$ such that no solution exists on $[0,c]$.
 :::
 
 ::: {.solution}
@@ -159,11 +161,11 @@ The integrand is continuous, so the fundamental theorem of calculus gives
 $$
 x'(t)=x(t)^2+t^2.
 $$
-At $t=0$ the integral vanishes, giving $x(0)=1$. Thus part 1 holds, and the explicit value
+At $t=0$ the integral vanishes, giving $x(0)=1$. Thus part (a) holds, and the explicit value
 $$
 \boxed{b=\frac15}
 $$
-answers part 2.
+answers part (b).
 :::
 
 :::
@@ -222,7 +224,7 @@ contradicting the positivity of $u(1)$.
 :::
 
 ::: pf-step
-Thus an explicit value for part 3 is
+Thus an explicit value for part (c) is
 $$
 \boxed{c=1}.
 $$

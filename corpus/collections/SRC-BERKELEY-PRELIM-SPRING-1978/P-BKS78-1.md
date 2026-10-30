@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS78-1
 kind: problem
 title: Uniform convergence of $x^k/(x^2+n)$ on bounded and unbounded sets
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

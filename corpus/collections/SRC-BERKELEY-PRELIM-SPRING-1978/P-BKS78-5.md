@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS78-5
 kind: problem
 title: Moduli $n$ for which $\ZZ_n[x]/(x^2+x+1)$ is a field
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:
@@ -13,8 +13,9 @@ audit:
 ::: {.problem}
 Let $I=(x^2+x+1)\subset\ZZ_n[x]$.
 
-1. For which $n$, $1\le n\le10$, is $\ZZ_n[x]/I$ a field?
-2. Give the multiplication table for the resulting quotient when $n=2$.
+(a) For which $n$, $1\le n\le10$, is $\ZZ_n[x]/I$ a field?
+
+(b) Give the multiplication table for the resulting quotient when $n=2$.
 :::
 
 ::: {.solution}
