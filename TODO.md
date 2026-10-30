@@ -724,7 +724,7 @@ mathematical correction under its own node, not under copy policy.
   - [ ] SRC-WESLEYAN-TOPOLOGY-2003-2005
   - [ ] SRC-WESLEYAN-TOPOLOGY-2006-2014
   Wiki pages:
-  - [ ] wiki/algebra/counterexamples.md
+  - [x] wiki/algebra/counterexamples.md
   - [ ] wiki/algebra/fields/extensions.md
   - [ ] wiki/algebra/fields/finite-fields.md
   - [ ] wiki/algebra/fields/index.md
