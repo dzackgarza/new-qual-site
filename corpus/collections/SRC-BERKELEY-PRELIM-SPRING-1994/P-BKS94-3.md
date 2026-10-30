@@ -27,9 +27,8 @@ audit:
 
 ::: {.problem}
 Evaluate
-
 $$
-\int _ { - \pi } ^ { \pi } { \frac { d \theta } { 3 - \cos \theta } } \cdotp
+\int_{-\pi}^{\pi} \frac{d\theta}{3 - \cos\theta}.
 $$
 :::
 

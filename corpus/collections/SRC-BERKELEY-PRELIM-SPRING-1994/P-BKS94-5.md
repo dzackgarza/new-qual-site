@@ -27,15 +27,13 @@ audit:
 ---
 
 ::: {.problem}
-1. Suppose the functions sin t and sin 2t are both solutions of the differential equation
+1. Suppose the functions $\sin t$ and $\sin 2t$ are both solutions of the differential equation
+   $$
+   \sum_{k=0}^{n} c_{k} \frac{d^{k} x}{dt^{k}} = 0,
+   $$
+   where $c_{0}, \ldots, c_{n}$ are real constants. What is the smallest possible order of the equation? Write down an equation of minimum order having the given functions as solutions.
 
-$$
-\sum _ { k = 0 } ^ { n } \ c _ { k } { \frac { d ^ { k } x } { d t ^ { k } } } = 0 \ ,
-$$
-
-where $c _ { 0 } , \ldots , c _ { n }$ are real constants. What is the smallest possible order of the equation? Write down an equation of minimum order having the given functions as solutions.
-
-2. Will the answers to Part 1 be different if the constants $c _ { 0 } , \ldots , c _ { n }$ are allowed to be complex?
+2. Will the answers to Part 1 be different if the constants $c_{0}, \ldots, c_{n}$ are allowed to be complex?
 :::
 
 ::: {.solution}

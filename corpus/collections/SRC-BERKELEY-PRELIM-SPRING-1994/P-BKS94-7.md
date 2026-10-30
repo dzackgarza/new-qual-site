@@ -26,10 +26,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $a _ { 1 } , a _ { 2 } , \ldots , a _ { n }$ be complex numbers. Prove that there is a point x in [0, 1] such that
-
+Let $a_{1}, a_{2}, \ldots, a_{n}$ be complex numbers. Prove that there is a point $x$ in $[0, 1]$ such that
 $$
-\abs{ 1 - \sum _ { k = 1 } ^ { n } a _ { k } e ^ { 2 \pi i k x } } \geqslant 1 .
+\abs{1 - \sum_{k=1}^{n} a_{k} e^{2\pi i k x}} \geqslant 1.
 $$
 :::
 

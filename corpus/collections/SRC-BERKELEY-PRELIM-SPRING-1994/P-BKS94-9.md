@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-1. Let U and V be open connected subsets of the complex plane, and let f be an analytic function in U such that $f ( U ) \subset V$ . Assume $f ^ { - 1 } ( K )$ is compact whenever K is a compact subset of V . Prove that $f ( U ) = V$
+1. Let $U$ and $V$ be open connected subsets of the complex plane, and let $f$ be an analytic function in $U$ such that $f(U) \subset V$. Assume $f^{-1}(K)$ is compact whenever $K$ is a compact subset of $V$. Prove that $f(U) = V$.
 
 2. Prove that the last equality can fail if analytic is replaced by continuous in the preceding statement.
 :::
