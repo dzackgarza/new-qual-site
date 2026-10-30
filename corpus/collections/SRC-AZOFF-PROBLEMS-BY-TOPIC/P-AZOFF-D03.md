@@ -210,3 +210,7 @@ Step [](#s5){.pf-ref} is the required conclusion.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The same holds on any open set $\Omega\subseteq\CC$: a locally uniform limit of holomorphic functions on $\Omega$ is holomorphic on $\Omega$.
+:::
