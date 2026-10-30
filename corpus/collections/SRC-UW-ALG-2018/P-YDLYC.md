@@ -21,6 +21,10 @@ audit:
 Show that no finite group is the union of conjugates of a proper subgroup.
 :::
 
+::: {.hint}
+Count the conjugates of $H$ with the orbit-stabilizer theorem, and note that all of them contain the identity.
+:::
+
 ::: {.solution}
 Let $G$ be a finite group and let $H < G$ be a proper subgroup, so $[G : H] = k > 1$.
 
