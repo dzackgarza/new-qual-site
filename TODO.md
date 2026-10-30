@@ -623,7 +623,7 @@ mathematical correction under its own node, not under copy policy.
       CARD-04 near-duplicate, and the P-BKS11-6B Variations remark states $x^4+x+2021$.
     - [x] SRC-UGA-PRELIM-FALL-2007 omits paper Problem 6; list P-F04T5 between P-5YTY5 and
       P-F07EX and fix the remark's problem count. The remark already counts the paper's seven problems.
-    - [ ] P-3AEDF: the Fall 2016 paper assumes $C^2$, the card (from Tie's list) $C^3$; keep
+    - [x] P-3AEDF: the Fall 2016 paper assumes $C^2$, the card (from Tie's list) $C^3$; keep
       the weaker hypothesis on the card and title (CARD-04).
     - [ ] P-TKF72: the limit is over $R$, not $z$, and $R$ names two radii; follow the paper.
     - [ ] P-AEWN6 part (1) lacks "Let"; P-57CAX part (2) has "Let Let".

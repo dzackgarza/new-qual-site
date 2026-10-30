@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3AEDF
 kind: problem
-title: Harmonic conjugate of a $C^3$ harmonic function on a disc
+title: Harmonic conjugate of a $C^2$ harmonic function on a disc
 classification:
   areas:
   - complex-analysis
@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $u(x,y)$ be harmonic and have continuous partial derivatives of order three in an open disc of radius $R>0$.
+Let $u(x,y)$ be harmonic and have continuous partial derivatives of order two in an open disc of radius $R>0$.
 
 a.
 Let two points $(a,b), (x,y)$ in this disk be given. Show that the following integral is independent of the path in this disk joining these points:
@@ -35,7 +35,7 @@ In parts:
 :::
 
 ::: {.solution}
-**Goal:** Let $D = D((x_0, y_0), R) \subset \RR^2$ be an open disk, and let $u \in C^3(D)$ be a real-valued harmonic function ($\Delta u = u_{xx} + u_{yy} = 0$).
+**Goal:** Let $D = D((x_0, y_0), R) \subset \RR^2$ be an open disk, and let $u \in C^2(D)$ be a real-valued harmonic function ($\Delta u = u_{xx} + u_{yy} = 0$).
 1. (a) Prove that the differential 1-form $\omega = -u_y \, dx + u_x \, dy$ is closed, and that the line integral $\int_{(a,b)}^{(x,y)} \omega$ is independent of the path in $D$.
 2. (b)(i) Prove that $f(z) = u(x,y) + i v(x,y)$ is analytic (holomorphic) in $D$.
 3. (b)(ii) Prove that $v(x,y)$ is harmonic in $D$.
@@ -52,10 +52,10 @@ In parts:
 ::: pf-proof
 
 ::: pf-step
-Since $u \in C^3(D)$, the partial derivatives $P = -u_y$ and $Q = u_x$ are in $C^2(D)$, hence $C^1(D)$.
+Since $u \in C^2(D)$, the partial derivatives $P = -u_y$ and $Q = u_x$ are in $C^1(D)$.
 
 ::: pf-proof
-Continuous differentiability of orders up to 3.
+Continuous differentiability of orders up to 2.
 :::
 
 :::
@@ -187,7 +187,7 @@ Direct comparison with step [](#s3-2){.pf-ref}.
 :::
 
 ::: pf-step
-Since $u \in C^3(D)$, its partial derivatives $u_x, u_y, v_x, v_y$ are in $C^1(D)$ and are continuous.
+Since $u \in C^2(D)$, its partial derivatives $u_x, u_y, v_x, v_y$ are in $C^1(D)$ and are continuous.
 
 ::: pf-proof
 Real differentiability follows from continuity of first partial derivatives.
@@ -233,7 +233,7 @@ Differentiating step [](#s3-2){.pf-ref} with respect to $x$ and $y$.
 :::
 
 ::: {.pf-step #s5-2}
-Since $u \in C^3(D) \subseteq C^2(D)$, Clairaut's theorem guarantees $u_{yx} = u_{xy}$.
+Since $u \in C^2(D)$, Clairaut's theorem guarantees $u_{yx} = u_{xy}$.
 
 ::: pf-proof
 Equality of mixed partials for $C^2$ functions.
