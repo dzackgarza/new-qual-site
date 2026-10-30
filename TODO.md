@@ -647,14 +647,14 @@ mathematical correction under its own node, not under copy policy.
     **Acceptance:** each item read and repaired. **Closed.**
 
   - **`ad6-prelim`**. **Needs:** none. Round 6 at 1c16b39fdc; report in the session scratchpad r6-prelim.md.
-    - [ ] P-UGAP08F-04: the title carries a source locator (CARD-02); retitle by the mathematics.
-    - [ ] SRC-UGA-PRELIM-FALL-2008: the P-UGAP13F-06 comment says "repeated exactly", but 3(b) is worded differently.
-    - [ ] P-GB7EM: the solution structure breaks STYLE-08.
-    - [ ] SRC-BERKELEY-PRELIM-SPRING-2013: provenance is Sp13_Solutions.pdf. Keep it if that department PDF prints the problem statements; otherwise find the paper.
-    - [ ] P-BKF20-1B: the hint printed on the paper is missing.
-    - [ ] UGA Spring 2003 #1b and UGA Fall 2015 extractions lose text; re-extract with MinerU Flash.
-    - [ ] UGA Fall 2015 P-5RZWO, P-MOL6S, P-TOIEK, P-3CU65: informal solutions with errors (S/A and f/g mismatches, "take ε→0", "(Maybe not necessary?)", a recurrence in place of a closed form) and "Goal" paragraphs; rewrite under STYLE-08.
-    - [ ] P-3CU65: the title claims more than the problem asks.
+    - [x] P-UGAP08F-04: the title carries a source locator (CARD-02); retitle by the mathematics.
+    - [x] SRC-UGA-PRELIM-FALL-2008: the P-UGAP13F-06 comment says "repeated exactly", but 3(b) is worded differently.
+    - [x] P-GB7EM: the solution structure breaks STYLE-08.
+    - [x] SRC-BERKELEY-PRELIM-SPRING-2013: provenance is Sp13_Solutions.pdf. Keep it if that department PDF prints the problem statements; otherwise find the paper. Kept: the PDF prints every problem statement.
+    - [x] P-BKF20-1B: the hint printed on the paper is missing.
+    - [ ] UGA Spring 2003 #1b and UGA Fall 2015 extractions lose text; re-extract with MinerU Flash. Open: on 2026-10-31 MinerU Flash lost the same text (1b of Spring 2003; inline symbols of Fall 2015), and `just ocr-pdf` returned HTTP 429 on every attempt; rerun `just ocr-pdf` on both PDFs.
+    - [x] UGA Fall 2015 P-5RZWO, P-MOL6S, P-TOIEK, P-3CU65: informal solutions with errors (S/A and f/g mismatches, "take ε→0", "(Maybe not necessary?)", a recurrence in place of a closed form) and "Goal" paragraphs; rewrite under STYLE-08.
+    - [x] P-3CU65: the title claims more than the problem asks.
     **Acceptance:** each item read and repaired.
 
   - **`ad6-site`**. **Needs:** none. Round 6 at 1c16b39fdc; report in the session scratchpad r6-site.md.
