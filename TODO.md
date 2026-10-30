@@ -657,6 +657,16 @@ mathematical correction under its own node, not under copy policy.
     - [ ] P-3CU65: the title claims more than the problem asks.
     **Acceptance:** each item read and repaired.
 
+  - **`ad6-site`**. **Needs:** none. Round 6 at 1c16b39fdc; report in the session scratchpad r6-site.md.
+    - [ ] bibliography.html: [StSh03] labels both Stein–Shakarchi Complex Analysis and Fourier Analysis; give each a distinct citation label in Zotero and re-export.
+    - [ ] Bibliography title case: "hilbert spaces" (Stein–Shakarchi 2005), "Introduction to Commutative algebra", "Functions of One complex Variable I" and about four more; fix the titles at the Zotero source.
+    - [ ] Miranda dated 2025 (gsm/005 is 1995); Guillemin–Pollack dated 2025 (chel/370 is 2010); fix the dates in Zotero.
+    - [ ] Folland entry prints the publisher twice ("John Wiley & Sons, Incorporated, Wiley").
+    - [ ] bibliography.html entries are not in alphabetical order by author.
+    - [ ] P-MMAQ-TBOFU3T6VV: the title is a truncated sentence with a literal \textit; retitle by the mathematics.
+    - [ ] SRC-TOP-WORKSHOP: provenance chips show raw file names, including the typo "connnected".
+    **Acceptance:** each item read and repaired.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
