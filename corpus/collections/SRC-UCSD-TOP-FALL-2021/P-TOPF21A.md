@@ -156,11 +156,11 @@ It is $N_3$, equivalently it contains a projective-plane crosscap. Also $H_2(A;\
 
 ::: pf-step
 
-Under the standard intended meaning “closed manifold,” $B$ is not homotopy equivalent to a manifold.
+$B$ is not homotopy equivalent to a closed manifold. It is homotopy equivalent to a noncompact manifold.
 
 ::: pf-proof
 
-Since $H_2(B;\ZZ)\cong\ZZ$ and all higher homology vanishes, any closed connected manifold homotopy equivalent to $B$ would have dimension $2$ and be orientable. But the first homology of a closed orientable surface is torsion-free, whereas $H_1(B;\ZZ)$ contains $\ZZ/2$. If manifolds with boundary or noncompact manifolds are allowed, the literal statement needs qualification: finite $2$-complexes can be thickened in sufficiently high dimension to manifolds with boundary having the same homotopy type.
+A closed connected $n$-manifold has $H_n(-;\ZZ/2)\cong\ZZ/2$ and no homology above degree $n$, while $H_*(B;\ZZ/2)$ is nonzero in degree $2$ and zero above. So a closed manifold homotopy equivalent to $B$ would be a surface, orientable because $H_2(B;\ZZ)\cong\ZZ$. But the first homology of a closed orientable surface is torsion-free, whereas $H_1(B;\ZZ)$ contains $\ZZ/2$. On the other hand, $B$ is a finite $2$-complex, so it embeds in $\RR^5$, and the interior of a regular neighbourhood of the embedding is an open $5$-manifold homotopy equivalent to $B$.
 
 :::
 
