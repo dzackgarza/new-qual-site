@@ -6,7 +6,8 @@ title: The punctured disk is not biholomorphic to an annulus
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
@@ -28,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that there is no holomorphic bijection from the punctured disk $0 < \abs{ z } < 1$ in $\CC$ onto the annulus $r < \abs{ z } < R$ , where $0 < r < R < \infty$
+Prove that there is no holomorphic bijection from the punctured disk $0<\abs{z}<1$ in $\CC$ onto the annulus $r<\abs{z}<R$, where $0<r<R<\infty$.
 :::
 
 ::: {.solution}

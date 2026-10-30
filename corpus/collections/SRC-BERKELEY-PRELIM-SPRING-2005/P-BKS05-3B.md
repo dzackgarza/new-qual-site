@@ -6,7 +6,8 @@ title: Generalized inverses of square matrices over a field
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

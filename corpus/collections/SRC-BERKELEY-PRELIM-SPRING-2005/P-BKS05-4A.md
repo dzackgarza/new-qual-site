@@ -6,7 +6,8 @@ title: Product of commuting diagonalizable real matrices is diagonalizable
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

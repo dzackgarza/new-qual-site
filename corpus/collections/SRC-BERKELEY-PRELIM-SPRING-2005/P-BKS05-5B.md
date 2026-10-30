@@ -6,7 +6,8 @@ title: Fixed field of $x\mapsto x^{-1}$ on $\QQ(x)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

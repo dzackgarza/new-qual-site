@@ -6,7 +6,8 @@ title: Eigenvalues of a product of positive definite Hermitian matrices are posi
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

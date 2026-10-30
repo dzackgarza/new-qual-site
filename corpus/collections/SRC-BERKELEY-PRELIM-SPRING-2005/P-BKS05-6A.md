@@ -6,7 +6,8 @@ title: Divisibility of products of $q$-integers in $\ZZ[q]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

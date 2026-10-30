@@ -6,7 +6,8 @@ title: Summable successive differences imply a Cauchy sequence
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -27,6 +28,7 @@ audit:
 ---
 
 ::: {.problem}
+
 (a) Let $(a_n)_1^\infty$ be a sequence in $\RR$ such that
 
 $$

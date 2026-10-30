@@ -6,7 +6,8 @@ title: Evaluation of $\int_0^\infty x\sin x/(x^2+a^2)\,dx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

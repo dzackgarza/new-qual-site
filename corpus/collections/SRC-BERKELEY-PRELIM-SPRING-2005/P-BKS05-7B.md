@@ -6,7 +6,8 @@ title: Normal subgroups of $\operatorname{SL}_2(\FF_p)$ containing a nontrivial 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

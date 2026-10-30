@@ -6,7 +6,8 @@ title: Finite groups whose prime-power-order elements commute are abelian
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -26,9 +27,9 @@ audit:
 ---
 
 ::: {.problem}
-Let G be a finite group.
-Suppose ab = ba holds whenever $a , b \in G$ have prime power order.
-Prove that G is abelian.
+Let $G$ be a finite group.
+Suppose $ab=ba$ holds whenever $a,b\in G$ have prime power order.
+Prove that $G$ is abelian.
 :::
 
 ::: {.solution}

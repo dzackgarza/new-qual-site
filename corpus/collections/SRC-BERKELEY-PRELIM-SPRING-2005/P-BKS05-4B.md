@@ -6,7 +6,8 @@ title: Functions with compact graph are continuous
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

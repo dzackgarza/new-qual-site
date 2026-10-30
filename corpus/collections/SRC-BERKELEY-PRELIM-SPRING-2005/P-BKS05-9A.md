@@ -6,7 +6,8 @@ title: Principal value of $\iint f(x,y)/(x+iy)^3\,dx\,dy$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

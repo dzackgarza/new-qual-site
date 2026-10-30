@@ -6,7 +6,8 @@ title: Square roots of $x$ modulo $x^n-1$ in $\RR[x]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -26,6 +27,7 @@ audit:
 ---
 
 ::: {.problem}
+
 (a) Prove that if $n > 0$ is even, there does not exist $f(x) \in \RR[x]$ such that $f(x)^{2} - x$ is divisible by $x^{n} - 1$.
 
 (b) For odd $n > 0$, find the number of $f(x) \in \RR[x]$ of degree $< n$ such that $f(x)^{2} - x$ is divisible by $x^{n} - 1$.

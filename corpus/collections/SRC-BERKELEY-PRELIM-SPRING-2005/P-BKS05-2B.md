@@ -6,7 +6,8 @@ title: Zeros of $\sin z+1/(z+i)$ near the real axis
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
