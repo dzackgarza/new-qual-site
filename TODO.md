@@ -879,7 +879,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/appendices/index.md
   - [x] wiki/complex-analysis/appendices/pdes.md
   - [x] wiki/complex-analysis/appendices/special-functions.md
-  - [ ] wiki/complex-analysis/basics/analytic-nt.md
+  - [x] wiki/complex-analysis/basics/analytic-nt.md
   - [ ] wiki/complex-analysis/basics/calculus-preliminaries.md
   - [ ] wiki/complex-analysis/basics/complex-arithmetic.md
   - [ ] wiki/complex-analysis/basics/index.md
