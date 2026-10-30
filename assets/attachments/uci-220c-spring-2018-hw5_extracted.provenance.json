@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/uci-220c-spring-2018-hw5.pdf",
+  "source_pdf_sha256": "d2bd178d6f55374027f30f3a557321226eddddd2fd5621bbb9ae2de4a35f4468",
+  "source_url": "https://www.math.uci.edu/~asgor/220C_Spring_2018/HW5_Spring_2018.pdf",
+  "extracted_markdown": "assets/attachments/uci-220c-spring-2018-hw5_extracted.md",
+  "extracted_markdown_sha256": "b22e9db48e9fc1ec1673d11989745cde3f9958516a0421a7231a6e473b024229",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/uci-220c-spring-2018-hw5.pdf --language en",
+  "generated_at": "2026-10-30"
+}
