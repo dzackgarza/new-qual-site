@@ -745,7 +745,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/groups/basics.md
   - [x] wiki/algebra/groups/characteristic-subgroups.md
   - [x] wiki/algebra/groups/groups-of-small-order.md
-  - [ ] wiki/algebra/groups/index.md
+  - [x] wiki/algebra/groups/index.md
   - [ ] wiki/algebra/groups/is-this-group-abelian.md
   - [ ] wiki/algebra/groups/notation.md
   - [ ] wiki/algebra/groups/quotients-and-products.md
