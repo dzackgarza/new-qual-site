@@ -22,8 +22,6 @@ $$
 f(0)=f'(0)=0.
 $$
 Prove that $\abs{f''(0)}\le2$, and describe all such $f$ for which $\abs{f''(0)}=2$.
-
-The retained solution notes explicitly record that the printed exam omitted the necessary hypothesis $f(\DD)\subseteq\DD$; it is included here because without it the assertion is false.
 :::
 
 ::: {.solution}
@@ -210,4 +208,8 @@ Step [](#s1-6){.pf-ref} proves the bound, and step [](#s1-7){.pf-ref} gives the 
 
 :::
 
+:::
+
+::: remark
+The printed problem omits the hypothesis $f(\DD)\subseteq\DD$, and the assertion is false without it.
 :::

@@ -24,7 +24,6 @@ $$
 \abs{z-i}=1
 $$
 onto the upper half-plane.
-The intended region is the part inside $\abs{z-i}<1$ and outside $\abs{z-i/2}\le 1/2$.
 :::
 
 ::: {.solution}
@@ -358,4 +357,8 @@ Step [](#s1-7){.pf-ref} gives the requested explicit conformal equivalence.
 
 :::
 
+:::
+
+::: remark
+The region is the part of the disk $\abs{z-i}<1$ outside the closed disk $\abs{z-i/2}\le 1/2$.
 :::
