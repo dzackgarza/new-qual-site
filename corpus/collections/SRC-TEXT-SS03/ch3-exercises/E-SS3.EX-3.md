@@ -54,4 +54,5 @@ The integrand is even, so for $b>0$ the same computation gives
 $$
 \int_{0}^{\infty} \frac{\cos x}{x^{2}+b^{2}}\, dx=\frac{\pi e^{-b}}{2 b}.
 $$
+At $a=1$ the main statement gives $\int_\RR\frac{\cos x}{x^2+1}\,dx=\frac{\pi}{e}$.
 :::

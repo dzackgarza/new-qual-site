@@ -91,7 +91,6 @@ source:
   - id: E-HKLAA
   - id: E-I6CYR
   - id: E-IPIKC
-  - id: E-IQQAF
   - id: E-ITVTT
   - id: E-IVHVW
     comment: Stein–Shakarchi 2.13
@@ -248,7 +247,6 @@ source:
   - id: P-G2RYI
   - id: P-GAPV3
   - id: P-GW3Y7
-  - id: P-H2WTL
   - id: P-HUG4G
   - id: P-IF6H2
   - id: P-IM6MH
