@@ -5,7 +5,10 @@ kind: problem
 title: $\int_0^\infty\frac{\sqrt x}{(x+1)^2}\,dx$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residues
+  - Contour Integration
+  - Branch Cuts
 relations: []
 review: draft
 audit:

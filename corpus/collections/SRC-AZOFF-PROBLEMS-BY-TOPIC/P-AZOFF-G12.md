@@ -5,7 +5,9 @@ kind: problem
 title: A contour integral equal to $\frac{\sin n\theta}{\sin\theta}$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residues
+  - Contour Integration
 relations: []
 review: draft
 audit:

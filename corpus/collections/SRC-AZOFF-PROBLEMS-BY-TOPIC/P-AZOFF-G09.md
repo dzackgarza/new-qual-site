@@ -5,7 +5,9 @@ kind: problem
 title: $\int_{-\infty}^\infty\frac{1+x^2}{1+x^4}\,dx$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residues
+  - Contour Integration
 relations: []
 review: draft
 audit:

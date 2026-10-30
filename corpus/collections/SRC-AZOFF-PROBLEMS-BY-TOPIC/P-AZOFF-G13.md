@@ -5,7 +5,10 @@ kind: problem
 title: $\int_0^{2\pi}\frac{d\theta}{(a+b\cos\theta)^2}$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residues
+  - Contour Integration
+  - Trigonometric Integrals
 relations: []
 review: draft
 audit:

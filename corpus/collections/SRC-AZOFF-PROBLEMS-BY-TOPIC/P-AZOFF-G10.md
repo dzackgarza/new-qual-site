@@ -5,7 +5,9 @@ kind: problem
 title: $\int_0^\infty\frac{\cos x}{(x^2+a^2)^2}\,dx$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residues
+  - Contour Integration
 relations: []
 review: draft
 audit:

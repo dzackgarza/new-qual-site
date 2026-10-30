@@ -5,7 +5,10 @@ kind: problem
 title: $\int_0^\infty\frac{\sin^3 x}{x^3}\,dx$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residues
+  - Contour Integration
+  - Indented Contours
 relations: []
 review: draft
 audit:

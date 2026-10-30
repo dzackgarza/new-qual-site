@@ -5,7 +5,9 @@ kind: problem
 title: $\int_0^\infty\frac{dx}{(1+x^2)(1+9x^2)}$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residues
+  - Contour Integration
 relations: []
 review: draft
 audit:
