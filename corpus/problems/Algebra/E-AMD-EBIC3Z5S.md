@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-EBIC3Z5S
 kind: problem
-title: If $\Spec(R)\subseteq\mspec(R)$ then $R$ is a UFD
+title: An integral domain in which every prime ideal is maximal is a field, hence a UFD
 classification:
   areas:
   - algebra

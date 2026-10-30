@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-ON37VIEN
 kind: problem
-title: $\nilrad{R}=\rad(0)$
+title: $\nilrad{R}=\rad{(0)}$
 classification:
   areas:
   - algebra
@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-Let $R$ be a commutative ring. Show that the nilradical is given by $\nilrad{R} = \rad(0)$.
+Let $R$ be a commutative ring. Show that the nilradical is given by $\nilrad{R} = \rad{(0)}$.
 :::
 
 ::: {.solution}

@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that $\operatorname{rad}(IJ) = \operatorname{rad}(I) \intersect \operatorname{rad}(J)$.
+Let $I,J$ be ideals of a commutative ring $R$. Show that $\operatorname{rad}(IJ) = \operatorname{rad}(I) \intersect \operatorname{rad}(J)$.
 :::
 
 

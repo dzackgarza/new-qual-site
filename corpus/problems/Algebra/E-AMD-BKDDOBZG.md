@@ -33,7 +33,8 @@ $$
 
 Once $1\in I$, every $r\in R$ satisfies
 $$
-r=r\cdot1\in I.
+r=r\cdot1\in I
 $$
+(respectively $r=1\cdot r\in I$ for a right ideal).
 Hence $I=R$.
 :::

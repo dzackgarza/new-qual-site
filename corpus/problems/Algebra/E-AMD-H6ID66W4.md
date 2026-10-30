@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-H6ID66W4
 kind: problem
-title: $\ff(R[t])=\ff(R)(t)$
+title: $\Frac(R[t])=\Frac(R)(t)$
 classification:
   areas:
   - algebra
