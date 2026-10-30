@@ -5,25 +5,26 @@ kind: collection
 title: UCSD topology Summer 2015
 classification:
   areas:
-  - topology
+    - topology
   topics: []
 relations: []
 review: draft
 completion: complete
 provenance:
-- assets/attachments/290qualS15.pdf
+  - assets/attachments/290qualS15.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: topology
   problems:
-  - P-TOPSU15B
-  - P-TOPSU15C
-  - P-TOPSU15D
-  - P-TOPSU15E
-  - P-TOPSU15F
-  - P-TOPSU15G
-  - P-TOPSU15H
+    - P-TOPSU15A
+    - P-TOPSU15B
+    - P-TOPSU15C
+    - P-TOPSU15D
+    - P-TOPSU15E
+    - P-TOPSU15F
+    - P-TOPSU15G
+    - P-TOPSU15H
   date:
     kind: academic-term
     term: summer
