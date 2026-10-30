@@ -511,7 +511,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-RA-SPRING-2018
   - [x] SRC-UCSD-RA-SPRING-2020
   - [x] SRC-UCSD-RA-SPRING-2021
-  - [ ] SRC-UCSD-RA-SPRING-2022
+  - [x] SRC-UCSD-RA-SPRING-2022
   - [ ] SRC-UCSD-RA-SPRING-2023
   - [ ] SRC-UCSD-RA-SPRING-2024
   - [ ] SRC-UCSD-RA-SPRING-2025
@@ -1731,6 +1731,13 @@ mathematical correction under its own node, not under copy policy.
     calculus_practice_test3.pdf is checked in. Each `P-CALCPT3-*` card and each reused card
     was compared with it. Where they disagree (Questions 9, 11, 43, 44), the page render
     confirms the card.
+  - **`ad-rasp22a-radon-restriction`**. **Needs:** none. P-RASP22A statement 3 (restriction
+    $\mu_A$ of a Radon measure to an open set $A$): the written proof claims $\mu$ is inner
+    regular on every Borel set, which fails for a non-$\sigma$-finite Radon measure, and it never
+    proves outer regularity of $\mu_A$. Decide whether $\mu_A$ is Radon in general (the Riesz
+    measure of $f\mapsto\int_A f\,d\mu$ agrees with $\mu_A$ on open sets and on subsets of $A$;
+    the open question is the mass it gives to $\partial A$) and write a correct answer.
+    **Acceptance:** the card states the correct truth value with a complete proof or counterexample.
 
 ### Marking a node closed
 

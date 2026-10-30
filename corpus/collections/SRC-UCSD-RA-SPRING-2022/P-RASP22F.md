@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP22F
 kind: problem
-title: "Density one condition for Radon measure with continuous density"
+title: "A bounded density that integrates to the measure of every open set is 1 a.e."
 classification:
   areas:
   - real-analysis
