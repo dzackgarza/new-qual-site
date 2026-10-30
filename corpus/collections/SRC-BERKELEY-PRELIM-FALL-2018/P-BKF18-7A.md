@@ -26,5 +26,30 @@ for all distinct $i,j\le n$.
 :::
 
 ::: {.solution}
-Since A is symmetric with nonnegative eigenvalues, we may diagonalize A as $A = U D U ^ { T }$ with $U$ orthogonal and $D$ diagonal with nonnegative entries, so $A = B ^ { T } B$ for $B ^ { T } = U D ^ { 1 / 2 }$ . Thus, A is a Gram matrix, i.e., $a _ { i j } = \langle v _ { i } , v _ { j } \rangle$ where $v _ { i }$ are the columns of $B ,$ so by the Cauchy--Schwarz inequality $\abs{ a _ { i j } } \leq \norm{ v _ { i } } \norm{ v _ { j } } = \sqrt { a _ { i i } a _ { j j } }$ , as desired.
+
+::: pf
+
+::: {.pf-step #s1}
+
+There are vectors $v_1,\dots,v_n\in\RR^n$ with $a_{ij}=\langle v_i,v_j\rangle$.
+
+::: pf-proof
+
+By the spectral theorem, $A=UDU^T$ with $U$ orthogonal and $D$ diagonal with nonnegative entries. Put $C=D^{1/2}U^T$. Then $A=C^TC$, so $a_{ij}=\langle v_i,v_j\rangle$ with $v_i$ the $i$-th column of $C$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By step [](#s1){.pf-ref} and the Cauchy–Schwarz inequality,
+$$
+\abs{a_{ij}}=\abs{\langle v_i,v_j\rangle}\le\norm{v_i}\norm{v_j}=\sqrt{a_{ii}a_{jj}}.
+$$
+
+:::
+
+:::
+
 :::

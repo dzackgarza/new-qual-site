@@ -22,5 +22,39 @@ Show that if $f(0)=0$, then $f(x)>0$ for all $x>0$.
 :::
 
 ::: {.solution}
-Since $f ^ { \prime } ( 0 ) > 0$ we have $f ( x ) = x \cdot f ^ { \prime } ( 0 ) + o ( \abs{ x } )$ in a neighborhood of zero, so there is a $t > 0$ such that f is positive on $( 0 , t )$ . Assume for contradiction that $f ( x ) \leq 0$ for some $x > 0$ and let $x _ { 0 }$ be the first such x. Then $f ( x ) > 0$ on $( 0 , x _ { 0 } )$ , which means that $f ^ { \prime } ( x ) > 0$ on $( 0 , x _ { 0 } )$ , so $f ( x _ { 0 } ) > f ( 0 ) = 0$ , a contradiction
+
+::: pf
+
+::: {.pf-step #s1}
+
+There is $t>0$ such that $f>0$ on $(0,t)$.
+
+::: pf-proof
+
+$f'(0)>f(0)=0$. Since $f(x)/x\to f'(0)>0$ as $x\to0^+$, there is $t>0$ with $f(x)/x>0$ for $0<x<t$.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+$f(x)>0$ for all $x>0$.
+
+::: pf-proof
+
+Suppose the set $Z=\{x>0: f(x)\le0\}$ is not empty, and let $x_0=\inf Z$. By step [](#s1){.pf-ref}, $x_0\ge t>0$. Points of $Z$ approach $x_0$ and $f$ is continuous, so $f(x_0)\le0$. By the definition of $x_0$, $f>0$ on $(0,x_0)$. Then $f'>f>0$ on $(0,x_0)$. By the mean value theorem, $f(x_0)-f(0)=x_0f'(\xi)$ for some $\xi\in(0,x_0)$, so $f(x_0)>0$. This is a contradiction.
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} is the claim.
+
+:::
+
+:::
+
 :::

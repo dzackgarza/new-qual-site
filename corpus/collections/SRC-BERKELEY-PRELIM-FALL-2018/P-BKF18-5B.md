@@ -22,5 +22,29 @@ What is $h'(0)$?
 :::
 
 ::: {.solution}
-We have $\abs{ h ( 0 ) } = \sqrt { 9 + 1 6 } = 5$ , so $\abs{ h ( 0 ) } \geq \abs{ h ( z ) }$ for $z \in D = \{ \abs{ z } < 1 \}$ . By the maximum modulus principle this is only possible if $h ( z )$ is constant on $D$ , which implies that $h ^ { \prime } ( 0 ) = 0$
+
+$h'(0)=0$.
+
+::: pf
+
+::: {.pf-step #s1}
+
+$h$ is constant.
+
+::: pf-proof
+
+$\abs{h(0)}=\sqrt{3^2+4^2}=5$, so $\abs{h}$ restricted to the open unit disk attains its maximum $5$ at the interior point $0$. By the maximum modulus principle, $h$ is constant on the disk, and by the identity theorem $h$ is constant on $\CC$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By step [](#s1){.pf-ref}, $h'\equiv0$, so $h'(0)=0$.
+
+:::
+
+:::
+
 :::

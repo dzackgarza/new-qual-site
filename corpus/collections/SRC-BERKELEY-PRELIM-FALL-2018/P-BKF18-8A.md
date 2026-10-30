@@ -25,12 +25,42 @@ $$
 :::
 
 ::: {.solution}
-Given a prime $p ,$ let $\alpha , \beta ,$ and $\gamma$ be the exponents of $p$ in the prime factorization of $a , b ,$ and ${ \mathit { c } } ,$ respectively.
-Then it will suffice to show that
 
+::: pf
+
+::: {.pf-step #s1}
+
+It suffices to show, for each prime $p$ with exponents $\alpha,\beta,\gamma$ in $a,b,c$, that
 $$
-\operatorname* { m i n } \{ \alpha , \operatorname* { m a x } \{ \beta , \gamma \} \} = \operatorname* { m a x } \{ \operatorname* { m i n } \{ \alpha , \beta \} , \operatorname* { m i n } \{ \alpha , \gamma \} \} \ .
+\min\{\alpha,\max\{\beta,\gamma\}\}=\max\{\min\{\alpha,\beta\},\min\{\alpha,\gamma\}\}.
 $$
 
-Without loss of generality, we may assume that $\beta \leq \gamma ;$ in that case max $\{ \beta , \gamma \} = \gamma$ and min $\{ \alpha , \beta \} \le \operatorname* { m i n } \{ \alpha , \gamma \}$ Therefore the above equation is true because both sides are equal to min $\{ \alpha , \gamma \}$
+::: pf-proof
+
+Both sides of the claimed identity are positive integers. A positive integer is determined by the exponent of each prime in it. The exponent of $p$ in $\gcd(x,y)$ is the minimum, and in $\operatorname{lcm}(x,y)$ the maximum, of the exponents in $x$ and $y$.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+The identity of step [](#s1){.pf-ref} holds.
+
+::: pf-proof
+
+By symmetry in $\beta,\gamma$, assume $\beta\le\gamma$. Then $\max\{\beta,\gamma\}=\gamma$ and $\min\{\alpha,\beta\}\le\min\{\alpha,\gamma\}$, so both sides equal $\min\{\alpha,\gamma\}$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove the identity.
+
+:::
+
+:::
+
 :::
