@@ -169,7 +169,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-BERKELEY-PRELIM-SPRING-2015
   - [x] SRC-BERKELEY-PRELIM-SPRING-2016
   - [x] SRC-BERKELEY-PRELIM-SPRING-2017
-  - [ ] SRC-BERKELEY-PRELIM-SPRING-2019
+  - [x] SRC-BERKELEY-PRELIM-SPRING-2019
   - [ ] SRC-BERKELEY-PRELIM-SPRING-2021
   - [ ] SRC-BERKELEY-PRELIM-SUMMER-1977
   - [ ] SRC-BERKELEY-PRELIM-SUMMER-1978
@@ -934,7 +934,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/singularities/meromorphic-functions.md
   - [x] wiki/complex-analysis/singularities/removable-poles-essential.md
   - [x] wiki/complex-analysis/standard-integrals.md
-  - [ ] wiki/complex-analysis/workshops/complex-week-1-preliminaries.md
+  - [x] wiki/complex-analysis/workshops/complex-week-1-preliminaries.md
   - [ ] wiki/complex-analysis/workshops/complex-week-2-cauchy.md
   - [x] wiki/complex-analysis/workshops/index.md
   - [ ] wiki/index.md
