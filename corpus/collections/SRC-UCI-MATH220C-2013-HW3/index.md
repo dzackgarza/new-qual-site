@@ -16,6 +16,18 @@ source:
   problems:
     - id: P-M9SRT
       comment: Problem 1
+    - id: P-UCI13H3-2
+      comment: Problem 2
+    - id: P-UCI13H3-3
+      comment: Problem 3
+    - id: P-UCI13H3-4
+      comment: Problem 4
+    - id: P-UCI13H3-5
+      comment: Problem 5
+    - id: P-UCI13H3-6
+      comment: Problem 6
+    - id: E-BPSOU
+      comment: Problem 7
   date:
     kind: year
     year: 2013

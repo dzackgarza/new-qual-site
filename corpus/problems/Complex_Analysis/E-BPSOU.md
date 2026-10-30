@@ -51,3 +51,8 @@ For $k>p$, that is, $k\geq \floor{p}+1$, letting $R\to\infty$ in step [](#cauchy
 :::
 
 :::
+
+::: {.remark title="Variations"}
+If $f$ is entire with $\abs{f(z)}\le 1+\abs{z}^{\sqrt{2010}}$ for every $z\in\CC$, then $\abs{f(z)}\le 2\abs{z}^{\sqrt{2010}}$ for $\abs z\ge1$, so the main result gives a polynomial of degree at most $\floor{\sqrt{2010}}=44$, since $44^2=1936<2010<2025=45^2$.
+The bound $44$ is the best one: $f(z)=z^{44}$ satisfies $\abs{z}^{44}\le1$ for $\abs z\le1$ and $\abs z^{44}\le\abs z^{\sqrt{2010}}$ for $\abs z\ge1$.
+:::
