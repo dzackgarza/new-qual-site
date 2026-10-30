@@ -25,7 +25,7 @@ Let $p$ be a positive prime number, $\FF_p$ the field with $p$ elements, and let
 
 (b) Write down an explicit isomorphism from $\ZZ/p\ZZ$ to
 $$
-U=\left\{\begin{pmatrix}1 & a\\ 0 & 1\end{pmatrix}\ \bigg|\ a\in\FF_p\right\}.
+U=\left\{\begin{pmatrix}1 & a\\ 0 & 1\end{pmatrix} \st a\in\FF_p\right\}.
 $$
 
 (c) How many subgroups of order $p$ does $G$ have?
