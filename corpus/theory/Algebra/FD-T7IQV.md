@@ -24,7 +24,7 @@ A finite group $G$ is [[D-DFIDP|solvable]] if and only if it has a [[D-FYX4I|com
 :::
 
 ::: {.proof}
-Suppose $G = G^0 \geq G^1 \geq \cdots \geq G^n = \theset{e}$ is a composition series with every $G_i/G_{i+1}$ abelian.
+Suppose $G = G^0 \geq G^1 \geq \cdots \geq G^n = \theset{e}$ is a composition series with every $G^i/G^{i+1}$ abelian.
 Reversing the indices gives a normal series from $\theset{e}$ to $G$ with abelian successive quotients, so $G$ is solvable.
 
 Conversely, suppose $G$ is solvable, witnessed by $\theset{e} = G_0 \normal G_1 \normal \cdots \normal G_n = G$ with abelian quotients.
@@ -33,5 +33,5 @@ Conversely, suppose $G$ is solvable, witnessed by $\theset{e} = G_0 \normal G_1 
 2. Subgroups of $G$ are solvable. For $H\leq G$, the series $H\cap G_i$ is normal, and $(H\cap G_i)/(H\cap G_{i-1})$ embeds in $G_i/G_{i-1}$ by the second isomorphism theorem, so it is abelian.
 3. Quotients of $G$ are solvable. For $N\normal G$, the series $G_iN/N$ is normal, and $G_iN/G_{i-1}N$ is a quotient of $G_i/G_{i-1}$, so it is abelian.
 4. A simple solvable group $S$ is abelian. Delete repeated terms from a solvable series of $S$; its second-to-last term is a proper normal subgroup of $S$, hence trivial, so $S$ is isomorphic to the last quotient, which is abelian.
-5. Take a composition series of $G$ by step 1. Each factor $G_i/G_{i+1}$ is a quotient of the subgroup $G_i$, hence solvable by steps 2 and 3, and simple by [[D-FYX4I|definition]], hence abelian by step 4.
+5. Take a composition series of $G$ by step 1. Each factor $G^i/G^{i+1}$ is a quotient of the subgroup $G^i$, hence solvable by steps 2 and 3, and simple by [[D-FYX4I|definition]], hence abelian by step 4.
 :::
