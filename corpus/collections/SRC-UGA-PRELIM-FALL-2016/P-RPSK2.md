@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-RPSK2
 kind: problem
-title: Line integral of $[2x+y,y]$ from $(2,1)$ to $(3,5)$, and
-  non-conservativeness
+title: The line integral of $(2x+y)\,dx+y\,dy$ from $(2,1)$ to $(3,5)$ and path independence
 classification:
   areas:
   - prelim
@@ -14,12 +13,12 @@ review: draft
 ---
 
 ::: {.problem}
-1. Choose a path $C$ from $(2,1)$ to $(3,5)$ and compute
+(a) Choose a path $C$ from $(2,1)$ to $(3,5)$ and compute
 $$
 \int_C(2x+y)\,dx+y\,dy.
 $$
 
-2. Give and apply a criterion that shows whether this integral is path independent.
+(b) Give and apply a criterion that shows whether this integral is path independent.
 :::
 
 ::: {.solution}

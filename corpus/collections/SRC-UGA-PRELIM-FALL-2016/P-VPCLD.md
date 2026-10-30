@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VPCLD
 kind: problem
-title: Spectral theorem diagonalization with eigenvalues $1$ and $-2$
+title: Diagonalize $\begin{pmatrix}4&-6\\3&-5\end{pmatrix}$ by similarity
 classification:
   areas:
   - prelim

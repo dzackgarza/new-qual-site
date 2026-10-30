@@ -20,9 +20,9 @@ n>N\quad\Longrightarrow\quad \abs{f_n(x)-f(x)}<\varepsilon
 $$
 for all $x\in\RR$.
 
-1. What must one check to show that a sequence does not converge uniformly?
+(a) What must one check to show that a sequence does not converge uniformly?
 
-2. Give an example such that $f_n(x)$ converges to $f(x)$ for every $x\in\RR$, but the sequence does not converge uniformly.
+(b) Give an example such that $f_n(x)$ converges to $f(x)$ for every $x\in\RR$, but the sequence does not converge uniformly.
 :::
 
 ::: {.solution}

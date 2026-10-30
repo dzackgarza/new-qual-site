@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FB5CY
 kind: problem
-title: Power series at $4$ with radius $1$ converging at one endpoint
+title: A power series whose interval of convergence is exactly $[3,5)$
 classification:
   areas:
   - prelim
