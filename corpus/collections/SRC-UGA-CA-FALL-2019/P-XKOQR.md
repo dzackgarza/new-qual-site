@@ -23,46 +23,44 @@ Prove that a holomorphic map $f: U \rightarrow V$ is a local bijection if and on
 ::: {.concept}
 \envlist
 
-- Inverse function theorem: if $F\in C^1(\RR^n\to \RR^n)$ and $D_f$ is invertible at $p$, the $F$ is invertible in a neighborhood of $p$, and $\inverseof{F}$ is $C^1$.
+- Inverse function theorem: if $F\in C^1(\RR^n\to \RR^n)$ and $D_f$ is invertible at $p$, then $F$ is invertible in a neighborhood of $p$, and $\inverseof{F}$ is $C^1$.
 
 :::
 
 ::: {.solution}
-$\impliedby$: Let $z\in U$ be fixed.
-Since $f$ is holomorphic at $z$ and $f'(z)\neq 0$, consider $f(x, y)$ and its Jacobian as a real-valued function:
-$$
-D_f = \matt{u_x}{u_y}{v_x}{v_y}
-\implies
-\det(D_f) = u_x v_y - v_x u_y = u_x^2 + v_x^2 = \abs{f'}^2 > 0
-,$$
-so the derivative matrix is invertible at $z$.
-Applying the inverse function theorem yields that $f$ is a smooth diffeomorphism on some neighborhood $N\ni p$, and in particular is bijective on $N$.
 
-$\not\impliedby$: If $f'(z) = 0$ for some $z$, then we claim that $f$ can not be injective.
-Equivalently, injectivity of $f$ implies $f'\neq 0$.
-Suppose $f$ is holomorphic at $z_0$ but $f'(z_0)=0$.
-Write $h(z) \coloneqq f(z) - f(z_0)$, which has a zero $z_0$ of some order $k\geq 2$.
-For a disc $D$ small enough about $z_0$ avoiding the other (isolated) zeros of $h$ and $f'$, for any $p$ in a neighborhood of $z_0$ and contained in $D$,
-$$
-\int_{\bd D} {f'(\xi) \over f(\xi) - p} \dxi
-= \size Z(f(z) - p)
-,$$
-using the argument principle and that $(f(\xi) - p)' = f'(\xi)$.
-But for $D$ small enough, $\size Z(f(z) - p) = \size Z(f(z) - f(z_0)) = k$ by Rouché, so there are $k$ solutions to $f(z) = p$.
-Since $(f(z) - p)' \neq 0$ in $D$, none of these can be repeated roots, so these $k$ solutions are distinct, forcing $f$ to be $k$-to-one and fail injectivity.
+::: pf
 
-Expanding on the Rouché argument: set $c \coloneqq \inf_{z\in D} \abs{f(z) - w_0}$, then for $D'$ of radius $c$, set
+::: {.pf-step #if}
 
-- $F(z) \coloneqq (f(z) - z_0) - (f(z) - p) = z-p$
+If $f'(z_0)\neq0$, then $f$ is a bijection from some open disc centered at $z_0$ onto its image.
 
-- $G(z) = f(z) - z_0$
+::: pf-proof
 
-- $(F+G)(z) = f(z) - p$
+Write $f=u+iv$. By the Cauchy–Riemann equations the real Jacobian of $f$ at $z_0$ is $u_xv_y-u_yv_x=u_x^2+v_x^2=\abs{f'(z_0)}^2>0$. The map $f$ is $C^1$ as a map of $\RR^2$, so the inverse function theorem gives an open neighborhood $N$ of $z_0$ on which $f$ is injective. Any open disc $D\subset N$ centered at $z_0$ works.
 
-Then $F>G$ on $\bd D'$ will imply $F, F+G$ have the same number of zeros within $D'$, and this bound follows from
-$$
-\abs{F(z)} = \abs{z-p} < c \leq \abs{f(z) - p }
-,$$
-where the first inequality is from making the disc small and the second from choosing $c$ as an inf.
+:::
+
+:::
+
+::: {.pf-step #onlyif}
+
+If $f'(z_0)=0$, then $f$ is not injective on any open disc $D\subset U$ centered at $z_0$.
+
+::: pf-proof
+
+If $f$ is constant on $D$, it is not injective there. Otherwise $f$ is nonconstant on the connected set $D$, so $h=f-f(z_0)$ has a zero of some finite order $k$ at $z_0$, and $k\ge2$ because $h'(z_0)=0$. The zeros of $h$ and of $f'$ in $D$ are isolated, so there is $r>0$ with $\abs{z-z_0}\le r$ contained in $D$ and $h(z)\neq0$, $f'(z)\neq0$ for $0<\abs{z-z_0}\le r$. Let $m=\min_{\abs{z-z_0}=r}\abs{h(z)}>0$ and fix $p$ with $0<\abs{p-f(z_0)}<m$. On $\abs{z-z_0}=r$, $\abs{p-f(z_0)}<\abs{h(z)}$, so by Rouché's theorem $f-p=h-(p-f(z_0))$ has $k$ zeros, counted with multiplicity, in $\abs{z-z_0}<r$. None of them is $z_0$, because $f(z_0)\neq p$, so $f'$ does not vanish at any of them, and each is simple. Hence $f$ takes the value $p$ at $k\ge2$ distinct points of $D$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#if){.pf-ref} proves that $f'\neq0$ on $U$ implies that $f$ is a local bijection, and Step [](#onlyif){.pf-ref} proves the converse.
+
+:::
+
+:::
 
 :::

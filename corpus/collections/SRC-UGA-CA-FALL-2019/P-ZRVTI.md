@@ -26,52 +26,65 @@ The same problem is also asked as: show that $\Aut_\CC(\CC)$ is the group of map
 :::
 
 ::: {.solution}
-Note that $f$ is non-constant, since a constant function is extremely non-injective.
-Consider the singularity at $\infty$:
 
-- If it is removable, then $f$ is bounded outside of a large disc, and bounded inside of it as a continuous function on a compact set, making $f$ entire and bounded and thus constant by Liouville.
+$f$ is not constant, because it is injective. Let $g(w)=f(1/w)$ for $w\neq0$.
 
-- If it is essential, then by Casorati-Weierstrass there is a large disc of radius $R$ such that $f(\bar{\DD_R}^c) \subseteq \CC$ is dense.
-  By the open mapping theorem, $f(\DD_R) \subseteq \CC$ is open, so by density it intersects $f(\bar{\DD_R}^c)$, but $\DD_R \intersect \bar{\DD_R}^c$ is empty so this contradicts injectivity.
+::: pf
 
-So we can conclude $\infty$ is a pole of some order $N$, so $f\qty{1\over z} = \sum_{0\leq k\leq N} c_k z^{-k}$ and thus $f(z) = \sum_{0\leq k\leq N} c_k z^k$ is a polynomial of degree $N$.
-However, a polynomial of degree $N$ is generically $N$-to-one locally, so injectivity forces $N=1$ and $f(z) = c_0 + c_1 z$, where $c_1\neq 0$ since $f$ is nonconstant.
+::: {.pf-step #notrem}
+
+$g$ does not have a removable singularity at $0$.
+
+::: pf-proof
+
+Otherwise $g$ is bounded on some $0<\abs{w}<\delta$, so $f$ is bounded on $\abs{z}>1/\delta$. It is also bounded on the compact disk $\abs{z}\le1/\delta$. By Liouville's theorem $f$ is constant, a contradiction.
+
 :::
 
-::: {.solution title="older"}
-Write $g(z) \coloneqq f(1/z)$, which has a singularity at $z=0$.
-The claim is that this is a pole.
+:::
 
-If $z=0$ is a removable singularity, $g$ is bounded on some closed disc $\abs{z} \leq \eps$, so $f$ is bounded on $\abs{z} > \eps$.
-Moreover $f$ is continuous and $\abs{z}\leq \eps$, $f$ is bounded on this disc.
-This makes $f$ an entire bounded function and thus constant by Liouville, contradicting injectivity.
+::: {.pf-step #notess}
 
-If $z=0$ is essential, then by Casorati-Weierstrass pick a punctured disc $D = \theset{\abs{z} \leq \eps}$ where $g(D)$ is dense in $\CC$.
-Writing $D^c \coloneqq \theset{\abs{z} > \eps}$, this means that $f(D^c)$ is dense. 
-But $U\coloneqq \theset{\abs{z} < \eps}$ is open and by the open mapping theorem $f(U)$ is open, so by density there is a point $w\in f(D^c) \intersect f(U)$ while $U \intersect D^c = \emptyset$, again contradicting injectivity.
+$g$ does not have an essential singularity at $0$.
 
-So $z=0$ is a pole of $g$, and $g$ admits a Laurent expansion
-$$
-g(z) = \sum_{k\geq -N} c_k z^k
-.$$
-Since $f$ is entire, it equals its Laurent expansion at $z=0$, so equating the two series yields
-$$
-f(z) = \sum_{k\geq 0} d_k z^k 
-&\implies g(z) = \sum_{k\geq 0} {d_k \over z^k} = \sum_{1\leq k\leq N} {c_k\over z^k} + \sum_{k\geq 0} c_k z^k \\
-&\implies \sum_{k\geq 0} c_k z^k = 0 \\
-&\implies f(z) = \sum_{0\leq k \leq N} c_k z^k
-,$$
-making $f$ a polynomial of degree at most $N$.
+::: pf-proof
 
-Now $f$ can not be degree zero, since constant maps are not injective.
-Moreover $f$ can not be degree $N\geq 2$, since any polynomial of degree $N$ has $N$ roots in $\CC$ by the fundamental theorem of algebra, and any two distinct roots will be points where injectivity fails.
-Finally, ruling out the case of roots with multiplicity, if $f(z) = c(z-a)^N$, then $f$ has exactly $N$ preimages in a neighborhood of $a$.
-Letting $p$ be any such point, we can find $N$ complex points mapping to it:
-$$
-p = c(z-a)^N &\implies {p\over c} = (z-a)^N \\
-&\implies \qty{p\over c}^{1\over N}\zeta_N^k = z-a \quad k=0,1,\cdots, n-1 \\
-&\implies z_k\coloneqq \qty{p\over c}^{1\over N}\zeta_N^k + a \mapsvia{f} p
-.$$
+By the open mapping theorem, $f(\{\abs{z}<1\})$ is open, so it contains a disk $B$ about $f(0)$. If $0$ were essential, the Casorati–Weierstrass theorem would give $w$ with $0<\abs{w}<1$ and $g(w)\in B$. Then $f(1/w)=f(z')$ for some $\abs{z'}<1$, while $\abs{1/w}>1$, so $1/w\neq z'$. This contradicts injectivity.
 
-So $f$ must be degree exactly 1, i.e. $f(z) = az+b$.
+:::
+
+:::
+
+::: {.pf-step #poly}
+
+$f$ is a polynomial of degree $N\ge1$.
+
+::: pf-proof
+
+By Steps [](#notrem){.pf-ref} and [](#notess){.pf-ref}, $g$ has a pole at $0$ of some order $N\ge1$. Write $f(z)=\sum_{n\ge0}c_nz^n$. Then $g(w)=\sum_{n\ge0}c_nw^{-n}$ is the Laurent expansion of $g$ at $0$, and since it has only finitely many negative powers, $c_n=0$ for $n>N$ and $c_N\neq0$.
+
+:::
+
+:::
+
+::: {.pf-step #deg1}
+
+$N=1$.
+
+::: pf-proof
+
+The set of critical values $\{f(\zeta):f'(\zeta)=0\}$ is finite, because $f'$ is a nonzero polynomial. Choose $c$ outside it. Every root of $f(z)-c$ is then simple, so the degree-$N$ polynomial $f-c$ has $N$ distinct roots. Injectivity allows at most one, so $N=1$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By Steps [](#poly){.pf-ref} and [](#deg1){.pf-ref}, $f(z)=az+b$ with $a=c_1\neq0$ and $b=c_0$.
+
+:::
+
+:::
+
 :::

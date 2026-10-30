@@ -26,145 +26,61 @@ $$
 :::
 
 ::: {.solution}
-**Goal:** Compute $F(z)$ for $z \in \Omega_1$ and $z \in \Omega_2$ by applying Cauchy's theorem on the annular domain between $\gamma$ and a large circle $C_R = \{\abs{\xi} = R\}$, and taking the limit as $R \to \infty$.
+
+For $R>0$ let $C_R$ be the circle $\abs{\xi}=R$, oriented counterclockwise. Fix $z\notin\gamma$ and take $R$ so large that $\gamma$ and $z$ lie in $\abs{\xi}<R$. Let $U_R=\Omega_2\cap\{\abs{\xi}<R\}$; its oriented boundary is $C_R-\gamma$, and $f$ is holomorphic on a neighborhood of $\overline{U_R}$.
 
 ::: pf
 
-::: {.pf-step #s1}
-Asymptotic limit of the integral along a large circle $C_R$:
+::: {.pf-step #large}
+
+$\displaystyle\lim_{R\to\infty}\frac1{2\pi i}\int_{C_R}\frac{f(\xi)}{\xi-z}\,d\xi=A$.
 
 ::: pf-proof
 
-::: pf-step
-Let $C_R$ denote the circle $\{\abs{\xi} = R\}$, oriented counterclockwise, for $R > 0$ sufficiently large such that $\gamma \subset \DD_R$ and (if $z \in \Omega_2$) $\abs{z} < R$.
-:::
-
-::: pf-step
-Split the integral along $C_R$:
-$$\frac{1}{2\pi i} \int_{C_R} \frac{f(\xi)}{\xi - z} \, d\xi = \frac{A}{2\pi i} \int_{C_R} \frac{d\xi}{\xi - z} + \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi) - A}{\xi - z} \, d\xi.$$
-:::
-
-::: pf-step
-Since $\abs{z} < R$, the winding number of $C_R$ around $z$ is 1:
-$$\frac{1}{2\pi i} \int_{C_R} \frac{d\xi}{\xi - z} = 1.$$
-:::
-
-::: pf-step
-Bound the error term:
-
-- Let $\varepsilon > 0$. Since $\lim_{\xi \to \infty} f(\xi) = A$, there exists $R_0 > 0$ such that $\abs{f(\xi) - A} < \varepsilon$ for all $\abs{\xi} \ge R_0$.
-- For $R \ge R_0$ with $R > \abs{z}$:
-$$\abs{ \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi) - A}{\xi - z} \, d\xi } \le \frac{1}{2\pi} \cdot \frac{\varepsilon}{R - \abs{z}} \cdot 2\pi R = \varepsilon \frac{R}{R - \abs{z}}.$$
-- Taking $R \to \infty$, the upper bound approaches $\varepsilon$. Since $\varepsilon > 0$ was arbitrary:
-$$\lim_{R \to \infty} \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi) - A}{\xi - z} \, d\xi = 0.$$
-:::
-
-::: pf-step
-Therefore:
-$$\lim_{R \to \infty} \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi)}{\xi - z} \, d\xi = A \cdot 1 + 0 = A.$$
-:::
+Since $\abs{z}<R$, $\frac1{2\pi i}\int_{C_R}\frac{d\xi}{\xi-z}=1$, so
+$$
+\frac1{2\pi i}\int_{C_R}\frac{f(\xi)}{\xi-z}\,d\xi-A=\frac1{2\pi i}\int_{C_R}\frac{f(\xi)-A}{\xi-z}\,d\xi.
+$$
+Given $\varepsilon>0$, choose $R_0$ with $\abs{f(\xi)-A}<\varepsilon$ for $\abs{\xi}\ge R_0$. For $R\ge R_0$ the right side has modulus at most $\frac{1}{2\pi}\cdot\frac{\varepsilon}{R-\abs{z}}\cdot2\pi R$, which tends to $\varepsilon$ as $R\to\infty$.
 
 :::
 
 :::
 
-::: pf-step
-Case $z \in \Omega_1$:
+::: {.pf-step #inside}
+
+If $z\in\Omega_1$, then $F(z)=A$.
 
 ::: pf-proof
 
-::: pf-step
-Let $z \in \Omega_1$.
-:::
-
-::: pf-step
-Choose $R > 0$ large enough that $\gamma \subset \DD_R$.
-:::
-
-::: pf-step
-Consider the bounded region $U_R = \DD_R \cap \Omega_2$ between $\gamma$ and $C_R$.
-:::
-
-::: pf-step
-The boundary is $\partial U_R = C_R - \gamma$ (where $-\gamma$ indicates that the inner boundary is oriented clockwise relative to $U_R$).
-:::
-
-::: pf-step
-Since $z \in \Omega_1$, $z \notin U_R$. Thus the function $\xi \mapsto \frac{f(\xi)}{\xi - z}$ is holomorphic on an open neighborhood of $\overline{U_R}$.
-:::
-
-::: pf-step
-By Cauchy's Integral Theorem on $U_R$:
-$$\frac{1}{2\pi i} \int_{C_R} \frac{f(\xi)}{\xi - z} \, d\xi - \frac{1}{2\pi i} \int_\gamma \frac{f(\xi)}{\xi - z} \, d\xi = 0.$$
-:::
-
-::: pf-step
-Thus:
-$$F(z) = \frac{1}{2\pi i} \int_\gamma \frac{f(\xi)}{\xi - z} \, d\xi = \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi)}{\xi - z} \, d\xi.$$
-:::
-
-::: pf-step
-Since the left-hand side $F(z)$ is independent of $R$, take $R \to \infty$ and apply step [](#s1){.pf-ref}:
-$$F(z) = A.$$
-:::
+Here $z\notin\overline{U_R}$, so $\xi\mapsto f(\xi)/(\xi-z)$ is holomorphic on a neighborhood of $\overline{U_R}$, and Cauchy's theorem on $U_R$ gives $\int_{C_R}\frac{f(\xi)}{\xi-z}\,d\xi=\int_\gamma\frac{f(\xi)}{\xi-z}\,d\xi$. The right side does not depend on $R$; let $R\to\infty$ and use Step [](#large){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
-Case $z \in \Omega_2$:
+::: {.pf-step #outside}
+
+If $z\in\Omega_2$, then $F(z)=-f(z)+A$.
 
 ::: pf-proof
 
-::: pf-step
-Let $z \in \Omega_2$.
-:::
-
-::: pf-step
-Choose $R > \abs{z}$ large enough that $\gamma \subset \DD_R$.
-:::
-
-::: pf-step
-Now the point $z$ lies in the interior of the bounded region $U_R = \DD_R \cap \Omega_2$.
-:::
-
-::: pf-step
-The function $\xi \mapsto \frac{f(\xi)}{\xi - z}$ is holomorphic on $\overline{U_R} \setminus \{z\}$ with a simple pole at $\xi = z$.
-:::
-
-::: pf-step
-The residue at $\xi = z$ is:
-$$\operatorname{Res}_{\xi = z} \frac{f(\xi)}{\xi - z} = f(z).$$
-:::
-
-::: pf-step
-By the Residue Theorem / Cauchy's Integral Formula on $U_R$:
-$$\frac{1}{2\pi i} \int_{C_R} \frac{f(\xi)}{\xi - z} \, d\xi - \frac{1}{2\pi i} \int_\gamma \frac{f(\xi)}{\xi - z} \, d\xi = f(z).$$
-:::
-
-::: pf-step
-Rearranging for $F(z)$:
-$$F(z) = \frac{1}{2\pi i} \int_\gamma \frac{f(\xi)}{\xi - z} \, d\xi = -f(z) + \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi)}{\xi - z} \, d\xi.$$
-:::
-
-::: pf-step
-Taking $R \to \infty$ and applying step [](#s1){.pf-ref}:
-$$F(z) = -f(z) + A.$$
-:::
+Here $z\in U_R$, and Cauchy's integral formula on $U_R$ gives
+$$
+\frac1{2\pi i}\int_{C_R}\frac{f(\xi)}{\xi-z}\,d\xi-\frac1{2\pi i}\int_\gamma\frac{f(\xi)}{\xi-z}\,d\xi=f(z).
+$$
+So $F(z)=-f(z)+\frac1{2\pi i}\int_{C_R}\frac{f(\xi)}{\xi-z}\,d\xi$; let $R\to\infty$ and use Step [](#large){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
-Conclusion:
+::: pf-qed
 
-::: pf-proof
-$F(z) = A$ for $z \in \Omega_1$ and $F(z) = -f(z) + A$ for $z \in \Omega_2$.
-:::
+Steps [](#inside){.pf-ref} and [](#outside){.pf-ref} are the two cases of the formula.
 
 :::
 
 :::
+
 :::

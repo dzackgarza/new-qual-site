@@ -29,7 +29,6 @@ Here $n$ is a positive integer.
 :::
 
 ::: {.solution}
-**Goal:** Show $\int_0^\infty \frac{x^{a-1}}{1+x^n}\, dx = \frac{\pi}{n\sin \frac{a\pi}{n}}$ for $0 < a < n$ by complex analysis.
 
 ::: pf
 
