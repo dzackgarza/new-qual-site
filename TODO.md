@@ -838,7 +838,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebraic-geometry/sheaves-of-modules/operations.md
   - [x] wiki/algebraic-geometry/sheaves-of-modules/projective-sheaves.md
   - [x] wiki/algebraic-geometry/sheaves-of-modules/quasicoherence.md
-  - [ ] wiki/algebraic-geometry/sheaves/index.md
+  - [x] wiki/algebraic-geometry/sheaves/index.md
   - [ ] wiki/algebraic-geometry/sheaves/stalks-and-exactness.md
   - [ ] wiki/algebraic-geometry/sheaves/the-sheaf-condition.md
   - [ ] wiki/algebraic-geometry/stacks-and-moduli/functors-and-topologies.md
