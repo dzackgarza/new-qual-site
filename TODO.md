@@ -779,7 +779,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/resources/problems.md
   - [x] wiki/algebra/resources/representations.md
   - [x] wiki/algebra/resources/rings-and-ideals.md
-  - [ ] wiki/algebra/resources/solutions-algebra.md
+  - [x] wiki/algebra/resources/solutions-algebra.md
   - [ ] wiki/algebra/resources/syllabus.md
   - [ ] wiki/algebra/review.md
   - [ ] wiki/algebra/rings-and-ideals/commutative-algebra.md
