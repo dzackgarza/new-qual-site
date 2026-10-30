@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAF06B
 kind: problem
-title: Unique factorization $A=UH$ with orthonormal columns and Hermitian positive semidefinite $H$
+title: Polar decomposition $A = UH$ of an $m \times n$ matrix with $m \geq n$
 classification:
   areas:
   - applied-algebra
@@ -15,10 +15,14 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The exam asks for a unique U in all cases, which is false when rank A < n (U is then free on ker A); the statement now asserts uniqueness of U only for rank n, which the solution proves.
 ---
 
 ::: {.problem}
-Given $A \in M_{m,n}$ with $m \geq n$, prove that there exists a unique $U \in M_{m,n}$ with orthonormal columns, and a unique Hermitian positive semidefinite $H \in M_n$ such that $A = UH$.
+Given $A \in M_{m,n}$ with $m \geq n$, prove that there exist $U \in M_{m,n}$ with orthonormal columns and a unique Hermitian positive semidefinite $H \in M_n$ such that $A = UH$, and that $U$ is unique when $A$ has rank $n$.
 
 (State in detail any auxiliary results that you use.)
 :::
