@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/MATH-290A-Exam-Fall-2019.pdf
+- assets/attachments/MATH-290A-Exam-Fall-2019.pdf
 source:
   source_kind: university-exam
   institution: ucsd

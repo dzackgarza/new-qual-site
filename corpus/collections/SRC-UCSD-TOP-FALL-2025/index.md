@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/FA25%20-%20Topology%20Qualifying%20Exam.pdf
+- assets/attachments/FA25_-_Topology_Qualifying_Exam.pdf
 source:
   source_kind: university-exam
   institution: ucsd

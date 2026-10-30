@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/TOPOLOGY-EXAM.pdf",
+  "source_pdf_sha256": "744267e12155f02c8532a9c55a29ee56f8d122604b84b6740bd7bee042a185ac",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/TOPOLOGY-EXAM.pdf",
+  "extracted_markdown": "assets/attachments/TOPOLOGY-EXAM_extracted.md",
+  "extracted_markdown_sha256": "62d1c009640c523d06451c677bd78e0e82e012fa9c5de5d61b94c73554822c1b",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/TOPOLOGY-EXAM.pdf --language en",
+  "generated_at": "2026-10-30"
+}

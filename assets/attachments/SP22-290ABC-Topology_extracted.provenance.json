@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/SP22-290ABC-Topology.pdf",
+  "source_pdf_sha256": "db5011473f209c6f194313d4e06084be440e8bab7a6215f13b635ce370bb06c9",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/SP22-290ABC-Topology.pdf",
+  "extracted_markdown": "assets/attachments/SP22-290ABC-Topology_extracted.md",
+  "extracted_markdown_sha256": "9efa38b4d7ab3475156fb4cc3bd5126d38d2f06301e558c00d75c10e1a9811dd",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/SP22-290ABC-Topology.pdf --language en",
+  "generated_at": "2026-10-30"
+}

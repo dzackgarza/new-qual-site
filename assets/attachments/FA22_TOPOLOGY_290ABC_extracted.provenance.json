@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/FA22_TOPOLOGY_290ABC.pdf",
+  "source_pdf_sha256": "e419af31bf0f6b9aa0651a985be69bbb732ab033b4d5ca565fb1f44385d011f1",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/FA22_TOPOLOGY_290ABC.pdf",
+  "extracted_markdown": "assets/attachments/FA22_TOPOLOGY_290ABC_extracted.md",
+  "extracted_markdown_sha256": "ec2b7e4c68b67053d097642dd6584cb3a2078461b53e2e21cb40662b200f577f",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/FA22_TOPOLOGY_290ABC.pdf --language en",
+  "generated_at": "2026-10-30"
+}

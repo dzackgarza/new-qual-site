@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Topology_qualifying_exam_Fall_2020.pdf",
+  "source_pdf_sha256": "4bdfb273b0d00a92baf893efd5b5e9763bcb46f68dd7e35430a077ce5c1d9fa2",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/Topology_qualifying_exam_Fall_2020.pdf",
+  "extracted_markdown": "assets/attachments/Topology_qualifying_exam_Fall_2020_extracted.md",
+  "extracted_markdown_sha256": "a7f049b8bd421198dd295a1ed3664ffbfbcbb91bbc56763af4ca50fc69427c88",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Topology_qualifying_exam_Fall_2020.pdf --language en",
+  "generated_at": "2026-10-30"
+}

@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/MATH-290A-Exam-Fall-2019.pdf",
+  "source_pdf_sha256": "bc8bd1c22a84488c075da0c026b12a0b06ac35d144a13bdcf1655e11ae512ab8",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/MATH-290A-Exam-Fall-2019.pdf",
+  "extracted_markdown": "assets/attachments/MATH-290A-Exam-Fall-2019_extracted.md",
+  "extracted_markdown_sha256": "2e398b09fb9c452568839aad9367a0efd98330222d3d0f8cd1d6fac1cb907716",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/MATH-290A-Exam-Fall-2019.pdf --language en",
+  "generated_at": "2026-10-30"
+}

@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/FA25_-_Topology_Qualifying_Exam.pdf",
+  "source_pdf_sha256": "8393d176eb4473a471c8b7d67bd79118808704e350800a790027d8f9adc258a9",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/FA25%20-%20Topology%20Qualifying%20Exam.pdf",
+  "extracted_markdown": "assets/attachments/FA25_-_Topology_Qualifying_Exam_extracted.md",
+  "extracted_markdown_sha256": "f33a14e0f5babe979604e2c93b5315b2628e143fe40bc2218b7f77dabf38519d",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/FA25_-_Topology_Qualifying_Exam.pdf --language en",
+  "generated_at": "2026-10-30"
+}

@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/FA22_TOPOLOGY_290ABC.pdf
+- assets/attachments/FA22_TOPOLOGY_290ABC.pdf
 source:
   source_kind: university-exam
   institution: ucsd

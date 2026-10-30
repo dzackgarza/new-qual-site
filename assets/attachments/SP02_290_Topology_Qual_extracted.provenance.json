@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/SP02_290_Topology_Qual.pdf",
+  "source_pdf_sha256": "f0e987b204f5e9fd5b221a45b7665172ed631f3c99baf814148c61b7f612d430",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/SP02_290_Topology_Qual.pdf",
+  "extracted_markdown": "assets/attachments/SP02_290_Topology_Qual_extracted.md",
+  "extracted_markdown_sha256": "44257e40d5e1d666c9630c656ff9b48e9cd136244ce66290a5b36a95140a6f9f",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/SP02_290_Topology_Qual.pdf --language en",
+  "generated_at": "2026-10-30"
+}

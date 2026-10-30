@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/290qualF23.pdf
+- assets/attachments/290qualF23.pdf
 source:
   source_kind: university-exam
   institution: ucsd
