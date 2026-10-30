@@ -26,8 +26,7 @@ audit:
 ::: {.problem}
 Let $f$ be a non-negative Lebesgue measurable function on $[1, \infty)$.
 
-a.
-Prove that
+(a) Prove that
 $$  
 1 \leq \qty{
 {1 \over b-a} \int_a^b f(x) \,dx
@@ -37,8 +36,7 @@ $$
 $$
 for any $1\leq a < b <\infty$.
 
-b.
-Prove that if $f$ satisfies
+(b) Prove that if $f$ satisfies
 $$  
 \int_1^t f(x) \, dx \leq t^2 \log(t)
 $$
