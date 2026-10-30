@@ -771,7 +771,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/representations/index.md
   - [x] wiki/algebra/representations/maschke-and-schur.md
   - [x] wiki/algebra/resources/books-notes.md
-  - [ ] wiki/algebra/resources/external.md
+  - [x] wiki/algebra/resources/external.md
   - [ ] wiki/algebra/resources/fields.md
   - [ ] wiki/algebra/resources/groups.md
   - [ ] wiki/algebra/resources/index.md
