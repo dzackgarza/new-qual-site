@@ -15,11 +15,6 @@ This page collects the theorems on the values a holomorphic function takes on a 
 
 [[T-C5VEI]]
 
-::: {.slogan}
-The image of a punctured disc at an essential singularity is dense in $\CC$.
-
-:::
-
 ## Picard
 
 Picard's theorems replace density of the image by omission of at most one value of $\CC$.
