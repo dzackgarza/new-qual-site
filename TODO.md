@@ -754,7 +754,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/index.md
   - [x] wiki/algebra/linear-algebra/determinants-and-eigenvalues.md
   - [x] wiki/algebra/linear-algebra/find-the-canonical-form.md
-  - [ ] wiki/algebra/linear-algebra/index.md
+  - [x] wiki/algebra/linear-algebra/index.md
   - [ ] wiki/algebra/linear-algebra/jordan-canonical-form.md
   - [ ] wiki/algebra/linear-algebra/matrix-counterexamples.md
   - [ ] wiki/algebra/linear-algebra/minimal-and-characteristic-polynomials.md
