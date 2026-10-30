@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS80-1
 kind: problem
 title: Fourier series and pointwise sum of the periodic sawtooth
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:
@@ -24,12 +24,14 @@ audit:
 ::: {.problem}
 Let $f:\RR\to\RR$ be the $2\pi$-periodic function satisfying $f(x)=x$ for $-\pi\le x<\pi$.
 
-1. Prove that its Fourier series is
-   $$
-   \sum_{n=1}^{\infty}\frac{2(-1)^{n+1}\sin(nx)}{n}.
-   $$
-2. Prove that this series does not converge uniformly.
-3. For each $x\in\RR$, find the sum of the series.
+(a) Prove that its Fourier series is
+$$
+\sum_{n=1}^{\infty}\frac{2(-1)^{n+1}\sin(nx)}{n}.
+$$
+
+(b) Prove that this series does not converge uniformly.
+
+(c) For each $x\in\RR$, find the sum of the series.
 :::
 
 ::: {.solution}
@@ -232,8 +234,8 @@ Combine this with step [](#s5){.pf-ref}.
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} proves part (1), step [](#s4){.pf-ref} proves part (2), and step [](#s6){.pf-ref}
-answers part (3).
+Step [](#s2){.pf-ref} proves part (a), step [](#s4){.pf-ref} proves part (b), and step [](#s6){.pf-ref}
+answers part (c).
 
 :::
 

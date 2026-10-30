@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS80-7
 kind: problem
 title: If $2^n+n^2$ is prime then $n\equiv3\pmod6$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

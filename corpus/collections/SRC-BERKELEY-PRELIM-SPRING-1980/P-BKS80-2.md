@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS80-2
 kind: problem
 title: Pointwise limits of uniformly Lipschitz functions are continuous
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

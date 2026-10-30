@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS80-5
 kind: problem
 title: A coefficient inequality forces a holomorphic disk function to be injective
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

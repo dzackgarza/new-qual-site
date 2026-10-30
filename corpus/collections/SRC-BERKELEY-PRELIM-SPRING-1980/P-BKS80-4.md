@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS80-4
 kind: problem
 title: A contour integral as the radius crosses a pole
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

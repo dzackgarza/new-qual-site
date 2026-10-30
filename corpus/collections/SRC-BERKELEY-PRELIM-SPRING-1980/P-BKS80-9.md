@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS80-9
 kind: problem
 title: Centralizer of an explicit real $2\times2$ matrix
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

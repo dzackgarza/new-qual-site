@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS80-3
 kind: problem
 title: Minimal $L^2$ norm of a quadratic polynomial with prescribed endpoint value
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

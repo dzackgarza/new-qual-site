@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS80-8
 kind: problem
 title: Four assertions about diagonalizable matrices
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:
@@ -23,10 +23,13 @@ audit:
 ::: {.problem}
 Let $A,B$ be complex $n\times n$ matrices. Prove or disprove each assertion:
 
-1. If $A$ and $B$ are diagonalizable, then $A+B$ is diagonalizable.
-2. If $A$ and $B$ are diagonalizable, then $AB$ is diagonalizable.
-3. If $A^2=A$, then $A$ is diagonalizable.
-4. If $A$ is invertible and $A^2$ is diagonalizable, then $A$ is diagonalizable.
+(a) If $A$ and $B$ are diagonalizable, then $A+B$ is diagonalizable.
+
+(b) If $A$ and $B$ are diagonalizable, then $AB$ is diagonalizable.
+
+(c) If $A^2=A$, then $A$ is diagonalizable.
+
+(d) If $A$ is invertible and $A^2$ is diagonalizable, then $A$ is diagonalizable.
 :::
 
 ::: {.solution}
@@ -35,7 +38,7 @@ Let $A,B$ be complex $n\times n$ matrices. Prove or disprove each assertion:
 
 ::: {.pf-step #s1}
 
-Assertion (1) is false.
+Assertion (a) is false.
 
 ::: pf-proof
 
@@ -72,7 +75,7 @@ Its $1$-eigenspace is one-dimensional, so it is not diagonalizable.
 
 ::: {.pf-step #s2}
 
-Assertion (2) is false.
+Assertion (b) is false.
 
 ::: pf-proof
 
@@ -108,7 +111,7 @@ which is the same nondiagonalizable Jordan block as in step [](#s1){.pf-ref}.
 
 ::: {.pf-step #s3}
 
-Assertion (3) is true.
+Assertion (c) is true.
 
 ::: pf-proof
 
@@ -188,7 +191,7 @@ because $\mu\ne0$. Thus the restriction is diagonalizable.
 
 ::: {.pf-step #s6}
 
-Assertion (4) is true.
+Assertion (d) is true.
 
 ::: pf-proof
 
@@ -212,10 +215,10 @@ diagonalizable.
 Therefore the answers are
 $$
 \boxed{
-(1)\ \text{false},\qquad
-(2)\ \text{false},\qquad
-(3)\ \text{true},\qquad
-(4)\ \text{true}.
+(a)\ \text{false},\qquad
+(b)\ \text{false},\qquad
+(c)\ \text{true},\qquad
+(d)\ \text{true}.
 }
 $$
 

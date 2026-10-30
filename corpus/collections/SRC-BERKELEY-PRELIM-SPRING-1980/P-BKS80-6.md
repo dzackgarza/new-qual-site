@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS80-6
 kind: problem
 title: Coset action under a small-index factorial bound
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:
@@ -32,6 +32,10 @@ $$
 (n/m)!<2n.
 $$
 Prove that $G$ has a proper nontrivial normal subgroup.
+:::
+
+::: {.remark}
+The exam does not require $n>2$. Without it the statement fails: $G=C_2$ and $H=\{e\}$ give $(n/m)!=2<4$, and $C_2$ has no proper nontrivial subgroup.
 :::
 
 ::: {.solution}
