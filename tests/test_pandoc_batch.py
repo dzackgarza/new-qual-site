@@ -146,4 +146,4 @@ def test_corporate_author_citation_renders_its_label() -> None:
     with PandocServer() as pandoc:
         (result,) = pandoc.read_markdown(["See [@Har07].\n"], model.MARKDOWN, model.load_citations(model.VOCABULARIES))
     text = json.dumps(json.loads(result.output)["blocks"][0])
-    assert '"[Har07]"' in text
+    assert '"Har07"' in text

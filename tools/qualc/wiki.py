@@ -12,6 +12,7 @@ from __future__ import annotations
 import posixpath
 import re
 import sys
+from collections.abc import Callable
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
@@ -28,7 +29,6 @@ from .model import (
     drop_citeproc_metadata,
     drop_path_captions,
     from_ast,
-    load_citations,
     load_front_matter,
     reject_extraction_residue,
     to_json,
@@ -529,59 +529,47 @@ def _page_target(
     raise MissingPageReference(raw)
 
 
-# A citation is still a `Cite` at this point, carrying the bib keys it names;
-# the `<span class="citation">` is what the HTML writer makes of it later. The
-# textbook collection cards are keyed on the same string, uppercased, so the
-# reference reaches its card without a lookup table.
+# A citation is still a `Cite` at this point. citeproc ran with
+# `link-citations`, so every key a citation names, each key of
+# `[@Hat02; @Mun00]` included, is its own `Link` to `#ref-<key>` inside the
+# `Cite`. The textbook collection cards are keyed on the same string,
+# uppercased; a key with no textbook card goes to its entry on the site
+# bibliography page, which carries the same `ref-<key>` anchors.
 TEXTBOOK_CARD = "SRC-TEXT-{}"
+BIBLIOGRAPHY_PAGE = "bibliography.html"
+CITATION_ANCHOR = "#ref-"
 
 
-def link_citations(pages: list[WikiPage], card_routes: dict[str, Path]) -> int:
-    """Point every citation at the collection card for the work it cites.
-
-    A citation rendered as `[DuFo04]` and stopped there; the reader had no way
-    from the reference to the book. A key with no collection card is left as it is
-    rather than linked into nothing.
-    """
-    linked = 0
-
-    def visit(element: pf.Element, doc: pf.Doc) -> pf.Element:
-        nonlocal linked
+def _cited_work_links(
+    card_target: Callable[[str], str | None],
+) -> Callable[[pf.Element, pf.Doc], None]:
+    def visit(element: pf.Element, doc: pf.Doc) -> None:
         del doc
-        if not isinstance(element, pf.Cite) or len(element.citations) != 1:
-            return element
-        card = TEXTBOOK_CARD.format(element.citations[0].id.upper())
-        if card not in card_routes:
-            return element
-        linked += 1
-        return pf.Link(
-            *cast(list[pf.Inline], element.content),
-            url=card_routes[card].as_posix(),
-        )
+        if not isinstance(element, pf.Link) or not isinstance(element.parent, pf.Cite):
+            return
+        if not element.url.startswith(CITATION_ANCHOR):
+            return
+        key = element.url.removeprefix(CITATION_ANCHOR)
+        element.url = card_target(TEXTBOOK_CARD.format(key.upper())) or BIBLIOGRAPHY_PAGE + element.url
 
+    return visit
+
+
+def link_citations(pages: list[WikiPage], card_routes: dict[str, Path]) -> None:
+    """Point every cited key on a wiki page at its textbook card or bibliography entry."""
+    visit = _cited_work_links(lambda card: card_routes[card].as_posix() if card in card_routes else None)
     for page in pages:
         page.blocks = list(pf.Doc(*page.blocks).walk(visit).content)
-    return linked
 
 
 def link_card_citations(ast: str, card_routes: dict[str, Path]) -> str:
-    """A card body with each single-work citation linked to that work's textbook card.
+    """A card body with every cited key linked to its textbook card or bibliography entry.
 
     Card bodies drop citeproc's reference list (a transcluded card must not
     repeat one), so the link is the reader's only way from `[DuFo04]` to the
-    book. The link names the card id, which resolves like any card wikilink.
+    book. A card link names the card id, which resolves like any card wikilink.
     """
-
-    def visit(element: pf.Element, doc: pf.Doc) -> pf.Element:
-        del doc
-        if not isinstance(element, pf.Cite) or len(element.citations) != 1:
-            return element
-        card = TEXTBOOK_CARD.format(element.citations[0].id.upper())
-        if card not in card_routes:
-            return element
-        return pf.Link(*cast(list[pf.Inline], element.content), url=card)
-
-    return to_json(from_ast(ast).walk(visit))
+    return to_json(from_ast(ast).walk(_cited_work_links(lambda card: card if card in card_routes else None)))
 
 
 def _asset_target(raw: str, assets: AssetCatalog) -> Path:
@@ -594,7 +582,7 @@ def _asset_target(raw: str, assets: AssetCatalog) -> Path:
 # name as a missing wiki page and fails the build. Written site-root-relative,
 # which is the form `write_page` turns into a URL from wherever the page sits.
 # `index.html` is not here: the wiki has one of its own.
-SITE_PAGES = frozenset({"problems.html", "generate.html", "sources.html", "guides.html"})
+SITE_PAGES = frozenset({"problems.html", "generate.html", "sources.html", "guides.html", BIBLIOGRAPHY_PAGE})
 
 
 def _canonical_target(

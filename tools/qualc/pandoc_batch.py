@@ -41,6 +41,12 @@ class Citations:
     style: str
 
 
+# The server accepts no `metadata` option, so `link-citations` travels as a
+# metadata block ahead of the text; Pandoc merges it with any block the text
+# carries. With it, citeproc makes every key of a citation its own link.
+LINK_CITATIONS = "---\nlink-citations: true\n---\n\n"
+
+
 @dataclass(frozen=True)
 class PandocMessage:
     message: str
@@ -271,10 +277,14 @@ class PandocServer:
         if citations is not None:
             files["references.yaml"] = base64.b64encode(citations.bibliography.encode()).decode()
             files["style.csl"] = base64.b64encode(citations.style.encode()).decode()
-            citeproc = {"citeproc": True, "bibliography": ["references.yaml"], "csl": "style.csl"}
+            citeproc = {
+                "citeproc": True,
+                "bibliography": ["references.yaml"],
+                "csl": "style.csl",
+            }
         requests = [
             {
-                "text": text,
+                "text": LINK_CITATIONS + text if citations is not None else text,
                 "from": markdown_format,
                 "to": "json",
                 "standalone": True,
@@ -320,7 +330,16 @@ class PandocServer:
         return self._convert(requests)
 
     def write_plain(self, documents: list[str]) -> list[PandocResult]:
-        requests = [{"text": document, "from": "json", "to": "plain", "standalone": False, "wrap": "none"} for document in documents]
+        requests = [
+            {
+                "text": document,
+                "from": "json",
+                "to": "plain",
+                "standalone": False,
+                "wrap": "none",
+            }
+            for document in documents
+        ]
         return self._convert(requests)
 
     def _convert(self, requests: list[dict[str, object]]) -> list[PandocResult]:

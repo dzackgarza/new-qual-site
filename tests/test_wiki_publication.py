@@ -585,7 +585,7 @@ def test_a_block_title_is_read_like_the_body(wiki_site: Path) -> None:
     qualifier = page.split('<div class="qual-section-qualifier">', 1)[1].split("</div>", 1)[0]
     assert "Arzelà–Ascoli" in qualifier
     assert "[@" not in qualifier
-    assert "[DuFo04]" in qualifier
+    assert "DuFo04</a>]" in qualifier
     # A title opening with an ordered-list marker is still one inline qualifier.
     assert '<div class="qual-section-qualifier">\n((ii) implies (vii))\n</div>' in page
 

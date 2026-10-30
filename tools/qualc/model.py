@@ -1076,7 +1076,7 @@ def drop_bibliography(element: pf.Element, document: pf.Doc) -> list[pf.Block] |
 # Pandoc records the citeproc request in the document's metadata, so a page's
 # stringified text ends `references.yamlstyle.csl` and every page in the search
 # index matches a search for either name. They describe the request, not the page.
-CITEPROC_METADATA = ("bibliography", "csl")
+CITEPROC_METADATA = ("bibliography", "csl", "link-citations")
 
 
 def drop_citeproc_metadata(document: pf.Doc) -> pf.Doc:

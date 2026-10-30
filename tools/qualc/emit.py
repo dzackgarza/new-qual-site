@@ -37,7 +37,9 @@ from .model import (
     DIV_CLASS_TO_KIND,
     MARKDOWN,
     TERMS_IN_YEAR_ORDER,
+    VOCABULARIES,
     from_ast,
+    load_citations,
     mark_list_delimiters,
     to_json,
     typeset_dashes,
@@ -87,6 +89,7 @@ from .static_site import (
 )
 from .tex import mark_definienda
 from .wiki import (
+    BIBLIOGRAPHY_PAGE,
     SITE_PAGES,
     WIKI_BATCH_SIZE,
     WikiPage,
@@ -124,6 +127,20 @@ def _successful_outputs(
             raise ValueError(f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}")
         outputs.append(result.output)
     return outputs
+
+
+def bibliography_html(pandoc: PandocServer) -> str:
+    """Every work in the bibliography, each entry anchored `ref-<key>`.
+
+    A citation whose work has no textbook collection links here, so every key
+    the corpus cites reaches a reader-facing entry (CITE-1).
+    """
+    (document,) = _successful_outputs(
+        pandoc.read_markdown(["---\nnocite: '@*'\n---\n"], MARKDOWN, load_citations(VOCABULARIES)),
+        "bibliography read",
+    )
+    (body,) = _successful_html_outputs(pandoc.write_html([document]), "bibliography HTML write")
+    return body
 
 
 def _successful_html_outputs(
@@ -1283,7 +1300,11 @@ def _listing_sort(data: CardPageData, card: sqlite3.Row) -> str:
     before `algebraic-geometry`, and a card with a second area follows the
     single-area cards of its first area.
     """
-    fields = [*_page_terms(data, card["id"], "area"), "1" if card["title"].startswith("$") else "0", card["title"]]
+    fields = [
+        *_page_terms(data, card["id"], "area"),
+        "1" if card["title"].startswith("$") else "0",
+        card["title"],
+    ]
     return "\t".join(fields)
 
 
@@ -1580,7 +1601,14 @@ def _collection_source_links(repo_root: Path, provenance: list[str]) -> list[dic
         if key in seen:
             return
         seen.add(key)
-        links.append({"href": href, "kind": kind, "label": f"{document}: {label}", "document": document})
+        links.append(
+            {
+                "href": href,
+                "kind": kind,
+                "label": f"{document}: {label}",
+                "document": document,
+            }
+        )
 
     for href in provenance:
         path = Path(unquote(urlsplit(href).path))
@@ -1642,7 +1670,14 @@ def _collection_listing(
             )
         ]
         if row["comment"]:
-            inlines.extend((pf.Space(), pf.Str("—"), pf.Space(), *_inlines(row["comment"], inline_cache)))
+            inlines.extend(
+                (
+                    pf.Space(),
+                    pf.Str("—"),
+                    pf.Space(),
+                    *_inlines(row["comment"], inline_cache),
+                )
+            )
         return pf.ListItem(pf.Plain(*inlines))
 
     blocks: list[pf.Block] = []
@@ -2538,7 +2573,13 @@ def project(
             "select distinct section_name from collection_problems where section_name is not null",
         )
     )
-    inline_values.extend(row["comment"] for row in _rows(con, "select distinct comment from collection_problems where comment is not null"))
+    inline_values.extend(
+        row["comment"]
+        for row in _rows(
+            con,
+            "select distinct comment from collection_problems where comment is not null",
+        )
+    )
     inline_cache = build_inline_cache(pandoc, inline_values)
 
     jcache, api = load_json(con)
@@ -2650,7 +2691,14 @@ def project(
         kind, worked, order = collection_facts.get(src["id"], ("", "", ""))
         pages.append(
             (
-                collection_page(con, src, inline_cache, site.parent, area_names, counts.get(src["id"], (0, 0))[0]),
+                collection_page(
+                    con,
+                    src,
+                    inline_cache,
+                    site.parent,
+                    area_names,
+                    counts.get(src["id"], (0, 0))[0],
+                ),
                 out / src["route"] / f"{src['id']}.qmd",
                 StandardPage(
                     SearchDocument(
@@ -2687,6 +2735,18 @@ Random practice sets are drawn in the [problem browser](problems.html).
         Path("generate.html"),
         {"title": "Practice problems"},
         generate_html,
+        mathjax,
+        link_targets,
+        assets,
+        StandardPage(Listing()),
+        area_names,
+    )
+
+    write_page(
+        site_root,
+        Path(BIBLIOGRAPHY_PAGE),
+        {"title": "Bibliography"},
+        bibliography_html(pandoc),
         mathjax,
         link_targets,
         assets,

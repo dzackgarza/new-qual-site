@@ -606,9 +606,9 @@ mathematical correction under its own node, not under copy policy.
   - **`ad5-topology-algebra`**. **Needs:** none.
     - [x] T-N6PYS: link text "topological embedding" targets D-9KQZT (Homeomorphism); target
       D-BCNUH.
-    - [ ] `[Lee13]` (T-N6PYS twice, D-UBWVX) and `[Munk84]` (D-RU2GC) render unlinked: no
+    - [x] `[Lee13]` (T-N6PYS twice, D-UBWVX) and `[Munk84]` (D-RU2GC) render unlinked: no
       textbook collection or bibliography entry resolves them (CITE-1).
-    - [ ] Renderer: a citation with several keys (`[@Hat02; @Mun00]`, D-J6XOC, D-Z7I7F)
+    - [x] Renderer: a citation with several keys (`[@Hat02; @Mun00]`, D-J6XOC, D-Z7I7F)
       renders as unlinked text; each key must link like a single-key citation.
     - [ ] CARD-04: T-3X5FF and T-S5T5C both state Sylow's third theorem; merge, keep the
       T-3X5FF proof and the $n_p \le m$ remark, repoint L-WROBY.
@@ -636,7 +636,7 @@ mathematical correction under its own node, not under copy policy.
   - **`ad5-analysis`**. **Needs:** none.
     - [ ] PR-L35O7, case $p=\infty$: the exceptional set omits
       $\{\abs{f_{n_1}} > \norm{f_{n_1}}_\infty\}$, so "bounded" does not follow; add it.
-    - [ ] Renderer and CITE-1: a citation links only when a `SRC-TEXT-<key>` collection exists.
+    - [x] Renderer and CITE-1: a citation links only when a `SRC-TEXT-<key>` collection exists.
       [Foll13] (13 uses; the collection is SRC-TEXT-FOL99, a different edition), [Apos74],
       [Abbo16], [Ahlf79], [Har07], [Gath21], [PiAr12], [Lee13], [Munk84] render unlinked, and
       the site has no bibliography page. Every citation must resolve to a reader-facing target.
