@@ -77,7 +77,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-ALG-ART-HEACCB
   - [x] SRC-ALG-ART-PSET5-QUALS
   - [x] SRC-ALG-ART-QHGA3N
-  - [ ] SRC-ALG-ART-SEPT2019
+  - [x] SRC-ALG-ART-SEPT2019
   - [ ] SRC-ALG-QUAL-WINTER-2018
   - [ ] SRC-ALGEBRA-COMP-FALL-2003
   - [ ] SRC-ALGEBRA-FINAL-2011-SOLUTIONS
