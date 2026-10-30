@@ -874,7 +874,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/archives/solution-compendia.md
   - [x] wiki/archives/topics.md
   - [x] wiki/complex-analysis/appendices/appendix-fta-proofs.md
-  - [ ] wiki/complex-analysis/appendices/appendix-unsorted.md
+  - [x] wiki/complex-analysis/appendices/appendix-unsorted.md
   - [ ] wiki/complex-analysis/appendices/gauss-lucas-theorem.md
   - [ ] wiki/complex-analysis/appendices/index.md
   - [ ] wiki/complex-analysis/appendices/pdes.md
