@@ -96,9 +96,11 @@ Apply the Künneth Theorem $H_n(X \times Y) \cong \bigoplus_{i+j=n} (H_i \otimes
 
 - $n = 2$: $H_0 \otimes H_2 \cong \ZZ \otimes \ZZ_4 \cong \ZZ_4$.
 
-- $n = 3$: $(H_1 \otimes H_2) \oplus \operatorname{Tor}_1^{\ZZ}(H_1, H_2) \cong (\ZZ_2 \otimes \ZZ_4) \oplus \operatorname{Tor}(\ZZ_2, \ZZ_4) \cong \ZZ_2 \oplus \ZZ_2$.
+- $n = 3$: $H_1 \otimes H_2 \cong \ZZ_2 \otimes \ZZ_4 \cong \ZZ_2$; the $\operatorname{Tor}$ terms with $i+j=2$ vanish because one factor is free or zero.
 
-- $n \ge 4$: $H_n = 0$.
+- $n = 4$: no tensor term survives, and $\operatorname{Tor}_1^{\ZZ}(H_1, H_2) \cong \operatorname{Tor}(\ZZ_2, \ZZ_4) \cong \ZZ_2$ ($i+j=3$).
+
+- $n \ge 5$: $H_n = 0$.
 
 ::: pf-proof
 Künneth Theorem for integral homology.
@@ -167,9 +169,11 @@ By the Universal Coefficient Theorem for cohomology, $H^n(X; \ZZ) \cong \operato
 
 - $n = 3$: $\operatorname{Free}(H_3) \oplus \operatorname{Tors}(H_2) = 0 \oplus \ZZ_4 \cong \ZZ_4$.
 
-- $n = 4$: $\operatorname{Free}(H_4) \oplus \operatorname{Tors}(H_3) = 0 \oplus (\ZZ_2 \oplus \ZZ_2) \cong \ZZ_2 \oplus \ZZ_2$.
+- $n = 4$: $\operatorname{Free}(H_4) \oplus \operatorname{Tors}(H_3) = 0 \oplus \ZZ_2 \cong \ZZ_2$.
 
-- $n \ge 5$: $H^n = 0$.
+- $n = 5$: $\operatorname{Free}(H_5) \oplus \operatorname{Tors}(H_4) = 0 \oplus \ZZ_2 \cong \ZZ_2$.
+
+- $n \ge 6$: $H^n = 0$.
 
 ::: pf-proof
 UCT for cohomology with coefficients in $\ZZ$.
