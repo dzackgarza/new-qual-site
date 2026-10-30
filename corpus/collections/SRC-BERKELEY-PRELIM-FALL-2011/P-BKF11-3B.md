@@ -5,7 +5,8 @@ kind: problem
 title: The automorphism group of the unit disk acts transitively
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
