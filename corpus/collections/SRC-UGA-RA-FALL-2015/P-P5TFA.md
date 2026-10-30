@@ -26,14 +26,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $f: [1, \infty) \to \RR$ such that $f(1) = 1$ and
+Let $f: [1, \infty) \to \RR$ satisfy $f(1) = 1$ and
 $$
-f^{\prime}(x)= \frac{1} {x^{2}+f(x)^{2}}
+f^{\prime}(x)= \frac{1} {x^{2}+f(x)^{2}}.
 $$
-
-Show that the following limit exists and satisfies the equality
+Prove that $\lim_{x \to \infty} f(x)$ exists and that
 $$
-\lim _{x \rightarrow \infty} f(x) \leq 1 + \frac \pi 4
+\lim _{x \rightarrow \infty} f(x) \leq 1 + \frac \pi 4.
 $$
 :::
 

@@ -27,16 +27,16 @@ audit:
 ::: {.problem}
 Let $f: \RR \to \RR$ be Lebesgue measurable.
 
-1. Show that there is a sequence of simple functions $s_n(x)$ such that $s_n(x) \to f(x)$ for all $x\in \RR$.
+(a) Show that there is a sequence of simple functions $s_n(x)$ such that $s_n(x) \to f(x)$ for all $x\in \RR$.
 
-2. Show that there is a Borel measurable function $g$ such that $g = f$ almost everywhere.
+(b) Show that there is a Borel measurable function $g$ such that $g = f$ almost everywhere.
 :::
 ::: {.solution}
 
 ::: pf
 
 ::: {.pf-step #s1}
-(Part 1) Reduce to non-negative functions.
+(Part (a)) Reduce to non-negative functions.
 
 ::: pf-proof
 write $f = f^+ - f^-$; if $s_n^+ \to f^+$ and $s_n^- \to f^-$ pointwise with simple $s_n^\pm$, then $s_n = s_n^+ - s_n^-$ is simple and $s_n \to f$ pointwise.
@@ -49,13 +49,13 @@ Construct simple approximations of a non-negative measurable $g$.
 
 ::: pf-proof
 the standard dyadic truncations $$ s_n(x) = \sum_{k=0}^{n2^n - 1} \frac{k}{2^n}\chi_{\{k/2^n \le g < (k+1)/2^n\}}(x) + n \chi_{\{g \ge n\}}(x) $$ are simple, $0 \le s_n \le g$, and $s_n(x) \nearrow g(x)$ for every $x$: indeed $g(x) - s_n(x) \le 2^{-n}$ when $g(x) \le n$, and $s_n(x) = n$ when $g(x) > n$.
-Applying this to $g=f^+$ and $g=f^-$ and using step [](#s1){.pf-ref} proves part (1).
+Applying this to $g=f^+$ and $g=f^-$ and using step [](#s1){.pf-ref} proves part (a).
 :::
 
 :::
 
 ::: {.pf-step #s3}
-Reduce part (2) to indicator functions.
+Reduce part (b) to indicator functions.
 
 ::: pf-proof
 every measurable function is a pointwise limit of simple functions (step [](#s2){.pf-ref}), and a pointwise limit of Borel measurable functions is Borel measurable; so it suffices to show that $\chi_E$ agrees a.e. with a Borel function for every Lebesgue measurable $E \subseteq \RR$.
@@ -74,7 +74,7 @@ Then $\chi_E = \chi_B$ on $\RR \setminus N$, i.e. almost everywhere, and $\chi_B
 :::
 
 ::: pf-step
-Conclude part (2).
+Conclude part (b).
 
 ::: pf-proof
 By step [](#s3){.pf-ref} and step [](#s4){.pf-ref}, the simple approximants can be replaced almost everywhere by Borel simple functions. Taking the corresponding pointwise limit gives a Borel measurable function $g$ with $g=f$ almost everywhere.

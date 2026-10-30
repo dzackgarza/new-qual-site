@@ -26,13 +26,15 @@ audit:
 ::: {.problem}
 Let $f, g \in L^1(\RR)$ be Borel measurable.
 
-- Show that 
-  - The function $$F(x, y) \coloneqq f(x-y) g(y)$$ is Borel measurable on $\RR^2$, and
-  - For almost every $x\in \RR$, the function $f(x-y)g(y)$ is integrable with respect to $y$ on $\RR$.
-
-- Show that $f\ast g \in L^1(\RR)$ and
+(a) Show that the function
 $$
-\norm{f * g}_{1} \leq \norm{f}_{1} \norm{g}_{1}
+F(x, y) \coloneqq f(x-y) g(y)
+$$
+is Borel measurable on $\RR^2$, and that for almost every $x\in \RR$ the function $y\mapsto f(x-y)g(y)$ is integrable on $\RR$.
+
+(b) Define $(f\ast g)(x)=\int_\RR f(x-y)g(y)\,dy$. Show that $f\ast g \in L^1(\RR)$ and
+$$
+\norm{f * g}_{1} \leq \norm{f}_{1} \norm{g}_{1}.
 $$
 :::
 
