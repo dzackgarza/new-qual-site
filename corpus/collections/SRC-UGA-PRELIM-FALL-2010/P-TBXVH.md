@@ -21,8 +21,9 @@ audit:
 ::: {.problem}
 Suppose $f: \RR \to \RR$.
 
-a. Give the $\delta$-$\varepsilon$ definition of $\lim_{x \to a} f(x) = \ell$.
-b. Determine the limit and use the definition to prove your answer: $$\lim_{x \to 2} \frac{2x+1}{x^2+1} = ?$$
+(a) Give the $\delta$-$\varepsilon$ definition of $\lim_{x \to a} f(x) = \ell$.
+
+(b) Determine the limit and use the definition to prove your answer: $$\lim_{x \to 2} \frac{2x+1}{x^2+1} = ?$$
 :::
 
 ::: {.solution}
