@@ -6,7 +6,8 @@ title: Linear functionals on $M_n(k)$ with $f(AB)=f(BA)$ are multiples of the tr
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

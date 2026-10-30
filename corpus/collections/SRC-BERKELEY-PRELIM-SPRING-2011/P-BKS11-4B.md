@@ -6,7 +6,8 @@ title: Convergence of the matrix series $\sum x^nA^n$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

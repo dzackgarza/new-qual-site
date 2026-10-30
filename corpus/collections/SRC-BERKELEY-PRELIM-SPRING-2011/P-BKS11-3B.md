@@ -6,7 +6,8 @@ title: Infinitely many solutions of $e^z=z$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

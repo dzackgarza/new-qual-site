@@ -6,7 +6,8 @@ title: Diagonalizability of real, complex, and symmetric matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

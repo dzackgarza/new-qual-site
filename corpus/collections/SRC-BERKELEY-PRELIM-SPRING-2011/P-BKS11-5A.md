@@ -6,7 +6,8 @@ title: Smoothness and Taylor series of $e^{-1/x^2}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

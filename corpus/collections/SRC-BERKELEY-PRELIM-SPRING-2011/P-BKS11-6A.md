@@ -6,7 +6,8 @@ title: Exponent of $(\ZZ/N\ZZ)^\times$ for $N=2^4\cdot 3^3\cdot 5^2\cdot 7$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

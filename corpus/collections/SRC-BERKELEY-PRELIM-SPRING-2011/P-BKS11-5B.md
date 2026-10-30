@@ -6,7 +6,8 @@ title: Wallis integrals $\int_0^\pi\sin^n x\,dx$ and the Wallis product
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -24,6 +25,7 @@ audit:
 ---
 
 ::: {.problem}
+
 (a) Evaluate $I(n) = \int_{0}^{\pi} \sin(x)^{n}\, dx$ for $n$ a non-negative integer.
 
 (b) Prove that $I(n) > I(n + 1) > 0$.

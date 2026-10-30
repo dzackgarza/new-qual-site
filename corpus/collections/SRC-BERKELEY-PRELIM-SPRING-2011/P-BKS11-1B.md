@@ -6,7 +6,8 @@ title: An open set containing the unit square contains a thickened rectangle
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Order of $\operatorname{GL}_n(\FF_p)$ modulo $p$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

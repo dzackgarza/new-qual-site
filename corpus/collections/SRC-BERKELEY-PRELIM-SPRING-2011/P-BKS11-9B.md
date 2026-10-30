@@ -6,7 +6,8 @@ title: 'Interchanging limits: integrals, double series, and pointwise limits'
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

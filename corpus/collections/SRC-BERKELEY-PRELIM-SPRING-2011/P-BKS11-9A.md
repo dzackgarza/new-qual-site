@@ -6,7 +6,8 @@ title: Generating function of the Catalan numbers
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

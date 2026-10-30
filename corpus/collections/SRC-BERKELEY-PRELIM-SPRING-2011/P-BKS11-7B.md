@@ -6,7 +6,8 @@ title: Harmonicity of real and imaginary parts; harmonic polynomials of degree 6
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
