@@ -117,12 +117,6 @@ zeros on its boundary.
 
 :::
 
-::: pf-qed
-
-Step [](#s1-5){.pf-ref} gives the requested zero count.
-
-:::
-
 :::
 
 :::

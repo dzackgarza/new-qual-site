@@ -93,12 +93,6 @@ Step [](#s4){.pf-ref} holds for every $\varepsilon > 0$. Letting $\varepsilon\to
 
 :::
 
-::: pf-qed
-
-Step [](#s5){.pf-ref} is the required limit.
-
-:::
-
 :::
 
 :::

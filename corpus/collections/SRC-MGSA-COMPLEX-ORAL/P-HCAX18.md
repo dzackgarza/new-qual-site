@@ -108,12 +108,6 @@ $$
 
 :::
 
-::: pf-qed
-
-Step [](#s3){.pf-ref} is the requested evaluation.
-
-:::
-
 :::
 
 :::

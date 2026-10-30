@@ -41,16 +41,12 @@ The Cauchy–Riemann equations give $u_x = v_y = 0$ and $u_y = -v_x = 0$.
 :::
 
 ::: {.pf-step #u-constant}
-$u$ is constant on $\Omega$.
+$f = u$ is constant on $\Omega$.
 
 ::: pf-proof
 By step [](#cauchy-riemann-vanish){.pf-ref} the gradient of $u$ vanishes. A connected open subset of the plane is path-connected by polygonal paths, and $u$ is constant along each segment of such a path, so $u(z) = u(z_0)$ for every $z\in\Omega$ and a fixed $z_0\in\Omega$.
 :::
 
-:::
-
-::: pf-qed
-$f = u$ is constant by step [](#u-constant){.pf-ref}.
 :::
 
 :::
