@@ -27,7 +27,7 @@ f. $\operatorname{tr} A=1$?
 
 ::: {.solution}
 
-Write $\zeta=e^{2\pi i/3}$, $J_k(\lambda)$ for the Jordan block of size $k$ with eigenvalue $\lambda$, and $n_\lambda(B)=\dim\ker(B-\lambda I)$. Rank-nullity gives $\dim\ker M=7-\operatorname{rk}M$.
+Write $\zeta=e^{2\pi i/3}$ and $J_k(\lambda)$ for the Jordan block of size $k$ with eigenvalue $\lambda$. Rank-nullity gives $\dim\ker M=7-\operatorname{rk}M$.
 
 ::: pf
 
