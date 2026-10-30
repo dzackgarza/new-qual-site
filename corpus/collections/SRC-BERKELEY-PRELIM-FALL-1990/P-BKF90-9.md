@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF90-9
 kind: problem
 title: Matrix of orthogonal projection onto a plane
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

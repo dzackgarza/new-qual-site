@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF90-1
 kind: problem
 title: Integer solutions of $a^b=b^a$ with $a<b$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF90-8
 kind: problem
 title: $\frac1n\int_0^nxf(x)\,dx\to0$ for integrable continuous $f\ge0$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

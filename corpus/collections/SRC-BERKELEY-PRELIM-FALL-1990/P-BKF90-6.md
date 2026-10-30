@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF90-6
 kind: problem
 title: An entire function with sublinear growth is constant
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF90-5
 kind: problem
 title: A quotient of quadratic forms converges to an eigenvalue
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

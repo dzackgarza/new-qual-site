@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF90-4
 kind: problem
 title: Weighted mean-value theorem for an integral
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

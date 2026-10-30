@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF90-7
 kind: problem
 title: A normal maximal subgroup has finite prime index
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:
