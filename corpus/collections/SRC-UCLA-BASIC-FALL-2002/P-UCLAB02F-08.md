@@ -151,7 +151,7 @@ Over $\CC$, the eigenvalues are
 $$
 \boxed{
 1,\qquad
-\lambda_+=\frac12+\frac{\sqrt3}{2}i,qquad
+\lambda_+=\frac12+\frac{\sqrt3}{2}i,\qquad
 \lambda_-=\frac12-\frac{\sqrt3}{2}i
 }.
 $$
