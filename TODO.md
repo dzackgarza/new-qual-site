@@ -412,7 +412,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-ALG-SPRING-2021
   - [x] SRC-UCSD-ALG-SPRING-2022
   - [x] SRC-UCSD-ALG-SPRING-2023
-  - [ ] SRC-UCSD-ALG-SPRING-2024
+  - [x] SRC-UCSD-ALG-SPRING-2024
   - [ ] SRC-UCSD-ALG-SPRING-2025
   - [ ] SRC-UCSD-ALG-SPRING-2026
   - [ ] SRC-UCSD-APALG-FALL-2004
@@ -1756,6 +1756,11 @@ mathematical correction under its own node, not under copy policy.
     boundary circles capped to give $S^2$. Read the figure from the page render, decide the
     surface, and rewrite the solution. **Acceptance:** the solution identifies each surface from
     the figure as drawn.
+  - **`ad-bkf93-12-contour`**. **Needs:** none. P-BKF93-12: the retained Fall93.pdf prints
+    "../Fig/Pr/Fa93-12.ps not found" where the curve $\gamma$ should be, so the statement has no
+    contour and the solution answers in terms of winding numbers. Find another copy of the Fall
+    1993 Berkeley prelim (or the Fa93-12 figure) and transcribe the curve. **Acceptance:** the
+    statement describes $\gamma$ as drawn and the solution gives a number.
 
 ### Marking a node closed
 
