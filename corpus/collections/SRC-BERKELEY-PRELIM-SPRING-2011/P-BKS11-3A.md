@@ -6,7 +6,8 @@ title: Evaluation of $\int_0^\infty dx/(x^4+1)$ by residues
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

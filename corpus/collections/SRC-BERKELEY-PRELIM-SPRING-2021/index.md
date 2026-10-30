@@ -20,7 +20,7 @@ source:
   - P-BKF10-1A
   - P-BKF10-5A
   - P-BKF10-7B
-  - P-BKS21-5A
+  - P-BKS11-3A
   - P-BKS21-6A
   - P-BKS21-7A
   - P-BKS21-8A
