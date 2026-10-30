@@ -4,7 +4,8 @@ id: P-UCLAB06S-08
 kind: problem
 title: Orthogonal maps of $\RR^{2n+1}$ have an eigenvalue $\pm1$
 classification:
-  areas: [prelim]
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
@@ -13,10 +14,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 8 of the retained UCLA Basic Examination Spring 2006 PDF.
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The exam asks for a vector v with Tv = ±v, which v = 0 satisfies trivially; the statement
+    now asks for a nonzero vector, the eigenvector the problem intends.
 ---
 
 ::: {.problem}
-A linear transformation $T$ is called orthogonal if it is nonsingular and ${}^tT = T^{-1}$. Prove that if $T : \RR^{2n+1} \to \RR^{2n+1}$ is orthogonal, then there exists a vector $v \in \RR^{2n+1}$ such that $Tv = \pm v$.
+A linear transformation $T$ is called orthogonal if it is nonsingular and ${}^tT = T^{-1}$. Prove that if $T : \RR^{2n+1} \to \RR^{2n+1}$ is orthogonal, then there exists a nonzero vector $v \in \RR^{2n+1}$ such that $Tv = \pm v$.
 :::
 
 ::: {.solution}
