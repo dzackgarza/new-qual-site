@@ -16,24 +16,10 @@ audit:
   note: Checked against Problem 9 of the retained UCLA Basic Examination, Spring 2008.
 ---
 ::: {.problem}
-
-::: pf
-
-::: pf-step
-
-Let $V$ be an odd-dimensional real vector space and $T\colon V\to V$ a real-linear transformation.
+(a) Let $V$ be an odd-dimensional real vector space and $T\colon V\to V$ a real-linear transformation.
 Prove that $T$ has a nonzero real eigenvector.
 
-:::
-
-::: pf-step
-
-For every positive even integer $n$, give an $n$-dimensional real vector space $V$ and a real-linear transformation $T\colon V\to V$ having no nonzero real eigenvector.
-
-:::
-
-:::
-
+(b) For every positive even integer $n$, give an $n$-dimensional real vector space $V$ and a real-linear transformation $T\colon V\to V$ having no nonzero real eigenvector.
 :::
 
 ::: {.solution}
@@ -259,8 +245,8 @@ $$
 
 ::: pf-proof
 
-Steps [](#p2-s1){.pf-ref} and [](#p2-s2){.pf-ref} prove part step [](#p2-s1){.pf-ref}.
-Steps [](#p2-s3){.pf-ref}, [](#p2-s4){.pf-ref} and [](#p2-s5){.pf-ref} give the required example for every positive even dimension in part step [](#p2-s2){.pf-ref}.
+Steps [](#p2-s1){.pf-ref} and [](#p2-s2){.pf-ref} prove part (a).
+Steps [](#p2-s3){.pf-ref}, [](#p2-s4){.pf-ref} and [](#p2-s5){.pf-ref} give the required example for every positive even dimension in part (b).
 
 :::
 

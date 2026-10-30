@@ -18,21 +18,9 @@ audit:
 ::: {.problem}
 Let $g\in C([a,b])$ satisfy $a\le g(x)\le b$ for all $x\in[a,b]$.
 
-::: pf
+(i) Prove that $g$ has a fixed point $p\in[a,b]$.
 
-::: pf-step
-
-Prove that $g$ has a fixed point $p\in[a,b]$.
-
-:::
-
-::: pf-step
-
-Suppose there is $\gamma<1$ such that
-
-:::
-
-:::
+(ii) Suppose there is $\gamma<1$ such that
 
 $$
 \abs{g(x)-g(y)}\le \gamma\abs{x-y}
@@ -126,7 +114,7 @@ such that
 $$
 g(p)-p=0.
 $$
-This proves part step [](#p2-s1){.pf-ref}.
+This proves part (i).
 
 :::
 

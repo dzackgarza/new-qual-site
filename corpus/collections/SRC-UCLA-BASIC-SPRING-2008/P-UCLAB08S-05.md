@@ -16,29 +16,16 @@ audit:
   note: Checked against Problem 5 of the retained UCLA Basic Examination, Spring 2008.
 ---
 ::: {.problem}
-
-::: pf
-
-::: {.pf-step #p1-s1}
-
-Let $F\colon\RR^2\to\RR$ be continuous.
+(a) Let $F\colon\RR^2\to\RR$ be continuous.
 Suppose that for every square $S$ whose sides are parallel to the coordinate axes,
 $$
 \iint_S F(x,y)\,dx\,dy=0.
 $$
 Prove that $F(x,y)=0$ for all $(x,y)$.
 
-:::
+(b) Suppose $f$, $f_x$, $f_y$, $(f_x)_y$, and $(f_y)_x$ are continuous on $\RR^2$.
 
-::: pf-step
-
-Suppose $f$, $f_x$, $f_y$, $(f_x)_y$, and $(f_y)_x$ are continuous on $\RR^2$.
-
-:::
-
-:::
-
-Use step [](#p1-s1){.pf-ref} to prove
+Use (a) to prove
 $$
 \frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right)
 =
@@ -179,7 +166,7 @@ $$
 F(p)=0
 $$
 for every $p\in\RR^2$.
-This proves part step [](#p2-s1){.pf-ref}.
+This proves part (a).
 
 :::
 
@@ -187,7 +174,7 @@ This proves part step [](#p2-s1){.pf-ref}.
 
 ::: {.pf-step #p2-s5}
 
-For part step [](#p2-s2){.pf-ref}, define
+For part (b), define
 $$
 G(x,y)
 =
@@ -323,7 +310,7 @@ everywhere on $\RR^2$.
 ::: pf-proof
 
 The function $G$ is continuous by step [](#p2-s5){.pf-ref} and has zero integral over every axis-parallel square by step [](#p2-s8){.pf-ref}.
-Part step [](#p2-s1){.pf-ref}, proved in step [](#p2-s4){.pf-ref}, therefore gives
+Part (a), proved in step [](#p2-s4){.pf-ref}, therefore gives
 $$
 G\equiv0.
 $$
@@ -338,7 +325,7 @@ $$
 
 ::: pf-qed
 
-Step [](#p2-s4){.pf-ref} proves part step [](#p2-s1){.pf-ref}, and step [](#p2-s9){.pf-ref} proves part step [](#p2-s2){.pf-ref}.
+Step [](#p2-s4){.pf-ref} proves part (a), and step [](#p2-s9){.pf-ref} proves part (b).
 
 :::
 

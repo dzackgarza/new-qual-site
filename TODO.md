@@ -338,7 +338,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCLA-BASIC-SPRING-2005
   - [x] SRC-UCLA-BASIC-SPRING-2006
   - [x] SRC-UCLA-BASIC-SPRING-2007
-  - [ ] SRC-UCLA-BASIC-SPRING-2008
+  - [x] SRC-UCLA-BASIC-SPRING-2008
   - [ ] SRC-UCLA-BASIC-SPRING-2009
   - [ ] SRC-UCLA-BASIC-SPRING-2010
   - [ ] SRC-UCLA-BASIC-SPRING-2011

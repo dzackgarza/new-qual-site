@@ -26,30 +26,14 @@ $$
 $$
 which exists by compactness.
 
-::: pf
-
-::: {.pf-step #p1-s1}
-
-Prove that $(x,y)=0$ implies $(Ax,y)=0$.
+(a) Prove that $(x,y)=0$ implies $(Ax,y)=0$.
 Hint: expand $(A(x+\varepsilon y),x+\varepsilon y)$.
 
-:::
+(b) Use (a) to prove that $x$ is an eigenvector of $A$.
 
-::: pf-step
+(c) Use induction to prove that $\RR^n$ has an orthonormal basis of eigenvectors for $A$.
 
-Use step [](#p1-s1){.pf-ref} to prove that $x$ is an eigenvector of $A$.
-
-:::
-
-::: {.pf-step #p1-s3}
-
-Use induction to prove that $\RR^n$ has an orthonormal basis of eigenvectors for $A$.
-
-:::
-
-:::
-
-If you use step [](#p1-s3){.pf-ref} in proving an earlier part, give a proof of step [](#p1-s3){.pf-ref} that does not depend on those earlier parts.
+If you use (c) in proving an earlier part, give a proof of (c) that does not depend on those earlier parts.
 :::
 
 ::: {.solution}
@@ -285,7 +269,7 @@ Hence
 $$
 (Ax,y)=0.
 $$
-This proves part step [](#p2-s1){.pf-ref}.
+This proves part (a).
 
 :::
 
@@ -352,7 +336,7 @@ Hence
 $$
 Ax=\lambda x.
 $$
-This proves part step [](#p2-s2){.pf-ref}.
+This proves part (b).
 
 :::
 
@@ -461,7 +445,7 @@ is an orthonormal basis of $\RR^n$ consisting entirely of eigenvectors of $A$.
 
 ::: pf-qed
 
-Step [](#p2-s5){.pf-ref} proves part step [](#p2-s1){.pf-ref}, step [](#p2-s7){.pf-ref} proves part step [](#p2-s2){.pf-ref}, and step [](#p2-s10){.pf-ref} proves part step [](#p2-s3){.pf-ref} by induction using only the earlier conclusions just established directly from the maximizing property.
+Step [](#p2-s5){.pf-ref} proves part (a), step [](#p2-s7){.pf-ref} proves part (b), and step [](#p2-s10){.pf-ref} proves part (c) by induction using only the earlier conclusions just established directly from the maximizing property.
 
 :::
 
