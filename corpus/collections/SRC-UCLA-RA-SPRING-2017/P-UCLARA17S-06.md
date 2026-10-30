@@ -6,7 +6,9 @@ title: Swiss cheese sets have positive area
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Lebesgue Measure
+  - Measure Theory
 relations: []
 review: draft
 audit:

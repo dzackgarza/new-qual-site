@@ -6,7 +6,10 @@ title: Decay of Fourier coefficients passes to absolutely continuous measures
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Series
+  - Absolute Continuity
+  - Riemann-Lebesgue Lemma
 relations: []
 review: draft
 audit:

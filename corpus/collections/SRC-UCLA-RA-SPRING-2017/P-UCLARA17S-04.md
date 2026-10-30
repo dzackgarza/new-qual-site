@@ -6,7 +6,9 @@ title: Binary digit functionals on measures have no weak-star convergent subsequ
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Weak Convergence
+  - Borel Measures
 relations: []
 review: draft
 audit:

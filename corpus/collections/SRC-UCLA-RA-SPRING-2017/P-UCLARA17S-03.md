@@ -6,7 +6,9 @@ title: $\sigma$-algebras on $C([0,1])$ making point evaluations measurable conta
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Borel Measures
+  - Function Spaces
 relations: []
 review: draft
 audit:

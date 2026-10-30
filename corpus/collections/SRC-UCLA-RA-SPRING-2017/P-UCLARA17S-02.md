@@ -6,7 +6,10 @@ title: $L^1$-convergent subsequences of $L^2$-bounded monotone functions
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Monotone Functions
+  - Compactness
+  - L¹
 relations: []
 review: draft
 audit:

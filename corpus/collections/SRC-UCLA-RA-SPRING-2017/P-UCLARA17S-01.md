@@ -6,7 +6,10 @@ title: Averages of $L^\infty$ functions over a compact set are uniformly continu
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L∞
+  - Convolution
+  - Uniform Continuity
 relations: []
 review: draft
 audit:
