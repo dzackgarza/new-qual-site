@@ -132,7 +132,6 @@ source:
   - id: E-SNRS5
   - id: E-SQ4GJ
   - id: E-T5ERF
-  - id: E-TCONN
   - id: E-TDDQI
   - id: E-THK2Z
   - id: E-TOZQJ
