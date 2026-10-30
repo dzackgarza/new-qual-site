@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find an extremum of the functional $J [ f ] = \int _ { 0 } ^ { \pi / 2 } d x ( f ^ { \prime 2 } - f ^ { 2 } )$ in a class of functions $f \in C ^ { 2 } [ 0 , \pi / 2 ]$ satisfying the boundary conditions $f ( 0 ) = 0 , f ( \pi / 2 ) =$ 1.
+Find an extremum of the functional $J[f] = \int_0^{\pi/2} dx\, (f'^2 - f^2)$ in a class of functions $f \in C^2[0, \pi/2]$ satisfying the boundary conditions $f(0) = 0$, $f(\pi/2) = 1$.
 :::
 
 ::: {.solution}

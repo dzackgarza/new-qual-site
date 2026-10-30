@@ -16,43 +16,33 @@ audit:
 ---
 
 ::: {.problem}
-”Derrick’s theorem” Consider the functional
-
+"Derrick's theorem" Consider the functional
 $$
-E [ \phi ] = \int d ^ { d } x \left( \frac { 1 } { 2 } K _ { a b } ( \phi ) \sum _ { i = 1 } ^ { d } \partial _ { i } \phi ^ { a } \partial _ { i } \phi ^ { b } + V ( \phi ) \right) ,\tag{20}
+E[\phi] = \int d^dx \left( \frac{1}{2}K_{ab}(\phi)\sum_{i=1}^{d} \partial_i\phi^a\partial_i\phi^b + V(\phi) \right), \tag{20}
 $$
-
-where $\phi = \phi ( x _ { 1 } , . . . , x _ { d } ) \in C ^ { 2 } ( \RR ^ { d } ) , K _ { a b } ( \phi )$ is a positive-definite matrix for any $\phi ,$ i.e.,
-
+where $\phi = \phi(x_1, \ldots, x_d) \in C^2(\RR^d)$, $K_{ab}(\phi)$ is a positive-definite matrix for any $\phi$, i.e.,
 $$
-K _ { a b } ( \phi ) \partial _ { i } \phi ^ { a } \partial _ { j } \phi ^ { b } \geqslant 0 ,\tag{21}
+K_{ab}(\phi)\partial_i\phi^a\partial_j\phi^b \geqslant 0, \tag{21}
 $$
+where the equality implies $\phi = 0$, and $V(\phi) \geqslant 0$, $V(\phi) = 0 \Rightarrow \phi = 0$. Suppose $\phi_0(x)$ is a non-zero extremum of $E[\phi]$. Consider the configurations of the form $\phi_\lambda(x) = \phi_0(\lambda x)$, obtaining from $\phi_0(x)$ by stretching the coordinates by a factor of $\lambda$.
 
-where the equality implies $\phi = 0$ , and $V ( \phi ) \geqslant 0 , V ( \phi ) = 0 \Rightarrow \phi = 0$ Suppose $\phi _ { 0 } ( x )$ is a non-zero extremum of $E [ \phi ]$ . Consider the configurations of the form $\phi _ { \lambda } ( x ) = \phi _ { 0 } ( \lambda x )$ , obtaining from $\phi _ { 0 } ( x )$ by stretching the coordinates by a factor of λ.
-
-(a) Show that $E ( \lambda ) \equiv E [ \phi _ { \lambda } ]$ must satisfy
-
+(a) Show that $E(\lambda) \equiv E[\phi_\lambda]$ must satisfy
 $$
-\evaluated{ \frac { d { E } } { d { \lambda } } } _ { \lambda = 1 } = 0 .\tag{22}
+\evaluated{\frac{dE}{d\lambda}}_{\lambda=1} = 0. \tag{22}
 $$
 
 (b) Using the notations
-
 $$
-\Gamma = \int d ^ { d } x \frac { 1 } { 2 } K _ { a b } ( \phi _ { 0 } ) \sum _ { i = 1 } ^ { d } \partial _ { i } \phi _ { 0 } ^ { a } \partial _ { i } \phi _ { 0 } ^ { b } , ~ \Pi = \int d ^ { d } x V ( \phi _ { 0 } ) ,\tag{23}
+\Gamma = \int d^dx\, \frac{1}{2}K_{ab}(\phi_0)\sum_{i=1}^{d} \partial_i\phi_0^a\partial_i\phi_0^b, \quad \Pi = \int d^dx\, V(\phi_0), \tag{23}
 $$
-
 show that the above relation implies
+$$
+(2 - d)\Gamma - d\Pi = 0. \tag{24}
+$$
 
-$$
-( 2 - d ) \Gamma - d \Pi = 0 .\tag{24}
-$$
+(c) Give a conclusion about the existence of $\phi_0$, if
 
-(c) Give a conclusion about the existence of $\phi _ { 0 }$ , if
-
-$$
-( \mathrm { a } ) d > 2 \qquad \quad ( \mathrm { b } ) d = 2 \qquad \quad ( \mathrm { c } ) d = 1
-$$
+(a) $d > 2$ (b) $d = 2$ (c) $d = 1$
 :::
 
 ::: {.solution}

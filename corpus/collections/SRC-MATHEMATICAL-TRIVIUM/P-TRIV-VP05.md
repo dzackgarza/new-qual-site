@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find an extremum of the functional $J [ f ] = \int _ { 0 } ^ { 1 } d x ( 3 6 0 x ^ { 2 } f - f ^ { \prime \prime 2 } )$ in a class of functions $f \in C ^ { 3 } [ 0 , 1 ]$ satisfying the boundary conditions $f ( 0 ) = 0 , f ^ { \prime } ( 0 ) = 1$ $f ( 1 ) = 0 , f ^ { \prime } ( 1 ) = 2 . 5$
+Find an extremum of the functional $J[f] = \int_0^1 dx\, (360x^2 f - f''^2)$ in a class of functions $f \in C^3[0, 1]$ satisfying the boundary conditions $f(0) = 0$, $f'(0) = 1$, $f(1) = 0$, $f'(1) = 2.5$.
 :::
 
 ::: {.solution}

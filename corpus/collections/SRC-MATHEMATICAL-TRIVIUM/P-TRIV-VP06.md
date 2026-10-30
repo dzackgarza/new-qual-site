@@ -16,13 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Consider the functional $S [ x , y , z ] = \int _ { t _ { 1 } } ^ { t _ { 2 } } d t L ( x , y , z , x ^ { \prime } , y ^ { \prime } , z ^ { \prime } )$ , where
-
+Consider the functional $S[x, y, z] = \int_{t_1}^{t_2} dt\, L(x, y, z, x', y', z')$, where
 $$
-L = { \frac { m } { 2 } } ( x ^ { \prime 2 } + y ^ { \prime 2 } + z ^ { \prime 2 } ) - U ( x , y , z ) ,\tag{14}
+L = \frac{m}{2}(x'^2 + y'^2 + z'^2) - U(x, y, z), \tag{14}
 $$
-
-and U is $\mathrm { ~ a ~ } C ^ { 1 }$ function of $x , y , z$ . Write the system of equations on $x ( t ) , y ( t ) , z ( t )$ whose solution is an extremum of $S [ x , y , z ]$ in a class of $C ^ { 2 } ( [ t _ { 1 } , t _ { 2 } ] )$ functions with fixed boundary conditions.
+and $U$ is a $C^1$ function of $x, y, z$. Write the system of equations on $x(t), y(t), z(t)$ whose solution is an extremum of $S[x, y, z]$ in a class of $C^2([t_1, t_2])$ functions with fixed boundary conditions.
 :::
 
 ::: {.solution}

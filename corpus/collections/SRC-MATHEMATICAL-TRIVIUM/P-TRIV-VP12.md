@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Construct the functional $S [ \psi , \psi ^ { \dagger } ]$ whose variation with respect to $\psi = \psi ( \vec { r } , t )$ and $\psi ^ { \dagger } = \psi ^ { \dagger } ( \vec { r } , t )$ gives
+Construct the functional $S[\psi, \psi^\dagger]$ whose variation with respect to $\psi = \psi(\vec{r}, t)$ and $\psi^\dagger = \psi^\dagger(\vec{r}, t)$ gives
 
-(a) the Schrodinger equation $i \hbar \frac { \partial \psi } { \partial t } = \hat { H } \psi$ and its conjugated,
+(a) the Schrodinger equation $i\hbar\frac{\partial\psi}{\partial t} = \hat{H}\psi$ and its conjugated,
 
-(b) the stationary Schrodinger equation ${ \hat { H } } \psi = E \psi$ and its conjugated.
+(b) the stationary Schrodinger equation $\hat{H}\psi = E\psi$ and its conjugated.
 
-Here $\hat { H }$ is some hermitian operator.
+Here $\hat{H}$ is some hermitian operator.
 :::
 
 ::: {.solution}

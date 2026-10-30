@@ -16,14 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-“Fubini instanton.”
-Consider the functional $S [ f ] = 2 \pi ^ { 2 } \int _ { 0 } ^ { \infty } d x x ^ { 3 } \left( { \frac { 1 } { 2 } } f ^ { \prime 2 } + V ( f ) \right)$ where $V ( f ) = - { \frac { \lambda } { 4 } } f ^ { 4 }$ , and $f \in C ^ { 2 } [ 0 , \infty ]$
+"Fubini instanton" Consider the functional $S[f] = 2\pi^2\int_0^{\infty} dx\, x^3\left( \frac{1}{2}f'^2 + V(f) \right)$, where $V(f) = -\frac{\lambda}{4}f^4$, and $f \in C^2[0, \infty]$.
 
-(a) Write the differential equation on f, whose solution is an extremum of $S [ f ]$
+(a) Write the differential equation on $f$, whose solution is an extremum of $S[f]$.
 
-(b) Find all solutions to this equation satisfying the boundary conditions $f ( \infty ) =$ $f ^ { \prime } ( \infty ) = 0$
+(b) Find all solutions to this equation satisfying the boundary conditions $f(\infty) = f'(\infty) = 0$.
 
-(c) Compute the value of S[f] on these solutions.
+(c) Compute the value of $S[f]$ on these solutions.
 :::
 
 ::: {.solution}

@@ -16,8 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the functional $J [ f ] = \iint d x d y \left[ \left( { \frac { \partial f } { \partial x } } \right) ^ { 2 } + \left( { \frac { \partial f } { \partial y } } \right) ^ { 2 } \right]$ , where D is a domain in (xy)-plane with the boundary $\partial D$.
-Write the equation for f, whose solution in a class of functions $f \in C ^ { 2 } ( \bar { D } )$ , satisfying the boundary condition $f ( x , y ) \restrict _ { \partial D } = f _ { 0 } ( x , y )$ , is an extremum of $J [ f ]$
+Consider the functional $J[f] = \iint_D dx\, dy \left[ \left( \frac{\partial f}{\partial x} \right)^2 + \left( \frac{\partial f}{\partial y} \right)^2 \right]$, where $D$ is a domain in $(xy)$-plane with the boundary $\partial D$. Write the equation for $f$, whose solution in a class of functions $f \in C^2(\bar{D})$, satisfying the boundary condition $f(x, y)\restrict_{\partial D} = f_0(x, y)$, is an extremum of $J[f]$.
 :::
 
 ::: {.solution}
