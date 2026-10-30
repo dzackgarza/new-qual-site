@@ -966,7 +966,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/real-analysis/fourier/convolution.md
   - [x] wiki/real-analysis/fourier/index.md
   - [x] wiki/real-analysis/fourier/the-transform.md
-  - [ ] wiki/real-analysis/fubini-tonelli/index.md
+  - [x] wiki/real-analysis/fubini-tonelli/index.md
   - [ ] wiki/real-analysis/fubini-tonelli/statements.md
   - [ ] wiki/real-analysis/fubini-tonelli/which-one-applies.md
   - [ ] wiki/real-analysis/functional-analysis/banach-and-hilbert.md
