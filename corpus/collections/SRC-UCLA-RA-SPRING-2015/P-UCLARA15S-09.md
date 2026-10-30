@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: P-UCLARA15S-09
 kind: problem
-title: Bounded harmonic function in $\{\abs{z}>1,\ \operatorname{Re}z>-2\}$ with constant boundary values
+title: Bounded harmonic function in $\{\abs{z}>1,\ \operatorname{Re}z>-2\}$ with constant
+  boundary values
 classification:
   areas:
   - complex-analysis
@@ -15,7 +16,13 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-13
-  note: Transcribed from the official UCLA Analysis Qualifying Exam, Spring 2015, and reconciled with the retained UCLA Analysis Qualifying Exam Solutions compendium.
+  note: Transcribed from the official UCLA Analysis Qualifying Exam, Spring 2015, and reconciled
+    with the retained UCLA Analysis Qualifying Exam Solutions compendium.
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: 'Domain of u corrected to the closure of Omega: the boundary values require u to be
+    defined on the boundary.'
 ---
 
 ::: {.problem}
@@ -23,7 +30,7 @@ Let
 $$
 \Omega=\{z\in\CC:\abs{z}>1\text{ and }\operatorname{Re}z>-2\}.
 $$
-Suppose $u:\Omega\to\RR$ is bounded, continuous, and harmonic on $\Omega$, with $u(z)=1$ when $\abs{z}=1$ and $u(z)=0$ when $\operatorname{Re}z=-2$.
+Suppose $u:\overline{\Omega}\to\RR$ is bounded, continuous, and harmonic on $\Omega$, with $u(z)=1$ when $\abs{z}=1$ and $u(z)=0$ when $\operatorname{Re}z=-2$.
 Determine $u(2)$.
 :::
 
