@@ -15,13 +15,12 @@ audit:
 ::: {.problem}
 A subset $D\subseteq X$ is called dense if $\overline D=X$.
 
-1. Show that if $A\subseteq X$ and $D$ is dense in $X$, then $D\cap A$ need not be dense in $A$.
-2. Show that if $A$ is open in $X$ and $D$ is dense in $X$, then $D\cap A$ is dense in $A$.
+(a) Show that if $A\subseteq X$ and $D$ is dense in $X$, then $D\cap A$ need not be dense in $A$.
+
+(b) Show that if $A$ is open in $X$ and $D$ is dense in $X$, then $D\cap A$ is dense in $A$.
 :::
 
 ::: {.solution}
-
-## Part 1
 
 ::: pf
 
@@ -281,7 +280,7 @@ This is step [](#s1-13){.pf-ref}.
 
 ::: pf-qed
 
-Step [](#s1-5){.pf-ref} answers part 1, and step [](#s1-14){.pf-ref} proves part 2.
+Step [](#s1-5){.pf-ref} answers (a), and step [](#s1-14){.pf-ref} proves (b).
 
 :::
 

@@ -15,15 +15,14 @@ audit:
 ::: {.problem}
 A function $f:X\to Y$ is called **open** if $f(U)$ is open in $Y$ for every open $U\subseteq X$.
 
-1. Give an example of a continuous function that is not open.
-2. Let $p:X\to Y$ be continuous and open, and let $A\subseteq X$ be open. Show that the restriction
+(a) Give an example of a continuous function that is not open.
+
+(b) Let $p:X\to Y$ be continuous and open, and let $A\subseteq X$ be open. Show that the restriction
 $$q:A\to p(A)$$
 is open, where $p(A)$ has the subspace topology from $Y$.
 :::
 
 ::: {.solution}
-
-## Part 1
 
 ::: pf
 
@@ -236,7 +235,7 @@ The open set $U\subseteq A$ in step [](#s1-6){.pf-ref} was arbitrary.
 
 ::: pf-qed
 
-Step [](#s1-5){.pf-ref} answers part 1, and step [](#s1-12){.pf-ref} proves part 2.
+Step [](#s1-5){.pf-ref} answers (a), and step [](#s1-12){.pf-ref} proves (b).
 
 :::
 

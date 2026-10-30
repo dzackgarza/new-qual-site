@@ -29,8 +29,6 @@ $$
 \pi_1(X)\cong F(a,b).
 $$
 
-## First $4$-sheeted cover
-
 Define
 $$
 \phi_1:F(a,b)\to C_4=\ZZ/4
@@ -121,12 +119,12 @@ The fiber can be labeled by $C_4$. Traversing $a$ adds $1$, so the $a$-monodromy
 
 ::: pf-step
 
-The homomorphism $\phi_2$ is surjective.
+Define $\phi_2\colon F(a,b)\to C_2\times C_2$ by $\phi_2(a)=(1,0)$ and $\phi_2(b)=(0,1)$. Then $\phi_2$ is surjective.
 
 
 ::: pf-proof
 
-The two displayed images generate the two direct factors of
+The images $(1,0)$ and $(0,1)$ generate the two direct factors of
 $$
 C_2\times C_2.
 $$

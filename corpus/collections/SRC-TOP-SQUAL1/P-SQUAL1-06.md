@@ -142,11 +142,11 @@ Under the same deformation retraction, the bottom edge also traverses the core c
 
 ::: pf-proof
 
-To continue the oriented boundary loop after the top edge, the bottom edge is traversed from $(1,-1)$ to $(0,-1)$. Under the quotient identification,
+The top edge $s\mapsto[s,1]$ ends at $[1,1]=[0,-1]$, so the boundary loop continues along the bottom edge $s\mapsto[s,-1]$ from $(0,-1)$ to $(1,-1)$, and it closes up because
 $$
-[1,-1]=[0,1],
+[1,-1]=[0,1].
 $$
-and the retraction sends this bottom traversal to a second traversal of the core consistent with the first. Equivalently, the boundary of a Möbius band is the connected double cover of its core circle.
+The retraction sends this bottom traversal to $s\mapsto[s,0]$, a second traversal of the core in the same direction as the first. Equivalently, the boundary of a Möbius band is the connected double cover of its core circle.
 
 :::
 
