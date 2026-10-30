@@ -163,9 +163,9 @@ source:
       comment: Question 11
     - id: P-TIE-S15-12
       comment: Question 12
-    - id: P-TIE-S15-13
+    - id: P-SWLWB
       comment: Question 13
-    - id: P-TIE-S15-14
+    - id: P-3MIIY
       comment: Question 14
     - P-KNIPC
     - id: P-TIE-S15-16
@@ -178,7 +178,7 @@ source:
       comment: Question 19
     - id: P-TIE-S15-20
       comment: Question 20
-    - id: P-TIE-S15-21
+    - id: P-K3P74
       comment: Question 21
     - id: P-TIE-S15-22
       comment: Question 22
@@ -190,7 +190,7 @@ source:
       comment: Question 25
     - id: P-TIE-S15-26
       comment: Question 26
-    - id: P-TIE-S15-27
+    - id: P-3JE4U
       comment: Question 27
     - P-KNIPC
     - id: P-TIE-S15-11
@@ -199,7 +199,7 @@ source:
       comment: Question 30
     - id: P-TIE-S15-26
       comment: Question 31
-    - id: P-TIE-S15-27
+    - id: P-3JE4U
       comment: Question 32
     - P-KNIPC
     - id: P-TIE-S15-11
