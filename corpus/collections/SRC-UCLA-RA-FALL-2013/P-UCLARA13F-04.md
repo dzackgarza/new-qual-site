@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $u$ be a nonnegative continuous function on $\DD\setminus\{0\}$ that is subharmonic there.
+Let $u$ be a nonnegative continuous function on $\overline{\DD}\setminus\{0\}=\{z\in\CC\st 0<\abs{z}\le 1\}$ that is subharmonic on $\DD\setminus\{0\}$.
 Suppose $u\restrict_{\partial\DD}=0$ and
 $$
 \lim_{r\to0^+}\frac{1}{r^2\log(1/r)}\int_{0<\abs{z}<r}u(z)\,d\lambda(z)=0,
