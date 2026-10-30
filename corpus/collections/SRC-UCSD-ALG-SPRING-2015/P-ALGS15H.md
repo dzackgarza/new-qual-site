@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS15H
 kind: problem
-title: Minimal polynomial via Galois orbit; Artin–Schreier normality and separability
+title: Minimal polynomial as a product over a $G$-orbit; $K/\operatorname{Fix}(G)$ is separable and normal
 classification:
   areas:
   - algebra
