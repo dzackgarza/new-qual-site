@@ -5,7 +5,8 @@ kind: problem
 title: Nested closed connected subsets of a compact metric space have connected nonempty intersection
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -17,7 +17,7 @@ source:
   area: prelim
   problems:
   - P-BKS21-1A
-  - P-BKS21-2A
+  - P-BKF10-1A
   - P-BKS21-3A
   - P-BKS21-4A
   - P-BKS21-5A

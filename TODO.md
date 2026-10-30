@@ -544,7 +544,7 @@ mathematical correction under its own node, not under copy policy.
   Round 4 (revision `e6068b271c`, prelim collections) injected the node below;
   `audited-deployment` needs it.
   - **`ad4-prelim-content`**. **Needs:** none.
-    - [ ] CARD-04: P-BKS21-2A and P-BKF10-1A state one problem (Spring 2021 reprints Fall 2010
+    - [x] CARD-04: P-BKS21-2A and P-BKF10-1A state one problem (Spring 2021 reprints Fall 2010
       1A); merge, survivor listed by both collections.
     - [ ] CARD-04: P-BKS21-3A and P-BKF10-5A; same.
     - [ ] CARD-04: P-BKS21-4A and P-BKF10-7B; same.
