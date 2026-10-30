@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that if an $n \times n$ matrix X over R satisfies $X ^ { 2 } = - I$ , then n is even.
+Prove that if an $n \times n$ matrix $X$ over $\RR$ satisfies $X^{2} = -I$, then $n$ is even.
 :::
 
 ::: {.solution}

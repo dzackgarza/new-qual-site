@@ -24,19 +24,15 @@ audit:
 ---
 
 ::: {.problem}
-Let G be a finite group, and for each positive integer n, let
-
+Let $G$ be a finite group, and for each positive integer $n$, let
 $$
-X _ { n } = \{ ( g _ { 1 } , . . . , g _ { n } ) : g _ { i } g _ { j } = g _ { j } g _ { i } \forall i , j \} .
+X_{n} = \{ (g_{1}, \ldots, g_{n}) : g_{i} g_{j} = g_{j} g_{i} \ \forall i, j \}.
 $$
-
 Show that the formula
-
 $$
-h \cdot ( g _ { 1 } , \ldots , g _ { n } ) = ( h g _ { 1 } h ^ { - 1 } , \ldots , h g _ { n } h ^ { - 1 } ) ,
+h \cdot (g_{1}, \ldots, g_{n}) = (h g_{1} h^{-1}, \ldots, h g_{n} h^{-1}),
 $$
-
-defines an action of $G$ on $X _ { n }$ , and that $\cardinality{ X _ { n + 1 } } = \cardinality{ G } \cdot \cardinality{ X _ { n } / G }$ for all n, where $X _ { n } / G$ denotes the set of G-orbits in $X _ { n }$
+defines an action of $G$ on $X_{n}$, and that $\cardinality{X_{n+1}} = \cardinality{G} \cdot \cardinality{X_{n}/G}$ for all $n$, where $X_{n}/G$ denotes the set of $G$-orbits in $X_{n}$.
 :::
 
 ::: {.solution}

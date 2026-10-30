@@ -24,14 +24,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $M _ { 2 } ( \CC )$ be the set of $2 \times 2$ matrices over the complex numbers.
-Given $A \in M _ { 2 } ( \CC )$ , define $C ( A ) = \{ B \in M _ { 2 } ( \CC ) : A B = B A \}$
+Let $M_{2}(\CC)$ be the set of $2 \times 2$ matrices over the complex numbers.
+Given $A \in M_{2}(\CC)$, define $C(A) = \{ B \in M_{2}(\CC) : AB = BA \}$.
 
-(a) Prove that $C ( A )$ is a linear subspace of $M _ { 2 } ( \CC )$ , for every A.
+(a) Prove that $C(A)$ is a linear subspace of $M_{2}(\CC)$, for every $A$.
 
-(b) Determine, with proof, all possible values of the dimension dim $C ( A )$
+(b) Determine, with proof, all possible values of the dimension $\dim C(A)$.
 
-(c) Formulate a simple and explicit rule to find dim $C ( A )$ , given A. "Simple" means the rule should yield the answer with hardly any computational effort.
+(c) Formulate a simple and explicit rule to find $\dim C(A)$, given $A$. "Simple" means the rule should yield the answer with hardly any computational effort.
 :::
 
 ::: {.solution}

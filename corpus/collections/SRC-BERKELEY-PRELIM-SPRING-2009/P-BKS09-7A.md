@@ -28,11 +28,9 @@ audit:
 
 ::: {.problem}
 Compute
-
 $$
-\int _ { 0 } ^ { \pi } { \frac { d \theta } { a + \cos \theta } }
+\int_{0}^{\pi} \frac{d\theta}{a + \cos\theta}
 $$
-
 for $a > 1$ using the method of residues.
 :::
 

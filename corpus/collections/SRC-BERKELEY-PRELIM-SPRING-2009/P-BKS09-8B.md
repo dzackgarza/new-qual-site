@@ -24,12 +24,12 @@ audit:
 ---
 
 ::: {.problem}
-1. Let G be a non-abelian finite group.
-   Show that $G / Z ( G )$ is not cyclic, where $Z ( G )$ is the center of G.
+1. Let $G$ be a non-abelian finite group.
+   Show that $G/Z(G)$ is not cyclic, where $Z(G)$ is the center of $G$.
 
-2. If $\cardinality{ G } = p ^ { n }$ , with p prime and $n > 0$ , show that $Z ( G )$ is not trivial.
+2. If $\cardinality{G} = p^{n}$, with $p$ prime and $n > 0$, show that $Z(G)$ is not trivial.
 
-3. If $\cardinality{ G } = p ^ { 2 }$ , show that G is abelian.
+3. If $\cardinality{G} = p^{2}$, show that $G$ is abelian.
 :::
 
 ::: {.solution}

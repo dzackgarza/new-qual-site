@@ -24,8 +24,8 @@ audit:
 ---
 
 ::: {.problem}
-Prove that the sequence of functions $f _ { n } ( x ) = \sin n x$ has no pointwise convergent subsequence.
-(Hint: show that given any subsequence and any interval of positive length there is a subinterval such that some element of the subsequence is at least $1 / 2$ on this subinterval, and another element is at most $- 1 / 2$.)
+Prove that the sequence of functions $f_{n}(x) = \sin nx$ has no pointwise convergent subsequence.
+(Hint: show that given any subsequence and any interval of positive length there is a subinterval such that some element of the subsequence is at least $1/2$ on this subinterval, and another element is at most $-1/2$.)
 :::
 
 ::: {.solution}

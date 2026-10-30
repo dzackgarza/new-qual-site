@@ -24,8 +24,8 @@ audit:
 ---
 
 ::: {.problem}
-Consider a polynomial expression $H ( \alpha ) = A + B \alpha + C \alpha ^ { 2 } + \cdot \cdot \cdot + D \alpha ^ { N }$ with rational coefficients A, $B , C , \ldots , D$ , where α is an algebraic number, in other words a root of some polynomial with rational coefficients.
-Prove that if $H ( \alpha ) \neq 0$ , then the reciprocal $1 / H ( \alpha )$ can be expressed as a polynomial in α with rational coefficients.
+Consider a polynomial expression $H(\alpha) = A + B\alpha + C\alpha^{2} + \cdots + D\alpha^{N}$ with rational coefficients $A, B, C, \ldots, D$, where $\alpha$ is an algebraic number, in other words a root of some polynomial with rational coefficients.
+Prove that if $H(\alpha) \neq 0$, then the reciprocal $1/H(\alpha)$ can be expressed as a polynomial in $\alpha$ with rational coefficients.
 :::
 
 ::: {.solution}
