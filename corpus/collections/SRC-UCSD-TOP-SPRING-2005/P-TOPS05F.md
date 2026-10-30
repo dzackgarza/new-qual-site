@@ -23,13 +23,13 @@ Determine if $X$ can be a manifold or an $H$-space.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-A compact manifold homotopy-equivalent to $S^3\vee S^5$ cannot have boundary.
+A closed manifold $M$ homotopy-equivalent to $S^3\vee S^5$ would be a closed orientable $5$-manifold.
 
 ::: pf-proof
 
-The wedge has $H_5\cong\ZZ$. A compact connected $5$-manifold with nonempty boundary has zero absolute top homology; a manifold of dimension larger than $5$ would have its nonzero top homology in a higher degree if closed. Thus any such manifold would have to be a closed orientable $5$-manifold.
+A closed connected $n$-manifold has $H_n(M;\FF_2)\cong\FF_2$ and $H_k(M;\FF_2)=0$ for $k>n$. The wedge has $H_5(-;\FF_2)\ne0$ and $H_k(-;\FF_2)=0$ for $k>5$, so $n=5$. Then $H_5(M;\ZZ)\cong H_5(S^3\vee S^5;\ZZ)\cong\ZZ$, so $M$ is orientable.
 
 :::
 
@@ -37,7 +37,7 @@ The wedge has $H_5\cong\ZZ$. A compact connected $5$-manifold with nonempty boun
 
 ::: {.pf-step #s2}
 
-No closed $5$-manifold has this homotopy type.
+No closed manifold has this homotopy type.
 
 ::: pf-proof
 
@@ -49,7 +49,19 @@ But Poincaré duality for a closed orientable $5$-manifold gives
 $$
 H_3\cong H^2,
 $$
-a contradiction.
+which contradicts step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #thick}
+
+A compact manifold with boundary can have this homotopy type.
+
+::: pf-proof
+
+Let $W$ be the boundary connected sum of $S^3\times D^3$ and $S^5\times[-1,1]$, glued along a $5$-disc in each boundary. It is a compact $6$-manifold with boundary. The two pieces deformation retract onto $S^3$ and $S^5$, and they meet in a contractible disc, so $W\simeq S^3\vee S^5$.
 
 :::
 
@@ -57,7 +69,7 @@ a contradiction.
 
 ::: {.pf-step #s3}
 
-The space $S^3\vee S^5$ cannot be an $H$-space either.
+The space $S^3\vee S^5$ is not an $H$-space.
 
 ::: pf-proof
 
@@ -77,15 +89,9 @@ which is nonzero in $H^8(X\times X;\ZZ)$ by Künneth. Contradiction.
 
 :::
 
-::: pf-step
+::: pf-qed
 
-Therefore a compact space of this homotopy type can be neither a manifold nor an $H$-space.
-
-::: pf-proof
-
-Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
-
-:::
+By steps [](#s2){.pf-ref} and [](#thick){.pf-ref}, $X$ can be a compact manifold only if it has nonempty boundary, and such manifolds exist. By step [](#s3){.pf-ref}, $X$ is never an $H$-space.
 
 :::
 
