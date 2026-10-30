@@ -185,7 +185,7 @@ S^1
 \end{tikzcd}
 where the universal cover is the $2n$-valent Cayley graph of the free group $F_n\cong\ZZ^{\ast n}$ with respect to its free generators.
 
-![For $n=2$](../../../../assets/assets/Topology/figures/2021-07-03_16-55-01.png)
+![The Cayley graph of the free group on a, b: the 4-valent tree with vertices labeled by reduced words e, a, b, ab, ba^{-1}, and so on](../../../../assets/assets/Topology/figures/2021-07-03_16-55-01.png)
 
 \begin{tikzcd}
 \ZZ/n
@@ -259,7 +259,7 @@ The fundamental group of $S^1 \vee S^1$ is $\ZZ \ast \ZZ$ by van Kampen's theore
 ::: {.example title="Wedge of projective spaces"}
 The fundamental group of $\RP^2 \vee \RP^2$ is $\ZZ/2 \ast \ZZ/2$, and the universal cover is an infinite chain of copies of $S^2$, each attached to its two neighbors at antipodal points:
 
-![Another universal cover.](../../../../assets/assets/Topology/figures/image_2021-01-10-13-14-27.png)
+![The universal cover of RP^2 v RP^2: an infinite chain of spheres, each joined to its two neighbors at a pair of antipodal points](../../../../assets/assets/Topology/figures/image_2021-01-10-13-14-27.png)
 
 :::
 
