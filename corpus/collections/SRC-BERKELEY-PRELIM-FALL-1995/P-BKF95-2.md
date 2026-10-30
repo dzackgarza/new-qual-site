@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF95-2
 kind: problem
 title: Boundary-length bound for neighborhoods of finite planar sets
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF95-9
 kind: problem
 title: A nonlinear recurrence stays bounded away from zero
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

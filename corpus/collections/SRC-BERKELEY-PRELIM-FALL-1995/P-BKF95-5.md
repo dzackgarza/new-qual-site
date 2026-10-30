@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF95-5
 kind: problem
 title: Function field of the rational unit circle
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

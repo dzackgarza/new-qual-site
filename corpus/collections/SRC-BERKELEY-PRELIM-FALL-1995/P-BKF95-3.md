@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF95-3
 kind: problem
 title: Radius of a Taylor series for a rational function
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF95-7
 kind: problem
 title: Coefficients of a Hadamard product from a contour integral
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

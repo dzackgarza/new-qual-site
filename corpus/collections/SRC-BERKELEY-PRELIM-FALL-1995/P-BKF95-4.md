@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF95-4
 kind: problem
 title: Complex similarity of real matrices implies real similarity
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

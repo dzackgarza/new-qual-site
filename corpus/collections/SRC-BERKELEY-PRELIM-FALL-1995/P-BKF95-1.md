@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF95-1
 kind: problem
 title: Upper bound for the number of index-$k$ subgroups of an $n$-generated group
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

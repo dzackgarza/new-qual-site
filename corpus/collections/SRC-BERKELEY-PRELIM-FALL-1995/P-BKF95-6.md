@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF95-6
 kind: problem
 title: Boundary lengths admitting a nonzero solution of an Euler equation
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Ordinary Differential Equations]}
 relations: []
 review: draft
 audit:

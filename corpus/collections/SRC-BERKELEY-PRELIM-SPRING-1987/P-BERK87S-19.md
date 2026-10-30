@@ -5,7 +5,8 @@ kind: problem
 title: Every finite subgroup of the multiplicative group of a field is cyclic
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

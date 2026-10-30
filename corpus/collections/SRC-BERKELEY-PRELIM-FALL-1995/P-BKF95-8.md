@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF95-8
 kind: problem
 title: Strict diagonal dominance implies invertibility
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:
