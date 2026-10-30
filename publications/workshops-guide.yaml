@@ -32,7 +32,7 @@ sections:
       - ref: P-6HPKO
       - ref: P-2J6HK
       - ref: P-QJ7MD
-      - ref: P-6XW74
+      - ref: P-MMAQ-4KOVSOH5J4
       - ref: P-KXSW3
       - ref: P-KPEPM
       # Algebra Week 2 Finite Group Theory
@@ -43,7 +43,7 @@ sections:
       - ref: P-JZM4U
       - ref: E-6AOD7
       - ref: P-2TASE
-      - ref: P-6XW74
+      - ref: P-MMAQ-4KOVSOH5J4
       - ref: P-HYQCG
       - ref: P-N2TM2
       - ref: P-YMVNK

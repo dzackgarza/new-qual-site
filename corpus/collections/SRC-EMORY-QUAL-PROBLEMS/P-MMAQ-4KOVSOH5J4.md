@@ -31,6 +31,10 @@ Let $G$ be a finite group.
    Prove that there exists an element of $G$ with no fixed points in $X$.
 :::
 
+::: {.remark title="Variations"}
+For $G=\Sym(X)$ with $\cardinality{X}=n>1$, part 2 gives a permutation of $X$ with no fixed point. The proof of part 2 applies unchanged, because $\Sym(X)$ acts transitively on $X$.
+:::
+
 ::: {.solution}
 
 ::: pf

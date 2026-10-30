@@ -41,7 +41,6 @@ source:
   - id: E-AMD-74T5EHRR
   - id: E-AMD-7FMEI2QD
   - id: E-AMD-7YJUIMVH
-  - id: E-AMD-A3SS4EYY
   - id: E-AMD-BBG6IC7K
   - id: E-AMD-BII4UYJ7
   - id: E-AMD-BKDDOBZG
@@ -248,7 +247,6 @@ source:
   - id: P-6VMUH
   - id: P-6VXPG
   - id: P-6WIHE
-  - id: P-6XW74
   - id: P-76B6F
   - id: P-7ALW6
   - id: P-7DZQQ
