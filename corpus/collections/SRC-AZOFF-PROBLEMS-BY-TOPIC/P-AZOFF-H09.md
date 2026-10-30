@@ -5,7 +5,10 @@ kind: problem
 title: Monic polynomials have modulus at least $1$ somewhere on the unit circle
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Rouché
+  - Polynomials
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

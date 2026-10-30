@@ -5,7 +5,9 @@ kind: problem
 title: Two roots of $z^3+3z^2+bz+b^2$ in the unit disk
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 audit:

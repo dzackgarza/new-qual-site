@@ -5,7 +5,10 @@ kind: problem
 title: Zeros of the exponential partial sums $P_n$ and $P_n-1$ in a disk
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Rouché
+  - Zeros
+  - Uniform Convergence
 relations: []
 review: draft
 audit:
@@ -31,7 +34,7 @@ audit:
 ---
 
 ::: {.problem}
-For each integer $n \ge 1$, let $P_n(z) = 1 + z + \frac{1}{2!}z^2 + \frac{1}{3!}z^3 + \cdots + \frac{1}{n!}z^n$. Show that all sufficiently large $n$, the polynomial $P_n$ has no zeros in $\abs{z} < 10$, while the polynomial $P_n(z) - 1$ has exactly 3 zeros there.
+For each integer $n \ge 1$, let $P_n(z) = 1 + z + \frac{1}{2!}z^2 + \frac{1}{3!}z^3 + \cdots + \frac{1}{n!}z^n$. Show that for all sufficiently large $n$, the polynomial $P_n$ has no zeros in $\abs{z} < 10$, while the polynomial $P_n(z) - 1$ has exactly 3 zeros there.
 :::
 
 ::: {.solution}

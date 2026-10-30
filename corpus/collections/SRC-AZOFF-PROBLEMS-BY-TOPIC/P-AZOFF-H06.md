@@ -5,7 +5,10 @@ kind: problem
 title: Local $m$-to-one behavior of an analytic function at a zero of order $m$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Argument Principle
+  - Rouché
+  - Open Mapping Theorem
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Roots of $z^7-4z^3-1$ in the unit disk
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 audit:

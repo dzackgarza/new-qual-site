@@ -5,7 +5,9 @@ kind: problem
 title: Solutions of $e^z=az^n$ in the unit disk
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 audit:

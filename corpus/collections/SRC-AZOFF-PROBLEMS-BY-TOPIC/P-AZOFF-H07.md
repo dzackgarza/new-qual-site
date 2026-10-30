@@ -5,7 +5,9 @@ kind: problem
 title: Finite Blaschke products take each value in the disk $n$ times
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Rouché
+  - Blaschke Products
 relations: []
 review: draft
 audit:

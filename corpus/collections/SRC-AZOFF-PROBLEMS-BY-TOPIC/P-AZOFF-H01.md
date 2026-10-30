@@ -5,7 +5,10 @@ kind: problem
 title: Partial sums of the exponential series have no zeros in the unit disk
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Rouché
+  - Zeros
+  - Polynomials
 relations: []
 review: draft
 audit:
