@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAF11B
 kind: problem
-title: "Construction of a metric from a sequence of metrics and convergence characterization"
+title: Construction of a metric from a sequence of metrics and convergence characterization
 classification:
   areas:
   - complex-analysis
@@ -14,13 +14,22 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: 'Part (a) restored to the exam wording: prove the triangle inequality, with the printed
+    hint; the solution proves the stronger statement that rho is a metric.'
 ---
 
 ::: {.problem}
 Let $X$ be a set and $\{\rho_n\}$ a sequence of metrics on $X$.
 Define $\rho$ on $X \times X$ by $$\rho(x, y) := \sum_{n=1}^{\infty} \frac{1}{n^2} \cdot \frac{\rho_n(x, y)}{1 + \rho_n(x, y)}.$$
 
-(a) Show that $\rho(x, y) < \infty$ for all $x, y \in X$ and prove that $\rho$ is a metric on $X$.
+(a) Show that $\rho(x, y) < \infty$ for all $x, y \in X$ and prove that
+$$
+\rho(x, y) \leq \rho(x, z) + \rho(z, y), \qquad \forall x, y, z \in X.
+$$
+Hint: To show that $\frac{\rho_n(x, y)}{1 + \rho_n(x, y)}$ satisfies the triangle inequality (which is stated, but not proved in Conway), you may use properties of the function $t \mapsto \frac{t}{1 + t}$ for $t \geq 0$.
 
 (b) Let $\{x_j\}$ be a sequence in $X$, and $x \in X$.
 Prove that $\lim_{j \to \infty} \rho(x_j, x) = 0$ if and only if $\lim_{j \to \infty} \rho_n(x_j, x) = 0$ for all $n \geq 1$.
