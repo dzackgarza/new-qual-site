@@ -861,7 +861,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebraic-geometry/varieties/the-dictionary.md
   - [x] wiki/applied-algebra/grobner-bases/index.md
   - [x] wiki/applied-algebra/index.md
-  - [ ] wiki/applied-algebra/invariant-theory/index.md
+  - [x] wiki/applied-algebra/invariant-theory/index.md
   - [ ] wiki/applied-algebra/matrix-analysis/index.md
   - [ ] wiki/applied-algebra/representation-theory/index.md
   - [ ] wiki/applied-algebra/resources/index.md
