@@ -21,8 +21,7 @@ Give examples of each of the following objects.
 :::
 
 ::: {.solution}
-For (a), take $G=C_4=\langle g:g^4=1
-angle$ and let $V=\RR^2$ with
+For (a), take $G=C_4=\langle g:g^4=1\rangle$ and let $V=\RR^2$ with
 $$
 g\longmapsto J=
 \begin{pmatrix}
