@@ -201,7 +201,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-COMPLEX-ANALYSIS-EXAM-PREP
   - [x] SRC-DUKE-BASIC-ANALYSIS-WINTER-2014
   - [x] SRC-EMORY-QUAL-PROBLEMS
-  - [ ] SRC-FIELDS-HOMEWORK-1
+  - [x] SRC-FIELDS-HOMEWORK-1
   - [ ] SRC-GATHMANN-AG
   - [ ] SRC-GRE-GR8767-CALCULUS-SELECTION
   - [ ] SRC-GRE-MATH-SUBJECT

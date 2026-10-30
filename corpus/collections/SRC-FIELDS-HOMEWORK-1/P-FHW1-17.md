@@ -22,3 +22,7 @@ $$
 $$
 with equality if and only if some basis of $K_2$ over $F$ is linearly independent over $K_1$.
 :::
+
+::: remark
+The sheet does not introduce $F$. The statement is meant for a common subfield $F\subseteq K_1\cap K_2$ with $[K_1:F]$ and $[K_2:F]$ finite.
+:::
