@@ -6,7 +6,8 @@ title: A continuous function with a finite limit at infinity is uniformly contin
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

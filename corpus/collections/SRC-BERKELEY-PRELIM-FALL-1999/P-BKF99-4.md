@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF99-4
 kind: problem
 title: Maximum modulus of a rational function on the closed upper half-plane
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

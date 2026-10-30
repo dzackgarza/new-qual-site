@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF99-5
 kind: problem
 title: Derivative of the matrix squaring map
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

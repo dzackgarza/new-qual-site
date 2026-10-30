@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF99-1
 kind: problem
 title: Dimension lower bound for the inverse image of a subspace
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

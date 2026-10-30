@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF99-2
 kind: problem
 title: Nested closed sets of vanishing diameter in a complete metric space intersect
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF99-6
 kind: problem
 title: Proper invariant subspaces and factors of the characteristic polynomial
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

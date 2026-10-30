@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF99-9
 kind: problem
 title: Three-dimensional differentiation-invariant spaces of smooth functions
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Ordinary Differential Equations]}
 relations: []
 review: draft
 audit:

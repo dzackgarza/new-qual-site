@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF99-3
 kind: problem
 title: Orthogonal idempotents from a direct-sum decomposition into left ideals
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

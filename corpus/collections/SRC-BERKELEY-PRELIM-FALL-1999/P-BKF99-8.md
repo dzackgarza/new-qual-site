@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF99-8
 kind: problem
 title: The contour integral $\frac1{2\pi i}\int_{\abs{z}=1}\frac{(z+2)^2}{z^2(2z-1)}\,dz$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:
@@ -81,7 +81,7 @@ At $z=0$ this equals $-12$.
 
 ::: {.pf-step #residue-at-half}
 $$
-\operatorname{Res}(F,1/2)=25.
+\operatorname{Res}(F,1/2)=\frac{25}{2}.
 $$
 
 ::: pf-proof
@@ -94,7 +94,7 @@ $$
 }_{z=1/2}
 =
 \frac{(5/2)^2}{2(1/2)^2}
-=25.
+=\frac{25}{2}.
 $$
 :::
 
@@ -102,7 +102,7 @@ $$
 
 ::: {.pf-step #integral-value}
 $$
-I=\boxed{13}.
+I=\boxed{\frac12}.
 $$
 
 ::: pf-proof
@@ -114,8 +114,8 @@ I
 =
 \operatorname{Res}(F,0)+\operatorname{Res}(F,1/2)
 =
--12+25
-=13.
+-12+\frac{25}{2}
+=\frac12.
 $$
 :::
 
