@@ -24,7 +24,7 @@ Show that $f$ is one-to-one on the punctured disc $\DD \backslash\{0\}$.
 What is the image of the circle $\abs{z}=r$ under this map when $0<r<1$ ?
 
 b.
-Show that $f$ is one-to-one on the domain $\CC \backslash \DD$.
+Show that $f$ is one-to-one on the domain $\CC \setminus \overline{\DD}$.
 What is the image of this domain under this map?
 
 c.
@@ -34,75 +34,83 @@ Describe the map $g$ by an explicit formula.
 :::
 
 ::: {.solution}
-**Part a**: That $f: \CC\smz\to \DD\smz$ is injective: compute the derivative as
+
+::: pf
+
+::: {.pf-step #eq}
+
+For $z,w\neq0$, $f(z)=f(w)$ if and only if $z=w$ or $zw=1$.
+
+::: pf-proof
+
+$2(f(z)-f(w))=(z-w)+\frac{w-z}{zw}=(z-w)\bigl(1-\frac1{zw}\bigr)$.
+
+:::
+
+:::
+
+::: {.pf-step #inj}
+
+$f$ is one-to-one on $\DD\setminus\{0\}$ and on $\CC\setminus\overline{\DD}$.
+
+::: pf-proof
+
+If $z,w$ both lie in $\DD\setminus\{0\}$, then $\abs{zw}<1$; if both lie in $\CC\setminus\overline{\DD}$, then $\abs{zw}>1$. In both cases $zw\neq1$, so Step [](#eq){.pf-ref} gives $z=w$ whenever $f(z)=f(w)$.
+
+:::
+
+:::
+
+::: {.pf-step #ellipse}
+
+For $0<r<1$, $f$ maps the circle $\abs{z}=r$ onto the ellipse
 $$
-f'(z) = {1\over 2}\qty{1 - {1\over z^2}}
-,$$
-which only vanishes at $z=\pm 1$.
-Away from 0 in $\DD$, $f'$ is nonzero and continuous, so by the inverse function theorem $f$ is a local homeomorphism onto its image, and in particular is injective.
-
-The images of circles: parameterize one as $\gamma(t) = Re^{it}$ for $t\in [-\pi, \pi]$.
-Note that if $R=1$, $f(\gamma(t)) = {1\over 2}\qty{e^{it} + e^{-it}} = \cos(t)$, so as $t$ increases from $-\pi\to \pi$, the interval $[-1, 1]$ is covered twice.
-For $0<R<1$,
+\frac{u^2}{A_r^2}+\frac{v^2}{B_r^2}=1,\qquad A_r=\tfrac12\bigl(\tfrac1r+r\bigr),\quad B_r=\tfrac12\bigl(\tfrac1r-r\bigr),
 $$
-f(\gamma(t))
-&= {1\over 2}\qty{ Re^{it} + {1\over Re^{it}}} \\
-&= {1\over 2}\qty{Re^{it} + \inverseof{R} e^{-it} } \\
-&= {1\over 2}\qty{R\cos(t) + iR\sin(t) + \inverseof{R}\cos(-t) + i\inverseof{R}\sin(-t) } \\
-&= {1\over 2}\qty{R\cos(t) + iR\sin(t) + \inverseof{R}\cos(t) - i\inverseof{R}\sin(-t) } \\
-&= {1\over 2}\qty{R+\inverseof{R}}\cos(t) + i{1\over 2}\qty{R-\inverseof{R}}\sin(t) \\
-&\coloneqq H_R \cos(t) + iV_R\sin(t)
-,$$
-which is generally the equation of an ellipse of horizontal radius $H_R$ and vertical radius $V_R$. As $R$ varies, these sweep out ellipses of vertical radii from 0 to $\infty$. One can compute the foci: their distance from $z=0$ is given by $c$, where
+with foci $\pm1$, traversed clockwise as $z$ runs counterclockwise.
+
+::: pf-proof
+
+For $z=re^{it}$, $f(z)=\frac12(re^{it}+r^{-1}e^{-it})=A_r\cos t-iB_r\sin t$. The foci are at $\pm\sqrt{A_r^2-B_r^2}=\pm1$.
+
+:::
+
+:::
+
+::: {.pf-step #image}
+
+$f(\DD\setminus\{0\})=f(\CC\setminus\overline{\DD})=\CC\setminus[-1,1]$.
+
+::: pf-proof
+
+For $w\in\CC$, the solutions of $f(z)=w$ are the roots of $z^2-2wz+1=0$, whose product is $1$. If $w=\cos t\in[-1,1]$, the roots are $e^{\pm it}$, both on the unit circle. If $w\notin[-1,1]$, neither root lies on the unit circle, because $f(e^{it})=\cos t\in[-1,1]$; since their product is $1$, exactly one root lies in $\DD\setminus\{0\}$ and the other in $\CC\setminus\overline{\DD}$.
+
+:::
+
+:::
+
+::: {.pf-step #inverse}
+
+Let $\sqrt{w^2-1}\coloneqq w\sqrt{1-w^{-2}}$ with the principal square root. Then
 $$
-c^2 = H_R^2 - V_R^2 = {1\over 4}(R+\inverseof{R})^2 - {1\over 4}(R-\inverseof{R})^2 = 1
-,$$
-so the foci are all at $\pm 1\in \RR$. One can check that these are clockwise when $0<R<1$ and counterclockwise when $R>1$.
-
-> In general, you take the coefficient for the major axis squared minus that of the minor axis squared.
-> The foci are along the major axis.
-
-**Part b**: The claim is that $f(\CC\sm\DD) = \CC\sm[-1, 1]$.
-
-Note that $f(z) = f(1/z)$, so for $z\neq 1/z$ there are exactly two preimages.
-These points are exactly $z=\pm 1$, so we need to take the domain $\Omega \coloneqq \CC\sm(\DD\union\theset{\pm 1})$ to get injectivity.
-Otherwise, for every $z\in \Omega$, exactly one of $z$ or $1/z$ is in $\DD$, so $f(z)$ takes on unique values in $\Omega$.
-By part 1, the images of circles of radius $R$ are ellipses, and these sweep out the entire plane outside of $[-1, 1]$:
-
-![attachments/JoukowskiMap.gif](../../assets/attachments/JoukowskiMap.gif)
-
-To be explicit, one can just solve for the two preimages.
-Setting $w=f(z)$ and solving for $z$ yields
+\boxed{g(w)=w-\sqrt{w^2-1}}
 $$
-w &= {1\over 2}\qty{z + {1\over z}} \\
-\implies 2wz &= z^2 + 1 \\
-\implies z^2 - 2wz + 1 &= 0 \\
-\implies z &= {2w \pm \sqrt{4w^2 -4} \over 2} \\
-\implies z &= w\pm \sqrt{w^2-1}
-,$$
-where in order to define $\sqrt{w^2-1}$, one needs a branch cut for $\Log$ along $[-1, 1]$, which is precisely what we're deleting from the image.
+is holomorphic on $\CC\setminus[-1,1]$, maps it into $\DD\setminus\{0\}$, and satisfies $g(f(z))=z$ for $z\in\DD\setminus\{0\}$.
 
-**Part c**: as in a usual conformal map problem, find a map to $\CC\sm[-1,1]\to \DD$.
+::: pf-proof
 
-- Send $-1\to 0$ and $1\to \infty$ with $z\mapsto {z+1\over z-1}$.
-  Checking that $f(0) = -1$, this yields $\CC\sm\RR_{\leq 0}$.
+$1-w^{-2}\in(-\infty,0]$ exactly when $w^2\in(0,1]$, that is, when $w\in[-1,1]\setminus\{0\}$; so $g$ is holomorphic on $\CC\setminus[-1,1]$. Since $(w-\sqrt{w^2-1})(w+\sqrt{w^2-1})=1$ and both factors are roots of $z^2-2wz+1$, Step [](#image){.pf-ref} shows that $\abs{g(w)}\neq1$ on the connected set $\CC\setminus[-1,1]$. As $w\to\infty$, $g(w)=w\bigl(1-\sqrt{1-w^{-2}}\bigr)\to0$, so $\abs{g}<1$ throughout, and $g\neq0$ because $g(w)(w+\sqrt{w^2-1})=1$. Finally, for $z\in\DD\setminus\{0\}$ the roots of $\zeta^2-2f(z)\zeta+1$ are $z$ and $1/z$, and $g(f(z))$ is the one in $\DD$, namely $z$.
 
-- Unwrap with $z\mapsto \sqrt{z}$ to obtain the right half-plane $-\pi/2<\Arg(z) < \pi/2$.
+:::
 
-- Apply the rotated Cayley map $z\mapsto {z-1\over z+1}$ to map this to $\DD$.
+:::
 
-This composes to
-$$
-g(z) &= {\sqrt{z+1\over z-1}  -1 \over \sqrt{z+1\over z-1} +1} \\
-&= { \qty{ \sqrt{z+1} - \sqrt{z-1}}^2 \over (z+1)-(z-1) } \\
-&= z - \sqrt{z^2-1}
-,$$
-and checking that it has the right inverse:
-$$
-w &= z-\sqrt{z^2-1} \\
-\implies (z-w)^2 &= z^2-1 \\
-\implies w^2+1 &= 2wz \\
-\implies z = {1\over 2}\qty{w + {1\over w}}
-.$$
+::: pf-qed
+
+Steps [](#inj){.pf-ref} and [](#ellipse){.pf-ref} answer (a); Steps [](#inj){.pf-ref} and [](#image){.pf-ref} answer (b), with image $\CC\setminus[-1,1]$; Step [](#inverse){.pf-ref} answers (c).
+
+:::
+
+:::
 
 :::

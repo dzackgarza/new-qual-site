@@ -24,46 +24,56 @@ $$
 :::
 
 ::: {.solution}
-Write $I$ for the integral, $\zeta_3\coloneqq e^{2\pi i\over 3}, \omega_3 \coloneqq e^{i\pi\over 3}$.
-Take a indented semicircular wedge $\Gamma$ at an angle of $2\pi/3$, noting the pole at $\omega_3 \coloneqq e^{i \pi \over 3}$:
 
-![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-30_06-01-59.png)
+Let $I$ be the integral; it converges because $0<a<3$. Let $z^{a-1}=\exp((a-1)\log z)$ with $\arg z\in(-\pi/2,3\pi/2)$, and let $f(z)=z^{a-1}/(1+z^3)$. Put $\omega=e^{i\pi/3}$. For $0<\varepsilon<1<R$, let $\Gamma$ be the boundary of the sector $\{\varepsilon<\abs{z}<R,\ 0<\arg z<2\pi/3\}$, oriented positively.
 
-Choosing a branch cut of $\log$ along $\theta = -\pi/2$, so $\arg(z) \in (-\pi/2, 3\pi/2)$, this makes $f(z) \coloneqq z^{\alpha-1}/(1+z^3)$ meromorphic on $\Gamma$.
+::: pf
 
-By the ML estimate, the integrals along $C_\eps, C_R$ will vanish in the limit.
+::: {.pf-step #res}
 
-The contribution from the contour: parameterize $\gamma_2$ as $\theset{\zeta_3 t\st t\in [\eps, R]}$, then
-$$
-\int_{\gamma_2}f(z) \dz 
-&= \int_R^\eps {(\zeta_3 t)^{\alpha - 1} \over 1 + (\zeta_3 t)^3} \zeta_3\dt \\
-&= \zeta_3 \zeta_3^{\alpha-1}\int_R^\eps {t^{\alpha-1} \over 1 + t^3}\dt \\
-&\to -\zeta_3^\alpha I
-,$$
-so the total contribution is 
-$$
-\oint_\Gamma f \to \qty{\int_{\gamma_1} + \int_{\gamma_2}}f = (1-\zeta_3^{\alpha}) I
-.$$
+$\displaystyle\int_\Gamma f\,dz=2\pi i\operatorname{Res}_{z=\omega}f=-\frac{2\pi i}{3}e^{i\pi a/3}$.
 
-Computing the contributions from residues:
-$$
-\Res_{z=\omega_3} f(z) 
-&= \lim_{z\to \omega_3} {(z-\omega_3) z^{\alpha-1} \over 1+z^3} \\
-&\eqLH \lim_{z\to\omega_3} {z^{\alpha-1} \over 3z^2} \\
-&= {1\over 3} \omega_3^{\alpha-3} \\
-&= -{1\over 3}\omega_3^\alpha
-.$$
+::: pf-proof
 
-Combining it all using the residue theorem:
-$$
-2\pi i \Res_{z=\omega_3} f(z) &= \oint_\gamma f \\
-\implies I 
-&= {-2\pi i\over 3} {\omega_3^\alpha \over 1-\zeta_3^\alpha } \\
-&= {-2\pi i\over 3} {1 \over \omega_3^{-\alpha} - \omega_3^\alpha } \\
-&= {-2\pi i\over 3} {1 \over -2i\sin\qty{\pi\alpha\over 3} } \\
-&= {\pi\over 3}\csc\qty{\alpha\pi\over 3}
-.$$
-
+The zeros of $1+z^3$ are $\omega,-1,\overline\omega$, and only $\omega$ lies inside the sector. It is a simple zero, so the residue is $\omega^{a-1}/(3\omega^2)=\omega^{a-3}/3=-e^{i\pi a/3}/3$, because $\omega^3=-1$.
 
 :::
 
+:::
+
+::: {.pf-step #arcs}
+
+The integrals over the arcs $\abs{z}=R$ and $\abs{z}=\varepsilon$ tend to $0$ as $R\to\infty$ and $\varepsilon\to0$.
+
+::: pf-proof
+
+On $\abs{z}=R$, $\abs{f}\le R^{a-1}/(R^3-1)$, and the arc has length $2\pi R/3$, so the integral is $O(R^{a-3})\to0$. On $\abs{z}=\varepsilon$, $\abs{f}\le\varepsilon^{a-1}/(1-\varepsilon^3)$, and the arc has length $2\pi\varepsilon/3$, so the integral is $O(\varepsilon^{a})\to0$.
+
+:::
+
+:::
+
+::: {.pf-step #ray}
+
+The integral over the ray $\arg z=2\pi/3$, from $Re^{2\pi i/3}$ to $\varepsilon e^{2\pi i/3}$, tends to $-e^{2\pi ia/3}I$.
+
+::: pf-proof
+
+With $z=te^{2\pi i/3}$, $z^{a-1}=t^{a-1}e^{2\pi i(a-1)/3}$, $z^3=t^3$ and $dz=e^{2\pi i/3}dt$, so the integral is $-e^{2\pi ia/3}\int_\varepsilon^R\frac{t^{a-1}}{1+t^3}\,dt$.
+
+:::
+
+:::
+
+::: pf-qed
+
+On $[\varepsilon,R]$ the integrand is $x^{a-1}/(1+x^3)$. By Steps [](#res){.pf-ref}, [](#arcs){.pf-ref} and [](#ray){.pf-ref}, $(1-e^{2\pi ia/3})I=-\frac{2\pi i}{3}e^{i\pi a/3}$. Since $1-e^{2\pi ia/3}=-2ie^{i\pi a/3}\sin(\pi a/3)$,
+$$
+\boxed{\int_0^\infty\frac{x^{a-1}}{1+x^3}\,dx=\frac{\pi}{3\sin(\pi a/3)}}.
+$$
+
+:::
+
+:::
+
+:::

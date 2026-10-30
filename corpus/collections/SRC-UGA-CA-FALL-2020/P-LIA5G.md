@@ -27,20 +27,51 @@ $$
 :::
 
 ::: {.solution}
-Let $M\coloneqq \sup_{z\in \bd U}\abs{f(z)}$.
-If $M=0$, then $f$ must be the constant zero function, so assume $M>0$.
 
-Suppose toward a contradiction that there exists a $z_0 \in U$ with $\abs{f(z_0)} = M$.
-Note that the map $z\mapsto \abs{z}$ is an open in discs that don't intersect $z=0$.
-Since $f$ is holomorphic, by the open mapping theorem $f$ is an open map, so consider $D_\eps(z_0)$ a small disk not containing $0$.
-Then $f(D_\eps(z_0))$ is open, and the composition $z\mapsto f(z) \mapsto \abs{f(z)}$ is an open map $D_\eps(z_0)\to \RR$.
-Now if $f$ is nonconstant, $\abs{f(D_\eps(z_0))} \containing (M-\eps, M+\eps)$ contains some open interval about $M$, which contradicts maximality of $f$ at $z_0$.
+::: pf
 
-> See notes for a proof using the mean value theorem.
+::: {.pf-step #nonconst}
 
-Suppose toward a contradiction that $f$ has no zeros in $U$.
-Then $g(z) \coloneqq 1/f(z)$ is holomorphic in $U$.
-Now if $\abs{f(z)} = C$ on $\bd U$, we have $\abs{g(z)} = \abs{1\over f(z)} = {1\over C}$ on $\bd U$, so $\max_{z\in U} \abs{f(z)} = C$ and $\min_{\abs{f(z)}} = {1\over C}$.
-Since $\abs{f(z)}$ is constant on the boundary, we must have $\max \abs{f(z)} = \min \abs{f(z)} = C$, so $f$ is constant on $\bd U$.
-By the identity principle, $f$ is constant on $U$, a contradiction.
+$f$ is nonconstant on $U$.
+
+::: pf-proof
+
+If $f$ were constant on $U$, it would be constant on $\overline U$ by continuity, because $U$ is dense in $\overline U$.
+
+:::
+
+:::
+
+::: {.pf-step #maxmod}
+
+For every $z_0\in U$, $\abs{f(z_0)}<\sup\{\abs{f(z)}:z\in\partial U\}$.
+
+::: pf-proof
+
+The set $\overline U$ is compact, so $\abs{f}$ attains a maximum $M$ on $\overline U$. By Step [](#nonconst){.pf-ref} and the open mapping theorem on the domain $U$, $f(U)$ is open. For $z_1\in U$, $f(U)$ contains a disk about $f(z_1)$, and that disk contains a point of modulus greater than $\abs{f(z_1)}$. So $\abs{f(z_1)}<M$ for every $z_1\in U$, and the maximum $M$ is attained at a point of $\partial U$. Hence $\abs{f(z_0)}<M=\max_{\partial U}\abs{f}$.
+
+:::
+
+:::
+
+::: {.pf-step #zero}
+
+If $\abs{f}=C$ on $\partial U$, then $f$ has a zero in $U$.
+
+::: pf-proof
+
+By Step [](#maxmod){.pf-ref}, $0\le\abs{f(z_0)}<C$ for $z_0\in U$, so $C>0$. Suppose $f$ has no zero in $U$. Then $f$ has no zero on $\overline U$, so $1/f$ is continuous on $\overline U$, holomorphic and nonconstant on $U$, with $\abs{1/f}=1/C$ on $\partial U$. Step [](#maxmod){.pf-ref} applied to $1/f$ gives $1/\abs{f(z_0)}<1/C$, that is, $\abs{f(z_0)}>C$, contrary to Step [](#maxmod){.pf-ref} applied to $f$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#maxmod){.pf-ref} and [](#zero){.pf-ref} prove the two parts.
+
+:::
+
+:::
+
 :::

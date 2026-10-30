@@ -28,22 +28,41 @@ Prove that either $g(z) \equiv 0$ or $g(z)=z$ for all $z \in \DD$.
 :::
 
 ::: {.solution}
-Note that there is a unique fixed point.
-We have $f(0) = 0$, so there is at least one, so suppose $a$ is another fixed point with $f(a) = a$.
-By Schwarz, $\abs{f(z)}\leq \abs{z}$ with equality at any nonzero point implying $f$ is a rotation, and $f(a) = a\implies \abs{f(a)} = \abs{a}$, so write $f(z) = e^{i\theta}z$.
-Now $f(a) = a = e^{i\theta }a$ forces $\theta = 0$, so $f(z) = z$ is the identity.
 
-Since $f(0) = 0$, the Schwarz lemma applies and either
+By the Schwarz lemma, $\abs{f(z)}\le\abs{z}$ on $\DD$, and either $f(z)=e^{i\theta}z$ for some real $\theta$, or $\abs{f(z)}<\abs{z}$ for all $z\neq0$.
 
-- $f(z) = e^{i\theta} z$ is a rotation, or
+::: pf
 
-- $\abs{f'(0)} < 1$ and $\abs{f(z)} < z$ for all $z\in \DD$.
+::: {.pf-step #contract}
 
-Supposing the latter, $f$ is a contraction, and $\abs{f_{n+1}(z)} < \abs{f_{n}(z)}$ for all $n$ and all $z$, so $\abs{f_n(z)} \convergesto{n\to\infty} 0$ for all $z$.
-Since $f_n\to g$ pointwise, this means $g(z) = 0$ for all $z$, making $g\equiv 0$.
+If $\abs{f(z)}<\abs{z}$ for all $z\neq0$, then $g\equiv0$.
 
-Otherwise, suppose $f$ is a rotation.
-Then if $f(z) = e^{i\theta}z$, $f_n(z) = e^{in\theta}z$.
-The pointwise limit $\lim_{n\to\infty}e^{in\theta}z$ can only exist if $\theta = 0$, otherwise this is periodic when $\theta$ is rational or the points $e^{i\theta}z, e^{2i\theta }z,\cdots$ form form a countably infinite set of distinct points.
-So $f(z) = z$, making $\lim_{n\to \infty}f_n(z) = z$ as well.
+::: pf-proof
+
+Fix $z\in\DD$ and $r$ with $\abs{z}\le r<1$. The function $f(w)/w$, extended by $f'(0)$ at $0$, is continuous on $\abs{w}\le r$ and has modulus less than $1$ there (at $0$, $\abs{f'(0)}<1$ by the Schwarz lemma). So $c_r\coloneqq\max_{\abs{w}\le r}\abs{f(w)/w}<1$, and $\abs{f(w)}\le c_r\abs{w}$ for $\abs{w}\le r$. Since $\abs{f_n(z)}\le\abs{z}\le r$ for all $n$, induction gives $\abs{f_n(z)}\le c_r^n\abs{z}\to0$.
+
+:::
+
+:::
+
+::: {.pf-step #rotation}
+
+If $f(z)=e^{i\theta}z$, then $g(z)=z$.
+
+::: pf-proof
+
+Here $f_n(z)=e^{in\theta}z$. Take $z\neq0$. Convergence of $f_n(z)$ forces $f_{n+1}(z)-f_n(z)=e^{in\theta}(e^{i\theta}-1)z\to0$, and $\abs{e^{in\theta}(e^{i\theta}-1)z}=\abs{e^{i\theta}-1}\abs{z}$, so $e^{i\theta}=1$. Then $f_n(z)=z$ for all $n$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#contract){.pf-ref} and [](#rotation){.pf-ref} cover the two cases of the Schwarz lemma.
+
+:::
+
+:::
+
 :::
