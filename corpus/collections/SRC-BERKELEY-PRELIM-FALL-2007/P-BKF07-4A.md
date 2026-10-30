@@ -6,7 +6,8 @@ title: A perturbed monotone sequence has a finite limit
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

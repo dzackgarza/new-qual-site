@@ -6,7 +6,8 @@ title: Entire functions satisfying harmonic-oscillator and double-angle identiti
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Finite groups whose every subgroup is a retract
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

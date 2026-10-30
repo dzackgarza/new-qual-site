@@ -6,7 +6,8 @@ title: Sum of residues of the reciprocal of a rapidly growing entire function
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

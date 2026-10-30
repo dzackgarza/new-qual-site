@@ -6,7 +6,8 @@ title: Subrings of the Gaussian integers
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

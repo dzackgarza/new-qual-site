@@ -6,7 +6,8 @@ title: A Hermitian matrix has the same kernel as its square
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

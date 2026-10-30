@@ -6,7 +6,8 @@ title: Possible rank triples for three matrices summing to zero
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

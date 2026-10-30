@@ -6,7 +6,8 @@ title: Closed coefficient sets map to closed linear-combination sets
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

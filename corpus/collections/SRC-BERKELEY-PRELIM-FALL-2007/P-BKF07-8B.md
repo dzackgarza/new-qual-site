@@ -6,7 +6,8 @@ title: Irreducible rational polynomials with all roots real
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Diagonalizability of consecutive powers of a matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

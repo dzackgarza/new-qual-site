@@ -6,7 +6,8 @@ title: Prime ideals of a product of two fields
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

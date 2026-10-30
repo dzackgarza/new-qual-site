@@ -6,7 +6,8 @@ title: Factorization $P=USV^T$ of a real matrix with $P^3=P$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

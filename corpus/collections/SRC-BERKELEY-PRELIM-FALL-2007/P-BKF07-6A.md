@@ -6,7 +6,8 @@ title: Zeros of a quartic in an annulus
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
