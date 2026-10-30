@@ -826,7 +826,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebraic-geometry/morphisms/separated-and-proper.md
   - [x] wiki/algebraic-geometry/morphisms/smooth-unramified-etale.md
   - [x] wiki/algebraic-geometry/resources.md
-  - [ ] wiki/algebraic-geometry/schemes/fibre-products-and-base-change.md
+  - [x] wiki/algebraic-geometry/schemes/fibre-products-and-base-change.md
   - [ ] wiki/algebraic-geometry/schemes/index.md
   - [ ] wiki/algebraic-geometry/schemes/proj-and-gluing.md
   - [ ] wiki/algebraic-geometry/schemes/properties-from-the-ring.md
