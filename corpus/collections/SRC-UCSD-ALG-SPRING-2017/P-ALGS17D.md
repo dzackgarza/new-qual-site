@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS17D
 kind: problem
-title: "Universal cyclically trilinear map for modules"
+title: Universal cyclically trilinear map for modules
 classification:
   areas:
   - algebra
@@ -20,13 +20,18 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-08
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The exam asks for a unique linear map phi without stating the factorization; added
+    "such that f = phi o u", which the solution proves.
 ---
 
 ::: {.problem}
 Let $R$ be a commutative ring, with unity, not equal to zero.
 If $M$ and $N$ are $R$-modules, call a multilinear map $f: M \times M \times M \to N$ cyclically trilinear if $$f(a, b, c) = f(b, c, a) \qquad \text{for all } a, b, c \in M.$$
 
-Show how to construct a universal cyclically trilinear map $u: M \times M \times M \to C_3(M)$, so that $u$ is cyclically trilinear and if $f: M \times M \times M \to N$ is any other cyclically trilinear map, then there is a unique linear map $\phi: C_3(M) \to N$.
+Show how to construct a universal cyclically trilinear map $u: M \times M \times M \to C_3(M)$, so that $u$ is cyclically trilinear and if $f: M \times M \times M \to N$ is any other cyclically trilinear map, then there is a unique linear map $\phi: C_3(M) \to N$ such that $f = \phi \circ u$.
 :::
 
 ::: {.solution}

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS17C
 kind: problem
-title: "Irreducible non-prime element and non-principal maximal ideal in Z[sqrt(-6)]"
+title: "Irreducible non-prime element and non-principal maximal ideal in $\\ZZ[\\sqrt{-6}]$"
 classification:
   areas:
   - algebra

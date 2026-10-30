@@ -22,7 +22,7 @@ source:
   - P-ALGS17C
   - P-ALGS17D
   - P-ALGS17E
-  - P-ALGS17F
+  - P-ALGS05G
   - P-ALGS17G
   date:
     kind: academic-term
