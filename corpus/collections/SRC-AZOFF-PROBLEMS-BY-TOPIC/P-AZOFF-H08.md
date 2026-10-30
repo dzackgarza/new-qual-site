@@ -256,3 +256,7 @@ Step [](#s7){.pf-ref} is the required eventual zero-count statement.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The radius $10$ plays no role in the first claim: for every $R>0$ there is $N_R$ such that $P_n$ has no zeros in $\abs z\le R$ for $n>N_R$. The same proof applies with $10$ replaced by $R$, because $P_n\to e^z$ uniformly on $\abs z\le R$ and $\abs{e^z}\geq e^{-R}$ there.
+:::

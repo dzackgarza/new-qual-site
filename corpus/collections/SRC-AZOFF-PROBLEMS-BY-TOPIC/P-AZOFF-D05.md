@@ -161,3 +161,8 @@ Step [](#s4){.pf-ref} is the required nonexistence statement.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+On the unit circle $\bar z = 1/z$, so the statement is the same as: no sequence of polynomials $p_n$ satisfies $p_n(z)\to\bar z$ uniformly on $\partial\DD$.
+The maximum modulus principle gives a second proof. Uniform convergence would make $\varepsilon_n \coloneqq \max_{\abs z=1}\abs{zp_n(z)-1}\to 0$, but $zp_n(z)-1$ is a polynomial whose value at $0$ is $-1$, so $\varepsilon_n\geq 1$ for every $n$.
+:::

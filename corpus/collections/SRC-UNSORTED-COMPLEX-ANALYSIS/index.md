@@ -171,8 +171,6 @@ source:
   - id: E-UDYDX
   - id: E-UJAF4
   - id: P-Z8MQR
-  - id: P-Q3LW9
-  - id: P-X7DPU
   - id: P-M9SRT
   - id: E-UUBBS
   - id: E-UVNVV
