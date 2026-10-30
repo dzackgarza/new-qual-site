@@ -78,7 +78,7 @@ Statement (2) is true.
 
 ::: pf-proof
 
-A differentiable function is continuous, hence Borel measurable. For each $n\ge2$, define the Borel function
+A differentiable function is continuous, hence Borel measurable. For each $n\ge3$, define the Borel function
 $$
 q_n(x)=
 \begin{cases}
