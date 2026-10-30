@@ -18,7 +18,7 @@ Locally free sheaves do not form an abelian category: the cokernel of $\OO_{\AA^
 [[D-MODPIC]]
 
 For the comparison with divisor classes, see [[algebraic-geometry/divisors/index|divisors]].
-A globally generated line bundle $\mcl$ with a basis $s_0,\ldots,s_n$ of $H^0(X,\mcl)$ defines a morphism $X\to\PP^n$, and this morphism is a closed embedding exactly when $\mcl$ is very ample.
+For $X$ proper over a field, a globally generated line bundle $\mcl$ with a basis $s_0,\ldots,s_n$ of $H^0(X,\mcl)$ defines a morphism $X\to\PP^n$, and this morphism is a closed embedding exactly when $\mcl$ is very ample.
 
 The twisting sheaves $\OO(d)$ are constructed in [[algebraic-geometry/sheaves-of-modules/quasicoherence|quasicoherence and twisting]].
 
