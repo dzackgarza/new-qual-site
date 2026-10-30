@@ -26,33 +26,30 @@ where $\gamma_R \definedas \theset{ \abs{z} = R, \Arg(z) \in [0, \alpha]}$ is an
 :::
 
 ::: {.solution}
-Key observation:
+::: pf
+
+::: {.pf-step #parametrize}
+For $R' > R$,
 $$
-iA\alpha = \int_\gamma {A\over z}\dz
-.$$
-Why this is true:
+\int_{\gamma_{R'}}f(z)\,dz - i\alpha A =i\int_0^\alpha \bigl(R'e^{it}f(R'e^{it}) - A\bigr)\,dt.
 $$
-\int_\gamma {A\over z}\dz = \int_0^\alpha {1\over Re^{it}} iRe^{it}dt
-= \int_0^\alpha iA \dt = iA\alpha
-.$$
 
-Now estimate the difference:
-
-$$
-\abs{ \int_\gamma f(z) \dz - iA\alpha }
-&= \abs{ \int_\gamma f(z) \dz - \int_\gamma {A\over z} \dz}\\
-&= \abs{\int_\gamma f(z) - {A\over z} \dz} \\
-&= \abs{\int_\gamma{zf(z) - A \over z} \dz} \\
-&\leq \int_\gamma \abs{zf(z) - A \over z} \dz \\
-&= \int_\gamma { \abs{zf(z) - A} \over R} \dz \\
-&\leq {1\over R } \int_\gamma \norm{zf(z) - A}_{\infty, \gamma} \dz \\
-&= {\eps\over R}\cdot \length(\gamma) \\
-&= {\eps \over R} \cdot R\alpha \\
-&= \eps \alpha \\
-&\convergesto{R\to\infty}0
-.$$
-
-
+::: pf-proof
+Parametrize $\gamma_{R'}$ by $z=R'e^{it}$, $0\le t\le\alpha$, so $dz = iR'e^{it}\,dt$, and write $i\alpha A = i\int_0^\alpha A\,dt$.
+:::
 
 :::
 
+::: pf-step
+$\lim_{R'\to\infty}\int_{\gamma_{R'}}f(z)\,dz=i\alpha A$.
+
+::: pf-proof
+Let $\varepsilon > 0$.
+Since $zf(z)\to A$ as $z \to \infty$ in $\Omega$, there is $R_\varepsilon$ with $\abs{zf(z) - A} < \varepsilon$ for $z \in \Omega$, $\abs{z} > R_\varepsilon$.
+For $R' > \max(R, R_\varepsilon)$, step [](#parametrize){.pf-ref} gives $\abs{\int_{\gamma_{R'}}f(z)\,dz - i\alpha A} \leq \alpha\varepsilon$.
+:::
+
+:::
+
+:::
+:::

@@ -33,34 +33,36 @@ $$
 :::
 
 ::: {.solution}
-**Part 1**:
-For ease of notation, let $z=z_1$ and $w=z_2$
-We want to show
-$$
-\abs{1- z\bar{w}} - \abs{z-w}^2 
-= \qty{{1 - \abs{z}^2 }} \qty{{1 - \abs{w}^2}}
-.$$
+::: pf
 
-So write
-$$
-\abs{1- z\bar{w}} - \abs{z-w}^2 
-&= (1-z\bar w)(1-\bar z w) - (z-w)(\bar z - \bar w) \\
-&= 1 - z\bar w - \bar z w - \abs{z}^2\abs{w}^2 - \abs{z}^2 - \abs{w}^2 + w\bar{z} + z\bar{w} \\
-&= 1 - \abs{z}^2\abs{w}^2 - \abs{z}^2 - \abs{w}^2 \\
-&=(1-\abs z^2)(1-\abs w^2)
-.$$
+::: {.pf-step #identity}
+(a) $\abs{1-\bar z_1z_2}^2-\abs{z_1-z_2}^2=(1-\abs{z_1}^2)(1-\abs{z_2}^2)$.
 
-
-**Part 2 and 3**:
-$$
-\abs{z-w \over 1 - \bar z w}^2 \leq 1 
-&\iff 0 \leq \abs{1 - \bar z w}^2 - \abs{z-w}^2 \\
-&\iff 0 \leq (1 - \abs z^2 )(1 - \abs w^2)
-,$$
-where we've used part 1.
-But this holds when $\abs{z}, \abs{w} < 1$: then $1 - \abs z^2 > 0$ and $1 - \abs w^2 > 0$, so their product $(1 - \abs z^2)(1 - \abs w^2) > 0$, making the RHS positive.
-Moreover if $\abs{z} = \abs{w} = 1$, the RHS is zero, yielding equalities at every step instead.
-
+::: pf-proof
+Expanding, $\abs{1-\bar z_1z_2}^2 = 1-\bar z_1 z_2 - z_1\bar z_2+\abs{z_1}^2\abs{z_2}^2$ and $\abs{z_1-z_2}^2=\abs{z_1}^2+\abs{z_2}^2-\bar z_1 z_2-z_1\bar z_2$. The difference is $1-\abs{z_1}^2-\abs{z_2}^2+\abs{z_1}^2\abs{z_2}^2$, which factors as stated.
+:::
 
 :::
 
+::: pf-step
+(b) If $\abs{z_1},\abs{z_2}<1$, then $\abs{\frac{z_1-z_2}{1-\bar z_1z_2}}<1$.
+
+::: pf-proof
+The denominator is nonzero because $\abs{\bar z_1 z_2}<1$. The right side of step [](#identity){.pf-ref} is positive, so $\abs{z_1-z_2}<\abs{1-\bar z_1z_2}$.
+:::
+
+:::
+
+::: pf-step
+(c) If $z_1\neq z_2$ and $\bar z_1 z_2\neq 1$, then $\abs{\frac{z_1-z_2}{1-\bar z_1z_2}}=1$ if and only if $\abs{z_1}=1$ or $\abs{z_2}=1$.
+
+::: pf-proof
+When the denominator is nonzero, the modulus equals $1$ exactly when the left side of step [](#identity){.pf-ref} is zero, that is, when $(1-\abs{z_1}^2)(1-\abs{z_2}^2)=0$.
+If $\abs{z_1}=1$, then $\bar z_1 z_2 = 1$ would force $z_2 = 1/\bar z_1 = z_1$; likewise if $\abs{z_2}=1$. So under the hypothesis $z_1\neq z_2$ the quotient is defined whenever $\abs{z_1}=1$ or $\abs{z_2}=1$.
+:::
+
+:::
+
+:::
+
+:::
