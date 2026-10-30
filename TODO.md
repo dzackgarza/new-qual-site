@@ -806,7 +806,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebraic-geometry/curves-and-surfaces/blowups-and-the-classification-of-surfaces.md
   - [x] wiki/algebraic-geometry/curves-and-surfaces/curves-in-projective-space.md
   - [x] wiki/algebraic-geometry/curves-and-surfaces/elliptic-curves-over-c.md
-  - [ ] wiki/algebraic-geometry/curves-and-surfaces/elliptic-curves.md
+  - [x] wiki/algebraic-geometry/curves-and-surfaces/elliptic-curves.md
   - [ ] wiki/algebraic-geometry/curves-and-surfaces/embeddings-and-jacobians.md
   - [ ] wiki/algebraic-geometry/curves-and-surfaces/genus.md
   - [ ] wiki/algebraic-geometry/curves-and-surfaces/index.md
