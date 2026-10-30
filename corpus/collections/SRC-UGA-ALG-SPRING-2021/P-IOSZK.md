@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let m
+Let
 $$
 A \coloneqq
 \begin{bmatrix}
@@ -57,124 +57,88 @@ Write down the minimal polynomial of $A$.
 
 :::
 
+
 ::: {.solution}
-\envlist
 
-::: {.proof title="parts a and b"}
-\envlist
+::: pf
 
-- Write $\chi_A(t) = t^3 - T_1 t^2 + T_2 t - T_3$ where $T_i \coloneqq \tr\qty{\Wedgepower^i A}$:
+::: {.pf-step #char}
 
-  - $T_1 = \tr(A) = 4-1+1=4$.
+$\chi_A(t)=(t-2)(t-1)^2$.
 
-  - $T_2 = (-1-2) + (4+2) + (-4-6) = 5$.
+::: pf-proof
 
-  - $T_3 = \det(A) = 4(-1-2) -1(-10) + (-1)(-6+2) = 2$.
-
-- So $\chi_A(t) = t^3 - 4t^2 + 5t-2$.
-
-- Try rational roots test: $r \in \theset{\pm 2/1}$, and check that 2 is root.
-
-- By polynomial long division, $\chi_A(t) / (t-2) = t^2-2t+1 = (t-1)^2$.
-
-- So the eigenvalues are $\lambda = 2, 1$.
-
-- $\lambda = 2$:
-
-  - Set $U\coloneqq A-\lambda I$, then find $\RREF(U)$ to compute its kernel:
-  $$
-  U \coloneqq
-  \begin{bmatrix}
-  2 & 1 & -1
-  \\
-  -6 & -3 & 2
-  \\
-  2 & 1 & -1
-  \end{bmatrix}
-  \leadsto
-  \begin{bmatrix}
-  2 & 1 & 0
-  \\
-  0 & 0 & 1
-  \\
-  0 & 0 & 0
-  \end{bmatrix}
-  ,$$
-  which yields $v_1 = [1,-2,0]$.
-
-- $\lambda = 2$:
-
-  - Similarly,
-  $$
-  U \coloneqq 
-  \begin{bmatrix}
-  3 & 1 & -1 \\
-  -6 & -2 & 2 \\
-  2 & 1 & 0
-  \end{bmatrix}
-  \leadsto  
-  \begin{bmatrix}
-  1 & 0 & -1
-  \\
-  0 & 1 & 2
-  \\
-  0 & 0 & 0
-  \end{bmatrix}
-  ,$$
-  which yields $v_2 = [1,-2,1]$.
-
-  - Solve $Uw = v_3$:
-  $$
-  \begin{bmatrix}
-  3 & 1 & -1 & 1 \\
-  -6 & -2 & 2 & -2 \\
-  2 & 1 & 0 & 1
-  \end{bmatrix}
-  \leadsto
-  \begin{bmatrix}
-  1 & 0 & -1 & 0 \\
-  0 & 1 & 2 & 1 \\
-  0 & 0 & 0 & 0
-  \end{bmatrix}
-  ,$$
-  so take $v_3 = [0,1,0]$.
-
-- Putting things together:
-$$
-A &= \inverseof{P} J P \text{ where } \\
-J = J_1(\lambda = 2) \oplus J_2(\lambda = 1) 
-&=
-\begin{bmatrix}
-2 & 0 & 0
-\\
-0 & 1 & 1
-\\
-0 & 0 & 1
-\end{bmatrix} \\
-P = [v_1, v_2, v_3] 
-&= 
-\begin{bmatrix}
-1 & 1 & 0
-\\
--2 & -2 & 1
-\\
-0 & 1 & 0
-\end{bmatrix}
-.$$
+$\operatorname{tr}A=4$, the sum of the principal $2\times2$ minors is $2+6-3=5$, and $\det A=4(-3)-1(-10)+(-1)(-4)=2$. Hence $\chi_A(t)=t^3-4t^2+5t-2$. Since $\chi_A(2)=0$, division gives $\chi_A(t)=(t-2)(t^2-2t+1)$.
 
 :::
 
-::: {.proof title="part c"}
-\envlist
+:::
 
-- Write $\min_A(t) = (t-2)(t-1)^{\ell_1}$, then since $\min_A(t)$ divides $\chi_A(t)$ either $\ell_1 = 1, 2$.
+::: {.pf-step #eig}
 
-- $\ell_1$ is the size of the **largest** block corresponding to $\lambda = 1$, which is size 2, so $\lambda_1=2$.
+$v_1=(1,-2,0)^T$ spans $\ker(A-2I)$, and $v_2=(1,-2,1)^T$ spans $\ker(A-I)$.
 
-- Thus 
+::: pf-proof
+
+Direct multiplication gives $(A-2I)v_1=0$ and $(A-I)v_2=0$. The matrix
 $$
-\min_A(t) = (t-2)(t-1)^2
-.$$
+A-I=\begin{bmatrix}3&1&-1\\-6&-2&2\\2&1&0\end{bmatrix}
+$$
+has rank $2$, because its first and third rows are independent and the second row is $-2$ times the first. So $\ker(A-I)$ has dimension $1$. The eigenvalue $2$ has algebraic multiplicity $1$, so $\ker(A-2I)$ also has dimension $1$.
+
+:::
+
+:::
+
+::: {.pf-step #jcf}
+
+$$
+\boxed{J=\begin{bmatrix}2&0&0\\0&1&1\\0&0&1\end{bmatrix}}
+$$
+
+::: pf-proof
+
+By Step [](#char){.pf-ref}, the eigenvalue $1$ has algebraic multiplicity $2$. By Step [](#eig){.pf-ref}, it has geometric multiplicity $1$, so it has a single Jordan block of size $2$. The eigenvalue $2$ has one block of size $1$.
+
+:::
+
+:::
+
+::: {.pf-step #conj}
+
+With $v_3=(0,1,0)^T$,
+$$
+\boxed{P=[v_1\mid v_2\mid v_3]=\begin{bmatrix}1&1&0\\-2&-2&1\\0&1&0\end{bmatrix}}
+$$
+satisfies $P^{-1}AP=J$.
+
+::: pf-proof
+
+$(A-I)v_3=(1,-2,1)^T=v_2$, so $Av_3=v_2+v_3$. Also $Av_1=2v_1$ and $Av_2=v_2$, so $AP=PJ$. Expansion along the third row gives $\det P=-(1\cdot1-0\cdot(-2))=-1\neq0$, so $P$ is invertible.
+
+:::
+
+:::
+
+::: {.pf-step #min}
+
+$$
+\boxed{m_A(t)=(t-2)(t-1)^2}
+$$
+
+::: pf-proof
+
+The exponent of each factor of the minimal polynomial is the size of the largest Jordan block for that eigenvalue. By Step [](#jcf){.pf-ref}, these sizes are $1$ for the eigenvalue $2$ and $2$ for the eigenvalue $1$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#jcf){.pf-ref}, [](#conj){.pf-ref} and [](#min){.pf-ref} prove parts (a), (b) and (c).
+
+:::
 
 :::
 

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-IPPKZ
 kind: problem
-title: Spring 2021
+title: A zero divisor in $(\ZZ/n\ZZ)[x]$ is annihilated by a nonzero constant
 classification:
   areas:
-  - algebra
+    - algebra
   topics:
-  - Polynomials
-  - Rings
-  - Integral Domains
+    - Polynomials
+    - Rings
+    - Integral Domains
 relations: []
 review: draft
 ---
