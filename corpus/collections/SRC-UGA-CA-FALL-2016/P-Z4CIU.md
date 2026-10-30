@@ -20,28 +20,39 @@ $$f(z) = z^7 - 5 z^3 +12 =0$$ lie between the circles $\abs{z}=1$ and $\abs{z}=2
 :::
 
 ::: {.solution}
-On $\abs{z} \leq 1$:
 
-- Big: $M(z) = 12$
-- Small: $m(z) = z^6 - 5z^3$
+::: pf
 
-For $\abs{z} = 1$,
-$$
-\abs{m(z)} \coloneqq \abs{z^7-5z^3}\leq \abs{z}^7 + 5\abs{z}^3 = 6 < 12 \coloneqq \abs{M(z)}
-,$$
-so $0 = Z_M = Z_{f}$.
+::: {.pf-step #inner}
 
-On $\abs{z} \leq 2$,
+$f$ has no zeros in $\abs{z}\le1$.
 
-- Big: $M(z) = z^7$
-- Small: $m(z) = -5z^3 + 12$
+::: pf-proof
 
-On $\abs{z} = 2$,
-$$
-\abs{m(z)} \coloneqq \abs{-5z^3 + 12} \leq 5\abs{z}^2 + 12 = 32 < 128 = 2^7 \coloneqq \abs{M(z)}
-,$$
-so $7 = Z_M = Z_{f}$.
+For $\abs{z}\le1$, $\abs{z^7-5z^3}\le1+5=6<12$, so $\abs{f(z)}\ge12-6>0$.
 
-So $f$ has 7 zeros in $1 \leq \abs{z} \leq 2$.
 :::
 
+:::
+
+::: {.pf-step #outer}
+
+$f$ has all seven of its zeros in $\abs{z}<2$.
+
+::: pf-proof
+
+On $\abs{z}=2$, $\abs{-5z^3+12}\le5\cdot8+12=52<128=\abs{z^7}$. By Rouché's theorem, $f=z^7+(-5z^3+12)$ and $z^7$ have the same number of zeros in $\abs{z}<2$, namely seven counted with multiplicity. Since $f$ has degree seven, these are all of its zeros.
+
+:::
+
+:::
+
+::: pf-qed
+
+By Steps [](#inner){.pf-ref} and [](#outer){.pf-ref}, every zero $z$ of $f$ satisfies $1<\abs{z}<2$.
+
+:::
+
+:::
+
+:::

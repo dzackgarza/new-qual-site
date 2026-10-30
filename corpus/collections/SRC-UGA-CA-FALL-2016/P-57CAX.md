@@ -25,7 +25,7 @@ Assume the existence of a non-negative integer $m$, and of positive constants $L
 Prove that $f$ is a polynomial of degree $\leq m$.
 
 (b) Let $f:{\CC}\rightarrow {\CC}$ be an entire function.
-Suppose that there exists a real number M such that for all $z\in {\CC}$ $$\mbox{\textrm Re} (f) \leq M.$$ Prove that $f$ must be a constant.
+Suppose that there exists a real number M such that for all $z\in {\CC}$ $$\operatorname{Re}(f) \leq M.$$ Prove that $f$ must be a constant.
 :::
 
 ::: {.solution}
@@ -78,7 +78,7 @@ $g$ is entire (composition of entire functions), and $\abs{g(z)} = e^{\Re f(z)} 
 
 ::: pf-proof
 
-By Liouville's theorem, the bounded entire function $g$ of step [](#s3){.pf-ref} is constant; then $f = \log g$ is locally constant, and since $\CC$ is connected, $f$ is constant.
+By Liouville's theorem, the bounded entire function $g$ of step [](#s3){.pf-ref} is constant; so $0=g'=f'e^{f}$. Since $e^{f}$ never vanishes, $f'\equiv0$ on the connected set $\CC$, and $f$ is constant.
 
 :::
 
