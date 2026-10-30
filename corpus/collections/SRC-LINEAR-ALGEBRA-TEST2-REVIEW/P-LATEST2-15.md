@@ -6,7 +6,9 @@ title: Evaluate a linear functional from two values
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Functionals
+  - Linear Maps
 relations: []
 review: draft
 audit:

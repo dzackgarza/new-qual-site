@@ -6,7 +6,9 @@ title: Rank of the matrix containing 1 through 25
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Rank
+  - Row Reduction
 relations: []
 review: draft
 audit:

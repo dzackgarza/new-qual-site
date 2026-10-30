@@ -6,7 +6,10 @@ title: Dimension of a span of six vectors
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Span
+  - Dimension
+  - Linear Independence
 relations: []
 review: draft
 audit:

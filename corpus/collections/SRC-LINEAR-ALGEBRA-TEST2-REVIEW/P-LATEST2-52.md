@@ -6,7 +6,9 @@ title: Larger eigenvalue of a symmetric $2\times2$ matrix
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Eigenvalues
+  - Symmetric Matrices
 relations: []
 review: draft
 audit:

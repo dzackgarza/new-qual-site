@@ -6,7 +6,10 @@ title: Dimensions of cubic polynomials and a vanishing subspace
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Polynomial Spaces
+  - Dimension
+  - Subspaces
 relations: []
 review: draft
 audit:

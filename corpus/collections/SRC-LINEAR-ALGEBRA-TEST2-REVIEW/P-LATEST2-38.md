@@ -6,7 +6,9 @@ title: A hundredth power of a cyclic permutation matrix
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Permutation Matrices
+  - Matrix Powers
 relations: []
 review: draft
 audit:

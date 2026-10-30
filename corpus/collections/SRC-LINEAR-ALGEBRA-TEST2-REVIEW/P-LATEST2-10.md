@@ -6,7 +6,9 @@ title: Decode a matrix-encrypted four-letter message
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Matrix Multiplication
+  - Matrix Inverses
 relations: []
 review: draft
 audit:

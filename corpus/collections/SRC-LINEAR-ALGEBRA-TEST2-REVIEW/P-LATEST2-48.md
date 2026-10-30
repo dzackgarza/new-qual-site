@@ -6,7 +6,10 @@ title: Commutator of differentiation and multiplication by $x$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Operators
+  - Differentiation Operator
+  - Commutators
 relations: []
 review: draft
 audit:
