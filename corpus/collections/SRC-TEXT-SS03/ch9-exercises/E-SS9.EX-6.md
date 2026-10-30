@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-Prove that $\wp ^ { \prime \prime }$ is a quadratic polynomial in $\wp$
+Prove that $\wp''$ is a quadratic polynomial in $\wp$.
 :::
 
 ::: {.solution}

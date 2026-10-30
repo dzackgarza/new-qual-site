@@ -19,12 +19,12 @@ audit:
 
 ::: {.exercise}
 By rearranging the series
-
 $$
-\frac {1}{z ^ {2}} + \sum_ {\omega \in \Lambda^ {*}} \left[ \frac {1}{(z + \omega) ^ {2}} - \frac {1}{\omega^ {2}} \right],
+\frac{1}{z^2} + \sum_{\omega \in \Lambda^*} \left[ \frac{1}{(z + \omega)^2} - \frac{1}{\omega^2} \right],
 $$
+show directly, without differentiation, that $\wp(z + \omega) = \wp(z)$ whenever $\omega \in \Lambda$.
 
-show directly, without diferentiation, that $\wp ( z + \omega ) = \wp ( z )$ whenever $\omega \in \Lambda .$ [Hint: For R suficiently large, note that $\wp ( z ) = \wp ^ { R } ( z ) + O ( 1 / R )$ where $\begin{array} { r } { \dot { \wp } ^ { R } ( z ) = z ^ { - 2 } + \sum _ { 0 < \abs{ \omega } < R } ( ( z + \omega ) ^ { - 2 } - \omega ^ { - 2 } ) } \end{array}$ Next, observe that both $\boldsymbol { \wp } ^ { R } ( z + 1 ) - \boldsymbol { \wp } ^ { R } ( z )$ and $\wp ^ { R } ( z + \tau ) - \wp ^ { R } ( z )$ are $\begin{array} { r } { O ( \sum _ { R - c < \abs{ \omega } < R + c } \abs{ \omega } ^ { - 2 } ) = O ( 1 / R ) . ] } \end{array}$
+[Hint: For $R$ sufficiently large, note that $\wp(z) = \wp^R(z) + O(1/R)$ where $\wp^R(z) = z^{-2} + \sum_{0 < \abs{\omega} < R} ((z + \omega)^{-2} - \omega^{-2})$. Next, observe that both $\wp^R(z + 1) - \wp^R(z)$ and $\wp^R(z + \tau) - \wp^R(z)$ are $O\left( \sum_{R - c < \abs{\omega} < R + c} \abs{\omega}^{-2} \right) = O(1/R)$.]
 :::
 
 ::: {.solution}

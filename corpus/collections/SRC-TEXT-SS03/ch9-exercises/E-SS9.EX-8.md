@@ -19,25 +19,21 @@ audit:
 
 ::: {.exercise}
 Let
-
 $$
-E _ {4} (\tau) = \sum_ {(n, m) \neq (0, 0)} \frac {1}{(n + m \tau) ^ {4}}
+E_4(\tau) = \sum_{(n, m) \neq (0, 0)} \frac{1}{(n + m\tau)^4}
 $$
+be the Eisenstein series of order $4$.
 
-be the Eisenstein series of order 4.
-
-(a) Show that $E _ { 4 } ( \tau ) \to \pi ^ { 4 } / 4 5$ as $\operatorname{Im} ( \tau ) \to \infty$
+(a) Show that $E_4(\tau) \to \pi^4/45$ as $\Im(\tau) \to \infty$.
 
 (b) More precisely,
-
 $$
-\abs{ E _ {4} (\tau) - \frac {\pi^ {4}}{4 5} } \leq c e ^ {- 2 \pi t} \quad \text { if } \tau = x + i t \text { and } t \geq 1.
+\abs{E_4(\tau) - \frac{\pi^4}{45}} \leq ce^{-2\pi t} \quad \text{if } \tau = x + it \text{ and } t \geq 1.
 $$
 
 (c) Deduce that
-
 $$
-\abs{ E _ {4} (\tau) - \tau^ {- 4} \frac {\pi^ {4}}{4 5} } \leq c t ^ {- 4} e ^ {- 2 \pi / t} \quad \text { if } \tau = i t \text { and } 0 <   t \leq 1.
+\abs{E_4(\tau) - \tau^{-4}\frac{\pi^4}{45}} \leq ct^{-4} e^{-2\pi/t} \quad \text{if } \tau = it \text{ and } 0 < t \leq 1.
 $$
 :::
 

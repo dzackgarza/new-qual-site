@@ -18,13 +18,11 @@ audit:
 ---
 
 ::: {.exercise}
-Suppose that a meromorphic function $f$ has two periods $\omega _ { 1 }$ and $\omega _ { 2 }$ , with $\omega _ { 2 } / \omega _ { 1 } \in \RR$
+Suppose that a meromorphic function $f$ has two periods $\omega_1$ and $\omega_2$, with $\omega_2/\omega_1 \in \RR$.
 
-(a) Suppose $\omega _ { 2 } / \omega _ { 1 }$ is rational, say equal to $p / q ,$ , where $p$ and $q$ are relatively prime integers.
-Prove that as a result the periodicity assumption is equivalent to the assumption that $f$ is periodic with the simple period $\begin{array} { r } { \omega _ { 0 } = \frac { 1 } { q } \omega _ { 1 } } \end{array}$ [Hint: Since p and q are relatively prime, there exist integers m and n such that $m q + n p = 1$ (Corollary 1.3, Chapter 8, Book I).]
+(a) Suppose $\omega_2/\omega_1$ is rational, say equal to $p/q$, where $p$ and $q$ are relatively prime integers. Prove that as a result the periodicity assumption is equivalent to the assumption that $f$ is periodic with the simple period $\omega_0 = \frac{1}{q}\omega_1$. [Hint: Since $p$ and $q$ are relatively prime, there exist integers $m$ and $n$ such that $mq + np = 1$ (Corollary 1.3, Chapter 8, Book I).]
 
-(b) If $\omega _ { 2 } / \omega _ { 1 }$ is irrational, then $f$ is constant.
-To prove this, use the fact that $\{ m - n \tau \}$ is dense in R whenever $\tau$ is irrational and m, n range over the integers.
+(b) If $\omega_2/\omega_1$ is irrational, then $f$ is constant. To prove this, use the fact that $\{m - n\tau\}$ is dense in $\RR$ whenever $\tau$ is irrational and $m, n$ range over the integers.
 :::
 
 ::: {.solution}
