@@ -4,7 +4,7 @@ id: P-AGFS15-01
 kind: problem
 title: Rank-one 2-by-3 matrices as an affine variety
 classification:
-  areas: [algebra]
+  areas: [algebraic-geometry]
   topics: []
 relations: []
 review: draft

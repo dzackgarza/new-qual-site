@@ -4,7 +4,7 @@ id: P-AGFS15-05
 kind: problem
 title: Divisors of coordinates and differentials on a cubic curve
 classification:
-  areas: [algebra]
+  areas: [algebraic-geometry]
   topics: []
 relations: []
 review: draft

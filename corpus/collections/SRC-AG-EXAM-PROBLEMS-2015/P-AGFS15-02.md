@@ -4,7 +4,7 @@ id: P-AGFS15-02
 kind: problem
 title: Morphisms of affine varieties and coordinate-ring maps
 classification:
-  areas: [algebra]
+  areas: [algebraic-geometry]
   topics: []
 relations: []
 review: draft
@@ -20,18 +20,22 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Verified both coordinate-ring implications and the affine-line and affine-plane automorphism claims by explicit algebra and counterexamples.
+- event: source-checked
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Source part (d) prints b in k; the statement writes b in k^2, the intended translation vector.
 ---
 ::: {.problem}
 Let $f:X\to Y$ be a morphism of affine varieties and let $f^\sharp:A(Y)\to A(X)$ be the induced homomorphism of coordinate rings.
 Determine whether each statement is true or false.
 
-1. $f$ is surjective if and only if $f^\sharp$ is injective.
+(a) $f$ is surjective if and only if $f^\sharp$ is injective.
 
-2. $f$ is injective if and only if $f^\sharp$ is surjective.
+(b) $f$ is injective if and only if $f^\sharp$ is surjective.
 
-3. If $f:\AA^1\to\AA^1$ is an isomorphism, then $f$ is affine linear: $f(x)=ax+b$ for some $a,b\in k$.
+(c) If $f:\AA^1\to\AA^1$ is an isomorphism, then $f$ is affine linear: $f(x)=ax+b$ for some $a,b\in k$.
 
-4. If $f:\AA^2\to\AA^2$ is an isomorphism, then $f$ is affine linear: $f(x)=Ax+b$ for some $A\in\operatorname{Mat}_{2,2}(k)$ and $b\in k^2$.
+(d) If $f:\AA^2\to\AA^2$ is an isomorphism, then $f$ is affine linear: $f(x)=Ax+b$ for some $A\in\operatorname{Mat}_{2,2}(k)$ and $b\in k^2$.
 :::
 
 ::: {.solution}
@@ -40,7 +44,7 @@ Determine whether each statement is true or false.
 
 ::: {.pf-step #s1}
 
-Statement 1 is $\boxed{\text{false}}$.
+Statement (a) is $\boxed{\text{false}}$.
 
 ::: pf-proof
 
@@ -62,7 +66,7 @@ is the natural inclusion, so it is injective, but $j$ is not surjective because 
 
 ::: {.pf-step #s2}
 
-Statement 2 is $\boxed{\text{false}}$.
+Statement (b) is $\boxed{\text{false}}$.
 
 ::: pf-proof
 
@@ -84,7 +88,7 @@ is not surjective because $t^{-1}$ is not in its image.
 
 ::: {.pf-step #s3}
 
-Statement 3 is $\boxed{\text{true}}$.
+Statement (c) is $\boxed{\text{true}}$.
 
 ::: pf-proof
 
@@ -112,7 +116,7 @@ with $a\ne0$, and therefore $f(x)=ax+b$.
 
 ::: {.pf-step #s4}
 
-Statement 4 is $\boxed{\text{false}}$.
+Statement (d) is $\boxed{\text{false}}$.
 
 ::: pf-proof
 

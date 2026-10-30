@@ -4,7 +4,7 @@ id: SRC-AG-EXAM-PROBLEMS-2015
 kind: collection
 title: Algebraic Geometry FS 15 exam guidelines and problems
 classification:
-  areas: [algebra]
+  areas: [algebraic-geometry]
   topics: []
 relations: []
 review: draft

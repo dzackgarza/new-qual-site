@@ -4,7 +4,7 @@ id: P-AGFS15-EXAMPLE
 kind: problem
 title: Cuspidal cubic from affine model through normalization
 classification:
-  areas: [algebra]
+  areas: [algebraic-geometry]
   topics: []
 relations: []
 review: draft

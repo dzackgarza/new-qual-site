@@ -4,7 +4,7 @@ id: P-AGFS15-03
 kind: problem
 title: Finite subsets of quasi-projective varieties lie in affine opens
 classification:
-  areas: [algebra]
+  areas: [algebraic-geometry]
   topics: []
 relations: []
 review: draft
