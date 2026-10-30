@@ -57,7 +57,7 @@ $\zeta'(z_0) = \psi(z_0) \neq 0$, so the inverse function theorem gives the loca
 
 :::
 
-::: pf-step
+::: {.pf-step #zeta-coordinate}
 In the $\zeta$ coordinate, $f(z) = f(z_0) + \zeta(z)^{n+1}$.
 
 ::: pf-proof
@@ -76,7 +76,7 @@ For $w' \neq 0$ near $0$, the equation $w^{n+1} = w'$ has exactly $n+1$ distinct
 :::
 
 ::: pf-qed
-By step [](#zeta-biholomorphism){.pf-ref}, $\zeta$ maps a neighborhood $U$ of $z_0$ bijectively onto a disk $\abs{\zeta}<r$. For $0<\abs{w-f(z_0)}<r^{n+1}$, the preceding step and step [](#power-map-multiplicity){.pf-ref} show that $f(z)=w$ has exactly $n+1$ solutions $z\in U$, all different from $z_0$; and $f(z)=f(z_0)$ only at $z=z_0$ in $U$.
+By step [](#zeta-biholomorphism){.pf-ref}, $\zeta$ maps a neighborhood $U$ of $z_0$ bijectively onto a disk $\abs{\zeta}<r$. For $0<\abs{w-f(z_0)}<r^{n+1}$, steps [](#zeta-coordinate){.pf-ref} and [](#power-map-multiplicity){.pf-ref} show that $f(z)=w$ has exactly $n+1$ solutions $z\in U$, all different from $z_0$; and $f(z)=f(z_0)$ only at $z=z_0$ in $U$.
 :::
 
 :::
