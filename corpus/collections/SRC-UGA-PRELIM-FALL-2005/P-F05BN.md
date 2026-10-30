@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-i) State the binomial theorem.
+(a) State the binomial theorem.
 
-ii) Prove that if $p$ is a prime number, then $(x+y)^p \equiv x^p + y^p \pmod p$.
+(b) Prove that if $p$ is a prime number, then $(x+y)^p \equiv x^p + y^p \pmod p$.
 :::
 
 ::: {.solution}

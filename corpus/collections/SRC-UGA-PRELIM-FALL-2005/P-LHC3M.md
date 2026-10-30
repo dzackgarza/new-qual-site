@@ -19,12 +19,12 @@ audit:
 ---
 
 ::: {.problem}
-(a) Let $f(x, y)$ be a differentiable function from $\RR^2$ to $\RR$ and let $g(t) = (x(t), y(t))$ be a differentiable curve from $\RR$ to $\RR^2$.
-State the multivariable **chain rule** for the derivative of the composite function $F(t) = (f \circ g)(t) = f(x(t), y(t))$.
+(a) Let $f(x,y)$ be a differentiable function from $\RR^2$ to $\RR$ and let $g(t)=(x(t),y(t))$ be a differentiable function from $\RR$ to $\RR^2$.
+State the chain rule for the derivative of the function $f(g(t))$.
 
-(b) Let $f(x, y)$ be a continuously differentiable function on $\RR^2$, and let $P = (x_0, y_0) \in \RR^2$ be a point.
-Assume that in a neighborhood of $P$, the level curve equation $f(x, y) = f(P)$ implicitly defines $y$ as a differentiable function of $x$, say $y = h(x)$ with $y_0 = h(x_0)$.
-Show that the **tangent vector** to the graph of $y = h(x)$ at $P$ is **perpendicular (orthogonal)** to the **gradient vector** $\nabla f(P)$.
+(b) Let $f(x,y)$ be a continuously differentiable function on $\RR^2$, and let $P\in\RR^2$ be a point.
+Assume that in a neighborhood of $P$, the equation $f(x,y)=f(P)$ implicitly defines $y$ as a differentiable function of $x$, say $y=h(x)$.
+Show that the tangent line to the graph of $y=h(x)$ at $P$ is perpendicular to the gradient of $f$ at $P$.
 :::
 
 ::: {.solution}

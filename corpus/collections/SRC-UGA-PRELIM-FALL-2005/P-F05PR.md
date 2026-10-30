@@ -18,10 +18,10 @@ audit:
 ---
 
 ::: {.problem}
-i) Let $f$ be a function from $\RR$ to $\RR$ and let $a \in \RR$.
+(a) Let $f$ be a function from $\RR$ to $\RR$ and let $a \in \RR$.
 From the definition of the derivative, prove that if $f$ is differentiable at $a$ then $f$ is continuous at $a$.
 
-ii) Prove the product rule, $(fg)' = f'g + g'f$.
+(b) Prove the product rule, $(fg)' = f'g + g'f$.
 :::
 
 ::: {.solution}
@@ -31,7 +31,7 @@ ii) Prove the product rule, $(fg)' = f'g + g'f$.
 
 ::: {.pf-step #s1}
 
-Part (i): Differentiability at $a$ implies continuity at $a$.
+Part (a): Differentiability at $a$ implies continuity at $a$.
     *Proof:*
 
 ::: pf-proof
@@ -70,7 +70,7 @@ Therefore $\lim_{x \to a} f(x) = f(a)$, which proves that $f$ is continuous at $
 
 ::: pf-step
 
-Part (ii): Product rule $(fg)'(a) = f'(a)g(a) + f(a)g'(a)$.
+Part (b): Product rule $(fg)'(a) = f'(a)g(a) + f(a)g'(a)$.
     *Proof:*
 
 ::: pf-proof
