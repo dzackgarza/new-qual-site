@@ -125,7 +125,7 @@ Discs and planes:
 
 Slits:
 
-[[E-YAYQB]] [[P-AZOFF-C08]] [[P-AZOFF-C09]] [[P-A6PQA]] [[P-CWXEW]]
+[[E-YAYQB]] [[P-AZOFF-C08]] [[P-AZOFF-C09]] [[P-A6PQA]] [[P-AZOFF-C11]]
 
 Strips:
 
