@@ -5,7 +5,8 @@ kind: problem
 title: Prove $1/(3-x)\to1$ at $x=2$ by an $\varepsilon$-$\delta$ argument
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Limits
 relations: []
 review: draft
 audit:

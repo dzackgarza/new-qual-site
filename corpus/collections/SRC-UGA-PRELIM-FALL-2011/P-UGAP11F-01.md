@@ -5,7 +5,8 @@ kind: problem
 title: Contrapositive, converse, and deductions from a conditional statement
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Logic and Quantifiers
 relations: []
 review: draft
 audit:

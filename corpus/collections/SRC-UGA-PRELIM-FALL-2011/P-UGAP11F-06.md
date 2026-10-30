@@ -5,7 +5,8 @@ kind: problem
 title: Prove the sum-of-cubes identity by induction
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Induction
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Level sets and gradients of $x^2-y^2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Multivariable Calculus
+  - Differentiation
 relations: []
 review: draft
 audit:

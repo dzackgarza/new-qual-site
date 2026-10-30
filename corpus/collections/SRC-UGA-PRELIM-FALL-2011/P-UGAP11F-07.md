@@ -5,7 +5,8 @@ kind: problem
 title: Characterize when $f(f^{-1}(S))=S$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Functions and Relations
 relations: []
 review: draft
 audit:

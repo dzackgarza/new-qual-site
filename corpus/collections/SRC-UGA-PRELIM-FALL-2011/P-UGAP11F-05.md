@@ -5,7 +5,9 @@ kind: problem
 title: Compute a line integral around the upper half-disk directly and by Green's theorem
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Line Integrals
+  - Green's Theorem
 relations: []
 review: draft
 audit:

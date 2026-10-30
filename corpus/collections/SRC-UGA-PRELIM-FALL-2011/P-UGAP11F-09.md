@@ -5,7 +5,9 @@ kind: problem
 title: Basis of the quotient of $\RR^3$ by equality of coordinate sums
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Vector Spaces
+  - Bases
 relations: []
 review: draft
 audit:

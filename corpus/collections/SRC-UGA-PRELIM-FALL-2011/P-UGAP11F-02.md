@@ -2,10 +2,12 @@
 schema: qual/card@1
 id: P-UGAP11F-02
 kind: problem
-title: Diagonalize an explicit two-by-two matrix by similarity
+title: Diagonalize $\begin{pmatrix}8&9\\-6&-7\end{pmatrix}$ by similarity
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Diagonalization
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:
