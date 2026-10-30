@@ -27,7 +27,6 @@ source:
   - id: E-FFARP
   - id: E-GMYE2
   - id: E-GQEMZ
-  - id: E-IAQ6D
   - id: E-JJ746
   - id: E-JY5OT
   - id: E-KUOXT
@@ -57,7 +56,6 @@ source:
   - id: P-6M4YH
   - id: P-DPR0E
   - id: P-1FPTH
-  - id: P-DGE5I
   - id: P-5CM5W
   - id: P-5EVB3
   - id: P-65060
