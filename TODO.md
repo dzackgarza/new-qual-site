@@ -895,7 +895,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/cauchy-theory/the-identity-principle.md
   - [x] wiki/complex-analysis/cauchy-theory/the-integral-formula.md
   - [x] wiki/complex-analysis/cauchy-theory/theorems-that-give-a-constant.md
-  - [ ] wiki/complex-analysis/conformal-maps/blaschke-factors-and-automorphisms.md
+  - [x] wiki/complex-analysis/conformal-maps/blaschke-factors-and-automorphisms.md
   - [ ] wiki/complex-analysis/conformal-maps/build-me-a-map.md
   - [ ] wiki/complex-analysis/conformal-maps/index.md
   - [ ] wiki/complex-analysis/conformal-maps/mobius-transformations.md
