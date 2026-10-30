@@ -80,3 +80,7 @@ $$
 \boxed{\displaystyle \lim_{n\to\infty}\frac{a_n}{a_{n+1}}=z_0}.
 $$
 :::
+
+::: {.remark title="Variations"}
+Some versions first ask to show that $a_n\neq0$ for all sufficiently large $n$, so that the quotient $a_n/a_{n+1}$ is defined.
+:::
