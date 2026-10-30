@@ -5,7 +5,8 @@ kind: problem
 title: The derivative bound $\abs{ f'(0)}\le1$ in Schwarz's lemma
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
