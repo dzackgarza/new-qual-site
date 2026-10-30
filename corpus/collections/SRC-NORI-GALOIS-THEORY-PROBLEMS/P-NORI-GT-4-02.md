@@ -16,10 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-With $R , n , T$ as above, assume that R is an integral domain.
-Prove that $T$ : $R ^ { n } \to R ^ { n }$ is one-to-one if and only if det(T ) is nonzero.
+With $R, n, T$ as above, assume that $R$ is an integral domain. Prove that $T \colon R^{n} \to R^{n}$ is one-to-one if and only if $\det(T)$ is nonzero.
 
-Hint: Let K be the fraction field of R. We may regard $T$ as a member of $\mathrm { M } _ { n } ( K )$
+Hint: Let $K$ be the fraction field of $R$. We may regard $T$ as a member of $\Mat_{n}(K)$.
 :::
 
 ::: {.solution}

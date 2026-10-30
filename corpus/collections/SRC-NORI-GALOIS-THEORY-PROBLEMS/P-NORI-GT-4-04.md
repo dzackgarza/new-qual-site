@@ -16,15 +16,15 @@ audit:
 ---
 
 ::: {.problem}
-Let E be a field extension of F of degree n.
+Let $E$ be a field extension of $F$ of degree $n$.
 
-(i) Prove that $E [ X ]$ , when regarded as a module over its subring $F [ X ]$ , is free of rank n.
+(i) Prove that $E[X]$, when regarded as a module over its subring $F[X]$, is free of rank $n$.
 
-(ii) Let $0 \not = f \in E [ X ]$ . Prove that there is some $g \in E [ X ]$ such that $g f = h$ wher $0 \neq h \in F [ X ]$
+(ii) Let $0 \neq f \in E[X]$. Prove that there is some $g \in E[X]$ such that $gf = h$ where $0 \neq h \in F[X]$.
 
-Hint: Consider $h = \operatorname { N o r m } _ { F \left[ X \right] } ^ { E \left[ X \right] } ( f )$
+Hint: Consider $h = \operatorname{Norm}_{F[X]}^{E[X]}(f)$.
 
-(iii) Prove that $E ( X )$ is a field extension of $F ( X )$ of degree n. More precisely, show that if $w _ { 1 } , . . . , w _ { n }$ is a F -basis for $E .$ , then $w _ { 1 } , . . . , w _ { n }$ is also a $F ( X )$ -basis for $E ( X )$ .
+(iii) Prove that $E(X)$ is a field extension of $F(X)$ of degree $n$. More precisely, show that if $w_{1}, \ldots, w_{n}$ is an $F$-basis for $E$, then $w_{1}, \ldots, w_{n}$ is also an $F(X)$-basis for $E(X)$.
 :::
 
 ::: {.solution}

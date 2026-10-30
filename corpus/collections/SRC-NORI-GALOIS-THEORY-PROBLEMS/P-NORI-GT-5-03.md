@@ -16,15 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Given $F \subset E \subset E ^ { \prime }$ and $F \subset K \subset E ^ { \prime }$ , where F, E, K are subfields of $E ^ { \prime }$
+Given $F \subset E \subset E'$ and $F \subset K \subset E'$, where $F, E, K$ are subfields of $E'$. *It is not assumed that $E$ is an algebraic extension of $F$.* Prove that
 
-It is not assumed that E is an algebraic extension of F Prove that
+(1) If $K$ is a finite separable extension of $F$, then $EK$ is a finite separable extension of $E$.
 
-(1) If K is a finite separable extension of F , then EK is a finite separable extension of E.
+(2) If $K$ is a finite normal extension of $F$, then $EK$ is a finite normal extension of $E$.
 
-(2) If K is a finite normal extension of F , then EK is a finite normal extension of E.
-
-(3) If K is a finite Galois extension of F , then EK is a finite Galois extension of E .
+(3) If $K$ is a finite Galois extension of $F$, then $EK$ is a finite Galois extension of $E$.
 :::
 
 ::: {.solution}

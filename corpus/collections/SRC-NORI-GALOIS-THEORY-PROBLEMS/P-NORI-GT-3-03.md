@@ -16,14 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let p be a prime which is  1 mod $2 ^ { k }$ , but not congruent to 1 modulo a higher power of 2. Assume $k \geq 2$ . Assume that $u _ { 0 } \in \FF _ { p }$ is not a square.
-Construct a sequence of pairs $\left( E _ { n } , u _ { n } \right)$ where $E _ { n }$ is a field and $u _ { n } \in E _ { n }$ as follows.
-Define $( E _ { 0 } , u _ { 0 } ) = ( \FF _ { p } , u _ { 0 } )$
+Let $p$ be a prime which is $\equiv 1 \bmod 2^{k}$, but not congruent to $1$ modulo a higher power of $2$. Assume $k \geq 2$. Assume that $u_{0} \in \FF_{p}$ is not a square. Construct a sequence of pairs $(E_{n}, u_{n})$ where $E_{n}$ is a field and $u_{n} \in E_{n}$ as follows. Define $(E_{0}, u_{0}) = (\FF_{p}, u_{0})$.
 
-Assume that $( E _ { n } , u _ { n } )$ has been defined.
-Let $E _ { n + 1 }$ be a field extension of $E _ { n }$ obtaing by adjoining a square-root $u _ { n + 1 }$ of $u _ { n } \in E _ { n }$
+Assume that $(E_{n}, u_{n})$ has been defined. Let $E_{n+1}$ be a field extension of $E_{n}$ obtained by adjoining a square root $u_{n+1}$ of $u_{n} \in E_{n}$.
 
-Show that $\mathrm { d e g } ( E _ { n } / E _ { n - 1 } ) = 2$ for all $n > 0$
+Show that $\deg(E_{n}/E_{n-1}) = 2$ for all $n > 0$.
 :::
 
 ::: {.solution}

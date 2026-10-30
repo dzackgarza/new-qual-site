@@ -20,9 +20,9 @@ audit:
 ---
 
 ::: {.problem}
-Let F be a field of characteristic $\neq 2$ and let E be a quadratic extension of F . Show that the kernel of the natural homomorphism $F ^ { \times } / ( F ^ { \times } ) ^ { 2 } \to E ^ { \times } / ( E ^ { \times } ) ^ { 2 }$ is a group of order 2.
+Let $F$ be a field of characteristic $\neq 2$ and let $E$ be a quadratic extension of $F$. Show that the kernel of the natural homomorphism $F^{\times}/(F^{\times})^{2} \to E^{\times}/(E^{\times})^{2}$ is a group of order $2$.
 
-Deduce that if there is a chain of fields $F = E _ { 0 } \subset E _ { 1 } \subset \ldots \subset E _ { n } = E$ with deg $: ( E _ { i } / E _ { i - 1 } ) = 2$ for $i = 1 , 2 , . . . , n$ , then the kernel of the natural homomorphism $F ^ { \times } / ( { F ^ { \times } } ) ^ { 2 } \to E ^ { \times } / ( E ^ { \times } ) ^ { 2 }$ has order dividing $2 ^ { n }$
+Deduce that if there is a chain of fields $F = E_{0} \subset E_{1} \subset \cdots \subset E_{n} = E$ with $\deg(E_{i}/E_{i-1}) = 2$ for $i = 1, 2, \ldots, n$, then the kernel of the natural homomorphism $F^{\times}/(F^{\times})^{2} \to E^{\times}/(E^{\times})^{2}$ has order dividing $2^{n}$.
 :::
 
 ::: {.solution}

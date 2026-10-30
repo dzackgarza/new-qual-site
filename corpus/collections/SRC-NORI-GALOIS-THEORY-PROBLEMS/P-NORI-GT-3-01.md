@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-p is an odd prime and $q = p ^ { k }$ . Let E be a splitting field of $X ^ { q } + X \in \FF _ { p } [ X ]$ .How many elements does it have?
+$p$ is an odd prime and $q = p^{k}$. Let $E$ be a splitting field of $X^{q} + X \in \FF_{p}[X]$. How many elements does it have?
 :::
 
 ::: {.solution}

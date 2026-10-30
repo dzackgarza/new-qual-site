@@ -20,9 +20,9 @@ audit:
 ---
 
 ::: {.problem}
-Given an automorphism $\sigma$ of a ring R, denote by $R ^ { \sigma }$ the subring $\{ a \in R : a = \sigma a \}$
+Given an automorphism $\sigma$ of a ring $R$, denote by $R^{\sigma}$ the subring $\{a \in R \st a = \sigma a\}$.
 
-Let F be a field of characteristic zero. Define $\sigma f ( X ) = f ( X + 1 )$ for all $f \in F [ X ]$ Note that $\sigma$ also gives rise to an automorphism of its fraction field $F ( X )$ . Prove that $F = F [ X ] ^ { \sigma } = F ( X ) ^ { \sigma }$
+Let $F$ be a field of characteristic zero. Define $\sigma f(X) = f(X+1)$ for all $f \in F[X]$. Note that $\sigma$ also gives rise to an automorphism of its fraction field $F(X)$. Prove that $F = F[X]^{\sigma} = F(X)^{\sigma}$.
 :::
 
 ::: {.solution}

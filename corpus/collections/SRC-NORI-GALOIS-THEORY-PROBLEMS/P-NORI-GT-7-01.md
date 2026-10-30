@@ -20,13 +20,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $G = \operatorname { G a l } ( K / F )$ . Assume that the order of $\mu _ { n } ( F )$ is n.
+Let $G = \Gal(K/F)$. Assume that the order of $\mu_{n}(F)$ is $n$.
 
-Let $\chi : G \to \mu _ { n } ( F )$ be a homomorphism. Show that $V ^ { \chi } = \{ a \in K : \sigma ( a ) =$ $\chi ( \sigma ) . a \forall \sigma \in G \}$ is a one-dimensional F -vector space of K.
+Let $\chi \colon G \to \mu_{n}(F)$ be a homomorphism. Show that $V^{\chi} = \{a \in K \st \sigma(a) = \chi(\sigma) \cdot a \ \forall \sigma \in G\}$ is a one-dimensional $F$-vector space of $K$.
 
-Hint: Let $b \in K$ . Let $a \in K$ denote the sum of $\chi ( \sigma ) ^ { - 1 } \sigma ( b )$ , taken over all $\sigma \in G$ Show that a belongs to $V^{\chi}$.
+Hint: Let $b \in K$. Let $a \in K$ denote the sum of $\chi(\sigma)^{-1}\sigma(b)$, taken over all $\sigma \in G$. Show that $a$ belongs to $V^{\chi}$.
 
-Use Dedekind’s “linear independence of characters” to show that there is some $b \in K$ such that the above a is nonzero.
+Use Dedekind's "linear independence of characters" to show that there is some $b \in K$ such that the above $a$ is nonzero.
 :::
 
 ::: {.solution}

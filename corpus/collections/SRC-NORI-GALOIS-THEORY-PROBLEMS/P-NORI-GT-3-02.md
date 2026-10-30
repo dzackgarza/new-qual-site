@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-For which primes p is there some $1 \neq \omega \in \FF _ { p }$ such that $\omega ^ { 3 } = 1$ . For such a prime $p ,$ how many elements are there in a splitting field of $X ^ { p } - \omega X \in \FF _ { p } [ X ]$
+For which primes $p$ is there some $1 \neq \omega \in \FF_{p}$ such that $\omega^{3} = 1$? For such a prime $p$, how many elements are there in a splitting field of $X^{p} - \omega X \in \FF_{p}[X]$?
 :::
 
 ::: {.solution}

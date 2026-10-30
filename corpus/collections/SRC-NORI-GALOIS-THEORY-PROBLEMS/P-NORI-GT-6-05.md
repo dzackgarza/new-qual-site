@@ -16,8 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Assume that F is algebraically closed.
-Show that $A \mapsto f _ { A }$ is a one-to-one correspondence from the collection of additive subgroups $A \subset F$ of order $p ^ { n }$ and the set of polynomials in $F [ X ]$ of the form $f = a _ { 0 } X + a _ { 1 } X ^ { p } + \ldots + a _ { n - 1 } X ^ { p ^ { n - 1 } } + X ^ { p ^ { n } }$ with $a _ { 0 } \neq 0$
+Assume that $F$ is algebraically closed. Show that $A \mapsto f_{A}$ is a one-to-one correspondence from the collection of additive subgroups $A \subset F$ of order $p^{n}$ and the set of polynomials in $F[X]$ of the form $f = a_{0}X + a_{1}X^{p} + \cdots + a_{n-1}X^{p^{n-1}} + X^{p^{n}}$ with $a_{0} \neq 0$.
 :::
 
 ::: {.solution}

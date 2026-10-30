@@ -16,9 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-Let R be a subring of a commutative ring S. Assume that S, when regarded as a R-module, is free of rank n. Prove that for every $\alpha \in S$ , there exists $\beta \in S$ such that Norm $\mathbf { \Sigma } _ { R } ^ { S } ( \alpha ) = \beta \alpha$
+Let $R$ be a subring of a commutative ring $S$. Assume that $S$, when regarded as an $R$-module, is free of rank $n$. Prove that for every $\alpha \in S$, there exists $\beta \in S$ such that $\operatorname{Norm}_{R}^{S}(\alpha) = \beta\alpha$.
 
-Show that if S is an integral domain, then $\mathrm { N o r m } _ { R } ^ { S } ( \alpha ) \neq 0$
+Show that if $S$ is an integral domain, then $\operatorname{Norm}_{R}^{S}(\alpha) \neq 0$.
 :::
 
 ::: {.solution}

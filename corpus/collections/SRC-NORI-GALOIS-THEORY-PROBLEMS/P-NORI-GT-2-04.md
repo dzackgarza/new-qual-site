@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $x _ { 1 } , x _ { 2 } , x _ { 3 } \in \textit { F }$ Find a monic degree eight $\begin{array} { r l r } { f } & { { } \in } & { F [ X ] } \end{array}$ which has ${ \sqrt { x _ { 1 } } } + { \sqrt { x _ { 2 } } } + { \sqrt { x _ { 3 } } }$ as a root.
+Let $x_{1}, x_{2}, x_{3} \in F$. Find a monic degree eight $f \in F[X]$ which has $\sqrt{x_{1}} + \sqrt{x_{2}} + \sqrt{x_{3}}$ as a root.
 :::
 
 ::: {.solution}

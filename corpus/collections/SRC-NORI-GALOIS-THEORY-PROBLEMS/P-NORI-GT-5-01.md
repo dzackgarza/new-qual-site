@@ -16,8 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let L be a finite Galois extension of F . Let $H _ { 1 }$ and $H _ { 2 }$ be subgroups of $G =$ $\operatorname { G a l } ( L / F )$ and consider their fixed fields $E _ { 1 } = L ^ { H _ { 1 } }$ and $E _ { 2 } = L ^ { H _ { 2 } }$ respectively.
-Prove that $\operatorname { G a l } ( L / E _ { 1 } E _ { 2 } )$ equals $H _ { 1 } \cap H _ { 2 }$
+Let $L$ be a finite Galois extension of $F$. Let $H_{1}$ and $H_{2}$ be subgroups of $G = \Gal(L/F)$ and consider their fixed fields $E_{1} = L^{H_{1}}$ and $E_{2} = L^{H_{2}}$ respectively. Prove that $\Gal(L/E_{1}E_{2})$ equals $H_{1} \cap H_{2}$.
 :::
 
 ::: {.solution}

@@ -16,9 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $f = Q ^ { 2 } - c P ^ { 2 }$ where $c \in F$ and $P , Q \in F [ X ]$ with $Q$ monic of degree two and $\deg ( P ) < 2$ . Show that if $g$ is an irreducible monic polynomial of degree $\geq 3$ that divides $f ,$ then $g = f$
+Let $f = Q^{2} - cP^{2}$ where $c \in F$ and $P, Q \in F[X]$ with $Q$ monic of degree two and $\deg(P) < 2$. Show that if $g$ is an irreducible monic polynomial of degree $\geq 3$ that divides $f$, then $g = f$.
 
-Show that if $f$ is irreducible, then the field $E = F ( \theta )$ obtained by adjoining a root $\theta$ of $f ,$ necessarily contains a quadratic extension of F
+Show that if $f$ is irreducible, then the field $E = F(\theta)$ obtained by adjoining a root $\theta$ of $f$ necessarily contains a quadratic extension of $F$.
 :::
 
 ::: {.solution}

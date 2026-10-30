@@ -16,8 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $q = p ^ { k }$ where p is a prime.
-Let E be a finite field extension of $\FF _ { q }$ of degree n. Prove that E is a Galois extension of $\FF _ { q }$ . Define $\sigma ( x ) = x ^ { q }$ for all $x \in E$ . Prove that $\sigma$ belongs to $\operatorname { G a l } ( E / \FF _ { q } )$ , and in fact generates this group.
+Let $q = p^{k}$ where $p$ is a prime. Let $E$ be a finite field extension of $\FF_{q}$ of degree $n$. Prove that $E$ is a Galois extension of $\FF_{q}$. Define $\sigma(x) = x^{q}$ for all $x \in E$. Prove that $\sigma$ belongs to $\Gal(E/\FF_{q})$, and in fact generates this group.
 :::
 
 ::: {.solution}

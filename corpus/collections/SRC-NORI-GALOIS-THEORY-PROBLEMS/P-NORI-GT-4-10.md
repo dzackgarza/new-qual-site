@@ -16,9 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-Let F be a field of characteristic $p > 0$ . With $\sigma$ as in the previous problem, show that $F ( X )$ is a Galois extension of $F ( X ) ^ { \sigma }$ of degree $p .$
+Let $F$ be a field of characteristic $p > 0$. With $\sigma$ as in the previous problem, show that $F(X)$ is a Galois extension of $F(X)^{\sigma}$ of degree $p$.
 
-Do you know what $F [ X ] ^ { \sigma }$ and $F ( X ) ^ { \sigma }$ are?
+Do you know what $F[X]^{\sigma}$ and $F(X)^{\sigma}$ are?
 :::
 
 ::: {.solution}

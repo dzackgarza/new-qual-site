@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\FF _ { q }$ be a finite field of characteristic $p .$ How mny elements of $\FF _ { q }$ are of the type $x - x ^ { \bar { p } } , x \in \FF _ { q } ?$
+Let $\FF_{q}$ be a finite field of characteristic $p$. How many elements of $\FF_{q}$ are of the type $x - x^{p}$, $x \in \FF_{q}$?
 :::
 
 ::: {.solution}

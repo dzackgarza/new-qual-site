@@ -16,15 +16,15 @@ audit:
 ---
 
 ::: {.problem}
-Let F be a field of characteristic $p > 0$ . Let A be a finite additive subgroup of $F$
+Let $F$ be a field of characteristic $p > 0$. Let $A$ be a finite additive subgroup of $F$.
 
-Let $f _ { A } \in F [ X ]$ be the product of $( X - a )$ , taken over all $a \in A$
+Let $f_{A} \in F[X]$ be the product of $(X - a)$, taken over all $a \in A$.
 
-(i) Prove that $f _ { A } ( X + a ) = f _ { A } ( X )$ for all $a \in A$
+(i) Prove that $f_{A}(X + a) = f_{A}(X)$ for all $a \in A$.
 
-(ii) Deduce that $f _ { A } ( X + Y ) = f _ { A } ( X ) + f _ { A } ( Y ) \in F [ X , Y ] .$
+(ii) Deduce that $f_{A}(X + Y) = f_{A}(X) + f_{A}(Y) \in F[X, Y]$.
 
-Hint: Let $C = F [ Y ]$ and let $h ( X ) = - f _ { A } ( X + Y ) + f _ { A } ( X ) + f _ { A } ( Y ) \in C [ X ]$ . Use (i) to find more $c \in C$ such that $h ( c ) = 0$ than the degree of $h \in C [ X ]$
+Hint: Let $C = F[Y]$ and let $h(X) = -f_{A}(X + Y) + f_{A}(X) + f_{A}(Y) \in C[X]$. Use (i) to find more $c \in C$ such that $h(c) = 0$ than the degree of $h \in C[X]$.
 :::
 
 ::: {.solution}

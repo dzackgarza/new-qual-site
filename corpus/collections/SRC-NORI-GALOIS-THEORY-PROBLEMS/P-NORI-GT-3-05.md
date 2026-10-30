@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Explain how you would obtain a sequence of field extensions $E _ { n + 1 } / E _ { n }$ of degree three, with $E _ { 0 } = \FF _ { 1 9 }$
+Explain how you would obtain a sequence of field extensions $E_{n+1}/E_{n}$ of degree three, with $E_{0} = \FF_{19}$.
 :::
 
 ::: {.solution}

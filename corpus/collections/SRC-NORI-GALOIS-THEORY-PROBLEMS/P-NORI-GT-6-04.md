@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f ~ \in ~ { \cal F } [ X ]$ Prove that $f ( X + Y ) = f ( X ) + f ( Y )$ if and only if $f \ =$ $a _ { 0 } X + a _ { 1 } X ^ { p } + \ldots + a _ { n } X ^ { p ^ { n } }$ for some $n \geq 0$ and $a _ { 0 } , . . . , a _ { n } \in F$
+Let $f \in F[X]$. Prove that $f(X + Y) = f(X) + f(Y)$ if and only if $f = a_{0}X + a_{1}X^{p} + \cdots + a_{n}X^{p^{n}}$ for some $n \geq 0$ and $a_{0}, \ldots, a_{n} \in F$.
 :::
 
 ::: {.solution}

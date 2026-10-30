@@ -16,21 +16,14 @@ audit:
 ---
 
 ::: {.problem}
-The cylotomic polynomials $\Phi _ { n } ( X ) \in \ZZ [ X ]$ defined for all natural numbers $n _ { \mathrm { : } }$ have the property
-
+The cyclotomic polynomials $\Phi_{n}(X) \in \ZZ[X]$, defined for all natural numbers $n$, have the property
 $$
-X ^ { n } - 1 = \prod _ { d \mid n } \Phi _ { d } ( X )
+X^{n} - 1 = \prod_{d \mid n} \Phi_{d}(X).
 $$
 
-Let $n = n ^ { \prime } p ^ { k }$ with $p$ not dividing $n ^ { \prime } .$ . let $F$ be a field of characteristic $p$ such that $\mu _ { n ^ { \prime } } ( F )$ has order $n ^ { \prime }$ . Show that the roots of $\Phi _ { n } ( X )$ in $F$ are the primitive $n ^ { \prime } \mathrm { . }$ -th roots of unity, each of them occuring with multiplicity $\varphi ( p ^ { k } )$
+Let $n = n' p^{k}$ with $p$ not dividing $n'$. Let $F$ be a field of characteristic $p$ such that $\mu_{n'}(F)$ has order $n'$. Show that the roots of $\Phi_{n}(X)$ in $F$ are the primitive $n'$-th roots of unity, each of them occurring with multiplicity $\varphi(p^{k})$.
 
-Here $\varphi$ is Euler’s phi function.
-
-$\varphi ( m )$ is the order of the group of units of the ring $\ZZ / m \ZZ$
-
-Equivalently, $\varphi ( m )$ is the cardinality of the set of natural numbers $k \leq m$ such that $\operatorname { g . c . d . } ( k , m ) = 1$
-
-$\varphi ( 1 ) = 1$ . If $p$ is a prime, then $\varphi ( p ^ { k } ) = p ^ { k - 1 } ( p - 1 ) { \mathrm { ~ i f ~ } } k > 0 .$
+Here $\varphi$ is Euler's phi function: $\varphi(m)$ is the order of the group of units of the ring $\ZZ/m\ZZ$. Equivalently, $\varphi(m)$ is the cardinality of the set of natural numbers $k \leq m$ such that $\gcd(k, m) = 1$. $\varphi(1) = 1$. If $p$ is a prime, then $\varphi(p^{k}) = p^{k-1}(p-1)$ if $k > 0$.
 :::
 
 ::: {.solution}
