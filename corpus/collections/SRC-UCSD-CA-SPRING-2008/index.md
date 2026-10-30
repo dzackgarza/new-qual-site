@@ -16,23 +16,19 @@ source:
   source_kind: university-exam
   institution: ucsd
   area: complex-analysis
-  sections:
-  - name: Qualifying exam, May 28, 2008
-    problems:
-    - P-CASP08A
-    - P-CASP08B
-    - P-CASP08C
-    - P-CASP08D
-    - P-CASP08E
-    - P-CASP08F
-  - name: Page 2 of an unidentified complex analysis exam (PDF page 3)
-    problems:
-    - id: P-CASP08G
-      comment: Problem 3
-    - id: P-CASP08H
-      comment: Problem 4
-    - id: P-CASP08I
-      comment: Problem 5
+  problems:
+  - P-CASP08A
+  - P-CASP08B
+  - P-CASP08C
+  - P-CASP08D
+  - P-CASP08E
+  - P-CASP08F
+  - id: P-CASP08G
+    comment: PDF page 3, a page of another complex analysis exam, problem 3
+  - id: P-CASP08H
+    comment: PDF page 3, a page of another complex analysis exam, problem 4
+  - id: P-CASP08I
+    comment: PDF page 3, a page of another complex analysis exam, problem 5
   date:
     kind: academic-term
     term: spring
