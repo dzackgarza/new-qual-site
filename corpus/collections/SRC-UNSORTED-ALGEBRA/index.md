@@ -27,7 +27,6 @@ source:
   - id: E-AMD-2MKY6V2W
   - id: E-AMD-2MV56W7X
   - id: E-AMD-2QM6SJIQ
-  - id: E-AMD-2SZMALTL
   - id: E-AMD-3MQL7TPB
   - id: E-AMD-3TYWSS7F
   - id: E-AMD-4M7MSCEI
@@ -92,17 +91,14 @@ source:
   - id: E-AMD-NY3QKBRB
   - id: E-AMD-O2OGRSJP
   - id: E-AMD-OFJC25BM
-  - id: E-AMD-OKQQCRTG
   - id: E-AMD-ON37VIEN
   - id: E-AMD-PLA4XW64
   - id: E-AMD-PX2UMZEG
   - id: E-AMD-QRCIRKQ7
   - id: E-AMD-R4LGOQ33
   - id: E-AMD-RRYNGX7L
-  - id: E-AMD-S42H2VZL
   - id: E-AMD-SD3PTZ4O
   - id: E-AMD-TLP6GSQI
-  - id: E-AMD-TM3LMADH
   - id: E-AMD-TSJ7AKE5
   - id: E-AMD-TSKS3JTO
   - id: E-AMD-U47HVKBS
@@ -111,7 +107,6 @@ source:
   - id: E-AMD-UKGCIYDK
   - id: E-AMD-V3WFKTM6
   - id: E-AMD-V76MBREM
-  - id: E-AMD-VGBOZDXZ
   - id: E-AMD-WKWEEJIZ
   - id: E-AMD-WQANMZED
   - id: E-AMD-WW2OH6F2
@@ -355,7 +350,6 @@ source:
   - id: P-G3FZI
   - id: P-G3YN5
   - id: P-G52LZ
-  - id: P-G7SZ7
   - id: P-GAAX7
   - id: P-GIVPQ
   - id: P-GKPVE
@@ -370,7 +364,6 @@ source:
   - id: P-GT22M
   - id: P-GWP4W
   - id: P-GYTYV
-  - id: P-HAGJY
   - id: P-HAI2R
   - id: P-HEOYS
   - id: P-HH3JN
@@ -387,8 +380,6 @@ source:
   - id: P-HPSTB
   - id: P-HPTFQ
   - id: P-HPYC5
-  - id: P-HQ6DM
-  - id: P-HTYNB
   - id: P-HV7IM
   - id: P-HXOC6
   - id: P-HXTMK
@@ -406,7 +397,6 @@ source:
   - id: P-INJCV
   - id: P-IPPQ6
   - id: P-IQPLX
-  - id: P-IS9SV
   - id: P-IT7OC
   - id: P-ITOYB
   - id: P-IVRLI
@@ -449,7 +439,6 @@ source:
   - id: P-L7SEG
   - id: P-LAAAJ
   - id: P-LD3TY
-  - id: P-LFWBF
   - id: P-LG4RJ
   - id: P-LHIOI
   - id: P-LJURM
@@ -483,10 +472,8 @@ source:
   - id: P-NHWAK
   - id: P-NLMMW
   - id: P-NLXNM
-  - id: P-NNJHK
   - id: P-NPHUQ
   - id: P-NPVTP
-  - id: P-NQRYU
   - id: P-NQTGP
   - id: P-NVP4X
   - id: P-NYUXU
@@ -517,7 +504,6 @@ source:
   - id: P-PF5MC
   - id: P-PFUVL
   - id: P-PMGNP
-  - id: P-PQGS4
   - id: P-PS4ZH
   - id: P-PSAET
   - id: P-PSCIU
