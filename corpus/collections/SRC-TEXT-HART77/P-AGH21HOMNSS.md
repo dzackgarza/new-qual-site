@@ -69,7 +69,7 @@ By step [](#f-vanishes-on-affine-zero-set){.pf-ref} and the [[T-JRTS2|affine Nul
 $$
 f\in I(V_a(\mfa))=\sqrt{\mfa}
 $$
-[@Har10a, Theorem I.1.3A].
+[@Har77, Theorem I.1.3A].
 By the definition of the radical, there is an integer $q\ge1$ for which $f^q\in\mfa$, as required.
 :::
 

@@ -102,10 +102,10 @@ where $\theta:\omega_X\xrightarrow{\cong}f^!\omega_Y$ is the trace-compatible du
 
 ::: pf-proof
 
-The canonical sheaves $\omega_X=\Omega_{X/k}^n$ and $\omega_Y=\Omega_{Y/k}^n$, with their Serre traces, are dualizing [@Har10a, Theorem III.7.12].
+The canonical sheaves $\omega_X=\Omega_{X/k}^n$ and $\omega_Y=\Omega_{Y/k}^n$, with their Serre traces, are dualizing [@Har77, Theorem III.7.12].
 For several components of the same dimension, this follows by taking the direct sum of the dualities on those open-and-closed components.
 Step [](#s2){.pf-ref}, with $\omega_Y^\circ=\omega_Y$, makes $f^!\omega_Y$ a dualizing sheaf with the trace of step [](#s1){.pf-ref}.
-Uniqueness of a dualizing sheaf with its trace [@Har10a, Proposition III.7.2] supplies the unique trace-compatible isomorphism $\theta$.
+Uniqueness of a dualizing sheaf with its trace [@Har77, Proposition III.7.2] supplies the unique trace-compatible isomorphism $\theta$.
 Evaluation at $1$ is intrinsic to the finite algebra $f_*\OO_X$, so the displayed morphism is natural and involves no choice of local coordinates or bases.
 By its construction, $t_Y\circ H^n(t)\circ a_{\omega_X}$ is the canonical trace on $X$.
 

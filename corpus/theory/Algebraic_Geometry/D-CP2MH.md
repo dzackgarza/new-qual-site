@@ -45,5 +45,5 @@ Homogenizing with respect to a new variable $Z$ gives projective closures: $V(x^
 
 The \dfn{irrelevant ideal} $S_+ = (x_0,\ldots,x_n)$ is homogeneous and radical, and $V(S_+) = \emptyset=V(S)$.
 The projective Nullstellensatz: for a homogeneous ideal $J$, $V(J) = \emptyset$ exactly when $\sqrt{J} \supseteq S_+$, and otherwise $I(V(J)) = \sqrt{J}$.
-Hence $V$ and $I$ are inclusion-reversing bijections, inverse to each other, between closed subsets of $\PP^n$ and homogeneous radical ideals of $S$ other than $S_+$ [@Har10a, Exercise I.2.4].
+Hence $V$ and $I$ are inclusion-reversing bijections, inverse to each other, between closed subsets of $\PP^n$ and homogeneous radical ideals of $S$ other than $S_+$ [@Har77, Exercise I.2.4].
 :::

@@ -48,7 +48,7 @@ Do the general case by induction on $i$, writing $\mcf$ as a quotient of a local
 
 ::: {.solution}
 Put $\mathcal B=f_*\OO_X$.
-For a finite morphism, $f_*$ preserves coherence and is exact on quasi-coherent sheaves, by restriction of scalars on affine opens [@Har10a, Proposition II.5.8 and Exercise II.5.5].
+For a finite morphism, $f_*$ preserves coherence and is exact on quasi-coherent sheaves, by restriction of scalars on affine opens [@Har77, Proposition II.5.8 and Exercise II.5.5].
 All Ext groups below are computed in the categories of all module sheaves, not only the quasi-coherent subcategories.
 
 ::: pf
@@ -110,7 +110,7 @@ The natural maps in (c) exist and commute with the long exact Ext sequences in t
 ::: pf-proof
 
 For any quasi-coherent sheaf $H$ on $X$, take an injective resolution $H\to I^\bullet$ in $\Mod(X)$.
-One has $R^qf_*H=0$ for $q>0$: over an affine open $V\subseteq Y$, the inverse image is affine, and affine vanishing applies to $H\restrict_{f^{-1}(V)}$ [@Har10a, Theorem III.3.5].
+One has $R^qf_*H=0$ for $q>0$: over an affine open $V\subseteq Y$, the inverse image is affine, and affine vanishing applies to $H\restrict_{f^{-1}(V)}$ [@Har77, Theorem III.3.5].
 Consequently $f_*I^\bullet$ is a resolution of $f_*H$, although its terms need not be injective.
 
 Choose an injective resolution $f_*H\to J^\bullet$ on $Y$.
@@ -125,7 +125,7 @@ Taking cohomology defines the first map in the hint,
 $$
 \Ext_X^i(\mcf,H)\longrightarrow\Ext_Y^i(f_*\mcf,f_*H).
 $$
-Comparison maps and homotopies show that it is independent of resolutions and natural in both arguments [@Har10a, Chapter III, §1].
+Comparison maps and homotopies show that it is independent of resolutions and natural in both arguments [@Har77, Chapter III, §1].
 Now take $H=f^!\mcg$ and follow this map by the map on Ext induced by $\varepsilon_\mcg$.
 The result is $\varphi_i$.
 Equivalently, use a chain map $f_*I^\bullet\to J_\mcg^\bullet$ extending $\varepsilon_\mcg$, with $J_\mcg^\bullet$ an injective resolution of $\mcg$.
@@ -149,7 +149,7 @@ The sheaf $f_*E$ is locally free of finite rank on $Y$.
 Indeed, over $V=\Spec A$ as in step [](#s1){.pf-ref}, $B$ is finite projective over $A$, and the module of $E$ on $\Spec B$ is finite projective over $B$.
 It is a direct summand of some $B^{\oplus r}$, hence finite projective over $A$.
 
-For a finite-rank locally free first argument, global Ext is the cohomology of its sheaf Hom [@Har10a, Propositions III.6.3 and III.6.7].
+For a finite-rank locally free first argument, global Ext is the cohomology of its sheaf Hom [@Har77, Propositions III.6.3 and III.6.7].
 The affine cohomology comparison [[P-AGH341AFFINEMORPH]] and step [](#s2){.pf-ref} give
 $$
 \begin{aligned}
@@ -169,7 +169,7 @@ $$
 f_*\sheafhom_X(E,I^\bullet)
 \longrightarrow\sheafhom_Y(f_*E,J_\mcg^\bullet).
 $$
-Both complexes are flasque resolutions of their degree-zero sheaves: tensoring an injective by a finite-rank locally free sheaf preserves injectivity [@Har10a, Lemma III.6.6], direct image preserves flasqueness, and the quasi-coherent sheaf $\sheafhom_X(E,f^!\mcg)$ has vanishing positive direct images under $f$.
+Both complexes are flasque resolutions of their degree-zero sheaves: tensoring an injective by a finite-rank locally free sheaf preserves injectivity [@Har77, Lemma III.6.6], direct image preserves flasqueness, and the quasi-coherent sheaf $\sheafhom_X(E,f^!\mcg)$ has vanishing positive direct images under $f$.
 The map on degree-zero sheaves is the isomorphism of step [](#s2){.pf-ref}.
 Its global-section map is precisely the complex map defining $\varphi_i$, so it induces the displayed cohomology isomorphisms.
 

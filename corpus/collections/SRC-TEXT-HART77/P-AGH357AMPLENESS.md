@@ -47,7 +47,7 @@ Use the cohomological criterion: an invertible sheaf $L$ on such a scheme $T$ is
 $$
 H^i(T,F\otimes L^{\otimes n})=0\qquad(i>0,\ n\ge n_0)
 $$
-[@Har10a, Proposition III.5.3].
+[@Har77, Proposition III.5.3].
 Write $L^n$ for its tensor powers.
 Empty schemes satisfy the conditions vacuously.
 
@@ -66,7 +66,7 @@ $$
 i_*(F\otimes i^*L^n)\cong i_*F\otimes L^n.
 $$
 It follows by trivializing $L$ on an open cover of $X$, where the identification is the identity on the same module of sections.
-Closed direct image preserves cohomology [@Har10a, Lemma III.2.10].
+Closed direct image preserves cohomology [@Har77, Lemma III.2.10].
 Hence ampleness of $L$ makes $H^i(Y,F\otimes i^*L^n)$ vanish for every $i>0$ and every sufficiently large $n$.
 The criterion gives ampleness of $i^*L$.
 

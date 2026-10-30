@@ -50,9 +50,9 @@ For part (e), given a section $s$ on $U$, apply (d) to the subsheaf of $\mcf\res
 :::
 
 ::: {.solution}
-For an open inclusion $i:U\hookrightarrow X$ of noetherian schemes, direct image takes [[D-QNTZY|quasi-coherent]] sheaves to [[D-QNTZY|quasi-coherent]] sheaves [@Har10a, Proposition II.5.8(c)].
+For an open inclusion $i:U\hookrightarrow X$ of noetherian schemes, direct image takes [[D-QNTZY|quasi-coherent]] sheaves to [[D-QNTZY|quasi-coherent]] sheaves [@Har77, Proposition II.5.8(c)].
 Indeed, $i$ is quasi-compact because every open subset of a noetherian space is quasi-compact, and it is separated.
-Kernels, cokernels, and images of morphisms of quasi-coherent sheaves are quasi-coherent [@Har10a, Proposition II.5.7].
+Kernels, cokernels, and images of morphisms of quasi-coherent sheaves are quasi-coherent [@Har77, Proposition II.5.7].
 
 ::: pf
 
@@ -62,7 +62,7 @@ Part (a) holds with the stated sectionwise meaning of union.
 
 ::: pf-proof
 
-Write $X=\Spec A$ with $A$ noetherian and $\mcf\cong\widetilde M$ [@Har10a, Proposition II.5.4].
+Write $X=\Spec A$ with $A$ noetherian and $\mcf\cong\widetilde M$ [@Har77, Proposition II.5.4].
 Every finitely generated submodule $N\subseteq M$ gives a [[D-QNTZY|coherent]] subsheaf $\widetilde N\subseteq\widetilde M$, since localization is exact.
 
 Fix an open set $W\subseteq X$ and a section $s\in\widetilde M(W)$.

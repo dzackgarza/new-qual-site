@@ -145,7 +145,7 @@ The first two have proper closed support, since their generic stalks are zero.
 Each is a coherent sheaf on the closed subscheme defined by its annihilator.
 That subscheme has affine reduction by the hypothesis on proper reduced closed subschemes, hence is itself affine by [[P-AGH331REDAFFINE]].
 The case of a zero sheaf uses the empty affine subscheme.
-Closed pushforward preserves cohomology [@Har10a, Lemma III.2.10], so affine vanishing gives
+Closed pushforward preserves cohomology [@Har77, Lemma III.2.10], so affine vanishing gives
 $$
 H^i(Y,\mathcal K)=H^i(Y,\mathcal C)=0\qquad(i>0).
 $$

@@ -47,8 +47,8 @@ Then use (Ex. 5.7b) to show that $X$ is projective.
 
 ::: {.solution}
 For a proper scheme of finite type over $k$, existence of an ample invertible sheaf implies projectivity.
-Indeed, a positive power is very ample by [@Har10a, Theorem II.7.6] and gives an immersion into a finite-dimensional projective space.
-This immersion is proper, since its source is proper and its target is separated over $k$, and a proper immersion is a closed immersion [@Har10a, Remark II.5.16.1].
+Indeed, a positive power is very ample by [@Har77, Theorem II.7.6] and gives an immersion into a finite-dimensional projective space.
+This immersion is proper, since its source is proper and its target is separated over $k$, and a proper immersion is a closed immersion [@Har77, Remark II.5.16.1].
 We will construct such an ample sheaf in each case.
 
 ::: pf
@@ -59,7 +59,7 @@ A proper nonsingular integral curve over $k$ is projective, proving (a).
 
 ::: pf-proof
 
-This is the equivalence between completeness and projectivity for nonsingular curves [@Har10a, Proposition II.6.7].
+This is the equivalence between completeness and projectivity for nonsingular curves [@Har77, Proposition II.6.7].
 Properness is completeness for the curve, so the stated hypothesis applies.
 
 :::
@@ -72,16 +72,16 @@ For integral $X$, its normalization is a nonsingular projective curve, and a ver
 
 ::: pf-proof
 
-Normalization of an integral curve of finite type over a field is finite and birational [@Har10a, Exercise II.3.8].
+Normalization of an integral curve of finite type over a field is finite and birational [@Har77, Exercise II.3.8].
 Thus $f:\tilde X\to X$ is finite surjective, and $\tilde X$ is proper over $k$.
-Its one-dimensional normal local rings are DVRs, so it is nonsingular [@Har10a, Theorem I.6.2A].
+Its one-dimensional normal local rings are DVRs, so it is nonsingular [@Har77, Theorem I.6.2A].
 Step [](#s1){.pf-ref} makes it projective.
 
 The nonsingular locus of $X$ is open and dense by [[P-AGH281DIFFNONCLOSED]], part (d).
 Its complement is a finite set of closed points of the integral curve, and finiteness of $f$ makes its inverse image finite as well.
 Choose a projective embedding of $\tilde X$ with pullback of $\OO(1)$ equal to the given very ample $\mcl$.
 The hyperplanes avoiding that finite inverse image form a nonempty open subset of the dual projective space.
-Bertini's theorem gives another dense open subset whose intersections with the nonsingular curve are reduced zero-dimensional divisors [@Har10a, Theorem II.8.18].
+Bertini's theorem gives another dense open subset whose intersections with the nonsingular curve are reduced zero-dimensional divisors [@Har77, Theorem II.8.18].
 Their intersection has a $k$-point because $k$ is algebraically closed.
 The resulting hyperplane section is $D=\sum P_i$ with distinct closed points and $\OO_{\tilde X}(D)\cong\mcl$.
 Its support avoids the inverse image of the singular locus, as required in (b).
@@ -139,7 +139,7 @@ For surjectivity, at a point of $T$ the quotient map of local rings $\OO_{Z,x}\t
 Lift on the $Z$ side and choose $1$ on the $W$ side.
 Away from $T$ the last stalk is trivial, so the sheaf sequence is exact everywhere.
 
-The noetherian space underlying $T$ has dimension zero, so $H^1(T,\OO_T^\times)=0$ by [@Har10a, Theorem III.2.7].
+The noetherian space underlying $T$ has dimension zero, so $H^1(T,\OO_T^\times)=0$ by [@Har77, Theorem III.2.7].
 Closed direct image preserves cohomology, and [[P-AGH345PICH1]] identifies degree-one unit cohomology with Picard groups.
 The long exact sequence therefore makes $\Pic X\to\Pic Z\oplus\Pic W$ surjective.
 Composing with the induction surjection for $W$ proves the stated map onto all component Picard groups.
@@ -181,7 +181,7 @@ $$
 \Pic X_{j+1}\longrightarrow\Pic X_j
 \longrightarrow H^2(X_{j+1},N^j/N^{j+1}).
 $$
-The last group is zero by Grothendieck vanishing: the underlying space has dimension one [@Har10a, Theorem III.2.7].
+The last group is zero by Grothendieck vanishing: the underlying space has dimension one [@Har77, Theorem III.2.7].
 Thus every transition on Picard groups is surjective, and composing them proves $\Pic X\to\Pic X_{\mathrm{red}}$ is surjective.
 
 Step [](#s5){.pf-ref} makes the reduction projective, so choose an ample invertible sheaf on it and lift its Picard class to an invertible sheaf $L$ on $X$.

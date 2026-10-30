@@ -39,5 +39,5 @@ Serre duality asserts that the cup product
 $$
 H^i(X;\mcf) \tensor H^{n-i}(X; \dualof{\mcf} \tensor \omega_X) \to H^n(X;\omega_X) \cong k
 $$
-is a perfect pairing of finite-dimensional $k$-vector spaces [@Har10a, Corollary III.7.7]; so $h^i(\mcf) = h^{n-i}(\dualof{\mcf} \tensor \omega_X)$.
+is a perfect pairing of finite-dimensional $k$-vector spaces [@Har77, Corollary III.7.7]; so $h^i(\mcf) = h^{n-i}(\dualof{\mcf} \tensor \omega_X)$.
 :::

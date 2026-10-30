@@ -47,7 +47,7 @@ Consequently a point $P\ne O$ has exact order three if and only if it is an infl
 
 ::: {.solution}
 For divisor sums, write $[P]$ for the point divisor; write $+$ and integer multiples without brackets for the group law on points.
-The group law is transported along the following bijection [@Har10a, Example II.6.10.2]:
+The group law is transported along the following bijection [@Har77, Example II.6.10.2]:
 $$
 X(k)\longrightarrow\Cl^0(X),\qquad P\longmapsto\operatorname{cl}([P]-[O]).
 $$
@@ -68,7 +68,7 @@ Restricting the equation to this line gives $x^3=0$, so its intersection divisor
 If $L$ has linear equation $\ell=0$, the ratio $\ell/z$ is a rational function on $X$ whose divisor is $L.X-3[O]$.
 The equality follows by taking valuations of these local equations, as in [[P-AGH262DEGDIV|hyperplane restriction]].
 Hence $L.X\sim3[O]$.
-Every line has an effective intersection divisor of degree three, since it is not a component of the integral cubic [@Har10a, Theorem I.7.7].
+Every line has an effective intersection divisor of degree three, since it is not a component of the integral cubic [@Har77, Theorem I.7.7].
 
 :::
 
@@ -238,7 +238,7 @@ Step [](#s2){.pf-ref} proves the collinearity criterion, step [](#s3){.pf-ref} p
 :::
 
 ::: {.remark title="The identity and repeated intersections"}
-The source's exact-order assertions in parts (b)--(c) require excluding $O$ [@Har10a, Exercise II.6.6].
+The source's exact-order assertions in parts (b)--(c) require excluding $O$ [@Har77, Exercise II.6.6].
 Indeed, the tangent at $O$ contains $O$ and has intersection divisor $3[O]$, so $O$ satisfies both geometric conditions but has order one.
 The equations $2P=O$ and $3P=O$ retain the valid equivalences at every point.
 In part (a), collinearity includes intersection multiplicities, as in Example II.6.10.2; merely repeating an arbitrary point on a secant does not impose tangency.

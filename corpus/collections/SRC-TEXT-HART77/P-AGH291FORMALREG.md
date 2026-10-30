@@ -64,13 +64,13 @@ $$
 0\longrightarrow\mathcal N^*\longrightarrow i^*\Omega_{X/k}
 \longrightarrow\Omega_{Y/k}\longrightarrow0
 $$
-[@Har10a, Theorem II.8.17].
+[@Har77, Theorem II.8.17].
 Its quotient is locally free, so the sequence splits locally: lifts of a local basis give a section of its surjection after shrinking.
 The [[T-MODEULER|Euler sequence]] on $\PP_k^n$ is
 $$
 0\to\Omega_{X/k}\to\OO_X(-1)^{\oplus(n+1)}\to\OO_X\to0
 $$
-[@Har10a, Theorem II.8.13].
+[@Har77, Theorem II.8.13].
 This also splits locally, since its quotient is locally free.
 Pulling it back to $Y$ therefore preserves exactness and gives a locally split inclusion $i^*\Omega_{X/k}\hookrightarrow\OO_Y(-1)^{\oplus(n+1)}$.
 Compose the two inclusions.
@@ -123,7 +123,7 @@ $$
 \operatorname{Sym}^r(\mathcal I/\mathcal I^2)
 \xrightarrow{\cong}\mathcal I^r/\mathcal I^{r+1}
 $$
-[@Har10a, Theorem II.8.21A(e)].
+[@Har77, Theorem II.8.21A(e)].
 This is the associated graded description of a [regular immersion](https://stacks.math.columbia.edu/tag/0638).
 These are local regular-sequence isomorphisms whose maps are defined globally by multiplication, so they agree on overlaps.
 
@@ -135,7 +135,7 @@ $$
 \cong\OO_Y(-r)\otimes\operatorname{Sym}^r(\OO_Y^{\oplus(n+1)})
 \cong\OO_Y(-r)^{\oplus\binom{n+r}{r}},
 $$
-as is seen on the degree-$r$ monomial basis [@Har10a, Exercise II.5.16].
+as is seen on the degree-$r$ monomial basis [@Har77, Exercise II.5.16].
 The stated injection follows.
 Taking global sections is left exact, and step [](#s2){.pf-ref} makes the target section group zero.
 Hence $\Gamma(Y,\mathcal I^r/\mathcal I^{r+1})=0$.

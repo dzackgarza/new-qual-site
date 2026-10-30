@@ -40,10 +40,10 @@ Then cover $X$ with open affines.
 :::
 
 ::: {.solution}
-The category $\QCoh(X)$ is a full abelian subcategory of $\OO_X$-modules, with kernels and cokernels computed as sheaves [@Har10a, Proposition II.5.7].
+The category $\QCoh(X)$ is a full abelian subcategory of $\OO_X$-modules, with kernels and cokernels computed as sheaves [@Har77, Proposition II.5.7].
 Choose a finite affine open cover $X=\bigcup_{a=1}^r U_a$, where $U_a=\Spec A_a$, and let $j_a:U_a\hookrightarrow X$ be the inclusions.
 For a quasi-coherent $F$, write $F\restrict_{U_a}=\widetilde{M_a}$ and choose an embedding $M_a\hookrightarrow J_a$ into an injective $A_a$-module.
-The sheaf used in the affine-cover construction of [@Har10a, Corollary III.3.6] is
+The sheaf used in the affine-cover construction of [@Har77, Corollary III.3.6] is
 $$
 G=\bigoplus_{a=1}^r j_{a*}\widetilde{J_a}.
 $$
@@ -57,7 +57,7 @@ Each $j_{a*}\widetilde{J_a}$ is a quasi-coherent sheaf injective in $\QCoh(X)$.
 ::: pf-proof
 
 An open immersion into a noetherian scheme is quasi-compact and separated.
-Its direct image preserves quasi-coherence [@Har10a, Proposition II.5.8(c)], as used in [[P-AGH2515EXTCOH]].
+Its direct image preserves quasi-coherence [@Har77, Proposition II.5.8(c)], as used in [[P-AGH2515EXTCOH]].
 Thus $j_{a*}\widetilde{J_a}$ is quasi-coherent.
 The affine equivalence $\operatorname{Mod}(A_a)\simeq\QCoh(U_a)$ is exact, so the module injectivity of $J_a$ makes $\widetilde{J_a}$ injective in $\QCoh(U_a)$.
 
@@ -102,7 +102,7 @@ The sheaf $G$ is flasque, and every injective object of $\QCoh(X)$ is flasque.
 
 ::: pf-proof
 
-Since $A_a$ is noetherian and $J_a$ is an injective module, $\widetilde{J_a}$ is flasque on $U_a$ [@Har10a, Proposition III.3.4].
+Since $A_a$ is noetherian and $J_a$ is an injective module, $\widetilde{J_a}$ is flasque on $U_a$ [@Har77, Proposition III.3.4].
 For open sets $W\subseteq V\subseteq X$, the restriction map of its direct image is
 $$
 \widetilde{J_a}(V\cap U_a)\longrightarrow\widetilde{J_a}(W\cap U_a),
@@ -133,7 +133,7 @@ $$
 By step [](#s2){.pf-ref}, choose an injective resolution $F\to I^\bullet$ in $\QCoh(X)$.
 The exact inclusion of $\QCoh(X)$ into all module sheaves makes this an exact resolution of the underlying abelian sheaf.
 Step [](#s3){.pf-ref} makes its terms flasque.
-They are consequently acyclic for ordinary global sections, so this same resolution computes ordinary sheaf cohomology [@Har10a, Proposition III.2.5 and Remark III.2.5.1].
+They are consequently acyclic for ordinary global sections, so this same resolution computes ordinary sheaf cohomology [@Har77, Proposition III.2.5 and Remark III.2.5.1].
 On the other hand, its global-section complex defines the derived functor in $\QCoh(X)$.
 The two computations are the identical complex $\Gamma(X,I^\bullet)$, giving the asserted isomorphism in all degrees.
 Comparison of resolutions gives naturality in $F$.

@@ -52,5 +52,5 @@ For a ring map $\varphi\colon A\to B$ and a prime $\mfq$ of $B$, $\inverseof{\va
 The preimage of a maximal ideal need not be maximal: for $\ZZ\subseteq\QQ$, the preimage of the maximal ideal $(0)$ of $\QQ$ is the prime $(0)$ of $\ZZ$, which is not maximal.
 
 Morphisms of schemes are morphisms of locally ringed spaces: the induced maps on stalks are local homomorphisms.
-With this condition, ring maps $A\to B$ correspond bijectively to morphisms $\Spec B\to\Spec A$ [@Har10a, Proposition II.2.3]; as morphisms of ringed spaces there are more ([[D-AN662]]).
+With this condition, ring maps $A\to B$ correspond bijectively to morphisms $\Spec B\to\Spec A$ [@Har77, Proposition II.2.3]; as morphisms of ringed spaces there are more ([[D-AN662]]).
 :::

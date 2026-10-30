@@ -49,7 +49,7 @@ $$
 ::: pf-proof
 
 The scheme $X$ is noetherian because it is projective over a noetherian ring.
-Kernels, images and cokernels of maps of coherent sheaves on a noetherian scheme are coherent [@Har10a, Proposition II.5.7].
+Kernels, images and cokernels of maps of coherent sheaves on a noetherian scheme are coherent [@Har77, Proposition II.5.7].
 At an interior term, the assumed exactness is $\im d_{i-1}=\ker d_i=K_i$.
 Factoring $d_{i-1}$ through that image gives the displayed short exact sequence, with kernel $K_{i-1}$ by definition.
 
@@ -63,7 +63,7 @@ There is one integer $n_0$ such that, for every $n\ge n_0$, every map $\Gamma(X,
 
 ::: pf-proof
 
-By [[T-COHSVAN|Serre vanishing]], for each coherent $K_j$ there is a bound beyond which $H^1(X,K_j(n))=0$ [@Har10a, Theorem III.5.2].
+By [[T-COHSVAN|Serre vanishing]], for each coherent $K_j$ there is a bound beyond which $H^1(X,K_j(n))=0$ [@Har77, Theorem III.5.2].
 There are only finitely many $K_j$, so take $n_0$ to be the maximum of these finitely many bounds.
 If the index set is empty, take $n_0=0$.
 

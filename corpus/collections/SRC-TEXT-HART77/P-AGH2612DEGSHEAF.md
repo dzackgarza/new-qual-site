@@ -44,9 +44,9 @@ The [[P-AGH2611KCURVE|determinant homomorphism]] is denoted by $\det:K(X)\to\Pic
 The degree of divisors induces a homomorphism $d:\Pic(X)\to\ZZ$ with $d([\OO_X(D)])=\deg D$.
 
 ::: pf-proof
-Every principal divisor on the complete nonsingular curve has degree zero [@Har10a, Proposition II.6.10].
+Every principal divisor on the complete nonsingular curve has degree zero [@Har77, Proposition II.6.10].
 Thus the additive map $D=\sum_P n_PP\mapsto\sum_P n_P$ descends to $\Cl(X)$.
-The [[D-5PQ5W|Cartier and Weil comparison]] identifies $\Cl(X)$ with $\Pic(X)$ by $[D]\mapsto[\OO_X(D)]$ [@Har10a, Corollary II.6.16].
+The [[D-5PQ5W|Cartier and Weil comparison]] identifies $\Cl(X)$ with $\Pic(X)$ by $[D]\mapsto[\OO_X(D)]$ [@Har77, Corollary II.6.16].
 Transporting degree through this isomorphism gives $d$.
 In particular, $d([\OO_X])=0$.
 :::

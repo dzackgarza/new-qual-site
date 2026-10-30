@@ -61,7 +61,7 @@ Atlases are equivalent when their union has this property after common open refi
 An isomorphism of bundles is an $X$-isomorphism whose local expressions are projective linear in the two atlases, as in the vector-bundle definition of [[P-AGH2518VECBUN]].
 
 Writing $g_{ji}=h_j\circ h_i^{-1}$, the identities $g_{ii}=\id$ and $g_{kj}\circ g_{ji}=g_{ki}$ hold on their domains.
-Conversely, projective coordinate changes satisfying these identities glue the schemes $\PP_{U_i}^n$ and their projections to $X$ [@Har10a, Exercise II.2.12].
+Conversely, projective coordinate changes satisfying these identities glue the schemes $\PP_{U_i}^n$ and their projections to $X$ [@Har77, Exercise II.2.12].
 This describes the required bundle notion in terms of gluing data.
 Multiplying a chosen matrix by a unit does not change its projective automorphism, since the unit cancels in every homogeneous coordinate ratio.
 Thus the matrices representing the $g_{ji}$ are not required to satisfy an exact matrix cocycle identity; assuming such lifts would assume the vector bundle sought in (c).
@@ -95,7 +95,7 @@ Under this hypothesis, each connected component of $X$ is integral and open and 
 ::: pf-proof
 
 This hypothesis is local factoriality.
-It holds for regular $X$ because a regular local ring is factorial [@Har10a, Remark II.6.11.1A].
+It holds for regular $X$ because a regular local ring is factorial [@Har77, Remark II.6.11.1A].
 Local factoriality also makes every local ring a domain.
 As in [[P-AGH279PICPE]], step [](#s1){.pf-ref}, the finitely many irreducible components of a noetherian scheme with domain local rings are disjoint, reduced, and open and closed.
 Thus they are the integral connected components.
@@ -132,7 +132,7 @@ Put $\mathcal L=\OO_P(H)$.
 Its restriction to $P\restrict_U$ is $\OO(1)$, as required by the hint.
 
 On any nonempty affine trivializing open $V\subseteq X$, both $V$ and $\PP_V^n$ are noetherian, integral, locally factorial, and separated.
-The class-group calculation in [[P-AGH261CLPROJBUN]], together with the Cartier–Weil comparison [@Har10a, Proposition II.6.11 and Corollary II.6.16], gives
+The class-group calculation in [[P-AGH261CLPROJBUN]], together with the Cartier–Weil comparison [@Har77, Proposition II.6.11 and Corollary II.6.16], gives
 $$
 \Pic(\PP_V^n)\cong\Pic(V)\oplus\ZZ.
 $$
@@ -162,7 +162,7 @@ $$
 \cong\pi_{V*}(\pi_V^*\mathcal M_V\otimes\OO(1))
 \cong\mathcal M_V\otimes\OO_V^{\oplus(n+1)}.
 $$
-The tensor identity follows by trivializing the invertible sheaf $\mathcal M_V$ on $V$; the remaining identity is $\pi_{V*}\OO(1)=\OO_V^{\oplus(n+1)}$ [@Har10a, Theorem III.5.1].
+The tensor identity follows by trivializing the invertible sheaf $\mathcal M_V$ on $V$; the remaining identity is $\pi_{V*}\OO(1)=\OO_V^{\oplus(n+1)}$ [@Har77, Theorem III.5.1].
 Thus $\mce$ is locally free of the asserted finite rank and is coherent because $X$ is noetherian.
 
 The counit
@@ -192,7 +192,7 @@ $$
 Z=\Spec k[x_0,x_1,x_2,x_3,x_4]/(x_0^2+x_1^2+x_2^2+x_3^2+x_4^2).
 $$
 The quadric calculation in [[P-AGH265QUADRIC]], steps [](#s1){.pf-ref} and [](#s4){.pf-ref}, makes its coordinate ring a normal noetherian domain with zero class group.
-It is therefore a UFD [@Har10a, Proposition II.6.2], and every localization is factorial.
+It is therefore a UFD [@Har77, Proposition II.6.2], and every localization is factorial.
 At the origin, however, the maximal ideal modulo its square has dimension five over $k$, because the only defining relation is quadratic.
 The local ring has dimension four: it is a polynomial regular local ring of dimension five modulo a nonzero hypersurface equation [@AM18, Chapter 11].
 Thus its embedding dimension exceeds its Krull dimension, so that local ring is not regular.

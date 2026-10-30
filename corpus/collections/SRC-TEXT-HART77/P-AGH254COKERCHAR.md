@@ -36,7 +36,7 @@ On $U=\Spec A$, the associated-sheaf functor is exact and commutes with direct s
 $$
 \widetilde{A^{(I)}}\cong\OO_U^{(I)}
 $$
-[@Har10a, Propositions II.5.1 and II.5.2].
+[@Har77, Propositions II.5.1 and II.5.2].
 
 ::: pf
 
@@ -95,7 +95,7 @@ On a noetherian scheme, [[D-QNTZY|coherence]] is equivalent to the existence of 
 ::: pf-proof
 
 Suppose first that $\mcf$ is [[D-QNTZY|coherent]].
-For each point choose an affine neighborhood $U=\Spec A$ with $\mcf\restrict_U\cong\widetilde M$, where $M$ is finitely generated and $A$ is noetherian [@Har10a, Proposition II.5.4].
+For each point choose an affine neighborhood $U=\Spec A$ with $\mcf\restrict_U\cong\widetilde M$, where $M$ is finitely generated and $A$ is noetherian [@Har77, Proposition II.5.4].
 Choose a surjection $A^n\to M$ with $n$ finite.
 Its kernel is finitely generated because it is a submodule of the noetherian module $A^n$.
 Choose finitely many generators of this kernel to obtain

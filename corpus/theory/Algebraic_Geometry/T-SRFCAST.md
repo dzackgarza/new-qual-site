@@ -38,7 +38,7 @@ A \dfn{minimal surface} is a smooth projective surface containing no $(-1)$-curv
 Let $X$ be a smooth surface, separated and of finite type over an algebraically closed field $k$, and let $E \subseteq X$ be an integral curve that is proper over $k$.
 There exist a smooth surface $Y$ over $k$, a point $p \in Y$ and a morphism $\sigma \colon X \to Y$ that is the blowup of $Y$ at $p$ with exceptional curve $E$ if and only if $E \cong \PP^1$ and $E^2 = -1$.
 Such a curve is also called an exceptional curve of the first kind.
-If $X$ is projective, then $Y$ is projective [@Har10a, Theorem V.5.7].
+If $X$ is projective, then $Y$ is projective [@Har77, Theorem V.5.7].
 :::
 
 ::: {.remark}

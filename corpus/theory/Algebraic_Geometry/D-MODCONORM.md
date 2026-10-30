@@ -33,7 +33,7 @@ $$
 
 ::: {.definition title="Determinant"}
 For a locally free sheaf $\mcf$ of finite rank $r$ on a scheme $X$, its \dfn{determinant} is the invertible sheaf $\det\mcf\coloneqq\bigwedge^r\mcf$.
-For a smooth variety $X$ over a field $k$, the canonical invertible sheaf is $\omega_X=\det\Omega_{X/k}$ [@Har10a, Chapter II, §8].
+For a smooth variety $X$ over a field $k$, the canonical invertible sheaf is $\omega_X=\det\Omega_{X/k}$ [@Har77, Chapter II, §8].
 :::
 
 ::: {.proposition title="Determinants of exact sequences"}
@@ -51,7 +51,7 @@ $$
 $$
 For $n=3$ it is
 $\det\mcf_2\cong\det\mcf_1\tensor_{\OO_X}\det\mcf_3$.
-The short-exact-sequence map is proved in [[P-AGH2516TENSOROPS]], part (d); applying it to the successive image sheaves gives the displayed cancellation for a longer exact sequence [@Har10a, Exercise II.5.16].
+The short-exact-sequence map is proved in [[P-AGH2516TENSOROPS]], part (d); applying it to the successive image sheaves gives the displayed cancellation for a longer exact sequence [@Har77, Exercise II.5.16].
 :::
 
 ::: {.theorem title="Adjunction"}
@@ -65,7 +65,7 @@ Taking determinants gives
 $$
 \omega_Z\cong i^*\omega_X\otimes_{\OO_Z}\bigwedge^{n-m}\mcn_{Z/X}.
 $$
-[@Har10a, Theorem II.8.17 and Proposition II.8.20]
+[@Har77, Theorem II.8.17 and Proposition II.8.20]
 :::
 
 ::: {.theorem title="Adjunction for a divisor"}
@@ -74,7 +74,7 @@ Its ideal sheaf is $\OO_X(-Z)$, and
 $$
 \omega_Z\cong i^*\bigl(\omega_X\otimes_{\OO_X}\OO_X(Z)\bigr).
 $$
-[@Har10a, Proposition II.8.20]
+[@Har77, Proposition II.8.20]
 :::
 
 ::: {.example title="A free conormal module on a nonsmooth subscheme"}
@@ -86,7 +86,7 @@ B\longrightarrow I/I^2,\qquad a\bmod x^2\longmapsto ax^2\bmod x^4
 $$
 is an isomorphism: it is surjective, and $ax^2\in(x^4)$ holds exactly when $a\in(x^2)$.
 Thus the conormal sheaf is free of rank one on $Z$.
-The element $x\bmod x^2$ is nonzero and nilpotent, so $Z$ is not reduced and is not smooth over $k$ [@Har10a, Chapter III, §10].
+The element $x\bmod x^2$ is nonzero and nilpotent, so $Z$ is not reduced and is not smooth over $k$ [@Har77, Chapter III, §10].
 Consequently local freeness of the conormal sheaf does not imply smoothness of the closed subscheme.
 :::
 
@@ -100,5 +100,5 @@ Since $\deg\OO_C(1)=d$ and $\deg\omega_C=2g(C)-2$, it follows that
 $$
 g(C)=\frac{(d-1)(d-2)}2.
 $$
-[@Har10a, Example II.8.20.3 and Chapter IV, §1]
+[@Har77, Example II.8.20.3 and Chapter IV, §1]
 :::

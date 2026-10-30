@@ -102,7 +102,7 @@ The morphism $\pi:X\to\PP^1$ is proper, and $X$ is a complete integral variety.
 ::: pf-proof
 Over each of $V_0,V_\infty$, the morphism is the projection $C\times V_i\to V_i$.
 It is a base change of the projective curve $C\to\Spec k$, so is proper.
-Properness is local on the target, hence $\pi$ is proper [@Har10a, Chapter II, §4].
+Properness is local on the target, hence $\pi$ is proper [@Har77, Chapter II, §4].
 Since $\PP^1$ is proper over $k$, their composite is proper.
 
 Each $X_i$ is integral: an affine coordinate ring of $C$ is a domain, and adjoining one polynomial variable preserves this property.

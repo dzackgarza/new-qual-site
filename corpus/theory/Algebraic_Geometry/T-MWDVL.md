@@ -28,7 +28,7 @@ Let $X$ be a smooth projective geometrically connected curve of genus $g$ over a
 $$
 \ell(D) - \ell(K - D) = \deg D + 1 - g ,
 $$
-where $\ell(D) \coloneqq \dim_k H^0(X, \OO_X(D))$ and $K$ is a canonical divisor [@Har10a, Theorem IV.1.3].
+where $\ell(D) \coloneqq \dim_k H^0(X, \OO_X(D))$ and $K$ is a canonical divisor [@Har77, Theorem IV.1.3].
 :::
 
 ::: {.theorem title="Serre duality"}

@@ -112,7 +112,7 @@ Quasi-coherence gives canonical algebra isomorphisms
 $$
 \mca(D_V(a))\cong B_a\qquad(a\in A),
 $$
-compatible with restriction [@Har10a, Proposition II.5.4].
+compatible with restriction [@Har77, Proposition II.5.4].
 Thus $X_{D_V(a)}=\Spec B_a$ identifies with $h_V^{-1}(D_V(a))$ as an open subscheme of $X_V$.
 
 On this distinguished-open basis, the sections of $(h_V)_*\OO_{X_V}$ are $B_a$, with the same restrictions as $\mca\restrict_V$.
@@ -142,7 +142,7 @@ For two such opens $U,U'$, refine $U\cap U'$ by affine opens again.
 The identifications agree there because they are induced by the same restriction homomorphisms from $\mca$.
 This proves consistency of the overlap maps; on triple intersections the same argument proves the cocycle identity.
 
-Gluing schemes along these open identifications gives a scheme $X$ and a morphism $f:X\to Y$ whose pieces are the $h_{V_i}$ [@Har10a, Exercise II.2.12].
+Gluing schemes along these open identifications gives a scheme $X$ and a morphism $f:X\to Y$ whose pieces are the $h_{V_i}$ [@Har77, Exercise II.2.12].
 For any affine open $V\subseteq Y$, covering $V\cap V_i$ by affine opens and using step [](#s3){.pf-ref} identifies $f^{-1}(V)$ with $X_V$.
 The restriction maps for all affine inclusions are exactly those stipulated in part (c).
 Any other scheme with these compatible identifications has the same local isomorphisms to $X_V$.

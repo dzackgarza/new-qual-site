@@ -43,7 +43,7 @@ $$
 $$
 
 ::: pf-proof
-This is the Riemann--Roch theorem for divisors on a smooth projective curve [@Har10a, Theorem IV.1.3].
+This is the Riemann--Roch theorem for divisors on a smooth projective curve [@Har77, Theorem IV.1.3].
 :::
 
 :::

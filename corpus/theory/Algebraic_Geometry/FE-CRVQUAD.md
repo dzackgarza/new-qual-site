@@ -30,7 +30,7 @@ $$
 $$
 as computed in [[P-AGH356QUADRICCURVES]].
 Thus a hyperplane section of the curve has length $a+b$, with multiplicities retained.
-If $C$ is nonsingular and integral, its geometric genus equals this arithmetic genus by [[P-AGH353ARITHGENUS]] and Serre duality [@Har10a, Exercise III.5.3 and Chapter IV, §1].
+If $C$ is nonsingular and integral, its geometric genus equals this arithmetic genus by [[P-AGH353ARITHGENUS]] and Serre duality [@Har77, Exercise III.5.3 and Chapter IV, §1].
 The product differential formula gives $K_Q=(-2,-2)$, and adjunction yields the same genus identity $2g-2=C\cdot(C+K_Q)$.
 Nonsingular irreducible curves of every type $a,b\ge1$ exist by [[P-AGH356QUADRICCURVES]], part (b).
 :::
@@ -60,10 +60,10 @@ These are arithmetic-genus statements; they are geometric-genus statements when 
 ::: {.proof}
 The cone is integral: its equation is an irreducible primitive polynomial linear in $x_0$ over $k[x_1,x_2,x_3]$.
 Outside its vertex, the charts $x_0\ne0$ and $x_2\ne0$ are affine planes.
-It is a hypersurface and hence Cohen--Macaulay; since the only possible nonregular point has codimension two, Serre's criterion makes it normal [@Har10a, Theorems II.8.21A and II.8.22A].
+It is a hypersurface and hence Cohen--Macaulay; since the only possible nonregular point has codimension two, Serre's criterion makes it normal [@Har77, Theorems II.8.21A and II.8.22A].
 Its complement of $L$ is the affine plane $D_+(x_0)$.
 The divisor restriction sequence therefore generates its class group by $[L]$.
-There is no relation: a rational function with divisor supported on $L$ is a unit on that affine plane, hence is a nonzero constant and has zero divisor [@Har10a, Proposition II.6.5].
+There is no relation: a rational function with divisor supported on $L$ is a unit on that affine plane, hence is a nonzero constant and has zero divisor [@Har77, Proposition II.6.5].
 On the chart $x_2\ne0$, the cone is $x_0/x_2=(x_1/x_2)^2$, so the hyperplane section $V_+(x_0)\cap Q_0$ is the divisor $2L$.
 
 Write $[C]=m[L]$.
@@ -71,7 +71,7 @@ On a normal scheme, the ideal of an integral prime divisor is the sheaf of ratio
 This follows from the codimension-one intersection description for normal domains, as in the [reflexive-module criterion](https://stacks.math.columbia.edu/tag/0AVB).
 Thus linear equivalence identifies the corresponding ideal sheaves by multiplication by a rational function.
 For $m=2a$ this gives $\mathcal I_C\cong\OO_{Q_0}(-a)$, and for $m=2a+1$ it gives $\mathcal I_C\cong\mathcal I_L\otimes\OO_{Q_0}(-a)$.
-The hypersurface sequence gives $\chi(\OO_{Q_0}(t))=\binom{t+3}{3}-\binom{t+1}{3}=(t+1)^2$, while $\chi(\OO_L(t))=t+1$ [@Har10a, Theorem III.5.1].
+The hypersurface sequence gives $\chi(\OO_{Q_0}(t))=\binom{t+3}{3}-\binom{t+1}{3}=(t+1)^2$, while $\chi(\OO_L(t))=t+1$ [@Har77, Theorem III.5.1].
 These are polynomial identities at every integer twist by [[P-AGH352HILBPOLY]].
 Hence $\chi(\mathcal I_L(t))=t(t+1)$ by Euler additivity.
 The sequence $0\to\mathcal I_C(t)\to\OO_{Q_0}(t)\to\OO_C(t)\to0$ gives respectively
@@ -90,7 +90,7 @@ Its zero scheme on $Q_0$ is exactly $C$, proving the complete-intersection asser
 Over an algebraically closed field, for every $g\ge0$ a nonsingular curve of type $(g+1,2)$ exists on a smooth quadric and has degree $g+3$ and genus $g$.
 The types $(1,2)$ and $(2,2)$ give the twisted cubic and an elliptic quartic.
 A nonsingular curve of type $(3,3)$ has degree six and genus four, and adjunction gives $\omega_C\cong\OO_C(1,1)$, so its given embedding is canonical.
-The two rulings restrict to degree-three pencils on it [@Har10a, Chapter II, §§7 and 8].
+The two rulings restrict to degree-three pencils on it [@Har77, Chapter II, §§7 and 8].
 They are distinct: the divisor sequence twisted by $\OO_Q(1,-1)$ and the vanishing $H^1(Q,\OO_Q(-2,-4))=0$ from [[P-AGH356QUADRICCURVES]] give $H^0(C,\OO_C(1,-1))=0$, so the two degree-three line bundles cannot be isomorphic.
 :::
 

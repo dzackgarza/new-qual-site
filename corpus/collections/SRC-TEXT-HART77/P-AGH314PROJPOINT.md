@@ -86,7 +86,7 @@ $$
 After identifying that hyperplane with $\PP^n$, this is the displayed formula.
 
 The coordinate functions $x_0,\ldots,x_n$ are homogeneous of the same degree and have no common zero on the domain $\PP^{n+1}\setminus\{P\}$.
-Hence they define a morphism there [@Har10a, Chapter I, §3].
+Hence they define a morphism there [@Har77, Chapter I, §3].
 
 :::
 

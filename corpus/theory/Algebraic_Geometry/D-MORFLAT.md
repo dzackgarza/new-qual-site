@@ -32,7 +32,7 @@ $f$ is \dfn{faithfully flat} if it is flat and surjective.
 ::: {.remark}
 Flatness is a condition on stalks and therefore checkable on affines, where it is the ordinary flatness of $B \to A$.
 Over a Dedekind domain, a module is flat if and only if it is torsion-free; hence every dominant morphism from an integral scheme to a regular integral curve is flat.
-Over a regular base of dimension two this fails: the blowup $\operatorname{Bl}_0\AA^2\to\AA^2$ is dominant with integral source, and it is not flat, since its fibre over $0$ has dimension $1$ while its other fibres are points, whereas a flat morphism $f$ of schemes of finite type over a field satisfies $\dim_x X_{f(x)}=\dim_x X-\dim_{f(x)} Y$ at every point $x$ [@Har10a, Proposition III.9.5].
+Over a regular base of dimension two this fails: the blowup $\operatorname{Bl}_0\AA^2\to\AA^2$ is dominant with integral source, and it is not flat, since its fibre over $0$ has dimension $1$ while its other fibres are points, whereas a flat morphism $f$ of schemes of finite type over a field satisfies $\dim_x X_{f(x)}=\dim_x X-\dim_{f(x)} Y$ at every point $x$ [@Har77, Proposition III.9.5].
 
 For $A\to B$ faithfully flat, an $A$-module $M$ is zero if and only if $M\tensor_AB=0$, and a complex of $A$-modules is exact if and only if it is exact after $\wait\tensor_AB$ ([[D-DEFFFLAT]]).
 :::
@@ -51,13 +51,13 @@ The generic points of the irreducible components are associated points, and when
 Let $f \colon X \to Y$ be a morphism with $X$ Noetherian and $Y$ integral, regular and of dimension one.
 Then $f$ is flat if and only if every associated point of $X$ maps to the generic point of $Y$.
 In particular, if $X$ is reduced, $f$ is flat if and only if every irreducible component of $X$ dominates $Y$.
-[@Har10a, Proposition III.9.7]
+[@Har77, Proposition III.9.7]
 :::
 
 ::: {.proposition title="Flat limits"}
 Let $Y$ be integral, regular and of dimension one, $P \in Y$ a closed point, and $X^\circ \subseteq \PP^n_{Y \sm P}$ a closed subscheme flat over $Y \sm P$.
 Then there is a unique closed subscheme $X \subseteq \PP^n_Y$, flat over $Y$, whose restriction to $\PP^n_{Y \sm P}$ is $X^\circ$: the scheme-theoretic closure of $X^\circ$.
-[@Har10a, Proposition III.9.8]
+[@Har77, Proposition III.9.8]
 :::
 
 ::: {.example title="What a flat family does not preserve"}

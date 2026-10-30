@@ -151,7 +151,7 @@ If $I$ defines $Y$, then $J_Y=\bar I$.
 
 ::: pf-proof
 
-The existence of such an $I$ is the homogeneous-ideal description of closed subschemes recalled in the problem [@Har10a, Proposition II.5.16].
+The existence of such an $I$ is the homogeneous-ideal description of closed subschemes recalled in the problem [@Har77, Proposition II.5.16].
 The inclusion $\mci_Y(d)\to\OO_X(d)$ is injective because twisting by an invertible sheaf is exact.
 Step [](#s4-1){.pf-ref} therefore identifies $\Gamma(X,\mci_Y(d))$ with a submodule of $S_d$ for $d\ge0$.
 Multiplication by $S_e$ carries this submodule into $\Gamma(X,\mci_Y(d+e))$, so their direct sum is a homogeneous ideal.

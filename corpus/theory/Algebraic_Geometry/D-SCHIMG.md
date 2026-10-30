@@ -31,7 +31,7 @@ When $\mci \coloneqq \ker(\OO_Y \to f_* \OO_X)$ is quasicoherent — for instanc
 ::: {.definition title="Constructible set"}
 In a Noetherian topological space $X$, the \dfn{constructible} subsets form the smallest family of subsets containing every open set and closed under finite intersections and complements.
 A subset of $X$ is constructible if and only if it is a finite disjoint union of locally closed subsets.
-[@Har10a, Exercise II.3.18]
+[@Har77, Exercise II.3.18]
 :::
 
 ::: {.definition title="Scheme-theoretic closure"}

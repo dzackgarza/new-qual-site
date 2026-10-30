@@ -33,7 +33,7 @@ is an exact sequence of $\OO_\mathfrak{X}\dash$modules on a noetherian formal sc
 ::: {.solution}
 Write $a:\mcf'\hookrightarrow\mcf$ and $b:\mcf\twoheadrightarrow\mcf''$ for the given maps.
 Coherence on a noetherian formal scheme is local, so work on an arbitrary affine formal open $\mathfrak U\subseteq\mathfrak X$ and restrict all sheaves and maps to it.
-For coherent formal sheaves, finite direct sums, kernels and cokernels of morphisms are coherent [@Har10a, Theorem II.9.7 and Corollary II.9.9].
+For coherent formal sheaves, finite direct sums, kernels and cokernels of morphisms are coherent [@Har77, Theorem II.9.7 and Corollary II.9.9].
 These closure properties concern morphisms whose source and target are already coherent; no such assumption is made about $\mcf$.
 
 ::: pf
@@ -45,7 +45,7 @@ There is a surjection $q:\OO_{\mathfrak U}^{\oplus s}\twoheadrightarrow\mcf''$ a
 ::: pf-proof
 
 Write $\mathfrak U=\operatorname{Spf}A$ with $A$ noetherian and complete for its defining ideal.
-The affine formal module correspondence identifies $\mcf''$ with the sheaf associated to the finite $A$-module $\Gamma(\mathfrak U,\mcf'')$ [@Har10a, Theorem II.9.7].
+The affine formal module correspondence identifies $\mcf''$ with the sheaf associated to the finite $A$-module $\Gamma(\mathfrak U,\mcf'')$ [@Har77, Theorem II.9.7].
 A finite set of module generators therefore gives global sections generating the sheaf and a surjection $q$ as asserted.
 By [[P-AGH293EXACTGLOBAL]], applied to the given sequence with coherent kernel $\mcf'$, the map
 $$
@@ -97,7 +97,7 @@ Both $R$ and $\mcf'\oplus\OO_{\mathfrak U}^{\oplus s}$ are coherent, as required
 ::: pf-qed
 
 Step [](#s2){.pf-ref} identifies $\mcf\restrict_{\mathfrak U}$ with the cokernel of a morphism between coherent formal sheaves.
-It is therefore coherent by [@Har10a, Corollary II.9.9].
+It is therefore coherent by [@Har77, Corollary II.9.9].
 The construction applies on every affine formal open, and these opens cover $\mathfrak X$.
 Locality of coherence proves that $\mcf$ is coherent on $\mathfrak X$.
 

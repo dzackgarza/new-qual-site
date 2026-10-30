@@ -41,12 +41,12 @@ g^*R^if_*\mathcal F
 R^if'_*g'^*\mathcal F
 $$
 is an isomorphism for all $i$.
-[@Har10a, Proposition III.9.3]
+[@Har77, Proposition III.9.3]
 :::
 
 ::: {.corollary title="Extension of the base field"}
 Let $X$ be a quasicompact separated scheme over a field $k$, $\mathcal{F}$ a quasicoherent sheaf on $X$, and $K/k$ a field extension, with $X_K = X \times_k \Spec K$ and $\mathcal{F}_K$ the pullback of $\mathcal{F}$.
-Then $H^i(X_K, \mathcal{F}_K) \cong H^i(X, \mathcal{F}) \otimes_k K$ for every $i$; in particular $\dim_k H^i(X, \mathcal{F}) = \dim_K H^i(X_K, \mathcal{F}_K)$ [@Har10a, Proposition III.9.3].
+Then $H^i(X_K, \mathcal{F}_K) \cong H^i(X, \mathcal{F}) \otimes_k K$ for every $i$; in particular $\dim_k H^i(X, \mathcal{F}) = \dim_K H^i(X_K, \mathcal{F}_K)$ [@Har77, Proposition III.9.3].
 :::
 
 ::: {.theorem title="Proper base change"}

@@ -72,7 +72,7 @@ One has $\boxed{\dim\PP_k^n=n}$.
 ::: pf-proof
 
 The ratios $x_j/x_i$, with $j\ne i$, identify $U_i$ with $\AA_k^n$.
-The dimension of affine space is $n$, since its coordinate ring is a polynomial ring in $n$ algebraically independent variables [@Har10a, Proposition I.1.9].
+The dimension of affine space is $n$, since its coordinate ring is a polynomial ring in $n$ algebraically independent variables [@Har77, Proposition I.1.9].
 The $U_i$ cover $\PP^n$, so step [](#s1){.pf-ref} gives the claimed dimension, including $n=0$.
 
 :::
@@ -94,7 +94,7 @@ The dimension result for quasi-affine varieties therefore gives
 $$
 \dim Y_i=\dim W_i
 $$
-[@Har10a, Proposition I.1.10].
+[@Har77, Proposition I.1.10].
 This applies the affine closure theorem only to an affine ambient space.
 
 The $Y_i$ and $W_i$ are open covers of $Y$ and $W$, respectively.

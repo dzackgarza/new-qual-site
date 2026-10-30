@@ -43,7 +43,7 @@ The ring $K_0=H^0(X,\OO_X)$ is a finite field extension of $k$.
 
 ::: pf-proof
 
-Finiteness of coherent cohomology on a projective scheme makes $K_0$ finite-dimensional over $k$ [@Har10a, Theorem III.5.2].
+Finiteness of coherent cohomology on a projective scheme makes $K_0$ finite-dimensional over $k$ [@Har77, Theorem III.5.2].
 Restriction to the generic point is injective because $X$ is integral, so $K_0$ is a domain.
 Multiplication by any nonzero element is therefore an injective endomorphism of this finite-dimensional vector space, hence is surjective.
 In particular that element has an inverse in $K_0$.
@@ -60,7 +60,7 @@ One has $\boxed{H^0(X,\mcl^{-1})=0}$.
 ::: pf-proof
 
 Suppose $s$ is a nonzero section of $\mcl^{-1}$.
-Choose $m>0$ for which $\mcl^m$ is very ample, using [@Har10a, Theorem II.7.6].
+Choose $m>0$ for which $\mcl^m$ is very ample, using [@Har77, Theorem II.7.6].
 Its immersion $i:X\to\PP_k^N$ is closed because $X$ is proper, and $i^*\OO(1)=\mcl^m$.
 Choose a closed point $x\in X$.
 Since $X$ has positive dimension, its homogeneous ideal is strictly contained in the homogeneous ideal of the closed subscheme $\{x\}\subseteq\PP^N$.

@@ -466,7 +466,7 @@ references:
   title: Sample Questions from Past Qualifying Exams
   type: document
   URL: https://www.math.harvard.edu/media/alggeom.pdf
-- id: Har10a
+- id: Har77
   accessed:
   - year: 2026
     month: 6
@@ -474,14 +474,13 @@ references:
   author:
   - family: Hartshorne
     given: Robin
-  citation-key: Har10a
+  citation-key: Har77
   collection-number: '52'
   collection-title: Graduate texts in mathematics
   DOI: 10.1007/978-1-4757-3849-0
-  edition: Softcover reprint
-  ISBN: 978-1-4419-2807-8
+  ISBN: 978-0-387-90244-9
   issued:
-  - year: 2010
+  - year: 1977
   language: en
   license: http://www.springer.com/tdm
   number-of-pages: '496'
@@ -492,7 +491,7 @@ references:
   type: book
   URL: http://link.springer.com/10.1007/978-1-4757-3849-0
   volume: '52'
-- id: Har10b
+- id: Har92
   accessed:
   - year: 2026
     month: 6
@@ -500,13 +499,13 @@ references:
   author:
   - family: Harris
     given: Joe
-  citation-key: Har10b
+  citation-key: Har92
   collection-number: '133'
   collection-title: Graduate texts in mathematics
   DOI: 10.1007/978-1-4757-2189-8
-  ISBN: 978-1-4419-3099-6
+  ISBN: 978-0-387-97716-4
   issued:
-  - year: 2010
+  - year: 1992
   language: en
   license: http://www.springer.com/tdm
   number-of-pages: '328'
@@ -798,7 +797,7 @@ references:
   publisher: American Mathematical Society
   publisher-place: Providence, Rhode Island
   source: Open WorldCat
-  title: Algebraic curves and Riemann surfaces
+  title: Algebraic Curves and Riemann Surfaces
   type: book
 - id: Mum94
   author:
@@ -829,7 +828,7 @@ references:
   issued:
   - year: 2000
   number-of-pages: '537'
-  publisher: Prentice Hall, Inc
+  publisher: Prentice Hall
   publisher-place: Upper Saddle River, NJ
   source: Library of Congress ISBN
   title: Topology
@@ -844,8 +843,8 @@ references:
   issued:
   - year: 1984
   language: en
-  publisher: Addison-Wesley publ
-  publisher-place: Redwood city (calif) [etc.]
+  publisher: Addison-Wesley
+  publisher-place: Menlo Park, Calif
   source: BnF ISBN
   title: Elements of Algebraic Topology
   type: book
@@ -882,18 +881,16 @@ references:
   title: Solutions for Exercises, BMS Basic Course Algebraic Geometry
   type: document
   URL: http://didaktik1.mathematik.hu-berlin.de/files/solnsalgeom.pdf
-- id: RBKG13
+- id: RKG13
   author:
   - family: Rodríguez
     given: Rubí E.
-  - family: Bers
-    given: Lipman
   - family: Kra
     given: Irwin
   - family: Gilman
     given: Jane
   call-number: QA331.7 .R63 2013
-  citation-key: RBKG13
+  citation-key: RKG13
   collection-number: '245'
   collection-title: Graduate Texts in Mathematics
   edition: 2nd ed

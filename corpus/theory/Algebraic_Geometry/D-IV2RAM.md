@@ -47,7 +47,7 @@ $$
 
 ::: {.proposition}
 The pullback $f^*$ preserves linear equivalence and satisfies $f^* \mcl(D) \cong \mcl(f^* D)$, so it induces $f^* : \Pic Y \to \Pic X$, and $\deg f^* D = \deg f \cdot \deg D$.
-[@Har10a, §IV.2, Proposition II.6.9, Exercise II.6.8]
+[@Har77, §IV.2, Proposition II.6.9, Exercise II.6.8]
 :::
 
 ::: {.definition title="Ramification divisor and branch locus"}

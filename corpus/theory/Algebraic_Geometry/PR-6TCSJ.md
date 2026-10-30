@@ -32,7 +32,7 @@ For a ring $A$:
 | Noetherian | Noetherian |
 | underlying space has one point | $A_{\mathrm{red}}$ is a field |
 
-More generally, a scheme $X$ is integral if and only if it is reduced and irreducible [@Har10a, Proposition II.3.1].
+More generally, a scheme $X$ is integral if and only if it is reduced and irreducible [@Har77, Proposition II.3.1].
 If $A$ is Noetherian, the last row is also equivalent to $A$ being a local Artinian ring.
 
 An irreducible scheme has a unique [[D-SCHPTS|generic point]] $\eta$. For $\Spec A$ integral, $\eta=(0)$ and $\kappa(\eta)\cong\Frac(A)$.

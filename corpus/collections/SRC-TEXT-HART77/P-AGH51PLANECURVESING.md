@@ -44,7 +44,7 @@ For a plane curve $f(x,y)=0$, a point is singular exactly when
 $$
 f=f_x=f_y=0
 $$
-at that point [@Har10a, Chapter I, §5].
+at that point [@Har77, Chapter I, §5].
 The lowest-degree nonzero homogeneous part of the translated equation is the tangent cone; its linear factors give the tangent directions.
 
 ::: pf

@@ -26,7 +26,7 @@ $$
 C^p(\mcu, \mcf) = \prod_{i_0 < \cdots < i_p} \mcf(U_{i_0} \intersect \cdots \intersect U_{i_p}) ,
 $$
 with the alternating-sum differential.
-$\check{H}^p(\mcu,\mcf)$ is its cohomology [@Har10a, Chapter III, §4].
+$\check{H}^p(\mcu,\mcf)$ is its cohomology [@Har77, Chapter III, §4].
 :::
 
 ::: {.definition title="Leray map"}
@@ -44,13 +44,13 @@ If $X$ is a noetherian separated scheme, $\mcu$ is a finite affine open cover, a
 $$
 \check{H}^p(\mcu,\mcf) \cong H^p(X,\mcf)
 $$
-for all $p$ [@Har10a, Theorem III.4.5].
+for all $p$ [@Har77, Theorem III.4.5].
 :::
 
 ::: {.proposition title="Affine-cover bound"}
 If a noetherian separated scheme $X$ is covered by $n+1$ affine opens, then $H^p(X,\mcf)=0$ for $p>n$ and every quasi-coherent $\mcf$.
 The comparison theorem applies because finite intersections of these affine opens are affine; the resulting Čech complex has no terms beyond degree $n$.
-In particular the standard cover of $\PP^n$ gives this bound for projective space [@Har10a, Theorem III.4.5].
+In particular the standard cover of $\PP^n$ gives this bound for projective space [@Har77, Theorem III.4.5].
 :::
 
 ::: {.example title="The separatedness hypothesis in the bound"}
@@ -64,13 +64,13 @@ Thus a two-affine cover alone does not imply vanishing in degree two.
 
 ::: {.remark}
 An arbitrary open cover need not compute the cohomology, even for a noetherian separated scheme and a quasi-coherent sheaf.
-For the cover $\mcu = \{\PP_k^1\}$ of the projective line over a field $k$ by itself, $\check{H}^1(\mcu,\OO(-2))=0$ because the Čech complex has a single term, while $H^1(\PP_k^1,\OO(-2))\cong k$ [@Har10a, Theorem III.5.1].
+For the cover $\mcu = \{\PP_k^1\}$ of the projective line over a field $k$ by itself, $\check{H}^1(\mcu,\OO(-2))=0$ because the Čech complex has a single term, while $H^1(\PP_k^1,\OO(-2))\cong k$ [@Har77, Theorem III.5.1].
 :::
 
 ::: {.remark}
 The affine-cover comparison is a statement in the Zariski topology about quasi-coherent sheaves.
 On an irreducible topological space, a constant abelian sheaf is flasque: every nonempty open is connected, so its restriction maps are identities or surjections onto zero.
-Its positive-degree sheaf cohomology therefore vanishes [@Har10a, Proposition III.2.5].
+Its positive-degree sheaf cohomology therefore vanishes [@Har77, Proposition III.2.5].
 This differs from singular cohomology of the associated analytic space. For example,
 $$
 H^2_{\mathrm{Zar}}(\PP^1_\CC,\underline{\ZZ})=0,

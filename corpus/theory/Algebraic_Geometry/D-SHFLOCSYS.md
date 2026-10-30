@@ -21,7 +21,7 @@ prompts:
 ::: {.definition title="Constant sheaf"}
 Let $A$ be an abelian group with the discrete topology. The \dfn{constant sheaf} $\underline{A}$ on a topological space $X$ has $\underline{A}(U)$ the group of continuous maps $U \to A$, with restriction of functions.
 If $U$ is open and connected, then $\underline{A}(U) = A$; more generally, if every connected component of the open set $U$ is open, then $\underline{A}(U) = \prod_{\pi_0(U)} A$, one factor for each connected component.
-[@Har10a, §II.1]
+[@Har77, §II.1]
 :::
 
 ::: {.definition title="Locally constant sheaf and local system"}

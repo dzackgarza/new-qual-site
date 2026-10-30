@@ -56,7 +56,7 @@ $$
 x=y=z=0,
 $$
 which is not a projective point.
-Hence the projective hypersurface has no singular point by the Jacobian criterion [@Har10a, Chapter I, §5].
+Hence the projective hypersurface has no singular point by the Jacobian criterion [@Har77, Chapter I, §5].
 The same argument works over every extension field of $k$.
 :::
 

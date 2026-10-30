@@ -141,8 +141,8 @@ Localizing at $u$ eliminates $v$, giving
 $$
 S_u=B[u,u^{-1}].
 $$
-This is a [[D-INULL|unique factorization domain]], so $\Cl(D(u))=0$ [@Har10a, Proposition II.6.2].
-The divisor restriction sequence shows that the classes $[D_j]$ generate $\Cl(X)$ [@Har10a, Proposition II.6.5].
+This is a [[D-INULL|unique factorization domain]], so $\Cl(D(u))=0$ [@Har77, Proposition II.6.2].
+The divisor restriction sequence shows that the classes $[D_j]$ generate $\Cl(X)$ [@Har77, Proposition II.6.5].
 
 Suppose $\sum_j a_jD_j=\operatorname{div}_X(F)$ for $F\in K(X)^\times$.
 On $D(u)$, the divisor of $F$ is zero.
@@ -191,7 +191,7 @@ u/v=g(w_2/v,\ldots,w_r/v)=\prod_{j=1}^s p_j(w_2/v,\ldots,w_n/v)^{e_j}.
 $$
 This chart is also affine space, and its local ring at $E_j$ is the DVR whose uniformizer is the corresponding irreducible factor $p_j(w/v)$.
 Thus the hyperplane divisor is $\sum_j e_jE_j$.
-Any other hyperplane not containing $Q$ has the same class, since the ratio of the two linear equations is a rational function on $Q$ [@Har10a, Exercise II.6.2].
+Any other hyperplane not containing $Q$ has the same class, since the ratio of the two linear equations is a rational function on $Q$ [@Har77, Exercise II.6.2].
 Consequently
 $$
 \boxed{(\Cl(Q),h)\cong
@@ -212,7 +212,7 @@ For $r\ge4$, every prime divisor $Y\subseteq Q$ is the reduced scheme-theoretic 
 ::: pf-proof
 Steps [](#s1){.pf-ref} and [](#s4){.pf-ref} make $S$ a normal noetherian domain with zero divisor class group.
 It is therefore a UFD by Proposition II.6.2.
-The homogeneous prime ideal $\mathfrak p=I(Y)/I(Q)$ has height one in $S$: the affine cone over $Y$ has dimension $\dim Y+1$, one less than the dimension $\dim Q+1$ of $\Spec S$ [@Har10a, Exercise I.2.10].
+The homogeneous prime ideal $\mathfrak p=I(Y)/I(Q)$ has height one in $S$: the affine cone over $Y$ has dimension $\dim Y+1$, one less than the dimension $\dim Q+1$ of $\Spec S$ [@Har77, Exercise I.2.10].
 Hence $\mathfrak p=(f)$ for an irreducible element $f\in S$.
 
 The generator can be chosen homogeneous.

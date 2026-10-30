@@ -280,7 +280,7 @@ $$
 
 ::: pf-proof
 
-Hartshorne's finiteness of integral closure theorem [@Har10a, Theorem I.3.9A], applied to the degree-one field extension $K/K$, says that $B$ is a finitely generated $A$-module and in particular a finitely generated $k$-algebra.
+Hartshorne's finiteness of integral closure theorem [@Har77, Theorem I.3.9A], applied to the degree-one field extension $K/K$, says that $B$ is a finitely generated $A$-module and in particular a finitely generated $k$-algebra.
 It is a domain and is integrally closed by definition.
 Hence $B=A(\widetilde Y)$ for an affine variety $\widetilde Y$, which is normal by step [](#s2){.pf-ref}.
 The inclusion of coordinate rings $A\hookrightarrow B$ gives the morphism $\pi$.
@@ -319,7 +319,7 @@ Choosing affine coordinates for $\widetilde Y$ from generators of $B$, these glo
 $$
 \theta:Z\to\widetilde Y
 $$
-[@Har10a, Lemma I.3.6].
+[@Har77, Lemma I.3.6].
 The equality of pullbacks on $A$ gives
 $$
 \phi=\pi\circ\theta.

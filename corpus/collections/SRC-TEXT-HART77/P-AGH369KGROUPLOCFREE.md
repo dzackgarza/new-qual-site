@@ -56,7 +56,7 @@ Every coherent sheaf has a finite locally free resolution. More precisely, every
 
 ::: pf-proof
 
-Regular local rings are factorial [@Har10a, Remark II.6.11.1A], so [[P-AGH368KLEIMAN]] applies to $X$.
+Regular local rings are factorial [@Har77, Remark II.6.11.1A], so [[P-AGH368KLEIMAN]] applies to $X$.
 Successively resolving coherent kernels gives
 $$
 K_0=F,\qquad
@@ -64,7 +64,7 @@ K_0=F,\qquad
 $$
 with all $E_j$ locally free of finite rank and all $K_j$ coherent.
 
-At every point $x$, the module $F_x$ has finite projective dimension over the regular local ring $\OO_{X,x}$ [@Har10a, Proposition III.6.11A].
+At every point $x$, the module $F_x$ has finite projective dimension over the regular local ring $\OO_{X,x}$ [@Har77, Proposition III.6.11A].
 Dimension shifting, as in [[P-AGH365HOMDIM]], makes $(K_j)_x$ finite free for all sufficiently large $j$.
 For each $j$, the set $W_j$ where $K_j$ is locally free is open: a basis at a stalk extends to a basis on a neighborhood because its coherent presentation has kernel and cokernel vanishing near that point.
 These opens are increasing.

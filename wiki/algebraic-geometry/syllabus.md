@@ -28,7 +28,7 @@ Past examinations with transcribed questions are linked from [[algebraic-geometr
 
 - Algebraic curves: genus; the genus formula for plane curves; the Riemann–Hurwitz formula; the Riemann–Roch theorem.
 
-References: [@Sha94; @Har10b].
+References: [@Sha94; @Har92].
 
 ## Scheme theory, cohomology and curves
 
@@ -60,7 +60,7 @@ Curves:
 
 - Clifford's theorem, Castelnuovo's theorem (statement), classification of low-degree curves in $\PP^3$.
 
-References: [@Har10a, Chapters I.1–I.7, II.1–II.8, III.1–III.10, IV.1–IV.6].
+References: [@Har77, Chapters I.1–I.7, II.1–II.8, III.1–III.10, IV.1–IV.6].
 
 ## Schemes and cohomology, by Hartshorne section
 

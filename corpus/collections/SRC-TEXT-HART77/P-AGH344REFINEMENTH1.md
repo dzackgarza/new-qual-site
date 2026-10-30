@@ -147,10 +147,10 @@ C^\bullet(\mathfrak U,\mcf)\longrightarrow\operatorname{Tot}B_{\mathfrak U},
 \Gamma(X,I^\bullet)\longrightarrow\operatorname{Tot}B_{\mathfrak U}.
 $$
 The first is induced by $\mcf\hookrightarrow I^0$; the second is restriction of global sections into Čech degree zero.
-Every $I^q$ is flasque and has zero positive-degree Čech cohomology on any open cover [@Har10a, Proposition III.4.3].
+Every $I^q$ is flasque and has zero positive-degree Čech cohomology on any open cover [@Har77, Proposition III.4.3].
 The rows, augmented by $\Gamma(X,I^q)$, are therefore exact.
 The horizontal-first filtration of this first-quadrant double complex shows that the second map is a quasi-isomorphism: its only horizontal cohomology is the global-section complex in horizontal degree zero.
-The comparison map on cohomology is the first map followed by the inverse of this quasi-isomorphism on cohomology [@Har10a, Lemma III.4.4].
+The comparison map on cohomology is the first map followed by the inverse of this quasi-isomorphism on cohomology [@Har77, Lemma III.4.4].
 This is the [double-complex construction of the comparison map](https://stacks.math.columbia.edu/tag/01EO).
 
 Apply the cochain map of step [](#s1){.pf-ref} in every row.

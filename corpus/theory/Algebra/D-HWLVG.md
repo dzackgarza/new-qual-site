@@ -22,7 +22,7 @@ An [[D-QJ3QL|integral domain]] $R$ with [[D-OXIVT|field of fractions]] $K$ is a 
 Let $K$ be a field and $G$ a totally ordered abelian group.
 A \dfn{valuation} of $K$ with values in $G$ is a group homomorphism $v \colon K^\times \to G$ such that $v(x+y) \geq \min(v(x), v(y))$ for all $x, y \in K^\times$ with $x + y \neq 0$.
 The valuation is \dfn{discrete} if $v$ maps $K^\times$ onto $\ZZ$.
-[@Har10a, §I.6]
+[@Har77, §I.6]
 :::
 
 ::: {.proposition}

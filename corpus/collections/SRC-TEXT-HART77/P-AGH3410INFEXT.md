@@ -55,7 +55,7 @@ The abelian sheaf $\mathcal D$ is the sheaf of $k$-derivations $\OO_X\to\mcf$, a
 
 The universal property of [[D-4GCH6|Kähler differentials]] identifies a sheaf morphism $\Omega_{X/k}\to\mcf$ with its composite with the universal derivation.
 This works on every open subset and commutes with restriction, giving the first assertion.
-Since $X$ is nonsingular over the algebraically closed field, $\Omega_{X/k}$ is locally free of finite rank [@Har10a, Theorem II.8.15].
+Since $X$ is nonsingular over the algebraically closed field, $\Omega_{X/k}$ is locally free of finite rank [@Har77, Theorem II.8.15].
 For a finite locally free sheaf $E$, the evaluation map $\mcf\otimes E^\vee\to\sheafhom(E,\mcf)$ is an isomorphism, as is checked in a local basis.
 Apply this with $E=\Omega_{X/k}$ to obtain the stated isomorphism.
 In particular $\mathcal D$ is coherent.
@@ -110,7 +110,7 @@ Replacing $\theta_i$ by $\theta_i u_{b_i}$ changes this cocycle to $D_{ij}+b_j-b
 It therefore changes it by a Čech coboundary.
 An isomorphism of extensions, composed with all the $\theta_i$, gives the same cocycle for the other extension.
 Thus its Čech class depends only on the extension isomorphism class.
-The scheme $X$ is noetherian and separated, and $\mathcal D$ is quasi-coherent, so the affine-cover comparison identifies this class with an element of $H^1(X,\mathcal D)$ [@Har10a, Theorem III.4.5].
+The scheme $X$ is noetherian and separated, and $\mathcal D$ is quasi-coherent, so the affine-cover comparison identifies this class with an element of $H^1(X,\mathcal D)$ [@Har77, Theorem III.4.5].
 Refining the cover restricts the cocycle, and the comparison commutes with refinement by [[P-AGH344REFINEMENTH1]], part (b).
 Hence the cohomology class is also independent of the cover.
 
@@ -178,7 +178,7 @@ The zero cocycle glues the split extension by identity maps and therefore corres
 ::: {.remark title="Forgetting the kernel identification changes the classification"}
 For an automorphism $v$ of $\mcf$, the map $(a,m)\mapsto(a,v(m))$ conjugates $u_D$ to $u_{v\circ D}$.
 Thus forgetting the identification of the kernel with $\mcf$, while fixing $X$, identifies classes under the induced action of $\Aut_{\OO_X}(\mcf)$.
-For example, on $X=\PP_k^1$ with $\mcf=\OO(-4)$, one has $\mathcal T\cong\OO(2)$ and $H^1(X,\mcf\otimes\mathcal T)\cong H^1(\PP_k^1,\OO(-2))\cong k$ [@Har10a, Example II.8.20.1 and Theorem III.5.1].
+For example, on $X=\PP_k^1$ with $\mcf=\OO(-4)$, one has $\mathcal T\cong\OO(2)$ and $H^1(X,\mcf\otimes\mathcal T)\cong H^1(\PP_k^1,\OO(-2))\cong k$ [@Har77, Example II.8.20.1 and Theorem III.5.1].
 Scalar automorphisms of $\mcf$ identify distinct nonzero scalar multiples of a class when the kernel identification is forgotten.
 The correspondence proved here retains that identification, as required for isomorphisms of extensions.
 :::

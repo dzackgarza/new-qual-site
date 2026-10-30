@@ -62,7 +62,7 @@ If $X$ is integral and $k$ is algebraically closed, the constants map $k\to\Gamm
 ::: pf-proof
 
 The ring $B=\Gamma(X,\OO_X)$ is a domain, since regular functions on the integral scheme inject into its function field.
-It is finite-dimensional over $k$ by [@Har10a, Theorem III.5.2].
+It is finite-dimensional over $k$ by [@Har77, Theorem III.5.2].
 For every nonzero $b\in B$, multiplication by $b$ is an injective endomorphism of this finite-dimensional vector space and hence is surjective.
 In particular it takes some element to $1$, so $b$ is invertible.
 Thus $B$ is a finite field extension of $k$.
@@ -79,7 +79,7 @@ The formulas in (a) follow.
 
 ::: pf-proof
 
-The groups $H^j(X,\OO_X)$ vanish for $j>r$ [@Har10a, Theorem III.2.7], and step [](#s1){.pf-ref} gives $h^0=1$.
+The groups $H^j(X,\OO_X)$ vanish for $j>r$ [@Har77, Theorem III.2.7], and step [](#s1){.pf-ref} gives $h^0=1$.
 Therefore
 $$
 \begin{aligned}
@@ -108,12 +108,12 @@ $$
 S(X)_n\cong H^0(X,\OO_X(n))
 $$
 for every sufficiently large $n$.
-Serre vanishing identifies the dimension of the latter space with $\chi(X,\OO_X(n))$ for every sufficiently large $n$ [@Har10a, Theorem III.5.2].
+Serre vanishing identifies the dimension of the latter space with $\chi(X,\OO_X(n))$ for every sufficiently large $n$ [@Har77, Theorem III.5.2].
 By [[P-AGH352HILBPOLY]], this Euler characteristic is given by one rational polynomial for every integer $n$.
 That polynomial and $P_X$ agree at all sufficiently large integers and hence are the same polynomial.
 At $n=0$ this gives $P_X(0)=\chi(X,\OO_X)$.
 
-The genus defined from the projective embedding in [@Har10a, Exercise I.7.2] is $(-1)^{\dim X}(P_X(0)-1)$.
+The genus defined from the projective embedding in [@Har77, Exercise I.7.2] is $(-1)^{\dim X}(P_X(0)-1)$.
 It is therefore $(-1)^r(\chi(X,\OO_X)-1)$, exactly the definition in the statement.
 Since the latter uses only cohomology of the abstract scheme, it is independent of the embedding.
 No equality of the coordinate ring with the section ring in small degrees is assumed.
@@ -129,7 +129,7 @@ Birational nonsingular projective integral curves are isomorphic, and their arit
 ::: pf-proof
 
 Let $C\dashrightarrow C'$ be a birational map between such curves.
-At every closed point $x\in C$, the local ring $\OO_{C,x}$ is a DVR because $C$ is nonsingular and one-dimensional [@Har10a, Theorem I.6.2A].
+At every closed point $x\in C$, the local ring $\OO_{C,x}$ is a DVR because $C$ is nonsingular and one-dimensional [@Har77, Theorem I.6.2A].
 Embed $C'$ in projective space and write the rational map in homogeneous coordinates in $K(C)$.
 Multiply these coordinates by a common power of a uniformizer so that they all lie in $\OO_{C,x}$ and at least one is a unit.
 They are regular on a neighborhood of $x$ and define a morphism there after shrinking so that the unit remains invertible.
@@ -161,7 +161,7 @@ h^0(C,\OO_C)=1,\qquad
 h^1(C,\OO_C)=\frac{(d-1)(d-2)}2>0.
 $$
 In particular the curve is connected, since a nontrivial open-and-closed decomposition would give a nontrivial idempotent global function.
-Its regular local rings are domains [@Har10a, Remark II.6.11.1A], so its irreducible components are disjoint and reduced; connectedness therefore makes it integral.
+Its regular local rings are domains [@Har77, Remark II.6.11.1A], so its irreducible components are disjoint and reduced; connectedness therefore makes it integral.
 Step [](#s2){.pf-ref} identifies its arithmetic genus with this positive $h^1$.
 On the other hand, $h^1(\PP_k^1,\OO)=0$ by [[P-AGH322FLASQUERESPONE]], so $p_a(\PP_k^1)=0$.
 If $C$ were rational, it would be birational to $\PP_k^1$, contradicting step [](#s4){.pf-ref}.

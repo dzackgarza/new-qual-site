@@ -99,7 +99,7 @@ is a proper Zariski-closed subset of $X_i$.
 ::: pf-proof
 For an affine variety over an algebraically closed field, the regular locus
 is a nonempty Zariski-open subset; equivalently the singular locus is proper
-and closed [@Har10a, Theorem I.5.3]; the proof uses the Jacobian criterion
+and closed [@Har77, Theorem I.5.3]; the proof uses the Jacobian criterion
 [[PR-MORJAC]].
 
 Applying that theorem to the affine variety $X_i$ gives the assertion.

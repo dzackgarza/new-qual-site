@@ -47,7 +47,7 @@ See (III, Ex. 11.5--11.7) for further examples and applications.
 ::: {.solution}
 Put $A_n=\Gamma(Y_n,\OO_{Y_n})$ and $G_n=A_n^\times$.
 The latter is also $\Gamma(Y_n,\OO_{Y_n}^*)$: the local inverses of an everywhere invertible section agree and glue.
-For an inverse system, the Mittag--Leffler condition means that the images in each fixed term stabilize [@Har10a, Chapter II, §9].
+For an inverse system, the Mittag--Leffler condition means that the images in each fixed term stabilize [@Har77, Chapter II, §9].
 All the sheaves on the thickenings are regarded as sheaves on their common underlying space $\underlyingspace{\mathfrak X}$.
 
 ::: pf
@@ -137,7 +137,7 @@ is injective.
 
 ::: pf-proof
 
-Coherent formal sheaves are recovered from their compatible reductions [@Har10a, Proposition II.9.6], so
+Coherent formal sheaves are recovered from their compatible reductions [@Har77, Proposition II.9.6], so
 $$
 \mcf\cong\varprojlim_n F_n.
 $$
@@ -171,7 +171,7 @@ The composition identities then hold by construction.
 The adjacent maps are surjective with kernel $\mci^n L_{n+1}$.
 More generally, repeated reduction gives $L_m\otimes\OO_{Y_n}\cong L_n$ for every $m\ge n$, with the composite just defined as its quotient map.
 Each $L_n$ is coherent on the noetherian scheme $Y_n$.
-These are precisely the compatibility conditions of [@Har10a, Proposition II.9.6].
+These are precisely the compatibility conditions of [@Har77, Proposition II.9.6].
 That proposition gives coherence of $L$ and the asserted identifications of all its reductions.
 
 :::
@@ -190,7 +190,7 @@ Write $U_n$ for the corresponding affine open of $Y_n$, and choose a frame $s_1\
 
 Suppose a frame $s_n$ has been chosen.
 The surjection $L_{n+1}\restrict_{U_{n+1}}\to L_n\restrict_{U_n}$ is a surjection of quasi-coherent sheaves on the affine scheme $U_{n+1}$, with $L_n$ regarded there through the quotient structure sheaf.
-Exactness of affine sections therefore lifts $s_n$ to a section $s_{n+1}$ of $L_{n+1}$ on that same open [@Har10a, Proposition II.5.6].
+Exactness of affine sections therefore lifts $s_n$ to a section $s_{n+1}$ of $L_{n+1}$ on that same open [@Har77, Proposition II.5.6].
 At every stalk, express $s_{n+1}$ in a local frame of $L_{n+1}$.
 Its coefficient becomes a unit after reduction to $U_n$, since $s_n$ is a frame.
 The kernel of this local ring quotient is nilpotent, so the coefficient itself is a unit by the calculation in step [](#s1){.pf-ref}.
@@ -198,7 +198,7 @@ Hence $s_{n+1}$ is a frame on all of $U_{n+1}$.
 
 Induction gives compatible frames on the fixed neighborhood $\mathfrak U$, without shrinking it as $n$ increases.
 They define compatible isomorphisms $\OO_{U_n}\xrightarrow{\cong}L_n\restrict_{U_n}$.
-Taking their inverse limits and using the sectionwise construction of limits [@Har10a, Proposition II.9.2] gives
+Taking their inverse limits and using the sectionwise construction of limits [@Har77, Proposition II.9.2] gives
 $$
 \OO_{\mathfrak U}\xrightarrow{\cong}L\restrict_{\mathfrak U}.
 $$
@@ -228,7 +228,7 @@ is exact as a sequence of quasi-coherent sheaves on the affine scheme $Y_{n+1}$.
 Taking sections gives a surjection $A_{n+1}\to A_n$.
 All longer transition maps are then surjective, so their images in a fixed $A_n$ are always $A_n$.
 
-In the projective case, each $A_n$ is finite-dimensional over $k$ by finiteness of coherent cohomology [@Har10a, Theorem III.5.2].
+In the projective case, each $A_n$ is finite-dimensional over $k$ by finiteness of coherent cohomology [@Har77, Theorem III.5.2].
 The transition maps are $k$-linear.
 For fixed $n$, the images of $A_m$ in $A_n$ form a descending sequence of vector subspaces of a finite-dimensional space.
 Their dimensions eventually stop decreasing, after which nested subspaces of equal dimension are equal.

@@ -44,7 +44,7 @@ $$
 $$
 where $i(Y, H; Z_j)$ is the intersection multiplicity along $Z_j$.
 For distinct plane curves $Y, Z \subseteq \PP^2$ of degrees $d$ and $e$ with no common component, $\sum_{P \in Y \cap Z} i(Y, Z; P) = de$ (Bézout).
-[@Har10a, Theorem I.7.7]
+[@Har77, Theorem I.7.7]
 :::
 
 ::: {.remark}

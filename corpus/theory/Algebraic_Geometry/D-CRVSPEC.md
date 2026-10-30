@@ -39,5 +39,5 @@ Once $\deg D$ exceeds $\deg K = 2g-2$, the divisor $K-D$ has negative degree, so
 For every $D$, Riemann--Roch gives the inequality $\ell(D) \geq \deg D + 1 - g$.
 
 The canonical divisor $K$ is special, since $\ell(K-K)=1$, and on a hyperelliptic curve of genus $g\ge2$ every divisor of the $g^1_2$ is special.
-For a special effective divisor $D$, Clifford's theorem gives $\ell(D)-1\le\frac12\deg D$, with equality if and only if $D=0$, $D\sim K$, or $C$ is hyperelliptic and $D$ is a multiple of the $g^1_2$ [@Har10a, Theorem IV.5.4].
+For a special effective divisor $D$, Clifford's theorem gives $\ell(D)-1\le\frac12\deg D$, with equality if and only if $D=0$, $D\sim K$, or $C$ is hyperelliptic and $D$ is a multiple of the $g^1_2$ [@Har77, Theorem IV.5.4].
 :::

@@ -95,7 +95,7 @@ The image of $\psi$ avoids $L$, and $\varphi=p_A\circ\psi$ as morphisms of schem
 
 ::: pf-proof
 
-Under the isomorphism $\psi^*\OO_{\PP^m}(1)\cong\mcl$, the pullback of $\ell_i$ is $\sum_j a_{ij}t_j=s_i$ [@Har10a, Theorem II.7.1].
+Under the isomorphism $\psi^*\OO_{\PP^m}(1)\cong\mcl$, the pullback of $\ell_i$ is $\sum_j a_{ij}t_j=s_i$ [@Har77, Theorem II.7.1].
 The sections $s_i$ [[D-MODGG|generate]] $\mcl$ at every point, so their common zero subscheme is empty.
 Consequently $\psi^{-1}(L)=\varnothing$, and the composite is defined on all of $X$.
 

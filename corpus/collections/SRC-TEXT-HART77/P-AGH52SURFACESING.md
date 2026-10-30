@@ -42,7 +42,7 @@ For a hypersurface $f=0$ in $\AA^3$, a point is singular exactly when
 $$
 f=f_x=f_y=f_z=0
 $$
-there [@Har10a, Chapter I, §5].
+there [@Har77, Chapter I, §5].
 
 ::: pf
 

@@ -16,7 +16,7 @@ For a projective variety $X$ of dimension $n$ and degree $d$, the Hilbert polyno
 
 ## Syllabus
 
-At the level of [@Har10a, Chapter I].
+At the level of [@Har77, Chapter I].
 
 - [[algebraic-geometry/varieties/the-dictionary|Affine varieties]], the Zariski topology, the Nullstellensatz, radical ideals against closed sets, irreducible decomposition, and the coordinate ring $A(X)$.
 

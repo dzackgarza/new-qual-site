@@ -36,7 +36,7 @@ A point $p$ is a \dfn{base point} when $p \in \supp D'$ for every $D'$ in the sy
 Let $D$ be a divisor on a nonsingular projective curve $X$ over $k = \bar k$.
 If $\abs{D} \neq \emptyset$, that is $\ell(D) \neq 0$, then $\deg D \geq 0$.
 If moreover $\deg D = 0$, then $D \sim 0$ and $\mcl(D) \cong \OO_X$.
-[@Har10a, Lemma IV.1.2]
+[@Har77, Lemma IV.1.2]
 :::
 
 ::: {.definition title="Degenerate"}

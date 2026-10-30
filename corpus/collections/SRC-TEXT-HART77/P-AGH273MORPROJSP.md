@@ -54,10 +54,10 @@ When $d=0$, it is constant.
 
 ::: pf-proof
 
-The [[D-5PQ5W|Picard group]] of $\PP_k^n$ is generated freely by $\OO(1)$ [@Har10a, Proposition II.6.4 and Corollary II.6.16].
+The [[D-5PQ5W|Picard group]] of $\PP_k^n$ is generated freely by $\OO(1)$ [@Har77, Proposition II.6.4 and Corollary II.6.16].
 Consequently $\varphi^*\OO_{\PP^m}(1)\cong\OO_{\PP^n}(d)$ for a unique integer $d$.
-Pulling back the coordinate sections gives $m+1$ sections generating this invertible sheaf [@Har10a, Theorem II.7.1].
-The global sections of $\OO(d)$ are $S_d$ for $d\ge0$ and zero for $d<0$ [@Har10a, Proposition II.5.13].
+Pulling back the coordinate sections gives $m+1$ sections generating this invertible sheaf [@Har77, Theorem II.7.1].
+The global sections of $\OO(d)$ are $S_d$ for $d\ge0$ and zero for $d<0$ [@Har77, Proposition II.5.13].
 Generation excludes $d<0$ and gives the stated forms and their empty common zero locus.
 The morphism has coordinates $[f_0:\cdots:f_m]$.
 For $d=0$, these are constants in $k$, not all zero, so the morphism factors through their $k$-rational point.
@@ -96,7 +96,7 @@ If $d>0$, the morphism is finite onto its image, and that image has dimension $n
 ::: pf-proof
 
 The surjection $k[y_0,\ldots,y_m]\to A$, $y_i\mapsto f_i$, identifies $Y=\operatorname{Proj}A$ with a closed integral subscheme of $\PP^m$.
-Also $\operatorname{Proj}R\cong\PP^n$ by the Veronese construction [@Har10a, Exercise II.5.13].
+Also $\operatorname{Proj}R\cong\PP^n$ by the Veronese construction [@Har77, Exercise II.5.13].
 The graded inclusion $A\subseteq R$ induces the morphism $\varphi$ with target restricted to $Y$.
 
 For every nonzero $f_i$, its inverse image of $D_+(f_i)\subseteq Y$ is the affine open $D_+(f_i)\subseteq\operatorname{Proj}R$.
@@ -114,7 +114,7 @@ Integral extensions preserve Krull dimension: going up lifts chains and incompar
 Step [](#s2){.pf-ref} makes $R$ integral over $A$.
 The ring $S$ is integral over $R$, since each $x_j$ satisfies the monic equation $T^d-x_j^d=0$ with coefficient $x_j^d\in R$.
 Therefore $\dim A=\dim R=\dim S=n+1$.
-For a standard graded finite-type domain over $k$, its Proj has dimension one less than the ring [@Har10a, Chapter I, §2].
+For a standard graded finite-type domain over $k$, its Proj has dimension one less than the ring [@Har77, Chapter I, §2].
 It follows that $\dim Y=n$, so $m\ge n$.
 Every fibre of the finite morphism is the spectrum of a finite-dimensional algebra over its residue field, and thus has finitely many points.
 Together with step [](#s1){.pf-ref}, this proves (a) and the fibre assertion of (b).
@@ -134,7 +134,7 @@ Choose a basis $g_0,\ldots,g_r$ of $V$ and extend it to a basis $g_0,\ldots,g_N$
 $$
 N=\binom{n+d}{d}-1.
 $$
-The complete set of degree-$d$ monomials gives the $d$-uple closed embedding; replacing that monomial basis by the $g_i$ changes it by an ambient projective linear automorphism [@Har10a, Exercises I.2.12 and I.3.4].
+The complete set of degree-$d$ monomials gives the $d$-uple closed embedding; replacing that monomial basis by the $g_i$ changes it by an ambient projective linear automorphism [@Har77, Exercises I.2.12 and I.3.4].
 Denote the resulting embedding by $\nu_d$.
 The projection
 $$

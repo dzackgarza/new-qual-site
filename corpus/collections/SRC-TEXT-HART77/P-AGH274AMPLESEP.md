@@ -47,8 +47,8 @@ Part (a) follows from Theorem II.7.6.
 ::: pf-proof
 
 Let $\mathcal L$ be ample on the finite-type $A$-scheme.
-By the [[D-MODAMPLE|ample/very-ample criterion]] [@Har10a, Theorem II.7.6], some positive tensor power of $\mathcal L$ is the pullback of $\OO(1)$ under an immersion $X\hookrightarrow\PP_A^N$.
-An immersion is separated, projective space is separated over $\Spec A$, and composites of separated morphisms are separated [@Har10a, Chapter II, §4].
+By the [[D-MODAMPLE|ample/very-ample criterion]] [@Har77, Theorem II.7.6], some positive tensor power of $\mathcal L$ is the pullback of $\OO(1)$ under an immersion $X\hookrightarrow\PP_A^N$.
+An immersion is separated, projective space is separated over $\Spec A$, and composites of separated morphisms are separated [@Har77, Chapter II, §4].
 Thus $X\to\Spec A$ is separated.
 The argument only uses an immersion; it does not require $X$ to be proper or the immersion to be closed.
 
@@ -112,7 +112,7 @@ No invertible sheaf on the doubled-origin line is ample.
 ::: pf-proof
 
 The scheme is noetherian, as it has the finite noetherian affine cover $U,V$.
-Suppose $\mathcal L_a$ is ample, using the definition that $\mathcal F\otimes\mathcal L_a^{\otimes q}$ is globally generated for all sufficiently large $q$ and every coherent $\mathcal F$ [@Har10a, Chapter II, §7].
+Suppose $\mathcal L_a$ is ample, using the definition that $\mathcal F\otimes\mathcal L_a^{\otimes q}$ is globally generated for all sufficiently large $q$ and every coherent $\mathcal F$ [@Har77, Chapter II, §7].
 Apply this to $\mathcal F=\OO_X$.
 Since $\mathcal L_a^{\otimes q}\cong\mathcal L_{qa}$, step [](#s3){.pf-ref} forces $qa=0$ for a positive $q$, hence $a=0$.
 But $\OO_X$ is not ample either: take the coherent invertible sheaf $\mathcal F=\mathcal L_1$.

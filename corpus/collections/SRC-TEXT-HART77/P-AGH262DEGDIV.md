@@ -93,7 +93,7 @@ $$
 $$
 
 There is a coordinate hyperplane $H$ not containing $X$, since some homogeneous coordinate is nonzero at its generic point.
-The class $[H]$ generates $\Cl(\PP_k^n)\cong\ZZ$ [@Har10a, Proposition II.6.4].
+The class $[H]$ generates $\Cl(\PP_k^n)\cong\ZZ$ [@Har77, Proposition II.6.4].
 Consequently the allowed divisor subgroup maps onto the ambient class group.
 Two allowed divisors representing the same class differ by an allowed principal divisor, whose intersection is principal by the preceding argument.
 Their intersections therefore give the same class on $X$, defining $\rho$.
@@ -111,7 +111,7 @@ The valuation coefficient equals the source intersection multiplicity, and the d
 Let $V$ have homogeneous equation $F$ of degree $d$, and put $C=k[x_0,\ldots,x_n]/I_X$.
 For a component $Y_i$ of $V\cap X$, let $\eta_i$ be its generic point, put $R_i=\OO_{X,\eta_i}$, and let $\mathfrak m_i$ be the maximal ideal of this DVR.
 Let $\mathfrak p_i$ be the homogeneous prime of $C$ corresponding to $Y_i$.
-The multiplicity $i(X,V;Y_i)$ is the length of $(C/(F))_{\mathfrak p_i}$ over $C_{\mathfrak p_i}$, by the definition following [@Har10a, Proposition I.7.4].
+The multiplicity $i(X,V;Y_i)$ is the length of $(C/(F))_{\mathfrak p_i}$ over $C_{\mathfrak p_i}$, by the definition following [@Har77, Proposition I.7.4].
 
 Choose a coordinate $x_j\notin\mathfrak p_i$ and set $B=(C_{x_j})_0$.
 The graded localization is $C_{x_j}\cong B[x_j,x_j^{-1}]$.
@@ -124,7 +124,7 @@ The local equation $F/x_j^d$ equals a unit times $\pi_i^{n_i}$ in $R_i$, hence a
 Since $x_j$ is a unit, the quotient by $F$ has length $n_i$ there: its successive quotients by powers of $\pi_i$ are one-dimensional over its residue field.
 Therefore $i(X,V;Y_i)=n_i$.
 
-The generalized Bezout theorem applies because $\dim X\ge1$ and $V$ does not contain $X$ [@Har10a, Theorem I.7.7].
+The generalized Bezout theorem applies because $\dim X\ge1$ and $V$ does not contain $X$ [@Har77, Theorem I.7.7].
 It gives
 $$
 \deg(V.X)=\sum_i n_i\deg Y_i=(\deg V)(\deg X).
@@ -176,9 +176,9 @@ since a principal divisor on projective space has degree zero.
 Thus the additive degree function on divisors descends to the class group.
 For every ambient divisor class, choose an allowed representative as in step [](#s2){.pf-ref}.
 The identity in step [](#s3){.pf-ref} gives the asserted equality of group homomorphisms, which is the commutativity of the required square.
-The degree of a nonempty projective variety is a positive integer [@Har10a, Proposition I.7.6(a)], so multiplication by $\deg X$ on $\ZZ$ is injective.
+The degree of a nonempty projective variety is a positive integer [@Har77, Proposition I.7.6(a)], so multiplication by $\deg X$ on $\ZZ$ is injective.
 Since $\deg_{\PP_k^n}$ is an isomorphism, $\rho$ must be injective.
-Every complete nonsingular curve is projective [@Har10a, Chapter I, §6], so the vanishing just proved also gives the principal-divisor degree assertion of II.6.10.
+Every complete nonsingular curve is projective [@Har77, Chapter I, §6], so the vanishing just proved also gives the principal-divisor degree assertion of II.6.10.
 
 :::
 
@@ -198,5 +198,5 @@ Step [](#s1){.pf-ref} proves part (a), step [](#s2){.pf-ref} proves part (b), st
 The degree formula and injectivity assertion require $\dim X\ge1$, as in the hypothesis of Theorem I.7.7.
 For $X$ a closed point of $\PP_k^n$ with $n\ge1$ and a hyperplane $H$ avoiding that point, $H.X=0$ but $(\deg H)(\deg X)=1$.
 The point has zero class group, so the homomorphism from $\Cl(\PP_k^n)\cong\ZZ$ cannot be injective.
-The source exercise does not explicitly exclude this case [@Har10a, Exercise II.6.2].
+The source exercise does not explicitly exclude this case [@Har77, Exercise II.6.2].
 :::

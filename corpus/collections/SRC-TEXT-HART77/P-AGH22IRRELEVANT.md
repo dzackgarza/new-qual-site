@@ -60,7 +60,7 @@ The [[T-JRTS2|affine Nullstellensatz]] identifies the latter condition with
 $$
 \sqrt J=I(V_a(J))=I(\{0\})=(x_0,\ldots,x_n)=S_+
 $$
-[@Har10a, Theorem I.1.3A].
+[@Har77, Theorem I.1.3A].
 Conversely, if $\sqrt J=S_+$, a point vanishes on $J$ exactly when it vanishes on its radical, so $V_a(J)=\{0\}$ and $Z(J)=\varnothing$.
 Finally $\sqrt J=S$ forces $1\in J$, which is the unit-ideal case already treated.
 :::

@@ -48,7 +48,7 @@ The group $H^3(W,\OO_W)$ is nonzero.
 ::: pf-proof
 
 Cover $W$ by the four principal affine opens $D(x_i)$.
-All their intersections are affine, so this cover computes cohomology by its Čech complex [@Har10a, Theorem III.4.5].
+All their intersections are affine, so this cover computes cohomology by its Čech complex [@Har77, Theorem III.4.5].
 Its term in degree three is $A_{x_1x_2x_3x_4}$, and the image of the preceding differential is the sum of the four subrings in which only three of the variables have been inverted.
 Consequently
 $$

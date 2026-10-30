@@ -34,7 +34,7 @@ Then
 
 - $H^p(\PP^n, \OO(d)) = 0$ for $0 < p < n$ and for $p > n$, for every $d$.
 
-The Čech computation on the standard affine cover gives these formulas over an arbitrary ring $A$ [@Har10a, Theorem III.5.1].
+The Čech computation on the standard affine cover gives these formulas over an arbitrary ring $A$ [@Har77, Theorem III.5.1].
 :::
 
 ::: {.remark title="Projective dimension zero"}

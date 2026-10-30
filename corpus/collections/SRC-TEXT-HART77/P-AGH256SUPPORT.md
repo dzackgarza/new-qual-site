@@ -50,7 +50,7 @@ For part (d), use (Ex. 1.20) and (5.8) to show a priori that $\mch^0_Z(\mcf)$ is
 
 ::: {.solution}
 Use the [[D-UDIVH|support]] conventions of [[P-AGH2114SUPPORT]] and the [[P-AGH2120SUPPSUBSHEAF|subsheaf of sections with support in a closed set]].
-For $X=\Spec A$ and $\mcf=\widetilde M$, the stalk at $\mathfrak p$ is $M_{\mathfrak p}$ and the sections on $D(f)$ are $M_f$ [@Har10a, Proposition II.5.1].
+For $X=\Spec A$ and $\mcf=\widetilde M$, the stalk at $\mathfrak p$ is $M_{\mathfrak p}$ and the sections on $D(f)$ are $M_f$ [@Har77, Proposition II.5.1].
 
 ::: pf
 
@@ -92,7 +92,7 @@ The [[D-UDIVH|support]] in part (c) is closed.
 
 ::: pf-proof
 
-On each affine open $U=\Spec A\subseteq X$, the [[D-QNTZY|coherent]] sheaf $\mcf$ restricts to $\widetilde M$ for a finite $A$-module $M$ [@Har10a, Proposition II.5.4].
+On each affine open $U=\Spec A\subseteq X$, the [[D-QNTZY|coherent]] sheaf $\mcf$ restricts to $\widetilde M$ for a finite $A$-module $M$ [@Har77, Proposition II.5.4].
 Step [](#s2){.pf-ref} shows that $\supp\mcf\cap U=V(\Ann M)$ is closed in $U$.
 Thus $U\setminus\supp\mcf$ is open in $U$, hence in $X$.
 The complement $X\setminus\supp\mcf$ is the union of these open subsets as $U$ runs over an affine cover, so it is open.

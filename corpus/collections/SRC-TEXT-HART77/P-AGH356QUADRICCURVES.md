@@ -66,7 +66,7 @@ $$
 \OO_Q(a,b)=p_1^*\OO_{\PP^1}(a)\otimes p_2^*\OO_{\PP^1}(b),
 \qquad\OO_Q(1)=\OO_Q(1,1)
 $$
-by the Segre twisting formula [@Har10a, Exercise II.5.11].
+by the Segre twisting formula [@Har77, Exercise II.5.11].
 Let $v(t)=\max(t+1,0)$ and $w(t)=\max(-t-1,0)$ for integers $t$.
 
 ::: pf
@@ -83,7 +83,7 @@ h^2(Q,\OO_Q(a,b))&=w(a)w(b),\\
 $$
 
 ::: pf-proof
-On $\PP_k^1$, the cohomology of $\OO(t)$ has dimensions $v(t)$ in degree zero and $w(t)$ in degree one, and vanishes in higher degrees [@Har10a, Theorem III.5.1].
+On $\PP_k^1$, the cohomology of $\OO(t)$ has dimensions $v(t)$ in degree zero and $w(t)$ in degree one, and vanishes in higher degrees [@Har77, Theorem III.5.1].
 Apply the [Künneth formula over a field](https://stacks.math.columbia.edu/tag/0BEC) to the two projective lines and these invertible sheaves.
 It gives
 $$
@@ -147,8 +147,8 @@ Over an algebraically closed field, nonsingular irreducible divisors of every ty
 
 ::: pf-proof
 The product of the degree-$a$ and degree-$b$ Veronese embeddings of the two projective lines, followed by a Segre embedding, is a closed immersion whose pullback of $\OO(1)$ is $\OO_Q(a,b)$.
-Thus this sheaf is very ample, as in [@Har10a, Example II.7.6.2].
-Bertini's hyperplane theorem for this embedding gives a nonempty nonsingular divisor $Y$ of the required type [@Har10a, Theorem II.8.18].
+Thus this sheaf is very ample, as in [@Har77, Example II.7.6.2].
+Bertini's hyperplane theorem for this embedding gives a nonempty nonsingular divisor $Y$ of the required type [@Har77, Theorem II.8.18].
 Step [](#s3){.pf-ref} makes it connected.
 Its regular local rings are domains, so distinct irreducible components cannot meet; the finitely many components would consequently be open and closed.
 Connectedness forces only one component, and nonsingularity gives reducedness.
@@ -212,7 +212,7 @@ Consider its projection to the second projective line.
 A fibre of this projection on $Q$ is a line on which $\OO_Q(1,3)$ has degree one.
 No such line is a component of this integral curve of positive type in both coordinates, so its equation restricts to a nonzero linear form on the fibre.
 Thus each fibre of the restricted projection is a zero-dimensional scheme of length one.
-The projection is proper and quasi-finite and hence finite [@Har10a, Exercise III.11.2]; it is nonconstant and has degree one.
+The projection is proper and quasi-finite and hence finite [@Har77, Exercise III.11.2]; it is nonconstant and has degree one.
 A finite birational morphism onto the normal curve $\PP^1$ is an isomorphism, by integral closedness on its affine charts.
 Hence the curve is isomorphic to $\PP^1$ and is rational.
 Step [](#s5){.pf-ref} excludes projective normality because the two type indices differ by two.

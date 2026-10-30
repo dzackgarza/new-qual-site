@@ -14,7 +14,7 @@ By [[algebraic-geometry/cohomology/vanishing-and-duality|Serre's criterion]], a 
 
 ## Syllabus
 
-At the level of [@Har10a, Sections III.1–III.8, III.12].
+At the level of [@Har77, Sections III.1–III.8, III.12].
 
 - [[algebraic-geometry/cohomology/homological-algebra|Homological algebra]], abelian categories, chain complexes and their cohomology, injective resolutions, right derived functors, and universal $\delta$-functors.
 

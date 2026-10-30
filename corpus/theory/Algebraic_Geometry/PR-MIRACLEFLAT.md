@@ -30,7 +30,7 @@ Let $f\colon X\to Y$ be a finite morphism of locally Noetherian schemes. Assume 
 
 Then $f$ is flat.
 In particular, a finite surjective morphism between smooth varieties of the same dimension over a field is flat.
-[@Har10a, Exercise III.10.9]
+[@Har77, Exercise III.10.9]
 :::
 
 ::: {.proof}

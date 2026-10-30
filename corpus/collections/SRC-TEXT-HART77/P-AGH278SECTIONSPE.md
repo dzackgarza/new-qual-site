@@ -94,7 +94,7 @@ T_j/T_i\longmapsto s_j/s_i.
 $$
 These are regular functions because $s_i$ trivializes the invertible sheaf there.
 On $V_i\cap V_h$, the identities $(s_j/s_i)/(s_h/s_i)=s_j/s_h$ are exactly the projective-chart transition formulas.
-The maps consequently glue to a $V$-morphism $V\to\PP_V^r$, as in [@Har10a, Theorem II.7.1].
+The maps consequently glue to a $V$-morphism $V\to\PP_V^r$, as in [@Har77, Theorem II.7.1].
 
 Changing the frame of $\mce$ replaces the $s_i$ by the corresponding linear combinations, the same coordinate change used to glue $P$.
 On an overlap, writing both constructions in a common local frame gives the same ratios.

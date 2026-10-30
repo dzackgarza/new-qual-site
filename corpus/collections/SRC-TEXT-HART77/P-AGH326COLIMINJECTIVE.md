@@ -143,7 +143,7 @@ The sheaf axiom at that index glues the representatives.
 Uniqueness is proved in the same way, by moving to an index where the finitely many restrictions agree.
 The finite-cover axioms imply the full sheaf axiom, using a finite subcover and uniqueness on its intersections with the other members of a cover.
 Thus the sectionwise direct-limit presheaf is already a sheaf and is the sheaf colimit.
-This gives the stated formula [@Har10a, Exercise II.1.11].
+This gives the stated formula [@Har77, Exercise II.1.11].
 
 :::
 

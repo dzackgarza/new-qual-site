@@ -39,7 +39,7 @@ For each $x\in\mathfrak X$, finitely many of the $s_\lambda$ generate $\mcf$ on 
 
 ::: pf-proof
 
-The coherent sheaf $\mcf$ is locally of finite type, so $\mcf_x$ is a finite $\OO_{\mathfrak X,x}$-module [@Har10a, Chapter II, §9].
+The coherent sheaf $\mcf$ is locally of finite type, so $\mcf_x$ is a finite $\OO_{\mathfrak X,x}$-module [@Har77, Chapter II, §9].
 Express a finite generating set of this module as finite linear combinations of the germs $(s_\lambda)_x$.
 Only finitely many indices occur; let $\Lambda_x\subseteq\Lambda$ be their union.
 The corresponding map

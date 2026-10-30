@@ -30,7 +30,7 @@ The point $p$ is \dfn{smooth} if $\dim_k T_p X = \dim_p X$, and \dfn{singular} o
 
 ::: {.proposition title="Jacobian criterion"}
 Let $X\subseteq\AA^n$ be an affine variety of dimension $d$, let $I(X) = \generators{f_1,\ldots,f_t} \subseteq k[x_1,\ldots,x_n]$, and let $J_X(p) = \left[ \partial f_i / \partial x_j (p) \right]$.
-Then $\rank J_X(p)\le n-d$ for every $p\in X$, and $p$ is a smooth point if and only if $\rank J_X(p) = n-d$ [@Har10a, Theorem I.5.1].
+Then $\rank J_X(p)\le n-d$ for every $p\in X$, and $p$ is a smooth point if and only if $\rank J_X(p) = n-d$ [@Har77, Theorem I.5.1].
 :::
 
 ::: {.remark}

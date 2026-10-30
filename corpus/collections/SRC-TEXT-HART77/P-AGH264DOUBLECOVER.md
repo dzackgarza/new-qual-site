@@ -45,7 +45,7 @@ Show that $\alpha$ is integral over $R$ if and only if $g,h\in R$.
 
 ::: {.solution}
 For an irreducible polynomial $q\in R$ and $u\in F^\times$, let $v_q(u)$ be the exponent of $q$ in the numerator of a reduced fraction for $u$, minus its exponent in the denominator.
-The ring $R$ is a [[D-INULL|unique factorization domain]] by [[T-JEZZY|Gauss's lemma]], and is therefore integrally closed [@Har10a, proof of Proposition II.6.2].
+The ring $R$ is a [[D-INULL|unique factorization domain]] by [[T-JEZZY|Gauss's lemma]], and is therefore integrally closed [@Har77, proof of Proposition II.6.2].
 
 ::: pf
 
@@ -140,5 +140,5 @@ Step [](#s1){.pf-ref} supplies the domain and its fraction field, and step [](#s
 For $h\ne0$, the element $g+hz$ generates $K$ over $F$, since $z=((g+hz)-g)/h$.
 Its minimal polynomial is therefore the quadratic displayed in the hint.
 For $h=0$, the minimal polynomial is instead $T-g$, whereas that quadratic is $(T-g)^2$.
-The source calls the quadratic minimal without excluding $h=0$ [@Har10a, Exercise II.6.4].
+The source calls the quadratic minimal without excluding $h=0$ [@Har77, Exercise II.6.4].
 :::

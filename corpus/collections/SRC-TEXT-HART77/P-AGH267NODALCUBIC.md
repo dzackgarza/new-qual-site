@@ -118,7 +118,7 @@ By step [](#s2){.pf-ref}, this function has no zero or pole at either point over
 Its divisor on $\PP^1$ is therefore supported on $U$ and has total degree zero.
 It follows that $\sum_P n_P$ depends only on the Cartier class and is additive.
 This degree map is surjective since $[O]$ has degree one.
-Its kernel is the stated group $\operatorname{CaCl}^0(X)$, as in [@Har10a, Example II.6.11.4].
+Its kernel is the stated group $\operatorname{CaCl}^0(X)$, as in [@Har77, Example II.6.11.4].
 :::
 
 :::

@@ -49,7 +49,7 @@ For every unital associative $A$-algebra $B$, an $A$-linear map $\phi:M\to B$ wi
 For integers $m\ge1$ and $q\ge0$ and a free module $M$ with ordered basis $e_1,\ldots,e_m$, the degree-$q$ tensor, symmetric, and exterior powers have bases consisting of all length-$q$ words, the degree-$q$ monomials, and the increasing length-$q$ wedges, respectively.
 Their ranks are $m^q$, $\binom{m+q-1}{q}$, and $\binom m q$.
 In degree zero all three modules are $A$.
-For $M=0$, every positive-degree component is zero [@Har10a, Exercise II.5.16(a)].
+For $M=0$, every positive-degree component is zero [@Har77, Exercise II.5.16(a)].
 :::
 
 ::: {.example title="A commutative tensor algebra"}
@@ -68,7 +68,7 @@ The defining square relations give $m\wedge n=-n\wedge m$ by expanding $(m+n)\we
 
 ::: {.definition title="Tensor operations on sheaves"}
 For a sheaf $\mcf$ of modules on a ringed space $(X,\OO_X)$, its \dfn{tensor}, \dfn{symmetric}, and \dfn{exterior algebras} are the sheafifications of the presheaves assigning the corresponding $\OO_X(U)$-algebra to $\mcf(U)$ on each open set $U$.
-Their degree-$q$ components are denoted $T^q(\mcf)$, $S^q(\mcf)=\Sym^q(\mcf)$, and $\bigwedge^q\mcf$ [@Har10a, Exercise II.5.16].
+Their degree-$q$ components are denoted $T^q(\mcf)$, $S^q(\mcf)=\Sym^q(\mcf)$, and $\bigwedge^q\mcf$ [@Har77, Exercise II.5.16].
 :::
 
 ::: {.proposition}
@@ -77,11 +77,11 @@ $$
 (\bigwedge^q\mcf)\restrict_{\Spec A}\cong\widetilde{\bigwedge_A^q M},
 $$
 and the corresponding identities hold for tensor and symmetric powers.
-These identities follow from compatibility of tensor products and their defining quotients with localization [@Har10a, Propositions II.5.2 and II.5.7, Exercise II.5.16(e)].
+These identities follow from compatibility of tensor products and their defining quotients with localization [@Har77, Propositions II.5.2 and II.5.7, Exercise II.5.16(e)].
 :::
 
 ::: {.remark}
 For a locally free sheaf $\mcf$ of finite rank $m$, its [[D-MODCONORM|determinant]] is $\det\mcf=\bigwedge^m\mcf$.
-For a smooth $m$-dimensional variety over a field $k$, this gives the canonical invertible sheaf $\omega_X=\bigwedge^m\Omega_{X/k}$ [@Har10a, Chapter II, §8].
-For a locally free sheaf $\mce$ of finite rank on a scheme $X$, the projective bundle in the quotient convention is $\PP(\mce)=\operatorname{Proj}_X\Sym^\bullet\mce$ [@Har10a, Chapter II, §7].
+For a smooth $m$-dimensional variety over a field $k$, this gives the canonical invertible sheaf $\omega_X=\bigwedge^m\Omega_{X/k}$ [@Har77, Chapter II, §8].
+For a locally free sheaf $\mce$ of finite rank on a scheme $X$, the projective bundle in the quotient convention is $\PP(\mce)=\operatorname{Proj}_X\Sym^\bullet\mce$ [@Har77, Chapter II, §7].
 :::

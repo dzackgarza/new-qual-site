@@ -27,18 +27,18 @@ For every $B$-module $M$, composition with $d$ gives a natural bijection
 $$
 \Hom_B(\Omega_{B/A},M)\cong\Der_A(B,M).
 $$
-Here $\Der_A(B,M)$ denotes the additive maps $D:B\to M$ annihilating $A$ and satisfying $D(bb')=bD(b')+b'D(b)$ [@Har10a, Chapter II, §8].
+Here $\Der_A(B,M)$ denotes the additive maps $D:B\to M$ annihilating $A$ and satisfying $D(bb')=bD(b')+b'D(b)$ [@Har77, Chapter II, §8].
 :::
 
 ::: {.definition title="Sheaf of differentials"}
-For a morphism of schemes $f:X\to Y$, the \dfn{sheaf of relative differentials} $\Omega_{X/Y}$ is obtained by gluing the sheaves $\widetilde{\Omega_{B/A}}$ on affine opens $\Spec B\subseteq X$ mapping into affine opens $\Spec A\subseteq Y$ [@Har10a, Chapter II, §8].
+For a morphism of schemes $f:X\to Y$, the \dfn{sheaf of relative differentials} $\Omega_{X/Y}$ is obtained by gluing the sheaves $\widetilde{\Omega_{B/A}}$ on affine opens $\Spec B\subseteq X$ mapping into affine opens $\Spec A\subseteq Y$ [@Har77, Chapter II, §8].
 :::
 
 ::: {.proposition}
 $\Omega_{X/Y}$ is [[D-QNTZY|quasi-coherent]], and it is coherent when $Y$ is noetherian and $f$ is of finite type.
 Differentials commute with localization: $\Omega_{B_s/A}\cong(\Omega_{B/A})_s$.
 For the affine diagonal with ideal $J=\ker(B\otimes_A B\to B)$, there is a canonical isomorphism $\Omega_{B/A}\cong J/J^2$, sending $db$ to $1\otimes_A b-b\otimes_A1$.
-Thus differentials are also the conormal sheaf of the diagonal; this description is computed on affine neighborhoods, and for a separated morphism the diagonal itself is a closed immersion [@Har10a, Chapter II, §8].
+Thus differentials are also the conormal sheaf of the diagonal; this description is computed on affine neighborhoods, and for a separated morphism the diagonal itself is a closed immersion [@Har77, Chapter II, §8].
 :::
 
 ::: {.proposition title="Differential exact sequences"}
@@ -52,7 +52,7 @@ $$
 \mci/\mci^2\longrightarrow i^*\Omega_{X/S}\longrightarrow\Omega_{Z/S}\longrightarrow0.
 $$
 Its first map sends the class of a local section $g$ of $\mci$ to $dg\otimes_{\OO_X}1$.
-Affinely, for $B\to A$ and an ideal $I\subseteq A$, it is the map $I/I^2\to\Omega_{A/B}\otimes_A A/I$ [@Har10a, Propositions II.8.4A, II.8.11 and II.8.12].
+Affinely, for $B\to A$ and an ideal $I\subseteq A$, it is the map $I/I^2\to\Omega_{A/B}\otimes_A A/I$ [@Har77, Propositions II.8.4A, II.8.11 and II.8.12].
 :::
 
 ::: {.theorem title="Regularity and differential rank"}

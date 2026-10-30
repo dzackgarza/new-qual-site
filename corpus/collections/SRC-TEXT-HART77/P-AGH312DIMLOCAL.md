@@ -66,7 +66,7 @@ The function fields are therefore the same:
 $$
 K(U)=K(X).
 $$
-For a variety over $k$, dimension equals the transcendence degree of its function field [@Har10a, Chapter I, §1].
+For a variety over $k$, dimension equals the transcendence degree of its function field [@Har77, Chapter I, §1].
 Hence
 $$
 \dim U=\operatorname{trdeg}_k K(U)

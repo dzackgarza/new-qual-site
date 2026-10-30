@@ -65,7 +65,7 @@ If $W$ is an integral variety regular in codimension one and $p:Y\to W$ is a Zar
 ::: pf-proof
 
 Each trivializing chart has the form $U\times\AA^1$.
-These charts are integral and regular in codimension one by [@Har10a, Proposition II.6.6].
+These charts are integral and regular in codimension one by [@Har77, Proposition II.6.6].
 Any two nonempty trivializing charts meet over the generic point of $W$, so $Y$ is integral.
 The local prime-divisor classification in that proposition applies on every chart.
 Thus a prime divisor of $Y$ is either vertical, of the form $p^{-1}(D)$ for a prime divisor $D\subseteq W$, or horizontal, dominating $W$.
@@ -111,7 +111,7 @@ Step [](#s1){.pf-ref} now gives $\pi^*:\Cl(V)\xrightarrow{\cong}\Cl(\bar X\setmi
 The charts show that $\dim\bar X=\dim V+1\ge2$ and that $\bar X\setminus\{P\}$ is regular in codimension one.
 The closed point $P$ has codimension at least two, so $\bar X$ and its open subset $X$ are regular in codimension one as well.
 Deleting $P$ changes neither their prime-divisor groups nor their valuations.
-Hence restriction identifies $\Cl(\bar X)$ with $\Cl(\bar X\setminus\{P\})$, and $\Cl(X)$ with $\Cl(X\setminus\{P\})$ [@Har10a, Proposition II.6.5(b)].
+Hence restriction identifies $\Cl(\bar X)$ with $\Cl(\bar X\setminus\{P\})$, and $\Cl(X)$ with $\Cl(X\setminus\{P\})$ [@Har77, Proposition II.6.5(b)].
 This proves part (a).
 
 :::
@@ -137,7 +137,7 @@ $$
 $$
 This proves $[V_\infty]=\pi^*h$ under the identification of step [](#s2){.pf-ref}.
 
-Since $X=\bar X\setminus V_\infty$, divisor restriction gives an exact sequence [@Har10a, Proposition II.6.5(c)]
+Since $X=\bar X\setminus V_\infty$, divisor restriction gives an exact sequence [@Har77, Proposition II.6.5(c)]
 $$
 \ZZ\xrightarrow{1\mapsto[V_\infty]}\Cl(\bar X)\longrightarrow\Cl(X)\longrightarrow0
 $$
@@ -158,7 +158,7 @@ The unique-factorization criterion in part (c) holds.
 
 The finitely generated domain $S$ is noetherian.
 By the definition of [[P-AGH2514PROJNORM|projective normality]], $V$ is projectively normal precisely when $S$ is integrally closed.
-A noetherian integrally closed domain is a unique factorization domain precisely when its divisor class group is zero [@Har10a, Proposition II.6.2].
+A noetherian integrally closed domain is a unique factorization domain precisely when its divisor class group is zero [@Har77, Proposition II.6.2].
 Every unique factorization domain is integrally closed, so
 $$
 S\text{ is a unique factorization domain}
@@ -210,11 +210,11 @@ The zero section $E\cong V$ is $q^{-1}(P)$, and $q$ identifies $T\setminus E$ wi
 
 The inverse image $\widetilde Z=q^{-1}(Z)$ is therefore a prime divisor of $T$ disjoint from $E$.
 Let $W\subseteq V$ be the regular locus and put $T_W=p^{-1}(W)$.
-The regular locus is open for a variety [@Har10a, Theorem I.5.3], and $V\setminus W$ has codimension at least two by hypothesis.
+The regular locus is open for a variety [@Har77, Theorem I.5.3], and $V\setminus W$ has codimension at least two by hypothesis.
 Local triviality shows that $T\setminus T_W$ also has codimension at least two.
 The variety $T_W$ is regular, since locally it is the product of the regular variety $W$ with $\AA_k^1$.
 
-On regular varieties, [[D-5PQ5W|Cartier and Weil divisor classes]] both identify with the Picard group [@Har10a, Remark II.6.11.1A and Corollary II.6.16].
+On regular varieties, [[D-5PQ5W|Cartier and Weil divisor classes]] both identify with the Picard group [@Har77, Remark II.6.11.1A and Corollary II.6.16].
 Step [](#s1){.pf-ref}, applied over $W$, consequently makes
 $$
 p_W^*:\Pic(W)\xrightarrow{\cong}\Pic(T_W)

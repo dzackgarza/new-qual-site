@@ -40,7 +40,7 @@ The following sheaves are flasque:
 
 - the sheaf $\prod_x j^x_* \mcf_x$ of discontinuous sections of any sheaf $\mcf$, where $j^x\colon\theset{x}\injects X$;
 
-- every constant sheaf on an irreducible topological space [@Har10a, Exercise II.1.16];
+- every constant sheaf on an irreducible topological space [@Har77, Exercise II.1.16];
 
-- the sheaf $\tilde{I}$ on $\Spec A$ for a Noetherian ring $A$ and an injective $A\dash$module $I$ [@Har10a, Proposition III.3.4]; Hartshorne uses this to prove that $H^i(\Spec A,\tilde M)=0$ for $i>0$.
+- the sheaf $\tilde{I}$ on $\Spec A$ for a Noetherian ring $A$ and an injective $A\dash$module $I$ [@Har77, Proposition III.3.4]; Hartshorne uses this to prove that $H^i(\Spec A,\tilde M)=0$ for $i>0$.
 :::

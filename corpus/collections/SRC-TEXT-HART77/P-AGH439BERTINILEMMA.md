@@ -178,7 +178,7 @@ is closed in $S$.
 
 The secant argument used in Hartshorne's proof of the general projection
 theorem shows that not every secant of a nonplanar curve is a multisecant
-[@Har10a, Chapter IV, §3]. Hence
+[@Har77, Chapter IV, §3]. Hence
 $$
 M\ne S.
 $$

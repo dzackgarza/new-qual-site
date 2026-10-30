@@ -44,8 +44,8 @@ The functors $T^i$ form a cohomological $\delta$-functor on $\Coh(X)^{\mathrm{op
 
 ::: pf-proof
 
-The category of coherent sheaves on a noetherian scheme is abelian, and its inclusion into $\Mod(X)$ is exact [@Har10a, Proposition II.5.7].
-The long exact sheaf-Ext sequence in the first variable therefore applies to every short exact sequence in $\Coh(X)$ [@Har10a, Proposition III.6.4].
+The category of coherent sheaves on a noetherian scheme is abelian, and its inclusion into $\Mod(X)$ is exact [@Har77, Proposition II.5.7].
+The long exact sheaf-Ext sequence in the first variable therefore applies to every short exact sequence in $\Coh(X)$ [@Har77, Proposition III.6.4].
 Reversing that short exact sequence gives a short exact sequence in the opposite category, with the variance required for a covariant cohomological $\delta$-functor.
 The degree-zero identification is the definition of sheaf Ext as the right derived functors of [[D-MODOX|sheaf Hom]] in the second variable.
 The boundary maps are natural by that same long exact sequence construction.
@@ -64,7 +64,7 @@ The functor $\sheafhom_X(E,-)$ is isomorphic to $E^\vee\otimes_{\OO_X}-$.
 In a local frame it is a finite direct sum of copies of the identity functor, and hence is exact.
 Applying it to an injective resolution of $\mcg$ consequently leaves an exact augmented complex.
 Its positive-degree cohomology sheaves, which define $\mathcal{E}xt_X^i(E,\mcg)$, vanish.
-This is also the locally free special case of [@Har10a, Proposition III.6.5].
+This is also the locally free special case of [@Har77, Proposition III.6.5].
 
 :::
 
@@ -94,7 +94,7 @@ The same epimorphism works for every positive degree.
 
 ::: pf-qed
 
-By the effaceability criterion [@Har10a, Theorem III.1.3A], a cohomological $\delta$-functor whose positive-degree terms are effaceable is universal.
+By the effaceability criterion [@Har77, Theorem III.1.3A], a cohomological $\delta$-functor whose positive-degree terms are effaceable is universal.
 Apply it to the functor on $\Coh(X)^{\mathrm{op}}$ in step [](#s1){.pf-ref}, using step [](#s3){.pf-ref}.
 Consequently every natural transformation from $T^0$ to the degree-zero part of another contravariant $\delta$-functor extends uniquely to a morphism of $\delta$-functors.
 This is the requested contravariant universality.

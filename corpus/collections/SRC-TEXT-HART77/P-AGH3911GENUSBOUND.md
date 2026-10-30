@@ -117,7 +117,7 @@ family over $\GG_m$. Taking its scheme-theoretic closure over $\AA^1$ gives
 the flat family of Hartshorne III.9.8.3; the calculation in III.9.8.4 shows
 that its special fibre is a scheme supported on the projected curve $C$.
 
-Flatness preserves the Hilbert polynomial [@Har10a, Theorem III.9.9], hence
+Flatness preserves the Hilbert polynomial [@Har77, Theorem III.9.9], hence
 $$
 P_{Y_0}=P_Y.
 $$

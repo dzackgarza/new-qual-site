@@ -35,7 +35,7 @@ H^0(X,(\Omega^p_{X/k})^{\otimes m})
 \qquad\Omega^p_{X/k}=\bigwedge^p\Omega_{X/k}.
 $$
 In particular $p_g$, every $P_m$, and every $h^{p,0}$ are birational invariants in any characteristic.
-The inverse pullbacks are constructed in [[P-AGH288PLURIGENUS]], following the method of [@Har10a, Theorem II.8.19 and Exercise II.8.8].
+The inverse pullbacks are constructed in [[P-AGH288PLURIGENUS]], following the method of [@Har77, Theorem II.8.19 and Exercise II.8.8].
 :::
 
 ::: {.remark title="Plurigenera and Kodaira dimension"}
@@ -47,13 +47,13 @@ For smooth projective varieties in characteristic zero, Hodge symmetry gives
 $$
 h^i(X,\OO_X)=h^0(X,\Omega^i_{X/k})
 $$
-[@Har10a, Appendix B]. For a general characteristic-zero ground field, descend the smooth projective variety to a subfield finitely generated over $\QQ$ and embed that subfield in $\CC$; the complex comparison gives the equality, and coherent cohomology commutes with both field extensions [@Har10a, Proposition III.9.3]. Consequently the preceding theorem also gives birational invariance of $q(X)=h^1(X,\OO_X)$, of $\chi(X,\OO_X)=\sum_i(-1)^i h^i(X,\OO_X)$, and of the arithmetic genus
+[@Har77, Appendix B]. For a general characteristic-zero ground field, descend the smooth projective variety to a subfield finitely generated over $\QQ$ and embed that subfield in $\CC$; the complex comparison gives the equality, and coherent cohomology commutes with both field extensions [@Har77, Proposition III.9.3]. Consequently the preceding theorem also gives birational invariance of $q(X)=h^1(X,\OO_X)$, of $\chi(X,\OO_X)=\sum_i(-1)^i h^i(X,\OO_X)$, and of the arithmetic genus
 $$
 p_a(X)=(-1)^n\bigl(\chi(X,\OO_X)-1\bigr)
 $$
-[@Har10a, Chapter I, §7 and Exercise III.5.2].
+[@Har77, Chapter I, §7 and Exercise III.5.2].
 :::
 
 ::: {.remark}
-For a smooth projective surface, blowing up a point gives $K_{\widetilde X}=\pi^*K_X+E$, by [[P-AGH285BLOWUPCANON]]. Since $E^2=-1$ and $(\pi^*K_X).E=0$, one obtains $K_{\widetilde X}^2=K_X^2-1$ [@Har10a, Chapter V, §3]. Thus the self-intersection of the canonical divisor is not a birational invariant.
+For a smooth projective surface, blowing up a point gives $K_{\widetilde X}=\pi^*K_X+E$, by [[P-AGH285BLOWUPCANON]]. Since $E^2=-1$ and $(\pi^*K_X).E=0$, one obtains $K_{\widetilde X}^2=K_X^2-1$ [@Har77, Chapter V, §3]. Thus the self-intersection of the canonical divisor is not a birational invariant.
 :::

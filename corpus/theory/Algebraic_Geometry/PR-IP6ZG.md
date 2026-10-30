@@ -44,7 +44,7 @@ H^q\qty{X;\colim_i\mcf_i}
 \cong
 \colim_i H^q(X;\mcf_i)
 $$
-[@Har10a, Proposition III.2.9].
+[@Har77, Proposition III.2.9].
 :::
 
 ::: {.proof}

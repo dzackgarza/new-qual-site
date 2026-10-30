@@ -161,7 +161,7 @@ Injectivity of $I$ extends $h$ along $\mathfrak b^n\hookrightarrow A$ to $\widet
 The element $\widetilde h(1)\in I=\Gamma(X,\widetilde I)$ restricts to the given section, because the ideal inclusion becomes an isomorphism on $W$ and step [](#s1){.pf-ref} describes exactly that restriction.
 Hence every section on every open subset extends to all of $X$.
 For opens $W\subseteq V\subseteq X$, restricting such a global extension to $V$ gives surjectivity of $\widetilde I(V)\to\widetilde I(W)$.
-This is flasqueness and gives the asserted alternative proof of [@Har10a, Proposition III.3.4].
+This is flasqueness and gives the asserted alternative proof of [@Har77, Proposition III.3.4].
 :::
 
 :::

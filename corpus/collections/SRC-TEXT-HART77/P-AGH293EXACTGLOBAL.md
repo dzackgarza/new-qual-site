@@ -56,12 +56,12 @@ K_n=\mcf'/\mci^n\mcf',\qquad G_n=\mcf/\mci^n\mcf',
 \qquad \mathfrak X_n=(\underlyingspace{\mathfrak X},\OO_{\mathfrak X}/\mci^n).
 $$
 The schemes $\mathfrak X_n$ are the ordinary infinitesimal layers on the common underlying space of the [[D-SCHFORMAL|formal scheme]].
-On an affine formal open $\mathfrak U$, their restrictions $\mathfrak U_n$ are affine schemes [@Har10a, Propositions II.9.4 and II.9.5].
+On an affine formal open $\mathfrak U$, their restrictions $\mathfrak U_n$ are affine schemes [@Har77, Propositions II.9.4 and II.9.5].
 The sheaf $K_n$ is coherent on $\mathfrak X_n$, and
 $$
 \mcf'\xrightarrow{\cong}\varprojlim_n K_n
 $$
-by [@Har10a, Proposition II.9.6].
+by [@Har77, Proposition II.9.6].
 Neither $\mcf$ nor $\mcf''$ is assumed coherent or annihilated by a power of $\mci$.
 
 ::: pf
@@ -85,7 +85,7 @@ Surjectivity as sheaves gives local lifts to $G_n$.
 Refine their domains to a finite cover by opens which are distinguished affine opens of $\mathfrak U_n$; the topology is the same, and the affine scheme $\mathfrak U_n$ is quasi-compact.
 Write the lifts as $s_i$.
 On overlaps their differences $c_{ij}=s_i-s_j$ are sections of $K_n$ and satisfy $c_{ij}+c_{jk}=c_{ik}$.
-The usual affine gluing argument for a quasi-coherent sheaf gives sections $b_i$ of $K_n$ with $c_{ij}=b_i-b_j$ [@Har10a, Proposition II.5.6], as in the affine Čech calculation in [[T-COHAFF]].
+The usual affine gluing argument for a quasi-coherent sheaf gives sections $b_i$ of $K_n$ with $c_{ij}=b_i-b_j$ [@Har77, Proposition II.5.6], as in the affine Čech calculation in [[T-COHAFF]].
 Thus $s_i-b_i$ agree on overlaps and glue to a section of $G_n(\mathfrak U)$ lifting $s$.
 
 This argument only uses the quasi-coherence of $K_n$ on the affine scheme $\mathfrak U_n$.
@@ -108,7 +108,7 @@ $$
 \to K_{n+1}\to K_n\to0.
 $$
 The last sheaf is regarded as a sheaf on that scheme through its quotient structure sheaf.
-Exactness of global sections for quasi-coherent sheaves on an affine scheme gives the asserted surjectivity [@Har10a, Proposition II.5.6].
+Exactness of global sections for quasi-coherent sheaves on an affine scheme gives the asserted surjectivity [@Har77, Proposition II.5.6].
 Consequently the inverse system of groups $K_n(\mathfrak U)$ satisfies the Mittag--Leffler condition.
 
 :::
@@ -132,13 +132,13 @@ $$
 \to\varprojlim_n G_n(\mathfrak U)
 \to\mcf''(\mathfrak U)\to0
 $$
-[@Har10a, Proposition II.9.1].
+[@Har77, Proposition II.9.1].
 Explicitly, compatible lifts of a fixed section can be constructed recursively.
 After choosing a lift at level $n$, choose any lift at level $n+1$ by step [](#s1){.pf-ref}.
 Its discrepancy at level $n$ lies in $K_n(\mathfrak U)$; lift that discrepancy through the surjection of step [](#s2){.pf-ref} and subtract it at level $n+1$.
 This produces compatible lifts at every level.
 
-Limits of sheaves are computed on sections [@Har10a, Proposition II.9.2].
+Limits of sheaves are computed on sections [@Har77, Proposition II.9.2].
 Together with $\mcf'\cong\varprojlim_n K_n$, this identifies the displayed sequence with
 $$
 0\to\mcf'(\mathfrak U)\to H(\mathfrak U)

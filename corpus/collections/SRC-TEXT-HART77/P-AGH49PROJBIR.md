@@ -31,7 +31,7 @@ This shows in particular that the birational map making $X$ birational to a hype
 
 ::: {.solution}
 Let $K=k(X)$ be the function field of $X$.
-We use that $k$ is algebraically closed, hence perfect, so every finitely generated extension of $k$ is separably generated [@Har10a, Theorem I.4.8A].
+We use that $k$ is algebraically closed, hence perfect, so every finitely generated extension of $k$ is separably generated [@Har77, Theorem I.4.8A].
 
 ::: pf
 
@@ -54,7 +54,7 @@ $$
 F=k(u_1,\ldots,u_r).
 $$
 The remaining affine coordinates generate this finite extension.
-By the primitive element theorem [@Har10a, Theorem I.4.6A], a suitable $k$-linear combination of those remaining coordinates is a primitive element $u_{r+1}$ for $K/F$.
+By the primitive element theorem [@Har77, Theorem I.4.6A], a suitable $k$-linear combination of those remaining coordinates is a primitive element $u_{r+1}$ for $K/F$.
 Replacing one remaining projective coordinate by the same linear combination gives
 $$
 K=k(u_1,\ldots,u_r,u_{r+1}).
@@ -128,7 +128,7 @@ The morphism $\pi:X\to X'$ is birational.
 
 ::: pf-proof
 
-A dominant morphism of varieties is birational exactly when it induces an isomorphism of function fields [@Har10a, Proposition I.4.4].
+A dominant morphism of varieties is birational exactly when it induces an isomorphism of function fields [@Har77, Proposition I.4.4].
 Dominance holds by the definition of $X'$ as the closure of the image, and step [](#s3){.pf-ref} gives the required function-field isomorphism.
 Thus the chosen projection is birational onto its image.
 

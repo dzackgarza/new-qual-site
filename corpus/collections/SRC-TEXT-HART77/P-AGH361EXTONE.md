@@ -41,7 +41,7 @@ Show that this process gives a one-to-one correspondence between isomorphism cla
 ::: {.solution}
 Put $A=\mcf'$ and $B=\mcf''$, and take all morphisms and extensions in $\Mod(X)$.
 Choose an embedding $u:A\hookrightarrow J$ into an injective sheaf and put $C=J/u(A)$, with quotient map $v:J\twoheadrightarrow C$.
-Such an embedding exists for modules on a ringed space [@Har10a, Proposition III.2.2].
+Such an embedding exists for modules on a ringed space [@Har77, Proposition III.2.2].
 Write $\partial:\Hom(B,C)\to\Ext^1(B,A)$ for the connecting map associated to $0\to A\xrightarrow{u}J\xrightarrow{v}C\to0$.
 
 ::: pf
@@ -61,7 +61,7 @@ $$
 \Hom(B,J)\longrightarrow\Hom(B,C)\xrightarrow{\partial}
 \Ext^1(B,A)\longrightarrow\Ext^1(B,J).
 $$
-The last group is zero because $J$ is injective [@Har10a, Chapter III, §6].
+The last group is zero because $J$ is injective [@Har77, Chapter III, §6].
 Exactness proves the assertion.
 
 :::

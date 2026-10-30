@@ -77,7 +77,7 @@ This proves that $f$ extends near every codimension-one point, as well as on its
 Any two such local extensions agree on their overlap: they agree generically, the overlap is reduced, and $X'$ is separated, so the dense-open uniqueness result [[P-AGH242AGREEDENSE]] applies.
 They glue on the union $U$ of their domains.
 The closed complement contains no point of codimension zero or one, as required.
-This is the codimension-one extension step in the method of [@Har10a, Theorem II.8.19].
+This is the codimension-one extension step in the method of [@Har77, Theorem II.8.19].
 
 :::
 
@@ -176,7 +176,7 @@ $$
 
 ::: pf-proof
 
-The sheaves in question are coherent on projective schemes, so their spaces of global sections are finite-dimensional [@Har10a, Theorem III.5.2].
+The sheaves in question are coherent on projective schemes, so their spaces of global sections are finite-dimensional [@Har77, Theorem III.5.2].
 For $q=d$, the sheaf $\Omega^d_{X/k}$ is $\omega_X$, so step [](#s4){.pf-ref} with $m=n$ identifies the spaces defining $P_n$.
 With $m=1$, the same step identifies the spaces defining $h^{q,0}$ for each $q$.
 Taking dimensions proves both equalities and includes $P_1=p_g$.

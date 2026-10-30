@@ -94,7 +94,7 @@ surjective.
 
 ::: pf-proof
 
-This is the Stein factorization [@Har10a, Corollary III.11.5], applied after
+This is the Stein factorization [@Har77, Corollary III.11.5], applied after
 replacing the original target by the image $Z$. By construction,
 $$
 h_*\mco_X=\mco_Y.
@@ -174,7 +174,7 @@ $$
 $$
 is ample.
 Because $g:Y\to Z$ is finite surjective, pullback preserves ampleness by
-[@Har10a, Exercise III.5.7(d)]. Therefore
+[@Har77, Exercise III.5.7(d)]. Therefore
 $$
 \mco_Y(E)=g^*\mco_Z(H\restrict_Z)
 $$
@@ -194,7 +194,7 @@ The support $\divisorsupport{E}$ is connected.
 By step [](#s3){.pf-ref}, $Y$ is a normal projective variety of dimension at least $2$.
 By step [](#s4){.pf-ref}, $\divisorsupport{E}$ is the support of an effective ample divisor.
 The Enriques--Severi--Zariski connectedness theorem
-[@Har10a, Corollary III.7.9] therefore gives
+[@Har77, Corollary III.7.9] therefore gives
 $$
 \boxed{\divisorsupport{E}\text{ is connected}.}
 $$

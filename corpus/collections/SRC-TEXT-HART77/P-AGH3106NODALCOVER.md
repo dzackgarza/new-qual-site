@@ -215,7 +215,7 @@ $Y$ which is the map of step [](#s4){.pf-ref} near the node and the identity on 
 of $V$ away from the node. Finiteness is local on the target, so $f$ is finite.
 The morphism $f$ is finite and surjective, so $X$ is proper over $k$ and the pullback
 under $f$ of an ample invertible sheaf on the projective curve $Y$ is ample on $X$
-[@Har10a, Exercise III.5.7(d)]; hence $X$ is projective.
+[@Har77, Exercise III.5.7(d)]; hence $X$ is projective.
 
 The normalization of $X$ is the disjoint union of two copies of $\PP^1$.
 In the crossed gluing, the two points on either one copy are sent to the two

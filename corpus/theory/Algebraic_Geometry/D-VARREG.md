@@ -48,7 +48,7 @@ In particular, for an ideal $\mfa \neq 0$ of $k[x_1,\ldots,x_n]$, the open set $
 $$
 \OO_{\AA^n}(\AA^n \sm V(\mfa)) = \bigcap_{0 \neq f \in \mfa} k[x_1,\ldots,x_n]\invert{f} \subseteq k(x_1,\ldots,x_n) .
 $$
-[@Har10a, §I.3]
+[@Har77, §I.3]
 :::
 
 ::: {.definition title="Rational and birational maps"}
@@ -60,11 +60,11 @@ A \dfn{birational map} is a rational map with a rational inverse, and $X$ and $Y
 ::: {.proposition title="Rational maps and function fields"}
 Over an algebraically closed field $k$, sending $X$ to $k(X)$ gives an arrow-reversing equivalence between varieties with dominant rational maps and finitely generated field extensions of $k$ with $k$-homomorphisms.
 In particular $X$ and $Y$ are birational if and only if $k(X) \cong k(Y)$ over $k$.
-[@Har10a]
+[@Har77]
 :::
 
 ::: {.remark}
 Regularity requires a quotient presentation only locally, not globally. On $\PP^n$ every regular function is locally a ratio of forms of equal degree although there are no nonconstant global regular functions; on $X=V(xw-yz)\subseteq\AA^4$, the function $x/y=z/w$ is regular on a union of two opens without being represented there by one global quotient.
 
-On $\Spec A$, the structure sheaf is defined in the same way: its sections over $U$ are the functions $s\colon U\to\coprod_{\mfp\in U}A_\mfp$ that are locally of the form $a/f$ with $a,f\in A$ [@Har10a, §II.2].
+On $\Spec A$, the structure sheaf is defined in the same way: its sections over $U$ are the functions $s\colon U\to\coprod_{\mfp\in U}A_\mfp$ that are locally of the form $a/f$ with $a,f\in A$ [@Har77, §II.2].
 :::

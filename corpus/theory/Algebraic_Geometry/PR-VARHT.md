@@ -25,7 +25,7 @@ prompts:
 ::: {.theorem title="Hauptidealsatz"}
 Let $A$ be a Noetherian ring and let $f\in A$. Every prime ideal minimal over $(f)$ has height at most $1$.
 If $f$ is neither a unit nor a zero divisor, every prime minimal over $(f)$ has height exactly $1$.
-[@Har10a, Theorem I.1.11A]
+[@Har77, Theorem I.1.11A]
 :::
 
 ::: {.proposition title="Consequences used on varieties"}
@@ -33,19 +33,19 @@ For $B$ a finitely generated domain over a field and $\mfp \in \Spec B$,
 $$
 \height \mfp + \krulldim (B/\mfp) = \krulldim B .
 $$
-[@Har10a, Theorem I.1.8A]
+[@Har77, Theorem I.1.8A]
 
 For a field $k$, a closed irreducible subset $Y\subseteq\AA_k^n$ has codimension $1$ exactly when
 $$
 Y=V(f)
 $$
 for an irreducible nonconstant polynomial $f\in k[x_1,\ldots,x_n]$.
-[@Har10a, Proposition I.1.13]
+[@Har77, Proposition I.1.13]
 :::
 
 ::: {.proposition title="Unique factorization via height-one primes"}
 A Noetherian domain $A$ is a UFD if and only if every prime ideal of $A$ of height one is principal.
-[@Har10a, Proposition I.1.12A]
+[@Har77, Proposition I.1.12A]
 :::
 
 ::: {.remark}

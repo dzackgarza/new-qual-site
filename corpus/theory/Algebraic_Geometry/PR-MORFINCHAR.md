@@ -27,11 +27,11 @@ Let $\pi \colon X \to Y$ be a morphism of schemes.
 
 1. $\pi$ is finite if and only if it is integral and locally of finite type.
 
-2. If $\pi$ is finite, then it is quasi-finite: every fibre is a finite scheme over its residue field and therefore has finitely many points [@Har10a, Exercise II.3.5].
+2. If $\pi$ is finite, then it is quasi-finite: every fibre is a finite scheme over its residue field and therefore has finitely many points [@Har77, Exercise II.3.5].
 
-3. Every finite morphism is proper [@Har10a, Exercise II.4.1]. If $Y$ is affine, every finite morphism $X\to Y$ is projective in the sense of [[D-MORPROJ|projective morphisms]].
+3. Every finite morphism is proper [@Har77, Exercise II.4.1]. If $Y$ is affine, every finite morphism $X\to Y$ is projective in the sense of [[D-MORPROJ|projective morphisms]].
 
-4. Let $X$ and $Y$ be locally Noetherian. Then $\pi$ is finite exactly when it is proper and quasi-finite, equivalently proper with finite fibres [@Har10a, Exercise III.11.2].
+4. Let $X$ and $Y$ be locally Noetherian. Then $\pi$ is finite exactly when it is proper and quasi-finite, equivalently proper with finite fibres [@Har77, Exercise III.11.2].
 :::
 
 ::: {.remark}

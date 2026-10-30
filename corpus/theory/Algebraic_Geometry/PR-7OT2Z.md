@@ -56,14 +56,14 @@ I\Big(\bigcup_{j \in J} Y_j\Big) = \bigcap_{j \in J} I(Y_j), \qquad
 V(I(Y)) = \overline{Y} \text{ for } Y \subseteq \AA^n .
 $$
 If $k$ is algebraically closed, then $V(\mfa_1) \subseteq V(\mfa_2)$ if and only if $\sqrt{\mfa_1} \supseteq \sqrt{\mfa_2}$.
-[@Har10a, §I.1]
+[@Har77, §I.1]
 :::
 
 ::: {.proposition title="Maximal ideals and coordinate rings"}
 Let $k$ be algebraically closed.
 The maximal ideals of $k[x_1,\ldots,x_n]$ are exactly the ideals $(x_1 - a_1, \ldots, x_n - a_n)$ with $(a_1,\ldots,a_n) \in \AA^n$, and they correspond to the points of $\AA^n$.
 For an affine variety $Y$ the coordinate ring $A(Y)$ is a finitely generated $k$-algebra and a domain; conversely, every finitely generated $k$-algebra that is a domain is $A(Y)$ for some affine variety $Y$.
-[@Har10a, §I.1]
+[@Har77, §I.1]
 :::
 
 ::: {.example}
@@ -81,17 +81,17 @@ The closed subsets of $X$ correspond contravariantly to the radical ideals of $k
 :::
 
 ::: {.remark title="The Zariski topology and the maps $V$ and $I$"}
-$V(1)=\emptyset$ and $V(0)=\AA^n$. By the operations above, finite unions and arbitrary intersections of algebraic sets are algebraic, so the algebraic sets are the closed sets of a topology [@Har10a, Prop. I.1.1].
+$V(1)=\emptyset$ and $V(0)=\AA^n$. By the operations above, finite unions and arbitrary intersections of algebraic sets are algebraic, so the algebraic sets are the closed sets of a topology [@Har77, Prop. I.1.1].
 $I(Y)$ is an ideal: a sum of polynomials that vanish on $Y$ vanishes on $Y$, and so does every multiple of one. $\sqrt{J}$ is an ideal: if $f^r,g^s\in J$, then every term of the binomial expansion of $(f+g)^{r+s-1}$ is in $J$.
-If $J_1\subseteq J_2$ then $V(J_1)\supseteq V(J_2)$, and if $Y_1\subseteq Y_2$ then $I(Y_1)\supseteq I(Y_2)$ [@Har10a, Prop. I.1.2].
+If $J_1\subseteq J_2$ then $V(J_1)\supseteq V(J_2)$, and if $Y_1\subseteq Y_2$ then $I(Y_1)\supseteq I(Y_2)$ [@Har77, Prop. I.1.2].
 :::
 
 ::: {.remark title="Points cut out by quadrics"}
 Let $\Gamma\subseteq\AA^n_k$ be $d\leq 2n$ points, no $n+1$ of which lie on an affine hyperplane. Then $\Gamma$ is the zero set of the polynomials of degree at most $2$ that vanish on it.
-In $\PP^n\supseteq\AA^n$ these points are in linear general position, and $d\leq 2n$ points in linear general position in $\PP^n$ are cut out by quadrics [@Har10b, Lecture 1]. For $q\notin\Gamma$, split $\Gamma$ into two sets of at most $n$ points such that the span of neither set contains $q$. The product of two hyperplanes, one through each set and neither through $q$, is a quadric that contains $\Gamma$ and not $q$. Dehomogenizing gives the affine statement.
+In $\PP^n\supseteq\AA^n$ these points are in linear general position, and $d\leq 2n$ points in linear general position in $\PP^n$ are cut out by quadrics [@Har92, Lecture 1]. For $q\notin\Gamma$, split $\Gamma$ into two sets of at most $n$ points such that the span of neither set contains $q$. The product of two hyperplanes, one through each set and neither through $q$, is a quadric that contains $\Gamma$ and not $q$. Dehomogenizing gives the affine statement.
 :::
 
 ::: {.example title="Two curves isomorphic to $\AA^1$, and the nodal cubic"}
-The maps $t\mapsto(t,t^2)$ and $(x,y)\mapsto x$ are mutually inverse morphisms between $\AA^1$ and $V(y-x^2)$; on coordinate rings, $k[x,y]/(y-x^2)\cong k[x]$. Likewise $t\mapsto(t,t^2,t^3)$ identifies $\AA^1$ with $V(y-x^2,z-x^3)$, since $k[x,y,z]/(y-x^2,z-x^3)\cong k[x]$ [@Har10a, Ex. I.1.1].
+The maps $t\mapsto(t,t^2)$ and $(x,y)\mapsto x$ are mutually inverse morphisms between $\AA^1$ and $V(y-x^2)$; on coordinate rings, $k[x,y]/(y-x^2)\cong k[x]$. Likewise $t\mapsto(t,t^2,t^3)$ identifies $\AA^1$ with $V(y-x^2,z-x^3)$, since $k[x,y,z]/(y-x^2,z-x^3)\cong k[x]$ [@Har77, Ex. I.1.1].
 For the nodal cubic, set $x=t^2-1$ and $y=t^3-t=t(t^2-1)$. Then $y^2=t^2(t^2-1)^2=(x+1)x^2=x^3+x^2$. The values $t=\pm1$ both map to the node $(0,0)$, and each line $y=tx$ through the node meets the cubic again exactly at the image of $t$.
 :::

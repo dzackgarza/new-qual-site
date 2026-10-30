@@ -51,7 +51,7 @@ is finite.
 
 ::: pf-proof
 
-The finiteness theorem for normalization says that the integral closure of a finitely generated domain over a field in its finite fraction-field extension is finite as a module over the original ring [@Har10a, Theorem I.3.9A]. Here the extension of fraction fields is the identity $K/K$, so $\overline A$ is a finite $A$-module.
+The finiteness theorem for normalization says that the integral closure of a finitely generated domain over a field in its finite fraction-field extension is finite as a module over the original ring [@Har77, Theorem I.3.9A]. Here the extension of fraction fields is the identity $K/K$, so $\overline A$ is a finite $A$-module.
 Its quotient $M$ is therefore finite as well.
 
 :::

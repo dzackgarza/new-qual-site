@@ -33,7 +33,7 @@ In this case $Y$ is called a **hypersurface** in $\PP^n$.
 ::: {.solution}
 Put $S=k[x_0,\ldots,x_n]$ and $I=I(Y)$, so $S(Y)=S/I$ is the homogeneous coordinate ring.
 The [[P-AGH24CORRESPONDENCE|projective ideal correspondence]] makes $I$ a homogeneous prime ideal and gives $Z(I)=Y$.
-Use the cone dimension formula $\dim S(Y)=\dim Y+1$ [@Har10a, Exercise I.2.6] and the dimension formula $\operatorname{height}\mathfrak p+\dim(S/\mathfrak p)=n+1$ for primes in the polynomial ring [@Har10a, Chapter I, §1].
+Use the cone dimension formula $\dim S(Y)=\dim Y+1$ [@Har77, Exercise I.2.6] and the dimension formula $\operatorname{height}\mathfrak p+\dim(S/\mathfrak p)=n+1$ for primes in the polynomial ring [@Har77, Chapter I, §1].
 
 ::: pf
 

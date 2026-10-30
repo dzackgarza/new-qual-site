@@ -36,7 +36,7 @@ $$
 \mathcal{E}xt_X^i(\mcf,\mcg)\restrict_U
 \cong\mathcal{E}xt_U^i(\mcf\restrict_U,\mcg\restrict_U)
 $$
-[@Har10a, Proposition III.6.2].
+[@Har77, Proposition III.6.2].
 Both [[D-QNTZY|coherence and quasi-coherence]] are local properties.
 It therefore suffices to work on an arbitrary affine open $U=\Spec A\subseteq X$, where $A$ is noetherian.
 Write $\mcf\restrict_U=\widetilde M$ and $\mcg\restrict_U=\widetilde N$; the module $M$ is finite, and $N$ is finite in (a) and arbitrary in (b).
@@ -74,7 +74,7 @@ $$
 
 ::: pf-proof
 
-The locally free resolution formula [@Har10a, Proposition III.6.5] computes the left side as the $i$th cohomology sheaf of
+The locally free resolution formula [@Har77, Proposition III.6.5] computes the left side as the $i$th cohomology sheaf of
 $$
 \sheafhom_U(\widetilde P_\bullet,\widetilde N).
 $$
@@ -104,7 +104,7 @@ The sheaf in step [](#s2){.pf-ref} is coherent in (a) and quasi-coherent in (b).
 
 In (a), each $\Hom_A(P_j,N)$ is a finite direct sum of the finite module $N$.
 Its submodules and quotients are finite over the noetherian ring $A$.
-Therefore the cohomology modules $\Ext_A^i(M,N)$ are finite, and their associated sheaves are coherent [@Har10a, Proposition II.5.4].
+Therefore the cohomology modules $\Ext_A^i(M,N)$ are finite, and their associated sheaves are coherent [@Har77, Proposition II.5.4].
 
 In (b), the Ext modules need not be finite, but the associated sheaf of every $A$-module is quasi-coherent.
 Thus step [](#s2){.pf-ref} gives quasi-coherence with no finiteness requirement on $N$.

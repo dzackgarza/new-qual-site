@@ -56,7 +56,7 @@ v_2:\PP_k^2\longrightarrow\PP_k^5,\qquad
 $$
 
 ::: pf-proof
-These six sections form the complete degree-two monomial basis, so the map is the second Veronese map [@Har10a, Exercises I.2.13 and I.3.4].
+These six sections form the complete degree-two monomial basis, so the map is the second Veronese map [@Har77, Exercises I.2.13 and I.3.4].
 Its local embedding property is explicit: on the target chart where the coordinate $x^2$ is nonzero, the inverse image is $x\ne0$.
 The coordinate functions $y/x$ and $z/x$ are the pullbacks of $xy/x^2$ and $xz/x^2$, so the map on coordinate rings is surjective.
 The same argument on the $y^2$ and $z^2$ charts gives a closed immersion into their union, which contains the whole image.
@@ -226,7 +226,7 @@ For sufficiently large $n$, Serre vanishing and the Hilbert-polynomial compariso
 $$
 P_\Sigma(n)-P_\Sigma(n-1)=P_C(n)=3n+1
 $$
-[@Har10a, Theorem III.5.2 and Exercise III.5.2].
+[@Har77, Theorem III.5.2 and Exercise III.5.2].
 The leading term of the Hilbert polynomial of a surface is $(\deg\Sigma)n^2/2$; its first difference has leading term $(\deg\Sigma)n$.
 Comparing with $3n+1$ proves the degree claim.
 :::

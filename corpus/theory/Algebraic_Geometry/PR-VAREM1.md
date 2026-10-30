@@ -41,7 +41,7 @@ For the blowup of a smooth point, the exceptional divisor is the projectivized t
 $$
 \OO_{\widetilde X}(E)\restrict_E\cong\OO_E(-1)
 $$
-[@Har10a, Proposition II.8.24]. On a surface $E\cong\PP^1_k$, so
+[@Har77, Proposition II.8.24]. On a surface $E\cong\PP^1_k$, so
 $$
 E^2=\deg\OO_E(E)=\deg\OO_{\PP^1}(-1)=-1.
 $$

@@ -57,11 +57,11 @@ On an intersection $\Spec A$, if a quasi-coherent sheaf corresponds to an $A$-mo
 Thus the Čech complex of each $\mcf_K(n)$ is the tensor product over $k$ of the Čech complex of $\mcf(n)$ with $K$.
 The finite products in a term of this finite-cover complex commute with tensor product.
 Since $K$ is flat over $k$, taking cohomology commutes with that tensor product.
-The affine-cover comparison [@Har10a, Theorem III.4.5] gives
+The affine-cover comparison [@Har77, Theorem III.4.5] gives
 $$
 H^i(X_K,\mcf_K(n))\cong H^i(X,\mcf(n))\otimes_k K.
 $$
-These groups are finite-dimensional [@Har10a, Theorem III.5.2], and tensoring a finite-dimensional $k$-space with $K$ preserves its dimension over the respective field.
+These groups are finite-dimensional [@Har77, Theorem III.5.2], and tensoring a finite-dimensional $k$-space with $K$ preserves its dimension over the respective field.
 Taking the alternating sum proves $\chi(X_K,\mcf_K(n))=\chi(X,\mcf(n))$ for every integer $n$.
 :::
 
@@ -111,7 +111,7 @@ $$
 \qquad(n\in\ZZ).
 $$
 Every polynomial $D(z)\in\QQ[z]$ has a polynomial antiderivative for this finite-difference operator.
-Indeed, express $D$ as a rational linear combination of the basis polynomials $\binom{z-1}{j}$, and replace each by $\binom{z}{j+1}$, whose difference at $z,z-1$ is $\binom{z-1}{j}$ [@Har10a, Proposition I.7.3].
+Indeed, express $D$ as a rational linear combination of the basis polynomials $\binom{z-1}{j}$, and replace each by $\binom{z}{j+1}$, whose difference at $z,z-1$ is $\binom{z-1}{j}$ [@Har77, Proposition I.7.3].
 Choose $Q$ with $Q(z)-Q(z-1)=P_{\mathcal Q}(z)-P_{\mathcal R}(z)$ and set
 $$
 P(z)=Q(z)+\chi(\mcf)-Q(0).
@@ -151,7 +151,7 @@ $$
 \longrightarrow\mcf\longrightarrow0
 $$
 with coherent kernel.
-Serre vanishing makes $H^1(X,\mathcal K(n))=0$ for every sufficiently large $n$ [@Har10a, Theorem III.5.2].
+Serre vanishing makes $H^1(X,\mathcal K(n))=0$ for every sufficiently large $n$ [@Har77, Theorem III.5.2].
 Choose $n_0\ge a$ beyond this bound.
 For every $n\ge n_0$, taking sections gives a surjection
 $$
@@ -174,7 +174,7 @@ The Hilbert polynomial of this finite graded truncation, and hence the eventual 
 
 ::: pf-proof
 For $n\ge n_0$, the truncation from step [](#s5){.pf-ref} has graded piece $M_n$.
-Its Hilbert polynomial from [@Har10a, Chapter I, §7] agrees with $\dim_k M_n$ for all sufficiently large $n$.
+Its Hilbert polynomial from [@Har77, Chapter I, §7] agrees with $\dim_k M_n$ for all sufficiently large $n$.
 Serre vanishing also gives
 $$
 \dim_k M_n=h^0(X,\mcf(n))=\chi(X,\mcf(n))=P(n)

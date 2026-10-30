@@ -101,7 +101,7 @@ $$
 \Gamma(X,\widetilde I)=I,\qquad
 \Gamma(D(x_0),\widetilde I)=I_{x_0},
 $$
-with restriction the localization map [@Har10a, Proposition II.5.1].
+with restriction the localization map [@Har77, Proposition II.5.1].
 Step [](#s2){.pf-ref} shows that this restriction is not surjective.
 Thus $\widetilde I$ is not flasque even though $I$ is an injective module, proving the failure of the noetherian conclusions invoked in the statement.
 

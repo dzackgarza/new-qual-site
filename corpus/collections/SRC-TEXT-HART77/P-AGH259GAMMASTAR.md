@@ -34,7 +34,7 @@ Show that the functors $\sim$ and $\Gamma_*$ induce an equivalence of categories
 :::
 
 ::: {.hint}
-For part (b), use the methods of the proof of [@Har10a, Theorem II.5.19].
+For part (b), use the methods of the proof of [@Har77, Theorem II.5.19].
 :::
 
 ::: {.solution}
@@ -58,7 +58,7 @@ On each of them, powers of $f$ trivialize $\OO_X(d)$ and give the canonical isom
 $$
 \widetilde{M(d)}\cong\widetilde M\otimes_{\OO_X}\OO_X(d)=\widetilde M(d)
 $$
-[@Har10a, Proposition II.5.12].
+[@Har77, Proposition II.5.12].
 Composing with this isomorphism defines $\alpha_d$.
 Multiplication of the local fractions by a homogeneous $s\in S_e$ sends the section defined by $m$ to that defined by $sm$.
 Thus the direct sum $\alpha_M=\bigoplus_d\alpha_d$ is graded $S$-linear.
@@ -93,7 +93,7 @@ Sheafification on $\PP_A^r$ is exact, and [[T-COHSVAN|Serre vanishing]] gives
 $$
 H^1(\PP_A^r,\widetilde K(d))=H^1(\PP_A^r,\widetilde L(d))=0
 $$
-for all sufficiently large $d$ [@Har10a, Theorem III.5.2].
+for all sufficiently large $d$ [@Har77, Theorem III.5.2].
 The associated long exact sequences then give a right-exact sequence
 $$
 \Gamma(\PP_A^r,\widetilde F_1(d))
@@ -104,7 +104,7 @@ For $j=0,1$, the comparison map from $(F_j)_d$ to the corresponding section modu
 $$
 P_q\longrightarrow\Gamma(\PP_A^r,\OO(q))
 $$
-is an isomorphism for $q\ge0$ [@Har10a, Theorem III.5.1].
+is an isomorphism for $q\ge0$ [@Har77, Theorem III.5.1].
 For $r=0$ this is the identification $Ax_0^q\cong A$ on $\Spec A$.
 Consequently $M_d$ and $\Gamma(X,\widetilde M(d))$ are cokernels of the same map $(F_1)_d\to(F_0)_d$.
 Naturality from step [](#s1){.pf-ref} identifies the induced isomorphism with $\alpha_d$.
@@ -150,7 +150,7 @@ By [[T-MODSERRE|Serre generation]], choose a surjection
 $$
 \mathcal E=\bigoplus_{j=1}^t\OO_X(-a_j)\longrightarrow\mcf
 $$
-with [[D-QNTZY|coherent]] kernel $\mathcal K$ [@Har10a, Theorem II.5.17].
+with [[D-QNTZY|coherent]] kernel $\mathcal K$ [@Har77, Theorem II.5.17].
 By [[T-COHSVAN|Serre vanishing]], $H^1(X,\mathcal K(d))=0$ for all sufficiently large $d$.
 Thus $\Gamma_*(\mathcal E)_{\ge d_0}\to\Gamma_*(\mcf)_{\ge d_0}$ is surjective for a suitable $d_0$.
 Set $F=\bigoplus_j S(-a_j)$.

@@ -145,7 +145,7 @@ The affine Jacobian criterion says that $P$ is nonsingular on this affine open e
 $$
 n-r
 $$
-[@Har10a, Chapter I, §5].
+[@Har77, Chapter I, §5].
 Nonsingularity is local, so this is equivalent to $P$ being nonsingular on $Y$.
 Step [](#deleted-column-in-span){.pf-ref} identifies the affine Jacobian rank with $\operatorname{rank}J(P)$.
 The displayed equivalence follows.

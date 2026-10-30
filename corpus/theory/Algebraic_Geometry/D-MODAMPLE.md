@@ -24,30 +24,30 @@ prompts:
 
 ::: {.definition title="Very ample"}
 Let $f:X\to Y$ be a morphism of schemes and let $\mcl$ be an invertible sheaf on $X$.
-It is \dfn{very ample} over $Y$ if there is a $Y$-immersion $\iota:X\to\PP_Y^n$, for some finite $n$, with $\iota^*\OO(1)\cong\mcl$ [@Har10a, Chapter II, §7].
+It is \dfn{very ample} over $Y$ if there is a $Y$-immersion $\iota:X\to\PP_Y^n$, for some finite $n$, with $\iota^*\OO(1)\cong\mcl$ [@Har77, Chapter II, §7].
 :::
 
 ::: {.definition title="Ample"}
 Let $X$ be a noetherian scheme and let $\mcl$ be an invertible sheaf on $X$.
 It is \dfn{ample} if for every coherent $\mcf$ there is an integer $N_0$ such that
 $\mcf\tensor_{\OO_X}(\mcl\tensorpower{\OO_X}{n})$
-is [[D-MODGG|globally generated]] for every $n\ge N_0$ [@Har10a, Chapter II, §7].
+is [[D-MODGG|globally generated]] for every $n\ge N_0$ [@Har77, Chapter II, §7].
 :::
 
 ::: {.theorem}
 Let $X$ be of finite type over a noetherian ring $A$ and let $\mcl$ be invertible.
 Then $\mcl$ is ample if and only if
 $\mcl\tensorpower{\OO_X}{m}$
-is very ample over $\Spec A$ for some $m>0$ [@Har10a, Theorem II.7.6].
+is very ample over $\Spec A$ for some $m>0$ [@Har77, Theorem II.7.6].
 :::
 
 ::: {.remark}
 If $f:X\to Y$ is proper and $\mcl$ is very ample over $Y$, its immersion into $\PP_Y^n$ is proper, hence a closed immersion.
 Thus $f$ is projective in the sense of admitting a closed immersion into some $\PP_Y^n$.
-Conversely, such a closed immersion gives a very ample sheaf by pulling back $\OO(1)$ [@Har10a, Chapter II, §§4 and 7].
+Conversely, such a closed immersion gives a very ample sheaf by pulling back $\OO(1)$ [@Har77, Chapter II, §§4 and 7].
 :::
 
 ::: {.proposition title="Ampleness on a complete curve"}
 Let $X$ be a complete nonsingular curve over an algebraically closed field, and let $\mcl$ be an invertible sheaf.
-Then $\mcl$ is ample if and only if $\deg\mcl>0$ [@Har10a, Corollary IV.3.3].
+Then $\mcl$ is ample if and only if $\deg\mcl>0$ [@Har77, Corollary IV.3.3].
 :::

@@ -96,7 +96,7 @@ Dimensions of integral finite-type schemes over a field equal the transcendence 
 $$
 \dim Z\le\dim I<m
 $$
-[@Har10a, Chapter I, §§1 and 4].
+[@Har77, Chapter I, §§1 and 4].
 Thus $\AA^m\setminus Z$ is a nonempty open subset and contains a $k$-rational point $a=(a_1,\ldots,a_m)$, since $k$ is algebraically closed.
 Choose this point and put $s=\sum_j a_js_j\in W\subseteq V$.
 

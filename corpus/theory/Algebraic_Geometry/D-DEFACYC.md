@@ -29,7 +29,7 @@ The same definition applies to left derived functors and to contravariant $F$.
 :::
 
 ::: {.proposition}
-If $0\to A\to L^\bullet$ is a resolution of $A$ by $F$-acyclic objects, then $R^iF(A)\cong h^i(F(L^\bullet))$ for all $i\ge0$ [@Har10a, Proposition III.1.2A].
+If $0\to A\to L^\bullet$ is a resolution of $A$ by $F$-acyclic objects, then $R^iF(A)\cong h^i(F(L^\bullet))$ for all $i\ge0$ [@Har77, Proposition III.1.2A].
 :::
 
 ::: {.remark}
@@ -38,5 +38,5 @@ An acyclic object need not be injective: on a one-point space every sheaf is $\G
 
 Flasque sheaves are $\Gamma$-acyclic, so a flasque resolution computes $H^i(X;\mcf)$.
 Free and projective modules are acyclic for $\wait \tensor_A N$, so a free resolution computes $\Tor$.
-Quasicoherent sheaves on an affine scheme are $\Gamma$-acyclic by Serre's theorem; hence for a Noetherian separated scheme $X$, an open affine cover $\mathfrak U$, and a quasicoherent sheaf $\mcf$, the Čech complex of $\mathfrak U$ computes $H^i(X,\mcf)$ [@Har10a, Theorem III.4.5].
+Quasicoherent sheaves on an affine scheme are $\Gamma$-acyclic by Serre's theorem; hence for a Noetherian separated scheme $X$, an open affine cover $\mathfrak U$, and a quasicoherent sheaf $\mcf$, the Čech complex of $\mathfrak U$ computes $H^i(X,\mcf)$ [@Har77, Theorem III.4.5].
 :::

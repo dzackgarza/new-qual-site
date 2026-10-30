@@ -64,7 +64,7 @@ $$
 S_n\xrightarrow{\cong}\Gamma(X,\OO_X(n))
 $$
 for every sufficiently large $n$.
-The [[D-L6ERW|Hilbert polynomial]] satisfies $P_X(n)=\dim_k S_n$ for every sufficiently large $n$ [@Har10a, Chapter I, §7].
+The [[D-L6ERW|Hilbert polynomial]] satisfies $P_X(n)=\dim_k S_n$ for every sufficiently large $n$ [@Har77, Chapter I, §7].
 Taking $n$ beyond both bounds proves the equality.
 
 :::

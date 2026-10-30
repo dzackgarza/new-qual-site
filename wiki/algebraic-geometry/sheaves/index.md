@@ -13,7 +13,7 @@ On $X=\CC\setminus\{0\}$, $\exp\colon\OO_X\to\OO_X^\times$ is a surjection of sh
 
 ## Syllabus
 
-At the level of [@Har10a, Section II.1].
+At the level of [@Har77, Section II.1].
 
 - [[algebraic-geometry/sheaves/the-sheaf-condition|Presheaves and sheaves]], the identity and gluing axioms, presheaves failing each, and sheafification.
 

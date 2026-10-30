@@ -45,7 +45,7 @@ $$
 $$
 need not be an isomorphism without a finite-presentation hypothesis on $\mcf$.
 
-$\mods{\OO_X}$ has enough injectives [@Har10a, Proposition III.2.2], but it need not have enough projectives.
+$\mods{\OO_X}$ has enough injectives [@Har77, Proposition III.2.2], but it need not have enough projectives.
 On $\PP_k^1$ over an infinite field, no projective object surjects onto $\OO_X$, as proved in [[P-AGH362NOPROJECTIVES]].
 In contrast, on a one-point ringed space with structure ring $A$, a sheaf of modules is just an $A$-module; free-module surjections show that this category has enough projectives.
 :::

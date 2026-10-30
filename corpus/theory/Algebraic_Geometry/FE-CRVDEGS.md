@@ -45,7 +45,7 @@ Since $\abs{K}$ is base-point free, $D = K - P$ has degree $7$ and $h^0(D) = 4$.
 By the very-ampleness criterion and Serre duality, $D$ is very ample exactly when $h^0(P + Q + R) = 1$ for all $Q, R \in X$.
 If $X$ has no $g^1_3$ this holds for every $P$, and $\abs{K - P}$ embeds $X$ in $\PP^3$ as a curve of degree $7$; curves of genus $5$ without a $g^1_3$ exist, so $(d, g) = (7, 5)$ occurs.
 The hyperplane section $K - P$ is special, in accordance with $g \geq \tfrac{1}{2} d + 1$.
-[@Har10a]
+[@Har77]
 :::
 
 ::: {.proposition}

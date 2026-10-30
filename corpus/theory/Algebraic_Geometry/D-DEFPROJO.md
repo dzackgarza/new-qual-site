@@ -33,5 +33,5 @@ A module is projective if and only if it is a direct summand of a free module.
 Over a local ring or a PID, projective modules are free; over $\ZZ/6$ the summand $\ZZ/2$ is projective and not free.
 $\mods{A}$ has enough projectives, since every module is a quotient of a free one; so the left derived functors of every right exact additive functor on $\mods{A}$, such as $\Tor$, are defined.
 
-For $X=\PP^1_k$, neither $\mods{\OO_X}$ nor the category of quasicoherent $\OO_X$-modules has enough projectives [@Har10a, Exercise III.6.2], whereas $\mods{\OO_X}$ has enough injectives on every ringed space [@Har10a, Proposition III.2.2].
+For $X=\PP^1_k$, neither $\mods{\OO_X}$ nor the category of quasicoherent $\OO_X$-modules has enough projectives [@Har77, Exercise III.6.2], whereas $\mods{\OO_X}$ has enough injectives on every ringed space [@Har77, Proposition III.2.2].
 :::

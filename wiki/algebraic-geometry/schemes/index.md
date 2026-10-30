@@ -13,7 +13,7 @@ This chapter covers $\Spec$ and $\Proj$, gluing, fibre products, and the propert
 
 ## Syllabus
 
-At the level of [@Har10a, Sections II.2–II.3].
+At the level of [@Har77, Sections II.2–II.3].
 
 - [[algebraic-geometry/schemes/ringed-spaces|Ringed spaces]], ringed and locally ringed spaces, their morphisms, and why a morphism of schemes is a morphism of locally ringed spaces.
 

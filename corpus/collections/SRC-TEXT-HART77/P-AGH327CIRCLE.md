@@ -97,7 +97,7 @@ $$
 \Gamma(X,\mcr)\longrightarrow\Gamma(X,\mathcal T)
 \longrightarrow H^1(X,\ZZ)\longrightarrow0
 $$
-[@Har10a, Chapter III, §§1 and 2].
+[@Har77, Chapter III, §§1 and 2].
 This proves the asserted cokernel description using the derived-functor definition.
 
 :::

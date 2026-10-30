@@ -62,7 +62,7 @@ For $M=A$, this recovers the [[D-SCHCMGOR|Cohen--Macaulay ring]] condition.
 ::: {.proposition title="Koszul coefficients"}
 If $x_1,\ldots,x_r$ is $M$-regular, the Koszul complex $K_\bullet(x_1,\ldots,x_r;M)$ has zero homology in positive degrees and degree-zero homology $M/(x_1,\ldots,x_r)M$.
 Its terms are finite direct sums of $M$.
-In particular, an $A$-regular sequence gives a finite free resolution $K_\bullet(x_1,\ldots,x_r;A)$ of $A/(x_1,\ldots,x_r)$ [@Har10a, Proposition III.7.10A].
+In particular, an $A$-regular sequence gives a finite free resolution $K_\bullet(x_1,\ldots,x_r;A)$ of $A/(x_1,\ldots,x_r)$ [@Har77, Proposition III.7.10A].
 For the module assertion, tensor the one-element Koszul complexes successively with $M$.
 At each step the mapping-cone homology sequence reduces positive homology to the kernel of the next element on the preceding quotient, which is zero by regularity; degree-zero homology is the next quotient.
 :::

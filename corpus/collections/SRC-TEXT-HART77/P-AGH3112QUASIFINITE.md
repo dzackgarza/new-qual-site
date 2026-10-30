@@ -68,7 +68,7 @@ $$
 ::: pf-proof
 
 Every fibre of $f$ is finite, hence has dimension $0$ when nonempty. Therefore
-the maximum fibre dimension in [@Har10a, Corollary III.11.2] is
+the maximum fibre dimension in [@Har77, Corollary III.11.2] is
 $$
 r=0.
 $$
@@ -102,7 +102,7 @@ $$
 \longrightarrow H^0(Y,R^1f_*\mci).
 $$
 Because $f$ is projective and $\mci$ is coherent, $f_*\mci$ is coherent by
-the coherence theorem for projective direct images [@Har10a, Theorem III.8.8].
+the coherence theorem for projective direct images [@Har77, Theorem III.8.8].
 Since $Y$ is affine,
 $$
 H^1(Y,f_*\mci)=0

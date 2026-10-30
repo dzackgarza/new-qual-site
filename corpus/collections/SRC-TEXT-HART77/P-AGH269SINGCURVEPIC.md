@@ -58,7 +58,7 @@ $$
 
 ::: {.solution}
 Put $K=K(X)=K(\tilde X)$, and write $\operatorname{CaDiv}(X)$ for the group of [[D-5PQ5W|Cartier divisors]].
-The [[D-5PQ5W|Cartier class group]] is $\Pic(X)$ because $X$ is integral [@Har10a, Proposition II.6.15].
+The [[D-5PQ5W|Cartier class group]] is $\Pic(X)$ because $X$ is integral [@Har77, Proposition II.6.15].
 In the sequences in part (b), $\GG_a$ and $\GG_m$ denote their groups of $k$-points, $(k,+)$ and $k^\times$.
 
 ::: pf
@@ -70,8 +70,8 @@ For a closed point $P$, the ring $B_P\coloneqq\tilde\OO_P$ is a finite semilocal
 
 ::: pf-proof
 
-The [[D-QJ5M9|normalization]] is finite and birational for varieties and preserves projectivity [@Har10a, Exercise II.3.8].
-A one-dimensional noetherian normal local domain is a DVR, so $\tilde X$ is nonsingular [@Har10a, Theorem I.6.2A].
+The [[D-QJ5M9|normalization]] is finite and birational for varieties and preserves projectivity [@Har77, Exercise II.3.8].
+A one-dimensional noetherian normal local domain is a DVR, so $\tilde X$ is nonsingular [@Har77, Theorem I.6.2A].
 On an affine open $\Spec A\subseteq X$, the finite module $\tilde A/A$ is torsion, since both rings have fraction field $K$.
 A nonzero element annihilates this module after clearing the denominators of finitely many generators.
 Thus its support is a proper closed subset of the curve and is finite.
@@ -226,8 +226,8 @@ These three cubic forms have no common zero: at a root of $q_2$ one has $s\ne0$ 
 They define a birational morphism $\PP^1\to X$.
 Its fibers away from $P$ contain a single point because projection is its inverse there; the fiber over $P$ is the finite set of roots of $q_2$.
 The morphism is projective, using its closed graph in $\PP^1\times X$.
-Its finite fibers therefore imply that it is finite [@Har10a, Exercise III.11.2].
-Its source is normal, so the finite birational map is the normalization [@Har10a, Exercise II.3.8].
+Its finite fibers therefore imply that it is finite [@Har77, Exercise III.11.2].
+Its source is normal, so the finite birational map is the normalization [@Har77, Exercise II.3.8].
 The points over $P$ are precisely the roots of $q$.
 
 On the chart $z=1$, put $t=y/x$ in $K=k(t)$.
@@ -297,7 +297,7 @@ The exact sequences in part (b) follow, with the right-hand map equal to $\deg\c
 
 ::: pf-proof
 
-By step [](#s6){.pf-ref}, $\tilde X\cong\PP_k^1$, whose Picard group is $\ZZ$ via degree [@Har10a, Proposition II.6.4 and Corollary II.6.16].
+By step [](#s6){.pf-ref}, $\tilde X\cong\PP_k^1$, whose Picard group is $\ZZ$ via degree [@Har77, Proposition II.6.4 and Corollary II.6.16].
 Only the unique singular point contributes to the direct sum in step [](#s5){.pf-ref}.
 Substituting the two groups from step [](#s7){.pf-ref} gives
 $$

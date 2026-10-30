@@ -68,7 +68,7 @@ Since
 $$
 H^1(\PP_k^1,\OO(2))=0
 $$
-[@Har10a, Theorem III.5.1], the set of first-order deformation classes has one
+[@Har77, Theorem III.5.1], the set of first-order deformation classes has one
 element, namely the trivial deformation.
 Thus $\PP_k^1$ is rigid.
 

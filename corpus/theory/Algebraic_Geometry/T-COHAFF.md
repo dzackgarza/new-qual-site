@@ -39,7 +39,7 @@ Let $\mcf$ be a quasicoherent sheaf on a scheme $X$.
 
 1. If $X$ is affine and $\mathfrak{U} = \{U_1, \ldots, U_r\}$ is a finite cover of $X$ by affine opens whose finite intersections are affine, the augmented Čech complex $0 \to \mcf(X) \to C^0(\mathfrak{U}, \mcf) \to C^1(\mathfrak{U}, \mcf) \to \cdots$ is exact; so $\check{H}^i(\mathfrak{U}, \mcf) = 0$ for $i > 0$.
 
-2. If $X$ is quasicompact and separated, any two finite affine covers $\mathfrak{U}$, $\mathfrak{V}$ give the same Čech cohomology: $\check{H}^i(\mathfrak{U}, \mcf) \cong \check{H}^i(\mathfrak{V}, \mcf)$; for $X$ Noetherian both equal $H^i(X, \mcf)$ [@Har10a, Theorem III.4.5].
+2. If $X$ is quasicompact and separated, any two finite affine covers $\mathfrak{U}$, $\mathfrak{V}$ give the same Čech cohomology: $\check{H}^i(\mathfrak{U}, \mcf) \cong \check{H}^i(\mathfrak{V}, \mcf)$; for $X$ Noetherian both equal $H^i(X, \mcf)$ [@Har77, Theorem III.4.5].
 :::
 
 ::: {.remark title="Hypotheses"}

@@ -30,7 +30,7 @@ Each of the following properties of morphisms of schemes is preserved by arbitra
 - separated, proper, and projective;
 - smooth, unramified, and étale.
 
-[@Har10a, Chapters II.3--4 and III.10]
+[@Har77, Chapters II.3--4 and III.10]
 :::
 
 ::: {.remark}

@@ -53,10 +53,10 @@ $$
 
 The scheme $X$ is noetherian, and $\mce$ is locally free and coherent of rank one.
 In the quotient convention, the projection $\PP(\mce)\to X$ is an isomorphism: on every framed open its symmetric algebra is the polynomial algebra in one degree-one variable, whose Proj is that open.
-The tautological quotient then identifies $\OO_{\PP(\mce)}(1)$ with $\mce$ [@Har10a, Proposition II.7.12], as constructed in [[P-AGH278SECTIONSPE]].
+The tautological quotient then identifies $\OO_{\PP(\mce)}(1)$ with $\mce$ [@Har77, Proposition II.7.12], as constructed in [[P-AGH278SECTIONSPE]].
 
 If this sheaf were very ample relative to $X$, the coordinate sections from a witnessing immersion into some $\PP_X^N$ would pull back to finitely many global sections generating $\OO_X(-1)$.
-But $\Gamma(\PP_k^1,\OO(-1))=0$ [@Har10a, Proposition II.5.13].
+But $\Gamma(\PP_k^1,\OO(-1))=0$ [@Har77, Proposition II.5.13].
 This contradicts generation of a nonzero invertible sheaf and proves (a).
 
 :::
@@ -90,7 +90,7 @@ a_i=s_i^{h/d_i},\qquad
 c_{ij}=t_{ij}s_i^{h/d_i-q_{ij}}
 $$
 of $\mcl^h$ have ratios $c_{ij}/a_i=b_{ij}$ on $W_i$.
-The $a_i$ have no common zero, so this finite list generates $\mcl^h$ and defines a $Y$-morphism $i:X\to\PP_Y^N$ with $i^*\OO(1)\cong\mcl^h$ [@Har10a, Theorem II.7.1].
+The $a_i$ have no common zero, so this finite list generates $\mcl^h$ and defines a $Y$-morphism $i:X\to\PP_Y^N$ with $i^*\OO(1)\cong\mcl^h$ [@Har77, Theorem II.7.1].
 
 The inverse image of the target affine chart over $V_i$ where the coordinate for $a_i$ is nonzero is exactly $W_i$.
 Its coordinate-ring map onto $B_i$ is surjective, because its coordinate ratios include every $b_{ij}$.
@@ -126,7 +126,7 @@ The factors cancel in every degree-zero homogeneous fraction, so the induced Pro
 For the twisting sheaf, a homogeneous local fraction has numerator degree one greater than its denominator degree.
 Its change of frame retains the factor $u^a$, exactly the transition factor of $\pi^*\mcl^a$.
 Thus the twisting sheaves glue with the displayed extra tensor factor.
-This proves both assertions, which are the graded twist of [@Har10a, Lemma II.7.9].
+This proves both assertions, which are the graded twist of [@Har77, Lemma II.7.9].
 
 :::
 
@@ -151,7 +151,7 @@ $$
 $$
 On every affine open of $X$ it gives a closed immersion of Proj schemes; these closed immersions and their coordinate sections glue.
 The result is $j_a$ with twisting sheaf $N_a$ by step [](#s3){.pf-ref}.
-This is the construction underlying [@Har10a, Proposition II.7.10].
+This is the construction underlying [@Har77, Proposition II.7.10].
 
 :::
 

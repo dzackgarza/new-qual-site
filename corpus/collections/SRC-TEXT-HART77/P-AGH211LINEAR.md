@@ -68,7 +68,7 @@ $$
 Choose a basis of $W$ and extend it to one of $V$.
 In the dual coordinates $y_0,\ldots,y_n$, the subspace $W$ is given by $y_{r+1}=\cdots=y_n=0$.
 The same linear coordinate change defines a projective automorphism; it and its inverse are regular on the standard affine charts by their coordinate-ratio formulas.
-Consequently $\PP(W)$ is identified with the coordinate copy of $\PP^r$ and has dimension $r$ [@Har10a, Chapter I, §2].
+Consequently $\PP(W)$ is identified with the coordinate copy of $\PP^r$ and has dimension $r$ [@Har77, Chapter I, §2].
 
 The ideal $J=(y_{r+1},\ldots,y_n)$ is prime, since its quotient is the polynomial ring $k[y_0,\ldots,y_r]$.
 Its projective zero set is nonempty and equals $\PP(W)$.

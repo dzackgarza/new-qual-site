@@ -49,7 +49,7 @@ If $\varphi(x)=r$, then $x$ has an affine neighborhood $U$ and a surjection $\OO
 
 ::: pf-proof
 
-Take an affine neighborhood $V=\Spec A$ of $x$ with $\mcf\restrict_V\cong\widetilde M$, where $M$ is a finite $A$-module [@Har10a, Proposition II.5.4].
+Take an affine neighborhood $V=\Spec A$ of $x$ with $\mcf\restrict_V\cong\widetilde M$, where $M$ is a finite $A$-module [@Har77, Proposition II.5.4].
 Let $\mathfrak p$ correspond to $x$.
 Choose elements $m_1,\ldots,m_r\in M$ whose images form a basis of $M_{\mathfrak p}/\mathfrak pM_{\mathfrak p}$: each basis vector can be represented by a fraction from $M$, and multiplication by its nonzero denominator only rescales that basis vector.
 By [[T-DEFNAKA|Nakayama's lemma]], their images generate $M_{\mathfrak p}$.
@@ -121,7 +121,7 @@ is surjective between vector spaces of the same finite dimension $r$, hence is a
 Let $(b_1,\ldots,b_r)\in\ker u$.
 Its image in $k(\mathfrak q)^r$ maps to zero under this isomorphism, so every $b_i$ has zero image in $k(\mathfrak q)$.
 The kernel of $B\to k(\mathfrak q)$ is $\mathfrak q$, and therefore $b_i\in\mathfrak q$ for every prime $\mathfrak q$.
-The intersection of all prime ideals is the nilradical, which is zero in the reduced ring $B$ [@Har10a, Chapter II, §2].
+The intersection of all prime ideals is the nilradical, which is zero in the reduced ring $B$ [@Har77, Chapter II, §2].
 Thus every $b_i$ is zero and $u$ is injective.
 It follows that $u$ is an isomorphism and $\mcf\restrict_U\cong\OO_U^r$.
 The construction applies at each point, giving local freeness.

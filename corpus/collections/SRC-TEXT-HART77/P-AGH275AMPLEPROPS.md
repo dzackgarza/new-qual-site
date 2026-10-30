@@ -131,7 +131,7 @@ In part (d), the graph of the morphism defined by $\mcm$, followed by a Segre im
 Choose an $A$-immersion $i:X\to\PP_A^r$ with $i^*\OO(1)\cong\mcl$.
 Because $\mcm$ is [[D-MODGG|globally generated]], the open sets where one global section generates it cover $X$.
 Quasi-compactness supplies a finite subcover, so finitely many global sections $t_0,\ldots,t_s$ generate $\mcm$.
-They define an $A$-morphism $g:X\to\PP_A^s$ with $g^*\OO(1)\cong\mcm$ [@Har10a, Theorem II.7.1].
+They define an $A$-morphism $g:X\to\PP_A^s$ with $g^*\OO(1)\cong\mcm$ [@Har77, Theorem II.7.1].
 
 The morphism $(i,g):X\to\PP_A^r\times_A\PP_A^s$ factors as
 $$
@@ -150,7 +150,7 @@ The Segre coordinates are the pairwise products of the coordinates of the two fa
 $$
 \sigma^*\OO(1)\cong\operatorname{pr}_1^*\OO(1)\otimes\operatorname{pr}_2^*\OO(1)
 $$
-[@Har10a, Exercise II.5.11].
+[@Har77, Exercise II.5.11].
 The resulting immersion $h=\sigma\circ(i,g)$ satisfies
 $$
 h^*\OO(1)\cong i^*\OO(1)\otimes g^*\OO(1)\cong\mcl\otimes\mcm.
@@ -167,7 +167,7 @@ Part (e) holds for $n_0=h+b$, where $h>0$ has $\mcl^h$ very ample and $b\ge0$ ha
 
 ::: pf-proof
 
-The integer $h$ exists by [@Har10a, Theorem II.7.6], since $X$ is of finite type over the noetherian ring $A$.
+The integer $h$ exists by [@Har77, Theorem II.7.6], since $X$ is of finite type over the noetherian ring $A$.
 The integer $b$ exists by applying the ample definition to $\OO_X$.
 For every $n\ge h+b$, the factor $\mcl^{n-h}$ is globally generated.
 Part (d), proved in step [](#s5){.pf-ref}, shows that

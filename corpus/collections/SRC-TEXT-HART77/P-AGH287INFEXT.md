@@ -85,7 +85,7 @@ The extension gives an exact sequence of sheaves of abelian groups
 $$
 0\longrightarrow\mcf\longrightarrow\OO_{X'}\xrightarrow{\rho}\OO_X\longrightarrow0.
 $$
-The group $H^1(X,\mcf)$ vanishes by [[T-COHAFF|affine vanishing]] [@Har10a, Theorem III.3.5].
+The group $H^1(X,\mcf)$ vanishes by [[T-COHAFF|affine vanishing]] [@Har77, Theorem III.3.5].
 The long exact sequence therefore gives a surjective ring homomorphism
 $$
 B'\coloneqq\Gamma(X,\OO_{X'})\twoheadrightarrow A,

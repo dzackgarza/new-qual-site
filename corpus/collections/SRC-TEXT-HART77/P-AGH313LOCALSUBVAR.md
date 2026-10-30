@@ -150,7 +150,7 @@ The prime ideals of $A_{\mathfrak p}$ correspond to the prime ideals of $A$ cont
 $$
 \dim A_{\mathfrak p}=\operatorname{ht}\mathfrak p.
 $$
-For the finitely generated $k$-domain $A$, the affine dimension formula [@Har10a, Chapter I, §1] gives
+For the finitely generated $k$-domain $A$, the affine dimension formula [@Har77, Chapter I, §1] gives
 $$
 \operatorname{ht}\mathfrak p+\dim(A/\mathfrak p)=\dim A.
 $$

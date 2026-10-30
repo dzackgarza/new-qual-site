@@ -57,7 +57,7 @@ The same holds for the skyscraper sheaf at the origin of $\AA^1_k = \Spec k[x]$ 
 :::
 
 ::: {.remark}
-If $\mcf$ is quasicoherent, then $\mcf\restrict_U\cong\widetilde{\mcf(U)}$ for every affine open $U\subseteq X$, not only for the members of one cover [@Har10a, Proposition II.5.4].
+If $\mcf$ is quasicoherent, then $\mcf\restrict_U\cong\widetilde{\mcf(U)}$ for every affine open $U\subseteq X$, not only for the members of one cover [@Har77, Proposition II.5.4].
 Quasicoherent sheaves on an affine scheme have vanishing higher cohomology.
 
 The practical test is local and needs no module in hand: $\mcf$ is quasicoherent exactly when every point has an affine neighbourhood on which $\mcf$ has a presentation

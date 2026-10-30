@@ -96,7 +96,7 @@ Its nilpotent ideal has quotient $X$, so their underlying spaces agree and $\dim
 For a valuation ring $R$ over $k$ with fraction field $K$, a morphism $\Spec K\to X'$ factors through $X$ because every nilpotent section maps to zero in the field.
 Properness of $X$ gives a unique extension to $\Spec R\to X$, hence to $X'$.
 Every extension to $X'$ must itself factor through $X$, since $R$ is reduced, so uniqueness holds for $X'$ as well.
-The valuative criterion, applied to the finite-type morphism $X'\to\Spec k$, proves properness [@Har10a, Theorem II.4.7].
+The valuative criterion, applied to the finite-type morphism $X'\to\Spec k$, proves properness [@Har77, Theorem II.4.7].
 :::
 
 :::
@@ -135,11 +135,11 @@ Dividing the last expression by $g_{12}=v/u$ gives $\eta/(uv)$, proving the clai
 The class in step [](#s4){.pf-ref} is nonzero and generates the one-dimensional $k$-space $H^2(X,\omega)$.
 
 ::: pf-proof
-The canonical-sheaf computation gives $\omega\cong\OO_X(-3)$ [@Har10a, Example II.8.20.1].
+The canonical-sheaf computation gives $\omega\cong\OO_X(-3)$ [@Har77, Example II.8.20.1].
 Normalize this isomorphism so that the local frame $\eta$ on $U_0$ corresponds to $x_0^{-3}$.
 Then $\eta/(uv)$ corresponds to the degree-$-3$ homogeneous fraction $1/(x_0x_1x_2)$.
 
-The standard three-affine cover computes the cohomology by [@Har10a, Theorem III.4.5].
+The standard three-affine cover computes the cohomology by [@Har77, Theorem III.4.5].
 Its top cohomology for $\OO(-3)$ is the degree-$-3$ part of the Laurent polynomial ring $k[x_0^{\pm1},x_1^{\pm1},x_2^{\pm1}]$, modulo the sum of the three subrings in which only two variables are inverted.
 The denominator is spanned by the monomials having at least one nonnegative exponent.
 Among degree-$-3$ monomials, exactly one has all three exponents negative: $x_0^{-1}x_1^{-1}x_2^{-1}$.
@@ -153,10 +153,10 @@ The asserted nonvanishing and dimension follow.
 One has $\Pic X'=0$, and $X'$ has no ample invertible sheaf.
 
 ::: pf-proof
-The group $\Pic X$ is $\ZZ$ with generator $[\OO(1)]$ [@Har10a, Proposition II.6.4 and Corollary II.6.16].
+The group $\Pic X$ is $\ZZ$ with generator $[\OO(1)]$ [@Har77, Proposition II.6.4 and Corollary II.6.16].
 The map $\delta$ is a group homomorphism, so step [](#s5){.pf-ref} sends its integer $n$ to $n$ times a nonzero vector of the one-dimensional additive $k$-space.
 Characteristic zero makes this map injective.
-Furthermore, $H^1(X,\omega)=H^1(\PP^2,\OO(-3))=0$ by [@Har10a, Theorem III.5.1].
+Furthermore, $H^1(X,\omega)=H^1(\PP^2,\OO(-3))=0$ by [@Har77, Theorem III.5.1].
 The exact Picard sequence in the statement now makes $\Pic X'$ inject into $\Pic X$ with image $\ker\delta=0$.
 Hence every invertible sheaf on $X'$ is trivial.
 
@@ -188,13 +188,13 @@ This is the Hodge cup product $c_1(D)\cup c_1(E)$ with the total-complex sign co
 The top-degree Hodge--de Rham comparison and the [cycle-class degree formula](https://stacks.math.columbia.edu/tag/0FWC) identify its trace with the intersection number $(D.E)\in k$.
 For the top-degree comparison, the Hodge--de Rham spectral sequence has only $H^2(S,\omega_S)$ in total degree four, since the surface has no differential forms or coherent cohomology above degree two.
 Its edge map onto $H^4_{\mathrm{dR}}(S/k)$ is therefore surjective.
-Both spaces are one-dimensional, by Serre duality [@Har10a, Theorem III.7.6] and the de Rham Weil-cohomology theorem cited in the degree formula, so this edge map is an isomorphism.
+Both spaces are one-dimensional, by Serre duality [@Har77, Theorem III.7.6] and the de Rham Weil-cohomology theorem cited in the degree formula, so this edge map is an isomorphism.
 The trace is normalized to give degree on zero-cycle classes.
 Thus, with this identification $H^2(S,\omega_S)\cong k$,
 $$
 \delta([\OO_S(E)])=(D.E).
 $$
-For ample $E$ this is a positive integer, hence is nonzero in characteristic zero [@Har10a, Chapter V, §1].
+For ample $E$ this is a positive integer, hence is nonzero in characteristic zero [@Har77, Chapter V, §1].
 No ample sheaf on $S$ can therefore lift to the extension, and restriction of an ample sheaf would be ample.
 The extension has no ample invertible sheaf and is not projective; it is proper by the valuation-ring argument in step [](#s3){.pf-ref}.
 The specified cocycle for $\PP^2$ in the problem is the negative of this logarithmic $c_1(\OO(1))$ convention; it changes the sign of the obstruction, not its kernel or the nonprojectivity conclusion.
@@ -209,6 +209,6 @@ The ideals $N^j/N^{j+1}$ have square zero, and their cohomology groups are kille
 The Picard sequence in [[P-AGH346SQUAREZEROPIC]] consequently shows that the $p$th tensor power of every invertible sheaf on $Z_j$ lifts to $Z_{j+1}$: its obstruction is $p$ times a class in $H^2(N^j/N^{j+1})$ and is zero.
 Starting with an ample invertible sheaf on $Z_1=Z_{\mathrm{red}}$ and iterating gives a lift to $Z_e=Z$ of its $p^{e-1}$st power.
 This lift is ample by [[P-AGH357AMPLENESS]], part (b), since its restriction to the reduction is ample.
-Properness and an ample sheaf imply projectivity [@Har10a, Theorem II.7.6 and Remark II.5.16.1].
+Properness and an ample sheaf imply projectivity [@Har77, Theorem II.7.6 and Remark II.5.16.1].
 This proves the positive-characteristic assertion without a smoothness hypothesis on the reduction.
 :::

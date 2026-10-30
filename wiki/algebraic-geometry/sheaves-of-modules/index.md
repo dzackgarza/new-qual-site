@@ -16,7 +16,7 @@ Natural sheaves such as the sheaf of differentials are tested for quasicoherence
 
 ## Syllabus
 
-At the level of [@Har10a, Sections II.5, II.8].
+At the level of [@Har77, Sections II.5, II.8].
 
 - [[algebraic-geometry/sheaves-of-modules/quasicoherence|Quasicoherent and coherent sheaves]], $\OO_X$-modules, the sheaf $\widetilde M$ associated to a module, the local test for quasicoherence, and coherent sheaves.
 

@@ -156,7 +156,7 @@ The conormal sequence in (c) is split exact, and applying $\Hom_A(-,I)$ gives th
 ::: pf-proof
 
 The quotient $P\to A$ gives a closed immersion of the nonsingular affine variety $\Spec A$ into the nonsingular affine space $\Spec P$.
-The exact conormal sequence of [@Har10a, Theorem II.8.17] is
+The exact conormal sequence of [@Har77, Theorem II.8.17] is
 $$
 0\longrightarrow J/J^2\xrightarrow{\delta}
 \Omega_{P/k}\otimes_P A\longrightarrow\Omega_{A/k}\longrightarrow0,

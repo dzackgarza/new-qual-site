@@ -57,7 +57,7 @@ $$
 0\longrightarrow\Omega_{X/k}^1\longrightarrow E
 \xrightarrow{e}\OO_X\longrightarrow0
 $$
-[@Har10a, Theorem II.8.13].
+[@Har77, Theorem II.8.13].
 It splits locally because its quotient is locally free.
 Contraction by $e$ defines a map $\bigwedge^pE\to\bigwedge^{p-1}E$.
 Locally write $E=\Omega^1\oplus\OO\sigma$ with $e(\sigma)=1$.
@@ -80,7 +80,7 @@ $$
 
 ::: pf-proof
 
-For $1\le p\le n$, every cohomology group of $\OO_X(-p)$ vanishes by [[T-IJW1K]] [@Har10a, Theorem III.5.1].
+For $1\le p\le n$, every cohomology group of $\OO_X(-p)$ vanishes by [[T-IJW1K]] [@Har77, Theorem III.5.1].
 Its degree-zero group vanishes because the twist is negative, its intermediate groups always vanish, and its top-degree group vanishes because $-p>-n-1$.
 Groups above degree $n$ vanish as well.
 Thus the middle term of step [](#s1){.pf-ref} has zero cohomology in all degrees.
@@ -143,7 +143,7 @@ Thus $\gamma_p$ is represented by
 $$
 d\log(x_{i_1}/x_{i_0})\wedge\cdots\wedge d\log(x_{i_p}/x_{i_0}).
 $$
-The affine cover and its intersections are affine, so these Čech classes compute the stated sheaf cohomology [@Har10a, Theorem III.4.5].
+The affine cover and its intersections are affine, so these Čech classes compute the stated sheaf cohomology [@Har77, Theorem III.4.5].
 In particular, the calculation uses no characteristic-zero or analytic comparison theorem.
 
 :::

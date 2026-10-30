@@ -58,7 +58,7 @@ On the affine line, rank gives $\boxed{K(\AA_k^1)\cong\ZZ}$, with inverse $n\map
 
 ::: pf-proof
 
-Coherent sheaves on $\Spec k[t]$ correspond exactly to finite $k[t]$-modules, and this correspondence is exact [@Har10a, Proposition II.5.4].
+Coherent sheaves on $\Spec k[t]$ correspond exactly to finite $k[t]$-modules, and this correspondence is exact [@Har77, Proposition II.5.4].
 The structure theorem over the PID $R=k[t]$ writes every such module as
 $$
 M\cong R^r\oplus\bigoplus_{i=1}^sR/(f_i),\qquad f_i\ne0.

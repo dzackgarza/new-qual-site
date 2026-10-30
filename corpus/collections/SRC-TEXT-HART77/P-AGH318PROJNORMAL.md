@@ -90,7 +90,7 @@ has coordinate ring
 $$
 A(Y_i)=(S_{x_i})_0
 $$
-[@Har10a, Theorem I.3.4(b)].
+[@Har77, Theorem I.3.4(b)].
 By step [](#s1){.pf-ref} this ring is integrally closed.
 The affine normality criterion from [[P-AGH317NORMAL]] therefore makes every $Y_i$ normal.
 These standard opens cover $Y$, so every local ring of $Y$ is integrally closed and $Y$ is normal.

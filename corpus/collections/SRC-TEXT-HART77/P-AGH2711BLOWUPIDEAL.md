@@ -59,7 +59,7 @@ $$
 =\mathcal R(\mathcal I)^{(d)},
 $$
 with the degrees divided by $d$.
-Relative Proj is unchanged by this operation [@Har10a, Exercise II.5.13].
+Relative Proj is unchanged by this operation [@Har77, Exercise II.5.13].
 
 The local isomorphisms can be checked without assumptions on zero divisors.
 On an affine open, let $R$ be the Rees algebra and let $f$ be a degree-one generator.
@@ -111,7 +111,7 @@ On the regular integral scheme in (c), the double dual $\mathcal J=\mathcal I_0^
 Duals are taken with respect to $\OO_X$.
 The sheaves in question are coherent, and taking their duals commutes with localization because their modules are finitely presented on noetherian affine opens.
 Fix a point $x$, put $R=\OO_{X,x}$ and $K=\operatorname{Frac}R$, and write $I=(\mathcal I_0)_x$.
-The ring $R$ is a UFD because it is regular [@Har10a, Remark II.6.11.1A].
+The ring $R$ is a UFD because it is regular [@Har77, Remark II.6.11.1A].
 The ideal $I$ is nonzero, and its finite generating list has a greatest common divisor $g\ne0$, defined up to a unit.
 
 Every $R$-linear map $I\to R$ is multiplication by an element of $K$.

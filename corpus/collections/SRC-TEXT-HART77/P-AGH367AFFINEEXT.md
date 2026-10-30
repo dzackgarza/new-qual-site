@@ -38,7 +38,7 @@ $$
 ::: {.solution}
 Take a finite-free $A$-module resolution $P_\bullet\to M$ and an injective resolution $\widetilde N\to I^\bullet$ in $\Mod(X)$.
 The first resolution exists because $M$ is finite and $A$ is noetherian, as in [[P-AGH363EXTCOHERENT]], step 1.
-The second exists by [@Har10a, Proposition III.2.2].
+The second exists by [@Har77, Proposition III.2.2].
 Write $L_p=\widetilde P_p$ and $b_p=\operatorname{rank}_A P_p$.
 
 ::: pf
@@ -48,7 +48,7 @@ The sheaf-Ext comparison in the statement holds.
 
 ::: pf-proof
 The sheafified resolution $L_\bullet\to\widetilde M$ is exact and has finite-rank free terms.
-It computes sheaf Ext by [@Har10a, Proposition III.6.5].
+It computes sheaf Ext by [@Har77, Proposition III.6.5].
 The natural identifications
 $$
 \sheafhom_X(L_p,\widetilde N)
@@ -105,9 +105,9 @@ For a fixed $p$, the vertical column is
 $$
 \Hom_X(L_p,I^\bullet)=\Gamma(X,I^\bullet)^{\oplus b_p}.
 $$
-Injective module sheaves are flasque, hence acyclic for global sections [@Har10a, Lemma III.2.4 and Proposition III.2.5].
+Injective module sheaves are flasque, hence acyclic for global sections [@Har77, Lemma III.2.4 and Proposition III.2.5].
 Its degree-$q$ cohomology is therefore $H^q(X,\widetilde N)^{\oplus b_p}$.
-By [[T-COHAFF|affine vanishing]] [@Har10a, Theorem III.3.5], this is zero for $q>0$.
+By [[T-COHAFF|affine vanishing]] [@Har77, Theorem III.3.5], this is zero for $q>0$.
 In degree zero it is
 $$
 \Hom_X(L_p,\widetilde N)\cong\Hom_A(P_p,N).
@@ -126,7 +126,7 @@ This comparison is induced by $\widetilde N\to I^\bullet$.
 ::: pf-qed
 Step [](#s1){.pf-ref} proves the sheaf formula, and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} identify global sheaf Ext with module Ext.
 All comparison maps arise from the augmentations and the natural Hom identifications.
-Maps of modules lift to comparison maps of their resolutions, uniquely up to chain homotopy [@Har10a, Chapter III, §1].
+Maps of modules lift to comparison maps of their resolutions, uniquely up to chain homotopy [@Har77, Chapter III, §1].
 Those comparison maps commute with these constructions, and homotopic choices induce the same maps on cohomology.
 Thus the isomorphisms are natural in $M$ and $N$ and independent of the chosen resolutions.
 :::

@@ -133,7 +133,7 @@ $$
 \longrightarrow\mathcal F(-a-1)
 \longrightarrow0.
 $$
-The projective-line cohomology calculation [@Har10a, Theorem III.5.1] gives
+The projective-line cohomology calculation [@Har77, Theorem III.5.1] gives
 $$
 H^1(\PP^1,\OO(-1))=0.
 $$

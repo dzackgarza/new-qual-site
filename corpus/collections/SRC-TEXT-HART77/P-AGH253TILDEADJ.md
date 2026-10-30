@@ -31,7 +31,7 @@ $$
 :::
 
 ::: {.solution}
-Use the canonical identifications $\widetilde M(D(f))\cong M_f$ and $\Gamma(X,\widetilde M)\cong M$ [@Har10a, Proposition II.5.1].
+Use the canonical identifications $\widetilde M(D(f))\cong M_f$ and $\Gamma(X,\widetilde M)\cong M$ [@Har77, Proposition II.5.1].
 For $f\in A$, write $r_f:\mcf(X)\to\mcf(D(f))$ for restriction.
 
 ::: pf

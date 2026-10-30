@@ -189,7 +189,7 @@ That result makes this map an isomorphism for all sufficiently large $n$, provin
 For every sufficiently large $d>0$, the ring $S^{(d)}$ is normal and is the homogeneous coordinate ring of the $d$-uple embedding, proving part (c).
 
 ::: pf-proof
-The ring $\Gamma(X,\OO_X)$ is a finite-dimensional $k$-vector space by [[T-COHFIN|finiteness of coherent cohomology]] [@Har10a, Theorem III.5.2].
+The ring $\Gamma(X,\OO_X)$ is a finite-dimensional $k$-vector space by [[T-COHFIN|finiteness of coherent cohomology]] [@Har77, Theorem III.5.2].
 It is a domain by step [](#s2){.pf-ref}, so multiplication by a nonzero element is an injective endomorphism of a finite-dimensional vector space, hence surjective.
 Thus it is a field finite over the algebraically closed field $k$, and equals $k$.
 Therefore $S_0=S'_0=k$.
@@ -278,7 +278,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref}
 :::
 
 ::: {.remark title="Errata and the degree-zero exception"}
-The source part (d) states only normality and the restriction-map surjections, over an arbitrary ring $A$ [@Har10a, Exercise II.5.14(d)].
+The source part (d) states only normality and the restriction-map surjections, over an arbitrary ring $A$ [@Har77, Exercise II.5.14(d)].
 For a field $k$, take $A=k\times k$ and $X=\PP_A^1$.
 Then $X$ is the disjoint union of two normal projective lines, and every restriction map is the identity.
 Its homogeneous coordinate ring $A[x_0,x_1]$ is not a domain: the nonzero elements $(1,0)$ and $(0,1)$ have product zero.

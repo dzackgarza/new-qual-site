@@ -27,7 +27,7 @@ For a scheme $X$ projective over a field $k$ and a coherent sheaf $\mcf$, its \d
 $$
 \chi(X,\mcf)\coloneqq\sum_{i\ge0}(-1)^i\dim_kH^i(X,\mcf).
 $$
-The sum is finite and its terms are finite by cohomological vanishing and finiteness [@Har10a, Theorems III.2.7 and III.5.2].
+The sum is finite and its terms are finite by cohomological vanishing and finiteness [@Har77, Theorems III.2.7 and III.5.2].
 Write $\chi(\mcf)$ when the scheme is fixed.
 :::
 
@@ -37,7 +37,7 @@ The \dfn{Hilbert polynomial} of $\mcf$ with respect to $L$ is the unique $P_{\mc
 $$
 P_{\mcf,L}(n)=\chi(X,\mcf(n))\qquad(n\in\ZZ)
 $$
-[@Har10a, Exercise III.5.2].
+[@Har77, Exercise III.5.2].
 It depends on the chosen twisting sheaf; its value at zero is the intrinsic Euler characteristic $\chi(X,\mcf)$.
 :::
 
@@ -52,7 +52,7 @@ For every integer $m\geq1$, its \dfn{$m$-th plurigenus} is
 $$
 P_m(X)\coloneqq h^0(X,\omega_X^{\otimes m}).
 $$
-[@Har10a, §II.8, Exercise III.5.3]
+[@Har77, §II.8, Exercise III.5.3]
 :::
 
 ::: {.example}
@@ -68,6 +68,6 @@ This follows by taking the alternating sum of the dimensions in the finite long 
 :::
 
 ::: {.remark}
-For sufficiently large $n$, Serre vanishing gives $P_{\mcf,L}(n)=h^0(X,\mcf\tensor_{\OO_X}L\tensorpower{\OO_X}{n})$ [@Har10a, Theorem III.5.2].
+For sufficiently large $n$, Serre vanishing gives $P_{\mcf,L}(n)=h^0(X,\mcf\tensor_{\OO_X}L\tensorpower{\OO_X}{n})$ [@Har77, Theorem III.5.2].
 The Euler-characteristic identity holds for every integer $n$; equality with the dimension of global sections is the eventual assertion.
 :::

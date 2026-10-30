@@ -27,7 +27,7 @@ Then
 $$
 I(V(J)) = \sqrt{J} .
 $$
-[@Har10a, Theorem I.1.3A]
+[@Har77, Theorem I.1.3A]
 :::
 
 ::: {.theorem title="Zariski's lemma and the weak Nullstellensatz"}

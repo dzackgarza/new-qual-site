@@ -154,7 +154,7 @@ The supported cohomology groups are naturally isomorphic in every degree.
 ::: pf-proof
 
 Choose an injective resolution $\mcf\to I^\bullet$ on $X$.
-Its terms are flasque [@Har10a, Lemma III.2.4].
+Its terms are flasque [@Har77, Lemma III.2.4].
 Inverse image of abelian sheaves is exact, as follows from its stalk formula $(j^{-1}A)_x=A_x$ for $x\in S$ and stalkwise exactness.
 Thus $j^{-1}I^\bullet$ resolves $\mcf_P$.
 By step [](#s3){.pf-ref} all its terms are flasque, and hence acyclic for sections supported at $P$ by [[P-AGH323SUPPORTS]], part (c).
@@ -170,7 +170,7 @@ Taking cohomology gives
 $$
 \boxed{H_P^i(X,\mcf)\xrightarrow{\cong}H_P^i(X_P,\mcf_P)\qquad(i\ge0).}
 $$
-Naturality follows from the natural maps on sections and comparison of resolutions [@Har10a, Chapter III, §1].
+Naturality follows from the natural maps on sections and comparison of resolutions [@Har77, Chapter III, §1].
 
 :::
 

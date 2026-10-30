@@ -124,7 +124,7 @@ $$
 \Gamma(V,\OO_V)\to\Gamma(V\setminus\{P\},\OO_V)
 \to H_P^1(V,\OO_V)\to H^1(V,\OO_V).
 $$
-The first arrow is surjective, and the last term is zero by [[T-COHAFF|affine vanishing]] [@Har10a, Theorem III.3.5].
+The first arrow is surjective, and the last term is zero by [[T-COHAFF|affine vanishing]] [@Har77, Theorem III.3.5].
 Hence $H_P^1(V,\OO_V)=0$ as well.
 Step [](#s2){.pf-ref} gives $H_{\mathfrak m}^0(R)=H_{\mathfrak m}^1(R)=0$.
 The converse in [[P-AGH334DEPTHCOH]], part (b), now yields $\depth R\ge2$.

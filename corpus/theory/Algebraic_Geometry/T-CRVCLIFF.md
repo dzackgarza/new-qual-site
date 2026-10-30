@@ -31,7 +31,7 @@ $$
 $$
 equivalently $\dim \abs{D} \leq \tfrac{1}{2}\deg D$.
 Equality holds exactly when $D = 0$, or $D = K$, or $C$ is hyperelliptic and $D$ is a multiple of its unique $g^1_2$.
-[@Har10a, Theorem IV.5.4]
+[@Har77, Theorem IV.5.4]
 :::
 
 ::: {.remark}

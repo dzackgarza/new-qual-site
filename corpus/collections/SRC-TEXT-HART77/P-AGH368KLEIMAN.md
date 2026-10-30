@@ -76,7 +76,7 @@ $$
 D=(f)_\infty=\sum_H\max\{0,-v_H(f)\}H,
 $$
 where $H$ ranges over prime divisors.
-This is a finite effective Weil divisor [@Har10a, Lemma II.6.1], and is an effective Cartier divisor because $X$ is locally factorial [@Har10a, Proposition II.6.11].
+This is a finite effective Weil divisor [@Har77, Lemma II.6.1], and is an effective Cartier divisor because $X$ is locally factorial [@Har77, Proposition II.6.11].
 
 No component of $D$ contains $x$: at a height-one point generalizing $x$, the regular germ $f\in\OO_{X,x}$ remains regular after localization and has nonnegative valuation.
 On the other hand, $z$ belongs to $\supp D$.
@@ -125,7 +125,7 @@ By step [](#s3){.pf-ref}, choose $W_x=X_{s_x}\subseteq U_x$ containing $x$, with
 Quasi-compactness of $X$ gives a finite cover by such opens, which we label $W_i=X_{s_i}$ for $1\le i\le t$.
 Let $a_{ij}\in\Gamma(W_i,F)$ be the restrictions of the finite generating families just chosen.
 
-By the section-extension lemma [@Har10a, Lemma II.5.14], for each pair $(i,j)$ there are $m_{ij}\ge0$ and
+By the section-extension lemma [@Har77, Lemma II.5.14], for each pair $(i,j)$ there are $m_{ij}\ge0$ and
 $$
 b_{ij}\in\Gamma(X,F\otimes L_i^{\otimes m_{ij}})
 \quad\text{with}\quad

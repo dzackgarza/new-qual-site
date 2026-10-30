@@ -16,7 +16,7 @@ Reducedness is needed: on $X=\Spec k[x,\varepsilon]/(\varepsilon^2,x\varepsilon)
 
 ## Syllabus
 
-At the level of [@Har10a, Sections II.3–II.4, II.7, III.9–III.11].
+At the level of [@Har77, Sections II.3–II.4, II.7, III.9–III.11].
 
 - [[algebraic-geometry/morphisms/classes-of-morphism|Classes of morphism]], finite-type and finite morphisms, open and closed immersions, the affine and finite and projective chain, and what survives base change.
 

@@ -31,7 +31,7 @@ Let $X$ be an integral Noetherian scheme with function field $K$ and let $t\in K
 $$
 \operatorname{div}_X(t)=\sum_Y v_Y(t)Y
 $$
-has finite support and hence is a Weil divisor [@Har10a, Lemma II.6.1]. The terms with $v_Y(t)>0$ are the zeros of $t$ and those with $v_Y(t)<0$ are its poles.
+has finite support and hence is a Weil divisor [@Har77, Lemma II.6.1]. The terms with $v_Y(t)>0$ are the zeros of $t$ and those with $v_Y(t)<0$ are its poles.
 
 3. If $X$ is normal, then
 $$
@@ -39,7 +39,7 @@ t\in\Gamma(X,\OO_X)
 \quad\Longleftrightarrow\quad
 v_Y(t)\geq0\text{ for every prime divisor }Y\subseteq X.
 $$
-Equivalently, a rational function on a normal Noetherian integral scheme is regular exactly when it has no codimension-one poles [@Har10a, Proposition II.6.3A].
+Equivalently, a rational function on a normal Noetherian integral scheme is regular exactly when it has no codimension-one poles [@Har77, Proposition II.6.3A].
 :::
 
 ::: {.remark}
@@ -49,5 +49,5 @@ For the normality statement, on every affine open $U=\Spec A$, the Noetherian no
 $$
 A=\bigcap_{\operatorname{ht}\mathfrak p=1}A_\mathfrak p
 $$
-inside $K$ [@Har10a, Proposition II.6.3A]. Hence nonnegative valuation at every prime divisor makes $t$ regular on every affine open and therefore on $X$.
+inside $K$ [@Har77, Proposition II.6.3A]. Hence nonnegative valuation at every prime divisor makes $t$ regular on every affine open and therefore on $X$.
 :::

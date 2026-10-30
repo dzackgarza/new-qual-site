@@ -52,7 +52,7 @@ $$
 0 \to \OO_X(-D) \to \OO_X \to \OO_D \to 0 , \qquad 0 \to \mcl(-D) \to \mcl \to \restrictionof{\mcl}{D} \to 0
 $$
 for every invertible sheaf $\mcl$.
-[@Har10a, Proposition II.6.18]
+[@Har77, Proposition II.6.18]
 :::
 
 ::: {.remark}

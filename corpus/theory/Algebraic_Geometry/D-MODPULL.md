@@ -35,7 +35,7 @@ If $i: Z \injects X$ is the inclusion of a subspace, the \dfn{restriction} of a 
 ::: {.proposition}
 $\inverseof{f}$ is left adjoint to $f_*$ on sheaves of abelian groups, and for $x \in X$ the stalk is $(\inverseof{f} \mcg)_x = \mcg_{f(x)}$; in particular $(\restrictionof{\mcf}{Z})_x = \mcf_x$ for $x \in Z$.
 If $\mcg$ is an $\OO_Y$-module, then $\inverseof{f} \mcg$ is an $\inverseof{f} \OO_Y$-module, which need not be an $\OO_X$-module.
-[@Har10a, §II.1, Exercise II.1.18]
+[@Har77, §II.1, Exercise II.1.18]
 :::
 
 ::: {.definition title="Direct and inverse image"}

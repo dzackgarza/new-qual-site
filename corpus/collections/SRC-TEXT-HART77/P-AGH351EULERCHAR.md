@@ -48,8 +48,8 @@ The Euler characteristics are finite sums of finite integers, and the cohomology
 ::: pf-proof
 
 A projective scheme over a field is noetherian and has finite dimension.
-The cohomology of each coherent sheaf on it is finite-dimensional over $k$ [@Har10a, Theorem III.5.2].
-Its cohomology is zero in degrees greater than $\dim X$ by Grothendieck vanishing [@Har10a, Theorem III.2.7].
+The cohomology of each coherent sheaf on it is finite-dimensional over $k$ [@Har77, Theorem III.5.2].
+Its cohomology is zero in degrees greater than $\dim X$ by Grothendieck vanishing [@Har77, Theorem III.2.7].
 These statements apply to all three coherent sheaves in the given sequence.
 Thus their Euler characteristics are defined by finite sums, and the long exact sequence terminates in zeros.
 

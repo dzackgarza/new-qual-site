@@ -83,5 +83,5 @@ The ideal of this real point set is $(x,y^2-1)$.
 Indeed, reducing a polynomial modulo $x$ leaves a polynomial in $y$, which vanishes at both $1$ and $-1$ exactly when it is divisible by $y^2-1$.
 It strictly contains $(f)$: the element $x$ belongs to the former and not the latter, as its $x$-degree is smaller than that of $f$.
 By contrast, $(f)$ is a prime ideal because $\RR[x,y]$ is a UFD and $f$ is irreducible, so $\Spec(\RR[x,y]/(f))$ is integral and irreducible.
-The example concerns the real point set, not a failure of irreducibility for that scheme; the [[T-JRTS2|algebraically closed-field hypothesis in the Nullstellensatz]] is what distinguishes the two ideal computations [@Har10a, Chapter I, §1].
+The example concerns the real point set, not a failure of irreducibility for that scheme; the [[T-JRTS2|algebraically closed-field hypothesis in the Nullstellensatz]] is what distinguishes the two ideal computations [@Har77, Chapter I, §1].
 :::

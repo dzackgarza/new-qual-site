@@ -83,7 +83,7 @@ The numerator on the right has degree $dn$ in $S$ and degree $n$ in $R$.
 On the intersection with the chart for $t\in S_1$, the function $t^d/s^d$ corresponds to $(t/s)^d$.
 Inverting it is equivalent to inverting $t/s$.
 Thus the affine isomorphisms identify the chart intersections and their restriction maps, all of which send a fraction to the same fraction after localization.
-They glue along the covers of step [](#s1){.pf-ref}, as do their inverses, giving $\phi$ [@Har10a, Chapter II, §2].
+They glue along the covers of step [](#s1){.pf-ref}, as do their inverses, giving $\phi$ [@Har77, Chapter II, §2].
 The map is canonical because every chart map is induced by $R\subseteq S$.
 
 :::
@@ -100,7 +100,7 @@ $$
 ::: pf-proof
 
 On $D_Y(s^d)$, the unit $s^d$ in the localization has degree one for the $R$-grading and gives a frame of $\OO_Y(1)$.
-On $D_X(s)$, the section $s^d$ gives a frame of $\OO_X(d)$, since $s$ has degree one in $S$ [@Har10a, Proposition II.5.12].
+On $D_X(s)$, the section $s^d$ gives a frame of $\OO_X(d)$, since $s$ has degree one in $S$ [@Har77, Proposition II.5.12].
 Send the first frame to the second.
 On an overlap, the transition function for the first is $t^d/s^d$, and for the second it is $(t/s)^d$.
 Step [](#s2){.pf-ref} identifies these functions, so the local module isomorphisms glue to the asserted isomorphism.
@@ -123,7 +123,7 @@ Hence, with one degree-one variable $z_\alpha$ for each such monomial, there is 
 $$
 A[z_\alpha:\multiindexsize{\alpha}=d]\longrightarrow R,\qquad z_\alpha\longmapsto x^\alpha.
 $$
-It induces a closed immersion $Y\hookrightarrow\PP_A^N$, where $N=\binom{r+d}{d}-1$ [@Har10a, Exercise II.3.12].
+It induces a closed immersion $Y\hookrightarrow\PP_A^N$, where $N=\binom{r+d}{d}-1$ [@Har77, Exercise II.3.12].
 Under step [](#s3){.pf-ref} its coordinate sections pull back to the monomials $x^\alpha$ in $\Gamma(X,\OO_X(d))$.
 
 Applying steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} first to the polynomial ring $P=A[X_0,\ldots,X_r]$ gives $\Proj P^{(d)}\cong\PP_A^r$.

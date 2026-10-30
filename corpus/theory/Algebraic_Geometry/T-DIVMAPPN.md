@@ -37,7 +37,7 @@ $$
 $$
 together with an isomorphism $\mcl\cong\varphi^*\OO_{\PP^n}(1)$ carrying $s_i$ to $\varphi^*(x_i)$.
 Conversely, every $A$-morphism $\varphi : X \to \PP^n_A$ arises this way, from $\mcl = \varphi^*\OO(1)$ and $s_i = \varphi^*(x_i)$.
-[@Har10a, Theorem II.7.1]
+[@Har77, Theorem II.7.1]
 :::
 
 ::: {.proposition title="Linear systems with base points"}
@@ -57,7 +57,7 @@ Let $X$ be a nonsingular projective curve over an algebraically closed field $k$
 
 - If $\mcl$ is very ample and $V = H^0(X, \mcl)$, then $\varphi_V$ embeds $X$ as a curve of degree $\deg \mcl$ in $\PP^n$, and $\mcl \cong \varphi_V^* \OO(1)$.
 
-[@Har10a, Proposition II.6.9, Theorem II.7.1]
+[@Har77, Proposition II.6.9, Theorem II.7.1]
 :::
 
 ::: {.remark}
@@ -79,7 +79,7 @@ $\varphi_V$ is a closed immersion exactly when the system separates points and s
 
 - for every closed point $p$ and every $0 \neq t \in T_p X$ there is $D \in \abs{V}$ with $p \in \supp D$ and $t \notin T_p(D)$, where $D$ is regarded as a closed subscheme.
 
-[@Har10a, Proposition II.7.3]
+[@Har77, Proposition II.7.3]
 :::
 
 ::: {.remark}

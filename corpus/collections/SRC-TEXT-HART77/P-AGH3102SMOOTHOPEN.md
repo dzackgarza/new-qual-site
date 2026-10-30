@@ -71,7 +71,7 @@ The subset $V$ is open in $X$.
 ::: pf-proof
 
 For a morphism locally of finite presentation, the locus where the morphism is
-smooth is open [@Har10a, Chapter III, §10]. Hence $V\subseteq X$ is open.
+smooth is open [@Har77, Chapter III, §10]. Hence $V\subseteq X$ is open.
 Equivalently,
 $$
 Z=X\setminus V

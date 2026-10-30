@@ -102,7 +102,7 @@ proving (b).
 
 Choose an injective resolution $M\to I^\bullet$ in the category of $A$-modules.
 The associated-sheaf functor on $\Spec A$ is exact, as can be checked by localization at every prime, so $\widetilde M\to\widetilde{I^\bullet}$ is an exact resolution.
-Since $A$ is noetherian, each $\widetilde{I^q}$ is flasque [@Har10a, Proposition III.3.4].
+Since $A$ is noetherian, each $\widetilde{I^q}$ is flasque [@Har77, Proposition III.3.4].
 Flasque sheaves are acyclic for sections supported in a closed subset, by [[P-AGH323SUPPORTS]], part (c).
 Consequently this resolution computes the supported cohomology of $\widetilde M$.
 It is not necessary that the associated sheaves be injective as abelian sheaves.
@@ -113,7 +113,7 @@ $$
 $$
 The cohomology of the first is $H_{\mfa}^i(M)$ by definition and that of the second is $H_Y^i(X,\widetilde M)$ by the preceding acyclicity.
 This gives the required isomorphism.
-All maps preserve scalar multiplication, and comparison of injective resolutions makes the isomorphism natural in $M$ [@Har10a, Chapter III, §1].
+All maps preserve scalar multiplication, and comparison of injective resolutions makes the isomorphism natural in $M$ [@Har77, Chapter III, §1].
 
 :::
 

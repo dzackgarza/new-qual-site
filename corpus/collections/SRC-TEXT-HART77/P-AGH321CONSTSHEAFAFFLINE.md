@@ -73,7 +73,7 @@ $$
 Indeed, outside $P,Q$ the first map is an isomorphism on stalks; at either omitted point the second map is an isomorphism from $\ZZ$ onto its one nonzero skyscraper stalk.
 This proves exactness at every point.
 The two terms after $\ZZ_U$ are flasque by step [](#s1){.pf-ref}, since $X$ is irreducible and each closed point is an irreducible space.
-They form a flasque resolution, which computes sheaf cohomology [@Har10a, Proposition III.2.5 and Remark III.2.5.1].
+They form a flasque resolution, which computes sheaf cohomology [@Har77, Proposition III.2.5 and Remark III.2.5.1].
 On global sections its differential is the diagonal map
 $$
 \ZZ\longrightarrow\ZZ\oplus\ZZ,\qquad a\longmapsto(a,a).
@@ -174,7 +174,7 @@ $$
 \cong\ZZ.
 $$
 The flasque-resolution computation identifies this with $H^n(X,\ZZ_U)$, proving (b).
-Since $\dim\AA_k^n=n$, this also shows that the vanishing in degrees greater than $n$ in [@Har10a, Theorem III.2.7] cannot be extended to degree $n$ for all abelian sheaves.
+Since $\dim\AA_k^n=n$, this also shows that the vanishing in degrees greater than $n$ in [@Har77, Theorem III.2.7] cannot be extended to degree $n$ for all abelian sheaves.
 
 :::
 

@@ -74,7 +74,7 @@ The nonsingularity of the projective plane curve $Y$ means that the three homoge
 $$
 f_x,\qquad f_y,\qquad f_z
 $$
-do not vanish simultaneously at any representative of $q$ [@Har10a, Chapter I, §5].
+do not vanish simultaneously at any representative of $q$ [@Har77, Chapter I, §5].
 Thus at least one of
 $$
 f_x(Q),\quad f_y(Q),\quad f_z(Q)

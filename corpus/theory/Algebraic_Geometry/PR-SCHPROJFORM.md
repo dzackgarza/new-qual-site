@@ -28,7 +28,7 @@ $$
 R^i f_* (\mathcal{F} \otimes_{\OO_X} f^* \mathcal{E}) \cong R^i f_* \mathcal{F} \otimes_{\OO_Y} \mathcal{E}
 $$
 for all $i \geq 0$.
-[@Har10a, Exercise III.8.3]
+[@Har77, Exercise III.8.3]
 :::
 
 ::: {.proof}

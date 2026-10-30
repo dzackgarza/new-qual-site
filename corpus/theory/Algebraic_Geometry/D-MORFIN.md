@@ -31,7 +31,7 @@ $f : X \to Y$ is \dfn{finite} if $Y$ has an affine cover by $\Spec B_i$ with $f^
 Let $C$ and $C'$ be irreducible curves proper over a field $k$.
 Every $k$-morphism $f: C \to C'$ is proper, so $f(C)$ is an irreducible closed subset of $C'$: $f$ is either constant with value a closed point or surjective.
 If $C$ is nonsingular, $C'$ is integral and $f$ is surjective, then $f$ is finite and $k(C')\subseteq k(C)$ is a finite extension.
-[@Har10a, Corollary II.4.8, Proposition II.6.8]
+[@Har77, Corollary II.4.8, Proposition II.6.8]
 :::
 
 ::: {.remark}

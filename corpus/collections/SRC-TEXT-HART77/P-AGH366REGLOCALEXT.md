@@ -39,7 +39,7 @@ Then show $M$ is a direct summand of a free $A$-module.
 ::: {.solution}
 All Ext groups and projective dimensions are over $A$.
 The regular local ring $A$ is noetherian and has finite dimension $d$.
-The regular-local global-dimension theorem gives $\operatorname{pd}_A L\le d$ for every $A$-module $L$ [@Har10a, Proposition III.6.11A].
+The regular-local global-dimension theorem gives $\operatorname{pd}_A L\le d$ for every $A$-module $L$ [@Har77, Proposition III.6.11A].
 
 ::: pf
 

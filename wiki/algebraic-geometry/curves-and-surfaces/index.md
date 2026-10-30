@@ -13,7 +13,7 @@ For a smooth curve $C$ on a smooth projective surface $X$, adjunction gives $2g(
 
 ## Syllabus
 
-At the level of [@Har10a, Chapters IV–V].
+At the level of [@Har77, Chapters IV–V].
 
 - [[algebraic-geometry/curves-and-surfaces/genus|Genus]], arithmetic, geometric, and topological genus, their computation from plane models and Hilbert polynomials, and the curves of genus zero.
 

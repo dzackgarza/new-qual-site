@@ -40,7 +40,7 @@ A \dfn{normalization} of $X$ is a normal integral scheme $\widetilde{X}$ with a 
 ::: {.theorem title="Existence of the normalization"}
 Every integral scheme $X$ has a normalization, unique up to unique isomorphism.
 If $X = \Spec A$ is affine, $\widetilde{X} = \Spec \widetilde{A}$ for the integral closure $\widetilde{A}$ of $A$ in its fraction field, and in general $\widetilde{X}$ is obtained by gluing these over an affine cover.
-If $X$ is a variety over a field $k$, then $\nu$ is finite and birational, and $\widetilde{X}$ is projective when $X$ is projective [@Har10a, Exercise II.3.8].
+If $X$ is a variety over a field $k$, then $\nu$ is finite and birational, and $\widetilde{X}$ is projective when $X$ is projective [@Har77, Exercise II.3.8].
 :::
 
 ::: {.remark}

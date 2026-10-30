@@ -97,7 +97,7 @@ C=\bigoplus_{i=0}^{d-1}a^i t^{-i}k[t^{-1}].
 $$
 Consequently the difference of restrictions decomposes into exactly the displayed coefficientwise maps.
 The scheme $X$ is noetherian and separated, and $\OO_X$ is quasi-coherent.
-Its cohomology is therefore computed by this two-affine Čech complex [@Har10a, Theorem III.4.5].
+Its cohomology is therefore computed by this two-affine Čech complex [@Har77, Theorem III.4.5].
 
 :::
 

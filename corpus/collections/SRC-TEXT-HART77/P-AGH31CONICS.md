@@ -139,7 +139,7 @@ The spaces $\AA^2$ and $\PP^2$ are not homeomorphic, proving (d).
 First, any two irreducible closed curves in $\PP^2$ meet.
 By [[P-AGH28HYPERSURFACE]], they are defined by irreducible homogeneous equations $f,g$ in $S=k[x,y,z]$.
 If their projective intersection were empty, the affine common zero set of these positive-degree homogeneous polynomials would consist only of the origin.
-The affine Nullstellensatz would then give $\sqrt{(f,g)}=(x,y,z)$ [@Har10a, Theorem I.1.3A].
+The affine Nullstellensatz would then give $\sqrt{(f,g)}=(x,y,z)$ [@Har77, Theorem I.1.3A].
 The latter prime has height three, contradicting Krull's height theorem for an ideal with two generators.
 This proves the intersection assertion.
 
@@ -159,7 +159,7 @@ A variety that is both affine and projective up to isomorphism is a single point
 ::: pf-proof
 
 Let $V\subseteq\AA^m$ be affine and isomorphic to a projective variety $W$.
-Every global regular function on $W$ is constant [@Har10a, Theorem I.3.4(a)], so the induced isomorphism of global function rings gives $\Gamma(V,\OO_V)=k$.
+Every global regular function on $W$ is constant [@Har77, Theorem I.3.4(a)], so the induced isomorphism of global function rings gives $\Gamma(V,\OO_V)=k$.
 In particular, each of the $m$ affine coordinate functions restricts to a constant $c_i$ on $V$.
 Thus every point of $V$ has coordinates $(c_1,\ldots,c_m)$.
 Since a variety is nonempty, $V$ is precisely that one point.

@@ -90,7 +90,7 @@ $$
 ::: pf-proof
 
 The inclusion $\OO\hookrightarrow\mathcal K$ and its quotient give the stated exact sequence, and steps [](#s1){.pf-ref} and [](#s2){.pf-ref} make both resolution terms flasque.
-By [@Har10a, Proposition III.2.5 and Remark III.2.5.1], its global-section complex computes $H^i(X,\OO)$.
+By [@Har77, Proposition III.2.5 and Remark III.2.5.1], its global-section complex computes $H^i(X,\OO)$.
 There are terms only in degrees zero and one, so the groups in degrees $i\ge2$ vanish.
 The group in degree one is the cokernel of
 $$

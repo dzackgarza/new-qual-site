@@ -33,7 +33,7 @@ The following are equivalent:
 
 (iii) $H^1(X, \mci) = 0$ for every coherent sheaf of ideals $\mci$.
 
-[@Har10a, Theorem III.3.7]
+[@Har77, Theorem III.3.7]
 :::
 
 ::: {.remark title="Scope of the hypotheses"}

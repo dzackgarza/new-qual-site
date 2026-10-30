@@ -31,11 +31,11 @@ The assignment
 $$
 D\longmapsto\OO_X(D)\subseteq\mck
 $$
-is a bijection from Cartier divisors to invertible $\OO_X$-submodules of $\mck$ [@Har10a, Proposition II.6.13]. Passing to Cartier divisors modulo principal divisors gives
+is a bijection from Cartier divisors to invertible $\OO_X$-submodules of $\mck$ [@Har77, Proposition II.6.13]. Passing to Cartier divisors modulo principal divisors gives
 $$
 \CaCl(X)\longrightarrow\Pic(X),\qquad [D]\longmapsto[\OO_X(D)].
 $$
-Every invertible sheaf on an integral scheme has a nonzero rational section and hence embeds as an invertible $\OO_X$-submodule of $\mck$. Therefore this map is an isomorphism [@Har10a, Proposition II.6.15].
+Every invertible sheaf on an integral scheme has a nonzero rational section and hence embeds as an invertible $\OO_X$-submodule of $\mck$. Therefore this map is an isomorphism [@Har77, Proposition II.6.15].
 :::
 
 ::: {.proposition}
@@ -65,7 +65,7 @@ Let $X$ be an integral separated Noetherian scheme with function field $K$, and 
 
 3. Under these maps, $t \in \units{K}$ goes to the principal Cartier divisor $\{(X, t)\}$, the pair $(\OO_X, t)$, and the principal Weil divisor $\div t$, so they descend to $\CaCl(X) \to \Cl(X)$ and $\CaCl(X) \cong \Pic(X)$.
 
-4. If every local ring $\OO_{X,x}$ is a unique factorization domain, then $\CaCl(X) \cong \Cl(X) \cong \Pic(X)$, with inverse $D \mapsto (\OO_X(D), 1)$ [@Har10a, Proposition II.6.11].
+4. If every local ring $\OO_{X,x}$ is a unique factorization domain, then $\CaCl(X) \cong \Cl(X) \cong \Pic(X)$, with inverse $D \mapsto (\OO_X(D), 1)$ [@Har77, Proposition II.6.11].
 :::
 
 ::: {.remark}

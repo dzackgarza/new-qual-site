@@ -69,7 +69,7 @@ Consequently
 $$
 \Gamma_Y(X,\mcf)=\ker\bigl(\Gamma(X,\mcf)\longrightarrow\Gamma(U,\mcf\restrict_U)\bigr).
 $$
-We use the ordinary cohomological facts that injective abelian sheaves are flasque, flasque sheaves are acyclic for global sections on every open, and acyclic resolutions compute right derived functors [@Har10a, Chapter III, §1, Lemma III.2.4 and Proposition III.2.5].
+We use the ordinary cohomological facts that injective abelian sheaves are flasque, flasque sheaves are acyclic for global sections on every open, and acyclic resolutions compute right derived functors [@Har77, Chapter III, §1, Lemma III.2.4 and Proposition III.2.5].
 Restriction of a flasque sheaf to an open subset is flasque by its definition.
 
 ::: pf
@@ -176,7 +176,7 @@ Restriction is exact, and $I^\bullet\restrict_U$ has flasque terms.
 It is therefore an acyclic resolution of $\mcf\restrict_U$ for ordinary cohomology, so the third complex computes $H^i(U,\mcf\restrict_U)$.
 The long exact cohomology sequence of these complexes is exactly the sequence in (e), with the zeroth supported term identified by step [](#s1){.pf-ref}.
 The maps arise from inclusion of supported sections, restriction and the connecting maps of the short exact sequence.
-Comparison of resolutions gives their naturality in $\mcf$ [@Har10a, Chapter III, §1].
+Comparison of resolutions gives their naturality in $\mcf$ [@Har77, Chapter III, §1].
 
 :::
 

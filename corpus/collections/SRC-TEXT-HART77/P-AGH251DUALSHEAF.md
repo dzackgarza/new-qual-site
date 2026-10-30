@@ -41,7 +41,7 @@ $$
 
 ::: {.solution}
 For sheaves of modules $\mathcal A,\mathcal B$ on $X$, the sections of $\sheafhom_{\OO_X}(\mathcal A,\mathcal B)$ on an open set $U$ are the $\OO_U$-linear sheaf morphisms $\mathcal A\restrict_U\to\mathcal B\restrict_U$.
-Here $\OO_U=\OO_X\restrict_U$; in particular $\Hom_{\OO_X}(\mathcal A,\mathcal B)$ is the module of global sections of this sheaf [@Har10a, Chapter II, §5].
+Here $\OO_U=\OO_X\restrict_U$; in particular $\Hom_{\OO_X}(\mathcal A,\mathcal B)$ is the module of global sections of this sheaf [@Har77, Chapter II, §5].
 Tensor products in parts (a)-(c) are over $\OO_X$.
 
 ::: pf

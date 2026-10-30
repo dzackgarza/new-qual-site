@@ -31,12 +31,12 @@ $C^2 = C \cdot C$ is the \dfn{self-intersection}. Fixing a very ample divisor $H
 :::
 
 ::: {.remark}
-To compute $C\cdot D$, replace $C$ and $D$ by linearly equivalent divisors that are differences of nonsingular curves meeting transversally, and count intersection points [@Har10a, Theorem V.1.1].
+To compute $C\cdot D$, replace $C$ and $D$ by linearly equivalent divisors that are differences of nonsingular curves meeting transversally, and count intersection points [@Har77, Theorem V.1.1].
 For $C$ an irreducible nonsingular curve and any divisor $D$, $C\cdot D=\deg_C\OO_X(D)\restrict_C$; in particular $C^2 = \deg_C \OO_X(C)\restrict_C=\deg_C\mcn_{C/X}$.
 
 On $\PP^2$, $\Pic = \ZZ H$ with $H^2 = 1$, so curves of degrees $d$ and $e$ with no common component meet in $de$ points counted with multiplicity, which is Bézout's theorem.
 On $\PP^1 \times \PP^1$ the two rulings satisfy $A^2 = B^2 = 0$ and $A \cdot B = 1$.
 
 For a curve $C$ on $X$, the ideal sheaf is $\mci_C = \OO_X(-C)$ and the conormal sheaf is $\mci_C/\mci_C^2 = \OO_X(-C)\restrict_C$.
-For $C$ nonsingular of genus $g$, the adjunction formula gives $2g-2=C\cdot(C+K_X)$ [@Har10a, Proposition V.1.5].
+For $C$ nonsingular of genus $g$, the adjunction formula gives $2g-2=C\cdot(C+K_X)$ [@Har77, Proposition V.1.5].
 :::

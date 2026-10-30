@@ -38,7 +38,7 @@ $$
 p_a(X) = p_g(X) = \dim_k H^1(X, \OO_X) ,
 $$
 the \dfn{genus} $g$ of $X$: since $h^0(\OO_X) = 1$, $p_a = 1 - \chi(\OO_X) = h^1(\OO_X)$, and Serre duality gives $h^0(\omega_X) = h^1(\OO_X)$.
-[@Har10a, Exercise III.5.3]
+[@Har77, Exercise III.5.3]
 :::
 
 ::: {.proposition}
@@ -56,6 +56,6 @@ A plane curve of degree $d$ has $p_a = \binom{d-1}{2}$ for every choice of singu
 
 Both genera are invariants of the abstract curve: $p_a = 1 - \chi(\OO_C)$, and $p_g$ is computed on the normalization.
 The degree depends on the embedding.
-For a nonsingular projective complex curve, both genera equal half its first Betti number, by the Hodge decomposition and Serre duality [@Har10a, Appendix B and Exercise III.5.3].
+For a nonsingular projective complex curve, both genera equal half its first Betti number, by the Hodge decomposition and Serre duality [@Har77, Appendix B and Exercise III.5.3].
 For a singular complex curve, the topological genus of its smooth model is $p_g(C)$; a nodal cubic has smooth model $\PP^1$, of genus zero, and arithmetic genus one.
 :::

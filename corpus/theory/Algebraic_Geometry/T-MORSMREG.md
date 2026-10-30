@@ -40,7 +40,7 @@ Let $k$ be a field and $X$ a scheme locally of finite type over $k$, of pure dim
 
 If $k$ is perfect, these are also equivalent to: $X$ is regular.
 
-[@Har10a, Theorem II.8.15, Theorem III.10.2]
+[@Har77, Theorem II.8.15, Theorem III.10.2]
 :::
 
 ::: {.remark}

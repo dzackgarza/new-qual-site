@@ -52,7 +52,7 @@ $$
 I(Y_1)\subseteq I(Y_2)\subseteq\cdots
 $$
 in $S=k[x_0,\ldots,x_n]$.
-The Hilbert basis theorem makes $S$ noetherian, so there is $N$ for which $I(Y_j)=I(Y_N)$ whenever $j\ge N$ [@Har10a, Chapter I, §1].
+The Hilbert basis theorem makes $S$ noetherian, so there is $N$ for which $I(Y_j)=I(Y_N)$ whenever $j\ge N$ [@Har77, Chapter I, §1].
 Applying $Z$ and using $Z(I(Y_j))=Y_j$ gives $Y_j=Y_N$ for all those $j$.
 Thus every descending chain of closed subsets stabilizes, which is the [[D-9DIKB|noetherian condition]], proving (a).
 

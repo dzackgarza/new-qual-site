@@ -59,10 +59,10 @@ The forms $F_1,\ldots,F_c$ are a regular sequence, and $\dim Y_j=r-j$ for every 
 ::: pf-proof
 
 Let $\mathfrak m=(x_0,\ldots,x_r)$.
-The dimension of the homogeneous coordinate ring of the nonempty $Y$ is $q+1$; localization at the vertex $\mathfrak m$ has that same dimension [@Har10a, Chapter I, §§2 and 7].
+The dimension of the homogeneous coordinate ring of the nonempty $Y$ is $q+1$; localization at the vertex $\mathfrak m$ has that same dimension [@Har77, Chapter I, §§2 and 7].
 The regular local ring $S_{\mathfrak m}$ is Cohen--Macaulay of dimension $r+1$.
 Since quotienting by the $c$ forms drops its dimension by exactly $c$, the [dimension criterion for a regular sequence](https://stacks.math.columbia.edu/tag/02JN) makes them a regular sequence in $S_{\mathfrak m}$.
-That criterion also gives dimension $r+1-j$ for every prefix quotient at the vertex [@Har10a, Theorem II.8.21A].
+That criterion also gives dimension $r+1-j$ for every prefix quotient at the vertex [@Har77, Theorem II.8.21A].
 
 The sequence is regular in $S$ as well.
 At each stage the kernel testing injectivity is a graded module.
@@ -88,7 +88,7 @@ $$
 ::: pf-proof
 
 Induct on $j$.
-For $j=0$, the restriction is the identity and the vanishing is the projective-space calculation [@Har10a, Theorem III.5.1].
+For $j=0$, the restriction is the identity and the vanishing is the projective-space calculation [@Har77, Theorem III.5.1].
 For $j\ge1$, regularity in step [](#s1){.pf-ref} gives the exact sequence on $Y_{j-1}$
 $$
 0\longrightarrow\OO_{Y_{j-1}}(n-d_j)
@@ -97,7 +97,7 @@ $$
 $$
 where the last sheaf is extended by the closed inclusion into $Y_{j-1}$.
 Sheafification of the graded regular-sequence quotient gives this sequence, and twisting by an invertible sheaf preserves exactness.
-Cohomology of the last term equals its cohomology on $Y_j$ [@Har10a, Lemma III.2.10].
+Cohomology of the last term equals its cohomology on $Y_j$ [@Har77, Lemma III.2.10].
 
 Write $s=r-j=\dim Y_j$, so $s\ge q\ge1$ and $\dim Y_{j-1}=s+1\ge2$.
 The induction hypothesis gives $H^1(Y_{j-1},\OO(n-d_j))=0$.
@@ -146,8 +146,8 @@ The arithmetic genus is $\boxed{p_a(Y)=\dim_kH^q(Y,\OO_Y)}$.
 ::: pf-proof
 
 Step [](#s3){.pf-ref} gives $h^0(Y,\OO_Y)=1$, and step [](#s2){.pf-ref} gives $h^i(Y,\OO_Y)=0$ for $0<i<q$.
-Cohomology also vanishes for $i>q$ by Grothendieck vanishing, since $\dim Y=q$ [@Har10a, Theorem III.2.7].
-Coherent cohomology is finite-dimensional because $Y$ is projective [@Har10a, Theorem III.5.2].
+Cohomology also vanishes for $i>q$ by Grothendieck vanishing, since $\dim Y=q$ [@Har77, Theorem III.2.7].
+Coherent cohomology is finite-dimensional because $Y$ is projective [@Har77, Theorem III.5.2].
 Therefore
 $$
 \chi(Y,\OO_Y)=1+(-1)^q h^q(Y,\OO_Y).

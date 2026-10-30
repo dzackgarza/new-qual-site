@@ -41,7 +41,7 @@ A covariant $\delta$-functor $T=(T^i)$ from $\mca$ to $\mcb$ is \dfn{universal} 
 :::
 
 ::: {.theorem title="Grothendieck"}
-A covariant $\delta$-functor $T$ with $T^i$ effaceable for every $i>0$ is universal [@Har10a, Theorem III.1.3A].
+A covariant $\delta$-functor $T$ with $T^i$ effaceable for every $i>0$ is universal [@Har77, Theorem III.1.3A].
 If $\mca$ has enough injectives and $F$ is left exact, then $(R^iF)_{i\ge0}$ is a universal $\delta$-functor with $R^0F\cong F$, since every $A$ embeds in an injective object $I$ and $R^iF(I)=0$ for $i>0$.
 :::
 

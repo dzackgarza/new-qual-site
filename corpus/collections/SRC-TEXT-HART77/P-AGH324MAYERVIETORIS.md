@@ -93,7 +93,7 @@ Applying steps [](#s1){.pf-ref} and [](#s2){.pf-ref} to an injective resolution 
 ::: pf-proof
 
 Choose an injective resolution $\mcf\to I^\bullet$ in the category of abelian sheaves on $X$.
-Each $I^j$ is flasque [@Har10a, Lemma III.2.4].
+Each $I^j$ is flasque [@Har77, Lemma III.2.4].
 Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} therefore give a short exact sequence of complexes
 $$
 0\to\Gamma_{Y_1\cap Y_2}(I^\bullet)
@@ -105,7 +105,7 @@ By the definition of supported cohomology, the cohomology of each complex is the
 The long exact sequence of cohomology of a short exact sequence of complexes consequently gives the sequence in the statement.
 It begins in degree zero with the injective map of step [](#s1){.pf-ref} and continues through all nonnegative degrees.
 Its first two maps in each degree are induced by the signed inclusions and sum map; the third is the connecting homomorphism.
-Functoriality of the short exact sequence and comparison of injective resolutions make the resulting long exact sequence natural in $\mcf$ [@Har10a, Chapter III, §1].
+Functoriality of the short exact sequence and comparison of injective resolutions make the resulting long exact sequence natural in $\mcf$ [@Har77, Chapter III, §1].
 
 :::
 

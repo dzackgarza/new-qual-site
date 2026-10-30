@@ -45,7 +45,7 @@ For part (a), a free stalk of rank $r$ extends to a free sheaf of rank $r$ on a 
 ::: pf-proof
 
 Choose an affine neighborhood $V=\Spec A$ of $x$, and let $\mathfrak p$ be the prime corresponding to $x$.
-Since $X$ is noetherian and $\mcf$ is [[D-QNTZY|coherent]], there is a finite $A$-module $M$ with $\mcf\restrict_V\cong\widetilde M$ [@Har10a, Proposition II.5.4].
+Since $X$ is noetherian and $\mcf$ is [[D-QNTZY|coherent]], there is a finite $A$-module $M$ with $\mcf\restrict_V\cong\widetilde M$ [@Har77, Proposition II.5.4].
 Then $\mcf_x\cong M_{\mathfrak p}$.
 Its free rank $r$ is finite because it is finitely generated over $A_{\mathfrak p}$.
 

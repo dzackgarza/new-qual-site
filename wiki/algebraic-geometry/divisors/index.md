@@ -14,7 +14,7 @@ For a singular curve, $\Pic$ is computed by comparison with the normalization: o
 
 ## Syllabus
 
-At the level of [@Har10a, Sections II.6–II.7].
+At the level of [@Har77, Sections II.6–II.7].
 
 - [[algebraic-geometry/divisors/weil-and-cartier|Weil and Cartier]], prime divisors, multiplicity and support, principal divisors, the two definitions and their agreement on locally factorial schemes, the degree map, and the normalization and excision sequences for class groups.
 

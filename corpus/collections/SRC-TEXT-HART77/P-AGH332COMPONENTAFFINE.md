@@ -30,7 +30,7 @@ Show that $X$ is affine if and only if each irreducible component is affine.
 ::: {.solution}
 Every irreducible component is given its reduced induced closed-subscheme structure.
 The noetherian scheme has finitely many irreducible components.
-We use [[T-5IOUR|Serre's affineness criterion]] and [[T-COHAFF|vanishing of higher quasi-coherent cohomology on affine schemes]] [@Har10a, Theorems III.3.5 and III.3.7].
+We use [[T-5IOUR|Serre's affineness criterion]] and [[T-COHAFF|vanishing of higher quasi-coherent cohomology on affine schemes]] [@Har77, Theorems III.3.5 and III.3.7].
 
 ::: pf
 
@@ -68,7 +68,7 @@ The quotient $F/IF$ is annihilated by $I$, so it is the direct image of a cohere
 The subsheaf $IF$ is annihilated by $J$, since $J(IF)=(JI)F=0$, so it is the direct image of a coherent sheaf on $Z$.
 These assertions follow locally from the correspondence between modules annihilated by an ideal and modules over the quotient ring; all these sheaves are coherent because $X$ is noetherian.
 
-Cohomology of a sheaf on a closed subspace agrees with cohomology of its direct image [@Har10a, Lemma III.2.10].
+Cohomology of a sheaf on a closed subspace agrees with cohomology of its direct image [@Har77, Lemma III.2.10].
 Affineness of $Y$ and $Z$ therefore gives
 $$
 H^1(X,IF)=0,\qquad H^1(X,F/IF)=0.

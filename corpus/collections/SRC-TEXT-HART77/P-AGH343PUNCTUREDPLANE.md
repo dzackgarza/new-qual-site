@@ -55,7 +55,7 @@ The affine-cover Čech comparison therefore computes sheaf cohomology by the com
 $$
 A_x\oplus A_y\xrightarrow{(a,b)\mapsto b-a}A_{xy}
 $$
-in degrees zero and one [@Har10a, Theorem III.4.5].
+in degrees zero and one [@Har77, Theorem III.4.5].
 There is no term in degree two for this two-member cover.
 The image of the differential is the additive subgroup $A_x+A_y$, giving the displayed quotient.
 All these maps are $k$-linear.
@@ -94,7 +94,7 @@ The group is infinite-dimensional over $k$, and $U$ is not affine.
 
 For $m\ge1$, the classes $x^{-m}y^{-1}$ are distinct members of the basis in step [](#s2){.pf-ref} and are linearly independent.
 Hence the cohomology group is infinite-dimensional and nonzero.
-If $U$ were affine, the higher cohomology of its quasi-coherent structure sheaf would vanish by [[T-COHAFF]] [@Har10a, Theorem III.3.5].
+If $U$ were affine, the higher cohomology of its quasi-coherent structure sheaf would vanish by [[T-COHAFF]] [@Har77, Theorem III.3.5].
 The nonzero group in degree one contradicts that vanishing, proving nonaffineness.
 
 :::

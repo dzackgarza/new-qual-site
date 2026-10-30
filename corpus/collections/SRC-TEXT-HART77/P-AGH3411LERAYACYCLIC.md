@@ -54,8 +54,8 @@ The augmentation $\Gamma(X,I^\bullet)\to\operatorname{Tot}B$ is a quasi-isomorph
 
 ::: pf-proof
 
-Every injective abelian sheaf $I^q$ is flasque [@Har10a, Lemma III.2.4].
-A flasque sheaf has zero positive-degree Čech cohomology on every open cover, and its degree-zero Čech cohomology is its group of global sections [@Har10a, Lemma III.4.1 and Proposition III.4.3].
+Every injective abelian sheaf $I^q$ is flasque [@Har77, Lemma III.2.4].
+A flasque sheaf has zero positive-degree Čech cohomology on every open cover, and its degree-zero Čech cohomology is its group of global sections [@Har77, Lemma III.4.1 and Proposition III.4.3].
 Thus the horizontal cohomology of $B$ is concentrated in column zero, where it is the complex $\Gamma(X,I^\bullet)$.
 The first-quadrant double-complex filtration gives the asserted quasi-isomorphism.
 Equivalently, filter the cone of the augmentation by the resolution degree: its graded complexes are the exact augmented Čech rows, so its total cohomology is zero.
@@ -73,7 +73,7 @@ Under the intersection-acyclicity hypothesis, $C^\bullet(\mathfrak U,\mcf)\to\op
 ::: pf-proof
 
 For every finite intersection $V$ of cover members, the restricted resolution $\mcf\restrict_V\to I^\bullet\restrict_V$ is exact and consists of flasque sheaves.
-It therefore computes $H^q(V,\mcf\restrict_V)$ after applying $\Gamma(V,-)$ [@Har10a, Proposition III.2.5].
+It therefore computes $H^q(V,\mcf\restrict_V)$ after applying $\Gamma(V,-)$ [@Har77, Proposition III.2.5].
 For fixed $p$, the vertical complex $B^{p,\bullet}$ is the product of these section complexes over all the $(p+1)$-fold intersections.
 Products are exact in abelian groups: their kernels are computed componentwise, and a tuple of images has a tuple of preimages by choosing one in each component.
 Hence its cohomology is
@@ -97,7 +97,7 @@ The natural comparison maps in the statement are isomorphisms in all degrees.
 ::: pf-proof
 
 The augmentation from step [](#s1){.pf-ref} identifies the cohomology of $\operatorname{Tot}B$ with the cohomology of $\Gamma(X,I^\bullet)$, which is $H^p(X,\mcf)$.
-Composing the cohomology map of step [](#s2){.pf-ref} with the inverse of the cohomology isomorphism in step [](#s1){.pf-ref} is exactly the canonical comparison map of [@Har10a, Lemma III.4.4], as described in [[P-AGH344REFINEMENTH1]], step [](#s3){.pf-ref}.
+Composing the cohomology map of step [](#s2){.pf-ref} with the inverse of the cohomology isomorphism in step [](#s1){.pf-ref} is exactly the canonical comparison map of [@Har77, Lemma III.4.4], as described in [[P-AGH344REFINEMENTH1]], step [](#s3){.pf-ref}.
 Both maps are now isomorphisms, giving
 $$
 \boxed{\check H^p(\mathfrak U,\mcf)\xrightarrow{\cong}H^p(X,\mcf)\qquad(p\ge0).}
@@ -116,7 +116,7 @@ The affine-cover comparison theorem (III.4.5) follows.
 
 Let $X$ be a noetherian separated scheme, let $\mathfrak U$ be an affine open cover, and let $\mcf$ be quasi-coherent.
 Every finite intersection of these opens is affine because $X$ is separated.
-The restriction of $\mcf$ to such an intersection is quasi-coherent, so all its positive-degree cohomology vanishes by [[T-COHAFF]] [@Har10a, Theorem III.3.5].
+The restriction of $\mcf$ to such an intersection is quasi-coherent, so all its positive-degree cohomology vanishes by [[T-COHAFF]] [@Har77, Theorem III.3.5].
 The hypothesis of step [](#s2){.pf-ref} is therefore satisfied.
 Step [](#s3){.pf-ref} supplies the Čech comparison isomorphisms in all degrees, which is the assertion of Theorem III.4.5.
 

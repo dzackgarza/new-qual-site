@@ -88,8 +88,8 @@ $$
 ::: pf-proof
 
 Construct the sequences successively using enough locally frees.
-At each stage the kernel is coherent by [@Har10a, Proposition II.5.7], so the construction can continue.
-The long exact sheaf-Ext sequence in the first variable [@Har10a, Proposition III.6.4] contains
+At each stage the kernel is coherent by [@Har77, Proposition II.5.7], so the construction can continue.
+The long exact sheaf-Ext sequence in the first variable [@Har77, Proposition III.6.4] contains
 $$
 \mathcal{E}xt_X^q(E_j,\mcg)\longrightarrow
 \mathcal{E}xt_X^q(K_{j+1},\mcg)\longrightarrow
@@ -109,7 +109,7 @@ The equivalence in (b) holds for every $n\ge0$.
 
 ::: pf-proof
 
-If $\mcf$ has a locally free resolution of length at most $n$, [@Har10a, Proposition III.6.5] computes $\mathcal{E}xt_X^i(\mcf,\mcg)$ as the cohomology of its sheaf-Hom complex with $\mcg$.
+If $\mcf$ has a locally free resolution of length at most $n$, [@Har77, Proposition III.6.5] computes $\mathcal{E}xt_X^i(\mcf,\mcg)$ as the cohomology of its sheaf-Hom complex with $\mcg$.
 That complex has no terms above degree $n$, so the required groups vanish for every $i>n$ and every $\mcg$.
 
 Conversely, assume the stated vanishing.
@@ -148,7 +148,7 @@ $$
 \cong\Ext^{n+1}_{\OO_{X,x}}(\mcf_x,N)=0
 $$
 for every $\OO_{X,x}$-module $N$.
-The module projectivity criterion [@Har10a, Proposition III.6.10A] makes $(K_n)_x$ projective, and its finite generation makes it free over the local ring.
+The module projectivity criterion [@Har77, Proposition III.6.10A] makes $(K_n)_x$ projective, and its finite generation makes it free over the local ring.
 The neighborhood argument from step [](#s1){.pf-ref} then makes the coherent sheaf $K_n$ locally free.
 Truncating the resolution as in step [](#s3){.pf-ref} gives $\operatorname{hd}(\mcf)\le n$.
 

@@ -24,7 +24,7 @@ prompts:
 ::: {.theorem title="Birkhoff--Grothendieck"}
 Let $k$ be a field.
 Every locally free sheaf of finite rank on $\PP^1_k$ is isomorphic to $\OO(a_1) \oplus \cdots \oplus \OO(a_r)$ for integers $a_1 \geq \cdots \geq a_r$, and these integers are uniquely determined.
-[@Har10a, Exercise V.2.6]
+[@Har77, Exercise V.2.6]
 :::
 
 ::: {.example}

@@ -40,7 +40,7 @@ When $X = \Spec A$ it says $(a_1, \ldots, a_n) = A$.
 
 ::: {.example title="Projective space"}
 $\PP^n_R$ represents the functor sending an $R$-scheme $X$ to the set of isomorphism classes of tuples $(\mathcal{L}, s_0, \ldots, s_n)$ with $\mathcal{L}$ an invertible sheaf on $X$ and $s_0, \ldots, s_n \in \Gamma(X, \mathcal{L})$ generating $\mathcal{L}$, where $(\mathcal{L}, s_i) \cong (\mathcal{L}', s'_i)$ if there is an isomorphism $\mathcal{L} \to \mathcal{L}'$ carrying each $s_i$ to $s'_i$.
-The universal tuple is $(\OO(1), x_0, \ldots, x_n)$, and a tuple on $X$ corresponds to the morphism $f \colon X \to \PP^n_R$ with $f^* \OO(1) \cong \mathcal{L}$ and $f^* x_i = s_i$ [@Har10a, Theorem II.7.1]; the construction is the [[D-OPENSUBFUNCTOR|gluing of open subfunctors]].
+The universal tuple is $(\OO(1), x_0, \ldots, x_n)$, and a tuple on $X$ corresponds to the morphism $f \colon X \to \PP^n_R$ with $f^* \OO(1) \cong \mathcal{L}$ and $f^* x_i = s_i$ [@Har77, Theorem II.7.1]; the construction is the [[D-OPENSUBFUNCTOR|gluing of open subfunctors]].
 
 If every invertible sheaf on $X$ is trivial, for instance $X = \Spec A$ with $A$ local, a tuple is a unimodular $(a_0, \ldots, a_n) \in \Gamma(X, \OO_X)^{n+1}$ up to multiplication by a unit of $\Gamma(X, \OO_X)$.
 So the map $\AA^{n+1}_R \setminus \{0\} \to \PP^n_R$ sends $(a_0, \ldots, a_n)$ to $(\OO_X, a_0, \ldots, a_n)$, and over a field $k$ its $k$-points are the classical description of $\PP^n(k)$ as nonzero $(n+1)$-tuples up to $k^\times$.

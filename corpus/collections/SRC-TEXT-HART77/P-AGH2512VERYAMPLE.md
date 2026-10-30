@@ -142,7 +142,7 @@ h=\sigma\circ k\circ i:X\longrightarrow\PP_Z^{(r+1)(s+1)-1}
 $$
 is a locally closed immersion.
 Its target is locally noetherian, so step [](#s2){.pf-ref} gives the required open-in-closed factorization.
-The twisting sheaf on relative projective space commutes with base change, giving $a^*\OO_{\PP_Z^r}(1)\cong\OO_{\PP_Y^r}(1)$ [@Har10a, Chapter II, §5].
+The twisting sheaf on relative projective space commutes with base change, giving $a^*\OO_{\PP_Z^r}(1)\cong\OO_{\PP_Y^r}(1)$ [@Har77, Chapter II, §5].
 Therefore step [](#s1){.pf-ref} gives
 $$
 \begin{aligned}

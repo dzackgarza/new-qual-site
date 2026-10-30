@@ -71,7 +71,7 @@ By step [](#linear-part-formula){.pf-ref} this is equivalent to
 $$
 (f_x(P),f_y(P))\ne(0,0).
 $$
-For a plane hypersurface, the Jacobian criterion says precisely that $P$ is nonsingular when at least one first partial derivative is nonzero [@Har10a, Chapter I, §5].
+For a plane hypersurface, the Jacobian criterion says precisely that $P$ is nonsingular when at least one first partial derivative is nonzero [@Har77, Chapter I, §5].
 This proves part (1).
 :::
 

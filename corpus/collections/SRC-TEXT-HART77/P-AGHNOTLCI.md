@@ -91,7 +91,7 @@ $$
 \operatorname{height}I(Y)
 =3-\operatorname{trdeg}_k\operatorname{Frac}(S/I(Y))=2
 $$
-[@Har10a, Chapter I, §1].
+[@Har77, Chapter I, §1].
 :::
 
 :::

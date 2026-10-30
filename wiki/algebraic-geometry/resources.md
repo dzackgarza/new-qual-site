@@ -9,7 +9,7 @@ topics:
 
 ## Hartshorne
 
-[@Har10a] covers classical varieties, schemes, cohomology, curves, and surfaces, with exercises throughout.
+[@Har77] covers classical varieties, schemes, cohomology, curves, and surfaces, with exercises throughout.
 Chapter I treats affine and projective varieties, morphisms, rational maps, nonsingular varieties, nonsingular curves, and intersections in projective space.
 II.1--II.8 treat sheaves, schemes and their first properties, separated and proper morphisms, sheaves of modules, divisors, projective morphisms, and differentials.
 III.1--III.6 treat derived functors, sheaf cohomology, cohomology of noetherian affine schemes, Čech cohomology, the cohomology of projective space, and Ext; III.7 proves Serre duality and III.9 treats flat morphisms.
@@ -19,13 +19,13 @@ IV.1--IV.3 treat the Riemann--Roch theorem, Hurwitz's theorem, and embeddings of
 
 [@Gat21] develops classical and scheme-theoretic algebraic geometry together with motivating examples.
 
-[@Vak25] gives extended treatments of sheaves, $\Proj$, affine-local arguments, and related constructions used in [@Har10a].
+[@Vak25] gives extended treatments of sheaves, $\Proj$, affine-local arguments, and related constructions used in [@Har77].
 
 [@Mil08a] treats dimension, tangent spaces, smoothness, and finiteness results in the classical setting, without the scheme apparatus.
 
 ## Classical varieties and geometric examples
 
-[@Har10b] collects concrete projective examples including rational normal curves, Veronese and Segre embeddings, determinantal varieties, secant and tangent varieties, and Grassmannians.
+[@Har92] collects concrete projective examples including rational normal curves, Veronese and Segre embeddings, determinantal varieties, secant and tangent varieties, and Grassmannians.
 
 [@Sha13] treats varieties in projective space: basic notions, local properties such as tangent spaces and singular points, divisors and differential forms, and intersection numbers.
 
@@ -46,19 +46,19 @@ For divisors and positivity, [@Laz04] treats ample, very ample, nef, and big div
 
 For birational geometry --- minimal models, the cone theorem, and singularities of pairs --- [@KM98] treats these topics in Chapters 1 and 2.
 
-The coherent-sheaf formalism used in Chapter III of [@Har10a] is developed in [@Ser55].
+The coherent-sheaf formalism used in Chapter III of [@Har77] is developed in [@Ser55].
 
 ## Problems and solutions
 
 [@Har07] transcribes questions and follow-up questions from past oral examinations and records the examiner for each entry.
 
 [@Vak07] contains algebraic-geometry problems graded by difficulty.
-[@Bor12] assigns a selected sequence of exercises from [@Har10a] and includes written solutions to the first several assignments.
+[@Bor12] assigns a selected sequence of exercises from [@Har77] and includes written solutions to the first several assignments.
 [@PA12] is a written solution set for a scheme-theory course, including computations with $\Spec$ and Čech cohomology.
 
 ## Exercise selections from Hartshorne
 
-A selection of exercises from [@Har10a] recommended by Elham Izadi, by chapter and section:
+A selection of exercises from [@Har77] recommended by Elham Izadi, by chapter and section:
 
 - I.1: 1, 2, 4, 5, 6; 7, 8, 9, 10.
 

@@ -77,20 +77,20 @@ The noetherian local ring $A$ satisfies
 $$
 \dim A\le\dim_k\mathfrak m/\mathfrak m^2
 $$
-[@Har10a, Chapter I, §5].
+[@Har77, Chapter I, §5].
 One way to see the inequality is to choose a minimal set of $e=\dim_k\mathfrak m/\mathfrak m^2$ generators of $\mathfrak m$.
 Krull's height theorem gives
 $$
 \dim A=\operatorname{height}\mathfrak m\le e.
 $$
-For a closed point of a variety, $\dim A=\dim X$ [@Har10a, Exercise I.3.12].
+For a closed point of a variety, $\dim A=\dim X$ [@Har77, Exercise I.3.12].
 Step [](#s1){.pf-ref} therefore gives the displayed inequality.
 
 By definition, a noetherian local ring is regular precisely when
 $$
 \dim A=\dim_k\mathfrak m/\mathfrak m^2.
 $$
-For varieties, the local ring $\OO_{X,P}$ is regular exactly when $P$ is nonsingular [@Har10a, Theorem I.5.1].
+For varieties, the local ring $\OO_{X,P}$ is regular exactly when $P$ is nonsingular [@Har77, Theorem I.5.1].
 Thus equality in the tangent-space inequality is equivalent to nonsingularity, proving part (1).
 
 :::

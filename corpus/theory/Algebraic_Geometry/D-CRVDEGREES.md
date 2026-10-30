@@ -70,5 +70,5 @@ Let $C$ be a regular projective integral curve over $k$.
 
 2. For a locally free sheaf $\mathcal{E}$ of rank $r$ and an invertible sheaf $\mathcal{L}$, $\chi(\mathcal{E} \tensor_{\OO_C} \mathcal{L}) = \chi(\mathcal{E}) + r \deg \mathcal{L}$.
 
-3. If $\pi \colon C' \to C$ is a finite surjective morphism from a projective integral curve, then $\deg_{C'} \pi^* \mathcal{L} = (\deg \pi)(\deg_C \mathcal{L})$ [@Har10a, Proposition II.6.9].
+3. If $\pi \colon C' \to C$ is a finite surjective morphism from a projective integral curve, then $\deg_{C'} \pi^* \mathcal{L} = (\deg \pi)(\deg_C \mathcal{L})$ [@Har77, Proposition II.6.9].
 :::
