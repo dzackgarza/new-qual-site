@@ -64,3 +64,7 @@ $$
 =\frac{1\cdot3\cdot5\cdots(2n-1)}{2\cdot4\cdot6\cdots(2n)}\pi}.
 $$
 :::
+
+::: {.remark title="Variations"}
+At $n=1$ the statement gives $\int_\RR\frac{dx}{(1+x^2)^2}=\frac{\pi}{2}$.
+:::
