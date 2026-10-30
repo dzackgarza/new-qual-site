@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP08E
 kind: problem
-title: "Evaluation of the integral of x sin(x)/(x^2+a^2) via residues"
+title: '$\int_0^\infty x\sin x/(x^2+a^2)\,dx$ by residues'
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP21A
 kind: problem
-title: "Count solutions of z^3 sin z + 5z^2 + 2 = 0 in the unit disk"
+title: 'Solutions of $z^3\sin z+5z^2+2=0$ in the unit disc'
 classification:
   areas:
   - complex-analysis

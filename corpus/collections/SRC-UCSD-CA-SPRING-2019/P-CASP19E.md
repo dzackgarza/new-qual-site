@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP19E
 kind: problem
-title: "Taylor series partial sums converge in H(D) for functions analytic in B(0,2)"
+title: 'Partial sums of $\sum_{n\geq 1} f^{(n)}(z)/n!$ converge in $H(\DD)$ for $f$ holomorphic on $B(0,2)$'
 classification:
   areas:
   - complex-analysis

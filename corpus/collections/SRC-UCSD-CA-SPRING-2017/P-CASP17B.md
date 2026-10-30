@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP17B
 kind: problem
-title: "Entire function with g(z) = f(z) f(1/z) bounded is a monomial"
+title: 'An entire function with $f(z)f(1/z)$ bounded is a monomial'
 classification:
   areas:
   - complex-analysis

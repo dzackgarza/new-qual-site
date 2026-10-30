@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP17G
 kind: problem
-title: "cos(sqrt(z)) is entire: determine order, rank, and genus"
+title: 'Order, rank and genus of the entire function $\cos\sqrt z$'
 classification:
   areas:
   - complex-analysis

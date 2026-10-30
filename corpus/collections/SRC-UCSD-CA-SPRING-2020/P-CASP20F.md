@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP20F
 kind: problem
-title: "Entire function with bounded derivative and zeros at sqrt(n) is identically zero"
+title: 'An entire function with bounded derivative and zeros at $\sqrt n$ is identically zero'
 classification:
   areas:
   - complex-analysis

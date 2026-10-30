@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP09H
 kind: problem
-title: "Characterization of entire functions bounded by e^{xy}"
+title: 'Entire functions with $\abs{f(x+iy)}\leq e^{\abs{xy}}$'
 classification:
   areas:
   - complex-analysis

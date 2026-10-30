@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP19A
 kind: problem
-title: "Entire function bounded by log(|f| + 2) is constant"
+title: 'An entire function with $\abs f\leq\log(\abs f+2)$ is constant'
 classification:
   areas:
   - complex-analysis

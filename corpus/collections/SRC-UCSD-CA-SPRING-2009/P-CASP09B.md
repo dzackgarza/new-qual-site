@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP09B
 kind: problem
-title: "Counting zeros of z^7 + 2z^3 + 4 in the first quadrant"
+title: 'Zeros of $z^7+2z^3+4$ in the first quadrant'
 classification:
   areas:
   - complex-analysis

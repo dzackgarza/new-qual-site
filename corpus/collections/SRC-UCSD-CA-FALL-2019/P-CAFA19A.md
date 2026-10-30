@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA19A
 kind: problem
-title: "Evaluation of the integral of x^2/(x^4+5x^2+4) via residues"
+title: '$\int_0^\infty x^2/(x^4+5x^2+4)\,dx$ by residues'
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP26C
 kind: problem
-title: "The polynomial 1 + z + az^n has a root in |z| <= 2 for all a and n >= 2"
+title: 'The polynomial $1+z+az^n$ has a root in $\abs z\leq 2$ for all $a$ and all $n\geq 2$'
 classification:
   areas:
   - complex-analysis

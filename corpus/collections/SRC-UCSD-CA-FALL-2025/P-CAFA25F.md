@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA25F
 kind: problem
-title: "Positive harmonic functions on C and on C\\{0} are constant"
+title: 'Constancy of positive harmonic functions on simply connected regions and on $\CC\setminus\theset{0}$'
 classification:
   areas:
   - complex-analysis

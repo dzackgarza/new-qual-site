@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP21B
 kind: problem
-title: "Polynomial approximation of z-bar on arcs and the full unit circle"
+title: 'Polynomial approximation of $\bar z$ on arcs and on the unit circle'
 classification:
   areas:
   - complex-analysis

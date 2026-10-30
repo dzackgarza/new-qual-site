@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP26E
 kind: problem
-title: "Bounded harmonic function on |z|>1 with u<=0 on |z|=1 is non-positive"
+title: 'A bounded harmonic function on $\abs z>1$ with $u\leq 0$ on $\abs z=1$ is nonpositive'
 classification:
   areas:
   - complex-analysis

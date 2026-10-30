@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP26A
 kind: problem
-title: "The series of f^{(n)}/n! defines an entire function"
+title: 'The series $\sum_n f^{(n)}(z)/n!$ defines an entire function'
 classification:
   areas:
   - complex-analysis

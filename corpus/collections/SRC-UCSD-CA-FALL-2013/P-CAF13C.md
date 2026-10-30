@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAF13C
 kind: problem
-title: "A holomorphic map of the unit disk with sup norm ≤ 1 has a unique fixed point"
+title: 'A holomorphic $f$ with $\abs f\leq 1$ on $\partial\DD$ and no fixed point there has exactly one fixed point in $\DD$'
 classification:
   areas:
   - complex-analysis

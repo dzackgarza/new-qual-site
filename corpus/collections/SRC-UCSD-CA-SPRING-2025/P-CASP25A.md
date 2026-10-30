@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP25A
 kind: problem
-title: "Bound on |f(0)| + |f'(0)| implies at least two zeros in D"
+title: 'If $\abs{f(0)}+\abs{f''(0)}<\min_{\abs z=1}\abs f$, then $f$ has at least two zeros in $\DD$'
 classification:
   areas:
   - complex-analysis

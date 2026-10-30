@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP05E
 kind: problem
-title: "Roots of z^n - e^{z-λ} = 0 via Rouché's theorem"
+title: 'Roots of $z^n=e^{z-\lambda}$ by Rouché''s theorem'
 classification:
   areas:
   - complex-analysis

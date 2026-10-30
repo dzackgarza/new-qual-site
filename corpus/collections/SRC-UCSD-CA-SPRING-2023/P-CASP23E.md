@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP23E
 kind: problem
-title: "Rational approximation of cos(z)/(z(z-5)) on the annulus 3<=|z|<=4"
+title: 'Rational approximation of $\cos z/(z(z-5))$ on the annulus $3\leq\abs z\leq 4$'
 classification:
   areas:
   - complex-analysis

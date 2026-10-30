@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA20A
 kind: problem
-title: "Contour integral of sin(izπ/2)/(z^2+1) around a circle"
+title: '$\oint_{\abs{z-i/2}=1}\sin(i\pi z/2)/(z^2+1)\,dz$'
 classification:
   areas:
   - complex-analysis

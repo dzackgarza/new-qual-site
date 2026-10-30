@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP05F
 kind: problem
-title: "Analytic square root of z^2 - 1 on the complement of [-1,1]"
+title: 'A holomorphic square root of $z^2-1$ on $\CC\setminus[-1,1]$'
 classification:
   areas:
   - complex-analysis

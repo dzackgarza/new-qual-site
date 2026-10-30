@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP17F
 kind: problem
-title: "Count roots of z^87 + 36z^57 + 71z^4 + z^3 - z + 1 in the annulus 1 <= |z| <= 2"
+title: 'Roots of $z^{87}+36z^{57}+71z^4+z^3-z+1$ in the annulus $1\leq\abs z\leq 2$'
 classification:
   areas:
   - complex-analysis

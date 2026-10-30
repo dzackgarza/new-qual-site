@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA16B
 kind: problem
-title: "Convergence of the series Σ f(z^n) for a self-map of the unit disk"
+title: 'Convergence of $\sum_n f(z^n)$ for a self-map $f$ of $\DD$ with $f(0)=0$'
 classification:
   areas:
   - complex-analysis

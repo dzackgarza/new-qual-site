@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP26B
 kind: problem
-title: "Bound on an even holomorphic function on D with f(0)=0 and |f|<2000"
+title: '$\abs{f(z)}\leq 2000\abs z^2$ for an even holomorphic $f$ on $\DD$ with $f(0)=0$ and $\abs f<2000$'
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA25A
 kind: problem
-title: "Count zeros of z^4 - 6z + 3 in the annulus 1 < |z| < 2"
+title: 'Zeros of $z^4-6z+3$ in the annulus $1<\abs z<2$'
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP13C
 kind: problem
-title: "Laurent series expansions of 1/(z^3 - 4z) in two annuli"
+title: 'Laurent series of $1/(z^3-4z)$ on two annuli'
 classification:
   areas:
   - complex-analysis

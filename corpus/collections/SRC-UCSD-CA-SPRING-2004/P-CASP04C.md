@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP04C
 kind: problem
-title: "Meromorphic functions satisfying |f + g| ≤ |g| are proportional"
+title: 'Meromorphic functions with $\abs{f+g}\leq\abs{g}$ are proportional'
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP15D
 kind: problem
-title: "Evaluate the integral of log(x)/(x^2 - 1) from 0 to infinity"
+title: '$\int_0^\infty \log x/(x^2-1)\,dx$'
 classification:
   areas:
   - complex-analysis

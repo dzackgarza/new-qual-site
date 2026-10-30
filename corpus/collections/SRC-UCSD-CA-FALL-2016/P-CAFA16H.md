@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA16H
 kind: problem
-title: "An L^2 harmonic function on C satisfies the mean value property and must be zero"
+title: 'An $L^2$ harmonic function on $\CC$ is zero'
 classification:
   areas:
   - complex-analysis

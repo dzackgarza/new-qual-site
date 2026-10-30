@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP11E
 kind: problem
-title: "Vanishing of the contour integral of e^{iz}/log(z) over a quarter circle"
+title: 'The integral of $e^{iz}/\log z$ over a quarter circle of radius $R$ tends to $0$'
 classification:
   areas:
   - complex-analysis

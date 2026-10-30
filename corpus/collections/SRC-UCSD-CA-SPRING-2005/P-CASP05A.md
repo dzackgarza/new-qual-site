@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP05A
 kind: problem
-title: "Counting roots of z^5(z-2) = w in the unit disk and in B(2,1)"
+title: 'Roots of $z^5(z-2)=w$ in the unit disc and in $B(2,1)$'
 classification:
   areas:
   - complex-analysis

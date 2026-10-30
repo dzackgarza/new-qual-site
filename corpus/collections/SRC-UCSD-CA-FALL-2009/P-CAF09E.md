@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAF09E
 kind: problem
-title: "Evaluation of the integral of x/(x^4+1) via residue theory"
+title: '$\int_0^\infty x/(x^4+1)\,dx$ by residues'
 classification:
   areas:
   - complex-analysis

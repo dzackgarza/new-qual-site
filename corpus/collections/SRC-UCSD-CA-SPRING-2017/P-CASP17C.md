@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP17C
 kind: problem
-title: "Entire function bounded by 1 + (log(1+|z|))^n is constant"
+title: 'An entire function bounded by $1+(\log(1+\abs z))^n$ is constant'
 classification:
   areas:
   - complex-analysis

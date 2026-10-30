@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA20B
 kind: problem
-title: "Unique real solution of a + z - e^{2z} = 0 in the left half-plane"
+title: 'The unique real zero of $a+z-e^{2z}$ in the left half-plane'
 classification:
   areas:
   - complex-analysis

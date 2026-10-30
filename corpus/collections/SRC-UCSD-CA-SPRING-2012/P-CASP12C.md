@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP12C
 kind: problem
-title: "Schwarz lemma type inequality for f(z) + f(-z)"
+title: 'A Schwarz lemma inequality for $f(z)+f(-z)$'
 classification:
   areas:
   - complex-analysis

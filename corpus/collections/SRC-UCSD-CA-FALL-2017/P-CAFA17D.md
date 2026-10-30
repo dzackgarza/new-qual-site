@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA17D
 kind: problem
-title: "Schwarz lemma on the upper half-plane: maximum of |f(2i)|"
+title: 'Schwarz lemma on the upper half-plane: the maximum of $\abs{f(2i)}$'
 classification:
   areas:
   - complex-analysis

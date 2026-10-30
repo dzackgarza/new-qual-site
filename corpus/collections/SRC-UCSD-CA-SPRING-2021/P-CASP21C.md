@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP21C
 kind: problem
-title: "Maximum |f'(0)| for holomorphic functions omitting negative reals with f(0)=1"
+title: 'The maximum of $\abs{f''(0)}$ over holomorphic functions omitting $(-\infty,0]$ with $f(0)=1$'
 classification:
   areas:
   - complex-analysis

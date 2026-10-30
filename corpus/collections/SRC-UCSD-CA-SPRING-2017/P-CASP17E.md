@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP17E
 kind: problem
-title: "Holomorphic functions on D with f(0)=1 and Re f > 0 form a normal family"
+title: 'Holomorphic functions on $\DD$ with $f(0)=1$ and $\Re f>0$ form a normal family'
 classification:
   areas:
   - complex-analysis

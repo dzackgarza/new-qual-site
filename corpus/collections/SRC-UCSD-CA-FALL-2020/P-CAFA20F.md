@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA20F
 kind: problem
-title: "Weierstrass product representation of z - sin z"
+title: 'Weierstrass product for $z-\sin z$'
 classification:
   areas:
   - complex-analysis

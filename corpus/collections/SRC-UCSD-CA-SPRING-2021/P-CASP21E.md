@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP21E
 kind: problem
-title: "No bounded holomorphic functions on D with zeros at a_n = 1 - 1/n for n >= 2"
+title: 'No bounded holomorphic function on $\DD$ has zero set $\theset{1-1/n \st n\geq 2}$'
 classification:
   areas:
   - complex-analysis

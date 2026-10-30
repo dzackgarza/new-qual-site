@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA17F
 kind: problem
-title: "Mean value formula for log|z - a| and subharmonicity of a series"
+title: 'The mean value of $\log\abs{z-a}$ on circles and subharmonicity of a series'
 classification:
   areas:
   - complex-analysis

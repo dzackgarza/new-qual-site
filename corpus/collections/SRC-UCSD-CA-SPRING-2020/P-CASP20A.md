@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP20A
 kind: problem
-title: "Count roots of pi^2 z^5 e^{-2z} - 1 in the unit disk"
+title: 'Roots of $\pi^2z^5e^{-2z}-1$ in the unit disc'
 classification:
   areas:
   - complex-analysis

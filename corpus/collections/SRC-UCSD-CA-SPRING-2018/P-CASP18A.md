@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP18A
 kind: problem
-title: "Entire function bounded by e^{Re z} is either identically zero or never zero"
+title: 'An entire function with $\abs f\leq e^{\Re z}$ is identically zero or never zero'
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA16A
 kind: problem
-title: "An entire function with f(z) → ∞ must be a polynomial"
+title: 'An entire function with $f(z)\to\infty$ as $z\to\infty$ is a polynomial'
 classification:
   areas:
   - complex-analysis

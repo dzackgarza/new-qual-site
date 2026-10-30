@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAF13B
 kind: problem
-title: "Evaluation of the integral of cos(x)/(1+x^2) via residues"
+title: '$\int_{-\infty}^\infty \cos x/(1+x^2)\,dx$ by residues'
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA21A
 kind: problem
-title: "Residue computation of (1 - cos x)/x^2"
+title: '$\int_0^\infty (1-\cos x)/x^2\,dx$ by residues'
 classification:
   areas:
   - complex-analysis

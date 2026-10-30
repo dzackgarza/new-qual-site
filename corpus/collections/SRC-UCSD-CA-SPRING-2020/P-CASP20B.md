@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP20B
 kind: problem
-title: "Existence of a holomorphic function with a prescribed derivative on |z|>3"
+title: 'A holomorphic function on $\abs z>3$ with a prescribed derivative'
 classification:
   areas:
   - complex-analysis

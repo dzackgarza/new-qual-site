@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA23D
 kind: problem
-title: "Contour integral of e^{e^{i theta}}"
+title: '$\int_0^{2\pi} e^{e^{i\theta}}\,d\theta$ as a contour integral'
 classification:
   areas:
   - complex-analysis

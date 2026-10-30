@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP07D
 kind: problem
-title: "Counting roots of z^n + z^{-m} = w in a disk via Rouché's theorem"
+title: 'Roots of $z^n+z^{-m}=w$ in a disc by Rouché''s theorem'
 classification:
   areas:
   - complex-analysis

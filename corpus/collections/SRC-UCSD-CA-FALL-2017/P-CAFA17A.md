@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA17A
 kind: problem
-title: "Evaluation of the integral of (log x)^2/(1+x^2) via residues"
+title: '$\int_0^\infty (\log x)^2/(1+x^2)\,dx$ by residues'
 classification:
   areas:
   - complex-analysis

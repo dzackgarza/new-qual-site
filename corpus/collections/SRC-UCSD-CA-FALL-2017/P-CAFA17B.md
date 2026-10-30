@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA17B
 kind: problem
-title: "Minimum modulus bound for holomorphic function approximating e^z/z"
+title: '$\max_{\abs z=1}\abs{f(z)-e^z/z}\geq 1$ for $f$ holomorphic on the closed disc'
 classification:
   areas:
   - complex-analysis

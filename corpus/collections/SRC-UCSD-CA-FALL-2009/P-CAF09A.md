@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAF09A
 kind: problem
-title: "Principal value of the logarithm of e^{3+7i}"
+title: 'Principal value of $\log\qty{e^{3+7i}}$'
 classification:
   areas:
   - complex-analysis

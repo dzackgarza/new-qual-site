@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP18B
 kind: problem
-title: "Residue evaluation of the integral of dt/(t^3 + 1) from 0 to infinity"
+title: '$\int_0^\infty dt/(t^3+1)$ by residues'
 classification:
   areas:
   - complex-analysis

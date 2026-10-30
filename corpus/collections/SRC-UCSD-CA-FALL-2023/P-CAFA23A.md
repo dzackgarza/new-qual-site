@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA23A
 kind: problem
-title: "Partial sums of geometric series converge to (1-z)^{-1}"
+title: 'Partial sums of the geometric series converge to $(1-z)^{-1}$'
 classification:
   areas:
   - complex-analysis

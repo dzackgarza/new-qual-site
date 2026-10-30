@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP20G
 kind: problem
-title: "Positive harmonic functions with h(0)=1 form a normal family"
+title: 'Positive harmonic functions with $h(0)=1$ form a normal family'
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP07E
 kind: problem
-title: "Infinite product convergence and zeros for products of (1 - α_n z^n)"
+title: 'Convergence and zeros of $\prod_n\qty{1-\alpha_n z^n}$'
 classification:
   areas:
   - complex-analysis

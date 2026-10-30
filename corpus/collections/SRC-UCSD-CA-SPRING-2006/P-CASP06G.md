@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP06G
 kind: problem
-title: "Solving the ∂-equation for compactly supported smooth functions"
+title: 'Solving $\partial u/\partial\bar z=\psi$ with compact support when $\psi$ has vanishing moments'
 classification:
   areas:
   - complex-analysis

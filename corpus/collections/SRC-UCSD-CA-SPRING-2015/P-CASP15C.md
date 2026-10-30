@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP15C
 kind: problem
-title: "Count roots of z^4 - 6z + 3 in an annulus"
+title: 'Roots of $z^4-6z+3$ in an annulus'
 classification:
   areas:
   - complex-analysis

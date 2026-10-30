@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA19D
 kind: problem
-title: "Counting roots of z^7 - 2z^5 + b in the unit disk and annulus"
+title: 'Roots of $z^7-2z^5+b$ in $\DD$ and in $1\leq\abs z<2$'
 classification:
   areas:
   - complex-analysis

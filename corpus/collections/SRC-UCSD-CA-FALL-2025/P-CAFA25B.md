@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA25B
 kind: problem
-title: "Punctured disk holomorphic function with |f| <= A|z|^{-3/2} has a simple pole at most"
+title: 'A holomorphic function on a punctured disc with $\abs{f}\leq A\abs{z}^{-3/2}$ has at most a simple pole'
 classification:
   areas:
   - complex-analysis

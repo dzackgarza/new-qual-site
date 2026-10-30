@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA25E
 kind: problem
-title: "If {f(nz)} is a normal family on an annulus, then f is constant"
+title: 'If $\theset{f(nz)}$ is a normal family on an annulus, then $f$ is constant'
 classification:
   areas:
   - complex-analysis

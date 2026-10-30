@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAF09C
 kind: problem
-title: "Evaluation of the infinite product prod(1 - 1/n^2) in two different ways"
+title: 'The product $\prod_{n\geq 2}\qty{1-1/n^2}$ evaluated in two ways'
 classification:
   areas:
   - complex-analysis

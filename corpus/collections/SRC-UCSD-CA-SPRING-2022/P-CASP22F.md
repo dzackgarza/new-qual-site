@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP22F
 kind: problem
-title: "Bounded harmonic function on D with limsup <= 0 except at one boundary point"
+title: 'A bounded harmonic function on $\DD$ with $\limsup\leq 0$ at all but one boundary point'
 classification:
   areas:
   - complex-analysis

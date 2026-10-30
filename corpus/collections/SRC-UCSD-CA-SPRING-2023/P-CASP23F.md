@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP23F
 kind: problem
-title: "Green's function on D\\{a} and failure of the Dirichlet problem"
+title: 'Green''s function on $\DD\setminus\theset{a}$ and failure of the Dirichlet problem'
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP19C
 kind: problem
-title: "Analytic function on B(0,1+epsilon) with |f|<1 on |z|=1 has a unique fixed point in D"
+title: 'A holomorphic function on $B(0,1+\varepsilon)$ with $\abs f<1$ on $\abs z=1$ has a unique fixed point in $\DD$'
 classification:
   areas:
   - complex-analysis

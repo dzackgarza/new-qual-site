@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP21D
 kind: problem
-title: "Bound on |f(0)| for a holomorphic function vanishing at four points in B(0,2)"
+title: 'A bound on $\abs{f(0)}$ for a holomorphic function vanishing at four points of $B(0,2)$'
 classification:
   areas:
   - complex-analysis
