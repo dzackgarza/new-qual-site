@@ -6,7 +6,8 @@ title: Eigenvalues of the skew-symmetric tridiagonal matrix with entries $\pm 1$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
