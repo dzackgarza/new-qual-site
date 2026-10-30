@@ -6,7 +6,8 @@ title: Determinant of the matrix exponential
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

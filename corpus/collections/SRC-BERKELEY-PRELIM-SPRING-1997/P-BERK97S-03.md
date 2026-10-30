@@ -6,7 +6,8 @@ title: A weighted average of an integrable nonnegative function tends to zero
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

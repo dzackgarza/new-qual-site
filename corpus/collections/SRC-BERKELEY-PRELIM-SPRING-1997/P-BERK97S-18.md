@@ -6,7 +6,8 @@ title: Splitting extensions with finite-cyclic and free-abelian quotients
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -28,8 +29,9 @@ audit:
 ::: {.problem}
 Let $H=G/K$ be the quotient of an abelian group $G$ by a subgroup $K$. Prove or disprove:
 
-1. If $H$ is finite cyclic, then $G$ is isomorphic to the direct product $H\times K$.
-2. If $H$ is a direct product of infinite cyclic groups, then $G$ is isomorphic to $H\times K$.
+(a) If $H$ is finite cyclic, then $G$ is isomorphic to the direct product $H\times K$.
+
+(b) If $H$ is a direct product of infinite cyclic groups, then $G$ is isomorphic to $H\times K$.
 :::
 
 ::: {.solution}
@@ -43,7 +45,7 @@ denote the quotient homomorphism.
 
 ::: {.pf-step #s1}
 
-Statement (1) is false.
+Statement (a) is false.
 
 ::: pf-proof
 
@@ -74,7 +76,7 @@ $G\not\cong H\times K$.
 
 ::: {.pf-step #s2}
 
-If the direct product in statement (2) has finitely many factors, write
+If the direct product in statement (b) has finitely many factors, write
 $$
 H=C_1\times\cdots\times C_r,
 $$
@@ -168,7 +170,7 @@ $k=\Phi(k,0)=0$. Therefore $\Phi$ is injective.
 
 ::: {.pf-step #s5}
 
-Under the finite-product interpretation, statement (2) is true:
+Under the finite-product interpretation, statement (b) is true:
 $$
 G\cong H\times K.
 $$
@@ -188,8 +190,8 @@ $K\times H\cong H\times K$.
 
 ::: {.pf-step #s6}
 
-If arbitrary infinite direct products are allowed in statement (2),
-then statement (2) is false in general.
+If arbitrary infinite direct products are allowed in statement (b),
+then statement (b) is false in general.
 
 ::: pf-proof
 
@@ -221,8 +223,8 @@ The conclusions are
 $$
 \boxed{
 \begin{aligned}
-&\text{(1) is false;}\\
-&\text{(2) is true for a finite direct product of infinite cyclic groups,}\\
+&\text{(a) is false;}\\
+&\text{(b) is true for a finite direct product of infinite cyclic groups,}\\
 &\text{and false in general for arbitrary infinite direct products.}
 \end{aligned}
 }
@@ -230,7 +232,7 @@ $$
 
 ::: pf-proof
 
-Step [](#s1){.pf-ref} disproves statement (1). Step [](#s5){.pf-ref} proves statement (2) for the
+Step [](#s1){.pf-ref} disproves statement (a). Step [](#s5){.pf-ref} proves statement (b) for the
 finite-product reading, and step [](#s6){.pf-ref} supplies the infinite-product
 counterexample.
 

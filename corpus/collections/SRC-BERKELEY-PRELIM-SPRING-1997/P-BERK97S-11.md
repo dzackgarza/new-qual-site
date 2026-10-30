@@ -6,7 +6,8 @@ title: Decay of the even solution of $f''=(x^2-1)f$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

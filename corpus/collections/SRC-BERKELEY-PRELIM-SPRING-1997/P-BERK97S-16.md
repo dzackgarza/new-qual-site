@@ -6,7 +6,8 @@ title: A finite-dimensional reduced commutative complex algebra has nontrivial i
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

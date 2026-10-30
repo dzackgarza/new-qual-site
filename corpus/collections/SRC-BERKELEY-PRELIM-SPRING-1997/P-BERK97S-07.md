@@ -6,7 +6,8 @@ title: $AB$ and $BA$ have the same eigenvalues but not the same eigenvectors
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -24,8 +25,9 @@ audit:
 ::: {.problem}
 Let $A,B$ be endomorphisms of a finite-dimensional vector space $V$ over a field $K$. Prove or disprove:
 
-1. Every eigenvector of $AB$ is also an eigenvector of $BA$.
-2. Every eigenvalue of $AB$ is also an eigenvalue of $BA$.
+(a) Every eigenvector of $AB$ is also an eigenvector of $BA$.
+
+(b) Every eigenvalue of $AB$ is also an eigenvalue of $BA$.
 :::
 
 ::: {.solution}
@@ -34,7 +36,7 @@ Let $A,B$ be endomorphisms of a finite-dimensional vector space $V$ over a field
 
 ::: {.pf-step #s1}
 
-Statement (1) is false.
+Statement (a) is false.
 
 ::: pf-proof
 
@@ -118,7 +120,7 @@ eigenvalue of $BA$.
 
 ::: {.pf-step #s4}
 
-Statement (2) is true.
+Statement (b) is true.
 
 ::: pf-proof
 
@@ -131,7 +133,7 @@ Step [](#s2){.pf-ref} proves the claim for every nonzero eigenvalue of $AB$, and
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} disproves statement (1), and step [](#s4){.pf-ref} proves statement (2).
+Step [](#s1){.pf-ref} disproves statement (a), and step [](#s4){.pf-ref} proves statement (b).
 
 :::
 

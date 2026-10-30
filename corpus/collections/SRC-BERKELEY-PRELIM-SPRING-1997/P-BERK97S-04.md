@@ -6,7 +6,8 @@ title: Entire $f,g$ with $\operatorname{Re}f\le k\operatorname{Re}g$ satisfy $f=
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

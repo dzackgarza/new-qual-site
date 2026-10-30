@@ -6,7 +6,8 @@ title: Every ring homomorphism from a full matrix algebra is injective or zero
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

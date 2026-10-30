@@ -6,7 +6,8 @@ title: A vertically shifted Gaussian integral is independent of the shift
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

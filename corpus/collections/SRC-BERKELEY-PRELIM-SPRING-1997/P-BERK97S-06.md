@@ -6,7 +6,8 @@ title: Interpolation basis for a finite-dimensional space of continuous function
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

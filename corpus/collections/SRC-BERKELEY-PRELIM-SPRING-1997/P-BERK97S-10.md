@@ -6,7 +6,8 @@ title: A bounded real function with closed graph is continuous
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

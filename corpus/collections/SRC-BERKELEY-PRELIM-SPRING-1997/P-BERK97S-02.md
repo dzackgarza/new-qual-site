@@ -6,7 +6,8 @@ title: Distance to a closed subset is continuous and detects membership
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

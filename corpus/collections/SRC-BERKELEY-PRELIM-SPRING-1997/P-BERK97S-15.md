@@ -6,7 +6,8 @@ title: Two idempotents with invertible $I-(P+Q)$ have equal rank
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

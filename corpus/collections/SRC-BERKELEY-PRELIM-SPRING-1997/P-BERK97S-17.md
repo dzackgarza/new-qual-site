@@ -6,7 +6,8 @@ title: Order of $GL_2(\ZZ/p^n\ZZ)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
