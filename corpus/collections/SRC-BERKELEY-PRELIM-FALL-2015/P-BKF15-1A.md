@@ -31,11 +31,9 @@ audit:
 
 ::: {.problem}
 Find the real values of $x$ for which
-
 $$
-\sum _ { n = 0 } ^ { \infty } { \frac { ( 1 / 2 ) ( 3 / 2 ) \cdots ( ( 2 n - 1 ) / 2 ) } { n ! } } { ( \frac { 2 x } { 1 + x ^ { 2 } } ) } ^ { 2 n } = 1 + { \frac { 1 } { 2 } } { \bigl ( } { \frac { 2 x } { 1 + x ^ { 2 } } } { \bigr ) } ^ { 2 } + { \frac { 1 } { 2 } } { \frac { 3 } { 4 } } { \bigl ( } { \frac { 2 x } { 1 + x ^ { 2 } } } { \bigr ) } ^ { 4 } + \cdots
+\sum_{n=0}^{\infty} \frac{(1/2)(3/2)\cdots((2n-1)/2)}{n!} \left( \frac{2x}{1 + x^{2}} \right)^{2n} = 1 + \frac{1}{2} \left( \frac{2x}{1 + x^{2}} \right)^{2} + \frac{1}{2} \cdot \frac{3}{4} \left( \frac{2x}{1 + x^{2}} \right)^{4} + \cdots
 $$
-
 converges and sum it for these numbers.
 Caution: there is something unusual about the sum of this series.
 :::

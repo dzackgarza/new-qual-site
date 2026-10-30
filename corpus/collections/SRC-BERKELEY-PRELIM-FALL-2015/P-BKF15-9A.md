@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $x ^ { 3 } - 2 x$ is an injective function from the rational numbers to the rational numbers.
+Show that $x^{3} - 2x$ is an injective function from the rational numbers to the rational numbers.
 :::
 
 ::: {.solution}

@@ -31,15 +31,13 @@ audit:
 ---
 
 ::: {.problem}
-(a) Suppose $z , c _ { 1 } , \ldots , c _ { n }$ are distinct complex numbers, and
-
+(a) Suppose $z, c_{1}, \ldots, c_{n}$ are distinct complex numbers, and
 $$
-{ \frac { 1 } { z - c _ { 1 } } } + \cdots + { \frac { 1 } { z - c _ { n } } } = 0 .
+\frac{1}{z - c_{1}} + \cdots + \frac{1}{z - c_{n}} = 0.
 $$
+Show that $z$ lies in the convex hull of $c_{1}, \ldots, c_{n}$.
 
-Show that $z$ lies in the convex hull of $c_1,\ldots,c_n$.
-
-(b) Let $p ( z )$ be a non-constant polynomial.
+(b) Let $p(z)$ be a non-constant polynomial.
 Show that every zero of $p'(z)$ lies in the convex hull of the zeroes of $p(z)$.
 :::
 

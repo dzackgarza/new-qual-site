@@ -29,13 +29,12 @@ audit:
 ---
 
 ::: {.problem}
-The unit cube in the space $C [ 0 , 1 ]$ of continuous real-valued functions on the interval is defined as the subset
-
+The unit cube in the space $C[0, 1]$ of continuous real-valued functions on the interval is defined as the subset
 $$
-\{ f \in C [ 0 , 1 ] \mid \norm{ f } : = \operatorname* { s u p } _ { 0 \leq t \leq 1 } \abs{ f ( t ) } \leq 1 \} .
+\Big\{ f \in C[0, 1] \;\Big|\; \norm{f} := \sup_{0 \leq t \leq 1} \abs{f(t)} \leq 1 \Big\}.
 $$
 
-Prove that there exists a 2-dimensional linear subspace in $C [ 0 , 1 ]$ whose intersection with the unit cube is a circular disk.
+Prove that there exists a 2-dimensional linear subspace in $C[0, 1]$ whose intersection with the unit cube is a circular disk.
 :::
 
 ::: {.solution}
