@@ -25,7 +25,7 @@ If $I$ is a left ideal of $R$, define
 $$
 IM \coloneqq \theset{ \sum_{i=1}^{N < \infty} a_i m_i \st a_i \in I, m_i \in M, n\in \NN}
 ,$$
-i.e. the set of finite sums of of elements of the form $am$ where $a\in I, m\in M$.
+i.e. the set of finite sums of elements of the form $am$ where $a\in I, m\in M$.
 
 a. Prove that $IM \leq M$ is a submodule.
 

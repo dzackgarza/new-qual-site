@@ -23,116 +23,68 @@ c. Find all subfields of the splitting field of $f(x)$ over $\QQ$.
 :::
 
 ::: {.solution}
-Part a:
 
-- A finite extension $E/F$ is **Galois** if it is normal and separable:
-  - Normal: every $f\in F[x]$ either has no roots in $E$ or all roots in $E$.
-  - Separable: every element $e\in E$ has a separable minimal polynomial $m(x)$, i.e. $m$ has no repeated roots.
+Let $\omega=\sqrt[3]{7}\in\RR$, let $\zeta=\zeta_3=e^{2\pi i/3}$, and let $L=\QQ(\omega,\zeta)$.
 
-Part b:
+::: pf
 
-- Note $f$ is irreducible by Eisenstein with $p=7$, and since $\QQ$ is perfect, irreducible implies separable.
-- Writing $L \coloneqq \SF(f)/\QQ$, this is a Galois extension:
-  - $L$ is separable: it is a finite extension of a perfect field, which is automatically separable.
-  - $L$ is normal: $L$ is the splitting field of a separable polynomial, and thus normal.
-- Since $f$ is degree 3, we have $G\coloneqq \Gal(L/k) \leq S_3$, and since $G$ is a transitive subgroup the only possibilities are
-$$
-G = S_3 \cong D_3, A_3 \cong C_3
-.$$
+::: {.pf-step #def}
 
-- Factor $x^3 - 7 = (x-\omega)(x-\zeta_3\omega)(x-\zeta_3^2\omega)$ where $\omega \coloneqq 7^{1\over 3}$ and $\zeta_3$ is a primitive 3rd root of unity.
-  Then $L = \QQ(\zeta_3, \omega)$.
-  - Aside: label the roots in this order, so $r_1 = \omega, r_2 = \zeta_3\omega, r_3 = \zeta_3^2\omega$.
-
-- Write $\min_{\omega, \QQ}(x) = x^3 - 7$ and let $L_0/\QQ \coloneqq \QQ(\omega)/\QQ$ yields $[L_0: \QQ] = 3$.
-- Write $\min_{\zeta_3, \QQ}(x) = (x^3-1)/(x-1) = x^2 + x + 1$, and note that this is still the minimal polynomial over $L_0$ since $L_0 \subseteq \RR$ and $\zeta_3 \in \CC\sm\RR$.
-  So $[L:L_0] = 2$.
-
-- Counting in towers,
-$$
-[L:\QQ] = [L:L_0][L_0: \QQ] = (2)(3) = 6
-.$$
-- But $\size S_3 = 6$ and $\size A_3 = 3$, so $G = S_3$.
-
-- Explicitly, since we can write $\SF(f) = \QQ(\omega, \zeta_3)$, we can find explicit generators:
-$$
-\sigma:
-&\begin{cases}
-\omega &\mapsto \omega
-\\
-\zeta_3 &\mapsto \zeta_3\cdot \zeta_3.
-\end{cases}
-&&
-\implies \sigma \sim (1,2,3) \\
-\tau:
-&\begin{cases}
-\omega &\mapsto \omega
-\\
-\zeta_3 &\mapsto \bar{\zeta_3}.
-\end{cases}
-&&
-\implies \tau \sim (2, 3)
-.$$
-  So $G = \generators{\sigma, \tau \st \sigma^3, \tau^2}$.
-
-Part c:
-
-- Note that the subgroup lattice for $S_3$ looks like the following:
-
-
-![](../../assets/figures/2021-08-14_18-00-51.png)
-
-- Note that we can identify
-  - $\tau = (2,3)$ which fixes $r_1$
-  - $\sigma \tau = (1,2)$ which fixes $r_3$
-  - $\sigma^2\tau = (1, 3)$ which fixes $r_2$
-  - $\sigma = (1,2,3)$, for which we need to calculate the fixed field.
-  Using that $\sigma(\omega) =\zeta\omega$ and $\sigma(\zeta)=\zeta$,
-  supposing $\sigma(\alpha) = \alpha$ we have
-  $$
-  \sigma(\alpha) &\coloneqq \sigma(a + b\zeta_3 + c\zeta_3^2 + d\omega + e\zeta_3\omega + f\zeta_3^2\omega) \\
-  &= a + b\zeta_3 + c\zeta_3^2 + d\zeta_3\omega + e\zeta_3^2\omega + f\omega \\
-  \implies \alpha &= a + b\zeta_3 + c\zeta_3^2 + t_1(\omega + \zeta_3\omega + \zeta_3^2\omega) \\
-  \implies \alpha &= a + b\zeta_3 + c\zeta_3^2 + t_1\omega (1 + \zeta_3+ \zeta_3^2) \\
-  \implies \alpha &= a + b\zeta_3 + c\zeta_3^2 
-  ,$$
-  using the general fact that $\sum_{k=0}^{n-1}\zeta_n^k = 0$.
-  So the fixed field is $\QQ(1, \zeta, \zeta^2) = \QQ(\zeta)$.
-
-- We thus get the following lattice correspondence:
-
-\begin{tikzcd}
-	&& {\QQ(\zeta_3,\omega)} \\
-	\\
-	{\QQ(\omega) = \QQ(r_1)} & {\QQ(\zeta_3\omega) = \QQ(r_2)} & {\QQ(\zeta_3^2\omega) = \QQ(r_3)} && {\QQ(\zeta_3)} \\
-	\\
-	&& \QQ \\
-	&& 1 \\
-	\\
-	{\generators{(2,3) = \tau} \cong C_2} & {\generators{(1,3) = \sigma^2\tau} \cong C_2} & {\generators{(1,2) = \sigma\tau} \cong C_2} && {\generators{(1,2,3) = \sigma} \cong C_3} \\
-	\\
-	&& {\generators{\sigma, \tau}\cong S_3}
-	\arrow["3"{description}, from=5-3, to=3-1]
-	\arrow["3"{description}, from=5-3, to=3-3]
-	\arrow["2"{description}, from=3-1, to=1-3]
-	\arrow["2"{description}, from=3-2, to=1-3]
-	\arrow["2"{description}, from=3-3, to=1-3]
-	\arrow["2"{description}, from=5-3, to=3-5]
-	\arrow["3"{description}, from=3-5, to=1-3]
-	\arrow["3"{description}, from=5-3, to=3-2]
-	\arrow["2"{description}, from=6-3, to=8-1]
-	\arrow["3"{description}, from=8-1, to=10-3]
-	\arrow["3"{description}, from=8-3, to=10-3]
-	\arrow["2"{description}, from=6-3, to=8-3]
-	\arrow["3"{description}, from=6-3, to=8-5]
-	\arrow["2"{description}, from=8-5, to=10-3]
-	\arrow["3"{description}, from=8-2, to=10-3]
-	\arrow["2"{description}, from=6-3, to=8-2]
-\end{tikzcd}
-
-> [Link to Diagram](https://q.uiver.app/?q=WzAsMTIsWzIsMCwiXFxRUShcXHpldGFfMyxcXG9tZWdhKSJdLFswLDIsIlxcUVEoXFxvbWVnYSkgPSBcXFFRKHJfMSkiXSxbMiwyLCJcXFFRKFxcemV0YV8zXjJcXG9tZWdhKSA9IFxcUVEocl8zKSJdLFsyLDQsIlxcUVEiXSxbMSwyLCJcXFFRKFxcemV0YV8zXFxvbWVnYSkgPSBcXFFRKHJfMikiXSxbNCwyLCJcXFFRKFxcemV0YV8zKSJdLFswLDcsIlxcZ2Vuc3soMiwzKSA9IFxcdGF1fSBcXGNvbmcgQ18yIl0sWzIsOSwiXFxnZW5ze1xcc2lnbWEsIFxcdGF1fVxcY29uZyBTXzMiXSxbMiw1LCIxIl0sWzIsNywiXFxnZW5zeygxLDIpID0gXFxzaWdtYVxcdGF1fSBcXGNvbmcgQ18yIl0sWzQsNywiXFxnZW5zeygxLDIsMykgPSBcXHNpZ21hfSBcXGNvbmcgQ18zIl0sWzEsNywiXFxnZW5zeygxLDMpID0gXFxzaWdtYV4yXFx0YXV9IFxcY29uZyBDXzIiXSxbMywxLCIzIiwxXSxbMywyLCIzIiwxXSxbMSwwLCIyIiwxXSxbNCwwLCIyIiwxXSxbMiwwLCIyIiwxXSxbMyw1LCIyIiwxXSxbNSwwLCIzIiwxXSxbMyw0LCIzIiwxXSxbOCw2LCIyIiwxXSxbNiw3LCIzIiwxXSxbOSw3LCIzIiwxXSxbOCw5LCIyIiwxXSxbOCwxMCwiMyIsMV0sWzEwLDcsIjIiLDFdLFsxMSw3LCIzIiwxXSxbOCwxMSwiMiIsMV1d)
-
-
+A finite extension $E/F$ is Galois when it is normal and separable. Equivalently, $\cardinality{\Aut(E/F)}=[E:F]$, or $E$ is the splitting field over $F$ of a separable polynomial.
 
 :::
 
+::: {.pf-step #split}
+
+$L$ is the splitting field of $f$ over $\QQ$, and $[L:\QQ]=6$.
+
+::: pf-proof
+
+The roots of $f$ are $r_1=\omega$, $r_2=\zeta\omega$ and $r_3=\zeta^2\omega$. They lie in $L$, and $\omega=r_1$ and $\zeta=r_2/r_1$ lie in the field they generate, so $L$ is the splitting field. The polynomial $f$ is Eisenstein at $7$, so $[\QQ(\omega):\QQ]=3$. The minimal polynomial of $\zeta$ over $\QQ$ is $x^2+x+1$, and $\zeta\notin\QQ(\omega)\subseteq\RR$, so $[L:\QQ(\omega)]=2$. By the tower law $[L:\QQ]=6$.
+
+:::
+
+:::
+
+::: {.pf-step #group}
+
+$\Gal(L/\QQ)\cong S_3$, acting on $r_1,r_2,r_3$.
+
+::: pf-proof
+
+$L/\QQ$ is the splitting field of the separable polynomial $f$ (characteristic $0$), so it is Galois and its group $G$ has order $6$ by Step [](#split){.pf-ref}. $G$ acts faithfully on the three roots, so $G$ embeds in $S_3$, and the orders force $G\cong S_3$. Explicitly, $G$ is generated by
+$$
+\sigma:\ \omega\mapsto\zeta\omega,\ \zeta\mapsto\zeta,
+\qquad
+\tau:\ \omega\mapsto\omega,\ \zeta\mapsto\zeta^2,
+$$
+with $\sigma=(1\,2\,3)$ and $\tau=(2\,3)$ on the roots, and $\sigma^3=\tau^2=1$, $\tau\sigma\tau^{-1}=\sigma^{-1}$.
+
+:::
+
+:::
+
+::: {.pf-step #subfields}
+
+The subfields of $L$ are
+$$
+\boxed{\QQ,\quad \QQ(\zeta),\quad \QQ(\omega),\quad \QQ(\zeta\omega),\quad \QQ(\zeta^2\omega),\quad L.}
+$$
+
+::: pf-proof
+
+By the Galois correspondence, the subfields correspond to the subgroups of $S_3$: the trivial group, $\langle\sigma\rangle$, the three subgroups of order $2$, and $S_3$. The fixed field of $S_3$ is $\QQ$ and that of the trivial group is $L$. The field $\QQ(\zeta)$ has degree $2$ and is fixed by $\sigma$, so it is the fixed field of $\langle\sigma\rangle$, which has index $2$. The transposition fixing $r_i$ fixes $\QQ(r_i)$, which has degree $3$, so $\QQ(r_i)$ is the fixed field of that subgroup of index $3$. The three fields $\QQ(r_i)$ are distinct because their subgroups are distinct.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#def){.pf-ref}, [](#group){.pf-ref} and [](#subfields){.pf-ref} answer parts (a), (b) and (c).
+
+:::
+
+:::
+
+:::

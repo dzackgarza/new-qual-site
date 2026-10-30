@@ -48,54 +48,55 @@ N_G(P) = \theset{g\in G \st gP\inverseof{g} = P}
 :::
 
 ::: {.solution}
-\envlist
 
-- Reduce to a group theory problem: $[E:F] = [G:H]$, despite the fact that $E/F$ is not necessarily Galois.
-  This is because we can count in towers:
-  $$
-  [K:F] = [K:E][E:F] &\implies [G:1] = [K:E][H:1] \\
-  &\implies \size G = [K:E] \size H \\
-  &\implies [G:H] = {\size G \over \size H} = [K:E]
-  .$$
+::: pf
 
-- Essential fact: if $P \in \Syl_p(G)$, we can use that $P \subseteq N_G(P) \subset H$ and so $P\in \Syl_p(H)$ as well.
+::: {.pf-step #index}
 
-- Now use that $N_G(P) \subseteq H$, and do Sylow theory for $P$ in both $G$ and $H$:
+$[E:F]=[G:H]$.
 
-  - Sylow 3 on $G$ yields $n_p(G) = [G: N_G(P)] \equiv 1 \mod p$.
+::: pf-proof
 
-  - Sylow 3 on $H$ yields $n_p(H) = [G: N_H(P)] \equiv 1 \mod p$.
+$K/F$ is Galois, so $K/E$ is Galois, $\cardinality{G}=[K:F]$ and $\cardinality{H}=[K:E]$. By the tower law $[E:F]=[K:F]/[K:E]=\cardinality{G}/\cardinality{H}$.
 
-- Claim: $N_H(P) = N_G(P)$.
+:::
 
-  - We have $N_H(P) \subseteq N_G(P)$ since $H \subseteq G$, so $hP\inverseof{h} = P$ remains true regarding either $h\in H$ or $h\in G$.
+:::
 
-  - For $N_G(P) \subseteq N_H(P)$, use that $N_G(P) \subseteq H$ and so $gP\inverseof{g} = P$ implies $g\in H$, so $g\in N_H(P)$.
+::: {.pf-step #normalizers}
 
-- Now morally one might want to apply an isomorphism theorem:
+$P\in\Syl_p(H)$ and $N_H(P)=N_G(P)$.
+
+::: pf-proof
+
+$P\subseteq N_G(P)\subseteq H\subseteq G$, and a $p$-subgroup of $H$ of maximal $p$-power order in $G$ is a Sylow $p$-subgroup of $H$. Next, $N_H(P)=N_G(P)\cap H=N_G(P)$ because $N_G(P)\subseteq H$.
+
+:::
+
+:::
+
+::: {.pf-step #count}
+
+$[G:N_G(P)]\equiv1\pmod p$ and $[H:N_H(P)]\equiv1\pmod p$.
+
+::: pf-proof
+
+By Sylow's theorems, the number of Sylow $p$-subgroups of a finite group is the index of the normalizer of one of them and is $\equiv1\pmod p$. Apply this to $G$ and, by Step [](#normalizers){.pf-ref}, to $H$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Let $N=N_G(P)=N_H(P)$. Then
 $$
-{G/ N_G(P) \over H/N_H(P)}=
-{G/ N_H(P) \over H/N_H(P)}\cong
-{G\over H}
-,$$
-  but we don't have normality.
-  However, we can still get away with the corresponding counting argument if everything is finite:
-  $$
-  {[G: N_G(P)] \over [H:N_H(P)] }=
-  {[G: N_H(P)] \over [H:N_H(P)] }=
-  {\size G / \size N_H(P) \over \size H / \size N_H(P)}
-  = {\size G \over \size H} 
-  = [G: H]
-  .$$
+[G:N]=[G:H]\,[H:N].
+$$
+Reducing modulo $p$ with Step [](#count){.pf-ref} gives $1\equiv[G:H]\cdot1$, so $[G:H]\equiv1\pmod p$. By Step [](#index){.pf-ref}, $[E:F]\equiv1\pmod p$.
 
-- We have an equation of the form $n_p(G)/n_p(H) = m$, and we want to show $m\equiv 1 \mod p$.
-  So write
-  $$
-  {n_p(G) \over n_p(H) } 
-  = m \implies m n_p(H) &= n_p(G) \\
-  \implies m n_p(H) &\equiv n_p(G) \mod p \\
-  \implies m\cdot 1 &\equiv 1 \mod p \\
-  \implies m &\equiv 1 \mod p
-  .$$
+:::
+
+:::
 
 :::
