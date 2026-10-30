@@ -6,7 +6,8 @@ title: Solutions of $f(2x)=2f(x)$ differentiable at the origin are linear
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

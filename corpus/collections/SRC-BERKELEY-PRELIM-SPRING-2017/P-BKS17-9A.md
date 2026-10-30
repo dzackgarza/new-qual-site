@@ -6,7 +6,8 @@ title: Bell numbers grow slower than $n!$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Existence and uniqueness of polynomial interpolation
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

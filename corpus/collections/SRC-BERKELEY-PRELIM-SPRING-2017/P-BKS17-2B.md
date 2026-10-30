@@ -6,7 +6,8 @@ title: A continuous function with vanishing moments on $[-1,1]$ is zero
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

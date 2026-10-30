@@ -6,7 +6,8 @@ title: All values of $i^i$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

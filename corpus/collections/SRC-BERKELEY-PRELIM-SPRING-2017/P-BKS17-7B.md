@@ -6,7 +6,8 @@ title: Upper triangular solutions of $E^TR+R^TE=A$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

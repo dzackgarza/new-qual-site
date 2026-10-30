@@ -6,7 +6,8 @@ title: Elements of order 20 and 18 in $S_9$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

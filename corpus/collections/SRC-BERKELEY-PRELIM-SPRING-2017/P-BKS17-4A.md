@@ -6,7 +6,8 @@ title: Legendre's relation for the Weierstrass zeta function
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

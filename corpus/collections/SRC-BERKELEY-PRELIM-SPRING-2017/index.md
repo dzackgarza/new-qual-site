@@ -11,7 +11,6 @@ relations: []
 review: draft
 provenance:
 - assets/attachments/Sp17_Exam_0.pdf
-- assets/attachments/Sp17_Solutions.pdf
 source:
   source_kind: university-exam
   institution: berkeley

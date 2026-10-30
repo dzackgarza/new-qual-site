@@ -6,7 +6,8 @@ title: Orthogonal matrices mapping one vector to another of equal norm
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

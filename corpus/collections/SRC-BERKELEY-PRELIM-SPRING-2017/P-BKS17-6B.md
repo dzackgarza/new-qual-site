@@ -6,7 +6,8 @@ title: Low-rank approximation of the matrix $f(t_is_j)$ for analytic $f$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

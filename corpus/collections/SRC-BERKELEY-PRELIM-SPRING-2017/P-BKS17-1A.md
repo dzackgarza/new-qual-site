@@ -6,7 +6,8 @@ title: $\int_{-\infty}^\infty\sin x/x\,dx=\int_{-\infty}^\infty\sin^2x/x^2\,dx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

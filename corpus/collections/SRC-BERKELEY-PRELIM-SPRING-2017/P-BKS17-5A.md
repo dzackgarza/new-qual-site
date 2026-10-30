@@ -6,7 +6,8 @@ title: Power series with coefficients satisfying $3a_n+4a_{n-1}-a_{n-2}=0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

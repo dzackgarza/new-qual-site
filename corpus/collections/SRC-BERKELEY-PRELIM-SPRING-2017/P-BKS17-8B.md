@@ -6,7 +6,8 @@ title: Structure of $(\ZZ/1000000\ZZ)^\times$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

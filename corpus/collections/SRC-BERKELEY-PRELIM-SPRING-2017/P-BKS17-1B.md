@@ -6,7 +6,8 @@ title: Functions whose derivative equals every symmetric difference quotient
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

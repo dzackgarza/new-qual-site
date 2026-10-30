@@ -6,7 +6,8 @@ title: Power sums $\sum_{k=0}^n k^p$ are polynomials of degree $p+1$ in $n$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

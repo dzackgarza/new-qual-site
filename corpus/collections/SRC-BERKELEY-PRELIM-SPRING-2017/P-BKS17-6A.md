@@ -6,7 +6,8 @@ title: $\det e^A=e^{\operatorname{tr}A}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

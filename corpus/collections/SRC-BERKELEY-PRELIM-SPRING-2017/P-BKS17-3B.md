@@ -6,7 +6,8 @@ title: Maximal degree of exactness and positive weights of quadrature rules
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

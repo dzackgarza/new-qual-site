@@ -6,7 +6,8 @@ title: Positive functions satisfying $\int_x^y f(x)f(y)/f(t)^2\,dt=\sin(y-x)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
