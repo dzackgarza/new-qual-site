@@ -548,7 +548,7 @@ mathematical correction under its own node, not under copy policy.
       1A); merge, survivor listed by both collections.
     - [x] CARD-04: P-BKS21-3A and P-BKF10-5A; same.
     - [x] CARD-04: P-BKS21-4A and P-BKF10-7B; same.
-    - [ ] P-UCLAB06W-09: the paper prints $A = A^t$, the card silently reads $A^{-1} = A^t$; the
+    - [x] P-UCLAB06W-09: the paper prints $A = A^t$, the card silently reads $A^{-1} = A^t$; the
       printed statement is false (diag(2,2,1/4)). Transcribe the printed hypothesis and record
       the correction in a remark.
     - [ ] P-UCLAB06W-03: the paper prints prefactor $1/n$, the card silently reads $(b-a)/n$;

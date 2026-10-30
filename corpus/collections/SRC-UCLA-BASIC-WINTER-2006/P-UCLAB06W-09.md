@@ -28,6 +28,12 @@ Let $A\in\Mat_3(\RR)$ be invertible and satisfy $A^{-1}=A^t$ and $\det A=1$.
 Prove that $A$ has $1$ as an eigenvalue.
 :::
 
+::: {.remark title="Erratum"}
+The exam prints the hypothesis $A=A^t$ in place of $A^{-1}=A^t$.
+Under that hypothesis the claim is false: $A=\operatorname{diag}(2,2,1/4)$ is symmetric and invertible with $\det A=1$, and its eigenvalues are $2$, $2$ and $1/4$.
+The statement above assumes the orthogonality condition $A^{-1}=A^t$.
+:::
+
 ::: {.solution}
 
 ::: pf
