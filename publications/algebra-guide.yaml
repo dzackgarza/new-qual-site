@@ -639,7 +639,6 @@ sections:
       - ref: D-O4WWN
       - ref: D-5BR4D
       - ref: D-H4TDM
-      - ref: D-RG5FO
       - ref: PR-WDPF7
       - ref: D-NRRIT
       - ref: D-SSGKC
