@@ -740,7 +740,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/group-actions/index.md
   - [x] wiki/algebra/group-actions/orbit-stabilizer.md
   - [x] wiki/algebra/group-actions/show-g-is-not-simple.md
-  - [ ] wiki/algebra/group-actions/sylow.md
+  - [x] wiki/algebra/group-actions/sylow.md
   - [ ] wiki/algebra/group-actions/the-class-equation.md
   - [ ] wiki/algebra/groups/basics.md
   - [ ] wiki/algebra/groups/characteristic-subgroups.md
