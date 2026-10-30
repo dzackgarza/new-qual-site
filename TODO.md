@@ -781,7 +781,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/resources/rings-and-ideals.md
   - [x] wiki/algebra/resources/solutions-algebra.md
   - [x] wiki/algebra/resources/syllabus.md
-  - [ ] wiki/algebra/review.md
+  - [x] wiki/algebra/review.md
   - [ ] wiki/algebra/rings-and-ideals/commutative-algebra.md
   - [ ] wiki/algebra/rings-and-ideals/domains-and-factorization.md
   - [ ] wiki/algebra/rings-and-ideals/ideals-and-quotients.md
