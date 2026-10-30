@@ -246,7 +246,7 @@ $$
 
 ::: pf-proof
 
-Necessity follows from steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} explicitly realize every surface on the list.
+Necessity follows from steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}, and steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} explicitly realize every surface on the list.
 
 :::
 
