@@ -730,7 +730,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/fields/index.md
   - [x] wiki/algebra/fields/polynomials.md
   - [x] wiki/algebra/fields/review-sheet-1.md
-  - [ ] wiki/algebra/fields/separability.md
+  - [x] wiki/algebra/fields/separability.md
   - [ ] wiki/algebra/fields/splitting-and-normal.md
   - [ ] wiki/algebra/galois-theory/compute-this-galois-group.md
   - [ ] wiki/algebra/galois-theory/cyclotomic-and-radical-extensions.md
