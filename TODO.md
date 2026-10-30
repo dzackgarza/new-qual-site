@@ -473,7 +473,7 @@ mathematical correction under its own node, not under copy policy.
     P-AZOFF-G04, P-TIE-F11-02, E-SS2.EX-2, P-PSIBT, UNSORTED-COMPLEX "Rudin 10.4" comments);
     T-ZO5UU and T-SSNLT alt text; the 40 complex UCSD titles with a bare `^`
     (P-CAF09A through P-CASP26C); P-UCLARA14S-12 is a complex problem filed as real analysis.
-    **Acceptance:** each read and repaired, or kept with the reason.
+    **Acceptance:** each read and repaired, or kept with the reason. **Closed.** Kept: E-SS1.EX-19 id (ids are not renamed); corpus-wide `STYLE-04` forms are codemod work in COMPLAINTS.md.
 
   Round 3 (revision `5ba163ac9`, real analysis) injected the node below; `audited-deployment`
   needs it.
