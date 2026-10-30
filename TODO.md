@@ -687,6 +687,13 @@ mathematical correction under its own node, not under copy policy.
     - [x] P-F04L8: the statement adds "oriented counterclockwise", which the paper does not print.
     **Acceptance:** each item read and repaired. **Closed.** The P-BKS93-05 paper asks for "a solution", so the literal answer stays; a remark solves the nonzero reading, with $1\le m\le 2k$ ($m=2k$ is $c=0$).
 
+  - **`ad8-prelim`**. **Needs:** none. Round 8 at 4529fee3cb; report in the session scratchpad r8-prelim.md.
+    - [ ] P-F03P2: the paper's matrix is (1 2; 2/9 1); the card, title and solution use 1/2. Correct and re-solve.
+    - [ ] SRC-BERKELEY-PRELIM-SUMMER-1984 (all 20 cards) and SRC-BERKELEY-PRELIM-FALL-2016 (most cards): statements are untranscribed MinerU residue (lost arrows, \binom for a matrix, "C {0}", \boldsymbol). Transcribe each statement against the paper, one card at a time.
+    - [ ] P-IMYQU: the solution display drops its line breaks and is clipped; the integrals lack dx.
+    - [ ] P-SK4KT: a garbled sentence about the eigendecomposition in the solution.
+    **Acceptance:** each item read and repaired.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
