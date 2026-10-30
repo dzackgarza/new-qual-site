@@ -197,3 +197,7 @@ Step [](#s3){.pf-ref}.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The Fall 2020 exam asks for $H_k$ for all $k \geq 0$ and requires the computation of $H_k(\RP^2;\ZZ)$ to be shown.
+:::

@@ -528,7 +528,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-TOP-FALL-2017
   - [x] SRC-UCSD-TOP-FALL-2018
   - [x] SRC-UCSD-TOP-FALL-2019
-  - [ ] SRC-UCSD-TOP-FALL-2020
+  - [x] SRC-UCSD-TOP-FALL-2020
   - [ ] SRC-UCSD-TOP-FALL-2021
   - [ ] SRC-UCSD-TOP-FALL-2022
   - [ ] SRC-UCSD-TOP-FALL-2023
