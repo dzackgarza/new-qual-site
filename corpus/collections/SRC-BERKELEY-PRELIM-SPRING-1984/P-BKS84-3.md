@@ -5,7 +5,8 @@ kind: problem
 title: A differential inequality with zero boundary data forces nonpositivity
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

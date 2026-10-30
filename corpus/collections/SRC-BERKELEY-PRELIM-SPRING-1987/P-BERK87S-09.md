@@ -5,7 +5,8 @@ kind: problem
 title: Rational linear systems solvable over $\CC$ are solvable over $\QQ$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

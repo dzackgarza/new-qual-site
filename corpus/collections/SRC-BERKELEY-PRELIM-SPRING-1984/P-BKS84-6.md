@@ -5,7 +5,8 @@ kind: problem
 title: Convergence criterion for the iteration $x_{n+1}=a+x_n^2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

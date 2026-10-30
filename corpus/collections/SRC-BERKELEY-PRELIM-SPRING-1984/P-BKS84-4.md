@@ -5,7 +5,8 @@ kind: problem
 title: $\pi^3$ versus $3^\pi$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

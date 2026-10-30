@@ -27,12 +27,13 @@ Find the number of roots of
 $$
 z^7-4z^3-11=0
 $$
-that lie between the circles, counted with multiplicity,
+that lie between the circles
 $$
 \abs{z}=1
 \qquad\text{and}\qquad
-\abs{z}=2.
+\abs{z}=2,
 $$
+counted with multiplicity.
 :::
 
 ::: {.solution}

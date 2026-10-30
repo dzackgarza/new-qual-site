@@ -5,7 +5,8 @@ kind: problem
 title: Number of conjugacy classes in a $p^4$-group with center of order $p^2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

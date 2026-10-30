@@ -5,7 +5,8 @@ kind: problem
 title: A linear system with a trajectory decaying forward and diverging backward
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

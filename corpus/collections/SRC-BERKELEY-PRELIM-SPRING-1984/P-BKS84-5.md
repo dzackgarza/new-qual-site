@@ -5,7 +5,8 @@ kind: problem
 title: A spectral relation $AB=BA^2$ forces a common eigenvector away from the unit circle
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

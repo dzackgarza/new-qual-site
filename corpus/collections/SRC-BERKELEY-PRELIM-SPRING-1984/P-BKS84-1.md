@@ -5,7 +5,8 @@ kind: problem
 title: The integral $\int_0^\infty \log x/(a^2+x^2)\,dx$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
