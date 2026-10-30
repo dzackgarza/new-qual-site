@@ -46,13 +46,12 @@ Possibly worth skipping.
 :::
 
 ::: {.solution}
-Note: solutions borrowed from folks on Math twitter!
 
 ::: {.proof title="part 1"}
 \envlist
 
 - Existence: the claim is that $2R \coloneqq \theset{2y \st y\in R}$ is a nontrivial two-sided ideal of $R$, forcing $2R = R$ by simpleness.
-  - That $2R \neq 0$ follows from condition (1):
+  - That $2R \neq 0$ follows from condition (ii):
   Provided $y\neq 0$, we have $2y\neq 0$, and so if $R\neq 0$ then there exists some nonzero $a\in R$, in which case $2a\neq 0$ and $2a\in 2R$.
   - That $2R$ is a right ideal: clear, since $(2y)\cdot r = 2(yr)\in 2R$.
   - That $2R$ is a left ideal: use that multiplication is distributive:
@@ -61,7 +60,7 @@ Note: solutions borrowed from folks on Math twitter!
   .$$
 - So $2R = R$ by simpleness.
 - Uniqueness: 
-  - Use the contrapositive of condition (1), so that $2x = 0 \implies x=0$.
+  - Use the contrapositive of condition (ii), so that $2x = 0 \implies x=0$.
   - Suppose toward a contradiction that $x=2y_1 = 2y_2$, then
   $$
   0 = x-x = 2y_1 - 2y_2 = 2(y_1 - y_2) \implies y_1 - y_2 = 0 \implies y_1 = y_2
@@ -119,7 +118,7 @@ $$
 \implies 2(yz-zy) &= 0 \\
 \implies yz-zy &= 0 \\
 ,$$
-using condition (2).
+using condition (ii).
 :::
 
 :::
