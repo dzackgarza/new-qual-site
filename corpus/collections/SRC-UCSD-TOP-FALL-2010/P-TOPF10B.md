@@ -16,6 +16,7 @@ review: draft
 ::: {.problem}
 How many distinct double covers does the Klein bottle have?
 Can you identify any of them?
+(Recall that the Klein bottle can be formed from a square $I \times I$ by identifying opposite edges, one pair in the parallel and one pair in the opposite direction.)
 :::
 
 ::: {.solution}
