@@ -30,8 +30,6 @@ Evaluate $\int_0^\infty \frac{\log x}{x^2+2}\,dx$ by contour integration using t
 :::
 
 ::: {.solution}
-The value is $\boxed{\pi\log2/(4\sqrt2)}$.
-
 ::: pf
 
 ::: {.pf-step #s1}
@@ -75,8 +73,7 @@ $\pi(\log\sqrt2+i\pi/2)/\sqrt2$ [@SS03].
 
 ::: pf-step
 
-Both arcs vanish in the limit, and taking real parts
-determines the required integral.
+$\displaystyle\int_0^\infty\frac{\log x}{x^2+2}\,dx=\boxed{\frac{\pi\log2}{4\sqrt2}}$.
 
 ::: pf-proof
 
@@ -106,7 +103,7 @@ $$
 =\frac{\pi}{\sqrt2}\log\sqrt2
 =\frac{\pi\log2}{2\sqrt2}.
 $$
-Dividing by two proves the displayed answer.
+Divide by two.
 
 :::
 
