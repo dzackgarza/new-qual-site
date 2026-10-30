@@ -5,15 +5,16 @@ kind: problem
 title: Antidifferentiation as a homomorphism of the additive group of real polynomials
 classification:
   areas:
-  - algebra
-  topics: []
+    - algebra
+  topics:
+    - Group Homomorphisms
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: claude-opus-5
-  date: 2026-09-16
-  note: Replaced the garbled 'R f' with the integral sign and restored math delimiters, per page 1 of Ch10PtASltns.pdf.
+  - event: source-checked
+    by: claude-opus-5
+    date: 2026-09-16
+    note: Replaced the garbled 'R f' with the integral sign and restored math delimiters, per page 1 of Ch10PtASltns.pdf.
 ---
 
 ::: {.problem}
@@ -29,7 +30,7 @@ Let $\phi : \RR [ x ] \to \RR [ x ]$ be defined by $f \mapsto \int f$. The antid
 $$\phi(f) = a_0x + \frac{a_1}{2}x^2 + \cdots + \frac{a_n}{n+1}x^{n+1}.$$
 This formula is additive in the coefficients, so $\phi ( f + g ) = \phi ( f ) + \phi ( g )$ for all $f , g \in \RR [ x ]$, and $\phi$ is a homomorphism.
 
-The kernel of $\phi$ is the set of polynomials that map to the identity $0$: $K e r \phi = \{ f \st \int f = 0 \} = \{ a _ { 0 } + a _ { 1 } x + \dotsc + a _ { n } x ^ { n } \st a _ { 0 } x + \frac { a _ { 1 } } { 2 } x ^ { 2 } + \dotsc + \frac { a _ { n } } { n + 1 } x ^ { n + 1 } = 0 \} = \{ a _ { 0 } = a _ { 1 } = \dotsc = a _ { n } = 0 \} = \{ 0 \}$
+The kernel of $\phi$ is the set of polynomials that map to the identity $0$: $\ker \phi = \{ f \st \int f = 0 \} = \{ a _ { 0 } + a _ { 1 } x + \dotsc + a _ { n } x ^ { n } \st a _ { 0 } x + \frac { a _ { 1 } } { 2 } x ^ { 2 } + \dotsc + \frac { a _ { n } } { n + 1 } x ^ { n + 1 } = 0 \} = \{ a _ { 0 } = a _ { 1 } = \dotsc = a _ { n } = 0 \} = \{ 0 \}$
 
 If the function $\textstyle \int f$ goes through (0,1) instead, it is not a homomorphism.
 This is because $\phi ( f + g ) ( 0 ) = 1$ but $( \phi ( f ) + \phi ( g ) ) ( 0 ) = \phi ( f ) ( 0 ) + \phi ( g ) ( 0 ) = 1 + 1 = 2$ , so the functions are not the same.

@@ -5,15 +5,16 @@ kind: problem
 title: The determinant is a homomorphism $GL(2,\RR)\to\RR^*$
 classification:
   areas:
-  - algebra
-  topics: []
+    - algebra
+  topics:
+    - Group Homomorphisms
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: claude-opus-5
-  date: 2026-09-16
-  note: Stated the Example 2 map (determinant on GL(2,R)) in the statement, taken from the source's own solution on page 1 of Ch10PtASltns.pdf.
+  - event: source-checked
+    by: claude-opus-5
+    date: 2026-09-16
+    note: Stated the Example 2 map (determinant on GL(2,R)) in the statement, taken from the source's own solution on page 1 of Ch10PtASltns.pdf.
 ---
 
 ::: {.problem}
