@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS24D
 kind: problem
-title: Homology of the cube with opposite faces glued by 180° rotations
+title: The cube with opposite faces glued by $180^\circ$ rotations is $\RP^3$
 classification:
   areas:
   - topology
@@ -26,85 +26,27 @@ Compute the homology $H_*(X; \ZZ)$.
 
 ::: pf
 
-::: {.pf-step #s1}
+::: {.pf-step #antipodal}
 
-$X$ has one $0$-cell, three $1$-cells, three $2$-cells, one $3$-cell.
-
-::: pf-proof
-
-the cube has 8 vertices identified to one, 12 edges identified into 3 classes of 4 parallel edges, 6 faces identified into 3 pairs.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Cellular chain complex: $0 \to \ZZ \xrightarrow{\partial_3} \ZZ^3 \xrightarrow{\partial_2} \ZZ^3 \xrightarrow{\partial_1} \ZZ \to 0$.
+Every face pairing is the restriction of the point reflection
+$$\sigma:I^3\to I^3,\qquad \sigma(p)=(1,1,1)-p,$$
+through the centre of the cube.
 
 ::: pf-proof
 
-Step [](#s1){.pf-ref}.
+Take the front face $y=0$. The $180^\circ$ rotation of the face about its centre is $(x,z)\mapsto(1-x,1-z)$, so the front face is glued to the back face by $(x,0,z)\mapsto(1-x,1,1-z)=\sigma(x,0,z)$. The same computation holds for the other two pairs. A half-turn about the face centre is the only $180^\circ$ rotation of the face, so the figure does not change this.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #rp3}
 
-$\partial_1 =0$ (single $0$-cell).
+$X\cong\RP^3$.
 
 ::: pf-proof
 
-each $1$-cell is a loop.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-Each $2$-cell is attached with degree $2$ (the $180^\circ$ rotation identifies opposite edges with a twist, giving boundary $2\cdot$generator).
-
-::: pf-proof
-
-the gluing map has degree $2$ on the $1$-skeleton.
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-Hence $\partial_2$ is multiplication by $2$ on each $2$-cell.
-
-::: pf-proof
-
-Step [](#s4){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-$\partial_3 =0$ (the $3$-cell is attached by a map of degree $0$ for this orientable gluing).
-
-::: pf-proof
-
-orientability.
-
-:::
-
-:::
-
-::: {.pf-step #s7}
-
-Therefore $H_0(X)=\ZZ$, $H_1(X)=\ZZ^3/2\ZZ^3 \cong (\ZZ/2)^3$, $H_2(X)=0$, $H_3(X)=\ZZ$.
-
-::: pf-proof
-
-Steps [](#s2){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}; $H_1 = \ker\partial_1/\operatorname{im}\partial_2 = \ZZ^3/2\ZZ^3$, $H_2 = \ker\partial_2/\operatorname{im}\partial_3 =0$.
+The map $\sigma$ is the antipodal map of the cube about its centre. The cube with antipodal boundary points identified is homeomorphic to the closed $3$-ball with antipodal boundary points identified, by radial projection from the centre, which commutes with $\sigma$. That quotient is $\RP^3$: it is the upper hemisphere of $S^3$, a fundamental domain for $x\mapsto-x$, with antipodal points of its equator identified.
 
 :::
 
@@ -112,7 +54,15 @@ Steps [](#s2){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}; $H_1 = \ker\parti
 
 ::: pf-qed
 
-Step [](#s7){.pf-ref}.
+By Step [](#rp3){.pf-ref} and the cellular chain complex $\ZZ\xrightarrow{0}\ZZ\xrightarrow{2}\ZZ\xrightarrow{0}\ZZ$ of $\RP^3$,
+$$
+\boxed{H_k(X;\ZZ)\cong
+\begin{cases}
+\ZZ,&k=0,3,\\
+\ZZ/2,&k=1,\\
+0,&\text{otherwise.}
+\end{cases}}
+$$
 
 :::
 
