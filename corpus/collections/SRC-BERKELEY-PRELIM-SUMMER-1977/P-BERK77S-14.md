@@ -6,7 +6,8 @@ title: Finitely generated subgroups of $\QQ$ and $\QQ/\ZZ$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -28,8 +29,9 @@ audit:
 ---
 
 ::: {.problem}
-1. Prove that every finitely generated subgroup of the additive group $\QQ$ is cyclic.
-2. Does the same conclusion hold for finitely generated subgroups of $\QQ/\ZZ$?
+(a) Prove that every finitely generated subgroup of the additive group $\QQ$ is cyclic.
+
+(b) Does the same conclusion hold for finitely generated subgroups of $\QQ/\ZZ$?
 :::
 
 ::: {.solution}
@@ -211,7 +213,7 @@ Every subgroup of a cyclic group is cyclic. Hence $\bar H$ is cyclic.
 
 ::: {.pf-step #s7}
 
-The answer to part (2) is
+The answer to part (b) is
 $$
 \boxed{\text{Yes.}}
 $$
@@ -226,7 +228,7 @@ This is exactly step [](#s6){.pf-ref}.
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} proves part (1), and step [](#s7){.pf-ref} answers part (2).
+Step [](#s3){.pf-ref} proves part (a), and step [](#s7){.pf-ref} answers part (b).
 
 :::
 

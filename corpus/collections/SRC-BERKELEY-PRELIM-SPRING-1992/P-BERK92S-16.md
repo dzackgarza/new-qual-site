@@ -6,7 +6,8 @@ title: Limit of the iteration $x_{n+1}=(3+2x_n)/(3+x_n)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

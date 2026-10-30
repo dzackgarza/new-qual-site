@@ -6,7 +6,8 @@ title: Jacobian determinant from infinitesimal volume distortion
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

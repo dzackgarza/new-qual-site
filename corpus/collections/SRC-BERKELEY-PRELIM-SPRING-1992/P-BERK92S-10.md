@@ -6,7 +6,8 @@ title: Roots of the rank-one nilpotent matrix $E_{14}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: A symmetric nonnegative matrix has a nonnegative eigenvector
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

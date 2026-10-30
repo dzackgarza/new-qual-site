@@ -6,7 +6,8 @@ title: Quadratic factors of $x^4+1$ over $\FF_p$ for $p\equiv3\pmod4$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

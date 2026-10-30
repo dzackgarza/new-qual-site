@@ -6,7 +6,8 @@ title: Every infinite closed subset of $\RR^n$ is the closure of a countable set
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

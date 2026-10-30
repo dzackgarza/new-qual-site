@@ -6,7 +6,8 @@ title: Positive solutions of $\log_a x=x^b$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

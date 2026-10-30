@@ -6,7 +6,8 @@ title: Minimal polynomial of $\sqrt5+\sqrt7$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -24,8 +25,9 @@ $$
 \alpha=\sqrt5+\sqrt7.
 $$
 
-1. Find explicitly a degree-four polynomial $f(x)\in\QQ[x]$ having $\alpha$ as a root.
-2. Prove that $f(x)$ is irreducible over $\QQ$.
+(a) Find explicitly a degree-four polynomial $f(x)\in\QQ[x]$ having $\alpha$ as a root.
+
+(b) Prove that $f(x)$ is irreducible over $\QQ$.
 :::
 
 ::: {.solution}
@@ -149,7 +151,7 @@ $\alpha$, and in particular is irreducible over $\QQ$.
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} answers part 1, and step [](#s4){.pf-ref} proves part 2.
+Step [](#s1){.pf-ref} answers part (a), and step [](#s4){.pf-ref} proves part (b).
 
 :::
 

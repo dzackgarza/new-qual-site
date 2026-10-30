@@ -6,7 +6,8 @@ title: Pointwise vanishing of some derivative forces an analytic function to be 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

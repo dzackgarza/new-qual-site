@@ -6,7 +6,8 @@ title: Ten integers in $[1,25]$ are multiplicatively dependent
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

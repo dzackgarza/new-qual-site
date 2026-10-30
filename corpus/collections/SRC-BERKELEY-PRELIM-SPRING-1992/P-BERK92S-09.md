@@ -6,7 +6,8 @@ title: Real-rootedness is preserved by $p\mapsto p-rp'$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

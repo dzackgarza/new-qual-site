@@ -6,7 +6,8 @@ title: Square roots of an upper-triangular $3\times3$ matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: The integral $\int_{-\infty}^{\infty}\sin^3x/x^3\,dx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
