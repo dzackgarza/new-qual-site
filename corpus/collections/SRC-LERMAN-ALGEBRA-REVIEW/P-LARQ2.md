@@ -25,13 +25,13 @@ audit:
 ::: {.problem}
 Let $G$ be a finite group of order $20$.
 
-1. Must $G$ have an element of order $2$?
+(a) Must $G$ have an element of order $2$?
 
-2. Must $G$ have an element of order $5$?
+(b) Must $G$ have an element of order $5$?
 
-3. Must $G$ have an element of order $4$?
+(c) Must $G$ have an element of order $4$?
 
-Justify each answer.
+Justify each answer. (Hint: Cauchy's theorem; for (c), consider $\ZZ_2\times\ZZ_2\times\ZZ_5$.)
 :::
 
 ::: {.solution}

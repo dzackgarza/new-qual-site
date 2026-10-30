@@ -23,11 +23,11 @@ audit:
 ---
 
 ::: {.problem}
-1. Does $\ZZ\times\ZZ$ have a maximal ideal?
-   If so, give one.
+(i) Does $\ZZ\times\ZZ$ have a maximal ideal?
+If so, give one.
 
-2. Does $\ZZ\times\ZZ$ have zero divisors?
-   If so, give two nonzero zero divisors whose product is zero.
+(ii) Does $\ZZ\times\ZZ$ have zero divisors?
+If so, give two nonzero zero divisors whose product is zero.
 :::
 
 ::: {.solution}

@@ -23,9 +23,9 @@ audit:
 ---
 
 ::: {.problem}
-1. For $n\ge2$, prove that $S_n$ is a semidirect product of $A_n$ and a group of order $2$.
+(a) For $n\ge2$, prove that $S_n$ is a semidirect product of $A_n$ and a group of order $2$.
 
-2. Prove that $O(2)$ is a semidirect product of $SO(2)$ and a group of order $2$.
+(b) Prove that $O(2)$ is a semidirect product of $SO(2)$ and a group of order $2$.
 :::
 
 ::: {.remark}

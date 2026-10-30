@@ -25,11 +25,11 @@ audit:
 ::: {.problem}
 Give each of the following examples:
 
-1. A principal ideal that is not prime.
+(a) A principal ideal that is not prime.
 
-2. A prime ideal that is not principal.
+(b) A prime ideal that is not principal.
 
-3. A prime ideal that is not maximal.
+(c) A prime ideal that is not maximal.
 :::
 
 ::: {.solution}
