@@ -35,4 +35,4 @@ title: "Algebra qual prep week 3: Sylow theory"
 
 ## Problems
 
-[[P-ZHTDW]] [[P-ZBTCU]] [[E-AMD-IWU3CMM5]] [[P-USPU6]] [[P-M504F03-3]] [[P-4ZDQQ]]
+[[P-ZHTDW]] [[P-HGRO31]] [[E-AMD-IWU3CMM5]] [[P-USPU6]] [[P-M504F03-3]] [[P-4ZDQQ]]
