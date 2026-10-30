@@ -13,7 +13,6 @@ Worked evaluations and exercises, grouped by the contour cases on [[complex-anal
 Upper semicircle; the arc integral tends to $0$ by the ML estimate.
 
 [[E-SS3.EX-2]]
-[[E-SS3.EX-2]]
 [[E-SS3.EX-6]]
 [[E-JZNWV]]
 
@@ -23,7 +22,6 @@ Upper semicircle applied to $f(z)e^{iz}$; the arc integral tends to $0$ by Jorda
 
 [[E-SS3.EX-4]]
 [[E-SS3.EX-3]]
-[[E-SS3.EX-8]]
 
 ## No clear decay
 
