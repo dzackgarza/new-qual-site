@@ -45,7 +45,8 @@ $$
 The relations give $k=ij$, so $i$ and $j$ generate. In $Q_8$, $i^4=(-1)^2=1$, $i^2=-1=j^2$, and, since $j^{-1}=-j$, $ji=-k$ and $kj=-i$,
 $$
 jij^{-1}=-(ji)j=kj=-i=i^{-1}.
-$$ The presented group has order at most $8$: every element is $i^aj^b$ with $0\le a\le3$ and $0\le b\le1$, since $j^2=i^2$ and $ji=i^{-1}j$. As $Q_8$ is a quotient of it of order $8$, the two are isomorphic.
+$$
+The presented group has order at most $8$: every element is $i^aj^b$ with $0\le a\le3$ and $0\le b\le1$, since $j^2=i^2$ and $ji=i^{-1}j$. As $Q_8$ is a quotient of it of order $8$, the two are isomorphic.
 
 :::
 

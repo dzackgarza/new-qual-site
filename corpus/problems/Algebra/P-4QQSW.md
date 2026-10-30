@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4QQSW
 kind: problem
-title: A PID with a unique prime ideal
+title: A PID with a unique nonzero prime ideal
 classification:
   areas:
   - algebra
