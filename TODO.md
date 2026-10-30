@@ -317,7 +317,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCI-MATH220C-SPRING-2018-HW5
   - [x] SRC-UCLA-BASIC-FALL-2001
   - [x] SRC-UCLA-BASIC-FALL-2002
-  - [ ] SRC-UCLA-BASIC-FALL-2003
+  - [x] SRC-UCLA-BASIC-FALL-2003
   - [ ] SRC-UCLA-BASIC-FALL-2004
   - [ ] SRC-UCLA-BASIC-FALL-2005
   - [ ] SRC-UCLA-BASIC-FALL-2007
