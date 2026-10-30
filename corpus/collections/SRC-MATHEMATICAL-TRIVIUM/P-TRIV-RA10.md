@@ -165,7 +165,7 @@ Therefore
 $$
 \left(
 \frac{\partial x_{i+1}}{\partial x_i}
-\right)_{	ext{all other }x_j}
+\right)_{\text{all other }x_j}
 =
 -\frac{f_{x_i}}{f_{x_{i+1}}}.
 $$
@@ -187,7 +187,7 @@ $$
 \prod_{i=1}^{n}
 \left(
 \frac{\partial x_{i+1}}{\partial x_i}
-\right)_{	ext{all other }x_j}
+\right)_{\text{all other }x_j}
 =
 (-1)^n,
 \qquad
