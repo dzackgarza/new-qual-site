@@ -36,13 +36,13 @@ Then $\pi_G$ is a $G$-equivariant projection onto $W$, and $\ker\pi_G$ is a $G$-
 For irreducible representations $V$ and $W$ of $G$, every $G$-equivariant linear map $V\to W$ is zero or an isomorphism, because its kernel and image are subrepresentations.
 For $f\in\Endo_G(V)$ with $V$ finite-dimensional over an algebraically closed field, $f$ has an eigenvalue $\lambda$, and $f - \lambda I$ is a $G$-equivariant map with nonzero kernel, hence zero.
 
-For irreducible complex representations, $\dim \Hom_G(V,W)=0$ if $V\not\cong W$ and $\dim \operatorname{End}_G(V)=1$; together with Maschke's theorem, these give the character orthogonality relations and the multiplicity formula.
+For irreducible complex representations, $\dim \Hom_G(V,W)=0$ if $V\not\cong W$ and $\dim \Endo_G(V)=1$; together with Maschke's theorem, these give the character orthogonality relations and the multiplicity formula.
 :::
 
 ## Consequences
 
 Let $V_1,\ldots,V_r$ be the irreducible complex representations of $G$ up to isomorphism, with $d_i = \dim V_i$.
-Then $\CC[G] \cong \bigoplus_i \operatorname{End}(V_i) \cong \bigoplus_i \Mat_{d_i}(\CC)$, so
+Then $\CC[G] \cong \bigoplus_i \Endo(V_i) \cong \bigoplus_i \Mat_{d_i}(\CC)$, so
 $$
 \size G = \sum_i d_i^2,
 $$
