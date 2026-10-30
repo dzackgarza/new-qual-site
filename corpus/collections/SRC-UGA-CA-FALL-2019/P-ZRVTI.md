@@ -21,6 +21,10 @@ Let $f: \CC \rightarrow \CC$ be an injective analytic (also called univalent) fu
 > Hint: Apply the Casorati-Weierstrass theorem to $f(1/z)$.
 :::
 
+::: {.remark title="Variations"}
+The same problem is also asked as: show that $\Aut_\CC(\CC)$ is the group of maps $z\mapsto az+b$ with $a\in\units{\CC}$ and $b\in\CC$. An automorphism is injective and entire, so it is affine by the result above. Each such affine map is an automorphism.
+:::
+
 ::: {.solution}
 Note that $f$ is non-constant, since a constant function is extremely non-injective.
 Consider the singularity at $\infty$:
