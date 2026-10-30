@@ -433,7 +433,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-APALG-SPRING-2007
   - [x] SRC-UCSD-APALG-SPRING-2008
   - [x] SRC-UCSD-APALG-SPRING-2011
-  - [ ] SRC-UCSD-APALG-SPRING-2013
+  - [x] SRC-UCSD-APALG-SPRING-2013
   - [ ] SRC-UCSD-APALG-SPRING-2015
   - [ ] SRC-UCSD-APALG-SPRING-2017
   - [ ] SRC-UCSD-APALG-SPRING-2018

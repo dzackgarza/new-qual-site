@@ -22,9 +22,9 @@ $$
 
 (a) Show that $ba=ab^3=a^3b$ and, hence, that every element of $Q$ is of the form $a^i$ or $a^ib$ for some $i\in\{0,1,2,3\}$.
 
-(b) Verify that the conjugacy classes of $G$ are $C_1=\{1\}$, $C_2=\{a^2\}$, $C_3=\{a,a^3\}$, $C_4=\{b,a^2b\}$, and $C_5=\{ab,a^3b\}$.
+(b) Verify that the conjugacy classes of $Q$ are $C_1=\{1\}$, $C_2=\{a^2\}$, $C_3=\{a,a^3\}$, $C_4=\{b,a^2b\}$, and $C_5=\{ab,a^3b\}$.
 
-(c) Show that $H=\{1,a^2\}$ is a normal subgroup of $G$ for which $G/H$ is isomorphic to $\ZZ_2\times\ZZ_2$.
+(c) Show that $H=\{1,a^2\}$ is a normal subgroup of $Q$ for which $Q/H$ is isomorphic to $\ZZ_2\times\ZZ_2$.
 
 (d) Give the character table for the lifting of the four linear characters of $Q/H$ to $Q$.
 
