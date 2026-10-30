@@ -695,7 +695,7 @@ mathematical correction under its own node, not under copy policy.
     **Acceptance:** each item read and repaired. **Closed.** The extraction detector measured only Unicode glyphs outside dollar spans, so MinerU residue inside `$…$` passed; it now also measures MinerU-spaced LaTeX (`x ^ { 6 }`), which opens `mineru-spaced-statements`.
 
   - **`mineru-spaced-statements`**. **Needs:** none. `just extraction-detector` reports 1006 problem cards whose statements carry MinerU-spaced LaTeX (`^ { 6 }`, `\operatorname* { l i m }`), the residue that hid the ad8-prelim Summer 1984 and Fall 2016 defects. Transcribe each statement against its paper, one card at a time, by collection; the spacing alone is harmless, so read each for the lost operators, matrices and prose set in math that travel with it.
-    **Acceptance:** the detector reports no `mineru-spaced` finding.
+    **Acceptance:** the detector reports no `mineru-spaced` finding. **Closed.**
 
   - **`ad9-exams`**. **Needs:** none. Round 9 at 2cd9297bd3; report in the session scratchpad r9-exams.md.
     - [x] P-RASP23D: the solution says the Riesz measure is inner regular on every Borel set; it is not ($E=\RR\times\{0\}$, Rudin RCA 2.17). The answer is No.
