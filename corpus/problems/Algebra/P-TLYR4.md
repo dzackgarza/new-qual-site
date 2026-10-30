@@ -72,3 +72,7 @@ They are pairwise non-isomorphic, since their real dimensions are $1$, $2$ and $
 :::
 
 :::
+
+::: {.remark title="Variations"}
+Also state the Hurwitz theorem: the finite-dimensional normed real division algebras are $\RR,\CC,\HH,\mathbb{O}$; by Bott-Milnor-Kervaire (Adams), a finite-dimensional real division algebra, associative or not, has dimension $1,2,4$ or $8$.
+:::
