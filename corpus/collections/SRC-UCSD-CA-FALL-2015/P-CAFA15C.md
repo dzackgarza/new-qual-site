@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA15C
 kind: problem
-title: "Polynomial with non-increasing real coefficients has no roots inside the unit disk"
+title: Polynomial with non-increasing real coefficients has no roots inside the unit disk
 classification:
   areas:
   - complex-analysis
@@ -17,6 +17,11 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The exam states only that the coefficients are non-increasing reals; the statement
+    adds a_n > 0, without which it fails (a_0 = 0, a_1 = -1 gives the root 0).
 ---
 
 ::: {.problem}
