@@ -631,6 +631,19 @@ mathematical correction under its own node, not under copy policy.
     - [ ] SRC-TEXT-SS05: E-L3F4O asks more than SS III 1.1; locator "1.1 as part".
     **Acceptance:** each item read and repaired.
 
+  Round 5 (revision `fe84046a76`, analysis guides) injected the node below;
+  `audited-deployment` needs it.
+  - **`ad5-analysis`**. **Needs:** none.
+    - [ ] PR-L35O7, case $p=\infty$: the exceptional set omits
+      $\{\abs{f_{n_1}} > \norm{f_{n_1}}_\infty\}$, so "bounded" does not follow; add it.
+    - [ ] Renderer and CITE-1: a citation links only when a `SRC-TEXT-<key>` collection exists.
+      [Foll13] (13 uses; the collection is SRC-TEXT-FOL99, a different edition), [Apos74],
+      [Abbo16], [Ahlf79], [Har07], [Gath21], [PiAr12], [Lee13], [Munk84] render unlinked, and
+      the site has no bibliography page. Every citation must resolve to a reader-facing target.
+      Subsumes the multi-key item in `ad5-topology-algebra`.
+    - [ ] Check "[Ahlf79, Chapter 3, Section 3.2, Definition 12]" against the book.
+    **Acceptance:** each item read and repaired.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
