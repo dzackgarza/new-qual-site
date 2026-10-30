@@ -20,7 +20,16 @@ $$
 f(x) = {1\over 2\pi}\int_\RR e^{i\xi x} \hat{f}(\xi) \dxi.
 $$
 
-![](../../../../assets/assets/figures/2021-12-20_07-55-38.png)
+The one-sided Laplace transform $\mcl(f)(p)=\int_0^\infty e^{-pt}f(t)\,dt$ of standard functions, for $\Re p$ large enough:
+
+| $f(t)$ | $\mcl(f)(p)$ | $f(t)$ | $\mcl(f)(p)$ |
+| --- | --- | --- | --- |
+| $1$ | $\dfrac1p$ | $t^n$ | $\dfrac{n!}{p^{n+1}}$ |
+| $e^{\lambda t}$ | $\dfrac1{p-\lambda}$ | $t^ne^{\lambda t}$ | $\dfrac{n!}{(p-\lambda)^{n+1}}$ |
+| $\sin\omega t$ | $\dfrac{\omega}{p^2+\omega^2}$ | $\cos\omega t$ | $\dfrac{p}{p^2+\omega^2}$ |
+| $\sinh\lambda t$ | $\dfrac{\lambda}{p^2-\lambda^2}$ | $\cosh\lambda t$ | $\dfrac{p}{p^2-\lambda^2}$ |
+| $e^{\lambda t}\sin\omega t$ | $\dfrac{\omega}{(p-\lambda)^2+\omega^2}$ | $e^{\lambda t}\cos\omega t$ | $\dfrac{p-\lambda}{(p-\lambda)^2+\omega^2}$ |
+| $\delta(t)$ | $1$ | $\delta(t-t_0)$ | $e^{-pt_0}$ |
 
 :::
 
@@ -51,9 +60,8 @@ $$
 which together with the product expansion gives a product expansion of $\sin(\pi z)$.
 In terms of the Laplace transform $\mcl$, $\mcl(t^{z-1})(1) = \Gamma(z)$ for $\Re z>0$, and $\mcl(t^n)(1) = \Gamma(n+1) = n!$.
 
-The residues:
-
-![](../../../../assets/assets/figures/2021-12-19_19-59-45.png)
+By the reflection formula, $1/\Gamma(z)=\Gamma(1-z)\sin(\pi z)/\pi$ is entire: the simple poles of $\Gamma(1-z)$ at $z=1,2,3,\ldots$ cancel the simple zeros of $\sin(\pi z)$ there.
+So $1/\Gamma$ is entire, and its zeros are exactly the simple zeros at $z=0,-1,-2,\ldots$.
 
 :::
 
@@ -79,9 +87,11 @@ The continuation extends $\zeta$ meromorphically to $\CC$, and the functional eq
 [[D-LGP2Q]]
 
 ::: {.remark}
-
-![](../../../../assets/assets/figures/2021-12-19_22-34-18.png)
-
+The series defining $\wp$ converges uniformly on compact subsets of $\CC\setminus\Lambda$, so it can be differentiated term by term:
+$$
+\wp'(z) = -2\sum_{\omega\in\Lambda}{1\over (z-\omega)^3}.
+$$
+This series is visibly invariant under $z\mapsto z+\omega$ for $\omega\in\Lambda$, and $\wp$ and all its derivatives are doubly periodic: $\wp(z+\omega)=\wp(z)$ for every $\omega\in\Lambda$.
 :::
 
 ## Elliptic functions
@@ -96,9 +106,11 @@ The Weierstrass $\wp$-function is elliptic, with a double pole at each lattice p
 ## Infinite series and products
 
 ::: {.fact title="Infinite products"}
+Let $z_j\in\CC$ with $z_j\neq -1$ for every $j$, and let $\Log$ be the principal branch of the logarithm.
 
-![](../../../../assets/assets/figures/2021-12-14_17-36-04.png)
+- $\prod_{j=1}^\infty(1+z_j)$ converges to a nonzero limit if and only if $\sum_{j=1}^\infty\Log(1+z_j)$ converges.
 
+- $\prod_{j=1}^\infty(1+z_j)$ converges absolutely, meaning that $\sum_{j=1}^\infty\abs{\Log(1+z_j)}$ converges, if and only if $\sum_{j=1}^\infty\abs{z_j}$ converges.
 :::
 
 [[T-IEJFA]]

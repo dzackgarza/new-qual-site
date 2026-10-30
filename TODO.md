@@ -878,7 +878,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/appendices/gauss-lucas-theorem.md
   - [x] wiki/complex-analysis/appendices/index.md
   - [ ] wiki/complex-analysis/appendices/pdes.md
-  - [ ] wiki/complex-analysis/appendices/special-functions.md
+  - [x] wiki/complex-analysis/appendices/special-functions.md
   - [ ] wiki/complex-analysis/basics/analytic-nt.md
   - [ ] wiki/complex-analysis/basics/calculus-preliminaries.md
   - [ ] wiki/complex-analysis/basics/complex-arithmetic.md
