@@ -557,6 +557,19 @@ mathematical correction under its own node, not under copy policy.
       reprinted problems carded twice.
     **Acceptance:** each item read and repaired.
 
+  Round 4 (revision `e6068b271c`, algebra guide) injected the node below; `audited-deployment`
+  needs it.
+  - **`ad4-algebra-content`**. **Needs:** none.
+    - [ ] E-HOJKE solution and Variations remark: a line beginning "(3) implies (1)" or
+      "(2) implies (1)" renders as an ordered list. Repair the cards, and find whether the
+      parser should reject a line-initial parenthesized numeral that is not a list
+      (owner of `ad-fancy-lists`).
+    - [ ] FD-T7IQV proof mixes $G^i$ and $G_i$ for one series (NOT-3).
+    - [ ] CARD-04: D-RG5FO and D-H4TDM both define the Gram matrix of a bilinear form and its
+      change of basis; merge, keeping distinct content. D-RG5FO shows "Suggest a slogan".
+    - [ ] PR-GEHJF remark: the sentence built around inserted card titles is ungrammatical.
+    **Acceptance:** each item read and repaired.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
