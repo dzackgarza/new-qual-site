@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF98-1
 kind: problem
 title: Ambient Lebesgue number for an open cover of a compact subset
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

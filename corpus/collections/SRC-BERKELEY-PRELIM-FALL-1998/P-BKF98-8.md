@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF98-8
 kind: problem
 title: A non-zero-divisor in a finite unital ring is invertible
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

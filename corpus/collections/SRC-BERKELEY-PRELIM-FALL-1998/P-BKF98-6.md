@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF98-6
 kind: problem
 title: Nullity bound for a product of linear transformations
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

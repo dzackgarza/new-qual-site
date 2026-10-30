@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF98-5
 kind: problem
 title: A homogeneous function with bilinear polarization is a quadratic form
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:
@@ -25,13 +25,13 @@ audit:
 ::: {.problem}
 Let $f:\RR^n\to\RR$ satisfy:
 
-1. The function
+(a) The function
 $$
 g(x,y)=f(x+y)-f(x)-f(y)
 $$
 is bilinear.
 
-2. For every $x\in\RR^n$ and $t\in\RR$,
+(b) For every $x\in\RR^n$ and $t\in\RR$,
 $$
 f(tx)=t^2f(x).
 $$

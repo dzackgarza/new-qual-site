@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF98-2
 kind: problem
 title: A decaying solution of $y^{(4)}+y=0$ with prescribed initial data
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Ordinary Differential Equations]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF98-3
 kind: problem
 title: The integral $\int_0^\infty (1+x^\alpha)^{-1}\,dx$ for $\alpha>1$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

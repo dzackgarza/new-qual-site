@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF98-4
 kind: problem
 title: Sharp bound at $\log2$ for a holomorphic function with a prescribed zero
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

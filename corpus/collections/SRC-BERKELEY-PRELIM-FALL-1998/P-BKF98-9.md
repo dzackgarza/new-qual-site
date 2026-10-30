@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF98-9
 kind: problem
 title: A finite group whose Sylow subgroups are all normal and abelian is abelian
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:
