@@ -79,7 +79,7 @@ $$
 in which case that manifold is $S^{2n}$.
 
 ::: pf-proof
-Combine step [](#codimension-one-quotient-is-sphere){.pf-ref} and steps [](#degree-2-and-top-minus-2-cohomology){.pf-ref}, [](#manifold-would-be-closed-oriented){.pf-ref} and [](#poincare-duality-contradiction){.pf-ref}.
+Combine step [](#codimension-one-quotient-is-sphere){.pf-ref} and steps [](#degree-2-and-top-minus-2-cohomology){.pf-ref}, [](#manifold-would-be-closed-oriented){.pf-ref} and [](#poincare-duality-contradiction){.pf-ref}. The question must mean a closed manifold: every finite CW complex, $X$ included, embeds in some $\RR^N$ and is homotopy equivalent to an open regular neighborhood of its image, which is a noncompact manifold.
 :::
 
 :::
