@@ -5,7 +5,8 @@ kind: problem
 title: Global dynamics approaching the unit circle
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:
@@ -36,8 +37,13 @@ $$
 \frac{dy}{dt}=-x+y(1-x^2-y^2).
 $$
 
-1. Show that for every initial condition $(x(0),y(0))=(x_0,y_0)$ there is a unique solution defined for all $t\geq 0$.
-2. Show that if $x_0\ne0$ and $y_0\ne0$, then the solution approaches the circle $x^2+y^2=1$ as $t\to\infty$.
+(a) Show that for every initial condition $(x(0),y(0))=(x_0,y_0)$ there is a unique solution defined for all $t\geq 0$.
+
+(b) Show that if $x_0\ne0$ and $y_0\ne0$, then the solution approaches the circle $x^2+y^2=1$ as $t\to\infty$.
+:::
+
+::: {.remark}
+The exam asks in (a) for a solution defined for all real $t$. That fails backward in time: when $x_0^2+y_0^2>1$, the radius solves $r'=r(1-r^2)$ and blows up at a finite negative time. Part (a) therefore asks for $t\geq 0$.
 :::
 
 ::: {.solution}
@@ -74,7 +80,7 @@ $$
 
 ::: {.pf-step #forward-solution-exists}
 For every initial condition there is a unique solution defined for
-all $t\ge0$. This is Part (1).
+all $t\ge0$. This is part (a).
 
 ::: pf-proof
 The vector field is polynomial, hence locally Lipschitz, so the initial-value
@@ -141,7 +147,7 @@ quotient tends to $1$.
 :::
 
 ::: {.pf-step #approaches-unit-circle}
-Under the hypothesis of Part (2), the solution approaches the unit
+Under the hypothesis of part (b), the solution approaches the unit
 circle:
 $$
 \boxed{

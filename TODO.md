@@ -133,7 +133,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-BERKELEY-PRELIM-SPRING-1978
   - [x] SRC-BERKELEY-PRELIM-SPRING-1979
   - [x] SRC-BERKELEY-PRELIM-SPRING-1980
-  - [ ] SRC-BERKELEY-PRELIM-SPRING-1981
+  - [x] SRC-BERKELEY-PRELIM-SPRING-1981
   - [ ] SRC-BERKELEY-PRELIM-SPRING-1982
   - [ ] SRC-BERKELEY-PRELIM-SPRING-1983
   - [ ] SRC-BERKELEY-PRELIM-SPRING-1984
@@ -1761,6 +1761,11 @@ mathematical correction under its own node, not under copy policy.
     contour and the solution answers in terms of winding numbers. Find another copy of the Fall
     1993 Berkeley prelim (or the Fa93-12 figure) and transcribe the curve. **Acceptance:** the
     statement describes $\gamma$ as drawn and the solution gives a number.
+  - **`ad-bks81-11-contour`**. **Needs:** none. P-BKS81-11: the retained Spring81.pdf prints
+    "../Fig/Pr/Sp81-11.ps not found" where the curve $C$ should be, so the statement has no
+    contour and the solution answers in terms of winding numbers. Find another copy of the Spring
+    1981 Berkeley prelim (or the Sp81-11 figure) and transcribe the curve. **Acceptance:** the
+    statement describes $C$ as drawn and the solution gives a number.
 
 ### Marking a node closed
 

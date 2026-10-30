@@ -5,7 +5,8 @@ kind: problem
 title: Irreducible factorizations of $x^4-4$ and $x^3-2$ over $\RR$, $\ZZ$, and $\ZZ/3\ZZ$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

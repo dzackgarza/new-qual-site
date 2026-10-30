@@ -5,7 +5,8 @@ kind: problem
 title: A nilpotent Jordan chain is linearly independent
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

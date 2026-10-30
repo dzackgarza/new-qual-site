@@ -5,7 +5,8 @@ kind: problem
 title: Smooth dependence of simple polynomial roots on coefficients
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

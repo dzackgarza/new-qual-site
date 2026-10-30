@@ -5,7 +5,8 @@ kind: problem
 title: Curl and flux over the upper hemisphere
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:
@@ -27,11 +28,12 @@ $$
 \vec F=(x^2+y-4)\vec i+3xy\vec j+(2xz+z^2)\vec k.
 $$
 
-1. Compute $\nabla\times\vec F$.
-2. Compute the integral of $\nabla\times\vec F$ over the surface
-   $$
-   x^2+y^2+z^2=16,\qquad z\ge0.
-   $$
+(a) Compute $\nabla\times\vec F$.
+
+(b) Compute the integral of $\nabla\times\vec F$ over the surface
+$$
+x^2+y^2+z^2=16,\qquad z\ge0.
+$$
 :::
 
 ::: {.solution}
@@ -135,7 +137,7 @@ $-16\pi$.
 :::
 
 ::: pf-qed
-Step [](#curl-formula){.pf-ref} answers part (1), and step [](#flux-through-hemisphere){.pf-ref} answers part (2).
+Step [](#curl-formula){.pf-ref} answers part (a), and step [](#flux-through-hemisphere){.pf-ref} answers part (b).
 :::
 
 :::

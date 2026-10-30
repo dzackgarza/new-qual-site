@@ -5,7 +5,8 @@ kind: problem
 title: Equivalent invertibility criteria for $W\mapsto AW+WA$ on skew-symmetric matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Positivity of $a^2-a+1$ in an ordered integral domain
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

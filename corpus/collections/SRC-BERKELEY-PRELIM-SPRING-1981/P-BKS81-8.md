@@ -5,7 +5,8 @@ kind: problem
 title: Existence of a best uniform polynomial approximation of bounded degree
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
