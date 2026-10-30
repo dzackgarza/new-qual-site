@@ -982,7 +982,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/real-analysis/integration/which-convergence-theorem.md
   - [x] wiki/real-analysis/lp-spaces/index.md
   - [x] wiki/real-analysis/lp-spaces/the-spaces.md
-  - [ ] wiki/real-analysis/lp-spaces/which-inequality.md
+  - [x] wiki/real-analysis/lp-spaces/which-inequality.md
   - [ ] wiki/real-analysis/measure/index.md
   - [ ] wiki/real-analysis/measure/is-it-measurable.md
   - [ ] wiki/real-analysis/measure/littlewood-principles-notes.md
