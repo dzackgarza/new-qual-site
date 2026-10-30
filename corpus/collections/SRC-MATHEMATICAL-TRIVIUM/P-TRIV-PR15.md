@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that if for some discrete random variable ξ, $\mathbf { E } \xi ^ { 2 } = \mathbf { E } \xi ^ { 3 } = \mathbf { E } \xi ^ { 4 }$ , then $\xi$ can only take values 0 or 1.
+Prove that if for some discrete random variable $\xi$, $\mathbf{E}\xi^2 = \mathbf{E}\xi^3 = \mathbf{E}\xi^4$, then $\xi$ can only take values $0$ or $1$.
 :::
 
 ::: {.solution}

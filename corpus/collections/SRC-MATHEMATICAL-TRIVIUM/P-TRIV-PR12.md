@@ -16,19 +16,15 @@ audit:
 ---
 
 ::: {.problem}
-In nuclear physics, the intensity of a particle source is measured with Geiger-Muller counters.
-A particle entering the counter generates a discharge in it that lasts time τ , during which the counter does not record any particles entering the counter.
-Find the probability that the counter will count all particles entering it during time t if the following conditions are fulfilled:
+In nuclear physics, the intensity of a particle source is measured with Geiger-Muller counters. A particle entering the counter generates a discharge in it that lasts time $\tau$, during which the counter does not record any particles entering the counter. Find the probability that the counter will count all particles entering it during time $t$ if the following conditions are fulfilled:
 
 (a) the particles enter the counter independently;
 
-(b) the probability that during the time interval from t to $t + \Delta t .$ , k particles entered the counter is given by
-
+(b) the probability that during the time interval from $t$ to $t + \Delta t$, $k$ particles entered the counter is given by
 $$
-p _ { k } ( t , t + \Delta t ) = \frac { ( a \Delta t ) ^ { k } e ^ { - a \Delta t } } { k ! } ,\tag{43}
+p_k(t, t + \Delta t) = \frac{(a\Delta t)^k e^{-a\Delta t}}{k!}, \tag{43}
 $$
-
-where a is the rate.
+where $a$ is the rate.
 :::
 
 ::: {.solution}

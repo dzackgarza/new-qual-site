@@ -16,16 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let ξ and η be two independent random variables taking values 1 and 0 with the probabilities p and $q = 1 - p$ correspondingly.
-Find
+Let $\xi$ and $\eta$ be two independent random variables taking values $1$ and $0$ with the probabilities $p$ and $q = 1 - p$ correspondingly. Find
 
-$$
-\mathbf { E } ( \xi + \eta \given \eta ) .
-$$
+(a) $\mathbf{E}(\xi + \eta \given \eta)$,
 
-$$
-\mathbf { E } ( \xi \given \xi + \eta ) .
-$$
+(b) $\mathbf{E}(\xi \given \xi + \eta)$.
 :::
 
 ::: {.solution}

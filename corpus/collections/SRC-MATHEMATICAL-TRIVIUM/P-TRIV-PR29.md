@@ -16,9 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-A dice is turned randomly from one face to one of four adjoined faces.
-Suppose it fell 6 at $t = 0$ . Find the probability $P _ { n } , n \geqslant 1$ , that after n such turns it will show 6 again.
-Find the limit $\operatorname* { l i m } _ { n \to \infty } P _ { n }$
+A dice is turned randomly from one face to one of four adjoined faces. Suppose it fell $6$ at $t = 0$. Find the probability $P_n$, $n \geqslant 1$, that after $n$ such turns it will show $6$ again. Find the limit $\lim_{n \to \infty} P_n$.
 :::
 
 ::: {.solution}

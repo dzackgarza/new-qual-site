@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the least number of students in a group such that the probability that at least two students have the same birthday is not less than $\frac { 1 } { 2 }$
+Find the least number of students in a group such that the probability that at least two students have the same birthday is not less than $\frac{1}{2}$.
 :::
 
 ::: {.solution}

@@ -16,19 +16,15 @@ audit:
 ---
 
 ::: {.problem}
-An electron can occupy one of a countable number of energy levels in atom.
-The transition probabilities from i’s to j’s level per second are given by
-
+An electron can occupy one of a countable number of energy levels in atom. The transition probabilities from $i$'s to $j$'s level per second are given by
 $$
-P _ { i j } ( t = 1 ) = c _ { i } e ^ { - \alpha \abs{ i - j } } ,\tag{54}
+P_{ij}(t = 1) = c_i e^{-\alpha\abs{i - j}}, \tag{54}
 $$
+where $\alpha > 0$ and $c_i$ are some constants. Find
 
-where $\alpha > 0$ and $c _ { i }$ are some constants.
-Find
+(a) $P_{ij}(t = 2)$,
 
-(a) $P _ { i j } ( t = 2 )$
-
-(b) $c _ { i } .$
+(b) $c_i$.
 :::
 
 ::: {.solution}

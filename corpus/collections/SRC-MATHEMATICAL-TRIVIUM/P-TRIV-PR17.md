@@ -18,16 +18,14 @@ audit:
 ::: {.problem}
 Let $\xi$ be a continuous random variable.
 
-(a) Prove that if $\mathbf { E } e ^ { \lambda \xi }$ is finite then
-
+(a) Prove that if $\mathbf{E}e^{\lambda\xi}$ is finite then
 $$
-P ( \xi \geqslant x ) \leqslant e ^ { - \lambda x } \mathbf { E } e ^ { \lambda \xi } , \quad \lambda > 0 .\tag{45}
+P(\xi \geqslant x) \leqslant e^{-\lambda x}\mathbf{E}e^{\lambda\xi}, \quad \lambda > 0. \tag{45}
 $$
 
-(b) Prove that if $\mathbf { E } \abs{ \boldsymbol { \xi } } ^ { m }$ is finite then
-
+(b) Prove that if $\mathbf{E}\abs{\xi}^m$ is finite then
 $$
-P ( \abs{ \xi } \geqslant x ) \leqslant x ^ { - m } \mathbf { E } \abs{ \xi } ^ { m } , x > 0 , m > 0 .\tag{46}
+P(\abs{\xi} \geqslant x) \leqslant x^{-m}\mathbf{E}\abs{\xi}^m, \quad x > 0, \quad m > 0. \tag{46}
 $$
 :::
 

@@ -17,12 +17,10 @@ audit:
 
 ::: {.problem}
 Prove that the equation
-
 $$
-\int _ { - \infty } ^ { \infty } { \frac { x ( t ) d t } { ( y - t ) ^ { 2 } + 1 } } = e ^ { - y ^ { 2 } }\tag{44}
+\int_{-\infty}^{\infty} \frac{x(t)\, dt}{(y - t)^2 + 1} = e^{-y^2} \tag{44}
 $$
-
-has no nonnegative solutions $x ( t )$
+has no nonnegative solutions $x(t)$.
 :::
 
 ::: {.solution}

@@ -16,14 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-”Random walk” Let A, B, x be integers, $A \leqslant x \leqslant B$ . Consider the particle that starts moving from the point x at time $t = 0$ . At each step $\Delta t = 1$ the particle can move left or right from its recent position with the probabilities p and $q = 1 - p$ correspondingly.
-If at some step it reaches the points A or B, it stays there forever (see example figure below).
+"Random walk" Let $A$, $B$, $x$ be integers, $A \leqslant x \leqslant B$. Consider the particle that starts moving from the point $x$ at time $t = 0$. At each step $\Delta t = 1$ the particle can move left or right from its recent position with the probabilities $p$ and $q = 1 - p$ correspondingly. If at some step it reaches the points $A$ or $B$, it stays there forever (see example figure below).
 
 The source's Figure 8 illustrates one sample trajectory with $A=-B=5$ and $x=2$; the graphical trajectory is not present in the deterministic extraction.
 
-(a) Assuming that the total number of steps approaches infinity, compute the probabilities $\alpha ( x ) , \beta ( x )$ to find the particle at the points A and B correspondingly, as functions of the initial position x of the particle.
+(a) Assuming that the total number of steps approaches infinity, compute the probabilities $\alpha(x)$, $\beta(x)$ to find the particle at the points $A$ and $B$ correspondingly, as functions of the initial position $x$ of the particle.
 
-(b) Find the mean time $m ( x )$ of a random walk of the particle before it hits A or B. Assume that $m ( x ) < \infty$ . Check that if $p = q = \frac { 1 } { 2 }$ and $A = - B$ , then $m ( 0 ) = B ^ { 2 }$ . Hence the mean time of random walk is given by a square of distance traveled.
+(b) Find the mean time $m(x)$ of a random walk of the particle before it hits $A$ or $B$. Assume that $m(x) < \infty$. Check that if $p = q = \frac{1}{2}$ and $A = -B$, then $m(0) = B^2$. Hence the mean time of random walk is given by a square of distance traveled.
 :::
 
 ::: {.solution}

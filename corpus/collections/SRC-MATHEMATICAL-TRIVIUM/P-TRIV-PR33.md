@@ -16,36 +16,30 @@ audit:
 ---
 
 ::: {.problem}
-Normal numbers
+*Normal numbers*
 
-Let $x \in [ 0 , 1 )$ . Consider the infinite decimal notation for x:
-
+Let $x \in [0, 1)$. Consider the infinite decimal notation for $x$:
 $$
-x = 0 . a _ { 1 } a _ { 2 } . . . , \ a _ { i } = 0 , 1 , . . . , 9 , \ i \in \NN ,\tag{55}
+x = 0.a_1a_2\ldots, \quad a_i = 0, 1, \ldots, 9, \quad i \in \NN, \tag{55}
 $$
-
-where for the numbers with finite amount of decimal places we complete the records with infinite series of 0s. Now select randomly one x. What can one say about the typical distribution of digits $0 , . . . , 9$ in $x ?$ To answer the question, consider the following sequence of approximations:
-
+where for the numbers with finite amount of decimal places we complete the records with infinite series of 0s. Now select *randomly* one $x$. What can one say about the typical distribution of digits $0, \ldots, 9$ in $x$? To answer the question, consider the following sequence of approximations:
 $$
-\begin{array} { l } { { x _ { 0 } = 0 } } \\ { { x _ { 1 } = 0 . a _ { 1 } } } \\ { { . . . } } \\ { { x _ { n } = 0 . a _ { 1 } . . . a _ { n } } } \\ { { . . . } } \end{array}\tag{56}
+\begin{array}{l} x_0 = 0 \\ x_1 = 0.a_1 \\ \ldots \\ x_n = 0.a_1\ldots a_n \\ \ldots \end{array} \tag{56}
 $$
 
 (a) Show that
-
 $$
-P \left( \operatorname* { l i m } _ { n \to \infty } \frac { 1 } { n } I _ { n } ( i ) = \frac { 1 } { 1 0 } \right) = 1 , \forall i ,\tag{57}
+P\left( \lim_{n \to \infty} \frac{1}{n} I_n(i) = \frac{1}{10} \right) = 1, \quad \forall i, \tag{57}
 $$
-
-where $I _ { n } ( i )$ gives the number of i digit in $x _ { n }$ . The result implies that almost all numbers contain equal (and infinite) amount of all 10 digits.
-Such numbers are called normal.
+where $I_n(i)$ gives the number of $i$ digit in $x_n$. The result implies that almost all numbers contain equal (and infinite) amount of all 10 digits. Such numbers are called *normal*.
 
 (b) Check if the rational numbers are normal.
 
 (c) Check if the following number is normal:
-
 $$
-x = 0 , 1 2 3 4 5 6 7 8 9 1 0 1 1 1 2 1 3 . . .\tag{58}
+x = 0,12345678910111213\ldots \tag{58}
 $$
+(all integers are written in ascending order).
 :::
 
 ::: {.solution}
