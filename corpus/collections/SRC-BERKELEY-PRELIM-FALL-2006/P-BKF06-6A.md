@@ -5,7 +5,8 @@ kind: problem
 title: Irreducibility of $x^p-x+1$ over $\FF_p$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

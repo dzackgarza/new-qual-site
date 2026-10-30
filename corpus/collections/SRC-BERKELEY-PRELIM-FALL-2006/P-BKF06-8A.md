@@ -5,7 +5,8 @@ kind: problem
 title: Kernel, image and cokernel of a $3\times3$ integer matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

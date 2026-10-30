@@ -5,7 +5,8 @@ kind: problem
 title: Simultaneous diagonalization of a Hermitian and a positive-definite matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

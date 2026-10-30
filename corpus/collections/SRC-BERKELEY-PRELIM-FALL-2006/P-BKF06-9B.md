@@ -5,7 +5,8 @@ kind: problem
 title: Convergence of the iteration $z_{n+1}=1+1/z_n$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

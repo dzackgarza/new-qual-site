@@ -5,7 +5,8 @@ kind: problem
 title: Exponential of a $2\times2$ integer matrix with eigenvalues $1$ and $2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

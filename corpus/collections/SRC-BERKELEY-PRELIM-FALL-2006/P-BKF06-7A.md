@@ -5,7 +5,8 @@ kind: problem
 title: The equation $1+z+az^n=0$ has a root in $\abs{ z}\le2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

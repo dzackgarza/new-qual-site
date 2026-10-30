@@ -5,7 +5,8 @@ kind: problem
 title: Linear independence of the monomials in $C^0[0,1]$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

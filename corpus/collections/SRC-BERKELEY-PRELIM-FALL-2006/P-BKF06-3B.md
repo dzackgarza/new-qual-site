@@ -5,7 +5,8 @@ kind: problem
 title: Continuity of $x\mapsto\max_{y\in[0,1]}f(x,y)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

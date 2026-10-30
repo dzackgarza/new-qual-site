@@ -5,7 +5,8 @@ kind: problem
 title: The Volterra integration operator on $C^0[0,1]$ has no eigenvectors
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

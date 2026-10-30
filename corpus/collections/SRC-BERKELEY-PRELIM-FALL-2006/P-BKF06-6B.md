@@ -5,7 +5,8 @@ kind: problem
 title: Global fixed points of actions of the nonabelian group of order $21$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

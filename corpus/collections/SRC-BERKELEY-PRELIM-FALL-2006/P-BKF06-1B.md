@@ -5,7 +5,8 @@ kind: problem
 title: Entire functions with $\abs{ f(z^2)}\le2\abs{ f(z)}$ are constant
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

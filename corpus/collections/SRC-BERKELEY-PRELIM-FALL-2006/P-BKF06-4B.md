@@ -5,7 +5,8 @@ kind: problem
 title: Irreducibility of $f(x^3)$ when a root of $f$ has no cube root
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

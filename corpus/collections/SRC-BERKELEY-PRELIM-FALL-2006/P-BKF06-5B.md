@@ -5,7 +5,8 @@ kind: problem
 title: Entire functions determined by their integrals against $(\sin z)^{-m}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

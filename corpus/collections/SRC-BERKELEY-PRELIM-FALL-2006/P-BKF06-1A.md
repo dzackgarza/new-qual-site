@@ -5,7 +5,8 @@ kind: problem
 title: Fourth derivative of $x/\sin x$ at $0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

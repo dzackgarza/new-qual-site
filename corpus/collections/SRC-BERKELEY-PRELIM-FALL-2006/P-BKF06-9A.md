@@ -5,7 +5,8 @@ kind: problem
 title: Fields with finitely generated additive group are finite
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

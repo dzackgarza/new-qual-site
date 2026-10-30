@@ -5,7 +5,8 @@ kind: problem
 title: Uniform limits of continuous maps between metric spaces are continuous
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

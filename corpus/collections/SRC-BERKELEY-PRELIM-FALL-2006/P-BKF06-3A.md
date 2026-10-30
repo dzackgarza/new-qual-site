@@ -5,7 +5,8 @@ kind: problem
 title: Analytic continuation of $\sum\binom{2n}{n}z^n$ to $z=-2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
