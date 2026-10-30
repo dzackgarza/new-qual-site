@@ -5,7 +5,8 @@ kind: problem
 title: Cubic polynomial for $\zeta_7+\zeta_7^{-1}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

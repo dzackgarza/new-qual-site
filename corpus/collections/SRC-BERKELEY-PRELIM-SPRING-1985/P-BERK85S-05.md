@@ -5,7 +5,8 @@ kind: problem
 title: Factorization of $x^4+x^3+x+3$ over $\FF_5$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

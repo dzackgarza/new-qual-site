@@ -5,7 +5,8 @@ kind: problem
 title: Uniform convergence of moving Riemann averages of a continuous function
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

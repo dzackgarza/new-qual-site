@@ -5,7 +5,8 @@ kind: problem
 title: The Euler beta integral $\int_0^\infty x^{\alpha-1}/(1+x)\,dx$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

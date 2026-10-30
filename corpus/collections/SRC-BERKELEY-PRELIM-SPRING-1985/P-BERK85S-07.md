@@ -5,7 +5,8 @@ kind: problem
 title: Fourier transform of the Gaussian by a cosine integral
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Comparison theorem for scalar autonomous differential equations
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

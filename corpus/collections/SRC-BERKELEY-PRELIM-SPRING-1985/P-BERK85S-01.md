@@ -5,7 +5,8 @@ kind: problem
 title: Increasing derivative implies monotonicity of $f(x)/x$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

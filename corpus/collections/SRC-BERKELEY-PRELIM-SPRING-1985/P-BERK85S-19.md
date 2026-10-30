@@ -5,7 +5,8 @@ kind: problem
 title: Every finite field has prime-power cardinality
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

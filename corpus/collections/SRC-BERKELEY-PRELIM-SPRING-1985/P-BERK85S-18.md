@@ -5,7 +5,8 @@ kind: problem
 title: A positive-definite Hermitian factor forces $AB$ to have real spectrum
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

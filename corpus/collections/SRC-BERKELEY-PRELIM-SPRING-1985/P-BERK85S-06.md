@@ -5,7 +5,8 @@ kind: problem
 title: Spectral interval bound for the sum of two Hermitian matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

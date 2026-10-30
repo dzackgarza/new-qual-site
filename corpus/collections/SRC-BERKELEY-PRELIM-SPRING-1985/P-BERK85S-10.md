@@ -5,7 +5,8 @@ kind: problem
 title: Minimal polynomial of a $3\times3$ companion matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Smoothness of the real zeta series on $(1,\infty)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

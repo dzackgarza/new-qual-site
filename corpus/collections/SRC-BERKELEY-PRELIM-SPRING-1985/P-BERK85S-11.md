@@ -5,7 +5,8 @@ kind: problem
 title: The cubic field $\QQ(\sqrt[3]{2})$ and the inverse of $1-\sqrt[3]{2}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

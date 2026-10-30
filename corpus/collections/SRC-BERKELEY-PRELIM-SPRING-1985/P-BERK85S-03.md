@@ -5,7 +5,8 @@ kind: problem
 title: Algebraic criterion for three complex points to form an equilateral triangle
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
@@ -38,6 +39,10 @@ Show that three distinct complex numbers $a,b,c$ are the vertices of an equilate
 $$
 a^2+b^2+c^2=ab+bc+ca.
 $$
+:::
+
+::: {.remark}
+The exam does not require $a,b,c$ to be distinct. Without it the converse fails: $a=b=c$ satisfies the identity but gives no triangle.
 :::
 
 ::: {.solution}

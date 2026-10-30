@@ -5,7 +5,8 @@ kind: problem
 title: Product of commuting elements of coprime finite orders has product order
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

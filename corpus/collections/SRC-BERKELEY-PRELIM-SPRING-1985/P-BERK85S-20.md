@@ -5,7 +5,8 @@ kind: problem
 title: Derivative bound for an analytic self-map of the unit disk
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

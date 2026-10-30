@@ -5,7 +5,8 @@ kind: problem
 title: Discrete harmonic oscillator and convergence to the sine function
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:
@@ -30,19 +31,22 @@ $$
 \frac{y((n+2)h)-2y((n+1)h)+y(nh)}{h^2}=-y(nh),
 \qquad n=0,1,2,\dots.
 $$
+(Note the analogy with the differential equation $y''=-y$.)
 
-1. Find the general solution by exponential substitution.
-2. Find the solution satisfying
-   $$
-   y(0)=0,
-   \qquad
-   y(h)=h,
-   $$
-   and denote it by $S_h(nh)$.
-3. For fixed $x$, put $h=x/n$. Prove that
-   $$
-   \lim_{n\to\infty}S_{x/n}(x)=\sin x.
-   $$
+(a) Find the general solution by exponential substitution.
+
+(b) Find the solution satisfying
+$$
+y(0)=0,
+\qquad
+y(h)=h,
+$$
+and denote it by $S_h(nh)$.
+
+(c) For fixed $x$, put $h=x/n$. Prove that
+$$
+\lim_{n\to\infty}S_{x/n}(x)=\sin x.
+$$
 :::
 
 ::: {.solution}
@@ -178,7 +182,7 @@ well.
 :::
 
 ::: pf-qed
-Steps [](#general-solution-boxed){.pf-ref}, [](#particular-solution-boxed){.pf-ref}, and [](#limit-is-sine){.pf-ref} answer parts 1, 2, and 3 respectively.
+Steps [](#general-solution-boxed){.pf-ref}, [](#particular-solution-boxed){.pf-ref}, and [](#limit-is-sine){.pf-ref} answer parts (a), (b), and (c) respectively.
 :::
 
 :::

@@ -5,7 +5,8 @@ kind: problem
 title: Convergence and evaluation of $\int_0^\pi\log(\sin x)\,dx$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

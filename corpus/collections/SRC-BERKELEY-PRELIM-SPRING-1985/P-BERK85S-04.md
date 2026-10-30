@@ -5,7 +5,8 @@ kind: problem
 title: Taylor coefficients of a function with one simple pole on the unit circle have a limit
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
