@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 provenance:
-- https://www.math.uga.edu/sites/default/files/Quals/Complex%20Analysis%20%5BSpring%202020%5D.docx
+- assets/attachments/Complex_Analysis_Spring_2020.docx
 - assets/attachments/UGA_Complex_Analysis_Spring_2020.pdf
 source:
   source_kind: university-exam

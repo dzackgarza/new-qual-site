@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Combined_Analysis_Spring_2005.docx",
+  "source_pdf_sha256": "f0df1bd684f991521a3cbde1215c9d89112215c8851325cf4644b12cb13b842c",
+  "source_url": "https://www.math.uga.edu/sites/default/files/Quals/Combined%20Analysis%20%5BSpring%C2%A02005%5D.docx",
+  "extracted_markdown": "assets/attachments/Combined_Analysis_Spring_2005_extracted.md",
+  "extracted_markdown_sha256": "e266af5e61f8511461bf3e0fcea4813f0472c21db8a79474f8586f64b92133ea",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Combined_Analysis_Spring_2005.docx --language en",
+  "generated_at": "2026-10-30"
+}

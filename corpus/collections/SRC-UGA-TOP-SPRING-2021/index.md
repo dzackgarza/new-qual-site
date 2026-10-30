@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 provenance:
-- https://www.math.uga.edu/sites/default/files/Quals/Topology%20%5BSpring%202021%5D.docx
+- assets/attachments/Topology_Spring_2021.docx
 source:
   source_kind: university-exam
   institution: uga

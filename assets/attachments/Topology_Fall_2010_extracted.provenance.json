@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Topology_Fall_2010.docx",
+  "source_pdf_sha256": "43797ece2bc6e74f6746590b770341cd59794433c89a3dbd2cf905a5d6b91b1d",
+  "source_url": "https://www.math.uga.edu/sites/default/files/Quals/Topology%20%5BFall%202010%5D.docx",
+  "extracted_markdown": "assets/attachments/Topology_Fall_2010_extracted.md",
+  "extracted_markdown_sha256": "c6b5a4037ce8577603a4d5e2ac8174533a4898b281fed4785b8699d34b28eb73",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Topology_Fall_2010.docx --language en",
+  "generated_at": "2026-10-30"
+}

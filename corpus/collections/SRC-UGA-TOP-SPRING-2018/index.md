@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 provenance:
-- https://www.math.uga.edu/sites/default/files/Quals/Topology%20%5BSpring%202018%5D.docx
+- assets/attachments/Topology_Spring_2018.docx
 source:
   source_kind: university-exam
   institution: uga

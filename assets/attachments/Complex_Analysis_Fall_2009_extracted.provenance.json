@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Complex_Analysis_Fall_2009.docx",
+  "source_pdf_sha256": "bc3a1678a50103af8d91fcc8a2336e33a9aa1d8e2ed15012ec8f9f0a81554ba2",
+  "source_url": "https://www.math.uga.edu/sites/default/files/Quals/Complex%20Analysis%20%5BFall%C2%A02009%5D.docx",
+  "extracted_markdown": "assets/attachments/Complex_Analysis_Fall_2009_extracted.md",
+  "extracted_markdown_sha256": "e74cfd0b4712f1237eb05964ce421b3b93b5a4c5baaa0a48f871058c4030dc83",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Complex_Analysis_Fall_2009.docx --language en",
+  "generated_at": "2026-10-30"
+}

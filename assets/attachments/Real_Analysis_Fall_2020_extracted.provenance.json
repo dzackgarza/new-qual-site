@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Real_Analysis_Fall_2020.docx",
+  "source_pdf_sha256": "c19ee16700323cd6f4948172bb94aca45075229580fbf49b54e8d94905076ad1",
+  "source_url": "https://www.math.uga.edu/sites/default/files/Quals/Real%20Analysis%20%5BFall%202020%5D.docx",
+  "extracted_markdown": "assets/attachments/Real_Analysis_Fall_2020_extracted.md",
+  "extracted_markdown_sha256": "0338cd189b9d62af764aa6a55a41019558938f32d1cdf6da59e1b2627fc67b05",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Real_Analysis_Fall_2020.docx --language en",
+  "generated_at": "2026-10-30"
+}

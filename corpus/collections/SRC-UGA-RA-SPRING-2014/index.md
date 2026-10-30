@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 provenance:
-- https://www.math.uga.edu/sites/default/files/Quals/Real%20Analysis%20%5BSpring%C2%A02014%5D.docx
+- assets/attachments/Real_Analysis_Spring_2014.docx
 source:
   source_kind: university-exam
   institution: uga

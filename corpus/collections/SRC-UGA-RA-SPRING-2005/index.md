@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 provenance:
-- https://www.math.uga.edu/sites/default/files/Quals/Combined%20Analysis%20%5BSpring%C2%A02005%5D.docx
+- assets/attachments/Combined_Analysis_Spring_2005.docx
 source:
   source_kind: university-exam
   institution: uga

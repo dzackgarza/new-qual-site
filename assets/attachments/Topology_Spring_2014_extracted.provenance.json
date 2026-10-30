@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Topology_Spring_2014.docx",
+  "source_pdf_sha256": "8176a94f6b66b910b7535b790eb1b8b104db67442d8ea6ac58454f043809520c",
+  "source_url": "https://www.math.uga.edu/sites/default/files/Quals/Topology%20%5BSpring%202014%5D.docx",
+  "extracted_markdown": "assets/attachments/Topology_Spring_2014_extracted.md",
+  "extracted_markdown_sha256": "c2fe09739588c1effdee5abc19cffd5ba44cabe4dcfba4744f3c8e28618e48c8",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Topology_Spring_2014.docx --language en",
+  "generated_at": "2026-10-30"
+}

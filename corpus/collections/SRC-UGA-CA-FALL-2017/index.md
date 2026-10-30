@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 provenance:
-- https://www.math.uga.edu/sites/default/files/Quals/Complex%20Analysis%20%5BFall%C2%A02017%5D.docx
+- assets/attachments/Complex_Analysis_Fall_2017.docx
 - assets/attachments/UGA_Complex_Analysis_Fall_2017.pdf
 source:
   source_kind: university-exam

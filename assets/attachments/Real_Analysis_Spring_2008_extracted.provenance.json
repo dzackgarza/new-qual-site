@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Real_Analysis_Spring_2008.docx",
+  "source_pdf_sha256": "e7a6d24d74e5c191ed517415568a8184a0ce453b874aa2bd95044d2686dc9114",
+  "source_url": "https://www.math.uga.edu/sites/default/files/Quals/Real%20Analysis%20%5BSpring%C2%A02008%5D.docx",
+  "extracted_markdown": "assets/attachments/Real_Analysis_Spring_2008_extracted.md",
+  "extracted_markdown_sha256": "b82bb6dbea178bf9fc137da19d5525b080527a3945e97b68d58c720f70aa8dd9",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Real_Analysis_Spring_2008.docx --language en",
+  "generated_at": "2026-10-30"
+}

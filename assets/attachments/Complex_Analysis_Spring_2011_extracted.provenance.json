@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Complex_Analysis_Spring_2011.docx",
+  "source_pdf_sha256": "327cecbcdc925b8a5c6b2eee355788d17136e56a061779d8b0323a405b552aef",
+  "source_url": "https://www.math.uga.edu/sites/default/files/Quals/Complex%20Analysis%20%5BSpring%C2%A02011%5D.docx",
+  "extracted_markdown": "assets/attachments/Complex_Analysis_Spring_2011_extracted.md",
+  "extracted_markdown_sha256": "4df398f07c312f478ebab107f00e8613509c10a9e245b855c6e028a55731a6bc",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Complex_Analysis_Spring_2011.docx --language en",
+  "generated_at": "2026-10-30"
+}
