@@ -24,18 +24,8 @@ Integrating term by term gives $N = n$.
 
 ## By Rouché's theorem
 
-::: {.proof}
-The argument follows [@Gam01].
-
-![](../../../../assets/assets/figures/2021-12-10_18-02-14.png)
-
-:::
-
 ::: {.proof title="Using Rouché's theorem"}
-
-![](../../../../assets/assets/Complex_Analysis/figures/2021-07-29_20-41-18.png)
-![](../../../../assets/assets/Complex_Analysis/figures/2021-07-29_20-41-29.png)
-
+The argument follows [@Gam01].
 Let $f(z) \coloneqq a_n z^n$ and $g(z) \coloneqq P(z) - f(z) = a_{n-1}z^{n-1} + \cdots + a_0$, so $f+g = P$.
 Choose
 $$
@@ -57,22 +47,8 @@ Every zero of $P$ lies in $\abs z < R$, since the same estimate gives $\abs{P(z)
 
 ## By Liouville's theorem
 
-::: {.proof}
-
-![](../../../../assets/assets/figures/2021-12-14_16-58-33.png)
-
-:::
-
-::: {.proof}
-The argument follows [@Gam01].
-
-![](../../../../assets/assets/figures/2021-12-10_19-52-51.png)
-
-![](../../../../assets/assets/figures/2021-12-10_19-52-58.png)
-
-:::
-
 ::: {.proof title="Using Liouville's theorem"}
+The argument follows [@Gam01].
 It suffices to show that $P$ has a zero; the full count follows by induction on $n$ after dividing by $z - z_0$ for a zero $z_0$.
 Suppose $P$ has no zeros, so that $1/P$ is entire.
 

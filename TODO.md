@@ -159,7 +159,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-BERKELEY-PRELIM-SPRING-2005
   - [x] SRC-BERKELEY-PRELIM-SPRING-2006
   - [x] SRC-BERKELEY-PRELIM-SPRING-2007
-  - [ ] SRC-BERKELEY-PRELIM-SPRING-2008
+  - [x] SRC-BERKELEY-PRELIM-SPRING-2008
   - [ ] SRC-BERKELEY-PRELIM-SPRING-2009
   - [ ] SRC-BERKELEY-PRELIM-SPRING-2010
   - [ ] SRC-BERKELEY-PRELIM-SPRING-2011
@@ -873,7 +873,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/archives/qual-workshop-index.md
   - [x] wiki/archives/solution-compendia.md
   - [x] wiki/archives/topics.md
-  - [ ] wiki/complex-analysis/appendices/appendix-fta-proofs.md
+  - [x] wiki/complex-analysis/appendices/appendix-fta-proofs.md
   - [ ] wiki/complex-analysis/appendices/appendix-unsorted.md
   - [ ] wiki/complex-analysis/appendices/gauss-lucas-theorem.md
   - [ ] wiki/complex-analysis/appendices/index.md
