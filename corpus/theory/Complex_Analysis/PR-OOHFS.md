@@ -39,5 +39,5 @@ So $\Psi(z)$ lies in the lower half-disc exactly when $\Re z>0$, and $\Psi(Q_1)=
 ::: {.remark}
 The real axis is mapped onto the unit circle minus $1$, and horizontal lines $\Im z=c>0$ are mapped onto circles in $\DD$ tangent to the unit circle at $1$:
 
-![](../../assets/figures/2021-07-29_19-02-54.png)
+![The Cayley map w = (z-i)/(z+i) sends the upper half-plane onto the unit disc: the real axis goes to the unit circle, and horizontal lines above it go to circles inside the disc tangent to the circle at 1.](../../assets/figures/2021-07-29_19-02-54.png)
 :::

@@ -23,5 +23,5 @@ $$
 \lim_{\varepsilon\to0}\int_{\gamma_\varepsilon}f(z)\dz=i(\beta-\alpha)\Res_{z=z_0}f.
 $$
 
-![](../../assets/figures/2021-12-22_05-13-02.png)
+![A circular arc of radius epsilon about a, traversed counterclockwise from angle alpha to angle beta; as epsilon tends to 0 the integral over it tends to (beta - alpha) i times the residue of f at a.](../../assets/figures/2021-12-22_05-13-02.png)
 :::

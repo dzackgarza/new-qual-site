@@ -38,6 +38,4 @@ Both maps are holomorphic on these sets and mutually inverse.
 ::: {.remark}
 $F$ extends to a homeomorphism from $\RR\cup\theset{\infty}$ onto the unit circle, with $F(\infty) = -1$, $F(-1)=-i$, and $F(0)=1$.
 As $x$ increases from $-\infty$ to $\infty$ along $\RR$, $F(x)$ travels counterclockwise around the circle, starting at $-1$ and passing through the lower half first.
-
-![](../../assets/figures/2021-07-29_19-02-54.png)
 :::

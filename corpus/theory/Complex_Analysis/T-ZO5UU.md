@@ -17,7 +17,7 @@ review: draft
 ::: {.theorem}
 For $R>0$ let $C_R$ be the upper semicircle $t\mapsto Re^{it}$, $t\in[0,\pi]$.
 
-![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-20_20-35-11.png)
+![The upper semicircle of radius R, traversed counterclockwise from R to -R.](../../assets/Complex_Analysis/040_Residues/figures/2021-12-20_20-35-11.png)
 
 Let $\alpha>0$, let $g$ be continuous on $C_R$, and let $M_R\coloneqq\sup_{z\in C_R}\abs{g(z)}$.
 Then
