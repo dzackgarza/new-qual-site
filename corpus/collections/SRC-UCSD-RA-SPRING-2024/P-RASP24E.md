@@ -94,58 +94,29 @@ Thus $X \cap \operatorname{supp}(\mu) = \{x \in X : \mu(\{x\}) > 0\}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
-Countability of $X \cap \operatorname{supp}(\mu)$:
-    The set $S = \{x \in X : \mu(\{x\}) > 0\}$ is at most countable.
-    *Proof:*
+The set $S = \{x \in X : \mu(\{x\}) > 0\}$ is at most countable.
 
 ::: pf-proof
 
-::: pf-step
-
-For each $n \in \NN_{\ge 1}$, define $S_n = \{x \in X : \mu(\{x\}) \ge \frac{1}{n}\}$.
-
-:::
-
-::: pf-step
-
-Then $S = \bigcup_{n=1}^\infty S_n$.
-
-:::
-
-::: pf-step
-
-For any finite subset $\{x_1, \dots, x_k\} \subseteq S_n$, pairwise disjointness of singletons gives:
-        $$\mu(X^*) \ge \mu\left(\bigcup_{j=1}^k \{x_j\}\right) = \sum_{j=1}^k \mu(\{x_j\}) \ge \frac{k}{n}.$$
-
-:::
-
-::: pf-step
-
-Therefore $k \le n \mu(X^*)$, which proves that each $S_n$ is finite with $\cardinality{S_n} \le n \mu(X^*) < \infty$.
-
-:::
-
-::: pf-step
-
-As a countable union of finite sets, $S$ is at most countable.
+For each $n \ge 1$ let $S_n = \{x \in X : \mu(\{x\}) \ge 1/n\}$, so $S = \bigcup_{n\ge1} S_n$.
+For distinct $x_1,\dots,x_k \in S_n$, disjointness of the singletons gives
+$$\mu(X^*) \ge \sum_{j=1}^k \mu(\{x_j\}) \ge \frac{k}{n},$$
+so $\cardinality{S_n} \le n\,\mu(X^*) < \infty$.
+A countable union of finite sets is at most countable.
 
 :::
 
 :::
 
-:::
+::: pf-qed
 
-::: pf-step
-
-Conclusion: $\operatorname{supp}(\mu)$ is countable.
-
-:::
+Since $X^* = X \cup \{\infty\}$, the previous steps give $\operatorname{supp}(\mu) \subseteq S \cup \{\infty\}$, and $S$ is at most countable by step [](#s4){.pf-ref}.
+Hence $\operatorname{supp}(\mu)$ is countable.
 
 :::
 
-    *Proof:* Since $X^* = X \cup \{\infty\}$, we have
-    $$\operatorname{supp}(\mu) = (X \cap \operatorname{supp}(\mu)) \cup (\{\infty\} \cap \operatorname{supp}(\mu)) \subseteq S \cup \{\infty\}.$$
-    Since $S$ is at most countable by step [](#s4){.pf-ref}, $S \cup \{\infty\}$ is at most countable. Therefore, $\operatorname{supp}(\mu)$ is at most countable (countable). Q.E.D.
+:::
+
 :::

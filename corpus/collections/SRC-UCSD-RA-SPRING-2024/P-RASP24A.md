@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP24A
 kind: problem
-title: "Borel measurable function defined by series over rationals"
+title: 'Jump function with jumps $2^{-n}$ at the points $r_n$'
 classification:
   areas:
   - real-analysis
