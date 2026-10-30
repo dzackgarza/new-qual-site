@@ -27,7 +27,7 @@ Which of the following subsets are subrings of the ring of real numbers?
 
 I. $\{a+b\sqrt2 \mid a\text{ and }b\text{ are rational}\}$
 
-II. $\left\{\dfrac{n}{3^m} \;\middle|\; n\text{ is an integer and }m\text{ is a non-negative integer}\right\}$
+II. $\left\{\dfrac{n}{3^m} \st n\text{ is an integer and }m\text{ is a non-negative integer}\right\}$
 
 III. $\{a+b\sqrt5 \mid a\text{ and }b\text{ are real numbers and }a^2+b^2\le1\}$
 
