@@ -15,8 +15,6 @@ review: draft
 ::: {.problem}
 Suppose that $f(z)$ is an entire function satisfying $f(z) = f(z + 1)$ for all $z$.
 If there exists a real number $c$, with $c \neq 2\pi k$, $k \in \ZZ$, such that $\abs{f(z)} \leq e^{c\,\operatorname{Im} z}$ for all $z \in \CC$, prove that $f \equiv 0$.
-
-Hint: Prove it first for the case $G = B(0; 1)$.
 :::
 
 ::: {.solution}
