@@ -5,7 +5,9 @@ kind: problem
 title: State both parts of the Fundamental Theorem of Calculus
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integrals
+  - Differentiation
 relations: []
 review: draft
 audit:

@@ -2,10 +2,14 @@
 schema: qual/card@1
 id: P-UGAP08S-08
 kind: problem
-title: Three short examples in logic, power series, and pointwise convergence
+title: 'Examples: $\forall$ not distributing over $\lor$, a power series converging exactly on $[0,4)$, and pointwise but nonuniform convergence'
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Logic and Quantifiers
+  - Power Series
+  - Uniform Convergence
+  - Counterexamples
 relations: []
 review: draft
 audit:

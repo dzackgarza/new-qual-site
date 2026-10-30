@@ -5,7 +5,9 @@ kind: problem
 title: A basis adapted to the kernel maps to a basis of the range
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Maps
+  - Bases
 relations: []
 review: draft
 audit:

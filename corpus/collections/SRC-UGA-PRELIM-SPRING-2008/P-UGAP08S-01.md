@@ -5,7 +5,8 @@ kind: problem
 title: Left cancellation by an injective function
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Functions and Relations
 relations: []
 review: draft
 audit:

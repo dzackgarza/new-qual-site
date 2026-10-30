@@ -2,10 +2,12 @@
 schema: qual/card@1
 id: P-UGAP08S-05
 kind: problem
-title: Orthogonally diagonalize a three-by-three constant-off-diagonal matrix
+title: Orthogonally diagonalize $\begin{pmatrix}2&1&1\\1&2&1\\1&1&2\end{pmatrix}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Diagonalization
+  - Spectral Theorem
 relations: []
 review: draft
 audit:

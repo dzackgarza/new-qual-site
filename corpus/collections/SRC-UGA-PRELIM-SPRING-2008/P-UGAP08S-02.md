@@ -5,7 +5,8 @@ kind: problem
 title: Prove $x^3$ is continuous at $2$ from the $\varepsilon$-$\delta$ definition
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Continuity
 relations: []
 review: draft
 audit:

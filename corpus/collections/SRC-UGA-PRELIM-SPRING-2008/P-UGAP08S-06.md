@@ -5,7 +5,8 @@ kind: problem
 title: Zeros of every derivative from zeros at all integers
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Differentiation
 relations: []
 review: draft
 audit:

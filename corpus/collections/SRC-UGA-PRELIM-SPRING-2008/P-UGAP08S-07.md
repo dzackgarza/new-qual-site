@@ -5,7 +5,9 @@ kind: problem
 title: Continuity at the origin of two rational functions on $\RR^2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Continuity
+  - Multivariable Calculus
 relations: []
 review: draft
 audit:
