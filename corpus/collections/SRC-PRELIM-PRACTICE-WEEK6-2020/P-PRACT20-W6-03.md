@@ -12,11 +12,17 @@ review: draft
 ---
 
 ::: {.problem}
-Which of the following does not define a metric on R?
+Which of the following does not define a metric on $\RR$?
 
-$$
-\begin{array} { r l } & { \mathrm { ( A ) } \ \delta ( x , y ) = \left\{ \begin{array} { l l } { 0 , x = y , } \\ { 2 , x \neq y . } \end{array} \right. \quad \mathrm { ( B ) } \ \rho ( x , y ) = \operatorname* { m i n } \{ \abs{ x - y } , 1 \} \quad \mathrm { ( C ) } \ \sigma ( x , y ) = \frac { \abs{ x - y } } { 3 } } \\ & { \mathrm { ( D ) } \ \tau ( x , y ) = \frac { \abs{ x - y } } { \abs{ x - y } + 1 } \quad \mathrm { ( E ) } \ \omega ( x , y ) = ( x - y ) ^ { 2 } } \end{array}
-$$
+(A) $\delta(x, y) = \begin{cases} 0, & x = y, \\ 2, & x \neq y. \end{cases}$
+
+(B) $\rho(x, y) = \min\{\abs{x - y}, 1\}$
+
+(C) $\sigma(x, y) = \dfrac{\abs{x - y}}{3}$
+
+(D) $\tau(x, y) = \dfrac{\abs{x - y}}{\abs{x - y} + 1}$
+
+(E) $\omega(x, y) = (x - y)^{2}$
 :::
 
 ::: {.solution}

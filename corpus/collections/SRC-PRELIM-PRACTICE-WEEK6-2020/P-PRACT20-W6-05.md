@@ -12,9 +12,9 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that $f : ( 0 , 1 ) \to \RR$ is uniformly continuous.
-Let $\{ x _ { n } \}$ be a sequence in $( 0 , 1 )$ such that $x _ { n } \to 0$ . Show that the sequence $\{ f ( x _ { n } ) \}$ converges.
-[Note: generalizing this fact, one can show that if $U \subset \RR ^ { n }$ is open, then $f : U \to \RR$ is uniformly continuous iff f can be continuously extended to the closure ${ \overline { { U } } } . ]$
+Suppose that $f : (0, 1) \to \RR$ is uniformly continuous.
+Let $\{x_{n}\}$ be a sequence in $(0, 1)$ such that $x_{n} \to 0$. Show that the sequence $\{f(x_{n})\}$ converges.
+[Note: generalizing this fact, one can show that if $U \subset \RR^{n}$ is open, then $f : U \to \RR$ is uniformly continuous iff $f$ can be continuously extended to the closure $\overline{U}$.]
 :::
 
 ::: {.solution}

@@ -12,8 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let X be a random variable with density function $\textstyle f ( x ) = { \frac { 3 } { 4 } } ( 1 - x ^ { 2 } )$ , for $x \in [ - 1 , 1 ]$ (and $f ( x ) = 0$ elsewhere).
-What is the standard deviation of $X ?$
+Let $X$ be a random variable with density function $f(x) = \frac{3}{4}(1 - x^{2})$, for $x \in [-1, 1]$ (and $f(x) = 0$ elsewhere).
+What is the standard deviation of $X$?
 :::
 
 ::: {.solution}

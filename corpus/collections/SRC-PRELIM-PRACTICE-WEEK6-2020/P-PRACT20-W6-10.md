@@ -12,11 +12,13 @@ review: draft
 ---
 
 ::: {.problem}
-Find continuous functions $f , g : [ 0 , \infty ) \to \RR$ such that
+Find continuous functions $f, g : [0, \infty) \to \RR$ such that
 
-(A) $\textstyle \int _ { 0 } ^ { \infty } f ( x ) d x$ converges but $f ( x ) \neq 0$ as $x \to \infty$ ,
+(A) $\int_{0}^{\infty} f(x)\, dx$ converges but $f(x) \not\to 0$ as $x \to \infty$,
 
-(B) $\{ g ( t + n ) \} _ { n \in \NN }$ converges to zero as $n \to \infty$ for any fixed $t \geq 0$ but $g ( x ) \not \to 0$ as $x \to \infty$ Bonus: show that neither of these is possible if we stipulate that $f , g$ are uniformly continuous.
+(B) $\{g(t + n)\}_{n \in \NN}$ converges to zero as $n \to \infty$ for any fixed $t \geq 0$ but $g(x) \not\to 0$ as $x \to \infty$.
+
+Bonus: show that neither of these is possible if we stipulate that $f, g$ are uniformly continuous.
 :::
 
 ::: {.solution}

@@ -14,9 +14,8 @@ review: draft
 ::: {.problem}
 Let $f$ be the function whose graph is pictured on the right.
 Find the supremum of the set
-
 $$
-\left\{ \sum _ { k = 1 } ^ { n } \abs{ f ( x _ { k } ) - f ( x _ { k - 1 } ) } : \left\{ x _ { k } \right\} _ { k = 0 } ^ { n } { \mathrm { ~ i s ~ a ~ p a r t i t i o n ~ o f ~ } } [ 0 , 1 2 ] \right\}
+\left\{ \sum_{k=1}^{n} \abs{f(x_{k}) - f(x_{k-1})} : \{x_{k}\}_{k=0}^{n} \text{ is a partition of } [0, 12] \right\}.
 $$
 
 ![Source page preserving the figure/choices for this problem.](../../../assets/attachments/prelim-practice-week6-2020/page-4.png)

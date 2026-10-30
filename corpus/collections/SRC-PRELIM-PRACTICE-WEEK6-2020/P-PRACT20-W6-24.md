@@ -12,25 +12,17 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f : \RR \to \RR$ and let $X , Y \subseteq \RR$ . Which of these are necessarily true?
+Let $f : \RR \to \RR$ and let $X, Y \subseteq \RR$. Which of these are necessarily true?
 
-$$
-f ( X \cap Y ) = f ( X ) \cap f ( Y )
-$$
+(A) $f(X \cap Y) = f(X) \cap f(Y)$
 
-$$
-f ^ { - 1 } ( X \cap Y ) = f ^ { - 1 } ( X ) \cap f ^ { - 1 } ( Y )
-$$
+(B) $f(X \cup Y) = f(X) \cup f(Y)$
 
-$$
-f ( X \cup Y ) = f ( X ) \cup f ( Y )
-$$
+(C) $f^{-1}(X \cap Y) = f^{-1}(X) \cap f^{-1}(Y)$
 
-$$
-f ^ { - 1 } ( X \cup Y ) = f ^ { - 1 } ( X ) \cup f ^ { - 1 } ( Y )
-$$
+(D) $f^{-1}(X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$
 
-Here for $A \subseteq \RR , f ( A ) = \{ f ( x ) : x \in A \}$ and $f ^ { - 1 } ( A ) = \{ x \in \RR : f ( x ) \in A \}$
+Here for $A \subseteq \RR$, $f(A) = \{f(x) : x \in A\}$ and $f^{-1}(A) = \{x \in \RR : f(x) \in A\}$.
 :::
 
 ::: {.solution}

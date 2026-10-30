@@ -12,14 +12,12 @@ review: draft
 ---
 
 ::: {.problem}
-Fix $x > 0$ . Give a rigorous meaning to $\sqrt { x + { \sqrt { x + { \sqrt { x + \cdots } } } } }$ by proving that the sequence
-
+Fix $x > 0$. Give a rigorous meaning to $\sqrt{x + \sqrt{x + \sqrt{x + \cdots}}}$ by proving that the sequence
 $$
-a _ { 0 } = \sqrt { x } , \quad a _ { n } = \sqrt { x + a _ { n - 1 } } , \ n = 1 , 2 , 3 , \dots .
+a_{0} = \sqrt{x}, \quad a_{n} = \sqrt{x + a_{n-1}}, \quad n = 1, 2, 3, \dots
 $$
-
 converges and finding the limit.
-What happens as $x \searrow 0 ?$
+What happens as $x \searrow 0$?
 :::
 
 ::: {.solution}

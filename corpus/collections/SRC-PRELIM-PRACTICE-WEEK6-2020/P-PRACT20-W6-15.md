@@ -12,10 +12,10 @@ review: draft
 ---
 
 ::: {.problem}
-Let $S \subset [ 0 , 1 ] \times [ 0 , 1 ]$ consist of all points $( x , y ) \in [ 0 , 1 ] \times [ 0 , 1 ]$ such that x or y or both is irrational.
-Which of the following is true (with respect to the standard topology on $\RR ^ { 2 } ) ?$
+Let $S \subset [0, 1] \times [0, 1]$ consist of all points $(x, y) \in [0, 1] \times [0, 1]$ such that $x$ or $y$ or both is irrational.
+Which of the following is true (with respect to the standard topology on $\RR^{2}$)?
 
-(A) S is open (B) S is closed (C) S is connected (D) S is totally disconnected (E) S is compact
+(A) $S$ is open (B) $S$ is closed (C) $S$ is connected (D) $S$ is totally disconnected (E) $S$ is compact
 :::
 
 ::: {.solution}

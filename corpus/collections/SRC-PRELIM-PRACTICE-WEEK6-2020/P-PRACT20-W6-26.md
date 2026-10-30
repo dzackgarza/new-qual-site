@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let A, B be subsets of some set X. Define $S _ { 0 } = \{ A , B \}$ . For $i \geq 0$ , inductively define $S _ { i + 1 }$ to contain all sets of the form $C \cup D , C \cap D$ , and $X \backslash C$ where $C , D \in S _ { i }$ . What is the largest possible number of distinct sets contained in $\cup _ { i = 0 } ^ { \infty } S _ { i } ?$
+Let $A, B$ be subsets of some set $X$. Define $S_{0} = \{A, B\}$. For $i \geq 0$, inductively define $S_{i+1}$ to contain all sets of the form $C \cup D$, $C \cap D$, and $X \setminus C$ where $C, D \in S_{i}$. What is the largest possible number of distinct sets contained in $\bigcup_{i=0}^{\infty} S_{i}$?
 :::
 
 ::: {.solution}
