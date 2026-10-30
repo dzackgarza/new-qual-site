@@ -5,8 +5,9 @@ kind: problem
 title: Jordan lemma on a quarter circle
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Contour Integration
 relations: []
 review: draft
 audit:

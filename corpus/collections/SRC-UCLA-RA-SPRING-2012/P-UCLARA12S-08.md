@@ -5,8 +5,10 @@ kind: problem
 title: An unbounded harmonic function with zero boundary values
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Harmonic Functions
+  - Conformal Maps
 relations: []
 review: draft
 audit:

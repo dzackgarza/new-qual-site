@@ -5,8 +5,10 @@ kind: problem
 title: Meromorphic continuation of the Gamma function
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Analytic Continuation
+  - Meromorphic Functions
 relations: []
 review: draft
 audit:

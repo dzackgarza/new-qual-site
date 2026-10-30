@@ -5,8 +5,9 @@ kind: problem
 title: Polynomial reciprocal identity on the unit circle
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Zeros
 relations: []
 review: draft
 audit:
