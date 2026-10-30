@@ -57,7 +57,7 @@ DF(0)=I.
 $$
 Hence $\norm{DF(x)-I}\to0$ as $x\to0$. Choose $r>0$ so that the displayed bound holds on the closed ball
 $$
-\overline B_r={x\in\RR^2:\norm{x}\le r}.
+\overline B_r=\{x\in\RR^2\st\norm{x}\le r\}.
 $$
 
 :::
