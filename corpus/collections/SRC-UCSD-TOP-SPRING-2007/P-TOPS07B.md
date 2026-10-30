@@ -20,7 +20,7 @@ Let $X_n$ be the bouquet of $n$ circles, whose fundamental group (based at the v
 (i) Draw a covering of $X_3$ by $X_5$.
 Find the subgroup of $F_3 = \langle a, b, c \rangle$ to which your cover corresponds under the correspondence between subgroups of $F_3$ and based connected covers of $X_3$.
 
-(ii) Show that $X_4$ cannot cover $X_2$.
+(ii) Show that $X_4$ cannot cover $X_3$.
 :::
 
 ::: {.solution}
@@ -60,11 +60,11 @@ The two vertices are the two cosets of the kernel. Using the transversal $\{1,a\
 
 ::: pf-step
 
-The space $X_4$ cannot cover $X_2$.
+The space $X_4$ cannot cover $X_3$.
 
 ::: pf-proof
 
-The wedge point of $X_4$ has valence $8$, while every point lying over the wedge point of $X_2$ in a covering must have a neighborhood homeomorphic to a neighborhood of that wedge point, hence valence $4$. The unique branch point of $X_4$ therefore cannot map locally homeomorphically to the branch point of $X_2$. Thus no covering map $X_4\to X_2$ exists.
+A covering of a finite graph by a finite graph with $d$ sheets multiplies the Euler characteristic by $d$. Here $\chi(X_3)=1-3=-2$ and $\chi(X_4)=1-4=-3$, so a $d$-sheeted covering $X_4\to X_3$ would give $-3=-2d$, which has no integer solution. A covering of $X_3$ by the compact space $X_4$ has finitely many sheets, so no covering map $X_4\to X_3$ exists. Equivalently, the wedge point of $X_4$ has valence $8$, while every vertex of a covering of $X_3$ has valence $6$.
 
 :::
 
