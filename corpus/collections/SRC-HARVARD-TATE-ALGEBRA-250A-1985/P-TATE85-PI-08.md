@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-(8) Let A be the ring of power series$c _ { 0 } + c _ { 1 } z + c _ { 2 } z ^ { 2 } + . .$. with complex coefficients$c _ { i }$which have a nonzero radius of convergence (ring of germs of analytic functions at the origin$z = 0$in the complex z-plane). Discuss the prime ideals in$A .$. Do the same for the ring of formal power series$\dot { \boldsymbol { A } } = \boldsymbol { K } [ [ \boldsymbol { z } ] ]$in one variable z over any field.
+(8) Let $A$ be the ring of power series $c_{0} + c_{1} z + c_{2} z^{2} + \cdots$ with complex coefficients $c_{i}$ which have a nonzero radius of convergence (ring of germs of analytic functions at the origin $z = 0$ in the complex $z$-plane). Discuss the prime ideals in $A$. Do the same for the ring of formal power series $A = K[[z]]$ in one variable $z$ over any field.
 :::
 
 ::: {.solution}

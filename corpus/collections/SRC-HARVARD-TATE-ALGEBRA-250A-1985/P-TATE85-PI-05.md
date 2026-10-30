@@ -12,15 +12,15 @@ review: draft
 ---
 
 ::: {.problem}
-(5) If C is the field of complex numbers (or any algebraically closed field), apply (4) to$B = \CC [ Y ]$to show that the prime ideals$P$in the ring$A = \CC [ X , Y ]$are of three distinct types :
+(5) If $\CC$ is the field of complex numbers (or any algebraically closed field), apply (4) to $B = \CC[Y]$ to show that the prime ideals $P$ in the ring $A = \CC[X, Y]$ are of three distinct types:
 
-(I)$P = ( 0 )$
+(I) $P = (0)$.
 
-(II) and (III)$P = f ( X , Y ) A$where$f ( X , Y )$is an irreducible polynomial in two variables with complex coefficients, uniquely determined by$P$up to a nonzero constant factor.
+(II) and (III) $P = f(X, Y) A$ where $f(X, Y)$ is an irreducible polynomial in two variables with complex coefficients, uniquely determined by $P$ up to a nonzero constant factor.
 
-(IV)$P = ( X - x _ { 0 } ) A + ( Y - y _ { 0 } ) A$, where$x _ { 0 }$and$y _ { 0 }$are complex numbers uniquely determined by$P .$
+(IV) $P = (X - x_{0}) A + (Y - y_{0}) A$, where $x_{0}$ and $y_{0}$ are complex numbers uniquely determined by $P$.
 
-The only maximal ideals are those of type IV, and the ideals of type IV containing a given$f ( X , Y ) A$are those for which$f ( x _ { 0 } , y _ { 0 } ) = 0$
+The only maximal ideals are those of type IV, and the ideals of type IV containing a given $f(X, Y) A$ are those for which $f(x_{0}, y_{0}) = 0$.
 :::
 
 ::: {.solution}
