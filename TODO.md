@@ -621,8 +621,8 @@ mathematical correction under its own node, not under copy policy.
     - [x] SRC-BERKELEY-PRELIM-SPRING-2021 9B lists P-BKS11-6B ($x^4+x+2011$); the 2021 paper
       asks $x^4+x+2021$. Give 9B its own card. Not a defect: a changed odd constant is a
       CARD-04 near-duplicate, and the P-BKS11-6B Variations remark states $x^4+x+2021$.
-    - [ ] SRC-UGA-PRELIM-FALL-2007 omits paper Problem 6; list P-F04T5 between P-5YTY5 and
-      P-F07EX and fix the remark's problem count.
+    - [x] SRC-UGA-PRELIM-FALL-2007 omits paper Problem 6; list P-F04T5 between P-5YTY5 and
+      P-F07EX and fix the remark's problem count. The remark already counts the paper's seven problems.
     - [ ] P-3AEDF: the Fall 2016 paper assumes $C^2$, the card (from Tie's list) $C^3$; keep
       the weaker hypothesis on the card and title (CARD-04).
     - [ ] P-TKF72: the limit is over $R$, not $z$, and $R$ names two radii; follow the paper.
