@@ -24,6 +24,8 @@ source:
           comment: "2.19"
     - name: Ch. 3 Exercises
       problems:
+        - id: P-TFXE2
+          comment: "3.4, first assertion"
         - id: P-AGH3O
           comment: '3.5'
         - id: P-DPR0E

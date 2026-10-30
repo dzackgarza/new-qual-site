@@ -20,6 +20,8 @@ source:
   sections:
     - name: Ch. 3 Exercises
       problems:
+        - id: P-TFXE2
+          comment: "3.22, first assertion"
         - id: P-DPR0E
           comment: "3.37"
     - name: Ch. 6 Exercises
