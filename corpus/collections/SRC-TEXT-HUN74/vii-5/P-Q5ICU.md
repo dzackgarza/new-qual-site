@@ -80,3 +80,7 @@ Apply step [](#s1){.pf-ref} to the endomorphisms $x\mapsto Ax$ and $x\mapsto Bx$
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The question can be asked without the diagonalizability hypothesis: what can be said about the eigenspaces of commuting operators $A,B$? Each eigenspace $\ker(A-\lambda)$ is $B$-invariant, since $(A-\lambda)Bv=B(A-\lambda)v=0$. Commuting diagonalizable operators are simultaneously diagonalizable by (a), and the converse is immediate because diagonal matrices commute.
+:::
