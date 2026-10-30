@@ -94,6 +94,7 @@ $$
 \sum_{k=1}^{n}(2k-1) &= n^2.
 \end{aligned}
 $$
+The last identity cuts an $n\times n$ square of dots into $L$-shaped layers of $1, 3, 5, \ldots, 2n-1$ dots:
 
 ![](figures/2021-12-11_22-09-24.png)
 
