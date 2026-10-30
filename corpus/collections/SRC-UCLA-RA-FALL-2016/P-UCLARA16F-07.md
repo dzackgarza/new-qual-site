@@ -5,8 +5,10 @@ kind: problem
 title: Reproducing kernel of the Bergman space of the disk
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Holomorphic Functions
+  - Cauchy Integral Formula
 relations: []
 review: draft
 audit:

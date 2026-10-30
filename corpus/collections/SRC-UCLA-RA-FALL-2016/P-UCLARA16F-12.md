@@ -5,8 +5,10 @@ kind: problem
 title: Runge approximation by rational functions
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Holomorphic Functions
+  - Cauchy Integral Formula
 relations: []
 review: draft
 audit:

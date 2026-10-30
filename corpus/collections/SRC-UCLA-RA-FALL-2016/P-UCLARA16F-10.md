@@ -5,8 +5,10 @@ kind: problem
 title: Filled Julia set of $z^2-1$
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Holomorphic Functions
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

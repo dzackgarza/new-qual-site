@@ -5,8 +5,10 @@ kind: problem
 title: Jensen's inequality and boundary zeros of disk algebra functions
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Zeros
+  - Subharmonic Functions
 relations: []
 review: draft
 audit:

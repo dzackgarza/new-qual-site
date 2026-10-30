@@ -5,8 +5,10 @@ kind: problem
 title: Fourier--Laplace transforms of probability measures on $[0,1]$ with polynomial growth
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Zeros
 relations: []
 review: draft
 audit:

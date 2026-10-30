@@ -5,8 +5,10 @@ kind: problem
 title: Entire functions with $f(z)f(1/z)$ bounded are monomials
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Laurent Series
 relations: []
 review: draft
 audit:
