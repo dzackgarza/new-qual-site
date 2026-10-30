@@ -231,7 +231,7 @@ mathematical correction under its own node, not under copy policy.
   - [ ] SRC-MATH6338-HW8
   - [ ] SRC-MATH655-HW3-2003
   - [ ] SRC-MATH7200-EXERCISE-SET-8-FALL-2006
-  - [ ] SRC-MATH8100-ASSIGNMENT-1
+  - [x] SRC-MATH8100-ASSIGNMENT-1
   - [ ] SRC-MATH8100-ASSIGNMENT-2
   - [ ] SRC-MATH8100-ASSIGNMENT-3
   - [ ] SRC-MATH8100-ASSIGNMENT-4
