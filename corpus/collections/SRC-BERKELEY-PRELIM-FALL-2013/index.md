@@ -35,7 +35,7 @@ source:
     comment: Problem 8A
   - id: P-BKF13-9A
     comment: Problem 9A
-  - id: P-BKF13-1B
+  - id: P-BKF11-1B
     comment: Problem 1B
   - id: P-BKF13-2B
     comment: Problem 2B
