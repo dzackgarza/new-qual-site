@@ -33,7 +33,7 @@ source:
   - P-BKS21-6B
   - P-BKS12-4A
   - P-BKF12-9A
-  - P-BKS21-9B
+  - P-BKS11-6B
   date:
     kind: academic-term
     term: spring

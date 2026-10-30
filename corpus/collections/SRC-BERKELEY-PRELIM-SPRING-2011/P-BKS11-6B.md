@@ -6,7 +6,8 @@ title: Irreducibility of $x^4+x+2011$ over $\QQ$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -145,4 +146,10 @@ Step [](#f-irreducible){.pf-ref} is the required irreducibility statement.
 
 :::
 
+:::
+
+::: {.remark title="Variations"}
+The polynomial $x^4+x+2021$ is irreducible over $\QQ$.
+The proof above applies unchanged: $2021$ is odd, so the reduction modulo $2$ is again $x^4+x+1$.
+The same holds for $x^4+x+c$ with any odd integer $c$.
 :::
