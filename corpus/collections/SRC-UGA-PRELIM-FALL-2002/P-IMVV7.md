@@ -2,19 +2,18 @@
 schema: qual/card@1
 id: P-IMVV7
 kind: problem
-title: Permutations, combinations, and the number of injections from a $k$-set to
-  an $n$-set
+title: 'Permutations, combinations, and the number of injections from a $k$-set to an $n$-set'
 classification:
   areas:
-  - prelim
+    - prelim
   topics:
-  - Combinatorics
+    - Combinatorics
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-10
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-10
 ---
 
 ::: {.problem}
