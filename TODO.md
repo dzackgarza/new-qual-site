@@ -549,7 +549,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-TOP-SPRING-2013
   - [x] SRC-UCSD-TOP-SPRING-2017
   - [x] SRC-UCSD-TOP-SPRING-2018
-  - [ ] SRC-UCSD-TOP-SPRING-2020
+  - [x] SRC-UCSD-TOP-SPRING-2020
   - [ ] SRC-UCSD-TOP-SPRING-2022
   - [ ] SRC-UCSD-TOP-SPRING-2023
   - [ ] SRC-UCSD-TOP-SPRING-2024
