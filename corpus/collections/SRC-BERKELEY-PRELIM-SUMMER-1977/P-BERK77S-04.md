@@ -6,7 +6,8 @@ title: Entrywise convergence of the matrix exponential series
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

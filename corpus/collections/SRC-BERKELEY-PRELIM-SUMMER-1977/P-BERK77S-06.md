@@ -6,7 +6,8 @@ title: A complete elliptic integral is increasing in its parameter
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

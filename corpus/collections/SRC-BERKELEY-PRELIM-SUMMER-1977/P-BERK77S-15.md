@@ -6,7 +6,8 @@ title: A compact-space subsequence criterion for convergence
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -30,8 +31,9 @@ audit:
 ::: {.problem}
 Let $A\subset\RR^n$ be compact, let $x\in A$, and let $(x_i)$ be a sequence in $A$ such that every convergent subsequence of $(x_i)$ converges to $x$.
 
-1. Prove that the entire sequence $(x_i)$ converges to $x$.
-2. Give an example showing that if $A$ is not compact, the conclusion in part 1 need not hold.
+(a) Prove that the entire sequence $(x_i)$ converges to $x$.
+
+(b) Give an example showing that if $A$ is not compact, the conclusion in part (a) need not hold.
 :::
 
 ::: {.solution}
@@ -131,7 +133,7 @@ Hence $x_i\to x$.
 
 ::: {.pf-step #s5}
 
-For part (2), take
+For part (b), take
 $$
 A=\{0,1,2,3,\ldots\}\subset\RR,
 \qquad
@@ -194,8 +196,8 @@ $0$.
 
 ::: pf-qed
 
-Step [](#s4){.pf-ref} proves part (1), while steps [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} give the required
-noncompact counterexample for part (2).
+Step [](#s4){.pf-ref} proves part (a), while steps [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} give the required
+noncompact counterexample for part (b).
 
 :::
 

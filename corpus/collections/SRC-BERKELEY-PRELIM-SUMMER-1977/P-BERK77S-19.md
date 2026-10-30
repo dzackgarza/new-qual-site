@@ -6,7 +6,8 @@ title: A square root of $-1$ modulo an odd prime forces $p\equiv1\pmod4$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

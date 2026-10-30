@@ -6,7 +6,8 @@ title: The solution space of the infinite linear system $x_n+x_{n+2}+x_{n+4}=0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Radius of convergence after re-expanding $1+2z+3z^2+\cdots$ about $-2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

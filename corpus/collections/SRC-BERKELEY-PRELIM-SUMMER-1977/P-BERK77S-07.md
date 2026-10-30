@@ -6,7 +6,8 @@ title: A finite-order real operator on $\RR^6$ splits into invariant planes
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Every orientation-preserving orthogonal map of $\RR^3$ has an axis
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

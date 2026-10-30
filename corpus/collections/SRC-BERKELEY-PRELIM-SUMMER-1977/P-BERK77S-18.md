@@ -6,7 +6,8 @@ title: Continuous dependence of a simple polynomial root on the coefficients
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

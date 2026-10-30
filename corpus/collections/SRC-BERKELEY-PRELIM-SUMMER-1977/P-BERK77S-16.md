@@ -6,7 +6,8 @@ title: The integral $\int_0^{2\pi}(a+\cos\theta)^{-1}\,d\theta$ and its analytic
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

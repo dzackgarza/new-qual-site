@@ -6,7 +6,8 @@ title: Maximality of the ideal $(5,x^2+2)$ in $\ZZ[x]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

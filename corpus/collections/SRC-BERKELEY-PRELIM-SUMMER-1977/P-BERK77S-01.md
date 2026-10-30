@@ -6,7 +6,8 @@ title: Vector-space structure and shifted-power bases in $F[x]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -29,13 +30,15 @@ audit:
 ::: {.problem}
 Let $F$ be a field.
 
-1. Prove that $F[x]$ is a vector space over $F$.
-2. Prove that the subset $F_n[x]$ of polynomials of degree at most $n$ is a subspace of dimension $n+1$.
-3. Prove that for every $a\in F$ the polynomials
-   $$
-   1,x-a,\dots,(x-a)^n
-   $$
-   form a basis of $F_n[x]$.
+(a) Prove that $F[x]$ is a vector space over $F$.
+
+(b) Prove that the subset $F_n[x]$ of polynomials of degree at most $n$ is a subspace of dimension $n+1$.
+
+(c) Prove that for every $a\in F$ the polynomials
+$$
+1,x-a,\dots,(x-a)^n
+$$
+form a basis of $F_n[x]$.
 :::
 
 ::: {.solution}
@@ -44,7 +47,7 @@ Let $F$ be a field.
 
 ::: {.pf-step #s1}
 
-Part (1): $F[x]$ is a vector space over $F$ under the usual
+Part (a): $F[x]$ is a vector space over $F$ under the usual
 polynomial addition and scalar multiplication.
 
 ::: pf-proof
@@ -82,7 +85,7 @@ Therefore the vector-space axioms hold.
 
 ::: {.pf-step #s2}
 
-Part (2): $F_n[x]$ is a vector subspace of $F[x]$.
+Part (b): $F_n[x]$ is a vector subspace of $F[x]$.
 
 ::: pf-proof
 
@@ -149,7 +152,7 @@ Step [](#s3){.pf-ref} gives a basis with exactly $n+1$ elements.
 
 ::: {.pf-step #s5}
 
-Part (3): for every $a\in F$, the polynomials
+Part (c): for every $a\in F$, the polynomials
 $$
 1,\ x-a,\ \ldots,\ (x-a)^n
 $$
@@ -194,8 +197,8 @@ belong to $F_n[x]$. By step [](#s5){.pf-ref} they are linearly independent, whil
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves part (1), steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (2), and steps
-[](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (3).
+Step [](#s1){.pf-ref} proves part (a), steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (b), and steps
+[](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (c).
 
 :::
 

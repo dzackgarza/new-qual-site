@@ -6,7 +6,8 @@ title: The values of the multivalued power $i^i$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

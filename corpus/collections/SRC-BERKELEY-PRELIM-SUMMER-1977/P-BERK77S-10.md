@@ -6,7 +6,8 @@ title: Convergence of a symmetric-difference Taylor remainder series
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

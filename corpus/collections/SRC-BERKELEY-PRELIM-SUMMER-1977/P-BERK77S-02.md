@@ -6,7 +6,8 @@ title: A continuous function holomorphic off the real axis is entire
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

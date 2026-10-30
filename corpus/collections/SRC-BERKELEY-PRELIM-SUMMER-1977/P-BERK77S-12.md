@@ -6,7 +6,8 @@ title: Trace and eigenvectors of differentiation and its exponential on degree-t
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -30,8 +31,9 @@ audit:
 ::: {.problem}
 Let $V$ be the vector space of polynomials of degree at most $10$, and let $D:V\to V$ be differentiation, $Dp=p'$.
 
-1. Show that $\operatorname{tr}D=0$.
-2. Find all eigenvectors of $D$ and of $e^D$.
+(a) Show that $\operatorname{tr}D=0$.
+
+(b) Find all eigenvectors of $D$ and of $e^D$.
 :::
 
 ::: {.solution}
@@ -227,7 +229,7 @@ This is exactly the content of steps [](#s3){.pf-ref} and [](#s6){.pf-ref}.
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} proves part (1), and step [](#s7){.pf-ref} proves part (2).
+Step [](#s2){.pf-ref} proves part (a), and step [](#s7){.pf-ref} proves part (b).
 
 :::
 

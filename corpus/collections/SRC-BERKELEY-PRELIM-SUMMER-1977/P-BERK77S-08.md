@@ -6,7 +6,8 @@ title: Global existence for $x'=3x+85\cos x$ with $x(0)=77$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -29,6 +29,7 @@ audit:
 ---
 
 ::: {.problem}
+
 (a) Prove that every finitely generated subgroup of the additive group $\QQ$ is cyclic.
 
 (b) Does the same conclusion hold for finitely generated subgroups of $\QQ/\ZZ$?
