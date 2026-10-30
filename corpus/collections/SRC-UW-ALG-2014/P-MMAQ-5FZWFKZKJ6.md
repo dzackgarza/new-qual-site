@@ -17,19 +17,29 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a finite group and $\ZZ[G]$ its integral group ring.
-Let $\mathcal{Z} = Z(\ZZ[G])$ be the center of $\ZZ[G]$.
-For each conjugacy class $C \subseteq G$, let $P_C = \sum_{g \in C} g$ be the class sum.
+Let $G$ be a finite group and $\ZZ[G]$ the integral group algebra.
+Let $\mathcal{Z}$ be the center of $\ZZ[G]$.
+For each conjugacy class $C\subset G$, let $P_C=\sum_{g\in C}g$.
 
-(1) Show that the class sums $\{P_C\}$ form a $\ZZ$-basis for $\mathcal{Z}$. Hence $\mathcal{Z} \cong \ZZ^d$ as an abelian group, where $d$ is the number of conjugacy classes in $G$.
-(2) Show that if a ring $R$ is isomorphic to $\ZZ^d$ as an abelian group, then every element in $R$ satisfies a monic integral polynomial (i.e. is integral over $\ZZ$).
-(3) Let $\pi: G \to \operatorname{GL}(V)$ be an irreducible complex representation of $G$. Show that $\pi(P_C)$ acts on $V$ as multiplication by the scalar:
-$$\omega_\pi(C) = \frac{\cardinality{C} \chi_\pi(C)}{\dim V}$$
+(a) Show that the elements $P_C$ form a $\ZZ$-basis for $\mathcal{Z}$.
+Hence $\mathcal{Z}\cong\ZZ^d$ as an abelian group, where $d$ is the number of conjugacy classes in $G$.
+
+(b) Show that if a ring $R$ is isomorphic to $\ZZ^d$ as an abelian group, then every element in $R$ satisfies a monic integral polynomial.
+(Hint: Let $\{v_1,\ldots,v_d\}$ be a basis of $R$ and for a fixed non-zero $r\in R$, write $rv_i=\sum_j a_{ij}v_j$. Use the Hamilton-Cayley theorem.)
+
+(c) Let $\pi:G\longrightarrow\GL(V)$ be an irreducible representation of $G$ (over $\CC$).
+Show that $\pi(P_C)$ acts on $V$ as multiplication by the scalar
+$$
+\frac{\cardinality{C}\chi_\pi(C)}{\dim V},
+$$
 where $\chi_\pi(C)$ is the value of the character $\chi_\pi$ on any element of $C$.
-(4) Conclude that $\frac{\cardinality{C} \chi_\pi(C)}{\dim V}$ is an **algebraic integer**.
+
+(d) Conclude that $\cardinality{C}\chi_\pi(C)/\dim V$ is an algebraic integer.
 :::
 
 ::: {.solution}
+Write $\omega_\pi(C)=\cardinality{C}\chi_\pi(C)/\dim V$.
+
 **Goal:** Prove that class sums form a $\ZZ$-basis of $Z(\ZZ[G])$, that finite free $\ZZ$-algebras are integral, that $\pi(P_C)$ acts by scalar $\omega_\pi(C)$ via Schur's Lemma, and that $\omega_\pi(C)$ is an algebraic integer.
 
 ::: pf

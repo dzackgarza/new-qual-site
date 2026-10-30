@@ -18,25 +18,17 @@ audit:
 ---
 
 ::: {.problem}
-Let $C_p$ denote the cyclic group of order $p$.
+Let $C_p$ denote the cyclic group of prime order $p$.
 
--   Show that $C_p$ has two irreducible representations over
-    $\QQ$ (up to isomorphism), one of dimension 1
-    and one of dimension $p-1$.
+(a) Show that $C_p$ has two irreducible representations over $\QQ$ (up to isomorphism), one of dimension $1$ and one of dimension $p-1$.
 
--   Let $G$ be a finite group, and let $\rho:G\rightarrow
-    \GL_n(\QQ)$ be a representation of $G$ over $\QQ$.
-    Let $\rho_{\CC}:G\rightarrow\GL_n(\CC)$ denote
-    $\rho$ followed by the inclusion $\GL_n(\QQ)\rightarrow
-    \GL_n(\CC)$. Thus $\rho_{\CC}$ is a representation
-    of $G$ over $\CC$, called the *complexification*
-    of $\rho$. We say that an irreducible representation $\rho$
-    of $G$ is *absolutely irreducible* if its
-    complexification remains irreducible over $\CC$.\\
-    Now suppose $G$ is abelian and that every representation
-    of $G$ over $\QQ$ is absolutely irreducible. Show that
-    $G\cong(C_2)^k$ for some $k$ (i.e., is a product of
-    cyclic groups of order 2).
+(b) Let $G$ be a finite group, and let $\rho:G\rightarrow\GL_n(\QQ)$ be a representation of $G$ over $\QQ$.
+Let $\rho_{\CC}:G\rightarrow\GL_n(\CC)$ denote $\rho$ followed by the inclusion $\GL_n(\QQ)\rightarrow\GL_n(\CC)$.
+Thus $\rho_{\CC}$ is a representation of $G$ over $\CC$, called the *complexification* of $\rho$.
+We say that an irreducible representation $\rho$ of $G$ is *absolutely irreducible* if its complexification remains irreducible over $\CC$.
+
+Now suppose $G$ is abelian and that every representation of $G$ over $\QQ$ is absolutely irreducible.
+Show that $G\cong(C_2)^k$ for some $k$ (i.e., is a product of cyclic groups of order 2).
 :::
 
 ::: {.solution}
@@ -169,4 +161,8 @@ $$
 
 :::
 
+:::
+
+::: {.remark}
+The printed hypothesis in (b) says that every representation of $G$ over $\QQ$ is absolutely irreducible; a reducible representation is never absolutely irreducible, so the intended hypothesis is that every irreducible representation of $G$ over $\QQ$ is absolutely irreducible, which the solution uses.
 :::

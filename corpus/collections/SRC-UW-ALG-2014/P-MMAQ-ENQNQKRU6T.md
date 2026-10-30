@@ -22,13 +22,13 @@ audit:
 ::: {.problem}
 Let $R$ be a ring with the property that $a^2=a$ for all $a\in R$.
 
-- Compute the Jacobson radical of $R$.
+(a) Compute the Jacobson radical of $R$.
 
-- What is the characteristic of $R$?
+(b) What is the characteristic of $R$?
 
-- Prove that $R$ is commutative.
+(c) Prove that $R$ is commutative.
 
-- Prove that if $R$ is finite, then $R$ is isomorphic (as a ring) to $(\ZZ/2\ZZ)^d$ for some $d$.
+(d) Prove that if $R$ is finite, then $R$ is isomorphic (as a ring) to $(\ZZ/2\ZZ)^d$ for some $d$.
 :::
 
 ::: {.solution}

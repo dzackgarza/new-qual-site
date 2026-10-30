@@ -20,17 +20,15 @@ audit:
 ---
 
 ::: {.problem}
-Let $p$ be a prime, let $\FF_p$ be the $p$-element field,
-and let $K=\FF_p(t)$ be the field of rational functions in
-$t$ with coefficients in $\FF_p$. Consider the polynomial $f(x)=
-x^p-t\in K[x]$.
+Let $p$ be a prime, let $\FF_p$ be the $p$-element field, and let $K=\FF_p(t)$ be the field of rational functions in $t$ with coefficients in $\FF_p$.
+Consider the polynomial $f(X)=X^p-t\in K[X]$.
 
--   Show that $f$ does not have a root in $K$.
+(a) Show that $f$ does not have a root in $K$.
 
--   Let $E$ be the splitting field of $f$ over $K$.
-    Find the factorization of $f$ over $E$.
+(b) Let $E$ be the splitting field of $f$ over $K$.
+Find the factorization of $f$ over $E$.
 
--   Conclude that $f$ is irreducible over $K$.
+(c) Conclude that $f$ is irreducible over $K$.
 :::
 
 ::: {.solution}

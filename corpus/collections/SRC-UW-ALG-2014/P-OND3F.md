@@ -17,12 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $\overline{\FF}_p$ denote an algebraic closure of the finite field $\FF_p$.
-Show that the absolute Galois group $G = \operatorname{Gal}(\overline{\FF}_p/\FF_p) \cong \widehat{\ZZ}$ has **no non-trivial finite subgroups** (i.e. is torsion-free).
+Let $\overline{\FF_p}$ denote the algebraic closure of $\FF_p$.
+Show that the Galois group $\Gal(\overline{\FF_p}/\FF_p)$ has no nontrivial finite subgroups.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the profinite group $\operatorname{Gal}(\overline{\FF}_p/\FF_p) \cong \widehat{\ZZ}$ is torsion-free, so it has no non-trivial finite subgroups.
+**Goal:** Prove that the profinite group $G = \operatorname{Gal}(\overline{\FF}_p/\FF_p) \cong \widehat{\ZZ}$ is torsion-free, so it has no non-trivial finite subgroups.
 
 ::: pf
 
@@ -64,7 +64,7 @@ where $\ZZ_q$ is the ring of **$q$-adic integers** (under addition, $\ZZ_q \cong
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 Torsion-Freeness of $\widehat{\ZZ}$:
 
 ::: pf-proof
@@ -121,7 +121,7 @@ By Lagrange's Theorem, every element $h \in H$ satisfies $h^k = 1$.
 :::
 
 ::: pf-step
-By Step 2, since $G$ is torsion-free, the only element satisfying $h^k = 1$ is $h = 1$.
+By step [](#s2){.pf-ref}, since $G$ is torsion-free, the only element satisfying $h^k = 1$ is $h = 1$.
 
 :::
 
@@ -160,12 +160,7 @@ Thus $\overline{\FF}_p$ would be a finite-degree extension of the field $K$.
 :::
 
 ::: pf-step
-Since $K$ is of characteristic $p$, $K$ cannot have an algebraically closed finite extension of degree $> 1$ other than the Artin-Schreier theorem case where the closure is algebraically closed (which requires char 0 and degree 2, $\RR \subset \CC$).
-
-:::
-
-::: pf-step
-Specifically, by the **Artin-Schreier Theorem on formally real fields**, if an algebraically closed field is a finite non-trivial extension of a subfield $K$, then the characteristic must be 0 and the extension degree must be 2.
+By the **Artin--Schreier theorem**, if an algebraically closed field is a finite extension of degree $> 1$ of a subfield $K$, then the degree is $2$ and the characteristic is $0$.
 
 :::
 
