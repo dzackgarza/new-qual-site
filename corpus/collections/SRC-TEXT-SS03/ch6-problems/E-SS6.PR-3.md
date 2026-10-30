@@ -17,25 +17,19 @@ audit:
 ---
 
 ::: {.exercise}
-3.$^\ast$ If $Q ( x ) = \{ x \} - 1 / 2$ , then we can write the expression in the previous problem as
-
+$^*$ If $Q(x) = \{x\} - 1/2$, then we can write the expression in the previous problem as
 $$
-\zeta (s) = \frac {s}{s - 1} - \frac {1}{2} - s \int_ {1} ^ {\infty} \frac {Q (x)}{x ^ {s + 1}} d x.
+\zeta(s) = \frac{s}{s - 1} - \frac{1}{2} - s\int_1^{\infty} \frac{Q(x)}{x^{s+1}}\, dx.
 $$
-
-Let us construct $Q _ { k } ( x )$ recursively so that
-
+Let us construct $Q_k(x)$ recursively so that
 $$
-\int_ {0} ^ {1} Q _ {k} (x) d x = 0, \quad \frac {d Q _ {k + 1}}{d x} = Q _ {k} (x), \quad Q _ {0} (x) = Q (x) \quad \text { and } \quad Q _ {k} (x + 1) = Q _ {k} (x).
+\int_0^1 Q_k(x)\, dx = 0, \quad \frac{dQ_{k+1}}{dx} = Q_k(x), \quad Q_0(x) = Q(x) \quad \text{and} \quad Q_k(x + 1) = Q_k(x).
 $$
-
 Then we can write
-
 $$
-\zeta (s) = \frac {s}{s - 1} - \frac {1}{2} - s \int_ {1} ^ {\infty} \left(\frac {d ^ {k}}{d x ^ {k}} Q _ {k} (x)\right) x ^ {- s - 1} d x,
+\zeta(s) = \frac{s}{s - 1} - \frac{1}{2} - s\int_1^{\infty} \left( \frac{d^k}{dx^k} Q_k(x) \right) x^{-s-1}\, dx,
 $$
-
-and a k-fold integration by parts gives the analytic continuation for $\zeta ( s )$ when $\operatorname { R e } ( s ) > - k$
+and a $k$-fold integration by parts gives the analytic continuation for $\zeta(s)$ when $\Re(s) > -k$.
 :::
 
 ::: {.solution}

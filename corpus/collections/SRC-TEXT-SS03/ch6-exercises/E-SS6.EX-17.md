@@ -22,21 +22,19 @@ audit:
 ---
 
 ::: {.exercise}
-Let f be an indefinitely diferentiable function on R that has compact support, or more generally, let $f$ belong to the Schwartz space. Consider
-
+Let $f$ be an indefinitely differentiable function on $\RR$ that has compact support, or more generally, let $f$ belong to the Schwartz space. Consider
 $$
-I (s) = \frac {1}{\Gamma (s)} \int_ {0} ^ {\infty} f (x) x ^ {- 1 + s} d x.
-$$
-
-(a) Observe that $I ( s )$ is holomorphic for $\operatorname { R e } ( s ) > 0$ . Prove that I has an analytic continuation as an entire function in the complex plane.
-
-(b) Prove that $I(0)=f(0)$, and more generally
-
-$$
-I(-n)=(-1)^n f^{(n)}(0) \quad \text{for all } n\ge0.
+I(s) = \frac{1}{\Gamma(s)} \int_0^{\infty} f(x)\, x^{-1+s}\, dx.
 $$
 
-[Hint: To prove the analytic continuation, as well as the formulas in the second part, integrate by parts to show that $\begin{array} { r } { I ( s ) = \frac { ( - 1 ) ^ { k } } { \Gamma ( s + k ) } \int _ { 0 } ^ { \infty } f ^ { ( k ) } ( x ) x ^ { s + k - 1 } d x . } \end{array}$
+(a) Observe that $I(s)$ is holomorphic for $\Re(s) > 0$. Prove that $I$ has an analytic continuation as an entire function in the complex plane.
+
+(b) Prove that $I(0) = f(0)$, and more generally
+$$
+I(-n) = (-1)^n f^{(n)}(0) \quad \text{for all } n \geq 0.
+$$
+
+[Hint: To prove the analytic continuation, as well as the formulas in the second part, integrate by parts to show that $I(s) = \frac{(-1)^k}{\Gamma(s + k)} \int_0^{\infty} f^{(k)}(x)\, x^{s+k-1}\, dx$.]
 :::
 
 ::: {.solution}

@@ -18,13 +18,11 @@ audit:
 ---
 
 ::: {.exercise}
-Prove that for $\operatorname { R e } ( s ) > 1$ ，
-
+Prove that for $\Re(s) > 1$,
 $$
-\zeta (s) = \frac {1}{\Gamma (s)} \int_ {0} ^ {\infty} \frac {x ^ {s - 1}}{e ^ {x} - 1} d x.
+\zeta(s) = \frac{1}{\Gamma(s)} \int_0^{\infty} \frac{x^{s-1}}{e^x - 1}\, dx.
 $$
-
-[Hint: Write $\textstyle 1 / ( e ^ { x } - 1 ) = \sum _ { n = 1 } ^ { \infty } e ^ { - n x } . ]$
+[Hint: Write $1/(e^x - 1) = \sum_{n=1}^{\infty} e^{-nx}$.]
 :::
 
 ::: {.solution}

@@ -23,27 +23,18 @@ audit:
 
 ::: {.exercise}
 Prove that if we take
-
 $$
-f (z) = \frac {1}{(1 - z) ^ {\alpha}}, \quad \mathrm{for} \abs{ z } <   1
+f(z) = \frac{1}{(1 - z)^\alpha}, \quad \text{for } \abs{z} < 1
 $$
-
-(defined in terms of the principal branch of the logarithm), where $\alpha$ is a fixed complex number not in $\{0,-1,-2,\ldots\}$, then
-
+(defined in terms of the principal branch of the logarithm), where $\alpha$ is a fixed complex number not in $\{0, -1, -2, \ldots\}$, then
 $$
-f (z) = \sum_ {n = 0} ^ {\infty} a _ {n} (\alpha) z ^ {n}
+f(z) = \sum_{n=0}^{\infty} a_n(\alpha) z^n
 $$
-
 with
-
 $$
-a _ {n} (\alpha) \sim \frac {1}{\Gamma (\alpha)} n ^ {\alpha - 1} \quad \text { as } n \to \infty .
+a_n(\alpha) \sim \frac{1}{\Gamma(\alpha)} n^{\alpha - 1} \quad \text{as } n \to \infty.
 $$
-
 If $\alpha$ is a nonpositive integer, describe separately what happens to the coefficients.
-
-$$
-$$
 :::
 
 ::: {.solution}

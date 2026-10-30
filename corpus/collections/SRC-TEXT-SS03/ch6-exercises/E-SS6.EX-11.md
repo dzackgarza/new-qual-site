@@ -22,11 +22,9 @@ audit:
 ---
 
 ::: {.exercise}
-Let $f ( z ) = e ^ { a z } e ^ { - e ^ { z } }$ where $a > 0$ . Observe that in the strip $\{ x + i y : ~ \abs{ y } < \pi / 2 \}$ the function $f ( x + i y )$ is exponentially decreasing as $\abs{ x }$ tends to infinity.
-    Prove that
-
+Let $f(z) = e^{az} e^{-e^z}$ where $a > 0$. Observe that in the strip $\{x + iy : \abs{y} < \pi/2\}$ the function $f(x + iy)$ is exponentially decreasing as $\abs{x}$ tends to infinity. Prove that
 $$
-\hat {f} (\xi) = \Gamma (a - 2 \pi i \xi), \quad \text {   for   all   } \xi \in \RR.
+\hat{f}(\xi) = \Gamma(a - 2\pi i\xi), \quad \text{for all } \xi \in \RR.
 $$
 :::
 

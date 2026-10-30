@@ -14,19 +14,15 @@ review: draft
 ---
 
 ::: {.exercise}
-$4 . ^ { * }$ The functions $Q _ { k }$ in the previous problem are related to the Bernoulli polynomials $B _ { k } ( x )$ by the formula
-
+$^*$ The functions $Q_k$ in the previous problem are related to the Bernoulli polynomials $B_k(x)$ by the formula
 $$
-Q _ {k} (x) = \frac {B _ {k + 1} (x)}{(k + 1) !} \quad \text {for} \quad 0 \leq x \leq 1.
+Q_k(x) = \frac{B_{k+1}(x)}{(k + 1)!} \quad \text{for} \quad 0 \leq x \leq 1.
 $$
-
-Also, if k is a positive integer, then
-
+Also, if $k$ is a positive integer, then
 $$
-2 \zeta (2 k) = (- 1) ^ {k + 1} \frac {(2 \pi) ^ {2 k}}{(2 k) !} B _ {2 k},
+2\zeta(2k) = (-1)^{k+1} \frac{(2\pi)^{2k}}{(2k)!} B_{2k},
 $$
-
-where $B _ { k } = B _ { k } ( 0 )$ are the Bernoulli numbers. For the definition of $B _ { k } ( x )$ and $B _ { k }$ see Chapter 3 in Book I.
+where $B_k = B_k(0)$ are the Bernoulli numbers. For the definition of $B_k(x)$ and $B_k$ see Chapter 3 in Book I.
 :::
 
 ::: {.solution}
