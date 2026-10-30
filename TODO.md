@@ -833,7 +833,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebraic-geometry/schemes/subschemes-and-points.md
   - [x] wiki/algebraic-geometry/schemes/what-is-a-scheme.md
   - [x] wiki/algebraic-geometry/sheaves-of-modules/differentials.md
-  - [ ] wiki/algebraic-geometry/sheaves-of-modules/index.md
+  - [x] wiki/algebraic-geometry/sheaves-of-modules/index.md
   - [ ] wiki/algebraic-geometry/sheaves-of-modules/line-bundles.md
   - [ ] wiki/algebraic-geometry/sheaves-of-modules/operations.md
   - [ ] wiki/algebraic-geometry/sheaves-of-modules/projective-sheaves.md
