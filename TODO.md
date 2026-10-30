@@ -680,7 +680,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UGA-TOP-SPRING-2015
   - [x] SRC-UGA-TOP-SPRING-2016
   - [x] SRC-UGA-TOP-SPRING-2017
-  - [ ] SRC-UGA-TOP-SPRING-2018
+  - [x] SRC-UGA-TOP-SPRING-2018
   - [ ] SRC-UGA-TOP-SPRING-2019
   - [ ] SRC-UGA-TOP-SPRING-2021
   - [ ] SRC-UMN-COMPLEX-PRELIM-BAHRAN-2013
