@@ -6,7 +6,8 @@ title: Lower bound for $\abs{1-\sum a_k e^{2\pi ikx}}$ on $[0,1]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

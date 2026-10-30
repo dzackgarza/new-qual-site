@@ -6,7 +6,8 @@ title: Lebesgue number lemma for open covers of $[0,1]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -26,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let the collection U of open subsets of R cover the interval [0, 1]. Prove that there is a positive number δ such that any two points x and y of [0, 1] satisfying $\abs{ x - y } < \delta$ belong together to some member of the cover U.
+Let the collection $\mathcal{U}$ of open subsets of $\RR$ cover the interval $[0,1]$. Prove that there is a positive number $\delta$ such that any two points $x$ and $y$ of $[0,1]$ satisfying $\abs{x-y}<\delta$ belong together to some member of the cover $\mathcal{U}$.
 :::
 
 ::: {.solution}

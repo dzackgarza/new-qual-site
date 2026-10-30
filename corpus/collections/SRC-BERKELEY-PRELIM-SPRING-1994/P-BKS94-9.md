@@ -6,7 +6,8 @@ title: Proper analytic maps between planar domains are surjective
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
@@ -27,9 +28,9 @@ audit:
 ---
 
 ::: {.problem}
-1. Let $U$ and $V$ be open connected subsets of the complex plane, and let $f$ be an analytic function in $U$ such that $f(U) \subset V$. Assume $f^{-1}(K)$ is compact whenever $K$ is a compact subset of $V$. Prove that $f(U) = V$.
+(a) Let $U$ and $V$ be open connected subsets of the complex plane, and let $f$ be an analytic function in $U$ such that $f(U) \subset V$. Assume $f^{-1}(K)$ is compact whenever $K$ is a compact subset of $V$. Prove that $f(U) = V$.
 
-2. Prove that the last equality can fail if analytic is replaced by continuous in the preceding statement.
+(b) Prove that the last equality can fail if analytic is replaced by continuous in the preceding statement.
 :::
 
 ::: {.solution}
@@ -38,7 +39,7 @@ audit:
 
 ::: {.pf-step #s1}
 
-Under the hypotheses of part 1, the analytic function $f$ is
+Under the hypotheses of part (a), the analytic function $f$ is
 nonconstant.
 
 ::: pf-proof
@@ -167,8 +168,8 @@ bounded in $\CC\cong\RR^2$, and therefore compact.
 
 ::: pf-qed
 
-Step [](#s4){.pf-ref} proves part 1, and step [](#s5){.pf-ref} supplies the counterexample required
-for part 2.
+Step [](#s4){.pf-ref} proves part (a), and step [](#s5){.pf-ref} supplies the counterexample required
+for part (b).
 
 :::
 

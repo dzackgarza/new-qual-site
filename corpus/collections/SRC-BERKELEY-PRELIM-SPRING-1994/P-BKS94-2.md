@@ -6,7 +6,8 @@ title: Spectral radius bounds the norm of a symmetric matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -33,9 +34,9 @@ audit:
 ::: {.problem}
 Let $A$ be a real $n \times n$ matrix. Let $M$ denote the maximum of the absolute values of the eigenvalues of $A$.
 
-1. Prove that if $A$ is symmetric, then $\norm{Ax} \leqslant M \norm{x}$ for all $x$ in $\RR^n$. (Here, $\norm{\cdot}$ denotes the Euclidean norm.)
+(a) Prove that if $A$ is symmetric, then $\norm{Ax} \leqslant M \norm{x}$ for all $x$ in $\RR^n$. (Here, $\norm{\cdot}$ denotes the Euclidean norm.)
 
-2. Prove that the preceding inequality can fail if $A$ is not symmetric.
+(b) Prove that the preceding inequality can fail if $A$ is not symmetric.
 :::
 
 ::: {.solution}
@@ -170,7 +171,7 @@ Thus the asserted inequality fails.
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} proves part 1, and step [](#s4){.pf-ref} proves part 2.
+Step [](#s3){.pf-ref} proves part (a), and step [](#s4){.pf-ref} proves part (b).
 
 :::
 

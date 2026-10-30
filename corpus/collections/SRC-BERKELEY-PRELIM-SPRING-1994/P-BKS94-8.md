@@ -6,7 +6,8 @@ title: Automorphisms of $\ZZ[x]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -27,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Find all automorphisms of $\ZZ [ x ]$ , the ring of polynomials over $\ZZ$
+Find all automorphisms of $\ZZ[x]$, the ring of polynomials over $\ZZ$.
 :::
 
 ::: {.solution}

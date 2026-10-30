@@ -6,7 +6,8 @@ title: Evaluation of $\int_{-\pi}^{\pi} d\theta/(3-\cos\theta)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

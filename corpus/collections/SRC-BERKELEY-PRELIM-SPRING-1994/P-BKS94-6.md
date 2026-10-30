@@ -6,7 +6,8 @@ title: A complex square matrix is similar to its transpose
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
