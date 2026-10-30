@@ -32,7 +32,10 @@ $$
 \lim_{n \to \infty} \int_\RR f(x) g(x-n) \, dx = 0.
 $$
 
-Hint: First prove the result holds if $g \in L^2(\RR, m)$ is further assumed to have compact support.
+Hint: First prove the result holds if $g \in L^2(\RR, m)$ is further assumed to have compact support. Under this assumption, notice that the following identity holds for sufficiently large $M$:
+$$
+\int_\RR f(x) g(x-n) \, dx = \int_\RR \left[f(x) 1_{[-M,M]}(x-n)\right] g(x-n) \, dx = \bigl(f(\cdot) 1_{[-M,M]}(\cdot - n),\, g(\cdot - n)\bigr).
+$$
 :::
 
 ::: {.solution}

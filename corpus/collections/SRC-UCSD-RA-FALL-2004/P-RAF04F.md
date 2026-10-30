@@ -32,6 +32,8 @@ Further assume there exists $g \in L^1(\RR, m)$ such that $\lim_{n \to \infty} \
 (a) Show that $f(x) := \lim_{n \to \infty} f_n(x)$ exists for all $x \in \RR$.
 
 (b) Show that $f$ is absolutely continuous and $f'(x) = g(x)$ for $m$-a.e. $x$.
+
+Hint: As usual, integration can be used to prove theorems about differentiation.
 :::
 
 ::: {.solution}
