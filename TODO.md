@@ -923,7 +923,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/residues-and-contours/which-contour-do-i-close.md
   - [x] wiki/complex-analysis/resources/books-notes.md
   - [x] wiki/complex-analysis/resources/index.md
-  - [ ] wiki/complex-analysis/resources/problems.md
+  - [x] wiki/complex-analysis/resources/problems.md
   - [x] wiki/complex-analysis/resources/solutions.md
   - [ ] wiki/complex-analysis/resources/study-schedule-and-topics.md
   - [ ] wiki/complex-analysis/review.md
