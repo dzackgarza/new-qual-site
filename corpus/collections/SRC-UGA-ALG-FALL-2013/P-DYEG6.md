@@ -29,28 +29,61 @@ Give an example of a finite extension $L/K$ that is not separable.
 :::
 
 ::: {.solution}
-\envlist
 
-- $L/k$ is **separable** iff every element $\alpha$ is separable, i.e. the minimal polynomial $m(x)$ of $\alpha$ is a separable polynomial, i.e. $m(x)$ has no repeated roots in (say) the algebraic closure of $L$ (or just any splitting field of $m$).
+::: pf
 
-- If $\ch k = p$, suppose toward a contradiction that $L/k$ is not separable.
-  Then there is some $\alpha$ with an inseparable (and irreducible) minimal polynomial $f(x)\in k[x]$.
-- Claim: since $f$ is inseparable and irreducible, $f(x) = g(x^p)$ for some $g\in k[x]$.
-  - Note: write $g(x) \coloneqq \sum a_k x^k$, so that $f(x) = \sum a_k (x^p)^k = \sum a_k x^{pk}$.
-- This is a contradiction, since it makes $f$ reducible by using the "Freshman's dream":
-$$
-f(x) = \sum a_k x^{pk} = \qty{ \sum a_k^{1\over p} x^k}^p \coloneqq (h(x))^p 
-.$$
+::: {.pf-step #def}
 
-- Proof of claim: in $\ch k = p, f$ inseparable $\implies f(x) = g(x^p)$. 
-  - Use that $f$ is inseparable iff $\gcd(f, f') \neq 1$, and since $f$ is irreducible this forces $f' \equiv 0$, so $ka_k = 0$ for all $k$.
-  - Then $a_k\neq 0$ forces $p\divides k$, so $f(x) = a_0 + a_px^p + a_{2p}x^{2p} + \cdots$ and one takes $g(x) \coloneqq \sum a_{kp}x^{kp}$.
+$L/K$ is separable when the minimal polynomial over $K$ of every $\alpha\in L$ has distinct roots in an algebraic closure of $K$.
 
-- A finite inseparable extension:
-  - It's a theorem that finite extensions of perfect fields are separable, so one needs a non-perfect field.
-  - Take $L/k \coloneqq \FF_p(t^{1\over p}) / \FF_p(t)$, which is a degree $p$ extension (although both fields are infinite are characteristic $p$).
-  - Then the minimal polynomial of $t$ is $f(x) \coloneqq x^p - t \in \FF_p(t)[x]$, where $f'(x) = px^p \equiv 0$
-    Alternatively, just note that $f$ factors as $f(x) = (x-t^{1\over p})^p$ in $L[x]$, which has multiple roots.
 :::
 
+::: {.pf-step #insep-form}
 
+If $f\in K[x]$ is irreducible and has a repeated root, then $\operatorname{char}K=p>0$ and $f(x)=g(x^p)$ for some $g\in K[x]$.
+
+::: pf-proof
+
+A repeated root of $f$ is a common root of $f$ and $f'$, so $\gcd(f,f')\neq1$. Since $f$ is irreducible, $f\mid f'$, and $\deg f'<\deg f$ forces $f'=0$. If $f=\sum_k a_kx^k$, then $ka_k=0$ for all $k$. In characteristic $0$ this gives $f$ constant, which is impossible. In characteristic $p$ it gives $a_k=0$ unless $p\mid k$, so $f(x)=g(x^p)$ with $g(x)=\sum_j a_{jp}x^j$.
+
+:::
+
+:::
+
+::: {.pf-step #finite}
+
+If $K$ is finite, then every finite extension $L/K$ is separable.
+
+::: pf-proof
+
+Let $\operatorname{char}K=p$. The Frobenius map $c\mapsto c^p$ is an injective field homomorphism $K\to K$, so it is surjective because $K$ is finite. Suppose the minimal polynomial $f$ of some $\alpha\in L$ had a repeated root. By Step [](#insep-form){.pf-ref}, $f(x)=\sum_j a_jx^{jp}$. Choose $b_j\in K$ with $b_j^p=a_j$. Then
+$$
+f(x)=\sum_j b_j^p x^{jp}=\Bigl(\sum_j b_jx^j\Bigr)^p,
+$$
+because the $p$-th power map is additive in characteristic $p$. This contradicts the irreducibility of $f$.
+
+:::
+
+:::
+
+::: {.pf-step #example}
+
+The extension $L=\FF_p(s)\supset K=\FF_p(t)$ with $t=s^p$, where $s$ is transcendental over $\FF_p$, is finite and not separable.
+
+::: pf-proof
+
+$s$ is a root of $f(x)=x^p-t\in K[x]$. This polynomial is Eisenstein at the prime $t$ of $\FF_p[t]$, so it is irreducible over $\FF_p[t]$ and, by Gauss's lemma, over $K$. Hence $f$ is the minimal polynomial of $s$ and $[L:K]=p$. In $L[x]$, $f(x)=(x-s)^p$, so its only root $s$ has multiplicity $p$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#def){.pf-ref}, [](#finite){.pf-ref} and [](#example){.pf-ref} answer parts (a), (b) and (c).
+
+:::
+
+:::
+
+:::
