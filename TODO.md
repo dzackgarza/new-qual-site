@@ -541,6 +541,22 @@ mathematical correction under its own node, not under copy policy.
     substitutions; the card check in `tools/qualc/authoring.py` rejects the raw forms; the
     codemod is trashed after the rewrite is committed. **Closed.**
 
+  Round 4 (revision `e6068b271c`, prelim collections) injected the node below;
+  `audited-deployment` needs it.
+  - **`ad4-prelim-content`**. **Needs:** none.
+    - [ ] CARD-04: P-BKS21-2A and P-BKF10-1A state one problem (Spring 2021 reprints Fall 2010
+      1A); merge, survivor listed by both collections.
+    - [ ] CARD-04: P-BKS21-3A and P-BKF10-5A; same.
+    - [ ] CARD-04: P-BKS21-4A and P-BKF10-7B; same.
+    - [ ] P-UCLAB06W-09: the paper prints $A = A^t$, the card silently reads $A^{-1} = A^t$; the
+      printed statement is false (diag(2,2,1/4)). Transcribe the printed hypothesis and record
+      the correction in a remark.
+    - [ ] P-UCLAB06W-03: the paper prints prefactor $1/n$, the card silently reads $(b-a)/n$;
+      same treatment.
+    - [ ] Read the other Berkeley online-era papers (Fall 2020, Spring 2021 Part B) for further
+      reprinted problems carded twice.
+    **Acceptance:** each item read and repaired.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
