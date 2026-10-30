@@ -59,7 +59,6 @@ source:
   - id: E-FMLK2
   - id: E-FS7GZ
   - id: E-G3DCH
-  - id: E-G55QF
   - id: E-GFNDF
   - id: E-GMGFS
   - id: E-GPCW2
@@ -193,7 +192,6 @@ source:
   - id: P-AW6IK
   - id: P-B7CIT
   - id: P-BZNEO
-  - id: P-CIWAP
   - id: P-DEJGY
   - id: P-DO7TE
   - id: P-EHKFZ
@@ -237,7 +235,6 @@ source:
   - id: P-VDKZF
   - id: P-VFAXW
   - id: P-VT4TV
-  - id: P-VTCZF
   - id: P-WECI4
   - id: P-XA3WA
   - id: P-Y5SS5

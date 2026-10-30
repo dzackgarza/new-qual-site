@@ -117,7 +117,7 @@ Joukowski maps:
 
 Cross ratios:
 
-[[E-Z23VB]] [[E-G55QF]]
+[[E-Z23VB]]
 
 Discs and planes:
 

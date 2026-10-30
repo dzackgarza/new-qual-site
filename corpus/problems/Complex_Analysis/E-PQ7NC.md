@@ -66,3 +66,7 @@ $J$ is holomorphic on $\Omega$, and by steps [](#into){.pf-ref}, [](#injective){
 :::
 
 :::
+
+::: {.remark title="Variations"}
+One version asks for the map to be built with cross-ratios.
+:::
