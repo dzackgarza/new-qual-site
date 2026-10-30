@@ -765,7 +765,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/modules/classify-this-module.md
   - [x] wiki/algebra/modules/exact-sequences.md
   - [x] wiki/algebra/modules/free-and-projective.md
-  - [ ] wiki/algebra/modules/index.md
+  - [x] wiki/algebra/modules/index.md
   - [ ] wiki/algebra/modules/over-a-pid.md
   - [ ] wiki/algebra/representations/characters.md
   - [ ] wiki/algebra/representations/index.md
