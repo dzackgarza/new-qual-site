@@ -24,16 +24,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $x ( t )$ be the solution of the differential equation
-
+Let $x(t)$ be the solution of the differential equation
 $$
-x ^ { \prime \prime } ( t ) + 8 x ^ { \prime } ( t ) + 2 5 x ( t ) = 2 \cos t
+x''(t) + 8x'(t) + 25x(t) = 2\cos t
 $$
-
-with initial conditions $x ( 0 ) = 0$ and $x ^ { \prime } ( 0 ) = 0$ . Show that for suitable constants α and $\delta$
-
+with initial conditions $x(0) = 0$ and $x'(0) = 0$. Show that for suitable constants $\alpha$ and $\delta$,
 $$
-\operatorname* { l i m } _ { t  \infty } ( x ( t ) - \alpha \cos ( t - \delta ) ) = 0 .
+\lim_{t \to \infty} \bigl(x(t) - \alpha \cos(t - \delta)\bigr) = 0.
 $$
 :::
 

@@ -24,11 +24,11 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $V$ is an $n$-dimensional vector space over the field $F$.
+Suppose $V$ is an $n$-dimensional vector space over the field $\FF$.
 Let $W\subset V$ be a subspace of dimension $r<n$.
 Show that
 $$
-W=\bigcap\{U\mid U\text{ is an }(n-1)\text{-dimensional subspace of }V\text{ and }W\subset U\}.
+W=\bigcap\{U \st U\text{ is an }(n-1)\text{-dimensional subspace of }V\text{ and }W\subset U\}.
 $$
 :::
 

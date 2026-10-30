@@ -24,13 +24,14 @@ audit:
 ---
 
 ::: {.problem}
-Consider the solution curve $( x ( t ) , y ( t ) )$ to the equations
-
+Consider the solution curve $(x(t), y(t))$ to the equations
 $$
-{ \begin{array} { l } { { \frac { d x } { d t } } = 1 + { \frac { 1 } { 2 } } x ^ { 2 } \sin y } \\ { { \frac { d y } { d t } } = 3 - x ^ { 2 } } \end{array} }
+\begin{aligned}
+\frac{dx}{dt} &= 1 + \frac{1}{2} x^2 \sin y \\
+\frac{dy}{dt} &= 3 - x^2
+\end{aligned}
 $$
-
-with initial conditions $x ( 0 ) = 0$ and $y ( 0 ) = 0$ . Prove that the solution must cross the line $x = 1$ in the xy plane by the time $t = 2$
+with initial conditions $x(0) = 0$ and $y(0) = 0$. Prove that the solution must cross the line $x = 1$ in the $xy$ plane by the time $t = 2$.
 :::
 
 ::: {.solution}

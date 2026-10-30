@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $p ( z )$ be a nonconstant polynomial with real coefficients such that for some real number $a , p ( a ) \neq 0$ but $p ^ { \prime } ( a ) = p ^ { \prime \prime } ( a ) = 0$ . Prove that the equation $p ( z ) = 0$ has a nonreal root.
+Let $p(z)$ be a nonconstant polynomial with real coefficients such that for some real number $a$, $p(a) \neq 0$ but $p'(a) = p''(a) = 0$. Prove that the equation $p(z) = 0$ has a nonreal root.
 :::
 
 ::: {.solution}

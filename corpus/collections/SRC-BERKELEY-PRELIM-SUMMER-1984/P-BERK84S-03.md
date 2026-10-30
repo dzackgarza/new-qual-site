@@ -28,10 +28,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \RR ^ { m } \to \RR ^ { n } , n \geqslant 2$ , be a linear transformation of rank $n - 1$ . Let $f ( v ) = ( f _ { 1 } ( v ) , f _ { 2 } ( v ) , \ldots , f _ { n } ( v ) )$ for $v \in \RR ^ { m }$ . Show that a necessary and sufficient condition for the system of inequalities $f _ { i } ( v ) > 0 , i = 1 , \ldots , n$ , to have no solution is that there exist real numbers $\lambda _ { i } \geqslant 0$ , not all zero, such that
-
+Let $f\colon \RR^m \to \RR^n$, $n \geqslant 2$, be a linear transformation of rank $n-1$. Let $f(v) = (f_1(v), f_2(v), \ldots, f_n(v))$ for $v \in \RR^m$. Show that a necessary and sufficient condition for the system of inequalities $f_i(v) > 0$, $i = 1, \ldots, n$, to have no solution is that there exist real numbers $\lambda_i \geqslant 0$, not all zero, such that
 $$
-\sum _ { i = 1 } ^ { n } \lambda _ { i } f _ { i } = 0 .
+\sum_{i=1}^n \lambda_i f_i = 0.
 $$
 :::
 

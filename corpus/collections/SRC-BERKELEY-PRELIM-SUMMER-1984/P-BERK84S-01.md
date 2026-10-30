@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if a subgroup H of a group G has just one left coset different from itself, then it is a normal subgroup of G.
+Show that if a subgroup $H$ of a group $G$ has just one left coset different from itself, then it is a normal subgroup of $G$.
 :::
 
 ::: {.solution}

@@ -25,9 +25,8 @@ audit:
 
 ::: {.problem}
 Evaluate
-
 $$
-\int _ { - \infty } ^ { \infty } { \frac { x \sin x } { x ^ { 2 } + 4 x + 2 0 } } d x .
+\int_{-\infty}^{\infty} \frac{x \sin x}{x^2 + 4x + 20}\,dx.
 $$
 :::
 

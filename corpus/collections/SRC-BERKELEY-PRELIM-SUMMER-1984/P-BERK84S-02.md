@@ -24,13 +24,11 @@ audit:
 ---
 
 ::: {.problem}
-Let Z be the ring of integers and $\ZZ [ x ]$ the polynomial ring over Z. Show that
-
+Let $\ZZ$ be the ring of integers and $\ZZ[x]$ the polynomial ring over $\ZZ$. Show that
 $$
-x ^ { 6 } + 5 3 9 x ^ { 5 } - 5 1 1 x + 8 4 7
+x^6 + 539x^5 - 511x + 847
 $$
-
-is irreducible in $\ZZ [ x ]$
+is irreducible in $\ZZ[x]$.
 :::
 
 ::: {.solution}

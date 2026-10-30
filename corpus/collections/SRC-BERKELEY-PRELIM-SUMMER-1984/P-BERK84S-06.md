@@ -24,13 +24,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $\rho > 0$ . Show that for n large enough, all the zeros of
-
+Let $\rho > 0$. Show that for $n$ large enough, all the zeros of
 $$
-f _ { n } ( z ) = 1 + { \frac { 1 } { z } } + { \frac { 1 } { 2 ! z ^ { 2 } } } + \cdots + { \frac { 1 } { n ! z ^ { n } } }
+f_n(z) = 1 + \frac{1}{z} + \frac{1}{2!\,z^2} + \cdots + \frac{1}{n!\,z^n}
 $$
-
-lie in the circle $\abs{ z } < \rho .$
+lie in the circle $\abs{z} < \rho$.
 :::
 
 ::: {.solution}

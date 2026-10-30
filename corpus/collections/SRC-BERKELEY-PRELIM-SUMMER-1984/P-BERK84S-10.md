@@ -24,17 +24,16 @@ audit:
 ---
 
 ::: {.problem}
-Let $C ^ { 1 / 3 }$ be the set of real valued functions f on the closed interval [0, 1] such that
+Let $C^{1/3}$ be the set of real valued functions $f$ on the closed interval $[0,1]$ such that
 
-1. $f ( 0 ) = 0 ;$
+1. $f(0) = 0$;
 
-2. $\norm{ f }$ is finite, where $b y$ definition
-
+2. $\norm{f}$ is finite, where by definition
 $$
-\norm{ f } = \operatorname* { s u p } \left\{ { \frac { \abs{ f ( x ) - f ( y ) } } { \abs{ x - y } ^ { 1 / 3 } } } \st x \neq y \right\} .
+\norm{f} = \sup \left\{ \frac{\abs{f(x) - f(y)}}{\abs{x - y}^{1/3}} \st x \neq y \right\}.
 $$
 
-Verify that $\norm{ \cdot }$ is a norm for the space $C ^ { 1 / 3 }$ , and prove that $C ^ { 1 / 3 }$ is complete with respect to this norm.
+Verify that $\norm{\cdot}$ is a norm for the space $C^{1/3}$, and prove that $C^{1/3}$ is complete with respect to this norm.
 :::
 
 ::: {.solution}

@@ -24,15 +24,13 @@ audit:
 ---
 
 ::: {.problem}
-1. Show that there is a unique analytic branch outside the unit circle of the function $f ( z ) = { \sqrt { z ^ { 2 } + z + 1 } }$ such that $f ( t )$ is positive when $t > 1$
+1. Show that there is a unique analytic branch outside the unit circle of the function $f(z) = \sqrt{z^2 + z + 1}$ such that $f(t)$ is positive when $t > 1$.
 
-2. Using the branch determined in Part $^ { 1 , }$ calculate the integral
-
+2. Using the branch determined in Part 1, calculate the integral
 $$
-\frac { 1 } { 2 \pi i } \int _ { C _ { r } } \frac { d z } { \sqrt { z ^ { 2 } + z + 1 } }
+\frac{1}{2\pi i} \int_{C_r} \frac{dz}{\sqrt{z^2 + z + 1}}
 $$
-
-where $C _ { r }$ is the positively oriented circle $\abs{ z } = r$ and $r > 1$
+where $C_r$ is the positively oriented circle $\abs{z} = r$ and $r > 1$.
 :::
 
 ::: {.solution}

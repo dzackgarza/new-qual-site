@@ -25,18 +25,14 @@ audit:
 
 ::: {.problem}
 Let
-
 $$
-A = { \binom { a b } { c d } }
+A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}
 $$
-
-be a real matrix with $a , b , c , d > 0$ . Show that A has an eigenvector
-
+be a real matrix with $a, b, c, d > 0$. Show that $A$ has an eigenvector
 $$
-{ \binom { x } { y } } \in \RR ^ { 2 }
+\begin{pmatrix} x \\ y \end{pmatrix} \in \RR^2
 $$
-
-with x, $y > 0$
+with $x, y > 0$.
 :::
 
 ::: {.solution}

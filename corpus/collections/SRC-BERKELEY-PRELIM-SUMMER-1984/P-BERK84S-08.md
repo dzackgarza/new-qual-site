@@ -24,10 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $\varphi ( s )$ be $a C ^ { 2 }$ function on [1, 2] with $\varphi$ and $\varphi ^ { \prime }$ vanishing at $s = 1 , 2$ . Prove that there is a constant $C > 0$ such that for any $\lambda > 1$ ,
-
+Let $\varphi(s)$ be a $C^2$ function on $[1,2]$ with $\varphi$ and $\varphi'$ vanishing at $s = 1, 2$. Prove that there is a constant $C > 0$ such that for any $\lambda > 1$,
 $$
-\abs{ \int _ { 1 } ^ { 2 } e ^ { i \lambda x } \varphi ( x ) d x } \leqslant { \frac { C } { \lambda ^ { 2 } } } \cdotp
+\abs{\int_1^2 e^{i\lambda x} \varphi(x)\,dx} \leqslant \frac{C}{\lambda^2}.
 $$
 :::
 

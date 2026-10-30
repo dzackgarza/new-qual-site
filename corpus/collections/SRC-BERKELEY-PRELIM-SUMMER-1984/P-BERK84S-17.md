@@ -25,21 +25,16 @@ audit:
 
 ::: {.problem}
 Suppose
-
 $$
-f ( z ) = \sum _ { n = 0 } ^ { \infty } a _ { n } z ^ { n }
+f(z) = \sum_{n=0}^\infty a_n z^n
 $$
-
-has radius of convergence $R > 0$ . Show that
-
+has radius of convergence $R > 0$. Show that
 $$
-h ( z ) = \sum _ { n = 0 } ^ { \infty } { \frac { a _ { n } z ^ { n } } { n ! } }
+h(z) = \sum_{n=0}^\infty \frac{a_n z^n}{n!}
 $$
-
-is entire and that for $0 < r < R$ , there is a constant M such that
-
+is entire and that for $0 < r < R$, there is a constant $M$ such that
 $$
-\abs{ h ( z ) } \leqslant M e ^ { \abs{ z } / r } .
+\abs{h(z)} \leqslant M e^{\abs{z}/r}.
 $$
 :::
 

@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $S _ { n }$ denote the group of permutations of n objects. Find four different subgroups of $S _ { 4 }$ isomorphic to $S _ { 3 }$ and nine isomorphic to $S _ { 2 }$
+Let $S_n$ denote the group of permutations of $n$ objects. Find four different subgroups of $S_4$ isomorphic to $S_3$ and nine isomorphic to $S_2$.
 :::
 
 ::: {.solution}

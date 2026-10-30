@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let A be a 2 $\times$ 2 matrix over C which is not a scalar multiple of the identity matrix I. Show that any 2 $\times$ 2 matrix X over C commuting with A has the form $X = \alpha I + \beta A$ , where $\alpha , \beta \in \CC$
+Let $A$ be a $2 \times 2$ matrix over $\CC$ which is not a scalar multiple of the identity matrix $I$. Show that any $2 \times 2$ matrix $X$ over $\CC$ commuting with $A$ has the form $X = \alpha I + \beta A$, where $\alpha, \beta \in \CC$.
 :::
 
 ::: {.solution}

@@ -24,10 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-Show there is a unique continuous real valued function $f :$ $[ 0 , 1 ] \to \RR$ such that
-
+Show there is a unique continuous real valued function $f\colon [0,1] \to \RR$ such that
 $$
-f ( x ) = \sin x + \int _ { 0 } ^ { 1 } { \frac { f ( y ) } { e ^ { x + y + 1 } } } d y .
+f(x) = \sin x + \int_0^1 \frac{f(y)}{e^{x+y+1}}\,dy.
 $$
 :::
 

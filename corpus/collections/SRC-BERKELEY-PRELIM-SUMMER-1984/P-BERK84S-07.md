@@ -24,16 +24,19 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \RR \to \RR$ be $C ^ { 1 }$ and let
-
+Let $f\colon \RR \to \RR$ be $C^1$ and let
 $$
-\begin{array} { l } { u = f ( x ) } \\ { v = - y + x f ( x ) . } \end{array}
+\begin{aligned}
+u &= f(x) \\
+v &= -y + x f(x).
+\end{aligned}
 $$
-
-If $f ^ { \prime } ( x _ { 0 } ) \neq 0$ , show that this transformation is locally invertible near $( x _ { 0 } , y _ { 0 } )$ and the inverse has the form
-
+If $f'(x_0) \neq 0$, show that this transformation is locally invertible near $(x_0, y_0)$ and the inverse has the form
 $$
-\begin{array} { l } { { x = g ( u ) } } \\ { { y = - v + u g ( u ) . } } \end{array}
+\begin{aligned}
+x &= g(u) \\
+y &= -v + u g(u).
+\end{aligned}
 $$
 :::
 

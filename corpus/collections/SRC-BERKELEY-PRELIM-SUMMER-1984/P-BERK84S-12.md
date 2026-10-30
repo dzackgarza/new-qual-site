@@ -24,13 +24,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathbf { F } _ { q }$ be a finite field with q elements and let V be an ndimensional vector space over $\mathbf { F } _ { q }$
+Let $\FF_q$ be a finite field with $q$ elements and let $V$ be an $n$-dimensional vector space over $\FF_q$.
 
-1. Determine the number of elements in V .
+1. Determine the number of elements in $V$.
 
-2. Let $G L _ { n } ( \mathbf { F } _ { q } )$ denote the group of all $n \times n$ nonsingular matrices A over $\mathbf { F } _ { q }$ . Determine the order of $G L _ { n } ( \mathbf { F } _ { q } )$
+2. Let $\GL_n(\FF_q)$ denote the group of all $n \times n$ nonsingular matrices $A$ over $\FF_q$. Determine the order of $\GL_n(\FF_q)$.
 
-3. Let $S L _ { n } ( \mathbf { F } _ { q } )$ denote the subgroup of $G L _ { n } ( \mathbf { F } _ { q } )$ consisting of matrices with determinant 1. Find the order of $S L _ { n } ( \mathbf { F } _ { q } )$
+3. Let $\SL_n(\FF_q)$ denote the subgroup of $\GL_n(\FF_q)$ consisting of matrices with determinant $1$. Find the order of $\SL_n(\FF_q)$.
 :::
 
 ::: {.solution}
