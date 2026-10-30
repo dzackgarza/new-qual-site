@@ -33,15 +33,15 @@ If true, give a brief proof.
 If false, give a counterexample or prove your assertion.
 
 (1) Let $(X, \mathcal{M}, \mu)$ be a measure space and $E_j \in \mathcal{M}$ ($j = 1, 2, \ldots$). Denote by $E = \{x \in X : x \in E_j \text{ for infinitely many } j\}$.
-If $E \neq \emptyset$, $\mu(E_j) < \infty$, then $\mu(E) = 0$.
+If $\sum_{j=1}^\infty \mu(E_j) < \infty$, then $\mu(E) = 0$.
 
-(2) Let $f \in L^1(\RR^n)$ and denote the Lebesgue set of $f$ by $L_f$.
+(2) Let $f \in L^1_{\mathrm{loc}}(\RR^n)$ and denote the Lebesgue set of $f$ by $L_f$.
 Let $z_0 \in \RR^n$ and suppose $f$ is continuous at $z_0$.
 Then $z_0 \in L_f$.
 
 (3) Let $H$ be a real Hilbert space.
 Let $z_k \in H$ ($k = 1, 2, \ldots$) and $z \in H$.
-If $z_k \to z$ weakly in $H$ and $\norm{z_k} = \norm{z}$, then $\norm{z_k - z} \to 0$.
+If $z_k \to z$ weakly in $H$ and $\norm{z_k} \to \norm{z}$, then $\norm{z_k - z} \to 0$.
 
 (4) Let $\mathcal{S}$ denote the Schwartz space on $\RR^n$.
 Let $f, g \in \mathcal{S}$.
@@ -57,23 +57,23 @@ Then the second-order distributional derivative $f''$ is the zero distribution o
 
 ::: pf-step
 
-Statement (1) is false.
+Statement (1) is true.
 
 ::: pf-proof
 
-Take $X=[0,1]$ with Lebesgue measure and set
+By definition,
 $$
-E_j=[0,1]
+E=\bigcap_{N=1}^\infty\bigcup_{j\ge N}E_j,
 $$
-for every $j$. Then each $\mu(E_j)=1<\infty$, and every point lies in infinitely many $E_j$, so
+so $E\in\mathcal M$ and, for every $N$,
 $$
-E=[0,1].
+\mu(E)\le\mu\Big(\bigcup_{j\ge N}E_j\Big)\le\sum_{j\ge N}\mu(E_j).
 $$
-Hence
+The right side is the tail of a convergent series, so it tends to $0$ as $N\to\infty$. Hence
 $$
-\mu(E)=1\ne0.
+\mu(E)=0.
 $$
-The missing hypothesis in the first Borel--Cantelli lemma is the summability of $\sum_j\mu(E_j)$, not merely finiteness of each term.
+This is the first Borel--Cantelli lemma.
 
 :::
 
@@ -91,7 +91,7 @@ $$
 $$
 whenever $\norm{y-z_0}<r_0$. Hence for $0<r<r_0$,
 $$
-\frac1{\setmeasure{B_r}}\int_{B_r(z_0)}\norm{f(y)-f(z_0)}\,dy
+\frac1{\setmeasure{B_r}}\int_{B_r(z_0)}\abs{f(y)-f(z_0)}\,dy
 \le\varepsilon.
 $$
 Letting $r\downarrow0$ gives the Lebesgue-point condition. Thus
@@ -113,7 +113,7 @@ Weak convergence gives
 $$
 \langle z_k,z\rangle\to\norm{z}^2.
 $$
-Since $\norm{z_k}=\norm{z}$ for every $k$,
+Since $\norm{z_k}\to\norm{z}$,
 $$
 \begin{aligned}
 \norm{z_k-z}^2

@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be a topological space (in particular, compact Hausdorff).
+Let $X$ be a compact Hausdorff topological space.
 Let $\{K_j\}_{j=1}^\infty$ be a sequence of decreasing, non-empty compact subsets of $X$:
 $$K_1 \supseteq K_2 \supseteq K_3 \supseteq \cdots \quad \text{with } K_j \ne \emptyset \text{ for all } j \ge 1.$$
 Prove that their intersection is non-empty:

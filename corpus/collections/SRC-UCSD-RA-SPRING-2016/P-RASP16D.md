@@ -34,7 +34,7 @@ $$
 (1) Assume $\sup_{k \geq 1} \sum_{j=0}^{k} \abs{A_j^{(k)}} < \infty$ and $\lim_{k \to \infty} I_k[p] = I[p]$ for any polynomial $p$.
 Prove $\lim_{k \to \infty} I_k[f] = I[f]$ for $f \in C([0, 1])$.
 
-(2) (a) For any $k > 1$, $I_k$ is a linear functional on the Banach space $C([0, 1])$ with the uniform norm.
+(2) (a) For any $k \geq 1$, $I_k$ is a linear functional on the Banach space $C([0, 1])$ with the uniform norm.
 Prove that $\norm{I_k} = \sum_{j=0}^{k} \abs{A_j^{(k)}}$.
 
 (b) Assume $\lim_{k \to \infty} I_k[f] = I[f]$ for any $f \in C([0, 1])$.

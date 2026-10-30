@@ -28,57 +28,50 @@ audit:
 
 ::: {.problem}
 Let $f \in L^1(\RR)$ and $x f(x) \in L^1(\RR)$.
-Prove that the Fourier transform $\hat{f}$ is differentiable at every point $\xi \in \RR$.
+Prove that the Fourier transform $\hat{f}$ is differentiable at every point $\xi \in \RR$, and
+$$
+\frac{d}{d\xi}\hat{f}(\xi) = \widehat{(-ixf)}(\xi) \qquad \forall \xi \in \RR.
+$$
 :::
 
 ::: {.solution}
-**Goal.** Show $\hat f$ is differentiable everywhere when $f, xf \in L^1$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-$\hat f(\xi) = \int f(x) e^{-2\pi i x\xi}\,dx$.
-
-::: pf-proof
-
-definition.
-
-:::
-
-:::
-
-::: pf-step
-
-The integrand is differentiable in $\xi$ with derivative $-2\pi i x f(x) e^{-2\pi i x\xi}$.
+With the convention $\hat f(\xi) = \int_\RR f(x) e^{-ix\xi}\,dx$ of the formula to be proved, for $h \ne 0$
+$$
+\frac{\hat f(\xi+h)-\hat f(\xi)}{h} = \int_\RR f(x)\,e^{-ix\xi}\,\frac{e^{-ixh}-1}{h}\,dx.
+$$
 
 ::: pf-proof
 
-differentiate $e^{-2\pi i x\xi}$ with respect to $\xi$.
+Linearity of the integral.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
-The derivative is dominated by $2\pi \abs{x f(x)} \in L^1$.
+The integrand converges pointwise to $-ixf(x)e^{-ix\xi}$ as $h \to 0$ and is bounded in absolute value by $\abs{xf(x)}$.
 
 ::: pf-proof
 
-$\abs{{-2\pi i x f(x) e^{-2\pi i x\xi}}} = 2\pi \abs{x f(x)}$, and $xf \in L^1$ by hypothesis.
+$\frac{d}{dh}e^{-ixh}\big|_{h=0} = -ix$, and $\abs{e^{-ixh}-1} = \abs{\int_0^h (-ix)e^{-ixt}\,dt} \le \abs{x}\abs{h}$.
 
 :::
 
 :::
 
-::: {.pf-step #s4}
+::: {.pf-step #s3}
 
-Hence $\hat f$ is differentiable and $\hat f'(\xi) = \int (-2\pi i x) f(x) e^{-2\pi i x\xi}\,dx = -2\pi i \widehat{xf}(\xi)$.
+$\displaystyle\lim_{h\to0}\frac{\hat f(\xi+h)-\hat f(\xi)}{h} = \int_\RR (-ixf(x))e^{-ix\xi}\,dx = \widehat{(-ixf)}(\xi)$.
 
 ::: pf-proof
 
-differentiation under the integral sign, justified by the dominated convergence theorem (the difference quotients are dominated by $2\pi \abs{xf} \in L^1$).
+Dominated convergence along any sequence $h_n \to 0$, with dominating function $\abs{xf} \in L^1(\RR)$ (Steps [](#s1){.pf-ref} and [](#s2){.pf-ref}).
 
 :::
 
@@ -86,7 +79,7 @@ differentiation under the integral sign, justified by the dominated convergence 
 
 ::: pf-qed
 
-Step [](#s4){.pf-ref} shows $\hat f$ is differentiable at every $\xi$.
+Step [](#s3){.pf-ref} shows $\hat f$ is differentiable at every $\xi$ with derivative $\widehat{(-ixf)}(\xi)$.
 
 :::
 

@@ -23,6 +23,7 @@ source:
   - P-RASP16D
   - P-RASP16E
   - P-RASP16F
+  - P-RASP16G
   - P-RASP16H
   date:
     kind: academic-term
