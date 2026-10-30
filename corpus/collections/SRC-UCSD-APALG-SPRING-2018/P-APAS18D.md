@@ -12,6 +12,11 @@ classification:
   - Invariant Theory
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Reynolds operator normalizer corrected from 1/|G| to 1/|D_8|.
 ---
 
 ::: {.problem}
@@ -22,7 +27,7 @@ The dihedral group $D_8$ of octogon symmetries acts on $X$; let $V=\CC[X]$ be th
 
 (b) The Reynolds operator $R_{D_8}\colon V\to V$ is given by
 $$
-R_{D_8}(v)=\frac{1}{\cardinality{G}}\sum_{g\in D_8}g\cdot v.
+R_{D_8}(v)=\frac{1}{\cardinality{D_8}}\sum_{g\in D_8}g\cdot v.
 $$
 What is the rank of $R_{D_8}$?
 :::
