@@ -979,7 +979,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/real-analysis/integration/index.md
   - [x] wiki/real-analysis/integration/l1.md
   - [x] wiki/real-analysis/integration/the-convergence-theorems.md
-  - [ ] wiki/real-analysis/integration/which-convergence-theorem.md
+  - [x] wiki/real-analysis/integration/which-convergence-theorem.md
   - [ ] wiki/real-analysis/lp-spaces/index.md
   - [ ] wiki/real-analysis/lp-spaces/the-spaces.md
   - [ ] wiki/real-analysis/lp-spaces/which-inequality.md
