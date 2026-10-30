@@ -21,18 +21,6 @@ Upper semicircle; the arc integral tends to $0$ by the ML estimate.
 
 Upper semicircle applied to $f(z)e^{iz}$; the arc integral tends to $0$ by Jordan's lemma.
 
-::: {.example}
-For $f(z) \coloneqq {e^{iz} \over 1 + z^2}$ on the upper semicircle $\gamma_R$, $z = Re^{it}$ with $R>1$, the factor $1/(1+z^2)$ satisfies
-$$
-\begin{aligned}
-\sup_{z\in \gamma_R} \abs{1 \over 1 + z^2}
-&= \max_{t\in [0, \pi]} \abs{1 \over 1 + (Re^{it})^2 } \\
-&= {1\over R^2 - 1}
-\end{aligned},$$
-so Jordan's lemma bounds the arc integral by $\pi/(R^2-1)$.
-
-:::
-
 [[E-AXBZQ]]
 [[E-SS3.EX-3]]
 [[E-2RKYE]]
@@ -81,8 +69,7 @@ Setting $\omega \coloneqq e^{\pi i a \over 2}$,
 $$
 \int_{0}^{\infty} \frac{x^{a}}{1+x^{2}} \dx =
 \frac{2\pi i}{1-e^{2\pi i a}}\left(\frac{\omega}{2i}-\frac{\omega^{3}}{2i}\right)=\pi \frac{\omega-\omega^{3}}{1-\omega^{4}}=\frac{\pi}{\omega+\omega^{-1}}=\frac{\pi}{2 \cos (\pi a / 2)}
-,$$
-which for $a = 1/3$ is $\pi/\sqrt 3$.
+.$$
 
 :::
 
