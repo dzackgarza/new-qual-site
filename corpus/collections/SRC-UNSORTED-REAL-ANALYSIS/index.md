@@ -21,7 +21,6 @@ source:
   - id: E-ASWCD
   - id: E-BTA5L
   - id: E-CGVE4
-  - id: E-DUWXR
   - id: E-E4H2J
   - id: E-EJN4Q
   - id: E-FFARP

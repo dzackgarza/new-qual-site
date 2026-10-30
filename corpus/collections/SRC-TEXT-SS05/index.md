@@ -22,6 +22,8 @@ source:
       problems:
         - id: P-V33ML
           comment: "2.19"
+        - id: E-DUWXR
+          comment: "2.21(d)"
     - name: Ch. 3 Exercises
       problems:
         - id: P-TFXE2
