@@ -16,6 +16,10 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Hungerford V.1.14(b) takes a complex (nonreal) cube root of 1; the statement omitted nonreal.
 ---
 
 ::: {.problem}
@@ -23,7 +27,7 @@ audit:
 
 1. If $F = \QQ(\sqrt 2, \sqrt 3)$, compute $[F: \QQ]$ and find a basis of $F/\QQ$.
 
-2. Do the same for $\QQ(i, \sqrt 3, \zeta_3)$ where $\zeta_3$ is a complex third root of 1.
+2. Do the same for $\QQ(i, \sqrt 3, \zeta_3)$ where $\zeta_3$ is a nonreal cube root of 1.
 :::
 
 ::: {.solution}

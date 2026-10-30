@@ -16,15 +16,15 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Hungerford IV.4.5 asserts a ring isomorphism Hom_R(R,R) = R^op; the statement said homomorphism.
 ---
 
 ::: {.problem}
-Let $R$ be a unital ring, show that there is a ring homomorphism $\mathrm{Hom}_R(R, R) \to R^{op}$ where $\mathrm{Hom}_R$ denotes left $R-$module homomorphisms.
+Let $R$ be a unital ring, show that there is a ring isomorphism $\mathrm{Hom}_R(R, R) \cong R^{op}$ where $\mathrm{Hom}_R$ denotes left $R-$module homomorphisms.
 Conclude that if $R$ is commutative, then there is a ring isomorphism $\mathrm{Hom}_R(R, R) \cong R$.
-:::
-
-::: {.remark title="Variations"}
-The homomorphism is an isomorphism for every unital ring: $\operatorname{End}_R({}_RR)\cong R^{\mathrm{op}}$ as rings.
 :::
 
 ::: {.solution}
