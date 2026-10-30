@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate $H ^ { * } ( \RP ^ { \infty } ; \ZZ ) , H ^ { * } ( \RP ^ { 2 n } ; \ZZ ) , H ^ { * } ( \RP ^ { 2 n + 1 } ; \ZZ )$
+Calculate $H^{*}(\RP^{\infty}; \ZZ)$, $H^{*}(\RP^{2n}; \ZZ)$, $H^{*}(\RP^{2n+1}; \ZZ)$.
 :::
 
 ::: {.solution}

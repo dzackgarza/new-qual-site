@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Classify the $S ^ { 1 } \mathbf { \Phi } .$ -bundles over $S ^ { 2 } .$
+Classify the $S^{1}$-bundles over $S^{2}$.
 :::
 
 ::: {.solution}

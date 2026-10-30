@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate $H ^ { * } ( K ( \ZZ , 3 ) )$
+Calculate $H^{*}(K(\ZZ, 3))$.
 :::
 
 ::: {.solution}

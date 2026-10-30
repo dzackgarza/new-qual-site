@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if $M ^ { n }$ is connected, non-compact manifold, then $H _ { i } ( M ; R ) = 0$ for $i \geq n$ •
+Show that if $M^{n}$ is a connected, non-compact manifold, then $H_{i}(M; R) = 0$ for $i \geq n$.
 :::
 
 ::: {.solution}

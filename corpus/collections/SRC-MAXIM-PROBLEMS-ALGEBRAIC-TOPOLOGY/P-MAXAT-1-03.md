@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if $M ^ { 4 n }$ is a connected manifold which is the boundary of a compact oriented $( 4 n + 1 )$ -dimensional manifold V , then the signature of M is zero.
+Show that if $M^{4n}$ is a connected manifold which is the boundary of a compact oriented $(4n + 1)$-dimensional manifold $V$, then the signature of $M$ is zero.
 :::
 
 ::: {.solution}

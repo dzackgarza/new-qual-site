@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\RP ^ { 2 n } , \CP ^ { 2 n }$ , HP2n cannot be boundaries.
+Show that $\RP^{2n}$, $\CP^{2n}$, $\HP^{2n}$ cannot be boundaries.
 :::
 
 ::: {.solution}

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate $w ( \RP ^ { n } ) , c ( \CP ^ { n } ) , p ( \CP ^ { n } )$
+Calculate $w(\RP^{n})$, $c(\CP^{n})$, $p(\CP^{n})$.
 :::
 
 ::: {.solution}

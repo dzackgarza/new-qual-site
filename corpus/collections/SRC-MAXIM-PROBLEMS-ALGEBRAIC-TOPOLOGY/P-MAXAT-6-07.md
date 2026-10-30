@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\CP ^ { 4 }$ cannot be smoothly embedded in $\RR ^ { n }$ with $n \leq 1 1$ . (Hint: use Pontrjagin classes)
+Show that $\CP^{4}$ cannot be smoothly embedded in $\RR^{n}$ with $n \leq 11$. (Hint: use Pontrjagin classes)
 :::
 
 ::: {.solution}

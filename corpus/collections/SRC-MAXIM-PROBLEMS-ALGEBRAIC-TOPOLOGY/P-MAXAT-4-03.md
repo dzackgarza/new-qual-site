@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate $H _ { * } ( \Omega S ^ { n } )$ and the ring structure on $H ^ { \ast } ( \Omega S ^ { n } )$
+Calculate $H_{*}(\Omega S^{n})$ and the ring structure on $H^{*}(\Omega S^{n})$.
 :::
 
 ::: {.solution}

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the only real projective spaces which can be parallelizable are P 1 , P 3 and $\RP ^ { 7 }$
+Show that the only real projective spaces which can be parallelizable are $\RP^{1}$, $\RP^{3}$ and $\RP^{7}$.
 :::
 
 ::: {.solution}

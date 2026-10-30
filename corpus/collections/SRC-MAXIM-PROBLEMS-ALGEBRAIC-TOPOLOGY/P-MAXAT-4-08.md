@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate $\pi _ { 4 } ( S ^ { 3 } ) , \pi _ { 5 } ( S ^ { 3 } )$
+Calculate $\pi_{4}(S^{3})$, $\pi_{5}(S^{3})$.
 :::
 
 ::: {.solution}

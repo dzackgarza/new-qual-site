@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find $H ^ { * } ( K ( \ZZ , n ) ; \QQ )$
+Find $H^{*}(K(\ZZ, n); \QQ)$.
 :::
 
 ::: {.solution}

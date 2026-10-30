@@ -16,11 +16,10 @@ audit:
 ---
 
 ::: {.problem}
-Let M be a closed, connected, n-dimensional manifold.
+Let $M$ be a closed, connected, $n$-dimensional manifold.
 Show that:
-
 $$
-\mathrm { T o r } ( H _ { n - 1 } ( M ; \ZZ ) = \left\{ \begin{array} { l l } { 0 , \mathrm { i f ~ M ~ i s ~ o r i e n t a b l e } } \\ { \ZZ _ { 2 } , \mathrm { i f ~ M ~ i s ~ n o n { - } o r i e n t a b l e } } \end{array} \right.
+\operatorname{Tor}(H_{n-1}(M; \ZZ)) = \begin{cases} 0, & \text{if } M \text{ is orientable}, \\ \ZZ_{2}, & \text{if } M \text{ is non-orientable}. \end{cases}
 $$
 :::
 

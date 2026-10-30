@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate the cohomology of the space of maps from $S ^ { 1 } \to S ^ { 3 }$ , and similarly for the space of maps $S ^ { 1 } \to S ^ { 2 }$ and $S ^ { 1 } \to \CP ^ { n }$
+Calculate the cohomology of the space of maps from $S^{1} \to S^{3}$, and similarly for the space of maps $S^{1} \to S^{2}$ and $S^{1} \to \CP^{n}$.
 :::
 
 ::: {.solution}

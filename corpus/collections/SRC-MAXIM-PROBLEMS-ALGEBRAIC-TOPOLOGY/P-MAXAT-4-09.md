@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the p-torsion in $\pi _ { i } ( S ^ { 3 } )$ appears first for $i = 2 p$ and it is $\ZZ _ { p } .$
+Show that the $p$-torsion in $\pi_{i}(S^{3})$ appears first for $i = 2p$ and it is $\ZZ_{p}$.
 :::
 
 ::: {.solution}

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Study possible immersions (embeddings) of $\RP ^ { n }$ into $\RR ^ { n + k }$ . (Hint: use S-W classes)
+Study possible immersions (embeddings) of $\RP^{n}$ into $\RR^{n+k}$. (Hint: use S-W classes)
 :::
 
 ::: {.solution}

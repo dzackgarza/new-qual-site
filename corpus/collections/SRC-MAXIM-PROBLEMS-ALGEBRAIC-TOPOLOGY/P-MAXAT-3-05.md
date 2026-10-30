@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the ring structure on $H ^ { * } ( S U ( n ) ) , H ^ { * } ( U ( n ) ) , H ^ { * } ( V _ { k } ( \CC ^ { n } ) )$
+Find the ring structure on $H^{*}(SU(n))$, $H^{*}(U(n))$, $H^{*}(V_{k}(\CC^{n}))$.
 :::
 
 ::: {.solution}

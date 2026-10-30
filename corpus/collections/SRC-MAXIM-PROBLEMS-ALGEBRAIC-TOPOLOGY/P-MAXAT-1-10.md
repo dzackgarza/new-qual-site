@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-If M is a compact, closed, oriented manifold of dimension n, show that the torsion subgroups of $H ^ { i } ( M )$ and $H ^ { n - i + 1 } ( M )$ are isomorphic.
+If $M$ is a compact, closed, oriented manifold of dimension $n$, show that the torsion subgroups of $H^{i}(M)$ and $H^{n-i+1}(M)$ are isomorphic.
 :::
 
 ::: {.solution}

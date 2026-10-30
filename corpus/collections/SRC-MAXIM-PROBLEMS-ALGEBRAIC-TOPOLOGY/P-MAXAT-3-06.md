@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the cohomology ring of $\Omega \CP ^ { n } , \Omega \RP ^ { n }$ . (Hint: use a spectral sequence argument)
+Find the cohomology ring of $\Omega \CP^{n}$, $\Omega \RP^{n}$. (Hint: use a spectral sequence argument)
 :::
 
 ::: {.solution}

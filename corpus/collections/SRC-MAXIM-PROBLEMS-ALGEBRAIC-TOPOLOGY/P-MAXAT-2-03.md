@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $V _ { n } ( \RR ^ { \infty } ) , V _ { n } ( \CC ^ { \infty } ) , V _ { n } ( \quaternions ^ { \infty } )$ are contractible.
+Show that $V_{n}(\RR^{\infty})$, $V_{n}(\CC^{\infty})$, $V_{n}(\quaternions^{\infty})$ are contractible.
 :::
 
 ::: {.solution}
