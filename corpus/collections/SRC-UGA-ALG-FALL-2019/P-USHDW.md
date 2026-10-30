@@ -111,7 +111,7 @@ By Zorn's Lemma, $\mathcal{S}$ has a maximal element, denoted $P \in \mathcal{S}
 
 ::: pf-step
 
-$P$ is a proper ideal: Since $1 = r^0$ or $r^1 \in \Sigma$, $1 \notin P$ because $P \cap \Sigma = \emptyset$.
+$P$ is a proper ideal: if $1 \in P$, then $r = r \cdot 1 \in P$, contradicting $P \cap \Sigma = \emptyset$.
 
 :::
 
