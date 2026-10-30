@@ -59,7 +59,7 @@ The integrand converges pointwise to $-ixf(x)e^{-ix\xi}$ as $h \to 0$ and is bou
 
 ::: pf-proof
 
-$\frac{d}{dh}e^{-ixh}\big|_{h=0} = -ix$, and $\abs{e^{-ixh}-1} = \abs{\int_0^h (-ix)e^{-ixt}\,dt} \le \abs{x}\abs{h}$.
+The derivative of $h \mapsto e^{-ixh}$ at $h=0$ is $-ix$, and $\abs{e^{-ixh}-1} = \abs{\int_0^h (-ix)e^{-ixt}\,dt} \le \abs{x}\abs{h}$.
 
 :::
 
