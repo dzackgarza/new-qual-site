@@ -31,11 +31,11 @@ $$
 
 ::: {.pf-step #s1}
 
-$\int_0^\infty \frac{\sin x}{x(x^2+1)}\, dx = \frac{1}{2}\operatorname{Im}\int_{-\infty}^{\infty} \frac{e^{ix}}{x(x^2+1)}\, dx$.
+$\int_0^\infty \frac{\sin x}{x(x^2+1)}\, dx = \frac{1}{2}\operatorname{Im}\operatorname{PV}\int_{-\infty}^{\infty} \frac{e^{ix}}{x(x^2+1)}\, dx$, where $\operatorname{PV}$ omits $(-\varepsilon,\varepsilon)$ and lets $\varepsilon\to0$.
 
 ::: pf-proof
 
-the integrand is even, and $\sin x = \operatorname{Im}(e^{ix})$.
+The integrand $\sin x/(x(x^2+1))$ is even and continuous at $0$, and $\sin x = \operatorname{Im}(e^{ix})$. The real part $\cos x/(x(x^2+1))$ is odd, so it cancels in the principal value.
 
 :::
 
@@ -59,7 +59,7 @@ Indent the contour around $z = 0$ (small semicircle above) and close in the uppe
 
 ::: pf-proof
 
-standard contour for such integrals.
+On the upper half-plane $\abs{e^{iz}}\le1$, so on the arc $\abs{z}=R$ the integrand is at most $1/(R(R^2-1))$ and the arc integral tends to $0$. The small semicircle of radius $\varepsilon$ above $0$, traversed clockwise, tends to $-\pi i\operatorname{Res}_{z=0}$ because the pole is simple. The residue theorem on the indented contour, for $\varepsilon<1<R$, encloses only $z=i$.
 
 :::
 
@@ -92,7 +92,7 @@ residue at the simple pole $z = 0$.
 ::: {.pf-step #s6}
 
 By the residue theorem (with the indentation contributing $\pi i$ times the residue at $0$),
-$$\int_{-\infty}^{\infty} \frac{e^{ix}}{x(x^2+1)}\, dx = 2\pi i \operatorname{Res}_{z=i} + \pi i \operatorname{Res}_{z=0} = 2\pi i\left(-\frac{1}{2e}\right) + \pi i(1) = \pi i\left(1 - \frac{1}{e}\right).$$
+$$\operatorname{PV}\int_{-\infty}^{\infty} \frac{e^{ix}}{x(x^2+1)}\, dx = 2\pi i \operatorname{Res}_{z=i} + \pi i \operatorname{Res}_{z=0} = 2\pi i\left(-\frac{1}{2e}\right) + \pi i(1) = \pi i\left(1 - \frac{1}{e}\right).$$
 
 ::: pf-proof
 
