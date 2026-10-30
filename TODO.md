@@ -993,7 +993,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/real-analysis/resources/index.md
   - [x] wiki/real-analysis/resources/preface.md
   - [x] wiki/real-analysis/resources/problems.md
-  - [ ] wiki/real-analysis/resources/solutions.md
+  - [x] wiki/real-analysis/resources/solutions.md
   - [ ] wiki/real-analysis/resources/topics.md
   - [ ] wiki/real-analysis/review.md
   - [ ] wiki/real-analysis/undergraduate/advice.md
