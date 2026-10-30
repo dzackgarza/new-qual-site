@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that X has universal cover $p : \tilde X \to X$ and let $A \subset X$ be a subspace with $p(\tilde a) = a \in A$.
+Suppose that $X$ has universal cover $p : \tilde X \to X$ and let $A \subset X$ be a subspace with $p(\tilde a) = a \in A$.
 Show that there is a group isomorphism
 $$
 \ker(\pi_1 (A, a) \to \pi_1 (X, a)) \cong \pi_1 (\inverseof{p} A, \tilde a).
