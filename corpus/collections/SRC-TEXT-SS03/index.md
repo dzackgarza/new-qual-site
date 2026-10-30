@@ -199,126 +199,224 @@ source:
       comment: Ch. 4, Problem 2
   - name: Ch5 Exercises
     problems:
-    - E-SS5.EX-1
-    - E-SS5.EX-2
-    - E-SS5.EX-3
-    - E-SS5.EX-4
-    - E-SS5.EX-5
-    - E-SS5.EX-6
-    - E-SS5.EX-7
-    - E-SS5.EX-8
-    - E-SS5.EX-9
-    - E-SS5.EX-10
-    - E-SS5.EX-11
-    - E-SS5.EX-12
-    - E-SS5.EX-13
-    - E-SS5.EX-14
+    - id: E-SS5.EX-1
+      comment: Ch. 5, Exercise 1
+    - id: E-SS5.EX-2
+      comment: Ch. 5, Exercise 2
+    - id: E-SS5.EX-3
+      comment: Ch. 5, Exercise 3
+    - id: E-SS5.EX-4
+      comment: Ch. 5, Exercise 4
+    - id: E-SS5.EX-5
+      comment: Ch. 5, Exercise 5
+    - id: E-SS5.EX-6
+      comment: Ch. 5, Exercise 6
+    - id: E-SS5.EX-7
+      comment: Ch. 5, Exercise 7
+    - id: E-SS5.EX-8
+      comment: Ch. 5, Exercise 8
+    - id: E-SS5.EX-9
+      comment: Ch. 5, Exercise 9
+    - id: E-SS5.EX-10
+      comment: Ch. 5, Exercise 10
+    - id: E-SS5.EX-11
+      comment: Ch. 5, Exercise 11
+    - id: E-SS5.EX-12
+      comment: Ch. 5, Exercise 12
+    - id: E-SS5.EX-13
+      comment: Ch. 5, Exercise 13
+    - id: E-SS5.EX-14
+      comment: Ch. 5, Exercise 14
   - name: Ch5 Problems
     problems:
-    - E-SS5.PR-1
-    - E-SS5.PR-2
-    - E-SS5.PR-3
-    - E-SS5.PR-4
+    - id: E-SS5.PR-1
+      comment: Ch. 5, Problem 1
+    - id: E-SS5.PR-2
+      comment: Ch. 5, Problem 2
+    - id: E-SS5.PR-3
+      comment: Ch. 5, Problem 3
+    - id: E-SS5.PR-4
+      comment: Ch. 5, Problem 4
   - name: Ch6 Exercises
     problems:
-    - E-SS6.EX-1
-    - E-SS6.EX-2
-    - E-SS6.EX-3
-    - E-SS6.EX-4
-    - E-SS6.EX-5
-    - E-SS6.EX-6
-    - E-SS6.EX-7
-    - E-SS6.EX-8
-    - E-SS6.EX-9
-    - E-SS6.EX-10
-    - E-SS6.EX-11
-    - E-SS6.EX-12
-    - E-SS6.EX-13
-    - E-SS6.EX-14
-    - E-SS6.EX-15
-    - E-SS6.EX-16
-    - E-SS6.EX-17
+    - id: E-SS6.EX-1
+      comment: Ch. 6, Exercise 1
+    - id: E-SS6.EX-2
+      comment: Ch. 6, Exercise 2
+    - id: E-SS6.EX-3
+      comment: Ch. 6, Exercise 3
+    - id: E-SS6.EX-4
+      comment: Ch. 6, Exercise 4
+    - id: E-SS6.EX-5
+      comment: Ch. 6, Exercise 5
+    - id: E-SS6.EX-6
+      comment: Ch. 6, Exercise 6
+    - id: E-SS6.EX-7
+      comment: Ch. 6, Exercise 7
+    - id: E-SS6.EX-8
+      comment: Ch. 6, Exercise 8
+    - id: E-SS6.EX-9
+      comment: Ch. 6, Exercise 9
+    - id: E-SS6.EX-10
+      comment: Ch. 6, Exercise 10
+    - id: E-SS6.EX-11
+      comment: Ch. 6, Exercise 11
+    - id: E-SS6.EX-12
+      comment: Ch. 6, Exercise 12
+    - id: E-SS6.EX-13
+      comment: Ch. 6, Exercise 13
+    - id: E-SS6.EX-14
+      comment: Ch. 6, Exercise 14
+    - id: E-SS6.EX-15
+      comment: Ch. 6, Exercise 15
+    - id: E-SS6.EX-16
+      comment: Ch. 6, Exercise 16
+    - id: E-SS6.EX-17
+      comment: Ch. 6, Exercise 17
   - name: Ch6 Problems
     problems:
-    - E-SS6.PR-1
-    - E-SS6.PR-2
-    - E-SS6.PR-3
-    - E-SS6.PR-4
+    - id: E-SS6.PR-1
+      comment: Ch. 6, Problem 1
+    - id: E-SS6.PR-2
+      comment: Ch. 6, Problem 2
+    - id: E-SS6.PR-3
+      comment: Ch. 6, Problem 3
+    - id: E-SS6.PR-4
+      comment: Ch. 6, Problem 4
   - name: Ch7 Exercises
     problems:
-    - E-SS7.EX-1
-    - E-SS7.EX-2
-    - E-SS7.EX-3
-    - E-SS7.EX-4
+    - id: E-SS7.EX-1
+      comment: Ch. 7, Exercise 1
+    - id: E-SS7.EX-2
+      comment: Ch. 7, Exercise 2
+    - id: E-SS7.EX-3
+      comment: Ch. 7, Exercise 3
+    - id: E-SS7.EX-4
+      comment: Ch. 7, Exercise 4
   - name: Ch7 Problems
     problems:
-    - E-SS7.PR-1
-    - E-SS7.PR-2
-    - E-SS7.PR-3
-    - E-SS7.PR-4
+    - id: E-SS7.PR-1
+      comment: Ch. 7, Problem 1
+    - id: E-SS7.PR-2
+      comment: Ch. 7, Problem 2
+    - id: E-SS7.PR-3
+      comment: Ch. 7, Problem 3
+    - id: E-SS7.PR-4
+      comment: Ch. 7, Problem 4
   - name: Ch8 Exercises
     problems:
-    - E-SS8.EX-1
-    - E-SS8.EX-2
-    - E-SS8.EX-3
-    - E-SS8.EX-4
-    - E-SS8.EX-5
-    - E-SS8.EX-6
-    - E-SS8.EX-7
-    - E-SS8.EX-8
-    - E-SS8.EX-9
-    - E-SS8.EX-10
-    - E-SS8.EX-11
-    - E-SS8.EX-12
-    - E-SS8.EX-13
-    - E-SS8.EX-14
-    - E-SS8.EX-15
-    - E-SS8.EX-16
-    - E-SS8.EX-17
-    - E-SS8.EX-18
-    - E-SS8.EX-19
-    - E-SS8.EX-20
-    - E-SS8.EX-21
-    - E-SS8.EX-22
-    - E-SS8.EX-23
-    - E-SS8.EX-24
+    - id: E-SS8.EX-1
+      comment: Ch. 8, Exercise 1
+    - id: E-SS8.EX-2
+      comment: Ch. 8, Exercise 2
+    - id: E-SS8.EX-3
+      comment: Ch. 8, Exercise 3
+    - id: E-SS8.EX-4
+      comment: Ch. 8, Exercise 4
+    - id: E-SS8.EX-5
+      comment: Ch. 8, Exercise 5
+    - id: E-SS8.EX-6
+      comment: Ch. 8, Exercise 6
+    - id: E-SS8.EX-7
+      comment: Ch. 8, Exercise 7
+    - id: E-SS8.EX-8
+      comment: Ch. 8, Exercise 8
+    - id: E-SS8.EX-9
+      comment: Ch. 8, Exercise 9
+    - id: E-SS8.EX-10
+      comment: Ch. 8, Exercise 10
+    - id: E-SS8.EX-11
+      comment: Ch. 8, Exercise 11
+    - id: E-SS8.EX-12
+      comment: Ch. 8, Exercise 12
+    - id: E-SS8.EX-13
+      comment: Ch. 8, Exercise 13
+    - id: E-SS8.EX-14
+      comment: Ch. 8, Exercise 14
+    - id: E-SS8.EX-15
+      comment: Ch. 8, Exercise 15
+    - id: E-SS8.EX-16
+      comment: Ch. 8, Exercise 16
+    - id: E-SS8.EX-17
+      comment: Ch. 8, Exercise 17
+    - id: E-SS8.EX-18
+      comment: Ch. 8, Exercise 18
+    - id: E-SS8.EX-19
+      comment: Ch. 8, Exercise 19
+    - id: E-SS8.EX-20
+      comment: Ch. 8, Exercise 20
+    - id: E-SS8.EX-21
+      comment: Ch. 8, Exercise 21
+    - id: E-SS8.EX-22
+      comment: Ch. 8, Exercise 22
+    - id: E-SS8.EX-23
+      comment: Ch. 8, Exercise 23
+    - id: E-SS8.EX-24
+      comment: Ch. 8, Exercise 24
   - name: Ch8 Problems
     problems:
-    - E-SS8.PR-1
-    - E-SS8.PR-2
-    - E-SS8.PR-3
+    - id: E-SS8.PR-1
+      comment: Ch. 8, Problem 1
+    - id: E-SS8.PR-2
+      comment: Ch. 8, Problem 2
+    - id: E-SS8.PR-3
+      comment: Ch. 8, Problem 3
   - name: Ch9 Exercises
     problems:
-    - E-SS9.EX-1
-    - E-SS9.EX-2
-    - E-SS9.EX-3
-    - E-SS9.EX-4
-    - E-SS9.EX-5
-    - E-SS9.EX-6
-    - E-SS9.EX-7
-    - E-SS9.EX-8
+    - id: E-SS9.EX-1
+      comment: Ch. 9, Exercise 1
+    - id: E-SS9.EX-2
+      comment: Ch. 9, Exercise 2
+    - id: E-SS9.EX-3
+      comment: Ch. 9, Exercise 3
+    - id: E-SS9.EX-4
+      comment: Ch. 9, Exercise 4
+    - id: E-SS9.EX-5
+      comment: Ch. 9, Exercise 5
+    - id: E-SS9.EX-6
+      comment: Ch. 9, Exercise 6
+    - id: E-SS9.EX-7
+      comment: Ch. 9, Exercise 7
+    - id: E-SS9.EX-8
+      comment: Ch. 9, Exercise 8
   - name: Ch9 Problems
     problems:
-    - E-SS9.PR-1
+    - id: E-SS9.PR-1
+      comment: Ch. 9, Problem 1
   - name: Ch10 Exercises
     problems:
-    - E-SS10.EX-1
-    - E-SS10.EX-2
-    - E-SS10.EX-3
-    - E-SS10.EX-4
-    - E-SS10.EX-5
-    - E-SS10.EX-6
-    - E-SS10.EX-7
-    - E-SS10.EX-8
-    - E-SS10.EX-9
-    - E-SS10.EX-10
-    - E-SS10.EX-11
-    - E-SS10.EX-12
+    - id: E-SS10.EX-1
+      comment: Ch. 10, Exercise 1
+    - id: E-SS10.EX-2
+      comment: Ch. 10, Exercise 2
+    - id: E-SS10.EX-3
+      comment: Ch. 10, Exercise 3
+    - id: E-SS10.EX-4
+      comment: Ch. 10, Exercise 4
+    - id: E-SS10.EX-5
+      comment: Ch. 10, Exercise 5
+    - id: E-SS10.EX-6
+      comment: Ch. 10, Exercise 6
+    - id: E-SS10.EX-7
+      comment: Ch. 10, Exercise 7
+    - id: E-SS10.EX-8
+      comment: Ch. 10, Exercise 8
+    - id: E-SS10.EX-9
+      comment: Ch. 10, Exercise 9
+    - id: E-SS10.EX-10
+      comment: Ch. 10, Exercise 10
+    - id: E-SS10.EX-11
+      comment: Ch. 10, Exercise 11
+    - id: E-SS10.EX-12
+      comment: Ch. 10, Exercise 12
   - name: Ch10 Problems
     problems:
-    - E-SS10.PR-2
-    - E-SS10.PR-3
-    - E-SS10.PR-4
+    - id: E-SS10.PR-2
+      comment: Ch. 10, Problem 2
+    - id: E-SS10.PR-3
+      comment: Ch. 10, Problem 3
+    - id: E-SS10.PR-4
+      comment: Ch. 10, Problem 4
 ---
 
 
