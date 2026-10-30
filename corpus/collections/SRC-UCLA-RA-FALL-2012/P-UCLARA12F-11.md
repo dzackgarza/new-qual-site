@@ -5,8 +5,10 @@ kind: problem
 title: Entire functions with one periodic and one quasiperiodic direction
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Liouville's Theorem
 relations: []
 review: draft
 audit:

@@ -5,8 +5,10 @@ kind: problem
 title: Pointwise convergence on an accumulating set determines a normal family
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Normal Families
+  - Identity Theorem
 relations: []
 review: draft
 audit:

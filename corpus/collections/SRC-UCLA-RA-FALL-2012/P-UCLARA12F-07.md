@@ -5,8 +5,10 @@ kind: problem
 title: Boundary derivative for a disc self-map
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Schwarz Lemma
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

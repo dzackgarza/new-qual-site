@@ -5,8 +5,10 @@ kind: problem
 title: Repeated values accumulating at zero force constancy
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Identity Theorem
+  - Zeros
 relations: []
 review: draft
 audit:

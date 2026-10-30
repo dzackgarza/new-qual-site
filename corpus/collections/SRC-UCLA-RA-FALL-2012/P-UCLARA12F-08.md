@@ -5,8 +5,10 @@ kind: problem
 title: Entire square root from even zero multiplicities
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Zeros
 relations: []
 review: draft
 audit:

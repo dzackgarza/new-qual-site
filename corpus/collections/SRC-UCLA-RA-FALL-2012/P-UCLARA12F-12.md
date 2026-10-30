@@ -5,8 +5,10 @@ kind: problem
 title: Maximum principle with finitely many exceptional boundary points
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Harmonic Functions
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:
