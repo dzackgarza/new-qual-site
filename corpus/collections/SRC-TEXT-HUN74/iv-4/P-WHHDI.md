@@ -19,7 +19,12 @@ audit:
 - event: source-corrected
   by: Claude Opus 5.5
   date: 2026-09-28
-  note: Restored the commutative square, transcribed from the page image of Hungerford, Algebra, p. 206, Exercise IV.4.9; the extraction carried it only as an image.
+  note: Restored the commutative square, transcribed from the page image of Hungerford, Algebra, p. 206,
+    Exercise IV.4.9; the extraction carried it only as an image.
+- event: source-checked
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Hungerford IV.4.? cites Theorem 4.12; the statement now defines theta_A and f-bar on the card.
 ---
 
 ::: {.problem}
@@ -34,7 +39,7 @@ Show that for any homomorphism $f: A \to B$ of left $R$-modules the following di
 	\arrow["{\theta_B}"', from=2-1, to=2-2]
 \end{tikzcd}
 
-where $\theta_A, \theta_B$ are as in Theorem 4.12 and $f^*$ is the map induced on $A^{**} \coloneqq \mathrm{Hom}_R(\mathrm{Hom}(A, R), R)$ by the map $$\overline f: \mathrm{Hom}(B, R) \to \mathrm{Hom}_R(A, R).$$
+where $A^{**} \coloneqq \mathrm{Hom}_R(\mathrm{Hom}_R(A, R), R)$, the map $\theta_A\colon A\to A^{**}$ is the canonical map $\theta_A(a)(g)=g(a)$ (and likewise $\theta_B$), and $f^*$ is the map induced on $A^{**}$ by the map $$\overline f: \mathrm{Hom}_R(B, R) \to \mathrm{Hom}_R(A, R),\qquad \overline f(g)=g\circ f.$$
 :::
 
 ::: {.solution}
