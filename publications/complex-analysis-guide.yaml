@@ -8,7 +8,8 @@ lede: >-
   functions, Cauchy's theorem and integral formula, zeros and isolated singularities, the
   argument principle, residues and contour integration, conformal maps of the disc, normal
   families and the Riemann mapping theorem, and infinite products and special functions.
-  The last section groups qualifying-exam problems by type.
+  The last section links qualifying-exam problems on entire functions, series, sequences of
+  holomorphic functions and counterexamples.
 sections:
   - slug: complex-arithmetic-and-elementary-functions
     title: Complex arithmetic and the elementary functions
@@ -42,7 +43,7 @@ sections:
       - ref: P-Y5SS5
   - slug: series-and-convergence
     title: Series and convergence
-    parent: complex-arithmetic-and-elementary-functions
+    parent: GUIDE-COMPLEX-ANALYSIS
     lede: >-
       A power series $\sum_na_nz^n$ has radius of convergence $R$ given by
       $1/R=\limsup_n\abs{a_n}^{1/n}$ (Cauchy--Hadamard); it converges absolutely for
@@ -74,7 +75,7 @@ sections:
       - ref: FE-EUOB2
   - slug: holomorphy-and-analyticity
     title: Holomorphy and analyticity
-    parent: series-and-convergence
+    parent: GUIDE-COMPLEX-ANALYSIS
     lede: >-
       A function $f=u+iv$ on an open set $\Omega\subseteq\CC$ is holomorphic if
       $f'(z)=\lim_{h\to0}\frac{f(z+h)-f(z)}{h}$ exists at every $z\in\Omega$. Taking the limit
@@ -101,7 +102,7 @@ sections:
       - ref: PR-QNDSD
   - slug: harmonic-functions
     title: Harmonic functions
-    parent: holomorphy-and-analyticity
+    parent: GUIDE-COMPLEX-ANALYSIS
     lede: >-
       A twice continuously differentiable $u\colon\Omega\to\RR$ is harmonic if $\Delta
       u=u_{xx}+u_{yy}=0$. The real part of a holomorphic function is harmonic. On a simply
@@ -168,7 +169,7 @@ sections:
       - ref: T-LHSMY
   - slug: zeros-and-singularities
     title: Zeros and singularities
-    parent: cauchy-theory
+    parent: GUIDE-COMPLEX-ANALYSIS
     lede: >-
       If $f$ is holomorphic on a domain and not identically zero, each zero $a$ of $f$ has a
       finite order $m\ge1$, and $f(z)=(z-a)^mg(z)$ with $g$ holomorphic and $g(a)\ne0$; hence
@@ -203,7 +204,7 @@ sections:
       - ref: D-7DFVJ
   - slug: argument-principle
     title: The argument principle
-    parent: zeros-and-singularities
+    parent: GUIDE-COMPLEX-ANALYSIS
     lede: >-
       Let $\gamma$ be a positively oriented simple closed piecewise smooth curve, and let $f$
       be meromorphic on an open set containing $\gamma$ and its interior, with no zeros or
@@ -235,7 +236,7 @@ sections:
       - ref: T-YLI6Y
   - slug: residues
     title: Residues and contour integration
-    parent: argument-principle
+    parent: GUIDE-COMPLEX-ANALYSIS
     lede: >-
       Residue theorem: if $f$ is holomorphic on an open set $\Omega$ except at isolated
       singularities $a_1,\ldots,a_k$, and $\gamma$ is a closed curve in
@@ -300,7 +301,7 @@ sections:
       - ref: T-W26VL
   - slug: normal-families-and-omitted-values
     title: Normal families and omitted values
-    parent: conformal-maps-and-the-disc
+    parent: GUIDE-COMPLEX-ANALYSIS
     lede: >-
       A family $\mathcal F$ of holomorphic functions on $\Omega$ is normal if every sequence
       in $\mathcal F$ has a subsequence converging uniformly on compact subsets of $\Omega$.
@@ -343,7 +344,7 @@ sections:
       - ref: T-DDOWW
   - slug: special-functions-and-factorization
     title: Special functions and factorization
-    parent: normal-families-and-omitted-values
+    parent: GUIDE-COMPLEX-ANALYSIS
     lede: >-
       A nonvanishing holomorphic function on a simply connected domain is $e^g$ for a
       holomorphic $g$. Weierstrass factorization theorem: with $E_0(u)=1-u$ and
@@ -381,9 +382,9 @@ sections:
     title: Problems from the qualifying exams
     parent: GUIDE-COMPLEX-ANALYSIS
     lede: >-
-      Qualifying-exam problems from every part of the syllabus, grouped by type: growth bounds
-      that force an entire function to be a polynomial, series and product expansions, limits
-      of sequences of holomorphic functions, and counterexamples.
+      Qualifying-exam problems on growth bounds that force an entire function to be a
+      polynomial, power and Laurent series, limits of sequences of holomorphic functions, and
+      counterexamples. The problem browser lists them by these topics.
     topics:
       - Entire Functions
       - Liouville's Theorem
