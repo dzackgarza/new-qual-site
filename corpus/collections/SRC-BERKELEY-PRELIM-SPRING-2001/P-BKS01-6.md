@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS01-6
 kind: problem
 title: Eigenvalue one for special orthogonal matrices in odd and even dimensions
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:
@@ -23,8 +23,9 @@ audit:
 ::: {.problem}
 Let $S$ be a real special orthogonal $n\times n$ matrix: $S^TS=I$ and $\det S=1$.
 
-1. Prove that if $n$ is odd, then $1$ is an eigenvalue of $S$.
-2. Show that if $n$ is even, then $1$ need not be an eigenvalue.
+(a) Prove that if $n$ is odd, then $1$ is an eigenvalue of $S$.
+
+(b) Show that if $n$ is even, then $1$ need not be an eigenvalue.
 :::
 
 ::: {.solution}
@@ -147,7 +148,7 @@ eigenvalue is $-1$, so $1$ is not an eigenvalue.
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} proves part 1, and step [](#s4){.pf-ref} proves part 2.
+Step [](#s3){.pf-ref} proves part (a), and step [](#s4){.pf-ref} proves part (b).
 
 :::
 

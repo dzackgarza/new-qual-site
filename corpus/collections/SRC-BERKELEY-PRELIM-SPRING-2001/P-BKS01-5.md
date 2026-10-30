@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS01-5
 kind: problem
 title: Two reals generating a closed subgroup of $\RR$ are linearly dependent over $\QQ$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS01-1
 kind: problem
 title: Number of endomorphisms of $\FF_q^2$ fixing a nonzero vector
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

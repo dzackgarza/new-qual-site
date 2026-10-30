@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS01-3
 kind: problem
 title: Local rings with trivial unit group
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS01-9
 kind: problem
 title: Entire scalar and matrix functions with positive Hermitian part are constant
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:
@@ -23,12 +23,13 @@ audit:
 ---
 
 ::: {.problem}
-1. Prove that an entire function with positive real part is constant.
-2. Prove the analogous result for $2\times2$ matrix functions: if
-   $$
-   F(z)=(f_{jk}(z))
-   $$
-   has entire entries and $F(z)+F(z)^*$ is positive definite for every $z\in\CC$, prove that $F$ is constant.
+(a) Prove that an entire function with positive real part is constant.
+
+(b) Prove the analogous result for $2\times2$ matrix functions: if
+$$
+F(z)=(f_{jk}(z))
+$$
+has entire entries and $F(z)+F(z)^*$ is positive definite for every $z\in\CC$, prove that $F$ is constant. (Here, $F(z)^*$ is the conjugate transpose of $F(z)$.)
 :::
 
 ::: {.solution}
@@ -204,7 +205,7 @@ for all $z$.
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves part 1, and step [](#s6){.pf-ref} proves part 2.
+Step [](#s1){.pf-ref} proves part (a), and step [](#s6){.pf-ref} proves part (b).
 
 :::
 

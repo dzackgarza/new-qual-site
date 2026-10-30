@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS01-7
 kind: problem
 title: Maps $[0,1]\to[0,1]$ that are $1$-Lipschitz at scales $\ge1/n$ have a uniformly convergent subsequence
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS01-8
 kind: problem
 title: The squares in $A_4$ do not form a subgroup
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

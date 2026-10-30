@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS01-4
 kind: problem
 title: Integral of $1/(1+x^5)$ over $(0,\infty)$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

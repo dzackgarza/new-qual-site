@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS01-2
 kind: problem
 title: A continuous period-one function agrees with every translate somewhere
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:
