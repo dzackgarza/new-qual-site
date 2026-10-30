@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-RKY5I5U7
 kind: problem
-title: Octagon pasting homeomorphic to $\RR^2/\ZZ^2$
+title: Hexagon with opposite sides glued by translations is a torus
 classification:
   areas:
   - topology
@@ -15,61 +15,41 @@ review: draft
 ---
 
 ::: {.problem}
-Show that octagon pasting is homeomorphic to the $T = \RR^2 / \ZZ^2$.
+Define the torus $T$ as the quotient of $\RR^2$ by the action of the integral translation group $\ZZ^2$.
+Show that the space $X$, a solid hexagon whose sides are glued in pairs according to the labelled arrows of the source figure (each side glued to the opposite side, with the arrows pointing the same way), is homeomorphic to $T$. A clear description of the homeomorphism is enough.
 :::
 
 ::: {.solution}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #lattice}
 
-The retained statement is under-specified: no octagon edge-pairing is given.
-
-::: pf-proof
-
-The original archived `Justin's Problems.pdf` contains exactly the sentence in this card and no accompanying octagon diagram; the legacy rendered solutions page likewise has an empty solution entry and no image reference. An octagon by itself does not determine a quotient space: the equivalence relation on its boundary is essential data.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Different edge-pairings of an octagon give non-homeomorphic spaces, so the missing data cannot be reconstructed from the word “octagon”.
+Let $H\subset\RR^2$ be a regular hexagon with centre $0$ and inradius $r$, and let $u_1,u_2,u_3$ be the translations that carry the sides labelled $a$, $b$, $c$ onto their opposite sides. With suitable signs, $u_3=u_2-u_1$. The lattice $\Lambda=\ZZ u_1+\ZZ u_2$ contains all three, and the translates $H+\lambda$, $\lambda\in\Lambda$, tile $\RR^2$ with disjoint interiors.
 
 ::: pf-proof
 
-For example, pairing the four pairs of opposite sides of a regular octagon by translations gives the standard closed orientable surface of genus $2$, whose first homology is $\ZZ^4$, so it is not a torus. On the other hand, subdivide each side of the standard square fundamental polygon for the torus into two segments; after a small deformation the resulting fundamental polygon is an octagon, and the induced pairings give a torus. Thus at least two inequivalent “octagon pastings” exist.
+Each $u_i$ is twice the vector from $0$ to the midpoint of a side, so the three vectors are $2r e^{i\theta}$ for $\theta=\pi/6,\pi/2,5\pi/6$, and $2re^{5\pi i/6}=2re^{\pi i/2}-2re^{\pi i/6}$. The tiling of the plane by regular hexagons has its centres at exactly this lattice.
 
 :::
 
 :::
 
-::: {.pf-step #s3}
+::: {.pf-step #quot}
 
-For the intended torus-type octagon pasting—namely, any octagon obtained by subdividing/deforming the square fundamental polygon while retaining the top-bottom and left-right translation identifications—the quotient is homeomorphic to
-$$\boxed{\RR^2/\ZZ^2.}$$
+The composite $q:H\hookrightarrow\RR^2\to\RR^2/\Lambda$ induces a homeomorphism $X\to\RR^2/\Lambda$.
 
 ::: pf-proof
 
-Let $Q=[0,1]^2$ with $(0,y)\sim(1,y)$ and $(x,0)\sim(x,1)$. Subdividing boundary edges and applying a homeomorphism from $Q$ onto an octagonal disc does not change the quotient relation: conjugating the square identifications by that homeomorphism gives the octagon pasting. Therefore the octagon quotient is homeomorphic to
-$$Q/\sim\;\cong\RR^2/\ZZ^2,$$
-the latter homeomorphism being induced by $(x,y)\mapsto[(x,y)]$ modulo integer translations.
+By Step [](#lattice){.pf-ref}, $H$ is a fundamental domain for $\Lambda$, so $q$ is surjective and injective on the interior of $H$. Two distinct boundary points have the same image exactly when they differ by an element of $\Lambda$; for points of $H$ these are the side pairings $\pm u_i$, together with their composites at the vertices, which fall into two classes of three. These are the identifications that define $X$, so $q$ induces a continuous bijection $X\to\RR^2/\Lambda$. Since $X$ is compact and $\RR^2/\Lambda$ is Hausdorff, it is a homeomorphism.
 
 :::
 
 :::
 
-::: pf-step
+::: pf-qed
 
-Hence a rigorous proof of the unconditional printed sentence is impossible until the missing edge-pairing diagram or equivalent boundary-identification data is restored.
-
-::: pf-proof
-
-By step [](#s2){.pf-ref}, the conclusion depends on that omitted datum. Step [](#s3){.pf-ref} proves the result once the intended torus-type pairing is specified.
-
-:::
+The linear map $A:\RR^2\to\RR^2$ with $Au_1=e_1$ and $Au_2=e_2$ carries $\Lambda$ onto $\ZZ^2$, so it induces a homeomorphism $\RR^2/\Lambda\to\RR^2/\ZZ^2=T$. With Step [](#quot){.pf-ref}, the homeomorphism $X\to T$ sends a point $p$ of the hexagon to the class of $Ap$.
 
 :::
 

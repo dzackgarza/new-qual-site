@@ -50,7 +50,7 @@ The square model of the Klein bottle has fundamental group $G_1$.
 
 ::: pf-proof
 
-Its CW structure has one vertex, two oriented $1$-cells $a,b$, and one $2$-cell attached by the Klein-bottle word $aba^{-1}b$ (equivalently, after replacing a generator by its inverse, $bab^{-1}a$). Seifert--van Kampen therefore gives the presentation $bab^{-1}=a^{-1}$.
+Its CW structure has one vertex, two oriented $1$-cells $a,b$, and one $2$-cell attached by the Klein-bottle word $aba^{-1}b$ (equivalently, after interchanging the names $a$ and $b$, $bab^{-1}a$). Seifert--van Kampen therefore gives the presentation $bab^{-1}=a^{-1}$.
 
 :::
 
