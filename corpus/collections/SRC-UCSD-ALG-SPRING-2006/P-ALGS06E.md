@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS06E
 kind: problem
-title: "Localization of Z[X]/(f) at non-zero divisors is a direct sum of fields"
+title: "Total ring of fractions of $\\ZZ[X]/(f)$ is a direct sum of fields"
 classification:
   areas:
   - algebra

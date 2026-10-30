@@ -6,6 +6,7 @@ title: Non-abelian group of order $p^3$ from $(\ZZ/p^2\ZZ)^\times$
 classification:
   areas:
   - applied-algebra
+  - algebra
   topics:
   - Group Theory
 relations: []

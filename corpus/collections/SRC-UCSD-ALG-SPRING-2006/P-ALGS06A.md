@@ -6,6 +6,7 @@ title: "Left and right eigenvectors of a matrix for distinct eigenvalues"
 classification:
   areas:
   - algebra
+  - applied-algebra
   topics:
   - Linear Algebra
 relations: []

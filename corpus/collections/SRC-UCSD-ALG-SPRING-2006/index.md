@@ -19,7 +19,7 @@ source:
   problems:
   - P-ALGS06A
   - P-ALGS06B
-  - P-ALGS06C
+  - P-APAS06C
   - P-ALGS06D
   - P-ALGS06E
   - P-ALGS06F

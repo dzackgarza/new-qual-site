@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS06G
 kind: problem
-title: "Irreducibles and non-UFD structure in Z[sqrt(-n)] for squarefree n > 3"
+title: "Irreducibles and failure of unique factorization in $\\ZZ[\\sqrt{-n}]$ for squarefree $n > 3$"
 classification:
   areas:
   - algebra

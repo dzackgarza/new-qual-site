@@ -17,10 +17,10 @@ source:
   institution: ucsd
   area: applied-algebra
   problems:
-  - P-APAS06A
-  - P-APAS06B
+  - P-ALGS06A
+  - P-ALGS06B
   - P-APAS06C
-  - P-APAS06D
+  - P-ALGS06D
   date:
     kind: academic-term
     term: spring

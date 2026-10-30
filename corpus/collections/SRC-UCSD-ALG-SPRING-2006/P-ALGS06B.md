@@ -6,6 +6,7 @@ title: "Existence and uniqueness of polar decomposition"
 classification:
   areas:
   - algebra
+  - applied-algebra
   topics:
   - Linear Algebra
 relations: []

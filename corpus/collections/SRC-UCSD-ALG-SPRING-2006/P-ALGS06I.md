@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS06I
 kind: problem
-title: "Algebraic degree and Galois group of sin(2π/p) over Q"
+title: "Degree and Galois group of $\\sin(2\\pi/p)$ over $\\QQ$"
 classification:
   areas:
   - algebra

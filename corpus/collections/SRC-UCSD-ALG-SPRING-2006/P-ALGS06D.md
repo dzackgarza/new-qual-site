@@ -6,6 +6,7 @@ title: "Simple groups with subgroups of bounded index"
 classification:
   areas:
   - algebra
+  - applied-algebra
   topics:
   - Group Theory
 relations: []
