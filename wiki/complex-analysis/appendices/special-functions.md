@@ -89,6 +89,8 @@ The continuation extends $\zeta$ meromorphically to $\CC$, and the functional eq
 Recall that for a lattice $\Lambda=\omega_1\ZZ+\omega_2\ZZ$ with $\omega_1/\omega_2\notin\RR$, an [[D-CRVWEIER|elliptic function]] is a meromorphic function $f$ on $\CC$ with $f(z+\omega)=f(z)$ for every $\omega\in\Lambda$.
 The Weierstrass $\wp$-function is elliptic, with a double pole at each lattice point and no other poles.
 
+[[E-4NGIV]]
+
 [[E-WXHMJ]]
 
 ## Infinite series and products
