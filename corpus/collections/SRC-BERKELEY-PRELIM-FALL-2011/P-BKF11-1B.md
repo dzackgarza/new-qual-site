@@ -5,7 +5,8 @@ kind: problem
 title: Convergence of $\sum n^a(\log n)^b$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:
