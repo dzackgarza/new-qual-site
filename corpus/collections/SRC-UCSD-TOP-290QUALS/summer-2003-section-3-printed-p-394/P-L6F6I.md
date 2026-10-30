@@ -23,7 +23,8 @@ audit:
 ---
 
 ::: {.problem}
-For each ordered pair of distinct spaces among $S^2$, $T^2$, and the Klein bottle $K$, determine whether a covering map from the first space to the second can exist.
+Let $S$, $T$ and $K$ denote the 2-sphere $S^2$, the 2-torus $S^1 \times S^1$, and the Klein bottle, respectively.
+For each of the six possibilities $S \to T$, $T \to S$, etc., either describe a covering map having this form or explain why such a map cannot exist.
 :::
 
 ::: {.solution}

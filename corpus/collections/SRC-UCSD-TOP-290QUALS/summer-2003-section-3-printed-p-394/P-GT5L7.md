@@ -15,7 +15,8 @@ review: draft
 ---
 
 ::: {.problem}
-Show that $\ZZ^{\ast 2}$ has subgroups isomorphic to $\ZZ^{\ast n}$ for every $n$.
+Let $X = S^1 \vee S^1$ be the figure-of-eight space, and let $F_n$ denote the free group on $n$ generators.
+By considering covering spaces of $X$, show that $F_2$ contains subgroups isomorphic to $F_n$, for arbitrary $n \geq 3$.
 :::
 
 ::: {.solution}

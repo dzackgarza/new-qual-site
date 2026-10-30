@@ -71,7 +71,14 @@ source:
     - P-UCTOP-SU09-8
   - name: Fall 2009 (section 9; printed p. 400)
     problems:
-    - SRC-UCSD-TOP-FALL-2009
+    - P-TOPF09A
+    - P-TOPF09B
+    - P-TOPF09C
+    - P-TOPF09D
+    - P-TOPF09E
+    - P-TOPF09F
+    - P-TOPF09G
+    - P-TOPF09H
   - name: Fall 2010 (section 10; printed p. 401)
     problems:
     - SRC-UCSD-TOP-FALL-2010

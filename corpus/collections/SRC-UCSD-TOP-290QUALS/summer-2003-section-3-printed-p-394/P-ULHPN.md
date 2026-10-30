@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Compute $\Ext(\ZZ \oplus \ZZ/2 \oplus  \ZZ/3, \ZZ \oplus  \ZZ/4 \oplus  \ZZ/5)$.
+Compute $\Ext(\ZZ \oplus \ZZ_2 \oplus \ZZ_3, \ZZ \oplus \ZZ_4 \oplus \ZZ_5)$.
 :::
 
 ::: {.solution}

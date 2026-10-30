@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Construct a space having $H_*(X) = [\ZZ, 0, 0, 0, 0, \ZZ_4, 0, \cdots]$.
+Construct a space $X$ having $H_0(X;\ZZ) \cong \ZZ$ and $H_5(X;\ZZ) \cong \ZZ_4$, but having all other homology groups trivial.
 :::
 
 ::: {.solution}

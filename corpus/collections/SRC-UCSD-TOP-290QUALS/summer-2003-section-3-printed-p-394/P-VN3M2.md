@@ -16,7 +16,8 @@ review: draft
 ---
 
 ::: {.problem}
-Compute the homology and cohomology of a closed, connected, oriented 3-manifold $M$ with $\pi_1(M) = \ZZ^{\ast 2}$.
+Let $M^3$ be a closed connected oriented 3-manifold with fundamental group isomorphic to the free group on two generators.
+Compute the homology and cohomology groups $H_*(M;\ZZ)$ and $H^*(M;\ZZ)$.
 :::
 
 ::: {.solution}

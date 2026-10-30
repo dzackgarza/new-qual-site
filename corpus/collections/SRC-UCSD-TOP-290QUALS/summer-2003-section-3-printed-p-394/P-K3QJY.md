@@ -19,7 +19,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $S^3 \to E \to S^5$ be a fiber bundle and compute $H_3(E)$.
+Let $E \to S^5$ be a fibre bundle with fibres homeomorphic to $S^3$.
+Use the Hurewicz theorem to compute $H_3(E)$.
 :::
 
 ::: {.solution}

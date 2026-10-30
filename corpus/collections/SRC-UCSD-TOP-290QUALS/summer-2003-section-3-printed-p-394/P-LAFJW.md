@@ -15,103 +15,73 @@ review: draft
 ---
 
 ::: {.problem}
-Compute $H_*$ of the complement of a knotted solid torus in $S^3$.
+Let $N$ be a knotted solid torus in $S^3$, let $T$ be its boundary torus, and let $X$ be its exterior, that is the closure of $S^3 - N$.
+Use Mayer-Vietoris to compute the homology $H_*(X;\ZZ)$.
 :::
 
 ::: {.solution}
 
-\envlist
+::: pf
 
-::: {.concept}
-\envlist
+::: {.pf-step #mv}
 
-- $H_*(T^2) = [\ZZ, \ZZ^2, \ZZ, 0\rightarrow]$
+With $S^3 = N \cup X$ and $N \cap X = T$, the reduced Mayer-Vietoris sequence contains
+$$
+0 \to H_3(N)\oplus H_3(X) \to H_3(S^3) \xrightarrow{\partial} H_2(T) \to H_2(N)\oplus H_2(X) \to H_2(S^3) \to H_1(T) \to H_1(N)\oplus H_1(X) \to H_1(S^3).
+$$
 
-- $N^{(1)} \homotopic S^1$, so $H_{\geq 2}(N) = 0$.
+::: pf-proof
 
-- A SES $0\to A\to B \to F \to 0$ with $F$ free splits.
+$N$ and $X$ are compact 3-manifolds with common boundary $T$, so $T$ has collar neighborhoods on both sides, and Mayer-Vietoris applies to thickenings of $N$ and $X$ that deformation retract to them. The term $H_3(T)$ on the left is zero because $T$ is a surface.
 
-- $0\to A \to B \mapsvia{\cong} C \to D \to 0$ implies $A = D = 0$.
 :::
 
-Let $N$ be the knotted solid torus, so that $\del N = T^2$, and let $X = S^3 - N$.
-Then
-
-- $S^3 = N \union_{T^2} X$
-
-- $N \cap X = T^2$
-
-and we apply Mayer-Vietoris to the reduced homology of $S^3$:
-
-% https://q.uiver.app/?q=WzAsMTIsWzAsMCwiSF80KFReMikiXSxbMiwwLCJIXzQoTikgXFxvcGx1cyBIXzQoWCkiXSxbNCwwLCJIXzQoU14zKSJdLFswLDIsIkhfNChUXjIpIl0sWzAsNCwiSF80KFReMikiXSxbMiw0LCJIXzQoTikgXFxvcGx1cyBIXzQoWCkiXSxbMiwyLCJIXzQoTikgXFxvcGx1cyBIXzQoWCkiXSxbNCwyLCJIXzQoU14zKSJdLFs0LDQsIkhfNChTXjMpIl0sWzAsNiwiSF80KFNeMykiXSxbMiw2LCJIXzQoTikgXFxvcGx1cyBIXzQoWCkiXSxbNCw2LCJIXzQoU14zKSJdLFs0LDVdLFs4LDldLFs5LDEwXSxbMTAsMTFdLFs1LDhdLFszLDZdLFs2LDddLFs3LDRdLFsyLDNdLFswLDFdLFsxLDJdXQ==
-\begin{tikzcd}
-	{H_4(T^2)} && {H_4(N) \oplus H_4(X)} && {H_4(S^3)} \\
-	\\
-	{H_3(T^2)} && {H_3(N) \oplus H_3(X)} && {H_3(S^3)} \\
-	\\
-	{H_2(T^2)} && {H_2(N) \oplus H_2(X)} && {H_2(S^3)} \\
-	\\
-	{H_1(S^3)} && {H_1(N) \oplus H_1(X)} && {H_1(S^3)}
-	\arrow[from=5-1, to=5-3]
-	\arrow[from=5-3, to=5-5]
-	\arrow[from=5-5, to=7-1, out=360, in=180]
-	\arrow[from=7-1, to=7-3]
-	\arrow[from=7-3, to=7-5]
-	\arrow[from=3-1, to=3-3]
-	\arrow[from=3-3, to=3-5]
-	\arrow[from=3-5, to=5-1, out=360, in=180]
-	\arrow[from=5-3, to=5-5]
-	\arrow[from=1-5, to=3-1, out=360, in=180]
-	\arrow[from=1-1, to=1-3]
-	\arrow[from=1-3, to=1-5]
-\end{tikzcd}
-
-We can plug in known information and deduce some maps:
-
-% https://q.uiver.app/?q=WzAsMTIsWzAsMCwiMCJdLFs0LDAsIjAiXSxbMCwyLCIwIixbMjQwLDYwLDYwLDFdXSxbMCw0LCJcXFpaIixbMjQwLDYwLDYwLDFdXSxbMiw0LCJIXzIoWCkiLFsyNDAsNjAsNjAsMV1dLFsyLDIsIkhfMyhYKSIsWzI0MCw2MCw2MCwxXV0sWzQsMiwiXFxaWiIsWzI0MCw2MCw2MCwxXV0sWzQsNCwiMCIsWzI0MCw2MCw2MCwxXV0sWzAsNiwiXFxaWl57XFxvcGx1cyAyfSJdLFsyLDYsIlxcWlogXFxvcGx1cyBIXzEoWCkgIl0sWzQsNiwiMCJdLFsyLDAsIjAiXSxbMyw0LCIiLDAseyJjb2xvdXIiOlsyNDAsNjAsNjBdfV0sWzcsOF0sWzgsOSwiXFxzaW0iLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9LCJoZWFkIjp7Im5hbWUiOiJlcGkifX19XSxbOSwxMF0sWzQsNywiIiwwLHsiY29sb3VyIjpbMjQwLDYwLDYwXX1dLFsyLDUsIiIsMCx7ImNvbG91ciI6WzI0MCw2MCw2MF19XSxbNSw2LCIiLDAseyJjb2xvdXIiOlsyNDAsNjAsNjBdfV0sWzYsMywiIiwwLHsiY29sb3VyIjpbMjQwLDYwLDYwXX1dLFsxLDJdLFswLDExXSxbMTEsMV1d
-\begin{tikzcd}
-	0 && 0 && 0 \\
-	\\
-	\textcolor{rgb,255:red,92;green,92;blue,214}{0} && \textcolor{rgb,255:red,92;green,92;blue,214}{H_3(X)} && \textcolor{rgb,255:red,92;green,92;blue,214}{\ZZ} \\
-	\\
-	\textcolor{rgb,255:red,92;green,92;blue,214}{\ZZ} && \textcolor{rgb,255:red,92;green,92;blue,214}{H_2(X)} && \textcolor{rgb,255:red,92;green,92;blue,214}{0} \\
-	\\
-	{\ZZ^{\oplus 2}} && {\ZZ \oplus H_1(X) } && 0
-	\arrow[color={rgb,255:red,92;green,92;blue,214}, from=5-1, to=5-3]
-	\arrow[from=5-5, to=7-1, out=360, in=180]
-	\arrow["\sim", hook, two heads, from=7-1, to=7-3]
-	\arrow[from=7-3, to=7-5]
-	\arrow[color={rgb,255:red,92;green,92;blue,214}, from=5-3, to=5-5]
-	\arrow[color={rgb,255:red,92;green,92;blue,214}, from=3-1, to=3-3]
-	\arrow[color={rgb,255:red,92;green,92;blue,214}, from=3-3, to=3-5]
-	\arrow[color={rgb,255:red,92;green,92;blue,214}, from=3-5, to=5-1, out=360, in=180]
-	\arrow[from=1-5, to=3-1, out=360, in=180]
-	\arrow[from=1-1, to=1-3]
-	\arrow[from=1-3, to=1-5]
-\end{tikzcd}
-
-We then deduce:
-
-- $H_0(X) = \ZZ$ by the splitting of the line 0 SES
-  $$
-  0 \to \ZZ \to \ZZ \cross H_0(X) \to \ZZ \to 0
-  $$
-  yielding $\ZZ \cross H_0(X) \cong \ZZ \times \ZZ$.
-
-- $H_1(X) = \ZZ$ using the SES appearing on the first row:
-  $$
-  0 \to \ZZ^{ \oplus 2} \to \ZZ \oplus H_1(X) \to 0
-  $$
-  which is thus an isomorphism.
-
-- $H_2(X) = H_3(X) = 0$ by examining the SES spanning lines 3 and 2:
-  $$
-  0 \injects H_3(X) \injects \ZZ \mapsvia{\cong_{\del_3}} \ZZ \surjects H_2(X) \surjects 0
-  $$
-  Claim: $\bd_3$ must be an isomorphism.
-  If this is true, $H_3(X) \cong \ker \bd_3 = 0$ and $H_2(X) \cong \coker(\bd_3) \coloneqq \ZZ/\im(\bd_3) \cong \ZZ/\ZZ = 0$.
-
-::: {.remark}
-Why is this true?
 :::
+
+::: {.pf-step #known}
+
+$H_3(N)=H_2(N)=0$, $H_1(N)\cong\ZZ$, $H_2(T)\cong\ZZ$, $H_1(T)\cong\ZZ^2$, $H_3(S^3)\cong\ZZ$, $H_2(S^3)=H_1(S^3)=0$, and $H_3(X) = 0$.
+
+::: pf-proof
+
+$N \simeq S^1$ and $T = S^1\times S^1$. $X$ is a compact connected 3-manifold with nonempty boundary, so $H_3(X)=0$.
+
+:::
+
+:::
+
+::: {.pf-step #h2}
+
+$H_2(X) = 0$.
+
+::: pf-proof
+
+The connecting map $\partial\colon H_3(S^3)\to H_2(T)$ sends the fundamental class $[S^3]$ to $[T]$: a fundamental cycle of $S^3$ is the sum of fundamental cycles of $N$ and $X$, and $\partial$ takes it to the boundary of the $N$-part, which is the fundamental cycle of $T$. So $\partial$ is an isomorphism $\ZZ \to \ZZ$.
+By Step [](#mv){.pf-ref} and Step [](#known){.pf-ref} the sequence becomes $\ZZ \xrightarrow{\cong} \ZZ \to H_2(X) \to 0$, so $H_2(X)=0$.
+
+:::
+
+:::
+
+::: {.pf-step #h1}
+
+$H_1(X) \cong \ZZ$.
+
+::: pf-proof
+
+The remaining part of the sequence is $0 \to H_1(T) \to H_1(N)\oplus H_1(X)\to 0$, so $\ZZ^2 \cong \ZZ\oplus H_1(X)$.
+$H_1(X)$ is finitely generated because $X$ is a compact manifold, so $H_1(X)\cong\ZZ$ by the structure theorem.
+
+:::
+
+:::
+
+::: pf-qed
+
+$X$ is connected, so $H_*(X;\ZZ) = \ZZ, \ZZ, 0, 0, \ldots$ in degrees $0,1,2,3,\ldots$ by Steps [](#known){.pf-ref}, [](#h2){.pf-ref} and [](#h1){.pf-ref}.
+
+:::
+
+:::
+
 :::
