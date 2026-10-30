@@ -6,7 +6,9 @@ title: Area after scaling an ellipse
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Conic Sections
+  - Area
 relations: []
 review: draft
 audit:

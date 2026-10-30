@@ -5,7 +5,8 @@ kind: problem
 title: "Upper limits $a$ with $\\int_0^a(12x^2+8x+1)\\,dx=0$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integration
 relations: []
 review: draft
 audit:

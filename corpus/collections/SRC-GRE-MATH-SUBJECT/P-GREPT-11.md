@@ -5,7 +5,9 @@ kind: problem
 title: "A vector $\\mathbf a$ with $\\mathbf a\\cdot[(\\mathbf a+\\mathbf c)\\times\\mathbf b]=12$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Cross Product
+  - Triple Product
 relations: []
 review: draft
 audit:

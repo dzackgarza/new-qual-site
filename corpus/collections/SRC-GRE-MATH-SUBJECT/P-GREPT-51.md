@@ -5,7 +5,9 @@ kind: problem
 title: "Mean of a shifted exponential distribution"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Probability Distributions
+  - Expected Value
 relations: []
 review: draft
 audit:

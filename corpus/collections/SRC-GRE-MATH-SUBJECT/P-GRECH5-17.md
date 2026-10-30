@@ -6,7 +6,9 @@ title: Matrix of the cross-product operator
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Transformations
+  - Cross Product
 relations: []
 review: draft
 audit:

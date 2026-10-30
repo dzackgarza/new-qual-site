@@ -6,7 +6,8 @@ title: Green-theorem line integral around a triangle
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Green's Theorem
 relations: []
 review: draft
 audit:

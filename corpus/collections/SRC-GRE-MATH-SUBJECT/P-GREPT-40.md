@@ -5,7 +5,9 @@ kind: problem
 title: "Tangent line to $y=x^{(e^x)}$ at $(1,1)$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Tangent Lines
+  - Logarithmic Differentiation
 relations: []
 review: draft
 audit:

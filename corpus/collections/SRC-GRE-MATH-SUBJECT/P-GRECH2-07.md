@@ -5,7 +5,9 @@ kind: problem
 title: Limit of $x^{-2}\int_0^x (t+t^2)/(1+\sin t)\,dt$ at $0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Limits
+  - Fundamental Theorem of Calculus
 relations: []
 review: draft
 audit:

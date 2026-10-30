@@ -6,7 +6,9 @@ title: Area of a triangle in three-space
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Cross Product
+  - Area
 relations: []
 review: draft
 audit:

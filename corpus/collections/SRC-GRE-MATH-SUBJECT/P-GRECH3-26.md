@@ -6,7 +6,8 @@ title: Line integral along an astroid arc
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Line Integrals
 relations: []
 review: draft
 audit:

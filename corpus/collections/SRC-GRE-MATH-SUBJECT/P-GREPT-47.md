@@ -5,7 +5,9 @@ kind: problem
 title: "Area between $(\\sin x+\\cos x)^4$ and $(\\sin x-\\cos x)^4$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Area
+  - Trigonometric Integrals
 relations: []
 review: draft
 audit:

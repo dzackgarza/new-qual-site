@@ -6,7 +6,9 @@ title: Dimension of symmetric matrices
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Dimension
+  - Symmetric Matrices
 relations: []
 review: draft
 audit:

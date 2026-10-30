@@ -6,7 +6,9 @@ title: Formula for the inverse hyperbolic tangent
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Hyperbolic Functions
+  - Inverse Functions
 relations: []
 review: draft
 audit:

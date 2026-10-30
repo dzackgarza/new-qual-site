@@ -5,7 +5,8 @@ kind: problem
 title: Solutions of $\cos z=3$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Complex Trigonometric Functions
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Continuous extension of a rational function at a removable singularity
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Continuity
+  - Removable Singularities
 relations: []
 review: draft
 audit:

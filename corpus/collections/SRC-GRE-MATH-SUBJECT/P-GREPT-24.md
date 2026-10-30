@@ -5,7 +5,8 @@ kind: problem
 title: "Probability of a 5 then a 6 with a die weighted toward even faces"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Probability
 relations: []
 review: draft
 audit:

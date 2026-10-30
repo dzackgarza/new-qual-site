@@ -5,7 +5,9 @@ kind: problem
 title: Limit of $(\arcsin x-x)/x^3$ at $0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Limits
+  - Taylor Series
 relations: []
 review: draft
 audit:

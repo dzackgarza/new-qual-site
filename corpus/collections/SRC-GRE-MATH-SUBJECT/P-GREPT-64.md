@@ -5,7 +5,8 @@ kind: problem
 title: "Sum of determinants of the matrices with entries $i+j$"
 classification:
   areas: [applied-algebra]
-  topics: []
+  topics:
+  - Determinants
 relations: []
 review: draft
 audit:

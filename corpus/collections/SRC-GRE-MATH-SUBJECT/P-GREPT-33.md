@@ -5,7 +5,9 @@ kind: problem
 title: "Critical points of $\\int_{x^2}^{x^3}\\log t\\,dt$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Fundamental Theorem of Calculus
+  - Critical Points
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: "Second eigenvalue of a $2\\times2$ matrix with eigenvalue $1$"
 classification:
   areas: [applied-algebra]
-  topics: []
+  topics:
+  - Eigenvalues
 relations: []
 review: draft
 audit:

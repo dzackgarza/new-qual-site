@@ -6,7 +6,8 @@ title: Eigenvalue consequences for inverse and square
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Eigenvalues
 relations: []
 review: draft
 audit:

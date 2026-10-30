@@ -5,7 +5,9 @@ kind: problem
 title: Convergence of three infinite series
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Series
+  - Convergence Tests
 relations: []
 review: draft
 audit:

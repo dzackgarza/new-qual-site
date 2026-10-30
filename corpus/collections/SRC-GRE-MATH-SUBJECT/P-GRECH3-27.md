@@ -6,7 +6,9 @@ title: Volume under a surface in the first octant
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Double Integrals
+  - Volume
 relations: []
 review: draft
 audit:

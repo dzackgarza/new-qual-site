@@ -6,7 +6,8 @@ title: Digit sum of an LCM
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Least Common Multiple
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Riemann-sum limit of $\sum_{k=1}^n (k/n^2-k^2/n^3)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Riemann Sums
+  - Limits
 relations: []
 review: draft
 audit:

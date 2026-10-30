@@ -6,7 +6,9 @@ title: Homomorphisms from $\ZZ_3$ to $\ZZ_6$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Homomorphisms
+  - Cyclic Groups
 relations: []
 review: draft
 audit:

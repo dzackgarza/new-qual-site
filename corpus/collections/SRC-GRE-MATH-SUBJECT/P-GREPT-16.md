@@ -5,7 +5,9 @@ kind: problem
 title: "$(\\partial\\theta/\\partial r)_x$ in polar coordinates"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Polar Coordinates
+  - Partial Derivatives
 relations: []
 review: draft
 audit:

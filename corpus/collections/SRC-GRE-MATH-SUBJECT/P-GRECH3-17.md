@@ -6,7 +6,9 @@ title: Implicit partial derivative of a surface
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Implicit Differentiation
+  - Partial Derivatives
 relations: []
 review: draft
 audit:

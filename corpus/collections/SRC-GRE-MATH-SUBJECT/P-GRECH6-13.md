@@ -6,7 +6,8 @@ title: Simplify an inverse in a presented group
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Presentations
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Domain of $\log(\sin x)$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Trigonometric Functions
+  - Exponential and Logarithmic Functions
 relations: []
 review: draft
 audit:

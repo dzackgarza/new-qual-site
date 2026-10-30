@@ -6,7 +6,9 @@ title: Maximum directional derivative from two directional derivatives
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Directional Derivatives
+  - Gradient
 relations: []
 review: draft
 audit:

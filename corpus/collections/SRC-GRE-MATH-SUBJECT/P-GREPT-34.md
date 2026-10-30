@@ -5,7 +5,9 @@ kind: problem
 title: "Sign and size of $f^{(4)}(0)$ for a power series"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Power Series
+  - Taylor Series
 relations: []
 review: draft
 audit:

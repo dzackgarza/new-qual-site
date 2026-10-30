@@ -5,7 +5,8 @@ kind: problem
 title: "Volume of revolution of one arch of $y=\\sin x$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Volumes of Revolution
 relations: []
 review: draft
 audit:

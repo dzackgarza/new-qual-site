@@ -6,7 +6,9 @@ title: Number of subgroups of $\ZZ_3\oplus\ZZ_{16}$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Subgroups
+  - Cyclic Groups
 relations: []
 review: draft
 audit:

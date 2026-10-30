@@ -6,7 +6,8 @@ title: Recovering a matrix parameter from eigenvalues
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Eigenvalues
 relations: []
 review: draft
 audit:

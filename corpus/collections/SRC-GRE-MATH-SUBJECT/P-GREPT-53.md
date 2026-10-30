@@ -5,7 +5,8 @@ kind: problem
 title: "Image of a point under a linear map of the plane given on two points"
 classification:
   areas: [applied-algebra]
-  topics: []
+  topics:
+  - Linear Transformations
 relations: []
 review: draft
 audit:

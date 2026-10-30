@@ -6,7 +6,9 @@ title: Integer solution of $42x+55y=1$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Diophantine Equations
+  - Euclidean Algorithm
 relations: []
 review: draft
 audit:

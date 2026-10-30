@@ -6,7 +6,9 @@ title: Level curves of a cylindrical-coordinate surface
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Level Curves
+  - Cylindrical Coordinates
 relations: []
 review: draft
 audit:

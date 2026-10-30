@@ -6,7 +6,9 @@ title: Composition of a quarter-turn and reflection
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Transformations
+  - Rotations and Reflections
 relations: []
 review: draft
 audit:

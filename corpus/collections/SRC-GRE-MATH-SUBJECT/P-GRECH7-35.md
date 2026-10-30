@@ -5,7 +5,8 @@ kind: problem
 title: Splitting twelve employees into four committees of three
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Counting
 relations: []
 review: draft
 audit:

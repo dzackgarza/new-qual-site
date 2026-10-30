@@ -5,7 +5,9 @@ kind: problem
 title: Limit of $(\cos n\pi)(\sin^2 n)/\sqrt[e]{n}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Sequences
+  - Limits
 relations: []
 review: draft
 audit:

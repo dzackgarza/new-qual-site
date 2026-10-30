@@ -5,7 +5,9 @@ kind: problem
 title: "Closed sets, compactness and separation in the cofinite topology on $\\RR$"
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Cofinite Topology
+  - Compactness
 relations: []
 review: draft
 audit:

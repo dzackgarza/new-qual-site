@@ -6,7 +6,8 @@ title: Slope on a planar slice of a surface
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Partial Derivatives
 relations: []
 review: draft
 audit:

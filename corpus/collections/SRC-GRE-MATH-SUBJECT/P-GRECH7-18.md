@@ -5,7 +5,8 @@ kind: problem
 title: Contrapositive of $A\vee B\to\neg C\vee D$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Logic
 relations: []
 review: draft
 audit:

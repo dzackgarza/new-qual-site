@@ -6,7 +6,9 @@ title: Integral curve through a specified point
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Separable Equations
+  - Integral Curves
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Solutions of $x^{12}-x^{10}=2$ in $\ZZ_{11}$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Finite Fields
+  - Fermat's Little Theorem
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Polynomial forced constant by five equal values
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Polynomials
 relations: []
 review: draft
 audit:

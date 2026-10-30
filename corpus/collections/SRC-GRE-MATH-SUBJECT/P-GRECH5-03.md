@@ -6,7 +6,8 @@ title: Three assertions about real $2\times2$ matrices
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Matrices
 relations: []
 review: draft
 audit:

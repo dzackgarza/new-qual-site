@@ -5,7 +5,8 @@ kind: problem
 title: Pigeonhole statements for $61$ flowers on four tables
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Pigeonhole Principle
 relations: []
 review: draft
 audit:

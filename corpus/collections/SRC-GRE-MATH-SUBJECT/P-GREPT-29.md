@@ -5,7 +5,8 @@ kind: problem
 title: "Evaluate $\\int_0^1 x\\log x\\,dx$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integration by Parts
 relations: []
 review: draft
 audit:

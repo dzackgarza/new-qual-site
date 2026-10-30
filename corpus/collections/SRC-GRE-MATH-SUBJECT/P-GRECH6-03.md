@@ -6,7 +6,8 @@ title: Two smallest solutions of a congruence
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Congruences
 relations: []
 review: draft
 audit:

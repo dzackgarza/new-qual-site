@@ -5,7 +5,9 @@ kind: problem
 title: "Cardinality of $A\\cup\\mathcal P(A)$ for $A=\\{\\varnothing,a\\}$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Set Theory
+  - Power Sets
 relations: []
 review: draft
 audit:

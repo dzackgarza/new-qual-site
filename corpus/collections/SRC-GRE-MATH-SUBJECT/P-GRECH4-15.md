@@ -6,7 +6,8 @@ title: A solution of a first-order PDE
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Partial Differential Equations
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: First integer outside the convergence set of $\sum n!(2n)!x^n/(3n)!$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Power Series
+  - Radius of Convergence
 relations: []
 review: draft
 audit:

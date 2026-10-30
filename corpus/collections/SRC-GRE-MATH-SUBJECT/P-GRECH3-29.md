@@ -6,7 +6,9 @@ title: Evaluate a double integral over a circular region
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Double Integrals
+  - Polar Coordinates
 relations: []
 review: draft
 audit:

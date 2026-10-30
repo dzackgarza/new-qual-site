@@ -6,7 +6,8 @@ title: Determinant after column operations
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Determinants
 relations: []
 review: draft
 audit:

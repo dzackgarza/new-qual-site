@@ -5,7 +5,9 @@ kind: problem
 title: Evaluate $\exp\int_3^5 dx/(x^2-3x+2)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Partial Fractions
+  - Integration
 relations: []
 review: draft
 audit:

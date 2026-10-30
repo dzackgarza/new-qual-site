@@ -5,7 +5,9 @@ kind: problem
 title: Positive $a$ equating two integrals against $1/\sqrt{a^2-x^2}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integration
+  - Trigonometric Substitution
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Subgroups of $\GL(2,\RR)$ defined by determinant, triangularity, and trac
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Subgroups
+  - Matrix Groups
 relations: []
 review: draft
 audit:

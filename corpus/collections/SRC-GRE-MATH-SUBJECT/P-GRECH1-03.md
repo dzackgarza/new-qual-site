@@ -6,7 +6,8 @@ title: Solve an equation with absolute values
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Absolute Value Equations
 relations: []
 review: draft
 audit:

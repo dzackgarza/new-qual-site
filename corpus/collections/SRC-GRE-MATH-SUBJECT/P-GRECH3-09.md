@@ -6,7 +6,8 @@ title: Surface of revolution about the $x$-axis
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Surfaces of Revolution
 relations: []
 review: draft
 audit:

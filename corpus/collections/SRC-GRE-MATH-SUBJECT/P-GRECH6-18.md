@@ -6,7 +6,9 @@ title: Which ring has a different number of units
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Units
+  - Rings
 relations: []
 review: draft
 audit:

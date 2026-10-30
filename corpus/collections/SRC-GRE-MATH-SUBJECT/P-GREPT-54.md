@@ -5,7 +5,9 @@ kind: problem
 title: "Contour integral of $\\cos z-z\\cos(1/z)$ over $\\abs{z}=\\pi$"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residue Theorem
+  - Contour Integrals
 relations: []
 review: draft
 audit:

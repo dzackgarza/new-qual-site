@@ -5,7 +5,8 @@ kind: problem
 title: Counting safe combinations with arithmetic constraints
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Counting
 relations: []
 review: draft
 audit:

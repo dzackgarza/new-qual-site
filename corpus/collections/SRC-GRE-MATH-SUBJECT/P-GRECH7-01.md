@@ -5,7 +5,9 @@ kind: problem
 title: Interval containing a zero of $4x^3-4x^2-33x+45$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Intermediate Value Theorem
+  - Polynomials
 relations: []
 review: draft
 audit:

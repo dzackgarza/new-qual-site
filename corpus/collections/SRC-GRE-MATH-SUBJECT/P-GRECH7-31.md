@@ -5,7 +5,8 @@ kind: problem
 title: Which subset of $\RR^3$ is compact
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Compactness
 relations: []
 review: draft
 audit:

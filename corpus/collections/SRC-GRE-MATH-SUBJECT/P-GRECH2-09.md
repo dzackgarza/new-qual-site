@@ -5,7 +5,9 @@ kind: problem
 title: Derivative of $\arcsin(\log\sqrt x)$ at $x=e$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Differentiation
+  - Chain Rule
 relations: []
 review: draft
 audit:

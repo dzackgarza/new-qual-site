@@ -5,7 +5,8 @@ kind: problem
 title: Ways to split six students into three teams for three tasks
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Counting
 relations: []
 review: draft
 audit:

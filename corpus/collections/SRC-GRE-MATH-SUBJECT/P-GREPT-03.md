@@ -5,7 +5,8 @@ kind: problem
 title: "Limit of $(\\sqrt{x+1}-1)/x$ at $0$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Limits
 relations: []
 review: draft
 audit:

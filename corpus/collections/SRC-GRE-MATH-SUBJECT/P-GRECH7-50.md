@@ -5,7 +5,8 @@ kind: problem
 title: Output sequence of the $3x+1$ algorithm from $17$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Algorithms
 relations: []
 review: draft
 audit:

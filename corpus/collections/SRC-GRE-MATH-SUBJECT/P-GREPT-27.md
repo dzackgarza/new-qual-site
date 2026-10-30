@@ -5,7 +5,9 @@ kind: problem
 title: "General solution of $y^{(4)}+2y'''+5y''=0$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear ODEs
+  - Constant Coefficients
 relations: []
 review: draft
 audit:

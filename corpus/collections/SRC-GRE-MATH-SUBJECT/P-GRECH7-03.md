@@ -5,7 +5,8 @@ kind: problem
 title: Number of lottery tickets needed to guarantee a jackpot
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Counting
 relations: []
 review: draft
 audit:

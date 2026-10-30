@@ -5,7 +5,9 @@ kind: problem
 title: Probability of watching all three shows from overlap percentages
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Probability
+  - Inclusion-Exclusion
 relations: []
 review: draft
 audit:

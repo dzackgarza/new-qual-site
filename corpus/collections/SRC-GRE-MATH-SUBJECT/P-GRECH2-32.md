@@ -5,7 +5,9 @@ kind: problem
 title: Polar area of the region bounded by two circles
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Polar Coordinates
+  - Area
 relations: []
 review: draft
 audit:

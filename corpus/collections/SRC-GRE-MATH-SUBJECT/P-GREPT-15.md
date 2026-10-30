@@ -5,7 +5,9 @@ kind: problem
 title: "Convergence of $1/\\log n$ and two series built from it"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Series
+  - Convergence Tests
 relations: []
 review: draft
 audit:

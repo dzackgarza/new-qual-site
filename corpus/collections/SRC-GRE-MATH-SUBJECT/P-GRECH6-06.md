@@ -6,7 +6,8 @@ title: Number of generators of $\ZZ_{24}$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Cyclic Groups
 relations: []
 review: draft
 audit:

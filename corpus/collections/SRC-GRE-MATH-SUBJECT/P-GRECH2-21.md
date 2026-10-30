@@ -5,7 +5,9 @@ kind: problem
 title: Local maximum of $\int_x^{2x}\sin t/t\,dt$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Fundamental Theorem of Calculus
+  - Optimization
 relations: []
 review: draft
 audit:

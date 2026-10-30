@@ -5,7 +5,9 @@ kind: problem
 title: "Number of real roots of $x^5+x^3+x-2000$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Polynomials
+  - Intermediate Value Theorem
 relations: []
 review: draft
 audit:

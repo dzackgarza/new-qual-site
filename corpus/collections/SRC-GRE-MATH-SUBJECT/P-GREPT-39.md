@@ -5,7 +5,9 @@ kind: problem
 title: "Domain of $1/g^{-1}(x)$ for $g=x^3+x^2+x+1$ and a value of its inverse"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Inverse Functions
+  - Domains
 relations: []
 review: draft
 audit:

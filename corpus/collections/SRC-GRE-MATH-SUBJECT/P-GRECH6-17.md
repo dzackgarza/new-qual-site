@@ -6,7 +6,8 @@ title: Which listed rings are integral domains
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Integral Domains
 relations: []
 review: draft
 audit:

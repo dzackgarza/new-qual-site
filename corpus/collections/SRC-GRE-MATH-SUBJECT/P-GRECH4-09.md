@@ -6,7 +6,9 @@ title: General solution of a third-order forced ODE
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Linear ODEs
+  - Undetermined Coefficients
 relations: []
 review: draft
 audit:

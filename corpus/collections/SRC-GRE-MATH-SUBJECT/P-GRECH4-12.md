@@ -6,7 +6,8 @@ title: General solution of a homogeneous first-order ODE
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Homogeneous Equations
 relations: []
 review: draft
 audit:

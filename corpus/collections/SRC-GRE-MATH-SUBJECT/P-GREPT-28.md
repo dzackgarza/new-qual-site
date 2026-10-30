@@ -5,7 +5,9 @@ kind: problem
 title: "Image of the linear map with matrix rows $(1,2,3),(4,5,6),(7,8,9)$"
 classification:
   areas: [applied-algebra]
-  topics: []
+  topics:
+  - Linear Transformations
+  - Image
 relations: []
 review: draft
 audit:

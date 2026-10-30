@@ -5,7 +5,8 @@ kind: problem
 title: Arc length of the astroid $x^{2/3}+y^{2/3}=1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Arc Length
 relations: []
 review: draft
 audit:

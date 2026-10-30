@@ -6,7 +6,9 @@ title: Minimum distance to a quadratic curve
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Multivariable Optimization
+  - Lagrange Multipliers
 relations: []
 review: draft
 audit:

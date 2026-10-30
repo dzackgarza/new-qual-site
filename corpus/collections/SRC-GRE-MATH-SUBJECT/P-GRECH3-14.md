@@ -6,7 +6,8 @@ title: Mixed partial derivative at the origin
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Mixed Partial Derivatives
 relations: []
 review: draft
 audit:

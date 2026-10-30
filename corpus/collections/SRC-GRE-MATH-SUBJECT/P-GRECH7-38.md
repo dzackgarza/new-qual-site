@@ -5,7 +5,8 @@ kind: problem
 title: Probability that one of two geometric-type variables exceeds $2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Probability
 relations: []
 review: draft
 audit:

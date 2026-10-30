@@ -5,7 +5,9 @@ kind: problem
 title: Limit of $(\cos x)^{\cot^2 x}$ at $0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Limits
+  - L'Hopital's Rule
 relations: []
 review: draft
 audit:

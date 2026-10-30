@@ -5,7 +5,9 @@ kind: problem
 title: "Sharp bound on $f(1)$ from bounds on the Taylor coefficients at $0$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Taylor Series
+  - Estimates
 relations: []
 review: draft
 audit:

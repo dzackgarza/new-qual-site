@@ -6,7 +6,8 @@ title: Direction of steepest temperature decrease
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Gradient
 relations: []
 review: draft
 audit:

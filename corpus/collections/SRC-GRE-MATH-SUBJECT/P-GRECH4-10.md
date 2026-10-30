@@ -6,7 +6,9 @@ title: Integrating factor of monomial form
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Integrating Factors
+  - Exact Equations
 relations: []
 review: draft
 audit:

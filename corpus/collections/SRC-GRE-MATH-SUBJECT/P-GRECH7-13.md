@@ -5,7 +5,9 @@ kind: problem
 title: Most edges removable from a graph keeping it connected
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Graph Theory
+  - Spanning Trees
 relations: []
 review: draft
 audit:

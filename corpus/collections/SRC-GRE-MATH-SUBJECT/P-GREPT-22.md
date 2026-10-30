@@ -5,7 +5,9 @@ kind: problem
 title: "Order of an element of $\\SL(2,\\ZZ)$"
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Matrix Groups
+  - Order of an Element
 relations: []
 review: draft
 audit:

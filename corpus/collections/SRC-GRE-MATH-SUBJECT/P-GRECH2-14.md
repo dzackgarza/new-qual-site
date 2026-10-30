@@ -5,7 +5,9 @@ kind: problem
 title: Derivative at $0$ of $2\abs{x-1}+(x-1)^2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Differentiation
+  - Absolute Value
 relations: []
 review: draft
 audit:

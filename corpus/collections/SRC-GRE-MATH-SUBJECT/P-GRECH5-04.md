@@ -6,7 +6,9 @@ title: Powers of two unipotent matrices
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Matrices
+  - Matrix Powers
 relations: []
 review: draft
 audit:

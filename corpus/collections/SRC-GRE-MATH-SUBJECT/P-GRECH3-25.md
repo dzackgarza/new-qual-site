@@ -6,7 +6,8 @@ title: Line integral along a parabola
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Line Integrals
 relations: []
 review: draft
 audit:

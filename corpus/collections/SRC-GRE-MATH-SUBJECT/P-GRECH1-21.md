@@ -6,7 +6,8 @@ title: Evaluate $\cos(-\sin x)$ given $\sin(\sin x)=1/2$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Trigonometric Functions
 relations: []
 review: draft
 audit:

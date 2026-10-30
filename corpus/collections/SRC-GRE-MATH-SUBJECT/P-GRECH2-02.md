@@ -5,7 +5,9 @@ kind: problem
 title: Limit of the recursion $x_n=\sqrt{5x_{n-1}+6}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Recursive Sequences
+  - Limits
 relations: []
 review: draft
 audit:

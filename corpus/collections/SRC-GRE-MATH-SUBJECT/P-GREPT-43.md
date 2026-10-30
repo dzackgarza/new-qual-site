@@ -5,7 +5,9 @@ kind: problem
 title: "Highest point of the lemniscate $r^2=4\\cos2\\theta$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Polar Coordinates
+  - Optimization
 relations: []
 review: draft
 audit:

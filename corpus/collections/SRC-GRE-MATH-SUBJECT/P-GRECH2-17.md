@@ -5,7 +5,9 @@ kind: problem
 title: Derivative of $f(x^3)/(xf(x^2))$ at $x=1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Differentiation
+  - Chain Rule
 relations: []
 review: draft
 audit:

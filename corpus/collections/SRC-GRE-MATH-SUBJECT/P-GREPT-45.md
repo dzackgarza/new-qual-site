@@ -5,7 +5,9 @@ kind: problem
 title: "Line integral of $e^x(\\sin y\\,dx+\\cos y\\,dy)$ along a parametrized curve"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Line Integrals
+  - Conservative Fields
 relations: []
 review: draft
 audit:

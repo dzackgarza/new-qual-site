@@ -5,7 +5,9 @@ kind: problem
 title: "Equation of the torus from revolving a circle about the $z$-axis"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Surfaces of Revolution
+  - Torus
 relations: []
 review: draft
 audit:

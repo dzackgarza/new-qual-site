@@ -5,7 +5,9 @@ kind: problem
 title: Harmonic conjugate of $x-3x^2y+y^3$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Harmonic Functions
+  - Harmonic Conjugates
 relations: []
 review: draft
 audit:

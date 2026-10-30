@@ -5,7 +5,9 @@ kind: problem
 title: "Critical point of $k^2/x+k/y+xy$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Critical Points
+  - Multivariable Optimization
 relations: []
 review: draft
 audit:

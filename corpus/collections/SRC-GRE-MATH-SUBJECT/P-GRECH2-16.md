@@ -5,7 +5,8 @@ kind: problem
 title: Linear approximation of the change in $1/\sqrt{x^3+1}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Approximation
 relations: []
 review: draft
 audit:

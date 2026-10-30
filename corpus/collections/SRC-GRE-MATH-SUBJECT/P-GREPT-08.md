@@ -5,7 +5,9 @@ kind: problem
 title: "Upper limits $b$ with $\\int_0^b\\tan x\\,dx=2$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integration
+  - Trigonometric Functions
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Two Newton steps approximating $\sqrt{40}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Newton's Method
 relations: []
 review: draft
 audit:

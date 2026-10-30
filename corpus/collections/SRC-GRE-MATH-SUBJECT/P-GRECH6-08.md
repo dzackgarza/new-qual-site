@@ -6,7 +6,9 @@ title: Subgroup orders forced in a group of order 12
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Lagrange's Theorem
+  - Sylow Theorems
 relations: []
 review: draft
 audit:

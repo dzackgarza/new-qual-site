@@ -6,7 +6,9 @@ title: Remainder of $p(x)$ modulo $x^2-1$ from its values at $\pm1$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Polynomials
+  - Polynomial Division
 relations: []
 review: draft
 audit:

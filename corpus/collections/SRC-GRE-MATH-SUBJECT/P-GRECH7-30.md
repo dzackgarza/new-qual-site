@@ -5,7 +5,9 @@ kind: problem
 title: Polar form of $(i-\sqrt3)^6$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Complex Numbers
+  - Polar Form
 relations: []
 review: draft
 audit:

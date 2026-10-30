@@ -5,7 +5,8 @@ kind: problem
 title: Relative complement of the odd integers in the primes
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Set Theory
 relations: []
 review: draft
 audit:

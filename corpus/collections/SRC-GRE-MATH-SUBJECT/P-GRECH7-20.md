@@ -5,7 +5,8 @@ kind: problem
 title: Principal logarithm of $-e^3$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Complex Logarithm
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: "Green's theorem for a line integral around a triangle"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Green's Theorem
 relations: []
 review: draft
 audit:

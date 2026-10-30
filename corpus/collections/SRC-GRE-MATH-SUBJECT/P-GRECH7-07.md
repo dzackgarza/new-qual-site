@@ -5,7 +5,8 @@ kind: problem
 title: Which standard set is not countably infinite
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Countability
 relations: []
 review: draft
 audit:

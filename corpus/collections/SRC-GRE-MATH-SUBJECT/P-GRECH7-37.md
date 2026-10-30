@@ -5,7 +5,8 @@ kind: problem
 title: Consequences of membership in $(A\cup B)\cap C$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Set Theory
 relations: []
 review: draft
 audit:

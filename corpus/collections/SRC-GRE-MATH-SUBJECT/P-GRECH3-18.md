@@ -6,7 +6,9 @@ title: Multivariable chain rule from tabulated derivatives
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Chain Rule
+  - Partial Derivatives
 relations: []
 review: draft
 audit:

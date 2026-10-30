@@ -5,7 +5,9 @@ kind: problem
 title: Integral of the greatest-integer function over $[0,7/2]$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integration
+  - Greatest Integer Function
 relations: []
 review: draft
 audit:

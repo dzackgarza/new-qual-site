@@ -5,7 +5,8 @@ kind: problem
 title: Locus of $\bar z^2=z^2$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Complex Numbers
 relations: []
 review: draft
 audit:

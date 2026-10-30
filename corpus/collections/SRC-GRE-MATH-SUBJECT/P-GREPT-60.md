@@ -5,7 +5,8 @@ kind: problem
 title: "Eigenvectors of $A$ shared by $2A$, $A^2$ and $A^{-1}$"
 classification:
   areas: [applied-algebra]
-  topics: []
+  topics:
+  - Eigenvectors
 relations: []
 review: draft
 audit:

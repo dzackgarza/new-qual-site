@@ -6,7 +6,8 @@ title: External division point on a line
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Lines and Planes
 relations: []
 review: draft
 audit:

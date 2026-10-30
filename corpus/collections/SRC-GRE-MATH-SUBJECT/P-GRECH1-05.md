@@ -6,7 +6,8 @@ title: Evaluate a composition using an inverse function
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Inverse Functions
 relations: []
 review: draft
 audit:

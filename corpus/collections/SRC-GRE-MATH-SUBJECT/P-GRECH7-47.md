@@ -5,7 +5,8 @@ kind: problem
 title: Set identities implied by $A\subseteq B$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Set Theory
 relations: []
 review: draft
 audit:

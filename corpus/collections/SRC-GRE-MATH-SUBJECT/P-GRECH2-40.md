@@ -5,7 +5,8 @@ kind: problem
 title: Convergence of three improper integrals
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Improper Integrals
 relations: []
 review: draft
 audit:

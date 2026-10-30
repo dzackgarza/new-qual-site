@@ -5,7 +5,9 @@ kind: problem
 title: Contour integral of $(z+1)/((z+3)(z^2+1))$ over a drawn curve
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integrals
+  - Residue Theorem
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: "Greatest negative $m+n$ with $7m+12n=22$"
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Linear Diophantine Equations
 relations: []
 review: draft
 audit:

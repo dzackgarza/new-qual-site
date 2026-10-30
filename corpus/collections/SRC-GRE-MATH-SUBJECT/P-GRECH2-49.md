@@ -5,7 +5,9 @@ kind: problem
 title: "Taylor terms of $e^x$ needed to approximate $\\sqrt[5]{e}$ to within $10^{-6}$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Taylor Series
+  - Error Estimates
 relations: []
 review: draft
 audit:

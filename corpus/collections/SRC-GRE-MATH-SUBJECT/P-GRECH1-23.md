@@ -6,7 +6,8 @@ title: "Evaluate $\\tan(2\\arcsin(1/3))$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Inverse Trigonometric Functions
 relations: []
 review: draft
 audit:

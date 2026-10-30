@@ -6,7 +6,9 @@ title: Relate quadratic coefficients under squaring roots
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Polynomials
+  - Vieta's Formulas
 relations: []
 review: draft
 audit:

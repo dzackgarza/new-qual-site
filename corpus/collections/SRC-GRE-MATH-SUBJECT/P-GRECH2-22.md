@@ -5,7 +5,8 @@ kind: problem
 title: Maximum of $x^ke^{-x}$ on $x>0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Optimization
 relations: []
 review: draft
 audit:

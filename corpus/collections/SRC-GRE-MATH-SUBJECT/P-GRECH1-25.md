@@ -6,7 +6,8 @@ title: "Exact value of $\\arctan1+\\arctan2+\\arctan3$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Inverse Trigonometric Functions
 relations: []
 review: draft
 audit:

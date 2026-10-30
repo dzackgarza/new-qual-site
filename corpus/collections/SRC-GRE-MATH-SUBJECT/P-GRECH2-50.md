@@ -5,7 +5,9 @@ kind: problem
 title: "Exponent $k$ making $(e^{x^2}-x^2-1)(\\cos x-1)/x^k$ have a finite nonzero limit"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Limits
+  - Taylor Series
 relations: []
 review: draft
 audit:

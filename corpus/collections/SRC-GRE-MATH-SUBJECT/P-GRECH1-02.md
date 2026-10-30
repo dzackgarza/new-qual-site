@@ -6,7 +6,8 @@ title: Positive solutions of a rational inequality
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Inequalities
 relations: []
 review: draft
 audit:

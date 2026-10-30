@@ -6,7 +6,8 @@ title: Parameter making a $4\times4$ matrix singular
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Determinants
 relations: []
 review: draft
 audit:

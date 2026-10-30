@@ -5,7 +5,9 @@ kind: problem
 title: Circular seatings of four people
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Counting
+  - Circular Permutations
 relations: []
 review: draft
 audit:

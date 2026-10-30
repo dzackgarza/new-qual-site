@@ -5,7 +5,9 @@ kind: problem
 title: "Solve $y'=x-y$, $y(0)=1$ at $x=1$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - First-Order Linear ODEs
+  - Initial Value Problems
 relations: []
 review: draft
 audit:

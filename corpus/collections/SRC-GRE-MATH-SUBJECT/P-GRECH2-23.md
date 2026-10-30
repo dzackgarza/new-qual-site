@@ -5,7 +5,8 @@ kind: problem
 title: Rate of change of a circle's area with shrinking radius
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Related Rates
 relations: []
 review: draft
 audit:

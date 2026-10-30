@@ -5,7 +5,9 @@ kind: problem
 title: Tangent slope of $e^x\arccos x/\cos x$ at its $y$-intercept
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Differentiation
+  - Tangent Lines
 relations: []
 review: draft
 audit:

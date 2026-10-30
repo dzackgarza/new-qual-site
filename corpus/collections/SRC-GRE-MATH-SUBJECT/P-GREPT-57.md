@@ -5,7 +5,9 @@ kind: problem
 title: "Flaw in a proof of Cauchy's mean value formula"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Mean Value Theorem
+  - Proofs
 relations: []
 review: draft
 audit:

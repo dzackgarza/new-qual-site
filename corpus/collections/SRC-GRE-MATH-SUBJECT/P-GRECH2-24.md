@@ -5,7 +5,9 @@ kind: problem
 title: Local maximum of $\int_{e^x}^{e^{2x}} t\log t\,dt$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Fundamental Theorem of Calculus
+  - Optimization
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Solution set of $x+6/x>5$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Inequalities
 relations: []
 review: draft
 audit:

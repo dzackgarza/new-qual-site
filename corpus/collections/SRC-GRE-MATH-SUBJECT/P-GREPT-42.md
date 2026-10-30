@@ -5,7 +5,9 @@ kind: problem
 title: "Dimension of the span of five vectors in $\\RR^4$"
 classification:
   areas: [applied-algebra]
-  topics: []
+  topics:
+  - Span
+  - Dimension
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: "Integral of the fractional part over $[-\\frac12,1]$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integration
+  - Fractional Part
 relations: []
 review: draft
 audit:

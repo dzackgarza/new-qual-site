@@ -6,7 +6,9 @@ title: Exceptional parameter for a basis of $\RR^3$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Bases
+  - Linear Independence
 relations: []
 review: draft
 audit:

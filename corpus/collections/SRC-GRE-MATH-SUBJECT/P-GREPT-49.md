@@ -5,7 +5,9 @@ kind: problem
 title: "Limit of the recursion $x_{n+1}=\\frac12(x_n+2/x_n)$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Recursive Sequences
+  - Limits
 relations: []
 review: draft
 audit:

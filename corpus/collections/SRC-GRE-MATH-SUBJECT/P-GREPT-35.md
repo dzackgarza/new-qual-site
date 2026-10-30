@@ -5,7 +5,9 @@ kind: problem
 title: "Inclusion–exclusion count of students in three courses"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Inclusion-Exclusion
+  - Counting
 relations: []
 review: draft
 audit:

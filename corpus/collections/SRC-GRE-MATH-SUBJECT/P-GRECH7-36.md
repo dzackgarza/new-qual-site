@@ -5,7 +5,8 @@ kind: problem
 title: Cauchy integral of $(3z^2+z-4)/(z-3)$ over $\abs{z}=5$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy Integral Formula
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Cardinality of power sets of products of finite sets
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Set Theory
+  - Power Sets
 relations: []
 review: draft
 audit:

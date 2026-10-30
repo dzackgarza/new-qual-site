@@ -6,7 +6,8 @@ title: Determine a hyperbola parameter from a focus
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Conic Sections
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: "Five consecutive rings $\\ZZ_n$ containing exactly one field"
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Fields
+  - Modular Arithmetic
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: "Value of $\\cos(x^2)\\sin(x^2)$ at its first positive critical point"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Critical Points
+  - Trigonometric Functions
 relations: []
 review: draft
 audit:

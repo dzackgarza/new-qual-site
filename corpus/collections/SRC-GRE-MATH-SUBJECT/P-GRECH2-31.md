@@ -5,7 +5,8 @@ kind: problem
 title: Area bounded by $y=8x$, $y=x^3$ and $y=8$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Area
 relations: []
 review: draft
 audit:

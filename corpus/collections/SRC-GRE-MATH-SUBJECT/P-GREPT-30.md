@@ -5,7 +5,9 @@ kind: problem
 title: "Whether $m\\bullet n=m+n+mn$ makes $\\ZZ$ a group"
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Groups
+  - Group Axioms
 relations: []
 review: draft
 audit:

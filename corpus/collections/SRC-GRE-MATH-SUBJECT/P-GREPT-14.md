@@ -5,7 +5,8 @@ kind: problem
 title: "Nonconstant solutions of $y''=(y')^2$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Second-Order ODEs
 relations: []
 review: draft
 audit:

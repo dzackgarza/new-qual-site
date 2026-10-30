@@ -5,7 +5,8 @@ kind: problem
 title: "Point where the partial derivatives of $x^y$ agree"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Partial Derivatives
 relations: []
 review: draft
 audit:

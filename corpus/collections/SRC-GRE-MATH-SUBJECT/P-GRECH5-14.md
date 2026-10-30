@@ -6,7 +6,8 @@ title: Image under a linear transformation of $\RR^2$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Transformations
 relations: []
 review: draft
 audit:

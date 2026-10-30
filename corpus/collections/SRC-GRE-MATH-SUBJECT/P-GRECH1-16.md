@@ -6,7 +6,9 @@ title: Imaginary parts of the roots of a cubic
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Polynomials
+  - Complex Numbers
 relations: []
 review: draft
 audit:

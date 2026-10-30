@@ -6,7 +6,8 @@ title: Exponential bacterial growth constant
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Exponential Growth
 relations: []
 review: draft
 audit:

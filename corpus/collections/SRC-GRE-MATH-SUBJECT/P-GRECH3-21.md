@@ -6,7 +6,9 @@ title: Normal vector to an implicit surface
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Gradient
+  - Normal Vectors
 relations: []
 review: draft
 audit:

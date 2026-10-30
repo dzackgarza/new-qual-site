@@ -5,7 +5,8 @@ kind: problem
 title: Lebesgue measure of $(-1,3]\cup[7,8)$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Lebesgue Measure
 relations: []
 review: draft
 audit:

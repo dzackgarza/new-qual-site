@@ -5,7 +5,8 @@ kind: problem
 title: "Evaluate $z^2+z$ at $z=\\omega+\\omega^{-1}$ for a primitive fifth root of unity"
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Roots of Unity
 relations: []
 review: draft
 audit:

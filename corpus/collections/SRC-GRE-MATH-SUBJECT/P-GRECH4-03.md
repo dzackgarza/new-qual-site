@@ -6,7 +6,9 @@ title: Family of curves from an area condition
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Differential Equations
+  - Area
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Largest rectangle inscribed in a semicircle
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Optimization
 relations: []
 review: draft
 audit:

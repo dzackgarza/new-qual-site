@@ -5,7 +5,9 @@ kind: problem
 title: Exterior of $(0,1)\cup[4,6)$ in $\RR$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Interior and Exterior
+  - Real Line Topology
 relations: []
 review: draft
 audit:

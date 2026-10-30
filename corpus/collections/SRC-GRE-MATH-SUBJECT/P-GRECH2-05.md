@@ -5,7 +5,8 @@ kind: problem
 title: Asymptotes of the curve $2x^2+3x-2xy-y=6$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Asymptotes
 relations: []
 review: draft
 audit:

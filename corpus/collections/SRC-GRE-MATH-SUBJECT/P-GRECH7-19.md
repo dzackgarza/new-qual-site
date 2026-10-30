@@ -5,7 +5,9 @@ kind: problem
 title: Which product of intervals is closed in $\RR^2$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Closed Sets
+  - Product Topology
 relations: []
 review: draft
 audit:

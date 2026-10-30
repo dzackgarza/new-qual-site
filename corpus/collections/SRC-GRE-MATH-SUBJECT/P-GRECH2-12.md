@@ -5,7 +5,9 @@ kind: problem
 title: Tangent line at the inflection point of $y=x^3-3x^2+4x$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Inflection Points
+  - Tangent Lines
 relations: []
 review: draft
 audit:

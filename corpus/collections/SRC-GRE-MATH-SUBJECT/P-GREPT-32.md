@@ -5,7 +5,8 @@ kind: problem
 title: "Lines in the tangent plane to $x^2-xy^2z+z^2=1$ at $(1,1,1)$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Tangent Planes
 relations: []
 review: draft
 audit:

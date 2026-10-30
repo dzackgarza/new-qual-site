@@ -5,7 +5,8 @@ kind: problem
 title: "Derivative of $1/x-1/\\log x$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Differentiation
 relations: []
 review: draft
 audit:

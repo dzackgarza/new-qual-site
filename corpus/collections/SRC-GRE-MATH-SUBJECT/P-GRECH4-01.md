@@ -6,7 +6,9 @@ title: Initial-value problem for $dy/dx=x^2/(x^2+1)$
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Initial Value Problems
+  - Separable Equations
 relations: []
 review: draft
 audit:

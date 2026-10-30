@@ -5,7 +5,9 @@ kind: problem
 title: "Chain rule for $f=xy(x-y)$ with $x=t(t-u)$, $y=u(u-t)$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Chain Rule
+  - Partial Derivatives
 relations: []
 review: draft
 audit:

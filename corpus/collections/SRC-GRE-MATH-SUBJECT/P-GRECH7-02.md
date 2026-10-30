@@ -5,7 +5,8 @@ kind: problem
 title: Negation of the disjunction $S\lor T$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Logic
 relations: []
 review: draft
 audit:

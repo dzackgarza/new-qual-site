@@ -6,7 +6,8 @@ title: Entry of an inverse matrix
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Matrix Inverses
 relations: []
 review: draft
 audit:

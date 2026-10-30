@@ -6,7 +6,8 @@ title: Simplify an expression with logarithmic exponents
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Exponential and Logarithmic Functions
 relations: []
 review: draft
 audit:

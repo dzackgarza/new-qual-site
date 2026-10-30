@@ -6,7 +6,9 @@ title: Which direct product is cyclic
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Cyclic Groups
+  - Direct Products
 relations: []
 review: draft
 audit:

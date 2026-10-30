@@ -5,7 +5,8 @@ kind: problem
 title: Circuit in a drawn graph
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Graph Theory
 relations: []
 review: draft
 audit:

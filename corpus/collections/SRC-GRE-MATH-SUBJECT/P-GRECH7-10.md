@@ -5,7 +5,8 @@ kind: problem
 title: Newton's method iteration formula
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Newton's Method
 relations: []
 review: draft
 audit:

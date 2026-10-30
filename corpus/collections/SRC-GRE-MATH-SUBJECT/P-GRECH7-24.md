@@ -5,7 +5,8 @@ kind: problem
 title: Complex solutions of $e^{2z}=i$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Complex Exponential
 relations: []
 review: draft
 audit:

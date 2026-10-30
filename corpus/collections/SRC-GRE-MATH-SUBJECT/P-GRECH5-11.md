@@ -6,7 +6,9 @@ title: Dimension of a displayed span in $\RR^5$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Span
+  - Dimension
 relations: []
 review: draft
 audit:

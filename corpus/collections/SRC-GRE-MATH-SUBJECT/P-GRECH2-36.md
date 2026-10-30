@@ -5,7 +5,9 @@ kind: problem
 title: Solve an equation defined by nested logarithmic integrals
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integration
+  - Exponential and Logarithmic Functions
 relations: []
 review: draft
 audit:

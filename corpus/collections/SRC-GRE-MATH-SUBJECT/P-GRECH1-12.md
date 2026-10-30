@@ -6,7 +6,9 @@ title: A polynomial with root $\sqrt3-\sqrt2$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Polynomials
+  - Field Extensions
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Sum of $\sum_{n\ge1} nx^{2n}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Power Series
 relations: []
 review: draft
 audit:

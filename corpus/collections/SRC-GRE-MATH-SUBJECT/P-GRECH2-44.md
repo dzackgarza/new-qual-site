@@ -5,7 +5,9 @@ kind: problem
 title: Implications between convergence of nonnegative series
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Series
+  - Convergence Tests
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Convergence threshold for $\sum (n!)^2a^n/(2n)!$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Series
+  - Ratio Test
 relations: []
 review: draft
 audit:

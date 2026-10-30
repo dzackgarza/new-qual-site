@@ -5,7 +5,8 @@ kind: problem
 title: Iterations of Euclid's algorithm on $380$ and $72$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Euclidean Algorithm
 relations: []
 review: draft
 audit:

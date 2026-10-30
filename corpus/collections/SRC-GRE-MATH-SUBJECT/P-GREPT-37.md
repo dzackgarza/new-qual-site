@@ -5,7 +5,8 @@ kind: problem
 title: "Parameter values making a $3\\times3$ linear system inconsistent"
 classification:
   areas: [applied-algebra]
-  topics: []
+  topics:
+  - Linear Systems
 relations: []
 review: draft
 audit:

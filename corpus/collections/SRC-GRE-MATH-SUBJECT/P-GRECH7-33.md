@@ -5,7 +5,9 @@ kind: problem
 title: Unoriented incidence matrix of a drawn graph
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Graph Theory
+  - Incidence Matrices
 relations: []
 review: draft
 audit:

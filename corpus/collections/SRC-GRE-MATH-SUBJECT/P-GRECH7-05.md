@@ -5,7 +5,9 @@ kind: problem
 title: Expected number of die rolls showing at least $3$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Expected Value
+  - Probability
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Properties of a graph after deleting one edge
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Graph Theory
 relations: []
 review: draft
 audit:

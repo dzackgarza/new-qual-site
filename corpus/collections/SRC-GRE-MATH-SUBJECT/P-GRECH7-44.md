@@ -5,7 +5,9 @@ kind: problem
 title: Probability of between $40$ and $50$ heads
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Probability
+  - Binomial Distribution
 relations: []
 review: draft
 audit:

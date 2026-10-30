@@ -6,7 +6,8 @@ title: Solve a cross-product equation using the vector triple product
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Cross Product
 relations: []
 review: draft
 audit:

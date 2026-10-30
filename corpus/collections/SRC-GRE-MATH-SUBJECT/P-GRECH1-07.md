@@ -6,7 +6,8 @@ title: Locus equidistant from two points
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Analytic Geometry
 relations: []
 review: draft
 audit:

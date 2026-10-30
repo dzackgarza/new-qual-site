@@ -5,7 +5,8 @@ kind: problem
 title: "Evaluate $1+\\cot^2(\\arcsin\\frac{\\pi}{4})$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Inverse Trigonometric Functions
 relations: []
 review: draft
 audit:

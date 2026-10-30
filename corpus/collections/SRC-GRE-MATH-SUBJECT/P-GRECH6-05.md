@@ -6,7 +6,9 @@ title: Trailing zeros of $100!$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Factorials
+  - Divisibility
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Solid of revolution with volume independent of the parameters
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Volumes of Revolution
 relations: []
 review: draft
 audit:

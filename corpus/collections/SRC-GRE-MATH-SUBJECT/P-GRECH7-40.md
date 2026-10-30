@@ -5,7 +5,9 @@ kind: problem
 title: Order of a permutation of six letters
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Permutations
+  - Symmetric Groups
 relations: []
 review: draft
 audit:

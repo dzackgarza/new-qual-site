@@ -6,7 +6,9 @@ title: Area of a vertical fence over a curve
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Line Integrals
+  - Surface Area
 relations: []
 review: draft
 audit:

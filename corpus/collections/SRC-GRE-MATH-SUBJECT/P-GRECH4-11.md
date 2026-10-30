@@ -6,7 +6,8 @@ title: Implicit curve from its slope
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Separable Equations
 relations: []
 review: draft
 audit:

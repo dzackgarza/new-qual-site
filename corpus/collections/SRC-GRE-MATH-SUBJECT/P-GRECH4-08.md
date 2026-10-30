@@ -6,7 +6,9 @@ title: Fourth-order ODE initial-value problem
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Linear ODEs
+  - Constant Coefficients
 relations: []
 review: draft
 audit:

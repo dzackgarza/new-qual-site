@@ -5,7 +5,9 @@ kind: problem
 title: Recurrence describing the $3x+1$ algorithm
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Algorithms
+  - Recurrences
 relations: []
 review: draft
 audit:

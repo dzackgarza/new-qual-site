@@ -5,7 +5,9 @@ kind: problem
 title: Domain of $\arcsin(\log\sqrt x)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Inverse Trigonometric Functions
+  - Domains
 relations: []
 review: draft
 audit:

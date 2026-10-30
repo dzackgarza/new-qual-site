@@ -6,7 +6,8 @@ title: Plane containing a line and a point
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Lines and Planes
 relations: []
 review: draft
 audit:

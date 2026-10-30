@@ -6,7 +6,8 @@ title: A forced congruence modulo 13
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Congruences
 relations: []
 review: draft
 audit:

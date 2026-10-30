@@ -6,7 +6,8 @@ title: Recover a function from a composition identity
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Function Composition
 relations: []
 review: draft
 audit:

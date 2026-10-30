@@ -5,7 +5,8 @@ kind: problem
 title: Implications derivable from four conditionals
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Logic
 relations: []
 review: draft
 audit:

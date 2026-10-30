@@ -5,7 +5,9 @@ kind: problem
 title: Counting batting orders with the pitcher batting last
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Counting
+  - Permutations
 relations: []
 review: draft
 audit:

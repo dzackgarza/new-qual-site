@@ -5,7 +5,8 @@ kind: problem
 title: "Number of abelian groups of order $72$"
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Finite Abelian Groups
 relations: []
 review: draft
 audit:

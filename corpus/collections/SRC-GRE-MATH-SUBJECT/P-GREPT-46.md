@@ -5,7 +5,9 @@ kind: problem
 title: "Four-element subsets of a set with $\\binom n3-\\binom n2=14$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Binomial Coefficients
+  - Counting
 relations: []
 review: draft
 audit:

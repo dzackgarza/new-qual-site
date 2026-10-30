@@ -5,7 +5,8 @@ kind: problem
 title: Conclusion of the mean value theorem for given endpoint values
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Mean Value Theorem
 relations: []
 review: draft
 audit:

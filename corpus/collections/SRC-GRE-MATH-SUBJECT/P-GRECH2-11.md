@@ -5,7 +5,9 @@ kind: problem
 title: Limit of $(f(x+3h^2)-f(x-h^2))/(2h^2)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Differentiation
+  - Limits
 relations: []
 review: draft
 audit:

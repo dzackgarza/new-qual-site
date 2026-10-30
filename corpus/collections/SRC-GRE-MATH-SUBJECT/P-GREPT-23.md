@@ -5,7 +5,9 @@ kind: problem
 title: "Slope of $y=x^\\pi-\\pi^x$ at $(\\pi,0)$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Differentiation
+  - Tangent Lines
 relations: []
 review: draft
 audit:

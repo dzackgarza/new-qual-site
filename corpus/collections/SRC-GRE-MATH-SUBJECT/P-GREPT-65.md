@@ -5,7 +5,9 @@ kind: problem
 title: "Unital ring homomorphisms between $\\ZZ_m$ and $\\ZZ_n$"
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Ring Homomorphisms
+  - Modular Arithmetic
 relations: []
 review: draft
 audit:

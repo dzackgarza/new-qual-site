@@ -5,7 +5,9 @@ kind: problem
 title: Constant making a piecewise function integrate to $1$ on $[-1,1]$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integration
+  - Piecewise Functions
 relations: []
 review: draft
 audit:

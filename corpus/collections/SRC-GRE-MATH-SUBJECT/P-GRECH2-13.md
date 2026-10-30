@@ -5,7 +5,8 @@ kind: problem
 title: Slope of $xy(x+y)=x+y^4$ at $(1,1)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Implicit Differentiation
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Differentiable gluing of a quadratic and a line at $x=1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Differentiability
+  - Piecewise Functions
 relations: []
 review: draft
 audit:

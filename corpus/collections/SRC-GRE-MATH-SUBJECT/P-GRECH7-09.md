@@ -5,7 +5,8 @@ kind: problem
 title: Coefficient of $(z-2)^{-1}$ in a Laurent series of $1/(z-5)$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Laurent Series
 relations: []
 review: draft
 audit:

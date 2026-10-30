@@ -5,7 +5,9 @@ kind: problem
 title: One-sided limits of $\abs{x}-[x]$ at $\pm n$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - One-Sided Limits
+  - Greatest Integer Function
 relations: []
 review: draft
 audit:

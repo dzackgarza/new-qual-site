@@ -5,7 +5,9 @@ kind: problem
 title: "Evaluate $\\int_{-1/2}^{1/2}dx/(1-x^2)$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integration
+  - Partial Fractions
 relations: []
 review: draft
 audit:

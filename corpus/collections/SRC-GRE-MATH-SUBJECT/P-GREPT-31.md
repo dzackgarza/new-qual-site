@@ -5,7 +5,9 @@ kind: problem
 title: "Evaluate $\\int_0^\\infty e^{-x}/\\sqrt{x}\\,dx$ from the Gaussian integral"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Gamma Function
+  - Gaussian Integral
 relations: []
 review: draft
 audit:

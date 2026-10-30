@@ -6,7 +6,9 @@ title: Value at the unique local minimum
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Critical Points
+  - Multivariable Optimization
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Coefficient $k_3$ of $x^4$ expanded in powers of $x+1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Polynomials
+  - Taylor Series
 relations: []
 review: draft
 audit:

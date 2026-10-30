@@ -5,7 +5,8 @@ kind: problem
 title: Which propositional formula is not a tautology
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Logic
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: "Conditions forcing a real function on an interval to be constant"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Mean Value Theorem
+  - Constant Functions
 relations: []
 review: draft
 audit:

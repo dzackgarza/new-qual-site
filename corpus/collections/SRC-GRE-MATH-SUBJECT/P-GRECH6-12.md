@@ -6,7 +6,8 @@ title: Abelian groups of order $p^2q^4$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Finite Abelian Groups
 relations: []
 review: draft
 audit:

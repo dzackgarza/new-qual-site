@@ -6,7 +6,9 @@ title: Idempotents in $\ZZ_{20}$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Idempotents
+  - Modular Arithmetic
 relations: []
 review: draft
 audit:

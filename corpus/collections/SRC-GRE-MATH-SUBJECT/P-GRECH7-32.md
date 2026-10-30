@@ -5,7 +5,8 @@ kind: problem
 title: Normalizing constant of a linear density on $[0,8]$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Probability Densities
 relations: []
 review: draft
 audit:

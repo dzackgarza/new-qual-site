@@ -6,7 +6,9 @@ title: Second iterate of a nonlinear recurrence
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Recurrences
+  - Functions
 relations: []
 review: draft
 audit:

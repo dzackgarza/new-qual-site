@@ -5,7 +5,9 @@ kind: problem
 title: "Connectedness, compactness and the Hausdorff property for a set between two others"
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Connectedness
+  - Compactness
 relations: []
 review: draft
 audit:

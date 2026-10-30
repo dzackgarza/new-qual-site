@@ -6,7 +6,9 @@ title: Angle between diagonals of cube faces
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Vectors
+  - Dot Product
 relations: []
 review: draft
 audit:

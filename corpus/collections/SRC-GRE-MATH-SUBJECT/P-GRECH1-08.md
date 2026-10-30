@@ -6,7 +6,8 @@ title: Classify a quadratic plane curve
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Conic Sections
 relations: []
 review: draft
 audit:

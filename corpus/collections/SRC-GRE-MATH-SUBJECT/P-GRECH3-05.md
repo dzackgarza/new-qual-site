@@ -6,7 +6,8 @@ title: Intersection of a line and a plane
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Lines and Planes
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Area under $y=x\arctan x$ on $[0,1]$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integration by Parts
+  - Area
 relations: []
 review: draft
 audit:

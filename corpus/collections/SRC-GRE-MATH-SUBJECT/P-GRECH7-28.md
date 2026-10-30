@@ -5,7 +5,8 @@ kind: problem
 title: Which condition is not a metric axiom
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Metric Spaces
 relations: []
 review: draft
 audit:

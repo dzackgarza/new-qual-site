@@ -6,7 +6,9 @@ title: Continuity at the origin of three functions
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Continuity
+  - Multivariable Limits
 relations: []
 review: draft
 audit:

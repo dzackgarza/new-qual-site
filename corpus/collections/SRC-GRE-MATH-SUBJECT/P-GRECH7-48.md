@@ -5,7 +5,9 @@ kind: problem
 title: Recovering $v$ from the real part $5x-3y$ of an analytic function
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy-Riemann Equations
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

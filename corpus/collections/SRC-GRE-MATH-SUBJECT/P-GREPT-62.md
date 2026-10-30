@@ -5,7 +5,8 @@ kind: problem
 title: "Consequences of Lebesgue integrability for a bounded function"
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Lebesgue Integration
 relations: []
 review: draft
 audit:

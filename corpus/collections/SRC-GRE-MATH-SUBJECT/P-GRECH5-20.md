@@ -6,7 +6,9 @@ title: Eigenvalue of a Hermitian $2\times2$ matrix
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Eigenvalues
+  - Hermitian Matrices
 relations: []
 review: draft
 audit:

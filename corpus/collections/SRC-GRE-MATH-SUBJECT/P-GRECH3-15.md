@@ -6,7 +6,9 @@ title: Approximate change in cylinder volume
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Linear Approximation
+  - Differentials
 relations: []
 review: draft
 audit:

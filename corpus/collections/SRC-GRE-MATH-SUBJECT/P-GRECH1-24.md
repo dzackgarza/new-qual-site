@@ -6,7 +6,8 @@ title: Simplify a trigonometric inverse expression
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Inverse Trigonometric Functions
 relations: []
 review: draft
 audit:

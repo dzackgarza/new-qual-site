@@ -5,7 +5,8 @@ kind: problem
 title: Value of $\int_e^\infty dx/(x(\log x)^n)$ when it converges
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Improper Integrals
 relations: []
 review: draft
 audit:

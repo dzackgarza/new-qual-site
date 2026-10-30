@@ -5,7 +5,8 @@ kind: problem
 title: Volume of revolution of the region between $y=x^2$ and $y=6-\abs{x}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Volumes of Revolution
 relations: []
 review: draft
 audit:

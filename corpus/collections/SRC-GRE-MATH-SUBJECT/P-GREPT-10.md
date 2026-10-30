@@ -5,7 +5,9 @@ kind: problem
 title: "Integral curve of $y'=2x/(y^2-1)$ through $(2,3)$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Separable Equations
+  - Initial Value Problems
 relations: []
 review: draft
 audit:

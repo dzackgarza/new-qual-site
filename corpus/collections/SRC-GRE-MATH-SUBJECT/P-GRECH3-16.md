@@ -6,7 +6,8 @@ title: A second point on a tangent plane
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Tangent Planes
 relations: []
 review: draft
 audit:

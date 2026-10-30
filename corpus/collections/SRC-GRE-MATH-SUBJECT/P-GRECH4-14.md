@@ -6,7 +6,8 @@ title: Recovering an exact differential equation coefficient
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Exact Equations
 relations: []
 review: draft
 audit:

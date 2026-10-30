@@ -5,7 +5,8 @@ kind: problem
 title: "Value $f(8)$ from $f(2n)=n^2+f(2(n-1))$ and $f(0)=0$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Recurrences
 relations: []
 review: draft
 audit:

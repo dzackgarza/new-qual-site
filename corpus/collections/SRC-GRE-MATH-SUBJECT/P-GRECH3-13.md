@@ -6,7 +6,9 @@ title: Cyclic product of thermodynamic partial derivatives
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Partial Derivatives
+  - Implicit Differentiation
 relations: []
 review: draft
 audit:

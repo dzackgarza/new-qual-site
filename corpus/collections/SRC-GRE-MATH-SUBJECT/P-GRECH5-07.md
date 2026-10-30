@@ -6,7 +6,9 @@ title: Rank minus determinant of a $3\times3$ matrix
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Rank
+  - Determinants
 relations: []
 review: draft
 audit:

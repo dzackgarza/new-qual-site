@@ -5,7 +5,9 @@ kind: problem
 title: Isomorphism among three drawn graphs
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Graph Theory
+  - Graph Isomorphism
 relations: []
 review: draft
 audit:

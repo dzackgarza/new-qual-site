@@ -5,7 +5,8 @@ kind: problem
 title: "Express $x^4+x$ given $x^2+x=3$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Polynomials
 relations: []
 review: draft
 audit:

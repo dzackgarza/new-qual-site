@@ -5,7 +5,8 @@ kind: problem
 title: "Maximum of $\\log x/x^a$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Optimization
 relations: []
 review: draft
 audit:

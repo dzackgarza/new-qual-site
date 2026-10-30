@@ -6,7 +6,9 @@ title: Column-space compatibility parameter
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Column Space
+  - Linear Systems
 relations: []
 review: draft
 audit:

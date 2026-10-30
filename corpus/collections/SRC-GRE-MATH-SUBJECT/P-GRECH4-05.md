@@ -6,7 +6,9 @@ title: Zeros of a third-order linear ODE solution
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Linear ODEs
+  - Constant Coefficients
 relations: []
 review: draft
 audit:

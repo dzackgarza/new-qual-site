@@ -6,7 +6,8 @@ title: Parameter in a three-equation linear system
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Systems
 relations: []
 review: draft
 audit:

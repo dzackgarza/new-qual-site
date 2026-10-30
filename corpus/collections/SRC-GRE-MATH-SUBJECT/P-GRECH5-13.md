@@ -6,7 +6,9 @@ title: Locus defined by a $3\times3$ determinant
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Determinants
+  - Analytic Geometry
 relations: []
 review: draft
 audit:

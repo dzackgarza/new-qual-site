@@ -6,7 +6,8 @@ title: Sum of roots of a radical equation
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Radical Equations
 relations: []
 review: draft
 audit:

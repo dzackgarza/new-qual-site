@@ -6,7 +6,9 @@ title: Inverse under a logarithmic group operation
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Groups
+  - Inverses
 relations: []
 review: draft
 audit:

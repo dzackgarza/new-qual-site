@@ -5,7 +5,8 @@ kind: problem
 title: The $n$th derivative of $1/(1-2x)$ at $x=-1/2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Higher Derivatives
 relations: []
 review: draft
 audit:

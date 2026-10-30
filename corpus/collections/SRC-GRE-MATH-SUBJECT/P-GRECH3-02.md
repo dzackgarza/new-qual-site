@@ -6,7 +6,9 @@ title: Vector not orthogonal to a given vector
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Vectors
+  - Dot Product
 relations: []
 review: draft
 audit:

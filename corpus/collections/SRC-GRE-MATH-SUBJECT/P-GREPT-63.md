@@ -5,7 +5,9 @@ kind: problem
 title: "Radius of convergence of $\\sum (n!)^3x^{2n}/(3n)!$"
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Power Series
+  - Radius of Convergence
 relations: []
 review: draft
 audit:

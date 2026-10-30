@@ -6,7 +6,8 @@ title: Solve a quadratic equation in log x
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Exponential and Logarithmic Functions
 relations: []
 review: draft
 audit:

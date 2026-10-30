@@ -6,7 +6,8 @@ title: Dimension of the image from nullity
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Rank-Nullity Theorem
 relations: []
 review: draft
 audit:

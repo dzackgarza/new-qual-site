@@ -5,7 +5,8 @@ kind: problem
 title: Coefficient of $x^3$ in the Taylor series of $e^{x^2-x}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Taylor Series
 relations: []
 review: draft
 audit:

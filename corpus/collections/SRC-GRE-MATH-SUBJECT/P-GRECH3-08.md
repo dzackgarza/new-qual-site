@@ -6,7 +6,9 @@ title: Distance from the origin to a plane
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Lines and Planes
+  - Distance
 relations: []
 review: draft
 audit:

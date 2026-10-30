@@ -5,7 +5,9 @@ kind: problem
 title: Antiderivative of $x^2/\sqrt{1-x^2}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Trigonometric Substitution
+  - Antiderivatives
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Focus of a parabola from its directrix
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Conic Sections
 relations: []
 review: draft
 audit:
