@@ -854,7 +854,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebraic-geometry/varieties/affine-or-projective.md
   - [x] wiki/algebraic-geometry/varieties/blowups.md
   - [x] wiki/algebraic-geometry/varieties/canonical-class.md
-  - [ ] wiki/algebraic-geometry/varieties/dimension-and-degree.md
+  - [x] wiki/algebraic-geometry/varieties/dimension-and-degree.md
   - [ ] wiki/algebraic-geometry/varieties/index.md
   - [ ] wiki/algebraic-geometry/varieties/regular-functions.md
   - [ ] wiki/algebraic-geometry/varieties/smooth-and-singular.md
