@@ -326,12 +326,11 @@ mathematical correction under its own node, not under copy policy.
     collection, or create the collection with real provenance (one PDF is one collection);
     remove it from the bucket only after the source listing is confirmed; leave it in the
     bucket when no source is found. Never invent provenance.
-    - [ ] SRC-UNSORTED-ALGEBRA: 672 cards left; slices 0, 2, 3 tried in full; slice 1
-      (191 cards left) reported partial coverage and is being re-tried
-    - [x] SRC-UNSORTED-COMPLEX-ANALYSIS: 233 cards tried, no source found
-    - [ ] SRC-UNSORTED-REAL-ANALYSIS: 85 cards left; Folland and Stein--Shakarchi
-      exercises are still to be checked
-    - [x] SRC-UNSORTED-TOPOLOGY: 90 cards tried, no source found
+    - [x] SRC-UNSORTED-ALGEBRA: 660 cards tried, no source found
+    - [x] SRC-UNSORTED-COMPLEX-ANALYSIS: 232 cards tried, no source found
+    - [x] SRC-UNSORTED-REAL-ANALYSIS: 83 cards tried against the exam extractions, Folland,
+      and Stein--Shakarchi I and III; no source found
+    - [x] SRC-UNSORTED-TOPOLOGY: 91 cards tried, no source found
     - [x] SRC-UNSORTED-PRELIM: empty
     **Acceptance:** every bucket card tried; each bucket's count of cards with no source found
     is recorded here.
