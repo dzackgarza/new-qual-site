@@ -725,7 +725,7 @@ mathematical correction under its own node, not under copy policy.
   - [ ] SRC-WESLEYAN-TOPOLOGY-2006-2014
   Wiki pages:
   - [x] wiki/algebra/counterexamples.md
-  - [ ] wiki/algebra/fields/extensions.md
+  - [x] wiki/algebra/fields/extensions.md
   - [ ] wiki/algebra/fields/finite-fields.md
   - [ ] wiki/algebra/fields/index.md
   - [ ] wiki/algebra/fields/polynomials.md
