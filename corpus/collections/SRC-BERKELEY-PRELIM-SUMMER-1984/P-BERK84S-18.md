@@ -6,7 +6,8 @@ title: A Fredholm-type integral equation on the unit interval
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

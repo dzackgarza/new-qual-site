@@ -6,7 +6,8 @@ title: A real polynomial with a nonreal root
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

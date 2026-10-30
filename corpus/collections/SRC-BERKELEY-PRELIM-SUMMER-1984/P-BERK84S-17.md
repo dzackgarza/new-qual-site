@@ -6,7 +6,8 @@ title: Entire growth after factorial damping of coefficients
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Two integrations by parts for an oscillatory integral
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

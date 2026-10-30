@@ -6,7 +6,8 @@ title: Local inverse of a triangular nonlinear map
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

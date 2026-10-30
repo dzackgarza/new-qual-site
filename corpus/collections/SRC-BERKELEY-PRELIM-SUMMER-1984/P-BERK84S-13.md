@@ -6,7 +6,8 @@ title: Centralizer of a nonscalar $2\times2$ complex matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

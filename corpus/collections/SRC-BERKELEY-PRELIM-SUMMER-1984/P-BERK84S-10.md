@@ -6,7 +6,8 @@ title: Completeness of the Hölder space $C^{1/3}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -26,9 +27,9 @@ audit:
 ::: {.problem}
 Let $C^{1/3}$ be the set of real valued functions $f$ on the closed interval $[0,1]$ such that
 
-1. $f(0) = 0$;
+(i) $f(0) = 0$;
 
-2. $\norm{f}$ is finite, where by definition
+(ii) $\norm{f}$ is finite, where by definition
 $$
 \norm{f} = \sup \left\{ \frac{\abs{f(x) - f(y)}}{\abs{x - y}^{1/3}} \st x \neq y \right\}.
 $$

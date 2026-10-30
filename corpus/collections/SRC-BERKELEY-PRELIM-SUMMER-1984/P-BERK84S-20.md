@@ -6,7 +6,8 @@ title: The integral $\int_{-\infty}^\infty x\sin x/(x^2+4x+20)\,dx$ by residues
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

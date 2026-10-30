@@ -6,7 +6,8 @@ title: Orders of $\FF_q^n$, $\GL_n(\FF_q)$, and $\SL_n(\FF_q)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -26,11 +27,11 @@ audit:
 ::: {.problem}
 Let $\FF_q$ be a finite field with $q$ elements and let $V$ be an $n$-dimensional vector space over $\FF_q$.
 
-1. Determine the number of elements in $V$.
+(a) Determine the number of elements in $V$.
 
-2. Let $\GL_n(\FF_q)$ denote the group of all $n \times n$ nonsingular matrices $A$ over $\FF_q$. Determine the order of $\GL_n(\FF_q)$.
+(b) Let $\GL_n(\FF_q)$ denote the group of all $n \times n$ nonsingular matrices $A$ over $\FF_q$. Determine the order of $\GL_n(\FF_q)$.
 
-3. Let $\SL_n(\FF_q)$ denote the subgroup of $\GL_n(\FF_q)$ consisting of matrices with determinant $1$. Find the order of $\SL_n(\FF_q)$.
+(c) Let $\SL_n(\FF_q)$ denote the subgroup of $\GL_n(\FF_q)$ consisting of matrices with determinant $1$. Find the order of $\SL_n(\FF_q)$.
 :::
 
 ::: {.solution}

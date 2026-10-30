@@ -6,7 +6,8 @@ title: Zeros of truncated exponential reciprocals
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

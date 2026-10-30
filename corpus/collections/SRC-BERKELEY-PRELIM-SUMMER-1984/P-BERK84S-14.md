@@ -6,7 +6,8 @@ title: Intersection of hyperplanes containing a subspace
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

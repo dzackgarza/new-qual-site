@@ -6,7 +6,8 @@ title: Index-two subgroups are normal
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

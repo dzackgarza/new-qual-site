@@ -6,7 +6,8 @@ title: Irreducibility of a sparse integer polynomial
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

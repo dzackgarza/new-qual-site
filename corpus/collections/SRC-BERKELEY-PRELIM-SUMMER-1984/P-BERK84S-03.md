@@ -6,7 +6,8 @@ title: Alternative theorem for strict linear inequalities
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Positive eigenvector of a positive $2\times2$ matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

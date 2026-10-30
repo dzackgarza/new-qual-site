@@ -6,7 +6,8 @@ title: Factorization over the field with three elements
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

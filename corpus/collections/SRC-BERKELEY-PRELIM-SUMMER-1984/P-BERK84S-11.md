@@ -6,7 +6,8 @@ title: Subgroups of $S_4$ isomorphic to $S_3$ and $S_2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

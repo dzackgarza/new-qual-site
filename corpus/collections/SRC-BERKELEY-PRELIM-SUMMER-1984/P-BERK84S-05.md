@@ -6,7 +6,8 @@ title: Analytic branch of a square root and a contour integral
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
@@ -24,9 +25,9 @@ audit:
 ---
 
 ::: {.problem}
-1. Show that there is a unique analytic branch outside the unit circle of the function $f(z) = \sqrt{z^2 + z + 1}$ such that $f(t)$ is positive when $t > 1$.
+(a) Show that there is a unique analytic branch outside the unit circle of the function $f(z) = \sqrt{z^2 + z + 1}$ such that $f(t)$ is positive when $t > 1$.
 
-2. Using the branch determined in Part 1, calculate the integral
+(b) Using the branch determined in part (a), calculate the integral
 $$
 \frac{1}{2\pi i} \int_{C_r} \frac{dz}{\sqrt{z^2 + z + 1}}
 $$
