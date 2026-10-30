@@ -25,18 +25,15 @@ audit:
 
 ::: {.exercise}
 
-Given sets $A, B$, and $C$, express each of the following sets in terms of $A, B$, and $C$, using the symbols $\cup, \cap,$ and $-$ .
-
+Given sets $A, B$, and $C$, express each of the following sets in terms of $A, B$, and $C$, using the symbols $\cup, \cap,$ and $-$.
 $$
-D = \{x \mid x \in A \text { and } (x \in B \text { or } x \in C) \},
+D = \{x \mid x \in A \text{ and } (x \in B \text{ or } x \in C) \},
 $$
-
 $$
-E = \{x \mid (x \in A \text { and } x \in B) \text { or } x \in C \},
+E = \{x \mid (x \in A \text{ and } x \in B) \text{ or } x \in C \},
 $$
-
 $$
-F = \{x \mid x \in A \text { and } (x \in B \Rightarrow x \in C) \}.
+F = \{x \mid x \in A \text{ and } (x \in B \Rightarrow x \in C) \}.
 $$
 :::
 
