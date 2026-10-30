@@ -162,7 +162,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-BERKELEY-PRELIM-SPRING-2008
   - [x] SRC-BERKELEY-PRELIM-SPRING-2009
   - [x] SRC-BERKELEY-PRELIM-SPRING-2010
-  - [ ] SRC-BERKELEY-PRELIM-SPRING-2011
+  - [x] SRC-BERKELEY-PRELIM-SPRING-2011
   - [ ] SRC-BERKELEY-PRELIM-SPRING-2012
   - [ ] SRC-BERKELEY-PRELIM-SPRING-2013
   - [ ] SRC-BERKELEY-PRELIM-SPRING-2014
@@ -884,8 +884,8 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/basics/complex-arithmetic.md
   - [x] wiki/complex-analysis/basics/index.md
   - [x] wiki/complex-analysis/basics/precalculus.md
-  - [ ] wiki/complex-analysis/basics/series-reference.md
-  - [ ] wiki/complex-analysis/basics/tips-techs.md
+  - [x] wiki/complex-analysis/basics/series-reference.md
+  - [x] wiki/complex-analysis/basics/tips-techs.md
   - [ ] wiki/complex-analysis/cauchy-theory/cauchy-estimates-and-liouville.md
   - [ ] wiki/complex-analysis/cauchy-theory/cauchys-theorem.md
   - [ ] wiki/complex-analysis/cauchy-theory/index.md
