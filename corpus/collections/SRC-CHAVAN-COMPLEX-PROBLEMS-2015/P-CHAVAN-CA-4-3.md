@@ -3,13 +3,13 @@ schema: qual/card@1
 id: P-CHAVAN-CA-4-3
 kind: problem
 title: A compact limit of injective holomorphic functions is constant or injective
-classification: {areas: [complex-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Hurwitz's Theorem]}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
 ---
 
 ::: {.problem}

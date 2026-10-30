@@ -3,14 +3,14 @@ schema: qual/card@1
 id: P-CHAVAN-CA-1-1
 kind: problem
 title: Maximum modulus for polynomials via a unitary dilation
-classification: {areas: [complex-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Maximum Modulus Principle]}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
-  note: Checked against Problem 1.1 in the deterministic MinerU Flash extraction; the standard-basis dimension is corrected to match the displayed (n+1)-by-(n+1) matrix.
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
+    note: Checked against Problem 1.1 in the deterministic MinerU Flash extraction; the standard-basis dimension is corrected to match the displayed (n+1)-by-(n+1) matrix.
 ---
 
 ::: {.problem}
@@ -23,23 +23,23 @@ s=\sqrt{1-\abs{z}^2},
 $$
 and let $e_1,\ldots,e_{n+1}$ be the standard basis of $\CC^{n+1}$.
 
-1. Let $U$ be the $(n+1)\times(n+1)$ matrix whose columns, in order, are
-   $$
-   ze_1+se_2,\ e_3,\ldots,e_{n+1},\ se_1-\overline z e_2.
-   $$
-   Show that $U$ is unitary, hence its eigenvalues $\lambda_1,\ldots,\lambda_{n+1}$ have modulus $1$.
+(a) Let $U$ be the $(n+1)\times(n+1)$ matrix whose columns, in order, are
+$$
+ze_1+se_2,\ e_3,\ldots,e_{n+1},\ se_1-\overline z e_2.
+$$
+Show that $U$ is unitary, hence its eigenvalues $\lambda_1,\ldots,\lambda_{n+1}$ have modulus $1$.
 
-2. For $0\le k\le n$, show that $z^k=e_1^TU^ke_1$, and hence $p(z)=e_1^Tp(U)e_1$.
+(b) For $0\le k\le n$, show that $z^k=e_1^TU^ke_1$, and hence $p(z)=e_1^Tp(U)e_1$.
 
-3. Choose $z$ so that $\abs{p(z)}=\max_{\abs{w}\le1}\abs{p(w)}$, and let $U$ be the matrix from part 1 for this $z$. Deduce
-   $$
-   \max_{\abs{w}\le1}\abs{p(w)}\le\norm{p(U)}.
-   $$
+(c) Choose $z$ so that $\abs{p(z)}=\max_{\abs{w}\le1}\abs{p(w)}$, and let $U$ be the matrix from part (a) for this $z$. Deduce
+$$
+\max_{\abs{w}\le1}\abs{p(w)}\le\norm{p(U)}.
+$$
 
-4. If $D=\operatorname{diag}(\lambda_1,\ldots,\lambda_{n+1})$, show
-   $$
-   \norm{p(U)}=\norm{p(D)}=\max_i\abs{p(\lambda_i)}.
-   $$
+(d) If $D=\operatorname{diag}(\lambda_1,\ldots,\lambda_{n+1})$, show
+$$
+\norm{p(U)}=\norm{p(D)}=\max_i\abs{p(\lambda_i)}.
+$$
 
 Conclude that
 $$
@@ -49,7 +49,7 @@ $$
 
 ::: {.solution}
 
-For $\abs{z}\le1$, write $s=\sqrt{1-\abs{z}^2}$ and denote the matrix in part 1 by $U_z$.
+For $\abs{z}\le1$, write $s=\sqrt{1-\abs{z}^2}$ and denote the matrix in part (a) by $U_z$.
 Let $\norm{\cdot}$ denote the operator norm induced by the Euclidean norm on $\CC^{n+1}$.
 
 ::: pf

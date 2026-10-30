@@ -3,14 +3,14 @@ schema: qual/card@1
 id: P-CHAVAN-CA-9-4
 kind: problem
 title: Zeros of a multivariable complex polynomial are not isolated
-classification: {areas: [complex-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Several Complex Variables]}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
-  note: A stray dot on the final p in the machine extraction is omitted; the public text rendering of the same source confirms p.
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
+    note: A stray dot on the final p in the machine extraction is omitted; the public text rendering of the same source confirms p.
 ---
 
 ::: {.problem}

@@ -3,14 +3,14 @@ schema: qual/card@1
 id: P-CHAVAN-CA-1-2
 kind: problem
 title: Maximum modulus for polynomials from circular mean squares
-classification: {areas: [complex-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Maximum Modulus Principle]}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
-  note: Checked against Problem 1.2 in the deterministic extraction; f/p and z/z_0 inconsistencies are normalized to the polynomial and center defined by the problem.
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
+    note: Checked against Problem 1.2 in the deterministic extraction; f/p and z/z_0 inconsistencies are normalized to the polynomial and center defined by the problem.
 ---
 
 ::: {.problem}

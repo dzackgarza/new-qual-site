@@ -3,13 +3,13 @@ schema: qual/card@1
 id: P-CHAVAN-CA-1-3
 kind: problem
 title: Maximum modulus for a uniformly convergent power series on the closed disk
-classification: {areas: [complex-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Maximum Modulus Principle, Power Series]}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
 ---
 
 ::: {.problem}

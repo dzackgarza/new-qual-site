@@ -3,13 +3,13 @@ schema: qual/card@1
 id: P-CHAVAN-CA-7-2
 kind: problem
 title: The complex plane minus a half-line is simply connected
-classification: {areas: [complex-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Simply Connected Domains]}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
 ---
 
 ::: {.problem}

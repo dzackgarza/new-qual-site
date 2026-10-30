@@ -3,14 +3,14 @@ schema: qual/card@1
 id: P-CHAVAN-CA-3-5
 kind: problem
 title: A boundary-modulus-one holomorphic map covers the unit disk
-classification: {areas: [complex-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Argument Principle]}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
-  note: The extraction's first clause is normalized to existence of a zero in the open unit disk, as forced by the Maximum Modulus hint and the following Rouché step.
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
+    note: The extraction's first clause is normalized to existence of a zero in the open unit disk, as forced by the Maximum Modulus hint and the following Rouché step.
 ---
 
 ::: {.problem}
@@ -19,9 +19,9 @@ $$
 \abs{f(z)}=1\qquad(\abs{z}=1).
 $$
 
-1. Show that $f$ has a zero in the open unit disk.
+(a) Show that $f$ has a zero in the open unit disk.
 
-2. Show that for every $\abs{w_0}<1$, the equation $f(z)=w_0$ has a root in the open unit disk.
+(b) Show that for every $\abs{w_0}<1$, the equation $f(z)=w_0$ has a root in the open unit disk.
 
 Thus the image of $f$ contains the unit disk.
 :::
@@ -137,7 +137,7 @@ open unit disk lies in the image of $f$.
 
 ::: pf-qed
 
-Step [](#s1-2){.pf-ref} proves part 1, steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} prove part 2, and step
+Step [](#s1-2){.pf-ref} proves part (a), steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} prove part (b), and step
 [](#s1-5){.pf-ref} gives the stated image containment.
 
 :::

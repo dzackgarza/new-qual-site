@@ -3,14 +3,14 @@ schema: qual/card@1
 id: P-CHAVAN-CA-5-6
 kind: problem
 title: Minimum modulus principle
-classification: {areas: [complex-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Minimum Modulus Principle]}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
-  note: The deterministic extraction drops the closure bar in the continuity hypothesis; the public text rendering of the same source confirms continuity on the closure.
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
+    note: The deterministic extraction drops the closure bar in the continuity hypothesis; the public text rendering of the same source confirms continuity on the closure.
 ---
 
 ::: {.problem}

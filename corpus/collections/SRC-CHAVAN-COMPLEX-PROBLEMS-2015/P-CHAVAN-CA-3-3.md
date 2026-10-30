@@ -3,13 +3,13 @@ schema: qual/card@1
 id: P-CHAVAN-CA-3-3
 kind: problem
 title: An analytic square root without an analytic logarithm
-classification: {areas: [complex-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Branches of the Logarithm]}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
 ---
 
 ::: {.problem}
@@ -26,11 +26,11 @@ g(z)=\abs{f(z)}^{1/2}
 $$
 where $\arg$ is the principal argument.
 
-1. Show that $g$ is well-defined and continuous on $\Omega$ and satisfies $g^2=f$.
+(a) Show that $g$ is well-defined and continuous on $\Omega$ and satisfies $g^2=f$.
 
-2. Show that $g$ is analytic on $\Omega$.
+(b) Show that $g$ is analytic on $\Omega$.
 
-3. Show that $f$ has no analytic logarithm on $\Omega$.
+(c) Show that $f$ has no analytic logarithm on $\Omega$.
 :::
 
 ::: {.solution}
@@ -247,8 +247,8 @@ shows that no analytic logarithm of $f$ exists on $\Omega$.
 
 ::: pf-qed
 
-Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove part 1, step [](#s1-5){.pf-ref} proves part 2, and step [](#s1-7){.pf-ref}
-proves part 3.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove part (a), step [](#s1-5){.pf-ref} proves part (b), and step [](#s1-7){.pf-ref}
+proves part (c).
 
 :::
 

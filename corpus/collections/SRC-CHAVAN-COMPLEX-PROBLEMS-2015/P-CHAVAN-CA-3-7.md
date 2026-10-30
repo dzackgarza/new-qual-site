@@ -3,13 +3,13 @@ schema: qual/card@1
 id: P-CHAVAN-CA-3-7
 kind: problem
 title: Count zeros of $3e^z-z$ in the closed unit disk
-classification: {areas: [complex-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Rouché's Theorem]}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
 ---
 
 ::: {.problem}

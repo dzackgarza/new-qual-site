@@ -3,13 +3,13 @@ schema: qual/card@1
 id: P-CHAVAN-CA-6-3
 kind: problem
 title: The automorphism group of the unit disk acts transitively
-classification: {areas: [complex-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Automorphisms of the Disk]}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
 ---
 
 ::: {.problem}

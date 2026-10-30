@@ -3,13 +3,13 @@ schema: qual/card@1
 id: P-CHAVAN-CA-8-2
 kind: problem
 title: No nonconstant entire function omits a half-line
-classification: {areas: [complex-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Entire Functions]}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
 ---
 
 ::: {.problem}

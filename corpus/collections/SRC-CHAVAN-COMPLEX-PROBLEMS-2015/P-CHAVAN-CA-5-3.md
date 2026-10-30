@@ -3,28 +3,28 @@ schema: qual/card@1
 id: P-CHAVAN-CA-5-3
 kind: problem
 title: Maximum modulus principle for open mappings
-classification: {areas: [complex-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Open Mapping Theorem, Maximum Modulus Principle]}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
-  note: The deterministic extraction drops the bars on the closures in part 2; the public text rendering of the same source confirms the clauses about the compact closure and continuity on the closure.
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
+    note: The deterministic extraction drops the bars on the closures in part 2; the public text rendering of the same source confirms the clauses about the compact closure and continuity on the closure.
 ---
 
 ::: {.problem}
 Let $f:\Omega\to\CC$ be an open mapping on an open set $\Omega\subseteq\CC$.
 Define $\abs{f}(z)=\abs{f(z)}$.
 
-1. Show that $\abs{f}$ cannot have a local maximum at a point of $\Omega$.
+(a) Show that $\abs{f}$ cannot have a local maximum at a point of $\Omega$.
 
-2. If $\overline\Omega$ is compact and $f$ is continuous on $\overline\Omega$, show that $\abs{f}$ attains its maximum on $\partial\Omega$.
+(b) If $\overline\Omega$ is compact and $f$ is continuous on $\overline\Omega$, show that $\abs{f}$ attains its maximum on $\partial\Omega$.
 :::
 
 ::: {.solution}
 
-For part (2), the assertion necessarily presupposes that $\Omega$ is nonempty;
+For part (b), the assertion necessarily presupposes that $\Omega$ is nonempty;
 otherwise $\abs{f}$ has no maximum. We interpret continuity on $\overline\Omega$ as
 the existence of a continuous extension to $\overline\Omega$, denoted again by
 $f$. For $c\in\CC$ and $r>0$, write
@@ -118,7 +118,7 @@ step [](#s1-3){.pf-ref}. Hence the assumed local maximum cannot exist.
 
 ::: {.pf-step #s2}
 
-Under the hypotheses of part (2), $\abs{f}$ attains a maximum at some
+Under the hypotheses of part (b), $\abs{f}$ attains a maximum at some
 $b\in\overline\Omega$.
 
 
@@ -170,7 +170,7 @@ places that point on $\partial\Omega$.
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves part (1), and step [](#s4){.pf-ref} proves part (2).
+Step [](#s1){.pf-ref} proves part (a), and step [](#s4){.pf-ref} proves part (b).
 
 :::
 
@@ -179,7 +179,7 @@ Step [](#s1){.pf-ref} proves part (1), and step [](#s4){.pf-ref} proves part (2)
 :::
 
 ::: {.remark}
-Part (2) needs $\Omega\neq\varnothing$. If $\Omega=\varnothing$, then
+Part (b) needs $\Omega\neq\varnothing$. If $\Omega=\varnothing$, then
 $\overline\Omega$ is compact and the empty map is open and continuous, but
 $\abs{f}$ has no maximum. The phrase "$f$ is continuous on $\overline\Omega$" is
 understood as saying that $f$ extends continuously from $\Omega$ to

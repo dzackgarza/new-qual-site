@@ -3,33 +3,33 @@ schema: qual/card@1
 id: P-CHAVAN-CA-2-1
 kind: problem
 title: Fundamental theorem of algebra from a minimum-modulus estimate
-classification: {areas: [complex-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Fundamental Theorem of Algebra]}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
 ---
 
 ::: {.problem}
 Let $f:\CC\to\CC$ be entire and nowhere zero.
 For $r>0$:
 
-1. Show that, with the circle $\abs{z}=r$ traversed counterclockwise,
-   $$
-   \int_{\abs{z}=r}\frac{dz}{zf(z)}=\frac{2\pi i}{f(0)}.
-   $$
+(a) Show that, with the circle $\abs{z}=r$ traversed counterclockwise,
+$$
+\int_{\abs{z}=r}\frac{dz}{zf(z)}=\frac{2\pi i}{f(0)}.
+$$
 
-2. Show that
-   $$
-   \abs{\int_{\abs{z}=r}\frac{dz}{zf(z)}}
-   \le \frac{2\pi}{\min_{\abs{z}=r}\abs{f(z)}},
-   $$
-   and hence
-   $$
-   \min_{\abs{z}=r}\abs{f(z)}\le \abs{f(0)}.
-   $$
+(b) Show that
+$$
+\abs{\int_{\abs{z}=r}\frac{dz}{zf(z)}}
+\le \frac{2\pi}{\min_{\abs{z}=r}\abs{f(z)}},
+$$
+and hence
+$$
+\min_{\abs{z}=r}\abs{f(z)}\le \abs{f(0)}.
+$$
 
 Deduce the fundamental theorem of algebra by applying this to a monic polynomial and verifying
 $$

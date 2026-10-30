@@ -3,13 +3,13 @@ schema: qual/card@1
 id: P-CHAVAN-CA-5-2
 kind: problem
 title: Moduli of an open subset of the complex plane form a relatively open set
-classification: {areas: [complex-analysis], topics: []}
+classification: {areas: [complex-analysis], topics: [Open Mapping Theorem]}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
 ---
 
 ::: {.problem}
