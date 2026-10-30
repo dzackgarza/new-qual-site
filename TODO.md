@@ -799,7 +799,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/workshops/index.md
   - [x] wiki/algebraic-geometry/cohomology/computing-cohomology.md
   - [x] wiki/algebraic-geometry/cohomology/derived-functors-and-vanishing.md
-  - [ ] wiki/algebraic-geometry/cohomology/families.md
+  - [x] wiki/algebraic-geometry/cohomology/families.md
   - [ ] wiki/algebraic-geometry/cohomology/index.md
   - [ ] wiki/algebraic-geometry/cohomology/projective-schemes.md
   - [ ] wiki/algebraic-geometry/cohomology/vanishing-and-duality.md
