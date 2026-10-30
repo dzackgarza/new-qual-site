@@ -19,7 +19,7 @@ order: 20
 
   - [@Ser77], sections 1--6.
 
-  - [@FH91]; chapters 7--10 treat Lie groups and Lie algebras.
+  - [@FH91]; Lectures 7--10 treat Lie groups and Lie algebras.
 
 ## Notes
 
