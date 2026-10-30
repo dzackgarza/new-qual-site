@@ -6,6 +6,7 @@ title: "Conjugacy classes in a group are bounded by the index of the center"
 classification:
   areas:
   - algebra
+  - applied-algebra
   topics:
   - Group Theory
 relations: []

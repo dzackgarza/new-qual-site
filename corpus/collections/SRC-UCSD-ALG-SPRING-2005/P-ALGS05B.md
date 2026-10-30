@@ -6,6 +6,7 @@ title: "A triangular matrix is normal if and only if it is diagonal"
 classification:
   areas:
   - algebra
+  - applied-algebra
   topics:
   - Linear Algebra
 relations: []

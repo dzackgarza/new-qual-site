@@ -6,6 +6,7 @@ title: "A group of order 120 is not simple"
 classification:
   areas:
   - algebra
+  - applied-algebra
   topics:
   - Group Theory
 relations: []

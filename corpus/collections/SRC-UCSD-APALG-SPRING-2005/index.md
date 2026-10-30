@@ -17,10 +17,12 @@ source:
   institution: ucsd
   area: applied-algebra
   problems:
-  - P-APAS05A
-  - P-APAS05C
-  - P-APAS05D
-  - P-APAS05E
+  - P-ALGS05A
+  - P-ALGS05B
+  - P-ALGS05C
+  - P-ALGS05D
+  - P-ALGS05E
+  - P-ALGS05F
   date:
     kind: academic-term
     term: spring

@@ -6,6 +6,7 @@ title: "Eigenpair of algebraic and geometric multiplicity one yields a complemen
 classification:
   areas:
   - algebra
+  - applied-algebra
   topics:
   - Linear Algebra
 relations: []

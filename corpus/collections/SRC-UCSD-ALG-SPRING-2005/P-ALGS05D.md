@@ -6,8 +6,10 @@ title: "A finite abelian group with a unique subgroup of each order is cyclic"
 classification:
   areas:
   - algebra
+  - applied-algebra
   topics:
   - Group Theory
+  - Abelian Groups
 relations: []
 review: draft
 audit:

@@ -6,8 +6,10 @@ title: "The skew-symmetric part map $T(X) = \\tfrac{1}{2}(X - X^T)$ on $M_n(\\RR
 classification:
   areas:
   - algebra
+  - applied-algebra
   topics:
   - Linear Algebra
+  - Linear Transformations
 relations: []
 review: draft
 audit:
