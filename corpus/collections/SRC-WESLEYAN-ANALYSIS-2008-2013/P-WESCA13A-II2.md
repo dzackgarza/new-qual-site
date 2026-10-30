@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESCA13A-II2
 kind: problem
-title: 'Three contour integrals from repeated Wesleyan problems'
+title: 'Three contour integrals: $\Log(z+e)/z^2$, $(\sin z/z)^{100}$, and a rational function along a spiral'
 classification:
   areas: [complex-analysis]
   topics: []
