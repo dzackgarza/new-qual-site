@@ -5,7 +5,8 @@ kind: problem
 title: Groups of exponent $2$ are abelian but groups of exponent $3$ need not be
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

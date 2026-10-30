@@ -5,7 +5,8 @@ kind: problem
 title: An irreducible polynomial whose roots are closed under squaring divides $x^n-1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Polynomials representing evaluation at $1$ are orthogonal for the weight $1-x$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

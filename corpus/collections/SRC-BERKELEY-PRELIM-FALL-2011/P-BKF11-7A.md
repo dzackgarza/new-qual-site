@@ -5,7 +5,8 @@ kind: problem
 title: Laurent expansion of $1/(1+z)+1/(z^2-9)$ on $1<\abs{ z}<3$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

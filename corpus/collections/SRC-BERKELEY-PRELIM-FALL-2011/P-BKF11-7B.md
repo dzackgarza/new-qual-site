@@ -5,7 +5,8 @@ kind: problem
 title: Evaluation of $\int_0^{2\pi} d\theta/(1+\frac12\sin\theta)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

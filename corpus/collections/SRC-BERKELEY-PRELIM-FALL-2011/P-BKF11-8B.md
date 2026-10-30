@@ -5,7 +5,8 @@ kind: problem
 title: The power $A^{100}$ of a $2\times2$ matrix with a repeated eigenvalue
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

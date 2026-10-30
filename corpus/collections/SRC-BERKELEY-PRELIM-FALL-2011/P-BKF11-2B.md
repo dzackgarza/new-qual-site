@@ -5,7 +5,8 @@ kind: problem
 title: When $k[x]/(x^4+6x-12)$ is a field for $k=\CC,\RR,\QQ,\FF_{2011^2}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

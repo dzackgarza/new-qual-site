@@ -5,7 +5,8 @@ kind: problem
 title: Limit of ratios of the recurrence $u_n=3u_{n-1}+u_{n-2}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

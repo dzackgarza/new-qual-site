@@ -30,6 +30,8 @@ Find the volume of the solid given by
 $$
 x^2+z^2\le 1,\qquad y^2+z^2\le 1.
 $$
+
+Hint: write the volume as $\int_{-1}^1(\text{something})\,dz$.
 :::
 
 ::: {.hint}

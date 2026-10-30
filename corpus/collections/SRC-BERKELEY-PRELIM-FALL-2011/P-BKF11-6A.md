@@ -5,7 +5,8 @@ kind: problem
 title: Centerless groups have centerless automorphism groups
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

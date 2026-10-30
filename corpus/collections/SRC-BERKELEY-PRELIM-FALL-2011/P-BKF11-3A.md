@@ -5,7 +5,8 @@ kind: problem
 title: Holomorphic logarithms of nonvanishing functions on simply connected regions
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

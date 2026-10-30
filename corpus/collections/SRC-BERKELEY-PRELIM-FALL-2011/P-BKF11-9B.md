@@ -5,7 +5,8 @@ kind: problem
 title: Uniform convergence of inverses of uniformly convergent bijections
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Subseries sums fill $(0,L)$ when each term is at most the tail sum
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

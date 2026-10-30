@@ -5,7 +5,8 @@ kind: problem
 title: Continuous images of compact metric spaces are closed
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

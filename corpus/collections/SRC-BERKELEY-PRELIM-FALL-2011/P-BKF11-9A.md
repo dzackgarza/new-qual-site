@@ -5,7 +5,8 @@ kind: problem
 title: Power series coefficients of the Bessel function $J_1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
