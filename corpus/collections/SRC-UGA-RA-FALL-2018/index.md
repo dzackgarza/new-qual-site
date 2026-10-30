@@ -20,6 +20,7 @@ source:
   - P-DWFMA
   - P-5YLZS
   - P-CN673
+  - P-UGARAF18-05
   - P-3AREP
   date:
     kind: academic-term
