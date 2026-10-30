@@ -334,6 +334,14 @@ mathematical correction under its own node, not under copy policy.
     - [x] SRC-UNSORTED-PRELIM: empty
     **Acceptance:** every bucket card tried; each bucket's count of cards with no source found
     is recorded here.
+  CI on `main` is red from the STYLE-04 bar codemod (`1f17231d05`) on; nothing deploys after
+  `5ba163ac9`. `audited-deployment` needs the node below.
+  - **`ci-red-style04`**. **Needs:** none. The codemod left a space before closing dollars
+    (`$\norm{ f } $`), so the `reports` job fails on "a $ reached the page as text"; repair the
+    spacing only. `qc-ci / qc` fails on two `test_static_site.py` assertions left stale by the
+    tab listing key and recursive collection counts. The changed-card push check runs the
+    unread-math check on each changed card, without loading the corpus.
+    **Acceptance:** a green `development.yml` run deploys, and `revision.txt` names its commit.
   Round 3 (revision `5ba163ac9`, topology and algebraic geometry) injected the node below;
   `audited-deployment` needs it.
   - **`ad3-topology-content`**. **Needs:** none. Wrong mathematics: P-TOPS05A (a free
