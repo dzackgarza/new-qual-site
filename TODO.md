@@ -819,7 +819,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebraic-geometry/divisors/weil-and-cartier.md
   - [x] wiki/algebraic-geometry/index.md
   - [x] wiki/algebraic-geometry/morphisms/classes-of-morphism.md
-  - [ ] wiki/algebraic-geometry/morphisms/fibres-and-images.md
+  - [x] wiki/algebraic-geometry/morphisms/fibres-and-images.md
   - [ ] wiki/algebraic-geometry/morphisms/finite-and-flat.md
   - [ ] wiki/algebraic-geometry/morphisms/index.md
   - [ ] wiki/algebraic-geometry/morphisms/inseparable-morphisms-and-luroth.md
