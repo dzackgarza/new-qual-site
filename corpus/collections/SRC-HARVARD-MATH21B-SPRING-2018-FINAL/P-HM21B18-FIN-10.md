@@ -15,12 +15,17 @@ audit:
 ::: {.problem}
 Find the general solution to each differential equation:
 
-1. $f'(t)=1/(t+1)$;
-2. $f''(t)=e^t+t$;
-3. $f''(t)+f(t)=t+2$;
-4. $f''(t)-2f'(t)+f(t)=e^t$;
-5. $f''(t)-f(t)=e^t+\sin t$;
-6. $f''(t)-f(t)=e^{-3t}$.
+(a) $f'(t)=1/(t+1)$;
+
+(b) $f''(t)=e^t+t$;
+
+(c) $f''(t)+f(t)=t+2$;
+
+(d) $f''(t)-2f'(t)+f(t)=e^t$;
+
+(e) $f''(t)-f(t)=e^t+\sin t$;
+
+(f) $f''(t)-f(t)=e^{-3t}$.
 :::
 
 ::: {.solution}
