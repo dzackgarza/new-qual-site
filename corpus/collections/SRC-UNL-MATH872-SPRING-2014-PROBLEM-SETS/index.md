@@ -110,8 +110,8 @@ source:
     comment: Assignment PP.5
   - id: P-UNL872S14-12-A-1
     comment: Assignment 12.A.1
-  - id: P-UNL872S14-12-A-2
-    comment: Assignment 12.A.2
+  - id: E-HAT-2.1-29
+    comment: 'Assignment 12.A.2, Hatcher p. 133 #29'
   - id: P-UNL872S14-12-B-1
     comment: Assignment 12.B.1
   - id: P-UNL872S14-12-B-2

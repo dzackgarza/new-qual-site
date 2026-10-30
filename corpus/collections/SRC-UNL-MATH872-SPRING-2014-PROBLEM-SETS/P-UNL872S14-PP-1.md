@@ -16,41 +16,41 @@ audit:
 ---
 
 ::: {.problem}
-Let \\(A_1,A_2,A_3\\) be solid rectangular blocks in \\(\\RR^3\\).
-For \\(q\\in S^2\\) and \\(t\\in\\RR\\), let
-\\[
-P_{q,t}=\\{x\\in\\RR^3:x\\cdot q=t\\}
-\\]
-be the plane through \\(tq\\) perpendicular to \\(q\\). Let
-\\[
-H_{q,t}=\\{x:x\\cdot q>t\\},
-\\qquad
-J_{q,t}=\\{x:x\\cdot q<t\\}.
-\\]
+Let $A_1,A_2,A_3$ be solid rectangular blocks in $\RR^3$.
+For $q\in S^2$ and $t\in\RR$, let $P_{q,t}$ be the plane in $\RR^3$ containing the point $tq$ and perpendicular to the vector from $(0,0,0)$ to $q$:
+$$
+P_{q,t}=\{x\in\RR^3:x\cdot q=t\}.
+$$
+Let $H_{q,t}$ be the connected component of $\RR^3-P_{q,t}$ containing the point $(t+1)q$, and let $J_{q,t}$ be the other connected component:
+$$
+H_{q,t}=\{x:x\cdot q>t\},
+\qquad
+J_{q,t}=\{x:x\cdot q<t\}.
+$$
 
-(a) Draw pictures of \\(P_{q,t}\\) and \\(H_{q,t}\\). Using pictures and multivariable calculus, discuss how to compute
-\\[
-\\operatorname{vol}(A_i\\cap H_{q,t}).
-\\]
+(a) Draw pictures of $P_{q,t}$ and $H_{q,t}$. Using pictures and multivariable calculus, discuss how to compute $\operatorname{vol}(A_i\cap H_{q,t})$.
 
-(b) Discuss why
-\\[
-(q,t)\\longmapsto \\operatorname{vol}(A_3\\cap H_{q,t})
-\\]
-is continuous. Prove that for each \\(q\\in S^2\\) there is a unique real number \\(t_q\\) such that
-\\[
-\\operatorname{vol}(A_3\\cap H_{q,t_q})
+(b) Discuss why the function $S^2\times\RR\to\RR$ given by
+$$
+(q,t)\longmapsto \operatorname{vol}(A_3\cap H_{q,t})
+$$
+is continuous. Prove that for each $q\in S^2$ there is a real number $t_q$ such that
+$$
+\operatorname{vol}(A_3\cap H_{q,t_q})
 =
-\\operatorname{vol}(A_3\\cap J_{q,t_q}).
-\\]
+\operatorname{vol}(A_3\cap J_{q,t_q}).
+$$
+Discuss why $t_q$ is unique.
 
-(c) For \\(i=1,2\\), define
-\\[
-f_i(q)=\\operatorname{vol}(A_i\\cap H_{q,t_q}).
-\\]
-Discuss why \\(f_i:S^2\\to\\RR\\) is continuous.
+(c) For $i=1,2$, define $f_i:S^2\to\RR$ by
+$$
+f_i(q)=\operatorname{vol}(A_i\cap H_{q,t_q}).
+$$
+Discuss why these functions are continuous.
 
-(d) Use the Borsuk--Ulam theorem to prove that there is a plane in \\(\\RR^3\\) that simultaneously divides each block \\(A_i\\) into two pieces of equal volume.
+(d) Use the Borsuk--Ulam theorem to prove that there is a plane in $\RR^3$ that simultaneously divides each block $A_i$ into two pieces of equal volume.
+
+(Note: In parts that say "discuss" you do not need to give a full proof; a discussion with pictures will do.)
 :::
 
 ::: {.solution}
