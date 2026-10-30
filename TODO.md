@@ -160,7 +160,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-BERKELEY-PRELIM-SPRING-2006
   - [x] SRC-BERKELEY-PRELIM-SPRING-2007
   - [x] SRC-BERKELEY-PRELIM-SPRING-2008
-  - [ ] SRC-BERKELEY-PRELIM-SPRING-2009
+  - [x] SRC-BERKELEY-PRELIM-SPRING-2009
   - [ ] SRC-BERKELEY-PRELIM-SPRING-2010
   - [ ] SRC-BERKELEY-PRELIM-SPRING-2011
   - [ ] SRC-BERKELEY-PRELIM-SPRING-2012
@@ -881,7 +881,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/appendices/special-functions.md
   - [x] wiki/complex-analysis/basics/analytic-nt.md
   - [x] wiki/complex-analysis/basics/calculus-preliminaries.md
-  - [ ] wiki/complex-analysis/basics/complex-arithmetic.md
+  - [x] wiki/complex-analysis/basics/complex-arithmetic.md
   - [ ] wiki/complex-analysis/basics/index.md
   - [ ] wiki/complex-analysis/basics/precalculus.md
   - [ ] wiki/complex-analysis/basics/series-reference.md
