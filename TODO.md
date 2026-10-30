@@ -686,7 +686,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UMN-COMPLEX-PRELIM-BAHRAN-2013
   - [x] SRC-UNL-MATH871-FALL-2013-PROBLEM-SETS
   - [x] SRC-UNL-MATH872-SPRING-2014-PROBLEM-SETS
-  - [ ] SRC-UNL-QUAL-850-871-JANUARY-2006
+  - [x] SRC-UNL-QUAL-850-871-JANUARY-2006
   - [ ] SRC-UNL-QUAL-850-871-JANUARY-2008
   - [ ] SRC-UNL-QUAL-852-871-JUNE-2007
   - [ ] SRC-UNL-QUAL-852-970-JANUARY-2006
@@ -1761,6 +1761,14 @@ mathematical correction under its own node, not under copy policy.
     boundary circles capped to give $S^2$. Read the figure from the page render, decide the
     surface, and rewrite the solution. **Acceptance:** the solution identifies each surface from
     the figure as drawn.
+  - **`ad-unl-combinatorics-area`**. **Needs:** none. The Section A problems of the UNL
+    850-871 and 852-871 qualifying exams (P-UNL850871-06A1 to 06A5, P-UNL850871-08A1 to 08A5,
+    P-UNL852871-07A1 to 07A5, and the 852 or 850 parts of the other UNL combined exams) are
+    combinatorics and graph theory: inclusion-exclusion, Erdős-Ko-Rado, Burnside counts, codes,
+    trees, Ramsey. They carry `areas: [topology]` because the combined exam is filed as a
+    topology collection. No registered area holds combinatorics. Decide whether these problems
+    are in scope, and if so under which area. **Acceptance:** each listed card carries the
+    decided area, or the decision to remove the Section A parts is applied to the collections.
   - **`ad-bkf93-12-contour`**. **Needs:** none. P-BKF93-12: the retained Fall93.pdf prints
     "../Fig/Pr/Fa93-12.ps not found" where the curve $\gamma$ should be, so the statement has no
     contour and the solution answers in terms of winding numbers. Find another copy of the Fall
