@@ -50,7 +50,14 @@ $\CP^n = e^0\union e^2 \union e^4 \union \cdots \union e^{2n}$, with $e^{2k}$ at
 ::: {.example title="Surfaces"}
 A closed surface given by a polygon with edge identifications has one $2$-cell, one $1$-cell for each edge pair, and one $0$-cell for each vertex class.
 
-![Fundamental domains](../../../../assets/assets/Topology/figures/1513064067523.png)
+Reading the boundary word of the polygon gives a presentation of $\pi_1$ with one generator per edge pair and the boundary word as relation:
+
+- the sphere: $\generators{a \st aa^{-1}}$, or $\generators{a, b \st abb^{-1}a^{-1}}$;
+- the torus: $\generators{a, b \st aba^{-1}b^{-1}}$;
+- the projective plane: $\generators{a \st aa}$, or $\generators{a, b \st abab}$;
+- the Klein bottle: $\generators{a, b \st abab^{-1}}$.
+
+![Square fundamental domains for S^2, T^2, RP^2, and the Klein bottle K, with edges labeled a and b and arrows giving the identifications](../../../../assets/assets/Topology/figures/1513064067523.png)
 
 :::
 
@@ -62,12 +69,12 @@ With the vertices labelled by integers, a simplicial complex is determined by it
 :::
 
 ::: {.example title="Torus"}
-![Torus](../../../../assets/assets/Topology/figures/1513062466927.png)
+![A triangulation of the torus with 9 vertices: a square cut into 18 triangles, with boundary vertices labeled 1 to 5 and opposite sides identified](../../../../assets/assets/Topology/figures/1513062466927.png)
 
 :::
 
 ::: {.example title="Klein bottle and $\RP^2$"}
-![Klein bottle and $\RP^2$](../../../../assets/assets/Topology/figures/1513062526623.png)
+![9-vertex triangulations of the Klein bottle and RP^2 on a square: the same interior, with the right side labeled 4, 5 for the Klein bottle and 5, 4 for RP^2](../../../../assets/assets/Topology/figures/1513062526623.png)
 
 :::
 
