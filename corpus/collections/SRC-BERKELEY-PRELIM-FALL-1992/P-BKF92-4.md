@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF92-4
 kind: problem
 title: The solution of $y''=-\abs{y}$ with $y(0)=1,y'(0)=0$ has exactly one positive zero
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Ordinary Differential Equations]}
 relations: []
 review: draft
 audit:

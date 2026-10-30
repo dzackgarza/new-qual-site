@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF92-1
 kind: problem
 title: Similarity of two $3\times3$ matrices with characteristic polynomial $(x-1)^2(x-2)$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF92-9
 kind: problem
 title: Reality of a holomorphic function on both real rays outside the unit disk
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

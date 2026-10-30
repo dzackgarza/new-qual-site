@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF92-8
 kind: problem
 title: An irreducible minimal polynomial controls cyclic-subspace dimensions
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:
@@ -24,11 +24,12 @@ audit:
 ::: {.problem}
 Let $F$ be a field, let $V$ be finite-dimensional over $F$, and let $T:V\to V$ have irreducible minimal polynomial $\mu\in F[t]$.
 
-1. If $0\ne v\in V$ and $V_1$ is the subspace spanned by $v$ and its images under the positive powers of $T$, prove that
+(a) If $0\ne v\in V$ and $V_1$ is the subspace spanned by $v$ and its images under the positive powers of $T$, prove that
 $$
 \dim V_1=\deg\mu.
 $$
-2. Prove that $\deg\mu$ divides $\dim V$.
+
+(b) Prove that $\deg\mu$ divides $\dim V$.
 :::
 
 ::: {.solution}
@@ -102,7 +103,7 @@ and $\alpha\ne0$, then $\alpha$ is invertible because $E$ is a field. Multiplyin
 
 ::: {.pf-step #s4}
 
-The subspace $V_1$ in part 1 is exactly $Ev$.
+The subspace $V_1$ in part (a) is exactly $Ev$.
 
 ::: pf-proof
 
@@ -179,7 +180,7 @@ Thus $\deg\mu$ divides $\dim_F V$.
 
 ::: pf-qed
 
-Step [](#s5){.pf-ref} proves part 1, and step [](#s7){.pf-ref} proves part 2.
+Step [](#s5){.pf-ref} proves part (a), and step [](#s7){.pf-ref} proves part (b).
 
 :::
 

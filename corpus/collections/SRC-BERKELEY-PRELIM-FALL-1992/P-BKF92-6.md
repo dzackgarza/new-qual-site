@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF92-6
 kind: problem
 title: Completeness along a continuous surjection with $d_1(p,q)\le d_2(f(p),f(q))$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:
@@ -37,8 +37,9 @@ d_1(p,q)\le d_2(f(p),f(q))
 $$
 for every $p,q\in X_1$.
 
-1. If $X_1$ is complete, must $X_2$ be complete? Give a proof or counterexample.
-2. If $X_2$ is complete, must $X_1$ be complete? Give a proof or counterexample.
+(a) If $X_1$ is complete, must $X_2$ be complete? Give a proof or counterexample.
+
+(b) If $X_2$ is complete, must $X_1$ be complete? Give a proof or counterexample.
 :::
 
 ::: {.solution}
@@ -98,7 +99,7 @@ Thus every Cauchy sequence in $X_2$ converges.
 
 ::: {.pf-step #s3}
 
-Therefore the answer to part 1 is
+Therefore the answer to part (a) is
 $$
 \boxed{\text{yes}}.
 $$
@@ -113,7 +114,7 @@ This is exactly step [](#s2){.pf-ref}.
 
 ::: {.pf-step #s4}
 
-For part 2, let
+For part (b), let
 $$
 X_1=(0,1),
 \qquad
@@ -173,7 +174,7 @@ is Cauchy in $(0,1)$ but converges in $\RR$ to $0\notin(0,1)$.
 
 ::: {.pf-step #s6}
 
-Therefore the answer to part 2 is
+Therefore the answer to part (b) is
 $$
 \boxed{\text{no}}.
 $$
@@ -188,7 +189,7 @@ Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give a counterexample satisfying eve
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} proves part 1, and step [](#s6){.pf-ref} proves part 2.
+Step [](#s3){.pf-ref} proves part (a), and step [](#s6){.pf-ref} proves part (b).
 
 :::
 

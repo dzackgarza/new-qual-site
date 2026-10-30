@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF92-3
 kind: problem
 title: Roots of $2z^5+4z^2+1$ in the unit disk and on the real axis
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:
@@ -27,8 +27,9 @@ $$
 p(z)=2z^5+4z^2+1.
 $$
 
-1. How many roots does $p$ have in the disk $\abs{z}<1$?
-2. How many roots does $p$ have on the real axis?
+(a) How many roots does $p$ have in the disk $\abs{z}<1$?
+
+(b) How many roots does $p$ have on the real axis?
 :::
 
 ::: {.solution}
@@ -156,7 +157,7 @@ On $[-a,0]$, step [](#s4){.pf-ref} shows that $p$ decreases from the positive va
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} answers part 1, and step [](#s6){.pf-ref} answers part 2.
+Step [](#s2){.pf-ref} answers part (a), and step [](#s6){.pf-ref} answers part (b).
 
 :::
 

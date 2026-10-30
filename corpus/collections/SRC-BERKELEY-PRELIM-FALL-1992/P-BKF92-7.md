@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF92-7
 kind: problem
 title: The integral $\int_{\abs{z}=1} e^z/[z(2z+1)^2]\,dz$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

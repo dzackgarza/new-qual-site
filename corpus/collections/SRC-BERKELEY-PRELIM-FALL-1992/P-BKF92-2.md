@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF92-2
 kind: problem
 title: Is $(5,x^3+x+1)$ a prime ideal of $\ZZ[x]$?
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

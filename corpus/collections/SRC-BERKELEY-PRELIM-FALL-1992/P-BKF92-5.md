@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF92-5
 kind: problem
 title: Intersecting with a finite-index subgroup preserves finite index
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:
