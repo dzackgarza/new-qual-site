@@ -20,10 +20,16 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-08
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The exam says "a p-group"; an infinite p-group need not be nilpotent (the wreath product
+    of C_p by the Pruefer p-group has trivial center), and the solution uses finiteness, so
+    the statement now says finite p-group.
 ---
 
 ::: {.problem}
-Let $p$ be a prime number and let $G$ be a $p$-group.
+Let $p$ be a prime number and let $G$ be a finite $p$-group.
 Prove that $G$ is nilpotent.
 :::
 
