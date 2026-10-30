@@ -6,7 +6,10 @@ title: Unbounded $L^2$ growth of Fourier representations of planar wave solution
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Transform
+  - L²
+  - Counterexamples
 relations: []
 review: draft
 audit:

@@ -6,7 +6,10 @@ title: Orthonormal systems with $\norm{f}_\infty\le C\norm{f}_2$ on their span a
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Hilbert Spaces
+  - L²
+  - L∞
 relations: []
 review: draft
 audit:

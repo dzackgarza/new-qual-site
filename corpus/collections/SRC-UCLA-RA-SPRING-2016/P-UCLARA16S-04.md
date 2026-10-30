@@ -6,7 +6,9 @@ title: Finite-dimensional subspaces of Banach spaces are complemented
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Banach Spaces
+  - Bounded Operators
 relations: []
 review: draft
 audit:

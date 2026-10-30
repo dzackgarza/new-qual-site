@@ -6,7 +6,9 @@ title: Monotonicity under translations by $1/n$ implies monotonicity under all t
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Monotone Functions
+  - Measure Theory
 relations: []
 review: draft
 audit:

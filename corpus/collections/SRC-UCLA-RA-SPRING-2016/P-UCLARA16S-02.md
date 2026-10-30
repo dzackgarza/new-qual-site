@@ -6,7 +6,9 @@ title: Almost everywhere convergence of $\sum n^{-1/2}f(x-\sqrt n)$
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L¹
+  - Series of Functions
 relations: []
 review: draft
 audit:
