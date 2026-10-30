@@ -20,7 +20,7 @@ The $k$-linear Frobenius of a curve is finite of degree $p$ and induces $k(X)\su
 
 [[PR-IV2INSEP]]
 
-The source and target of a purely inseparable morphism of curves are isomorphic as schemes, not over $k$, so they have the same genus.
+Over a perfect field the source and target of a purely inseparable morphism of curves are isomorphic as abstract schemes, though not necessarily as $k$-schemes, so they have the same genus.
 For the $k$-linear Frobenius $F\colon X\to X'$, the map $F^*\Omega_{X'}\to\Omega_X$ is zero, so $\Omega_{X/X'}\cong\Omega_X$ is a line bundle, and the Riemann--Hurwitz formula $2g-2=p(2g-2)$ fails for $g\neq1$.
 
 ## Lüroth's theorem
