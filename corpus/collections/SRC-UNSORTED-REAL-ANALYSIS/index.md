@@ -29,7 +29,6 @@ source:
   - id: E-JJ746
   - id: E-JY5OT
   - id: E-KUOXT
-  - id: E-L3F4O
   - id: E-LYXHE
   - id: E-M3CGY
   - id: E-MFCCS

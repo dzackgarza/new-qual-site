@@ -18,6 +18,10 @@ source:
     kind: year
     year: 2005
   sections:
+    - name: Ch. 1 Exercises
+      problems:
+        - id: E-L3F4O
+          comment: "1.1"
     - name: Ch. 2 Exercises
       problems:
         - id: P-236QU
