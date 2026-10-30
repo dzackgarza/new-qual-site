@@ -553,9 +553,10 @@ mathematical correction under its own node, not under copy policy.
       the correction in a remark.
     - [x] P-UCLAB06W-03: the paper prints prefactor $1/n$, the card silently reads $(b-a)/n$;
       same treatment.
-    - [ ] Read the other Berkeley online-era papers (Fall 2020, Spring 2021 Part B) for further
-      reprinted problems carded twice.
-    **Acceptance:** each item read and repaired.
+    - [x] Read the other Berkeley online-era papers (Fall 2020, Spring 2021 Part B) for further
+      reprinted problems carded twice. Spring 2021 reprints thirteen more 2011--2012 problems
+      (merged); Fall 2020 and Spring 2021 6B have no earlier card.
+    **Acceptance:** each item read and repaired. **Closed.**
 
   Round 4 (revision `e6068b271c`, algebra guide) injected the node below; `audited-deployment`
   needs it.
