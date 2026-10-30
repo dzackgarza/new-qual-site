@@ -29,7 +29,7 @@ $$
 
 (b) Show that if $\abs{z_{1}}<1$ and $\abs{z_{2}}<1$, then $\abs{\frac{z_{1}-z_{2}}{1-\bar{z}_{1} z_{2}}}<1 .$
 
-(c) Assume that $z_{1} \neq z_{2}$. Show that $\abs{\frac{z_{1}-z_{2}}{1-\bar{z}_{1} z_{2}}}=1$ if only if $\abs{z_{1}}=1$ or $\abs{z_{2}}=1$.
+(c) Assume that $z_{1} \neq z_{2}$. Show that $\abs{\frac{z_{1}-z_{2}}{1-\bar{z}_{1} z_{2}}}=1$ if and only if $\abs{z_{1}}=1$ or $\abs{z_{2}}=1$.
 :::
 
 ::: {.solution}

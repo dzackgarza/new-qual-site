@@ -30,29 +30,57 @@ Find a conformal map from $R$ to $\HH$ the upper half-plane.
 
 ![attachments/Circle Inversion.gif](../../assets/attachments/Circle%20Inversion.gif)
 
-- So $z\to 1/z$ maps the region into a half-strip.
+- So $z\to 1/z$ maps the region onto a slit vertical strip.
 
 :::
 
 ::: {.solution}
-Note: this seems unusually difficult for a UGA question!
-This is a bigon with one vertex $z_2 = 0$, so send it to infinity and keep track of the slit.
+::: pf
 
-In steps:
+::: {.pf-step #inv}
+$w=1/z$ maps $R$ conformally onto the strip $S=\{0<\Re w<1\}$ minus the segment $[\tfrac12,1)$.
 
-- Use $z\mapsto 1/z$ to get a vertical strip $0<\Re(z) < 1$, where the slit maps to $[1/2, 1]$.
+::: pf-proof
+For $z=x+iy\neq0$, $\Re(1/z)=x/\abs{z}^2$. So $\Re z>0$ if and only if $\Re w>0$, and $\abs{z-\tfrac12}>\tfrac12$, that is $\abs{z}^2>x$, if and only if $\Re w<1$. The inversion is an involution of $\CC\setminus\{0\}$, and it maps $[1,2]$ onto $[\tfrac12,1]$, whose point $1$ is not in $S$.
+:::
 
-![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-31_23-13-16.png)
+:::
 
-- Shift and dilate with $z\mapsto \pi(z-1/2)$ to get $-\pi/2<\Re(z) < \pi/2$, where the slit is now at $[0, \pi/2]$.
+::: {.pf-step #sin}
+$\zeta=\sin\bigl(\pi(w-\tfrac12)\bigr)$ maps the slit strip of step [](#inv){.pf-ref} conformally onto $\Omega=\CC\setminus\bigl((-\infty,-1]\cup[0,\infty)\bigr)$.
 
-- Apply $z\mapsto \sin(z)$ to get $\CC\sm[0, 1]$.
+::: pf-proof
+$w\mapsto\pi(w-\tfrac12)$ maps $S$ onto $\{\abs{\Re s}<\pi/2\}$ and the slit onto $[0,\pi/2)$. The sine maps $\{\abs{\Re s}<\pi/2\}$ conformally onto $\CC\setminus\bigl((-\infty,-1]\cup[1,\infty)\bigr)$, and it maps $[0,\pi/2)$ onto $[0,1)$. Removing the image of the slit leaves $\Omega$.
+:::
 
-- Move the slit with $z\mapsto 4(z-1/2)$ to get $\CC\sm[-2, 2]$.
+:::
 
-- Apply $z\mapsto z+\inverseof{z}$ to get $\CC\sm\DD$, where the slit is now eliminated.
+::: {.pf-step #mob}
+$\eta=\zeta/(\zeta+1)$ maps $\Omega$ conformally onto $\CC\setminus[0,\infty)$.
 
-- Use $z\mapsto 1/z$ to get $\DD$
+::: pf-proof
+This Möbius map sends $-1\mapsto\infty$, $0\mapsto0$ and $\infty\mapsto1$, and it maps $\RR\cup\{\infty\}$ to itself. It maps $[-\infty,-1]$ onto $[1,\infty]$ and $[0,\infty]$ onto $[0,1]$, so the removed set $(-\infty,-1]\cup[0,\infty)\cup\{\infty\}$ goes onto $[0,\infty]$.
+:::
 
-- Use the inverse Cayley map $z\mapsto i{1-z\over 1+z}$ to get $\HH$.
+:::
+
+::: {.pf-step #root}
+The branch of $\sqrt{\eta}$ with argument in $(0,\pi)$ maps $\CC\setminus[0,\infty)$ conformally onto $\HH$.
+
+::: pf-proof
+Write $\eta=re^{i\theta}$ with $0<\theta<2\pi$; then $\sqrt\eta=\sqrt r\,e^{i\theta/2}$ with $0<\theta/2<\pi$, and this is a bijection with holomorphic inverse $\omega\mapsto\omega^2$.
+:::
+
+:::
+
+::: pf-qed
+The composite of steps [](#inv){.pf-ref} to [](#root){.pf-ref} is a conformal map of $R$ onto $\HH$. Since $\sin(\pi/z-\pi/2)=-\cos(\pi/z)$, it is
+$$
+\boxed{F(z)=\sqrt{\frac{\cos(\pi/z)}{\cos(\pi/z)-1}}}
+$$
+with the branch of step [](#root){.pf-ref}.
+:::
+
+:::
+
 :::
