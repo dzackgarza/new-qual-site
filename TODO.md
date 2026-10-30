@@ -1017,7 +1017,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/topology/covering-spaces/covering-spaces.md
   - [x] wiki/topology/covering-spaces/index.md
   - [x] wiki/topology/cw-complexes/cw-complexes.md
-  - [ ] wiki/topology/cw-complexes/index.md
+  - [x] wiki/topology/cw-complexes/index.md
   - [ ] wiki/topology/degree/fixed-points-and-degree.md
   - [ ] wiki/topology/degree/index.md
   - [ ] wiki/topology/fundamental-group/compute-pi-1.md
