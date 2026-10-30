@@ -554,17 +554,18 @@ mathematical correction under its own node, not under copy policy.
     - [x] P-UCLAB06W-03: the paper prints prefactor $1/n$, the card silently reads $(b-a)/n$;
       same treatment.
     - [x] Read the other Berkeley online-era papers (Fall 2020, Spring 2021 Part B) for further
-      reprinted problems carded twice. Spring 2021 reprints thirteen more 2011--2012 problems
+      reprinted problems carded twice. Spring 2021 reprints fourteen more 2011--2012 problems
       (merged); Fall 2020 and Spring 2021 6B have no earlier card.
     **Acceptance:** each item read and repaired. **Closed.**
 
   Round 4 (revision `e6068b271c`, algebra guide) injected the node below; `audited-deployment`
   needs it.
   - **`ad4-algebra-content`**. **Needs:** none.
-    - [ ] E-HOJKE solution and Variations remark: a line beginning "(3) implies (1)" or
+    - [x] E-HOJKE solution and Variations remark: a line beginning "(3) implies (1)" or
       "(2) implies (1)" renders as an ordered list. Repair the cards, and find whether the
       parser should reject a line-initial parenthesized numeral that is not a list
-      (owner of `ad-fancy-lists`).
+      (owner of `ad-fancy-lists`). No check: a part label "(b)" opening a paragraph after display
+      mathematics is the same one-item list and is authored in many problem statements.
     - [ ] FD-T7IQV proof mixes $G^i$ and $G_i$ for one series (NOT-3).
     - [ ] CARD-04: D-RG5FO and D-H4TDM both define the Gram matrix of a bilinear form and its
       change of basis; merge, keeping distinct content. D-RG5FO shows "Suggest a slogan".
