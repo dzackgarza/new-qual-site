@@ -6,7 +6,8 @@ title: Ring homomorphisms $\ZZ[x]/(x^2+3)\to\ZZ[x]/(x^2-x+1)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
