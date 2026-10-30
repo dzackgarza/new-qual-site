@@ -1,0 +1,337 @@
+# new:longdivision — vertical bar of a long-division layout in an array, wiki/complex-analysis/basics/series-reference.md S82
+P-7J4VR S24 hb6863c66 abs( abs)
+P-7J4VR S75 h1c8d89bd abs( abs) abs( abs) abs( abs)
+P-AGH3O S16 h1a556534 abs( abs)
+P-AGH3O S17 h726ac778 abs( abs) abs( abs)
+P-AGH3O S18 h2975f0da abs( abs)
+P-AGH3O S20 h234506eb abs( abs) abs( abs)
+P-AGH3O S22 h4d093f91 abs( abs) abs( abs) abs( abs) abs( abs) abs( abs)
+P-DQE3F S12 h873811af norm( norm)
+P-DQE3F S14 h6cc91f35 norm( norm) norm( norm)
+P-DQE3F S15 h727f0e55 norm( norm) norm( norm) norm( norm)
+P-DQE3F S24 hf6c96207 abs( abs)
+P-DQE3F S26 h8b7e8e6a norm( norm)
+P-DQE3F S33 h0dce88a7 norm( norm)
+P-DQE3F S34 h88b9d4e0 norm( norm)
+P-DQE3F S36 h51bdf2c7 abs( abs)
+P-DQE3F S37 h6b0d5b53 abs( abs)
+P-DQYX5 S12 h46f2f85f abs( abs) abs( abs) norm( norm) norm( norm)
+P-DQYX5 S14 ha59a31d4 norm( norm) norm( norm) norm( norm)
+P-DQYX5 S17 h891ff357 norm( norm) abs( abs)
+P-DQYX5 S18 h037304dc norm( norm) abs( abs)
+P-DQYX5 S19 h7603fc36 norm( norm) abs( abs) abs( abs) norm( norm)
+P-DQYX5 S22 hb9105371 abs( abs) norm( norm)
+P-DQYX5 S24 hd345b737 abs( abs)
+P-DQYX5 S26 h9a588470 abs( abs) norm( norm)
+P-DQYX5 S27 h1f4c2735 norm( norm)
+P-DQYX5 S28 hb980fc9b norm( norm) abs( abs) abs( abs) norm( norm)
+P-DQYX5 S29 h8425d300 norm( norm)
+P-DQYX5 S30 h1f4c2735 norm( norm)
+P-DQYX5 S31 h933e818a norm( norm)
+P-DQYX5 S33 h44c4f996 norm( norm) abs( abs) abs( abs) norm( norm) norm( norm) abs( abs)
+P-DQYX5 S34 hf879a61d abs( abs) norm( norm) norm( norm)
+P-DQYX5 S35 h1f4c2735 norm( norm)
+P-DQYX5 S38 hade3cf5f abs( abs) abs( abs)
+P-DQYX5 S43 h518ebb32 norm( norm)
+P-DQYX5 S45 h01610f13 norm( norm)
+P-DQYX5 S61 h803233bf abs( abs)
+P-DQYX5 S63 he25879db abs( abs)
+P-DQYX5 S75 h36a5bc80 abs( abs)
+P-DQYX5 S76 hc640d7b2 abs( abs)
+P-DQYX5 S77 h495ef766 abs( abs)
+P-DS4D6 S5 h4c698e74 abs( abs)
+P-DS4D6 S19 h8f152891 abs( abs) abs( abs) abs( abs)
+P-DS4D6 S26 hbeeaea03 abs( abs)
+P-DS4D6 S33 ha9c5ea65 abs( abs)
+P-DS4D6 S34 h84a97fdc abs( abs)
+P-EUIAS S28 ha62a6d67 norm( norm)
+P-EUIAS S29 h6ad23706 norm( norm)
+P-EUIAS S31 h7f41289e norm( norm)
+P-EUIAS S32 h78df0050 norm( norm) norm( norm)
+P-EUIAS S35 h24cd2bac norm( norm) norm( norm)
+P-EUIAS S36 h6ad23706 norm( norm)
+P-EUIAS S40 haa9defc6 norm( norm)
+P-EUIAS S41 h2598fc0a norm( norm) norm( norm) norm( norm) norm( norm)
+P-FFLLF S19 h7371089d abs( abs) abs( abs)
+P-FFLLF S24 h8bbbbcda abs( abs)
+P-FFLLF S29 h8e399069 abs( abs)
+P-FFLLF S30 hc3942f13 abs( abs)
+P-FFLLF S32 h36bda692 abs( abs)
+P-FFLLF S33 ha76b5287 norm( norm)
+P-FFLLF S34 h013803d4 abs( abs) norm( norm)
+P-FFLLF S36 h3f1e5e47 norm( norm) norm( norm)
+P-FFLLF S37 h17998ebb norm( norm)
+P-FFLLF S38 h0e12f67c abs( abs)
+P-FNUGX S19 h857f0528 norm( norm)
+P-FNUGX S20 h39fd2ac7 norm( norm) norm( norm)
+P-FNUGX S27 hc9aa4b9f norm( norm)
+P-FNUGX S29 h57b20302 abs( abs)
+P-FNUGX S30 hdbc97ffe abs( abs)
+P-FNUGX S32 h1567782c abs( abs) abs( abs) abs( abs) abs( abs)
+P-FNUGX S44 hcdd59ef8 abs( abs) abs( abs) norm( norm)
+P-FNUGX S53 h8e048b75 abs( abs) abs( abs)
+P-FNUGX S57 ha51c8a2d abs( abs)
+P-FNUGX S67 ha7dbf986 abs( abs)
+P-GJIZI S9 h7478792d abs( abs)
+P-GJIZI S12 hd7bad557 abs( abs) abs( abs)
+P-GJIZI S13 h9fb0b436 abs( abs) norm( norm)
+P-GJIZI S15 he79e067a abs( abs)
+P-GJIZI S17 h94606faf norm( norm)
+P-GJIZI S20 h8149f677 abs( abs)
+P-GJIZI S23 h7f5b85c0 norm( norm)
+P-GJIZI S30 hc82e0b68 abs( abs)
+P-GJIZI S32 h61c7ae92 norm( norm) abs( abs) norm( norm)
+P-GJIZI S34 h60f795e7 abs( abs)
+P-GJIZI S36 h4d7e69e2 abs( abs)
+P-GJIZI S41 h94482e65 abs( abs) abs( abs)
+P-GJIZI S42 h0a55188e abs( abs)
+P-H2AG2 S24 h08159e56 abs( abs)
+P-HHPDB S9 h695b8422 norm( norm)
+P-HHPDB S11 h661f5899 norm( norm)
+P-HHPDB S13 hf091629d abs( abs) norm( norm)
+P-HHPDB S21 ha8bbc158 norm( norm) abs( abs) norm( norm)
+P-HHPDB S23 hb5523caf abs( abs) norm( norm)
+P-HHPDB S24 hab560a29 norm( norm)
+P-HHPDB S26 ha10f877b abs( abs) norm( norm)
+P-HHPDB S31 h7bc770e7 abs( abs)
+P-HHPDB S32 hb4de1baa norm( norm)
+P-HHPDB S33 h098c6ed1 norm( norm)
+P-HHPDB S34 h914bd775 abs( abs)
+P-HHPDB S35 h84604a9b norm( norm)
+P-HHPDB S36 h3eada921 abs( abs)
+P-HHPDB S38 hed55d3ed norm( norm)
+P-HHPDB S39 h914bd775 abs( abs)
+P-HHPDB S40 hbcee7f18 norm( norm)
+P-HHPDB S42 h1ae32c10 norm( norm) abs( abs) norm( norm) abs( abs)
+P-HHPDB S44 hac5fc14b norm( norm)
+P-J6HN2 S19 h3a54aa66 abs( abs)
+P-J6HN2 S24 hd74e3115 abs( abs)
+P-J6HN2 S25 h3a2407a2 abs( abs)
+P-J6HN2 S31 hc82e0b68 abs( abs)
+P-J6HN2 S34 h1f467624 abs( abs) abs( abs) abs( abs) abs( abs)
+P-JETLX S3 h340423f1 norm( norm)
+P-JETLX S15 h803f5aae norm( norm)
+P-JETLX S18 hcd052e6a norm( norm)
+P-JETLX S26 hed129383 norm( norm)
+P-JETLX S27 h8646f3c3 norm( norm)
+P-JETLX S33 hcd98a5e6 norm( norm)
+P-K4EUR S21 h14d71dd1 norm( norm)
+P-K4EUR S25 h14d71dd1 norm( norm)
+P-K4EUR S48 h0cc1d033 norm( norm)
+P-LQEAV S0 hd574541c norm( norm) norm( norm)
+P-LQEAV S3 hac3c17c5 norm( norm) norm( norm)
+P-LQEAV S5 h96e0ab1f norm( norm) abs( abs)
+P-LQEAV S6 ha7547bce norm( norm) abs( abs)
+P-LQEAV S9 hcedd69eb norm( norm) norm( norm)
+P-LQEAV S10 hbfd1e051 norm( norm)
+P-LQEAV S11 hcedd69eb norm( norm) norm( norm)
+P-LQEAV S14 h90737df5 norm( norm)
+P-LQEAV S16 hb74b057e abs( abs) abs( abs) norm( norm)
+P-LQEAV S20 hb60bd6c2 abs( abs) norm( norm)
+P-LQEAV S22 hb13ea3d5 norm( norm) abs( abs) norm( norm)
+P-LQEAV S24 h856af5b4 norm( norm) norm( norm)
+P-LQEAV S25 he40140af norm( norm)
+P-LQEAV S28 h1717ec82 norm( norm) norm( norm)
+P-LQEAV S29 hbfd1e051 norm( norm)
+P-LQEAV S30 h269c4b6d norm( norm)
+P-LQEAV S32 h305e57a5 norm( norm)
+P-LQEAV S33 h27a20b90 norm( norm) abs( abs) abs( abs) norm( norm)
+P-LQEAV S35 hc196b2a3 abs( abs) abs( abs)
+P-LQEAV S36 hc6b70932 abs( abs)
+P-LQEAV S38 hc6b70932 abs( abs)
+P-LQEAV S39 hddfa3ac0 abs( abs) abs( abs) abs( abs) abs( abs) abs( abs)
+P-LQEAV S41 h551a3323 norm( norm) abs( abs) abs( abs) norm( norm)
+P-LQEAV S43 h346ed5aa norm( norm)
+P-LQEAV S44 h786a68e1 norm( norm)
+P-LQEAV S45 h44a10c2d norm( norm) norm( norm) norm( norm) norm( norm) norm( norm)
+P-LUYHY S7 hc046f35a norm( norm) norm( norm) norm( norm)
+P-LUYHY S11 h7143e1d8 norm( norm) norm( norm) abs( abs) norm( norm) norm( norm)
+P-LUYHY S12 h9083d7b6 norm( norm) norm( norm) norm( norm)
+P-LUYHY S14 ha1139c5a abs( abs) abs( abs) abs( abs) norm( norm) norm( norm)
+P-LUYHY S28 he1270080 norm( norm)
+P-LUYHY S31 h9391dc9d norm( norm) norm( norm) norm( norm)
+P-MLJMH S2 h4c078e3f norm( norm) norm( norm) norm( norm)
+P-MLJMH S11 hd69e4fa7 norm( norm) abs( abs)
+P-MLJMH S12 h9a588470 abs( abs) norm( norm)
+P-MLJMH S13 he035c3e6 abs( abs) norm( norm) abs( abs) norm( norm)
+P-MLJMH S14 hfd4811c3 norm( norm)
+P-MLJMH S16 h695b8422 norm( norm)
+P-MLJMH S18 h2cad9a4a abs( abs)
+P-MLJMH S19 h47b92e85 abs( abs) abs( abs)
+P-MLJMH S21 ha66d27f5 norm( norm) abs( abs) norm( norm)
+P-MLJMH S22 ha4da6802 abs( abs) norm( norm) norm( norm)
+P-MLJMH S23 h1e8d307b norm( norm) norm( norm) norm( norm)
+P-MLJMH S28 hf71e4f61 abs( abs) norm( norm)
+P-MLJMH S37 ha6efcd65 norm( norm)
+P-MLJMH S40 h581a1e80 abs( abs)
+P-MLJMH S44 ha9f306ed norm( norm)
+P-MLJMH S47 ha78e151e norm( norm) norm( norm) norm( norm)
+P-MLJMH S49 h952514c6 abs( abs) norm( norm) abs( abs)
+P-MLJMH S50 hfde3a93c abs( abs) norm( norm) norm( norm)
+P-NYOLD S0 hc0e5302a abs( abs)
+P-NYOLD S17 h9e4f29aa abs( abs)
+P-NYOLD S22 h19c75dee abs( abs)
+P-NYOLD S31 h3bd75150 abs( abs) abs( abs)
+P-NYOLD S33 h5f753f57 abs( abs)
+P-NYOLD S38 h5663c05b abs( abs) abs( abs)
+P-NYOLD S42 h7bd76711 abs( abs)
+P-NYOLD S43 h2c3b3fc6 abs( abs) abs( abs) abs( abs)
+P-NYOLD S46 h796e8e08 abs( abs)
+P-NYOLD S48 hf3d777ba abs( abs) abs( abs)
+P-NYOLD S59 h5b3d3aa6 abs( abs)
+P-NYOLD S62 h8e884fe5 abs( abs)
+P-NYOLD S65 h8b4c8bdf abs( abs) abs( abs)
+P-NYOLD S66 h5557cbfc abs( abs)
+P-NYOLD S68 h5c986074 abs( abs) abs( abs) norm( norm) abs( abs) abs( abs)
+P-NYOLD S69 hd58b7682 abs( abs)
+P-NYOLD S71 h60627eb4 abs( abs)
+P-NYZMD S15 h8db301dc norm( norm)
+P-NYZMD S16 h909d4932 norm( norm)
+P-NYZMD S29 hc429e264 norm( norm)
+P-NYZMD S32 h4f2ce60b norm( norm) norm( norm) norm( norm)
+P-NYZMD S33 h17f80ca2 norm( norm)
+P-NYZMD S34 hd91eedc5 norm( norm)
+P-NYZMD S35 hc9b3574c norm( norm)
+P-O2PWG S37 ha415e3bb abs( abs)
+P-O4USN S1 h40ab8f54 totvar( totvar)
+P-O4USN S6 h0b0ec41b totvar( totvar)
+P-O4USN S7 hec8bf591 totvar( totvar)
+P-O4USN S15 h1bcd4b1c totvar( totvar)
+P-O4USN S16 h8100e9ce totvar( totvar)
+P-O4USN S17 h34167f42 totvar( totvar)
+P-O4USN S18 hd53a637e totvar( totvar)
+P-O4USN S21 hd53a637e totvar( totvar)
+P-O4USN S23 hcfea98b9 totvar( totvar) totvar( totvar) totvar( totvar)
+P-O4USN S24 h50f5a177 abs( abs) totvar( totvar)
+P-O7DMP S15 hee96ff02 abs( abs)
+P-O7DMP S39 h36a5bc80 abs( abs)
+P-O7DMP S41 h5545f19e abs( abs)
+P-PUDXH S2 hcfa88e39 norm( norm)
+P-QVFZC S8 h2abcd224 measure( measure)
+P-QVFZC S17 h8de5a545 measure( measure)
+P-QVFZC S20 h2d13da59 measure( measure)
+P-QVFZC S29 h28152f81 measure( measure)
+P-QVFZC S31 h407aecbe measure( measure) measure( measure)
+P-QVFZC S37 h3e8f4816 measure( measure)
+P-TFXE2 S0 hd9228151 norm( norm)
+P-TFXE2 S8 hb122c6aa abs( abs)
+P-TFXE2 S12 h3605520b abs( abs)
+P-TFXE2 S13 ha33e277d abs( abs) abs( abs)
+P-TFXE2 S15 h87243a41 abs( abs)
+P-TFXE2 S18 h49b92110 norm( norm)
+P-TFXE2 S21 h26e8e945 norm( norm) norm( norm) norm( norm) norm( norm)
+P-TFXE2 S22 hab7900ad norm( norm)
+P-TFXE2 S23 h94909138 norm( norm)
+P-TFXE2 S25 h163c57fa norm( norm) abs( abs)
+P-TFXE2 S26 h7166ef6c norm( norm) norm( norm)
+P-TFXE2 S27 hccab45c1 norm( norm)
+P-XKFPD S4 he03876b6 abs( abs)
+P-XKFPD S5 h1d234989 abs( abs)
+P-XKFPD S10 h621caf4f abs( abs)
+P-XKFPD S14 hf3941254 abs( abs)
+P-XKFPD S15 h09e22e06 abs( abs)
+P-XKFPD S23 hb833cfac abs( abs)
+P-XKFPD S24 hb1d5b9f2 abs( abs)
+P-XKFPD S25 h4cc20501 abs( abs)
+P-XKFPD S28 hfae561f7 abs( abs)
+P-XKFPD S34 hfc285c98 abs( abs)
+P-XKFPD S38 h314fe6c2 abs( abs)
+P-XKFPD S48 hacf3b71a abs( abs)
+P-XKFPD S51 h9bc75495 abs( abs)
+P-XKFPD S65 h35a262da abs( abs)
+P-XLANN S11 h6687ee1a abs( abs)
+P-XLANN S14 hf55aef01 abs( abs)
+P-XLANN S25 h24575a2e abs( abs)
+P-XLANN S29 hf96aee72 abs( abs) abs( abs)
+P-XLANN S42 h56a8bebf abs( abs) abs( abs) abs( abs) abs( abs) abs( abs)
+P-XLANN S45 hb16b1d0f abs( abs)
+P-XLANN S51 hf2e19cfc abs( abs)
+P-XLANN S54 hd6b3fd17 abs( abs)
+P-XLANN S59 h50be9fb2 abs( abs) abs( abs)
+P-XLANN S61 h90d1bed4 abs( abs)
+P-YTOGK S0 h922dfaf4 norm( norm) norm( norm)
+P-YTOGK S8 h3498e69e abs( abs)
+P-YTOGK S21 h42e0006f abs( abs)
+P-YTOGK S23 hf395fa51 abs( abs) abs( abs) abs( abs)
+P-YTOGK S25 hbf25ba36 abs( abs)
+E-54CQC S13 hb02d4c00 restrict
+E-54CQC S37 h743eaf51 restrict
+P-KFPX5 S24 h9d1a8e82 restrict
+P-KFPX5 S124 hfde1c12d card( card)
+P-KFPX5 S138 hfde1c12d card( card)
+P-KFPX5 S141 hf63dfd61 restrict
+P-KFPX5 S145 h940c6ed7 restrict
+P-SDQTV S7 h4fa0377f restrict
+D-WB4M5 S7 hb38b25e5 restrict
+FD-XT6HD S23 h9976042f restrict
+FD-XT6HD S30 h9976042f restrict
+FF-6K35J S21 h0b88b894 restrict
+FF-6K35J S31 h3c173fab restrict
+FF-6K35J S42 h0b88b894 restrict
+L-C5DDK S9 hda07ef94 restrict
+L-C5DDK S11 h4efd1c40 restrict
+PR-FM5FN S5 h848fb38f restrict
+PR-QDRB4 S6 he5a9f29a restrict
+PR-QDRB4 S28 hbaf3e23e restrict
+D-ALGSTACK S10 hf5e4641c restrict
+D-ALGSTACK S14 h6a2daa66 restrict restrict
+D-ALGSTACK S19 h0b032063 restrict restrict
+D-COTCPLX S14 h3a8ec9ab restrict
+D-COTCPLX S21 h04e209be restrict
+D-DEFTALG S82 h279b2188 restrict
+D-DEFTALG S83 h307f0d52 restrict
+D-MODIDEAL S15 hd9a721b0 restrict
+D-MORFIB S30 h6f963ec9 restrict
+D-MORLOCAL S26 hf826df12 restrict
+D-PTIW0 S10 h537df3d4 restrict
+D-QNTZY S10 h68eba54f restrict
+D-QNTZY S24 h68eba54f restrict
+D-QNTZY S73 hccfd38c3 restrict
+D-SCHRELSPECPROJ S13 hc7bc4dc6 restrict
+D-SHFCONSTR S6 ha4cb026b restrict
+D-SHFFINE S5 h4d62b539 restrict
+D-SHFFINE S8 h0a411b55 restrict
+D-SHFLOCSYS S12 h7ad870c4 restrict
+D-SRFINT S12 hd5bf01de restrict
+D-SRFINT S13 ha0afd5a6 restrict
+D-SRFINT S26 h4d9004bb restrict
+D-UDIVH S16 h7256c5df restrict
+D-UDIVH S44 h0da1e97e restrict
+D-VJFAP S21 hee843d40 restrict
+FE-SRFBLOW S26 ha16fbd32 restrict
+PR-DIVLB S32 h7ede29e7 restrict
+PR-QX0VL S16 h44fe8a2c restrict restrict
+PR-SCHPROJFORM S9 hb7636a39 restrict
+PR-SCHPROJFORM S11 h7e7920f7 restrict
+PR-SCHPROJFORM S12 h28ff81e0 restrict
+PR-SCHPROJFORM S14 h47489d07 restrict restrict
+PR-VAREM1 S17 ha9c907fd restrict
+T-BASECHANGE S25 h033ea252 restrict
+T-CRVJACFUN S23 h5eca4314 restrict
+T-D8TUX S18 h113536c7 restrict
+T-D8TUX S19 hc97904e0 restrict
+T-SRFADJ S4 h93a9c892 restrict
+T-SRFADJ S23 ha3b3bb92 restrict
+T-TORDIV S89 h69c372a1 restrict
+T-XECJ3 S31 h230f2ade restrict
+D-GFM35 S10 hfd9e026f restrict
+D-KVAI3 S7 he563bb19 restrict
+D-KVAI3 S10 ha63296f8 restrict
+D-RQS4J S6 h55ca4a23 restrict
+D-RQS4J S12 ha4cef825 restrict restrict
+D-ZVY6X S15 hc6f53cbe restrict
+D-ZVY6X S22 h98806203 restrict
+FD-ONITX S8 h863b6a7d restrict
+wiki/algebra/linear-algebra/the-spectral-theorem.md S42 hc6823335 restrict
+wiki/algebra/linear-algebra/the-spectral-theorem.md S44 hc6823335 restrict
+wiki/algebra/linear-algebra/the-spectral-theorem.md S45 h6c8790d4 restrict restrict
+wiki/algebraic-geometry/cohomology/computing-cohomology.md S24 h235b489d restrict
+wiki/algebraic-geometry/cohomology/vanishing-and-duality.md S2 hd9648a84 restrict
+wiki/algebraic-geometry/curves-and-surfaces/intersection-theory-on-surfaces.md S3 h0d7d3cc2 restrict
+wiki/algebraic-geometry/curves-and-surfaces/intersection-theory-on-surfaces.md S5 ha2262c20 restrict
+wiki/complex-analysis/basics/series-reference.md S82 h1b1c5e0f new:longdivision
+wiki/real-analysis/measure/is-it-measurable.md S8 h793104b0 restrict
+wiki/real-analysis/undergraduate/sets-and-compactness.md S12 h2ca712de restrict
+wiki/real-analysis/undergraduate/sets-and-compactness.md S13 h14361797 restrict
+wiki/topology/appendices/appendix.md S30 h1d8eb465 restrict restrict
+wiki/topology/appendices/appendix.md S38 he6da1cf6 restrict restrict

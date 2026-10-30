@@ -53,6 +53,9 @@ def check(root: Path, *args: str) -> subprocess.CompletedProcess[str]:
         (CARD.replace("\n\n::: {.hint}", "\nA trailing line.\n::: {.hint}", 1), "follows text"),
         (CARD + "\nLet $x \\in \\mathbb{R}$.\n", "is written with its semantic macro"),
         (CARD + "\nLet \\(x \\in A\\).\n", "delimits math"),
+        (CARD + "\nLet $a \\definedas b$.\n", "is written \\coloneqq"),
+        (CARD + "\nThen $|f(z)| \\le 1$.\n", "is written with the semantic macro for its meaning"),
+        (CARD + "\nThen $\\left\\| f \\right\\|_2 \\le 1$.\n", "is written with the semantic macro for its meaning"),
         (CARD + "\n\\begin{tikzcd}\n\ta \\\\\n\t& b\n\t\\arrow[from=1-1, to=2-1]\n\\end{tikzcd}\n", "tikzcd compilation produced no SVG"),
     ],
 )
@@ -83,6 +86,16 @@ def test_staged_validation_ignores_unstaged_edits_and_unrelated_cards(repo: Path
     assert result.returncode == 0, result.stderr
     assert "1 changed file(s) checked" in result.stdout
     assert git(repo, "show", ":corpus/one card.md") == staged
+
+
+def test_semantic_bar_macros_and_array_column_rules_pass(repo: Path) -> None:
+    card = repo / "corpus/one card.md"
+    card.write_text(CARD + "\nThen $\\abs{f} \\le \\norm{g}_2$ on $\\{x \\st x \\divides 6\\}$ and $\\begin{array}{c|c} a & b \\end{array}$, with `a|b` and a | b outside mathematics.\n")
+    git(repo, "add", "corpus/one card.md")
+
+    result = check(repo, "check-staged")
+
+    assert result.returncode == 0, result.stderr
 
 
 def test_outgoing_validation_reads_committed_cards_and_accepts_repairs(repo: Path) -> None:

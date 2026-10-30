@@ -26,6 +26,95 @@ TIKZCD = re.compile(r"\\begin\{tikzcd\}.*?\\end\{tikzcd\}", re.DOTALL)
 RAW_BLACKBOARD = re.compile(r"\\(?:mathbb|Bbb)(?![A-Za-z])")
 # STYLE-02: math is delimited with dollars; `\\[` (a line break with spacing) is not a delimiter.
 BACKSLASH_DELIMITER = re.compile(r"(?<!\\)\\[\[\]()]")
+# STYLE-04: a definitional equality is `\coloneqq`; `\definedas` is its alias.
+DEFINEDAS = re.compile(r"\\definedas(?![A-Za-z])")
+# STYLE-04: a bar in mathematics has one semantic macro per meaning (`\abs`, `\norm`,
+# `\cardinality`, `\st`, `\divides`, ...), so a raw bar glyph is never authored.
+BAR_GLYPHS = frozenset({"|", "\\|", "\\vert", "\\Vert", "\\lvert", "\\rvert", "\\lVert", "\\rVert"})
+BAR_SIZES = frozenset({"\\left", "\\right", "\\middle"} | {f"\\{size}{side}" for size in ("big", "Big", "bigg", "Bigg") for side in ("", "l", "r", "m")})
+# Pandoc's tex_math_dollars: `$$` displays, and `$` spans whose opener is not followed and
+# whose closer is not preceded by whitespace, and whose closer is not followed by a digit.
+MATH_SPAN = re.compile(r"\$\$(?P<display>.+?)\$\$|\$(?![\s$])(?P<inline>(?:[^$\\]|\\.)+?)(?<!\s)\$(?!\d)", re.DOTALL)
+CODE = re.compile(r"^(?P<fence>```+|~~~+).*?^(?P=fence)[ \t]*$|(?P<ticks>`+)(?!`).+?(?<!`)(?P=ticks)(?!`)", re.DOTALL | re.MULTILINE)
+TEX_TOKEN = re.compile(r"\\(?:[A-Za-z]+|.)|.", re.DOTALL)
+
+
+@dataclass(frozen=True)
+class BarToken:
+    """One bar glyph in a math span, with any `\\left`/`\\big`-style size prefix, as offsets into the span."""
+
+    start: int
+    end: int
+    text: str
+
+
+def math_spans(text: str) -> list[tuple[int, int]]:
+    """Offsets of the contents of each dollar-delimited math span outside code."""
+    spans: list[tuple[int, int]] = []
+    position = 0
+    while (match := MATH_SPAN.search(text, position)) is not None:
+        code = CODE.search(text, position)
+        if code is not None and code.start() < match.start():
+            position = code.end()
+            continue
+        if match.start() > 0 and text[match.start() - 1] == "\\":
+            position = match.start() + 1
+            continue
+        group = "display" if match["display"] is not None else "inline"
+        if group == "inline" and re.search(r"\n[ \t]*\n", match[group]):
+            position = match.start() + 1
+            continue
+        spans.append((match.start(group), match.end(group)))
+        position = match.end()
+    return spans
+
+
+def bar_tokens(math: str) -> list[BarToken]:
+    """Raw bar glyphs in one math span, outside tikzcd diagrams and array column specifications.
+
+    Tokenizes as TeX does: a control word, a control symbol, or one character, so `\\\\|`
+    is a line break followed by a bar and `\\|` is the double-bar control symbol.
+    """
+    tokens = [(match.start(), match.end(), match.group()) for match in TEX_TOKEN.finditer(math)]
+    bars: list[BarToken] = []
+    skip_until = -1
+    index = 0
+    while index < len(tokens):
+        start, end, text = tokens[index]
+        if start < skip_until:
+            index += 1
+            continue
+        if text == "\\begin":
+            environment = re.match(r"\s*\{(\w+\*?)\}", math[end:])
+            if environment and environment[1] == "tikzcd":
+                close = math.find("\\end{tikzcd}", end)
+                skip_until = len(math) if close < 0 else close
+            elif environment and environment[1] in ("array", "tabular"):
+                spec = re.match(r"\s*\{\w+\*?\}\s*(?:\[[^\]]*\]\s*)?\{(?:[^{}]|\{[^{}]*\})*\}", math[end:])
+                if spec:
+                    skip_until = end + spec.end()
+        elif text in BAR_SIZES:
+            glyph = index + 1
+            while glyph < len(tokens) and tokens[glyph][2].isspace():
+                glyph += 1
+            if glyph < len(tokens) and tokens[glyph][2] in BAR_GLYPHS:
+                bars.append(BarToken(start, tokens[glyph][1], math[start : tokens[glyph][1]]))
+                index = glyph + 1
+                continue
+        elif text in BAR_GLYPHS:
+            bars.append(BarToken(start, end, text))
+        index += 1
+    return bars
+
+
+def raw_notation(source: str) -> str | None:
+    """The first STYLE-04 raw form in a card or page source, or None."""
+    if raw := DEFINEDAS.search(source):
+        return f"{raw.group()} is written \\coloneqq (STYLE-04)"
+    for start, end in math_spans(source):
+        if bars := bar_tokens(source[start:end]):
+            return f"raw bar {bars[0].text!r} in ${source[start:end]}$ is written with the semantic macro for its meaning (STYLE-04)"
+    return None
 
 
 def card_header(text: str, path: Path) -> Card:
@@ -63,6 +152,8 @@ def check_git_changes(changes: list[GitChange]) -> int:
                 errors.append(f"{change.path}: {raw.group()} is written with its semantic macro (STYLE-03)")
             if raw := BACKSLASH_DELIMITER.search(source):
                 errors.append(f"{change.path}: {raw.group()} delimits math; use $...$ or $$...$$ (STYLE-02)")
+            if raw := raw_notation(source):
+                errors.append(f"{change.path}: {raw}")
         except ValueError as exc:
             errors.append(str(exc))
         except RuntimeError as exc:
