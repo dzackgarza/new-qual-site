@@ -19,24 +19,19 @@ audit:
 ---
 
 ::: {.exercise}
-The following links the multiplication of Dirichlet series with the divisibility properties of their coeficients.
+The following links the multiplication of Dirichlet series with the divisibility properties of their coefficients.
 
-(a) Show that if $\{ a _ { m } \}$ and $\{ b _ { k } \}$ are two bounded sequences of complex numbers, then
-
+(a) Show that if $\{a_m\}$ and $\{b_k\}$ are two bounded sequences of complex numbers, then
 $$
-\left(\sum_ {m = 1} ^ {\infty} \frac {a _ {m}}{m ^ {s}}\right) \left(\sum_ {k = 1} ^ {\infty} \frac {b _ {k}}{k ^ {s}}\right) = \sum_ {n = 1} ^ {\infty} \frac {c _ {n}}{n ^ {s}} \quad \text { where } c _ {n} = \sum_ {m k = n} a _ {m} b _ {k}.
+\left( \sum_{m=1}^{\infty} \frac{a_m}{m^s} \right) \left( \sum_{k=1}^{\infty} \frac{b_k}{k^s} \right) = \sum_{n=1}^{\infty} \frac{c_n}{n^s} \quad \text{where } c_n = \sum_{mk = n} a_m b_k.
 $$
-
-The above series converge absolutely when $\operatorname { R e } ( s ) > 1$
+The above series converge absolutely when $\Re(s) > 1$.
 
 (b) Prove as a consequence that one has
-
 $$
-(\zeta (s)) ^ {2} = \sum_ {n = 1} ^ {\infty} \frac {d (n)}{n ^ {s}} \quad \text { and } \quad \zeta (s) \zeta (s - a) = \sum_ {n = 1} ^ {\infty} \frac {\sigma_ {a} (n)}{n ^ {s}}
+(\zeta(s))^2 = \sum_{n=1}^{\infty} \frac{d(n)}{n^s} \quad \text{and} \quad \zeta(s)\zeta(s - a) = \sum_{n=1}^{\infty} \frac{\sigma_a(n)}{n^s}
 $$
-
-for $\operatorname { R e } ( s ) > 1$ and $\operatorname { R e } ( s - a ) > 1$ , respectively.
-Here $d ( n )$ equals the number of divisors of $n _ { \mathrm { : } }$ , and $\sigma _ { a } ( n )$ is the sum of the $a ^ { \mathrm { t h } }$ powers of divisors of $n$ . In particular, one has $\sigma _ { 0 } ( n ) = d ( n )$
+for $\Re(s) > 1$ and $\Re(s - a) > 1$, respectively. Here $d(n)$ equals the number of divisors of $n$, and $\sigma_a(n)$ is the sum of the $a^{\text{th}}$ powers of divisors of $n$. In particular, one has $\sigma_0(n) = d(n)$.
 :::
 
 ::: {.solution}

@@ -14,13 +14,11 @@ review: draft
 ---
 
 ::: {.exercise}
-$^\ast$ Using the previous problem one can show that
-
+$^*$ Using the previous problem one can show that
 $$
-\pi (x) - \operatorname{Li} (x) = O (x ^ {\alpha + \epsilon}) \quad \mathrm{as} x \to \infty
+\pi(x) - \operatorname{Li}(x) = O(x^{\alpha + \epsilon}) \quad \text{as } x \to \infty
 $$
-
-for every $\epsilon > 0$ , where $\alpha$ is fixed and $1 / 2 \le \alpha < 1$ if and only if $\zeta ( s )$ has no zeros in the strip $\alpha < \mathrm { R e } ( s ) < 1$ . The case $\alpha = 1 / 2$ corresponds to the Riemann hypothesis.
+for every $\epsilon > 0$, where $\alpha$ is fixed and $1/2 \leq \alpha < 1$ if and only if $\zeta(s)$ has no zeros in the strip $\alpha < \Re(s) < 1$. The case $\alpha = 1/2$ corresponds to the Riemann hypothesis.
 :::
 
 ::: {.solution}

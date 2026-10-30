@@ -18,23 +18,19 @@ audit:
 ---
 
 ::: {.exercise}
-Let $\textstyle F ( s ) = \sum _ { n = 1 } ^ { \infty } a _ { n } / n ^ { s }$ , where $\abs{ a _ { n } } \leq M$ for all n.
+Let $F(s) = \sum_{n=1}^{\infty} a_n/n^s$, where $\abs{a_n} \leq M$ for all $n$.
 
 (a) Then
-
 $$
-\lim _ {T \to \infty} \frac {1}{2 T} \int_ {- T} ^ {T} \abs{ F (\sigma + i t) } ^ {2} d t = \sum_ {n = 1} ^ {\infty} \frac {\abs{ a _ {n} } ^ {2}}{n ^ {2 \sigma}} \quad \text { if } \sigma > 1.
+\lim_{T \to \infty} \frac{1}{2T} \int_{-T}^{T} \abs{F(\sigma + it)}^2\, dt = \sum_{n=1}^{\infty} \frac{\abs{a_n}^2}{n^{2\sigma}} \quad \text{if } \sigma > 1.
 $$
+How is this reminiscent of the Parseval-Plancherel theorem? See e.g. Chapter 3 in Book I.
 
-How is this reminiscent of the Parseval-Plancherel theorem?
-See e.g. Chapter 3 in Book I.
-
-(b) Show as a consequence the uniqueness of Dirichlet series: If $\scriptstyle F ( s ) = \sum _ { n = 1 } ^ { \infty } a _ { n } n ^ { - s }$ where the coeficients are assumed to satisfy $\abs{ a _ { n } } \leq c n ^ { k }$ for some k, and $F ( s ) \equiv 0$ , then $a _ { n } = 0$ for all n.
+(b) Show as a consequence the uniqueness of Dirichlet series: If $F(s) = \sum_{n=1}^{\infty} a_n n^{-s}$ where the coefficients are assumed to satisfy $\abs{a_n} \leq cn^k$ for some $k$, and $F(s) \equiv 0$, then $a_n = 0$ for all $n$.
 
 Hint: For part (a) use the fact that
-
 $$
-\frac {1}{2 T} \int_ {- T} ^ {T} (n m) ^ {- \sigma} n ^ {- i t} m ^ {i t}   d t \to \left\{ \begin{array}{l l} n ^ {- 2 \sigma} & \text {if} n = m, \\ 0 & \text {if} n \neq m. \end{array} \right.
+\frac{1}{2T} \int_{-T}^{T} (nm)^{-\sigma} n^{-it} m^{it}\, dt \to \begin{cases} n^{-2\sigma} & \text{if } n = m, \\ 0 & \text{if } n \neq m. \end{cases}
 $$
 :::
 

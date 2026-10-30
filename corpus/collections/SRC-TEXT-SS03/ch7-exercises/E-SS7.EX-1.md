@@ -16,22 +16,17 @@ audit:
 ---
 
 ::: {.exercise}
-Suppose that $\{ a _ { n } \} _ { n = 1 } ^ { \infty }$ is a sequence of real numbers such that the partial sums
-
+Suppose that $\{a_n\}_{n=1}^{\infty}$ is a sequence of real numbers such that the partial sums
 $$
-A _ {n} = a _ {1} + \dots + a _ {n}
+A_n = a_1 + \cdots + a_n
 $$
-
-are bounded.
-Prove that the Dirichlet series
-
+are bounded. Prove that the Dirichlet series
 $$
-\sum_ {n = 1} ^ {\infty} \frac {a _ {n}}{n ^ {s}}
+\sum_{n=1}^{\infty} \frac{a_n}{n^s}
 $$
+converges for $\Re(s) > 0$ and defines a holomorphic function in this half-plane.
 
-converges for $\operatorname { R e } ( s ) > 0$ and defines a holomorphic function in this half-plane.
-
-[Hint: Use summation by parts to compare the original (non-absolutely convergent) series to the (absolutely convergent) series $\sum A _ { n } ( n ^ { - s } - ( n + 1 ) ^ { - s } )$ . An estimate for the term in parentheses is provided by the mean value theorem. To prove that the series is analytic, show that the partial sums converge uniformly on every compact subset of the half-plane $\operatorname { R e } ( s ) > 0 . ]$
+[Hint: Use summation by parts to compare the original (non-absolutely convergent) series to the (absolutely convergent) series $\sum A_n (n^{-s} - (n + 1)^{-s})$. An estimate for the term in parentheses is provided by the mean value theorem. To prove that the series is analytic, show that the partial sums converge uniformly on every compact subset of the half-plane $\Re(s) > 0$.]
 :::
 
 ::: {.solution}
