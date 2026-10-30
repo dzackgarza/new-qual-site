@@ -19,25 +19,18 @@ audit:
 
 ::: {.exercise}
 Let
-
 $$
-F (x) = \sum_ {n = 0} ^ {\infty} p (n) x ^ {n} = \prod_ {n = 1} ^ {\infty} \frac {1}{1 - x ^ {n}}
+F(x) = \sum_{n=0}^{\infty} p(n) x^n = \prod_{n=1}^{\infty} \frac{1}{1 - x^n}
 $$
-
-be the generating function for the partitions.
-Show that
-
+be the generating function for the partitions. Show that
 $$
-\log F (x) \sim \frac {\pi^ {2}}{6 (1 - x)} \quad \mathrm{as} x \to 1, \mathrm{with} 0 <   x <   1.
+\log F(x) \sim \frac{\pi^2}{6(1 - x)} \quad \text{as } x \to 1, \text{ with } 0 < x < 1.
 $$
-
-[Hint: Use log $\textstyle F ( x ) = \sum \log ( 1 / ( 1 - x ^ { n } ) )$ and log $\textstyle ( 1 / ( 1 - x ^ { n } ) ) = \sum ( 1 / m ) x ^ { n m }$ , so
-
+[Hint: Use $\log F(x) = \sum \log(1/(1 - x^n))$ and $\log(1/(1 - x^n)) = \sum (1/m) x^{nm}$, so
 $$
-\log F (x) = \sum {\frac {1}{m}} {\frac {x ^ {m}}{1 - x ^ {m}}}.
+\log F(x) = \sum \frac{1}{m} \frac{x^m}{1 - x^m}.
 $$
-
-Use also $m x ^ { m - 1 } ( 1 - x ) < 1 - x ^ { m } < m ( 1 - x ) . ]$
+Use also $m x^{m-1}(1 - x) < 1 - x^m < m(1 - x)$.]
 :::
 
 ::: {.solution}

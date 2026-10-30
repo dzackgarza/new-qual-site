@@ -23,12 +23,10 @@ audit:
 
 ::: {.exercise}
 Prove that
-
 $$
-\frac {(\Theta^ {\prime} (z \thetaseparator \tau)) ^ {2} - \Theta (z \thetaseparator \tau) \Theta^ {\prime \prime} (z \thetaseparator \tau)}{\Theta (z \thetaseparator \tau) ^ {2}} = \wp_ {\tau} (z - 1 / 2 - \tau / 2) + c _ {\tau},
+\frac{(\Theta'(z \thetaseparator \tau))^2 - \Theta(z \thetaseparator \tau)\, \Theta''(z \thetaseparator \tau)}{\Theta(z \thetaseparator \tau)^2} = \wp_\tau(z - 1/2 - \tau/2) + c_\tau,
 $$
-
-where $c _ { \tau }$ can be expressed in terms of the first three derivatives of $\Theta ( z \thetaseparator \tau )$ , with respect to $z$ , at $z = 1 / 2 + \tau / 2$ . Compare this formula with the result in Exercise 5 in the previous chapter.
+where $c_\tau$ can be expressed in terms of the first three derivatives of $\Theta(z \thetaseparator \tau)$, with respect to $z$, at $z = 1/2 + \tau/2$. Compare this formula with the result in Exercise 5 in the previous chapter.
 :::
 
 ::: {.solution}

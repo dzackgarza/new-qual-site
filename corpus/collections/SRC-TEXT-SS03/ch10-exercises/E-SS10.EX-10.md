@@ -22,13 +22,13 @@ audit:
 ---
 
 ::: {.exercise}
-Observe the following irregularities of the functions $r _ { 2 } ( n )$ and $r _ { 4 } ( n )$ as n becomes large:
+Observe the following irregularities of the functions $r_2(n)$ and $r_4(n)$ as $n$ becomes large:
 
-(a) $r _ { 2 } ( n ) = 0$ for infinitely many n, while $\limsup_{n\to\infty} r_2(n) = \infty$ ,
+(a) $r_2(n) = 0$ for infinitely many $n$, while $\limsup_{n \to \infty} r_2(n) = \infty$,
 
-(b) $r _ { 4 } ( n ) = 2 4$ for infinitely many n while $\limsup_{n\to\infty} r_4(n)/n = \infty$ .
+(b) $r_4(n) = 24$ for infinitely many $n$ while $\limsup_{n \to \infty} r_4(n)/n = \infty$.
 
-[Hint: For (a) consider $n = 5 ^ { k }$ ; for (b) consider alternatively $n = 2 ^ { k }$ , and $n = q ^ { k }$ using products of many distinct odd primes.]
+[Hint: For (a) consider $n = 5^k$; for (b) consider alternatively $n = 2^k$, and $n = q^k$ using products of many distinct odd primes.]
 :::
 
 ::: {.solution}
