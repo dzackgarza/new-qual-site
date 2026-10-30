@@ -76,3 +76,10 @@ $$
 =\frac{\pi^2}{\sin^2(\pi u)}.
 $$
 :::
+
+::: {.remark title="Variations"}
+$$
+\sum_{k\in \ZZ} \frac{1}{\qty{k - \frac12}^2} = \pi^2.
+$$
+This is the main identity at $u=-\frac12$, where $\sin^2(\pi u)=1$.
+:::

@@ -36,7 +36,6 @@ source:
   - id: E-6H7HD
   - id: E-6IZL3
   - id: E-6ULIT
-  - id: E-6XPQW
   - id: E-7PAHX
   - id: E-7ZCKU
   - id: E-AHBVF
