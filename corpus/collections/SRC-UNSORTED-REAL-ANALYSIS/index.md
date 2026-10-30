@@ -54,7 +54,6 @@ source:
   - id: P-15UQB
   - id: P-B1WAS
   - id: P-6M4YH
-  - id: P-DPR0E
   - id: P-1FPTH
   - id: P-5CM5W
   - id: P-5EVB3
@@ -92,7 +91,6 @@ source:
   - id: P-RVL3K
   - id: P-TFXE2
   - id: P-TZJQI
-  - id: P-V33ML
   - id: P-VLZN2
   - id: P-VPCUJ
   - id: P-X1WOB
