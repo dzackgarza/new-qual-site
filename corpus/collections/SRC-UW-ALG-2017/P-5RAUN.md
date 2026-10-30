@@ -19,8 +19,7 @@ audit:
 
 ::: {.problem}
 Show that a finite simple group cannot have a 2-dimensional irreducible representation over $\CC$.
-
-> Hint: the determinant might prove useful.
+(Hint: the determinant might prove useful.)
 :::
 
 
@@ -31,7 +30,7 @@ $$
 $$
 is irreducible.
 
-First, $ho$ is faithful. Indeed, $\ker\rho\trianglelefteq G$. Since $G$ is simple, $\ker\rho$ is either $1$ or $G$. The latter would make the representation trivial, hence reducible in dimension $2$. Thus $\ker\rho=1$.
+First, $\rho$ is faithful. Indeed, $\ker\rho\trianglelefteq G$. Since $G$ is simple, $\ker\rho$ is either $1$ or $G$. The latter would make the representation trivial, hence reducible in dimension $2$. Thus $\ker\rho=1$.
 
 Consider
 $$
@@ -41,7 +40,7 @@ Its kernel is normal. If its kernel were trivial, then $G$ would embed in the ab
 $$
 \det\rho(g)=1\qquad\text{for every }g\in G.
 $$
-Thus $ho(G)\subseteq \SL_2(\CC)$.
+Thus $\rho(G)\subseteq \SL_2(\CC)$.
 
 We now justify that $2\mid \cardinality{G}$. We use the standard character-degree divisibility argument, included here for completeness. Let $\chi$ be an irreducible complex character of degree $d=\chi(1)$. For each conjugacy class $C$ with representative $c$, the class sum
 $$
@@ -67,15 +66,15 @@ By Cauchy's theorem, $G$ has an element $t$ of order $2$. Since
 $$
 \rho(t)^2=I,
 $$
-the matrix $ho(t)$ is diagonalizable with eigenvalues in $\{1,-1\}$. Also
+the matrix $\rho(t)$ is diagonalizable with eigenvalues in $\{1,-1\}$. Also
 $$
 \det\rho(t)=1.
 $$
-Therefore its two eigenvalues are either both $1$ or both $-1$. Faithfulness excludes $ho(t)=I$, because $t\ne1$. Hence
+Therefore its two eigenvalues are either both $1$ or both $-1$. Faithfulness excludes $\rho(t)=I$, because $t\ne1$. Hence
 $$
 \rho(t)=-I.
 $$
-But $-I$ is central in $ho(G)$. Since $ho$ is faithful, $t\in Z(G)$. Thus $Z(G)\ne1$. Simplicity forces $Z(G)=G$, so $G$ is abelian, again contradicting the existence of a $2$-dimensional irreducible complex representation.
+But $-I$ is central in $\rho(G)$. Since $\rho$ is faithful, $t\in Z(G)$. Thus $Z(G)\ne1$. Simplicity forces $Z(G)=G$, so $G$ is abelian, again contradicting the existence of a $2$-dimensional irreducible complex representation.
 
 Hence a finite simple group has no $2$-dimensional irreducible complex representation.
 :::

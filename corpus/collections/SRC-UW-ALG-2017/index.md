@@ -21,7 +21,10 @@ source:
   - P-MMAQ-MLE74H7M42
   - P-MMAQ-P35KHOGFWR
   - P-MMAQ-FBNP7JLLPX
+  - P-TSQDV
+  - P-7P63H
   - P-5RAUN
+  - P-H1NVQ
   source_kind: university-exam
 title: UW Algebra Qualifying Exam 2017
 ---

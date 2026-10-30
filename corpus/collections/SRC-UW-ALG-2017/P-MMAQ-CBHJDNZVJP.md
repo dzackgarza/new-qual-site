@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-CBHJDNZVJP
 kind: problem
-title: Hilbert Basis Theorem for $R[x]$ and $R[[x]]$
+title: Hilbert basis theorem for $R[x]$ and $R[[x]]$
 classification:
   areas:
   - algebra

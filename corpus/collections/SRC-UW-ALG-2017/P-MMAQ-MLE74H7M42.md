@@ -59,7 +59,7 @@ Finally, let $F$ be any field with $p^n$ elements. Its multiplicative group $F^\
 $$
 a^{p^n-1}=1,
 $$
-and hence $a^{p^n}=a$; this is also true for $a=0$. Thus every element of $F$ is a root of $X^{p^n}-X$. Since this polynomial has exactly $p^n$ roots in an algebraic closure, $F$ is identified with the full root field $E$ above.
+and hence $a^{p^n}=a$; this is also true for $a=0$. Thus every element of $F$ is a root of $X^{p^n}-X$. Since $F$ is algebraic over $\FF_p$, there is an $\FF_p$-embedding $\iota:F\hookrightarrow\overline{\FF_p}$. Its image consists of $p^n$ roots of $X^{p^n}-X$, so $\iota(F)\subseteq E$, and equality holds because both sets have $p^n$ elements. Hence $F\cong E$.
 
 Therefore, up to isomorphism, there is exactly one finite field of order $p^n$ for each prime power $p^n$, and there are no finite fields of any other order.
 :::
