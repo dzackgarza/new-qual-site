@@ -1023,7 +1023,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/topology/fundamental-group/compute-pi-1.md
   - [x] wiki/topology/fundamental-group/index.md
   - [x] wiki/topology/fundamental-group/theorems.md
-  - [ ] wiki/topology/homology/compute-h-star.md
+  - [x] wiki/topology/homology/compute-h-star.md
   - [ ] wiki/topology/homology/exercises.md
   - [ ] wiki/topology/homology/homological-algebra.md
   - [ ] wiki/topology/homology/homology.md
