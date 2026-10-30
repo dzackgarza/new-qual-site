@@ -54,22 +54,21 @@ Copy is reader-facing prose: wiki pages, remarks, and site strings. Problem stat
 proofs are mathematics, not copy. A defect in a statement or proof is repaired as a
 mathematical correction under its own node, not under copy policy.
 
-- **`audited-deployment`**. **Needs:** none. Push so `development.yml` deploys, then audit
-  the deployed site at <https://dzackgarza.github.io/new-qual-site/> in open-ended rounds.
-  Each round reads the deployed pages against the [CONTRIBUTING.md](CONTRIBUTING.md#policy-families)
-  policies and checks their mathematics for incorrect facts, statements, and solutions; it is
-  a reading of the site, not a lint or crawl count.
-  Every finding becomes a node in this DAG, named by its card or page, with its immediate
-  Needs and acceptance, and `audited-deployment` gains it as a prerequisite.
-  A round with any finding resets the count; repair the injected nodes, redeploy, and start again.
-  **Acceptance:** every item of the reading checklist below is ticked, every injected node is
-  closed, and the deployed revision carries all their repairs. A round is one reader's slice of
-  the checklist; rounds 1-9 sampled slices without recording coverage, so the checklist starts
+- **`audited-deployment`**. **Needs:** none. Read the whole site content in its source form
+  (collection cards, the problem cards they list, and wiki markdown) against the source PDFs and
+  extractions, the [CONTRIBUTING.md](CONTRIBUTING.md#policy-families) policies, and the
+  mathematics. Check for incorrect facts, statements, and solutions; it is a reading, not a lint
+  or crawl count. A reader fixes each defect in place and commits it with the item; only a
+  defect the reader cannot repair becomes a node in this DAG, named by its card or page, and
+  `audited-deployment` gains it as a prerequisite. Nothing waits for a deploy: ordinary pushes
+  deploy the repairs, and a rendering-only defect is checked on whatever revision is live.
+  **Acceptance:** every item of the reading checklist below is ticked and every injected node is
+  closed. Rounds 1-9 sampled slices without recording coverage, so the checklist starts
   unticked.
   Round 1 (revision `fe928e9a1`) injected the nodes below; `audited-deployment` needs all of them.
 
-  Reading checklist. Each item is read once, in full, on the deployed site against its
-  source; every finding becomes a node above before the item is ticked.
+  Reading checklist. Each item is read once, in full, against its source; its repairs are
+  committed before the item is ticked.
   Collections (the collection page and every problem page it lists):
   - [ ] SRC-AG-EXAM-PROBLEMS-2015
   - [ ] SRC-AG-HOMEWORK
