@@ -32,20 +32,41 @@ H_1=\langle\sigma^2,\tau\rangle=\{e,\tau,\sigma^2,\tau\sigma^2\},
 \qquad
 H_2=\langle\tau\rangle=\{e,\tau\}\le H_1,
 $$
-and $E=L^{H_1}$, $K=L^{H_2}$. Since $\sigma^2(\sqrt[4]{2})=-\sqrt[4]{2}$, the element $\sqrt2=(\sqrt[4]{2})^2$ is fixed by $\sigma^2$ and $\tau$, and $\sqrt[4]{2}$ is fixed by $\tau$; comparing degrees gives
-$$
-E=\QQ(\sqrt2),
-\qquad
-K=\QQ(\sqrt[4]{2}).
-$$
-By the Galois correspondence, $E/F$ is normal if and only if $H_1\trianglelefteq D_4$, $K/E$ is normal if and only if $H_2\trianglelefteq H_1$, and $K/F$ is normal if and only if $H_2\trianglelefteq D_4$.
+and $E=L^{H_1}$, $K=L^{H_2}$.
 
-- $[D_4:H_1]=2$, so $H_1\trianglelefteq D_4$ and $E/F$ is normal.
+::: pf
 
-- $[H_1:H_2]=2$, so $H_2\trianglelefteq H_1$ and $K/E$ is normal.
+::: {.pf-step #s1}
+$E=\QQ(\sqrt2)$ and $K=\QQ(\sqrt[4]{2})$.
 
-- $\sigma\tau\sigma^{-1}=\sigma^2\tau\notin H_2$, so $H_2\not\trianglelefteq D_4$ and $K/F$ is not normal: $x^4-2$ has the root $\sqrt[4]{2}$ in $K\subseteq\RR$ but not the root $i\sqrt[4]{2}$.
+::: pf-proof
+Since $\sigma^2(\sqrt[4]{2})=-\sqrt[4]{2}$, the element $\sqrt2=(\sqrt[4]{2})^2$ is fixed by $\sigma^2$ and $\tau$, and $\sqrt[4]{2}$ is fixed by $\tau$. The Galois correspondence gives $[E:\QQ]=[D_4:H_1]=2$ and $[K:\QQ]=[D_4:H_2]=4$, which are the degrees of $\QQ(\sqrt2)$ and $\QQ(\sqrt[4]{2})$.
+:::
 
-The tower $\QQ\subseteq\QQ(\sqrt2)\subseteq\QQ(\sqrt[4]{2})\subseteq\QQ(\sqrt[4]{2},i)$ therefore has the required properties.
-$\blacksquare$
+:::
+
+::: {.pf-step #s2}
+$E/F$ and $K/E$ are normal.
+
+::: pf-proof
+By the Galois correspondence, $E/F$ is normal if and only if $H_1\trianglelefteq D_4$, and $K/E$ is normal if and only if $H_2\trianglelefteq H_1$. Both subgroups have index $2$ in the larger group, so both are normal.
+:::
+
+:::
+
+::: {.pf-step #s3}
+$K/F$ is not normal.
+
+::: pf-proof
+By the Galois correspondence, $K/F$ is normal if and only if $H_2\trianglelefteq D_4$. But $\sigma\tau\sigma^{-1}=\tau\sigma^{-2}=\tau\sigma^2\notin H_2$. Equivalently, $x^4-2$ has the root $\sqrt[4]{2}$ in $K\subseteq\RR$ but not the root $i\sqrt[4]{2}$.
+:::
+
+:::
+
+::: pf-qed
+By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, the tower $\QQ\subseteq\QQ(\sqrt2)\subseteq\QQ(\sqrt[4]{2})\subseteq\QQ(\sqrt[4]{2},i)$ has the required properties.
+:::
+
+:::
+
 :::

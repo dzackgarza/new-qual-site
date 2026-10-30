@@ -75,7 +75,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-AGX-MISC-AG-PROBLEMS
   - [x] SRC-AGX-VARIETIES-PROBLEMS
   - [x] SRC-ALG-ART-HEACCB
-  - [ ] SRC-ALG-ART-PSET5-QUALS
+  - [x] SRC-ALG-ART-PSET5-QUALS
   - [ ] SRC-ALG-ART-QHGA3N
   - [ ] SRC-ALG-ART-SEPT2019
   - [ ] SRC-ALG-QUAL-WINTER-2018
