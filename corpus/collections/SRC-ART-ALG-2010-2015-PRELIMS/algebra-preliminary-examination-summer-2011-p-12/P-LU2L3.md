@@ -25,7 +25,7 @@ audit:
   note: "Checked irreducibility and squarefreeness of the four factors, uniqueness of the module multiplicities, the exact fourth-power obstruction, and existence and inequivalence of all listed representatives."
 ---
 ::: {.problem}
-For $n = 3, 4$, and 5, determine the number of similarity classes of matrices $A \in M_n(\QQ)$ such that $A^8 = I$ but $A^4 \neq I$.
+For $n = 3, 4$, and $5$, determine the number of similarity classes of matrices $A \in M_n(\QQ)$ such that $A^8 = I$ but $A^4 \neq I$.
 :::
 
 ::: {.solution}

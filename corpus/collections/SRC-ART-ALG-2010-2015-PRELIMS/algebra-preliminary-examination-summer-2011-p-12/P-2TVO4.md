@@ -29,13 +29,13 @@ audit:
 Let $p < q$ be two distinct odd primes such that $p \nmid q - 1$.
 Let $n = pq$ and $\zeta_n$ be a primitive $n$-th root of unity in $\CC$.
 
-a. Show that the splitting field $E$ of $(x^p - 2)(x^q - 2)$ over $\QQ$ is $\QQ(\zeta_n, \sqrt[n]{2})$.
+(a) Show that the splitting field $E$ of $(x^p - 2)(x^q - 2)$ over $\QQ$ is $\QQ(\zeta_n, \sqrt[n]{2})$.
 
-b. Determine $[E : \QQ]$.
+(b) Determine $[E : \QQ]$.
 
-c. Find two subgroups of $\mathrm{Gal}(E/\QQ)$ of order $(p-1)(q-1)$.
+(c) Find two subgroups of $\mathrm{Gal}(E/\QQ)$ of order $(p-1)(q-1)$.
 
-d. Show that the Sylow $p$-subgroup of $\mathrm{Gal}(E/\QQ)$ is normal and determine its fixed field.
+(d) Show that the Sylow $p$-subgroup of $\mathrm{Gal}(E/\QQ)$ is normal and determine its fixed field.
 :::
 
 ::: {.hint}

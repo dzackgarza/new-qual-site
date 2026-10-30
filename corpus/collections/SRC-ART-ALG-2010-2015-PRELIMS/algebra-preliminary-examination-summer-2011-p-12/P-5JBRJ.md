@@ -30,16 +30,16 @@ audit:
 For each of the following statements, determine if it is true or false.
 Explain your answers.
 
-a. The field $\QQ(\sqrt[3]{2})$ is contained in some cyclotomic extension of $\QQ$.
+(a) The field $\QQ(\sqrt[3]{2})$ is contained in some cyclotomic extension of $\QQ$.
 
-b. Let $\FF$ be a finite field, and $f(x) \in \FF[x]$ be an irreducible polynomial of degree $n$.
+(b) Let $\FF$ be a finite field, and $f(x) \in \FF[x]$ be an irreducible polynomial of degree $n$.
 Then the splitting field of $f(x)$ over $\FF$ has degree $n$ over $\FF$.
 
-c. There is a surjective group homomorphism $\varphi : S_4 \longrightarrow A_3$.
+(c) There is a surjective group homomorphism $\varphi : S_4 \longrightarrow A_3$.
 
-d. There is a surjective group homomorphism $\psi : S_4 \longrightarrow S_3$.
+(d) There is a surjective group homomorphism $\psi : S_4 \longrightarrow S_3$.
 
-e. There is a transitive group action of $S_4$ on a set of three elements.
+(e) There is a transitive group action of $S_4$ on a set of three elements.
 :::
 
 ::: {.solution}

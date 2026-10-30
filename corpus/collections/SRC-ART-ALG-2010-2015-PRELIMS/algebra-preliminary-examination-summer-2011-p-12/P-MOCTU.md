@@ -26,7 +26,7 @@ Let $V$ be an $n$-dimensional vector space over $F$.
 
 (b) Let $M$ and $N$ be free $R$-submodules of rank $n$ in $V$.
 Show that there exists a nonzero element $\alpha \in R$ such that $\alpha M \subseteq N$.
-Use this to show that there exists an $R$-basis $\{e_1, \dots, e_n\}$ of $M$ and nonzero elements $\beta_1, \dots, \beta_n \in F$ such that $\{\beta_1 e_1, \dots, \beta_n e_n\}$ is an $R$-basis of $N$ (Invariant Factor Theorem for Lattices).
+Use this to show that there exists an $R$-basis $\{e_1, \dots, e_n\}$ of $M$ and nonzero elements $\beta_1, \dots, \beta_n \in F$ such that $\{\beta_1 e_1, \dots, \beta_n e_n\}$ is an $R$-basis of $N$.
 :::
 
 ::: {.solution}
