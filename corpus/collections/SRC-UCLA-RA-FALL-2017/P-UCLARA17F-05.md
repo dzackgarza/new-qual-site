@@ -6,7 +6,9 @@ title: Bounded functions invariant under $x\mapsto x+1$ and $x\mapsto 2x$ are co
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Measure Theory
+  - Measurable Functions
 relations: []
 review: draft
 audit:

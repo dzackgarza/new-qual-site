@@ -6,7 +6,9 @@ title: Bounded almost everywhere convergent sequences in $L^2([0,1])$ converge w
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Weak Convergence
+  - L²
 relations: []
 review: draft
 audit:

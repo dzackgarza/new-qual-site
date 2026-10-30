@@ -6,7 +6,9 @@ title: A bounded functional on $C([-1,1])$ mapping the unit ball onto an open se
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Dual Spaces
+  - Banach Spaces
 relations: []
 review: draft
 audit:

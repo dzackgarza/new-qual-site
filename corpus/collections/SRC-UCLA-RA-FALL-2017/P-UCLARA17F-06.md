@@ -6,7 +6,10 @@ title: $L^2$ boundedness of the truncated Riesz potential $\int_{\abs{w-z}\le1}\
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L²
+  - Integral Operators
+  - Convolution
 relations: []
 review: draft
 audit:

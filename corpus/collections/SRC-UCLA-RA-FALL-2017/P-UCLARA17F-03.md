@@ -6,7 +6,9 @@ title: Uniform convergence of distribution functions implies weak convergence of
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Distribution Functions
+  - Weak Convergence
 relations: []
 review: draft
 audit:
