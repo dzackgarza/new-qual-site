@@ -17,9 +17,13 @@ source:
     year: 2013
   institution: uw
   problems:
+  - P-7JZQA
+  - P-5CDU3
   - P-UIHJF
   - P-TKNYL
+  - P-779HN
   - P-VISUT
+  - P-PUS07
   - P-QYKXK
   source_kind: university-exam
 title: UW Algebra Qualifying Exam 2013

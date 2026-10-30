@@ -21,12 +21,12 @@ audit:
 ::: {.problem}
 This question concerns the polynomial ring $R=\ZZ[x,y]$ and the ideal $I=(5,x^2+2)$ in $R$.
 
-- Prove that $I$ is a prime ideal of $R$ and that $R/I$ is a PID.
+(a) Prove that $I$ is a prime ideal of $R$ and that $R/I$ is a PID.
 
-- Give an explicit example of a maximal ideal of $R$ which contains $I$.
-  (Give a set of generators for such an ideal.)
+(b) Give an explicit example of a maximal ideal of $R$ which contains $I$.
+(Give a set of generators for such an ideal.)
 
-- Show that there are infinitely many distinct maximal ideals in $R$ which contain $I$.
+(c) Show that there are infinitely many distinct maximal ideals in $R$ which contain $I$.
 :::
 
 

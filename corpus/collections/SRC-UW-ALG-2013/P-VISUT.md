@@ -21,14 +21,14 @@ audit:
 ::: {.problem}
 This question concerns an extension $K$ of $\QQ$ such that $[K:\QQ]=8$.
 Assume that $K/\QQ$ is Galois and let $G=\Gal(K/\QQ)$.
-Furthermore, assume that $G$ is non-abelian.
+Furthermore, assume that $G$ is nonabelian.
 
-- Prove that $K$ has a unique subfield $F$ such that $F/\QQ$ is Galois and $[F:\QQ]=4$.
+(a) Prove that $K$ has a unique subfield $F$ such that $F/\QQ$ is Galois and $[F:\QQ]=4$.
 
-- Prove that $F$ has the form $F=\QQ(\sqrt{d_1},\sqrt{d_2})$ where $d_1,d_2$ are non-zero integers.
+(b) Prove that $F$ has the form $F=\QQ(\sqrt{d_1},\sqrt{d_2})$, where $d_1$ and $d_2$ are nonzero integers.
 
-- Suppose that $G$ is the quaternionic group.
-  Prove that $d_1$ and $d_2$ are positive integers.
+(c) Suppose that $G$ is the quaternionic group.
+Prove that $d_1$ and $d_2$ are positive integers.
 :::
 
 ::: {.solution}
