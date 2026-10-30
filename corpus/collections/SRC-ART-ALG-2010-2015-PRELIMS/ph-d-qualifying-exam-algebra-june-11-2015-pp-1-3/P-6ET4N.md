@@ -2,15 +2,14 @@
 schema: qual/card@1
 id: P-6ET4N
 kind: problem
-title: Rational and Jordan canonical forms of a $3\times 3$ real matrix; abelian groups
-  of order $360$
+title: Rational and Jordan canonical forms of a $3\times 3$ real matrix; abelian groups of order $360$
 classification:
   areas:
   - prelim
   topics:
   - Jordan Canonical Form
   - Rational Canonical Form
-  - Matrices
+  - Abelian Groups
 relations: []
 review: draft
 audit:
@@ -19,10 +18,10 @@ audit:
   date: 2026-08-30
 ---
 ::: {.problem}
-(a) Find a **Rational Canonical Form** and a **Jordan Canonical Form** for the following $3 \times 3$ matrix with real entries:
+(a) Find a rational canonical form and a Jordan canonical form for the following $3 \times 3$ matrix with real entries:
 $$A = \begin{pmatrix} 0 & -1 & 2 \\ 3 & -4 & 6 \\ 2 & -2 & 3 \end{pmatrix}.$$
 
-(b) Describe all distinct isomorphism classes of **Abelian groups of order 360**.
+(b) Describe the distinct isomorphism classes of Abelian groups of order $360$.
 :::
 
 ::: {.solution}

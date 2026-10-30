@@ -27,13 +27,13 @@ audit:
 ::: {.problem}
 Let $p$ be prime, $n$ be a positive integer, $f(X) = X^{p^n} - X + 1$, and $K$ be an algebraic closure of $\FF_p$.
 
-a. If $\alpha \in K$ is a root of $f(X)$ and $a \in \FF_{p^n} \subseteq K$, show that $\alpha + a$ is a root of $f(X)$ and $\alpha^p - \alpha + 1 \in \FF_{p^n}$.
+(a) If $\alpha \in K$ is a root of $f(X)$ and $a \in \FF_{p^n} \subseteq K$, show that $\alpha + a$ is a root of $f(X)$ and $\alpha^p - \alpha + 1 \in \FF_{p^n}$.
 
-b. Show that $X^p - X + 1$ is irreducible in $\FF_p[X]$.
+(b) Show that $X^p - X + 1$ is irreducible in $\FF_p[X]$.
 
-c. Show that $X^{2^2} - X + 1$ is irreducible in $\FF_2[X]$.
+(c) Show that $X^{2^2} - X + 1$ is irreducible in $\FF_2[X]$.
 
-d. Show that if $f(X)$ is irreducible in $\FF_p[X]$, then $n = 1$ or $n = 2 = p$.
+(d) Show that if $f(X)$ is irreducible in $\FF_p[X]$, then $n = 1$ or $n = 2 = p$.
 :::
 
 ::: {.solution}

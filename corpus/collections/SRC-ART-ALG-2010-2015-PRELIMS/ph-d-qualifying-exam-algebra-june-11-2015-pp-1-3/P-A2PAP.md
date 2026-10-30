@@ -28,9 +28,9 @@ audit:
 Let $A$ be an abelian group (we will write the group multiplicatively in this problem).
 For a prime number $p$, define the following subgroups of $A$: $$A^p := \{a^p : a \in A\}, \qquad A[p] := \{a \in A : a^p = 1\}.$$
 
-a. Prove or give a counterexample: $A/A[p] \cong A^p$.
+(a) Prove or give a counterexample: $A/A[p] \cong A^p$.
 
-b. Prove: If $A$ is finite, then $A/A^p \cong A[p]$.
+(b) Prove: If $A$ is finite, then $A/A^p \cong A[p]$.
 :::
 
 ::: {.solution}

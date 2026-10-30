@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-U64DA
 kind: problem
-title: Galois group of irreducible $X^p-a$ over $\QQ$ is the group of maps
-  $y\mapsto ky+l$ on $\ZZ/p\ZZ$ with $k\neq 0$
+title: The Galois group of an irreducible $X^p-a$ over $\QQ$ is the affine group of $\ZZ/p\ZZ$
 classification:
   areas:
   - algebra
