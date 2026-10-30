@@ -30,23 +30,19 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f _ { n }$ is a sequence of non-negative continuous functions on the unit interval.
+Suppose that $f_{n}$ is a sequence of non-negative continuous functions on the unit interval.
 Find counterexamples to three of the following four inequalities:
-
 $$
-\operatorname* { l i m } _ { n } \operatorname* { s u p } \int _ { 0 } ^ { 1 } f _ { n } ( x ) d x \leq \int _ { 0 } ^ { 1 } \operatorname* { l i m } _ { n } \operatorname* { s u p } f _ { n } ( x ) d x
+\limsup_{n} \int_{0}^{1} f_{n}(x)\, dx \leq \int_{0}^{1} \limsup_{n} f_{n}(x)\, dx
 $$
-
 $$
-\operatorname* { l i m } _ { n } \operatorname* { s u p } \int _ { 0 } ^ { 1 } f _ { n } ( x ) d x \geq \int _ { 0 } ^ { 1 } \operatorname* { l i m } _ { n } \operatorname* { s u p } f _ { n } ( x ) d x
+\limsup_{n} \int_{0}^{1} f_{n}(x)\, dx \geq \int_{0}^{1} \limsup_{n} f_{n}(x)\, dx
 $$
-
 $$
-\operatorname* { l i m } _ { n } \operatorname* { i n f } \int _ { 0 } ^ { 1 } f _ { n } ( x ) d x \leq \int _ { 0 } ^ { 1 } \operatorname* { l i m } _ { n } \operatorname* { i n f } f _ { n } ( x ) d x
+\liminf_{n} \int_{0}^{1} f_{n}(x)\, dx \leq \int_{0}^{1} \liminf_{n} f_{n}(x)\, dx
 $$
-
 $$
-\operatorname* { l i m } _ { n } \operatorname* { i n f } \int _ { 0 } ^ { 1 } f _ { n } ( x ) d x \geq \int _ { 0 } ^ { 1 } \operatorname* { l i m } _ { n } \operatorname* { i n f } f _ { n } ( x ) d x
+\liminf_{n} \int_{0}^{1} f_{n}(x)\, dx \geq \int_{0}^{1} \liminf_{n} f_{n}(x)\, dx
 $$
 
 (The remaining inequality always holds; you do not need to prove this.)
