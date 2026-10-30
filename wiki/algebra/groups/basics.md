@@ -47,7 +47,7 @@ For the action on subgroups, the orbit of $H$ is the set of [[D-ES7MP|conjugate 
 
 [[D-ES7MP]]
 
-[[P-YDLYC]]
+[[P-ALGS08A]]
 
 [[E-47X7Y]]
 

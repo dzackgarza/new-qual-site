@@ -19,7 +19,7 @@ source:
   sections:
   - name: '2018'
     problems:
-    - P-YDLYC
+    - P-ALGS08A
     - P-MBHKT
     - P-CASNS
     - P-NN3CO

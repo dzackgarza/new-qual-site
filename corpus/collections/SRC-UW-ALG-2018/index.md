@@ -21,7 +21,7 @@ source:
   - P-CC3DW
   - P-MBHKT
   - P-NN3CO
-  - P-YDLYC
+  - P-ALGS08A
   date:
     kind: year
     year: 2018

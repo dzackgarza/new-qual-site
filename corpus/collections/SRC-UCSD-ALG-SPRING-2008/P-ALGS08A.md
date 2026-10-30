@@ -29,6 +29,10 @@ Let $G$ be a finite group and $H$ a proper subgroup.
 Show that $G$ is not the set-theoretic union of the conjugates of $H$.
 :::
 
+::: {.hint}
+Count the conjugates of $H$ with the orbit-stabilizer theorem, and note that all of them contain the identity.
+:::
+
 ::: {.solution}
 
 ::: pf
