@@ -19,10 +19,10 @@ review: draft
 Let $a \in \DD$ and $G = \DD \setminus \{a\}$.
 
 (a) Construct a harmonic function $v$ on $G$ such that the following two conditions are satisfied: $\lim_{z \to z^*} v(z) = 0$ for all $z^* \in \circlegroup$ and $\lim_{z \to a} v(z) = +\infty$.
-Write down an explicit formula for the function $v$ you constructed.
+Write down an explicit formula for the function $v$ you constructed. (Hint: you only need to find one such function; first think about the case $a = 0$.)
 
 (b) Let $f \in C(\partial G)$ be defined as $f(z) = 0$ for $z \in \circlegroup$ and $f(a) = 2$.
-Prove that the Dirichlet problem on $G$ with boundary data $f$ has no solution: there is no harmonic function $u$ on $G$ such that $\lim_{z \to z_0} u(z) = f(z_0)$ for all $z_0 \in \partial G$.
+Prove that the Dirichlet problem on $G$ with boundary data $f$ has no solution: there is no harmonic function $u$ on $G$ such that $\lim_{z \to z_0} u(z) = f(z_0)$ for all $z_0 \in \partial G$. (Hint: argue by contradiction, making use of the function you constructed in part (a).)
 :::
 
 ::: {.solution}

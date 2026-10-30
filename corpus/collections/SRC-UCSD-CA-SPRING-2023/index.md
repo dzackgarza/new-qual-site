@@ -19,6 +19,7 @@ source:
   problems:
   - P-CASP23A
   - P-CASP23B
+  - P-CASP23G
   - P-CASP23C
   - P-CASP23D
   - P-CASP23E

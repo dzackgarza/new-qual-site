@@ -21,7 +21,7 @@ Prove the following statements.
 
 (a) If $\abs{f'(z) - f'(0)} < \abs{f'(0)}$ for all $z \in \DD$, then $f(z)$ is injective.
 
-(b) If $\abs{f(z)} < 1$ for all $z \in \DD$ and $f(z)$ has two distinct fixed points, then $f(z) = z$.
+(b) If $\abs{f(z)} < 1$ for all $z \in \DD$ and $f(z)$ has two distinct fixed points, then $f(z) = z$. (Hint: analytic automorphisms of $\DD$ and Schwarz's lemma could be useful.)
 :::
 
 ::: {.solution}

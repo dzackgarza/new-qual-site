@@ -478,7 +478,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-CA-SPRING-2020
   - [x] SRC-UCSD-CA-SPRING-2021
   - [x] SRC-UCSD-CA-SPRING-2022
-  - [ ] SRC-UCSD-CA-SPRING-2023
+  - [x] SRC-UCSD-CA-SPRING-2023
   - [ ] SRC-UCSD-CA-SPRING-2024
   - [ ] SRC-UCSD-CA-SPRING-2025
   - [ ] SRC-UCSD-CA-SPRING-2026

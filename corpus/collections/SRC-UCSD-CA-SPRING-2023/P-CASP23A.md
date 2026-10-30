@@ -24,7 +24,7 @@ Let $A(z) = \sum_{n=0}^\infty a_n z^n$ be a power series with radius of converge
 
 (c) Prove that $A(z)$ has a singularity on $\circlegroup$, i.e. cannot be analytically continued to an open set containing $\overline{\DD}$.
 
-(d) Prove that if $A(z)$ has nonnegative coefficients, the point $z = 1$ is a singularity of $A(z)$.
+(d) Prove that if $A(z)$ has nonnegative coefficients, the point $z = 1$ is a singularity of $A(z)$. (Hint: the previous problem could be useful.)
 
 (e) Verify that $A(z) = \sum_{n=0}^\infty z^{n!}$ has radius of convergence one, and that each point of $\circlegroup$ is a singularity of $A(z)$.
 :::
