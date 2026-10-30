@@ -34,7 +34,7 @@ order: 15
 
 - [Real analysis course notes](attachments/Real_Analysis_Course_Notes.pdf)
 
-- [[cambride_analysis_ii.pdf|Dexter Chua, *Part IB — Analysis II* (Michaelmas 2015)]] -- course notes based on lectures by N. Wickramasekera, covering uniform convergence and continuity, Riemann integration, normed and metric spaces, contraction mappings, and multivariable differentiation.
+- [Dexter Chua, *Part IB — Analysis II* (Michaelmas 2015)](attachments/cambride_analysis_ii.pdf) -- course notes based on lectures by N. Wickramasekera, covering uniform convergence and continuity, Riemann integration, normed and metric spaces, contraction mappings, and multivariable differentiation.
 
 Homework and exams from UGA Math 8100, as posted by Neil Lyall:
 
@@ -46,6 +46,6 @@ Homework and exams from UGA Math 8100, as posted by Neil Lyall:
 
 - [Stanford, notes on Folland](http://web.stanford.edu/~eugeniam/math205a/L2m.pdf)
 
-- [[analysis_notes_eamonqg.pdf|Analysis summary notes]]
+- [Analysis summary notes](attachments/analysis_notes_eamonqg.pdf)
 
-- [[Real_Named_Theorems.pdf|Eifler, Real Variables Named Theorems]]
+- [Eifler, Real Variables Named Theorems](attachments/Real_Named_Theorems.pdf)
