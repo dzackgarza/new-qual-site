@@ -23,8 +23,6 @@ A homeomorphism onto a closed subset need not be a closed immersion: the normali
 
 [[D-MORFIN]]
 
-Finite means finitely generated as a module, while finite type means finitely generated as an algebra; $\AA^1_k \to \Spec k$ separates the two notions.
-
 [[D-MORQF]]
 
 [[FE-MORHYP]]
@@ -50,10 +48,6 @@ Standard converse counterexamples include $\PP^1_k \to \Spec k$, which is projec
 [[D-MORFIB]]
 
 [[PR-MORBC]]
-
-If a property $P$ is stable under base change and $f\colon X\to Y$ has $P$, then every fibre $X_y\to\Spec\kappa(y)$ has $P$.
-Closedness is not stable under base change: $\AA^1_k\to\Spec k$ is closed, but its base change $\AA^2_k\to\AA^1_k$, $(x,y)\mapsto x$, sends the closed set $V(xy-1)$ onto $\AA^1_k\setminus\{0\}$.
-Properness therefore requires universal closedness.
 
 ## Locality of properties of morphisms
 
