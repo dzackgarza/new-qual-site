@@ -42,7 +42,7 @@ How many surfaces are there, up to homeomorphism, which are:
 
 - Possibly nonorientable, and
 
-- With Euler characteristic -3?
+- With Euler characteristic $-3$?
 
 Describe one representative from each class.
 :::
