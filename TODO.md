@@ -821,7 +821,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebraic-geometry/morphisms/classes-of-morphism.md
   - [x] wiki/algebraic-geometry/morphisms/fibres-and-images.md
   - [x] wiki/algebraic-geometry/morphisms/finite-and-flat.md
-  - [ ] wiki/algebraic-geometry/morphisms/index.md
+  - [x] wiki/algebraic-geometry/morphisms/index.md
   - [ ] wiki/algebraic-geometry/morphisms/inseparable-morphisms-and-luroth.md
   - [ ] wiki/algebraic-geometry/morphisms/separated-and-proper.md
   - [ ] wiki/algebraic-geometry/morphisms/smooth-unramified-etale.md
