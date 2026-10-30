@@ -22,14 +22,17 @@ audit:
 ---
 
 ::: {.problem}
-- Give definitions of the following terms:
+(a) Give definitions of the following terms: (i) a finite length (left) module, (ii) a composition series for a module, and (iii) the length of a module.
 
-  (i) a finite length (left) module, (ii) a composition series for a module, and (iii) the length of a module,
-
-- Let $l(M)$ denote the length of a module $M$.
-  Prove that if `\begin{align*} 0\rightarrow M_1\rightarrow M_2\rightarrow\dots\rightarrow M_n\rightarrow 0 .\end{align*}`{=tex}
-
-  is an exact sequence of modules of finite length, then `\begin{align*} \sum_{i=1}^n(-1)^i l(M_i)=0.\end{align*}`{=tex}
+(b) Let $l(M)$ denote the length of a module $M$.
+Prove that if
+$$
+0\rightarrow M_1\rightarrow M_2\rightarrow\dots\rightarrow M_n\rightarrow 0
+$$
+is an exact sequence of modules of finite length, then
+$$
+\sum_{i=1}^n(-1)^i l(M_i)=0.
+$$
 :::
 
 ::: {.solution}

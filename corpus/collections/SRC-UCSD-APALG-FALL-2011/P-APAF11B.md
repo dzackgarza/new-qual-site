@@ -238,3 +238,7 @@ so there are no further irreducible characters.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+For $G$ the unique nonabelian group of order $21$: (a) describe all $1$-dimensional complex representations of $G$; (b) find how many non-isomorphic irreducible complex representations $G$ has and their dimensions; (c) determine the character table of $G$. The proof above answers all three: the lifted characters of $G/H\cong\ZZ_3$ are the $1$-dimensional representations, since $H$ is the commutator subgroup, and the final step gives five irreducible representations, of dimensions $1,1,1,3,3$, and the table.
+:::

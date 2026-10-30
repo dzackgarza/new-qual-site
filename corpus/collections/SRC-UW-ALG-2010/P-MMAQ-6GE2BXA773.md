@@ -19,20 +19,17 @@ audit:
 ---
 
 ::: {.problem}
-Let $p$ be a positive prime number, $\FF_p$ the field with $p$ elements, and let $G=\text{GL}_2(\FF_p)$.
+Let $p$ be a positive prime number, $\FF_p$ the field with $p$ elements, and let $G=\GL_2(\FF_p)$.
 
-- Compute the order of $G$, $\cardinality{G}$.
+(a) Compute the order of $G$, $\cardinality{G}$.
 
-- Write down an explicit isomorphism from $\ZZ/p\ZZ$ to `\begin{align*} U=\left\{
-  \begin{pmatrix}
-    1 & a\\
-    0 & 1
-  \end{pmatrix}
-  \bigg|a\in\FF_p\right\}. \end{align*}`{=tex}
+(b) Write down an explicit isomorphism from $\ZZ/p\ZZ$ to
+$$
+U=\left\{\begin{pmatrix}1 & a\\ 0 & 1\end{pmatrix}\ \bigg|\ a\in\FF_p\right\}.
+$$
 
-- How many subgroups of order $p$ does $G$ have?
-
-  > Hint: compute $gu\inverseof{g}$ for $g\in G$ and $u\in U$; use this to find the size of the normalizer of $U$ in $G$.
+(c) How many subgroups of order $p$ does $G$ have?
+Hint: compute $gu\inverseof{g}$ for $g\in G$ and $u\in U$; use this to find the size of the normalizer of $U$ in $G$.
 :::
 
 ::: {.solution}
