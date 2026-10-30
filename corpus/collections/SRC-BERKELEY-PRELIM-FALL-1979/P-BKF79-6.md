@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF79-6
 kind: problem
 title: A single Jordan-chain nilpotent has no square root
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Nilpotent Operators, Jordan Canonical Form]}
 relations: []
 review: draft
 audit:

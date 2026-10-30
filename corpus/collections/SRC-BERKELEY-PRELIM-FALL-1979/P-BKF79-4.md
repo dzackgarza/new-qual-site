@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF79-4
 kind: problem
 title: Reduce polynomials modulo the ideal $(7,x-3)$ in $\ZZ[x]$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Polynomial Rings, Ideals]}
 relations: []
 review: draft
 audit:

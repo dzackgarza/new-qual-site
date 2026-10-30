@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF79-8
 kind: problem
 title: A harmonic-block sum converges to $\log2$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Riemann Sums, Sequences of Numbers]}
 relations: []
 review: draft
 audit:

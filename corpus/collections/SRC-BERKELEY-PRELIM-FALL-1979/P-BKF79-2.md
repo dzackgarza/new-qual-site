@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF79-2
 kind: problem
 title: Sharp bound for a bounded upper-half-plane function vanishing at $i$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Schwarz Lemma, Conformal Maps]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF79-5
 kind: problem
 title: A real skew-symmetric matrix has even rank
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Skew-Symmetric Matrices, Rank]}
 relations: []
 review: draft
 audit:

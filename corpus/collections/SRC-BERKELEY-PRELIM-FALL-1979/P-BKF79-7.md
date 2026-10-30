@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF79-7
 kind: problem
 title: Shift-operator eigenvectors and the Fibonacci subspace
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Eigenvalues, Linear Recurrences]}
 relations: []
 review: draft
 audit:

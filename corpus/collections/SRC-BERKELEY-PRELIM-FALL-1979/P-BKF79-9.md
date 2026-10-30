@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF79-9
 kind: problem
 title: Differentiate the Gaussian integral with respect to its scale parameter
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Differentiation Under the Integral Sign, Gaussian Integrals]}
 relations: []
 review: draft
 audit:
