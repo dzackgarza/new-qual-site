@@ -111,7 +111,7 @@ source:
     - E-HM213A17-77
     - E-HM213A17-78
     - id: E-HM213A17-68
-      comment: Section 3.4 Exercise 15 (repeats Exercise 3)
+      comment: Section 3.4 Exercise 15
     - E-HM213A17-79
     - E-HM213A17-80
     - E-HM213A17-81

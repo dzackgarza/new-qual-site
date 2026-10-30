@@ -80,7 +80,7 @@ source:
     - id: P-WESCA06-II3
       comment: Problems, problem 3
     - id: P-EMCA9
-      comment: Problems, problem 4; exact existing dense-image owner
+      comment: Problems, problem 4
     - id: P-WESCA06-II5
       comment: Problems, problem 5
   - name: Real Analysis Preliminary Examination, 2006
@@ -146,7 +146,7 @@ source:
     - id: P-WESCA04-P5
       comment: Section 1.3, problem 5
     - id: P-JHUU45CA1
-      comment: Section 1.3, problem 6; exact existing owner after swapping f and g
+      comment: Section 1.3, problem 6, with f and g exchanged
     - id: P-WESCA04-P7
       comment: Section 1.3, problem 7
     - P-WESRA04-T1
