@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/uci-220c-2013-hw3.pdf",
+  "source_pdf_sha256": "c83948dd1898e77a0ac69f3ab24467b4f1fe5019964b1fb3c8d6d8755e4e30b1",
+  "source_url": "https://www.math.uci.edu/~asgor/220C2013/HW3.pdf",
+  "extracted_markdown": "assets/attachments/uci-220c-2013-hw3_extracted.md",
+  "extracted_markdown_sha256": "6141c9667e81222b9686a1e5f26c77f574b2533a00eae799dd8589b09e5fb46d",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/uci-220c-2013-hw3.pdf --language en",
+  "generated_at": "2026-10-30"
+}
