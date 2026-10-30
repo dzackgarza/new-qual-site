@@ -5,7 +5,8 @@ kind: problem
 title: Every Euclidean isometry of the plane is affine orthogonal
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Volterra and Fredholm integral equations with kernel $e^{x-y}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

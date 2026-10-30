@@ -5,7 +5,8 @@ kind: problem
 title: Matrix of the half-turn about a prescribed axis in $\RR^3$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Lebesgue number for a ball cover of a compact subset of $\RR^n$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

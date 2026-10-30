@@ -5,7 +5,8 @@ kind: problem
 title: Two contour integrals around the integers $0,\dots,k$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

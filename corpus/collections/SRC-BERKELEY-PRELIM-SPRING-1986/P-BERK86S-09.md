@@ -5,7 +5,8 @@ kind: problem
 title: Isomorphism of two quotients of $\ZZ^2$ by rank-two sublattices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

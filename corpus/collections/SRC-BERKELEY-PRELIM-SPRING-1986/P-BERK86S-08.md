@@ -5,7 +5,8 @@ kind: problem
 title: Points of the unit disk where a polynomial matrix is singular
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

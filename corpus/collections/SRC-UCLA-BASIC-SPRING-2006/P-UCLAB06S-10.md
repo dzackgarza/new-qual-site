@@ -5,7 +5,8 @@ kind: problem
 title: Commuting complex matrices have a common eigenvector
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

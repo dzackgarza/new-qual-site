@@ -5,7 +5,8 @@ kind: problem
 title: An orthonormal rational family on the real line
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

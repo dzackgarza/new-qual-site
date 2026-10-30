@@ -5,7 +5,8 @@ kind: problem
 title: The contour integral $\int_{\abs{z}=1}(e^{2\pi z}+1)^{-2}\,dz$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: The identity is the only field automorphism of $\RR$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

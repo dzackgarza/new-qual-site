@@ -5,7 +5,8 @@ kind: problem
 title: A continuous function with periods $1$ and $\sqrt2$ is constant
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

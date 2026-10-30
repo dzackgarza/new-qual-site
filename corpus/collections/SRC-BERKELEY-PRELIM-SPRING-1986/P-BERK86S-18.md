@@ -5,7 +5,8 @@ kind: problem
 title: Coefficientwise convergence under an entire majorant gives compact-uniform convergence
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

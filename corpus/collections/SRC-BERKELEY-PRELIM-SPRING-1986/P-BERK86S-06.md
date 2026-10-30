@@ -5,7 +5,8 @@ kind: problem
 title: Two square-zero operators satisfying $AB+BA=I$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -33,21 +34,23 @@ AB+BA=I.
 $$
 Let $N_A,N_B$ denote their null spaces.
 
-1. Prove that
-   $$
-   N_A=A(N_B),
-   \qquad
-   N_B=B(N_A),
-   \qquad
-   V=N_A\oplus N_B.
-   $$
-2. Prove that $\dim V$ is even.
-3. If $\dim V=2$, prove that there is a basis in which
-   $$
-   A=\begin{pmatrix}0&1\\0&0\end{pmatrix},
-   \qquad
-   B=\begin{pmatrix}0&0\\1&0\end{pmatrix}.
-   $$
+(a) Prove that
+$$
+N_A=A(N_B),
+\qquad
+N_B=B(N_A),
+\qquad
+V=N_A\oplus N_B.
+$$
+
+(b) Prove that $\dim V$ is even.
+
+(c) If $\dim V=2$, prove that there is a basis in which
+$$
+A=\begin{pmatrix}0&1\\0&0\end{pmatrix},
+\qquad
+B=\begin{pmatrix}0&0\\1&0\end{pmatrix}.
+$$
 :::
 
 ::: {.solution}
@@ -268,8 +271,8 @@ in the ordered basis $(e_1,e_2)$.
 :::
 
 ::: pf-qed
-Steps [](#equalities-boxed){.pf-ref} and [](#direct-sum-boxed){.pf-ref} prove part 1, step [](#dim-even-boxed){.pf-ref} proves part 2, and step
-[](#basis-boxed){.pf-ref} proves part 3.
+Steps [](#equalities-boxed){.pf-ref} and [](#direct-sum-boxed){.pf-ref} prove part (a), step [](#dim-even-boxed){.pf-ref} proves part (b), and step
+[](#basis-boxed){.pf-ref} proves part (c).
 :::
 
 :::

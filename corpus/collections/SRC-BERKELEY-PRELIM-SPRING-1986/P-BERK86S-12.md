@@ -5,7 +5,8 @@ kind: problem
 title: A mean-value subfunction inequality forces convexity
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -32,8 +33,9 @@ f(x)\le\frac1{2h}\int_{x-h}^{x+h}f(y)\,dy
 $$
 for every $x\in\RR$ and $h>0$.
 
-1. Prove that the maximum of $f$ on any closed interval is attained at one of the endpoints.
-2. Prove that $f$ is convex.
+(a) Prove that the maximum of $f$ on any closed interval is attained at one of the endpoints.
+
+(b) Prove that $f$ is convex.
 :::
 
 ::: {.solution}
@@ -204,7 +206,7 @@ $$
 :::
 
 ::: pf-qed
-Step [](#max-at-endpoint-boxed){.pf-ref} proves part 1 and step [](#convex-boxed){.pf-ref} proves part 2.
+Step [](#max-at-endpoint-boxed){.pf-ref} proves part (a) and step [](#convex-boxed){.pf-ref} proves part (b).
 :::
 
 :::

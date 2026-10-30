@@ -5,7 +5,8 @@ kind: problem
 title: $\FF_p[x]/(x^2-2)$ versus $\FF_p[x]/(x^2-3)$ for $p=2,5,11$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

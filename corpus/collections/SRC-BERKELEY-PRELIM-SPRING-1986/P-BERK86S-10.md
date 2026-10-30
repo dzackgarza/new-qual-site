@@ -5,7 +5,8 @@ kind: problem
 title: Surjective ring homomorphisms from $\CC^n$ to $\CC$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

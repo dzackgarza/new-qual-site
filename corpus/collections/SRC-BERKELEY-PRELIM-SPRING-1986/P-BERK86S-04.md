@@ -5,7 +5,8 @@ kind: problem
 title: Limit of a multiplicative difference quotient for a positive differentiable function
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
