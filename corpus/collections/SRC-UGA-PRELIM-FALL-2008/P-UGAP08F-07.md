@@ -5,7 +5,9 @@ kind: problem
 title: Every additive subgroup of $\ZZ$ is $k\ZZ$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Number Theory
+  - Groups
 relations: []
 review: draft
 audit:

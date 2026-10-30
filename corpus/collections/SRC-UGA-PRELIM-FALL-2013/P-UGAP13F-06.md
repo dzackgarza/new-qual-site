@@ -5,7 +5,9 @@ kind: problem
 title: Bound the partial sums of $\sum 1/j^2$ and decide whether they are Cauchy
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Sequences of Numbers
+  - Series of Numbers
 relations: []
 review: draft
 audit:

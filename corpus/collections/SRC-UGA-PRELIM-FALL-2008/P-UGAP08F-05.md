@@ -5,7 +5,9 @@ kind: problem
 title: Combine bases of subspaces with trivial intersection
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Vector Spaces
+  - Bases
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Diagonalization and nineteenth power of a $3\times 3$ matrix with eigenvalues $-1,0,1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Diagonalization
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: A continuous nonnegative function positive at one point has positive integral
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integrals
+  - Continuity
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Five examples involving power series, differentiability, separate continuity, series, and line integrals
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Counterexamples
 relations: []
 review: draft
 audit:

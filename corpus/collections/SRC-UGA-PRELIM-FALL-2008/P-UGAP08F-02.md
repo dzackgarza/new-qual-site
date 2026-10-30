@@ -5,7 +5,9 @@ kind: problem
 title: Differentiate an integral with a variable upper limit
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Differentiation
+  - Integrals
 relations: []
 review: draft
 audit:

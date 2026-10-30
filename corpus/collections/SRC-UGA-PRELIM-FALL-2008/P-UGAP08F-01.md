@@ -5,7 +5,8 @@ kind: problem
 title: Determine the truth of four quantified parity statements
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Logic and Quantifiers
 relations: []
 review: draft
 audit:
