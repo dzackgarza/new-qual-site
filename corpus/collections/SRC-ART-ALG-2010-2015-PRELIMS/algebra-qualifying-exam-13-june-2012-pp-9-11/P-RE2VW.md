@@ -67,7 +67,7 @@ trivial and $\ker\rho\ne G$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The homomorphism $\rho$ is injective.
 

@@ -18,12 +18,12 @@ audit:
   date: 2026-08-30
 ---
 ::: {.problem}
-a. State the structure theorem for finitely generated modules over a PID. You may state either the invariant factors or elementary divisors version.
+(a) State the structure theorem for finitely generated modules over a PID. You may state either the invariant factors or elementary divisors version.
 
-b. Determine all abelian groups of size 72 up to isomorphism.
+(b) Determine all abelian groups of size $72$ up to isomorphism.
 Explain how this relates to part (a).
 
-c. Determine all conjugacy classes of 3x3 matrices over $\QQ$ with characteristic polynomial $x^3 - 2x^2 + x$.
+(c) Determine all conjugacy classes of $3\times 3$ matrices over $\QQ$ with characteristic polynomial $x^3 - 2x^2 + x$.
 Explain how this relates to part (a).
 :::
 

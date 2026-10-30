@@ -28,15 +28,15 @@ audit:
 ::: {.problem}
 Let $K$ be the splitting field of $f(x)=x^3 - 5$ over $\QQ$.
 
-a. What is the dimension of $K$ over $\QQ$?
+(a) What is the dimension of $K$ over $\QQ$?
 
-b. What is the Galois group of $K$ over $\QQ$?
+(b) What is the Galois group of $K$ over $\QQ$?
 (Identify the isomorphism type of the Galois group, and also indicate how its elements act as permutations of the roots of $f$.)
 
-c. What are all the subfields of $K$?
+(c) What are all the subfields of $K$?
 Be sure to explain how you know you have included all of them.
 
-d. Which of these subfields are Galois over $\QQ$?
+(d) Which of these subfields are Galois over $\QQ$?
 :::
 
 ::: {.solution}

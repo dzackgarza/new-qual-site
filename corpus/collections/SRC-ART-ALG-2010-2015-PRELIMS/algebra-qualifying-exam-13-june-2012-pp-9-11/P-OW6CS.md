@@ -31,17 +31,17 @@ audit:
 Give an example of each of the following or explain why no such examples exist.
 One or two sentence answers will suffice; you don't need to give formal proofs.
 
-a. A Galois extension $K/F$ and an intermediate field $E$ ($F \subset E \subset K$) such that $E/F$ is not Galois.
+(a) A Galois extension $K/F$ and an intermediate field $E$ ($F \subset E \subset K$) such that $E/F$ is not Galois.
 
-b. A Galois extension $K/F$ and an intermediate field $E$ ($F \subset E \subset K$) such that $K/E$ is not Galois.
+(b) A Galois extension $K/F$ and an intermediate field $E$ ($F \subset E \subset K$) such that $K/E$ is not Galois.
 
-c. A finite field of size 8.
+(c) A finite field of size $8$.
 
-d. A subfield $E$ of the splitting field of $x^5 + x - 1$ with $[E:\QQ] = 7$.
+(d) A subfield $E$ of the splitting field of $x^5 + x - 1$ with $[E:\QQ] = 7$.
 
-e. A field extension $K/F$ which is finite dimensional but not separable.
+(e) A field extension $K/F$ which is finite dimensional but not separable.
 
-f. An irreducible fifth degree polynomial over $\QQ$ which is solvable by radicals.
+(f) An irreducible fifth degree polynomial over $\QQ$ which is solvable by radicals.
 :::
 
 ::: {.remark}
