@@ -677,6 +677,16 @@ mathematical correction under its own node, not under copy policy.
     - [ ] E-SS4.EX-9: `z` and `S` outside math, the doubled comma in "closure of $S ,$ ,", and a leading "9." in the statement.
     **Acceptance:** each item read and repaired.
 
+  - **`ad7-prelim`**. **Needs:** none. Round 7 at 3f0a38feb1; report in the session scratchpad r7-prelim.md.
+    - [ ] P-JHUSP01CAA: extraction residue in the statement ("Question 1.", trailing "·").
+    - [ ] P-UGAP13F-08: `1+\sqrt3,i` renders as "√3,i" in four places; write $1+\sqrt3\,i$.
+    - [ ] P-F04I9: the title "cannot compose" is false; the claim is that $f\circ g$ has no differentiable inverse.
+    - [ ] P-UCLAB10S-*: all 12 statements start with "Problem N." (CARD-02).
+    - [ ] Extractions with no provenance record: extracted/Spring88.md, Fall_2014_Exam.md, basic-10S.md, grad_prelim_Fall04.md, grad_prelim_Spring07.md. Regenerate with MinerU Flash and correct any location Flash drops from a page render, noting it in the file.
+    - [ ] P-BKS93-05: the solution answers "c ∈ R" from the zero solution only. Read the paper: if it asks for values of c admitting a nonzero solution, the answer is $c=\pm\sqrt{1-m^2/4k^2}$, $1\le m\le 2k-1$; write that.
+    - [ ] P-F04L8: the statement adds "oriented counterclockwise", which the paper does not print.
+    **Acceptance:** each item read and repaired.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
