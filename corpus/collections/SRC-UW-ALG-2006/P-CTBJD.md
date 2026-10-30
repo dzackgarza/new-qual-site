@@ -174,3 +174,7 @@ The action is transitive by Sylow conjugacy and has more than one point, so $\va
 :::
 
 :::
+
+::: {.remark title="Variations"}
+A group of order $pqr$ with primes $p<q<r$ has a normal Sylow subgroup. The first step of the proof uses simplicity only to assume $n_r\ne1$ and $n_q\ne1$; under these two assumptions alone the same count gives more than $pqr-1$ nonidentity elements. Hence $n_r=1$ or $n_q=1$, and the Sylow $r$-subgroup or the Sylow $q$-subgroup is normal.
+:::
