@@ -5,7 +5,8 @@ kind: problem
 title: Nonsingularity of matrices with positive off-diagonal entries and negative row sums
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
