@@ -34,10 +34,6 @@ For $0<\varepsilon<1<R$, let $\Gamma=C_1+C_2+C_4+C_R$, where
 - $C_2$ is $-1+\varepsilon e^{it}$ and $C_4$ is $1+\varepsilon e^{it}$, each for $t$ from $\pi$ to $0$ (clockwise, above the pole);
 - $C_R$ is $Re^{it}$ for $t\in[0,\pi]$.
 
-The figure shows the same indentations on a rectangular contour; here the outer arc is the semicircle $C_R$:
-
-![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-21_01-47-37.png)
-
 ::: pf
 
 ::: {.pf-step #zero}
