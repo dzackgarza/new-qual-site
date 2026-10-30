@@ -16,7 +16,6 @@ source:
   problems:
   - id: E-26QQP
   - id: E-27X7K
-  - id: E-2GYXM
   - id: E-2HIKG
   - id: E-2JGJL
   - id: E-2RKYE
