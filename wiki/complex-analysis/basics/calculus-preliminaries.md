@@ -140,10 +140,6 @@ For polynomials $f, g$ over a field with $g\neq 0$, there are unique polynomials
 
 [[D-QTJ7T]]
 
-::: {.fact}
-A continuous function on a compact metric space is uniformly continuous.
-
-:::
 
 [[D-OHFRH]]
 
