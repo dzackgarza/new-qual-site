@@ -5,7 +5,8 @@ kind: problem
 title: Schwarz-type bound for a disk map with zeros at $0$ and $\pm r$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

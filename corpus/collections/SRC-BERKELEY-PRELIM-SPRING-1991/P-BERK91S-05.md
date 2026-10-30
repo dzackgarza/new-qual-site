@@ -5,7 +5,8 @@ kind: problem
 title: Integer eigenvalues and row sums divide the determinant of an integer matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

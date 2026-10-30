@@ -5,7 +5,8 @@ kind: problem
 title: Convergence of $\sum (\sqrt{n+1}-\sqrt n)/n^x$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Groups of order at most five
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

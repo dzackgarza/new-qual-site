@@ -5,7 +5,8 @@ kind: problem
 title: Iterating a strict norm decrease on the unit ball converges to the origin
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

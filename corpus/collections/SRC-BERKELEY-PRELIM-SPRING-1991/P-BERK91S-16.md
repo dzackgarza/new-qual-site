@@ -5,7 +5,8 @@ kind: problem
 title: A unipotent complex operator is similar to its inverse
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

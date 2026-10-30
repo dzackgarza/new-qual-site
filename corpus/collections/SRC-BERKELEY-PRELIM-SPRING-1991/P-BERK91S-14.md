@@ -5,7 +5,8 @@ kind: problem
 title: Norm growth for a linear system in $\RR^3$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

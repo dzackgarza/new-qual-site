@@ -5,7 +5,8 @@ kind: problem
 title: The limit $\lim_{R\to\infty}\int_{-R}^R\sin x/(x-3i)\,dx$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

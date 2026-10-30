@@ -5,7 +5,8 @@ kind: problem
 title: An exponential integral of a continuous function is entire
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

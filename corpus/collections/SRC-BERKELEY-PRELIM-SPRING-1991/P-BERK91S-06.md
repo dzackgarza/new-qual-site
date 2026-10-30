@@ -5,7 +5,8 @@ kind: problem
 title: A radial vector field has zero circulation around every closed path avoiding the origin
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: An $L^2$ growth bound on circles truncates the negative Laurent tail
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

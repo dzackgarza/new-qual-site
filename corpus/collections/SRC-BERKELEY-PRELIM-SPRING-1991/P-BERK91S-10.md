@@ -5,7 +5,8 @@ kind: problem
 title: The additive group $\QQ$ is indecomposable as a direct sum
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

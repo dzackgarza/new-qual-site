@@ -5,7 +5,8 @@ kind: problem
 title: If all nonidentity elements of a finite group are conjugate, the group has order two
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

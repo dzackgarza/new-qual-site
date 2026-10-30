@@ -5,7 +5,8 @@ kind: problem
 title: Every ring with identity and $p^2$ elements is commutative
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: The divisor-counting function is odd exactly on perfect squares
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

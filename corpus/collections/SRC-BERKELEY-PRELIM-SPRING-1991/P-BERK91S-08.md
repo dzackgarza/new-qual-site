@@ -5,7 +5,8 @@ kind: problem
 title: Rank and simple spectrum of an irreducible symmetric tridiagonal matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

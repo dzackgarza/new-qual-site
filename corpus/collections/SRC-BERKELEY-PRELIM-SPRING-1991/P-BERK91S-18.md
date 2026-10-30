@@ -5,7 +5,8 @@ kind: problem
 title: Difference quotients along monotone sequences converging from opposite sides
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

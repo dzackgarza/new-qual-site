@@ -5,7 +5,8 @@ kind: problem
 title: Kempner's series over integers whose decimal expansion avoids the digit nine
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
