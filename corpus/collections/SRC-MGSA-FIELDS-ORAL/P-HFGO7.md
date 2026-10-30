@@ -38,3 +38,9 @@ nonconstant polynomial in $\overline F[x]$ has a root in $\overline F$.
 Algebraic closures exist for every field and are unique up to an
 $F$-isomorphism, although not canonically unique.
 :::
+
+::: {.remark title="Example"}
+$\CC$ is an algebraic closure of $\RR$ but not of $\QQ$.
+$\CC$ is algebraically closed by the fundamental theorem of algebra, and $\CC=\RR(i)$ is algebraic over $\RR$.
+Over $\QQ$, $\CC$ is not algebraic: the algebraic numbers form a countable set, while $\CC$ is uncountable.
+:::
