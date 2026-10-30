@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/200a-f16-hw5.pdf",
+  "source_pdf_sha256": "21a8897fb790cb3a41276347aaabda894451b8f546ba82c25cf1905c846b34c6",
+  "source_url": "https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw5.pdf",
+  "extracted_markdown": "assets/attachments/200a-f16-hw5_extracted.md",
+  "extracted_markdown_sha256": "50823d5ccc25dff3c03af1da70d40c4d279e7aca468bbf1e257dda7c6008c588",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/200a-f16-hw5.pdf --language en",
+  "generated_at": "2026-10-30"
+}

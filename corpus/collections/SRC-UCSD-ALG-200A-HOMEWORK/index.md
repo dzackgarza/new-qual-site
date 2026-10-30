@@ -10,12 +10,12 @@ classification:
 relations: []
 review: draft
 provenance:
-- https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw1.pdf
-- https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw2.pdf
-- https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw3.pdf
-- https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw4.pdf
-- https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw5.pdf
-- https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw6.pdf
+- assets/attachments/200a-f16-hw1.pdf
+- assets/attachments/200a-f16-hw2.pdf
+- assets/attachments/200a-f16-hw3.pdf
+- assets/attachments/200a-f16-hw4.pdf
+- assets/attachments/200a-f16-hw5.pdf
+- assets/attachments/200a-f16-hw6.pdf
 source:
   source_kind: compilation
   date:
