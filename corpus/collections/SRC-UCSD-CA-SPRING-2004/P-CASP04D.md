@@ -5,9 +5,9 @@ kind: problem
 title: "Basin of attraction of a fixed point with contraction coefficient"
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics:
-  - Complex Analysis
+    - Iteration
 relations: []
 review: draft
 ---
