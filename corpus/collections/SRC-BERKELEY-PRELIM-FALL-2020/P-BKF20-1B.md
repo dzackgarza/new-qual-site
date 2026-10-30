@@ -43,6 +43,8 @@ and
 $$
 b(x)<d(x)<a(x)<c(x)\quad(-1<x<0).
 $$
+
+(Hint: show that you may assume one polynomial is equal to zero, and then examine the smallest nonzero terms of the others.)
 :::
 
 ::: {.solution}
