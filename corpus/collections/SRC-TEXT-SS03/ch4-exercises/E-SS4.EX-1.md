@@ -18,26 +18,21 @@ audit:
 ---
 
 ::: {.exercise}
-Suppose f is continuous and of moderate decrease, and ${ \hat { f } } ( \xi ) = 0$ for all $\xi \in \RR$ Show that $f = 0$ by completing the following outline:
+Suppose $f$ is continuous and of moderate decrease, and $\hat{f}(\xi) = 0$ for all $\xi \in \RR$. Show that $f = 0$ by completing the following outline:
 
-(a) For each fixed real number t consider the two functions
-
+(a) For each fixed real number $t$ consider the two functions
 $$
-A (z) = \int_ {- \infty} ^ {t} f (x) e ^ {- 2 \pi i z (x - t)} d x \quad \text { and } \quad B (z) = - \int_ {t} ^ {\infty} f (x) e ^ {- 2 \pi i z (x - t)} d x.
+A(z) = \int_{-\infty}^{t} f(x) e^{-2\pi i z(x - t)}\, dx \quad \text{and} \quad B(z) = -\int_t^{\infty} f(x) e^{-2\pi i z(x - t)}\, dx.
 $$
+Show that $A(\xi) = B(\xi)$ for all $\xi \in \RR$.
 
-Show that $A ( \xi ) = B ( \xi )$ for all $\xi \in \RR .$
-
-(b) Prove that the function F equal to A in the closed upper half-plane, and B in the lower half-plane, is entire and bounded, thus constant.
-In fact, show that $F = 0$
+(b) Prove that the function $F$ equal to $A$ in the closed upper half-plane, and $B$ in the lower half-plane, is entire and bounded, thus constant. In fact, show that $F = 0$.
 
 (c) Deduce that
-
 $$
-\int_ {- \infty} ^ {t} f (x) d x = 0,
+\int_{-\infty}^{t} f(x)\, dx = 0,
 $$
-
-for all t, and conclude that $f = 0$
+for all $t$, and conclude that $f = 0$.
 :::
 
 ::: {.solution}

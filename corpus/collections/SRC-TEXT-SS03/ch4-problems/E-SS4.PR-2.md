@@ -23,64 +23,45 @@ audit:
 
 ::: {.exercise}
 The problem is to solve the differential equation
-
 $$
-a _ {n} \frac {d ^ {n}}{d t ^ {n}} u (t) + a _ {n - 1} \frac {d ^ {n - 1}}{d t ^ {n - 1}} u (t) + \dots + a _ {0} u (t) = f (t),
+a_n \frac{d^n}{dt^n} u(t) + a_{n-1} \frac{d^{n-1}}{dt^{n-1}} u(t) + \cdots + a_0 u(t) = f(t),
 $$
-
-where $a _ { 0 } , a _ { 1 } , \ldots , a _ { n }$ are complex constants, and $f$ is a given function.
-Here we suppose that $f$ has bounded support and is smooth (say of class $C ^ { 2 } )$
+where $a_0, a_1, \ldots, a_n$ are complex constants, and $f$ is a given function. Here we suppose that $f$ has bounded support and is smooth (say of class $C^2$).
 
 (a) Let
-
 $$
-\hat {f} (z) = \int_ {- \infty} ^ {\infty} f (t) e ^ {- 2 \pi i z t} d t.
+\hat{f}(z) = \int_{-\infty}^{\infty} f(t) e^{-2\pi i zt}\, dt.
 $$
-
-Observe that $\hat { f }$ is an entire function, and using integration by parts show that
-
+Observe that $\hat{f}$ is an entire function, and using integration by parts show that
 $$
-\abs{ \hat {f} (x + i y) } \leq \frac {A}{1 + x ^ {2}}
+\abs{\hat{f}(x + iy)} \leq \frac{A}{1 + x^2}
 $$
-
-if $\abs{ y } \le a$ for any fixed $a \geq 0$
+if $\abs{y} \leq a$ for any fixed $a \geq 0$.
 
 (b) Write
-
 $$
-P (z) = a _ {n} (2 \pi i z) ^ {n} + a _ {n - 1} (2 \pi i z) ^ {n - 1} + \dots + a _ {0}.
+P(z) = a_n (2\pi iz)^n + a_{n-1} (2\pi iz)^{n-1} + \cdots + a_0.
 $$
-
-Find a real number c so that $P ( z )$ does not vanish on the line
-
+Find a real number $c$ so that $P(z)$ does not vanish on the line
 $$
-L = \{z: z = x + i c, x \in \RR \}.
+L = \{z : z = x + ic,\ x \in \RR\}.
 $$
 
 (c) Set
-
 $$
-u (t) = \int_ {L} \frac {e ^ {2 \pi i z t}}{P (z)} \hat {f} (z) d z.
+u(t) = \int_L \frac{e^{2\pi izt}}{P(z)} \hat{f}(z)\, dz.
 $$
-
 Check that
-
 $$
-\sum_{j=0}^n a_j\left(\frac{d}{dt}\right)^j u(t)
-=\int_L e^{2\pi i zt}\hat f(z)\,dz
+\sum_{j=0}^{n} a_j \left( \frac{d}{dt} \right)^j u(t) = \int_L e^{2\pi izt} \hat{f}(z)\, dz
 $$
-
 and
-
 $$
-\int_L e^{2\pi i zt}\hat f(z)\,dz
-=\int_{-\infty}^{\infty}e^{2\pi ixt}\hat f(x)\,dx.
+\int_L e^{2\pi izt} \hat{f}(z)\, dz = \int_{-\infty}^{\infty} e^{2\pi ixt} \hat{f}(x)\, dx.
 $$
-
 Conclude by the Fourier inversion theorem that
-
 $$
-\sum_{j=0}^n a_j\left(\frac{d}{dt}\right)^j u(t)=f(t).
+\sum_{j=0}^{n} a_j \left( \frac{d}{dt} \right)^j u(t) = f(t).
 $$
 :::
 

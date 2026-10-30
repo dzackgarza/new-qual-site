@@ -22,27 +22,24 @@ audit:
 ---
 
 ::: {.exercise}
-More generally, let $R ( x ) = P ( x ) / Q ( x )$ be a rational function with (degree $Q ) \geq$ (degreeP )+2 and $Q ( x ) \neq 0$ on the real axis.
+More generally, let $R(x) = P(x)/Q(x)$ be a rational function with $(\deg Q) \geq (\deg P) + 2$ and $Q(x) \neq 0$ on the real axis.
 
-(a) Prove that if $\alpha _ { 1 } , \ldots , \alpha _ { k }$ are the roots of R in the upper half-plane, then there exists polynomials $P _ { j } ( \boldsymbol { \xi } )$ of degree less than the multiplicity of $\alpha _ { j }$ so that
-
+(a) Prove that if $\alpha_1, \ldots, \alpha_k$ are the roots of $R$ in the upper half-plane, then there exists polynomials $P_j(\xi)$ of degree less than the multiplicity of $\alpha_j$ so that
 $$
-\int_ {- \infty} ^ {\infty} R (x) e ^ {- 2 \pi i x \xi} d x = \sum_ {j = 1} ^ {k} P _ {j} (\xi) e ^ {- 2 \pi i \alpha_ {j} \xi}, \quad \text {when} \xi <   0.
+\int_{-\infty}^{\infty} R(x) e^{-2\pi i x\xi}\, dx = \sum_{j=1}^{k} P_j(\xi) e^{-2\pi i\alpha_j\xi}, \quad \text{when } \xi < 0.
 $$
 
-(b) In particular, if $Q ( z )$ has no zeros in the upper half-plane, then $\begin{array} { r } { \int _ { - \infty } ^ { \infty } R ( x ) e ^ { - 2 \pi i x \xi } d x = 0 } \end{array}$ for $\xi < 0 .$
+(b) In particular, if $Q(z)$ has no zeros in the upper half-plane, then $\int_{-\infty}^{\infty} R(x) e^{-2\pi i x\xi}\, dx = 0$ for $\xi < 0$.
 
-(c) Show that similar results hold in the case $\xi > 0$
+(c) Show that similar results hold in the case $\xi > 0$.
 
 (d) Show that
-
 $$
-\int_ {- \infty} ^ {\infty} R (x) e ^ {- 2 \pi i x \xi} d x = O (e ^ {- a \abs{ \xi }}), \quad \xi \in \RR
+\int_{-\infty}^{\infty} R(x) e^{-2\pi i x\xi}\, dx = O(e^{-a\abs{\xi}}), \quad \xi \in \RR
 $$
+as $\abs{\xi} \to \infty$ for some $a > 0$. Determine the best possible $a$'s in terms of the roots of $R$.
 
-as $\abs{ \xi } \to \infty$ for some $a > 0$ . Determine the best possible $a \mathrm { { s } }$ in terms of the roots of R.
-
-[Hint: For part $\mathrm { ( a ) }$ , use residues. The powers of $\xi$ appear when one diferentiates the function $f ( z ) = R ( z ) e ^ { - 2 \pi i z \xi }$ (as in the formula of Theorem 1.4 in the previous chapter). For part (c) argue in the lower half-plane.]
+[Hint: For part (a), use residues. The powers of $\xi$ appear when one differentiates the function $f(z) = R(z) e^{-2\pi i z\xi}$ (as in the formula of Theorem 1.4 in the previous chapter). For part (c) argue in the lower half-plane.]
 :::
 
 ::: {.solution}
