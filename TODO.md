@@ -711,6 +711,17 @@ mathematical correction under its own node, not under copy policy.
     - [ ] Card pages list one collection twice when a card appears in two sections of it (P-TOP-WORKSHOP-D3-04, -D3-05); render one entry per appearance with its section name.
     **Acceptance:** each item read and repaired.
 
+  - **`ad9-prelim`**. **Needs:** none. Round 9 at 2cd9297bd3; report in the session scratchpad r9-prelim.md.
+    - [ ] P-KU6C3: the bracketed note lost its opening, leaving a stray "]"; the source asks only for the root 1 and gives 1 (double) and −2 as information.
+    - [ ] P-HOBOM: malformed step numbering (two step 1s, a mid-proof QED, "Steps 1 and 1", duplicate anchors).
+    - [ ] P-UCLAB01F-06 step 1: unescaped set braces.
+    - [ ] P-UCLAB02W-09 step 2: doubled "+ ⋯ + +".
+    - [ ] P-UCLAB02F-08 step 5: `,qquad` missing its backslash.
+    - [ ] P-BERK77S-02 step 3: the triangle can touch the real axis; cite step 1 or 2, not Cauchy's theorem in an open half-plane.
+    - [ ] P-HUKW5: orphan justification fragments; the step 3.1 list collapsed inline.
+    - [ ] Summer77_extracted.md problem 20: "x_3 + - x_5"; the PDF prints "+".
+    **Acceptance:** each item read and repaired.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
