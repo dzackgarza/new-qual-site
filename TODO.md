@@ -570,6 +570,34 @@ mathematical correction under its own node, not under copy policy.
     - [ ] PR-GEHJF remark: the sentence built around inserted card titles is ungrammatical.
     **Acceptance:** each item read and repaired.
 
+  Round 4 (revision `e6068b271c`, algebraic-geometry wiki) injected the node below;
+  `audited-deployment` needs it.
+  - **`ad4-ag-content`**. **Needs:** none.
+    - [ ] T-BIRINV (blowups-and-classification): link text makes "Fano, Calabi--Yau" read as
+      birational invariants; only general type (Kodaira dimension) is.
+    - [ ] PR-IV2INSEP closing paragraph: "isomorphic as schemes, not over k" contradicts the
+      card's "need not be isomorphic as k-schemes" ($X = \PP^1$).
+    - [ ] D-IV2ETCOV: "proper nonempty open $U$" fails for clopen $U$; require $U$ not closed.
+    - [ ] D-MORLOCAL: the $\PP^1$ example shows non-locality for proper only; add the
+      doubled-origin line for separated.
+    - [ ] F2, wiki link text that breaks the sentence (`[[ID]]` rendered as the card title
+      inside prose): T-HARDLEF, T-COHSVAN, functors-and-topologies, FE-FULHIRZBUN,
+      toric/polytopes-and-divisors, T-SRFZMT, T-CRVCM, T-CRVUNIF,
+      P-AGXMISCTSENPONEBUNDLE steps 3, 4 (raw `\PP` visible), 8, D-CRVMOD, T-CRVJINV,
+      PR-MORFINCHAR, P-AGXMISCOCONNECTED step 1, PR-IV2INSEP (two), resources exercise list.
+      The pattern is corpus-wide; read whether prose links should carry explicit link text.
+    - [ ] F1, page prose restating a transcluded card: functors-and-topologies, blowups,
+      affine-or-projective, dimension-and-degree, smooth-and-singular, projective-schemes,
+      vanishing-and-duality, families, derived-functors-and-vanishing, toric/criteria,
+      toric/affine-computations, the curves-and-surfaces pages, classes-of-morphism,
+      fibres-and-images, finite-and-flat (PR-RJ3P7), smooth-unramified-etale.
+    - [ ] resources: bibliography key `[07]` has no author part.
+    - [ ] P-AGXMISCTSENPONEBUNDLE statement "where the fibers smooth curves" lacks a verb;
+      check the source first.
+    - [ ] toric/surfaces-and-morphisms: lead uses $u_i, b_i$, T-TORSURF uses $v_i, a_i$.
+    - [ ] Read P-AGH242AGREEDENSE and PR-QX0VL for a CARD-04 duplicate.
+    **Acceptance:** each item read and repaired.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
