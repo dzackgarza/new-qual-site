@@ -1011,7 +1011,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/real-analysis/workshops/real-week-1-preliminaries.md
   - [x] wiki/real-analysis/workshops/real-week-2-measure-theory.md
   - [x] wiki/topology/appendices/appendix.md
-  - [ ] wiki/topology/appendices/at-course-notes.md
+  - [x] wiki/topology/appendices/at-course-notes.md
   - [ ] wiki/topology/appendices/index.md
   - [ ] wiki/topology/counterexamples.md
   - [ ] wiki/topology/covering-spaces/covering-spaces.md
