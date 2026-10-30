@@ -311,7 +311,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-TOP-WORKSHOP-2020
   - [x] SRC-TOPOLOGY-PHD-F07
   - [x] SRC-TOPOLOGY-PHD-F08
-  - [ ] SRC-TOPOLOGY-PHD-F95
+  - [x] SRC-TOPOLOGY-PHD-F95
   - [ ] SRC-TOPOLOGY-SEPARATION-COUNTABILITY-REVIEW
   - [ ] SRC-UCI-MATH220C-2013-HW3
   - [ ] SRC-UCI-MATH220C-SPRING-2018-HW5
