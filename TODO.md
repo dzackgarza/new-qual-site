@@ -72,7 +72,7 @@ mathematical correction under its own node, not under copy policy.
   Collections (the collection page and every problem page it lists):
   - [x] SRC-AG-EXAM-PROBLEMS-2015
   - [x] SRC-AG-HOMEWORK
-  - [ ] SRC-AGX-MISC-AG-PROBLEMS
+  - [x] SRC-AGX-MISC-AG-PROBLEMS
   - [ ] SRC-AGX-VARIETIES-PROBLEMS
   - [ ] SRC-ALG-ART-HEACCB
   - [ ] SRC-ALG-ART-PSET5-QUALS

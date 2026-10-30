@@ -29,9 +29,9 @@ audit:
 ::: {.problem}
 Find the irreducible components of the following algebraic sets over $\CC$.
 
-a. $V\big(y^4 - x^2,\ y^4 - x^2 y^2 + x y^2 - x^3\big) \subseteq \AA^2$.
+(a) $V\big(y^4 - x^2,\ y^4 - x^2 y^2 + x y^2 - x^3\big) \subseteq \AA^2$.
 
-b. $V\big(y^2 - xz,\ z^2 - y^3\big) \subseteq \AA^3$.
+(b) $V\big(y^2 - xz,\ z^2 - y^3\big) \subseteq \AA^3$.
 :::
 
 ::: {.solution}

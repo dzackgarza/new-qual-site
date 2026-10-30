@@ -15,6 +15,10 @@ relations:
   target: T-MORSTEIN
 review: draft
 audit:
+- event: source-checked
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Source states no hypotheses on pi; the statement now carries the hypotheses the solution uses (integral Noetherian, proper dominant, X normal), without which the converse fails.
 - event: solution-written
   by: chatgpt
   date: 2026-09-20
@@ -29,13 +33,12 @@ audit:
 ---
 
 ::: {.problem}
-Show that given $\pi: X \rightarrow Y$, $Y$ is integrally closed in $K(X)$ over $K(Y)$ if and only if $\OO_{Y} \rightarrow \pi_{*} \OO_{X}$ is an isomorphism (i.e., $\pi$ is $\OO$-connected).
+Let $\pi: X \rightarrow Y$ be a proper dominant morphism of integral Noetherian schemes with $X$ normal.
+Show that $Y$ is integrally closed in $K(X)$ over $K(Y)$ if and only if $\OO_{Y} \rightarrow \pi_{*} \OO_{X}$ is an isomorphism (i.e., $\pi$ is $\OO$-connected).
 :::
 
 ::: {.solution}
-Assume that $X$ and $Y$ are
-integral Noetherian schemes, $\pi:X\to Y$ is proper and dominant, and
-$X$ is normal. Say that $Y$ is integrally closed in $K(X)$ if
+Say that $Y$ is integrally closed in $K(X)$ if
 $\OO_Y(V)$ is integrally closed in $K(X)$ for every affine open
 $V\subseteq Y$. Dominance gives an inclusion
 $$
@@ -256,7 +259,6 @@ Step [](#equivalence-statement){.pf-ref} is the asserted equivalence.
 :::
 
 ::: {.remark}
-The problem states no hypotheses on $X$, $Y$, or $\pi$. The solution assumes $X$ and $Y$ integral Noetherian, $\pi$ proper and dominant, so that $K(Y) \subseteq K(X)$, and $X$ normal.
 The implication from $\OO_Y \cong \pi_* \OO_X$ to integral closedness fails without normality of $X$.
 Let $Y$ be the cuspidal cubic $V(y^2 - x^3)$ and $\pi = \id_Y$.
 Then $\OO_Y \to \pi_* \OO_X$ is an isomorphism, but $t = y/x \in K(Y)$ satisfies $t^2 = x$, so it is integral over $\OO_Y$ and does not lie in $\OO_Y$.
