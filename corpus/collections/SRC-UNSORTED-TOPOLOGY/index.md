@@ -75,11 +75,9 @@ source:
   - id: P-63J4S
   - id: P-6HH2P
   - id: P-ALVYE
-  - id: P-AY6TZ
   - id: P-BNURB
   - id: P-CEVX4
   - id: P-CLHXQ
-  - id: P-D6JY5
   - id: P-DPYAI
   - id: P-EJKY7
   - id: P-FNJCM
@@ -91,7 +89,6 @@ source:
   - id: P-JZXST
   - id: P-K5XUM
   - id: P-KFPX5
-  - id: P-LJTUV
   - id: P-MA7SC
   - id: P-MFWBK
   - id: P-N7RR5

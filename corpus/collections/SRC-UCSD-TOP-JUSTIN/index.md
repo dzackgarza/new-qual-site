@@ -11,13 +11,16 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- assets/attachments/UCSD_Topology_Qual_Problems_2020-05-29.pdf
+- assets/attachments/UCSD_290_F14_sheet1.pdf
+- assets/attachments/UCSD_290_F14_sheet2.pdf
 - assets/attachments/UCSD_290_F14_sheet3.pdf
+- assets/attachments/UCSD_290_F14_sheet4.pdf
 - assets/attachments/UCSD_290_F14_sheet7.pdf
 - assets/attachments/UCSD_290_F14_sheet8.pdf
 - assets/attachments/UCSD_290_F14_sheet10.pdf
 - assets/attachments/UCSD_290_F14_sheet11.pdf
 - assets/attachments/UCSD_290_F14_sheet12.pdf
+- assets/attachments/UCSD_290_F14_sheet13.pdf
 source:
   source_kind: compilation
   problems:
@@ -60,6 +63,10 @@ source:
   - P-AMD-6RPCGOV7
   - P-AMD-ZO6DF2Q5
   - P-AMD-OXM52UGE
+  - id: P-AY6TZ
+    comment: Sheet 4, Problem 1
+  - id: P-LJTUV
+    comment: Sheet 4, Problem 5
   - P-AMD-M3CYGD2R
   - P-AMD-DDQM3X6Q
   - P-AMD-6KL53YZC
@@ -98,6 +105,8 @@ source:
   - P-AMD-URKDWXXC
   - P-AMD-KB4OBOHW
   - P-AMD-4DYUOGAJ
+  - id: P-D6JY5
+    comment: Sheet 13, Problem 1
   - P-AMD-7NJ4YRS5
   - P-AMD-JXFYCMO7
   - P-AMD-HWZNNEDG

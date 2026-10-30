@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/UCSD_290_F14_sheet4.pdf",
+  "source_pdf_sha256": "83a4e6e0badebc9ca3e1a46baa337ddcb4e77f766cde024dec5c2a6333f9d330",
+  "source_url": "https://web.archive.org/web/2018id_/http://www.math.ucsd.edu:80/~justin/290/290F14sheet4.pdf",
+  "extracted_markdown": "assets/attachments/UCSD_290_F14_sheet4_extracted.md",
+  "extracted_markdown_sha256": "ae86434e260b5a82bb68eca263de4ec0d410c7484f500f22f7a362cae9fff31e",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/UCSD_290_F14_sheet4.pdf --language en",
+  "generated_at": "2026-10-30"
+}

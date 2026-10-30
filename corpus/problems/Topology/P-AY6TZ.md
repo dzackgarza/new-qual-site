@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AY6TZ
 kind: problem
-title: The torus does not cover $\RP^2$
+title: Neither the torus nor $\RP^2$ covers the other
 classification:
   areas:
   - topology
@@ -19,10 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that there is no covering map
-$$
-p:T^2=S^1\times S^1\longrightarrow\RP^2.
-$$
+Show that neither the torus $T^2=S^1\times S^1$ nor $\RP^2$ can cover the other.
 :::
 
 ::: {.solution}
@@ -89,6 +86,20 @@ No covering map $T^2\to\RP^2$ exists.
 ::: pf-proof
 
 Otherwise steps [](#s1){.pf-ref} and [](#s2){.pf-ref} would produce the injection ruled out by step [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-step
+
+No covering map $q:\RP^2\to T^2$ exists.
+
+::: pf-proof
+
+As in step [](#s1){.pf-ref}, such a covering would induce an injective homomorphism $q_*:\ZZ/2\ZZ\hookrightarrow\ZZ^2$, using step [](#s2){.pf-ref}.
+The image of the nontrivial element would be a nonzero element of order $2$ in $\ZZ^2$.
+The group $\ZZ^2$ is torsion-free, so no such element exists.
 
 :::
 
