@@ -813,7 +813,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebraic-geometry/curves-and-surfaces/intersection-theory-on-surfaces.md
   - [x] wiki/algebraic-geometry/curves-and-surfaces/moduli-of-curves.md
   - [x] wiki/algebraic-geometry/curves-and-surfaces/special-divisors-and-the-canonical-map.md
-  - [ ] wiki/algebraic-geometry/divisors/index.md
+  - [x] wiki/algebraic-geometry/divisors/index.md
   - [x] wiki/algebraic-geometry/divisors/line-bundles-and-linear-systems.md
   - [x] wiki/algebraic-geometry/divisors/positivity.md
   - [x] wiki/algebraic-geometry/divisors/weil-and-cartier.md
