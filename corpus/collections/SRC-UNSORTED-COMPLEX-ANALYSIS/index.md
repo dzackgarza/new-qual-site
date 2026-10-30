@@ -70,7 +70,6 @@ source:
   - id: E-FXYTL
   - id: E-G3DCH
   - id: E-G55QF
-  - id: E-GAGCW
   - id: E-GFNDF
   - id: E-GMGFS
   - id: E-GPCW2
