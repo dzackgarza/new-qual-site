@@ -24,9 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-Give an explicit example:
-(a) of a topological space $X$ with $\pi_2(X) = 0$ and $H_2(X) \neq 0$, and
-(b) of a topological space $Y$ with $\pi_2(Y) \neq 0$ and $H_2(Y) = 0$.
+Give an example
+(a) of a space $X$ with $\pi_2(X) = 0$ and $H_2(X) \neq 0$ and
+(b) of a space $Y$ with $\pi_2(Y) \neq 0$ and $H_2(Y) = 0$.
 :::
 
 ::: {.solution}

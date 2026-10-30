@@ -41,12 +41,11 @@ Because $f(v)=v$, the segment $\{v\}\times I$ closes up in $T_f$ and defines a b
 
 For every generator $a\in S$, the mapping torus supplies the relation
 $$t^{-1}at=f_*(a)$$
-(up to replacing $t$ by $t^{-1}$, depending on the chosen orientation of the circle direction).
 
 ::: pf-proof
 
 The square traced by a loop representing $a$ as it moves through $K\times I$ has bottom edge $a$, top edge identified with $f\circ a$, and the two vertical basepoint edges represented by $t$ and $t^{-1}$. Its boundary is null-homotopic, giving the displayed conjugacy relation.
-
+The square $a\times I$ has bottom edge $a$ at level $0$, top edge the level-$1$ copy of $a$, which the gluing $(x,1)\sim(f(x),0)$ identifies with the loop $f\circ a$, and both vertical edges equal to $t$. Reading its boundary from the base point gives $a\,t\,(f_*a)^{-1}t^{-1}=1$, which is the displayed relation.
 :::
 
 :::
