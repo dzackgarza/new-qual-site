@@ -26,11 +26,12 @@ audit:
 ::: {.problem}
 Let $I=(7,x-3)$ in $\ZZ[x]$.
 
-1. Prove that for every $r\in\ZZ[x]$ there is an integer $\alpha$ with $0\le\alpha\le6$ such that
+(a) Prove that for every $r\in\ZZ[x]$ there is an integer $\alpha$ with $0\le\alpha\le6$ such that
 $$
 r-\alpha\in I.
 $$
-2. Find $\alpha$ for
+
+(b) Find $\alpha$ for
 $$
 r=x^{250}+15x^{14}+x^2+5.
 $$
@@ -88,7 +89,7 @@ second lies in $(7)$. Hence their sum lies in
 $$
 (7,x-3)=I.
 $$
-This proves part 1.
+This proves part (a).
 :::
 
 :::
@@ -134,7 +135,7 @@ $$
 :::
 
 ::: {.pf-step #alpha-value}
-For the polynomial in part 2,
+For the polynomial in part (b),
 $$
 \boxed{\alpha=6}.
 $$
@@ -147,7 +148,7 @@ in the range $0\leq\alpha\leq6$ is $6$.
 :::
 
 ::: pf-qed
-Step [](#part-one-done){.pf-ref} proves part 1, and step [](#alpha-value){.pf-ref} proves part 2.
+Step [](#part-one-done){.pf-ref} proves part (a), and step [](#alpha-value){.pf-ref} proves part (b).
 :::
 
 :::

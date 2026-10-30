@@ -28,13 +28,15 @@ $$
 S(a_1,a_2,a_3,\ldots)=(a_2,a_3,a_4,\ldots).
 $$
 
-1. Find the eigenvectors of $S$.
-2. Let $W$ be the subspace of sequences satisfying
+(a) Find the eigenvectors of $S$.
+
+(b) Let $W$ be the subspace of sequences satisfying
 $$
 x_{n+2}=x_{n+1}+x_n.
 $$
 Show that $W$ is two-dimensional and $S$-invariant, and give an explicit basis.
-3. Derive an explicit formula for the Fibonacci numbers $f_1=f_2=1$, $f_{n+2}=f_{n+1}+f_n$.
+
+(c) Derive an explicit formula for the Fibonacci numbers $f_1=f_2=1$, $f_{n+2}=f_{n+1}+f_n$.
 :::
 
 ::: {.solution}
@@ -285,8 +287,8 @@ $n\geq1$.
 :::
 
 ::: pf-qed
-Step [](#eigenspace-formula){.pf-ref} answers part 1, steps [](#phi-isomorphism){.pf-ref}, [](#w-invariant){.pf-ref}, [](#alpha-beta-roots){.pf-ref}, [](#u-v-in-w){.pf-ref}, and [](#basis-of-w){.pf-ref} answer part 2, and step
-[](#fibonacci-formula){.pf-ref} answers part 3.
+Step [](#eigenspace-formula){.pf-ref} answers part (a), steps [](#phi-isomorphism){.pf-ref}, [](#w-invariant){.pf-ref}, [](#alpha-beta-roots){.pf-ref}, [](#u-v-in-w){.pf-ref}, and [](#basis-of-w){.pf-ref} answer part (b), and step
+[](#fibonacci-formula){.pf-ref} answers part (c).
 :::
 
 :::

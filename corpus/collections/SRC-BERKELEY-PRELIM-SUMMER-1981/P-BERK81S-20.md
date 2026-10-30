@@ -37,9 +37,9 @@ y(0)=1,
 y'(0)=0.
 $$
 
-1. Show that $y$ is even.
+(a) Show that $y$ is even.
 
-2. Show that $y$ has exactly one zero on the positive real axis.
+(b) Show that $y$ has exactly one zero on the positive real axis.
 :::
 
 ::: {.solution}
