@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-A subset $E$ of a metric space $X$ is a $G_\delta$ set if $E = \bigcap_{n=1}^\infty G_n$ where each $G_n$ is open in $X$. Use Problem 4 to prove that the set of rational numbers is not a $G_\delta$ subset of the set of real numbers.
+A subset $E$ of a metric space $X$ is a $G_\delta$ set if $E = \bigcap_{n=1}^\infty G_n$ where each $G_n$ is open in $X$. Use the Baire category theorem to prove that the set of rational numbers is not a $G_\delta$ subset of the set of real numbers.
 :::
 
 ::: {.solution}
@@ -134,7 +134,7 @@ The equality in step [](#s1-4){.pf-ref} contradicts the Baire category theorem.
 
 By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, every set appearing in the two countable unions of step [](#s1-4){.pf-ref} is closed and nowhere dense.
 The real line with its usual metric is complete.
-Problem 4 therefore implies that $\RR$ cannot be a countable union of such sets.
+The Baire category theorem therefore implies that $\RR$ cannot be a countable union of such sets.
 
 :::
 
