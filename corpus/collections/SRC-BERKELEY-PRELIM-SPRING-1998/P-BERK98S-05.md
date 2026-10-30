@@ -6,7 +6,8 @@ title: Two-sided ideals of the ring of upper-triangular real $2\times2$ matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: A trace-zero complex matrix is similar to one with zero diagonal
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

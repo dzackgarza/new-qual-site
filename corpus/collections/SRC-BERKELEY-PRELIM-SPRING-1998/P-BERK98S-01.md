@@ -6,7 +6,8 @@ title: $z^4+z^3+1$ has exactly one root in the first quadrant
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

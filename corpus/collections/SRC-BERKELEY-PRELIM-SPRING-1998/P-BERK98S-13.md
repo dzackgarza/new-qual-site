@@ -6,7 +6,8 @@ title: Integral of $\abs{dz}/\abs{z-a}^2$ over the unit circle for $\abs{a}<1$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

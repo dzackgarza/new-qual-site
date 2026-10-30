@@ -6,7 +6,8 @@ title: A quadratic rational function maps the left half-plane into the unit disk
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

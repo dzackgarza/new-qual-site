@@ -6,7 +6,8 @@ title: Sylvester's criterion for a real quadratic form in three variables
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

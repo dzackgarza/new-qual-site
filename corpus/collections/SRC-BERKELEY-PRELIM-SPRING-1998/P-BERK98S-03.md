@@ -6,7 +6,8 @@ title: If $T^2$ is a strict contraction, then $T$ has a unique fixed point
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

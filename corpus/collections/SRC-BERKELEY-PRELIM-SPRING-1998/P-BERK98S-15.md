@@ -6,7 +6,8 @@ title: A quartic orthogonal to all lower-degree polynomials on $[-1,1]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

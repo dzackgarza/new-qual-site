@@ -6,7 +6,8 @@ title: Every unipotent complex matrix has an $r$-th root
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

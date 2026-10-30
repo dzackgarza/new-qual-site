@@ -6,7 +6,8 @@ title: Integral of $e^{-(x^2+(y-x)^2+y^2)}$ over $\RR^2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

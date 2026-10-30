@@ -6,7 +6,8 @@ title: Growth and decay of powers of three real $2\times2$ matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
