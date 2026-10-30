@@ -25,11 +25,9 @@ audit:
 
 ::: {.problem}
 Find
-
 $$
-\int _ { C } { \frac { \cosh ( \pi z ) } { z ( z ^ { 2 } + 1 ) } } d z
+\int_{C} \frac{\cosh(\pi z)}{z(z^{2} + 1)}\, dz
 $$
-
 when $C$ is the circle $\abs{z} = 2$, described in the positive sense.
 :::
 

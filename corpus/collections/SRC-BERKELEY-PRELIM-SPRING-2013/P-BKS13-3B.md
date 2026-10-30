@@ -29,18 +29,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $g$ be $2\pi$-periodic, continuous on $[ - \pi , \pi ]$ and have Fourier series
-
+Let $g$ be $2\pi$-periodic, continuous on $[-\pi, \pi]$ and have Fourier series
 $$
-{ \frac { a _ { 0 } } { 2 } } + \sum _ { n = 1 } ^ { \infty } ( a _ { n } \cos n x + b _ { n } \sin n x ) .
+\frac{a_{0}}{2} + \sum_{n=1}^{\infty} (a_{n} \cos nx + b_{n} \sin nx).
 $$
-
 Let $f$ be $2\pi$-periodic and satisfy the differential equation
-
 $$
-f ^ { \prime \prime } ( x ) + k f ( x ) = g ( x )
+f''(x) + kf(x) = g(x)
 $$
-
 where $k \neq n^2$, $n = 1, 2, 3, \ldots$. Find the Fourier series of $f$ and prove that it converges everywhere.
 :::
 

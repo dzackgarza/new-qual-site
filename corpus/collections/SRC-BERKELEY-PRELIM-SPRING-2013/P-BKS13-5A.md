@@ -24,13 +24,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $n \geq 1$ and let $\{ a _ { 0 } , a _ { 1 } , \ldots , a _ { n } \}$ be complex numbers such that $a _ { n } \neq 0$ . For $\theta \in \RR$ , define
-
+Let $n \geq 1$ and let $\{a_{0}, a_{1}, \ldots, a_{n}\}$ be complex numbers such that $a_{n} \neq 0$. For $\theta \in \RR$, define
 $$
-f ( \theta ) = a _ { 0 } + a _ { 1 } e ^ { i \theta } + a _ { 2 } e ^ { 2 i \theta } + . . . + a _ { n } e ^ { n i \theta } .
+f(\theta) = a_{0} + a_{1} e^{i\theta} + a_{2} e^{2i\theta} + \cdots + a_{n} e^{ni\theta}.
 $$
-
-Prove that there exists $\theta \in \RR$ such that $\abs{ f ( \theta ) } > \abs{ a _ { 0 } }$
+Prove that there exists $\theta \in \RR$ such that $\abs{f(\theta)} > \abs{a_{0}}$.
 :::
 
 ::: {.solution}

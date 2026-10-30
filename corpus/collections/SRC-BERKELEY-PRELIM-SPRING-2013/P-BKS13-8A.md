@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let m and n be integers greater than 1. Prove that $\log _ { m } ( n )$ is rational if and only if $m = l ^ { r }$ and $n = l ^ { s }$ , for some positive integers l, r, and s.
+Let $m$ and $n$ be integers greater than $1$. Prove that $\log_{m}(n)$ is rational if and only if $m = l^{r}$ and $n = l^{s}$, for some positive integers $l$, $r$, and $s$.
 :::
 
 ::: {.solution}

@@ -24,13 +24,11 @@ audit:
 ---
 
 ::: {.problem}
-Consider the symmetric group $\Sigma _ { n }$ in its presentation as $n \times n$ permutation matrices. Define the “expected trace” to be the weighted sum of traces
-
+Consider the symmetric group $\Sigma_{n}$ in its presentation as $n \times n$ permutation matrices. Define the "expected trace" to be the weighted sum of traces
 $$
-E _ { n } = { \frac { 1 } { n ! } } \sum _ { g \in \Sigma _ { n } } { \mathrm { T r a c e } } ( g )
+E_{n} = \frac{1}{n!} \sum_{g \in \Sigma_{n}} \operatorname{Trace}(g).
 $$
-
-Calculate $E _ { n } .$
+Calculate $E_{n}$.
 :::
 
 ::: {.solution}

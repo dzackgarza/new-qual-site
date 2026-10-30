@@ -24,10 +24,9 @@ audit:
 ---
 
 ::: {.problem}
-Show that the $n \times n$ (Cauchy) matrix with entries $1 / ( x _ { i } - y _ { j } )$ has determinant
-
+Show that the $n \times n$ (Cauchy) matrix with entries $1/(x_{i} - y_{j})$ has determinant
 $$
-\frac { \prod _ { 1 \leq j < i \leq n } ( x _ { i } - x _ { j } ) ( y _ { j } - y _ { i } ) } { \prod _ { 1 \leq i , j \leq n } ( x _ { i } - y _ { j } ) }
+\frac{\prod_{1 \leq j < i \leq n} (x_{i} - x_{j})(y_{j} - y_{i})}{\prod_{1 \leq i, j \leq n} (x_{i} - y_{j})}.
 $$
 :::
 

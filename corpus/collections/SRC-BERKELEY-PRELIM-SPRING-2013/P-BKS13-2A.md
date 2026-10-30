@@ -28,15 +28,13 @@ Suppose that $f$ is a smooth real function defined for all real $x$, such that $
 
 (1) Show that $f$ has a unique zero $z$.
 
-(2) Given $x _ { 0 } ,$ define a sequence by $x _ { n + 1 } = x _ { n } - f ( x _ { n } ) / f ^ { \prime } ( x _ { n } )$ . Show that
-
+(2) Given $x_{0}$, define a sequence by $x_{n+1} = x_{n} - f(x_{n})/f'(x_{n})$. Show that
 $$
-\abs{ x _ { n + 1 } - z } \leq \abs{ x _ { n } - z } ^ { 2 } M / \epsilon .
+\abs{x_{n+1} - z} \leq \abs{x_{n} - z}^{2} M/\epsilon.
 $$
-
 (Hint: $f(x_n) = \int_z^{x_n} f'(x)\,dx$.)
 
-(3) Show that the sequence $\{ x _ { n } \}$ converges to the zero $z$ of $f$ provided that $\abs{f(x_0)} < \epsilon^2/M$.
+(3) Show that the sequence $\{x_{n}\}$ converges to the zero $z$ of $f$ provided that $\abs{f(x_0)} < \epsilon^2/M$.
 :::
 
 ::: {.solution}
