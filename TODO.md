@@ -900,7 +900,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/conformal-maps/index.md
   - [x] wiki/complex-analysis/conformal-maps/mobius-transformations.md
   - [x] wiki/complex-analysis/conformal-maps/normal-families-and-montel.md
-  - [ ] wiki/complex-analysis/conformal-maps/the-riemann-mapping-theorem.md
+  - [x] wiki/complex-analysis/conformal-maps/the-riemann-mapping-theorem.md
   - [ ] wiki/complex-analysis/conformal-maps/the-schwarz-lemma.md
   - [ ] wiki/complex-analysis/counterexamples.md
   - [ ] wiki/complex-analysis/counting-zeros/how-many-zeros-in-this-region.md

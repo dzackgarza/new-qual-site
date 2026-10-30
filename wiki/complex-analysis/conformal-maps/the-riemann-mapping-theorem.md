@@ -64,14 +64,14 @@ $$
 - $h\in\mathcal F$: $h$ is holomorphic with $h(z_0)=0$ and $\abs{h'(z_0)} = m>0$, so it is nonconstant, maps into $\DD$ by the maximum modulus principle, and is injective by Hurwitz's theorem as a locally uniform limit of injective maps.
 
 - $h$ is surjective, since a non-surjective element of $\mathcal F$ is not a maximizer.
+  Multiplying $h$ by $\overline{h'(z_0)}/\abs{h'(z_0)}$ gives a biholomorphism $F\colon\Omega\to\DD$ with $F(z_0)=0$ and $F'(z_0)>0$.
 
-![](../../../../assets/assets/figures/2021-12-14_16-34-14.png)
+:::
 
-![](../../../../assets/assets/figures/2021-12-14_16-34-24.png)
-
-![](../../../../assets/assets/figures/2021-12-14_16-34-50.png)
-
-![](../../../../assets/assets/figures/2021-12-14_17-34-54.png)
+::: {.proof title="Uniqueness"}
+Let $F_1, F_2\colon\Omega\to\DD$ be biholomorphisms with $F_j(z_0)=0$ and $F_j'(z_0)>0$.
+Then $G\coloneqq F_1\circ\inverseof{F_2}$ is an automorphism of $\DD$ with $G(0)=0$, so $G(z)=e^{i\theta}z$ by the [[complex-analysis/conformal-maps/the-schwarz-lemma|Schwarz lemma]].
+By the chain rule, $e^{i\theta} = G'(0) = F_1'(z_0)/F_2'(z_0) > 0$, so $G$ is the identity and $F_1=F_2$.
 
 :::
 
