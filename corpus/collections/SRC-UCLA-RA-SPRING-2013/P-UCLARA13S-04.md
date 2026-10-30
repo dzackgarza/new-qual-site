@@ -6,7 +6,10 @@ title: Existence of an equilibrium measure for Newtonian energy
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Weak Convergence
+  - Borel Measures
+  - Compactness
 relations: []
 review: draft
 audit:

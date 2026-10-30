@@ -6,7 +6,9 @@ title: Circular differentiation from Bourgain's maximal estimate
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Maximal Functions
+  - Differentiation
 relations: []
 review: draft
 audit:

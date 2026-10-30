@@ -6,7 +6,10 @@ title: Translation difference quotient forces constancy
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L¹
+  - Differentiation
+  - Continuity
 relations: []
 review: draft
 audit:

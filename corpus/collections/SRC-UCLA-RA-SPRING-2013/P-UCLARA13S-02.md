@@ -6,7 +6,10 @@ title: Weak and norm Borel sigma-algebras on ell2
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Hilbert Spaces
+  - Weak Convergence
+  - Borel Measures
 relations: []
 review: draft
 audit:

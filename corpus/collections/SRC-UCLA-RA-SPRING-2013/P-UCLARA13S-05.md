@@ -6,7 +6,9 @@ title: Norm of derivative evaluation on harmonic Bergman space
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Hilbert Spaces
+  - Bounded Operators
 relations: []
 review: draft
 audit:

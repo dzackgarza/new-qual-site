@@ -6,7 +6,10 @@ title: Fourier transforms form a dense proper subspace of C0
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Transform
+  - Density
+  - Baire Category
 relations: []
 review: draft
 audit:
