@@ -67,7 +67,6 @@ source:
   - id: E-ENWYG
   - id: E-FCYUM
   - id: E-FJHDQ
-  - id: E-FJJA6
   - id: E-FJZCL
   - id: E-FMLK2
   - id: E-FPZDC

@@ -46,3 +46,7 @@ $$
 I(a)=\frac1a\left(\log a\cdot\frac\pi2\right)=\frac{\pi}{2a}\log a.
 $$
 :::
+
+::: {.remark title="Variations"}
+At $a=1$ the main statement gives $\int_0^\infty\frac{\log x}{1+x^2}\,dx=\frac{\pi}{2}\log 1=0$.
+:::
