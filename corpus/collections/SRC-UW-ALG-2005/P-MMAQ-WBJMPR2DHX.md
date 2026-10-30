@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-WBJMPR2DHX
 kind: problem
-title: Order of $\mathrm{GL}_3(\FF_2)$ and the number of elements of order
+title: Order of $\operatorname{GL}_3(\FF_2)$ and the number of elements of order
   $7$
 classification:
   areas:
@@ -22,9 +22,9 @@ audit:
 ::: {.problem}
 Let $\FF_2$ be the field with two elements.
 
-- What is the order of $\text{GL}_3(\FF_2)$?
+(a) What is the order of $\operatorname{GL}_3(\FF_2)$?
 
-- Use the fact that $\text{GL}_3(\FF_2)$ is a simple group (which you should not prove) to find the number of elements of order 7 in $\text{GL}_3(\FF_2)$.
+(b) Use the fact that $\operatorname{GL}_3(\FF_2)$ is a simple group (which you should not prove) to find the number of elements of order 7 in $\operatorname{GL}_3(\FF_2)$.
 :::
 
 ::: {.solution}

@@ -24,10 +24,10 @@ Let $f:\ZZ^m\rightarrow G$ be a surjection of abelian groups.
 We may think of $f$ as a homomorphism of $\ZZ$-modules.
 Let $K$ be the kernel of $f$.
 
-- Prove that $K$ is isomorphic to $\ZZ^m$.
+(a) Prove that $K$ is isomorphic to $\ZZ^m$.
 
-- We can therefore write the inclusion map $K\rightarrow\ZZ^m$ as $\ZZ^m\rightarrow\ZZ^m$ and represent it by an $m\times m$ integer matrix $A$.
-  Prove that $\abs{\det A}=\cardinality{G}$.
+(b) We can therefore write the inclusion map $K\rightarrow\ZZ^m$ as $\ZZ^m\rightarrow\ZZ^m$ and represent it by an $m\times m$ integer matrix $A$.
+Prove that $\abs{\det A}=\cardinality{G}$.
 :::
 
 ::: {.solution}

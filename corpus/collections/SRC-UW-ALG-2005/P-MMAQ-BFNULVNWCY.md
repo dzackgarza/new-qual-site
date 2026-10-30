@@ -20,9 +20,9 @@ audit:
 ::: {.problem}
 Consider the polynomial $f(x)=x^{10}+x^5+1\in\QQ[x]$ with splitting field $K$ over $\QQ$.
 
-- Determine whether $f(x)$ is irreducible over $\QQ$ and find $[K:\QQ]$.
+(a) Determine whether $f(x)$ is irreducible over $\QQ$ and find $[K:\QQ]$.
 
-- Determine the structure of the Galois group $\Gal(K/\QQ)$.
+(b) Determine the structure of the Galois group $\Gal(K/\QQ)$.
 :::
 
 ::: {.solution}

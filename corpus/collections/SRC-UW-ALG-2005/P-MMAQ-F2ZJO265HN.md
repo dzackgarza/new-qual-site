@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-For each prime number $p$ and each positive integer $n$, how many elements $\alpha$ are there in $\FF_{p^n}$ such that $F_p(\alpha)=F_{p^6}$?
+For each prime number $p$ and each positive integer $n$, how many elements $\alpha$ are there in $\FF_{p^n}$ such that $\FF_p(\alpha)=\FF_{p^6}$?
 :::
 
 ::: {.solution}

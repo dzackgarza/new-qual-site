@@ -22,6 +22,7 @@ source:
   - P-Z6IW6
   - P-MMAQ-CAEXKRPGEP
   - P-MMAQ-N34EA7FB6T
+  - P-UWALG05-6
   - P-MMAQ-BFNULVNWCY
   - P-MMAQ-F2ZJO265HN
   source_kind: university-exam

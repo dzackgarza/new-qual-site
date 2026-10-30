@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-L3WFQPKGP5
 kind: problem
-title: For any group $G$ we define $\Omega(G)$ to be the image of the group
+title: Iterated inner automorphism groups of a $p$-group become trivial
 classification:
   areas:
   - algebra
@@ -19,8 +19,12 @@ audit:
 
 ::: {.problem}
 For any group $G$ we define $\Omega(G)$ to be the image of the group homomorphism $\rho:G\rightarrow\Aut(G)$ where $\rho$ maps $g\in G$ to the conjugation automorphism $x\mapsto gx\inverseof{g}$.
-Starting with a group $G_0$, we define $G_1=\Omega(G_0)$ and $G_{i+1}=\Omega(G_i)$ for all $i\geq 0$.
+Starting with a group $G_0$, we define $G_1=\Omega(G_0)$ and $G_{i+1}=\Omega(G_i)$ for all $i\geq 1$.
 If $G_0$ is of order $p^e$ for a prime $p$ and integer $e\geq 2$, prove that $G_{e-1}$ is the trivial group.
+:::
+
+::: {.remark}
+The printed recursion "for all $i\geq 1$" leaves $G_2$ undefined; the intended range is $i\geq 0$, which the solution below uses.
 :::
 
 ::: {.solution}
