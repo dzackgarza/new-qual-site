@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS8.EX-11
 kind: problem
-title: $\abs{\frac{f(z)-f(0)}{M^2-\overline{f(0)}f(z)}}\le\frac{\abs z}{MR}$ for $\abs f<M$ on $D(0,R)$
+title: $\abs{\frac{f(z)-f(0)}{M^2-\overline{f(0)}f(z)}}\le\frac{\abs z}{MR}$ for $\abs f\le M$ on $D(0,R)$
 classification:
   areas:
   - complex-analysis
@@ -17,11 +17,17 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-11
-  note: Repaired the non-strict bound so the displayed Möbius quotient is defined in the extremal constant case.
+  note: Repaired the non-strict bound so the displayed Möbius quotient is defined in the extremal constant
+    case.
+- event: source-checked
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Restored the book's bound |f|<=M; the solution treats the constant case |f|=M, where the quotient
+    is undefined.
 ---
 
 ::: {.exercise}
-Show that if $f : D ( 0 , R ) \to \CC$ is holomorphic, with $\abs{ f ( z ) } < M$ for some $M > 0 ,$ then
+Show that if $f : D ( 0 , R ) \to \CC$ is holomorphic, with $\abs{ f ( z ) } \leq M$ for some $M > 0 ,$ then
 
 $$
 \abs{ \frac {f (z) - f (0)}{M ^ {2} - \overline {{f (0)}} f (z)} } \leq \frac {\abs{ z }}{M R}.
@@ -31,6 +37,8 @@ $$
 :::
 
 ::: {.solution}
+If $\abs{f(z_0)}=M$ for some $z_0$, the maximum modulus principle makes $f$ a constant of modulus $M$. Then both numerator and denominator vanish, and the quotient is undefined. So assume $f$ is not such a constant. The maximum modulus principle then gives $\abs{f}<M$ on $D(0,R)$.
+
 Define
 $$
 g(\zeta)=\frac{f(R\zeta)}{M},\qquad \zeta\in\DD.
