@@ -43,6 +43,10 @@ source:
   - name: II.4
     problems:
     - P-HIRWW
+    - id: P-GYTYV
+      comment: Hungerford 2.4.4
+    - id: P-MZJIA
+      comment: Hungerford 2.4.5
     - P-XUREW
   - name: II.5
     problems:
@@ -53,6 +57,8 @@ source:
   - name: II.6
     problems:
     - P-QY54D
+    - id: P-GAAX7
+      comment: Hungerford 2.6.7
     - P-JQSYV
   - name: II.7
     problems:

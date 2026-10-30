@@ -27,7 +27,7 @@ audit:
 
 ::: {.problem}
 Show that every free module over a unital integral domain is torsion-free.
-Show that the converse is false.
+Show that the converse is false: $\QQ$ is a torsion-free $\ZZ$-module that is not free.
 :::
 
 ::: {.solution}
