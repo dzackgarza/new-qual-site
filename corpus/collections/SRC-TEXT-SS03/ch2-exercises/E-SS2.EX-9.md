@@ -18,16 +18,13 @@ audit:
 ---
 
 ::: {.exercise}
-Let Ω be a bounded open subset of $\CC ,$ and $\varphi : \Omega \to \Omega$ a holomorphic function.
-   Prove that if there exists a point $z _ { 0 } \in \Omega$ such that
-
+Let $\Omega$ be a bounded open subset of $\CC$, and $\varphi \colon \Omega \to \Omega$ a holomorphic function. Prove that if there exists a point $z_0 \in \Omega$ such that
 $$
-\varphi (z _ {0}) = z _ {0} \quad \mathrm{and} \quad \varphi^ {\prime} (z _ {0}) = 1
+\varphi(z_0) = z_0 \quad \text{and} \quad \varphi'(z_0) = 1
 $$
-
 then $\varphi$ is linear.
 
-[Hint: Why can one assume that $z _ { 0 } = 0 ?$ Write $\varphi ( z ) = z + a _ { n } z ^ { n } + O ( z ^ { n + 1 } )$ near 0, and prove that if $\varphi _ { k } = \varphi \circ \cdots \circ \varphi$ (where $\varphi$ appears k times), then $\varphi _ { k } ( z ) =$ $z + k a _ { n } z ^ { n } + O ( z ^ { n + 1 } )$ . Apply the Cauchy inequalities and let $k \to \infty$ to conclude the proof. Here we use the standard O notation, where $f ( z ) = O ( g ( z ) )$ as $z \to 0$ means that $\abs{ f ( z ) } \leq C \abs{ g ( z ) }$ for some constant C as $\abs{ z } \xrightarrow { } 0 . ]$
+[Hint: Why can one assume that $z_0 = 0$? Write $\varphi(z) = z + a_n z^n + O(z^{n+1})$ near $0$, and prove that if $\varphi_k = \varphi \circ \cdots \circ \varphi$ (where $\varphi$ appears $k$ times), then $\varphi_k(z) = z + k a_n z^n + O(z^{n+1})$. Apply the Cauchy inequalities and let $k \to \infty$ to conclude the proof. Here we use the standard $O$ notation, where $f(z) = O(g(z))$ as $z \to 0$ means that $\abs{f(z)} \leq C\abs{g(z)}$ for some constant $C$ as $\abs{z} \to 0$.]
 :::
 
 ::: {.solution}

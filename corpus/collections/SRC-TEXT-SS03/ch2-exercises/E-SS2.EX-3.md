@@ -19,12 +19,10 @@ audit:
 
 ::: {.exercise}
 Evaluate the integrals
-
 $$
-\int_ {0} ^ {\infty} e ^ {- a x} \cos b x d x \quad \text { and } \quad \int_ {0} ^ {\infty} e ^ {- a x} \sin b x d x, \quad a > 0
+\int_0^{\infty} e^{-ax} \cos bx\, dx \quad \text{and} \quad \int_0^{\infty} e^{-ax} \sin bx\, dx, \quad a > 0
 $$
-
-by integrating $e ^ { - A z } , A = { \sqrt { a ^ { 2 } + b ^ { 2 } } }$ , over an appropriate sector with angle $\omega ,$ with cos $\omega = a / A$
+by integrating $e^{-Az}$, $A = \sqrt{a^2 + b^2}$, over an appropriate sector with angle $\omega$, with $\cos\omega = a/A$.
 :::
 
 ::: {.solution}

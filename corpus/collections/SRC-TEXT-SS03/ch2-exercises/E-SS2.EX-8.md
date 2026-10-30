@@ -17,18 +17,14 @@ audit:
 ---
 
 ::: {.exercise}
-If f is a holomorphic function on the strip $- 1 < y < 1 , x \in \RR$ with
-
+If $f$ is a holomorphic function on the strip $-1 < y < 1$, $x \in \RR$ with
 $$
-\abs{ f (z) } \leq A (1 + \abs{ z }) ^ {\eta}, \quad \eta \text {   a   fixed   real   number }
+\abs{f(z)} \leq A(1 + \abs{z})^{\eta}, \quad \eta \text{ a fixed real number}
 $$
-
-for all z in that strip, show that for each integer $n \geq 0$ there exists $A _ { n } \geq 0$ so that
-
+for all $z$ in that strip, show that for each integer $n \geq 0$ there exists $A_n \geq 0$ so that
 $$
-\abs{ f ^ {(n)} (x) } \leq A _ {n} (1 + \abs{ x }) ^ {\eta}, \quad \text {   for   all   } x \in \RR.
+\abs{f^{(n)}(x)} \leq A_n (1 + \abs{x})^{\eta}, \quad \text{for all } x \in \RR.
 $$
-
 [Hint: Use the Cauchy inequalities.]
 :::
 

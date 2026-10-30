@@ -18,29 +18,21 @@ audit:
 ---
 
 ::: {.exercise}
-$^\ast$ Let
-
+$^*$ Let
 $$
-F (z) = \sum_ {n = 1} ^ {\infty} d (n) z ^ {n} \quad \mathrm{for} \abs{ z } <   1
+F(z) = \sum_{n=1}^{\infty} d(n) z^n \quad \text{for } \abs{z} < 1
 $$
-
-where $d ( n )$ denotes the number of divisors of $n .$ Observe that the radius of convergence of this series is 1. Verify the identity
-
+where $d(n)$ denotes the number of divisors of $n$. Observe that the radius of convergence of this series is $1$. Verify the identity
 $$
-\sum_ {n = 1} ^ {\infty} d (n) z ^ {n} = \sum_ {n = 1} ^ {\infty} \frac {z ^ {n}}{1 - z ^ {n}}.
+\sum_{n=1}^{\infty} d(n) z^n = \sum_{n=1}^{\infty} \frac{z^n}{1 - z^n}.
 $$
-
-Using this identity, show that if $z = r$ with $0 < r < 1$ , then
-
+Using this identity, show that if $z = r$ with $0 < r < 1$, then
 $$
-\abs{ F (r) } \geq c \frac {1}{1 - r} \log (1 / (1 - r))
+\abs{F(r)} \geq c \frac{1}{1 - r} \log(1/(1 - r))
 $$
-
-as $r \to 1$ . Similarly, if $\theta = 2 \pi p / q$ where $p$ and $q$ are positive integers and $z = r e ^ { i \theta }$ then
-
+as $r \to 1$. Similarly, if $\theta = 2\pi p/q$ where $p$ and $q$ are positive integers and $z = re^{i\theta}$, then
 $$
-\abs{ F (r e ^ {i \theta}) } \geq c _ {p / q} \frac {1}{1 - r} \log (1 / (1 - r))
-$$
+\abs{F(re^{i\theta})} \geq c_{p/q} \frac{1}{1 - r} \log(1/(1 - r))
 :::
 
 ::: {.solution}

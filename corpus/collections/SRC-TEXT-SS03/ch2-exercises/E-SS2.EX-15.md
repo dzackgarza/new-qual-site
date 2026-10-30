@@ -17,16 +17,13 @@ audit:
 ---
 
 ::: {.exercise}
-Suppose $f$ is a non-vanishing continuous function on $\overline{\DD}$ that is holomorphic in $\DD$.
-    Prove that if
-
+Suppose $f$ is a non-vanishing continuous function on $\overline{\DD}$ that is holomorphic in $\DD$. Prove that if
 $$
-\abs{ f (z) } = 1 \quad \text { whenever } \abs{ z } = 1,
+\abs{f(z)} = 1 \quad \text{whenever } \abs{z} = 1,
 $$
-
 then $f$ is constant.
 
-[Hint: Extend $f$ to all of $\CC$ by $f ( z ) = 1 / \overline { f ( 1 / \overline { { z } } ) }$ whenever $\abs{z} > 1$, and argue as in the Schwarz reflection principle.]
+[Hint: Extend $f$ to all of $\CC$ by $f(z) = 1/\overline{f(1/\overline{z})}$ whenever $\abs{z} > 1$, and argue as in the Schwarz reflection principle.]
 :::
 
 ::: {.solution}

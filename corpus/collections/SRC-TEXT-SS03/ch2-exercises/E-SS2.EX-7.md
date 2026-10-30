@@ -18,19 +18,15 @@ audit:
 ---
 
 ::: {.exercise}
-Suppose $f : \DD \to \CC$ is holomorphic.
-   Show that the diameter $d =$ $\begin{array} { r } { \operatorname* { s u p } _ { z , w \in \DD } \abs{ f ( z ) - f ( w ) } } \end{array}$ of the image of f satisfies
-
+Suppose $f \colon \DD \to \CC$ is holomorphic. Show that the diameter $d = \sup_{z, w \in \DD} \abs{f(z) - f(w)}$ of the image of $f$ satisfies
 $$
-2 \abs{ f ^ {\prime} (0) } \leq d.
+2\abs{f'(0)} \leq d.
 $$
+Moreover, it can be shown that equality holds precisely when $f$ is linear, $f(z) = a_0 + a_1 z$.
 
-Moreover, it can be shown that equality holds precisely when f is linear, $f ( z ) =$ $a _ { 0 } + a _ { 1 } z$
+Note. In connection with this result, see the relationship between the diameter of a curve and Fourier series described in Problem 1, Chapter 4, Book I.
 
-Note.
-In connection with this result, see the relationship between the diameter of a curve and Fourier series described in Problem 1, Chapter 4, Book I.
-
-[Hint: $\begin{array} { r } { 2 f ^ { \prime } ( 0 ) = \frac { 1 } { 2 \pi i } \int _ { \abs{ \zeta } = r } \frac { f ( \zeta ) - f ( - \zeta ) } { \zeta ^ { 2 } } d \zeta } \end{array}$ whenever $0 < r < 1 . ]$
+[Hint: $2f'(0) = \frac{1}{2\pi i} \int_{\abs{\zeta} = r} \frac{f(\zeta) - f(-\zeta)}{\zeta^2}\, d\zeta$ whenever $0 < r < 1$.]
 :::
 
 ::: {.solution}

@@ -17,33 +17,25 @@ audit:
 ---
 
 ::: {.exercise}
-Let u be a real-valued function defined on the unit disc D. Suppose that $u$ is twice continuously diferentiable and harmonic, that is,
-
+Let $u$ be a real-valued function defined on the unit disc $\DD$. Suppose that $u$ is twice continuously differentiable and harmonic, that is,
 $$
-\triangle u (x, y) = 0
+\triangle u(x, y) = 0
 $$
+for all $(x, y) \in \DD$.
 
-for all $( x , y ) \in \DD$
-
-(a) Prove that there exists a holomorphic function f on the unit disc such that
-
+(a) Prove that there exists a holomorphic function $f$ on the unit disc such that
 $$
-\operatorname{Re} (f) = u.
+\Re(f) = u.
 $$
+Also show that the imaginary part of $f$ is uniquely defined up to an additive (real) constant. [Hint: From the previous chapter we would have $f'(z) = 2\, \partial u/\partial z$. Therefore, let $g(z) = 2\, \partial u/\partial z$ and prove that $g$ is holomorphic. Why can one find $F$ with $F' = g$? Prove that $\Re(F)$ differs from $u$ by a real constant.]
 
-Also show that the imaginary part of f is uniquely defined up to an additive (real) constant.
-[Hint: From the previous chapter we would have $f ^ { \prime } ( z ) =$ $2 \partial u / \partial z$ . Therefore, let $g ( z ) = 2 \partial u / \partial z$ and prove that $g$ is holomorphic. Why can one find $F$ with $F ^ { \prime } = g \ ?$ Prove that $\mathrm { R e } ( F )$ difers from u by a real constant.]
-
-(b) Deduce from this result, and from Exercise 11, the Poisson integral representation formula from the Cauchy integral formula: If u is harmonic in the unit disc and continuous on its closure, then if $z = r e ^ { i \theta }$ one has
-
+(b) Deduce from this result, and from Exercise 11, the Poisson integral representation formula from the Cauchy integral formula: If $u$ is harmonic in the unit disc and continuous on its closure, then if $z = re^{i\theta}$ one has
 $$
-u (z) = \frac {1}{2 \pi} \int_ {0} ^ {2 \pi} P _ {r} (\theta - \varphi) u (\varphi) d \varphi
+u(z) = \frac{1}{2\pi} \int_0^{2\pi} P_r(\theta - \varphi)\, u(\varphi)\, d\varphi
 $$
-
-where $P _ { r } ( \gamma )$ is the Poisson kernel for the unit disc given by
-
+where $P_r(\gamma)$ is the Poisson kernel for the unit disc given by
 $$
-P _ {r} (\gamma) = \frac {1 - r ^ {2}}{1 - 2 r \cos \gamma + r ^ {2}}.
+P_r(\gamma) = \frac{1 - r^2}{1 - 2r\cos\gamma + r^2}.
 $$
 :::
 

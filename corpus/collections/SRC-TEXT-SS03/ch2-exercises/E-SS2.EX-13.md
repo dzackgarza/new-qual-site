@@ -18,15 +18,13 @@ audit:
 ---
 
 ::: {.exercise}
-Suppose $f$ is an analytic function defined everywhere in $\CC$ and such that for each $z _ { 0 } \in \CC$ at least one coeficient in the expansion
-
+Suppose $f$ is an analytic function defined everywhere in $\CC$ and such that for each $z_0 \in \CC$ at least one coefficient in the expansion
 $$
-f (z) = \sum_ {n = 0} ^ {\infty} c _ {n} (z - z _ {0}) ^ {n}
+f(z) = \sum_{n=0}^{\infty} c_n (z - z_0)^n
 $$
+is equal to $0$. Prove that $f$ is a polynomial.
 
-is equal to 0. Prove that f is a polynomial.
-
-[Hint: Use the fact that $c _ { n } n ! = f ^ { ( n ) } ( z _ { 0 } )$ and use a countability argument.]
+[Hint: Use the fact that $c_n n! = f^{(n)}(z_0)$ and use a countability argument.]
 :::
 
 ::: {.solution}

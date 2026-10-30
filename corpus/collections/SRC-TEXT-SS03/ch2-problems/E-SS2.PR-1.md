@@ -17,27 +17,19 @@ audit:
 ---
 
 ::: {.exercise}
-Here are some examples of analytic functions on the unit disc that cannot be extended analytically past the unit circle.
-   The following definition is needed.
-   Let $f$ be a function defined in the unit disc D, with boundary circle C. A point w on C is said to be regular for $f$ if there is an open neighborhood U of w and an analytic function $g$ on $U _ { i }$ , so that $f = g$ on $\DD \cap U$ . A function f defined on D cannot be continued analytically past the unit circle if no point of C is regular for $f .$
+Here are some examples of analytic functions on the unit disc that cannot be extended analytically past the unit circle. The following definition is needed. Let $f$ be a function defined in the unit disc $\DD$, with boundary circle $C$. A point $w$ on $C$ is said to be regular for $f$ if there is an open neighborhood $U$ of $w$ and an analytic function $g$ on $U$, so that $f = g$ on $\DD \cap U$. A function $f$ defined on $\DD$ cannot be continued analytically past the unit circle if no point of $C$ is regular for $f$.
 
 (a) Let
-
 $$
-f (z) = \sum_ {n = 0} ^ {\infty} z ^ {2 ^ {n}} \quad \text { for } \abs{ z } <   1.
+f(z) = \sum_{n=0}^{\infty} z^{2^n} \quad \text{for } \abs{z} < 1.
 $$
+Notice that the radius of convergence of the above series is $1$. Show that $f$ cannot be continued analytically past the unit disc. [Hint: Suppose $\theta = 2\pi p/2^k$, where $p$ and $k$ are positive integers. Let $z = re^{i\theta}$; then $\abs{f(re^{i\theta})} \to \infty$ as $r \to 1$.]
 
-Notice that the radius of convergence of the above series is 1. Show that f cannot be continued analytically past the unit disc.
-[Hint: Suppose $\theta = { 2 \pi p } / { 2 ^ { k } }$ , where $p$ and k are positive integers. Let $z = r e ^ { i \theta }$ ; then $\abs{ f ( r e ^ { i \theta } ) } \longrightarrow \infty \mathrm { \ a s \ } r \longrightarrow 1 . ]$
-
-(b) $^\ast$ Fix $0 < \alpha < \infty$ . Show that the analytic function f defined by
-
+(b)$^*$ Fix $0 < \alpha < \infty$. Show that the analytic function $f$ defined by
 $$
-f (z) = \sum_ {n = 0} ^ {\infty} 2 ^ {- n \alpha} z ^ {2 ^ {n}} \quad \text { for } \abs{ z } <   1
+f(z) = \sum_{n=0}^{\infty} 2^{-n\alpha} z^{2^n} \quad \text{for } \abs{z} < 1
 $$
-
-extends continuously to the unit circle, but cannot be analytically continued past the unit circle.
-[Hint: There is a nowhere diferentiable function lurking in the background. See Chapter 4 in Book I.]
+extends continuously to the unit circle, but cannot be analytically continued past the unit circle. [Hint: There is a nowhere differentiable function lurking in the background. See Chapter 4 in Book I.]
 :::
 
 ::: {.solution}

@@ -17,21 +17,17 @@ audit:
 ---
 
 ::: {.exercise}
-Suppose $f$ is continuously complex diferentiable on $\Omega ,$ and $T \subset \Omega$ is a triangle whose interior is also contained in Ω. Apply Green’s theorem to show that
-
+Suppose $f$ is continuously complex differentiable on $\Omega$, and $T \subset \Omega$ is a triangle whose interior is also contained in $\Omega$. Apply Green's theorem to show that
 $$
-\int_ {T} f (z) d z = 0.
+\int_T f(z)\, dz = 0.
 $$
+This provides a proof of Goursat's theorem under the additional assumption that $f'$ is continuous.
 
-This provides a proof of Goursat’s theorem under the additional assumption that $f ^ { \prime }$ is continuous.
-
-[Hint: Green’s theorem says that if $( F , G )$ is a continuously diferentiable vector field, then
-
+[Hint: Green's theorem says that if $(F, G)$ is a continuously differentiable vector field, then
 $$
-\int_ {T} F d x + G d y = \int_ {\mathrm{Interiorof} T} \left(\frac {\partial G}{\partial x} - \frac {\partial F}{\partial y}\right) d x d y.
+\int_T F\, dx + G\, dy = \int_{\text{Interior of } T} \left( \frac{\partial G}{\partial x} - \frac{\partial F}{\partial y} \right) dx\, dy.
 $$
-
-For appropriate $F$ and G, one can then use the Cauchy-Riemann equations.]
+For appropriate $F$ and $G$, one can then use the Cauchy-Riemann equations.]
 :::
 
 ::: {.solution}

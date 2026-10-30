@@ -19,15 +19,12 @@ audit:
 
 ::: {.exercise}
 Prove that
-
 $$
-\int_ {0} ^ {\infty} \sin (x ^ {2}) d x = \int_ {0} ^ {\infty} \cos (x ^ {2}) d x = \frac {\sqrt {2 \pi}}{4}.
+\int_0^{\infty} \sin(x^2)\, dx = \int_0^{\infty} \cos(x^2)\, dx = \frac{\sqrt{2\pi}}{4}.
 $$
+These are the Fresnel integrals. Here, $\int_0^{\infty}$ is interpreted as $\lim_{R \to \infty} \int_0^R$.
 
-These are the Fresnel integrals.
-Here, $\int _ { 0 } ^ { \infty }$ is interpreted as $\lim_{R \to \infty} \int _ { 0 } ^ { R }$
-
-[Hint: Integrate the function $e ^ { - z ^ { 2 } }$ over the path in Figure 14. Recall that $\textstyle \int _ { - \infty } ^ { \infty } e ^ { - x ^ { 2 } } d x = { \sqrt { \pi } } . ]$
+[Hint: Integrate the function $e^{-z^2}$ over the path in Figure 14. Recall that $\int_{-\infty}^{\infty} e^{-x^2}\, dx = \sqrt{\pi}$.]
 :::
 
 ::: {.solution}

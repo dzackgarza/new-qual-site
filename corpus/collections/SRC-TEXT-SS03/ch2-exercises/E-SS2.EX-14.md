@@ -18,17 +18,13 @@ audit:
 ---
 
 ::: {.exercise}
-Suppose that f is holomorphic in an open set containing the closed unit disc, except for a pole at $z _ { \mathrm { 0 } }$ on the unit circle.
-    Show that if
-
+Suppose that $f$ is holomorphic in an open set containing the closed unit disc, except for a pole at $z_0$ on the unit circle. Show that if
 $$
-\sum_ {n = 0} ^ {\infty} a _ {n} z ^ {n}
+\sum_{n=0}^{\infty} a_n z^n
 $$
-
 denotes the power series expansion of $f$ in the open unit disc, then
-
 $$
-\lim _ {n \to \infty} \frac {a _ {n}}{a _ {n + 1}} = z _ {0}.
+\lim_{n \to \infty} \frac{a_n}{a_{n+1}} = z_0.
 $$
 :::
 
