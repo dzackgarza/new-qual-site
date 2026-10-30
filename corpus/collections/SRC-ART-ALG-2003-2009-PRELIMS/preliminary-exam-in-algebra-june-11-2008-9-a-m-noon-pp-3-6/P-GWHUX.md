@@ -14,8 +14,8 @@ relations: []
 review: draft
 ---
 ::: {.problem}
-a. Determine the elementary divisors and invariant factors of the Abelian group $\ZZ_{15}\times\ZZ_{20}\times\ZZ_9$ of order 2700.
-b. Determine the number of nonisomorphic Abelian groups of order 2700.
+(a) Determine the elementary divisors and invariant factors of the Abelian group $\ZZ_{15}\times\ZZ_{20}\times\ZZ_9$ of order 2700.
+(b) Determine the number of nonisomorphic Abelian groups of order 2700.
 :::
 
 ::: {.solution}

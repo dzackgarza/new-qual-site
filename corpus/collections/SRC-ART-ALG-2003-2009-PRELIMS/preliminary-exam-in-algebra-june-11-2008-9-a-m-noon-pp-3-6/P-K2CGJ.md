@@ -22,11 +22,11 @@ audit:
 Let $G$ be a finite group.
 For any $x \in G$ $$Z_G(x) = \{g \in G : gxg^{-1} = x\}$$ is the centralizer of $x$ in $G$ and $$x^G = \{gxg^{-1} : g \in G\}$$ is the conjugacy class of $x$ in $G$.
 
-a. Show that $\cardinality{x^G} = [G : Z_G(x)]$.
+(a) Show that $\cardinality{x^G} = [G : Z_G(x)]$.
 
-b. If $H \le G$ and $x \in H$, prove that $Z_H(x) = H \cap Z_G(x)$.
+(b) If $H \le G$ and $x \in H$, prove that $Z_H(x) = H \cap Z_G(x)$.
 
-c. If $H$ is a subgroup of index 2 in $G$ and $x \in H$, prove that either $\cardinality{x^H} = \cardinality{x^G}$ or $\cardinality{x^H} = \frac{1}{2}\cardinality{x^G}$.
+(c) If $H$ is a subgroup of index 2 in $G$ and $x \in H$, prove that either $\cardinality{x^H} = \cardinality{x^G}$ or $\cardinality{x^H} = \frac{1}{2}\cardinality{x^G}$.
 :::
 
 ::: {.solution}
@@ -158,7 +158,7 @@ $$
 
 ::: pf-proof
 
-Insert the two possibilities from step [](#s4){.pf-ref} into the identity of step
+Insert the two possibilities from step [](#s4){.pf-ref} into the identity of
 step [](#s3){.pf-ref}. If the centralizer index is $2$, then
 $2\cardinality{ x^H}=2\cardinality{ x^G}$. If it is $1$, then
 $2\cardinality{ x^H}=\cardinality{ x^G}$.

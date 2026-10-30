@@ -28,9 +28,9 @@ audit:
 ::: {.problem}
 Let $F$ be a field and $g(x) \in F[x]$ have degree $n > 0$.
 
-a. Define "$E$ is a splitting field for $g(x)$ over $F$."
+(a) Define "$E$ is a splitting field for $g(x)$ over $F$."
 
-b. Prove, without using the Fundamental Theorem of Galois Theory, that if $E$ is a splitting field for $g(x)$ over $F$ then $[E : F] \le n!$.
+(b) Prove, without using the Fundamental Theorem of Galois Theory, that if $E$ is a splitting field for $g(x)$ over $F$ then $[E : F] \le n!$.
 :::
 
 ::: {.solution}

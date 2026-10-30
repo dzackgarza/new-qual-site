@@ -27,9 +27,9 @@ audit:
 ::: {.problem}
 Find the Galois groups, over $\QQ$, of the following polynomials.
 
-a. $x^4 + 4$.
+(a) $x^4 + 4$.
 
-b. $x^3 + x^2 - 2x - 1$.
+(b) $x^3 + x^2 - 2x - 1$.
 Hint: show that if $r$ is a root, then $r^2 - 2$ also is a root.
 :::
 
