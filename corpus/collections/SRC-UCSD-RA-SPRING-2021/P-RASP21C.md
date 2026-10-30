@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-If $f \in L^1([0,1])$ and $\int_0^1 x^{2n} f(x)\,dx = \frac{1}{2n+2}$ for all $n = 0, 1, 2, \ldots$, is $f(x) = x$ a.e.?
+If $f \in L^2([0,1])$ and $\int_0^1 x^{2n} f(x)\,dx = \frac{1}{2n+2}$ for all $n = 0, 1, 2, \ldots$, is $f(x) = x$ a.e.?
 :::
 
 
@@ -33,7 +33,7 @@ Yes. Set
 $$
 h(x):=f(x)-x.
 $$
-Since $f\in L^1([0,1])$, we have $h\in L^1([0,1])$. The hypotheses give
+Since $f\in L^2([0,1])\subseteq L^1([0,1])$, we have $h\in L^1([0,1])$. The hypotheses give
 $$
 \int_0^1 x^{2n}h(x)\,dx=0
 \qquad(n=0,1,2,\ldots),

@@ -294,7 +294,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-TOP-2018Q2
   - [x] SRC-TOP-2019Q1
   - [x] SRC-TOP-2019Q2
-  - [ ] SRC-TOP-2020Q1
+  - [x] SRC-TOP-2020Q1
   - [ ] SRC-TOP-SQUAL1
   - [ ] SRC-TOP-SQUAL2
   - [ ] SRC-TOP-UNL-2005Q2
@@ -510,7 +510,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-RA-SPRING-2017
   - [x] SRC-UCSD-RA-SPRING-2018
   - [x] SRC-UCSD-RA-SPRING-2020
-  - [ ] SRC-UCSD-RA-SPRING-2021
+  - [x] SRC-UCSD-RA-SPRING-2021
   - [ ] SRC-UCSD-RA-SPRING-2022
   - [ ] SRC-UCSD-RA-SPRING-2023
   - [ ] SRC-UCSD-RA-SPRING-2024

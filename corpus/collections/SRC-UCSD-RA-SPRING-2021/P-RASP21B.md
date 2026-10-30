@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-$\mathcal F\subseteq L^1(\mu)$ is uniformly integrable if for every $\varepsilon>0$ there exists $\delta>0$ such that $\abs{\int_E f\,d\mu}<\varepsilon$ whenever $f\in\mathcal F$ and $E\in\mathcal M$ satisfy $\mu(E)<\delta$.
+Let $(X,\mathcal M,\mu)$ be a finite measure space, and let $\mathcal F\subseteq L^1(\mu)$. We say that $\mathcal F$ is uniformly integrable if for every $\varepsilon>0$ there exists $\delta>0$ such that $\abs{\int_E f\,d\mu}<\varepsilon$ whenever $f\in\mathcal F$ and $E\in\mathcal M$ satisfy $\mu(E)<\delta$.
 
 (a) If $p \in (1, \infty]$ and $\mathcal{F}$ is bounded in $L^p(\mu)$, prove that $\mathcal{F}$ is uniformly integrable.
 

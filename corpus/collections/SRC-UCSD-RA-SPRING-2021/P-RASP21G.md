@@ -54,50 +54,43 @@ $$
 \nu(E):=\int_E\varphi\,d\mu.
 $$
 
-Let $U\subseteq X$ be open. For a Radon measure,
+**Step 1: $\lambda=\nu$ on open sets.** Let $U\subseteq X$ be open and let
 $$
-\lambda(U)
-=\sup\left\{\int f\,d\lambda:
- f\in C_c(X),\ 0\le f\le1,\operatorname{supp}f\subseteq U\right\}.
+\Phi_U:=\{f\in C_c(X):0\le f\le1,\ \operatorname{supp}f\subseteq U\}.
 $$
-Using the representation of $I$,
+For the Radon measure $\lambda$,
 $$
-\lambda(U)
-=\sup_f\int f\varphi\,d\mu
-\le \int_U\varphi\,d\mu
-=\nu(U).
+\lambda(U)=\sup_{f\in\Phi_U}\int f\,d\lambda=\sup_{f\in\Phi_U}\int f\varphi\,d\mu.
+$$
+The family $\{f\varphi:f\in\Phi_U\}$ consists of nonnegative continuous functions, is directed upward (if $f,g\in\Phi_U$ then $\max(f,g)\in\Phi_U$), and its pointwise supremum is $\varphi\mathbf 1_U$, because for $x\in U$ Urysohn's lemma gives $f\in\Phi_U$ with $f(x)=1$. For a Radon measure $\mu$, the integral of the supremum of an upward-directed family of nonnegative lower semicontinuous functions is the supremum of the integrals (Folland, Proposition 7.12). Hence
+$$
+\lambda(U)=\int_U\varphi\,d\mu=\nu(U).
 $$
 
-For the reverse inequality, fix a compact set $K\subseteq U$. By the standard cutoff lemma for LCH spaces, there exists $f\in C_c(X)$ with
+**Step 2: $\nu\le\lambda$.** $\lambda$ is outer regular, so for every Borel $E$,
 $$
-0\le f\le1,
-\qquad
-f=1\text{ on }K,
-\qquad
-\operatorname{supp}f\subseteq U.
+\lambda(E)=\inf_{U\supseteq E\text{ open}}\lambda(U)=\inf_{U\supseteq E\text{ open}}\nu(U)\ge\nu(E).
 $$
-Hence
-$$
-\lambda(U)
-\ge \int f\varphi\,d\mu
-\ge \int_K\varphi\,d\mu.
-$$
-Since $\mu$ is Radon and $\varphi$ is positive continuous, the weighted integral is inner regular on open sets:
-$$
-\int_U\varphi\,d\mu
-=\sup_{K\subseteq U\text{ compact}}\int_K\varphi\,d\mu.
-$$
-Therefore
-$$
-\lambda(U)\ge\nu(U).
-$$
-Thus $\lambda(U)=\nu(U)$ for every open $U$.
 
-Both $\lambda$ and $\nu$ are Borel measures, and equality on open sets determines a Radon measure. Hence
+**Step 3: $\lambda\le\nu$.** Since $\mu$ is $\sigma$-finite, write $X=\bigcup_jF_j$ with $\mu(F_j)<\infty$, and set
 $$
-\lambda=\nu.
+A_{j,k}:=F_j\cap\{k-1\le\varphi<k\}\qquad(j,k\ge1),
 $$
-Since $\lambda$ is Radon, so is $\nu$. Therefore
+countably many Borel sets of finite $\mu$-measure covering $X$; enumerate them as $A_1,A_2,\ldots$, with $\varphi<k_m$ on $A_m$. Let $E$ be Borel and $\varepsilon>0$. Since $\mu$ is outer regular and $\mu(E\cap A_m)<\infty$, there is an open $U_m\supseteq E\cap A_m$ with
+$$
+\mu\bigl(U_m\setminus(E\cap A_m)\bigr)<\frac{\varepsilon}{2^mk_m}.
+$$
+Replacing $U_m$ by the open set $U_m\cap\{\varphi<k_m\}$, which still contains $E\cap A_m$, gives
+$$
+\nu\bigl(U_m\setminus(E\cap A_m)\bigr)\le k_m\,\mu\bigl(U_m\setminus(E\cap A_m)\bigr)<\frac{\varepsilon}{2^m}.
+$$
+The open set $U:=\bigcup_mU_m$ contains $E$ and satisfies $U\setminus E\subseteq\bigcup_m\bigl(U_m\setminus(E\cap A_m)\bigr)$, so $\nu(U\setminus E)<\varepsilon$. By Step 1,
+$$
+\lambda(E)\le\lambda(U)=\nu(U)\le\nu(E)+\varepsilon.
+$$
+As $\varepsilon$ is arbitrary, $\lambda(E)\le\nu(E)$.
+
+Steps 2 and 3 give $\lambda=\nu$ on all Borel sets. Since $\lambda$ is Radon, so is $\nu$:
 $$
 \boxed{\nu(E)=\int_E\varphi\,d\mu\text{ defines a Radon measure on }X.}
 $$

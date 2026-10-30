@@ -20,7 +20,8 @@ source:
   - P-T17Q2-4
   - P-T17Q2-5
   - P-T17Q2-6
-  - P-T17Q2-7
+  - id: P-T20B3
+    comment: with $bab$ among the generators of $H$, without the normality question
   - P-T17Q2-8
   date:
     kind: academic-term

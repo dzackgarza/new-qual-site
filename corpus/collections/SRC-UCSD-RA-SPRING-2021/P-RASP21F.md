@@ -72,25 +72,31 @@ Thus $\nu$ is finite on compact subsets of $X$.
 
 ::: pf-step
 
-Prove inner regularity.
+Prove outer regularity on Borel sets and inner regularity on open sets.
 
 ::: pf-proof
 
-Let $E\subseteq X$ be Borel. Since $\mu$ is Radon on $Y$,
+Outer regularity. Let $E\subseteq X$ be Borel. Since $\mu$ is Radon on $Y$,
 $$
 \mu(E\cap Y)
-=\sup\{\mu(L):L\subseteq E\cap Y,\ L\text{ compact in }Y\}.
+=\inf\{\mu(V):V\supseteq E\cap Y,\ V\text{ open in }Y\}.
 $$
-The inclusion $Y\hookrightarrow X$ is continuous, so every compact subset $L$ of $Y$ is also compact in $X$. For such $L$,
+Each such $V$ has the form $V=W\cap Y$ with $W$ open in $X$. Put $W'=W\cup(X\setminus Y)$; it is open in $X$ because $Y$ is closed, it contains $E$, and $W'\cap Y=V$. Hence $\nu(W')=\mu(V)$, and
 $$
-\nu(L)=\mu(L).
+\nu(E)=\inf\{\nu(W'):W'\supseteq E,\ W'\text{ open in }X\}.
 $$
-Therefore
+
+Inner regularity. Let $U\subseteq X$ be open. Then $U\cap Y$ is open in $Y$, so
 $$
-\nu(E)
-=\sup\{\nu(L):L\subseteq E,\ L\text{ compact in }X\}.
+\mu(U\cap Y)
+=\sup\{\mu(L):L\subseteq U\cap Y,\ L\text{ compact in }Y\}.
 $$
-Hence $\nu$ is inner regular. Together with Step 2, this shows that $\nu$ is a Radon measure on the LCH space $X$.
+The inclusion $Y\hookrightarrow X$ is continuous, so every compact subset $L$ of $Y$ is compact in $X$, and $\nu(L)=\mu(L)$. Therefore
+$$
+\nu(U)
+=\sup\{\nu(L):L\subseteq U,\ L\text{ compact in }X\}.
+$$
+Together with Step 2, this shows that $\nu$ is a Radon measure on the LCH space $X$.
 
 :::
 
