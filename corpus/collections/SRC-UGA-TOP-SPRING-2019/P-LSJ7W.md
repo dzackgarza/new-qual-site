@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) Consider the 2-torus as the quotient space
+(a) Consider the $2$-torus as the quotient space
 $$
 T^2 = \RR^2 / \sim \quad \text{where } (x, y) \sim (x + m, y + n) \text{ for } m, n \in \ZZ,
 $$
