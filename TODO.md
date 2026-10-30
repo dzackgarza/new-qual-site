@@ -757,7 +757,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/linear-algebra/index.md
   - [x] wiki/algebra/linear-algebra/jordan-canonical-form.md
   - [x] wiki/algebra/linear-algebra/matrix-counterexamples.md
-  - [ ] wiki/algebra/linear-algebra/minimal-and-characteristic-polynomials.md
+  - [x] wiki/algebra/linear-algebra/minimal-and-characteristic-polynomials.md
   - [ ] wiki/algebra/linear-algebra/rational-canonical-form.md
   - [ ] wiki/algebra/linear-algebra/smith-normal-form.md
   - [ ] wiki/algebra/linear-algebra/the-spectral-theorem.md
