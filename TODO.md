@@ -773,7 +773,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/resources/books-notes.md
   - [x] wiki/algebra/resources/external.md
   - [x] wiki/algebra/resources/fields.md
-  - [ ] wiki/algebra/resources/groups.md
+  - [x] wiki/algebra/resources/groups.md
   - [ ] wiki/algebra/resources/index.md
   - [ ] wiki/algebra/resources/modules.md
   - [ ] wiki/algebra/resources/problems.md
