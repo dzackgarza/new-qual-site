@@ -32,9 +32,9 @@ If $f\colon U\to W$ and $g\colon V\to W$ are conformal bijections onto a standar
 - **Sector $\to \HH$.** $z\mapsto z^n$ maps $\theset{0 < \Arg z < \pi/n}$ onto $\HH$.
   More generally, for $0<a\theta_0\leq\pi$, a branch of $z \mapsto z^a$ maps $\theset{\Arg z \in (-\theta_0, \theta_0)}$ onto $\theset{\Arg w \in (-a\theta_0, a\theta_0)}$, so $a = \pi/(2\theta_0)$ maps a symmetric sector onto the right half plane.
 
-  ![Squaring](../../../../assets/assets/figures/2021-12-10_20-25-14.png)
+  ![The map w = z^2 sends the right half-plane onto the plane slit along the negative real axis; rays go to rays and half-circles to circles.](../../../../assets/assets/figures/2021-12-10_20-25-14.png)
 
-  ![Symmetric sector to right half-plane](../../../../assets/assets/figures/2021-12-10_20-24-49.png)
+  ![The map w = z^(pi/(2 theta_0)) sends the sector of half-angle theta_0 about the positive real axis onto the right half-plane.](../../../../assets/assets/figures/2021-12-10_20-24-49.png)
 
 - **Strip $\to \HH$.** $z\mapsto e^z$ maps $L$ onto $\HH$, and maps $\theset{-\pi<\Im z<\pi}$ onto $\CC\sm\RR_{\leq 0}$.
   For $b-a>0$ and $0<d-c\leq 2\pi$, the exponential maps rectangles to annular sectors:
