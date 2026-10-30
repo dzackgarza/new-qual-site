@@ -886,15 +886,15 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/basics/precalculus.md
   - [x] wiki/complex-analysis/basics/series-reference.md
   - [x] wiki/complex-analysis/basics/tips-techs.md
-  - [ ] wiki/complex-analysis/cauchy-theory/cauchy-estimates-and-liouville.md
-  - [ ] wiki/complex-analysis/cauchy-theory/cauchys-theorem.md
-  - [ ] wiki/complex-analysis/cauchy-theory/index.md
-  - [ ] wiki/complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping.md
-  - [ ] wiki/complex-analysis/cauchy-theory/morera-and-converses.md
-  - [ ] wiki/complex-analysis/cauchy-theory/schwarz-reflection.md
-  - [ ] wiki/complex-analysis/cauchy-theory/the-identity-principle.md
-  - [ ] wiki/complex-analysis/cauchy-theory/the-integral-formula.md
-  - [ ] wiki/complex-analysis/cauchy-theory/theorems-that-give-a-constant.md
+  - [x] wiki/complex-analysis/cauchy-theory/cauchy-estimates-and-liouville.md
+  - [x] wiki/complex-analysis/cauchy-theory/cauchys-theorem.md
+  - [x] wiki/complex-analysis/cauchy-theory/index.md
+  - [x] wiki/complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping.md
+  - [x] wiki/complex-analysis/cauchy-theory/morera-and-converses.md
+  - [x] wiki/complex-analysis/cauchy-theory/schwarz-reflection.md
+  - [x] wiki/complex-analysis/cauchy-theory/the-identity-principle.md
+  - [x] wiki/complex-analysis/cauchy-theory/the-integral-formula.md
+  - [x] wiki/complex-analysis/cauchy-theory/theorems-that-give-a-constant.md
   - [ ] wiki/complex-analysis/conformal-maps/blaschke-factors-and-automorphisms.md
   - [ ] wiki/complex-analysis/conformal-maps/build-me-a-map.md
   - [ ] wiki/complex-analysis/conformal-maps/index.md
