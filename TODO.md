@@ -1025,7 +1025,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/topology/fundamental-group/theorems.md
   - [x] wiki/topology/homology/compute-h-star.md
   - [x] wiki/topology/homology/exercises.md
-  - [ ] wiki/topology/homology/homological-algebra.md
+  - [x] wiki/topology/homology/homological-algebra.md
   - [ ] wiki/topology/homology/homology.md
   - [ ] wiki/topology/homology/index.md
   - [ ] wiki/topology/index.md
