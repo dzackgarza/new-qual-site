@@ -187,7 +187,6 @@ source:
     comment: Stein--Shakarchi 3.1
   - id: E-VA3OK
   - id: E-VGNUI
-  - id: E-VI5ZS
   - id: E-VWVTY
   - id: E-W3QMS
   - id: P-H6WQ2

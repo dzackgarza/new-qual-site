@@ -67,6 +67,5 @@ A solution of $f(z) = a$ of multiplicity $m \geq 2$ is a zero of $f'$.
 
 ## Exercises
 
-[[E-VI5ZS]]
 [[E-PWVJS]]
 [[E-UVNVV]]
