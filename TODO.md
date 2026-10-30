@@ -351,7 +351,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCLA-BASIC-WINTER-2002
   - [x] SRC-UCLA-BASIC-WINTER-2006
   - [x] SRC-UCLA-BASIC-WINTER-2012
-  - [ ] SRC-UCLA-RA-FALL-2009
+  - [x] SRC-UCLA-RA-FALL-2009
   - [ ] SRC-UCLA-RA-FALL-2010
   - [ ] SRC-UCLA-RA-FALL-2011
   - [ ] SRC-UCLA-RA-FALL-2012
