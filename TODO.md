@@ -743,7 +743,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/group-actions/sylow.md
   - [x] wiki/algebra/group-actions/the-class-equation.md
   - [x] wiki/algebra/groups/basics.md
-  - [ ] wiki/algebra/groups/characteristic-subgroups.md
+  - [x] wiki/algebra/groups/characteristic-subgroups.md
   - [ ] wiki/algebra/groups/groups-of-small-order.md
   - [ ] wiki/algebra/groups/index.md
   - [ ] wiki/algebra/groups/is-this-group-abelian.md
