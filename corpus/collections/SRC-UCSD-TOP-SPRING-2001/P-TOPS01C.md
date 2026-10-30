@@ -100,7 +100,7 @@ and every product of total degree $>4$ equal to zero.
 
 ::: pf-proof
 
-The additive groups are those of steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} determine every product of positive-degree generators.
+The additive groups are those of step [](#s2){.pf-ref}, and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} determine every product of positive-degree generators.
 
 :::
 
