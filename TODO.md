@@ -985,7 +985,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/real-analysis/lp-spaces/which-inequality.md
   - [x] wiki/real-analysis/measure/index.md
   - [x] wiki/real-analysis/measure/is-it-measurable.md
-  - [ ] wiki/real-analysis/measure/littlewood-principles-notes.md
+  - [x] wiki/real-analysis/measure/littlewood-principles-notes.md
   - [ ] wiki/real-analysis/measure/littlewoods-principles.md
   - [ ] wiki/real-analysis/measure/outer-measure.md
   - [ ] wiki/real-analysis/resources/books-notes.md
