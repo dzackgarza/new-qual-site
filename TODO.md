@@ -1001,7 +1001,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/real-analysis/undergraduate/continuity.md
   - [x] wiki/real-analysis/undergraduate/definitions.md
   - [x] wiki/real-analysis/undergraduate/differentiability.md
-  - [ ] wiki/real-analysis/undergraduate/index.md
+  - [x] wiki/real-analysis/undergraduate/index.md
   - [ ] wiki/real-analysis/undergraduate/notation.md
   - [ ] wiki/real-analysis/undergraduate/riemann-integrability.md
   - [ ] wiki/real-analysis/undergraduate/sequences-and-series.md
