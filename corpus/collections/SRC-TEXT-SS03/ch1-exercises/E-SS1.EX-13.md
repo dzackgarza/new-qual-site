@@ -93,12 +93,6 @@ In the case $c>0$, both $f$ and $\bar f$ are holomorphic, so $\partial f/\partia
 
 :::
 
-::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} are the three cases.
-
-:::
-
 :::
 
 :::
