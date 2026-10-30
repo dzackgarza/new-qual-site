@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let p be a prime, and let G be the group $\ZZ / p ^ { 2 } \ZZ \times \ZZ / p \ZZ$ . How many automorphisms does G have?
+Let $p$ be a prime, and let $G$ be the group $\ZZ/p^{2}\ZZ \times \ZZ/p\ZZ$. How many automorphisms does $G$ have?
 :::
 
 

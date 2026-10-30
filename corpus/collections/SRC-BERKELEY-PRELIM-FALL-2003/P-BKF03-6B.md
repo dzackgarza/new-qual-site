@@ -24,14 +24,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $f ( z )$ be a meromorphic function on the complex plane.
-Suppose that for every polynomial $p ( z ) \in \CC [ z ]$ and every closed contour Γ avoiding the poles of $f ,$ we have
-
+Let $f(z)$ be a meromorphic function on the complex plane.
+Suppose that for every polynomial $p(z) \in \CC[z]$ and every closed contour $\Gamma$ avoiding the poles of $f$, we have
 $$
-\int _ { \Gamma } p ( z ) ^ { 2 } f ( z ) d z = 0 .
+\int_{\Gamma} p(z)^{2} f(z)\, dz = 0.
 $$
-
-Prove that f (z) is entire.
+Prove that $f(z)$ is entire.
 :::
 
 

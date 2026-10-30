@@ -25,12 +25,10 @@ audit:
 
 ::: {.problem}
 Show that the differential equation
-
 $$
-f ^ { \prime \prime } ( z ) = z f ( z ) , \qquad f ( 0 ) = 1 , \qquad f ^ { \prime } ( 0 ) = 1
+f''(z) = z f(z), \qquad f(0) = 1, \qquad f'(0) = 1
 $$
-
-has an unique entire solution in the complex plane.
+has a unique entire solution in the complex plane.
 :::
 
 ::: {.solution}

@@ -24,8 +24,8 @@ audit:
 ---
 
 ::: {.problem}
-Let A and B be $n \times n$ complex unitary matrices.
-Prove that $\abs{ \operatorname* { d e t } ( A + B ) } \leq 2 ^ { n }$
+Let $A$ and $B$ be $n \times n$ complex unitary matrices.
+Prove that $\abs{\det(A + B)} \leq 2^{n}$.
 :::
 
 

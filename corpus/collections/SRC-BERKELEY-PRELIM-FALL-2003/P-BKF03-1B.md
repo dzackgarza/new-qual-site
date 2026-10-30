@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Evaluate $\int _ { - \infty } ^ { \infty } { \frac { x ^ { 2 } } { x ^ { n } + 1 } } d x$ , where $n \geq 4$ is an even integer.
+Evaluate $\displaystyle \int_{-\infty}^{\infty} \frac{x^{2}}{x^{n} + 1}\, dx$, where $n \geq 4$ is an even integer.
 :::
 
 ::: {.solution}

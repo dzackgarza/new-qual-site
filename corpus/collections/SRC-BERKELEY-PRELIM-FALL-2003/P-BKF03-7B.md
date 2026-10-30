@@ -24,13 +24,11 @@ audit:
 ---
 
 ::: {.problem}
-(a) Let G be a finite group and let X be the set of pairs of commuting elements of $G \mathrm { : }$
-
+(a) Let $G$ be a finite group and let $X$ be the set of pairs of commuting elements of $G$:
 $$
-X = \{ ( g , h ) \in G \times G : g h = h g \} .
+X = \{ (g, h) \in G \times G : gh = hg \}.
 $$
-
-Prove that $\cardinality{ X } = c \cardinality{ G }$ where c is the number of conjugacy classes in G.
+Prove that $\cardinality{X} = c\cardinality{G}$ where $c$ is the number of conjugacy classes in $G$.
 
 (b) Compute the number of pairs of commuting permutations on five letters.
 :::

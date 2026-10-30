@@ -24,15 +24,14 @@ audit:
 ---
 
 ::: {.problem}
-Let C denote the space of continuous functions on [0, 1]. Define
-
+Let $C$ denote the space of continuous functions on $[0, 1]$. Define
 $$
-d ( f , g ) = \int _ { 0 } ^ { 1 } { \frac { \abs{ f ( x ) - g ( x ) } } { 1 + \abs{ f ( x ) - g ( x ) } } } d x .
+d(f, g) = \int_{0}^{1} \frac{\abs{f(x) - g(x)}}{1 + \abs{f(x) - g(x)}}\, dx.
 $$
 
-(a) Show that d is a metric on $C .$
+(a) Show that $d$ is a metric on $C$.
 
-(b) Show that $( C , d )$ is not a complete metric space.
+(b) Show that $(C, d)$ is not a complete metric space.
 :::
 
 
