@@ -90,14 +90,6 @@ $$\sin\left(\frac{z}{1-z}\right) = -\sin(1) \sum_{m=0}^\infty \frac{(-1)^m}{(2m)
 
 :::
 
-::: pf-step
-Conclusion:
-
-::: pf-proof
-All requested Laurent expansions are completely determined.
-:::
-
-:::
 
 :::
 :::

@@ -2,22 +2,22 @@
 schema: qual/card@1
 id: P-TIE-F15-13
 kind: problem
-title: Roots of $z^4-6z+3$ in $\abs{z}<1$ and $1<\abs{z}<2$
+title: Roots of $z^4-6z+3$ in $\abs{z}<1$, $1<\abs{z}<2$ and $\abs{z}>2$
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics: []
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: chatgpt
-  date: 2026-09-12
-  note: Checked against the retained Questions_from_Tie.pdf compilation, section Fall 2015, question 13.
+  - event: source-checked
+    by: chatgpt
+    date: 2026-09-12
+    note: Checked against the retained Questions_from_Tie.pdf compilation, section Fall 2015, question 13.
 ---
 
 ::: {.problem}
-Find the number of roots of $z^{4} - 6z + 3 = 0$ in $\abs{z} < 1$ and $1 < \abs{z} < 2$ respectively.
+Find the number of roots of $z^{4} - 6z + 3 = 0$ in $\abs{z} < 1$, $1 < \abs{z} < 2$, and $\abs{z} > 2$ respectively.
 :::
 
 ::: {.solution}
@@ -112,14 +112,16 @@ $$
 \boxed{
 \#\{\abs{z}<1\}=1,
 \qquad
-\#\{1<\abs{z}<2\}=3.
+\#\{1<\abs{z}<2\}=3,
+\qquad
+\#\{\abs{z}>2\}=0.
 }
 $$
 
 
 ::: pf-proof
 
-This is the combination of steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}.
+The first two counts are steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}. The polynomial $P$ has degree four, so it has four zeros in $\CC$ counted with multiplicity. Step [](#s1-2){.pf-ref} places all four in $\abs{z}<2$, so none lies in $\abs{z}>2$.
 
 :::
 
@@ -127,10 +129,14 @@ This is the combination of steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}.
 
 ::: pf-qed
 
-Step [](#s1-4){.pf-ref} gives both requested numbers of roots.
+Step [](#s1-4){.pf-ref} gives the three requested numbers of roots.
 
 :::
 
 :::
 
+:::
+
+::: remark
+One printing of this problem asks only for the counts in $\abs{z}<1$ and $1<\abs{z}<2$.
 :::
