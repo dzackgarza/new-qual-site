@@ -6,7 +6,10 @@ title: Locally uniform convergence of $f*g_n$ for bounded $g_n\to0$ almost every
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Convolution
+  - Uniform Convergence
+  - L¹
 relations: []
 review: draft
 audit:

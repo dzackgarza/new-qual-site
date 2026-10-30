@@ -6,7 +6,10 @@ title: Almost everywhere convergence of $\sum_n\int_n^{n+n^{-a}}\abs{f(x+y)}\,dy
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Lp Spaces
+  - Holder Inequality
+  - Series of Functions
 relations: []
 review: draft
 audit:

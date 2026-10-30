@@ -6,7 +6,9 @@ title: Completeness of orthonormal systems close to an orthonormal basis
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Hilbert Spaces
+  - Bases
 relations: []
 review: draft
 audit:

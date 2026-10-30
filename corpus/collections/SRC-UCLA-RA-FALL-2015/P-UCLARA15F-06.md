@@ -6,7 +6,9 @@ title: Difference-quotient characterization of $H^{1/2}(\RR^d)$
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Transform
+  - Function Spaces
 relations: []
 review: draft
 audit:

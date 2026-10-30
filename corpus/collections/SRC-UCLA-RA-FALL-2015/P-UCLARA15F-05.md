@@ -6,7 +6,9 @@ title: Hölder continuous functions are meager in $C[0,1]$
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Baire Category
+  - Function Spaces
 relations: []
 review: draft
 audit:
