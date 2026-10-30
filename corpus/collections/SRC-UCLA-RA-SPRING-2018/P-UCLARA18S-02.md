@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Given $f\in L^2(\RR)$ and $h>0$, define
+Given $f\in L^2(\RR)$ and $h>0$, define
 $$
 Q(f,h)=\int_{\RR}\frac{2f(x)-f(x+h)-f(x-h)}{h^2}\,\overline{f(x)}\,dx.
 $$

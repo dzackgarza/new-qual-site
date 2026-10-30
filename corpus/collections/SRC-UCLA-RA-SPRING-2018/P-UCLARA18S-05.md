@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Let $\mu$ be a real-valued Borel measure on $[0,1]$ such that
+Let $\mu$ be a real-valued Borel measure on $[0,1]$ such that
 $$
 \int_0^1\frac1{x+t}\,d\mu(t)=0
 \qquad\text{for all }x>1.

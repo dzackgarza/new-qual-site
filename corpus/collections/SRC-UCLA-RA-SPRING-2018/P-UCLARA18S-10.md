@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. Let $\CC^*=\CC\cup\{\infty\}$ be the Riemann sphere and let
+Let $\CC^*=\CC\cup\{\infty\}$ be the Riemann sphere and let
 $$
 \Omega=\CC^*\setminus\{0,1\}.
 $$

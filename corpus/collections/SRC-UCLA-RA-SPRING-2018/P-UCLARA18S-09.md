@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 9. Consider the formal product
+Consider the formal product
 $$
 \prod_{n=1}^{\infty}\left(1+\frac1n\right)^z\left(1-\frac zn\right).
 $$

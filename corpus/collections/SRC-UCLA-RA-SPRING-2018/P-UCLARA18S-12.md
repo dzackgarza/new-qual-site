@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. Let $f(z)$ be bounded and holomorphic on the unit disc
+Let $f(z)$ be bounded and holomorphic on the unit disc
 $$
 \DD=\{z:\abs{z}<1\}.
 $$

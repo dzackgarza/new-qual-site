@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Determine the supremum of
+Determine the supremum of
 $$
 \abs{\frac{\partial u}{\partial x}(0,0)}
 $$

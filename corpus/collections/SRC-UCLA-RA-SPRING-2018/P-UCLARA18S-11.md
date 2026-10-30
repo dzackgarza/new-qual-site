@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. For $R>1$, let
+For $R>1$, let
 $$
 A_R=\{z\in\CC:1<\abs{z}<R\}.
 $$

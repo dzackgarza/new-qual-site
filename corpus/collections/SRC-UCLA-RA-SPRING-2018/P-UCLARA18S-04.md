@@ -20,7 +20,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4.
 
 (a) Fix $1<p<\infty$. Show that
 $$

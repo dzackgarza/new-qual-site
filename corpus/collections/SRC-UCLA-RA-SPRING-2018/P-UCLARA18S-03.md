@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Suppose $f\in L^1(\RR)$ satisfies
+Suppose $f\in L^1(\RR)$ satisfies
 $$
 \limsup_{\varepsilon\to0}\int_{\RR}\int_{\RR}
 \frac{\abs{f(x)f(y)}}{\abs{x-y}^2+\varepsilon^2}\,dx\,dy<\infty.

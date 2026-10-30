@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Let $\circlegroup$ denote the unit circle in the complex plane, let $\mathcal P(\circlegroup)$ denote the space of Borel probability measures on $\circlegroup$, and let $\mathcal P(\circlegroup\times\circlegroup)$ denote the space of Borel probability measures on $\circlegroup\times\circlegroup$. Fix $\mu,\nu\in\mathcal P(\circlegroup)$ and define
+Let $\circlegroup$ denote the unit circle in the complex plane, let $\mathcal P(\circlegroup)$ denote the space of Borel probability measures on $\circlegroup$, and let $\mathcal P(\circlegroup\times\circlegroup)$ denote the space of Borel probability measures on $\circlegroup\times\circlegroup$. Fix $\mu,\nu\in\mathcal P(\circlegroup)$ and define
 $$
 \mathcal M=\left\{\gamma\in\mathcal P(\circlegroup\times\circlegroup):
 \iint_{\circlegroup\times\circlegroup}f(x)g(y)\,d\gamma(x,y)

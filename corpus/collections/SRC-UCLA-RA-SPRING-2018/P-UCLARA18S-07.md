@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Let $F:\CC\times\CC\to\CC$ be jointly continuous and holomorphic in each variable separately. Show that
+Let $F:\CC\times\CC\to\CC$ be jointly continuous and holomorphic in each variable separately. Show that
 $$
 z\mapsto F(z,z)
 $$

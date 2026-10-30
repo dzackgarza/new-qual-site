@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Suppose $f\in L^1(\RR)$ satisfies
+Suppose $f\in L^1(\RR)$ satisfies
 $$
 \limsup_{h\to0}\int_{\RR}\abs{\frac{f(x+h)-f(x)}{h}}\,dx=0.
 $$
