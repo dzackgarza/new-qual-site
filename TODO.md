@@ -567,7 +567,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UGA-ALG-FALL-2020
   - [x] SRC-UGA-ALG-FALL-2021
   - [x] SRC-UGA-ALG-SPRING-2012
-  - [ ] SRC-UGA-ALG-SPRING-2013
+  - [x] SRC-UGA-ALG-SPRING-2013
   - [ ] SRC-UGA-ALG-SPRING-2014
   - [ ] SRC-UGA-ALG-SPRING-2015
   - [ ] SRC-UGA-ALG-SPRING-2016

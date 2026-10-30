@@ -74,7 +74,7 @@ $$
 
 The cyclic group $C_6$ has exactly one subgroup of each order $1,2,3,6$, so the intermediate fields are the unique subfields of cardinalities $2,4,8,64$. By step [](#s1-1){.pf-ref}, $r^3$ has order three and satisfies the irreducible polynomial $x^2+x+1$, hence generates $\FF_4$.
 
-Put $\beta=r+r^8$. Because $r^9=1$, one has $r^{64}=r$, and thus $\beta^8=r^8+r^{64}=\beta$. Hence $\beta$ belongs to $\FF_8$. It does not belong to $F$: if $\beta=0$ then $r^7=1$; if $\beta=1$, then multiplying $r+r^{-1}=1$ by $r$ gives $r^2+r+1=0$, implying $r^3=1$. Both contradict step [](#s1-1){.pf-ref}. Since $[F_8:F]=3$, the nontrivial extension $F(\beta)$ equals $\FF_8$. Finally $F(r)=K$ by step [](#s1-2){.pf-ref}.
+Put $\beta=r+r^8$. Because $r^9=1$, one has $r^{64}=r$, and thus $\beta^8=r^8+r^{64}=\beta$. Hence $\beta$ belongs to $\FF_8$. It does not belong to $F$: if $\beta=0$ then $r^7=1$; if $\beta=1$, then multiplying $r+r^{-1}=1$ by $r$ gives $r^2+r+1=0$, implying $r^3=1$. Both contradict step [](#s1-1){.pf-ref}. Since $[\FF_8:F]=3$, the nontrivial extension $F(\beta)$ equals $\FF_8$. Finally $F(r)=K$ by step [](#s1-2){.pf-ref}.
 
 :::
 
