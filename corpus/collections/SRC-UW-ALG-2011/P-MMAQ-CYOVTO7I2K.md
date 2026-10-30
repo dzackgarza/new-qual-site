@@ -19,15 +19,18 @@ audit:
 ---
 
 ::: {.problem}
-Let `\begin{align*} R=\ZZ[x]/(x^2+x+1). \end{align*}`{=tex}
+Let
+$$
+R=\ZZ[x]/(x^2+x+1).
+$$
 
-- Answer the following questions with suitable justification.
+(a) Answer the following questions with suitable justification.
 
-  - Is $R$ a Noetherian ring?
+i. Is $R$ a Noetherian ring?
 
-  - Is $R$ an Artinian ring?
+ii. Is $R$ an Artinian ring?
 
-- Prove that $R$ is an integrally closed domain.
+(b) Prove that $R$ is an integrally closed domain.
 :::
 
 ::: {.solution}

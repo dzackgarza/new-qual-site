@@ -23,11 +23,11 @@ audit:
 Let $R$ be a commutative integral domain.
 Show that the following are equivalent:
 
-- $R$ is a field;
+(a) $R$ is a field;
 
-- $R$ is a semi-simple ring;
+(b) $R$ is a semi-simple ring;
 
-- Any $R$-module is projective.
+(c) Any $R$-module is projective.
 :::
 
 ::: {.solution}

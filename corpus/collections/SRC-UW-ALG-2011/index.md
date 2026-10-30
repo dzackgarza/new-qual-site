@@ -17,11 +17,13 @@ source:
     year: 2011
   institution: uw
   problems:
-  - P-MMAQ-AIKDLY3MJC
+  - P-UWALG11-1
   - P-MMAQ-RQA4XXNOF3
   - P-MMAQ-OSVOY6VRAB
   - P-MMAQ-CYOVTO7I2K
+  - P-MMAQ-AIKDLY3MJC
   - P-MMAQ-QK2M6JW4MI
+  - P-UWALG11-7
   - P-S52PP
   source_kind: university-exam
 title: UW Algebra Qualifying Exam 2011

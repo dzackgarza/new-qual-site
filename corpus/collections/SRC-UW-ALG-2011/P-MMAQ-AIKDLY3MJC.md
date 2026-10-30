@@ -22,19 +22,18 @@ audit:
 Let $R$ be a commutative ring.
 Recall that an element $r$ of $R$ is *nilpotent* if $r^n=0$ for some positive integer $n$ and that the *nilradical* of $R$ is the set $N(R)$ of nilpotent elements.
 
-- Prove that
-  $$
-  N(R)=\bigcap_{P\text{ prime}}P.
-  $$
+(a) Prove that
+$$
+N(R)=\bigcap_{P\text{ prime}}P.
+$$
+(Hint: Given a non-nilpotent element $r$ of $R$, you may wish to construct a prime ideal that does not contain $r$ or its powers.)
 
-  > Hint: given a non-nilpotent element $r$ of $R$, you may wish to construct a prime ideal that does not contain $r$ or its powers.
+(b) Given a positive integer $m$, determine the nilradical of $\ZZ/(m)$.
 
-- Given a positive integer $m$, determine the nilradical of $\ZZ/(m)$.
+(c) Determine the nilradical of $\CC[x,y]/(y^2-x^3)$.
 
-- Determine the nilradical of $\CC[x,y]/(y^2-x^3)$.
-
-- Let $p(x,y)$ be a polynomial in $\CC[x,y]$ such that for any complex number $a$, $p(a,a^{3/2})=0$.
-  Prove that $p(x,y)$ is divisible by $y^2-x^3$.
+(d) Let $p(x,y)$ be a polynomial in $\CC[x,y]$ such that for any complex number $a$, $p(a,a^{3/2})=0$.
+Prove that $p(x,y)$ is divisible by $y^2-x^3$.
 :::
 
 ::: {.solution}
