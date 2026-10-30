@@ -20,9 +20,10 @@ audit:
 ---
 
 ::: {.problem}
-a. Let $f$ be a real-valued function defined on $\RR^n$.
+(a) Let $f$ be a real-valued function defined on $\RR^n$.
 Define differentiability of $f$ at a point $p$.
-b. Show that the function $f: \RR^2 \to \RR$ defined by $$f(x,y) = \frac{xy}{x^2+y^2} \text{ for } (x,y) \neq (0,0), \text{ and } f(0,0) = 0$$ is not differentiable at $(0,0)$.
+
+(b) Show that the function $f: \RR^2 \to \RR$ defined by $$f(x,y) = \frac{xy}{x^2+y^2} \text{ for } (x,y) \neq (0,0), \text{ and } f(0,0) = 0$$ is not differentiable at $(0,0)$.
 :::
 
 ::: {.solution}

@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - Series
+  - Series of Numbers
 relations: []
 review: draft
 audit:
