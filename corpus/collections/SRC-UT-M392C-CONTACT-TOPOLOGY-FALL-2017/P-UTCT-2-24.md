@@ -38,6 +38,10 @@ How is $\operatorname{sign}(\operatorname{div}_\omega \mathcal{F})$ visible?
 The first paragraph restates the definitions of Section 2 of the source (Definition 2.20, Theorem 2.23).
 :::
 
+::: {.remark}
+The source prints $\alpha = dz + a\,dx + b\,dy$ for $(a,b) \in \RR^2 - \{0\}$ and asks to check that the characteristic foliation is given by $x^b y^a = c$. With constant $a, b$ the restriction $a\,dx + b\,dy$ to the $x$-$y$ plane is closed and nowhere zero, so its leaves are parallel lines and $\alpha$ is not a contact form. The form $dz + b y\,dx + a x\,dy$ with $a \neq b$ is contact and has the printed leaves on each open quadrant.
+:::
+
 ::: {.solution}
 
 Take the positive area form

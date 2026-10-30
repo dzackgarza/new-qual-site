@@ -239,7 +239,7 @@ distinct Euler classes. There are $p$ values by step [](#s1-1){.pf-ref}.
 
 ::: {.pf-step #s1-10}
 
-The kernel of multiplication by $2$ on $\ZZ/p$ is
+If $p=2r$ is even, the kernel of multiplication by $2$ on $\ZZ/p$ is
 $$
 \boxed{
 \ker d_2

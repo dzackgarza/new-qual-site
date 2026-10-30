@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that a hyperplane ﬁeld isCk if and only if it is locally the kernel of a nonzeroCk 1-form.
+Show that a hyperplane field is $C^k$ if and only if it is locally the kernel of a nonzero $C^k$ $1$-form.
 :::
 
 ::: {.solution}
@@ -192,7 +192,7 @@ Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} construct such a form around
 
 ::: pf-step
 
-Fix $p\in U$. Since $\alpha_p\ne0$, there is a tangent vector
+Conversely, suppose that every point has a neighborhood $U$ carrying a nowhere-zero $C^k$ $1$-form $\alpha$ with $\xi\restrict_U=\ker\alpha$. Fix $p\in U$. Since $\alpha_p\ne0$, there is a tangent vector
 $$
 v\in T_pM
 $$

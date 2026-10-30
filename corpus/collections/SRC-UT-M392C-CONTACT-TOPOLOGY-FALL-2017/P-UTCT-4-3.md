@@ -311,7 +311,11 @@ is a positive volume form. Apply step [](#s1-7){.pf-ref}.
 
 ::: {.pf-step #s1-9}
 
-Define
+For $(\zeta,t)\in\CC\times\RR$ let
+$$
+D=1+\abs{\zeta}^2-it,
+$$
+which is nonzero because its real part is positive, and define
 $$
 \boxed{
 \mathcal C(\zeta,t)
@@ -611,7 +615,13 @@ Step [](#s1-12){.pf-ref} gives the diffeomorphism.
 
 ::: {.pf-step #s1-18}
 
-Under $\Phi$,
+Let
+$$
+\Phi:\RR^3\to\CC\times\RR,
+\qquad
+\Phi(x,y,z)=\left(\frac{x+iy}{2},\ z+\frac{xy}{2}\right),
+$$
+a diffeomorphism with inverse $(\zeta,t)\mapsto(2\operatorname{Re}\zeta,\,2\operatorname{Im}\zeta,\,t-2\operatorname{Re}\zeta\operatorname{Im}\zeta)$. Under $\Phi$,
 $$
 2\,\operatorname{Im}(\overline\zeta\,d\zeta)
 =

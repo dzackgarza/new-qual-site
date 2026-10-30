@@ -34,7 +34,7 @@ Theorem 3.13 (Giroux et al.) assumes that $\partial F$ is a union of leaves and 
 3. No leaf runs from $K_-$ to $K_+$.
 4. The collection of singular points of $\mathcal{F}$ has finitely many connected components which can be ordered so that each leaf between points of the same sign preserves that order.
 
-Show that the hypotheses of Theorem 3.13 hold for generic a generic foliation of $F$.
+Show that the hypotheses of Theorem 3.13 hold for a generic foliation of $F$.
 :::
 
 ::: {.solution}

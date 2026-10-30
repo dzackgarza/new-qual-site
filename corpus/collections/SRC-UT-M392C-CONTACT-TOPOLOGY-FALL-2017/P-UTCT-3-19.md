@@ -431,7 +431,7 @@ half-hyperbolic local model.
 
 ::: pf-step
 
-Along $\gamma$, the tangent vector
+Let $\gamma=\{y=z=0\}$ be the $x$-axis, the seam of $F$. Along $\gamma$, the tangent vector
 $$
 \partial_x
 $$
