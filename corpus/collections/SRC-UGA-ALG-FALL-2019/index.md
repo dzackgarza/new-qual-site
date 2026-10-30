@@ -14,7 +14,7 @@ relations:
   target: SRC-ALG-ART-HEACCB
 review: draft
 provenance:
-- https://www.math.uga.edu/sites/default/files/Quals/Algebra%20%5BFall%202019%5D.docx
+- assets/attachments/Algebra_Fall_2019.docx
 source:
   source_kind: university-exam
   institution: uga

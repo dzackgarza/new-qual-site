@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Algebra_Fall_2019.docx",
+  "source_pdf_sha256": "b70991dbba542f271fe0163581f7e493f5e5a6d763ab6e866e635914a4178b14",
+  "source_url": "https://www.math.uga.edu/sites/default/files/Quals/Algebra%20%5BFall%202019%5D.docx",
+  "extracted_markdown": "assets/attachments/Algebra_Fall_2019_extracted.md",
+  "extracted_markdown_sha256": "c6402af7661b5348553a9172b6c6ccbf161e8d441d7f8c390daec13257913600",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Algebra_Fall_2019.docx --language en",
+  "generated_at": "2026-10-30"
+}

@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Algebra_Fall_2017.docx",
+  "source_pdf_sha256": "dd28879f3be7e1b86a6b493891c53ec6c85969d3b4f8bd35324374744d3c6eb4",
+  "source_url": "https://www.math.uga.edu/sites/default/files/Quals/Algebra%20%5BFall%C2%A02017%5D.docx",
+  "extracted_markdown": "assets/attachments/Algebra_Fall_2017_extracted.md",
+  "extracted_markdown_sha256": "6f35aaa8a4d060161f4db5013999a87fadc956b86118c4dfb9e145675f869973",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Algebra_Fall_2017.docx --language en",
+  "generated_at": "2026-10-30"
+}

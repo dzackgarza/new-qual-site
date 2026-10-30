@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 provenance:
-- https://www.math.uga.edu/sites/default/files/Quals/Algebra%20%5BFall%C2%A02017%5D.docx
+- assets/attachments/Algebra_Fall_2017.docx
 source:
   source_kind: university-exam
   institution: uga

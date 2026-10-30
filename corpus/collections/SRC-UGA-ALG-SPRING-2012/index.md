@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 provenance:
-- https://www.math.uga.edu/sites/default/files/Quals/Algebra%20%5BSpring%C2%A02012%5D.docx
+- assets/attachments/Algebra_Spring_2012.docx
 source:
   source_kind: university-exam
   institution: uga

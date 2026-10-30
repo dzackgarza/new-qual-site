@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Algebra_Spring_2012.docx",
+  "source_pdf_sha256": "528325e486b2fb023a22c9fd94d1a11038fe081cee1083984b2eb0715b9de662",
+  "source_url": "https://www.math.uga.edu/sites/default/files/Quals/Algebra%20%5BSpring%C2%A02012%5D.docx",
+  "extracted_markdown": "assets/attachments/Algebra_Spring_2012_extracted.md",
+  "extracted_markdown_sha256": "ef6e25d0bb3e13de12f08209ac03d1d4151e734766cdb963389e101f879fe454",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Algebra_Spring_2012.docx --language en",
+  "generated_at": "2026-10-30"
+}
