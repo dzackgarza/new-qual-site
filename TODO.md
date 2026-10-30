@@ -787,7 +787,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/rings-and-ideals/ideals-and-quotients.md
   - [x] wiki/algebra/rings-and-ideals/index.md
   - [x] wiki/algebra/rings-and-ideals/number-theory.md
-  - [ ] wiki/algebra/rings-and-ideals/polynomial-rings.md
+  - [x] wiki/algebra/rings-and-ideals/polynomial-rings.md
   - [ ] wiki/algebra/rings-and-ideals/solutions.md
   - [ ] wiki/algebra/rings-and-ideals/which-kind-of-ring.md
   - [ ] wiki/algebra/workshops/algebra-week-1-groups-warmup.md
