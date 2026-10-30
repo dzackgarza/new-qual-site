@@ -6,7 +6,8 @@ title: Evaluation of $\int_{-\infty}^{\infty}\frac{\cos x}{1+x^2}\,dx$ by residu
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: The recurrence $x_n=x_{n-1}-\frac12x_{n-2}$ with $x_0=x_1=1$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Initial value problem $y''-2y'+y=e^{-x}$, $y(0)=y'(0)=0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

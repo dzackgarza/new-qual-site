@@ -6,7 +6,8 @@ title: A finite group with one automorphism has order at most two
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

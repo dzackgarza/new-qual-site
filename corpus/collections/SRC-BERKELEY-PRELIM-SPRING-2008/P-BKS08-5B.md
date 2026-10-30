@@ -6,7 +6,8 @@ title: The splitting field $\QQ(e^{2\pi i/5},\sqrt[5]{2})$ of $x^5-2$ is Galois 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Representing $p\mapsto\int_0^1 \frac{p(x)}{x^2+1}\,dx$ by the $L^2$ pairi
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

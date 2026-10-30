@@ -6,7 +6,8 @@ title: A finite-index subgroup contains a bounded-index normal subgroup
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

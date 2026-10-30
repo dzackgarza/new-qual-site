@@ -6,7 +6,8 @@ title: Centralizer of a nilpotent matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

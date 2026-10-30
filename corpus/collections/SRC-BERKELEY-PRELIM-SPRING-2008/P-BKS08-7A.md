@@ -6,7 +6,8 @@ title: Irreducible polynomials of degree at most $4$ over $\FF_2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

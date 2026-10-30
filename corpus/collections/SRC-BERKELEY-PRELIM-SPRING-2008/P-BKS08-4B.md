@@ -6,7 +6,8 @@ title: Groups of order $p^2q^2$ are not simple
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

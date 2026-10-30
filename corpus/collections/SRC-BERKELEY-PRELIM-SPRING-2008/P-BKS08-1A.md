@@ -6,7 +6,8 @@ title: Finite-dimensional commutators cannot equal the identity
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

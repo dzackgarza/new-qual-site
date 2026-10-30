@@ -6,7 +6,8 @@ title: Number of subgroups of each order in $S_4$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

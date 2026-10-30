@@ -6,7 +6,8 @@ title: Growth of maximal element orders in symmetric groups
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

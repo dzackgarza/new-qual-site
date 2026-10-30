@@ -6,7 +6,8 @@ title: A commutative ring of characteristic $pq$ is a product of rings of charac
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
