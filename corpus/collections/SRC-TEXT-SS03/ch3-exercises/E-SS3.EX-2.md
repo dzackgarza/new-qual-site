@@ -60,3 +60,10 @@ $$
 =\frac{\pi}{\sqrt2}.
 $$
 :::
+
+::: {.remark title="Variations"}
+The integrand is even, so the same computation gives
+$$
+\int_0^\infty\frac{dx}{1+x^4}=\frac{\pi}{2\sqrt2}.
+$$
+:::
