@@ -426,7 +426,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-APALG-FALL-2022
   - [x] SRC-UCSD-APALG-FALL-2023
   - [x] SRC-UCSD-APALG-FALL-2024
-  - [ ] SRC-UCSD-APALG-FALL-2025
+  - [x] SRC-UCSD-APALG-FALL-2025
   - [ ] SRC-UCSD-APALG-SPRING-2004
   - [ ] SRC-UCSD-APALG-SPRING-2005
   - [ ] SRC-UCSD-APALG-SPRING-2006
