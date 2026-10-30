@@ -6,7 +6,8 @@ title: The complement of a regular level curve in $\RR^3$ is path connected
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

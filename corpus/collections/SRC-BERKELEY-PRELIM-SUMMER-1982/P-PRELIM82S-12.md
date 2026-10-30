@@ -6,7 +6,8 @@ title: Irreducibility over $\QQ$ of four quadratic and cubic polynomials
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -30,13 +31,13 @@ audit:
 ::: {.problem}
 Determine, with proof, which of the following polynomials are irreducible over $\QQ$:
 
-1. $x^2+3$;
+(a) $x^2+3$;
 
-2. $x^2-169$;
+(b) $x^2-169$;
 
-3. $x^3+x^2+x+1$;
+(c) $x^3+x^2+x+1$;
 
-4. $x^3+2x^2+3x+4$.
+(d) $x^3+2x^2+3x+4$.
 :::
 
 ::: {.solution}
@@ -210,8 +211,8 @@ $$
 
 ::: pf-proof
 
-Step [](#s2){.pf-ref} proves item 1 irreducible, step [](#s3){.pf-ref} proves item 2 reducible,
-step [](#s4){.pf-ref} proves item 3 reducible, and step [](#s6){.pf-ref} proves item 4
+Step [](#s2){.pf-ref} proves part (a) irreducible, step [](#s3){.pf-ref} proves part (b) reducible,
+step [](#s4){.pf-ref} proves part (c) reducible, and step [](#s6){.pf-ref} proves part (d)
 irreducible.
 
 :::

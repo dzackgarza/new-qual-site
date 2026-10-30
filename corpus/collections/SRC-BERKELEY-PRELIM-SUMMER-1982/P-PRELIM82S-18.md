@@ -6,7 +6,8 @@ title: A quadratic integral functional attains its maximum on a unit Lipschitz b
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: The integral $\int_0^\infty x^{50}/(x^{100}+1)\,dx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

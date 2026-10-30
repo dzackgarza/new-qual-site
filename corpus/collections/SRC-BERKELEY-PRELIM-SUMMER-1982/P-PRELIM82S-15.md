@@ -6,7 +6,8 @@ title: Every disk-holomorphic function is bounded along some sequence approachin
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Equality of the kernels of $A$ and $A^T$ under a nonnegative quadratic fo
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

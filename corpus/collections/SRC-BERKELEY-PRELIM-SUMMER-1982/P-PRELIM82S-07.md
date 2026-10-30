@@ -6,7 +6,8 @@ title: Determinant of $X\mapsto(AX+XA)/2$ on $M_3(\RR)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

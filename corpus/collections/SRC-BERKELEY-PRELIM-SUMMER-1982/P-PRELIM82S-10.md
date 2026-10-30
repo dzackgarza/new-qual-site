@@ -6,7 +6,8 @@ title: Limsup growth of a finite sum of complex power sequences
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

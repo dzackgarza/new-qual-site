@@ -6,7 +6,8 @@ title: Absolute convergence of all derivatives of $\sum z^n/n^{\log n}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

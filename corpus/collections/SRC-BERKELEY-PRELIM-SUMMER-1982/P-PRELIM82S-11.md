@@ -6,7 +6,8 @@ title: Entire functions of the form $e^x(s(y)+it(y))$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

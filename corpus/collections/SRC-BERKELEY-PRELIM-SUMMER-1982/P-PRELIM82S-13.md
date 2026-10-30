@@ -6,7 +6,8 @@ title: Vanishing Fourier sine coefficients of a continuous function on $[0,\pi]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

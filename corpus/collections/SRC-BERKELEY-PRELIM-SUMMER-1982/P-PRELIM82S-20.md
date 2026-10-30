@@ -6,7 +6,8 @@ title: Local invertibility of the matrix-squaring map at $I_2$ and $\operatornam
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -36,15 +37,15 @@ f:M_{2\times2}(\RR)\to M_{2\times2}(\RR),
 f(X)=X^2.
 $$
 
-1. Show that $f$ has a local inverse near
-   $$
-   X=\begin{pmatrix}1&0\\0&1\end{pmatrix}.
-   $$
+(a) Show that $f$ has a local inverse near
+$$
+X=\begin{pmatrix}1&0\\0&1\end{pmatrix}.
+$$
 
-2. Show that $f$ does not have a local inverse near
-   $$
-   X=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
-   $$
+(b) Show that $f$ does not have a local inverse near
+$$
+X=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+$$
 :::
 
 ::: {.solution}
@@ -248,7 +249,7 @@ The first assertion is step [](#s3){.pf-ref} and the second is step [](#s6){.pf-
 
 ::: pf-qed
 
-Step [](#s7){.pf-ref} answers both items.
+Step [](#s7){.pf-ref} answers parts (a) and (b).
 
 :::
 

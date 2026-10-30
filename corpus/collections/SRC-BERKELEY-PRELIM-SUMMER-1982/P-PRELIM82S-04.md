@@ -6,7 +6,8 @@ title: Triviality of a group with mutually exponentiating conjugation relations
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

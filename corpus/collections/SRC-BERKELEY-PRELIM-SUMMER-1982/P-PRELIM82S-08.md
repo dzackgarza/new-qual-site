@@ -6,7 +6,8 @@ title: Divisibility of the central binomial coefficient by two and four
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

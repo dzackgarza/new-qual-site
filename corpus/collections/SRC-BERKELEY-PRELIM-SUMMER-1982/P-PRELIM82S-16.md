@@ -6,7 +6,8 @@ title: Sums of nilpotent matrices and invertibility of $I-A$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
