@@ -17,10 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-For $a > 1$ and $n = 0 , 1 , 2 , . . . ,$ evaluate the integrals
-
+For $a > 1$ and $n = 0, 1, 2, \ldots$, evaluate the integrals
 $$
-C _ { n } ( a ) = \int _ { - \pi } ^ { \pi } \frac { \cos n \theta } { a - \cos \theta } d \theta , \quad \quad \quad S _ { n } ( a ) = \int _ { - \pi } ^ { \pi } \frac { \sin n \theta } { a - \cos \theta } d \theta .
+C_{n}(a) = \int_{-\pi}^{\pi} \frac{\cos n\theta}{a - \cos\theta}\, d\theta, \qquad S_{n}(a) = \int_{-\pi}^{\pi} \frac{\sin n\theta}{a - \cos\theta}\, d\theta.
 $$
 :::
 
