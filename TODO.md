@@ -589,7 +589,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UGA-CA-SPRING-2009
   - [x] SRC-UGA-CA-SPRING-2011
   - [x] SRC-UGA-CA-SPRING-2014
-  - [ ] SRC-UGA-CA-SPRING-2015
+  - [x] SRC-UGA-CA-SPRING-2015
   - [ ] SRC-UGA-CA-SPRING-2017
   - [ ] SRC-UGA-CA-SPRING-2018
   - [ ] SRC-UGA-CA-SPRING-2019
@@ -744,7 +744,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/group-actions/the-class-equation.md
   - [x] wiki/algebra/groups/basics.md
   - [x] wiki/algebra/groups/characteristic-subgroups.md
-  - [ ] wiki/algebra/groups/groups-of-small-order.md
+  - [x] wiki/algebra/groups/groups-of-small-order.md
   - [ ] wiki/algebra/groups/index.md
   - [ ] wiki/algebra/groups/is-this-group-abelian.md
   - [ ] wiki/algebra/groups/notation.md
