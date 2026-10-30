@@ -22,25 +22,25 @@ audit:
 Let $K$ be a field.
 A discrete valuation on $K$ is a function $\nu: K\setminus\{0\}\rightarrow\ZZ$ such that
 
-- $\nu(ab)=\nu(a)+\nu(b)$
+(i) $\nu(ab)=\nu(a)+\nu(b)$
 
-- $\nu$ is surjective
+(ii) $\nu$ is surjective
 
-- $\nu(a+b)\geq\text{min}\{\nu(a),\nu(b)\}$ for $a,b\in K\setminus\{0\}$ with $a+b\neq 0$.
+(iii) $\nu(a+b)\geq\min\{\nu(a),\nu(b)\}$ for all $a,b\in K\setminus\{0\}$ with $a+b\neq 0$.
 
-Let $R:=\{x\in K\setminus\{0\}:\nu(x)\geq0\}\cup\{0\}$.
+Let $R\coloneqq\{x\in K\setminus\{0\}:\nu(x)\geq0\}\cup\{0\}$.
 Then $R$ is called the valuation ring of $\nu$.
 
 Prove the following:
 
-- $R$ is a subring of $K$ containing the 1 in $K$.
+(a) $R$ is a subring of $K$ containing the 1 in $K$.
 
-- for all $x\in K\setminus\{0\}$, either $x$ or $\inverseof{x}$ is in $R$.
+(b) for all $x\in K\setminus\{0\}$, either $x$ or $\inverseof{x}$ is in $R$.
 
-- $x$ is a unit of $R$ if and only if $\nu(x)=0$.
+(c) $x$ is a unit of $R$ if and only if $\nu(x)=0$.
 
-- Let $p$ be a prime number, $K=\QQ$, and $\nu_p:\QQ\setminus\{0\}\rightarrow\ZZ$ be the function defined by $\nu_p(\frac ab)=n$ where $\frac ab=p^n\frac cd$ and $p$ does not divide $c$ and $d$.
-  Prove that the corresponding valuation ring $R$ is the ring of all rational numbers whose denominators are relatively prime to $p$.
+(d) Let $p$ be a prime number, $K=\QQ$ and $\nu_p:\QQ\setminus\{0\}\rightarrow\ZZ$ be the function defined by $\nu_p(\frac ab)=n$ where $\frac ab=p^n\frac cd$ and $p$ does not divide $c$ and $d$.
+Prove that the corresponding valuation ring $R$ is the ring of all rational numbers whose denominators are relatively prime to $p$.
 :::
 
 ::: {.solution}
@@ -49,9 +49,7 @@ Prove the following:
 ::: pf
 
 ::: {.pf-step #s1}
-Valuation of $1$, $-1$, and inverses: 1. $\nu(1) = 0$.
-2\. $\nu(-1) = 0$ and $\nu(-x) = \nu(x)$ for all $x \in K^\times$.
-3\. $\nu(x^{-1}) = -\nu(x)$ for all $x \in K^\times$.
+We have $\nu(1)=0$; $\nu(-1)=0$ and $\nu(-x)=\nu(x)$ for all $x\in K^\times$; and $\nu(x^{-1})=-\nu(x)$ for all $x\in K^\times$.
 
 ::: pf-proof
 

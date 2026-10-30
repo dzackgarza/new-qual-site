@@ -23,15 +23,14 @@ audit:
 ::: {.problem}
 Fix a ring $R$, an $R$-module $M$, and an $R$-module homomorphism $f:M\rightarrow M$.
 
-- If $M$ satisfies the descending chain condition on submodules, show that if $f$ is injective, then $f$ is surjective.
+(a) If $M$ satisfies the descending chain condition on submodules, show that if $f$ is injective, then $f$ is surjective.
+(Hint: note that if $f$ is injective, so are $f\circ f$, $f\circ f\circ f$, etc.)
 
-  > Hint: note that if $f$ is injective, so are $f\circ f$, $f\circ f\circ f$, etc.
+(b) Give an example of a ring $R$, an $R$-module $M$, and an injective $R$-module homomorphism $f:M\rightarrow M$ which is not surjective.
 
-- Give an example of a ring $R$, an $R$-module $M$, and an injective $R$-module homomorphism $f:M\rightarrow M$ which is not surjective.
+(c) If $M$ satisfies the ascending chain condition on submodules, show that if $f$ is surjective, then $f$ is injective.
 
-- If $M$ satisfies the ascending chain condition on submodules, show that if $f$ is surjective, then $f$ is injective.
-
-- Give an example of a ring $R$, an $R$-module $M$, and a surjective $R$-module homomorphism $f:M\rightarrow M$ which is not injective.
+(d) Give an example of a ring $R$, an $R$-module $M$, and a surjective $R$-module homomorphism $f:M\rightarrow M$ which is not injective.
 :::
 
 ::: {.solution}
@@ -64,7 +63,7 @@ Since $f$ is injective, so is $f^n$, hence $x=f(y)$. Thus every $x\in M$ lies in
 
 ::: pf-step
 
-The descending chain condition is necessary: there are injective non-surjective endomorphisms without it.
+Without the descending chain condition, an injective endomorphism need not be surjective.
 
 ::: pf-proof
 
@@ -108,7 +107,7 @@ Thus $\ker f=0$ and $f$ is injective.
 
 ::: pf-step
 
-The ascending chain condition is necessary: there are surjective non-injective endomorphisms without it.
+Without the ascending chain condition, a surjective endomorphism need not be injective.
 
 ::: pf-proof
 

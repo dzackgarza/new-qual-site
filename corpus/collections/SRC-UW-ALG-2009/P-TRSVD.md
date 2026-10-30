@@ -22,15 +22,15 @@ audit:
 ::: {.problem}
 Let $F$ be a field and $p(x)\in F[x]$ an irreducible polynomial.
 
-- Prove that there exists a field extension $K$ of $F$ in which $p(x)$ has a root.
+(a) Prove that there exists a field extension $K$ of $F$ in which $p(x)$ has a root.
 
-- Determine the dimension of $K$ as a vector space over $F$ and exhibit a vector space basis for $K$.
+(b) Determine the dimension of $K$ as a vector space over $F$ and exhibit a vector space basis for $K$.
 
-- If $\theta\in K$ denotes a root of $p(x)$, express $\inverseof{\theta}$ in terms of the basis found in part (b).
+(c) If $\theta\in K$ denotes a root of $p(x)$, express $\inverseof{\theta}$ in terms of the basis found in part (b).
 
-- Suppose $p(x)=x^3+9x+6$.
-  Show $p(x)$ is irreducible over $\QQ$.
-  If $\theta$ is a root of $p(x)$, compute the inverse of $(1+\theta)$ in $\QQ(\theta)$.
+(d) Suppose $p(x)=x^3+9x+6$.
+Show $p(x)$ is irreducible over $\QQ$.
+If $\theta$ is a root of $p(x)$, compute the inverse of $(1+\theta)$ in $\QQ(\theta)$.
 :::
 
 ::: {.solution}
@@ -102,7 +102,7 @@ a_0+\theta(a_1+a_2\theta+\cdots+a_n\theta^{n-1})=0.
 $$
 Because $a_0\ne0$, necessarily $\theta\ne0$, so division by $\theta$ gives the formula.
 
-As the source problem is written, the hypothesis $p(0)\ne0$ is necessary: if $p(x)=x$, then $p$ is irreducible but its root $\theta=0$ has no inverse.
+The hypothesis $p(0)\ne0$ is needed; see the remark below.
 
 :::
 
@@ -154,4 +154,8 @@ Therefore dividing by $4$ gives the inverse.
 
 :::
 
+:::
+
+::: {.remark}
+Part (c) as printed fails for $p(x)=cx$ with $c\in F^\times$: then $\theta=0$ has no inverse. For every other irreducible $p$ the constant term is nonzero and $\theta^{-1}$ exists.
 :::
