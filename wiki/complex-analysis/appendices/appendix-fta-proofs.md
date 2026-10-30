@@ -124,8 +124,4 @@ So $g\equiv 0$ by the identity principle again.
 
 ## A Banach space of holomorphic functions
 
-Let $\Omega\subseteq\CC$ be open.
-If $f_n\to f$ uniformly on $\Omega$ with each $f_n$ holomorphic, then $\int_{\partial T}f=\lim_n\int_{\partial T}f_n=0$ for every closed triangle $T\subseteq\Omega$, so $f$ is holomorphic by [[T-LHSMY|Morera's theorem]].
-This gives completeness of the bounded holomorphic functions under the supremum norm.
-
 [[E-QO2S7]]
