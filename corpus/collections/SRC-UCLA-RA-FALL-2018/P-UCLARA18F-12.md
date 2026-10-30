@@ -5,8 +5,10 @@ kind: problem
 title: Roots of $e^z(z-1)^n=\alpha$ in the right half-plane
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 audit:

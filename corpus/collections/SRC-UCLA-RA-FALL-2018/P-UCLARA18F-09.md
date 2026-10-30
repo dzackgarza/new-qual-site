@@ -5,8 +5,11 @@ kind: problem
 title: Residues and Taylor coefficients of $\pi z\cot\pi z$
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Meromorphic Functions
+  - Residues
+  - Laurent Series
 relations: []
 review: draft
 audit:

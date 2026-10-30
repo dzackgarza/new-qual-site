@@ -5,8 +5,10 @@ kind: problem
 title: Evaluation of $\int_0^\infty\frac{x^\beta}{1+x^2}\,dx$
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 audit:

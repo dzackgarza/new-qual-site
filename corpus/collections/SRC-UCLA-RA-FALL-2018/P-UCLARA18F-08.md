@@ -5,8 +5,10 @@ kind: problem
 title: Completeness and coefficient characterization of the Dirichlet space
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Power Series
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

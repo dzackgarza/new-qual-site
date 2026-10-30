@@ -5,8 +5,9 @@ kind: problem
 title: Finitely connected domains are conformally equivalent to domains bounded by analytic Jordan curves
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Conformal Maps
 relations: []
 review: draft
 audit:

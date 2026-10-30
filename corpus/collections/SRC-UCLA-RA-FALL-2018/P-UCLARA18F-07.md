@@ -5,8 +5,10 @@ kind: problem
 title: Entire functions with integrable $\log\abs{f}$ are constant
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Subharmonic Functions
 relations: []
 review: draft
 audit:
