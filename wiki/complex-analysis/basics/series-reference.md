@@ -58,8 +58,6 @@ $$
 e^z &= \sum_{k\geq 0} {z^k \over k!}, \\
 \sin(z) &= \sum_{k \geq 0} (-1)^{k} {z^{2k+1} \over (2k+1)!} = z - {1\over 3!}z^3 + {1\over 5!}z^5 - \cdots, \\
 \cos(z) &= \sum_{k \geq 0} (-1)^{k} {z^{2k} \over (2k)!} = 1 - {1\over 2!}z^2 + {1\over 4!}z^4 - \cdots, \\
-\cosh(z) &= \sum_{k\geq 0} { z^{2k} \over (2k)! } = 1 + {1\over 2!}z^2 + {1\over 4!}z^4 + \cdots, \\
-\sinh(z) &= \sum_{k\geq 0} { z^{2k+1} \over (2k+1)! } = z + {1\over 3!}z^3 + {1\over 5!}z^5 + \cdots, \\
 \log(1-z) &= - \sum_{k \geq 1} {z^k\over k}, \qquad \abs{z} < 1, \\
 (1+z)^{1/2} &= \sum_{k\geq 0} {1/2 \choose k}z^k = 1 + {1\over 2}z - {1\over 8}z^2 + {1\over 16}z^3 - \cdots, \qquad \abs{z} < 1.
 \end{aligned}
@@ -132,29 +130,12 @@ $$
 
 :::
 
-::: {.proposition title="Coefficients of $1/A(z)$"}
-For a commutative ring $R$, $A(z) \coloneqq \sum_{k\geq 0} a_k z^k \in R[[z]]$ is invertible if and only if $a_0$ is a unit in $R$; over a field, if and only if $a_0\neq 0$.
-In that case the coefficients of $B(z) \coloneqq \sum_{k\geq 0 } b_k z^k \coloneqq 1/A(z)$ are determined recursively by
-$$
-\begin{aligned}
-b_0 &= \inverseof{a_0}, \\
-b_n &= -\inverseof{a_0} \sum_{1\leq i \leq n} a_i b_{n-i} = -{1\over a_0}\qty{a_nb_0 + a_{n-1}b_1 + \cdots + a_1 b_{n-1} }, \qquad n\geq 1.
-\end{aligned}
-$$
-
-:::
-
-::: {.proof}
-Comparing coefficients of $z^n$ in $A(z)B(z) = 1$ gives
-$$
-a_0b_0 =1, \qquad \sum_{i=0}^n a_ib_{n-i} = 0 \quad (n\geq 1),
-$$
-and solving the $n$th equation for $b_n$ gives the recursion.
-Conversely, if $a_0$ is a unit, the recursion defines $B$ with $AB = 1$; if $AB=1$, then $a_0b_0 = 1$.
-
-:::
-
 [[FF-JKLWM]]
+
+::: {.remark}
+The same recursion holds for formal power series: for a commutative ring $R$, $A(z) \coloneqq \sum_{k\geq 0} a_k z^k \in R[[z]]$ is invertible if and only if $a_0$ is a unit in $R$.
+
+:::
 
 [[P-VFAXW]] [[P-IM6MH]] [[P-OCOSY]] [[P-VT4TV]]
 

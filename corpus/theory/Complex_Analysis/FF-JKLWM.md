@@ -24,9 +24,3 @@ b_0=\inverseof{c_0},\qquad b_n=-\inverseof{c_0}\sum_{k=1}^{n}c_kb_{n-k}\quad(n\g
 $$
 In particular, $b_1=-\inverseof{c_0} c_1b_0$ and $b_2=-\inverseof{c_0}(c_2b_0+c_1b_1)$.
 :::
-
-::: {.proof}
-Since $A(0)=c_0\neq0$ and $A$ is continuous, $A$ has no zeros near $0$, so $1/A$ is holomorphic there and has a Taylor series $\sum_k b_kz^k$.
-The Cauchy product of the two series is $A(z)\cdot\frac{1}{A(z)}=1$, so comparing coefficients gives $c_0b_0=1$ and $\sum_{k=0}^{n}c_kb_{n-k}=0$ for $n\ge1$.
-Solving the last equation for $b_n$ gives the recursion.
-:::
