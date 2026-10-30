@@ -82,3 +82,9 @@ $$
 $$
 Renaming $w$ as $z$ gives the Schwarz-Pick inequality.
 :::
+
+::: {.remark title="Variations"}
+If equality holds in the first inequality for some $z\neq w$, or in the second for some $z$, then $f\in\Aut(\DD)$.
+With $g=\phi_{f(w)}\circ f\circ\phi_w^{-1}$ as in the solution, equality in the first inequality gives $\abs{g(\zeta)}=\abs{\zeta}$ at $\zeta=\phi_w(z)\neq0$, and equality in the second (at $w=z$) gives $\abs{g'(0)}=1$.
+In both cases the equality clause of Schwarz's lemma makes $g$ a rotation, so $f=\phi_{f(w)}^{-1}\circ g\circ\phi_w$ is a composition of automorphisms of $\DD$.
+:::
