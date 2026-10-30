@@ -5,7 +5,8 @@ kind: problem
 title: No unital commutative ring has additive group $\QQ/\ZZ$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

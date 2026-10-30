@@ -5,7 +5,8 @@ kind: problem
 title: Differentiability of the modulus near a simple zero approached from one side
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

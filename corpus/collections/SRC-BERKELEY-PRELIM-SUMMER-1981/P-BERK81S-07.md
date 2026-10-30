@@ -5,7 +5,8 @@ kind: problem
 title: The integral of $1/\sin(1/z)$ around $\abs{z}=1/5$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

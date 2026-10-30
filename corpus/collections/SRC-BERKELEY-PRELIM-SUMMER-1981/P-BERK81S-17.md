@@ -5,7 +5,8 @@ kind: problem
 title: Entire functions satisfying $\abs{f}\le\abs{g}$ are constant multiples
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

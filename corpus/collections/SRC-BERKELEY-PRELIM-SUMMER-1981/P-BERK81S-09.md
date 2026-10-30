@@ -5,7 +5,8 @@ kind: problem
 title: Fourier series and Parseval identity for the periodic function $x^3$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -30,18 +31,18 @@ audit:
 ::: {.problem}
 Let $f:\RR\to\RR$ be the $2\pi$-periodic function satisfying $f(x)=x^3$ for $-\pi\le x<\pi$.
 
-1. Prove that the Fourier series of $f$ has the form
-   $$
-   \sum_{n=1}^{\infty}b_n\sin(nx),
-   $$
-   and give an integral formula for $b_n$ without evaluating it.
+(a) Prove that the Fourier series of $f$ has the form
+$$
+\sum_{n=1}^{\infty}b_n\sin(nx),
+$$
+and give an integral formula for $b_n$ without evaluating it.
 
-2. Prove that the Fourier series converges for every $x$.
+(b) Prove that the Fourier series converges for every $x$.
 
-3. Prove that
-   $$
-   \sum_{n=1}^{\infty}b_n^2=\frac{2\pi^6}{7}.
-   $$
+(c) Prove that
+$$
+\sum_{n=1}^{\infty}b_n^2=\frac{2\pi^6}{7}.
+$$
 :::
 
 ::: {.solution}
@@ -326,8 +327,8 @@ Combine steps [](#s10){.pf-ref} and [](#s11){.pf-ref}.
 
 ::: pf-qed
 
-Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (1), step [](#s9){.pf-ref} proves part (2), and step
-[](#s12){.pf-ref} proves part (3).
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (a), step [](#s9){.pf-ref} proves part (b), and step
+[](#s12){.pf-ref} proves part (c).
 
 :::
 

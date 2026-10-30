@@ -5,7 +5,8 @@ kind: problem
 title: $\QQ$ is not a countable intersection of open subsets of $\RR$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

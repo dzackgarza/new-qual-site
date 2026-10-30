@@ -5,7 +5,8 @@ kind: problem
 title: Two positive solutions and the small branch of an implicit logarithmic equation
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

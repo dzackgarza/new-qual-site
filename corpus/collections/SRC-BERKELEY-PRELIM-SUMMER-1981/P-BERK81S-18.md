@@ -5,7 +5,8 @@ kind: problem
 title: Real similarity of rational matrices implies rational similarity
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

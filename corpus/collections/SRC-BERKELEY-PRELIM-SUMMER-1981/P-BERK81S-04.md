@@ -5,7 +5,8 @@ kind: problem
 title: An integrable continuous function is $o(1/x)$ along a symmetric sequence
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

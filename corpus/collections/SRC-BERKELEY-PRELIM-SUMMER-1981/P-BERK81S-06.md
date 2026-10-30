@@ -5,7 +5,8 @@ kind: problem
 title: The symmetric nonidentity elements of $SO(3)$ form a space homeomorphic to $\RP^2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -36,9 +37,9 @@ Q=\{A\in SO(3):A^T=A,\ A\ne I\},
 $$
 and let $\RP^2$ denote the space of lines through the origin in $\RR^3$.
 
-1. Show that $\RP^2$ and $SO(3)$ are compact metric spaces in their usual topologies.
+(a) Show that $\RP^2$ and $SO(3)$ are compact metric spaces in their usual topologies.
 
-2. Show that $\RP^2$ and $Q$ are homeomorphic.
+(b) Show that $\RP^2$ and $Q$ are homeomorphic.
 :::
 
 ::: {.solution}
@@ -380,7 +381,7 @@ space. Such a map is a homeomorphism.
 
 ::: pf-qed
 
-Steps [](#s3){.pf-ref} and [](#s7){.pf-ref} prove part (1), while step [](#s14){.pf-ref} proves part (2).
+Steps [](#s3){.pf-ref} and [](#s7){.pf-ref} prove part (a), while step [](#s14){.pf-ref} proves part (b).
 
 :::
 

@@ -5,7 +5,8 @@ kind: problem
 title: A continuous-kernel integral operator sends $L^2$-Cauchy sequences to uniformly convergent sequences
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

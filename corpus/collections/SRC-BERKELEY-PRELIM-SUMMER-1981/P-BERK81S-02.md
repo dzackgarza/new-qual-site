@@ -5,7 +5,8 @@ kind: problem
 title: A fixed-point-free involutory automorphism forces an odd abelian group
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -30,13 +31,13 @@ audit:
 ::: {.problem}
 Let $G$ be a finite group and let $\varphi\in\operatorname{Aut}(G)$ fix only the identity element.
 
-1. Show that every element of $G$ has the form
-   $$
-   g^{-1}\varphi(g)
-   $$
-   for some $g\in G$.
+(a) Show that every element of $G$ has the form
+$$
+g^{-1}\varphi(g)
+$$
+for some $g\in G$.
 
-2. If $\varphi$ has order $2$, show that $\varphi(g)=g^{-1}$ for every $g\in G$, and deduce that $G$ is abelian of odd order.
+(b) If $\varphi$ has order $2$, show that $\varphi(g)=g^{-1}$ for every $g\in G$, and deduce that $G$ is abelian of odd order.
 :::
 
 ::: {.solution}
@@ -242,8 +243,8 @@ is even, so $\abs G$ is odd.
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} proves part (1), while steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s7){.pf-ref} prove all
-claims in part (2).
+Step [](#s3){.pf-ref} proves part (a), while steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s7){.pf-ref} prove all
+claims in part (b).
 
 :::
 

@@ -5,7 +5,8 @@ kind: problem
 title: Number of roots in the right half-plane of $z^{2n}+\alpha^2z^{2n-1}+\beta^2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
@@ -36,9 +37,9 @@ z^{2n}+\alpha^2z^{2n-1}+\beta^2=0
 $$
 having positive real part is
 
-1. $n$ if $n$ is even;
+(a) $n$ if $n$ is even;
 
-2. $n-1$ if $n$ is odd.
+(b) $n-1$ if $n$ is odd.
 :::
 
 ::: {.solution}

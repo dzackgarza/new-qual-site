@@ -5,7 +5,8 @@ kind: problem
 title: Asymptotics of $2/(1+\sqrt{1-y})$ along $y=1-2\sin^2(2\pi h)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

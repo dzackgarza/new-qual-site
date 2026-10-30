@@ -5,7 +5,8 @@ kind: problem
 title: Determinant of congruence on the skew-symmetric matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Irreducibility of two geometric-sum polynomials over $\QQ$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

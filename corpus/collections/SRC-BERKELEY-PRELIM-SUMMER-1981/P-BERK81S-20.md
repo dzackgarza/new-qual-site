@@ -5,7 +5,8 @@ kind: problem
 title: Evenness and zeros of the solution of $y''=-\abs{y}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -320,7 +321,7 @@ Thus there is no other positive zero.
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} proves part (1), and step [](#s7){.pf-ref} proves part (2).
+Step [](#s3){.pf-ref} proves part (a), and step [](#s7){.pf-ref} proves part (b).
 
 :::
 

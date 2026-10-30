@@ -5,7 +5,8 @@ kind: problem
 title: Surjectivity of $I-vu$ follows from surjectivity of $I-uv$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
