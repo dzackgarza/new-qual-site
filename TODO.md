@@ -526,7 +526,7 @@ mathematical correction under its own node, not under copy policy.
     divisibility, restriction or evaluation, conditional) and the same codemod applies the
     vocabulary macro for that meaning; each changed card's Pandoc AST differs only in those
     substitutions; the card check in `tools/qualc/authoring.py` rejects the raw forms; the
-    codemod is trashed after the rewrite is committed.
+    codemod is trashed after the rewrite is committed. **Closed.**
 
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
