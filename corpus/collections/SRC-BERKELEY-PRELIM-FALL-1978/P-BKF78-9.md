@@ -5,7 +5,9 @@ kind: problem
 title: Orthogonality-preserving linear maps are scalar-unitary
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Inner Products
+  - Unitary Operators
 relations: []
 review: draft
 audit:

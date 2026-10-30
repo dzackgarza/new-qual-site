@@ -5,7 +5,8 @@ kind: problem
 title: Solve a first-order linear differential equation
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Ordinary Differential Equations
 relations: []
 review: draft
 audit:

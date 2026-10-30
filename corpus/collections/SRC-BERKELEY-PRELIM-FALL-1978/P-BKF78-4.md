@@ -5,7 +5,9 @@ kind: problem
 title: Evaluate a Poisson-kernel-type trigonometric integral
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Residues
+  - Trigonometric Integrals
 relations: []
 review: draft
 audit:

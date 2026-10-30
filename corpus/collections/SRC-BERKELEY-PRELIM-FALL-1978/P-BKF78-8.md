@@ -5,7 +5,9 @@ kind: problem
 title: Characteristic polynomial and Jordan form of the all-ones matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Jordan Canonical Form
+  - Characteristic Polynomial
 relations: []
 review: draft
 audit:
@@ -31,11 +33,11 @@ audit:
 ::: {.problem}
 Let $M$ be the $n\times n$ matrix over a field $F$ all of whose entries are $1$.
 
-1. Find the characteristic polynomial of $M$.
+(a) Find the characteristic polynomial of $M$.
 
-2. Is $M$ diagonalizable?
+(b) Is $M$ diagonalizable?
 
-3. Find the Jordan canonical form of $M$, and discuss the extent to which the Jordan form depends on the characteristic of $F$.
+(c) Find the Jordan canonical form of $M$, and discuss the extent to which the Jordan form depends on the characteristic of $F$.
 :::
 
 ::: {.solution}
@@ -229,8 +231,8 @@ step [](#diagonalizable-case){.pf-ref} gives the diagonal Jordan form. If it van
 :::
 
 ::: pf-qed
-Step [](#char-poly){.pf-ref} answers part 1, steps [](#diagonalizable-case){.pf-ref} and [](#not-diagonalizable-case){.pf-ref} answer part 2, and
-steps [](#diagonalizable-case){.pf-ref}, [](#nilpotent-jordan-form){.pf-ref}, and [](#characteristic-dependence){.pf-ref} answer part 3.
+Step [](#char-poly){.pf-ref} answers part (a), steps [](#diagonalizable-case){.pf-ref} and [](#not-diagonalizable-case){.pf-ref} answer part (b), and
+steps [](#diagonalizable-case){.pf-ref}, [](#nilpotent-jordan-form){.pf-ref}, and [](#characteristic-dependence){.pf-ref} answer part (c).
 :::
 
 :::

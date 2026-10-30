@@ -5,7 +5,9 @@ kind: problem
 title: A contour integral involving the squared modulus of a polynomial
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Contour Integration
+  - Polynomials
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Local fourth roots of matrices near the identity
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Inverse Function Theorem
 relations: []
 review: draft
 audit:

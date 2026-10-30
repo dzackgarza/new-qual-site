@@ -5,7 +5,9 @@ kind: problem
 title: Uniformly convergent subsequence of indefinite integrals
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Arzelà-Ascoli
+  - Uniform Convergence
 relations: []
 review: draft
 audit:

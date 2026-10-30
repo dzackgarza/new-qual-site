@@ -5,7 +5,9 @@ kind: problem
 title: Left and right cosets and a nonnormal subgroup of the square group
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Cosets
+  - Normal Subgroups
 relations: []
 review: draft
 audit:
@@ -28,10 +30,10 @@ audit:
 ::: {.problem}
 Let $H$ be a subgroup of a finite group $G$.
 
-1. Show that $H$ has the same number of left cosets as right cosets.
+(a) Show that $H$ has the same number of left cosets as right cosets.
 
-2. Let $G$ be the group of symmetries of the square.
-   Find a subgroup $H$ and an element $x\in G$ such that
+(b) Let $G$ be the group of symmetries of the square.
+Find a subgroup $H$ and an element $x\in G$ such that
 $$
 xH\ne Hx.
 $$
@@ -87,7 +89,7 @@ This follows immediately from the bijection in step [](#s1){.pf-ref}.
 
 ::: {.pf-step #s3}
 
-For part 2, write the symmetry group of the square as
+For part (b), write the symmetry group of the square as
 $$
 G
 =
@@ -141,8 +143,8 @@ Thus $rs\ne sr$, so the two displayed cosets are different.
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} proves part 1, and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give the requested
-example for part 2.
+Step [](#s2){.pf-ref} proves part (a), and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give the requested
+example for part (b).
 
 :::
 
