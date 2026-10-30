@@ -5,7 +5,8 @@ kind: problem
 title: Uniform eventual periodicity of powers in a finite ring
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

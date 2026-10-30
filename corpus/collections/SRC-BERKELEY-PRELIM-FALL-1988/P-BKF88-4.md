@@ -5,7 +5,8 @@ kind: problem
 title: Jordan form of a unipotent $6\times6$ matrix with $\operatorname{rank}(A-I)=2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

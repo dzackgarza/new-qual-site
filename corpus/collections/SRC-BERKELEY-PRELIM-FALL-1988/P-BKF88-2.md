@@ -5,7 +5,8 @@ kind: problem
 title: Automorphisms of the complex plane
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Decay in a triangular system of linear differential equations
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Ordinary Differential Equations
 relations: []
 review: draft
 audit:

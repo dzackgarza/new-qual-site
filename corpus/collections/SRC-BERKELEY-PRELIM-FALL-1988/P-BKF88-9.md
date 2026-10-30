@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF88-9
 kind: problem
 title: Spectral bounds for a sum of symmetric matrices
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

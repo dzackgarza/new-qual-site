@@ -5,7 +5,8 @@ kind: problem
 title: Young's inequality for inverse increasing functions
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

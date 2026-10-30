@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF88-7
 kind: problem
 title: Abelian groups of order $8$ and the isomorphism types of five groups of order $8$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:
@@ -17,15 +17,15 @@ audit:
 Find all abelian groups of order $8$, up to isomorphism.
 Then identify which type occurs in each case:
 
-1. $(\ZZ_{15})^\times$;
+(a) $(\ZZ_{15})^\times$;
 
-2. $(\ZZ_{17})^\times/\{\pm1\}$;
+(b) $(\ZZ_{17})^\times/\{\pm1\}$;
 
-3. the roots of $z^8-1$ in $\CC$, under multiplication;
+(c) the roots of $z^8-1$ in $\CC$, under multiplication;
 
-4. the additive group $\FF_8^+$;
+(d) the additive group $\FF_8^+$;
 
-5. $(\ZZ_{16})^\times$.
+(e) $(\ZZ_{16})^\times$.
 :::
 
 ::: {.solution}

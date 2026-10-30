@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF88-8
 kind: problem
 title: Zeros of $e^z+z$ and $ze^z+1$ in the strip $\abs{\operatorname{Im}z}<\pi/2$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:
