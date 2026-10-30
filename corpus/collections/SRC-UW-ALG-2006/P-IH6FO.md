@@ -25,6 +25,7 @@ There are five nonisomorphic groups of order 8. For each of those groups $G$, fi
 :::
 
 ::: {.solution}
+Write $\mu(G)$ for the least $n$ such that $G$ embeds in $S_n$.
 
 ::: pf
 
@@ -149,14 +150,9 @@ Therefore $-1$ lies in the kernel of the action on every orbit, hence in the ker
 
 :::
 
-::: pf-step
+::: pf-qed
 
 In summary,
-
-:::
-
-:::
-
 $$
 \boxed{
 \mu(C_8)=8,\quad
@@ -166,4 +162,9 @@ $$
 \mu(Q_8)=8.
 }
 $$
+
+:::
+
+:::
+
 :::

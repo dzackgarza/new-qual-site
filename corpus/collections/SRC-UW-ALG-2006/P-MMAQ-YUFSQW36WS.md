@@ -20,24 +20,24 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be the group of matrices of the form `\begin{align*}
+Let $G$ be the group of matrices of the form
+$$
 \begin{pmatrix}
   1 & a & b\\
   0 & 1 & c\\
   0 & 0 & 1
 \end{pmatrix}
-.\end{align*}`{=tex}
+$$
+with entries in the finite field $\FF_p$ of $p$ elements, where $p$ is a prime.
 
-with entries in the finite field $\FF_p$ of $p$ element, where $p$ is a prime.
+(a) Prove that $G$ is nonabelian.
 
-- Prove that $G$ is non-abelian.
+(b) Suppose $p$ is odd.
+Prove that $g^p=I_3$ for all $g\in G$.
 
-- Suppose $p$ is odd.
-  Prove that $g^p=I_3$ for all $g\in G$.
-
-- Suppose that $p=2$.
-  It is known that there are exactly two non-abelian groups of order 8, up to isomorphism: the dihedral group $D_8$ and the quaternionic group.
-  Assuming this fact without proof, determine which of these groups $G$ is isomorphic to.
+(c) Suppose that $p=2$.
+It is known that there are exactly two nonabelian groups of order 8, up to isomorphism: the dihedral group $D_4$ and the quaternionic group.
+Assuming this fact without proof, determine which of these groups $G$ is isomorphic to.
 :::
 
 ::: {.solution}
@@ -172,4 +172,8 @@ Steps [](#s2){.pf-ref}, [](#s6){.pf-ref} and [](#s10){.pf-ref}.
 
 :::
 
+:::
+
+::: {.remark}
+The source writes $D_4$ for the dihedral group of order $8$; the solution writes $D_8$ for the same group.
 :::

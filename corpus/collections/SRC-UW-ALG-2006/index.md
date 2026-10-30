@@ -17,11 +17,14 @@ source:
     year: 2006
   institution: uw
   problems:
-  - P-Q5N2X
+  - P-UWALG06-1
+  - P-UWALG06-2
   - P-CTBJD
   - P-MMAQ-FJ4DDF5GZK
   - P-MMAQ-YUFSQW36WS
+  - P-UWALG06-6
   - P-IH6FO
+  - P-Q5N2X
   source_kind: university-exam
 title: UW Algebra Qualifying Exam 2006
 ---
