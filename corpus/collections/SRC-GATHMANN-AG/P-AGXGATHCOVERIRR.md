@@ -17,9 +17,9 @@ review: draft
 ::: {.problem}
 Let $\theset{U_i}_{i\in I} \covers X$ be an open cover of a topological space with $U_i \intersect U_j \neq \emptyset$ for every $i, j$.
 
-a. Show that if $U_i$ is connected for every $i$ then $X$ is connected.
+(a) Show that if $U_i$ is connected for every $i$ then $X$ is connected.
 
-b. Show that if $U_i$ is irreducible for every $i$ then $X$ is irreducible.
+(b) Show that if $U_i$ is irreducible for every $i$ then $X$ is irreducible.
 :::
 
 ::: {.solution}

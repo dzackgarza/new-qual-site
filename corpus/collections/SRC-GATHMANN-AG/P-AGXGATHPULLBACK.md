@@ -18,13 +18,13 @@ review: draft
 Let $f:X\to Y$ be a morphism of affine varieties and $f^*: A(Y) \to A(X)$ the induced map on coordinate rings.
 Determine whether the following statements are true or false:
 
-a. $f$ is surjective $\iff$ $f^*$ is injective.
+(a) $f$ is surjective $\iff$ $f^*$ is injective.
 
-b. $f$ is injective $\iff$ $f^*$ is surjective.
+(b) $f$ is injective $\iff$ $f^*$ is surjective.
 
-c. If $f:\AA^1\to\AA^1$ is an isomorphism, then $f$ is *affine linear*, i.e. $f(x) = ax+b$ for some $a, b\in k$.
+(c) If $f:\AA^1\to\AA^1$ is an isomorphism, then $f$ is *affine linear*, i.e. $f(x) = ax+b$ for some $a, b\in k$.
 
-d. If $f:\AA^2\to\AA^2$ is an isomorphism, then $f$ is *affine linear*, i.e. $f(x) = Ax+b$ for some $A \in \Mat(2\times 2, k)$ and $b\in k^2$.
+(d) If $f:\AA^2\to\AA^2$ is an isomorphism, then $f$ is *affine linear*, i.e. $f(x) = Ax+b$ for some $A \in \Mat(2\times 2, k)$ and $b\in k^2$.
 :::
 
 ::: {.solution}
@@ -34,7 +34,7 @@ For a morphism $f$, the map $f^*$ sends $p \in A(Y)$ to $p \circ f \in A(X)$.
 ::: pf
 
 ::: {.pf-step}
-Part a is false: surjectivity of $f$ implies injectivity of $f^*$, but the converse fails.
+Part (a) is false: surjectivity of $f$ implies injectivity of $f^*$, but the converse fails.
 
 ::: pf-proof
 Suppose $f$ is surjective and $f^*p = f^*q$, that is, $p \circ f = q \circ f$.
@@ -48,7 +48,7 @@ The ring $k[x,y]/\generators{xy-1}$ is isomorphic to $k[x,x^{-1}]$ by $y \mapsto
 :::
 
 ::: {.pf-step}
-Part b is false: surjectivity of $f^*$ implies injectivity of $f$, but the converse fails.
+Part (b) is false: surjectivity of $f^*$ implies injectivity of $f$, but the converse fails.
 
 ::: pf-proof
 Suppose $f^*$ is surjective, $X \subseteq \AA^n$, and $f(a) = f(b)$ for $a, b \in X$.
@@ -64,7 +64,7 @@ No such exponent equals $1$, so $t$ is not in the image and $f^*$ is not surject
 :::
 
 ::: {.pf-step}
-Part c is true: every isomorphism $f: \AA^1 \to \AA^1$ is $x \mapsto ax+b$ with $a \neq 0$.
+Part (c) is true: every isomorphism $f: \AA^1 \to \AA^1$ is $x \mapsto ax+b$ with $a \neq 0$.
 
 ::: pf-proof
 Morphisms $\AA^1 \to \AA^1$ are polynomial maps, so $f$ and its inverse $g$ are polynomials with $f(g(x)) = x$ for all $x \in k$.
@@ -77,7 +77,7 @@ So $\deg f \cdot \deg g = 1$, hence $\deg f = 1$, and $f(x) = ax + b$ with $a \n
 :::
 
 ::: {.pf-step}
-Part d is false: there are isomorphisms $\AA^2 \to \AA^2$ that are not affine linear.
+Part (d) is false: there are isomorphisms $\AA^2 \to \AA^2$ that are not affine linear.
 
 ::: pf-proof
 Let $f(x,y) \coloneqq (x,\, y + x^2)$ and $g(x,y) \coloneqq (x,\, y - x^2)$.

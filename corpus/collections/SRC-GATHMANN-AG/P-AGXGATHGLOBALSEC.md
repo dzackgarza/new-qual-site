@@ -38,19 +38,21 @@ audit:
 ---
 
 ::: {.problem}
-There is a bijection
+For affine varieties $X$ and $Y$ there is a bijection
 $$
+\begin{aligned}
 \theset{ \text{morphisms } X \to Y }
 &\stackrel{1: 1}{\leftrightarrow}
 \theset{ k\dash\text{algebra morphisms } \OO_{Y}(Y) \to \OO_{X}(X) } \\
 f &\mapsto f^{*}
-.$$
+.\end{aligned}
+$$
 
 Does this bijection hold if
 
-a. $X$ is an arbitrary prevariety but $Y$ is still affine?
+(a) $X$ is an arbitrary prevariety but $Y$ is still affine?
 
-b. $Y$ is an arbitrary prevariety but $X$ is still affine?
+(b) $Y$ is an arbitrary prevariety but $X$ is still affine?
 :::
 
 ::: {.solution}

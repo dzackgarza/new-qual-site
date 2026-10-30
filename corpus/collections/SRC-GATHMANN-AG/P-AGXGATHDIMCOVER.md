@@ -17,10 +17,10 @@ review: draft
 ::: {.problem}
 Let $X$ be a topological space, and show
 
-a. If $\theset{U_i}_{i\in I}$ is an open cover of $X$, then $\dim X = \sup_{i\in I} \dim U_i$.
+(a) If $\theset{U_i}_{i\in I}$ is an open cover of $X$, then $\dim X = \sup_{i\in I} \dim U_i$.
 
-b. If $X$ is an irreducible affine variety and $U\subset X$ is a nonempty open subset, then $\dim X = \dim U$.
-  Does this hold for any irreducible topological space?
+(b) If $X$ is an irreducible affine variety and $U\subset X$ is a nonempty open subset, then $\dim X = \dim U$.
+Does this hold for any irreducible topological space?
 :::
 
 ::: {.solution}
@@ -42,7 +42,7 @@ So the closures form a chain of length $n$ in $V$, and $\dim V \geq n$.
 :::
 
 ::: {.pf-step}
-Part a: $\dim X = \sup_{i\in I} \dim U_i$.
+Part (a): $\dim X = \sup_{i\in I} \dim U_i$.
 
 ::: pf-proof
 By step [](#monotone){.pf-ref}, $\dim U_i \leq \dim X$ for each $i$, so $\sup_i \dim U_i \leq \dim X$.
@@ -59,7 +59,7 @@ Since the chain in $X$ was arbitrary, $\sup_i \dim U_i \geq \dim X$.
 :::
 
 ::: {.pf-step}
-Part b: if $X$ is an irreducible affine variety and $U \subseteq X$ is nonempty and open, then $\dim U = \dim X$.
+Part (b): if $X$ is an irreducible affine variety and $U \subseteq X$ is nonempty and open, then $\dim U = \dim X$.
 
 ::: pf-proof
 The complement $X \sm U$ is $V(f_1,\ldots,f_r)$ for some $f_1,\ldots,f_r \in A(X)$.
@@ -73,7 +73,7 @@ By step [](#monotone){.pf-ref}, $\dim X = \dim D(f) \leq \dim U \leq \dim X$.
 :::
 
 ::: {.pf-step}
-Part b: the equality $\dim U = \dim X$ fails for a general irreducible topological space.
+Part (b): the equality $\dim U = \dim X$ fails for a general irreducible topological space.
 
 ::: pf-proof
 Let $X \coloneqq \theset{a,b}$ with open sets $\emptyset$, $\theset{a}$, $X$.

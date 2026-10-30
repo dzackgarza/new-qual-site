@@ -17,9 +17,9 @@ review: draft
 ::: {.problem}
 Let $f:X\to Y$ be a continuous map of topological spaces.
 
-a. Show that if $X$ is connected then $f(X)$ is connected.
+(a) Show that if $X$ is connected then $f(X)$ is connected.
 
-b. Show that if $X$ is irreducible then $f(X)$ is irreducible.
+(b) Show that if $X$ is irreducible then $f(X)$ is irreducible.
 :::
 
 ::: {.solution}

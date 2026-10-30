@@ -39,11 +39,11 @@ audit:
 ::: {.problem}
 Show that
 
-a. Every morphism $f:\AA^1\smz \to \PP^1$ can be extended to a morphism $\hat f: \AA^1 \to \PP^1$.
+(a) Every morphism $f:\AA^1\smz \to \PP^1$ can be extended to a morphism $\hat f: \AA^1 \to \PP^1$.
 
-b. Not every morphism $f:\AA^2\smz \to \PP^1$ can be extended to a morphism $\hat f: \AA^2 \to \PP^1$.
+(b) Not every morphism $f:\AA^2\smz \to \PP^1$ can be extended to a morphism $\hat f: \AA^2 \to \PP^1$.
 
-c. Every morphism $\PP^1\to \AA^1$ is constant.
+(c) Every morphism $\PP^1\to \AA^1$ is constant.
 :::
 
 ::: {.solution}

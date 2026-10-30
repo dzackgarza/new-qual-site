@@ -40,13 +40,13 @@ R = k[x_1, x_2, x_3, x_4] / \generators{x_1 x_4 - x_2 x_3}
 $$
 and show the following:
 
-a. $R$ is an integral domain of dimension 3.
+(a) $R$ is an integral domain of dimension 3.
 
-b. $x_1, \cdots, x_4$ are irreducible but not prime in $R$, and thus $R$ is not a UFD.
+(b) $x_1, \cdots, x_4$ are irreducible but not prime in $R$, and thus $R$ is not a UFD.
 
-c. $x_1 x_4$ and $x_2 x_3$ are two decompositions of the same element in $R$ which are nonassociate.
+(c) $x_1 x_4$ and $x_2 x_3$ are two decompositions of the same element in $R$ which are nonassociate.
 
-d. $\generators{x_1, x_2}$ is a prime ideal of codimension 1 in $R$ that is not principal.
+(d) $\generators{x_1, x_2}$ is a prime ideal of codimension 1 in $R$ that is not principal.
 :::
 
 ::: {.solution}

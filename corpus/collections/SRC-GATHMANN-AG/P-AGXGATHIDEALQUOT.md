@@ -44,12 +44,12 @@ J_1 : J_2 \coloneqq \theset{f\in R \st fJ_2 \subset J_1}
 
 Let $X$ be an affine variety.
 
-a. Show that if $Y_1, Y_2 \subset X$ are subvarieties then
+(a) Show that if $Y_1, Y_2 \subset X$ are subvarieties then
 $$
 I(\bar{Y_1\sm Y_2}) = I(Y_1): I(Y_2)
 .$$
 
-b. If $J_1, J_2 \normal A(X)$ are radical, then
+(b) If $J_1, J_2 \normal A(X)$ are radical, then
 $$
 \bar{V(J_1) \sm V(J_2)} = V(J_1: J_2)
 .$$
