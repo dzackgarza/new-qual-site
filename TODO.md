@@ -1046,7 +1046,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/topology/workshops/index.md
   - [x] wiki/topology/workshops/topology-week-1-preliminaries.md
   Site surfaces:
-  - [ ] index, sources, problems, bibliography, search
+  - [x] index, sources, problems, bibliography, search
 
   Renderer and site nodes (owner `tools/qualc`, `site/`):
   - **`ad-citeproc`**. **Needs:** none. Citations in transcluded card bodies render as raw
