@@ -883,7 +883,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/basics/calculus-preliminaries.md
   - [x] wiki/complex-analysis/basics/complex-arithmetic.md
   - [x] wiki/complex-analysis/basics/index.md
-  - [ ] wiki/complex-analysis/basics/precalculus.md
+  - [x] wiki/complex-analysis/basics/precalculus.md
   - [ ] wiki/complex-analysis/basics/series-reference.md
   - [ ] wiki/complex-analysis/basics/tips-techs.md
   - [ ] wiki/complex-analysis/cauchy-theory/cauchy-estimates-and-liouville.md
