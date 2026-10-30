@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS19C
 kind: problem
-title: "A nilpotent matrix over a reduced ring satisfies N^n = 0"
+title: "A nilpotent $n \\times n$ matrix over a reduced ring satisfies $N^n = 0$"
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS19G
 kind: problem
-title: "Galois group of finite extensions of F_{p^n} and irreducible factors of x^{p^n} - x + 1"
+title: "Galois groups over $\\FF_{p^n}$ and irreducible factors of $x^{p^n} - x + 1$"
 classification:
   areas:
   - algebra

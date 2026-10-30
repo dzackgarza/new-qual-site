@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS19A
 kind: problem
-title: "Non-cyclic group of order pn with element of order n implies p | φ(n)"
+title: "A non-cyclic group of order $pn$ with an element of order $n$ has $p \\mid \\phi(n)$"
 classification:
   areas:
   - algebra
