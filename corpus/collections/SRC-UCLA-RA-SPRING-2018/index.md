@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 provenance:
-- https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-18S.pdf
+- assets/attachments/analysis-18S.pdf
 source:
   source_kind: university-exam
   institution: ucla

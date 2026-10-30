@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/analysis-11S.pdf",
+  "source_pdf_sha256": "4541210a72da210690b3c369742f24a30fb0d89e70b68a0bc52ab4eab2f5a59e",
+  "source_url": "https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-11S.pdf",
+  "extracted_markdown": "assets/attachments/analysis-11S_extracted.md",
+  "extracted_markdown_sha256": "5969ed4ba57e2aa399361962c6b2556ed4e11c95c64d8c32a784fe8abd83c9df",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/analysis-11S.pdf --language en",
+  "generated_at": "2026-10-30"
+}
