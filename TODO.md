@@ -490,7 +490,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-RA-FALL-2010
   - [x] SRC-UCSD-RA-FALL-2011
   - [x] SRC-UCSD-RA-FALL-2016
-  - [ ] SRC-UCSD-RA-FALL-2017
+  - [x] SRC-UCSD-RA-FALL-2017
   - [ ] SRC-UCSD-RA-FALL-2018
   - [ ] SRC-UCSD-RA-FALL-2020
   - [ ] SRC-UCSD-RA-FALL-2021
