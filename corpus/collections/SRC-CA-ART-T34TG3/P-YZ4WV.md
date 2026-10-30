@@ -30,3 +30,7 @@ The point $z=0$ is not a pole: otherwise $\abs{f(z)}\to \infty$ as $z\to0$, wher
 
 Hence $z=0$ is an essential singularity.
 :::
+
+::: {.remark title="Variations"}
+On a general domain: if $\Omega$ is a connected open set containing $z_0$ and $f\not\equiv0$ is holomorphic on $\Omega\setminus\{z_0\}$ with zeros $z_k\ne z_0$ accumulating at $z_0$, then $z_0$ is an essential singularity of $f$.
+:::

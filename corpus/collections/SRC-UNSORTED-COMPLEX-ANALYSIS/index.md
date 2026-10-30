@@ -118,7 +118,6 @@ source:
   - id: E-RGDJ7
   - id: E-RLHXB
   - id: E-S6663
-  - id: E-SMOHZ
   - id: E-SQ4GJ
   - id: E-T5ERF
   - id: E-TDDQI

@@ -145,7 +145,7 @@ The values taken near an essential singularity are described on [[complex-analys
 [[P-FBOFF]]
 [[E-LZTNT]]
 [[E-LXPI7]]
-[[E-SMOHZ]]
+[[P-YZ4WV]]
 [[E-XQW4K]]
 [[E-JUT2P]]
 [[E-KUGNH]]
