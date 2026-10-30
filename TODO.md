@@ -1013,7 +1013,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/topology/appendices/appendix.md
   - [x] wiki/topology/appendices/at-course-notes.md
   - [x] wiki/topology/appendices/index.md
-  - [ ] wiki/topology/counterexamples.md
+  - [x] wiki/topology/counterexamples.md
   - [ ] wiki/topology/covering-spaces/covering-spaces.md
   - [ ] wiki/topology/covering-spaces/index.md
   - [ ] wiki/topology/cw-complexes/cw-complexes.md
