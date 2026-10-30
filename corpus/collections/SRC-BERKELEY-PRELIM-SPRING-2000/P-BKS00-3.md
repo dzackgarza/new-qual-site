@@ -5,7 +5,8 @@ kind: problem
 title: The group $\QQ/\ZZ$ has no proper subgroup of finite index
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

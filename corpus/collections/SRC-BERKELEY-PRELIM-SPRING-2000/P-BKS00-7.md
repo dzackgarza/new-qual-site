@@ -5,7 +5,8 @@ kind: problem
 title: A positive decreasing $C^2$ function with bounded second derivative has derivative tending to zero
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

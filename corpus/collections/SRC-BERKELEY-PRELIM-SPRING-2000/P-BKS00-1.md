@@ -5,7 +5,8 @@ kind: problem
 title: Similarity of two explicit real $4\times4$ matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

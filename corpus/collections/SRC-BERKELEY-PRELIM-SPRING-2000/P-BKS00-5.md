@@ -5,7 +5,8 @@ kind: problem
 title: Convergence of the Babylonian iteration for $\sqrt a$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

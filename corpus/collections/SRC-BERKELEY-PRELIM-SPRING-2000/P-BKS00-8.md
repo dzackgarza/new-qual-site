@@ -5,7 +5,8 @@ kind: problem
 title: Cardinality of the set of subrings of $\QQ$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

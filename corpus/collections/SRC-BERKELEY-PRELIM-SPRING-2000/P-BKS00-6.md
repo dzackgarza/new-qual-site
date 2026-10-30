@@ -5,7 +5,8 @@ kind: problem
 title: Resolvents as low-degree polynomials in a matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -29,14 +30,15 @@ audit:
 ::: {.problem}
 Let $A$ be an $n\times n$ complex matrix whose minimal polynomial $\mu$ has degree $k$.
 
-1. If $\lambda\in\CC$ is not an eigenvalue of $A$, prove that there is a polynomial $p_\lambda$ of degree at most $k-1$ such that
-   $$
-   p_\lambda(A)=(A-\lambda I)^{-1}.
-   $$
-2. Let $\lambda_1,\ldots,\lambda_k$ be distinct complex numbers, none of them an eigenvalue of $A$. Prove that there exist $c_1,\ldots,c_k\in\CC$ such that
-   $$
-   \sum_{j=1}^k c_j(A-\lambda_jI)^{-1}=I.
-   $$
+(a) If $\lambda\in\CC$ is not an eigenvalue of $A$, prove that there is a polynomial $p_\lambda$ of degree $k-1$ such that
+$$
+p_\lambda(A)=(A-\lambda I)^{-1}.
+$$
+
+(b) Let $\lambda_1,\ldots,\lambda_k$ be distinct complex numbers, none of them an eigenvalue of $A$. Prove that there exist $c_1,\ldots,c_k\in\CC$ such that
+$$
+\sum_{j=1}^k c_j(A-\lambda_jI)^{-1}=I.
+$$
 :::
 
 ::: {.solution}
@@ -45,7 +47,7 @@ Let $A$ be an $n\times n$ complex matrix whose minimal polynomial $\mu$ has degr
 
 ::: {.pf-step #s1}
 
-For part 1, if $\lambda$ is not an eigenvalue of $A$, then
+For part (a), if $\lambda$ is not an eigenvalue of $A$, then
 $$
 \mu(\lambda)\ne0.
 $$
@@ -74,7 +76,7 @@ the minimality of $\mu$, since $\deg\nu<\deg\mu$.
 
 ::: {.pf-step #s2}
 
-There is a polynomial $p_\lambda$ of degree at most $k-1$ such
+There is a polynomial $p_\lambda$ of degree $k-1$ such
 that
 $$
 p_\lambda(A)=(A-\lambda I)^{-1}.
@@ -88,7 +90,7 @@ q_\lambda(t)
 =
 \frac{\mu(t)-\mu(\lambda)}{t-\lambda}
 $$
-has degree at most $k-1$. Evaluating the identity
+is monic of degree $k-1$, because $\mu$ is monic of degree $k$. Evaluating the identity
 $$
 \mu(t)-\mu(\lambda)
 =(t-\lambda)q_\lambda(t)
@@ -105,7 +107,7 @@ p_\lambda(t)
 =
 -\frac{q_\lambda(t)}{\mu(\lambda)}
 $$
-has degree at most $k-1$ and satisfies
+has degree $k-1$ and satisfies
 $$
 (A-\lambda I)p_\lambda(A)=I.
 $$
@@ -150,7 +152,7 @@ $V$.
 
 ::: {.pf-step #s4}
 
-For part 2, the $k$ matrices
+For part (b), the $k$ matrices
 $$
 R_j=(A-\lambda_jI)^{-1},
 \qquad
@@ -231,7 +233,7 @@ $$
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} proves part 1, and step [](#s5){.pf-ref} proves part 2.
+Step [](#s2){.pf-ref} proves part (a), and step [](#s5){.pf-ref} proves part (b).
 
 :::
 

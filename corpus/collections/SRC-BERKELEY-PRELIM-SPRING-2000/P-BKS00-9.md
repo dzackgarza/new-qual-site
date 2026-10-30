@@ -5,7 +5,8 @@ kind: problem
 title: Integral of $\cos^3z/z^3$ over the unit circle
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

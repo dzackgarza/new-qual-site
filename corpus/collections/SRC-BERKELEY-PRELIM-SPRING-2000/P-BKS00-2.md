@@ -5,7 +5,8 @@ kind: problem
 title: Uniform convergence of successive maxima of an equicontinuous bounded sequence
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
