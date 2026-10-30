@@ -22,26 +22,63 @@ $$
 :::
 
 ::: {.solution}
-We first note that we can rewrite the equation of the region to obtain something more familiar: $x^2 + y^2 = 2x \implies (x-1)^2 + y^2 = 1$, which is a translated circle. Integrating over this region will be easy compared to the line integral, so we apply Green's theorem:
+
+::: pf
+
+::: {.pf-step #s1}
+
+The region is the upper half-disk
 $$
-\int_C xe^x ~dx + ye^y +x^2 ~dy = \iint_D 2x ~dA.
+R=\theset{(x,y)\suchthat (x-1)^2+y^2\le 1,\ y\ge 0},
+$$
+and
+$$
+\int_C x e^x\,dx+(y e^y+x^2)\,dy=\iint_R 2x\,dA.
 $$
 
-We can parameterize this region as
-  $$
-  D = \theset{x^2+y^2-2x = 0 \suchthat (x,y) \in \RR^2, y \geq 0}
-  = \theset{(r(1+ \cos\theta), r\sin\theta) \suchthat \theta \in [0, \pi), r\in [0, 1]}.
-  $$
+::: pf-proof
 
-Noting that $dA = r~dr~d\theta$, we can then integrate
-  $$
-  \iint_D 2x ~dA
-  = \int_0^{\pi} \int_0^1 2(r(1 + \cos\theta)) r ~dr ~d\theta \\
-  = 2\int_0^{\pi} \int_0^1 r^2(1+\cos \theta) ~dr ~d\theta \\
-  = 2\int_0^{\pi} \frac 1 3 r^3(1+\cos \theta) \evalfrom_0^1  ~d\theta\\
-  = \frac 2 3 \int_0^{\pi} (1+\cos \theta)  ~d\theta\\
-  = \frac 2 3 ( \theta + \sin \theta) \evalfrom_0^\pi  \\
-  = \frac 2 3 [(\pi + 0) - (0 + 0)]
-  = \frac 2 3 \pi. \qed
-  $$
+Completing the square, $x^2+y^2=2x$ is the circle $(x-1)^2+y^2=1$ of radius $1$ centered at $(1,0)$, which lies in $x\ge 0$. Together with $y=0$ it bounds the upper half-disk $R$, and $C=\partial R$ is a piecewise smooth simple closed curve oriented counterclockwise.
+
+With $P=xe^x$ and $Q=ye^y+x^2$, both of class $C^1$ on $\RR^2$, Green's theorem gives
+$$
+\int_C P\,dx+Q\,dy=\iint_R\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)dA=\iint_R(2x-0)\,dA.
+$$
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+$$
+\iint_R 2x\,dA=\pi.
+$$
+
+::: pf-proof
+
+Use polar coordinates centered at $(1,0)$: $x=1+r\cos\theta$, $y=r\sin\theta$ with $0\le r\le 1$, $0\le\theta\le\pi$, and $dA=r\,dr\,d\theta$. Then
+$$
+\iint_R 2x\,dA
+=\int_0^{\pi}\int_0^1 2(1+r\cos\theta)\,r\,dr\,d\theta
+=\int_0^{\pi}\left(1+\frac23\cos\theta\right)d\theta
+=\pi+\frac23\bigl[\sin\theta\bigr]_0^{\pi}
+=\pi.
+$$
+
+:::
+
+:::
+
+::: pf-qed
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
+$$
+\int_C x e^x\,dx+(y e^y+x^2)\,dy=\boxed{\pi}.
+$$
+
+:::
+
+:::
+
 :::
