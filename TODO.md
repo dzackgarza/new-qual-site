@@ -1005,7 +1005,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/real-analysis/undergraduate/notation.md
   - [x] wiki/real-analysis/undergraduate/riemann-integrability.md
   - [x] wiki/real-analysis/undergraduate/sequences-and-series.md
-  - [ ] wiki/real-analysis/undergraduate/sets-and-compactness.md
+  - [x] wiki/real-analysis/undergraduate/sets-and-compactness.md
   - [ ] wiki/real-analysis/undergraduate/theorem-list.md
   - [ ] wiki/real-analysis/workshops/index.md
   - [ ] wiki/real-analysis/workshops/real-week-1-preliminaries.md
