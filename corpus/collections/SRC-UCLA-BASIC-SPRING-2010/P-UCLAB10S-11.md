@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. Suppose
+Suppose
 $$
 \sum_{n=1}^{\infty}\abs{a_n}<\infty.
 $$

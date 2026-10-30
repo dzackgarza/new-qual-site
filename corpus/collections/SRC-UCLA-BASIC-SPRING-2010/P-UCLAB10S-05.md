@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Let $A,B$ be $n\times n$ complex matrices with the same minimal polynomial $M(t)$ and the same characteristic polynomial
+Let $A,B$ be $n\times n$ complex matrices with the same minimal polynomial $M(t)$ and the same characteristic polynomial
 $$
 P(t)=\prod_{i=1}^k(t-\lambda_i)^{a_i},
 \qquad \lambda_i\ne\lambda_j\ (i\ne j).

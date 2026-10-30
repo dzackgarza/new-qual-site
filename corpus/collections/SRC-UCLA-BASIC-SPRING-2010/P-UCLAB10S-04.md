@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. (i) Let $A=(a_{ij})$ be a real symmetric $n\times n$ matrix such that
+(i) Let $A=(a_{ij})$ be a real symmetric $n\times n$ matrix such that
 $$
 \sum_{i,j}a_{ij}x_ix_j\le0
 $$

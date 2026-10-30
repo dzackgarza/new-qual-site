@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. Let $(f_n)$ be a sequence of nonnegative continuous functions on $[0,1]$ such that
+Let $(f_n)$ be a sequence of nonnegative continuous functions on $[0,1]$ such that
 $$
 \lim_{n\to\infty}\int_0^1 f_n(x)\,dx=0.
 $$

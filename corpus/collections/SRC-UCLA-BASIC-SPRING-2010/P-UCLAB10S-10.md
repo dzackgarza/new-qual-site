@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. Define
+Define
 $$
 f(x,y)=\frac{xy}{\sqrt{x^2+y^2}}
 $$

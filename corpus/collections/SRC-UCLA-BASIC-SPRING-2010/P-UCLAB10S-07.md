@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Let $(f_n)$ be a sequence of real-valued functions on $\RR$.
+Let $(f_n)$ be a sequence of real-valued functions on $\RR$.
 Assume that there is $B<\infty$ such that
 $$
 \abs{f_n(x)}\le B

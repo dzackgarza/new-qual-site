@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Let
+Let
 $$
 A=\begin{pmatrix}4&-4\\1&0\end{pmatrix}.
 $$

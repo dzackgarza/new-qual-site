@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 9. Let $f(x,y,z)$ be a real-valued continuously differentiable function such that
+Let $f(x,y,z)$ be a real-valued continuously differentiable function such that
 $$
 f(x_0,y_0,z_0)=0,
 \qquad

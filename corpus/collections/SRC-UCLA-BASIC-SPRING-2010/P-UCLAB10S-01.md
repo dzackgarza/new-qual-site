@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Let $u_1,\ldots,u_n$ be an orthonormal basis of $\RR^n$, and let $y_1,\ldots,y_n\in\RR^n$ satisfy
+Let $u_1,\ldots,u_n$ be an orthonormal basis of $\RR^n$, and let $y_1,\ldots,y_n\in\RR^n$ satisfy
 $$
 \sum_i\norm{y_i}^2<1.
 $$
