@@ -29,9 +29,8 @@ audit:
 
 ::: {.problem}
 Compute
-
 $$
-\int _ { 0 } ^ { \infty } { \frac { d x } { ( x ^ { 2 } + 1 ) ^ { 2 } } } .
+\int_{0}^{\infty} \frac{dx}{(x^{2} + 1)^{2}}.
 $$
 :::
 

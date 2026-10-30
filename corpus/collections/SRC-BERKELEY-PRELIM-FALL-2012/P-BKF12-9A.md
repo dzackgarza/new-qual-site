@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Does there exists a homomorphism of commutative rings with unit from $\ZZ [ x ] / ( x ^ { 2 } + 3 )$ to $\ZZ [ x ] / ( x ^ { 2 } - x + 1 ) ?$ Either exhibit such a homomorphism, or prove that none exists.
+Does there exist a homomorphism of commutative rings with unit from $\ZZ[x]/(x^{2} + 3)$ to $\ZZ[x]/(x^{2} - x + 1)$? Either exhibit such a homomorphism, or prove that none exists.
 :::
 
 ::: {.solution}

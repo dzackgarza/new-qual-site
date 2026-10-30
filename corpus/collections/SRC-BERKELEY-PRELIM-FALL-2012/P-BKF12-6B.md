@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Find all eigenvalues and eigenvectors of the linear map $T \colon \CC ^ { n } \to \CC ^ { n }$ given by $T ( ( x _ { 1 } , \dots , x _ { n } ) ) =$ $\left( x _ { 2 } , x _ { 3 } , \ldots , x _ { n } , x _ { 1 } \right)$
+Find all eigenvalues and eigenvectors of the linear map $T \colon \CC^{n} \to \CC^{n}$ given by $T((x_{1}, \dots, x_{n})) = (x_{2}, x_{3}, \ldots, x_{n}, x_{1})$.
 :::
 
 ::: {.solution}
