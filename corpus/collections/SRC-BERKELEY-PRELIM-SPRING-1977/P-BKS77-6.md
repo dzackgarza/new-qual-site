@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS77-6
 kind: problem
 title: Structure questions for $GL_2(\RR)$ and its orthogonal subgroup
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:
@@ -13,10 +13,13 @@ audit:
 ::: {.problem}
 Let $G$ be the set of real $2\times2$ matrices of nonzero determinant, with ordinary matrix multiplication.
 
-1. Show that $G$ is a group.
-2. Find its center.
-3. Show that the real orthogonal matrices form a subgroup $O\le G$, and give an example showing that $O$ is not normal in $G$.
-4. Find a nontrivial homomorphism from $G$ onto an abelian group.
+(a) Show that $G$ is a group.
+
+(b) Find its center.
+
+(c) Show that the real orthogonal matrices form a subgroup $O\le G$, and give an example showing that $O$ is not normal in $G$.
+
+(d) Find a nontrivial homomorphism from $G$ onto an abelian group.
 :::
 
 ::: {.solution}

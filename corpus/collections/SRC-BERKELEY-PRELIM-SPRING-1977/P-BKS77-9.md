@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS77-9
 kind: problem
 title: Initial value problem $y''-2y'+y=0$, $y(0)=y'(0)=1$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Calculus]}
 relations: []
 review: draft
 audit:

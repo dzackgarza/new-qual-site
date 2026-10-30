@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS77-8
 kind: problem
 title: Similarity classes with characteristic polynomial $(x-1)^5(x+1)$ and minimal polynomial $(x-1)^2(x+1)$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

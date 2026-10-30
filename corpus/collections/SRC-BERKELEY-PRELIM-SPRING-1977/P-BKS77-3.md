@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS77-3
 kind: problem
 title: Product of chord lengths from one vertex of a regular polygon
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:
@@ -14,15 +14,16 @@ audit:
 ---
 
 ::: {.problem}
-1. Evaluate $P_{n-1}(1)$, where
-   $$
-   P_{n-1}(x)=\frac{x^n-1}{x-1}.
-   $$
-2. Let $Q_1,\ldots,Q_n$ be the vertices of a regular $n$-gon inscribed in a unit circle. For $i=2,\ldots,n$, let $\lambda_i$ be the length of the chord $Q_1Q_i$.
-   Prove that
-   $$
-   \prod_{i=2}^n\lambda_i=n.
-   $$
+(a) Evaluate $P_{n-1}(1)$, where
+$$
+P_{n-1}(x)=\frac{x^n-1}{x-1}.
+$$
+
+(b) Let $Q_1,\ldots,Q_n$ be the vertices of a regular $n$-gon inscribed in a unit circle. For $i=2,\ldots,n$, let $\lambda_i$ be the length of the chord $Q_1Q_i$.
+Prove that
+$$
+\prod_{i=2}^n\lambda_i=n.
+$$
 :::
 
 ::: {.solution}

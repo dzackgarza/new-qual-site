@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS77-4
 kind: problem
 title: Fundamental theorem of algebra
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

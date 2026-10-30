@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS77-5
 kind: problem
 title: The sum of two elements algebraic over a field is algebraic
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

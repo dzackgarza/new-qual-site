@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS77-2
 kind: problem
 title: Existence of one-sided limits everywhere implies Riemann integrability
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

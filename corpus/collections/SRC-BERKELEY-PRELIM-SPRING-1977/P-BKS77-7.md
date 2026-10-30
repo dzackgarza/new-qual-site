@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKS77-7
 kind: problem
 title: Vandermonde invertibility and polynomial interpolation
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:
@@ -21,8 +21,9 @@ V=\begin{pmatrix}
 \end{pmatrix}.
 $$
 
-1. Prove that $V$ is invertible if $a_0,\ldots,a_n$ are distinct.
-2. If the $a_i$ are distinct and $b_0,\ldots,b_n\in\CC$, prove that there is a unique complex polynomial $f$ of degree at most $n$ satisfying $f(a_i)=b_i$ for all $i$.
+(a) Prove that $V$ is invertible if $a_0,\ldots,a_n$ are distinct.
+
+(b) If the $a_i$ are distinct and $b_0,\ldots,b_n\in\CC$, prove that there is a unique complex polynomial $f$ of degree at most $n$ satisfying $f(a_i)=b_i$ for all $i$.
 :::
 
 ::: {.solution}
