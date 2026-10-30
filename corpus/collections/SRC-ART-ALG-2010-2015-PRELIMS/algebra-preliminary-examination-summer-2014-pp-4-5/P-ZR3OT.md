@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-ZR3OT
 kind: problem
-title: Galois group of the splitting field of $x^3+2$ over $\QQ$, and the subextension
-  $\QQ(\zeta_3)$
+title: Galois groups of the splitting field of $x^3+2$ over $\QQ$ and over $\QQ(\zeta_3)$
 classification:
   areas:
   - algebra
@@ -28,17 +27,17 @@ audit:
 ::: {.problem}
 Let $K$ be the splitting field of $x^3 + 2$ over $\QQ$.
 
-a. What is the dimension of $K$ over $\QQ$?
+(a) What is the dimension of $K$ over $\QQ$?
 
-b. What is the Galois group of $K$ over $\QQ$?
+(b) What is the Galois group of $K$ over $\QQ$?
 (Identify the isomorphism type of the group, and also indicate how its elements act as permutations of the roots of $x^3 + 2$.)
 
-c. Show that $K$ contains a primitive third root of unity $\zeta_3$.
+(c) Show that $K$ contains a primitive third root of unity $\zeta_3$.
 What is the Galois group of $K$ over $\QQ(\zeta_3)$?
 What is the Galois group of $\QQ(\zeta_3)$ over $\QQ$?
 Again identify these groups as permutation groups and indicate their isomorphism type.
 
-d. How are the three groups discussed in this problem related?
+(d) How are the three groups discussed in this problem related?
 :::
 
 ::: {.solution}

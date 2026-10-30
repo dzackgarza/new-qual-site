@@ -25,23 +25,21 @@ audit:
   note: "Checked maximal-ideal existence, closure and unique maximality of the valuation ideal including a trivial absolute value, and every maximal ideal above M^n."
 ---
 ::: {.problem}
-A local ring is a commutative ring with 1 which has a unique maximal ideal.
+A local ring is a commutative ring with $1$ which has a unique maximal ideal.
 
-a. Show that the group of units of a local ring is precisely the set of elements lying outside of $M$.
+(a) Show that the group of units of a local ring is precisely the set of elements lying outside of $M$.
 
-b. Let $F$ be a field, and $\abs{ \ } : F \longrightarrow \RR$ such that
+(b) Let $F$ be a field, and $\abs{ \ } : F \longrightarrow \RR$ such that
 
-i. $\abs{x} \geq 0$ for all $x \in F$ and $\abs{x} = 0$ if and only if $x = 0$;
+(i) $\abs{x} \geq 0$ for all $x \in F$ and $\abs{x} = 0$ if and only if $x = 0$;
 
-ii.
-$\abs{xy} = \abs{x}\abs{y}$, for all $x, y \in F$;
+(ii) $\abs{xy} = \abs{x}\abs{y}$, for all $x, y \in F$;
 
-iii.
-$\abs{x + y} \leq \max\{\abs{x}, \abs{y}\}$, for all $x, y \in F$.
+(iii) $\abs{x + y} \leq \max\{\abs{x}, \abs{y}\}$, for all $x, y \in F$.
 
 Show that the set $R = \{x \in F : \abs{x} \leq 1\}$ is a local ring.
 
-c. Let $M$ be a maximal ideal of a commutative ring $R$ with 1 and $n$ be a positive integer.
+(c) Let $M$ be a maximal ideal of a commutative ring $R$ with $1$ and $n$ be a positive integer.
 Show that $R/M^n$ is a local ring.
 :::
 

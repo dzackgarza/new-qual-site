@@ -2,15 +2,14 @@
 schema: qual/card@1
 id: P-OUQ2Q
 kind: problem
-title: $\QQ[x]$-modules from order-$6$ matrices in $M_4(\QQ)$, and groups
-  of order $24$
+title: $\QQ[x]$-modules from order-$6$ matrices in $M_4(\QQ)$, and abelian groups of order $24$
 classification:
   areas:
   - prelim
   topics:
   - Rational Canonical Form
   - Modules
-  - Matrices
+  - Abelian Groups
 relations: []
 review: draft
 audit:
@@ -19,13 +18,13 @@ audit:
   date: 2026-08-30
 ---
 ::: {.problem}
-Suppose $A \in M_4(\QQ)$ is a 4-by-4 matrix of multiplicative order 6. We use $A$ to give $\QQ^4$ the structure of a $\QQ[x]$-module in the usual way, by setting $x \cdot v = Av$ for $v \in \QQ^4$.
+Suppose $A \in M_4(\QQ)$ is a $4$-by-$4$ matrix of multiplicative order $6$. We use $A$ to give $\QQ^4$ the structure of a $\QQ[x]$-module in the usual way, by setting $x \cdot v = Av$ for $v \in \QQ^4$.
 
-a. What are all of the isomorphism classes of $\QQ[x]$-modules that can arise this way?
+(a) What are all of the isomorphism classes of $\QQ[x]$-modules that can arise this way?
 
-b. For each of your answers above, write down the rational canonical form of the corresponding matrix $A$.
+(b) For each of your answers above, write down the rational canonical form of the corresponding matrix $A$.
 
-c. What are all the of the abelian groups of size 24 (up to isomorphism)?
+(c) What are all the of the abelian groups of size $24$ (up to isomorphism)?
 :::
 
 ::: {.solution}

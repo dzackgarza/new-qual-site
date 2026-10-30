@@ -25,7 +25,7 @@ audit:
   note: "Checked the bimodule structure, representative independence, balancing, left linearity, vanishing on IM, and both inverse identities; preserved the source hint separately."
 ---
 ::: {.problem}
-Let $R$ be a ring with 1, and let $I$ be a two sided ideal of $R$.
+Let $R$ be a ring with $1$, and let $I$ be a two sided ideal of $R$.
 Let $M$ be a left $R$-module.
 Recall that $IM$ is the submodule $$IM = \{a_1 m_1 + \cdots + a_n m_n : a_i \in I, m_i \in M\}.$$ Prove that $(R/I) \otimes_R M \cong M/IM$ as $R$-modules.
 :::
