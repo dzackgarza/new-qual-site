@@ -57,7 +57,7 @@ $$
 ## Branch cuts: logarithms
 
 [[E-SS3.EX-10]]
-[[E-ENWYG]]
+[[P-TIE-S15-27]]
 [[P-CAEXAMPREP-05]]
 [[E-HHSCS]]
 
