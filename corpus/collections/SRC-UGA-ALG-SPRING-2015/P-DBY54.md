@@ -24,30 +24,55 @@ Prove that every such ideal $J$ is prime.
 :::
 
 ::: {.solution}
-\envlist
 
-- Restating, take the poset $S\coloneqq \theset{J\in \Id(R) \st J \intersect S = \emptyset, I\neq R, I \subseteq J}$ ordered by inclusion.
-  Note that $S$ is nonempty since it contains $I$.
-  It suffices to produce a maximal element of $S$.
-- Applying Zorn's lemma, let $C: C_1 \subseteq C_2 \subseteq \cdots$ be a chain and define $\hat{C} \coloneqq \union C_i$.
-- By standard arguments, $\hat{C} \in \Id(R)$ and $\hat{C} \containing I$, and it suffices to show $\hat{C} \intersect S = \emptyset$ and $\hat{C}\neq R$.
-- $\hat{C} \intersect S = \emptyset$:
-  - By contradiction, if $x\in \hat{C} \intersect S$ then $x\in C_j$ for some $j$, and $x\in S$.
-    But then $x \in C_j \intersect S = \emptyset$.
-- $\hat{C} \neq R$:
-  - By contradiction, if so then $1 \in \hat{C} \implies 1 \in C_j$ for some $j$, forcing $C_j = R$.
-- So Zorn's lemma applies and we obtain some ideal $\mfp$, which we now claim is prime.
-- Let $ab\in \mfp$, we want to show $a\in \mfp$ or $b\in\mfp$.
-- Suppose not, then neither $a,b\in \mfp$. 
-  By maximality, $\mfp + Ra = R$, and so $\mfp + Ra$ intersects $S$.
-  Similarly $\mfp + Rb = R$ so $\mfp + Rb$ intersects $S$.
-- Produce elements $x\coloneqq p_1 + r_1a, y\coloneqq p_2 + r_2b\in S$, then since $S$ is multiplicatively closed,
+::: pf
+
+::: {.pf-step #zorn}
+
+For every $I\in\mci$ there is a maximal element $J$ of $\mci$ with $I\subseteq J$.
+
+::: pf-proof
+
+Let $\mathcal P=\{K\in\mci: I\subseteq K\}$, ordered by inclusion; it contains $I$. Let $\mathcal C\subseteq\mathcal P$ be a nonempty chain and $U=\bigcup_{K\in\mathcal C}K$. Any two elements of $U$ lie in a common member of the chain, so $U$ is an ideal, and $U\supseteq I$. If $s\in U\cap S$, then $s\in K\cap S$ for some $K\in\mathcal C$, which is impossible. So $U\in\mathcal P$ is an upper bound. Zorn's lemma gives a maximal element $J$ of $\mathcal P$. A member of $\mci$ that contains $J$ contains $I$, so it lies in $\mathcal P$ and equals $J$.
+
+:::
+
+:::
+
+::: {.pf-step #proper}
+
+Every $J\in\mci$ is proper.
+
+::: pf-proof
+
+$S$ is nonempty and $J\cap S=\emptyset$, so $J\neq R$.
+
+:::
+
+:::
+
+::: {.pf-step #prime}
+
+A maximal element $J$ of $\mci$ is prime.
+
+::: pf-proof
+
+Let $ab\in J$ and suppose $a\notin J$ and $b\notin J$. The ideals $J+Ra$ and $J+Rb$ strictly contain $J$, so by maximality they are not in $\mci$. Choose $x=p_1+r_1a\in S$ and $y=p_2+r_2b\in S$ with $p_1,p_2\in J$ and $r_1,r_2\in R$. Then
 $$
-xy&\coloneqq (p_1 + r_1 a)(p_2 + r_2b)\in S \\
-&\implies p_1 p_2 + p_1r_2 b + p_2 r_1 a + r_1 r_2 ab \in S \\ 
-&\implies xy\in \mfp + \mfp Rb + \mfp Ra + R\mfp && \text{since } p_i, ab\in \mfp \\
-&\implies xy \in (\mfp + Rb + Ra + R)\mfp \subseteq \mfp
-.$$
-  But then $xy\in S \intersect \mfp$, a contradiction.
+xy=p_1p_2+p_1r_2b+p_2r_1a+r_1r_2ab\in J,
+$$
+since each term contains a factor $p_1$, $p_2$ or $ab$ from $J$. But $xy\in S$, so $xy\in J\cap S=\emptyset$, a contradiction.
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#zorn){.pf-ref} gives the ideal $J$, and Steps [](#proper){.pf-ref} and [](#prime){.pf-ref} show that $J$ is prime.
+
+:::
+
+:::
 
 :::

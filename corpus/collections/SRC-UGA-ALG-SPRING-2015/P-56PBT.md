@@ -33,154 +33,45 @@ c. Prove that the multiplicative group $(\units{\FF}, \cdot)$ is cyclic.
 
 ::: pf
 
-::: {.pf-step #part-a-additive-structure}
-Part (a): Additive structure of a finite field:
+::: {.pf-step #additive}
+
+If $\operatorname{char}\FF=p$ and $[\FF:\FF_p]=n$, then $(\FF,+)\cong(\ZZ/p\ZZ)^{\oplus n}$.
 
 ::: pf-proof
 
-::: pf-step
-Let $\operatorname{char}(\FF) = p$.
-Since $\FF$ is a field, $p$ is a prime number, and the prime subfield of $\FF$ is $\FF_p \cong \ZZ/p\ZZ$.
-
-::: pf-proof
-characteristic of an integral domain is prime.
-:::
-
-:::
-
-::: pf-step
-The field $\FF$ is a finite-dimensional vector space over $\FF_p$.
-Let $n = [\FF : \FF_p] = \dim_{\FF_p}(\FF)$.
-
-::: pf-proof
-finite field extension.
-:::
-
-:::
-
-::: pf-step
-Choosing an $\FF_p$-basis $\{v_1, \dots, v_n\}$ for $\FF$ gives an $\FF_p$-linear isomorphism:
-$$
-(\FF, +) \cong \FF_p^n \cong \bigoplus_{i=1}^n \ZZ_p.
-$$
-Thus $(\FF, +)$ is isomorphic to the direct sum of $n$ copies of the cyclic group $\ZZ_p$.
-
-::: pf-proof
-vector space isomorphism over $\FF_p$.
-:::
+The characteristic of a field is $0$ or prime, and it is not $0$ because $\FF$ is finite. So the prime subfield is $\FF_p\cong\ZZ/p\ZZ$, and $\FF$ is a finite-dimensional $\FF_p$-vector space, of some dimension $n$. A choice of basis gives an $\FF_p$-linear, hence additive, isomorphism $\FF\cong\FF_p^{\,n}$.
 
 :::
 
 :::
 
-:::
+::: {.pf-step #exponent}
 
-::: {.pf-step #part-b-element-of-exponent-order}
-Part (b): Element of order equal to the exponent:
+A finite abelian group $G$ has an element whose order is $\exp(G)$.
 
 ::: pf-proof
 
-::: pf-step
-By the Structure Theorem for Finite Abelian Groups, $G \cong \ZZ_{d_1} \oplus \ZZ_{d_2} \oplus \cdots \oplus \ZZ_{d_k}$, where the invariant factors satisfy $d_1 \mid d_2 \mid \cdots \mid d_k$.
-
-::: pf-proof
-Fundamental Theorem of Finite Abelian Groups.
-:::
-
-:::
-
-::: pf-step
-For every element $g = (g_1, \dots, g_k) \in G$, $\elementorder{g_i} \mid d_i \mid d_k$, so $g^{d_k} = e$.
-Thus the exponent $e = \exp(G) = \operatorname{lcm}_{g \in G} \elementorder{g} = d_k$.
-
-::: pf-proof
-definition of group exponent.
-:::
-
-:::
-
-::: pf-step
-The element $x = (0, \dots, 0, 1) \in G$ has order exactly $d_k = e$.
-Thus $G$ contains an element of order equal to $\exp(G)$.
-
-::: pf-proof
-order of generator in cyclic direct summand.
-:::
+By the structure theorem, $G\cong\ZZ/d_1\oplus\cdots\oplus\ZZ/d_k$ with $d_1\mid d_2\mid\cdots\mid d_k$. Every element has order dividing $d_k$, so $\exp(G)\mid d_k$. The element $(0,\ldots,0,1)$ has order $d_k$, so $d_k\mid\exp(G)$. Hence this element has order $\exp(G)$.
 
 :::
 
 :::
 
-:::
+::: {.pf-step #cyclic}
 
-::: {.pf-step #part-c-cyclicity}
-Part (c): Cyclicity of the multiplicative group $(\FF^\times, \cdot)$:
+$\FF^\times$ is cyclic.
 
 ::: pf-proof
 
-::: pf-step
-The multiplicative group $\FF^\times$ is a finite abelian group of order $N = \cardinality{\FF} - 1 = p^n - 1$.
-
-::: pf-proof
-non-zero elements of a finite field form an abelian group under multiplication.
-:::
-
-:::
-
-::: {.pf-step #e-leq-n}
-Let $e = \exp(\FF^\times)$. By Part (b), there exists an element $g \in \FF^\times$ of order $\elementorder{g} = e$.
-By Lagrange’s Theorem, $e \mid N$, so $e \le N$.
-
-::: pf-proof
-Part (b) and Lagrange's Theorem.
-:::
-
-:::
-
-::: pf-step
-By definition of the exponent, $x^e = 1$ for all $x \in \FF^\times$.
-Thus every element of $\FF^\times$ is a root of the polynomial $P(T) = T^e - 1 \in \FF[T]$.
-
-::: pf-proof
-$x^e = 1$ for all $x \in \FF^\times$.
-:::
-
-:::
-
-::: {.pf-step #n-leq-e}
-Since $\FF$ is a field, the non-zero polynomial $P(T)$ of degree $e$ has at most $e$ roots in $\FF$.
-Therefore:
-$$
-N = \cardinality{\FF^\times} \le e.
-$$
-
-::: pf-proof
-a degree $e$ polynomial over a field has at most $e$ roots.
-:::
-
-:::
-
-::: pf-step
-Combining $e \le N$ (step [](#e-leq-n){.pf-ref}) and $N \le e$ (step [](#n-leq-e){.pf-ref}) gives $e = N = \cardinality{\FF^\times}$.
-Since $g \in \FF^\times$ has order $e = \cardinality{\FF^\times}$, $\FF^\times = \langle g \rangle$ is cyclic.
-
-::: pf-proof
-a finite group containing an element of order equal to the group order is cyclic.
-:::
+Let $N=\cardinality{\FF^\times}$ and $m=\exp(\FF^\times)$. By Step [](#exponent){.pf-ref} there is $g\in\FF^\times$ of order $m$, and $m\le N$ by Lagrange's theorem. Every $x\in\FF^\times$ satisfies $x^m=1$, so the polynomial $T^m-1$ has at least $N$ roots in the field $\FF$. A nonzero polynomial of degree $m$ over a field has at most $m$ roots, so $N\le m$. Hence $g$ has order $N$ and generates $\FF^\times$.
 
 :::
 
 :::
 
-:::
+::: pf-qed
 
-::: pf-step
-Conclusion:
-$(\FF, +) \cong (\ZZ_p)^n$, any finite abelian group has an element of order $\exp(G)$, and $(\FF^\times, \cdot)$ is cyclic. Q.E.D.
-
-::: pf-proof
-Step [](#part-a-additive-structure){.pf-ref} through step [](#part-c-cyclicity){.pf-ref}.
-:::
+Steps [](#additive){.pf-ref}, [](#exponent){.pf-ref} and [](#cyclic){.pf-ref} prove parts (a), (b) and (c).
 
 :::
 

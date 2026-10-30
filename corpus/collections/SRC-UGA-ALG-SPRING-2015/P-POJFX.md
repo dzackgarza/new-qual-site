@@ -31,61 +31,65 @@ Show that $A$ has a Jordan normal form over $F$ and find it.
 :::
 
 ::: {.solution}
-Note that if $\vector x = \thevector{x_1,\cdots, x_n}$ then $A\vector x = \thevector{\sum x_i, \sum x_i, \cdots, \sum x_i}$, so $A$ acts by summing the entries in $\vector x$ and setting every coordinate to that sum.
-From this description we read off the eigenvalues and eigenvectors directly:
 
-- An eigenvector with eigenvalue $\lambda$ satisfies $A\vector x = \lambda \vector x$, i.e. every coordinate of $A\vector x$ equals $\lambda x_i$. Since all coordinates of $A\vector x$ equal the common sum $S = \sum_i x_i$, this forces $\lambda x_1 = \lambda x_2 = \cdots = \lambda x_n = S$.
-- If $\lambda = 0$, then $S = 0$, so the eigenvectors are exactly the vectors with $\sum_i x_i = 0$. A basis of this $(n-1)$-dimensional space is
-  - $\vector v_1 = \thevector{1,0,0,\cdots,0, -1}$ 
-  - $\vector v_2 = \thevector{0,1,0,\cdots,0, -1}$
-  - $\vector v_3 = \thevector{0,0,1,\cdots,0, -1}$
-  - $\cdots$
-  - $\vector v_{n-1} = \thevector{0,0,0,\cdots,1, -1}$
-- If $\lambda \neq 0$, then $x_1 = x_2 = \cdots = x_n$, so $\vector x$ is a scalar multiple of the all-ones vector $\thevector{1,1,\cdots,1}$, and $A\thevector{1,1,\cdots,1} = \thevector{n,\cdots,n} = n\thevector{1,\cdots,1}$, giving the eigenvalue $\lambda = n$ with eigenvector $\vector v_n = \thevector{1,1,\cdots, 1}$.
+Let $u=(1,\ldots,1)^T\in F^n$, so that $A=uu^T$ and $Ax=(\textstyle\sum_ix_i)\,u$.
 
-Note that for $\lambda = n$, we have $A \thevector{1,1,\cdots, 1} = \thevector{n\cdot 1,\cdots, n\cdot 1}$.
-So for $n\cdot 1\neq 0$, there are two eigenspaces corresponding to $\lambda = 0, n$, and if $n\cdot 1 = 0$ these collapse to just a single eigenspace for $\lambda = 0$.
+::: pf
 
-Assuming $n\cdot 1\neq 0$, we get a characteristic polynomial of $(x-n)x^{n-1}$.
-The $x-n$ factor corresponds to a single $1\times 1$ Jordan block with diagonal $n$.
-For the $x^{n-1}$ factor, we've produced $n-1$ distinct eigenvectors, so we get $n-1$ Jordan blocks of size $1\times 1$ with diagonal zero.
-Thus
-$$
-\JCF(A) =
-\left[
-\begin{array}{c|c|c|c|c}
-n & \cdot & \cdot & \cdot & \cdot \\ \hline
-\cdot & 0 & \cdot & \cdot & \cdot \\ \hline
-\cdot & \cdot & 0 & \ddots & \cdot \\ \hline
-\cdot & \cdot & \cdot & \ddots & \cdot \\ \hline
-\cdot & \cdot & \cdot & \cdot & 0 
-\end{array}
-\right]
-.$$
-One can verify this by checking directly that the minimal polynomial of $A$ is $p(x) = (x-n)x$, so the size of the largest Jordan block for $\lambda = n$ is 1 and for $\lambda = 0$ is $n-1$, while the characteristic polynomial is $(x-n)x^{n-1}$, so the sum of the sizes of Jordan blocks for $\lambda = n$ is 1 and for $\lambda = 0$ is $n-1$, forcing the $1\times 1$ blocks everywhere.
+::: {.pf-step #kernel}
 
-Now consider the case when $n\cdot 1 = 0$; then $\vector v_n$ becomes an eigenvector for $\lambda = 0$ instead of $\lambda = n$.
-The minimal polynomial becomes $(x-0)x = x^2$ and the characteristic polynomial becomes $x^n$, so $\lambda = 0$ has:
+$A^2=(n\cdot1)A$, $\operatorname{rk}A=1$, and $\ker A=\{x:\sum_ix_i=0\}$ has dimension $n-1$.
 
-- The size of the largest Jordan block is 2,
-- The sum of sizes of Jordan blocks is $n-1$,
+::: pf-proof
 
-and so this forces one block of size $2\times 2$ and $n-2$ blocks of size $1\times 1$.
-So we now have:
-$$
-\JCF(A) = 
-\left[
-\begin{array}{cc|c|c|c}
-0 & 1 & \cdot & \cdot & \cdot \\
-\cdot & 0 & 0 & \cdot & \cdot \\ \hline
-\cdot & \cdot & 0 & \ddots & \cdot \\ \hline
-\cdot & \cdot & \cdot & \ddots & 0 \\ \hline
-\cdot & \cdot & \cdot & \cdot & 0 
-\end{array}
-\right]
-.$$
-
-
+$A^2=u(u^Tu)u^T=(n\cdot1)uu^T$. The image of $A$ is $Fu\neq0$, and $Ax=0$ exactly when $\sum_ix_i=0$.
 
 :::
 
+:::
+
+::: {.pf-step #exists}
+
+$A$ has a Jordan normal form over $F$.
+
+::: pf-proof
+
+By Step [](#kernel){.pf-ref}, $A$ is annihilated by $x(x-n\cdot1)$, which splits over $F$. Hence the minimal polynomial splits, and $A$ is similar over $F$ to a Jordan matrix.
+
+:::
+
+:::
+
+::: {.pf-step #nonzero}
+
+If $n\cdot1\neq0$ in $F$, then $A$ is similar to $\operatorname{diag}(n,0,\ldots,0)$.
+
+::: pf-proof
+
+$x(x-n\cdot1)$ has distinct roots, so $A$ is diagonalizable. The eigenvalue $0$ has multiplicity $\dim\ker A=n-1$ by Step [](#kernel){.pf-ref}, and $Au=(n\cdot1)u$ gives the remaining eigenvalue $n\cdot1$.
+
+:::
+
+:::
+
+::: {.pf-step #zero}
+
+If $n\cdot1=0$ in $F$, then $n\ge2$ and $A$ is similar to $J_2(0)\oplus 0_{n-2}$, a single $2\times2$ nilpotent Jordan block and $n-2$ zero blocks of size $1$.
+
+::: pf-proof
+
+$n\cdot1=0$ forces $n\geq\operatorname{char}F\geq2$. By Step [](#kernel){.pf-ref}, $A^2=0$ and $A\neq0$, so $0$ is the only eigenvalue and every Jordan block has size at most $2$, with at least one of size $2$. The number of blocks is $\dim\ker A=n-1$. Blocks of sizes at most $2$, $n-1$ of them, with total size $n$, are exactly one block of size $2$ and $n-2$ of size $1$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#exists){.pf-ref} gives existence, and Steps [](#nonzero){.pf-ref} and [](#zero){.pf-ref} give the Jordan form in the two cases.
+
+:::
+
+:::
+
+:::
