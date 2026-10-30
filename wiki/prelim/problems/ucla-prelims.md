@@ -48,7 +48,7 @@ order: 2
 
 [[SRC-UCLA-BASIC-FALL-2011|Fall 2011 Basic Examination]]
 
-[[SRC-UCLA-BASIC-WINTER-2012|Spring 2012 Basic Examination]]
+[[SRC-UCLA-BASIC-WINTER-2012|Winter 2012 Basic Examination]]
 
 [[SRC-UCLA-BASIC-FALL-2012|Fall 2012 Basic Examination]]
 
