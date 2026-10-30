@@ -899,7 +899,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/conformal-maps/build-me-a-map.md
   - [x] wiki/complex-analysis/conformal-maps/index.md
   - [x] wiki/complex-analysis/conformal-maps/mobius-transformations.md
-  - [ ] wiki/complex-analysis/conformal-maps/normal-families-and-montel.md
+  - [x] wiki/complex-analysis/conformal-maps/normal-families-and-montel.md
   - [ ] wiki/complex-analysis/conformal-maps/the-riemann-mapping-theorem.md
   - [ ] wiki/complex-analysis/conformal-maps/the-schwarz-lemma.md
   - [ ] wiki/complex-analysis/counterexamples.md
