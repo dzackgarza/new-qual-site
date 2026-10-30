@@ -23,6 +23,10 @@ Let $R$ be a commutative ring and let $A, B \in M_n(R)$ be $n \times n$ matrices
 (c) Show that for any matrix $B \in M_n(R)$, the matrices $B B^t$ and $B + B^t$ are symmetric, and $B - B^t$ is skew-symmetric.
 :::
 
+::: {.remark title="Variations"}
+Over a field $F$, symmetric and skew-symmetric matrices form subspaces of $M_n(F)$, and if $\operatorname{char}(F)\neq 2$ then $M_n(F)=\operatorname{Sym}_n(F)\oplus\operatorname{Skew}_n(F)$ as an internal direct sum.
+:::
+
 ::: {.solution}
 
 ::: pf
