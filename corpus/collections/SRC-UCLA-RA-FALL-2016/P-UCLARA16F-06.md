@@ -6,7 +6,9 @@ title: Weakly convergent sequences in $\ell^1$ converge in norm
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Weak Convergence
+  - Banach Spaces
 relations: []
 review: draft
 audit:

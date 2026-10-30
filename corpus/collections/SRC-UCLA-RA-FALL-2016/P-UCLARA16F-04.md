@@ -6,7 +6,10 @@ title: $L^2$ is meager in $L^1([0,1])$
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Baire Category
+  - L¹
+  - L²
 relations: []
 review: draft
 audit:

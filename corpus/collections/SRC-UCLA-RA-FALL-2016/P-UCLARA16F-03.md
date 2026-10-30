@@ -6,7 +6,10 @@ title: Weak-star lower semicontinuity and minimizers of the Coulomb energy
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Weak Convergence
+  - Borel Measures
+  - Compactness
 relations: []
 review: draft
 audit:
