@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF93-6
 kind: problem
 title: Cancellation for direct products of finite abelian groups
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

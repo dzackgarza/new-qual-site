@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF93-3
 kind: problem
 title: Region of convergence of an exponential series in the complex plane
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

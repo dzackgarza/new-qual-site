@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF93-5
 kind: problem
 title: Zeros at $0$ and $1$ force zeros at every integer for a constant-coefficient ODE
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Ordinary Differential Equations]}
 relations: []
 review: draft
 audit:

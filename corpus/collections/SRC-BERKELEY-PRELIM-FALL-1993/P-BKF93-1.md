@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF93-1
 kind: problem
 title: A convergent sequence together with its limit is compact
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF93-8
 kind: problem
 title: A complex matrix of finite order is diagonalizable
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

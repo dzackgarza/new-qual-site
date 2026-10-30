@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF93-7
 kind: problem
 title: Critical points of the determinant map on real matrices
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

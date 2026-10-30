@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF93-4
 kind: problem
 title: The map $X\mapsto AXB$ from $n\times m$ to $m\times n$ matrices is not invertible for $m\ne n$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:
