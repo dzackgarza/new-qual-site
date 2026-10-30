@@ -6,7 +6,9 @@ title: Borel measurability of $L^2\cap L^3$ in $L^3(\RR)$
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Lp Spaces
+  - Borel Measures
 relations: []
 review: draft
 audit:

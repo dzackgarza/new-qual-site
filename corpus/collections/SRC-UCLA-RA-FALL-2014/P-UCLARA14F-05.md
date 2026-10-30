@@ -6,7 +6,10 @@ title: Density of a pushforward under a nonsingular continuous map
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Radon-Nikodym
+  - Absolute Continuity
+  - Borel Measures
 relations: []
 review: draft
 audit:

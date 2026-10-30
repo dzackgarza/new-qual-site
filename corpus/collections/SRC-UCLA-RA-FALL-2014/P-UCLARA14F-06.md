@@ -6,7 +6,10 @@ title: Separable dual implies separable Banach space
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Dual Spaces
+  - Separability
+  - Banach Spaces
 relations: []
 review: draft
 audit:

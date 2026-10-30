@@ -6,7 +6,9 @@ title: Bounded $L^2$ sequences converging to 0 almost everywhere converge weakly
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Weak Convergence
+  - L²
 relations: []
 review: draft
 audit:

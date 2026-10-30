@@ -6,7 +6,9 @@ title: Cosine series with $\sum(1+n^2)\abs{c_n}^2<\infty$ form an algebra
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Series
+  - L²
 relations: []
 review: draft
 audit:

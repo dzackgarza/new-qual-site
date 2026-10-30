@@ -6,7 +6,10 @@ title: An $L^1$ function whose translates do not converge almost everywhere
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L¹
+  - Counterexamples
+  - Convergence of Functions
 relations: []
 review: draft
 audit:
