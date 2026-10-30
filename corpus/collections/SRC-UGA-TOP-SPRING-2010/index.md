@@ -16,7 +16,7 @@ source:
   institution: uga
   area: topology
   problems:
-  - P-URS24
+  - P-TOPOLOGY-PHD-F08-10
   - P-MHQ6A
   - P-S10I3
   - P-8TS11

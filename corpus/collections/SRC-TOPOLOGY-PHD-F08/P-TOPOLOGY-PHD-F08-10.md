@@ -162,3 +162,7 @@ Thus every nonempty open subset is all of $X$, so the quotient topology is indis
 :::
 
 :::
+
+::: {.remark title="Variations"}
+One version does not name the answer: it asks to describe, with proof, all open subsets of the quotient.
+:::
