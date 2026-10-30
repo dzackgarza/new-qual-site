@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/240_ni_s15-without-solution.pdf",
+  "source_pdf_sha256": "09611bdcee26f05c82cc565aa1ff8280ea36017231104de9cd604e433abdd965",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/240_ni_s15-without-solution.pdf",
+  "extracted_markdown": "assets/attachments/240_ni_s15-without-solution_extracted.md",
+  "extracted_markdown_sha256": "f8e5676805b012ae25c0a185e2926fccbebe99c19fd94242eab22293759903dd",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/240_ni_s15-without-solution.pdf --language en",
+  "generated_at": "2026-10-30"
+}

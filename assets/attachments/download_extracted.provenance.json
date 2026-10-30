@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/download.pdf",
+  "source_pdf_sha256": "84651b8f594c5b7a151e04e91d13f243f419a35d4c9e443028d4bc7accccb7a3",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/download.pdf",
+  "extracted_markdown": "assets/attachments/download_extracted.md",
+  "extracted_markdown_sha256": "c15e501521ce964148b20f912baeba1e542d0276f8d8cefd602e248c05ab9dc2",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/download.pdf --language en",
+  "generated_at": "2026-10-30"
+}

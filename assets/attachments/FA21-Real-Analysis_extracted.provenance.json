@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/FA21-Real-Analysis.pdf",
+  "source_pdf_sha256": "6694519f13281847bb1cc5cc9849e24215d342040879941b17dcbfe8df366a9d",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/uploads/students/graduate/qualifying-exams/FA21-Real-Analysis.pdf",
+  "extracted_markdown": "assets/attachments/FA21-Real-Analysis_extracted.md",
+  "extracted_markdown_sha256": "d58420b7755d49882e7e6ca5d192ec9af4ba393cfe236750959f18a5a1a62ff7",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/FA21-Real-Analysis.pdf --language en",
+  "generated_at": "2026-10-30"
+}

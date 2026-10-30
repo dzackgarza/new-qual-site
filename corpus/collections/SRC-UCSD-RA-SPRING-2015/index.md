@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/240_ni_s15-without-solution.pdf
+- assets/attachments/240_ni_s15-without-solution.pdf
 source:
   source_kind: university-exam
   institution: ucsd

@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Real-Analysis-Qual-rev-SP20.pdf",
+  "source_pdf_sha256": "cba344cde4e277acbdbb331f4f44ef08d253d93c01bd0c77230c1604ed246741",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/Real-Analysis-Qual-rev-SP20.pdf",
+  "extracted_markdown": "assets/attachments/Real-Analysis-Qual-rev-SP20_extracted.md",
+  "extracted_markdown_sha256": "ee902ab4b617330f5b1ac5da29649a78f6bb69f702bfb63816b967c6094dcadf",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Real-Analysis-Qual-rev-SP20.pdf --language en",
+  "generated_at": "2026-10-30"
+}

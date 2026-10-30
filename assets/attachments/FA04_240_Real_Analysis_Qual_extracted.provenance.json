@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/FA04_240_Real_Analysis_Qual.pdf",
+  "source_pdf_sha256": "1f45440716904c7b8291d3c5071ec8c19e37da58ab85121ce91908fa9fcd9139",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/FA04_240_Real_Analysis_Qual.pdf",
+  "extracted_markdown": "assets/attachments/FA04_240_Real_Analysis_Qual_extracted.md",
+  "extracted_markdown_sha256": "546f4e08472b21eb387dbe6082b8374e6da7b437fbced2e3217fb7a5d05051ca",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/FA04_240_Real_Analysis_Qual.pdf --language en",
+  "generated_at": "2026-10-30"
+}

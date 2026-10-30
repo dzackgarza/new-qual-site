@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/qual-2-23-V2.pdf
+- assets/attachments/qual-2-23-V2.pdf
 source:
   source_kind: university-exam
   institution: ucsd

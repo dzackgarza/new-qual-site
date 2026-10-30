@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/240-Exam-FA20.pdf",
+  "source_pdf_sha256": "8f40595063bd4895cc61c741b07c117718c1fd20af93ccd5167684ae3f6770f8",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/240-Exam-FA20.pdf",
+  "extracted_markdown": "assets/attachments/240-Exam-FA20_extracted.md",
+  "extracted_markdown_sha256": "4c010014340ac4606047a4cde0c4781ce0a31b2aee28b6657ba93babc2d3c93b",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/240-Exam-FA20.pdf --language en",
+  "generated_at": "2026-10-30"
+}

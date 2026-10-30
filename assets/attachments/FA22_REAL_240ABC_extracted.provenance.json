@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/FA22_REAL_240ABC.pdf",
+  "source_pdf_sha256": "83d21082dcd4b2d8f33399da3f168d0ea778cee401c8e9807f1884b4dadbe1b6",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/FA22_REAL_240ABC.pdf",
+  "extracted_markdown": "assets/attachments/FA22_REAL_240ABC_extracted.md",
+  "extracted_markdown_sha256": "f33a906a6322681214b84fe94de857408bc173c71a5692d44e67f0bd02f3d22d",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/FA22_REAL_240ABC.pdf --language en",
+  "generated_at": "2026-10-30"
+}
