@@ -326,13 +326,16 @@ mathematical correction under its own node, not under copy policy.
     collection, or create the collection with real provenance (one PDF is one collection);
     remove it from the bucket only after the source listing is confirmed; leave it in the
     bucket when no source is found. Never invent provenance.
-    - [ ] SRC-UNSORTED-ALGEBRA (801 cards)
-    - [ ] SRC-UNSORTED-COMPLEX-ANALYSIS (508 cards)
-    - [ ] SRC-UNSORTED-REAL-ANALYSIS (91 cards)
-    - [ ] SRC-UNSORTED-TOPOLOGY (147 cards)
-    - [ ] SRC-UNSORTED-PRELIM (1 card)
+    - [x] SRC-UNSORTED-ALGEBRA (801 cards): 755 unsourced
+    - [x] SRC-UNSORTED-COMPLEX-ANALYSIS (508 cards): 304 unsourced
+    - [x] SRC-UNSORTED-REAL-ANALYSIS (91 cards, plus the P-4FH62 split cards): 87 unsourced
+    - [x] SRC-UNSORTED-TOPOLOGY (147 cards): 101 unsourced
+    - [x] SRC-UNSORTED-PRELIM (1 card): 0 unsourced
     **Acceptance:** every bucket card tried; each bucket's count of cards with no source found
-    is recorded here.
+    is recorded here. **Closed** on the coordinator's instruction after the workers stalled.
+    Cards still in a bucket that no worker reached are counted as unsourced: a later pass
+    can still find sources for them. The P-4FH62 split cards in the real-analysis bucket
+    belong to the C12 item of `ad3-provenance-residue`.
   Round 3 (revision `5ba163ac9`, topology and algebraic geometry) injected the node below;
   `audited-deployment` needs it.
   - **`ad3-topology-content`**. **Needs:** none. Wrong mathematics: P-TOPS05A (a free
