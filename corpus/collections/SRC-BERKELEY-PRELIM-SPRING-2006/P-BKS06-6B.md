@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let A be the subring of $\RR [ t ]$ consisting of polynomials $f ( t )$ such that $f ^ { \prime } ( 0 ) = 0$ . Is A a principal ideal domain?
+Let $A$ be the subring of $\RR[t]$ consisting of polynomials $f(t)$ such that $f'(0) = 0$. Is $A$ a principal ideal domain?
 :::
 
 ::: {.solution}

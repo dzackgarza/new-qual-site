@@ -11,13 +11,11 @@ review: draft
 ---
 
 ::: {.problem}
-Let $u \colon  { \RR } \to  { \RR }$ be a function for which there exists $B > 0$ such that
-
+Let $u \colon \RR \to \RR$ be a function for which there exists $B > 0$ such that
 $$
-\sum _ { k = 1 } ^ { N - 1 } \abs{ u ( x _ { k + 1 } ) - u ( x _ { k } ) } ^ { 2 } \leq B
+\sum_{k=1}^{N-1} \abs{u(x_{k+1}) - u(x_{k})}^{2} \leq B
 $$
-
-for all finite increasing sequences $x _ { 1 } < x _ { 2 } < \dots < x _ { N }$ . Show that u has at most countably many discontinuities.
+for all finite increasing sequences $x_{1} < x_{2} < \cdots < x_{N}$. Show that $u$ has at most countably many discontinuities.
 :::
 
 ::: {.solution}

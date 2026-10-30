@@ -11,9 +11,9 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\langle ~ , ~ \rangle$ be the standard Hermitian inner product on $\CC ^ { n }$.
-Let A be an $n \times n$ matrix with complex entries.
-Suppose $\langle x , A x \rangle$ is real for all $x \in \CC ^ { n }$ . Prove that A is Hermitian.
+Let $\langle\ ,\ \rangle$ be the standard Hermitian inner product on $\CC^{n}$.
+Let $A$ be an $n \times n$ matrix with complex entries.
+Suppose $\langle x, Ax \rangle$ is real for all $x \in \CC^{n}$. Prove that $A$ is Hermitian.
 :::
 
 ::: {.solution}

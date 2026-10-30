@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $A _ { 1 } \supseteq A _ { 2 } \supseteq \cdots$ · be compact connected subsets of $\RR ^ { n }$ . Show that the set $A = \cap A _ { m }$ is connected.
+Let $A_{1} \supseteq A_{2} \supseteq \cdots$ be compact connected subsets of $\RR^{n}$. Show that the set $A = \bigcap A_{m}$ is connected.
 :::
 
 ::: {.solution}

@@ -12,7 +12,7 @@ review: draft
 
 ::: {.problem}
 Let $p$ be a prime.
-Let G be a finite non-cyclic group of order $p ^ { m }$ for some m. Prove that G has at least $p + 3$ subgroups.
+Let $G$ be a finite non-cyclic group of order $p^{m}$ for some $m$. Prove that $G$ has at least $p + 3$ subgroups.
 :::
 
 ::: {.solution}

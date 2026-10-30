@@ -11,11 +11,11 @@ review: draft
 ---
 
 ::: {.problem}
-Let G be the subgroup of the free abelian group $\ZZ ^ { 4 }$ consisting of all integer vectors $( x , y , z , w )$ such that $2 x + 3 y + 5 z + 7 w = 0$
+Let $G$ be the subgroup of the free abelian group $\ZZ^{4}$ consisting of all integer vectors $(x, y, z, w)$ such that $2x + 3y + 5z + 7w = 0$.
 
-(a) Determine a linearly independent subset of G which generates $G$ as an abelian group.
+(a) Determine a linearly independent subset of $G$ which generates $G$ as an abelian group.
 
-(b) Show that $\ZZ ^ { 4 } / G$ is a free abelian group and determine its rank.
+(b) Show that $\ZZ^{4}/G$ is a free abelian group and determine its rank.
 :::
 
 ::: {.solution}

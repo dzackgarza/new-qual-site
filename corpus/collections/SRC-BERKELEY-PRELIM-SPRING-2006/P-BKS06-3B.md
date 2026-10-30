@@ -12,12 +12,10 @@ review: draft
 
 ::: {.problem}
 Evaluate the integral
-
 $$
-\int _ { - \infty } ^ { \infty } { \frac { e ^ { i t x } } { e ^ { x } + e ^ { - x } } } d x
+\int_{-\infty}^{\infty} \frac{e^{itx}}{e^{x} + e^{-x}}\, dx
 $$
-
-for $t > 0$
+for $t > 0$.
 :::
 
 ::: {.solution}

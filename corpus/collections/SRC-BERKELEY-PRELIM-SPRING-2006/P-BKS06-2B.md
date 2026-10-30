@@ -11,9 +11,9 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\FF _ { 2 }$ be the field of 2 elements.
-Let n be a prime.
-Show that there are exactly $( 2 ^ { n } - 2 ) / n$ degree-n irreducible polynomials in $\FF _ { 2 } [ x ]$
+Let $\FF_{2}$ be the field of $2$ elements.
+Let $n$ be a prime.
+Show that there are exactly $(2^{n} - 2)/n$ degree-$n$ irreducible polynomials in $\FF_{2}[x]$.
 :::
 
 ::: {.solution}

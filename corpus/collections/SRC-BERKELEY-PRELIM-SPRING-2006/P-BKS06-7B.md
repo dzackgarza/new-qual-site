@@ -11,18 +11,16 @@ review: draft
 ---
 
 ::: {.problem}
-Let m be a fixed positive integer.
+Let $m$ be a fixed positive integer.
 
-(a) Show that if an entire function $f \colon \CC \to \CC$ satisfies $\abs{ f ( z ) } \leq e ^ { \abs{ z } }$ for all $z \in \CC$ , then
-
+(a) Show that if an entire function $f \colon \CC \to \CC$ satisfies $\abs{f(z)} \leq e^{\abs{z}}$ for all $z \in \CC$, then
 $$
-\abs{ f ^ { ( m ) } ( 0 ) } \leq \frac { m ! e ^ { m } } { m ^ { m } } .
+\abs{f^{(m)}(0)} \leq \frac{m!\, e^{m}}{m^{m}}.
 $$
 
-(b) Prove that there exists an entire function $f$ such that $\abs{ f ( z ) } \leq e ^ { \abs{ z } }$ for all z and
-
+(b) Prove that there exists an entire function $f$ such that $\abs{f(z)} \leq e^{\abs{z}}$ for all $z$ and
 $$
-\abs{ f ^ { ( m ) } ( 0 ) } = \frac { m ! e ^ { m } } { m ^ { m } } .
+\abs{f^{(m)}(0)} = \frac{m!\, e^{m}}{m^{m}}.
 $$
 :::
 

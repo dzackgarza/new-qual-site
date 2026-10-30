@@ -11,8 +11,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let n be a positive integer, and let ${ \mathrm { G L } } _ { n } ( \RR )$ be the group of invertible $n \times n$ matrices.
-Let S be the set of $A \in \operatorname { G L } _ { n } ( \RR )$ such that $A - I$ has rank $\leq 2$ . Prove that S generates ${ \mathrm { G L } } _ { n } ( \RR )$ as a group.
+Let $n$ be a positive integer, and let $\GL_{n}(\RR)$ be the group of invertible $n \times n$ matrices.
+Let $S$ be the set of $A \in \GL_{n}(\RR)$ such that $A - I$ has rank $\leq 2$. Prove that $S$ generates $\GL_{n}(\RR)$ as a group.
 :::
 
 ::: {.solution}

@@ -11,13 +11,11 @@ review: draft
 ---
 
 ::: {.problem}
-Find a bounded non-convergent sequence of real numbers $( a _ { n } ) _ { n \geq 1 }$ such that
-
+Find a bounded non-convergent sequence of real numbers $(a_{n})_{n \geq 1}$ such that
 $$
-\abs{ 2 a _ { n } - a _ { n - 1 } - a _ { n + 1 } } \leq n ^ { - 2 }
+\abs{2 a_{n} - a_{n-1} - a_{n+1}} \leq n^{-2}
 $$
-
-for all $n \geq 2 .$
+for all $n \geq 2$.
 :::
 
 ::: {.solution}

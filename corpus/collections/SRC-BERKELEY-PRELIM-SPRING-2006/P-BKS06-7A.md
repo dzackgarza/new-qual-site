@@ -11,8 +11,8 @@ review: draft
 ---
 
 ::: {.problem}
-Recall that $\mathrm { S L } ( 2 , \RR )$ denotes the group of real $2 \times 2$ matrices of determinant 1. Suppose that $A \in \mathrm { S L } ( 2 , \RR )$ does not have a real eigenvalue.
-Show that there exists $B \in \mathrm { S L } ( 2 , \RR )$ such that $B A B ^ { - 1 }$ equals a rotation matrix $\left( \begin{array} { c c } { \cos \theta } & { - \sin \theta } \\ { \sin \theta } & { \cos \theta } \end{array} \right)$ for some $\theta \in \RR$
+Recall that $\SL(2, \RR)$ denotes the group of real $2 \times 2$ matrices of determinant $1$. Suppose that $A \in \SL(2, \RR)$ does not have a real eigenvalue.
+Show that there exists $B \in \SL(2, \RR)$ such that $B A B^{-1}$ equals a rotation matrix $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$ for some $\theta \in \RR$.
 :::
 
 ::: {.solution}

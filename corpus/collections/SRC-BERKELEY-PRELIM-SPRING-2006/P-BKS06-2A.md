@@ -11,12 +11,10 @@ review: draft
 ---
 
 ::: {.problem}
-Find (with proof) all real numbers c such that the differential equation with boundary conditions
-
+Find (with proof) all real numbers $c$ such that the differential equation with boundary conditions
 $$
-f ^ { \prime \prime } - c f ^ { \prime } + 1 6 f = 0 , \qquad f ( 0 ) = f ( 1 ) = 1
+f'' - c f' + 16 f = 0, \qquad f(0) = f(1) = 1
 $$
-
 has no solution.
 :::
 
