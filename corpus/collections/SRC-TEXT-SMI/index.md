@@ -85,7 +85,7 @@ source:
       comment: Smith 8000e Noetherian rings 5
     - id: E-SMI-8000E-NR6
       comment: Smith 8000e Noetherian rings 6
-    - id: E-SMI-8000E-NR7
+    - id: P-KSRING17-042
       comment: Smith 8000e Noetherian rings 7
     - id: E-SMI-8000E-NR8
       comment: Smith 8000e Noetherian rings 8

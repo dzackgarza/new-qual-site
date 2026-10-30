@@ -16,8 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let R be a non-zero ring with identity.
-Show that every proper ideal of R is contained in a maximal ideal.
+Let $R$ be a nonzero ring with identity.
+Show that every proper ideal of $R$ is contained in a maximal ideal.
 :::
 
 ::: {.solution}
@@ -264,4 +264,9 @@ Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 
+:::
+
+::: {.remark}
+Smith's exercise (Noetherian rings 7) asks for this with Zorn's lemma for "every ideal".
+The unit ideal $R$ lies in no maximal ideal, since maximal ideals are proper, so the statement holds for proper ideals.
 :::
