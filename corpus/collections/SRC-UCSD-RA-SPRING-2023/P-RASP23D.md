@@ -93,7 +93,7 @@ With the induced metric this is isometric to the compact interval $[y_0-r,y_0+r]
 
 :::
 
-::: pf-step
+::: {.pf-step #finite-lines}
 
 Show that a compactly supported continuous function uses only finitely many vertical lines.
 
@@ -116,27 +116,33 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #open-sets}
 
-Identify the measure induced by $I$.
+For every open $V\subseteq X$, $\mu(V)=\sum_{x\in\RR}m(V_x)$, where $V_x\coloneqq\{y:(x,y)\in V\}$ and an uncountable sum of nonnegative numbers means the supremum of its finite partial sums.
 
 ::: pf-proof
 
-For each $x\in\RR$, let $\lambda_x$ be one-dimensional Lebesgue measure on the open-and-closed vertical line $\{x\}\times\RR$. Define, for Borel $E\subseteq X$,
-$$
-\nu(E):=\sum_{x\in\RR}m(E_x),
-\qquad
-E_x:=\{y:(x,y)\in E\},
-$$
-where an uncountable sum of nonnegative numbers means the supremum of the finite partial sums.
+By the Riesz representation theorem (Rudin, *Real and Complex Analysis*, Theorem 2.14), $\mu(V)=\sup\{I(f):f\prec V\}$ for open $V$, and $\mu(E)=\inf\{\mu(V):E\subseteq V,\ V\text{ open}\}$ for every Borel $E$.
+Each section $V_x$ is open in $\RR$, because a ball of radius less than $1$ lies in one vertical line and is a Euclidean interval there.
 
-This is a Borel measure: it is the sum of the family $(\lambda_x)_{x\in\RR}$. If $f\in C_c(X)$, Step 3 shows that only finitely many vertical lines meet its support, so
-$$
-\int_X f\,d\nu
-=\sum_{i=1}^n\int_{\RR}f(x_i,y)\,dy
-=I(f).
-$$
-Hence the Radon measure induced by the positive functional $I$ is precisely $\mu=\nu$.
+If $f\prec V$, step [](#finite-lines){.pf-ref} gives finitely many lines $x_1,\ldots,x_n$ that carry the support of $f$, and $0\le f\le 1$, so $I(f)\le\sum_{i=1}^n m(V_{x_i})\le\sum_x m(V_x)$.
+Conversely, given finitely many $x_1,\ldots,x_n$ and compact sets $K_i\subseteq V_{x_i}$, Urysohn's lemma on each line gives $f\prec V$ with $f=1$ on $\bigcup_i\{x_i\}\times K_i$, so $I(f)\ge\sum_i m(K_i)$.
+Inner regularity of Lebesgue measure on the open sets $V_{x_i}$ makes $\sum_i m(K_i)$ approach $\sum_i m(V_{x_i})$, and the supremum of these finite sums is $\sum_x m(V_x)$.
+
+:::
+
+:::
+
+::: {.pf-step #line-measure}
+
+The set $E\coloneqq\RR\times\{0\}$ is closed and $\mu(E)=\infty$.
+
+::: pf-proof
+
+A point $(x,y)$ with $y\neq0$ has the ball of radius $\min(\abs{y},1)/2$ about it inside $\{x\}\times(\RR\setminus\{0\})$, so $E$ is closed, hence Borel.
+Let $V\supseteq E$ be open. For every $x\in\RR$ the open set $V_x$ contains $0$, so $m(V_x)>0$.
+Uncountably many positive numbers include, for some $k\ge1$, infinitely many greater than $1/k$, so $\sum_x m(V_x)=\infty$.
+By step [](#open-sets){.pf-ref}, $\mu(V)=\infty$ for every open $V\supseteq E$, so $\mu(E)=\infty$ by outer regularity.
 
 :::
 
@@ -144,48 +150,13 @@ Hence the Radon measure induced by the positive functional $I$ is precisely $\mu
 
 ::: pf-step
 
-Prove inner regularity on every Borel set.
+The answer is $\boxed{\text{No}}$: the Borel set $E=\RR\times\{0\}$ is not inner regular.
 
 ::: pf-proof
 
-Let $E\subseteq X$ be Borel. We show
-$$
-\mu(E)=\sup\{\mu(K):K\subseteq E,\ K\text{ compact}\}.
-$$
-
-Suppose first that $\mu(E)<\infty$. Then at most countably many sections $E_x$ have positive Lebesgue measure, and
-$$
-\mu(E)=\sum_xm(E_x).
-$$
-Given $\varepsilon>0$, choose finitely many $x_1,\dots,x_N$ such that
-$$
-\sum_{i=1}^N m(E_{x_i})>\mu(E)-\frac\varepsilon2.
-$$
-By inner regularity of Lebesgue measure, choose compact sets
-$$
-K_i\subseteq E_{x_i}
-$$
-so that
-$$
-\sum_{i=1}^N m(K_i)
->\sum_{i=1}^N m(E_{x_i})-\frac\varepsilon2.
-$$
-Then
-$$
-K:=\bigcup_{i=1}^N\bigl(\{x_i\}\times K_i\bigr)
-$$
-is a finite union of compact sets, hence compact in $X$, and $K\subseteq E$. Moreover,
-$$
-\mu(K)>\mu(E)-\varepsilon.
-$$
-
-If $\mu(E)=\infty$, then for every $M>0$ the definition of the uncountable sum provides finitely many $x_1,\dots,x_N$ with
-$$
-\sum_{i=1}^N m(E_{x_i})>M+1.
-$$
-Approximating those finitely many sections from inside by compact sets as above produces a compact $K\subseteq E$ with $\mu(K)>M$. Hence the supremum over compact subsets is infinite.
-
-Thus $\mu$ is inner regular on every Borel set. In particular, the answer to the final question is **yes**.
+Let $K\subseteq E$ be compact. As in step [](#finite-lines){.pf-ref}, finitely many balls of radius $1/3$, each inside one vertical line, cover $K$, so $K$ meets finitely many lines. Each line meets $E$ in one point, so $K=\{(x_1,0),\ldots,(x_n,0)\}$ is finite.
+For $\varepsilon>0$ the open set $V=\bigcup_{i=1}^n\{x_i\}\times(-\varepsilon,\varepsilon)$ contains $K$, and $\mu(V)=2n\varepsilon$ by step [](#open-sets){.pf-ref}. Hence $\mu(K)=0$.
+Thus $\sup\{\mu(K):K\subseteq E,\ K\text{ compact}\}=0<\infty=\mu(E)$ by step [](#line-measure){.pf-ref}.
 
 :::
 
