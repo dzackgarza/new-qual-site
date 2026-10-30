@@ -9,6 +9,7 @@ classification:
   - applied-algebra
   topics:
   - Linear Algebra
+  - Singular Values
 relations: []
 review: draft
 audit:

@@ -18,7 +18,7 @@ source:
   area: applied-algebra
   problems:
   - P-APAF06A
-  - P-APAF06B
+  - P-ALGS06B
   - P-APAF06C
   - P-APAF06D
   date:
