@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f$ be analytic on a bounded domain $D$, and assume also that $f$ that is continuous and nowhere zero on the closure $\bar{D}$.
+Let $f$ be analytic on a bounded domain $D$, and assume also that $f$ is continuous and nowhere zero on the closure $\bar{D}$.
 
 Show that if $\abs{f(z)}=M$ (a constant) for $z$ on the boundary of $D$, then $f(z)=e^{i \theta} M$ for $z$ in $D$, where $\theta$ is a real constant.
 :::

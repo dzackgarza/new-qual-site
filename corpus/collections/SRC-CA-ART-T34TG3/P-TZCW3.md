@@ -21,13 +21,11 @@ audit:
 ---
 
 ::: {.problem}
-Prove the fundamental theorem of Algebra using
+Prove the fundamental theorem of algebra using
 
-a.  
-Rouche's Theorem.
+(a) Rouché's theorem;
 
-b. 
-The maximum modulus principle.
+(b) the maximum modulus principle.
 :::
 
 ::: {.solution}

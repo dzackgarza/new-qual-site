@@ -15,11 +15,11 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that maximum principle for harmonic functions, i.e.
+Prove the maximum principle for harmonic functions:
 
-a. If $u$ is a non-constant real-valued harmonic function in a region $\Omega$, then $u$ can not attain a maximum or a minimum in $\Omega$.
+(a) If $u$ is a non-constant real-valued harmonic function in a region $\Omega$, then $u$ can not attain a maximum or a minimum in $\Omega$.
 
-b. Suppose $\Omega$ is a region with compact closure $\bar \Omega$.
+(b) Suppose $\Omega$ is a region with compact closure $\bar \Omega$.
 If $u$ is harmonic in $\Omega$ and continuous in $\bar \Omega$, then $$ \sup _{z \in \Omega}\abs{u(z)} \leq \sup _{z \in \bar \Omega -\Omega}\abs{u(z)} .$$
 
 > Hint: to prove (a), assume $u$ attains a local maximum at $z_0$.

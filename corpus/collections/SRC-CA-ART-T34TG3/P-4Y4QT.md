@@ -15,14 +15,13 @@ review: draft
 ---
 
 ::: {.problem}
-Let $0<a<4$ and evaluate
+Let $0<a<3$ and evaluate
 $$
-\int_0^\infty \frac{x^{\alpha-1}}{1+x^3} ~dx
+\int_0^\infty \frac{x^{a-1}}{1+x^3} ~dx
 $$
 :::
 
 ::: {.solution}
-Read the exponent as $\alpha=a$.
 
 ::: pf
 
@@ -58,15 +57,10 @@ and Euler's reflection formula $\Gamma(s)\Gamma(1-s)=\pi/\sin(\pi s)$ gives the 
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} evaluates the integral on its range of convergence from step [](#s1){.pf-ref}; for $3\le a<4$ it diverges.
+Step [](#s2){.pf-ref} evaluates the integral on its range of convergence from step [](#s1){.pf-ref}.
 
 :::
 
 :::
 
-:::
-
-::: {.remark}
-The hypothesis names $a$ while the integrand has exponent $\alpha-1$. With $\alpha=a$, the integral converges only for $0<a<3$. The stated range $0<a<4$ is the range of convergence of $\int_0^\infty x^{a-1}/(1+x^4)\,dx$, and the substitution $t=x^4$ gives
-$$\int_0^\infty\frac{x^{a-1}}{1+x^4}\,dx=\frac{\pi}{4}\csc\frac{\pi a}{4}\qquad(0<a<4).$$
 :::
