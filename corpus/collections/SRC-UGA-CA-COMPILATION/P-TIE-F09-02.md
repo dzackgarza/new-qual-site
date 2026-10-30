@@ -196,5 +196,5 @@ Step [](#s1-4){.pf-ref} is the required conclusion.
 :::
 
 ::: remark
-One printing of this problem restricts to $1\le\theta\le2\pi$. The proof does not use the restriction.
+One printing of this problem restricts to $1\le\theta\le2\pi$, and another takes $R=1$. The proof uses neither.
 :::

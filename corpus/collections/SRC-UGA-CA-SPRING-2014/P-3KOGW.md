@@ -28,30 +28,42 @@ $$
 :::
 
 ::: {.solution}
-Computing the LHS:
-$$
-\int_{[0, 2\pi]} \abs{f(re^{i\theta})}^2 \dtheta
-&= \int_{[0, 2\pi]} f(re^{i\theta}) \bar{f(re^{i\theta}) } \dtheta \\
-&= \int_{[0, 2\pi]} \sum_{k\geq 0} c_k r^k e^{ik\theta} \sum_{j\geq 0} \bar{c_j} r^j e^{-ij\theta} \dtheta \\
-&= \int_{[0, 2\pi]} \sum_{k,j\geq 0} c_k\bar{c_j} r^{k+j} e^{i(k-j)\theta} \dtheta \\
-&= \sum_{k,j\geq 0} c_k\bar{c_j} r^{k+j} \int_{[0, 2\pi]} e^{i(k-j)\theta} \dtheta \\
-&= \sum_{k,j\geq 0} c_k\bar{c_j} r^{k+j} \chi_{i=j}\cdot 2\pi \\
-&= \sum_{k\geq 0} c_k\bar{c_k} r^{2k} \cdot 2\pi \\
-&= 2\pi \sum_{k\geq 0}\abs{c_k}^2 r^{2k}
-,$$
-where we've used that the series converges uniformly in its radius of convergence to commute sums and integrals.
 
-Now supposing $\abs{f(z)}\leq M$ for all $z\in \CC$, if $f$ is entire then $\sum_{k\geq 0} c_k z^k$ converges for all $r$, so
-$$
-\sum_{k\geq 0} \abs{c_k}^2 r^{2k} = {1\over 2\pi }\int_{[0, 2\pi]} \abs{f(re^{i\theta})}^2 \dtheta \leq {1\over 2\pi}\int_{[0, 2\pi]} M^2 \dtheta = M^2
-.$$
-Thus for all $r$,
-$$
-\abs{c_0}^2 + \abs{c_1}^2 r^2 + \abs{c_2}^2 r^{4} + \cdots \leq M^2
-,$$
-and taking $r\to\infty$ forces $\abs{c_1}^2 = \abs{c_2}^2 = \cdots = 0$.
-So $f(z) = c_0$ is constant.
+::: pf
 
+::: {.pf-step #parseval}
+For $0\le r<R$,
+$$
+\frac{1}{2\pi}\int_0^{2\pi}\abs{f(re^{i\theta})}^2\,d\theta=\sum_{n=0}^\infty\abs{c_n}^2r^{2n}.
+$$
 
+::: pf-proof
+A power series converges absolutely and uniformly on each closed disk $\abs{z}\le r$ with $r<R$. So on the circle $\abs{z}=r$ the double series
+$$
+\abs{f(re^{i\theta})}^2=f(re^{i\theta})\overline{f(re^{i\theta})}=\sum_{k,j\ge0}c_k\overline{c_j}\,r^{k+j}e^{i(k-j)\theta}
+$$
+converges absolutely and uniformly in $\theta$, since $\sum_{k,j}\abs{c_k}\abs{c_j}r^{k+j}=\bigl(\sum_k\abs{c_k}r^k\bigr)^2<\infty$. Hence it can be integrated term by term. Because
+$$
+\int_0^{2\pi}e^{i(k-j)\theta}\,d\theta=\begin{cases}2\pi,&k=j,\\0,&k\neq j,\end{cases}
+$$
+only the terms with $k=j$ remain, and they give $2\pi\sum_k\abs{c_k}^2r^{2k}$.
+:::
+
+:::
+
+::: pf-step
+If $f$ is entire and $\abs{f}\le M$ on $\CC$, then $f$ is constant.
+
+::: pf-proof
+The Taylor series of an entire function converges on all of $\CC$, so step [](#parseval){.pf-ref} holds for every $r\ge0$ and gives
+$$
+\abs{c_0}^2+\sum_{n\ge1}\abs{c_n}^2r^{2n}\le\frac1{2\pi}\int_0^{2\pi}M^2\,d\theta=M^2.
+$$
+For each $n\ge1$ this gives $\abs{c_n}^2\le M^2r^{-2n}$, which tends to $0$ as $r\to\infty$. So $c_n=0$ for all $n\ge1$, and $f=c_0$.
+:::
+
+:::
+
+:::
 
 :::

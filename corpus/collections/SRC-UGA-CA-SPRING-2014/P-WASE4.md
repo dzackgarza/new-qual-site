@@ -15,13 +15,17 @@ review: draft
 ---
 
 ::: {.problem}
-Use Rouche's theorem to prove the Fundamental Theorem of Algebra.
+Apply Rouché's theorem to prove the Fundamental Theorem of Algebra: if
+$$
+P(z)=a_0+a_1z+\cdots+a_{n-1}z^{n-1}+a_nz^n\qquad(a_n\neq0)
+$$
+is a polynomial of degree $n>0$, then it has a zero in $\CC$.
 :::
 
 ::: {.solution}
 
 Zeros are counted with multiplicity.
-Write $Q(z)\coloneqq P_n(z)-a_nz^n$ and $C\coloneqq\sum_{k=0}^{n-1}\abs{a_k}$.
+Write $Q(z)\coloneqq P(z)-a_nz^n$ and $C\coloneqq\sum_{k=0}^{n-1}\abs{a_k}$.
 
 ::: pf
 
@@ -35,11 +39,11 @@ On $\abs{z}=R\geq1$, $\abs{Q(z)}\leq\sum_{k<n}\abs{a_k}R^k\leq CR^{n-1}<\abs{a_n
 :::
 
 ::: pf-step
-$P_n$ has exactly $n$ zeros in $\CC$.
+$P$ has exactly $n$ zeros in $\CC$, so, since $n>0$, it has a zero.
 
 ::: pf-proof
-For each $R$ as in step [](#bound){.pf-ref}, Rouché's theorem shows that $P_n=a_nz^n+Q$ has as many zeros in $\abs{z}<R$ as $a_nz^n$, namely $n$, and $P_n$ has no zero on $\abs{z}=R$.
-Every zero of $P_n$ lies in $\abs{z}<R$ for $R$ large enough, so $P_n$ has exactly $n$ zeros in $\CC$.
+For each $R$ as in step [](#bound){.pf-ref}, Rouché's theorem shows that $P=a_nz^n+Q$ has as many zeros in $\abs{z}<R$ as $a_nz^n$, namely $n$, and $P$ has no zero on $\abs{z}=R$.
+Every zero of $P$ lies in $\abs{z}<R$ for $R$ large enough, so $P$ has exactly $n$ zeros in $\CC$.
 :::
 
 :::
