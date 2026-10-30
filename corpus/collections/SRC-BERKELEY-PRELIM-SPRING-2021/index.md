@@ -16,7 +16,7 @@ source:
   institution: berkeley
   area: prelim
   problems:
-  - P-BKS21-1A
+  - P-BKF11-1A
   - P-BKF10-1A
   - P-BKF10-5A
   - P-BKF10-7B

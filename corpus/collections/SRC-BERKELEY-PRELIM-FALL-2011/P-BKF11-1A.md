@@ -5,7 +5,8 @@ kind: problem
 title: Volume of the intersection of two perpendicular unit cylinders
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:
