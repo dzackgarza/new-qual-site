@@ -313,7 +313,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-TOPOLOGY-PHD-F08
   - [x] SRC-TOPOLOGY-PHD-F95
   - [x] SRC-TOPOLOGY-SEPARATION-COUNTABILITY-REVIEW
-  - [ ] SRC-UCI-MATH220C-2013-HW3
+  - [x] SRC-UCI-MATH220C-2013-HW3
   - [ ] SRC-UCI-MATH220C-SPRING-2018-HW5
   - [ ] SRC-UCLA-BASIC-FALL-2001
   - [ ] SRC-UCLA-BASIC-FALL-2002
