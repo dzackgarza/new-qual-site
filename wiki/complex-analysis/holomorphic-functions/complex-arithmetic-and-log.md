@@ -32,30 +32,16 @@ Since $\CC$ is algebraically closed, every polynomial in $\CC[x]$ factors into l
 
 ## The logarithm
 
-::: {.fact title="Complex log"}
-For $z = re^{i\theta}\neq 0$, the angle $\theta$ has the form $\Theta + 2k\pi$ with $\Theta = \Arg z\in(-\pi,\pi]$.
-The principal logarithm and principal powers are
-$$
-\log(z) = \ln\abs{z} + i\Arg(z), \qquad z^c \coloneqq e^{c\log(z)},
-$$
-and $\ln r + i\theta$ is a value of $\log(re^{i\theta})$ for every choice of $\theta$.
-
-:::
-
-::: {.fact}
-For $f$ holomorphic with values in $\CC\sm(-\infty, 0]$, $f^{1/n} \coloneqq e^{{1\over n}\log f}$ with the principal branch of $\log$ is a holomorphic $n$th root of $f$.
-
-:::
-
-The multivalued formula defines a holomorphic function only on a domain that admits a continuous choice of argument.
-On the slit plane $\CC\sm(-\infty,0]$, the choice $-\pi<\arg z<\pi$ gives the principal branch, and every simply connected domain not containing $0$ admits a holomorphic logarithm.
-Once a branch of $\log$ is fixed, $z^\alpha\coloneqq e^{\alpha\log z}$, and a different branch of $\log$ multiplies $z^\alpha$ by $e^{2\pi i k\alpha}$ for some $k\in\ZZ$.
-
-[[PR-MWUJS]]
-
 [[D-4CSPM]]
 
 [[D-T6INB]]
+
+::: {.fact}
+For $f$ holomorphic with values in $\CC\sm(-\infty, 0]$, $f^{1/n} \coloneqq e^{{1\over n}\Log f}$ with the principal branch $\Log$ is a holomorphic $n$th root of $f$.
+
+:::
+
+[[PR-MWUJS]]
 
 For a nonvanishing holomorphic function $f$ on a domain $\Omega$, a holomorphic logarithm $g$ of $f$ satisfies $g'=f'/f$, so $\int_\gamma f'/f = 0$ for every closed curve $\gamma$ in $\Omega$.
 Conversely, if $\int_\gamma f'/f=0$ for every closed curve $\gamma$ in $\Omega$, then $f'/f$ has a primitive $g$, and adjusting $g$ by a constant gives $e^g = f$.
