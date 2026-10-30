@@ -80,7 +80,7 @@ Please cross out this problem if you do not wish it graded
 
 <table><tr><td>Problem 1A. Score:</td></tr></table>
 
-Let a(n) be the number of ways that Harry Potter can buy a new broomstick valued at n knuts using bronze knuts, silver sickles worth 29 knuts, and gold galleons worth 17 sickles. Find $\textstyle \sum _ { n } a ( n ) z ^ { n }$ and lim $_ { \cdot n \to \infty } a ( n ) / n ^ { 2 }$
+Let a(n) be the number of ways that Harry Potter can buy a new broomstick valued at n knuts using bronze knuts, silver sickles worth 29 knuts, and gold galleons worth 17 sickles. Find $\textstyle \sum _ { n } a ( n ) z ^ { n }$ and $\lim _ { n \to \infty } a ( n ) / n ^ { 2 }$.
 
 ## Solution:
 
@@ -118,7 +118,7 @@ Please cross out this problem if you do not wish it graded
 
 <table><tr><td>Problem 3A. Score:</td></tr></table>
 
-Suppose that f is a twice-differentiable real-valued function on the real line such that $| f ( x ) | \leq$ 1 and $| f ^ { \prime \prime } ( x ) | \le 1$ for all x. Find, with proof, a constant b such that $| f ^ { \prime } ( x ) | < b$ for all x.
+Suppose that f is a twice-differentiable real-valued function on the real line such that $| f ( x ) | \leq 1$ and $| f ^ { \prime \prime } ( x ) | \le 1$ for all x. Find, with proof, a constant b such that $| f ^ { \prime } ( x ) | < b$ for all x.
 
 Solution:
 
@@ -168,7 +168,7 @@ Please cross out this problem if you do not wish it graded
 
 Score:
 
-Find a basis of the intersection of the subspace of R4 spanned by (1, 1, 0, 0), (0, 1, 1, 0), (0, 0, 1, 1) and the subspace spanned by (1, 0, t, 0), (0, 1, 0, t), where t is given.
+Find a basis of the intersection of the subspace of $\mathbb{R}^4$ spanned by (1, 1, 0, 0), (0, 1, 1, 0), (0, 0, 1, 1) and the subspace spanned by (1, 0, t, 0), (0, 1, 0, t), where t is given.
 
 Solution:
 
@@ -176,7 +176,7 @@ Please cross out this problem if you do not wish it graded
 
 <table><tr><td>Problem 8A. Score:</td></tr></table>
 
-Let X be a totally ordered set, (i.e. equipped with a non-reflexive, transitive binary relation < such that for every $x \neq y ,$ , either $x < y$ or $y < x )$ . Let L(X) denote the set of subsets $S \subseteq X$ with the property that for all $y \in S$ and $x < y , x \in S$ . Find, with proof:
+Let X be a totally ordered set, (i.e. equipped with a non-reflexive, transitive binary relation < such that for every $x \neq y$, either $x < y$ or $y < x$) . Let L(X) denote the set of subsets $S \subseteq X$ with the property that for all $y \in S$ and $x < y , x \in S$ . Find, with proof:
 
 (a) a countably infinite totally ordered set X for which L(X) has the smallest possible cardinality;
 
@@ -236,7 +236,7 @@ Please cross out this problem if you do not wish it graded
 
 <table><tr><td>Problem 3B. Score:</td></tr></table>
 
-Let $f : [ 0 , 1 ] \times [ 0 , 1 ] \to \mathbb { R }$ be continuous and assume that for all $x \in [ 0 , 1 ]$ there is a unique $y _ { x }$ such that $f ( x , y _ { x } ) = \operatorname* { m a x } \{ f ( x , y ) ; y \in [ 0 , 1 ] \}$ . Let $g ( x ) = y _ { x }$ . Show that $g : [ 0 , 1 ]  [ 0 , 1 ]$ is continuous.
+Let $f : [ 0 , 1 ] \times [ 0 , 1 ] \to \mathbb { R }$ be continuous and assume that for all $x \in [ 0 , 1 ]$ there is a unique $y _ { x }$ such that $f ( x , y _ { x } ) = \operatorname* { m a x } \{ f ( x , y ) ; y \in [ 0 , 1 ] \}$ . Let $g ( x ) = y _ { x }$ . Show that $g : [ 0 , 1 ] \to [ 0 , 1 ]$ is continuous.
 
 ## Solution:
 
@@ -258,7 +258,7 @@ Please cross out this problem if you do not wish it graded
 
 Score:
 
-Let $f$ be a doubly-periodic meromorphic function: $f ( z + 1 ) = f ( z ) = f ( z + i )$ for all $z \in \mathbf { C }$ Let $z _ { a }$ be the zeroes of $f$ inside the unit square 0 < Rez, Imz < 1, wb be its poles inside the square, and $k _ { a }$ and $l _ { b }$ be respective multiplicities. Assuming that f has no zeroes or poles on the boundary of the square, prove that
+Let $f$ be a doubly-periodic meromorphic function: $f ( z + 1 ) = f ( z ) = f ( z + i )$ for all $z \in \mathbf { C }$. Let $z _ { a }$ be the zeroes of $f$ inside the unit square $0 < \operatorname{Re} z, \operatorname{Im} z < 1$, $w_b$ be its poles inside the square, and $k _ { a }$ and $l _ { b }$ be respective multiplicities. Assuming that f has no zeroes or poles on the boundary of the square, prove that
 
 $$
 \sum _ { a } k _ { a } z _ { a } - \sum _ { b } l _ { b } w _ { b } \in \mathbb { Z } [ i ] ,
@@ -296,7 +296,7 @@ Please cross out this problem if you do not wish it graded
 
 Score:
 
-Let n be a fixed positive integer, and define two n by n real symmetric matrices A and B to be equivalent if there is a non-singular real matrix C with $\dot { C } A C ^ { T } = B$ (where $C ^ { T }$ is the transpose of C). How many equivalence classes are there?
+Let n be a fixed positive integer, and define two n by n real symmetric matrices A and B to be equivalent if there is a non-singular real matrix C with $C A C ^ { T } = B$ (where $C ^ { T }$ is the transpose of C). How many equivalence classes are there?
 
 ## Solution:
 
@@ -316,6 +316,8 @@ Please cross out this problem if you do not wish it graded
 
 Score:
 
-How many roots does the polynomial $x ^ { 1 0 0 0 0 0 } { - 1 }$ have in the finite field $\mathbb { F } _ { 6 5 5 3 7 } ?$ $( 6 5 5 3 7 = 2 ^ { 1 6 } + 1$ is a prime.)
+How many roots does the polynomial $x ^ { 1 0 0 0 0 0 } - 1$ have in the finite field $\mathbb { F } _ { 6 5 5 3 7 }$? $( 6 5 5 3 7 = 2 ^ { 1 6 } + 1$ is a prime.)
 
 Solution.
+
+<!-- MinerU Flash extraction (2026-10-31). MinerU Flash garbled the limit in #1A, the bound in #3A, the arrow in #3B, the square and w_b in #5B, R^4 in #7A, the matrix product in #7B, the punctuation in #8A, and the polynomial in #9B; those locations were transcribed from a render of the problem pages. -->
