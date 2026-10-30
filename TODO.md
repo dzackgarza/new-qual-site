@@ -615,6 +615,22 @@ mathematical correction under its own node, not under copy policy.
     - [ ] CARD-04: T-XDMK2 and T-3KCD6 are both "Cauchy's theorem"; merge and repoint.
     **Acceptance:** each item read and repaired.
 
+  Round 5 (revision `fe84046a76`, collections) injected the node below; `audited-deployment`
+  needs it.
+  - **`ad5-collections`**. **Needs:** none.
+    - [ ] SRC-BERKELEY-PRELIM-SPRING-2021 9B lists P-BKS11-6B ($x^4+x+2011$); the 2021 paper
+      asks $x^4+x+2021$. Give 9B its own card.
+    - [ ] SRC-UGA-PRELIM-FALL-2007 omits paper Problem 6; list P-F04T5 between P-5YTY5 and
+      P-F07EX and fix the remark's problem count.
+    - [ ] P-3AEDF: the Fall 2016 paper assumes $C^2$, the card (from Tie's list) $C^3$; keep
+      the weaker hypothesis on the card and title (CARD-04).
+    - [ ] P-TKF72: the limit is over $R$, not $z$, and $R$ names two radii; follow the paper.
+    - [ ] P-AEWN6 part (1) lacks "Let"; P-57CAX part (2) has "Let Let".
+    - [ ] SRC-TEXT-FOL99: P-RVL3K part (a) is not Folland 6.7 (6.7 assumes
+      $f \in L^p \cap L^\infty$ on any measure space); drop that appearance.
+    - [ ] SRC-TEXT-SS05: E-L3F4O asks more than SS III 1.1; locator "1.1 as part".
+    **Acceptance:** each item read and repaired.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
