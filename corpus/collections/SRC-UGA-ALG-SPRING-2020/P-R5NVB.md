@@ -25,7 +25,7 @@ A=\left[\begin{array}{ccc}
 2 & 0 & 0 \\
 4 & 6 & 1 \\
 -16 & -16 & -2
-\end{array}\right] \in M_{3}(\mathrm{C})
+\end{array}\right] \in M_{3}(\CC)
 .$$
 
 a.
