@@ -6,7 +6,8 @@ title: Odd univalent function $\sqrt{f(z^2)}$ from a normalized univalent $f$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
@@ -31,7 +32,7 @@ audit:
 ---
 
 ::: {.problem}
-If is a univalent (1-1 analytic) function with domain the unit disc such that $f(z) = z + \sum_{n=2}^{\infty} a_n z^n$, then prove that
+If $f$ is a univalent (1-1 analytic) function with domain the unit disc such that $f(z) = z + \sum_{n=2}^{\infty} a_n z^n$, then prove that
 
 $$
 g(z) = \sqrt{f(z^2)}

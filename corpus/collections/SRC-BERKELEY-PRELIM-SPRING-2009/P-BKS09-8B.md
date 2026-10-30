@@ -6,7 +6,8 @@ title: Centers of nonabelian groups and $p$-groups; groups of order $p^2$ are ab
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -24,12 +25,13 @@ audit:
 ---
 
 ::: {.problem}
-1. Let $G$ be a non-abelian finite group.
-   Show that $G/Z(G)$ is not cyclic, where $Z(G)$ is the center of $G$.
 
-2. If $\cardinality{G} = p^{n}$, with $p$ prime and $n > 0$, show that $Z(G)$ is not trivial.
+(a) Let $G$ be a non-abelian finite group.
+Show that $G/Z(G)$ is not cyclic, where $Z(G)$ is the center of $G$.
 
-3. If $\cardinality{G} = p^{2}$, show that $G$ is abelian.
+(b) If $\cardinality{G} = p^{n}$, with $p$ prime and $n > 0$, show that $Z(G)$ is not trivial.
+
+(c) If $\cardinality{G} = p^{2}$, show that $G$ is abelian.
 :::
 
 ::: {.solution}
@@ -70,7 +72,7 @@ Thus every pair of elements of $G$ commutes.
 If $G$ is nonabelian, then $G/Z(G)$ is not cyclic.
 
 ::: pf-proof
-This is the contrapositive of step [](#cyclic-quotient-abelian){.pf-ref}, and proves part 1.
+This is the contrapositive of step [](#cyclic-quotient-abelian){.pf-ref}, and proves part (a).
 :::
 
 :::
@@ -117,7 +119,7 @@ this positive integer is divisible by $p$, hence
 $$
 \abs{Z(G)}\geq p>1.
 $$
-This proves part 2.
+This proves part (b).
 :::
 
 :::
@@ -142,14 +144,14 @@ $$
 \abs{G/Z(G)}=p.
 $$
 Every group of prime order is cyclic, so $G/Z(G)$ is cyclic. Step [](#cyclic-quotient-abelian){.pf-ref}
-then implies that $G$ is abelian. This proves part 3.
+then implies that $G$ is abelian. This proves part (c).
 :::
 
 :::
 
 ::: pf-qed
-Step [](#nonabelian-noncyclic-quotient){.pf-ref} proves part 1, step [](#center-nontrivial){.pf-ref} proves part 2, and step [](#order-p-squared-abelian){.pf-ref} proves
-part 3.
+Step [](#nonabelian-noncyclic-quotient){.pf-ref} proves part (a), step [](#center-nontrivial){.pf-ref} proves part (b), and step [](#order-p-squared-abelian){.pf-ref} proves
+part (c).
 :::
 
 :::

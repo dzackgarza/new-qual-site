@@ -6,7 +6,8 @@ title: Evaluation of $\int_0^\pi d\theta/(a+\cos\theta)$ by residues
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

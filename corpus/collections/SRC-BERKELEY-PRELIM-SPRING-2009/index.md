@@ -9,8 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
-provenance:
-- assets/attachments/s09solutions.pdf
+provenance: []
 source:
   source_kind: university-exam
   institution: berkeley

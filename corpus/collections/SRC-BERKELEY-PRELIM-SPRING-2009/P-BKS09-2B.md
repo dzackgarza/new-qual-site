@@ -6,7 +6,8 @@ title: $BA-AB=A$ forces $A$ nilpotent in characteristic zero
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Lower bound $\operatorname{lcm}(1,\dots,2m+1)\ge 2^{2m}$ via $\int_0^1 x^
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Courant--Fischer min-max characterization of eigenvalues
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

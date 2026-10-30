@@ -6,7 +6,8 @@ title: Asymptotics of the Newtonian potential of a compactly supported function
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

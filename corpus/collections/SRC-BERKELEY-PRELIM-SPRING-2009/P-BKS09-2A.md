@@ -6,7 +6,8 @@ title: Real matrices with $X^2=-I$ have even size
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

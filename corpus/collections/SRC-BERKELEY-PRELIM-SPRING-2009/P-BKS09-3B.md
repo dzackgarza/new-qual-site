@@ -6,7 +6,8 @@ title: Counting roots of $z^4-5z^3+z-2$ in a disk
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

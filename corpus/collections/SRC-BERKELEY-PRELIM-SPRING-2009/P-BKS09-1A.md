@@ -6,7 +6,8 @@ title: Limit of $\alpha\int_0^1 x^{\alpha-1}f(x)\,dx$ as $\alpha\to 0^+$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

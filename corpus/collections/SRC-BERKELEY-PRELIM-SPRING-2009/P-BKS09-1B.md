@@ -6,7 +6,8 @@ title: Higher derivative test for local extrema
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

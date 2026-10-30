@@ -6,7 +6,8 @@ title: Dimension of the centralizer of a $2\times 2$ complex matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

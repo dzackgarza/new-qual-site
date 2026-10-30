@@ -6,7 +6,8 @@ title: Counting commuting tuples in a finite group via conjugation orbits
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
