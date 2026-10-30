@@ -23,13 +23,8 @@ $$
 is a [[D-TM4TE|biholomorphism]], with inverse $w\mapsto e^w$.
 :::
 
-::: {.proof}
-For $z=re^{i\theta}$ with $0<r<1$ and $0<\theta<\pi$, $\Log z=\ln r+i\theta$ with $\ln r<0$.
-Since $r\mapsto\ln r$ is a bijection $(0,1)\to(-\infty,0)$, $F$ is a bijection onto the half-strip, and $e^{\ln r+i\theta}=re^{i\theta}$ gives the inverse, which is holomorphic.
-:::
-
 ::: {.example}
-The same computation, with $\ln r$ ranging over $(-\infty,0)$ or $(0,\infty)$ and $\theta$ over $(0,\pi)$ or $(-\pi,0)$, shows that $\Log$ maps
+Since $\Log(re^{i\theta})=\ln r+i\theta$, with $\ln r$ ranging over $(-\infty,0)$ or $(0,\infty)$ and $\theta$ over $(0,\pi)$ or $(-\pi,0)$, $\Log$ maps
 
 - $\theset{\abs{z}<1,\ \Im z>0}$ onto the half-strip $\theset{\Re w<0,\ 0<\Im w<\pi}$ in the second quadrant,
 - $\theset{\abs{z}<1,\ \Im z<0}$ onto the half-strip $\theset{\Re w<0,\ -\pi<\Im w<0}$ in the third quadrant,

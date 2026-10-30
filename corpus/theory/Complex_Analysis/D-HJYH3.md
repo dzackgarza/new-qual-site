@@ -28,17 +28,3 @@ $$
 $$
 where the product is over all prime numbers $p$ and converges as the limit of its partial products over $p\le N$.
 :::
-
-::: {.proof}
-Let $\sigma\coloneqq\operatorname{Re}s>1$.
-For each prime $p$, $\abs{p^{-s}}=p^{-\sigma}<1$, so $\frac{1}{1-p^{-s}}=\sum_{k\ge0}p^{-ks}$, an absolutely convergent series.
-Multiplying these finitely many series for the primes $p\le N$ and using unique factorization in $\ZZ$,
-$$
-\prod_{p\le N}\frac{1}{1-p^{-s}}=\sum_{n\in S_N}n^{-s},
-$$
-where $S_N$ is the set of positive integers all of whose prime factors are at most $N$.
-Every $n\le N$ lies in $S_N$, so
-$$
-\abs{\zeta(s)-\prod_{p\le N}\frac{1}{1-p^{-s}}}\le\sum_{n>N}n^{-\sigma}\to0\qquad(N\to\infty).
-$$
-:::

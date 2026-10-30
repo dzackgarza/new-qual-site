@@ -22,22 +22,6 @@ $$
 is a [[D-TM4TE|biholomorphism]] from the upper half-disc onto the first quadrant, with inverse $f^{-1}(w)=\frac{w-1}{w+1}$.
 :::
 
-::: {.proof}
-For $z=x+iy$ with $x^2+y^2<1$ and $y>0$, multiplying numerator and denominator by $1-\bar z$ gives
-$$
-f(z)=\frac{(1+z)(1-\bar z)}{\abs{1-z}^2}=\frac{1-(x^2+y^2)}{(1-x)^2+y^2}+i\,\frac{2y}{(1-x)^2+y^2},
-$$
-and both parts are positive, so $f(z)$ lies in the first quadrant.
-
-For $w=u+iv$ with $u,v>0$, the point $w$ is closer to $1$ than to $-1$ because $u>0$, so $\abs{\frac{w-1}{w+1}}<1$.
-Moreover
-$$
-\frac{w-1}{w+1}=\frac{(u-1+iv)(u+1-iv)}{(u+1)^2+v^2}=\frac{u^2+v^2-1}{(u+1)^2+v^2}+i\,\frac{2v}{(u+1)^2+v^2},
-$$
-whose imaginary part is positive.
-So $w\mapsto\frac{w-1}{w+1}$ maps the first quadrant into the upper half-disc, and solving $w=\frac{1+z}{1-z}$ for $z$ shows that the two maps are mutually inverse.
-:::
-
 ::: {.remark}
 On the upper unit semicircle, for $z=e^{i\theta}$ with $0<\theta<\pi$,
 $$

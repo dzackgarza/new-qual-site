@@ -27,16 +27,6 @@ Let $f(z)=\sum_{k\in\ZZ}c_k(z-z_0)^k$ be the Laurent expansion of $f$ on $D_r(z_
 Then $z_0$ is an essential singularity of $f$ if and only if $c_k\neq0$ for infinitely many $k<0$, that is, if and only if the principal part $\sum_{k<0}c_k(z-z_0)^k$ has infinitely many nonzero terms.
 :::
 
-::: {.proof}
-By the proposition on [[D-IWIA5]], $z_0$ is removable exactly when $c_k=0$ for all $k<0$, and a pole exactly when $c_k\neq0$ for some but only finitely many $k<0$.
-The remaining case is that $c_k\neq0$ for infinitely many $k<0$.
-:::
-
 ::: {.proposition}
 The isolated singularity $z_0$ is essential if and only if $\lim_{z\to z_0}f(z)$ does not exist in $\CC$ and $\abs{f(z)}\not\to\infty$ as $z\to z_0$.
-:::
-
-::: {.proof}
-If $z_0$ is removable, $f$ agrees near $z_0$ with a holomorphic $g$, so $f(z)\to g(z_0)\in\CC$; if $z_0$ is a pole, $\abs{f(z)}\to\infty$ by the proposition on [[D-AUD6K]].
-Conversely, if $f(z)$ has a limit in $\CC$, then $f$ is bounded near $z_0$ and $z_0$ is removable by [[T-ZZJDP|Riemann's removable singularity theorem]]; if $\abs{f(z)}\to\infty$, then $z_0$ is a pole by the proposition on [[D-AUD6K]].
 :::

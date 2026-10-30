@@ -22,18 +22,6 @@ $$
 is a [[D-TM4TE|biholomorphism]].
 :::
 
-::: {.proof}
-For $z=re^{i\theta}$ with $0<r<1$ and $0<\theta<\pi$,
-$$
-F(z)=-\frac12\Big(r+\frac1r\Big)\cos\theta+\frac i2\Big(\frac1r-r\Big)\sin\theta,
-$$
-so $\Im F(z)>0$ and $F$ is a holomorphic map into $\HH$.
-Given $w\in\HH$, the equation $F(z)=w$ is $z^2+2wz+1=0$.
-Its two roots have product $1$, and neither lies on the unit circle or the real axis, because $F$ maps the unit circle into $[-1,1]$ and $\RR\sm\theset{0}$ into $\RR$.
-So exactly one root $z$ satisfies $\abs{z}<1$, and it satisfies $\Im z>0$ because $\Im F(z)$ has the sign of $\sin\theta$ when $\abs{z}<1$.
-Hence $F$ is bijective, and a bijective holomorphic map has a holomorphic inverse.
-:::
-
 ::: {.remark}
 The map $z\mapsto\frac12(z+z^{-1})$ is the Joukowski map; $F$ is its negative.
 On the boundary of the half-disc, $F$ maps the upper unit semicircle onto $[-1,1]$, with $F(1)=-1$, $F(i)=0$, $F(-1)=1$, and it maps the segments $(0,1)$ and $(-1,0)$ onto $(-\infty,-1)$ and $(1,\infty)$ respectively.

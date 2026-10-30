@@ -27,13 +27,6 @@ $$
 $$
 :::
 
-::: {.proof}
-By the Cauchy integral formula for derivatives, with $\gamma$ parametrized by $z=z_0+Re^{i\theta}$,
-$$
-\abs{f^{(n)}(z_0)}=\abs{\frac{n!}{2\pi i}\int_\gamma\frac{f(z)}{(z-z_0)^{n+1}}\dz}\le\frac{n!}{2\pi}\int_0^{2\pi}\frac{M}{R^{n+1}}R\dtheta=\frac{n!\,M}{R^n}.
-$$
-:::
-
 ::: {.remark title="Variations"}
 Dividing by $n!$ gives the form for Taylor coefficients: the $n$th Taylor coefficient $f^{(n)}(z_0)/n!$ of $f$ at $z_0$ has modulus at most $R^{-n}\max_{\abs{z-z_0}=R}\abs{f(z)}$.
 :::

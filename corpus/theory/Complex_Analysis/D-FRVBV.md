@@ -37,20 +37,6 @@ $$
 so $T$ is [[D-TM4TE|conformal]] there.
 :::
 
-::: {.proof}
-(i) For $cz+d\neq0$, $-c\,T(z)+a=(ad-bc)/(cz+d)\neq0$, and
-$$
-\frac{d\,T(z)-b}{-c\,T(z)+a}=\frac{d(az+b)-b(cz+d)}{-c(az+b)+a(cz+d)}=\frac{(ad-bc)z}{ad-bc}=z.
-$$
-The map $w\mapsto(dw-b)/(-cw+a)$ has coefficients with $da-bc\neq0$, and the same computation shows that $T$ inverts it on $\{w:-cw+a\neq0\}$.
-
-(ii) By the quotient rule,
-$$
-T'(z)=\frac{a(cz+d)-c(az+b)}{(cz+d)^2}=\frac{ad-bc}{(cz+d)^2},
-$$
-which is nonzero because $ad-bc\neq0$.
-:::
-
 ::: {.remark}
 The condition $ad-bc\neq0$ says that the vectors $(a,b)$ and $(c,d)$ are linearly independent.
 In particular $(c,d)\neq(0,0)$, so the domain $\{z\in\CC:cz+d\neq0\}$ is $\CC$ minus at most one point, and $T$ is not constant there.

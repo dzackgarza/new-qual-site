@@ -31,9 +31,3 @@ f(z_0+h)-f(z_0)=\alpha h+h\,\psi(h).
 $$
 In this case $\alpha=f'(z_0)$, and $f$ is continuous at $z_0$.
 :::
-
-::: {.proof}
-If $f'(z_0)$ exists, put $\alpha\coloneqq f'(z_0)$, $\psi(0)\coloneqq0$, and $\psi(h)\coloneqq\frac{f(z_0+h)-f(z_0)}{h}-\alpha$ for $h\neq0$; then $\psi(h)\to0$ and the identity holds.
-Conversely, dividing the identity by $h\neq0$ gives $\frac{f(z_0+h)-f(z_0)}{h}=\alpha+\psi(h)\to\alpha$, so $f'(z_0)$ exists and equals $\alpha$.
-Finally $f(z_0+h)-f(z_0)=h\big(\alpha+\psi(h)\big)\to0$ as $h\to0$.
-:::

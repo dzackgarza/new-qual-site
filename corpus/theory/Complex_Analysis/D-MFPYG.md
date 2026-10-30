@@ -42,22 +42,3 @@ Let $a\in\DD$.
 
 (v) $\psi_a(\lambda z)=\lambda\,\psi_{\bar\lambda a}(z)$ for every $\lambda\in\CC$ with $\abs\lambda=1$.
 :::
-
-::: {.proof}
-Since $\abs{a}<1$ and $\abs{z}\le1$, $\abs{\bar a z}<1$, so $\psi_a$ is holomorphic on the disc $\abs{z}<1/\abs{a}$, which contains $\overline{\DD}$.
-
-(i) Expanding, $\abs{1-\bar a z}^2-\abs{a-z}^2=1+\abs{a}^2\abs{z}^2-\abs{a}^2-\abs{z}^2=(1-\abs{a}^2)(1-\abs{z}^2)$; divide by $\abs{1-\bar a z}^2$.
-The right side is positive for $\abs{z}<1$ and zero for $\abs{z}=1$.
-
-(ii) For $\abs{z}\le1$,
-$$
-\psi_a(\psi_a(z))=\frac{a(1-\bar a z)-(a-z)}{(1-\bar a z)-\bar a(a-z)}=\frac{z(1-\abs{a}^2)}{1-\abs{a}^2}=z.
-$$
-With (i), $\psi_a\colon\DD\to\DD$ is holomorphic with holomorphic inverse $\psi_a$, and $\psi_a(0)=a$, $\psi_a(a)=0$.
-
-(iii) By the quotient rule, $\psi_a'(z)=-\frac{1-\abs{a}^2}{(1-\bar a z)^2}$; divide by the expression for $1-\abs{\psi_a(z)}^2$ in (i).
-
-(iv) Each factor is holomorphic near $\overline{\DD}$, has modulus less than $1$ on $\DD$ and equal to $1$ on $S^1$ by (i), and vanishes on $\overline{\DD}$ only at its own $a_k$; multiply, using $\abs{\lambda}=1$.
-
-(v) Since $\lambda\bar\lambda=1$, $\lambda\,\psi_{\bar\lambda a}(z)=\lambda\,\frac{\bar\lambda a-z}{1-\lambda\bar az}=\frac{a-\lambda z}{1-\bar a\lambda z}=\psi_a(\lambda z)$.
-:::

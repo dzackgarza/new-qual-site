@@ -21,7 +21,3 @@ $$
 \Res_{z=z_0}f = \lim_{z\to z_0} (z-z_0) f(z).
 $$
 :::
-
-::: {.proof}
-Near $z_0$, $f(z)=\frac{a_{-1}}{z-z_0}+G(z)$ with $G$ holomorphic at $z_0$, so $(z-z_0)f(z)=a_{-1}+(z-z_0)G(z)\to a_{-1}=\Res_{z=z_0}f$.
-:::

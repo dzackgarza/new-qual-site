@@ -21,15 +21,6 @@ Then for every punctured neighborhood $V=D_\varepsilon(z_0)\sm\theset{z_0}\subse
 Equivalently, for every $w_0\in\CC$ there is a sequence $z_n\to z_0$, $z_n\neq z_0$, with $f(z_n)\to w_0$.
 :::
 
-::: {.proof}
-Suppose instead that for some $\varepsilon>0$ and some $w\in\CC$ and $R>0$, the disc $D_R(w)$ does not meet $f(V)$, where $V=D_\varepsilon(z_0)\sm\theset{z_0}$.
-Then $g(z)\coloneqq\frac{1}{f(z)-w}$ is holomorphic on $V$ and $\abs{g}\le1/R$, so by Riemann's removable singularity theorem $g$ extends holomorphically to $D_\varepsilon(z_0)$.
-If $g(z_0)\neq0$, then $f=w+1/g$ extends holomorphically over $z_0$; if $g(z_0)=0$, then since $g$ is not identically zero, $f=w+1/g$ has a pole at $z_0$.
-Either case contradicts that $z_0$ is essential.
-
-![](../../assets/Complex_Analysis/070_Omitted Values/figures/2022-01-05_05-28-04.png)
-:::
-
 ::: {.remark title="Variations"}
 A nonconstant [[D-E7A5W|entire]] function $f$ has dense image $f(\CC)$.
 If $f$ is a polynomial, it is surjective by the fundamental theorem of algebra.

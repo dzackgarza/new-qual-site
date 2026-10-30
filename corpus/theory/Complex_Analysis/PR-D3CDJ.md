@@ -25,8 +25,3 @@ $$
 \Res_{z=\infty}f(z) = \Res_{z=0} g(z).
 $$
 :::
-
-::: {.proof}
-For $0<\abs{w}<1/R$, $g(w)=-w^{-2}\sum_{k\in\ZZ}a_kw^{-k}=-\sum_{k\in\ZZ}a_kw^{-k-2}$.
-The coefficient of $w^{-1}$ comes from $k=-1$ and equals $-a_{-1}$, so $\Res_{w=0}g(w)=-a_{-1}=\Res_{z=\infty}f(z)$.
-:::

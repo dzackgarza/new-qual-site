@@ -36,15 +36,6 @@ Then:
 (c) $z_0$ is an [[D-VKP6N|essential singularity]] if and only if $v_{z_0}(f)=-\infty$.
 :::
 
-::: {.proof}
-(a) If $f=g$ near $z_0$ with $g$ holomorphic on a disc about $z_0$, the Taylor series of $g$ is a Laurent expansion of $f$, so by uniqueness of Laurent coefficients $c_k=0$ for $k<0$.
-Conversely, if $c_k=0$ for $k<0$, the power series $\sum_{k\ge0}c_k(z-z_0)^k$ converges on $D_r(z_0)$ and agrees with $f$ off $z_0$.
-
-(b) This is the equivalence of a pole of order $n$ with a Laurent expansion $\sum_{k\ge-n}c_k(z-z_0)^k$, $c_{-n}\neq0$, proved in [[D-AUD6K]].
-
-(c) An essential singularity is one that is neither removable nor a pole; by (a) and (b) this happens exactly when $c_k\neq0$ for infinitely many $k<0$, that is, when $v_{z_0}(f)=-\infty$.
-:::
-
 ::: {.example}
 The function $\sin(1/z)$ has an essential singularity at $0$.
 Its Laurent expansion on $\CC\setminus\{0\}$ is

@@ -24,13 +24,8 @@ is a [[D-TM4TE|biholomorphism]], with inverse $w\mapsto e^w$.
 It maps each circle $\theset{\abs{z}=R}$, with the point $-R$ removed, onto the vertical segment $\theset{\ln R+it\st-\pi<t<\pi}$, and each ray $\theset{re^{i\theta}\st r>0}$ with $-\pi<\theta<\pi$ onto the horizontal line $\theset{t+i\theta\st t\in\RR}$.
 :::
 
-::: {.proof}
-For $z=re^{i\theta}$ with $r>0$ and $-\pi<\theta<\pi$, $\Log z=\ln r+i\theta$.
-Since $r\mapsto\ln r$ is a bijection $(0,\infty)\to\RR$, $F$ is a bijection onto the strip, it maps $\theset{r=R}$ and $\theset{\theta=\text{const}}$ as stated, and $e^{\ln r+i\theta}=re^{i\theta}$ gives the holomorphic inverse.
-:::
-
 ::: {.example}
-The same computation shows that $w\mapsto e^w$ maps the strip $\theset{w\st\abs{\Im w}<\pi/2}$ biholomorphically onto the right half-plane $\theset{z\st\Re z>0}$.
+Since $e^{x+iy}=e^xe^{iy}$, the map $w\mapsto e^w$ maps the strip $\theset{w\st\abs{\Im w}<\pi/2}$ biholomorphically onto the right half-plane $\theset{z\st\Re z>0}$.
 :::
 
 ::: {.remark}

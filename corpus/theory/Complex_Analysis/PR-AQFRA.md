@@ -38,13 +38,6 @@ Here $z^{\alpha/\pi}=e^{(\alpha/\pi)\Log z}$ uses the principal branch on $\HH$,
 ![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_19-05-03.png)
 :::
 
-::: {.proof}
-For (b), write $z=re^{i\theta}$ with $r>0$ and $\theta\in(0,\pi)$; then $z^{\alpha/\pi}=r^{\alpha/\pi}e^{i\alpha\theta/\pi}$, whose argument $\alpha\theta/\pi$ ranges over $(0,\alpha)$.
-Since $r\mapsto r^{\alpha/\pi}$ is a bijection of $(0,\infty)$ and $\theta\mapsto\alpha\theta/\pi$ is a bijection $(0,\pi)\to(0,\alpha)$, $F$ is a bijection $\HH\to S_\alpha$, and the stated inverse multiplies the argument by $\pi/\alpha$ and raises the modulus to the power $\pi/\alpha$.
-Both maps are holomorphic, since on $S_\alpha$ the chosen argument is a continuous branch of $\arg$.
-Part (a) is the case $\alpha=\pi/n$ of (b), read in the opposite direction: $z\mapsto z^n$ is the inverse $w\mapsto w^{\pi/\alpha}$, and on $\HH$ the principal branch of $w^{1/n}$ is $z\mapsto z^{\alpha/\pi}$.
-:::
-
 ::: {.remark}
 The map $z\mapsto z^{\alpha/\pi}$ of (b) extends continuously to the boundary of $\HH$.
 As $x$ increases from $0$ to $\infty$ along the positive real axis, $x^{\alpha/\pi}$ increases from $0$ to $\infty$ along the positive real axis.

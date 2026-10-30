@@ -39,27 +39,6 @@ The following are equivalent.
 Moreover, $f$ has a pole at $z_0$ if and only if $\abs{f(z)}\to\infty$ as $z\to z_0$.
 :::
 
-::: {.proof}
-(a)$\Rightarrow$(b).
-Since $h(z_0)\neq0$ and $h$ is continuous, shrinking $\rho$ makes $h$ nonvanishing on $D_\rho(z_0)$.
-Then $1/f(z)=(z-z_0)^n\cdot(1/h(z))$ for $0<\abs{z-z_0}<\rho$, and the right side is holomorphic on $D_\rho(z_0)$, vanishes at $z_0$, and has $1/h(z_0)\neq0$.
-
-(b)$\Rightarrow$(a).
-Write $g(z)=(z-z_0)^n k(z)$ with $k$ holomorphic near $z_0$ and $k(z_0)\neq0$; shrinking $\rho$, $k$ is nonvanishing, and $h\coloneqq1/k$ satisfies $f(z)=(z-z_0)^{-n}h(z)$ with $h(z_0)\neq0$.
-
-(a)$\Rightarrow$(c).
-Expand $h(z)=\sum_{j\ge0}b_j(z-z_0)^j$ on $D_\rho(z_0)$ with $b_0=h(z_0)\neq0$.
-Then $f(z)=\sum_{k\ge-n}b_{k+n}(z-z_0)^k$ on $D_\rho(z_0)\setminus\{z_0\}$, and by uniqueness of Laurent coefficients this is the Laurent expansion of $f$, with $c_{-n}=b_0\neq0$.
-
-(c)$\Rightarrow$(a).
-The power series $h(z)\coloneqq\sum_{k\ge-n}c_k(z-z_0)^{k+n}$ converges for $0<\abs{z-z_0}<r$, hence on $D_r(z_0)$, and defines a holomorphic function there with $h(z_0)=c_{-n}\neq0$ and $f(z)=(z-z_0)^{-n}h(z)$.
-
-Finally, if $f$ has a pole of order $n$, then $\abs{f(z)}=\abs{h(z)}/\abs{z-z_0}^n\to\infty$ because $h(z_0)\neq0$.
-Conversely, if $\abs{f(z)}\to\infty$, then $f$ has no zeros on some $D_\rho(z_0)\setminus\{z_0\}$, and $1/f$ is holomorphic and bounded there with $1/f(z)\to0$.
-By [[T-ZZJDP|Riemann's removable singularity theorem]], $g\coloneqq1/f$ with $g(z_0)\coloneqq0$ is holomorphic on $D_\rho(z_0)$.
-It is not identically zero, so $z_0$ is a zero of $g$ of some order $n\ge1$, and (b) holds.
-:::
-
 ::: {.remark title="Variations"}
 A pole may be defined by condition (b) without naming $n$: $f$ has no zeros near $z_0$ and $1/f$, extended by $0$ at $z_0$, is holomorphic.
 The order is then the least integer $n\ge1$ for which $f(z)=(z-z_0)^{-n}h(z)$ near $z_0$ with $h$ holomorphic, without the condition $h(z_0)\neq0$.

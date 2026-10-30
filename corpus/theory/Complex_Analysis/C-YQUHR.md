@@ -23,11 +23,6 @@ $$
 $$
 :::
 
-::: {.proof}
-If $f$ vanishes at a point of $\bd\Omega$, both minima are $0$.
-Otherwise $f$ is nowhere zero on $\overline\Omega$, and the function $1/f$ is holomorphic on $\Omega$ and continuous on $\overline\Omega$, so by the [[C-GM57K|maximum modulus principle]], $\max_{\overline\Omega}\abs{1/f}=\max_{\bd\Omega}\abs{1/f}$.
-:::
-
 ::: {.example}
 The hypothesis that $f$ has no zeros is needed: $f(z)=z$ on $\DD$ has $\min_{\overline\DD}\abs{f}=0$, attained only at the interior point $0$, while $\abs{f}=1$ on $\bd\DD$.
 :::

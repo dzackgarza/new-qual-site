@@ -26,9 +26,3 @@ is a [[D-TM4TE|biholomorphism]] with inverse $w\mapsto -i\Log(w)$, where $\Log$ 
 
 ![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_18-22-45.png)
 :::
-
-::: {.proof}
-For $z=x+iy\in S$, $e^{iz}=e^{-y}e^{ix}$ has modulus $e^{-y}\in(0,1)$ and argument $x\in(-\pi/2,\pi/2)$, so $e^{iz}\in H$, and $-i\Log(e^{iz})=-i(-y+ix)=x+iy=z$.
-Conversely, every $w\in H$ is $w=re^{i\theta}$ with $r\in(0,1)$ and $\theta\in(-\pi/2,\pi/2)$, and $-i\Log(w)=\theta-i\log r$ has real part $\theta\in(-\pi/2,\pi/2)$ and imaginary part $-\log r>0$, so it lies in $S$, and $e^{i(-i\Log w)}=e^{\Log w}=w$.
-Both maps are holomorphic and mutually inverse.
-:::

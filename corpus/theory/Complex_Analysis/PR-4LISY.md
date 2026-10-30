@@ -21,8 +21,3 @@ $$
 \lim_{n\to \infty} \sup_{x\in X}\abs{ \sum_{k\geq n} f_k(x) } = 0.
 $$
 :::
-
-::: {.proof}
-Let $S(x)\coloneqq\sum_{k\ge1}f_k(x)$ and $S_n(x)\coloneqq\sum_{k=1}^nf_k(x)$.
-Then $\sum_{k\ge n}f_k(x)=S(x)-S_{n-1}(x)$, so the displayed condition says exactly that $\sup_{x\in X}\abs{S(x)-S_{n-1}(x)}\to0$, which is uniform convergence of the partial sums $S_n$ to $S$.
-:::

@@ -33,10 +33,3 @@ $$
 dF=\frac{\partial F}{\partial z}\dz+\frac{\partial F}{\partial\bar z}\dzbar.
 $$
 :::
-
-::: {.proof}
-Substituting $dz$ and $d\bar z$, the right side equals
-$$
-\frac12\qty{F_x-iF_y}(dx+i\,dy)+\frac12\qty{F_x+iF_y}(dx-i\,dy)=F_x\dx+F_y\dy=dF.
-$$
-:::
