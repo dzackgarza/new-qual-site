@@ -5,7 +5,8 @@ kind: problem
 title: Uniform convergence of $\sum\sin(x/n^2)$ on bounded intervals
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

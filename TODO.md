@@ -546,7 +546,7 @@ mathematical correction under its own node, not under copy policy.
   - **`ad4-prelim-content`**. **Needs:** none.
     - [x] CARD-04: P-BKS21-2A and P-BKF10-1A state one problem (Spring 2021 reprints Fall 2010
       1A); merge, survivor listed by both collections.
-    - [ ] CARD-04: P-BKS21-3A and P-BKF10-5A; same.
+    - [x] CARD-04: P-BKS21-3A and P-BKF10-5A; same.
     - [ ] CARD-04: P-BKS21-4A and P-BKF10-7B; same.
     - [ ] P-UCLAB06W-09: the paper prints $A = A^t$, the card silently reads $A^{-1} = A^t$; the
       printed statement is false (diag(2,2,1/4)). Transcribe the printed hypothesis and record
