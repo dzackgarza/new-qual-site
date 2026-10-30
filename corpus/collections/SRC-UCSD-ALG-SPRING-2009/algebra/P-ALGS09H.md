@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS09H
 kind: problem
-title: "Radical of the ideal (x^2 - y^3, x - y^2) in C[x,y]"
+title: "Radical of $(x^2 - y^3, x - y^2)$ in $\\CC[x,y]$"
 classification:
   areas:
   - algebra

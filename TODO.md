@@ -398,7 +398,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-ALG-SPRING-2006
   - [x] SRC-UCSD-ALG-SPRING-2007
   - [x] SRC-UCSD-ALG-SPRING-2008
-  - [ ] SRC-UCSD-ALG-SPRING-2009
+  - [x] SRC-UCSD-ALG-SPRING-2009
   - [ ] SRC-UCSD-ALG-SPRING-2011
   - [ ] SRC-UCSD-ALG-SPRING-2012
   - [ ] SRC-UCSD-ALG-SPRING-2013
