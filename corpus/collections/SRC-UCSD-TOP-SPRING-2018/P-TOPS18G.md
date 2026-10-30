@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS18G
 kind: problem
-title: 'Complementary pieces of $S^3$ have isomorphic $H_1$, and $\RP^2$ does not embed in $S^3$'
+title: '$H^1(N)\cong H_1(M)$ for complementary pieces of $S^3$, and $\RP^2$ does not embed in $S^3$'
 classification:
   areas:
   - topology
@@ -17,7 +17,7 @@ review: draft
 
 ::: {.problem}
 Suppose that $S^3 = M \cup_\Sigma N$ is a decomposition of the $3$-sphere into two compact $3$-manifolds, glued along their common boundary surface $\Sigma$.
-Prove that $H_1(N) \cong H_1(M)$, and conclude that $\RP^2$ cannot be embedded in $S^3$.
+Prove that $H^1(N) \cong H_1(M)$, and conclude that $\RP^2$ cannot be embedded in $S^3$.
 :::
 
 ::: {.solution}
@@ -26,10 +26,11 @@ Prove that $H_1(N) \cong H_1(M)$, and conclude that $\RP^2$ cannot be embedded i
 
 ::: {.pf-step #h1-iso}
 In any decomposition $S^3=M\cup_\Sigma N$ as in the problem,
-$$\boxed{H_1(M;\ZZ)\cong H_1(N;\ZZ).}$$
+$$\boxed{H^1(N;\ZZ)\cong H_1(M;\ZZ)},$$
+and $H_1(M;\ZZ)$ is free abelian. By symmetry the same holds with $M$ and $N$ exchanged.
 
 ::: pf-proof
-Alexander duality identifies $H_1(M)$ with $H^1(N)$ and $H_1(N)$ with $H^1(M)$. The universal coefficient theorem gives $H^1(P;\ZZ)\cong\operatorname{Hom}(H_1(P),\ZZ)$ for either side $P$. These identifications imply first that both $H_1(M)$ and $H_1(N)$ are free abelian, and then that they have the same rank, hence are isomorphic.
+The interior of $M$ is $S^3\setminus N$ and is homotopy equivalent to $M$ by a collar of $\partial M$, so Alexander duality for the compact, locally contractible subspace $N\subset S^3$ gives $H_1(M)\cong\widetilde H_1(S^3\setminus N)\cong\widetilde H^{1}(N)=H^1(N)$. The universal coefficient theorem gives $H^1(N;\ZZ)\cong\operatorname{Hom}(H_1(N),\ZZ)$, which is free abelian because $H_1(N)$ is finitely generated.
 :::
 
 :::

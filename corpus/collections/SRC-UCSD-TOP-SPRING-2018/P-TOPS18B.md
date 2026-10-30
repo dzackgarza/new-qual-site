@@ -48,7 +48,7 @@ $$\boxed{H_k(M;\ZZ)\cong\begin{cases}
 \end{cases}}$$
 
 ::: pf-proof
-The only nonzero homology of the overlap is $H_0=H_1=H_2=H_3=\ZZ$. The maps $H_2(S^1\times S^2)\to H_2(A_1)\oplus H_2(A_2)$ are $(1,-1)$ up to orientation conventions, because each boundary inclusion preserves the $S^2$ fiber class (the rotation $R_\theta$ has degree $1$ on $S^2$). Thus its cokernel is $\ZZ$, while exactness at the adjacent $H_1$ term contributes one further free generator to $H_2(M)$; the $H_3$ overlap produces $H_4(M)\cong\ZZ$, and all odd-dimensional homology vanishes. Equivalently, this is the standard homology calculation for an oriented $S^2$-bundle over $S^2$.
+The overlap $S^1\times S^2$ has $H_k\cong\ZZ$ for $k=0,1,2,3$, and each $A_i\simeq S^2$ has $H_k\cong\ZZ$ for $k=0,2$ only. The map $H_2(S^1\times S^2)\to H_2(A_1)\oplus H_2(A_2)$ is $(1,-1)$ up to orientation conventions, because each boundary inclusion carries the $S^2$ fiber class to the generator (the rotation $R_\theta$ has degree $1$ on $S^2$); it is injective with cokernel $\ZZ$. In degree $1$ the overlap term $\ZZ$ maps to $H_1(A_1)\oplus H_1(A_2)=0$, so the connecting map $H_2(M)\to H_1(S^1\times S^2)\cong\ZZ$ is onto. This gives $0\to\ZZ\to H_2(M)\to\ZZ\to0$, hence $H_2(M)\cong\ZZ^2$. Injectivity in degree $2$ and $H_3(A_1)\oplus H_3(A_2)=0$ give $H_3(M)=0$, the isomorphism $H_4(M)\cong H_3(S^1\times S^2)\cong\ZZ$ follows from $H_4(A_i)=H_3(A_i)=0$, and $H_1(M)=0$ because $H_1(A_1)\oplus H_1(A_2)=0$ and $H_0$ of the overlap injects.
 :::
 
 :::

@@ -80,24 +80,6 @@ contributes in degree $5$. The remaining nonzero tensor terms are $H_0(Y)\otimes
 
 :::
 
-::: pf-step
-If the notation $H^*$ in the question was intended literally, the integral cohomology groups are
-$$
-H^i(Y\times\RP^2;\ZZ)\cong
-\begin{cases}
-\ZZ,&i=0,\\
-\ZZ/2,&i=2,5,6,\\
-\ZZ/6,&i=4,\\
-0,&\text{otherwise}.
-\end{cases}
-$$
-
-::: pf-proof
-Apply the universal coefficient theorem for cohomology to the homology groups in step [](#kunneth-computation){.pf-ref}. Since all positive-degree homology is finite, Hom into $\ZZ$ vanishes there and the torsion reappears one degree higher through Ext.
-:::
-
-:::
-
 :::
 
 :::
