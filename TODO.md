@@ -588,7 +588,7 @@ mathematical correction under its own node, not under copy policy.
       P-AGXMISCTSENPONEBUNDLE steps 3, 4 (raw `\PP` visible), 8, D-CRVMOD, T-CRVJINV,
       PR-MORFINCHAR, P-AGXMISCOCONNECTED step 1, PR-IV2INSEP (two), resources exercise list.
       CONTRIBUTING (`XREF-1`) already requires explicit link text; the listed cards now carry it. The bare prose links in the rest of the corpus remain.
-    - [ ] F1, page prose restating a transcluded card: functors-and-topologies, blowups,
+    - [x] F1, page prose restating a transcluded card: functors-and-topologies, blowups,
       affine-or-projective, dimension-and-degree, smooth-and-singular, projective-schemes,
       vanishing-and-duality, families, derived-functors-and-vanishing, toric/criteria,
       toric/affine-computations, the curves-and-surfaces pages, classes-of-morphism,
