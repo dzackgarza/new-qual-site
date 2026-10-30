@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESCA15-4
 kind: problem
-title: 'Three contour integrals'
+title: 'Three contour integrals: $(z+1/z)^4$, $(\sin z/z)^4$ and $e^{\sin z}/(z^3\cos z)$'
 classification:
   areas: [complex-analysis]
   topics: []
