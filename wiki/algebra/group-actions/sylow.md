@@ -32,7 +32,7 @@ For $a>1$, two distinct Sylow $p$-subgroups can intersect nontrivially.
 
 ### The number of Sylow subgroups
 
-[[T-S5T5C]]
+[[T-3X5FF]]
 
 ::: {.remark title="Where the conditions on $n_p$ come from"}
 The equality $n_p = [G : N_G(P)]$ is orbit-stabilizer for the transitive conjugation action of $G$ on $\Syl_p(G)$.

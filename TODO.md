@@ -610,7 +610,7 @@ mathematical correction under its own node, not under copy policy.
       textbook collection or bibliography entry resolves them (CITE-1).
     - [x] Renderer: a citation with several keys (`[@Hat02; @Mun00]`, D-J6XOC, D-Z7I7F)
       renders as unlinked text; each key must link like a single-key citation.
-    - [ ] CARD-04: T-3X5FF and T-S5T5C both state Sylow's third theorem; merge, keep the
+    - [x] CARD-04: T-3X5FF and T-S5T5C both state Sylow's third theorem; merge, keep the
       T-3X5FF proof and the $n_p \le m$ remark, repoint L-WROBY.
     - [ ] CARD-04: T-XDMK2 and T-3KCD6 are both "Cauchy's theorem"; merge and repoint.
     **Acceptance:** each item read and repaired.

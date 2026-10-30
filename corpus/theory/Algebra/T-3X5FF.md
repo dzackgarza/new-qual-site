@@ -9,6 +9,8 @@ classification:
   - algebra
   topics:
   - Groups
+  - Sylow Theory
+  - Centralizers and Normalizers
 relations:
 - kind: uses
   target: T-QYDVH
@@ -28,6 +30,7 @@ n_p\equiv1\pmod p,
 n_p=[G:N_G(P)]
 $$
 for every Sylow $p$-subgroup $P$, where $N_G(P)$ is the [[D-OZ2RR|normalizer]] of $P$.
+In particular $n_p\leq m$.
 :::
 
 ::: {.proof}
