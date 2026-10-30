@@ -425,7 +425,11 @@ mathematical correction under its own node, not under copy policy.
       Example 1); E-79XXG (figure-dependent claims); E-HAT-4.3-19 (statement $\langle X,B\rangle$
       against $\langle X,\Omega B\rangle$, checked against Hatcher).
 
-    **Acceptance:** each read and repaired, or kept with the reason.
+    **Acceptance:** each read and repaired, or kept with the reason. **Closed.** The wrong
+    mathematics, QUAL-10 deletions, CARD-04 merges, ledes, titles, Goal paragraphs, 30
+    structured proofs and seven proof gaps are repaired, each in its own commit. Near-duplicates
+    whose mathematics differs became Variations remarks on the survivor. Historical ledgers
+    under `sources/` keep the merged ids.
 
   Round 3 (revision `5ba163ac9`, site surfaces and prelims) injected the nodes below;
   `audited-deployment` needs both.
