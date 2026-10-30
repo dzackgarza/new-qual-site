@@ -135,7 +135,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-BERKELEY-PRELIM-SPRING-1980
   - [x] SRC-BERKELEY-PRELIM-SPRING-1981
   - [x] SRC-BERKELEY-PRELIM-SPRING-1982
-  - [ ] SRC-BERKELEY-PRELIM-SPRING-1983
+  - [x] SRC-BERKELEY-PRELIM-SPRING-1983
   - [ ] SRC-BERKELEY-PRELIM-SPRING-1984
   - [ ] SRC-BERKELEY-PRELIM-SPRING-1985
   - [ ] SRC-BERKELEY-PRELIM-SPRING-1986
@@ -1766,6 +1766,12 @@ mathematical correction under its own node, not under copy policy.
     contour and the solution answers in terms of winding numbers. Find another copy of the Spring
     1981 Berkeley prelim (or the Sp81-11 figure) and transcribe the curve. **Acceptance:** the
     statement describes $C$ as drawn and the solution gives a number.
+  - **`ad-bks83-4-network`**. **Needs:** none. P-BKS83-4: the retained Spring83.pdf prints
+    "../Fig/Pr/Sp83-4.ps not found" where the triangular network should be, so the statement
+    does not determine the network and the solution only shows the answer depends on it. Find
+    another copy of the Spring 1983 Berkeley prelim (or the Sp83-4 figure) and transcribe the
+    network. **Acceptance:** the statement describes the network as drawn and the solution names
+    its symmetry group.
 
 ### Marking a node closed
 

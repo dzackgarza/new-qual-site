@@ -5,7 +5,8 @@ kind: problem
 title: No automorphism of $(\ZZ/p\ZZ)^n$ has order $p^2$ when $n\le p$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

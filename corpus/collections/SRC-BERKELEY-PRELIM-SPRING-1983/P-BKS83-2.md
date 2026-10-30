@@ -5,7 +5,8 @@ kind: problem
 title: A strictly column-diagonally-dominant $Z$-matrix has positive determinant
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

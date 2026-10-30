@@ -5,7 +5,8 @@ kind: problem
 title: A continuous lower-Lipschitz self-map of $\RR^n$ is a homeomorphism
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: A decreasing integrable positive function satisfies $xf(x)\to0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

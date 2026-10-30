@@ -5,7 +5,8 @@ kind: problem
 title: Symmetry group of a triangular network through the vertices of the unit square
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

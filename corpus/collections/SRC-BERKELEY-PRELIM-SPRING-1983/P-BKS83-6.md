@@ -5,7 +5,8 @@ kind: problem
 title: Extrema, uniform continuity, and a point with $f(x_0+\pi)=f(x_0)$ for a continuous $1$-periodic function
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -24,19 +25,21 @@ audit:
 ::: {.problem}
 Let $f:\RR\to\RR$ be continuous and $1$-periodic.
 
-1. Prove that $f$ is bounded above and below and attains its maximum and minimum.
-2. Prove that $f$ is uniformly continuous on $\RR$.
-3. Prove that there is $x_0\in\RR$ such that
-   $$
-   f(x_0+\pi)=f(x_0).
-   $$
+(a) Prove that $f$ is bounded above and below and attains its maximum and minimum.
+
+(b) Prove that $f$ is uniformly continuous on $\RR$.
+
+(c) Prove that there is $x_0\in\RR$ such that
+$$
+f(x_0+\pi)=f(x_0).
+$$
 :::
 
 ::: {.solution}
 ::: pf
 
 ::: {.pf-step #bounded-and-attains-extrema}
-Part (1): $f$ is bounded above and below on $\RR$ and attains
+Part (a): $f$ is bounded above and below on $\RR$ and attains
 both a global maximum and a global minimum.
 
 ::: pf-proof
@@ -64,7 +67,7 @@ bounding values are attained at $x_{\min}$ and $x_{\max}$.
 :::
 
 ::: {.pf-step #uniformly-continuous}
-Part (2): $f$ is uniformly continuous on $\RR$.
+Part (b): $f$ is uniformly continuous on $\RR$.
 
 ::: pf-proof
 Fix $\varepsilon>0$. By the Heine--Cantor theorem, the restriction of $f$
@@ -112,7 +115,7 @@ The same $\delta$ works for all $x,y\in\RR$.
 :::
 
 ::: {.pf-step #exists-x0-equal-shift}
-Part (3): there exists $x_0\in\RR$ such that
+Part (c): there exists $x_0\in\RR$ such that
 $$
 f(x_0+\pi)=f(x_0).
 $$
@@ -156,7 +159,7 @@ $$
 :::
 
 ::: pf-qed
-Steps [](#bounded-and-attains-extrema){.pf-ref}, [](#uniformly-continuous){.pf-ref}, and [](#exists-x0-equal-shift){.pf-ref} establish Parts (1), (2), and (3),
+Steps [](#bounded-and-attains-extrema){.pf-ref}, [](#uniformly-continuous){.pf-ref}, and [](#exists-x0-equal-shift){.pf-ref} establish Parts (a), (b), and (c),
 respectively.
 :::
 

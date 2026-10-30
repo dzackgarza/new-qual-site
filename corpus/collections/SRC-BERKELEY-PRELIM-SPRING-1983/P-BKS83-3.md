@@ -5,7 +5,8 @@ kind: problem
 title: Modulus of an annulus mapped between two circle boundaries
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

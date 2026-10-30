@@ -5,7 +5,8 @@ kind: problem
 title: All solutions of $y'=\sqrt{y(y-2)}$ with $y(0)=0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

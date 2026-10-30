@@ -5,7 +5,8 @@ kind: problem
 title: The harmonic sum $1+1/2+\cdots+1/n$ is never an integer for $n>1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
