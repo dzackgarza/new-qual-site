@@ -1035,7 +1035,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/topology/point-set/notation-and-background.md
   - [x] wiki/topology/point-set/point-set.md
   - [x] wiki/topology/resources/books-notes.md
-  - [ ] wiki/topology/resources/index.md
+  - [x] wiki/topology/resources/index.md
   - [ ] wiki/topology/resources/problems.md
   - [ ] wiki/topology/resources/solutions.md
   - [ ] wiki/topology/resources/topics.md
