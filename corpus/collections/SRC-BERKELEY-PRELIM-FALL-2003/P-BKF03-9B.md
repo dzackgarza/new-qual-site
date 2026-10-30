@@ -6,7 +6,8 @@ title: Positivity of $\lambda$ for $\Delta u+\lambda u=0$ on the disk with $u_n=
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

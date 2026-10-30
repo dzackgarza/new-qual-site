@@ -6,7 +6,8 @@ title: Convergence of the Neumann series $I+A+A^2+\cdots$ for $2\times2$ matrice
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

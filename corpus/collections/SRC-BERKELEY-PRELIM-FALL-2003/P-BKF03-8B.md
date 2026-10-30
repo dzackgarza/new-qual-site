@@ -6,7 +6,8 @@ title: Conjugacy classes of $5\times5$ complex matrices with $A^3=A^2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

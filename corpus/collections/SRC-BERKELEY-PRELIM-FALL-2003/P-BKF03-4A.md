@@ -6,7 +6,8 @@ title: An irreducible polynomial over $\QQ$ that does not split in its stem fiel
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -24,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Give an example, with proof, of a nonconstant irreducible polynomial $f ( x )$ over Q with the property that $f ( x )$ does not factor into linear factors over the field $K = \QQ [ x ] / ( f ( x ) )$ .
+Give an example, with proof, of a nonconstant irreducible polynomial $f(x)$ over $\QQ$ with the property that $f(x)$ does not factor into linear factors over the field $K=\QQ[x]/(f(x))$.
 :::
 
 

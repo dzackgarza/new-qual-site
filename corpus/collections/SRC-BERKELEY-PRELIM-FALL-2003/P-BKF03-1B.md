@@ -6,7 +6,8 @@ title: Evaluation of $\int_{-\infty}^{\infty} x^2/(x^n+1)\,dx$ for even $n\ge4$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

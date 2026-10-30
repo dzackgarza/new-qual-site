@@ -6,7 +6,8 @@ title: Counting commuting pairs in a finite group and in $S_5$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

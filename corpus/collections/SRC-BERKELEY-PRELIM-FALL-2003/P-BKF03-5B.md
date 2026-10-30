@@ -6,7 +6,8 @@ title: A noncyclic group of order $n$ when $\gcd(n,\phi(n))>1$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

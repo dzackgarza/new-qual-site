@@ -6,7 +6,8 @@ title: Rank over $\FF_p$ of the power matrix $(j^i)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

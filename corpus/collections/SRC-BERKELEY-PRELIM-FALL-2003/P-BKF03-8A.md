@@ -6,7 +6,8 @@ title: Order of $\operatorname{Aut}(\ZZ/p^2\times\ZZ/p)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

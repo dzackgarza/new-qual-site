@@ -6,7 +6,8 @@ title: The metric $\int_0^1 \abs{ f-g}/(1+\abs{ f-g})\,dx$ on $C[0,1]$ is not co
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

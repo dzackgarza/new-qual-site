@@ -6,7 +6,8 @@ title: Harmonic function on the disk equal to $\pm1$ on the upper and lower semi
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

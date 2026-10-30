@@ -6,7 +6,8 @@ title: Discrete harmonic arrays vanishing on the boundary are zero
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

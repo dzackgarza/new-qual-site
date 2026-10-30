@@ -6,7 +6,8 @@ title: Entire functions whose image misses a line are constant
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
@@ -24,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let L be a line in C, and let f be an entire function such that $f ( \CC ) \cap L = \emptyset$ . Prove that $f$ is constant.
+Let $L$ be a line in $\CC$, and let $f$ be an entire function such that $f(\CC)\cap L=\emptyset$. Prove that $f$ is constant.
 (Do not use the theorem of Picard that the image of a nonconstant entire function omits at most one complex number.)
 :::
 

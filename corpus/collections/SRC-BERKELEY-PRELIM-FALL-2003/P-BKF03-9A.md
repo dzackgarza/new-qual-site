@@ -6,7 +6,8 @@ title: Hölder continuity of the Cantor function with exponent $\log2/\log3$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
