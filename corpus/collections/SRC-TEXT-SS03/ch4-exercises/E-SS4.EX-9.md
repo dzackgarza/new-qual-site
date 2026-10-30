@@ -18,24 +18,20 @@ audit:
 ---
 
 ::: {.exercise}
-9. Here are further results similar to the Phragmén–Lindelöf theorem.
+Here are further results similar to the Phragmén–Lindelöf theorem.
 
 (a) Let $F$ be a holomorphic function in the right half-plane that extends continuously to the boundary, that is, the imaginary axis.
-Suppose that $\abs{ F ( i y ) } \le 1$ for all $y \in \RR$ , and
-
+Suppose that $\abs{F(iy)} \le 1$ for all $y \in \RR$, and
 $$
-\abs{ F (z) } \leq C e ^ {c \abs{ z } ^ {\gamma}}
+\abs{F(z)} \leq C e^{c\abs{z}^{\gamma}}
 $$
+for some $c, C > 0$ and $\gamma < 1$. Prove that $\abs{F(z)} \le 1$ for all $z$ in the right half-plane.
 
-for some $c , C > 0$ and $\gamma < 1$ . Prove that $\abs{ F ( z ) } \le 1$ for all z in the right half-plane.
-
-(b) More generally, let S be a sector whose vertex is the origin, and forming an angle of $\pi / \beta$ . Let $F$ be a holomorphic function in S that is continuous on the closure of $S ,$ , so that $\abs{ F ( z ) } \le 1$ on the boundary of S and
-
+(b) More generally, let $S$ be a sector whose vertex is the origin, and forming an angle of $\pi/\beta$. Let $F$ be a holomorphic function in $S$ that is continuous on the closure of $S$, so that $\abs{F(z)} \le 1$ on the boundary of $S$ and
 $$
-\abs{ F (z) } \leq C e ^ {c \abs{ z } ^ {\alpha}} \text {   for   all   } z \in S
+\abs{F(z)} \leq C e^{c\abs{z}^{\alpha}} \quad \text{for all } z \in S
 $$
-
-for some $c , C > 0$ and $0 < \alpha < \beta$ . Prove that $\abs{ F ( z ) } \le 1$ for all $z \in S$
+for some $c, C > 0$ and $0 < \alpha < \beta$. Prove that $\abs{F(z)} \le 1$ for all $z \in S$.
 :::
 
 ::: {.solution}
