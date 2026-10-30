@@ -33,7 +33,7 @@ For each of the following spaces, compute the fundamental group and the homology
 
 a. The graph $\Theta$ consisting of two vertices and three edges connecting them.
 
-b. The 2-dimensional cell complex $\Theta_2$ consisting of a closed circle and three 2-dimensional disks each having boundary running once around that circle.
+b. The $2$-dimensional cell complex $\Theta_2$ consisting of a closed circle and three $2$-dimensional disks each having boundary running once around that circle.
 :::
 
 ::: {.solution}
