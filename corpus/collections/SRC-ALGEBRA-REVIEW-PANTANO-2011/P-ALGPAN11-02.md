@@ -17,8 +17,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
+- event: source-checked
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Statement and choices transcribed from the ALGEBRA_REVIEW1.pdf page render; the machine extractions were garbled at this item.
 ---
 ::: {.problem}
+Let $\RR$ denote the field of real numbers, $\QQ$ the field of rational numbers, and $\ZZ$ the ring of integers.
 Which of the following subsets $F_i$ of $\RR$, $1\le i\le4$, are subfields of $\RR$?
 
 $F_1=\{a/b:a,b\in\ZZ\text{ and }b\text{ is odd}\}$,
@@ -29,11 +34,19 @@ $F_3=\{a+b\sqrt2:a,b\in\QQ\}$,
 
 $F_4=\{a+b\sqrt[4]2:a,b\in\QQ\}$.
 
-![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-02.png)
+(A) No $F_i$ is a subfield of $\RR$.
+
+(B) $F_3$ only
+
+(C) $F_2$ and $F_3$ only
+
+(D) $F_1$, $F_2$, and $F_3$ only
+
+(E) $F_1$, $F_2$, $F_3$, and $F_4$
 :::
 
 ::: {.solution}
-Only $F_3$ is a subfield of $\RR$.
+Only $F_3$ is a subfield of $\RR$, choice (B).
 
 ::: pf
 

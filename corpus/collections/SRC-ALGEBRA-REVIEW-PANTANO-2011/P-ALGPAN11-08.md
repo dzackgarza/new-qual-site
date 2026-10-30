@@ -17,9 +17,23 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
+- event: source-checked
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Statement and choices transcribed from the ALGEBRA_REVIEW1.pdf page render; the machine extractions were garbled at this item.
 ---
 ::: {.problem}
-![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-08.png)
+A group $G$ in which $(ab)^2=a^2b^2$ for all $a,b$ in $G$ is necessarily
+
+(A) finite
+
+(B) cyclic
+
+(C) of order two
+
+(D) abelian
+
+(E) none of the above
 :::
 
 ::: {.solution}

@@ -17,21 +17,25 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
+- event: source-checked
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Statement and choices transcribed from the ALGEBRA_REVIEW1.pdf page render; the machine extractions were garbled at this item.
 ---
 ::: {.problem}
 Which of the following subsets are subrings of the ring of real numbers?
 
-I. $\{a+b\sqrt2:a,b\in\QQ\}$.
+I. $\{a+b\sqrt2 \mid a\text{ and }b\text{ are rational}\}$
 
-II. $\{n/3^m:n\in\ZZ,\ m\ge0\}$.
+II. $\left\{\dfrac{n}{3^m} \;\middle|\; n\text{ is an integer and }m\text{ is a non-negative integer}\right\}$
 
-III. $\{a+b\sqrt5:a,b\in\RR,\ a^2+b^2\le1\}$.
+III. $\{a+b\sqrt5 \mid a\text{ and }b\text{ are real numbers and }a^2+b^2\le1\}$
 
-![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-12.png)
+(A) I only (B) I and II only (C) I and III only (D) II and III only (E) I, II, and III
 :::
 
 ::: {.solution}
-Exactly I and II are subrings of $\RR$.
+Exactly I and II are subrings of $\RR$, choice (B).
 
 ::: pf
 

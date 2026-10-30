@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-07
 kind: problem
-title: Properties of the operation a star b equals ab plus a plus b
+title: Properties of the operation a*b = a+b+2ab on the rationals
 classification:
   areas:
   - algebra
@@ -17,91 +17,57 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
+- event: source-checked
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Statement and choices transcribed from the ALGEBRA_REVIEW1.pdf page render; the machine extractions were garbled at this item.
 ---
 ::: {.problem}
-Let $*$ be the binary operation on the rational numbers given by $a*b=ab+a+b$.
-Decide which of the following assertions are true: (I) $*$ is commutative; (II) there is a rational $*$-identity; (III) every rational number has a $*$-inverse.
+Let $*$ be the binary operation on the rational numbers given by $a*b=a+b+2ab$.
+Which of the following are true?
 
-![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-07.png)
+I. $*$ is commutative.
+
+II. There is a rational number that is a $*$-identity.
+
+III. Every rational number has a $*$-inverse.
+
+(A) I only (B) II only (C) I and II only (D) I and III only (E) I, II, and III
 :::
 
 ::: {.solution}
-Assertions I and II are true, while III is false.
 
 ::: pf
 
 ::: {.pf-step #s1}
-
-The operation is commutative.
+I is true.
 
 ::: pf-proof
-
-Since multiplication and addition in $\QQ$ are commutative,
-$$
-a*b=ab+a+b=ba+b+a=b*a.
-$$
-
+$a*b=a+b+2ab=b+a+2ba=b*a$, because addition and multiplication in $\QQ$ are commutative.
 :::
 
 :::
 
 ::: {.pf-step #s2}
-
-The $*$-identity is $0$.
+II is true: $0$ is a $*$-identity.
 
 ::: pf-proof
-
-For every $a\in\QQ$,
-$$
-a*0=a\cdot0+a+0=a,
-$$
-and by commutativity also $0*a=a$.
-
+$a*0=a+0+0=a$ for every $a\in\QQ$, and $0*a=a$ by step [](#s1){.pf-ref}.
 :::
 
 :::
 
 ::: {.pf-step #s3}
-
-Not every rational has a $*$-inverse.
-
-::: pf-proof
-
-The identity
-$$
-a*b=0
-$$
-is equivalent to
-$$
-(a+1)(b+1)=1.
-$$
-For $a\ne-1$ this gives $b=(a+1)^{-1}-1$, but for $a=-1$ one has
-$$
-(-1)*b=-1
-$$
-for every $b$.
-Thus $-1$ has no inverse.
-
-:::
-
-:::
-
-::: pf-step
-
-Hence exactly I and II hold.
+III is false: $-\tfrac12$ has no $*$-inverse.
 
 ::: pf-proof
-
-Step [](#s1){.pf-ref} proves I, step [](#s2){.pf-ref} proves II, and step [](#s3){.pf-ref} disproves III.
-
+One has $1+2(a*b)=(1+2a)(1+2b)$. So $a*b=0$ if and only if $(1+2a)(1+2b)=1$. For $a=-\tfrac12$ the left side is $0$ for every $b$, so no $b$ satisfies $a*b=0$, the identity of step [](#s2){.pf-ref}.
 :::
 
 :::
 
 ::: pf-qed
-
-The preceding conclusion gives the requested truth values.
-
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} show that exactly I and II are true: choice (C).
 :::
 
 :::

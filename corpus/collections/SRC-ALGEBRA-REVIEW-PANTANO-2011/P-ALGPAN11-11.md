@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-11
 kind: problem
-title: When x maps to a x a^{-2} is a homomorphism
+title: When x maps to a x a^2 is a homomorphism
 classification:
   areas:
   - algebra
@@ -17,55 +17,41 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
+- event: source-checked
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Statement and choices transcribed from the ALGEBRA_REVIEW1.pdf page render; the machine extractions were garbled at this item.
 ---
 ::: {.problem}
-For a fixed element $a$ of a group $G$, determine when the map $x\mapsto axa^{-2}$ from $G$ to itself is a homomorphism.
+The map $x\mapsto axa^2$ of a group $G$ into itself is a homomorphism if and only if
 
-![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-11.png)
+(A) $G$ is abelian (B) $G=\{e\}$ (C) $a=e$ (D) $a^2=a$ (E) $a^3=e$
 :::
 
 ::: {.solution}
-The map
-$$
-\varphi(x)=axa^{-2}
-$$
-is a homomorphism if and only if $\boxed{a=e}$.
 
 ::: pf
 
 ::: {.pf-step #s1}
-
-A homomorphism forces $a=e$.
+$\varphi(x)=axa^2$ is a homomorphism if and only if $a^3=e$.
 
 ::: pf-proof
-
-Every group homomorphism sends the identity to the identity.
-But
-$$
-\varphi(e)=aea^{-2}=a^{-1}.
-$$
-Hence $a^{-1}=e$, so $a=e$.
-
+For $x,y\in G$, $\varphi(x)\varphi(y)=axa^2\,aya^2=axa^3ya^2$ and $\varphi(xy)=axya^2$. Cancelling $ax$ on the left and $ya^2$ on the right, $\varphi(x)\varphi(y)=\varphi(xy)$ if and only if $a^3=e$. So $a^3=e$ makes $\varphi$ a homomorphism, and conversely $x=y=e$ forces $a^3=e$.
 :::
 
 :::
 
 ::: {.pf-step #s2}
-
-The condition is sufficient.
+None of (A)–(D) is equivalent to $a^3=e$.
 
 ::: pf-proof
-
-If $a=e$, then $\varphi(x)=x$ for all $x$, so $\varphi$ is the identity homomorphism.
-
+In $G=\ZZ/3$ (written multiplicatively) with $a\ne e$, $a^3=e$ holds while (B), (C) and (D) fail. In $G=S_3$ with $a=e$, $a^3=e$ holds while (A) fails.
 :::
 
 :::
 
 ::: pf-qed
-
-Step [](#s1){.pf-ref} proves necessity and step [](#s2){.pf-ref} proves sufficiency, so $\varphi$ is a homomorphism exactly when $a=e$.
-
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the answer is choice (E).
 :::
 
 :::

@@ -17,12 +17,24 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
+- event: source-checked
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Statement and choices transcribed from the ALGEBRA_REVIEW1.pdf page render; the machine extractions were garbled at this item.
 ---
 ::: {.problem}
 Let $G_n$ denote the cyclic group of order $n$.
-Which of the listed direct products is not cyclic?
+Which of the following direct products is NOT cyclic?
 
-![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-03.png)
+(A) $G_{17}\times G_{11}$
+
+(B) $G_{17}\times G_{11}\times G_5$
+
+(C) $G_{17}\times G_{33}$
+
+(D) $G_{22}\times G_{33}$
+
+(E) $G_{49}\times G_{121}$
 :::
 
 ::: {.solution}

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-10
 kind: problem
-title: Possible order of a finite group under the stated element condition
+title: Order of a group with a subgroup of order 7 and no element of order 2
 classification:
   areas:
   - algebra
@@ -17,9 +17,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
+- event: source-checked
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Statement and choices transcribed from the ALGEBRA_REVIEW1.pdf page render; the machine extractions were garbled at this item.
 ---
 ::: {.problem}
-![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-10.png)
+If the finite group $G$ contains a subgroup of order seven but no element (other than the identity) is its own inverse, then the order of $G$ could be
+
+(A) $27$ (B) $28$ (C) $35$ (D) $37$ (E) $42$
 :::
 
 ::: {.solution}
