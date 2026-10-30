@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-ALGS19E
 kind: problem
-title: "Hom of finitely generated projective modules is projective"
+title: "$\\operatorname{Hom}$ of finitely generated projective modules is projective"
 classification:
   areas:
   - algebra
   topics:
   - Module Theory
+  - Projective Modules
 relations: []
 review: draft
 audit:

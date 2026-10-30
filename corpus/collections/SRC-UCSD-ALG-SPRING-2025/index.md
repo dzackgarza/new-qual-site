@@ -20,7 +20,7 @@ source:
   - P-ALGS25A
   - P-ALGS25B
   - P-ALGS25C
-  - P-ALGS25D
+  - P-ALGS19E
   - P-ALGS25E
   - P-ALGS25F
   - P-ALGS25G
