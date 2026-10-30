@@ -921,7 +921,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/residues-and-contours/real-integrals-by-residues.md
   - [x] wiki/complex-analysis/residues-and-contours/the-residue-theorem.md
   - [x] wiki/complex-analysis/residues-and-contours/which-contour-do-i-close.md
-  - [ ] wiki/complex-analysis/resources/books-notes.md
+  - [x] wiki/complex-analysis/resources/books-notes.md
   - [ ] wiki/complex-analysis/resources/index.md
   - [ ] wiki/complex-analysis/resources/problems.md
   - [ ] wiki/complex-analysis/resources/solutions.md

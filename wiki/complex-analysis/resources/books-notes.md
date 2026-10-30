@@ -74,4 +74,4 @@ order: 0
 
 - [Missouri S&T complex-analysis course notes](https://web.mst.edu/~jcmcfd/Complex-Analysis.pdf)
 
-- [[McMullen_-_Advanced_Complex_Analysis.pdf|McMullen, Advanced Complex Analysis]]
+- [[attachments/McMullen_-_Advanced_Complex_Analysis.pdf|McMullen, Advanced Complex Analysis]]
