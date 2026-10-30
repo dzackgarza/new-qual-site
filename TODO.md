@@ -952,7 +952,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/prelim/useful-tricks.md
   - [x] wiki/prelim/which-technique.md
   - [x] wiki/prelim/worked-exams/all.md
-  - [ ] wiki/prelim/worked-exams/fall-2014.md
+  - [x] wiki/prelim/worked-exams/fall-2014.md
   - [ ] wiki/prelim/worked-exams/fall-2015.md
   - [ ] wiki/prelim/worked-exams/fall-2016.md
   - [ ] wiki/prelim/worked-exams/fall-2017.md
