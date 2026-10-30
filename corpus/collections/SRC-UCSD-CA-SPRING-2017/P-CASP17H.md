@@ -19,7 +19,7 @@ review: draft
 Show that $u$ is constant.
 
 (ii) Let $H = \{z : \operatorname{Im} z > 0\}$ denote the upper half plane.
-Let $u : H \to \RR$ be a continuous bounded function which is harmonic in $H$ and $u = 0$ on $\partial H$.
+Let $u : \overline{H} \to \RR$ be a continuous bounded function which is harmonic in $H$ and $u = 0$ on $\partial H$.
 Show that $u$ is constant.
 :::
 
