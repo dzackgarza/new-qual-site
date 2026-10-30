@@ -989,7 +989,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/real-analysis/measure/littlewoods-principles.md
   - [x] wiki/real-analysis/measure/outer-measure.md
   - [x] wiki/real-analysis/resources/books-notes.md
-  - [ ] wiki/real-analysis/resources/extra-questions.md
+  - [x] wiki/real-analysis/resources/extra-questions.md
   - [ ] wiki/real-analysis/resources/index.md
   - [ ] wiki/real-analysis/resources/preface.md
   - [ ] wiki/real-analysis/resources/problems.md

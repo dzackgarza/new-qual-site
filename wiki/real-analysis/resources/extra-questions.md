@@ -137,7 +137,7 @@ The remaining headings are the January, June, and May exam tags printed in Days 
 
 [[P-7P5F5]]
 
-### January 2005, 4; June 2010, 6b
+### January 2008, 5a
 
 [[P-XQRCI]]
 
@@ -145,7 +145,7 @@ The remaining headings are the January, June, and May exam tags printed in Days 
 
 [[P-AITX4]]
 
-### January 2005, 3b
+### January 2020, 4a
 
 [[P-5UQSK]]
 
@@ -191,7 +191,7 @@ The remaining headings are the January, June, and May exam tags printed in Days 
 
 ## Integral calculus {#integral-calculus-1}
 
-### June 2009, 5b
+### June 2014, 1
 
 [[P-3SSNK]]
 
