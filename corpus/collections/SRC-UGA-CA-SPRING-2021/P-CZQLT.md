@@ -30,35 +30,34 @@ $$
 :::
 
 ::: {.solution}
-$\implies$: 
+::: pf
 
-- Fix $r \in (0, 1)$ and let $\gamma = \theset{\abs{z} = r}$.
-  This is compact, so $f_n\to f$ uniformly on $\gamma$:
+::: pf-step
+(a) implies (b).
+
+::: pf-proof
+The circle $\abs{z}=r$ is compact, so
 $$
-\int_\gamma \abs{f_n(z) - f(z) } \dz 
-&\leq\int_\gamma \sup_{w\in \gamma } \abs{f_n(w) - f(w) } \dz \\
-&\leq\int_\gamma \norm{f_n(w) - f(w) }_{\infty} \dz \\
-&= \norm{f_n(w) - f(w) }_{\infty} \int_\gamma \dz \\
-&= \norm{f_n(w) - f(w) }_{\infty} \length(\gamma) \\
-&\convergesto{n\to\infty} 0
-.$$
-
-$\impliedby$:
-
-- Let $K$ be compact, then choose $\gamma$ enclosing but not intersecting $K$.
-- Since $\gamma, K$ are disjoint compact sets, define $M \definedas \inf \theset{\abs{z-\xi} \st z\in K, \xi\in \gamma}$, the $0<M<\infty$.
-
-- Apply Cauchy's formula to the function $F_n(z) \definedas f_n(z) - f(z)$, where we want to show $\abs{F_n(z)} < \eps$:
+\int_{\abs{z}=r}\abs{f_n-f}\,\abs{dz} \le2\pi r\sup_{\abs{z}=r}\abs{f_n-f}\to0.
 $$
-F_n(z) 
-&= {1\over 2\pi i} \int_\gamma { F_n(\xi) \over z-\xi} \dxi \\
-\implies \abs{f_n(z) - f(z) } 
-&\leq {1\over 2\pi }\int_\gamma \abs{f_n(\xi) - f(\xi) \over z-\xi} \dxi \\
-&\leq {1\over 2\pi} \int_\gamma {\abs{ f_n(\xi) - f(\xi) } \over 
-M} \dxi \\
-&\leq {1\over 2\pi M} \int_\gamma {\abs{ f_n(\xi) - f(\xi) } } \abs{\dxi} \\
-,$$
-where by hypothesis we can bound this integral by an $\eps$.
-So given $\eps$, choose $n$ large enough to bound the integral as above by some $\eps$ depending only on $n$ and not on $z$.
-Taking $\sup$ of both sides yields $\norm{f_n - f}_{\infty, K} \leq {\eps\over 2\pi M}$, so $f_n\to f$ uniformly on $K$.
+:::
+
+:::
+
+::: pf-step
+(b) implies (a).
+
+::: pf-proof
+Fix $0<\rho<r<1$.
+Cauchy's integral formula for $f_n-f$ on $\abs{\zeta}=r$ gives, for $\abs{z}\le\rho$, since $\abs{\zeta - z} \geq r - \rho$,
+$$
+\abs{f_n(z)-f(z)} \le\frac1{2\pi(r-\rho)} \int_{\abs{\zeta}=r}\abs{f_n(\zeta)-f(\zeta)}\,\abs{d\zeta}.
+$$
+By (b) the right-hand side tends to $0$, and it does not depend on $z$, so $f_n \to f$ uniformly on $\abs{z}\le\rho$.
+Every compact subset of $\DD$ lies in such a disc.
+:::
+
+:::
+
+:::
 :::
