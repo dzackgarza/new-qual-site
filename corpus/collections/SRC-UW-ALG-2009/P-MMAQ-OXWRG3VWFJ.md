@@ -2,26 +2,26 @@
 schema: qual/card@1
 id: P-MMAQ-OXWRG3VWFJ
 kind: problem
-title: Groups of order 2009 and their intermediate subgroups
+title: Groups of order 2009 and Galois extensions of degree 2009
 classification:
   areas:
-  - algebra
+    - algebra
   topics:
-  - Groups
-  - Classification
+    - Groups
+    - Classification
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: OpenAI
-  date: 2026-09-10
+  - event: solution-written
+    by: OpenAI
+    date: 2026-09-10
 ---
 
 ::: {.problem}
-- Classify all groups of order $2009=7^2\times 41$.
+(a) Classify groups of order $2009=7^2\times 41$.
 
-- Suppose that $G$ is a group of order 2009. How many intermediate groups are there---that is, how many groups H are there with $1\subsetneq H\subsetneq G$, where both inclusions are proper?
-  (There may be several cases to consider.)
+(b) Suppose that $F$ is a field and $K/F$ is a Galois extension of degree 2009. How many intermediate fields are there -- that is, how many fields $L$ are there with $F\subset L\subset K$, both inclusions proper?
+(There may be several cases to consider.)
 :::
 
 ::: {.solution}
@@ -134,7 +134,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #classification}
 
 Consequently the two groups of order $2009$ are
 $$
@@ -153,7 +153,7 @@ Combine steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.
 
 :::
 
-::: pf-step
+::: {.pf-step #cyclic-count}
 
 If $G\cong C_{2009}$, then $G$ has exactly $4$ nontrivial proper subgroups.
 
@@ -243,7 +243,7 @@ A group of prime order has only the trivial subgroup and the whole group.
 
 :::
 
-::: pf-step
+::: {.pf-step #noncyclic-count}
 
 Therefore
 $$
@@ -275,17 +275,17 @@ nontrivial proper subgroups.
 
 ::: pf-step
 
-Hence the complete answer is
+Let $K/F$ be Galois of degree $2009$. The number of intermediate fields $F\subsetneq L\subsetneq K$ is $\boxed{4}$ if $\Gal(K/F)$ is cyclic and $\boxed{18}$ if $\Gal(K/F)\cong C_7\times C_7\times C_{41}$.
+
+::: pf-proof
+
+The group $G=\Gal(K/F)$ has order $[K:F]=2009$. By the fundamental theorem of Galois theory, $L\mapsto\Gal(K/L)$ is an inclusion-reversing bijection from intermediate fields of $K/F$ to subgroups of $G$, with $F\mapsto G$ and $K\mapsto1$. So the intermediate fields with both inclusions proper correspond to the subgroups $1\subsetneq H\subsetneq G$.
+By step [](#classification){.pf-ref}, $G$ is one of the two groups, and steps [](#cyclic-count){.pf-ref} and [](#noncyclic-count){.pf-ref} count these subgroups.
 
 :::
 
 :::
 
-$$
-\boxed{G\cong C_{2009}\text{ with }4\text{ intermediate subgroups}}
-$$
-or
-$$
-\boxed{G\cong C_7\times C_7\times C_{41}\text{ with }18\text{ intermediate subgroups}}.
-$$
+:::
+
 :::
