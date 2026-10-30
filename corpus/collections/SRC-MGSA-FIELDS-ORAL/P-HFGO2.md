@@ -97,3 +97,7 @@ The sum $\alpha+\beta$ belongs to $K$, so apply step [](#s2){.pf-ref}.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The proof works unchanged over any field $F$ in place of $\QQ$, and for $\alpha-\beta$, $\alpha\beta$ and, when $\beta\ne0$, $\alpha\beta^{-1}$ in place of $\alpha+\beta$: each of these elements lies in the finite extension $F(\alpha,\beta)$, so the last step applies to it.
+:::
