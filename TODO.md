@@ -929,7 +929,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/review.md
   - [x] wiki/complex-analysis/singularities/casorati-weierstrass-and-picard.md
   - [x] wiki/complex-analysis/singularities/classifying-a-singularity.md
-  - [ ] wiki/complex-analysis/singularities/index.md
+  - [x] wiki/complex-analysis/singularities/index.md
   - [ ] wiki/complex-analysis/singularities/laurent-series.md
   - [ ] wiki/complex-analysis/singularities/meromorphic-functions.md
   - [ ] wiki/complex-analysis/singularities/removable-poles-essential.md
