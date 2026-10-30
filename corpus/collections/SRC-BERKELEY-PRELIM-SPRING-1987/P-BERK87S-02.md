@@ -5,7 +5,8 @@ kind: problem
 title: Local and global injectivity of $(u,v)\mapsto(u+v,u^2+v^2)$ on $u>v$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -35,8 +36,9 @@ $$
 T(u,v)=(u+v,u^2+v^2).
 $$
 
-1. Prove that $T$ is locally one-to-one.
-2. Determine the range of $T$ and prove that $T$ is globally one-to-one.
+(a) Prove that $T$ is locally one-to-one.
+
+(b) Determine the range of $T$ and prove that $T$ is globally one-to-one.
 :::
 
 ::: {.solution}

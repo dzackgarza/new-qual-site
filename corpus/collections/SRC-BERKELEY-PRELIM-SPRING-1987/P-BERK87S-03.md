@@ -5,7 +5,8 @@ kind: problem
 title: If $f^2$ and $f^3$ are analytic, then $f$ is analytic
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Bounded first partial derivatives force a removable puncture for a $C^1$ real function
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

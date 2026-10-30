@@ -5,7 +5,8 @@ kind: problem
 title: A finite-dimensional differentiation-invariant function space is the kernel of a constant-coefficient ODE
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

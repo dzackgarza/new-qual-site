@@ -5,7 +5,8 @@ kind: problem
 title: Embedding of a finite group of order $n$ in the real orthogonal group $O(n)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

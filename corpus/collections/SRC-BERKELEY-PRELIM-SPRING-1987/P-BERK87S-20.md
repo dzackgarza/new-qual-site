@@ -5,7 +5,8 @@ kind: problem
 title: The integral $\int_0^\pi \cos(4\theta)/(1+\cos^2\theta)\,d\theta$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

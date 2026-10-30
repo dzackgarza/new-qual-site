@@ -5,7 +5,8 @@ kind: problem
 title: The unique noncyclic group of order four has automorphism group $S_3$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -26,11 +27,12 @@ audit:
 ---
 
 ::: {.problem}
-1. Show that, up to isomorphism, there is exactly one noncyclic group $G$ of order $4$.
-2. Show that
-   $$
-   \operatorname{Aut}(G)\cong S_3.
-   $$
+(a) Show that, up to isomorphism, there is exactly one noncyclic group $G$ of order $4$.
+
+(b) Show that
+$$
+\operatorname{Aut}(G)\cong S_3.
+$$
 :::
 
 ::: {.solution}
@@ -151,7 +153,7 @@ $\operatorname{Sym}(\Omega)\cong S_3$.
 :::
 
 ::: pf-qed
-Step [](#unique-group){.pf-ref} proves part (1), and step [](#aut-iso-boxed){.pf-ref} proves part (2).
+Step [](#unique-group){.pf-ref} proves part (a), and step [](#aut-iso-boxed){.pf-ref} proves part (b).
 :::
 
 :::

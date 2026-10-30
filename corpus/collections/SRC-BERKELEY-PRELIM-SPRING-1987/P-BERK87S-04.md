@@ -5,7 +5,8 @@ kind: problem
 title: Polynomial representation of every function on a finite field
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

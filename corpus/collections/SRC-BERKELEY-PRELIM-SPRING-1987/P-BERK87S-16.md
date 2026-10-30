@@ -5,7 +5,8 @@ kind: problem
 title: The pointwise supremum of a uniformly bounded equicontinuous family is continuous
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

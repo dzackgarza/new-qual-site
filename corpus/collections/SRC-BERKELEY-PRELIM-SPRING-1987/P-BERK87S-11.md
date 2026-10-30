@@ -5,7 +5,8 @@ kind: problem
 title: The equation $ae^x=1+x+x^2/2$ has exactly one real root
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

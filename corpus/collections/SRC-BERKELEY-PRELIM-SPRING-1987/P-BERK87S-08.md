@@ -5,7 +5,8 @@ kind: problem
 title: Derivatives preserve a strict half-plane containing all polynomial roots
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

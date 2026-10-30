@@ -5,7 +5,8 @@ kind: problem
 title: Derivative bound from $\abs{f(z)}\le C/(1-\abs{z})$ on the unit disk
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

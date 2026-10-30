@@ -5,7 +5,8 @@ kind: problem
 title: Approximation of $\int_0^{1/2}\sin x/x\,dx$ within $0.005$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

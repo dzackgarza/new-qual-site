@@ -5,7 +5,8 @@ kind: problem
 title: Periodization of a decaying continuous function and integration against periodic functions
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -35,12 +36,13 @@ $$
 F(x)=\sum_{n=-\infty}^{\infty}f(x+n).
 $$
 
-1. Prove that $F$ is continuous and $1$-periodic.
-2. If $G$ is continuous and $1$-periodic, prove that
-   $$
-   \int_0^1F(x)G(x)\,dx
-   =\int_{-\infty}^{\infty}f(x)G(x)\,dx.
-   $$
+(a) Prove that $F$ is continuous and $1$-periodic.
+
+(b) If $G$ is continuous and $1$-periodic, prove that
+$$
+\int_0^1F(x)G(x)\,dx
+=\int_{-\infty}^{\infty}f(x)G(x)\,dx.
+$$
 :::
 
 ::: {.solution}
@@ -244,7 +246,7 @@ integral over $\RR$.
 :::
 
 ::: pf-qed
-Steps [](#f-continuous){.pf-ref} and [](#f-periodic){.pf-ref} prove part 1, and step [](#value-boxed){.pf-ref} proves part 2.
+Steps [](#f-continuous){.pf-ref} and [](#f-periodic){.pf-ref} prove part (a), and step [](#value-boxed){.pf-ref} proves part (b).
 :::
 
 :::

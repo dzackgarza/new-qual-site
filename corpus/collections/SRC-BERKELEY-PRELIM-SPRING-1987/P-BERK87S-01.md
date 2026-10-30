@@ -5,7 +5,8 @@ kind: problem
 title: If every continuous real-valued function on $K\subset\RR^n$ is bounded, then $K$ is compact
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

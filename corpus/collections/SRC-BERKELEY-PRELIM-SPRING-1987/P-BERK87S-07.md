@@ -5,7 +5,8 @@ kind: problem
 title: Self-adjoint form of a second-order linear ODE
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:
