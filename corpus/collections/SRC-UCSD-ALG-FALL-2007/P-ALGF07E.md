@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF07E
 kind: problem
-title: "Conditions for f(x^p) to be a p-th power in characteristic p"
+title: "When $f(x^p)$ is a $p$-th power in characteristic $p$"
 classification:
   areas:
   - algebra

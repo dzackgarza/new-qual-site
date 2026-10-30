@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF07D
 kind: problem
-title: "Finitely generated modules over Z and scalar extension from R[x] to C[x]"
+title: "Finitely generated $\\ZZ$-modules under $\\QQ\\otimes$, and scalar extension from $\\RR[x]$ to $\\CC[x]$"
 classification:
   areas:
   - algebra

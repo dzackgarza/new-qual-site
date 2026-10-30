@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF07C
 kind: problem
-title: "Ring homomorphism from C[x] onto C and non-surjective examples"
+title: "Ring homomorphisms from $\\CC[x]$ to a field: onto implies the field is $\\CC$"
 classification:
   areas:
   - algebra
