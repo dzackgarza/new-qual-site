@@ -650,7 +650,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UGA-RA-SPRING-2016
   - [x] SRC-UGA-RA-SPRING-2017
   - [x] SRC-UGA-RA-SPRING-2018
-  - [ ] SRC-UGA-RA-SPRING-2019
+  - [x] SRC-UGA-RA-SPRING-2019
   - [ ] SRC-UGA-RA-SPRING-2020
   - [ ] SRC-UGA-RA-SPRING-2021
   - [ ] SRC-UGA-TOP-FALL-2004
