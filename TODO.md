@@ -604,7 +604,7 @@ mathematical correction under its own node, not under copy policy.
   Round 5 (revision `fe84046a76`, topology guide and early algebra) injected the node below;
   `audited-deployment` needs it.
   - **`ad5-topology-algebra`**. **Needs:** none.
-    - [ ] T-N6PYS: link text "topological embedding" targets D-9KQZT (Homeomorphism); target
+    - [x] T-N6PYS: link text "topological embedding" targets D-9KQZT (Homeomorphism); target
       D-BCNUH.
     - [ ] `[Lee13]` (T-N6PYS twice, D-UBWVX) and `[Munk84]` (D-RU2GC) render unlinked: no
       textbook collection or bibliography entry resolves them (CITE-1).

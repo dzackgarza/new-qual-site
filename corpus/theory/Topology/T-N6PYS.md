@@ -26,7 +26,7 @@ Then
 
 - if $f$ is surjective, $f$ is a quotient map [@Lee13];
 
-- if $f$ is injective, $f$ is a [[D-9KQZT|topological embedding]] [@Lee13];
+- if $f$ is injective, $f$ is a [[D-BCNUH|topological embedding]] [@Lee13];
 
 - if $f$ is bijective, $f$ is a homeomorphism [@Mun00].
 :::
