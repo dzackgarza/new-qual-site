@@ -5,7 +5,8 @@ kind: problem
 title: Isomorphisms among $\QQ(\sqrt[3]{2})$, the splitting field of $x^3-2$, $\overline{\FF}_2$, its roots-of-unity subfield, $\RR$, and $\QQ((T))$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 ---
@@ -24,16 +25,65 @@ For each pair of these, determine with proof whether or not they are isomorphic.
 :::
 
 ::: {.solution}
-We will show that the only isomorphic pair consists of $C$ and $D$
 
-Let $S _ { 1 } = \{ A , B \} , S _ { 2 } = \{ C , D \}$ , and $S _ { 3 } = \{ E , F \}$ The fields in $S _ { 1 }$ are of finite dimension over Q, hence countable and of characteristic 0. The fields in $S _ { 2 }$ are of characteristic 2. The fields in $S _ { 3 }$ are uncountable and of characteristic 0. Hence no field in $S _ { i }$ is isomorphic to a field in $S _ { j }$ if $i \neq j$ .
+The only isomorphic pair is $C$ and $D$; in fact $C=D$.
 
-By Eisenstein’s criterion, $x ^ { 3 } - 2$ is irreducible, so $\left[ A : \QQ \right] = 3$ . The zeros of this polynomial are $\omega ^ { i } \alpha$ where ω is a primitive cube root of unity.
-Thus $\omega \in B$ . Since $[ \QQ ( \omega ) : \QQ ] = 2$ , the degree $\left[ B : \QQ \right]$ is even.
-Hence $A \not \simeq B$
+::: pf
 
-If $a \in C$ , then $\FF _ { 2 } ( a )$ is a finite extension of $\FF _ { 2 }$ , hence finite, say of order $q ;$ if moreover $a \neq 0$ , then $a ^ { q - 1 } = 1$ . Hence $C \subseteq D$ . But $D \subseteq C$ , so $C = D$
+::: {.pf-step #s1}
 
-The square of a nonzero element of $\QQ [ [ T ] ] ( T ^ { - 1 } )$ has a leading coefficient that is a rational square.
-Thus 2 is not a square in $\QQ [ [ T ] ] ( T ^ { - 1 } )$ . But 2 is a square in R. So $E \not \simeq F$
+No field in one of the sets $\{A,B\}$, $\{C,D\}$, $\{E,F\}$ is isomorphic to a field in another.
+
+::: pf-proof
+
+$A$ and $B$ are finite extensions of $\QQ$, so they are countable of characteristic $0$. $C$ and $D$ have characteristic $2$. $E$ and $F$ have characteristic $0$ and are uncountable; for $F$, the series $\sum_{n\ge0}\epsilon_nT^n$ with $\epsilon_n\in\{0,1\}$ are already uncountably many.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+$A\not\cong B$.
+
+::: pf-proof
+
+By Eisenstein's criterion at $2$, $x^3-2$ is irreducible, so $[A:\QQ]=3$. The roots of $x^3-2$ are $\omega^j\alpha$ with $\omega$ a primitive cube root of unity, so $B$ contains $\omega=(\omega\alpha)/\alpha$, and $[\QQ(\omega):\QQ]=2$ divides $[B:\QQ]$. An isomorphism of fields of characteristic $0$ fixes $\QQ$, so it preserves the degree over $\QQ$.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+$C=D$.
+
+::: pf-proof
+
+$D\subseteq C$ by definition. If $a\in C$ is nonzero, then $\FF_2(a)$ is a finite field, say with $q$ elements, so $a^{q-1}=1$ and $a\in D$. Also $0\in D$.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+$E\not\cong F$.
+
+::: pf-proof
+
+$2=(\sqrt2)^2$ in $\RR$. In $F$, a nonzero element is $cT^m+(\text{higher terms})$ with $c\in\QQ^\times$, and its square is $c^2T^{2m}+(\text{higher terms})$. If this equals $2$, then $c^2=2$, which has no rational solution. So $2$ is not a square in $F$. An isomorphism fixes $2$ and preserves squares.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} to [](#s4){.pf-ref} settle every pair.
+
+:::
+
+:::
+
 :::

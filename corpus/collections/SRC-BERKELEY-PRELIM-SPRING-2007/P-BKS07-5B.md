@@ -5,7 +5,8 @@ kind: problem
 title: The center of $\operatorname{SL}_n(\FF_q)$ is trivial if and only if $\gcd(n,q-1)=1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 ---
@@ -17,8 +18,41 @@ Determine (with proof) a simple necessary and sufficient condition on $n$ and $q
 :::
 
 ::: {.solution}
-Let $E _ { i j }$ denote the $n \times n$ matrix with $( i , j )$ entry equal to 1 and all other entries zero.
-For $i \neq j$ , we have $I _ { n } + E _ { i j } \in \mathrm { S L } _ { n } ( \FF _ { q } )$ . A matrix A commutes with $I _ { n } + E _ { i j }$ if and only if $E _ { i j } A = A E _ { i j }$ . The latter condition implies that $A _ { j k } = 0$ for $k \neq j$ , that $A _ { k i } = 0$ for $k \neq i ,$ and that $A _ { i i } = A _ { j j }$ . If this holds for all $i \neq j$ , then $A = x I _ { n }$ is a scalar multiple of the identity, and we have $A \in \mathrm { S L } _ { n } ( \FF _ { q } )$ if and only if $x ^ { n } = 1$ in $\FF _ { q }$
 
-The multiplicative group $\FF _ { q } ^ { \times }$ is cyclic, so the necessary and sufficient condition for $x = 1$ to be the unique solution of $x ^ { n } = 1$ in $\FF _ { q }$ is that $q - 1$ and n are relatively prime.
+The center is trivial if and only if $\gcd(n,q-1)=1$.
+
+::: pf
+
+::: {.pf-step #s1}
+
+The center of $\SL_n(\FF_q)$ is the set of scalar matrices $xI$ with $x^n=1$.
+
+::: pf-proof
+
+Scalar matrices are central, and $\det(xI)=x^n$. Conversely, let $A$ be central and let $E_{ij}$ be the matrix unit. For $i\ne j$, $I+E_{ij}\in\SL_n(\FF_q)$, so $A$ commutes with $E_{ij}$. Comparing entries of $E_{ij}A$ and $AE_{ij}$ shows that the only nonzero entry of row $j$ of $A$ is $A_{jj}$, the only nonzero entry of column $i$ is $A_{ii}$, and $A_{ii}=A_{jj}$. Taking all pairs $i\ne j$ shows $A=xI$. For $n=1$, the group is trivial and the claim holds.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+The equation $x^n=1$ has exactly $\gcd(n,q-1)$ solutions in $\FF_q$.
+
+::: pf-proof
+
+The group $\FF_q^\times$ is cyclic of order $q-1$, and a cyclic group of order $m$ has exactly $\gcd(n,m)$ elements whose order divides $n$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the center has $\gcd(n,q-1)$ elements, so it is trivial exactly when $\gcd(n,q-1)=1$.
+
+:::
+
+:::
+
 :::

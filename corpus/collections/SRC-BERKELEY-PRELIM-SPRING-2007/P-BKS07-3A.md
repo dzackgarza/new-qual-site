@@ -5,7 +5,8 @@ kind: problem
 title: A $2\pi$-periodic real-analytic function extends to a periodic holomorphic function on a strip
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 ---
@@ -21,12 +22,51 @@ with $\rho > 0$ , and that $F ( z + 2 \pi ) = F ( z )$ for $z \in S$
 :::
 
 ::: {.solution}
-Since f is real analytic, it possesses derivatives of all orders and agrees with its (convergent) Taylor series on a neighborhood $( x - r _ { x } , x + r _ { x } )$ of every point $x \in \RR$ . The same power series may be used to define F on the complex neighborhood $B ( x , r _ { x } )$ of radius $r _ { x }$ centered at x. Since $f$ is periodic, the coefficients of the Taylor series at $x + 2 \pi$ are the same as those at $x ,$ so we may assume that $r _ { x + 2 \pi } = r _ { x }$ for all $x \in \RR$ . Let us cover the compact interval $[ - \pi , \pi ] \subset \CC$ with open squares $\begin{array} { r } { U _ { x } = \left( x - \frac { 1 } { 2 } r _ { x } , x + \frac { 1 } { 2 } r _ { x } \right) \times \left( - \frac { 1 } { 2 } r _ { x } , \frac { 1 } { 2 } r _ { x } \right) } \end{array}$ and choose a finite sub-cover $U _ { x _ { 1 } } , \ldots , U _ { x _ { n } }$ of $[ - \pi , \pi ]$ . We now define
 
-$$
-\rho = \operatorname* { m i n } \left\{ { \frac { 1 } { 2 } } r _ { x _ { i } } : 1 \leq i \leq n \right\}
-$$
+::: pf
 
-and note that since each square $U _ { x _ { i } }$ has half-height $\geq \rho$ and satisfies $U _ { x _ { i } } \subset B ( x _ { i } , r _ { x _ { i } } )$ , the balls $\{ B ( x _ { i k } , r _ { x _ { i } } ) : x _ { i k } = x _ { i } + 2 \pi k , 1 \leq i \leq n , k \in \ZZ \}$ cover the strip S. For any $z \in S$ , we define $F ( z )$ using the Taylor series at any $x _ { i k }$ for which $z \in B ( x _ { i k } , r _ { x _ { i } } )$ . A different choice of $x _ { i k }$ will yield the same value $F ( z )$ since the intersection of two balls containing z will contain a positive interval of the real axis on which the Taylor expansions agree with $f$, so they represent the same analytic function on this intersection.
-F satisfies $F ( z + 2 \pi ) = F ( z )$ for $z \in S$ since the Taylor expansion centered at $x _ { i k }$ defining F at $z \in B ( x _ { i k } , r _ { x _ { i } } )$ has the same coefficients as the one centered at $x _ { i , k + 1 }$ defining $F$ at $z + 2 \pi$
+::: {.pf-step #s1}
+
+For each $x\in\RR$ there is $r_x>0$ such that the Taylor series of $f$ at $x$ converges on the disk $B(x,r_x)\subseteq\CC$ and equals $f$ on $(x-r_x,x+r_x)$. Its sum $F_x$ is holomorphic on $B(x,r_x)$, and we may take $r_{x+2\pi}=r_x$.
+
+::: pf-proof
+
+This is the definition of real analyticity, together with the fact that a power series converges on a complex disk with the same radius as on the real interval. Since $f$ is $2\pi$-periodic, $f^{(k)}(x+2\pi)=f^{(k)}(x)$ for every $k$, so the Taylor series at $x$ and at $x+2\pi$ have the same coefficients.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+If $z\in B(x,r_x)\cap B(x',r_{x'})$ with $x,x'\in\RR$, then $F_x(z)=F_{x'}(z)$.
+
+::: pf-proof
+
+The intersection of two disks centered on $\RR$ is convex, hence connected, and it is symmetric about $\RR$. If it is nonempty, it contains a real point, and so it meets $\RR$ in a nonempty open interval. On that interval $F_x=f=F_{x'}$. By the identity theorem, $F_x=F_{x'}$ on the whole intersection.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+There is $\rho>0$ such that the strip $S=\{\abs{\operatorname{Im}z}<\rho\}$ is covered by the disks $B(x,r_x)$, $x\in\RR$.
+
+::: pf-proof
+
+The compact interval $[0,2\pi]$ is covered by finitely many intervals $(x_i-\frac12r_{x_i},x_i+\frac12r_{x_i})$, $1\le i\le N$. Let $\rho=\min_i\frac12r_{x_i}$. If $z=s+it$ with $s\in[0,2\pi]$ and $\abs t<\rho$, choose $i$ with $\abs{s-x_i}<\frac12r_{x_i}$. Then $\abs{z-x_i}<\frac12r_{x_i}+\frac12r_{x_i}=r_{x_i}$. For general $s$, translate by a multiple of $2\pi$ and use $r_{x+2\pi}=r_x$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, setting $F(z)=F_x(z)$ for any $x$ with $z\in B(x,r_x)$ defines a holomorphic function on $S$ that equals $f$ on $\RR$. If $z\in B(x,r_x)$, then $z+2\pi\in B(x+2\pi,r_x)$, and by step [](#s1){.pf-ref} $F_{x+2\pi}(z+2\pi)=F_x(z)$, because both power series have the same coefficients. Hence $F(z+2\pi)=F(z)$.
+
+:::
+
+:::
+
 :::

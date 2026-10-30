@@ -5,7 +5,8 @@ kind: problem
 title: A nonconstant entire function with $f(az+b)=f(z)$ forces $a$ to be a root of unity
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 ---
@@ -15,18 +16,39 @@ Let $a$ and $b$ be complex numbers, and let $f \colon \CC \to \CC$ be a non-cons
 :::
 
 ::: {.solution}
-If $a = 1$ , we are done, so assume that $a \neq 1$ . Then $a z + b = z$ has a unique solution, say c. Define $g ( z ) : = f ( z + c )$ , so
 
-$$
-g ( a z ) = f ( a z + c ) = f ( a z + a c + b ) = f ( a ( z + c ) + b ) = f ( z + c ) = g ( z ) .
-$$
+::: pf
 
-If the Taylor series of $g ( z )$ at z = 0 is $\textstyle \sum _ { i \geq 0 } g _ { i } z ^ { i }$ , then equating coefficients of $z ^ { n }$ in $g ( a z ) =$ $g ( z )$ yields
+::: {.pf-step #s1}
 
-$$
-a ^ { n } g _ { n } = g _ { n } .
-$$
+If $a\ne1$, let $c=b/(1-a)$, the fixed point of $z\mapsto az+b$, and let $g(z)=f(z+c)$. Then $g(az)=g(z)$ for all $z$.
 
-Since $f$ is not constant, g is not constant.
-Therefore for some $n \geq 1$ we have $g _ { n } \neq 0$ , and hence $a ^ { n } = 1$
+::: pf-proof
+
+$g(az)=f(az+c)=f(az+ac+b)=f(a(z+c)+b)=f(z+c)=g(z)$, using $c=ac+b$.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+If $a\ne1$, then $a^n=1$ for some $n\ge1$.
+
+::: pf-proof
+
+Write $g(z)=\sum_{n\ge0}g_nz^n$. Comparing coefficients in $g(az)=g(z)$ gives $a^ng_n=g_n$ for every $n$. Since $f$ is not constant, $g$ is not constant, so $g_n\ne0$ for some $n\ge1$, and then $a^n=1$.
+
+:::
+
+:::
+
+::: pf-qed
+
+If $a=1$, take $n=1$. Otherwise, use step [](#s2){.pf-ref}.
+
+:::
+
+:::
+
 :::

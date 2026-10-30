@@ -5,7 +5,8 @@ kind: problem
 title: A sequence whose every subsequence has a subsequence tending to $0$ converges to $0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 ---
@@ -15,5 +16,29 @@ Let $x_{1}, x_{2}, \ldots$ be an infinite sequence of real numbers such that eve
 :::
 
 ::: {.solution}
-Yes; in fact it must converge to 0. If not, there would exist $\epsilon > 0$ such that for infinitely many n, we have $\abs{ x _ { n } } > \epsilon$. Choose a subsequence $S$ consisting of such $x _ { n }$ . If $T$ is a subsequence of S, then T also consists of numbers of absolute value greater than $\epsilon$, so $T$ cannot converge to 0. Thus S has no subsequence converging to 0. This contradicts the given hypothesis.
+
+Yes. The sequence converges to $0$.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose that $x_n\not\to0$. Then there is a subsequence $S$ of $(x_n)$ and an $\varepsilon>0$ with $\abs{s}>\varepsilon$ for every term $s$ of $S$.
+
+::: pf-proof
+
+By the negation of convergence to $0$, there is $\varepsilon>0$ with $\abs{x_n}>\varepsilon$ for infinitely many $n$. Let $S$ list these terms in order.
+
+:::
+
+:::
+
+::: pf-qed
+
+Every subsequence of the sequence $S$ of step [](#s1){.pf-ref} has all its terms of absolute value greater than $\varepsilon$, so it does not converge to $0$. This contradicts the hypothesis applied to $S$. Hence $x_n\to0$.
+
+:::
+
+:::
+
 :::

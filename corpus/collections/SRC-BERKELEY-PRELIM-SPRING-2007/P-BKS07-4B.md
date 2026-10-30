@@ -5,7 +5,8 @@ kind: problem
 title: A finite-dimensional differentiation-stable space of entire functions contains a nowhere-vanishing function
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 ---
@@ -16,7 +17,27 @@ Let $V$ be a nonzero finite-dimensional $\CC$-subspace of $E$ with the property 
 :::
 
 ::: {.solution}
-The map $T \colon V \to V$ sending f to $f ^ { \prime }$ is a linear transformation.
-Since V is a C-vector space, there exists an eigenvalue $\lambda \in \CC$ . Let $f \in V$ be a corresponding (nonzero) eigenvector.
-Then $f ^ { \prime } = \lambda f$ , so $f ( z ) = c e ^ { \lambda z }$ for some $c \in \CC ^ { \times }$ . This function is everywhere nonzero.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Differentiation $T(f)=f'$ is a linear map $V\to V$, and it has an eigenvector $f\ne0$ with eigenvalue $\lambda\in\CC$.
+
+::: pf-proof
+
+$T$ maps $V$ to $V$ by hypothesis and is linear. A linear operator on a nonzero finite-dimensional complex vector space has an eigenvalue, because its characteristic polynomial has a root in $\CC$.
+
+:::
+
+:::
+
+::: pf-qed
+
+For the $f$ of step [](#s1){.pf-ref}, $(fe^{-\lambda z})'=(f'-\lambda f)e^{-\lambda z}=0$, so $f=ce^{\lambda z}$ for a constant $c$, and $c\ne0$ because $f\ne0$. This function has no zeros.
+
+:::
+
+:::
+
 :::

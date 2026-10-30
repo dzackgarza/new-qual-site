@@ -5,7 +5,8 @@ kind: problem
 title: Iterates $a_{n+1}=\cos a_n$ converge to the unique solution of $\cos x=x$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 ---
@@ -15,11 +16,51 @@ Given any real number $a_{0}$, define $a_{1}, a_{2}, \ldots$ by the rule $a_{n+1
 :::
 
 ::: {.solution}
-Let $g ( x ) = \cos x - x$ . Then $g ( 1 ) < 0$ , and since cos x is decreasing on $[ 0 , \pi ]$ , we have $\cos ( 1 / 2 ) > \cos ( \pi / 3 ) = 1 / 2$ , that is, $g ( 1 / 2 ) > 0$. By the Intermediate Value Theorem, there exists $1 / 2 < a < 1$ such that cos $a = a$ . To see that this a is the unique solution of $\cos x = x$ , observe first that any solution must clearly lie in $[ - 1 , 1 ]$ . On $[ - 1 , 0 )$ we have $x < 0 <$ cos x, so all solutions lie in [0, 1]. But $g ( x )$ is strictly decreasing on [0, 1], so the solution is unique.
 
-Consider any function f which is differentiable and satisfies $\abs{ f ^ { \prime } ( x ) } < c$ for all x in an interval $( a - d , a + d )$ , where $c < 1$, and $f ( a ) = a$ . For any $a _ { 0 } \in ( a - d , a + d )$ define a sequence $\left( a _ { n } \right)$ by $a _ { n + 1 } = f ( a _ { n } )$ . It follows by induction on n using the Mean Value Theorem that $a_n \in ( a - d , a + d )$ and $\abs{ a _ { n + 1 } - a } \leq c \abs{ a _ { n } - a }$ for all n, so $\abs{ a _ { n } - a } \leq c ^ { n } \abs{ a _ { 0 } - a }$, hence $\left( a _ { n } \right)$ converges to a.
+::: pf
 
-We’ll apply this with $f ( x ) = \cos x .$ , a the solution of cos $a = a$ , and $d = 1 / 2$ . Note that $[ a - d , a + d ] \subseteq ( 0 , 3 / 2 ) \subseteq ( 0 , \pi / 2 )$ since $a \in ( 1 / 2 , 1 )$ , and therefore $\abs{ \cos ^ { \prime } ( x ) } = \abs{ \sin x } < \sin ( a + d ) < 1$ for $x \in ( a - d , a + d )$; take $c = \sin ( a + d )$.
+::: {.pf-step #s1}
 
-The given sequence $\left( a _ { n } \right)$ satisfies $a _ { 1 } \in [ - 1 , 1 ]$ , hence $a _ { 2 } \in [ \cos ( 1 ) , 1 ] \subseteq [ 1 / 2 , 1 ] \subseteq ( a -$ $1 / 2 , a + 1 / 2 )$ . We conclude that $( a _ { 2 } , a _ { 3 } , \ldots )$ converges to a.
+The equation $\cos x=x$ has exactly one solution $a$, and $\frac12<a<1$.
+
+::: pf-proof
+
+Let $g(x)=\cos x-x$. Then $g(1)<0$, and $g(\frac12)>0$ because $\cos\frac12>\cos\frac\pi3=\frac12$. By the intermediate value theorem, $g$ has a zero in $(\frac12,1)$. A solution lies in $[-1,1]$, and none lies in $[-1,0)$, where $x<0<\cos x$. On $[0,1]$, $g'(x)=-\sin x-1<0$, so $g$ has only one zero there.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+On $I=[a-\frac12,a+\frac12]$, $\abs{\sin x}\le c=\sin(a+\frac12)<1$, and $\cos$ maps $I$ into $I$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $I\subseteq(0,\frac32)\subseteq(0,\frac\pi2)$, where $\sin$ is positive and increasing. For $x\in I$, the mean value theorem gives $\abs{\cos x-a}=\abs{\cos x-\cos a}\le c\abs{x-a}\le\frac12$.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+$a_2\in I$.
+
+::: pf-proof
+
+$a_1=\cos a_0\in[-1,1]$, so $a_2=\cos a_1\in[\cos1,1]$. Since $\cos1>\cos\frac\pi3=\frac12$, and $a-\frac12<\frac12$ and $a+\frac12>1$, this interval lies in $I$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, induction gives $a_n\in I$ and $\abs{a_{n+1}-a}\le c\abs{a_n-a}$ for $n\ge2$. So $\abs{a_n-a}\le c^{n-2}\abs{a_2-a}\to0$, and $a_n\to a$, the unique solution of $\cos x=x$ by step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
 :::

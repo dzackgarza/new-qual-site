@@ -5,7 +5,8 @@ kind: problem
 title: Exponential of a complex linear combination of the Pauli matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 ---
@@ -35,13 +36,55 @@ where $\frac{\sinh\beta}{\beta}$ is interpreted as $1$ if $\beta=0$.
 :::
 
 ::: {.solution}
-(a) An explicit calculation shows that $A ^ { 2 } = ( \alpha _ { 1 } ^ { 2 } + \alpha _ { 2 } ^ { 2 } + \alpha _ { 3 } ^ { 2 } ) I = \beta ^ { 2 } I$ . Thus
 
+::: pf
+
+::: {.pf-step #s1}
+
+$A^2=(\alpha_1^2+\alpha_2^2+\alpha_3^2)I=\beta^2I$.
+
+::: pf-proof
+
+$A=\begin{pmatrix}\alpha_3&\alpha_1-i\alpha_2\\\alpha_1+i\alpha_2&-\alpha_3\end{pmatrix}$. Its square has diagonal entries $\alpha_3^2+(\alpha_1-i\alpha_2)(\alpha_1+i\alpha_2)=\alpha_1^2+\alpha_2^2+\alpha_3^2$ and off-diagonal entries $\alpha_3(\alpha_1\mp i\alpha_2)-\alpha_3(\alpha_1\mp i\alpha_2)=0$.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+Part (a) holds.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $A^{2j}=\beta^{2j}I$ and $A^{2j+1}=\beta^{2j}A$. Hence
 $$
-{ \begin{array} { r l } & { \exp ( A ) = I + A + { \cfrac { 1 } { 2 ! } } A ^ { 2 } + { \cfrac { 1 } { 3 ! } } A ^ { 3 } + \cdots } \\ & { ~ = I + A + { \cfrac { \beta ^ { 2 } } { 2 ! } } I + { \cfrac { \beta ^ { 2 } } { 3 ! } } A + { \cfrac { \beta ^ { 4 } } { 4 ! } } I + { \cfrac { \beta ^ { 4 } } { 5 ! } } A + \cdots } \\ & { ~ = \cosh ( \beta ) I + { \cfrac { \sinh \beta } { \beta } } A , } \end{array} }
+\exp(A)=\sum_{j\ge0}\frac{\beta^{2j}}{(2j)!}I+\sum_{j\ge0}\frac{\beta^{2j}}{(2j+1)!}A=\cosh(\beta)I+\frac{\sinh\beta}{\beta}A,
 $$
+where the second series is $1$ when $\beta=0$, as the convention requires.
 
-where the last step is valid (with our convention) even if $\beta = 0$
+:::
 
-(b) The values $\alpha _ { 1 } = i \pi , \alpha _ { 2 } = i \pi , \alpha _ { 3 } = \pi$ give $\beta ^ { 2 } = - \pi ^ { 2 }$ , so we choose $\beta = i \pi$ and obtain $\cosh ( \beta ) = \cos ( i \beta ) = \cos ( - \pi ) = - 1 , \sinh ( \beta ) = - i \sin ( i \beta ) = - i \sin ( - \pi ) = 0$ , and $\exp ( A ) = - I$
+:::
+
+::: {.pf-step #s3}
+
+In part (b), $\exp(A)=-I$.
+
+::: pf-proof
+
+Here $\beta^2=-\pi^2-\pi^2+\pi^2=-\pi^2$; take $\beta=i\pi$. Then $\cosh(i\pi)=\cos\pi=-1$ and $\sinh(i\pi)=i\sin\pi=0$, so step [](#s2){.pf-ref} gives $\exp(A)=-I$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} answer parts (a) and (b).
+
+:::
+
+:::
+
 :::

@@ -5,7 +5,8 @@ kind: problem
 title: Harmonic function on the closed upper half-disk equal to $3$ on the diameter and $7$ on the arc
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

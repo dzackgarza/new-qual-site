@@ -5,7 +5,8 @@ kind: problem
 title: Cauchy--Binet formula for $\det(A^tB)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 ---
@@ -21,16 +22,51 @@ where the sum is over all size-$k$ subsets $I \subseteq \{1, \ldots, n\}$. (Sugg
 :::
 
 ::: {.solution}
-Let $a _ { i }$ be the i-th column vector of A. Let $b _ { j }$ be the j-th column vector of B. Let $e _ { 1 } , \ldots , e _ { n }$ be the standard basis of $\RR ^ { n }$ . Both sides of the identity are linear in each $a _ { i }$ and $b _ { j }$ , so we may assume that each column is a standard basis vector, say $\boldsymbol a _ { i } = \boldsymbol e _ { f ( i ) }$ and $b _ { j } = e _ { g ( j ) }$ Then $A ^ { t } B$ is the matrix whose ij-entry is $a _ { i } ^ { t } b _ { j }$ , which is 1 if $f ( i ) = g ( j )$ and 0 otherwise.
 
-If $f ( 1 ) , \ldots , f ( k )$ are not all different, then $A ^ { t } B$ has a repeated row, and every $A _ { I }$ has a repeated column, so both sides of the desired identity are 0. So assume that the $f ( i )$ are all different.
+::: pf
 
-Similarly, if $g ( 1 ) , \ldots , g ( k )$ are not all different, then $A ^ { t } B$ has a repeated column, and every $B _ { I }$ has a repeated column, so both sides of the desired identity are $0 .$ . So assume that the $g ( j )$ are all different.
+::: {.pf-step #s1}
 
-If $I \ne \{ f ( 1 ) , \ldots , f ( k ) \}$ , then $A _ { I }$ has fewer than k nonzero entries, so det $A _ { I } \ = \ 0$ . If $I \neq \{ g ( 1 ) , \ldots , g ( k ) \}$ , then $B _ { I }$ has fewer than k nonzero entries, so det $B _ { I } = 0$
+Both sides are multilinear in the columns $a_1,\ldots,a_k$ of $A$ and $b_1,\ldots,b_k$ of $B$. So it suffices to prove the identity when $a_i=e_{\sigma(i)}$ and $b_j=e_{\tau(j)}$ for maps $\sigma,\tau\colon\{1,\ldots,k\}\to\{1,\ldots,n\}$, where $e_1,\ldots,e_n$ is the standard basis.
 
-Suppose that $\{ f ( 1 ) , \ldots , f ( k ) \} \neq \{ g ( 1 ) , \ldots , g ( k ) \}$ . Then $A ^ { t } B$ has fewer than k nonzero entries.
-But also, by the previous paragraph, for every I, either det $A _ { I }$ or det $B _ { I }$ is 0. Thus the desired identity holds.
+::: pf-proof
 
-Finally, suppose that $\{ f ( 1 ) , \ldots , f ( k ) \} \ = \ \{ g ( 1 ) , \ldots , g ( k ) \}$ Let $S$ be this common $k$-element subset of $\{ 1 , \ldots , n \}$. Then $A ^ { t } B = ( A _ { S } ) ^ { t } ( B _ { S } )$ , so the left hand side of the identity equals $\det ( A _ { S } ) \det ( B _ { S } )$. If $I \neq S$ , then $\det \left( A _ { I } \right) \det ( B _ { I } ) = 0$ , so the right hand side of the identity equals $\det ( A _ { S } ) \det ( B _ { S } )$ too.
+The $(i,j)$ entry of $A^tB$ is $a_i^tb_j$, and the determinant is linear in each row and each column, so $\det(A^tB)$ is linear in each $a_i$ and each $b_j$. The columns of $A_I$ are the columns $a_i$ with the rows outside $I$ deleted, so $\det(A_I)$ is linear in each $a_i$, and likewise for $B$. Each column is a linear combination of the $e_m$. For $k=0$, both sides equal $1$.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+If $\sigma$ is not injective, both sides are $0$, and likewise for $\tau$.
+
+::: pf-proof
+
+If $a_i=a_{i'}$ with $i\ne i'$, then $A^tB$ has two equal rows and every $A_I$ has two equal columns. The case of $\tau$ is the same, with columns of $A^tB$.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+If $\sigma$ and $\tau$ are injective, both sides equal $\det(A_S)\det(B_S)$ when $S=\sigma(\{1,\ldots,k\})$ equals $\tau(\{1,\ldots,k\})$, and both sides are $0$ otherwise.
+
+::: pf-proof
+
+For a $k$-subset $I$, the matrix $A_I$ has a zero row unless $I=S$, so $\det(A_I)=0$ for $I\ne S$. Similarly $\det(B_I)=0$ unless $I$ is the image $S'$ of $\tau$. If $S\ne S'$, every term of the sum vanishes, and $A^tB$ has a zero row: choose $i$ with $\sigma(i)\notin S'$; then $a_i^tb_j=0$ for every $j$. If $S=S'$, the only term of the sum is $\det(A_S)\det(B_S)$, and $A^tB=A_S^tB_S$ because the rows of $A$ and $B$ outside $S$ are zero.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} to [](#s3){.pf-ref} prove the identity.
+
+:::
+
+:::
+
 :::

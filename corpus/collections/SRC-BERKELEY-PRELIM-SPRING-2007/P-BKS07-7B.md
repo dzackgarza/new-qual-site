@@ -5,7 +5,8 @@ kind: problem
 title: A twisted product on $G\times G$ is a group, with no index-$2$ subgroup when $G=A_n$, $n\ge5$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

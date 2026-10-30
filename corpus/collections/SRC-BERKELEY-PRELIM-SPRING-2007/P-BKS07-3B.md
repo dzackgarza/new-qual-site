@@ -5,7 +5,8 @@ kind: problem
 title: $\QQ(x)(\sqrt[k]{1-x^l})\cong\QQ(x)(\sqrt[l]{1-x^k})$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 ---
@@ -26,6 +27,39 @@ Prove that these two fields are isomorphic.
 :::
 
 ::: {.solution}
-The polynomial $y ^ { k } + x ^ { l } - 1$ is irreducible, for any positive integers k, l. One way to prove this is to regard $y ^ { k } + x ^ { l } - 1$ as a polynomial in y over $\QQ [ x ]$ and apply Eisenstein’s criterion, using the fact that $x - 1$ divides $x ^ { l } - 1$ but $( x - 1 ) ^ { 2 }$ does not.
-It follows that the fields in question are the fraction fields of $\QQ [ x , y ] / ( y ^ { k } + x ^ { l } - 1 )$ and $\QQ [ x , y ] / ( y ^ { l } + x ^ { k } - 1 )$ , respectively, which are isomorphic by the exchange of $x$ and $y$.
+
+::: pf
+
+::: {.pf-step #s1}
+
+For all positive integers $k,l$, the polynomial $P_{k,l}=y^k+x^l-1$ is irreducible in $\QQ(x)[y]$ and in $\QQ[x,y]$.
+
+::: pf-proof
+
+Regard $P_{k,l}$ as a monic polynomial in $y$ over the unique factorization domain $\QQ[x]$. The prime $x-1$ divides $x^l-1$ and $(x-1)^2$ does not, because $x^l-1=(x-1)(x^{l-1}+\cdots+1)$ and the second factor is $l\ne0$ at $x=1$. Eisenstein's criterion gives irreducibility in $\QQ(x)[y]$. Since $P_{k,l}$ is monic in $y$, Gauss's lemma gives irreducibility in $\QQ[x][y]$.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+$\QQ(x)\bigl(\sqrt[k]{1-x^l}\bigr)$ is isomorphic to the fraction field of $R_{k,l}=\QQ[x,y]/(P_{k,l})$.
+
+::: pf-proof
+
+Let $\theta$ be the chosen $k$-th root of $1-x^l$. By step [](#s1){.pf-ref}, $P_{k,l}$ is the minimal polynomial of $\theta$ over $\QQ(x)$, so the field is $L=\QQ(x)[y]/(P_{k,l})$. The map $R_{k,l}\to L$ sending $y$ to $\theta$ is injective: if $h\in\QQ[x,y]$ vanishes at $y=\theta$, then $P_{k,l}$ divides $h$ in $\QQ(x)[y]$, and since $P_{k,l}$ is monic in $y$, division with remainder in $\QQ[x][y]$ shows that it divides $h$ in $\QQ[x,y]$. Every element of $L$ is a quotient of elements of the image, so $L$ is the fraction field of $R_{k,l}$.
+
+:::
+
+:::
+
+::: pf-qed
+
+The $\QQ$-algebra automorphism of $\QQ[x,y]$ that exchanges $x$ and $y$ sends $P_{k,l}$ to $P_{l,k}$. It induces $R_{k,l}\cong R_{l,k}$, hence an isomorphism of fraction fields. By step [](#s2){.pf-ref}, the two fields are isomorphic.
+
+:::
+
+:::
+
 :::

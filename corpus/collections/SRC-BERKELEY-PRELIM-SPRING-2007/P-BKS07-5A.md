@@ -5,7 +5,8 @@ kind: problem
 title: Solutions of an order-$r$ linear ODE with $C^m$ coefficients are $C^{m+r}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 ---
@@ -19,14 +20,43 @@ $$
 :::
 
 ::: {.solution}
-Rewrite the differential equation as
 
+::: pf
+
+::: {.pf-step #s1}
+
+$y$ is $C^r$.
+
+::: pf-proof
+
+Write the equation as
 $$
-y ^ { ( r ) } = b - \left( a _ { r - 1 } y ^ { ( r - 1 ) } + \cdot \cdot \cdot + a _ { 1 } y ^ { \prime } + a _ { 0 } y \right) ,\tag{1}
+y^{(r)}=b-\bigl(a_{r-1}y^{(r-1)}+\cdots+a_1y'+a_0y\bigr).
 $$
+The derivatives $y,\ldots,y^{(r-1)}$ are differentiable, hence continuous, and the $a_i$ and $b$ are continuous. So $y^{(r)}$ is continuous.
 
-and proceed by induction on m. For $m = 0$ , the derivatives of $y$ on the right-hand side of (1) are differentiable and hence continuous.
-The functions $a _ { i }$ and b are continuous by assumption, so $y ^ { ( r ) }$ is continuous, i.e., $y$ is $C ^ { r }$.
+:::
 
-For $m > 0$ , assume by induction that y is $C ^ { m + r - 1 }$ Then the derivatives of y on the right-hand side of (1) are $C ^ { m }$ . The functions $a _ { i }$ and b are $C ^ { m }$ by assumption, so $y ^ { ( r ) }$ is $C ^ { m }$ hence y is $C ^ { m + r }$
+:::
+
+::: {.pf-step #s2}
+
+If $y$ is $C^{j+r}$ for some $j<m$, then $y$ is $C^{j+1+r}$.
+
+::: pf-proof
+
+Then $y,\ldots,y^{(r-1)}$ are $C^{j+1}$, and the $a_i$ and $b$ are $C^m$, hence $C^{j+1}$. By the displayed equation of step [](#s1){.pf-ref}, $y^{(r)}$ is $C^{j+1}$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By step [](#s1){.pf-ref} and $m$ applications of step [](#s2){.pf-ref}, $y$ is $C^{m+r}$.
+
+:::
+
+:::
+
 :::
