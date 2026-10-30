@@ -5,7 +5,8 @@ kind: problem
 title: A distributive identity for gcd and lcm
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

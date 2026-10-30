@@ -5,7 +5,8 @@ kind: problem
 title: Powers entering a finite-index subgroup
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -26,9 +27,9 @@ audit:
 Let $G$ be a group and let $H\le G$ have finite index $n$.
 Prove or disprove:
 
-1. If $a\in G$, then $a^n\in H$.
+(a) If $a\in G$, then $a^n\in H$.
 
-2. If $a\in G$, then for some $k$ with $1\le k\le n$ one has $a^k\in H$.
+(b) If $a\in G$, then for some $k$ with $1\le k\le n$ one has $a^k\in H$.
 :::
 
 ::: {.solution}
@@ -37,7 +38,7 @@ Prove or disprove:
 
 ::: {.pf-step #s1}
 
-Statement (1) is false in general.
+Statement (a) is false in general.
 
 ::: pf-proof
 
@@ -72,7 +73,7 @@ element when the subgroup is not normal.
 
 ::: {.pf-step #s2}
 
-Statement (2) is true.
+Statement (b) is true.
 
 ::: pf-proof
 
@@ -124,16 +125,16 @@ as required.
 Therefore the answers are
 $$
 \boxed{
-\text{(1) false,}
+\text{(a) false,}
 \qquad
-\text{(2) true.}
+\text{(b) true.}
 }
 $$
 
 ::: pf-proof
 
-Step [](#s1){.pf-ref} gives the counterexample to Part (1), and step [](#s2){.pf-ref} proves
-Part (2).
+Step [](#s1){.pf-ref} gives the counterexample to part (a), and step [](#s2){.pf-ref} proves
+part (b).
 
 :::
 

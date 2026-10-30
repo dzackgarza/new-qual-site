@@ -5,7 +5,8 @@ kind: problem
 title: A contour formula for coefficientwise products of analytic functions
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
@@ -18,13 +19,13 @@ audit:
 ::: {.problem}
 Let $f$ and $g$ be analytic in the open unit disk, and let $C_r$ be the positively oriented circle $\abs{w}=r$.
 
-1. Prove that
+(a) Prove that
 $$
 h(z)=\frac1{2\pi i}\int_{C_r}\frac1w f(w)g\!\left(\frac zw\right)\,dw
 $$
 is independent of $r$ whenever $\abs{z}<r<1$, and that it defines an analytic function $h$ on $\abs{z}<1$.
 
-2. Prove or give a counterexample: if $f\not\equiv0$ and $g\not\equiv0$, then $h\not\equiv0$.
+(b) Prove or give a counterexample: if $f\not\equiv0$ and $g\not\equiv0$, then $h\not\equiv0$.
 :::
 
 ::: {.solution}
@@ -117,7 +118,7 @@ Since $\rho/s^2<1$, the Weierstrass $M$-test gives uniform convergence on $\abs{
 
 ::: {.pf-step #s3}
 
-The integral in part 1 is independent of $r$ whenever $\abs{z}<r<1$, and it defines the analytic function
+The integral in part (a) is independent of $r$ whenever $\abs{z}<r<1$, and it defines the analytic function
 $$
 h(z)=\sum_{n=0}^{\infty}a_nb_nz^n.
 $$
@@ -132,7 +133,7 @@ For every admissible $r$, step [](#s1){.pf-ref} identifies the integral with the
 
 ::: {.pf-step #s4}
 
-The assertion in part 2 is false.
+The assertion in part (b) is false.
 
 ::: pf-proof
 
@@ -163,7 +164,7 @@ $$
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} proves part 1, and step [](#s4){.pf-ref} supplies the required counterexample for part 2.
+Step [](#s3){.pf-ref} proves part (a), and step [](#s4){.pf-ref} supplies the required counterexample for part (b).
 
 :::
 

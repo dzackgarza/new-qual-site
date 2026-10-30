@@ -5,7 +5,8 @@ kind: problem
 title: The Vandermonde determinant
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

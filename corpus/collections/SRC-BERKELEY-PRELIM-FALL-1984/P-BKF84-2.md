@@ -5,7 +5,8 @@ kind: problem
 title: Derivatives of $(A+tB)^k$ and $\operatorname{tr}(A+tB)^k$ at $t=0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -25,12 +26,12 @@ audit:
 ::: {.problem}
 Let $A,B$ be real $n\times n$ matrices and let $k$ be a positive integer. Find
 
-1.
+(a)
 $$
 \lim_{t\to0}\frac{(A+tB)^k-A^k}{t};
 $$
 
-2.
+(b)
 $$
 \evaluated{\frac d{dt}\operatorname{tr}(A+tB)^k}_{t=0}.
 $$
@@ -71,7 +72,7 @@ commutativity is used.
 
 ::: {.pf-step #s2}
 
-The limit in Part (1) is
+The limit in part (a) is
 $$
 \boxed{
 \sum_{j=0}^{k-1}A^jBA^{k-1-j}
@@ -104,7 +105,7 @@ $$
 
 ::: {.pf-step #s3}
 
-The derivative in Part (2) is
+The derivative in part (b) is
 $$
 \boxed{
 k\operatorname{tr}(BA^{k-1})

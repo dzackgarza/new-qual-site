@@ -5,7 +5,8 @@ kind: problem
 title: Eigenvalues and eigenspaces of a rank-one outer-product matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: The integral $\int_0^\infty\frac{x-\sin x}{x^3}\,dx$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

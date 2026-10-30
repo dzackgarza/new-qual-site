@@ -5,7 +5,8 @@ kind: problem
 title: Solutions of $y'=3xy+\frac{y}{1+y^2}$ with $y(0)=1/n$ tend to $0$ at $x=1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Ordinary Differential Equations
 relations: []
 review: draft
 audit:
@@ -29,9 +30,9 @@ $$
 $$
 Prove:
 
-1. for each $n=1,2,\ldots$ there is a unique solution $y=f_n(x)$ on $0\le x\le1$ satisfying $f_n(0)=1/n$;
+(a) for each $n=1,2,\ldots$ there is a unique solution $y=f_n(x)$ on $0\le x\le1$ satisfying $f_n(0)=1/n$;
 
-2.
+(b)
 $$
 \lim_{n\to\infty}f_n(1)=0.
 $$
@@ -186,7 +187,7 @@ and the right-hand side tends to $0$.
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} proves Part (1), and step [](#s4){.pf-ref} proves Part (2).
+Step [](#s2){.pf-ref} proves part (a), and step [](#s4){.pf-ref} proves part (b).
 
 :::
 
