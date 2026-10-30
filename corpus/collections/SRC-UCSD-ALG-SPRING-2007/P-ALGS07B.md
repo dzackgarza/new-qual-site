@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS07B
 kind: problem
-title: "Intersection of ideals and generators in a PID"
+title: 'The colon ideal $\{r : rJ \subseteq I\}$ and its generator in a PID'
 classification:
   areas:
   - algebra
@@ -14,20 +14,28 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-07
-  note: Compared both parts with Problem 2 on pages 3-4 of the official Spring 2007 UCSD algebra qualifying exam.
+  note: Compared both parts with Problem 2 on pages 3-4 of the official Spring 2007 UCSD algebra
+    qualifying exam.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-07
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-07
-  note: Verified the ideal axioms and the PID intersection formula, including the zero-ideal cases via the divisibility characterization of a least common multiple.
+  note: Verified the ideal axioms and the PID intersection formula, including the zero-ideal
+    cases via the divisibility characterization of a least common multiple.
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: 'Part (a) defined K as the intersection of I and J; the exam (page 3, read from the
+    page image) defines K = {r : rJ contained in I}. Restored the statement and rewrote the
+    solution for the colon ideal.'
 ---
 
 ::: {.problem}
 Let $I$, $J$ be two ideals in a commutative ring $R$ (with unit).
 
-(a) Define $K = \{x : x \in I \text{ and } x \in J\}$.
+(a) Define $K = \{r : rJ \subseteq I\}$.
 Show that $K$ is an ideal.
 
 (b) If $R$ is a principal ideal domain, so $I = (i)$, $J = (j)$, give a formula for a generator $k$ of $K$.
@@ -39,23 +47,22 @@ Show that $K$ is an ideal.
 
 ::: pf-step
 
-The set $K=I\cap J$ is an ideal of $R$.
+The set $K=\{r\in R : rJ\subseteq I\}$ is an ideal of $R$.
 
 ::: pf-proof
 
-Because $I$ and $J$ are ideals, $0\in I$ and $0\in J$, hence $0\in K$.
-If $a,b\in K$, then $a,b\in I$ and $a,b\in J$.
-Therefore
+Since $0\cdot J=\{0\}\subseteq I$, one has $0\in K$.
+Let $a,b\in K$ and $x\in J$.
+Then $ax\in I$ and $bx\in I$, so
 $$
-a-b\in I\qquad\text{and}\qquad a-b\in J,
+(a-b)x=ax-bx\in I.
 $$
-so $a-b\in K$.
-Thus $K$ is an additive subgroup of $R$.
+Hence $a-b\in K$, and $K$ is an additive subgroup of $R$.
 
-For $r\in R$ and $a\in K$, one has $a\in I\cap J$.
-Since both $I$ and $J$ are ideals,
+Let $r\in R$, $a\in K$ and $x\in J$.
+Then $ax\in I$, and since $I$ is an ideal,
 $$
-ra\in I\qquad\text{and}\qquad ra\in J.
+(ra)x=r(ax)\in I.
 $$
 Hence $ra\in K$.
 Thus $K$ is an ideal.
@@ -66,38 +73,42 @@ Thus $K$ is an ideal.
 
 ::: pf-step
 
-If $R$ is a PID, then
+Let $R$ be a PID with $I=(i)$ and $J=(j)$.
+If $j=0$, then $K=R=(1)$.
+If $j\neq0$, let $d=\gcd(i,j)$; then
 $$
-I\cap J=(\operatorname{lcm}(i,j)),
+K=\left(\frac{i}{d}\right).
 $$
-where the least common multiple is defined up to multiplication by a unit.
 
 ::: pf-proof
 
-Write $I=(i)$ and $J=(j)$.
-For any $x\in R$,
-$$
-x\in I\cap J
-\iff i\mid x\text{ and }j\mid x.
-$$
-Thus the elements of $I\cap J$ are exactly the common multiples of $i$ and $j$.
+If $j=0$, then $J=(0)$ and $rJ=\{0\}\subseteq I$ for every $r\in R$, so $K=R$.
 
-Since $R$ is a PID, $I\cap J$ is principal; write $I\cap J=(k)$.
-Then $k$ itself is a common multiple of $i$ and $j$.
-Conversely, every common multiple $x$ lies in $(k)$, so $k\mid x$.
-Hence $k$ is a least common multiple of $i$ and $j$ in the divisibility sense.
-Therefore one may take
-$$
-k=\operatorname{lcm}(i,j),
-$$
-up to a unit.
+Assume $j\neq0$.
+Then $d\neq0$, because $d\mid j$.
+Write $i=di'$ and $j=dj'$.
+Since $d=\gcd(i,j)$, the elements $i'$ and $j'$ are coprime, so there are $a,b\in R$ with $ai'+bj'=1$.
 
-Equivalently, when $i,j\ne0$, if $d=\gcd(i,j)$ then one may choose
+Because $J=(j)$ and $I$ is an ideal, $rJ\subseteq I$ holds if and only if $rj\in I$.
+Hence for $r\in R$,
 $$
-k=\frac{ij}{d}
+r\in K
+\iff i\mid rj
+\iff di'\mid rdj'
+\iff i'\mid rj',
 $$
-up to a unit.
-The ideal formula $I\cap J=(\operatorname{lcm}(i,j))$ also covers $I=(0)$ or $J=(0)$, in which case the intersection is $(0)$.
+where the last equivalence cancels the nonzero element $d$ in the domain $R$.
+
+If $i'\mid r$, then $i'\mid rj'$.
+Conversely, if $i'\mid rj'$, then
+$$
+r=r(ai'+bj')=(ra)i'+b(rj')
+$$
+is divisible by $i'$.
+Therefore $r\in K$ if and only if $i'\mid r$, that is, $K=(i')=(i/d)$.
+
+When $i=0$, one has $d=j$ up to a unit and $i'=0$, so the formula gives $K=(0)$.
+This agrees with the definition: $rj=0$ forces $r=0$ in a domain when $j\neq0$.
 
 :::
 

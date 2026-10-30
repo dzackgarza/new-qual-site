@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS07C
 kind: problem
-title: "All R[x]-module structures on a 3-dimensional real vector space"
+title: "All $\\RR[x]$-module structures on a 3-dimensional real vector space"
 classification:
   areas:
   - algebra
