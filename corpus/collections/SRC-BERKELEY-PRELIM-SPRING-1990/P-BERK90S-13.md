@@ -5,7 +5,8 @@ kind: problem
 title: Repeated Rolle theorem from vanishing derivatives at one endpoint
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Intermediate-value property plus closed level sets forces continuity
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

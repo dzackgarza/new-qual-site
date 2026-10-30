@@ -5,7 +5,8 @@ kind: problem
 title: Two nonisomorphic nonabelian groups of each of the orders $24$, $30$, and $40$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

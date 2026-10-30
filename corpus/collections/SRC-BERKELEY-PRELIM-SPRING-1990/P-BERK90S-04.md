@@ -5,7 +5,8 @@ kind: problem
 title: Uniqueness of an index-three maximal ideal from additive generation by squares of units
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

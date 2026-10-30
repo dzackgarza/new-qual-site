@@ -5,7 +5,8 @@ kind: problem
 title: A two-point boundary-value problem for $y''+y'-y=0$ has only the zero solution
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

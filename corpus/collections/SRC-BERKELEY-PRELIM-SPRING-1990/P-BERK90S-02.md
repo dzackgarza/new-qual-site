@@ -5,7 +5,8 @@ kind: problem
 title: Every finite-order complex matrix is diagonalizable
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

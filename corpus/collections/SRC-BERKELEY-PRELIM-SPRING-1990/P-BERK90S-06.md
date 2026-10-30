@@ -5,7 +5,8 @@ kind: problem
 title: A continuous moment curve whose values at any three distinct parameters form a basis
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Dimension of endomorphisms preserving two subspaces whose sum is the whole space
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

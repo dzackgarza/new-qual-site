@@ -5,7 +5,8 @@ kind: problem
 title: Greatest common divisor of all integers $n^{13}-n$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

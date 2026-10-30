@@ -5,7 +5,8 @@ kind: problem
 title: A bounded analytic function on a half-plane is uniformly continuous away from the boundary
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

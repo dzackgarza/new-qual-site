@@ -5,7 +5,8 @@ kind: problem
 title: Positivity of the spectrum of the discrete one-dimensional Laplacian matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

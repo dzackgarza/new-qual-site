@@ -5,7 +5,8 @@ kind: problem
 title: A coefficient-norm bound for the roots of a monic polynomial
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

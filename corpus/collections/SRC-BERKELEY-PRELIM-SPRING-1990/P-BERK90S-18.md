@@ -5,7 +5,8 @@ kind: problem
 title: A subset of complex numbers whose sum has modulus at least $\frac{1}{4\sqrt2}\sum\abs{z_j}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: First-order error bound for left Riemann sums
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

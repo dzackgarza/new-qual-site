@@ -5,7 +5,8 @@ kind: problem
 title: The multiplicative group $\CC^*$ has no proper finite-index subgroup
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

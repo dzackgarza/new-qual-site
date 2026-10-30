@@ -5,7 +5,8 @@ kind: problem
 title: A nonnegative sequence with summably bounded upward increments converges
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

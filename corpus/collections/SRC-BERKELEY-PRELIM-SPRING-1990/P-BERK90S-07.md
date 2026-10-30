@@ -5,7 +5,8 @@ kind: problem
 title: The integral $\int_0^\infty \sin x/[x(x^2+a^2)]\,dx$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
