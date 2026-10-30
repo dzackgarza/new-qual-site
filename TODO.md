@@ -709,7 +709,7 @@ mathematical correction under its own node, not under copy policy.
     - [x] P-NIC7C: λ: T(X)→ℂ; the exam's spaces are real.
     - [x] P-TOP-WORKSHOP-D4-03: "(Jan '04 # A3)" in the statement (CARD-02).
     - [x] Card pages list one collection twice when a card appears in two sections of it (P-TOP-WORKSHOP-D3-04, -D3-05); render one entry per appearance with its section name.
-    **Acceptance:** each item read and repaired. **Closed.** The other UCLA analysis exams share the Problems 1-6 classification defect; see COMPLAINTS.md.
+    **Acceptance:** each item read and repaired. **Closed.**
 
   - **`ad9-prelim`**. **Needs:** none. Round 9 at 2cd9297bd3; report in the session scratchpad r9-prelim.md.
     - [x] P-KU6C3: the bracketed note lost its opening, leaving a stray "]"; the source asks only for the root 1 and gives 1 (double) and −2 as information.

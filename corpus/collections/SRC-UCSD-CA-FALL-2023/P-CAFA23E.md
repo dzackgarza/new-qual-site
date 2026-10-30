@@ -7,7 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Complex Analysis
+  - Holomorphic Functions
+  - Removable Singularities
 relations: []
 review: draft
 ---
