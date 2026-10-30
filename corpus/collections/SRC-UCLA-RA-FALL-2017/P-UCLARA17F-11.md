@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. Let $f:\DD\to\CC$ be an injective holomorphic function with $f(0)=0$ and $f'(0)=1$. Show that
+Let $f:\DD\to\CC$ be an injective holomorphic function with $f(0)=0$ and $f'(0)=1$. Show that
 $$
 \inf\{\abs{w}:w\notin f(\DD)\}\le1,
 $$

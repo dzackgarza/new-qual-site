@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Suppose $f:\RR\to\RR$ is non-decreasing; specifically, for $x,y\in\RR$ we have the implication
+Suppose $f:\RR\to\RR$ is non-decreasing; specifically, for $x,y\in\RR$ we have the implication
 $$
 x\le y \Longrightarrow f(x)\le f(y).
 $$

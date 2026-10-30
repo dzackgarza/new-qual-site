@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. Consider the Banach space $V=C([-1,1])$ of all real-valued continuous functions on $[-1,1]$, equipped with the supremum norm
+Consider the Banach space $V=C([-1,1])$ of all real-valued continuous functions on $[-1,1]$, equipped with the supremum norm
 $$
 \norm{f}=\sup\{\abs{f(x)}:x\in[-1,1]\},\qquad f\in V.
 $$

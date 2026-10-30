@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. Let $f$, $g$, and $h$ be complex-valued functions defined on $\CC$ with
+Let $f$, $g$, and $h$ be complex-valued functions defined on $\CC$ with
 $$
 f=g\circ h.
 $$

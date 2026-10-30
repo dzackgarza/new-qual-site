@@ -19,11 +19,13 @@ audit:
 ---
 
 ::: {.problem}
-Problem 9. Consider a map $F:\CC\times\CC\to\CC$ with the following properties:
+Consider a map $F:\CC\times\CC\to\CC$ with the following properties:
 
-1. For each fixed $z\in\CC$, the map $w\mapsto F(z,w)$ is injective.
-2. For each fixed $w\in\CC$, the map $z\mapsto F(z,w)$ is holomorphic.
-3. $F(0,w)=w$ for $w\in\CC$.
+(i) For each fixed $z\in\CC$, the map $w\mapsto F(z,w)$ is injective.
+
+(ii) For each fixed $w\in\CC$, the map $z\mapsto F(z,w)$ is holomorphic.
+
+(iii) $F(0,w)=w$ for $w\in\CC$.
 
 Show that
 $$

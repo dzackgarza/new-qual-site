@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Let $f\in L^2(\CC)$. For $z\in\CC$ define
+Let $f\in L^2(\CC)$. For $z\in\CC$ define
 $$
 g(z)=\int_{\{w\in\CC:\abs{w-z}\le1\}}\frac{\abs{f(w)}}{\abs{w-z}}\,dA(w),
 $$

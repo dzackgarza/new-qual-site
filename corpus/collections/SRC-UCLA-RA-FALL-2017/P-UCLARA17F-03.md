@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Let $\{\mu_n\}$ denote a sequence of Borel probability measures on $\RR$. For $n\in\NN$ and $x\in\RR$ define
+Let $\{\mu_n\}$ denote a sequence of Borel probability measures on $\RR$. For $n\in\NN$ and $x\in\RR$ define
 $$
 F_n(x):=\mu_n(( -\infty,x]).
 $$

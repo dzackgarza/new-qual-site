@@ -20,11 +20,13 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Prove that there exists a meromorphic function $f$ on $\CC$ with the following three properties:
+Prove that there exists a meromorphic function $f$ on $\CC$ with the following three properties:
 
-1. $f(z)=0$ if and only if $z\in\ZZ$;
-2. $f(z)=\infty$ if and only if $z-\frac13\in\ZZ$;
-3. $\abs{f(x+iy)}\le1$ for all $x\in\RR$ and all $y\in\RR$ with $\abs{y}\ge1$.
+(i) $f(z)=0$ if and only if $z\in\ZZ$;
+
+(ii) $f(z)=\infty$ if and only if $z-\frac13\in\ZZ$;
+
+(iii) $\abs{f(x+iy)}\le1$ for all $x\in\RR$ and all $y\in\RR$ with $\abs{y}\ge1$.
 :::
 
 ::: {.solution}

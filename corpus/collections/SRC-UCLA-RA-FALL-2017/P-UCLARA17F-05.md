@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Suppose $f:\RR\to\RR$ is a bounded and measurable function satisfying
+Suppose $f:\RR\to\RR$ is a bounded and measurable function satisfying
 $$
 f(x+1)=f(x)\qquad\text{and}\qquad f(2x)=f(x)
 $$

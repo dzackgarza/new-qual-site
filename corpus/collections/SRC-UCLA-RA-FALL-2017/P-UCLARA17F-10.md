@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. Let $\{f_n\}$ be a sequence of holomorphic functions on $\DD$ with the property that
+Let $\{f_n\}$ be a sequence of holomorphic functions on $\DD$ with the property that
 $$
 F(z):=\sum_{n=1}^{\infty}\abs{f_n(z)}^2\le1
 $$

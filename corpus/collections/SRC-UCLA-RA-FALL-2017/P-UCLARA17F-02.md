@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Let $\{f_n\}$ denote a bounded sequence in $L^2([0,1])$. Suppose the sequence $\{f_n\}$ also converges almost everywhere. Show that then $\{f_n\}$ converges in the weak topology on $L^2([0,1])$.
+Let $\{f_n\}$ denote a bounded sequence in $L^2([0,1])$. Suppose the sequence $\{f_n\}$ also converges almost everywhere. Show that then $\{f_n\}$ converges in the weak topology on $L^2([0,1])$.
 :::
 
 ::: {.solution}

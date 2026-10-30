@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Show that a harmonic function $u:\DD\to\RR$ is uniformly continuous if and only if it admits the representation
+Show that a harmonic function $u:\DD\to\RR$ is uniformly continuous if and only if it admits the representation
 $$
 u(z)=\frac1{2\pi}\int_0^{2\pi}\operatorname{Re}\!\left(\frac{e^{i\theta}+z}{e^{i\theta}-z}\right)f(e^{i\theta})\,d\theta,
 \qquad z\in\DD,

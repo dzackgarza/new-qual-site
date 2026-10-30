@@ -359,7 +359,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCLA-RA-FALL-2014
   - [x] SRC-UCLA-RA-FALL-2015
   - [x] SRC-UCLA-RA-FALL-2016
-  - [ ] SRC-UCLA-RA-FALL-2017
+  - [x] SRC-UCLA-RA-FALL-2017
   - [ ] SRC-UCLA-RA-FALL-2018
   - [ ] SRC-UCLA-RA-SPRING-2009
   - [ ] SRC-UCLA-RA-SPRING-2010
