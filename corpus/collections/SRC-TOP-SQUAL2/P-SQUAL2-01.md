@@ -83,7 +83,7 @@ Every set $\overline{A_\alpha}$ is contained in the right-hand side by step [](#
 
 ::: pf-step
 
-Each $A_n$ is closed.
+Equality can fail. In $X=\RR$, let $A_n=\{1/n\}$ for $n\ge1$. Each $A_n$ is closed.
 
 
 ::: pf-proof

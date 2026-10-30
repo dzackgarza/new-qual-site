@@ -104,7 +104,7 @@ The $\tau'$-open cover in step [](#s1-1){.pf-ref} was arbitrary.
 
 ::: {.pf-step #s1-6}
 
-Consider the identity map
+Suppose, for contradiction, that $(X,\tau')$ is Hausdorff. Consider the identity map
 $$
 \operatorname{id}_X:(X,\tau)\to(X,\tau').
 $$

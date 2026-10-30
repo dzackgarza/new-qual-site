@@ -139,7 +139,7 @@ is the free group on two generators.
 
 ::: pf-step
 
-An affine change of coordinates sends them to
+If $L_1,L_2$ are skew, an affine change of coordinates sends them to
 $$
 \boxed{
 L_1=\{(t,0,0):t\in\RR\},

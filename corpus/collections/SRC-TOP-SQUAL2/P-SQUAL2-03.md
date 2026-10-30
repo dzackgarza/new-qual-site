@@ -49,7 +49,7 @@ If both coordinates were equal, the ordered pairs would be equal.
 
 ::: {.pf-step #s1-2}
 
-Since $X$ is completely Hausdorff, there exist open sets
+Case 1: $x_1\ne x_2$. Since $X$ is completely Hausdorff, there exist open sets
 $$
 U_1,U_2\subseteq X
 $$
@@ -221,7 +221,7 @@ which is empty by step [](#s1-2){.pf-ref}.
 
 ::: pf-step
 
-If $x_1=x_2$, then $y_1\ne y_2$, and there exist open sets
+Case 2: $x_1=x_2$. Then $y_1\ne y_2$, and there exist open sets
 $$
 V_1,V_2\subseteq Y
 $$
