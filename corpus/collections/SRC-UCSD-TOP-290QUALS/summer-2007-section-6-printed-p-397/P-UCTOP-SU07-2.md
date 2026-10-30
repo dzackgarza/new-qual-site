@@ -35,14 +35,11 @@ At each vertex there is exactly one incoming and one outgoing edge of each label
 :::
 
 ::: pf-step
-This covering graph is homeomorphic to $X_5$.
+This covering graph is homotopy equivalent to $X_5$, which is the sense in which "$X_5$ covers $X_3$" can hold.
 
 ::: pf-proof
-It has $V=2$ vertices and $E=6$ edges. A connected graph has free fundamental group of rank
-$$
-E-V+1=6-2+1=5.
-$$
-Collapsing a maximal tree therefore identifies it up to homeomorphism type as a graph with rank $5$, i.e. after suppressing valence-two subdivision data it is the bouquet $X_5$.
+It has $V=2$ vertices and $E=6$ edges. Collapsing the maximal tree formed by one $a$-edge is a homotopy equivalence onto a graph with one vertex and $E-V+1=6-2+1=5$ loops, which is $X_5$.
+No covering space of $X_3$ is homeomorphic to $X_5$ itself: every vertex of a cover of $X_3$ has valence $6$, while the vertex of $X_5$ has valence $10$.
 :::
 
 :::

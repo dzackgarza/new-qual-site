@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-For which $n$ and $k$ is $X = \CP^n / \CP^k$ homotopy-equivalent to a manifold?
+For which $n \geq 2$ and $0 < k < n$ is $X = \CP^n / \CP^k$ homotopy-equivalent to a manifold?
 :::
 
 ::: {.solution}
@@ -53,7 +53,7 @@ The standard CW structure on $\CP^n$ is obtained from $\CP^{n-1}$ by attaching a
 Suppose $k<n-1$ and $X$ were homotopy-equivalent to a closed manifold $M$.
 
 ::: pf-proof
-Since $H^{2n}(X;\ZZ)\cong\ZZ$ and $H^i(X)=0$ for $i>2n$, the manifold must have dimension $2n$ and be orientable.
+A closed $m$-manifold $M$ has $H_m(M;\ZZ_2)\cong\ZZ_2$ and $H_i(M;\ZZ_2)=0$ for $i>m$, so $m=2n$, the top degree of the mod-2 homology of $X$; then $H_{2n}(M;\ZZ)\cong\ZZ$ makes $M$ orientable. The question concerns closed manifolds: every finite CW complex is homotopy equivalent to an open manifold, a regular neighbourhood of an embedding in some $\RR^N$.
 :::
 
 :::

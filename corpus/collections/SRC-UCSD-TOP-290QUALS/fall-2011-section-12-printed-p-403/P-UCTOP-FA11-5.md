@@ -46,13 +46,13 @@ Euler characteristic multiplies by the degree of a finite covering of finite CW 
 On the other hand, $\chi(M)$ is odd.
 
 ::: pf-proof
-Since $M$ is closed, connected, and oriented of dimension $4$, Poincaré duality over $\QQ$ gives
+Since $M$ is closed and oriented of dimension $4$, Poincaré duality over $\QQ$ gives
 $$
-b_0=b_4=1,\qquad b_3=b_1.
+b_4=b_0,\qquad b_3=b_1.
 $$
 The hypothesis says $b_2=1$. Hence
 $$
-\chi(M)=b_0-b_1+b_2-b_3+b_4=3-2b_1,
+\chi(M)=b_0-b_1+b_2-b_3+b_4=2b_0-2b_1+1,
 $$
 which is odd.
 :::

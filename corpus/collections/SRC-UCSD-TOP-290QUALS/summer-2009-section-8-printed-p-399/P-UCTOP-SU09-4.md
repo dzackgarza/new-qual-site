@@ -91,7 +91,7 @@ a^4,\quad ba^{-3},\quad ab,\quad a^2ba^{-1},\quad a^3ba^{-2}.
 $$
 
 ::: pf-proof
-Use the Schreier transversal $\{1,a,a^2,a^3\}$ for the index-$4$ kernel in step [](#subgroup-k){.pf-ref}$. The Reidemeister--Schreier generators from the letter $a$ are trivial except for $a^4$, while those from $b$ are respectively
+Use the Schreier transversal $\{1,a,a^2,a^3\}$ for the index-$4$ kernel in step [](#subgroup-k){.pf-ref}. The Reidemeister--Schreier generators from the letter $a$ are trivial except for $a^4$, while those from $b$ are respectively
 $$
 ba^{-3},\quad ab,\quad a^2ba^{-1},\quad a^3ba^{-2}.
 $$

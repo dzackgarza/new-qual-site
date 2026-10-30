@@ -23,9 +23,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be a path-connected topological space whose integer homology groups in positive dimensions are:
-$$H_0(X; \ZZ) \cong \ZZ, \qquad H_k(X; \ZZ) \cong \ZZ/k\ZZ \quad \text{for all } k \ge 1.$$
-Compute the integer homology groups $H_n(\RP^2 \times X; \ZZ)$ for all $n \ge 0$.
+Let $X$ be a path-connected space whose homology groups in positive dimensions are $H_k(X;\ZZ) = \ZZ/k\ZZ$.
+Compute the integer homology $H_*(\RP^2 \times X;\ZZ)$.
 :::
 
 ::: {.solution}

@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be a path-connected CW complex with $\pi_{\geq 2}(X) = 0$ and whose fundamental group is a free group on a set $S$.
+Let $X$ be a path-connected space with $\pi_{\geq 2}(X) = 0$ and whose fundamental group is a free group on a set $S$.
 Show that there is a homotopy equivalence between a bouquet of circles, indexed by $S$, and $X$.
 :::
 
@@ -55,7 +55,7 @@ Therefore
 $$\boxed{X\simeq\bigvee_{s\in S}S^1}.$$
 
 ::: pf-proof
-Both $B$ and $X$ are CW complexes, so Whitehead's theorem upgrades the weak homotopy equivalence $f$ from step [](#f-weak-equivalence){.pf-ref} to a homotopy equivalence.
+Whitehead's theorem upgrades the weak homotopy equivalence $f$ from step [](#f-weak-equivalence){.pf-ref} to a homotopy equivalence when $X$ has the homotopy type of a CW complex, which is the setting of the question: $B$ is a CW complex, and a weak equivalence between spaces of CW homotopy type is a homotopy equivalence. For an arbitrary path-connected space, $f$ is a weak homotopy equivalence, and a CW approximation of $X$ is homotopy equivalent to $B$.
 :::
 
 :::

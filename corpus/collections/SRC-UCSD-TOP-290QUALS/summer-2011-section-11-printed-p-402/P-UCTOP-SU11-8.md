@@ -18,7 +18,7 @@ audit:
 
 ::: {.problem}
 Let $L$ be a solid 3-dimensional lens (a flattened ball).
-Identify the top and bottom surfaces via vertical translation and a twist of 120 degrees.
+Identify the top and bottom surfaces via vertical translation and a twist of 120 degrees, as shown in the source picture (where for convenience the lens is drawn as a solid double tetrahedron).
 Calculate the integral homology of the resulting space.
 :::
 
