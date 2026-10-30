@@ -6,7 +6,10 @@ title: Existence of optimal couplings on the circle
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Weak Convergence
+  - Borel Measures
+  - Compactness
 relations: []
 review: draft
 audit:

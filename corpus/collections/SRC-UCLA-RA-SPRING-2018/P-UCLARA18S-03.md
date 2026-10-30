@@ -6,7 +6,9 @@ title: $L^1$ functions with finite energy $\iint\frac{\abs{f(x)f(y)}}{\abs{x-y}^
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L¹
+  - Integrals
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Nonnegativity and closed sublevel sets of the second-difference form $Q(f
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L²
+  - Fourier Transform
 relations: []
 review: draft
 audit:

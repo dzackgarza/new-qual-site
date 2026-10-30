@@ -6,7 +6,10 @@ title: Strong maximal function and differentiation along parabolic rectangles
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Maximal Functions
+  - Differentiation
+  - Lp Spaces
 relations: []
 review: draft
 audit:

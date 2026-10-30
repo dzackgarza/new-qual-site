@@ -6,7 +6,9 @@ title: $L^1$ functions with vanishing $L^1$ difference quotients are zero
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L¹
+  - Differentiation
 relations: []
 review: draft
 audit:
