@@ -5,7 +5,8 @@ kind: problem
 title: Directional derivatives in every direction need not imply differentiability
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

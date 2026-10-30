@@ -5,7 +5,8 @@ kind: problem
 title: Cauchy-Schwarz inequality for the Hilbert-Schmidt trace pairing
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

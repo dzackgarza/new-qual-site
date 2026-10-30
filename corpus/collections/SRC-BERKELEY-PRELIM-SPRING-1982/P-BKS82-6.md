@@ -5,7 +5,8 @@ kind: problem
 title: A polynomial multiple of $f$ with value $1$ and vanishing first two derivatives at a point
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

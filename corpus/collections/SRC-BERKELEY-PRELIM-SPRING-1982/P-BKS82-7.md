@@ -5,7 +5,8 @@ kind: problem
 title: Triviality of a two-generator group with relations $x^5y^3=x^8y^5=1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

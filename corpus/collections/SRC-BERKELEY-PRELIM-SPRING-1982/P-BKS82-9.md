@@ -5,7 +5,8 @@ kind: problem
 title: Real Jordan canonical form of a $3\times3$ matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

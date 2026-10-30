@@ -5,7 +5,8 @@ kind: problem
 title: The integral $\int_{-\infty}^{\infty}\cos x/(x^4+1)\,dx$ by contour integration
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

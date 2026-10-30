@@ -5,7 +5,8 @@ kind: problem
 title: Fundamental theorem of algebra
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

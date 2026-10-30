@@ -5,7 +5,8 @@ kind: problem
 title: Every uncountable subset of $\RR^n$ contains a convergent sequence of distinct points with limit in the set
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

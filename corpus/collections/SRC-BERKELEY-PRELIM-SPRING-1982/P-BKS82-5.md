@@ -5,7 +5,8 @@ kind: problem
 title: Compactness of a family with uniformly bounded second derivatives and fixed initial jet
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
