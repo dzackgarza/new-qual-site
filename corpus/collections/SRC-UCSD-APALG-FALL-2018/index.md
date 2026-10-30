@@ -19,7 +19,7 @@ source:
   problems:
   - P-APAF18A
   - P-APAF18B
-  - P-APAF18C
+  - P-APAF17C
   - P-APAF18D
   - P-APAF18E
   - P-APAF18F
