@@ -37,7 +37,7 @@ $$
 
 (2) If $g \in L^\infty(\mu)$ with $\norm{g}_\infty > 0$, then $g \in L^p(\mu)$ for any $p \in [1, \infty)$ and
 $$
-\lim_{p \to +\infty} \int_X \frac{\abs{g}^{p+1} \, d\mu}{\int_X \abs{g}^p \, d\mu} = \norm{g}_\infty.
+\lim_{p \to +\infty} \frac{\int_X \abs{g}^{p+1} \, d\mu}{\int_X \abs{g}^p \, d\mu} = \norm{g}_\infty.
 $$
 :::
 
