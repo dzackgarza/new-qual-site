@@ -6,7 +6,8 @@ title: 'Gauss--Lucas theorem: critical points lie in the convex hull of the root
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

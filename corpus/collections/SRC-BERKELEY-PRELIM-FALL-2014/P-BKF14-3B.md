@@ -6,7 +6,8 @@ title: Continuity of a unique maximizer $y_x$ of $f(x,\cdot)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

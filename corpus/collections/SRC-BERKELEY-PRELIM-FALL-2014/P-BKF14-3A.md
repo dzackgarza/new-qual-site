@@ -6,7 +6,8 @@ title: Bounding $f'$ in terms of bounds on $f$ and $f''$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

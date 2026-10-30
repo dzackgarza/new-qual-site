@@ -6,7 +6,8 @@ title: Number of roots of $x^{100000}-1$ in $\FF_{65537}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

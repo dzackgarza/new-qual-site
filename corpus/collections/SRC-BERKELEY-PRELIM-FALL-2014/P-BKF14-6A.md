@@ -6,7 +6,8 @@ title: Order of $\operatorname{Sp}_4(\FF_3)$ and the number of symplectic forms 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

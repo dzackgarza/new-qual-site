@@ -6,7 +6,8 @@ title: Real zeros of the truncated exponential series $\sum_{k\le n}x^k/k!$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

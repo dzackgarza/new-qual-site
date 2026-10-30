@@ -6,7 +6,8 @@ title: Congruence classes of real symmetric $n\times n$ matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

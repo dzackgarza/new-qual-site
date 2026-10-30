@@ -6,7 +6,8 @@ title: Independence of boundary convergence and analytic continuation at $1$ for
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

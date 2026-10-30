@@ -6,7 +6,8 @@ title: A power series convergent on the disk and at $1$ whose sum is discontinuo
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Broomstick change-making generating function and asymptotics
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

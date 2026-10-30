@@ -6,7 +6,8 @@ title: Basis for the intersection of two parametrized subspaces of $\RR^4$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

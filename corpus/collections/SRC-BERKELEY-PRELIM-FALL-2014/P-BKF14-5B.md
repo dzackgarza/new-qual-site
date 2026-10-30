@@ -6,7 +6,8 @@ title: Zeros minus poles of an elliptic function sum to a Gaussian integer
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

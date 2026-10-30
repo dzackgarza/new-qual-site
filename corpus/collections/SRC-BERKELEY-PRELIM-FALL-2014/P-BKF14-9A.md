@@ -6,7 +6,8 @@ title: Burnside's lemma and $4$-colorings of the vertices of a hexagon
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

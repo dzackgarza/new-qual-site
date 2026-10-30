@@ -6,7 +6,8 @@ title: Approximating a singular $4\times4$ matrix by matrices with distinct real
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -29,13 +30,13 @@ audit:
 ---
 
 ::: {.problem}
-Show that there is a sequence of $4 \times 4$ matrices $A ( n )$ with real entries, which converges to
+Show that there is a sequence of $4\times4$ matrices $A(n)$ with real entries, which converges to
 
 $$
-A = { \left( \begin{array} { l l l l } { 0 } & { 0 } & { 0 } & { 0 } \\ { 0 } & { 0 } & { 0 } & { 1 } \\ { 0 } & { 1 } & { 0 } & { 0 } \\ { 1 } & { 0 } & { 0 } & { 0 } \end{array} \right) }
+A=\begin{pmatrix}0&0&0&0\\0&0&0&1\\0&1&0&0\\1&0&0&0\end{pmatrix}
 $$
 
-and such that $A ( n )$ has 4 distinct real eigenvalues, two of which are positive and two negative.
+and such that $A(n)$ has 4 distinct real eigenvalues, two of which are positive and two negative.
 :::
 
 ::: {.solution}

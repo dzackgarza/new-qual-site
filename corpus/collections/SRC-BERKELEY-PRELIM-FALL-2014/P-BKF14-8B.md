@@ -6,7 +6,8 @@ title: Finite groups with exactly three conjugacy classes
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

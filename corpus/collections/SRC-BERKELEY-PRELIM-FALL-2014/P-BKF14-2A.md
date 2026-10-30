@@ -6,7 +6,8 @@ title: Counterexamples to interchanging $\limsup$ and $\liminf$ with integrals
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
