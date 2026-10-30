@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-11
 kind: problem
 title: Jordan form over $\FF_3$ of the matrix with diagonal $2$ and off-diagonal $1$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

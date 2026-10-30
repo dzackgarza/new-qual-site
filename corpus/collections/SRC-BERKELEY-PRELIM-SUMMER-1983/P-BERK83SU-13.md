@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-13
 kind: problem
 title: A unipotent complex matrix with bounded positive powers is the identity
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

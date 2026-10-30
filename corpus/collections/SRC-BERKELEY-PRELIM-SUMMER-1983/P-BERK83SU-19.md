@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-19
 kind: problem
 title: Area of the image of the unit disk under $f(z)=z+z^2/2$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

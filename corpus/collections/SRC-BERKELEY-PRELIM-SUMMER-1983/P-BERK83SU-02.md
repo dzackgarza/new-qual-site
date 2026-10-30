@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-02
 kind: problem
 title: Polynomial growth of one derivative forces eventual vanishing of higher derivatives
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-01
 kind: problem
 title: The thirteenth root of $21982145917308330487013369$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-10
 kind: problem
 title: Periodic Wirtinger inequality for a zero-mean function
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

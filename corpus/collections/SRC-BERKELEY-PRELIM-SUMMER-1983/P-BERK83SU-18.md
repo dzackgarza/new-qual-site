@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-18
 kind: problem
 title: $C^1$ solutions of $xy'+y=x$ across the singular point $x=0$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

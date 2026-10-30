@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-20
 kind: problem
 title: Uniform decay of the derivative of $f/(1+cf)$ for a nonnegative periodic function
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-09
 kind: problem
 title: Argument principle and a boundary integral locating a simple zero
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:
@@ -26,12 +26,13 @@ audit:
 ::: {.problem}
 Let $\Omega\subset\CC$ be a bounded domain whose boundary is a smooth Jordan curve $\gamma$. Let $f$ be holomorphic on a neighborhood of $\overline\Omega$, assume $f\ne0$ on $\gamma$, and let $z_1,\ldots,z_k$ be the zeros of $f$ in $\Omega$ with multiplicities $n_1,\ldots,n_k$.
 
-1. Using Cauchy's integral formula, prove
+(a) Using Cauchy's integral formula, prove
 $$
 \frac1{2\pi i}\int_\gamma\frac{f'(z)}{f(z)}\,dz
 =\sum_{j=1}^k n_j.
 $$
-2. If $f$ has exactly one zero $z_1$ in $\Omega$, and it is simple, find a boundary integral involving $f$ whose value is $z_1$.
+
+(b) If $f$ has exactly one zero $z_1$ in $\Omega$, and it is simple, find a boundary integral involving $f$ whose value is $z_1$.
 :::
 
 ::: {.solution}
@@ -70,7 +71,7 @@ $\overline\Omega$.
 
 ::: {.pf-step #s2}
 
-Part 1 gives
+Part (a) gives
 $$
 \boxed{
 \frac1{2\pi i}
@@ -149,7 +150,7 @@ Summing over $j$ proves the formula.
 
 ::: {.pf-step #s4}
 
-Under the hypothesis of part 2,
+Under the hypothesis of part (b),
 $$
 \boxed{
 z_1
@@ -171,8 +172,8 @@ Step [](#s3){.pf-ref} reduces exactly to the displayed boundary integral.
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} proves part 1, and step [](#s4){.pf-ref} gives the boundary integral
-requested in part 2.
+Step [](#s2){.pf-ref} proves part (a), and step [](#s4){.pf-ref} gives the boundary integral
+requested in part (b).
 
 :::
 

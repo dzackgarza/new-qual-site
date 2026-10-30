@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-16
 kind: problem
 title: An orientation-preserving smooth map preserving orthogonality is holomorphic
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

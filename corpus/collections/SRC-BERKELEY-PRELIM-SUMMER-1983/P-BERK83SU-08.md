@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-08
 kind: problem
 title: Pairwise-surjective subgroup of a product of three finite perfect groups
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

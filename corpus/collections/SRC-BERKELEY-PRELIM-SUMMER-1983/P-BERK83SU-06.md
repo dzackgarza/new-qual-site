@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-06
 kind: problem
 title: Adding twice one oriented orthonormal basis to another preserves orientation
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

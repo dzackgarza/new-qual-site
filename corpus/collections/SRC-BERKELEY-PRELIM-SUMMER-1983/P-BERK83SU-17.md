@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-17
 kind: problem
 title: A Hermitian solution of $A^5+A^3+A=3I$ is the identity
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

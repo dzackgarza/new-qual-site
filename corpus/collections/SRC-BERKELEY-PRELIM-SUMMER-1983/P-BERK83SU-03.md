@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-03
 kind: problem
 title: Jordan form when $\chi=\mu\,(x-i)$ and $\mu^2=\chi\,(x^2+1)$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

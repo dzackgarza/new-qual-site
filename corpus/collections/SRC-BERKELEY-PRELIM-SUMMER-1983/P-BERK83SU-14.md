@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-14
 kind: problem
 title: Invariant equivalence relations for a transitive simple permutation group
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

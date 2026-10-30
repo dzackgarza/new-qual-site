@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-04
 kind: problem
 title: Derivative zero on an interval implies equal endpoint values
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

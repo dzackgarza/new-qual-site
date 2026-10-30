@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK83SU-05
 kind: problem
 title: Density of quotients from a slowly varying increasing sequence
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:
