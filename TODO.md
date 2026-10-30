@@ -594,10 +594,11 @@ mathematical correction under its own node, not under copy policy.
       toric/affine-computations, the curves-and-surfaces pages, classes-of-morphism,
       fibres-and-images, finite-and-flat (PR-RJ3P7), smooth-unramified-etale.
     - [ ] resources: bibliography key `[07]` has no author part.
-    - [ ] P-AGXMISCTSENPONEBUNDLE statement "where the fibers smooth curves" lacks a verb;
+      Citeproc builds the label from family names and the entry has one literal corporate author; see COMPLAINTS.md, "Citation label drops a corporate author".
+    - [x] P-AGXMISCTSENPONEBUNDLE statement "where the fibers smooth curves" lacks a verb;
       check the source first.
-    - [ ] toric/surfaces-and-morphisms: lead uses $u_i, b_i$, T-TORSURF uses $v_i, a_i$.
-    - [ ] Read P-AGH242AGREEDENSE and PR-QX0VL for a CARD-04 duplicate.
+    - [x] toric/surfaces-and-morphisms: lead uses $u_i, b_i$, T-TORSURF uses $v_i, a_i$.
+    - [x] Read P-AGH242AGREEDENSE and PR-QX0VL for a CARD-04 duplicate.
     **Acceptance:** each item read and repaired.
 
   Content nodes (owner: the named cards and pages; one item at a time):
