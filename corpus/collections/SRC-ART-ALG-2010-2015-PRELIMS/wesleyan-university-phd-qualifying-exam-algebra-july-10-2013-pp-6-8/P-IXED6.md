@@ -29,11 +29,11 @@ Suppose that $R$ is a principal-ideal domain and $a, b, c, d \in R$ with $a, b \
 For ideals $J,L$ of $R$, let $J\vee L$ denote the least ideal
 containing both $J$ and $L$.
 
-a. Find a generator for the ideal $(a) \vee (b)$.
+(a) Find a generator for the ideal $(a) \vee (b)$.
 
-b. For $u, v \in R$ and $I$ any ideal of $R$, write $$u \equiv v \bmod I$$ for $$u - v \in I.$$ Show that
+(b) For $u, v \in R$ and $I$ any ideal of $R$, write $$u \equiv v \bmod I$$ for $$u - v \in I.$$ Show that
 
-There is $x \in R$ with $x \equiv c \bmod (a)$ and $x \equiv d \bmod (b)$
+there is $x \in R$ with $x \equiv c \bmod (a)$ and $x \equiv d \bmod (b)$
 
 just in case $$c \equiv d \bmod (a) \vee (b).$$
 :::

@@ -25,10 +25,10 @@ audit:
   note: "Checked the finite-dimensional subring argument for inverses and algebraicity, the biquadratic degree, and recovery of both radicals from the proposed generator."
 ---
 ::: {.problem}
-a. Suppose $K/F$ is a field extension.
+(a) Suppose $K/F$ is a field extension.
 Prove that the elements of $K$ that are algebraic over $F$ form a subfield of $K$.
 
-b. Find the minimal polynomial of $2\sqrt{2} - \sqrt{3}$ over $\QQ$.
+(b) Find the minimal polynomial of $2\sqrt{2} - \sqrt{3}$ over $\QQ$.
 :::
 
 ::: {.solution}

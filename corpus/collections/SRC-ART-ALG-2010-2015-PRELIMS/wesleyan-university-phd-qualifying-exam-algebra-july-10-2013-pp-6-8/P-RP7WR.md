@@ -27,11 +27,11 @@ audit:
   note: "Checked faithfulness and composition of the variable-permutation action, the exact Frobenius order and automorphism bound, and existence of finite fields realizing every cyclic order."
 ---
 ::: {.problem}
-a. What finite groups $G$ can occur as collections of automorphisms of some field $F$?
+(a) What finite groups $G$ can occur as collections of automorphisms of some field $F$?
 More precisely, for which $G$ does there exist a field $F$ such that $G$ is a subgroup of the automorphism group of $F$?
 Explain.
 
-b. What finite groups $G$ can occur as collections of automorphisms of some finite field $F$?
+(b) What finite groups $G$ can occur as collections of automorphisms of some finite field $F$?
 Explain.
 :::
 

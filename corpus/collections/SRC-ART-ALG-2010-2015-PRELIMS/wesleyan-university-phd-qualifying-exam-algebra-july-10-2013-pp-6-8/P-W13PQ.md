@@ -25,9 +25,9 @@ audit:
   note: "Checked the full Sylow statement, both unique-subgroup deductions, commutation via the intersection, and the exact order of the cyclic generator."
 ---
 ::: {.problem}
-a. State all parts of Sylow's Theorem.
+(a) State all parts of Sylow's Theorem.
 
-b. Show that if $0 < p < q$ are primes and $p \nmid q - 1$, then any group of order $pq$ is cyclic.
+(b) Show that if $0 < p < q$ are primes and $p \nmid q - 1$, then any group of order $pq$ is cyclic.
 :::
 
 ::: {.solution}

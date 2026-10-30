@@ -28,14 +28,14 @@ audit:
 ::: {.problem}
 Let $K$ be the splitting field of $x^4 - 6$ over $\QQ$.
 
-a. What is the dimension of $K$ over $\QQ$?
+(a) What is the dimension of $K$ over $\QQ$?
 
-b. What is the Galois group of $K$ over $\QQ$?
+(b) What is the Galois group of $K$ over $\QQ$?
 You must not only identify the group, but describe how it acts on the roots of $x^4 - 6$.
 
-c. How many subfields does $K$ have of each possible dimension over $\QQ$?
+(c) How many subfields does $K$ have of each possible dimension over $\QQ$?
 
-d. How many of those subfields in each dimension are Galois over $\QQ$?
+(d) How many of those subfields in each dimension are Galois over $\QQ$?
 :::
 
 ::: {.solution}

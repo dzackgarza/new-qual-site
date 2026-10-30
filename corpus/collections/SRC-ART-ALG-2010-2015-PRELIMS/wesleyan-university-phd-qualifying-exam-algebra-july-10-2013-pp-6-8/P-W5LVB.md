@@ -27,9 +27,9 @@ audit:
   note: "Checked both abelian groups, irreducibility of all four polynomial factors, the canonical idempotent decomposition, and the exhaustive enumeration of ten multiplicity tuples."
 ---
 ::: {.problem}
-a. List all abelian groups of order 60.
+(a) List all abelian groups of order $60$.
 
-b. List all $\QQ[x]$-modules that are annihilated by $x^8 - 1$ and have dimension 4 when thought of as vector spaces over $\QQ$.
+(b) List all $\QQ[x]$-modules that are annihilated by $x^8 - 1$ and have dimension $4$ when thought of as vector spaces over $\QQ$.
 :::
 
 ::: {.solution}

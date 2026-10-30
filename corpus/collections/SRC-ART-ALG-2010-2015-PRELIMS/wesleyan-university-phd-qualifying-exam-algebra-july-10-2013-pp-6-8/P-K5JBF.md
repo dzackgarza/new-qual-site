@@ -75,7 +75,7 @@ $$
 $$
 The nonzero $2\times2$ minors include
 $$
-4,quad2,quad4,quad-8,quad2,quad8,
+4,\quad 2,\quad 4,\quad -8,\quad 2,\quad 8,
 $$
 and every $2\times2$ minor is even. Therefore
 $$
@@ -96,7 +96,7 @@ d_1d_2d_3=\Delta_3.
 $$
 Hence
 $$
-d_1=1,qquad d_2=2,qquad d_3=4.
+d_1=1,\qquad d_2=2,\qquad d_3=4.
 $$
 
 :::
