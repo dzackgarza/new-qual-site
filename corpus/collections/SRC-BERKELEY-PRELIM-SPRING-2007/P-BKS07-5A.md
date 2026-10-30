@@ -11,13 +11,11 @@ review: draft
 ---
 
 ::: {.problem}
-Let $a _ { 0 } ( x ) , a _ { 1 } ( x ) , \dots , a _ { r - 1 } ( x )$ and $b ( x )$ be $C ^ { m }$ functions on R. Prove that if $y ( x )$ is a solution of the differential equation
-
+Let $a_{0}(x), a_{1}(x), \ldots, a_{r-1}(x)$ and $b(x)$ be $C^{m}$ functions on $\RR$. Prove that if $y(x)$ is a solution of the differential equation
 $$
-y ^ { ( r ) } + a _ { r - 1 } ( x ) y ^ { ( r - 1 ) } + \cdot \cdot \cdot + a _ { 1 } ( x ) y ^ { \prime } + a _ { 0 } ( x ) y = b ( x )
+y^{(r)} + a_{r-1}(x) y^{(r-1)} + \cdots + a_{1}(x) y' + a_{0}(x) y = b(x)
 $$
-
-(in particular, assuming that the derivatives $y ^ { \prime } , y ^ { \prime \prime } , \ldots , y ^ { ( r ) }$ exist), then $y ( x )$ is $C ^ { m + r }$
+(in particular, assuming that the derivatives $y', y'', \ldots, y^{(r)}$ exist), then $y(x)$ is $C^{m+r}$.
 :::
 
 ::: {.solution}

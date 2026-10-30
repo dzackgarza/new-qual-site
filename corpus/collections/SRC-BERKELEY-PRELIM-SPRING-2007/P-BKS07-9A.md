@@ -11,13 +11,11 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose b and L are positive constants and $f : [ 0 , b ] \to \RR$ is continuous and satisfies
-
+Suppose $b$ and $L$ are positive constants and $f \colon [0, b] \to \RR$ is continuous and satisfies
 $$
-f ( x ) \geq L \int _ { 0 } ^ { x } f ( t ) d t , \qquad ( 0 \leq x \leq b ) .
+f(x) \geq L \int_{0}^{x} f(t)\, dt, \qquad (0 \leq x \leq b).
 $$
-
-Show that $f ( x ) \geq 0$ for $0 \leq x \leq b$
+Show that $f(x) \geq 0$ for $0 \leq x \leq b$.
 :::
 
 ::: {.solution}

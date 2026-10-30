@@ -11,10 +11,9 @@ review: draft
 ---
 
 ::: {.problem}
-Find a matrix U such that $U ^ { - 1 } A U = J$ is in Jordan canonical form, where
-
+Find a matrix $U$ such that $U^{-1} A U = J$ is in Jordan canonical form, where
 $$
-A = \left( { \begin{array} { r r r } { 0 } & { - 3 } & { 5 } \\ { - 1 } & { - 6 } & { 1 1 } \\ { 0 } & { - 4 } & { 7 } \end{array} } \right) .
+A = \begin{pmatrix} 0 & -3 & 5 \\ -1 & -6 & 11 \\ 0 & -4 & 7 \end{pmatrix}.
 $$
 :::
 

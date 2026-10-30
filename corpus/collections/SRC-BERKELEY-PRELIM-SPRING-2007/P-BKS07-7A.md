@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let a and b be complex numbers, and let $f \colon \CC \to \CC$ be a non-constant entire function such that $f ( a z + b ) = f ( z )$ for all $z \in \CC$ . Prove that there is a positive integer n such that $a ^ { n } = 1$
+Let $a$ and $b$ be complex numbers, and let $f \colon \CC \to \CC$ be a non-constant entire function such that $f(az + b) = f(z)$ for all $z \in \CC$. Prove that there is a positive integer $n$ such that $a^{n} = 1$.
 :::
 
 ::: {.solution}

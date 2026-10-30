@@ -11,13 +11,11 @@ review: draft
 ---
 
 ::: {.problem}
-Let U be a non-empty open subset of $\RR ^ { d }$ and let $f : U \to \RR ^ { d }$ be a continuous vector field defined on U. Let K be a compact subset of U and let $b > 0$ . Suppose $\varphi : [ 0 , b ) \to K$ is a continuous function satisfying
-
+Let $U$ be a non-empty open subset of $\RR^{d}$ and let $f \colon U \to \RR^{d}$ be a continuous vector field defined on $U$. Let $K$ be a compact subset of $U$ and let $b > 0$. Suppose $\varphi \colon [0, b) \to K$ is a continuous function satisfying
 $$
-\varphi ( t ) = \varphi ( 0 ) + \int _ { 0 } ^ { t } f ( \varphi ( s ) ) d s , \qquad ( 0 \leq t < b ) .
+\varphi(t) = \varphi(0) + \int_{0}^{t} f(\varphi(s))\, ds, \qquad (0 \leq t < b).
 $$
-
-Prove that $\lim _ { t \to b ^ { - } } \varphi ( t )$ exists, where $t \to b ^ { - }$ means t approaches b from the left.
+Prove that $\lim_{t \to b^{-}} \varphi(t)$ exists, where $t \to b^{-}$ means $t$ approaches $b$ from the left.
 :::
 
 ::: {.solution}

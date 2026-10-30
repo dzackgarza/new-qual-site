@@ -11,15 +11,13 @@ review: draft
 ---
 
 ::: {.problem}
-Let k and n be integers with $n \geq k \geq 0$ Let A and B be $n \times k$ matrices with real coefficients.
-Let $A ^ { t }$ be the transpose of A. For each size-k subset $I \subseteq \{ 1 , \ldots , n \}$ , let $A _ { I }$ be the $k \times k$ matrix obtained by discarding all rows of A except those whose index belongs to I. Define $B _ { I }$ similarly.
+Let $k$ and $n$ be integers with $n \geq k \geq 0$. Let $A$ and $B$ be $n \times k$ matrices with real coefficients.
+Let $A^{t}$ be the transpose of $A$. For each size-$k$ subset $I \subseteq \{1, \ldots, n\}$, let $A_{I}$ be the $k \times k$ matrix obtained by discarding all rows of $A$ except those whose index belongs to $I$. Define $B_{I}$ similarly.
 Prove that
-
 $$
-\operatorname* { d e t } ( A ^ { t } B ) = \sum _ { I } \operatorname* { d e t } ( A _ { I } ) \operatorname* { d e t } ( B _ { I } ) ,
+\det(A^{t} B) = \sum_{I} \det(A_{I}) \det(B_{I}),
 $$
-
-where the sum is over all size-k subsets $I \subseteq \{ 1 , \ldots , n \}$ . (Suggestion: use linearity to reduce to the case where the columns of A and B are particularly simple.)
+where the sum is over all size-$k$ subsets $I \subseteq \{1, \ldots, n\}$. (Suggestion: use linearity to reduce to the case where the columns of $A$ and $B$ are particularly simple.)
 :::
 
 ::: {.solution}

@@ -11,8 +11,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let E be the C-vector space of entire functions.
-Let V be a nonzero finite-dimensional C-subspace of E with the property that $f \in V$ implies $f ^ { \prime } \in V$ . Prove that V contains a function that is everywhere nonzero.
+Let $E$ be the $\CC$-vector space of entire functions.
+Let $V$ be a nonzero finite-dimensional $\CC$-subspace of $E$ with the property that $f \in V$ implies $f' \in V$. Prove that $V$ contains a function that is everywhere nonzero.
 :::
 
 ::: {.solution}

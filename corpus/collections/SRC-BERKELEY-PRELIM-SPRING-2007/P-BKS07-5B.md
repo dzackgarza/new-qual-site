@@ -11,9 +11,9 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\FF _ { q }$ denote the finite field with q elements, where q is a power of a prime.
-Let $\mathrm { S L } _ { n } ( \FF _ { q } )$ be the group of $n \times n$ matrices with entries in $\FF _ { q }$ and determinant 1, under matrix multiplication.
-Determine (with proof) a simple necessary and sufficient condition on n and q for the center of $\mathrm { S L } _ { n } ( \FF _ { q } )$ to be trivial.
+Let $\FF_{q}$ denote the finite field with $q$ elements, where $q$ is a power of a prime.
+Let $\SL_{n}(\FF_{q})$ be the group of $n \times n$ matrices with entries in $\FF_{q}$ and determinant $1$, under matrix multiplication.
+Determine (with proof) a simple necessary and sufficient condition on $n$ and $q$ for the center of $\SL_{n}(\FF_{q})$ to be trivial.
 :::
 
 ::: {.solution}

@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $x _ { 1 } , x _ { 2 } , . . .$ . be an infinite sequence of real numbers such that every subsequence contains a subsequence converging to 0. Must the original sequence converge?
+Let $x_{1}, x_{2}, \ldots$ be an infinite sequence of real numbers such that every subsequence contains a subsequence converging to $0$. Must the original sequence converge?
 :::
 
 ::: {.solution}

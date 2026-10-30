@@ -13,17 +13,12 @@ review: draft
 ::: {.problem}
 Define six fields as follows:
 
-• Let $A = \QQ ( \alpha )$ where Q is the field of rational numbers and α is the real cube root of 2.
-
-• Let B be a splitting field of $x ^ { 3 } - 2$ over Q.
-
-• Let C be an algebraic closure of the field $\FF _ { 2 }$ of 2 elements.
-
-• Let D be the subfield of C generated over $\FF _ { 2 }$ by the set of $a \in C$ such that there exists $n \geq 1$ with $a ^ { n } = 1$
-
-• Let E be the field R of real numbers.
-
-• Let F be the field $\QQ [ [ T ] ] ( T ^ { - 1 } )$ of formal Laurent series with rational coefficients.
+- Let $A = \QQ(\alpha)$ where $\QQ$ is the field of rational numbers and $\alpha$ is the real cube root of $2$.
+- Let $B$ be a splitting field of $x^{3} - 2$ over $\QQ$.
+- Let $C$ be an algebraic closure of the field $\FF_{2}$ of $2$ elements.
+- Let $D$ be the subfield of $C$ generated over $\FF_{2}$ by the set of $a \in C$ such that there exists $n \geq 1$ with $a^{n} = 1$.
+- Let $E$ be the field $\RR$ of real numbers.
+- Let $F$ be the field $\QQ[[T]](T^{-1})$ of formal Laurent series with rational coefficients.
 
 For each pair of these, determine with proof whether or not they are isomorphic.
 :::

@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Given any real number $a _ { 0 }$ , define $a _ { 1 } , a _ { 2 } , \dotsc$ . by the rule $a _ { n + 1 } = \cos a _ { n }$ for all $n \geq 0$ . Prove that the sequence $\left( a _ { n } \right)$ converges, and that the limit is the unique solution of the equation $\cos x = x$
+Given any real number $a_{0}$, define $a_{1}, a_{2}, \ldots$ by the rule $a_{n+1} = \cos a_{n}$ for all $n \geq 0$. Prove that the sequence $(a_{n})$ converges, and that the limit is the unique solution of the equation $\cos x = x$.
 :::
 
 ::: {.solution}

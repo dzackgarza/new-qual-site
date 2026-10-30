@@ -11,12 +11,12 @@ review: draft
 ---
 
 ::: {.problem}
-If $c \in \RR$ , say that a real-valued function $f : \RR \to \RR$ is periodic with period c if it satisfies $f ( x + c ) = f ( x )$ for all $x \in \RR$ •
+If $c \in \RR$, say that a real-valued function $f \colon \RR \to \RR$ is periodic with period $c$ if it satisfies $f(x + c) = f(x)$ for all $x \in \RR$.
 
-(i) Let V be the set of continuous real-valued functions f having a positive integer as a period.
-Prove that V is a vector space.
+(i) Let $V$ be the set of continuous real-valued functions $f$ having a positive integer as a period.
+Prove that $V$ is a vector space.
 
-(ii) Let $p _ { 1 } < p _ { 2 } < . . . < p _ { n } < . . .$ . be the sequence of prime numbers, and for each i, let $f _ { i }$ be a function whose minimal positive period is $p _ { i }$ . Prove that the functions $f _ { 1 } , f _ { 2 } , \ldots$ . are linearly independent in V .
+(ii) Let $p_{1} < p_{2} < \cdots < p_{n} < \cdots$ be the sequence of prime numbers, and for each $i$, let $f_{i}$ be a function whose minimal positive period is $p_{i}$. Prove that the functions $f_{1}, f_{2}, \ldots$ are linearly independent in $V$.
 :::
 
 ::: {.solution}
