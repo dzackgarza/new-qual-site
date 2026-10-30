@@ -5,7 +5,8 @@ kind: problem
 title: Nonuniqueness of solutions of $y'=y^{2/3}$, $y(0)=1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

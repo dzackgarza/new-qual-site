@@ -5,7 +5,8 @@ kind: problem
 title: Every finite ring satisfies an identity $x^m=x^n$ with $m>n$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

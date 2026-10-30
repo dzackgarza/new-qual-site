@@ -5,7 +5,8 @@ kind: problem
 title: Groups of order $30$ are not simple
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -27,6 +28,8 @@ audit:
 
 ::: {.problem}
 Show that there are no simple groups of order $30$.
+
+Hint: show that if a noncyclic simple group has order divisible by a prime $p$, then it has at least $p^2-1$ nontrivial elements of order a power of $p$.
 :::
 
 ::: {.hint}

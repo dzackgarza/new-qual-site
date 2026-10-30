@@ -5,7 +5,8 @@ kind: problem
 title: Conformal map from the unit disk onto the sector $0<\arg z<\pi/4$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

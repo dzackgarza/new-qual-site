@@ -5,7 +5,8 @@ kind: problem
 title: Evaluation of $\int_{-\infty}^{\infty}\sin x/(x^2+4x+5)\,dx$ by residues
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: The divergent asymptotic series $\sum(-1)^n n!/x^{n+1}$ for $\int_0^\infty e^{-tx}/(1+t)\,dt$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

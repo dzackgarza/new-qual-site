@@ -5,7 +5,8 @@ kind: problem
 title: Distributivity of $\gcd$ over $\operatorname{lcm}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

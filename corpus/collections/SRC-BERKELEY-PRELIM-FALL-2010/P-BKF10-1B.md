@@ -5,7 +5,8 @@ kind: problem
 title: Proper continuous functions $\RR^2\to\RR$ attain a minimum or a maximum
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

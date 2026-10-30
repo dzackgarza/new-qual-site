@@ -5,7 +5,8 @@ kind: problem
 title: Hermitian matrices have real eigenvalues
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

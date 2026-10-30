@@ -5,7 +5,8 @@ kind: problem
 title: Determinant of the $6\times6$ matrix $(j^k)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

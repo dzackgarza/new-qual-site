@@ -5,7 +5,8 @@ kind: problem
 title: $f(x)/x$ is increasing when $f(0)=0$ and $f'$ is increasing
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Positive semidefinite quadratic forms are sums of squares of linear forms
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

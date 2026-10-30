@@ -5,7 +5,8 @@ kind: problem
 title: Existence of monic orthogonal polynomials for a positive weight on $[a,b]$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

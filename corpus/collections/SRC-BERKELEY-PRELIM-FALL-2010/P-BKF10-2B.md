@@ -5,7 +5,8 @@ kind: problem
 title: Galois group of $x^5-10x+5$ over $\QQ$ is $S_5$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

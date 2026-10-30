@@ -5,7 +5,8 @@ kind: problem
 title: Bounded isolated singularities are removable
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
