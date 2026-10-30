@@ -71,3 +71,7 @@ Hence $A\cup B$ has no separation into two nonempty disjoint relatively open set
 :::
 
 :::
+
+::: {.remark title="Variations"}
+If $A\cap B\ne\varnothing$, then $A\cap\overline B\ne\varnothing$ because $B\subseteq\overline B$, so $A\cup B$ is connected by the main proof unchanged.
+:::

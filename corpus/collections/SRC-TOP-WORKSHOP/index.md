@@ -66,7 +66,7 @@ source:
     - P-TOP-WORKSHOP-D2-W2
     - P-TOP-WORKSHOP-D2-W3
     - P-TOP-WORKSHOP-D2-02
-    - P-TOP-WORKSHOP-D2-06
+    - P-EZ2B2
   - name: Day 3 Separation Axioms
     problems:
     - P-TOP-WORKSHOP-D3-W1
@@ -76,7 +76,7 @@ source:
     - P-TOP-WORKSHOP-D3-03
     - P-TOP-WORKSHOP-D3-04
     - P-TOP-WORKSHOP-D3-05
-    - P-TOP-WORKSHOP-D3-06
+    - P-T12A2
   - name: Day 4 Counterexamples and Assorted Problems
     problems:
     - P-TOP-WORKSHOP-D4-W1
@@ -94,9 +94,9 @@ source:
     - P-TOP-WORKSHOP-D7-G01
     - P-TOP-WORKSHOP-D7-G02-SVK
     - P-TOP-WORKSHOP-D7-G02
-    - P-TOP-WORKSHOP-D7-G04-AXES
-    - P-TOP-WORKSHOP-D7-G03
-    - P-TOP-WORKSHOP-D7-G06-TRIANGLE
+    - P-FRRZE
+    - P-T05B1
+    - P-T08B1
     - P-TOP-WORKSHOP-D7-G06
     - P-TOP-WORKSHOP-D7-G04
     - P-TOP-WORKSHOP-D7-G05
@@ -105,8 +105,8 @@ source:
     - P-TOP-WORKSHOP-D8-CW1
     - P-TOP-WORKSHOP-D8-CW2
     - P-TOP-WORKSHOP-D8-01
-    - P-TOP-WORKSHOP-D8-02
-    - P-TOP-WORKSHOP-D8-03
+    - P-T06Q1-7
+    - P-T05B2
     - P-TOP-WORKSHOP-D8-04
     - P-TOP-WORKSHOP-D8-05
     - P-TOP-WORKSHOP-D8-06
@@ -122,7 +122,7 @@ source:
     - P-TOP-WORKSHOP-D9-04
     - P-TOP-WORKSHOP-D9-05
     - P-TOP-WORKSHOP-D9-06
-    - P-TOP-WORKSHOP-D9-07
+    - P-T12B3
   - name: Legacy packet — Homotopy and retractions
     problems:
     - P-TOP-WORKSHOP-HR-W1
