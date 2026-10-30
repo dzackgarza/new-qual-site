@@ -855,7 +855,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebraic-geometry/varieties/blowups.md
   - [x] wiki/algebraic-geometry/varieties/canonical-class.md
   - [x] wiki/algebraic-geometry/varieties/dimension-and-degree.md
-  - [ ] wiki/algebraic-geometry/varieties/index.md
+  - [x] wiki/algebraic-geometry/varieties/index.md
   - [x] wiki/algebraic-geometry/varieties/regular-functions.md
   - [x] wiki/algebraic-geometry/varieties/smooth-and-singular.md
   - [x] wiki/algebraic-geometry/varieties/the-dictionary.md
