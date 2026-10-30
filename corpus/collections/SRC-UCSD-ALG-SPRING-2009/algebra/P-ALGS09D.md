@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS09D
 kind: problem
-title: "Galois group of the splitting field of sqrt(2 + sqrt(2)) over Q"
+title: "Galois group of the splitting field of $\\sqrt{2+\\sqrt{2}}$ over $\\QQ$"
 classification:
   areas:
   - algebra
