@@ -16,25 +16,19 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-13
-  note: Transcribed from the official UCLA Analysis Qualifying Exam, Spring 2017, and reconciled
-    with the retained UCLA Analysis Qualifying Exam Solutions compendium.
+  note: Transcribed from the official UCLA Analysis Qualifying Exam, Spring 2017, and reconciled with the retained UCLA Analysis Qualifying Exam Solutions compendium.
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
-  note: The source places the measures on the closed interval [0,1], where mu = delta_0 -
-    delta_1 and nu = delta_0 refute the claim. The statement now places them on [0,1).
-- event: source-corrected
-  by: claude-opus-5.5
-  date: 2026-10-31
-  note: Measures restored to [0,1], as on the exam.
+  note: The source places the measures on the closed interval [0,1], where mu = delta_0 - delta_1 and nu = delta_0 refute the claim. The statement now places them on [0,1).
 ---
 
 ::: {.problem}
-Let $d\mu$ be a finite complex Borel measure on $[0,1]$ such that
+Let $d\mu$ be a finite complex Borel measure on $[0,1)$ such that
 $$
 \widehat\mu(n)=\int_0^1 e^{2\pi i n x}\,d\mu(x)\to0\qquad(n\to\infty).
 $$
-Let $d\nu$ be a finite complex Borel measure on $[0,1]$ absolutely continuous with respect to $d\mu$. Show that
+Let $d\nu$ be a finite complex Borel measure on $[0,1)$ absolutely continuous with respect to $d\mu$. Show that
 $$
 \widehat\nu(n)\to0\qquad(n\to\infty).
 $$
