@@ -1,0 +1,10 @@
+{
+  "source_pdf": "assets/attachments/complex_prelim.pdf",
+  "source_pdf_sha256": "e497b87cdf095eba73a3a57c21540bd71cab19ba46dcaa35ef7548d302b84a20",
+  "extracted_markdown": "assets/attachments/extracted/complex_prelim.md",
+  "extracted_markdown_sha256": "42dd09b398d872af3370d57228b0ec118f5a718ba313ef28beef3a5561cf8b14",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/complex_prelim.pdf --language en --pages 1-20; same with --pages 21-40; outputs concatenated",
+  "generated_at": "2026-10-31"
+}
