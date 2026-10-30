@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS07A
 kind: problem
-title: "Classification of groups of order p^3"
+title: "Classification of groups of order $p^3$"
 classification:
   areas:
   - algebra
