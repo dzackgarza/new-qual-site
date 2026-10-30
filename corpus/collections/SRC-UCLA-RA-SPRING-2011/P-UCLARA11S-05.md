@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLARA11S-05
 kind: problem
 title: Nonseparability of the dual of $\ell^\infty$ and nonreflexivity of $\ell^1$
-classification: {areas: [real-analysis], topics: []}
+classification: {areas: [real-analysis], topics: [Dual Spaces, Separability, Banach Spaces]}
 relations: []
 review: draft
 ---

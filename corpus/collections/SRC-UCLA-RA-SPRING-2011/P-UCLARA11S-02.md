@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLARA11S-02
 kind: problem
 title: An oscillatory approximate identity converges almost everywhere to zero
-classification: {areas: [real-analysis], topics: []}
+classification: {areas: [real-analysis], topics: [Approximations to the Identity, Lp Spaces]}
 relations: []
 review: draft
 ---

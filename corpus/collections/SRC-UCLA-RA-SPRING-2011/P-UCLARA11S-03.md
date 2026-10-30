@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLARA11S-03
 kind: problem
 title: A characteristic-function flatness condition forces a probability measure to be supported at zero
-classification: {areas: [real-analysis], topics: []}
+classification: {areas: [real-analysis], topics: [Fourier Transform, Borel Measures]}
 relations: []
 review: draft
 ---

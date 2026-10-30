@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLARA11S-04
 kind: problem
 title: Uniform entropy integrability plus almost-everywhere convergence implies $L^1$ convergence
-classification: {areas: [real-analysis], topics: []}
+classification: {areas: [real-analysis], topics: [Convergence of Integrals, Convergence of Functions, L¹]}
 relations: []
 review: draft
 ---

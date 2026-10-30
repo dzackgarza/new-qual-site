@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLARA11S-06
 kind: problem
 title: Existence and uniqueness of the Lebesgue decomposition of finite positive Borel measures
-classification: {areas: [real-analysis], topics: []}
+classification: {areas: [real-analysis], topics: [Radon-Nikodym, Absolute Continuity, Borel Measures]}
 relations: []
 review: draft
 ---

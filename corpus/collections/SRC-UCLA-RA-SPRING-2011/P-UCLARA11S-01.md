@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLARA11S-01
 kind: problem
 title: Weak $L^2$ convergence implies uniform convergence of primitives
-classification: {areas: [real-analysis], topics: []}
+classification: {areas: [real-analysis], topics: [Weak Convergence, L², Uniform Convergence]}
 relations: []
 review: draft
 ---
