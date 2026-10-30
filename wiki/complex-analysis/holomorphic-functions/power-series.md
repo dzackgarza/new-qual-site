@@ -16,10 +16,6 @@ topics:
 
 Holomorphic and analytic are equivalent: the Cauchy integral formula gives the power-series expansion, and the coefficient formula gives the Cauchy estimates.
 
-![](../../../../assets/assets/figures/2021-10-28_21-22-12.png)
-
-![](../../../../assets/assets/figures/2021-10-28_21-22-35.png)
-
 [[D-V6UQJ]]
 
 [[PR-QNDSD]]
@@ -29,6 +25,21 @@ Holomorphic and analytic are equivalent: the Cauchy integral formula gives the p
 [[T-GROTS]]
 
 [[T-K66DJ]]
+
+::: {.proof title="Sketch of the expansion"}
+Translate and scale so that $z_0=0$ and $r=1$, and fix $\abs z<1$.
+For $\abs w=1$,
+$$
+\frac{1}{w-z} = \frac1w\cdot\frac{1}{1-z/w} = \sum_{k\geq 0}\frac{z^k}{w^{k+1}},
+$$
+and the series converges uniformly in $w$ on $\abs w=1$ because $\abs{z/w}=\abs z<1$.
+Substituting into the Cauchy integral formula and integrating term by term gives
+$$
+f(z) = \frac{1}{2\pi i}\int_{\abs w=1}\frac{f(w)}{w-z}\dw = \sum_{k\geq 0} z^k\,\frac{1}{2\pi i}\int_{\abs w=1}\frac{f(w)}{w^{k+1}}\dw = \sum_{k\geq 0}a_kz^k.
+$$
+For $U$ as in [[T-K66DJ]] with $z_0\in U$, if $\partial U$ has length $L$ and distance $R$ from $z_0$ and $\abs f\leq M$ on $\partial U$, the formula $a_k = \frac{1}{2\pi i}\int_{\partial U}\frac{f(w)}{(w-z_0)^{k+1}}\dw$ gives $\abs{a_k}\leq ML/(2\pi R^{k+1})$, so $\limsup\abs{a_k}^{1/k}\leq 1/R$ and the series has radius of convergence at least $R$.
+
+:::
 
 [[PR-4BVDD]]
 
