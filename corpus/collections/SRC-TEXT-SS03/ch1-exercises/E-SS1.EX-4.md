@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.exercise}
-Show that it is impossible to define a total ordering on C. In other words, one cannot find a relation between complex numbers so that:
+Show that it is impossible to define a total ordering on $\CC$. In other words, one cannot find a relation $\succ$ between complex numbers so that:
 
-(i) For any two complex numbers z, w, one and only one of the following is true: $z \succ w , w \succ z \ \mathrm { o r } \ z = w .$
+(i) For any two complex numbers $z, w$, one and only one of the following is true: $z \succ w$, $w \succ z$ or $z = w$.
 
-(ii) For all $z _ { 1 } , z _ { 2 } , z _ { 3 } \in \CC$ the relation $z _ { 1 } \succ z _ { 2 }$ implies $z _ { 1 } + z _ { 3 } \succ z _ { 2 } + z _ { 3 }$
+(ii) For all $z_1, z_2, z_3 \in \CC$ the relation $z_1 \succ z_2$ implies $z_1 + z_3 \succ z_2 + z_3$.
 
-(iii) Moreover, for all $z _ { 1 } , z _ { 2 } , z _ { 3 } \in \CC$ with $z _ { 3 } \succ 0$ , then $z _ { 1 } \succ z _ { 2 }$ implies $z _ { 1 } z _ { 3 } \succ z _ { 2 } z _ { 3 }$
+(iii) Moreover, for all $z_1, z_2, z_3 \in \CC$ with $z_3 \succ 0$, then $z_1 \succ z_2$ implies $z_1 z_3 \succ z_2 z_3$.
 
 [Hint: First check if $i \succ 0$ is possible.]
 :::

@@ -16,11 +16,9 @@ audit:
 ---
 
 ::: {.exercise}
-Let $\gamma$ be a smooth curve in $\CC$ parametrized by $z ( t ) : [ a , b ] \to \CC$ . Let $\gamma ^ { - }$ denote the curve with the same image as $\gamma$ but with the reverse orientation.
-    Prove that for any continuous function $f$ on γ
-
+Let $\gamma$ be a smooth curve in $\CC$ parametrized by $z(t) \colon [a, b] \to \CC$. Let $\gamma^-$ denote the curve with the same image as $\gamma$ but with the reverse orientation. Prove that for any continuous function $f$ on $\gamma$
 $$
-\int_ {\gamma} f (z) d z = - \int_ {\gamma^ {-}} f (z) d z.
+\int_{\gamma} f(z)\, dz = -\int_{\gamma^-} f(z)\, dz.
 $$
 :::
 

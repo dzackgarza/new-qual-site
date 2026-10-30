@@ -16,46 +16,37 @@ audit:
 ---
 
 ::: {.exercise}
-The family of mappings introduced here plays an important role in complex analysis.
-   These mappings, sometimes called Blaschke factors, will reappear in various applications in later chapters.
+The family of mappings introduced here plays an important role in complex analysis. These mappings, sometimes called Blaschke factors, will reappear in various applications in later chapters.
 
-(a) Let $z , w$ be two complex numbers such that $\overline { { z } } w \ne 1$ . Prove that
-
+(a) Let $z, w$ be two complex numbers such that $\overline{z} w \neq 1$. Prove that
 $$
-\abs{ \frac {w - z}{1 - \overline {{w}} z} } <   1 \quad \text { if } \abs{ z } <   1 \text { and } \abs{ w } <   1,
+\abs{\frac{w - z}{1 - \overline{w} z}} < 1 \quad \text{if } \abs{z} < 1 \text{ and } \abs{w} < 1,
 $$
-
 and also that
-
 $$
-\abs{ \frac {w - z}{1 - \overline {{w}} z} } = 1 \quad \text { if } \abs{ z } = 1 \text { or } \abs{ w } = 1.
+\abs{\frac{w - z}{1 - \overline{w} z}} = 1 \quad \text{if } \abs{z} = 1 \text{ or } \abs{w} = 1.
 $$
-
-[Hint: Why can one assume that z is real?
-It then sufices to prove that
-
+[Hint: Why can one assume that $z$ is real? It then suffices to prove that
 $$
-(r - w) (r - \overline {{w}}) \leq (1 - r w) (1 - r \overline {{w}})
+(r - w)(r - \overline{w}) \leq (1 - rw)(1 - r\overline{w})
 $$
+with equality for appropriate $r$ and $\abs{w}$.]
 
-with equality for appropriate r and $\abs w$.]
-
-(b) Prove that for a fixed w in the unit disc D, the mapping
-
+(b) Prove that for a fixed $w$ in the unit disc $\DD$, the mapping
 $$
-F: z \mapsto \frac {w - z}{1 - \overline {{w}} z}
+F \colon z \mapsto \frac{w - z}{1 - \overline{w} z}
 $$
-
 satisfies the following conditions:
 
-(i) F maps the unit disc to itself (that is, $F : \DD \to \DD )$ , and is holomorphic.
+(i) $F$ maps the unit disc to itself (that is, $F \colon \DD \to \DD$), and is holomorphic.
 
-(ii) F interchanges 0 and $w ,$ namely $F ( 0 ) = w$ and $F ( w ) = 0$
+(ii) $F$ interchanges $0$ and $w$, namely $F(0) = w$ and $F(w) = 0$.
 
-(iii) $\abs{ F ( z ) } = 1 { \mathrm { ~ i f ~ } } \abs{ z } = 1 .$
+(iii) $\abs{F(z)} = 1$ if $\abs{z} = 1$.
 
-(iv) $F : \DD \to \DD$ is bijective.
-[Hint: Calculate $F \circ F . ]$
+(iv) $F \colon \DD \to \DD$ is bijective.
+
+[Hint: Calculate $F \circ F$.]
 :::
 
 ::: {.solution}

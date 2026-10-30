@@ -16,18 +16,14 @@ audit:
 ---
 
 ::: {.exercise}
-Show that if $\{ a _ { n } \} _ { n = 0 } ^ { \infty }$ is a sequence of non-zero complex numbers such that
-
+Show that if $\{a_n\}_{n=0}^{\infty}$ is a sequence of non-zero complex numbers such that
 $$
-\lim _ {n \to \infty} \frac {\abs{ a _ {n + 1} }}{\abs{ a _ {n} }} = L,
+\lim_{n \to \infty} \frac{\abs{a_{n+1}}}{\abs{a_n}} = L,
 $$
-
 then
-
 $$
-\lim _ {n \to \infty} \abs{ a _ {n} } ^ {1 / n} = L.
+\lim_{n \to \infty} \abs{a_n}^{1/n} = L.
 $$
-
 In particular, this exercise shows that when applicable, the ratio test can be used to calculate the radius of convergence of a power series.
 :::
 

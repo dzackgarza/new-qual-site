@@ -16,13 +16,11 @@ audit:
 ---
 
 ::: {.exercise}
-Consider the function $f$ defined on R by
-
+Consider the function $f$ defined on $\RR$ by
 $$
-f (x) = \left\{ \begin{array}{c l} 0 & \text {if} x \leq 0, \\ e ^ {- 1 / x ^ {2}} & \text {if} x > 0. \end{array} \right.
+f(x) = \begin{cases} 0 & \text{if } x \leq 0, \\ e^{-1/x^2} & \text{if } x > 0. \end{cases}
 $$
-
-Prove that $f$ is indefinitely diferentiable on $\RR ,$ and that $f ^ { ( n ) } ( 0 ) = 0$ for all $n \geq 1$ Conclude that $f$ does not have a converging power series expansion $\scriptstyle \sum _ { n = 0 } ^ { \infty } a _ { n } x ^ { n }$ for x near the origin.
+Prove that $f$ is indefinitely differentiable on $\RR$, and that $f^{(n)}(0) = 0$ for all $n \geq 1$. Conclude that $f$ does not have a converging power series expansion $\sum_{n=0}^{\infty} a_n x^n$ for $x$ near the origin.
 :::
 
 ::: {.solution}

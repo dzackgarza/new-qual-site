@@ -16,16 +16,15 @@ audit:
 ---
 
 ::: {.exercise}
-Let $\NN = \{ 1 , 2 , 3 , . . . \}$ denote the set of positive integers.
-    A subset $S \subset \NN$ is said to be in arithmetic progression if
-
+Let $\NN = \{1, 2, 3, \dots\}$ denote the set of positive integers. A subset $S \subset \NN$ is said to be in arithmetic progression if
 $$
-S = \{a, a + d, a + 2 d, a + 3 d, \dots \}
+S = \{a, a+d, a+2d, a+3d, \dots\}
 $$
+where $a, d \in \NN$. Here $d$ is called the step of $S$.
 
-where $a , d \in \NN .$ . Here d is called the step of S.
+Show that $\NN$ cannot be partitioned into a finite number of subsets that are in arithmetic progression with distinct steps (except for the trivial case $a = d = 1$).
 
-Show that N cannot be partitioned into a finite number of subsets that are in arithmetic progression with distinct steps (except for the trivial case $a = d = 1 )$ . [Hint: Write $\sum { _ { n \in \NN } z ^ { n } }$ as a sum of terms of the type ${ \frac { z ^ { a } } { 1 - z ^ { d } } } . ]$
+[Hint: Write $\sum_{n \in \NN} z^n$ as a sum of terms of the type $\frac{z^a}{1 - z^d}$.]
 :::
 
 ::: {.solution}
