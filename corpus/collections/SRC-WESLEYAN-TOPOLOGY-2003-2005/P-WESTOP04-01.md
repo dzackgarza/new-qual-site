@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESTOP04-01
 kind: problem
-title: Source-sensitive interval-image theorem from the August 2004 Wesleyan exam
+title: Continuous image of a closed interval is a closed bounded interval
 classification: {areas: [topology], topics: []}
 relations: []
 review: draft

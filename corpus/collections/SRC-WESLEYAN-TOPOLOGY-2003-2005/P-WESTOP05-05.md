@@ -2,25 +2,25 @@
 schema: qual/card@1
 id: P-WESTOP05-05
 kind: problem
-title: Characterize the Čech--Stone compactification and an unrecovered cardinality subproblem
+title: Characteristic properties and cardinalities of Čech--Stone compactifications
 classification: {areas: [topology], topics: []}
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-14
-  note: >-
-    Part (b) is badly garbled in the retained extraction: only “What are the
-    cardinalities of ββS(? β[,?” survives. The named spaces or sets cannot be
-    recovered safely.
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-14
 ---
 
 ::: {.problem}
 Let $X$ be completely regular Hausdorff and consider its Čech--Stone compactification $\beta X$.
 
 1. State a set of characteristic properties of $\beta X$; describe what it is rather than how to construct it.
-2. The source next asks for the cardinalities of several expressions involving $\beta$, but their arguments are unrecovered in the retained extraction. This subproblem is left explicit rather than reconstructed.
+2. What are the cardinalities of $\beta\NN$? $\beta S(\omega_1)$? $\beta[0,1]$?
+:::
+
+::: {.remark}
+Part 2 was read from the rendered page image; the extraction garbles it. The paper does not define $S(\omega_1)$. The solution treats the two usual readings: the discrete space of cardinality $\aleph_1$, and the ordinal space $[0,\omega_1)$.
 :::
 
 ::: {.solution}
@@ -224,21 +224,29 @@ This is the combined content of steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-r
 
 ::: {.pf-step #s1-6}
 
-Part (2) cannot be answered from the retained source.
+One has $\cardinality{\beta\NN}=2^{\mathfrak c}$ and
+$\cardinality{\beta[0,1]}=\mathfrak c$. If $S(\omega_1)$ is the discrete
+space of cardinality $\aleph_1$, then
+$\cardinality{\beta S(\omega_1)}=2^{2^{\aleph_1}}$; if it is the ordinal
+space $[0,\omega_1)$, then $\cardinality{\beta S(\omega_1)}=\aleph_1$.
 
 
 ::: pf-proof
 
-The retained extraction does not preserve the spaces or sets whose
-cardinalities are requested. Cardinalities of Čech--Stone compactifications
-depend essentially on the underlying spaces; for example,
-$$
-\cardinality{\beta X}
-$$
-cannot be determined from the symbol $\beta$ alone.
+For an infinite discrete space $D$, the points of $\beta D$ are the
+ultrafilters on $D$, and by the Pospíšil--Hausdorff theorem there are
+$2^{2^{\cardinality{D}}}$ of them. With $\cardinality{D}=\aleph_0$ this
+gives $2^{\mathfrak c}$; with $\cardinality{D}=\aleph_1$ it gives
+$2^{2^{\aleph_1}}$.
 
-Thus supplying numerical or cardinal answers would require reconstructing
-missing source data not present in the repository.
+The interval $[0,1]$ is compact Hausdorff, so the identity has the
+universal property of step [](#s1-5){.pf-ref} and $\beta[0,1]=[0,1]$, of
+cardinality $\mathfrak c$.
+
+Every continuous $f:[0,\omega_1)\to[0,1]$ is eventually constant, so it
+extends continuously to the compact Hausdorff space $[0,\omega_1]$, in
+which $[0,\omega_1)$ is dense. Hence $\beta[0,\omega_1)=[0,\omega_1]$, of
+cardinality $\aleph_1$.
 
 :::
 
@@ -246,9 +254,8 @@ missing source data not present in the repository.
 
 ::: pf-qed
 
-Step [](#s1-5){.pf-ref} completely answers the recoverable characteristic-property
-subproblem, and step [](#s1-6){.pf-ref} records the exact source obstruction for the
-unrecoverable cardinality subproblem.
+Step [](#s1-5){.pf-ref} answers part 1, and step [](#s1-6){.pf-ref}
+answers part 2.
 
 :::
 

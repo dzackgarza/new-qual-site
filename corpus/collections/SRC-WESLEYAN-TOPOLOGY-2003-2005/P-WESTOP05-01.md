@@ -15,7 +15,7 @@ Determine the cardinalities of the following sets:
 $$
 \mathcal P(\NN),
 \qquad
-\{0,1\},
+\{0,1\}^{\aleph_0},
 \qquad
 [0,1],
 \qquad
@@ -85,13 +85,16 @@ is in bijection with $\{0,1\}^{\NN}$.
 One has
 $$
 \boxed{
-\cardinality{\{0,1\}}=2}.
+\cardinality{\{0,1\}^{\aleph_0}}=2^{\aleph_0}=\mathfrak c}.
 $$
 
 
 ::: pf-proof
 
-The set has exactly two elements.
+The set $\{0,1\}^{\aleph_0}$ consists of the functions from a set of
+cardinality $\aleph_0$ to $\{0,1\}$, so its cardinality is
+$2^{\aleph_0}$ by definition of cardinal exponentiation. It is in
+bijection with $\mathcal P(\NN)$ as in step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -280,6 +283,8 @@ $$
 \boxed{
 \cardinality{\mathcal P(\NN)}
 =
+\cardinality{\{0,1\}^{\aleph_0}}
+=
 \cardinality{[0,1]}
 =
 \cardinality{(0,1)}
@@ -288,12 +293,7 @@ $$
 \{f:\NN\to[0,1]\}
 }
 =
-\mathfrak c}
-$$
-and
-$$
-\boxed{
-\cardinality{\{0,1\}}=2}.
+\mathfrak c}.
 $$
 
 
