@@ -5,7 +5,8 @@ kind: problem
 title: Isomorphism of $\RR[x]/(x^2+x-1)$ and $\RR[x]/(x^2+2x-3)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

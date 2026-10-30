@@ -5,7 +5,8 @@ kind: problem
 title: The identity $\int_0^1 x^{-x}\,dx=\sum_{n\ge1} n^{-n}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -29,6 +30,8 @@ Show that
 $$
 \int_0^1\frac{1}{x^x}\,dx=\sum_{n=1}^{\infty}\frac1{n^n}.
 $$
+
+Hint: write $x^x$ in terms of the exponential and logarithm functions, and evaluate the integral $\int_0^1x^s(\log x)^n\,dx$.
 :::
 
 ::: {.hint}

@@ -5,7 +5,8 @@ kind: problem
 title: Asymptotic number of throws of an $N$-sided die needed to see a marked side with probability $1/2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

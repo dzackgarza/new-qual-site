@@ -5,7 +5,8 @@ kind: problem
 title: Holomorphic antiderivatives of $z^n/(1+z^2)$ on $\abs{ z}>1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

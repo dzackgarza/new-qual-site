@@ -5,7 +5,8 @@ kind: problem
 title: Abelian groups of order $p^n$ and similarity classes of nilpotent $n\times n$ matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

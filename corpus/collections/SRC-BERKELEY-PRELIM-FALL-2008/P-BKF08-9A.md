@@ -5,7 +5,8 @@ kind: problem
 title: Pointwise convergence to $0$ does not force the integrals to converge to $0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

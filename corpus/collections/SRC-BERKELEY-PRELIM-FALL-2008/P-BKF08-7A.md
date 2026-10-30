@@ -5,7 +5,8 @@ kind: problem
 title: Products of pairwise trivially intersecting normal subgroups
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

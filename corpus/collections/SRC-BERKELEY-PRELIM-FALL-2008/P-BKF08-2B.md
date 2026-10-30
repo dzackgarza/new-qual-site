@@ -5,7 +5,8 @@ kind: problem
 title: Evaluation of $\int_0^\infty dx/(1+x^\alpha)$ for $\alpha>1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

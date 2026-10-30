@@ -5,7 +5,8 @@ kind: problem
 title: Primes of the form $2^n+n^2$ force $n\equiv3\pmod6$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

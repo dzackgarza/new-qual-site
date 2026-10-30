@@ -5,7 +5,8 @@ kind: problem
 title: A convergent rational series whose partial sums are Cauchy in every $p$-adic metric
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

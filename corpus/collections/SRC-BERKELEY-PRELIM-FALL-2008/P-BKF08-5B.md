@@ -5,7 +5,8 @@ kind: problem
 title: $\operatorname{PGL}_2(\FF_3)$ is isomorphic to $S_4$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

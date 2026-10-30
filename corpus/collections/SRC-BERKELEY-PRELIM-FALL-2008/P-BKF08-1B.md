@@ -5,7 +5,8 @@ kind: problem
 title: A vector space over an infinite field is not a finite union of proper affine subspaces
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

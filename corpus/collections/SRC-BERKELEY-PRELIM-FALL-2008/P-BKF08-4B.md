@@ -5,7 +5,8 @@ kind: problem
 title: Nonreal zeros of $z^{11}-3z^3+1$ in the annulus $1\le\abs{ z}\le2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

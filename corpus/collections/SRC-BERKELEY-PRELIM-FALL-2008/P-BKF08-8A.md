@@ -5,7 +5,8 @@ kind: problem
 title: Growth of the second moment of a solution of the heat equation
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Minimal polynomial of $\sqrt3+\sqrt2$ over $\QQ$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

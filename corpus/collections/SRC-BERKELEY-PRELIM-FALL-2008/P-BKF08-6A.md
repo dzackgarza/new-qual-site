@@ -5,7 +5,8 @@ kind: problem
 title: Young's inequality from integrals of a function and its inverse
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

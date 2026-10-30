@@ -5,7 +5,8 @@ kind: problem
 title: Eigenvalues of the skew-symmetric circulant matrix with entries $\pm1$ next to the diagonal
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -33,6 +34,8 @@ a_{ij}=\begin{cases}
 0,&\text{otherwise}.
 \end{cases}
 $$
+
+Hint: find sequences $(b_i)_{i\in\ZZ}$ and complex numbers $z$ such that $(z-z^{-1})b_i=b_{i+1}-b_{i-1}$ and $b_i=b_{i+n}$ for all integers $i$.
 :::
 
 ::: {.hint}
