@@ -44,7 +44,7 @@ The integral Künneth theorem gives
 $$\boxed{H_k(X\times\RP^4;\ZZ)\cong\begin{cases}
 \ZZ,&k=0,\\
 \ZZ/2,&k=1,\\
-\ZZ/6,&k=3,\\
+\ZZ/6\oplus\ZZ/2,&k=3,\\
 \ZZ/2,&k=4,\\
 \ZZ/2,&k=5,\\
 \ZZ/2,&k=6,7,\\
@@ -52,7 +52,7 @@ $$\boxed{H_k(X\times\RP^4;\ZZ)\cong\begin{cases}
 \end{cases}}$$
 
 ::: pf-proof
-Tensor terms from $H_3(X)=\ZZ/6$ with $H_1,H_3(\RP^4)=\ZZ/2$ contribute $\ZZ/2$ in degrees $4,6$. Tor terms $\operatorname{Tor}(\ZZ/6,\ZZ/2)=\ZZ/2$ contribute one degree higher, in degrees $5,7$. The base-factor terms contribute degrees $0,1,3$.
+Tensor terms from $H_3(X)=\ZZ/6$ with $H_1,H_3(\RP^4)=\ZZ/2$ contribute $\ZZ/2$ in degrees $4,6$. Tor terms $\operatorname{Tor}(\ZZ/6,\ZZ/2)=\ZZ/2$ contribute one degree higher, in degrees $5,7$. The terms $H_0(X)\otimes H_j(\RP^4)$ contribute $\ZZ,\ZZ/2,\ZZ/2$ in degrees $0,1,3$, and $H_3(X)\otimes H_0(\RP^4)$ contributes $\ZZ/6$ in degree $3$.
 :::
 
 :::

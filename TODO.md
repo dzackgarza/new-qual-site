@@ -554,7 +554,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-TOP-SPRING-2023
   - [x] SRC-UCSD-TOP-SPRING-2024
   - [x] SRC-UCSD-TOP-SPRING-2025
-  - [ ] SRC-UCSD-TOP-SPRING-2026
+  - [x] SRC-UCSD-TOP-SPRING-2026
   - [ ] SRC-UCSD-TOP-SUMMER-2015
   - [ ] SRC-UGA-ALG-FALL-2012
   - [ ] SRC-UGA-ALG-FALL-2013
