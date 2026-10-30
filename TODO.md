@@ -289,7 +289,7 @@ mathematical correction under its own node, not under copy policy.
   - [ ] SRC-TOP-2012Q1
   - [ ] SRC-TOP-2012Q2
   - [x] SRC-TOP-2013Q2
-  - [ ] SRC-TOP-2015Q2
+  - [x] SRC-TOP-2015Q2
   - [ ] SRC-TOP-2017Q2
   - [ ] SRC-TOP-2018Q2
   - [ ] SRC-TOP-2019Q1
