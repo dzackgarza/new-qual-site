@@ -63,7 +63,7 @@ $$
 $$
 Cauchy–Schwarz shows that the convolution integral exists
 at every $x$, with absolute value at most
-$m(E)^{1/2}m(F)^{1/2}$ [@Fol13]. Let
+$m(E)^{1/2}m(F)^{1/2}$ [@Fol99]. Let
 $$
 h(x)=(\chi_E*\chi_F)(x).
 $$
@@ -91,7 +91,7 @@ $$
 \le
 \norm{\chi_E}_2\,\norm{\tau_t\chi_F-\chi_F}_2.
 $$
-Translations are continuous in $L^2(\RR)$ [@Fol13], so the right-hand side tends to $0$ as $t\to0$. Hence $h$ is uniformly continuous, and in particular continuous.
+Translations are continuous in $L^2(\RR)$ [@Fol99], so the right-hand side tends to $0$ as $t\to0$. Hence $h$ is uniformly continuous, and in particular continuous.
 :::
 
 :::
@@ -124,7 +124,7 @@ Apply the Lebesgue differentiation theorem.
 
 ::: pf-proof
 Since $\chi_E\in L^1_{\mathrm{loc}}(\RR)$, almost every
-$x$ is a Lebesgue point [@Fol13]. At such a point,
+$x$ is a Lebesgue point [@Fol99]. At such a point,
 $$
 \abs{\frac1r\int_{x-r}^{x}\chi_E(y)\,dy-\chi_E(x)}
 \leq 2\frac1{2r}\int_{x-r}^{x+r}\abs{\chi_E(y)-\chi_E(x)}\,dy

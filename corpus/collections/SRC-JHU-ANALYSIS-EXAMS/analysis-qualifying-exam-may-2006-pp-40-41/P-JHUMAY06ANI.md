@@ -55,7 +55,7 @@ So $\abs{t-s}<\eps/(2R\norm f_1)$ implies $\abs{\widehat f(t)-\widehat f(s)}<\ep
 $\norm{f(\cdot+h)-f}_1\to0$ as $h\to0$.
 
 ::: pf-proof
-Given $\eta>0$, choose $\varphi\in C_c(\RR)$ with $\norm{f-\varphi}_1<\eta$ [@Fol13]. Translation invariance of the integral gives $\norm{f(\cdot+h)-f}_1\le2\eta+\norm{\varphi(\cdot+h)-\varphi}_1$. For $\abs h\le1$ both functions on the right vanish outside one bounded interval, and uniform continuity of $\varphi$ makes their difference tend uniformly to $0$, so its integral tends to $0$. Letting $h\to0$ and then $\eta\to0$ proves the claim.
+Given $\eta>0$, choose $\varphi\in C_c(\RR)$ with $\norm{f-\varphi}_1<\eta$ [@Fol99]. Translation invariance of the integral gives $\norm{f(\cdot+h)-f}_1\le2\eta+\norm{\varphi(\cdot+h)-\varphi}_1$. For $\abs h\le1$ both functions on the right vanish outside one bounded interval, and uniform continuity of $\varphi$ makes their difference tend uniformly to $0$, so its integral tends to $0$. Letting $h\to0$ and then $\eta\to0$ proves the claim.
 :::
 
 :::

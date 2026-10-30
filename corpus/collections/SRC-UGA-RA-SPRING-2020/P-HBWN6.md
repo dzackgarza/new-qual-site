@@ -44,7 +44,7 @@ Fubini's theorem applied to $H$ then shows that $f\ast g$ is defined almost ever
 \envlist
 - Tonelli: non-negative and measurable yields measurability of slices and equality of iterated integrals
 - Fubini: $f(x, y) \in L^1$ yields *integrable* slices and equality of iterated integrals
-- F/T: apply Tonelli to $\abs{f}$; if finite, $f\in L^1$ and apply Fubini to $f$ [@Fol13, Theorem 2.37].
+- F/T: apply Tonelli to $\abs{f}$; if finite, $f\in L^1$ and apply Fubini to $f$ [@Fol99, Theorem 2.37].
 :::
 
 ::: {.solution}

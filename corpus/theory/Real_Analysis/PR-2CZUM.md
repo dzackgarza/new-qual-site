@@ -34,5 +34,5 @@ $$
 :::
 
 ::: {.remark title="Variations"}
-Both parts hold, with the same proof by dominated convergence, when $I$ is an open interval or any interval of positive length [@Fol13].
+Both parts hold, with the same proof by dominated convergence, when $I$ is an open interval or any interval of positive length [@Fol99].
 :::

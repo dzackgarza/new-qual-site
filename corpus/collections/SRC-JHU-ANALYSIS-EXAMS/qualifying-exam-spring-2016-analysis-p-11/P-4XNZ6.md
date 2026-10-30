@@ -118,7 +118,7 @@ Inner regularity gives the bound for $E_\alpha$.
 
 Lebesgue measure is inner regular on measurable sets, so
 $m(E_\alpha)=\sup\{m(K):K\subset E_\alpha\text{ compact}\}$
-[@Fol13]. Step [](#s3){.pf-ref} then gives
+[@Fol99]. Step [](#s3){.pf-ref} then gives
 $$
 \boxed{
 m(\{x:f^*(x)>\alpha\})

@@ -51,7 +51,7 @@ By the Cauchy--Schwarz inequality, $\abs{\int f(y)g(x-y)\,dy}\le\norm f_2\norm{g
 (a) $f\ast g$ is continuous.
 
 ::: pf-proof
-By the Cauchy--Schwarz inequality, $\abs{(f\ast g)(x+h)-(f\ast g)(x)}\le\norm f_2\norm{\tau_{-h}g-g}_2$, which tends to $0$ as $h\to0$ by continuity of translation in $L^2$ [@Fol13].
+By the Cauchy--Schwarz inequality, $\abs{(f\ast g)(x+h)-(f\ast g)(x)}\le\norm f_2\norm{\tau_{-h}g-g}_2$, which tends to $0$ as $h\to0$ by continuity of translation in $L^2$ [@Fol99].
 :::
 
 :::

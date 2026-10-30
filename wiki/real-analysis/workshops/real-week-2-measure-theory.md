@@ -7,7 +7,7 @@ title: "Real analysis qual prep week 2: measure theory and Fubini--Tonelli"
 
 References:
 
-- [@Fol13, chap. 1]
+- [@Fol99, chap. 1]
 
 - [@SS05, chaps. 1-2]
 

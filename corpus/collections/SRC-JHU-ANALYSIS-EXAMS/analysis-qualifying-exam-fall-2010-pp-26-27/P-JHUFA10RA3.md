@@ -64,7 +64,7 @@ B(x)=\int_{\RR^n}K(x,y)\frac{\abs{f(y)}^2}{q(y)}\,dy.
 $$
 This is a nonnegative measurable function, possibly
 initially infinite. Tonelli and the second kernel inequality
-give [@Fol13]
+give [@Fol99]
 $$
 \begin{aligned}
 \int_{\RR^n}p(x)B(x)\,dx
@@ -82,7 +82,7 @@ $K^{1/2}q^{1/2}$ and $K^{1/2}\abs{f}q^{-1/2}$ yields
 $$
 \int K(x,y)\abs{f(y)}\,dy\leq A(x)^{1/2}B(x)^{1/2}<\infty
 $$
-[@Fol13]. Thus $Tf$ is defined almost everywhere, and
+[@Fol99]. Thus $Tf$ is defined almost everywhere, and
 the usual parameter-integral measurability follows by
 Tonelli applied to positive and negative real and imaginary
 parts. Set $Tf=0$ on the exceptional null set.
@@ -107,7 +107,7 @@ $$
 \int K(x,y)\frac{\abs{f(y)}^2}{q(y)}\,dy.
 \end{aligned}
 $$
-Integrating in $x$ and using Tonelli's theorem gives [@Fol13]
+Integrating in $x$ and using Tonelli's theorem gives [@Fol99]
 $$
 \begin{aligned}
 \norm{Tf}_2^2

@@ -56,7 +56,7 @@ since the derivative is continuous.
 
 By the Baire category theorem, the nonempty complete
 metric space $\CC$ cannot be a countable union
-of closed sets with empty interior [@Fol13]. Hence
+of closed sets with empty interior [@Fol99]. Hence
 some $Z_m$ has nonempty interior. The entire function
 $f^{(m)}$ vanishes on this open set. The identity theorem
 on the connected plane gives $f^{(m)}\equiv0$ [@SS03].

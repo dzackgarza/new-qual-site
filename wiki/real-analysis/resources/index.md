@@ -5,7 +5,7 @@ order: 11
 
 # Resources
 
-- [[real-analysis/resources/preface|Exercises from Folland]] -- exercises from chapters 1--3 of [@Fol13].
+- [[real-analysis/resources/preface|Exercises from Folland]] -- exercises from chapters 1--3 of [@Fol99].
 
 - [[real-analysis/resources/topics|Real analysis topics]] -- a workshop schedule and topic lists from qualifying exam syllabi.
 

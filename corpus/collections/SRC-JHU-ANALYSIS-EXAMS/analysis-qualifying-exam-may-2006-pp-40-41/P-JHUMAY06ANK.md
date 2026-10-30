@@ -53,7 +53,7 @@ Weak convergence gives $\langle f_n,g\rangle\to\langle f,g\rangle$; conjugating,
 :::
 
 ::: pf-qed
-$H$ is complete, so by steps [](#phi-n-bounded){.pf-ref} and [](#phi-n-pointwise-bounded){.pf-ref} the uniform boundedness principle [@Fol13] gives $\sup_n\norm{\phi_n}<\infty$. By step [](#phi-n-bounded){.pf-ref} this is $\sup_n\norm{f_n}_2$, which bounds $\limsup_n\norm{f_n}_2$.
+$H$ is complete, so by steps [](#phi-n-bounded){.pf-ref} and [](#phi-n-pointwise-bounded){.pf-ref} the uniform boundedness principle [@Fol99] gives $\sup_n\norm{\phi_n}<\infty$. By step [](#phi-n-bounded){.pf-ref} this is $\sup_n\norm{f_n}_2$, which bounds $\limsup_n\norm{f_n}_2$.
 :::
 
 :::

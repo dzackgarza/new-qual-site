@@ -507,7 +507,7 @@ order: 110
 
 ## Differential topology
 
-Reference: [@GP25].
+Reference: [@GP10].
 
 - degree theory
 

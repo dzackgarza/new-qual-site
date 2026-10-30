@@ -22,5 +22,5 @@ If $p=1$, assume that $\mu$ is [[D-BXAUS|$\sigma$-finite]]. Then the map
 $$
 L^q(X,\mu)\to \dualof{L^p(X,\mu)},\qquad g\mapsto\qty{f\mapsto\int_X fg\dmu},
 $$
-is an isometric isomorphism onto the space $\dualof{L^p(X,\mu)}$ of continuous linear functionals on $L^p(X,\mu)$ with the [[D-T4LOC|dual norm]] [@Fol13].
+is an isometric isomorphism onto the space $\dualof{L^p(X,\mu)}$ of continuous linear functionals on $L^p(X,\mu)$ with the [[D-T4LOC|dual norm]] [@Fol99].
 :::

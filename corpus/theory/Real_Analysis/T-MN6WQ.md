@@ -23,7 +23,7 @@ $$
 \sum_{n=1}^\infty \int_X \abs{f_n}\dmu \quad\text{and}\quad \int_X\sum_{n=1}^\infty \abs{f_n}\dmu
 $$
 are equal in $[0,\infty]$.
-More generally, $\int_X\sum_n g_n\dmu=\sum_n\int_X g_n\dmu$ in $[0,\infty]$ for any $g_n\in$ [[D-BF5L2|$L^+$]] [@Fol13].
+More generally, $\int_X\sum_n g_n\dmu=\sum_n\int_X g_n\dmu$ in $[0,\infty]$ for any $g_n\in$ [[D-BF5L2|$L^+$]] [@Fol99].
 
 (b) If $\sum_{n}\norm{f_n}_1<\infty$, then $\sum_{n}f_n(x)$ converges absolutely for almost every $x$, its sum $F$, defined almost everywhere, lies in $L^1(X,\mu)$, and
 $$

@@ -54,7 +54,7 @@ $\abs{af+bg}^2\leq2\abs{a}^2\abs{f}^2+2\abs{b}^2\abs{g}^2$ proves their
 square integrability. Thus $A^2(U)$ is a complex vector space.
 Cauchy–Schwarz gives
 $\int_U\abs{f\overline g}\,dA\leq\norm{f}_2\norm{g}_2$, so the
-inner product is finite [@Fol13]. Linearity in the first
+inner product is finite [@Fol99]. Linearity in the first
 variable and conjugate symmetry follow from the integral.
 
 If $f(a)\ne0$ at some $a\in U$, continuity gives a disk
@@ -118,7 +118,7 @@ is Cauchy. Fatou's lemma gives
 $$
 \int_U\abs{f}^2\,dA\leq\liminf_{n\to\infty}\norm{f_n}_2^2<\infty,
 $$
-so $f\in A^2(U)$ [@Fol13]. Given $\varepsilon>0$,
+so $f\in A^2(U)$ [@Fol99]. Given $\varepsilon>0$,
 choose $N$ such that $\norm{f_n-f_m}_2<\varepsilon$ for
 $n,m\geq N$. For fixed $n\geq N$, apply Fatou again:
 $$

@@ -65,7 +65,7 @@ $$
 \le \frac1{\varepsilon^2}\sum_{k=1}^\infty\norm{S_{k^2}}_2^2<\infty.
 $$
 Apply Borel–Cantelli for each of the countably many
-thresholds $\varepsilon=1/j$, $j\geq1$ [@Fol13]. Outside
+thresholds $\varepsilon=1/j$, $j\geq1$ [@Fol99]. Outside
 the union of their null exceptional sets, each threshold
 is exceeded only finitely often. Therefore
 $S_{k^2}(x)\to0$ for almost every $x$.

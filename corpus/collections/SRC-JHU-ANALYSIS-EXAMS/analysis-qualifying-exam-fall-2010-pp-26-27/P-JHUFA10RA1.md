@@ -67,7 +67,7 @@ and apply Tonelli to
 $$
 \sum_{k=1}^\infty \abs{f_{j_k}-f}^2.
 $$
-Its integral is finite, so the series is finite almost everywhere; hence its terms tend to zero almost everywhere [@Fol13].
+Its integral is finite, so the series is finite almost everywhere; hence its terms tend to zero almost everywhere [@Fol99].
 :::
 
 :::
@@ -82,7 +82,7 @@ e^{100\norm{x}^2}\abs{f_{j_k}(x)}^2
 \longrightarrow
 e^{100\norm{x}^2}\abs{f(x)}^2.
 $$
-These functions are nonnegative, so Fatou's lemma gives [@Fol13]
+These functions are nonnegative, so Fatou's lemma gives [@Fol99]
 $$
 \int_{\RR^n} e^{100\norm{x}^2}\abs{f(x)}^2\,dx
 \le

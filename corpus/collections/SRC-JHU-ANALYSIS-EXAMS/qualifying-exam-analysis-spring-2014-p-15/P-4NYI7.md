@@ -57,7 +57,7 @@ The middle-thirds Cantor set $C=\bigcap_{n\geq0}C_n$ is a nonempty measurable se
 ::: pf-proof
 
 By induction, $C_n$ is a union of $2^n$ disjoint closed intervals, each of length $3^{-n}$.
-So $C$ is closed, hence Lebesgue measurable [@Fol13], and nonempty since $0\in C_n$ for every $n$.
+So $C$ is closed, hence Lebesgue measurable [@Fol99], and nonempty since $0\in C_n$ for every $n$.
 
 :::
 

@@ -19,7 +19,7 @@ review: draft
 ::: {.theorem}
 Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space and let $f_n\colon X\to[0,\infty]$ be [[D-DHFN4|measurable]] for $n\geq1$.
 
-1. (Fatou's lemma [@Fol13])
+1. (Fatou's lemma [@Fol99])
 $$
 \liminf_{n\to\infty} \int_X f_n\dmu \geq \int_X \liminf_{n\to\infty} f_n\dmu .
 $$

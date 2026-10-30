@@ -35,5 +35,5 @@ Let $K\subseteq\RR^n$ be compact and equip $C(K,\RR^m)$ with the metric $d(f,g)\
 A subset $\mcf\subseteq C(K,\RR^m)$ is compact if and only if $\mcf$ is closed, [[D-2GCTV|bounded]] in $d$, and equicontinuous at every point of $K$.
 Since a compact set is closed and a closed subset of a compact set is compact, this is the form of the theorem for closed families; boundedness in $d$ is uniform boundedness.
 
-The statement also holds for a compact Hausdorff space $X$ in place of $K$, with equicontinuity at a point taken in the topological sense of [[D-2CCDB]], and for real-valued functions $C(X;\RR)$ [@Fol13, Theorem 4.43].
+The statement also holds for a compact Hausdorff space $X$ in place of $K$, with equicontinuity at a point taken in the topological sense of [[D-2CCDB]], and for real-valued functions $C(X;\RR)$ [@Fol99, Theorem 4.43].
 :::

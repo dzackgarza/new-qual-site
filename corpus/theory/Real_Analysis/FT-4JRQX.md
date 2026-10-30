@@ -41,5 +41,5 @@ Fubini's theorem instead assumes $f\in L^1(\RR^{n+k})$ and allows $f$ to take va
 
 ::: {.remark}
 Applied to the indicator of a [[D-MDJII|Lebesgue measurable]] set $E\subseteq\RR^n\times\RR^k$, part 1 says that for almost every $y\in\RR^k$ the slice $E^y\coloneqq\theset{x\in\RR^n \suchthat (x, y) \in E}$ is Lebesgue measurable.
-See [@Fol13].
+See [@Fol99].
 :::

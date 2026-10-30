@@ -49,8 +49,8 @@ references:
   number-of-pages: '331'
   publisher: McGraw-Hill
   publisher-place: New York
-  title: 'Complex analysis: an introduction to the theory of analytic functions of
-    one complex variable'
+  title: 'Complex Analysis: An Introduction to the Theory of Analytic Functions of
+    One Complex Variable'
   type: book
 - id: AM18
   author:
@@ -65,7 +65,7 @@ references:
   issued:
   - year: 2018
   publisher: CRC Press
-  title: Introduction to Commutative algebra
+  title: Introduction to Commutative Algebra
   type: book
 - id: Apo74
   author:
@@ -82,7 +82,7 @@ references:
   publisher: Addison-Wesley
   publisher-place: Reading, Mass.
   source: K10plus ISBN
-  title: 'Mathematical analysis: a modern approach to advanced calculus'
+  title: 'Mathematical Analysis: A Modern Approach to Advanced Calculus'
   title-short: Mathematical analysis
   type: book
 - id: Arn73
@@ -167,8 +167,8 @@ references:
   publisher: American Mathematical Society
   publisher-place: Providence, R.I
   source: Library of Congress ISBN
-  title: 'From Stein to Weinstein and back: symplectic geometry of affine complex
-    manifolds'
+  title: 'From Stein to Weinstein and Back: Symplectic Geometry of Affine Complex
+    Manifolds'
   title-short: From Stein to Weinstein and back
   type: book
 - id: Con78
@@ -188,7 +188,7 @@ references:
   publisher: Springer New York
   publisher-place: New York, NY
   source: K10plus ISBN
-  title: Functions of One complex Variable I
+  title: Functions of One Complex Variable I
   type: book
 - id: Cul66
   accessed:
@@ -250,7 +250,7 @@ references:
   publisher: Springer
   publisher-place: New York
   source: BnF ISBN
-  title: The geometry of schemes
+  title: The Geometry of Schemes
   type: book
 - id: Eis95
   author:
@@ -265,24 +265,9 @@ references:
   number-of-pages: xvi+785
   publisher: Springer-Verlag
   publisher-place: New York
-  title: Commutative algebra with a View Toward algebraic geometry
+  title: Commutative Algebra with a View Toward Algebraic Geometry
   type: book
   volume: '150'
-- id: Eur15
-  author:
-  - family: Eur
-    given: Christopher
-  citation-key: Eur15
-  genre: Senior thesis
-  issued:
-  - year: 2015
-    month: 3
-    day: 23
-  note: 'Advisor: Melody Chan'
-  publisher: Harvard University
-  title: An introduction to toric varieties
-  type: thesis
-  URL: https://people.math.harvard.edu/~ceur/notes_pdf/Eur_Senior_Thesis_Final.pdf
 - id: FB09
   author:
   - family: Freitag
@@ -323,24 +308,24 @@ references:
   publisher: Springer
   publisher-place: New York Berlin Paris [etc.]
   source: BnF ISBN
-  title: 'Representation theory: A first course'
+  title: 'Representation Theory: A First Course'
   title-short: Representation theory
   type: book
-- id: Fol13
+- id: Fol99
   author:
   - family: Folland
     given: G. B.
-  citation-key: Fol13
+  citation-key: Fol99
   edition: 2nd ed
   ISBN: 978-1-118-62639-9
   issued:
-  - year: 2013
+  - year: 1999
   language: en
   note: 'OCLC: 1058192204'
-  publisher: John Wiley & Sons, Incorporated, Wiley
+  publisher: Wiley
   publisher-place: New York
   source: Open WorldCat
-  title: 'Real analysis: Modern techniques and Their applications'
+  title: 'Real Analysis: Modern Techniques and Their Applications'
   title-short: Real Analysis
   type: book
   volume: '1'
@@ -360,7 +345,7 @@ references:
   publisher: Princeton University Press
   publisher-place: Princeton, N.J
   source: Library of Congress ISBN
-  title: Introduction to toric varieties
+  title: Introduction to Toric Varieties
   type: book
 - id: Ful95
   author:
@@ -446,20 +431,20 @@ references:
   publisher: Wiley
   publisher-place: New York
   source: DOI.org (Crossref)
-  title: Principles of algebraic geometry
+  title: Principles of Algebraic Geometry
   type: book
   URL: https://onlinelibrary.wiley.com/doi/book/10.1002/9781118032527
-- id: GP25
+- id: GP10
   author:
   - family: Guillemin
     given: Victor
   - family: Pollack
     given: Alan
-  citation-key: GP25
+  citation-key: GP10
   DOI: 10.1090/chel/370
   ISBN: 978-1-4704-1135-0
   issued:
-  - year: 2025
+  - year: 2010
   language: en
   note: 'OCLC: 1564490986'
   publisher: American Mathematical Society
@@ -528,7 +513,7 @@ references:
   publisher: Springer
   publisher-place: New York Heidelberg
   source: K10plus ISBN
-  title: 'Algebraic geometry: A first course'
+  title: 'Algebraic Geometry: A First Course'
   title-short: Algebraic geometry
   type: book
   URL: http://link.springer.com/10.1007/978-1-4757-2189-8
@@ -657,7 +642,7 @@ references:
   - year: 1992
   publisher: Cambridge University Press
   publisher-place: Cambridge
-  title: Complex algebraic curves
+  title: Complex Algebraic Curves
   type: book
   URL: https://doi.org/10.1017/CBO9780511623929
 - id: KM98
@@ -677,7 +662,7 @@ references:
   publisher: Cambridge University Press
   publisher-place: Cambridge ; New York
   source: Library of Congress ISBN
-  title: Birational geometry of algebraic varieties
+  title: Birational Geometry of Algebraic Varieties
   type: book
 - id: Lan10
   author:
@@ -712,7 +697,7 @@ references:
   publisher: Springer-Verlag
   publisher-place: Berlin
   source: BnF ISBN
-  title: Positivity in algebraic geometry. I
+  title: Positivity in Algebraic Geometry I
   type: book
   volume: 48,49
 - id: Lee13
@@ -733,7 +718,7 @@ references:
   publisher: Springer
   publisher-place: New York ; London
   source: Library of Congress ISBN
-  title: Introduction to smooth manifolds
+  title: Introduction to Smooth Manifolds
   type: book
   volume: '218'
 - id: Mas19
@@ -753,7 +738,7 @@ references:
   publisher: Springer
   publisher-place: New York Heidelberg
   source: K10plus ISBN
-  title: A basic course in algebraic topology
+  title: A Basic Course in Algebraic Topology
   type: book
 - id: Mas91
   author:
@@ -799,15 +784,15 @@ references:
   source: Library of Congress ISBN
   title: Topology from the Differentiable Viewpoint
   type: book
-- id: Mir25
+- id: Mir95
   author:
   - family: Miranda
     given: Rick
-  citation-key: Mir25
+  citation-key: Mir95
   DOI: 10.1090/gsm/005
   ISBN: 978-1-4704-8116-2
   issued:
-  - year: 2025
+  - year: 1995
   language: en
   note: 'OCLC: 1534116771'
   publisher: American Mathematical Society
@@ -831,7 +816,7 @@ references:
   publisher: Springer Berlin / Heidelberg
   publisher-place: Berlin, Heidelberg
   source: K10plus ISBN
-  title: The Red Book of varieties and schemes
+  title: The Red Book of Varieties and Schemes
   type: book
 - id: Mun00
   author:
@@ -862,7 +847,7 @@ references:
   publisher: Addison-Wesley publ
   publisher-place: Redwood city (calif) [etc.]
   source: BnF ISBN
-  title: Elements of algebraic topology
+  title: Elements of Algebraic Topology
   type: book
 - id: Mun91
   author:
@@ -877,7 +862,7 @@ references:
   publisher: Addison-Wesley Pub. Co., Advanced Book Program
   publisher-place: Redwood City, Calif
   source: Library of Congress ISBN
-  title: Analysis on manifolds
+  title: Analysis on Manifolds
   type: book
 - id: PA12
   accessed:
@@ -919,7 +904,7 @@ references:
   publisher: Springer
   publisher-place: New York
   source: Library of Congress ISBN
-  title: 'Complex analysis: In the Spirit of Lipman Bers'
+  title: 'Complex Analysis: In the Spirit of Lipman Bers'
   title-short: Complex analysis
   type: book
 - id: Ros97
@@ -962,7 +947,7 @@ references:
   publisher: McGraw-Hill
   publisher-place: New York
   source: Library of Congress ISBN
-  title: Real and complex analysis
+  title: Real and Complex Analysis
   type: book
   volume: '1'
 - id: Rud76
@@ -975,9 +960,9 @@ references:
   issued:
   - year: 1976
   language: en
-  publisher: McGraw--Hill
+  publisher: McGraw-Hill
   publisher-place: New York
-  title: Principles of Mathematical analysis
+  title: Principles of Mathematical Analysis
   type: book
   volume: '1'
 - id: Sam61
@@ -1055,7 +1040,7 @@ references:
   publisher: Springer
   publisher-place: New York, NY
   source: DOI.org (Crossref)
-  title: A course in arithmetic
+  title: A Course in Arithmetic
   type: book
   URL: http://link.springer.com/10.1007/978-1-4684-9884-4
   volume: '7'
@@ -1076,7 +1061,7 @@ references:
   publisher: Springer-Verlag
   publisher-place: New York
   source: Library of Congress ISBN
-  title: Linear representations of finite groups
+  title: Linear Representations of Finite Groups
   type: book
 - id: Sha13
   accessed:
@@ -1097,7 +1082,7 @@ references:
   publisher: Springer Berlin Heidelberg
   publisher-place: Berlin, Heidelberg
   source: DOI.org (Crossref)
-  title: 'Basic algebraic geometry 1: Varieties in projective space'
+  title: 'Basic Algebraic Geometry 1: Varieties in Projective Space'
   type: book
   URL: http://link.springer.com/10.1007/978-3-642-57908-0
 - id: Sha94
@@ -1160,6 +1145,7 @@ references:
     given: Rami
   call-number: QA331 .S743 2003
   citation-key: SS03
+  citation-label: StSh03a
   collection-number: '2'
   collection-title: Princeton lectures in analysis
   ISBN: 978-0-691-11385-2
@@ -1178,6 +1164,7 @@ references:
   - family: Shakarchi
     given: Rami
   citation-key: Ste03
+  citation-label: StSh03b
   edition: 1st ed
   ISBN: 978-0-691-11384-5
   issued:
@@ -1187,7 +1174,7 @@ references:
   publisher: Princeton University Press
   publisher-place: New Jersey
   source: K10plus ISBN
-  title: 'Fourier analysis: An introduction'
+  title: 'Fourier Analysis: An Introduction'
   title-short: Fourier Analysis
   type: book
   volume: '1'
@@ -1208,7 +1195,7 @@ references:
   publisher: Princeton University Press
   publisher-place: Princeton, N.J
   source: Library of Congress ISBN
-  title: 'Real analysis: Measure theory, Integration, and hilbert spaces'
+  title: 'Real Analysis: Measure Theory, Integration, and Hilbert Spaces'
   title-short: Real analysis
   type: book
 - id: Tay19
@@ -1226,7 +1213,7 @@ references:
   publisher: American Mathematical Society
   publisher-place: Providence, Rhode Island
   source: Library of Congress ISBN
-  title: Introduction to complex analysis
+  title: Introduction to Complex Analysis
   type: book
 - id: Vak07
   accessed:
@@ -1257,7 +1244,7 @@ references:
   publisher: Princeton University Press
   publisher-place: Princeton
   source: K10plus ISBN
-  title: 'The Rising Sea: Foundations of algebraic geometry'
+  title: 'The Rising Sea: Foundations of Algebraic Geometry'
   title-short: The rising sea
   type: book
 - id: Wei94
@@ -1282,6 +1269,6 @@ references:
   publisher: Cambridge University Press
   publisher-place: Cambridge [England] ; New York
   source: Library of Congress ISBN
-  title: An introduction to homological algebra
+  title: An Introduction to Homological Algebra
   type: book
   URL: https://www.cambridge.org/core/product/identifier/9781139644136/type/book

@@ -52,7 +52,7 @@ and
 $\abs{af+bg}^2\leq2\abs{a}^2\abs{f}^2+2\abs{b}^2\abs{g}^2$
 shows that they remain square integrable. Cauchy–Schwarz
 gives $\int_U\abs{f\overline g}\,dA\leq\norm{f}_2\norm{g}_2$,
-so the inner product is well defined [@Fol13]. Linearity
+so the inner product is well defined [@Fol99]. Linearity
 in the first variable and conjugate symmetry follow from
 the integral.
 
@@ -76,7 +76,7 @@ and Cauchy–Schwarz imply, for $0<\rho<r$,
 $$
 \abs{f(a)}^2\leq\frac1{2\pi}\int_0^{2\pi}\abs{f(a+\rho e^{it})}^2\,dt
 $$
-[@SS03; @Fol13]. Integrating this inequality against
+[@SS03; @Fol99]. Integrating this inequality against
 $2\pi\rho\,d\rho$ yields
 $\pi r^2\abs{f(a)}^2\leq\int_{D(a,r)}\abs{f}^2\,dA$.
 For a nonempty compact $K\subset U$, compactness and
@@ -99,7 +99,7 @@ The inner-product space is complete.
 
 Let $(f_n)$ be Cauchy in this norm. Completeness of
 $L^2(U)$ gives an $L^2$ limit $F$, regarded as a measurable
-representative of its almost-everywhere class [@Fol13].
+representative of its almost-everywhere class [@Fol99].
 Step [](#s2){.pf-ref} makes $(f_n)$ uniformly Cauchy on every compact
 subset of $U$. Pointwise completeness of $\CC$ and
 that same estimate give a locally uniform limit $f$.
@@ -112,7 +112,7 @@ $$
 \int_U\abs{f-F}^2\,dA
 \leq\liminf_{n\to\infty}\int_U\abs{f_n-F}^2\,dA=0
 $$
-[@Fol13]. Hence $f=F$ almost everywhere. It follows that
+[@Fol99]. Hence $f=F$ almost everywhere. It follows that
 $f\in A^2(U)$ and $\norm{f_n-f}_2=\norm{f_n-F}_2\to0$.
 Thus every Cauchy sequence converges in $A^2(U)$, proving
 that it is a Hilbert space.

@@ -29,7 +29,7 @@ $$
 :::
 
 ::: {.remark title="Variations"}
-(a) For $1\leq p<\infty$ and $f\in L^p(\RR^n)$, $\norm{\tau_h f-f}_p\to0$ as $h\to0$ [@Fol13].
+(a) For $1\leq p<\infty$ and $f\in L^p(\RR^n)$, $\norm{\tau_h f-f}_p\to0$ as $h\to0$ [@Fol99].
 
 (b) The statement fails for $p=\infty$: for $f\coloneqq\chi_{[0,\infty)}\in L^\infty(\RR)$ and $h\neq0$, $\tau_h f-f=\pm\chi_I$ for the half-open interval $I$ between $0$ and $h$, so $\norm{\tau_h f-f}_\infty=1$.
 

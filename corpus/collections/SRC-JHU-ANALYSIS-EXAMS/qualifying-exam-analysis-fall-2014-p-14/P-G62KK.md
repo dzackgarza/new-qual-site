@@ -73,7 +73,7 @@ $$
 $$
 The displayed domination holds almost everywhere, and
 $h_N\downarrow0$ everywhere by its definition on $Z$.
-Since $g\in L^1(E)$, dominated convergence gives [@Fol13]
+Since $g\in L^1(E)$, dominated convergence gives [@Fol99]
 $$
 \int_E h_N\,dm\longrightarrow0.
 $$
@@ -130,7 +130,7 @@ Put $F=E\setminus B$ and $H=\RR^d\setminus F$.
 For each positive integer $j$, the measurable set
 $H_j=H\cap[-j,j]^d$ has finite measure. Outer regularity
 gives an open $O_j\supset H_j$ with
-$m(O_j\setminus H_j)<\varepsilon/2^{j+1}$ [@Fol13].
+$m(O_j\setminus H_j)<\varepsilon/2^{j+1}$ [@Fol99].
 Then $O=\bigcup_jO_j$ is open and contains $H$, and
 $$
 m(O\setminus H)\leq\sum_{j=1}^\infty m(O_j\setminus H_j)
@@ -195,7 +195,7 @@ $$
 m(B_{1,j})
 \le 2j\int_E g<\infty.
 $$
-Hence continuity from above of measure yields [@Fol13]
+Hence continuity from above of measure yields [@Fol99]
 $$
 m(B_{N,j})\longrightarrow0
 \qquad(N\to\infty).
@@ -244,7 +244,7 @@ $F=E\setminus B$ and $H=\RR^d\setminus F$.
 For each positive integer $j$, use finite-measure outer
 regularity to choose an open $O_j\supset H\cap[-j,j]^d$
 whose excess measure is less than $\epsilon/2^{j+1}$
-[@Fol13]. The open set $O=\bigcup_jO_j$ contains $H$, and
+[@Fol99]. The open set $O=\bigcup_jO_j$ contains $H$, and
 $$
 m(O\setminus H)
 \leq\sum_j m\bigl(O_j\setminus(H\cap[-j,j]^d)\bigr)

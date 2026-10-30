@@ -23,7 +23,7 @@ Let $a<b$ and $f\colon[a,b]\to\RR$.
 
 (c) If $f\in L^1([a,b])$, then $F(x) \coloneqq\int_a^x f$ is absolutely continuous on $[a,b]$ and $F' = f$ almost everywhere.
 
-[@Fol13, sect. 3.5]
+[@Fol99, sect. 3.5]
 :::
 
 ::: {.example}

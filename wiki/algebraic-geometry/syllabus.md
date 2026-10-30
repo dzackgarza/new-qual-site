@@ -188,13 +188,13 @@ Complex geometry [@GH94, Ch. 0.1–0.2, 0.4–0.7, 1.1–1.4]:
 
 - Kodaira vanishing and Kodaira embedding.
 
-Riemann–Roch and Abel's theorem [@Mir25, Ch. V–VIII]:
+Riemann–Roch and Abel's theorem [@Mir95, Ch. V–VIII]:
 
 - Divisors, embeddings, the Abel–Jacobi map.
 
 - Riemann–Roch, geometric Riemann–Roch, Abel's theorem.
 
-Cohomology [@GH94, Ch. 0.3, 1.1; @Mir25, Ch. IX]:
+Cohomology [@GH94, Ch. 0.3, 1.1; @Mir95, Ch. IX]:
 
 - De Rham, Dolbeault and Čech cohomology.
 
@@ -202,4 +202,4 @@ Cohomology [@GH94, Ch. 0.3, 1.1; @Mir25, Ch. IX]:
 
 - Chern classes.
 
-Texts: [@GH94; @Mir25].
+Texts: [@GH94; @Mir95].

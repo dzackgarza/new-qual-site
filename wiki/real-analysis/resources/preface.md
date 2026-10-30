@@ -5,7 +5,7 @@ order: 0
 
 # Exercises from Folland
 
-Exercises from [@Fol13]:
+Exercises from [@Fol99]:
 
 - Chapter 1: Exercises 3 (with the sets in 3(a) nonempty), 7, 10, 12, 14; 15, 17, 18, 19, 22(a), 24, 28; 26, 30, and 31.
 

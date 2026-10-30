@@ -25,7 +25,7 @@ Let $X$ be a topological space.
 
 (d) A countable intersection of dense open sets is residual.
 
-[@Fol13, sect. 5.3]
+[@Fol99, sect. 5.3]
 :::
 
 ::: {.corollary}

@@ -17,7 +17,7 @@ review: draft
 
 ::: {.theorem}
 Let $(X,d)$ be a metric space and let $E\subseteq X$, with the metric induced by $d$.
-The following are equivalent [@Fol13]:
+The following are equivalent [@Fol99]:
 
 (a) $E$ is [[D-G5N6I|complete]] and totally bounded: for every $\varepsilon>0$, $E$ is covered by finitely many balls of radius $\varepsilon$.
 

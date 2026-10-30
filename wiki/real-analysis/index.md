@@ -54,7 +54,7 @@ Thanks to Peter Woolfitt for supplying many solutions and checking many proofs i
 >   
 >   - [@Rud76, chaps. 2--5, 7]
 >
->   - [@Fol13, sec. 0.6]
+>   - [@Fol99, sec. 0.6]
 
 - Continuity and differentiation of functions $f: \RR \to \RR$
 
@@ -76,7 +76,7 @@ Thanks to Peter Woolfitt for supplying many solutions and checking many proofs i
 
 > - References:
 >   
->   - [@Fol13, chaps. 1-2]
+>   - [@Fol99, chaps. 1-2]
 >
 >   - [@SS05, chaps. 1, 2, 6]
 
@@ -112,7 +112,7 @@ Thanks to Peter Woolfitt for supplying many solutions and checking many proofs i
 
 > - References:
 >   
->   - [@Fol13, secs. 5.2, 5.5, 6.2]
+>   - [@Fol99, secs. 5.2, 5.5, 6.2]
 >
 >   - [@SS05, chap. 4]
 
@@ -132,7 +132,7 @@ Thanks to Peter Woolfitt for supplying many solutions and checking many proofs i
 
 > - References:
 >   
->   - [@Fol13, secs. 5.2, 5.5, 6.2]
+>   - [@Fol99, secs. 5.2, 5.5, 6.2]
 >
 >   - [@SS05, chap. 4]
 

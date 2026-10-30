@@ -19,7 +19,7 @@ Then
 $$
 m(A\setminus C) = m(A) - m(C)
 $$
-[@Fol13].
+[@Fol99].
 :::
 
 ::: {.remark}

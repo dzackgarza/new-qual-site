@@ -62,7 +62,7 @@ $$
 \abs{f(a)}^2\leq\frac1{2\pi}\int_0^{2\pi}
 \abs{f(a+\rho e^{it})}^2\,dt
 $$
-[@SS03; @Fol13]. Multiply by $2\pi\rho$ and integrate
+[@SS03; @Fol99]. Multiply by $2\pi\rho$ and integrate
 from zero to $r$. Polar coordinates yield
 $$
 \pi r^2\abs{f(a)}^2\leq\int_{D(a,r)}\abs{f(z)}^2\,dA(z).
@@ -101,7 +101,7 @@ $$
 \int_D\abs{f-F}^2\,dA
 \leq\liminf_{n\to\infty}\int_D\abs{f_n-F}^2\,dA=0
 $$
-[@Fol13]. Thus $f=F$ almost everywhere, so $f$ belongs
+[@Fol99]. Thus $f=F$ almost everywhere, so $f$ belongs
 to $\mathcal H$ and represents the given $L^2$ limit.
 
 :::
@@ -117,7 +117,7 @@ The space $\mathcal H$ is a closed linear subspace and is complete.
 Linear combinations of its functions are holomorphic
 and square integrable, so it is a linear subspace of
 $L^2(D)$. Step [](#s2){.pf-ref} proves that this subspace is closed.
-The space $L^2(D)$ is Hilbert [@Fol13]; a Cauchy sequence
+The space $L^2(D)$ is Hilbert [@Fol99]; a Cauchy sequence
 in a closed subspace converges in the ambient Hilbert
 space and has its limit in that subspace. Therefore
 $\mathcal H$, with the inherited inner product, is a

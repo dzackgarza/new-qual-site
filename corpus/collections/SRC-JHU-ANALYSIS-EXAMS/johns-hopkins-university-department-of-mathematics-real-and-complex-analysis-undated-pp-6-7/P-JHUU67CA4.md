@@ -61,7 +61,7 @@ f(a)=\frac1{2\pi}\int_0^{2\pi}f(a+\rho e^{it})\,dt,
 \qquad
 \abs{f(a)}^2\leq\frac1{2\pi}\int_0^{2\pi}\abs{f(a+\rho e^{it})}^2\,dt
 $$
-[@SS03; @Fol13]. Multiplying by $2\pi\rho$ and integrating
+[@SS03; @Fol99]. Multiplying by $2\pi\rho$ and integrating
 over $0<\rho<r$ yields, by polar coordinates,
 $$
 \pi r^2\abs{f(a)}^2\leq\int_{D(a,r)}\abs{f}^2\,dA.
@@ -116,7 +116,7 @@ holomorphic limit. When $U$ is empty the assertion is immediate.
 In fact the limit remains in the family: pointwise
 convergence and Fatou's lemma give
 $\int_U\abs{f}^2\,dA\leq\liminf_j\int_U\abs{f_{n_j}}^2\,dA\leq1$
-[@Fol13].
+[@Fol99].
 
 :::
 
@@ -140,7 +140,7 @@ The last integral tends to zero as $a\to0$. To see this,
 the indicators of shrinking punctured disks tend pointwise
 to zero on $U$ and are dominated by one; dominated
 convergence applies to the integrable function $\abs{f}^2$
-[@Fol13]. Hence $af(a)\to0$.
+[@Fol99]. Hence $af(a)\to0$.
 
 The function $h(z)=zf(z)$ is holomorphic on the punctured
 disk and tends to zero at the puncture. The removable

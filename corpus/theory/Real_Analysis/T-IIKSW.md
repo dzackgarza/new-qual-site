@@ -20,7 +20,7 @@ Let $E\subseteq\RR^n$ be [[D-MDJII|Lebesgue measurable]] and let $\varepsilon>0$
 
 2. There exists a closed set $F\subseteq E$ with $m(E\setminus F) < \varepsilon$.
 
-3. If $m(E)<\infty$, there exists a compact set $K\subseteq E$ with $m(E\setminus K) < \varepsilon$ [@Fol13].
+3. If $m(E)<\infty$, there exists a compact set $K\subseteq E$ with $m(E\setminus K) < \varepsilon$ [@Fol99].
 :::
 
 ::: {.example}

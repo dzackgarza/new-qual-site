@@ -39,7 +39,7 @@ $F$ is entire.
 
 ::: pf-proof
 
-On $[-S,S]\times K$, for $K\subset\CC$ compact, the integrand and its $\zeta$-derivative are bounded by $\abs{f(x)}$ times $e^{2\pi S\sup_K\abs{\Im\zeta}}$ and $2\pi Se^{2\pi S\sup_K\abs{\Im\zeta}}$. Dominated convergence permits differentiation under the integral [@Fol13].
+On $[-S,S]\times K$, for $K\subset\CC$ compact, the integrand and its $\zeta$-derivative are bounded by $\abs{f(x)}$ times $e^{2\pi S\sup_K\abs{\Im\zeta}}$ and $2\pi Se^{2\pi S\sup_K\abs{\Im\zeta}}$. Dominated convergence permits differentiation under the integral [@Fol99].
 
 :::
 
