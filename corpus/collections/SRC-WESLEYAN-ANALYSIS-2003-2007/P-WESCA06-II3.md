@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D$ be a domain whose closure is compact in $\CC$, and let $f$ and $g$ be continuous on $\overline D$ and analytic on $D$.
+Let $D$ be a domain whose closure is compact in $\CC$, and let $f$ and $g$ be analytic in $D$.
 Show that
 $$
 \abs{f(z)}+\abs{g(z)}
@@ -28,6 +28,11 @@ $$
 takes its maximum on the boundary $\partial D$.
 
 Hint: consider $f(z)e^{i\alpha}+g(z)e^{i\beta}$ for suitable $\alpha,\beta$.
+:::
+
+::: {.remark}
+As printed, the hypothesis is too weak: $f(z)=1/(1-z)$ and $g=0$ on the unit disc are analytic in $D$, but $\abs{f}+\abs{g}$ is unbounded and has no maximum on $\partial D$.
+The intended hypothesis is that $f$ and $g$ are also continuous on $\overline D$, and the solution assumes it.
 :::
 
 ::: {.solution}

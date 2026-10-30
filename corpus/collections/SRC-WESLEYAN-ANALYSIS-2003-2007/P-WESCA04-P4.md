@@ -55,9 +55,9 @@ v=u^2,
 $$
 one has
 $$
-v_x=2u,u_x,
+v_x=2u\,u_x,
 \qquad
-v_y=2u,u_y.
+v_y=2u\,u_y.
 $$
 
 
@@ -77,11 +77,11 @@ with respect to $x$ and $y$.
 
 Combining steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} gives
 $$
-u_x=2u,u_y
+u_x=2u\,u_y
 $$
 and
 $$
-u_y=-2u,u_x.
+u_y=-2u\,u_x.
 $$
 
 
@@ -89,7 +89,7 @@ $$
 
 Substitute
 $$
-v_y=2u,u_y
+v_y=2u\,u_y
 $$
 into
 $$
@@ -97,7 +97,7 @@ u_x=v_y,
 $$
 and substitute
 $$
-v_x=2u,u_x
+v_x=2u\,u_x
 $$
 into
 $$
@@ -123,7 +123,7 @@ Substitute the second equation of step [](#s1-3){.pf-ref} into the first:
 $$
 u_x
 =
-2u(-2u,u_x)
+2u(-2u\,u_x)
 =
 -4u^2u_x.
 $$
@@ -159,7 +159,7 @@ Use the second equation of step [](#s1-3){.pf-ref}:
 $$
 u_y
 =
--2u,u_x.
+-2u\,u_x.
 $$
 Step [](#s1-4){.pf-ref} gives
 $$

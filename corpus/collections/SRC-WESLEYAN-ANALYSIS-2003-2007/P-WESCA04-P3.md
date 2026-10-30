@@ -262,7 +262,7 @@ For a continuous lifted argument, this is the passage
 $$
 \pi^-\longrightarrow\pi^+,
 $$
-so the lifted argument continues increasing through $pi$ rather than
+so the lifted argument continues increasing through $\pi$ rather than
 jumping to $-\pi$.
 Since the curve begins and ends on the positive real axis, each such crossing
 adds one full turn, i.e. an argument increase of $2\pi$.

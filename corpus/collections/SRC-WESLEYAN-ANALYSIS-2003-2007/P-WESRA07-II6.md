@@ -28,12 +28,17 @@ audit:
 ::: {.problem}
 For $f\in C([0,1],\RR)$ define
 $$
-\norm{f}\coloneqq\int_0^1 \abs{f}\,dm.
+\norm{f}\coloneqq\int_{[0,1]} f\,dm.
 $$
 
 1. Explain why this defines a norm on $C([0,1])$.
 
 2. Is $C([0,1])$ complete with respect to this norm?
+:::
+
+::: {.remark}
+As printed, $\int_{[0,1]} f\,dm$ is not a norm: it is negative at $f=-1$ and vanishes at $f(x)=x-\tfrac12$.
+The intended norm is $\int_{[0,1]}\abs{f}\,dm$, and the solution treats that norm.
 :::
 
 ::: {.solution}

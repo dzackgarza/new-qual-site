@@ -105,7 +105,7 @@ Therefore
 $$
 \boxed{\liminf A_n\subseteq\limsup A_n.}
 $$
-Equality holds exactly when membership in the sequence $(A_n)$ eventually stabilizes for every point outside no exceptional oscillatory set; equivalently, no point belongs to infinitely many $A_n$ and also to infinitely many complements $A_n^c$.
+Equality holds exactly when no point belongs to infinitely many $A_n$ and also to infinitely many complements $A_n^c$.
 
 :::
 
