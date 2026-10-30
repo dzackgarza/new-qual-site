@@ -851,7 +851,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebraic-geometry/toric/polytopes-and-divisors.md
   - [x] wiki/algebraic-geometry/toric/surfaces-and-morphisms.md
   - [x] wiki/algebraic-geometry/toric/the-dictionary.md
-  - [ ] wiki/algebraic-geometry/varieties/affine-or-projective.md
+  - [x] wiki/algebraic-geometry/varieties/affine-or-projective.md
   - [ ] wiki/algebraic-geometry/varieties/blowups.md
   - [ ] wiki/algebraic-geometry/varieties/canonical-class.md
   - [ ] wiki/algebraic-geometry/varieties/dimension-and-degree.md
