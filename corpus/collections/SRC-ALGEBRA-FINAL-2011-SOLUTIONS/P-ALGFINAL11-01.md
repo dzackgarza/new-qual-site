@@ -5,7 +5,10 @@ kind: problem
 title: Classify groups of order 105
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Sylow Theorems
+  - Semidirect Products
+  - Classification of Groups
 relations: []
 review: draft
 ---
