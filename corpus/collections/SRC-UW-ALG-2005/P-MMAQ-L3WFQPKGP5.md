@@ -23,10 +23,6 @@ Starting with a group $G_0$, we define $G_1=\Omega(G_0)$ and $G_{i+1}=\Omega(G_i
 If $G_0$ is of order $p^e$ for a prime $p$ and integer $e\geq 2$, prove that $G_{e-1}$ is the trivial group.
 :::
 
-::: {.remark}
-The printed recursion "for all $i\geq 1$" leaves $G_2$ undefined; the intended range is $i\geq 0$, which the solution below uses.
-:::
-
 ::: {.solution}
 
 ::: pf
@@ -114,4 +110,8 @@ because $e\ge2$. This is impossible. Hence $G_{e-1}=1$.
 
 :::
 
+:::
+
+::: {.remark}
+The printed recursion "for all $i\geq 1$" leaves $G_2$ undefined; the intended range is $i\geq 0$, which the solution uses.
 :::
