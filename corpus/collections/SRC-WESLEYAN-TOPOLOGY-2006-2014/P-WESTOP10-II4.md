@@ -40,7 +40,7 @@ For each source space:
 
 Write the quotient spaces as
 $$
-X_1,qquad X_2,qquad X_3
+X_1,\qquad X_2,\qquad X_3
 $$
 in the order shown in the source.
 

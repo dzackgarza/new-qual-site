@@ -168,11 +168,11 @@ The group $A_5$ has no subgroup of order $15$.
 
 Suppose $H\leq A_5$ had order $15$. Sylow's theorems inside $H$ give
 $$
-n_5\mid3,qquad n_5\equiv1\pmod5,
+n_5\mid3,\qquad n_5\equiv1\pmod5,
 $$
 so $n_5=1$, and
 $$
-n_3\mid5,qquad n_3\equiv1\pmod3,
+n_3\mid5,\qquad n_3\equiv1\pmod3,
 $$
 so $n_3=1$. Thus both Sylow subgroups are normal. Their intersection is
 trivial, and normal subgroups of coprime orders commute elementwise.

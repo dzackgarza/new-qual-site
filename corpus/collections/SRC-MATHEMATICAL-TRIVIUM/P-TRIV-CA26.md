@@ -112,7 +112,7 @@ $$
 
 Integrate around the rectangle with vertices
 $$
--R,quad R,quad R+\frac i2,quad -R+\frac i2.
+-R,\quad R,\quad R+\frac i2,\quad -R+\frac i2.
 $$
 On either vertical side, write
 $$

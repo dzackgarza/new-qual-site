@@ -45,7 +45,7 @@ This exercise shows that $Y$ is not a rational curve, and hence that $K(Y)$ is n
 ::: {.solution}
 Put
 $$
-F=y^2-x^3+x,qquad A=k[x,y]/(F),qquad K=\operatorname{Frac}(A).
+F=y^2-x^3+x,\qquad A=k[x,y]/(F),\qquad K=\operatorname{Frac}(A).
 $$
 We write $x,y$ also for their images in $A$.
 
@@ -57,7 +57,7 @@ The affine curve $Y=V(F)$ is nonsingular and irreducible; hence $A$ is an integr
 ::: pf-proof
 The partial derivatives are
 $$
-F_x=1-3x^2,qquad F_y=2y.
+F_x=1-3x^2,\qquad F_y=2y.
 $$
 At a singular point we would have $y=0$, because $2\ne0$ in $k$, and the equation of the curve would give
 $$

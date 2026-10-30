@@ -90,9 +90,9 @@ the function $F_n$ is also $1$-periodic.
 
 Integrate $F_n$ around the rectangle with vertices
 $$
-iy_0,quad
-1+iy_0,quad
-1+iy_1,quad
+iy_0,\quad
+1+iy_0,\quad
+1+iy_1,\quad
 iy_1.
 $$
 By Cauchy's theorem, the total integral is zero. The integrals over the two vertical sides cancel because of $1$-periodicity. Hence the two horizontal integrals are equal:

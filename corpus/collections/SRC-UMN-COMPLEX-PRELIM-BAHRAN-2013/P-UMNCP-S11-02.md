@@ -158,9 +158,9 @@ $$
 Thus the complete list of possible values is
 $$
 \boxed{
-0,quad
-1,quad
-e^{2\pi i/3},quad
+0,\quad
+1,\quad
+e^{2\pi i/3},\quad
 e^{4\pi i/3}}.
 $$
 

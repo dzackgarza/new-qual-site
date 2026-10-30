@@ -78,13 +78,13 @@ $$
 the elementary-divisor form of step [](#s1){.pf-ref} gives three possibilities for
 the $2$-primary part,
 $$
-\ZZ/8,qquad
-\ZZ/4\oplus\ZZ/2,qquad
+\ZZ/8,\qquad
+\ZZ/4\oplus\ZZ/2,\qquad
 (\ZZ/2)^3,
 $$
 and two possibilities for the $3$-primary part,
 $$
-\ZZ/9,qquad
+\ZZ/9,\qquad
 (\ZZ/3)^2.
 $$
 Taking all six products and combining coprime cyclic factors gives the
