@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF89-7
 kind: problem
 title: A commuting diagonalizable operator is diagonalizable on each eigenspace
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

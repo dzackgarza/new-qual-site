@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF89-8
 kind: problem
 title: The integral $\int_0^\infty \log x/(1+x^2)\,dx$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

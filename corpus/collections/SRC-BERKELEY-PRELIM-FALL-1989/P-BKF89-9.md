@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF89-9
 kind: problem
 title: Every intermediate subring $F\subset R\subset F[x]$ is finitely generated over $F$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

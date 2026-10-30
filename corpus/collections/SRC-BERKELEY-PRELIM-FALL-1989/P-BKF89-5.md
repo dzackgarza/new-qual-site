@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF89-5
 kind: problem
 title: The commutator subgroup centralizes a cyclic normal subgroup
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

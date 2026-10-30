@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF89-6
 kind: problem
 title: A fixed-distance locus from a closed subset of $\RR^n$ is closed
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:
