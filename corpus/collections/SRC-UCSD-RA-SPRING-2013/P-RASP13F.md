@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-The problem concerns finding an explicit solution to the equation $-\Delta u + u = f$ for $f \in C_c^\infty(\RR^n)$, using the Fourier transform.
+The problem concerns finding an explicit solution to the equation $-\Delta u + u = f$ for $f \in C_c^\infty(\RR^n)$, using the Fourier transform $\hat{\phi}(z) := \int e^{-2\pi i \langle x, z \rangle} \phi(x)\,dm(x)$ and its inverse.
 
 (a) Assume that the solution $u$ and all its first-order and second-order partial derivatives are in $L^1(\RR^n) \cap L^2(\RR^n)$.
 Prove
