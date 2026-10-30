@@ -2,33 +2,33 @@
 schema: qual/card@1
 id: P-YZ2WZ
 kind: problem
-title: Measurability of $\{(x,y):\mu\{z:f(x,z)=f(x,y)\}>0\}$
+title: 'Measurability of $\{(x,y):m\{z:f(x,z)=f(x,y)\}>0\}$'
 classification:
   areas:
-  - real-analysis
+    - real-analysis
   topics:
-  - Measure Theory
-  - Fubini-Tonelli
+    - Measure Theory
+    - Fubini-Tonelli
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-25
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-11
-  note: Checked against Problem 6 of the official UGA January 2021 Analysis qualifying examination DOCX.
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-11
-  note: Reviewed the measurable-zero-set construction and Tonelli partial-integral argument; the proof correctly realizes E as a positive superlevel set of a measurable section-measure function.
+  - event: solution-written
+    by: gemini-3.7-flash
+    date: 2026-08-25
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-11
+    note: Checked against Problem 6 of the official UGA January 2021 Analysis qualifying examination DOCX.
+  - event: solution-reviewed
+    by: gpt-5.6-sol
+    date: 2026-09-11
+    note: Reviewed the measurable-zero-set construction and Tonelli partial-integral argument; the proof correctly realizes E as a positive superlevel set of a measurable section-measure function.
 ---
 
 ::: {.problem}
 Let $f: \RR \cross \RR \to \RR$ be a measurable function and for $x\in \RR$ define the set
 $$
-E_x \coloneqq \theset{ y\in \RR \st \mu\qty{ z\in \RR \st f(x,z) = f(x, y) } > 0 } 
+E_x \coloneqq \theset{ y\in \RR \st m\qty{ z\in \RR \st f(x,z) = f(x, y) } > 0 } 
 .$$
 Show that the following set is a measurable subset of $\RR \cross \RR$:
 $$
@@ -56,7 +56,7 @@ which is measurable (preimage of $\{0\}$ under a measurable function).
 :::
 
 ::: {.pf-step #vertical-section-measure}
-For fixed $x, y$, the vertical section $A_{x,y} = \{z : (x,y,z) \in A\}$ satisfies $\mu(A_{x,y}) = \mu\{z : f(x,z) = f(x,y)\}$.
+For fixed $x, y$, the vertical section $A_{x,y} = \{z : (x,y,z) \in A\}$ satisfies $m(A_{x,y}) = m\{z : f(x,z) = f(x,y)\}$.
 
 ::: pf-proof
 by definition of $A$ in step [](#define-a){.pf-ref}.
@@ -65,12 +65,12 @@ by definition of $A$ in step [](#define-a){.pf-ref}.
 :::
 
 ::: {.pf-step #measure-map-measurable}
-The map $(x,y) \mapsto \mu(A_{x,y})$ is measurable.
+The map $(x,y) \mapsto m(A_{x,y})$ is measurable.
 
 ::: pf-proof
 by Tonelli's theorem applied to the measurable non-negative function $\chi_A$ on $\RR^3$,
 $$
-(x,y) \mapsto \int_{\RR} \chi_A(x,y,z)\,dz = \mu(A_{x,y})
+(x,y) \mapsto \int_{\RR} \chi_A(x,y,z)\,dz = m(A_{x,y})
 $$
 is measurable (the partial integral of a measurable non-negative function over one variable is a measurable function of the remaining variables).
 :::
@@ -83,7 +83,7 @@ $E$ is measurable.
 ::: pf-proof
 by step [](#vertical-section-measure){.pf-ref} and step [](#measure-map-measurable){.pf-ref},
 $$
-E = \Union_{x\in\RR}\{x\} \times E_x = \big\{(x,y) : \mu(A_{x,y}) > 0\big\},
+E = \Union_{x\in\RR}\{x\} \times E_x = \big\{(x,y) : m(A_{x,y}) > 0\big\},
 $$
 the superlevel set of a measurable function, hence measurable.
 :::
