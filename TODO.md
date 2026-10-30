@@ -904,7 +904,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/conformal-maps/the-schwarz-lemma.md
   - [x] wiki/complex-analysis/counterexamples.md
   - [x] wiki/complex-analysis/counting-zeros/how-many-zeros-in-this-region.md
-  - [ ] wiki/complex-analysis/counting-zeros/hurwitz.md
+  - [x] wiki/complex-analysis/counting-zeros/hurwitz.md
   - [ ] wiki/complex-analysis/counting-zeros/index.md
   - [ ] wiki/complex-analysis/counting-zeros/rouches-theorem.md
   - [ ] wiki/complex-analysis/counting-zeros/the-argument-principle.md
