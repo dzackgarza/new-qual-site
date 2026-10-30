@@ -24,6 +24,7 @@ source:
   - P-ZCQLF
   - P-MMAQ-FN3KU63N7K
   - P-SJ47O
+  - P-1AUEA
   source_kind: university-exam
 title: UW Algebra Qualifying Exam 2015
 ---

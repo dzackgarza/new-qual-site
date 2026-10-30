@@ -21,11 +21,11 @@ audit:
 ::: {.problem}
 Let $G$ be a non-abelian group of order $p^3$ with $p$ a prime.
 
-- Determine the order of the center $Z$ of $G$.
+(a) Determine the order of the center $Z$ of $G$.
 
-- Determine the number of inequivalent complex 1-dimensional representations of $G$.
+(b) Determine the number of inequivalent complex 1-dimensional representations of $G$.
 
-- Compute the dimensions of all the inequivalent irreducible representations of $G$ and verify that the number of such representations equals the number of conjugacy classes of $G$.
+(c) Compute the dimensions of all the inequivalent irreducible representations of $G$ and verify that the number of such representations equals the number of conjugacy classes of $G$.
 :::
 
 ::: {.solution}
@@ -217,19 +217,21 @@ $$
 
 ::: pf-step
 
-Thus the irreducible representation degrees are
+The irreducible representation degrees are
+$$
+\underbrace{1,\dots,1}_{p^2\text{ times}},
+\underbrace{p,\dots,p}_{p-1\text{ times}},
+$$
+and their number is $p^2+p-1$, which agrees with the number of conjugacy classes computed in step [](#s5){.pf-ref}.
+
+::: pf-proof
+
+The preceding step and the count of linear representations above.
 
 :::
 
 :::
 
-$$
-\boxed{\underbrace{1,\dots,1}_{p^2\text{ times}},
-\underbrace{p,\dots,p}_{p-1\text{ times}}},
-$$
-and their number is
-$$
-p^2+p-1,
-$$
-which agrees with the number of conjugacy classes computed in step [](#s5){.pf-ref}.
+:::
+
 :::

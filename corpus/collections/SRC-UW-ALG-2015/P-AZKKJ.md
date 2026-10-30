@@ -19,11 +19,10 @@ audit:
 ---
 
 ::: {.problem}
+(a) Let $R$ be a commutative ring with no nonzero nilpotent elements.
+Show that the only units in the polynomial ring $R[x]$ are the units of $R$, regarded as constant polynomials.
 
-- Let $R$ be a commutative ring with no nonzero nilpotent elements.
-  Show that the only units in the polynomial ring $R[x]$ are the units of $R$, regarded as constant polynomials.
-
-- Find all units in the polynomial ring $\ZZ_4[x]$.
+(b) Find all units in the polynomial ring $\ZZ_4[x]$.
 :::
 
 ::: {.solution}
@@ -119,16 +118,20 @@ since $(u^{-1}n(x))^2=0$.
 ::: pf-step
 
 Therefore the units of $\ZZ_4[x]$ are exactly
-
-:::
-
-:::
-
 $$
-\boxed{
 \left\{a_0+a_1x+\cdots+a_nx^n:
  a_0\in\{1,3\},\ a_i\in\{0,2\}\ (i>0)
 \right\}.
-}
 $$
+
+::: pf-proof
+
+The two preceding steps.
+
+:::
+
+:::
+
+:::
+
 :::

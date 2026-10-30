@@ -18,11 +18,11 @@ audit:
 ---
 
 ::: {.problem}
-- Let $L$ be a Galois extension of a field $K$ of degree 4. What is the minimum number of subfields there could be strictly between $K$ and $L$?
-  What is the maximum number of such subfields?
-  Give examples where these bounds are attained.
+(a) Let $L$ be a Galois extension of a field $K$ of degree 4. What is the minimum number of subfields there could be strictly between $K$ and $L$?
+What is the maximum number of such subfields?
+Give examples where these bounds are attained.
 
-- How do these numbers change if we assume only that $L$ is separable (but not necessarily Galois) over $K$?
+(b) How do these numbers change if we assume only that $L$ is separable (but not necessarily Galois) over $K$?
 :::
 
 
@@ -92,8 +92,7 @@ Both factors are integers greater than $1$, so both equal $2$.
 A separable quartic extension has at most three proper intermediate fields.
 
 ::: pf-proof
-Suppose $F_1
-e F_2$ are two intermediate fields. By step [](#s5){.pf-ref} each is quadratic over $K$, hence separable and therefore Galois over $K$. Their compositum lies in $L$, and since $F_1\ne F_2$,
+Suppose $F_1\ne F_2$ are two intermediate fields. By step [](#s5){.pf-ref} each is quadratic over $K$, hence separable and therefore Galois over $K$. Their compositum lies in $L$, and since $F_1\ne F_2$,
 $$
 [F_1F_2:K]=4.
 $$
