@@ -910,7 +910,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/counting-zeros/the-argument-principle.md
   - [x] wiki/complex-analysis/holomorphic-functions/complex-arithmetic-and-log.md
   - [x] wiki/complex-analysis/holomorphic-functions/harmonic-functions.md
-  - [ ] wiki/complex-analysis/holomorphic-functions/index.md
+  - [x] wiki/complex-analysis/holomorphic-functions/index.md
   - [ ] wiki/complex-analysis/holomorphic-functions/is-it-holomorphic.md
   - [ ] wiki/complex-analysis/holomorphic-functions/power-series.md
   - [ ] wiki/complex-analysis/holomorphic-functions/the-cauchy-riemann-equations.md
