@@ -5,7 +5,9 @@ kind: problem
 title: 'Subordination: $g(\abs{z}<r)\subset f(\abs{z}<r)$ for univalent $f$'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Schwarz Lemma
+  - Subordination
 relations: []
 review: draft
 audit:
@@ -43,7 +45,7 @@ audit:
 ---
 
 ::: {.problem}
-[Fall 2002 Problem #8] Suppose $f$ and $g$ are holomorphic mappings of the unit disc $D$ into an open domain $\Omega$, $f$ is one-to-one, $g(D)\subseteq f(D)$, and $f(0) = g(0)$. Show that $g(\abs{z} < r) \subset f(\abs{z} < r)$ for each $0 < r < 1$. (The first part of the problem asks for a statement of the Schwarz Lemma.)
+Suppose $f$ and $g$ are holomorphic mappings of the unit disc $D$ into an open domain $\Omega$, $f$ is one-to-one, $g(D)\subseteq f(D)$, and $f(0) = g(0)$. Show that $g(\abs{z} < r) \subset f(\abs{z} < r)$ for each $0 < r < 1$. (The first part of the problem asks for a statement of the Schwarz Lemma.)
 :::
 
 ::: {.solution}

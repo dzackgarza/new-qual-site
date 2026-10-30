@@ -5,7 +5,9 @@ kind: problem
 title: Schwarz--Pick inequality for the derivative
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Schwarz Lemma
+  - Schwarz-Pick
 relations: []
 review: draft
 audit:
@@ -32,7 +34,7 @@ audit:
 ---
 
 ::: {.problem}
-[Fall 1998, Problem #5] Suppose $f : \DD \to \DD$ is analytic.
+Suppose $f : \DD \to \DD$ is analytic.
 Prove that for any $a \in \DD$
 
 $$

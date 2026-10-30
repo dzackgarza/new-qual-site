@@ -5,7 +5,9 @@ kind: problem
 title: Reflection principle for functions on the closed upper half-disk
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Schwarz Reflection
+  - Morera's Theorem
 relations: []
 review: draft
 audit:
@@ -33,7 +35,7 @@ audit:
 ---
 
 ::: {.problem}
-[April 1999 Problem \#7] Let $S := \{ z \in \DD : \Im(z) \geq 0 \}$. Suppose $f \colon S \to \CC$ is continuous on $S$, real on $S \cap \RR$, and holomorphic on the interior of $S$. Prove that $f$ is the restriction of a holomorphic function on the open unit disk.
+Let $S := \{ z \in \DD : \Im(z) \geq 0 \}$. Suppose $f \colon S \to \CC$ is continuous on $S$, real on $S \cap \RR$, and holomorphic on the interior of $S$. Prove that $f$ is the restriction of a holomorphic function on the open unit disk.
 :::
 
 ::: {.solution}

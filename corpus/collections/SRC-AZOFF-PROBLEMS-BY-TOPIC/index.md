@@ -193,25 +193,25 @@ source:
   - name: Schwarz lemma and reflection principle
     problems:
     - id: P-AZOFF-I01
-      comment: Problem 1
+      comment: Problem 1 (Fall 2012, Problem 7)
     - id: P-ZS4IH
-      comment: Problem 2
+      comment: Problem 2 (August 2011, Problem 3)
     - id: P-ZUQU7
-      comment: Problem 3
+      comment: Problem 3 (January 2011, Problem 3)
     - id: P-ZNVSP
-      comment: Problem 4
+      comment: Problem 4 (January 2011, Problem 6)
     - id: P-AZOFF-I05
-      comment: Problem 5
+      comment: Problem 5 (Fall 2010, Problem 5)
     - id: P-AZOFF-I06
-      comment: Problem 6
+      comment: Problem 6 (January 2008, Problem 5b)
     - id: P-AZOFF-I07
-      comment: Problem 7
+      comment: Problem 7 (August 2007, Problem 4)
     - id: P-AZOFF-I08
-      comment: Problem 8
+      comment: Problem 8 (Fall 2002, Problem 8)
     - id: P-AZOFF-I09
-      comment: Problem 9
+      comment: Problem 9 (April 1999, Problem 7)
     - id: P-AZOFF-I10
-      comment: Problem 10
+      comment: Problem 10 (Fall 1998, Problem 5)
 ---
 
 ::: {.remark}

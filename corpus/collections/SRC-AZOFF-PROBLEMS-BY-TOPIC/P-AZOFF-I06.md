@@ -5,7 +5,9 @@ kind: problem
 title: Proper self-maps of the disk with a single zero are $\lambda z^k$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Blaschke Products
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:
@@ -34,7 +36,7 @@ audit:
 ---
 
 ::: {.problem}
-[January 2008, Problem \#5b] Suppose $f \colon \DD \to \DD$ is analytic, has a zero of order $k$ at the origin, has no other zeros, and satisfies $\lim_{\abs{z} \to 1} \abs{f(z)} = 1$. Give, with proof, a formula for $f(z)$.
+Suppose $f \colon \DD \to \DD$ is analytic, has a zero of order $k$ at the origin, has no other zeros, and satisfies $\lim_{\abs{z} \to 1} \abs{f(z)} = 1$. Give, with proof, a formula for $f(z)$.
 :::
 
 ::: {.solution}

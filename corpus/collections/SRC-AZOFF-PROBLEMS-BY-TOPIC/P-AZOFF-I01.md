@@ -5,7 +5,10 @@ kind: problem
 title: Analytic self-maps of the disk with unimodular boundary values are finite Blaschke products
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Blaschke Products
+  - Maximum Modulus Principle
+  - Schwarz Reflection
 relations: []
 review: draft
 audit:
@@ -29,14 +32,14 @@ audit:
 ---
 
 ::: {.problem}
-[Fall 2012, Problem \#7] Write $\DD := \{ z \in \CC : \abs{z} < 1 \}$ for the open unit disk.
+Write $\DD := \{ z \in \CC : \abs{z} < 1 \}$ for the open unit disk.
 Suppose $f \colon \DD \to \DD$ is analytic, and admits a continuous extension $\widetilde{f} \colon \overline{\DD} \to \overline{\DD}$ such that $\abs{f(z)} = 1$ whenever $\abs{z} = 1$.
 
-a) Prove that $f$ is a rational function.
+(a) Prove that $f$ is a rational function.
 
-b) Suppose that $z = 0$ is the unique zero of $f$. Prove that $f(z) = \lambda z^{n}$ for some $\lambda \in \CC$ of absolute value $1$ and some natural number $n$.
+(b) Suppose that $z = 0$ is the unique zero of $f$. Prove that $f(z) = \lambda z^{n}$ for some $\lambda \in \CC$ of absolute value $1$ and some natural number $n$.
 
-c) More generally, suppose that $a_{1}, \ldots, a_{n} \in \DD$ are the zeros of $f$, listed with multiplicity.
+(c) More generally, suppose that $a_{1}, \ldots, a_{n} \in \DD$ are the zeros of $f$, listed with multiplicity.
 Prove that
 $$
 f(z) = \lambda \prod_{j=1}^{n} \frac{z - a_{j}}{1 - \overline{a}_{j} z}, \quad \abs{\lambda} = 1.

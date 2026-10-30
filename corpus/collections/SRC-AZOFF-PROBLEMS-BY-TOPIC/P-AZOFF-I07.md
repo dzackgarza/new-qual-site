@@ -5,7 +5,9 @@ kind: problem
 title: Schwarz reflection across the circle and functions real on the unit circle
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Schwarz Reflection
+  - Fractional Linear Transformations
 relations: []
 review: draft
 audit:
@@ -37,13 +39,11 @@ audit:
 ---
 
 ::: {.problem}
-[August 2007, Problem $\# 4]$
+(a) State the standard Schwarz reflection principle involving reflection across the real axis.
 
-a) State the standard Schwarz reflection principle involving reflection across the real axis.
+(b) Let $H=\{z\in\CC:\operatorname{Im}z>0\}$. Give, with justification, a linear fractional transformation $T$ mapping $\DD$ to $H$. Let $g(z) = \overline{z}$; show that $T^{-1} \circ g \circ T(z) = \frac{1}{\overline{z}}$.
 
-b) Let $H=\{z\in\CC:\operatorname{Im}z>0\}$. Give, with justification, a linear fractional transformation $T$ mapping $\DD$ to $H$. Let $g(z) = \overline{z}$; show that $T^{-1} \circ g \circ T(z) = \frac{1}{\overline{z}}$.
-
-c) Suppose $f$ is holomorphic on $\DD$, continuous on $\overline{\DD}$, and real on the unit circle.
+(c) Suppose $f$ is holomorphic on $\DD$, continuous on $\overline{\DD}$, and real on the unit circle.
 Prove that $f$ must be constant.
 :::
 
