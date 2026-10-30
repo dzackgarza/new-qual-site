@@ -24,7 +24,7 @@ audit:
 - event: source-checked
   by: claude-opus-5.5
   date: 2026-10-31
-  note: Hungerford IV.4.? cites Theorem 4.12; the statement now defines theta_A and f-bar on the card.
+  note: Hungerford IV.4.9 cites Theorem 4.12; the statement now defines theta_A and f-bar on the card.
 ---
 
 ::: {.problem}
