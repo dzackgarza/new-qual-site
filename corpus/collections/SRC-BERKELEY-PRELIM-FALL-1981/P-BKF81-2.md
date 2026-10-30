@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - Calculus
+  - Ordinary Differential Equations
 relations: []
 review: draft
 audit:
