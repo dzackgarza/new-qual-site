@@ -5,20 +5,19 @@ kind: collection
 title: Algebra PSet 5 qualifying problems
 classification:
   areas:
-  - algebra
+    - algebra
   topics: []
 relations: []
 review: draft
 completion: complete
-provenance:
-- assets/Algebra/500_Exercises/PSets/PSet 5/Qual Problems.pdf
+provenance: []
 source:
   source_kind: homework
   area: algebra
   problems:
-  - P-EKNFG
-  - P-LCEHH
-  - P-K8Z3W
+    - P-EKNFG
+    - P-LCEHH
+    - P-K8Z3W
   date:
     kind: unknown
 ---
