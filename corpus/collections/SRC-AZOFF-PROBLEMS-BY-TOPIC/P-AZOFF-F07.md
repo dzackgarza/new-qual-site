@@ -5,7 +5,10 @@ kind: problem
 title: Singularity at $\infty$ of an entire function and its zeros
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Entire Functions
+  - Singularities at Infinity
+  - Zeros
 relations: []
 review: draft
 audit:
@@ -32,9 +35,9 @@ audit:
 Let $f$ be entire.
 Discuss, with proofs and examples, the types of singularities $f$ might have (removable, pole, or essential) at $\infty$ in each of the following cases.
 
-a) $f$ has at most finitely zeros in $\CC$.
+(a) $f$ has at most finitely many zeros in $\CC$.
 
-b) $f$ has infinitely many zeros in $\CC$.
+(b) $f$ has infinitely many zeros in $\CC$.
 :::
 
 ::: {.solution}

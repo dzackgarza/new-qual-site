@@ -5,7 +5,9 @@ kind: problem
 title: Entire functions with a pole at $\infty$ are polynomials
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Entire Functions
+  - Singularities at Infinity
 relations: []
 review: draft
 audit:

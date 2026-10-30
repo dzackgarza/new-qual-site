@@ -5,7 +5,9 @@ kind: problem
 title: Laurent series and singularities of $\frac{\sin^2 z}{z}$, $ze^{1/z^2}$, and $\frac{1}{z(4-z)}$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Laurent Series
+  - Singularities
 relations: []
 review: draft
 audit:
@@ -29,11 +31,11 @@ audit:
 ::: {.problem}
 Find the Laurent series for the following functions about $0$ and classify their singularities there.
 
-a) $\frac{\sin^{2} z}{z}$
+(a) $\frac{\sin^{2} z}{z}$
 
-b) $z \exp\left(\frac{1}{z^{2}}\right)$
+(b) $z \exp\left(\frac{1}{z^{2}}\right)$
 
-c) $\frac{1}{z(4 - z)}$
+(c) $\frac{1}{z(4 - z)}$
 :::
 
 ::: {.solution}

@@ -5,7 +5,9 @@ kind: problem
 title: Laurent expansions of $e^{1/z}$ and $\cos(1/z)$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Laurent Series
+  - Essential Singularities
 relations: []
 review: draft
 audit:

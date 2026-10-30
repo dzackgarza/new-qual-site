@@ -5,7 +5,10 @@ kind: problem
 title: Partial fraction expansion of $\pi^2/\sin^2\pi z$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Partial Fractions
+  - Liouville's Theorem
+  - Singularities
 relations: []
 review: draft
 audit:
@@ -29,13 +32,13 @@ audit:
 ::: {.problem}
 Take $f(z) = \frac{\pi^{2}}{\sin^{2} \pi z}$ and $g(z) = \sum_{n=-\infty}^{\infty} \frac{1}{(z - n)^{2}}$.
 
-a) Show these functions have the same singularities in $\CC$.
+(a) Show these functions have the same singularities in $\CC$.
 
-b) Show that $f$ and $g$ have the same singular parts at each of their singularities.
+(b) Show that $f$ and $g$ have the same singular parts at each of their singularities.
 
-c) Note that $f$ and $g$ each have period one and that both approach zero uniformly on $0 \leq x \leq 1$ as $\abs{y} \to \infty$.
+(c) Note that $f$ and $g$ each have period one and that both approach zero uniformly on $0 \leq x \leq 1$ as $\abs{y} \to \infty$.
 
-d) Conclude that $f = g$.
+(d) Conclude that $f = g$.
 :::
 
 ::: {.solution}

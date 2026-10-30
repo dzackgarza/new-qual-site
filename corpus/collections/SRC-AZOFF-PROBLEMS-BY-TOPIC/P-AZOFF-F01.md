@@ -5,7 +5,8 @@ kind: problem
 title: Laurent expansions of $\frac{z+1}{z(z-1)}$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Laurent Series
 relations: []
 review: draft
 audit:
@@ -28,9 +29,9 @@ audit:
 ::: {.problem}
 Find the Laurent expansions of $\frac{z + 1}{z(z - 1)}$ about
 
-a) $z = 0$
+(a) $z = 0$
 
-b) $z = 1$
+(b) $z = 1$
 :::
 
 ::: {.solution}
