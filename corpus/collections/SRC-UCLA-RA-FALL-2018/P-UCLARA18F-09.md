@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 9. Consider the meromorphic function
+Consider the meromorphic function
 $$
 g(z)=-\pi z\cot(\pi z)
 $$

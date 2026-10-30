@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Let $\{f_n\}$ be a sequence of continuous real-valued functions on $[0,1]$ and suppose $f_n(x)$ converges to another real-valued function $f(x)$ at every $x\in[0,1]$.
+Let $\{f_n\}$ be a sequence of continuous real-valued functions on $[0,1]$ and suppose $f_n(x)$ converges to another real-valued function $f(x)$ at every $x\in[0,1]$.
 
 (a) Prove that for every $\varepsilon>0$ there is a dense subset $D_\varepsilon\subset[0,1]$ such that if $x\in D_\varepsilon$, then there are an open interval $I\ni x$ and a positive integer $N_x$ such that for all $n>N_x$,
 $$

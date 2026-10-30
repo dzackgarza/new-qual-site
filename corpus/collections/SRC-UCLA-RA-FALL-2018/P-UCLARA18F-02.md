@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Let $(X,\rho)$ be a compact metric space with at least two points, and let $C(X)$ be the space of continuous functions $X\to\RR$ with the uniform norm
+Let $(X,\rho)$ be a compact metric space with at least two points, and let $C(X)$ be the space of continuous functions $X\to\RR$ with the uniform norm
 $$
 \norm{f}=\sup_X\abs{f(x)}.
 $$

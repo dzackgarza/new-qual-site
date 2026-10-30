@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. For $-1<\beta<1$, evaluate
+For $-1<\beta<1$, evaluate
 $$
 \int_0^\infty\frac{x^\beta}{1+x^2}\,dx.
 $$

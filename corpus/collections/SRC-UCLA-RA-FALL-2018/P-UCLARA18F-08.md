@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Let $\mathcal D$ be the space of analytic functions $f(z)$ on the unit disc
+Let $\mathcal D$ be the space of analytic functions $f(z)$ on the unit disc
 $$
 \DD=\{z:\abs{z}<1\}
 $$

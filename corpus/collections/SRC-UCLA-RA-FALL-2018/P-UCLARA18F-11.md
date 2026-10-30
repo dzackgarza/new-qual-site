@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. An analytic Jordan curve is a set of the form
+An analytic Jordan curve is a set of the form
 $$
 \Gamma=f(\{\abs{z}=1\}),
 $$

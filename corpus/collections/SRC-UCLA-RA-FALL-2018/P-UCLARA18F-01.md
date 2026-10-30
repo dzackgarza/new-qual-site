@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Let $\{f_n\}$ be a sequence of real-valued Lebesgue measurable functions on $\RR$, and let $f$ be another such function. Assume that
+Let $\{f_n\}$ be a sequence of real-valued Lebesgue measurable functions on $\RR$, and let $f$ be another such function. Assume that
 
 1. $f_n\to f$ Lebesgue almost everywhere;
 2. $\displaystyle \int_{\RR}\abs{x}\,\abs{f_n(x)}\,dx\le100$ for all $n$;

@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Let $f\in L^2(\RR)$ and assume its Fourier transform satisfies
+Let $f\in L^2(\RR)$ and assume its Fourier transform satisfies
 $$
 \abs{\widehat f(\xi)}>0
 $$

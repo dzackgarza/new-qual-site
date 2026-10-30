@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Let $f(z)$ be an analytic function on the entire complex plane $\CC$ such that
+Let $f(z)$ be an analytic function on the entire complex plane $\CC$ such that
 $$
 U(z)=\log\abs{f(z)}
 $$

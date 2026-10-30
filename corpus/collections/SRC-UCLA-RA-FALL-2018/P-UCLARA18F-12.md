@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. If $\alpha\in\CC$ satisfies $0<\abs{\alpha}<1$ and if $n\in\NN=\{1,2,3,\ldots\}$, show that the equation
+If $\alpha\in\CC$ satisfies $0<\abs{\alpha}<1$ and if $n\in\NN=\{1,2,3,\ldots\}$, show that the equation
 $$
 e^z(z-1)^n=\alpha
 $$

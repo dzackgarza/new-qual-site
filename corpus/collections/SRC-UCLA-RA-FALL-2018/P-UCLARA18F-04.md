@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. Let $\circlegroup$ be the unit circle in the complex plane $\CC$, and for each $\alpha\in\circlegroup$ define the rotation map $R_\alpha:\circlegroup\to\circlegroup$ by
+Let $\circlegroup$ be the unit circle in the complex plane $\CC$, and for each $\alpha\in\circlegroup$ define the rotation map $R_\alpha:\circlegroup\to\circlegroup$ by
 $$
 R_\alpha(z)=\alpha z.
 $$
