@@ -15,9 +15,9 @@ review: draft
 ::: {.problem}
 Take $A = \{0, 1, 2, 3, 4, 5\}$. Define a relation $R$ on $A$ by $x\, R\, y$ if and only if $x^2 - 4x = y^2 - 4y$.
 
-a. Prove that $R$ is an equivalence relation.
+(a) Prove that $R$ is an equivalence relation.
 
-b. Exhibit the partition of $A$ whose members are the equivalence classes of $R$.
+(b) Exhibit the partition of $A$ whose members are the equivalence classes of $R$.
 :::
 
 ::: {.solution}
