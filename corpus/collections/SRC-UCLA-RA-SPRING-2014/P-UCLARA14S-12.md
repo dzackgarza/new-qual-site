@@ -6,7 +6,9 @@ title: 'Zeros of $z^6+iz^4+1$ in the upper half-plane'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Argument Principle
+  - Zeros
 relations: []
 review: draft
 audit:

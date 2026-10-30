@@ -5,8 +5,10 @@ kind: problem
 title: Entire functions with linear logarithmic growth and finitely many zeros
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Zeros
 relations: []
 review: draft
 audit:

@@ -5,8 +5,10 @@ kind: problem
 title: A dense boundary pole set prevents analytic continuation
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Meromorphic Functions
+  - Analytic Continuation
 relations: []
 review: draft
 audit:

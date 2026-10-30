@@ -5,8 +5,10 @@ kind: problem
 title: Entire function with simple zeros at the positive integers
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Zeros
 relations: []
 review: draft
 audit:

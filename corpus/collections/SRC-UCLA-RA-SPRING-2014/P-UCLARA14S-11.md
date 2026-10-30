@@ -5,8 +5,10 @@ kind: problem
 title: 'The integral $\int_0^\infty \frac{x^p}{x^2+1}\,dx$ for $-1<p<1$'
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 audit:

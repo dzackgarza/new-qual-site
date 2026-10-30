@@ -5,8 +5,10 @@ kind: problem
 title: Hurwitz theorem for zero-free holomorphic functions
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Zeros
+  - Argument Principle
 relations: []
 review: draft
 audit:
