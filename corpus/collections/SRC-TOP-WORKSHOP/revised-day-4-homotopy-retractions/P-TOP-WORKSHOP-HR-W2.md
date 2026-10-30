@@ -12,7 +12,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-12
-  note: Checked against the second warm-up problem in assets/attachments/day_4_homotopy_retractions.pdf.
+  note: Checked against the second warm-up problem in assets/attachments/Revised_packet_-_Homotopy_and_Retractions.pdf.
 ---
 
 ::: {.problem}

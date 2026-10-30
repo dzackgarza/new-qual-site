@@ -12,7 +12,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-14
-  note: Checked against Problem 2, labeled Michigan Jan 2010, in assets/attachments/QualProblemsHomotopy_extracted.md.
+  note: Checked against Problem 2, labeled Michigan Jan 2010, in assets/attachments/Legacy_packet_-_Homotopy_and_Retractions_extracted.md.
 ---
 
 ::: {.problem}

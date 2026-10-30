@@ -39,14 +39,14 @@ provenance:
 - assets/attachments/Day_7_-_Fundamental_Groups.pdf
 - assets/attachments/Day_8_-_Covering_Spaces.pdf
 - assets/attachments/Day_9_-_Homology.pdf
-- assets/attachments/day_1_compactness.pdf
-- assets/attachments/day_2_connected_path_connnected.pdf
-- assets/attachments/day_3_sep_counterex_defn.pdf
-- assets/attachments/day_4_homotopy_retractions.pdf
-- assets/attachments/day_5_fundamental_group.pdf
-- assets/attachments/day_6_covering_spaces.pdf
-- assets/attachments/day_7_homology.pdf
-- assets/attachments/QualProblemsHomotopy.pdf
+- assets/attachments/Revised_packet_-_Compactness.pdf
+- assets/attachments/Revised_packet_-_Connectedness_and_Path_Connectedness.pdf
+- assets/attachments/Revised_packet_-_Separation_Counterexamples_and_Definitions.pdf
+- assets/attachments/Revised_packet_-_Homotopy_and_Retractions.pdf
+- assets/attachments/Revised_packet_-_Fundamental_Group.pdf
+- assets/attachments/Revised_packet_-_Covering_Spaces.pdf
+- assets/attachments/Revised_packet_-_Homology.pdf
+- assets/attachments/Legacy_packet_-_Homotopy_and_Retractions.pdf
 source:
   source_kind: compilation
   date:

@@ -1,11 +1,11 @@
 {
-  "source_pdf": "assets/attachments/day_3_sep_counterex_defn.pdf",
+  "source_pdf": "assets/attachments/Revised_packet_-_Separation_Counterexamples_and_Definitions.pdf",
   "source_pdf_sha256": "71fe7be78e6c6026b6dda69394ec75eab2308417ec7bc1b61293d665781145f2",
-  "extracted_markdown": "assets/attachments/day_3_sep_counterex_defn_extracted.md",
+  "extracted_markdown": "assets/attachments/Revised_packet_-_Separation_Counterexamples_and_Definitions_extracted.md",
   "extracted_markdown_sha256": "c3b802bc47dfa31a0bb15041da510dba45a9079f86e54349fa6317ad48b54a0e",
   "extractor": "mineru-open-api",
   "extractor_version": "v0.5.9",
-  "command": "mineru-open-api flash-extract assets/attachments/day_3_sep_counterex_defn.pdf --language en",
+  "command": "mineru-open-api flash-extract assets/attachments/Revised_packet_-_Separation_Counterexamples_and_Definitions.pdf --language en",
   "generated_at": "2026-09-14",
   "card_comparison": "The fourteen posed packet items were reconciled against this baseline. The deterministic extraction confirms the June 2004 A3 containment targets U and V and the packet-only June 2009 A4(a) excerpt.",
   "known_extractor_defects": [

@@ -12,7 +12,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-14
-  note: Checked against the first covering-space problem in assets/attachments/QualProblemsHomotopy_extracted.md; malformed MinerU presentation brackets were normalized to standard notation.
+  note: Checked against the first covering-space problem in assets/attachments/Legacy_packet_-_Homotopy_and_Retractions_extracted.md; malformed MinerU presentation brackets were normalized to standard notation.
 ---
 
 ::: {.problem}
