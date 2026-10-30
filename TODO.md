@@ -73,7 +73,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-AG-EXAM-PROBLEMS-2015
   - [x] SRC-AG-HOMEWORK
   - [x] SRC-AGX-MISC-AG-PROBLEMS
-  - [ ] SRC-AGX-VARIETIES-PROBLEMS
+  - [x] SRC-AGX-VARIETIES-PROBLEMS
   - [ ] SRC-ALG-ART-HEACCB
   - [ ] SRC-ALG-ART-PSET5-QUALS
   - [ ] SRC-ALG-ART-QHGA3N
