@@ -58,9 +58,7 @@ source:
   - id: E-AMD-DQCYAQBD
   - id: E-AMD-E3UUQEAP
   - id: E-AMD-EBIC3Z5S
-  - id: E-AMD-ELQV5ZEQ
   - id: E-AMD-EYNVK4T2
-  - id: E-AMD-F4PIWGSE
   - id: E-AMD-F5ZHMJNK
   - id: E-AMD-FAT34AQV
   - id: E-AMD-FCSNELC6
