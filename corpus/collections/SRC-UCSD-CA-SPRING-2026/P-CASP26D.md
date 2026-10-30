@@ -19,7 +19,7 @@ review: draft
 Let $f$ be holomorphic on the upper half-plane $H = \{z \in \CC : \operatorname{Im} z > 0\}$.
 Assume that
 
-(i) $f$ extends continuously to $H \setminus \{0\}$,
+(i) $f$ extends continuously to $\overline{H} \setminus \{0\}$,
 
 (ii) $f(x) \in \RR$ for all $x \in \RR \setminus \{0\}$,
 
