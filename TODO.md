@@ -939,7 +939,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/workshops/index.md
   - [x] wiki/index.md
   - [x] wiki/prelim/counterexamples.md
-  - [ ] wiki/prelim/index.md
+  - [x] wiki/prelim/index.md
   - [ ] wiki/prelim/problems/berkeley-prelims.md
   - [ ] wiki/prelim/problems/index.md
   - [ ] wiki/prelim/problems/integral-practice.md
