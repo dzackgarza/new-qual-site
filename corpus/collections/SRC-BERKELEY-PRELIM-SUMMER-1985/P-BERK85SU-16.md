@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK85SU-16
 kind: problem
 title: An upper-semicontinuous function on $[0,1]$ is bounded above and attains its maximum
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

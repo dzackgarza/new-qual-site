@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK85SU-09
 kind: problem
 title: Maximum principle and uniqueness for $u''=e^x u$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:
@@ -29,8 +29,9 @@ $$
 u''(x)=e^x u(x).
 $$
 
-1. Show that if $0<x_0<1$, then $u$ cannot have a positive local maximum at $x_0$, and cannot have a negative local minimum there.
-2. If $u(0)=u(1)=0$, prove that $u(x)\equiv0$ on $[0,1]$.
+(a) Show that if $0<x_0<1$, then $u$ cannot have a positive local maximum at $x_0$, and cannot have a negative local minimum there.
+
+(b) If $u(0)=u(1)=0$, prove that $u(x)\equiv0$ on $[0,1]$.
 :::
 
 ::: {.solution}
@@ -39,7 +40,7 @@ $$
 
 ::: {.pf-step #s1}
 
-Part 1: $u$ cannot have a positive local maximum at an interior
+Part (a): $u$ cannot have a positive local maximum at an interior
 point.
 
 ::: pf-proof
@@ -65,7 +66,7 @@ because $e^{x_0}>0$ and $u(x_0)>0$. This is a contradiction.
 
 ::: {.pf-step #s2}
 
-Part 1: $u$ cannot have a negative local minimum at an interior
+Part (a): $u$ cannot have a negative local minimum at an interior
 point.
 
 ::: pf-proof
@@ -124,7 +125,7 @@ minimum, contradicting step [](#s2){.pf-ref}.
 
 ::: {.pf-step #s5}
 
-Part 2 gives
+Part (b) gives
 $$
 \boxed{u(x)\equiv0\text{ on }[0,1]}.
 $$
@@ -140,7 +141,7 @@ values. Hence $u(x)=0$ for every $x\in[0,1]$.
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part 1, and step [](#s5){.pf-ref} proves part 2.
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), and step [](#s5){.pf-ref} proves part (b).
 
 :::
 

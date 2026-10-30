@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK85SU-01
 kind: problem
 title: Real $2\times2$ square roots of $-I$ and of $\operatorname{diag}(-1,-1-\varepsilon)$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:
@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-1. Show that a real $2\times2$ matrix $A$ satisfies $A^2=-I$ if and only if
+(a) Show that a real $2\times2$ matrix $A$ satisfies $A^2=-I$ if and only if
 $$
 A=\begin{pmatrix}
 \pm\sqrt{pq-1}&-p\\
@@ -34,7 +34,7 @@ q&\mp\sqrt{pq-1}
 $$
 where $p,q\in\RR$, $pq\ge1$, and the two signs are chosen consistently.
 
-2. Show that for every $\varepsilon>0$ there is no real $2\times2$ matrix $A$ such that
+(b) Show that for every $\varepsilon>0$ there is no real $2\times2$ matrix $A$ such that
 $$
 A^2=\begin{pmatrix}-1&0\\0&-1-\varepsilon\end{pmatrix}.
 $$
@@ -137,7 +137,7 @@ stated form.
 
 ::: {.pf-step #s3}
 
-Every matrix of the displayed form in part 1 satisfies
+Every matrix of the displayed form in part (a) satisfies
 $$
 A^2=-I.
 $$
@@ -170,7 +170,7 @@ Since $s^2=pq-1$, this is $-I$.
 
 ::: {.pf-step #s4}
 
-Part 1 is therefore proved.
+Part (a) is therefore proved.
 
 ::: pf-proof
 
@@ -182,7 +182,7 @@ Step [](#s2){.pf-ref} proves necessity, and step [](#s3){.pf-ref} proves suffici
 
 ::: {.pf-step #s5}
 
-For part 2, suppose for contradiction that a real matrix $A$
+For part (b), suppose for contradiction that a real matrix $A$
 satisfies
 $$
 A^2=
@@ -297,7 +297,7 @@ contradiction.
 
 ::: pf-qed
 
-Step [](#s4){.pf-ref} proves part 1, and step [](#s8){.pf-ref} proves part 2.
+Step [](#s4){.pf-ref} proves part (a), and step [](#s8){.pf-ref} proves part (b).
 
 :::
 

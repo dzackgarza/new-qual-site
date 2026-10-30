@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK85SU-06
 kind: problem
 title: The integral $\int_0^\infty x^{a-1}/(1+x)\,dx$ and its domain of convergence
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

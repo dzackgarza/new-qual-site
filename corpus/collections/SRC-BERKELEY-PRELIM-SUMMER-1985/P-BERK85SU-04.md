@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK85SU-04
 kind: problem
 title: A subgroup of order $24$ in a group of order $120$ from one matching left and right coset
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

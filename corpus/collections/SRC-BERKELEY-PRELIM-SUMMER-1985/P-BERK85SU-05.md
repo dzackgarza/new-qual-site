@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK85SU-05
 kind: problem
 title: Sum of cubes of the roots of $x^3+2x^2+7x+1$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

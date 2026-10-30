@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK85SU-17
 kind: problem
 title: Nonnegative coefficients force a singularity at the positive boundary point
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

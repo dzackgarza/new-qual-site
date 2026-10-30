@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK85SU-08
 kind: problem
 title: Polynomial approximation with prescribed value and derivative at an endpoint
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

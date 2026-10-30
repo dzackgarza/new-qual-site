@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK85SU-13
 kind: problem
 title: Averaging a polynomial over the $k$th roots of unity
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

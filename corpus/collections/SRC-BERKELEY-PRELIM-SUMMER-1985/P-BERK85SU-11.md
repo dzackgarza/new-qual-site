@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK85SU-11
 kind: problem
 title: Products of nonsquares in a cyclic group and failure outside the cyclic case
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:
@@ -25,8 +25,9 @@ audit:
 ---
 
 ::: {.problem}
-1. Let $G$ be a cyclic group and let $a,b\in G$ be elements that are not squares. Prove that $ab$ is a square in $G$.
-2. Give an example showing that the conclusion can fail when $G$ is not cyclic.
+(a) Let $G$ be a cyclic group and let $a,b\in G$ be elements that are not squares. Prove that $ab$ is a square in $G$.
+
+(b) Give an example showing that the conclusion can fail when $G$ is not cyclic.
 :::
 
 ::: {.solution}
@@ -77,7 +78,7 @@ at most $2$.
 
 ::: {.pf-step #s3}
 
-Part 1: if $a$ and $b$ are nonsquares, then $ab$ is a square.
+Part (a): if $a$ and $b$ are nonsquares, then $ab$ is a square.
 
 ::: pf-proof
 
@@ -100,7 +101,7 @@ Thus $ab\in G^2$, so step [](#s1){.pf-ref} shows that $ab$ is a square.
 
 ::: {.pf-step #s4}
 
-Part 2: the conclusion fails for
+Part (b): the conclusion fails for
 $$
 G=C_2\times C_2.
 $$
@@ -118,7 +119,7 @@ $$
 and $a\neq b$. Every element of $G$ has square equal to $1$, so the
 only square in $G$ is $1$. Hence $a$ and $b$ are nonsquares, while
 their product $ab$ is also a nonidentity element and therefore also a
-nonsquare. Thus the conclusion of part 1 fails in this noncyclic
+nonsquare. Thus the conclusion of part (a) fails in this noncyclic
 group.
 
 :::

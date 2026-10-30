@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK85SU-03
 kind: problem
 title: Polar decomposition of a nonsingular real matrix
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

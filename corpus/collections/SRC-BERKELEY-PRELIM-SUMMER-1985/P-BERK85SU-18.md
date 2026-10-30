@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK85SU-18
 kind: problem
 title: General solution of $y_1'=-3y_1+10y_2$, $y_2'=-3y_1+8y_2$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

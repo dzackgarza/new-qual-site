@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK85SU-19
 kind: problem
 title: Limit of the $n$th root of a finite sum of $n$th powers
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

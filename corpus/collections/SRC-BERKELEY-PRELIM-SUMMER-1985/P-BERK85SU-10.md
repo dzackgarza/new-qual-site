@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK85SU-10
 kind: problem
 title: The equation $z=\lambda-e^{-z}$ has one root in the closed right half-plane
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

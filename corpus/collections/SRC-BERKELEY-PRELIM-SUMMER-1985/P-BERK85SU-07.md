@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BERK85SU-07
 kind: problem
 title: Monotonicity and a reciprocal bound for a Gaussian-tail ratio
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:
@@ -29,11 +29,12 @@ $$
 f(x)=e^{x^2/2}\int_x^\infty e^{-t^2/2}\,dt.
 $$
 
-1. Prove that
+(a) Prove that
 $$
 0<f(x)<\frac1x.
 $$
-2. Prove that $f$ is strictly decreasing on $(0,\infty)$.
+
+(b) Prove that $f$ is strictly decreasing on $(0,\infty)$.
 :::
 
 ::: {.solution}
@@ -91,7 +92,7 @@ $$
 
 ::: {.pf-step #s3}
 
-Part 1 is
+Part (a) is
 $$
 \boxed{0<f(x)<\frac1x}.
 $$
@@ -152,7 +153,7 @@ Therefore $f$ is strictly decreasing.
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} proves part 1, and step [](#s5){.pf-ref} proves part 2.
+Step [](#s3){.pf-ref} proves part (a), and step [](#s5){.pf-ref} proves part (b).
 
 :::
 
