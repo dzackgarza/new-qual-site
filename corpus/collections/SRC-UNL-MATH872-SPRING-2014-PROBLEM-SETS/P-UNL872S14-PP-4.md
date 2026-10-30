@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let X be the topological space built in problem PP.2. Describe a Δ-complex structure for X, and compute the homology groups $\mathrm { H ^ { s i m p l } _ { n } ( X ) }$ for all n. (Hint: Use four prisms.)
+Let $X$ be the topological space built in problem PP.2. Describe a $\Delta$-complex structure for $X$, and compute the homology groups $H_{n}^{\mathrm{simpl}}(X)$ for all $n$. (Hint: Use four prisms.)
 :::
 
 ::: {.solution}
