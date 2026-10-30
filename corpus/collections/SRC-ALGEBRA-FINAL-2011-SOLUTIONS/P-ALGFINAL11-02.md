@@ -27,15 +27,53 @@ $$
 :::
 
 ::: {.solution}
-(a) The automorphism of $R$ that takes any $y \in R$ to $\bar y$ induces the first isomorphism.
-Multiplication by $x$ induces the second: it is surjective, and it is injective since if $xy = x\bar x z$ then, $R$ being an integral domain, $y = \bar x z$.
 
-(b) Taking $(a,b) \in \ZZ \times \ZZ$ to $a + b\sqrt{-n} \in R$ gives a group isomorphism.
-For an integer $m > 0$ there results an isomorphism $\ZZ/m \times \ZZ/m \cong R/mR$, so $\abs{R/mR} = [R : mR] = m^2$. In particular, for $m = x\bar x$ one gets $N(x)^2 = [R : x\bar x R] = [R : xR][xR : x\bar x R] = [R : xR]^2$, where the last equality holds by (a).
+::: pf
 
-(c) If $N(x) = \abs{R/xR}$ (by (b)) is prime, so that $R/xR$ has no nontrivial proper subgroup, then the ideal $xR$ is maximal, hence prime, i.e., $x$ is prime in $R$.
+::: {.pf-step #s1}
+(a) Conjugation $y\mapsto\bar y$ induces $R/xR\cong R/\bar xR$, and multiplication by $x$ induces $R/\bar xR\cong xR/x\bar xR$.
 
-(d) Suppose $p=a^2+nb^2=c^2+nd^2$ with $a,b,c,d>0$. Put $x=a+b\sqrt{-n}$ and $y=c+d\sqrt{-n}$. By (c), $x$ is prime in $R$, and $x\mid y\bar y=p$. Thus $x\mid y$ or $x\mid\bar y$.
+::: pf-proof
+Conjugation is a ring automorphism of $R$ that carries $xR$ onto $\bar xR$, so it induces the first isomorphism. The map $R\to xR/x\bar xR$, $y\mapsto xy+x\bar xR$, is a surjective group homomorphism. Its kernel is $\bar xR$: if $xy=x\bar xz$, then $y=\bar xz$ because $R$ is an integral domain and $x\ne0$.
+:::
 
-In the first case, write $y=xu$. Taking norms gives $p=pN(u)$, so $N(u)=1$. If $u=r+s\sqrt{-n}$, then $r^2+ns^2=1$; since $n>1$, this forces $u=\pm1$. Positivity gives $y=x$, hence $a=c$ and $b=d$. In the second case the same norm argument gives $\bar y=\pm x$, which is impossible because $\bar y=c-d\sqrt{-n}$ and $a,b,c,d>0$. Therefore the representation is unique.
+:::
+
+::: {.pf-step #s2}
+(b) $N(x)^2=[R:xR]\,[xR:x\bar xR]=[R:xR]^2$.
+
+::: pf-proof
+The map $(a,b)\mapsto a+b\sqrt{-n}$ is a group isomorphism $\ZZ^2\to R$. For an integer $m>0$ it carries $(m\ZZ)^2$ onto $mR$, so $[R:mR]=m^2$. Apply this with $m=N(x)=x\bar x>0$:
+$$
+N(x)^2=[R:x\bar xR]=[R:xR]\,[xR:x\bar xR]=[R:xR]^2,
+$$
+where the last equality is step [](#s1){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #s3}
+(c) If $N(x)$ is prime in $\ZZ$, then $x$ is prime in $R$.
+
+::: pf-proof
+By step [](#s2){.pf-ref}, $\cardinality{R/xR}=N(x)$ is prime. Hence the additive group $R/xR$ has no subgroup other than $0$ and itself, so $R/xR$ has no ideal other than $0$ and itself, and $xR$ is maximal. A maximal ideal is prime, so $x$ is prime.
+:::
+
+:::
+
+::: {.pf-step #s4}
+(d) If $p=a^2+nb^2=c^2+nd^2$ with $a,b,c,d>0$, then $a=c$ and $b=d$.
+
+::: pf-proof
+Put $x=a+b\sqrt{-n}$ and $y=c+d\sqrt{-n}$. By step [](#s3){.pf-ref}, $x$ is prime in $R$, and $x\mid p=y\bar y$, so $x\mid y$ or $x\mid\bar y$. The norm is multiplicative, because $\overline{uv}=\bar u\bar v$. If $y=xu$ or $\bar y=xu$, taking norms gives $N(u)=1$. Write $u=r+s\sqrt{-n}$; then $r^2+ns^2=1$ with $n>1$ forces $u=\pm1$. So $y=\pm x$ or $\bar y=\pm x$. Comparing the coefficients, whose signs are fixed by $a,b,c,d>0$, only $y=x$ is possible. Hence $a=c$ and $b=d$.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} answer (a), (b), (c) and (d).
+:::
+
+:::
+
 :::
