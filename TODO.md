@@ -864,7 +864,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/applied-algebra/invariant-theory/index.md
   - [x] wiki/applied-algebra/matrix-analysis/index.md
   - [x] wiki/applied-algebra/representation-theory/index.md
-  - [ ] wiki/applied-algebra/resources/index.md
+  - [x] wiki/applied-algebra/resources/index.md
   - [ ] wiki/applied-algebra/symmetric-functions/index.md
   - [ ] wiki/archives/card-archives.md
   - [ ] wiki/archives/further-studying.md
