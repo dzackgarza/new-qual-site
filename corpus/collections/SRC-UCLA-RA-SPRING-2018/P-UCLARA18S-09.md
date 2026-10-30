@@ -5,8 +5,10 @@ kind: problem
 title: The Weierstrass product $\prod(1+\frac1n)^z(1-\frac zn)$
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Zeros
 relations: []
 review: draft
 audit:

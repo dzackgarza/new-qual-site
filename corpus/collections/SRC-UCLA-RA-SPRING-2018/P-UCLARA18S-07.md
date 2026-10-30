@@ -5,8 +5,10 @@ kind: problem
 title: Holomorphy of $F(z,z)$ for separately holomorphic continuous $F$
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Holomorphic Functions
+  - Cauchy Integral Formula
 relations: []
 review: draft
 audit:

@@ -5,8 +5,9 @@ kind: problem
 title: Conformally equivalent annuli have equal moduli
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Conformal Maps
 relations: []
 review: draft
 audit:

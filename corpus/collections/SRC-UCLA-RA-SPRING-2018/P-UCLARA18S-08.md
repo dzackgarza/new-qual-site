@@ -5,8 +5,10 @@ kind: problem
 title: Sharp bound on $\abs{\partial_xu(0)}$ for harmonic $u:\DD\to[0,1]$
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Harmonic Functions
+  - Schwarz Lemma
 relations: []
 review: draft
 audit:

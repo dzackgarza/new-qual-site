@@ -5,8 +5,10 @@ kind: problem
 title: Bergman reproducing formula for bounded holomorphic functions on the disk
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Cauchy Integral Formula
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

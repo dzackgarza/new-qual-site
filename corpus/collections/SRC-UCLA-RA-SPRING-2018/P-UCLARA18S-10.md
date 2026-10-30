@@ -5,8 +5,10 @@ kind: problem
 title: Injective holomorphic self-maps of the thrice-punctured sphere
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Biholomorphisms
+  - Removable Singularities
 relations: []
 review: draft
 audit:
