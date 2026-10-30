@@ -22,6 +22,7 @@ audit:
 ::: {.problem}
 Consider the circle in the form of the abelian group $T = \RR/\ZZ$.
 Show that there is a long exact sequence relating homology with coefficients in $\ZZ$, $\RR$ and $T$ and use it to compute $H_*(\RP^\infty; T)$.
+(You can assume the usual cellular chain complex for $\RP^\infty$.)
 :::
 
 ::: {.solution}
