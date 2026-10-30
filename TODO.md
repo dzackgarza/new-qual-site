@@ -866,7 +866,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/applied-algebra/representation-theory/index.md
   - [x] wiki/applied-algebra/resources/index.md
   - [x] wiki/applied-algebra/symmetric-functions/index.md
-  - [ ] wiki/archives/card-archives.md
+  - [x] wiki/archives/card-archives.md
   - [ ] wiki/archives/further-studying.md
   - [ ] wiki/archives/graduate-topics.md
   - [ ] wiki/archives/index.md
