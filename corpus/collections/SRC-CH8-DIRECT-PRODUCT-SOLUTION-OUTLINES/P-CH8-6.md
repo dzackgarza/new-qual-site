@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Prove, by comparing orders of elements, that $\ZZ _ { 8 } \oplus \ZZ _ { 2 }$ is not isomorphic to $\ZZ _ { 4 } \oplus \ZZ _ { 4 }$ .
+Prove, by comparing orders of elements, that $\ZZ_{8} \oplus \ZZ_{2}$ is not isomorphic to $\ZZ_{4} \oplus \ZZ_{4}$.
 :::
 
 ::: {.solution}

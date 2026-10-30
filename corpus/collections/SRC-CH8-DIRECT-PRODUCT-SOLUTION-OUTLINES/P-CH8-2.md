@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Show that $\ZZ _ { 2 } \oplus \ZZ _ { 2 } \oplus \ZZ _ { 2 }$ has seven subgroups of order 2.
+Show that $\ZZ_{2} \oplus \ZZ_{2} \oplus \ZZ_{2}$ has seven subgroups of order $2$.
 :::
 
 ::: {.solution}

@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let G be a group with identity $e _ { G }$ and let H be a group with identity $e _ { H }$ . Prove that G is isomorphic to $G \oplus \{ e _ { H } \}$ and that H is isomorphic to $\{ e _ { G } \} \oplus H .$
+Let $G$ be a group with identity $e_{G}$ and let $H$ be a group with identity $e_{H}$. Prove that $G$ is isomorphic to $G \oplus \{e_{H}\}$ and that $H$ is isomorphic to $\{e_{G}\} \oplus H$.
 :::
 
 ::: {.solution}

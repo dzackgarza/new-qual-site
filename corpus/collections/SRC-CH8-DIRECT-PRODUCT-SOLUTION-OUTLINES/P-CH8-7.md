@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that $G _ { 1 } \oplus G _ { 2 }$ is isomorphic to $G _ { 2 } \oplus G _ { 1 }$ . State the general case.
+Prove that $G_{1} \oplus G_{2}$ is isomorphic to $G_{2} \oplus G_{1}$. State the general case.
 :::
 
 ::: {.solution}
