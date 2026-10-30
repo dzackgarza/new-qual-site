@@ -51,8 +51,6 @@ source:
       comment: Exercise 6
     - id: E-ID7CS
       comment: Exercise 7
-    - id: P-4MDI2
-      comment: Exercises 7 and 8
     - id: E-TH4A2
       comment: Exercise 8
     - id: E-PIN4T
