@@ -908,7 +908,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/counting-zeros/index.md
   - [x] wiki/complex-analysis/counting-zeros/rouches-theorem.md
   - [x] wiki/complex-analysis/counting-zeros/the-argument-principle.md
-  - [ ] wiki/complex-analysis/holomorphic-functions/complex-arithmetic-and-log.md
+  - [x] wiki/complex-analysis/holomorphic-functions/complex-arithmetic-and-log.md
   - [ ] wiki/complex-analysis/holomorphic-functions/harmonic-functions.md
   - [ ] wiki/complex-analysis/holomorphic-functions/index.md
   - [ ] wiki/complex-analysis/holomorphic-functions/is-it-holomorphic.md
