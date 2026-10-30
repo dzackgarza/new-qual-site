@@ -961,7 +961,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/real-analysis/appendices/functional-analysis.md
   - [x] wiki/real-analysis/appendices/index.md
   - [x] wiki/real-analysis/appendices/undergrad-appendix.md
-  - [ ] wiki/real-analysis/counterexamples-undergraduate.md
+  - [x] wiki/real-analysis/counterexamples-undergraduate.md
   - [ ] wiki/real-analysis/counterexamples.md
   - [ ] wiki/real-analysis/fourier/convolution.md
   - [ ] wiki/real-analysis/fourier/index.md
