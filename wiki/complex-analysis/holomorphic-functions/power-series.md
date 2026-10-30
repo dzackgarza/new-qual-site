@@ -68,5 +68,5 @@ The standard series and the factorial notation are collected on [[complex-analys
 [[E-ZQGR5]] [[E-FS7GZ]] [[E-VWVTY]]
 [[FE-LAN3V]] [[FE-VWNUI]] [[FE-EUOB2]]
 [[E-BUVLS]] [[P-AZOFF-F01]] [[E-DUMQG]] [[E-AHBVF]] [[E-SQ4GJ]] [[E-ENJAF]] [[E-GMGFS]] [[E-XOCPO]] [[E-QCVGX]]
-[[E-ZWNTH]] [[E-THK2Z]] [[E-ORJPT]]
+[[E-XIT36]] [[E-THK2Z]] [[E-ORJPT]]
 [[E-TVJFL]] [[P-UGA8150S21-HW1-08]] [[E-SS1.EX-13]] [[E-FMLK2]]
