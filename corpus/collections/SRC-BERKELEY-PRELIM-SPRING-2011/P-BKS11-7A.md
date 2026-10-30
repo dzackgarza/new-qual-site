@@ -6,7 +6,8 @@ title: Sum of $\sum r^k\cos(k\theta)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
