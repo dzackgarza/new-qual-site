@@ -21,7 +21,12 @@ Define
 $$
 g(z)=f(\sqrt z).
 $$
-Show that $g$ is well-defined and analytic on $B(0,r^2)$, and express $g^{(n)}(0)$ in terms of derivatives of $f$ at $0$.
+Show that $g:B(0,r)\to\CC$ is well-defined and analytic, and express $g^{(n)}(0)$ in terms of derivatives of $f$ at $0$.
+:::
+
+::: {.remark}
+As printed, $g$ is defined on $B(0,r)$; for $r<1$ this disk is larger than the natural domain, because $\sqrt z$ lies in $B(0,r)$ only when $\abs{z}<r^2$.
+The intended domain is $B(0,r^2)$, and the solution works there.
 :::
 
 ::: {.solution}

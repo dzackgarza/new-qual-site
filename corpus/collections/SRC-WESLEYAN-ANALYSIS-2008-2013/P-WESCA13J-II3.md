@@ -25,7 +25,12 @@ $$
 g(z)=\sqrt{f(z)}
 $$
 is also entire, that is, $g$ is entire and $g^2=f$.
-Prove or disprove: $f$ must be constant.
+Prove that $f$ must be constant.
+:::
+
+::: {.remark}
+As printed, the claim is false: $f(z)=z^2$ has the entire square root $g(z)=z$.
+The solution disproves the claim.
 :::
 
 ::: {.solution}

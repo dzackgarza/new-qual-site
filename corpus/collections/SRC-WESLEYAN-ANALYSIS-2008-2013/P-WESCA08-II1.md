@@ -164,7 +164,7 @@ f(z)
 -\frac1{4(z-i)^2}
 -\frac{i}{4(z-i)}
 +\frac3{16}
-+\frac{i}{4}(z-i)
++\frac{i}{8}(z-i)
 -\frac5{64}(z-i)^2
 +\cdots }.
 $$
