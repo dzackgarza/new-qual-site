@@ -65,7 +65,6 @@ $$
 :::
 
 [[E-BEIHP]]
-[[E-Z4JCZ]]
 [[E-SS3.EX-8]]
 
 ## Branch cuts: logarithms
