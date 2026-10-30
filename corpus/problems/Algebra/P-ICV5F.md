@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that the eigenvalues of a Hermitian matrix are real and those of a unitary matrix are unitary.
+Prove that the eigenvalues of a Hermitian matrix are real and those of a unitary matrix have modulus $1$.
 :::
 
 ::: {.solution}

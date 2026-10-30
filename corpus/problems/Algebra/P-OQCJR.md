@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OQCJR
 kind: problem
-title: $Ax=0$ has a nontrivial solution iff $\rank(A)<m$
+title: $Ax=0$ has a nontrivial solution iff $\rank(A)<n$
 classification:
   areas:
   - algebra
