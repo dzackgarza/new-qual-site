@@ -64,7 +64,7 @@ The standard series and the factorial notation are collected on [[complex-analys
 
 ## Exercises
 
-[[E-SKD7P]] [[E-EMISN]] [[E-QLRNW]]
+[[P-AZOFF-E07]] [[E-EMISN]] [[E-QLRNW]]
 [[E-ZQGR5]] [[E-FS7GZ]] [[E-VWVTY]]
 [[FE-LAN3V]] [[FE-VWNUI]] [[FE-EUOB2]]
 [[E-BUVLS]] [[P-AZOFF-F01]] [[E-DUMQG]] [[E-AHBVF]] [[E-SQ4GJ]] [[E-ENJAF]] [[E-GMGFS]] [[E-XOCPO]] [[E-QCVGX]]

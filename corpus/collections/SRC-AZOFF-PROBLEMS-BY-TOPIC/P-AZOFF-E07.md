@@ -129,3 +129,7 @@ Step [](#s1){.pf-ref} proves part (a), and step [](#s2){.pf-ref} proves part (b)
 :::
 
 :::
+
+::: {.remark title="Variations"}
+In terms of the radius of convergence: a power series $\sum_{k\geq0}c_k(z-z_0)^k$ with radius of convergence $R>0$ converges uniformly on every closed disc $\abs{z-z_0}\le r$ with $0<r<R$.
+:::
