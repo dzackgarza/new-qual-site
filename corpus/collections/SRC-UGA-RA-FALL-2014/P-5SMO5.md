@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $g\in L^\infty([0, 1])$
+Let $g\in L^\infty([0, 1])$.
 Prove that
 $$
 \int _{[0,1]} f(x) g(x)\, dx = 0 

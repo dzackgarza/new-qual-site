@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $(f_n)$ be a sequence of continuous functions such that $\sum_{n=1}^\infty f_n$ converges uniformly.
+Let $(f_n)$ be a sequence of continuous functions on $\RR$ such that $\sum_{n=1}^\infty f_n$ converges uniformly.
 Prove that $\sum_{n=1}^\infty f_n$ is continuous.
 :::
 
