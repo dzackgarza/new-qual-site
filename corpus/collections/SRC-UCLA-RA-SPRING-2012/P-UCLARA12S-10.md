@@ -25,6 +25,7 @@ $$
 $$
 wherever the integral is absolutely convergent.
 Show that this function extends meromorphically to the whole complex plane.
+Use no property of the Gamma function that you do not derive from this definition.
 :::
 
 ::: {.solution}
