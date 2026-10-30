@@ -57,6 +57,18 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** blocked on recovering the original UCSD 290 covering-spaces sheet; until then the card stays unauthored rather than being given an invented statement.
 
+### UCLA analysis exams file their complex-analysis problems as real analysis
+
+- **Object and need:** the `SRC-UCLA-RA-*` collections, built from the UCLA Analysis Qual papers (`assets/attachments/analysis-*.pdf`). Each paper covers complex and real analysis and names which problems belong to each.
+
+- **Observed evidence:** the Fall 2013 paper marks Problems 1-6 as complex analysis; the cards carried `real-analysis` with no topics (repaired in `ad9-exams`). On 2026-10-31 the first listed problem of SRC-UCLA-RA-FALL-2009, FALL-2011, FALL-2012, SPRING-2009 to SPRING-2014 still carries only `real-analysis`; the papers' headers were not read for those terms.
+
+- **Impact and owner:** the problem browser's complex-analysis filter misses these problems, and the real-analysis filter shows them. Owner: the problem cards of each collection.
+
+- **Uncertainty:** the split of problems between the two subjects can differ by term; each paper's header decides it.
+
+- **Repair:** for each collection, read the paper's header and reclassify the complex-analysis problems with topics read from their statements.
+
 ## Workflow and rendering papercuts
 
 ### Shared QC installation lacks its PR workflow and branch protection
