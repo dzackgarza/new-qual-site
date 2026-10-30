@@ -678,7 +678,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UGA-TOP-SPRING-2013
   - [x] SRC-UGA-TOP-SPRING-2014
   - [x] SRC-UGA-TOP-SPRING-2015
-  - [ ] SRC-UGA-TOP-SPRING-2016
+  - [x] SRC-UGA-TOP-SPRING-2016
   - [ ] SRC-UGA-TOP-SPRING-2017
   - [ ] SRC-UGA-TOP-SPRING-2018
   - [ ] SRC-UGA-TOP-SPRING-2019
