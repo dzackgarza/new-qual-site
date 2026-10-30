@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF86-5
 kind: problem
 title: Jordan form of $X\mapsto XA-AX$ for a nilpotent $2\times2$ matrix $A$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

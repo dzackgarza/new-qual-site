@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF86-9
 kind: problem
 title: The integral $\int_0^\infty \frac{\log x}{(x^2+1)(x^2+4)}\,dx$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

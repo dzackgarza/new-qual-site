@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF86-6
 kind: problem
 title: Decay of solutions of $f'+qf=0$ versus $f'+pf=0$ when $\abs{q}\le\abs{p}$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Ordinary Differential Equations]}
 relations: []
 review: draft
 audit:

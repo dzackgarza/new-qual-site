@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF86-7
 kind: problem
 title: Quadratic extensions of $\QQ$ are $\QQ(\sqrt m)$ for a unique squarefree $m$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

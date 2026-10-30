@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF86-2
 kind: problem
 title: Three unit complex numbers with zero sum form an equilateral triangle
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

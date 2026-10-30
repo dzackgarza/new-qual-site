@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF86-1
 kind: problem
 title: Sequences showing each Arzelà–Ascoli hypothesis is needed
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

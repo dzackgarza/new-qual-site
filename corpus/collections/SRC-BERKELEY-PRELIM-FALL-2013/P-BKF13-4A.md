@@ -6,7 +6,8 @@ title: 'Roots of $z^5-6z+3$: distinct, exactly three real'
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

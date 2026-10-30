@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF86-3
 kind: problem
 title: Integral of $x^3-3xy^2$ over the region between two circles
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:
