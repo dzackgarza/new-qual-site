@@ -33,6 +33,10 @@ Let $R$ be a PID and let $A$ be a cyclic $R$-module of nonzero order $r\in R$.
 2. If $s$ divides $r$, so $sk = r$, then $sA \cong R/(k)$ and $A[s] \cong R/(s)$.
 :::
 
+::: {.remark title="Variations"}
+Part 2 holds over any commutative domain $R$: if $A=Ra$ with $\Ann_R(a)=(r)$ and $r=sk$ with $s,k\neq 0$, then $sA\cong R/(k)$ and $A[s]\cong R/(s)$.
+:::
+
 ::: {.solution}
 Choose a generator $a\in A$ with annihilator
 $$
