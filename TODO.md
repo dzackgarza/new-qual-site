@@ -660,7 +660,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UGA-TOP-FALL-2009
   - [x] SRC-UGA-TOP-FALL-2010
   - [x] SRC-UGA-TOP-FALL-2011
-  - [ ] SRC-UGA-TOP-FALL-2012
+  - [x] SRC-UGA-TOP-FALL-2012
   - [ ] SRC-UGA-TOP-FALL-2013
   - [ ] SRC-UGA-TOP-FALL-2014
   - [ ] SRC-UGA-TOP-FALL-2015
