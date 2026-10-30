@@ -26,12 +26,12 @@ audit:
   note: "Checked the finite-dimensional span is a field without separability assumptions, both degree divisibilities, and the distinct cubic fields giving intersection Q and compositum degree six."
 ---
 ::: {.problem}
-a. Let $F$ be a field, and let $K, L$ be finite dimensional extensions of $F$ inside a common overfield.
+(a) Let $F$ be a field, and let $K, L$ be finite dimensional extensions of $F$ inside a common overfield.
 Suppose $[K : F]$ and $[L : F]$ are relatively prime.
 Prove that $[KL : F] = [K : F][L : F]$.
 Here $KL$ is the compositum of $K$ and $L$.
 
-b. Give an example of fields $F, K, L$ such that $K \cap L = F$ and $[KL : F] < [K : F][L : F]$.
+(b) Give an example of fields $F, K, L$ such that $K \cap L = F$ and $[KL : F] < [K : F][L : F]$.
 :::
 
 ::: {.solution}

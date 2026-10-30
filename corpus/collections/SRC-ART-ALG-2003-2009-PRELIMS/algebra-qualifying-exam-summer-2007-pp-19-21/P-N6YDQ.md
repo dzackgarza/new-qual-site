@@ -29,12 +29,12 @@ audit:
 ::: {.problem}
 Let $L$ be the splitting field of $x^5 - 3$ over $\QQ$.
 
-a. Let $\zeta_5$ be a primitive 5th root of unity.
+(a) Let $\zeta_5$ be a primitive 5th root of unity.
 Prove that $\QQ(\zeta_5) \subset L$.
 
-b. What is the Galois group of $L$ over $\QQ(\zeta_5)$?
+(b) What is the Galois group of $L$ over $\QQ(\zeta_5)$?
 
-c. What is the dimension of $L$ over $\QQ$?
+(c) What is the dimension of $L$ over $\QQ$?
 :::
 
 ::: {.solution}

@@ -27,9 +27,9 @@ audit:
 ::: {.problem}
 Let $x, y$ be $3$-cycles in $S_5$, $x$ not equal to $y$ or $y^{-1}$.
 
-a. If there is some element of $\{1,2,3,4,5\}$ fixed by both $x$ and $y$, show that $\langle x, y \rangle$ is isomorphic to $A_4$.
+(a) If there is some element of $\{1,2,3,4,5\}$ fixed by both $x$ and $y$, show that $\langle x, y \rangle$ is isomorphic to $A_4$.
 
-b. If there is no such element fixed by both, show that $\langle x, y \rangle = A_5$.
+(b) If there is no such element fixed by both, show that $\langle x, y \rangle = A_5$.
 :::
 
 ::: {.solution}

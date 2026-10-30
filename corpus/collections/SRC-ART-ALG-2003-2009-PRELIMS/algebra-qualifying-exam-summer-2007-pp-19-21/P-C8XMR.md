@@ -26,10 +26,10 @@ audit:
   note: "Checked the complex constructibility convention, the index-two subgroup chain, and the explicit Galois enclosure of a quadratic tower before using the degree obstruction."
 ---
 ::: {.problem}
-a. Suppose that $K$ is a Galois extension of $\QQ$ of dimension $2^n$ for some positive integer $n$.
+(a) Suppose that $K$ is a Galois extension of $\QQ$ of dimension $2^n$ for some positive integer $n$.
 Prove that every element of $K$ is constructible.
 
-b. Suppose $f(x) \in \QQ[x]$ is an irreducible quartic such that the splitting field of $f(x)$ over $\QQ$ has dimension 24. Suppose $\alpha$ is a root of $f(x)$.
+(b) Suppose $f(x) \in \QQ[x]$ is an irreducible quartic such that the splitting field of $f(x)$ over $\QQ$ has dimension 24. Suppose $\alpha$ is a root of $f(x)$.
 Prove that $\alpha$ is not constructible.
 :::
 

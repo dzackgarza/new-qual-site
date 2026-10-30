@@ -30,15 +30,15 @@ audit:
 Give an example of each of the following.
 (You don't need to justify your answers.)
 
-a. A maximal ideal of $\ZZ[x]$.
+(a) A maximal ideal of $\ZZ[x]$.
 
-b. A ring $R$ and an ideal $I$ of $R$ that is prime but not maximal.
+(b) A ring $R$ and an ideal $I$ of $R$ that is prime but not maximal.
 
-c. A ring $R$ and a module $M$ over $R$ which is torsion free but isn't free.
+(c) A ring $R$ and a module $M$ over $R$ which is torsion free but isn't free.
 
-d. A unique factorization domain which isn't a PID.
+(d) A unique factorization domain which isn't a PID.
 
-e. A ring which isn't Noetherian.
+(e) A ring which isn't Noetherian.
 :::
 
 ::: {.solution}

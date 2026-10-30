@@ -28,11 +28,11 @@ audit:
 ::: {.problem}
 Let $K$ be the splitting field of $x^3 - 7$ over $\QQ$.
 
-a. Find the Galois group of $K$ over $\QQ$.
+(a) Find the Galois group of $K$ over $\QQ$.
 
-b. Find all of the subfields of $K$.
+(b) Find all of the subfields of $K$.
 
-c. Which of the subfields you found above are Galois over $\QQ$?
+(c) Which of the subfields you found above are Galois over $\QQ$?
 :::
 
 ::: {.solution}

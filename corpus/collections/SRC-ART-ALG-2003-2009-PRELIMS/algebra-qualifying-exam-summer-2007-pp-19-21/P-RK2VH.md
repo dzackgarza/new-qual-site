@@ -27,13 +27,13 @@ audit:
   note: "Checked the complete Sylow-count possibilities, disjoint element count, normal inverse image, and conjugation argument for both Sylow subgroups."
 ---
 ::: {.problem}
-a. State the Sylow theorems.
+(a) State the Sylow theorems.
 
-b. Show that in a group of order 105, either the 5-Sylow or the 7-Sylow subgroup is normal.
+(b) Show that in a group of order 105, either the 5-Sylow or the 7-Sylow subgroup is normal.
 
-c. Show that a group of order 105 has a normal subgroup of order 35.
+(c) Show that a group of order 105 has a normal subgroup of order 35.
 
-d. Show that in a group of order 105, both the 5-Sylow and the 7-Sylow subgroups are normal.
+(d) Show that in a group of order 105, both the 5-Sylow and the 7-Sylow subgroups are normal.
 :::
 
 ::: {.solution}

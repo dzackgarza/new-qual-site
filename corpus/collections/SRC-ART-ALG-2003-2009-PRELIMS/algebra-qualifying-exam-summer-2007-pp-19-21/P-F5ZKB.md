@@ -18,11 +18,11 @@ audit:
   date: 2026-08-29
 ---
 ::: {.problem}
-a. Show that a finite field must have exactly $p^n$ elements for some prime $p$ and some positive integer $n$.
+(a) Show that a finite field must have exactly $p^n$ elements for some prime $p$ and some positive integer $n$.
 
-b. List all the subfields of the field of size $3^{12}$.
+(b) List all the subfields of the field of size $3^{12}$.
 
-c. Give an example of an infinite field of characteristic $3$.
+(c) Give an example of an infinite field of characteristic $3$.
 :::
 
 ::: {.solution}
@@ -70,7 +70,7 @@ d=[K:\FF_3],
 $$
 then the tower law gives
 $$
-12=[\FF_{3^{12}}:K],d.
+12=[\FF_{3^{12}}:K]\,d.
 $$
 Hence $d\mid12$, and step [](#s1){.pf-ref} gives
 $$
