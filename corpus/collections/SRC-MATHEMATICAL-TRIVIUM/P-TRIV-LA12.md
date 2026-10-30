@@ -17,22 +17,19 @@ audit:
 
 ::: {.problem}
 Consider the Wronskian
-
 $$
-W _ { x } ( y _ { 1 } , . . . , y _ { n } ) = \operatorname * { d e t } \left[ \begin{array} { c c c c c c } { y _ { 1 } } & { y _ { 2 } } & { y _ { 3 } } & { . . . } & { y _ { n } } \\ { y _ { 1 } ^ { \prime } } & { y _ { 2 } ^ { \prime } } & { y _ { 3 } ^ { \prime } } & { . . . } & { y _ { n } ^ { \prime } } \\ { y _ { 1 } ^ { \prime \prime } } & { y _ { 2 } ^ { \prime \prime } } & { y _ { 3 } ^ { \prime \prime } } & { . . . } & { y _ { n } ^ { \prime \prime } } \\ { \vdots } & { \vdots } & { \vdots } & { \ddots } & { \vdots } \\ { y _ { 1 } ^ { ( n - 1 ) } } & { y _ { 2 } ^ { ( n - 1 ) } } & { y _ { 3 } ^ { ( n - 1 ) } } & { . . . } & { y _ { n } ^ { ( n - 1 ) } } \end{array} \right] ,\tag{5}
+W_x(y_1, \ldots, y_n) = \det \begin{bmatrix} y_1 & y_2 & y_3 & \cdots & y_n \\ y_1' & y_2' & y_3' & \cdots & y_n' \\ y_1'' & y_2'' & y_3'' & \cdots & y_n'' \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ y_1^{(n-1)} & y_2^{(n-1)} & y_3^{(n-1)} & \cdots & y_n^{(n-1)} \end{bmatrix}, \tag{5}
 $$
+where $y_1, \ldots, y_n$ are $C^{n-1}$ functions of $x$.
 
-where $y _ { 1 } , . . . , y _ { n }$ are $C ^ { n - 1 }$ functions of x.
+(a) Let $y_1$ and $y_2$ be two solutions of the differential equation $y'' - ay' - by = 0$, where $a$ and $b$ are some known functions of $x$. Find an expression for the Wronskian $W_x(y_1, y_2)$ depending on $a$ and $b$. Then, show that if one of the solutions, say, $y_1$, is known, then another can be found from the first order equation $y_1' - \frac{y_2'}{y_2}y_1 + \frac{W_x(y_1, y_2)}{y_2} = 0$.
 
-(a) Let $y _ { 1 }$ and $y _ { 2 }$ be two solutions of the differential equation $y ^ { \prime \prime } - a y ^ { \prime } - b y = 0$ where a and b are some known functions of x. Find an expression for the Wronskian $W _ { x } ( y _ { 1 } , y _ { 2 } )$ depending on a and b. Then, show that if one of the solutions, say, $y _ { 1 }$ , is known, then another can be found from the first order equation $y _ { 1 } ^ { \prime } - { \frac { y _ { 2 } ^ { \prime } } { y _ { 2 } } } y _ { 1 } + { \frac { W _ { x } ( y _ { 1 } , y _ { 2 } ) } { y _ { 2 } } } = 0$
-
-(b) Show that under change of variable $x \to t ( x )$ the Wronskian transforms as follows,
-
+(b) Show that under change of variable $x \to t(x)$ the Wronskian transforms as follows,
 $$
-W _ { x } ( y _ { 1 } , . . . , y _ { n } ) = \left( \frac { d t } { d x } \right) ^ { \frac { n ( n - 1 ) } { 2 } } W _ { t } ( y _ { 1 } , . . . , y _ { n } ) .\tag{6}
+W_x(y_1, \ldots, y_n) = \left( \frac{dt}{dx} \right)^{\frac{n(n-1)}{2}} W_t(y_1, \ldots, y_n). \tag{6}
 $$
 
-(c) Show that $W _ { x } ( y y _ { 1 } , . . . , y y _ { n } ) = y ^ { n } W _ { x } ( y _ { 1 } , . . . , y _ { n } )$ , where y is some $C ^ { n - 1 }$ function.
+(c) Show that $W_x(yy_1, \ldots, yy_n) = y^n W_x(y_1, \ldots, y_n)$, where $y$ is some $C^{n-1}$ function.
 :::
 
 ::: {.solution}

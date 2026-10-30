@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Consider the matrices $A = { \left[ \begin{array} { l l } { \cos \phi } & { - \sin \phi } \\ { \sin \phi } & { \cos \phi } \end{array} \right] } , B = { \left[ \begin{array} { l l } { \cos \phi } & { \sin \phi } \\ { \sin \phi } & { - \cos \phi } \end{array} \right] }$
+Consider the matrices $A = \begin{bmatrix} \cos\phi & -\sin\phi \\ \sin\phi & \cos\phi \end{bmatrix}$, $B = \begin{bmatrix} \cos\phi & \sin\phi \\ \sin\phi & -\cos\phi \end{bmatrix}$.
 
-(a) Calculate $A ^ { - 1 } , B ^ { - 1 }$
+(a) Calculate $A^{-1}$, $B^{-1}$.
 
-(b) Give a geometrical interpretation of the action of A and B on vectors in $\RR ^ { 2 }$
+(b) Give a geometrical interpretation of the action of $A$ and $B$ on vectors in $\RR^2$.
 
-(c) What can one say about the eigenvectors of A and B?
+(c) What can one say about the eigenvectors of $A$ and $B$?
 :::
 
 ::: {.solution}

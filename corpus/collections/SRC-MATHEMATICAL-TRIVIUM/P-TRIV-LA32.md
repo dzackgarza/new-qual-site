@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the matrices A, B such that $[ A , B ] = 0$ . Show that in this case $e ^ { A } e ^ { B } = e ^ { B } e ^ { A } = e ^ { A + B }$
+Consider the matrices $A$, $B$ such that $[A, B] = 0$. Show that in this case $e^A e^B = e^B e^A = e^{A+B}$.
 :::
 
 ::: {.solution}

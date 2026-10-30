@@ -17,14 +17,13 @@ audit:
 
 ::: {.problem}
 Consider the Vandermonde matrix
-
 $$
-V ( x _ { 1 } , . . . , x _ { n } ) = \left[ \begin{array} { c c c c c } { { 1 } } & { { 1 } } & { { 1 } } & { { . . . } } & { { 1 } } \\ { { x _ { 1 } } } & { { x _ { 2 } } } & { { x _ { 3 } } } & { { . . . } } & { { x _ { n } } } \\ { { x _ { 1 } ^ { 2 } } } & { { x _ { 2 } ^ { 2 } } } & { { x _ { 3 } ^ { 2 } } } & { { . . . } } & { { x _ { n } ^ { 2 } } } \\ { { \vdots } } & { { \vdots } } & { { \vdots } } & { { \ddots } } & { { \vdots } } \\ { { x _ { 1 } ^ { n - 1 } } } & { { x _ { 2 } ^ { n - 1 } } } & { { x _ { 3 } ^ { n - 1 } } } & { { . . . } } & { { x _ { n } ^ { n - 1 } } } \end{array} \right] .\tag{4}
+V(x_1, \ldots, x_n) = \begin{bmatrix} 1 & 1 & 1 & \cdots & 1 \\ x_1 & x_2 & x_3 & \cdots & x_n \\ x_1^2 & x_2^2 & x_3^2 & \cdots & x_n^2 \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ x_1^{n-1} & x_2^{n-1} & x_3^{n-1} & \cdots & x_n^{n-1} \end{bmatrix}. \tag{4}
 $$
 
-(a) Calculate det $V ( x _ { 1 } , . . . , x _ { n } )$
+(a) Calculate $\det V(x_1, \ldots, x_n)$.
 
-(b) Show that det $V ( x _ { 1 } , . . . , x _ { n } ) = 0$ if and only if $x _ { i } = x _ { j }$ for some $i \neq j$
+(b) Show that $\det V(x_1, \ldots, x_n) = 0$ if and only if $x_i = x_j$ for some $i \neq j$.
 :::
 
 ::: {.solution}

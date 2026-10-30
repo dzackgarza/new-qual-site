@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-A linear transformation A writes in some basis in $\RR ^ { n }$ as follows, $A = { \left[ \begin{array} { l l l } { 0 } & { 2 } & { 1 } \\ { 2 } & { 8 } & { 2 } \\ { 1 } & { 2 } & { 0 } \end{array} \right] }$
+A linear transformation $A$ writes in some basis in $\RR^n$ as follows, $A = \begin{bmatrix} 0 & 2 & 1 \\ 2 & 8 & 2 \\ 1 & 2 & 0 \end{bmatrix}$.
 
-(a) Write the transition matrix to the basis composed of the eigenvectors of A.
+(a) Write the transition matrix to the basis composed of the eigenvectors of $A$.
 
-(b) Write the transformation A in this basis.
+(b) Write the transformation $A$ in this basis.
 
-(c) Determine the invariant subspaces of A.
+(c) Determine the invariant subspaces of $A$.
 :::
 
 ::: {.solution}

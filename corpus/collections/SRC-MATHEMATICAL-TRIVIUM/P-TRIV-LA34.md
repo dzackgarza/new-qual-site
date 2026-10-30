@@ -16,12 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Consider the matrices A, B and let $\lambda \ll 1$ be a small parameter.
-Expand the expression $e ^ { - \lambda B } A e ^ { \lambda B }$
+Consider the matrices $A$, $B$ and let $\lambda \ll 1$ be a small parameter. Expand the expression $e^{-\lambda B} A e^{\lambda B}$
 
-(a) to the first order in λ.
+(a) to the first order in $\lambda$.
 
-(b) to any order in λ.
+(b) to any order in $\lambda$.
 :::
 
 ::: {.solution}

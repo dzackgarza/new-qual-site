@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the translation ${ \vec { x } } \mapsto { \vec { x } } + { \vec { a } }$ ,where ${ \vec { x } } , { \vec { a } } \in \RR ^ { n }$ , is not a linear transformation in $\RR ^ { n }$
+Show that the translation $\vec{x} \to \vec{x} + \vec{a}$, where $\vec{x}, \vec{a} \in \RR^n$, is not a linear transformation in $\RR^n$.
 :::
 
 ::: {.remark}

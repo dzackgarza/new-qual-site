@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Consider the matrix $A = { \left[ \begin{array} { l l } { 1 } & { 2 } \\ { 5 } & { 4 } \end{array} \right] }$
+Consider the matrix $A = \begin{bmatrix} 1 & 2 \\ 5 & 4 \end{bmatrix}$
 
-(a)Find $A ^ { T } , A ^ { 2 } , A ^ { 3 } , A ^ { - 1 }$ , TrA, det A.
+(a) Find $A^T$, $A^2$, $A^3$, $A^{-1}$, $\operatorname{Tr} A$, $\det A$.
 
-(b) Find the eigenvalues and the eigenvectors of A.
+(b) Find the eigenvalues and the eigenvectors of $A$.
 
-(c) Write the transformation that reduces A to diagonal form.
+(c) Write the transformation that reduces $A$ to diagonal form.
 :::
 
 ::: {.solution}

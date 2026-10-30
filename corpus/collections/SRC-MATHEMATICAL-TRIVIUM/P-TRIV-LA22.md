@@ -16,9 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the transformations A, B of the vector space $\RR ^ { n }$ sharing the same eigenvectors.
-Is this sufficient for their commutator to be zero?
-Is this necessary for their commutator to be zero?
+Consider the transformations $A$, $B$ of the vector space $\RR^n$ sharing the same eigenvectors. Is this sufficient for their commutator to be zero? Is this necessary for their commutator to be zero?
 :::
 
 ::: {.solution}

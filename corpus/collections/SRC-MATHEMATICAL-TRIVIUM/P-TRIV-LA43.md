@@ -17,11 +17,9 @@ audit:
 
 ::: {.problem}
 Consider two lines formed by intersection of the planes,
-
 $$
-l _ { 1 } = \left\{ \begin{array} { l } { 3 x + 2 y + 5 z - 1 = 0 } \\ { - x + 2 y + 3 z - 1 = 0 } \end{array} \right. , l _ { 2 } = \left\{ \begin{array} { l } { 4 x - 6 y + 7 z + 2 = 0 } \\ { 5 x + 3 y - 8 z - 3 = 0 . } \end{array} \right.\tag{10}
+l_1 = \begin{cases} 3x + 2y + 5z - 1 = 0 \\ -x + 2y + 3z - 1 = 0 \end{cases}, \quad l_2 = \begin{cases} 4x - 6y + 7z + 2 = 0 \\ 5x + 3y - 8z - 3 = 0. \end{cases} \tag{10}
 $$
-
 Find out if these lines are
 
 (a) parallel to each other,

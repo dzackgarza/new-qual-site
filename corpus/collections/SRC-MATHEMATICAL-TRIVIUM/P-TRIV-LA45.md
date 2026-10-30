@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find if the quadratic form $f ( \vec { x } ) = 9 x _ { 1 } ^ { 2 } + 6 x _ { 1 } x _ { 2 } + 6 x _ { 2 } ^ { 2 } + 8 x _ { 2 } x _ { 3 } + 4 x _ { 3 } ^ { 2 }$ is positive definite or not.
+Find if the quadratic form $f(\vec{x}) = 9x_1^2 + 6x_1x_2 + 6x_2^2 + 8x_2x_3 + 4x_3^2$ is positive definite or not.
 :::
 
 ::: {.solution}

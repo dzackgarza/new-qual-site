@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $A = E + \epsilon B _ { }$ , where E is the identity matrix and $\epsilon \ll 1$ . Expand det A to the first order in €.
+Let $A = E + \epsilon B$, where $E$ is the identity matrix and $\epsilon \ll 1$. Expand $\det A$ to the first order in $\epsilon$.
 :::
 
 ::: {.solution}

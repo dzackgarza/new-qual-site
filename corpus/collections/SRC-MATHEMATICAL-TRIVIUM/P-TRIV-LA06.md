@@ -16,8 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let A be a non-degenerate matrix.
-Show that log det $A = \operatorname { T r } \log A$
+Let $A$ be a non-degenerate matrix. Show that $\log \det A = \operatorname{Tr} \log A$.
 :::
 
 ::: {.remark}

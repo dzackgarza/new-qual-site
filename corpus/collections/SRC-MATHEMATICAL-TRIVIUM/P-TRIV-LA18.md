@@ -16,11 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Consider the rotation by an angle θ around a line determined by a unit radius-vector ¯n with components $n _ { x } , n _ { y } , n _ { z }$
+Consider the rotation by an angle $\theta$ around a line determined by a unit radius-vector $\vec{n}$ with components $n_x, n_y, n_z$.
 
 (a) Deduce the rotation matrix that performs this rotation.
 
-(b) Relate the trace of this matrix to the angle θ.
+(b) Relate the trace of this matrix to the angle $\theta$.
 :::
 
 ::: {.solution}

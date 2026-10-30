@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let A be a real matrix with $( \operatorname* { d e t } A ) ^ { 2 } = 1$ . Give a conclusion about orthogonality of A.
+Let $A$ be a real matrix with $(\det A)^2 = 1$. Give a conclusion about orthogonality of $A$.
 :::
 
 ::: {.solution}

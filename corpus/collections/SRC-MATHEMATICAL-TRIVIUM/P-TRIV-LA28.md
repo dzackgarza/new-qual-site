@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the vectors $\vec { a } _ { 1 }$ and $\vec { a } _ { 2 }$ in $\RR ^ { 2 }$ with the lengths $\norm{ \vec { a } _ { 1 } } = 2 , \norm{ \vec { a } _ { 2 } } = 6$ and the angle between them $\phi = \frac { \pi } { 6 }$ . Construct the orthonormal basis $\vec { e } _ { 1 } , \vec { e } _ { 2 }$ such that $\vec { e } _ { 1 } \parallel  \vec { a } _ { 1 }$ , and write the components of $\vec { a } _ { 1 } , \vec { a } _ { 2 }$ in this basis.
+Consider the vectors $\vec{a}_1$ and $\vec{a}_2$ in $\RR^2$ with the lengths $\abs{\vec{a}_1} = 2$, $\abs{\vec{a}_2} = 6$ and the angle between them $\phi = \frac{\pi}{6}$. Construct the orthonormal basis $\vec{e}_1, \vec{e}_2$ such that $\vec{e}_1 \parallel \vec{a}_1$, and write the components of $\vec{a}_1$, $\vec{a}_2$ in this basis.
 :::
 
 ::: {.solution}

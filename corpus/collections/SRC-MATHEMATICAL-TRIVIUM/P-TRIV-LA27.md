@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-For the vectors $A = { \left[ \begin{array} { l } { 1 } \\ { { \sqrt { 2 } } } \\ { { \sqrt { 3 } } } \end{array} \right] } , B = { \left[ \begin{array} { l } { 0 } \\ { { \sqrt { 2 } } } \\ { 2 } \end{array} \right] }$ find an orthogonal transformation that maps A to B.
+For the vectors $A = \begin{bmatrix} 1 \\ \sqrt{2} \\ \sqrt{3} \end{bmatrix}$, $B = \begin{bmatrix} 0 \\ \sqrt{2} \\ 2 \end{bmatrix}$ find an orthogonal transformation that maps $A$ to $B$.
 :::
 
 ::: {.solution}

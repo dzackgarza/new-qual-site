@@ -16,11 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-Let A, B, C, D be non-degenerate matrices of the same dimension.
-Show that
-
+Let $A$, $B$, $C$, $D$ be non-degenerate matrices of the same dimension. Show that
 $$
-\operatorname* { d e t } { \left[ \begin{array} { l l } { A } & { B } \\ { C } & { D } \end{array} \right] } = \operatorname* { d e t } \left( A D - B D ^ { - 1 } C D \right) .\tag{1}
+\det \begin{bmatrix} A & B \\ C & D \end{bmatrix} = \det\left( AD - BD^{-1}CD \right). \tag{1}
 $$
 :::
 

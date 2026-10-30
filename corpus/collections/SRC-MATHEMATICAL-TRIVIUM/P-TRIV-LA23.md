@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Consider the basis $\vec { e } _ { i } , i = 1 , 2 , 3$ , in the vector space $\RR ^ { 3 }$ In this basis, write the matrix of the transformation that
+Consider the basis $\vec{e}_i$, $i = 1, 2, 3$, in the vector space $\RR^3$. In this basis, write the matrix of the transformation that
 
-(a) stretches all directions by a factor of λ.
+(a) stretches all directions by a factor of $\lambda$.
 
-(b) stretches each direction along $\vec { e _ { i } }$ by a factor of $\lambda _ { i } , i = 1 , 2 , 3$
+(b) stretches each direction along $\vec{e}_i$ by a factor of $\lambda_i$, $i = 1, 2, 3$.
 
-(c) stretches the direction determined by a unit vector \~n with components $n _ { x } , n _ { y } , n _ { z }$ by a factor of λ.
+(c) stretches the direction determined by a unit vector $\vec{n}$ with components $n_x, n_y, n_z$ by a factor of $\lambda$.
 
 Find the eigenvectors of these transformations.
 :::

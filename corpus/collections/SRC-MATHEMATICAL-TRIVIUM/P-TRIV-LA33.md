@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that $e ^ { A } = \left( e ^ { A / N } \right) ^ { N } , N \in \RR$
+Prove that $e^A = \left( e^{A/N} \right)^N$, $N \in \RR$.
 :::
 
 ::: {.remark}

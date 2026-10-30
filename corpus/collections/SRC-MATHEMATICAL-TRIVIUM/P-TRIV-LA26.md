@@ -18,11 +18,11 @@ audit:
 ::: {.problem}
 Describe the linear transformations whose invariant subspaces are
 
-(a) 3-dimensional sphere $x _ { 1 } ^ { 2 } + x _ { 2 } ^ { 2 } + x _ { 3 } ^ { 2 } = R ^ { 2 }$ in R3,
+(a) 3-dimensional sphere $x_1^2 + x_2^2 + x_3^2 = R^2$ in $\RR^3$,
 
-(b) 4-dimensional cone $x _ { 1 } ^ { 2 } - x _ { 2 } ^ { 2 } - x _ { 3 } ^ { 2 } - x _ { 4 } ^ { 2 } = 0 { \mathrm { ~ i n ~ } } \RR ^ { 4 }$
+(b) 4-dimensional cone $x_1^2 - x_2^2 - x_3^2 - x_4^2 = 0$ in $\RR^4$,
 
-(c) n-dimensional hyperboloid $x _ { 1 } ^ { 2 } + . . . + x _ { p } ^ { 2 } - x _ { p + 1 } ^ { 2 } - . . . - x _ { n } ^ { 2 } = R ^ { 2 }$ in $\RR ^ { n }$
+(c) n-dimensional hyperboloid $x_1^2 + \cdots + x_p^2 - x_{p+1}^2 - \cdots - x_n^2 = R^2$ in $\RR^n$.
 :::
 
 ::: {.remark}

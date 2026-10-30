@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $\sigma _ { i } , i = 1 , 2 , 3$ be the Pauli matrices.
+Let $\sigma_i$, $i = 1, 2, 3$ be the Pauli matrices.
 
-(a) Calculate $\left[ \sigma _ { i } , \sigma _ { j } \right] \equiv \sigma _ { i } \sigma _ { j } - \sigma _ { j } \sigma _ { i } , i , j = 1 , 2 , 3 .$
+(a) Calculate $[\sigma_i, \sigma_j] \equiv \sigma_i\sigma_j - \sigma_j\sigma_i$, $i, j = 1, 2, 3$.
 
-(b) Calculate $\{ \sigma _ { i } , \sigma _ { j } \} \equiv \sigma _ { i } \sigma _ { j } + \sigma _ { j } \sigma _ { i } , i , j = 1 , 2 , 3 .$
+(b) Calculate $\{\sigma_i, \sigma_j\} \equiv \sigma_i\sigma_j + \sigma_j\sigma_i$, $i, j = 1, 2, 3$.
 
-(c) Calculate $[ \sigma _ { i } , [ \sigma _ { j } , \sigma _ { k } ] ] + [ \sigma _ { j } , [ \sigma _ { k } , \sigma _ { i } ] ] + [ \sigma _ { k } , [ \sigma _ { i } , \sigma _ { j } ] ] .$
+(c) Calculate $[\sigma_i, [\sigma_j, \sigma_k]] + [\sigma_j, [\sigma_k, \sigma_i]] + [\sigma_k, [\sigma_i, \sigma_j]]$.
 :::
 
 ::: {.solution}

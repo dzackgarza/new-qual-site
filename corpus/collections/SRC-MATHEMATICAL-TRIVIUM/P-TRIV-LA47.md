@@ -16,10 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Consider the quadratic forms $f ( { \vec { x } } ) = x _ { 1 } ^ { 2 } + 2 x _ { 1 } x _ { 2 } + 3 x _ { 2 } ^ { 2 }$ and $g ( \vec { x } ) = { 4 x _ { 1 } ^ { 2 } + 1 6 x _ { 1 } x _ { 2 } + }$ $6 x _ { 2 } ^ { 2 }$ in $\RR ^ { 2 }$
+Consider the quadratic forms $f(\vec{x}) = x_1^2 + 2x_1x_2 + 3x_2^2$ and $g(\vec{x}) = 4x_1^2 + 16x_1x_2 + 6x_2^2$ in $\RR^2$.
 
 (a) Check if at least one of these forms is sign definite.
-(b) Find the change of coordinates that reduces f (x) and g(x) to the diagonal form.
+
+(b) Find the change of coordinates that reduces $f(\vec{x})$ and $g(\vec{x})$ to the diagonal form.
 :::
 
 ::: {.solution}

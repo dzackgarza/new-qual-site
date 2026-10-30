@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Construct the matrix that performs a reflection in $\RR ^ { 3 }$
+Construct the matrix that performs a reflection in $\RR^3$
 
-(a) across the origin O,
+(a) across the origin $O$,
 
-(b) across the axis $O z .$
+(b) across the axis $Oz$,
 
-(c) across the plane $x O y$
+(c) across the plane $xOy$.
 :::
 
 ::: {.solution}

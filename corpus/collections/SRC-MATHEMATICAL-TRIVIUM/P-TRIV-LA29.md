@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the infinite dimensional vector space with the orthonormal basis $\vec { e _ { i } }$ $i = 1 , 2 , \dots$ Construct the continuous family of linear transformations $U ( \lambda )$ $0 \leqslant \lambda \leqslant 1$ , acting in this space such that $U ( 1 ) = E$ and $U ( 0 ) \vec { e } _ { i } = \vec { e } _ { i + 1 } , i = 1 , 2 ,$
+Consider the infinite dimensional vector space with the orthonormal basis $\vec{e}_i$, $i = 1, 2, \ldots$. Construct the continuous family of linear transformations $U(\lambda)$, $0 \leqslant \lambda \leqslant 1$, acting in this space such that $U(1) = E$ and $U(0)\vec{e}_i = \vec{e}_{i+1}$, $i = 1, 2, \ldots$.
 :::
 
 ::: {.solution}

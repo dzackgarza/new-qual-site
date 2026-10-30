@@ -16,17 +16,16 @@ audit:
 ---
 
 ::: {.problem}
-Define the matrix exponential $e ^ { A }$ of a matrix A as follows: $e ^ { A } \ = \ \sum _ { n = 0 } ^ { \infty } { \frac { A ^ { n } } { n ! } }$ Consider the following matrices
-
+Define the matrix exponential $e^A$ of a matrix $A$ as follows: $e^A = \sum_{n=0}^{\infty} \frac{A^n}{n!}$. Consider the following matrices
 $$
-M _ { x } = { \left[ \begin{array} { l l l } { 0 } & { 0 } & { 0 } \\ { 0 } & { 0 } & { - 1 } \\ { 0 } & { 1 } & { 0 } \end{array} \right] } , M _ { y } = { \left[ \begin{array} { l l l } { 0 } & { 0 } & { 1 } \\ { 0 } & { 0 } & { 0 } \\ { - 1 } & { 0 } & { 0 } \end{array} \right] } , M _ { z } = { \left[ \begin{array} { l l l } { 0 } & { - 1 } & { 0 } \\ { 1 } & { 0 } & { 0 } \\ { 0 } & { 0 } & { 0 } \end{array} \right] } .\tag{7}
+M_x = \begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & -1 \\ 0 & 1 & 0 \end{bmatrix}, \quad M_y = \begin{bmatrix} 0 & 0 & 1 \\ 0 & 0 & 0 \\ -1 & 0 & 0 \end{bmatrix}, \quad M_z = \begin{bmatrix} 0 & -1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}. \tag{7}
 $$
 
-(a) Write $\mathrm { T r } M _ { i } , M _ { i } ^ { T } , i = x , y , z$
+(a) Write $\operatorname{Tr} M_i$, $M_i^T$, $i = x, y, z$.
 
-(b) Calculate $e ^ { \theta M _ { x } } , e ^ { \theta M _ { y } } , e ^ { \theta M _ { z } }$ , where $\theta \in [ 0 , 2 \pi )$
+(b) Calculate $e^{\theta M_x}$, $e^{\theta M_y}$, $e^{\theta M_z}$, where $\theta \in [0, 2\pi)$.
 
-(c) Give a geometrical interpretation of the transformations $e ^ { \theta M _ { i } } , i = x , y , z$ acting on the vectors in $\RR ^ { 3 }$
+(c) Give a geometrical interpretation of the transformations $e^{\theta M_i}$, $i = x, y, z$, acting on the vectors in $\RR^3$.
 :::
 
 ::: {.solution}
