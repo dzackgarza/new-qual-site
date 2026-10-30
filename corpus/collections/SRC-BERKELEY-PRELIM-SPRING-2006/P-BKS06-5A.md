@@ -5,7 +5,8 @@ kind: problem
 title: Nonzero prime ideals that are not maximal in $\ZZ$, $\ZZ[x]$, $\RR[x]$, $\RR[x,y]$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 ---
@@ -21,21 +22,53 @@ Which of these rings contains a nonzero prime ideal that is not a maximal ideal?
 :::
 
 ::: {.solution}
-In the ring of integers Z the nonzero prime ideals are $\langle p \rangle$ , where p is a prime number.
-Each of these ideals is maximal since $\FF _ { p } = \ZZ / \langle p \rangle$ is a field.
-Hence every nonzero prime ideal in $\ZZ$ is maximal.
 
-The polynomial ring $\ZZ [ x ]$ in one variable x over the ring of integers Z is not a principal ideal domain.
-For instance, $\langle 2 , x \rangle$ is not a principal ideal; it strictly contains the ideal $\langle 2 \rangle$ , which is therefore not a maximal ideal.
-The ideal $\langle 2 \rangle$ is a prime ideal, because $\ZZ [ x ] / \langle 2 \rangle = \FF _ { 2 } [ x ]$ is a polynomial ring over a field, and hence an integral domain.
-Hence $\langle 2 \rangle$ is a nonzero prime ideal in $\ZZ [ x ]$ which is not maximal.
+The answer is $\ZZ[x]$ and $\RR[x,y]$.
 
-The polynomial ring $\RR [ x ]$ in one variable x over the field R is a principal ideal domain.
-Hence every nonzero ideal has the form $\langle f ( x ) \rangle$ where $f ( x )$ is a nonzero polynomial with real coefficients.
-The ideal is prime if and only if $f ( x )$ is an irreducible polynomial, i.e., if $f ( x )$ is a linear polynomial or $f ( x )$ is a quadratic polynomial with no real roots.
-In either case, the quotient $\RR [ x ] / \langle f \rangle$ is a field, namely, either R or C, which means that $\langle f \rangle$ is a maximal ideal.
-Hence every nonzero prime ideal in $\RR [ x ]$ is a maximal ideal.
+::: pf
 
-The polynomial ring $\RR [ x , y ]$ in two variables $x , y$ over R has many nonzero prime ideals which are not maximal ideals.
-For instance, $\langle x \rangle$ is a prime ideal, but it is not maximal since it is contained in the ideal $\langle x , y \rangle$
+::: {.pf-step #s1}
+
+In a principal ideal domain, every nonzero prime ideal is maximal. Hence $\ZZ$ and $\RR[x]$ have no nonzero prime ideal that is not maximal.
+
+::: pf-proof
+
+Let $(p)\ne0$ be prime and let $(p)\subseteq(q)$. Then $p=qr$ for some $r$, so $p\mid q$ or $p\mid r$. If $p\mid q$, then $(q)=(p)$. If $p\mid r$, write $r=ps$; then $p=qps$, so $qs=1$ and $(q)$ is the whole ring. Both $\ZZ$ and $\RR[x]$ are principal ideal domains, because each has a division algorithm.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+The ideal $(x)$ of $\ZZ[x]$ is a nonzero prime ideal that is not maximal.
+
+::: pf-proof
+
+Evaluation at $0$ gives $\ZZ[x]/(x)\cong\ZZ$. This is an integral domain that is not a field, so $(x)$ is prime and not maximal.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+The ideal $(x)$ of $\RR[x,y]$ is a nonzero prime ideal that is not maximal.
+
+::: pf-proof
+
+Setting $x=0$ gives $\RR[x,y]/(x)\cong\RR[y]$. This is an integral domain that is not a field, because $y$ has no inverse.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} to [](#s3){.pf-ref} give the answer.
+
+:::
+
+:::
+
 :::

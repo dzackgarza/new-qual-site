@@ -5,7 +5,8 @@ kind: problem
 title: Evaluate $\int_{-\infty}^{\infty}\frac{e^{itx}}{e^x+e^{-x}}\,dx$ by a rectangular contour
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 ---
@@ -19,46 +20,72 @@ for $t > 0$.
 :::
 
 ::: {.solution}
-The integral converges absolutely, since the numerator has absolute value 1, while the denominator decays exponentially in both directions.
 
-Use a rectangular contour C bounded by $x = R , x = - R , y = 0$ and $y = \pi$ . As $R \to \infty$ the integrals along the vertical parts of the contour tend to 0, since
+The answer is $\dfrac{\pi}{e^{\pi t/2}+e^{-\pi t/2}}$.
 
+::: pf
+
+::: {.pf-step #s1}
+
+Let $g(z)=\dfrac{e^{itz}}{e^z+e^{-z}}$ and $I=\int_{-\infty}^\infty g(x)\,dx$. The integral converges absolutely.
+
+::: pf-proof
+
+For real $x$, $\abs{g(x)}=1/(e^x+e^{-x})\le e^{-\abs{x}}$.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+Let $C_R$ be the boundary of the rectangle with vertices $\pm R$ and $\pm R+\pi i$, oriented counterclockwise. Then $\oint_{C_R}g(z)\,dz=\pi e^{-\pi t/2}$.
+
+::: pf-proof
+
+The zeros of $e^z+e^{-z}=e^{-z}(e^{2z}+1)$ are the points $z=\frac{\pi i}2+k\pi i$, $k\in\ZZ$. Only $\frac{\pi i}2$ lies inside the rectangle. The zero is simple, and
 $$
-\abs{ \int _ { 0 } ^ { \pi } { \frac { e ^ { i t ( R + i y ) } } { e ^ { R + i y } + e ^ { - R - i y } } } d y } \leq \int _ { 0 } ^ { \pi } { \frac { 1 } { e ^ { R } - e ^ { - R } } } d y = { \frac { \pi } { e ^ { R } - e ^ { - R } } } .
+\operatorname{Res}_{z=\pi i/2}g=\frac{e^{it\cdot\pi i/2}}{e^{\pi i/2}-e^{-\pi i/2}}=\frac{e^{-\pi t/2}}{2i}.
+$$
+The residue theorem gives $2\pi i\cdot\frac{e^{-\pi t/2}}{2i}=\pi e^{-\pi t/2}$.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+The integrals over the vertical sides of $C_R$ tend to $0$ as $R\to\infty$.
+
+::: pf-proof
+
+For $z=\pm R+iy$ with $0\le y\le\pi$, $\abs{e^{itz}}=e^{-ty}\le1$ and $\abs{e^z+e^{-z}}\ge e^R-e^{-R}$. So each vertical integral is at most $\pi/(e^R-e^{-R})$.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+The integral over the top side, from $R+\pi i$ to $-R+\pi i$, equals $e^{-\pi t}\int_{-R}^Rg(x)\,dx$.
+
+::: pf-proof
+
+For $z=x+\pi i$, $e^{itz}=e^{-\pi t}e^{itx}$ and $e^z+e^{-z}=-(e^x+e^{-x})$. So the integral is $\int_R^{-R}\frac{e^{-\pi t}e^{itx}}{-(e^x+e^{-x})}\,dx=e^{-\pi t}\int_{-R}^Rg(x)\,dx$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Letting $R\to\infty$ and using steps [](#s1){.pf-ref} to [](#s4){.pf-ref}, $(1+e^{-\pi t})I=\pi e^{-\pi t/2}$. Hence
+$$
+I=\frac{\pi e^{-\pi t/2}}{1+e^{-\pi t}}=\frac{\pi}{e^{\pi t/2}+e^{-\pi t/2}}.
 $$
 
-The integral along the horizontal path $y = \pi$ equals
+:::
 
-$$
-\int _ { R } ^ { - R } \frac { e ^ { i t ( x + \pi i ) } } { e ^ { ( x + \pi i ) } + e ^ { - ( x + \pi i ) } } d x = \int _ { R } ^ { - R } \frac { e ^ { - \pi t } e ^ { i t x } } { - e ^ { x } - e ^ { - x } } d x = e ^ { - \pi t } \int _ { - R } ^ { R } \frac { e ^ { i t x } } { e ^ { x } + e ^ { - x } } d x .
-$$
+:::
 
-Let $I = \int_{-\infty}^{\infty} \frac{e^{itx}}{e^x+e^{-x}}\,dx$.
-Then
-
-$$
-\lim _ { R \to \infty } \oint _ { C } { \frac { e ^ { i t z } } { e ^ { z } + e ^ { - z } } } d z = ( 1 + e ^ { - \pi t } ) I .
-$$
-
-On the other hand,
-
-$$
-\oint _ { C } { \frac { e ^ { i t z } } { e ^ { z } + e ^ { - z } } } d z = 2 \pi i \operatorname { R e s } _ { \frac { \pi i } { 2 } } ,
-$$
-
-since the only singular point inside the contour is $\textstyle { \frac { \pi i } { 2 } }$ . Now
-
-$$
-\mathrm { R e s } _ { \frac { \pi i } { 2 } } = \frac { e ^ { - \frac { \pi t } { 2 } } } { 2 i } ,
-$$
-
-so
-
-$$
-\oint _ { C } { \frac { e ^ { i t z } } { e ^ { z } + e ^ { - z } } } d z = \pi e ^ { - { \frac { \pi t } { 2 } } } ,
-$$
-
-$$
-I = \pi \frac { e ^ { - \frac { \pi t } { 2 } } } { 1 + e ^ { - \pi t } } = \frac { \pi } { e ^ { \frac { \pi t } { 2 } } + e ^ { - \frac { \pi t } { 2 } } } .
-$$
 :::

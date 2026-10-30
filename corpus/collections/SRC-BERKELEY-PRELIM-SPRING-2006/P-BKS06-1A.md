@@ -5,7 +5,8 @@ kind: problem
 title: Basis of the kernel of $2x+3y+5z+7w$ on $\ZZ^4$ and its free quotient
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 ---
@@ -19,44 +20,80 @@ Let $G$ be the subgroup of the free abelian group $\ZZ^{4}$ consisting of all in
 :::
 
 ::: {.solution}
-(b) The linear map
 
+::: pf
+
+::: {.pf-step #s1}
+
+Let $\varphi:\ZZ^4\to\ZZ$ be $\varphi(x,y,z,w)=2x+3y+5z+7w$. Then $G=\ker\varphi$ and $\varphi$ is onto.
+
+::: pf-proof
+
+$G$ is the kernel by definition. Since $\varphi(-1,1,0,0)=1$, the image contains $1$, so it is $\ZZ$.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+$\ZZ^4/G\cong\ZZ$, a free abelian group of rank $1$.
+
+::: pf-proof
+
+This is the first isomorphism theorem applied to step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+Let
 $$
-\ZZ^4 \to \ZZ, \quad ( x , y , z , w ) \mapsto 2 x + 3 y + 5 z + 7 w
+U=\begin{pmatrix}
+7&9&15&-3\\
+0&1&0&0\\
+0&0&1&0\\
+-2&-3&-5&1
+\end{pmatrix}.
 $$
+Then $\begin{pmatrix}2&3&5&7\end{pmatrix}U=\begin{pmatrix}0&0&0&1\end{pmatrix}$ and $\det U=1$.
 
-has kernel G, and is onto because 2 and 3 are relatively prime.
-Hence $\ZZ ^ { 4 } / G$ is isomorphic to the image $\ZZ ,$ which is a free abelian group of rank 1.
+::: pf-proof
 
-(a) There is a sequence of elementary column operations over $\ZZ$ (not involving divisions) that transforms the 1 × 4-matrix $( 2 ~ \mathrm { ~ 3 ~ ~ 5 ~ ~ 7 ~ } )$ into $\left( \begin{array} { c c c c } { { 0 } } & { { 0 } } & { { 0 } } & { { 1 } } \end{array} \right)$ . For instance, subtract 3 times the first column from the fourth to get $\left( 2 \ \ \textrm { 3 } \ 5 \ \textrm { 1 } \right)$ , and then subtract appropriate multiples of the fourth from each of the first three columns to make them zero.
-The same sequence of operations applied to the $4 \times 4$ identity matrix eventually yields a matrix
+The four products are $14-14=0$, $18+3-21=0$, $30+5-35=0$ and $-6+7=1$. Expanding the determinant along the second and third rows gives $\det U=\det\begin{pmatrix}7&-3\\-2&1\end{pmatrix}=7-6=1$.
 
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+The first three columns
 $$
-U = \left( \begin{array} { l l l l } { { 7 } } & { { 9 } } & { { 1 5 } } & { { - 3 } } \\ { { 0 } } & { { 1 } } & { { 0 } } & { { 0 } } \\ { { 0 } } & { { 0 } } & { { 1 } } & { { 0 } } \\ { { - 2 } } & { { - 3 } } & { { - 5 } } & { { 1 } } \end{array} \right)
+u_1=(7,0,0,-2),\qquad u_2=(9,1,0,-3),\qquad u_3=(15,0,1,-5)
 $$
+of $U$ form a linearly independent subset of $G$ that generates $G$.
 
-such that
+::: pf-proof
 
+By step [](#s3){.pf-ref}, $\varphi(u_1)=\varphi(u_2)=\varphi(u_3)=0$, so $u_i\in G$. They are linearly independent because $\det U\ne0$. Since $\det U=1$, the matrix $U^{-1}$ has integer entries. Let $v\in G$ and put $(\alpha,\beta,\gamma,\delta)^T=U^{-1}v\in\ZZ^4$. By step [](#s3){.pf-ref},
 $$
-\left( 2 \phantom { 0 } 3 \phantom { 0 } 5 \phantom { 0 } 7 \right) U = \left( 0 \phantom { 0 } 0 \phantom { 0 } 0 \phantom { 0 } 1 \right) .
+0=\varphi(v)=\begin{pmatrix}2&3&5&7\end{pmatrix}U\,U^{-1}v=\begin{pmatrix}0&0&0&1\end{pmatrix}U^{-1}v=\delta.
 $$
+Hence $v=\alpha u_1+\beta u_2+\gamma u_3$ with $\alpha,\beta,\gamma\in\ZZ$.
 
-Because of the way U was constructed, it has an inverse $U ^ { - 1 }$ with integer entries.
+:::
 
-The first three columns of U are in G, and we claim that they span $G$ as an abelian group.
-Suppose $\mathbf { v } \in G$ . Then
+:::
 
-$$
-0 = \begin{pmatrix} 2 & 3 & 5 & 7 \end{pmatrix} \mathbf { v } = \begin{pmatrix} 0 & 0 & 0 & 1 \end{pmatrix} U ^ { - 1 } \mathbf { v } ,
-$$
+::: pf-qed
 
-so $U ^ { - 1 } \mathbf { v } = ( \alpha , \beta , \gamma , 0 )^{T}$ for some $\alpha , \beta , \gamma \in \ZZ$ . Thus
+Step [](#s4){.pf-ref} answers part (a), and step [](#s2){.pf-ref} answers part (b): $\ZZ^4/G$ is free of rank $1$.
 
-$$
-\mathbf { v } = U \left( \begin{array} { l } { \alpha } \\ { \beta } \\ { \gamma } \\ { 0 } \end{array} \right) ,
-$$
+:::
 
-which is an integer combination of the first three columns of $U$ .
+:::
 
-Finally these first three columns of U are linearly independent, since U is invertible.
 :::

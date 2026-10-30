@@ -5,7 +5,8 @@ kind: problem
 title: A non-cyclic finite $p$-group has at least $p+3$ subgroups
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 ---
@@ -16,15 +17,63 @@ Let $G$ be a finite non-cyclic group of order $p^{m}$ for some $m$. Prove that $
 :::
 
 ::: {.solution}
-We will use the following two facts:
 
-(i) A nontrivial p-group has a nontrivial center Z (nontrivial conjugacy classes have size divisible by $p ,$ as does the whole group, so {1} cannot be the only trivial one).
+::: pf
 
-(ii) If G is a group with center $Z$ , and $G / Z$ is cyclic, then G is abelian (since if $a \in G$ generates $G / Z$ , every element of $G$ is of the form $a ^ { n } z$ for some $n \in \ZZ$ and $z \in Z )$ We use induction on m.
+::: {.pf-step #s1}
 
-Suppose $m \le 2$ Since G has order 1, $p ,$ or $p ^ { 2 }$ , it is abelian (for order $p ^ { 2 }$ , combine (i) and (ii) above).
-Since it is not cyclic, we have $G \simeq \ZZ / p \ZZ \times \ZZ / p \ZZ$ . So G has one trivial subgroup, $( p ^ { 2 } - 1 ) / ( p - 1 ) = p + 1$ subgroups of order $p ,$ and G itself.
-Thus G has exactly $p + 3$ subgroups.
+A nontrivial finite $p$-group has a nontrivial center.
 
-Now suppose $m > 2$. By (i), the center $Z$ of G is nontrivial. If $G / Z$ is non-cyclic, then by the inductive hypothesis it has $\geq p + 3$ subgroups, and their inverse images in G are distinct subgroups of G. If $G / Z$ is cyclic, then G is abelian by (ii); but G is not cyclic, so by the structure theory of finite abelian groups, it must contain $\ZZ / p \ZZ \times \ZZ / p \ZZ$ , which already contains $p + 3$ subgroups.
+::: pf-proof
+
+By the class equation, $\abs{G}=\abs{Z(G)}+\sum\abs{G:C_G(x)}$, where the sum runs over representatives of the conjugacy classes of size greater than $1$. Each index in the sum is a positive power of $p$, and $p\mid\abs{G}$, so $p\mid\abs{Z(G)}$.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+If $G/Z(G)$ is cyclic, then $G$ is abelian.
+
+::: pf-proof
+
+Let $aZ(G)$ generate $G/Z(G)$. Then every element of $G$ is $a^nz$ with $n\in\ZZ$ and $z\in Z(G)$, and two such elements commute.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+A non-cyclic abelian $p$-group contains a subgroup isomorphic to $(\ZZ/p\ZZ)^2$, and $(\ZZ/p\ZZ)^2$ has exactly $p+3$ subgroups.
+
+::: pf-proof
+
+By the structure theorem, the group is $\prod_{i=1}^r\ZZ/p^{e_i}\ZZ$ with all $e_i\ge1$, and $r\ge2$ because it is not cyclic. The elements of order dividing $p$ form a subgroup isomorphic to $(\ZZ/p\ZZ)^r$, which contains $(\ZZ/p\ZZ)^2$. The subgroups of $(\ZZ/p\ZZ)^2$ are the trivial subgroup, the whole group, and the $(p^2-1)/(p-1)=p+1$ lines of the $\FF_p$-vector space $\FF_p^2$.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+Every non-cyclic group of order $p^m$ has at least $p+3$ subgroups.
+
+::: pf-proof
+
+Use strong induction on $m$. A group of order $1$ or $p$ is cyclic, so $m\ge2$. Let $Z=Z(G)$, which is nontrivial by step [](#s1){.pf-ref}. If $G/Z$ is cyclic, then $G$ is abelian by step [](#s2){.pf-ref}, and step [](#s3){.pf-ref} gives at least $p+3$ subgroups. If $G/Z$ is not cyclic, then $\abs{G/Z}=p^{m'}$ with $m'<m$, so by the induction hypothesis $G/Z$ has at least $p+3$ subgroups. Their inverse images under $G\to G/Z$ are distinct subgroups of $G$.
+
+:::
+
+:::
+
+::: pf-qed
+
+This is step [](#s4){.pf-ref}.
+
+:::
+
+:::
+
 :::

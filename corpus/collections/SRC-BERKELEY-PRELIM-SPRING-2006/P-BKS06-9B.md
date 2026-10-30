@@ -5,7 +5,8 @@ kind: problem
 title: Bounded divergent sequence with $\abs{2a_n-a_{n-1}-a_{n+1}}\le n^{-2}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 ---
@@ -19,51 +20,53 @@ for all $n \geq 2$.
 :::
 
 ::: {.solution}
-We will let $a _ { n } = f ( n )$ , where $f ( x )$ is a function similar to the sine function but with oscillations that slow down as $x \longrightarrow \infty .$ , so that $f ^ { \prime \prime } ( x ) \to 0$ . To be precise, we take
 
-$$
-f ( x ) : = { \frac { 1 } { 2 } } \sin ( \ln ( x + 1 ) ) .
-$$
+One example is $a_n=f(n)$ with $f(x)=\frac12\sin(\ln(x+1))$.
 
-This sequence is bounded.
-It also does not converge, since the spacing between values of ln n tends to zero, which means that the values of (ln n) mod (2π) are dense in [0, 2π].
+::: pf
 
-By Taylor’s theorem with remainder (centered at n),
+::: {.pf-step #s1}
 
-$$
-f ( n + 1 ) = f ( n ) + f ^ { \prime } ( n ) + { \frac { 1 } { 2 } } f ^ { \prime \prime } ( \xi _ { + } ) \quad { \mathrm { f o r ~ s o m e ~ } } \xi _ { + } \in ( n , n + 1 ) , { \mathrm { ~ a n d ~ } }
-$$
+The sequence $(a_n)$ is bounded and does not converge.
 
-$$
-f ( n - 1 ) = f ( n ) - f ^ { \prime } ( n ) + { \frac { 1 } { 2 } } f ^ { \prime \prime } ( \xi _ { - } ) \quad \mathrm { f o r ~ s o m e ~ } \xi _ { - } \in ( n - 1 , n ) , \mathrm { ~ s o } ,
-$$
+::: pf-proof
 
-$$
-\abs{ 2 f ( n ) - f ( n - 1 ) - f ( n + 1 ) } = { \frac { 1 } { 2 } } \abs{ f ^ { \prime \prime } ( \xi _ { + } ) + f ^ { \prime \prime } ( \xi _ { - } ) } = \abs{ f ^ { \prime \prime } ( \xi ) } \quad { \mathrm { f o r ~ s o m e ~ } } \xi \in [ \xi _ { - } , \xi _ { + } ] \subseteq ( n - 1 , n + 1 )
-$$
+$\abs{a_n}\le\frac12$. The numbers $\ln(n+1)$ tend to $\infty$, with increments $\ln\frac{n+2}{n+1}\le\frac1{n+1}<1$. Each interval $[2\pi k+\frac\pi3,2\pi k+\frac{2\pi}3]$ and $[2\pi k+\frac{4\pi}3,2\pi k+\frac{5\pi}3]$ has length $\frac\pi3>1$, so for every large $k$ it contains some $\ln(n+1)$. Hence $a_n\ge\frac{\sqrt3}4$ for infinitely many $n$ and $a_n\le-\frac{\sqrt3}4$ for infinitely many $n$.
 
-by the intermediate value theorem.
-We compute
+:::
 
-$$
-f ^ { \prime } ( x ) = { \frac { 1 } { 2 ( x + 1 ) } } \cos ( \ln ( x + 1 ) )
-$$
+:::
 
-$$
-f ^ { \prime \prime } ( x ) = - \frac { 1 } { 2 ( x + 1 ) ^ { 2 } } \left( \cos ( \ln ( x + 1 ) ) + \sin ( \ln ( x + 1 ) ) \right) ,
-$$
+::: {.pf-step #s2}
 
-$$
-\abs{ f ^ { \prime \prime } ( x ) } \leq { \frac { 1 } { ( x + 1 ) ^ { 2 } } }
-$$
+For $n\ge2$, $2a_n-a_{n-1}-a_{n+1}=-f''(\xi)$ for some $\xi\in(n-1,n+1)$.
 
-$$
-\abs{ f ^ { \prime \prime } ( \xi ) } \leq \frac { 1 } { ( \xi + 1 ) ^ { 2 } } \leq \frac { 1 } { n ^ { 2 } } .
-$$
+::: pf-proof
 
-so
+Taylor's theorem gives $f(n\pm1)=f(n)\pm f'(n)+\frac12f''(\xi_\pm)$ with $\xi_+\in(n,n+1)$ and $\xi_-\in(n-1,n)$. Adding, $2a_n-a_{n-1}-a_{n+1}=-\frac12(f''(\xi_+)+f''(\xi_-))$. The average of $f''(\xi_+)$ and $f''(\xi_-)$ is a value $f''(\xi)$ with $\xi$ between them, by the intermediate value theorem.
 
-$$
-\abs{ 2 a _ { n } - a _ { n - 1 } - a _ { n + 1 } } = \abs{ f ^ { \prime \prime } ( \xi ) } \leq n ^ { - 2 } .
-$$
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+For $x>-1$, $\abs{f''(x)}\le(x+1)^{-2}$.
+
+::: pf-proof
+
+$f'(x)=\frac{\cos(\ln(x+1))}{2(x+1)}$ and $f''(x)=-\frac{\cos(\ln(x+1))+\sin(\ln(x+1))}{2(x+1)^2}$, and $\abs{\cos\theta+\sin\theta}\le\sqrt2<2$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, $\abs{2a_n-a_{n-1}-a_{n+1}}\le(\xi+1)^{-2}<n^{-2}$, because $\xi>n-1$. With step [](#s1){.pf-ref}, this sequence has the required properties.
+
+:::
+
+:::
+
 :::

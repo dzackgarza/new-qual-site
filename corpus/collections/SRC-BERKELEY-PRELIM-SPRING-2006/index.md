@@ -11,7 +11,6 @@ review: draft
 completion: complete
 provenance:
 - assets/attachments/s06.pdf
-- assets/attachments/s06solution.pdf
 source:
   source_kind: university-exam
   institution: berkeley

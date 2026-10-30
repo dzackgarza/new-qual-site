@@ -5,7 +5,8 @@ kind: problem
 title: Values of $c$ for which $f''-cf'+16f=0$, $f(0)=f(1)=1$ has no solution
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 ---
@@ -19,42 +20,81 @@ has no solution.
 :::
 
 ::: {.solution}
-First suppose that the characteristic equation $x ^ { 2 } - c x + 1 6 = 0$ has a repeated root.
-This happens when $c = \pm 8$ . If $c = 8$ , the repeated root is 4, and the general solution to the differential equation without boundary conditions has the form
 
+The answer is $c=\pm\sqrt{64-4\pi^2}$.
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $c=\pm8$, the problem has a solution.
+
+::: pf-proof
+
+Then $x^2-cx+16$ has the double root $r=c/2=\pm4$, and the solutions are $f(t)=(at+b)e^{rt}$. The conditions $f(0)=1$, $f(1)=1$ read $b=1$ and $(a+1)e^{r}=1$, which hold for $a=e^{-r}-1$.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+If $c\ne\pm8$, let $\alpha\ne\beta$ be the complex roots of $x^2-cx+16$. The problem has a solution if and only if the system
 $$
-f ( t ) = ( a t + b ) e ^ { 4 t } .
+a+b=1,\qquad ae^{\alpha}+be^{\beta}=1
 $$
+has a solution $(a,b)\in\CC^2$.
 
-The boundary conditions impose
+::: pf-proof
 
-$$
-\begin{array} { r } { b = 1 } \\ { ( a + b ) e ^ { 4 } = 1 , } \end{array}
-$$
+The complex solutions of the equation are $f(t)=ae^{\alpha t}+be^{\beta t}$, and the boundary conditions are the displayed system. If a complex solution $f$ exists, then $\operatorname{Re}f$ is a real solution with the same real boundary values, because the equation has real coefficients. A real solution is a complex solution.
 
-and this system has a solution.
-Similarly, there is a solution in the case $c = - 8$
+:::
 
-From now on, we suppose that the complex roots $\alpha , \beta$ of $x ^ { 2 } - c x + 1 6 = 0$ are distinct.
-Then the general solution is
+:::
 
-$$
-f ( t ) = a e ^ { \alpha t } + b e ^ { \beta t } ,
-$$
+::: {.pf-step #s3}
 
-where a, $b \in \CC$ , and the boundary conditions impose
+If $e^{\alpha}\ne e^{\beta}$, the system of step [](#s2){.pf-ref} has a solution.
 
-$$
-\begin{array} { r } { a + b = 1 } \\ { a e ^ { \alpha } + b e ^ { \beta } = 1 . } \end{array}\tag{1}
-$$
+::: pf-proof
 
-This system is guaranteed to have a solution if $e ^ { \alpha } \neq e ^ { \beta }$ . So assume $e ^ { \alpha } = e ^ { \beta }$ . Then $\alpha - \beta = 2 \pi i k$ for some $k \in \ZZ$ . By interchanging $\alpha , \beta ,$ , we may assume $k > 0$ . On the other hand, by the quadratic formula,
+Its determinant is $e^{\beta}-e^{\alpha}\ne0$.
 
-$$
-( \alpha - \beta ) ^ { 2 } = c ^ { 2 } - 6 4 .
-$$
+:::
 
-Thus $4 \pi ^ { 2 } k ^ { 2 } = 6 4 - c ^ { 2 } \leq 6 4$ . The only possibility is $k = 1$ , which leads to $c = \pm { \sqrt { 6 4 - 4 \pi ^ { 2 } } }$ In this case $e ^ { \alpha } = e ^ { \beta }$ , but the common value is not 1, since $e ^ { \alpha } e ^ { \beta } = e ^ { \alpha + \beta } = e ^ { c } \neq e ^ { 0 } = 1$ . So the system (1) has no solution.
+:::
 
-Thus the set of values c for which the differential equation with boundary conditions has no solution is $\{ \pm { \sqrt { 6 4 - 4 \pi ^ { 2 } } } \}$
+::: {.pf-step #s4}
+
+If $e^{\alpha}=e^{\beta}$, the system of step [](#s2){.pf-ref} has no solution.
+
+::: pf-proof
+
+The system then forces $(a+b)e^{\alpha}=1$ with $a+b=1$, so $e^{\alpha}=1=e^{\beta}$. Then $e^{c}=e^{\alpha+\beta}=1$, so $c=0$. For $c=0$ the roots are $\pm4i$, and $e^{4i}\ne e^{-4i}$ because $\sin4\ne0$. This contradicts $e^{\alpha}=e^{\beta}$.
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+For $c\ne\pm8$, $e^{\alpha}=e^{\beta}$ if and only if $c=\pm\sqrt{64-4\pi^2}$.
+
+::: pf-proof
+
+$e^{\alpha}=e^{\beta}$ means $\alpha-\beta=2\pi ik$ for a nonzero integer $k$, and we may take $k>0$. Since $(\alpha-\beta)^2=c^2-64$, this means $c^2=64-4\pi^2k^2$. A real $c$ exists only when $4\pi^2k^2\le64$, that is $k=1$, because $4\pi^2<64<16\pi^2$. Conversely, for $c=\pm\sqrt{64-4\pi^2}$ the roots are $c/2\pm\pi i$, whose difference is $2\pi i$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By steps [](#s1){.pf-ref} to [](#s5){.pf-ref}, the problem has no solution exactly when $c=\pm\sqrt{64-4\pi^2}$.
+
+:::
+
+:::
+
 :::

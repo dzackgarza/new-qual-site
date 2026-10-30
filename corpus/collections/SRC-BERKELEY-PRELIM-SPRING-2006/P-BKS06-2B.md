@@ -5,7 +5,8 @@ kind: problem
 title: Number of irreducible polynomials of prime degree over $\FF_2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 ---
@@ -17,14 +18,39 @@ Show that there are exactly $(2^{n} - 2)/n$ degree-$n$ irreducible polynomials i
 :::
 
 ::: {.solution}
-There is a unique field extension $\FF _ { 2 ^ { n } }$ of degree n over $\FF _ { 2 }$ . It is Galois over $\FF _ { 2 }$ (this is because it is a splitting field for the separable polynomial $x ^ { 2 ^ { n } } - x$). If $a \in \FF _ { 2 ^ { n } } - \FF _ { 2 }$ then $\FF _ { 2 } ( a )$ is a subfield of $\FF _ { 2 ^ { n } }$ of degree dividing n but not equal to 1, so $\FF _ { 2 } ( a ) = \FF _ { 2 ^ { n } }$ . Hence the minimal polynomial $f _ { a }$ of a over $\FF _ { 2 }$ is an irreducible polynomial of degree n over $\FF _ { 2 }$ Thus we have a map
 
-$$
-\begin{array} { l } { { ( \FF _ { 2 ^ { n } } - \FF _ { 2 } ) \longrightarrow \{ \mathrm { d e g r e e } { - } n \mathrm { ~ i r r e d u c i b l e ~ p o l y n o m i a l s ~ i n ~ } \FF _ { 2 } [ x ] \} } } \\ { { a \longmapsto f _ { a } . } } \end{array}
-$$
+::: pf
 
-On the other hand, if $f \in \FF _ { 2 } [ x ]$ is any degree-n irreducible polynomial, then f has a zero in $\FF _ { 2 ^ { n } }$ (since $\FF _ { 2 ^ { n } }$ is the unique degree-n extension of $\FF _ { 2 } )$ and it follows that f has n distinct zeros in $\FF _ { 2 ^ { n } }$ (since $\FF _ { 2 ^ { n } }$ is Galois over $\FF _ { 2 } )$ . Moreover, f is automatically monic (the only nonzero element of $\FF _ { 2 }$ is 1) so it is the minimal polynomial of each of its zeros.
-Thus our map is n-to-1.
+::: {.pf-step #s1}
 
-Its domain has size $2 ^ { n } - 2 .$ , so its range has size $( 2 ^ { n } - 2 ) / n$
+Let $K=\FF_{2^n}$. Every $a\in K-\FF_2$ has a minimal polynomial over $\FF_2$ that is irreducible of degree $n$.
+
+::: pf-proof
+
+The degree $[\FF_2(a):\FF_2]$ divides $[K:\FF_2]=n$ and is not $1$. Since $n$ is prime, it is $n$.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+Every irreducible $f\in\FF_2[x]$ of degree $n$ is the minimal polynomial of exactly $n$ elements of $K-\FF_2$.
+
+::: pf-proof
+
+The field $\FF_2[x]/(f)$ has $2^n$ elements, so it is isomorphic to $K$, and $f$ has a root in $K$. The extension $K/\FF_2$ is normal, because $K$ is the splitting field of $x^{2^n}-x$, so $f$ splits in $K$. It has $n$ distinct roots because $K/\FF_2$ is separable. The roots are not in $\FF_2$ because $n\ge2$ and $f$ is irreducible. The polynomial $f$ is monic, because $1$ is the only nonzero element of $\FF_2$, so it is the minimal polynomial of each of its roots, and of no other element.
+
+:::
+
+:::
+
+::: pf-qed
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the map that sends $a\in K-\FF_2$ to its minimal polynomial is onto the set of irreducible polynomials of degree $n$, and each fiber has $n$ elements. Since $\abs{K-\FF_2}=2^n-2$, there are exactly $(2^n-2)/n$ such polynomials.
+
+:::
+
+:::
+
 :::

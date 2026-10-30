@@ -5,7 +5,8 @@ kind: problem
 title: Bounded quadratic variation implies at most countably many discontinuities
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 ---
@@ -19,41 +20,43 @@ for all finite increasing sequences $x_{1} < x_{2} < \cdots < x_{N}$. Show that 
 :::
 
 ::: {.solution}
-Let A be the set of points of discontinuity for u. Then
 
-$$
-A = \bigcup _ { n \geq 1 } A _ { n }
-$$
+::: pf
 
-where
+::: {.pf-step #s1}
 
-$$
-A _ { n } = \{ x \in \RR : \abs{ \operatorname* { l i m } _ { y \to x } \operatorname* { s u p } u ( y ) - \operatorname* { l i m } _ { y \to x } \operatorname* { i n f } u ( y ) } > \frac { 1 } { n } \}
-$$
+For $m\ge1$, let $D_m$ be the set of points $x$ such that every interval $(x-\delta,x+\delta)$ contains points $y<z$ with $\abs{u(z)-u(y)}>\frac1m$. Then the set of discontinuities of $u$ is contained in $\bigcup_{m\ge1}D_m$.
 
-To prove that A is countable, we will prove that
+::: pf-proof
 
-$$
-\cardinality{ A _ { n } } \leq 4 n ^ { 2 } B .
-$$
+Let $u$ be discontinuous at $x$. Then there are $\varepsilon>0$ and points $x_n\to x$, $x_n\ne x$, with $\abs{u(x_n)-u(x)}>\varepsilon$. Choose $m$ with $\frac1m<\varepsilon$. Every interval around $x$ contains some $x_n$, and the pair $\{x,x_n\}$, put in increasing order, has the property that defines $D_m$. So $x\in D_m$.
 
-If $y _ { 1 } < y _ { 2 } < \dots < y _ { N }$ are in $A _ { n }$ then we can choose a strictly increasing sequence $( x _ { k } ) _ { k = 1 } ^ { 2 N }$ such that
+:::
 
-$$
-x _ { 2 k - 1 } < y _ { k } < x _ { 2 k }
-$$
+:::
 
-and
+::: {.pf-step #s2}
 
-$$
-\abs{ u ( x _ { 2 k } ) - u ( x _ { 2 k - 1 } ) } > \frac { 1 } { 2 n }
-$$
+Each $D_m$ has at most $Bm^2$ points.
 
-for $k = 1 , \ldots , N$ . Summing over k gives the inequality on the right in
+::: pf-proof
 
+Let $x_1<\cdots<x_k$ be points of $D_m$. Choose disjoint open intervals $I_1,\ldots,I_k$ around them, with every point of $I_i$ less than every point of $I_{i+1}$. In each $I_i$ choose $y_i<z_i$ with $\abs{u(z_i)-u(y_i)}>\frac1m$. Then $y_1<z_1<y_2<z_2<\cdots<y_k<z_k$ is an increasing sequence, and by the hypothesis
 $$
-B \geq \sum _ { k = 1 } ^ { 2 N - 1 } \abs{ u ( x _ { k + 1 } ) - u ( x _ { k } ) } ^ { 2 } \geq \sum _ { k = 1 } ^ { N } \abs{ u ( x _ { 2 k } ) - u ( x _ { 2 k - 1 } ) } ^ { 2 } \geq N \left( \frac { 1 } { 2 n } \right) ^ { 2 } .
+\frac{k}{m^2}<\sum_{i=1}^k\abs{u(z_i)-u(y_i)}^2\le B,
 $$
+because the sum on the left is part of the sum of squared increments along this sequence. So $k<Bm^2$.
 
-Hence $N \leq 4 n ^ { 2 } B .$ , which concludes the proof.
+:::
+
+:::
+
+::: pf-qed
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the discontinuities of $u$ lie in a countable union of finite sets, so they are at most countable.
+
+:::
+
+:::
+
 :::

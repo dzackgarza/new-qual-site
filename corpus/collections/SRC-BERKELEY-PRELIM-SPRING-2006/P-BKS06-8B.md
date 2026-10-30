@@ -5,7 +5,8 @@ kind: problem
 title: A complex matrix with $\inner{x}{Ax}$ real for all $x$ is Hermitian
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 ---
@@ -17,13 +18,39 @@ Suppose $\langle x, Ax \rangle$ is real for all $x \in \CC^{n}$. Prove that $A$ 
 :::
 
 ::: {.solution}
-We have $\langle x , A x \rangle = x ^ { H } A x = { \overline { { x ^ { H } A x } } }$ (since $x ^ { H } A x$ is real) $= ( x ^ { H } A x ) ^ { H } = x ^ { H } A ^ { H } x$. Thus $x ^ { H } A x = x ^ { H } A ^ { H } x$ . So $x ^ { H } ( A - A ^ { H } ) x = 0$ for all $x \in \CC ^ { n }$ . Let $B = A - A ^ { H }$ . We have
 
-$$
-x ^ { H } B x = 0\tag{∗}
-$$
+::: pf
 
-for all $x \in \CC ^ { n }$ and $B ^ { H } = A ^ { H } - A = - B$ , so B is skew-Hermitian (hence normal).
-Let x be an eigenvector of B with the eigenvalue λ, so $B x = \lambda x$. Then $0 = x ^ { H } B x$ (by (∗)) $= \lambda x ^ { H } x = \lambda \norm{ x } ^ { 2 }$. This gives $\lambda = 0$. Thus all eigenvalues of B are zero.
-Being normal, B is diagonalizable, so $B = 0$ . By definition of B, we get $A = A ^ { H }$ . Thus A is Hermitian.
+::: {.pf-step #s1}
+
+Let $B=A-A^H$. Then $x^HBx=0$ for every $x\in\CC^n$.
+
+::: pf-proof
+
+Since $x^HAx$ is real, $x^HAx=\overline{x^HAx}=(x^HAx)^H=x^HA^Hx$.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+$B=0$.
+
+::: pf-proof
+
+$B^H=-B$, so $B$ is normal, and by the spectral theorem $B=UDU^H$ with $U$ unitary and $D$ diagonal. If $Bx=\lambda x$ with $x\ne0$, step [](#s1){.pf-ref} gives $0=x^HBx=\lambda\norm{x}^2$, so $\lambda=0$. Hence $D=0$ and $B=0$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By step [](#s2){.pf-ref}, $A=A^H$, so $A$ is Hermitian.
+
+:::
+
+:::
+
 :::

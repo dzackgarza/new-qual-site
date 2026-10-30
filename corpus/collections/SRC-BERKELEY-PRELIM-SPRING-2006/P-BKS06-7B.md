@@ -5,7 +5,8 @@ kind: problem
 title: Sharp bound $\abs{f^{(m)}(0)}\le m!e^m/m^m$ for entire $f$ with $\abs{f(z)}\le e^{\abs{z}}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 ---
@@ -25,23 +26,67 @@ $$
 :::
 
 ::: {.solution}
-(a) Write $\begin{array} { r } { f ( z ) = \sum _ { n \geq 0 } a _ { n } z ^ { n } } \end{array}$ with $a _ { n } \in \CC$ . Then $a _ { m }$ is the coefficient of $z ^ { - 1 }$ in the Laurent series of $f ( z ) / z ^ { m + 1 }$ , so
 
-$$
-a _ { m } = \frac { 1 } { 2 \pi i } \int _ { \abs{ z } = R } \frac { f ( z ) } { z ^ { m } } \frac { d z } { z } ,
-$$
+::: pf
 
-for any $R > 0$ , and we get
+::: {.pf-step #s1}
 
-$$
-\abs{ a _ { m } } \leq \frac { 1 } { 2 \pi } \left( \frac { e ^ { R } } { R ^ { m } } \right) \frac { 2 \pi R } { R } = \frac { e ^ { R } } { R ^ { m } } .
-$$
+For every $R>0$, $\abs{f^{(m)}(0)}\le m!\,e^R/R^m$.
 
-Taking $R = m$ (which calculus shows minimizes the right hand side) and multiplying by m! gives
+::: pf-proof
 
+By the Cauchy integral formula,
 $$
-\abs{ f ^ { ( m ) } ( 0 ) } = \abs{ m ! a _ { m } } \leq \frac { m ! e ^ { m } } { m ^ { m } } .
+\frac{f^{(m)}(0)}{m!}=\frac1{2\pi i}\oint_{\abs{z}=R}\frac{f(z)}{z^{m+1}}\,dz,
 $$
+and the integrand has modulus at most $e^R/R^{m+1}$ on a circle of length $2\pi R$.
 
-(b) Examining the proof of part (a) shows also that in order to have equality, $\frac { f ( z ) } { z ^ { m } }$ must have constant modulus $e ^ { m } / m ^ { m }$ and constant argument on the circle $\abs{ z } = m$ . Thus we guess $\begin{array} { r } { f ( z ) = \frac { e ^ { m } } { m ^ { m } } z ^ { m } } \end{array}$ , and it remains to prove that $\abs{ f ( z ) } \leq e ^ { \abs{ z } }$ for all $z \in \CC$ . Equivalently, we must show that the minimum value of $e ^ { x } / x ^ { m }$ on $( 0 , \infty )$ is $e ^ { m } / m ^ { m }$ . This can be seen by observing that the only zero of the derivative of $\log ( e ^ { x } / x ^ { m } ) = x - m \log x$ is at $x = m$ , while the second derivative is positive everywhere (it is $m / x ^ { 2 }$).
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+On $(0,\infty)$, the function $h(x)=e^x/x^m$ has minimum value $e^m/m^m$, taken at $x=m$.
+
+::: pf-proof
+
+$\frac{d}{dx}\log h(x)=1-\frac mx$ is negative for $x<m$ and positive for $x>m$.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+Part (a) holds.
+
+::: pf-proof
+
+Take $R=m$ in step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+The function $f(z)=\dfrac{e^m}{m^m}z^m$ satisfies part (b).
+
+::: pf-proof
+
+$f^{(m)}(0)=m!\,e^m/m^m$. For $z\ne0$, step [](#s2){.pf-ref} gives $\abs{f(z)}=\frac{e^m}{m^m}\abs{z}^m\le\frac{e^{\abs{z}}}{\abs{z}^m}\abs{z}^m=e^{\abs{z}}$, and $\abs{f(0)}=0\le1$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} prove parts (a) and (b).
+
+:::
+
+:::
+
 :::

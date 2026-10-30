@@ -5,7 +5,8 @@ kind: problem
 title: Elements of $\operatorname{SL}(2,\RR)$ without real eigenvalues are conjugate to rotations
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 ---
@@ -16,10 +17,55 @@ Show that there exists $B \in \SL(2, \RR)$ such that $B A B^{-1}$ equals a rotat
 :::
 
 ::: {.solution}
-Since the eigenvalues of A are solutions to a real quadratic equation, they are complex conjugates of each other, call them $\lambda$ and $\bar\lambda$. Since $\det ( A ) = 1$ , it follows that $\lambda \overline { { \lambda } } = 1$ , i.e. λ and $\bar { \lambda }$ are on the unit circle.
-Write $\lambda = \cos \theta + i \sin \theta$. Pick a nonzero eigenvector $z \in \CC ^ { 2 }$ with $A z = \lambda z$ . Write $z = v + i w$ with $v , w \in \RR ^ { 2 }$ Taking the real and imaginary parts of the equation $A z = \lambda z$ gives the equations $A v = ( \cos \theta ) v - ( \sin \theta ) w$ , $A w = ( \sin \theta ) v + ( \cos \theta ) w$ Note also that $A ( v - i w ) = \overline { { { \lambda } } } ( v - i w )$ and $\lambda \neq { \overline { { \lambda } } } .$ , so $v + i w$ and $v - i w$ are linearly independent over $\CC$, so $v$ and $w$ are linearly independent over $\RR$. Replacing $z$ by $\bar z$ and $\theta$ by $-\theta$ if necessary, which replaces $w$ by $-w$, we may assume that the matrix $(v \; w)$ with columns $v, w$ has $d = \det(v \; w) > 0$. Let $B = \sqrt{d}\,(v \; w)^{-1}$. Then $\det B = d \cdot d^{-1} = 1$, so $B \in \mathrm { S L } ( 2 , \RR )$, and $B v = \sqrt d\, e_1$, $B w = \sqrt d\, e_2$. Hence
+
+::: pf
+
+::: {.pf-step #s1}
+
+The eigenvalues of $A$ are $e^{\pm i\theta}$ for some $\theta\in\RR$ with $\sin\theta\ne0$.
+
+::: pf-proof
+
+The characteristic polynomial of $A$ is real, so its roots are $\lambda$ and $\bar\lambda$, and $\lambda\notin\RR$ by hypothesis. Then $\abs{\lambda}^2=\lambda\bar\lambda=\det A=1$, so $\lambda=e^{i\theta}$ with $\sin\theta\ne0$.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+Let $v=a+ib$, with $a,b\in\RR^2$, be an eigenvector of $A$ for $e^{i\theta}$, and let $C$ be the matrix with columns $b$ and $a$. Then $C$ is invertible and $AC=CR_\theta$, where $R_\theta=\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}$.
+
+::: pf-proof
+
+Comparing real and imaginary parts of $A(a+ib)=(\cos\theta+i\sin\theta)(a+ib)$ gives
 $$
-B A B ^ { - 1 } = \begin{pmatrix} \cos \theta & \sin \theta \\ - \sin \theta & \cos \theta \end{pmatrix} ,
+Ab=(\cos\theta)\,b+(\sin\theta)\,a,\qquad Aa=(-\sin\theta)\,b+(\cos\theta)\,a,
 $$
-which is the rotation matrix for the angle $- \theta$.
+which is $AC=CR_\theta$ column by column. If $a$ and $b$ were linearly dependent over $\RR$, then $v=cw$ for some $c\in\CC$ and a real vector $w\ne0$, and $Aw=e^{i\theta}w$ with $Aw$ real would force $e^{i\theta}\in\RR$, contradicting step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+We may take $d=\det C>0$.
+
+::: pf-proof
+
+If $d<0$, replace $\theta$ by $-\theta$ and $v$ by $\bar v=a-ib$, which is an eigenvector for $e^{-i\theta}$. The columns become $-b$ and $a$, and the determinant becomes $-d>0$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Put $B=\sqrt d\,C^{-1}$. Then $\det B=d\cdot d^{-1}=1$, so $B\in\SL(2,\RR)$, and by step [](#s2){.pf-ref}, $BAB^{-1}=C^{-1}AC=R_\theta$.
+
+:::
+
+:::
+
 :::

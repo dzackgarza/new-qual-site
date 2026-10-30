@@ -5,7 +5,8 @@ kind: problem
 title: A holomorphic function on the disk injective off the origin is injective
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 ---
@@ -16,7 +17,39 @@ Prove that $f$ is injective.
 :::
 
 ::: {.solution}
-Suppose on the contrary that there is $a \in D - \{ 0 \}$ such that $f ( a ) = f ( 0 )$ . Let α be the common value.
-Choose disjoint open disks $D _ { 0 }$ and $D _ { a }$ contained in D, centered at 0 and a, respectively.
-By the Open Mapping Theorem $f ( D _ { 0 } )$ and $f ( D _ { a } )$ are open subsets of C containing α. Hence $G : = f ( D _ { 0 } ) \cap f ( D _ { a } )$ is a nonempty open subset of C. Choose $\xi \in G$ with $\xi \neq \alpha$ . Then there exist $z _ { 0 } \in D _ { 0 }$ and $z _ { a } \in D _ { a }$ such that $f ( z _ { 0 } ) = f ( z _ { a } ) = \xi$ . Since $\xi \neq \alpha$ , neither $z _ { 0 }$ nor $z _ { a }$ is 0. This contradicts the injectivity of f restricted to $D - \{ 0 \}$
+
+::: pf
+
+::: {.pf-step #s1}
+
+$f$ is not constant.
+
+::: pf-proof
+
+$D-\{0\}$ has more than one point, and $f$ is injective on it.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+There is no $a\in D-\{0\}$ with $f(a)=f(0)$.
+
+::: pf-proof
+
+Suppose there is such an $a$, and let $\alpha=f(0)=f(a)$. Choose disjoint open disks $D_0$ and $D_a$ in $D$, centered at $0$ and $a$. By step [](#s1){.pf-ref} and the open mapping theorem, $f(D_0)$ and $f(D_a)$ are open sets that contain $\alpha$, so $G=f(D_0)\cap f(D_a)$ is an open neighborhood of $\alpha$. Choose $\xi\in G$ with $\xi\ne\alpha$, and choose $z_0\in D_0$ and $z_a\in D_a$ with $f(z_0)=f(z_a)=\xi$. Since $\xi\ne\alpha=f(0)$, neither point is $0$, and $z_0\ne z_a$ because the disks are disjoint. This contradicts the injectivity of $f$ on $D-\{0\}$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Two distinct points of $D$ are either both in $D-\{0\}$, where $f$ is injective, or one of them is $0$, which step [](#s2){.pf-ref} handles. So $f$ is injective.
+
+:::
+
+:::
+
 :::
