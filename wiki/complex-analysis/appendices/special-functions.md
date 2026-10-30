@@ -61,7 +61,7 @@ The residues:
 
 [[D-2WZLB]]
 
-[[E-I6CYR]]
+[[E-SS6.EX-7]]
 
 ## The Riemann zeta function
 
