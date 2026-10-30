@@ -12,10 +12,15 @@ classification:
   - Character Theory
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The exam prints A^(1,4); under its own decreasing convention this is A^(4,1).
 ---
 
 ::: {.problem}
-As on the exam: if $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_k)$ is a partition of $n$, let $A^\lambda$ denote the irreducible representation of the symmetric group $S_n$ such that the Frobenius image of $\chi^{A^\lambda}=\chi^\lambda$ is the Schur function $S_\lambda(x_1,\ldots,x_N)$ where $N>n$.
+If $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_k)$ is a partition of $n$, let $A^\lambda$ denote the irreducible representation of the symmetric group $S_n$ such that the Frobenius image of $\chi^{A^\lambda}=\chi^\lambda$ is the Schur function $S_\lambda(x_1,\ldots,x_N)$ where $N>n$.
 
 (a) Use the Murnaghan–Nakayama rule to compute the value of the irreducible characters of $S_5$ at the conjugacy class indexed by the partition $(2,3)$.
 

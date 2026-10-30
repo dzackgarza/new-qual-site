@@ -11,10 +11,17 @@ classification:
   - Symmetric Functions
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The exam prints A^(1,1,2) x A^(1,2), induction to S_8, and S_4 x S_4 in part (b) and
+    the note; the statement uses A^(2,1,1) x A^(2,1), S_7 and S_4 x S_3, matching the decreasing
+    convention and the displayed subgroup.
 ---
 
 ::: {.problem}
-As on the exam: if $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_k)$ is a partition of $n$, let $A^\lambda$ denote the irreducible representation of the symmetric group $S_n$ such that the Frobenius image of $\chi^{A^\lambda}=\chi^\lambda$ is the Schur function $S_\lambda(x_1,\ldots,x_N)$ where $N>n$.
+If $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_k)$ is a partition of $n$, let $A^\lambda$ denote the irreducible representation of the symmetric group $S_n$ such that the Frobenius image of $\chi^{A^\lambda}=\chi^\lambda$ is the Schur function $S_\lambda(x_1,\ldots,x_N)$ where $N>n$.
 
 (a) Let $A^{(2,1,1)}\times A^{(2,1)}$ denote the representation of $S_4\times S_3$ such that for all $(\sigma,\tau)\in S_4\times S_3$
 $$
@@ -27,14 +34,14 @@ $$
 $$
 as a sum of irreducible representations of $S_7$.
 
-(b) Show that $\{A^\lambda\times A^\mu:\lambda\vdash 4\text{ and }\mu\vdash 3\}$ is a complete set of representatives of the irreducible representations of $S_4\times S_4$ where
+(b) Show that $\{A^\lambda\times A^\mu:\lambda\vdash 4\text{ and }\mu\vdash 3\}$ is a complete set of representatives of the irreducible representations of $S_4\times S_3$ where
 $$
 \bigl(A^\lambda\times A^\mu\bigr)(\sigma,\tau)=A^\lambda(\sigma)\otimes A^\mu(\tau).
 $$
 
 Note: For parts (a) and (b) above, regard $S_4\times S_3$ as a subgroup of $S_7$ by letting
 $$
-S_4\times S_4=\{\sigma\in S_7:\sigma(1),\sigma(2),\sigma(3),\sigma(4)\in\{1,2,3,4\},\ \sigma(5),\sigma(6),\sigma(7)\in\{5,6,7\}\}.
+S_4\times S_3=\{\sigma\in S_7:\sigma(1),\sigma(2),\sigma(3),\sigma(4)\in\{1,2,3,4\},\ \sigma(5),\sigma(6),\sigma(7)\in\{5,6,7\}\}.
 $$
 
 (c) Let $T$ denote the trivial representation.
@@ -49,8 +56,6 @@ $$
 :::
 
 ::: {.solution}
-The source contains three forced notation corrections: under its decreasing-partition convention, $(1,1,2)$ and $(1,2)$ mean $(2,1,1)$ and $(2,1)$, and the product group in part (b) and the displayed embedding is $S_4\times S_3$.
-
 For (a), Frobenius characteristic converts induction from a Young subgroup into multiplication of Schur functions:
 $$
 \operatorname{ch}\operatorname{Ind}_{S_4\times S_3}^{S_7}
