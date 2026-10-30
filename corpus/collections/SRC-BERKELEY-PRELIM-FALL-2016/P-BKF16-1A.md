@@ -6,7 +6,8 @@ title: Euler product for $\zeta(s)$ and divergence of $\sum_p 1/p$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

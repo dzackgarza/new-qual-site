@@ -6,7 +6,8 @@ title: Dimension of the solution space of $AXB=0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: The Gaussian integral and surface areas of spheres via $\Gamma$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

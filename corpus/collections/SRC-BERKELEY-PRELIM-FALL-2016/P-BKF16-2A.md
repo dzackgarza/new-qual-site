@@ -6,7 +6,8 @@ title: A quadratic Grönwall-type inequality
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

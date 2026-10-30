@@ -6,7 +6,8 @@ title: Contraction mapping iteration and the fixed point of $\cos$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

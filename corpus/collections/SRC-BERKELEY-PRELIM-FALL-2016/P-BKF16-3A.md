@@ -6,7 +6,8 @@ title: Completeness of $K$-Lipschitz functions under locally uniform convergence
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Rational matrices similar over $\CC$ are similar over $\QQ$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

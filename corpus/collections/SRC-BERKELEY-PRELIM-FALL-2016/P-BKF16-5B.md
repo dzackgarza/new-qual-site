@@ -6,7 +6,8 @@ title: Power sums of zeros in the disk depend analytically on a parameter
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

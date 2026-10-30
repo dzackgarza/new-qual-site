@@ -6,7 +6,8 @@ title: Fields embedding in $M_2(\QQ)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

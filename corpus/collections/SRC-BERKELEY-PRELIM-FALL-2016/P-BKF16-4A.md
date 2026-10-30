@@ -6,7 +6,8 @@ title: Evaluation of $\int_{-\infty}^{\infty}\sin^3 x/x^3\,dx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

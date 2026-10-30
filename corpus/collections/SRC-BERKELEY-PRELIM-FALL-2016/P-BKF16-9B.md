@@ -6,7 +6,8 @@ title: Classification of groups of order $12$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

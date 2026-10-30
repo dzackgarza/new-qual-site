@@ -6,7 +6,8 @@ title: Low-rank approximation of the matrix $(\exp(t_is_j))$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

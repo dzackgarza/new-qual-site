@@ -6,7 +6,8 @@ title: No holomorphic $f$ on $\CC\setminus\{0\}$ with $\abs{ f(z)}\ge\abs{ z}^{-
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

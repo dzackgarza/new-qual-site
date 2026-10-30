@@ -6,7 +6,8 @@ title: Holomorphic square root of $z(e^z-1)$ near $0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

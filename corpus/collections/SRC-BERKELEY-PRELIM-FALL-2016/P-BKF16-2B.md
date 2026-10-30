@@ -6,7 +6,8 @@ title: Volume of a compact set as a limit of integrals of powers of a distance c
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
