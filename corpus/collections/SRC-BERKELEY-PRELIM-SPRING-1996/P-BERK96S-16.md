@@ -6,7 +6,8 @@ title: Spectrum and determinant of the matrix with zero diagonal and ones off di
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

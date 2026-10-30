@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF83-7
 kind: problem
 title: If $G\times G$ has exactly four normal subgroups then $G$ is simple nonabelian
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

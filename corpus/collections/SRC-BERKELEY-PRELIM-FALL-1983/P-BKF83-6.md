@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF83-6
 kind: problem
 title: Zeros of $z^5+z^3+5z^2+2$ in $1<\abs{z}<2$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

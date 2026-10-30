@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF83-8
 kind: problem
 title: Symmetric orthogonal transformations of $\RR^3$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

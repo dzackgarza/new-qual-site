@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF83-3
 kind: problem
 title: Bounded partial derivatives allow a punctured-space function to extend continuously
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:
@@ -30,8 +30,9 @@ $$
 $$
 for every $x\ne0$ and every $i$.
 
-1. If $n\ge2$, prove that $f$ extends continuously to all of $\RR^n$.
-2. Show by counterexample that the assertion is false for $n=1$.
+(a) If $n\ge2$, prove that $f$ extends continuously to all of $\RR^n$.
+
+(b) Show by counterexample that the assertion is false for $n=1$.
 :::
 
 ::: {.solution}

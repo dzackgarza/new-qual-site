@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF83-4
 kind: problem
 title: Every real sequence has a monotone subsequence
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

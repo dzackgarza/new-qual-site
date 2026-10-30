@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF83-2
 kind: problem
 title: No surjective ring homomorphism $M_{n+1}(F)\to M_n(F)$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

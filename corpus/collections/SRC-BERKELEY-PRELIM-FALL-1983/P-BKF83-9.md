@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF83-9
 kind: problem
 title: Parameters yielding infinitely many critical points for a forced second-order ODE
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Ordinary Differential Equations]}
 relations: []
 review: draft
 audit:

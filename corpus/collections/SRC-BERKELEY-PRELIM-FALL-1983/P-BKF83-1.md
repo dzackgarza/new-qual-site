@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF83-1
 kind: problem
 title: Fourier transform of $\operatorname{sech}^2x$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:
