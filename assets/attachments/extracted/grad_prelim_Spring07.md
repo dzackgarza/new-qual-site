@@ -1,10 +1,12 @@
-# Graduate preliminary examination, Spring 2007 3 hours, 8 problems counted equally
+# Graduate preliminary examination, Spring 2007
 
-Write the following statement in symbolic form, and then give (in symbolic form and in English) its contrapositive and its negation:
+3 hours, 8 problems counted equally
+
+1) Write the following statement in symbolic form, and then give (in symbolic form and in English) its contrapositive and its negation:
 
 "If all birds can swim or some fish can fly, then no whales can walk"
 
-Using mathematical induction, show that for each positive integer ${ \mathfrak { n } } ,$
+2) Using mathematical induction, show that for each positive integer $n$,
 
 $$
 1 ^ { 2 } - 2 ^ { 2 } + 3 ^ { 2 } - \cdots + ( - 1 ) ^ { n - 1 } n ^ { 2 } = ( - 1 ) ^ { n - 1 } n ( n + 1 ) / 2
@@ -12,38 +14,38 @@ $$
 
 (Hint: in the induction step, consider separately the cases where n is even or odd.)
 
-Give the $\varepsilon - \delta$ definition of the one-sided limit $\operatorname* { l i m } _ { x \to a ^ { + } } f ( x ) = L$
+3) a) Give the $\varepsilon - \delta$ definition of the one-sided limit $\lim_{x \to a ^ { + } } f ( x ) = L$.
 
-Using the definition and basic properties of ln(x), show that $\operatorname* { l i m } _ { x  0 ^ { + } } 1 / \ln ( x ) = 0$
+b) Using the definition and basic properties of ln(x), show that $\lim_{ x \to 0 ^ { + } } 1 / \ln ( x ) = 0$.
 
-Find the Taylor expansion of $f ( x ) = \ln ( 2 + x )$ about the origin.
+4) a) Find the Taylor expansion of $f ( x ) = \ln ( 2 + x )$ about the origin.
 
-Find the radius of convergence R of that series;
+b) Find the radius of convergence R of that series;
 
-Use Taylor's theorem to show that the series converges to(xo $[ 0 , R / 2 ]$
+c) Use Taylor's theorem to show that the series converges to $f(x)$ on $[ 0 , R / 2 ]$.
 
-5) Let γ be the closed path which goes counterclockwise around the circle $C ( 0 , 2 ) = \{ ( x , y ) \in R ^ { 2 } : x ^ { 2 } + y ^ { 2 } = 2 ^ { 2 } \}$ from the point (2,0) to the point (0,2), then goes to the origin along the y-axis, and then back to (2,0) along the x-axis.
+5) Let $\gamma$ be the closed path which goes counterclockwise around the circle $C ( 0 , 2 ) = \{ ( x , y ) \in \mathbb{R} ^ { 2 } : x ^ { 2 } + y ^ { 2 } = 2 ^ { 2 } \}$ from the point (2,0) to the point (0,−2), then goes to the origin along the y-axis, and then back to (2,0) along the x-axis.
 
 Compute $\int _ { \gamma } 2 x d y + y d x$ in one of two ways:
 
-Directly, using the definition of a line integral; or
+a) Directly, using the definition of a line integral; or
 
-By using Green's theorem or the general Stokes' theorem.
+b) By using Green's theorem or the general Stokes' theorem.
 
-Give an example (proof not required) of each of the following:
+6) Give an example (proof not required) of each of the following:
 
-aA function $f : \mathcal { R } \to \mathcal { R }$ which satisfies $f ( x ) = 0$ for all $x \leq 0$ , but which is nonzero for $x > 0$ and has derivatives of all orders for all x.
+a) A function $f : \mathbb { R } \to \mathbb { R }$ which satisfies $f ( x ) = 0$ for all $x \leq 0$ , but which is nonzero for $x > 0$ and has derivatives of all orders for all x.
 
-An infinite-dimensional vector space over the field $\mathbb { Z } / 2 \mathbb { Z }$
+b) An infinite-dimensional vector space over the field $\mathbb { Z } / 2 \mathbb { Z }$.
 
-A matrix in $M _ { \mathfrak { z } } ( \mathbb { C } )$ which is not diagonalizable.
+c) A matrix in $M _ { 2 } ( \mathbb { C } )$ which is not diagonalizable.
 
-A power series $\sum _ { n = 0 } ^ { \infty } a _ { n } z ^ { n } \in { \mathfrak { C } } [ [ z ] ]$ with radius of convergence0.
+d) A power series $\sum _ { n = 0 } ^ { \infty } a _ { n } z ^ { n } \in \mathbb { C } [ [ z ] ]$ with radius of convergence 0.
 
-Let $A = \left[ \begin{array} { l l l } { 1 } & { - 1 } & { 2 } \\ { - 1 } & { 2 } & { - 5 } \\ { 2 } & { - 1 } & { 1 } \end{array} \right] \in M _ { 3 } ( k )$ , and let $T _ { A } : \mathcal { R } ^ { 3 }  \mathcal { R } ^ { 3 }$ be the linear transformation
+7) Let $A = \left[ \begin{array} { l l l } { 1 } & { - 1 } & { 2 } \\ { - 1 } & { 2 } & { - 5 } \\ { 2 } & { - 1 } & { 1 } \end{array} \right] \in M _ { 3 } ( \mathbb{R} )$ , and let $T _ { A } : \mathbb { R } ^ { 3 } \to \mathbb { R } ^ { 3 }$ be the linear transformation $T _ { A } ( \vec{x} ) = A \vec { x }$. Find $\dim _ { \mathbb{R} } ( \operatorname{Ker} ( A ) )$ , and use this to determine $\dim _ { \mathbb{R} } ( \operatorname { Im } ( A ) )$.
 
-$\vec { T _ { A } ( x ) } = A \vec { x }$ .Find $\dim _ { \mathit { a R } } ( K e r ( A ) )$ , and use this to determine $\dim _ { \mathit { n } _ { R } } ( \operatorname { I m } ( A ) )$
+8) a) State the Spectral Theorem (over $\mathbb{R}$).
 
-State the Spectral Theorem (overR).
+b) Let $A = \left[ { \begin{array} { l l } { 2 } & { - 2 } \\ { - 2 } & { 5 } \end{array} } \right]$ . Find an orthogonal matrix P for which $P ^ { - 1 } A P$ is diagonal.
 
-Let $A = \left[ { \begin{array} { l l } { 2 } & { - 2 } \\ { - 2 } & { 5 } \end{array} } \right]$ .Find an orthogonal matrix P for which $P ^ { - 1 } A P$ is diagonal.
+<!-- MinerU Flash extraction (2026-10-31). MinerU Flash dropped every problem number and part label, the arrows in #3(b) and #7, "f(x)" in #4(c), the minus sign of (0,−2) in #5, and garbled the field and ring symbols in #6, #7 and #8(a); those locations were transcribed from a render of page 1. -->
