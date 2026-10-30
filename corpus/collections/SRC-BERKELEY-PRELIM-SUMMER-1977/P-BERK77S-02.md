@@ -106,7 +106,7 @@ $$
 ::: pf-proof
 
 If the interior of $\Delta$ lies entirely in one open half-plane, this is
-Cauchy's theorem. Otherwise the real axis cuts $\Delta$ into an upper
+step [](#s1){.pf-ref} or step [](#s2){.pf-ref}, since $\Delta$ may have an edge or a vertex on the real axis. Otherwise the real axis cuts $\Delta$ into an upper
 polygon $\Delta_+$ and a lower polygon $\Delta_-$, allowing one of them to
 be degenerate. Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give
 $$
@@ -136,12 +136,6 @@ that its integral around every triangle is zero. Morera's theorem therefore
 implies that $f$ is holomorphic on all of $\CC$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s4){.pf-ref} is the required conclusion.
 
 :::
 
