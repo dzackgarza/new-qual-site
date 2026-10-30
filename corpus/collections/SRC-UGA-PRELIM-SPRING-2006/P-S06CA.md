@@ -17,11 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-i) State what it means for a sequence $\{a_n\}$ of real numbers to be Cauchy.
+(a) State what it means for a sequence $\{a_n\}$ of real numbers to be Cauchy.
 
-ii) Prove that every convergent sequence is Cauchy.
+(b) Prove that every convergent sequence is Cauchy.
 :::
-
 
 ::: {.solution}
 
