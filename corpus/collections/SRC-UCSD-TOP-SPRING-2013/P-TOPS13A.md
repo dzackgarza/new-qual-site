@@ -79,7 +79,7 @@ $$
 with $T$ finite. The stated data do not determine $T$ further.
 
 ::: pf-proof
-Finite generation holds for compact manifolds. The calculation in step [](#uct-forces-h1-h2){.pf-ref} fixes only the free rank of $H_3$. Middle-dimensional torsion is self-paired by the torsion linking form in dimension seven, so the already stated homology groups impose no additional isomorphism type on $T$.
+Finite generation holds for compact manifolds. The calculation in step [](#uct-forces-h1-h2){.pf-ref} fixes only the free rank of $H_3$. The torsion of $H_3$ is paired only with itself, by the torsion linking form $T\times T\to\QQ/\ZZ$, so none of the other given groups constrains it. That form is nonsingular and skew-symmetric in dimension $7$, which forces the odd-order part of $T$ to have the form $A\oplus A$; beyond this the data say nothing about $T$.
 :::
 
 :::
