@@ -21,32 +21,58 @@ source:
   sections:
   - name: Ch1 Exercises
     problems:
-    - E-SS1.EX-1
-    - E-SS1.EX-2
-    - E-SS1.EX-3
-    - E-SS1.EX-4
-    - E-SS1.EX-5
-    - E-SS1.EX-6
-    - E-SS1.EX-7
-    - E-SS1.EX-8
-    - E-SS1.EX-9
-    - E-SS1.EX-10
-    - E-SS1.EX-11
-    - E-SS1.EX-12
-    - E-SS1.EX-13
-    - E-SS1.EX-14
-    - E-SS1.EX-15
-    - E-SS1.EX-16
-    - E-SS1.EX-17
-    - E-SS1.EX-18
-    - E-SS1.EX-19
-    - E-SS1.EX-20
-    - E-SS1.EX-21
-    - E-SS1.EX-22
-    - E-SS1.EX-23
-    - E-SS1.EX-24
-    - E-SS1.EX-25
-    - E-SS1.EX-26
+    - id: E-SS1.EX-1
+      comment: Ch. 1, Exercise 1
+    - id: E-SS1.EX-2
+      comment: Ch. 1, Exercise 2
+    - id: E-SS1.EX-3
+      comment: Ch. 1, Exercise 3
+    - id: E-SS1.EX-4
+      comment: Ch. 1, Exercise 4
+    - id: E-SS1.EX-5
+      comment: Ch. 1, Exercise 5
+    - id: E-SS1.EX-6
+      comment: Ch. 1, Exercise 6
+    - id: E-SS1.EX-7
+      comment: Ch. 1, Exercise 7
+    - id: E-SS1.EX-8
+      comment: Ch. 1, Exercise 8
+    - id: E-SS1.EX-9
+      comment: Ch. 1, Exercise 9
+    - id: E-SS1.EX-10
+      comment: Ch. 1, Exercise 10
+    - id: E-SS1.EX-11
+      comment: Ch. 1, Exercise 11
+    - id: E-SS1.EX-12
+      comment: Ch. 1, Exercise 12
+    - id: E-SS1.EX-13
+      comment: Ch. 1, Exercise 13
+    - id: E-SS1.EX-14
+      comment: Ch. 1, Exercise 14
+    - id: E-SS1.EX-15
+      comment: Ch. 1, Exercise 15
+    - id: E-SS1.EX-16
+      comment: Ch. 1, Exercise 16
+    - id: E-SS1.EX-17
+      comment: Ch. 1, Exercise 17
+    - id: E-SS1.EX-18
+      comment: Ch. 1, Exercise 18
+    - id: E-SS1.EX-19
+      comment: Ch. 1, Exercise 19
+    - id: E-SS1.EX-20
+      comment: Ch. 1, Exercise 20
+    - id: E-SS1.EX-21
+      comment: Ch. 1, Exercise 21
+    - id: E-SS1.EX-22
+      comment: Ch. 1, Exercise 22
+    - id: E-SS1.EX-23
+      comment: Ch. 1, Exercise 23
+    - id: E-SS1.EX-24
+      comment: Ch. 1, Exercise 24
+    - id: E-SS1.EX-25
+      comment: Ch. 1, Exercise 25
+    - id: E-SS1.EX-26
+      comment: Ch. 1, Exercise 26
   - name: Ch2 Exercises
     problems:
     - E-SS2.EX-1

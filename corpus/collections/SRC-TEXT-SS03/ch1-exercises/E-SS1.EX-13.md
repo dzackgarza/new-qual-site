@@ -12,10 +12,16 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Stein-Shakarchi 1.13 says open set; the statement now names the domain, and takes it connected,
+    since constancy fails on a disconnected open set.
 ---
 
 ::: {.exercise}
-If $f$ is holomorphic on $\Omega$ and any of the following hold, then $f$ is constant:
+Suppose $f$ is holomorphic in a region $\Omega$ (an open connected set). If any of the following hold, then $f$ is constant:
 
 1. $\Re(f)$ is constant.
 
