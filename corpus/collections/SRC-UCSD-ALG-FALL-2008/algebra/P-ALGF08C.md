@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF08C
 kind: problem
-title: "A group of order p^2 q has a normal Sylow subgroup"
+title: "A group of order $p^2q$ has a normal Sylow subgroup"
 classification:
   areas:
   - algebra

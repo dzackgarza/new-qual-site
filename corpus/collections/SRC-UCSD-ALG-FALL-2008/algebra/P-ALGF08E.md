@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF08E
 kind: problem
-title: "Every K-monomorphism of an algebraic extension to itself is surjective"
+title: "Every $K$-monomorphism of an algebraic extension to itself is surjective"
 classification:
   areas:
   - algebra
