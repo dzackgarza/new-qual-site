@@ -8,6 +8,8 @@ classification:
   - algebra
   topics:
   - Galois Theory
+  - Cyclotomic Fields
+  - Finite Fields
 relations: []
 review: draft
 audit:

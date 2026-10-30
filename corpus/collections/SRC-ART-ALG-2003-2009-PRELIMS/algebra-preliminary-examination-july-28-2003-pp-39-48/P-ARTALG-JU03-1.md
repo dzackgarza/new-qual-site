@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - Group Theory
+  - Sylow Theory
+  - Group Actions
 relations: []
 review: draft
 audit:
@@ -24,11 +25,11 @@ audit:
   note: "Checked all divisors in the Sylow 7-count and proved the normalizer index and both centralizer containments."
 ---
 ::: {.problem}
-Let $G$ be a group of order 84 with 28 Sylow 3-subgroups.
+Let $G$ be a group of order $84$ with $28$ Sylow $3$-subgroups.
 
-(a) Find the number of Sylow 7-subgroups of $G$.
+(a) Find the number of Sylow $7$-subgroups of $G$.
 
-(b) Let $Q$ be a Sylow 3-subgroup of $G$.
+(b) Let $Q$ be a Sylow $3$-subgroup of $G$.
 Let $N_G(Q)$ be the normalizer of $Q$ in $G$, and $Z_G(Q)$ be the centralizer of $Q$ in $G$.
 Show that $N_G(Q) = Z_G(Q) = Q$.
 :::

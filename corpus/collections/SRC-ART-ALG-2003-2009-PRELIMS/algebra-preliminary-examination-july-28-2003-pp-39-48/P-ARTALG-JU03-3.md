@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Euclidean Domains
+  - Counterexamples
 relations: []
 review: draft
 audit:

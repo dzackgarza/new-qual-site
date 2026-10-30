@@ -7,7 +7,7 @@ classification:
   areas:
   - algebra
   topics:
-  - Galois Theory
+  - Finite Fields
 relations: []
 review: draft
 audit:
@@ -24,7 +24,7 @@ audit:
   note: "Checked necessity by the tower law and constructed each subfield as an exact Frobenius root set, including splitting, cardinality, closure, and uniqueness."
 ---
 ::: {.problem}
-Let $F$ be a field of order 1024.
+Let $F$ be a field of order $1024$.
 
 (a) Find the prime field of $F$.
 

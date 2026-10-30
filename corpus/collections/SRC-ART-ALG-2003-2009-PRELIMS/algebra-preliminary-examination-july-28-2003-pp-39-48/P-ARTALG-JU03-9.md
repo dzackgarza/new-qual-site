@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Group Theory
+  - Solvable Groups
+  - Solvability by Radicals
+  - Galois Theory
 relations: []
 review: draft
 audit:
@@ -27,9 +29,9 @@ audit:
 (a) Given a group $G$, state the criteria that make $G$ a solvable group.
 Use your definition to prove that $S_4$ is solvable.
 
-(b) Let $g(x) \in \QQ[x]$ have degree 4. Prove or disprove: $g(x)$ is not solvable by radicals.
+(b) Let $g(x) \in \QQ[x]$ have degree $4$. Prove or disprove: $g(x)$ is not solvable by radicals.
 
-(c) Let $g(x) \in \QQ[x]$ have degree 5. Prove or disprove: $g(x)$ is not solvable by radicals.
+(c) Let $g(x) \in \QQ[x]$ have degree $5$. Prove or disprove: $g(x)$ is not solvable by radicals.
 :::
 
 ::: {.solution}

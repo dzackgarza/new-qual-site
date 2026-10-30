@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Group Theory
+  - Abelian Groups
+  - Structure Theorem
+  - Modules
 relations: []
 review: draft
 audit:
@@ -24,7 +26,7 @@ audit:
   note: "Enumerated every partition of 4 and 2, checked uniqueness rather than relying only on group exponents, and canceled all free-rank and prime-power multiplicity invariants."
 ---
 ::: {.problem}
-(a) How many abelian groups of order 720 are there?
+(a) How many abelian groups of order $720$ are there?
 
 (b) Let $L, M, N$ be finitely generated $\ZZ$-modules, such that $L \oplus M \cong L \oplus N$.
 Prove that $M \cong N$.
