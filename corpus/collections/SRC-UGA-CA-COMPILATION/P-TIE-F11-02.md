@@ -17,19 +17,19 @@ audit:
 ---
 
 ::: {.problem}
-Let f be a continuous function in the region
+Let $f$ be a continuous function in the region
 
 $$
-D = \{ z \ | | z | > R , 0 \leq \arg Z \leq \theta \} \quad \mathrm { w h e r e } \quad 0 \leq \theta \leq 2 \pi .
+D = \theset{z \st \abs z > R,\ 0 \leq \arg z \leq \theta} \quad \text{where} \quad 0 \leq \theta \leq 2 \pi .
 $$
 
-If there exists k such that $\operatorname* { l i m } _ { z \to \infty } z f ( z ) = k$ for z in the region D. Show that
+If there exists $k$ such that $\lim_{z \to \infty} z f(z) = k$ for $z$ in the region $D$, show that
 
 $$
-\operatorname* { l i m } _ { R ^ { \prime } \longrightarrow \infty } \int _ { L } f ( z ) d z = i \theta k ,
+\lim_{R' \to \infty} \int_L f(z)\,dz = i \theta k ,
 $$
 
-where L is the part of the circle $| z | = R ^ { \prime }$ which lies in the region D.
+where $L$ is the part of the circle $\abs z = R'$ which lies in the region $D$.
 :::
 
 ::: {.solution}

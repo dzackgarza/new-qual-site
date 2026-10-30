@@ -18,9 +18,9 @@ audit:
 ---
 
 ::: {.exercise}
-2. Show that $\int _ { 0 } ^ { \infty } { \frac { \sin { x } } { x } } d x = { \frac { \pi } { 2 } }$
+Show that $\displaystyle\int_0^\infty \frac{\sin x}{x}\,dx = \frac{\pi}{2}$.
 
-[Hint: The integral equals $\begin{array} { r } { \frac { 1 } { 2 i } \int _ { - \infty } ^ { \infty } \frac { e ^ { i x } - 1 } { x } } \end{array}$ dx. Use the indented semicircle.]
+[Hint: The integral equals $\displaystyle\frac{1}{2i}\int_{-\infty}^{\infty} \frac{e^{ix}-1}{x}\,dx$. Use the indented semicircle.]
 :::
 
 ::: {.solution}
