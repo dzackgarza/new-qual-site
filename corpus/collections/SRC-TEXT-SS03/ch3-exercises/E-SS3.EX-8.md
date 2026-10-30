@@ -76,3 +76,11 @@ and step [](#s1){.pf-ref} covers $b=0$.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+For real $a$ with $\abs a\ne1$,
+$$
+\int_{0}^{2 \pi} \frac{d \theta}{1+a^{2}-2 a \cos\theta}=\frac{2\pi}{\abs{1-a^2}}.
+$$
+This is the main statement with $a$ replaced by $1+a^2$ and $b$ by $-2a$: the hypothesis $1+a^2>2\abs a$ holds because $(1-\abs a)^2>0$, and $\sqrt{(1+a^2)^2-4a^2}=\abs{1-a^2}$.
+:::
