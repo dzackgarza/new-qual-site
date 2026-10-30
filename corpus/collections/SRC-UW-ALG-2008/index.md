@@ -19,9 +19,12 @@ source:
   problems:
   - P-MMAQ-5EFTFEKRDI
   - P-MMAQ-KGHDXFTO6Z
+  - P-BJDIE
+  - P-UWALG08-4
   - P-FF2O5
   - P-MMAQ-NCN7KYH27J
   - P-PLFQZ
+  - P-CC3DW
   source_kind: university-exam
 title: UW Algebra Qualifying Exam 2008
 ---

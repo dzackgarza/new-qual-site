@@ -21,10 +21,10 @@ audit:
 ::: {.problem}
 Let $f(x)$ be an irreducible polynomial of degree 5 over the field $\QQ$ of rational numbers with exactly 3 real roots.
 
-- Show that $f(x)$ is not solvable by radicals.
+(a) Show that $f(x)$ is not solvable by radicals.
 
-- Let $E$ be the splitting field of $f$ over $\QQ$.
-  Construct a Galois extension $K$ of degree 2 over $\QQ$ lying in $E$ such that *no* field $F$ strictly between $K$ and $E$ is Galois over $\QQ$.
+(b) Let $E$ be the splitting field of $f$ over $\QQ$.
+Construct a Galois extension $K$ of degree 2 over $\QQ$ lying in $E$ such that *no* field $F$ strictly between $K$ and $E$ is Galois over $\QQ$.
 :::
 
 ::: {.solution}

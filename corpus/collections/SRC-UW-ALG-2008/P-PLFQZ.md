@@ -20,10 +20,10 @@ audit:
 ---
 
 ::: {.problem}
-- Let $G$ be a group of (finite) order $n$.
-  Show that any irreducible left module over the group algebra $\CC G$ has complex dimension at most $\sqrt n$.
+(a) Let $G$ be a group of (finite) order $n$.
+Show that any irreducible left module over the group algebra $\CC G$ has complex dimension at most $\sqrt n$.
 
-- Give an example of a group $G$ of order $n\geq5$ and an irreducible left module over $\CC G$ of complex dimension $\lfloor\sqrt n\rfloor$, the greatest integer to $\sqrt n$.
+(b) Give an example of a group $G$ of order $n\geq5$ and an irreducible left module over $\CC G$ of complex dimension $\lfloor\sqrt n\rfloor$, the greatest integer to $\sqrt n$.
 :::
 
 ::: {.solution}
@@ -173,15 +173,15 @@ forces $a=b=c=0$ in every case, contradicting $v\ne0$. Hence no invariant line e
 
 :::
 
-::: pf-step
+::: pf-qed
 
-Thus $S_3$ provides the requested sharp example:
-
-:::
-
-:::
-
+Thus $S_3$ provides the requested example:
 $$
 \dim_{\CC}V=2=\lfloor\sqrt6\rfloor.
 $$
+
+:::
+
+:::
+
 :::
