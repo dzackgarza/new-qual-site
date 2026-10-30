@@ -6,7 +6,8 @@ title: A nonzero nilpotent $2\times2$ complex matrix has no square root
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

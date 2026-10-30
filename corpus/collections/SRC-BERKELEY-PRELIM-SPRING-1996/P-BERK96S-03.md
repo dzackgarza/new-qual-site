@@ -6,7 +6,8 @@ title: Integral of $1/(2+\cos\theta)$ over $[0,2\pi]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

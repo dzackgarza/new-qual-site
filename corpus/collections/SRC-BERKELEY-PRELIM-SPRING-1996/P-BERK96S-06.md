@@ -6,7 +6,8 @@ title: Rational homogeneous systems with a complex solution have a rational solu
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

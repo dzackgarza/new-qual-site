@@ -6,7 +6,8 @@ title: Irreducibility of $x^4+x^3+x^2+6x+1$ over $\QQ$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Infinitely many pairwise nonisomorphic quadratic extensions of $\QQ$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

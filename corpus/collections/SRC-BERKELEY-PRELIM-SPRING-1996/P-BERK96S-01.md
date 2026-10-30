@@ -6,7 +6,8 @@ title: Limit of $(n^n/n!)^{1/n}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

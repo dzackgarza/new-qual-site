@@ -6,7 +6,8 @@ title: A positive-semidefinite symmetric matrix anticommuting with another matri
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

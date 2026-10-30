@@ -6,7 +6,8 @@ title: If $\varphi$ and $\varphi'$ both have limits at $\infty$, then $\varphi'\
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

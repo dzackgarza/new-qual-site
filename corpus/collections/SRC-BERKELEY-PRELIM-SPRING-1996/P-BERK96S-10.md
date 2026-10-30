@@ -6,7 +6,8 @@ title: $e^x>x^t$ for every $x>0$ exactly when $0<t<e$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Five roots of $\varepsilon z^7+z^2+1$ lie in a scaled annulus
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

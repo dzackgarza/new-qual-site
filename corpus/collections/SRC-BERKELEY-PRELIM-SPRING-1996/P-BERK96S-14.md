@@ -6,7 +6,8 @@ title: An exponential integral of a continuous function is entire in $z$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

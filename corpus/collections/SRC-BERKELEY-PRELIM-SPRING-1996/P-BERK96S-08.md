@@ -6,7 +6,8 @@ title: Rightmost decimal digit of $17^{17^{17}}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

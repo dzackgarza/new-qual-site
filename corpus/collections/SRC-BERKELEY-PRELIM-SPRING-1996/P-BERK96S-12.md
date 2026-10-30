@@ -6,7 +6,8 @@ title: The range of $X\mapsto X+X^2$ contains a neighborhood of the zero matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

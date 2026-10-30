@@ -6,7 +6,8 @@ title: Automorphisms of a direct product of finite groups of coprime orders
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

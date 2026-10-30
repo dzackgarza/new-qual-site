@@ -6,7 +6,8 @@ title: Faithful action of $SL_2(\FF_4)$ on the projective line over $\FF_4$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -26,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be the group of $2\times2$ determinant-one matrices over the four-element field $\FF_4$, and let $S$ be the set of one-dimensional subspaces of $\FF_4^2$. Show that the natural action of $G$ on $S$ is faithful.
+Let $G$ be the group of $2\times2$ determinant-one matrices over the four-element field $\FF_4$, and let $S$ be the set of one-dimensional subspaces of $\FF_4^2$. Show that the natural action of $G$ on $S$ is faithful. (The action is faithful if the only element of $G$ which fixes every element of $S$ is the identity.)
 :::
 
 ::: {.solution}
