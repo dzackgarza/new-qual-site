@@ -37,6 +37,8 @@ $$
 $$
 
 (b) Show that $f$ is convex if and only if $f$ is absolutely continuous on every compact subinterval $[c, d]$ of $(a, b)$ and $f'$ is increasing a.e.
+
+Hint for (a): Interpret the convexity inequality and the slope inequality geometrically. Treat the two cases $x' \leq y$ and $y < x'$ separately when showing that convexity implies the slope inequality.
 :::
 
 ::: {.solution}
