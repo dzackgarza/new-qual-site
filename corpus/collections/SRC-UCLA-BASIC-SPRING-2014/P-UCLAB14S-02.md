@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Suppose that $S,T\in\operatorname{Hom}(V,V)$, where $V$ is a finite-dimensional vector space over $\RR$.
+Suppose that $S,T\in\operatorname{Hom}(V,V)$, where $V$ is a finite-dimensional vector space over $\RR$.
 Let $\operatorname{im}S$ be the image of $S$ and $\ker S$ the kernel of $S$.
 Show that
 $$

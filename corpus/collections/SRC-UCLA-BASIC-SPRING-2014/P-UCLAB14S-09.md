@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 9. Find a function that minimizes
+Find a function that minimizes
 $$
 \int_0^1 \abs{f'(x)}^2\,dx
 $$

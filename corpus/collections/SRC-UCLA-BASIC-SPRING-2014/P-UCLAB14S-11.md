@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. Let $F$ be a set of continuous real-valued functions on $[0,1]$.
+Let $F$ be a set of continuous real-valued functions on $[0,1]$.
 Assume that every sequence from $F$ has a subsequence that converges uniformly on $[0,1]$.
 Prove both of the following:
 

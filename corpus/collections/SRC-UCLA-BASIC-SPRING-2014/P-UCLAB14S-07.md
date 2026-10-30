@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Find a doubly infinite sequence $\{a_{n,m}:n,m\in\ZZ\}$ such that for every $m$,
+Find a doubly infinite sequence $\{a_{n,m}:n,m\in\ZZ\}$ such that for every $m$,
 $$
 \sum_n a_{n,m}=0,
 $$

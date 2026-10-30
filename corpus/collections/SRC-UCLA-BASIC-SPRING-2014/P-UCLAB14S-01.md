@@ -21,8 +21,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1.
-
 (a) Find a real matrix $A$ whose minimal polynomial is
 $$
 t^4+1.

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Show that if $A\in M_{n,n}(\CC)$ is normal, then
+Show that if $A\in M_{n,n}(\CC)$ is normal, then
 $$
 A^*=P(A)
 $$

@@ -17,8 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8.
-
 (a) Let $f:\RR\to\RR$ be defined by
 $$
 f(x)=

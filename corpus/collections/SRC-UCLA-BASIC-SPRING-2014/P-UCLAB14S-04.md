@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. Suppose that $A,B\in M_{n,n}(\CC)$.
+Suppose that $A,B\in M_{n,n}(\CC)$.
 Show that the characteristic polynomials of $AB$ and $BA$ are equal.
 
 Hint: One approach is to first show that it holds when $B$ is invertible.

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. Assume
+Assume
 $$
 [0,1]=\bigcup_{n=1}^\infty I_n,
 \qquad I_n=[a_n,b_n]\neq\varnothing,

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Suppose that $A,B\in M_{n,n}(\CC)$ satisfy
+Suppose that $A,B\in M_{n,n}(\CC)$ satisfy
 $$
 AB-BA=A.
 $$
