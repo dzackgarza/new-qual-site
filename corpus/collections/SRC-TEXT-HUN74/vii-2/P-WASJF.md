@@ -96,3 +96,7 @@ matrix of $U$, then $AC=I_n$.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The statement can be preceded by the rank-nullity theorem over a division ring: for a $D$-linear map $\phi:D^m\to D^n$, $m=\dim_D\ker\phi+\dim_D\im\phi$. Extend a basis of $\ker\phi$ to a basis of $D^m$; the images of the added vectors form a basis of $\im\phi$. This is the dimension count the rank conditions above use.
+:::
