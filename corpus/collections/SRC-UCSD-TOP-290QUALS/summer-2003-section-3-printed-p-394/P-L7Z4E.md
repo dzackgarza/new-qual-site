@@ -56,7 +56,7 @@ If $f(\CP^1) \cap \CP^1 = \emptyset$, then $[\CP^1]\cdot f_*[\CP^1] = 0$.
 ::: pf-proof
 
 Let $\alpha \in H^2(\CP^2)$ be the Poincaré dual of $[\CP^1]$, let $\beta = (f^{-1})^*\alpha$, which is the Poincaré dual of $f_*[\CP^1]$ up to sign, and let $U = \CP^2 \setminus \CP^1$ and $V = \CP^2 \setminus f(\CP^1) = f(U)$.
-$U \cong \CC^2$ is contractible, and so is $V$, so $\alpha|_U = 0$ and $\beta|_V = 0$.
+$U \cong \CC^2$ is contractible, and so is $V$, so $\restrictionof{\alpha}{U} = 0$ and $\restrictionof{\beta}{V} = 0$.
 By the long exact sequences of the pairs, $\alpha$ comes from $H^2(\CP^2, U)$ and $\beta$ comes from $H^2(\CP^2, V)$.
 Hence $\alpha\smile\beta$ comes from $H^4(\CP^2, U\cup V) = H^4(\CP^2,\CP^2) = 0$, because $U \cup V = \CP^2$ when the two spheres are disjoint.
 The intersection number is $\langle \alpha\smile\beta, [\CP^2]\rangle = 0$.
