@@ -695,11 +695,11 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UNL-RA-SPRING-2019
   - [x] SRC-UNL-RA-SUMMER-2016
   - [x] SRC-UNL-RA-SUMMER-2018
-  - [ ] SRC-UNSORTED-ALGEBRA
-  - [ ] SRC-UNSORTED-COMPLEX-ANALYSIS
-  - [ ] SRC-UNSORTED-PRELIM
-  - [ ] SRC-UNSORTED-REAL-ANALYSIS
-  - [ ] SRC-UNSORTED-TOPOLOGY
+  - [x] SRC-UNSORTED-ALGEBRA
+  - [x] SRC-UNSORTED-COMPLEX-ANALYSIS
+  - [x] SRC-UNSORTED-PRELIM
+  - [x] SRC-UNSORTED-REAL-ANALYSIS
+  - [x] SRC-UNSORTED-TOPOLOGY
   - [ ] SRC-UO-TOP-FALL-2019
   - [ ] SRC-UT-M392C-CONTACT-TOPOLOGY-FALL-2017
   - [ ] SRC-UW-ALG-2005
@@ -1769,6 +1769,18 @@ mathematical correction under its own node, not under copy policy.
     topology collection. No registered area holds combinatorics. Decide whether these problems
     are in scope, and if so under which area. **Acceptance:** each listed card carries the
     decided area, or the decision to remove the Section A parts is applied to the collections.
+  - **`ad-unsorted-duplicate-candidates`**. **Needs:** none. The reading of the UNSORTED buckets
+    found these pairs that may state the same mathematics; each needs both cards read and, if
+    the mathematics is the same, a `CARD-04` merge. Algebra: E-AMD-F5ZHMJNK / E-AMD-YBSKHIZ3(b);
+    E-AMD-OFJC25BM / E-AMD-X26OEAAA; E-AMD-4TXVF5CA / E-AMD-TSKS3JTO; E-NXHG6 / P-2E7UB;
+    P-AMD-QBEEJKCX / P-C2WAH; P-FINEA / P-KGXWN; P-JPTMN / P-KTQL5; P-GSJ2A / P-HH3JN;
+    P-TA426(b) / P-WL4WF; P-TO7DK(d) / P-V23K4. Complex analysis: E-YEIQ5 / P-ALI5T;
+    P-TFO34 / P-IOUZO(e); P-4JM4Y / P-4PTIX(a); E-Y22HZ / P-G2RYI; P-Y4TND / P-YWMCT. Real
+    analysis and topology: P-2YFVO / E-Y4GZM, E-E4H2J, E-LYXHE, E-GQEMZ; P-4EOE5 / E-3OAGD,
+    E-JJ746; P-FNUGX / E-TZFC7, E-7EL3U, E-UYQED; P-6BKXI / E-QCYEM, E-KUOXT; P-O2PWG /
+    E-FFARP, E-4CL6A, E-SA3HI; P-PEND3 / E-XHB3F, E-CGVE4, E-BTA5L; E-IECHS / P-GAA3C.
+    Elsewhere: P-G7GOP / P-XCE4G. **Acceptance:** each pair is merged or both cards are kept
+    after reading.
   - **`ad-bkf93-12-contour`**. **Needs:** none. P-BKF93-12: the retained Fall93.pdf prints
     "../Fig/Pr/Fa93-12.ps not found" where the curve $\gamma$ should be, so the statement has no
     contour and the solution answers in terms of winding numbers. Find another copy of the Fall
