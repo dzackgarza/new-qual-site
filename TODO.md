@@ -860,7 +860,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebraic-geometry/varieties/smooth-and-singular.md
   - [x] wiki/algebraic-geometry/varieties/the-dictionary.md
   - [x] wiki/applied-algebra/grobner-bases/index.md
-  - [ ] wiki/applied-algebra/index.md
+  - [x] wiki/applied-algebra/index.md
   - [ ] wiki/applied-algebra/invariant-theory/index.md
   - [ ] wiki/applied-algebra/matrix-analysis/index.md
   - [ ] wiki/applied-algebra/representation-theory/index.md
