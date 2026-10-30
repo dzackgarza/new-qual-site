@@ -24,6 +24,7 @@ audit:
 ---
 
 ::: {.problem}
+Let $(X, \mathcal{M}, \mu)$ be a finite measure space, and for a bounded measurable $h_0 : X \to \CC$ let $M_{h_0} : L^2(\mu) \to L^2(\mu)$ be the multiplication operator $M_{h_0} h := h_0 h$.
 Suppose $f : X \to [-1,1]$ is a measurable function and $\varphi : [-1,1] \to \RR$ is a bounded Borel measurable function.
 Show:
 

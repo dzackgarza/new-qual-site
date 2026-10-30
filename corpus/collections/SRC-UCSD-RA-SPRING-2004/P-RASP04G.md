@@ -24,6 +24,7 @@ audit:
 ---
 
 ::: {.problem}
+Let $(X, \mathcal{M}, \mu)$ be a finite measure space, and for a bounded measurable $h_0 : X \to \CC$ let $M_{h_0} : L^2(\mu) \to L^2(\mu)$ be the multiplication operator $M_{h_0} h := h_0 h$.
 Let $f, g : X \to [-1,1]$ be measurable functions and $U : L^2(X, \mu) \to L^2(X, \mu)$ be a unitary map such that $UM_fU^{-1} = M_g$.
 Let $\mathcal{H}$ denote the collection of bounded Borel measurable functions $\varphi : [-1,1] \to \RR$ such that $UM_{\varphi \circ f}U^{-1} = M_{\varphi \circ g}$.
 Show:
