@@ -27,7 +27,8 @@ M=\begin{pmatrix}
 $$
 Let $C$ be the set of matrices in $G$ commuting with $M$.
 
-(a) Prove that $C$ is an affine subspace of $\RR^{16}$.
+(a) Prove that $C$ is an affine subspace of the space $\RR^{16}$ of all real $4\times4$ matrices.
+A subset $S$ of a vector space $V$ is an affine subspace if there is $w\in V$ such that $S^0=\{v-w:v\in S\}$ is a linear subspace of $V$; the dimension of $S$ is the dimension of $S^0$.
 
 (b) Find the dimension of $C$.
 :::
