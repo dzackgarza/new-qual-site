@@ -6,7 +6,10 @@ title: Unique ergodicity of irrational rotations of the circle
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Weak Convergence
+  - Borel Measures
+  - Fourier Series
 relations: []
 review: draft
 audit:

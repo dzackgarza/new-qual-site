@@ -6,7 +6,9 @@ title: Portmanteau theorem for continuity sets
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Weak Convergence
+  - Borel Measures
 relations: []
 review: draft
 audit:

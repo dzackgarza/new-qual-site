@@ -6,7 +6,10 @@ title: Wiener's theorem on translates in $L^2(\RR)$
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Transform
+  - Density
+  - L²
 relations: []
 review: draft
 audit:

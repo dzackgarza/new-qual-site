@@ -6,7 +6,10 @@ title: $L^1$ convergence from almost everywhere convergence with weighted $L^1$ 
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L¹
+  - Convergence of Integrals
+  - Small Tails
 relations: []
 review: draft
 audit:

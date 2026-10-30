@@ -6,7 +6,9 @@ title: Pointwise limits of continuous functions converge locally uniformly on a 
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Baire Category
+  - Uniform Convergence
 relations: []
 review: draft
 audit:
