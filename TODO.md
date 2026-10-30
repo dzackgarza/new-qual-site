@@ -293,7 +293,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-TOP-2017Q2
   - [x] SRC-TOP-2018Q2
   - [x] SRC-TOP-2019Q1
-  - [ ] SRC-TOP-2019Q2
+  - [x] SRC-TOP-2019Q2
   - [ ] SRC-TOP-2020Q1
   - [ ] SRC-TOP-SQUAL1
   - [ ] SRC-TOP-SQUAL2
