@@ -5,7 +5,10 @@ kind: problem
 title: Maximal ideals of $C[0,1]$ are evaluation ideals
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Rings of Continuous Functions
+  - Maximal Ideals
+  - Compactness
 relations: []
 review: draft
 audit:

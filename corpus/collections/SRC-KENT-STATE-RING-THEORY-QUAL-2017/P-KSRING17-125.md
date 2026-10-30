@@ -5,7 +5,9 @@ kind: problem
 title: Extension of prime ideals to a localization of a domain
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Localization
+  - Prime Ideals
 relations: []
 review: draft
 audit:

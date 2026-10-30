@@ -5,7 +5,9 @@ kind: problem
 title: Ascending chain condition is equivalent to finitely generated ideals
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Noetherian Rings
+  - Ascending Chain Condition
 relations: []
 review: draft
 audit:

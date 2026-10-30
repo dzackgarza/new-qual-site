@@ -5,7 +5,10 @@ kind: problem
 title: Units and ideals of $\ZZ/60\ZZ$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Units
+  - Ideals
+  - Integers Modulo n
 relations: []
 review: draft
 audit:

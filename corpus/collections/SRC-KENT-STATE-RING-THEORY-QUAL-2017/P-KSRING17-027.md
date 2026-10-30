@@ -5,7 +5,10 @@ kind: problem
 title: A matrix model of $\ZZ[\sqrt p]$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Matrix Rings
+  - Quadratic Integer Rings
+  - Ring Isomorphisms
 relations: []
 review: draft
 audit:

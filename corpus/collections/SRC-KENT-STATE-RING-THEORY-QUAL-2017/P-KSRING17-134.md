@@ -5,7 +5,9 @@ kind: problem
 title: Noetherian rings whose 2-generated ideals are principal
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Noetherian Rings
+  - Principal Ideal Domains
 relations: []
 review: draft
 audit:
@@ -24,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-[NEW] Let $R$ be a Noetherian integral domain in which every 2-generated ideal is principal.
+Let $R$ be a Noetherian integral domain in which every 2-generated ideal is principal.
 Prove that $R$ is a Principal Ideal Domain.
 :::
 

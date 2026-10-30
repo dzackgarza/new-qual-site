@@ -5,7 +5,10 @@ kind: problem
 title: An integral domain finite-dimensional over a subfield is a field
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Integral Domains
+  - Fields
+  - Finite-Dimensional Algebras
 relations: []
 review: draft
 audit:

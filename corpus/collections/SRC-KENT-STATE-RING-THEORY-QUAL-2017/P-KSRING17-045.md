@@ -5,7 +5,9 @@ kind: problem
 title: Prime ideals in a ring with a nontrivial idempotent contain nontrivial idempotents
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Idempotents
+  - Prime Ideals
 relations: []
 review: draft
 audit:
@@ -16,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-[NEW] Let $R$ be a commutative ring with identity. Suppose $R$ contains an idempotent element $a$ other than $0$ or $1$. Show that every prime ideal in $R$ contains an idempotent element other than $0$ or $1$. (An element $a \in R$ is idempotent if $a^{2} = a$.)
+Let $R$ be a commutative ring with identity. Suppose $R$ contains an idempotent element $a$ other than $0$ or $1$. Show that every prime ideal in $R$ contains an idempotent element other than $0$ or $1$. (An element $a \in R$ is idempotent if $a^{2} = a$.)
 :::
 
 ::: {.solution}

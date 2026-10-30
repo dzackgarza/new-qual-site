@@ -5,7 +5,10 @@ kind: problem
 title: An ideal is maximal if and only if the quotient is a field
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Maximal Ideals
+  - Fields
+  - Quotient Rings
 relations: []
 review: draft
 audit:

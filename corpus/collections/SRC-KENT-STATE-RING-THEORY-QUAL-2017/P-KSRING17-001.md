@@ -5,7 +5,10 @@ kind: problem
 title: 'Examples of rings: irreducible polynomials, non-UFD domains, non-Euclidean PIDs, local rings'
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Ring Examples
+  - Unique Factorization Domains
+  - Principal Ideal Domains
 relations: []
 review: draft
 audit:

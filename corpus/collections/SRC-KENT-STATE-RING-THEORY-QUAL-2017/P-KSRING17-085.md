@@ -5,7 +5,10 @@ kind: problem
 title: '$\ZZ[\sqrt{13}]$ is not a UFD: irreducibility of $x^2+3x-1$'
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Quadratic Integer Rings
+  - Unique Factorization Domains
+  - Gauss's Lemma
 relations: []
 review: draft
 audit:
@@ -16,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D = \ZZ(\sqrt{13}) = \{m + n\sqrt{13} \st m, n \in \ZZ\}$ and $F = \QQ(\sqrt{13})$ its field of fractions. Show the following:
+Let $D = \ZZ[\sqrt{13}] = \{m + n\sqrt{13} \st m, n \in \ZZ\}$ and $F = \QQ(\sqrt{13})$ its field of fractions. Show the following:
 
 (a) $x^{2} + 3x - 1$ is irreducible in $D[x]$ but not in $F[x]$.
 

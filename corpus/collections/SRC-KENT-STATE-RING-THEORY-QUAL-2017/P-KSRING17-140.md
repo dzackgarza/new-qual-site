@@ -5,7 +5,9 @@ kind: problem
 title: Ideals in a Noetherian ring contain products of primes containing them
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Noetherian Rings
+  - Prime Ideals
 relations: []
 review: draft
 audit:

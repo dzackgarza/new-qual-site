@@ -5,7 +5,9 @@ kind: problem
 title: Ideals of the matrix ring $M_n(R)$ are $M_n(I)$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Matrix Rings
+  - Ideals
 relations: []
 review: draft
 audit:

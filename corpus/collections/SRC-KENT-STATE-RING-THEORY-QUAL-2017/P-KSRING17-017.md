@@ -5,7 +5,10 @@ kind: problem
 title: The reduction map $U_n\to U_m$ is surjective
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Units
+  - Integers Modulo n
+  - Ring Homomorphisms
 relations: []
 review: draft
 audit:

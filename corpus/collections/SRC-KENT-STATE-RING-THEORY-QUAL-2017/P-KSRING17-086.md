@@ -5,7 +5,10 @@ kind: problem
 title: An integral domain algebraic over a subfield is a field
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Integral Domains
+  - Algebraic Elements
+  - Fields
 relations: []
 review: draft
 audit:

@@ -5,7 +5,10 @@ kind: problem
 title: Fixed rings of ring automorphisms of order 2 and quadratic integrality
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Ring Automorphisms
+  - Integral Elements
+  - Fixed Rings
 relations: []
 review: draft
 audit:

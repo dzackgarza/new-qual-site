@@ -5,7 +5,9 @@ kind: problem
 title: Every proper ideal lies in a maximal ideal
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Maximal Ideals
+  - Zorn's Lemma
 relations: []
 review: draft
 audit:

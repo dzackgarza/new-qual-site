@@ -5,7 +5,9 @@ kind: problem
 title: An ideal is comaximal with the intersection of ideals comaximal to it
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Comaximal Ideals
+  - Chinese Remainder Theorem
 relations: []
 review: draft
 audit:
@@ -20,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-[NEW] Let $R$ be a commutative ring with identity and let $I_{1}, I_{2}, \ldots, I_{n}$ be pairwise comaximal ideals of $R$ (i.e., $I_{i} + I_{j} = R$ if $i \neq j$). Show that $I_{i} + \bigcap_{j \neq i} I_{j} = R$ for all $i$.
+Let $R$ be a commutative ring with identity and let $I_{1}, I_{2}, \ldots, I_{n}$ be pairwise comaximal ideals of $R$ (i.e., $I_{i} + I_{j} = R$ if $i \neq j$). Show that $I_{i} + \bigcap_{j \neq i} I_{j} = R$ for all $i$.
 :::
 
 ::: {.solution}

@@ -5,7 +5,10 @@ kind: problem
 title: Ideals $I$ with $1+I$ consisting of units lie in the Jacobson radical
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Jacobson Radical
+  - Maximal Ideals
+  - Units
 relations: []
 review: draft
 audit:

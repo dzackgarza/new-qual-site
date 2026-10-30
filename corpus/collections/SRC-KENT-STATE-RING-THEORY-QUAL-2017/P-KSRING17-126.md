@@ -5,7 +5,10 @@ kind: problem
 title: The residue field of $R_P$ is the fraction field of $R/P$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Localization
+  - Residue Fields
+  - Fields of Fractions
 relations: []
 review: draft
 audit:

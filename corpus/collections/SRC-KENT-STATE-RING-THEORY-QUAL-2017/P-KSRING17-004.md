@@ -5,7 +5,10 @@ kind: problem
 title: The unit group $U_{18}$ and whether it is cyclic
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Units
+  - Cyclic Groups
+  - Integers Modulo n
 relations: []
 review: draft
 audit:

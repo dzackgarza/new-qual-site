@@ -5,7 +5,9 @@ kind: problem
 title: Primes $p\equiv 1 \pmod 4$ are sums of two squares
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Sums of Two Squares
+  - Gaussian Integers
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Ideals of a valuation ring are totally ordered
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Valuation Rings
+  - Ideals
 relations: []
 review: draft
 audit:

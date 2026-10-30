@@ -5,7 +5,9 @@ kind: problem
 title: Integral domains are exactly the subrings of fields
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Integral Domains
+  - Fields of Fractions
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: The ideal $(x,y)$ in $F[x,y]$ is not principal
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Polynomial Rings
+  - Principal Ideals
 relations: []
 review: draft
 audit:

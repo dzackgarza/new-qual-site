@@ -5,7 +5,10 @@ kind: problem
 title: The ideal $(x,c)$ in $D[x]$ is not principal for irreducible $c$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Polynomial Rings
+  - Principal Ideals
+  - Irreducible Elements
 relations: []
 review: draft
 audit:

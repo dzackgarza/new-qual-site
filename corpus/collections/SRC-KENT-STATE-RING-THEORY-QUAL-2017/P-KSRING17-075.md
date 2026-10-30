@@ -5,7 +5,9 @@ kind: problem
 title: Equivalent characterizations of integral elements
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Integral Elements
+  - Finitely Generated Modules
 relations: []
 review: draft
 audit:

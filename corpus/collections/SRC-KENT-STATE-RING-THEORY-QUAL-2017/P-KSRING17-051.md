@@ -5,7 +5,10 @@ kind: problem
 title: Ideals maximal with respect to missing a multiplicative set are prime
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Prime Ideals
+  - Multiplicative Sets
+  - Zorn's Lemma
 relations: []
 review: draft
 audit:

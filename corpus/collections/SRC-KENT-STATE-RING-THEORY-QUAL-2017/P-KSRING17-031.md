@@ -5,7 +5,9 @@ kind: problem
 title: A non-surjective injective endomorphism of a field
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Field Homomorphisms
+  - Fields
 relations: []
 review: draft
 audit:

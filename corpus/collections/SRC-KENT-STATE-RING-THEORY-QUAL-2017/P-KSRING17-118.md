@@ -5,7 +5,9 @@ kind: problem
 title: Matrix rings $M_n(F)$ over a field are simple
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Simple Rings
+  - Matrix Rings
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: The center of a simple ring is zero or a field
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Simple Rings
+  - Center of a Ring
 relations: []
 review: draft
 audit:

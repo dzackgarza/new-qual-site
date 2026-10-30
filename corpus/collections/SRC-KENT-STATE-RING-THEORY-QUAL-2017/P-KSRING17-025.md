@@ -5,7 +5,9 @@ kind: problem
 title: The matrices $\begin{pmatrix}a&b\\-3b&a\end{pmatrix}$ form a field
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Matrix Rings
+  - Fields
 relations: []
 review: draft
 audit:
@@ -16,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Let R be the field of real numbers and let F be the set of all $2 \times 2$ matrices of the form $\left[ { \begin{array} { r r } { a } & { b } \\ { - 3 b } & { a } \end{array} } \right]$ , where $a , b \in \RR$ . Show that F is a field under the usual matrix operations.
+Let $\RR$ be the field of real numbers and let $F$ be the set of all $2 \times 2$ matrices of the form $\begin{bmatrix} a & b \\ -3b & a \end{bmatrix}$, where $a , b \in \RR$ . Show that $F$ is a field under the usual matrix operations.
 :::
 
 ::: {.solution}

@@ -5,7 +5,10 @@ kind: problem
 title: Ideals of a UFD with a single irreducible up to associates are totally ordered
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Unique Factorization Domains
+  - Discrete Valuation Rings
+  - Ideals
 relations: []
 review: draft
 audit:

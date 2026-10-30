@@ -5,7 +5,9 @@ kind: problem
 title: An element with more than one right inverse has infinitely many
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - One-Sided Inverses
+  - Noncommutative Rings
 relations: []
 review: draft
 audit:

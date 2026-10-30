@@ -5,7 +5,9 @@ kind: problem
 title: Characterization of the Jacobson radical by units $1-xy$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Jacobson Radical
+  - Units
 relations: []
 review: draft
 audit:

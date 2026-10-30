@@ -5,7 +5,10 @@ kind: problem
 title: Irreducible ideals, prime ideals and nilpotents
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Irreducible Ideals
+  - Prime Ideals
+  - Nilpotent Elements
 relations: []
 review: draft
 audit:

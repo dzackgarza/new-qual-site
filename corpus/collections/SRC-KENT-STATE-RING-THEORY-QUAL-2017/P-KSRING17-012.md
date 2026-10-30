@@ -5,7 +5,10 @@ kind: problem
 title: Finite commutative rings without zero divisors are fields
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Finite Rings
+  - Fields
+  - Zero Divisors
 relations: []
 review: draft
 audit:

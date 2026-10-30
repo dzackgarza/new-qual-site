@@ -5,7 +5,10 @@ kind: problem
 title: Surjectivity of $U(\ZZ_n)\to U(\ZZ_m)$ and its failure for general ring surjections
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Units
+  - Ring Homomorphisms
+  - Integers Modulo n
 relations: []
 review: draft
 audit:

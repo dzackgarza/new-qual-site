@@ -5,7 +5,10 @@ kind: problem
 title: A prime ideal consisting of zero divisors
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Prime Ideals
+  - Zero Divisors
+  - Zorn's Lemma
 relations: []
 review: draft
 audit:

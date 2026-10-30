@@ -5,7 +5,9 @@ kind: problem
 title: Maximal ideals are prime, and a nonzero prime ideal that is not maximal
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Maximal Ideals
+  - Prime Ideals
 relations: []
 review: draft
 audit:

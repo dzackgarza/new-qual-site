@@ -5,7 +5,9 @@ kind: problem
 title: Ideals with principal product in a domain are finitely generated
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Invertible Ideals
+  - Finitely Generated Ideals
 relations: []
 review: draft
 audit:

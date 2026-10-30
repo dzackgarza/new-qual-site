@@ -5,7 +5,10 @@ kind: problem
 title: Ideals maximal among non-principal ideals are prime
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Prime Ideals
+  - Zorn's Lemma
+  - Principal Ideals
 relations: []
 review: draft
 audit:

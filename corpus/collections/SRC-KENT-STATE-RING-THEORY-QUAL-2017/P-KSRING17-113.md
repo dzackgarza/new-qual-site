@@ -5,7 +5,10 @@ kind: problem
 title: $\ZZ[x]/(2x-1)\cong\ZZ[1/2]$ and an ideal strictly between
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Polynomial Rings
+  - Quotient Rings
+  - Localization
 relations: []
 review: draft
 audit:

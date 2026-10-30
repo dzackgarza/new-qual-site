@@ -5,7 +5,9 @@ kind: problem
 title: Greatest common divisors from principal ideal sums
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Greatest Common Divisors
+  - Principal Ideals
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: A ring whose non-units are closed under addition is local
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Local Rings
+  - Units
 relations: []
 review: draft
 audit:

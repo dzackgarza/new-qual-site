@@ -5,7 +5,10 @@ kind: problem
 title: Nonzero prime ideals of a Euclidean domain are maximal
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Euclidean Domains
+  - Prime Ideals
+  - Maximal Ideals
 relations: []
 review: draft
 audit:

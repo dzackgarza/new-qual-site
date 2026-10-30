@@ -5,7 +5,9 @@ kind: problem
 title: A unit plus a nilpotent is a unit
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Units
+  - Nilpotent Elements
 relations: []
 review: draft
 audit:

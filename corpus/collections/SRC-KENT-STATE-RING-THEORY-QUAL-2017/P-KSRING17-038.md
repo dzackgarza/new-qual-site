@@ -5,7 +5,10 @@ kind: problem
 title: Splitting of $x^3+1$ over $\ZZ_p$ for $p\equiv 1 \pmod 6$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Finite Fields
+  - Roots of Unity
+  - Splitting of Polynomials
 relations: []
 review: draft
 audit:

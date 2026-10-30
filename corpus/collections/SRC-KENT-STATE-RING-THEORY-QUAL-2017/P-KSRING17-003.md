@@ -5,7 +5,9 @@ kind: problem
 title: Ideals of $\ZZ/90\ZZ$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Ideals
+  - Integers Modulo n
 relations: []
 review: draft
 audit:
@@ -16,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-[NEW] How many ideals does the ring $\ZZ/90\ZZ$ have?
+How many ideals does the ring $\ZZ/90\ZZ$ have?
 Explain your answer.
 :::
 

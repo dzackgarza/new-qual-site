@@ -5,7 +5,9 @@ kind: problem
 title: A nonzero ideal of a principal ideal domain lies in only finitely many ideals
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Principal Ideal Domains
+  - Ideals
 relations: []
 review: draft
 audit:

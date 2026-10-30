@@ -5,7 +5,9 @@ kind: problem
 title: Euler's criterion for the Legendre symbol
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Legendre Symbol
+  - Quadratic Residues
 relations: []
 review: draft
 audit:

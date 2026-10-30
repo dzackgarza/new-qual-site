@@ -5,7 +5,9 @@ kind: problem
 title: $\ZZ[\sqrt{-2}]$ is a Euclidean domain
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Euclidean Domains
+  - Quadratic Integer Rings
 relations: []
 review: draft
 audit:

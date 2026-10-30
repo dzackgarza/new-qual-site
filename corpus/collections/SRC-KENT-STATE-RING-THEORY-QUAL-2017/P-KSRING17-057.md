@@ -5,7 +5,10 @@ kind: problem
 title: Prime ideals are maximal when every $x$ satisfies $x^n=x$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Prime Ideals
+  - Maximal Ideals
+  - Von Neumann Regular Rings
 relations: []
 review: draft
 audit:

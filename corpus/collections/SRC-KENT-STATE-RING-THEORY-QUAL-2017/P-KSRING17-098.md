@@ -5,7 +5,10 @@ kind: problem
 title: A UFD with a single irreducible up to associates is Euclidean
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Unique Factorization Domains
+  - Discrete Valuation Rings
+  - Euclidean Domains
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Euclidean domains are principal ideal domains
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Euclidean Domains
+  - Principal Ideal Domains
 relations: []
 review: draft
 audit:
@@ -16,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-[NEW] Prove that if D is a Euclidean Domain, then D is a Principal Ideal Domain.
+Prove that if D is a Euclidean Domain, then D is a Principal Ideal Domain.
 :::
 
 ::: {.solution}

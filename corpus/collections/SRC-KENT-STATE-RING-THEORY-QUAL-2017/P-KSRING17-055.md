@@ -5,7 +5,9 @@ kind: problem
 title: Unions and intersections of chains of prime ideals are prime
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Prime Ideals
+  - Chains of Ideals
 relations: []
 review: draft
 audit:

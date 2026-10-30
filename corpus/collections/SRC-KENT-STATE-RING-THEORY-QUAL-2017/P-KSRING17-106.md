@@ -5,7 +5,10 @@ kind: problem
 title: Units of a polynomial ring over an integral domain are constants
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Polynomial Rings
+  - Units
+  - Integral Domains
 relations: []
 review: draft
 audit:

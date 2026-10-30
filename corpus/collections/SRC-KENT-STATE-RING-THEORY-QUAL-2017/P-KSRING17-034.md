@@ -5,7 +5,9 @@ kind: problem
 title: The ideal of functions vanishing at infinity in bounded continuous functions
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Rings of Continuous Functions
+  - Ideals
 relations: []
 review: draft
 audit:

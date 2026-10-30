@@ -5,7 +5,10 @@ kind: problem
 title: Ideals maximal with respect to missing a multiplicative set are prime, and the nilradical
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Prime Ideals
+  - Multiplicative Sets
+  - Nilradical
 relations: []
 review: draft
 audit:

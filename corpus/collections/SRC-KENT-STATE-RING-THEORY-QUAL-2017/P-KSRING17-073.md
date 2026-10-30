@@ -5,7 +5,10 @@ kind: problem
 title: 'Bezout rings: sums of principal ideals versus finitely generated ideals'
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Bezout Rings
+  - Principal Ideals
+  - Finitely Generated Ideals
 relations: []
 review: draft
 audit:

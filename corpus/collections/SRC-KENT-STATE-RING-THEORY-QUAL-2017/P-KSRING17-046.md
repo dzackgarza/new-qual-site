@@ -5,7 +5,10 @@ kind: problem
 title: When $(x)$ is prime or maximal in $R[x]$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Polynomial Rings
+  - Prime Ideals
+  - Maximal Ideals
 relations: []
 review: draft
 audit:

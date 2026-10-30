@@ -5,7 +5,10 @@ kind: problem
 title: Euclidean algorithm in $\ZZ[i]$ for $\gcd(5+i,13)$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Gaussian Integers
+  - Euclidean Domains
+  - Greatest Common Divisors
 relations: []
 review: draft
 audit:
@@ -16,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the ring Z[i] of Gaussian integers is a Euclidean ring and compute the greatest common divisor of $5 + i$ and 13 using the Euclidean algorithm.
+Show that the ring $\ZZ[i]$ of Gaussian integers is a Euclidean ring and compute the greatest common divisor of $5 + i$ and $13$ using the Euclidean algorithm.
 :::
 
 ::: {.solution}

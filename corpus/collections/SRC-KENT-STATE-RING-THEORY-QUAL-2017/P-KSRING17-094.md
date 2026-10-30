@@ -5,7 +5,10 @@ kind: problem
 title: Irreducible elements of a principal ideal domain are prime
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Principal Ideal Domains
+  - Irreducible Elements
+  - Prime Elements
 relations: []
 review: draft
 audit:

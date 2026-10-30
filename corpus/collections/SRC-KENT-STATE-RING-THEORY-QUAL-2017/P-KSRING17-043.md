@@ -5,7 +5,9 @@ kind: problem
 title: The quotient by the intersection of two maximal ideals is a product of two fields
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Maximal Ideals
+  - Chinese Remainder Theorem
 relations: []
 review: draft
 audit:
@@ -16,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-[NEW] Let $M_{1} \neq M_{2}$ be two maximal ideals in the commutative ring $R$ and let $I = M_{1} \cap M_{2}$. Prove that $R/I$ is isomorphic to the direct sum of two fields.
+Let $M_{1} \neq M_{2}$ be two maximal ideals in the commutative ring $R$ and let $I = M_{1} \cap M_{2}$. Prove that $R/I$ is isomorphic to the direct sum of two fields.
 :::
 
 ::: {.solution}

@@ -5,7 +5,10 @@ kind: problem
 title: Nonzero prime ideals of a principal ideal domain are maximal
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Principal Ideal Domains
+  - Prime Ideals
+  - Maximal Ideals
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Nonzero ideals of an integral extension of domains contract to nonzero ideals
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Integral Extensions
+  - Integral Domains
 relations: []
 review: draft
 audit:

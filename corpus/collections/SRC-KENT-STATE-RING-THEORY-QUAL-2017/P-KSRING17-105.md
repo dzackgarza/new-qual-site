@@ -5,7 +5,9 @@ kind: problem
 title: Coefficients of a nilpotent polynomial are nilpotent
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Polynomial Rings
+  - Nilpotent Elements
 relations: []
 review: draft
 audit:

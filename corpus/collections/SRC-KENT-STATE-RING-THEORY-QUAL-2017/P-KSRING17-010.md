@@ -5,7 +5,9 @@ kind: problem
 title: Ideals of a product of commutative rings are products of ideals
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Ideals
+  - Direct Products of Rings
 relations: []
 review: draft
 audit:

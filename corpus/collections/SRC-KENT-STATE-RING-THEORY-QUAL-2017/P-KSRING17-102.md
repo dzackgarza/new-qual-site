@@ -5,7 +5,9 @@ kind: problem
 title: $D$-automorphisms of $D[x]$ are affine substitutions
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Polynomial Rings
+  - Ring Automorphisms
 relations: []
 review: draft
 audit:

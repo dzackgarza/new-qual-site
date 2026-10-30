@@ -5,7 +5,9 @@ kind: problem
 title: The field $\QQ(\sqrt 2)$ is a principal ideal domain not containing $\sqrt 3$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Quadratic Fields
+  - Principal Ideal Domains
 relations: []
 review: draft
 audit:

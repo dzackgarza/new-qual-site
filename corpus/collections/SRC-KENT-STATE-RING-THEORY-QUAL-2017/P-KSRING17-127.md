@@ -5,7 +5,10 @@ kind: problem
 title: A domain is the intersection of its localizations at maximal ideals
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Localization
+  - Integral Domains
+  - Maximal Ideals
 relations: []
 review: draft
 audit:

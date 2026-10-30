@@ -5,7 +5,9 @@ kind: problem
 title: Rings of finite characteristic are products of $p$-rings
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Characteristic
+  - Direct Products of Rings
 relations: []
 review: draft
 audit:

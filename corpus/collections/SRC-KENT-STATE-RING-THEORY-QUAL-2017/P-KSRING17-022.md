@@ -5,7 +5,9 @@ kind: problem
 title: Unital extension of a ring of characteristic $n$ with quotient $\ZZ/n\ZZ$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Rings Without Identity
+  - Unitization
 relations: []
 review: draft
 audit:

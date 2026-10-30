@@ -5,7 +5,8 @@ kind: problem
 title: Transitivity of integral extensions
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Integral Extensions
 relations: []
 review: draft
 audit:

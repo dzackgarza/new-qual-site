@@ -5,7 +5,10 @@ kind: problem
 title: If nonzero primes of $D[x]$ are maximal then $D$ is a field
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Polynomial Rings
+  - Prime Ideals
+  - Maximal Ideals
 relations: []
 review: draft
 audit:

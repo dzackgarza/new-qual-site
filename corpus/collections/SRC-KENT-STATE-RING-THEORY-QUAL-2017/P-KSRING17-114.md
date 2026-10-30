@@ -5,7 +5,10 @@ kind: problem
 title: Nilpotents form an ideal in a ring with no nontrivial automorphisms
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Nilpotent Elements
+  - Ring Automorphisms
+  - Noncommutative Rings
 relations: []
 review: draft
 audit:

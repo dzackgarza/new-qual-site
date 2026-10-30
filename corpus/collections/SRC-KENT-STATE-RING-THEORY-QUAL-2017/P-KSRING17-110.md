@@ -5,7 +5,9 @@ kind: problem
 title: $F[x]$ is a PID but $F[x,y]$ is not
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Polynomial Rings
+  - Principal Ideal Domains
 relations: []
 review: draft
 audit:

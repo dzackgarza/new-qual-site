@@ -5,7 +5,10 @@ kind: problem
 title: Localizations of a PID at nonzero primes are discrete valuation rings
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Localization
+  - Discrete Valuation Rings
+  - Principal Ideal Domains
 relations: []
 review: draft
 audit:

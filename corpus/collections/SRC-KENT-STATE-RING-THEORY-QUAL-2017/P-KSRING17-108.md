@@ -5,7 +5,9 @@ kind: problem
 title: Irreducibility of $x^4+x^3+x^2+x+1$ and reducibility of $x^4+1$ over $\ZZ_3$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Finite Fields
+  - Irreducible Polynomials
 relations: []
 review: draft
 audit:

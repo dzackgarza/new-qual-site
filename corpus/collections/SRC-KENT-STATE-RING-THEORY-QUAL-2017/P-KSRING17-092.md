@@ -5,7 +5,10 @@ kind: problem
 title: Irreducible elements of a UFD are not squares in the fraction field
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Unique Factorization Domains
+  - Irreducible Elements
+  - Fields of Fractions
 relations: []
 review: draft
 audit:

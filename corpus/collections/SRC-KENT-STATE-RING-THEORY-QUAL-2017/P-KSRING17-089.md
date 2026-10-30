@@ -5,7 +5,9 @@ kind: problem
 title: Least common multiples in a principal ideal domain as intersections of ideals
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Least Common Multiples
+  - Principal Ideal Domains
 relations: []
 review: draft
 audit:

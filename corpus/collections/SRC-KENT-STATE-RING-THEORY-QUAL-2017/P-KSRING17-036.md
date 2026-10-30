@@ -5,7 +5,10 @@ kind: problem
 title: Reducibility of $x^2+1$ over $\ZZ_p$ for $p\equiv 1 \pmod 4$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Finite Fields
+  - Irreducible Polynomials
+  - Quadratic Residues
 relations: []
 review: draft
 audit:

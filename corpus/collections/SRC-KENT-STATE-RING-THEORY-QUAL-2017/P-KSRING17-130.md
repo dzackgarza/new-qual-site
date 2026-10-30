@@ -5,7 +5,10 @@ kind: problem
 title: Maximal and minimal elements in sets of prime ideals
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Prime Ideals
+  - Zorn's Lemma
+  - Chains of Ideals
 relations: []
 review: draft
 audit:

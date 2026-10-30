@@ -5,7 +5,10 @@ kind: problem
 title: Prime ideals of a finite commutative ring are maximal
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Finite Rings
+  - Prime Ideals
+  - Maximal Ideals
 relations: []
 review: draft
 audit:

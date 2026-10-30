@@ -5,7 +5,10 @@ kind: problem
 title: Ideals maximal among non-finitely generated ideals are prime
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Prime Ideals
+  - Zorn's Lemma
+  - Finitely Generated Ideals
 relations: []
 review: draft
 audit:

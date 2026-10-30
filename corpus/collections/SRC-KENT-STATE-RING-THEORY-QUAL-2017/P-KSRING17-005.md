@@ -5,7 +5,10 @@ kind: problem
 title: The unit group $U_{24}$ and whether it is cyclic
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Units
+  - Cyclic Groups
+  - Integers Modulo n
 relations: []
 review: draft
 audit:
@@ -16,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-[NEW] Denote the set of invertible elements of the ring $\ZZ_{n}$ by $U_{n}$.
+Denote the set of invertible elements of the ring $\ZZ_{n}$ by $U_{n}$.
 
 (a) List all the elements of $U_{24}$.
 

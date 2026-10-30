@@ -5,7 +5,9 @@ kind: problem
 title: $\ZZ[\sqrt p]$ is not a UFD when $p\equiv 1 \pmod 4$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Quadratic Integer Rings
+  - Unique Factorization Domains
 relations: []
 review: draft
 audit:

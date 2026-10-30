@@ -5,7 +5,9 @@ kind: problem
 title: 'The matrix ring $F_p$ of $\begin{pmatrix}a&b\\-b&a\end{pmatrix}$ over $\ZZ_p$: a field for $p=7$ but not $p=13$'
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Matrix Rings
+  - Finite Fields
 relations: []
 review: draft
 audit:

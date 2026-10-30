@@ -5,7 +5,9 @@ kind: problem
 title: Non-units form an ideal when $a$ or $1-a$ is always invertible
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Local Rings
+  - Units
 relations: []
 review: draft
 audit:
@@ -18,7 +20,7 @@ audit:
 ::: {.problem}
 Let R be a commutative ring with identity.
 Suppose that for every $a \in R$ , either a or $1 - a$ is invertible.
-Prove that $N = \{ a \in R \mid$ a is not invertible} is an ideal of R.
+Prove that $N = \{ a \in R \st a \text{ is not invertible} \}$ is an ideal of $R$.
 :::
 
 ::: {.solution}

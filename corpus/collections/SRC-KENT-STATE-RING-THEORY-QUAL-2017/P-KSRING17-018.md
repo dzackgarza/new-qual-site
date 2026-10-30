@@ -5,7 +5,10 @@ kind: problem
 title: Surjectivity of $R\to R/A\times R/B$ and comaximal ideals
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Comaximal Ideals
+  - Ring Homomorphisms
+  - Chinese Remainder Theorem
 relations: []
 review: draft
 audit:

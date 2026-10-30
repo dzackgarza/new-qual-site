@@ -5,7 +5,10 @@ kind: problem
 title: Adjacent prime ideals between two nested primes
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Prime Ideals
+  - Zorn's Lemma
+  - Chains of Ideals
 relations: []
 review: draft
 audit:

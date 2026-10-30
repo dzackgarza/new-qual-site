@@ -5,7 +5,9 @@ kind: problem
 title: Nonzero ideals of a Noetherian domain contain products of nonzero primes
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Noetherian Rings
+  - Prime Ideals
 relations: []
 review: draft
 audit:

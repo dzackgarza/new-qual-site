@@ -5,7 +5,10 @@ kind: problem
 title: The Jacobson radical of a corner ring $eRe$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Jacobson Radical
+  - Idempotents
+  - Corner Rings
 relations: []
 review: draft
 audit:

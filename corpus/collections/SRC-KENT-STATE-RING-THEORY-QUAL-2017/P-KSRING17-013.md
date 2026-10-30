@@ -5,7 +5,10 @@ kind: problem
 title: When $\ZZ/n\ZZ$ is a direct sum of fields
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Integers Modulo n
+  - Chinese Remainder Theorem
+  - Fields
 relations: []
 review: draft
 audit:

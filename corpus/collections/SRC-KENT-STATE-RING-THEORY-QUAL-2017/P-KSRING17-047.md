@@ -5,7 +5,10 @@ kind: problem
 title: Values of $a$ making $\ZZ_3[x]/(x^3+x^2+ax+1)$ a field
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Finite Fields
+  - Irreducible Polynomials
+  - Quotient Rings
 relations: []
 review: draft
 audit:

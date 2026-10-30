@@ -5,7 +5,9 @@ kind: problem
 title: Irreducibility of $x^4+5x^2+3x+2$ over $\QQ$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Irreducible Polynomials
+  - Reduction Mod p
 relations: []
 review: draft
 audit:

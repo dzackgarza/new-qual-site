@@ -5,7 +5,9 @@ kind: problem
 title: Automorphisms of the upper triangular matrix ring $U_2(R)$ are inner
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Triangular Matrix Rings
+  - Inner Automorphisms
 relations: []
 review: draft
 audit:

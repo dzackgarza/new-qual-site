@@ -5,7 +5,9 @@ kind: problem
 title: Boolean rings have characteristic 2 and are commutative
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Boolean Rings
+  - Characteristic
 relations: []
 review: draft
 audit:

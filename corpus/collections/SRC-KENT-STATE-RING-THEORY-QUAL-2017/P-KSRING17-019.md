@@ -5,7 +5,9 @@ kind: problem
 title: Chinese remainder theorem for $\ZZ_{mn}\cong\ZZ_m\times\ZZ_n$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Chinese Remainder Theorem
+  - Integers Modulo n
 relations: []
 review: draft
 audit:

@@ -5,7 +5,10 @@ kind: problem
 title: Values of $a$ making $\ZZ_5[x]/(x^3+2x^2+ax+3)$ a field
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Finite Fields
+  - Irreducible Polynomials
+  - Quotient Rings
 relations: []
 review: draft
 audit:

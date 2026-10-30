@@ -5,7 +5,10 @@ kind: problem
 title: The Jacobson radical of a right Artinian ring is nilpotent
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Artinian Rings
+  - Jacobson Radical
+  - Nilpotent Ideals
 relations: []
 review: draft
 audit:

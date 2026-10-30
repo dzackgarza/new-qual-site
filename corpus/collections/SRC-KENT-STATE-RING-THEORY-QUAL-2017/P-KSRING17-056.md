@@ -5,7 +5,9 @@ kind: problem
 title: Every prime ideal contains a minimal prime ideal
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Minimal Prime Ideals
+  - Zorn's Lemma
 relations: []
 review: draft
 audit:

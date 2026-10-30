@@ -5,7 +5,10 @@ kind: problem
 title: '$\ZZ[\sqrt{-11}]$ is not a UFD: irreducibility of $x^2-x+3$'
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Quadratic Integer Rings
+  - Unique Factorization Domains
+  - Gauss's Lemma
 relations: []
 review: draft
 audit:
@@ -16,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D = \ZZ(\sqrt{-11}) = \{m + n\sqrt{-11} \st m, n \in \ZZ\}$ and $F = \QQ(\sqrt{-11})$ its field of fractions. Show the following:
+Let $D = \ZZ[\sqrt{-11}] = \{m + n\sqrt{-11} \st m, n \in \ZZ\}$ and $F = \QQ(\sqrt{-11})$ its field of fractions. Show the following:
 
 (a) $x^{2} - x + 3$ is irreducible in $D[x]$ but not in $F[x]$.
 

@@ -5,7 +5,10 @@ kind: problem
 title: 'UFDs are integrally closed: rational roots of monic polynomials'
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Unique Factorization Domains
+  - Integrally Closed Domains
+  - Rational Root Theorem
 relations: []
 review: draft
 audit:

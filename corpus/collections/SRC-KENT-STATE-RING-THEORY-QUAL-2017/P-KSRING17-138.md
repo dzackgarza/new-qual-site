@@ -5,7 +5,9 @@ kind: problem
 title: Hilbert basis theorem for commutative Noetherian rings
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Noetherian Rings
+  - Hilbert Basis Theorem
 relations: []
 review: draft
 audit:

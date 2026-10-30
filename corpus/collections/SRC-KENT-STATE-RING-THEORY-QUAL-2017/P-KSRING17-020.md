@@ -5,7 +5,9 @@ kind: problem
 title: Chinese remainder theorem for two comaximal ideals
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Chinese Remainder Theorem
+  - Comaximal Ideals
 relations: []
 review: draft
 audit:

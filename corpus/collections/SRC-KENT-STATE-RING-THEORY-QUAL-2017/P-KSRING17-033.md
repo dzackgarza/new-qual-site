@@ -5,7 +5,10 @@ kind: problem
 title: 'The ring $C[0,1]$: units, idempotents and nilpotents'
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Rings of Continuous Functions
+  - Units
+  - Idempotents
 relations: []
 review: draft
 audit:

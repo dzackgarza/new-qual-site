@@ -5,7 +5,9 @@ kind: problem
 title: The quotient by an ideal maximal among non-principal ideals is a principal ideal ring
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Principal Ideal Rings
+  - Zorn's Lemma
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Construction of the field of fractions of an integral domain
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Fields of Fractions
+  - Integral Domains
 relations: []
 review: draft
 audit:

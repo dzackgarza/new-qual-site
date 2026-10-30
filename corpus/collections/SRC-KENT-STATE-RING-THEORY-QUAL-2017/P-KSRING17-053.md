@@ -5,7 +5,10 @@ kind: problem
 title: A non-nilpotent element avoids some prime ideal
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Prime Ideals
+  - Nilradical
+  - Zorn's Lemma
 relations: []
 review: draft
 audit:

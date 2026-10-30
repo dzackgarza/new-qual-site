@@ -5,7 +5,9 @@ kind: problem
 title: The nilpotent elements of a commutative ring form an ideal
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Nilradical
+  - Nilpotent Elements
 relations: []
 review: draft
 audit:

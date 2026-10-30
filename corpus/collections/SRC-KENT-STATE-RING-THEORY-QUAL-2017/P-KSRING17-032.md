@@ -5,7 +5,9 @@ kind: problem
 title: The Vandermonde determinant
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Vandermonde Determinant
+  - Polynomial Rings
 relations: []
 review: draft
 audit:

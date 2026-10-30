@@ -5,7 +5,9 @@ kind: problem
 title: A Noetherian ring has finitely many minimal primes
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Noetherian Rings
+  - Minimal Prime Ideals
 relations: []
 review: draft
 audit:

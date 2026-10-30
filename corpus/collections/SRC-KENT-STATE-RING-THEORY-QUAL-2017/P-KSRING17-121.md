@@ -5,7 +5,9 @@ kind: problem
 title: Local rings are those whose non-units form an ideal
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Local Rings
+  - Units
 relations: []
 review: draft
 audit:

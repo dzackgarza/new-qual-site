@@ -5,7 +5,10 @@ kind: problem
 title: Existence of gcds and lcms in a principal ideal domain
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Greatest Common Divisors
+  - Least Common Multiples
+  - Principal Ideal Domains
 relations: []
 review: draft
 audit:
@@ -24,15 +27,15 @@ Let $D$ be a principal ideal domain and let $a, b \in D$.
 
 (a) Show that there is an element $d \in D$ that satisfies the properties
 
-  i. $d \mid a$ and $d \mid b$ and
+(i) $d \divides a$ and $d \divides b$ and
 
-  ii. if $e \mid a$ and $e \mid b$ then $e \mid d$.
+(ii) if $e \divides a$ and $e \divides b$ then $e \divides d$.
 
 (b) Show that there is an element $m \in D$ that satisfies the properties
 
-  i. $a \mid m$ and $b \mid m$ and
+(i) $a \divides m$ and $b \divides m$ and
 
-  ii. if $a \mid e$ and $b \mid e$ then $m \mid e$.
+(ii) if $a \divides e$ and $b \divides e$ then $m \divides e$.
 :::
 
 ::: {.solution}

@@ -5,7 +5,9 @@ kind: problem
 title: Localization of a domain at a prime ideal is local
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Localization
+  - Local Rings
 relations: []
 review: draft
 audit:

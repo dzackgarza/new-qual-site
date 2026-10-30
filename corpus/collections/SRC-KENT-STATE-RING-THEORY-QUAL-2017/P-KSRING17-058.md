@@ -5,7 +5,9 @@ kind: problem
 title: A ring in which every ideal is prime is a field
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Prime Ideals
+  - Fields
 relations: []
 review: draft
 audit:

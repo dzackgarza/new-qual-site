@@ -5,7 +5,10 @@ kind: problem
 title: A right ideal quotient isomorphic to $R$ splits
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Right Ideals
+  - Modules
+  - Direct Sums
 relations: []
 review: draft
 audit:

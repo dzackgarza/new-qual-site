@@ -5,7 +5,10 @@ kind: problem
 title: Localization at a maximal ideal has the same residue field
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Localization
+  - Maximal Ideals
+  - Residue Fields
 relations: []
 review: draft
 audit:

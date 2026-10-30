@@ -5,7 +5,9 @@ kind: problem
 title: Contraction of an ideal from a ring of fractions is an ideal
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Localization
+  - Contraction of Ideals
 relations: []
 review: draft
 audit:

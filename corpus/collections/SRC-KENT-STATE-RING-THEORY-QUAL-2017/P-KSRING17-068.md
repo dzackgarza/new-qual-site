@@ -5,7 +5,10 @@ kind: problem
 title: A ring with exactly one prime ideal is its own localization
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Local Rings
+  - Localization
+  - Prime Ideals
 relations: []
 review: draft
 audit:

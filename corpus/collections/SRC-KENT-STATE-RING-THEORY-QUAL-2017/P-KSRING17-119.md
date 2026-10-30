@@ -5,7 +5,10 @@ kind: problem
 title: The smallest ideal with nilpotent-free quotient
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Nilpotent Elements
+  - Nilradical
+  - Quotient Rings
 relations: []
 review: draft
 audit:

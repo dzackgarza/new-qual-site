@@ -5,7 +5,10 @@ kind: problem
 title: The matrices $\begin{pmatrix}a&b\\-b&a\end{pmatrix}$ form a ring isomorphic to $\CC$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Matrix Rings
+  - Complex Numbers
+  - Ring Isomorphisms
 relations: []
 review: draft
 audit:
@@ -16,8 +19,8 @@ audit:
 ---
 
 ::: {.problem}
-Let R be the ring of all $2 \times 2$ matrices of the form $\left[ \begin{array} { r r } { a } & { b } \\ { - b } & { a } \end{array} \right]$ where a and b are real numbers.
-Prove that R is isomorphic to C, the field of complex numbers.
+Let $R$ be the ring of all $2 \times 2$ matrices of the form $\begin{bmatrix} a & b \\ -b & a \end{bmatrix}$, where $a$ and $b$ are real numbers.
+Prove that $R$ is isomorphic to $\CC$, the field of complex numbers.
 :::
 
 ::: {.solution}

@@ -5,7 +5,10 @@ kind: problem
 title: Ideals maximal for non-Artinian or non-Noetherian module quotients $N/NI$ are prime
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Artinian Modules
+  - Noetherian Modules
+  - Prime Ideals
 relations: []
 review: draft
 audit:

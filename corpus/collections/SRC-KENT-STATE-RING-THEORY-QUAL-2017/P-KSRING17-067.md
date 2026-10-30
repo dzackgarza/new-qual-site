@@ -5,7 +5,9 @@ kind: problem
 title: Lifting idempotents modulo a square-zero ideal
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Idempotents
+  - Lifting Idempotents
 relations: []
 review: draft
 audit:

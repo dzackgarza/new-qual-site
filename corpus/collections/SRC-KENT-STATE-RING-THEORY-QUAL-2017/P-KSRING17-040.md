@@ -5,7 +5,10 @@ kind: problem
 title: An ideal is prime if and only if the quotient is an integral domain
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Prime Ideals
+  - Integral Domains
+  - Quotient Rings
 relations: []
 review: draft
 audit:

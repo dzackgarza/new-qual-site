@@ -5,7 +5,9 @@ kind: problem
 title: Hilbert basis theorem
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Noetherian Rings
+  - Hilbert Basis Theorem
 relations: []
 review: draft
 audit:
@@ -16,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-[NEW] Define Noetherian ring and prove that if R is Noetherian, then R[x] is Noetherian.
+Define Noetherian ring and prove that if R is Noetherian, then R[x] is Noetherian.
 :::
 
 ::: {.solution}

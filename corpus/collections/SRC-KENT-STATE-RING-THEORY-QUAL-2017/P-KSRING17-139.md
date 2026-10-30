@@ -5,7 +5,10 @@ kind: problem
 title: Principal nonzero primes in a Noetherian domain have height one
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Noetherian Rings
+  - Krull's Principal Ideal Theorem
+  - Prime Ideals
 relations: []
 review: draft
 audit:
@@ -17,7 +20,7 @@ audit:
 
 ::: {.problem}
 Let P be a nonzero prime ideal of the commutative Noetherian domain R. Assume P is principal.
-Prove that there does not exist a prime ideal Q satisfying $( 0 ) < Q < P$
+Prove that there does not exist a prime ideal Q satisfying $(0) \subsetneq Q \subsetneq P$.
 :::
 
 ::: {.solution}

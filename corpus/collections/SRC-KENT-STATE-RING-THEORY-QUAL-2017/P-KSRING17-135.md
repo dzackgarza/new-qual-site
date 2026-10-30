@@ -5,7 +5,9 @@ kind: problem
 title: In a Noetherian ring some power of the radical lies in the ideal
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Noetherian Rings
+  - Radical of an Ideal
 relations: []
 review: draft
 audit:

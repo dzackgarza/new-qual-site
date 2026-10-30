@@ -5,7 +5,10 @@ kind: problem
 title: 'Primary ideals: zero divisors in the quotient and prime radicals'
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Primary Ideals
+  - Radical of an Ideal
+  - Zero Divisors
 relations: []
 review: draft
 audit:

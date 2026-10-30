@@ -5,7 +5,10 @@ kind: problem
 title: Commutative rings with exactly three ideals
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Ideals
+  - Local Rings
+  - Units
 relations: []
 review: draft
 audit:

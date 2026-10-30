@@ -5,7 +5,9 @@ kind: problem
 title: Automorphisms of a domain extend uniquely to its fraction field
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Fields of Fractions
+  - Ring Automorphisms
 relations: []
 review: draft
 audit:

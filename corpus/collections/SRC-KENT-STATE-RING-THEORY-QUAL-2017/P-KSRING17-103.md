@@ -5,7 +5,9 @@ kind: problem
 title: A generalized Eisenstein criterion for a factor of degree at least $k$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Eisenstein Criterion
+  - Irreducible Polynomials
 relations: []
 review: draft
 audit:
