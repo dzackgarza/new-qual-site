@@ -21,365 +21,126 @@ audit:
 ---
 
 ::: {.problem}
-Use $n$-th roots of unity (i.e. solutions of $z^n - 1 =0$) to show
-    that
-    $$2^{n-1} \sin\frac{\pi}{n} \sin\frac{2\pi}{n} \cdots \sin\frac{(n-1)\pi}{n}
-    = n
-    \; .$$ 
-    
-    > Hint: $1 - \cos 2 \theta = 2 \sin^2 \theta,\; \sin 2 \theta = 2 \sin \theta \cos \theta$.
+Use $n$-th roots of unity (i.e. solutions of $z^n - 1 = 0$) to show that
+$$
+2^{n-1} \sin\frac{\pi}{n} \sin\frac{2\pi}{n} \cdots \sin\frac{(n-1)\pi}{n} = n.
+$$
 
-    (a) Show that in polar coordinates, the Cauchy-Riemann
-    equations take the form
+Hint: $1 - \cos 2\theta = 2 \sin^2 \theta$, $\sin 2\theta = 2 \sin \theta \cos \theta$.
 
-    $$\frac{\partial u}{\partial r} = \frac{1}{r} \frac{\partial v}{\partial \theta}
-    \; \; \; \text{and} \; \; \;
-    \frac{\partial v}{\partial r} = - \frac{1}{r} \frac{\partial u}{\partial \theta}$$
+(a) Show that in polar coordinates, the Cauchy-Riemann equations take the form
+$$
+\frac{\partial u}{\partial r} = \frac{1}{r} \frac{\partial v}{\partial \theta}
+\quad\text{and}\quad
+\frac{\partial v}{\partial r} = -\frac{1}{r} \frac{\partial u}{\partial \theta}.
+$$
 
-    (b) Use these equations to show that the logarithm function
-    defined by $$\log z = \log r + i \theta \; \;
-    \mbox{where} \; z = r e^{i \theta } \; \mbox{with} \; - \pi < \theta < \pi$$
-    is a holomorphic function in the region
-    $r>0, \; - \pi < \theta < \pi$. Also show that $\log z$ defined
-    above is not continuous in $r>0$.
+(b) Use these equations to show that the logarithm function defined by
+$$
+\log z = \log r + i\theta \quad\text{where } z = re^{i\theta} \text{ with } -\pi < \theta < \pi
+$$
+is a holomorphic function in the region $r > 0$, $-\pi < \theta < \pi$. Also show that $\log z$ defined above is not continuous in $r > 0$.
 :::
 
 ::: {.solution}
-**Goal:**
-1. Prove using $n$-th roots of unity that $2^{n-1} \prod_{k=1}^{n-1} \sin\left(\frac{k\pi}{n}\right) = n$ for any integer $n \geq 2$.
-2. (a) Derive the polar form of the Cauchy-Riemann equations: $\frac{\partial u}{\partial r} = \frac{1}{r}\frac{\partial v}{\partial \theta}$ and $\frac{\partial v}{\partial r} = -\frac{1}{r}\frac{\partial u}{\partial \theta}$.
-3. (b) Verify that the principal branch of $\log z = \ln r + i\theta$ on $U = \{r e^{i\theta} : r > 0, -\pi < \theta < \pi\}$ is holomorphic, and prove it cannot be extended continuously to the punctured plane $\CC^* = \{z \in \CC : r > 0\}$.
-
----
-
-### Part 1: Product of Sines via Roots of Unity
 
 ::: pf
 
-::: pf-step
-**Factorization of the cyclotomic polynomial.**
+::: {.pf-step #prod}
+
+For $n\ge2$, $\prod_{k=1}^{n-1}\bigl(1-e^{2\pi ik/n}\bigr)=n$.
 
 ::: pf-proof
 
-::: pf-step
-The polynomial $z^n - 1$ factors as $(z - 1)\sum_{k=0}^{n-1} z^k = (z-1)(z^{n-1} + z^{n-2} + \dots + z + 1)$.
-
-::: pf-proof
-Standard algebraic identity for geometric series / difference of powers.
-:::
-
-:::
-
-::: pf-step
-The roots of $z^n - 1 = 0$ are $\omega_k = e^{i 2\pi k/n}$ for $k = 0, 1, \dots, n-1$.
-
-::: pf-proof
-$(e^{i 2\pi k/n})^n = e^{i 2\pi k} = 1$.
-:::
-
-:::
-
-::: pf-step
-Since $\omega_0 = 1$, the remaining $n-1$ roots of unity $\omega_1, \dots, \omega_{n-1}$ are the roots of $P(z) = z^{n-1} + z^{n-2} + \dots + z + 1 = \prod_{k=1}^{n-1} (z - \omega_k)$.
-
-::: pf-proof
-A monic polynomial of degree $n-1$ with $n-1$ distinct roots is uniquely factored as the product of its linear factors.
-:::
-
-:::
-
-::: {.pf-step #s1-4}
-Evaluating $P(z)$ at $z=1$:
-$$\prod_{k=1}^{n-1} (1 - e^{i 2\pi k/n}) = P(1) = \underbrace{1 + 1 + \dots + 1}_{n \text{ terms}} = n.$$
-
-::: pf-proof
-Direct substitution of $z=1$ into $P(z)$.
-:::
+The roots of $z^n-1$ are the $n$ distinct numbers $\omega_k=e^{2\pi ik/n}$, $0\le k\le n-1$, and $\omega_0=1$. Hence
+$$
+1+z+\cdots+z^{n-1}=\frac{z^n-1}{z-1}=\prod_{k=1}^{n-1}(z-\omega_k).
+$$
+Evaluation at $z=1$ gives the claim.
 
 :::
 
 :::
 
-:::
+::: {.pf-step #mod}
 
-::: pf-step
-**Compute $\abs{1 - e^{i 2\pi k/n}}$.**
+For $1\le k\le n-1$, $\abs{1-e^{2\pi ik/n}}=2\sin\frac{k\pi}{n}$.
 
 ::: pf-proof
 
-::: {.pf-step #s2-2}
-For any real $\phi$, $\abs{1 - e^{i\phi}}^2 = (1 - \cos\phi)^2 + (\sin\phi)^2 = 1 - 2\cos\phi + \cos^2\phi + \sin^2\phi = 2 - 2\cos\phi = 2(1 - \cos\phi)$.
-
-::: pf-proof
-Expansion of complex modulus squared.
-:::
-
-:::
-
-::: {.pf-step #s2-3}
-Using the half-angle identity $1 - \cos\phi = 2\sin^2(\phi/2)$, $\abs{1 - e^{i\phi}}^2 = 4\sin^2(\phi/2)$, so $\abs{1 - e^{i\phi}} = 2\abs{\sin\left(\frac{\phi}{2}\right)}$.
-
-::: pf-proof
-Taking the principal square root.
-:::
-
-:::
-
-::: pf-step
-For $\phi = \frac{2\pi k}{n}$ with $1 \leq k \leq n-1$, $\frac{\phi}{2} = \frac{\pi k}{n} \in (0, \pi)$, so $\sin\left(\frac{\pi k}{n}\right) > 0$.
-
-::: pf-proof
-The sine function is strictly positive on $(0, \pi)$.
-:::
-
-:::
-
-::: {.pf-step #s2-4}
-Thus, $\abs{1 - e^{i 2\pi k/n}} = 2\sin\left(\frac{\pi k}{n}\right)$ for every $1 \leq k \leq n-1$.
-
-::: pf-proof
-Follows from steps [](#s2-2){.pf-ref} and [](#s2-3){.pf-ref}.
-:::
+For real $\phi$, $\abs{1-e^{i\phi}}^2=(1-\cos\phi)^2+\sin^2\phi=2(1-\cos\phi)=4\sin^2\frac{\phi}{2}$ by the hint. With $\phi=2\pi k/n$, the number $\frac{\phi}{2}=\frac{k\pi}{n}$ lies in $(0,\pi)$, so $\sin\frac{k\pi}{n}>0$.
 
 :::
 
 :::
 
-:::
+::: {.pf-step #sines}
 
-::: pf-step
-**Take the modulus of the product.**
+$$
+\boxed{2^{n-1}\prod_{k=1}^{n-1}\sin\frac{k\pi}{n}=n}
+$$
 
 ::: pf-proof
 
-::: pf-step
-Taking the absolute value of both sides of step [](#s1-4){.pf-ref}:
-$$\abs{\prod_{k=1}^{n-1} (1 - e^{i 2\pi k/n})} = \abs{n} = n \implies \prod_{k=1}^{n-1} \abs{1 - e^{i 2\pi k/n}} = n.$$
-
-::: pf-proof
-Multiplicativity of the complex modulus.
-:::
-
-:::
-
-::: pf-step
-Substituting step [](#s2-4){.pf-ref} into the product:
-$$\prod_{k=1}^{n-1} \left( 2\sin\left(\frac{k\pi}{n}\right) \right) = 2^{n-1} \prod_{k=1}^{n-1} \sin\left(\frac{k\pi}{n}\right) = n.$$
-
-::: pf-proof
-Factoring out the $n-1$ factors of $2$.
-:::
+Take the modulus of both sides of Step [](#prod){.pf-ref} and apply Step [](#mod){.pf-ref} to each factor.
 
 :::
 
 :::
 
-:::
+::: {.pf-step #polar}
 
-:::
-
----
-
-### Part 2: (a) Cauchy-Riemann Equations in Polar Coordinates
-
-::: pf
-
-::: pf-step
-**Express partial derivatives with respect to $r$ and $\theta$ in terms of $x$ and $y$.**
+If $f=u+iv$ is complex differentiable at $z=re^{i\theta}\ne0$, then $u_r=\frac1rv_\theta$ and $v_r=-\frac1ru_\theta$ there.
 
 ::: pf-proof
 
-::: pf-step
-The coordinate transformation is $x(r,\theta) = r\cos\theta$ and $y(r,\theta) = r\sin\theta$.
-
-::: pf-proof
-Definition of polar coordinates.
-:::
-
-:::
-
-::: pf-step
-The partial derivatives are:
-$$\frac{\partial x}{\partial r} = \cos\theta, \quad \frac{\partial y}{\partial r} = \sin\theta, \quad \frac{\partial x}{\partial \theta} = -r\sin\theta, \quad \frac{\partial y}{\partial \theta} = r\cos\theta.$$
-
-::: pf-proof
-Differentiating $x$ and $y$ with respect to $r$ and $\theta$.
-:::
-
-:::
-
-::: {.pf-step #s4-3}
-By the multivariable chain rule for $u(r,\theta) = u(x(r,\theta), y(r,\theta))$:
-$$\frac{\partial u}{\partial r} = u_x \cos\theta + u_y \sin\theta, \qquad \frac{\partial u}{\partial \theta} = -u_x r\sin\theta + u_y r\cos\theta.$$
-$$\frac{\partial v}{\partial r} = v_x \cos\theta + v_y \sin\theta, \qquad \frac{\partial v}{\partial \theta} = -v_x r\sin\theta + v_y r\cos\theta.$$
-
-::: pf-proof
-Chain rule for compositions of $C^1$ functions.
-:::
+With $x=r\cos\theta$ and $y=r\sin\theta$, the chain rule gives
+$$
+u_r=u_x\cos\theta+u_y\sin\theta,\qquad u_\theta=r(-u_x\sin\theta+u_y\cos\theta),
+$$
+and the same formulas for $v$. Substitute the Cartesian equations $u_x=v_y$ and $u_y=-v_x$:
+$$
+v_\theta=r(-v_x\sin\theta+v_y\cos\theta)=r(u_y\sin\theta+u_x\cos\theta)=ru_r,
+$$
+$$
+u_\theta=r(-v_y\sin\theta-v_x\cos\theta)=-rv_r.
+$$
+Divide by $r>0$.
 
 :::
 
 :::
 
-:::
+::: {.pf-step #holo}
 
-::: pf-step
-**Substitute Cartesian Cauchy-Riemann equations $u_x = v_y$ and $u_y = -v_x$.**
+$\log z$ is holomorphic on $U=\{re^{i\theta}:r>0,\ -\pi<\theta<\pi\}$.
 
 ::: pf-proof
 
-::: pf-step
-Substitute $u_x = v_y$ and $u_y = -v_x$ into the expression for $\frac{\partial v}{\partial \theta}$:
-$$\frac{\partial v}{\partial \theta} = -v_x r\sin\theta + v_y r\cos\theta = u_y r\sin\theta + u_x r\cos\theta = r(u_x \cos\theta + u_y \sin\theta) = r \frac{\partial u}{\partial r}.$$
-
-::: pf-proof
-Direct substitution and grouping by step [](#s4-3){.pf-ref}.
-:::
-
-:::
-
-::: pf-step
-Dividing by $r > 0$ yields $\frac{\partial u}{\partial r} = \frac{1}{r}\frac{\partial v}{\partial \theta}$.
-
-::: pf-proof
-Division by $r$.
-:::
-
-:::
-
-::: pf-step
-Substitute $u_x = v_y$ and $u_y = -v_x$ into the expression for $\frac{\partial u}{\partial \theta}$:
-$$\frac{\partial u}{\partial \theta} = -u_x r\sin\theta + u_y r\cos\theta = -v_y r\sin\theta - v_x r\cos\theta = -r(v_x \cos\theta + v_y \sin\theta) = -r \frac{\partial v}{\partial r}.$$
-
-::: pf-proof
-Direct substitution and grouping by step [](#s4-3){.pf-ref}.
-:::
-
-:::
-
-::: pf-step
-Dividing by $-r$ yields $\frac{\partial v}{\partial r} = -\frac{1}{r}\frac{\partial u}{\partial \theta}$.
-
-::: pf-proof
-Division by $-r$.
-:::
+The map $(r,\theta)\mapsto re^{i\theta}$ is a $C^1$ diffeomorphism of $(0,\infty)\times(-\pi,\pi)$ onto $U$, so $u=\log r$ and $v=\theta$ are $C^1$ functions of $(x,y)$ on $U$. They satisfy $u_r=\frac1r=\frac1rv_\theta$ and $v_r=0=-\frac1ru_\theta$. The chain-rule relations of Step [](#polar){.pf-ref} are invertible for $r>0$, so these polar equations are equivalent to $u_x=v_y$ and $u_y=-v_x$. A $C^1$ function that satisfies the Cauchy-Riemann equations is holomorphic.
 
 :::
 
 :::
 
-:::
+::: {.pf-step #disc}
 
-:::
-
----
-
-### Part 3: (b) Holomorphicity and Discontinuity of $\log z$
-
-::: pf
-
-::: pf-step
-**$\log z = \ln r + i\theta$ is holomorphic on $U = \{r e^{i\theta} : r > 0, -\pi < \theta < \pi\}$.**
+$\log z$ has no continuous extension to the region $r>0$.
 
 ::: pf-proof
 
-::: pf-step
-For $\log z$, the real and imaginary parts are $u(r,\theta) = \ln r$ and $v(r,\theta) = \theta$.
-
-::: pf-proof
-By definition of $\log z$.
-:::
-
-:::
-
-::: {.pf-step #s6-2}
-Compute the polar partial derivatives:
-$$\frac{\partial u}{\partial r} = \frac{1}{r}, \quad \frac{\partial u}{\partial \theta} = 0, \quad \frac{\partial v}{\partial r} = 0, \quad \frac{\partial v}{\partial \theta} = 1.$$
-
-::: pf-proof
-Differentiation of $\ln r$ and $\theta$.
-:::
-
-:::
-
-::: pf-step
-Check the polar Cauchy-Riemann equations on $U$:
-$$\frac{\partial u}{\partial r} = \frac{1}{r} = \frac{1}{r}\cdot 1 = \frac{1}{r}\frac{\partial v}{\partial \theta}, \qquad \frac{\partial v}{\partial r} = 0 = -\frac{1}{r}\cdot 0 = -\frac{1}{r}\frac{\partial u}{\partial \theta}.$$
-
-::: pf-proof
-Direct comparison of step [](#s6-2){.pf-ref} with the polar CR equations.
-:::
-
-:::
-
-::: pf-step
-Since $u, v \in C^1(U)$ and satisfy the Cauchy-Riemann equations, $\log z$ is holomorphic on $U$.
-
-::: pf-proof
-Equivalence of real differentiability + CR equations with complex differentiability (holomorphicity).
-:::
+Let $x<0$. As $\theta\to\pi^-$, $\log(\abs{x}e^{i\theta})\to\log\abs{x}+i\pi$. As $\theta\to-\pi^+$, $\log(\abs{x}e^{i\theta})\to\log\abs{x}-i\pi$. Both paths converge to $x$, and the limits differ, so no value at $x$ makes $\log z$ continuous at $x$.
 
 :::
 
 :::
 
-:::
+::: pf-qed
 
-::: pf-step
-**$\log z$ cannot be continuous on the punctured plane $\CC^* = \{z : r > 0\}$.**
-
-::: pf-proof
-
-::: pf-step
-Consider the point $z_0 = -1 \in \CC^*$ (which has $r = 1$, $\theta = \pm \pi$).
-
-::: pf-proof
-Test point on the branch cut $(-\infty, 0)$.
-:::
-
-:::
-
-::: pf-step
-Approach $z_0 = -1$ from the upper half-plane along the unit circle $z(\theta) = e^{i\theta}$ as $\theta \to \pi^-$:
-$$\lim_{\theta \to \pi^-} \log(e^{i\theta}) = \lim_{\theta \to \pi^-} (\ln 1 + i\theta) = i\pi.$$
-
-::: pf-proof
-Since $-\pi < \theta < \pi$, $\log(e^{i\theta}) = i\theta$.
-:::
-
-:::
-
-::: pf-step
-Approach $z_0 = -1$ from the lower half-plane along the unit circle $z(\theta) = e^{i\theta}$ as $\theta \to (-\pi)^+$:
-$$\lim_{\theta \to (-\pi)^+} \log(e^{i\theta}) = \lim_{\theta \to (-\pi)^+} (\ln 1 + i\theta) = -i\pi.$$
-
-::: pf-proof
-In the lower half-plane, $-\pi < \theta < 0$, so $\log(e^{i\theta}) = i\theta$.
-:::
-
-:::
-
-::: pf-step
-Since the two directional limits $i\pi$ and $-i\pi$ do not agree ($i\pi \neq -i\pi$), the limit $\lim_{z \to -1} \log z$ does not exist.
-
-::: pf-proof
-Failure of two path limits to coincide.
-:::
-
-:::
-
-::: pf-step
-Therefore, $\log z$ is discontinuous at every point on the negative real axis $(-\infty, 0]$, and is not continuous on $r > 0$.
-
-::: pf-proof
-A function lacking a limit at a point is not continuous at that point.
-:::
+Step [](#sines){.pf-ref} proves the product formula, Step [](#polar){.pf-ref} proves part (a), and Steps [](#holo){.pf-ref} and [](#disc){.pf-ref} prove part (b).
 
 :::
 
 :::
 
-:::
-
-:::
 :::

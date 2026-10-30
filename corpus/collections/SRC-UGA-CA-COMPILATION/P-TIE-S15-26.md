@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let Ω be a simply connected open set and let γ be a simple closed contour in Ω and enclosing a bounded region U anticlockwise.
-Let $f : \Omega \longrightarrow \CC$ be a holomorphic function and $\abs{ f ( z ) } \leq M$ for all $z \in \gamma$ . Prove that $\abs{ f ( z ) } \leq M$ for all $z \in U$
+Let $\Omega$ be a simply connected open set, and let $\gamma$ be a simple closed contour in $\Omega$ enclosing a bounded region $U$ anticlockwise.
+Let $f \colon \Omega \to \CC$ be a holomorphic function with $\abs{f(z)} \leq M$ for all $z \in \gamma$. Prove that $\abs{f(z)} \leq M$ for all $z \in U$.
 :::
 
 ::: {.solution}
