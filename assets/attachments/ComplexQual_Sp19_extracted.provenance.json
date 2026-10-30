@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/ComplexQual_Sp19.pdf",
+  "source_pdf_sha256": "644a2bf2aae5ccbd63d77de3fd123beee4112d0247829c12d28fd6a00df898bc",
+  "source_url": "https://www.math.uga.edu/sites/default/files/ComplexQual_Sp19.pdf",
+  "extracted_markdown": "assets/attachments/ComplexQual_Sp19_extracted.md",
+  "extracted_markdown_sha256": "f2095dc11c0eea0dede5ac22e71ba0c03aef403c9dc39627f9f9e389a761034f",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/ComplexQual_Sp19.pdf --language en",
+  "generated_at": "2026-10-30"
+}

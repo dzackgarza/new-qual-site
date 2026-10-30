@@ -10,7 +10,6 @@ classification:
 relations: []
 review: draft
 provenance:
-- https://web.archive.org/web/20220426161540/https://www.math.uga.edu/sites/default/files/ComplexQual_Sp19.pdf
 - assets/attachments/ComplexQual_Sp19.pdf
 source:
   source_kind: university-exam
