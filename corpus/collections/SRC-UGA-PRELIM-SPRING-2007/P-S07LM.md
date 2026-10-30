@@ -17,11 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-a) Give the $\varepsilon$-$\delta$ definition of the one-sided limit $\lim_{x \to a^+} f(x) = L$.
+(a) Give the $\varepsilon$-$\delta$ definition of the one-sided limit $\lim_{x \to a^+} f(x) = L$.
 
-b) Using the definition and basic properties of $\ln(x)$, show that $\lim_{x \to 0^+} 1/\ln(x) = 0$.
+(b) Using the definition and basic properties of $\ln(x)$, show that $\lim_{x \to 0^+} 1/\ln(x) = 0$.
 :::
-
 
 ::: {.solution}
 

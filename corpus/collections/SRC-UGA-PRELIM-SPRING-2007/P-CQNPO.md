@@ -23,15 +23,14 @@ audit:
 ::: {.problem}
 Give an example (proof not required) of each of the following:
 
-a) A function $f:\RR\to\RR$ which satisfies $f(x)=0$ for all $x\le 0$, but which is nonzero for $x>0$ and has derivatives of all orders for all $x$.
+(a) A function $f:\RR\to\RR$ which satisfies $f(x)=0$ for all $x\le 0$, but which is nonzero for $x>0$ and has derivatives of all orders for all $x$.
 
-b) An infinite-dimensional vector space over the field $\ZZ/2\ZZ$.
+(b) An infinite-dimensional vector space over the field $\ZZ/2\ZZ$.
 
-c) A matrix in $M_2(\CC)$ which is not diagonalizable.
+(c) A matrix in $M_2(\CC)$ which is not diagonalizable.
 
-d) A power series $\sum_{n=0}^\infty a_n z^n \in \CC[[z]]$ with radius of convergence $0$.
+(d) A power series $\sum_{n=0}^\infty a_n z^n \in \CC[[z]]$ with radius of convergence $0$.
 :::
-
 
 ::: {.solution}
 

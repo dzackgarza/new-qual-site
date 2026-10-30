@@ -30,11 +30,10 @@ Let $\gamma$ be the closed path which goes counterclockwise around the circle $C
 
 Compute $\int_\gamma 2x\,dy + y\,dx$ in one of two ways:
 
-a) Directly, using the definition of a line integral; or
+(a) Directly, using the definition of a line integral; or
 
-b) By using Green's theorem or the general Stokes' theorem.
+(b) By using Green's theorem or the general Stokes' theorem.
 :::
-
 
 ::: {.solution}
 
