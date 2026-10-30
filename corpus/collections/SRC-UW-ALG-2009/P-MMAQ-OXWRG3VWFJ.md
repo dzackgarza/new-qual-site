@@ -5,16 +5,16 @@ kind: problem
 title: Groups of order 2009 and Galois extensions of degree 2009
 classification:
   areas:
-    - algebra
+  - algebra
   topics:
-    - Groups
-    - Classification
+  - Groups
+  - Classification
 relations: []
 review: draft
 audit:
-  - event: solution-written
-    by: OpenAI
-    date: 2026-09-10
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-10
 ---
 
 ::: {.problem}

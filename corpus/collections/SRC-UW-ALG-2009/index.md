@@ -21,8 +21,10 @@ source:
   - P-LZVDM
   - P-JXIIG
   - P-TRSVD
+  - P-UWALG09-5
   - P-MMAQ-AYM7VHT2LA
   - P-E6DTF
+  - P-UWALG09-8
   source_kind: university-exam
 title: UW Algebra Qualifying Exam 2009
 ---

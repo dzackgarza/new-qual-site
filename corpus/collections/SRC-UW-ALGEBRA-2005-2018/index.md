@@ -93,8 +93,10 @@ source:
     - P-LZVDM
     - P-JXIIG
     - P-TRSVD
+    - P-UWALG09-5
     - P-MMAQ-AYM7VHT2LA
     - P-E6DTF
+    - P-UWALG09-8
   - name: '2008'
     problems:
     - P-MMAQ-5EFTFEKRDI
