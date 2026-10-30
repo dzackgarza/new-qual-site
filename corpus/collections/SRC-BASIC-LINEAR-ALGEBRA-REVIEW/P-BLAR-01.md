@@ -5,7 +5,8 @@ kind: problem
 title: Dot product and lengths of two vectors
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Inner Products
 relations: []
 review: draft
 audit:

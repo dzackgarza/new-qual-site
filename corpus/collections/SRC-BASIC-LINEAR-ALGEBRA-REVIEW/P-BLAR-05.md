@@ -5,7 +5,9 @@ kind: problem
 title: Decide which sets are vector spaces and find bases
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Subspaces
+  - Bases
 relations: []
 review: draft
 audit:

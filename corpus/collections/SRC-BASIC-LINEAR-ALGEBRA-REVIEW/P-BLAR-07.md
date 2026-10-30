@@ -5,7 +5,8 @@ kind: problem
 title: Decide linearity and find transformation matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Transformations
 relations: []
 review: draft
 audit:
@@ -37,7 +38,7 @@ Use the standard ordered bases in every matrix representation below, and use the
 ::: pf
 
 ::: pf-step
-In part (1), $T$ is linear, with matrix
+In part (a), $T$ is linear, with matrix
 $$
 \boxed{\begin{bmatrix}2&0\\0&1\end{bmatrix}}.
 $$
@@ -53,7 +54,7 @@ Thus $T$ is given by multiplication by the displayed matrix, hence is linear.
 :::
 
 ::: pf-step
-In part (2), $T$ is $\boxed{\text{not linear}}$.
+In part (b), $T$ is $\boxed{\text{not linear}}$.
 
 ::: pf-proof
 A linear map must send the zero vector to the zero vector, but here
@@ -65,7 +66,7 @@ $$
 :::
 
 ::: pf-step
-In part (3), the rotation is linear, with matrix
+In part (c), the rotation is linear, with matrix
 $$
 \boxed{
 \begin{bmatrix}
@@ -94,7 +95,7 @@ Substituting $\theta=\pi/3$ gives the displayed matrix.
 :::
 
 ::: pf-step
-In part (4), the source as written does $\boxed{\text{not define a map }\RR^3\to\RR^2}$, so its linearity and a $2\times3$ transformation matrix are not determined.
+In part (d), the source as written does $\boxed{\text{not define a map }\RR^3\to\RR^2}$, so its linearity and a $2\times3$ transformation matrix are not determined.
 
 ::: pf-proof
 An element of $\RR^3$ has three coordinates, whereas the displayed rule accepts only two inputs, $T(x,y)$. No dependence on a third coordinate is specified, so the rule does not assign an output to a general element $(x,y,z)\in\RR^3$.

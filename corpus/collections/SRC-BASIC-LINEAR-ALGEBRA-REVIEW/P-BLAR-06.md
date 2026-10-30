@@ -5,7 +5,9 @@ kind: problem
 title: Characteristic polynomial, eigenvalues, and eigenvectors
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Eigenvalues
+  - Characteristic Polynomial
 relations: []
 review: draft
 audit:

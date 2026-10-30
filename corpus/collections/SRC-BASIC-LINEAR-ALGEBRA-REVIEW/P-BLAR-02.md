@@ -5,7 +5,8 @@ kind: problem
 title: Determine inverses of four matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Matrix Inverses
 relations: []
 review: draft
 audit:

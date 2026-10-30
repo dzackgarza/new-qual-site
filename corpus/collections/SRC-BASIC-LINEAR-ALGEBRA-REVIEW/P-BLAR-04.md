@@ -5,7 +5,8 @@ kind: problem
 title: Solve three matrix equations
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Systems
 relations: []
 review: draft
 audit:

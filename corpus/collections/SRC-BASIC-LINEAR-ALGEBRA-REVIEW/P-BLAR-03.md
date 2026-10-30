@@ -5,7 +5,8 @@ kind: problem
 title: Compute four determinants
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Determinants
 relations: []
 review: draft
 audit:
