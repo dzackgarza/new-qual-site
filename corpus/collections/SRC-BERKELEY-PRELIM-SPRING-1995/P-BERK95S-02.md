@@ -6,7 +6,8 @@ title: Real $a$ for which $a^nA^n$ converges to a nonzero matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

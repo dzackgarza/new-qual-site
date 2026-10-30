@@ -6,7 +6,8 @@ title: Coprime factors of the characteristic polynomial split the vector space
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

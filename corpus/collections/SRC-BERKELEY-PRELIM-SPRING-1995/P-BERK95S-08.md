@@ -6,7 +6,8 @@ title: Determinant of $I-tL$ when the image of $L$ lies in an invariant subspace
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

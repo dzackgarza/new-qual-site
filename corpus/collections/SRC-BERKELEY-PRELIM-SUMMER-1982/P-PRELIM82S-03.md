@@ -6,7 +6,8 @@ title: A strict distance contraction on a compact metric space has a unique fixe
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: A decreasing sequence of nonnegative continuous functions has an attained
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -30,8 +31,9 @@ f(x)=\lim_{n\to\infty}f_n(x),
 M=\sup_{0\le x\le1}f(x).
 $$
 
-1. Prove that there is $t\in[0,1]$ such that $f(t)=M$.
-2. Give an example showing that part 1 can fail if the monotonicity is only eventual pointwise: for each $x$ there is $n_x$ such that $f_n(x)\ge f_{n+1}(x)$ for all $n\ge n_x$.
+(a) Prove that there is $t\in[0,1]$ such that $f(t)=M$.
+
+(b) Give an example showing that part (a) can fail if the monotonicity is only eventual pointwise: for each $x$ there is $n_x$ such that $f_n(x)\ge f_{n+1}(x)$ for all $n\ge n_x$.
 :::
 
 ::: {.solution}
@@ -75,7 +77,7 @@ Hence $f(t)=M$.
 
 ::: {.pf-step #s2}
 
-For part 2, define
+For part (b), define
 $$
 f_n(x)\coloneqq
 x\min\{1,n(1-x)\},
@@ -149,8 +151,8 @@ attained.
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves part 1, and steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} provide the required
-counterexample for part 2.
+Step [](#s1){.pf-ref} proves part (a), and steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} provide the required
+counterexample for part (b).
 
 :::
 

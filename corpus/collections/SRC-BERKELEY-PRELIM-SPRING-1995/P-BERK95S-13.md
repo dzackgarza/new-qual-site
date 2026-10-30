@@ -6,7 +6,8 @@ title: A $2$-group acting on an odd finite set has a fixed point
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

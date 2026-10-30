@@ -6,14 +6,15 @@ title: A linear relation among initial data for decaying solutions of $y'''-y=0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-13
-  note: The retained PDF confirms the coefficient b in a y(0)+b y'(0)+c y''(0)=d; the extraction dropped it.
+  note: The retained PDF prints a y(0)+y'(0)+c y''(0)=d while asking for a,b,c,d; the card writes the coefficient b and a remark records the change.
 - event: solution-written
   by: chatgpt
   date: 2026-09-23
@@ -32,6 +33,10 @@ Find real numbers $a,b,c,d$, not all zero, such that
 $$
 ay(0)+by'(0)+cy''(0)=d.
 $$
+:::
+
+::: {.remark}
+The exam prints the relation as $ay(0)+y'(0)+cy''(0)=d$ while it asks for four numbers $a,b,c,d$. The statement above writes the coefficient $b$ of $y'(0)$. The answer $b=1$ agrees with the printed form.
 :::
 
 ::: {.solution}

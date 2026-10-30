@@ -6,7 +6,8 @@ title: The sequence $\cos(nx)$ has no uniformly convergent subsequence on $\RR$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

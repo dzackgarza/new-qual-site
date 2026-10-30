@@ -6,7 +6,8 @@ title: An isometry of a finite subset fixing the origin extends to a linear map
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: A residue integral for $\sin(n\theta)/\sin\theta$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

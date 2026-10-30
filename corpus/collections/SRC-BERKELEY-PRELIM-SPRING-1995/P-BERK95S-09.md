@@ -6,7 +6,8 @@ title: A monic real polynomial avoiding the open unit disk must vanish at $1$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

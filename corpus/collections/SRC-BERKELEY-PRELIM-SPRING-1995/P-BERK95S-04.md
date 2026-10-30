@@ -6,7 +6,8 @@ title: Order and Sylow-$p$ subgroups of $GL_2(\FF_{p^n})$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -24,11 +25,12 @@ $$
 G=GL_2(F).
 $$
 
-1. Prove that
-   $$
-   \cardinality{G}=(p^{2n}-1)(p^{2n}-p^n).
-   $$
-2. Show that every Sylow-$p$ subgroup of $G$ is isomorphic to the additive group of $F$.
+(a) Prove that
+$$
+\cardinality{G}=(p^{2n}-1)(p^{2n}-p^n).
+$$
+
+(b) Show that every Sylow-$p$ subgroup of $G$ is isomorphic to the additive group of $F$.
 :::
 
 ::: {.solution}
@@ -149,7 +151,7 @@ identifies $U$ with $(F,+)$.
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves part 1, and step [](#s4){.pf-ref} proves part 2.
+Step [](#s1){.pf-ref} proves part (a), and step [](#s4){.pf-ref} proves part (b).
 
 :::
 
