@@ -1044,7 +1044,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/topology/surfaces/surfaces-and-manifolds.md
   - [x] wiki/topology/the-standard-spaces.md
   - [x] wiki/topology/workshops/index.md
-  - [ ] wiki/topology/workshops/topology-week-1-preliminaries.md
+  - [x] wiki/topology/workshops/topology-week-1-preliminaries.md
   Site surfaces:
   - [ ] index, sources, problems, bibliography, search
 
