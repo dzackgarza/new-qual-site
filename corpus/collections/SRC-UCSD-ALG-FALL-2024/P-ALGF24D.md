@@ -15,14 +15,21 @@ audit:
 - event: source-checked
   by: gpt-6-astra-pro
   date: 2026-09-07
-  note: Compared both parts and the hint with Problem 4 on pages 5-6 of the official FA24 algebra exam PDF; made the commutative unital ring convention and the coefficient domain explicit.
+  note: Compared both parts and the hint with Problem 4 on pages 5-6 of the official FA24
+    algebra exam PDF; made the commutative unital ring convention and the coefficient domain
+    explicit.
 - event: solution-written
   by: gpt-6-astra-pro
   date: 2026-09-07
 - event: solution-reviewed
   by: gpt-6-astra-pro
   date: 2026-09-07
-  note: Checked that the scalar relation first vanishes in I tensor M using part (a), then lifts through K tensor M; no finite-generation assumption on M or I is used in part (a).
+  note: Checked that the scalar relation first vanishes in I tensor M using part (a), then
+    lifts through K tensor M; no finite-generation assumption on M or I is used in part (a).
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Restored the exam hint to part (b), which the statement had dropped.
 ---
 
 ::: {.problem}
@@ -51,6 +58,7 @@ for every $i = 1, \ldots, n$; that means
 $$
 \mathbf{k}_1 y_1 + \cdots + \mathbf{k}_m y_m = (x_1, \ldots, x_n).
 $$
+Hint: Use flatness and the short exact sequence above.
 :::
 
 ::: {.hint}

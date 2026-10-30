@@ -16,14 +16,21 @@ audit:
 - event: source-checked
   by: gpt-6-astra-pro
   date: 2026-09-07
-  note: Compared both parts and the hint with Problem 2 on page 3 of the official FA24 algebra exam PDF.
+  note: Compared both parts and the hint with Problem 2 on page 3 of the official FA24 algebra
+    exam PDF.
 - event: solution-written
   by: gpt-6-astra-pro
   date: 2026-09-07
 - event: solution-reviewed
   by: gpt-6-astra-pro
   date: 2026-09-07
-  note: Checked every induction order and coprimality condition; the remaining normal Hall p-subgroup case is proved by a Sylow normalizer argument, without assuming Hall existence or Schur-Zassenhaus.
+  note: Checked every induction order and coprimality condition; the remaining normal Hall
+    p-subgroup case is proved by a Sylow normalizer argument, without assuming Hall existence
+    or Schur-Zassenhaus.
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Restored the exam hint to part (b), which the statement had dropped.
 ---
 
 ::: {.problem}
@@ -33,6 +40,7 @@ Suppose $G$ is a non-trivial finite solvable group, $\cardinality{G} = mn$, and 
 Prove that $Q$ is an abelian $p$-group for some prime $p$.
 
 (b) Prove that $G$ has a subgroup of order $m$.
+Hint: Use induction and make use of $G/Q$.
 :::
 
 ::: {.hint}
