@@ -997,7 +997,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/real-analysis/resources/topics.md
   - [x] wiki/real-analysis/review.md
   - [x] wiki/real-analysis/undergraduate/advice.md
-  - [ ] wiki/real-analysis/undergraduate/commuting-limits.md
+  - [x] wiki/real-analysis/undergraduate/commuting-limits.md
   - [ ] wiki/real-analysis/undergraduate/continuity.md
   - [ ] wiki/real-analysis/undergraduate/definitions.md
   - [ ] wiki/real-analysis/undergraduate/differentiability.md
