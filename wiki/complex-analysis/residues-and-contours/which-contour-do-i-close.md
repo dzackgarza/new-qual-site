@@ -27,7 +27,7 @@ The estimates for the added pieces are on [[complex-analysis/residues-and-contou
 
 **Contour.** The segment $[-R, R]$ followed by the upper semicircle $C_R = \theset{Re^{it} \st t \in [0,\pi]}$.
 
-![](../../../../assets/assets/figures/2021-07-29_18-37-57.png)
+![Left: the segment from -R to R closed by the upper semicircle C_R, counterclockwise. Right: the segment closed by the lower semicircle, clockwise.](../../../../assets/assets/figures/2021-07-29_18-37-57.png)
 
 **Arc estimate.** The ML estimate: $\abs{f} = \bigo(1/R^{2})$ on $C_R$ and $\length(C_R) = \pi R$, so the arc integral is $\bigo(1/R)$.
 
@@ -53,6 +53,7 @@ the integrals over $\RR$ taken as limits of integrals over $[-R,R]$.
 The functions $\cos(az)$ and $\sin(az)$ grow like $e^{aR}/2$ on $C_R$, which is why the integrand is rewritten with $e^{iaz}$.
 
 For $e^{-iax}$ with $a>0$, the lower semicircle is used instead.
+Along a vertical line $\Re z = a$, the same reasoning applies to $e^{\pm z}$: since $\abs{e^{z}} = e^{\Re z}$, an integrand with a factor $e^{z}$ is closed by a semicircle in the left half plane $\Re z<a$, and one with $e^{-z}$ in the right half plane.
 
 ## Rational in $\cos$ and $\sin$, over one period
 
@@ -77,7 +78,7 @@ The factor $1/iz$ can contribute a pole at $z = 0$.
 
 **Contour.** The keyhole around the cut along $[0,\infty)$, with the branch $\arg z \in (0, 2\pi)$ of $z^\alpha$.
 
-![](../../../../assets/assets/figures/2021-12-14_17-19-31.png)
+![The keyhole contour: the circle C_R of radius R, the two edges of the cut along the positive real axis from r to R, and the small circle C_r of radius r about 0.](../../../../assets/assets/figures/2021-12-14_17-19-31.png)
 
 **Estimates.** The large circle of radius $R$ contributes $\bigo(R^{\alpha-1})\to 0$ by the ML estimate, and the small circle of radius $\varepsilon$ contributes $\bigo(\varepsilon^{1+\alpha}) \to 0$ because $\alpha > -1$.
 
@@ -94,9 +95,9 @@ the sum over all poles of $f$.
 
 **Contour.** An indented semicircle, or the keyhole.
 
-![](../../../../assets/assets/figures/2021-12-14_17-20-48.png)
+![The indented semicircle: the segment from -R to R with a small half-circle C_r of radius r above 0, closed by the upper semicircle C_R.](../../../../assets/assets/figures/2021-12-14_17-20-48.png)
 
-![](../../../../assets/assets/figures/2021-12-22_05-14-24.png)
+![The contour gamma_{R,epsilon}: from -R to -epsilon, the half-circle of radius epsilon above 0, from epsilon to R, and the upper semicircle back to -R.](../../../../assets/assets/figures/2021-12-22_05-14-24.png)
 
 **Limits used in the estimates.** With the branch $\arg z\in(0,2\pi)$, for $x>0$, and for $n\geq 1$ and $c\neq 0$,
 $$
@@ -119,8 +120,7 @@ $$
 for a single pole $x_0$, and analogously for several.
 
 **Contour.** The semicircle, indented by a small half-circle above each real pole.
-
-![](../../../../assets/assets/figures/2021-12-21_23-40-15.png)
+An indentation below a real pole $x_0$ instead puts $x_0$ inside the contour; the counterclockwise half-circle then contributes $+i\pi\Res_{z=x_0} f$, the residue sum gains $2\pi i\Res_{z=x_0} f$, and the result below is unchanged.
 
 **Estimates.** The integral over the large arc tends to $0$ by the ML estimate when $f = \bigo(1/\abs z^{1+\varepsilon})$ on the upper half plane, and by Jordan's lemma when $f(z) = g(z)e^{iaz}$ with $a>0$ and $g = \bigo(1/\abs z)$.
 By [[T-SSNLT]], an arc of angle $\theta$ about a simple pole contributes $i\theta \Res$ in the limit, so each clockwise half-circle contributes $-i\pi\Res$.
@@ -137,10 +137,7 @@ $$
 - If $f(\zeta z) = f(z)$ for $\zeta = e^{2\pi i/m}$, use the sector $\theset{0\leq\arg z\leq 2\pi/m,\ \abs z\leq R}$.
   If the arc integral tends to $0$, the ray $z = \zeta x$, traversed toward $0$, contributes $-\zeta\int_0^\infty f$, so $(1 - \zeta)\int_0^\infty f$ is $2\pi i$ times the sum of the residues in the sector.
   For $f(x) = 1/(1+x^n)$ and $\zeta = e^{2\pi i/n}$ this gives $\int_0^\infty {\dx \over 1 + x^n} = {\pi/n \over \sin(\pi/n)}$.
-
-  ![](../../../../assets/assets/figures/2021-12-21_21-14-04.png)
-
-  ![](../../../../assets/assets/figures/2021-12-21_21-17-25.png)
+  For a rational $f$ on the keyhole, the two edges of the cut are the case $\zeta = e^{2\pi i} = 1$, and their integrals cancel; inserting a factor $\log z$ breaks the cancellation, as in [the logarithm case](#a-branch-cut-a-logarithm).
 
 - If $f(z + ib) = cf(z)$ for real $b$ and constant $c$, use the rectangle with vertices $\pm R$ and $\pm R + ib$.
   If the vertical edges contribute integrals tending to $0$, the top edge contributes $-c\int_\RR f$, so $(1-c)\int_\RR f$ is $2\pi i$ times the sum of the residues in the strip $0<\Im z<b$.
@@ -152,9 +149,7 @@ For $f$ not even with $f(\zeta z) = f(z)$ for a root of unity $\zeta$, the secto
 
 ## The standard contours
 
-![](../../../../assets/assets/figures/2021-12-23_18-51-55.png)
-
-![](../../../../assets/assets/figures/2021-12-21_21-10-30.png)
+![Three standard contours: the upper semicircle gamma_R; the semicircle mu_R indented at 0 by a half-circle of radius 1/R; and the keyhole eta_R around the positive real axis with inner circle of radius 1/R.](../../../../assets/assets/figures/2021-12-23_18-51-55.png)
 
 ## Bounding denominators
 
