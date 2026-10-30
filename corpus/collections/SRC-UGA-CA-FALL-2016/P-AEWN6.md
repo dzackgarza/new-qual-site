@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AEWN6
 kind: problem
-title: '(a) $f: D\rightarrow {\CC}$ be a continuous function, where'
+title: 'The complex line integral, the bound $\abs{\int_\alpha f}\leq M\cdot\operatorname{length}(\alpha)$, and an estimate of $\int_{\abs z=R}\log z/z^2\,dz$'
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS4.PR-2
 kind: problem
-title: "SS 4.PR-2: Solving a linear ODE with the Fourier transform"
+title: 'Solving a constant-coefficient linear ODE with the Fourier transform'
 classification:
   areas:
   - complex-analysis
@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-2. The problem is to solve the diferential equation
+The problem is to solve the differential equation
 
 $$
 a _ {n} \frac {d ^ {n}}{d t ^ {n}} u (t) + a _ {n - 1} \frac {d ^ {n - 1}}{d t ^ {n - 1}} u (t) + \dots + a _ {0} u (t) = f (t),
