@@ -19,8 +19,8 @@ source:
   problems:
   - P-ALGF14A
   - P-ALGF14B
-  - P-ALGF14C
-  - P-ALGF14D
+  - P-ALGF13C
+  - P-ALGF06G
   - P-ALGF14E
   - P-ALGF14F
   - P-ALGF14G

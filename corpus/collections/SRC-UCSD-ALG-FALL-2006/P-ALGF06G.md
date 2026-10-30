@@ -42,6 +42,10 @@ Justify your answer.
 Hint: Recall that there is a multiplicative norm map $N: \ZZ[\sqrt{10}] \to \ZZ$ given by $N(a + b\sqrt{10}) = a^2 - 10b^2$, for all $a, b \in \ZZ$.
 :::
 
+::: {.remark title="Variations"}
+Parts (b), (c) and (e) alone: $2$ is irreducible but not prime in $\ZZ[\sqrt{10}]$, so $\ZZ[\sqrt{10}]$ is not a UFD. The proofs of those parts apply unchanged.
+:::
+
 ::: {.solution}
 We use the multiplicative norm
 $$

@@ -34,6 +34,10 @@ Let $A$ be a commutative noetherian ring.
 (b) Show that $A$ has only finitely many minimal prime ideals.
 :::
 
+::: {.remark title="Variations"}
+Part (a) with $I=(0)$: a Noetherian commutative ring has finitely many prime ideals $\mathfrak p_1,\ldots,\mathfrak p_n$ with $\mathfrak p_1\cdots\mathfrak p_n=(0)$. The proof of part (a) applies unchanged.
+:::
+
 ::: {.solution}
 
 ::: pf
