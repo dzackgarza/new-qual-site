@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-For each integer $k > 0$ denote by $\Delta_k(j) = [j 2^{-k}, (j+1) 2^{-k})]$ where $j \in \ZZ$, the dyadic rational interval of length $2^{-k}$ starting at $j 2^{-k}$.
+For each integer $k > 0$ denote by $\Delta_k(j) = [j 2^{-k}, (j+1) 2^{-k}]$ where $j \in \ZZ$, the dyadic rational interval of length $2^{-k}$ starting at $j 2^{-k}$.
 Let $f \in L^1(\RR)$, and define
 $$
 A_k(f)(x) = \sum_j a_k(j) \mathbf{1}_{\Delta_k(j)}(x), \quad a_k(j) = \frac{1}{\setmeasure{\Delta_k(j)}} \int_{\Delta_k(j)} f(y) \, dy.
@@ -35,6 +35,8 @@ $$
 (a) Prove that $\norm{A_k f}_{L^1(\RR)} \leq \norm{f}_{L^1(\RR)}$ for all $k > 0$, $f \in L^1(\RR)$.
 
 (b) Show that if $f \in L^1(\RR)$ then $A_k(f) \to f$ in $L^1(\RR)$ as $k \to \infty$.
+
+Hint: First try to show this when $f$ is continuous and compactly supported.
 :::
 
 ::: {.solution}
