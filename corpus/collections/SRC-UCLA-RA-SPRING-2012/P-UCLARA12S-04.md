@@ -6,7 +6,10 @@ title: 'A closed mean-zero subspace of $L^1$ and $L^2$ density'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L¹
+  - L²
+  - Density
 relations: []
 review: draft
 audit:

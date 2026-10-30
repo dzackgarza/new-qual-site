@@ -6,7 +6,10 @@ title: Translates of a function with nonvanishing Fourier transform
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Transform
+  - Density
+  - L²
 relations: []
 review: draft
 audit:

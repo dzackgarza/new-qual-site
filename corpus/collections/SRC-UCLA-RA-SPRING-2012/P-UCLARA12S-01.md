@@ -6,7 +6,10 @@ title: 'Modes of convergence in $L^3$'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Lp Spaces
+  - Convergence of Functions
+  - Counterexamples
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Riesz representation theorem for Hilbert-space functionals
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Riesz Representation
+  - Hilbert Spaces
 relations: []
 review: draft
 audit:

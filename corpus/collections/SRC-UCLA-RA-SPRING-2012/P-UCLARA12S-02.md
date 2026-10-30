@@ -6,7 +6,9 @@ title: Borel measurability under continuous maps and products
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Measure Theory
+  - Borel Measures
 relations: []
 review: draft
 audit:

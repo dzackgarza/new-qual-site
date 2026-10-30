@@ -6,7 +6,10 @@ title: 'Piecewise averages converge in $L^1$'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L¹
+  - Convergence of Functions
+  - Density
 relations: []
 review: draft
 audit:
