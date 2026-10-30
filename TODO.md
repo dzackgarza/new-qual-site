@@ -309,7 +309,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-TOP-UNL-2017Q1
   - [x] SRC-TOP-WORKSHOP
   - [x] SRC-TOP-WORKSHOP-2020
-  - [ ] SRC-TOPOLOGY-PHD-F07
+  - [x] SRC-TOPOLOGY-PHD-F07
   - [ ] SRC-TOPOLOGY-PHD-F08
   - [ ] SRC-TOPOLOGY-PHD-F95
   - [ ] SRC-TOPOLOGY-SEPARATION-COUNTABILITY-REVIEW
