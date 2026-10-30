@@ -26,7 +26,7 @@ But $H = xH$ gives $x\in H$; $x^2 H = H$ gives $\inverseof{x} = x^2 \in H$, henc
 $\contradiction$
 :::
 
-[[T-3KCD6]]
+[[T-XDMK2]]
 
 ::: {.proof}
 Let $p$ be a prime dividing $\size G$, and let $X = \theset{(g_1,\ldots,g_p)\in G^p \st g_1g_2\cdots g_p = e}$.

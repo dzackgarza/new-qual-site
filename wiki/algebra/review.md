@@ -31,7 +31,7 @@ Chapter: [[algebra/groups/index|Groups]].
 
 [[E-NNTQB]]
 
-[[T-3KCD6]]
+[[T-XDMK2]]
 
 [[PR-GSDKO]]
 

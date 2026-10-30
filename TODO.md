@@ -612,8 +612,8 @@ mathematical correction under its own node, not under copy policy.
       renders as unlinked text; each key must link like a single-key citation.
     - [x] CARD-04: T-3X5FF and T-S5T5C both state Sylow's third theorem; merge, keep the
       T-3X5FF proof and the $n_p \le m$ remark, repoint L-WROBY.
-    - [ ] CARD-04: T-XDMK2 and T-3KCD6 are both "Cauchy's theorem"; merge and repoint.
-    **Acceptance:** each item read and repaired.
+    - [x] CARD-04: T-XDMK2 and T-3KCD6 are both "Cauchy's theorem"; merge and repoint.
+    **Acceptance:** each item read and repaired. **Closed.**
 
   Round 5 (revision `fe84046a76`, collections) injected the node below; `audited-deployment`
   needs it.

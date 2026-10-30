@@ -29,5 +29,5 @@ Moreover, every $p$-subgroup of $G$ is contained in a Sylow $p$-subgroup [@DF04]
 :::
 
 ::: {.remark}
-For $a\geq1$ this strengthens [[T-3KCD6|Cauchy's theorem]], which gives a subgroup of order $p$.
+For $a\geq1$ this strengthens [[T-XDMK2|Cauchy's theorem]], which gives a subgroup of order $p$.
 :::

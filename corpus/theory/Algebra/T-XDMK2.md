@@ -9,6 +9,8 @@ classification:
   - algebra
   topics:
   - Groups
+  - Cosets and Lagrange
+  - p-Groups
 relations:
 - kind: uses
   target: E-NNTQB
@@ -21,6 +23,6 @@ If $p$ divides $\abs G$, then $G$ contains an element of order $p$, and therefor
 :::
 
 ::: {.remark}
-By [[E-NNTQB|Lagrange's theorem]], the order of every element of $G$ divides $\abs G$; Cauchy's theorem is the converse for prime divisors of $\abs G$.
+By [[E-NNTQB|Lagrange's theorem]], the order of every element of $G$ divides $\abs G$; Cauchy's theorem is the converse for prime divisors of $\abs G$, although a composite divisor need not be the order of an element.
 [[T-WRMBM|Sylow's first theorem]] strengthens the existence statement from order $p$ to order $p^a$, where $p^a$ is the largest power of $p$ dividing $\abs G$.
 :::
