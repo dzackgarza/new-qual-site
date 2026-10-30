@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Solve $y ^ { \prime \prime } - 3 y ^ { \prime } + 2 y = \sin x$
+Solve $y'' - 3y' + 2y = \sin x$.
 :::
 
 ::: {.solution}

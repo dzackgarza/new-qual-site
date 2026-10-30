@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the most general solution of $\left( { \frac { \partial } { \partial x } } + { \frac { \partial } { \partial y } } + { \frac { \partial } { \partial z } } \right) f ( x , y , z ) = x - y$
+Find the most general solution of $\left( \frac{\partial}{\partial x} + \frac{\partial}{\partial y} + \frac{\partial}{\partial z} \right) f(x, y, z) = x - y$.
 :::
 
 ::: {.solution}

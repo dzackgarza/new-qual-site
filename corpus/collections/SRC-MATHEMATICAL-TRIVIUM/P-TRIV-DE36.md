@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Solve $y ^ { \prime \prime } ( x ) - 3 y ^ { \prime } ( x ) + 2 y ( x ) = \delta ( x - 1 )$ with $y ( 0 ) = 0$ and $y ( 1 ) = 1$
+Solve $y''(x) - 3y'(x) + 2y(x) = \delta(x - 1)$ with $y(0) = 0$ and $y(1) = 1$.
 :::
 
 ::: {.solution}

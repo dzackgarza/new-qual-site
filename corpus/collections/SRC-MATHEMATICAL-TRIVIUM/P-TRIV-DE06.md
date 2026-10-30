@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Solve $y ^ { \prime \prime } - 6 y ^ { \prime } + 9 y = 0 { \mathrm { ~ w i t h ~ } } y ( 1 ) = 1 { \mathrm { ~ a n d ~ } } y ^ { \prime } ( 3 ) = 0$
+Solve $y'' - 6y' + 9y = 0$ with $y(1) = 1$ and $y'(3) = 0$.
 :::
 
 ::: {.solution}

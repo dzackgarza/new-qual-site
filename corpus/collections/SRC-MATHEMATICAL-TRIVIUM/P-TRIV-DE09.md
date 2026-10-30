@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Solve $y ^ { \prime \prime } + 3 y ^ { \prime } + 2 y = \operatorname { t a n h } x$
+Solve $y'' + 3y' + 2y = \tanh x$.
 :::
 
 ::: {.solution}

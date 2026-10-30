@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the most general solution of ${ \frac { \partial f } { \partial x } } + a { \frac { \partial f } { \partial y } } + ( x - 2 y ) f = 0$
+Find the most general solution of $\frac{\partial f}{\partial x} + a\frac{\partial f}{\partial y} + (x - 2y)f = 0$.
 :::
 
 ::: {.solution}

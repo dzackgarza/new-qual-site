@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Verify that $\int _ { 1 } ^ { \infty } \mathrm { d } t \frac { e ^ { - x t } } { \sqrt { t ^ { 2 } - 1 } }$ is a solution to the differential equation $y ^ { \prime \prime } { + } \frac { 1 } { x } y ^ { \prime } { - } y =$ 0.
+Verify that $\int_1^{\infty} \mathrm{d}t\, \frac{e^{-xt}}{\sqrt{t^2 - 1}}$ is a solution to the differential equation $y'' + \frac{1}{x}y' - y = 0$.
 :::
 
 ::: {.solution}

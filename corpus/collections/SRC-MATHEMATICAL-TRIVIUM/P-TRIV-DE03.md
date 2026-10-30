@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-${ \mathrm { S o l v e ~ } } ( x + 1 ) { \frac { d y } { d x } } = 2 y + ( x + 1 ) ^ { 5 / 2 } { \mathrm { ~ w i t h ~ } } y ( 0 ) = 3$
+Solve $(x + 1)\frac{dy}{dx} = 2y + (x + 1)^{5/2}$ with $y(0) = 3$.
 :::
 
 ::: {.solution}

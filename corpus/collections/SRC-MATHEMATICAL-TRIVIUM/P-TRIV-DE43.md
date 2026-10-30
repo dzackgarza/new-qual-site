@@ -17,12 +17,10 @@ audit:
 
 ::: {.problem}
 Solve
-
 $$
-( \nabla ^ { 2 } + k ^ { 2 } ) u ( x , y , z ) = 0 \quad\tag{40}
+(\nabla^2 + k^2)u(x, y, z) = 0 \tag{40}
 $$
-
-so that $u = 0$ whenever any of the coordinates is equal to 0 or L. What are the allowed values of $k ^ { 2 } ?$
+so that $u = 0$ whenever any of the coordinates is equal to $0$ or $L$. What are the allowed values of $k^2$?
 :::
 
 ::: {.solution}

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Solve $y ^ { \prime \prime } - 3 y ^ { \prime } + 2 y = e ^ { 3 t } \mathrm { w i t h } y ( 0 ) = 1 , y ^ { \prime } ( 0 ) = 0$
+Solve $y'' - 3y' + 2y = e^{3t}$ with $y(0) = 1$, $y'(0) = 0$.
 :::
 
 ::: {.solution}

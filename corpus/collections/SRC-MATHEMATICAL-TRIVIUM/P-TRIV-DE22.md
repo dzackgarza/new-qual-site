@@ -17,12 +17,10 @@ audit:
 
 ::: {.problem}
 Consider the equation
-
 $$
-y ^ { \prime \prime } ( x ) + P ( x ) y ^ { \prime } ( x ) + Q ( x ) y ( x ) = 0\tag{35}
+y''(x) + P(x)y'(x) + Q(x)y(x) = 0 \tag{35}
 $$
-
-and show that if $y _ { 1 }$ is a solution to this equation, then also $\begin{array} { r } { y _ { 2 } = y _ { 1 } \int ^ { x } d s \frac { e ^ { - \int ^ { s } d t P ( t ) } } { [ y _ { 1 } ( s ) ] ^ { 2 } } } \end{array}$ is.
+and show that if $y_1$ is a solution to this equation, then also $y_2 = y_1 \int^x ds\, \frac{e^{-\int^s dt\, P(t)}}{[y_1(s)]^2}$ is.
 :::
 
 ::: {.solution}

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Solve $\left( - \frac { d ^ { 2 } } { d x ^ { 2 } } + m ^ { 2 } \right) G ( x ) = \delta ( x )$
+Solve $\left( -\frac{d^2}{dx^2} + m^2 \right) G(x) = \delta(x)$.
 :::
 
 ::: {.solution}

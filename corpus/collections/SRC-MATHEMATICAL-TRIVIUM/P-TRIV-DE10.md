@@ -16,19 +16,17 @@ audit:
 ---
 
 ::: {.problem}
-Find C(t) when
-
+Find $C(t)$ when
 $$
-C ^ { \prime } ( t ) = \alpha ( a - C ( t ) ) ( b - C ( t ) )
+C'(t) = \alpha(a - C(t))(b - C(t))
 $$
-
 if
 
 (a) $a \neq b$
 
 (b) $a = b$
 
-and with C(0) = 0.
+and with $C(0) = 0$.
 :::
 
 ::: {.solution}

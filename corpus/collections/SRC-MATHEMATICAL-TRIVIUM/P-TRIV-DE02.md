@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Solve $\left\{ { \begin{array} { l } { x ^ { \prime } ( t ) = - x ( t ) + 6 y ( t ) } \\ { y ^ { \prime } ( t ) = 2 x ( t ) + 3 y ( t ) } \end{array} } \right.$
+Solve $\begin{cases} x'(t) = -x(t) + 6y(t) \\ y'(t) = 2x(t) + 3y(t) \end{cases}$
 :::
 
 ::: {.solution}

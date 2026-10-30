@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Solve $y ^ { \prime } ( x ) = f ( x ) y ( x ) + g ( x ) y ^ { n } ( x )$
+Solve $y'(x) = f(x)y(x) + g(x)y^n(x)$.
 :::
 
 ::: {.solution}

@@ -17,18 +17,14 @@ audit:
 
 ::: {.problem}
 Consider a forced damped harmonic oscillator:
-
 $$
-\ddot { y } ( t ) + 2 k \dot { y } ( t ) + \Omega ^ { 2 } y ( t ) = f ( t )\tag{25}
+\ddot{y}(t) + 2k\dot{y}(t) + \Omega^2 y(t) = f(t) \tag{25}
 $$
-
-the Green function G(t) is defined such that
-
+the Green function $G(t)$ is defined such that
 $$
-y ( t ) = \int d t ^ { \prime } G ( t - t ^ { \prime } ) f ( t ^ { \prime } ) .\tag{26}
+y(t) = \int dt'\, G(t - t') f(t'). \tag{26}
 $$
-
-Find G(t) when
+Find $G(t)$ when
 
 (a) $\Omega > k > 0$ (oscillating system)
 

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\delta ( x ) = \operatorname* { l i m } _ { \epsilon \to 0 } \operatorname { I m } \frac { 1 } { \pi } \frac { 1 } { x - i \epsilon }$
+Show that $\delta(x) = \lim_{\epsilon \to 0} \Im \frac{1}{\pi}\frac{1}{x - i\epsilon}$.
 :::
 
 ::: {.solution}

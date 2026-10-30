@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Solve $y ^ { \prime \prime \prime } - 3 y ^ { \prime } + 2 y = 0$
+Solve $y''' - 3y' + 2y = 0$.
 :::
 
 ::: {.solution}

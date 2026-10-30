@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute $\int _ { - \infty } ^ { \infty } \delta ^ { \prime \prime } ( x - 2 ) \frac { 1 } { 1 + x ^ { 2 } } \mathrm { d } x$
+Compute $\int_{-\infty}^{\infty} \delta''(x - 2)\frac{1}{1 + x^2}\, \mathrm{d}x$.
 :::
 
 ::: {.solution}

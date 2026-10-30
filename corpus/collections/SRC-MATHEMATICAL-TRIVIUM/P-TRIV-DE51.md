@@ -16,8 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-A conducting sphere of radius a with zero total charge is exposed to a uniform electric field $\vec { E }$ in the z direction.
-Find the electrostatic potential outside the sphere if we set the surface of the sphere to have potential zero.
+A conducting sphere of radius $a$ with zero total charge is exposed to a uniform electric field $\vec{E}$ in the $z$ direction. Find the electrostatic potential outside the sphere if we set the surface of the sphere to have potential zero.
 :::
 
 ::: {.solution}

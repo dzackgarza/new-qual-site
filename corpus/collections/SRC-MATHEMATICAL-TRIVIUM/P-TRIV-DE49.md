@@ -16,11 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Compute the stationary temperature distribution $u ( \rho , \theta , z )$ of a semi-infinite cylinder of radius 1 when the curved surface is kept at temperature 0 if
+Compute the stationary temperature distribution $u(\rho, \theta, z)$ of a semi-infinite cylinder of radius $1$ when the curved surface is kept at temperature $0$ if
 
-(a) the flat surface is kept at a temperature $u _ { 0 }$
+(a) the flat surface is kept at a temperature $u_0$
 
-(b) the flat surface is kept at a temperature $u _ { 0 } \rho$ sin θ
+(b) the flat surface is kept at a temperature $u_0\rho\sin\theta$
 :::
 
 ::: {.solution}

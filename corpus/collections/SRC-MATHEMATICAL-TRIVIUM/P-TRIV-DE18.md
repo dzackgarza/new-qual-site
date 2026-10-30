@@ -17,9 +17,8 @@ audit:
 
 ::: {.problem}
 Find the charge distribution that gives the electrostatic potential
-
 $$
-\varphi ( x , y , z ) = { \frac { Z } { 4 \pi \varepsilon _ { 0 } } } { \frac { e ^ { - a r } } { r } }\tag{27}
+\varphi(x, y, z) = \frac{Z}{4\pi\varepsilon_0} \frac{e^{-ar}}{r} \tag{27}
 $$
 :::
 

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider a metal rod of length L. One end is kept at temperature 0, and the other at temperature $T _ { 0 }$ . Find the temperature $T ( x , t )$ , knowing that $T ( x , 0 ) = 0$
+Consider a metal rod of length $L$. One end is kept at temperature $0$, and the other at temperature $T_0$. Find the temperature $T(x, t)$, knowing that $T(x, 0) = 0$.
 :::
 
 ::: {.solution}

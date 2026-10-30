@@ -17,12 +17,10 @@ audit:
 
 ::: {.problem}
 Find the solutions of:
-
 $$
-y ^ { \prime \prime } + \lambda y = 0\tag{37}
+y'' + \lambda y = 0 \tag{37}
 $$
-
-with $y ^ { \prime } ( 0 ) = y ^ { \prime } ( \pi ) = 0 ;$
+with $y'(0) = y'(\pi) = 0$;
 :::
 
 ::: {.solution}

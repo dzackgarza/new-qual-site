@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the most general solution of $x \frac { \partial f } { \partial x } - y \frac { \partial f } { \partial y } = 0$
+Find the most general solution of $x\frac{\partial f}{\partial x} - y\frac{\partial f}{\partial y} = 0$.
 :::
 
 ::: {.solution}

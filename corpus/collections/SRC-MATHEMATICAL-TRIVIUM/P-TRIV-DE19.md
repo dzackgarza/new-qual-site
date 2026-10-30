@@ -16,13 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Find the general solution of the equation :
-
+Find the general solution of the equation:
 $$
-x ( 2 - x ) \frac { d ^ { 2 } y } { d x ^ { 2 } } + 3 ( 1 - x ) \frac { d y } { d x } - y = 0\tag{28}
+x(2 - x)\frac{d^2y}{dx^2} + 3(1 - x)\frac{dy}{dx} - y = 0 \tag{28}
 $$
-
-as a power series about $x = 1$
+as a power series about $x = 1$.
 :::
 
 ::: {.solution}

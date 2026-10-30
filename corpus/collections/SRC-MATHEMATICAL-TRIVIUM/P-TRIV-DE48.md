@@ -16,13 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-A string has endpoints which are fixed at $x = 0$ and $x = L$ . At $t = 0$ , the string is hit at $x = a$ so it starts vibrating:
-
+A string has endpoints which are fixed at $x = 0$ and $x = L$. At $t = 0$, the string is hit at $x = a$ so it starts vibrating:
 $$
-y ( x , 0 ) = 0 \qquad \partial _ { t } y ( x , 0 ) = L v _ { 0 } \delta ( x - a )\tag{42}
+y(x, 0) = 0 \qquad \partial_t y(x, 0) = Lv_0\delta(x - a) \tag{42}
 $$
-
-where y is the amplitude of the oscillations (assume the amplitude to be small and the wave velocity to be v). Find $y ( x , t )$
+where $y$ is the amplitude of the oscillations (assume the amplitude to be small and the wave velocity to be $v$). Find $y(x, t)$.
 :::
 
 ::: {.solution}

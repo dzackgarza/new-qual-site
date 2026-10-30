@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that ${ \frac { d } { d x } } \log x = { \frac { 1 } { x } } - i \pi \delta ( x )$
+Show that $\frac{d}{dx}\log x = \frac{1}{x} - i\pi\delta(x)$.
 :::
 
 ::: {.solution}

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Solve $y ^ { \prime } ( x ) = x e ^ { x ^ { 2 } - 2 \log y ( x ) }$
+Solve $y'(x) = xe^{x^2 - 2\log y(x)}$.
 :::
 
 ::: {.solution}

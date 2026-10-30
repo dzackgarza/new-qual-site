@@ -16,13 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-A two dimensional rectangular slab (with the two sides of length a and b) has its edges fixed; at time $t = 0$ it has the profile
-
+A two dimensional rectangular slab (with the two sides of length $a$ and $b$) has its edges fixed; at time $t = 0$ it has the profile
 $$
-u ( x , y , 0 ) = \sin \frac { 2 x \pi } { a } \sin \frac { 3 y \pi } { b } ;\tag{41}
+u(x, y, 0) = \sin\frac{2x\pi}{a}\sin\frac{3y\pi}{b}; \tag{41}
 $$
-
-find $u ( x , y , t )$ knowing that it satisfies the wave equation with a velocity v.
+find $u(x, y, t)$ knowing that it satisfies the wave equation with a velocity $v$.
 :::
 
 ::: {.solution}

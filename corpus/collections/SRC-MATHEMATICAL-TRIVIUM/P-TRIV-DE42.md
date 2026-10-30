@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Solve $\partial _ { x } ^ { 2 } u + 2 \partial _ { x } \partial _ { y } u + \partial _ { y } ^ { 2 } u = 0$ with the boundary conditions $u ( x , 0 ) = \sin { x }$ and $u ( 0 , y ) = y ^ { 2 }$
+Solve $\partial_x^2 u + 2\partial_x\partial_y u + \partial_y^2 u = 0$ with the boundary conditions $u(x, 0) = \sin x$ and $u(0, y) = y^2$.
 :::
 
 ::: {.solution}

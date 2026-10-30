@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\delta ( \alpha x ) = \frac { 1 } { \alpha } \delta ( x )$ , and more generally, $\delta ( f ( x ) ) = \sum _ { i } { \frac { \delta ( x - x _ { i } ) } { \abs{ f ^ { \prime } ( x _ { i } ) } } }$ where $x _ { i }$ are the root of f , i.e. $f ( x _ { i } ) = 0$
+Show that $\delta(\alpha x) = \frac{1}{\alpha}\delta(x)$, and more generally, $\delta(f(x)) = \sum_i \frac{\delta(x - x_i)}{\abs{f'(x_i)}}$ where $x_i$ are the root of $f$, i.e. $f(x_i) = 0$.
 :::
 
 ::: {.solution}

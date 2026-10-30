@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Solve $y ^ { \prime \prime } + 1 6 y = \theta ( \pi - t )$ with $y ( 0 ) = y ^ { \prime } ( 0 ) = 0$ and where θ is the Heaviside function, $\theta ( x ) = 0 { \mathrm { ~ i f ~ } } x < 0$ and $\theta ( x ) = 1 { \mathrm { ~ i f ~ } } x > 0$
+Solve $y'' + 16y = \theta(\pi - t)$ with $y(0) = y'(0) = 0$ and where $\theta$ is the Heaviside function, $\theta(x) = 0$ if $x < 0$ and $\theta(x) = 1$ if $x > 0$.
 :::
 
 ::: {.solution}

@@ -17,12 +17,10 @@ audit:
 
 ::: {.problem}
 Find the non-zero solutions of
-
 $$
-\left( x u ^ { \prime } ( x ) \right) ^ { \prime } = - \lambda \frac { u ( x ) } { x }\tag{39}
+\left( xu'(x) \right)' = -\lambda\frac{u(x)}{x} \tag{39}
 $$
-
-such that $u ( 1 ) = 0$ and $u ^ { \prime } ( e ) = 0$ . What values of λ are allowed?
+such that $u(1) = 0$ and $u'(e) = 0$. What values of $\lambda$ are allowed?
 :::
 
 ::: {.solution}

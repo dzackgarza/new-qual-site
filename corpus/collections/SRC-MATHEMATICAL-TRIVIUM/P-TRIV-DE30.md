@@ -17,12 +17,10 @@ audit:
 
 ::: {.problem}
 Find the solutions of
-
 $$
-x ^ { 2 } y ^ { \prime \prime } + 3 x y ^ { \prime } + \lambda y = 0\tag{38}
+x^2y'' + 3xy' + \lambda y = 0 \tag{38}
 $$
-
-with $x \in [ 1 , e ]$ such that $y ( 1 ) = y ( e ) = 0$
+with $x \in [1, e]$ such that $y(1) = y(e) = 0$.
 :::
 
 ::: {.solution}

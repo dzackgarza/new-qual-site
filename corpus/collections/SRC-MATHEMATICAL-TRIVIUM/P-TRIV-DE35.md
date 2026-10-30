@@ -16,10 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-Find the coefficients a, b, c so that
-
+Find the coefficients $a$, $b$, $c$ so that
 $$
-\delta ^ { \prime \prime } ( x - x _ { 0 } ) \frac { 1 } { ( 1 + x - x _ { 0 } ) } = a \delta ^ { \prime \prime } ( x - x _ { 0 } ) + b \delta ^ { \prime } ( x - x _ { 0 } ) + c \delta ( x - x _ { 0 } ) .
+\delta''(x - x_0)\frac{1}{(1 + x - x_0)} = a\delta''(x - x_0) + b\delta'(x - x_0) + c\delta(x - x_0).
 $$
 :::
 

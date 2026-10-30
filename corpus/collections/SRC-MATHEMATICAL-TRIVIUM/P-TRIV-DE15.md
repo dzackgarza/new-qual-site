@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Solve $y ^ { \prime } + 2 y = e ^ { - t } \theta ( t )$ , where θ is the Heaviside function, $\theta ( x ) = 0 { \mathrm { ~ i f ~ } } x < 0$ and $\theta ( x ) = 1 { \mathrm { ~ i f ~ } } x > 0$
+Solve $y' + 2y = e^{-t}\theta(t)$, where $\theta$ is the Heaviside function, $\theta(x) = 0$ if $x < 0$ and $\theta(x) = 1$ if $x > 0$.
 :::
 
 ::: {.solution}

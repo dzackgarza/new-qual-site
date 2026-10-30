@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Solve $y ^ { \prime \prime } - y ^ { \prime } - 2 y = 0$
+Solve $y'' - y' - 2y = 0$.
 :::
 
 ::: {.solution}

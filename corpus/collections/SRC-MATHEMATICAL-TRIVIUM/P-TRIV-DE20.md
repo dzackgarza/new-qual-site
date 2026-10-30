@@ -17,11 +17,9 @@ audit:
 
 ::: {.problem}
 Given the differential equation
-
 $$
-\frac { d } { d \xi } \left( \xi \frac { d u } { d \xi } \right) + \left( \frac { 1 } { 2 } E \xi + \alpha - \frac { m ^ { 2 } } { 4 \xi } - \frac { 1 } { 4 } F \xi ^ { 2 } \right) u = 0\tag{29}
+\frac{d}{d\xi}\left( \xi\frac{du}{d\xi} \right) + \left( \frac{1}{2}E\xi + \alpha - \frac{m^2}{4\xi} - \frac{1}{4}F\xi^2 \right) u = 0 \tag{29}
 $$
-
 Find the first three terms of a series solution around $\xi = 0$ by using the largest solution of the indicial equation.
 :::
 

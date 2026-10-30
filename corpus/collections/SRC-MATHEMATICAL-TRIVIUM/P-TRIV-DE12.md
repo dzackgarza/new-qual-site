@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Solve $y ^ { \prime } - y = e ^ { 3 t }$ with $y ( 0 ) = 2$
+Solve $y' - y = e^{3t}$ with $y(0) = 2$.
 :::
 
 ::: {.solution}

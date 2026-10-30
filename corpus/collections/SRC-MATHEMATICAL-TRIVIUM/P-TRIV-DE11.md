@@ -17,9 +17,8 @@ audit:
 
 ::: {.problem}
 Solve
-
 $$
-( x y ^ { 2 } - y ) \mathrm { d } x + x \mathrm { d } y = 0
+(xy^2 - y)\, \mathrm{d}x + x\, \mathrm{d}y = 0
 $$
 :::
 

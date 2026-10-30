@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider an semi-infinite $( x \ge 0 )$ metal rod with conductivity κ. Find the heat distribution $u ( x , t )$ if $u ( x , 0 ) = u _ { 0 } \delta ( x )$
+Consider an semi-infinite ($x \geq 0$) metal rod with conductivity $\kappa$. Find the heat distribution $u(x, t)$ if $u(x, 0) = u_0\delta(x)$.
 :::
 
 ::: {.solution}

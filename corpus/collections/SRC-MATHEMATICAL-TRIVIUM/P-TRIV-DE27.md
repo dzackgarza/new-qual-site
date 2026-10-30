@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Given the eigenvalue problem ${ \mathcal { L } } ( x ) \psi ( x ) = \lambda \psi ( x )$ with ${ \mathcal L } ( x ) = p _ { 0 } ( x ) \frac { d ^ { 2 } } { d x ^ { 2 } } +$ $p _ { 1 } ( x ) \frac { d } { d x } + p _ { 2 } ( x )$ ,  is self-adjoint if $p _ { 0 } ^ { \prime } = p _ { 1 }$ . Find a function $f ( x )$ such that, by multiplying the following ODE, it makes them self adjoint:
+Given the eigenvalue problem $\mathcal{L}(x)\psi(x) = \lambda\psi(x)$ with $\mathcal{L}(x) = p_0(x)\frac{d^2}{dx^2} + p_1(x)\frac{d}{dx} + p_2(x)$, $\mathcal{L}$ is self-adjoint if $p_0' = p_1$. Find a function $f(x)$ such that, by multiplying the following ODE, it makes them self adjoint:
 
-(a) Laguerre’s ODE: $x y ^ { \prime \prime } + ( 1 - x ) y ^ { \prime } + a y = 0$
+(a) Laguerre's ODE: $xy'' + (1 - x)y' + ay = 0$
 
-(b) Hermite’s ODE: $y ^ { \prime \prime } - 2 x y ^ { \prime } + 2 \alpha y = 0$
+(b) Hermite's ODE: $y'' - 2xy' + 2\alpha y = 0$
 
-(c) Chabyshev’s ODE: $( 1 - x ^ { 2 } ) y ^ { \prime \prime } - x y ^ { \prime } + n ^ { 2 } y = 0$
+(c) Chabyshev's ODE: $(1 - x^2)y'' - xy' + n^2y = 0$
 :::
 
 ::: {.solution}

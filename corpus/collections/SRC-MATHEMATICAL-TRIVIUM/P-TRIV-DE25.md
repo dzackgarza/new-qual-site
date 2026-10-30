@@ -18,13 +18,13 @@ audit:
 ::: {.problem}
 Prove the following properties of the Bessel functions of the first kind:
 
-(a) ${ \frac { d } { d x } } \left( x ^ { \nu } J _ { \nu } ( x ) \right) = x ^ { \nu } J _ { \nu - 1 } ( x )$
+(a) $\frac{d}{dx}\left( x^\nu J_\nu(x) \right) = x^\nu J_{\nu-1}(x)$
 
-(b) ${ \frac { d } { d x } } \left( x ^ { - \nu } J _ { \nu } ( x ) \right) = - x ^ { - \nu } J _ { \nu + 1 } ( x )$
+(b) $\frac{d}{dx}\left( x^{-\nu} J_\nu(x) \right) = -x^{-\nu} J_{\nu+1}(x)$
 
-(c) $\frac { d } { d x } J _ { \nu } ( x ) = \frac { 1 } { 2 } \left( J _ { \nu - 1 } ( x ) - J _ { \nu + 1 } ( x ) \right)$
+(c) $\frac{d}{dx} J_\nu(x) = \frac{1}{2}\left( J_{\nu-1}(x) - J_{\nu+1}(x) \right)$
 
-(d) $J _ { \nu - 1 } ( x ) + J _ { \nu + 1 } ( x ) = \frac { 2 \nu } { x } J _ { \nu } ( x )$
+(d) $J_{\nu-1}(x) + J_{\nu+1}(x) = \frac{2\nu}{x} J_\nu(x)$
 :::
 
 ::: {.solution}
