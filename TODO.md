@@ -567,7 +567,7 @@ mathematical correction under its own node, not under copy policy.
       (owner of `ad-fancy-lists`). No check: a part label "(b)" opening a paragraph after display
       mathematics is the same one-item list and is authored in many problem statements.
     - [x] FD-T7IQV proof mixes $G^i$ and $G_i$ for one series (NOT-3).
-    - [ ] CARD-04: D-RG5FO and D-H4TDM both define the Gram matrix of a bilinear form and its
+    - [x] CARD-04: D-RG5FO and D-H4TDM both define the Gram matrix of a bilinear form and its
       change of basis; merge, keeping distinct content. D-RG5FO shows "Suggest a slogan".
     - [ ] PR-GEHJF remark: the sentence built around inserted card titles is ungrammatical.
     **Acceptance:** each item read and repaired.

@@ -21,7 +21,7 @@ Over a perfect field, every linear operator $T$ has a unique Jordan--Chevalley d
 
 [[D-SSGKC]]
 
-[[D-RG5FO]]
+[[D-H4TDM]]
 
 [[D-BSUV4]]
 

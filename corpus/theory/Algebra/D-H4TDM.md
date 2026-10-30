@@ -29,5 +29,13 @@ Let $k$, $V$, $\mathcal B$, $b$, and $G$ be as in the definition, and write $[x]
 2. If $\mathcal B'$ is another ordered basis and $P\in\GL_n(k)$ satisfies $[x]_{\mathcal B} = P[x]_{\mathcal B'}$ for all $x\in V$, then the Gram matrix of $b$ with respect to $\mathcal B'$ is $P^t G P$. In particular, $\det G$ is well defined up to multiplication by the square of a nonzero element of $k$.
 
 3. $b$ is [[D-O4WWN|nondegenerate]] if and only if $G$ is invertible.
+
+4. For fixed $\mathcal B$, the assignment $b\mapsto G$ is a bijection from bilinear forms on $V$ to $\Mat_{n\times n}(k)$: every $A\in\Mat_{n\times n}(k)$ is the Gram matrix of $(x,y)\mapsto[x]_{\mathcal B}^t\,A\,[y]_{\mathcal B}$.
+
+5. $b$ is symmetric if and only if $G$ is symmetric.
 [@Art11]
+:::
+
+::: {.remark}
+The change of basis $G\mapsto P^tGP$ preserves the rank of $G$ and, for $k=\RR$ and a symmetric form, its signature, but not its eigenvalues: for $P=2I_n$ the new Gram matrix is $4G$.
 :::
