@@ -21,7 +21,7 @@ source:
     - name: Ch. 1 Exercises
       problems:
         - id: E-L3F4O
-          comment: "1.1"
+          comment: "1.1 as part"
     - name: Ch. 2 Exercises
       problems:
         - id: P-236QU

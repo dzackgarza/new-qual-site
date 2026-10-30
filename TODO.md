@@ -629,8 +629,8 @@ mathematical correction under its own node, not under copy policy.
     - [x] P-AEWN6 part (1) lacks "Let"; P-57CAX part (2) has "Let Let".
     - [x] SRC-TEXT-FOL99: P-RVL3K part (a) is not Folland 6.7 (6.7 assumes
       $f \in L^p \cap L^\infty$ on any measure space); drop that appearance.
-    - [ ] SRC-TEXT-SS05: E-L3F4O asks more than SS III 1.1; locator "1.1 as part".
-    **Acceptance:** each item read and repaired.
+    - [x] SRC-TEXT-SS05: E-L3F4O asks more than SS III 1.1; locator "1.1 as part".
+    **Acceptance:** each item read and repaired. **Closed.**
 
   Round 5 (revision `fe84046a76`, analysis guides) injected the node below;
   `audited-deployment` needs it.
