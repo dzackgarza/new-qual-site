@@ -6,7 +6,8 @@ title: Mersenne numbers $2^p-1$ are base-2 pseudoprimes
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

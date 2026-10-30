@@ -6,7 +6,8 @@ title: Infinitely many integer solutions of $x^2-2y^2=7$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

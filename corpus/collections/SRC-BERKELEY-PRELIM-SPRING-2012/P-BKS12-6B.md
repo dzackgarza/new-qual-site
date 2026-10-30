@@ -6,7 +6,8 @@ title: Integer-valued rational polynomials determined by $n$ consecutive values
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -24,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f ( x ) \in \QQ [ x ]$ is a polynomial with rational coefficient, n is a positive integer, $n f ( x ) \in \ZZ [ x ]$ has integer coefficients and $f ( m )$ is an integer for all integers m, $0 \leq m < n$ . Show $f ( m )$ is an integer for all integers m.
+Suppose $f(x)\in\QQ[x]$ is a polynomial with rational coefficients, $n$ is a positive integer, $nf(x)\in\ZZ[x]$ has integer coefficients, and $f(m)$ is an integer for all integers $m$ with $0\le m<n$. Show $f(m)$ is an integer for all integers $m$.
 :::
 
 ::: {.solution}

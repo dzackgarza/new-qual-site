@@ -6,7 +6,8 @@ title: Initial value problem for the Euler equation $x^2y''+xy'+y=0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

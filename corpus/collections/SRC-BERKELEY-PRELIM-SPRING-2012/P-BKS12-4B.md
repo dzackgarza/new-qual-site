@@ -6,7 +6,8 @@ title: Conjugacy classes of nilpotent $5\times 5$ complex matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -24,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-How many conjugacy classes of nilpotent 5 by 5 complex matrices are there (up to conjugacy by invertible matrices)?
+How many conjugacy classes of nilpotent $5\times5$ complex matrices are there (up to conjugacy by invertible matrices)?
 :::
 
 ::: {.solution}

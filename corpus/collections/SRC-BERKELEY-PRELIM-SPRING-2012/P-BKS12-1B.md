@@ -6,7 +6,8 @@ title: Fourier series of an indicator function and the sum $\sum\sin n/n$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

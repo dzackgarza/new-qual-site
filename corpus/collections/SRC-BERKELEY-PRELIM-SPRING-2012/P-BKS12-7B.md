@@ -6,7 +6,8 @@ title: Comparison of real parts of entire functions from the unit circle
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

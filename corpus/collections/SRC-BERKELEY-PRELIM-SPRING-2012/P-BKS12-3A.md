@@ -6,7 +6,8 @@ title: Moments of $\exp(-x^{1/4})\sin(x^{1/4})$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

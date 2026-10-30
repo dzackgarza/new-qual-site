@@ -6,7 +6,8 @@ title: Contour integral of $z^4/(z^5-z-1)$ over $\abs{z}=2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

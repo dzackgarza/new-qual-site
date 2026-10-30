@@ -6,7 +6,8 @@ title: Smooth functions with an entire asymptotic Taylor series
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

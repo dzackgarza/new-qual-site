@@ -6,7 +6,8 @@ title: Product of commuting diagonalizable operators is diagonalizable
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -24,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that V is a finite-dimensional vector space over a field F , and $P , Q$ are commuting diagonalizable linear maps from V to V . Show $P Q$ is diagonalizable.
+Suppose that $V$ is a finite-dimensional vector space over a field $F$, and $P,Q$ are commuting diagonalizable linear maps from $V$ to $V$. Show $PQ$ is diagonalizable.
 :::
 
 ::: {.solution}

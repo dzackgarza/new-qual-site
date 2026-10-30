@@ -6,7 +6,8 @@ title: The unit circle is a natural boundary for $\sum z^{2^n}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
