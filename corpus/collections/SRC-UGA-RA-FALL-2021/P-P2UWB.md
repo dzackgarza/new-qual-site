@@ -25,15 +25,13 @@ audit:
 ---
 
 ::: {.problem}
-Recall that a set $E \subset \RR^{d}$ is measurable if for every $c>0$ there is an open set $U \subseteq \RR^d$ such that $m^{*}(U \sm E)<\epsilon$.
+Recall that a set $E \subset \RR^{d}$ is measurable if for every $\epsilon>0$ there is an open set $U \subseteq \RR^d$ such that $m^{*}(U \sm E)<\epsilon$.
 
-a.
-Prove that if $E$ is measurable and $m(E)<\infty$, then for all $\epsilon>0$ there exists an elementary set $F$ such that $m(E \Delta F)<\epsilon$. 
+(a) Prove that if $E$ is measurable and $m(E)<\infty$, then for all $\epsilon>0$ there exists an elementary set $F$ such that $m(E \Delta F)<\epsilon$. 
 
-  Here $m(E)$ denotes the Lebesgue measure of $E$, a set $F$ is called elementary if it is a finite union of rectangles and $E \Delta F$ denotes the symmetric difference of the sets $E$ and $F$.
+Here $m(E)$ denotes the Lebesgue measure of $E$, a set $F$ is called elementary if it is a finite union of rectangles and $E \Delta F$ denotes the symmetric difference of the sets $E$ and $F$.
 
-b.
-Let $E \subset \RR$ be a measurable set, such that $0<m(E)<\infty$. Use part (a) to show that
+(b) Let $E \subset \RR$ be a measurable set, such that $0<m(E)<\infty$. Use part (a) to show that
 $$
 \lim _{n \rightarrow \infty} \int_{E} \sin (n t) d t=0
 $$

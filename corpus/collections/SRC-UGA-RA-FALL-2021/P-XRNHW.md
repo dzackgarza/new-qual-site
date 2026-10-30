@@ -24,8 +24,8 @@ audit:
 ---
 
 ::: {.problem}
-a.
-Let $F \subset \RR$ be closed, and define
+
+(a) Let $F \subset \RR$ be closed, and define
 $$
 \delta_{F}(y):=\inf _{x \in F}\abs{x-y} .
 $$
@@ -33,15 +33,15 @@ For $y \notin F$, show that
 $$
 \int_{F}\abs{x-y}^{-2} d x \leq \frac{2}{\delta_F(y)},
 $$
-b.
-Let $F \subset \RR$ be a closed set whose complement has finite measure, i.e. $m(\RR \sm F)< \infty$. 
+
+(b) Let $F \subset \RR$ be a closed set whose complement has finite measure, i.e. $m(\RR \sm F)< \infty$. 
 Define the function
 $$
 I(x):=\int_{\RR} \frac{\delta_{F}(y)}{\abs{x-y}^{2}} d y
 $$
 Prove that $I(x)=\infty$ if $x \not\in F$, however $I(x)<\infty$ for almost every $x \in F$. 
 
-  > Hint: investigate $\int_{F} I(x) d x$.
+Hint: investigate $\int_{F} I(x) d x$.
 
 :::
 
