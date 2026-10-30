@@ -31,6 +31,10 @@ respectively, where $r$ is not relatively prime to $s$.
 Show that the invariant factors of $A \oplus B$ are $\mathrm{gcd}(r, s)$ and $\mathrm{lcm}(r, s)$.
 :::
 
+::: {.remark title="Variations"}
+Drop the hypothesis on $r$ and $s$: determine the invariant factors of $R/(r)\oplus R/(s)$ for arbitrary nonzero $r,s$. When $r$ and $s$ are relatively prime, the module is cyclic with the single invariant factor $rs$.
+:::
+
 ::: {.solution}
 Since $A$ and $B$ are cyclic of orders $r$ and $s$,
 $$
