@@ -19,7 +19,8 @@ source:
   problems:
   - P-CASP07A
   - P-CASP07B
-  - P-CASP07C
+  - id: P-CASP19E
+    comment: Problem 3; the exam prints the series without the factor 1/n!, which diverges in general
   - P-CASP07D
   - P-CASP07E
   date:
