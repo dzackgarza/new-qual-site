@@ -601,6 +601,20 @@ mathematical correction under its own node, not under copy policy.
     - [x] Read P-AGH242AGREEDENSE and PR-QX0VL for a CARD-04 duplicate.
     **Acceptance:** each item read and repaired.
 
+  Round 5 (revision `fe84046a76`, topology guide and early algebra) injected the node below;
+  `audited-deployment` needs it.
+  - **`ad5-topology-algebra`**. **Needs:** none.
+    - [ ] T-N6PYS: link text "topological embedding" targets D-9KQZT (Homeomorphism); target
+      D-BCNUH.
+    - [ ] `[Lee13]` (T-N6PYS twice, D-UBWVX) and `[Munk84]` (D-RU2GC) render unlinked: no
+      textbook collection or bibliography entry resolves them (CITE-1).
+    - [ ] Renderer: a citation with several keys (`[@Hat02; @Mun00]`, D-J6XOC, D-Z7I7F)
+      renders as unlinked text; each key must link like a single-key citation.
+    - [ ] CARD-04: T-3X5FF and T-S5T5C both state Sylow's third theorem; merge, keep the
+      T-3X5FF proof and the $n_p \le m$ remark, repoint L-WROBY.
+    - [ ] CARD-04: T-XDMK2 and T-3KCD6 are both "Cauchy's theorem"; merge and repoint.
+    **Acceptance:** each item read and repaired.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
