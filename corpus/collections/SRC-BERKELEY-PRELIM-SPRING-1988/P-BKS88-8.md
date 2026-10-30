@@ -6,7 +6,8 @@ title: Integrals of $\cos n\theta/(a-\cos\theta)$ and $\sin n\theta/(a-\cos\thet
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

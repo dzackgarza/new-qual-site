@@ -6,7 +6,8 @@ title: Real matrices satisfying $A^2+2A+5I=0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

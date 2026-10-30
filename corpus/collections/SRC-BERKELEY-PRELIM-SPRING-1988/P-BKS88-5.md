@@ -6,7 +6,8 @@ title: Groups of order $2n$ with an inverting subgroup of index 2
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

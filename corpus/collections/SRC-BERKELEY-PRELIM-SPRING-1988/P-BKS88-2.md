@@ -6,7 +6,8 @@ title: Last digit of $23^{23^{23^{23}}}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

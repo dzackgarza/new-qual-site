@@ -6,7 +6,8 @@ title: Analytic continuation past the boundary of a disc
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
@@ -17,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-True or false: A function $f ( z )$ analytic on $\abs{ z - a } < r$ and continuous on $\abs{ z - a } \leqslant r$ extends, for some $\delta > 0$ , to a function analytic on $\abs{ z - a } < r + \delta ?$ Give a proof or a counterexample.
+True or false: A function $f(z)$ analytic on $\abs{z-a}<r$ and continuous on $\abs{z-a}\leq r$ extends, for some $\delta>0$, to a function analytic on $\abs{z-a}<r+\delta$? Give a proof or a counterexample.
 :::
 
 ::: {.solution}

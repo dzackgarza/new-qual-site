@@ -6,7 +6,8 @@ title: Rational solutions of rational homogeneous linear systems
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

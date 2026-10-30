@@ -6,7 +6,8 @@ title: Differentiability at a point from the limit of the derivative
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
