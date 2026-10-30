@@ -6,7 +6,9 @@ title: Supremum growth of Fourier partial sums
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Series
+  - Uniform Boundedness Principle
 relations: []
 review: draft
 audit:

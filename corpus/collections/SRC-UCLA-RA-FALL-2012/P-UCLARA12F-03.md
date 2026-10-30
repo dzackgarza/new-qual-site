@@ -6,7 +6,9 @@ title: Nearest point to the origin in a closed convex set
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Hilbert Spaces
+  - Convex Sets
 relations: []
 review: draft
 audit:

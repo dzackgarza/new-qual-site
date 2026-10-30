@@ -6,7 +6,10 @@ title: A maximal-function route to differentiation
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Maximal Functions
+  - Differentiation
+  - L¹
 relations: []
 review: draft
 audit:

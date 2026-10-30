@@ -6,7 +6,10 @@ title: 'Vanishing Fourier moments against $L^1$ densities'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Analysis
+  - Borel Measures
+  - Weak Convergence
 relations: []
 review: draft
 audit:

@@ -6,7 +6,10 @@ title: 'A quadratic identity under bounded $L^2$ convergence'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L²
+  - Convergence of Functions
+  - Weak Convergence
 relations: []
 review: draft
 audit:
