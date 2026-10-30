@@ -14,54 +14,38 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that $\displaystyle{f(z)=-\frac{1}{2}\left(z+\frac{1}{z}\right)}$ is a conformal map from half disc $\{z=x+iy:\ \abs{z}<1,\ y>0\}$ to upper
-
-half plane ${\halfplane}=\{z=x+iy:\ y>0\}$.
+Prove that $\displaystyle f(z)=-\frac{1}{2}\left(z+\frac{1}{z}\right)$ is a conformal equivalence from the open half disc $D^+=\{z=x+iy:\ \abs{z}<1,\ y>0\}$ to the upper half plane $\halfplane=\{z=x+iy:\ y>0\}$.
 :::
 
 ::: {.solution}
-Let
-$$
-G=\{z:\abs{z}<1,\ \operatorname{Im}z>0\}.
-$$
-For $z=x+iy$,
-$$
-\operatorname{Im}\left(z+\frac1z\right)
-=y-\frac{y}{\abs{z}^2}
-=y\left(1-\frac1{\abs{z}^2}\right)<0
-$$
-on $G$. Hence
-$$
-\operatorname{Im}f(z)>0,
-$$
-so $f(G)\subset\halfplane$.
 
-Also
-$$
-f'(z)=-\frac12\left(1-\frac1{z^2}\right).
-$$
-Its zeros are $z=\pm1$, which lie on the boundary, so $f'$ never vanishes in
-$G$.
+::: pf
 
-To prove injectivity, suppose $f(z_1)=f(z_2)$. Then
-$$
-z_1+\frac1{z_1}=z_2+\frac1{z_2},
-$$
-so
-$$
-(z_1-z_2)\left(1-\frac1{z_1z_2}\right)=0.
-$$
-If $z_1\ne z_2$, then $z_1z_2=1$, impossible because
-$\abs{z_1z_2}<1$. Thus $z_1=z_2$.
+::: {.pf-step #into}
+$f$ is holomorphic on $D^+$ and $f(D^+)\subseteq\halfplane$.
 
-Finally, the boundary of $G$ consists of $(-1,0)\cup(0,1)$ on the real axis
-and the upper semicircle $\abs{z}=1$. On the real intervals, $f$ is real; on the
-upper semicircle, $1/z=\overline z$, so again $f(z)=-\operatorname{Re}z$ is
-real. As $z\to0$ through $G$, $\abs{f(z)}\to\infty$. Hence the boundary is mapped
-to the extended real line. Since $f$ is injective and holomorphic with
-nonvanishing derivative, $f(G)$ is a simply connected open subset of
-$\halfplane$ whose boundary in the sphere is the full extended real line. It
-must therefore be all of $\halfplane$.
+::: pf-proof
+The only pole of $f$ is $0\notin D^+$. For $z=re^{i\theta}$ with $0<r<1$ and $0<\theta<\pi$,
+$$
+\operatorname{Im}f(z)=-\frac12\Bigl(r-\frac1r\Bigr)\sin\theta=\frac12\Bigl(\frac1r-r\Bigr)\sin\theta>0.
+$$
+:::
 
-Thus $f:G\to\halfplane$ is a conformal bijection.
+:::
+
+::: {.pf-step #bij}
+For each $w\in\halfplane$ there is exactly one $z\in D^+$ with $f(z)=w$.
+
+::: pf-proof
+The equation $f(z)=w$ is equivalent to $z^2+2wz+1=0$, whose two roots $z_1,z_2$ satisfy $z_1z_2=1$. Neither root has modulus $1$: for $z=e^{i\theta}$, $f(z)=-\cos\theta\in\RR$, but $w\notin\RR$. So exactly one root, say $z_1$, has $\abs{z_1}<1$. Write $z_1=re^{i\theta}$ with $0<r<1$. As in step [](#into){.pf-ref}, $\operatorname{Im}w=\frac12(\frac1r-r)\sin\theta$, and $\operatorname{Im}w>0$ forces $\sin\theta>0$. Hence $z_1\in D^+$, and $z_2\notin D^+$ because $\abs{z_2}>1$.
+:::
+
+:::
+
+::: pf-qed
+By steps [](#into){.pf-ref} and [](#bij){.pf-ref}, $f$ is a holomorphic bijection $D^+\to\halfplane$. A holomorphic bijection between open sets has a holomorphic inverse, so $f$ is a conformal equivalence.
+:::
+
+:::
+
 :::

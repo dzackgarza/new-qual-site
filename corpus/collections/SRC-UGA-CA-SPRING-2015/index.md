@@ -5,24 +5,23 @@ kind: collection
 title: UGA complex-analysis Spring 2015
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics: []
 relations: []
 review: draft
 provenance:
-- assets/attachments/Complex_Analysis_Spring_2015.docx
+  - assets/attachments/Complex_Analysis_Spring_2015.docx
 source:
   source_kind: university-exam
   institution: uga
   area: complex-analysis
   problems:
-  - P-UGCNF
-  - P-KNIPC
-  - P-FBOFF
-  - P-8CA27
-  - P-R424U
-  - P-AMD-JWY5GWNO
-  - P-AMD-NFZKF2XH
+    - P-UGCNF
+    - P-UGAS15-2
+    - P-KNIPC
+    - P-FBOFF
+    - P-8CA27
+    - P-R424U
   date:
     kind: academic-term
     term: spring

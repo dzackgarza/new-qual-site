@@ -22,30 +22,37 @@ for all sufficiently large $n$'s.
 :::
 
 ::: {.solution}
-Key observation:
-$$
-P_n(z) = \sum_{1\leq k\leq n-1} kz^{k-1} = \dd{}{z}Q_n(z) 
-\qquad Q(z) \coloneqq \sum_{0\leq k \leq n} z^k
-.$$
-Note that $Q(z) \to \sum_{k\geq 0} z^k = {1\over 1-z}$ uniformly on $\abs{z} \leq R < 1$ since this power series has radius of convergence 1.
-Similarly $P_n(z)$ converges uniformly to $\dd{}{z}{1\over 1-z} = {1\over (1-z)^2}$, so let $P(z) \coloneqq {1\over (1-z)^2}$.
-Note that $P$ is nonvanishing in $\DD$.
+Put $P(z)=(1-z)^{-2}$.
 
-Strategy:
+::: pf
 
-- Small: $m(z) = P(z) - P_n(z)$, look for an upper bound $\abs{m(z)} < U$
-- Big: $P(z)$, look for a lower bound $L$ with $\abs{P(z)} > L > U$.
+::: {.pf-step #unif}
+$P_n\to P$ uniformly on $\abs{z}\le r$.
 
-Just by considering the geometry of circles of radius $R < 1$ and $1$ and measuring distances to the point $1$, we can estimate
-$$
-0 < 1-R \leq \abs{1-z} < 1+R < 2 \implies \abs{P(z)} = {1\over \abs{1-z}^2} \geq {1\over 2^2} = {1\over 4}
-.$$
-
-Now fix $\eps < {1\over 4}$ and use uniform convergence of $P_n\to P$ to produce an $N$ such that $n\geq N$ implies $\norm{P-P_n}_\infty < \eps$ in $\abs{z} \leq R$.
-Then on $\abs{z} = R$, for $n\geq N$,
-$$
-\abs{m(z)} \coloneqq \abs{P(z) - P_n(z)} \leq \norm{P - P_n}_\infty < \eps < {1\over 4} \leq \abs{P(z)} = \abs{M(z)}
-,$$
-so $0 = Z_P = Z_{P_n}$ by Rouché.
+::: pf-proof
+For $\abs{z}<1$, $\sum_{k\ge0}z^k=(1-z)^{-1}$, and termwise differentiation of this power series inside its disk of convergence gives $\sum_{k\ge1}kz^{k-1}=(1-z)^{-2}$. So $P_n$ is the $n$th partial sum of the power series of $P$, whose radius of convergence is $1$. A power series converges uniformly on each closed disk of smaller radius.
 :::
 
+:::
+
+::: {.pf-step #lower}
+$\abs{P(z)}>\frac14$ for $\abs{z}\le r$.
+
+::: pf-proof
+$\abs{1-z}\le1+\abs{z}\le1+r<2$.
+:::
+
+:::
+
+::: pf-step
+For all sufficiently large $n$, $P_n$ has no zeros in $\abs{z}<r$.
+
+::: pf-proof
+By step [](#unif){.pf-ref} there is $N$ with $\abs{P_n(z)-P(z)}<\frac14$ on $\abs{z}\le r$ for $n\ge N$. By step [](#lower){.pf-ref}, then $\abs{P_n(z)}\ge\abs{P(z)}-\abs{P_n(z)-P(z)}>0$ on $\abs{z}\le r$.
+:::
+
+:::
+
+:::
+
+:::
