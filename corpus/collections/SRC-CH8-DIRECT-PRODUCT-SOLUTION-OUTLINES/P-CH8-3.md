@@ -5,8 +5,9 @@ kind: problem
 title: $G\cong G\oplus\{e_H\}$
 classification:
   areas:
-  - algebra
-  topics: []
+    - algebra
+  topics:
+    - Direct Products
 relations: []
 review: draft
 ---

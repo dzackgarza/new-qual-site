@@ -5,8 +5,9 @@ kind: problem
 title: Subgroups of order $2$ in $\ZZ_2\oplus\ZZ_2\oplus\ZZ_2$
 classification:
   areas:
-  - algebra
-  topics: []
+    - algebra
+  topics:
+    - Direct Products
 relations: []
 review: draft
 ---

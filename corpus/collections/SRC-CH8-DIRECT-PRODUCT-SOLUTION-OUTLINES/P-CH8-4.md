@@ -5,14 +5,15 @@ kind: problem
 title: $G\oplus H$ is abelian if and only if $G$ and $H$ are
 classification:
   areas:
-  - algebra
-  topics: []
+    - algebra
+  topics:
+    - Direct Products
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-Show that $G \oplus H$ is Abelian if and only if G and H are Abelian.
+Show that $G \oplus H$ is Abelian if and only if $G$ and $H$ are Abelian.
 State the general case.
 :::
 

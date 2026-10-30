@@ -5,8 +5,9 @@ kind: problem
 title: External direct products of finitely many groups are groups
 classification:
   areas:
-  - algebra
-  topics: []
+    - algebra
+  topics:
+    - Direct Products
 relations: []
 review: draft
 ---

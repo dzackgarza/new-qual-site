@@ -5,8 +5,9 @@ kind: problem
 title: $\ZZ_8\oplus\ZZ_2\not\cong\ZZ_4\oplus\ZZ_4$
 classification:
   areas:
-  - algebra
-  topics: []
+    - algebra
+  topics:
+    - Direct Products
 relations: []
 review: draft
 ---

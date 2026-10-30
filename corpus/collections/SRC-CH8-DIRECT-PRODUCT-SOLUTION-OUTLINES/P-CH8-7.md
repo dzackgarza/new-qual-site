@@ -5,8 +5,9 @@ kind: problem
 title: Direct products are commutative up to isomorphism
 classification:
   areas:
-  - algebra
-  topics: []
+    - algebra
+  topics:
+    - Direct Products
 relations: []
 review: draft
 ---
