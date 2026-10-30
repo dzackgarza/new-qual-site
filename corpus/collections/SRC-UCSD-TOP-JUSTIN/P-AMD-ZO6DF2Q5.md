@@ -23,11 +23,11 @@ Write down the fundamental group of the following spaces:
 
 1. $\RR^2 - \{0, 1\}$
 
-2. $\RR^2 - I$
+2. $\RR^2 - [0,1]$
 
-3. The symbol $\oplus \in \RR^2$
+3. The symbol $\oplus$ (a subspace of $\RR^2$)
 
-4. $S^2 - \{p_i\}_{i=1}^4$
+4. $S^2$ minus four distinct points, say $\{(\pm1,\pm1,0)\}$
 
 5. $T - \{p_0\}$
 
@@ -35,11 +35,11 @@ Write down the fundamental group of the following spaces:
 
 7. $S^2/\ZZ_3$ via a $2\pi/3$ rotation about the $z$-axis.
 
-8. $S_2 \cup \{(0,0,z) \mid -1 \leq z \leq 1 \}$
+8. $S^2 \cup \{(0,0,z) \mid -1 \leq z \leq 1 \}$
 
 9. $\RR^3 - \{ (x,y,0) \mid x^2 + y^2 = 1\}$
 
-10. $\RR^2 - H$, the Hopf link
+10. $\RR^3 - H$, where $H$ is the Hopf link (two linked circles)
 :::
 
 ::: {.solution}
@@ -200,7 +200,7 @@ deformation retraction of unknot complement in $\RR^3$.
 ::: pf-step
 
 **Item 10: $\RR^3 \setminus H$ (Hopf link complement)**
-The complement of the Hopf link in $S^3$ is homeomorphic to $T^2 \times (0, 1) \simeq S^1 \times S^1$.
+The complement of the Hopf link in $S^3$ is homeomorphic to $T^2 \times (0, 1) \simeq S^1 \times S^1$. Removing the point at infinity from this open $3$-manifold does not change $\pi_1$, so $\RR^3 \setminus H$ has the same fundamental group.
 Thus:
 $$
 \pi_1(\RR^3 \setminus H) \cong \pi_1(S^1 \times S^1) \cong \ZZ \oplus \ZZ.

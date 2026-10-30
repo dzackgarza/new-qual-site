@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-AMD-IJD6LW4S
 kind: problem
-title: $S_m \vee S_n$
+title: Cellular homology of $S^m\vee S^n$ and $S^m\times S^n$
 classification:
   areas:
-  - topology
+    - topology
   topics:
-  - Homology
-  - Product Topology
+    - Homology
+    - Product Topology
 relations: []
 review: draft
 ---

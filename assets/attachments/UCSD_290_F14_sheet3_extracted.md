@@ -44,7 +44,7 @@ In the picture I have also drawn a torus knot of type $( p , q )$ ; it is a circ
 
 (b). $\mathbb { R } ^ { 2 } - [ 0 , 1 ]$
 
-(c). The symbol L (a subspace of $\mathbb { R } ^ { 2 } )$
+(c). The symbol $\bigoplus$ (a subspace of $\mathbb { R } ^ { 2 } )$
 
 (d). $S ^ { 2 }$ minus four distinct points, say $\{ ( \pm 1 , \pm 1 , 0 ) \}$
 

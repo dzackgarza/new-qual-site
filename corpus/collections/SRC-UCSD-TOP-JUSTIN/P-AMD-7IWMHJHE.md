@@ -2,23 +2,23 @@
 schema: qual/card@1
 id: P-AMD-7IWMHJHE
 kind: problem
-title: Hexagon with identifications $a+b+c-a-b-c$
+title: Cellular homology of a hexagon with edges $a+b+c-a-b-c$
 classification:
   areas:
-  - topology
+    - topology
   topics:
-  - Quotient Spaces
-  - Surfaces
+    - Quotient Spaces
+    - Surfaces
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-25
+  - event: solution-written
+    by: gemini-3.7-flash
+    date: 2026-08-25
 ---
 
 ::: {.problem}
-A hexagon with the identifications $a+b+c-a-b-c$
+Use cellular chain complexes to compute the homology of the space obtained by identifying the edges of a solid hexagon as shown in the source figure: going around the boundary, the edges read $a+b+c-a-b-c$.
 :::
 
 ::: {.solution}
@@ -126,8 +126,25 @@ The cellular Seifert–van Kampen theorem gives $\pi_1(X) \cong \pi_1(X^1)/\lang
 
 :::
 
+::: {.pf-step #s4}
+Cellular homology. Write $P$ for the class $\{v_0,v_2,v_4\}$ and $Q$ for the class $\{v_1,v_3,v_5\}$. The cellular chain complex is
+$$
+0\to\ZZ e^2\xrightarrow{d_2}\ZZ a\oplus\ZZ b\oplus\ZZ c\xrightarrow{d_1}\ZZ P\oplus\ZZ Q\to0,
+\qquad d_2(e^2)=0,\quad d_1(a)=Q-P,\ d_1(b)=P-Q,\ d_1(c)=Q-P.
+$$
+
+::: pf-proof
+The cellular boundary of $e^2$ is the exponent sum of each letter in $w$, which is $0$ for $a$, $b$ and $c$. By Step [](#s1){.pf-ref}, $a$ runs from $v_0\in P$ to $v_1\in Q$, $b$ from $v_1\in Q$ to $v_2\in P$, and $c$ from $v_2\in P$ to $v_3\in Q$.
+:::
+
+:::
+
 ::: pf-qed
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref} show that $X$ is the torus: $\chi(X) = 0$ and $\pi_1(X) \cong \ZZ^2$.
+By Step [](#s4){.pf-ref}, $d_1$ has rank $1$ with image $\ZZ(Q-P)$, which is a direct summand, and $d_2=0$. Hence
+$$
+\boxed{H_0(X)\cong\ZZ,\qquad H_1(X)\cong\ker d_1\cong\ZZ^2,\qquad H_2(X)\cong\ZZ,}
+$$
+and $H_k(X)=0$ for $k\ge3$, in agreement with Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, which identify $X$ as the torus.
 :::
 
 :::

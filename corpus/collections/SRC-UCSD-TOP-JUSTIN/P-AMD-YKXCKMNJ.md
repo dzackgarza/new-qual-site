@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-$S_1 \vee S_1$ with two discs attached via $(ab)^3$ and $(ab)^6$
+Use cellular chain complexes to compute the homology of the figure-of-eight space $S^1\vee S^1$ with two discs attached along the loops $ababab$ and $abababababab$.
 :::
 
 ::: {.solution}

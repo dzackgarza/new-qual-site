@@ -24,85 +24,61 @@ Use cellular chain complexes to compute the homology of the cube whose faces are
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #torus}
 
-The source diagram shows that the $P$- and $Q$-face pairs are identified by translations, while the $R$-face pair is identified by a $180^\circ$ rotation.
-
-::: pf-proof
-
-The repeated $P$ and $Q$ glyphs have the same orientation on their paired parallel faces. The $R$ glyph on the opposite face is rotated by $180^\circ$. These glyph orientations are the pairing data in the original Fall 2022 exam diagram.
-
-:::
-
-:::
-
-::: pf-step
-
-First quotient by the two translation pairings. A cross-section perpendicular to the $R$-direction becomes a torus $T^2$, and the remaining $R$-pairing makes $X$ the mapping torus of the half-turn
-$$
-f:T^2\to T^2,\qquad f_*\restrict_{H_1(T^2)}=-I.
-$$
+$X$ is the mapping torus of the homeomorphism $\rho$ of $T^2=\RR^2/\ZZ^2$ induced by a quarter turn of the square, which acts on $H_1(T^2)\cong\ZZ^2$ by
+$$A=\begin{pmatrix}0&-1\\1&0\end{pmatrix}.$$
 
 ::: pf-proof
 
-The $P$- and $Q$-translations identify opposite sides in the two transverse coordinate directions, producing $T^2\times I$. The half-turn of the remaining square face descends to the torus automorphism represented on $H_1(T^2)\cong\ZZ^2$ by $-I$.
+The letters $P$ and $Q$ appear in the same position on their paired faces, so these two pairs are glued by translations, and each slice of the cube parallel to the $R$ faces becomes a torus. The letter $R$ on the right face is the letter $R$ of the left face turned through $90^\circ$, so the last pair is glued by a quarter turn of the square. A quarter turn carries the pair of horizontal sides of the square to the pair of vertical sides, so it respects the translation identifications and induces $\rho$. It sends the horizontal generator of $H_1(T^2)$ to the vertical one and the vertical one to minus the horizontal one.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #action}
 
-The induced maps are
+$\rho_*$ is the identity on $H_0(T^2)$ and $H_2(T^2)$, and $A$ on $H_1(T^2)$. On $H_1$, $1-A$ has determinant $2$, so
+$$\ker(1-A)=0,\qquad\operatorname{coker}(1-A)\cong\ZZ/2.$$
+
+::: pf-proof
+
+A rotation preserves orientation, so it acts by $\det A=1$ on $H_2$. Here $1-A=\begin{pmatrix}1&1\\-1&1\end{pmatrix}$, and an integer $2\times2$ matrix with determinant $2$ is injective with cokernel of order $2$.
+
+:::
+
+:::
+
+::: {.pf-step #wang}
+
+For each $k$ there is a short exact sequence
 $$
-f_*=\operatorname{id}\text{ on }H_0(T^2),\qquad
-f_*=-I\text{ on }H_1(T^2),\qquad
-f_*=\operatorname{id}\text{ on }H_2(T^2).
+0\to\operatorname{coker}(1-\rho_*\mid H_k(T^2))\to H_k(X)\to\ker(1-\rho_*\mid H_{k-1}(T^2))\to0.
 $$
 
 ::: pf-proof
 
-The half-turn is orientation-preserving on the torus, hence acts by $+1$ on $H_2$, and it negates each standard $H_1$ generator.
+Give $T^2$ the CW structure with one $0$-cell, two $1$-cells and one $2$-cell, and homotope $\rho$ to a cellular map. The mapping torus then has cells $e\times\{0\}$ and $e\times(0,1)$ for each cell $e$ of $T^2$, and its cellular chain complex is the mapping cone of $1-\rho_\sharp$ on $C_*(T^2)$, whose differentials are zero. The long exact sequence of that mapping cone is the Wang sequence, which splits into the displayed short exact sequences.
 
 :::
 
 :::
 
-::: pf-step
+::: pf-qed
 
-The Wang sequence for the mapping torus gives
-$$
-0\to\operatorname{coker}(1-f_*:H_k(T^2)\to H_k(T^2))
-\to H_k(X)
-\to\ker(1-f_*:H_{k-1}(T^2)\to H_{k-1}(T^2))\to0.
-$$
-
-::: pf-proof
-
-This is the standard homology exact sequence of a mapping torus.
-
-:::
-
-:::
-
-::: pf-step
-
-Therefore
+By Steps [](#action){.pf-ref} and [](#wang){.pf-ref},
 $$
 \boxed{H_k(X;\ZZ)\cong
 \begin{cases}
-\ZZ,&k=0,3,\\
-\ZZ\oplus(\ZZ/2)^2,&k=1,\\
+\ZZ,&k=0,\\
+\ZZ\oplus\ZZ/2,&k=1,\\
 \ZZ,&k=2,\\
+\ZZ,&k=3,\\
 0,&k>3.
 \end{cases}}
 $$
-
-::: pf-proof
-
-On $H_1(T^2)$, $1-f_*=2I$, so its cokernel is $(\ZZ/2)^2$ and its kernel is $0$. On $H_0$ and $H_2$, $1-f_*=0$. Thus $H_1$ is an extension of $\ZZ$ by $(\ZZ/2)^2$, which splits because $\ZZ$ is free; $H_2\cong\ZZ$; and $H_3\cong\ZZ$.
-
-:::
+In degree $1$ the sequence is $0\to\ZZ/2\to H_1(X)\to\ZZ\to0$, which splits because $\ZZ$ is free. In degree $2$ the cokernel on $H_2(T^2)$ is $\ZZ$ and the kernel on $H_1(T^2)$ is $0$. In degree $3$ the kernel on $H_2(T^2)$ is $\ZZ$. As a check, $X$ is a closed orientable $3$-manifold, so $H_3\cong\ZZ$ and the Euler characteristic is $1-1+1-1=0$.
 
 :::
 
