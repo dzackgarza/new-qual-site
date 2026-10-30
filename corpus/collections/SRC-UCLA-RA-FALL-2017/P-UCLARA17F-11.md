@@ -5,8 +5,10 @@ kind: problem
 title: Normalized univalent maps of the disk omit a point of modulus at most 1
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Biholomorphisms
+  - Schwarz Lemma
 relations: []
 review: draft
 audit:

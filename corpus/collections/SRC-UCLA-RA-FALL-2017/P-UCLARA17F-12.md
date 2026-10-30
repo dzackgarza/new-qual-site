@@ -5,8 +5,10 @@ kind: problem
 title: Continuous $h$ with $g\circ h$ holomorphic is holomorphic
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Holomorphic Functions
+  - Open Mapping Theorem
 relations: []
 review: draft
 audit:

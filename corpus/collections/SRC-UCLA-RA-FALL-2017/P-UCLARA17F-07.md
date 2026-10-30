@@ -5,8 +5,11 @@ kind: problem
 title: Meromorphic function with zeros at $\ZZ$ and poles at $\ZZ+\frac13$
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Meromorphic Functions
+  - Zeros
+  - Poles
 relations: []
 review: draft
 audit:

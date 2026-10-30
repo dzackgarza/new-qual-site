@@ -5,8 +5,10 @@ kind: problem
 title: Subharmonicity of $\sum\abs{f_n}^2$ for holomorphic $f_n$
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Subharmonic Functions
+  - Normal Families
 relations: []
 review: draft
 audit:

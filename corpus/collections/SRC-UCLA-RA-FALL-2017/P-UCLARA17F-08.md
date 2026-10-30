@@ -5,8 +5,9 @@ kind: problem
 title: Uniformly continuous harmonic functions on the disk are Poisson integrals
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Harmonic Functions
 relations: []
 review: draft
 audit:

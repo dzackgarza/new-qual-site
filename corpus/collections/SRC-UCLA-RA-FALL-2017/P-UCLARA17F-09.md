@@ -5,8 +5,10 @@ kind: problem
 title: Holomorphic families of injective maps of $\CC$ are affine
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Biholomorphisms
+  - Entire Functions
 relations: []
 review: draft
 audit:
