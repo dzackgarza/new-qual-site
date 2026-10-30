@@ -6,7 +6,8 @@ title: Real-rootedness of real polynomials via the sign of $\operatorname{Im}(p'
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

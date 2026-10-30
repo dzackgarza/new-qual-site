@@ -6,7 +6,8 @@ title: Contour integral of $(6z^5+1)/(z^6+z+1)$ over $\abs{z}=2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

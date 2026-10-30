@@ -6,7 +6,8 @@ title: Groups of order $p^2$ are abelian
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Evaluation of $\int_0^{2\pi}d\theta/(3+e^{-i\theta})^2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

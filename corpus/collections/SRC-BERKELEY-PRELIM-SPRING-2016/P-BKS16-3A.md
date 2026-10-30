@@ -6,7 +6,8 @@ title: Convergence of $\int f_n^4$ from $\int f_n\to 0$ and $f_n^2\le g$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

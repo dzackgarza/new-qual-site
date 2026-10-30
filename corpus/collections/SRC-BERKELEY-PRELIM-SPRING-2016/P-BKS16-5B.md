@@ -6,7 +6,8 @@ title: Hadamard product of power series holomorphic near the closed disk
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

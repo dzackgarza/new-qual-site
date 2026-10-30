@@ -6,7 +6,8 @@ title: Real 100th roots of $\operatorname{diag}(-1,-1-\epsilon)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

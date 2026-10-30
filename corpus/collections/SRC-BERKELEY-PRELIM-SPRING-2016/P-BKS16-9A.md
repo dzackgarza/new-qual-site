@@ -6,7 +6,8 @@ title: Galois group of the normal closure of $\QQ(\sqrt3+\sqrt5)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Rationality of eigenvalues of rational symmetric matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

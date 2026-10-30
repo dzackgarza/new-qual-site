@@ -6,7 +6,8 @@ title: Rationality of an integral of nested radicals $\sqrt{-6+5\sqrt{\cdots}}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

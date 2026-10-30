@@ -6,7 +6,8 @@ title: Spectral radius bounds the norm of a symmetric matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -26,13 +27,13 @@ audit:
 ::: {.problem}
 Let $A$ be a real square matrix and let $\rho$ be the maximum of the absolute values of its eigenvalues (i.e. its spectral radius).
 
-(1) Show that if $A$ is symmetric then
+(a) Show that if $A$ is symmetric then
 $$
 \norm{Ax}\le \rho\norm{x}
 $$
 for all $x\in\RR^n$, where $\norm{\cdot}$ denotes the Euclidean norm.
 
-(2) Is this true when $A$ is not symmetric?
+(b) Is this true when $A$ is not symmetric?
 Prove or give a counterexample.
 :::
 
@@ -105,7 +106,7 @@ $$
 
 ::: pf-qed
 
-Step [](#s1-1){.pf-ref} proves part (1), and step [](#s1-2){.pf-ref} supplies the counterexample required in part (2).
+Step [](#s1-1){.pf-ref} proves part (a), and step [](#s1-2){.pf-ref} supplies the counterexample required in part (b).
 
 :::
 

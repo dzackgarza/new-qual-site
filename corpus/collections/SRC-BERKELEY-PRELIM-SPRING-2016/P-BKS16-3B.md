@@ -6,7 +6,8 @@ title: Lipschitz limit of $\sum(-1)^k/(k+\abs{x})$ and uniform convergence
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

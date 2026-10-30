@@ -6,7 +6,8 @@ title: $\int_0^\infty te^{-t/2}/(1-e^{-t})\,dt$ as a sum over odd squares
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

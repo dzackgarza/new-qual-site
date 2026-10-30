@@ -6,7 +6,8 @@ title: Optimality condition for nonnegative least squares
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
