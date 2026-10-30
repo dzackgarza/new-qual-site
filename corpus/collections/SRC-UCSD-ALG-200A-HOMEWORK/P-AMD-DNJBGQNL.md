@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: P-AMD-DNJBGQNL
 kind: problem
-title: $Inn(G)$ is characteristic in $Aut(G)$
+title: $\operatorname{Inn}(G)$ is characteristic in $\operatorname{Aut}(G)$ for 
+  simple $G$
 classification:
   areas:
   - algebra
