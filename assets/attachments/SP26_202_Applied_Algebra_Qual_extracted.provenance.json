@@ -1,0 +1,14 @@
+{
+  "source_pdf": "assets/attachments/SP26_202_Applied_Algebra_Qual.pdf",
+  "source_pdf_sha256": "cb5bf88c39f9e596aa877e4b0305443baa0db4836bb92ba8b76b4efbe40ab7d7",
+  "source_url": "https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/SP26_202_Applied_Algebra_Qual.pdf",
+  "extracted_markdown": "assets/attachments/SP26_202_Applied_Algebra_Qual_extracted.md",
+  "extracted_markdown_sha256": "eff34d889741c1333d5a8f0eefb30b7d1b23b2e29ebfa3888c993de68495a3d1",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/SP26_202_Applied_Algebra_Qual.pdf --language en --pages 1-20; same with --pages 21-21; outputs concatenated in page order",
+  "generated_at": "2026-10-30",
+  "known_source_or_extractor_defects": [
+    "Page 21 produced no extracted text."
+  ]
+}
