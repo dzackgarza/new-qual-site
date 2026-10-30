@@ -469,7 +469,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-CA-SPRING-2008
   - [x] SRC-UCSD-CA-SPRING-2009
   - [x] SRC-UCSD-CA-SPRING-2011
-  - [ ] SRC-UCSD-CA-SPRING-2012
+  - [x] SRC-UCSD-CA-SPRING-2012
   - [ ] SRC-UCSD-CA-SPRING-2013
   - [ ] SRC-UCSD-CA-SPRING-2015
   - [ ] SRC-UCSD-CA-SPRING-2017
