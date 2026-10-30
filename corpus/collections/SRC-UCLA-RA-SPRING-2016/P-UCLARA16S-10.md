@@ -5,8 +5,10 @@ kind: problem
 title: No holomorphic function on the disk tends to infinity at the boundary
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Holomorphic Functions
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

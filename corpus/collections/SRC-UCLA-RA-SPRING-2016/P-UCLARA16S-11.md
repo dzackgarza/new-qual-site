@@ -5,8 +5,10 @@ kind: problem
 title: Holomorphic functions cannot approximate $1/z$ on the unit circle
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Cauchy Integral Formula
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

@@ -5,8 +5,10 @@ kind: problem
 title: Entire functions with $\abs{f}=1$ on the unit circle are monomials
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Blaschke Factors
 relations: []
 review: draft
 audit:

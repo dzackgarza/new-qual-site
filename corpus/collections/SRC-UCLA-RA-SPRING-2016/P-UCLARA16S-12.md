@@ -5,8 +5,10 @@ kind: problem
 title: Maximum principle for bounded harmonic functions with one exceptional boundary point
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Harmonic Functions
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

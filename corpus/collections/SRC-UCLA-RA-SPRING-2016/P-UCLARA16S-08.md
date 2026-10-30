@@ -5,8 +5,9 @@ kind: problem
 title: Normal families of holomorphic self-maps of the upper half-plane
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Normal Families
 relations: []
 review: draft
 audit:
