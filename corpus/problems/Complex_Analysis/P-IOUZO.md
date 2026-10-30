@@ -2,26 +2,25 @@
 schema: qual/card@1
 id: P-IOUZO
 kind: problem
-title: Polynomial approximation on $\bar\DD$ and entire functions with a vanishing
-  Taylor coefficient
+title: "Polynomial approximation on $\bar\\DD$, entire functions with a vanishing Taylor coefficient, a two-pole circle integral, a limit of vertical-segment integrals, and the reflection $\\overline{f(\bar z)}$"
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics:
-  - Uniform Convergence
-  - Polynomials
-  - Power Series
-  - Entire Functions
+    - Uniform Convergence
+    - Polynomials
+    - Power Series
+    - Entire Functions
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-29
-- event: source-corrected
-  by: Claude Opus 5.5
-  date: 2026-10-29
-  note: 'Part (b) read "for each z_0 there is at least one coefficient in the expansion ... is zero"; the stray "there is" was removed. The hints to parts (a) and (b) moved from the statement to a hint block.'
+  - event: solution-written
+    by: gemini-3.7-flash
+    date: 2026-08-29
+  - event: source-corrected
+    by: Claude Opus 5.5
+    date: 2026-10-29
+    note: 'Part (b) read "for each z_0 there is at least one coefficient in the expansion ... is zero"; the stray "there is" was removed. The hints to parts (a) and (b) moved from the statement to a hint block.'
 ---
 
 ::: {.problem}

@@ -2,22 +2,22 @@
 schema: qual/card@1
 id: E-ZGZYQ
 kind: problem
-title: $\sin(x)/x$ and $\cos(x)/x$
+title: Principal values of $\int_\RR \sin x/x\,dx$ and $\int_\RR \cos x/x\,dx$
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics:
-  - Residues
-  - Contour Integration
-  - Integrals
-  - Trigonometry
+    - Residues
+    - Contour Integration
+    - Integrals
+    - Trigonometry
 relations: []
 review: draft
 audit:
-- event: source-corrected
-  by: Claude Opus 5.5
-  date: 2026-10-29
-  note: 'The source reads "Compute I_1 := PV int sin(x)/x dx = pi, I_2 := PV int cos(x)/x dx = 0", which states the values it asks for; the statement asks to show these values.'
+  - event: source-corrected
+    by: Claude Opus 5.5
+    date: 2026-10-29
+    note: 'The source reads "Compute I_1 := PV int sin(x)/x dx = pi, I_2 := PV int cos(x)/x dx = 0", which states the values it asks for; the statement asks to show these values.'
 ---
 
 ::: {.exercise}

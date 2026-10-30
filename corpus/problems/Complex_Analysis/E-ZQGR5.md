@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: E-ZQGR5
 kind: problem
-title: Radius of convergence
+title: Radii of convergence of $\sum a^kz^k$ and $\sum a^{k^2}z^k$
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics:
-  - Power Series
-  - Convergence Tests
+    - Power Series
+    - Convergence Tests
 relations: []
 review: draft
 ---

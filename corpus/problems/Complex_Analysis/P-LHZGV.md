@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: P-LHZGV
 kind: problem
-title: Log properties can fail
+title: The principal logarithm violates $\Log(zw)=\Log z+\Log w$ and $\Log(e^z)=z$
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics:
-  - Complex Logarithm
-  - Counterexamples
+    - Complex Logarithm
+    - Counterexamples
 relations: []
 review: draft
 audit:
-- event: source-corrected
-  by: Claude Opus 5.5
-  date: 2026-10-29
-  note: 'The source prints log(zw) != log(z)log(w) with no branch named; the statement names the principal branch and the intended identity Log(zw) = Log z + Log w.'
+  - event: source-corrected
+    by: Claude Opus 5.5
+    date: 2026-10-29
+    note: 'The source prints log(zw) != log(z)log(w) with no branch named; the statement names the principal branch and the intended identity Log(zw) = Log z + Log w.'
 ---
 
 ::: {.exercise}

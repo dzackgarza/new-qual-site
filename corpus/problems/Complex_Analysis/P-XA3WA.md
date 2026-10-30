@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-XA3WA
 kind: problem
-title: "Zeros of a polynomial in the closed unit disk"
+title: "Zeros of $z^6+4z^2e^{z+1}-3$ in the closed unit disk"
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics:
-  - Rouché
-  - Zeros
+    - Rouché
+    - Zeros
 relations: []
 review: draft
 ---
