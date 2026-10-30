@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF87-4
 kind: problem
 title: Local functional dependence from parallel gradients
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

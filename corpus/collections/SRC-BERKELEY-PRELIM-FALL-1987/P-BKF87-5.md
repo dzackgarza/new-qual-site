@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF87-5
 kind: problem
 title: Powers $A^{100}$ and $A^{-7}$ of a unipotent $2\times2$ matrix
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:

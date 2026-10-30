@@ -6,7 +6,8 @@ title: Convergence of the iteration $x_{n+1}=1/(1+x_n)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -17,11 +18,11 @@ audit:
 ---
 
 ::: {.problem}
-Show that
+Let $x_0>0$ and define
 $$
 x_{n+1}=(1+x_n)^{-1}
 $$
-converges and find its limit for any $x_0>0$.
+for $n\ge0$. Prove that the sequence $(x_n)$ converges, and find its limit.
 :::
 
 ::: {.solution}

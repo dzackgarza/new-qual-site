@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF87-8
 kind: problem
 title: When the complex-number matrix ring over a field is a field
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

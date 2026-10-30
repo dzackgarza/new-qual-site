@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF93-2
 kind: problem
 title: Homomorphisms from $(\QQ,+)$ to the positive rationals under multiplication
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF87-7
 kind: problem
 title: Maximum of the generalized Rayleigh quotient $\langle Ax,x\rangle/\langle Bx,x\rangle$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Linear Algebra]}
 relations: []
 review: draft
 audit:
@@ -18,8 +18,9 @@ $$
 G(x)=\frac{\langle Ax,x\rangle}{\langle Bx,x\rangle}.
 $$
 
-1. Show that $G$ attains its maximum value.
-2. Show that any maximum point is an eigenvector of a matrix naturally associated to $A$ and $B$, and identify that matrix.
+(a) Show that $G$ attains its maximum value.
+
+(b) Show that any maximum point is an eigenvector of a matrix naturally associated to $A$ and $B$, and identify that matrix.
 :::
 
 ::: {.solution}

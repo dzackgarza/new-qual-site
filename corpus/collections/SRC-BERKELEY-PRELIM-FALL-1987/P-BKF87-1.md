@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF87-1
 kind: problem
 title: $(\cos\theta)^p\le\cos(p\theta)$ for $0<p<1$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

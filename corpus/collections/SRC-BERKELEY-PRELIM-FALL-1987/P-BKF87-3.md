@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF87-3
 kind: problem
 title: Existence of $\lim_{t\to0^+}\left(\int_0^1(x^4+t^4)^{-1/4}\,dx+\log t\right)$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:

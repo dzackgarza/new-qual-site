@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF87-6
 kind: problem
 title: Automorphisms of a direct product of finite groups of coprime order
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Abstract Algebra]}
 relations: []
 review: draft
 audit:

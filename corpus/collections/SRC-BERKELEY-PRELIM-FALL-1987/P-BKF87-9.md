@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF87-9
 kind: problem
 title: The integral $\int_0^{2\pi}\frac{\cos^2(3\theta)}{5-4\cos(2\theta)}\,d\theta$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Complex Analysis]}
 relations: []
 review: draft
 audit:

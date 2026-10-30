@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-BKF87-2
 kind: problem
 title: Pointwise convergence of monotone functions to a continuous limit is uniform
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Real Analysis]}
 relations: []
 review: draft
 audit:
