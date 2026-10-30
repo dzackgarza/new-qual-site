@@ -5,7 +5,10 @@ kind: problem
 title: Entire functions with $\abs{f(z)}\le\sqrt{\abs{z}}$ for large $\abs{z}$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Entire Functions
+  - Liouville's Theorem
+  - Cauchy Estimates
 relations: []
 review: draft
 audit:

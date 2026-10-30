@@ -5,7 +5,9 @@ kind: problem
 title: Absolute and uniform convergence of power series inside the disk of convergence
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Power Series
+  - Uniform Convergence
 relations: []
 review: draft
 audit:
@@ -29,9 +31,9 @@ audit:
 ::: {.problem}
 Suppose the complex power series $\sum_{n=0}^{\infty} a_{n} z^{n}$ converges for some $z_{0} \neq 0$.
 
-a) Prove that the series converges absolutely for each $z$ with $\abs{z} < \abs{z_{0}}$.
+(a) Prove that the series converges absolutely for each $z$ with $\abs{z} < \abs{z_{0}}$.
 
-b) Suppose $0 < r < \abs{z_{0}}$. Show that the series converges uniformly on $\abs{z} \leq r$.
+(b) Suppose $0 < r < \abs{z_{0}}$. Show that the series converges uniformly on $\abs{z} \leq r$.
 :::
 
 ::: {.solution}

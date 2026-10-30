@@ -5,7 +5,9 @@ kind: problem
 title: The ring of analytic functions on a domain has no zero divisors
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Identity Theorem
+  - Zeros
 relations: []
 review: draft
 audit:

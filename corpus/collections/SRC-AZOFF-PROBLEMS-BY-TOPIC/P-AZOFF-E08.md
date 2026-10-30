@@ -5,7 +5,9 @@ kind: problem
 title: Entire functions with $f(z)/z^n\to0$ are polynomials of degree less than $n$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Entire Functions
+  - Cauchy Estimates
 relations: []
 review: draft
 audit:

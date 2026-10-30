@@ -5,7 +5,9 @@ kind: problem
 title: Uniform convergence of $\sum\sin(nz)/2^n$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Series
 relations: []
 review: draft
 audit:

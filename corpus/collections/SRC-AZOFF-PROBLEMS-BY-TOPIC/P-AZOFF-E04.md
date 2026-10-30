@@ -5,7 +5,9 @@ kind: problem
 title: Which values $f(1/n)$ an analytic function on the disk can take
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Identity Theorem
+  - Zeros
 relations: []
 review: draft
 audit:
@@ -30,13 +32,13 @@ audit:
 Suppose $f$ is analytic on the open unit disk.
 Determine, with proof, which of the following are possible.
 
-a) $f\left(\frac{1}{n}\right) = (-1)^{n}$ for each integer $n > 1$.
+(a) $f\left(\frac{1}{n}\right) = (-1)^{n}$ for each integer $n > 1$.
 
-b) $f\left(\frac{1}{n}\right) = \exp(-n)$ for each even integer $n > 1$ while $f\left(\frac{1}{n}\right) = 0$ for each odd integer $n > 1$.
+(b) $f\left(\frac{1}{n}\right) = \exp(-n)$ for each even integer $n > 1$ while $f\left(\frac{1}{n}\right) = 0$ for each odd integer $n > 1$.
 
-c) $f\left(\frac{1}{n^{2}}\right) = \frac{1}{n}$ for each integer $n > 1$.
+(c) $f\left(\frac{1}{n^{2}}\right) = \frac{1}{n}$ for each integer $n > 1$.
 
-d) $f\left(\frac{1}{n}\right) = \frac{n - 2}{n - 1}$ for each integer $n > 1$.
+(d) $f\left(\frac{1}{n}\right) = \frac{n - 2}{n - 1}$ for each integer $n > 1$.
 :::
 
 ::: {.solution}
