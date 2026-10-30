@@ -762,7 +762,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/algebra/linear-algebra/smith-normal-form.md
   - [x] wiki/algebra/linear-algebra/the-spectral-theorem.md
   - [x] wiki/algebra/linear-algebra/undergrad-review.md
-  - [ ] wiki/algebra/modules/classify-this-module.md
+  - [x] wiki/algebra/modules/classify-this-module.md
   - [ ] wiki/algebra/modules/exact-sequences.md
   - [ ] wiki/algebra/modules/free-and-projective.md
   - [ ] wiki/algebra/modules/index.md
