@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS26C
 kind: problem
-title: "Conjugacy classes of GL_3(F_q)"
+title: "Conjugacy classes of $\\operatorname{GL}_3(\\FF_q)$"
 classification:
   areas:
   - algebra

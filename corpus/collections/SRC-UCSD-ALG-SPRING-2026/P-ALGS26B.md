@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS26B
 kind: problem
-title: "Normal p-subgroup and Sylow subgroups of subgroups"
+title: "The largest normal $p$-subgroup $O_p(G)$ and Sylow subgroups of subgroups"
 classification:
   areas:
   - algebra
@@ -29,7 +29,7 @@ $$
 O_p(G) := \bigcap_{P \in \operatorname{Syl}_p(G)} P.
 $$
 
-(a) Prove that $O_p(G)$ is the largest normal $p$-subgroup of $G$.
+(a) Prove that $O_p(G)$ is the largest normal $p$-subgroup of $G$; that means $O_p(G)$ is a normal $p$-subgroup and if $N$ is a normal $p$-subgroup of $G$, then $N \subseteq O_p(G)$.
 
 (b) Suppose $H$ is a subgroup of $G$. Prove that there exists a function
 $f : \operatorname{Syl}_p(H) \to \operatorname{Syl}_p(G)$ such that $f(P) \cap H = P$.

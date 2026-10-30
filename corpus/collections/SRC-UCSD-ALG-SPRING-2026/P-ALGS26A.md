@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS26A
 kind: problem
-title: "Structure of groups of order 5·7·11"
+title: "Structure of groups of order $5 \\cdot 7 \\cdot 11$"
 classification:
   areas:
   - algebra
