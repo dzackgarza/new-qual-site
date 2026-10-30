@@ -6,7 +6,8 @@ title: Some power of $C^{-1}AC$ is integral when $A$ is an integer matrix with $
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Minimal polynomials of multiplication maps in finite rings
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

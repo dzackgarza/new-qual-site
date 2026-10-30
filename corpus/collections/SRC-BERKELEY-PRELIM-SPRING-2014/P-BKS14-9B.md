@@ -6,7 +6,8 @@ title: Burnside counting for a transitive action
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

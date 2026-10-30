@@ -6,7 +6,8 @@ title: A group of order $48$ has a normal subgroup of order $16$ or $8$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

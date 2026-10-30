@@ -6,7 +6,8 @@ title: Estimate of $\int_{-1/2}^{1/2}(e^x-1)/x\,dx$ to within $0.01$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

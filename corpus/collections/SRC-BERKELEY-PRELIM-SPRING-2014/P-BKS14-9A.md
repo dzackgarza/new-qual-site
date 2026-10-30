@@ -6,7 +6,8 @@ title: A finite abelian group is the additive group of a subring of its endomorp
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

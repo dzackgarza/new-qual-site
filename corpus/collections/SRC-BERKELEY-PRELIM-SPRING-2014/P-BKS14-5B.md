@@ -6,7 +6,8 @@ title: The integral $\int_0^\infty \cos x/(1+x^2)\,dx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

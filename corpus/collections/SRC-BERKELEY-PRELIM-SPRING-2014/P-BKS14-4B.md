@@ -6,7 +6,8 @@ title: Area formula for an injective holomorphic map
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

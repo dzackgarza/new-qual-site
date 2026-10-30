@@ -6,7 +6,8 @@ title: Failure of a vector-valued mean value theorem for gradients
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

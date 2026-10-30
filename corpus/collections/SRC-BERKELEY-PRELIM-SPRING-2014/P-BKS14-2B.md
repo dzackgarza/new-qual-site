@@ -6,7 +6,8 @@ title: Unique minimum-norm point in a closed convex set
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

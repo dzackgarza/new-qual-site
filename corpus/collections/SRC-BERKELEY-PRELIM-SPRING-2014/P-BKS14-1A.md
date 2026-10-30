@@ -6,7 +6,8 @@ title: Telescoping sum of $\sum_{n\ge1} 1/(n(n+1)(n+2))$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

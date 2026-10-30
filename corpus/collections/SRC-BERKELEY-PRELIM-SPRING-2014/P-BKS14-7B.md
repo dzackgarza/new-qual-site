@@ -6,7 +6,8 @@ title: $A^{16}$ for a $3\times3$ matrix with eigenvalues $0$, $2$, $3$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
