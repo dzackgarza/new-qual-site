@@ -8,6 +8,8 @@ classification:
   - algebra
   topics:
   - Galois Theory
+  - Sylow Theory
+  - Solvable Groups
 relations: []
 review: draft
 audit:

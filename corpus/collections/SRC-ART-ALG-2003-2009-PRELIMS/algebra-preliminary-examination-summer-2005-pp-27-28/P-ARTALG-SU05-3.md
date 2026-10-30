@@ -7,7 +7,7 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Principal Ideal Domains
 relations: []
 review: draft
 audit:

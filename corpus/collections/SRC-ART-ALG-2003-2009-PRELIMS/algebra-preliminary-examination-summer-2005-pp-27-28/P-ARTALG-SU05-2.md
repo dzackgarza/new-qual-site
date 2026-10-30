@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - Group Theory
+  - Abelian Groups
+  - Structure Theorem
 relations: []
 review: draft
 audit:
@@ -26,7 +27,7 @@ audit:
 ::: {.problem}
 (a) State the structure theorem for finite Abelian groups.
 
-(b) Up to isomorphism, what are the Abelian groups of order 360?
+(b) Up to isomorphism, what are the Abelian groups of order $360$? You should give a list of pairwise non-isomorphic Abelian groups of order $360$, such that every Abelian group of order $360$ is isomorphic to a group on the list.
 :::
 
 ::: {.solution}

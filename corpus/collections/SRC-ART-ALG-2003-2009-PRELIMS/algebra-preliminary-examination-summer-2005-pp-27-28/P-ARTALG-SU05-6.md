@@ -7,6 +7,7 @@ classification:
   areas:
   - algebra
   topics:
+  - Jordan Canonical Form
   - Linear Algebra
 relations: []
 review: draft
