@@ -66,7 +66,7 @@ source:
     - P-UCTOP-SU09-3
     - P-UCTOP-SU09-4
     - P-UCTOP-SU09-5
-    - P-UCTOP-SU09-6
+    - P-TOPF09E
     - P-UCTOP-SU09-7
     - P-UCTOP-SU09-8
   - name: Fall 2009 (section 9; printed p. 400)
