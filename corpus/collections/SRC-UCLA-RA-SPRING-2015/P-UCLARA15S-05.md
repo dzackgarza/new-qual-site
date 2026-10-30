@@ -6,7 +6,9 @@ title: Plancherel identity for a Gaussian transform
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Transform
+  - L²
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Compact operators have separable range
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Compact Operators
+  - Separability
 relations: []
 review: draft
 audit:

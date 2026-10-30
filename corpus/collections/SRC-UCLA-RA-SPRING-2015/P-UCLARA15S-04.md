@@ -6,7 +6,10 @@ title: Density of translates in $L^1$ of the circle and nonvanishing Fourier coe
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Series
+  - Density
+  - L¹
 relations: []
 review: draft
 audit:

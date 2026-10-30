@@ -6,7 +6,10 @@ title: Partition sums $\sum_k\abs{\int_{k/n}^{(k+1)/n}f}$ converge to $\norm{f}_
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L¹
+  - Riemann Integration
+  - Density
 relations: []
 review: draft
 audit:

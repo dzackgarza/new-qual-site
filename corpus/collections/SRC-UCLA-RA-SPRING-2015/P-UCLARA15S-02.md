@@ -6,7 +6,9 @@ title: Dyadic annulus bounds imply $fg\in L^1$
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Holder Inequality
+  - Lp Spaces
 relations: []
 review: draft
 audit:
