@@ -579,7 +579,7 @@ mathematical correction under its own node, not under copy policy.
       birational invariants; only general type (Kodaira dimension) is.
     - [x] PR-IV2INSEP closing paragraph: "isomorphic as schemes, not over k" contradicts the
       card's "need not be isomorphic as k-schemes" ($X = \PP^1$).
-    - [ ] D-IV2ETCOV: "proper nonempty open $U$" fails for clopen $U$; require $U$ not closed.
+    - [x] D-IV2ETCOV: "proper nonempty open $U$" fails for clopen $U$; require $U$ not closed.
     - [ ] D-MORLOCAL: the $\PP^1$ example shows non-locality for proper only; add the
       doubled-origin line for separated.
     - [ ] F2, wiki link text that breaks the sentence (`[[ID]]` rendered as the card title

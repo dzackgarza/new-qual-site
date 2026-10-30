@@ -56,5 +56,5 @@ Over $\CC$, $\AA^1$ has no nontrivial finite étale covers.
 
 ::: {.remark title="Finite étale covers"}
 Étale morphisms are defined in [[D-MORETALE]].
-For a proper nonempty open subset $U\subseteq Y$, the morphism $U\sqcup Y\to Y$ is étale and surjective but not finite, and it is not of the form $\coprod_{i\in I}Y\to Y$.
+For a nonempty open subset $U\subseteq Y$ that is not closed, the morphism $U\sqcup Y\to Y$ is étale and surjective but not finite, and it is not of the form $\coprod_{i\in I}Y\to Y$.
 :::
