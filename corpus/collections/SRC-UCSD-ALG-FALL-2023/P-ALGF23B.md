@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF23B
 kind: problem
-title: "Groups of order pm with a self-normalizing Sylow p-subgroup"
+title: "Groups of order $pm$ with $N_G(P) = P$ for a Sylow $p$-subgroup $P$"
 classification:
   areas:
   - algebra

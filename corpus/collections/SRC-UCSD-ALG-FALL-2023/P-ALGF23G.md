@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF23G
 kind: problem
-title: "Splitting field with both α and α+1 as roots implies positive characteristic"
+title: "Irreducible $f$ with roots $\\alpha$ and $\\alpha+1$ forces positive characteristic"
 classification:
   areas:
   - algebra

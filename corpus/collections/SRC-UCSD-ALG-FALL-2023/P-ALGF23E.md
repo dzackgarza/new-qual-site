@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF23E
 kind: problem
-title: "Jordan form of a matrix with minimal polynomial t^p - 1 over C and F_p"
+title: "Jordan form of a matrix with minimal polynomial $t^p - 1$ over $\\CC$ and $\\FF_p$"
 classification:
   areas:
   - algebra

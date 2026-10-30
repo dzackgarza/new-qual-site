@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF23F
 kind: problem
-title: "A surjective endomorphism of a finitely generated Q-algebra is an isomorphism"
+title: "A surjective endomorphism of a finitely generated $\\QQ$-algebra is an isomorphism"
 classification:
   areas:
   - algebra

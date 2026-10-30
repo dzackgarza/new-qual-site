@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF23C
 kind: problem
-title: "Irreducibility, non-primality, and projectivity in Z[sqrt(-5)]"
+title: "Irreducibility, non-primality, and projectivity in $\\ZZ[\\sqrt{-5}]$"
 classification:
   areas:
   - algebra
