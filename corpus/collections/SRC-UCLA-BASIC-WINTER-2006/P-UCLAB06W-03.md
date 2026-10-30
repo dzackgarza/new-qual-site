@@ -43,6 +43,12 @@ $$
 [Recall that the sum is an approximation of the integral in the Trapezoid Rule. It may be instructive to first solve the problem for $n=1$ and then address the general case.]
 :::
 
+::: {.remark title="Erratum"}
+The exam prints the prefactor $1/n$ in place of $(b-a)/n$.
+Under that reading the claim is false whenever $b-a\neq1$: for $f\equiv1$ the printed sum is $1$ and the integral is $b-a$, so their difference does not tend to $0$.
+The statement above uses the trapezoid weight $(b-a)/n$.
+:::
+
 ::: {.solution}
 Let $h=(b-a)/n$, and let $T_n$ denote the sum in the problem.
 On one subinterval $[x_i,x_{i+1}]$, write $x=x_i+t$ with $0\leq t\leq h$ and let $L_i$ be the affine interpolant through the endpoint values of $f$.

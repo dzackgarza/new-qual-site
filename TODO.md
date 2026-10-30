@@ -551,7 +551,7 @@ mathematical correction under its own node, not under copy policy.
     - [x] P-UCLAB06W-09: the paper prints $A = A^t$, the card silently reads $A^{-1} = A^t$; the
       printed statement is false (diag(2,2,1/4)). Transcribe the printed hypothesis and record
       the correction in a remark.
-    - [ ] P-UCLAB06W-03: the paper prints prefactor $1/n$, the card silently reads $(b-a)/n$;
+    - [x] P-UCLAB06W-03: the paper prints prefactor $1/n$, the card silently reads $(b-a)/n$;
       same treatment.
     - [ ] Read the other Berkeley online-era papers (Fall 2020, Spring 2021 Part B) for further
       reprinted problems carded twice.
