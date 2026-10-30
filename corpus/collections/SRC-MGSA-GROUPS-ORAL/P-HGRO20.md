@@ -68,3 +68,7 @@ By step [](#s2){.pf-ref}, $[G:K]=p=[G:H]$, so $[H:K]=1$ and $H=K$, which is norm
 :::
 
 :::
+
+::: {.remark title="Variations"}
+Every subgroup $H$ of index $2$ is normal, in any group $G$, finite or not. There are exactly two left cosets and two right cosets of $H$. For $g\notin H$, both $gH$ and $Hg$ are the complement $G\setminus H$; for $g\in H$, both are $H$. Hence $gH=Hg$ for every $g\in G$. For finite $G$ this is also the case $p=2$ of the main statement.
+:::
