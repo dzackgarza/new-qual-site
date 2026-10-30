@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f ( z )$ be a non-constant analytic function in $\abs{ z } > 0$ such that $f ( z _ { n } ) = 0$ for infinite many points $z _ { n }$ with $\operatorname* { l i m } _ { n \to \infty } z _ { n } = 0$ . Show that $z = 0$ is an essential singularity for $f ( z )$ . (An example of such a function is $f ( z ) = \sin ( 1 / z ) . )$
+Let $f(z)$ be a non-constant analytic function in $\abs{z} > 0$ such that $f(z_{n}) = 0$ for infinitely many points $z_{n}$ with $\lim_{n \to \infty} z_{n} = 0$. Show that $z = 0$ is an essential singularity for $f(z)$. (An example of such a function is $f(z) = \sin(1/z)$.)
 :::
 
 ::: {.solution}

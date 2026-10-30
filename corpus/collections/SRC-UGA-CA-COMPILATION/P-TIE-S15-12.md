@@ -17,10 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-(1) Let f be analytic in $\Omega : 0 < \abs{ z - a } < r$except at a sequence of poles$a _ { n } \in \Omega$with$\operatorname* { l i m } _ { n \to \infty } a _ { n } = a$.
-Show that for any w$\in \CC$, there exists a sequence$z _ { n } \in \Omega$such that$\operatorname* { l i m } _ { n \to \infty } f ( z _ { n } ) = w$
+(1) Let $f$ be analytic in $\Omega \colon 0 < \abs{z - a} < r$ except at a sequence of poles $a_{n} \in \Omega$ with $\lim_{n \to \infty} a_{n} = a$. Show that for any $w \in \CC$, there exists a sequence $z_{n} \in \Omega$ such that $\lim_{n \to \infty} f(z_{n}) = w$.
 
-(2) Explain the similarity and difference between the above assertion and the Weierstrass-Casorati theorem.
+(2) Explain the similarity and difference between the above assertion and the Weierstrass–Casorati theorem.
 :::
 
 ::: {.solution}

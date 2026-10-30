@@ -17,9 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-(1) Show that ${ \frac { \pi ^ { 2 } } { \sin ^ { 2 } \pi z } } \operatorname { a n d } g ( z ) = \sum _ { n = - \infty } ^ { \infty } { \frac { 1 } { ( z - n ) ^ { 2 } } }$ have the same principal part at each integer point.
+(1) Show that $\dfrac{\pi^{2}}{\sin^{2}\pi z}$ and $g(z) = \sum_{n=-\infty}^{\infty} \dfrac{1}{(z - n)^{2}}$ have the same principal part at each integer point.
 
-(2) Show that $h ( z ) ~ = ~ \frac { \pi ^ { 2 } } { \sin ^ { 2 } \pi z } - g ( z )$ is bounded on C and conclude that $\frac { \pi ^ { 2 } } { \sin ^ { 2 } \pi z } =$ $\sum _ { n = - \infty } ^ { \infty } \frac { 1 } { ( z - n ) ^ { 2 } } .$
+(2) Show that $h(z) = \dfrac{\pi^{2}}{\sin^{2}\pi z} - g(z)$ is bounded on $\CC$ and conclude that
+$$
+\frac{\pi^{2}}{\sin^{2}\pi z} = \sum_{n=-\infty}^{\infty} \frac{1}{(z - n)^{2}}.
+$$
 :::
 
 ::: {.solution}

@@ -17,10 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $f ( z ) = \sum _ { n = - \infty } ^ { \infty } c _ { n } z ^ { n }$ be analytic and one-to-one in $r _ { 0 } < \abs{ z } < R _ { 0 }$ . For $r _ { 0 } < r < R < R _ { 0 }$ , let $D ( r , R )$ be the annulus $r < \abs{ z } < R$ . Show that the area of $f ( D ( r , R ) )$ is finite and is given by
-
+Let $f(z) = \sum_{n=-\infty}^{\infty} c_{n}z^{n}$ be analytic and one-to-one in $r_{0} < \abs{z} < R_{0}$. For $r_{0} < r < R < R_{0}$, let $D(r, R)$ be the annulus $r < \abs{z} < R$. Show that the area of $f(D(r, R))$ is finite and is given by
 $$
-S = \pi \sum _ { n = - \infty } ^ { \infty } n \abs{ c _ { n } } ^ { 2 } ( R ^ { 2 n } - r ^ { 2 n } ) .
+S = \pi\sum_{n=-\infty}^{\infty} n\abs{c_{n}}^{2}(R^{2n} - r^{2n}).
 $$
 :::
 

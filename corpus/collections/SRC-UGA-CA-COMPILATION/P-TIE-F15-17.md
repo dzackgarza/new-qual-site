@@ -17,15 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $f ( z ) = \sum _ { n = 0 } ^ { \infty } c _ { n } z ^ { n }$ be analytic and one-to-one in $\abs{ z } < 1$ . For $0 < r < 1$ , let $D _ { r }$ be the disk
-
-$\abs{ z } < r$ . Show that the area of $f ( D _ { r } )$ is finite and is given by
-
+Let $f(z) = \sum_{n=0}^{\infty} c_{n}z^{n}$ be analytic and one-to-one in $\abs{z} < 1$. For $0 < r < 1$, let $D_{r}$ be the disk $\abs{z} < r$. Show that the area of $f(D_{r})$ is finite and is given by
 $$
-S = \pi \sum _ { n = 1 } ^ { \infty } n \abs{ c _ { n } } ^ { 2 } r ^ { 2 n } .
+S = \pi\sum_{n=1}^{\infty} n\abs{c_{n}}^{2}r^{2n}.
 $$
 
-(Note that in general the area of $f ( D _ { 1 } )$ is infinite.)
+(Note that in general the area of $f(D_{1})$ is infinite.)
 :::
 
 ::: {.solution}

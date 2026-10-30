@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let f(z) be analytic in an open set Ω except possibly at a point $z _ { \mathrm { 0 } }$ inside Ω. Show that if $f ( z )$ is bounded in near $z _ { \mathrm { 0 } }$ , then $\int _ { \Delta } f ( z ) d z = 0$ for all triangles $\Delta$ in Ω.
+Let $f(z)$ be analytic in an open set $\Omega$ except possibly at a point $z_{0}$ inside $\Omega$. Show that if $f(z)$ is bounded near $z_{0}$, then $\int_{\Delta} f(z) \, dz = 0$ for all triangles $\Delta$ in $\Omega$.
 :::
 
 ::: {.solution}

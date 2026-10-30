@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f _ { n } , f$ be analytic functions on the unit disk D. Show that the following are equivalent.
+Let $f_{n}, f$ be analytic functions on the unit disk $\DD$. Show that the following are equivalent.
 
-(i) $f _ { n } ( z )$ converges to f(z) uniformly on compact subsets in D.
+(i) $f_{n}(z)$ converges to $f(z)$ uniformly on compact subsets in $\DD$.
 
-(ii) $\int _ { \abs{ z } = r } \abs{ f _ { n } ( z ) - f ( z ) } \abs{ d z }$ converges to 0 if $0 < r < 1$
+(ii) $\int_{\abs{z} = r} \abs{f_{n}(z) - f(z)} \, \abs{dz}$ converges to $0$ if $0 < r < 1$.
 :::
 
 ::: {.solution}

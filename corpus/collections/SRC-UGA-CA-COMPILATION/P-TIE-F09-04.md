@@ -37,10 +37,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $a>0$. Evaluate
-
+Let $a > 0$. Evaluate
 $$
-\int _ { 0 } ^ { \infty } { \frac { x \sin x } { x ^ { 2 } + a ^ { 2 } } } d x .
+\int_{0}^{\infty} \frac{x\sin x}{x^{2} + a^{2}} \, dx.
 $$
 :::
 

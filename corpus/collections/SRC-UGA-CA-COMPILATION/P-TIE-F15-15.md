@@ -17,13 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-(1) Let $f ( z ) \in H ( \DD ) , \operatorname { R e } ( f ( z ) ) > 0 , f ( 0 ) = a > 0$ . Show that
-
+(1) Let $f(z) \in H(\DD)$, $\Re(f(z)) > 0$, $f(0) = a > 0$. Show that
 $$
-\abs{ \frac { f ( z ) - a } { f ( z ) + a } } \leq \abs{ z } , \abs{ f ^ { \prime } ( 0 ) } \leq 2 a .
+\abs{\frac{f(z) - a}{f(z) + a}} \leq \abs{z}, \qquad \abs{f'(0)} \leq 2a.
 $$
 
-(2) Show that the above is still true if $\mathrm { R e } ( f ( z ) ) > 0$ is replaced with $\mathrm { R e } ( f ( z ) ) \geq 0$
+(2) Show that the above is still true if $\Re(f(z)) > 0$ is replaced with $\Re(f(z)) \geq 0$.
 :::
 
 ::: {.solution}

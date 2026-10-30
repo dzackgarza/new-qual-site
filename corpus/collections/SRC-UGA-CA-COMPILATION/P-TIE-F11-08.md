@@ -17,13 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Apply Rouché’s Theorem to prove the Fundamental Theorem of Algebra: If
-
+Apply Rouché's Theorem to prove the Fundamental Theorem of Algebra: If
 $$
-P _ { n } ( z ) = a _ { 0 } + a _ { 1 } z + \cdots + a _ { n - 1 } z ^ { n - 1 } + a _ { n } z ^ { n } \quad ( a _ { n } \neq 0 )
+P_{n}(z) = a_{0} + a_{1}z + \cdots + a_{n-1}z^{n-1} + a_{n}z^{n} \quad (a_{n} \neq 0)
 $$
-
-is a polynomial of degree n, then it has n zeros in $\CC .$
+is a polynomial of degree $n$, then it has $n$ zeros in $\CC$.
 :::
 
 ::: {.solution}

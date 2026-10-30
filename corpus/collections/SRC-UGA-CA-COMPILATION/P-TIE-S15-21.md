@@ -19,15 +19,15 @@ audit:
 ::: {.problem}
 Find a conformal map
 
-1. from $\{ z : \abs{ z - 1 / 2 } > 1 / 2 , { \mathrm { R e } } ( z ) > 0 \}$ to H
+1. from $\{z \st \abs{z - 1/2} > 1/2,\ \Re(z) > 0\}$ to $\halfplane$;
 
-2. from $\left\{ z : \abs{ z - 1 / 2 } > 1 / 2 , \abs{ z } < 1 \right\}$ to D
+2. from $\{z \st \abs{z - 1/2} > 1/2,\ \abs{z} < 1\}$ to $\DD$;
 
-3. from the intersection of the disk $\abs{ z + i } < { \sqrt { 2 } }$ with H to D.
+3. from the intersection of the disk $\abs{z + i} < \sqrt{2}$ with $\halfplane$ to $\DD$;
 
-4. from $\DD \backslash [ a , 1 )$ to ${ \DD } \backslash [ 0 , 1 ) ~ ( 0 < a < 1 )$ . Short solution possible using Blaschke factor
+4. from $\DD \setminus [a, 1)$ to $\DD \setminus [0, 1)$ $(0 < a < 1)$. Short solution possible using a Blaschke factor;
 
-5. from $\{ z : \abs{ z } < 1 , \mathrm { R e } ( z ) > 0 \} \backslash ( 0 , 1 / 2 ]$ to H.
+5. from $\{z \st \abs{z} < 1,\ \Re(z) > 0\} \setminus (0, 1/2]$ to $\halfplane$.
 :::
 
 ::: {.solution}

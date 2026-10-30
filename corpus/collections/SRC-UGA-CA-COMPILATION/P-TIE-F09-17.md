@@ -17,14 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Assume f is continuous in the region: $0 < \abs{ z - a } \leq R , \ 0 \leq \arg ( z - a ) \leq \beta _ { 0 } \ ( 0 < \beta _ { 0 } \leq 2 \pi )$and the limit$\operatorname* { l i m } _ { z \to a } ( z - a ) f ( z ) = A$ exists.
-Show that
-
+Assume $f$ is continuous in the region $0 < \abs{z - a} \leq R$, $0 \leq \arg(z - a) \leq \beta_{0}$ $(0 < \beta_{0} \leq 2\pi)$ and the limit $\lim_{z \to a} (z - a)f(z) = A$ exists. Show that
 $$
-\operatorname * { l i m } _ { r  0 } \int _ { \gamma _ { r } } f ( z ) d z = i A \beta _ { 0 } \ ,
+\lim_{r \to 0} \int_{\gamma_{r}} f(z) \, dz = iA\beta_{0},
 $$
-
-where $\gamma _ { r } : = \lbrace z \mid z = a + r e ^ { i t } , 0 \leq t \leq \beta _ { 0 } \rbrace$
+where $\gamma_{r} \coloneqq \{z \st z = a + re^{it},\ 0 \leq t \leq \beta_{0}\}$.
 :::
 
 ::: {.solution}

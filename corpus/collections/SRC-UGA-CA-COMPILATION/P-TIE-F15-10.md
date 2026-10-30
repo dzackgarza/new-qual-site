@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let f be entire and suppose that $\operatorname* { l i m } _ { z \to \infty } f ( z ) = \infty$ . Show that f is a polynomial.
+Let $f$ be entire and suppose that $\lim_{z \to \infty} f(z) = \infty$. Show that $f$ is a polynomial.
 :::
 
 ::: {.solution}

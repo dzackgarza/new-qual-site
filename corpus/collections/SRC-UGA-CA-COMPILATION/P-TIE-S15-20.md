@@ -17,7 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Let f be a non-constant analytic function on D with $f ( \DD ) \subseteq \DD . { \mathrm { ~ U s e ~ } } \psi _ { a } ( f ( z ) )$ (where $a = f ( 0 )$ $\psi _ { a } ( z ) = \frac { a - z } { 1 - \bar { a } z } )$ to prove that ${ \frac { \abs{ f ( 0 ) } - \abs{ z } } { 1 + \abs{ f ( 0 ) } \abs{ z } } } \leq \abs{ f ( z ) } \leq { \frac { \abs{ f ( 0 ) } + \abs{ z } } { 1 - \abs{ f ( 0 ) } \abs{ z } } } ,$
+Let $f$ be a non-constant analytic function on $\DD$ with $f(\DD) \subseteq \DD$. Use $\psi_{a}(f(z))$ (where $a = f(0)$ and $\psi_{a}(z) = \frac{a - z}{1 - \bar{a}z}$) to prove that
+$$
+\frac{\abs{f(0)} - \abs{z}}{1 + \abs{f(0)}\abs{z}} \leq \abs{f(z)} \leq \frac{\abs{f(0)} + \abs{z}}{1 - \abs{f(0)}\abs{z}}.
+$$
 :::
 
 ::: {.solution}

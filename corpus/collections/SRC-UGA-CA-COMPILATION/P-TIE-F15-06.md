@@ -17,14 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $f ( z )$ be bounded and analytic in C. Let $a \neq b$ be any fixed complex numbers.
-Show that the following limit exists
-
+Let $f(z)$ be bounded and analytic in $\CC$. Let $a \neq b$ be any fixed complex numbers. Show that the following limit exists
 $$
-\operatorname* { l i m } _ { R \to \infty } \int _ { \abs{ z } = R } { \frac { f ( z ) } { ( z - a ) ( z - b ) } } d z .
+\lim_{R \to \infty} \int_{\abs{z} = R} \frac{f(z)}{(z - a)(z - b)} \, dz.
 $$
 
-Use this to show that $f ( z )$ must be a constant (Liouville’s theorem).
+Use this to show that $f(z)$ must be a constant (Liouville's theorem).
 :::
 
 ::: {.solution}

@@ -17,19 +17,15 @@ audit:
 ---
 
 ::: {.problem}
-Assume $f$ is continuous in the region: x $\geq x _ { 0 } , \ 0 \leq y \leq b$ and the limit
-
+Assume $f$ is continuous in the region $x \geq x_{0}$, $0 \leq y \leq b$ and the limit
 $$
-\operatorname* { l i m } _ { x  + \infty } f ( x + i y ) = A
+\lim_{x \to +\infty} f(x + iy) = A
 $$
-
-exists uniformly with respect to y (independent of $y )$ . Show that
-
+exists uniformly with respect to $y$ (independent of $y$). Show that
 $$
-\operatorname* { l i m } _ { x  + \infty } \int _ { \gamma _ { x } } f ( z ) d z = i A b ,
+\lim_{x \to +\infty} \int_{\gamma_{x}} f(z) \, dz = iAb,
 $$
-
-where $\gamma _ { x } : = \{ z \mid z = x + i t , 0 \leq t \leq b \}$
+where $\gamma_{x} \coloneqq \{z \st z = x + it,\ 0 \leq t \leq b\}$.
 :::
 
 ::: {.solution}

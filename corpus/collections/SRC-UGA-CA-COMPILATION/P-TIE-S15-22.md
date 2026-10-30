@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let C and $C ^ { \prime }$ be two circles and let $z _ { 1 } \in C , z _ { 2 } \notin C , z _ { 1 } ^ { \prime } \in C ^ { \prime } , z _ { 2 } ^ { \prime } \notin C ^ { \prime }$ . Show that there is a unique fractional linear transformation f with $f ( C ) = C ^ { \prime }$ and $f ( z _ { 1 } ) = z _ { 1 } ^ { \prime } , f ( z _ { 2 } ) = z _ { 2 } ^ { \prime }$
+Let $C$ and $C'$ be two circles and let $z_{1} \in C$, $z_{2} \notin C$, $z_{1}' \in C'$, $z_{2}' \notin C'$. Show that there is a unique fractional linear transformation $f$ with $f(C) = C'$ and $f(z_{1}) = z_{1}'$, $f(z_{2}) = z_{2}'$.
 :::
 
 ::: {.solution}

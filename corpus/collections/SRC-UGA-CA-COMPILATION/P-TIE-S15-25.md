@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that $f ( z ) = - \frac { 1 } { 2 } \left( z + \frac { 1 } { z } \right)$ is a conformal map from half disc $\left\{ z = x + i y : \ \abs{ z } < 1 , \ y > 0 \right\}$ to upper half plane $\halfplane \overset { \cdot } { = } \left\{ z = \overset { \cdot } { x } + i y : \ y > 0 \right\}$
+Prove that $f(z) = -\frac{1}{2}\left(z + \frac{1}{z}\right)$ is a conformal map from the half disc $\{z = x + iy \st \abs{z} < 1,\ y > 0\}$ to the upper half plane $\halfplane = \{z = x + iy \st y > 0\}$.
 :::
 
 ::: {.solution}

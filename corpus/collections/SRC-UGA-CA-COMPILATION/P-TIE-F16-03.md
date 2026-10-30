@@ -21,17 +21,14 @@ audit:
 ---
 
 ::: {.problem}
-(a) $f : D \to \CC$ be a continuous function, where $D \subset \CC$ is a domain.Let $\alpha : [ a , b ] \to D$ be a smooth curve.
-Give a precise definition of the complex line integral
-
+(a) Let $f \colon D \to \CC$ be a continuous function, where $D \subset \CC$ is a domain. Let $\alpha \colon [a, b] \to D$ be a smooth curve. Give a precise definition of the complex line integral
 $$
-\int _ { \alpha } f .
+\int_{\alpha} f.
 $$
 
-(b) Assume that there exists a constant M such that $\abs{ f ( \tau ) } \le M$ for all $\tau \in { \mathrm { I m a g e } } ( \alpha )$ . Prove that
-
+(b) Assume that there exists a constant $M$ such that $\abs{f(\tau)} \le M$ for all $\tau \in \operatorname{Image}(\alpha)$. Prove that
 $$
-\abs{ \int _ { \alpha } f } \leq M \times \mathrm { l e n g t h } ( \alpha ) .
+\abs{\int_{\alpha} f} \leq M \times \operatorname{length}(\alpha).
 $$
 
 (c) Let $C_{R}$ be the circle $\abs{z} = R$, parametrized counterclockwise by $z(t) = Re^{it}$, $0 \le t \le 2\pi$, where $R > 1$, and let $\Log_{C_R}$ be the continuous determination of the logarithm along $C_R$ given by $\Log_{C_R}(Re^{it}) = \log R + it$. Provide an upper bound for $\abs{ \int_{C_{R}} \frac{\Log_{C_R} z}{z^{2}}\,dz }$, which depends only on $R$ and other constants.

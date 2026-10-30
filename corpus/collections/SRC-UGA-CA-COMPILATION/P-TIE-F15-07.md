@@ -17,9 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Prove by justifying all steps that for all $\xi \in \CC$ we have $e ^ { - \pi \xi ^ { 2 } } = \int _ { - \infty } ^ { \infty } e ^ { - \pi x ^ { 2 } } e ^ { 2 \pi i x \xi } d x$
+Prove by justifying all steps that for all $\xi \in \CC$ we have
+$$
+e^{-\pi\xi^{2}} = \int_{-\infty}^{\infty} e^{-\pi x^{2}}e^{2\pi ix\xi} \, dx.
+$$
 
-Hint: You may use that fact in Example 1 on p. 42 of the textbook without proof, i.e., you may assume the above is true for real values of $\xi .$
+Hint: You may use the fact in Example 1 on p. 42 of the textbook without proof, i.e., you may assume the above is true for real values of $\xi$.
 :::
 
 ::: {.solution}

@@ -17,9 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f ( z )$ be an analytic function on $\CC \backslash \{ z _ { 0 } \}$ , where $z _ { \mathrm { 0 } }$ is a fixed point.
-Assume that $f ( z )$ is bijective from $\CC \backslash \{ z _ { 0 } \}$ onto its image, and that $f ( z )$ is bounded outside $D _ { r } ( z _ { 0 } )$ , where r is some fixed positive number.
-Show that there exist $a , b , c , d \in \CC$ with $a d - b c \neq 0 , c \neq 0$ such that $f ( z ) = { \frac { a z + b } { c z + d } } .$
+Let $f(z)$ be an analytic function on $\CC \setminus \{z_{0}\}$, where $z_{0}$ is a fixed point. Assume that $f(z)$ is bijective from $\CC \setminus \{z_{0}\}$ onto its image, and that $f(z)$ is bounded outside $D_{r}(z_{0})$, where $r$ is some fixed positive number. Show that there exist $a, b, c, d \in \CC$ with $ad - bc \neq 0$, $c \neq 0$ such that $f(z) = \dfrac{az + b}{cz + d}$.
 :::
 
 ::: {.solution}
