@@ -91,7 +91,7 @@ contributes in degree $5$. The remaining nonzero tensor terms are $H_0(Y)\otimes
 
 ::: pf-step
 
-If the notation $H^*$ in the question was intended literally, the integral cohomology groups are
+The integral cohomology groups are
 $$
 H^i(Y\times\RP^2;\ZZ)\cong
 \begin{cases}

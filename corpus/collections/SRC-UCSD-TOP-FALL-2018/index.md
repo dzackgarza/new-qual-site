@@ -21,7 +21,10 @@ source:
   - P-TOPF18B
   - P-TOPF18C
   - P-TOPF18D
+  - P-UCTOP-SU01-6
   - P-TOPF18F
+  - P-TOPF09G
+  - P-TOPF09H
   date:
     kind: academic-term
     term: fall

@@ -95,5 +95,5 @@ So it reverses orientation.
 
 
 ::: {.remark title="Variations"}
-The Fall 2009 exam asks only the $\CP^{2n}$ part.
+The Fall 2009 and Fall 2018 exams ask only the $\CP^{2n}$ part.
 :::
