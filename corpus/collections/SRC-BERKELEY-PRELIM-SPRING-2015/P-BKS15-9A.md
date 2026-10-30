@@ -6,7 +6,8 @@ title: Cyclic decomposition of $(\ZZ_{12}\times\ZZ_{12})/\langle(2,6)\rangle$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

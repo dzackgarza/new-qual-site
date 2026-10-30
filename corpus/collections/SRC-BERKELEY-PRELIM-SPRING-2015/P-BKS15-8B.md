@@ -6,7 +6,8 @@ title: Groups of exponent $2$ are abelian; groups of odd prime exponent need not
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

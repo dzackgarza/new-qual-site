@@ -6,7 +6,8 @@ title: The integral $\int_0^1 x^4(1-x)^4/(1+x^2)\,dx = 22/7-\pi$ and the bound $
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -24,10 +25,12 @@ audit:
 ---
 
 ::: {.problem}
+
 (a) Evaluate
 $$
 \int_0^1\frac{x^4(1-x)^4}{1+x^2}\,dx.
 $$
+
 (b) Prove that
 $$
 0<\frac{22}{7}-\pi<\frac1{256}.

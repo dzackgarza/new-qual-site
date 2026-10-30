@@ -12,7 +12,6 @@ review: draft
 completion: complete
 provenance:
 - assets/attachments/Sp15_Exam.pdf
-- assets/attachments/Sp15_Solutions.pdf
 source:
   source_kind: university-exam
   institution: berkeley

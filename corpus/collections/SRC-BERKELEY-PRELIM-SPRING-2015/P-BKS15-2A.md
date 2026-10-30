@@ -6,7 +6,8 @@ title: Cousin's lemma for a positive gauge on $[a,b]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

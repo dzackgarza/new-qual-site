@@ -6,7 +6,8 @@ title: Difference of contour integrals for $e^{\pi/z}/(z^2+4)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

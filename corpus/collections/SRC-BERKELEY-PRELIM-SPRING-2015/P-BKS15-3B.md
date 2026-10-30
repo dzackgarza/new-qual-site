@@ -6,7 +6,8 @@ title: A summable sequence eventually dominating countably many summable sequenc
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

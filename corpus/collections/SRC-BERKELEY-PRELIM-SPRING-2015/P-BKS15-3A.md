@@ -6,7 +6,8 @@ title: Images of polynomial maps $\RR\to\RR$ and $\RR^2\to\RR$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -24,6 +25,7 @@ audit:
 ---
 
 ::: {.problem}
+
 (a) Describe all sets of reals that can be the image of the real line under a polynomial with real coefficients.
 
 (b) Find the image of the real plane under the polynomial

@@ -6,7 +6,8 @@ title: Low-rank approximation of the exponential kernel matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

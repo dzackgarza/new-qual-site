@@ -6,7 +6,8 @@ title: Determinant of the Pascal matrix $\left[\binom{i+j}{i}\right]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Factorization of $11x^5-11x^4+14x^2-21x+7$ over $\QQ$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

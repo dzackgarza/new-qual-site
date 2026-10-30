@@ -6,7 +6,8 @@ title: Lagrange interpolation in Cauchy-matrix form
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

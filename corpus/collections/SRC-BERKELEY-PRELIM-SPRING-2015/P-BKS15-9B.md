@@ -6,7 +6,8 @@ title: Legendre's formula and the base-$p$ digit sum of $n$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

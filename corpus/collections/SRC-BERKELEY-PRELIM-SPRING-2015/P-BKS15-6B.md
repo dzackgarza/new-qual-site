@@ -6,7 +6,8 @@ title: Maximal positive-definite subspace for a quadratic form on $\RR^4$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Maximum-area triangle inscribed in an ellipse
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

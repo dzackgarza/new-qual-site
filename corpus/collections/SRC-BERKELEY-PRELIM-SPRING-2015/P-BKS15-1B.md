@@ -6,7 +6,8 @@ title: Integral bounds for $n!$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
