@@ -22,7 +22,7 @@ f(z)=\sum_{n=0}^{\infty}a_n(z-z_0)^n,
 $$
 where for every $n\geq0$ and every $r\in(0,R]$,
 $$
-a_n=\frac{f^{(n)}(z_0)}{n!}=\frac{1}{2\pi i}\int_{\abs{z-z_0}=r}\frac{f(z)}{(z-z_0)^{n+1}}\dz=\frac{1}{2\pi r^n}\int_0^{2\pi}f(z_0+re^{i\theta})e^{-in\theta}\dtheta.
+a_n=\frac{f^{(n)}(z_0)}{n!}=\frac{1}{2\pi i}\int_{\abs{w-z_0}=r}\frac{f(w)}{(w-z_0)^{n+1}}\dw=\frac{1}{2\pi r^n}\int_0^{2\pi}f(z_0+re^{i\theta})e^{-in\theta}\dtheta.
 $$
 In particular, $f$ is [[D-V6UQJ|analytic]] at every point of $\Omega$ [@SS03].
 :::
