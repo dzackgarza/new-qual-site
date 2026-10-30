@@ -341,3 +341,7 @@ Step [](#s9){.pf-ref} is the requested count.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+Classify the groups of order $12$ up to isomorphism. The proof above does this: its five distinct groups are the complete list.
+:::
