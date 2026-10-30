@@ -28,8 +28,7 @@ Calculate the decomposition of $V\otimes V$ into irreducible $D_4$-modules.
 :::
 
 ::: {.solution}
-The conjugacy classes of $D_4=\langle r,s:r^4=s^2=1,\ srs=r^{-1}
-angle$ are
+The conjugacy classes of $D_4=\langle r,s:r^4=s^2=1,\ srs=r^{-1}\rangle$ are
 $$
 \{1\},\quad \{r^2\},\quad \{r,r^3\},\quad \{s,r^2s\},\quad \{rs,r^3s\}.
 $$

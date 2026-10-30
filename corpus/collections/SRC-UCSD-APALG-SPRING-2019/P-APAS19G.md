@@ -28,8 +28,7 @@ Justify your answer.
 :::
 
 ::: {.solution}
-For (a), let $G=C_4=\langle g:g^4=1
-angle$ and let $V=\RR^2$ with
+For (a), let $G=C_4=\langle g:g^4=1\rangle$ and let $V=\RR^2$ with
 $$
 X(g)=J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}.
 $$
