@@ -5,8 +5,10 @@ kind: problem
 title: Disk functions with symmetric boundary values under $z\mapsto 1/z$ are constant
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Holomorphic Functions
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

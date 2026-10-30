@@ -5,8 +5,10 @@ kind: problem
 title: Phragmén--Lindelöf principle for subharmonic functions in the quadrant
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Subharmonic Functions
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

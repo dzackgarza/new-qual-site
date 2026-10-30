@@ -5,8 +5,10 @@ kind: problem
 title: Normal families in a Gaussian-weighted $L^2$ space of entire functions
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Normal Families
+  - Entire Functions
 relations: []
 review: draft
 audit:

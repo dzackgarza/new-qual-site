@@ -5,8 +5,10 @@ kind: problem
 title: Periodic entire functions of exponential type less than 1 are constant
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Liouville's Theorem
 relations: []
 review: draft
 audit:

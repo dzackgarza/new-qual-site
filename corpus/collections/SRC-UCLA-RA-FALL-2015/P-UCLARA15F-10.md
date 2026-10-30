@@ -5,8 +5,10 @@ kind: problem
 title: Residue computation of $\int_0^\infty e^{\cos x}\sin(\sin x)\,\frac{dx}{x}$
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 audit:

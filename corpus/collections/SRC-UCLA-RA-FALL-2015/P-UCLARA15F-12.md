@@ -5,8 +5,10 @@ kind: problem
 title: Harmonic function between the tangent circles $\abs{z}=2$ and $\abs{z-1}=1$
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Harmonic Functions
+  - Conformal Maps
 relations: []
 review: draft
 audit:
