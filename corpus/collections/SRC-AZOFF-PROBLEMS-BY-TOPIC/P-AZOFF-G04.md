@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Evaluate $\textstyle \int _ { 0 } ^ { \infty } { \frac { \cos x - \cos 4 x } { x ^ { 2 } } } d x$
+Evaluate $\displaystyle\int_0^\infty \frac{\cos x - \cos 4x}{x^2}\,dx$.
 :::
 
 ::: {.solution}
