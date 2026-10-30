@@ -6,7 +6,10 @@ title: The unique prime ideal of $B/M^n$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Prime Ideals
+  - Maximal Ideals
+  - Quotient Rings
 relations: []
 review: draft
 ---

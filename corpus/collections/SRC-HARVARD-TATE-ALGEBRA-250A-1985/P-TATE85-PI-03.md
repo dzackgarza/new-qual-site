@@ -6,7 +6,10 @@ title: Prime ideals of $B[X]$ lying over a prime of $B$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Polynomial Rings
+  - Prime Ideals
+  - Unique Factorization Domains
 relations: []
 review: draft
 ---

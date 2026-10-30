@@ -6,7 +6,10 @@ title: Prime ideals of convergent and formal power series rings
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Power Series Rings
+  - Prime Ideals
+  - Discrete Valuation Rings
 relations: []
 review: draft
 ---

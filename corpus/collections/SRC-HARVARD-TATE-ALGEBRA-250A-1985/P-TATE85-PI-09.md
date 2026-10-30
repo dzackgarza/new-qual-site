@@ -6,7 +6,10 @@ title: Maximal ideals of $C(E)$ for a compact Hausdorff space $E$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Maximal Ideals
+  - Rings of Continuous Functions
+  - Compact Hausdorff Spaces
 relations: []
 review: draft
 ---

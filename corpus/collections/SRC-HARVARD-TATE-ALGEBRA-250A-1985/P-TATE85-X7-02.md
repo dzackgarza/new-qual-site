@@ -6,7 +6,10 @@ title: Galois group of $X^7-7X+3$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Groups of Polynomials
+  - Chebotarev Density Theorem
+  - Simple Groups
 relations: []
 review: draft
 ---

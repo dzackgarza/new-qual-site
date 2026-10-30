@@ -6,7 +6,10 @@ title: Prime ideals of $\CC[X,Y]$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Prime Ideals
+  - Polynomial Rings
+  - Nullstellensatz
 relations: []
 review: draft
 ---

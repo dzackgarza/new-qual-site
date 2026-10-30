@@ -6,7 +6,10 @@ title: Classification of prime ideals of $B[X]$ for a principal ideal domain $B$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Polynomial Rings
+  - Prime Ideals
+  - Principal Ideal Domains
 relations: []
 review: draft
 audit:

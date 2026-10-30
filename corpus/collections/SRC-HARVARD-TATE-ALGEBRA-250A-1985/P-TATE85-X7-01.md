@@ -6,7 +6,10 @@ title: Galois groups of degree 7 polynomials with square discriminant and three 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Groups of Polynomials
+  - Simple Groups
+  - Alternating Groups
 relations: []
 review: draft
 audit:

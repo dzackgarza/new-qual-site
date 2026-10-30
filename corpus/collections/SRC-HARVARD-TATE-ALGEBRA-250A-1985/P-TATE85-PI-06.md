@@ -6,7 +6,10 @@ title: Prime ideals of $\CC[X,Y,Z]$ and a prime ideal needing three generators
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Prime Ideals
+  - Nullstellensatz
+  - Monomial Curves
 relations: []
 review: draft
 ---

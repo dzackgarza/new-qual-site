@@ -6,13 +6,16 @@ title: Prime ideals of a principal ideal domain
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Principal Ideal Domains
+  - Prime Ideals
+  - Maximal Ideals
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-(2) Let A be a p.i.d. (principal ideal domain, e.g.,$A = \ZZ$or$A = K [ X ]$, K a field). Then the ideals of the form$\pi A$are maximal, and are the only non-zero prime ideals of A.
+Let $A$ be a p.i.d. (principal ideal domain, e.g., $A = \ZZ$ or $A = K[X]$, $K$ a field). Show that the ideals of the form $\pi A$, with $\pi$ a prime element of $A$, are maximal, and are the only non-zero prime ideals of $A$.
 :::
 
 ::: {.solution}
