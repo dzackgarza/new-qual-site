@@ -105,7 +105,7 @@ Problem 19 Let p be an odd prime. If the congruence $x ^ { 2 } \equiv - 1$ (mod 
 Problem 20 Determine all solutions to the following infinite system of linear equations in the infinitely many unknowns $x _ { 1 } , x _ { 2 } , \dotsc .$
 
 $$
-\begin{array} { r l r } { x _ { 1 } } & { + } & { x _ { 3 } + - \ x _ { 5 } = 0 } \\ { x _ { 2 } } & { + } & { x _ { 4 } + \ x _ { 6 } = 0 } \\ { x _ { 3 } } & { + } & { x _ { 5 } + \ x _ { 7 } = 0 } \\ { \vdots } & { \vdots } & { \vdots } \end{array}
+\begin{array} { r l r } { x _ { 1 } } & { + } & { x _ { 3 } + \ x _ { 5 } = 0 } \\ { x _ { 2 } } & { + } & { x _ { 4 } + \ x _ { 6 } = 0 } \\ { x _ { 3 } } & { + } & { x _ { 5 } + \ x _ { 7 } = 0 } \\ { \vdots } & { \vdots } & { \vdots } \end{array}
 $$
 
 How many free parameters are required?
