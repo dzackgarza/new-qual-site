@@ -6,7 +6,8 @@ title: The product of the nonzero eigenvalues of a matrix lies in its field of e
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

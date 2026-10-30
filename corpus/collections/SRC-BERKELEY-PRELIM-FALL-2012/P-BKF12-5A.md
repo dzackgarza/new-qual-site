@@ -6,7 +6,8 @@ title: Blaschke factors and removing the zeros of a holomorphic function from th
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

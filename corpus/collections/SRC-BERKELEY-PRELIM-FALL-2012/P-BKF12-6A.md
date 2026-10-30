@@ -6,7 +6,8 @@ title: Dimension inequality for three pairwise independent subspaces
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

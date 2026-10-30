@@ -6,7 +6,8 @@ title: Invertibility and inverse of $I_n+aJ_n$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

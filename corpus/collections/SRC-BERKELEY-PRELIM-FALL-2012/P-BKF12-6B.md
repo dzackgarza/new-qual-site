@@ -6,7 +6,8 @@ title: Eigenvalues and eigenvectors of the cyclic shift on $\CC^n$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Machin's formula $\pi/4=4\arctan\frac15-\arctan\frac1{239}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

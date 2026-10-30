@@ -6,7 +6,8 @@ title: Submetries are surjective, continuous and open
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

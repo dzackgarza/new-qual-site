@@ -6,7 +6,8 @@ title: Elements of squarefree order dividing the order of a finite abelian group
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: The sum $\sum(-1)^k/(2k+1)^3$ via residues of $1/(z^3\cos z)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Sums of the alternating harmonic series and a rearrangement
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

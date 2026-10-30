@@ -6,7 +6,8 @@ title: The equation $e^z=z$ has infinitely many complex roots
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: If $AB-BA=A$ then $A$ is nilpotent
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

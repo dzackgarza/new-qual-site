@@ -6,7 +6,8 @@ title: Arc length of the logarithmic spiral $r=e^\theta$, $\theta\le0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:
