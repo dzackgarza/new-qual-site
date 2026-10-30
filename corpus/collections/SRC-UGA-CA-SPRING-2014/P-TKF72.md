@@ -2,8 +2,8 @@
 schema: qual/card@1
 id: P-TKF72
 kind: problem
-title: The integral of $f$ over a large circular arc of angle $\alpha$ tends to $iA\alpha$
-  when $zf(z)\to A$
+title: The integral of $f$ over a large circular arc of angle $\theta$ tends to $i\theta k$
+  when $zf(z)\to k$
 classification:
   areas:
   - complex-analysis
@@ -16,37 +16,42 @@ review: draft
 ---
 
 ::: {.problem}
-Let $0\leq \alpha \leq 2\pi$ be a fixed angle.
-Suppose $f$ is continuous on the region $\Omega = \theset{\abs{z} \geq R, \Arg(z) \in [0, \alpha]}$ and $\lim_{z\to \infty} zf(z) = A$.
+Let $f$ be a continuous function in the region
+$$
+D=\theset{z \suchthat \abs z>1,\ 0\leq \arg z\leq \theta}, \quad\text{where } 0\leq \theta \leq 2\pi.
+$$
+Suppose that there exists $k$ such that $\lim_{z\to \infty} zf(z)=k$ for $z$ in the region $D$.
 Show that
 $$
-\lim_{z\to \infty} \int_{\gamma_R} f(z) \dz = iA\alpha
-,$$
-where $\gamma_R \coloneqq \theset{ \abs{z} = R, \Arg(z) \in [0, \alpha]}$ is an arc.
+\lim_{R\to \infty} \int_{L} f(z) \dz = i\theta k,
+$$
+where $L$ is the part of the circle $\abs z=R$ which lies in the region $D$.
 :::
 
 ::: {.solution}
+For $R>1$ write $L_R$ for the arc $L$ of the circle $\abs z=R$.
+
 ::: pf
 
 ::: {.pf-step #parametrize}
-For $R' > R$,
+For $R > 1$,
 $$
-\int_{\gamma_{R'}}f(z)\,dz - i\alpha A =i\int_0^\alpha \bigl(R'e^{it}f(R'e^{it}) - A\bigr)\,dt.
+\int_{L_R}f(z)\,dz - i\theta k =i\int_0^\theta \bigl(Re^{it}f(Re^{it}) - k\bigr)\,dt.
 $$
 
 ::: pf-proof
-Parametrize $\gamma_{R'}$ by $z=R'e^{it}$, $0\le t\le\alpha$, so $dz = iR'e^{it}\,dt$, and write $i\alpha A = i\int_0^\alpha A\,dt$.
+Parametrize $L_R$ by $z=Re^{it}$, $0\le t\le\theta$, so $dz = iRe^{it}\,dt$, and write $i\theta k = i\int_0^\theta k\,dt$.
 :::
 
 :::
 
 ::: pf-step
-$\lim_{R'\to\infty}\int_{\gamma_{R'}}f(z)\,dz=i\alpha A$.
+$\lim_{R\to\infty}\int_{L_R}f(z)\,dz=i\theta k$.
 
 ::: pf-proof
 Let $\varepsilon > 0$.
-Since $zf(z)\to A$ as $z \to \infty$ in $\Omega$, there is $R_\varepsilon$ with $\abs{zf(z) - A} < \varepsilon$ for $z \in \Omega$, $\abs{z} > R_\varepsilon$.
-For $R' > \max(R, R_\varepsilon)$, step [](#parametrize){.pf-ref} gives $\abs{\int_{\gamma_{R'}}f(z)\,dz - i\alpha A} \leq \alpha\varepsilon$.
+Since $zf(z)\to k$ as $z \to \infty$ in $D$, there is $R_\varepsilon$ with $\abs{zf(z) - k} < \varepsilon$ for $z \in D$, $\abs{z} > R_\varepsilon$.
+For $R > \max(1, R_\varepsilon)$, step [](#parametrize){.pf-ref} gives $\abs{\int_{L_R}f(z)\,dz - i\theta k} \leq \theta\varepsilon$.
 :::
 
 :::

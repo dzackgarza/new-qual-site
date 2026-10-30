@@ -625,7 +625,7 @@ mathematical correction under its own node, not under copy policy.
       P-F07EX and fix the remark's problem count. The remark already counts the paper's seven problems.
     - [x] P-3AEDF: the Fall 2016 paper assumes $C^2$, the card (from Tie's list) $C^3$; keep
       the weaker hypothesis on the card and title (CARD-04).
-    - [ ] P-TKF72: the limit is over $R$, not $z$, and $R$ names two radii; follow the paper.
+    - [x] P-TKF72: the limit is over $R$, not $z$, and $R$ names two radii; follow the paper.
     - [ ] P-AEWN6 part (1) lacks "Let"; P-57CAX part (2) has "Let Let".
     - [ ] SRC-TEXT-FOL99: P-RVL3K part (a) is not Folland 6.7 (6.7 assumes
       $f \in L^p \cap L^\infty$ on any measure space); drop that appearance.
