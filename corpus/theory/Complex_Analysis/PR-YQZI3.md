@@ -19,7 +19,7 @@ The [[D-Q3MYK|Gamma function]], defined by $\Gamma(s)=\int_0^\infty t^{s-1}e^{-t
 :::
 
 ::: {.proof}
-For $\Re s>0$, integration by parts gives $\Gamma(s+1)=s\Gamma(s)$, and $\Gamma$ is holomorphic there by [[PR-NLV6Q]].
+For $\Re s>0$, integration by parts gives $\Gamma(s+1)=s\Gamma(s)$, and $\Gamma$ is [[PR-NLV6Q|holomorphic there]].
 For $n\ge1$ define, on $\theset{s\st\Re s>-n}$,
 $$
 \Gamma_n(s)\coloneqq\frac{\Gamma(s+n)}{s(s+1)\cdots(s+n-1)}.
