@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP07C
 kind: problem
-title: "Convergence of the series of derivatives of an analytic function"
+title: Convergence of the series of derivatives of an analytic function
 classification:
   areas:
   - complex-analysis
@@ -14,7 +14,13 @@ audit:
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
-  note: The card printed the series sum of f^(n)(z) without the factor 1/n!, which diverges for f(z)=1/(3-z); the statement now asks about the series sum of f^(n)(z)/n!.
+  note: The card printed the series sum of f^(n)(z) without the factor 1/n!, which diverges
+    for f(z)=1/(3-z); the statement now asks about the series sum of f^(n)(z)/n!.
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The exam (PDF page 2) prints the series sum of f^(n)(z) without 1/n!; that series
+    diverges in general, so the card keeps the 1/n! correction.
 ---
 
 ::: {.problem}
