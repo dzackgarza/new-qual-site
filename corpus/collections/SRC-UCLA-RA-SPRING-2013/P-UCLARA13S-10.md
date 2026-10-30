@@ -5,8 +5,10 @@ kind: problem
 title: A nonconstant entire function takes arbitrarily far positive real values
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Open Mapping Theorem
 relations: []
 review: draft
 audit:

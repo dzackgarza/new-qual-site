@@ -5,8 +5,10 @@ kind: problem
 title: Three-lines interpolation for positive definite matrices
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Maximum Modulus Principle
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

@@ -5,8 +5,10 @@ kind: problem
 title: Absolute integrability of log modulus forces an entire function to be constant
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Subharmonic Functions
 relations: []
 review: draft
 audit:

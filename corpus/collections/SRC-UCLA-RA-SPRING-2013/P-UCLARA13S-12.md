@@ -5,8 +5,10 @@ kind: problem
 title: Cauchy-transform representation of a self-map of the upper half-plane
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Holomorphic Functions
+  - Cauchy Integral Formula
 relations: []
 review: draft
 audit:

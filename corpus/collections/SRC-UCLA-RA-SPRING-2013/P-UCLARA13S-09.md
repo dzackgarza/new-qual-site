@@ -5,8 +5,9 @@ kind: problem
 title: Zeros of a derivative remain in the same half-plane
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Zeros
 relations: []
 review: draft
 audit:
