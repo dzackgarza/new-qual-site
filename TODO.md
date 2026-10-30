@@ -641,7 +641,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UGA-RA-SPRING-2006
   - [x] SRC-UGA-RA-SPRING-2007
   - [x] SRC-UGA-RA-SPRING-2008
-  - [ ] SRC-UGA-RA-SPRING-2009
+  - [x] SRC-UGA-RA-SPRING-2009
   - [ ] SRC-UGA-RA-SPRING-2010
   - [ ] SRC-UGA-RA-SPRING-2011
   - [ ] SRC-UGA-RA-SPRING-2012
