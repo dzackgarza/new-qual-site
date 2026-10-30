@@ -20,16 +20,20 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: source-checked
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: 'Part (d) answer corrected: in a ring with 1 every maximal two-sided ideal is prime, so no example exists; the previous answer M_2(Q) used the integral-domain criterion, under which the simple ring M_2(Q) has 0 maximal and prime.'
 ---
 ::: {.problem}
 For each of the following, either give an example or indicate that none exists.
 You do not need to supply proofs.
-a. Two non-zero $\ZZ$-modules $A$ and $B$ such that $A\otimes_{\ZZ} B=0$.
-b. Two non-zero $\QQ$-modules $V$ and $W$ such that $V\otimes_{\QQ} W=0$.
-c. A ring $R$ and a module $M$ over $R$ which is torsion free but is not free.
-d. A ring $R$ and an ideal $I$ of $R$ that is maximal but not prime.
-e. A ring which is not Noetherian.
-f. A ring whose center is not an ideal.
+(a) Two non-zero $\ZZ$-modules $A$ and $B$ such that $A\otimes_{\ZZ} B=0$.
+(b) Two non-zero $\QQ$-modules $V$ and $W$ such that $V\otimes_{\QQ} W=0$.
+(c) A ring $R$ and a module $M$ over $R$ which is torsion free but is not free.
+(d) A ring $R$ and an ideal $I$ of $R$ that is maximal but not prime.
+(e) A ring which is not Noetherian.
+(f) A ring whose center is not an ideal.
 :::
 
 ::: {.solution}
@@ -89,21 +93,17 @@ The $\ZZ$-module $\QQ$ is torsion-free. It is not free: $\QQ$ is divisible, wher
 
 ::: {.pf-step #s4}
 
-For part (d), take
-$$
-R=M_2(\QQ),
-\qquad
-I=0.
-$$
-Then $I$ is maximal but not prime under the criterion that $R/I$ be an integral domain.
+For part (d), no such example exists: in a ring with $1$, every maximal two-sided ideal is prime.
 
 ::: pf-proof
 
-The ring $M_2(\QQ)$ is simple, so its only two-sided ideals are $0$ and $R$; hence $0$ is maximal. But $R$ has nonzero zero divisors, for example
+Recall that a two-sided ideal $I\ne R$ is prime when $aRb\subseteq I$ implies $a\in I$ or $b\in I$; for commutative $R$ this is the usual condition $ab\in I\Rightarrow a\in I$ or $b\in I$.
+Let $I$ be maximal, and suppose $aRb\subseteq I$ with $a,b\notin I$.
+By maximality, $I+RaR=R$ and $I+RbR=R$. Then
 $$
-E_{11}E_{22}=0,
+R=R\cdot R=(I+RaR)(I+RbR)\subseteq I+RaRbR\subseteq I,
 $$
-so $R/I\cong R$ is not an integral domain.
+because $aRb\subseteq I$ and $I$ is a two-sided ideal. This contradicts $I\ne R$.
 
 :::
 

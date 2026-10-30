@@ -29,15 +29,15 @@ audit:
 Give a complete factorization of each of the following over the indicated rings.
 Explain why the factors you obtain are irreducible.
 
-a. $x^5-1$ over $\CC$.
+(a) $x^5-1$ over $\CC$.
 
-b. $x^6-1$ over $\QQ$.
+(b) $x^6-1$ over $\QQ$.
 
-c. $x^7+3x^5-6x^3+9x-15$ over $\QQ$.
+(c) $x^7+3x^5-6x^3+9x-15$ over $\QQ$.
 
-d. $x^{11}-x$ over $\mathbf{F}_{11}$.
+(d) $x^{11}-x$ over $\mathbf{F}_{11}$.
 
-e. $x^{13}-x-1$ over $\mathbf{F}_{13}$.
+(e) $x^{13}-x-1$ over $\mathbf{F}_{13}$.
 :::
 
 ::: {.solution}

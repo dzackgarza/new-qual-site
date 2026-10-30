@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 ::: {.problem}
-a. Find a $2$-Sylow subgroup of $S_5$.
+(a) Find a $2$-Sylow subgroup of $S_5$.
 
-b. Find a $5$-Sylow subgroup of $S_{15}$.
+(b) Find a $5$-Sylow subgroup of $S_{15}$.
 
-c. For prime $p$, how many $p$-Sylow subgroups does $S_p$ have?
+(c) For prime $p$, how many $p$-Sylow subgroups does $S_p$ have?
 
-d. For prime $p$, what is the order of the normalizer of a $p$-Sylow subgroup $P$ in $S_p$?
+(d) For prime $p$, what is the order of the normalizer of a $p$-Sylow subgroup $P$ in $S_p$?
 :::
 
 ::: {.solution}

@@ -27,11 +27,11 @@ audit:
   note: "Reviewed the group extensions and action orbits, the 16 module classes, and the six invariant-factor chains; independently constructed all 39 table groups in GAP and checked that the eight named groups are exactly the remaining order-120 classes."
 ---
 ::: {.problem}
-a. List all isomorphism classes of groups of size 120.
+(a) List all isomorphism classes of groups of size 120.
 
-b. Find all isomorphism classes of $\QQ[x]$ modules $V$ such that $\dim_{\QQ} V=6$ and $V$ is annihilated by $(x-3)^2(x+5)$.
+(b) Find all isomorphism classes of $\QQ[x]$ modules $V$ such that $\dim_{\QQ} V=6$ and $V$ is annihilated by $(x-3)^2(x+5)$.
 
-c. Find all possible rational canonical forms for a 6 by 6 matrix over $\QQ$ that has minimal polynomial $(x-3)^2(x+5)$.
+(c) Find all possible rational canonical forms for a 6 by 6 matrix over $\QQ$ that has minimal polynomial $(x-3)^2(x+5)$.
 :::
 
 ::: {.solution}

@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Logic and Quantifiers
+  - Galois Theory
+  - Finite Fields
+  - Field Extensions
   - Counterexamples
 relations: []
 review: draft
@@ -28,15 +30,15 @@ audit:
 Indicate whether each of the following if-then statements is true, and give a brief explanation to support your answer.
 If the statement is false, and there is a reasonable addition to the hypotheses that would make it true, please indicate that as well.
 
-a. If $f$ is an irreducible 4th degree polynomial with rational coefficients then the roots of $f$ are constructible numbers.
+(a) If $f$ is an irreducible 4th degree polynomial with rational coefficients then the roots of $f$ are constructible numbers.
 
-b. If $g$ is an irreducible 6th degree polynomial with rational coefficients then the roots of $g$ are constructible numbers.
+(b) If $g$ is an irreducible 6th degree polynomial with rational coefficients then the roots of $g$ are constructible numbers.
 
-c. If $E$ and $F$ are finite fields and $F\subset E$ then $E/F$ is Galois.
+(c) If $E$ and $F$ are finite fields and $F\subset E$ then $E/F$ is Galois.
 
-d. If $E/F$ and $K/F$ are both Galois extensions then $EK/F$ is a Galois extension.
+(d) If $E/F$ and $K/F$ are both Galois extensions then $EK/F$ is a Galois extension.
 
-e. If $E$ and $F$ are finite fields and $\cardinality{F}$ divides $\cardinality{E}$ then $E$ has a subfield isomorphic to $F$.
+(e) If $E$ and $F$ are finite fields and $\cardinality{F}$ divides $\cardinality{E}$ then $E$ has a subfield isomorphic to $F$.
 :::
 
 ::: {.solution}

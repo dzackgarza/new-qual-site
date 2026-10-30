@@ -22,9 +22,9 @@ audit:
   date: 2026-09-09
 ---
 ::: {.problem}
-a. State the class equation.
+(a) State the class equation.
 
-b. Suppose $\cardinality{G} = p^k$ and $H$ is a normal subgroup of $G$ with $\cardinality{H} > 1$.
+(b) Suppose $\cardinality{G} = p^k$ and $H$ is a normal subgroup of $G$ with $\cardinality{H} > 1$.
 Show that $H$ contains a non-identity element of the center $Z(G)$ of $G$.
 :::
 
