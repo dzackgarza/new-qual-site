@@ -20,8 +20,9 @@ audit:
 ---
 
 ::: {.problem}
-a. Provide examples to show that the series $\sum_{n=1}^{\infty} a_n^2$ may or may not converge when the series $\sum_{n=1}^{\infty} a_n$ converges conditionally.
-b. Prove that if the series $\sum_{n=1}^{\infty} a_n$ converges absolutely, then the series $\sum_{n=1}^{\infty} a_n^2$ must converge.
+(a) Provide examples to show that the series $\sum_{n=1}^{\infty} a_n^2$ may or may not converge when the series $\sum_{n=1}^{\infty} a_n$ converges conditionally.
+
+(b) Prove that if the series $\sum_{n=1}^{\infty} a_n$ converges absolutely, then the series $\sum_{n=1}^{\infty} a_n^2$ must converge.
 :::
 
 ::: {.solution}

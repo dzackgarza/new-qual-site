@@ -624,7 +624,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UGA-PRELIM-FALL-2017
   - [x] SRC-UGA-PRELIM-SPRING-2003
   - [x] SRC-UGA-PRELIM-SPRING-2004
-  - [ ] SRC-UGA-PRELIM-SPRING-2005
+  - [x] SRC-UGA-PRELIM-SPRING-2005
   - [ ] SRC-UGA-PRELIM-SPRING-2006
   - [ ] SRC-UGA-PRELIM-SPRING-2007
   - [ ] SRC-UGA-PRELIM-SPRING-2008
