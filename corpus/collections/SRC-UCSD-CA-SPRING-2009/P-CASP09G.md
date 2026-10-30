@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Evaluate $\int_{-\infty}^{\infty} \left(\frac{\sin x}{x}\right)^2 e^{itx}\,dx$ for all real $t$.
+Evaluate $\int_{-\infty}^{\infty} \left(\frac{\sin x}{x}\right)^2 e^{itx}\,dx$ for all real $t \ge 0$.
 :::
 
 ::: {.solution}

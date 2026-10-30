@@ -21,6 +21,7 @@ source:
   - P-CASP09B
   - P-CASP09C
   - P-CASP09D
+  - P-CASP09E
   - P-CASP09F
   - P-CASP09G
   - P-CASP09H

@@ -18,61 +18,32 @@ audit:
 
 ::: {.problem}
 Suppose $f(z)$ is analytic at $z = 0$.
-Prove that there is an integer $n > 0$ such that $\abs{f^{(n)}(0)} \leq n^n \cdot n!$.
+Prove that there is an integer $n > 0$ such that $\abs{f^{(n)}(0)} < n^n \cdot n!$.
 :::
 
 ::: {.solution}
-**Goal.** Show there is $n > 0$ with $\abs{f^{(n)}(0)} \le n^n n!$.
-
 ::: pf
 
-::: pf-step
-$f$ is analytic at $0$, so it has a power series $f(z) = \sum_{k=0}^\infty a_k z^k$ with positive radius of convergence $R > 0$.
+::: {.pf-step #cauchy}
+There are $r>0$ and $M<\infty$ with $\abs{f^{(n)}(0)}\le n!\,M/r^n$ for every $n\ge1$.
 
 ::: pf-proof
-analyticity at $0$.
+$f$ is analytic on some disk $B(0,R)$ with $R>0$. Take $0<r<R$ and $M=\max_{\abs{z}=r}\abs{f(z)}$. Cauchy's estimate gives the bound.
 :::
 
 :::
 
-::: {.pf-step #s2}
-By Cauchy's estimate, $\abs{a_k} = \frac{\abs{f^{(k)}(0)}}{k!} \le \frac{M(r)}{r^k}$ for $0 < r < R$, where $M(r) = \max_{\abs{z}=r} \abs{f(z)}$.
+::: {.pf-step #large}
+$M<(nr)^n$ for all sufficiently large $n$.
 
 ::: pf-proof
-Cauchy's inequality for the Taylor coefficients.
-:::
-
-:::
-
-::: {.pf-step #s3}
-Choose $n$ large enough that $M(r) \le n^n r^n$ for some $r$.
-
-::: pf-proof
-
-::: {.pf-step #s3-1}
-Since $M(r)$ is finite for $r < R$, and $n^n r^n \to \infty$ as $n \to \infty$ (for $r > 1/e$), there is $n$ with $M(r) \le n^n r^n$.
-
-::: pf-proof
-pick $r$ with $r > 1/e$ (possible since $R > 0$); then $n^n r^n \to \infty$, so for large $n$, $n^n r^n \ge M(r)$.
-:::
-
-:::
-
-::: {.pf-step #s3-2}
-Hence $\abs{f^{(n)}(0)} = n! \abs{a_n} \le n! \frac{M(r)}{r^n} \le n! \frac{n^n r^n}{r^n} = n^n n!$.
-
-::: pf-proof
-combine step [](#s2){.pf-ref} and step [](#s3-1){.pf-ref}.
-:::
-
-:::
-
+For $n>2/r$ we have $nr>2$, so $(nr)^n>2^n$, and $2^n>M$ for large $n$.
 :::
 
 :::
 
 ::: pf-qed
-step [](#s3-2){.pf-ref} gives $\abs{f^{(n)}(0)} \le n^n n!$ for some $n > 0$.
+For $n$ as in step [](#large){.pf-ref}, step [](#cauchy){.pf-ref} gives $\abs{f^{(n)}(0)}\le n!\,M/r^n<n!\,n^n$.
 :::
 
 :::
