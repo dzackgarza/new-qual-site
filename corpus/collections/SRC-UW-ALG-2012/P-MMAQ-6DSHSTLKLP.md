@@ -20,9 +20,9 @@ audit:
 ::: {.problem}
 Determine the Galois groups of the following polynomials over $\QQ$.
 
-- $f(x)=x^4+4x^2+1$
+(a) $f(x)=x^4+4x^2+1$
 
-- $f(x)=x^4+4x^2-5$.
+(b) $f(x)=x^4+4x^2-5$
 :::
 
 ::: {.solution}

@@ -20,7 +20,11 @@ source:
   - P-5EHW6
   - P-MMAQ-2ERSIB6V43
   - P-4RQ6K
+  - P-Q7LG0
+  - P-IH43M
   - P-MMAQ-6DSHSTLKLP
+  - P-ZNP0B
+  - P-DOER1
   source_kind: university-exam
 title: UW Algebra Qualifying Exam 2012
 ---
