@@ -6,7 +6,8 @@ title: Projection along a compact factor is a closed map
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
