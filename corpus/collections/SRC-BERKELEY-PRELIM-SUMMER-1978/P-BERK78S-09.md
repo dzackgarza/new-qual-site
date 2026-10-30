@@ -6,7 +6,8 @@ title: Attainment of distance between subsets of a metric space
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -46,17 +47,19 @@ $$
 d(X,Y)=\inf\{d(x,y):x\in X,\ y\in Y\}.
 $$
 
-1. Suppose $X=\{x\}$ consists of one point and $Y$ is closed. Prove that
-   $$
-   d(X,Y)=d(x,y)
-   $$
-   for some $y\in Y$.
-2. Suppose $X$ is compact and $Y$ is closed. Prove that
-   $$
-   d(X,Y)=d(x,y)
-   $$
-   for some $x\in X$ and $y\in Y$.
-3. Give an example showing that the conclusion of part 2 can fail if $X$ and $Y$ are closed but not compact.
+(a) Suppose $X=\{x\}$ consists of one point and $Y$ is closed. Prove that
+$$
+d(X,Y)=d(x,y)
+$$
+for some $y\in Y$.
+
+(b) Suppose $X$ is compact and $Y$ is closed. Prove that
+$$
+d(X,Y)=d(x,y)
+$$
+for some $x\in X$ and $y\in Y$.
+
+(c) Give an example showing that the conclusion of part (b) can fail if $X$ and $Y$ are closed but not compact.
 :::
 
 ::: {.solution}
@@ -131,7 +134,7 @@ Since $Y$ is closed and every $y_{n_k}$ lies in $Y$, one has $y\in Y$.
 
 ::: {.pf-step #s3}
 
-Under the hypotheses of part (1), the distance is attained:
+Under the hypotheses of part (a), the distance is attained:
 $$
 \boxed{
 d(X,Y)=d(x,y)
@@ -217,7 +220,7 @@ function on the compact set $X$ attains its minimum.
 
 ::: {.pf-step #s6}
 
-Under the hypotheses of part (2), there are
+Under the hypotheses of part (b), there are
 $$
 x_0\in X
 \qquad\text{and}\qquad
@@ -232,7 +235,7 @@ $$
 
 ::: pf-proof
 
-By step [](#s5){.pf-ref}, choose $x_0\in X$ minimizing $\rho_Y$. By part (1), proved in
+By step [](#s5){.pf-ref}, choose $x_0\in X$ minimizing $\rho_Y$. By part (a), proved in
 step [](#s3){.pf-ref}, there is $y_0\in Y$ such that
 $$
 \rho_Y(x_0)=d(x_0,y_0).
@@ -257,7 +260,7 @@ Combining the two equalities gives the result.
 
 ::: {.pf-step #s7}
 
-For part (3), in the proper metric space $\RR^2$ take
+For part (c), in the proper metric space $\RR^2$ take
 $$
 X=\{(t,0):t\geq0\}
 $$
@@ -326,8 +329,8 @@ for every $x\in X$ and $y\in Y$, so the infimum is not attained.
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} proves part (1), step [](#s6){.pf-ref} proves part (2), and steps
-[](#s7){.pf-ref} and [](#s8){.pf-ref} give the counterexample requested in part (3).
+Step [](#s3){.pf-ref} proves part (a), step [](#s6){.pf-ref} proves part (b), and steps
+[](#s7){.pf-ref} and [](#s8){.pf-ref} give the counterexample requested in part (c).
 
 :::
 

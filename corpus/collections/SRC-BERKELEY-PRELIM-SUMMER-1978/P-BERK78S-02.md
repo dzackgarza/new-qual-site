@@ -6,7 +6,8 @@ title: When the ring of matrices $\begin{psmallmatrix}a&-b\\b&a\end{psmallmatrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

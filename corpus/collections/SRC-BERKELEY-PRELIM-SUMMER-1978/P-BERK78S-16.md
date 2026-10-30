@@ -6,7 +6,8 @@ title: Two criteria for diagonalizability of a complex operator
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -32,11 +33,12 @@ audit:
 ::: {.problem}
 Let $T:\CC^n\to\CC^n$ be linear.
 
-1. Prove that $T$ is diagonalizable if, for every $\lambda\in\CC$,
-   $$
-   \ker(T-\lambda I)^n=\ker(T-\lambda I).
-   $$
-2. Show that $T$ is diagonalizable if $T$ commutes with its conjugate transpose $T^*$.
+(a) Prove that $T$ is diagonalizable if, for every $\lambda\in\CC$,
+$$
+\ker(T-\lambda I)^n=\ker(T-\lambda I).
+$$
+
+(b) Show that $T$ is diagonalizable if $T$ commutes with its conjugate transpose $T^*$.
 :::
 
 ::: {.solution}
@@ -140,7 +142,7 @@ contradicting the assumed equality. Hence every block has size $1$.
 
 ::: {.pf-step #s4}
 
-Under the hypothesis of part (1),
+Under the hypothesis of part (a),
 $$
 \boxed{
 T\text{ is diagonalizable}.
@@ -158,7 +160,7 @@ $1\times1$ blocks. Hence it is diagonal.
 
 ::: {.pf-step #s5}
 
-For part (2), suppose
+For part (b), suppose
 $$
 TT^*=T^*T.
 $$
@@ -377,7 +379,7 @@ diagonal.
 
 ::: pf-qed
 
-Step [](#s4){.pf-ref} proves part (1), and step [](#s11){.pf-ref} proves part (2).
+Step [](#s4){.pf-ref} proves part (a), and step [](#s11){.pf-ref} proves part (b).
 
 :::
 

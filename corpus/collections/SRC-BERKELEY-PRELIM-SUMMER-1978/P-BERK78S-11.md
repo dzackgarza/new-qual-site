@@ -6,7 +6,8 @@ title: Multiplying power-series coefficients by a polynomial factor preserves th
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

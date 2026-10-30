@@ -6,7 +6,8 @@ title: Every norm on $\RR^n$ is equivalent to the Euclidean norm
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -31,13 +32,15 @@ audit:
 ::: {.problem}
 Let $N:\RR^n\to\RR$ be a norm.
 
-1. Prove that $N$ is bounded on the Euclidean unit sphere.
-2. Prove that $N$ is continuous.
-3. Prove that there are constants $A,B>0$ such that
-   $$
-   A\norm{x}\le N(x)\le B\norm{x}
-   $$
-   for every $x\in\RR^n$.
+(a) Prove that $N$ is bounded on the Euclidean unit sphere.
+
+(b) Prove that $N$ is continuous.
+
+(c) Prove that there are constants $A,B>0$ such that
+$$
+A\norm{x}\le N(x)\le B\norm{x}
+$$
+for every $x\in\RR^n$.
 :::
 
 ::: {.solution}
@@ -312,8 +315,8 @@ $\norm{x}$ gives the desired bounds.
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} proves part (1), step [](#s6){.pf-ref} proves part (2), and step [](#s8){.pf-ref} proves
-part (3).
+Step [](#s3){.pf-ref} proves part (a), step [](#s6){.pf-ref} proves part (b), and step [](#s8){.pf-ref} proves
+part (c).
 
 :::
 

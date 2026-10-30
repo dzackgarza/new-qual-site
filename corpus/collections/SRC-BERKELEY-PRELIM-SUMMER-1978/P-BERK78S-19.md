@@ -6,7 +6,8 @@ title: Vanishing integrals between points outside a countable set force a contin
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

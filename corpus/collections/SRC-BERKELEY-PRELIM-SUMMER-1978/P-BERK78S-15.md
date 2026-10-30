@@ -6,7 +6,8 @@ title: Complete reducibility is equivalent to diagonalizability over an algebrai
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: The integral $\int_0^{2\pi}e^{e^{i\theta}-i\theta}\,d\theta$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

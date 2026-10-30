@@ -6,7 +6,8 @@ title: A union of connected sets with a common point is connected
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

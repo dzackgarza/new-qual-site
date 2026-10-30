@@ -6,7 +6,8 @@ title: Solution space and decaying solutions of $f'''+f''-2f=0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -34,12 +35,13 @@ $$
 f'''+f''-2f=0.
 $$
 
-1. Prove that $E$ is a vector space and find its dimension.
-2. Let
-   $$
-   E_0=\{g\in E:\lim_{t\to\infty}g(t)=0\}.
-   $$
-   Find $g\in E_0$ such that $g(0)=0$ and $g'(0)=2$.
+(a) Prove that $E$ is a vector space and find its dimension.
+
+(b) Let
+$$
+E_0=\{g\in E:\lim_{t\to\infty}g(t)=0\}.
+$$
+Find $g\in E_0$ such that $g(0)=0$ and $g'(0)=2$.
 :::
 
 ::: {.solution}
@@ -350,7 +352,7 @@ The condition $g'(0)=2$ gives $C=2$, proving the formula.
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} answers part (1), and step [](#s9){.pf-ref} answers part (2).
+Step [](#s3){.pf-ref} answers part (a), and step [](#s9){.pf-ref} answers part (b).
 
 :::
 

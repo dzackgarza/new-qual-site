@@ -6,7 +6,8 @@ title: Polynomial-growth bounds on an entire function
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
@@ -30,16 +31,17 @@ audit:
 ::: {.problem}
 Let $f:\CC\to\CC$ be entire, and let $a,b>0$.
 
-1. If
-   $$
-   \abs{f(z)}\le a\sqrt{\abs{z}}+b
-   $$
-   for all $z$, prove that $f$ is constant.
-2. What can one prove about $f$ if
-   $$
-   \abs{f(z)}\le a\abs{z}^{5/2}+b
-   $$
-   for all $z$?
+(a) If
+$$
+\abs{f(z)}\le a\sqrt{\abs{z}}+b
+$$
+for all $z$, prove that $f$ is constant.
+
+(b) What can one prove about $f$ if
+$$
+\abs{f(z)}\le a\abs{z}^{5/2}+b
+$$
+for all $z$?
 :::
 
 ::: {.solution}
@@ -101,7 +103,7 @@ $$
 
 ::: {.pf-step #s2}
 
-Under the hypothesis of part (1),
+Under the hypothesis of part (a),
 $$
 c_n=0
 $$
@@ -130,7 +132,7 @@ $$
 
 ::: {.pf-step #s3}
 
-Under the hypothesis of part (1),
+Under the hypothesis of part (a),
 $$
 \boxed{f\text{ is constant}.}
 $$
@@ -173,7 +175,7 @@ the old one in Cauchy's coefficient estimate.
 
 ::: {.pf-step #s5}
 
-Under the hypothesis of part (2),
+Under the hypothesis of part (b),
 $$
 c_n=0
 $$
@@ -202,7 +204,7 @@ $$
 
 ::: {.pf-step #s6}
 
-Under the hypothesis of part (2),
+Under the hypothesis of part (b),
 $$
 \boxed{
 f\text{ is a polynomial of degree at most }2.
@@ -223,8 +225,8 @@ $$
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} proves part (1), and step [](#s6){.pf-ref} gives the conclusion for part
-(2).
+Step [](#s3){.pf-ref} proves part (a), and step [](#s6){.pf-ref} gives the conclusion for part
+(b).
 
 :::
 

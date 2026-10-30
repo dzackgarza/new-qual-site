@@ -6,7 +6,8 @@ title: Examples and nonexamples for basic subgroup and quotient phenomena
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -30,14 +31,21 @@ audit:
 ::: {.problem}
 For each of the following, either give an example or prove that no such example is possible.
 
-1. A nonabelian group.
-2. A finite abelian group that is not cyclic.
-3. An infinite group with a subgroup of index $5$.
-4. Two finite groups of the same order that are not isomorphic.
-5. A group $G$ with a subgroup $H$ that is not normal.
-6. A nonabelian group with no normal subgroups except the whole group and the identity subgroup.
-7. A group $G$ with a normal subgroup $H$ such that $G/H$ is not isomorphic to any subgroup of $G$.
-8. A group $G$ with a subgroup $H$ of index $2$ that is not normal.
+(a) A nonabelian group.
+
+(b) A finite abelian group that is not cyclic.
+
+(c) An infinite group with a subgroup of index $5$.
+
+(d) Two finite groups of the same order that are not isomorphic.
+
+(e) A group $G$ with a subgroup $H$ that is not normal.
+
+(f) A nonabelian group with no normal subgroups except the whole group and the identity subgroup.
+
+(g) A group $G$ with a normal subgroup $H$ such that $G/H$ is not isomorphic to any subgroup of $G$.
+
+(h) A group $G$ with a subgroup $H$ of index $2$ that is not normal.
 :::
 
 ::: {.solution}
@@ -46,7 +54,7 @@ For each of the following, either give an example or prove that no such example 
 
 ::: {.pf-step #s1}
 
-For part (1), the symmetric group
+For part (a), the symmetric group
 $$
 \boxed{S_3}
 $$
@@ -70,7 +78,7 @@ Thus multiplication in $S_3$ is not commutative.
 
 ::: {.pf-step #s2}
 
-For part (2), the group
+For part (b), the group
 $$
 \boxed{C_2\times C_2}
 $$
@@ -89,7 +97,7 @@ cyclic.
 
 ::: {.pf-step #s3}
 
-For part (3), the additive group
+For part (c), the additive group
 $$
 \boxed{\ZZ}
 $$
@@ -121,7 +129,7 @@ and $\ZZ$ is infinite.
 
 ::: {.pf-step #s4}
 
-For part (4), the groups
+For part (d), the groups
 $$
 \boxed{C_4\quad\text{and}\quad C_2\times C_2}
 $$
@@ -139,7 +147,7 @@ preserve element orders, the groups are not isomorphic.
 
 ::: {.pf-step #s5}
 
-For part (5), take
+For part (e), take
 $$
 \boxed{
 G=S_3,
@@ -171,7 +179,7 @@ so $H$ is not normal.
 
 ::: {.pf-step #s6}
 
-For part (6), the alternating group
+For part (f), the alternating group
 $$
 \boxed{A_5}
 $$
@@ -218,7 +226,7 @@ $60$. Therefore $A_5$ is simple.
 
 ::: {.pf-step #s7}
 
-For part (7), take
+For part (g), take
 $$
 \boxed{
 G=\ZZ,
@@ -245,7 +253,7 @@ isomorphic to the finite nontrivial group $C_2$.
 
 ::: {.pf-step #s8}
 
-Part (8) is impossible: every subgroup of index $2$ is normal.
+Part (h) is impossible: every subgroup of index $2$ is normal.
 
 ::: pf-proof
 
@@ -275,7 +283,7 @@ requested kind exists.
 ::: pf-qed
 
 Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} give the requested examples, and step [](#s8){.pf-ref} proves the
-nonexistence assertion for part (8).
+nonexistence assertion for part (h).
 
 :::
 

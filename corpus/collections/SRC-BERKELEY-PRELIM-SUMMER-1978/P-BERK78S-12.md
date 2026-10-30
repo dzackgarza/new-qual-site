@@ -6,7 +6,8 @@ title: Real-valued analytic functions are constant, and $\operatorname{Re}g+\ope
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:
@@ -28,12 +29,13 @@ audit:
 ---
 
 ::: {.problem}
-1. Suppose $f$ is analytic on a connected open set $U\subset\CC$ and takes only real values. Prove that $f$ is constant.
-2. Suppose $W\subset\CC$ is open, $g$ is analytic on $W$, and $g'(z)\ne0$ for every $z\in W$. Show that
-   $$
-   \{\operatorname{Re}g(z)+\operatorname{Im}g(z):z\in W\}\subset\RR
-   $$
-   is open in $\RR$.
+(a) Suppose $f$ is analytic on a connected open set $U\subset\CC$ and takes only real values. Prove that $f$ is constant.
+
+(b) Suppose $W\subset\CC$ is open, $g$ is analytic on $W$, and $g'(z)\ne0$ for every $z\in W$. Show that
+$$
+\{\operatorname{Re}g(z)+\operatorname{Im}g(z):z\in W\}\subset\RR
+$$
+is open in $\RR$.
 :::
 
 ::: {.solution}
@@ -42,7 +44,7 @@ audit:
 
 ::: {.pf-step #s1}
 
-If the analytic function $f:U\to\CC$ in part (1) were
+If the analytic function $f:U\to\CC$ in part (a) were
 nonconstant, then $f(U)$ would be open in $\CC$.
 
 ::: pf-proof
@@ -57,7 +59,7 @@ a nonconstant $f$ would have open image $f(U)$ in $\CC$.
 
 ::: {.pf-step #s2}
 
-The function $f$ in part (1) is constant.
+The function $f$ in part (a) is constant.
 
 ::: pf-proof
 
@@ -191,7 +193,7 @@ $L(g(W))$ is open.
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} proves part (1), and step [](#s6){.pf-ref} proves part (2).
+Step [](#s2){.pf-ref} proves part (a), and step [](#s6){.pf-ref} proves part (b).
 
 :::
 

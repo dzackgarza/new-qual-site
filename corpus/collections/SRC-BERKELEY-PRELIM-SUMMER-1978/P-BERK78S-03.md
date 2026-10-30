@@ -6,7 +6,8 @@ title: A fixed vector from unit column sums and a positive eigenvalue of a posit
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -30,8 +31,9 @@ audit:
 ::: {.problem}
 Let $A$ be a real $n\times n$ matrix.
 
-1. If the sum of the entries in each column of $A$ is $1$, prove that there is a nonzero column vector $x$ such that $Ax=x$.
-2. Suppose $n=2$ and every entry of $A$ is positive. Prove that there are a nonzero column vector $y$ and a number $\lambda>0$ such that $Ay=\lambda y$.
+(a) If the sum of the entries in each column of $A$ is $1$, prove that there is a nonzero column vector $x$ such that $Ax=x$.
+
+(b) Suppose $n=2$ and every entry of $A$ is positive. Prove that there are a nonzero column vector $y$ and a number $\lambda>0$ such that $Ay=\lambda y$.
 :::
 
 ::: {.solution}
@@ -40,7 +42,7 @@ Let $A$ be a real $n\times n$ matrix.
 
 ::: {.pf-step #s1}
 
-Under the hypothesis of part (1), if
+Under the hypothesis of part (a), if
 $$
 \mathbf 1
 =
@@ -118,7 +120,7 @@ which is equivalent to $Ax=x$.
 
 ::: {.pf-step #s4}
 
-For part (2), write
+For part (b), write
 $$
 A
 =
@@ -234,7 +236,7 @@ so $Ay=\lambda_+y$. Positivity of $\lambda_+$ is step [](#s6){.pf-ref}.
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} proves part (1), and step [](#s7){.pf-ref} proves part (2).
+Step [](#s3){.pf-ref} proves part (a), and step [](#s7){.pf-ref} proves part (b).
 
 :::
 

@@ -6,7 +6,8 @@ title: Derivative of the matrix-squaring map
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

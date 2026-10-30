@@ -6,7 +6,8 @@ title: Bounded partial derivatives give a continuous extension to the closure of
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

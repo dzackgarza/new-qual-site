@@ -6,7 +6,8 @@ title: Homogeneous systems and the dimension of a finitely spanned vector space
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -29,8 +30,9 @@ audit:
 ---
 
 ::: {.problem}
-1. Using only the axioms for a field $F$, prove that a system of $m$ homogeneous linear equations in $n$ unknowns with $m<n$ and coefficients in $F$ has a nonzero solution.
-2. Use part 1 to show that if a vector space $V$ over $F$ is spanned by finitely many elements, then every maximal linearly independent subset of $V$ has the same number of elements.
+(a) Using only the axioms for a field $F$, prove that a system of $m$ homogeneous linear equations in $n$ unknowns with $m<n$ and coefficients in $F$ has a nonzero solution.
+
+(b) Use part (a) to show that if a vector space $V$ over $F$ is spanned by finitely many elements, then every maximal linearly independent subset of $V$ has the same number of elements.
 :::
 
 ::: {.solution}
@@ -39,7 +41,7 @@ audit:
 
 ::: {.pf-step #s1}
 
-Part (1) holds when there are no equations.
+Part (a) holds when there are no equations.
 
 ::: pf-proof
 
@@ -55,7 +57,7 @@ is a nonzero solution.
 
 ::: {.pf-step #s2}
 
-Assume part (1) holds for every homogeneous system with
+Assume part (a) holds for every homogeneous system with
 $m-1$ equations and more than $m-1$ unknowns. Then it holds for a system
 of $m$ equations in $n$ unknowns with $m<n$.
 
@@ -255,7 +257,7 @@ $$
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} proves part (1), and step [](#s7){.pf-ref} proves part (2).
+Step [](#s3){.pf-ref} proves part (a), and step [](#s7){.pf-ref} proves part (b).
 
 :::
 

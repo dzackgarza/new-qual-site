@@ -6,7 +6,8 @@ title: Finite subgroups of $\operatorname{GL}_2(\ZZ)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -33,12 +34,13 @@ audit:
 ::: {.problem}
 Let $G$ be a finite multiplicative group of $2\times2$ integer matrices.
 
-1. For $A\in G$, what can one prove about
-   (a) $\det A$;
-   (b) the real or complex eigenvalues of $A$;
-   (c) the Jordan or rational canonical form of $A$;
-   (d) the order of $A$?
-2. Find all such groups up to isomorphism.
+(a) For $A\in G$, what can one prove about
+(i) $\det A$;
+(ii) the real or complex eigenvalues of $A$;
+(iii) the Jordan or rational canonical form of $A$;
+(iv) the order of $A$?
+
+(b) Find all such groups up to isomorphism.
 :::
 
 ::: {.solution}
@@ -503,8 +505,8 @@ All matrices displayed have integer entries and determinant $\pm1$.
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} answer part (1), and steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref} and [](#s12){.pf-ref} give the complete
-classification required in part (2).
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} answer part (a), and steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref} and [](#s12){.pf-ref} give the complete
+classification required in part (b).
 
 :::
 

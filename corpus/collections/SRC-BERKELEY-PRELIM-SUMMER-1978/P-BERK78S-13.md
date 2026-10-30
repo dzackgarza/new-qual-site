@@ -6,7 +6,8 @@ title: A row over $F[x]$ is the first row of a determinant-one matrix exactly wh
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

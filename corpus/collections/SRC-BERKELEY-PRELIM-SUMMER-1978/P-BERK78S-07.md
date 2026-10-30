@@ -6,7 +6,8 @@ title: A differential inequality forcing a zero solution
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
@@ -27,16 +28,17 @@ audit:
 ---
 
 ::: {.problem}
-1. Solve
-   $$
-   g'=2g,\qquad g(0)=a,
-   $$
-   where $a$ is a real constant.
-2. Suppose $f:[0,1]\to\RR$ is continuous, $f(0)=0$, and $f$ is differentiable for $0<x<1$ with
-   $$
-   0\le f'(x)\le2f(x).
-   $$
-   Prove that $f$ is identically zero.
+(a) Solve
+$$
+g'=2g,\qquad g(0)=a,
+$$
+where $a$ is a real constant.
+
+(b) Suppose $f:[0,1]\to\RR$ is continuous, $f(0)=0$, and $f$ is differentiable for $0<x<1$ with
+$$
+0\le f'(x)\le2f(x).
+$$
+Prove that $f$ is identically zero.
 :::
 
 ::: {.solution}
@@ -113,7 +115,7 @@ both the differential equation and the initial condition.
 
 ::: {.pf-step #s3}
 
-Under the hypotheses of part (2),
+Under the hypotheses of part (b),
 $$
 f(x)\geq0
 $$
@@ -258,7 +260,7 @@ for every $x\in[0,1]$.
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} solves part (1), and step [](#s7){.pf-ref} proves part (2).
+Step [](#s2){.pf-ref} solves part (a), and step [](#s7){.pf-ref} proves part (b).
 
 :::
 
