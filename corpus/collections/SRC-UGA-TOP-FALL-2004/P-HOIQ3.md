@@ -369,3 +369,7 @@ This proves part (c).
 :::
 
 :::
+
+::: remark
+The exam paper asks only that $Y$ be compact in (b). Without the Hausdorff condition the claim fails: adjoin a point $p$ to $X$ whose only neighborhood is the whole space. That space is compact and contains $X$ as a dense subspace, but it is not Hausdorff, so it is not homeomorphic to $\widehat X$.
+:::
