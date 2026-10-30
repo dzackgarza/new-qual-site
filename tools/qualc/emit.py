@@ -1922,12 +1922,17 @@ def publication_section_page(
 def card_source_collections(
     con: sqlite3.Connection,
 ) -> dict[str, list[Appearance]]:
-    """Collections that list this problem."""
+    """Collections that list this problem, one entry per appearance.
+
+    A problem listed in several sections of one collection names the section
+    of each appearance, so the entries are distinguishable.
+    """
     sources: dict[str, list[Appearance]] = {row["id"]: [] for row in _rows(con, "select id from cards order by id")}
     for row in _rows(
         con,
         """
-        select cp.problem_id, cp.collection_id, cp.ordinal, cp.comment, c.title
+        select cp.problem_id, cp.collection_id, cp.ordinal, cp.comment, c.title,
+          case when count(*) over (partition by cp.problem_id, cp.collection_id) > 1 then cp.section_name end as section_name
         from collection_problems cp
         join cards c on c.id=cp.collection_id
         order by c.title, coalesce(cp.section_ordinal, -1), cp.ordinal
@@ -1936,7 +1941,7 @@ def card_source_collections(
         sources[row["problem_id"]].append(
             Appearance(
                 target_key=row["collection_id"],
-                title=f"{row['title']}, {row['comment']}" if row["comment"] else row["title"],
+                title=", ".join(part for part in (row["title"], row["section_name"], row["comment"]) if part),
             )
         )
     return sources

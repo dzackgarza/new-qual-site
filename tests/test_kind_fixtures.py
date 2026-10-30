@@ -75,13 +75,24 @@ def collections_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
     do not see each other: SRC-NEILNOTES and SRC-NEIL-NESTED are the two
     compilation shapes, SRC-UGA-LIST lists P-LISTED, SRC-UGA-FIX carries the
     provenance, SRC-UGA-FIX and SRC-HW give P-INDEXP and E-CENTER their
-    appearance comments, and SRC-DUMMIT alone lists P-TEXT.
+    appearance comments, SRC-DUMMIT alone lists P-TEXT, and SRC-PACKET lists
+    P-TWICE in two of its sections.
     """
     work = fixture_repo(tmp_path_factory.mktemp("collections"))
     corpus = work / "corpus"
-    for target in ("P-INDEXP", "P-LISTED", "P-TEXT"):
+    for target in ("P-INDEXP", "P-LISTED", "P-TEXT", "P-TWICE"):
         _copy(corpus, "PRB-INDEXP", target)
     _copy(corpus, "EXE-CENTER", "E-CENTER")
+    _copy(
+        corpus,
+        "SRC-NEILNOTES",
+        "SRC-PACKET",
+        ("Fall 2019", "Fall 2017"),
+        (
+            "    year: 2019\n    term: fall\n",
+            "    year: 2017\n    term: fall\n  sections:\n  - name: Day 3\n    problems:\n    - P-TWICE\n  - name: Revised packet\n    problems:\n    - P-TWICE\n",
+        ),
+    )
 
     _copy(
         corpus,
@@ -685,6 +696,14 @@ def test_textbook_source_is_not_exam_metadata_and_stays_separate_from_guide_appe
     assert "Dummit and Foote, Abstract Algebra, Exercise 4.1.7" in page
     assert 'data-relation-group="guide-appearances"' in page
     assert ">Groups</a>" in page
+
+
+def test_appearances_in_two_sections_of_one_collection_name_their_sections(collections_site: Path) -> None:
+    """A packet that lists one problem in two of its sections gives the problem
+    two appearances; each names its section, so the two entries differ."""
+    page = (collections_site / "build" / "quarto" / "_site" / "tag" / "P-TWICE.html").read_text()
+    assert "Handwritten algebra solution set, Fall 2017, Day 3<" in page
+    assert "Handwritten algebra solution set, Fall 2017, Revised packet<" in page
 
 
 def test_commented_entry_must_still_be_an_id(tmp_path: Path) -> None:
