@@ -390,7 +390,7 @@ def test_the_problem_browser_groups_by_area_and_leads_with_prose_titles(static_s
     site = work / "build" / "quarto" / "_site"
     prose = listing_key(site / "tag" / "P-PACKET-1.html")
     formula = listing_key(site / "tag" / "P-PACKET-2.html")
-    assert prose.startswith("algebra|"), prose
+    assert prose.startswith("algebra\t"), prose
     assert prose < formula, (prose, formula)
 
     # DataTables owns presentation; the build supplies data and a stable sort key.
@@ -671,10 +671,10 @@ def static_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
 
 
 def test_a_source_counts_only_the_problem_cards_it_lists(static_site: Path) -> None:
-    """SRC-PACKET lists one problem and one reprinted exam; the exam is not a problem."""
+    """SRC-PACKET lists P-PACKET-1 and a reprinted exam listing P-CENTER; the exam itself is not a problem."""
     site = static_site / "build" / "quarto" / "_site"
     rows = {row["id"]: row for row in json.loads((site / "sources.json").read_text())["rows"]}
-    assert rows["SRC-PACKET"]["worked"] == "0 / 1 solved"
+    assert rows["SRC-PACKET"]["worked"] == "0 / 2 solved"
 
 
 def test_an_institution_is_named_by_the_vocabulary(static_site: Path) -> None:

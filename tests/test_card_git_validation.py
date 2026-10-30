@@ -52,6 +52,7 @@ def check(root: Path, *args: str) -> subprocess.CompletedProcess[str]:
         (CARD.replace(":::\n", "", 1), "unclosed fenced div"),
         (CARD.replace("\n\n::: {.hint}", "\nA trailing line.\n::: {.hint}", 1), "follows text"),
         (CARD + "\nLet $x \\in \\mathbb{R}$.\n", "is written with its semantic macro"),
+        (CARD + "\nThen $\\norm{ f } $ is finite.\n", "a $ reached the page as text"),
         (CARD + "\nLet \\(x \\in A\\).\n", "delimits math"),
         (CARD + "\nLet $a \\definedas b$.\n", "is written \\coloneqq"),
         (CARD + "\nThen $|f(z)| \\le 1$.\n", "is written with the semantic macro for its meaning"),

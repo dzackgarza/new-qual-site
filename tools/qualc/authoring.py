@@ -16,7 +16,9 @@ import yaml
 from pydantic import TypeAdapter
 
 from .emit import _collection_source_links, compile_tikzcd_block
-from .model import Card, CollectionCard, CompilationSource, Strict, TextbookSource, discover, parse_card, parse_cards, split_front_matter, validate_fenced_divs
+from .model import MARKDOWN, Card, CollectionCard, CompilationSource, Strict, TextbookSource, discover, parse_card, parse_cards, split_front_matter, unread_math, validate_fenced_divs
+from .pandoc_batch import PandocFailure, PandocServer
+from .tex import mark_definienda
 
 CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
 ID_FIELD = re.compile(r"^(id|'id'|\"id\")\s*:")
@@ -127,6 +129,21 @@ def card_header(text: str, path: Path) -> Card:
         raise ValueError(f"{path}: {exc}") from exc
 
 
+def unread_math_errors(bodies: list[tuple[Path, str]]) -> list[str]:
+    """Read the changed bodies in one Pandoc batch and report each dollar the reader left as text."""
+    if not bodies:
+        return []
+    with PandocServer() as pandoc:
+        results = pandoc.read_markdown([body for _, body in bodies], MARKDOWN)
+    errors: list[str] = []
+    for (path, _), result in zip(bodies, results, strict=True):
+        if isinstance(result, PandocFailure):
+            errors.append(f"{path}: {result.error}")
+        elif diagnostic := unread_math(result.output, path):
+            errors.append(f"{path}: {diagnostic.detail}")
+    return errors
+
+
 class GitChange(Strict):
     path: Path
     version: str
@@ -140,6 +157,7 @@ def check_git_changes(changes: list[GitChange]) -> int:
     """
     cards = [change for change in changes if change.path.parts[0] in ("corpus", "wiki") and change.path.suffix == ".md"]
     errors: list[str] = []
+    bodies: list[tuple[Path, str]] = []
     for change in cards:
         revision = "" if change.version == "index" else change.version
         source = subprocess.run(["git", "show", f"{revision}:{change.path.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
@@ -154,10 +172,12 @@ def check_git_changes(changes: list[GitChange]) -> int:
                 errors.append(f"{change.path}: {raw.group()} delimits math; use $...$ or $$...$$ (STYLE-02)")
             if raw := raw_notation(source):
                 errors.append(f"{change.path}: {raw}")
+            bodies.append((change.path, mark_definienda(split_front_matter(source, change.path)[1])))
         except ValueError as exc:
             errors.append(str(exc))
         except RuntimeError as exc:
             errors.append(f"{change.path}: {exc}")
+    errors.extend(unread_math_errors(bodies))
     if errors:
         print("\n".join(errors), file=sys.stderr)
         return 1
