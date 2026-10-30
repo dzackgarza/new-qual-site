@@ -408,7 +408,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UCSD-ALG-SPRING-2017
   - [x] SRC-UCSD-ALG-SPRING-2018
   - [x] SRC-UCSD-ALG-SPRING-2019
-  - [ ] SRC-UCSD-ALG-SPRING-2020
+  - [x] SRC-UCSD-ALG-SPRING-2020
   - [ ] SRC-UCSD-ALG-SPRING-2021
   - [ ] SRC-UCSD-ALG-SPRING-2022
   - [ ] SRC-UCSD-ALG-SPRING-2023
