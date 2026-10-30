@@ -5,7 +5,9 @@ kind: problem
 title: Dini's theorem for decreasing sequences on $[0,1]$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Compactness
 relations: []
 review: draft
 audit:

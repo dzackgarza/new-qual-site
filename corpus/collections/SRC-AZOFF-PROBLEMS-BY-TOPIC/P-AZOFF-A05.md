@@ -5,7 +5,10 @@ kind: problem
 title: Uniform differentiability is equivalent to continuity of $f'$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Differentiation
+  - Uniform Continuity
+  - Mean Value Theorem
 relations: []
 review: draft
 audit:

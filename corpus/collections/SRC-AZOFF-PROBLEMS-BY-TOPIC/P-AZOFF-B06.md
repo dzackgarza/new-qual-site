@@ -5,7 +5,10 @@ kind: problem
 title: A $C^1$ function with $\norm{\nabla F(0,0)}<1$ maps small disks into small intervals
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Differentiation
+  - Mean Value Theorem
+  - Several Variables
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Union of intersecting connected sets is connected
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Connectedness
 relations: []
 review: draft
 audit:

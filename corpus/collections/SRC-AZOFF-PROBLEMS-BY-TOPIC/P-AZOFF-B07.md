@@ -5,7 +5,9 @@ kind: problem
 title: Implicit function theorem from the inverse function theorem
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Implicit Function Theorem
+  - Inverse Function Theorem
 relations: []
 review: draft
 audit:
@@ -30,7 +32,7 @@ audit:
 ---
 
 ::: {.problem}
-State the most general (real) version of the implicit theorem you know and outline how it can be proved from the corresponding version of the (real) inverse function theorem.
+State the most general (real) version of the implicit function theorem you know and outline how it can be proved from the corresponding version of the (real) inverse function theorem.
 :::
 
 ::: {.solution}

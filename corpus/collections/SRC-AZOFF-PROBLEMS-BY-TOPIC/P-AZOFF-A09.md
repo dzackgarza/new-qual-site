@@ -5,7 +5,8 @@ kind: problem
 title: Splitting an uncountable subset of $[0,1]$ into two uncountable halves
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Countability
 relations: []
 review: draft
 audit:

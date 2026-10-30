@@ -5,7 +5,10 @@ kind: problem
 title: Real differentiability, the inverse function theorem, and complex differentiability in $\RR^2$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Differentiation
+  - Inverse Function Theorem
+  - Cauchy-Riemann
 relations: []
 review: draft
 audit:
@@ -35,7 +38,7 @@ Let $f \colon \RR^{2} \to \RR^{2}$.
 
 (b) State a version of the inverse function theorem in this setting.
 
-(c) Identifying $\CC$ with $\RR^{2}$ in the usual way, give, with proof, a necessary and sufficient condition for a function satisfying the definition of real differentiability in Part a) to be complex differentiable at the point $a + ib$.
+(c) Identifying $\CC$ with $\RR^{2}$ in the usual way, give, with proof, a necessary and sufficient condition for a function satisfying the definition of real differentiability in part (a) to be complex differentiable at the point $a + ib$.
 :::
 
 ::: {.solution}

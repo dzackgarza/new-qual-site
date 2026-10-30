@@ -5,7 +5,9 @@ kind: problem
 title: Distance between disjoint compact sets is attained
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Compactness
+  - Metric Spaces
 relations: []
 review: draft
 audit:

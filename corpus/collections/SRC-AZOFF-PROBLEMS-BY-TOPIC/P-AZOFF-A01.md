@@ -5,7 +5,9 @@ kind: problem
 title: Limit of the averaging recurrence $x_n=(x_{n-1}+x_{n-2})/2$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Sequences of Numbers
+  - Recurrences
 relations: []
 review: draft
 audit:

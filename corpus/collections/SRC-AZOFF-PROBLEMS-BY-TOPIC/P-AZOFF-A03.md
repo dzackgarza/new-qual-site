@@ -5,7 +5,9 @@ kind: problem
 title: A differentiable function with discontinuous derivative
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Differentiation
+  - Counterexamples
 relations: []
 review: draft
 audit:

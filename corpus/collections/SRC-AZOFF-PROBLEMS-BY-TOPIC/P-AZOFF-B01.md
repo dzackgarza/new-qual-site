@@ -5,7 +5,10 @@ kind: problem
 title: Continuity and differentiability of $xy/\sqrt{x^2+y^2}$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Differentiation
+  - Continuity
+  - Several Variables
 relations: []
 review: draft
 audit:

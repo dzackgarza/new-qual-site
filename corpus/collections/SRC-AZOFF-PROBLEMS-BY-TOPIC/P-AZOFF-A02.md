@@ -5,7 +5,8 @@ kind: problem
 title: Continuous functions vanishing at $\pm\infty$ are uniformly continuous
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Uniform Continuity
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Uniform convergence of $f\circ g_n$ for uniformly continuous $f$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Uniform Continuity
 relations: []
 review: draft
 audit:
