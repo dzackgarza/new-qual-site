@@ -47,7 +47,7 @@ For the action on subgroups, the orbit of $H$ is the set of [[D-ES7MP|conjugate 
 
 [[D-ES7MP]]
 
-[[E-GYGP2]]
+[[P-YDLYC]]
 
 [[E-47X7Y]]
 
@@ -62,7 +62,7 @@ If $M,N\normal G$ and $M\intersect N=1$, then $mn=nm$ for all $m\in M$ and $n\in
 
 [[E-BSGSM]]
 
-[[E-EMESP]]
+[[P-67U4W]]
 
 [[E-LUH54]]
 
