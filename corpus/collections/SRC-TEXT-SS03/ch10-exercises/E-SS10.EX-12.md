@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-12. Here we give another identity involving $\theta ^ { 4 }$ , which is equivalent to the four-squares theorem.
+Here we give another identity involving $\theta ^ { 4 }$ , which is equivalent to the four-squares theorem.
 
 (a) Show that for $\abs{ q } < 1$
 

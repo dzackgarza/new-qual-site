@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-10. Observe the following irregularities of the functions $r _ { 2 } ( n )$ and $r _ { 4 } ( n )$ as n becomes large:
+Observe the following irregularities of the functions $r _ { 2 } ( n )$ and $r _ { 4 } ( n )$ as n becomes large:
 
 (a) $r _ { 2 } ( n ) = 0$ for infinitely many n, while $\limsup_{n\to\infty} r_2(n) = \infty$ ,
 

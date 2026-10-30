@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-23. If
+If
 
 $$
 F (z) = \int_ {1} ^ {z} \frac {d \zeta}{(1 - \zeta^ {n}) ^ {2 / n}},

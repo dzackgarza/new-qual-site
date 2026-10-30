@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-6. Show that
+Show that
 
 $$
 \int_ {- \infty} ^ {\infty} \frac {d x}{(1 + x ^ {2}) ^ {n + 1}} = \frac {1 \cdot 3 \cdot 5 \cdots (2 n - 1)}{2 \cdot 4 \cdot 6 \cdots (2 n)} \cdot \pi .

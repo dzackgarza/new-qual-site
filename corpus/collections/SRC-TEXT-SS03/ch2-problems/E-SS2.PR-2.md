@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-2. $^\ast$ Let
+$^\ast$ Let
 
 $$
 F (z) = \sum_ {n = 1} ^ {\infty} d (n) z ^ {n} \quad \mathrm{for} \abs{ z } <   1

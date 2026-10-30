@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-8. If f is a holomorphic function on the strip $- 1 < y < 1 , x \in \RR$ with
+If f is a holomorphic function on the strip $- 1 < y < 1 , x \in \RR$ with
 
 $$
 \abs{ f (z) } \leq A (1 + \abs{ z }) ^ {\eta}, \quad \eta \text {   a   fixed   real   number }

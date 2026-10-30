@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-5. Suppose $f$ is continuously complex diferentiable on $\Omega ,$ and $T \subset \Omega$ is a triangle whose interior is also contained in Ω. Apply Green’s theorem to show that
+Suppose $f$ is continuously complex diferentiable on $\Omega ,$ and $T \subset \Omega$ is a triangle whose interior is also contained in Ω. Apply Green’s theorem to show that
 
 $$
 \int_ {T} f (z) d z = 0.

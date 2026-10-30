@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-13. Show that the equation $e ^ { z } - z = 0$ has infinitely many solutions in $\CC .$
+Show that the equation $e ^ { z } - z = 0$ has infinitely many solutions in $\CC .$
 
 [Hint: Apply Hadamard’s theorem.]
 :::

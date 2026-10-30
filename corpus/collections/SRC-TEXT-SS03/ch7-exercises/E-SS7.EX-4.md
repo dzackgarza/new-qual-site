@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-4. Suppose $\{ a _ { n } \} _ { n = 1 } ^ { \infty }$ is a sequence of complex numbers such that $a _ { n } = a _ { m }$ if $n \equiv m$ mod $q$ for some positive integer $q .$ Define the Dirichlet L-series associated to $\left\{ a _ { n } \right\}$ by
+Suppose $\{ a _ { n } \} _ { n = 1 } ^ { \infty }$ is a sequence of complex numbers such that $a _ { n } = a _ { m }$ if $n \equiv m$ mod $q$ for some positive integer $q .$ Define the Dirichlet L-series associated to $\left\{ a _ { n } \right\}$ by
 
 $$
 L (s) = \sum_ {n = 1} ^ {\infty} \frac {a _ {n}}{n ^ {s}} \quad \mathrm{for} \operatorname{Re} (s) > 1.

@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-3. Show that Wallis’s product formula can be written as
+Show that Wallis’s product formula can be written as
 
 $$
 \sqrt {\frac {\pi}{2}} = \lim _ {n \rightarrow \infty} \frac {2 ^ {2 n} (n !) ^ {2}}{(2 n + 1) !} (2 n + 1) ^ {1 / 2}.

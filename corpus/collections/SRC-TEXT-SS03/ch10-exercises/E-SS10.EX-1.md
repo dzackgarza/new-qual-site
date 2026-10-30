@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-1. Prove that
+Prove that
 
 $$
 \frac {(\Theta^ {\prime} (z \thetaseparator \tau)) ^ {2} - \Theta (z \thetaseparator \tau) \Theta^ {\prime \prime} (z \thetaseparator \tau)}{\Theta (z \thetaseparator \tau) ^ {2}} = \wp_ {\tau} (z - 1 / 2 - \tau / 2) + c _ {\tau},

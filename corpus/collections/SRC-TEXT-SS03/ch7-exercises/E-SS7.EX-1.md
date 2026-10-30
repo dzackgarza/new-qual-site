@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-1. Suppose that $\{ a _ { n } \} _ { n = 1 } ^ { \infty }$ is a sequence of real numbers such that the partial sums
+Suppose that $\{ a _ { n } \} _ { n = 1 } ^ { \infty }$ is a sequence of real numbers such that the partial sums
 
 $$
 A _ {n} = a _ {1} + \dots + a _ {n}

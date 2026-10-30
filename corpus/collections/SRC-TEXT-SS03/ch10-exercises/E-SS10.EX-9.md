@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-9. Use the formula for $r _ { 2 } ( n )$ to prove the following:
+Use the formula for $r _ { 2 } ( n )$ to prove the following:
 
 (a) If $n = p ,$ where p is a prime of the form $4 k + 1$ , then $r _ { 2 } ( n ) = 8$ . This implies that n can be written in a unique way as $n = n _ { 1 } ^ { 2 } + n _ { 2 } ^ { 2 }$ , except for the signs and reordering of $n _ { 1 }$ and $n _ { 2 }$ .
 

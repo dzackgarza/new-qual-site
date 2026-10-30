@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-3. In this problem, consider the group $G$ of matrices $\left( \begin{array} { l l } { a } & { b } \\ { c } & { d } \end{array} \right)$ with integer entries, determinant 1, and such that a and d have the same parity, b and c have the same parity, and c and d have opposite parity.
+In this problem, consider the group $G$ of matrices $\left( \begin{array} { l l } { a } & { b } \\ { c } & { d } \end{array} \right)$ with integer entries, determinant 1, and such that a and d have the same parity, b and c have the same parity, and c and d have opposite parity.
    This group also acts on the upper half-plane by fractional linear transformations.
    To the group $G$ corresponds the fundamental domain $\mathcal { F }$ defined by $\abs{ \tau } \geq 1 , \abs{ \mathrm { R e } ( \tau ) } \leq 1$ , and Im $. ( \tau ) \geq 0$ (see Figure 1). Also, let
 

@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.exercise}
-14. This exercise gives an asymptotic formula for log n!. A more refined asymptotic formula for $\Gamma ( s )$ as $s \to \infty$ (Stirling’s formula) is given in Appendix A.
+This exercise gives an asymptotic formula for log n!. A more refined asymptotic formula for $\Gamma ( s )$ as $s \to \infty$ (Stirling’s formula) is given in Appendix A.
 
 (a) Show that
 

@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-16. Let
+Let
 
 $$
 f (z) = \frac {i - z}{i + z} \quad \mathrm{and} \quad f ^ {- 1} (w) = i \frac {1 - w}{1 + w}.

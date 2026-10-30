@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-7. The Beta function is defined for $\mathrm { R e } ( \alpha ) > 0$ and $\operatorname { R e } ( \beta ) > 0$ by
+The Beta function is defined for $\mathrm { R e } ( \alpha ) > 0$ and $\operatorname { R e } ( \beta ) > 0$ by
 
 $$
 B (\alpha , \beta) = \int_ {0} ^ {1} (1 - t) ^ {\alpha - 1} t ^ {\beta - 1} d t.

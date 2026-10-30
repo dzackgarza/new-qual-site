@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-24. The elliptic integrals K and $K ^ { \prime }$ defined for $0 < k < 1$ by
+The elliptic integrals K and $K ^ { \prime }$ defined for $0 < k < 1$ by
 
 $$
 K (k) = \int_ {0} ^ {1} \frac {d x}{((1 - x ^ {2}) (1 - k ^ {2} x ^ {2})) ^ {1 / 2}} \quad \text {and} \quad K ^ {\prime} (k) = \int_ {1} ^ {1 / k} \frac {d x}{((x ^ {2} - 1) (1 - k ^ {2} x ^ {2})) ^ {1 / 2}}

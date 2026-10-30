@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.exercise}
-9. Show that
+Show that
 
 $$
 \int_ {0} ^ {1} \log (\sin \pi x) d x = - \log 2.

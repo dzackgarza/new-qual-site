@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-8. Suppose $\hat { f }$ has compact support contained in $[ - M , M ]$ and let $\begin{array} { r } { f ( z ) = \sum _ { n = 0 } ^ { \infty } a _ { n } z ^ { n } } \end{array}$ Show that
+Suppose $\hat { f }$ has compact support contained in $[ - M , M ]$ and let $\begin{array} { r } { f ( z ) = \sum _ { n = 0 } ^ { \infty } a _ { n } z ^ { n } } \end{array}$ Show that
 
 $$
 a _ {n} = \frac {(2 \pi i) ^ {n}}{n !} \int_ {- M} ^ {M} \hat {f} (\xi) \xi^ {n} d \xi ,

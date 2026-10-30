@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-7. The family of mappings introduced here plays an important role in complex analysis.
+The family of mappings introduced here plays an important role in complex analysis.
    These mappings, sometimes called Blaschke factors, will reappear in various applications in later chapters.
 
 (a) Let $z , w$ be two complex numbers such that $\overline { { z } } w \ne 1$ . Prove that

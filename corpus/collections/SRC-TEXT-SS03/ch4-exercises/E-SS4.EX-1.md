@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-1. Suppose f is continuous and of moderate decrease, and ${ \hat { f } } ( \xi ) = 0$ for all $\xi \in \RR$ Show that $f = 0$ by completing the following outline:
+Suppose f is continuous and of moderate decrease, and ${ \hat { f } } ( \xi ) = 0$ for all $\xi \in \RR$ Show that $f = 0$ by completing the following outline:
 
 (a) For each fixed real number t consider the two functions
 

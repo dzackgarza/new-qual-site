@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-3. Morera’s theorem states that if f is continuous in $\CC .$ and $\textstyle \int _ { T } f ( z ) d z = 0$ for all triangles T , then f is holomorphic in C. Naturally, we may ask if the conclusion still holds if we replace triangles by other sets.
+Morera’s theorem states that if f is continuous in $\CC .$ and $\textstyle \int _ { T } f ( z ) d z = 0$ for all triangles T , then f is holomorphic in C. Naturally, we may ask if the conclusion still holds if we replace triangles by other sets.
 
 (a) Suppose that f is continuous on $\CC .$ and
 

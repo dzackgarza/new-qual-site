@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-11. One can give a neater formulation of the result in Exercise 10 by proving the following fact.
+One can give a neater formulation of the result in Exercise 10 by proving the following fact.
 
 Suppose $f ( z )$ is an entire function of strict order 2, that is,
 

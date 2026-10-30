@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.exercise}
-2. The following links the multiplication of Dirichlet series with the divisibility properties of their coeficients.
+The following links the multiplication of Dirichlet series with the divisibility properties of their coeficients.
 
 (a) Show that if $\{ a _ { m } \}$ and $\{ b _ { k } \}$ are two bounded sequences of complex numbers, then
 

@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-12. The principle that a function and its Fourier transform cannot both be too small at infinity is illustrated by the following theorem of Hardy.
+The principle that a function and its Fourier transform cannot both be too small at infinity is illustrated by the following theorem of Hardy.
 
 If $f$ is a function on R that satisfies
 

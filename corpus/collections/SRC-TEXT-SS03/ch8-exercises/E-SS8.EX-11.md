@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.exercise}
-11. Show that if $f : D ( 0 , R ) \to \CC$ is holomorphic, with $\abs{ f ( z ) } < M$ for some $M > 0 ,$ then
+Show that if $f : D ( 0 , R ) \to \CC$ is holomorphic, with $\abs{ f ( z ) } < M$ for some $M > 0 ,$ then
 
 $$
 \abs{ \frac {f (z) - f (0)}{M ^ {2} - \overline {{f (0)}} f (z)} } \leq \frac {\abs{ z }}{M R}.

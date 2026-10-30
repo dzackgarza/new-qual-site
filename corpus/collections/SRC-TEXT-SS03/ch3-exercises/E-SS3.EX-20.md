@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-20. This exercise shows how the mean square convergence dominates the uniform convergence of analytic functions.
+This exercise shows how the mean square convergence dominates the uniform convergence of analytic functions.
     If U is an open subset of C we use the notation
 
 $$

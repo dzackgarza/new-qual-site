@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-4. By rearranging the series
+By rearranging the series
 
 $$
 \frac {1}{z ^ {2}} + \sum_ {\omega \in \Lambda^ {*}} \left[ \frac {1}{(z + \omega) ^ {2}} - \frac {1}{\omega^ {2}} \right],

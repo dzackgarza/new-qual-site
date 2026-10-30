@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-2. Consider the Fibonacci numbers $\{ F _ { n } \} _ { n = 0 } ^ { \infty }$ , defined by the two initial values $F _ { 0 } = 0 , F _ { 1 } = 1$ and the recursion relation
+Consider the Fibonacci numbers $\{ F _ { n } \} _ { n = 0 } ^ { \infty }$ , defined by the two initial values $F _ { 0 } = 0 , F _ { 1 } = 1$ and the recursion relation
 
 $$
 F _ {n} = F _ {n - 1} + F _ {n - 2} \quad \mathrm{for} n \geq 2.

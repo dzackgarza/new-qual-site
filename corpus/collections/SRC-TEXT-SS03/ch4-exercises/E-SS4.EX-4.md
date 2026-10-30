@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-4. Suppose $Q$ is a polynomial of degree $\geq 2$ with distinct roots, none lying on the real axis.
+Suppose $Q$ is a polynomial of degree $\geq 2$ with distinct roots, none lying on the real axis.
    Calculate
 
 $$

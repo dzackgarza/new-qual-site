@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-2. Let u be a harmonic function in the unit disc that is continuous on its closure.
+Let u be a harmonic function in the unit disc that is continuous on its closure.
    Deduce Poisson’s integral formula
 
 $$

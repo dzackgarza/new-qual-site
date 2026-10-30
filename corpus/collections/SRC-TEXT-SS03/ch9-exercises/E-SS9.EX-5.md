@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-5. Let $\sigma ( z )$ be the canonical product
+Let $\sigma ( z )$ be the canonical product
 
 $$
 \sigma (z) = z \prod_ {j = 1} ^ {\infty} E _ {2} (z / \tau_ {j}),

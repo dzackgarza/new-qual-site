@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-7. Use the product formula for $\Theta$ to prove:
+Use the product formula for $\Theta$ to prove:
 
 (a) The “triangular number” identity
 

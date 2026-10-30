@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-2. If $f \in \mathfrak { F } _ { a }$ with $a > 0$ , then for any positive integer n one has $f ^ { ( n ) } \in \mathfrak { F } _ { b }$ whenever $0 \leq b < a$
+If $f \in \mathfrak { F } _ { a }$ with $a > 0$ , then for any positive integer n one has $f ^ { ( n ) } \in \mathfrak { F } _ { b }$ whenever $0 \leq b < a$
 
 [Hint: Modify the solution to Exercise 8 in Chapter 2.]
 :::

@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-18. Suppose that $\Omega$ is a simply connected domain that is bounded by a piecewisesmooth closed curve $\gamma$ (in the terminology of Chapter 1). Then any conformal map $F$ of D to Ω extends to a continuous bijection of $\overline{\DD}$ to $\overline{\Omega}$. The proof is simply a generalization of the argument used in Theorem 4.2.
+Suppose that $\Omega$ is a simply connected domain that is bounded by a piecewisesmooth closed curve $\gamma$ (in the terminology of Chapter 1). Then any conformal map $F$ of D to Ω extends to a continuous bijection of $\overline{\DD}$ to $\overline{\Omega}$. The proof is simply a generalization of the argument used in Theorem 4.2.
 :::
 
 ::: {.solution}

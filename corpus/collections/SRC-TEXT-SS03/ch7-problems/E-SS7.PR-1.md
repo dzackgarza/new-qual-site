@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-1. Let $\textstyle F ( s ) = \sum _ { n = 1 } ^ { \infty } a _ { n } / n ^ { s }$ , where $\abs{ a _ { n } } \leq M$ for all n.
+Let $\textstyle F ( s ) = \sum _ { n = 1 } ^ { \infty } a _ { n } / n ^ { s }$ , where $\abs{ a _ { n } } \leq M$ for all n.
 
 (a) Then
 

@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.exercise}
-3. $^\ast$ Using the previous problem one can show that
+$^\ast$ Using the previous problem one can show that
 
 $$
 \pi (x) - \operatorname{Li} (x) = O (x ^ {\alpha + \epsilon}) \quad \mathrm{as} x \to \infty

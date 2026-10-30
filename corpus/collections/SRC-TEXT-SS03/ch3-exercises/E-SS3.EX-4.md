@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-4. Show that
+Show that
 
 $$
 \int_ {- \infty} ^ {\infty} \frac {x \sin x}{x ^ {2} + a ^ {2}} d x = \pi e ^ {- a}, \quad \text { for   all } a > 0.

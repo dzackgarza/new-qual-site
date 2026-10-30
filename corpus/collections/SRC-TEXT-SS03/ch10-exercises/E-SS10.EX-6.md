@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-6. Show as a consequence of Exercise 5 that
+Show as a consequence of Exercise 5 that
 $$
 e^{c_1 n^{1/2}} \leq p(n) \leq e^{c_2 n^{1/2}}
 $$

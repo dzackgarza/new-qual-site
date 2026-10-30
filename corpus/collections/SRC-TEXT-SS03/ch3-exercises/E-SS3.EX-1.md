@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-1. Using Euler’s formula
+Using Euler’s formula
 
 $$
 \sin \pi z = \frac {e ^ {i \pi z} - e ^ {- i \pi z}}{2 i},

@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-13. Suppose $f ( z )$ is holomorphic in a punctured disc $D _ { r } ( z _ { 0 } ) - \{ z _ { 0 } \}$ . Suppose also that
+Suppose $f ( z )$ is holomorphic in a punctured disc $D _ { r } ( z _ { 0 } ) - \{ z _ { 0 } \}$ . Suppose also that
 
 $$
 \abs{ f (z) } \leq A \abs{ z - z _ {0} } ^ {- 1 + \epsilon}

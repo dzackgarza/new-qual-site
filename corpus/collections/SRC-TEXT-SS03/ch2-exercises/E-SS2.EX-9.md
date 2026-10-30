@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-9. Let Ω be a bounded open subset of $\CC ,$ and $\varphi : \Omega \to \Omega$ a holomorphic function.
+Let Ω be a bounded open subset of $\CC ,$ and $\varphi : \Omega \to \Omega$ a holomorphic function.
    Prove that if there exists a point $z _ { 0 } \in \Omega$ such that
 
 $$

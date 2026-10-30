@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-10. Let $F : \halfplane \to \CC$ be a holomorphic function that satisfies
+Let $F : \halfplane \to \CC$ be a holomorphic function that satisfies
 
 $$
 \abs{ F (z) } \leq 1 \quad \text { and } \quad F (i) = 0.

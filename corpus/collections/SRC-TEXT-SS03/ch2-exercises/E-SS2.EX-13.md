@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-13. Suppose $f$ is an analytic function defined everywhere in $\CC$ and such that for each $z _ { 0 } \in \CC$ at least one coeficient in the expansion
+Suppose $f$ is an analytic function defined everywhere in $\CC$ and such that for each $z _ { 0 } \in \CC$ at least one coeficient in the expansion
 
 $$
 f (z) = \sum_ {n = 0} ^ {\infty} c _ {n} (z - z _ {0}) ^ {n}

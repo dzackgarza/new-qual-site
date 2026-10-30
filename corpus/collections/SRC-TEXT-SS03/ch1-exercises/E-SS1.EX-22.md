@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-22. Let $\NN = \{ 1 , 2 , 3 , . . . \}$ denote the set of positive integers.
+Let $\NN = \{ 1 , 2 , 3 , . . . \}$ denote the set of positive integers.
     A subset $S \subset \NN$ is said to be in arithmetic progression if
 
 $$

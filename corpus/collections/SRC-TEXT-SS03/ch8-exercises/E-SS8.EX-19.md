@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-19. Prove that the complex plane slit along the union of the rays $\cup _ { k = 1 } ^ { n } \{ A _ { k } + i y : y \leq 0 \}$ is simply connected.
+Prove that the complex plane slit along the union of the rays $\cup _ { k = 1 } ^ { n } \{ A _ { k } + i y : y \leq 0 \}$ is simply connected.
 
 [Hint: Given a curve, first “raise” it so that it is completely contained in the upper half-plane.]
 :::

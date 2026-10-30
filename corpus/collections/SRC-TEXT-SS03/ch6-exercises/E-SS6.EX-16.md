@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-16. Use the previous exercise to give another proof that $\zeta ( s )$ is continuable in the complex plane with only singularity a simple pole at $s = 1$
+Use the previous exercise to give another proof that $\zeta ( s )$ is continuable in the complex plane with only singularity a simple pole at $s = 1$
 
 [Hint: Write
 

@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-1. Give another proof of Jensen’s formula in the unit disc using the functions (called Blaschke factors)
+Give another proof of Jensen’s formula in the unit disc using the functions (called Blaschke factors)
 
 $$
 \psi_ {\alpha} (z) = \frac {\alpha - z}{1 - \overline {{\alpha}} z}.

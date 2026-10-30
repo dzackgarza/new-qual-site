@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-16. Suppose f and g are holomorphic in a region containing the disc $\abs{ z } \leq 1$ Suppose that f has a simple zero at $z = 0$ and vanishes nowhere else in $\abs{ z } \leq 1$ Let
+Suppose f and g are holomorphic in a region containing the disc $\abs{ z } \leq 1$ Suppose that f has a simple zero at $z = 0$ and vanishes nowhere else in $\abs{ z } \leq 1$ Let
 
 $$
 f _ {\epsilon} (z) = f (z) + \epsilon g (z).

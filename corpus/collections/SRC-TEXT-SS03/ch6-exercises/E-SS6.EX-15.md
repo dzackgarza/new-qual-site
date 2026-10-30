@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-15. Prove that for $\operatorname { R e } ( s ) > 1$ ，
+Prove that for $\operatorname { R e } ( s ) > 1$ ，
 
 $$
 \zeta (s) = \frac {1}{\Gamma (s)} \int_ {0} ^ {\infty} \frac {x ^ {s - 1}}{e ^ {x} - 1} d x.

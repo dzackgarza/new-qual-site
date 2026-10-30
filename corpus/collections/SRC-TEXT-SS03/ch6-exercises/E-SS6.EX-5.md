@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-5. Use the fact that $\Gamma ( s ) \Gamma ( 1 - s ) = \pi /$ sin πs to prove that
+Use the fact that $\Gamma ( s ) \Gamma ( 1 - s ) = \pi /$ sin πs to prove that
 
 $$
 \abs{ \Gamma (1 / 2 + i t) } = \sqrt {\frac {2 \pi}{e ^ {\pi t} + e ^ {- \pi t}}}, \quad \mathrm{whenever} t \in \RR.

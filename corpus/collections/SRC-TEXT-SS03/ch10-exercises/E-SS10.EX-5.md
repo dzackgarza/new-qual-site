@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-5. Let
+Let
 
 $$
 F (x) = \sum_ {n = 0} ^ {\infty} p (n) x ^ {n} = \prod_ {n = 1} ^ {\infty} \frac {1}{1 - x ^ {n}}

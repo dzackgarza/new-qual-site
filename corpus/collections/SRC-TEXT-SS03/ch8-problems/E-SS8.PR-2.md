@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-2. The angle between two non-zero complex numbers z and $w$ (taken in that order) is simply the oriented angle, in $( - \pi , \pi ]$ , that is formed between the two vectors in $\RR ^ { 2 }$ corresponding to the points z and w. This oriented angle, say $\alpha ,$ is uniquely determined by the two quantities
+The angle between two non-zero complex numbers z and $w$ (taken in that order) is simply the oriented angle, in $( - \pi , \pi ]$ , that is formed between the two vectors in $\RR ^ { 2 }$ corresponding to the points z and w. This oriented angle, say $\alpha ,$ is uniquely determined by the two quantities
 
 $$
 \frac {(z , w)}{\abs{ z } \abs{ w }} \quad \mathrm{and} \quad \frac {(z , - i w)}{\abs{ z } \abs{ w }}

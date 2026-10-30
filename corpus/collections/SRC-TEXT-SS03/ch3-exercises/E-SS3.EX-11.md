@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-11. Show that $\mathrm { i f } \ \abs{ a } < 1$ , then
+Show that $\mathrm { i f } \ \abs{ a } < 1$ , then
 
 $$
 \int_ {0} ^ {2 \pi} \log \abs{ 1 - a e ^ {i \theta} } d \theta = 0.

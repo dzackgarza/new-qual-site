@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-14. Deduce from Hadamard’s theorem that if $F$ is entire and of growth order $\rho$ that is non-integral, then F has infinitely many zeros.
+Deduce from Hadamard’s theorem that if $F$ is entire and of growth order $\rho$ that is non-integral, then F has infinitely many zeros.
 :::
 
 ::: {.solution}

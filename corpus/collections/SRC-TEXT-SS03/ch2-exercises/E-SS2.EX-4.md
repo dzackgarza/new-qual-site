@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-4. Prove that for all $\xi \in \CC$ we have $e ^ { - \pi \xi ^ { 2 } } = \int _ { - \infty } ^ { \infty } e ^ { - \pi x ^ { 2 } } e ^ { 2 \pi i x \xi } d x .$
+Prove that for all $\xi \in \CC$ we have $e ^ { - \pi \xi ^ { 2 } } = \int _ { - \infty } ^ { \infty } e ^ { - \pi x ^ { 2 } } e ^ { 2 \pi i x \xi } d x .$
 :::
 
 ::: {.solution}

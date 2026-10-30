@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-2. Evaluate the integral
+Evaluate the integral
 
 $$
 \int_ {- \infty} ^ {\infty} \frac {d x}{1 + x ^ {4}}.

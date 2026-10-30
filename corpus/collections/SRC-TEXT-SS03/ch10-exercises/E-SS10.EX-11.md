@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-11. Recall from Problem 2 in Chapter 2, that
+Recall from Problem 2 in Chapter 2, that
 
 $$
 \sum_ {n = 1} ^ {\infty} d (n) z ^ {n} = \sum_ {n = 1} ^ {\infty} \frac {z ^ {n}}{1 - z ^ {n}}, \quad \abs{ z } <   1

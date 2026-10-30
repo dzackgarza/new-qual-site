@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.exercise}
-2. Find the order of growth of the following entire functions:
+Find the order of growth of the following entire functions:
 
 (a) $p ( z )$ where p is a polynomial.
 

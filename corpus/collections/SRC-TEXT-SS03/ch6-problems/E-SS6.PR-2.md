@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-2. Prove that for $\operatorname{Re}(s) > 0$,
+Prove that for $\operatorname{Re}(s) > 0$,
 $$
 \zeta(s) = \frac{s}{s-1} - s \int_1^\infty \frac{\{x\}}{x^{s+1}}\,dx,
 $$

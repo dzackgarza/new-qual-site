@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-10. An integral of the form
+An integral of the form
 
 $$
 F (z) = \int_ {0} ^ {\infty} f (t) t ^ {z - 1} d t

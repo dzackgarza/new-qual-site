@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-21. Certain sets have geometric properties that guarantee they are simply connected.
+Certain sets have geometric properties that guarantee they are simply connected.
 
 (a) An open set $\Omega \subset \CC$ is convex if for any two points in Ω, the straight line segment between them is contained in Ω. Prove that a convex open set is simply connected.
 

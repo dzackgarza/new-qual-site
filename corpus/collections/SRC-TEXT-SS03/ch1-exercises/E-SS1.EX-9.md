@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-9. Show that in polar coordinates, the Cauchy-Riemann equations take the form
+Show that in polar coordinates, the Cauchy-Riemann equations take the form
 
 $$
 {\frac {\partial u}{\partial r}} = {\frac {1}{r}} {\frac {\partial v}{\partial \theta}} \quad {\mathrm{and}} \quad {\frac {1}{r}} {\frac {\partial u}{\partial \theta}} = - {\frac {\partial v}{\partial r}}.

@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-17. Let $f$ be non-constant and holomorphic in an open set containing the closed unit disc.
+Let $f$ be non-constant and holomorphic in an open set containing the closed unit disc.
 
 (a) Show that if $\abs{f(z)} = 1$ whenever $\abs{z} = 1$, then the image of $f$ contains the unit disc.
 [Hint: One must show that $f(z) = w_0$ has a root for every $w_0 \in \DD$. To do this, it suffices to show that $f(z) = 0$ has a root (why?). Use the maximum modulus principle to conclude.]

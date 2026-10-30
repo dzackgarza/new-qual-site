@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-26. Suppose f is continuous in a region Ω. Prove that any two primitives of f (if they exist) difer by a constant.
+Suppose f is continuous in a region Ω. Prove that any two primitives of f (if they exist) difer by a constant.
 :::
 
 ::: {.solution}

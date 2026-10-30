@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-5. Show that if $\alpha > 1$ , then
+Show that if $\alpha > 1$ , then
 
 $$
 F _ {\alpha} (z) = \int_ {- \infty} ^ {\infty} e ^ {- \abs{ t } ^ {\alpha}} e ^ {2 \pi i z t} d t

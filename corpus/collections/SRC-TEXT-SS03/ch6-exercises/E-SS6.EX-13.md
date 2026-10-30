@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-13. Prove that
+Prove that
 
 $$
 \frac {d ^ {2} \log \Gamma (s)}{d s ^ {2}} = \sum_ {n = 0} ^ {\infty} \frac {1}{(s + n) ^ {2}}

@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-12. A complex number $w \in \DD$ is a fixed point for the map $f : \DD \to \DD { \mathrm { i f ~ } } f ( w ) = w$
+A complex number $w \in \DD$ is a fixed point for the map $f : \DD \to \DD { \mathrm { i f ~ } } f ( w ) = w$
 
 (a) Prove that if $f : \DD \to \DD$ is analytic and has two distinct fixed points, then f is the identity, that is, $f ( z ) = z { \mathrm { ~ f o r } }$ all $z \in \DD$
 

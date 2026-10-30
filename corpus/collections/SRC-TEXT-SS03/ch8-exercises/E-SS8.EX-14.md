@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-14. Prove that all conformal mappings from the upper half-plane H to the unit disc D take the form
+Prove that all conformal mappings from the upper half-plane H to the unit disc D take the form
 
 $$
 e ^ {i \theta} \frac {z - \beta}{z - \overline {{\beta}}}, \qquad \theta \in \RR \text {   and   } \beta \in \halfplane.

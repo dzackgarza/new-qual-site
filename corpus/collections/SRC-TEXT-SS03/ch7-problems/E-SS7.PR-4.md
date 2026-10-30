@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.exercise}
-4. $^\ast$ One can combine ideas from the prime number theorem with the proof of Dirichlet’s theorem about primes in arithmetic progression (given in Book I) to prove the following.
+$^\ast$ One can combine ideas from the prime number theorem with the proof of Dirichlet’s theorem about primes in arithmetic progression (given in Book I) to prove the following.
    Let $q$ and $\ell$ be relatively prime integers.
    We consider the primes belonging to the arithmetic progression $\{ q k + \ell \} _ { k = 1 } ^ { \infty }$ , and let $\pi _ { q , \ell } ( x )$ denote the number of such primes $\leq x$ . Then one has
 

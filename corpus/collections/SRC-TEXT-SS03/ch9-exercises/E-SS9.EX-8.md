@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-8. Let
+Let
 
 $$
 E _ {4} (\tau) = \sum_ {(n, m) \neq (0, 0)} \frac {1}{(n + m \tau) ^ {4}}

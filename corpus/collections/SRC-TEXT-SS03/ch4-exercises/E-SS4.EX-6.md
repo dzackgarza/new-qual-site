@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-6. Prove that
+Prove that
 
 $$
 \frac {1}{\pi} \sum_ {n = - \infty} ^ {\infty} \frac {a}{a ^ {2} + n ^ {2}} = \sum_ {n = - \infty} ^ {\infty} e ^ {- 2 \pi a \abs{ n }}

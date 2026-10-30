@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-8. Suppose U and $V$ are open sets in the complex plane.
+Suppose U and $V$ are open sets in the complex plane.
    Prove that if $f : U \to V$ and $g : V \to \CC$ are two functions that are diferentiable (in the real sense, that is, as functions of the two real variables x and $y )$ , and $h = g \circ f$ , then
 
 $$

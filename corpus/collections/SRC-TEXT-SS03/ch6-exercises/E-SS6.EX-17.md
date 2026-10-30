@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-17. Let f be an indefinitely diferentiable function on R that has compact support, or more generally, let $f$ belong to the Schwartz space. Consider
+Let f be an indefinitely diferentiable function on R that has compact support, or more generally, let $f$ belong to the Schwartz space. Consider
 
 $$
 I (s) = \frac {1}{\Gamma (s)} \int_ {0} ^ {\infty} f (x) x ^ {- 1 + s} d x.

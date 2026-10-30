@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-17. Show that if $\{ a _ { n } \} _ { n = 0 } ^ { \infty }$ is a sequence of non-zero complex numbers such that
+Show that if $\{ a _ { n } \} _ { n = 0 } ^ { \infty }$ is a sequence of non-zero complex numbers such that
 
 $$
 \lim _ {n \to \infty} \frac {\abs{ a _ {n + 1} }}{\abs{ a _ {n} }} = L,

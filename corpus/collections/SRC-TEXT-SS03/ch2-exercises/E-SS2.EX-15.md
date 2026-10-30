@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-15. Suppose $f$ is a non-vanishing continuous function on $\overline{\DD}$ that is holomorphic in $\DD$.
+Suppose $f$ is a non-vanishing continuous function on $\overline{\DD}$ that is holomorphic in $\DD$.
     Prove that if
 
 $$

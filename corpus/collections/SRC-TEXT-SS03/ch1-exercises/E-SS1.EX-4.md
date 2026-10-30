@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-4. Show that it is impossible to define a total ordering on C. In other words, one cannot find a relation between complex numbers so that:
+Show that it is impossible to define a total ordering on C. In other words, one cannot find a relation between complex numbers so that:
 
 (i) For any two complex numbers z, w, one and only one of the following is true: $z \succ w , w \succ z \ \mathrm { o r } \ z = w .$
 

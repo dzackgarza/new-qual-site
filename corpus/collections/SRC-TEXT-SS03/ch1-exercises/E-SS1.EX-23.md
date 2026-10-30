@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-23. Consider the function $f$ defined on R by
+Consider the function $f$ defined on R by
 
 $$
 f (x) = \left\{ \begin{array}{c l} 0 & \text {if} x \leq 0, \\ e ^ {- 1 / x ^ {2}} & \text {if} x > 0. \end{array} \right.

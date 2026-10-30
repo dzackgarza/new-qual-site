@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-5. More generally, let $R ( x ) = P ( x ) / Q ( x )$ be a rational function with (degree $Q ) \geq$ (degreeP )+2 and $Q ( x ) \neq 0$ on the real axis.
+More generally, let $R ( x ) = P ( x ) / Q ( x )$ be a rational function with (degree $Q ) \geq$ (degreeP )+2 and $Q ( x ) \neq 0$ on the real axis.
 
 (a) Prove that if $\alpha _ { 1 } , \ldots , \alpha _ { k }$ are the roots of R in the upper half-plane, then there exists polynomials $P _ { j } ( \boldsymbol { \xi } )$ of degree less than the multiplicity of $\alpha _ { j }$ so that
 

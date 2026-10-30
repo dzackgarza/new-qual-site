@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-20. Other examples of elliptic integrals providing conformal maps from the upper half-plane to rectangles are given below.
+Other examples of elliptic integrals providing conformal maps from the upper half-plane to rectangles are given below.
 
 (a) The function
 

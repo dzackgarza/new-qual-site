@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-1. This problem provides further estimates for $\zeta$ and $\zeta'$ near $\operatorname{Re}(s) = 1$.
+This problem provides further estimates for $\zeta$ and $\zeta'$ near $\operatorname{Re}(s) = 1$.
 
 (a) Use Proposition 2.5 and its corollary to prove
 $$

@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-2. Let $\operatorname { S L _ { 2 } } ( \ZZ )$ denote the set of $2 \times 2$ matrices with integer entries and determinant 1, that is,
+Let $\operatorname { S L _ { 2 } } ( \ZZ )$ denote the set of $2 \times 2$ matrices with integer entries and determinant 1, that is,
 
 $$
 \operatorname{SL} _ {2} (\ZZ) = \left\{g = \left( \begin{array}{c c} a & b \\ c & d \end{array} \right): a, b, c, d \in \ZZ \text { and } a d - b c = 1 \right\}.

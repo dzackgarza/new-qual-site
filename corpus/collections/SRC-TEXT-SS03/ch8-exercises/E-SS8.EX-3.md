@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-3. Suppose $U$ and V are conformally equivalent.
+Suppose $U$ and V are conformally equivalent.
    Prove that if U is simply connected, then so is V . Note that this conclusion remains valid if we merely assume that there exists a continuous bijection between U and $V .$
 :::
 

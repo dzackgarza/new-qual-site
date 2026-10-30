@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-19. Prove the maximum principle for harmonic functions, that is:
+Prove the maximum principle for harmonic functions, that is:
 
 (a) If u is a non-constant real-valued harmonic function in a region $\Omega ,$ , then u cannot attain a maximum (or a minimum) in Ω.
 

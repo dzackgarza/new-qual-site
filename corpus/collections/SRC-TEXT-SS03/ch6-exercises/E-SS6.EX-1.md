@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-1. Prove that
+Prove that
 
 $$
 \Gamma (s) = \lim _ {n \to \infty} \frac {n ^ {s} n !}{s (s + 1) \cdots (s + n)}

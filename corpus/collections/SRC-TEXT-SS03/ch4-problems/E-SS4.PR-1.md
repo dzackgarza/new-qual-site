@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.exercise}
-1. Suppose ${ \hat { f } } ( \xi ) = O ( e ^ { - a \abs{ \xi } ^ { p } } )$ as $\abs{ \xi } \to \infty$ , for some $p > 1$ . Then f is holomorphic for all z and satisfies the growth condition
+Suppose ${ \hat { f } } ( \xi ) = O ( e ^ { - a \abs{ \xi } ^ { p } } )$ as $\abs{ \xi } \to \infty$ , for some $p > 1$ . Then f is holomorphic for all z and satisfies the growth condition
 
 $$
 \abs{ f (z) } \leq A e ^ {C \abs{ z } ^ {q}}

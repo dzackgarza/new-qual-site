@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-12. Let u be a real-valued function defined on the unit disc D. Suppose that $u$ is twice continuously diferentiable and harmonic, that is,
+Let u be a real-valued function defined on the unit disc D. Suppose that $u$ is twice continuously diferentiable and harmonic, that is,
 
 $$
 \triangle u (x, y) = 0

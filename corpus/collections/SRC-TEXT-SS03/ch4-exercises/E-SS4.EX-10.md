@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-10. This exercise generalizes some of the properties of $e ^ { - \pi x ^ { 2 } }$ related to the fact that it is its own Fourier transform.
+This exercise generalizes some of the properties of $e ^ { - \pi x ^ { 2 } }$ related to the fact that it is its own Fourier transform.
 
 Suppose $f ( z )$ is an entire function that satisfies
 

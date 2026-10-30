@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-15. Use the Cauchy inequalities or the maximum modulus principle to solve the following problems:
+Use the Cauchy inequalities or the maximum modulus principle to solve the following problems:
 
 (a) Prove that if f is an entire function that satisfies
 

@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-4. Does there exist a holomorphic surjection from the unit disc to $\CC ?$
+Does there exist a holomorphic surjection from the unit disc to $\CC ?$
 
 [Hint: Move the upper half-plane “down” and then square it to get C.]
 :::

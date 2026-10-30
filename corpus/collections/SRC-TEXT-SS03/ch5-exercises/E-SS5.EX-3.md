@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-3. Show that if $\tau$ is fixed with Im $( \tau ) > 0$ , then the Jacobi theta function
+Show that if $\tau$ is fixed with Im $( \tau ) > 0$ , then the Jacobi theta function
 
 $$
 \Theta (z \thetaseparator \tau) = \sum_ {n = - \infty} ^ {\infty} e ^ {\pi i n ^ {2} \tau} e ^ {2 \pi i n z}

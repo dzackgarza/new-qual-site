@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-4. Prove that if we take
+Prove that if we take
 
 $$
 f (z) = \frac {1}{(1 - z) ^ {\alpha}}, \quad \mathrm{for} \abs{ z } <   1

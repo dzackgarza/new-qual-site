@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-12. Suppose u is not an integer.
+Suppose u is not an integer.
     Prove that
 
 $$

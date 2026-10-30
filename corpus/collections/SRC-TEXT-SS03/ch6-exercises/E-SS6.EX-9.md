@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-9. The hypergeometric series $F ( \alpha , \beta , \gamma ; z )$ was defined in Exercise 16 of Chapter 1. Show that
+The hypergeometric series $F ( \alpha , \beta , \gamma ; z )$ was defined in Exercise 16 of Chapter 1. Show that
 
 $$
 F (\alpha , \beta , \gamma ; z) = \frac {\Gamma (\gamma)}{\Gamma (\beta) \Gamma (\gamma - \beta)} \int_ {0} ^ {1} t ^ {\beta - 1} (1 - t) ^ {\gamma - \beta - 1} (1 - z t) ^ {- \alpha} d t.

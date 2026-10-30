@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-17. If $\psi _ { \alpha } ( z ) = ( \alpha - z ) / ( 1 - \overline { { \alpha } } z )$ for $\abs{ \alpha } < 1$ , prove that
+If $\psi _ { \alpha } ( z ) = ( \alpha - z ) / ( 1 - \overline { { \alpha } } z )$ for $\abs{ \alpha } < 1$ , prove that
 
 $$
 \frac {1}{\pi} \iint_ {\DD} \abs{ \psi_ {\alpha} ^ {\prime} } ^ {2} d x d y = 1 \quad \mathrm{and} \quad \frac {1}{\pi} \iint_ {\DD} \abs{ \psi_ {\alpha} ^ {\prime} } d x d y = \frac {1 - \abs{ \alpha } ^ {2}}{\abs{ \alpha } ^ {2}} \log \frac {1}{1 - \abs{ \alpha } ^ {2}},

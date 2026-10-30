@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.exercise}
-3. In line with the previous exercise, we consider the Dirichlet series for $1 / \zeta$
+In line with the previous exercise, we consider the Dirichlet series for $1 / \zeta$
 
 (a) Prove that for $\operatorname { R e } ( s ) > 1$
 

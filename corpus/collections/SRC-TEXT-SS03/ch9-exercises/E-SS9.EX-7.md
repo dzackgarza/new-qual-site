@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-7. Setting $\tau = 1 / 2$ in the expression
+Setting $\tau = 1 / 2$ in the expression
 
 $$
 \sum_ {m = - \infty} ^ {\infty} \frac {1}{(m + \tau) ^ {2}} = \frac {\pi^ {2}}{\sin^ {2} (\pi \tau)},

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-10. Find the Hadamard products for:
+Find the Hadamard products for:
 
 (a) $e ^ { z } - 1$
 

@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-21. We consider conformal mappings to triangles.
+We consider conformal mappings to triangles.
 
 (a) Show that
 

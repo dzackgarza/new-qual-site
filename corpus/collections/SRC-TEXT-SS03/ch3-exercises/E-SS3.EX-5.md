@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-5. Use contour integration to show that
+Use contour integration to show that
 
 $$
 \int_ {- \infty} ^ {\infty} \frac {e ^ {- 2 \pi i x \xi}}{(1 + x ^ {2}) ^ {2}} d x = \frac {\pi}{2} (1 + 2 \pi \abs{ \xi }) e ^ {- 2 \pi \abs{ \xi }}

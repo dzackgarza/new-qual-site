@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-8. Prove that for every z the product below converges, and
+Prove that for every z the product below converges, and
 
 $$
 \cos (z / 2) \cos (z / 4) \cos (z / 8) \dots = \prod_ {k = 1} ^ {\infty} \cos (z / 2 ^ {k}) = \frac {\sin z}{z}.

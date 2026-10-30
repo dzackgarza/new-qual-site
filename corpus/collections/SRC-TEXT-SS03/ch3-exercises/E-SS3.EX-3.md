@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-3. Show that
+Show that
 
 $$
 \int_ {- \infty} ^ {\infty} \frac {\cos x}{x ^ {2} + a ^ {2}} d x = \pi \frac {e ^ {- a}}{a}, \quad \mathrm{for} a > 0.

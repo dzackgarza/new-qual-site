@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-9. Prove that the function u defined by
+Prove that the function u defined by
 
 $$
 u (x, y) = \operatorname{Re} \left(\frac {i + z}{i - z}\right) \quad \text { and } \quad u (0, 1) = 0

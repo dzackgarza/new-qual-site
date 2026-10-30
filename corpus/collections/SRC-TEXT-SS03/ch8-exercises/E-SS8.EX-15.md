@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-15. Here are two properties enjoyed by automorphisms of the upper half-plane.
+Here are two properties enjoyed by automorphisms of the upper half-plane.
 
 (a) Suppose $\Phi$ is an automorphism of H that fixes three distinct points on the real axis.
 Then Φ is the identity.
