@@ -94,3 +94,7 @@ so one would need $-3=-2d$, impossible for an integer $d$.
 
 :::
 
+
+::: {.remark title="Variations"}
+The Fall 2012 exam asks to show that $X_4$ cannot cover $X_3$ but that $X_5$ can.
+:::

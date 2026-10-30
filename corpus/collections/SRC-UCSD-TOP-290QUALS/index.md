@@ -55,7 +55,7 @@ source:
     - P-UCTOP-SU07-5
     - P-UCTOP-SU07-6
     - P-UCTOP-SU07-7
-    - P-UCTOP-SU07-8
+    - P-TOPF09G
   - name: Fall 2007 (section 7; printed p. 398)
     problems:
     - SRC-UCSD-TOP-FALL-2007
@@ -66,7 +66,7 @@ source:
     - P-UCTOP-SU09-3
     - P-UCTOP-SU09-4
     - P-UCTOP-SU09-5
-    - P-TOPF09E
+    - P-UCTOP-SU01-6
     - P-UCTOP-SU09-7
     - P-UCTOP-SU09-8
   - name: Fall 2009 (section 9; printed p. 400)
@@ -75,7 +75,7 @@ source:
     - P-TOPF09B
     - P-TOPF09C
     - P-TOPF09D
-    - P-TOPF09E
+    - P-UCTOP-SU01-6
     - P-TOPF09F
     - P-TOPF09G
     - P-TOPF09H
@@ -114,20 +114,20 @@ source:
     - P-UCTOP-SU12-8
   - name: Fall 2012 (section 14; printed p. 405)
     problems:
-    - P-UCTOP-FA12-1
+    - P-UCTOP-SU07-2
     - P-UCTOP-FA12-2
     - P-UCTOP-FA12-3
-    - P-UCTOP-FA12-4
-    - P-UCTOP-FA12-5
-    - P-UCTOP-FA12-6
-    - P-UCTOP-FA12-7
+    - P-LAFJW
+    - P-UCTOP-SU09-5
+    - P-UCTOP-SU12-7
+    - P-TOPF04E
     - P-UCTOP-FA12-8
   - name: Summer 2014 (section 15; printed p. 406)
     problems:
     - P-UCTOP-SU14-1
     - P-UCTOP-SU14-2
     - P-UCTOP-SU14-3
-    - P-UCTOP-SU14-4
+    - P-UCTOP-SU12-7
     - P-UCTOP-SU14-5
     - P-UCTOP-SU14-6
     - P-UCTOP-SU14-7

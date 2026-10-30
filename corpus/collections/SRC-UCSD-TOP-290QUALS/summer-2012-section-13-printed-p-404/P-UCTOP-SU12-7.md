@@ -111,3 +111,7 @@ Combine steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+Other exams ask parts of this result: that $H_1(M;\ZZ)=H_3(M;\ZZ)=0$ and $H_2(M;\ZZ)$ is free abelian; that $H_2(M)$ is torsion-free; or, with $\chi(M)=k$, for all of $H_0,\ldots,H_4$, which are $\ZZ, 0, \ZZ^{k-2}, 0, \ZZ$.
+:::

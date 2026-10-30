@@ -23,7 +23,7 @@ source:
   - P-TOPF06D
   - P-TOPF06E
   - P-TOPF06F
-  - P-TOPF06G
+  - P-UCTOP-SU12-7
   - P-TOPF06H
   date:
     kind: academic-term
