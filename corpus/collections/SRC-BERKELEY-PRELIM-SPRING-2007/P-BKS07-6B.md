@@ -31,7 +31,7 @@ Let $M=\sup_{y\in K}\norm{f(y)}$. Then $M<\infty$ and $\norm{\varphi(t_2)-\varph
 
 $f$ is continuous on the compact set $K$, so $M<\infty$. Since $\varphi$ takes values in $K$,
 $$
-\norm{\varphi(t_2)-\varphi(t_1)}=\Bigl\|\int_{t_1}^{t_2}f(\varphi(s))\,ds\Bigr\|\le M\abs{t_2-t_1}.
+\norm{\varphi(t_2)-\varphi(t_1)}=\norm{\int_{t_1}^{t_2}f(\varphi(s))\,ds}\le M\abs{t_2-t_1}.
 $$
 
 :::
