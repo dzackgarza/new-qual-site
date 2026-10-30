@@ -52,3 +52,7 @@ $$
 \qquad z\in\halfplane.
 $$
 :::
+
+::: {.remark title="Variations"}
+For such $F$, the main inequality at $z=2i$ gives $\abs{F(2i)}\le\abs{\frac{2i-i}{2i+i}}=\frac13$.
+:::

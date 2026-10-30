@@ -75,7 +75,6 @@ source:
   - id: E-GFNDF
   - id: E-GMGFS
   - id: E-GPCW2
-  - id: E-GPFKM
   - id: E-GQMTN
   - id: E-GRXN4
   - id: E-H3AV4
