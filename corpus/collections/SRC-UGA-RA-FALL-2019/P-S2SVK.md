@@ -27,6 +27,7 @@ Prove that for all $x \ne 0$ and all positive integers $n \ge 1$:
 $$
 \abs{ \frac{d^{n}}{d x^{n}} \left(\frac{\sin x}{x}\right) } \le \frac{1}{n}.
 $$
+Hint: consider $\int_0^1\cos(tx)\,dt$.
 :::
 
 ::: {.solution}
