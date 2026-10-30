@@ -5,7 +5,8 @@ kind: problem
 title: A $20\times20$ zero-diagonal $\pm1$ matrix is nonsingular
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

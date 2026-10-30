@@ -5,7 +5,8 @@ kind: problem
 title: A proper $C^1$ plane map with finitely many critical points is surjective
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Separate continuity plus compact-image preservation implies continuity on $\RR^2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

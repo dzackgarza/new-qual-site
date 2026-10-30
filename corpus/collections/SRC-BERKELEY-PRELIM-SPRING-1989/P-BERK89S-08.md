@@ -5,7 +5,8 @@ kind: problem
 title: A holomorphic disk self-map with two interior fixed points is the identity
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

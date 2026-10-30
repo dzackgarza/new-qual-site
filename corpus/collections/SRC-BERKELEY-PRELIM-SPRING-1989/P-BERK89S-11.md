@@ -5,7 +5,8 @@ kind: problem
 title: Uniqueness of inner inverses forces a ring to be a division ring
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

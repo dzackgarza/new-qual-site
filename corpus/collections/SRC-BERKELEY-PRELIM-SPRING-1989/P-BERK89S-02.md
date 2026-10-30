@@ -5,7 +5,8 @@ kind: problem
 title: A nilpotent $n\times n$ matrix satisfies $A^n=0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

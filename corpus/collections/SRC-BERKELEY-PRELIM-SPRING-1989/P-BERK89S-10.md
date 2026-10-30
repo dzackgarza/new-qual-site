@@ -5,7 +5,8 @@ kind: problem
 title: Invertibility of a $2\times2$ block matrix with commuting blocks
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

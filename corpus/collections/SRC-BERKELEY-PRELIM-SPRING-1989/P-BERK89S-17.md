@@ -5,7 +5,8 @@ kind: problem
 title: An element satisfying $a^3=a+1$ forbids ideals of index below five
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -25,17 +26,18 @@ audit:
 ---
 
 ::: {.problem}
-1. Let $R$ be a commutative ring with identity containing an element $a$ such that
-   $$
-   a^3=a+1.
-   $$
-   Let $I$ be an ideal of $R$ of index less than $5$. Prove that
-   $$
-   I=R.
-   $$
-2. Show that there exists a commutative ring with identity containing an element $a$ satisfying $a^3=a+1$ and containing an ideal of index $5$.
+(a) Let $R$ be a commutative ring with identity containing an element $a$ such that
+$$
+a^3=a+1.
+$$
+Let $I$ be an ideal of $R$ of index less than $5$. Prove that
+$$
+I=R.
+$$
 
-Here the index of $I$ means the order of the additive quotient $R/I$.
+(b) Show that there exists a commutative ring with identity containing an element $a$ satisfying $a^3=a+1$ and containing an ideal of index $5$.
+
+Note: the term index is used here exactly as in group theory; namely the index of $I$ in $R$ means the order of $R/I$.
 :::
 
 ::: {.solution}
@@ -110,13 +112,13 @@ so $a=2$ satisfies the required relation. The zero ideal has additive index
 $$
 [\FF_5:(0)]=\abs{\FF_5}=5.
 $$
-Thus this ring and ideal satisfy part (2).
+Thus this ring and ideal satisfy part (b).
 :::
 
 :::
 
 ::: pf-qed
-Step [](#ideal-equals-r){.pf-ref} proves part (1), and step [](#example-boxed){.pf-ref} proves part (2).
+Step [](#ideal-equals-r){.pf-ref} proves part (a), and step [](#example-boxed){.pf-ref} proves part (b).
 :::
 
 :::

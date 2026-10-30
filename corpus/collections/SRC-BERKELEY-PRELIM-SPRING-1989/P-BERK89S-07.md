@@ -5,7 +5,8 @@ kind: problem
 title: The matrix ODE $X'=AXB$ for two nilpotent shift matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

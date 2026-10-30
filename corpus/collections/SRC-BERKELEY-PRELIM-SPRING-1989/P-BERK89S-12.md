@@ -5,7 +5,8 @@ kind: problem
 title: The contour integral $\int_{\abs{z}=2}(2z-1)e^{z/(z-1)}\,dz$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

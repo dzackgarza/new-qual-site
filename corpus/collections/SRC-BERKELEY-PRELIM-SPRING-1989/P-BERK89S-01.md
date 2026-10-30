@@ -5,7 +5,8 @@ kind: problem
 title: Unbounded weights preserving convergence of a positive series
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Commutators span an $(n^2-1)$-dimensional subspace of $M_n(\RR)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: $z+\lambda-e^z$ has exactly one zero in the left half-plane
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

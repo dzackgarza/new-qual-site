@@ -5,7 +5,8 @@ kind: problem
 title: Elements of odd order form a normal index-two subgroup when the group has twice odd order
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
@@ -31,12 +32,13 @@ $$
 $$
 be the left-translation permutation of $G$.
 
-1. Prove that $\lambda_g$ is even if and only if the order of $g$ is odd.
-2. Let
-   $$
-   N=\{g\in G:\operatorname{ord}(g)\text{ is odd}\}.
-   $$
-   Prove that $N$ is a normal subgroup of index $2$.
+(a) Prove that $\lambda_g$ is even if and only if the order of $g$ is odd.
+
+(b) Let
+$$
+N=\{g\in G:\operatorname{ord}(g)\text{ is odd}\}.
+$$
+Prove that $N$ is a normal subgroup of index $2$.
 :::
 
 ::: {.solution}
@@ -140,7 +142,7 @@ $$
 :::
 
 ::: pf-qed
-Step [](#even-iff-odd-order){.pf-ref} proves part (1), and step [](#n-normal-index-two){.pf-ref} proves part (2).
+Step [](#even-iff-odd-order){.pf-ref} proves part (a), and step [](#n-normal-index-two){.pf-ref} proves part (b).
 :::
 
 :::

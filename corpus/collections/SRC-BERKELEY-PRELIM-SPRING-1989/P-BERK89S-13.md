@@ -5,7 +5,8 @@ kind: problem
 title: Center of the dihedral group $D_n$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: A group is not a finite union of cosets of two infinite-index subgroups
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

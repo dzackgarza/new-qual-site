@@ -5,7 +5,8 @@ kind: problem
 title: If $f\circ g$ tends to infinity, both entire functions are polynomials
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

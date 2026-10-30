@@ -5,7 +5,8 @@ kind: problem
 title: The maximum over a compact parameter of a continuous function is continuous
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:
