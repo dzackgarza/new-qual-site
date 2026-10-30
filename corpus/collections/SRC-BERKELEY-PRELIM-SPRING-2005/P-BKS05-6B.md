@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Evaluate the integral $\int _ { 0 } ^ { \infty } { \frac { x \sin x } { x ^ { 2 } + a ^ { 2 } } } d x$ , where $a > 0$
+Evaluate the integral $\displaystyle \int_{0}^{\infty} \frac{x \sin x}{x^{2} + a^{2}}\, dx$, where $a > 0$.
 :::
 
 ::: {.solution}

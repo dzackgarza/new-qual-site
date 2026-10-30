@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $M _ { n } ( F )$ be the ring of $n \times n$ matrices over a field F . Prove that for every $A \in M _ { n } ( F )$ there exists $X \in M _ { n } ( F )$ such that $A X A = A$
+Let $M_{n}(F)$ be the ring of $n \times n$ matrices over a field $F$. Prove that for every $A \in M_{n}(F)$ there exists $X \in M_{n}(F)$ such that $AXA = A$.
 :::
 
 ::: {.solution}

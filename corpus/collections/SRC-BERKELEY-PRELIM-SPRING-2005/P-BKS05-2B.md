@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that, for any $\varepsilon > 0$ , the function $\begin{array} { r } { f ( z ) = \sin { z } + \frac { 1 } { z + i } } \end{array}$ has infinitely many zeros in the strip $\abs{ \operatorname { I m } z } < \varepsilon$
+Prove that, for any $\varepsilon > 0$, the function $f(z) = \sin z + \frac{1}{z + i}$ has infinitely many zeros in the strip $\abs{\Im z} < \varepsilon$.
 :::
 
 ::: {.solution}

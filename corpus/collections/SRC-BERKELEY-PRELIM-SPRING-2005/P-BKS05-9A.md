@@ -27,12 +27,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $f \colon  { \RR } ^ { 2 } \to  { \RR }$ be an infinitely differentiable function that is zero outside some bounded subset of $\RR ^ { 2 }$ . Prove that
-
+Let $f \colon \RR^{2} \to \RR$ be an infinitely differentiable function that is zero outside some bounded subset of $\RR^{2}$. Prove that
 $$
-\operatorname * { l i m } _ { \epsilon \to 0 } \int \int _ { x ^ { 2 } + y ^ { 2 } \geq \epsilon ^ { 2 } } { \frac { f ( x , y ) } { ( x + i y ) ^ { 3 } } } d x d y
+\lim_{\epsilon \to 0} \iint_{x^{2} + y^{2} \geq \epsilon^{2}} \frac{f(x, y)}{(x + iy)^{3}}\, dx\, dy
 $$
-
 exists.
 :::
 

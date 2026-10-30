@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let I be an open interval and let $f \colon I \to \RR$ have continuous k-th derivatives everywhere on I for all $k \leq n - 1$ . Let $a \in I$ be such that $f ^ { ( k ) } ( a ) = 0$ for $1 \leq k \leq n - 1$ , and assume that $f ^ { ( n ) } ( a )$ is defined and $f ^ { ( n ) } ( a ) > 0$ . Prove that if n is even, then f has a local minimum at a, and if n is odd, then f has no local extremum at a.
+Let $I$ be an open interval and let $f \colon I \to \RR$ have continuous $k$-th derivatives everywhere on $I$ for all $k \leq n - 1$. Let $a \in I$ be such that $f^{(k)}(a) = 0$ for $1 \leq k \leq n - 1$, and assume that $f^{(n)}(a)$ is defined and $f^{(n)}(a) > 0$. Prove that if $n$ is even, then $f$ has a local minimum at $a$, and if $n$ is odd, then $f$ has no local extremum at $a$.
 :::
 
 ::: {.solution}
