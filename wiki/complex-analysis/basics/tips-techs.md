@@ -5,8 +5,6 @@ title: Techniques
 
 # Techniques
 
-Much of the notation and many of the results on this page follow [@Eur15].
-
 ## Notation
 
 - $\DD_r(a) \coloneqq \theset{z\in \CC \st \abs{z-a}< r}$, the open disc of radius $r$ about $a$.
