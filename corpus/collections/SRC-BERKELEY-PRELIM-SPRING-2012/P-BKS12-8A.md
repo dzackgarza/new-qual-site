@@ -6,7 +6,8 @@ title: Eigenvalues are roots of annihilating polynomials
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
