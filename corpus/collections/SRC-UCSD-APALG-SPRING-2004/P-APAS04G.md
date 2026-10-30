@@ -12,6 +12,12 @@ classification:
   - Group Theory
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The exam prints a^2=b^2=1, which contradicts order 8 and the class C_3={b,b^3}; the
+    statement keeps a^2=b^2, the quaternion presentation.
 ---
 
 ::: {.problem}

@@ -16,13 +16,19 @@ audit:
 - event: source-checked
   by: OpenAI
   date: 2026-09-10
-  note: The official UCSD source prints A^(1,4) and S_6 in part (b); these are corrected to the partition (4,1) and subgroup of S_5.
+  note: The official UCSD source prints A^(1,4) and S_6 in part (b); these are corrected to
+    the partition (4,1) and subgroup of S_5.
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-10
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Part (b) now names A^(4,1), the same representation as part (a); the exam writes partitions
+    in increasing order and prints A^(1,4) in both parts.
 ---
 
 ::: {.problem}
@@ -30,7 +36,7 @@ If $\lambda=(\lambda_1\ge\lambda_2\ge\dots\ge\lambda_k)$ is a partition of $n$, 
 
 (a) Use the Murnaghnam-Nakayama rule to compute the values of the character $A^{(4,1)}$ on the conjugacy classes of $S_5$.
 
-(b) Express $\chi^{A^{(1,4)}\downarrow^{S_5}_{S_3\times S_2}}$ as a sum of irreducible characters of $S_3\times S_2$.
+(b) Express $\chi^{A^{(4,1)}\downarrow^{S_5}_{S_3\times S_2}}$ as a sum of irreducible characters of $S_3\times S_2$.
 Here $S_3\times S_2$ is the Young subgroup of $S_5$ consisting of all permutations $\sigma\in S_5$ such that
 $$
 \sigma(1),\sigma(2),\sigma(3)\in\{1,2,3\},\qquad \sigma(4),\sigma(5)\in\{4,5\}.

@@ -15,6 +15,11 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: 'Solution parts (b) and (c) corrected: the old decompositions had dimensions 60 and
+    45 instead of 45 and 80.'
 ---
 
 ::: {.problem}
@@ -74,10 +79,14 @@ $(2,4)$ and $(4,2)$ are the same partition (written in nonincreasing order), and
 
 ::: {.pf-step #kronecker-product-decomposition}
 The Kronecker product $A^{(4,2)} \otimes A^{(5,1)}$ decomposes (by the Kronecker coefficients) as
-$$A^{(4,2)} \otimes A^{(5,1)} = A^{(6)} \oplus A^{(5,1)} \oplus A^{(4,2)} \oplus A^{(4,1,1)} \oplus A^{(3,2,1)} \oplus A^{(3,1,1,1)} \oplus A^{(2,2,1,1)}.$$
+$$A^{(4,2)} \otimes A^{(5,1)} = A^{(5,1)} \oplus A^{(4,2)} \oplus A^{(4,1,1)} \oplus A^{(3,3)} \oplus A^{(3,2,1)}.$$
 
 ::: pf-proof
-computation of the Kronecker product of the two Specht modules (via the Murnaghan–Nakayama / character inner product).
+The permutation representation $P=\CC^6$ of $S_6$ is $A^{(6)}\oplus A^{(5,1)}$ and equals $T\uparrow_{S_5}^{S_6}$. For any representation $V$, $V\otimes T\uparrow_{S_5}^{S_6}\cong (V\downarrow_{S_5})\uparrow^{S_6}$, so
+$$A^{(4,2)}\otimes A^{(5,1)}\cong \bigl(A^{(4,2)}\downarrow_{S_5}\bigr)\uparrow^{S_6}\ominus A^{(4,2)}.$$
+By the branching rule, $A^{(4,2)}\downarrow_{S_5}=A^{(4,1)}\oplus A^{(3,2)}$. Inducing by the branching rule again,
+$$A^{(4,1)}\uparrow^{S_6}=A^{(5,1)}\oplus A^{(4,2)}\oplus A^{(4,1,1)},\qquad A^{(3,2)}\uparrow^{S_6}=A^{(4,2)}\oplus A^{(3,3)}\oplus A^{(3,2,1)}.$$
+Removing one copy of $A^{(4,2)}$ gives the stated sum. As a check, the dimensions are $9\cdot 5=45=5+9+10+5+16$.
 :::
 
 :::
@@ -99,10 +108,10 @@ $(1,2) = (2,1)$ is the partition of $3$ with two parts.
 
 ::: {.pf-step #outer-product-decomposition}
 $A^{(2,1)} \times A^{(2,1)}$ is the outer (tensor) product, which by the Pieri rule is
-$$A^{(2,1)} \times A^{(2,1)} = A^{(4,2)} \oplus A^{(4,1,1)} \oplus A^{(3,3)} \oplus A^{(3,2,1)} \oplus A^{(2,2,2)}.$$
+$$A^{(2,1)} \times A^{(2,1)}\uparrow_{S_3\times S_3}^{S_6} = A^{(4,2)} \oplus A^{(4,1,1)} \oplus A^{(3,3)} \oplus 2A^{(3,2,1)} \oplus A^{(3,1,1,1)} \oplus A^{(2,2,2)} \oplus A^{(2,2,1,1)}.$$
 
 ::: pf-proof
-Littlewood–Richardson rule for the outer product of two copies of $(2,1)$.
+The Littlewood–Richardson coefficients $c^{\nu}_{(2,1),(2,1)}$ are $1$ for $\nu=(4,2),(4,1,1),(3,3),(3,1,1,1),(2,2,2),(2,2,1,1)$ and $2$ for $\nu=(3,2,1)$. As a check, the dimensions are $\binom63\cdot2\cdot2=80=9+10+5+2\cdot16+10+5+9$.
 :::
 
 :::
