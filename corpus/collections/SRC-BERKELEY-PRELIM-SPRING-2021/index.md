@@ -9,8 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
-provenance:
-- assets/attachments/prelimsolutions_0.pdf
+provenance: []
 source:
   source_kind: university-exam
   institution: berkeley
