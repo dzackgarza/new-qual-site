@@ -5,8 +5,10 @@ kind: problem
 title: Evaluation of $\int_{\RR}\frac{dy}{(1+y^2)(1+(x-y)^2)}$
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 audit:

@@ -5,8 +5,10 @@ kind: problem
 title: Entire functions of exponential type bounded on the axes are constant
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Liouville's Theorem
 relations: []
 review: draft
 audit:

@@ -5,8 +5,10 @@ kind: problem
 title: Bounded harmonic function in $\{\abs{z}>1,\ \operatorname{Re}z>-2\}$ with constant boundary values
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Harmonic Functions
+  - Conformal Maps
 relations: []
 review: draft
 audit:

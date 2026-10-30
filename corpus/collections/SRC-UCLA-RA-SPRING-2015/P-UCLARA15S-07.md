@@ -5,8 +5,10 @@ kind: problem
 title: Holomorphic maps from the disk to the upper half-plane with $f_n(0)\to0$
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Normal Families
+  - Conformal Maps
 relations: []
 review: draft
 audit:

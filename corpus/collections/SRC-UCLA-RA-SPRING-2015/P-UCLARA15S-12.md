@@ -5,8 +5,9 @@ kind: problem
 title: Entire solutions of $f'^2+f^2=1$
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
 relations: []
 review: draft
 audit:

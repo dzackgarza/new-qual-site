@@ -5,8 +5,10 @@ kind: problem
 title: Bounded harmonic functions on the punctured disk have harmonic conjugates
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Harmonic Functions
+  - Removable Singularities
 relations: []
 review: draft
 audit:
