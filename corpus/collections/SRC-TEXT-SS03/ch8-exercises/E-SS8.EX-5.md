@@ -64,3 +64,7 @@ f'(z)=-\frac12(1-z^{-2}),
 $$
 and $f'(z)=0$ only at $z=\pm1$, neither of which lies in $D_+$. Hence $f$ is conformal from $D_+$ onto $\halfplane$.
 :::
+
+::: {.remark title="Variations"}
+Without the map given: find a conformal map from the upper half-disc $\DD\cap\HH$ onto $\HH$.
+:::

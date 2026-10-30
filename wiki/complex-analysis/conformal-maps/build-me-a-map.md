@@ -121,7 +121,7 @@ Cross ratios:
 
 Discs and planes:
 
-[[P-AZOFF-C03]] [[E-W6MWU]] [[P-AZOFF-C01]] [[E-PGGNF]] [[E-6BH7D]] [[E-PQ7NC]]
+[[P-AZOFF-C03]] [[E-W6MWU]] [[P-AZOFF-C01]] [[E-PGGNF]] [[E-SS8.EX-5]] [[E-PQ7NC]]
 
 Slits:
 
