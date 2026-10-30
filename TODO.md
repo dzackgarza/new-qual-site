@@ -917,7 +917,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/index.md
   - [x] wiki/complex-analysis/residues-and-contours/arc-estimates.md
   - [x] wiki/complex-analysis/residues-and-contours/computing-residues.md
-  - [ ] wiki/complex-analysis/residues-and-contours/index.md
+  - [x] wiki/complex-analysis/residues-and-contours/index.md
   - [ ] wiki/complex-analysis/residues-and-contours/real-integrals-by-residues.md
   - [ ] wiki/complex-analysis/residues-and-contours/the-residue-theorem.md
   - [ ] wiki/complex-analysis/residues-and-contours/which-contour-do-i-close.md
