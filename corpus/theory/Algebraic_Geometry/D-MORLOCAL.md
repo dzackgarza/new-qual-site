@@ -61,5 +61,7 @@ Closed immersions are local on the target but not on the source: $\Spec k \sqcup
 
 ::: {.example}
 Flat morphisms and morphisms locally of finite presentation are local on the source and on the target for the fppf topology; smooth and étale morphisms are local on the source for the étale topology and local on the target for the fppf topology.
-Proper and separated morphisms are local on the target for the fppf topology and are not local on the source: $\PP^1_k$ is covered by two copies of $\AA^1_k$, and $\AA^1_k \to \Spec k$ is not proper.
+Proper and separated morphisms are local on the target for the fppf topology and are not local on the source.
+For properness, $\PP^1_k$ is proper over $\Spec k$ and is covered by two copies of $\AA^1_k$, and $\AA^1_k \to \Spec k$ is not proper.
+For separatedness, the affine line with doubled origin is covered by two copies of $\AA^1_k$, each separated over $\Spec k$, while it is not separated over $\Spec k$.
 :::

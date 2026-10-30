@@ -580,7 +580,7 @@ mathematical correction under its own node, not under copy policy.
     - [x] PR-IV2INSEP closing paragraph: "isomorphic as schemes, not over k" contradicts the
       card's "need not be isomorphic as k-schemes" ($X = \PP^1$).
     - [x] D-IV2ETCOV: "proper nonempty open $U$" fails for clopen $U$; require $U$ not closed.
-    - [ ] D-MORLOCAL: the $\PP^1$ example shows non-locality for proper only; add the
+    - [x] D-MORLOCAL: the $\PP^1$ example shows non-locality for proper only; add the
       doubled-origin line for separated.
     - [ ] F2, wiki link text that breaks the sentence (`[[ID]]` rendered as the card title
       inside prose): T-HARDLEF, T-COHSVAN, functors-and-topologies, FE-FULHIRZBUN,
