@@ -109,7 +109,6 @@ source:
   - id: E-AMD-RRYNGX7L
   - id: E-AMD-S42H2VZL
   - id: E-AMD-SD3PTZ4O
-  - id: E-AMD-SF2B6RZ6
   - id: E-AMD-TLP6GSQI
   - id: E-AMD-TM3LMADH
   - id: E-AMD-TSJ7AKE5

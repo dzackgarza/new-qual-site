@@ -19,6 +19,10 @@ source:
     kind: year
     year: 1974
   sections:
+  - name: I.4
+    problems:
+    - id: E-AMD-SF2B6RZ6
+      comment: Hungerford 1.4.6
   - name: I.6
     problems:
     - P-PADO6
