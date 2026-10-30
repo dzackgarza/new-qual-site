@@ -93,17 +93,52 @@ $$
 
 :::
 
-![Barycentric subdivision](../../../assets/Topology/figures/image_2020-06-01-00-35-21.png)
+![Barycentric subdivision of the simplices [v0, v1], [v0, v1, v2], and part of [v0, v1, v2, v3], with barycenter b; each simplex is cut into simplices spanned by barycenters of a chain of faces.](../../../assets/Topology/figures/image_2020-06-01-00-35-21.png)
 
 ## Tables
 
-![Higher homotopy groups of $\RP^n$](../../../assets/Topology/figures/image_2020-09-20-01-35-23.png)
+In the tables below, $\ZZ/n$ is written $n$, and $0$ is the trivial group.
 
-![Higher homotopy groups of $\CP^n$](../../../assets/Topology/figures/image_2020-09-20-01-35-51.png)
+Homotopy groups of spheres:
 
-![Homotopy groups of spheres.](../../../assets/Topology/figures/image_2020-09-20-01-39-16.png)
+|       | $\pi_1$ | $\pi_2$ | $\pi_3$ | $\pi_4$ | $\pi_5$ | $\pi_6$ | $\pi_7$ | $\pi_8$ | $\pi_9$ | $\pi_{10}$ | $\pi_{11}$ | $\pi_{12}$ |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| $S^1$ | $\ZZ$ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| $S^2$ | 0 | $\ZZ$ | $\ZZ$ | 2 | 2 | 12 | 2 | 2 | 3 | 15 | 2 | $2\oplus 2$ |
+| $S^3$ | 0 | 0 | $\ZZ$ | 2 | 2 | 12 | 2 | 2 | 3 | 15 | 2 | $2\oplus 2$ |
+| $S^4$ | 0 | 0 | 0 | $\ZZ$ | 2 | 2 | $\ZZ\oplus 12$ | $2\oplus 2$ | $2\oplus 2$ | $24\oplus 3$ | 15 | 2 |
+| $S^5$ | 0 | 0 | 0 | 0 | $\ZZ$ | 2 | 2 | 24 | 2 | 2 | 2 | 30 |
+| $S^6$ | 0 | 0 | 0 | 0 | 0 | $\ZZ$ | 2 | 2 | 24 | 0 | $\ZZ$ | 2 |
+| $S^7$ | 0 | 0 | 0 | 0 | 0 | 0 | $\ZZ$ | 2 | 2 | 24 | 0 | 0 |
+| $S^8$ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | $\ZZ$ | 2 | 2 | 24 | 0 |
 
-![Homotopy groups of exceptional groups](../../../assets/Topology/figures/image_2020-09-20-01-40-22.png)
+Homotopy groups of real projective spaces, from the covering $S^n\to\RP^n$, which gives $\pi_k(\RP^n)\cong\pi_k(S^n)$ for $k\geq2$:
+
+|       | $\pi_1$ | $\pi_2$ | $\pi_3$ | $\pi_4$ | $\pi_5$ | $\pi_6$ | $\pi_7$ | $\pi_8$ | $\pi_9$ | $\pi_{10}$ | $\pi_{11}$ | $\pi_{12}$ |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| $\RP^1$ | $\ZZ$ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| $\RP^2$ | 2 | $\ZZ$ | $\ZZ$ | 2 | 2 | 12 | 2 | 2 | 3 | 15 | 2 | $2\oplus 2$ |
+| $\RP^3$ | 2 | 0 | $\ZZ$ | 2 | 2 | 12 | 2 | 2 | 3 | 15 | 2 | $2\oplus 2$ |
+| $\RP^4$ | 2 | 0 | 0 | $\ZZ$ | 2 | 2 | $\ZZ\oplus 12$ | $2\oplus 2$ | $2\oplus 2$ | $24\oplus 3$ | 15 | 2 |
+
+Homotopy groups of complex projective spaces, from the fibration $S^1\to S^{2n+1}\to\CP^n$, which gives $\pi_2(\CP^n)\cong\ZZ$ and $\pi_k(\CP^n)\cong\pi_k(S^{2n+1})$ for $k\geq3$:
+
+|       | $\pi_1$ | $\pi_2$ | $\pi_3$ | $\pi_4$ | $\pi_5$ | $\pi_6$ | $\pi_7$ | $\pi_8$ | $\pi_9$ | $\pi_{10}$ | $\pi_{11}$ | $\pi_{12}$ |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| $\CP^1$ | 0 | $\ZZ$ | $\ZZ$ | 2 | 2 | 12 | 2 | 2 | 3 | 15 | 2 | $2\oplus 2$ |
+| $\CP^2$ | 0 | $\ZZ$ | 0 | 0 | $\ZZ$ | 2 | 2 | 24 | 2 | 2 | 2 | 30 |
+| $\CP^3$ | 0 | $\ZZ$ | 0 | 0 | 0 | 0 | $\ZZ$ | 2 | 2 | 24 | 0 | 0 |
+| $\CP^4$ | 0 | $\ZZ$ | 0 | 0 | 0 | 0 | 0 | 0 | $\ZZ$ | 2 | 2 | 24 |
+
+Homotopy groups of the compact simply connected exceptional Lie groups:
+
+|       | $\pi_1$ | $\pi_2$ | $\pi_3$ | $\pi_4$ | $\pi_5$ | $\pi_6$ | $\pi_7$ | $\pi_8$ | $\pi_9$ | $\pi_{10}$ | $\pi_{11}$ | $\pi_{12}$ |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| $G_2$ | 0 | 0 | $\ZZ$ | 0 | 0 | 3 | 0 | 2 | 6 | 0 | $\ZZ\oplus 2$ | 0 |
+| $F_4$ | 0 | 0 | $\ZZ$ | 0 | 0 | 0 | 0 | 2 | 2 | 0 | $\ZZ\oplus 2$ | 0 |
+| $E_6$ | 0 | 0 | $\ZZ$ | 0 | 0 | 0 | 0 | 0 | $\ZZ$ | 0 | $\ZZ$ | 12 |
+| $E_7$ | 0 | 0 | $\ZZ$ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | $\ZZ$ | 2 |
+| $E_8$ | 0 | 0 | $\ZZ$ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ## Higher homotopy
 
