@@ -6,7 +6,8 @@ title: Hyperplane sections of the ellipsoid $2x^2+3y^2+4z^2+5u^2=1$ that are sph
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Entire functions with real part $x^3y-xy^3$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

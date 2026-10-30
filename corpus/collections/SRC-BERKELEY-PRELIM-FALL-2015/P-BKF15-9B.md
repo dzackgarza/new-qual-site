@@ -6,7 +6,8 @@ title: Nonattacking rook placements on a chessboard up to symmetry
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

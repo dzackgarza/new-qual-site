@@ -6,7 +6,8 @@ title: Order of $\operatorname{GL}_n(\FF_2)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

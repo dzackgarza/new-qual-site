@@ -6,7 +6,8 @@ title: Darboux property of derivatives via difference quotients
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

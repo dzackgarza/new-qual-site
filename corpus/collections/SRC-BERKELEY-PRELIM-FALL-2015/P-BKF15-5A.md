@@ -6,7 +6,8 @@ title: Gauss--Lucas theorem via $\sum 1/(z-c_i)=0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

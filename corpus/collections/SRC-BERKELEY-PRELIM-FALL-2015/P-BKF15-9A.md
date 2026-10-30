@@ -6,7 +6,8 @@ title: Injectivity of $x^3-2x$ on $\QQ$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Convergence and sum of the binomial series in $\bigl(2x/(1+x^2)\bigr)^2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

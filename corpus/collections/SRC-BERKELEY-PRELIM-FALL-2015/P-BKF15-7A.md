@@ -6,7 +6,8 @@ title: Similarity of nilpotent Jordan matrices is determined by block sizes
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

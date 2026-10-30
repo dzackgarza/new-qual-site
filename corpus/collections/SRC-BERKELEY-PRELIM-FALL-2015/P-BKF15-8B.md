@@ -6,7 +6,8 @@ title: Matrix rings over a field are simple
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

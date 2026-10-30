@@ -6,7 +6,8 @@ title: The Schur algorithm step preserves Schur functions
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

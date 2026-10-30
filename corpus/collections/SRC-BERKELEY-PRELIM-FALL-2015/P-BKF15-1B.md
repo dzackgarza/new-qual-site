@@ -6,7 +6,8 @@ title: Solutions of the Euler equation $y''=ay/x^2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

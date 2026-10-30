@@ -6,7 +6,8 @@ title: Simultaneous diagonalization of circulant matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
