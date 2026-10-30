@@ -1009,7 +1009,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/real-analysis/undergraduate/theorem-list.md
   - [x] wiki/real-analysis/workshops/index.md
   - [x] wiki/real-analysis/workshops/real-week-1-preliminaries.md
-  - [ ] wiki/real-analysis/workshops/real-week-2-measure-theory.md
+  - [x] wiki/real-analysis/workshops/real-week-2-measure-theory.md
   - [ ] wiki/topology/appendices/appendix.md
   - [ ] wiki/topology/appendices/at-course-notes.md
   - [ ] wiki/topology/appendices/index.md
