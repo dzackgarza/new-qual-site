@@ -29,9 +29,8 @@ audit:
 
 ::: {.problem}
 Compute
-
 $$
-\int _ { 0 } ^ { 2 \pi } { \frac { \cos ( x ) } { 2 + \cos ( x ) } } d x .
+\int_{0}^{2\pi} \frac{\cos(x)}{2 + \cos(x)}\, dx.
 $$
 :::
 

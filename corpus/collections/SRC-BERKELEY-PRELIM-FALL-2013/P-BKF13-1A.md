@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-The set of pairs of positive real numbers $( x , y )$ with $x ^ { y } = y ^ { x }$ is a union of two smooth curves.\
+The set of pairs of positive real numbers $(x, y)$ with $x^{y} = y^{x}$ is a union of two smooth curves.
 Find the point where they intersect.
 :::
 

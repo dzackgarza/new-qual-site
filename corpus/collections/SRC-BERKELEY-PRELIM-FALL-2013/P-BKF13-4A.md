@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the polynomial $p ( z ) = z ^ { 5 } - 6 z + 3$ has five distinct complex roots, and that exactly three (and not five) are real.
+Show that the polynomial $p(z) = z^{5} - 6z + 3$ has five distinct complex roots, and that exactly three (and not five) are real.
 :::
 
 ::: {.solution}
