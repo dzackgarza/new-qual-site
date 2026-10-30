@@ -697,6 +697,20 @@ mathematical correction under its own node, not under copy policy.
   - **`mineru-spaced-statements`**. **Needs:** none. `just extraction-detector` reports 1006 problem cards whose statements carry MinerU-spaced LaTeX (`^ { 6 }`, `\operatorname* { l i m }`), the residue that hid the ad8-prelim Summer 1984 and Fall 2016 defects. Transcribe each statement against its paper, one card at a time, by collection; the spacing alone is harmless, so read each for the lost operators, matrices and prose set in math that travel with it.
     **Acceptance:** the detector reports no `mineru-spaced` finding.
 
+  - **`ad9-exams`**. **Needs:** none. Round 9 at 2cd9297bd3; report in the session scratchpad r9-exams.md.
+    - [ ] P-RASP23D: the solution says the Riesz measure is inner regular on every Borel set; it is not ($E=\RR\times\{0\}$, Rudin RCA 2.17). The answer is No.
+    - [ ] P-MMAQ-OXWRG3VWFJ (b): asks about intermediate groups; the source asks about intermediate fields of a Galois extension of degree 2009.
+    - [ ] SRC-UW-ALG-2009 and SRC-UW-ALGEBRA-2005-2018 section 2009: the paper has 8 problems; Problems 5 and 8 have no card. Add them.
+    - [ ] P-UCLARA13F-10: `\widehat f^{,2}` has a stray comma.
+    - [ ] P-UCLARA13F-04: lost the closed domain; $u$ is continuous on $\overline{\mathbb D}\setminus\{0\}$.
+    - [ ] P-UCLARA13F-01 … -06: classified real analysis; the paper marks Problems 1-6 complex analysis.
+    - [ ] P-CASP19G: stale parenthetical about ν in the solution.
+    - [ ] P-8XT86: the source's second norm |||·||| and the new norm on X are typeset as the original norm, so the statement reads as tautologies.
+    - [ ] P-NIC7C: λ: T(X)→ℂ; the exam's spaces are real.
+    - [ ] P-TOP-WORKSHOP-D4-03: "(Jan '04 # A3)" in the statement (CARD-02).
+    - [ ] Card pages list one collection twice when a card appears in two sections of it (P-TOP-WORKSHOP-D3-04, -D3-05); render one entry per appearance with its section name.
+    **Acceptance:** each item read and repaired.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
