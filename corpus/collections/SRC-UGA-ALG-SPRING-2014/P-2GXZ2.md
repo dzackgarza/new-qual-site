@@ -16,27 +16,46 @@ review: draft
 ---
 
 ::: {.problem}
-Let $R$ be a commutative ring and $a\in R$.
+All rings have a multiplicative identity different from zero, and ring homomorphisms send $1$ to $1$. Let $R$ be a commutative ring and $a\in R$.
 Prove that $a$ is not nilpotent $\iff$ there exists a commutative ring $S$ and a ring homomorphism $\phi: R\to S$ such that $\phi(a)$ is a unit.
 
 > Note: by definition, $a$ is nilpotent $\iff$ there is a natural number $n$ such that $a^n = 0$.
 :::
 
 ::: {.solution}
-$\not A\implies \not B$:
 
-- Suppose $a$ is nilpotent, so $a^m = 0_R$, and suppose $\phi: R\to S$ is a ring morphism.
+::: pf
 
-- Ring morphisms send zero to zero, so $0_S = \phi(0_R) = \phi(a^m) = \phi(a)^m$ and $\phi(a)$ is nilpotent.
+::: {.pf-step #nil}
 
-- But nontrivial rings can't contain nilpotent units: if $u$ is a unit and $ut= 1$ with $u^k=0$, then $1 = 1^k = (ut)^k = u^k t^k=0$ and $R=0$.
+If $a$ is nilpotent, then $\phi(a)$ is not a unit for any ring homomorphism $\phi:R\to S$.
 
-$A\implies B$:
+::: pf-proof
 
-- If $a$ is not nilpotent, localize at the infinite multiplicative subset $A \coloneqq \theset{1, a, a^2, \cdots}$ to obtain $R\localize{A}$.
-  Since $0\not\in A$, this is not the zero ring.
+Let $a^m=0$. Then $\phi(a)^m=\phi(a^m)=0$. If $\phi(a)t=1$ for some $t\in S$, then $1=(\phi(a)t)^m=\phi(a)^mt^m=0$ in the commutative ring $S$, contradicting $1\neq0$ in $S$.
 
-- By the universal property, there is a map $\phi: R\to R\localize{A}$, and the claim is that $\phi(a)$ is a unit in $R\localize{A}$.
+:::
 
-- More directly, $R\localize{A} = \theset{ [p/q] \st p\in R,\, q\in A }$ and $\phi(a) = [a/1]$, whose inverse is $[1/a]$: the product is $[a/a] = [1/1] = 1$.
+:::
+
+::: {.pf-step #loc}
+
+If $a$ is not nilpotent, then the localization $\phi:R\to S=R[a^{-1}]$ makes $\phi(a)$ a unit.
+
+::: pf-proof
+
+Let $A=\{1,a,a^2,\ldots\}$, a multiplicative set, and let $S=A^{-1}R$ with $\phi(r)=r/1$. Then $(a/1)(1/a)=a/a=1$, so $\phi(a)$ is a unit. The ring $S$ is nonzero: $1/1=0/1$ would mean $a^k\cdot1=0$ for some $k$, which is false because $a$ is not nilpotent.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#nil){.pf-ref} and [](#loc){.pf-ref} prove the two implications.
+
+:::
+
+:::
+
 :::
