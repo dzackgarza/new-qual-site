@@ -5,8 +5,10 @@ kind: problem
 title: Differentiation preserves exponential type
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Cauchy Estimates
 relations: []
 review: draft
 audit:

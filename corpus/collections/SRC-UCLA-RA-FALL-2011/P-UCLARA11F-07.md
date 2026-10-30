@@ -5,8 +5,10 @@ kind: problem
 title: A contour integral with a double pole
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 audit:

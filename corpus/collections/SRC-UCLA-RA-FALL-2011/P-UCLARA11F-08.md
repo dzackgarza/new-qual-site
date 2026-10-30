@@ -5,8 +5,10 @@ kind: problem
 title: Counting zeros in a right half-plane
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 audit:

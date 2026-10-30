@@ -5,8 +5,10 @@ kind: problem
 title: Sublevel components of a zero-free entire function are unbounded
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Entire Functions
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

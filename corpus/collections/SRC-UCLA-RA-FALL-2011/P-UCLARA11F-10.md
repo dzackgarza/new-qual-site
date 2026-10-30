@@ -5,8 +5,11 @@ kind: problem
 title: Two fixed points force the identity
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Schwarz Lemma
+  - Fixed Points
+  - Conformal Maps
 relations: []
 review: draft
 audit:

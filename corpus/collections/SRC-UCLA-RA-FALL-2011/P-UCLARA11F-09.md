@@ -5,8 +5,10 @@ kind: problem
 title: '$L^2$ integrability removes a punctured-disc singularity'
 classification:
   areas:
-  - real-analysis
-  topics: []
+  - complex-analysis
+  topics:
+  - Removable Singularities
+  - Laurent Series
 relations: []
 review: draft
 audit:
