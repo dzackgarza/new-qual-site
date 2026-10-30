@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS04B
 kind: problem
-title: "Sylow 17-subgroups and elements of order 17 in GL(2, Z_17)"
+title: "Sylow $17$-subgroups and elements of order $17$ in $\\operatorname{GL}(2, \\ZZ_{17})$"
 classification:
   areas:
   - algebra

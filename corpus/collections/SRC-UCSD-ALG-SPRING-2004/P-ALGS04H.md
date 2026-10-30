@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS04H
 kind: problem
-title: "Factorization of the third cyclotomic polynomial over Z_7 and rational canonical forms"
+title: "Factorization of $X^2+X+1$ over $\\ZZ_7$ and rational canonical forms with $A^3 = I$"
 classification:
   areas:
   - algebra
