@@ -5,22 +5,23 @@ kind: collection
 title: UGA real-analysis Spring 2020
 classification:
   areas:
-  - real-analysis
+    - real-analysis
   topics: []
 relations: []
 review: draft
 provenance:
-- assets/attachments/Real_Analysis_Spring_2020.docx
+  - assets/attachments/Real_Analysis_Spring_2020.docx
 source:
   source_kind: university-exam
   institution: uga
   area: real-analysis
   problems:
-  - P-AXFG7
-  - P-KPFEF
-  - P-HBWN6
-  - P-VYRJF
-  - P-XL7MP
+    - P-6OOM1
+    - P-AXFG7
+    - P-KPFEF
+    - P-HBWN6
+    - P-VYRJF
+    - P-XL7MP
   date:
     kind: academic-term
     term: spring
