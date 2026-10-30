@@ -5,19 +5,20 @@ kind: problem
 title: Convergence of the iterates $\sum f^n$ of a non-rotation self-map of the disk fixing $0$
 classification:
   areas:
-  - complex-analysis
-  topics: []
+    - complex-analysis
+  topics:
+    - Iteration
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: chatgpt
-  date: 2026-09-12
-  note: Checked against the retained Questions_from_Tie.pdf compilation, section Spring 2015, question 19.
-- event: source-checked
-  by: claude-opus-5-5
-  date: 2026-10-29
-  note: The source assumes only that f is analytic in the unit disk D with f(0) = 0, so the iterates need not be defined. The statement now assumes f maps D into D.
+  - event: source-checked
+    by: chatgpt
+    date: 2026-09-12
+    note: Checked against the retained Questions_from_Tie.pdf compilation, section Spring 2015, question 19.
+  - event: source-checked
+    by: claude-opus-5-5
+    date: 2026-10-29
+    note: The source assumes only that f is analytic in the unit disk D with f(0) = 0, so the iterates need not be defined. The statement now assumes f maps D into D.
 ---
 
 ::: {.problem}
