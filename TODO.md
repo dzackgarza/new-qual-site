@@ -688,11 +688,14 @@ mathematical correction under its own node, not under copy policy.
     **Acceptance:** each item read and repaired. **Closed.** The P-BKS93-05 paper asks for "a solution", so the literal answer stays; a remark solves the nonzero reading, with $1\le m\le 2k$ ($m=2k$ is $c=0$).
 
   - **`ad8-prelim`**. **Needs:** none. Round 8 at 4529fee3cb; report in the session scratchpad r8-prelim.md.
-    - [ ] P-F03P2: the paper's matrix is (1 2; 2/9 1); the card, title and solution use 1/2. Correct and re-solve.
-    - [ ] SRC-BERKELEY-PRELIM-SUMMER-1984 (all 20 cards) and SRC-BERKELEY-PRELIM-FALL-2016 (most cards): statements are untranscribed MinerU residue (lost arrows, \binom for a matrix, "C {0}", \boldsymbol). Transcribe each statement against the paper, one card at a time.
-    - [ ] P-IMYQU: the solution display drops its line breaks and is clipped; the integrals lack dx.
-    - [ ] P-SK4KT: a garbled sentence about the eigendecomposition in the solution.
-    **Acceptance:** each item read and repaired.
+    - [x] P-F03P2: the paper's matrix is (1 2; 2/9 1); the card, title and solution use 1/2. Correct and re-solve.
+    - [x] SRC-BERKELEY-PRELIM-SUMMER-1984 (all 20 cards) and SRC-BERKELEY-PRELIM-FALL-2016 (most cards): statements are untranscribed MinerU residue (lost arrows, \binom for a matrix, "C {0}", \boldsymbol). Transcribe each statement against the paper, one card at a time.
+    - [x] P-IMYQU: the solution display drops its line breaks and is clipped; the integrals lack dx.
+    - [x] P-SK4KT: a garbled sentence about the eigendecomposition in the solution.
+    **Acceptance:** each item read and repaired. **Closed.** The extraction detector measured only Unicode glyphs outside dollar spans, so MinerU residue inside `$…$` passed; it now also measures MinerU-spaced LaTeX (`x ^ { 6 }`), which opens `mineru-spaced-statements`.
+
+  - **`mineru-spaced-statements`**. **Needs:** none. `just extraction-detector` reports 1006 problem cards whose statements carry MinerU-spaced LaTeX (`^ { 6 }`, `\operatorname* { l i m }`), the residue that hid the ad8-prelim Summer 1984 and Fall 2016 defects. Transcribe each statement against its paper, one card at a time, by collection; the spacing alone is harmless, so read each for the lost operators, matrices and prose set in math that travel with it.
+    **Acceptance:** the detector reports no `mineru-spaced` finding.
 
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
