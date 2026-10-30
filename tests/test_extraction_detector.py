@@ -80,6 +80,21 @@ def test_report_recognizes_exercise_and_compact_problem_fences(tmp_path: Path) -
     assert "P-COMPACT: ∉ (1)" in result.stdout
 
 
+def test_report_lists_mineru_spaced_latex_inside_dollar_spans(tmp_path: Path) -> None:
+    write_card(tmp_path, r"Show $x ^ { 6 } + 5 3 9 x$ and $\operatorname* { l i m } _ { t \to \infty } x$.")
+    result = run_detector(tmp_path)
+    assert result.returncode == 0
+    assert "Extraction detector: 1 problem card(s)" in result.stdout
+    assert "P-TEST: mineru-spaced (3)" in result.stdout
+
+
+def test_report_ignores_authored_latex(tmp_path: Path) -> None:
+    write_card(tmp_path, r"Show $x^{6} + 539x$ and $\lim_{t \to \infty} \frac{1}{t} = 0$.")
+    result = run_detector(tmp_path)
+    assert result.returncode == 0
+    assert "Extraction detector: 0 problem card(s)" in result.stdout
+
+
 def test_report_ignores_non_math_unicode_prose(tmp_path: Path) -> None:
     write_card(tmp_path, "Prove the author’s claim about Café spaces.")
     result = run_detector(tmp_path)
@@ -91,6 +106,18 @@ def test_push_gate_rejects_a_finding_introduced_since_the_pushed_base(tmp_path: 
     repo, path = init_repo(tmp_path, r"Let $x\in A$.")
     base = git(repo, "rev-parse", "HEAD").stdout.strip()
     path.write_text(card("Let x∈A."))
+    git(repo, "commit", "-q", "--no-verify", "-am", "content")
+
+    result = run_detector(repo, "--range-gate", base)
+
+    assert result.returncode == 1
+    assert "extraction findings 0 -> 1" in result.stderr
+
+
+def test_push_gate_rejects_mineru_spaced_latex_introduced_since_the_pushed_base(tmp_path: Path) -> None:
+    repo, path = init_repo(tmp_path, r"Let $x^{6}$.")
+    base = git(repo, "rev-parse", "HEAD").stdout.strip()
+    path.write_text(card(r"Let $x ^ { 6 }$."))
     git(repo, "commit", "-q", "--no-verify", "-am", "content")
 
     result = run_detector(repo, "--range-gate", base)

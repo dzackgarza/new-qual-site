@@ -1,9 +1,15 @@
-"""Report problem statements that still contain Unicode mathematics outside LaTeX.
+"""Report problem statements that still carry untranscribed extraction output.
 
-PDF extraction frequently leaves mathematical glyphs in prose rather than converting the
-statement to LaTeX.  Those glyphs are a reliable signal that the extraction was pasted into a
-card before transcription.  Dollar-delimited inline/display math is intentionally ignored:
-Unicode inside an authored LaTeX span is not the defect measured here.
+Two measurements are taken on each problem block.
+
+Unicode mathematics outside LaTeX: PDF extraction frequently leaves mathematical glyphs in
+prose rather than converting the statement to LaTeX.  Dollar-delimited inline/display math is
+ignored for this measurement: Unicode inside an authored LaTeX span is not the defect.
+
+MinerU-spaced LaTeX: MinerU emits a space on each side of every token, so its output carries
+``^ { 6 }``, ``f _ { i }`` and ``\\operatorname* { l i m }``.  An authored statement does not
+open a script or command argument with ``{ `` after a space.  This measurement counts those
+openings anywhere in the problem block, including inside dollar spans.
 
     just extraction-detector
     uv run python tools/extraction_detector.py
@@ -29,6 +35,7 @@ REPO = Path(__file__).resolve().parent.parent
 PROBLEM_BLOCK = re.compile(r"(?ms)^:::\s*(?:problem|exercise|\{\.(?:problem|exercise)\})\s*$\n(.*?)^:::\s*$")
 DOLLAR_MATH = re.compile(r"\$\$.*?\$\$|(?<!\\)\$(?:\\.|[^$])*?(?<!\\)\$", re.S)
 CARD_ID = re.compile(r"(?m)^id:\s*([^\s]+)\s*$")
+MINERU_SPACED = re.compile(r"(?:[\^_]|\\[A-Za-z]+\*?) \{ ")
 
 # The original extraction audit used Unicode's ``Sm`` (Symbol, Math) category,
 # restricted to non-ASCII glyphs.  That criterion is intentionally narrower than
@@ -41,6 +48,7 @@ class Finding:
     path: Path
     card_id: str
     chars: tuple[str, ...]
+    spaced: int
     occurrences: int
 
 
@@ -61,17 +69,24 @@ def problem_text(text: str) -> str | None:
 
 
 def finding_for_text(path: Path, text: str) -> Finding | None:
-    """Return one card-level finding when its problem block has raw Unicode mathematics."""
+    """Return one card-level finding when its problem block has either measured defect."""
     body = problem_text(text)
     if body is None:
         return None
     outside = strip_dollar_math(body)
     bad = [ch for ch in outside if is_math_unicode(ch)]
-    if not bad:
+    spaced = len(MINERU_SPACED.findall(body))
+    if not bad and not spaced:
         return None
     id_match = CARD_ID.search(text)
     card_id = id_match.group(1) if id_match else path.stem
-    return Finding(path=path, card_id=card_id, chars=tuple(sorted(set(bad))), occurrences=len(bad))
+    return Finding(
+        path=path,
+        card_id=card_id,
+        chars=tuple(sorted(set(bad))),
+        spaced=spaced,
+        occurrences=len(bad) + spaced,
+    )
 
 
 def iter_card_paths(root: Path) -> Iterable[Path]:
@@ -89,11 +104,16 @@ def scan(root: Path) -> list[Finding]:
 
 def render(findings: list[Finding]) -> str:
     lines = [
-        f"Extraction detector: {len(findings)} problem card(s) contain Unicode mathematics outside dollar-delimited LaTeX.",
+        f"Extraction detector: {len(findings)} problem card(s) contain Unicode mathematics outside "
+        "dollar-delimited LaTeX or MinerU-spaced LaTeX.",
     ]
     for item in findings:
-        glyphs = "".join(item.chars)
-        lines.append(f"{item.path}: {item.card_id}: {glyphs} ({item.occurrences})")
+        parts = []
+        if item.chars:
+            parts.append(f"{''.join(item.chars)} ({item.occurrences - item.spaced})")
+        if item.spaced:
+            parts.append(f"mineru-spaced ({item.spaced})")
+        lines.append(f"{item.path}: {item.card_id}: {', '.join(parts)}")
     return "\n".join(lines)
 
 
@@ -125,9 +145,12 @@ def range_gate(root: Path, base: str) -> int:
         previous_count = previous.occurrences if previous else 0
         if pushed_count > previous_count:
             glyphs = "".join(pushed.chars) if pushed else ""
-            failures.append(f"{path}: extraction findings {previous_count} -> {pushed_count} ({glyphs})")
+            spaced = pushed.spaced if pushed else 0
+            failures.append(
+                f"{path}: extraction findings {previous_count} -> {pushed_count} ({glyphs}; mineru-spaced {spaced})"
+            )
     if not failures:
-        print("extraction-detector: pushed cards introduce no new Unicode-mathematics findings")
+        print("extraction-detector: pushed cards introduce no new extraction findings")
         return 0
     print("extraction-detector: refusing pushed extraction regressions:", file=sys.stderr)
     for line in failures:
