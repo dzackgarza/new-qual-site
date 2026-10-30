@@ -937,7 +937,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/complex-analysis/workshops/complex-week-1-preliminaries.md
   - [x] wiki/complex-analysis/workshops/complex-week-2-cauchy.md
   - [x] wiki/complex-analysis/workshops/index.md
-  - [ ] wiki/index.md
+  - [x] wiki/index.md
   - [ ] wiki/prelim/counterexamples.md
   - [ ] wiki/prelim/index.md
   - [ ] wiki/prelim/problems/berkeley-prelims.md
