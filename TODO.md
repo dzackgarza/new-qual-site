@@ -975,7 +975,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] wiki/real-analysis/functional-analysis/which-big-theorem.md
   - [x] wiki/real-analysis/index.md
   - [x] wiki/real-analysis/inequalities.md
-  - [ ] wiki/real-analysis/integration/construction.md
+  - [x] wiki/real-analysis/integration/construction.md
   - [ ] wiki/real-analysis/integration/index.md
   - [ ] wiki/real-analysis/integration/l1.md
   - [ ] wiki/real-analysis/integration/the-convergence-theorems.md
