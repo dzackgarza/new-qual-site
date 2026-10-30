@@ -19,11 +19,11 @@ audit:
 ::: {.exercise}
 Find the Hadamard products for:
 
-(a) $e ^ { z } - 1$
+(a) $e^z - 1$.
 
-(b) cos πz.
+(b) $\cos\pi z$.
 
-[Hint: The answers are $\scriptstyle e ^ { z / 2 } z \prod _ { n = 1 } ^ { \infty } ( 1 + z ^ { 2 } / 4 n ^ { 2 } \pi ^ { 2 } )$ and $\scriptstyle \prod _ { n = 0 } ^ { \infty } ( 1 - 4 z ^ { 2 } / ( 2 n + 1 ) ^ { 2 } )$ , respectively.]
+[Hint: The answers are $e^{z/2} z \prod_{n=1}^{\infty} (1 + z^2/4n^2\pi^2)$ and $\prod_{n=0}^{\infty} (1 - 4z^2/(2n + 1)^2)$, respectively.]
 :::
 
 ::: {.solution}

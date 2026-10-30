@@ -18,21 +18,17 @@ audit:
 ---
 
 ::: {.exercise}
-Show that if $\alpha > 1$ , then
-
+Show that if $\alpha > 1$, then
 $$
-F _ {\alpha} (z) = \int_ {- \infty} ^ {\infty} e ^ {- \abs{ t } ^ {\alpha}} e ^ {2 \pi i z t} d t
+F_\alpha(z) = \int_{-\infty}^{\infty} e^{-\abs{t}^\alpha} e^{2\pi izt}\, dt
 $$
-
-is an entire function of growth order $\alpha / ( \alpha - 1 )$
+is an entire function of growth order $\alpha/(\alpha - 1)$.
 
 [Hint: Show that
-
 $$
-- \frac {\abs{ t } ^ {\alpha}}{2} + 2 \pi \abs{ z } \abs{ t } \leq c \abs{ z } ^ {\alpha / (\alpha - 1)}
+-\frac{\abs{t}^\alpha}{2} + 2\pi\abs{z}\abs{t} \leq c\abs{z}^{\alpha/(\alpha - 1)}
 $$
-
-by considering the two cases $\abs{ t } ^ { \alpha - 1 } \leq A \abs{ z } { \mathrm { ~ a n d ~ } } \abs{ t } ^ { \alpha - 1 } \geq A \abs{ z } .$ , for an appropriate constant A.]
+by considering the two cases $\abs{t}^{\alpha - 1} \leq A\abs{z}$ and $\abs{t}^{\alpha - 1} \geq A\abs{z}$, for an appropriate constant $A$.]
 :::
 
 ::: {.solution}

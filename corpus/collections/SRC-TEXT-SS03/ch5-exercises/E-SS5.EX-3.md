@@ -22,15 +22,13 @@ audit:
 ---
 
 ::: {.exercise}
-Show that if $\tau$ is fixed with Im $( \tau ) > 0$ , then the Jacobi theta function
-
+Show that if $\tau$ is fixed with $\Im(\tau) > 0$, then the Jacobi theta function
 $$
-\Theta (z \thetaseparator \tau) = \sum_ {n = - \infty} ^ {\infty} e ^ {\pi i n ^ {2} \tau} e ^ {2 \pi i n z}
+\Theta(z \thetaseparator \tau) = \sum_{n=-\infty}^{\infty} e^{\pi in^2\tau} e^{2\pi inz}
 $$
+is of order $2$ as a function of $z$. Further properties of $\Theta$ will be studied in Chapter 10.
 
-is of order 2 as a function of $z .$ . Further properties of $\Theta$ will be studied in Chapter 10.
-
-[Hint: $- n ^ { 2 } t + 2 n \abs{ z } \leq - n ^ { 2 } t / 2$ when $t > 0$ and $n \geq 4 \abs{ z } / t . ]$
+[Hint: $-n^2 t + 2n\abs{z} \leq -n^2 t/2$ when $t > 0$ and $n \geq 4\abs{z}/t$.]
 :::
 
 ::: {.solution}
