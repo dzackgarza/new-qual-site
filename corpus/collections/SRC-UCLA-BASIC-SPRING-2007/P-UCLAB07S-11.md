@@ -17,11 +17,7 @@ audit:
 ---
 ::: {.problem}
 
-::: pf
-
-::: pf-step
-
-Consider
+(a) Consider
 $$
 u^3+xv-y=0,\qquad v^3+yu-x=0.
 $$
@@ -31,15 +27,7 @@ $$
 $$
 Explain your answer.
 
-:::
-
-::: pf-step
-
-Give an example in which the conclusion of the implicit function theorem is true although its standard nondegeneracy hypothesis fails.
-
-:::
-
-:::
+(b) Give an example in which the conclusion of the implicit function theorem is true although its standard nondegeneracy hypothesis fails.
 
 :::
 
@@ -193,7 +181,7 @@ $$
 F(x,y,u(x,y),v(x,y))=0
 $$
 for all $(x,y)\in N$.
-Thus the answer to part step [](#p2-s1){.pf-ref} is yes.
+Thus the answer to part (a) is yes.
 
 :::
 
@@ -201,7 +189,7 @@ Thus the answer to part step [](#p2-s1){.pf-ref} is yes.
 
 ::: {.pf-step #p2-s5}
 
-For part step [](#p2-s2){.pf-ref}, consider the scalar equation
+For part (b), consider the scalar equation
 $$
 G(x,y)=y^3-x^3=0
 $$
@@ -291,8 +279,8 @@ Thus the hypothesis fails even though the conclusion in step [](#p2-s6){.pf-ref}
 
 ::: pf-qed
 
-Step [](#p2-s4){.pf-ref} answers part step [](#p2-s1){.pf-ref} affirmatively by the implicit function theorem.
-Steps [](#p2-s5){.pf-ref}, [](#p2-s6){.pf-ref} and [](#p2-s7){.pf-ref} give the requested example for part step [](#p2-s2){.pf-ref}.
+Step [](#p2-s4){.pf-ref} answers part (a) affirmatively by the implicit function theorem.
+Steps [](#p2-s5){.pf-ref}, [](#p2-s6){.pf-ref} and [](#p2-s7){.pf-ref} give the requested example for part (b).
 
 :::
 

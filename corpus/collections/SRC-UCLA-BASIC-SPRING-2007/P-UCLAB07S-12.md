@@ -18,29 +18,12 @@ audit:
 ::: {.problem}
 Let $c_0$ be the normed space of real sequences $x=(x_1,x_2,\ldots)$ with $x_k\to0$, equipped with the supremum norm.
 
-::: pf
+(a) Show that $c_0$ is complete.
 
-::: pf-step
-
-Show that $c_0$ is complete.
-
-:::
-
-::: pf-step
-
-Is the closed unit ball $\{x\in c_0:\norm{x}\le1\}$ compact?
+(b) Is the closed unit ball $\{x\in c_0:\norm{x}\le1\}$ compact?
 Prove your answer.
 
-:::
-
-::: pf-step
-
-Is
-
-:::
-
-:::
-
+(c) Is
 $$
 \left\{x\in c_0:\sum_k k\abs{x_k}\le1\right\}
 $$
@@ -497,7 +480,7 @@ $$
 
 ::: pf-qed
 
-Step [](#p2-s4){.pf-ref} proves part step [](#p2-s1){.pf-ref}, step [](#p2-s7){.pf-ref} answers part step [](#p2-s2){.pf-ref} negatively, and step [](#p2-s12){.pf-ref} answers part step [](#p2-s3){.pf-ref} affirmatively.
+Step [](#p2-s4){.pf-ref} proves part (a), step [](#p2-s7){.pf-ref} answers part (b) negatively, and step [](#p2-s12){.pf-ref} answers part (c) affirmatively.
 
 :::
 
