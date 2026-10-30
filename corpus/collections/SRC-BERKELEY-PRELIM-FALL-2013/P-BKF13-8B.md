@@ -6,7 +6,8 @@ title: $561$ is a Carmichael number
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

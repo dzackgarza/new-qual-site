@@ -6,7 +6,8 @@ title: Number of irreducible sextics over $\FF_3$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Convergence of the iteration $x_{n+1}=1/(1+x_n)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

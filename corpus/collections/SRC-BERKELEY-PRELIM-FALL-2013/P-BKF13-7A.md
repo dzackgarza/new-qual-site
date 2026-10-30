@@ -6,7 +6,8 @@ title: Diagonalizability of sums, products, idempotents and square roots of matr
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:
@@ -31,13 +32,13 @@ audit:
 Let $A$ and $B$ be $n\times n$ complex matrices.
 Prove or disprove each of the following statements:
 
-1. If $A$ and $B$ are diagonalizable, so is $A+B$.
+(a) If $A$ and $B$ are diagonalizable, so is $A+B$.
 
-2. If $A$ and $B$ are diagonalizable, so is $AB$.
+(b) If $A$ and $B$ are diagonalizable, so is $AB$.
 
-3. If $A^2=A$, then $A$ is diagonalizable.
+(c) If $A^2=A$, then $A$ is diagonalizable.
 
-4. If $A^2$ is diagonalizable, then $A$ is diagonalizable.
+(d) If $A^2$ is diagonalizable, then $A$ is diagonalizable.
 :::
 
 ::: {.solution}
@@ -57,7 +58,7 @@ whereas $J\ne0$.
 
 ::: {.pf-step #s1}
 
-Statement 1 is false.
+Statement (a) is false.
 
 ::: pf-proof
 
@@ -94,7 +95,7 @@ which is not diagonalizable.
 
 ::: {.pf-step #s2}
 
-Statement 2 is false.
+Statement (b) is false.
 
 ::: pf-proof
 
@@ -135,7 +136,7 @@ which is not diagonalizable.
 
 ::: {.pf-step #s3}
 
-Statement 3 is true.
+Statement (c) is true.
 
 ::: pf-proof
 
@@ -157,7 +158,7 @@ is equivalent to diagonalizability.
 
 ::: {.pf-step #s4}
 
-Statement 4 is false.
+Statement (d) is false.
 
 ::: pf-proof
 

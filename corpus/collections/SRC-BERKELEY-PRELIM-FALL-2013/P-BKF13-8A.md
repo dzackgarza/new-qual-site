@@ -6,7 +6,8 @@ title: Ring elements with several right inverses are exactly the right-invertibl
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Intersection point of the two branches of $x^y=y^x$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus
 relations: []
 review: draft
 audit:

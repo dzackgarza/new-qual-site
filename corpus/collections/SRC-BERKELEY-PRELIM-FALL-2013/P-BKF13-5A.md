@@ -6,7 +6,8 @@ title: Evaluation of $\int_0^{2\pi}\cos x/(2+\cos x)\,dx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

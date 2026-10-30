@@ -6,7 +6,8 @@ title: Metric spaces are connected exactly when real-valued continuous images ar
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

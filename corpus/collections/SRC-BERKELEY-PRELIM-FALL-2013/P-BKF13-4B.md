@@ -6,7 +6,8 @@ title: Evaluation of $\int_{-\infty}^{\infty} x\sin x/(x^2+1)\,dx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 audit:

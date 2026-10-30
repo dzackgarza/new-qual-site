@@ -6,7 +6,8 @@ title: Integrability of $\int_x^1 f(t)/t\,dt$ for integrable $f$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Real Analysis
 relations: []
 review: draft
 audit:

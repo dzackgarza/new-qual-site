@@ -6,7 +6,8 @@ title: A product of two real $2\times2$ involutions with eigenvalues $2$ and $1/
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

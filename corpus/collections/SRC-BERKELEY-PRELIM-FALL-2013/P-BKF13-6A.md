@@ -6,7 +6,8 @@ title: Conjugation-invariant quadratic forms on $2\times2$ complex matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

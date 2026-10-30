@@ -6,7 +6,8 @@ title: Invertibility of $I_m-AB$ implies invertibility of $I_n-BA$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 audit:

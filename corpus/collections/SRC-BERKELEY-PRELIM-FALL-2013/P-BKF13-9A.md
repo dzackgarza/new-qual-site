@@ -6,7 +6,8 @@ title: Nontrivial second center and a derived series with four distinct terms
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Abstract Algebra
 relations: []
 review: draft
 audit:
