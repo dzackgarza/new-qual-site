@@ -231,3 +231,7 @@ Step [](#s1-4){.pf-ref} gives the stated formula, and step [](#s1-5){.pf-ref} gi
 ::: {.remark}
 The area of $f(D_1)$ can be infinite: for the Koebe function $z/(1-z)^2=\sum_n nz^n$, the image of the unit disk is $\CC$ minus a ray.
 :::
+
+::: remark
+One printing of this problem asks for the area of the image of the closed disc $\abs{z}\le r$. The circle $\abs{z}=r$ has area zero, and so does its image under the smooth map $f$, so the area is the same.
+:::

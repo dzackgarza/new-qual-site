@@ -2,15 +2,14 @@
 schema: qual/card@1
 id: P-4KVTJ
 kind: problem
-title: Cauchy integral of $f$ on a simple closed curve, equal to $A$ inside and $-f(z)+A$
-  outside, when $\lim_{z\to\infty}f(z)=A$
+title: 'Exterior Cauchy formula: the Cauchy integral equals $A$ inside $\gamma$ and $A-f(z)$ outside when $f\to A$ at $\infty$'
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics:
-  - Cauchy Integral Formula
-  - Residues
-  - Contour Integration
+    - Cauchy Integral Formula
+    - Residues
+    - Contour Integration
 relations: []
 review: draft
 ---
