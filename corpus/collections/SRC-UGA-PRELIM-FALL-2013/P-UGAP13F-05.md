@@ -5,7 +5,9 @@ kind: problem
 title: Path dependence of a plane integral and an inward-pointing gradient
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Line Integrals
+  - Multivariable Calculus
 relations: []
 review: draft
 audit:

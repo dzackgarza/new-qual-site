@@ -5,7 +5,8 @@ kind: problem
 title: Prove $1/(x^2-1)\to1/3$ at $x=2$ from the definition of limit
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Limits
 relations: []
 review: draft
 audit:

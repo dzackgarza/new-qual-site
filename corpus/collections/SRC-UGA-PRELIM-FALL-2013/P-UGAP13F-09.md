@@ -5,7 +5,8 @@ kind: problem
 title: Construct a linear map on $\RR^3$ with a prescribed one-dimensional kernel
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Maps
 relations: []
 review: draft
 audit:

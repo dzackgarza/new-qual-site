@@ -5,7 +5,9 @@ kind: problem
 title: Negate uniform continuity and give a continuous non-uniformly-continuous example
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Uniform Continuity
+  - Logic and Quantifiers
 relations: []
 review: draft
 audit:

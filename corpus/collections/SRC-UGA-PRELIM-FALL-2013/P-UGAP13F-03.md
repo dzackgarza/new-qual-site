@@ -5,7 +5,8 @@ kind: problem
 title: A power series whose interval of convergence is exactly $[2,4)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Power Series
 relations: []
 review: draft
 audit:

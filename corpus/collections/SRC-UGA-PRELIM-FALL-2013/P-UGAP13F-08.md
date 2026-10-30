@@ -5,7 +5,8 @@ kind: problem
 title: Compute a cube and all cube roots of $1+\sqrt3\,i$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Roots of Unity
 relations: []
 review: draft
 audit:

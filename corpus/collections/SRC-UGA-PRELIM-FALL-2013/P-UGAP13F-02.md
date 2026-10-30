@@ -5,7 +5,9 @@ kind: problem
 title: Determine which matrix data are preserved by similarity
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Matrices
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Compare images and preimages under set operations
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Functions and Relations
 relations: []
 review: draft
 audit:
