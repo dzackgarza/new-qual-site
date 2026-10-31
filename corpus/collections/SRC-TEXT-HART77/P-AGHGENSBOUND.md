@@ -29,6 +29,7 @@ The case $j = 0$ is clear.
 Let $C$ be an irreducible component of $Y_j$.
 Since $Y_j = \Union_D (D \intersect Z(f_j))$, where $D$ runs over the irreducible components of $Y_{j-1}$, the irreducible set $C$ lies in some $D \intersect Z(f_j)$, and by maximality $C$ is an irreducible component of $D \intersect Z(f_j)$.
 If $D \subseteq Z(f_j)$, then $C = D$ and $\dim C \geq n - j + 1$.
-Otherwise $f_j$ is not constant, $Z(f_j)$ is a hypersurface, and Ex. 1.8 gives $\dim C = \dim D - 1 \geq n - j$.
+Otherwise Ex. 1.8 applies to $D$ and $Z(f_j)$ and gives
+$\dim C = \dim D - 1 \geq n - j$.
 At $j = r$ this is the claim.
 :::
