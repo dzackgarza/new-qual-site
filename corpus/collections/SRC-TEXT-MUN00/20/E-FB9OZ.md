@@ -38,7 +38,7 @@ $$
 
 First take $x=(x_i)\in c_0$. Given $0<\varepsilon<1$, choose $N$ such that
 $$
-\abs{x_i}<\varepsilon\qquad(i>N).
+\abs{x_i}<\varepsilon/2\qquad(i>N).
 $$
 Let
 $$
@@ -46,7 +46,7 @@ y=(x_1,\dots,x_N,0,0,\dots)\in\RR^\infty.
 $$
 Then
 $$
-\bar\rho(x,y)=\sup_{i>N}\abs{x_i}<\varepsilon,
+\bar\rho(x,y)=\sup_{i>N}\abs{x_i}\le\varepsilon/2<\varepsilon,
 $$
 so every uniform neighborhood of $x$ meets $\RR^\infty$.
 
