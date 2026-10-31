@@ -94,11 +94,26 @@ settled until a file here covers it:
   the hypothesis "$B/B_p$ has no $p$-torsion" is certified, but additivity (2) and
   Exercise 4's direct limits, which carry that to every $p$-primary $A_p$, are cited.
 - `E-HAT-3.A-2`: the restored direction "torsion-free implies $\operatorname{Tor}(A,B)=0$
-  for all $B$" is a citation of exercise 5 of the same section.
-- The step-level repairs of earlier audits — `E-HAT-1.1-17`, the closing steps of
-  `E-HAT-1.2-12`, `-14`, `-16`, the restructuring of `E-HAT-1.2-22`, the rewrites of
-  `E-HAT-1.A-8` and the closing steps of `E-HAT-1.A-9`, `-12` — are prose repairs of stored
-  proofs and carry no machine certificate.
+  for all $B$" is a citation of exercise 5 of the same section. Two of its three
+  ingredients are certified in `cards/TorReductions.lean` — a finitely generated
+  torsion-free $\ZZ$-module is free (`free_of_finite_torsionFree`, Mathlib's
+  principal-ideal-domain result) and the presentation-level $\operatorname{Tor}$ of a free
+  presentation vanishes (`torKernel_eq_bot_of_subsingleton`); the third, that
+  $\operatorname{Tor}$ commutes with the filtered colimit of the finitely generated
+  subgroups, is exercise 4 of the same section and is not formalized.
+## 6. Chapter 1 step repairs: expository, with the backing theorem checked
+
+These repairs were made to stored proofs but assert no theorem beyond the source's own
+argument. They are listed here with the theorem that backs each, so that nothing is hidden
+and nothing is claimed as certified. No machine certificate exists for any of them.
+
+| Card | What the repair does | Backing |
+| --- | --- | --- |
+| `E-HAT-1.1-17` | replaces "standard computation" by an explicit use of $\pi_1(X\vee Y)=\pi_1X*\pi_1Y$ and spells out the degrees of the retractions | Hatcher Example 1.21 (wedge sums), whose hypotheses — path-connected, nondegenerately based spaces — hold for the two circles |
+| `E-HAT-1.2-12`, `-14`, `-16` | rewrite closing steps so that the presentation, the eight words and the generator counts are multiplied out rather than named | the source's own computation; the cube complex of `-14` is the one whose abelianization is checked in `cards/DeltaComplexHomology.sage` |
+| `E-HAT-1.2-22` | renames the subcomplex $X_0$, corrects it to two-dimensional, and replaces the $1$-skeleton claim by a collapse and a retraction of the strips | Hatcher Proposition 0.17 (quotient by a contractible subcomplex of a pair with the homotopy extension property is a homotopy equivalence): $(X_0,T)$ is a CW pair, so it has the HEP, and $T$ is a rectangle, hence contractible. The remaining step, that each strip's image retracts to a circle, is a picture-level check, not formalized |
+| `E-HAT-1.A-8` | rewritten twice; certified in Lean, see the table above | — |
+| `E-HAT-1.A-9`, `-12` | closing steps state why the intersection of the conjugates is normal of finite index, and list the three conclusions | the source's own argument |
 
 A `solution-reviewed` note on a card records that the proof was read and what was checked;
 it is a review record, not a certificate.
