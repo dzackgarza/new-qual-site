@@ -20,6 +20,15 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: The center argument claimed conjugation changes the first letter, and the torsion argument used cyclic reduction without proving it; both rewritten from the reduced-word normal form.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.2, Exercise 1.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the centered proof: the reduced word $h a_1\cdots a_n$ versus $a_1\cdots a_n h$ separates $w$ from the other factor, and the conjugation reduction lands on an even-length word whose ends lie in different factors, so it has infinite order.
 ---
 
 ::: {.problem}

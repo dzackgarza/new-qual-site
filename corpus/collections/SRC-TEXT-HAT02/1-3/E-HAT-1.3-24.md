@@ -23,6 +23,10 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: The old solution assumed X simply connected; rewritten with unique lifting and freeness of the action, proving both directions of (b) and (c).
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.3, Exercise 24.
 ---
 
 ::: {.problem}

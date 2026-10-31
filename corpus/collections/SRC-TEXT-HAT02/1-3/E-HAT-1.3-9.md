@@ -15,6 +15,15 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.3, Exercise 9.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the lifting proof: $f_*$ is trivial because $\pi_1(X)$ is finite and $\ZZ$ is torsion free, the lifting criterion applies to $\RR\to S^1$, and the straight-line homotopy in $\RR$ descends to a null-homotopy of $f$. The hint block agrees with the book's bracketed hint.
 ---
 
 ::: {.exercise}

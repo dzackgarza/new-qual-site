@@ -20,6 +20,15 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: Part (a) treated the 2-dimensional strips as a 1-skeleton; rewritten to collapse the table and retract the strips to a wedge of circles before attaching the squares. Part (b) now links consecutive under-arcs along the knot.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.2, Exercise 22.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the complex $X_1=T\cup\bigcup_iR_i$, the cyclic word $x_ix_jx_i^{-1}x_k^{-1}$ on each square, and the abelianization. The card still opens the two parts with run-in labels between two separate $\texttt{pf}$ blocks, which STYLE-08 forbids; the content was checked, the structure is still to be merged into one proof.
 ---
 
 ::: {.problem}

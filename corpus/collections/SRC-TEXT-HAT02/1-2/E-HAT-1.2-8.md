@@ -16,6 +16,15 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.2, Exercise 8.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the cell decomposition of the two tori joined along a circle and the identification of the presented group with $\ZZ\times F_2$ through mutually inverse maps on the generators.
 ---
 
 ::: {.problem}

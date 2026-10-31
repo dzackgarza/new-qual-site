@@ -20,6 +20,15 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: The old solution concluded that independent loops equal in number to the rank form a basis, which is false in a free group; rewritten as an induction that deletes an outer edge and uses a Nielsen substitution.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.2, Exercise 5.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the induction on bounded complementary regions: the side argument produces an edge with the unbounded region on one side, deleting its interior preserves connectivity and removes exactly one region, and the new boundary loop completes a free basis.
 ---
 
 ::: {.problem}

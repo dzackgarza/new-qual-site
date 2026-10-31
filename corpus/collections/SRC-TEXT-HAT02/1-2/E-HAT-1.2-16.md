@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Exhausted the surface by compact finite-genus subsurfaces with compatible graph spines, then used compactness of loops and nullhomotopies to identify the direct-limit group with a countably generated free group.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the exhaustion by compact pieces and the injectivity argument through free factors; the closing step now states the surjectivity, injectivity and count of generators explicitly.
 ---
 
 ::: {.problem}
@@ -189,7 +194,7 @@ the free group on countably infinitely many generators.
 
 ::: pf-proof
 
-By steps [](#s5){.pf-ref} and [](#s6){.pf-ref}, $\Phi$ is an isomorphism, and step [](#s4){.pf-ref} identifies its basis as countably infinite.
+Step [](#s5){.pf-ref} makes $\Phi$ surjective and step [](#s6){.pf-ref} makes it injective, so $\Phi\colon F(B)\to\pi_1(X)$ is an isomorphism. Step [](#s4){.pf-ref} exhibits $B$ as a countably infinite set, so $\pi_1(X)$ is free on countably many generators.
 
 :::
 

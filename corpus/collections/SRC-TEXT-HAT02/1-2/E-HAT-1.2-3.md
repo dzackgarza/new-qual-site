@@ -16,6 +16,15 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.2, Exercise 3.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review all three steps: the polygonal path avoids the finitely many lines through points of $F$, the coning point avoids the finitely many affine spans because $n\ge3$, and the triangles assemble into the disk.
 ---
 
 ::: {.problem}

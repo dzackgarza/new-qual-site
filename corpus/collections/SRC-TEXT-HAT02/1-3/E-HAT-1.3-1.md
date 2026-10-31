@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Intersected an evenly covered neighborhood in X with the subspace A and checked the restricted sheets explicitly.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the steps: an evenly covered neighbourhood of a point of $A$ restricts to an evenly covered neighbourhood in the subspace, with the sheets cut down to their intersections with $p^{-1}(A)$.
 ---
 
 ::: {.problem}

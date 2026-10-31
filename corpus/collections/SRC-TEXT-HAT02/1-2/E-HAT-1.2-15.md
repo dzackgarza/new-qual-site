@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Constructed an explicit inverse on fundamental groups by sending a loop class to the corresponding 1-cell and used triangle 2-cells for homotopy invariance and multiplication.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the two homomorphisms between $\pi_1(L(X))$ and $\pi_1(X)$ and the way the $2$-cells attached along edge restrictions make the assignment well defined on homotopy classes.
 ---
 
 ::: {.problem}

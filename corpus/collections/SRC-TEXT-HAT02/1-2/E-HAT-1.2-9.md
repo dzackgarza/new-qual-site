@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used the boundary product-of-commutators relation for the nonretraction and a standard CW structure for the retraction onto a nonseparating curve.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the commutator argument: the boundary class is a product of commutators, every homomorphism to $\ZZ$ kills it, so the inclusion admits no left inverse; the nonseparating case is reduced to the standard generator by a homeomorphism of the cut surfaces.
 ---
 
 ::: {.problem}

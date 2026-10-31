@@ -36,15 +36,18 @@ papers themselves are in no reachable archive, which is recorded in
 “Theorem 6.1” of RA-WORKSHOP D7-W3 is that sheet's own numbering for [Rud76, Thm. 7.12],
 the continuity of a uniform limit of continuous functions.
 
-`ad-text-hat02` is partly read, against the book itself (`pi.math.cornell.edu/~hatcher/AT/AT.pdf`,
-Section 1.1 p. 38 and Section 1.2 pp. 52–55).
-On 2026-10-31 all 20 cards of §1.1 had their statements compared with the exercises and the twelve
-solved cards had their proofs read: one defect, `E-HAT-1.1-17`, whose proof called
-$\pi_1(S^1\vee S^1)=\ZZ*\ZZ$ a "standard computation" in a one-line block and closed with a
-back-reference, and now cites §1.2 Example 1.21 and carries the retraction and nonhomotopy arguments.
-The 22 statements of §1.2 were compared and agree with the book, apart from an explanatory
-parenthesis in exercise 10; their proofs are still unread, and no section from §1.3 onward has been
-opened. Next work under this node is the §1.2 proofs, then §1.3.
+`ad-text-hat02` is read through §1.3's exercises against the book itself
+(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`, §1.1 p. 38, §1.2 pp. 52–55, §1.3 pp. 79–83).
+§1.1: all 20 statements compared and the twelve solved cards' proofs read; `E-HAT-1.1-17` repaired.
+§1.2: all 22 statements compared and every one of the 22 proofs read, each card now carrying the
+review event; three proofs (`E-HAT-1.2-12`, `-14`, `-16`) had closing steps that only named earlier
+steps, and each now states the argument it rests on. `E-HAT-1.2-22` still opens its two parts with
+run-in labels between two separate `pf` blocks, against STYLE-08; its mathematics was checked and its
+structure is the remaining repair.
+§1.3: all 33 statements compared, including the bracketed hint on exercise 9, which the card already
+carried; the proofs of `E-HAT-1.3-1`, `-9`, `-15`, `-17` and `-20` are read, and the other 28 proofs
+are unread.
+Unread entirely: §1.A, §1.B, and every chapter 2, 3 and 4 section.
 
 ## Fast local checks and complete CI acceptance
 

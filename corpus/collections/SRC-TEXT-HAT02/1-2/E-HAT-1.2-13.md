@@ -20,6 +20,15 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: The other identification gives H_1 = Z^2 + Z/3, not the closed surface N_3; solution recomputed from the CW structure of the identified pair of pants.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.2, Exercise 13.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the abelianization: the relator of $Y$ forces $b=0$ in $H_1$, while the other identification leaves $\abs{d_0-d_1-d_2}=3$, so the two groups differ in their abelianization.
 ---
 
 ::: {.problem}

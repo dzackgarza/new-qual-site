@@ -29,6 +29,11 @@ audit:
     Used the cut-open fundamental polygon for the punctured bottle, then the
     radial deformation visible in the graph-complement figure to compare with
     R^3 minus Z.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the one-relator presentation and the collapse $b=1$ giving $\ZZ*\ZZ$; the closing step no longer only names earlier steps but states why the relator becomes trivial and how the sign of $\varepsilon$ and the graph complement fit.
 ---
 
 ::: {.problem}
@@ -210,7 +215,7 @@ $$
 
 ::: pf-proof
 
-Combine steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}.
+Step [](#s5){.pf-ref} gives $\pi_1(X)\cong\ZZ*\ZZ$, because adjoining $b=1$ turns the single relator of [](#s2){.pf-ref} into $aa^{-1}cc^{-1}$; step [](#s3){.pf-ref} shows the other orientation of the identified circle only changes the exponent of $b$, and step [](#s6){.pf-ref} identifies $\pi_1(\RR^3\setminus Z)$ with $\pi_1(Y)$ through the deformation retraction onto $Y\vee S^2$.
 
 :::
 
