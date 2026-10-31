@@ -39,6 +39,8 @@ H^n(K(G,m);H).
 $$
 We apply this to the three cases.
 
+For target degree $n=0$, all three representing spaces are connected, so their $H^0$ consists of constant classes. These give the constant operations, with values in $\ZZ$ or $\ZZ_p$ as appropriate.
+
 For $H^1(-;\ZZ)$, the representing space is
 $$
 K(\ZZ,1)=S^1.
