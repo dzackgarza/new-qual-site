@@ -41,7 +41,7 @@ Then,
 ::: {.solution}
 Let
 $$
-G=\operatorname{Aut}_K(F)\cong S_n.
+G=\Aut_K(F)\cong S_n.
 $$
 
 ::: pf
@@ -64,7 +64,7 @@ $$
 For every finite extension, the number of $K$-automorphisms is at most its
 degree, so
 $$
-n!=\cardinality{\operatorname{Aut}_K(F)}\le [F:K]\le n!.
+n!=\cardinality{\Aut_K(F)}\le [F:K]\le n!.
 $$
 Hence equality holds throughout. A finite extension has as many
 $K$-automorphisms as its degree exactly when it is Galois. Thus $F/K$ is
@@ -121,7 +121,7 @@ $$
 
 $K(u)/K$ is not Galois and
 $$
-\operatorname{Aut}_K(K(u))=1.
+\Aut_K(K(u))=1.
 $$
 
 ::: pf-proof
@@ -133,7 +133,7 @@ $S_n$ for $n\ge3$, so $K(u)/K$ is not Galois.
 For an intermediate field $F^H$ of a finite Galois extension, restriction
 induces
 $$
-\operatorname{Aut}_K(F^H)\cong N_G(H)/H.
+\Aut_K(F^H)\cong N_G(H)/H.
 $$
 Here $H$ is a point stabilizer. If $g\in N_G(H)$, then
 $$
@@ -143,7 +143,7 @@ But $gHg^{-1}$ is the stabilizer of $g(u)$. Distinct points have distinct
 stabilizers in the natural $S_n$-action, so $g(u)=u$, hence $g\in H$.
 Thus $N_G(H)=H$, and therefore
 $$
-\operatorname{Aut}_K(K(u))\cong H/H=1.
+\Aut_K(K(u))\cong H/H=1.
 $$
 
 :::
