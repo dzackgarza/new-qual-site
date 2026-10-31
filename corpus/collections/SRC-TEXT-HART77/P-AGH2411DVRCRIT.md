@@ -26,11 +26,10 @@ audit:
   note: Hartshorne II.4.11(a) has no restriction, but when O = K is a field and L/K is algebraic no DVR of L dominates O. The statement now assumes that O is not a field or that L is not algebraic over K.
 ---
 
-::: problem
+::: {.problem}
 If we are willing to do harder commutative algebra and stick to noetherian schemes, then the valuative criteria of separatedness and properness can be expressed using only **discrete** valuation rings.
 
-a. If $\OO, \mfm$ is a noetherian local domain with quotient field $K$, and if $L$ is a finitely generated field extension of $K$ such that $\OO$ is not a field or $L$ is not algebraic over $K$, then there exists a discrete valuation ring $R$ of $L$ dominating $\OO$.
-   Prove this in the following steps.
+(a) If $(\OO,\mfm)$ is a noetherian local domain with quotient field $K$, and if $L$ is a finitely generated field extension of $K$ such that $\OO$ is not a field or $L$ is not algebraic over $K$, then there exists a discrete valuation ring $R$ of $L$ dominating $\OO$. Prove this in the following steps.
 
     - By taking a polynomial ring over $\OO$, reduce to the case where $L$ is a finite extension field of $K$.
     - Show that for a suitable choice of generators $x_1, \ldots, x_n$ of $\mfm$, the ideal $\mfa = (x_1)$ in $\OO' = \OO[x_2/x_1, \ldots, x_n/x_1]$ is not the unit ideal.
@@ -38,8 +37,7 @@ a. If $\OO, \mfm$ is a noetherian local domain with quotient field $K$, and if $
     - Let $\widetilde{\OO'_\mfp}$ be the integral closure of $\OO'_\mfp$ in $L$. Use the Krull-Akizuki theorem (Nagata, p. 115) to show that $\widetilde{\OO'_\mfp}$ is noetherian of dimension $1$.
     - Finally, take $R$ to be a localization of $\widetilde{\OO'_\mfp}$ at one of its maximal ideals.
 
-b. Let $f: X \to Y$ be a morphism of finite type of noetherian schemes.
-   Show that $f$ is separated, respectively proper, if and only if the criterion of (4.3), respectively (4.7), holds for all discrete valuation rings.
+(b) Let $f: X \to Y$ be a morphism of finite type of noetherian schemes. Show that $f$ is separated, respectively proper, if and only if the criterion of (4.3), respectively (4.7), holds for all discrete valuation rings.
 :::
 
 ::: {.solution}
@@ -461,12 +459,6 @@ $$
 The forward implications are step [](#s9){.pf-ref}.  The converse separatedness implication is step [](#s10){.pf-ref}, and the converse properness implication is steps [](#s11){.pf-ref}, [](#s12){.pf-ref} and [](#s13){.pf-ref}.
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (a), and steps [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref}, [](#s13){.pf-ref} and [](#s14){.pf-ref} prove part (b).
 
 :::
 
