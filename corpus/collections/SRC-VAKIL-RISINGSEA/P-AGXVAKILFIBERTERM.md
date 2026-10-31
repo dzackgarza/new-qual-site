@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Show that the fiber product over the terminal object is the cartesian product.
+Let $Z$ be a final object of a category, and let $X$ and $Y$ be objects. Assuming the relevant products and fibered products exist, show that $X\times_Z Y$ is uniquely isomorphic to the product $X\times Y$.
 :::
 
 ::: {.solution}
