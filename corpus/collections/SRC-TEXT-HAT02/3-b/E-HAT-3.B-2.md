@@ -14,6 +14,19 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.B, Exercise 2; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Checked the two directions on the tensor complex: the boundary of $e\otimes c$ is
+    $(v_1-v_0)\otimes c-e\otimes\partial c$, so a chain map satisfies
+    $f_1-f_0=\partial h+h\partial$ on that summand and $f_i\partial=\partial f_i$ on the two
+    others, which is exactly a homotopy; conversely the displayed formulas let any homotopy be
+    extended to a chain map.
 ---
 
 ::: {.problem}

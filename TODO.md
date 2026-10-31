@@ -47,9 +47,9 @@ marked proposed. `E-HAT-1.A-8` is settled: `proofs/cards/SubgroupFiniteness.lean
 generating family has finitely many subgroups of a given nonzero index, with no `sorryAx`.
 
 `ad-text-hat02` is partly read, against the book itself
-(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §3.3; proofs are
-read for §1.1, §1.2, §1.A, §1.B-1..-4, §2.1-1..-17 and all of §2.2, §2.3, §3.1, §3.2 and §3.3. Exact
-scope, with no section counted as read beyond it:
+(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §3.3 and for §3.A and §3.B; proofs
+are read for §1.1, §1.2, §1.A, §1.B-1..-4, §2.1-1..-17 and all of §2.2, §2.3, §3.1, §3.2, §3.3, §3.A
+and §3.B. Exact scope, with no section counted as read beyond it:
 §1.1: 20 statements compared, the twelve solved proofs read line by line, `E-HAT-1.1-17` repaired.
 §1.2: 22 statements compared, all 22 proofs read line by line; `E-HAT-1.2-12`, `-14`, `-16` closing
 steps repaired, `E-HAT-1.2-22` restructured into one proof and its subcomplex framing corrected.
@@ -110,8 +110,12 @@ sentence broken mid-way ("The middle map is ... are isomorphisms"), which is rep
 §3.A: all 6 statements compared with the printed exercises; two of them had dropped half of a printed "iff" — `E-HAT-3.A-2` ("torsionfree iff $\\operatorname{Tor}(A,B)=0$ for all $B$") and
 `E-HAT-3.A-6` ("contains an element of order $n$ iff both do") — and the missing directions are restored, with the proofs extended
 to cover them. All 6 proofs are read.
+§3.B: all 5 statements compared with the printed exercises and all 5 proofs read. `E-HAT-3.B-1`'s group formulas are rechecked from the cellular
+tensor complex (free part $f_i$, torsion part $t_i$, cohomology shifted by one), `-2` on both directions of the $I\\otimes C$ dictionary, `-3` by
+recomputing $H_{2n+1}$ on both sides of $f\\times1$, `-4` through naturality and excision of the local cross product, `-5` through the four
+invariance checks.
 Unread entirely: the proofs of §1.3 beyond the ten listed, of §1.B-5..-9 and of §2.1-6, -8, -10, -17,
--23..-25, -27..-29, and the proofs and statements of §3.B onward and §4 onward.
+-23..-25, -27..-29, and the proofs and statements of §3.C onward and §4 onward.
 
 ## Fast local checks and complete CI acceptance
 
