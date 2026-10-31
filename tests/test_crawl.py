@@ -3,6 +3,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import pytest
+
 from qualc.crawl import crawl, data_urls
 
 
@@ -57,3 +59,15 @@ def test_data_driven_broken_url_is_a_crawl_failure(tmp_path: Path) -> None:
 
     assert urls == [("problems.json", (site / "tag" / "P-MISSING.html").resolve())]
     assert result.broken == (("problems.json", "tag/P-MISSING.html"),)
+
+
+def test_crawl_rejects_missing_catalog_data(tmp_path: Path) -> None:
+    site = tmp_path / "_site"
+    write(site / "index.html", '<a href="problems.html">Problems</a>')
+    write(site / "problems.html", '<table id="problem-table"></table>')
+    write(site / "sources.html", '<table id="source-table"></table>')
+    write(site / "collection-problems.json", "{}")
+    write(site / "sources.json", '{"rows":[]}')
+
+    with pytest.raises(FileNotFoundError):
+        crawl(site)
