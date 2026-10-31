@@ -44,13 +44,15 @@ $$
 0,&i<m\text{ or }i>n.
 \end{cases}
 $$
-The natural maps in the two constructions give a comparison map
+To compare the spaces, use the homotopy-fiber models
 $$
-(X^n)_m\longrightarrow (X_m)^n
+X_m\simeq\operatorname{hofib}(X\to X^{m-1}),
+\qquad
+(X^n)_m\simeq\operatorname{hofib}(X^n\to X^{m-1})
 $$
-compatible with the maps to the corresponding Postnikov stages of $X$. On every homotopy group this comparison is an isomorphism by the displayed calculation. Both spaces have CW type, so Whitehead's theorem gives
+when $n\ge m-1$. The map $X\to X^n$ induces a map between these fibers. Its long exact homotopy sequence shows that $X_m\to(X^n)_m$ is an isomorphism on $\pi_i$ for $i\le n$. The target has no homotopy above $n$, so this map exhibits $(X^n)_m$ as an $n$th Postnikov stage of $X_m$. Hence
 $$
 \boxed{(X^n)_m\simeq (X_m)^n.}
 $$
-Thus the notation $X_m^n$ is unambiguous up to homotopy, and it has exactly the stated nonzero homotopy groups.
+If $n<m-1$, both iterated constructions are contractible; the case $n=m-1$ follows from the same fiber model. Thus the notation $X_m^n$ is unambiguous up to homotopy, and it has exactly the stated nonzero homotopy groups.
 :::
