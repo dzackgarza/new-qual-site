@@ -22,131 +22,26 @@ In particular, there is no $M(\ZZ^n, 1)$ with fundamental group $\ZZ^n$, free ab
 :::
 
 ::: {.solution}
-
-::: pf
-
-::: pf-step
-
-A Moore space $M(G, 1)$ is a connected CW complex with $\pi_1 \cong G$ and $\widetilde{H}_i = 0$ for $i \neq 1$.
-
-::: pf-proof
-
-definition of a Moore space of type $(G, 1)$.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-If $M(G,1)$ exists, then $H_2(K(G,1);\ZZ) = 0$.
-
-::: pf-proof
-
-::: {.pf-step #s2-1}
-
-$M(G,1)$ is a $K(G,1)$.
-
-::: pf-proof
-
-$\pi_1 \cong G$ and $\pi_i = 0$ for $i \ge 2$ (since $\widetilde{H}_i = 0$ for $i \ge 2$ and $\pi_1$ acts trivially, Hurewicz gives $\pi_i = 0$).
-
-:::
-
-:::
-
-::: pf-step
-
-$H_2(K(G,1);\ZZ) = H_2(M(G,1);\ZZ) = 0$.
-
-::: pf-proof
-
-Step [](#s2-1){.pf-ref} and the Moore-space condition $\widetilde{H}_2 = 0$.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Conversely, if $H_2(K(G,1);\ZZ) = 0$, then $M(G,1)$ exists.
-
-::: pf-proof
-
-::: {.pf-step #s3-1}
-
-Attach $3$-cells to $K(G,1)$ to kill $\pi_2$, then $4$-cells to kill $\pi_3$, and so on.
-
-::: pf-proof
-
-standard construction of a Moore space from a $K(G,1)$ by killing higher homotopy groups.
-
-:::
-
-:::
-
-::: {.pf-step #s3-2}
-
-This does not change $H_2$ (attaching cells of dimension $\ge 3$ only affects homology in degrees $\ge 2$ via the boundary maps, and $H_2$ remains $0$ since it was already $0$).
-
-::: pf-proof
-
-attaching a $3$-cell can only kill $H_2$ or create $H_3$; since $H_2 = 0$ already, it stays $0$.
-
-:::
-
-:::
-
-::: pf-step
-
-The result is a $K(G,1)$-based complex with $\pi_1 = G$ and $\widetilde{H}_i = 0$ for $i \neq 1$, i.e. a Moore space $M(G,1)$.
-
-::: pf-proof
-
-Steps [](#s3-1){.pf-ref} and [](#s3-2){.pf-ref}.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-For $G = \ZZ^n$ with $n \ge 2$, $H_2(K(\ZZ^n,1);\ZZ) = H_2(T^n;\ZZ) = \ZZ^{\binom{n}{2}} \neq 0$.
-
-::: pf-proof
-
-$K(\ZZ^n,1) = T^n$ (the $n$-torus), and $H_2(T^n) \cong \bigwedge^2 \ZZ^n \cong \ZZ^{\binom{n}{2}}$.
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-Hence there is no $M(\ZZ^n, 1)$ for $n \ge 2$.
-
-::: pf-proof
-
-Step [](#s2){.pf-ref} (contrapositive) and step [](#s4){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s5){.pf-ref}.
-
-:::
-
-:::
-
+Here $G$ is abelian, as in the definition of a Moore space: $H_1(M(G,1))\cong G$ and $\widetilde H_i(M(G,1))=0$ for $i\ne1$.
+
+Suppose first that such a space $M$ has $\pi_1(M)\cong G$. Attach cells of dimensions at least $3$ to kill its higher homotopy groups, obtaining a $K(G,1)$. Exercise 23, applied to $M$, identifies
+$$
+H_2(K(G,1))\cong H_2(M)/h(\pi_2(M))=0.
+$$
+
+Conversely, let $K$ be a CW model for $K(G,1)$ with $H_2(K)=0$, and put $A=K^2$. The inclusion induces an isomorphism $\pi_1(A)\cong G$, and $H_2(A)$ is a subgroup of the free cellular group $C_2(A)$, hence is free abelian. By Exercise 23,
+$$
+H_2(A)/h(\pi_2(A))\cong H_2(K(G,1))=0.
+$$
+Choose a basis of $H_2(A)$ and represent each basis element by a map $S^2\to A$. Attach one $3$-cell along each map, and call the result $M$. In its cellular chain complex the new differential $C_3(M)\to C_2(A)$ maps the chosen free basis bijectively onto $H_2(A)=\ker(d_2)$. It is therefore injective, so $H_3(M)=0$, and its image makes $H_2(M)=0$. There are no cells above dimension $3$. Attaching the $3$-cells preserves $\pi_1$ and $H_1$, giving
+$$
+\pi_1(M)\cong G,\qquad H_1(M)\cong G,\qquad\widetilde H_i(M)=0\quad(i\ne1).
+$$
+Thus $M$ is the required Moore space.
+
+Finally, $T^n$ is a $K(\ZZ^n,1)$ and
+$$
+H_2(T^n;\ZZ)\cong\bigwedge^2\ZZ^n\ne0\qquad(n\ge2).
+$$
+Hence no Moore space $M(\ZZ^n,1)$ has fundamental group $\ZZ^n$ in this range.
 :::
