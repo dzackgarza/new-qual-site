@@ -30,9 +30,11 @@ Show that $A$ is open in $X$.
 :::
 
 ::: {.solution}
-For each $x\in A$, choose the open set $U_x$ supplied by the hypothesis. Then
+Let $\mathcal U$ be the collection of all open subsets of $X$ contained in
+$A$. The hypothesis says that every $x\in A$ lies in some member of
+$\mathcal U$. Therefore
 $$
-A=\bigcup_{x\in A}U_x.
+A=\bigcup_{U\in\mathcal U}U.
 $$
-Indeed, every $x\in A$ belongs to $U_x$, while every $U_x$ is contained in $A$. Since arbitrary unions of open sets are open, $A$ is open.
+Since arbitrary unions of open sets are open, $A$ is open.
 :::
