@@ -12,7 +12,7 @@ certifies it.
 | File | Card | What it certifies |
 | --- | --- | --- |
 | `cards/FieldHomework1.lean` | `P-FHW1-01` | The printed hypothesis of problem 1(a) holds with $L=\bot$ for every $\alpha$ (the refutation), and both directions of the corrected statement with $L\ne 0$. |
-| `cards/DeltaComplexHomology.sage` | `E-HAT-2.1-4`, `-5`, `-6`, `-9`, `E-HAT-2.2-19` | Exact Smith-normal-form homology of the chain complexes those cards write down: the parachute, the Klein bottle, the collapsed complex with $H_1=\ZZ/2^n$, the collapsed $\Delta^n$, and the cellular complex of $\RP^n/\RP^m$ for all $m<n\le 8$. |
+| `cards/DeltaComplexHomology.sage` | `E-HAT-2.1-4`, `-5`, `-6`, `-9`, `E-HAT-2.2-11`, `-19` | Exact Smith-normal-form homology of the chain complexes those cards write down: the parachute, the Klein bottle, the collapsed complex with $H_1=\ZZ/2^n$, the collapsed $\Delta^n$, the cellular complex of $\RP^n/\RP^m$ for all $m<n\le 8$, and the abelianization of the cube complex's presentation. |
 
 ## Checking
 

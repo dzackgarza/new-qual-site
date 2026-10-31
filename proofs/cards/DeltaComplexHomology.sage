@@ -131,5 +131,23 @@ for m in range(0, 5):
 
 print()
 
+# --- Exercise 2.2-11: the cube with quarter twists.  Card 1.2-14 gives
+# pi_1 = <i, j, k | i = jk, j = ki, k = ij>, and H_1 of a path-connected space is
+# the abelianization of pi_1.  Abelianizing gives the relation matrix below; its
+# Smith normal form gives the abelian invariants.
+rel = matrix(ZZ, 3, 3, [-1, 1, 1,
+                         1, -1, 1,
+                         1, 1, -1])
+snf = rel.smith_form()[0]
+diag = [snf[i][i] for i in range(3)]
+invariants = [d for d in diag if d > 1]
+free_rank = sum(1 for d in diag if d == 0)
+ok = (free_rank, invariants) == (0, [2, 2])
+print(f"2.2-11 cube: Smith form {diag} -> Z^{free_rank} + {['Z/%d' % d for d in invariants]}  "
+      f"{'OK' if ok else 'MISMATCH, expected Z/2 + Z/2'}")
+results.append(ok)
+
+print()
+
 print("all certificates pass" if all(results) else "CERTIFICATE FAILURE")
 assert all(results)

@@ -19,6 +19,14 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 2.2, Exercise 11.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The abelianization of the presentation of card E-HAT-1.2-14 is checked exactly in
+    proofs/cards/DeltaComplexHomology.sage: the relation matrix has Smith form
+    diag(1, 2, 2), so H_1 = Z/2 + Z/2, as the card states. Identifying H_1 with the
+    abelianization of pi_1 is a theorem, not part of the computation.
 ---
 
 ::: {.problem}
