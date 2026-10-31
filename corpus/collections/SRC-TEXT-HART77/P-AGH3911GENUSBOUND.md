@@ -166,8 +166,8 @@ $$
 For a one-dimensional projective scheme, the leading coefficient of the
 Hilbert polynomial is its degree. Hence the linear terms of $P_{Y_0}$ and
 $P_C$ cancel, so $P_{\mathcal N}$ is constant. Therefore $\mathcal N$ has
-zero-dimensional support. Since it is coherent on the projective curve $C$,
-it has finite length.
+zero-dimensional support. As a coherent sheaf on the projective scheme
+$Y_0$ with zero-dimensional support, it has finite length.
 
 :::
 
@@ -191,9 +191,9 @@ $$
 $$
 Since $\mathcal N$ is supported at finitely many closed points,
 $$
-H^i(C,\mathcal N)=0\quad(i>0),
+H^i(Y_0,\mathcal N)=0\quad(i>0),
 \qquad
-\chi(\mathcal N)=h^0(C,\mathcal N)=\operatorname{length}(\mathcal N)\ge0.
+\chi(\mathcal N)=h^0(Y_0,\mathcal N)=\operatorname{length}(\mathcal N)\ge0.
 $$
 Additivity of Euler characteristic gives
 $$
