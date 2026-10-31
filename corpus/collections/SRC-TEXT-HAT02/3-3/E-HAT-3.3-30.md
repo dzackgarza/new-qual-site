@@ -30,24 +30,12 @@ Show that the boundary of an $R$-orientable manifold is also $R$-orientable.
 :::
 
 ::: {.solution}
-Let $M^n$ be $R$-orientable. A collar identifies a neighborhood of the boundary with
+Let $c:\partial M\times[0,\varepsilon)\to M$ be a collar. At a point $(x,t)$ with $t>0$, the local homology product isomorphism identifies the orientation module of the interior of $M$ with
 $$
-\partial M\times[0,\varepsilon).
+H_{n-1}(\partial M,\partial M\setminus\{x\};R)
+\otimes_R H_1((0,\varepsilon),(0,\varepsilon)\setminus\{t\};R).
 $$
-For $x\in\partial M$, choose a small half-ball neighborhood $B_+^n$ in $M$. The local fundamental class of $M$ determines a generator of
-$$
-H_n(B_+^n,B_+^n-\{x\};R)
-$$
-in the relative form appropriate to a boundary point. The connecting homomorphism for the local pair sends this generator to a generator of
-$$
-H_{n-1}(\partial M,\partial M-\{x\};R).
-$$
-Use this image as the local orientation of $\partial M$ at $x$.
+The increasing coordinate on $(0,\varepsilon)$ gives a consistent generator of the second factor. Divide the given local $R$-orientation of $M$ by this generator to obtain a generator of $H_{n-1}(\partial M,\partial M\setminus\{x\};R)$.
 
-Naturality of the connecting homomorphism shows that these boundary local classes vary locally constantly whenever the local orientation classes of $M$ do. Hence they define an $R$-orientation of $\partial M$.
-
-Equivalently, in oriented collar charts this is the usual rule that an oriented basis of the boundary is chosen so that the outward normal followed by that basis gives the orientation of $M$. Thus
-$$
-\boxed{\partial M\text{ is }R\text{-orientable}.}
-$$
+The product isomorphism is natural under restriction to smaller collar charts. Since the local orientations of $M$ agree on overlaps, the resulting boundary generators agree on overlaps as well. They therefore define an $R$-orientation of $\partial M$.
 :::
