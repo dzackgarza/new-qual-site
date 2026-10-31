@@ -29,6 +29,11 @@ audit:
   date: 2026-10-31
   note: >-
     Read the two triangles in the square model: $\partial U=a+b-c$ and $\partial L=a-b-c$ give the displayed matrix, whose image has rank two, so $H_1=\ZZ\oplus\ZZ/2$ and $H_2=0$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Certified exactly in proofs/cards/DeltaComplexHomology.sage: the Smith normal form of the two-triangle boundary matrix gives H_0 = Z, H_1 = Z + Z/2, H_2 = 0, as the card states.
 ---
 
 ::: {.problem}

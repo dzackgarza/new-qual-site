@@ -28,6 +28,11 @@ audit:
   date: 2026-10-31
   note: >-
     Read the collapsing boundary formula: every face of $\sigma_k$ is the single $\sigma_{k-1}$, so the alternating sum is $1$ for even $k$ and $0$ for odd $k$, giving $H_k=\ZZ$ for even $k$ and $0$ for odd $k$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Certified exactly in proofs/cards/DeltaComplexHomology.sage for n = 1, ..., 8: with d_k the single alternating-sum entry, the homology is Z in degree 0, 0 in degrees 0 < k < n, and Z or 0 in degree n according as n is odd or even.
 ---
 
 ::: {.problem}

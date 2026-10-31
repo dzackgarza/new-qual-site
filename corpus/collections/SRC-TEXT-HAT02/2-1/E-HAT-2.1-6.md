@@ -35,6 +35,11 @@ audit:
   date: 2026-10-31
   note: >-
     Read the chain groups and the description of the two boundary maps; the alternating sums on the collapsed edges are followed as stated, and I did not recompute the general-$n$ matrices entry by entry.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Certified exactly in proofs/cards/DeltaComplexHomology.sage for n = 1, ..., 6: the Smith normal form of the boundary matrix is diag(1, ..., 1, 2^n), giving H_0 = Z, H_1 = Z/2^n, H_k = 0 for k >= 2.
 ---
 
 ::: {.problem}

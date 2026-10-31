@@ -12,13 +12,15 @@ certifies it.
 | File | Card | What it certifies |
 | --- | --- | --- |
 | `cards/FieldHomework1.lean` | `P-FHW1-01` | The printed hypothesis of problem 1(a) holds with $L=\bot$ for every $\alpha$ (the refutation), and both directions of the corrected statement with $L\ne 0$. |
+| `cards/DeltaComplexHomology.sage` | `E-HAT-2.1-4`, `-5`, `-6`, `-9` | Exact Smith-normal-form homology of the chain complexes those cards write down: the parachute, the Klein bottle, the collapsed complex with $H_1=\ZZ/2^n$, and the collapsed $\Delta^n$. |
 
 ## Checking
 
-Lean 4.33.1 with the Mathlib on `LEAN_PATH`:
+Lean 4.33.1 with the Mathlib on `LEAN_PATH`, and Sage for the integer linear algebra:
 
 ```sh
 lean proofs/cards/FieldHomework1.lean
+sage proofs/cards/DeltaComplexHomology.sage
 ```
 
 `#print axioms` at the end of each file must show only `propext`,

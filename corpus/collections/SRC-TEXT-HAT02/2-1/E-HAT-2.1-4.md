@@ -28,6 +28,11 @@ audit:
   date: 2026-10-31
   note: >-
     Read the chain groups and both boundary maps: the alternating sum gives $\partial_2\sigma=a-b+c$, so $H_2=0$, $H_1=\ZZ^2$ and $H_0=\ZZ$, matching the homotopy type of a wedge of two circles.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The homology of the chain complex the card writes down is certified exactly by Smith normal form in proofs/cards/DeltaComplexHomology.sage, which recomputes it from the boundary matrices and asserts H_0 = Z, H_1 = Z^2, H_2 = 0. The identification of that complex with the space is the geometric step and rests on the book's description.
 ---
 
 ::: {.problem}
