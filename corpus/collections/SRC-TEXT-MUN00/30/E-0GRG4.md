@@ -89,7 +89,7 @@ Let $D \subset \RR^\omega$ be any dense subset. For each $\mathbf{x} \in S$, the
 $\RR^\omega$ is not Lindelöf:
 
 ::: pf-proof
-For each $\mathbf{x} \in S$, the set $F_\mathbf{x} = \{\mathbf{x}\}$ is closed in $\RR^\omega$. Consider the open cover of $\RR^\omega$ given by $\mathcal{U} = \{B_{\bar{\rho}}(\mathbf{x}, \frac{1}{2}) : \mathbf{x} \in S\} \cup \{\RR^\omega \setminus S\}$. Any subcover must contain every ball $B_{\bar{\rho}}(\mathbf{x}, \frac{1}{2})$ because $\mathbf{x} \in S$ belongs to no other member of $\mathcal{U}$. Since $S$ is uncountable, no countable subcover exists.
+The coordinate projections are continuous in the uniform topology, so $S=\bigcap_n\pi_n^{-1}(\{0,1\})$ is closed. Consider the open cover of $\RR^\omega$ given by $\mathcal{U} = \{B_{\bar{\rho}}(\mathbf{x}, \frac{1}{2}) : \mathbf{x} \in S\} \cup \{\RR^\omega \setminus S\}$. Any subcover must contain every ball $B_{\bar{\rho}}(\mathbf{x}, \frac{1}{2})$ because $\mathbf{x} \in S$ belongs to no other member of $\mathcal{U}$. Since $S$ is uncountable, no countable subcover exists.
 :::
 
 :::
