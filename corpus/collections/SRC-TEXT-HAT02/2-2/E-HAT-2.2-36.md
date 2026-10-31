@@ -68,15 +68,15 @@ H_i(P_n,A_n)\cong H_{i-1}(P_{n-1},A_{n-1}).
 $$
 
 ::: pf-proof
-Decompose $S^n$ into upper and lower hemispheres $D_+^n$ and $D_-^n$, meeting in $S^{n-1}$, and choose $x_0$ on the equator. Apply relative Mayer--Vietoris to the pair
+Choose $x_0$ on the equator $S^{n-1}$. Cover $S^n$ by open, slightly enlarged upper and lower hemispheres $U_+$ and $U_-$. Each $U_\pm$ contracts to $x_0$ while fixing $x_0$, and their intersection is an equatorial band that deformation retracts onto $S^{n-1}$ while fixing $x_0$. Apply relative Mayer--Vietoris to the pair
 $$
 (X\times S^n,\,X\times\{x_0\}).
 $$
 The two hemisphere pairs
 $$
-(X\times D_\pm^n,\,X\times\{x_0\})
+(X\times U_\pm,\,X\times\{x_0\})
 $$
-deformation retract to $(X,X)$ and hence have zero relative homology. Their intersection pair is
+deformation retract to $(X,X)$ and hence have zero relative homology. Their intersection pair deformation retracts to
 $$
 (X\times S^{n-1},\,X\times\{x_0\}).
 $$
