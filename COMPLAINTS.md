@@ -103,3 +103,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Workflow and rendering papercuts
 
+### A fresh VM cannot run three of the suite's tests without four local prerequisites
+
+- **Object and need:** `just test` (= `uv run --group dev pytest -q`), the local counterpart of the `test-ci` tier that `development.yml` gates on at `enforcement: correctness`.
+  Three tests fail on a machine provisioned only with the repository and a Python toolchain.
+
+- **Observed evidence:** on 2026-10-31, in a clean checkout at `90114787db`, `pytest -q` reported 3 failed, 271 passed, each failure a missing executable or package rather than a wrong assertion:
+  `test_static_site.py::test_a_search_excerpt_is_never_cut_inside_mathematics` runs `node -e`, and the VM has no `node`;
+  `test_display_math.py::test_a_commutative_diagram_is_a_block_not_a_paragraph` and `test_card_git_validation.py::test_staged_header_errors_cannot_be_hidden_by_a_valid_worktree` compile a `tikzcd` block through `~/.pandoc/filters/tikzcd.lua`, which needs the pandoc-config clone, `pdf2svg`, and the two TeX packages `dzg-preamble` loads beyond a basic scheme (`bbm`, `luahyperbolic`).
+  `ci/_ci-setup` covers only the pandoc-config clone, `pdf2svg`, and a scheme-full TeX Live, and relies on the runner's preinstalled Node.
+
+- **Impact and owner:** anyone verifying a card locally, and every agent session that reports the suite's state.
+  The three tests are legitimate gates — they catch a search excerpt cut inside mathematics and a diagram silently dropped from the page — so the repair belongs in the environment, not in the tests.
+
+- **Uncertainty:** verified, and now repaired on this VM without touching a test: pandoc-config cloned to `$HOME/.pandoc` per `_ci-setup`; a portable Node under the project's ignored `tmp/`; a `pdf2svg` shim over `pdftocairo -svg`; and `bbm` plus `luahyperbolic` installed into `$HOME/texmf`.
+  With those in place the whole suite passes, so the failures were prerequisites and not regressions.
+  A scheme-full TeX Live makes the two TeX packages unnecessary, which is what CI does.
+
+- **Repair:** no repository change is required for CI, which already has all four.
+  A local `_local-setup` recipe naming the four would save the next session the diagnosis; this entry is the record until one exists.
+

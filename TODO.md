@@ -36,6 +36,16 @@ papers themselves are in no reachable archive, which is recorded in
 “Theorem 6.1” of RA-WORKSHOP D7-W3 is that sheet's own numbering for [Rud76, Thm. 7.12],
 the continuity of a uniform limit of continuous functions.
 
+`ad-text-hat02` is partly read, against the book itself (`pi.math.cornell.edu/~hatcher/AT/AT.pdf`,
+Section 1.1 p. 38 and Section 1.2 pp. 52–55).
+On 2026-10-31 all 20 cards of §1.1 had their statements compared with the exercises and the twelve
+solved cards had their proofs read: one defect, `E-HAT-1.1-17`, whose proof called
+$\pi_1(S^1\vee S^1)=\ZZ*\ZZ$ a "standard computation" in a one-line block and closed with a
+back-reference, and now cites §1.2 Example 1.21 and carries the retraction and nonhomotopy arguments.
+The 22 statements of §1.2 were compared and agree with the book, apart from an explanatory
+parenthesis in exercise 10; their proofs are still unread, and no section from §1.3 onward has been
+opened. Next work under this node is the §1.2 proofs, then §1.3.
+
 ## Fast local checks and complete CI acceptance
 
 Local hooks reject basic defects in the actual changed content; CI owns full test suites,
