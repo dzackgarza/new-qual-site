@@ -35,7 +35,7 @@ B^a B = \determinant{B} I_n = p_\phi I_n \in M_n(k[x])
 .$$
 *If $E$ is a $k[x]$-module with structure induced by $\phi$, and $\psi$ is the $k[x]$-module endomorphism $E\to E$ with matrix given by $B$, then*
 $$ 
-\psi(u) = x u -\phi(u) = \phi(u) - \phi(u) = 0 && \forall u\in E
+\psi(u) = x u -\phi(u) = \phi(u) - \phi(u) = 0 \qquad \forall u\in E
 .$$
 
 :::

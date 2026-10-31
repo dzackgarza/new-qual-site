@@ -40,7 +40,7 @@ Expanding the determinant, the only term of degree $n$ in $x$ is the product of 
 
 ::: pf-qed
 
-The minimal polynomial $q$ is the monic generator of the ideal $\{f \in k[x] : f(\phi) = 0\}$. By step [](#s1){.pf-ref}, $p$ lies in this ideal, so $q \mid p$. Since $p \neq 0$, $\deg q \le \deg p = n$.
+The minimal polynomial $q$ is the monic generator of the ideal $\{f \in k[x] \st f(\phi) = 0\}$. By step [](#s1){.pf-ref}, $p$ lies in this ideal, so $q \mid p$. Since $p \neq 0$, $\deg q \le \deg p = n$.
 
 :::
 

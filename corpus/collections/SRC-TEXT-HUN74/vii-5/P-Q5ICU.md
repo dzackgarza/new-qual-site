@@ -21,7 +21,7 @@ review: draft
 :::
 
 ::: {.solution}
-Let $\lambda_1, \ldots, \lambda_k \in K$ be the distinct eigenvalues of $\psi$ and $E_{\lambda_i}(\psi) = \{v \in E : \psi(v) = \lambda_i v\}$. Since $\psi$ is diagonalizable, $E = \bigoplus_{i=1}^k E_{\lambda_i}(\psi)$.
+Let $\lambda_1, \ldots, \lambda_k \in K$ be the distinct eigenvalues of $\psi$ and $E_{\lambda_i}(\psi) = \{v \in E \st \psi(v) = \lambda_i v\}$. Since $\psi$ is diagonalizable, $E = \bigoplus_{i=1}^k E_{\lambda_i}(\psi)$.
 
 ::: pf
 
@@ -67,7 +67,7 @@ By step [](#s1-2){.pf-ref}, each $E_{\lambda_i}(\psi)$ has a basis $\mathcal{B}_
 
 ::: pf-step
 
-(b) If $A, B \in M_n(K)$ commute and are each similar to a diagonal matrix, then there is $P \in \operatorname{GL}_n(K)$ with $P^{-1} A P$ and $P^{-1} B P$ both diagonal.
+(b) If $A, B \in M_n(K)$ commute and are each similar to a diagonal matrix, then there is $P \in \GL_n(K)$ with $P^{-1} A P$ and $P^{-1} B P$ both diagonal.
 
 ::: pf-proof
 
