@@ -43,7 +43,12 @@ HEADER = """\
 
 def cited_keys() -> list[str]:
     """The keys of every `Cite` element Pandoc reads in wiki/ and corpus/, with the compiler's dialect."""
-    paths = [path for where in ("wiki", "corpus") for path in (ROOT / where).rglob("*.md")]
+    paths: list[Path] = []
+    for where in ("wiki", "corpus"):
+        source = ROOT / where
+        if not source.is_dir():
+            raise FileNotFoundError(f"authored source directory missing: {source}")
+        paths.extend(source.rglob("*.md"))
     keys: set[str] = set()
 
     def collect(elem: pf.Element, doc: pf.Doc) -> None:
@@ -59,7 +64,10 @@ def cited_keys() -> list[str]:
 
 
 def export(keys: list[str]) -> str:
-    query = urllib.parse.urlencode({"citationKeys": ",".join(keys), "translator": "Better CSL YAML"}, quote_via=urllib.parse.quote)
+    query = urllib.parse.urlencode(
+        {"citationKeys": ",".join(keys), "translator": "Better CSL YAML"},
+        quote_via=urllib.parse.quote,
+    )
     request = urllib.request.Request(f"{EXPORT}?{query}", method="GET")
     with urllib.request.urlopen(request, timeout=60) as response:
         body: bytes = response.read()
@@ -83,13 +91,17 @@ def main() -> int:
     references = yaml.safe_load(exported)["references"]
     missing = sorted(set(keys) - {reference["id"] for reference in references})
     if missing:
-        print(f"no Zotero item has the citation key: {' '.join(missing)}", file=sys.stderr)
+        print(
+            f"no Zotero item has the citation key: {' '.join(missing)}", file=sys.stderr
+        )
         return 1
     for reference in references:
         for field in DROPPED:
             reference.pop(field, None)
 
-    body = yaml.safe_dump({"references": references}, allow_unicode=True, sort_keys=False)
+    body = yaml.safe_dump(
+        {"references": references}, allow_unicode=True, sort_keys=False
+    )
     (ROOT / "vocabularies" / "references.yaml").write_text(HEADER + body)
     print(f"{len(keys)} works cited: {' '.join(keys)}")
     return 0
