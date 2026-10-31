@@ -5,16 +5,16 @@ kind: problem
 title: 'Circular and iterated sums of $(z+n+m\tau)^{-2}$ differ from $\wp$ by constants'
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics:
-  - Meromorphic Functions
-  - Uniform Convergence
+    - Elliptic Functions
+    - Weierstrass P
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}
