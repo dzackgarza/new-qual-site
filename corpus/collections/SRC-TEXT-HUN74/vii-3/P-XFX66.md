@@ -26,8 +26,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $B$ be an $R$-module.
-Show that if $r+r\neq 0$ for all $r\neq 0 \in R$, then an $n$-linear form $B^n\to R$ is alternating $\iff$ it is skew-symmetric.
+Let $R$ be a commutative ring with identity and $B$ an $R$-module.
+Show that if $r+r\neq 0$ for all nonzero $r\in R$, then an $n$-linear form $B^n\to R$ is alternating $\iff$ it is skew-symmetric.
 What if $\operatorname{char} R = 2$?
 :::
 
