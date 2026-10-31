@@ -16,10 +16,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-corrected
+  by: chatgpt
+  date: 2026-10-31
+  note: "Clarified proper containment: inclusive containment would force P=0."
 ---
 
 ::: {.exercise}
-In a ufd $R$, prove all "minimal" prime ideals are principal — i.e. if the only prime ideal contained in $P$ is $\theset{0}$, then $P$ is principal.
+In a UFD $R$, prove that if every prime ideal properly contained in $P$ is $\theset{0}$, then $P$ is principal.
 :::
 
 ::: {.solution}
