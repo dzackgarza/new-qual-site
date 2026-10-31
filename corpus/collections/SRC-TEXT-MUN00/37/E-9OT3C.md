@@ -37,6 +37,8 @@ Show that the intersection of the elements of $\mathcal{B}$ belongs to $\mathcal
 :::
 
 ::: {.solution}
+Every connected subset lies in one quasicomponent. For the converse, fix $x,y$ in the same quasicomponent of $X$.
+
 ::: pf
 
 ::: pf-step
