@@ -1789,7 +1789,9 @@ mathematical correction under its own node, not under copy policy.
     "../Fig/Pr/Fa93-12.ps not found" where the curve $\gamma$ should be, so the statement has no
     contour and the solution answers in terms of winding numbers. Find another copy of the Fall
     1993 Berkeley prelim (or the Fa93-12 figure) and transcribe the curve. **Acceptance:** the
-    statement describes $\gamma$ as drawn and the solution gives a number.
+    statement describes $\gamma$ as drawn and the solution gives a number. **Closed.**
+    De Souza and Silva, Problem 5.11.17, p. 81, reproduces the curve:
+    its winding numbers at $-1,0,1$ are $1,2,-1$.
   - **`ad-bks81-11-contour`**. **Needs:** none. P-BKS81-11: the retained Spring81.pdf prints
     "../Fig/Pr/Sp81-11.ps not found" where the curve $C$ should be, so the statement has no
     contour and the solution answers in terms of winding numbers. Find another copy of the Spring
