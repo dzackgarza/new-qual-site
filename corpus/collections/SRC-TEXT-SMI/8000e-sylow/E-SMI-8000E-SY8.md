@@ -23,6 +23,10 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Proved the general p>n statement using p-adic valuation of (np)!, the orbit decomposition on np letters, and the faithful embedding into a product of cyclic order-p permutation groups; parts (i) and (ii) follow as n=2,3."
+- event: source-corrected
+  by: chatgpt
+  date: 2026-10-31
+  note: "Smith part (i) omits p>2; for p=2, a Sylow 2-subgroup of S4 is the nonabelian dihedral group of order 8."
 ---
 
 ::: {.exercise}
@@ -178,10 +182,4 @@ $p>3$.
 
 :::
 
-:::
-
-::: {.remark}
-The source states part (i) without the condition $p>2$. For $p=2$, a Sylow
-$2$-subgroup of $S_4$ has order $8$ and is isomorphic to the nonabelian
-dihedral group $D_8$. With $p>2$, part (i) is the case $n=2$ of part (iii).
 :::
