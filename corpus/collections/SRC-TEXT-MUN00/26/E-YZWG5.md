@@ -20,6 +20,8 @@ Show that there exist disjoint open sets $U$ and $V$ containing $A$ and $B$, res
 :::
 
 ::: {.solution}
+If $A$ or $B$ is empty, take its open neighborhood to be $\varnothing$ and the other to be $X$. Assume both are nonempty.
+
 For each $a\in A$ and $b\in B$, Hausdorffness gives disjoint open sets $U_{a,b}\ni a$ and $V_{a,b}\ni b$. Fix $a$. The sets $V_{a,b}$ cover compact $B$, so choose $b_1,\dots,b_m$ with
 $$
 B\subset V_{a,b_1}\cup\cdots\cup V_{a,b_m}.
