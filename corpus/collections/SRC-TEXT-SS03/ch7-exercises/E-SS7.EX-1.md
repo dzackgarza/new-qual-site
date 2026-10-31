@@ -2,17 +2,17 @@
 schema: qual/card@1
 id: E-SS7.EX-1
 kind: problem
-title: "Bounded partial sums give convergence of the Dirichlet series for Re(s) > 0"
+title: "Bounded partial sums give convergence of the Dirichlet series for $\\Re(s) > 0$"
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics: ['Zeta Function', 'Prime Number Theorem', 'Dirichlet Series']
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}

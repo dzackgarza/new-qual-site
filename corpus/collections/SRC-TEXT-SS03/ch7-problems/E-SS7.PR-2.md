@@ -30,6 +30,10 @@ $$
 where the sum is taken over all zeros $\rho$ of the zeta function in the critical strip. The error term is given by $E(x) = c_1 x - c_0 + \sum_{k=1}^{\infty} x^{1-2k}/(2k(2k - 1))$, where $c_1 = \zeta'(0)/\zeta(0)$ and $c_0 = \zeta'(-1)/\zeta(-1)$. Note that $\sum_\rho 1/\abs{\rho}^{1+\epsilon} < \infty$ for every $\epsilon > 0$, because $(1 - s)\zeta(s)$ has order of growth $1$. (See Exercise 8.) Also, obviously $E(x) = O(x)$ as $x \to \infty$.
 :::
 
+::: {.remark}
+The source prints the zero terms as $x^{\rho}/(\rho(\rho+1))$ and the error term as $c_1x + c_0 + \cdots$. The residues of $\frac{x^{s+1}}{s(s+1)}\left(-\frac{\zeta'}{\zeta}(s)\right)$ at $s = \rho$ and $s = -1$ are $-\frac{x^{\rho+1}}{\rho(\rho+1)}$ and $+c_0$, which give the statement above.
+:::
+
 ::: {.solution}
 Let $x>1$, and put
 $$
@@ -100,30 +104,27 @@ At $s=1$, $\zeta$ has a simple pole with residue $1$, so $-\zeta'/\zeta$ has res
 :::
 
 ::: {.pf-step #boundary}
-The integrals of $F$ over the left side and the two horizontal sides of $R$ tend to $0$ as $A\to\infty$ and $T\to\infty$.
+Take $A = 2K+1$ odd and $T$ along a suitable sequence $T_m \to \infty$. Then the integrals of $F$ over the left side and the two horizontal sides of $R$ tend to $0$.
 
 ::: pf-proof
-On the contour, the standard estimate
+Two standard bounds are used (Davenport, *Multiplicative Number Theory*, Ch. 17). First, there are $T_m \in [m, m+1]$ with $\abs{\frac{\zeta'}{\zeta}(\sigma \pm iT_m)} \le C\log^2 T_m$ for $-1 \le \sigma \le c$. Second, for $\sigma \le -1$ at distance at least $\frac12$ from the even integers, $\abs{\frac{\zeta'}{\zeta}(s)} \le C\log(2+\abs{s})$; this follows from the logarithmic derivative of the functional equation
 $$
-\abs{\frac{\zeta'}{\zeta}(s)}=O(\log(2+\abs{t}))
+\frac{\zeta'}{\zeta}(s)=\log 2\pi+\frac{\pi}{2}\cot\frac{\pi s}{2}-\frac{\Gamma'}{\Gamma}(1-s)-\frac{\zeta'}{\zeta}(1-s),
 $$
-holds uniformly for $\sigma\ge0$, away from the pole at $s=1$. For $\sigma<0$, the functional equation
-$$
-\zeta(s)=2^s\pi^{s-1}\sin\left(\frac{\pi s}{2}\right)\Gamma(1-s)\zeta(1-s)
-$$
-and Stirling's formula give the same bound. On the left side $s=-A+it$,
+since $\cot$ is bounded there, $\frac{\Gamma'}{\Gamma}(1-s) = O(\log\abs{1-s})$, and $\frac{\zeta'}{\zeta}(1-s)$ is bounded for $\Re(1-s) \ge 2$.
+The second bound holds on the left side $s=-A+it$ and on the parts of the horizontal sides with $\sigma \le -1$. On the left side,
 $$
 \abs{\int_{C_L}F(s)\,ds}
-\le Cx^{1-A}\int_{-\infty}^{\infty}\frac{\log(2+\abs{t})}{1+t^2}\,dt
-=O(x^{1-A}).
+\le Cx^{1-A}\int_{-\infty}^{\infty}\frac{\log(2+A+\abs{t})}{(A-1)^2+t^2}\,dt \longrightarrow 0
+\quad (A \to \infty),
 $$
-On the horizontal sides $s=\sigma\pm iT$,
+because $x > 1$. On the horizontal sides $s=\sigma\pm iT_m$, both bounds give $\abs{\frac{\zeta'}{\zeta}(s)} \le C\log^2(T_m + \abs{\sigma})$, so
 $$
-\abs{\int_{C_T^\pm}F(s)\,ds}
-\le CT^{-2}\log(2+T)\int_{-\infty}^{c}x^{\sigma+1}\,d\sigma
-=O(T^{-2}\log T).
+\abs{\int_{C_{T_m}^\pm}F(s)\,ds}
+\le \frac{C}{T_m^2}\int_{-\infty}^{c}x^{\sigma+1}\log^2(T_m+\abs{\sigma})\,d\sigma
+=O\left(\frac{\log^2 T_m}{T_m^2}\right),
 $$
-Both bounds tend to $0$.
+which tends to $0$.
 :::
 
 :::

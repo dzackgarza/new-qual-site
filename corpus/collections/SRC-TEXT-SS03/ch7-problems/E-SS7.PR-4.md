@@ -81,7 +81,7 @@ because the left side is the real part of
 $$
 \sum_{p\nmid q,m}\frac{1}{m}p^{-m\sigma}\left(3+4\chi(p)^mp^{-imt}+\chi(p)^{2m}p^{-2imt}\right),
 $$
-and $3+4\Re z+\Re z^2\ge0$ for $\abs{z}\le1$. If $L(1+it,\chi)=0$ for some $t\ne0$, then as $\sigma\to1^+$, the second term is $4\log(\sigma-1)+O(1)$, the first term is $-3\log(\sigma-1)+O(1)$, and the third term is bounded above, so the sum tends to $-\infty$, a contradiction. Hence $L(1+it,\chi)\ne0$. The same inequality, made quantitative, gives the standard zero-free region
+and $3+4\Re z+\Re z^2\ge0$ for $\abs{z}\le1$. If $L(1+it,\chi)=0$ for some $t\ne0$, then as $\sigma\to1^+$, the second term is $4\log(\sigma-1)+O(1)$, the first term is $-3\log(\sigma-1)+O(1)$, and the third term is bounded above, so the sum tends to $-\infty$, a contradiction. For $t=0$, $L(1,\chi)\ne0$ is the nonvanishing theorem in the proof of Dirichlet's theorem (Book I, Chapter 8). Hence $L(1+it,\chi)\ne0$ for all $t$. The same inequality, made quantitative, gives the standard zero-free region
 $$
 L(s,\chi)\ne0\quad\text{for}\quad \sigma>1-\frac{c}{\log(\abs{t}+2)}
 $$
