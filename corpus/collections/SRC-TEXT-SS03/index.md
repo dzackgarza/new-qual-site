@@ -203,6 +203,8 @@ source:
       comment: Ch. 4, Problem 2
     - id: E-SS4.PR-3
       comment: Ch. 4, Problem 3
+    - id: E-SS4.PR-4
+      comment: Ch. 4, Problem 4
   - name: Ch5 Exercises
     problems:
     - id: E-SS5.EX-1
