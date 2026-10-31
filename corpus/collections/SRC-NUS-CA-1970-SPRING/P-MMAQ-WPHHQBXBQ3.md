@@ -21,7 +21,9 @@ audit:
 ::: {.problem}
 Evaluate the improper integral
 
-$\int_0^\infty \frac{x^2~dx}{(x^2+1)(x^2+4)}$
+$$
+\int_0^\infty \frac{x^2\,dx}{(x^2+1)(x^2+4)}.
+$$
 :::
 
 ::: {.solution}

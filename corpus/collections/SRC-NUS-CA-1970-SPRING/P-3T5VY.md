@@ -21,7 +21,9 @@ audit:
 ::: {.problem}
 Find the number of zeroes, counting multiplicities, of the polynomial
 
-$f(z) = 2z^5 - 6z^2 - z + 1 = 0$
+$$
+f(z) = 2z^5 - 6z^2 - z + 1
+$$
 
 in the annulus $1 \leq \abs{z} \leq 2$.
 :::
