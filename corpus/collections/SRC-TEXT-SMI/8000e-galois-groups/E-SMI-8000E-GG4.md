@@ -32,53 +32,74 @@ Work problems 14, 15, 16, 17, page 557 of Dummit and Foote, then deduce Corollar
 
 ::: pf
 
+::: {.pf-step #df14}
+
+Every nonconstant monic polynomial in $\ZZ[x]$ has infinitely many prime divisors among its values at positive integers.
+
+::: pf-proof
+
+Let $F\in\ZZ[x]$ be monic of positive degree. Suppose that only the primes
+$q_1,\ldots,q_k$ divide its nonzero values at positive integers. Choose
+$N>0$ with $a=F(N)\ne0$ and put $Q=q_1\cdots q_k$. The polynomial
+$$
+B(t)=\frac{F(N+aQt)}{a}
+$$
+has integer coefficients: its constant term is $1$, and every other term
+in its expansion about $N$ is divisible by $aQ$ before division by $a$.
+Thus $B(t)\equiv1\pmod Q$ for every integer $t$.
+
+Choose $t$ so that $N+aQt>0$ and $\abs{B(t)}>1$; both hold sufficiently
+far along the direction in which $aQt$ is positive. A prime $q$ dividing
+$B(t)$ divides $F(N+aQt)$ but does not divide $Q$. This contradicts the
+list $q_1,\ldots,q_k$.
+
+:::
+
+:::
+
+::: {.pf-step #df15}
+
+If $p$ is an odd prime with $p\nmid m$ and $p\mid\Phi_m(a)$, then $a$ has order $m$ modulo $p$.
+
+::: pf-proof
+
+The factorization $x^m-1=\prod_{d\mid m}\Phi_d(x)$ gives
+$a^m\equiv1\pmod p$, so $a$ is a unit modulo $p$ and its order $d$
+divides $m$. If $d<m$, then $a$ is a root modulo $p$ of both
+$x^d-1$ and $\Phi_m(x)$. Since both divide $x^m-1$ as distinct factors,
+$a$ would be a multiple root of $x^m-1$ modulo $p$. But its derivative
+is $mx^{m-1}$, which is nonzero at $a$ because $p\nmid m$ and $a$ is a
+unit. Hence $d=m$.
+
+:::
+
+:::
+
+::: {.pf-step #df16}
+
+If an odd prime $p$ divides $\Phi_m(a)$, then either $p\mid m$ or $p\equiv1\pmod m$.
+
+::: pf-proof
+
+When $p\nmid m$, step [](#df15){.pf-ref} gives an element of order $m$
+in $(\ZZ/p\ZZ)^\times$, whose order is $p-1$. Lagrange's theorem gives
+$m\mid p-1$.
+
+:::
+
+:::
+
 ::: {.pf-step #s1}
 
 For every positive integer $m$, there are infinitely many primes $p$ with $p\equiv1\pmod m$.
 
 ::: pf-proof
 
-The case $m=1$ is immediate, so assume $m>1$. Recall that if a prime
-$q$ does not divide $m$ and
-$$
-q\mid\Phi_m(a),
-$$
-then the image of $a$ in $\mathbf F_q^\times$ has order exactly $m$. Hence
-$$
-m\mid(q-1),
-$$
-so $q\equiv1\pmod m$ [@DF04].
-
-Suppose, toward a contradiction, that the primes congruent to $1$ modulo $m$
-are exactly
-$$
-p_1,\ldots,p_r.
-$$
-Choose a positive integer $t$ large enough that
-$$
-\abs{\Phi_m(t m p_1\cdots p_r)}>1,
-$$
-which is possible because $\Phi_m$ is a nonconstant monic polynomial, and set
-$$
-a=t m p_1\cdots p_r.
-$$
-Because $m>1$, the cyclotomic polynomial has constant term
-$$
-\Phi_m(0)=1.
-$$
-Thus every prime dividing $a$ is coprime to $\Phi_m(a)$. Since
-$\abs{\Phi_m(a)}>1$, choose a prime
-$$
-q\mid\Phi_m(a).
-$$
-Then $q\nmid a$, in particular $q\nmid m$ and $q\ne p_i$ for every $i$.
-Since $q\nmid m$ and $q\mid\Phi_m(a)$, the image of $a$ in
-$\mathbf F_q^\times$ has order $m$, so
-$$
-q\equiv1\pmod m,
-$$
-contradicting completeness of the list $p_1,\ldots,p_r$. Hence infinitely
-many such primes exist.
+The cyclotomic polynomial $\Phi_m(x)$ is monic of positive degree. By
+step [](#df14){.pf-ref}, infinitely many primes divide its values at
+positive integers. Only finitely many of these primes divide $2m$.
+Every other such prime is odd, does not divide $m$, and is congruent
+to $1$ modulo $m$ by step [](#df16){.pf-ref}.
 
 :::
 
