@@ -24,7 +24,7 @@ audit:
 
 ::: {.problem}
 Let $X$ be a noetherian scheme, and assume that $\Coh(X)$ has enough locally frees (Ex. 6.4).
-For a coherent sheaf $\mcf$, define its **homological dimension** $\operatorname{hd}(\mcf)$ to be the least length of a resolution by locally free coherent sheaves, or $+\infty$ if there is no finite one.
+For a coherent sheaf $\mcf$, define its \dfn{homological dimension} $\operatorname{hd}(\mcf)$ to be the least length of a resolution by locally free coherent sheaves, or $+\infty$ if there is no finite one.
 Show:
 
 (a) $\mcf$ is locally free $\iff \mathcal{E}xt^1(\mcf, \mcg)=0$ for all $\mcg \in \Mod(X)$;
