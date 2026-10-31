@@ -23,8 +23,8 @@ from pathlib import Path
 import yaml
 
 
-def check_card(path: Path) -> list[str]:
-    """Return a list of missing fields for one card file."""
+def check_card(path: Path) -> list[str] | None:
+    """Return missing fields for a problem card, or None for another card kind."""
     text = path.read_text()
     if not text.startswith("---\n"):
         return ["no-frontmatter"]
@@ -38,7 +38,7 @@ def check_card(path: Path) -> list[str]:
     kind = meta.get("kind", "")
 
     if kind != "problem":
-        return []
+        return None
 
     title = meta.get("title", "")
     if not title or not title.strip():
@@ -85,7 +85,7 @@ def main() -> None:
 
     for path in sorted(corpus.rglob("*.md")):
         issues = check_card(path)
-        if not issues:
+        if issues is None:
             continue
         card_id = path.stem
         if not issues:
