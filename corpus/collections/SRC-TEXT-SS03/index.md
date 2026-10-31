@@ -201,6 +201,8 @@ source:
       comment: Ch. 4, Problem 1
     - id: E-SS4.PR-2
       comment: Ch. 4, Problem 2
+    - id: E-SS4.PR-3
+      comment: Ch. 4, Problem 3
   - name: Ch5 Exercises
     problems:
     - id: E-SS5.EX-1
