@@ -45,8 +45,8 @@ Hint: Consider a projection from a point of the curve to $\PP^2$.
 :::
 
 ::: {.remark}
-The following argument proves the exceptional cases and reduces the converse
-to a tangent-contact question. It is not a proof of the full assertion.
+The following argument proves the exceptional cases and the converse in
+characteristic zero. The positive-characteristic converse remains open here.
 
 As in Hartshorne IV.3, a multisecant is a line meeting $X$ in at least
 three distinct points. A tangent with intersection length $3$ at one point
@@ -161,6 +161,31 @@ Each line in the two finite families has finite intersection with the
 integral curve $X$. Choose $P$ outside the union of these finite
 intersections. Steps [](#s6){.pf-ref}--[](#s9){.pf-ref} prove that projection
 from this point is a closed immersion.
+
+:::
+
+:::
+
+::: {.pf-step #tangent-char-zero}
+
+In characteristic zero, the tangent-line finiteness assumption in step
+[](#s5){.pf-ref} holds for every smooth nonplanar curve $X$.
+
+::: pf-proof
+
+By [Kaji's theorem on tangentially degenerate curves](https://doi.org/10.1112/jlms/s2-33.3.430),
+the tangent line at a general point of a smooth nonplanar curve does not meet
+the curve at a second point. The points where it does form a constructible
+subset of $X$. Since this subset does not contain the generic point, it is
+finite.
+
+The points where the tangent line has contact order at least $3$ are also
+finite. Indeed, this is a closed condition on $X$. If it held at the generic
+point, choose a separating affine coordinate $x$ as a local parameter there
+and write the other affine coordinates as $y(x)$ and $z(x)$. Contact order at
+least $3$ gives $y''(x)=z''(x)=0$. In characteristic zero, both $y$ and $z$
+are affine-linear functions of $x$, so $X$ lies on a line, contrary to the
+nonplanarity assumption.
 
 :::
 
@@ -400,7 +425,7 @@ This establishes the stated conditional conclusion.
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove that the four stated curves have no multisecants. The converse needs a proof that the tangent contacts excluded in step [](#s5){.pf-ref} cannot obstruct the projection argument when distinct trisecants are finite.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove that the four stated curves have no multisecants. Step [](#tangent-char-zero){.pf-ref} supplies the extra hypothesis of step [](#s5){.pf-ref} in characteristic zero, so steps [](#s4){.pf-ref} and [](#s12){.pf-ref} prove the converse there. The stated converse in positive characteristic still needs a separate argument.
 
 :::
 
