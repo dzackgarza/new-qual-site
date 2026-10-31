@@ -16,6 +16,10 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: solution-reviewed
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Part (a) treated the 2-dimensional strips as a 1-skeleton; rewritten to collapse the table and retract the strips to a wedge of circles before attaching the squares. Part (b) now links consecutive under-arcs along the knot.
 ---
 
 ::: {.problem}
@@ -38,50 +42,42 @@ Finally, over each arc $\beta_\ell$ put a square $S_\ell$, bent downward along i
 
 ::: pf
 
-::: pf-step
-The $1$-skeleton of $X$ is the union of the strips $R_i$, each of which is a rectangle with its two long edges glued to the table $T$.
+::: {.pf-step #p1-1}
+The subcomplex $X_1=T\cup\bigcup_i R_i$ is homotopy equivalent to a wedge of circles, one circle $x_i$ for each strip, where $x_i$ is a loop that starts on $T$, crosses $R_i$ once from one long edge to the other, and returns along $T$.
 
 ::: pf-proof
-by construction, each $R_i$ is a disk attached along two arcs to $T$.
+The table $T$ is a disk, hence contractible, so collapsing it gives a homotopy equivalence $X_1\to X_1/T$.
+Write $R_i=[0,1]\times[0,1]$ with long edges $[0,1]\times\{0\}$ and $[0,1]\times\{1\}$ on $T$.
+In $X_1/T$ the strip becomes $[0,1]\times[0,1]$ with both long edges collapsed to the basepoint; this deformation retracts onto the image of a transverse segment $\{1/2\}\times[0,1]$, which is a circle.
+The strips meet $T$ only along their long edges, so these retractions combine to a deformation retraction of $X_1/T$ onto a wedge of circles, and the circle for $R_i$ is the image of $x_i$.
+Orient each $x_i$ so that it passes under $K$ in the direction given by the right-hand rule with respect to a fixed orientation of $K$.
 :::
 
 :::
 
 ::: {.pf-step #p1-2}
-Each strip $R_i$ contributes a generator $x_i$ to $\pi_1(X)$.
+In $\pi_1(X_1)$ the four edges of a square $S_\ell$ represent, in cyclic order, $x_i$, $x_j$, $x_i^{-1}$, $x_k^{-1}$, after a choice of paths in $T$ to the basepoint.
 
 ::: pf-proof
-attaching a $2$-cell (the strip) along two arcs to the contractible table $T$ creates a loop; the generator $x_i$ is the loop that runs along $R_i$ from one long edge to the other.
+A short edge of $R_j$ is a transverse segment of $R_j$ with endpoints on $T$, so with a path in $T$ it is homotopic to $x_j^{\pm1}$; the same holds for the short edge of $R_k$.
+An arc crossing the interior of $R_i$ from one long edge to the other is likewise homotopic to $x_i^{\pm1}$.
+The two edges on $R_i$ are opposite edges of the square, so they are traversed in opposite directions around $\partial S_\ell$, giving $x_i$ and $x_i^{-1}$.
+The under-arcs $\alpha_j$ and $\alpha_k$ are consecutive along the oriented knot and pass under $\beta_\ell$ in the same direction, while the boundary of $S_\ell$ crosses their strips in opposite directions; with the orientations of step [](#p1-1){.pf-ref} this gives $x_j$ and $x_k^{-1}$, with $j,k$ labelled as in the source figure.
 :::
 
 :::
 
-::: pf-step
-Each square $S_\ell$ is a $2$-cell attached along a loop that runs through three strips $R_i, R_j, R_k$.
+::: {.pf-step #p1-3}
+$\pi_1(\RR^3-K)\cong\langle x_1,\ldots,x_m\mid x_ix_jx_i^{-1}=x_k\text{ for each }S_\ell\rangle$.
 
 ::: pf-proof
-by construction, the four edges of $S_\ell$ are glued to $R_j$, $R_k$, and two arcs crossing $R_i$.
+$\RR^3-K$ deformation retracts onto $X$, and $X$ is obtained from $X_1$ by attaching one $2$-cell $S_\ell$ for each crossing.
+By step [](#p1-1){.pf-ref}, $\pi_1(X_1)$ is free on the $x_i$.
+Attaching a $2$-cell adds its attaching word as a relator, and by step [](#p1-2){.pf-ref} the attaching word of $S_\ell$ is $x_ix_jx_i^{-1}x_k^{-1}$ up to cyclic permutation, which is the relation $x_ix_jx_i^{-1}=x_k$.
 :::
 
 :::
 
-::: {.pf-step #p1-4}
-The attaching loop of $S_\ell$ is $x_i x_j x_i^{-1} x_k^{-1}$.
-
-::: pf-proof
-traversing the boundary of $S_\ell$: along $R_j$ (giving $x_j$), across $R_i$ (giving $x_i$), back along $R_k$ (giving $x_k^{-1}$), and back across $R_i$ (giving $x_i^{-1}$); with the orientation convention this reads $x_i x_j x_i^{-1} = x_k$.
-:::
-
-:::
-
-::: {.pf-step #p1-5}
-Hence $\pi_1(\RR^3 - K) = \langle x_1, \ldots, x_m \mid x_i x_j x_i^{-1} = x_k \text{ for each } S_\ell \rangle$.
-
-::: pf-proof
-steps [](#p1-2){.pf-ref} and [](#p1-4){.pf-ref}, by van Kampen (the $2$-cells impose exactly these relations).
-:::
-
-:::
 
 :::
 
@@ -108,11 +104,15 @@ step [](#p2-1){.pf-ref}.
 :::
 
 ::: {.pf-step #p2-3}
-The crossing graph (vertices = strips, edges = crossings) is connected, since $K$ is a single knot.
+Every generator $x_i$ is connected to every other by a chain of such relations $x_j=x_k$.
 
 ::: pf-proof
-the knot is connected, so its diagram is connected.
+Follow the oriented knot around once.
+It runs through the under-arcs $\alpha_1,\ldots,\alpha_m$ in cyclic order, and between two consecutive under-arcs it passes under one crossing $\beta_\ell$, whose square gives the relation identifying their generators.
 :::
+
+:::
+
 
 :::
 

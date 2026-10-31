@@ -16,6 +16,10 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-reviewed
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The other identification gives H_1 = Z^2 + Z/3, not the closed surface N_3; solution recomputed from the CW structure of the identified pair of pants.
 ---
 
 ::: {.problem}
@@ -26,110 +30,92 @@ Show that the other way yields a space $Z$ with $\pi_1(Z)$ not isomorphic to $\p
 :::
 
 ::: {.solution}
+Let $P$ be the disk with two holes, with outer boundary circle $C_0$ and inner boundary circles $C_1,C_2$, all oriented counterclockwise in the plane.
+An identification of the three circles is a quotient $P\to K$ onto a space in which the $C_i$ become one circle $C$, each $C_i\to C$ a homeomorphism of degree $d_i=\pm1$ for a fixed orientation of $C$.
+
 ::: pf
 
-::: pf-step
-$Y$ has $\pi_1(Y) = \langle a, b, c \mid aba^{-1}b^{-1}cb^\varepsilon c^{-1}\rangle$ (from the preceding exercise).
+::: {.pf-step #s1}
+
+The quotient $K$ is a CW complex with one $0$-cell $v$, three $1$-cells $c,e_1,e_2$, and one $2$-cell attached along
+$$
+c^{d_0}\,e_1\,c^{-d_1}\,e_1^{-1}\,e_2\,c^{-d_2}\,e_2^{-1}.
+$$
 
 ::: pf-proof
-given.
+
+Give $P$ the CW structure with one vertex $v_i$ on each $C_i$, the three circles $C_i$ as loops at $v_i$, two arcs $e_1,e_2$ from $v_0$ to $v_1$ and $v_2$, and one $2$-cell.
+Cutting $P$ along $e_1$ and $e_2$ leaves a disk whose boundary reads $C_0\,e_1\,C_1^{-1}\,e_1^{-1}\,e_2\,C_2^{-1}\,e_2^{-1}$, the inner circles being traversed clockwise.
+We may take the identifications to send each $v_i$ to one point $v$ of $C$.
+In the quotient each $C_i$ becomes $c^{d_i}$, which gives the stated attaching word.
+
 :::
 
 :::
 
 ::: {.pf-step #s2}
-$H_1(Y) = \ZZ^2$.
+
+$$
+H_1(K)\cong\ZZ^2\oplus\ZZ/\abs{d_0-d_1-d_2}.
+$$
 
 ::: pf-proof
 
-::: {.pf-step #s2-1}
-Abelianizing the relation $aba^{-1}b^{-1}cb^\varepsilon c^{-1} = 1$ gives $b^\varepsilon = 1$.
+By step [](#s1){.pf-ref} and van Kampen, $\pi_1(K)$ has generators $c,e_1,e_2$ and the single relator of step [](#s1){.pf-ref}.
+Abelianizing, the $e_i$ cancel and the relation becomes $(d_0-d_1-d_2)c=0$.
+Hence $H_1(K)=\ZZ e_1\oplus\ZZ e_2\oplus\ZZ c/(d_0-d_1-d_2)$.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+The integer $\abs{d_0-d_1-d_2}$ is $3$ when $d_1=d_2=-d_0$, and is $1$ otherwise.
 
 ::: pf-proof
-in the abelianization, $aba^{-1}b^{-1} = 1$ and $cb^\varepsilon c^{-1} = b^\varepsilon$, so the relation becomes $b^\varepsilon = 1$.
-:::
 
-:::
+Each $d_i$ is $\pm1$.
+If $d_1=d_2=-d_0$ then $d_0-d_1-d_2=3d_0$.
+Otherwise at least one of $-d_1,-d_2$ equals $-d_0$, so the sum is $\pm1$.
+These are the two essentially different identifications.
 
-::: {.pf-step #s2-2}
-Hence $b = 1$ in $H_1(Y)$ (since $\varepsilon = \pm 1$).
-
-::: pf-proof
-step [](#s2-1){.pf-ref}.
-:::
-
-:::
-
-::: pf-step
-Therefore $H_1(Y) = \langle a, b, c \mid b = 1\rangle = \ZZ^2$ (free abelian on $a$ and $c$).
-
-::: pf-proof
-step [](#s2-2){.pf-ref}.
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-The other identification yields $Z$, the nonorientable surface of genus $3$ (the connected sum of three projective planes), with $\pi_1(Z) = \langle a, b, c \mid a^2 b^2 c^2\rangle$.
-
-::: pf-proof
-identifying the three boundary circles of a disk with two holes in the other (nonorientable, boundary-closing) way produces the closed nonorientable surface $N_3$, whose fundamental group has the standard presentation $\langle a,b,c \mid a^2b^2c^2 = 1\rangle$.
 :::
 
 :::
 
 ::: {.pf-step #s4}
-$H_1(Z) = \ZZ^2 \oplus \ZZ/2$.
+
+$H_1(Y)\cong\ZZ^2$.
 
 ::: pf-proof
 
-::: pf-step
-Abelianizing $a^2 b^2 c^2 = 1$ gives $2a + 2b + 2c = 0$, i.e. $2(a+b+c) = 0$.
-
-::: pf-proof
-additive notation in the abelianization.
-:::
-
-:::
-
-::: pf-step
-Hence $H_1(Z) = \langle a, b, c \mid 2(a+b+c) = 0\rangle \cong \ZZ^2 \oplus \ZZ/2$.
-
-::: pf-proof
-the single relation $2(a+b+c) = 0$ introduces one $\ZZ/2$ torsion summand, leaving free rank $2$.
-:::
-
-:::
+By the preceding exercise, $\pi_1(Y)=\langle a,b,c\mid aba^{-1}b^{-1}cb^{\varepsilon}c^{-1}\rangle$ with $\varepsilon=\pm1$.
+Abelianizing gives $\varepsilon b=0$, so $b=0$ and $H_1(Y)$ is free abelian on $a$ and $c$.
+Thus $Y$ is the identification with $\abs{d_0-d_1-d_2}=1$ in step [](#s3){.pf-ref}.
 
 :::
 
 :::
 
 ::: {.pf-step #s5}
-$H_1(Y) = \ZZ^2 \not\cong \ZZ^2 \oplus \ZZ/2 = H_1(Z)$.
+
+For the other identification, $H_1(Z)\cong\ZZ^2\oplus\ZZ/3$.
 
 ::: pf-proof
-steps [](#s2){.pf-ref} and [](#s4){.pf-ref}; one is torsion-free, the other has a $\ZZ/2$ summand.
-:::
 
-:::
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} with $d_1=d_2=-d_0$.
 
-::: {.pf-step #s6}
-Hence $\pi_1(Y) \not\cong \pi_1(Z)$.
-
-::: pf-proof
-isomorphic groups have isomorphic abelianizations, but step [](#s5){.pf-ref} shows the abelianizations differ.
 :::
 
 :::
 
 ::: pf-qed
-step [](#s6){.pf-ref}.
+
+$\pi_1(Y)\not\cong\pi_1(Z)$, because isomorphic groups have isomorphic abelianizations and $H_1(Y)=\pi_1(Y)^{\mathrm{ab}}$ is torsion-free while $H_1(Z)$ has an element of order $3$, by steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
+
 :::
 
 :::
+
 :::

@@ -15,6 +15,10 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: solution-reviewed
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The old solution used winding numbers about irrational points, which are not removed; replaced by rectangles with irrational sides, separated by winding about a removed rational point.
 ---
 
 ::: {.problem}
@@ -22,76 +26,44 @@ Show that $\pi_1(\RR^2 - \QQ^2)$ is uncountable.
 :::
 
 ::: {.solution}
+Let $X=\RR^2-\QQ^2$, let $u=\sqrt2$, and take the basepoint $(u,u)\in X$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-$\RR^2 - \QQ^2$ is the plane with the countable dense set $\QQ^2$ removed.
-
-::: pf-proof
-
-$\QQ^2$ is countable.
-
-:::
-
-:::
-
-::: pf-step
-
-For each irrational $\alpha$, the vertical line $L_\alpha = \{(\alpha, y) : y \in \RR\}$ is contained in $\RR^2 - \QQ^2$ (since $\alpha \notin \QQ$).
+For each irrational $s>u$, the boundary $\gamma_s$ of the rectangle $[u,s]\times[u,u+1]$, traversed counterclockwise from $(u,u)$, is a loop in $X$.
 
 ::: pf-proof
 
-a point $(\alpha, y)$ is in $\QQ^2$ only if $\alpha \in \QQ$.
+A point of $\QQ^2$ has both coordinates rational.
+Each side of the rectangle lies on a line $x=u$, $x=s$, $y=u$ or $y=u+1$, and $u$, $s$, $u+1$ are irrational.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
-For each irrational $\alpha$, choose a basepoint $p_\alpha = (\alpha, 0)$ and a loop $\gamma_\alpha$ that goes around the point $(\alpha, 0)$ once (a small circle).
+If $q\in\QQ^2$ and $\gamma,\gamma'$ are loops in $X$ that are homotopic in $X$, then their winding numbers about $q$ are equal.
 
 ::: pf-proof
 
-construct a loop.
+Since $X\subseteq\RR^2-\{q\}$, a homotopy in $X$ is a homotopy in $\RR^2-\{q\}$, and the winding number about $q$ is the image of the class of the loop under $\pi_1(\RR^2-\{q\})\cong\pi_1(S^1)\cong\ZZ$.
 
 :::
 
 :::
 
-::: {.pf-step #s4}
+::: {.pf-step #s3}
 
-The loops $\gamma_\alpha$ for distinct irrationals $\alpha$ represent distinct elements of $\pi_1(\RR^2 - \QQ^2)$.
+If $u<s<s'$ are irrational, then $[\gamma_s]\ne[\gamma_{s'}]$ in $\pi_1(X,(u,u))$.
 
 ::: pf-proof
 
-the winding number of $\gamma_\alpha$ around a point $(\beta, 0)$ is $1$ if $\beta = \alpha$ and $0$ otherwise; since winding number is a homotopy invariant, distinct $\alpha$ give non-homotopic loops.
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-There are uncountably many irrationals $\alpha$.
-
-::: pf-proof
-
-$\RR \setminus \QQ$ is uncountable.
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-Hence $\pi_1(\RR^2 - \QQ^2)$ contains uncountably many distinct elements, so it is uncountable.
-
-::: pf-proof
-
-Steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
+By density of $\QQ$ choose rational $a\in(s,s')$ and $b\in(u,u+1)$, and let $q=(a,b)$.
+The point $q$ is outside the rectangle bounded by $\gamma_s$ and inside the rectangle bounded by $\gamma_{s'}$, so the winding numbers about $q$ are $0$ and $1$.
+Step [](#s2){.pf-ref} gives the claim.
 
 :::
 
@@ -99,7 +71,7 @@ Steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
 
 ::: pf-qed
 
-Step [](#s6){.pf-ref}.
+The map $s\mapsto[\gamma_s]$ from the uncountable set of irrationals $s>u$ to $\pi_1(X)$ is injective by step [](#s3){.pf-ref}, so $\pi_1(\RR^2-\QQ^2)$ is uncountable.
 
 :::
 

@@ -48,15 +48,15 @@ whose family is locally finite.
 
 ::: pf-proof
 
-Since $D$ is discrete, for each $d\in D$ there is $\epsilon_d>0$ such that
+Since $D$ is discrete, for each $d\in D$ there is $\varepsilon_d>0$ such that
 $$
-B(d,\epsilon_d)\cap D=\{d\}.
+B(d,\varepsilon_d)\cap D=\{d\}.
 $$
 Choose
 $$
-0<r_d<\min\{1,\epsilon_d/3\}.
+0<r_d<\min\{1,\varepsilon_d/3\}.
 $$
-If $d\ne e$, then $\epsilon_d\le\norm{d-e}$ and $\epsilon_e\le\norm{d-e}$, so
+If $d\ne e$, then $\varepsilon_d\le\norm{d-e}$ and $\varepsilon_e\le\norm{d-e}$, so
 $$
 r_d+r_e<\frac23\norm{d-e}<\norm{d-e}.
 $$
