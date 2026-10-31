@@ -46,7 +46,7 @@ Analysis of Part (a):
 ::: pf-step
 **Case 1 ($j_*$ is trivial):**
 - If $j_*(g) = 1$ for all $g \in \pi_1(U \cap V, x_0)$, then $i_*(g) j_*(g)^{-1} = i_*(g) \in \pi_1(U, x_0)$.
-- The relators lie entirely within the factor $\pi_1(U, x_0)$, so $N$ is the normal closure in $\pi_1(U, x_0)$ of $i_*(\pi_1(U \cap V, x_0))$.
+- The relators lie in the factor $\pi_1(U, x_0)$. Quotient that factor by the normal closure of $i_*(\pi_1(U \cap V, x_0))$ before taking the free product.
 - Factoring out $N$ affects only the first factor, yielding:
   $$\pi_1(X, x_0) \cong (\pi_1(U, x_0) / \langle\langle i_*(\pi_1(U \cap V, x_0)) \rangle\rangle) * \pi_1(V, x_0).$$
 :::
