@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-CEDQ9
 kind: problem
-title: Maps of higher spheres into the circle are nulhomotopic
+title: Maps of higher spheres into the circle are nullhomotopic
 classification:
   areas:
   - topology
@@ -14,7 +14,7 @@ review: draft
 
 ::: {.exercise}
 
-Show that if $n > 1$, every continuous map $f: S^n \to S^1$ is nulhomotopic.
+Show that if $n > 1$, every continuous map $f: S^n \to S^1$ is nullhomotopic.
 [Hint: Use the lifting lemma.]
 :::
 
