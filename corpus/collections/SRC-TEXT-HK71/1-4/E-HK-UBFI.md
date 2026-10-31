@@ -27,7 +27,11 @@ audit:
 Consider the system of equations
 
 $$
-\begin{array}{r l} x _ {1} - & x _ {2} + 2 x _ {3} = 1 \\ 2 x _ {1} & + 2 x _ {3} = 1 \\ x _ {1} - 3 x _ {2} + 4 x _ {3} = 2. \end{array}
+\begin{aligned}
+x_1 - x_2 + 2x_3 &= 1\\
+2x_1 + 2x_3 &= 1\\
+x_1 - 3x_2 + 4x_3 &= 2.
+\end{aligned}
 $$
 
 Does this system have a solution?

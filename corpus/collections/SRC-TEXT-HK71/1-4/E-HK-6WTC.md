@@ -20,7 +20,11 @@ audit:
 Show that the system
 
 $$
-\begin{array}{l} x _ {1} - 2 x _ {2} + x _ {3} + 2 x _ {4} = 1 \\ x _ {1} + x _ {2} - x _ {3} + x _ {4} = 2 \\ x _ {1} + 7 x _ {2} - 5 x _ {3} - x _ {4} = 3 \end{array}
+\begin{aligned}
+x_1 - 2x_2 + x_3 + 2x_4 &= 1\\
+x_1 + x_2 - x_3 + x_4 &= 2\\
+x_1 + 7x_2 - 5x_3 - x_4 &= 3
+\end{aligned}
 $$
 
 has no solution.

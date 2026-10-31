@@ -28,7 +28,12 @@ audit:
 Find all solutions to the following system of equations by row-reducing the coefficient matrix:
 
 $$
-\begin{array}{r l} \frac {1}{3} x _ {1} + 2 x _ {2} - 6 x _ {3} & = 0 \\ - 4 x _ {1} + 5 x _ {3} & = 0 \\ - 3 x _ {1} + 6 x _ {2} - 1 3 x _ {3} & = 0 \\ - \frac {7}{3} x _ {1} + 2 x _ {2} - \frac {8}{3} x _ {3} & = 0 \end{array}
+\begin{aligned}
+\tfrac{1}{3}x_1 + 2x_2 - 6x_3 &= 0\\
+-4x_1 + 5x_3 &= 0\\
+-3x_1 + 6x_2 - 13x_3 &= 0\\
+-\tfrac{7}{3}x_1 + 2x_2 - \tfrac{8}{3}x_3 &= 0
+\end{aligned}
 $$
 :::
 
