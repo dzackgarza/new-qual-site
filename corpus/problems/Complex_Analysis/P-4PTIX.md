@@ -88,3 +88,9 @@ Then $f$ is analytic with $\abs{f}<1$ on $\DD$, and $f(z)=z$ would give $\tau(C^
 :::
 
 :::
+
+::: {.remark title="Variations"}
+Part (a) also holds when $g$ is only holomorphic on $\DD$ and continuous on $\bar\DD$, with $g(\bar\DD)\subseteq\DD$.
+Rouché's theorem cannot be applied on $\abs{z}=1$ itself, so apply it on a smaller circle: $g(\bar\DD)$ is a compact subset of $\DD$, so $\abs{g}\le r$ on $\bar\DD$ for some $r<1$.
+For $r<r'<1$, $\abs{g(z)}\le r<\abs{z}$ on $\abs{z}=r'$, so $g(z)-z$ has exactly one zero in $\abs{z}<r'$, and every fixed point $z$ satisfies $\abs{z}=\abs{g(z)}\le r<r'$.
+:::
