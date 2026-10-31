@@ -18,6 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
+Assume $R$ is a Euclidean domain.
 If $M$ is a finitely generated $R$ module, say with $m$ generators, prove that $M$ is isomorphic to the cokernel of an $R$ module map $f: R^n \to R^m$, where $f$ can be given by an $m$ by $n$ matrix of elements of $R$.
 :::
 
