@@ -6,7 +6,9 @@ title: Real roots of $2x^5+8x-7$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Polynomials
+  - Mean Value Theorem
 relations: []
 review: draft
 ---

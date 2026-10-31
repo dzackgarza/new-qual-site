@@ -6,7 +6,9 @@ title: Derivative of the inverse of $\int_0^x\cos^2(t^2)\,dt$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Fundamental Theorem of Calculus
+  - Inverse Functions
 relations: []
 review: draft
 ---

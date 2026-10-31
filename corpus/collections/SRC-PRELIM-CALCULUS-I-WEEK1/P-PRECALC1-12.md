@@ -6,7 +6,8 @@ title: Comparing $\int_0^1\sqrt{1-x^4}\,dx$, $\int_0^1\sqrt{1+x^4}\,dx$ and $\in
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integrals
 relations: []
 review: draft
 ---

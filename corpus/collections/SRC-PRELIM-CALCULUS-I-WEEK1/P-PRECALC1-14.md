@@ -6,7 +6,8 @@ title: Integral of the sign function over $[-1,1]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integrals
 relations: []
 review: draft
 ---

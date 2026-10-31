@@ -6,7 +6,8 @@ title: Integral of $\abs{x+1}$ over $[-3,3]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integrals
 relations: []
 review: draft
 ---

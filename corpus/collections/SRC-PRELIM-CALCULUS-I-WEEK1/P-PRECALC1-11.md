@@ -6,7 +6,8 @@ title: Derivative of $x^{2+\sin x}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Differentiation
 relations: []
 review: draft
 ---

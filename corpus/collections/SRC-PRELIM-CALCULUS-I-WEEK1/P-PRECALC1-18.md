@@ -6,7 +6,9 @@ title: Derivative of $g\circ g$ at $0$ for $g(x)=e^{2x+1}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Differentiation
+  - Chain Rule
 relations: []
 review: draft
 ---

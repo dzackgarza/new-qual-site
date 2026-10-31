@@ -6,7 +6,9 @@ title: Tangent line to $\int_1^x\frac{dt}{1+t^2}$ at $x=2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Fundamental Theorem of Calculus
+  - Tangent Lines
 relations: []
 review: draft
 ---

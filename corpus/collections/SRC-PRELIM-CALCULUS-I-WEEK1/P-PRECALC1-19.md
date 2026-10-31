@@ -6,7 +6,9 @@ title: Symmetric difference quotient $\frac{f(x_0+h)-f(x_0-h)}{h}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Differentiation
+  - Limits
 relations: []
 review: draft
 ---

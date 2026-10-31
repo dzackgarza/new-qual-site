@@ -6,7 +6,9 @@ title: Limit of $\sum_{k=n+1}^{2n}\frac1k$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Riemann Sums
+  - Limits
 relations: []
 review: draft
 audit:

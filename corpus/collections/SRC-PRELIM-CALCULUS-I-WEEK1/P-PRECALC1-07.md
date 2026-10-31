@@ -6,7 +6,8 @@ title: Quadratic $3x^2+bx+c$ with a double root at $2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Polynomials
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: Derivative of $\abs{x}+3x^2$ at $x=-1$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Differentiation
 relations: []
 review: draft
 audit:

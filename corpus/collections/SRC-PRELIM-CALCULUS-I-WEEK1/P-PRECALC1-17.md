@@ -6,7 +6,9 @@ title: Operations preserving asymptotic equivalence $f\sim g$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Limits
+  - Asymptotics
 relations: []
 review: draft
 ---
@@ -19,9 +21,13 @@ $$
 Suppose that $f\sim g$. Which of these does NOT necessarily follow?
 
 (a) $f^2\sim g^2$
+
 (b) $\sqrt f\sim\sqrt g$
+
 (c) $e^f\sim e^g$
+
 (d) $f+g\sim 2g$
+
 (e) $g\sim f$
 :::
 

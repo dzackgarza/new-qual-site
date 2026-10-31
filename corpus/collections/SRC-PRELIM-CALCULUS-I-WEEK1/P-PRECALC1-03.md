@@ -6,7 +6,9 @@ title: Limit of $\frac{\cos(\beta x)-1}{x^2}$ as $x\to0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Limits
+  - L'Hôpital's Rule
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: Limit of $\frac{\sin 2x}{(1+x)\ln(1+x)}$ as $x\to0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Limits
+  - L'Hôpital's Rule
 relations: []
 review: draft
 ---

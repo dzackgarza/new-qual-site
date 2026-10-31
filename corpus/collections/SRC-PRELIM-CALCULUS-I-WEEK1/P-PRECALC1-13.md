@@ -6,7 +6,8 @@ title: Lower limit $c$ in $3x^5+96=\int_c^x g(t)\,dt$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Fundamental Theorem of Calculus
 relations: []
 review: draft
 audit:

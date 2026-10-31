@@ -6,7 +6,9 @@ title: Limit of $x^{-2}-\sin(x)^{-2}$ as $x\to0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Limits
+  - Taylor Series
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Derivative of $\int_0^{x^2}e^{-t^2}\,dt$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Fundamental Theorem of Calculus
+  - Chain Rule
 relations: []
 review: draft
 ---

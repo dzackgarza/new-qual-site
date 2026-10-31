@@ -6,7 +6,8 @@ title: Riemann sum limit for $\int_0^3(x^2-x)\,dx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Riemann Sums
 relations: []
 review: draft
 audit:

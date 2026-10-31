@@ -6,7 +6,9 @@ title: Limit of $\frac{(1+x)^\alpha-1}{x}$ as $x\to0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Limits
+  - L'Hôpital's Rule
 relations: []
 review: draft
 ---

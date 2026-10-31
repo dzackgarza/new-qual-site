@@ -6,7 +6,9 @@ title: Limit of $\frac1x\int_0^x(1+\sin 2t)^{1/t}\,dt$ as $x\to0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Fundamental Theorem of Calculus
+  - Limits
 relations: []
 review: draft
 ---

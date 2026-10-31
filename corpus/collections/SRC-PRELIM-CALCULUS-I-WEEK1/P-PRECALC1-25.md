@@ -6,7 +6,9 @@ title: Intermediate and mean value theorems for $f$ with $f(0)=1$ and $f(1)=0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Intermediate Value Theorem
+  - Mean Value Theorem
 relations: []
 review: draft
 ---

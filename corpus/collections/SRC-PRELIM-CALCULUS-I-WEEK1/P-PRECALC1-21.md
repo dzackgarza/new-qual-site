@@ -6,7 +6,9 @@ title: Derivative of $\frac{x^3}{(6x^2+1)\sqrt[3]{(x+3)^4}}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Differentiation
+  - Logarithmic Differentiation
 relations: []
 review: draft
 ---

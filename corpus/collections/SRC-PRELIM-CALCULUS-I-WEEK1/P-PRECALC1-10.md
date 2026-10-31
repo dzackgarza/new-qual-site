@@ -6,13 +6,25 @@ title: The product $e^{g}h$ when $h'=-g'h$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Differentiation
+  - Ordinary Differential Equations
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-Let $f(x) = e^{g(x)} h(x)$ where $h'(x) = -g'(x) h(x)$ for all $x \in \RR$. Which of the following is necessarily true? (a) $f$ is constant (b) $f$ is linear and non-constant (c) $g$ is constant (d) $g$ is linear and non-constant (e) none of the above
+Let $f(x) = e^{g(x)} h(x)$ where $h'(x) = -g'(x) h(x)$ for all $x \in \RR$. Which of the following is necessarily true?
+
+(a) $f$ is constant.
+
+(b) $f$ is linear and non-constant.
+
+(c) $g$ is constant.
+
+(d) $g$ is linear and non-constant.
+
+(e) None of the above.
 :::
 
 ::: {.solution}

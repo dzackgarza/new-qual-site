@@ -6,7 +6,9 @@ title: Limit of $\int_1^n x^{-n}\,dx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integrals
+  - Limits
 relations: []
 review: draft
 ---

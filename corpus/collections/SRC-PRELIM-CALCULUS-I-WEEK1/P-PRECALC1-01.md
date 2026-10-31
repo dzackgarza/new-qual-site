@@ -6,7 +6,9 @@ title: Tangent line to $y=x+e^x$ at $x=0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Differentiation
+  - Tangent Lines
 relations: []
 review: draft
 ---

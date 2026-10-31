@@ -6,7 +6,9 @@ title: Minimum of $e^x-cx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Differentiation
+  - Optimization
 relations: []
 review: draft
 ---
