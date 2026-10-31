@@ -72,7 +72,7 @@ B_x\subset X_r\subset X_{n+1}.
 $$
 Thus $\mathcal B_0$ has the required property and refines $\mathcal A$.
 
-(c) Assume $\mathcal B_n$ has order at most $m+1$ at points of $X_n$. Since $X_{n+1}$ is compact and has dimension at most $m$, the restriction of $\mathcal B_n$ to $X_{n+1}$ has an open refinement of order at most $m+1$. Extending these sets to $X$ and adjoining $X-X_{n+1}$ if necessary gives an open cover $\mathcal C$ of $X$ refining $\mathcal B_n$ and having order at most $m+1$ at points of $X_{n+1}$.
+(c) Assume $\mathcal B_n$ has order at most $m+1$ at points of $X_n$. Since $X_{n+1}$ is compact and has dimension at most $m$, the restriction of $\mathcal B_n$ to $X_{n+1}$ has an open refinement of order at most $m+1$. For each member $V$ of that refinement, choose $B_V\in\mathcal B_n$ with $V\subset B_V\cap X_{n+1}$, and choose an open $O_V\subset X$ with $O_V\cap X_{n+1}=V$. The sets $O_V\cap B_V$, together with all $B\setminus X_{n+1}$ for $B\in\mathcal B_n$, form an open cover $\mathcal C$ of $X$ refining $\mathcal B_n$. The added sets miss $X_{n+1}$, so $\mathcal C$ has order at most $m+1$ there.
 
 Choose $f:\mathcal C\to\mathcal B_n$ with $C\subset f(C)$, and set
 $$
