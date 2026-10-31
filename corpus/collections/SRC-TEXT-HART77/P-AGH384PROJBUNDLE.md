@@ -39,7 +39,7 @@ Let $X = \PP(\mce)$ (II, §7), with the invertible sheaf $\mco_X(1)$ and the pro
 $$
 0 \to \Omega_{X/Y} \to (\pi^* \mce)(-1) \to \mco \to 0
 ,$$
-cf. (II, 8.13), and conclude that the **relative canonical sheaf** $\omega_{X/Y} = \wedge^n \Omega_{X/Y}$ is isomorphic to $(\pi^* \wedge^{n+1} \mce)(-n-1)$. Show furthermore that there is a natural isomorphism $R^n \pi_*(\omega_{X/Y}) \cong \mco_Y$ (cf. (7.1.1)).
+cf. (II, 8.13), and conclude that the \dfn{relative canonical sheaf} $\omega_{X/Y} = \wedge^n \Omega_{X/Y}$ is isomorphic to $(\pi^* \wedge^{n+1} \mce)(-n-1)$. Show furthermore that there is a natural isomorphism $R^n \pi_*(\omega_{X/Y}) \cong \mco_Y$ (cf. (7.1.1)).
 
 (c) Now show, for any $l \in \ZZ$, that $$ R^n \pi_*(\mco(l)) \cong \pi_*\dualof{(\mco(-l-n-1))} \tensor \dualof{(\wedge^{n+1} \mce)}
 .$$
@@ -48,7 +48,7 @@ cf. (II, 8.13), and conclude that the **relative canonical sheaf** $\omega_{X/Y}
     Show that $p_a(X) = (-1)^n p_a(Y)$ (use (Ex.
     8.1)) and $p_g(X) = 0$ (use (II, 8.11)).
 
-(e) In particular, if $Y$ is a nonsingular projective curve of genus $g$, and $\mce$ a locally free sheaf of rank $2$, then $X$ is a projective surface with $p_a = -g$, $p_g = 0$, and irregularity $g$ (7.12.3). This kind of surface is called a **geometrically ruled surface** (V, §2).
+(e) In particular, if $Y$ is a nonsingular projective curve of genus $g$, and $\mce$ a locally free sheaf of rank $2$, then $X$ is a projective surface with $p_a = -g$, $p_g = 0$, and irregularity $g$ (7.12.3). This kind of surface is called a \dfn{geometrically ruled surface} (V, §2).
 :::
 
 ::: {.solution}
