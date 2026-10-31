@@ -87,13 +87,13 @@ $$
 with boundaries the two coordinate spheres $S^{p-1}$ and $S^{q-1}$.
 Then the class
 $$
-[S^{q-1}]\in H_{q-1}(S^{p+q-1}-S^{p-1})\cong\ZZ
+[S^{q-1}]\in \widetilde H_{q-1}(S^{p+q-1}-S^{p-1})\cong\ZZ
 $$
 is a generator.
 
 ::: pf-proof
 
-By steps [](#s1){.pf-ref} and [](#s2){.pf-ref} the coordinate $S^{q-1}$ is a deformation retract of the complement, so its fundamental homology class generates $H_{q-1}$.
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref} the coordinate $S^{q-1}$ is a deformation retract of the complement, so its fundamental reduced homology class generates $\widetilde H_{q-1}$. For $q=1$ this class is the difference of the two points of $S^0$.
 
 :::
 
@@ -117,7 +117,7 @@ Apply Exercise 3 to the properly embedded pair $(D^p,S^{p-1})\subset(D^{p+q},S^{
 
 ::: pf-step
 
-But $[S^{q-1}]$ maps to zero in $H_{q-1}(D^{p+q}-D^p)$, a contradiction.
+But $[S^{q-1}]$ maps to zero in $\widetilde H_{q-1}(D^{p+q}-D^p)$, a contradiction.
 
 ::: pf-proof
 
