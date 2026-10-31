@@ -142,7 +142,7 @@ as claimed.
 
 For every integer $q$, the subset of closed points
 $$
-\{z\in U:\varphi(z)\ge q\}
+\{z\in U \st \varphi(z)\ge q\}
 $$
 is closed in the subspace of closed points of $U$.
 
@@ -188,7 +188,7 @@ is upper semicontinuous on the closed points of $Y$.
 For an integer-valued function, upper semicontinuity is equivalent to the
 closedness of every superlevel set
 $$
-\{y:\varphi(y)\ge q\}.
+\{y \st \varphi(y)\ge q\}.
 $$
 Step [](#s3){.pf-ref} proves this on every affine neighbourhood from step [](#s1){.pf-ref}.
 Since the property is local, it holds on all of $Y$.

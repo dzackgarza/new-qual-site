@@ -32,8 +32,10 @@ Let $f: X \to Y$ be a flat projective morphism whose fibres are all integral sch
 Let $\mcl, \mcm$ be invertible sheaves on $X$, and assume for each $y \in Y$ that $\mcl_y \cong \mcm_y$ on the fibre $X_y$.
 
 Show that there is an invertible sheaf $\mcn$ on $Y$ such that $\mcl \cong \mcm \tensor f^* \mcn$.
+:::
 
-Hint: use the results of this section to show that $f_*(\mcl \tensor \mcm^{-1})$ is locally free of rank $1$ on $Y$.
+::: {.hint}
+Use the results of this section to show that $f_*(\mcl \tensor \mcm^{-1})$ is locally free of rank $1$ on $Y$.
 :::
 
 ::: {.solution}
