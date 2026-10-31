@@ -15,7 +15,9 @@ audit:
 - event: source-checked
   by: chatgpt
   date: 2026-10-31
-  note: Read sheet 4, Problem 11 against its extraction and PDF page image.
+  note: >-
+    Read sheet 4, Problems 11 and 14 against the extraction and PDF
+    page image. Problem 14 is the n=4 instance of Problem 11.
 ---
 
 ::: {.problem}
@@ -24,6 +26,8 @@ $\theta:F_2\to\ZZ/3$ send both $a$ and $b$ to $1$.
 Construct the cover of $S^1\vee S^1$ corresponding to
 $H=\ker\theta$ and show that $H$ is free of rank $4$.
 If $\ZZ/3$ is replaced by $\ZZ/n$, what is the rank?
+In particular, construct the cover for $\ZZ/4$ and show that
+its kernel is free of rank $5$.
 :::
 
 ::: {.solution}
@@ -43,8 +47,9 @@ fundamental group. Thus
 $$
 \operatorname{rank}H=n+1.
 $$
-For $n=3$, the rank is $4$. The three-sheet graph and one explicit
-free basis also appear in
+For $n=3$, the rank is $4$; for $n=4$, the same construction has
+four vertices, eight edges, and rank $5$. The three-sheet graph
+and one explicit free basis also appear in
 [[P-UCTOP290-S4-7|sheet 4, Problem 7]].
 
 :::
