@@ -116,12 +116,12 @@ $$
 $$
 with $\mathcal A,\mathcal B$ invertible, and after interchanging the summands assume
 $$
-\deg\mathcal A\le\deg\mathcal B.
+\deg\mathcal A\ge\deg\mathcal B.
 $$
 Then
 $$
 \deg\mathcal A
-\le
+\ge
 \frac{\deg\mathcal A+\deg\mathcal B}{2}
 =
 \frac12\deg\mathcal E.
