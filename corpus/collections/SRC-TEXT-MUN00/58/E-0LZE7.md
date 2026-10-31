@@ -42,8 +42,8 @@ Geometric models for $X$ and $Y$:
 Construction of $g: Y \to X$ (collapsing the central segment):
     Define $g: Y \to X$ by the quotient map that collapses the contractible segment $I_0$ to the basepoint $p$:
     - For $z \in I_0$: $g(z) = p$.
-    - For $z \in U$: $g(z)$ maps $U$ homeomorphically onto $C_1$ with $g(a) = g(b) = p$.
-    - For $z \in L$: $g(z)$ maps $L$ homeomorphically onto $C_2$ with $g(a) = g(b) = p$.
+    - On $U$, $g$ identifies the endpoints and induces a homeomorphism $U/\{a\sim b\}\cong C_1$.
+    - On $L$, $g$ identifies the endpoints and induces a homeomorphism $L/\{a\sim b\}\cong C_2$.
     By the Pasting Lemma, $g$ is continuous.
 
 :::
@@ -102,33 +102,13 @@ Homotopy $f \circ g \simeq \operatorname{id}_Y$:
 
 ::: pf-step
 
-The segment $I_0$ is a deformation retract of $Y$ onto the tree segment $I_0$ connecting $a$ and $b$, which itself deformation retracts to $a$.
+The segment $I_0$ is a maximal tree in the theta graph. The CW pair $(Y,I_0)$ has the homotopy extension property, and $I_0$ contracts to $a$. Thus collapsing $I_0$ is a homotopy equivalence, so $g:Y\to Y/I_0\cong X$ is a homotopy equivalence.
 
 :::
 
 ::: pf-step
 
-Explicitly, define $H: Y \times [0, 1] \to Y$ by linearly sliding the segment $I_0$ onto the point $a$:
-        $$H((x, 0), t) = ((1-t)x - t, 0) \quad \text{for } (x, 0) \in I_0,$$
-        while keeping points on $U$ and $L$ stationary up to reparametrization.
-
-:::
-
-::: pf-step
-
-At $t = 0$, $H_0 = \operatorname{id}_Y$.
-
-:::
-
-::: pf-step
-
-At $t = 1$, $H_1 = f \circ g$.
-
-:::
-
-::: pf-step
-
-Thus $f \circ g \simeq \operatorname{id}_Y$.
+Since $g$ is a homotopy equivalence, it has a two-sided inverse in the homotopy category. The preceding part proves $g\circ f\simeq\operatorname{id}_X$, so $f$ is that inverse. Hence $f\circ g\simeq\operatorname{id}_Y$.
 
 :::
 
