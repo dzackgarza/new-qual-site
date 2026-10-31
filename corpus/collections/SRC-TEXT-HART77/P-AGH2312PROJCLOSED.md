@@ -32,10 +32,6 @@ For example, let $d_0$ be an integer and let $I' = \bigoplus_{d \geq d_0} I_d$.
 Show that $I$ and $I'$ determine the same closed subscheme.
 :::
 
-::: {.remark}
-Hartshorne II.5.16 shows that every closed subscheme of $X$ comes from a homogeneous ideal $I$ of $S$, at least when $S$ is a polynomial ring over $S_0$.
-:::
-
 ::: {.solution}
 
 ::: pf
@@ -66,7 +62,7 @@ $$
 ::: {.pf-step #u-equals-projt}
 The open set
 $$
-U=\{\mathfrak p\in\Proj T:\mathfrak p\not\supseteq\phi(S_+)\}
+U=\{\mfp \in\Proj T \st \mfp \not\supseteq\phi(S_+)\}
 $$
 from Hartshorne II.2.14 is all of $\Proj T$.
 
@@ -242,4 +238,8 @@ Steps [](#phi-splus-equals-tplus){.pf-ref}, [](#u-equals-projt){.pf-ref}, [](#lo
 
 :::
 
+:::
+
+::: {.remark}
+Hartshorne II.5.16 shows that every closed subscheme of $X$ comes from a homogeneous ideal $I$ of $S$, at least when $S$ is a polynomial ring over $S_0$.
 :::

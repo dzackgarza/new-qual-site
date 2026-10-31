@@ -60,7 +60,7 @@ i^{-1}(U)=\Spec(A/I)
 $$
 for some ideal $I\subseteq A$.
 
-The quotient $A/I$ is generated as an $A$-algebra by the image of $1$, indeed by no extra algebra generators at all.  Thus it is a finitely generated $A$-algebra.  Hartshorne II.3.3(b) shows that $i$ is of finite type.
+The quotient map $A\to A/I$ is surjective, so $A/I$ is generated as an $A$-algebra by the empty set; in particular it is finitely generated.  Hartshorne II.3.3(b) shows that $i$ is of finite type.
 :::
 
 :::
@@ -276,7 +276,7 @@ The ring maps factor as
 $$
 C\longrightarrow B\longrightarrow A_a.
 $$
-Since $A_a$ is finitely generated over $C$, say
+Since $A$ is finitely generated over $C$, so is $A_a=A[a^{-1}]$, say
 $$
 A_a=C[\alpha_1,\ldots,\alpha_n],
 $$

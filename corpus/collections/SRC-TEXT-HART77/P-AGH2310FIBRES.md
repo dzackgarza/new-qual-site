@@ -27,16 +27,17 @@ audit:
 ---
 
 ::: {.problem}
-(a) If $f: X \to Y$ is a morphism and $y \in Y$ a point, show that $\operatorname{sp}(X_y)$ is homeomorphic to $\inverseof{f}(y)$ with the induced topology.
+(a) If $f: X \to Y$ is a morphism and $y \in Y$ a point, show that $\underlyingspace{X_y}$ is homeomorphic to $\inverseof{f}(y)$ with the induced topology.
 
 (b) Let $X = \Spec k[s,t]/(s - t^2)$, let $Y = \Spec k[s]$, and let $f: X \to Y$ be the morphism defined by sending $s \mapsto s$.
-   Assume $k$ algebraically closed of characteristic $\neq 2$.
 
    - If $y \in Y$ is the point $a \in k$ with $a \neq 0$, show that the fibre $X_y$ consists of two points, with residue field $k$.
 
    - If $y \in Y$ corresponds to $0 \in k$, show that the fibre $X_y$ is a nonreduced one-point scheme.
 
    - If $\eta$ is the generic point of $Y$, show that $X_\eta$ is a one-point scheme whose residue field is an extension of degree two of the residue field of $\eta$.
+
+   (Assume $k$ algebraically closed.)
 :::
 
 ::: {.solution}
@@ -51,7 +52,7 @@ Choose an affine neighborhood
 $$
 V=\Spec B\subseteq Y
 $$
-of $y$, corresponding to a prime $\mathfrak p\subseteq B$, and cover $f^{-1}(V)$ by affine opens
+of $y$, corresponding to a prime $\mfp \subseteq B$, and cover $f^{-1}(V)$ by affine opens
 $$
 U=\Spec A.
 $$
@@ -61,7 +62,7 @@ U_y
 =
 U\times_V\Spec\kappa(y)
 \cong
-\Spec\bigl(A\otimes_B\kappa(\mathfrak p)\bigr).
+\Spec\bigl(A\otimes_B\kappa(\mfp)\bigr).
 $$
 These affine pieces cover $X_y$, so it suffices to compare each $\underlyingspace{U_y}$ with $U\cap f^{-1}(y)$.
 :::
@@ -71,29 +72,29 @@ These affine pieces cover $X_y$, so it suffices to compare each $\underlyingspac
 ::: {.pf-step #fibre-ring-tensor-localization}
 There is a canonical ring isomorphism
 $$
-A\otimes_B\kappa(\mathfrak p)
+A\otimes_B\kappa(\mfp)
 \cong
-S^{-1}(A/\mathfrak p A),
+S^{-1}(A/\mfp  A),
 \qquad
-S=B\setminus\mathfrak p.
+S=B\setminus\mfp.
 $$
 
 ::: pf-proof
 Since
 $$
-\kappa(\mathfrak p)
+\kappa(\mfp)
 =
-\operatorname{Frac}(B/\mathfrak p)
+\Frac(B/\mfp)
 =
-S^{-1}(B/\mathfrak p),
+S^{-1}(B/\mfp),
 $$
-tensoring first with $B/\mathfrak p$ and then localizing gives
+tensoring first with $B/\mfp$ and then localizing gives
 $$
-A\otimes_B\kappa(\mathfrak p)
+A\otimes_B\kappa(\mfp)
 \cong
-S^{-1}(A\otimes_B B/\mathfrak p)
+S^{-1}(A\otimes_B B/\mfp)
 \cong
-S^{-1}(A/\mathfrak p A).
+S^{-1}(A/\mfp  A).
 $$
 :::
 
@@ -102,23 +103,23 @@ $$
 ::: {.pf-step #uy-points-correspond-to-primes}
 The points of $U_y$ correspond bijectively to the primes
 $$
-\mathfrak q\in\Spec A
+\mfq \in\Spec A
 $$
 such that
 $$
-\mathfrak q\cap B=\mathfrak p.
+\mfq \cap B=\mfp.
 $$
 
 ::: pf-proof
-By step [](#fibre-ring-tensor-localization){.pf-ref}, primes of the fibre ring correspond to primes $\mathfrak q\subseteq A$ which contain $\mathfrak pA$ and are disjoint from the image of $S$.
+By step [](#fibre-ring-tensor-localization){.pf-ref}, primes of the fibre ring correspond to primes $\mfq \subseteq A$ which contain $\mfp A$ and are disjoint from the image of $S$.
 
 The first condition gives
 $$
-\mathfrak p\subseteq\mathfrak q\cap B,
+\mfp \subseteq\mfq \cap B,
 $$
-while disjointness from $B\setminus\mathfrak p$ gives the reverse inclusion.  Thus
+while disjointness from $B\setminus\mfp$ gives the reverse inclusion.  Thus
 $$
-\mathfrak q\cap B=\mathfrak p.
+\mfq \cap B=\mfp.
 $$
 These are exactly the points of $U$ mapping to $y$.
 :::
@@ -129,8 +130,8 @@ These are exactly the points of $U$ mapping to $y$.
 The bijection in step [](#uy-points-correspond-to-primes){.pf-ref} is a homeomorphism from $\underlyingspace{U_y}$ onto $U\cap f^{-1}(y)$ with the induced topology.
 
 ::: pf-proof
-Let $R=S^{-1}(A/\mathfrak pA)$ be the fibre ring.  Any closed subset of $\Spec R$ is $V_R(J)$ for an ideal $J\subseteq R$.
-Let $I\subseteq A$ be the inverse image in $A$ of the contraction of $J$ to $A/\mathfrak pA$.  Under the prime correspondence of step [](#uy-points-correspond-to-primes){.pf-ref},
+Let $R=S^{-1}(A/\mfp A)$ be the fibre ring.  Any closed subset of $\Spec R$ is $V_R(J)$ for an ideal $J\subseteq R$.
+Let $I\subseteq A$ be the inverse image in $A$ of the contraction of $J$ to $A/\mfp A$.  Under the prime correspondence of step [](#uy-points-correspond-to-primes){.pf-ref},
 $$
 V_R(J)
 $$
@@ -312,4 +313,8 @@ Steps [](#reduce-fibre-topology-to-affine){.pf-ref}, [](#fibre-ring-tensor-local
 
 :::
 
+:::
+
+::: {.remark}
+The two-point assertion for $a \neq 0$ needs $\operatorname{char} k \neq 2$.  In characteristic $2$, $t^2-a=(t-\sqrt{a})^2$, so the fibre over $a$ is a nonreduced one-point scheme.  The solution assumes $\operatorname{char} k \neq 2$ for that assertion only.
 :::

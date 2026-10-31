@@ -29,11 +29,11 @@ audit:
 
 (c) Let $Y$ be a closed subset of a scheme $X$ and give $Y$ the reduced induced subscheme structure.
 If $Y'$ is any other closed subscheme of $X$ with the same underlying topological space, show that the closed immersion $Y \to X$ factors through $Y'$.
-We express this by saying that **the reduced induced structure is the smallest subscheme structure on a closed subset**.
+We express this by saying that \dfn{the reduced induced structure is the smallest subscheme structure on a closed subset}.
 
 (d) Let $f: Z \to X$ be a morphism.
 Then there is a unique closed subscheme $Y$ of $X$ with the following property: the morphism $f$ factors through $Y$, and if $Y'$ is any other closed subscheme of $X$ through which $f$ factors, then $Y \to X$ factors through $Y'$ also.
-We call $Y$ the **scheme-theoretic image** of $f$.
+We call $Y$ the \dfn{scheme-theoretic image} of $f$.
 If $Z$ is a reduced scheme, then $Y$ is just the reduced induced structure on the closure of the image $f(Z)$.
 :::
 
@@ -57,7 +57,7 @@ Let
 $$
 i:Y\hookrightarrow X
 $$
-be a closed immersion and let $X'\to X$ be any morphism.  The assertion is local on $X$ and $X'$.  Thus take
+be a closed immersion and let $X'\to X$ be any morphism.  The assertion is local on $X$ and $X'$.  By part (b), proved in step [](#y-is-speca-mod-i){.pf-ref} without using part (a), a closed subscheme of an affine scheme is cut out by an ideal.  Thus take
 $$
 X=\Spec A,
 \qquad
@@ -143,7 +143,7 @@ The closed subscheme $Y$ is affine.
 ::: pf-proof
 Let
 $$
-B=\Gamma(Y,\mathcal O_Y).
+B=\Gamma(Y,\OO_Y).
 $$
 The restrictions of the $f_i$ to $Y$ are elements of $B$ and generate the unit ideal there, because the relation
 $$
@@ -230,33 +230,33 @@ It is unique because $Y'\to X$ is a monomorphism, as every immersion is.
 ::: {.pf-step #sum-of-ideal-sheaves-quasicoherent}
 Let $f:Z\to X$ be any morphism.  Consider all quasi-coherent ideal sheaves
 $$
-\mathcal I_\lambda\subseteq\mathcal O_X
+\mci_\lambda\subseteq\OO_X
 $$
 such that $f$ factors through the corresponding closed subscheme $Y_\lambda\subseteq X$, and put
 $$
-\mathcal I=\sum_\lambda\mathcal I_\lambda.
+\mci=\sum_\lambda\mci_\lambda.
 $$
-Then $\mathcal I$ is a quasi-coherent ideal sheaf.
+Then $\mci$ is a quasi-coherent ideal sheaf.
 
 ::: pf-proof
 The family is nonempty because $X$ itself is a closed subscheme of $X$, corresponding to the zero ideal sheaf.
 
-On an affine open $U=\Spec A\subseteq X$, each restriction $\mathcal I_\lambda\restrict_U$ corresponds to an ideal $I_\lambda\subseteq A$.  Their sheaf-theoretic sum restricts to the sheaf associated to
+On an affine open $U=\Spec A\subseteq X$, each restriction $\mci_\lambda\restrict_U$ corresponds to an ideal $I_\lambda\subseteq A$.  Their sheaf-theoretic sum restricts to the sheaf associated to
 $$
 \sum_\lambda I_\lambda\subseteq A,
 $$
-because localization commutes with arbitrary sums of submodules.  Hence $\mathcal I$ is quasi-coherent.
+because localization commutes with arbitrary sums of submodules.  Hence $\mci$ is quasi-coherent.
 :::
 
 :::
 
 ::: {.pf-step #f-factors-through-y}
-Let $Y\subseteq X$ be the closed subscheme defined by $\mathcal I$ from step [](#sum-of-ideal-sheaves-quasicoherent){.pf-ref}.  Then $f$ factors through $Y$.
+Let $Y\subseteq X$ be the closed subscheme defined by $\mci$ from step [](#sum-of-ideal-sheaves-quasicoherent){.pf-ref}.  Then $f$ factors through $Y$.
 
 ::: pf-proof
-Factoring through $Y_\lambda$ means that the pullback of $\mathcal I_\lambda$ to $Z$ maps to zero in $\mathcal O_Z$.  Therefore the pullback of their sum
+Factoring through $Y_\lambda$ means that the pullback of $\mci_\lambda$ to $Z$ maps to zero in $\OO_Z$.  Therefore the pullback of their sum
 $$
-\mathcal I=\sum_\lambda\mathcal I_\lambda
+\mci=\sum_\lambda\mci_\lambda
 $$
 also maps to zero.
 
@@ -272,9 +272,9 @@ $$
 The closed subscheme $Y$ from step [](#f-factors-through-y){.pf-ref} is contained in every closed subscheme $Y'\subseteq X$ through which $f$ factors.
 
 ::: pf-proof
-Let $\mathcal I_{Y'}$ be the ideal sheaf of such a $Y'$.  It is one of the summands used to define $\mathcal I$, so
+Let $\mci_{Y'}$ be the ideal sheaf of such a $Y'$.  It is one of the summands used to define $\mci$, so
 $$
-\mathcal I_{Y'}\subseteq\mathcal I.
+\mci_{Y'}\subseteq\mci.
 $$
 The inclusion of ideals reverses under $\Spec$ and gives a unique factorization
 $$
@@ -298,7 +298,7 @@ Assume now that $Z$ is reduced, and put
 $$
 T=\overline{f(Z)}\subseteq X.
 $$
-Then $f$ factors through the reduced induced subscheme $T_{\mathrm{red}}$.
+Then $f$ factors through the reduced induced subscheme $T_{\red}$.
 
 ::: pf-proof
 This is local on $X$.  Let $U=\Spec A\subseteq X$ and write
@@ -307,7 +307,7 @@ T\cap U=V(J)
 $$
 with $J$ radical, so
 $$
-T_{\mathrm{red}}\cap U=\Spec(A/J).
+T_{\red}\cap U=\Spec(A/J).
 $$
 
 Take $a\in J$.  For every point
@@ -318,13 +318,13 @@ the point $f(z)$ lies in $T\cap U$, so the germ of $f^*a$ at $z$ maps to zero in
 
 On an affine open $W=\Spec C\subseteq f^{-1}(U)$, the section $f^*a$ corresponds to an element $c\in C$ lying in every prime ideal of $C$.  Hence $c$ is nilpotent.  Since $Z$ is reduced, $C$ is reduced, so $c=0$.
 
-Thus the ring map $A\to\Gamma(W,\mathcal O_Z)$ kills $J$ on every affine $W$, and $f\restrict_{f^{-1}(U)}$ factors through $\Spec(A/J)$.  These local factorizations glue.
+Thus the ring map $A\to\Gamma(W,\OO_Z)$ kills $J$ on every affine $W$, and $f\restrict_{f^{-1}(U)}$ factors through $\Spec(A/J)$.  These local factorizations glue.
 :::
 
 :::
 
 ::: {.pf-step #tred-contained-in-every-yprime}
-The reduced induced subscheme $T_{\mathrm{red}}$ is contained in every closed subscheme $Y'\subseteq X$ through which $f$ factors.
+The reduced induced subscheme $T_{\red}$ is contained in every closed subscheme $Y'\subseteq X$ through which $f$ factors.
 
 ::: pf-proof
 If $f$ factors through $Y'$, then
@@ -352,7 +352,7 @@ A/I\longrightarrow A/J
 $$
 induces a factorization
 $$
-T_{\mathrm{red}}\cap U\longrightarrow Y'\cap U.
+T_{\red}\cap U\longrightarrow Y'\cap U.
 $$
 These factorizations glue over $X$.
 :::
@@ -362,11 +362,11 @@ These factorizations glue over $X$.
 ::: {.pf-step #scheme-theoretic-image-is-fz-closure-red}
 If $Z$ is reduced, the scheme-theoretic image of $f$ is exactly
 $$
-\boxed{\overline{f(Z)}_{\mathrm{red}}.}
+\boxed{\overline{f(Z)}_{\red}.}
 $$
 
 ::: pf-proof
-Step [](#f-factors-through-tred){.pf-ref} shows that $f$ factors through $T_{\mathrm{red}}$, and step [](#tred-contained-in-every-yprime){.pf-ref} shows that this closed subscheme is contained in every other closed subscheme through which $f$ factors.  By uniqueness in step [](#y-unique-scheme-theoretic-image){.pf-ref}, it is the scheme-theoretic image.
+Step [](#f-factors-through-tred){.pf-ref} shows that $f$ factors through $T_{\red}$, and step [](#tred-contained-in-every-yprime){.pf-ref} shows that this closed subscheme is contained in every other closed subscheme through which $f$ factors.  By uniqueness in step [](#y-unique-scheme-theoretic-image){.pf-ref}, it is the scheme-theoretic image.
 :::
 
 :::

@@ -68,7 +68,7 @@ f^{-1}(V_i)=\bigcup_jU_{ij},
 \qquad
 U_{ij}=\Spec A_{ij},
 $$
-with each $A_{ij}$ finitely generated over $B_i=\Gamma(V_i,\mathcal O_Y)$.
+with each $A_{ij}$ finitely generated over $B_i=\Gamma(V_i,\OO_Y)$.
 
 Since $f$ is quasi-compact, II.3.2 implies that every $f^{-1}(V_i)$ is quasi-compact.  Hence finitely many of the $U_{ij}$ cover it.  Thus the defining finite affine-cover condition for a finite type morphism holds.
 :::

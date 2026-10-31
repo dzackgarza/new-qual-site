@@ -23,14 +23,14 @@ audit:
 ---
 
 ::: {.problem}
-A morphism $f: X \to Y$, with $Y$ irreducible, is **generically finite** if $\inverseof{f}(\eta)$ is a finite set, where $\eta$ is the generic point of $Y$.
-A morphism $f: X \to Y$ is **dominant** if $f(X)$ is dense in $Y$.
+A morphism $f: X \to Y$, with $Y$ irreducible, is \dfn{generically finite} if $\inverseof{f}(\eta)$ is a finite set, where $\eta$ is the generic point of $Y$.
+A morphism $f: X \to Y$ is \dfn{dominant} if $f(X)$ is dense in $Y$.
 
 Now let $f: X \to Y$ be a dominant, generically finite morphism of finite type of integral schemes.
 Show that there is an open dense subset $U \subseteq Y$ such that the induced morphism $\inverseof{f}(U) \to U$ is finite.
 :::
 
-::: {.remark}
+::: {.hint}
 First show that the function field of $X$ is a finite field extension of the function field of $Y$.
 :::
 
@@ -80,9 +80,9 @@ Moreover
 $$
 B\hookrightarrow A_i,
 \qquad
-\operatorname{Frac}(B)=K,
+\Frac(B)=K,
 \qquad
-\operatorname{Frac}(A_i)=L.
+\Frac(A_i)=L.
 $$
 
 ::: pf-proof
@@ -142,7 +142,7 @@ Hence $d=0$.
 
 Therefore $R$ is finite-dimensional over $K$.  Since $R$ is a domain, it is a field.  It contains $A_i$, so it contains the fraction field of $A_i$; conversely it lies inside that fraction field.  Thus
 $$
-R=\operatorname{Frac}(A_i)=L.
+R=\Frac(A_i)=L.
 $$
 Hence $[L:K]<\infty$.
 
@@ -160,7 +160,7 @@ For each $i$, choose algebra generators
 $$
 A_i=B[\alpha_{i1},\ldots,\alpha_{in_i}].
 $$
-By step [](#s3){.pf-ref}, every $\alpha_{ij}\in L$ is algebraic over $K=\operatorname{Frac}(B)$.
+By step [](#s3){.pf-ref}, every $\alpha_{ij}\in L$ is algebraic over $K=\Frac(B)$.
 For each generator choose a monic polynomial over $K$ which it satisfies.
 Clearing the finitely many denominators occurring in all these polynomials, there is one nonzero element
 $$

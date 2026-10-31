@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-A morphism $f: X \to Y$ of schemes is **quasi-compact** if there is a cover of $Y$ by open affines $V_i$ such that $\inverseof{f}(V_i)$ is quasi-compact for each $i$.
+A morphism $f: X \to Y$ of schemes is \dfn{quasi-compact} if there is a cover of $Y$ by open affines $V_i$ such that $\inverseof{f}(V_i)$ is quasi-compact for each $i$.
 
 Show that $f$ is quasi-compact if and only if for every open affine subset $V \subseteq Y$ the preimage $\inverseof{f}(V)$ is quasi-compact.
 :::
@@ -64,7 +64,7 @@ y\in W_y\subseteq V\cap V_i.
 $$
 
 ::: pf-proof
-Choose $i$ with $y\in V_i$.  Then $V\cap V_i$ is an open neighborhood of $y$ in the affine scheme $V_i$.  Distinguished opens form a basis of an affine scheme, so there is some $g_y\in\Gamma(V_i,\mathcal O_Y)$ with the asserted property.
+Choose $i$ with $y\in V_i$.  Then $V\cap V_i$ is an open neighborhood of $y$ in the affine scheme $V_i$.  Distinguished opens form a basis of an affine scheme, so there is some $g_y\in\Gamma(V_i,\OO_Y)$ with the asserted property.
 :::
 
 :::

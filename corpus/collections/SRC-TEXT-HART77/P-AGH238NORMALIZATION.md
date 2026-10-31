@@ -23,14 +23,15 @@ audit:
 ---
 
 ::: {.problem}
-A scheme is **normal** if all of its local rings are integrally closed domains.
+A scheme is \dfn{normal} if all of its local rings are integrally closed domains.
 Let $X$ be an integral scheme.
 For each open affine subset $U = \Spec A$ of $X$, let $\tilde{A}$ be the integral closure of $A$ in its quotient field, and let $\tilde{U} = \Spec \tilde{A}$.
 
-Show that one can glue the schemes $\tilde{U}$ to obtain a normal integral scheme $\tilde{X}$, called the **normalization** of $X$.
+Show that one can glue the schemes $\tilde{U}$ to obtain a normal integral scheme $\tilde{X}$, called the \dfn{normalization} of $X$.
 
 Show also that there is a morphism $\tilde{X} \to X$ with the following universal property: for every normal integral scheme $Z$ and every dominant morphism $f: Z \to X$, the morphism $f$ factors uniquely through $\tilde{X}$.
 If $X$ is of finite type over a field $k$, then the morphism $\tilde{X} \to X$ is a finite morphism.
+This generalizes Hartshorne I, Ex. 3.17.
 :::
 
 ::: {.solution}
@@ -105,13 +106,13 @@ W=D_A(f)=D_B(g)\subseteq U\cap V.
 $$
 Since $X$ is integral, II.3.6 identifies
 $$
-\operatorname{Frac}(A)=K=\operatorname{Frac}(B).
+\Frac(A)=K=\Frac(B).
 $$
 By step [](#s1){.pf-ref}, the integral closure of $A_f$ in $K$ is $(\widetilde A)_f$, and the integral closure of $B_g$ in $K$ is $(\widetilde B)_g$.
 
 But
 $$
-A_f\cong\Gamma(W,\mathcal O_X)\cong B_g
+A_f\cong\Gamma(W,\OO_X)\cong B_g
 $$
 as subrings of $K$.  Their integral closures in $K$ are therefore the same ring.  Hence
 $$
@@ -199,9 +200,9 @@ $$
 
 The generic point of $Z$ maps to the generic point of $X$ because $f$ is dominant.  The induced local homomorphism
 $$
-\mathcal O_{X,\eta_X}=K(X)
+\OO_{X,\eta_X}=K(X)
 \longrightarrow
-\mathcal O_{Z,\eta_Z}=K(Z)
+\OO_{Z,\eta_Z}=K(Z)
 $$
 is a local homomorphism between fields, hence injective.
 
@@ -222,7 +223,7 @@ $$
 
 ::: pf-proof
 
-Let $W=\Spec C\subseteq f^{-1}(U)$ be an affine open.  The morphism gives an injective map
+Let $W=\Spec C\subseteq f^{-1}(U)$ be a nonempty affine open.  The morphism gives a map, injective because it is the restriction of the field inclusion of step [](#s6){.pf-ref} to $A\subseteq K(X)$ and $C\subseteq K(Z)$,
 $$
 A\longrightarrow C\subseteq K(Z).
 $$
@@ -240,7 +241,7 @@ K(X)\hookrightarrow K(Z).
 $$
 Hence they glue on $f^{-1}(U)$ to the required factorization.
 
-Uniqueness holds because any factorization must induce the same map on function fields and therefore the same homomorphism $\widetilde A\to C$ on every affine open $W$.
+Uniqueness: a factorization through $\Spec\widetilde A$ is, on $W$, a ring map $\psi:\widetilde A\to C$ extending the injective map $A\to C$.  Write $x\in\widetilde A$ as $x=a/s$ with $a,s\in A$ and $s\ne0$.  Then $\psi(s)\psi(x)=\psi(a)$ in the domain $C$, and $\psi(s)\ne0$, so $\psi(x)=\psi(a)/\psi(s)$ in $K(Z)$ is determined by $A\to C$.
 
 :::
 
@@ -299,9 +300,9 @@ the integral closure $\widetilde A$ of $A$ in $K(X)$ is a finite $A$-module.
 
 ::: pf-proof
 
-The ring $A$ is a finitely generated integral $k$-algebra.  The standard finiteness theorem for normalization of affine varieties says that the integral closure of such a domain in a finite extension of its fraction field is finite as an $A$-module.  Apply it to the trivial finite extension
+The ring $A$ is a finitely generated integral $k$-algebra.  The finiteness theorem for integral closure, Hartshorne I.3.9A, says that the integral closure of such a domain in a finite extension of its fraction field is finite as an $A$-module.  Apply it to the trivial finite extension
 $$
-K(X)/\operatorname{Frac}(A)=K(X)/K(X).
+K(X)/\Frac(A)=K(X)/K(X).
 $$
 Thus $\widetilde A$ is finite over $A$.
 

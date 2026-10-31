@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Let $X$ be an integral scheme.
 Show that the local ring $\OO_{\xi}$ of the generic point $\xi$ of $X$ is a field.
-It is called the **function field** of $X$ and is denoted by $K(X)$.
+It is called the \dfn{function field} of $X$ and is denoted by $K(X)$.
 
 Show also that if $U = \Spec A$ is any open affine subset of $X$, then $K(X)$ is isomorphic to $\Frac(A)$.
 :::
@@ -81,11 +81,11 @@ The generic point of $\Spec A$ is the zero prime.  By step [](#s2){.pf-ref}, the
 The local ring at the generic point is
 $$
 \boxed{
-\mathcal O_{X,\xi}
+\OO_{X,\xi}
 \cong
 A_{(0)}
 =
-\operatorname{Frac}(A).
+\Frac(A).
 }
 $$
 
@@ -93,9 +93,9 @@ $$
 
 The local ring of the affine scheme $\Spec A$ at the prime $(0)$ is $A_{(0)}$.  Since $A$ is a domain, localizing at the complement of $(0)$ means inverting every nonzero element of $A$, which gives its fraction field.
 
-The stalk of the restricted structure sheaf on the open set $U$ agrees with the stalk of $\mathcal O_X$ at $\xi$, so
+The stalk of the restricted structure sheaf on the open set $U$ agrees with the stalk of $\OO_X$ at $\xi$, so
 $$
-\mathcal O_{X,\xi}=\mathcal O_{U,\xi}\cong A_{(0)}.
+\OO_{X,\xi}=\OO_{U,\xi}\cong A_{(0)}.
 $$
 
 :::
@@ -104,9 +104,9 @@ $$
 
 ::: {.pf-step #s5}
 
-Therefore $\mathcal O_{X,\xi}$ is a field, and for every nonempty affine open $U=\Spec A$ there is a canonical isomorphism
+Therefore $\OO_{X,\xi}$ is a field, and for every nonempty affine open $U=\Spec A$ there is a canonical isomorphism
 $$
-\boxed{K(X)=\mathcal O_{X,\xi}\cong\operatorname{Frac}(A).}
+\boxed{K(X)=\OO_{X,\xi}\cong\Frac(A).}
 $$
 
 ::: pf-proof

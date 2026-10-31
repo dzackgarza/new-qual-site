@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-A morphism $f: X \to Y$ is **quasi-finite** if for every point $y \in Y$ the fibre $\inverseof{f}(y)$ is a finite set.
+A morphism $f: X \to Y$ is \dfn{quasi-finite} if for every point $y \in Y$ the fibre $\inverseof{f}(y)$ is a finite set.
 
 (a) Show that a finite morphism is quasi-finite.
 
@@ -101,30 +101,30 @@ Then $f$ is a closed map.
 
 ::: pf-proof
 
-It suffices to check closedness over an affine open cover of $Y$.
+Let $Z\subseteq X$ be closed.  It suffices to check that $f(Z)$ is closed over an affine open cover of $Y$.
 Let
 $$
 V=\Spec B\subseteq Y,
 \qquad
 f^{-1}(V)=\Spec A,
 $$
-with $A$ finite over $B$.
+with $A$ finite over $B$ via the structural ring map $\phi:B\to A$.
 Let
 $$
 Z\cap f^{-1}(V)=V(J)\subseteq\Spec A
 $$
 for an ideal $J\subseteq A$.
 
-The quotient $A/J$ is integral over the image of $B/(J\cap B)$ because finite ring extensions are integral and integrality passes to quotients.
+The quotient $A/J$ is integral over $B/\phi^{-1}(J)$ because finite ring extensions are integral and integrality passes to quotients.
 The induced map
 $$
-B/(J\cap B)\hookrightarrow A/J
+B/\phi^{-1}(J)\hookrightarrow A/J
 $$
 is injective.
-By lying over, every prime of $B/(J\cap B)$ is the contraction of a prime of $A/J$.
+By lying over, every prime of $B/\phi^{-1}(J)$ is the contraction of a prime of $A/J$.
 Hence the image of $V(J)$ in $\Spec B$ is exactly
 $$
-V(J\cap B),
+V(\phi^{-1}(J)),
 $$
 which is closed.
 
