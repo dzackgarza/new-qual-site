@@ -18,6 +18,7 @@ provenance:
 - assets/attachments/UCSD_290_F14_sheet6.pdf
 - assets/attachments/UCSD_290_F14_sheet7.pdf
 - assets/attachments/UCSD_290_F14_sheet8.pdf
+- assets/attachments/UCSD_290_F14_sheet9.pdf
 - assets/attachments/UCSD_290_F14_sheet10.pdf
 - assets/attachments/UCSD_290_F14_sheet11.pdf
 - assets/attachments/UCSD_290_F14_sheet12.pdf
