@@ -37,184 +37,42 @@ Apply this to show:
 :::
 
 ::: {.solution}
-Let
-$$
-X=A\cup_\varphi D^n,
-\qquad n\ge2,
-$$
-where the boundary sphere $S^{n-1}=\partial D^n$ is attached to the path-connected space $A$ by $\varphi$.
+Write $X=A\cup_\varphi D^n$, where $n\ge2$, and let $c$ be the image of the center of $D^n$.
 
 ::: pf
 
-::: {.pf-step #s1}
-
-There is an open cover $X=U\cup V$ such that $U$ deformation retracts onto $A$, $V$ is contractible, and $U\cap V$ is path connected.
-
-::: pf-proof
-
-Choose a smaller closed ball $B\subset\operatorname{int}D^n$ about the center.
-The image in $X$ of
-$$
-D^n\setminus B
-$$
-deformation retracts radially onto the attaching sphere, hence together with $A$ gives a neighborhood that deformation retracts onto $A$.
-After slightly enlarging this neighborhood in the quotient, call it $U$.
-
-Take $V$ to be the image of a slightly larger open ball about the center, joined by a thin radial tube to a chosen point of the attaching sphere and then by a thin tube in $A$ to the basepoint.
-This $V$ is contractible.
-Its overlap with $U$ deformation retracts onto a sphere with a tube attached to the basepoint.
-Since
-$$
-n-1\ge1,
-$$
-the sphere $S^{n-1}$ is path connected, so $U\cap V$ is path connected.
-Both $U$ and $V$ may be chosen path connected and to contain the basepoint.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Every loop in $X$ based at $x_0\in A$ is homotopic to a product of loops, each lying entirely in $U$ or entirely in $V$.
+::: {.pf-step #open-cover}
+The sets $U=X\setminus\{c\}$ and $V=\operatorname{int}(e^n)$ form an open cover of $X$. The space $U$ deformation retracts onto $A$, the space $V$ is contractible, and $U\cap V$ is path connected.
 
 ::: pf-proof
-
-Apply Lemma 1.15 to the cover $X=U\cup V$ from step [](#s1){.pf-ref}.
-Its hypotheses hold because $U$ and $V$ are path connected, both contain $x_0$, and $U\cap V$ is path connected.
-
+The quotient map is a homeomorphism on the open cell. Its inverse images show that both $U$ and $V$ are open in $X$. Radial expansion from the center of $D^n$ to its boundary defines a deformation retraction of $U$ onto $A$; this homotopy fixes the attaching boundary, so it descends through the quotient. The set $V$ is an open $n$-ball, while $U\cap V$ is that ball without its center. The latter is path connected since $n\ge2$.
 :::
 
 :::
 
-::: {.pf-step #s3}
-
-Every factor lying in $V$ is null-homotopic in $X$, while every factor lying in $U$ is homotopic in $X$ to a loop in $A$.
+::: {.pf-step #cell-surjection}
+The inclusion $A\hookrightarrow X$ induces a surjection on fundamental groups.
 
 ::: pf-proof
-
-The first assertion follows from contractibility of $V$.
-For the second, use the deformation retraction
-$$
-U\simeq A
-$$
-from step [](#s1){.pf-ref}, chosen to fix the basepoint.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-The inclusion-induced homomorphism
-$$
-i_*:\pi_1(A,x_0)\longrightarrow\pi_1(X,x_0)
-$$
-is surjective.
-
-::: pf-proof
-
-Let $[\gamma]\in\pi_1(X,x_0)$.
-By step [](#s2){.pf-ref}, $\gamma$ is homotopic to a product of loops in $U$ and $V$.
-By step [](#s3){.pf-ref}, discard the null-homotopic $V$ factors and replace every $U$ factor by a loop in $A$.
-Thus $[\gamma]$ is represented by a product of loops in $A$, hence lies in the image of $i_*$.
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-For $S^1\vee S^2$, the inclusion
-$$
-S^1\hookrightarrow S^1\vee S^2
-$$
-induces a surjection on fundamental groups.
-
-::: pf-proof
-
-The wedge $S^1\vee S^2$ is obtained from $S^1$ by attaching a $2$-cell by the constant attaching map.
-Apply step [](#s4){.pf-ref}.
-
+Let $\gamma$ be a loop in $X$ based at $x_0\in A$. Apply the subdivision argument of Lemma 1.15 to the open cover in step [](#open-cover){.pf-ref}, with the first and last pieces chosen in $U$. Combine consecutive pieces that lie in the same cover set. Each remaining $V$ piece has both endpoints in $U\cap V$. Replace it by a path in $U\cap V$ with the same endpoints. The replacement is homotopic relative to endpoints in $V$, because $V$ is simply connected. This yields a loop in $U$ homotopic to $\gamma$ relative to $x_0$. The deformation retraction $U\to A$ then gives a loop in $A$ representing $[\gamma]$.
 :::
 
 :::
 
 ::: pf-step
-
-The same inclusion also induces an injection, hence
-$$
-\pi_1(S^1\vee S^2)\cong\ZZ.
-$$
+The wedge $S^1\vee S^2$ has fundamental group $\ZZ$.
 
 ::: pf-proof
-
-Collapse the $S^2$ summand to the wedge point.
-This gives a retraction
-$$
-r:S^1\vee S^2\to S^1.
-$$
-If $i:S^1\hookrightarrow S^1\vee S^2$ is the inclusion, then
-$$
-r\circ i=\operatorname{id}_{S^1},
-$$
-so
-$$
-r_*\circ i_*=\operatorname{id}_{\pi_1(S^1)}.
-$$
-Thus $i_*$ is injective.
-Together with step [](#s5){.pf-ref} it is an isomorphism, and
-$$
-\pi_1(S^1\vee S^2)\cong\pi_1(S^1)\cong\ZZ.
-$$
-
-:::
-
-:::
-
-::: {.pf-step #s7}
-
-If $X$ is a finite path-connected CW complex, then
-$$
-\pi_1(X^1)\longrightarrow\pi_1(X)
-$$
-is surjective.
-
-::: pf-proof
-
-Starting with $X^1$, form $X^2$ by attaching the $2$-cells one at a time.
-Each attachment induces a surjection on $\pi_1$ by step [](#s4){.pf-ref}, so the composite
-$$
-\pi_1(X^1)\twoheadrightarrow\pi_1(X^2)
-$$
-is surjective.
-Then attach the $3$-cells one at a time, and continue through all higher dimensions.
-At every step the cell dimension is at least $2$, so step [](#s4){.pf-ref} applies.
-The composite map
-$$
-\pi_1(X^1)\longrightarrow\pi_1(X)
-$$
-is therefore surjective.
-
+It is obtained from $S^1$ by attaching a $2$-cell by the constant map. Step [](#cell-surjection){.pf-ref} makes $\pi_1(S^1)\to\pi_1(S^1\vee S^2)$ surjective. Collapsing the $S^2$ summand gives a retraction onto $S^1$, so the same map is injective. It is therefore an isomorphism, and $\pi_1(S^1)\cong\ZZ$.
 :::
 
 :::
 
 ::: pf-step
-
-The same conclusion holds for an arbitrary path-connected CW complex.
+For every path-connected CW complex $X$, the inclusion $X^1\hookrightarrow X$ induces a surjection on fundamental groups.
 
 ::: pf-proof
-
-Every loop has compact image.
-By Proposition A.1, a compact subset of a CW complex is contained in a finite subcomplex.
-Hence any loop in $X$ lies in a finite subcomplex $K\subseteq X$.
-Applying step [](#s7){.pf-ref} to $K$ shows that the loop class comes from $\pi_1(K^1)$, and
-$$
-K^1\subseteq X^1.
-$$
-Thus every element of $\pi_1(X)$ lies in the image of $\pi_1(X^1)$.
-
+For a finite CW complex, attach its cells of dimension at least $2$ one at a time. Step [](#cell-surjection){.pf-ref} applies to each attachment, and the composite of these surjections is surjective. For an arbitrary CW complex, Proposition A.1 places the compact image of any loop in a finite subcomplex $K$. Apply the finite case to the path component of $K$ containing the loop. Its $1$-skeleton lies in $X^1$, so the loop class comes from $\pi_1(X^1)$.
 :::
 
 :::
