@@ -23,6 +23,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Reduced all three assertions to the surjection pi_1(X^1) -> pi_1(X) and the subgroup/normalizer classification of covers.
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Parts (a) and (b) are 'iff' in the book; the stored statement had 'if'.
+- event: solution-reviewed
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Added the converse directions of (a) and (b).
 ---
 
 ::: {.problem}
@@ -30,9 +38,9 @@ Consider covering spaces $p: \tilde{X} \to X$ with $\tilde{X}$ and $X$ connected
 Restricting $p$ to the 1-skeleton then gives a covering space $\tilde{X}^1 \to X^1$ over the 1-skeleton of $X$.
 Show:
 
-(a) Two such covering spaces $\tilde{X}_1 \to X$ and $\tilde{X}_2 \to X$ are isomorphic if the restrictions $\tilde{X}_1^1 \to X^1$ and $\tilde{X}_2^1 \to X^1$ are isomorphic.
+(a) Two such covering spaces $\tilde{X}_1 \to X$ and $\tilde{X}_2 \to X$ are isomorphic iff the restrictions $\tilde{X}_1^1 \to X^1$ and $\tilde{X}_2^1 \to X^1$ are isomorphic.
 
-(b) $\tilde{X} \to X$ is a normal covering space if $\tilde{X}^1 \to X^1$ is normal.
+(b) $\tilde{X} \to X$ is a normal covering space iff $\tilde{X}^1 \to X^1$ is normal.
 
 (c) The groups of deck transformations of the coverings $\tilde{X} \to X$ and $\tilde{X}^1 \to X^1$ are isomorphic, via the restriction map.
 :::
@@ -100,6 +108,7 @@ $$
 are conjugate in $\pi_1(X^1)$.
 Applying the surjection $j_*$ shows that $H_1$ and $H_2$ are conjugate in $\pi_1(X)$.
 The connected-covering classification therefore gives an isomorphism of the full covers.
+Conversely, an isomorphism $f:\widetilde X_1\to\widetilde X_2$ over $X$ maps $p_1^{-1}(X^1)=\widetilde X_1^1$ onto $p_2^{-1}(X^1)=\widetilde X_2^1$, so it restricts to an isomorphism of the restricted covers.
 This proves (a).
 
 :::
@@ -137,6 +146,7 @@ $$
 ghg^{-1}\in H.
 $$
 Thus $H\triangleleft\pi_1(X)$, so the full cover is normal.
+Conversely, if $H\triangleleft\pi_1(X)$, then its preimage $j_*^{-1}(H)$ under the homomorphism $j_*$ is normal in $\pi_1(X^1)$, so the restricted cover is normal.
 This proves (b).
 
 :::

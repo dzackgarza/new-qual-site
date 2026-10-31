@@ -150,9 +150,9 @@ $$
 Their orbits are distinct because every iterate of $p$ lies on the $x$-axis and every iterate of $q$ lies on the $y$-axis.
 Suppose their orbit classes had disjoint neighborhoods in the quotient.
 Their inverse images would be disjoint saturated open neighborhoods $U$ of the orbit of $p$ and $V$ of the orbit of $q$.
-Choose $\epsilon>0$ such that
+Choose $\varepsilon>0$ such that
 $$
-(1,s)\in U\quad\text{for }\abs{s}<\epsilon,
+(1,s)\in U\quad\text{for }\abs{s}<\varepsilon,
 $$
 and choose $\delta>0$ such that
 $$
