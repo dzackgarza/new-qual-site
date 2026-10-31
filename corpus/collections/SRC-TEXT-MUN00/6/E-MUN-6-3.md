@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-6-3
 kind: problem
-title: Cantor's theorem for $X^{\omega}$
+title: Binary sequences are in bijection with a proper subset
 classification:
   areas:
   - topology
