@@ -5,7 +5,10 @@ kind: problem
 title: Torsion in $H^i(M)$ and $H^{n-i+1}(M)$ agree for a closed oriented $n$-manifold
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Poincare Duality
+  - Universal Coefficient Theorem
+  - Torsion
 relations: []
 review: draft
 audit:

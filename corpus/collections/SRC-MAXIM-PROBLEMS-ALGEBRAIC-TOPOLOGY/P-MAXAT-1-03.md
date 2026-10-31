@@ -5,7 +5,10 @@ kind: problem
 title: A $4n$-manifold bounding a compact oriented manifold has signature zero
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Signature
+  - Cobordism
+  - Poincare Duality
 relations: []
 review: draft
 audit:

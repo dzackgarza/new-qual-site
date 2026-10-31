@@ -5,7 +5,10 @@ kind: problem
 title: Torsion of $H_{n-1}(M;\ZZ)$ detects orientability of a closed $n$-manifold
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Orientability
+  - Universal Coefficient Theorem
+  - Torsion
 relations: []
 review: draft
 audit:

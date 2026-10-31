@@ -5,7 +5,10 @@ kind: problem
 title: A closed oriented $(4n+2)$-manifold has even Euler characteristic
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Euler Characteristic
+  - Poincare Duality
+  - Intersection Form
 relations: []
 review: draft
 audit:
@@ -16,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the Euler characteristic of a closed, oriented, $( 4 n + 2 )$ -dimensional manifold is even.
+Show that the Euler characteristic of a closed, oriented, $(4n + 2)$-dimensional manifold is even.
 :::
 
 ::: {.solution}

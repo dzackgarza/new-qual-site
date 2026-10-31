@@ -5,7 +5,9 @@ kind: problem
 title: $\RP^n$ does not embed in $\RR^{2n-1}$ when $n$ is a power of $2$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Stiefel-Whitney Classes
+  - Embeddings
 relations: []
 review: draft
 audit:

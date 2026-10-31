@@ -5,7 +5,9 @@ kind: problem
 title: A manifold is orientable if and only if $w_1$ vanishes
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Stiefel-Whitney Classes
+  - Orientability
 relations: []
 review: draft
 audit:
@@ -16,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that a manifold M is orientable if and only if its first Stiefel-Whitney class vanishes.
+Show that a manifold $M$ is orientable if and only if its first Stiefel-Whitney class vanishes.
 :::
 
 ::: {.solution}

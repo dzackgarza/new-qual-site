@@ -5,7 +5,9 @@ kind: problem
 title: Even-dimensional real projective spaces do not bound
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Cobordism
+  - Stiefel-Whitney Numbers
 relations: []
 review: draft
 audit:

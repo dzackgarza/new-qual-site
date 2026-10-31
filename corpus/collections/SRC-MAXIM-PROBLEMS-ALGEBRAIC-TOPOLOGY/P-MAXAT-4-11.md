@@ -5,7 +5,9 @@ kind: problem
 title: Serre's theorem on the torsion in the homotopy groups of spheres
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homotopy Groups of Spheres
+  - Serre Class Theory
 relations: []
 review: draft
 audit:
@@ -16,7 +18,11 @@ audit:
 ---
 
 ::: {.problem}
-Prove Serre’s theorem: (a) The homotopy groups of odd spheres $S^{n}$ are torsion except in dimension $n$; (b) The homotopy groups of even spheres $S^{n}$ are torsion except in dimension $n$ and $2n - 1$.
+Prove Serre’s theorem:
+
+(a) The homotopy groups of odd spheres $S^{n}$ are torsion except in dimension $n$;
+
+(b) The homotopy groups of even spheres $S^{n}$ are torsion except in dimensions $n$ and $2n - 1$.
 :::
 
 ::: {.solution}

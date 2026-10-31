@@ -5,7 +5,10 @@ kind: problem
 title: The total characteristic classes $w(\RP^n)$, $c(\CP^n)$ and $p(\CP^n)$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Stiefel-Whitney Classes
+  - Chern Classes
+  - Pontryagin Classes
 relations: []
 review: draft
 audit:

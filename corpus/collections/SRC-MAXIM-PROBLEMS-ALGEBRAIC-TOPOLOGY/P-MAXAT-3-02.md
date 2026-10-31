@@ -5,7 +5,9 @@ kind: problem
 title: Integral cohomology of $\RP^\infty$, $\RP^{2n}$ and $\RP^{2n+1}$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Cellular Homology
+  - Projective Spaces
 relations: []
 review: draft
 audit:

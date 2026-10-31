@@ -5,7 +5,9 @@ kind: problem
 title: Orientable manifolds as double covers of non-orientable manifolds
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Orientation Double Cover
+  - Covering Spaces
 relations: []
 review: draft
 audit:

@@ -5,7 +5,10 @@ kind: problem
 title: A division algebra on $\RR^n$ forces $n$ to be a power of $2$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Division Algebras
+  - Cup Product
+  - Projective Spaces
 relations: []
 review: draft
 audit:

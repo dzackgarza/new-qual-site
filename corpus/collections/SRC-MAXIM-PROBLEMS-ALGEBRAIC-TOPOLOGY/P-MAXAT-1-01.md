@@ -5,7 +5,10 @@ kind: problem
 title: A connected manifold bounding a compact manifold has even Euler characteristic
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Euler Characteristic
+  - Cobordism
+  - Poincare Duality
 relations: []
 review: draft
 audit:
@@ -16,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if a connected manifold M is the boundary of a compact manifold, then the Euler characteristic of M is even.
+Show that if a connected manifold $M$ is the boundary of a compact manifold, then the Euler characteristic of $M$ is even.
 :::
 
 ::: {.solution}

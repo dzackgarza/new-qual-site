@@ -5,7 +5,9 @@ kind: problem
 title: A closed odd-dimensional manifold has Euler characteristic zero
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Euler Characteristic
+  - Poincare Duality
 relations: []
 review: draft
 audit:

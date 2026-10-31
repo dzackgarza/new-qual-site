@@ -5,7 +5,9 @@ kind: problem
 title: Cohomology of the free loop spaces of $S^3$, $S^2$ and $\CP^n$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Free Loop Spaces
+  - Serre Spectral Sequence
 relations: []
 review: draft
 audit:

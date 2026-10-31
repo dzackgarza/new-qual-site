@@ -5,7 +5,9 @@ kind: problem
 title: Rational cohomology of $K(\ZZ,n)$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Eilenberg-MacLane Spaces
+  - Rational Cohomology
 relations: []
 review: draft
 audit:

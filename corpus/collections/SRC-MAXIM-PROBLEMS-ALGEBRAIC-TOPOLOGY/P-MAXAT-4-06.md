@@ -5,7 +5,9 @@ kind: problem
 title: Integral cohomology of $K(\ZZ,3)$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Eilenberg-MacLane Spaces
+  - Serre Spectral Sequence
 relations: []
 review: draft
 audit:

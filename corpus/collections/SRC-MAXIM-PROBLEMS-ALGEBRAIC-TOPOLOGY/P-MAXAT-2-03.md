@@ -5,7 +5,9 @@ kind: problem
 title: The Stiefel manifolds $V_n(\RR^\infty)$, $V_n(\CC^\infty)$, $V_n(\quaternions^\infty)$ are contractible
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Stiefel Manifolds
+  - Contractible Spaces
 relations: []
 review: draft
 audit:

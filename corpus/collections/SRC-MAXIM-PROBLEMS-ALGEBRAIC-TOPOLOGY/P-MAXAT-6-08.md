@@ -5,7 +5,9 @@ kind: problem
 title: Euclidean embedding dimension of $\CP^n$ for $n$ a power of $2$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Pontryagin Classes
+  - Embeddings
 relations: []
 review: draft
 audit:

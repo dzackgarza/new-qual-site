@@ -5,7 +5,9 @@ kind: problem
 title: Cohomology rings of $B\U(n)$ and $B\Orth(n)$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Classifying Spaces
+  - Characteristic Classes
 relations: []
 review: draft
 audit:
@@ -16,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the cohomology ring of $B U ( n ) , B O ( n )$
+Find the cohomology rings of $BU(n)$ and $BO(n)$.
 :::
 
 ::: {.solution}

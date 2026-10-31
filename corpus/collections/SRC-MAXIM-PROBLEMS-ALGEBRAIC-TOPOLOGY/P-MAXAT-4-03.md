@@ -5,7 +5,10 @@ kind: problem
 title: Homology and cohomology ring of the loop space $\Omega S^n$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Loop Spaces
+  - Serre Spectral Sequence
+  - Divided Power Algebras
 relations: []
 review: draft
 audit:

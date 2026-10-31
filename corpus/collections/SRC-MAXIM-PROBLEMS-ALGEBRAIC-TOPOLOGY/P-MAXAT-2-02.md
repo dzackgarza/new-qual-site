@@ -5,7 +5,9 @@ kind: problem
 title: CW structure on lens spaces
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - CW Complexes
+  - Lens Spaces
 relations: []
 review: draft
 audit:

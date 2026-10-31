@@ -5,7 +5,9 @@ kind: problem
 title: The first $p$-torsion in $\pi_*(S^3)$ is $\ZZ_p$ in degree $2p$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homotopy Groups of Spheres
+  - Serre Spectral Sequence
 relations: []
 review: draft
 audit:

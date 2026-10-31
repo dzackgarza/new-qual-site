@@ -5,7 +5,9 @@ kind: problem
 title: Cohomology rings of the loop spaces $\Omega\CP^n$ and $\Omega\RP^n$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Loop Spaces
+  - Serre Spectral Sequence
 relations: []
 review: draft
 audit:

@@ -5,7 +5,10 @@ kind: problem
 title: Cohomology rings of real and complex projective spaces and lens spaces
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Cup Product
+  - Projective Spaces
+  - Lens Spaces
 relations: []
 review: draft
 audit:

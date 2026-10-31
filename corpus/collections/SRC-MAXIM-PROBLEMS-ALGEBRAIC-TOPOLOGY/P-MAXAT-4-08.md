@@ -5,7 +5,8 @@ kind: problem
 title: The homotopy groups $\pi_4(S^3)$ and $\pi_5(S^3)$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homotopy Groups of Spheres
 relations: []
 review: draft
 audit:

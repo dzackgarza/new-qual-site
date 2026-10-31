@@ -5,7 +5,10 @@ kind: problem
 title: $\CP^2\#\CP^2$ bounds a non-orientable 5-manifold but no orientable one
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Signature
+  - Cobordism
+  - Connected Sums
 relations: []
 review: draft
 audit:

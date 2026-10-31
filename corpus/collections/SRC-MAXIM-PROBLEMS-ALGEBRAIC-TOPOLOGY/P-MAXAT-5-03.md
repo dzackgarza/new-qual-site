@@ -5,7 +5,9 @@ kind: problem
 title: An oriented vector bundle with a nowhere-zero section has zero Euler class
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Euler Class
+  - Vector Bundles
 relations: []
 review: draft
 audit:

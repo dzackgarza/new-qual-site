@@ -5,7 +5,8 @@ kind: problem
 title: First appearance of $7$-torsion in the homotopy groups of spheres
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homotopy Groups of Spheres
 relations: []
 review: draft
 audit:

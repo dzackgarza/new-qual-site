@@ -5,7 +5,10 @@ kind: problem
 title: $\RP^{2n}$, $\CP^{2n}$ and $\HP^{2n}$ are not boundaries
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Cobordism
+  - Projective Spaces
+  - Euler Characteristic
 relations: []
 review: draft
 audit:

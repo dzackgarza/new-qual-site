@@ -5,7 +5,9 @@ kind: problem
 title: An orientable sphere bundle with zero Euler class but no section
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Euler Class
+  - Sphere Bundles
 relations: []
 review: draft
 audit:

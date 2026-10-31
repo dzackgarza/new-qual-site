@@ -5,7 +5,9 @@ kind: problem
 title: The Borsuk–Ulam theorem
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Borsuk-Ulam Theorem
+  - Cohomology Ring
 relations: []
 review: draft
 audit:
@@ -16,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove Borsuk-Uhlam theorem.
+Prove the Borsuk–Ulam theorem.
 :::
 
 ::: {.solution}

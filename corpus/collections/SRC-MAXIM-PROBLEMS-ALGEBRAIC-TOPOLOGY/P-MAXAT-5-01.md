@@ -5,7 +5,10 @@ kind: problem
 title: Classification of $S^1$-bundles over $S^2$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Fiber Bundles
+  - Classifying Spaces
+  - Principal Bundles
 relations: []
 review: draft
 audit:

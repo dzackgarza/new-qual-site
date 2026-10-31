@@ -5,7 +5,10 @@ kind: problem
 title: Stiefel–Whitney obstructions to immersing and embedding $\RP^n$ in $\RR^{n+k}$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Stiefel-Whitney Classes
+  - Immersions
+  - Embeddings
 relations: []
 review: draft
 audit:

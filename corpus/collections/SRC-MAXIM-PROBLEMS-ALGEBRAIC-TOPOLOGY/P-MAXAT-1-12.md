@@ -5,7 +5,10 @@ kind: problem
 title: $\RP^{2n}$ does not embed in $S^{2n+1}$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Embeddings
+  - Alexander Duality
+  - Projective Spaces
 relations: []
 review: draft
 audit:

@@ -5,7 +5,10 @@ kind: problem
 title: Cohomology rings of $\SU(n)$, $\U(n)$ and $V_k(\CC^n)$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Cohomology of Lie Groups
+  - Stiefel Manifolds
+  - Serre Spectral Sequence
 relations: []
 review: draft
 audit:

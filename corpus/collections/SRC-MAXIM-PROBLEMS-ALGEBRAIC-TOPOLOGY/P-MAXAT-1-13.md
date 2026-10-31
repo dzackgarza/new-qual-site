@@ -5,7 +5,9 @@ kind: problem
 title: $\RP^{2n}$ and $\CP^{2n}$ have the fixed-point property
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Lefschetz Fixed Point Theorem
+  - Projective Spaces
 relations: []
 review: draft
 audit:

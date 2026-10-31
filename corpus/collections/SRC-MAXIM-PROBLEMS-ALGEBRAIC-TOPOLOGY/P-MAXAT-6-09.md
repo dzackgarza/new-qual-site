@@ -5,7 +5,9 @@ kind: problem
 title: $\CP^{2n}$ is not an oriented boundary
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Pontryagin Numbers
+  - Cobordism
 relations: []
 review: draft
 audit:

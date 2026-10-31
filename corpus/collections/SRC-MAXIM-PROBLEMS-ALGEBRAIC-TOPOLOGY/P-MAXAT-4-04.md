@@ -5,7 +5,9 @@ kind: problem
 title: Cohomology rings of the loop spaces $\Omega\CP^n$ and $\Omega\RP^n$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Loop Spaces
+  - Serre Spectral Sequence
 relations: []
 review: draft
 audit:
@@ -16,8 +18,8 @@ audit:
 ---
 
 ::: {.problem}
-Find the cohomology ring of ΩCPn, ΩRPn.
-(Hint: use a spectral sequence argument)
+Find the cohomology rings of $\Omega\CP^{n}$ and $\Omega\RP^{n}$.
+(Hint: use a spectral sequence argument.)
 :::
 
 ::: {.solution}

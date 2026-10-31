@@ -5,7 +5,9 @@ kind: problem
 title: All Pontrjagin numbers of an oriented boundary vanish
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Pontryagin Numbers
+  - Cobordism
 relations: []
 review: draft
 audit:
@@ -16,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if M is an oriented boundary, then all its Pontrjagin numbers are zero.
+Show that if $M$ is an oriented boundary, then all its Pontrjagin numbers are zero.
 :::
 
 ::: {.solution}

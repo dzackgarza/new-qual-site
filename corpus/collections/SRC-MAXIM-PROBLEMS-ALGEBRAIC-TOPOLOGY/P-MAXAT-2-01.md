@@ -5,7 +5,10 @@ kind: problem
 title: Spaces with isomorphic homotopy or homology groups but different homotopy types
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homotopy Type
+  - Homotopy Groups
+  - Homology
 relations: []
 review: draft
 audit:

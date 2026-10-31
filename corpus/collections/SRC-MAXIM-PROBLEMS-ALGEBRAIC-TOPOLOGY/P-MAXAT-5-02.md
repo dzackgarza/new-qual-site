@@ -5,7 +5,9 @@ kind: problem
 title: Vector bundles over a simply connected base are orientable
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Vector Bundles
+  - Orientability
 relations: []
 review: draft
 audit:

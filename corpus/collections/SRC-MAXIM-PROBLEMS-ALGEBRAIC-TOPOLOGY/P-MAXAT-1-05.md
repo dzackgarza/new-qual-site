@@ -5,7 +5,9 @@ kind: problem
 title: Homology of a connected non-compact $n$-manifold vanishes in degrees $\geq n$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homology of Manifolds
+  - Non-Compact Manifolds
 relations: []
 review: draft
 audit:

@@ -5,7 +5,10 @@ kind: problem
 title: $\sigma(M)\equiv\chi(M)\pmod 2$ for a closed oriented $4n$-manifold
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Signature
+  - Euler Characteristic
+  - Intersection Form
 relations: []
 review: draft
 audit:
@@ -16,8 +19,8 @@ audit:
 ---
 
 ::: {.problem}
-Let M be a closed, oriented 4n-dimensional manifold.
-Show that the signature $\sigma ( M )$ is congruent mod 2 to the Euler characteristic $\chi ( M )$
+Let $M$ be a closed, oriented $4n$-dimensional manifold.
+Show that the signature $\sigma(M)$ is congruent mod $2$ to the Euler characteristic $\chi(M)$.
 :::
 
 ::: {.solution}

@@ -5,7 +5,9 @@ kind: problem
 title: The Freudenthal suspension theorem
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Freudenthal Suspension Theorem
+  - Homotopy Groups
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: $\CP^n$ is not a nontrivial product of complex manifolds
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Chern Classes
+  - Complex Manifolds
 relations: []
 review: draft
 audit:

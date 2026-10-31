@@ -5,7 +5,9 @@ kind: problem
 title: Only $\RP^1$, $\RP^3$ and $\RP^7$ can be parallelizable
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Parallelizable Manifolds
+  - Stiefel-Whitney Classes
 relations: []
 review: draft
 audit:

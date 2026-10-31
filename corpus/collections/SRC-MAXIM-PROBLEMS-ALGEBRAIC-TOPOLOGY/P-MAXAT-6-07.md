@@ -5,7 +5,9 @@ kind: problem
 title: $\CP^4$ does not embed smoothly in $\RR^{11}$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Pontryagin Classes
+  - Embeddings
 relations: []
 review: draft
 audit:

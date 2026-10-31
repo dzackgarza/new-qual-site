@@ -5,7 +5,9 @@ kind: problem
 title: Cohomology ring of lens spaces
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Lens Spaces
+  - Cup Product
 relations: []
 review: draft
 audit:

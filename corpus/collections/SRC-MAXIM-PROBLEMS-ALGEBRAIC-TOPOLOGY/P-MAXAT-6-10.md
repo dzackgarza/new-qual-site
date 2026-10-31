@@ -5,7 +5,9 @@ kind: problem
 title: Characteristic-class obstructions to a complex structure on an even-dimensional manifold
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Almost Complex Structures
+  - Characteristic Classes
 relations: []
 review: draft
 audit:
