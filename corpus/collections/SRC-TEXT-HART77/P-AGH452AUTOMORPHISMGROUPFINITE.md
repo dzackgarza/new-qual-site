@@ -33,11 +33,8 @@ audit:
 If $X$ is a curve of genus $\geq 2$ over a field of characteristic 0, show that the group $\Aut X$ of automorphisms of $X$ is finite.
 
 Hint: If $X$ is hyperelliptic, use the unique $g_2^1$ and show that $\Aut X$ permutes the ramification points of the 2-fold covering $X \to \PP^1$.
-If $X$ is not hyperelliptic, show that $\Aut X$ permutes the hyperosculation points (Ex.
-4.6) of the canonical embedding.
-Cf.
-(Ex.
-2.5).
+If $X$ is not hyperelliptic, show that $\Aut X$ permutes the hyperosculation points (Ex. 4.6) of the canonical embedding.
+Cf. (Ex. 2.5).
 :::
 
 ::: {.solution}
@@ -354,12 +351,12 @@ If $X$ is nonhyperelliptic, then $\Aut X$ is finite.
 Every automorphism preserves the canonical linear system, hence preserves its vanishing sequences and permutes the finite set $S$ of hyperosculation points.
 Thus there is a homomorphism
 $$
-\Aut X\longrightarrow\operatorname{Sym}(S).
+\Aut X\longrightarrow\Sym(S).
 $$
 If an automorphism lies in the kernel, it fixes every point of $S$.
 Step [](#s5){.pf-ref} gives more than $2g+2$ such fixed points, so step [](#s1){.pf-ref} forces the automorphism to be the identity.
 Hence the homomorphism is injective.
-Since $S$ is finite, so is $\operatorname{Sym}(S)$, and therefore $\Aut X$ is finite.
+Since $S$ is finite, so is $\Sym(S)$, and therefore $\Aut X$ is finite.
 
 :::
 

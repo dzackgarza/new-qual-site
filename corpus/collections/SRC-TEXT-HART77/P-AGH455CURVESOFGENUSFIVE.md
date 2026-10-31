@@ -46,7 +46,7 @@ Assume $X$ is not hyperelliptic.
 
 (c) \* In that case, the conics through the double point cut out the canonical system (not counting the fixed points at the double point). Mapping $\PP^2 \to \PP^4$ by this linear system of conics, show that the canonical curve $X$ is contained in a cubic surface $V \subseteq \PP^4$, with $V$ isomorphic to $\PP^2$ with one point blown up (II, Ex. 7.7).
 
-    Furthermore, $V$ is the union of all the trisecants of $X$ corresponding to the $g_3^1$ (5.5.3), so $V$ is contained in the intersection of all the quadric hypersurfaces containing $X$. Thus $V$ and the $g_3^1$ are unique.
+Furthermore, $V$ is the union of all the trisecants of $X$ corresponding to the $g_3^1$ (5.5.3), so $V$ is contained in the intersection of all the quadric hypersurfaces containing $X$. Thus $V$ and the $g_3^1$ are unique.
 
 Note. Conversely, if $X$ does not have a $g_3^1$, then its canonical embedding is a complete intersection, as in (a). More generally, a classical theorem of Enriques and Petri shows that for any nonhyperelliptic curve of genus $g \geq 3$, the canonical model is projectively normal, and it is an intersection of quadric hypersurfaces unless $X$ has a $g_3^1$ or $g=6$ and $X$ has a $g_5^2$. See Saint-Donat.
 :::
@@ -74,7 +74,7 @@ A complete intersection of three quadrics is determined by the
 three-dimensional subspace of $W_2$ spanned by its equations.  Hence such
 complete intersections are parametrized by the open subset
 $$
-U\subseteq\operatorname{Gr}(3,W_2)
+U\subseteq\Gr(3,W_2)
 $$
 on which the common zero locus is a smooth curve of codimension $3$.  This
 open set is nonempty and irreducible, and
@@ -98,7 +98,7 @@ embedding.
 
 Conversely, for a canonical curve which is such a complete intersection,
 its three-dimensional space of quadratic equations recovers the point of
-$\operatorname{Gr}(3,W_2)$.  Isomorphic canonical curves differ by an
+$\Gr(3,W_2)$.  Isomorphic canonical curves differ by an
 element of $\PGL_5$.  Since
 $$
 \dim\PGL_5=25-1=24
@@ -179,7 +179,7 @@ p_a(C)=\frac{(5-1)(5-2)}2=6,
 $$
 whereas its normalization $X$ has genus $5$.  Hence
 $$
-\sum_{q\in\operatorname{Sing}C}\delta_q
+\sum_{q\in\Sing C}\delta_q
 =p_a(C)-g(X)=1.
 $$
 There is therefore exactly one singular point, and its delta invariant is
@@ -201,7 +201,7 @@ $$
 be the normalization and let $p$ be the unique singular point.  Its
 multiplicity is $2$.  Blow up $p$:
 $$
-\pi:S=\operatorname{Bl}_p\PP^2\longrightarrow\PP^2.
+\pi:S=\Bl_p\PP^2\longrightarrow\PP^2.
 $$
 For a node or an ordinary cusp, the strict transform $\widetilde C$ is
 smooth and is naturally isomorphic to $X$.
@@ -339,7 +339,7 @@ Thus the intersection of all quadrics through $X$ is precisely $V$.
 Now start with any $g^1_3$ on $X$.  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, and [](#s6){.pf-ref} construct from it a
 cubic scroll, and the argument just given identifies that scroll with the
 same intrinsic base locus of the quadrics through $X$.  Hence the scroll is
-unique.  A smooth cubic scroll $\operatorname{Bl}_p\PP^2$ has a unique
+unique.  A smooth cubic scroll $\Bl_p\PP^2$ has a unique
 ruling by lines, and intersecting that ruling with $X$ recovers the
 $g^1_3$.  The $g^1_3$ is therefore unique as well.
 :::

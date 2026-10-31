@@ -63,9 +63,9 @@ the group $\Aut X$ is the simple group of order 168, whose order is the maximum 
 
 (c) \* Over $\CC$, most curves of genus 3 have no automorphisms except the identity.
 
-    Hint: For each $n$, count the dimension of the family of curves with an automorphism $T$ of order $n$. For example, if $n=2$, then for suitable choice of coordinates, $T$ can be written as $x \mapsto -x$, $y \mapsto y$, $z \mapsto z$. Then there is an 8-dimensional family of curves fixed by $T$; changing coordinates there is a 4-dimensional family of such $T$, so the curves having an automorphism of degree 2 form a family of dimension 12 inside the 14-dimensional family of all plane curves of degree 4.
+Hint: For each $n$, count the dimension of the family of curves with an automorphism $T$ of order $n$. For example, if $n=2$, then for suitable choice of coordinates, $T$ can be written as $x \mapsto -x$, $y \mapsto y$, $z \mapsto z$. Then there is an 8-dimensional family of curves fixed by $T$; changing coordinates there is a 4-dimensional family of such $T$, so the curves having an automorphism of degree 2 form a family of dimension 12 inside the 14-dimensional family of all plane curves of degree 4.
 
-    More generally it is true (at least over $\CC$) that for any $g \geq 3$, a "sufficiently general" curve of genus $g$ has no automorphisms except the identity; see Baily.
+Note: More generally it is true (at least over $\CC$) that for any $g \geq 3$, a "sufficiently general" curve of genus $g$ has no automorphisms except the identity; see Baily.
 :::
 
 ::: {.solution}
@@ -252,7 +252,7 @@ $2,\ldots,168$.  Such an element is semisimple.  If it has eigenvalue
 multiplicities $2+1$, its conjugacy class in $\PGL_3$ has dimension $4$.
 After scaling it has the form
 $$
-\operatorname{diag}(\lambda,1,1),\qquad\lambda\neq1.
+\diag(\lambda,1,1),\qquad\lambda\neq1.
 $$
 A quartic fixed as a zero locus must lie in one eigenspace of its action on
 $V$.  For $\lambda=-1$ the largest eigenspace consists of the monomials in

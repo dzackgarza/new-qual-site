@@ -42,7 +42,7 @@ surrounding discussion.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 Hyperelliptic curves of genus $4$ are parametrized by unordered
 configurations of $10$ distinct points of $\PP^1$, modulo $\PGL_2$.
@@ -107,7 +107,7 @@ Its image is irreducible because the parameter space is irreducible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 A nonhyperelliptic genus-$4$ curve has canonical model
 $$
@@ -314,7 +314,7 @@ ruling by lines, so step [](#s6){.pf-ref} gives exactly one $g^1_3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s8}
 
 The rank-$3$ quadrics form an irreducible locally closed subset of
 $\PP^9$ of dimension
