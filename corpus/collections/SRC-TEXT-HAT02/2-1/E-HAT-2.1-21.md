@@ -35,7 +35,7 @@ Let $i:X\hookrightarrow SX$ be the equatorial inclusion. For a singular simplex 
 $$
 s_n(\sigma)=C_+\sigma-C_-\sigma
 $$
-and extend linearly.
+and extend linearly. On augmented chains set $C_+(1)$ and $C_-(1)$ equal to the upper and lower suspension vertices, respectively, for $1\in C_{-1}(X)=\ZZ$.
 
 ::: pf
 
