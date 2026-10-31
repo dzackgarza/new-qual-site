@@ -37,6 +37,7 @@ Let $f:S^n\to S^n$ be even, so $f(x)=f(-x)$. Then $f$ factors through the antipo
 $$
 S^n\xrightarrow{q}\RP^n\xrightarrow{g}S^n.
 $$
+For $n=0$, evenness makes $f:S^0\to S^0$ constant, so its reduced degree is zero. Assume $n\ge1$ below.
 
 ::: pf
 
