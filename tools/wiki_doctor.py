@@ -63,7 +63,7 @@ def load_pages(wiki_root: Path) -> tuple[list[PageRecord], list[str]]:
     pages: list[PageRecord] = []
     unreadable: list[str] = []
     if not wiki_root.is_dir():
-        return pages, unreadable
+        raise FileNotFoundError(f"wiki directory missing: {wiki_root}")
     for path in discover(wiki_root):
         rel = path.relative_to(wiki_root)
         try:
