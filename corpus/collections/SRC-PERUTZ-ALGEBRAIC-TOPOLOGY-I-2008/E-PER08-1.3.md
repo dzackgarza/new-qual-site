@@ -5,7 +5,9 @@ kind: problem
 title: Convex subsets of Euclidean space are contractible
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homotopy
+  - Euclidean Spaces
 relations: []
 review: draft
 audit:

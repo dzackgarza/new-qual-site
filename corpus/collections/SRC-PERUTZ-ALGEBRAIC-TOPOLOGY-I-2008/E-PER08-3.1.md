@@ -5,7 +5,9 @@ kind: problem
 title: Uniqueness of group pushouts
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Free Products
+  - Category Theory
 relations: []
 review: draft
 audit:

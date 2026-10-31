@@ -5,7 +5,9 @@ kind: problem
 title: Mayer--Vietoris in degree one with connected intersection
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Mayer-Vietoris
+  - Homology
 relations: []
 review: draft
 audit:

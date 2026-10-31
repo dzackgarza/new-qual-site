@@ -5,7 +5,9 @@ kind: problem
 title: Equivalent characterizations of contractibility
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homotopy Equivalence
+  - Homotopy
 relations: []
 review: draft
 audit:

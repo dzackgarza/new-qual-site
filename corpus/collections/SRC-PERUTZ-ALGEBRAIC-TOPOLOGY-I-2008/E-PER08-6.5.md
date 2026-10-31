@@ -5,7 +5,9 @@ kind: problem
 title: Deck group of a covering is $N_G(H)/H$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Covering Spaces
+  - Group Actions
 relations: []
 review: draft
 audit:

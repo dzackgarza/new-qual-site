@@ -5,7 +5,9 @@ kind: problem
 title: $T^2$ minus four points double covers $S^2$ minus four points
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Covering Spaces
+  - Surfaces
 relations: []
 review: draft
 audit:

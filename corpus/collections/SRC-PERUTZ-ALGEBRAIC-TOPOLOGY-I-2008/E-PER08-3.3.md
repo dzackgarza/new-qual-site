@@ -5,7 +5,9 @@ kind: problem
 title: The infinite dihedral group as a free product
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Free Products
+  - Groups
 relations: []
 review: draft
 audit:

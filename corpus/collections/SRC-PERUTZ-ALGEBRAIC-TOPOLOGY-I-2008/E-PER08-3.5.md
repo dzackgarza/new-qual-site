@@ -5,7 +5,9 @@ kind: problem
 title: Rectangular subdivision lemma for a homotopy
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Fundamental Group
+  - Compactness
 relations: []
 review: draft
 audit:

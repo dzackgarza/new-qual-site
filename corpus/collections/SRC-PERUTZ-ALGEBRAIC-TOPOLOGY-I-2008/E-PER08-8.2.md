@@ -5,7 +5,9 @@ kind: problem
 title: Simplicial homology of $T^2$, $\RP^2$, and the Klein bottle
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homology
+  - Surfaces
 relations: []
 review: draft
 audit:

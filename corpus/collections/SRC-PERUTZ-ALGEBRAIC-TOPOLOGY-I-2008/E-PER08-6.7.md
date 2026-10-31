@@ -5,7 +5,9 @@ kind: problem
 title: The doubled full rotation loop in $SO(3)$ is nullhomotopic
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Fundamental Group
+  - Topological Groups
 relations: []
 review: draft
 audit:

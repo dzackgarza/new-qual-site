@@ -5,7 +5,8 @@ kind: problem
 title: Octahedral axiom for mapping cones
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homological Algebra
 relations: []
 review: draft
 audit:

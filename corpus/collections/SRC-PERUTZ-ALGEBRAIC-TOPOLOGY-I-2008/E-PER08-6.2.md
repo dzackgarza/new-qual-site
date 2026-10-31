@@ -5,7 +5,9 @@ kind: problem
 title: Construction and topology of the universal covering space
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Covering Spaces
+  - Universal Cover
 relations: []
 review: draft
 audit:

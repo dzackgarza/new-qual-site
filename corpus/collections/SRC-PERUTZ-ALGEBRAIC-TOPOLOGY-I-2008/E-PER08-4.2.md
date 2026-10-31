@@ -5,7 +5,9 @@ kind: problem
 title: Meridian, longitude, and center of the trefoil knot group
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Fundamental Group
+  - Knots
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Serre classes of abelian groups
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homological Algebra
+  - Exact Sequences
 relations: []
 review: draft
 audit:
@@ -25,7 +27,19 @@ audit:
 ::: {.problem}
 A collection $\mathcal{C}$ of $\ZZ$-modules is called a Serre class if for every short exact sequence $0\to A\to B\to C\to0$ such that two out of the three $\ZZ$-modules $A$, $B$, $C$ are in $\mathcal{C}$, the third is in $\mathcal{C}$ also.
 Fix a prime $p\in\ZZ$.
-Identify which of the following properties of $\ZZ$-modules $M$ define Serre classes: (a) $M$ is torsion; (b) $M$ is torsion-free; (c) $M$ is torsion but has no $p$-torsion; (d) every element of $M$ has $p$-power order; (e) every element of $M$ is divisible by $p$; (f) every $M$ is finitely generated.
+Identify which of the following properties of $\ZZ$-modules $M$ define Serre classes:
+
+(a) $M$ is torsion;
+
+(b) $M$ is torsion-free;
+
+(c) $M$ is torsion but has no $p$-torsion;
+
+(d) every element of $M$ has $p$-power order;
+
+(e) every element of $M$ is divisible by $p$;
+
+(f) $M$ is finitely generated.
 
 (*) What if we replace $M$ by an arbitrary commutative ring $R$ (and $p$ by a prime of $R$)?
 :::

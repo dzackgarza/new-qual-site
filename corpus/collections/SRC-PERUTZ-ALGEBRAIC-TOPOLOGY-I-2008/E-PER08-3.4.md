@@ -5,7 +5,9 @@ kind: problem
 title: $\operatorname{PSL}_2(\ZZ)$ as the free product $(\ZZ/2)*(\ZZ/3)$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Free Products
+  - Group Actions
 relations: []
 review: draft
 audit:
@@ -31,32 +33,32 @@ U=ST=\begin{pmatrix}0&1\\-1&1\end{pmatrix}
 $$
 in $\operatorname{SL}_2(\ZZ)$.
 
-1. Verify that $S^2=U^3=-I$.
+(a) Verify that $S^2=U^3=-I$.
 
-2. Show that, for every $A\in\operatorname{SL}_2(\ZZ)$, there is $n\in\ZZ$ such that if
-   $$
-   AT^n=\begin{pmatrix}a&b\\c&d\end{pmatrix},
-   $$
-   then either $c=0$ or $\abs{d}\le \abs{c}/2$.
+(b) Show that, for every $A\in\operatorname{SL}_2(\ZZ)$, there is $n\in\ZZ$ such that if
+$$
+AT^n=\begin{pmatrix}a&b\\c&d\end{pmatrix},
+$$
+then either $c=0$ or $\abs{d}\le \abs{c}/2$.
 
-3. Explain how to find $\ell\ge0$ and integers $n_1,\dots,n_\ell$ such that either
-   $$
-   AT^{n_1}ST^{n_2}S\cdots ST^{n_\ell}
-   $$
-   or the same product followed by $S$ has lower-left entry zero.
+(c) Explain how to find $\ell\ge0$ and integers $n_1,\dots,n_\ell$ such that either
+$$
+AT^{n_1}ST^{n_2}S\cdots ST^{n_\ell}
+$$
+or the same product followed by $S$ has lower-left entry zero.
 
-4. Show that $S$ and $T$ generate $\operatorname{SL}_2(\ZZ)$.
+(d) Show that $S$ and $T$ generate $\operatorname{SL}_2(\ZZ)$.
 
-5. Define
-   $$
-   \theta:(\ZZ/2)*(\ZZ/3)=\langle a,b\mid a^2,b^3\rangle\to\operatorname{PSL}_2(\ZZ)
-   $$
-   by $\theta(a)=\pm S$ and $\theta(b)=\pm U$.
-   Using the Möbius action on the upper half-plane $\halfplane$, prove that for every nontrivial word $w$ the map $\mu_w$ corresponding to $\theta(w)$ satisfies $\mu_w(D)\cap D=\varnothing$, where
-   $$
-   D=\{z\in\halfplane:0<\operatorname{Re}z<1/2,\ \abs{z-1}>1\}.
-   $$
-   Deduce that $\theta$ is an isomorphism.
+(e) Define
+$$
+\theta:(\ZZ/2)*(\ZZ/3)=\langle a,b\mid a^2,b^3\rangle\to\operatorname{PSL}_2(\ZZ)
+$$
+by $\theta(a)=\pm S$ and $\theta(b)=\pm U$.
+Using the Möbius action on the upper half-plane $\halfplane$, prove that for every nontrivial word $w$ the map $\mu_w$ corresponding to $\theta(w)$ satisfies $\mu_w(D)\cap D=\varnothing$, where
+$$
+D=\{z\in\halfplane:0<\operatorname{Re}z<1/2,\ \abs{z-1}>1\}.
+$$
+Deduce that $\theta$ is an isomorphism.
 
 For the last part, the source suggests considering
 $$

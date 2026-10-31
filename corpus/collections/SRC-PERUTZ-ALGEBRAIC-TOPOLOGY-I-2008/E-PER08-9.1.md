@@ -5,7 +5,9 @@ kind: problem
 title: Euler characteristic of a chain complex and of an exact sequence
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homological Algebra
+  - Euler Characteristic
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Index 2 subgroups of the free group $F_2$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Free Groups
+  - Covering Spaces
 relations: []
 review: draft
 audit:
@@ -20,7 +22,7 @@ audit:
 
 ::: {.problem}
 (From May’s book.)
-Identify all index 2 subgroups of the free group F2. Show that they are all free groups and identify generators for them.
+Identify all index 2 subgroups of the free group $F_2$. Show that they are all free groups and identify generators for them.
 :::
 
 ::: {.solution}

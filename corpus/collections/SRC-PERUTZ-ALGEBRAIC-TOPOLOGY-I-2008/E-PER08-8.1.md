@@ -5,7 +5,9 @@ kind: problem
 title: Simplicial homology of the tetrahedral $S^2$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homology
+  - Simplicial Complexes
 relations: []
 review: draft
 audit:

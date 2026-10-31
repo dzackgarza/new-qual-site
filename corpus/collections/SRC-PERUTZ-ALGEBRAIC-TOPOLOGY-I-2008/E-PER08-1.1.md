@@ -5,7 +5,8 @@ kind: problem
 title: Homotopy equivalence is an equivalence relation
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homotopy Equivalence
 relations: []
 review: draft
 audit:

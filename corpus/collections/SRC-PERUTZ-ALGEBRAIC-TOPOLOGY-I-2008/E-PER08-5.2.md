@@ -5,7 +5,9 @@ kind: problem
 title: Proper local diffeomorphisms are covering maps
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Covering Spaces
+  - Manifolds
 relations: []
 review: draft
 audit:

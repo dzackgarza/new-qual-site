@@ -5,7 +5,9 @@ kind: problem
 title: A locally path connected space that is not semilocally simply connected
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Covering Spaces
+  - Counterexamples
 relations: []
 review: draft
 audit:

@@ -5,7 +5,10 @@ kind: problem
 title: Five models of the 3-strand braid group and the trefoil group
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Fundamental Group
+  - Knots
+  - Braid Groups
 relations: []
 review: draft
 audit:
@@ -36,37 +39,37 @@ This exercise compares the following groups:
 
 - $\pi_1(\CC^2\setminus C)$, where $C=\{(X,Y):X^2=Y^3\}$ is the cuspidal cubic.
 
-1. Show that $a\mapsto sts$ and $b\mapsto ts$ define an isomorphism
-   $$
-   \langle a,b\mid a^2=b^3\rangle\xrightarrow{\sim}\langle s,t\mid sts=tst\rangle.
-   $$
+(a) Show that $a\mapsto sts$ and $b\mapsto ts$ define an isomorphism
+$$
+\langle a,b\mid a^2=b^3\rangle\xrightarrow{\sim}\langle s,t\mid sts=tst\rangle.
+$$
 
-2. With basepoint $\{-2,0,2\}\in C_3$, define loops
-   $$
-   \sigma(t)=\{-1-e^{\pi it},-1+e^{\pi it},2\},\qquad
-   \tau(t)=\{-2,1-e^{\pi it},1+e^{\pi it}\}.
-   $$
-   If $s=[\sigma]$ and $t=[\tau]$, check that $sts=tst$, obtaining a homomorphism $\langle s,t\mid sts=tst\rangle\to B_3$.
+(b) With basepoint $\{-2,0,2\}\in C_3$, define loops
+$$
+\sigma(t)=\{-1-e^{\pi it},-1+e^{\pi it},2\},\qquad
+\tau(t)=\{-2,1-e^{\pi it},1+e^{\pi it}\}.
+$$
+If $s=[\sigma]$ and $t=[\tau]$, check that $sts=tst$, obtaining a homomorphism $\langle s,t\mid sts=tst\rangle\to B_3$.
 
-3. Let $\operatorname{Sym}^3_0(\CC)$ be the unordered triples $\{a,b,c\}$ with $a+b+c=0$.
-   Show that
-   $$
-   \operatorname{Sym}^3(\CC)\cong \CC\times\operatorname{Sym}^3_0(\CC),
-   $$
-   and define a homeomorphism $\operatorname{Sym}^3_0(\CC)\to\CC^2$ by sending $\{a,b,c\}$ to $(x,y)$ such that
-   $$
-   (t-a)(t-b)(t-c)=t^3+xt+y.
-   $$
-   Verify that $a,b,c$ are distinct if and only if $4x^3+27y^2\ne0$.
-   Deduce that
-   $$
-   C_3\cong\CC\times(\CC^2\setminus C)
-   $$
-   and hence $B_3\cong\pi_1(\CC^2\setminus C)$.
+(c) Let $\operatorname{Sym}^3_0(\CC)$ be the unordered triples $\{a,b,c\}$ with $a+b+c=0$.
+Show that
+$$
+\operatorname{Sym}^3(\CC)\cong \CC\times\operatorname{Sym}^3_0(\CC),
+$$
+and define a homeomorphism $\operatorname{Sym}^3_0(\CC)\to\CC^2$ by sending $\{a,b,c\}$ to $(x,y)$ such that
+$$
+(t-a)(t-b)(t-c)=t^3+xt+y.
+$$
+Verify that $a,b,c$ are distinct if and only if $4x^3+27y^2\ne0$.
+Deduce that
+$$
+C_3\cong\CC\times(\CC^2\setminus C)
+$$
+and hence $B_3\cong\pi_1(\CC^2\setminus C)$.
 
-4. Show that $\CC^2\setminus C$ is homotopy equivalent to $S^3\setminus K$.
+(d) Show that $\CC^2\setminus C$ is homotopy equivalent to $S^3\setminus K$.
 
-5. Show that going around the resulting circle of homomorphisms gives an automorphism of $\pi_1(S^3\setminus K)$.
+(e) Show that going around the resulting circle of homomorphisms gives an automorphism of $\pi_1(S^3\setminus K)$.
 :::
 
 ::: {.solution}

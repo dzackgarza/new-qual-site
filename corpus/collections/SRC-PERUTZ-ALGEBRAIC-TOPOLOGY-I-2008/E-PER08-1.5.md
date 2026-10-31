@@ -5,7 +5,9 @@ kind: problem
 title: Complements of finitely many points as wedge sums of spheres
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homotopy Equivalence
+  - Spheres
 relations: []
 review: draft
 audit:

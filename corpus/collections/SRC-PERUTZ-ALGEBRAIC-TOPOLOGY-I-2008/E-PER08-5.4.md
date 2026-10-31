@@ -5,7 +5,9 @@ kind: problem
 title: Lifting of paths and homotopies and the subgroups of a covering space
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Covering Spaces
+  - Fundamental Group
 relations: []
 review: draft
 audit:
@@ -26,13 +28,17 @@ audit:
 Let $p\colon\widetilde X\to X$ be a covering map.
 Fix basepoints $x\in X$ and $\tilde x\in p^{-1}(x)$.
 
-1. If $\gamma\colon I\to X$ is a path with $\gamma(0)=x$, then there is a unique path $\tilde\gamma\colon I\to\widetilde X$ with $\tilde\gamma(0)=\tilde x$ which lifts $\gamma$ in the sense that $p\circ\tilde\gamma=\gamma$.
-2. A homotopy $\Gamma\colon I^2\to X$ lifts uniquely to a map $\widetilde\Gamma\colon I^2\to\widetilde X$ once we specify $\widetilde\Gamma(0,0)$.
-3. The map $p_*\colon\pi_1(\widetilde X,\tilde x)\to\pi_1(X,x)$ is injective.
-4. If $\tilde x'$ also lies in $p^{-1}(x)$, then $p_*(\pi_1(\widetilde X,\tilde x'))$ and $p_*(\pi_1(\widetilde X,\tilde x))$ are conjugate subgroups of $\pi_1(X,x)$.
-5. All conjugates of $p_*(\pi_1(\widetilde X,\tilde x))$ arise in this way.
+(a) If $\gamma\colon I\to X$ is a path with $\gamma(0)=x$, then there is a unique path $\tilde\gamma\colon I\to\widetilde X$ with $\tilde\gamma(0)=\tilde x$ which lifts $\gamma$ in the sense that $p\circ\tilde\gamma=\gamma$.
 
-The notes prove this lemma in outline: (1) exactly as unique path lifting for $\RR\to S^1$, and similarly (2); (3) by lifting a homotopy rel endpoints between $p_*\gamma_0$ and $p_*\gamma_1$ to $\widetilde X$; (4) by choosing a path $\gamma$ in $\widetilde X$ from $\tilde x'$ to $\tilde x$, so that $p_*(\pi_1(\widetilde X,\tilde x'))=(p_*\gamma)\cdot p_*(\pi_1(\widetilde X,\tilde x))\cdot(p_*\gamma)^{-1}$; (5) from (1).
+(b) A homotopy $\Gamma\colon I^2\to X$ lifts uniquely to a map $\widetilde\Gamma\colon I^2\to\widetilde X$ once we specify $\widetilde\Gamma(0,0)$.
+
+(c) The map $p_*\colon\pi_1(\widetilde X,\tilde x)\to\pi_1(X,x)$ is injective.
+
+(d) If $\tilde x'$ also lies in $p^{-1}(x)$, then $p_*(\pi_1(\widetilde X,\tilde x'))$ and $p_*(\pi_1(\widetilde X,\tilde x))$ are conjugate subgroups of $\pi_1(X,x)$.
+
+(e) All conjugates of $p_*(\pi_1(\widetilde X,\tilde x))$ arise in this way.
+
+The notes prove this lemma in outline: (a) exactly as unique path lifting for $\RR\to S^1$, and similarly (b); (c) by lifting a homotopy rel endpoints between $p_*\gamma_0$ and $p_*\gamma_1$ to $\widetilde X$; (d) by choosing a path $\gamma$ in $\widetilde X$ from $\tilde x'$ to $\tilde x$, so that $p_*(\pi_1(\widetilde X,\tilde x'))=(p_*\gamma)\cdot p_*(\pi_1(\widetilde X,\tilde x))\cdot(p_*\gamma)^{-1}$; (e) from (a).
 Write out the missing details.
 :::
 

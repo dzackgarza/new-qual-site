@@ -5,7 +5,9 @@ kind: problem
 title: Polar decomposition and the topology of $\operatorname{SL}_2(\CC)$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Topological Groups
+  - Homeomorphisms
 relations: []
 review: draft
 audit:

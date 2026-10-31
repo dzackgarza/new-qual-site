@@ -5,7 +5,9 @@ kind: problem
 title: Presentation of an amalgamated free product as a pushout
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Free Products
+  - Groups
 relations: []
 review: draft
 audit:

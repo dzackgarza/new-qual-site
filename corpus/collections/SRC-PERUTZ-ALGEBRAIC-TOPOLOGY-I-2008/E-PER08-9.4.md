@@ -5,7 +5,9 @@ kind: problem
 title: Mapping cones of chain maps
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homological Algebra
+  - Exact Sequences
 relations: []
 review: draft
 audit:

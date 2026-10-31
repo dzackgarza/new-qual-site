@@ -5,7 +5,8 @@ kind: problem
 title: Homology splits over path components
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 audit:

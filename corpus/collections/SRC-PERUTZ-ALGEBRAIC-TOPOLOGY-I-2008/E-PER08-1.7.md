@@ -5,7 +5,9 @@ kind: problem
 title: Direct proof that the 2-sphere is simply connected
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Fundamental Group
+  - Spheres
 relations: []
 review: draft
 audit:

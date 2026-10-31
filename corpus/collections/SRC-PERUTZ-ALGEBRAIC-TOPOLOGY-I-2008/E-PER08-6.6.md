@@ -5,7 +5,10 @@ kind: problem
 title: Fundamental groups of spaces of regular tetrahedra and icosahedra
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Covering Spaces
+  - Fundamental Group
+  - Topological Groups
 relations: []
 review: draft
 audit:

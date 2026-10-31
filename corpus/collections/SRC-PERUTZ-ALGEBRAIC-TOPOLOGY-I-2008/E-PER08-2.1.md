@@ -5,7 +5,10 @@ kind: problem
 title: Iwasawa decomposition and the topology of $\operatorname{SL}_2(\RR)$
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Topological Groups
+  - Fundamental Group
+  - Retracts
 relations: []
 review: draft
 audit:
@@ -27,12 +30,12 @@ Show that every matrix $A\in \operatorname{SL}_2(\RR)$ can be written uniquely a
 
 Use this to construct:
 
-1. a deformation retraction of $\operatorname{SL}_2(\RR)$, topologized as a subspace of $\RR^4$, onto $\operatorname{SO}(2)$; and
+(i) a deformation retraction of $\operatorname{SL}_2(\RR)$, topologized as a subspace of $\RR^4$, onto $\operatorname{SO}(2)$; and
 
-2. a homeomorphism
-   $$
-   S^1\times(0,\infty)\times\RR\longrightarrow \operatorname{SL}_2(\RR).
-   $$
+(ii) a homeomorphism
+$$
+S^1\times(0,\infty)\times\RR\longrightarrow \operatorname{SL}_2(\RR).
+$$
 
 Deduce that $\operatorname{SL}_2(\RR)$ is path connected and that
 $$

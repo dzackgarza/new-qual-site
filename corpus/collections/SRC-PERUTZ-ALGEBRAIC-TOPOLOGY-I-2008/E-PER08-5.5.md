@@ -5,7 +5,9 @@ kind: problem
 title: Maps with unique path lifting that are not covering maps
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Covering Spaces
+  - Counterexamples
 relations: []
 review: draft
 audit:

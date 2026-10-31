@@ -5,7 +5,10 @@ kind: problem
 title: Deck transformations of the universal covers of the torus and Klein bottle
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Covering Spaces
+  - Surfaces
+  - Fundamental Group
 relations: []
 review: draft
 audit:

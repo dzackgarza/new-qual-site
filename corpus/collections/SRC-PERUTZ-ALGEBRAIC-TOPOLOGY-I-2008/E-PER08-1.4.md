@@ -5,7 +5,9 @@ kind: problem
 title: Homotopy and homeomorphism types of capital letters
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Homotopy Type
+  - Homeomorphisms
 relations: []
 review: draft
 audit:

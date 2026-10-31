@@ -5,7 +5,8 @@ kind: problem
 title: Four basic examples of covering maps
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Covering Spaces
 relations: []
 review: draft
 audit:
@@ -25,27 +26,27 @@ audit:
 ::: {.problem}
 Show that each of the following is a covering map.
 
-1. The quotient map
-   $$
-   \RR\longrightarrow \RR/\ZZ.
-   $$
+(a) The quotient map
+$$
+\RR\longrightarrow \RR/\ZZ.
+$$
 
-2. For $n\ge1$, the map
-   $$
-   S^1\longrightarrow S^1,
-   \qquad e^{it}\longmapsto e^{int}.
-   $$
+(b) For $n\ge1$, the map
+$$
+S^1\longrightarrow S^1,
+\qquad e^{it}\longmapsto e^{int}.
+$$
 
-3. A finite product of covering maps; for example,
-   $$
-   \RR^n\longrightarrow(\RR/\ZZ)^n=\RR^n/\ZZ^n.
-   $$
+(c) A finite product of covering maps; for example,
+$$
+\RR^n\longrightarrow(\RR/\ZZ)^n=\RR^n/\ZZ^n.
+$$
 
-4. The quotient map
-   $$
-   S^n\longrightarrow\RP^n
-   $$
-   identifying antipodal points.
+(d) The quotient map
+$$
+S^n\longrightarrow\RP^n
+$$
+identifying antipodal points.
 :::
 
 ::: {.solution}
