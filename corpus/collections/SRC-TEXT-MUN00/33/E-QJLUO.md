@@ -16,10 +16,12 @@ review: draft
 ::: {.exercise}
 
 Let $X$ be completely regular; let $A$ and $B$ be disjoint closed subsets of $X$.
-Show that if $A$ is compact, there is a continuous function $f: X \to [0, 1]$ such that $f(A) = \theset{0}$ and $f(B) = \theset{1}$.
+Show that if $A$ is compact, there is a continuous function $f: X \to [0, 1]$ such that $f(a)=0$ for every $a\in A$ and $f(b)=1$ for every $b\in B$.
 :::
 
 ::: {.solution}
+If $A=\varnothing$, take $f=1$. If $B=\varnothing$, take $f=0$. Assume both are nonempty below.
+
 For each $a\in A$, complete regularity gives a continuous function
 $$
 u_a:X\to[0,1]
