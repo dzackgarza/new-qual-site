@@ -23,6 +23,10 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Corrected the intended hypothesis to A5≅Icos, proved a nonabelian simple group is not solvable, proved subgroups of solvable groups are solvable, and embedded A5 in every S_n for n≥5."
+- event: source-corrected
+  by: chatgpt
+  date: 2026-10-31
+  note: "The packet prints S(5)≅Icos but later identifies Icos with A(5); the icosahedral rotation group has order 60, as does A5, while S5 has order 120."
 ---
 
 ::: {.exercise}
@@ -121,11 +125,4 @@ $$
 
 :::
 
-:::
-
-::: {.remark}
-The source prints the hypothesis as $S(5)\cong Icos$ and later identifies
-"Icos (or $A(5)$)". The rotation group of the icosahedron has order $60$ and
-is isomorphic to $A_5$, not to $S_5$, which has order $120$; the statement
-uses $A(5)\cong Icos$.
 :::
