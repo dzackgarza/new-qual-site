@@ -33,7 +33,7 @@ audit:
 ---
 
 ::: {.problem}
-2. Let $f \in L^{1}(\RR^{d})$ and $M_{f}$ denote the Hardy–Littlewood maximal function of $f$; in other words,
+Let $f \in L^{1}(\RR^{d})$ and $M_{f}$ denote the Hardy–Littlewood maximal function of $f$; in other words,
 $$
 M_{f}(x) = \sup_{B} \frac{1}{m(B)}\int_{B} \abs{f(y)} \, dy, \quad x \in \RR^{d},
 $$

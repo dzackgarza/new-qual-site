@@ -33,7 +33,7 @@ audit:
 ---
 
 ::: {.problem}
-3. Let $X$ and $Y$ be Hilbert spaces and $L \colon X \to Y$ be a bounded linear operator. Prove that the following two conditions are equivalent:
+Let $X$ and $Y$ be Hilbert spaces and $L \colon X \to Y$ be a bounded linear operator. Prove that the following two conditions are equivalent:
 
 (a) The image $L(\mathbf{B})$ of the unit ball in $X$ has compact closure in $Y$.
 
