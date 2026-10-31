@@ -50,10 +50,7 @@ $$
 
 ::: pf-proof
 
-By excision,
-$$
-\widetilde h_n(X\vee Y,X)\cong\widetilde h_n(Y,* )\cong\widetilde h_n(Y).
-$$
+The exactness axiom uses the quotient $(X\vee Y)/X\cong Y$ directly.
 The retraction $r:X\vee Y\to X$ collapsing $Y$ to the wedge point satisfies $r\circ i=\mathrm{id}_X$. Hence $i_*:\widetilde h_n(X)\to\widetilde h_n(X\vee Y)$ is split injective. Exactness then forces the connecting map from the relative group to $\widetilde h_{n-1}(X)$ to vanish, giving the displayed short exact sequence.
 
 :::
@@ -70,7 +67,7 @@ $$
 
 ::: pf-proof
 
-The retraction $X\vee Y\to Y$ collapsing $X$ supplies a section of the quotient-induced map to the relative group. Equivalently, the two inclusions induce the direct-sum map, and the two retractions give its inverse.
+The retraction $X\vee Y\to Y$ collapsing $X$ supplies a section of the quotient-induced map to $\widetilde h_n(Y)$. Equivalently, the two inclusions induce the direct-sum map, and the two retractions give its inverse.
 
 :::
 
