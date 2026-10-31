@@ -20,6 +20,7 @@ audit:
 ::: {.exercise}
 
 Let $p: \overline{G} \to G$ be a homomorphism of topological groups that is a covering map.
+As throughout this chapter, $\overline G$ and $G$ are path connected and locally path connected.
 Show that if $G$ is abelian, so is $\overline{G}$.
 :::
 
