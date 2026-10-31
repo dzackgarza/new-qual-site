@@ -71,7 +71,7 @@ $$
 [a_0\times0,a\times0)
 =[a_0\times0,b\times0)\cup[b\times0,a\times0),
 $$
-and the second piece is exactly the fiber $\{b\}\times[0,1)$, so part (a) and the induction hypothesis apply.
+and the second piece is exactly the fiber $\{b\}\times[0,1)$. If $b=a_0$, this is the whole interval and proves the claim. Otherwise part (a) and the induction hypothesis apply.
 
 If $a$ has no immediate predecessor, its section $S_a$ is countable by minimality of $S_\Omega$ and has no largest element. Enumerate $S_a=\{e_0,e_1,\ldots\}$, put $c_0=a_0$, and choose $c_{i+1}\in S_a$ with $c_{i+1}>\max\{c_i,e_i\}$. Then $c_0<c_1<\cdots$ and $\sup_i(c_i\times0)=a\times0$. By the induction hypothesis $[a_0\times0,c_{i+1}\times0)$ has order type $[0,1)$, so by part (a) each interval
 $$
@@ -79,9 +79,9 @@ $$
 $$
 has order type $[0,1)$, and part (b) yields the result for $a$.
 
-(d) The argument in (c), together with (a), shows more generally that every bounded interval in $L$ is order-isomorphic to a real interval. Thus if $p<q$ in $L$, the closed interval $[p,q]$ is homeomorphic to $[0,1]$. Composing such a homeomorphism with the standard path $[0,1]\to[0,1]$ gives a path from $p$ to $q$. Hence $L$ is path connected.
+(d) Let $p=(a,s)<q=(b,t)$. If $a=b$, then $[p,q)$ has the order type of $[s,t)$, hence of $[0,1)$. If $a<b$, split $[p,q)$ at $(a+1,0)$ and, when $a+1<b$, at $(b,0)$. The first piece is the remainder $[s,1)$ of the $a$-fiber. The middle piece has order type $[0,1)$ by (c) and (a), and the final piece, when $t>0$, is $[0,t)$. By repeated use of (a), $[p,q)$ has order type $[0,1)$. Sending $q$ to $1$ extends this order isomorphism to $[p,q]\cong[0,1]$. Thus $[p,q]$ is homeomorphic to $[0,1]$ and supplies a path from $p$ to $q$. Hence $L$ is path connected.
 
-(e) For any $x\in L$, choose $p<x<q$. The same bounded-interval argument shows $(p,q)$ is order-isomorphic, hence homeomorphic, to an open interval of $\RR$. Thus every point has a neighborhood homeomorphic to an open real interval.
+(e) For any $x\in L$, choose $p<x<q$. By (d), $[p,q]$ is order-isomorphic to $[0,1]$, so $(p,q)$ is homeomorphic to $(0,1)$. Thus every point has a neighborhood homeomorphic to an open real interval.
 
 (f) The long line is not second countable. For each $a\in S_\Omega$, the vertical interval
 $$
