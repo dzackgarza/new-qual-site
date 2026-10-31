@@ -35,9 +35,11 @@ certificate is not a proof.
 The printed statement fails without it, but the replacement is not certified here,
 so the card keeps both statements and its correction is marked proposed.
 `cards/NormExtension.lean` now covers the case $x\notin Y$. The remaining half is
-$x\in Y$: a functional on $Y$ bounded by the *given* norm $\|\cdot\|_1$ with
-$\varphi x=\|x\|_1\ne0$, then extended to $E$ by `exists_extension_norm_eq`
-(whose bound is the subspace norm, and $\|y\|_1\le K\|y\|$ supplies $K$).
-The exact missing lemma is the normed-space structure on $Y$ for $\|\cdot\|_1$,
-i.e. `NormedAddCommGroup.ofCore`-style data from a norm equivalent to the subspace
-norm, so that `exists_dual_vector` applies to it.
+$x\in Y$, and it needs no second norm structure on $Y$: the analytic Hahn--Banach
+theorem `exists_extension_of_le_sublinear` extends a linear functional from
+$\operatorname{span}\{x\}$ to $Y$ against the sublinear function $\|\cdot\|_1$,
+giving $|f y|\le\|y\|_1$ with $f x=\|x\|_1$. The precise remaining step is to
+build the partial linear map on $\operatorname{span}\{x\}$ with value $\|x\|_1$
+(in Mathlib terms a `LinearPMap` with that domain), apply that theorem, and then
+extend the resulting bounded functional to $E$ by `exists_extension_norm_eq`,
+whose bound is $\le K\|\cdot\|$ because $\|y\|_1\le K\|y\|$.
