@@ -25,38 +25,17 @@ audit:
 
 ::: {.solution}
 
-::: pf
+(a) For $S\subseteq A$, let $\chi_S(i)=1$ if $i\in S$, and let
+$\chi_S(i)=0$ otherwise. The map
+$$
+S\longmapsto(\chi_S(1),\ldots,\chi_S(n))
+$$
+from $\mathcal P(A)$ to $\{0,1\}^n$ is bijective. Its inverse sends a
+binary $n$-tuple $(x_1,\ldots,x_n)$ to $\{i\in A:x_i=1\}$.
 
-::: pf-step
-
-Map $\mathcal P(A)\to X^n$ by $S\mapsto (\chi_S(1),\dots,\chi_S(n))$ where $\chi_S$ characteristic.
-
-::: pf-proof
-
-bijection, inverse $(x_i)\mapsto\{i:x_i=1\}$.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Hence $\cardinality{\mathcal P(A)}=2^n$ finite.
-
-::: pf-proof
-
-$X^n$ has $2^n$ elements.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s2){.pf-ref}.
-
-:::
-
-:::
-
+(b) Any finite set $A$ has a bijection with $\{1,\ldots,n\}$ for some
+$n\ge0$. This induces a bijection of their power sets. By part (a),
+$\mathcal P(A)$ has $2^n$ elements, so it is finite. For $n=0$, the
+power set of the empty set is $\{\varnothing\}$, in agreement with
+$2^0=1$.
 :::
