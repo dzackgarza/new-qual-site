@@ -1833,6 +1833,10 @@ recurring reporting programme.
   Inspect representative public behavior; source-text churn is not acceptance evidence.
   Repair each defensible finding at its owner.
   **Acceptance:** all findings from the pass are repaired and a final pass across those lenses finds no further defensible change.
+  **Closed.** The report reuses its parsed cards for the unsolved queue. The publisher
+  uses Pandoc for authored Markdown. The deployed problem browser renders a sample
+  from the selected area and keeps the filtered table visible. The final pass found
+  no further concrete tooling or site repair.
 
 Live issue state is on [GitHub issues](https://github.com/dzackgarza/new-qual-site/issues).
 Do not mirror it here.
