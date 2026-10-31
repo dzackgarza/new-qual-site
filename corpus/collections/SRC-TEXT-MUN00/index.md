@@ -599,8 +599,6 @@ source:
       comment: Munkres §30.17
     - id: E-V98N5
       comment: Munkres §30.18
-    - id: E-5FLKZ
-      comment: Munkres §30
   - name: '31'
     problems:
     - id: E-71YOD
