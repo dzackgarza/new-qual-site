@@ -37,18 +37,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
-### Hartshorne V.4.4 cubic lemma at singular intersections
-
-- **Object and need:** `P-AGH544CUBICGROUPLAW` must prove part (a) for an irreducible plane cubic, including configurations whose named intersections lie at a singular point.
-
-- **Observed evidence:** the printed V.4.4(a) says irreducible, not nonsingular. The card's former completion used $P''+Q''+R''\sim H$ to conclude that this cycle is cut by a line. At singular points, the individual point cycles need not be Cartier divisors, so that conclusion does not follow from the cited restriction isomorphism.
-
-- **Impact and owner:** the reduced nine-point argument and the regular-point divisor argument remain on the card. The full singular-intersection claim belongs to the proof of V.4.4(a).
-
-- **Uncertainty:** no counterexample to the printed lemma is asserted. The missing part is a scheme-theoretic or limiting argument that treats singular intersections and their branches.
-
-- **Repair:** prove the printed part (a) at singular intersections and update the card under the Hartshorne collection audit in `TODO.md`.
-
 ### Hartshorne IV.6.7 proof uses tangent contacts as distinct multisecants
 
 - **Object and need:** `P-AGH467MULTISECANTS` must prove that every smooth space curve outside the four listed cases has infinitely many lines through at least three distinct curve points.

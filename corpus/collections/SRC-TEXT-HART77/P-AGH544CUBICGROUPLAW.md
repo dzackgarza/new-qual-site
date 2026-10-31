@@ -64,13 +64,13 @@ The reducible cubic
 $$
 D=M_P\cup M_Q\cup M_R
 $$
-meets $C$ in the degree-nine divisor
+meets $C$ in the degree-nine intersection cycle
 $$
 P+P'+P''+Q+Q'+Q''+R+R'+R''.
 $$
 
 ::: pf-proof
-Each line $M_P$ meets the irreducible plane cubic $C$ in a divisor of degree
+Each line $M_P$ meets the irreducible plane cubic $C$ in a zero-dimensional scheme of length
 $3$:
 $$
 M_P\restrict_C=P+P'+P''.
@@ -78,7 +78,8 @@ $$
 The same statement holds for $M_Q$ and $M_R$. Since $C$ is irreducible of
 degree $3$, no line is a component of $C$. Therefore the product cubic $D$
 has no common component with $C$, and Bezout gives the displayed total
-intersection divisor of degree $9$.
+intersection cycle of degree $9$. This point sum records lengths; it does not
+assert that a singular point is a Cartier divisor on $C$.
 :::
 
 :::
@@ -157,9 +158,10 @@ The conclusion of part (a) remains valid with tangent and coincident-point
 intersections when all named points are regular on $C$.
 
 ::: pf-proof
-Write $H$ for the hyperplane divisor class on the regular locus of the
-integral plane cubic $C$. The assumption that the named points are regular
-allows their point divisors to be used in the following calculation.
+Write $H$ for the hyperplane Cartier divisor class on $C$. Each regular
+closed point of an integral curve is a Cartier divisor on the whole curve,
+so the assumption that the named points are regular permits the following
+calculation on $C$.
 Every line cuts a Cartier divisor linearly equivalent to $H$. Thus, with
 intersection multiplicities understood,
 $$
@@ -217,6 +219,66 @@ chord-and-tangent sense.
 
 Step [](#cayley-bacharach-collinear-reduced){.pf-ref} is the Cayley--Bacharach proof in the reduced case; the present
 argument covers coalescing regular points and tangent lines.
+:::
+
+:::
+
+::: {.pf-step #singular-intersections-by-specialization}
+The collinearity conclusion holds when a named intersection is singular and
+each joining line is defined either by distinct paired points or as the
+tangent at a regular coincident pair.
+
+::: pf-proof
+Let $B$ be the dual plane of lines in $\PP^2$. A line section of the integral
+cubic $C$ has length $3$. Let $T\to B$ record a line together with an ordering
+of its three intersection points, repeated according to multiplicity. This
+is a finite flat cover. Locally choose a point of the moving line outside
+$C$ as the point at infinity and write the restricted cubic as a monic
+polynomial $f(t)$ of degree $3$. Its ordered-root algebra is obtained by
+adjoining a root of $f$, a root of the remaining monic quadratic, and then
+the final root. These steps are free of ranks $3$, $2$, and $1$.
+
+The two ordered sections in the statement give a point of the finite flat
+cover $T\times T\to B\times B$. Every irreducible component of this cover
+dominates $B\times B$: locally its coordinate algebra is torsion-free over
+the base domain, so a minimal prime cannot contract to a nonzero prime of
+the base. Hence configurations over a nonempty open subset of $B\times B$
+are dense in every component.
+
+Choose that open subset so that both lines meet $C$ in three distinct
+regular points and none of the three joining lines passes through a
+singular point of $C$. This open is nonempty. A general line is transverse
+to $C$ and avoids its finite singular locus. After fixing one such first
+line, choose the first two points of the second line section freely on the
+regular locus. For a fixed point of the first line and a fixed singular
+point of $C$, only finitely many second points lie on their joining line.
+The third point of the second line section also varies as either chosen
+point varies, so the same avoidance applies to the remaining pairing.
+Thus all joining lines avoid
+the singular locus for a general choice. Every named point is then regular,
+and step [](#collinear-with-multiplicity){.pf-ref} gives the collinearity.
+
+On the open part of $T\times T$ where each paired pair consists of distinct
+points, the three joining lines vary algebraically. On each joining line,
+divide its restricted cubic by the two linear factors belonging to the
+paired points; the remaining monic linear factor gives its third
+intersection algebraically. Thus $P''$, $Q''$, and $R''$ are morphisms to
+$C$ on this open part. Collinearity is the vanishing of the determinant of
+their three homogeneous coordinate rows, hence a closed condition. It
+holds on this dense regular locus, so it holds at the given configuration,
+including the singular intersections.
+
+If a paired point coincides at a regular point, the same argument extends
+across that diagonal. In a local parameter $t$ on $C$, write the embedded
+point as a homogeneous coordinate vector $a(t)$. The coefficients of the
+secant line through $a(t)$ and $a(u)$ are $a(t)\times a(u)$. Dividing by
+$u-t$ and setting $u=t$ gives $a(t)\times a'(t)$, the nonzero coefficient
+vector of the tangent line. Dividing the restricted cubic by the two
+linear factors of these approaching points likewise gives a monic linear
+factor whose root is the third tangent intersection. Hence the joining
+line and its third intersection extend algebraically to a regular
+coincident pair. The collinearity determinant remains zero at that limit.
+
 :::
 
 :::
@@ -377,17 +439,9 @@ This proves part (b).
 :::
 
 ::: pf-qed
-Steps [](#nine-point-divisor){.pf-ref}, [](#eight-points-on-reducible-cubic){.pf-ref}, [](#cayley-bacharach-collinear-reduced){.pf-ref} and [](#collinear-with-multiplicity){.pf-ref} prove the cubic lemma in the stated cases, and steps [](#group-law-via-star-and-iota){.pf-ref}, [](#two-collinear-triples){.pf-ref}, [](#v-r-s-collinear){.pf-ref}, [](#v-equals-s-star-r){.pf-ref} and [](#associativity){.pf-ref} use
+Steps [](#nine-point-divisor){.pf-ref}, [](#eight-points-on-reducible-cubic){.pf-ref}, [](#cayley-bacharach-collinear-reduced){.pf-ref}, [](#collinear-with-multiplicity){.pf-ref}, and [](#singular-intersections-by-specialization){.pf-ref} prove the cubic lemma whenever its joining lines are defined, and steps [](#group-law-via-star-and-iota){.pf-ref}, [](#two-collinear-triples){.pf-ref}, [](#v-r-s-collinear){.pf-ref}, [](#v-equals-s-star-r){.pf-ref} and [](#associativity){.pf-ref} use
 that lemma to prove associativity of the chord-and-tangent law.
 :::
 
 :::
-:::
-
-::: {.remark}
-The printed part (a) allows singular intersections. The divisor argument
-above uses point divisors only at regular points. At a singular point, a
-degree-three cycle linearly equivalent to a hyperplane section need not be
-the divisor of a line in the given embedding. A proof of part (a) for those
-configurations remains to be written.
 :::
