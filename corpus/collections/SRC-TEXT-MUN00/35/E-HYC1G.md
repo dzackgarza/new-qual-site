@@ -67,8 +67,7 @@ complement $X \setminus F$ is open $\iff (X \setminus F) \cap X_i = X_i \setminu
 For any fixed $k \ge 1$ and all $i \ge 1$:
 - If $i \le k$, $X_k \cap X_i = X_i$, which is closed in $X_i$.
 - If $i > k$, $X_k$ is closed in $X_{k+1} \subset \cdots \subset X_i$, so $X_k \cap X_i = X_k$ is closed in $X_i$.
-Thus $X_k \cap X_i$ is closed in $X_i$ for every $i$, so $X_k$ is closed in $X$.
-Furthermore, the subspace topology on $X_k$ coincides with its original topology.
+Thus $X_k \cap X_i$ is closed in $X_i$ for every $i$, so $X_k$ is closed in $X$. If $O$ is open in the original topology of $X_k$, then $F=X_k\setminus O$ is closed in $X_k$. For $i\le k$, $F\cap X_i$ is closed in $X_i$; for $i>k$, transitivity of closed subspaces makes $F$ closed in $X_i$. The closed-set criterion above makes $F$ closed in $X$. Therefore $O=X_k\cap(X\setminus F)$ is open in the subspace topology. The reverse inclusion follows from the definition of the coherent topology. Thus the subspace topology on $X_k$ coincides with its original topology.
 
 ::: pf-proof
 transitivity of closed subspaces.
