@@ -283,13 +283,6 @@ Its value group is not infinite cyclic, so it is not a DVR.
 
 :::
 
-::: pf-qed
-
-Step [](#s1){.pf-ref} proves part (a). Step [](#s2){.pf-ref} proves the first two surface examples, and step [](#s3){.pf-ref} proves the domination and center assertions for the third.
-Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} characterize when the third construction is discrete; steps [](#s6){.pf-ref} and [](#s7){.pf-ref} show that both possibilities occur.
-
-:::
-
 :::
 
 :::
