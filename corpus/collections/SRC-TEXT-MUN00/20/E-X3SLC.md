@@ -33,7 +33,7 @@ Let $f(t)=t/(1+t)=1-1/(1+t)$ for $t\ge0$, so that $d'=f\circ d$; $f$ is increasi
 
 ::: pf
 
-::: {.pf-step #f-superadditive}
+::: {.pf-step #f-subadditive}
 $f(a+b)\le f(a)+f(b)$ for $a,b\ge0$.
 
 ::: pf-proof
@@ -49,7 +49,7 @@ $d'$ is a metric bounded by $1$.
 
 ::: pf-proof
 $d'\ge0$, with $d'(x,y)=0$ if and only if $d(x,y)=0$, that is, $x=y$; $d'$ is symmetric because $d$ is; and $d'<1$ because $f<1$.
-Since $f$ is increasing, step [](#f-superadditive){.pf-ref} gives
+Since $f$ is increasing, step [](#f-subadditive){.pf-ref} gives
 $$
 d'(x,z)=f(d(x,z))\le f(d(x,y)+d(y,z))\le d'(x,y)+d'(y,z).
 $$
