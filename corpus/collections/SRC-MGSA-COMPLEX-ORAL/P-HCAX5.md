@@ -13,11 +13,11 @@ review: draft
 ---
 
 ::: {.problem}
-a. Derive the power series of $\tan z$ at the origin.
+(a) Derive the power series of $\tan z$ at the origin.
 
-b. Determine its radius of convergence.
+(b) Determine its radius of convergence.
 
-c. Prove the location of the zeros of $\cos z$, and explain how they determine this radius.
+(c) Prove the location of the zeros of $\cos z$, and explain how they determine this radius.
 :::
 
 ::: {.solution}

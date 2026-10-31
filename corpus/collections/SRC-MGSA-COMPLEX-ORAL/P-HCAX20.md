@@ -14,9 +14,9 @@ review: draft
 ---
 
 ::: {.problem}
-a. State the argument principle and explain its name.
+(a) State the argument principle and explain its name.
 
-b. Reformulate it without contour integrals as a statement about the winding number of an arbitrary continuous map from a domain to $\CC$ with isolated zeros.
+(b) Reformulate it without contour integrals as a statement about the winding number of an arbitrary continuous map from a domain to $\CC$ with isolated zeros.
 :::
 
 ::: {.solution}

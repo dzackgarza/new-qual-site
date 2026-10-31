@@ -243,7 +243,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-MATHEMATICAL-TRIVIUM
   - [x] SRC-MAXIM-PROBLEMS-ALGEBRAIC-TOPOLOGY
   - [x] SRC-MGSA-COMM-ALG-ORAL
-  - [ ] SRC-MGSA-COMPLEX-ORAL
+  - [x] SRC-MGSA-COMPLEX-ORAL
   - [ ] SRC-MGSA-FIELDS-ORAL
   - [ ] SRC-MGSA-GROUPS-ORAL
   - [x] SRC-MTH674-DIFFGEOM-MIDTERM-SAMPLE

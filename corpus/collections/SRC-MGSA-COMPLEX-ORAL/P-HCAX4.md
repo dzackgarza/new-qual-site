@@ -23,14 +23,18 @@ $$
 \Omega=\CC\setminus(-\infty,-1/4].
 $$
 
-a. Show that there is a conformal isomorphism $f:\DD\to\Omega$ with $f(0)=0$.
+(a) Show that there is a conformal isomorphism $f:\DD\to\Omega$ with $f(0)=0$.
 
-b. Give a normalization which makes $f$ unique.
+(b) Give a normalization which makes $f$ unique.
 
-c. Write $f(z)=\sum_{j\geq 1}a_jz^j$.
+(c) Write $f(z)=\sum_{j\geq 1}a_jz^j$.
 Use another conformal map expressed in terms of $f$ and $-z$ to determine a ring containing all coefficients $a_j$.
 
-d. Compute the coefficients $a_j$.
+(d) Compute the coefficients $a_j$.
+:::
+
+::: {.remark}
+The source prints $\Omega=\CC\setminus\{x\in\RR \mid x<\tfrac14\}$. That set does not contain $0$, so no map with $f(0)=0$ exists; the statement uses the slit $(-\infty,-1/4]$, the image of the Koebe function.
 :::
 
 ::: {.solution}
