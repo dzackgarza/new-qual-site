@@ -27,7 +27,7 @@ audit:
 
 ::: {.problem}
 For a map $f: M \to N$ between connected closed orientable $n$-manifolds with fundamental classes $[M]$ and $[N]$, the degree of $f$ is defined to be the integer $d$ such that $f_*([M]) = d[N]$, so the sign of the degree depends on the choice of fundamental classes.
-Show that for any connected closed orientable $n$-manifold $M$ there is a degree 1 map $M \to S^n$.
+Show that for any connected closed orientable $n$-manifold $M$ with $n>0$ there is a degree 1 map $M \to S^n$.
 :::
 
 ::: {.solution}
