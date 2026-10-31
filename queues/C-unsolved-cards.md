@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem cards
 
-87 problem cards have no solution section. These are
+86 problem cards have no solution section. These are
 the cards issue #2 targets: write a Lamport-style structured proof for each.
 
 Regenerate with `just unsolved` after a card gains a solution. CI publishes
@@ -10,11 +10,10 @@ regeneration, and writing the solution removes the line.
 
 ## Count
 
-- Problems: 87
+- Problems: 86
 
-## Problems (87)
+## Problems (86)
 
-- [ ] E-SS10.PR-5 — "Elliptic discriminant and the Dedekind eta function"
 - [ ] E-SS10.PR-6 — "Eight squares from an Eisenstein series"
 - [ ] E-SS2.PR-4 — "Converse of Runge's theorem"
 - [ ] E-SS2.PR-5 — "A universal entire function under translation"
