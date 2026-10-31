@@ -29,7 +29,7 @@ Show also that the H-space multiplication $\mu$ is unique up to homotopy.
 :::
 
 ::: {.solution}
-By Exercise 4, homotopy classes of maps
+The product $K(G,n)\times K(G,n)$ is a $K(G\oplus G,n)$. By Exercise 4, homotopy classes of maps
 $$
 K(G,n)\times K(G,n)\to K(G,n)
 $$
