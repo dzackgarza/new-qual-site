@@ -25,84 +25,20 @@ Which of these properties does a compact Hausdorff space have?
 
 ::: {.solution}
 
-::: pf
+Of the properties numbered in Supplementary Exercise 1, every compact Hausdorff space has these guaranteed properties:
 
-::: pf-step
-The seventeen standard properties and their validity for compact Hausdorff spaces:
-- **Guaranteed properties (9):**
-  1. $T_1$ (Points are closed)
-  2. Hausdorff ($T_2$)
-  3. Regular ($T_3$)
-  4. Completely regular ($T_{3\frac{1}{2}}$)
-  5. Normal ($T_4$)
-  6. Compact
-  7. Limit point compact
-  8. Locally compact
-  9. Lindelöf
-- **Not necessarily possessed (8):**
-  10. First-countable
-  11. Second-countable
-  12. Separable
-  13. Metrizable
-  14. Sequentially compact
-  15. Connected
-  16. Path-connected
-  17. Locally connected
-:::
+| Number | Property | Reason |
+| --- | --- | --- |
+| 5 | Compact | Hypothesis |
+| 6 | Limit point compact | Every infinite subset of a compact space has a limit point |
+| 7 | Locally compact Hausdorff | The whole space is a compact neighborhood of each point |
+| 8 | Hausdorff | Hypothesis |
+| 9 | Regular | Compact Hausdorff spaces are normal |
+| 10 | Completely regular | Urysohn's lemma applies to normal spaces |
+| 11 | Normal | Disjoint closed subsets of a compact Hausdorff space have disjoint open neighborhoods |
+| 14 | Lindelöf | Every open cover has a finite subcover |
 
-::: pf-step
-Proofs for guaranteed properties:
+The Cantor set is compact Hausdorff and has no connected neighborhood of any point: its connected subsets are singletons, and no singleton is open. It therefore shows that connectedness, path connectedness, local connectedness, and local path connectedness (properties 1–4) are not guaranteed.
 
-::: pf-proof
-
-::: pf-step
-**$T_1$ and Hausdorff:** Every Hausdorff space is $T_1$, and Hausdorffness holds by hypothesis.
-:::
-
-::: pf-step
-**Regularity and Normality:** Every compact Hausdorff space is normal ($T_4$). Given disjoint closed sets $A, B \subseteq X$, compactness allows finite subcovers of point-separating open sets to separate $A$ and $B$. Normality with $T_1$ immediately implies regularity ($T_3$).
-:::
-
-::: pf-step
-**Complete regularity:** By Urysohn's Lemma, every normal $T_1$ space is completely regular ($T_{3\frac{1}{2}}$).
-:::
-
-::: pf-step
-**Compactness, Limit Point Compactness, Local Compactness, Lindelöf:**
-- Compactness holds by hypothesis.
-- Compactness implies limit point compactness (every infinite subset has an accumulation point).
-- Every compact space is locally compact ($X$ itself serves as a compact neighborhood for each point).
-- Every open cover has a finite subcover, which is in particular a countable subcover, so $X$ is Lindelöf.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Counterexamples for non-guaranteed properties:
-
-::: pf-proof
-
-::: pf-step
-**Countability and Metrizability (First-countable, Second-countable, Separable, Metrizable):**
-- The one-point compactification of an uncountable discrete space is compact Hausdorff, but fails to be first-countable (and hence not second-countable, separable, or metrizable).
-- The product space $\{0, 1\}^{\RR}$ is compact Hausdorff by Tychonoff's Theorem, but is not first-countable and not metrizable.
-:::
-
-::: pf-step
-**Sequential compactness:** The space $\{0, 1\}^{\RR}$ (or the Stone-Čech compactification $\beta\NN$) is compact Hausdorff but not sequentially compact.
-:::
-
-::: pf-step
-**Connectedness properties (Connected, Path-connected, Locally connected):**
-- The two-point discrete space $\{0, 1\}$ or the Cantor set $C$ is compact Hausdorff, but is totally disconnected (hence neither connected, path-connected, nor locally connected without isolated components). Q.E.D.
-:::
-
-:::
-
-:::
-
-:::
-
+The ordinal interval $[0,\omega_1]$ is compact Hausdorff. It is not first countable at $\omega_1$, since the supremum of countably many ordinals below $\omega_1$ remains below $\omega_1$. It is not separable: a countable set of smaller ordinals is bounded, and the interval above that bound and below $\omega_1$ misses it. Thus it is not second countable or metrizable. It is also not locally metrizable at $\omega_1$: every neighborhood of that point contains a final interval with the same failure of first countability. This gives counterexamples to properties 12, 13, 15, 16, and 17.
 :::
