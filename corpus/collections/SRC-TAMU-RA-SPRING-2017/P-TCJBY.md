@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Consider the space $C([0,1])$ of real-valued continuous functions on $[0,1]$, with the supremum norm $\norm{f}_\infty\coloneqq\sup_{x\in[0,1]}\abs{f(x)}$ and the $L^2$-norm $\norm{f}_2\coloneqq\left(\int_0^1\abs{f(x)}^2\,dx\right)^{1/2}$.
 Let $S$ be a closed linear subspace of $(C([0,1]),\norm{\cdot}_\infty)$.
 Show that if $S$ is complete in the norm $\norm{\cdot}_2$, then $S$ is finite-dimensional.
