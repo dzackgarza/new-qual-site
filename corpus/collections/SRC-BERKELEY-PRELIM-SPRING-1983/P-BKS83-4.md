@@ -32,64 +32,76 @@ In the triangular network in $\RR^2$ referred to by the source, the points $P_0,
 $$
 (0,0),\qquad(1,0),\qquad(0,1),\qquad(1,1).
 $$
-Describe the structure of the group of all Euclidean transformations of $\RR^2$ that leave this network invariant.
+The network contains every vertical line $x=m$ and every horizontal
+line $y=n$, for $m,n\in\ZZ$. In each horizontal strip, its diagonals
+join
+$$
+(2k,n)\ \text{to}\ (2k+1,n+1)
+\quad\text{and}\quad
+(2k+2,n)\ \text{to}\ (2k+1,n+1)
+$$
+for all $k,n\in\ZZ$. Describe the group of Euclidean transformations
+of $\RR^2$ that leave this network invariant.
+
+This is the diagram in [de Souza and Silva, *Berkeley Problems in
+Mathematics*, Problem 6.1.5 (Sp83), p. 88](https://hoclieuxanh.com/download-file/61e72d2e-93b4-4bce-ba30-e7a6c03ac0eb/Barkaley%20Problems%20%28chap%201%20_%207%29.pdf#page=93).
+The retained exam PDF lacks it.
 :::
 
 ::: {.solution}
 ::: pf
 
-::: {.pf-step #network-underdetermined}
-The four points
+::: {.pf-step #network-symmetries}
+The symmetry group is
 $$
-P_0=(0,0),
-\qquad
-P_1=(1,0),
-\qquad
-P_2=(0,1),
-\qquad
-P_3=(1,1)
+\boxed{
+G=
+\left\{
+(x,y)\longmapsto
+\bigl(\epsilon x+m,\,(-1)^m y+n\bigr)
+:\epsilon\in\{1,-1\},\ m,n\in\ZZ
+\right\}.
+}
 $$
-do not determine the Euclidean symmetry group of a triangular network
-containing them.
+Its translation subgroup is
+$$
+T=\{(x,y)\mapsto(x+2k,y+n):k,n\in\ZZ\}
+\cong\ZZ^2,
+$$
+and $G/T\cong C_2\times C_2$.
 
 ::: pf-proof
-Let $N_1$ be the boundary of the unit square together with the diagonal
-segment from $P_0$ to $P_3$. This is a planar network consisting of two
-triangular cells.
+The only complete straight lines in the network are the lines of the
+integer square grid. An isometry preserving the network therefore
+preserves that grid. It maps its integer vertices to integer vertices,
+so it has an integer translation part and a linear part that is a
+signed permutation of the coordinate axes.
 
-Any Euclidean isometry preserving $N_1$ must preserve its convex hull,
-which is the unit square, and therefore must be a symmetry of that square.
-Among the eight square symmetries, exactly four preserve the distinguished
-diagonal $P_0P_3$ as a set: the identity, the half-turn about the center,
-and the reflections in the two diagonals. Thus
+At a vertex in an even column, the two diagonal edges point upward;
+at a vertex in an odd column, they point downward. No vertex has two
+diagonal edges pointing to the same horizontal side. Thus a symmetry
+cannot interchange the horizontal and vertical axes. It has the form
 $$
-\operatorname{Sym}(N_1)
+(x,y)\longmapsto(\epsilon x+m,\delta y+n),
+\qquad
+\epsilon,\delta\in\{1,-1\},\quad m,n\in\ZZ.
 $$
-has order $4$.
+The diagonals point upward at an even image column precisely when
+$m$ is even. Matching their direction gives
+$\delta=(-1)^m$. Conversely, each map with this relation preserves
+all grid lines and takes each diagonal segment to another diagonal
+segment. This proves the formula for $G$.
 
-Now let $N_2$ be the boundary of the unit square together with both
-diagonals, regarding their intersection at the center as a vertex. This is
-a planar network consisting of four triangular cells. Every symmetry of
-the square preserves the union of the two diagonals, so
-$$
-\operatorname{Sym}(N_2)
-$$
-is the full square symmetry group, of order $8$.
-
-Both networks contain $P_0,P_1,P_2,P_3$, but their Euclidean symmetry
-groups are not isomorphic because they have different orders.
+The maps with identity linear part have $\epsilon=1$ and $m$ even,
+giving $T$. The two signs $\epsilon$ and $(-1)^m$ determine the four
+cosets of $T$, so $G/T\cong C_2\times C_2$.
 :::
 
 :::
 
 ::: pf-qed
-The requested group is
-$$
-\{g\in\operatorname{Isom}(\RR^2):g(N)=N\}
-$$
-for the network $N$. Step [](#network-underdetermined){.pf-ref} shows that it depends on $N$ beyond the
-points $P_0,P_1,P_2,P_3$: the networks $N_1$ and $N_2$ give symmetry
-groups of orders $4$ and $8$.
+The displayed group $G$ is the full Euclidean symmetry group of the
+depicted network.
 :::
 
 :::

@@ -1804,7 +1804,9 @@ mathematical correction under its own node, not under copy policy.
     does not determine the network and the solution only shows the answer depends on it. Find
     another copy of the Spring 1983 Berkeley prelim (or the Sp83-4 figure) and transcribe the
     network. **Acceptance:** the statement describes the network as drawn and the solution names
-    its symmetry group.
+    its symmetry group. **Closed.** De Souza and Silva, Problem 6.1.5, p. 88,
+    reproduces the network; the card now states its grid and diagonal pattern
+    and determines every preserving isometry.
 
 ### Marking a node closed
 
