@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-UZY87
 kind: problem
-title: Conjugacy classes of finite order in a free product
+title: A conjugate of one free factor meets the other trivially
 classification:
   areas:
   - topology
@@ -27,7 +27,7 @@ y=cxc^{-1}
 $$
 with $x\in G_1$. If $x=1$, then $y=1$, so assume $x\ne1$.
 
-Choose a reduced word for $c$. Cancel from its right end, if necessary, against $x$, and rewrite the conjugate in cyclically reduced form. Concretely, there is a reduced word $d$ and a nonidentity element $x'\in G_1$ such that
+Choose a reduced word for $c$. If its last letter lies in $G_1$, absorb that letter and its inverse into $x$. Concretely, there is a reduced word $d$ and a nonidentity element $x'\in G_1$ such that
 $$
 cxc^{-1}=d x' d^{-1},
 $$
