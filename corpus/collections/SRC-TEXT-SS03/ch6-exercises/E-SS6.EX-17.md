@@ -37,6 +37,10 @@ $$
 [Hint: To prove the analytic continuation, as well as the formulas in the second part, integrate by parts to show that $I(s) = \frac{(-1)^k}{\Gamma(s + k)} \int_0^{\infty} f^{(k)}(x)\, x^{s+k-1}\, dx$.]
 :::
 
+::: {.remark}
+The source prints $I(0) = 0$ and $I(-n) = (-1)^n f^{(n+1)}(0)$. The hint with $k = n+1$ gives $I(-n) = (-1)^{n+1}\int_0^\infty f^{(n+1)}(x)\,dx = (-1)^n f^{(n)}(0)$; for $f(x) = e^{-x^2}$, $I(0) = 1$.
+:::
+
 ::: {.solution}
 For $\Re s>0$,
 $$

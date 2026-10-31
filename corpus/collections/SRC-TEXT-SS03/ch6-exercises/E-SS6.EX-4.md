@@ -34,7 +34,10 @@ with
 $$
 a_n(\alpha) \sim \frac{1}{\Gamma(\alpha)} n^{\alpha - 1} \quad \text{as } n \to \infty.
 $$
-If $\alpha$ is a nonpositive integer, describe separately what happens to the coefficients.
+:::
+
+::: {.remark}
+The source allows every complex $\alpha$. For $\alpha \in \{0, -1, -2, \ldots\}$, $1/\Gamma(\alpha) = 0$ and $f$ is a polynomial, so $a_n(\alpha) = 0$ for large $n$ and the relation $\sim$ has no meaning; the statement excludes these $\alpha$.
 :::
 
 ::: {.solution}

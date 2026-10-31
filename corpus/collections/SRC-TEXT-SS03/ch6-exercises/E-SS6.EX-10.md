@@ -55,7 +55,12 @@ $$
 \int_0^\infty e^{it}t^{z-1}\,dt=e^{i\pi z/2}\Gamma(z).
 \tag{1}
 $$
-Taking real and imaginary parts of (1) gives
+Rotating through angle $+\pi/2$ instead gives
+$$
+\int_0^\infty e^{-it}t^{z-1}\,dt=e^{-i\pi z/2}\Gamma(z).
+\tag{2}
+$$
+Half the sum and $1/(2i)$ times the difference of (1) and (2) give
 $$
 \int_0^\infty \cos t\,t^{z-1}\,dt
 =\Gamma(z)\cos\frac{\pi z}{2},

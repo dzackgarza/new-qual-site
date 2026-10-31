@@ -91,28 +91,28 @@ assume for contradiction.
 :::
 
 ::: {.pf-step #p2-s2}
-Then $F(s)/\Gamma(s)$ is entire with no zeros (the zeros of $F$ match the poles of $1/\Gamma$, and $1/\Gamma$ has simple zeros exactly at $0, -1, -2, \ldots$).
+$F$ has order at most $1$, and $F(s) = e^{as+b}\, s \prod_{n=1}^{\infty}\left(1 + \frac{s}{n}\right)e^{-s/n}$ for some constants $a, b \in \CC$.
 
 ::: pf-proof
-$1/\Gamma$ is entire with simple zeros at the non-positive integers, matching the zeros of $F$.
+$F = O(e^{c\abs{s}})$ gives order at most $1$. Hadamard's factorization theorem for order at most $1$ gives $F = e^{P} E$ with $P$ a polynomial of degree at most $1$ and $E$ the canonical product of genus $1$ over the zeros $0, -1, -2, \ldots$, which is the displayed product.
 :::
 
 :::
 
 ::: {.pf-step #p2-s3}
-Hence $G(s) = F(s)/\Gamma(s)$ is an entire function with no zeros, so $1/G$ is entire.
+$1/\Gamma(s) = e^{-(a - \gamma)s - b}\, F(s)$.
 
 ::: pf-proof
-step [](#p2-s2){.pf-ref}.
+Step [](#p2-s2){.pf-ref} and the product formula $1/\Gamma(s) = s e^{\gamma s}\prod_{n \ge 1}(1 + s/n)e^{-s/n}$.
 :::
 
 :::
 
 ::: {.pf-step #p2-s4}
-By (a), $1/\abs{\Gamma(s)}$ is not $O(e^{c\abs{s}})$, but $F(s) = O(e^{c\abs{s}})$; this forces $G$ to grow in a way that contradicts the Hadamard factorization theorem (an entire function of order $\le 1$ with no zeros must be $e^{as+b}$, but then $F = e^{as+b}\Gamma$ would not be $O(e^{c\abs{s}})$).
+$1/\abs{\Gamma(s)} = O(e^{c'\abs{s}})$ with $c' = c + \abs{a - \gamma}$.
 
 ::: pf-proof
-step [](#p2-s3){.pf-ref} and (a); more directly, if $F = O(e^{c\abs{s}})$ then $F$ has order $\le 1$, so by Hadamard factorization $F(s) = e^{as+b}\prod_n (1 - s/z_n)$; but the product over the zeros $0, -1, -2, \ldots$ is $1/\Gamma(s)$ (up to a factor), and $1/\Gamma$ is not $O(e^{c\abs{s}})$, contradiction.
+Step [](#p2-s3){.pf-ref} and $F = O(e^{c\abs{s}})$.
 :::
 
 :::
@@ -121,7 +121,7 @@ step [](#p2-s3){.pf-ref} and (a); more directly, if $F = O(e^{c\abs{s}})$ then $
 Hence no such $F$ exists.
 
 ::: pf-proof
-step [](#p2-s4){.pf-ref}.
+Step [](#p2-s4){.pf-ref} contradicts step [](#p1-s5){.pf-ref}.
 :::
 
 :::

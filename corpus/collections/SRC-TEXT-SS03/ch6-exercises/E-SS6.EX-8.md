@@ -123,11 +123,13 @@ Step [](#s6){.pf-ref}.
 
 ::: {.pf-step #s8}
 
-This is the standard power series for $J_\nu(x)$.
+$J_\nu$ satisfies $x^2 J_\nu'' + x J_\nu' + (x^2 - \nu^2) J_\nu = 0$ for $x > 0$, which is the stated equation multiplied by $x^2$.
 
 ::: pf-proof
 
-Step [](#s7){.pf-ref}.
+By Step [](#s7){.pf-ref}, $J_\nu(x) = \sum_{m \ge 0} c_m x^{\nu + 2m}$ with $c_m = \frac{(-1)^m}{2^{\nu+2m}\, m!\, \Gamma(\nu+m+1)}$. The series $\sum c_m y^m$ has infinite radius of convergence, so the series may be differentiated term by term for $x > 0$.
+The operator $x^2 \frac{d^2}{dx^2} + x\frac{d}{dx} - \nu^2$ sends $x^{\nu+2m}$ to $\left((\nu+2m)^2 - \nu^2\right)x^{\nu+2m} = 4m(m+\nu)\,x^{\nu+2m}$, and multiplication by $x^2$ sends $c_{m-1}x^{\nu+2m-2}$ to $c_{m-1}x^{\nu+2m}$.
+So the coefficient of $x^{\nu}$ in $x^2 J_\nu'' + x J_\nu' + (x^2 - \nu^2) J_\nu$ is $0$, and for $m \ge 1$ the coefficient of $x^{\nu+2m}$ is $4m(m+\nu)c_m + c_{m-1} = 0$, because $\Gamma(\nu+m+1) = (\nu+m)\Gamma(\nu+m)$ gives $c_m = -\frac{c_{m-1}}{4m(m+\nu)}$.
 
 :::
 
@@ -135,7 +137,7 @@ Step [](#s7){.pf-ref}.
 
 ::: pf-qed
 
-Step [](#s8){.pf-ref}.
+Steps [](#s7){.pf-ref} and [](#s8){.pf-ref}.
 
 :::
 

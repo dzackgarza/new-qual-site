@@ -28,6 +28,10 @@ $$
 $$
 :::
 
+::: {.remark}
+The source prints the strip $\abs{y} < \pi$ and the answer $\Gamma(a + i\xi)$. Since $\abs{f(x+iy)} = e^{ax}e^{-e^x\cos y}$ grows as $x \to \infty$ when $\cos y < 0$, the decay holds only for $\abs{y} < \pi/2$. With the book's convention $\hat f(\xi) = \int f(x) e^{-2\pi i x\xi}\,dx$, the transform is $\Gamma(a - 2\pi i\xi)$; $\Gamma(a + i\xi)$ is the transform for the kernel $e^{ix\xi}$.
+:::
+
 ::: {.solution}
 With the Fourier-transform convention used in this text,
 $$

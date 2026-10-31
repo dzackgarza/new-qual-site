@@ -21,13 +21,13 @@ audit:
 Show that Wallis’s product formula can be written as
 
 $$
-\sqrt {\frac {\pi}{2}} = \lim _ {n \rightarrow \infty} \frac {2 ^ {2 n} (n !) ^ {2}}{(2 n + 1) !} (2 n + 1) ^ {1 / 2}.
+\sqrt{\frac{\pi}{2}} = \lim_{n \to \infty} \frac{2^{2n} (n!)^{2}}{(2n + 1)!} (2n + 1)^{1/2}.
 $$
 
 As a result, prove the following identity:
 
 $$
-\Gamma (s) \Gamma (s + 1 / 2) = \sqrt {\pi} 2 ^ {1 - 2 s} \Gamma (2 s).
+\Gamma(s) \Gamma(s + 1/2) = \sqrt{\pi}\, 2^{1 - 2s} \Gamma(2s).
 $$
 :::
 
@@ -37,11 +37,11 @@ $$
 
 ::: {.pf-step #s1}
 
-Wallis's product is $\frac{\pi}{2} = \prod_{n=1}^{\infty} \frac{4n^2}{4n^2 - 1} = \lim_{n \to \infty} \frac{2^{4n}(n!)^4}{((2n)!)^2 (2n+1)}$.
+Wallis's product is $\frac{\pi}{2} = \prod_{k=1}^{\infty} \frac{4k^2}{4k^2 - 1} = \lim_{n \to \infty} \frac{2^{4n}(n!)^4}{((2n)!)^2 (2n+1)}$.
 
 ::: pf-proof
 
-standard form of Wallis's product.
+The $n$-th partial product is $\prod_{k=1}^{n} \frac{(2k)^2}{(2k-1)(2k+1)} = \frac{(2^n n!)^4}{((2n)!)^2(2n+1)}$, since $\prod_{k=1}^n 2k = 2^n n!$ and $\prod_{k=1}^n (2k-1) = (2n)!/(2^n n!)$.
 
 :::
 
@@ -49,11 +49,11 @@ standard form of Wallis's product.
 
 ::: {.pf-step #s2}
 
-Taking square roots and rearranging gives $\sqrt{\frac{\pi}{2}} = \lim_{n \to \infty} \frac{2^{2n}(n!)^2}{(2n+1)!}(2n+1)^{1/2}$.
+$\sqrt{\frac{\pi}{2}} = \lim_{n \to \infty} \frac{2^{2n}(n!)^2}{(2n+1)!}(2n+1)^{1/2}$.
 
 ::: pf-proof
 
-Step [](#s1){.pf-ref}, using $(2n+1)! = (2n)!(2n+1)$.
+Take square roots in Step [](#s1){.pf-ref} and use $(2n)!\,(2n+1)^{1/2} = (2n+1)!\,(2n+1)^{-1/2}$.
 
 :::
 
@@ -61,11 +61,11 @@ Step [](#s1){.pf-ref}, using $(2n+1)! = (2n)!(2n+1)$.
 
 ::: {.pf-step #s3}
 
-For the duplication formula, use the integral representation $\Gamma(s) = \int_0^\infty t^{s-1} e^{-t}\,dt$.
+For $s \notin \{0, -1, -2, \ldots\}$, $\Gamma(s) = \lim_{n\to\infty} \frac{n^s (n-1)!}{s(s+1)\cdots(s+n-1)}$.
 
 ::: pf-proof
 
-definition of the Gamma function.
+Exercise 1 gives $\Gamma(s) = \lim_n \frac{n^s n!}{s(s+1)\cdots(s+n)}$, and that expression is the one above times $\frac{n}{s+n} \to 1$.
 
 :::
 
@@ -73,11 +73,19 @@ definition of the Gamma function.
 
 ::: {.pf-step #s4}
 
-$\Gamma(s)\Gamma(s + 1/2) = \int_0^\infty \int_0^\infty x^{s-1} y^{s-1/2} e^{-(x+y)}\,dx\,dy$.
+Let $2s \notin \{0, -1, -2, \ldots\}$. Then $\frac{\Gamma(s)\Gamma(s+1/2)}{\Gamma(2s)} = 2^{-2s} L$, where $L = \lim_{n\to\infty} \frac{2^{2n}((n-1)!)^2\, n^{1/2}}{(2n-1)!}$ exists.
 
 ::: pf-proof
 
-Step [](#s3){.pf-ref}.
+Apply Step [](#s3){.pf-ref} to $s$ and to $s + 1/2$ with $n$ factors, and to $2s$ with $2n$ factors. The denominators satisfy
+$$
+2s(2s+1)\cdots(2s+2n-1) = 2^{2n} \prod_{k=0}^{n-1} (s+k)\left(s+k+\tfrac12\right),
+$$
+so the quotient of the three approximants is
+$$
+\frac{n^{s}\, n^{s+1/2} ((n-1)!)^2\, 2^{2n}}{(2n)^{2s} (2n-1)!} = 2^{-2s}\, \frac{2^{2n}((n-1)!)^2 n^{1/2}}{(2n-1)!}.
+$$
+The left side converges because each approximant converges and $\Gamma(2s) \ne 0$, so the right side converges.
 
 :::
 
@@ -85,11 +93,15 @@ Step [](#s3){.pf-ref}.
 
 ::: {.pf-step #s5}
 
-Substitute $x = u^2$, $y = v^2$: $\Gamma(s)\Gamma(s+1/2) = 4\int_0^\infty \int_0^\infty u^{2s-1} v^{2s} e^{-(u^2 + v^2)}\,du\,dv$.
+$L = 2\sqrt{\pi}$.
 
 ::: pf-proof
 
-Step [](#s4){.pf-ref}, change of variables.
+With $(n-1)! = n!/n$ and $(2n-1)! = (2n+1)!/(2n(2n+1))$,
+$$
+\frac{2^{2n}((n-1)!)^2 n^{1/2}}{(2n-1)!} = \left[\frac{2^{2n}(n!)^2}{(2n+1)!}(2n+1)^{1/2}\right] \cdot \frac{2(2n+1)^{1/2}}{n^{1/2}}.
+$$
+By Step [](#s2){.pf-ref} the bracket tends to $\sqrt{\pi/2}$, and the last factor tends to $2\sqrt2$.
 
 :::
 
@@ -97,59 +109,11 @@ Step [](#s4){.pf-ref}, change of variables.
 
 ::: {.pf-step #s6}
 
-Switch to polar coordinates $u = r\cos\theta$, $v = r\sin\theta$: the integral becomes $4\int_0^{\pi/2}\int_0^\infty r^{4s-1}(\cos\theta)^{2s-1}(\sin\theta)^{2s} e^{-r^2}\,dr\,d\theta$.
+$\Gamma(s)\Gamma(s+1/2) = \sqrt{\pi}\, 2^{1-2s}\, \Gamma(2s)$ as meromorphic functions on $\CC$.
 
 ::: pf-proof
 
-Step [](#s5){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s7}
-
-The $r$-integral is $\int_0^\infty r^{4s-1} e^{-r^2}\,dr = \frac{1}{2}\Gamma(2s)$ (substituting $r^2 = t$).
-
-::: pf-proof
-
-Step [](#s6){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s8}
-
-The $\theta$-integral is $\int_0^{\pi/2} (\cos\theta)^{2s-1}(\sin\theta)^{2s}\,d\theta = \frac{1}{2}B(s, s + 1/2) = \frac{\Gamma(s)\Gamma(s+1/2)}{2\Gamma(2s + 1/2)}$.
-
-::: pf-proof
-
-beta function.
-
-:::
-
-:::
-
-::: {.pf-step #s9}
-
-Combining: $\Gamma(s)\Gamma(s+1/2) = 4 \cdot \frac{1}{2}\Gamma(2s) \cdot \frac{\Gamma(s)\Gamma(s+1/2)}{2\Gamma(2s+1/2)}$, which simplifies (using $\Gamma(2s+1/2) = \frac{\Gamma(2s)\Gamma(1/2)}{2^{2s-1}\Gamma(s)}$) to the duplication formula.
-
-::: pf-proof
-
-Steps [](#s7){.pf-ref} and [](#s8){.pf-ref}, and the standard identity $\Gamma(2s) = \frac{2^{2s-1}}{\sqrt{\pi}}\Gamma(s)\Gamma(s+1/2)$.
-
-:::
-
-:::
-
-::: {.pf-step #s10}
-
-Hence $\Gamma(s)\Gamma(s+1/2) = \sqrt{\pi}\,2^{1-2s}\,\Gamma(2s)$.
-
-::: pf-proof
-
-Step [](#s9){.pf-ref}.
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give the identity on the connected open set where $2s \notin \{0,-1,-2,\ldots\}$. Both sides are meromorphic on $\CC$, so the identity theorem extends it.
 
 :::
 
@@ -157,7 +121,7 @@ Step [](#s9){.pf-ref}.
 
 ::: pf-qed
 
-Steps [](#s2){.pf-ref} and [](#s10){.pf-ref}.
+Steps [](#s2){.pf-ref} and [](#s6){.pf-ref}.
 
 :::
 
