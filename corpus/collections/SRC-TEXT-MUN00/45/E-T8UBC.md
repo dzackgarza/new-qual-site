@@ -10,12 +10,17 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: gpt-6.1-sol
+  date: 2026-10-31
+  note: 'The source defines the Hausdorff space using nonempty closed bounded sets, but a graph need not be bounded and an empty domain gives an empty graph. The graph map is defined here on bounded functions from a nonempty bounded domain.'
 ---
 
 ::: {.exercise}
 
-Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces; give $X \times Y$ the corresponding square metric; let $\mathcal{H}$ denote the collection of all nonempty closed, bounded subsets of $X \times Y$, in the resulting Hausdorff metric.
-Consider the space $\mathcal{C}(X, Y)$ in the uniform metric; let $\operatorname{gr}: \mathcal{C}(X, Y) \to \mathcal{H}$ be the function that assigns, to each continuous function $f: X \to Y$, its graph
+Let $(X, d_X)$ be a nonempty bounded metric space and $(Y, d_Y)$ a metric space; give $X \times Y$ the corresponding square metric; let $\mathcal{H}$ denote the collection of all nonempty closed, bounded subsets of $X \times Y$, in the resulting Hausdorff metric.
+Let $\mathcal{C}_b(X, Y)$ be the space of bounded continuous functions in the uniform metric; let $\operatorname{gr}: \mathcal{C}_b(X, Y) \to \mathcal{H}$ assign each function $f$ its graph
 
 $$
 G_f = \theset{x \times f(x) \mid x \in X}.
@@ -23,13 +28,13 @@ $$
 
 (a) Show that the map $\operatorname{gr}$ is injective and uniformly continuous.
 
-(b) Let $\mathcal{H}_0$ denote the image set of the map $\operatorname{gr}$; let $g: \mathcal{C}(X, Y) \to \mathcal{H}_0$ be the surjective map obtained from $\operatorname{gr}$.
+(b) Let $\mathcal{H}_0$ denote the image set of the map $\operatorname{gr}$; let $g: \mathcal{C}_b(X, Y) \to \mathcal{H}_0$ be the surjective map obtained from $\operatorname{gr}$.
 Show that if $f: X \to Y$ is uniformly continuous, then the map $g^{-1}$ is continuous at the point $G_f$.
 
 (c) Give an example where $g^{-1}$ is not continuous at the point $G_f$.
 
 (d) Theorem.
-If $X$ is compact, then $\operatorname{gr}: \mathcal{C}(X, Y) \to \mathcal{H}$ is an imbedding.
+If $X$ is compact, then $\mathcal{C}_b(X,Y)=\mathcal{C}(X,Y)$ and $\operatorname{gr}$ is an imbedding.
 :::
 
 ::: {.solution}
@@ -41,15 +46,15 @@ d_H(G_f,G_h)\le \norm{f-h}_\infty,
 $$
 so the graph map is $1$-Lipschitz.
 
-(b) Fix uniformly continuous $f$ and $\varepsilon>0$. Choose $\delta<\varepsilon/2$ so that $d_X(x,x')<\delta$ implies $d_Y(f(x),f(x'))<\varepsilon/2$. If $d_H(G_f,G_h)<\delta$, then for each $x$ there is $x'$ with
+(b) Fix uniformly continuous $f$ and $\varepsilon>0$. Choose $\delta<\varepsilon/3$ so that $d_X(x,x')<\delta$ implies $d_Y(f(x),f(x'))<\varepsilon/3$. If $d_H(G_f,G_h)<\delta$, then for each $x$ there is $x'$ with
 $$
 d_X(x,x')<\delta,\qquad d_Y(h(x),f(x'))<\delta.
 $$
 Hence
 $$
-d_Y(h(x),f(x))<\delta+\varepsilon/2<\varepsilon.
+d_Y(h(x),f(x))<\delta+\varepsilon/3<2\varepsilon/3.
 $$
-Taking the supremum gives $\norm{h-f}_\infty<\varepsilon$. Thus $g^{-1}$ is continuous at $G_f$.
+Taking the supremum gives $\norm{h-f}_\infty\le 2\varepsilon/3<\varepsilon$. Thus $g^{-1}$ is continuous at $G_f$.
 
 (c) Take $X=\{1/k: k\in\ZZ_+\}\subset\RR$ and $Y=\RR$, with the usual metrics. Every function on the discrete space $X$ is continuous. Let $f(1/k)=(-1)^k$, and for $n\ge1$ let $h_n(1/k)=(-1)^k$ for $k\le n$ and $h_n(1/k)=(-1)^{k+1}$ for $k>n$. The graphs lie in $(0,1]\times[-1,1]$, so they are bounded, and they are closed because the functions are continuous.
 
