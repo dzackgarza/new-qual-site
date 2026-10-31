@@ -8,18 +8,17 @@ classification:
   topics: []
 relations: []
 review: draft
-provenance:
-- assets/attachments/Algebra_HW_11_Solns.pdf
+provenance: []
 source:
   source_kind: homework
   area: algebra
   problems:
-  - P-SHON-HW11-01
-  - P-SHON-HW11-02
-  - P-SHON-HW11-03
-  - P-SHON-HW11-04
-  - P-SHON-HW11-05
-  - P-SHON-HW11-06
+    - P-SHON-HW11-01
+    - P-SHON-HW11-02
+    - P-SHON-HW11-03
+    - P-SHON-HW11-04
+    - P-SHON-HW11-05
+    - P-SHON-HW11-06
   date:
     kind: unknown
 ---

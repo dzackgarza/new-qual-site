@@ -5,7 +5,10 @@ kind: problem
 title: An ordered field criterion for algebraic closure after adjoining $i$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Algebraically Closed Fields
+  - Ordered Fields
+  - Galois Theory
 relations: []
 review: draft
 audit:
@@ -22,18 +25,18 @@ $$
 C=R[x]/(x^2+1).
 $$
 
-1. Show that $R$ has characteristic zero and every odd-degree polynomial over $R$ has a root in $R$.
-   Deduce that every nontrivial finite Galois extension of $R$ has even degree.
+(a) Show that $R$ has characteristic zero and every odd-degree polynomial over $R$ has a root in $R$.
+Deduce that every nontrivial finite Galois extension of $R$ has even degree.
 
-2. Show that $C$ is a field, every element of $C$ is a square in $C$, and $C$ has no degree-two field extension.
+(b) Show that $C$ is a field, every element of $C$ is a square in $C$, and $C$ has no degree-two field extension.
 
-3. If $R\subset C\subset L$ are finite extensions and $L/R$ is Galois with group $G$, show that $G$ is a $2$-group.
+(c) If $R\subset C\subset L$ are finite extensions and $L/R$ is Galois with group $G$, show that $G$ is a $2$-group.
 
-4. In the situation of (3), show that $L=C$.
+(d) In the situation of (c), show that $L=C$.
 
-5. Conclude that $C$ is algebraically closed.
+(e) Conclude that $C$ is algebraically closed.
 
-6. Deduce the algebraic closedness of the usual complex numbers from the corresponding properties of $\RR$.
+(f) Deduce the algebraic closedness of the usual complex numbers from the corresponding properties of $\RR$.
 :::
 
 ::: {.solution}
@@ -45,7 +48,6 @@ C=R[i],
 i^2=-1.
 $$
 
-## Part 1
 
 ::: pf
 
@@ -840,7 +842,7 @@ The Galois closure of a finite separable extension is finite Galois and contains
 
 ::: {.pf-step #s1-39}
 
-By part 4,
+By part (d),
 $$
 \boxed{L=C}.
 $$
@@ -848,7 +850,7 @@ $$
 
 ::: pf-proof
 
-The tower $R\subset C\subset L$ satisfies the hypotheses of part 4.
+The tower $R\subset C\subset L$ satisfies the hypotheses of part (d).
 
 :::
 
@@ -934,7 +936,7 @@ Apply step [](#s1-41){.pf-ref} to $R=\RR$, then use step [](#s1-43){.pf-ref}.
 
 ::: pf-qed
 
-Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} prove part 1, steps [](#s1-7){.pf-ref} through [](#s1-20){.pf-ref} prove part 2, steps [](#s1-21){.pf-ref} through [](#s1-26){.pf-ref} prove part 3, steps [](#s1-27){.pf-ref} through [](#s1-33){.pf-ref} prove part 4, steps [](#s1-34){.pf-ref} through [](#s1-41){.pf-ref} prove part 5, and steps [](#s1-42){.pf-ref} through [](#s1-44){.pf-ref} prove part 6.
+Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} prove part (a), steps [](#s1-7){.pf-ref} through [](#s1-20){.pf-ref} prove part (b), steps [](#s1-21){.pf-ref} through [](#s1-26){.pf-ref} prove part (c), steps [](#s1-27){.pf-ref} through [](#s1-33){.pf-ref} prove part (d), steps [](#s1-34){.pf-ref} through [](#s1-41){.pf-ref} prove part (e), and steps [](#s1-42){.pf-ref} through [](#s1-44){.pf-ref} prove part (f).
 
 :::
 

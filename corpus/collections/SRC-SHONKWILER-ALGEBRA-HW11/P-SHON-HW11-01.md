@@ -5,7 +5,10 @@ kind: problem
 title: Tensor square of a finite separable extension
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Tensor Products
+  - Separable Extensions
+  - Galois Theory
 relations: []
 review: draft
 audit:
@@ -18,20 +21,18 @@ audit:
 ::: {.problem}
 Let $k\subset K$ be a separable field extension of degree $n$.
 
-1. Show that $K\cong k[x]/(f(x))$ for some $f(x)\in k[x]$ of degree $n$.
+(a) Show that $K\cong k[x]/(f(x))$ for some $f(x)\in k[x]$ of degree $n$.
 
-2. Show that $K\otimes_k K\cong K[y]/(f(y))$ as $K$-algebras.
+(b) Show that $K\otimes_k K\cong K[y]/(f(y))$ as $K$-algebras.
 
-3. Deduce that if $K/k$ is Galois, then $f(y)$ splits over $K$ and
-   $$
-   K\otimes_k K\cong K^n
-   $$
-   as $K$-algebras.
+(c) Deduce that if $K/k$ is Galois, then $f(y)$ splits over $K$ and
+$$
+K\otimes_k K\cong K^n
+$$
+as $K$-algebras.
 :::
 
 ::: {.solution}
-
-## Part 1
 
 ::: pf
 
@@ -375,7 +376,7 @@ Combine steps [](#s1-16){.pf-ref} through [](#s1-17){.pf-ref}.
 
 ::: {.pf-step #s1-19}
 
-Using part 2,
+Using part (b),
 $$
 \boxed{
 K\otimes_k K
@@ -395,7 +396,7 @@ Combine step [](#s1-11){.pf-ref} with step [](#s1-18){.pf-ref}.
 
 ::: pf-qed
 
-Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} prove part 1, step [](#s1-11){.pf-ref} proves part 2, and steps [](#s1-12){.pf-ref} through [](#s1-19){.pf-ref} prove part 3.
+Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} prove part (a), step [](#s1-11){.pf-ref} proves part (b), and steps [](#s1-12){.pf-ref} through [](#s1-19){.pf-ref} prove part (c).
 
 :::
 

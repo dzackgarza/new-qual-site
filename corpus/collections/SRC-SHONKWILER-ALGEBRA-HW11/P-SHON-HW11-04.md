@@ -5,7 +5,9 @@ kind: problem
 title: Solvability by radicals in low degrees
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Solvability by Radicals
+  - Galois Theory
 relations: []
 review: draft
 audit:
@@ -16,14 +18,12 @@ audit:
 ---
 
 ::: {.problem}
-1. Prove that every polynomial $f(x)\in\QQ[x]$ of degree less than $5$ is solvable by radicals.
+(a) Prove that every polynomial $f(x)\in\QQ[x]$ of degree less than $5$ is solvable by radicals.
 
-2. Find an algebraic number $\alpha$ whose irreducible polynomial over $\QQ$ has degree $5$ and is solvable by radicals.
+(b) Find an algebraic number $\alpha$ whose irreducible polynomial over $\QQ$ has degree $5$ and is solvable by radicals.
 :::
 
 ::: {.solution}
-
-## Part 1
 
 ::: pf
 
@@ -478,7 +478,7 @@ Degree $5$ is step [](#s1-19){.pf-ref}, and solvability by radicals is step [](#
 
 ::: pf-qed
 
-Step [](#s1-14){.pf-ref} proves part 1, and step [](#s1-22){.pf-ref} supplies the requested degree-$5$ example in part 2.
+Step [](#s1-14){.pf-ref} proves part (a), and step [](#s1-22){.pf-ref} supplies the requested degree-$5$ example in part (b).
 
 :::
 

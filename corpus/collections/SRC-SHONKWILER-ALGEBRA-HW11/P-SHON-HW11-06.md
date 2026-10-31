@@ -5,7 +5,9 @@ kind: problem
 title: Which angles can always be $n$-sected?
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Constructible Numbers
+  - Galois Theory
 relations: []
 review: draft
 audit:

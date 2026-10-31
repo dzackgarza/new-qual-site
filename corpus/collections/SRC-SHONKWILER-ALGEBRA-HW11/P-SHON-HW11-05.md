@@ -5,7 +5,10 @@ kind: problem
 title: Prime-degree Galois groups and a nonsolvable quintic
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Galois Groups
+  - Symmetric Groups
+  - Solvability by Radicals
 relations: []
 review: draft
 audit:
@@ -18,18 +21,16 @@ audit:
 ::: {.problem}
 Let $p$ be prime.
 
-1. If $G\le S_p$ contains a transposition and a $p$-cycle, show that $G=S_p$.
+(a) If $G\le S_p$ contains a transposition and a $p$-cycle, show that $G=S_p$.
 
-2. If $f(x)\in K[x]$ is separable and irreducible of degree $p$, and $G$ is its Galois group over $K$, show that $G\le S_p$, that $p\mid \cardinality{G}$, and that $G$ contains a $p$-cycle.
+(b) If $f(x)\in K[x]$ is separable and irreducible of degree $p$, and $G$ is its Galois group over $K$, show that $G\le S_p$, that $p\mid \cardinality{G}$, and that $G$ contains a $p$-cycle.
 
-3. If $f(x)\in\QQ[x]$ is irreducible of degree $p$ and exactly two roots are nonreal, show that its Galois group contains a transposition and hence is $S_p$.
+(c) If $f(x)\in\QQ[x]$ is irreducible of degree $p$ and exactly two roots are nonreal, show that its Galois group contains a transposition and hence is $S_p$.
 
-4. Deduce that $3x^5-6x-2$ is not solvable by radicals.
+(d) Deduce that $3x^5-6x-2$ is not solvable by radicals.
 :::
 
 ::: {.solution}
-
-## Part 1
 
 Let
 $$
@@ -406,7 +407,7 @@ Step [](#s1-19){.pf-ref} says the root permutation associated to $c$ is exactly 
 
 ::: {.pf-step #s1-21}
 
-By part 2, the same Galois group contains a $p$-cycle.
+By part (b), the same Galois group contains a $p$-cycle.
 
 
 ::: pf-proof
@@ -428,7 +429,7 @@ $$
 
 ::: pf-proof
 
-Apply part 1, step [](#s1-7){.pf-ref}, to the subgroup of $S_p$ containing the transposition from step [](#s1-20){.pf-ref} and the $p$-cycle from step [](#s1-21){.pf-ref}.
+Apply part (a), step [](#s1-7){.pf-ref}, to the subgroup of $S_p$ containing the transposition from step [](#s1-20){.pf-ref} and the $p$-cycle from step [](#s1-21){.pf-ref}.
 
 :::
 
@@ -627,7 +628,7 @@ Characteristic $0$ and irreducibility imply separability, so $F$ has five distin
 
 ::: {.pf-step #s1-34}
 
-By part 3,
+By part (c),
 $$
 \boxed{
 \operatorname{Gal}(F/\QQ)\cong S_5}.
@@ -675,7 +676,7 @@ A polynomial over a characteristic-zero field is solvable by radicals if and onl
 
 ::: pf-qed
 
-Step [](#s1-7){.pf-ref} proves part 1, step [](#s1-15){.pf-ref} proves part 2, step [](#s1-22){.pf-ref} proves part 3, and step [](#s1-36){.pf-ref} proves part 4.
+Step [](#s1-7){.pf-ref} proves part (a), step [](#s1-15){.pf-ref} proves part (b), step [](#s1-22){.pf-ref} proves part (c), and step [](#s1-36){.pf-ref} proves part (d).
 
 :::
 

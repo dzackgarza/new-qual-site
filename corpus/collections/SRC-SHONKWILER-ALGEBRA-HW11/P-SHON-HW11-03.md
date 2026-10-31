@@ -5,7 +5,9 @@ kind: problem
 title: Prime-degree extensions and Galois subfields of the normal closure
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Galois Theory
+  - Normal Closure
 relations: []
 review: draft
 audit:

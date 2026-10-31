@@ -263,7 +263,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-QUAL-REVIEW-HATCHER
   - [x] SRC-RA-WORKSHOP
   - [x] SRC-SEQUENCES-SERIES-ASSIGNMENT-2
-  - [ ] SRC-SHONKWILER-ALGEBRA-HW11
+  - [x] SRC-SHONKWILER-ALGEBRA-HW11
   - [ ] SRC-SHONKWILER-ALGEBRA-HW4
   - [ ] SRC-STANDREWS-MT5824-PSET7-2010
   - [x] SRC-TAMU-RA-FALL-2014
