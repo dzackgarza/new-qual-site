@@ -28,83 +28,37 @@ You should be able to answer all but one of the 340 questions involved in Exerci
 :::
 
 ::: {.solution}
+The earlier supplementary exercises classify properties (1)–(17). The entries below supply properties (18) and (19) in the same order. Here “topologically complete” means that the topology admits a complete metric.
 
-::: pf
+| Space in Exercise 1 | Paracompact (18) | Topologically complete (19) |
+| --- | :---: | :---: |
+| (a) $S_\Omega$ | No | No |
+| (b) $\overline S_\Omega$ | Yes | No |
+| (c) $S_\Omega\times\overline S_\Omega$ | No | No |
+| (d) Ordered square | Yes | No |
+| (e) $\RR_\ell$ | Yes | No |
+| (f) $\RR_\ell^2$ | No | No |
+| (g) $\RR^\omega$, product | Yes | Yes |
+| (h) $\RR^\omega$, uniform | Yes | Yes |
+| (i) $\RR^\omega$, box | ? | No |
+| (j) $\RR^{[0,1]}$, product | No | No |
+| (k) $\RR_K$ | No | No |
 
-::: pf-step
-Property (18): Paracompactness.
-*Definition:* A space $X$ is paracompact if it is Hausdorff and every open cover has an open locally finite refinement.
+Every compact Hausdorff space and every metrizable space is paracompact. The product and uniform topologies in (g) and (h) admit complete metrics: use a weighted sum of bounded complete coordinate metrics for (g), and the bounded uniform metric for (h). A compact Hausdorff space is topologically complete exactly when it is metrizable. The ordinal spaces and ordered square in the table fail metrizability. The Sorgenfrey line is regular Lindelöf, hence paracompact, but is not metrizable. The spaces in (c), (f), and (j) are not normal; $\RR_K$ is not regular. Each therefore fails paracompactness. The space $S_\Omega$ is countably compact but noncompact; a countably compact paracompact Hausdorff space is compact, so it is not paracompact. The box-product paracompactness question is the unresolved entry identified by the source.
 
-::: pf-proof
+For Exercises 2–6, the preservation answers are:
 
-::: pf-step
-Separation: Every paracompact Hausdorff space is regular and normal ($T_4$).
+| Operation or class | Paracompact (18) | Topologically complete (19) |
+| --- | --- | --- |
+| Arbitrary subspace | No | No |
+| Closed subspace | Yes | Yes |
+| Open subspace | No | Yes |
+| Finite product | No | Yes |
+| Countable product | No | Yes |
+| Arbitrary product | No | No |
+| Continuous image | No | No |
+| Every metric space | Yes | No |
+| Every compact Hausdorff space | Yes | No |
 
-::: pf-proof
-If $\mathcal{A}$ is an open cover and $B \subseteq X$ is closed with $x \notin B$, local finiteness allows shrinking open coverings to disjoint open neighborhoods separating $x$ and $B$, and similarly separating disjoint closed sets $A$ and $B$ (Munkres Theorem 41.1).
-:::
-
-:::
-
-::: pf-step
-Subspaces:
-- Closed subspaces of a paracompact space are paracompact: If $Y \subseteq X$ is closed and $\mathcal{U}$ is an open cover of $Y$, extend $\mathcal{U}$ to an open cover of $X$ by adjoining $X \setminus Y$. The restriction of its locally finite open refinement to $Y$ is locally finite.
-- Arbitrary subspaces of paracompact spaces need not be paracompact: The ordinal space $[0, \Omega]$ is compact (hence paracompact), but the open subspace $S_\Omega = [0, \Omega)$ is not paracompact (it is not Lindelöf, and not paracompact).
-:::
-
-::: pf-step
-Products:
-- Finite products of paracompact spaces need not be paracompact: The Sorgenfrey line $\RR_l$ is paracompact (and Lindelöf), but the Sorgenfrey plane $\RR_l \times \RR_l$ is not normal, hence not paracompact.
-- If $X$ is paracompact and $Y$ is compact, then $X \times Y$ is paracompact.
-:::
-
-::: pf-step
-Metrizability & Compactness:
-- Every compact Hausdorff space is paracompact: a finite subcover is locally finite because each point meets at most finitely many members of the cover (indeed, at most all of them, and the cover is finite).
-- Every metrizable space is paracompact (Stone's Theorem, Munkres Theorem 41.4).
-:::
-
-:::
-
-:::
-
-::: pf-step
-Property (19): Topological Completeness (Complete Metrizability).
-*Definition:* A space $X$ is topologically complete if there exists a complete metric on $X$ that induces the topology of $X$.
-
-::: pf-proof
-
-::: pf-step
-Baire Category Theorem: Every topologically complete space is a Baire space.
-
-::: pf-proof
-In a complete metric space, every countable intersection of dense open sets is dense (Munkres Theorem 48.2).
-:::
-
-:::
-
-::: pf-step
-Subspaces (Alexandrov's Theorem):
-- A subspace $Y$ of a completely metrizable space $X$ is topologically complete if and only if $Y$ is a $G_\delta$ set in $X$ (Munkres Theorem 43.7).
-- In particular, every closed subspace and every open subspace of a completely metrizable space is topologically complete.
-- Non-$G_\delta$ subspaces, such as $\QQ \subset \RR$, are not topologically complete.
-:::
-
-::: pf-step
-Products:
-- A countable product $X = \prod_{n=1}^\infty X_n$ of topologically complete spaces is topologically complete under the metric $D(\mathbf{x}, \mathbf{y}) = \sum_{n=1}^\infty \frac{1}{2^n} \bar{d}_n(x_n, y_n)$ (Munkres Theorem 43.5).
-- Uncountable products of non-trivial metric spaces fail to be first-countable, hence are not metrizable.
-:::
-
-::: pf-step
-Locally Compact Spaces:
-- Every locally compact Hausdorff space that is second-countable (or metrizable) is topologically complete (Munkres Theorem 43.6). Q.E.D.
-:::
-
-:::
-
-:::
-
-:::
-
+Closed subspaces of paracompact Hausdorff spaces are paracompact, whereas the open subspace $S_\Omega$ of compact $\overline S_\Omega$ is not. The Sorgenfrey plane shows that even a finite product of paracompact spaces can fail to be paracompact. Closed and open subspaces of a completely metrizable space are completely metrizable; $\QQ\subset\RR$ is an arbitrary subspace that is not. Finite and countable products of completely metrizable spaces admit complete product metrics. An uncountable product of nontrivial metric spaces need not be first countable. A discrete topology on the underlying set of any nonparacompact or non-completely-metrizable space gives a continuous surjection from a space with both properties, so neither property is preserved by continuous images. The metric space $\QQ$ is not topologically complete, while compact Hausdorff spaces that are not metrizable, such as $[0,\omega_1]$, are not topologically complete.
 :::
