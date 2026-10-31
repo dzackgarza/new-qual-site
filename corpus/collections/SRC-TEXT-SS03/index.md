@@ -397,6 +397,8 @@ source:
       comment: Ch. 8, Problem 5
     - id: E-SS8.PR-6
       comment: Ch. 8, Problem 6
+    - id: E-SS8.PR-7
+      comment: Ch. 8, Problem 7
   - name: Ch9 Exercises
     problems:
     - id: E-SS9.EX-1
