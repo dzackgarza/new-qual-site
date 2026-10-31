@@ -51,9 +51,9 @@ $$
 $$
 so convergence is not uniform.
 
-Monotonicity is also necessary even on a compact domain. On $[0,1]$, let
+Monotonicity is also necessary even on a compact domain. On $[0,1]$, set $g_1=0$. For each $n\ge2$, let $g_n$ be the continuous triangular function that is zero outside
 $$
-f_n(x)=x^n(1-x).
+\left(\frac1{n+1},\frac1{n-1}\right),
 $$
-Then $f_n\to0$ pointwise and the limit is continuous, but this particular sequence actually converges uniformly, so instead use the standard moving-spike example: choose continuous triangular functions $g_n:[0,1]\to[0,1]$ supported in $(\frac1{n+1},\frac1{n-1})$ with $g_n(1/n)=1$. Then $g_n(x)\to0$ for every fixed $x$, because each $x>0$ lies in only finitely many supports and $g_n(0)=0$; but $\sup g_n=1$ for all $n$. Thus convergence is not uniform.
+equals $1$ at $1/n$, and is linear on each side of that point. Every fixed $x>0$ belongs to only finitely many of these intervals, and $g_n(0)=0$, so $g_n(x)\to0$ for every $x\in[0,1]$. But $\sup_x g_n(x)=1$ for every $n\ge2$, so the convergence is not uniform.
 :::
