@@ -58,6 +58,20 @@ def test_report_ignores_unicode_math_inside_dollar_spans(tmp_path: Path) -> None
     assert "Extraction detector: 0 problem card(s)" in result.stdout
 
 
+def test_report_rejects_a_missing_corpus(tmp_path: Path) -> None:
+    result = run_detector(tmp_path)
+    assert result.returncode != 0
+    assert "collections" in result.stderr
+
+
+def test_report_rejects_unreadable_card_bytes(tmp_path: Path) -> None:
+    path = write_card(tmp_path, "A problem.")
+    path.write_bytes(b"\xff")
+    result = run_detector(tmp_path)
+    assert result.returncode != 0
+    assert "UnicodeDecodeError" in result.stderr
+
+
 def test_report_lists_unicode_math_outside_dollar_spans(tmp_path: Path) -> None:
     write_card(tmp_path, "Let H∩K be a subgroup of G.")
     result = run_detector(tmp_path)
