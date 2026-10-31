@@ -217,7 +217,7 @@ $$
 
 :::
 
-::: {.pf-step #s1-8}
+::: pf-step
 
 Therefore
 $$
@@ -330,7 +330,7 @@ Solving gives the displayed values.
 
 :::
 
-::: {.pf-step #s1-12}
+::: pf-step
 
 Hence an equivalent real-coefficient form is
 $$
@@ -350,13 +350,6 @@ $$
 Insert step [](#s1-11){.pf-ref} into step [](#s1-9){.pf-ref} and combine with step [](#s1-1){.pf-ref}.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1-8){.pf-ref} gives the complete complex partial-fraction decomposition, and
-step [](#s1-12){.pf-ref} gives the equivalent real-coefficient form.
 
 :::
 

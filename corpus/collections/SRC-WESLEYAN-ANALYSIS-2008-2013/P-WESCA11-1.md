@@ -343,7 +343,7 @@ square roots, which are opposites.
 
 :::
 
-::: {.pf-step #s1-16}
+::: pf-step
 
 Hence the real and imaginary parts of the two roots are
 $$
@@ -368,12 +368,6 @@ $$
 Read off the real and imaginary parts from steps [](#s1-14){.pf-ref} through [](#s1-15){.pf-ref}.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1-16){.pf-ref} gives the requested algebraic expressions.
 
 :::
 

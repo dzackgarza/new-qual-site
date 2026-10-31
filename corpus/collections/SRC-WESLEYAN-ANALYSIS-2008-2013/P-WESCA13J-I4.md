@@ -25,117 +25,32 @@ Define an essential singularity of an analytic function.
 
 ::: pf-step
 
-Let
-$$
-f
-$$
-be holomorphic on a punctured neighborhood
-$$
-0<\abs{z-a}<r.
-$$
-Then
-$$
-a
-$$
-is an isolated singularity of
-$$
-f.
-$$
-
-
-::: pf-proof
-
-This is the standard ambient situation in which removable singularities, poles, and essential singularities are defined.
-
-:::
-
-:::
-
-::: {.pf-step #s1-2}
-
-The point
-$$
-a
-$$
-is called an essential singularity of
-$$
-f
-$$
-if it is neither a removable singularity nor a pole.
-
-
-::: pf-proof
-
-Equivalently:
-
-1. there is no holomorphic extension of
-$$
-f
-$$
-to
-$$
-a;
-$$
-2. there is no positive integer
-$$
-m
-$$
-such that
-$$
-(z-a)^m f(z)
-$$
-extends holomorphically to
-$$
-a
-$$
-with nonzero value there.
-
-These two exclusions distinguish an essential singularity from the other two possible types of isolated singularity.
-
-:::
-
-:::
-
-::: {.pf-step #s1-3}
-
-In terms of the Laurent expansion
+Let $f$ be holomorphic on a punctured neighborhood $0<\abs{z-a}<r$.
+Then $a$ is an isolated singularity of $f$, with Laurent expansion
 $$
 f(z)
 =
 \sum_{n=-\infty}^{\infty}
-c_n(z-a)^n,
+c_n(z-a)^n.
 $$
-the singularity at
-$$
-a
-$$
-is essential if and only if infinitely many negative-power coefficients
-$$
-c_{-1},c_{-2},\ldots
-$$
-are nonzero.
-
 
 ::: pf-proof
 
-If every negative-power coefficient vanishes, the Laurent series is a Taylor series and the singularity is removable.
+This is the standard ambient situation in which removable singularities, poles, and essential singularities are defined.
+A function holomorphic on an annulus has a Laurent expansion converging there.
 
-If only finitely many negative-power coefficients are nonzero, then the principal part has a highest negative power
-$$
-c_{-m}(z-a)^{-m},
-\qquad
-c_{-m}\ne0,
-$$
-so
-$$
-a
-$$
-is a pole of order
-$$
-m.
-$$
+:::
 
-Thus the remaining case, namely infinitely many nonzero negative-power terms, is exactly the essential case.
+:::
+
+::: {.pf-step #laurent-types}
+
+The point $a$ is a removable singularity exactly when every $c_{-n}$, $n\ge1$, vanishes, and a pole of order $m$ exactly when $c_{-m}\ne0$ and $c_{-n}=0$ for $n>m$.
+
+::: pf-proof
+
+If every negative-power coefficient vanishes, the Laurent series is a Taylor series, which extends $f$ holomorphically to $a$; conversely a holomorphic extension has a Taylor series, and the Laurent expansion is unique.
+If the principal part ends at $c_{-m}(z-a)^{-m}$ with $c_{-m}\ne0$, then $(z-a)^m f(z)$ extends holomorphically to $a$ with value $c_{-m}\ne0$, so $a$ is a pole of order $m$; conversely, if $(z-a)^m f(z)=g(z)$ with $g$ holomorphic and $g(a)\ne0$, the Taylor series of $g$ divided by $(z-a)^m$ is the Laurent series of $f$.
 
 :::
 
@@ -143,18 +58,19 @@ Thus the remaining case, namely infinitely many nonzero negative-power terms, is
 
 ::: pf-step
 
-Therefore the requested definition is
+The point $a$ is an essential singularity of $f$ if it is neither a removable singularity nor a pole:
 $$
 \boxed{
 a\text{ is essential for }f
 \iff
-a\text{ is an isolated singularity that is neither removable nor a pole}.}
+a\text{ is an isolated singularity that is neither removable nor a pole},}
 $$
-
+equivalently, infinitely many of the coefficients $c_{-1},c_{-2},\ldots$ are nonzero.
 
 ::: pf-proof
 
-Step [](#s1-2){.pf-ref} gives the definition, and step [](#s1-3){.pf-ref} gives the standard equivalent Laurent-series criterion.
+The first form is the definition.
+By step [](#laurent-types){.pf-ref}, the removable and pole cases are exactly the cases in which only finitely many negative-power coefficients are nonzero, so the remaining case is exactly the case of infinitely many nonzero negative-power coefficients.
 
 :::
 

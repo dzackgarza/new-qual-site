@@ -210,7 +210,7 @@ the difference quotient identity in step [](#s1-4){.pf-ref}.
 
 :::
 
-::: {.pf-step #s1-8}
+::: pf-step
 
 Since $z_0\in\DD$ was arbitrary,
 $$
@@ -225,12 +225,6 @@ Step [](#s1-7){.pf-ref} proves existence of the complex derivative at every poin
 unit disk.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 
