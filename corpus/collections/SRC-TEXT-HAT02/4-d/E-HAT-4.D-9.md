@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-4.D-9
 kind: problem
-title: Torus inclusion in $U(n)$ is nullhomotopic
+title: Diagonal inclusion factors up to homotopy through multiplication
 classification:
   areas:
   - topology
