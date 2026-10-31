@@ -952,6 +952,8 @@ source:
       comment: Hoffman and Kunze 8.4.13
     - id: E-HK-84-14
       comment: Hoffman and Kunze 8.4.14
+    - id: E-HK-84-15
+      comment: Hoffman and Kunze 8.4.15
   - name: '8.5'
     problems:
     - id: E-HK-85-1
