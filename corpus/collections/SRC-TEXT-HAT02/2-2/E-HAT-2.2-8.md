@@ -37,6 +37,7 @@ $$
 f(z)=a_mz^m+a_{m-1}z^{m-1}+\cdots+a_0,
 \qquad a_m\ne0.
 $$
+If $m=0$, extend the nonzero constant map to be constant at $\infty$ as well. Its map degree and polynomial degree are both zero, and it has no roots. Assume $m\ge1$ below.
 
 ::: pf
 
