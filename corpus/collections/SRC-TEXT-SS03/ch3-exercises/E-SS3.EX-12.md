@@ -55,11 +55,11 @@ $$
 \tag{1}
 $$
 
-It remains to show the contour integral tends to $0$. On the circles $\abs{z}=N+\tfrac12$, the distance to every integer is bounded below by a positive absolute constant in the horizontal direction, and the standard formula
+It remains to show the contour integral tends to $0$. The standard formula
 $$
 \cot(x+iy)=\frac{\sin 2x-i\sinh 2y}{\cosh 2y-\cos 2x}
 $$
-shows $\abs{\cot(\pi z)}$ is uniformly bounded on all these circles. Also $\abs{z+u}\ge R_N-\abs{u}$. Hence
+gives $\abs{\cot(\pi(x+iy))}^2=\frac{\cosh 2\pi y+\cos 2\pi x}{\cosh 2\pi y-\cos 2\pi x}$. Hence $\abs{\cot(\pi z)}\le\coth\frac{\pi}{2}$ when $\abs{y}\ge\frac12$, since then $\cosh2\pi y-\cos2\pi x\ge\cosh\pi-1$. If $z=x+iy$ lies on $\abs{z}=N+\tfrac12$ with $\abs{y}<\frac12$, then $\sqrt{N^2+N}<\abs{x}\le N+\frac12$, so $\abs{x}$ lies within $\frac18$ of $N+\frac12$ (as $N+\frac12-\sqrt{N^2+N}=\frac{1/4}{N+\frac12+\sqrt{N^2+N}}\le\frac18$), and $\cos2\pi x\le\cos\frac{3\pi}{4}<0$; then $\abs{\cot(\pi z)}\le1$. Thus $\abs{\cot(\pi z)}\le C$ on all these circles, with $C=\coth\frac{\pi}{2}$. Also $\abs{z+u}\ge R_N-\abs{u}$. Hence
 $$
 \abs{\int_{C_N}f(z)\,dz}
 \le 2\pi R_N\,\frac{C}{(R_N-\abs{u})^2}\longrightarrow0.
