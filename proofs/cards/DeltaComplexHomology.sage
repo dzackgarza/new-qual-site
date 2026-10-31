@@ -92,5 +92,44 @@ for n in range(1, 9):
 
 print()
 
+# --- Exercise 2.2-19: RP^n / RP^m.  One cell in each degree m+1, ..., n, with
+# d_{m+1} = 0 and, for i > m+1, d_i = 2 for i even and 0 for i odd.  The card
+# predicts: H_n = Z for n odd and 0 for n even (when n > m+1); H_i = Z/2 for
+# m+1 < i < n with i odd and 0 for i even; H_{m+1} = Z for m+1 even and Z/2 for
+# m+1 odd; and H_0 = Z.
+def rp_quotient(m, n):
+    dims = [1 if m + 1 <= i <= n else 0 for i in range(n + 1)]
+    dims[0] = 1
+    bd = {}
+    for i in range(1, n + 1):
+        k = 0
+        if i > m + 1:
+            k = 2 if i % 2 == 0 else 0
+        rows, cols = dims[i - 1], dims[i]
+        bd[i] = matrix(ZZ, rows, cols, [k] if rows * cols == 1 else [])
+    return dims, bd
+
+for m in range(0, 5):
+    for n in range(m + 1, 9):
+        dims, bd = rp_quotient(m, n)
+        got = homology(dims, bd)
+        expect = []
+        for i in range(n + 1):
+            if i == 0:
+                expect.append((1, []))
+            elif i <= m:
+                expect.append((0, []))
+            elif n == m + 1:
+                expect.append((1, []) if i == n else (0, []))
+            elif i == n:
+                expect.append((1, []) if n % 2 == 1 else (0, []))
+            elif i == m + 1:
+                expect.append((1, []) if (m + 1) % 2 == 0 else (0, [2]))
+            else:
+                expect.append((0, [2]) if i % 2 == 1 else (0, []))
+        results.append(show(f"2.2-19 RP^{n}/RP^{m}", dims, bd, expect))
+
+print()
+
 print("all certificates pass" if all(results) else "CERTIFICATE FAILURE")
 assert all(results)
