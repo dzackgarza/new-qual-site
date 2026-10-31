@@ -116,8 +116,7 @@ Reverse direction ($\impliedby$): Every net having a convergent subnet implies c
 ::: pf-proof
 
 ::: pf-step
-We show that every family of closed sets with the FIP has non-empty intersection.
-Let $\mathcal{A}$ be a family of closed subsets of $X$ with the FIP.
+If $X=\varnothing$, it is compact. Otherwise the empty family has intersection $X\ne\varnothing$, so it suffices to consider a nonempty family $\mathcal A$ of closed subsets of $X$ with the FIP.
 Let $\mathcal{B}$ be the collection of all non-empty finite intersections of members of $\mathcal{A}$:
 $$
 \mathcal{B} = \{F_1 \cap \dots \cap F_n \mid F_i \in \mathcal{A}, \, n \ge 1\}.
