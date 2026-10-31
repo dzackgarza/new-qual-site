@@ -25,7 +25,7 @@ Find all possible rational canonical forms for a matrix $A\in M_n(\QQ)$ such tha
 
 (b) $A$ is $7\times 7$ with $q(x) = (x^2+1)(x-7)$.
 
-Also find all such forms when $A \in M_n(\CC)$ instead, and find all possible Jordan Canonical Forms over $\CC$.
+Find all possible Jordan canonical forms of $A$ considered as a matrix over $\CC$.
 :::
 
 ::: {.solution}
@@ -35,7 +35,7 @@ By the structure theorem for finitely generated torsion modules over the PID $F[
 
 ::: {.pf-step #s1}
 
-(1) Over $\QQ$, the possible invariant factor lists for $n=6$, $q=(x-2)^2(x+3)$ are exactly:
+(a) Over $\QQ$, the possible invariant factor lists for $n=6$, $q=(x-2)^2(x+3)$ are exactly:
 
 1. $(x-2)^2(x+3),\ (x-2)^2(x+3)$;
 2. $x-2,\ (x-2)^2,\ (x-2)^2(x+3)$;
@@ -54,7 +54,7 @@ The factors $f_1\mid\cdots\mid f_{k-1}$ are monic divisors of $q$ of positive de
 
 ::: pf-step
 
-(1) Over $\CC$, the rational canonical forms are the same six, with Jordan forms respectively
+(a) Over $\CC$, the rational canonical forms are the same six, with Jordan forms respectively
 $$\begin{aligned}
 &1.\ J_2(2) \oplus J_2(2) \oplus J_1(-3) \oplus J_1(-3),\\
 &2.\ J_1(2) \oplus J_2(2) \oplus J_2(2) \oplus J_1(-3),\\
@@ -72,9 +72,9 @@ The monic divisors of $q$ in $\CC[x]$ are the same as in $\QQ[x]$ because $q$ sp
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
-(2) Over $\QQ$, the possible invariant factor lists for $n=7$, $q=(x^2+1)(x-7)$ are exactly:
+(b) Over $\QQ$, the possible invariant factor lists for $n=7$, $q=(x^2+1)(x-7)$ are exactly:
 
 1. $x^2+1,\ x^2+1,\ (x^2+1)(x-7)$;
 2. $x-7,\ x-7,\ x-7,\ x-7,\ (x^2+1)(x-7)$;
@@ -90,13 +90,13 @@ Since $x^2+1$ has no rational root, it is irreducible over $\QQ$, and the monic 
 
 ::: pf-step
 
-(2) Over $\CC$, the possible Jordan forms are
-$$\operatorname{diag}(\underbrace{i, \ldots, i}_{m_1}, \underbrace{-i, \ldots, -i}_{m_2}, \underbrace{7, \ldots, 7}_{m_3})$$
-with $m_1, m_2, m_3 \ge 1$ and $m_1 + m_2 + m_3 = 7$; there are $\binom{6}{2} = 15$ of them. For the rational canonical form with multiplicities $m_1,m_2,m_3$, the $j$th invariant factor counted from the last is $\prod_{\lambda\in\{i,-i,7\},\ m_\lambda\ge j}(x-\lambda)$, for $1\le j\le\max(m_1,m_2,m_3)$.
+(b) Over $\CC$, the possible Jordan forms are
+$$\operatorname{diag}(\underbrace{i, \ldots, i}_{m}, \underbrace{-i, \ldots, -i}_{m}, \underbrace{7, \ldots, 7}_{7-2m}),\qquad m\in\{1,2,3\},$$
+coming respectively from lists 2, 3 and 1 of step [](#s2){.pf-ref}.
 
 ::: pf-proof
 
-Over $\CC$, $q = (x-i)(x+i)(x-7)$ has distinct roots, so $A$ is diagonalizable with eigenvalues among $i,-i,7$, and each root of the minimal polynomial is an eigenvalue. The number of compositions of $7$ into three positive parts is $\binom62=15$. The elementary divisors are $m_\lambda$ copies of $x-\lambda$ for each $\lambda$; the last invariant factor is the product of one copy of each, and removing it and repeating gives the stated formula.
+Over $\CC$, $q = (x-i)(x+i)(x-7)$ has distinct roots, so every invariant factor splits into distinct linear factors and every Jordan block has size $1$. An invariant factor in step [](#s2){.pf-ref} is divisible by $x-i$ exactly when it is divisible by $x^2+1=(x-i)(x+i)$, and then also by $x+i$, so $i$ and $-i$ occur with the same multiplicity $m$. List 2 gives $m=1$, list 3 gives $m=2$, and list 1 gives $m=3$; the eigenvalue $7$ fills the remaining $7-2m$ diagonal places.
 
 :::
 
