@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-GZX7B
 kind: problem
-title: Components of locally compact paracompact Hausdorff spaces are second countable
+title: Components of locally compact paracompact Hausdorff spaces are sigma-compact
 classification:
   areas:
   - topology
@@ -19,14 +19,18 @@ audit:
 
 ::: {.exercise}
 
-Theorem.
-If $X$ is a Hausdorff space that is locally compact and paracompact, then each component of $X$ has a countable basis.
+Theorem (corrected).
+If $X$ is a Hausdorff space that is locally compact and paracompact, then each component of $X$ is a countable union of compact subspaces.
 
 Proof.
 If $X_0$ is a component of $X$, then $X_0$ is locally compact and paracompact.
 Let $\mathcal{C}$ be a locally finite covering of $X_0$ by sets open in $X_0$ that have compact closures.
 Let $U_1$ be a nonempty element of $\mathcal{C}$, and in general let $U_n$ be the union of all elements of $\mathcal{C}$ that intersect $\overline{U}_{n-1}$.
 Show that $\overline{U}_n$ is compact, and the sets $U_n$ cover $X_0$.
+:::
+
+::: {.remark}
+The printed theorem claims that each component has a countable basis. The compact connected cube $[0,1]^J$, for uncountable $J$, is locally compact, paracompact, and Hausdorff, but is not first countable. The proof establishes the stated countable compact cover.
 :::
 
 ::: {.solution}
@@ -86,7 +90,7 @@ Let $x \in \overline{A}$. Since $\mathcal{C}$ covers $X_0$, some $V_0 \in \mathc
 :::
 
 ::: pf-qed
-Step [](#closures-compact){.pf-ref} shows that each $\overline{U}_n$ is compact. By steps [](#a-nonempty-open){.pf-ref} and [](#a-closed){.pf-ref}, $A$ is a nonempty open and closed subset of the connected space $X_0$, so $A = X_0$: the sets $U_n$ cover $X_0$.
+Step [](#closures-compact){.pf-ref} shows that each $\overline{U}_n$ is compact. By steps [](#a-nonempty-open){.pf-ref} and [](#a-closed){.pf-ref}, $A$ is a nonempty open and closed subset of the connected space $X_0$, so $A = X_0$. Hence $X_0=\bigcup_n\overline{U}_n$ is a countable union of compact subspaces.
 :::
 
 :::
