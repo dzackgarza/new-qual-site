@@ -28,25 +28,25 @@ with $i: F_p \to E$, $i(e, \gamma) = e$. For a path $\gamma$ write $\bar\gamma$ 
 ::: pf
 
 ::: {.pf-step #action}
-$\lambda \cdot (e, \gamma) = (e, \gamma \cdot \lambda)$ is a continuous action of $\Omega B$ on $F_p$, up to the usual reparametrization homotopies, and it induces an action of the group $\langle X, \Omega B \rangle$ on $\langle X, F_p \rangle$ by $(u \cdot f)(x) = u(x) \cdot f(x)$.
+$(e, \gamma) \cdot \lambda = (e, \gamma \cdot \lambda)$ is a continuous right action of $\Omega B$ on $F_p$, up to the usual reparametrization homotopies, and it induces a right action of the group $\langle X, \Omega B \rangle$ on $\langle X, F_p \rangle$ by $(f \cdot u)(x) = f(x) \cdot u(x)$.
 
 ::: pf-proof
-$\gamma \cdot \lambda$ runs from $p(e)$ to $b_0$, so $(e, \gamma \cdot \lambda) \in F_p$, and concatenation is continuous in the compact-open topology. Concatenation is associative and unital up to reparametrization homotopies that are natural in the paths, so on homotopy classes $(u \cdot v) \cdot f = u \cdot (v \cdot f)$ and $\mathrm{const} \cdot f = f$. A homotopy of $u$ or $f$ gives a homotopy of $u \cdot f$. At the basepoint, $u(x_0) \cdot f(x_0)$ is a reparametrized constant path; a based homotopy corrects this, by the homotopy extension property of $(X, x_0)$.
+$\gamma \cdot \lambda$ runs from $p(e)$ to $b_0$, so $(e, \gamma \cdot \lambda) \in F_p$, and concatenation is continuous in the compact-open topology. Concatenation is associative and unital up to reparametrization homotopies that are natural in the paths, so on homotopy classes $(f \cdot u) \cdot v = f \cdot (u \cdot v)$ and $f \cdot \mathrm{const} = f$. A homotopy of $u$ or $f$ gives a homotopy of $f \cdot u$. At the basepoint, $f(x_0) \cdot u(x_0)$ is a reparametrized constant path; a based homotopy corrects this, by the homotopy extension property of $(X, x_0)$.
 :::
 
 :::
 
 ::: {.pf-step #same-orbit}
-If $g = u \cdot f$ in $\langle X, F_p \rangle$, then $i_* f = i_* g$.
+If $g = f \cdot u$ in $\langle X, F_p \rangle$, then $i_* f = i_* g$.
 
 ::: pf-proof
-The action does not change the first coordinate, so $i \circ (u \cdot f) = i \circ f$.
+The action does not change the first coordinate, so $i \circ (f \cdot u) = i \circ f$.
 :::
 
 :::
 
 ::: {.pf-step #converse}
-If $i_* f = i_* g$, then $f = \lambda \cdot g$ for some $\lambda \in \langle X, \Omega B \rangle$.
+If $i_* f = i_* g$, then $f = g \cdot \lambda$ for some $\lambda \in \langle X, \Omega B \rangle$.
 
 ::: pf-proof
 
@@ -62,10 +62,10 @@ $\eta_{x, s} \cdot \alpha_x$ runs from $pH(x, s)$ to $b_0$, so $K(x, s) \in F_p$
 :::
 
 ::: pf-step
-Let $\lambda(x) = \bar\beta_x \cdot \eta_{x, 1} \cdot \alpha_x$, a loop at $b_0$. Then $\lambda \cdot g \simeq f$.
+Let $\lambda(x) = \bar\beta_x \cdot \eta_{x, 1} \cdot \alpha_x$, a loop at $b_0$. Then $g \cdot \lambda \simeq f$.
 
 ::: pf-proof
-$(\lambda \cdot g)(x) = (g_E(x), \beta_x \cdot \bar\beta_x \cdot \eta_{x, 1} \cdot \alpha_x)$, and $\beta_x \cdot \bar\beta_x$ contracts to a constant path continuously in $x$. So $\lambda \cdot g \simeq K_1 \simeq f$ by the previous step.
+$(g \cdot \lambda)(x) = (g_E(x), \beta_x \cdot \bar\beta_x \cdot \eta_{x, 1} \cdot \alpha_x)$, and $\beta_x \cdot \bar\beta_x$ contracts to a constant path continuously in $x$. So $g \cdot \lambda \simeq K_1 \simeq f$ by the previous step.
 :::
 
 :::
