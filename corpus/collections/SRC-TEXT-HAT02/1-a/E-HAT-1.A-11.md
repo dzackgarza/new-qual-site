@@ -25,38 +25,22 @@ In this situation one says $F$ is residually finite.
 :::
 
 ::: {.solution}
+Write $F=\langle a_1,\ldots,a_n\rangle$ and represent it as the fundamental group of the rose $X=\bigvee_{i=1}^n S^1$.
+Let $x\ne1$ be represented by a reduced word $s_1\cdots s_k$, where each $s_j$ is some $a_i$ or $a_i^{-1}$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-Topological representation of $F$:
+There is a finite connected labeled path $Y$ with distinct vertices $v_0,\ldots,v_k$ whose path from $v_0$ to $v_k$ reads $s_1\cdots s_k$ and whose label map to $X$ is locally injective on oriented edge germs.
 
 ::: pf-proof
 
-::: pf-step
-
-Let $F = F_n$ be the free group of rank $n \ge 1$, and let $X = \bigvee_{i=1}^n S^1$ be a wedge sum of $n$ circles with basepoint $x_0$, so that $\pi_1(X, x_0) \cong F$.
-
-::: pf-proof
-
-fundamental group of a bouquet of circles.
-
-:::
-
-:::
-
-::: pf-step
-
-Let $x \in F \setminus \{1\}$ be a non-trivial element, written as a non-empty reduced word $w = s_1 s_2 \cdots s_k$ in the generators and their inverses ($s_j \in \{a_1^{\pm 1}, \dots, a_n^{\pm 1}\}$ with $s_{j+1} \neq s_j^{-1}$).
-
-::: pf-proof
-
-reduced words in free groups.
-
-:::
-
-:::
+For $s_j=a_i$, insert an $a_i$-edge oriented from $v_{j-1}$ to $v_j$.
+For $s_j=a_i^{-1}$, insert an $a_i$-edge oriented from $v_j$ to $v_{j-1}$.
+At an interior vertex, two edges could have the same outgoing $a_i$-label only if consecutive letters were $a_i^{-1}a_i$; they could have the same incoming $a_i$-label only if the letters were $a_i a_i^{-1}$.
+Neither occurs in a reduced word.
+Thus for each $i$ the $a_i$-edges of $Y$ define a partial bijection between its initial and terminal vertices.
 
 :::
 
@@ -64,72 +48,13 @@ reduced words in free groups.
 
 ::: {.pf-step #s2}
 
-Construction of a finite covering space separating $x$:
+There is a finite-sheeted covering $p:Z\to X$ containing $Y$, and the lift of the loop $x$ from $v_0$ is not closed.
 
 ::: pf-proof
 
-::: pf-step
-
-Construct an initial directed labeled graph $\Gamma_0$ consisting of $k+1$ vertices $v_0, v_1, \dots, v_k$, with an edge labeled $s_j$ directed from $v_{j-1}$ to $v_j$ for each $j = 1, \dots, k$.
-
-::: pf-proof
-
-path graph realization of word $w$.
-
-:::
-
-:::
-
-::: pf-step
-
-In $\Gamma_0$, the path from $v_0$ reading word $w$ terminates at $v_k \neq v_0$.
-Since $w$ is reduced, at each vertex there is at most one incoming and one outgoing edge with each generator label $a_i$.
-
-::: pf-proof
-
-reduced word has no backtracking.
-
-:::
-
-:::
-
-::: pf-step
-
-Complete $\Gamma_0$ to a finite regular $2n$-valent graph $\widetilde{X}$ by adding edges so that every vertex has exactly one incoming and one outgoing edge labeled by each generator $a_i$.
-
-::: pf-proof
-
-Hall's Marriage Theorem / permutation completion on finite bipartite deficiency graphs.
-
-:::
-
-:::
-
-::: pf-step
-
-The graph $\widetilde{X}$ is a finite $d$-sheeted covering space $p: \widetilde{X} \to X$ with basepoint $\tilde{x}_0 = v_0$.
-
-::: pf-proof
-
-covering projection mapping edges of label $a_i$ to circle $a_i$.
-
-:::
-
-:::
-
-::: pf-step
-
-The unique lift of the loop $x$ starting at $v_0$ terminates at $v_k \neq v_0$, which is not a closed loop.
-Thus $x \notin K = p_*(\pi_1(\widetilde{X}, v_0))$.
-Since $\widetilde{X}$ is a $d$-sheeted covering, $[F : K] = d < \infty$.
-
-::: pf-proof
-
-unique path lifting theorem.
-
-:::
-
-:::
+Complete each partial bijection from step [](#s1){.pf-ref} to a permutation of the finite vertex set, as in Exercise 1.A.10. Add the missing labeled edges to obtain a finite covering graph $Z$ with the same vertices as $Y$.
+The lift of $x$ follows the original path in $Y$ and ends at $v_k\ne v_0$.
+Consequently, if $K=p_*\pi_1(Z,v_0)$, then $x\notin K$ and $[F:K]$ is the finite number of vertices of $Z$.
 
 :::
 
@@ -137,82 +62,21 @@ unique path lifting theorem.
 
 ::: {.pf-step #s3}
 
-Construction of a finite-index normal subgroup:
+There is a finite-index normal subgroup $H\trianglelefteq F$ with $x\notin H$.
 
 ::: pf-proof
 
-::: pf-step
-
-Define the normal core of $K$ in $F$:
+Apply Exercise 1.A.9 to $K$: its normal core
 $$
-H = \operatorname{Core}_F(K) = \bigcap_{g \in F} g K g^{-1}.
+H=\bigcap_{g\in F}gKg^{-1}
 $$
-
-::: pf-proof
-
-definition of normal core.
-
-:::
-
-:::
-
-::: pf-step
-
-$H$ is a normal subgroup of $F$, and by Poincaré’s Theorem on finite index subgroups:
-$$
-[F : H] \le [F : K]! = d! < \infty.
-$$
-
-::: pf-proof
-
-action of $F$ by left multiplication on the cosets $F/K$.
-
-:::
-
-:::
-
-::: pf-step
-
-Since $H \subseteq K$ and $x \notin K$, we have $x \notin H$.
-
-::: pf-proof
-
-subset containment.
-
-:::
-
-:::
-
-::: pf-step
-
-In the finite quotient group $G = F/H$, the coset $xH \neq e_{F/H}$, so $x$ has non-trivial image in a finite quotient.
-
-::: pf-proof
-
-$x \notin H \iff xH \neq H$.
+has finite index and lies in $K$.
+Since $x\notin K$, also $x\notin H$.
+The finite quotient $F/H$ therefore has a nonidentity image of $x$.
 
 :::
 
 :::
 
 :::
-
-:::
-
-::: pf-step
-
-Conclusion:
-For every $x \in F \setminus \{1\}$, there exists a finite-index normal subgroup $H \trianglelefteq F$ with $x \notin H$.
-Thus every finitely generated free group is residually finite. Q.E.D.
-
-::: pf-proof
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
-
-:::
-
-:::
-
-:::
-
 :::
