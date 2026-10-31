@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified by direct diagram algebra/exactness.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the three diagram cases: in the triangle the missing map is a composite of the other two and an inverse, and in each square the same algebra gives the missing isomorphism, with the reversed arrow case handled by the inverse of the vertical map.
 ---
 
 ::: {.problem}

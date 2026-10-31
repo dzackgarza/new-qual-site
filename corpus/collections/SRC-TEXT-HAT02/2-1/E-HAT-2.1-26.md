@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof reviewed against the relevant chain, relative-homology, local-homology, or covering-space calculation.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the whole proof: $\tilde H_1$ of the pair is $\ker\epsilon$ on $H_0(A)=\bigoplus_{a\in A}\ZZ[a]$, a countable free group; the quotient $X/A$ is the Hawaiian earring; and the retractions $r_n$ onto the $n$th circle, which are continuous because the preimage of a neighbourhood of the wedge point contains every other circle entire, separate $2^{\aleph_0}$ classes in $H_1(X/A)$.
 ---
 
 ::: {.problem}

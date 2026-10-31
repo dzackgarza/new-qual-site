@@ -54,8 +54,10 @@ fragments and once to encode covers by monodromy permutations and to compare ind
 coset bijection; closing steps of `-9` and `-12` repaired.
 §1.B: 9 statements compared; proofs `-1` .. `-4` read line by line, `-5` .. `-9` reviewed only at the
 level of their claims, as their notes say.
-§2.1: 31 statements compared; proofs `-1` .. `-17` read, with `-6`, `-8`, `-10` and `-17(b)` as their
-notes describe. Proofs `-18` .. `-31` are unread.
+§2.1: 31 statements compared. Proofs read line by line in `E-HAT-2.1-1`, `-2`, `-3`, `-4`, `-5`, `-7`,
+`-9`, `-11`, `-12`, `-13`, `-14`, `-15`, `-16`, `-18`, `-19`, `-20`, `-21`, `-22`, `-26`, `-30`, `-31`;
+the remaining ten (`-6`, `-8`, `-10`, `-17`, `-23`, `-24`, `-25`, `-27`, `-28`, `-29`) are reviewed at
+the level their notes describe, not line by line.
 Unread entirely: §2.2 onward, that is every proof in chapters 2, 3 and 4 beyond §2.1.
 
 ## Fast local checks and complete CI acceptance

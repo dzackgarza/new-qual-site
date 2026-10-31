@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof reviewed against the relevant chain, relative-homology, local-homology, or covering-space calculation.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the comparison: both spaces have $\ZZ$ in degrees 0, 1 (rank two) and 2 and zero above, while the universal cover of the wedge sum contains a sphere and so has $H_2\ne0$, unlike the plane covering the torus.
 ---
 
 ::: {.problem}

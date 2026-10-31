@@ -20,6 +20,11 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 2.1, Exercise 27.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the five-lemma argument: naturality compares the two long exact sequences, the four outer vertical maps are isomorphisms because $f$ is a homotopy equivalence on $X$ and on $A$, so the middle map is too; part (b) is read at the level of the stated non-equivalence of pairs.
 ---
 
 ::: {.problem}

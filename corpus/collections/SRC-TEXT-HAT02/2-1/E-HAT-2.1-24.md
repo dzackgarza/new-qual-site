@@ -20,6 +20,11 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 2.1, Exercise 24.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the inequality argument: along a maximal chain the barycentric coordinates satisfy $t_{i_0}\ge\cdots\ge t_{i_n}$, and the $n!$ chains give exactly the $n!$ $n$-simplices of the subdivision.
 ---
 
 ::: {.problem}

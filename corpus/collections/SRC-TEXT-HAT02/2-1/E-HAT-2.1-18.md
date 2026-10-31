@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Identified H_1(R,Q) with the augmentation kernel of the free abelian group on Q and exhibited the standard difference basis.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the long exact sequence computation: $\QQ$ is totally disconnected so $H_0(\QQ)=\bigoplus_{q}\ZZ[q]$, and $H_1(\RR,\QQ)$ is the kernel of the augmentation to $H_0(\RR)=\ZZ$, the free abelian group on the classes $[q]-[q_0]$.
 ---
 
 ::: {.problem}

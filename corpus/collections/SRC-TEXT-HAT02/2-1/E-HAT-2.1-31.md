@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified by direct diagram algebra/exactness.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the example: upper sequence $0\to0\to\ZZ\to\ZZ\to0$ and lower $0\to\ZZ\to\ZZ\to0\to0$ with $\alpha=\beta=\delta=\varepsilon=0$ and $\gamma=\mathrm{id}$; commutation holds because every composite passes through a zero group or a zero map, so the five-lemma hypothesis fails on the middle map only.
 ---
 
 ::: {.problem}

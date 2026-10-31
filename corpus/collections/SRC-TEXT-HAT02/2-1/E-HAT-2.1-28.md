@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof reviewed against the relevant chain, relative-homology, local-homology, or covering-space calculation.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the cone computation: $\widetilde H_1(G)=\ZZ^3$ for the complete graph on four vertices, the cone point has contractible complement, and the local homology at points of $X$ away from the cone point reduces to the local homology of the graph, which is $\ZZ$ in degree one at interior points of edges.
 ---
 
 ::: {.problem}

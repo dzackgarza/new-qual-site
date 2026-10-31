@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof checked at chain/skeletal/combinatorial level.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the two-stage argument: a simplex of the first barycentric subdivision is given by a strict chain of faces, so its barycenters are distinct, and in a $\Delta$-complex with distinct vertices per simplex the subdivided pieces meet in common faces, which is the simplicial condition.
 ---
 
 ::: {.problem}

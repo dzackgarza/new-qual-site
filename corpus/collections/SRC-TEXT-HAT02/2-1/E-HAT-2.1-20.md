@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Applied reduced Mayer--Vietoris for the suspension and identified a union of r cones with a wedge of r-1 suspensions after collapsing one contractible cone.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the suspension argument: $SX$ is the union of two contractible cones meeting in $X$, so the reduced Mayer--Vietoris sequence gives $\widetilde H_{n+1}(SX)\cong\widetilde H_n(X)$; the iterated-cone case follows by induction.
 ---
 
 ::: {.problem}
