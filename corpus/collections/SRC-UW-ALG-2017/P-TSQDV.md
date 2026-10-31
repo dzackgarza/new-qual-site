@@ -21,7 +21,7 @@ $$
 
 (a) Show that
 $$
-H_n\cong\left\{\begin{pmatrix}1&u&w\\0&1&v\\0&0&1\end{pmatrix}\ \middle|\ u,v,w\in\ZZ/n\ZZ\right\}.
+H_n\cong\left\{\begin{pmatrix}1&u&w\\0&1&v\\0&0&1\end{pmatrix} \st u,v,w\in\ZZ/n\ZZ\right\}.
 $$
 
 (b) Classify the irreducible complex representations of $H_p$ when $p$ is prime.
