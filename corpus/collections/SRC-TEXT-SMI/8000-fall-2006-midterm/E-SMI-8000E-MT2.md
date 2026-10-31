@@ -70,7 +70,16 @@ If $p_1 \cdots p_m = q_1 \cdots q_n$ with all $p_i, q_j$ irreducible, then $m = 
 
 ::: pf-proof
 
-Induct on $m$. If $m = 0$, then $q_1 \cdots q_n = 1$, so $n = 0$ because irreducibles are nonunits. If $m \ge 1$, then $p_1$ divides $q_1 \cdots q_n$ and is prime by step [](#s3){.pf-ref}, so $p_1 \mid q_j$ for some $j$; reorder so that $j = 1$. Since $q_1$ is irreducible and $p_1$ is a nonunit, $q_1 = u_1 p_1$ with $u_1$ a unit. Cancelling $p_1$ in the domain $R$ gives $p_2 \cdots p_m = (u_1 q_2) q_3 \cdots q_n$ with $u_1 q_2$ irreducible, and the induction hypothesis applies.
+Induct on $m$, allowing a unit factor on the right. If $m=0$, then a
+unit equals a product of $n$ irreducibles, so $n=0$. If $m\ge1$, then
+$n\ge1$ as a nonempty product of irreducibles cannot equal a unit. Now
+$p_1$ divides $q_1\cdots q_n$ and is prime by step [](#s3){.pf-ref}.
+Thus $p_1\mid q_j$ for some $j$; reorder so that $j=1$. Since $q_1$
+is irreducible, $q_1=u_1p_1$ for a unit $u_1$. Cancelling $p_1$
+gives an equality between $p_2\cdots p_m$ and a unit times
+$q_2\cdots q_n$. The induction hypothesis applies even when either
+product is empty. Hence $m-1=n-1$, and the remaining factors agree up
+to reordering and associates.
 
 :::
 
