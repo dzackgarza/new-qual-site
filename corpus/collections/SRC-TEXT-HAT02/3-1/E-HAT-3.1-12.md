@@ -22,6 +22,19 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Replaced a Milnor lim^1 argument with the telescope argument the problem requires.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.1, Exercise 12; it matches the printed text. The card also states the proof of Lemma 2.34(c) that the exercise refers to; that is extra context, not a change to the exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the copied structure of the second proof of Lemma 2.34(c): good-pair reduction to $X/X^n$;
+    the finite-dimensional case from injectivity of $H^k(Y^m)\to H^k(Y^{m-1})$ for $m>n$; the two
+    telescope steps, with $R=Y^0\times[0,\infty)$ contractible and $Z/R$, $T/Z$ wedges of
+    finite-dimensional complexes whose $n$- and $(n+1)$-skeleta are points; and the conclusion
+    applied to $Y=X/X^n$.
 ---
 
 ::: {.problem}

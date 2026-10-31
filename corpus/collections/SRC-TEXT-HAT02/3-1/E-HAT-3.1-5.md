@@ -14,6 +14,19 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.1, Exercise 5; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read all four parts: the cocycle condition on the triangle with edges $f$, $g$ and $f\cdot g$
+    gives additivity; $c\cdot c=c$ gives vanishing on constant paths without a degenerate simplex;
+    the triangulated homotopy square gives invariance once the constant endpoint paths vanish; and
+    $\varphi=\delta\psi$ says $\varphi(f)=\psi(v_1)-\psi(v_0)$, with the converse by joining each
+    point to one basepoint per component.
 ---
 
 ::: {.problem}

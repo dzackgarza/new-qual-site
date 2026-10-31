@@ -22,6 +22,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the resolution and Hom-complex calculations directly from the definitions.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.1, Exercise 3; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the resolution: multiplication by $2$ on $\ZZ_4$ has kernel and image $\{0,2\}$, so
+    $\cdots\to\ZZ_4\xrightarrow{2}\ZZ_4\to\ZZ_2\to0$ is exact with free terms; and every
+    $\ZZ_4$-linear $\varphi:\ZZ_4\to\ZZ_2$ has $\varphi(2)=2\varphi(1)=0$, so all coboundaries
+    vanish and $\operatorname{Ext}^n_{\ZZ_4}(\ZZ_2,\ZZ_2)=\ZZ_2$ in every degree.
 ---
 
 ::: {.problem}

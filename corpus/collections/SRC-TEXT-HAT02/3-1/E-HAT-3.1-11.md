@@ -22,6 +22,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the cochain, exact-sequence, and universal-coefficient calculations directly.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.1, Exercise 11; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both parts: $q_*$ vanishes because the only nonzero reduced homology of $X$ lies in degree
+    $n$, where $S^{n+1}$ has none, while on cellular $(n+1)$-cochains $q$ is the identity and
+    $H^{n+1}(X;\ZZ)=\ZZ_m$ is the cokernel of multiplication by $m$, so $q^*$ is reduction modulo
+    $m$; dually $i^*$ vanishes in every degree because the two spaces have their cohomology in
+    different degrees, while $i_*$ is reduction modulo $m$.
 ---
 
 ::: {.problem}

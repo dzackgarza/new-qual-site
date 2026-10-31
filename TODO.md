@@ -47,9 +47,9 @@ marked proposed. `E-HAT-1.A-8` is settled: `proofs/cards/SubgroupFiniteness.lean
 generating family has finitely many subgroups of a given nonzero index, with no `sorryAx`.
 
 `ad-text-hat02` is partly read, against the book itself
-(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §2.3; proofs are
-read for §1.1, §1.2, §1.A, §1.B-1..-4, §2.1-1..-17 and all of §2.2 and §2.3. Exact scope, with no
-section counted as read beyond it:
+(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §3.1; proofs are
+read for §1.1, §1.2, §1.A, §1.B-1..-4, §2.1-1..-17 and all of §2.2, §2.3 and §3.1. Exact scope, with
+no section counted as read beyond it:
 §1.1: 20 statements compared, the twelve solved proofs read line by line, `E-HAT-1.1-17` repaired.
 §1.2: 22 statements compared, all 22 proofs read line by line; `E-HAT-1.2-12`, `-14`, `-16` closing
 steps repaired, `E-HAT-1.2-22` restructured into one proof and its subcomplex framing corrected.
@@ -81,8 +81,16 @@ $K_{3,3}$.
 around the single Moore-space pair on which the torsion sequence visibly fails; `E-HAT-2.3-2`'s dimension
 step is restated for a point, with $S^0$ kept as the same computation. `E-HAT-2.3-4`'s splitting is read
 as the two retractions giving a left inverse and a section.
+§3.1: all 13 statements compared with the printed exercises and all agree (`E-HAT-3.1-10`, `-12` and `-13` carry, in addition, the
+definition or cited result the exercise refers to, and `-9` makes the implicit $n>0$ explicit). All 13 proofs are read:
+`-1` through the comparison theorem and chain homotopy, `-2` and `-3` through the induced maps on the cochain complexes,
+`-4` by $\operatorname{Hom}(\ZZ_m,C_n)=\operatorname{Hom}(\QQ,C_n)=0$ for free $C_n$, `-5` by the triangle, the idempotent
+constant path and the triangulated homotopy square, `-6` by recomputing all six cohomologies from the dualized complexes,
+`-7` and `-9` by the long exact sequence of a pair and the Kronecker pairing, `-10` from the alternating lens-space
+differential, `-11` for the two counterexamples to naturality, `-12` as the cohomology copy of the second proof of
+Lemma 2.34(c), and `-13` through Proposition 1B.9 and the universal coefficient sequence.
 Unread entirely: the proofs of §1.3 beyond the ten listed, of §1.B-5..-9 and of §2.1-6, -8, -10, -17,
--23..-25, -27..-29, and the proofs and statements of §3.1 and §4 onward.
+-23..-25, -27..-29, and the proofs and statements of §3.2 and §4 onward.
 
 ## Fast local checks and complete CI acceptance
 

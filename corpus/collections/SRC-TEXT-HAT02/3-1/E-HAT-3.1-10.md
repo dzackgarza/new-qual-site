@@ -26,6 +26,19 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Moved the statement into a problem block and stated the lens space and its cellular chain complex from Hatcher, Algebraic Topology, Example 2.43 (pp. 144-145).
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.1, Exercise 10; it matches the printed text. The card also states the lens-space definition that the exercise refers to; that is extra context, not a change to the exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Recomputed the cohomology from the alternating differential: $\delta^k$ is zero for even $k$
+    and multiplication by $m$ for odd $k$, so the groups are $G$ in degrees $0$ and $2n-1$, $G/mG$
+    in the even interior degrees and $G[m]$ in the odd interior degrees. The four specializations
+    are read, and the formula is checked against the universal coefficient sequence, where
+    $\operatorname{Hom}(\ZZ_m,G)=G[m]$ and $\operatorname{Ext}(\ZZ_m,G)=G/mG$.
 ---
 
 ::: {.problem}
