@@ -5,14 +5,14 @@ kind: problem
 title: The ratio test computes the radius of convergence
 classification:
   areas:
-  - complex-analysis
-  topics: ['Complex Numbers', 'Power Series', 'Cauchy-Riemann']
+    - complex-analysis
+  topics: [Power Series, Convergence Tests]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-30
+  - event: solution-written
+    by: gemini-3.7-flash
+    date: 2026-08-30
 ---
 
 ::: {.exercise}

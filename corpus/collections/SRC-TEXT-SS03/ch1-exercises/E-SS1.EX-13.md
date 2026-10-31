@@ -102,3 +102,7 @@ In the case $c>0$, both $f$ and $\bar f$ are holomorphic, so $\partial f/\partia
 :::
 
 :::
+
+::: remark
+The book states the exercise for an open set $\Omega$. On a disconnected open set each condition only makes $f$ locally constant, so the statement here takes $\Omega$ connected.
+:::

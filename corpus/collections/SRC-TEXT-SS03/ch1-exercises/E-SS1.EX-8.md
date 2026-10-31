@@ -5,14 +5,14 @@ kind: problem
 title: Chain rule for the Wirtinger derivatives $\partial_z$ and $\partial_{\bar z}$
 classification:
   areas:
-  - complex-analysis
-  topics: ['Complex Numbers', 'Power Series', 'Cauchy-Riemann']
+    - complex-analysis
+  topics: [Cauchy-Riemann, Wirtinger Derivatives]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-10
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-10
 ---
 
 ::: {.exercise}

@@ -15,13 +15,15 @@ review: draft
 ---
 
 ::: {.exercise}
-Show that
+Prove the following:
 
-(a) $\sum kz^k$ diverges on $S^1$.
+(a) The power series $\sum nz^n$ does not converge at any point of the unit circle.
 
-(b) $\sum k^{-2} z^k$ converges on $S^1$.
+(b) The power series $\sum z^n/n^2$ converges at every point of the unit circle.
 
-(c) $\sum \inverseof{k} z^k$ converges on $S^1\sm\theset{1}$ and diverges at $1$.
+(c) The power series $\sum z^n/n$ converges at every point of the unit circle except $z=1$.
+
+[Hint: Sum by parts.]
 :::
 
 ::: {.solution}
