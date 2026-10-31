@@ -84,7 +84,7 @@ Thus these data define an $\OO_X$-module.
 
 A morphism from $(M,L,\rho)$ to $(M',L',\rho')$ is a pair consisting of an $R$-linear map $u:M\to M'$ and a $K$-linear map $v:L\to L'$ such that
 $$
-v\circ\rho=\rho'\circ(u\otimes\operatorname{id}_K).
+v\circ\rho=\rho'\circ(u\otimes\id_K).
 $$
 This equation is equivalent to compatibility with the restriction maps, so such pairs are precisely sheaf-module morphisms.
 Both constructions preserve composition and identities.
@@ -101,14 +101,14 @@ The sheaf corresponding to $(M,L,\rho)$ is quasi-coherent exactly when $\rho$ is
 ::: pf-proof
 
 The sheaf $\widetilde M$ associated to $M$ has sections $M$ on $X$ and $M\otimes_R K$ on $D(\pi)=\{\eta\}$, with restriction $m\mapsto m\otimes1$ [@Har77, Proposition II.5.1].
-It corresponds to $(M,M\otimes_R K,\operatorname{id}_{M\otimes_R K})$.
-If $\rho$ is an isomorphism, the pair $(\operatorname{id}_M,\rho)$ therefore gives an isomorphism $\widetilde M\to\mcf$, proving that $\mcf$ is quasi-coherent.
+It corresponds to $(M,M\otimes_R K,\id_{M\otimes_R K})$.
+If $\rho$ is an isomorphism, the pair $(\id_M,\rho)$ therefore gives an isomorphism $\widetilde M\to\mcf$, proving that $\mcf$ is quasi-coherent.
 
 Conversely, if $\mcf$ is quasi-coherent, its defining affine-local description supplies an affine neighborhood $U$ of $x$ and a module $N$ with $\mcf\restrict_U\cong\widetilde N$ [@Har77, Chapter II, §5].
 Step [](#s1){.pf-ref} forces $U=X$.
 The resulting isomorphism gives an $R$-linear isomorphism $u:N\to M$ and a $K$-linear isomorphism $v:N\otimes_R K\to L$.
-By step [](#s2){.pf-ref} they satisfy $v=\rho\circ(u\otimes\operatorname{id}_K)$.
-Hence $\rho=v\circ(u\otimes\operatorname{id}_K)^{-1}$ is an isomorphism.
+By step [](#s2){.pf-ref} they satisfy $v=\rho\circ(u\otimes\id_K)$.
+Hence $\rho=v\circ(u\otimes\id_K)^{-1}$ is an isomorphism.
 
 :::
 

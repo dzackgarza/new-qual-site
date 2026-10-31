@@ -244,16 +244,16 @@ Step [](#s5-1){.pf-ref} constructs the natural morphism; steps [](#s5-2){.pf-ref
 The functors $T$ and $G:\mcf\mapsto\Gamma_*(\mcf)$ are inverse equivalences, proving part (c).
 
 ::: pf-proof
-Step [](#s4){.pf-ref} makes $G$ a functor from $\operatorname{Coh}(X)$ to $\mathcal Q$, and step [](#s5){.pf-ref} gives a natural isomorphism $TG\cong\operatorname{id}$.
+Step [](#s4){.pf-ref} makes $G$ a functor from $\operatorname{Coh}(X)$ to $\mathcal Q$, and step [](#s5){.pf-ref} gives a natural isomorphism $TG\cong\id$.
 For $M\in\mathcal Q$, choose $e$ with $M_{\ge e}$ finite.
 Step [](#s2){.pf-ref} applied to $M_{\ge e}$, together with the naturality of $\alpha$ for $M_{\ge e}\to M$, shows that $\alpha_M$ is an isomorphism in all sufficiently large degrees.
-Thus $\alpha$ gives a natural isomorphism $\operatorname{id}_{\mathcal Q}\cong GT$.
+Thus $\alpha$ gives a natural isomorphism $\id_{\mathcal Q}\cong GT$.
 
 Explicitly, a sheaf morphism $\theta:\widetilde M\to\widetilde N$ corresponds to the class represented in high degrees by
 $$
 (\alpha_N)^{-1}\circ\Gamma_*(\theta)\circ\alpha_M.
 $$
-Its sheafification is $\theta$ by the naturality of $\beta$ and the identity $\beta_{\widetilde M}\circ\widetilde{\alpha_M}=\operatorname{id}$ proved in step [](#s5-1){.pf-ref} of step [](#s5){.pf-ref}.
+Its sheafification is $\theta$ by the naturality of $\beta$ and the identity $\beta_{\widetilde M}\circ\widetilde{\alpha_M}=\id$ proved in step [](#s5-1){.pf-ref} of step [](#s5){.pf-ref}.
 Conversely, naturality of $\alpha$ recovers any morphism between truncations from its sheafification by this formula after increasing the truncation degree.
 Therefore the correspondence also identifies all morphisms, not only objects.
 :::

@@ -29,15 +29,15 @@ A \dfn{geometric vector bundle} of rank $n$ over $Y$ is a scheme $X$ and a morph
 An \dfn{isomorphism} $g:(X,f,\theset{U_i},\theset{\psi_i})\to(X',f',\theset{U'_i},\theset{\psi'_i})$ of vector bundles of rank $n$ is a scheme isomorphism $g:X\to X'$ with $f=f'\circ g$, such that the combined trivializations $\psi_i$ and $\psi'_i\circ g$ define a vector bundle structure on $X$.
 
 (a) Let $\mce$ be a locally free sheaf of rank $n$ on $Y$.
-    Let $S(\mce)$ be its symmetric algebra and let $X=\Spec_Y S(\mce)$ with projection $f:X\to Y$.
-    For each open affine $U\subseteq Y$ on which $\mce\restrict_U$ is free, choose a basis and use $S(\mce(U))\cong\OO_Y(U)[x_1,\ldots,x_n]$ to define $\psi:f^{-1}(U)\to\AA^n_U$.
+Let $S(\mce)$ be its symmetric algebra and let $X=\Spec_Y S(\mce)$ with projection $f:X\to Y$.
+For each open affine $U\subseteq Y$ on which $\mce\restrict_U$ is free, choose a basis and use $S(\mce(U))\cong\OO_Y(U)[x_1,\ldots,x_n]$ to define $\psi:f^{-1}(U)\to\AA^n_U$.
 
 Show that these trivializations define a vector bundle of rank $n$ whose isomorphism class does not depend on the bases.
 Denote it by $\mathbf V(\mce)$.
 
 (b) For a morphism $f:X\to Y$, a \dfn{section} over an open set $U\subseteq Y$ is a morphism $s:U\to f^{-1}(U)$ with $(f\restrict_{f^{-1}(U)})\circ s=\id_U$.
-    Sections restrict and glue to form a sheaf of sets $\mcs(X/Y)$ on $Y$.
-    Show that for a rank-$n$ vector bundle this sheaf has a natural $\OO_Y$-module structure making it locally free of rank $n$.
+Sections restrict and glue to form a sheaf of sets $\mcs(X/Y)$ on $Y$.
+Show that for a rank-$n$ vector bundle this sheaf has a natural $\OO_Y$-module structure making it locally free of rank $n$.
 
 (c) Let $\mce$ be locally free of rank $n$, put $X=\mathbf V(\mce)$, and let $\mcs=\mcs(X/Y)$.
 For an open set $V\subseteq Y$, send a section $s\in\Gamma(V,\dualof{\mce})=\Hom_{\OO_V}(\mce\restrict_V,\OO_V)$ to its induced $\OO_V$-algebra homomorphism $S(\mce\restrict_V)\to\OO_V$, and then to the resulting section

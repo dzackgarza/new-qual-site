@@ -101,7 +101,7 @@ i:X\longrightarrow\PP_Y^r,\qquad j:X\longrightarrow\PP_Y^s
 $$
 with $i^*\OO(1)\cong\mcl$ and $j^*\OO(1)\cong\mcm$.
 The graph $\Gamma_j:X\to X\times_Y\PP_Y^s$ is a closed immersion because $\PP_Y^s\to Y$ is separated.
-The map $i\times\operatorname{id}:X\times_Y\PP_Y^s\to\PP_Y^r\times_Y\PP_Y^s$ is a base change of $i$.
+The map $i\times\id:X\times_Y\PP_Y^s\to\PP_Y^r\times_Y\PP_Y^s$ is a base change of $i$.
 Their composite is $(i,j)$, which is a locally closed immersion since closed and open immersions are stable under base change and locally closed immersions are stable under composition.
 Consequently
 $$

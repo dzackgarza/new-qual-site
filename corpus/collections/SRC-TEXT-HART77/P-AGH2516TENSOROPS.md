@@ -40,12 +40,12 @@ Now let $(X,\OO_X)$ be a ringed space and $\mcf$ a sheaf of $\OO_X$-modules.
 Define the tensor, symmetric, and exterior algebras of $\mcf$ by sheafifying the presheaf which assigns to each open set $U$ the corresponding operation applied to $\mcf(U)$ as an $\OO_X(U)$-module.
 
 (a) Suppose $\mcf$ is locally free of rank $n\ge1$, and let $r\ge0$.
-    Then $T^r(\mcf)$, $S^r(\mcf)$, and $\bigwedge^r(\mcf)$ are also locally free, of ranks $n^r$, $\binom{n + r - 1}{n - 1}$, and $\binom{n}{r}$ respectively.
-    For rank $n=0$, all three degree-zero sheaves are $\OO_X$ and all their positive-degree components are zero.
+Then $T^r(\mcf)$, $S^r(\mcf)$, and $\bigwedge^r(\mcf)$ are also locally free, of ranks $n^r$, $\binom{n + r - 1}{n - 1}$, and $\binom{n}{r}$ respectively.
+For rank $n=0$, all three degree-zero sheaves are $\OO_X$ and all their positive-degree components are zero.
 
 (b) Again let $\mcf$ be locally free of rank $n\ge0$.
-    For $0\le r\le n$, the multiplication map $\bigwedge^r\mcf\tensor\bigwedge^{n-r}\mcf\to\bigwedge^n\mcf$ is a perfect pairing: it induces an isomorphism of $\bigwedge^r\mcf$ with $\dualof{(\bigwedge^{n-r}\mcf)}\tensor\bigwedge^n\mcf$.
-    As a special case, if $\mcf$ has rank $2$ then $\mcf \cong \dualof{\mcf} \tensor \bigwedge^2 \mcf$.
+For $0\le r\le n$, the multiplication map $\bigwedge^r\mcf\tensor\bigwedge^{n-r}\mcf\to\bigwedge^n\mcf$ is a perfect pairing: it induces an isomorphism of $\bigwedge^r\mcf$ with $\dualof{(\bigwedge^{n-r}\mcf)}\tensor\bigwedge^n\mcf$.
+As a special case, if $\mcf$ has rank $2$ then $\mcf \cong \dualof{\mcf} \tensor \bigwedge^2 \mcf$.
 
 (c) Let $0\to\mcf'\to\mcf\to\mcf''\to0$ be an exact sequence of locally free sheaves.
 Then for any $r\ge0$ there is a finite filtration
@@ -55,11 +55,13 @@ $$
 with quotients $F^p/F^{p+1} \cong S^p(\mcf') \tensor S^{r-p}(\mcf'')$ for each $p$.
 
 (d) Prove the same statement as (c), with exterior powers instead of symmetric powers.
-    In particular, for finite ranks $n',n,n''$ with $n=n'+n''$, prove the induced isomorphism $$ \bigwedge^n\mcf\cong\bigwedge^{n'}\mcf'\tensor\bigwedge^{n''}\mcf''.
+In particular, for finite ranks $n',n,n''$ with $n=n'+n''$, prove the induced isomorphism
+$$
+\bigwedge^n\mcf\cong\bigwedge^{n'}\mcf'\tensor\bigwedge^{n''}\mcf''.
 $$
 
 (e) Let $f:X\to Y$ be a morphism of ringed spaces and $\mcf$ an $\OO_Y$-module.
-    Then $f^*$ commutes with all the tensor operations: for example, $f^*(S^n(\mcf))\cong S^n(f^*\mcf)$ naturally.
+Then $f^*$ commutes with all the tensor operations: for example, $f^*(S^n(\mcf))\cong S^n(f^*\mcf)$ naturally.
 :::
 
 ::: {.solution}
@@ -74,9 +76,9 @@ Thus the stalks of these sheaf operations are the corresponding operations on th
 
 The local ranks in part (a) are
 $$
-\boxed{\operatorname{rank}T^r(\mcf)=n^r,\quad
-\operatorname{rank}S^r(\mcf)=\binom{n+r-1}{n-1},\quad
-\operatorname{rank}\bigwedge^r\mcf=\binom nr}\qquad(n\ge1).
+\boxed{\rankT^r(\mcf)=n^r,\quad
+\rankS^r(\mcf)=\binom{n+r-1}{n-1},\quad
+\rank\bigwedge^r\mcf=\binom nr}\qquad(n\ge1).
 $$
 
 ::: pf-proof

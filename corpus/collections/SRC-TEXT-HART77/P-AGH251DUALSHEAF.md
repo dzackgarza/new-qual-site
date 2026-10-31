@@ -35,7 +35,7 @@ $$
 $$
 
 (d) (Projection formula.)
-    If $f:(X,\OO_X)\to(Y,\OO_Y)$ is a morphism of ringed spaces, if $\mcf$ is an $\OO_X$-module, and if $\mce$ is a locally free $\OO_Y$-module of finite rank, then there is a natural isomorphism $$ f_*\bigl(\mcf\otimes_{\OO_X}f^*\mce\bigr) \cong f_*\mcf\otimes_{\OO_Y}\mce.
+If $f:(X,\OO_X)\to(Y,\OO_Y)$ is a morphism of ringed spaces, if $\mcf$ is an $\OO_X$-module, and if $\mce$ is a locally free $\OO_Y$-module of finite rank, then there is a natural isomorphism $$ f_*\bigl(\mcf\otimes_{\OO_X}f^*\mce\bigr) \cong f_*\mcf\otimes_{\OO_Y}\mce.
 $$
 :::
 
@@ -48,7 +48,7 @@ Tensor products in parts (a)-(c) are over $\OO_X$.
 
 ::: {.pf-step #s1}
 
-For part (a), the evaluation morphism $\delta:\mce\dualof{\to(\dualof{\mce})}$ is an isomorphism.
+For part (a), the evaluation morphism $\delta:\mce\to\dualof{(\dualof{\mce})}$ is an isomorphism.
 
 ::: pf-proof
 
@@ -62,7 +62,7 @@ These maps are linear and compatible with restriction, so they define the morphi
 
 On a trivializing open set $U$, choose a frame $e_1,\ldots,e_r$ for $\mce\restrict_U$ and its coordinate functionals $\dualof{e_1},\ldots,\dualof{e_r}$.
 These functionals form a frame for $\dualof{\mce}\restrict_U$: a sheaf morphism $\mce\restrict_V\to\OO_V$ is determined uniquely by its values on the restricted $e_j$ for every $V\subseteq U$.
-For $h\dualof{\in(\dualof{\mce})}(V)$, the formula
+For $h\in\dualof{(\dualof{\mce})}(V)$, the formula
 $$
 h\longmapsto\sum_{j=1}^r h_V(\dualof{e_j}\restrict_V)e_j\restrict_V
 $$

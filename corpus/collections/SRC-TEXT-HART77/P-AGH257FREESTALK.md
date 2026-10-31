@@ -30,7 +30,7 @@ Let $X$ be a noetherian scheme, and let $\mcf$ be a coherent sheaf.
 (b) $\mcf$ is locally free if and only if its stalks $\mcf_x$ are free $\OO_x$-modules for all $x \in X$.
 
 (c) $\mcf$ is invertible, i.e. locally free of rank $1$, if and only if there is a coherent sheaf $\mcg$ such that $\mcf \tensor \mcg \cong \OO_X$.
-    This justifies the terminology: it means that $\mcf$ is an invertible element of the monoid of coherent sheaves under $\tensor$.
+This justifies the terminology: it means that $\mcf$ is an invertible element of the monoid of coherent sheaves under $\tensor$.
 :::
 
 ::: {.solution}

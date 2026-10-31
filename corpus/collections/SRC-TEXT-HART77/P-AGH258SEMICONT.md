@@ -77,7 +77,7 @@ $$
 k(y)^r\longrightarrow\mcf_y\otimes_{\OO_{X,y}}k(y).
 $$
 Thus $\varphi(y)\le r<n$ throughout $U$.
-It follows that $\{x:\varphi(x)<n\}$ is open, and its complement $\{x:\varphi(x)\ge n\}$ is closed.
+It follows that $\{x \st \varphi(x)<n\}$ is open, and its complement $\{x \st \varphi(x)\ge n\}$ is closed.
 
 :::
 
