@@ -37,11 +37,11 @@ Inductively suppose a countable CW complex $K_n$ and a map
 $$
 f_n:K_n\to X
 $$
-have been constructed inducing isomorphisms on $\pi_i$ for $i<n$ and a surjection on $\pi_n$. The group $\pi_n(K_n)$ is countable: every map $S^n\to K_n$ has compact image, hence lies in a finite subcomplex, and there are only countably many finite subcomplexes and countably many homotopy classes of maps into each. Thus the kernel of
+have been constructed inducing isomorphisms on $\pi_i$ for $i<n$ and a surjection on $\pi_n$. The group $\pi_n(K_n)$ is countable: every map $S^n\to K_n$ has compact image, hence lies in a finite subcomplex. There are only countably many finite subcomplexes, and each has countable homotopy groups by cellular approximation using a countable simplicial model. Thus the kernel of
 $$
 (f_n)_*:\pi_n(K_n)\to\pi_n(X)
 $$
-is countable. Attach one $(n+1)$-cell for each element of a countable generating set of this kernel. Then attach countably many further $(n+1)$-cells, if necessary, to represent the countable group $\pi_{n+1}(X)$ and make the next homotopy map surjective.
+is countable. Attach one $(n+1)$-cell for each element of a countable generating set of this kernel, extending the map to $X$ by a nullhomotopy. Then wedge on countably many $(n+1)$-spheres, mapped to representatives of $\pi_{n+1}(X)$, to make the next homotopy map surjective. These latter cells have constant attaching maps, so they preserve the isomorphisms already obtained in lower degrees.
 
 At every stage only countably many cells are added. Taking the union
 $$
