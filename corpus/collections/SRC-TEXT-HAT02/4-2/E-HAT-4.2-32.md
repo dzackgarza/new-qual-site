@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-4.2-32
 kind: problem
-title: "Fiber bundles $S^k \\to S^m \\to S^n$"
+title: "Fiber bundles $S^k \to S^m \to S^n$"
 classification:
   areas:
   - topology
@@ -21,32 +21,19 @@ Show that if $S^k \to S^m \to S^n$ is a fiber bundle, then $k = n-1$ and $m = 2n
 :::
 
 ::: {.solution}
-**Theorem.**  
-For a sphere bundle $S^k\to S^m\to S^n$, one has $k=n-1$ and $m=2n-1$.
+Suppose first that $n\ge2$. The fiber cannot be $S^0$: a two-sheeted cover of the simply connected sphere $S^n$ is disconnected, while $S^m$ is connected. Thus $k\ge1$. A local trivialization is a product of a $k$-manifold and an $n$-manifold, so $m=n+k$.
 
-*Proof by cohomological spectral sequence.*
+The bundle's homotopy exact sequence in degree $n$ contains
+$$
+\pi_n(S^m)\longrightarrow\pi_n(S^n)\longrightarrow\pi_{n-1}(S^k).
+$$
+Since $m>n$, the first group is zero and the second is $\ZZ$. Hence the last group is nonzero, which requires $n-1\ge k$.
 
-1. In the Serre spectral sequence for
-   $S^k\to S^m\overset{p}{\to} S^n$, with $\ZZ$-coefficients,
-   $$
-   E_2^{p,q}=H^p(S^n;H^q(S^k;\ZZ)).
-   $$
-2. The only nonzero entries are:
-   $$
-   E_2^{0,0}\cong E_2^{n,0}\cong E_2^{0,k}\cong E_2^{n,k}\cong\ZZ.
-   $$
-3. Since $S^m$ has cohomology only in degrees $0,m$, the class at $(n,0)$
-   must be killed in the spectral sequence.
-4. The only differential that can hit $(n,0)$ is
-   $$
-   d_{k+1}:E_{k+1}^{0,k}\to E_{k+1}^{k+1,0}.
-   $$
-   Hence $k+1=n$.
-5. Then the class at $(n,0)$ is killed and the class at $(n,k)$ survives to total degree
-   $$
-   n+k=2n-1,
-   $$
-   giving the top cohomology of $S^{2n-1}$.
+In degree $k+1$ the sequence contains
+$$
+\pi_{k+1}(S^n)\longrightarrow\pi_k(S^k)\longrightarrow\pi_k(S^m).
+$$
+Since $m>k$, the last group is zero and the middle group is $\ZZ$. Thus the first group is nonzero, which requires $k+1\ge n$. The two inequalities give $k=n-1$, and therefore $m=n+k=2n-1$.
 
-Therefore $k=n-1$ and $m=2n-1$. ∎
+For $n=1$, a connected fiber $S^k$ with $k\ge1$ would make $\pi_1(S^m)\to\pi_1(S^1)$ surjective. The dimension equation gives $m=k+1\ge2$, so this is impossible. Thus $k=0$ and $m=1$, as asserted.
 :::
