@@ -23,6 +23,11 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 1.A, Exercise 7.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: a finite generating set of $N$ gives a finite subgraph carrying every basis edge outside a maximal tree, and freeness of the deck action on the vertices then forces $N$ to have finite index.
 ---
 
 ::: {.problem}

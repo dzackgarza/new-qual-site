@@ -22,6 +22,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Lifted an arbitrary map to the contractible universal cover of K(G,1) using the trivial induced fundamental-group homomorphism.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the whole proof: $f_*$ is trivial by hypothesis, the lifting criterion lifts $f$ to the universal cover, that cover is contractible because a $K(G,1)$ is aspherical, and the lift's null-homotopy projects to one for $f$. The closing step now states the arbitrary-$f$ conclusion instead of only noting that $f$ was arbitrary.
 ---
 
 ::: {.problem}
@@ -128,7 +133,7 @@ is nullhomotopic.
 
 ::: pf-proof
 
-The map $f$ was arbitrary.
+The map $f$ was arbitrary, and step [](#s4){.pf-ref} homotopes it to a constant map, so every map from $X$ to $K(G,1)$ is nullhomotopic.
 
 :::
 

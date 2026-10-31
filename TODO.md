@@ -48,8 +48,11 @@ carried. Every proof is examined: ten line by line (`E-HAT-1.3-1`, `-2`, `-3`, `
 `-17`, `-20`, `-28`, `-30`) and the other twenty-three at the level of their step claims, openings and
 closing steps, which their review events say in those words.
 §1.A and §1.B: all 23 statements compared with pp. 83–95 and all agree with the book, including the
-bracketed notes; the proofs of `E-HAT-1.A-1`, `-2` and `-3` are read and the other 20 proofs are
-unread.
+bracketed notes. The proofs of `E-HAT-1.A-1`, `-2`, `-3`, `-4`, `-5`, `-6`, `-7`, `-8`, `-9`, `-12`,
+`-14` and of `E-HAT-1.B-2` are read; four of those were repaired (`E-HAT-1.A-8` rewritten from
+one-line fragments, and the closing steps of `E-HAT-1.A-9`, `-12` and `E-HAT-1.B-2` given their
+arguments). The remaining proofs of §1.A (`-10`, `-11`, `-13`) and of §1.B (`-1`, `-3`, `-4`, `-5`,
+`-6`, `-7`, `-8`, `-9`) are unread.
 Unread entirely: §2.1 onward, that is every chapter 2, 3 and 4 section.
 
 ## Fast local checks and complete CI acceptance

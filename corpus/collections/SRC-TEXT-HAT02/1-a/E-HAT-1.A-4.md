@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Extended the cycle with one edge deleted to a maximal tree so the omitted edge gives the prescribed basis loop.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof: removing the interior of an edge of the circle $Y$ leaves a tree, which extends to a maximal tree of $X$, so $Y$ represents one element of the free basis.
 ---
 
 ::: {.problem}

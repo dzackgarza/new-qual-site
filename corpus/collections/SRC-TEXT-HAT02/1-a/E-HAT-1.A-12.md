@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used the finite core of the H-cover together with Exercise 10 so the H-loops remain closed while the chosen x-loop remains open.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the extension of the lifted graph by Exercise 10 and the non-closure of the lifted loop for $x$; the closing step now states the three conclusions rather than naming steps.
 ---
 
 ::: {.problem}
@@ -164,7 +169,7 @@ $$
 
 ::: pf-proof
 
-Combine steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}.
+Step [](#s4){.pf-ref} extends the chosen lift of a graph for $H$ to a finite covering graph $Z$, so $q_*\pi_1(Z,\tilde r_0)$ has finite index in $F$ and contains $H$; step [](#s6){.pf-ref} shows that the loop representing $x$ lifts to a path of $Z$ with distinct endpoints, so $x$ is not in that subgroup.
 
 :::
 

@@ -179,7 +179,7 @@ and its universal cover is the product of a trivalent tree with a line.
 
 ::: pf-proof
 
-Combine steps [](#s1){.pf-ref} and [](#s5){.pf-ref}.
+Step [](#s1){.pf-ref} computes the graph-of-groups fundamental group from the single vertex and edge, giving the presentation $\langle a,b\mid bab^{-1}a^{-2}\rangle$, and step [](#s5){.pf-ref} identifies a simply connected space covering $K\Gamma$ with $T\times\RR$, where $T$ is the trivalent tree of the lifted vertex lines.
 
 :::
 

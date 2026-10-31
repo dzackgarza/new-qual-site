@@ -24,6 +24,25 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 1.A, Exercise 8.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.A, Exercise 8.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Rewrote the proof. Six of its steps carried one-line fragments as proofs
+    ("a free group is the fundamental group of a finite graph", "each
+    vertex/edge of Gamma has n preimages", "the correspondence theorem for the
+    quotient"), and three closing steps plus the qed only named earlier steps.
+    Every step now carries a complete-sentence argument, and the closing step
+    says why the count for F bounds the count for G.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Rewrote the proof: six one-line fragments and four back-reference steps became complete-sentence arguments, and the finiteness of the number of based covers is now justified by the finite data of a labelled graph together with a map to $\Gamma$.
 ---
 
 ::: {.problem}
@@ -32,125 +51,71 @@ Show that a finitely generated group has only a finite number of subgroups of a 
 :::
 
 ::: {.solution}
+Fix $n\ge1$. For a subgroup $H$ of a group, $[G:H]$ denotes its index.
 
 ::: pf
 
-::: pf-step
-
-Let $F$ be a free group of rank $r$, realized as $\pi_1$ of a wedge of $r$ circles (a finite graph $\Gamma$).
-
-::: pf-proof
-
-a free group is the fundamental group of a finite graph.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-A subgroup $H \le F$ of index $n$ corresponds to a connected $n$-fold covering space $\tilde\Gamma \to \Gamma$.
+::: {.pf-step #free-graph}
+A free group $F$ of finite rank $r$ is the fundamental group of a finite graph.
 
 ::: pf-proof
-
-covering space theory (subgroups of $\pi_1$ correspond to connected covers).
-
+Let $\Gamma$ be the wedge of $r$ circles with its natural graph structure, a finite graph with one vertex and $r$ edges.
+By Hatcher, *Algebraic Topology*, §1.2, Example 1.21, the fundamental group of a wedge of circles is free, with one generator per circle, so $\pi_1(\Gamma)\cong F$.
 :::
 
 :::
 
-::: {.pf-step #s3}
-
-An $n$-fold cover of a finite graph $\Gamma$ is itself a finite graph with $n \cdot \cardinality{V(\Gamma)}$ vertices and $n \cdot \cardinality{E(\Gamma)}$ edges.
+::: {.pf-step #index-covers}
+Subgroups of $F$ of index $n$ correspond to connected $n$-sheeted covering spaces of $\Gamma$ with a chosen point over the basepoint, up to isomorphism over $\Gamma$ preserving that point.
 
 ::: pf-proof
-
-each vertex/edge of $\Gamma$ has $n$ preimages.
-
+The classification of covering spaces (Hatcher §1.3, Theorem 1.38) makes based connected covers of $\Gamma$ correspond bijectively to subgroups of $\pi_1(\Gamma)$, and the number of sheets of a connected cover equals the index of the subgroup.
+A cover is $n$-sheeted exactly when that index is $n$.
 :::
 
 :::
 
-::: {.pf-step #s4}
-
-There are only finitely many based $n$-fold covering spaces of $\Gamma$ up to isomorphism of based covering spaces.
+::: {.pf-step #finite-data}
+There are only finitely many based connected $n$-sheeted covers of $\Gamma$ up to isomorphism over $\Gamma$.
 
 ::: pf-proof
-
-By step [](#s3){.pf-ref}, a based $n$-fold cover is determined up to based isomorphism by finite data: a graph with $n\cardinality{V(\Gamma)}$ vertices and $n\cardinality{E(\Gamma)}$ edges, the cellular map to $\Gamma$ (an assignment of a vertex of $\Gamma$ to each vertex and an oriented edge of $\Gamma$ to each edge), and a basepoint among the $n$ points of the fiber.
-Each of these finitely many choices ranges over a finite set.
-Subgroups of $F$ correspond bijectively to based connected covers up to based isomorphism, so this bounds the number of index-$n$ subgroups.
-
+Such a cover $\widetilde\Gamma$ is a graph with $n\abs{V(\Gamma)}$ vertices and $n\abs{E(\Gamma)}$ edges, because each vertex and each edge of $\Gamma$ has exactly $n$ preimages.
+A map of graphs from $\widetilde\Gamma$ to $\Gamma$ is determined by its values on the vertices and on the oriented edges, and each value is one of the finitely many vertices or oriented edges of $\Gamma$; the basepoint is one of the $n$ points over the basepoint of $\Gamma$.
+A based cover is determined up to isomorphism over $\Gamma$ by this finite list of choices, so there are only finitely many of them.
 :::
 
 :::
 
-::: {.pf-step #s5}
-
-Hence $F$ has only finitely many subgroups of index $n$.
+::: {.pf-step #free-case}
+A free group $F$ of finite rank has only finitely many subgroups of index $n$.
 
 ::: pf-proof
-
-Steps [](#s2){.pf-ref} and [](#s4){.pf-ref}.
-
+Fix a finite graph $\Gamma$ with $\pi_1(\Gamma)\cong F$, which exists by step [](#free-graph){.pf-ref}.
+By step [](#index-covers){.pf-ref} the subgroups of index $n$ are in bijection with the based connected $n$-sheeted covers of $\Gamma$ up to isomorphism, and by step [](#finite-data){.pf-ref} there are finitely many of those.
 :::
 
 :::
 
-::: pf-step
-
-Now let $G$ be a finitely generated group, written as $G = F/N$ for a free group $F$ (of finite rank) and normal subgroup $N$.
+::: {.pf-step #quotient}
+If $G=F/N$ with $F$ free, then subgroups of $G$ of index $n$ correspond to subgroups $H$ of $F$ with $N\le H$ and $[F:H]=n$.
 
 ::: pf-proof
-
-every finitely generated group is a quotient of a finitely generated free group.
-
+The correspondence theorem for the quotient map $F\to F/N$ bijects the subgroups of $G$ with the subgroups $H$ of $F$ containing $N$, sending $H$ to $H/N$.
+For such an $H$ the third isomorphism theorem gives $[F/N:H/N]=[F:H]$, so $H/N$ has index $n$ in $G$ exactly when $H$ has index $n$ in $F$.
 :::
 
 :::
 
-::: {.pf-step #s7}
-
-Subgroups of $G$ of index $n$ correspond bijectively to subgroups $H \le F$ with $N \le H$ and $[F : H] = n$.
+::: {.pf-step #conclusion}
+A finitely generated group has only finitely many subgroups of index $n$.
 
 ::: pf-proof
-
-the correspondence theorem for the quotient $F \to F/N = G$.
-
+Write $G=F/N$ with $F$ a free group of finite rank, which is possible because $G$ is finitely generated.
+By step [](#quotient){.pf-ref} the subgroups of $G$ of index $n$ are the groups $H/N$ with $H$ a subgroup of $F$ of index $n$ containing $N$, and distinct such $H$ give distinct $H/N$.
+By step [](#free-case){.pf-ref} there are only finitely many subgroups of $F$ of index $n$, so $G$ has only finitely many subgroups of index $n$ as well.
 :::
 
 :::
 
-::: {.pf-step #s8}
-
-These $H$ are among the (finitely many) index-$n$ subgroups of $F$.
-
-::: pf-proof
-
-Steps [](#s5){.pf-ref} and [](#s7){.pf-ref}.
-
 :::
-
-:::
-
-::: {.pf-step #s9}
-
-Hence $G$ has only finitely many subgroups of index $n$.
-
-::: pf-proof
-
-Steps [](#s7){.pf-ref} and [](#s8){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s5){.pf-ref} and [](#s9){.pf-ref}.
-
-:::
-
-:::
-
 :::
