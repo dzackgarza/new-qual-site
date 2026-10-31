@@ -5,7 +5,9 @@ kind: problem
 title: A non-Hausdorff quotient of the unit interval
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Quotient Spaces
+  - Hausdorff Spaces
 relations: []
 review: draft
 ---

@@ -5,7 +5,9 @@ kind: problem
 title: Separating a compact set from an exterior point
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Hausdorff Spaces
+  - Compactness
 relations: []
 review: draft
 ---

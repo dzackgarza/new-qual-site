@@ -5,7 +5,10 @@ kind: collection
 title: Point-set topology midterm with solutions
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Point-Set Topology
+  - Quotient Spaces
+  - Hausdorff Spaces
 relations: []
 review: draft
 completion: complete

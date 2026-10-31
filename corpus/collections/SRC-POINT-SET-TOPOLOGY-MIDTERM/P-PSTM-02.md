@@ -5,7 +5,9 @@ kind: problem
 title: Hausdorff spaces and the closed diagonal criterion
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Hausdorff Spaces
+  - Product Topology
 relations: []
 review: draft
 ---

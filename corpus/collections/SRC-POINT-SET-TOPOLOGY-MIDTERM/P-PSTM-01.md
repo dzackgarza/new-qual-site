@@ -5,15 +5,17 @@ kind: problem
 title: Continuity descended through a closed quotient map
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Quotient Spaces
+  - Continuity
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-Let $f \colon X \to Y$ be a continuous surjection, and suppose f is a closed map.
+Let $f \colon X \to Y$ be a continuous surjection, and suppose $f$ is a closed map.
 Let $g \colon Y \to Z$ be a function so that $g \circ f \colon X \to Z$ is continuous.
-Show that g is continuous.
+Show that $g$ is continuous.
 :::
 
 ::: {.solution}

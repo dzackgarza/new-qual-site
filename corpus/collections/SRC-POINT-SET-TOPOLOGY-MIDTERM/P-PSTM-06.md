@@ -5,7 +5,9 @@ kind: problem
 title: A quotient of a discrete space is discrete
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Quotient Spaces
+  - Point-Set Topology
 relations: []
 review: draft
 ---

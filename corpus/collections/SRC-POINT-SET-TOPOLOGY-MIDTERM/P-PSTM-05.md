@@ -5,7 +5,9 @@ kind: problem
 title: Connected base and connected fibers imply connected total space
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Connectedness
+  - Quotient Spaces
 relations: []
 review: draft
 ---
