@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that for each $n \in \ZZ$ there is a unique function $\varphi$ assigning an integer to each finite CW complex, such that (a) $\varphi(X) = \varphi(Y)$ if $X$ and $Y$ are homeomorphic, (b) $\varphi(X) = \varphi(A) + \varphi(X/A)$ if $A$ is a subcomplex of $X$, and (c) $\phi(S^0) = n$.
+Show that for each $n \in \ZZ$ there is a unique function $\varphi$ assigning an integer to each finite CW complex, such that (i) $\varphi(X) = \varphi(Y)$ if $X$ and $Y$ are homeomorphic, (ii) $\varphi(X) = \varphi(A) + \varphi(X/A)$ if $A$ is a subcomplex of $X$, and (iii) $\varphi(S^0) = n$.
 For such a function $\varphi$, show that $\varphi(X) = \varphi(Y)$ if $X \simeq Y$.
 :::
 
