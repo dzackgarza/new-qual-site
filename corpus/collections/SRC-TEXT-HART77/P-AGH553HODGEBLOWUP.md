@@ -18,7 +18,7 @@ audit:
   date: 2026-09-19
   note: >-
     Read Hartshorne V.5.3 as transcribed here, the retained Andrew Egbert
-    companion sketch, the blowup cohomology used in V.3.1, and the local
+    companion sketch, the blowup cohomology theorem cited in V.3.1, and the local
     affine charts of a point blowup. The retained sketch identifies the
     relative cotangent sheaf with Omega_E but then appeals to Hodge/Poincare
     language to handle the final H^2 map. The source hint admits a purely
@@ -99,7 +99,9 @@ and the higher direct images
 $$
 R^q\pi_*\OO_{\widetilde X}
 $$
-vanish for $q>0$ by the blowup-cohomology theorem V.3.4; the same input underlies [[P-AGH531PABLOWUP]].
+vanish for $q>0$ by the projective-birational regular-scheme theorem of
+Chatzistamatiou--Rülling, Theorem 1.1, as applied to a point blowup in
+[[P-AGH531PABLOWUP]].
 
 Because $\Omega_X$ is locally free, the projection formula gives
 $$
