@@ -24,87 +24,18 @@ If the added point, denoted $\infty$, has a neighborhood in $X^+$ that is a cone
 :::
 
 ::: {.solution}
+For a compact $K\subset X$, let $U_K=X^+\setminus K$, an open neighborhood of $\infty$. Excision of the point $\infty$, whose closure lies in the interior of $U_K$, gives
+$$
+H^n(X^+,U_K;G)\cong H^n(X,X\setminus K;G).
+$$
+As $K$ ranges over compact subsets of $X$, the neighborhoods $U_K$ range over all neighborhoods of $\infty$. Hence
+$$
+H_c^n(X;G)\cong\varinjlim_{\infty\in U}H^n(X^+,U;G).
+$$
 
-::: pf
-
-::: {.pf-step #s1}
-
-$H_c^n(X; G) = \varinjlim_K H^n(X, X - K; G)$, the direct limit over compact subsets $K \subseteq X$.
-
-::: pf-proof
-
-definition of compactly supported cohomology.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-$H^n(X^+, \infty; G) \cong H^n(X^+, X^+ - U; G)$ for any neighborhood $U$ of $\infty$ (by excision).
-
-::: pf-proof
-
-excision (removing the complement of a neighborhood of $\infty$).
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-The neighborhoods $U$ of $\infty$ correspond to complements of compact sets $K \subseteq X$ (since $X^+$ is the one-point compactification).
-
-::: pf-proof
-
-a neighborhood of $\infty$ is the complement of a compact set in $X$.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-Hence $H^n(X^+, \infty; G) \cong \varinjlim_K H^n(X^+, X^+ - K; G) \cong \varinjlim_K H^n(X, X - K; G)$.
-
-::: pf-proof
-
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} (the direct limit over neighborhoods of $\infty$ is the direct limit over compact $K$).
-
-:::
-
-:::
-
-::: pf-step
-
-The cone condition ensures the direct limit is well-behaved (the map from the direct limit to $H^n(X^+, \infty)$ is an isomorphism).
-
-::: pf-proof
-
-Step [](#s4){.pf-ref} and the hypothesis (the cone neighborhood of $\infty$ makes the direct limit stabilize).
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-Hence $H_c^n(X; G) \cong H^n(X^+, \infty; G)$.
-
-::: pf-proof
-
-Steps [](#s1){.pf-ref} and [](#s4){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s6){.pf-ref}.
-
-:::
-
-:::
-
+Inside the cone neighborhood from the hypothesis, every neighborhood of the cone point contains a smaller cone-shaped neighborhood that contracts to the cone point by radial scaling. These contractible neighborhoods are cofinal among the neighborhoods of $\infty$. For each such $U$, the inclusion $\{\infty\}\hookrightarrow U$ is a homotopy equivalence. The map of long exact sequences for the pairs $(X^+,U)$ and $(X^+,\{\infty\})$ therefore shows that restriction is an isomorphism
+$$
+H^n(X^+,U;G)\xrightarrow{\cong}H^n(X^+,\infty;G).
+$$
+These isomorphisms commute with restriction to smaller cone neighborhoods. Taking the direct limit gives the asserted isomorphism $H_c^n(X;G)\cong H^n(X^+,\infty;G)$.
 :::
