@@ -88,10 +88,10 @@ If $U$ is weakly open and $x$ lies in the interior of an edge, then some $d$-bal
 ::: pf-proof
 
 The intersection of $U$ with that closed edge is open in the interval topology.
-Choose $\epsilon>0$ smaller than both the distance from $x$ to the two endpoints and the interval radius contained in $U$.
+Choose $\varepsilon>0$ smaller than both the distance from $x$ to the two endpoints and the interval radius contained in $U$.
 Then
 $$
-B_d(x,\epsilon)
+B_d(x,\varepsilon)
 $$
 stays inside that edge and lies in $U$.
 
@@ -110,17 +110,17 @@ $$
 e_1,\dots,e_r
 $$
 are incident to $v$.
-For each $e_i$, weak openness gives a number $\epsilon_i>0$ such that the initial segment of $e_i$ of length $\epsilon_i$ from $v$ lies in $U$.
+For each $e_i$, weak openness gives a number $\varepsilon_i>0$ such that the initial segment of $e_i$ of length $\varepsilon_i$ from $v$ lies in $U$.
 If $r>0$, set
 $$
-\epsilon=\min\{1/2,\epsilon_1,\dots,\epsilon_r\}>0.
+\varepsilon=\min\{1/2,\varepsilon_1,\dots,\varepsilon_r\}>0.
 $$
-Any point at $d$-distance less than $\epsilon$ from $v$ must lie on one of these incident edge segments, hence lies in $U$.
+Any point at $d$-distance less than $\varepsilon$ from $v$ must lie on one of these incident edge segments, hence lies in $U$.
 If $v$ is isolated, then
 $$
 B_d(v,1/2)=\{v\}\subseteq U.
 $$
-Thus $B_d(v,\epsilon)\subseteq U$ in all cases.
+Thus $B_d(v,\varepsilon)\subseteq U$ in all cases.
 
 :::
 

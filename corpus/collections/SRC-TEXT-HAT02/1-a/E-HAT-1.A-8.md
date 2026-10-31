@@ -16,6 +16,10 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: solution-reviewed
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: Counted based covers with their maps to the rose, which is what subgroups correspond to, instead of bare graphs.
 ---
 
 ::: {.problem}
@@ -65,11 +69,13 @@ each vertex/edge of $\Gamma$ has $n$ preimages.
 
 ::: {.pf-step #s4}
 
-There are only finitely many such covering graphs (up to isomorphism), since there are finitely many graphs with a fixed finite number of vertices and edges.
+There are only finitely many based $n$-fold covering spaces of $\Gamma$ up to isomorphism of based covering spaces.
 
 ::: pf-proof
 
-Step [](#s3){.pf-ref} (the number of vertices and edges is fixed, so only finitely many combinatorial types exist).
+By step [](#s3){.pf-ref}, a based $n$-fold cover is determined up to based isomorphism by finite data: a graph with $n\cardinality{V(\Gamma)}$ vertices and $n\cardinality{E(\Gamma)}$ edges, the cellular map to $\Gamma$ (an assignment of a vertex of $\Gamma$ to each vertex and an oriented edge of $\Gamma$ to each edge), and a basepoint among the $n$ points of the fiber.
+Each of these finitely many choices ranges over a finite set.
+Subgroups of $F$ correspond bijectively to based connected covers up to based isomorphism, so this bounds the number of index-$n$ subgroups.
 
 :::
 
