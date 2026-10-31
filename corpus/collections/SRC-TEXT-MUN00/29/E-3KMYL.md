@@ -61,7 +61,7 @@ Furthermore, $x_\beta \in V_\beta = \pi_\beta(V) \subseteq \pi_\beta(C) = C_\bet
 :::
 
 ::: pf-step
-Since $x_\beta$ was arbitrary, each space $X_\beta$ is locally compact.
+For any $z\in X_\beta$, replace the $\beta$-coordinate of $\mathbf{x}$ by $z$ and repeat the argument. Thus every point of $X_\beta$ has a compact neighborhood, and $X_\beta$ is locally compact.
 :::
 
 ::: pf-step
