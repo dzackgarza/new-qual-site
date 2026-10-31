@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-4.K-1
 kind: problem
-title: Mayer--Vietoris for CW subcomplexes
+title: Gluing weak equivalences across CW subcomplex covers
 classification:
   areas:
   - topology
@@ -30,46 +30,11 @@ Show that Corollary 4K.2 remains valid when $X$ and $Y$ are CW complexes and the
 :::
 
 ::: {.solution}
-Let
+Let $f:X\to Y$ carry each subcomplex $U_i$ into $V_i$, and suppose that its restriction
 $$
-f:X\to Y
+f_J:\bigcap_{j\in J}U_j\longrightarrow\bigcap_{j\in J}V_j
 $$
-be the map in Corollary 4K.2, and suppose the covering families $\{U_i\}$ of $X$ and $\{V_i\}$ of $Y$ consist of CW subcomplexes, with
-$$
-f(U_i)\subset V_i,
-$$
-and with the required weak equivalences on all finite intersections.
+is a weak homotopy equivalence for every nonempty finite index set $J$. These intersections are CW subcomplexes. Whitehead's theorem therefore makes each $f_J$ a homotopy equivalence.
 
-Replace each subcomplex by a standard open regular neighborhood in a sufficiently fine barycentric subdivision. Thus for every finite set $J$ of indices we can choose open sets
-$$
-N(U_J)\supset U_J,
-\qquad
-N(V_J)\supset V_J,
-\qquad
-U_J=\bigcap_{j\in J}U_j,\quad V_J=\bigcap_{j\in J}V_j,
-$$
-such that
-$$
-N(U_J)\simeq U_J,
-\qquad
-N(V_J)\simeq V_J,
-$$
-and the choices are compatible with finite intersections. After shrinking the target neighborhoods if necessary, continuity of $f$ and the subcomplex condition give
-$$
-f(N(U_i))\subset N(V_i).
-$$
-
-For each finite $J$, the commutative square
-$$
-\begin{array}{ccc}
-U_J&\longrightarrow&V_J\\
-\downarrow&&\downarrow\\
-N(U_J)&\longrightarrow&N(V_J)
-\end{array}
-$$
-has vertical homotopy equivalences. Since the top map is a weak homotopy equivalence by hypothesis, so is the bottom map. Hence the open covers $\{N(U_i)\}$, $\{N(V_i)\}$ satisfy the hypotheses of Corollary 4K.2. It follows that
-$$
-\boxed{f:X\to Y\text{ is a weak homotopy equivalence}.}
-$$
-Thus Corollary 4K.2 remains valid when the covering sets are subcomplexes rather than open sets.
+Form the complexes of spaces associated to the two intersection diagrams, as in Section 4.G. The maps $f_J$ give a map between their realizations. Proposition 4G.1 says that this map is a homotopy equivalence because every map on a vertex space is one. By the subcomplex-cover version of Proposition 4G.2 (Exercise 4 of Section 4.G), each realization maps by a homotopy equivalence to the union of its subcomplexes, namely $X$ or $Y$. These maps commute with $f$. Hence $f$ is a homotopy equivalence, and in particular the weak homotopy equivalence asserted by Corollary 4K.2.
 :::
