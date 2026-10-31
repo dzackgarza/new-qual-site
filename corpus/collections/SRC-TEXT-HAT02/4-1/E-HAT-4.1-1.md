@@ -22,34 +22,13 @@ Verify the formula $(f + g) +' (h + k) = (f +' h) + (g +' k)$, and deduce that $
 :::
 
 ::: {.solution}
-**Theorem.**\
-For $n\ge1$, any coordinate choice for the concatenation sum on $\pi_n(X,x_0)$ is equivalent and gives an abelian group law.
+Let $n\ge2$ and use the first coordinate for $+$ and the second for $+'$. Dividing the first two coordinates into four half-size squares shows directly, on each square, that
+$$
+(f+g)+'(h+k)=(f+'h)+(g+'k).
+$$
+Both sides use $f,g,h,k$ on the same four regions and send their separating faces to $x_0$.
 
-*Proof.*
+Let $0$ be the constant map. It is a two-sided identity for either sum up to homotopy relative to $\partial I^n$, by shrinking the half-cube on which the constant map is used. Put $g=h=0$ in the interchange equality. Its left side is homotopic to $f+'k$, and its right side is homotopic to $f+k$. Hence the two sums agree on $\pi_n(X,x_0)$.
 
-1. Let $q_1: (I^n,\partial I^n)\to (I^n\vee I^n,\*)$ be the standard pinch map collapsing $\{(x_1,\dots,x_n):x_1=1/2\}$ to the wedge point, so $f+g=(f\vee g)\circ q_1$.
-
-2. Let $q_j$ be the analogous pinch map using coordinate $x_j$; then $f +' g=(f\vee g)\circ q_j$.
-
-3. The coordinate permutation $\sigma:(I^n,\partial I^n)\to(I^n,\partial I^n)$ that sends $x_1\leftrightarrow x_j$ and is identity on the boundary is homotopic rel $\partial I^n$ to the identity.
-   Therefore $q_j\simeq q_1\circ \sigma$ rel boundary.
-
-4. Hence
-   $$
-   f +' g \simeq (f\vee g)\circ q_1\circ \sigma.
-   $$
-   Since $\sigma$ is homotopic to $\mathrm{id}$, this gives $f +' g \simeq f+g$.
-
-5. Expanding the definitions gives
-   $$
-   (f + g) +' (h + k)=((f\vee g)+(h\vee k))\circ q_j \simeq
-   (f +' h)+(g +' k).
-   $$
-
-6. Taking $h=k$ and swapping coordinates gives $f +' k \simeq f+k$, so the operations are the same in $\pi_n$.
-
-7. Swapping the order of the two summands in $q_j$ gives a homotopy to the sum with reversed order, so $g +' h \simeq h + g$.
-
-Thus the addition is independent of coordinate choice and is abelian.
-∎
+Now put $f=k=0$. The left side is homotopic to $g+'h$, while the right side is homotopic to $h+g$. Since the two sums agree on homotopy classes, $[g]+[h]=[h]+[g]$. Thus $\pi_n(X,x_0)$ is abelian for $n\ge2$.
 :::
