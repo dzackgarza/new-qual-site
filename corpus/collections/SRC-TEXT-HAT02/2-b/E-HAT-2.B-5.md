@@ -23,139 +23,15 @@ Show that the inclusion $S^{n-k-1} \hookrightarrow S^n - S$ induces an isomorphi
 :::
 
 ::: {.solution}
-
-::: pf
-
-::: {.pf-step #s1}
-
-Homology of the sphere complement $S^n \setminus S$:
-
-::: pf-proof
-
-::: pf-step
-
-By Alexander Duality (or the Mayer–Vietoris sphere-complement induction in Hatcher §2.B):
-For any embedded sphere $S \cong S^k \subset S^n$ ($0 \le k < n$), the reduced homology of the complement is:
+Put $r=n-k-1$. Alexander duality for the embedded sphere $S\cong S^k$ gives
 $$
-\widetilde{H}_i(S^n \setminus S) \cong \begin{cases} \ZZ & \text{if } i = n - k - 1, \\ 0 & \text{otherwise.} \end{cases}
+\widetilde H_i(S^n\setminus S)\cong\widetilde H^{\,n-i-1}(S)
+\cong
+\begin{cases}\ZZ,&i=r,\\0,&i\ne r.\end{cases}
 $$
-Thus the homology of $S^n \setminus S$ matches the homology of the sphere $S^{n-k-1}$ in all dimensions.
+The source sphere $S^r$ has the same reduced homology groups. It remains to check that its generator maps to a generator in degree $r$.
 
-::: pf-proof
+Inside the coordinate disk $D^n$, the normal disk $D^{n-k}$ meets $S\cap D^n=D^k$ at its center and nowhere else. The boundary of the normal disk is the sphere in the statement. Under Alexander duality, evaluation of the image of its oriented fundamental class on the fundamental class of $S$ is the intersection number of this normal disk with $S$. Excision restricts that intersection calculation to the coordinate disk, where the two coordinate disks meet in one transverse point with local intersection number $+1$ or $-1$. Thus the image has Alexander-duality coordinate $\pm1$ and generates $\widetilde H_r(S^n\setminus S)$.
 
-Alexander Duality $\widetilde{H}_i(S^n \setminus S) \cong \widetilde{H}^{n-1-i}(S^k)$.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Local retraction in the coordinate ball $D^n$:
-
-::: pf-proof
-
-::: pf-step
-
-In the coordinate disk $D^n \cong D^k \times D^{n-k}$, the intersection with $S$ is $D^k \times \{0\}$.
-The complement inside $D^n$ is:
-$$
-D^n \setminus (D^k \times \{0\}) \cong D^k \times (D^{n-k} \setminus \{0\}).
-$$
-
-::: pf-proof
-
-Cartesian product representation.
-
-:::
-
-:::
-
-::: pf-step
-
-Since $D^k$ is contractible and $D^{n-k} \setminus \{0\}$ deformation retracts radially onto its boundary sphere $\partial D^{n-k} = S^{n-k-1}$:
-The inclusion $j: S^{n-k-1} \hookrightarrow D^n \setminus D^k$ is a homotopy equivalence.
-
-::: pf-proof
-
-radial deformation retraction along the last $n-k$ coordinates.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Induced isomorphism on homology:
-
-::: pf-proof
-
-::: pf-step
-
-Decompose the embedded sphere $S$ into the upper disk $D_1^k = S \cap D^n$ and the lower disk $D_2^k = \overline{S \setminus D_1^k}$, with intersection $\partial D_1^k = S^{k-1}$.
-
-::: pf-proof
-
-decomposition of $S^k$ into two hemispheres.
-
-:::
-
-:::
-
-::: pf-step
-
-The Mayer–Vietoris sequence for $S^n \setminus S = (S^n \setminus D_1^k) \cap (S^n \setminus D_2^k)$ shows that the inclusion $D^n \setminus D^k \hookrightarrow S^n \setminus S$ induces an isomorphism on reduced homology in dimension $n - k - 1$.
-
-::: pf-proof
-
-Mayer–Vietoris sequence with contractible disk complements.
-
-:::
-
-:::
-
-::: pf-step
-
-Factoring the inclusion $i: S^{n-k-1} \hookrightarrow S^n \setminus S$ as:
-$$
-S^{n-k-1} \xrightarrow{j} D^n \setminus D^k \hookrightarrow S^n \setminus S,
-$$
-the map $i_*$ is the composite of the homotopy equivalence $j_*$ and the Mayer–Vietoris isomorphism.
-Therefore $i_*: \widetilde{H}_i(S^{n-k-1}) \xrightarrow{\cong} \widetilde{H}_i(S^n \setminus S)$ is an isomorphism for all $i$.
-
-::: pf-proof
-
-composition of homology isomorphisms.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-Conclusion:
-The inclusion $S^{n-k-1} \hookrightarrow S^n \setminus S$ induces an isomorphism on all homology groups. Q.E.D.
-
-::: pf-proof
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
-
-:::
-
-:::
-
-:::
-
+For $r=0$, the oriented fundamental class of $S^0$ is the difference of its two points, so the same local intersection calculation applies in reduced $H_0$. Hence the inclusion is an isomorphism on reduced homology in every degree, and also on ordinary $H_0$.
 :::
