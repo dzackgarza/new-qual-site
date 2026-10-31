@@ -22,155 +22,16 @@ Using cup products, show that every map $S^{k+\ell} \to S^k \times S^\ell$ induc
 :::
 
 ::: {.solution}
-
-::: pf
-
-::: {.pf-step #s1}
-
-Cohomology ring of the product $S^k \times S^\ell$:
-
-::: pf-proof
-
-::: pf-step
-
-By the Künneth Theorem for cohomology with $\ZZ$ coefficients, the cohomology groups of $S^k \times S^\ell$ (with $k, \ell > 0$) are:
-- $H^0(S^k \times S^\ell) \cong \ZZ$,
-- $H^k(S^k \times S^\ell) \cong \ZZ \langle \alpha \rangle$,
-- $H^\ell(S^k \times S^\ell) \cong \ZZ \langle \beta \rangle$,
-- $H^{k+\ell}(S^k \times S^\ell) \cong \ZZ \langle \alpha \smile \beta \rangle$.
-
-::: pf-proof
-
-Künneth Theorem for product spaces.
-
-:::
-
-:::
-
-::: pf-step
-
-In particular, the generator of top cohomology is the cup product $\gamma = \alpha \smile \beta \in H^{k+\ell}(S^k \times S^\ell)$.
-
-::: pf-proof
-
-cross product and cup product isomorphism in top degree.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Induced maps on cohomology:
-
-::: pf-proof
-
-::: pf-step
-
-The cohomology of the sphere $S^{k+\ell}$ vanishes in all intermediate dimensions:
+Let $\alpha\in H^k(S^k;\ZZ)$ and $\beta\in H^\ell(S^\ell;\ZZ)$ be generators. Their pullbacks $a$ and $b$ under the two projections from $S^k\times S^\ell$ have product
 $$
-H^i(S^{k+\ell}) = 0 \quad \text{for all } 0 < i < k + \ell.
+a\smile b\in H^{k+\ell}(S^k\times S^\ell;\ZZ)
 $$
-Because $k > 0$ and $\ell > 0$, we have $0 < k < k + \ell$ and $0 < \ell < k + \ell$, so $H^k(S^{k+\ell}) = 0$ and $H^\ell(S^{k+\ell}) = 0$.
+equal to a generator, by the cohomology cross-product calculation. This remains true when $k=\ell$, when the two classes lie in the same cohomological degree.
 
-::: pf-proof
-
-cellular cohomology of spheres.
-
-:::
-
-:::
-
-::: pf-step
-
-Therefore the induced homomorphisms in dimensions $k$ and $\ell$ must be zero:
+For any map $f:S^{k+\ell}\to S^k\times S^\ell$, both $H^k(S^{k+\ell};\ZZ)$ and $H^\ell(S^{k+\ell};\ZZ)$ vanish because $k,\ell>0$. Thus $f^*a=f^*b=0$, and naturality of the cup product gives $f^*(a\smile b)=0$. Evaluation on the fundamental class satisfies
 $$
-f^*(\alpha) = 0 \in H^k(S^{k+\ell}), \qquad f^*(\beta) = 0 \in H^\ell(S^{k+\ell}).
+\langle a\smile b,f_*[S^{k+\ell}]\rangle
+=\langle f^*(a\smile b),[S^{k+\ell}]\rangle=0.
 $$
-
-::: pf-proof
-
-unique homomorphism into the zero group.
-
-:::
-
-:::
-
-::: pf-step
-
-Because $f^*: H^*(S^k \times S^\ell) \to H^*(S^{k+\ell})$ is a ring homomorphism respecting cup products:
-$$
-f^*(\alpha \smile \beta) = f^*(\alpha) \smile f^*(\beta) = 0 \smile 0 = 0 \in H^{k+\ell}(S^{k+\ell}).
-$$
-Thus $f^*: H^{k+\ell}(S^k \times S^\ell) \to H^{k+\ell}(S^{k+\ell})$ is the trivial (zero) homomorphism.
-
-::: pf-proof
-
-ring homomorphism property of pullback on cohomology.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Dualization to homology:
-
-::: pf-proof
-
-::: pf-step
-
-By the Universal Coefficient Theorem for Cohomology, for any space $X$ with free finitely generated homology, $H^n(X) \cong \operatorname{Hom}(H_n(X), \ZZ)$.
-Under this canonical duality, the induced cohomology map $f^*$ is the transpose/dual of the induced homology map $f_*$:
-$$
-f^* = (f_*)^t: \operatorname{Hom}(H_{k+\ell}(S^k \times S^\ell), \ZZ) \to \operatorname{Hom}(H_{k+\ell}(S^{k+\ell}), \ZZ).
-$$
-
-::: pf-proof
-
-Universal Coefficient Theorem naturality.
-
-:::
-
-:::
-
-::: pf-step
-
-Since $f^* = 0$, its dual map on homology $f_*: H_{k+\ell}(S^{k+\ell}) \to H_{k+\ell}(S^k \times S^\ell)$ is also the zero homomorphism.
-
-::: pf-proof
-
-dual of the zero map on free abelian groups is zero.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-Conclusion:
-Every continuous map $S^{k+\ell} \to S^k \times S^\ell$ induces the trivial homomorphism on top homology. Q.E.D.
-
-::: pf-proof
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
-
-:::
-
-:::
-
-:::
-
+The pairing of the top cohomology generator with the top homology generator of $S^k\times S^\ell$ is $\pm1$. Hence $f_*[S^{k+\ell}]=0$, proving that the induced top-homology map is zero.
 :::
