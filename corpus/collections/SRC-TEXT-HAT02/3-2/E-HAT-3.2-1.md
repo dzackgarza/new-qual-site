@@ -29,6 +29,8 @@ Assuming as known the cup product structure on the torus $S^1 \times S^1$, compu
 :::
 
 ::: {.solution}
+For $g=0$, $M_0=S^2$ and its cohomology ring has only the unit in degree $0$ and the orientation class in degree $2$, whose square is zero. Assume $g\ge1$ below.
+
 Choose the standard symplectic basis
 $$
 a_1,b_1,\dots,a_g,b_g\in H^1(M_g;\ZZ)
@@ -39,7 +41,7 @@ Let
 $$
 q:M_g\longrightarrow T_1\vee\cdots\vee T_g
 $$
-be the quotient map obtained by collapsing the separating circles between the $g$ handles. On $H^1$, $q^*$ identifies the two degree-one generators of $H^1(T_i)$ with $a_i,b_i$. If $u_i\in H^2(T_i)$ is the orientation class of the $i$th torus, then $q^*(u_i)=u$: restricting $q$ to the $i$th handle and collapsing its boundary has degree $1$ onto $T_i$.
+be the quotient map obtained by collapsing the genus-zero subsurface that joins the $g$ punctured tori. Each boundary circle of a punctured torus is then collapsed to the common wedge point. On $H^1$, $q^*$ identifies the two degree-one generators of $H^1(T_i)$ with $a_i,b_i$. If $u_i\in H^2(T_i)$ is the orientation class of the $i$th torus, then $q^*(u_i)=u$: composing $q$ with the retraction of the wedge onto $T_i$ has degree $1$.
 
 On each torus, with the usual orientation,
 $$
