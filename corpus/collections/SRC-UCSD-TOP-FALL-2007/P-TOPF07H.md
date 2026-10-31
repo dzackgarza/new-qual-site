@@ -12,6 +12,16 @@ classification:
   - Poincaré Duality
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: chatgpt
+  date: 2026-10-31
+  note: >-
+    Justin sheet 13, Problem 4 asks the same odd-dimensional Euler
+    characteristic question but says compact rather than closed.
+    The interval is a compact oriented one-manifold with boundary
+    and Euler characteristic one, so the closed hypothesis on this
+    card is necessary.
 ---
 
 ::: {.problem}
