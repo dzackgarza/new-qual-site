@@ -23,10 +23,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-corrected
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The card wrote `\nu_i` for the first element of each commutator; the book prints
+    `[v_i, w_i]` of elements `v_i, w_i` in F, and the neighbouring letter is `w`, so the
+    Greek letter is a transcription slip. Compare the statement with Hatcher §3.3
+    exercise 12.
 ---
 
 ::: {.problem}
-As an algebraic application of the preceding problem, show that in a free group $F$ with basis $x_1, \ldots, x_{2k}$, the product of commutators $[x_1, x_2] \cdots [x_{2k-1}, x_{2k}]$ is not equal to a product of fewer than $k$ commutators $[\nu_i, w_i]$ of elements $\nu_i, w_i \in F$.
+As an algebraic application of the preceding problem, show that in a free group $F$ with basis $x_1, \ldots, x_{2k}$, the product of commutators $[x_1, x_2] \cdots [x_{2k-1}, x_{2k}]$ is not equal to a product of fewer than $k$ commutators $[v_i, w_i]$ of elements $v_i, w_i \in F$.
 :::
 
 ::: {.solution}
