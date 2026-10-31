@@ -90,13 +90,16 @@ def finding_for_text(path: Path, text: str) -> Finding | None:
 
 
 def iter_card_paths(root: Path) -> Iterable[Path]:
-    yield from sorted((root / "corpus" / "collections").rglob("*.md"))
+    collections = root / "corpus" / "collections"
+    if not collections.is_dir():
+        raise FileNotFoundError(f"collections directory missing: {collections}")
+    yield from sorted(collections.rglob("*.md"))
 
 
 def scan(root: Path) -> list[Finding]:
     findings: list[Finding] = []
     for path in iter_card_paths(root):
-        item = finding_for_text(path.relative_to(root), path.read_text(errors="replace"))
+        item = finding_for_text(path.relative_to(root), path.read_text())
         if item is not None:
             findings.append(item)
     return findings
