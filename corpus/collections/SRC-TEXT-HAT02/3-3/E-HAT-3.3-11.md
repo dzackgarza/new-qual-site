@@ -132,7 +132,7 @@ connected sum decomposition of surfaces.
 
 ::: pf-step
 
-Define $f: M_g \to M_h$ by collapsing the entire $M_{g-h}$ summand (the closure of one component of $M_g \setminus c$) to a single point $p \in M_h$, and mapping $M_h \setminus \operatorname{int}(D^2)$ homeomorphically onto $M_h \setminus \{p\}$.
+Collapse the punctured $M_{g-h}$ summand, including the separating circle $c$, to one point. The resulting quotient is the punctured $M_h$ summand with its boundary circle collapsed to a point, which is homeomorphic to $M_h$. Let $f:M_g\to M_h$ be this quotient map, choosing the homeomorphism to preserve orientation on the interior of the punctured $M_h$ summand.
 
 ::: pf-proof
 
@@ -144,7 +144,7 @@ pinch map collapsing one connected summand to a point.
 
 ::: pf-step
 
-Any point $y \in M_h \setminus \{p\}$ is a regular value with $f^{-1}(y) = \{x\}$ consisting of a single point where $f$ is a local orientation-preserving homeomorphism.
+Any point $y \in M_h \setminus \{p\}$ has $f^{-1}(y) = \{x\}$ consisting of a single point where $f$ is a local orientation-preserving homeomorphism.
 Thus $\deg(f) = +1$.
 
 ::: pf-proof
