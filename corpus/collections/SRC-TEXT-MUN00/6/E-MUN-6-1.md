@@ -37,7 +37,7 @@ Show that none is bijective.
 (b) How many injective maps
 
 $$
-f: \{1, \dots , 8 \} \longrightarrow \{1, \dots , 1 0 \}
+f: \{1, \dots , 8 \} \longrightarrow \{1, \dots , 10 \}
 $$
 
 are there?
