@@ -152,3 +152,7 @@ Step [](#s1-5){.pf-ref} is the required conclusion.
 :::
 
 :::
+
+::: remark
+The 2016 printing of this problem allows any integer $n\ge0$. For $n=0$ the hypothesis is $\abs{f}\le M$, and the same Cauchy-estimate argument gives that $f$ is constant.
+:::

@@ -700,29 +700,29 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-UNSORTED-PRELIM
   - [x] SRC-UNSORTED-REAL-ANALYSIS
   - [x] SRC-UNSORTED-TOPOLOGY
-  - [ ] SRC-UO-TOP-FALL-2019
-  - [ ] SRC-UT-M392C-CONTACT-TOPOLOGY-FALL-2017
-  - [ ] SRC-UW-ALG-2005
-  - [ ] SRC-UW-ALG-2006
-  - [ ] SRC-UW-ALG-2007
-  - [ ] SRC-UW-ALG-2008
-  - [ ] SRC-UW-ALG-2009
-  - [ ] SRC-UW-ALG-2010
-  - [ ] SRC-UW-ALG-2011
-  - [ ] SRC-UW-ALG-2012
-  - [ ] SRC-UW-ALG-2013
-  - [ ] SRC-UW-ALG-2014
-  - [ ] SRC-UW-ALG-2015
-  - [ ] SRC-UW-ALG-2016
-  - [ ] SRC-UW-ALG-2017
-  - [ ] SRC-UW-ALG-2018
-  - [ ] SRC-UW-ALGEBRA-2005-2018
-  - [ ] SRC-VAKIL-RISINGSEA
-  - [ ] SRC-WESLEYAN-ANALYSIS-2003-2007
-  - [ ] SRC-WESLEYAN-ANALYSIS-2008-2013
-  - [ ] SRC-WESLEYAN-ANALYSIS-2014-2016
-  - [ ] SRC-WESLEYAN-TOPOLOGY-2003-2005
-  - [ ] SRC-WESLEYAN-TOPOLOGY-2006-2014
+  - [x] SRC-UO-TOP-FALL-2019
+  - [x] SRC-UT-M392C-CONTACT-TOPOLOGY-FALL-2017
+  - [x] SRC-UW-ALG-2005
+  - [x] SRC-UW-ALG-2006
+  - [x] SRC-UW-ALG-2007
+  - [x] SRC-UW-ALG-2008
+  - [x] SRC-UW-ALG-2009
+  - [x] SRC-UW-ALG-2010
+  - [x] SRC-UW-ALG-2011
+  - [x] SRC-UW-ALG-2012
+  - [x] SRC-UW-ALG-2013
+  - [x] SRC-UW-ALG-2014
+  - [x] SRC-UW-ALG-2015
+  - [x] SRC-UW-ALG-2016
+  - [x] SRC-UW-ALG-2017
+  - [x] SRC-UW-ALG-2018
+  - [x] SRC-UW-ALGEBRA-2005-2018
+  - [x] SRC-VAKIL-RISINGSEA
+  - [x] SRC-WESLEYAN-ANALYSIS-2003-2007
+  - [x] SRC-WESLEYAN-ANALYSIS-2008-2013
+  - [x] SRC-WESLEYAN-ANALYSIS-2014-2016
+  - [x] SRC-WESLEYAN-TOPOLOGY-2003-2005
+  - [x] SRC-WESLEYAN-TOPOLOGY-2006-2014
   Wiki pages:
   - [x] wiki/algebra/counterexamples.md
   - [x] wiki/algebra/fields/extensions.md
@@ -1781,6 +1781,14 @@ mathematical correction under its own node, not under copy policy.
     E-FFARP, E-4CL6A, E-SA3HI; P-PEND3 / E-XHB3F, E-CGVE4, E-BTA5L; E-IECHS / P-GAA3C.
     Elsewhere: P-G7GOP / P-XCE4G. **Acceptance:** each pair is merged or both cards are kept
     after reading.
+  - **`ad-utct-4-53-open-book-steps`**. **Needs:** none. In P-UTCT-4-53, steps 20-23 (the
+    framed-link description of each open book's plane field) are only sketched. **Acceptance:**
+    each step carries a complete proof.
+  - **`ad-vakil-risingsea-source`**. **Needs:** none. SRC-VAKIL-RISINGSEA has as its only
+    provenance the 216 blog page, not the book, and there is no extraction. The statements,
+    the exercise numbers 1.3.H, 1.3.K, 1.3.L, 1.3.P and 1.3.Q, and the source order are
+    unchecked. **Acceptance:** the book is the provenance, and the five cards are read against
+    its extraction.
   - **`ad-bkf93-12-contour`**. **Needs:** none. P-BKF93-12: the retained Fall93.pdf prints
     "../Fig/Pr/Fa93-12.ps not found" where the curve $\gamma$ should be, so the statement has no
     contour and the solution answers in terms of winding numbers. Find another copy of the Fall
