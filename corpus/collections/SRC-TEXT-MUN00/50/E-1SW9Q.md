@@ -183,7 +183,7 @@ Distinct points in the same sheet $A \cup B_c$ are separated because $A \cup B_c
 ::: pf-step
 
 Points $p \in B_{c_1}$ and $q \in B_{c_2}$ with $c_1 \neq c_2$:
-        - If $x(p) < 0$ or $x(q) < 0$, disjoint type (ii) neighborhoods separate them.
+        - If $x(p) < 0$ or $x(q) < 0$, a type (ii) neighborhood of that point lies in its own sheet and is disjoint from a neighborhood of the other point chosen in its different sheet (type (ii) or type (iii) as appropriate).
         - If $p = (0, y_1, c_1)$ and $q = (0, y_2, c_2)$, choose open intervals $I_1 = (y_1 - 1, y_1 + 1) = (a_1, b_1)$ and $I_2 = (y_2 - 1, y_2 + 1) = (a_2, b_2)$.
         - Without loss of generality, assume $c_1 < c_2$. Choose $\varepsilon > 0$ such that $\varepsilon < \frac{c_2 - c_1}{b_1 - a_2}$ (if $b_1 > a_2$, or any $\varepsilon > 0$ otherwise).
         - Then for all $0 < x < \varepsilon$, $c_1 + b_1 x < c_2 + a_2 x$, which guarantees that the wedges $A_{c_1}(I_1, \varepsilon)$ and $A_{c_2}(I_2, \varepsilon)$ are disjoint.
