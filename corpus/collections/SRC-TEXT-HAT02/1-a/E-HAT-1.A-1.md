@@ -105,18 +105,14 @@ If $U$ is weakly open and $v$ is a vertex of $X$ lying in $U$, then some $d$-bal
 
 ::: pf-proof
 
-Only finitely many edges
-$$
-e_1,\dots,e_r
-$$
-are incident to $v$.
-For each $e_i$, weak openness gives a number $\varepsilon_i>0$ such that the initial segment of $e_i$ of length $\varepsilon_i$ from $v$ lies in $U$.
-If $r>0$, set
+Only finitely many edge ends are incident to $v$; a loop edge contributes two ends. Write $r$ for their number.
+For each incident end $i$, weak openness gives a number $\varepsilon_i>0$ such that the segment of length $\varepsilon_i$ from that end lies in $U$.
+If there are incident ends, set
 $$
 \varepsilon=\min\{1/2,\varepsilon_1,\dots,\varepsilon_r\}>0.
 $$
 Any point at $d$-distance less than $\varepsilon$ from $v$ must lie on one of these incident edge segments, hence lies in $U$.
-If $v$ is isolated, then
+If there are no incident ends, set $\varepsilon=1/2$; then
 $$
 B_d(v,1/2)=\{v\}\subseteq U.
 $$
