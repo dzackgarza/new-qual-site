@@ -34,3 +34,22 @@ $$
 $$
 is the desired bijective analytic map.
 :::
+
+::: {.remark title="Inverse direction"}
+A conformal map is a holomorphic map with nonzero
+derivative; a conformal equivalence is such a map
+with a holomorphic inverse. Let $\sqrt z$ be the
+branch with argument in $(0,\pi/2)$ for
+$\operatorname{Im}z>0$. The inverse of the
+displayed map, from the upper half-plane
+to the right half of the unit disk, is
+$$
+F(z)=i\,\frac{1-\sqrt z}{1+\sqrt z}.
+$$
+Indeed $-\sqrt z$ lies in the third quadrant,
+where it is the inverse branch of squaring
+used above, and
+$F=T^{-1}(-\sqrt z)$. Both factors have
+nonzero derivative on their domains, so
+$F$ is conformal.
+:::
