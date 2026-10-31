@@ -24,7 +24,7 @@ audit:
 
 ::: {.problem}
 Let $X$ be a scheme.
-For any point $x \in X$, define the **Zariski tangent space** $T_x$ to $X$ at $x$ to be the dual of the $k(x)$-vector space $\mfm_x / \mfm_x^2$.
+For any point $x \in X$, define the \dfn{Zariski tangent space} $T_x$ to $X$ at $x$ to be the dual of the $k(x)$-vector space $\mfm_x / \mfm_x^2$.
 
 Now assume that $X$ is a scheme over a field $k$, and let $k[\eps]/\eps^2$ be the ring of dual numbers over $k$.
 Show that to give a $k$-morphism $\Spec k[\eps]/\eps^2 \to X$ is equivalent to giving a point $x \in X$ rational over $k$, that is, with $k(x) = k$, together with an element of $T_x$.
@@ -35,7 +35,7 @@ Put
 $$
 R=k[\varepsilon]/(\varepsilon^2),
 \qquad
-S=\operatorname{Spec}R.
+S=\Spec R.
 $$
 
 ::: pf
@@ -74,13 +74,13 @@ $$
 and a local $k$-algebra homomorphism
 $$
 \phi=f^\sharp_x:
-\mathcal O_{X,x}
+\OO_{X,x}
 \longrightarrow
 R.
 $$
 
 ::: pf-proof
-The source has one point, so the underlying continuous map chooses $x$.  The map on stalks at that point is local because $f$ is a morphism of schemes.  Since $f$ is a morphism over $\operatorname{Spec}k$, the stalk map commutes with the structure maps from $k$, so it is a $k$-algebra homomorphism.
+The source has one point, so the underlying continuous map chooses $x$.  The map on stalks at that point is local because $f$ is a morphism of schemes.  Since $f$ is a morphism over $\Spec k$, the stalk map commutes with the structure maps from $k$, so it is a $k$-algebra homomorphism.
 :::
 
 :::
@@ -94,12 +94,12 @@ $$
 ::: pf-proof
 Reduce the local homomorphism
 $$
-\phi:\mathcal O_{X,x}\to R
+\phi:\OO_{X,x}\to R
 $$
-modulo the maximal ideal $(\varepsilon)$ of $R$.  Since $\phi$ is local, its inverse image of $(\varepsilon)$ is the maximal ideal $\mathfrak m_x$.  Therefore reduction induces an injective $k$-algebra homomorphism
+modulo the maximal ideal $(\varepsilon)$ of $R$.  Since $\phi$ is local, its inverse image of $(\varepsilon)$ is the maximal ideal $\mfm_x$.  Therefore reduction induces an injective $k$-algebra homomorphism
 $$
 \kappa(x)
-=\mathcal O_{X,x}/\mathfrak m_x
+=\OO_{X,x}/\mfm_x
 \hookrightarrow
 R/(\varepsilon)
 =k.
@@ -113,7 +113,7 @@ The structural map $k\to\kappa(x)$ followed by this injection is the identity be
 ::: {.pf-step #local-hom-form-with-derivation}
 Under the identification $\kappa(x)=k$, every local $k$-algebra map
 $$
-\phi:\mathcal O_{X,x}\longrightarrow R
+\phi:\OO_{X,x}\longrightarrow R
 $$
 whose reduction is the residue map has a unique form
 $$
@@ -123,7 +123,7 @@ $$
 $$
 where
 $$
-D:\mathcal O_{X,x}\longrightarrow k
+D:\OO_{X,x}\longrightarrow k
 $$
 is a $k$-derivation and $\bar a$ is the residue class of $a$ in $k$.
 
@@ -168,19 +168,19 @@ Conversely, any $k$-derivation $D$ makes the displayed formula additive, multipl
 ::: {.pf-step #derivation-equals-linear-functional}
 A $k$-derivation
 $$
-D:\mathcal O_{X,x}\longrightarrow k
+D:\OO_{X,x}\longrightarrow k
 $$
 is equivalent to a $k$-linear functional
 $$
 \lambda:
-\mathfrak m_x/\mathfrak m_x^2
+\mfm_x/\mfm_x^2
 \longrightarrow k.
 $$
 
 ::: pf-proof
 If
 $$
-a,b\in\mathfrak m_x,
+a,b\in\mfm_x,
 $$
 then
 $$
@@ -190,11 +190,11 @@ so the Leibniz rule gives
 $$
 D(ab)=0.
 $$
-Hence $D$ vanishes on $\mathfrak m_x^2$.
+Hence $D$ vanishes on $\mfm_x^2$.
 
 Also $D$ vanishes on $k$.  Since the residue field is $k$, every
 $$
-a\in\mathcal O_{X,x}
+a\in\OO_{X,x}
 $$
 has a unique decomposition
 $$
@@ -202,16 +202,16 @@ a=\bar a+m,
 \qquad
 \bar a\in k,
 \quad
-m\in\mathfrak m_x.
+m\in\mfm_x.
 $$
-Thus $D$ is completely determined by its restriction to $\mathfrak m_x$, and that restriction factors uniquely through a $k$-linear map
+Thus $D$ is completely determined by its restriction to $\mfm_x$, and that restriction factors uniquely through a $k$-linear map
 $$
-\lambda:\mathfrak m_x/\mathfrak m_x^2\to k.
+\lambda:\mfm_x/\mfm_x^2\to k.
 $$
 
 Conversely, given such a linear functional $\lambda$, define
 $$
-D(a)=\lambda(a-\bar a\bmod\mathfrak m_x^2).
+D(a)=\lambda(a-\bar a\bmod\mfm_x^2).
 $$
 For
 $$
@@ -219,7 +219,7 @@ a=\bar a+m,
 \qquad
 b=\bar b+n,
 $$
-one has modulo $\mathfrak m_x^2$
+one has modulo $\mfm_x^2$
 $$
 ab-\bar a\bar b
 \equiv
@@ -237,19 +237,19 @@ so $D$ is a $k$-derivation.
 ::: {.pf-step #local-maps-parametrized-by-tangent-space}
 Therefore local $k$-algebra maps
 $$
-\mathcal O_{X,x}\longrightarrow k[\varepsilon]/(\varepsilon^2)
+\OO_{X,x}\longrightarrow k[\varepsilon]/(\varepsilon^2)
 $$
 reducing to the residue map are naturally parametrized by the Zariski tangent space
 $$
 \boxed{
 T_xX
 =
-(\mathfrak m_x/\mathfrak m_x^2)^\vee.
+(\mfm_x/\mfm_x^2)^\vee.
 }
 $$
 
 ::: pf-proof
-Step [](#local-hom-form-with-derivation){.pf-ref} identifies such local maps with $k$-derivations to $k$, and step [](#derivation-equals-linear-functional){.pf-ref} identifies those derivations with the dual of $\mathfrak m_x/\mathfrak m_x^2$.
+Step [](#local-hom-form-with-derivation){.pf-ref} identifies such local maps with $k$-derivations to $k$, and step [](#derivation-equals-linear-functional){.pf-ref} identifies those derivations with the dual of $\mfm_x/\mfm_x^2$.
 :::
 
 :::
@@ -265,7 +265,7 @@ $$
 $$
 define a local $k$-algebra homomorphism
 $$
-\phi_v:\mathcal O_{X,x}\longrightarrow R.
+\phi_v:\OO_{X,x}\longrightarrow R.
 $$
 
 ::: pf-proof
@@ -273,11 +273,11 @@ By step [](#derivation-equals-linear-functional){.pf-ref}, $v$ corresponds to a 
 
 Its reduction modulo $(\varepsilon)$ is the residue map
 $$
-\mathcal O_{X,x}\to k,
+\OO_{X,x}\to k,
 $$
 so
 $$
-\phi_v^{-1}((\varepsilon))=\mathfrak m_x.
+\phi_v^{-1}((\varepsilon))=\mfm_x.
 $$
 Thus $\phi_v$ is local.
 :::
@@ -287,18 +287,18 @@ Thus $\phi_v$ is local.
 ::: {.pf-step #phi-v-gives-morphism-fv}
 The local homomorphism $\phi_v$ defines a unique $k$-morphism
 $$
-f_v:\operatorname{Spec}R\longrightarrow X
+f_v:\Spec R\longrightarrow X
 $$
 with underlying point $x$.
 
 ::: pf-proof
-Send the unique point of $\operatorname{Spec}R$ to $x$.
+Send the unique point of $\Spec R$ to $x$.
 
 For an open set $U\subseteq X$ containing $x$, define the pullback on sections as
 $$
-\mathcal O_X(U)
+\OO_X(U)
 \longrightarrow
-\mathcal O_{X,x}
+\OO_{X,x}
 \xrightarrow{\phi_v}
 R,
 $$
@@ -315,9 +315,9 @@ Uniqueness follows because any morphism with underlying point $x$ is determined 
 The two constructions are inverse.  Hence
 $$
 \boxed{
-\operatorname{Hom}_k
+\Hom_k
 \left(
-\operatorname{Spec}k[\varepsilon]/(\varepsilon^2),X
+\Spec k[\varepsilon]/(\varepsilon^2),X
 \right)
 \cong
 \coprod_{x\in X(k)}T_xX.

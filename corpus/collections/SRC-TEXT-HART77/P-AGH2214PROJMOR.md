@@ -59,7 +59,7 @@ Hence every homogeneous prime ideal contains all of $S_+$.
 But by definition
 $$
 \Proj S
-=\{\mathfrak p:\mathfrak p\text{ homogeneous prime and }\mathfrak p\not\supseteq S_+\}.
+=\{\mfp \st \mfp \text{ homogeneous prime and }\mfp \not\supseteq S_+\}.
 $$
 Thus no prime belongs to $\Proj S$.
 :::
@@ -87,15 +87,15 @@ $$
 I\cap\{1,f,f^2,\ldots\}=\varnothing.
 $$
 It is nonempty because $(0)$ belongs to it, and the union of any chain is again a homogeneous ideal disjoint from the powers of $f$.
-By Zorn's lemma there is a maximal such homogeneous ideal $\mathfrak p$.
+By Zorn's lemma there is a maximal such homogeneous ideal $\mfp $.
 
-We claim $\mathfrak p$ is prime.
-Let $a,b$ be homogeneous elements not in $\mathfrak p$.
+We claim $\mfp $ is prime.
+Let $a,b$ be homogeneous elements not in $\mfp $.
 By maximality, the homogeneous ideals
 $$
-\mathfrak p+(a)
+\mfp +(a)
 \qquad\text{and}\qquad
-\mathfrak p+(b)
+\mfp +(b)
 $$
 each meet the powers of $f$.
 Thus for some $m,n$,
@@ -104,28 +104,28 @@ f^m=p_1+ra,
 \qquad
 f^n=p_2+sb
 $$
-with $p_1,p_2\in\mathfrak p$.
+with $p_1,p_2\in\mfp $.
 Multiplying gives
 $$
 f^{m+n}
 \in
-\mathfrak p+(ab).
+\mfp +(ab).
 $$
-If $ab\in\mathfrak p$, this would put $f^{m+n}$ in $\mathfrak p$, contradiction.
+If $ab\in\mfp $, this would put $f^{m+n}$ in $\mfp $, contradiction.
 Hence
 $$
-ab\notin\mathfrak p.
+ab\notin\mfp.
 $$
-So the complement of $\mathfrak p$ is multiplicatively closed on homogeneous elements, which is the homogeneous-prime criterion.
+So the complement of $\mfp $ is multiplicatively closed on homogeneous elements, which is the homogeneous-prime criterion.
 
 Since
 $$
-f\notin\mathfrak p
+f\notin\mfp 
 $$
-and $f\in S_+$, the prime $\mathfrak p$ does not contain $S_+$.
+and $f\in S_+$, the prime $\mfp $ does not contain $S_+$.
 Hence
 $$
-\mathfrak p\in\Proj S,
+\mfp \in\Proj S,
 $$
 contradiction.
 Therefore every homogeneous positive-degree element is nilpotent.
@@ -177,7 +177,7 @@ be a degree-preserving graded homomorphism and put
 $$
 U
 =
-\{\mathfrak p\in\Proj T:\mathfrak p\not\supseteq\phi(S_+)\}.
+\{\mfp \in\Proj T \st \mfp \not\supseteq\phi(S_+)\}.
 $$
 Then
 $$
@@ -191,17 +191,17 @@ $$
 so $U$ is open in $\Proj T$.
 
 ::: pf-proof
-A homogeneous prime $\mathfrak p\in\Proj T$ fails to contain the ideal $\phi(S_+)$ exactly when there is some homogeneous positive-degree element
+A homogeneous prime $\mfp \in\Proj T$ fails to contain the ideal $\phi(S_+)$ exactly when there is some homogeneous positive-degree element
 $$
 s\in S_+
 $$
 with
 $$
-\phi(s)\notin\mathfrak p.
+\phi(s)\notin\mfp.
 $$
 That is exactly the condition
 $$
-\mathfrak p\in D_+(\phi(s)).
+\mfp \in D_+(\phi(s)).
 $$
 Taking the union over all such $s$ gives the formula.
 :::
@@ -209,34 +209,34 @@ Taking the union over all such $s$ gives the formula.
 :::
 
 ::: {.pf-step #f-of-p-in-proj-s}
-For $\mathfrak p\in U$, define
+For $\mfp \in U$, define
 $$
-f(\mathfrak p)=\phi^{-1}(\mathfrak p).
+f(\mfp)=\phi^{-1}(\mfp).
 $$
 Then
 $$
-f(\mathfrak p)\in\Proj S.
+f(\mfp)\in\Proj S.
 $$
 
 ::: pf-proof
 The inverse image of a prime ideal under a ring homomorphism is prime, and because $\phi$ preserves degrees, the inverse image of a homogeneous ideal is homogeneous.
 Thus
 $$
-\phi^{-1}(\mathfrak p)
+\phi^{-1}(\mfp)
 $$
 is a homogeneous prime ideal of $S$.
 
-Since $\mathfrak p\in U$, some
+Since $\mfp \in U$, some
 $$
 s\in S_+
 $$
 satisfies
 $$
-\phi(s)\notin\mathfrak p.
+\phi(s)\notin\mfp.
 $$
 Hence
 $$
-s\notin\phi^{-1}(\mathfrak p),
+s\notin\phi^{-1}(\mfp),
 $$
 so the inverse-image prime does not contain $S_+$.
 Therefore it belongs to $\Proj S$.
@@ -258,16 +258,16 @@ f^{-1}(D_+(s))
 $$
 
 ::: pf-proof
-For $\mathfrak p\in U$,
+For $\mfp \in U$,
 $$
 \begin{aligned}
-f(\mathfrak p)\in D_+(s)
+f(\mfp)\in D_+(s)
 &\iff
-s\notin\phi^{-1}(\mathfrak p)\\
+s\notin\phi^{-1}(\mfp)\\
 &\iff
-\phi(s)\notin\mathfrak p\\
+\phi(s)\notin\mfp \\
 &\iff
-\mathfrak p\in D_+(\phi(s)).
+\mfp \in D_+(\phi(s)).
 \end{aligned}
 $$
 The distinguished opens form a basis of $\Proj S$, so this identity proves continuity.
@@ -349,7 +349,7 @@ $$
 ::: pf-proof
 Suppose
 $$
-\mathfrak p\in\Proj T
+\mfp \in\Proj T
 $$
 contained $\phi(S_+)$.
 Then for every
@@ -362,7 +362,7 @@ $$
 $$
 would give
 $$
-T_d=\phi(S_d)\subseteq\mathfrak p.
+T_d=\phi(S_d)\subseteq\mfp.
 $$
 
 Let
@@ -377,19 +377,19 @@ mn\ge d_0.
 $$
 Then
 $$
-t^m\in T_{mn}\subseteq\mathfrak p.
+t^m\in T_{mn}\subseteq\mfp.
 $$
-Since $\mathfrak p$ is prime,
+Since $\mfp $ is prime,
 $$
-t\in\mathfrak p.
+t\in\mfp.
 $$
 Thus
 $$
-T_+\subseteq\mathfrak p,
+T_+\subseteq\mfp,
 $$
 contradicting
 $$
-\mathfrak p\in\Proj T.
+\mfp \in\Proj T.
 $$
 Therefore no point of $\Proj T$ is excluded from $U$.
 :::
@@ -498,7 +498,7 @@ cover $\Proj S$.
 ::: pf-proof
 Let
 $$
-\mathfrak q\in\Proj S.
+\mfq \in\Proj S.
 $$
 Choose a homogeneous positive-degree element
 $$
@@ -506,20 +506,20 @@ a\in S_+
 $$
 with
 $$
-a\notin\mathfrak q.
+a\notin\mfq .
 $$
 Some power
 $$
 s=a^N
 $$
 has degree at least $d_0$.
-Since $\mathfrak q$ is prime and $a\notin\mathfrak q$,
+Since $\mfq $ is prime and $a\notin\mfq $,
 $$
-s\notin\mathfrak q.
+s\notin\mfq .
 $$
 Thus
 $$
-\mathfrak q\in D_+(s).
+\mfq \in D_+(s).
 $$
 :::
 
@@ -571,7 +571,7 @@ $$
 have affine coordinate rings
 $$
 \boxed{
-\Gamma(V_i,\mathcal O_V)
+\Gamma(V_i,\OO_V)
 \cong
 S_{(x_i)}.
 }

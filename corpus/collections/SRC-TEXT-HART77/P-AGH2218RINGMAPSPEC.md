@@ -37,10 +37,6 @@ Show furthermore that in that case $f$ is dominant, that is, $f(Y)$ is dense in 
 (d) Prove the converse to (c): if $f: Y \to X$ is a homeomorphism onto a closed subset and $f^{\sharp}: \OO_X \to f_* \OO_Y$ is surjective, then $\phi$ is surjective.
 :::
 
-::: {.remark}
-For part (d), consider $X' = \Spec\qty{A/\ker \phi}$ and apply parts (b) and (c).
-:::
-
 ::: {.solution}
 
 ::: pf
@@ -56,7 +52,7 @@ $$
 ::: pf-proof
 By definition,
 $$
-D(f)=\{\mathfrak p\in\Spec A:f\notin\mathfrak p\}.
+D(f)=\{\mfp \in\Spec A \st f\notin\mfp \}.
 $$
 Thus $D(f)=\varnothing$ exactly when $f$ lies in every prime ideal of $A$.  The intersection of all prime ideals is the nilradical $\sqrt{(0)}$, so this is equivalent to $f$ being nilpotent.
 :::
@@ -66,7 +62,7 @@ Thus $D(f)=\varnothing$ exactly when $f$ lies in every prime ideal of $A$.  The 
 ::: {.pf-step #phi-injective-implies-fsharp-injective}
 Let $\phi:A\to B$ be injective.  Then
 $$
-f^\sharp:\mathcal O_X\longrightarrow f_*\mathcal O_Y
+f^\sharp:\OO_X\longrightarrow f_*\OO_Y
 $$
 is injective.
 
@@ -94,9 +90,9 @@ Conversely, if $f^\sharp$ is injective, then $\phi$ is injective.
 ::: pf-proof
 On global sections the sheaf map is exactly
 $$
-\Gamma(X,\mathcal O_X)=A
+\Gamma(X,\OO_X)=A
 \longrightarrow
-\Gamma(Y,\mathcal O_Y)=B,
+\Gamma(Y,\OO_Y)=B,
 $$
 namely $\phi$.  An injective sheaf morphism is injective on sections over every open set, in particular over $X$.  Hence $\phi$ is injective.
 :::
@@ -111,9 +107,9 @@ It is enough to show that every nonempty distinguished open $D(a)\subseteq X$ me
 $$
 D(\phi(a))\ne\varnothing.
 $$
-Choose $\mathfrak q\in D(\phi(a))$.  Then
+Choose $\mfq \in D(\phi(a))$.  Then
 $$
-f(\mathfrak q)=\phi^{-1}(\mathfrak q)\in D(a).
+f(\mfq)=\phi^{-1}(\mfq)\in D(a).
 $$
 Thus the image meets every nonempty basic open, so it is dense.
 :::
@@ -194,7 +190,7 @@ is a homeomorphism.
 ::: {.pf-step #gsharp-isomorphism}
 The sheaf map
 $$
-g^\sharp:\mathcal O_{X'}\longrightarrow g_*\mathcal O_Y
+g^\sharp:\OO_{X'}\longrightarrow g_*\OO_Y
 $$
 is an isomorphism.
 
@@ -203,11 +199,11 @@ Because $A/I\to B$ is injective, step [](#phi-injective-implies-fsharp-injective
 
 For surjectivity, work on stalks.  At a point $y\in Y$, write $x'=g(y)$ and $x=h(x')$.  The map on stalks for $f=h\circ g$ factors as
 $$
-\mathcal O_{X,x}
+\OO_{X,x}
 \longrightarrow
-\mathcal O_{X',x'}
+\OO_{X',x'}
 \xrightarrow{g^\sharp_{x'}}
-\mathcal O_{Y,y}.
+\OO_{Y,y}.
 $$
 The composite is surjective because $f^\sharp$ is surjective.  Therefore the second arrow is surjective as well.  Thus $g^\sharp$ is both injective and surjective on every stalk, hence is an isomorphism of sheaves.
 :::
@@ -239,4 +235,8 @@ Step [](#df-empty-iff-nilpotent){.pf-ref} proves part (a), steps [](#phi-injecti
 
 :::
 
+:::
+
+::: {.remark}
+For part (d), consider $X' = \Spec\qty{A/\ker \phi}$ and apply parts (b) and (c).
 :::

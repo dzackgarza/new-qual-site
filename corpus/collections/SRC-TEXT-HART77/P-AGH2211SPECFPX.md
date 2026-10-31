@@ -32,7 +32,7 @@ How many points are there with a given residue field?
 ::: {.solution}
 Put
 $$
-X=\operatorname{Spec}\FF_p[x].
+X=\Spec \FF_p[x].
 $$
 
 ::: pf
@@ -67,7 +67,7 @@ $$
 For an affine scheme,
 $$
 \kappa((0))
-=\operatorname{Frac}(\FF_p[x]/(0))
+=\Frac(\FF_p[x]/(0))
 =\FF_p(x).
 $$
 :::

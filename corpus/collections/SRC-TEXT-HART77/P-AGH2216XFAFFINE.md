@@ -31,10 +31,10 @@ Conclude that $X_f$ is an open subset of $X$.
 (b) Assume that $X$ is quasi-compact.
 Let $A = \Gamma(X, \OO_X)$ and let $a \in A$ be an element whose restriction to $X_f$ is $0$.
 Show that $f^n a = 0$ for some $n > 0$.
-Use an open affine cover of $X$.
+Hint: use an open affine cover of $X$.
 
 (c) Now assume that $X$ has a finite cover by open affines $U_i$ such that each intersection $U_i \intersect U_j$ is quasi-compact.
-This hypothesis is satisfied, for example, if $\operatorname{sp}(X)$ is noetherian.
+This hypothesis is satisfied, for example, if $\underlyingspace{X}$ is noetherian.
 Let $b \in \Gamma(X_f, \OO_{X_f})$.
 Show that for some $n > 0$ the section $f^n b$ is the restriction of an element of $A$.
 
@@ -48,43 +48,43 @@ Show that for some $n > 0$ the section $f^n b$ is the restriction of an element 
 ::: {.pf-step #x-x-f-criterion-pointwise}
 Let
 $$
-U=\operatorname{Spec}B\subseteq X
+U=\Spec B\subseteq X
 $$
 be affine, and let
 $$
 \bar f=f\restrict_U\in B.
 $$
-For a point $x\in U$ corresponding to a prime $\mathfrak p\subseteq B$,
+For a point $x\in U$ corresponding to a prime $\mfp \subseteq B$,
 $$
 x\in X_f
 \iff
-\bar f\notin\mathfrak p.
+\bar f\notin\mfp.
 $$
 
 ::: pf-proof
 The local ring at $x$ is
 $$
-\mathcal O_{X,x}=B_{\mathfrak p}
+\OO_{X,x}=B_{\mfp}
 $$
 with maximal ideal
 $$
-\mathfrak m_x=\mathfrak pB_{\mathfrak p}.
+\mfm_x=\mfp B_{\mfp}.
 $$
 The germ $f_x$ is the image
 $$
-\bar f/1\in B_{\mathfrak p}.
+\bar f/1\in B_{\mfp}.
 $$
 Now
 $$
-\bar f/1\in\mathfrak pB_{\mathfrak p}
+\bar f/1\in\mfp B_{\mfp}
 \iff
-\bar f\in\mathfrak p,
+\bar f\in\mfp,
 $$
 because contraction of the localized prime is
 $$
-\mathfrak pB_{\mathfrak p}\cap B=\mathfrak p.
+\mfp B_{\mfp}\cap B=\mfp.
 $$
-Thus $f_x$ is a unit, equivalently is not in the maximal ideal, exactly when $\bar f\notin\mathfrak p$.
+Thus $f_x$ is a unit, equivalently is not in the maximal ideal, exactly when $\bar f\notin\mfp $.
 :::
 
 :::
@@ -107,7 +107,7 @@ Assume $X$ is quasi-compact.  Choose a finite affine open cover
 $$
 X=U_1\cup\cdots\cup U_r,
 \qquad
-U_i=\operatorname{Spec}B_i.
+U_i=\Spec B_i.
 $$
 Let
 $$
@@ -132,7 +132,7 @@ a_i\restrict_{D(f_i)}=0.
 $$
 Since
 $$
-\Gamma(D(f_i),\mathcal O_X)
+\Gamma(D(f_i),\OO_X)
 =(B_i)_{f_i},
 $$
 this means
@@ -151,7 +151,7 @@ for some $n_i\ge0$.
 ::: {.pf-step #f-n-a-zero-global}
 Under the hypotheses of step [](#local-annihilator-exponents-exist){.pf-ref}, there is one integer $n>0$ such that
 $$
-\boxed{f^na=0\text{ in }\Gamma(X,\mathcal O_X).}
+\boxed{f^na=0\text{ in }\Gamma(X,\OO_X).}
 $$
 
 ::: pf-proof
@@ -185,11 +185,11 @@ U_{ij}=U_i\cap U_j
 $$
 quasi-compact.  Let
 $$
-b\in\Gamma(X_f,\mathcal O_{X_f}).
+b\in\Gamma(X_f,\OO_{X_f}).
 $$
 For every $i$ there is an integer $n_i\ge0$ and a section
 $$
-c_i\in\Gamma(U_i,\mathcal O_X)
+c_i\in\Gamma(U_i,\OO_X)
 $$
 such that on
 $$
@@ -203,7 +203,7 @@ $$
 ::: pf-proof
 Write
 $$
-U_i=\operatorname{Spec}B_i,
+U_i=\Spec B_i,
 \qquad
 f_i=f\restrict_{U_i}.
 $$
@@ -213,7 +213,7 @@ U_i\cap X_f=D(f_i),
 $$
 and hence
 $$
-\Gamma(U_i\cap X_f,\mathcal O_X)
+\Gamma(U_i\cap X_f,\OO_X)
 =(B_i)_{f_i}.
 $$
 The restriction of $b$ to this distinguished open is some fraction
@@ -232,7 +232,7 @@ on $U_i\cap X_f$.
 ::: {.pf-step #uniform-exponent-n0}
 After increasing the exponents in step [](#local-lift-fn-b){.pf-ref}, there is a single integer $n_0\ge0$ such that for every $i$ there is
 $$
-c_i\in\Gamma(U_i,\mathcal O_X)
+c_i\in\Gamma(U_i,\OO_X)
 $$
 with
 $$
@@ -303,7 +303,7 @@ and the section $d_{ij}$.  Step [](#dij-vanishes-on-xf){.pf-ref} is exactly the 
 ::: {.pf-step #fm-ci-agree-on-overlaps}
 There is a single integer $m\ge0$ such that the sections
 $$
-f^mc_i\in\Gamma(U_i,\mathcal O_X)
+f^mc_i\in\Gamma(U_i,\OO_X)
 $$
 agree on every pairwise overlap.
 
@@ -330,7 +330,7 @@ on every overlap.
 ::: {.pf-step #glued-section-a}
 The sections in step [](#fm-ci-agree-on-overlaps){.pf-ref} glue to a global section
 $$
-a\in A=\Gamma(X,\mathcal O_X)
+a\in A=\Gamma(X,\OO_X)
 $$
 such that
 $$
@@ -340,7 +340,7 @@ $$
 ::: pf-proof
 By step [](#fm-ci-agree-on-overlaps){.pf-ref}, the sections $f^mc_i$ form a compatible family on the finite open cover $\{U_i\}$.  The sheaf gluing axiom gives a unique
 $$
-a\in\Gamma(X,\mathcal O_X)
+a\in\Gamma(X,\OO_X)
 $$
 whose restriction to $U_i$ is $f^mc_i$.
 
@@ -359,19 +359,15 @@ The opens $U_i\cap X_f$ cover $X_f$, so the equality holds globally on $X_f$.
 ::: {.pf-step #fn-b-extends-to-global}
 Thus for every
 $$
-b\in\Gamma(X_f,\mathcal O_{X_f})
+b\in\Gamma(X_f,\OO_{X_f})
 $$
 there is an integer $N>0$ such that
 $$
-\boxed{f^Nb\text{ extends to a section of }\Gamma(X,\mathcal O_X).}
+\boxed{f^Nb\text{ extends to a section of }\Gamma(X,\OO_X).}
 $$
 
 ::: pf-proof
-Take
-$$
-N>n_0+m
-$$
-and multiply the global extension in step [](#glued-section-a){.pf-ref} by the additional power of $f$ if necessary.  Equivalently, step [](#glued-section-a){.pf-ref} already gives the statement with exponent $n_0+m$, except in the harmless case that this exponent is zero; increasing it to a positive integer preserves extendability.
+Take $N=n_0+m+1$: multiplying the global extension of $f^{n_0+m}b$ from step [](#glued-section-a){.pf-ref} by $f$ gives a global extension of $f^Nb$, and $N>0$.
 :::
 
 :::
@@ -394,7 +390,7 @@ Restriction induces a natural ring homomorphism
 $$
 \theta:A_f
 \longrightarrow
-\Gamma(X_f,\mathcal O_{X_f}),
+\Gamma(X_f,\OO_{X_f}),
 \qquad
 \frac a{f^r}
 \longmapsto
@@ -408,7 +404,7 @@ f\restrict_{X_f}
 $$
 is an invertible global section.  Therefore the restriction map
 $$
-A\to\Gamma(X_f,\mathcal O_{X_f})
+A\to\Gamma(X_f,\OO_{X_f})
 $$
 sends $f$ to a unit and factors uniquely through the localization $A_f$.
 :::
@@ -446,7 +442,7 @@ The homomorphism $\theta$ is surjective.
 ::: pf-proof
 Let
 $$
-b\in\Gamma(X_f,\mathcal O_{X_f}).
+b\in\Gamma(X_f,\OO_{X_f}).
 $$
 By step [](#fn-b-extends-to-global){.pf-ref}, there is an integer $n>0$ and a global section
 $$
@@ -471,7 +467,7 @@ Thus every section lies in the image.
 Consequently
 $$
 \boxed{
-\Gamma(X_f,\mathcal O_{X_f})
+\Gamma(X_f,\OO_{X_f})
 \cong
 A_f.
 }

@@ -36,9 +36,9 @@ Show that $\alpha$ is bijective.
 ::: {.solution}
 We use the affine case: for rings $A,B$ there is a natural bijection
 $$
-\operatorname{Hom}_{\mathrm{Sch}}(\operatorname{Spec}B,\operatorname{Spec}A)
+\Hom_{\Sch}(\Spec B,\Spec A)
 \cong
-\operatorname{Hom}_{\mathrm{Ring}}(A,B).
+\Hom_{\Ring}(A,B).
 $$
 
 ::: pf
@@ -46,30 +46,30 @@ $$
 ::: pf-step
 Let
 $$
-\varphi:A\longrightarrow\Gamma(X,\mathcal O_X)
+\varphi:A\longrightarrow\Gamma(X,\OO_X)
 $$
 be a ring homomorphism.  Choose an affine open cover
 $$
 X=\bigcup_iU_i,
 \qquad
-U_i=\operatorname{Spec}B_i.
+U_i=\Spec B_i.
 $$
 Restriction gives ring homomorphisms
 $$
 \varphi_i:
 A\xrightarrow{\varphi}
-\Gamma(X,\mathcal O_X)
+\Gamma(X,\OO_X)
 \longrightarrow
-\Gamma(U_i,\mathcal O_X)
+\Gamma(U_i,\OO_X)
 =B_i.
 $$
 
 ::: pf-proof
 The equality
 $$
-\Gamma(U_i,\mathcal O_X)=B_i
+\Gamma(U_i,\OO_X)=B_i
 $$
-is the defining global-section property of the affine chart $U_i\cong\operatorname{Spec}B_i$.  Composition with restriction therefore gives the displayed maps.
+is the defining global-section property of the affine chart $U_i\cong\Spec B_i$.  Composition with restriction therefore gives the displayed maps.
 :::
 
 :::
@@ -77,7 +77,7 @@ is the defining global-section property of the affine chart $U_i\cong\operatorna
 ::: pf-step
 Each $\varphi_i$ determines a unique morphism of affine schemes
 $$
-f_i:U_i\longrightarrow\operatorname{Spec}A.
+f_i:U_i\longrightarrow\Spec A.
 $$
 
 ::: pf-proof
@@ -102,22 +102,22 @@ U_i\cap U_j
 $$
 by affine opens
 $$
-W=\operatorname{Spec}C.
+W=\Spec C.
 $$
 
 The restriction
 $$
-f_i\restrict_W:W\to\operatorname{Spec}A
+f_i\restrict_W:W\to\Spec A
 $$
 corresponds, in the affine anti-equivalence, to the composite
 $$
 A
 \xrightarrow{\varphi}
-\Gamma(X,\mathcal O_X)
+\Gamma(X,\OO_X)
 \longrightarrow
-\Gamma(U_i,\mathcal O_X)
+\Gamma(U_i,\OO_X)
 \longrightarrow
-\Gamma(W,\mathcal O_X)=C.
+\Gamma(W,\OO_X)=C.
 $$
 The restriction $f_j\restrict_W$ corresponds to the same composite, because both restriction chains are the restriction of the same global section to $W$.
 
@@ -137,18 +137,18 @@ $$
 The local morphisms $f_i$ glue uniquely to a morphism
 $$
 \boxed{
-f_\varphi:X\longrightarrow\operatorname{Spec}A.
+f_\varphi:X\longrightarrow\Spec A.
 }
 $$
 
 ::: pf-proof
 By step [](#fi-agree-on-overlaps){.pf-ref} the morphisms $f_i$ agree on every pairwise overlap.  Morphisms of locally ringed spaces glue over an open cover of the source: the underlying continuous maps glue because they agree on overlaps, and for every open subset $W$ of the target the maps
 $$
-\mathcal O_{\operatorname{Spec}A}(W)
+\OO_{\Spec A}(W)
 \longrightarrow
-\mathcal O_X(U_i\cap f_i^{-1}(W))
+\OO_X(U_i\cap f_i^{-1}(W))
 $$
-glue, by the sheaf axiom for $\mathcal O_X$, to the required map on
+glue, by the sheaf axiom for $\OO_X$, to the required map on
 $$
 f_\varphi^{-1}(W).
 $$
@@ -165,7 +165,7 @@ The homomorphism on global sections induced by $f_\varphi$ is exactly the origin
 ::: pf-proof
 Let
 $$
-\alpha(f_\varphi):A\to\Gamma(X,\mathcal O_X)
+\alpha(f_\varphi):A\to\Gamma(X,\OO_X)
 $$
 be the pullback on global sections.
 
@@ -184,7 +184,7 @@ $$
 \qquad
 \varphi(a)
 $$
-have equal restrictions to every member of the open cover $\{U_i\}$.  Since $\mathcal O_X$ is a sheaf, they are equal.  This holds for every $a\in A$, so
+have equal restrictions to every member of the open cover $\{U_i\}$.  Since $\OO_X$ is a sheaf, they are equal.  This holds for every $a\in A$, so
 $$
 \alpha(f_\varphi)=\varphi.
 $$
@@ -199,28 +199,28 @@ The map $\alpha$ is injective.
 ::: pf-proof
 Suppose
 $$
-f,g:X\longrightarrow\operatorname{Spec}A
+f,g:X\longrightarrow\Spec A
 $$
 induce the same ring homomorphism
 $$
-\varphi:A\longrightarrow\Gamma(X,\mathcal O_X).
+\varphi:A\longrightarrow\Gamma(X,\OO_X).
 $$
 
 Choose an affine open cover
 $$
 X=\bigcup_iU_i,
 \qquad
-U_i=\operatorname{Spec}B_i.
+U_i=\Spec B_i.
 $$
 The restrictions
 $$
-f\restrict_{U_i},g\restrict_{U_i}:U_i\to\operatorname{Spec}A
+f\restrict_{U_i},g\restrict_{U_i}:U_i\to\Spec A
 $$
 induce the same ring homomorphism
 $$
 A
 \xrightarrow{\varphi}
-\Gamma(X,\mathcal O_X)
+\Gamma(X,\OO_X)
 \longrightarrow
 B_i,
 $$
@@ -243,10 +243,10 @@ Thus $\alpha$ is injective.
 Therefore
 $$
 \boxed{
-\operatorname{Hom}_{\mathrm{Sch}}(X,\operatorname{Spec}A)
+\Hom_{\Sch}(X,\Spec A)
 \cong
-\operatorname{Hom}_{\mathrm{Ring}}
-\bigl(A,\Gamma(X,\mathcal O_X)\bigr).
+\Hom_{\Ring}
+\bigl(A,\Gamma(X,\OO_X)\bigr).
 }
 $$
 

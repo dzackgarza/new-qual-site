@@ -29,10 +29,6 @@ audit:
 (b) A scheme $X$ is affine if and only if there is a finite set of elements $f_1, \ldots, f_r \in A = \Gamma(X, \OO_X)$ such that the open subsets $X_{f_i}$ are affine and $f_1, \ldots, f_r$ generate the unit ideal in $A$.
 :::
 
-::: {.remark}
-Part (b) uses Hartshorne II.2.4 and II.2.16(d).
-:::
-
 ::: {.solution}
 
 ::: pf
@@ -93,7 +89,7 @@ Write $X=\Spec A$ and take $f_1=1\in A$.  Then $X_{f_1}=X$ is affine and $f_1$ g
 ::: {.pf-step #xfi-cover-x}
 Conversely, suppose that
 $$
-A=\Gamma(X,\mathcal O_X)
+A=\Gamma(X,\OO_X)
 $$
 contains elements $f_1,\ldots,f_r$ such that each $X_{f_i}$ is affine and the $f_i$ generate the unit ideal.  Then the $X_{f_i}$ cover $X$.
 
@@ -102,9 +98,9 @@ Choose $a_i\in A$ with
 $$
 \sum_i a_if_i=1.
 $$
-If a point $x\in X$ lay outside every $X_{f_i}$, then every germ $(f_i)_x$ would lie in the maximal ideal $\mathfrak m_x\subseteq\mathcal O_{X,x}$.  Passing the displayed identity to the stalk would give
+If a point $x\in X$ lay outside every $X_{f_i}$, then every germ $(f_i)_x$ would lie in the maximal ideal $\mfm_x\subseteq\OO_{X,x}$.  Passing the displayed identity to the stalk would give
 $$
-1=\sum_i(a_i)_x(f_i)_x\in\mathfrak m_x,
+1=\sum_i(a_i)_x(f_i)_x\in\mfm_x,
 $$
 which is impossible.  Hence the $X_{f_i}$ cover $X$.
 :::
@@ -138,13 +134,13 @@ for every $i$.
 ::: pf-proof
 For $x\in X$, the prime ideal corresponding to $\eta(x)$ is
 $$
-\{a\in A:a_x\in\mathfrak m_x\}.
+\{a\in A \st a_x\in\mfm_x\}.
 $$
 Therefore
 $$
 \eta(x)\in D(f_i)
 \iff
-(f_i)_x\notin\mathfrak m_x
+(f_i)_x\notin\mfm_x
 \iff
 x\in X_{f_i}.
 $$
@@ -162,7 +158,7 @@ is an isomorphism.
 ::: pf-proof
 By step [](#xfi-satisfy-2-16c-hypothesis){.pf-ref}, Hartshorne II.2.16(d) applies to $X$, so
 $$
-\Gamma(X_{f_i},\mathcal O_X)\cong A_{f_i}.
+\Gamma(X_{f_i},\OO_X)\cong A_{f_i}.
 $$
 By II.2.1,
 $$
@@ -172,13 +168,13 @@ Since $X_{f_i}$ is affine,
 $$
 X_{f_i}
 \cong
-\Spec\Gamma(X_{f_i},\mathcal O_X)
+\Spec\Gamma(X_{f_i},\OO_X)
 \cong
 \Spec A_{f_i}
 \cong
 D(f_i).
 $$
-Under these identifications, $\eta_i$ is induced by the localization map $A_{f_i}\to\Gamma(X_{f_i},\mathcal O_X)$, which is the isomorphism above.  Hence $\eta_i$ is an isomorphism.
+Under these identifications, $\eta_i$ is induced by the localization map $A_{f_i}\to\Gamma(X_{f_i},\OO_X)$, which is the isomorphism above.  Hence $\eta_i$ is an isomorphism.
 :::
 
 :::
@@ -219,7 +215,7 @@ $$
 X\text{ is affine}
 \iff
 \begin{array}{c}
-\text{there exist finitely many }f_i\in\Gamma(X,\mathcal O_X)\\
+\text{there exist finitely many }f_i\in\Gamma(X,\OO_X)\\
 \text{generating the unit ideal such that every }X_{f_i}\text{ is affine.}
 \end{array}
 }
@@ -237,4 +233,8 @@ Steps [](#local-inverses-glue-to-g){.pf-ref} and [](#g-inverse-to-f-isomorphism)
 
 :::
 
+:::
+
+::: {.remark}
+Part (b) uses Hartshorne II.2.4 and II.2.16(d).
 :::

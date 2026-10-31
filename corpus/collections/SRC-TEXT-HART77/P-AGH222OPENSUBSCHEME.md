@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Let $(X, \OO_X)$ be a scheme and let $U \subseteq X$ be any open subset.
 Show that $\qty{U, \restrictionof{\OO_X}{U}}$ is a scheme.
-We call this the **induced scheme structure** on the open set $U$, and we refer to $\qty{U, \restrictionof{\OO_X}{U}}$ as an **open subscheme** of $X$.
+We call this the \dfn{induced scheme structure} on the open set $U$, and we refer to $\qty{U, \restrictionof{\OO_X}{U}}$ as an \dfn{open subscheme} of $X$.
 :::
 
 ::: {.solution}
@@ -54,7 +54,7 @@ Fix $P\in U$.  Choose an affine open neighborhood
 $$
 P\in V\subseteq X,
 \qquad
-V\cong\operatorname{Spec}A.
+V\cong\Spec A.
 $$
 Then
 $$
@@ -86,7 +86,7 @@ D_V(f),
 $$
 form a basis for the Zariski topology on
 $$
-V=\operatorname{Spec}A.
+V=\Spec A.
 $$
 Since $U\cap V$ is an open neighborhood of $P$, some distinguished basic neighborhood of $P$ is contained in it.
 :::
@@ -103,7 +103,7 @@ $$
 \boxed{
 \left(D_V(f),\mathcal O_X\restrict_{D_V(f)}\right)
 \cong
-\operatorname{Spec}A_f.
+\Spec A_f.
 }
 $$
 
@@ -112,7 +112,7 @@ On the affine open $V$, the restricted structure sheaf is its usual affine struc
 $$
 \left(D_V(f),\mathcal O_V\restrict_{D_V(f)}\right)
 \cong
-\operatorname{Spec}A_f.
+\Spec A_f.
 $$
 Since
 $$

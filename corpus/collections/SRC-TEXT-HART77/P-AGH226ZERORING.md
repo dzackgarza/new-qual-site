@@ -53,7 +53,7 @@ which is the whole ring and hence is not proper.  Therefore there are no prime i
 ::: {.pf-step #specz-ero-empty}
 Consequently
 $$
-\boxed{\operatorname{Spec}0=\varnothing}
+\boxed{\Spec 0=\varnothing}
 $$
 as a topological space.
 
@@ -64,18 +64,18 @@ The points of the spectrum are the prime ideals, and step [](#zero-ring-no-prime
 :::
 
 ::: {.pf-step #structure-sheaf-empty-scheme}
-The structure sheaf on $\operatorname{Spec}0$ is the unique sheaf of rings on the empty space, with
+The structure sheaf on $\Spec 0$ is the unique sheaf of rings on the empty space, with
 $$
-\mathcal O_{\operatorname{Spec}0}(\varnothing)=0.
+\OO_{\Spec 0}(\varnothing)=0.
 $$
-Thus $\operatorname{Spec}0$ is the empty scheme.
+Thus $\Spec 0$ is the empty scheme.
 
 ::: pf-proof
 The empty topological space has only the open set $\varnothing$.  For a sheaf of unital rings, the sheaf axiom for the empty covering forces the ring of sections on $\varnothing$ to have exactly one element.  The unique one-element unital ring is the zero ring.
 
 This agrees with the affine formula
 $$
-\Gamma(\operatorname{Spec}0,\mathcal O)=0.
+\Gamma(\Spec 0,\OO)=0.
 $$
 :::
 
@@ -96,20 +96,20 @@ A function with empty domain is uniquely determined because it has no values to 
 ::: {.pf-step #unique-sheaf-morphism-from-empty}
 For this continuous map $f:\varnothing\to X$, there is exactly one morphism of sheaves of rings
 $$
-f^\sharp:\mathcal O_X\longrightarrow f_*\mathcal O_{\varnothing}.
+f^\sharp:\OO_X\longrightarrow f_*\OO_{\varnothing}.
 $$
 
 ::: pf-proof
 For every open set $U\subseteq X$,
 $$
-(f_*\mathcal O_{\varnothing})(U)
-=\mathcal O_{\varnothing}(f^{-1}U)
-=\mathcal O_{\varnothing}(\varnothing)
+(f_*\OO_{\varnothing})(U)
+=\OO_{\varnothing}(f^{-1}U)
+=\OO_{\varnothing}(\varnothing)
 =0.
 $$
 There is exactly one unital ring homomorphism
 $$
-\mathcal O_X(U)\longrightarrow0,
+\OO_X(U)\longrightarrow0,
 $$
 because the target has $1=0$.  These unique maps automatically commute with all restrictions, so they define a unique sheaf morphism.
 :::
@@ -129,11 +129,11 @@ The locality condition for a morphism of locally ringed spaces is a condition on
 Hence for every scheme $X$,
 $$
 \boxed{
-\operatorname{Hom}_{\mathrm{Sch}}(\operatorname{Spec}0,X)
+\Hom_{\Sch}(\Spec 0,X)
 \text{ is a singleton}.
 }
 $$
-Therefore $\operatorname{Spec}0$ is the initial object of the category of schemes.
+Therefore $\Spec 0$ is the initial object of the category of schemes.
 
 ::: pf-proof
 Steps [](#unique-continuous-map-from-empty){.pf-ref}, [](#unique-sheaf-morphism-from-empty){.pf-ref} and [](#pair-is-morphism-locally-ringed){.pf-ref} construct a unique scheme morphism from the empty scheme to $X$.  This is exactly the universal property of an initial object.
@@ -146,9 +146,9 @@ The ring-theoretic direction is consistent with this variance: every ring $R$ ha
 $$
 R\longrightarrow0,
 $$
-and the contravariant functor $\operatorname{Spec}$ turns it into the unique scheme morphism
+and the contravariant functor $\Spec $ turns it into the unique scheme morphism
 $$
-\operatorname{Spec}0\longrightarrow\operatorname{Spec}R.
+\Spec 0\longrightarrow\Spec R.
 $$
 
 ::: pf-proof
@@ -158,7 +158,7 @@ There is only one set map from $R$ to the one-element ring, and it preserves all
 :::
 
 ::: pf-qed
-Steps [](#zero-ring-no-primes){.pf-ref}, [](#specz-ero-empty){.pf-ref} and [](#structure-sheaf-empty-scheme){.pf-ref} describe $\operatorname{Spec}0$, and steps [](#unique-continuous-map-from-empty){.pf-ref}, [](#unique-sheaf-morphism-from-empty){.pf-ref}, [](#pair-is-morphism-locally-ringed){.pf-ref} and [](#spec-zero-initial){.pf-ref} prove its initial property.
+Steps [](#zero-ring-no-primes){.pf-ref}, [](#specz-ero-empty){.pf-ref} and [](#structure-sheaf-empty-scheme){.pf-ref} describe $\Spec 0$, and steps [](#unique-continuous-map-from-empty){.pf-ref}, [](#unique-sheaf-morphism-from-empty){.pf-ref}, [](#pair-is-morphism-locally-ringed){.pf-ref} and [](#spec-zero-initial){.pf-ref} prove its initial property.
 :::
 
 :::

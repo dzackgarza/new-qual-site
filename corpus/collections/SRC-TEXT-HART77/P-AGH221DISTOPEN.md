@@ -34,9 +34,9 @@ $$
 $$
 be the localization map.  It induces a morphism of affine schemes
 $$
-\lambda^*:\operatorname{Spec}A_f
+\lambda^*:\Spec A_f
 \longrightarrow
-\operatorname{Spec}A,
+\Spec A,
 \qquad
 \mathfrak q\longmapsto\lambda^{-1}(\mathfrak q).
 $$
@@ -46,13 +46,13 @@ $$
 ::: pf-step
 The image of $\lambda^*$ is exactly
 $$
-D(f)=\{\mathfrak p\in\operatorname{Spec}A:f\notin\mathfrak p\}.
+D(f)=\{\mathfrak p\in\Spec A \st f\notin\mathfrak p\}.
 $$
 
 ::: pf-proof
 If
 $$
-\mathfrak q\in\operatorname{Spec}A_f,
+\mathfrak q\in\Spec A_f,
 $$
 then $f/1$ is a unit in $A_f$, so it cannot lie in the prime ideal $\mathfrak q$.  Hence
 $$
@@ -85,7 +85,7 @@ Thus every point of $D(f)$ occurs in the image.
 Extension and contraction give inverse bijections
 $$
 \boxed{
-\operatorname{Spec}A_f
+\Spec A_f
 \xleftrightarrow[\mathfrak p\mapsto\mathfrak pA_f]
 {\mathfrak q\mapsto\lambda^{-1}(\mathfrak q)}
 D(f).
@@ -102,7 +102,7 @@ The standard prime-correspondence theorem for localization says that prime ideal
 The bijection in step [](#spec-af-bijects-df){.pf-ref} is a homeomorphism.
 
 ::: pf-proof
-A basis for the topology on $\operatorname{Spec}A_f$ is given by distinguished opens
+A basis for the topology on $\Spec A_f$ is given by distinguished opens
 $$
 D_{A_f}(a/1),
 \qquad
@@ -170,7 +170,7 @@ $$
 :::
 
 ::: {.pf-step #structure-sheaf-iso}
-Under the homeomorphism of step [](#bijection-is-homeomorphism){.pf-ref}, the structure sheaf on $\operatorname{Spec}A_f$ is naturally isomorphic to the restriction $\mathcal O_X\restrict_{D(f)}$.
+Under the homeomorphism of step [](#bijection-is-homeomorphism){.pf-ref}, the structure sheaf on $\Spec A_f$ is naturally isomorphic to the restriction $\mathcal O_X\restrict_{D(f)}$.
 
 ::: pf-proof
 It is enough to compare the sheaves on the basis
@@ -180,13 +180,13 @@ D_A(a)\cap D_A(f)
 $$
 of $D(f)$.
 
-The corresponding basic open in $\operatorname{Spec}A_f$ is
+The corresponding basic open in $\Spec A_f$ is
 $$
 D_{A_f}(a/1).
 $$
 Its sections are
 $$
-\mathcal O_{\operatorname{Spec}A_f}
+\mathcal O_{\Spec A_f}
 \bigl(D_{A_f}(a/1)\bigr)
 =(A_f)_{a/1}.
 $$
@@ -214,7 +214,7 @@ $$
 \boxed{
 \left(D(f),\mathcal O_X\restrict_{D(f)}\right)
 \cong
-\operatorname{Spec}A_f
+\Spec A_f
 }
 $$
 as locally ringed spaces.

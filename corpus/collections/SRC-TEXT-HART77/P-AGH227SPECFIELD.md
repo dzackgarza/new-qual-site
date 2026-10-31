@@ -34,11 +34,11 @@ Show that to give a morphism $\Spec K \to X$ is equivalent to giving a point $x 
 ::: {.solution}
 Let
 $$
-S=\operatorname{Spec}K.
+S=\Spec K.
 $$
 Since $K$ is a field, $S$ has a single point, which we denote by $\eta$, and
 $$
-\mathcal O_{S,\eta}=K
+\OO_{S,\eta}=K
 $$
 with maximal ideal $(0)$.
 
@@ -56,16 +56,16 @@ $$
 and a local ring homomorphism
 $$
 f_\eta^\sharp:
-\mathcal O_{X,x}
+\OO_{X,x}
 \longrightarrow K.
 $$
 
 ::: pf-proof
 The underlying continuous map sends the unique point $\eta$ to a point $x\in X$.  Since a morphism of schemes is a morphism of locally ringed spaces, its induced map on stalks at $\eta$ is
 $$
-\mathcal O_{X,f(\eta)}
+\OO_{X,f(\eta)}
 \longrightarrow
-\mathcal O_{S,\eta}=K,
+\OO_{S,\eta}=K,
 $$
 and this homomorphism is local by definition.
 :::
@@ -75,29 +75,29 @@ and this homomorphism is local by definition.
 ::: {.pf-step #kernel-is-mx}
 The kernel of the local homomorphism in step [](#f-determines-point-and-local-hom){.pf-ref} is exactly
 $$
-\mathfrak m_x.
+\mfm_x.
 $$
 
 ::: pf-proof
 For a local ring homomorphism
 $$
-\phi:(A,\mathfrak m_A)
+\phi:(A,\mfm_A)
 \longrightarrow
-(B,\mathfrak m_B),
+(B,\mfm_B),
 $$
 one has
 $$
-\phi^{-1}(\mathfrak m_B)=\mathfrak m_A.
+\phi^{-1}(\mfm_B)=\mfm_A.
 $$
 Here the target is the field $K$, whose maximal ideal is
 $$
-\mathfrak m_K=(0).
+\mfm_K=(0).
 $$
 Thus
 $$
 \ker f_\eta^\sharp
 =(f_\eta^\sharp)^{-1}(0)
-=\mathfrak m_x.
+=\mfm_x.
 $$
 :::
 
@@ -108,7 +108,7 @@ Hence $f$ determines an injective field homomorphism
 $$
 \boxed{
 \kappa(x)
-=\mathcal O_{X,x}/\mathfrak m_x
+=\OO_{X,x}/\mfm_x
 \hookrightarrow K.
 }
 $$
@@ -116,9 +116,9 @@ $$
 ::: pf-proof
 By step [](#kernel-is-mx){.pf-ref}, the stalk map factors through the quotient by its kernel:
 $$
-\mathcal O_{X,x}
+\OO_{X,x}
 \longrightarrow
-\mathcal O_{X,x}/\mathfrak m_x
+\OO_{X,x}/\mfm_x
 \longrightarrow
 K.
 $$
@@ -159,24 +159,24 @@ Both subsets are open, so $f$ is continuous.
 ::: {.pf-step #fsharp-sheaf-morphism-construction}
 Define a sheaf morphism
 $$
-f^\sharp:\mathcal O_X\longrightarrow f_*\mathcal O_S
+f^\sharp:\OO_X\longrightarrow f_*\OO_S
 $$
 as follows.  For an open $U\subseteq X$ containing $x$, put
 $$
 f_U^\sharp:
-\mathcal O_X(U)
+\OO_X(U)
 \longrightarrow
-\mathcal O_{X,x}
+\OO_{X,x}
 \longrightarrow
 \kappa(x)
 \xrightarrow{\iota}
 K
-=(f_*\mathcal O_S)(U),
+=(f_*\OO_S)(U),
 $$
 where the first map takes a section to its germ at $x$.  If $x\notin U$, use the unique map
 $$
-\mathcal O_X(U)\longrightarrow0
-=(f_*\mathcal O_S)(U).
+\OO_X(U)\longrightarrow0
+=(f_*\OO_S)(U).
 $$
 
 ::: pf-proof
@@ -184,7 +184,7 @@ If
 $$
 V\subseteq U
 $$
-and both contain $x$, taking the germ at $x$ after restriction gives the same element of $\mathcal O_{X,x}$ as taking the germ directly.  Thus the displayed maps commute with restrictions.
+and both contain $x$, taking the germ at $x$ after restriction gives the same element of $\OO_{X,x}$ as taking the germ directly.  Thus the displayed maps commute with restrictions.
 
 If $x\notin V$, the target over $V$ is the zero ring, so compatibility is automatic.  Hence the maps $f_U^\sharp$ define a morphism of sheaves of rings.
 :::
@@ -197,7 +197,7 @@ The pair $(f,f^\sharp)$ from steps [](#f-continuous-map-construction){.pf-ref} a
 ::: pf-proof
 The only stalk map to check is at the point $\eta\in S$.  It is
 $$
-\mathcal O_{X,x}
+\OO_{X,x}
 \longrightarrow
 \kappa(x)
 \xrightarrow{\iota}
@@ -205,12 +205,12 @@ K.
 $$
 Its kernel is
 $$
-\mathfrak m_x,
+\mfm_x,
 $$
 because the quotient map has that kernel and $\iota$ is injective.  Since the maximal ideal of $K$ is zero,
 $$
 (f_\eta^\sharp)^{-1}(0)
-=\mathfrak m_x.
+=\mfm_x.
 $$
 Thus the stalk map is local, so $(f,f^\sharp)$ is a morphism of locally ringed spaces and hence a morphism of schemes.
 :::
@@ -231,15 +231,15 @@ x=f(\eta).
 $$
 For every open $U$ containing $x$, the original sheaf map
 $$
-\mathcal O_X(U)\to K
+\OO_X(U)\to K
 $$
 factors through the stalk map
 $$
-\mathcal O_{X,x}\to K,
+\OO_{X,x}\to K,
 $$
 because the stalk map is induced from the sheaf morphism.  By steps [](#kernel-is-mx){.pf-ref} and [](#residue-field-embeds-in-k){.pf-ref} this stalk map is exactly the quotient
 $$
-\mathcal O_{X,x}\to\kappa(x)
+\OO_{X,x}\to\kappa(x)
 $$
 followed by the extracted embedding into $K$.  This is precisely the formula in step [](#fsharp-sheaf-morphism-construction){.pf-ref}.  On opens not containing $x$, both maps land in the zero ring.  Hence the entire morphism is recovered.
 :::
@@ -256,7 +256,7 @@ constructing a morphism and then extracting its residue-field map recovers the s
 ::: pf-proof
 The constructed continuous map sends the unique point of $S$ to $x$.  Its stalk map is
 $$
-\mathcal O_{X,x}
+\OO_{X,x}
 \to\kappa(x)
 \xrightarrow{\iota}K.
 $$
@@ -269,10 +269,10 @@ Passing to the quotient by the maximal ideal therefore gives exactly the origina
 Therefore there is a natural bijection
 $$
 \boxed{
-\operatorname{Hom}_{\mathrm{Sch}}(\operatorname{Spec}K,X)
+\Hom_{\Sch}(\Spec K,X)
 \cong
 \left\{
-(x,\iota):
+(x,\iota) \st
 x\in X,
 \ \iota:\kappa(x)\hookrightarrow K
 \right\}.

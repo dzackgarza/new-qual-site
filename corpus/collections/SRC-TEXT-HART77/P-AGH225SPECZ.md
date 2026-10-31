@@ -49,23 +49,23 @@ The ring $\ZZ$ is a principal ideal domain.  A nonzero prime ideal is therefore 
 Hence, as a set,
 $$
 \boxed{
-\operatorname{Spec}\ZZ
-=\{(0)\}\cup\{(p):p\text{ prime}\}.
+\Spec \ZZ
+=\{(0)\}\cup\{(p) \st p\text{ prime}\}.
 }
 $$
 The point $(0)$ is the generic point, and every $(p)$ is closed.
 
 ::: pf-proof
-The closure of a point $\mathfrak p$ in an affine spectrum is
+The closure of a point $\mfp $ in an affine spectrum is
 $$
-V(\mathfrak p)
-=\{\mathfrak q:\mathfrak q\supseteq\mathfrak p\}.
+V(\mfp)
+=\{\mfq \st \mfq\supseteq\mfp \}.
 $$
 Thus
 $$
 \overline{\{(0)\}}
 =V(0)
-=\operatorname{Spec}\ZZ,
+=\Spec \ZZ,
 $$
 so $(0)$ is generic.
 
@@ -79,18 +79,18 @@ because the only prime ideal containing the maximal ideal $(p)$ is itself.  Henc
 :::
 
 ::: {.pf-step #proper-closed-subsets-vn}
-The proper closed subsets of $\operatorname{Spec}\ZZ$ are finite sets of closed points.
+The proper closed subsets of $\Spec \ZZ$ are finite sets of closed points.
 More precisely, for $0\ne n\in\ZZ$,
 $$
 \boxed{
-V(n)=\{(p):p\mid n\}.
+V(n)=\{(p) \st p\mid n\}.
 }
 $$
 
 ::: pf-proof
-A prime ideal $\mathfrak p$ belongs to $V(n)$ exactly when
+A prime ideal $\mfp $ belongs to $V(n)$ exactly when
 $$
-n\in\mathfrak p.
+n\in\mfp.
 $$
 The generic prime $(0)$ contains $n$ only when $n=0$.  For a closed point $(p)$,
 $$
@@ -107,21 +107,21 @@ Only finitely many primes divide a nonzero integer.  Conversely, every closed su
 The local rings are
 $$
 \boxed{
-\mathcal O_{\operatorname{Spec}\ZZ,(0)}=\QQ,
+\OO_{\Spec \ZZ,(0)}=\QQ,
 \qquad
-\mathcal O_{\operatorname{Spec}\ZZ,(p)}=\ZZ_{(p)}.
+\OO_{\Spec \ZZ,(p)}=\ZZ_{(p)}.
 }
 $$
 
 ::: pf-proof
 For every affine scheme,
 $$
-\mathcal O_{\operatorname{Spec}A,\mathfrak p}=A_{\mathfrak p}.
+\OO_{\Spec A,\mfp}=A_{\mfp}.
 $$
 At $(0)$, localizing $\ZZ$ at all nonzero integers gives its fraction field $\QQ$.  At $(p)$ one obtains the localization
 $$
 \ZZ_{(p)}
-=\left\{\frac ab:p\nmid b\right\}.
+=\left\{\frac ab \st p\nmid b\right\}.
 $$
 :::
 
@@ -130,20 +130,20 @@ $$
 ::: {.pf-step #hom-specz-ring-hom-bijection}
 For every scheme $X$, morphisms
 $$
-X\longrightarrow\operatorname{Spec}\ZZ
+X\longrightarrow\Spec \ZZ
 $$
 are naturally in bijection with ring homomorphisms
 $$
-\ZZ\longrightarrow\Gamma(X,\mathcal O_X).
+\ZZ\longrightarrow\Gamma(X,\OO_X).
 $$
 
 ::: pf-proof
 This is Hartshorne II.2.4 applied to the ring $A=\ZZ$:
 $$
-\operatorname{Hom}_{\mathrm{Sch}}(X,\operatorname{Spec}\ZZ)
+\Hom_{\Sch}(X,\Spec \ZZ)
 \cong
-\operatorname{Hom}_{\mathrm{Ring}}
-(\ZZ,\Gamma(X,\mathcal O_X)).
+\Hom_{\Ring}
+(\ZZ,\Gamma(X,\OO_X)).
 $$
 :::
 
@@ -171,14 +171,14 @@ for every positive integer $n$, and similarly for negative integers.  Thus the h
 :::
 
 ::: {.pf-step #specz-terminal}
-Consequently, every scheme has a unique morphism to $\operatorname{Spec}\ZZ$:
+Consequently, every scheme has a unique morphism to $\Spec \ZZ$:
 $$
 \boxed{
-\operatorname{Hom}_{\mathrm{Sch}}(X,\operatorname{Spec}\ZZ)
+\Hom_{\Sch}(X,\Spec \ZZ)
 \text{ is a singleton}.
 }
 $$
-Hence $\operatorname{Spec}\ZZ$ is the final object in the category of schemes.
+Hence $\Spec \ZZ$ is the final object in the category of schemes.
 
 ::: pf-proof
 Combine steps [](#hom-specz-ring-hom-bijection){.pf-ref} and [](#unique-map-from-z){.pf-ref}.

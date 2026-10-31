@@ -31,7 +31,7 @@ To $\CC$?
 ::: {.solution}
 Put
 $$
-X=\operatorname{Spec}\RR[x].
+X=\Spec \RR[x].
 $$
 
 ::: pf
@@ -166,7 +166,7 @@ A nonzero polynomial has only finitely many irreducible factors.  Hence $V(f)$ i
 ::: {.pf-step #real-line-as-cofinite-subset}
 The real line $\RR$ identifies with the subset of real closed points
 $$
-\{(x-a):a\in\RR\}\subseteq X,
+\{(x-a) \st a\in\RR\}\subseteq X,
 $$
 and the induced Zariski topology on this subset is the cofinite topology.
 
@@ -227,9 +227,9 @@ $$
 induces a surjective closed map
 $$
 \pi:
-\operatorname{Spec}\CC[x]
+\Spec \CC[x]
 \longrightarrow
-\operatorname{Spec}\RR[x]
+\Spec \RR[x]
 $$
 which sends
 $$
@@ -269,7 +269,7 @@ The zero ideal contracts to the zero ideal, so the generic point maps to the gen
 :::
 
 ::: {.pf-step #picture-of-specrx}
-Thus one may picture $\operatorname{Spec}\RR[x]$ as
+Thus one may picture $\Spec \RR[x]$ as
 $$
 \boxed{
 \text{one generic point together with the conjugation quotient of }\CC

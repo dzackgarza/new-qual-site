@@ -42,8 +42,8 @@ Then show that there is a scheme $X$, together with morphisms $\psi_i: X_i \to X
 
 (iv) $\psi_i = \psi_j \circ \phi_{ij}$ on $U_{ij}$.
 
-We say that $X$ is obtained by **glueing** the schemes $X_i$ along the isomorphisms $\phi_{ij}$.
-An interesting special case is when the family $X_i$ is arbitrary but all the $U_{ij}$ and $\phi_{ij}$ are empty; then $X$ is called the **disjoint union** of the $X_i$ and is denoted $\coprod X_i$.
+We say that $X$ is obtained by \dfn{glueing} the schemes $X_i$ along the isomorphisms $\phi_{ij}$.
+An interesting special case is when the family $X_i$ is arbitrary but all the $U_{ij}$ and $\phi_{ij}$ are empty; then $X$ is called the \dfn{disjoint union} of the $X_i$ and is denoted $\coprod X_i$.
 :::
 
 ::: {.solution}
@@ -51,7 +51,7 @@ For convenience set
 $$
 U_{ii}=X_i,
 \qquad
-\phi_{ii}=\operatorname{id}_{X_i}.
+\phi_{ii}=\id_{X_i}.
 $$
 
 ::: pf
@@ -76,7 +76,7 @@ Reflexivity follows from
 $$
 U_{ii}=X_i,
 \qquad
-\phi_{ii}=\operatorname{id}.
+\phi_{ii}=\id.
 $$
 
 If
@@ -286,22 +286,22 @@ $$
 :::
 
 ::: {.pf-step #gi-sheaves-and-overlap-isos}
-Transport the structure sheaf $\mathcal O_{X_i}$ along the homeomorphism
+Transport the structure sheaf $\OO_{X_i}$ along the homeomorphism
 $$
 \psi_i:X_i\xrightarrow{\sim}V_i
 $$
-to obtain a sheaf $\mathcal G_i$ of rings on $V_i$.
+to obtain a sheaf $\mcg_i$ of rings on $V_i$.
 The scheme isomorphisms $\phi_{ij}$ induce compatible sheaf isomorphisms
 $$
-\mathcal G_i\restrict_{V_i\cap V_j}
+\mcg_i\restrict_{V_i\cap V_j}
 \xrightarrow{\sim}
-\mathcal G_j\restrict_{V_i\cap V_j}.
+\mcg_j\restrict_{V_i\cap V_j}.
 $$
 
 ::: pf-proof
 Define
 $$
-\mathcal G_i=(\psi_i)_*\mathcal O_{X_i}
+\mcg_i=(\psi_i)_*\OO_{X_i}
 $$
 on $V_i$, using the homeomorphism $\psi_i$.
 
@@ -326,15 +326,15 @@ imply the corresponding inverse and cocycle identities for these sheaf isomorphi
 :::
 
 ::: {.pf-step #gi-glue-to-ox}
-The local sheaves $\mathcal G_i$ glue to a sheaf of rings
+The local sheaves $\mcg_i$ glue to a sheaf of rings
 $$
-\mathcal O_X
+\OO_X
 $$
 on $\underlyingspace{X}$, together with isomorphisms
 $$
-\mathcal O_X\restrict_{V_i}
+\OO_X\restrict_{V_i}
 \xrightarrow{\sim}
-\mathcal G_i.
+\mcg_i.
 $$
 
 ::: pf-proof
@@ -350,7 +350,7 @@ and the compatible sheaf isomorphisms from step [](#gi-sheaves-and-overlap-isos)
 ::: {.pf-step #x-is-scheme-psi-i-iso}
 The locally ringed space
 $$
-X=(\underlyingspace{X},\mathcal O_X)
+X=(\underlyingspace{X},\OO_X)
 $$
 is a scheme, and each
 $$
@@ -361,9 +361,9 @@ is an isomorphism of schemes onto the open subscheme $V_i$.
 ::: pf-proof
 By construction,
 $$
-(V_i,\mathcal O_X\restrict_{V_i})
+(V_i,\OO_X\restrict_{V_i})
 \cong
-(X_i,\mathcal O_{X_i})
+(X_i,\OO_{X_i})
 $$
 as locally ringed spaces.
 Thus every $V_i$ is itself a scheme and $\psi_i$ is an isomorphism onto it.
@@ -442,9 +442,9 @@ G:X'\to X.
 $$
 Both composites restrict to the identity on the open covers by the $V_i$ and $V_i'$, hence
 $$
-GF=\operatorname{id}_X,
+GF=\id_X,
 \qquad
-FG=\operatorname{id}_{X'}.
+FG=\id_{X'}.
 $$
 Thus $F$ is an isomorphism.  Any compatible isomorphism must agree with $F_i$ on every $V_i$, so it is unique.
 :::
@@ -463,7 +463,7 @@ is their disjoint union as a scheme.
 ::: pf-proof
 The equivalence relation of step [](#sim-is-equivalence-relation){.pf-ref} becomes equality within each component and makes no cross-component identifications, so the underlying space is the topological disjoint union.
 
-There are no nontrivial overlap isomorphisms of structure sheaves to impose.  Thus $\mathcal O_X$ restricts independently to $\mathcal O_{X_i}$ on each open-and-closed component.  This is precisely the scheme-theoretic disjoint union.
+There are no nontrivial overlap isomorphisms of structure sheaves to impose.  Thus $\OO_X$ restricts independently to $\OO_{X_i}$ on each open-and-closed component.  This is precisely the scheme-theoretic disjoint union.
 :::
 
 :::

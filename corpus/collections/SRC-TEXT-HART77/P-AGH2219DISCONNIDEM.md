@@ -28,7 +28,7 @@ Show that the following conditions are equivalent:
 
 (i) $\Spec A$ is disconnected;
 
-(ii) there exist nonzero elements $e_1, e_2 \in A$ such that $e_1 e_2 = 0$, $e_1^2 = e_1$, $e_2^2 = e_2$, and $e_1 + e_2 = 1$ (these are called **orthogonal idempotents**);
+(ii) there exist nonzero elements $e_1, e_2 \in A$ such that $e_1 e_2 = 0$, $e_1^2 = e_1$, $e_2^2 = e_2$, and $e_1 + e_2 = 1$ (these are called \dfn{orthogonal idempotents});
 
 (iii) $A$ is isomorphic to a direct product $A_1 \times A_2$ of two nonzero rings.
 :::
@@ -49,9 +49,9 @@ with $U,V$ nonempty disjoint open subsets.  Since they are complements of one an
 
 The sheaf axiom for the disjoint open cover $\{U,V\}$ gives an isomorphism of rings
 $$
-A=\Gamma(\Spec A,\mathcal O)
+A=\Gamma(\Spec A,\OO)
 \xrightarrow{\sim}
-\Gamma(U,\mathcal O)\times\Gamma(V,\mathcal O).
+\Gamma(U,\OO)\times\Gamma(V,\OO).
 $$
 Let $e_1,e_2\in A$ be the preimages of
 $$
@@ -67,13 +67,13 @@ e_1e_2=0,
 \qquad
 e_1+e_2=1.
 $$
-Both are nonzero: if, for example, $e_1=0$, then its restriction to the nonempty open $U$ would be the zero section, contradicting that it restricts to $1$ there.  Thus condition (2) holds.
+Both are nonzero: if, for example, $e_1=0$, then its restriction to the nonempty open $U$ would be the zero section, contradicting that it restricts to $1$ there.  Thus condition (ii) holds.
 :::
 
 :::
 
 ::: {.pf-step #idempotents-give-product-decomp}
-Suppose condition (2) holds.  Then
+Suppose condition (ii) holds.  Then
 $$
 \boxed{A\cong Ae_1\times Ae_2.}
 $$
@@ -108,7 +108,7 @@ while
 $$
 \Psi(\Phi(a))=a(e_1+e_2)=a.
 $$
-Thus $\Phi$ is an isomorphism.  Since $e_1,e_2$ are nonzero, both factor rings are nonzero.  Hence condition (3) holds.
+Thus $\Phi$ is an isomorphism.  Since $e_1,e_2$ are nonzero, both factor rings are nonzero.  Hence condition (iii) holds.
 :::
 
 :::
@@ -127,11 +127,11 @@ e_1=(1,0),
 \qquad
 e_2=(0,1).
 $$
-These are complementary orthogonal idempotents.  For every prime ideal $\mathfrak p\subset A$, the relation
+These are complementary orthogonal idempotents.  For every prime ideal $\mfp \subset A$, the relation
 $$
 e_1e_2=0
 $$
-forces $e_1\in\mathfrak p$ or $e_2\in\mathfrak p$, while $e_1+e_2=1$ prevents both from lying in $\mathfrak p$.
+forces $e_1\in\mfp $ or $e_2\in\mfp $, while $e_1+e_2=1$ prevents both from lying in $\mfp $.
 
 Hence
 $$
@@ -158,7 +158,7 @@ and a nonzero ring has a prime ideal.  Thus $\Spec A$ is a disjoint union of two
 Therefore the three conditions are equivalent.
 
 ::: pf-proof
-Step [](#disconnected-implies-idempotents){.pf-ref} proves $(1)\Rightarrow(2)$, step [](#idempotents-give-product-decomp){.pf-ref} proves $(2)\Rightarrow(3)$, and step [](#product-implies-disconnected){.pf-ref} proves $(3)\Rightarrow(1)$.
+Step [](#disconnected-implies-idempotents){.pf-ref} proves (i) $\Rightarrow$ (ii), step [](#idempotents-give-product-decomp){.pf-ref} proves (ii) $\Rightarrow$ (iii), and step [](#product-implies-disconnected){.pf-ref} proves (iii) $\Rightarrow$ (i).
 :::
 
 :::
@@ -174,7 +174,7 @@ A\text{ has no idempotents other than }0,1.
 $$
 
 ::: pf-proof
-A nontrivial idempotent $e$ gives the complementary pair $e,1-e$, and every pair in condition (2) has this form.
+A nontrivial idempotent $e$ gives the complementary pair $e,1-e$, and every pair in condition (ii) has this form.
 :::
 
 :::

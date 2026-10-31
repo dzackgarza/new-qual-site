@@ -23,14 +23,14 @@ audit:
 ---
 
 ::: {.problem}
-A scheme $(X, \OO_X)$ is **reduced** if for every open set $U \subseteq X$ the ring $\OO_X(U)$ has no nilpotent elements.
+A scheme $(X, \OO_X)$ is \dfn{reduced} if for every open set $U \subseteq X$ the ring $\OO_X(U)$ has no nilpotent elements.
 
 (a) Show that $(X, \OO_X)$ is reduced if and only if for every $P \in X$ the local ring $\OO_{X, P}$ has no nilpotent elements.
 
 (b) Let $(X, \OO_X)$ be a scheme.
 Let $(\OO_X)_{\mathrm{red}}$ be the sheaf associated to the presheaf $U \mapsto \OO_X(U)_{\mathrm{red}}$, where for any ring $A$ we denote by $A_{\mathrm{red}}$ the quotient of $A$ by its ideal of nilpotent elements.
 Show that $\qty{X, (\OO_X)_{\mathrm{red}}}$ is a scheme.
-We call it the **reduced scheme** associated to $X$ and denote it by $X_{\mathrm{red}}$.
+We call it the \dfn{reduced scheme} associated to $X$ and denote it by $X_{\mathrm{red}}$.
 Show that there is a morphism of schemes $X_{\mathrm{red}} \to X$ which is a homeomorphism on the underlying topological spaces.
 
 (c) Let $f: X \to Y$ be a morphism of schemes and assume that $X$ is reduced.
@@ -188,12 +188,12 @@ $$
 ::: {.pf-step #reduced-sheaf-restricts-to-specared}
 Let
 $$
-V=\operatorname{Spec}A\subseteq X
+V=\Spec A\subseteq X
 $$
 be affine.
 Then the restriction of $(\mathcal O_X)_{\mathrm{red}}$ to $V$ is the usual structure sheaf of
 $$
-\operatorname{Spec}A_{\mathrm{red}}.
+\Spec A_{\mathrm{red}}.
 $$
 
 ::: pf-proof
@@ -212,7 +212,7 @@ $$
 $$
 which is exactly
 $$
-\mathcal O_{\operatorname{Spec}A_{\mathrm{red}}}(D(\bar f)).
+\mathcal O_{\Spec A_{\mathrm{red}}}(D(\bar f)).
 $$
 These identifications commute with restriction maps, so after sheafification the two structure sheaves agree on the affine chart.
 :::
@@ -227,9 +227,9 @@ $$
 induces a homeomorphism
 $$
 \boxed{
-\operatorname{Spec}A_{\mathrm{red}}
+\Spec A_{\mathrm{red}}
 \xrightarrow{\sim}
-\operatorname{Spec}A.
+\Spec A.
 }
 $$
 
@@ -244,9 +244,9 @@ A\to A/\sqrt0
 $$
 give a bijection
 $$
-\operatorname{Spec}(A/\sqrt0)
+\Spec (A/\sqrt0)
 \longleftrightarrow
-\operatorname{Spec}A.
+\Spec A.
 $$
 
 Closed sets correspond because an ideal $I\subseteq A$ and its image
@@ -273,11 +273,11 @@ Choose an affine open cover
 $$
 X=\bigcup_iV_i,
 \qquad
-V_i\cong\operatorname{Spec}A_i.
+V_i\cong\Spec A_i.
 $$
 By steps [](#reduced-sheaf-restricts-to-specared){.pf-ref} and [](#speca-red-homeomorphic-to-speca){.pf-ref}, on the same underlying open subset $V_i$ the reduced structure is isomorphic to
 $$
-\operatorname{Spec}(A_i)_{\mathrm{red}}.
+\Spec (A_i)_{\mathrm{red}}.
 $$
 Thus $X_{\mathrm{red}}$ is covered by affine schemes and hence is a scheme.
 :::
@@ -317,9 +317,9 @@ $$
 
 Affinely it is the morphism
 $$
-\operatorname{Spec}A_{\mathrm{red}}
+\Spec A_{\mathrm{red}}
 \longrightarrow
-\operatorname{Spec}A
+\Spec A
 $$
 from step [](#speca-red-homeomorphic-to-speca){.pf-ref}, so it is a homeomorphism locally and hence globally.
 
@@ -503,9 +503,9 @@ Hence the scheme morphism is unique.
 Thus reduction has the universal property
 $$
 \boxed{
-\operatorname{Hom}(X,Y_{\mathrm{red}})
+\Hom(X,Y_{\mathrm{red}})
 \xrightarrow{\sim}
-\operatorname{Hom}(X,Y)
+\Hom(X,Y)
 }
 $$
 for every reduced scheme $X$.

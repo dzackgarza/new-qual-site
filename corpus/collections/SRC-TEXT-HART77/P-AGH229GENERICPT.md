@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-If $X$ is a topological space and $Z$ an irreducible closed subset of $X$, a **generic point** for $Z$ is a point $\zeta$ such that $Z = \cl\qty{\theset{\zeta}}$.
+If $X$ is a topological space and $Z$ an irreducible closed subset of $X$, a \dfn{generic point} for $Z$ is a point $\zeta$ such that $Z = \cl\qty{\theset{\zeta}}$.
 If $X$ is a scheme, show that every nonempty irreducible closed subset has a unique generic point.
 :::
 
@@ -39,7 +39,7 @@ be a nonempty irreducible closed subset.
 ::: pf-step
 Choose an affine open subset
 $$
-U=\operatorname{Spec}A\subseteq X
+U=\Spec A\subseteq X
 $$
 such that
 $$
@@ -50,11 +50,7 @@ Then $Z\cap U$ is a nonempty irreducible closed subset of $U$.
 ::: pf-proof
 An affine open cover of $X$ covers the nonempty set $Z$, so some affine open $U$ meets it.
 
-Since $Z$ is closed in $X$, the intersection $Z\cap U$ is closed in the subspace $U$.  It is irreducible because every nonempty open subset of an irreducible space is irreducible: if
-$$
-Z\cap U=C_1\cup C_2
-$$
-with $C_1,C_2$ closed in $Z\cap U$, then taking closures in $Z$ would write the dense open subset $Z\cap U$ as contained in the union of two proper closed subsets unless one $C_i$ were the whole intersection.  Equivalently, the standard topological lemma says a nonempty open subspace of an irreducible space is irreducible.
+Since $Z$ is closed in $X$, the intersection $Z\cap U$ is closed in the subspace $U$.  It is irreducible: $Z\cap U$ is open in $Z$, so any two nonempty open subsets of $Z\cap U$ are nonempty open subsets of the irreducible space $Z$, and therefore meet.
 :::
 
 :::
@@ -62,15 +58,15 @@ with $C_1,C_2$ closed in $Z\cap U$, then taking closures in $Z$ would write the 
 ::: {.pf-step #unique-prime-for-zcapu}
 There is a unique prime ideal
 $$
-\mathfrak p\subseteq A
+\mfp \subseteq A
 $$
 such that
 $$
-\boxed{Z\cap U=V(\mathfrak p).}
+\boxed{Z\cap U=V(\mfp).}
 $$
 
 ::: pf-proof
-Any closed subset of $\operatorname{Spec}A$ has the form
+Any closed subset of $\Spec A$ has the form
 $$
 V(I)
 $$
@@ -108,18 +104,18 @@ Thus $\sqrt I$ is prime.
 
 Take
 $$
-\mathfrak p=\sqrt I.
+\mfp =\sqrt I.
 $$
 Uniqueness follows because for prime ideals
 $$
-V(\mathfrak p)=V(\mathfrak q)
+V(\mfp)=V(\mfq )
 $$
 implies
 $$
-\mathfrak p
-=\sqrt{\mathfrak p}
-=\sqrt{\mathfrak q}
-=\mathfrak q.
+\mfp 
+=\sqrt{\mfp}
+=\sqrt{\mfq }
+=\mfq .
 $$
 :::
 
@@ -130,16 +126,16 @@ Let
 $$
 \zeta\in U
 $$
-be the point corresponding to $\mathfrak p$.  Then
+be the point corresponding to $\mfp $.  Then
 $$
 \overline{\{\zeta\}}^{\,U}
 =Z\cap U.
 $$
 
 ::: pf-proof
-In an affine spectrum, the closure of the point corresponding to a prime $\mathfrak p$ is
+In an affine spectrum, the closure of the point corresponding to a prime $\mfp $ is
 $$
-V(\mathfrak p).
+V(\mfp).
 $$
 Apply step [](#unique-prime-for-zcapu){.pf-ref}.
 :::
@@ -219,7 +215,7 @@ $$
 $$
 are both generic points.  Choose an affine open neighborhood
 $$
-\zeta\in U=\operatorname{Spec}A.
+\zeta\in U=\Spec A.
 $$
 Then
 $$
@@ -234,13 +230,13 @@ The closures of $\zeta$ and $\eta$ inside $U$ are both
 $$
 Z\cap U.
 $$
-If they correspond to prime ideals $\mathfrak p$ and $\mathfrak q$ of $A$, then
+If they correspond to prime ideals $\mfp $ and $\mfq $ of $A$, then
 $$
-V(\mathfrak p)=V(\mathfrak q).
+V(\mfp)=V(\mfq ).
 $$
 As in step [](#unique-prime-for-zcapu){.pf-ref}, equality of these closed sets for prime ideals implies
 $$
-\mathfrak p=\mathfrak q.
+\mfp =\mfq .
 $$
 Therefore
 $$

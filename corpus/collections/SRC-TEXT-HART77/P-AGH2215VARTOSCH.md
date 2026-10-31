@@ -33,7 +33,7 @@ $$
 \Hom_{\mathsf{Var}_k}(V, W) \to \Hom_{\Sch_k}\qty{t(V), t(W)}
 $$
 is bijective.
-Injectivity follows because a morphism of varieties over $k$ is determined by its action on closed points; surjectivity requires the residue-field preservation established in parts (a) and (b).
+(Injectivity is easy. The hard part is to show it is surjective.)
 :::
 
 ::: {.solution}
@@ -55,7 +55,7 @@ $$
 ::: pf-proof
 Choose an affine open subset
 $$
-U=\operatorname{Spec}A
+U=\Spec A
 $$
 of the associated scheme meeting the point $\eta_Z$.  In the classical variety, this corresponds to an affine open subset of $V$, and
 $$
@@ -63,12 +63,12 @@ Z\cap U
 $$
 is defined by a prime ideal
 $$
-\mathfrak p\subseteq A.
+\mfp \subseteq A.
 $$
-The point $\eta_Z$ is the prime $\mathfrak p$.  Its residue field is
+The point $\eta_Z$ is the prime $\mfp $.  Its residue field is
 $$
-\kappa(\mathfrak p)
-=\operatorname{Frac}(A/\mathfrak p),
+\kappa(\mfp)
+=\Frac(A/\mfp),
 $$
 which is precisely the rational function field of the irreducible variety $Z$.
 :::
@@ -88,11 +88,11 @@ p\in V.
 $$
 Choose an affine neighborhood with coordinate ring $A$.  The point is a maximal ideal
 $$
-\mathfrak m\subseteq A.
+\mfm \subseteq A.
 $$
 Since $A$ is a finitely generated $k$-algebra and $k$ is algebraically closed, the weak Nullstellensatz gives
 $$
-A/\mathfrak m\cong k.
+A/\mfm \cong k.
 $$
 This quotient is the residue field at the closed point.
 :::
@@ -114,7 +114,7 @@ $$
 The transcendence degree of the function field of an irreducible variety equals its dimension, so
 $$
 \dim Z
-=\operatorname{trdeg}_k k(Z)
+=\trdeg_k k(Z)
 =0.
 $$
 
@@ -165,9 +165,9 @@ $$
 The local homomorphism
 $$
 f_P^\sharp:
-\mathcal O_{Y,Q}
+\OO_{Y,Q}
 \longrightarrow
-\mathcal O_{X,P}
+\OO_{X,P}
 $$
 induces an injective homomorphism of residue fields
 $$
@@ -287,16 +287,16 @@ $$
 ::: {.pf-step #f-restriction-induced-by-ring-hom}
 Write
 $$
-V_0=\operatorname{Spec}_{\mathrm{var}}A,
+V_0=\Spec_{\mathrm{var}}A,
 \qquad
-W_0=\operatorname{Spec}_{\mathrm{var}}B
+W_0=\Spec_{\mathrm{var}}B
 $$
 for their affine coordinate rings.  The restriction
 $$
 F\restrict_{t(V_0)}:
-t(V_0)=\operatorname{Spec}A
+t(V_0)=\Spec A
 \longrightarrow
-t(W_0)=\operatorname{Spec}B
+t(W_0)=\Spec B
 $$
 is induced by a $k$-algebra homomorphism
 $$
@@ -330,9 +330,9 @@ B\to A
 $$
 to a morphism of affine varieties
 $$
-\operatorname{Spec}_{\mathrm{var}}A
+\Spec_{\mathrm{var}}A
 \to
-\operatorname{Spec}_{\mathrm{var}}B.
+\Spec_{\mathrm{var}}B.
 $$
 
 The associated scheme morphism is exactly the affine scheme morphism induced by the same ring map, namely
@@ -382,9 +382,9 @@ from step [](#f-restriction-induced-by-ring-hom){.pf-ref}.  Thus they agree on a
 ::: {.pf-step #map-surjective}
 Therefore the natural map
 $$
-\operatorname{Hom}_{\mathsf{Var}_k}(V,W)
+\Hom_{\mathsf{Var}_k}(V,W)
 \longrightarrow
-\operatorname{Hom}_{\mathsf{Sch}_k}(t(V),t(W))
+\Hom_{\Sch_k}(t(V),t(W))
 $$
 is surjective.
 
@@ -422,14 +422,14 @@ $$
 ::: {.pf-step #t-fully-faithful}
 Hence the functor
 $$
-t:\mathsf{Var}_k\longrightarrow\mathsf{Sch}_k
+t:\mathsf{Var}_k\longrightarrow\Sch_k
 $$
 is fully faithful:
 $$
 \boxed{
-\operatorname{Hom}_{\mathsf{Var}_k}(V,W)
+\Hom_{\mathsf{Var}_k}(V,W)
 \xrightarrow{\sim}
-\operatorname{Hom}_{\mathsf{Sch}_k}(t(V),t(W)).
+\Hom_{\Sch_k}(t(V),t(W)).
 }
 $$
 
