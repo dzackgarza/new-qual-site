@@ -90,7 +90,7 @@ $$
 
 Let
 $$
-G=\operatorname{Gr}(1,3)
+G=\Gr(1,3)
 $$
 be the Grassmannian of lines in $\PP^3$. The family of secant lines of $X$
 has irreducible closure
@@ -164,7 +164,7 @@ The function
 $$
 \ell
 \longmapsto
-\operatorname{length}(X\cap\ell)
+\length(X\cap\ell)
 $$
 is upper semicontinuous: it is the fibre dimension of the finite coherent
 $\mco_G$-module $q_*\mco_{\mathcal Z}$. Therefore
@@ -172,13 +172,31 @@ $$
 M
 =
 \{\ell\in S:
-\operatorname{length}(X\cap\ell)\ge3\}
+\length(X\cap\ell)\ge3\}
 $$
 is closed in $S$.
 
-The secant argument used in Hartshorne's proof of the general projection
-theorem shows that not every secant of a nonplanar curve is a multisecant
-[@Har77, Chapter IV, §3]. Hence
+A secant $\overline{PQ}$ lies in $M$ exactly when it meets $X$ in a third
+point or is tangent to $X$ at $P$ or at $Q$.
+
+The curve $X$ is not planar, so it is neither a line nor a conic. By
+Theorem IV.3.9 of [@Har77], $X$ is not strange: no point lies on every
+tangent line of $X$. Fix $P\in X$. The condition $\overline{PQ}=T_QX$ is
+closed in $Q$, so if it held for infinitely many $Q$ it would hold for
+all $Q\ne P$, and every tangent line of $X$ would pass through $P$.
+Hence for each $P$ only finitely many $Q$ make $\overline{PQ}$ tangent at
+$Q$, and the pairs $(P,Q)$ whose secant is tangent at $P$ or at $Q$ form a
+subset of $(X\times X)\setminus\Delta$ of dimension at most $1$.
+
+Since $X$ is not strange, Proposition IV.3.8 of [@Har77] gives a secant of
+$X$ that is not a multisecant, and the proof of Theorem IV.3.10 of
+[@Har77] gives a nonempty open subset of $X\times X$ of pairs whose secant
+is not a multisecant. Removing the subset of dimension at most $1$ found
+above leaves a nonempty set of pairs $(P,Q)$ with
+$$
+\length(X\cap\overline{PQ})=2.
+$$
+Hence
 $$
 M\ne S.
 $$
@@ -186,7 +204,6 @@ Since $S$ is an irreducible surface by step [](#s2){.pf-ref},
 $$
 \boxed{\dim M\le1}.
 $$
-This is the curve case of the classical trisecant lemma.
 
 :::
 
@@ -307,7 +324,7 @@ $$
 The line $\ell$ meets $X$ in at least the three distinct points
 $P,Q,R$, so
 $$
-\operatorname{length}(X\cap\ell)\ge3.
+\length(X\cap\ell)\ge3.
 $$
 Thus $\ell\in M$, which would imply
 $$

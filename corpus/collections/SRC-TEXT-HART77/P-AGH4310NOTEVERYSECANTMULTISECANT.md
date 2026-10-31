@@ -294,7 +294,7 @@ $$
 \lambda:
 U
 \longrightarrow
-\operatorname{Gr}(n-2,n),
+\Gr(n-2,n),
 $$
 where the Grassmannian parametrizes $(n-2)$-planes in $\PP^n$.
 Pull back the universal $(n-2)$-plane and intersect it with
@@ -329,7 +329,7 @@ B
 =
 \left\{
 \mathbf P\in U:
-\operatorname{length}
+\length
 \bigl(
 X\cap\langle P_1,\ldots,P_{n-1}\rangle
 \bigr)
@@ -351,7 +351,7 @@ $$
 q_*\mco_{\mathcal Z}\otimes\kappa(\mathbf P)
 \right)
 =
-\operatorname{length}(\mathcal Z_{\mathbf P}).
+\length(\mathcal Z_{\mathbf P}).
 $$
 Upper semicontinuity of fibre dimension for a coherent sheaf makes the
 locus where this number is at least $n$ closed.

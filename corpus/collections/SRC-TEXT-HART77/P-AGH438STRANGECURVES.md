@@ -190,7 +190,7 @@ $$
 =
 (1,0,0),
 $$
-because $\operatorname{char}k=p$.
+because $\characteristic k=p$.
 Thus the affine tangent line at $P_t$ is
 $$
 \lambda
@@ -211,7 +211,7 @@ step [](#s3){.pf-ref}, this proves (a).
 
 ::: {.pf-step #s5}
 
-Now assume $\operatorname{char}k=0$. Let
+Now assume $\characteristic k=0$. Let
 $$
 C\subseteq\PP^n
 $$
@@ -282,7 +282,7 @@ The induced extension of function fields
 $$
 k(Y)\subseteq k(C)
 $$
-is finite. Because $\operatorname{char}k=0$, it is separable.
+is finite. Because $\characteristic k=0$, it is separable.
 
 For a finite separable extension of one-variable function fields, the map on
 absolute differentials

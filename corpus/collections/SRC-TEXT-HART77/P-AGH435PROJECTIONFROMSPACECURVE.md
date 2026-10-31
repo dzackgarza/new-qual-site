@@ -40,7 +40,7 @@ Hint: Calculate $\dim H^0(X, \OO_X(1))$ two ways.
 (Use (Ex.
 1.8).)
 
-(c) Now let $\theset{X_t}$ be the flat family of curves induced by the projection (III, 9.8.3) whose fibre over $t=1$ is $X$, and whose fibre $X_0$ over $t=0$ is a scheme with support $\varphi(X)$.
+Now let $\theset{X_t}$ be the flat family of curves induced by the projection (III, 9.8.3) whose fibre over $t=1$ is $X$, and whose fibre $X_0$ over $t=0$ is a scheme with support $\varphi(X)$.
 Show that $X_0$ always has nilpotent elements.
 Thus the example (III, 9.8.4) is typical.
 :::
@@ -166,7 +166,7 @@ This proves (a).
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 If $\deg X=d$, then
 $$
@@ -299,7 +299,7 @@ By step [](#s7){.pf-ref}, $X_0$ is not reduced, so its nilradical is nonzero. He
 $$
 \boxed{X_0\text{ has nilpotent elements}.}
 $$
-This proves (c).
+This proves the assertion about $X_0$.
 
 :::
 
@@ -308,7 +308,7 @@ This proves (c).
 ::: pf-qed
 
 Step [](#s3){.pf-ref} proves (a), step [](#s5){.pf-ref} proves (b), and steps [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove
-(c).
+the assertion about $X_0$.
 
 :::
 

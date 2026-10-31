@@ -64,7 +64,7 @@ $$
 
 ::: pf-proof
 
-The complete-intersection adjunction formula of Hartshorne II.8.4(d) gives
+Part (e) of [[P-AGH284COMPINT|Exercise II.8.4]] gives
 $$
 \omega_X
 \cong

@@ -70,7 +70,7 @@ F_y=4y^3+xz^2,
 \qquad
 F_z=2xyz.
 $$
-Because $\operatorname{char}k\ne2$, both $2$ and $4$ are nonzero in $k$.
+Because $\characteristic k\ne2$, both $2$ and $4$ are nonzero in $k$.
 
 First suppose $z=0$.
 A singular point would satisfy
@@ -309,7 +309,7 @@ $$
 \qquad
 g(X)=2.
 $$
-But [[P-AGH436CURVESOFDEGREEFOUR|Exercise IV.3.6(a)]] classifies nonsingular degree-$4$ curves: in $\PP^3$ their genus is either $0$ or $1$, never $2$.
+But [[P-AGH436CURVESOFDEGREEFOUR|Exercise IV.3.6(a)]] classifies nonsingular degree-$4$ curves: their genus is $0$, $1$ or $3$, never $2$.
 This contradiction proves that no such projection exists.
 
 :::
