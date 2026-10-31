@@ -457,6 +457,8 @@ source:
       comment: Ch. 10, Exercise 12
   - name: Ch10 Problems
     problems:
+    - id: E-SS10.PR-1
+      comment: Ch. 10, Problem 1
     - id: E-SS10.PR-2
       comment: Ch. 10, Problem 2
     - id: E-SS10.PR-3
