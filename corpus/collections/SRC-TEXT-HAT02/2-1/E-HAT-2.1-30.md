@@ -29,11 +29,28 @@ audit:
 ::: {.problem}
 In each of the following commutative diagrams assume that all maps but one are isomorphisms. Show that the remaining map must be an isomorphism as well.
 
-$$\begin{array}{lll}
-A \to B & A \to B & A \to B \\
-\downarrow & \downarrow & \downarrow \\
-C \to D & C \to D & C \to D
-\end{array}$$
+The diagrams are the triangle
+$$
+A\xrightarrow{f}B,
+\qquad A\xrightarrow{g}C\xrightarrow{h}B,
+\qquad f=hg,
+$$
+the commutative square
+$$
+\begin{array}{ccc}
+A&\xrightarrow{f}&B\\
+\downarrow g&&\downarrow h\\
+C&\xrightarrow{k}&D,
+\end{array}
+$$
+and the commutative square with its right vertical arrow reversed:
+$$
+\begin{array}{ccc}
+A&\xrightarrow{f}&B\\
+\downarrow g&&\uparrow h\\
+C&\xrightarrow{k}&D.
+\end{array}
+$$
 :::
 
 ::: {.solution}
