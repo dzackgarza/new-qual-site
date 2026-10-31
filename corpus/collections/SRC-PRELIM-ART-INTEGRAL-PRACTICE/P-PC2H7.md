@@ -20,19 +20,21 @@ audit:
 ---
 
 ::: {.problem}
-$\cos (x) + \cos (y) = 2 \cos (\frac {x + y}{2}) \cos (\frac {x - y}{2})​$
+Prove the following identities for real $x,y$:
 
-$\cos (x) - \cos (y) = - 2 \sin (\frac {x + y}{2}) \sin (\frac {x - y}{2})​$
+(a) $\cos x+\cos y=2\cos\frac{x+y}{2}\cos\frac{x-y}{2}$;
 
-$\tan (x) - \tan (y) = \frac {\sin (x - y)}{\cos {x} \cos (y)}$ whenever $\cos x\cos y\ne0$
+(b) $\cos x-\cos y=-2\sin\frac{x+y}{2}\sin\frac{x-y}{2}$;
 
-$\sin (x) \cos (y) = \frac {1}{2} (\sin (x + y) + \sin (x - y))$
+(c) $\tan x-\tan y=\dfrac{\sin(x-y)}{\cos x\cos y}$ whenever $\cos x\cos y\ne0$;
 
-$\cos (x) \sin (y) = \frac {1}{2} (\sin (x + y) - \sin (x - y))$
+(d) $\sin x\cos y=\frac12\bigl(\sin(x+y)+\sin(x-y)\bigr)$;
 
-$\cos (x) \cos (y) = \frac {1}{2} (\cos (x + y) + \cos (x - y))$
+(e) $\cos x\sin y=\frac12\bigl(\sin(x+y)-\sin(x-y)\bigr)$;
 
-$\sin (x) \sin (y) = - \frac {1}{2} (\cos (x + y) - \cos (x - y))$
+(f) $\cos x\cos y=\frac12\bigl(\cos(x+y)+\cos(x-y)\bigr)$;
+
+(g) $\sin x\sin y=-\frac12\bigl(\cos(x+y)-\cos(x-y)\bigr)$.
 :::
 
 

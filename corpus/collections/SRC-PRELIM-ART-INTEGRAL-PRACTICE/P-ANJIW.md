@@ -18,15 +18,11 @@ audit:
 ---
 
 ::: {.problem}
-2. $\displaystyle \int \frac {xe^x\ln x - e^x}{x\ln^2 x} = \color {blue} {\frac {e^x}{\ln x}}$
+Evaluate, on intervals where the integrands are defined,
 
-- **Used 2018**
+(a) $\displaystyle\int\frac{xe^x\ln x-e^x}{x(\ln x)^2}\,dx$;
 
-3. $\displaystyle \int (\tan(x) + \cot(x))^2 ~dx = \color {blue} {\tan(x)-\cot(x)}$
-
-- **Solution:** $\sin ^2 (x) + \cos ^2 (x) = 1$
-
-- **Used 2018**
+(b) $\displaystyle\int(\tan x+\cot x)^2\,dx$.
 :::
 
 ::: {.solution}

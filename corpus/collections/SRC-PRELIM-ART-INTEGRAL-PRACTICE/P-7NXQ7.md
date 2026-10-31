@@ -18,9 +18,10 @@ audit:
 ---
 
 ::: {.problem}
-1. $\displaystyle \int_{1}^{2} \frac {1}{x\sqrt {x^2 -1}} dx = \color {blue} {\frac {\pi}{3}}$
-
-- **Solution:** $\sec ^{-1} (x) \evalfrom_{1}^{2}$
+Evaluate the improper integral
+$$
+\int_1^2\frac{dx}{x\sqrt{x^2-1}}.
+$$
 :::
 
 ::: {.solution}
