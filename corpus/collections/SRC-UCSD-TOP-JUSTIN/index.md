@@ -156,6 +156,10 @@ source:
     comment: Sheet 13, Problem 8
   - id: P-UCTOP290-S13-9
     comment: Sheet 13, Problem 9
+  - id: P-TOPS08E
+    comment: Sheet 13, Problem 10, first part
+  - id: P-TOPS08F
+    comment: Sheet 13, Problem 10, second part
   - P-AMD-7NJ4YRS5
   - P-AMD-JXFYCMO7
   - P-AMD-HWZNNEDG

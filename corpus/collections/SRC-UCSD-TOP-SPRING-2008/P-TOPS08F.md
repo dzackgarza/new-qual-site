@@ -177,3 +177,8 @@ Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
 
 :::
 :::
+
+::: {.remark}
+For example, $T^2$ cannot receive a degree-one map from $S^2$, since
+$H_1(T^2;\ZZ)\cong\ZZ^2$.
+:::
