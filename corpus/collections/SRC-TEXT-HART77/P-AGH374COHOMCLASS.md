@@ -32,7 +32,7 @@ Now $\Omega_Y^{n-p} = \omega_Y$ is a dualizing sheaf for $Y$, so we have the tra
 $$
 t_Y: H^{n-p}(Y, \Omega_Y^{n-p}) \to k
 .$$
-Composing, we obtain a linear map $H^{n-p}(X, \Omega_X^{n-p}) \to k$. By (7.13) this corresponds to an element $\eta(Y) \in H^p(X, \Omega_X^p)$, which we call the **cohomology class of $Y$**.
+Composing, we obtain a linear map $H^{n-p}(X, \Omega_X^{n-p}) \to k$. By (7.13) this corresponds to an element $\eta(Y) \in H^p(X, \Omega_X^p)$, which we call the \dfn{cohomology class of $Y$}.
 
 For this exercise, use the standard compatible normalization of the trace maps on canonical sheaves: the trace on $\Spec k$ is the identity, the trace on a finite reduced $k$-scheme is the sum of the traces of its points, and traces are compatible with the Gysin maps for nonsingular closed immersions. Equivalently, use the trace normalization from Grothendieck--Serre duality rather than an arbitrary scalar multiple of the trace supplied merely by the existence statement of Serre duality.
 
