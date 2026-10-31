@@ -4,7 +4,7 @@ id: P-UCLAB06S-02
 kind: problem
 title: Radius of convergence of a power series
 classification:
-  areas: [prelim]
+  areas: [prelim, complex-analysis]
   topics: []
 relations: []
 review: draft
@@ -305,4 +305,19 @@ Step [](#s1-7){.pf-ref} is the assertion.
 
 :::
 
+:::
+
+::: {.remark title="Complex variation"}
+Suppose $\sum_{n\ge0}a_nz^n$ converges at
+$z_0\ne0$. Its terms $a_nz_0^n$ are bounded,
+say by $M$. For every $r<\abs{z_0}$ and
+every $\abs{z}\le r$,
+$$
+\abs{a_nz^n}
+\le M\left(\frac r{\abs{z_0}}\right)^n.
+$$
+The geometric majorant is summable. The
+Weierstrass test gives absolute convergence
+inside $\abs{z}<\abs{z_0}$ and uniform
+convergence on each closed subdisk.
 :::

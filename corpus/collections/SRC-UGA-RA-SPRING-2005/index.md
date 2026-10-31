@@ -30,6 +30,8 @@ source:
       comment: Problem 1
     - id: P-AZOFF-G09
       comment: Problem 2
+    - id: P-UCLAB06S-02
+      comment: Problem 3
   date:
     kind: academic-term
     term: spring
