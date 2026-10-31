@@ -145,7 +145,7 @@ $f(\partial(v_i \otimes c)) = f(v_i \otimes \partial c) = f_i(\partial c)$ equal
 
 ::: {.pf-step #s7}
 
-Hence $f$ is exactly a chain homotopy $h$ between the chain maps $f_0$ and $f_1$.
+Hence $f$ determines a chain homotopy $h$ between the chain maps $f_0$ and $f_1$.
 
 ::: pf-proof
 
@@ -162,5 +162,7 @@ Step [](#s7){.pf-ref}.
 :::
 
 :::
+
+Conversely, given chain maps $f_0,f_1:C\to C'$ and a degree-one homomorphism $h:C\to C'$ with $f_1-f_0=\partial h+h\partial$, define $f(v_i\otimes c)=f_i(c)$ and $f(e\otimes c)=h(c)$, extending linearly. The differential formulas in Step [](#s2){.pf-ref} show that $f$ commutes with $\partial$ on every summand of $I\otimes C$. These constructions undo each other.
 
 :::
