@@ -42,7 +42,7 @@ Then the set $S = \{x_n \mid n \in \NN\}$ has no accumulation point in $X$: an a
 ::: pf-step
 Partition $S$ into two disjoint closed subsets of $X$:
 $$
-A = \{x_{2k} \mid k \in \NN\}, \qquad B = \{x_{2k-1} \mid k \in \NN\}.
+A = \{x_{2k} \mid k \in \ZZ_+\}, \qquad B = \{x_{2k-1} \mid k \in \ZZ_+\}.
 $$
 Because $X$ is normal, by Urysohn's Lemma there exists a continuous function $f: X \to [0, 1]$ such that:
 $$
