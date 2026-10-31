@@ -9,6 +9,9 @@ classification:
   topics:
   - Point-Set Topology
   - Closure
+  - Compactness
+  - Hausdorff Spaces
+  - Counterexamples
 relations: []
 review: draft
 audit:
