@@ -52,9 +52,9 @@ For $\abs{x} < 1$, differentiating the geometric series $\sum_{k \ge 0} x^k = \f
 
 ::: pf-proof
 
-Since $K$ is compact and $\abs{x} < 1$ on $K$, $r = \max_{x \in K} \abs{x} < 1$. For $x \in K$,
+The claim is immediate for $K=\varnothing$. Otherwise, compactness gives $r = \max_{x \in K} \abs{x} < 1$. For $x \in K$,
 $$\abs{f(x) - f_n(x)} = \abs{\sum_{k=n+1}^\infty k x^k} \le \sum_{k=n+1}^\infty k r^k.$$
-The series $\sum_k k r^k$ converges by the ratio test, since $\frac{(k+1) r^{k+1}}{k r^k} \to r < 1$. So its tails tend to $0$, and $\sup_{x \in K} \abs{f(x) - f_n(x)} \to 0$. Each $f_n$ is a polynomial, hence continuous, and $f$ is continuous on each compact $K$ as a uniform limit of continuous functions. Every point of $(-1, 1)$ has a compact neighborhood $[-r, r]$ in $(-1, 1)$, so $f$ is continuous.
+The series $\sum_k k r^k$ converges by the ratio test when $r>0$, and is identically zero when $r=0$. So its tails tend to $0$, and $\sup_{x \in K} \abs{f(x) - f_n(x)} \to 0$. Each $f_n$ is a polynomial, hence continuous, and $f$ is continuous on each compact $K$ as a uniform limit of continuous functions. Every point of $(-1, 1)$ has a compact neighborhood contained in $(-1, 1)$, so $f$ is continuous.
 
 :::
 
