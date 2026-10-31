@@ -10,7 +10,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - assets/attachments/Combined_Analysis_Spring_2005.docx
 source:

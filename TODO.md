@@ -1751,11 +1751,9 @@ mathematical correction under its own node, not under copy policy.
     checked-in extractions and their items are linked to cards. The
     [source course page](https://mathweb.ucsd.edu/~justin/290/290-F19.html)
     lists sheet 5 as TBA and provides no PDF. **Closed.**
-  - **`ad-uga-ra05-complex-part`**. **Needs:** none. SRC-UGA-RA-SPRING-2005: the retained
-    Combined_Analysis_Spring_2005.docx is one exam with a real-analysis part and a five-problem
-    complex-analysis part, and the collection lists only the real part. Add the complex part as
-    cards and as a second section of this collection, and classify the collection under both
-    areas. **Acceptance:** the collection lists all ten problems in source order, in two sections.
+  - **`ad-uga-ra05-complex-part`**. **Needs:** none. SRC-UGA-RA-SPRING-2005
+    lists both parts of the January 2005 combined analysis exam in source
+    order, with five problems in each section and both areas classified. **Closed.**
   - **`ad-justin-band-figure`**. **Needs:** none. P-AMD-CM4OPBUE (sheet 3 #4): the left band
     figure appears to have interlinked bands, and the solution claims the surface is planar with
     boundary circles capped to give $S^2$. Read the figure from the page render, decide the
