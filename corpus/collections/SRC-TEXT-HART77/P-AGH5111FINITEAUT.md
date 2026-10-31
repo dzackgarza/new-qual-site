@@ -45,7 +45,7 @@ Hint: Use the adjunction formula, the fact that $p_a$ of an irreducible curve is
 Given an automorphism $\sigma$ of $C$, let $\Gamma \subseteq X=C \times C$ be its graph.
 First show that if $\Gamma \equiv \Delta$, then $\Gamma=\Delta$, using the fact that $\Delta^2<0$, since $g \geqslant 2$ (Ex.
 1.6). Then use (a). Cf.
-(V, Ex.
+(IV, Ex.
 2.5).
 :::
 
@@ -65,7 +65,7 @@ $N$ is a lattice in the finite-dimensional real vector space $N_\RR$.
 
 The intersection form is negative definite on
 $$
-H^\perp=\{v\in N_\RR:v\cdot H=0\},
+H^\perp=\{v\in N_\RR\st v\cdot H=0\},
 $$
 and
 $$

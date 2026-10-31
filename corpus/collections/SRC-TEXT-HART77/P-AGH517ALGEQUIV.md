@@ -117,7 +117,7 @@ $$
 
 The set
 $$
-\boxed{\{D\in\Div X:D\sim_{\mathrm{alg}}0\}}
+\boxed{\{D\in\Div X \st D\sim_{\mathrm{alg}}0\}}
 $$
 is a subgroup of $\Div X$.
 

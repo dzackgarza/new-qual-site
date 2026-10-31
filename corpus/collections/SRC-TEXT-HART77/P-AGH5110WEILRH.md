@@ -36,7 +36,7 @@ Let $C$ be a curve of genus $g$ defined over the finite field $\FF_q$, and let $
 Then $N=1-a+q$, with $\abs{a} \leqslant 2 g \sqrt{q}$.
 
 To prove this, we consider $C$ as a curve over the algebraic closure $k$ of $\FF_q$.
-Let $f: C \rightarrow C$ be the $k$-linear Frobenius morphism obtained by taking $q$ th powers, which makes sense since $C$ is defined over $\FF_q$, so $X_q \cong X$ (See $V, 2.4.1$).
+Let $f: C \rightarrow C$ be the $k$-linear Frobenius morphism obtained by taking $q$ th powers, which makes sense since $C$ is defined over $\FF_q$, so $X_q \cong X$ (IV, 2.4.1).
 
 Let $\Gamma \subseteq C \times C$ be the graph of $f$, and let $\Delta \subseteq C \times C$ be the diagonal.
 
@@ -150,11 +150,11 @@ T_{(P,P)}(C\times C)=T_PC\oplus T_PC,
 $$
 the tangent line to the graph is
 $$
-T_{(P,P)}\Gamma=\{(v,0):v\in T_PC\},
+T_{(P,P)}\Gamma=\{(v,0)\st v\in T_PC\},
 $$
 while the tangent line to the diagonal is
 $$
-T_{(P,P)}\Delta=\{(v,v):v\in T_PC\}.
+T_{(P,P)}\Delta=\{(v,v)\st v\in T_PC\}.
 $$
 These two one-dimensional subspaces meet only at zero and span the tangent
 space of the surface. Hence the two smooth curves meet transversally at every

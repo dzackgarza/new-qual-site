@@ -38,7 +38,7 @@ audit:
 $$
 \Pic(C \times C) \neq p_1^* \Pic C \oplus p_2^* \Pic C
 .$$
-Cf. (III, Ex. 12.6), (V, Ex. 4.10).
+Cf. (III, Ex. 12.6), (IV, Ex. 4.10).
 :::
 
 ::: {.solution}
@@ -189,7 +189,7 @@ Thus the three numerical classes are linearly independent.
 
 Consequently
 $$
-\boxed{\operatorname{rank}\Num(C\times C)\geq3}
+\boxed{\rank\Num(C\times C)\geq3}
 $$
 and
 $$
