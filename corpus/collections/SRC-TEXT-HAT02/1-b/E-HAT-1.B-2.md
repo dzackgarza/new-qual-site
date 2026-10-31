@@ -106,7 +106,7 @@ By Whitehead's theorem, the map $\widetilde K\to *$ is a homotopy equivalence, s
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 The map $f$ is nullhomotopic.
 
