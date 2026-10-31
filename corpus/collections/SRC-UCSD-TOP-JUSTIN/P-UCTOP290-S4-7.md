@@ -16,8 +16,10 @@ audit:
   by: chatgpt
   date: 2026-10-31
   note: >-
-    Read sheet 4, Problem 7 against its extraction and rendered page.
-    The five source cover diagrams are retained as a crop of the PDF.
+    Read sheet 4, Problems 7 and 8 against the extraction and rendered
+    pages. Problem 8 asks for the commutator cover that Problem 7 already
+    asks for in its fourth subgroup. The five source cover diagrams are
+    retained as a crop of the PDF.
 ---
 
 ::: {.problem}
@@ -38,6 +40,9 @@ H_4&=\langle [a^m,b^n]:m,n\in\ZZ\rangle,\\
 H_5&=\langle [a^{2m},b^{2n}]:m,n\in\ZZ\rangle.
 \end{aligned}
 $$
+
+Sheet 4, Problem 8 also asks for the cover corresponding to the
+commutator subgroup of $F_2$. Describe that cover.
 :::
 
 ::: {.solution}
@@ -123,7 +128,8 @@ three-edge $b$-cycle through vertices $0,1,2$.
 Attach infinite trees at the unused $a$-edge germs at $1$ and
 $2$. Its core has the free basis $a,b^3$.
 
-The group $H_4$ is the commutator subgroup $[F_2,F_2]$.
+The group $H_4$ is the commutator subgroup $[F_2,F_2]$, so the
+following grid also answers Problem 8.
 Indeed the indicated generators lie in $[F_2,F_2]$ and include
 $[a,b]$. The identities
 $$
