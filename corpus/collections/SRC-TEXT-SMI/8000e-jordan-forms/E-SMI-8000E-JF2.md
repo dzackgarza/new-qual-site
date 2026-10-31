@@ -22,18 +22,22 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Enumerated the three partitions of 3, proved characteristic roots lie in the minimal polynomial via eigenvectors, identified primary dimensions by characteristic-polynomial multiplicity, and checked the four determinant computations with exact arithmetic."
+- event: source-corrected
+  by: Codex
+  date: 2026-10-31
+  note: The printed primary-subspace condition mixes f and T and reuses t as polynomial variable and root. The statement now names the operator and root separately.
 ---
 
 ::: {.exercise}
 (i) If $A$ is a $3 \times 3$ matrix with $\mathrm{ch}(t) = (X - 4)^3$, find all Jordan forms for $A$, each with its minimal polynomial.
 
-(ii) If $\mathrm{ch}(t) = \prod (X - t)^{m_t}$ is the characteristic polynomial of $f: M \to M$, prove every root of $\mathrm{ch}(t)$ is also a root of the minimal polynomial $m(t)$, and if
+(ii) If $\mathrm{ch}_f(X) = \prod_c (X - c)^{m_c}$ is the characteristic polynomial of $f: M \to M$, prove every root of $\mathrm{ch}_f$ is also a root of the minimal polynomial of $f$. Write $T=f$. If
 
 $$
-M_t = \theset{v \in M : \text{for some } r > 0, \ (T - t)^r v = 0}
+M_c = \theset{v \in M : \text{for some } r > 0, \ (T - cI)^r v = 0}
 $$
 
-is the primary subspace of $M$ corresponding to the root $t$, prove that $\dim(M_t) = m_t$.
+is the primary subspace of $M$ corresponding to the root $c$, prove that $\dim(M_c) = m_c$.
 
 (iii) Use determinants to compute $\mathrm{ch}(t)$ for these matrices:
 
