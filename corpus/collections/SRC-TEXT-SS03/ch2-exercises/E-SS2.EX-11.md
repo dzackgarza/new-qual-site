@@ -28,10 +28,12 @@ $$
 f(z) = \frac{1}{2\pi} \int_0^{2\pi} f(R e^{i\varphi}) \operatorname{Re}\left( \frac{R e^{i\varphi} + z}{R e^{i\varphi} - z} \right) d\varphi.
 $$
 
-(b) Show that for $z = r \in [0, R)$ (and in general with $\gamma = \varphi - \theta$ where $z = r e^{i\theta}$):
+(b) Show that
 $$
 \operatorname{Re}\left( \frac{R e^{i\gamma} + r}{R e^{i\gamma} - r} \right) = \frac{R^2 - r^2}{R^2 - 2Rr\cos\gamma + r^2}.
 $$
+
+[Hint: For the first part, note that if $w = R^2/\overline{z}$, then the integral of $f(\zeta)/(\zeta - w)$ around the circle of radius $R$ centered at the origin is zero. Use this, together with the usual Cauchy integral formula, to deduce the desired identity.]
 :::
 
 ::: {.solution}

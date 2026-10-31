@@ -77,6 +77,18 @@ Assume $p/q$ is in lowest terms and put $z=re^{i\theta}$. For $q\mid n$, $z^n = 
 
 :::
 
+::: pf-step
+
+$F$ cannot be continued analytically past the unit circle.
+
+::: pf-proof
+
+If $w\in C$ were regular for $F$, then $F$ would agree on $\DD\cap U$ with a function analytic on a neighborhood $U$ of $w$, so $F$ would be bounded on $\DD\cap U'$ for a smaller neighborhood $U'$ of $w$. The points $e^{2\pi ip/q}$ are dense in $C$, so $U'$ contains one of them, and by the previous step $\abs{F(re^{2\pi ip/q})}\to\infty$ as $r\to1^-$. This is a contradiction, so no point of $C$ is regular.
+
+:::
+
+:::
+
 :::
 
 :::
