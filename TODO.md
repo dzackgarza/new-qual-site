@@ -280,7 +280,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-TEXT-HUN74
   - [x] SRC-TEXT-MUN00
   - [x] SRC-TEXT-RUD76
-  - [ ] SRC-TEXT-SMI
+  - [x] SRC-TEXT-SMI
   - [x] SRC-TEXT-SS03
   - [x] SRC-TEXT-SS03-FOURIER
   - [x] SRC-TEXT-SS05
