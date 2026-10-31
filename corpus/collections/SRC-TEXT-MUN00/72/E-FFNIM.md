@@ -133,7 +133,7 @@ Seifert–van Kampen Theorem:
 
 ::: pf-step
 
-By the Seifert–van Kampen Theorem, since $U \cap V$ is path-connected:
+Choose $b\in U\cap V$ and a path in $U$ from $a$ to $b$. The intersection is path connected, and changing the basepoint along this path identifies the fundamental group of $U$ at $b$ with $\pi_1(U,a)$. By the Seifert–van Kampen Theorem at $b$:
 $$
 \pi_1(X, a) \cong \pi_1(U, a) *_{\pi_1(U \cap V)} \pi_1(V) \cong \pi_1(A, a) *_0 0 \cong \pi_1(A, a).
 $$
@@ -148,7 +148,7 @@ Seifert–van Kampen Theorem with trivial amalgamating subgroup.
 
 ::: pf-step
 
-The isomorphism $\pi_1(A, a) \xrightarrow{\sim} \pi_1(X, a)$ is precisely the homomorphism $i_*$ induced by the inclusion map $i: A \hookrightarrow X$.
+Transporting back along the chosen path gives the isomorphism $\pi_1(A, a) \xrightarrow{\sim} \pi_1(X, a)$ induced by the inclusion map $i: A \hookrightarrow X$.
 
 ::: pf-proof
 
