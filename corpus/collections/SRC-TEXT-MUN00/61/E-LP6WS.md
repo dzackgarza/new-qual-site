@@ -29,11 +29,11 @@ Show that if $C$ is a subspace of $S^2$ homeomorphic to the closed topologist's 
 
 ::: {.pf-step #s1}
 
-The closed topologist's sine curve $A$ is a simple closed curve (a Jordan curve) in $\RR^2$.
+$A$ is the union of two compact connected sets $A_1$ and $A_2$ meeting in exactly two points.
 
 ::: pf-proof
 
-$A$ is the union of the topologist's sine curve $\{(x, \sin(1/x)) : 0 < x \le 1\}$ with the broken-line path from $(0,-1)$ to $(0,-2)$ to $(1,-2)$ to $(1, \sin 1)$, together with the limiting segment $\{0\} \times [-1, 1]$; this forms a simple closed curve (a homeomorphic image of $S^1$).
+Let $A_1$ be the topologist's sine curve, including its limit segment $\{0\}\times[-1,1]$. It is the closure of the connected graph $\{(x,\sin(1/x)):0<x\le1\}$, so it is compact and connected. Let $A_2$ be the broken-line path in the question; it is compact and connected. Directly from the description, $A_1\cap A_2=\{(0,-1),(1,\sin1)\}$.
 
 :::
 
@@ -41,11 +41,11 @@ $A$ is the union of the topologist's sine curve $\{(x, \sin(1/x)) : 0 < x \le 1\
 
 ::: {.pf-step #s2}
 
-By the Jordan curve theorem, a simple closed curve in $S^2$ separates $S^2$ into two components.
+Munkres's general separation theorem, Theorem 61.4, states that the union of two closed connected subsets of $S^2$ meeting in precisely two points separates $S^2$.
 
 ::: pf-proof
 
-the Jordan curve theorem.
+Theorem 61.4.
 
 :::
 
@@ -53,7 +53,7 @@ the Jordan curve theorem.
 
 ::: {.pf-step #s3}
 
-Since $C$ is homeomorphic to $A$ (a simple closed curve), $C$ is itself a simple closed curve in $S^2$.
+Let $h:A\to C$ be the given homeomorphism. The sets $h(A_1)$ and $h(A_2)$ are compact, hence closed in $S^2$, and connected. They meet exactly at $h((0,-1))$ and $h((1,\sin1))$, and their union is $C$.
 
 ::: pf-proof
 
@@ -65,7 +65,7 @@ hypothesis and step [](#s1){.pf-ref}.
 
 ::: {.pf-step #s4}
 
-Hence $C$ separates $S^2$.
+Applying Theorem 61.4 to $h(A_1)$ and $h(A_2)$ shows that $C$ separates $S^2$.
 
 ::: pf-proof
 
