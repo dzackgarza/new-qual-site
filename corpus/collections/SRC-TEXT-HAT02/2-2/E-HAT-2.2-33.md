@@ -23,123 +23,32 @@ Show that $\tilde{H}_i(X) = 0$ for $i \geq n-1$, and give an example showing thi
 :::
 
 ::: {.solution}
+We induct on the number of sets. For one set the assertion is the hypothesis. Suppose it holds for covers by fewer than $n$ sets, and put
+$$
+Y=A_1\cup\cdots\cup A_{n-1},
+\qquad
+Z=Y\cap A_n=\bigcup_{j=1}^{n-1}(A_j\cap A_n).
+$$
+Both are open in $X$. Every nonempty finite intersection in the cover of $Z$ is one of the intersections in the hypothesis. Hence induction gives
+$$
+\widetilde H_i(Y)=\widetilde H_i(Z)=0
+\qquad (i\ge n-2).
+$$
+The same hypothesis gives $\widetilde H_i(A_n)=0$ for every $i$. For $i\ge n-1$, the reduced Mayer--Vietoris sequence for $X=Y\cup A_n$ therefore has the segment
+$$
+0=\widetilde H_i(Y)\oplus\widetilde H_i(A_n)
+\longrightarrow \widetilde H_i(X)
+\longrightarrow \widetilde H_{i-1}(Z)=0.
+$$
+Thus $\widetilde H_i(X)=0$ in the claimed range.
 
-::: pf
-
-::: pf-step
-
-Consider the Mayer–Vietoris spectral sequence (or the Čech-to-derived / nerve argument) for the open cover $\{A_1, \ldots, A_n\}$.
-
-::: pf-proof
-
-setup.
-
-:::
-
-:::
-
-::: pf-step
-
-The $E^1$ page has $E^1_{p,q} = \bigoplus_{i_0 < \cdots < i_p} \tilde H_q(A_{i_0} \cap \cdots \cap A_{i_p})$.
-
-::: pf-proof
-
-the Mayer–Vietoris spectral sequence for a cover.
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-By hypothesis, each intersection $A_{i_0} \cap \cdots \cap A_{i_p}$ is either empty or acyclic, so $E^1_{p,q} = 0$ for all $q > 0$.
-
-::: pf-proof
-
-the hypothesis (trivial reduced homology).
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-Hence the spectral sequence is concentrated in the row $q = 0$, so it degenerates and $\tilde H_i(X)$ is the homology of the nerve complex $N(\mathcal{U})$ (the Čech complex of the cover).
-
-::: pf-proof
-
-Step [](#s3){.pf-ref} (the spectral sequence collapses to the nerve).
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-The nerve $N(\mathcal{U})$ is a simplicial complex with $n$ vertices, so its homology vanishes in degrees $\ge n$.
-
-::: pf-proof
-
-a simplicial complex with $n$ vertices has no simplices of dimension $\ge n$, so its homology is zero in degrees $\ge n$.
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-Hence $\tilde H_i(X) = 0$ for $i \ge n - 1$.
-
-::: pf-proof
-
-Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} (the nerve has $n$ vertices, so $H_i(N) = 0$ for $i \ge n$; combined with the shift, $\tilde H_i(X) = 0$ for $i \ge n-1$).
-
-:::
-
-:::
-
-::: {.pf-step #s7}
-
-Example showing sharpness: take $X = S^{n-1}$ covered by the $n$ open hemispheres $A_i = \{x \in S^{n-1} : x_i > 0\}$ (and their slight enlargements to make them open and cover $S^{n-1}$).
-
-::: pf-proof
-
-construct the example.
-
-:::
-
-:::
-
-::: {.pf-step #s8}
-
-Each intersection of these hemispheres is contractible (or empty), so the hypothesis holds, but $\tilde H_{n-1}(S^{n-1}) = \ZZ \neq 0$.
-
-::: pf-proof
-
-Step [](#s7){.pf-ref} (the intersections are convex, hence contractible, but $S^{n-1}$ has $\tilde H_{n-1} = \ZZ$).
-
-:::
-
-:::
-
-::: {.pf-step #s9}
-
-Hence the bound $i \ge n-1$ is best possible.
-
-::: pf-proof
-
-Step [](#s8){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s6){.pf-ref} and [](#s9){.pf-ref}.
-
-:::
-
-:::
-
+For sharpness when $n\ge2$, let $X=\partial\Delta^{n-1}\cong S^{n-2}$ and use barycentric coordinates $\lambda_1,\ldots,\lambda_n$. Set
+$$
+A_j=\{x\in X:\lambda_j(x)>0\}.
+$$
+These $n$ open sets cover $X$. Their total intersection is empty. For every proper nonempty set of indices $I$, the intersection $\bigcap_{j\in I}A_j$ contracts to the barycenter of the face spanned by $I$: the straight-line homotopy stays in $X$, since each point and that barycenter share a zero coordinate outside $I$, and all coordinates indexed by $I$ remain positive. Yet
+$$
+\widetilde H_{n-2}(X)\cong\ZZ.
+$$
+Thus the vanishing range cannot start at $n-2$. For $n=1$, the hypothesis itself says that the sole nonempty set is acyclic.
 :::
