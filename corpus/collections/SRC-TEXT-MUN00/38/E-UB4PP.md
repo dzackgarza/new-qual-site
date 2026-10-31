@@ -49,17 +49,17 @@ has no limit. This contradicts continuity at $(0,0)$. Hence $g$ does not extend.
 
 Now define
 $$
-h:(0,1)\longrightarrow [0,1]\times[-1,1]\times[-1,1],
+h:(0,1)\longrightarrow [0,1]^3,
 \qquad
-h(x)=\bigl(x,\sin(1/x),\cos(1/x)\bigr).
+h(x)=\left(x,\frac{1+\sin(1/x)}2,\frac{1+\cos(1/x)}2\right).
 $$
 The first coordinate recovers $x$, so $h$ is injective; its inverse on $h((0,1))$ is the restriction of the first-coordinate projection. Hence $h$ is an embedding.
 
 Let
 $$
-Y=\overline{h((0,1))}\subset [0,1]\times[-1,1]^2.
+Y=\overline{h((0,1))}\subset [0,1]^3.
 $$
-The ambient cube is compact Hausdorff, so $Y$ is a compactification of $(0,1)$. The three coordinate projections $\pi_1,\pi_2,\pi_3$ are continuous on $Y$, and on $h((0,1))$ they restrict respectively to
+The ambient cube is compact Hausdorff, so $Y$ is a compactification of $(0,1)$. The continuous functions $\pi_1,2\pi_2-1,2\pi_3-1$ on $Y$ restrict respectively to
 $$
 x,\qquad \sin(1/x),\qquad \cos(1/x).
 $$
