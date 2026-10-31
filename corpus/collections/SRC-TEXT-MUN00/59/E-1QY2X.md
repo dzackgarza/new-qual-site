@@ -50,7 +50,7 @@ Continuous surjective paths exist: By Peano's Theorem, there exists a continuous
 
 ::: pf-step
 
-By post-composing with the standard quotient map $[0, 1]^2 \to S^2$, one can construct a continuous closed loop $f: [0, 1] \to S^2$ whose image is the entire 2-sphere, $\operatorname{im}(f) = S^2$.
+Post-compose with a continuous surjection $[0,1]^2\to S^2$ to obtain a surjective path $q:I\to S^2$. Choose a path $\alpha$ from the prescribed basepoint $x_0$ to $q(0)$. The loop $f=\alpha*q*\bar q*\bar\alpha$ is based at $x_0$ and has image $S^2$.
 
 :::
 
