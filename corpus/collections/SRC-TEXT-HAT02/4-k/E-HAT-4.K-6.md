@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be a complex of spaces over a simplicial complex $\Gamma$, as defined in §4.G. Show that the natural projection $\Delta X \to \Gamma$ is a quasifibration if all the maps in $X$ associated to edges of $\Gamma$ are weak homotopy equivalences.
+Let $X$ be a complex of spaces over a $\Delta$-complex $\Gamma$, as defined in §4.G. Show that the natural projection $\Delta X \to \Gamma$ is a quasifibration if all the maps in $X$ associated to edges of $\Gamma$ are weak homotopy equivalences.
 :::
 
 ::: {.solution}
@@ -56,7 +56,7 @@ p:p^{-1}(L)\to L
 $$
 is a quasifibration for every finite subcomplex $L$.
 
-Finally exhaust $\Gamma$ by its finite subcomplexes. Every compact subset of a CW complex is contained in a finite subcomplex, so the corrected form of Lemma 4K.3(b) applies. Therefore
+Finally take the directed union over finite subcomplexes of $\Gamma$. Every compact subset of a CW complex is contained in a finite subcomplex. Thus every representative sphere or disk and every homotopy used in the relative homotopy groups occurs at a finite stage. The stagewise relative homotopy isomorphisms pass to this directed union, as in the proof of Lemma 4K.3(b). Therefore
 $$
 \boxed{\Delta X\longrightarrow\Gamma\text{ is a quasifibration}.}
 $$
