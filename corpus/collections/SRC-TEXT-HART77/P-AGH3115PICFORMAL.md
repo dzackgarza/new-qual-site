@@ -37,11 +37,10 @@ $$
 \Pic \hat{X} \to \Pic Y
 $$
 is an isomorphism.
+:::
 
-Hint: use (II, Ex.
-9.6), and then study the maps $\Pic X_{n+1} \to \Pic X_n$ for each $n$ using (Ex.
-4.6) and (Ex.
-5.5).
+::: {.hint}
+Use (II, Ex. 9.6), and then study the maps $\Pic X_{n+1} \to \Pic X_n$ for each $n$ using (Ex. 4.6) and (Ex. 5.5).
 :::
 
 ::: {.solution}
