@@ -143,6 +143,8 @@ source:
       comment: Munkres §9.6
     - id: E-MUN-9-7
       comment: Munkres §9.7
+    - id: E-MUN-9-8
+      comment: Munkres §9.8
   - name: '10'
     problems:
     - id: E-MUN-10-1
