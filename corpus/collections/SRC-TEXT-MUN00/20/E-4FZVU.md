@@ -72,7 +72,7 @@ $f$ is continuous $\boxed{\text{in the product topology only}}$.
 
 ::: pf-proof
 Its coordinates $t\mapsto kt$ are continuous.
-For $t\ne0$, $\bar\rho(f(t),f(0))=\sup_k\min\{k\abs t,1\}=1$, so $f$ is not uniformly continuous at $0$, hence not box-continuous.
+For $t\ne0$, $\bar\rho(f(t),f(0))=\sup_k\min\{k\abs t,1\}=1$, so $f$ is not continuous at $0$ in the uniform topology, hence not box-continuous.
 :::
 
 :::
