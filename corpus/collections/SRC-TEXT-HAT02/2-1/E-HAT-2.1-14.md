@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Classified the abelian middle groups by two-generator presentations and Smith normal form, and gave explicit maps for the Z4--Z8+Z2--Z4 example.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the explicit sequence: $i(1)=(2,1)$ has order four, $q(a,b)=a-2b$ is surjective, and $\abs{\ker q}=4$, so the sequence is exact and the answer to the first question is yes.
 ---
 
 ::: {.problem}

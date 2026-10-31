@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Wrote the simplicial chain complex with one vertex, three edges, and one 2-simplex; the single primitive boundary relation leaves H1 of rank two.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the chain groups and both boundary maps: the alternating sum gives $\partial_2\sigma=a-b+c$, so $H_2=0$, $H_1=\ZZ^2$ and $H_0=\ZZ$, matching the homotopy type of a wedge of two circles.
 ---
 
 ::: {.problem}

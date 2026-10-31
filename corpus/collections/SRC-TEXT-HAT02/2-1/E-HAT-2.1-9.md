@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Observed that the unique k-simplex has boundary coefficient sum 1 for even k and 0 for odd k, so the chain complex alternates identity and zero maps.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the collapsing boundary formula: every face of $\sigma_k$ is the single $\sigma_{k-1}$, so the alternating sum is $1$ for even $k$ and $0$ for odd $k$, giving $H_k=\ZZ$ for even $k$ and $0$ for odd $k$.
 ---
 
 ::: {.problem}

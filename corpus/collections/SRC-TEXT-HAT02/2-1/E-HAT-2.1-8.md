@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Corrected the local transcription to Hatcher’s four groups, then computed the simplicial chain ranks and Smith normal forms to obtain H_1 = Z/n and H_3 = Z.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the generators and the rank-one computation for $\partial_1$; the higher boundary matrices of the lens space were not recomputed entry by entry.
 ---
 
 ::: {.problem}

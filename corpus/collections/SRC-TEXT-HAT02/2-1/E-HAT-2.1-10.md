@@ -23,6 +23,11 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read (a): the link at a quotient vertex is a finite connected 2-regular graph, hence a circle, and the neighbourhood is its cone, a disk. Part (b) rests on a cited branching theorem whose hypotheses the text checks against the identification data.
 ---
 
 ::: {.problem}

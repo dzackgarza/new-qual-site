@@ -30,6 +30,11 @@ audit:
     The card wrote the vertices of the simplex as the Greek letter, `\nu_0`,
     where Hatcher writes them `v_0`; the vertex symbol is restored throughout.
     Found by comparing the statement with the printed exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the chain groups and the description of the two boundary maps; the alternating sums on the collapsed edges are followed as stated, and I did not recompute the general-$n$ matrices entry by entry.
 ---
 
 ::: {.problem}

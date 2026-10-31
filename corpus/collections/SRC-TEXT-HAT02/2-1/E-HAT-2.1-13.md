@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Restricted the ordinary homology equality to the augmentation kernels defining reduced H_0; higher reduced groups equal ordinary homology.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the reduction to ordinary homology in positive degrees and the separate treatment of degree zero, where reduced homology differs by a $\ZZ$ summand.
 ---
 
 ::: {.problem}

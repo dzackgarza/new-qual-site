@@ -56,8 +56,8 @@ one-line fragments, and the closing steps of `E-HAT-1.A-9`, `-12` and `E-HAT-1.B
 §2.1: all 31 statements compared with the printed exercises and each matches one-to-one. Two
 defects repaired: the simplex vertices were written with the Greek letter `\nu` instead of `v` in
 `E-HAT-2.1-1`, `-2`, `-6` and `E-HAT-2.2-16`, and `E-HAT-2.1-2` had dropped the word "order-preserving"
-from its edge identifications. The statements are read; the proofs of `E-HAT-2.1-1`, `-2` and `-3` are read and the other 28 are
-unread.
+from its edge identifications. The statements are read; the proofs of `E-HAT-2.1-1` through `-14` are read (with `-6`, `-8` and `-10`
+read at the level their review notes describe) and the other 17 are unread.
 Unread entirely: the proofs of §2.1 onward, that is every proof in chapters 2, 3 and 4.
 
 ## Fast local checks and complete CI acceptance
