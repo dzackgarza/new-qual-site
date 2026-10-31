@@ -93,3 +93,7 @@ The implications compact $\Rightarrow$ limit-point compact and limit-point compa
 :::
 
 :::
+
+::: {.remark title="Variations"}
+For a metrizable space, compactness is equivalent to sequential compactness alone. The metric case of the proof gives both implications; the limit-point condition is an equivalent third formulation. Munkres, *Topology*, Theorem 28.2 states these three equivalent conditions for metrizable spaces.
+:::
