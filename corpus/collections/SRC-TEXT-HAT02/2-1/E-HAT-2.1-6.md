@@ -39,7 +39,9 @@ audit:
   by: claude
   date: 2026-10-31
   note: >-
-    Certified exactly in proofs/cards/DeltaComplexHomology.sage for n = 1, ..., 6: the Smith normal form of the boundary matrix is diag(1, ..., 1, 2^n), giving H_0 = Z, H_1 = Z/2^n, H_k = 0 for k >= 2.
+    Certified in proofs/cards/DeltaComplexHomology.sage for n = 1, ..., 6 through Sage's
+    ChainComplex, with d_2 assembled column by column (column k is the image of sigma_k);
+    homology is (Z, Z/2^n, 0) in each sampled case.
 ---
 
 ::: {.problem}

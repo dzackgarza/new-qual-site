@@ -32,7 +32,9 @@ audit:
   by: claude
   date: 2026-10-31
   note: >-
-    Certified exactly in proofs/cards/DeltaComplexHomology.sage for n = 1, ..., 8: with d_k the single alternating-sum entry, the homology is Z in degree 0, 0 in degrees 0 < k < n, and Z or 0 in degree n according as n is odd or even.
+    Certified in proofs/cards/DeltaComplexHomology.sage for n = 1, ..., 8 through Sage's
+    ChainComplex: with d_k the single alternating-sum entry, the homology is Z in degree 0, 0 in
+    degrees 0 < k < n, and Z or 0 in degree n according as n is odd or even.
 ---
 
 ::: {.problem}

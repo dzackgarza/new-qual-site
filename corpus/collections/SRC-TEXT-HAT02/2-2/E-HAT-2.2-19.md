@@ -28,10 +28,10 @@ audit:
   by: claude
   date: 2026-10-31
   note: >-
-    The cellular chain complex with one cell in degrees m+1, ..., n, d_{m+1} = 0 and
-    d_i = 2 for even i > m+1, is checked exactly in
-    proofs/cards/DeltaComplexHomology.sage for every 0 <= m < n <= 8 against the
-    case table this card states, and all cases agree.
+    The cellular complex with one cell in degrees m+1, ..., n, d_{m+1} = 0 and d_i = 2 for even
+    i > m+1, is checked in proofs/cards/DeltaComplexHomology.sage through Sage's ChainComplex for
+    the sampled range m = 0, ..., 4 and m < n <= 8, against the card's case table; every sampled case
+    agrees. This is a finite check, not a proof of the case table.
 ---
 
 ::: {.problem}

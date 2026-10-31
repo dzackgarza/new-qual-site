@@ -33,7 +33,8 @@ audit:
   by: claude
   date: 2026-10-31
   note: >-
-    Certified exactly in proofs/cards/DeltaComplexHomology.sage: the Smith normal form of the two-triangle boundary matrix gives H_0 = Z, H_1 = Z + Z/2, H_2 = 0, as the card states.
+    Certified in proofs/cards/DeltaComplexHomology.sage through Sage's ChainComplex: the
+    two-triangle complex has d^2 = 0 and homology (Z, Z + Z/2, 0), as the card states.
 ---
 
 ::: {.problem}

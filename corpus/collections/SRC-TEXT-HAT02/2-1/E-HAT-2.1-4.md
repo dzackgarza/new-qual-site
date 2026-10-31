@@ -32,7 +32,10 @@ audit:
   by: claude
   date: 2026-10-31
   note: >-
-    The homology of the chain complex the card writes down is certified exactly by Smith normal form in proofs/cards/DeltaComplexHomology.sage, which recomputes it from the boundary matrices and asserts H_0 = Z, H_1 = Z^2, H_2 = 0. The identification of that complex with the space is the geometric step and rests on the book's description.
+    The homology is certified in proofs/cards/DeltaComplexHomology.sage: the boundary matrices
+    are fed to Sage's ChainComplex (which checks d^2 = 0) and the group read off homology(0..2)
+    is (Z, Z^2, 0), as the card states. Identifying that complex with the space is the geometric
+    step and rests on the book's description.
 ---
 
 ::: {.problem}
