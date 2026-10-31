@@ -417,8 +417,8 @@ source:
       comment: Munkres §24.3
     - id: E-ZY1RB
       comment: Munkres §24.4
-    - id: E-MJQTF
-      comment: Munkres §24.11
+    - id: E-LIN4R
+      comment: Munkres §24.5
     - id: E-U00IE
       comment: Munkres §24.6
     - id: E-YERPP
@@ -429,8 +429,8 @@ source:
       comment: Munkres §24.9
     - id: E-52DW7
       comment: Munkres §24.10
-    - id: E-LIN4R
-      comment: Munkres §24.5
+    - id: E-MJQTF
+      comment: Munkres §24.11
     - id: E-PQHZN
       comment: Munkres §24.12
   - name: '25'
