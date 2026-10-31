@@ -22,15 +22,18 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Used total ordering to place any two elements in one chain member, and used the identity element to show the union remains proper."
+- event: source-corrected
+  by: chatgpt
+  date: 2026-10-31
+  note: "The printed statement omits nonemptiness; the empty union is not an ideal."
 ---
 
 ::: {.exercise}
-If $\theset{I_j}$ is any linearly ordered indexed set of proper ideals in a ring $R$ — i.e. for any two ideals $I_j$ and $I_k$, one is contained in the other — then their union is a proper ideal.
+If $\theset{I_j}$ is any nonempty linearly ordered indexed set of proper ideals in a ring $R$ — i.e. for any two ideals $I_j$ and $I_k$, one is contained in the other — then their union is a proper ideal.
 :::
 
 ::: {.solution}
-Assume the family is nonempty; the union of the empty family is $\varnothing$,
-which is not an ideal. Let
+Let
 $$
 J=\bigcup_j I_j.
 $$
