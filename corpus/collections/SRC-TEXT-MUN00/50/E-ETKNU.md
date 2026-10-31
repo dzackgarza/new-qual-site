@@ -20,11 +20,15 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-corrected
+  by: gpt-6.1-sol
+  date: 2026-10-31
+  note: 'The source says g maps X onto a linear graph. The proof gives only containment in one: a Cantor-set domain can have an infinite totally disconnected image inside an edge.'
 ---
 
 ::: {.exercise}
 
-Examine the proof of the imbedding theorem in the case $m = 1$ and show that the map $g$ of part (2) actually maps $X$ onto a linear graph in $\RR^3$.
+Examine the proof of the imbedding theorem in the case $m = 1$ and show that the map $g$ of part (2) maps $X$ into a linear graph in $\RR^3$.
 :::
 
 ::: {.solution}
@@ -53,6 +57,3 @@ This finite union of segments is a linear graph with vertices $z_1,\ldots,z_r$. 
 Therefore, in the case $m=1$, the map constructed in part (2) of the embedding theorem maps $X$ into a linear graph in $\RR^3$.
 :::
 
-::: {.remark}
-The image $g(X)$ itself need not be a linear graph. For $X$ a Cantor set, which has dimension $0\le1$, let $U_1,U_2$ be overlapping open sets covering $X$ and let $\phi_1$ be a partition-of-unity function that takes infinitely many values in $(0,1)$ on $X\cap U_1\cap U_2$, such as the restriction of a piecewise linear function on $[0,1]$. Then $g(X)\cap(z_1,z_2)$ is an infinite compact totally disconnected set, which is not a finite union of points and segments. The proof gives $g(X)$ inside the linear graph $\bigcup_{i<j}[z_i,z_j]$.
-:::
