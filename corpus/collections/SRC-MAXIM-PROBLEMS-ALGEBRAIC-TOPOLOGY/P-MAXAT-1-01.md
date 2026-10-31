@@ -16,6 +16,10 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against section 1, problem 1 of the retained Laurentiu Maxim Problems in Algebraic Topology PDF.
+- event: source-checked
+  by: chatgpt
+  date: 2026-10-31
+  note: Justin sheet 13, Problem 5 asks for the same boundary Euler-characteristic obstruction.
 ---
 
 ::: {.problem}
