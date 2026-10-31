@@ -14,7 +14,7 @@ review: draft
 
 ::: {.exercise}
 
-Show that $\RR_\ell$ and $I_0^2$ are not metrizable.
+Show that $\RR_\ell$ and $I_o^2$ are not metrizable.
 :::
 
 ::: {.solution}
