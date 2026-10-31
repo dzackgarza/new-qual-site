@@ -88,7 +88,9 @@ def test_an_input_on_no_search_path_is_an_error(tmp_path: Path) -> None:
 
 
 @pytest.mark.parametrize("missing", ["corpus", "wiki"])
-def test_sync_requires_both_authored_trees(tmp_path: Path, monkeypatch: pytest.MonkeyPatch, missing: str) -> None:
+def test_sync_requires_both_authored_trees(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, missing: str
+) -> None:
     preamble = tmp_path / "dzg-macros.sty"
     preamble.write_text(r"\newcommand{\foo}{x}" + "\n")
     for name in ("corpus", "wiki"):

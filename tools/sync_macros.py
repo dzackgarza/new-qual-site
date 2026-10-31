@@ -53,11 +53,15 @@ SEARCH_PATH = (PREAMBLE.parent / "macros",)
 COMMENT_RE = re.compile(r"(?<!\\)%.*")
 INPUT_RE = re.compile(r"\\input\{([^}]+)\}")
 # The optional groups are LaTeX's argument count and default first argument.
-COMMAND_RE = re.compile(r"\\(?:(?:re)?newcommand|providecommand)\*?\s*\{?\\([A-Za-z]+)\}?\s*(?:\[\d+\])?(?:\[[^\]]*\])?\s*\{")
+COMMAND_RE = re.compile(
+    r"\\(?:(?:re)?newcommand|providecommand)\*?\s*\{?\\([A-Za-z]+)\}?\s*(?:\[\d+\])?(?:\[[^\]]*\])?\s*\{"
+)
 OPERATOR_RE = re.compile(r"\\DeclareMathOperator\*?\s*\{?\\([A-Za-z]+)\}?\s*\{")
 # mathtools' `\DeclarePairedDelimiter\qty{(}{)}` defines `\qty{x}` as the scaled
 # pair around its argument, which MathJax writes with `\left` and `\right`.
-PAIRED_RE = re.compile(r"\\DeclarePairedDelimiter\s*\{?\\([A-Za-z]+)\}?\s*\{([^{}]*)\}\s*\{([^{}]*)\}")
+PAIRED_RE = re.compile(
+    r"\\DeclarePairedDelimiter\s*\{?\\([A-Za-z]+)\}?\s*\{([^{}]*)\}\s*\{([^{}]*)\}"
+)
 # `\def` is a definition too. The preamble writes three macros with it, and the
 # corpus uses two of them, so `\rising{n}{k}` and `\falling{2n}{n}` reached the
 # page as red source. The parameter markers sit between the name and the body.
@@ -112,13 +116,19 @@ def _find_input(including: Path, filename: str, search: tuple[Path, ...]) -> Pat
     for directory in search:
         found = sorted(directory.rglob(filename))
         if len(found) > 1:
-            raise FileExistsError(f"{including}: \\input{{{filename}}} is ambiguous under {directory}: {', '.join(map(str, found))}")
+            raise FileExistsError(
+                f"{including}: \\input{{{filename}}} is ambiguous under {directory}: {', '.join(map(str, found))}"
+            )
         if found:
             return found[0]
-    raise FileNotFoundError(f"{including}: \\input{{{filename}}} is on no search path: {', '.join(map(str, (including.parent, *search)))}")
+    raise FileNotFoundError(
+        f"{including}: \\input{{{filename}}} is on no search path: {', '.join(map(str, (including.parent, *search)))}"
+    )
 
 
-def preamble_text(path: Path, search: tuple[Path, ...], seen: frozenset[Path] = frozenset()) -> str:
+def preamble_text(
+    path: Path, search: tuple[Path, ...], seen: frozenset[Path] = frozenset()
+) -> str:
     """The preamble with its comments dropped and its `\\input` files spliced in.
 
     An `\\input` name is looked up beside the including file, then anywhere under
@@ -129,7 +139,9 @@ def preamble_text(path: Path, search: tuple[Path, ...], seen: frozenset[Path] = 
     out, cut = [], 0
     for match in INPUT_RE.finditer(text):
         name = match.group(1)
-        child = _find_input(path, name if name.endswith(".tex") else name + ".tex", search)
+        child = _find_input(
+            path, name if name.endswith(".tex") else name + ".tex", search
+        )
         out.append(text[cut : match.start()])
         if child not in seen:
             out.append(preamble_text(child, search, seen | {path}))
@@ -156,11 +168,23 @@ def definitions(text: str) -> dict[str, str]:
     for match in COMMAND_RE.finditer(text):
         found.append((match.start(), match.group(1), group_at(text, match.end())))
     for match in OPERATOR_RE.finditer(text):
-        found.append((match.start(), match.group(1), f"\\operatorname{{{group_at(text, match.end())}}}"))
+        found.append(
+            (
+                match.start(),
+                match.group(1),
+                f"\\operatorname{{{group_at(text, match.end())}}}",
+            )
+        )
     for match in DEF_RE.finditer(text):
         found.append((match.start(), match.group(1), group_at(text, match.end())))
     for match in PAIRED_RE.finditer(text):
-        found.append((match.start(), match.group(1), f"\\left{match.group(2)} #1 \\right{match.group(3)}"))
+        found.append(
+            (
+                match.start(),
+                match.group(1),
+                f"\\left{match.group(2)} #1 \\right{match.group(3)}",
+            )
+        )
     return {name: body for _, name, body in sorted(found)}
 
 
@@ -172,21 +196,37 @@ def main() -> int:
 
     used: set[str] = set()
     for where in USED_IN:
-        for path in (ROOT / where).rglob("*.md"):
+        source = ROOT / where
+        if not source.is_dir():
+            raise FileNotFoundError(f"authored source directory missing: {source}")
+        for path in source.rglob("*.md"):
             used |= set(MACRO_USE_RE.findall(path.read_text()))
 
     frontier, keep = used & defined.keys(), {}
     while frontier:  # a macro may be defined in terms of another
         name = frontier.pop()
         keep[name] = defined[name]
-        frontier |= {n for n in MACRO_USE_RE.findall(defined[name]) if n in defined and n not in keep}
+        frontier |= {
+            n
+            for n in MACRO_USE_RE.findall(defined[name])
+            if n in defined and n not in keep
+        }
 
-    macros = {"\\" + name: UNRENDERABLE[name] if name in UNRENDERABLE else TEX_ONLY.sub("", body).strip() for name, body in sorted(keep.items()) if name not in NATIVE}
+    macros = {
+        "\\" + name: UNRENDERABLE[name]
+        if name in UNRENDERABLE
+        else TEX_ONLY.sub("", body).strip()
+        for name, body in sorted(keep.items())
+        if name not in NATIVE
+    }
     mirror = ROOT / "vocabularies" / "macros.json"
     text = json.dumps(macros, indent=2, ensure_ascii=False) + "\n"
     if "--check" in sys.argv[1:]:
         if mirror.read_text() != text:
-            print(f"{mirror.relative_to(ROOT)} differs from {PREAMBLE}: run `uv run python tools/sync_macros.py`", file=sys.stderr)
+            print(
+                f"{mirror.relative_to(ROOT)} differs from {PREAMBLE}: run `uv run python tools/sync_macros.py`",
+                file=sys.stderr,
+            )
             return 1
         return 0
     mirror.write_text(text)
