@@ -6,7 +6,9 @@ title: Recovering $f(x,y)$ from its partial derivatives $2x+y$ and $x+2y$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Multivariable Calculus
+  - Partial Derivatives
 relations: []
 review: draft
 ---
@@ -16,5 +18,5 @@ Find all functions $f(x, y)$ satisfying $\frac{\partial f}{\partial x}(x, y) = 2
 :::
 
 ::: {.solution}
-Integrating the first equality in x, we find $f ( x , y ) = x ^ { 2 } + x y + g ( y )$ for some function g. Differentiating in y shows that $g ^ { \prime } ( y ) = 2 y$ and so $g ( y ) = y ^ { 2 } + C$ and thus $f ( x , y ) = x ^ { 2 } + x y + y ^ { 2 } + C$ where C is a constant.
+Integrating the first equation in $x$, we find $f(x,y)=x^2+xy+g(y)$ for some function $g$. Differentiating in $y$ shows that $x+g'(y)=x+2y$, so $g'(y)=2y$ and $g(y)=y^2+C$. Thus $f(x,y)=x^2+xy+y^2+C$, where $C$ is a constant, and every such function satisfies both equations.
 :::

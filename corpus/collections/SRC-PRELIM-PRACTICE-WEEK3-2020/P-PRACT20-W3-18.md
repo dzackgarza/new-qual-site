@@ -6,7 +6,9 @@ title: Partial derivative of the elementary symmetric polynomial $\sum_{i<j}x_ix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Multivariable Calculus
+  - Partial Derivatives
 relations: []
 review: draft
 ---

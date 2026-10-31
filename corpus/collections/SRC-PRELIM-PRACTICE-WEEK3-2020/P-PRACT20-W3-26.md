@@ -6,7 +6,9 @@ title: Area of an ellipse as the line integral $\oint -y\,dx+x\,dy$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Multivariable Calculus
+  - Green's Theorem
 relations: []
 review: draft
 ---
@@ -19,9 +21,9 @@ $$
 :::
 
 ::: {.solution}
-Let $D$ be the region bounded by $\mathcal{C}$, oriented counterclockwise. By Green's theorem the line integral equals $\int_D \left(\frac{\partial x}{\partial x} - \frac{\partial(-y)}{\partial y}\right) dx\,dy = \int_D 2\,dx\,dy$, which we evaluate with the elliptic polar coordinates $x = a r \cos ( \theta ) , y = b r \sin ( \theta )$, whose Jacobian is $abr$:
+Let $D$ be the region bounded by $\mathcal{C}$, oriented counterclockwise. By Green's theorem the line integral equals $\int_D \left(\frac{\partial x}{\partial x} - \frac{\partial(-y)}{\partial y}\right) dx\,dy = \int_D 2\,dx\,dy$, which we evaluate with the elliptic polar coordinates $x=ar\cos\theta$, $y=br\sin\theta$, whose Jacobian is $abr$:
 
 $$
-\oint _ { \mathcal { C } } ( - y ) d x + x d y = \int _ { D } 2 d x d y = \int _ { 0 } ^ { 2 \pi } \int _ { 0 } ^ { 1 } 2 a b r d r d \theta = 2 \pi a b .
+\oint_{\mathcal{C}}(-y)\,dx+x\,dy=\int_D2\,dx\,dy=\int_0^{2\pi}\int_0^1 2abr\,dr\,d\theta=2\pi ab.
 $$
 :::

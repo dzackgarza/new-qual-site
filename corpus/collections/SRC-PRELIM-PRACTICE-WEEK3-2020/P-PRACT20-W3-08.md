@@ -6,7 +6,8 @@ title: Maclaurin series of $f(x)/(1-x)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Power Series
 relations: []
 review: draft
 ---
@@ -16,23 +17,19 @@ Assume that $f(x) = \sum_{n=0}^{\infty} a_{n} x^{n}$ converges on $(-1, 1)$. Fin
 :::
 
 ::: {.solution}
-Let $\textstyle g ( x ) = \sum _ { n = 0 } ^ { \infty } b _ { n } x ^ { n }$ . Then
+On $(-1,1)$ the series $\frac{1}{1-x}=\sum_{n\ge0}x^n$ converges absolutely, and so does $\sum a_nx^n$ (a power series converges absolutely inside its interval of convergence). Their Cauchy product therefore converges to the product on $(-1,1)$:
 
 $$
-f ( x ) = \sum _ { n = 0 } ^ { \infty } a _ { n } x ^ { n } = ( 1 - x ) \sum _ { n = 0 } ^ { \infty } b _ { n } x ^ { n } = b _ { 0 } + \sum _ { n = 1 } ^ { \infty } ( b _ { n } - b _ { n - 1 } ) x ^ { n } .
+g(x)=\left(\sum_{n=0}^{\infty}a_nx^n\right)\left(\sum_{n=0}^{\infty}x^n\right)=\sum_{n=0}^{\infty}\left(\sum_{k=0}^{n}a_k\right)x^n.
 $$
 
-Thus $b _ { 0 } = a _ { 0 }$ and $b _ { n } = a _ { n } + b _ { n - 1 }$ . From this we see $b _ { 1 } = a _ { 1 } + a _ { 0 } , b _ { 2 } = a _ { 2 } + ( a _ { 1 } + a _ { 0 } )$ and by a quick induction $b _ { k } = a _ { k } + \cdot \cdot \cdot + a _ { 1 } + a _ { 0 }$ . Hence
-
-$$
-g ( x ) = \sum _ { n = 0 } ^ { \infty } \left( \sum _ { k = 0 } ^ { n } a _ { k } \right) x ^ { n } .
-$$
+Equivalently, writing $g(x)=\sum b_nx^n$ and comparing coefficients in $f(x)=(1-x)g(x)=b_0+\sum_{n\ge1}(b_n-b_{n-1})x^n$ gives $b_0=a_0$ and $b_n=a_n+b_{n-1}$, so by induction $b_n=a_0+a_1+\cdots+a_n$.
 
 More generally, if two power series converge on an open interval $(-r,r)$, then on that interval their product is given by the Cauchy product formula:
 
 $$
-\left( \sum _ { n = 0 } ^ { \infty } c _ { n } x ^ { n } \right) \left( \sum _ { n = 0 } ^ { \infty } d _ { n } x ^ { n } \right) = \sum _ { n = 0 } ^ { \infty } \left( \sum _ { k = 0 } ^ { n } c _ { k } d _ { n - k } \right) x ^ { n } .
+\left(\sum_{n=0}^{\infty}c_nx^n\right)\left(\sum_{n=0}^{\infty}d_nx^n\right)=\sum_{n=0}^{\infty}\left(\sum_{k=0}^{n}c_kd_{n-k}\right)x^n.
 $$
 
-This formula (along with the binomial formula) is used in proving that $e ^ { x + y } = e ^ { x } e ^ { y }$ for $x , y \in \RR$
+This formula, with the binomial formula, proves that $e^{x+y}=e^xe^y$ for $x,y\in\RR$.
 :::

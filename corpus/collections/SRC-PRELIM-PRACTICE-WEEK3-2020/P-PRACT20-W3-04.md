@@ -6,7 +6,8 @@ title: Binomial series for $(1+x)^\alpha$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Taylor Series
 relations: []
 review: draft
 ---
@@ -19,13 +20,13 @@ Let $\alpha \in \RR$. Find the Taylor Series for $(1 + x)^{\alpha}$ around $x = 
 We see
 
 $$
-f ^ { ( k ) } ( x ) = \alpha ( \alpha - 1 ) \cdots ( \alpha - ( k - 1 ) ) ( 1 + x ) ^ { \alpha - k }
+f^{(k)}(x)=\alpha(\alpha-1)\cdots(\alpha-(k-1))(1+x)^{\alpha-k}
 $$
 
 and so the Taylor series is given by
 
 $$
-f ( x ) = 1 + \alpha x + { \frac { \alpha ( \alpha - 1 ) } { 2 } } x ^ { 2 } + { \frac { \alpha ( \alpha - 1 ) ( \alpha - 2 ) } { 6 } } x ^ { 3 } + \cdots = \sum _ { k = 0 } ^ { \infty } \left( \prod _ { \ell = 0 } ^ { k - 1 } ( \alpha - \ell ) \right) { \frac { x ^ { k } } { k ! } }
+f(x)\sim1+\alpha x+\frac{\alpha(\alpha-1)}{2}x^2+\frac{\alpha(\alpha-1)(\alpha-2)}{6}x^3+\cdots=\sum_{k=0}^{\infty}\left(\prod_{\ell=0}^{k-1}(\alpha-\ell)\right)\frac{x^k}{k!}
 $$
 
 where the empty product is 1 by convention.

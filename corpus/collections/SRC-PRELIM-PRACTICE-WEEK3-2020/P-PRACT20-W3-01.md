@@ -6,7 +6,9 @@ title: Closed form for the derivative of $\sum_{n\ge1}(-1)^nx^{3n}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Power Series
+  - Differentiation
 relations: []
 review: draft
 ---
@@ -20,6 +22,6 @@ This is a geometric series (with the first term missing).
 Thus
 
 $$
-f ( x ) + 1 = \sum _ { n = 0 } ^ { \infty } ( - x ^ { 3 } ) ^ { n } = { \frac { 1 } { 1 + x ^ { 3 } } } \quad \Longrightarrow \quad f ^ { \prime } ( x ) = - { \frac { 3 x ^ { 2 } } { ( 1 + x ^ { 3 } ) ^ { 2 } } } .
+f(x)+1=\sum_{n=0}^{\infty}(-x^3)^n=\frac{1}{1+x^3}\quad\Longrightarrow\quad f'(x)=-\frac{3x^2}{(1+x^3)^2}.
 $$
 :::

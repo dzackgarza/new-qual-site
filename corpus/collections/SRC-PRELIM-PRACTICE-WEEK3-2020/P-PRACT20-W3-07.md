@@ -6,7 +6,9 @@ title: Taylor series of the sine integral $\int_0^x\frac{\sin t}{t}\,dt$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Taylor Series
+  - Integrals
 relations: []
 review: draft
 ---
@@ -16,9 +18,9 @@ Find the Taylor Series for $\displaystyle f(x) = \int_{0}^{x} \frac{\sin(t)}{t}\
 :::
 
 ::: {.solution}
-Starting with the Taylor Series for sin(t), dividing by t and then integrating, we have
+Start with the Taylor series for $\sin t$, divide by $t$, and integrate term by term, which is valid because the series converges on all of $\RR$:
 
 $$
-\sin ( t ) = \sum _ { n = 0 } ^ { \infty } { \frac { ( - 1 ) ^ { n } t ^ { 2 n + 1 } } { ( 2 n + 1 ) ! } } \quad \Longrightarrow \quad { \frac { \sin ( t ) } { t } } = \sum _ { n = 0 } ^ { \infty } { \frac { ( - 1 ) ^ { n } t ^ { 2 n } } { ( 2 n + 1 ) ! } } \quad \Longrightarrow \quad f ( x ) = \sum _ { n = 0 } ^ { \infty } { \frac { ( - 1 ) ^ { n } x ^ { 2 n + 1 } } { ( 2 n + 1 ) ! ( 2 n + 1 ) } } .
+\sin t=\sum_{n=0}^{\infty}\frac{(-1)^nt^{2n+1}}{(2n+1)!}\quad\Longrightarrow\quad\frac{\sin t}{t}=\sum_{n=0}^{\infty}\frac{(-1)^nt^{2n}}{(2n+1)!}\quad\Longrightarrow\quad f(x)=\sum_{n=0}^{\infty}\frac{(-1)^nx^{2n+1}}{(2n+1)!\,(2n+1)}.
 $$
 :::

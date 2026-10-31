@@ -6,13 +6,15 @@ title: Plane through the origin, $(2,0,0)$ and $(0,0,1)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Multivariable Calculus
+  - Planes
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-Find the equation of the plane containing the origin and the points (2, 0, 0) and (0, 0, 1).
+Find the equation of the plane containing the origin and the points $(2,0,0)$ and $(0,0,1)$.
 :::
 
 ::: {.solution}

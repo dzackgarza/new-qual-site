@@ -6,7 +6,9 @@ title: Minimizing $x+4z$ on the sphere $x^2+y^2+z^2=2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Multivariable Calculus
+  - Lagrange Multipliers
 relations: []
 review: draft
 audit:
@@ -17,15 +19,15 @@ audit:
 ---
 
 ::: {.problem}
-Minimize the function $f(x, y, z) = x + 4z$ on the curve $x^{2} + y^{2} + z^{2} = 2$.
+Minimize the function $f(x, y, z) = x + 4z$ on the sphere $x^{2} + y^{2} + z^{2} = 2$.
 :::
 
 ::: {.solution}
-The minimum must satisfy
+The sphere is compact and $f$ is continuous, so $f$ attains a minimum, and the gradient of the constraint is nonzero on the sphere. By Lagrange multipliers the minimum satisfies
 
 $$
-1 = 2 \lambda x , ~ 0 = 2 \lambda y , ~ 4 = 2 \lambda z .
+1=2\lambda x,\qquad 0=2\lambda y,\qquad 4=2\lambda z.
 $$
 
-Plugging these into the constraint gives $\frac{1}{4\lambda^2} + \frac{4}{\lambda^2} = 2$, so $\lambda^2 = 17/8$. The two critical points are $\pm(\sqrt{2/17}, 0, \sqrt{32/17})$, where $f = \pm\sqrt{34}$; the minimum is attained at $( - \sqrt { 2 / 1 7 } , 0 , - \sqrt { 3 2 / 1 7 } )$
+Plugging these into the constraint gives $\frac{1}{4\lambda^2} + \frac{4}{\lambda^2} = 2$, so $\lambda^2 = 17/8$. The two critical points are $\pm(\sqrt{2/17}, 0, \sqrt{32/17})$, where $f = \pm\sqrt{34}$; the minimum value $-\sqrt{34}$ is attained at $\left(-\sqrt{2/17},\,0,\,-\sqrt{32/17}\right)$.
 :::

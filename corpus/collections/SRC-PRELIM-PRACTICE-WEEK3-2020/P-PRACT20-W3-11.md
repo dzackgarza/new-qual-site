@@ -6,7 +6,9 @@ title: Expanding $x^3-x+1$ in powers of $x-2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Taylor Series
+  - Polynomials
 relations: []
 review: draft
 ---
@@ -16,5 +18,5 @@ Find $a_{0}, a_{1}, a_{2}, a_{3}$ such that $x^{3} - x + 1 = a_{0} + a_{1}(x - 2
 :::
 
 ::: {.solution}
-We can view this as the Taylor series for the polynomial centered at $x = 2$ . Plugging in $x = 2$ gives $a _ { 0 } = 7$ . Taking a derivative and then plugging in $x = 2$ gives $a _ { 1 } = 1 1$ . Taking two derivatives and plugging in $x = 2$ gives $a _ { 2 } = 6$ . Finally taking three derivatives shows $a_3 = 1$, which is also the coefficient of $x^3$.
+The right side is the Taylor expansion of $f(x)=x^3-x+1$ about $x=2$, so $a_k=f^{(k)}(2)/k!$. Then $a_0=f(2)=7$, $a_1=f'(2)=3\cdot4-1=11$, and $a_2=f''(2)/2=6\cdot2/2=6$. Finally taking three derivatives shows $a_3 = 1$, which is also the coefficient of $x^3$.
 :::

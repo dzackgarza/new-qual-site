@@ -6,7 +6,9 @@ title: The integral $\int_0^\infty\lfloor x\rfloor e^{-x}\,dx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Improper Integrals
+  - Series
 relations: []
 review: draft
 audit:
@@ -17,15 +19,21 @@ audit:
 ---
 
 ::: {.problem}
-Compute $\int_0^\infty \lfloor x \rfloor e^{-x}\,dx$ where $\lfloor x \rfloor$ denotes the largest integer smaller than $x$.
+Compute $\int_0^\infty \lfloor x \rfloor e^{-x}\,dx$ where $\lfloor x \rfloor$ denotes the largest integer not exceeding $x$.
 :::
 
 ::: {.solution}
-Split the integral into intervals $[ n , n + 1 )$ for $n \in  { \NN } _ { 0 }$ and use $\lfloor x \rfloor = n \colon$
+Split the integral into the intervals $[n,n+1)$ for $n\in\NN_0$ and use $\lfloor x\rfloor=n$ there; the $n=0$ term vanishes:
 
 $$
-\begin{array} { r c l } { \displaystyle \int _ { 0 } ^ { \infty } \lfloor x \rfloor e ^ { - x } d x = \displaystyle \sum _ { n = 1 } ^ { \infty } n \int _ { n } ^ { n + 1 } e ^ { - x } d x } \\ { \displaystyle } & { = \displaystyle \sum _ { n = 1 } ^ { \infty } n ( e ^ { - n } - e ^ { - ( n + 1 ) } ) } \\ { \displaystyle } & { = \displaystyle \sum _ { n = 1 } ^ { \infty } n e ^ { - n } - \sum _ { n = 1 } ^ { \infty } n e ^ { - ( n + 1 ) } } \\ { \displaystyle } & { = \displaystyle \sum _ { n = 1 } ^ { \infty } n e ^ { - n } - \sum _ { n = 2 } ^ { \infty } ( n - 1 ) e ^ { - n } = \sum _ { n = 1 } ^ { \infty } e ^ { - n } . } \end{array}
+\begin{aligned}
+\int_0^\infty\lfloor x\rfloor e^{-x}\,dx
+&=\sum_{n=1}^{\infty}n\int_n^{n+1}e^{-x}\,dx
+=\sum_{n=1}^{\infty}n\bigl(e^{-n}-e^{-(n+1)}\bigr)\\
+&=\sum_{n=1}^{\infty}ne^{-n}-\sum_{n=2}^{\infty}(n-1)e^{-n}
+=\sum_{n=1}^{\infty}e^{-n}.
+\end{aligned}
 $$
 
-Now this is a geometric series resulting in $\int _ { 0 } ^ { \infty } \lfloor x \rfloor e ^ { - x } d x = { \frac { e ^ { - 1 } } { 1 - e ^ { - 1 } } } = { \frac { 1 } { e - 1 } } .$
+This is a geometric series, so $\displaystyle\int_0^\infty\lfloor x\rfloor e^{-x}\,dx=\frac{e^{-1}}{1-e^{-1}}=\frac{1}{e-1}$.
 :::

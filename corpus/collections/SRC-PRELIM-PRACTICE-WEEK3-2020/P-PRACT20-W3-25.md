@@ -6,7 +6,9 @@ title: The integrals $\int_0^{\pi/2}(a\cos^2x+b\sin^2x)^{-n}\,dx$ by differentia
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integrals
+  - Differentiation Under the Integral
 relations: []
 review: draft
 ---
@@ -16,24 +18,25 @@ For $a, b > 0$ and $n \in \NN$, define
 $$
 I_{n}(a, b) = \int_{0}^{\pi/2} \frac{dx}{(a \cos^{2}(x) + b \sin^{2}(x))^{n}}.
 $$
-Show that
+(a) Show that
 $$
 \frac{\partial I_{n}}{\partial a} + \frac{\partial I_{n}}{\partial b} + n I_{n+1} = 0.
 $$
-Evaluate $I_{1}(a, b)$ explicitly and use this to evaluate $I_{2}(a, b)$.
+
+(b) Evaluate $I_{1}(a, b)$ explicitly, and use (a) to evaluate $I_{2}(a, b)$.
 :::
 
 ::: {.solution}
-Differentiating under the integral (legal by Leibniz rule), we find
+The denominator is at least $\min(a,b)^n>0$ on $[0,\pi/2]$, so the integrand and its partial derivatives in $a,b$ are continuous on $[0,\pi/2]\times(0,\infty)^2$. Differentiating under the integral sign (Leibniz rule), we find
 
 $$
-\frac { \partial I _ { n } } { \partial a } ( a , b ) = - \int _ { 0 } ^ { \pi / 2 } \frac { n \cos ^ { 2 } ( x ) d x } { ( a \cos ^ { 2 } ( x ) + b \sin ^ { 2 } ( x ) ) ^ { n + 1 } } , \quad \frac { \partial I _ { n } } { \partial b } ( a , b ) = - \int _ { 0 } ^ { \pi / 2 } \frac { n \sin ^ { 2 } ( x ) d x } { ( a \cos ^ { 2 } ( x ) + b \sin ^ { 2 } ( x ) ) ^ { n + 1 } }
+\frac{\partial I_n}{\partial a}(a,b)=-\int_0^{\pi/2}\frac{n\cos^2x\,dx}{(a\cos^2x+b\sin^2x)^{n+1}},\qquad\frac{\partial I_n}{\partial b}(a,b)=-\int_0^{\pi/2}\frac{n\sin^2x\,dx}{(a\cos^2x+b\sin^2x)^{n+1}},
 $$
 
 and so
 
 $$
-\frac { \partial I _ { n } } { \partial a } + \frac { \partial I _ { n } } { \partial b } = - n \int _ { 0 } ^ { \pi / 2 } \frac { \cos ^ { 2 } ( x ) + \sin ^ { 2 } ( x ) } { ( a \cos ^ { 2 } ( x ) + b \sin ^ { 2 } ( x ) ) ^ { n + 1 } } d x = - n I _ { n + 1 } .
+\frac{\partial I_n}{\partial a}+\frac{\partial I_n}{\partial b}=-n\int_0^{\pi/2}\frac{\cos^2x+\sin^2x}{(a\cos^2x+b\sin^2x)^{n+1}}\,dx=-nI_{n+1}.
 $$
 
 To evaluate $I_1(a,b)$, divide numerator and denominator by $\cos^2(x)$ and substitute $u = \tan(x)$:
@@ -52,6 +55,6 @@ $$
 Then
 
 $$
-I _ { 2 } ( a , b ) = - \frac { \partial I _ { 1 } } { \partial a } ( a , b ) - \frac { \partial I _ { 1 } } { \partial b } ( a , b ) = \frac { \pi } { 4 a \sqrt { a b } } + \frac { \pi } { 4 b \sqrt { a b } } = \frac { \pi } { 4 \sqrt { a b } } \left( \frac { 1 } { a } + \frac { 1 } { b } \right) .
+I_2(a,b)=-\frac{\partial I_1}{\partial a}(a,b)-\frac{\partial I_1}{\partial b}(a,b)=\frac{\pi}{4a\sqrt{ab}}+\frac{\pi}{4b\sqrt{ab}}=\frac{\pi}{4\sqrt{ab}}\left(\frac1a+\frac1b\right).
 $$
 :::

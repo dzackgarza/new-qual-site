@@ -6,7 +6,9 @@ title: Integrating $e^{y^2}$ over a triangle by reversing the order of integrati
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Multivariable Calculus
+  - Multiple Integrals
 relations: []
 review: draft
 ---
@@ -16,10 +18,9 @@ Find the integral of $f(x, y) = e^{y^{2}}$ over the triangular region bounded by
 :::
 
 ::: {.solution}
-We should integrate in x first since $e ^ { y ^ { 2 } }$ doesn’t have an elementary antiderivative.
-The integral is given by
+Integrate in $x$ first, since $e^{y^2}$ has no elementary antiderivative in $y$. The region is $\{(x,y):0\le y\le2,\ -y\le x\le y\}$, so the integral is
 
 $$
-\int _ { 0 } ^ { 2 } \int _ { - y } ^ { y } e ^ { y ^ { 2 } } d x d y = \int _ { 0 } ^ { 2 } 2 y e ^ { y ^ { 2 } } d y = e ^ { y ^ { 2 } } { \evalfrom } _ { y = 0 } ^ { y = 2 } = e ^ { 4 } - 1 .
+\int_0^2\int_{-y}^{y}e^{y^2}\,dx\,dy=\int_0^2 2ye^{y^2}\,dy=e^{y^2}\evalfrom_{y=0}^{y=2}=e^4-1.
 $$
 :::

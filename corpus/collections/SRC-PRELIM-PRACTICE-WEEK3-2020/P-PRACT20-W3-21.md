@@ -6,7 +6,9 @@ title: Work done by a constant force along the twisted cubic $(t,t^2,t^3)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Multivariable Calculus
+  - Line Integrals
 relations: []
 review: draft
 ---
@@ -16,9 +18,9 @@ Let $F$ be a constant unit force in the direction of $(-1, 0, 1)$. Find the work
 :::
 
 ::: {.solution}
-The work is given by
+The unit force is $F=\frac{1}{\sqrt2}(-1,0,1)$ and $r'(t)=(1,2t,3t^2)$. The work is
 
 $$
-\int _ { \mathcal { C } } \mathbf { F } \cdot d \mathbf { r } = \int _ { 0 } ^ { 1 } \mathbf { F } ( \mathbf { r } ( t ) ) \cdot \mathbf { r } ^ { \prime } ( t ) d t = \int _ { 0 } ^ { 1 } ( - 1 + 3 t ^ { 2 } ) d t = 0 .
+\int_{\mathcal{C}}F\cdot dr=\int_0^1F\cdot r'(t)\,dt=\frac{1}{\sqrt2}\int_0^1(-1+3t^2)\,dt=0.
 $$
 :::

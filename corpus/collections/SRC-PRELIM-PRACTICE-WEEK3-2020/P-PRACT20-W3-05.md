@@ -6,7 +6,8 @@ title: Sum of the power series $\sum n^2x^n$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Power Series
 relations: []
 review: draft
 ---
@@ -16,30 +17,29 @@ Find the value of $\sum_{n=1}^{\infty} n^{2} x^{n}$ wherever the series converge
 :::
 
 ::: {.solution}
-The geometric series converges for $\abs{ x } < 1 ;$ we can differentiate the series term-by-term without affecting the radius of convergence.
-We see
+The series $\sum n^2x^n$ has radius of convergence $1$ by the ratio test, and it diverges at $x=\pm1$ because its terms do not tend to $0$; so it converges exactly for $\abs{x}<1$. The geometric series converges for $\abs{x}<1$, and we can differentiate it term by term without changing the radius of convergence. We see
 
 $$
-{ \frac { 1 } { 1 - x } } = \sum _ { n = 0 } ^ { \infty } x ^ { n } ,\tag{1}
-$$
-
-$$
-\implies \frac { 1 } { ( 1 - x ) ^ { 2 } } = \sum _ { n = 1 } ^ { \infty } n x ^ { n - 1 } ,\tag{2}
+\frac{1}{1-x}=\sum_{n=0}^{\infty}x^n,\tag{1}
 $$
 
 $$
-\implies \frac { 2 } { ( 1 - x ) ^ { 3 } } = \sum _ { n = 2 } ^ { \infty } n ( n - 1 ) x ^ { n - 2 } .\tag{3}
+\implies\frac{1}{(1-x)^2}=\sum_{n=1}^{\infty}nx^{n-1},\tag{2}
 $$
 
-Our original series can be rewritten
-
 $$
-\sum _ { n = 1 } ^ { \infty } n ^ { 2 } x ^ { n } = \left( \sum _ { n = 2 } ^ { \infty } n ( n - 1 ) x ^ { n } \right) + \left( \sum _ { n = 1 } ^ { \infty } n x ^ { n } \right) .
+\implies\frac{2}{(1-x)^3}=\sum_{n=2}^{\infty}n(n-1)x^{n-2}.\tag{3}
 $$
 
-These two sums can be evaluated by multiplying (3) by $x ^ { 2 }$ and multiplying (2) by x. Thus
+Since $n^2=n(n-1)+n$, our series can be rewritten
 
 $$
-\sum _ { n = 1 } ^ { \infty } n ^ { 2 } x ^ { n } = { \frac { 2 x ^ { 2 } } { ( 1 - x ) ^ { 3 } } } + { \frac { x } { ( 1 - x ) ^ { 2 } } } = { \frac { x + x ^ { 2 } } { ( 1 - x ) ^ { 3 } } } .
+\sum_{n=1}^{\infty}n^2x^n=\left(\sum_{n=2}^{\infty}n(n-1)x^n\right)+\left(\sum_{n=1}^{\infty}nx^n\right).
+$$
+
+These two sums are evaluated by multiplying (3) by $x^2$ and (2) by $x$. Thus
+
+$$
+\sum_{n=1}^{\infty}n^2x^n=\frac{2x^2}{(1-x)^3}+\frac{x}{(1-x)^2}=\frac{x+x^2}{(1-x)^3}.
 $$
 :::

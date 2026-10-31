@@ -6,7 +6,9 @@ title: Convergence of $\sum n!\,x^{2n}/(n^n(1+x^{2n}))$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Series
+  - Convergence
 relations: []
 review: draft
 ---
@@ -16,15 +18,15 @@ For which values of $x$ does $\displaystyle \sum_{n=1}^{\infty} \frac{n!\, x^{2n
 :::
 
 ::: {.solution}
-Using $\frac { x ^ { 2 n } } { 1 + x ^ { 2 n } } \leq 1$ , we see that for any x,
+Using $0\le\frac{x^{2n}}{1+x^{2n}}\le1$, we see that for any $x$,
 
 $$
-\sum _ { n = 1 } ^ { \infty } { \frac { n ! x ^ { 2 n } } { n ^ { n } ( 1 + x ^ { 2 n } ) } } \leq \sum _ { n = 1 } ^ { \infty } { \frac { n ! } { n ^ { n } } } .
+\sum_{n=1}^{\infty}\frac{n!\,x^{2n}}{n^n(1+x^{2n})}\le\sum_{n=1}^{\infty}\frac{n!}{n^n}.
 $$
 
-The latter sum converges; thus the former converges for all $x \in \RR$ . To prove the latter converges, use the ratio test:
+The latter sum converges; thus the former converges for all $x\in\RR$ by comparison. To prove the latter converges, use the ratio test with $a_n=n!/n^n$:
 
 $$
-\operatorname* { l i m } _ { n \to \infty } { \frac { a _ { n + 1 } } { a _ { n } } } = \operatorname* { l i m } _ { n \to \infty } { \frac { ( n + 1 ) ! n ^ { n } } { n ! ( n + 1 ) ^ { n + 1 } } } = \operatorname* { l i m } _ { n \to \infty } { \frac { 1 } { \left( 1 + { \frac { 1 } { n } } \right) ^ { n } } } = { \frac { 1 } { e } } < 1 .
+\lim_{n\to\infty}\frac{a_{n+1}}{a_n}=\lim_{n\to\infty}\frac{(n+1)!\,n^n}{n!\,(n+1)^{n+1}}=\lim_{n\to\infty}\frac{1}{\left(1+\frac1n\right)^n}=\frac1e<1.
 $$
 :::
