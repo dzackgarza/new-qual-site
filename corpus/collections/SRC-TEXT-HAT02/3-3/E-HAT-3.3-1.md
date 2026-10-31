@@ -23,40 +23,19 @@ Show that there exist nonorientable 1-dimensional manifolds if the Hausdorff con
 :::
 
 ::: {.solution}
-**Theorem.**  
-There exists a 1-dimensional manifold that is not orientable when Hausdorffness is not required.
-
-*Proof by example.*
-
-Construct
+Take two copies $\RR_+$ and $\RR_-$ of the real line. Identify their punctured lines by the homeomorphism
 $$
-X=\Bigl((\RR\times\{+\})\sqcup(\RR\times\{-\})\Bigr)\big/\!\!\sim
+h:\RR_+\setminus\{0\}\longrightarrow\RR_-\setminus\{0\},
+\qquad
+h(t)=
+\begin{cases}
+t,&t>0,\\
+1/t,&t<0.
+\end{cases}
 $$
-with the equivalence relation:
-$$
-(t,+)\sim(t,-)\ \text{for }t>0,\qquad
-(t,+)\sim(-t,-)\ \text{for }t<0,
-$$
-and no identification of $0+$ with $0-$.
+Let $X$ be the resulting quotient. Each copy of $\RR$ maps homeomorphically onto an open subset of $X$, so these two maps give 1-dimensional manifold charts. The images overlap on the two components of the punctured line. The chart transition is increasing on the positive component and decreasing on the negative component.
 
-Define the quotient map $q$ and denote $0_\pm=q(0,\pm)$ and
-$U_\pm=q((-\varepsilon,\varepsilon)\times\{\pm\})$.
+An orientation of either connected chart must choose one of its two directions throughout that chart. No choices for the two charts can make their transition preserve orientation on both components of the overlap. Thus $X$ is nonorientable.
 
-1. $X$ is a 1-manifold.
-   - For $t\neq0$ each point has a neighborhood inherited from one real line branch, so is homeomorphic to an interval.
-   - Near $0_\pm$, the sets $q([-\varepsilon,\varepsilon]\times\{\pm\})$ are intervals, since the quotient only folds the two copies together away from 0.
-
-2. $X$ is not Hausdorff.
-   Any neighborhoods of $0_+$ and $0_-$ both contain points identified with small positive real numbers, hence intersect; thus no disjoint neighborhoods separate $0_+$ and $0_-$.
-
-3. Put manifold charts
-   $$\phi_+:U_+\to(-1,1),\ \phi_+(q(t,+))=t,$$
-   $$\phi_-:U_-\to(-1,1),\ \phi_-(q(t,-))=t.$$
-   On overlaps, for points coming from $t<0$ the transition is orientation-preserving on one branch and orientation-reversing on the other branch.
-   More precisely, the overlap map is locally $t\mapsto t$ on positive coordinates and $t\mapsto -t$ on negative coordinates.
-   Hence no single chart orientation on $U_-$ makes all overlap maps orientation-preserving.
-
-4. Therefore $X$ is nonorientable by definition of orientability for 1-manifolds via compatible orientations on overlaps.
-
-So a non-Hausdorff 1-dimensional manifold can be nonorientable. ∎
+The two origins are distinct but cannot be separated by disjoint open neighborhoods: every neighborhood of each contains the same points represented by sufficiently small positive $t$. Therefore $X$ is non-Hausdorff.
 :::
