@@ -313,6 +313,8 @@ source:
       comment: Ch. 7, Exercise 6
     - id: E-SS7.EX-7
       comment: Ch. 7, Exercise 7
+    - id: E-SS7.EX-8
+      comment: Ch. 7, Exercise 8
   - name: Ch7 Problems
     problems:
     - id: E-SS7.PR-1
