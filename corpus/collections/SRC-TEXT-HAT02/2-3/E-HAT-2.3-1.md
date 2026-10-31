@@ -50,6 +50,17 @@ audit:
     certifies the cellular data: the complex with $d_1=0$, $d_2=m$ has homology $\ZZ$, $\ZZ/m$, $0$
     for $m=2,3,4,5,6,12$, and the Smith form of $(m)$ is $(m)$. The identification of these groups
     with the homology of the Moore pair is Hatcher's cellular computation and is not formalized.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The identification of the chain complexes with the homology of the space is not formalized and
+    is not claimed to be: it is Hatcher's Theorem 2.35 for the finite CW structure with one cell in
+    dimensions $0,1,2$, the Cellular Boundary Formula of §2.2 giving $d_1=0$ and $d_2=m$, and
+    Proposition 2.22 for the good pair $(X,A)$ with $A=S^1$ a subcomplex and $X/A=S^2$.
+    proofs/README.md records these three citations with their hypotheses checked, separately from
+    the Lean group lemmas and from the Sage sample, which covers only $m\in\{2,3,4,5,6,12\}$ and
+    does not settle the uniform statement.
 ---
 
 ::: {.problem}

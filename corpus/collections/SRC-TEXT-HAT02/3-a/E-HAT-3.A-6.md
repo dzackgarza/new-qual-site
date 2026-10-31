@@ -54,6 +54,22 @@ audit:
     proofs/cards/TorTorsion.lean certifies the group-theoretic core: `ratchet_le` ($m\le k$),
     `exact_order_smul`, `exists_coord`, the refutation `zmod_two_no_exact_order_eight`, and
     `zmod_eight_order_four`; the Tor-theoretic reductions themselves are cited, not formalized.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The reductions in the converse are now citations of the section's own Proposition 3A.5, checked
+    against the printed statement: (4) gives
+    $\operatorname{Tor}(A,B)\cong\operatorname{Tor}(T(A),B)$, (2) gives the split over the primary
+    components, (6) applied to $0\to B_p\to B\to B/B_p\to0$ with (3) gives
+    $\operatorname{Tor}(A_p,B)\cong\operatorname{Tor}(A_p,B_p)$, and (2) with (5) gives
+    $\operatorname{Tor}(\ZZ_{p^{k_j}},B_p)\cong B_p[p^{k_j}]$; commutation with the direct limit is
+    Exercise 4 of the same section. proofs/cards/TorReductions.lean formalizes the parts of (3),
+    (5) and (6) that are statements about torsion, flatness and tensor products, reusing Mathlib's
+    torsion-free-is-flat instance and its flatness form of tensor exactness; the comparison theorem
+    (Lemma 3A.2), additivity (2), the torsion reduction (4) and the direct-limit statement are
+    cited, and the file records that Mathlib's `CategoryTheory.Tor` has no long exact sequence or
+    comparison API to reuse.
 ---
 
 ::: {.problem}
@@ -101,15 +117,15 @@ $$
 $$
 Since $B$ contains an element of order exactly $n$, $B[n]$ contains an element of order $n$. Its image in $\operatorname{Tor}(A,B)$ still has order $n$, proving one direction.
 
-Conversely, suppose $\operatorname{Tor}(A,B)$ has an element of order $n$, and write $n=\prod_p p^{m_p}$. Three standard reductions pass from the mixed groups to their primary parts. First, the short exact sequence $0\to T(A)\to A\to A/T(A)\to 0$ has $A/T(A)$ torsionfree, hence flat, so $\operatorname{Tor}(A/T(A),B)=0$ and the connecting map of the associated long exact sequence is zero; therefore $\operatorname{Tor}(A,B)\cong\operatorname{Tor}(T(A),B)$, and the torsion subgroup, not the free part, carries all of $\operatorname{Tor}$. Second, $\operatorname{Tor}$ commutes with direct sums in the first variable, so $\operatorname{Tor}(T(A),B)\cong\bigoplus_p\operatorname{Tor}(A_p,B)$. Third, $B/B_p$ has no $p$-torsion, so $\operatorname{Tor}(A_p,B/B_p)=0$ and $\operatorname{Tor}(A_p,B)\cong\operatorname{Tor}(A_p,B_p)$. Combining them,
+Conversely, suppose $\operatorname{Tor}(A,B)$ has an element of order $n$, and write $n=\prod_p p^{m_p}$. Three rules of Proposition 3A.5 pass from the mixed groups to their primary parts. Rule (4) gives $\operatorname{Tor}(A,B)\cong\operatorname{Tor}(T(A),B)$, so the torsion subgroup, not the free part, carries all of $\operatorname{Tor}$. Rule (2) gives $\operatorname{Tor}(T(A),B)\cong\bigoplus_p\operatorname{Tor}(A_p,B)$ over the direct sum $T(A)=\bigoplus_pA_p$. Finally, rule (6) applied to $0\to B_p\to B\to B/B_p\to0$ gives an exact sequence whose last Tor term is $\operatorname{Tor}(A_p,B/B_p)=0$ by rule (3), since $B/B_p$ is torsionfree, so $\operatorname{Tor}(A_p,B)\cong\operatorname{Tor}(A_p,B_p)$. Combining them,
 $$
 \operatorname{Tor}(A,B)\cong\bigoplus_p\operatorname{Tor}(A_p,B_p),
 $$
 so the given element has a component of order exactly $p^{m_p}$ in $\operatorname{Tor}(A_p,B_p)$ for each prime $p$ dividing $n$.
 
-Fix such a $p$ and write $A_p$ as the directed union of its finitely generated subgroups $A_{p,\alpha}$, each of the form $\bigoplus_j\ZZ_{p^{k_j}}$. By Exercise 4 the component of the class already lies in some
+Fix such a $p$ and write $A_p$ as the directed union of its finitely generated subgroups $A_{p,\alpha}$, each of the form $\bigoplus_j\ZZ_{p^{k_j}}$. By Exercise 4 of the same section the component of the class already lies in some
 $$
 \operatorname{Tor}(A_{p,\alpha},B_p)\cong\bigoplus_j B_p[p^{k_j}],
 $$
-and here the argument must use the coordinate and nothing more. Write the class as $x=(x_j)$ and let $x_j$ be a coordinate killed by $p^{k_j}$ on which $p^{m_p-1}x$ does not vanish, so that $x_j$ is killed by $p^{m_p}$ but not by $p^{m_p-1}$; such a coordinate exists because $x$ has order exactly $p^{m_p}$. Then $p^{m_p}\mid p^{k_j}$, so $k_j\ge m_p$, and $x_j$ is itself an element of $B$ of order $p^{m_p}$. The coordinate $x_j$ gives no element of order $p^{k_j}$ in $B$ — with $A=\ZZ/8$ and $B=\ZZ/2$ the coordinate lies in $B[8]$ and has order $2$ — so the element of order $p^{m_p}$ in $B$ is $x_j$ itself. On the other side $A_{p,\alpha}$ has an element of order $p^{k_j}$ in its $j$th summand, and multiplying it by $p^{k_j-m_p}$ gives an element of $A$ of order $p^{m_p}$. Summing the resulting elements over the primes dividing $n$ gives elements of order $n$ in $A$ and in $B$.
+using rule (2) for the direct sum and rule (5) for each cyclic summand. Here the argument must use the coordinate and nothing more. Write the class as $x=(x_j)$ and let $x_j$ be a coordinate killed by $p^{k_j}$ on which $p^{m_p-1}x$ does not vanish, so that $x_j$ is killed by $p^{m_p}$ but not by $p^{m_p-1}$; such a coordinate exists because $x$ has order exactly $p^{m_p}$. Then $p^{m_p}\mid p^{k_j}$, so $k_j\ge m_p$, and $x_j$ is itself an element of $B$ of order $p^{m_p}$. The coordinate $x_j$ gives no element of order $p^{k_j}$ in $B$ — with $A=\ZZ/8$ and $B=\ZZ/2$ the coordinate lies in $B[8]$ and has order $2$ — so the element of order $p^{m_p}$ in $B$ is $x_j$ itself. On the other side $A_{p,\alpha}$ has an element of order $p^{k_j}$ in its $j$th summand, and multiplying it by $p^{k_j-m_p}$ gives an element of $A$ of order $p^{m_p}$. Summing the resulting elements over the primes dividing $n$ gives elements of order $n$ in $A$ and in $B$.
 :::
