@@ -33,11 +33,11 @@ $$
 \langle K(G,n),K(H,n)\rangle
 \cong H^n(K(G,n);H).
 $$
-Since $K(G,n)$ is $(n-1)$-connected, Hurewicz gives
+Since $G$ is abelian, Hurewicz gives
 $$
 H_n(K(G,n);\ZZ)\cong\pi_n(K(G,n))\cong G,
 $$
-and $H_{n-1}=0$. The universal coefficient theorem therefore gives
+with $H_{n-1}=0$ for $n>1$. For $n=1$, $H_0\cong\ZZ$, so its Ext term also vanishes. The universal coefficient theorem therefore gives
 $$
 H^n(K(G,n);H)
 \cong\operatorname{Hom}(H_n(K(G,n)),H)
