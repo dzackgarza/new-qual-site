@@ -77,3 +77,11 @@ $$
 :::
 
 :::
+
+::: {.remark title="Variations"}
+For $0<a<1$,
+$$
+\int_{-\infty}^{\infty}\frac{e^{ax}}{1+e^x}\,dx=\frac{\pi}{\sin\pi a}.
+$$
+The substitution $x=e^u$ turns $I$ into $\int_{-\infty}^\infty\frac{e^{(1-s)u}}{1+e^u}\,du$, so this is the main statement with $a=1-s$, and $\sin\pi(1-a)=\sin\pi a$.
+:::
