@@ -18,6 +18,10 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: source-checked
+  by: chatgpt
+  date: 2026-10-31
+  note: Justin sheet 4, Problem 6 is the theta-graph case of this construction.
 ---
 
 ::: {.problem}

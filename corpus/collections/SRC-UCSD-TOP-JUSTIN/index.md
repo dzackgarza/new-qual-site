@@ -74,6 +74,8 @@ source:
     comment: Sheet 4, Problem 4
   - id: P-LJTUV
     comment: Sheet 4, Problem 5
+  - id: P-G6GOO
+    comment: Sheet 4, Problem 6
   - P-AMD-M3CYGD2R
   - P-AMD-DDQM3X6Q
   - P-AMD-6KL53YZC
