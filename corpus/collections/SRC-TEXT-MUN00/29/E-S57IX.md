@@ -34,7 +34,7 @@ If $B$ and $C$ are locally compact Hausdorff spaces, then $p \times q: A \times 
 :::
 
 ::: {.solution}
-(a) Let $\pi=p\times i_Z$, and suppose $A\subset Y\times Z$ is such that $\pi^{-1}(A)$ is open. Fix $(y,z)\in A$ and choose $x\in p^{-1}(y)$. By local compactness and the preceding exercise, choose an open neighborhood $V$ of $z$ with compact closure $\overline V$. Since $\pi^{-1}(A)$ is open and contains $(x,z)$, shrink to an open $U_1\ni x$ such that
+(a) Let $\pi=p\times i_Z$, and suppose $A\subset Y\times Z$ is such that $\pi^{-1}(A)$ is open. Fix $(y,z)\in A$ and choose $x\in p^{-1}(y)$. Choose open sets $O\ni x$ and $W\ni z$ with $O\times W\subseteq\pi^{-1}(A)$. By local compactness and [[E-B3UKB]], choose an open neighborhood $V$ of $z$ with compact closure $\overline V\subseteq W$. Set $U_1=O$; then
 $$
 U_1\times\overline V\subset\pi^{-1}(A).
 $$
