@@ -40,6 +40,16 @@ audit:
     as written compared $Z_0/B_0$ with the reduced homology of the simplex; that comparison is only
     valid in the augmented complex, where $\partial_0$ is the augmentation, and the step is
     repaired to say so.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Certificate for the repaired degree-zero step. proofs/cards/ChainLevelSteps.lean proves the two
+    ingredients: `choose_rank_step`, Pascal's identity
+    $\binom{n+1}{i+1}-\binom{n}{i}=\binom{n}{i+1}$ in the form the rank induction uses, and
+    `ker_ne_top_of_surjective_to_int`, that an augmentation onto $\ZZ$ has proper kernel, so the
+    augmented degree-zero cycles are not the ordinary $Z_0=C_0$. The passage from the chain complex
+    of the simplex to its homology remains Hatcher's computation and is not formalized.
 ---
 
 ::: {.problem}

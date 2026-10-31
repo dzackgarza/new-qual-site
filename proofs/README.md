@@ -30,6 +30,7 @@ replacement. A correction is marked settled on its card only when a file here ce
 | `cards/Tamuras15_10.lean` | `P-TAMURAS15-10` | The corrected statement in full, including the `x ∈ Y` case `exists_mem_S` by Hahn--Banach. |
 | `cards/MooreSpaceExactness.lean` | `E-HAT-2.3-1` | The group data behind the two exactness failures: $\ZZ/m$ is nontrivial for $m\ge2$ and torsion; a sequence with trivial ends cannot be exact at $\ZZ/m$; multiplication by $m\ge2$ on $\ZZ$ is injective but not surjective. |
 | `cards/TorTorsion.lean` | `E-HAT-3.A-6` | The coordinate step of the converse and the refutation of the inference it replaces: `ratchet_le`, `exact_order_smul`, `exists_coord`, `zmod_two_no_exact_order_eight`, `zmod_eight_order_four`. |
+| `cards/ChainLevelSteps.lean` | `E-HAT-2.2-16` | The two ingredients of the repaired degree-zero step: `choose_rank_step` (Pascal's identity in the form the rank induction uses) and `ker_ne_top_of_surjective_to_int` (an augmentation onto $\ZZ$ has proper kernel, so the augmented degree-zero cycles are not the ordinary $Z_0=C_0$). |
 | `cards/TorReductions.lean` | `E-HAT-3.A-6` | The presentation-level `Tor` and the parts of Hatcher's Proposition 3A.5 that Mathlib supplies: the free case of (3) (`torKernel_eq_bot_of_subsingleton`), the group in (5) (`torsionBy_eq_ker`), the torsion-free-is-flat hypothesis of (3) (`flat_of_torsionFree`, Mathlib's Dedekind-domain instance), and the flatness form of (6) (`rTensor_injective_of_flat`, Mathlib's `Module.Flat.rTensor_preserves_injective_linearMap`). |
 
 ## 2. Chain-level checks in Sage
@@ -81,12 +82,10 @@ Repairs made to a stored proof whose mathematical content no file here certifies
 claim of the form "this argument proves the stored statement", and none may be reported as
 settled until a file here covers it:
 
-- `E-HAT-2.2-16`, third step: the degree-zero case compares cycles and boundaries in the
-  augmented complex, where the quotient is the reduced homology; the ordinary
-  $Z_0/B_0$ is $H_0$ and the statement needs $\tilde H_0$. The rank induction runs on
-  Pascal's identity.
 - `E-HAT-2.3-2`, dimension step: the candidate's dimension axiom is checked at a point,
-  with $S^0$ as the same computation.
+  with $S^0$ as the same computation. What is needed is that when all but one reduced
+  homology group vanish the direct sum fills the product; that statement is not certified
+  yet, because it needs `DirectSum.toModule` composed with the single-coordinate maps.
 - `E-HAT-3.A-2`: the restored direction "torsion-free implies $\operatorname{Tor}(A,B)=0$
   for all $B$" is a citation of exercise 5 of the same section.
 - The step-level repairs of earlier audits — `E-HAT-1.1-17`, the closing steps of
