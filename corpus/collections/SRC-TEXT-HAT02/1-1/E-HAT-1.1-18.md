@@ -165,7 +165,7 @@ $$
 Thus $i_*$ is injective.
 Together with step [](#s5){.pf-ref} it is an isomorphism, and
 $$
-\pi_1(S^1)\cong\ZZ.
+\pi_1(S^1\vee S^2)\cong\pi_1(S^1)\cong\ZZ.
 $$
 
 :::

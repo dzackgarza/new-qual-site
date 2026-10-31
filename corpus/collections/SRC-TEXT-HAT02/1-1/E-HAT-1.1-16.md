@@ -17,9 +17,7 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: >-
-    Checked against Hatcher, Algebraic Topology, Section 1.1, Exercise 16 and the
-    accompanying figure. Hatcher's correction note clarifies that in (c), A is
-    the dark circle in the interior of the solid torus; the figure shows it as a meridian.
+    Checked against Hatcher, Algebraic Topology, Section 1.1, Exercise 16 and the accompanying figure. In (c) the figure's circle A winds twice around the core of the solid torus.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -27,6 +25,10 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: In each case used the necessary split-injectivity of the inclusion on pi_1 and exhibited the obstruction explicitly.
+- event: source-corrected
+  by: claude-opus-5.5
+  date: "2026-10-31"
+  note: Part (c) of the source refers to a figure; the statement now describes the figure's circle A, which winds twice around the core.
 ---
 
 ::: {.problem}
@@ -36,7 +38,7 @@ Show that there are no retractions $r: X \to A$ in the following cases:
 
 (b) $X = S^1 \times D^2$ with $A$ its boundary torus $S^1 \times S^1$.
 
-(c) $X = S^1 \times D^2$ and $A$ the circle shown in the figure.
+(c) $X = S^1 \times D^2$ and $A$ a circle in $X$ that winds twice around the core circle $S^1 \times \{0\}$, passing between its two turns through a clasp, as in the source figure.
 
 (d) $X = D^2 \lor D^2$ with $A$ its boundary $S^1 \lor S^1$.
 
@@ -125,18 +127,23 @@ By step [](#s1){.pf-ref} there can be no retraction.
 
 ::: {.pf-step #s4}
 
-In case (c), the indicated interior circle $A$ is a meridian and hence no retraction $S^1\times D^2\to A$ exists.
+In case (c), no retraction $S^1\times D^2\to A$ exists.
 
 ::: pf-proof
 
-The dark circle in the source figure is an interior meridian of the solid torus.
-It bounds a meridional disk lying in $S^1\times D^2$.
-Thus its generator
+The solid torus deformation retracts onto its core circle, so
 $$
-[A]\in\pi_1(A)\cong\ZZ
+\pi_1(S^1\times D^2)\cong\ZZ.
 $$
-maps to the identity in $\pi_1(S^1\times D^2)$.
-The inclusion-induced map is therefore not injective, so step [](#s1){.pf-ref} rules out a retraction.
+The circle $A$ runs twice around the core in the same direction, so it is homotopic in $X$ to the core traversed twice.
+After choosing generators, the inclusion induces
+$$
+i_*:\ZZ\to\ZZ,
+\qquad
+i_*(n)=2n.
+$$
+By step [](#s1){.pf-ref}, a retraction would give a homomorphism $r_*:\ZZ\to\ZZ$, multiplication by some integer $k$, with $r_*\circ i_*=\operatorname{id}_{\ZZ}$.
+This requires $2k=1$, which is impossible.
 
 :::
 
