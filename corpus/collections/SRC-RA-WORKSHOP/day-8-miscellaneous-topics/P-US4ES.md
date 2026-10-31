@@ -23,9 +23,9 @@ Let $(X,d)$ be a metric space.
 A function $f \colon X \to \RR$ is said to be lower semi-continuous (l.s.c) if $f^{-1}(a,\infty)  = \{x \in X \, \colon \,  f(x)> a\}$ is open in $X$ for every $a \in \RR$.
 Analogously, $f$ is upper semi-continuous (u.s.c) if $f^{-1}(-\infty, b) = \{x \in X \, \colon \,  f(x)<b\}$ is open in $X$ for every $b \in \RR$.
 
-Prove that a function $f \colon X \to \RR$ is continuous if and only if $f$ is both l.s.c. and u.s.c.
+(a) Prove that a function $f \colon X \to \RR$ is continuous if and only if $f$ is both l.s.c. and u.s.c.
 
-Prove that $f$ is lower semi-continuous if and only if $\liminf_{n \to \infty} f(x_n) \geq f(x)$ whenever $\{x_n\}_{n=1}^\infty \subseteq X$ such that $x_n \to x$ in $X$.
+(b) Prove that $f$ is lower semi-continuous if and only if $\liminf_{n \to \infty} f(x_n) \geq f(x)$ whenever $\{x_n\}_{n=1}^\infty \subseteq X$ such that $x_n \to x$ in $X$.
 :::
 
 ::: {.solution}

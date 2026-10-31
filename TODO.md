@@ -261,7 +261,7 @@ mathematical correction under its own node, not under copy policy.
   - [ ] SRC-PRELIM-PRACTICE-WEEK5-2020
   - [ ] SRC-PRELIM-PRACTICE-WEEK6-2020
   - [x] SRC-QUAL-REVIEW-HATCHER
-  - [ ] SRC-RA-WORKSHOP
+  - [x] SRC-RA-WORKSHOP
   - [ ] SRC-SEQUENCES-SERIES-ASSIGNMENT-2
   - [ ] SRC-SHONKWILER-ALGEBRA-HW11
   - [ ] SRC-SHONKWILER-ALGEBRA-HW4

@@ -17,6 +17,8 @@ audit:
 ---
 ::: {.problem}
 Give an $\varepsilon$-$\delta$ proof that $f(x)=x^{1/3}$ is continuous on $[0,1]$.
+
+(You may also wish to try this for $f(x)=\sqrt{x}$ and/or on the interval $[0,\infty)$.)
 :::
 
 ::: {.solution}

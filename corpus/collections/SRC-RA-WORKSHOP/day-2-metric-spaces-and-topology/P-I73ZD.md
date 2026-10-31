@@ -24,9 +24,9 @@ $d_{M \times N} \colon (M \times N) \times (M \times N) \to \RR$
 by
 $$d_{M \times N}((x_1, y_1), (x_2, y_2)) \coloneqq d_M(x_1, x_2) + d_N(y_1, y_2).$$
 
-Prove that $(M \times N, d_{M \times N})$ is a metric space.
+(a) Prove that $(M \times N, d_{M \times N})$ is a metric space.
 
-Let $S \subseteq M$ and $T \subseteq N$ be compact sets in
+(b) Let $S \subseteq M$ and $T \subseteq N$ be compact sets in
 $(M, d_M)$ and $(N, d_N)$, respectively. Prove that $S \times T$
 is a compact set in $(M \times N, d_{M \times N})$.
 :::

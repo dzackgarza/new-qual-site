@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-Find the pointwise limit of the sequence of functions $\{f_n\}$ given by $f_n(x)=x^n$ on $[0,1]$.
+Find the pointwise limit $f$ of the sequence of functions $\{f_n\}$ given by $f_n(x)=x^n$ on $[0,1]$.
 Is the convergence of $f_n$ to $f$ uniform?
 ([KRD10, 8.6.A]) Why is $$B=\{f\in C([0,1]):\norm{f}_\infty\le1\}$$ not compact?
 :::
