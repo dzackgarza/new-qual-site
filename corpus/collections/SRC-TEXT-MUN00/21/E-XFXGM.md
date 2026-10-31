@@ -82,7 +82,8 @@ be a basic product neighborhood of $x$, with $U_i=X_i$ except for the finite set
 $$
 B_{d_i}(x_i,r_i)\subseteq U_i.
 $$
-Choose
+If $F$ is empty, then $U=\prod_iX_i$ contains every $D$-ball.
+Otherwise choose
 $$
 0<\varepsilon<\min_{i\in F}\frac{r_i}{i}.
 $$
