@@ -319,6 +319,8 @@ source:
       comment: Ch. 7, Exercise 9
     - id: E-SS7.EX-10
       comment: Ch. 7, Exercise 10
+    - id: E-SS7.EX-11
+      comment: Ch. 7, Exercise 11
   - name: Ch7 Problems
     problems:
     - id: E-SS7.PR-1
