@@ -1745,7 +1745,7 @@ mathematical correction under its own node, not under copy policy.
     and R is a half-turn, which the figure does not support. Read the glyphs from the exam page,
     decide the gluing maps, and rewrite the statement and the solution.
     **Acceptance:** the card statement names each face map, and the solution computes the
-    space for that gluing.
+    space for that gluing. **Closed.**
   - **`ad-ucsd-justin-missing-items`**. **Needs:** none. SRC-UCSD-TOP-JUSTIN lacks cards for
     items present in the sheet extractions: sheet 2 #11 (first half), sheet 4 #2-4 and #6-16,
     sheet 7 #9, sheet 11 #5, and sheet 13 #2-18. Sheets 5, 6 and 9 have no checked-in extraction.
