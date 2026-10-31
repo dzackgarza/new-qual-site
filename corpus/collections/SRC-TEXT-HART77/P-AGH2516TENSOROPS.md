@@ -76,8 +76,8 @@ Thus the stalks of these sheaf operations are the corresponding operations on th
 
 The local ranks in part (a) are
 $$
-\boxed{\rankT^r(\mcf)=n^r,\quad
-\rankS^r(\mcf)=\binom{n+r-1}{n-1},\quad
+\boxed{\rank T^r(\mcf)=n^r,\quad
+\rank S^r(\mcf)=\binom{n+r-1}{n-1},\quad
 \rank\bigwedge^r\mcf=\binom nr}\qquad(n\ge1).
 $$
 
