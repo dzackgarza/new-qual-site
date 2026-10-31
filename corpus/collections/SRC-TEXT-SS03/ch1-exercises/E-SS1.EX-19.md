@@ -17,11 +17,11 @@ review: draft
 ::: {.exercise}
 Show that
 
-1. $\sum kz^k$ diverges on $S^1$.
+(a) $\sum kz^k$ diverges on $S^1$.
 
-2. $\sum k^{-2} z^k$ converges on $S^1$.
+(b) $\sum k^{-2} z^k$ converges on $S^1$.
 
-3. $\sum \inverseof{k} z^k$ converges on $S^1\sm\theset{1}$ and diverges at $1$.
+(c) $\sum \inverseof{k} z^k$ converges on $S^1\sm\theset{1}$ and diverges at $1$.
 :::
 
 ::: {.solution}
@@ -30,7 +30,7 @@ Show that
 
 ::: pf-step
 
-(1) $\sum kz^k$ diverges at every $z\in S^1$.
+(a) $\sum kz^k$ diverges at every $z\in S^1$.
 
 ::: pf-proof
 
@@ -42,7 +42,7 @@ The terms of a convergent series tend to $0$, but $\abs{kz^k} = k \to \infty$ fo
 
 ::: pf-step
 
-(2) $\sum k^{-2} z^k$ converges at every $z\in S^1$.
+(b) $\sum k^{-2} z^k$ converges at every $z\in S^1$.
 
 ::: pf-proof
 
@@ -54,7 +54,7 @@ For $\abs z=1$, $\sum \abs{k^{-2} z^k} = \sum k^{-2}$ converges by the $p$-test,
 
 ::: pf-step
 
-(3) $\sum k^{-1} z^k$ diverges at $z=1$ and converges at every $z\in S^1\setminus\{1\}$.
+(c) $\sum k^{-1} z^k$ diverges at $z=1$ and converges at every $z\in S^1\setminus\{1\}$.
 
 ::: pf-proof
 

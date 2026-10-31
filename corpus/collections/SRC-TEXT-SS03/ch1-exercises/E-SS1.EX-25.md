@@ -5,21 +5,19 @@ kind: problem
 title: Integrals of $z^n$ and $1/((z-a)(z-b))$ over circles
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics:
-  - Complex Numbers
-  - Power Series
-  - Cauchy-Riemann
+    - Contour Integration
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-30
-- event: source-corrected
-  by: Claude Opus 5.5
-  date: 2026-09-28
-  note: Restored part (c), which the source prints after a page break and the card had dropped; text from the Stein-Shakarchi extraction in Zotero.
+  - event: solution-written
+    by: gemini-3.7-flash
+    date: 2026-08-30
+  - event: source-corrected
+    by: Claude Opus 5.5
+    date: 2026-09-28
+    note: Restored part (c), which the source prints after a page break and the card had dropped; text from the Stein-Shakarchi extraction in Zotero.
 ---
 
 ::: {.exercise}

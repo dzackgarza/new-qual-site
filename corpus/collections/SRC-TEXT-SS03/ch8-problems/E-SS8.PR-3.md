@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-3.* The Schwarz-Pick lemma (see Exercise 13) is the infinitesimal version of an important observation in complex analysis and geometry.
+The Schwarz-Pick lemma (see Exercise 13) is the infinitesimal version of an important observation in complex analysis and geometry.
 
 For complex numbers $w \in \CC$ and $z \in \DD$ we define the hyperbolic length of $w$ at $z$ by
 

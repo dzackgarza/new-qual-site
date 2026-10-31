@@ -5,14 +5,14 @@ kind: problem
 title: "Connected components as equivalence classes"
 classification:
   areas:
-  - complex-analysis
-  topics: ['Complex Numbers', 'Power Series', 'Cauchy-Riemann']
+    - complex-analysis
+  topics: [Connectedness, Connected Components]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-10
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-10
 ---
 
 ::: {.exercise}

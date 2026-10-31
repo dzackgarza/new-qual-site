@@ -19,12 +19,12 @@ audit:
 Using Euler’s formula
 
 $$
-\sin \pi z = \frac {e ^ {i \pi z} - e ^ {- i \pi z}}{2 i},
+\sin \pi z = \frac{e^{i\pi z} - e^{-i\pi z}}{2i},
 $$
 
-show that the complex zeros of sin πz are exactly at the integers, and that they are each of order 1.
+show that the complex zeros of $\sin \pi z$ are exactly at the integers, and that they are each of order $1$.
 
-Calculate the residue of 1/ sin πz at $z = n \in \ZZ$
+Calculate the residue of $1/\sin \pi z$ at $z = n \in \ZZ$.
 :::
 
 ::: {.solution}

@@ -5,14 +5,14 @@ kind: problem
 title: An open set is connected if and only if it is pathwise connected
 classification:
   areas:
-  - complex-analysis
-  topics: ['Complex Numbers', 'Power Series', 'Cauchy-Riemann']
+    - complex-analysis
+  topics: [Connectedness, Path Connectedness]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-29
+  - event: solution-written
+    by: gemini-3.7-flash
+    date: 2026-08-29
 ---
 
 ::: {.exercise}

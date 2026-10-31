@@ -20,35 +20,35 @@ audit:
 ::: {.exercise}
 In this problem, we discuss Blaschke products, which are bounded analogues in the disc of the Weierstrass products for entire functions.
 
-1. Show that for $0<\abs{\alpha}<1$ and $\abs{z}\leq r<1$, the inequality
+(a) Show that for $0<\abs{\alpha}<1$ and $\abs{z}\leq r<1$, the inequality
 
-   $$
-   \abs{\frac{\alpha+\abs{\alpha}z}{(1-\overline{\alpha}z)\alpha}}
-   \leq \frac{1+r}{1-r}
-   $$
+$$
+\abs{\frac{\alpha+\abs{\alpha}z}{(1-\overline{\alpha}z)\alpha}}
+\leq \frac{1+r}{1-r}
+$$
 
-   holds.
+holds.
 
-2. Let $\{\alpha_n\}$ be a sequence in the unit disc such that $\alpha_n\neq 0$ for all $n$ and
+(b) Let $\{\alpha_n\}$ be a sequence in the unit disc such that $\alpha_n\neq 0$ for all $n$ and
 
-   $$
-   \sum_{n=1}^{\infty}(1-\abs{\alpha_n})<\infty.
-   $$
+$$
+\sum_{n=1}^{\infty}(1-\abs{\alpha_n})<\infty.
+$$
 
-   This condition holds when $\{\alpha_n\}$ are the zeros of a bounded holomorphic function on the unit disc, by Problem 1. Show that the product
+This condition holds when $\{\alpha_n\}$ are the zeros of a bounded holomorphic function on the unit disc, by Problem 1. Show that the product
 
-   $$
-   f(z)=\prod_{n=1}^{\infty}
-   \frac{\alpha_n-z}{1-\overline{\alpha_n}z}
-   \frac{\abs{\alpha_n}}{\alpha_n}
-   $$
+$$
+f(z)=\prod_{n=1}^{\infty}
+\frac{\alpha_n-z}{1-\overline{\alpha_n}z}
+\frac{\abs{\alpha_n}}{\alpha_n}
+$$
 
-   converges uniformly for $\abs{z}\leq r<1$ and defines a holomorphic function on the unit disc with precisely the zeros $\alpha_n$.
-   Show also that $\abs{f(z)}\leq 1$.
+converges uniformly for $\abs{z}\leq r<1$ and defines a holomorphic function on the unit disc with precisely the zeros $\alpha_n$.
+Show also that $\abs{f(z)}\leq 1$.
 :::
 
 ::: {.solution}
-For part 1, write $\rho=\abs{\alpha}$. Then
+For part (a), write $\rho=\abs{\alpha}$. Then
 $$
 \abs{\frac{\alpha+\rho z}{(1-\overline\alpha z)\alpha}}
 \le \frac{\abs{\alpha}+\rho\abs{z}}{\abs{\alpha}(1-\abs{\alpha}\abs{z})}

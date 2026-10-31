@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-1.* Consider a holomorphic map on the unit disc $f : \DD \to \CC$ which satisfies $f(0) = 0$.
+Consider a holomorphic map on the unit disc $f : \DD \to \CC$ which satisfies $f(0) = 0$.
 By the open mapping theorem, the image $f(\DD)$ contains a small disc centered at the origin.
 We then ask: does there exist $r > 0$ such that for all $f : \DD \to \CC$ with $f(0) = 0$, we have $D_r(0) \subset f(\DD)$?
 

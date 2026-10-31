@@ -5,14 +5,14 @@ kind: problem
 title: "Applications of the Cauchy inequalities and the maximum modulus principle"
 classification:
   areas:
-  - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
+    - complex-analysis
+  topics: [Cauchy Estimates, Maximum Modulus Principle]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}

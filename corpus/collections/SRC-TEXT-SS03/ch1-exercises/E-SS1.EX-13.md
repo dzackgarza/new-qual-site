@@ -23,11 +23,11 @@ audit:
 ::: {.exercise}
 Suppose $f$ is holomorphic in a region $\Omega$ (an open connected set). If any of the following hold, then $f$ is constant:
 
-1. $\Re(f)$ is constant.
+(a) $\Re(f)$ is constant.
 
-2. $\Im(f)$ is constant.
+(b) $\Im(f)$ is constant.
 
-3. $\abs{f}$ is constant.
+(c) $\abs{f}$ is constant.
 :::
 
 ::: {.solution}
@@ -37,7 +37,7 @@ Here $\Omega$ is a region, that is, open and connected. Write $f=u+iv$ with $u,v
 
 ::: {.pf-step #s1}
 
-(1) If $u$ is constant on $\Omega$, then $f$ is constant.
+(a) If $u$ is constant on $\Omega$, then $f$ is constant.
 
 ::: pf-proof
 
@@ -49,7 +49,7 @@ At each point $f'=\partial f/\partial x=u_x+iv_x$, and the Cauchy--Riemann equat
 
 ::: {.pf-step #s2}
 
-(2) If $v$ is constant on $\Omega$, then $f$ is constant.
+(b) If $v$ is constant on $\Omega$, then $f$ is constant.
 
 ::: pf-proof
 
@@ -61,7 +61,7 @@ The function $-if$ is holomorphic with real part $v$, so step [](#s1){.pf-ref} m
 
 ::: {.pf-step #s3}
 
-(3) If $\abs{f} = c$ on $\Omega$, then $f$ is constant.
+(c) If $\abs{f} = c$ on $\Omega$, then $f$ is constant.
 
 ::: pf-proof
 

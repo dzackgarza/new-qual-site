@@ -5,20 +5,20 @@ kind: problem
 title: Injective entire functions are affine
 classification:
   areas:
-  - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
+    - complex-analysis
+  topics: [Entire Functions, Casorati-Weierstrass]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}
-Prove that all entire functions that are also injective take the form $f ( z ) = a z + b$ with $a , b \in \CC$ , and $a \neq 0$
+Prove that all entire functions that are also injective take the form $f(z) = az + b$ with $a, b \in \CC$ and $a \neq 0$.
 
-[Hint: Apply the Casorati-Weierstrass theorem to $f ( 1 / z ) . ]$
+[Hint: Apply the Casorati-Weierstrass theorem to $f(1/z)$.]
 :::
 
 ::: {.solution}

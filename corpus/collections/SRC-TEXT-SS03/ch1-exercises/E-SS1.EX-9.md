@@ -19,16 +19,16 @@ audit:
 Show that in polar coordinates, the Cauchy-Riemann equations take the form
 
 $$
-{\frac {\partial u}{\partial r}} = {\frac {1}{r}} {\frac {\partial v}{\partial \theta}} \quad {\mathrm{and}} \quad {\frac {1}{r}} {\frac {\partial u}{\partial \theta}} = - {\frac {\partial v}{\partial r}}.
+\frac{\partial u}{\partial r} = \frac{1}{r} \frac{\partial v}{\partial \theta} \quad \text{and} \quad \frac{1}{r} \frac{\partial u}{\partial \theta} = -\frac{\partial v}{\partial r}.
 $$
 
 Use these equations to show that the logarithm function defined by
 
 $$
-\log z = \log r + i \theta \quad \mathrm{where} z = r e ^ {i \theta} \mathrm{with} - \pi <   \theta <   \pi
+\log z = \log r + i\theta \quad \text{where } z = re^{i\theta} \text{ with } -\pi < \theta < \pi
 $$
 
-is holomorphic in the region $r > 0$ and $- \pi < \theta < \pi$
+is holomorphic in the region $r > 0$ and $-\pi < \theta < \pi$.
 :::
 
 ::: {.solution}

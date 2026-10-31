@@ -5,14 +5,14 @@ kind: problem
 title: Blaschke factors map the unit disc bijectively onto itself
 classification:
   areas:
-  - complex-analysis
-  topics: ['Complex Numbers', 'Power Series', 'Cauchy-Riemann']
+    - complex-analysis
+  topics: [Blaschke Factors, Automorphisms]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-30
+  - event: solution-written
+    by: gemini-3.7-flash
+    date: 2026-08-30
 ---
 
 ::: {.exercise}

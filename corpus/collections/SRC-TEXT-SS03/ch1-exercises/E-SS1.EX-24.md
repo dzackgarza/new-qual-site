@@ -5,14 +5,14 @@ kind: problem
 title: "Reversing orientation negates a contour integral"
 classification:
   areas:
-  - complex-analysis
-  topics: ['Complex Numbers', 'Power Series', 'Cauchy-Riemann']
+    - complex-analysis
+  topics: [Contour Integration]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-10
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-10
 ---
 
 ::: {.exercise}

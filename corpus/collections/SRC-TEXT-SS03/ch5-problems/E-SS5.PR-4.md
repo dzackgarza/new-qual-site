@@ -26,28 +26,28 @@ $$
 be an entire function of finite order.
 The growth order of $F$ is linked with the growth of the coefficients $a_n$ as $n\to\infty$.
 
-1. Suppose that
+(a) Suppose that
 
-   $$
-   \abs{F(z)}\leq Ae^{a\abs{z}^\rho}.
-   $$
+$$
+\abs{F(z)}\leq Ae^{a\abs{z}^\rho}.
+$$
 
-   Show that
+Show that
 
-   $$
-   \limsup_{n\to\infty}\abs{a_n}^{1/n}n^{1/\rho}<\infty.
-   \tag{8}
-   $$
+$$
+\limsup_{n\to\infty}\abs{a_n}^{1/n}n^{1/\rho}<\infty.
+\tag{8}
+$$
 
-2. Conversely, if (8) holds, show that
+(b) Conversely, if (8) holds, show that
 
-   $$
-   \abs{F(z)}\leq A_\varepsilon e^{a_\varepsilon\abs{z}^{\rho+\varepsilon}}
-   $$
+$$
+\abs{F(z)}\leq A_\varepsilon e^{a_\varepsilon\abs{z}^{\rho+\varepsilon}}
+$$
 
-   for every $\varepsilon>0$.
+for every $\varepsilon>0$.
 
-*Hint.* For part 1, use Cauchy's inequality
+*Hint.* For part (a), use Cauchy's inequality
 
 $$
 \abs{a_n}\leq \frac{A}{r^n}e^{ar^\rho}
@@ -62,7 +62,7 @@ $$
 at $u=n^{1/\rho}/\rho^{1/\rho}$.
 Choose $r$ in terms of $n$ to attain this minimum.
 
-For part 2, note that for $\abs{z}=r$,
+For part (b), note that for $\abs{z}=r$,
 
 $$
 \abs{F(z)}
@@ -75,7 +75,7 @@ This reduces the problem to Problem 3.
 :::
 
 ::: {.solution}
-For part 1, Cauchy's inequality gives, for every $r>0$,
+For part (a), Cauchy's inequality gives, for every $r>0$,
 $$
 \abs{a_n}\le \frac{A}{r^n}e^{ar^\rho}.
 $$

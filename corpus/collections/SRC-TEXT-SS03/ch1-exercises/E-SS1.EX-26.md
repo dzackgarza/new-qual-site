@@ -5,18 +5,18 @@ kind: problem
 title: Primitives of a continuous function differ by a constant
 classification:
   areas:
-  - complex-analysis
-  topics: ['Complex Numbers', 'Power Series', 'Cauchy-Riemann']
+    - complex-analysis
+  topics: [Contour Integration, Primitives]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-10
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-10
 ---
 
 ::: {.exercise}
-Suppose f is continuous in a region Ω. Prove that any two primitives of f (if they exist) difer by a constant.
+Suppose $f$ is continuous in a region $\Omega$. Prove that any two primitives of $f$ (if they exist) differ by a constant.
 :::
 
 ::: {.solution}

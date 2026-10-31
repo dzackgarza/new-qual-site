@@ -22,12 +22,10 @@ audit:
 Show that
 
 $$
-\int_ {0} ^ {1} \log (\sin \pi x) d x = - \log 2.
+\int_0^1 \log(\sin \pi x)\, dx = -\log 2.
 $$
 
 [Hint: Use the contour shown in Figure 9.]
-
-Figure 9. Contour in Exercise 9
 :::
 
 ::: {.solution}

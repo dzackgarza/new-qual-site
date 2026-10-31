@@ -24,7 +24,7 @@ audit:
 ::: {.exercise}
 More generally, let $R(x) = P(x)/Q(x)$ be a rational function with $(\deg Q) \geq (\deg P) + 2$ and $Q(x) \neq 0$ on the real axis.
 
-(a) Prove that if $\alpha_1, \ldots, \alpha_k$ are the roots of $R$ in the upper half-plane, then there exists polynomials $P_j(\xi)$ of degree less than the multiplicity of $\alpha_j$ so that
+(a) Prove that if $\alpha_1, \ldots, \alpha_k$ are the roots of $Q$ in the upper half-plane, then there exists polynomials $P_j(\xi)$ of degree less than the multiplicity of $\alpha_j$ so that
 $$
 \int_{-\infty}^{\infty} R(x) e^{-2\pi i x\xi}\, dx = \sum_{j=1}^{k} P_j(\xi) e^{-2\pi i\alpha_j\xi}, \quad \text{when } \xi < 0.
 $$
@@ -37,7 +37,7 @@ $$
 $$
 \int_{-\infty}^{\infty} R(x) e^{-2\pi i x\xi}\, dx = O(e^{-a\abs{\xi}}), \quad \xi \in \RR
 $$
-as $\abs{\xi} \to \infty$ for some $a > 0$. Determine the best possible $a$'s in terms of the roots of $R$.
+as $\abs{\xi} \to \infty$ for some $a > 0$. Determine the best possible $a$'s in terms of the roots of $Q$.
 
 [Hint: For part (a), use residues. The powers of $\xi$ appear when one differentiates the function $f(z) = R(z) e^{-2\pi i z\xi}$ (as in the formula of Theorem 1.4 in the previous chapter). For part (c) argue in the lower half-plane.]
 :::

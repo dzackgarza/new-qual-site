@@ -5,14 +5,14 @@ kind: problem
 title: "A mild pole bound forces a removable singularity"
 classification:
   areas:
-  - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
+    - complex-analysis
+  topics: [Removable Singularities, Isolated Singularities]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}
