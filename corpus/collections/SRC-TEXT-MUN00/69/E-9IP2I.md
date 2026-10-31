@@ -102,12 +102,6 @@ The elements of $G_2$ have orders dividing $n$, with the generator having order 
 
 ::: pf-step
 
-Any element of $G$ not conjugate to an element of a factor is cyclically reduced of syllable length $\ge 2$, hence has infinite order.
-
-:::
-
-::: pf-step
-
 Therefore, the set of finite orders of elements in $G$ is $\{d \in \ZZ_+ \mid d \mid m \text{ or } d \mid n\}$, whose maximum element is $k = \max(m, n)$.
 
 :::
