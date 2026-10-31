@@ -24,190 +24,25 @@ Show that $X$ is not locally connected at $p$, but is weakly locally connected a
 :::
 
 ::: {.solution}
-::: pf
-
-::: {.pf-step #s1}
-Definition of the space $X$ (the infinite broom):
-
-::: pf-proof
-
-::: pf-step
-In $\RR^2$, let $a_n = (1, 1/n)$ for $n \in \ZZ_+$, let $L_n$ be the closed line segment from the origin $(0, 0)$ to $a_n$, and let $p = (1, 0)$.
-
-::: pf-proof
-definition of the infinite broom in Munkres Figure 25.1.
-:::
-
-:::
-
-::: pf-step
-The space $X = \left(\bigcup_{n=1}^\infty L_n\right) \cup \{p\}$ is equipped with the subspace topology from $\RR^2$.
-
-::: pf-proof
-definition of $X$.
-:::
-
-:::
-
-::: pf-step
-$X$ is a connected topological space: The union $\bigcup_{n=1}^\infty L_n$ is path-connected (every segment contains $(0, 0)$), and $a_n \to p$ as $n \to \infty$, so $p \in \overline{\bigcup_{n=1}^\infty L_n}$.
-The closure of a connected space is connected, so $X$ is connected.
-
-::: pf-proof
-standard property of closures of connected sets.
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-Show that $X$ is **not locally connected** at $p$:
-
-::: pf-proof
-
-::: pf-step
-A space $X$ is locally connected at $p$ if every open neighborhood $U$ of $p$ contains a connected open neighborhood $V$ of $p$.
-
-::: pf-proof
-definition of local connectedness at a point.
-:::
-
-:::
-
-::: pf-step
-Consider the open neighborhood $U = B(p, 1/2) \cap X$.
-
-::: pf-proof
-$B(p, 1/2)$ is an open ball in $\RR^2$ disjoint from the origin $(0, 0)$.
-:::
-
-:::
-
-::: {.pf-step #s2-3}
-Let $V \subseteq U$ be any open neighborhood of $p$ in $X$.
-
-::: pf-proof
-setup.
-:::
-
-:::
-
-::: pf-step
-Since $V$ is open in $X$, $V = W \cap X$ for some open set $W \subseteq \RR^2$ containing $p = (1, 0)$.
-
-::: pf-proof
-subspace topology.
-:::
-
-:::
-
-::: pf-step
-Since $a_n = (1, 1/n) \to p$, $W$ contains $a_n$ for all sufficiently large $n \ge N$.
-
-::: pf-proof
-definition of limit in $\RR^2$.
-:::
-
-:::
-
-::: pf-step
-For each $n \ge N$, $V$ contains a non-empty open subsegment of $L_n$ near $a_n$.
-
-::: pf-proof
-$W$ is open and contains $a_n \in L_n$.
-:::
-
-:::
-
-::: pf-step
-Since $V \subseteq U \subseteq B(p, 1/2)$, the origin $(0, 0) \notin V$.
-
-::: pf-proof
-$\operatorname{dist}(p, (0, 0)) = 1 > 1/2$.
-:::
-
-:::
-
-::: {.pf-step #s2-8}
-The subsegments $V \cap L_n$ for distinct $n$ do not meet each other or $p$ in $V$, so they are clopen in $V \setminus \{p\}$.
-Thus $V$ is disconnected.
-
-::: pf-proof
-the segments $L_n$ are pairwise disjoint away from $(0, 0)$.
-:::
-
-:::
-
-::: pf-step
-Hence no connected open neighborhood $V \subseteq U$ of $p$ exists, so $X$ is not locally connected at $p$.
-
-::: pf-proof
-steps [](#s2-3){.pf-ref} and [](#s2-8){.pf-ref}.
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-Show that $X$ is **weakly locally connected** at $p$:
-
-::: pf-proof
-
-::: pf-step
-A space $X$ is weakly locally connected at $p$ if every neighborhood $U$ of $p$ contains a connected subspace $C$ of $X$ such that $p \in \operatorname{int}(C)$ (or $C$ is a connected neighborhood of $p$).
-
-::: pf-proof
-Munkres §25 definition of weak local connectedness.
-:::
-
-:::
-
-::: {.pf-step #s3-2}
-The space $C = X$ is connected by step [](#s1){.pf-ref}.
-
-::: pf-proof
-step [](#s1){.pf-ref}.
-:::
-
-:::
-
-::: {.pf-step #s3-3}
-$X$ is an open neighborhood of $p$ in $X$, so $p \in \operatorname{int}(X) = X$.
-
-::: pf-proof
-the whole space is open in itself.
-:::
-
-:::
-
-::: pf-step
-Thus $C = X$ is a connected neighborhood of $p$, so $X$ is weakly locally connected at $p$.
-
-::: pf-proof
-steps [](#s3-2){.pf-ref} and [](#s3-3){.pf-ref}.
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-Conclusion: $X$ is weakly locally connected at $p$, but not locally connected at $p$.
-
-::: pf-proof
-step [](#s2){.pf-ref} and step [](#s3){.pf-ref}.
-:::
-
-:::
-
-:::
-
+Use the following planar realization of the pictured broom. Put
+$$
+p=(0,0),\qquad a_n=(1/n,0),\qquad b_{n,k}=(1/(n+1),1/(nk))
+$$
+for $n,k\ge1$. Let $S_{n,k}$ be the line segment from $a_n$ to $b_{n,k}$, and set
+$$
+X=([0,1]\times\{0\})\cup\bigcup_{n,k\ge1}S_{n,k}.
+$$
+For each $n$, the free endpoints $b_{n,k}$ tend to $a_{n+1}$, while every segment $S_{n,k}$ is attached to the axis at $a_n$.
+
+Let $U$ be any neighborhood of $p$ in $X$. Choose $\varepsilon>0$ with $B(p,\varepsilon)\cap X\subseteq U$, and choose $N$ so large that $\sqrt2/N<\varepsilon$. The set
+$$
+C_N=([0,1/N]\times\{0\})\cup\bigcup_{n\ge N,\ k\ge1}S_{n,k}
+$$
+lies in $B(p,\varepsilon)\cap X$: every point in it has both coordinates at most $1/N$. It is path connected, since each segment meets the axis at $a_n$. It contains the neighborhood $B(p,\delta)\cap X$ of $p$ for any sufficiently small $\delta<1/(N+1)$, because every point of $X$ with first coordinate below $\delta$ lies on the displayed axis segment or on a segment with index $n\ge N$. Thus $X$ is weakly locally connected at $p$.
+
+Now let $U_0=B(p,1/2)\cap X$, which does not contain $a_1$. Suppose that a connected open neighborhood $V$ of $p$ were contained in $U_0$. Since $a_n\to p$, openness at $p$ gives $a_n\in V$ for all sufficiently large $n$.
+
+We claim that $a_{n+1}\in V$ forces $a_n\in V$. Indeed, $b_{n,k}\to a_{n+1}$, so openness of $V$ gives $b_{n,k}\in V$ for some $k$. If $a_n\notin V$, then $S_{n,k}\setminus\{a_n\}$ is a clopen subset of $X\setminus\{a_n\}$: the segment is closed, and away from its attachment point it is locally isolated from the other segments and the axis. Its intersection with $V$ is a nonempty proper clopen subset of $V$, contrary to connectedness. The claim follows.
+
+Starting with one of the points $a_n\in V$ and applying the claim repeatedly gives $a_1\in V$, contradicting $V\subseteq U_0$. Hence $X$ is not locally connected at $p$.
 :::
