@@ -27,11 +27,11 @@ Let $X$ be a nonsingular curve over an algebraically closed field $k$.
 We show that $K(X) \cong \Pic X \oplus \ZZ$ in several steps.
 
 (a) For any divisor $D = \sum n_i P_i$ on $X$, let $\psi(D) = \sum n_i \gamma(k(P_i)) \in K(X)$, where $k(P_i)$ is the skyscraper sheaf $k$ at $P_i$ and $0$ elsewhere.
-    If $D$ is an effective divisor, let $\OO_D$ be the structure sheaf of the associated subscheme of codimension $1$, and show that $\psi(D) = \gamma(\OO_D)$.
-    Then use (6.18) to show that for any $D$, $\psi(D)$ depends only on the linear equivalence class of $D$, so $\psi$ defines a homomorphism $\psi: \Cl X \to K(X)$.
+If $D$ is an effective divisor, let $\OO_D$ be the structure sheaf of the associated subscheme of codimension $1$, and show that $\psi(D) = \gamma(\OO_D)$.
+Then use (6.18) to show that for any $D$, $\psi(D)$ depends only on the linear equivalence class of $D$, so $\psi$ defines a homomorphism $\psi: \Cl X \to K(X)$.
 
 (b) For any coherent sheaf $\mcf$ on $X$, show that there exist locally free sheaves $\mce_0$ and $\mce_1$ and an exact sequence $0 \to \mce_1 \to \mce_0 \to \mcf \to 0$.
-   Let $r_0 = \rank \mce_0$, $r_1 = \rank \mce_1$, and define
+Let $r_0 = \rank \mce_0$, $r_1 = \rank \mce_1$, and define
 $$
 \det \mcf = \left(\bigwedge\nolimits^{r_0} \mce_0\right) \tensor \inverseof{\left(\bigwedge\nolimits^{r_1} \mce_1\right)} \in \Pic X
 .

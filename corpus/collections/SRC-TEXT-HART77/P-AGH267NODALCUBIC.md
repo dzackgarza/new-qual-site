@@ -83,7 +83,7 @@ A rational function $f\in k(t)$ is a unit at $N$ if and only if it is regular an
 ::: pf-proof
 For the affine ring of step [](#s1){.pf-ref},
 $$
-A=k+(t^2-1)k[t]=\{a(t)\in k[t]:a(1)=a(-1)\}.
+A=k+(t^2-1)k[t]=\{a(t)\in k[t]\st a(1)=a(-1)\}.
 $$
 To see the first equality, every $(t^2-1)t^{2j}$ equals $x(x+1)^j$ and every $(t^2-1)t^{2j+1}$ equals $y(x+1)^j$, so all multiples of $t^2-1$ belong to $A$.
 Conversely, the two generators vanish at both $1$ and $-1$.

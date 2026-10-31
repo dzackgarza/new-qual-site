@@ -240,7 +240,7 @@ Its maximal ideals all lie over $\mathfrak m=(x,y)A$ and correspond to the roots
 Indeed, a root $\alpha$ gives evaluation $x=y=0$, $t=\alpha$, while every residue of $t$ over $\mathfrak m$ satisfies $q(t)=0$.
 The formulas embed $C$ into the semilocal ring
 $$
-B_0=k[t]_{\{h:\gcd(h,q)=1\}}.
+B_0=k[t]_{\{h\st\gcd(h,q)=1\}}.
 $$
 Each polynomial relatively prime to $q$ avoids every maximal ideal of $C$, so is a unit of $C$.
 It follows that $B_0\subseteq C$, and therefore $C=B_0$.

@@ -113,7 +113,7 @@ $$
 It is therefore integral over $R$.
 Together with step [](#s2){.pf-ref}, this proves
 $$
-\boxed{\{\alpha\in K:\alpha\text{ is integral over }R\}=R\oplus Rz=A}.
+\boxed{\{\alpha\in K\st\alpha\text{ is integral over }R\}=R\oplus Rz=A}.
 $$
 
 Now let $\beta\in K$ be integral over $A$.

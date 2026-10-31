@@ -221,7 +221,7 @@ p_W^*:\Pic(W)\xrightarrow{\cong}\Pic(T_W)
 $$
 an isomorphism, where $p_W:T_W\to W$ is the projection.
 Indeed, pullback of a Cartier local equation gives the same vertical Weil divisor as in step [](#s1){.pf-ref}.
-For the zero section $s:W\to T_W$, the identity $p_Ws=\operatorname{id}_W$ shows that $s^*$ is the inverse isomorphism.
+For the zero section $s:W\to T_W$, the identity $p_Ws=\id_W$ shows that $s^*$ is the inverse isomorphism.
 
 The divisor $\widetilde Z\restrict_{T_W}$ is Cartier and disjoint from $s(W)$.
 Its associated invertible sheaf therefore restricts to the trivial sheaf on $s(W)$: the canonical section is nowhere zero there.
