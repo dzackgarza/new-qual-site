@@ -258,3 +258,21 @@ Rearrangement of step [](#s4-5){.pf-ref}.
 :::
 
 :::
+
+::: {.remark title="General form"}
+Let $\gamma$ be a closed piecewise smooth cycle
+null-homologous in a domain $\Omega$, and let
+$f$ be holomorphic on $\Omega$. For
+$z\in\Omega\setminus\gamma$,
+$$
+\frac{1}{2\pi i}\int_\gamma
+\frac{f(w)}{w-z}\,dw
+=\operatorname{ind}(\gamma,z)f(z).
+$$
+Indeed, the function
+$(f(w)-f(z))/(w-z)$ extends holomorphically
+across $w=z$, so its integral over $\gamma$
+vanishes by Cauchy's theorem. The remaining
+integral is the winding number times
+$2\pi i f(z)$.
+:::
