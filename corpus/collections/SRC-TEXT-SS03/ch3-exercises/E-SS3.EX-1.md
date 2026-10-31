@@ -5,14 +5,14 @@ kind: problem
 title: Zeros of $\sin\pi z$ and residues of $1/\sin\pi z$
 classification:
   areas:
-  - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
+    - complex-analysis
+  topics: [Zeros of Holomorphic Functions, Residues, Trigonometric Functions]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-10
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-10
 ---
 
 ::: {.exercise}

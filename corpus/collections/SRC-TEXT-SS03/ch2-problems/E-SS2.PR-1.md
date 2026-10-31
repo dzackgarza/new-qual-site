@@ -25,7 +25,7 @@ f(z) = \sum_{n=0}^{\infty} z^{2^n} \quad \text{for } \abs{z} < 1.
 $$
 Notice that the radius of convergence of the above series is $1$. Show that $f$ cannot be continued analytically past the unit disc. [Hint: Suppose $\theta = 2\pi p/2^k$, where $p$ and $k$ are positive integers. Let $z = re^{i\theta}$; then $\abs{f(re^{i\theta})} \to \infty$ as $r \to 1$.]
 
-(b)$^*$ Fix $0 < \alpha < \infty$. Show that the analytic function $f$ defined by
+(b) Fix $0 < \alpha < \infty$. Show that the analytic function $f$ defined by
 $$
 f(z) = \sum_{n=0}^{\infty} 2^{-n\alpha} z^{2^n} \quad \text{for } \abs{z} < 1
 $$

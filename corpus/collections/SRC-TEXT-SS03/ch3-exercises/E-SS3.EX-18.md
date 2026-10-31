@@ -5,26 +5,25 @@ kind: problem
 title: The Cauchy integral formula via homotopy
 classification:
   areas:
-  - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
+    - complex-analysis
+  topics: [Cauchy Integral Formula, Homotopy]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}
 Give another proof of the Cauchy integral formula
 
 $$
-f (z) = \frac {1}{2 \pi i} \int_ {C} \frac {f (\zeta)}{\zeta - z} d \zeta
+f(z) = \frac{1}{2\pi i}\int_{C} \frac{f(\zeta)}{\zeta - z}\,d\zeta
 $$
-
 using homotopy of curves.
 
-[Hint: Deform the circle C to a small circle centered at $z ,$ and note that the quotient $( f ( \zeta ) - f ( z ) ) / ( \zeta - z )$ is bounded.]
+[Hint: Deform the circle $C$ to a small circle centered at $z$, and note that the quotient $(f(\zeta) - f(z))/(\zeta - z)$ is bounded.]
 :::
 
 ::: {.solution}

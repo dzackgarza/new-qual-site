@@ -5,14 +5,14 @@ kind: problem
 title: $\int_{-\infty}^\infty\frac{dx}{1+x^4}=\frac{\pi}{\sqrt2}$
 classification:
   areas:
-  - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
+    - complex-analysis
+  topics: [Residue Theorem, Contour Integration, Improper Integrals]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}

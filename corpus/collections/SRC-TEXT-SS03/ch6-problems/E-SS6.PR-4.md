@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.exercise}
-$^*$ The functions $Q_k$ in the previous problem are related to the Bernoulli polynomials $B_k(x)$ by the formula
+The functions $Q_k$ in the previous problem are related to the Bernoulli polynomials $B_k(x)$ by the formula
 $$
 Q_k(x) = \frac{B_{k+1}(x)}{(k + 1)!} \quad \text{for} \quad 0 \leq x \leq 1.
 $$

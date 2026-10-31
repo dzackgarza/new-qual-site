@@ -18,14 +18,12 @@ audit:
 
 ::: {.exercise}
 Prove that
-
 $$
-\Gamma (s) = \lim _ {n \to \infty} \frac {n ^ {s} n !}{s (s + 1) \cdots (s + n)}
+\Gamma(s) = \lim_{n\to\infty} \frac{n^{s}\,n!}{s(s+1)\cdots(s+n)}
 $$
+whenever $s \neq 0, -1, -2, \ldots$.
 
-whenever $s \neq 0 , - 1 , - 2 , . . .$
-
-[Hint: Use the product formula for $1 / \Gamma$ , and the definition of the Euler constant γ.]
+[Hint: Use the product formula for $1/\Gamma$, and the definition of the Euler constant $\gamma$.]
 :::
 
 ::: {.solution}

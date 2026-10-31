@@ -5,21 +5,20 @@ kind: problem
 title: $\int_0^\infty\frac{\log x}{x^2+a^2}\,dx=\frac{\pi}{2a}\log a$
 classification:
   areas:
-  - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
+    - complex-analysis
+  topics: [Contour Integration, Logarithm, Improper Integrals]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}
-Show that if $a > 0$ , then
-
+Show that if $a > 0$, then
 $$
-\int_ {0} ^ {\infty} \frac {\log x}{x ^ {2} + a ^ {2}} d x = \frac {\pi}{2 a} \log a.
+\int_{0}^{\infty} \frac{\log x}{x^{2}+a^{2}}\,dx = \frac{\pi}{2a}\log a.
 $$
 
 [Hint: Use the contour in Figure 10.]

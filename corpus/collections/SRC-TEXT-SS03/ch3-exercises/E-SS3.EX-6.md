@@ -5,21 +5,20 @@ kind: problem
 title: $\int_{-\infty}^\infty\frac{dx}{(1+x^2)^{n+1}}=\frac{1\cdot3\cdots(2n-1)}{2\cdot4\cdots(2n)}\pi$
 classification:
   areas:
-  - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
+    - complex-analysis
+  topics: [Residue Theorem, Contour Integration, Improper Integrals]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}
 Show that
-
 $$
-\int_ {- \infty} ^ {\infty} \frac {d x}{(1 + x ^ {2}) ^ {n + 1}} = \frac {1 \cdot 3 \cdot 5 \cdots (2 n - 1)}{2 \cdot 4 \cdot 6 \cdots (2 n)} \cdot \pi .
+\int_{-\infty}^{\infty} \frac{dx}{(1+x^{2})^{n+1}} = \frac{1\cdot3\cdot5\cdots(2n-1)}{2\cdot4\cdot6\cdots(2n)}\cdot\pi .
 $$
 :::
 

@@ -5,14 +5,14 @@ kind: problem
 title: No holomorphic function on the disk can extend continuously with boundary values $1/z$
 classification:
   areas:
-  - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
+    - complex-analysis
+  topics: [Cauchy's Theorem, Holomorphic Extension, Unit Disc]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}

@@ -5,14 +5,14 @@ kind: problem
 title: $\sum_{n\in\ZZ}(u+n)^{-2}=\pi^2/\sin^2\pi u$ by residues
 classification:
   areas:
-  - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
+    - complex-analysis
+  topics: [Residue Theorem, Series Summation, Cotangent]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}

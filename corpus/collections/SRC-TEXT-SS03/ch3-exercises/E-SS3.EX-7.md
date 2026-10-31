@@ -5,14 +5,14 @@ kind: problem
 title: $\int_0^{2\pi}\frac{d\theta}{(a+\cos\theta)^2}=\frac{2\pi a}{(a^2-1)^{3/2}}$
 classification:
   areas:
-  - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
+    - complex-analysis
+  topics: [Residue Theorem, Trigonometric Integrals]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: muse-spark-1.2
-  date: 2026-08-30
+  - event: solution-written
+    by: muse-spark-1.2
+    date: 2026-08-30
 ---
 
 ::: {.exercise}

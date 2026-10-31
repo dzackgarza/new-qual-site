@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Meromorphic Functions
-  - Residue Theorem
-  - Argument Principle
+  - Contour Integration
+  - Logarithm
+  - Definite Integrals
 relations: []
 review: draft
 audit:

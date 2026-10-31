@@ -17,13 +17,12 @@ audit:
 ---
 
 ::: {.exercise}
-Prove Wallis’s product formula
-
+Prove Wallis's product formula
 $$
-{\frac {\pi}{2}} = {\frac {2 \cdot 2}{1 \cdot 3}} \cdot {\frac {4 \cdot 4}{3 \cdot 5}} \dots {\frac {2 m \cdot 2 m}{(2 m - 1) \cdot (2 m + 1)}} \dots .
+\frac{\pi}{2} = \frac{2\cdot2}{1\cdot3}\cdot\frac{4\cdot4}{3\cdot5}\cdots\frac{2m\cdot2m}{(2m-1)\cdot(2m+1)}\cdots .
 $$
 
-[Hint: Use the product formula for sin z at $z = \pi / 2 . ]$
+[Hint: Use the product formula for $\sin z$ at $z = \pi/2$.]
 :::
 
 ::: {.solution}

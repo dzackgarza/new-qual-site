@@ -5,24 +5,22 @@ kind: problem
 title: The Fourier transform of $(1+x^2)^{-2}$
 classification:
   areas:
-  - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
+    - complex-analysis
+  topics: [Fourier Transforms, Residue Theorem, Contour Integration]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}
 Use contour integration to show that
-
 $$
-\int_ {- \infty} ^ {\infty} \frac {e ^ {- 2 \pi i x \xi}}{(1 + x ^ {2}) ^ {2}} d x = \frac {\pi}{2} (1 + 2 \pi \abs{ \xi }) e ^ {- 2 \pi \abs{ \xi }}
+\int_{-\infty}^{\infty} \frac{e^{-2\pi i x\xi}}{(1+x^{2})^{2}}\,dx = \frac{\pi}{2}\bigl(1+2\pi\abs{\xi}\bigr)e^{-2\pi\abs{\xi}}
 $$
-
-for all ξ real.
+for all real $\xi$.
 :::
 
 ::: {.solution}

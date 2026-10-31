@@ -19,15 +19,12 @@ audit:
 
 ::: {.exercise}
 If
-
 $$
-F (z) = \int_ {1} ^ {z} \frac {d \zeta}{(1 - \zeta^ {n}) ^ {2 / n}},
+F(z) = \int_{1}^{z} \frac{d\zeta}{(1-\zeta^{n})^{2/n}},
 $$
-
-then $F$ maps the unit disc conformally onto the interior of a regular polygon with n sides and perimeter
-
+then $F$ maps the unit disc conformally onto the interior of a regular polygon with $n$ sides and perimeter
 $$
-2 ^ {\frac {n - 2}{n}} \int_ {0} ^ {\pi} (\sin \theta) ^ {- 2 / n} d \theta .
+2^{\frac{n-2}{n}} \int_{0}^{\pi} (\sin\theta)^{-2/n}\,d\theta .
 $$
 :::
 

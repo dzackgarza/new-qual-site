@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-$^*$ Let
+Let
 $$
 F(z) = \sum_{n=1}^{\infty} d(n) z^n \quad \text{for } \abs{z} < 1
 $$
@@ -34,6 +34,7 @@ as $r \to 1$. Similarly, if $\theta = 2\pi p/q$ where $p$ and $q$ are positive i
 $$
 \abs{F(re^{i\theta})} \geq c_{p/q} \frac{1}{1 - r} \log(1/(1 - r))
 $$
+as $r \to 1$. Conclude that $F$ cannot be continued analytically past the unit disc.
 :::
 
 ::: {.solution}

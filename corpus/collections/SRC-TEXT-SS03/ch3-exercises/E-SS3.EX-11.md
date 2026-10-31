@@ -5,14 +5,14 @@ kind: problem
 title: $\int_0^{2\pi}\log\abs{1-ae^{i\theta}}\,d\theta=0$ for $\abs a\le1$
 classification:
   areas:
-  - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
+    - complex-analysis
+  topics: [Logarithm, Mean Value Property, Definite Integrals]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}

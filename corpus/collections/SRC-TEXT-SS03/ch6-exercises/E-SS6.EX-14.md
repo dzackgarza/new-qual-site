@@ -21,21 +21,18 @@ audit:
 ---
 
 ::: {.exercise}
-This exercise gives an asymptotic formula for log n!. A more refined asymptotic formula for $\Gamma ( s )$ as $s \to \infty$ (Stirling’s formula) is given in Appendix A.
+This exercise gives an asymptotic formula for $\log n!$. A more refined asymptotic formula for $\Gamma(s)$ as $s \to \infty$ (Stirling's formula) is given in Appendix A.
 
 (a) Show that
-
 $$
-{\frac {d}{d x}} \int_ {x} ^ {x + 1} \log \Gamma (t) d t = \log x, \qquad {\mathrm{for}} x > 0,
+\frac{d}{dx}\int_{x}^{x+1} \log\Gamma(t)\,dt = \log x, \qquad \text{for } x > 0,
 $$
-
 and as a result
-
 $$
-\int_ {x} ^ {x + 1} \log \Gamma (t) d t = x \log x - x + c.
+\int_{x}^{x+1} \log\Gamma(t)\,dt = x\log x - x + c.
 $$
 
-(b) Show as a consequence that log $\Gamma ( n ) \sim n$ log n as $n \to \infty$ . In fact, prove that $\log \Gamma(n)=n\log n+O(n)$ as $n\to\infty$. [Hint: Use the fact that $\Gamma ( x )$ is monotonically increasing for all large x.]
+(b) Show as a consequence that $\log\Gamma(n) \sim n\log n$ as $n \to \infty$. In fact, prove that $\log\Gamma(n) = n\log n + O(n)$ as $n \to \infty$. [Hint: Use the fact that $\Gamma(x)$ is monotonically increasing for all large $x$.]
 :::
 
 ::: {.solution}

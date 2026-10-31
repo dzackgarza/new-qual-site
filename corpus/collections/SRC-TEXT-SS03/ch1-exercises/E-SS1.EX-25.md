@@ -21,25 +21,21 @@ audit:
 ---
 
 ::: {.exercise}
-The next three calculations provide some insight into Cauchy’s theorem, which we treat in the next chapter.
+The next three calculations provide some insight into Cauchy's theorem, which we treat in the next chapter.
 
 (a) Evaluate the integrals
-
 $$
-\int_ {\gamma} z ^ {n} d z
+\int_{\gamma} z^{n}\,dz
 $$
-
-for all integers $n .$ . Here $\gamma$ is any circle centered at the origin with the positive (counterclockwise) orientation.
+for all integers $n$. Here $\gamma$ is any circle centered at the origin with the positive (counterclockwise) orientation.
 
 (b) Same question as before, but with $\gamma$ any circle not containing the origin.
 
-(c) Show that if $\abs{ a } < r < \abs{ b }$ , then
-
+(c) Show that if $\abs{a} < r < \abs{b}$, then
 $$
-\int_ {\gamma} \frac {1}{(z - a) (z - b)} d z = \frac {2 \pi i}{a - b},
+\int_{\gamma} \frac{1}{(z-a)(z-b)}\,dz = \frac{2\pi i}{a-b},
 $$
-
-where $\gamma$ denotes the circle centered at the origin, of radius $r ,$ with the positive orientation.
+where $\gamma$ denotes the circle centered at the origin, of radius $r$, with the positive orientation.
 :::
 
 ::: {.solution}

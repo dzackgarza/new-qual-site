@@ -5,14 +5,14 @@ kind: problem
 title: The zero of $f+\epsilon g$ near a simple zero of $f$ is unique and continuous in $\epsilon$
 classification:
   areas:
-  - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
+    - complex-analysis
+  topics: [Rouché's Theorem, Zeros of Holomorphic Functions, Perturbation]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}

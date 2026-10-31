@@ -27,10 +27,9 @@ audit:
 ---
 
 ::: {.exercise}
-Show that if $f : D ( 0 , R ) \to \CC$ is holomorphic, with $\abs{ f ( z ) } \leq M$ for some $M > 0 ,$ then
-
+Show that if $f : D(0,R) \to \CC$ is holomorphic, with $\abs{f(z)} \leq M$ for some $M > 0$, then
 $$
-\abs{ \frac {f (z) - f (0)}{M ^ {2} - \overline {{f (0)}} f (z)} } \leq \frac {\abs{ z }}{M R}.
+\abs{\frac{f(z)-f(0)}{M^{2}-\overline{f(0)}\,f(z)}} \leq \frac{\abs{z}}{MR}.
 $$
 
 [Hint: Use the Schwarz lemma.]

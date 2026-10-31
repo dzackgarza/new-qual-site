@@ -5,21 +5,20 @@ kind: problem
 title: $\int_{-\infty}^\infty\frac{\cos x}{x^2+a^2}\,dx=\pi\frac{e^{-a}}{a}$
 classification:
   areas:
-  - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
+    - complex-analysis
+  topics: [Residue Theorem, Contour Integration, Fourier Integrals]
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}
 Show that
-
 $$
-\int_ {- \infty} ^ {\infty} \frac {\cos x}{x ^ {2} + a ^ {2}} d x = \pi \frac {e ^ {- a}}{a}, \quad \mathrm{for} a > 0.
+\int_{-\infty}^{\infty} \frac{\cos x}{x^{2}+a^{2}}\,dx = \pi\frac{e^{-a}}{a}, \qquad \text{for } a > 0.
 $$
 :::
 

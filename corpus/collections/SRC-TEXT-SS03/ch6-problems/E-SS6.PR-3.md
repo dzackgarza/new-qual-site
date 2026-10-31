@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-$^*$ If $Q(x) = \{x\} - 1/2$, then we can write the expression in the previous problem as
+If $Q(x) = \{x\} - 1/2$, then we can write the expression in the previous problem as
 $$
 \zeta(s) = \frac{s}{s - 1} - \frac{1}{2} - s\int_1^{\infty} \frac{Q(x)}{x^{s+1}}\, dx.
 $$

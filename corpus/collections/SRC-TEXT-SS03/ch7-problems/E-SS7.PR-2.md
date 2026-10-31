@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.exercise}
-$^*$ One of the "explicit formulas" in the theory of primes is as follows: if $\psi_1$ is the integrated Tchebychev function considered in Section 2, then
+One of the "explicit formulas" in the theory of primes is as follows: if $\psi_1$ is the integrated Tchebychev function considered in Section 2, then
 $$
 \psi_1(x) = \frac{x^2}{2} - \sum_\rho \frac{x^{\rho+1}}{\rho(\rho + 1)} - E(x)
 $$
