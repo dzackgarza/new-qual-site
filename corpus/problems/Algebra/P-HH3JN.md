@@ -88,3 +88,8 @@ We argue by induction on $n$; the case $n=1$ is immediate. For $n>1$, take $u_1$
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The open form "what can you say about the eigenvalues of a real symmetric matrix?" is answered by this card: they are real (step [](#real){.pf-ref}), $A$ is orthogonally diagonalizable, and eigenspaces for distinct eigenvalues are orthogonal.
+The last fact needs one line: if $Av=\lambda v$ and $Aw=\mu w$ with $\lambda\ne\mu$, then $\lambda\inner{v}{w}=\inner{Av}{w}=\inner{v}{Aw}=\mu\inner{v}{w}$, so $\inner{v}{w}=0$.
+:::
