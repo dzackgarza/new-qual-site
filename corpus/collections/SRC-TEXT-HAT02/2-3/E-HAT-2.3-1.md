@@ -22,6 +22,21 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Statement compared with Hatcher, Algebraic Topology, Section 2.3, Exercise 1, and it matches the
+    printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument and rewrote it. The earlier version computed the torsion of the pair
+    $(D^2,S^1)$ and then said that this example does not detect the failure; that false start is
+    removed and the proof now runs on the single Moore-space pair. On that pair $H_1(X,A)=0$ and
+    $T_1(X)=\ZZ_m$ with $T_1(A)=T_2(X,A)=0$, so the torsion sequence cannot be exact at $T_1(X)$, and
+    the mod-torsion sequence fails at $MT_1(A)$ because $m\ZZ\ne\ZZ$.
 ---
 
 ::: {.problem}
@@ -30,21 +45,21 @@ Do the same for the 'mod torsion' functor $MT_n(X, A) = H_n(X, A; \ZZ) / T_n(X, 
 :::
 
 ::: {.solution}
-The exactness axiom fails for both constructions.
+The exactness axiom fails for both constructions, already on the Moore-space pair $(X,A)$ in which $X$ is obtained from $A=S^1$ by attaching a $2$-cell by a degree-$m$ map, $m>1$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-For the pair $(D^2,S^1)$ the integral long exact sequence contains
+For that pair the integral long exact sequence reads
 $$
-0=H_2(D^2)\longrightarrow H_2(D^2,S^1)\xrightarrow{\partial}H_1(S^1)\longrightarrow H_1(D^2)=0,
+0=H_2(X)\longrightarrow H_2(X,A)\cong\ZZ\xrightarrow{\partial=m}\ZZ\cong H_1(A)
+\longrightarrow H_1(X)\cong\ZZ_m\longrightarrow H_1(X,A)=0.
 $$
-so $\partial:\ZZ\to\ZZ$ is an isomorphism.
 
 ::: pf-proof
 
-This is the long exact sequence of the pair, together with contractibility of $D^2$.
+The cellular chain complex of $X$ is $\ZZ\xrightarrow{m}\ZZ\to\ZZ$, so $H_2(X)=0$ and $H_1(X)\cong\ZZ_m$. Because $(X,A)$ is a good pair with $X/A\cong S^2$, the relative group is $H_2(X,A)\cong H_2(S^2)\cong\ZZ$, and the connecting map is multiplication by the attaching degree $m$. Finally $H_1(A)\to H_1(X)$ is onto, so $H_1(X,A)=0$.
 
 :::
 
@@ -52,24 +67,15 @@ This is the long exact sequence of the pair, together with contractibility of $D
 
 ::: pf-step
 
-The torsion functors are not exact on this pair.
+$T_*$ is not exact on this pair.
 
 ::: pf-proof
 
-All four groups in step [](#s1){.pf-ref} are torsion-free, hence
+Every group in the displayed sequence except $H_1(X)$ is torsion-free, so $T_2(X)$, $T_2(X,A)$, $T_1(A)$ and $T_1(X,A)$ all vanish, while $T_1(X)=\ZZ_m$. The sequence of torsion groups therefore contains
 $$
-T_2(D^2,S^1)=T_1(S^1)=0.
+T_1(A)=0\longrightarrow T_1(X)=\ZZ_m\longrightarrow T_1(X,A)=0,
 $$
-This example alone does not detect failure, so instead use the Moore-space pair $(X,A)$ obtained from $A=S^1$ by attaching a $2$-cell by a degree-$m$ map, $m>1$. Then
-$$
-H_2(X,A)\cong\ZZ\xrightarrow{\partial=m}\ZZ\cong H_1(A)
-\longrightarrow H_1(X)\cong\ZZ_m\longrightarrow0.
-$$
-Passing to torsion gives
-$$
-0\longrightarrow0\longrightarrow\ZZ_m\longrightarrow0,
-$$
-which is not exact at $T_1(X)=\ZZ_m$: the incoming image is $0$ while the outgoing kernel is all of $\ZZ_m$.
+which is exact at $T_1(X)$ only if $\ZZ_m=0$.
 
 :::
 
@@ -77,15 +83,15 @@ which is not exact at $T_1(X)=\ZZ_m$: the incoming image is $0$ while the outgoi
 
 ::: pf-step
 
-The mod-torsion functors are not exact on the same pair.
+$MT_*$ is not exact on this pair.
 
 ::: pf-proof
 
-Passing the displayed integral sequence to quotients by torsion gives
+Quotienting the integral sequence by its torsion subgroups gives
 $$
-\ZZ\xrightarrow{m}\ZZ\longrightarrow0.
+MT_2(X,A)\cong\ZZ\xrightarrow{m}MT_1(A)\cong\ZZ\longrightarrow MT_1(X)=0,
 $$
-Exactness at the second $\ZZ$ would require $m\ZZ=\ZZ$, false for $m>1$.
+and exactness at $MT_1(A)$ would require $m\ZZ=\ZZ$, which fails for $m>1$.
 
 :::
 

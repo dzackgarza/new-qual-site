@@ -22,6 +22,20 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 2.3, Exercise 2; the candidate and the example of the infinite wedge match the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the four axioms: homotopy invariance is immediate; exactness follows from exactness of
+    products and of direct sums together with the snake lemma on $0\to\bigoplus_i\tilde
+    H_i\to\prod_i\tilde H_i\to Q\to0$; the dimension step is now stated for a point, and $S^0$
+    gives the same conclusion because only $\tilde H_0$ is nonzero there, where product and sum
+    coincide; and the wedge axiom fails on $\bigvee_{j\ge1}S^j$, whose reduced $H_i$ is $\ZZ$ for
+    every $i\ge1$ while each summand $S^j$ has $Q=0$.
 ---
 
 ::: {.problem}
@@ -73,7 +87,7 @@ The dimension axiom holds.
 
 ::: pf-proof
 
-For $S^0$ only one reduced homology group is nonzero. Hence product and direct sum coincide, so $Q(S^0)=0$ in every degree.
+A point has every reduced homology group zero, so $Q(\mathrm{pt})=0$ and $\widetilde h_n(\mathrm{pt})=0$ for all $n$. The reduced homology of $S^0$ is zero in every degree except $0$, where it is $\ZZ$; there the product and the direct sum coincide, so $Q(S^0)=0$ as well.
 
 :::
 

@@ -23,6 +23,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 2.3, Exercise 4; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the binary case: the retraction of $X\vee Y$ onto $X$ is a left inverse of the inclusion,
+    so $i_*$ is split injective and the connecting map vanishes; the quotient map to $Y$ is the
+    identity on $Y$, so $Y\to X\vee Y\to Y$ is the identity and the second map is onto; and the
+    retraction onto $Y$ supplies the section that splits the sequence. Finite wedges then follow by
+    induction.
 ---
 
 ::: {.problem}

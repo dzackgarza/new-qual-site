@@ -47,9 +47,9 @@ marked proposed. `E-HAT-1.A-8` is settled: `proofs/cards/SubgroupFiniteness.lean
 generating family has finitely many subgroups of a given nonzero index, with no `sorryAx`.
 
 `ad-text-hat02` is partly read, against the book itself
-(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §2.2; proofs are
-read for §1.1, §1.2, §1.A, §1.B-1..-4, §2.1-1..-17 and all of §2.2. Exact scope, with no section
-counted as read beyond it:
+(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §2.3; proofs are
+read for §1.1, §1.2, §1.A, §1.B-1..-4, §2.1-1..-17 and all of §2.2 and §2.3. Exact scope, with no
+section counted as read beyond it:
 §1.1: 20 statements compared, the twelve solved proofs read line by line, `E-HAT-1.1-17` repaired.
 §1.2: 22 statements compared, all 22 proofs read line by line; `E-HAT-1.2-12`, `-14`, `-16` closing
 steps repaired, `E-HAT-1.2-22` restructured into one proof and its subcomplex framing corrected.
@@ -76,8 +76,13 @@ fundamental class is $(-1)+1+1$, odd for either orientation convention, so $H_2=
 in (d) the attaching word $a^mb^na^{-m}b^{-n}$ has vanishing exponent sums, so $H_1\cong\ZZ^2$ and
 $H_2\cong\ZZ$. The two graphs of exercise 24 are checked against the printed figure to be $K_5$ and
 $K_{3,3}$.
+§2.3: all 4 statements compared with the printed exercises and all agree; all 4 proofs are read.
+`E-HAT-2.3-1`'s proof opened with the torsion of $(D^2,S^1)$ and then abandoned it, so it is rewritten
+around the single Moore-space pair on which the torsion sequence visibly fails; `E-HAT-2.3-2`'s dimension
+step is restated for a point, with $S^0$ kept as the same computation. `E-HAT-2.3-4`'s splitting is read
+as the two retractions giving a left inverse and a section.
 Unread entirely: the proofs of §1.3 beyond the ten listed, of §1.B-5..-9 and of §2.1-6, -8, -10, -17,
--23..-25, -27..-29, the proofs of §2.3 onward, and the statements of §2.3, §3.1 and §4 onward.
+-23..-25, -27..-29, and the proofs and statements of §3.1 and §4 onward.
 
 ## Fast local checks and complete CI acceptance
 
