@@ -40,9 +40,19 @@ $$
 \overline S=\bigl\{(x,\sin(1/x)):0<x\le1\bigr\}\cup(\{0\}\times[-1,1]).
 $$
 
-**(a)** We first show that the standard $\overline S\subset S^2$ does not separate the sphere. Its complement in $\RR^2$ is path connected. Indeed, if $0<x\le1$, a point above the graph can be joined vertically to the line $y=2$, while a point below the graph can be joined vertically to $y=-2$; neither segment crosses the graph. Points with $x\le0$ or $x>1$ can likewise be joined to one of these two horizontal lines while avoiding the vertical limiting segment. The two lines $y=2$ and $y=-2$ are joined through the half-plane $x>1$, which misses $\overline S$. Thus all points of $\RR^2-\overline S$ lie in one path component. Adding the point at infinity does not change connectedness, so $S^2-\overline S$ is connected.
+**(a)** Let $h:\overline S\to D$ be the given homeomorphism, and put
+$$
+C_0=h(\{0\}\times[-1,1]),\qquad
+D_c=h\bigl(\overline S\cap\{(x,y):x\le c\}\bigr)
+\quad(0<c<1).
+$$
+The set $C_0$ is an arc, so $S^2-C_0$ is path connected. Given $a,b\in S^2-D$, choose a path $P$ from $a$ to $b$ in $S^2-C_0$. For sufficiently small $c$, the path also misses $D_c$. Indeed, otherwise points of $P\cap D_c$ for a sequence $c\to0$ would have a subsequence converging to a point of $P\cap C_0$, a contradiction.
 
-Now let $h:\overline S\to D\subset S^2$ be the given homeomorphism. The Borsuk lemma from §62 says that an injective continuous image of a compact nonseparating subset of $S^2$ is again nonseparating. Hence $D=h(\overline S)$ does not separate $S^2$. This proves (a).
+The tail
+$$
+A_c=h\bigl(\{(x,\sin(1/x)):c\le x\le1\}\bigr)
+$$
+is an arc meeting $D_c$ only at its endpoint with $x=c$, and $D=D_c\cup A_c$. Attaching such an arc does not split a component of the complement, by the arc-attachment argument of §63.2(a). Thus $a$ and $b$, which lie in the same component of $S^2-D_c$, remain in the same component of $S^2-D$. As the latter complement is open in $S^2$, this component is path connected. Hence $D$ does not separate $S^2$.
 
 **(b)** Let $A$ denote the standard closed topologist's sine curve. It is obtained from $\overline S$ by adjoining the broken-line arc $P$ from $(0,-1)$ to $(1,\sin1)$, chosen so that
 $$
