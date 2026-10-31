@@ -64,7 +64,7 @@ Indeed, for $i\in I$ choose a lift $i+\epsilon a\in J$; multiplying by $\epsilon
 In the quotient $B$, multiplication by $\epsilon$ has kernel
 $$
 \ker(\epsilon:B\to B)
-=\{\bar a+\epsilon\bar b:\epsilon a\in J\}.
+=\{\bar a+\epsilon\bar b \st \epsilon a\in J\}.
 $$
 The equality $J\cap\epsilon A=\epsilon I$ is therefore equivalent to
 $$
@@ -150,7 +150,7 @@ $$
 determines a flat deformation ideal
 $$
 J_\phi
-=\{i+\epsilon a\in A_D:i\in I,\ a\bmod I=\phi(i\bmod I^2)\}.
+=\{i+\epsilon a\in A_D \st i\in I,\ a\bmod I=\phi(i\bmod I^2)\}.
 $$
 
 ::: pf-proof

@@ -150,7 +150,7 @@ $$
 where
 $$
 J_\phi
-=\{j+\epsilon p:j\in J,\ p\bmod J=\phi(j\bmod J^2)\}.
+=\{j+\epsilon p \st j\in J,\ p\bmod J=\phi(j\bmod J^2)\}.
 $$
 
 ::: pf-proof

@@ -36,7 +36,7 @@ See Grothendieck, EGA $\mathrm{IV}_3$, 11.1.1.
 ::: {.solution}
 Let
 $$
-F=\{x\in X:f\text{ is flat at }x\}.
+F=\{x\in X \st f\text{ is flat at }x\}.
 $$
 The commutative-algebra input is the openness-of-flatness theorem cited in the problem: if
 $$
@@ -44,7 +44,7 @@ R\longrightarrow S
 $$
 is a ring homomorphism of finite presentation, then
 $$
-\{\mathfrak q\in\Spec S:S_{\mathfrak q}
+\{\mathfrak q\in\Spec S \st S_{\mathfrak q}
 \text{ is flat over }R_{\mathfrak q\cap R}\}
 $$
 is open in $\Spec S$.
@@ -127,7 +127,7 @@ The affine openness-of-flatness theorem quoted above therefore says that
 $$
 F\cap U
 =
-\{\mathfrak q\in\Spec S:S_{\mathfrak q}
+\{\mathfrak q\in\Spec S \st S_{\mathfrak q}
 \text{ is flat over }R_{\mathfrak q\cap R}\}
 $$
 is open in $U$.

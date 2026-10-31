@@ -111,7 +111,7 @@ This proves part (a).
 In part (b), with $A=k[x,y]$, the coordinate ring of $X$ is naturally
 $$
 R\cong A\times_k A
-=\{(u,v)\in A\oplus A:u(0,0)=v(0,0)\}.
+=\{(u,v)\in A\oplus A \st u(0,0)=v(0,0)\}.
 $$
 
 ::: pf-proof
