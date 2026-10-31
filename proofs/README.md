@@ -14,6 +14,7 @@ certifies it.
 | `cards/FieldHomework1.lean` | `P-FHW1-01` | The printed hypothesis of problem 1(a) holds with $L=\bot$ for every $\alpha$ (the refutation), and both directions of the corrected statement with $L\ne 0$. |
 | `cards/DeltaComplexHomology.sage` | `E-HAT-2.1-4`, `-5`, `-6`, `-9`, `E-HAT-2.2-11`, `-19` | Exact Smith-normal-form homology of the chain complexes those cards write down: the parachute, the Klein bottle, the collapsed complex with $H_1=\ZZ/2^n$, the collapsed $\Delta^n$, the cellular complex of $\RP^n/\RP^m$ for all $m<n\le 8$, and the abelianization of the cube complex's presentation. |
 | `cards/SubgroupFiniteness.lean` | `E-HAT-1.A-8` | A group with a finite generating family has finitely many subgroups of a given nonzero index: `finite_hom` (homs into a finite monoid are determined by their values on generators) and `subgroup_eq_stabilizer_comap` (a subgroup of index $m$ is the stabilizer of a point under its coset action on the set `Fin m`). |
+| `cards/NormExtension.lean` | `P-TAMURAS15-10`, partial | For a closed subspace $Y$ of a real normed space and $x\notin Y$: a functional of norm at most one vanishing on $Y$ with $\varphi x\ne0$, built from the normed quotient, `exists_dual_vector` and `Submodule.Quotient.norm_mk_le`. |
 
 ## Checking
 
@@ -33,7 +34,10 @@ certificate is not a proof.
 `P-TAMURAS15-10` adds a closedness hypothesis to TAMU Spring 2015 problem 10.
 The printed statement fails without it, but the replacement is not certified here,
 so the card keeps both statements and its correction is marked proposed.
-The missing piece is a single lemma: for a closed subspace $Y$ of a normed space
-and $x\notin Y$, a functional in $S$ with $\varphi x\ne0$ exists, built from
-`exists_extension_norm_eq` applied to (i) $\|\cdot\|_1$ on $Y$ and (ii) the
-distance functional on $Y+\mathbb R x$.
+`cards/NormExtension.lean` now covers the case $x\notin Y$. The remaining half is
+$x\in Y$: a functional on $Y$ bounded by the *given* norm $\|\cdot\|_1$ with
+$\varphi x=\|x\|_1\ne0$, then extended to $E$ by `exists_extension_norm_eq`
+(whose bound is the subspace norm, and $\|y\|_1\le K\|y\|$ supplies $K$).
+The exact missing lemma is the normed-space structure on $Y$ for $\|\cdot\|_1$,
+i.e. `NormedAddCommGroup.ofCore`-style data from a norm equivalent to the subspace
+norm, so that `exists_dual_vector` applies to it.

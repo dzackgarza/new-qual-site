@@ -34,6 +34,15 @@ audit:
 - event: solution-written
   by: claude
   date: 2026-10-31
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Partial certification in proofs/cards/NormExtension.lean: for a closed subspace Y and
+    x not in Y, a functional of norm at most one vanishing on Y with phi x nonzero exists,
+    via the normed quotient and exists_dual_vector. The x in Y case, which needs the
+    given norm ||.||_1 as a normed structure on Y, is uncertified, so the correction stays
+    proposed.
 ---
 
 ::: {.problem}
