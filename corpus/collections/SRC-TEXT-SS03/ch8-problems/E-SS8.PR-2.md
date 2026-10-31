@@ -26,9 +26,7 @@ which are simply the cosine and sine of $\alpha$, respectively. Here, the notati
 
 In particular, we may now consider two smooth curves $\gamma \colon [a, b] \to \CC$ and $\eta \colon [a, b] \to \CC$ that intersect at $z_0$, say $\gamma(t_0) = \eta(t_0) = z_0$, for some $t_0 \in (a, b)$. If the quantities $\gamma'(t_0)$ and $\eta'(t_0)$ are non-zero, then they represent the tangents to the curves $\gamma$ and $\eta$ at the point $z_0$, and we say that the two curves intersect at $z_0$ at the angle formed by the two vectors $\gamma'(t_0)$ and $\eta'(t_0)$.
 
-A holomorphic function $f$ defined near $z_0$ is said to preserve angles at $z_0$ if for any two smooth curves $\gamma$ and $\eta$ intersecting at $z_0$, the angle formed between the curves $\gamma$ and $\eta$ at $z_0$ equals the angle formed between the curves $f \circ \gamma$ and $f \circ \eta$ at $f(z_0)$. (See Figure 12 for an illustration.) In particular, we assume that the tangents to the curves $\gamma$, $\eta$, $f \circ \gamma$, and $f \circ \eta$ at the point $z_0$ and $f(z_0)$ are all non-zero.
-
-Figure 12. Preservation of angles at $z_0$
+A holomorphic function $f$ defined near $z_0$ is said to preserve angles at $z_0$ if for any two smooth curves $\gamma$ and $\eta$ intersecting at $z_0$, the angle formed between the curves $\gamma$ and $\eta$ at $z_0$ equals the angle formed between the curves $f \circ \gamma$ and $f \circ \eta$ at $f(z_0)$. In particular, we assume that the tangents to the curves $\gamma$, $\eta$, $f \circ \gamma$, and $f \circ \eta$ at the point $z_0$ and $f(z_0)$ are all non-zero.
 
 (a) Prove that if $f \colon \Omega \to \CC$ is holomorphic, and $f'(z_0) \neq 0$, then $f$ preserves angles at $z_0$. [Hint: Observe that
 $$
