@@ -41,7 +41,7 @@ where $H_Y^i(X, \wait)$ denotes cohomology with supports in $Y$ (Ex. 2.3).
 ::: {.solution}
 For an $A$-module $M$, the [[P-AGH256SUPPORT|ideal-torsion submodule]] is
 $$
-\Gamma_{\mfa}(M)=\{m\in M:\mfa^n m=0\text{ for some integer }n\ge1\}.
+\Gamma_{\mfa}(M)=\{m\in M \st \mfa^n m=0\text{ for some integer }n\ge1\}.
 $$
 No finite-generation hypothesis is placed on $M$.
 

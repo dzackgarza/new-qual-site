@@ -93,7 +93,7 @@ Every section $s\in\Gamma(U,\widetilde M)$ is obtained from a homomorphism $\mfa
 If $U=\varnothing$, its only section is represented by the zero homomorphism, so assume $U\ne\varnothing$.
 The graph of the section is the coherent subsheaf
 $$
-\mathcal H_U=\{(a,as):a\in\OO_U\}
+\mathcal H_U=\{(a,as) \st a\in\OO_U\}
 \subseteq(\OO_X\oplus\widetilde M)\restrict_U,
 $$
 isomorphic to $\OO_U$ by the first projection.
