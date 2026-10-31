@@ -30,33 +30,10 @@ Show that $H_c^n(X \times \RR; G) \approx H_c^{n-1}(X; G)$ for all $n$.
 :::
 
 ::: {.solution}
-Under the standing locally compact Hausdorff hypotheses for compactly supported cohomology,
+Let $K\subset X$ be compact and $I=[-a,a]\subset\RR$ with $a>0$. The sets $K\times I$ are cofinal among compact subsets of $X\times\RR$: the projections of any compact subset are compact and lie in such a product. By the relative suspension isomorphism,
 $$
-H_c^q(Y;G)\cong\widetilde H^q(Y^+;G),
+H^n(X\times\RR,(X\times\RR)\setminus(K\times I);G)
+\cong H^{n-1}(X,X\setminus K;G).
 $$
-where $Y^+$ denotes the one-point compactification.
-
-One-point compactification converts products into smash products:
-$$
-(X\times\RR)^+\cong X^+\wedge\RR^+.
-$$
-Since $\RR^+\cong S^1$, this is the reduced suspension
-$$
-X^+\wedge S^1\cong\Sigma X^+.
-$$
-Hence the suspension isomorphism gives
-$$
-H_c^n(X\times\RR;G)
-\cong
-\widetilde H^n(\Sigma X^+;G)
-\cong
-\widetilde H^{n-1}(X^+;G)
-\cong
-H_c^{n-1}(X;G).
-$$
-Thus
-$$
-\boxed{H_c^n(X\times\RR;G)\cong H_c^{n-1}(X;G)}
-$$
-for all $n$.
+Indeed, the complement on the left is $(X\setminus K)\times\RR\,\cup\,X\times(\RR\setminus I)$. The relative cochain product with the generator of $H^1(\RR,\RR\setminus I;\ZZ)$ gives the displayed isomorphism, equivalently by excision and the suspension isomorphism for the pair $(X,X\setminus K)$. These maps commute with inclusions when $K$ and $I$ increase. Taking the filtered direct limit gives $H_c^n(X\times\RR;G)\cong H_c^{n-1}(X;G)$.
 :::
