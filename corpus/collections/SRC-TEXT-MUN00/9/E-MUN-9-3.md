@@ -28,7 +28,7 @@ audit:
 Suppose that $A$ is a set and $\{f_n\}_{n \in \ZZ_+}$ is a given indexed family of injective functions
 
 $$
-f _ {n}: \{1, \dots , n \} \longrightarrow A.
+f_n\colon \{1, \dots, n\} \longrightarrow A.
 $$
 
 Show that $A$ is infinite.

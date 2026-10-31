@@ -29,11 +29,11 @@ Let $J$ be a well-ordered set.
 A subset $J_0$ of $J$ is said to be inductive if for every $\alpha \in J$,
 
 $$
-(S _ {\alpha} \subset J _ {0}) \Longrightarrow \alpha \in J _ {0}
+(S_\alpha \subset J_0) \Longrightarrow \alpha \in J_0.
 $$
 
-Theorem (The principle of transfinite induction).
-If $J$ is a well-ordered set and $J_0$ is an inductive subset of $J$, then $J_0 = J$ .
+Prove the following theorem (the principle of transfinite induction).
+If $J$ is a well-ordered set and $J_0$ is an inductive subset of $J$, then $J_0 = J$.
 :::
 
 ::: {.solution}

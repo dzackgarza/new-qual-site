@@ -25,21 +25,21 @@ audit:
 
 ::: {.exercise}
 
-Let $a \in \RR$ . Define inductively
+Let $a \in \RR$. Define inductively
 
 $$
-\begin{array}{c} {a ^ {1} = a,} \\ {a ^ {n + 1} = a ^ {n} \cdot a} \end{array}
+\begin{aligned} a^1 &= a,\\ a^{n+1} &= a^n \cdot a \end{aligned}
 $$
 
-for $n \in \ZZ_{+}$ . (See §7 for a discussion of the process of inductive definition.)
+for $n \in \ZZ_{+}$. (See §7 for a discussion of the process of inductive definition.)
 Show that for $n, m \in \ZZ_{+}$ and $a, b \in \RR$,
 
 $$
-\begin{array}{l} a ^ {n} a ^ {m} = a ^ {n + m}, \\ (a ^ {n}) ^ {m} = a ^ {n m}, \\ a ^ {m} b ^ {m} = (a b) ^ {m}. \end{array}
+\begin{aligned} a^n a^m &= a^{n+m},\\ (a^n)^m &= a^{nm},\\ a^m b^m &= (ab)^m. \end{aligned}
 $$
 
 These are called the laws of exponents.
-[Hint: For fixed $n$, prove the formulas by induction on $m$ .]
+[Hint: For fixed $n$, prove the formulas by induction on $m$.]
 :::
 
 ::: {.solution}
