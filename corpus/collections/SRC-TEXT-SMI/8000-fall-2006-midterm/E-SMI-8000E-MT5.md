@@ -67,7 +67,9 @@ Apply the adjugate identity to the polynomial matrix $xI-A$.
 
 ::: pf-proof
 
-Work in the matrix ring $M_n(F[x])$. The adjugate identity gives
+For $n=0$, $\chi_T=1$ and the identity endomorphism of the zero space
+is zero, so the conclusion holds. Assume $n\ge1$ and work in $M_n(F[x])$. The adjugate
+identity gives
 $$
 (xI-A)\operatorname{adj}(xI-A)
 =\det(xI-A)I
