@@ -33,5 +33,5 @@ Let $L$ be the long line of [[E-PQHZN]]. By [[E-PQHZN]], every point of $L$ has 
 
 As a linearly ordered space in its order topology, $L$ is a linear continuum; every linear continuum is normal. Hence $L$ satisfies condition (iv) of [[E-OYPV7]].
 
-It is not metrizable. If it were metrizable, then because it is connected and locally compact, [[E-LI4O5]] would give a countable basis on its unique component. But by [[E-PQHZN]] the long line has no countable basis (indeed no embedding into any $\RR^n$). Therefore condition (iii) fails. Thus $L$ satisfies (iv) but not (iii).
+It is not metrizable. If it were metrizable, then because it is connected and locally $1$-euclidean, [[E-LI4O5]] would make its unique component a $1$-manifold with a countable basis. But by [[E-PQHZN]] the long line has no countable basis. Therefore condition (iii) fails. Thus $L$ satisfies (iv) but not (iii).
 :::
