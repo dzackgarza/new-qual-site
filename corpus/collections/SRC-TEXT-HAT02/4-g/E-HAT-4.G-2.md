@@ -90,7 +90,7 @@ Using the homeomorphism $\phi_e: X_e \xrightarrow{\sim} F$, we have a trivializi
 $$
 p^{-1}(U_e) = X_e \times U_e \xrightarrow{\phi_e \times \operatorname{id}} F \times U_e,
 $$
-which satisfies $\operatorname{pr}_1 \circ (\phi_e \times \operatorname{id}) = p$.
+which satisfies $\operatorname{pr}_2 \circ (\phi_e \times \operatorname{id}) = p$.
 
 ::: pf-proof
 
