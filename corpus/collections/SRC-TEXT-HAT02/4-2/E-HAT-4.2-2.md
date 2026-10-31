@@ -29,6 +29,8 @@ Show the action of $\pi_1(\RP^n)$ on $\pi_n(\RP^n) \approx \ZZ$ is trivial for $
 :::
 
 ::: {.solution}
+For $n=1$, $\RP^1\cong S^1$ and the action of $\pi_1$ on itself is conjugation in $\ZZ$, hence trivial.
+
 For $n\ge2$, the universal covering is
 $$
 p:S^n\to\RP^n,
