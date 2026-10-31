@@ -23,9 +23,10 @@ $$
 \overline{U}_n \subset U_{n-1}, \\
 \overline{U}_n \cap \overline{B}_n = \varnothing, \\
 \operatorname{diam} U_n < 1/n \quad \text{in the metric case}, \\
-\overline{U}_n \subset W_n.]
+\overline{U}_n \subset W_n.
 \end{array}
 $$
+]
 :::
 
 ::: {.solution}
