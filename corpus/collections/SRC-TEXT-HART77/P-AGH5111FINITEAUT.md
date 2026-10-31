@@ -122,7 +122,7 @@ Since $C$ is an integral projective curve, $p_a(C)\geq0$, hence
 $$
 C^2+K_X\cdot C\geq-2.
 $$
-Using the orthogonal decompositions in step [](#s2){.pf-ref},
+Using the orthogonal decomposition in step [](#s1){.pf-ref},
 $$
 C^2=\frac{h^2}{H^2}-\norm{y}^2
 $$
