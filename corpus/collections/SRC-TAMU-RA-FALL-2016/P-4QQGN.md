@@ -14,10 +14,10 @@ review: draft
 ---
 
 ::: {.problem}
-(1) Let $f(x)$ be a real valued function on the real line that is differentiable almost everywhere.
+(a) Let $f(x)$ be a real valued function on the real line that is differentiable almost everywhere.
 Prove that $f'(x)$ is a Lebesgue measurable function.
 
-(2) If $f$ is continuous real values function on the real line, then the set of points at which $f$ is differentiable is measurable.
+(b) Prove that if $f$ is a continuous real valued function on the real line, then the set of points at which $f$ is differentiable is measurable.
 :::
 
 ::: {.solution}

@@ -268,7 +268,7 @@ mathematical correction under its own node, not under copy policy.
   - [ ] SRC-STANDREWS-MT5824-PSET7-2010
   - [x] SRC-TAMU-RA-FALL-2014
   - [x] SRC-TAMU-RA-FALL-2015
-  - [ ] SRC-TAMU-RA-FALL-2016
+  - [x] SRC-TAMU-RA-FALL-2016
   - [ ] SRC-TAMU-RA-SPRING-2015
   - [ ] SRC-TAMU-RA-SPRING-2016
   - [ ] SRC-TAMU-RA-SPRING-2017
