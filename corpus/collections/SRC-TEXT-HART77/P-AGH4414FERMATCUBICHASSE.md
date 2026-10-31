@@ -135,9 +135,15 @@ The set $\mfp$ has density $1/2$.
 
 ::: pf-proof
 
-By Dirichlet's theorem on primes in arithmetic progressions, the primes are
-equidistributed between the two reduced residue classes $1$ and $2$ modulo
-$3$. The single excluded prime $3$ has density zero. Hence
+The prime number theorem for arithmetic progressions gives
+$$
+\pi(x;3,1)\sim\frac{x}{2\log x},
+\qquad
+\pi(x;3,2)\sim\frac{x}{2\log x}.
+$$
+Thus the primes in the two reduced residue classes modulo $3$ have equal
+natural density among the primes. The single excluded prime $3$ has density
+zero. Hence
 $$
 \delta(\mfp)=\frac{1}{\varphi(3)}=\frac12.
 $$
