@@ -28,7 +28,7 @@ audit:
 ::: {.problem}
 Let $R$ be a PID. For each positive integer $r$ and sequence of nonzero ideals $I_1 \supset I_2 \supset \cdots \supset I_r$, choose a sequence $d_i \in R$ such that $(d_i) = I_i$ and $d_i \mid d_{i+1}$.
 
-For a given pair of positive integers $n, m$, let $S$ be the set of all $n\times m$ matrices of the form $\left(\begin{array}{ll}{L_{r}} & {0} \\ {0} & {0}\end{array}\right)$ where $r=1,2,\cdots,\min(m,n)$ and $L_r$ is a diagonal $r\times r$ matrix with main diagonal $d_i$.
+For a given pair of positive integers $n, m$, let $S$ be the set of all $n\times m$ matrices of the form $\left(\begin{array}{ll}{L_{r}} & {0} \\ {0} & {0}\end{array}\right)$ where $r=0,1,2,\cdots,\min(m,n)$ and $L_r$ is a diagonal $r\times r$ matrix with main diagonal $d_i$.
 
 Show that $S$ is a set of canonical forms under equivalence for the set of all $n\times m$ matrices over $R$.
 :::
@@ -166,4 +166,8 @@ contains at most one.
 
 :::
 
+:::
+
+::: remark
+Hungerford lets $r$ run from $1$. With that range the zero matrix lies in no class meeting $S$, so the range here starts at $r=0$, where the block $L_0$ is empty and the matrix is $0$.
 :::

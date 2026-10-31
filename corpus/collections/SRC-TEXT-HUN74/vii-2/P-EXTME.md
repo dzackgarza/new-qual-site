@@ -56,17 +56,17 @@ $$
 be the $n\times(m+1)$ augmented matrix. Show that $AX=B$ has a solution if
 and only if
 $$
-\operatorname{rank}A=\operatorname{rank}C.
+\rank A=\rank C.
 $$
 When a solution exists, show that it is unique if and only if
 $$
-\operatorname{rank}A=m.
+\rank A=m.
 $$
 
 (d) If $B=0$, show that the homogeneous system has a nontrivial solution if
 and only if
 $$
-\operatorname{rank}A<m.
+\rank A<m.
 $$
 In particular, show that if $n<m$, then the homogeneous system has a
 nontrivial solution.
@@ -147,11 +147,11 @@ one. Hence
 $$
 B\in\operatorname{Col}(A)
 \iff
-\operatorname{rank}[A\mid B]=\operatorname{rank}A.
+\rank [A\mid B]=\rank A.
 $$
 Since $C=[A\mid B]$, this is exactly
 $$
-\boxed{AX=B\text{ is solvable}\iff\operatorname{rank}A=\operatorname{rank}C.}
+\boxed{AX=B\text{ is solvable}\iff\rank A=\rank C.}
 $$
 
 :::
@@ -160,7 +160,7 @@ $$
 
 ::: pf-step
 
-A consistent system has a unique solution exactly when $\operatorname{rank}A=m$.
+A consistent system has a unique solution exactly when $\rank A=m$.
 
 ::: pf-proof
 
@@ -183,12 +183,12 @@ A:F^m\longrightarrow F^n,
 $$
 one has
 $$
-m=\dim\ker A+\operatorname{rank}A.
+m=\dim\ker A+\rank A.
 $$
-Hence $\ker A=0$ if and only if $\operatorname{rank}A=m$. Therefore, for a
+Hence $\ker A=0$ if and only if $\rank A=m$. Therefore, for a
 consistent system,
 $$
-\boxed{\text{the solution is unique}\iff\operatorname{rank}A=m.}
+\boxed{\text{the solution is unique}\iff\rank A=m.}
 $$
 
 :::
@@ -197,7 +197,7 @@ $$
 
 ::: {.pf-step #s5}
 
-The homogeneous system has a nontrivial solution exactly when $\operatorname{rank}A<m$.
+The homogeneous system has a nontrivial solution exactly when $\rank A<m$.
 
 ::: pf-proof
 
@@ -208,13 +208,13 @@ $$
 $$
 Rank-nullity gives
 $$
-\dim\ker A=m-\operatorname{rank}A,
+\dim\ker A=m-\rank A,
 $$
 so
 $$
 \ker A\ne0
 \iff
-\operatorname{rank}A<m.
+\rank A<m.
 $$
 
 :::
@@ -229,11 +229,11 @@ More unknowns than equations force a nontrivial homogeneous solution.
 
 Since $A$ has $n$ rows,
 $$
-\operatorname{rank}A\le n.
+\rank A\le n.
 $$
 If $n<m$, then
 $$
-\operatorname{rank}A\le n<m,
+\rank A\le n<m,
 $$
 so step [](#s5){.pf-ref} gives a nontrivial solution of $AX=0$.
 
