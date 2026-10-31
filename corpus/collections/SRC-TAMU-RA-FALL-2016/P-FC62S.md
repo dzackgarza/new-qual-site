@@ -19,7 +19,6 @@ review: draft
 Assume that $X$ is a reflexive Banach space and $\phi$ is a continuous linear functional on $X$.
 Prove that $\phi$ achieves its norm; that is, prove that there is a norm one vector $x$ in $X$ such that $\phi(x)=\norm{\phi}$.
 Show by example that there is a continuous linear functional on the Banach space $\ell_1$ that does not achieve its norm.
-Give an counterexample in the case $X=l_1$.
 :::
 
 ::: {.solution}
