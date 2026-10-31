@@ -113,11 +113,11 @@ Steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
 
 ::: {.pf-step #s7}
 
-Make the change of variables $e^{i\varphi} = T(e^{i\theta})$; then $d\theta = \frac{1 - \abs{z_0}^2}{\abs{e^{i\theta} - z_0}^2}\,d\varphi$ (the Jacobian of the Blaschke factor on the circle).
+Substitute $e^{i\theta} = T(e^{i\psi})$; then $u(T(e^{i\theta})) = u(e^{i\psi})$ and $d\theta = \frac{1 - \abs{z_0}^2}{\abs{e^{i\psi} - z_0}^2}\,d\psi$.
 
 ::: pf-proof
 
-the derivative of $T$ on the unit circle has modulus $\frac{1 - \abs{z_0}^2}{\abs{e^{i\theta} - z_0}^2}$.
+$T$ is an involution, so $T(e^{i\theta}) = e^{i\psi}$. $T$ maps the circle onto itself and reverses its orientation, and $T'(\zeta) = -\frac{1 - \abs{z_0}^2}{(1 - \overline{z_0}\zeta)^2}$. For $\abs\zeta = 1$, $\abs{1 - \overline{z_0}\zeta} = \abs{\overline\zeta - \overline{z_0}} = \abs{\zeta - z_0}$, so $\abs{d\theta} = \abs{T'(e^{i\psi})}\,\abs{d\psi} = \frac{1 - \abs{z_0}^2}{\abs{e^{i\psi} - z_0}^2}\,\abs{d\psi}$. The orientation reversal swaps the limits, and as $\psi$ runs over a full period so does $\theta$.
 
 :::
 
@@ -130,7 +130,7 @@ $$u(z_0) = \frac{1}{2\pi}\int_0^{2\pi} \frac{1 - \abs{z_0}^2}{\abs{e^{i\theta} -
 
 ::: pf-proof
 
-Steps [](#s6){.pf-ref} and [](#s7){.pf-ref}.
+Steps [](#s6){.pf-ref} and [](#s7){.pf-ref}, renaming $\psi$ to $\theta$.
 
 :::
 

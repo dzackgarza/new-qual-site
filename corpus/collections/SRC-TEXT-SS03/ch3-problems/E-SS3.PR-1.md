@@ -147,7 +147,14 @@ for any $r > 0$, choose $\epsilon < r$; then $-\epsilon \in D_r(0)$ but $-\epsil
 The complement of $h(D_\rho(0) \sm \theset{0})$ has area $\pi\qty(\frac{1}{\rho^2} - \sum_{n\ge 1} n\abs{c_n}^2 \rho^{2n})$.
 
 ::: pf-proof
-by the area theorem (Gronwall's area theorem), the area of the complement of the image of the punctured disk under $h$ is $\pi(1/\rho^2 - \sum_{n\ge1} n\abs{c_n}^2 \rho^{2n})$.
+Since $h$ is injective and $h(z) \to \infty$ as $z \to 0$, the curve $\Gamma_\rho : \theta \mapsto h(\rho e^{i\theta})$ is a Jordan curve, $h(D_\rho(0) \sm \theset{0})$ is its unbounded complementary component, and the complement of the image is the closed bounded region $K_\rho$ that $\Gamma_\rho$ encloses. Near $z = 0$ the term $1/z$ dominates, so $\Gamma_\rho$ goes around $K_\rho$ clockwise. By Green's theorem, the area of a region bounded by a positively oriented Jordan curve $\gamma$ is $\frac{1}{2i}\int_\gamma \overline w\,dw$, so
+$$
+\abs{K_\rho} = -\frac{1}{2i}\int_0^{2\pi} \overline{h(\rho e^{i\theta})}\,\frac{d}{d\theta}h(\rho e^{i\theta})\,d\theta.
+$$
+Put $c_{-1} = 1$. Then $h(\rho e^{i\theta}) = \sum_{n\ge -1} c_n\rho^n e^{in\theta}$ and $\frac{d}{d\theta}h(\rho e^{i\theta}) = \sum_{n \ge -1} in\,c_n\rho^n e^{in\theta}$, both converging uniformly in $\theta$. By orthogonality of $e^{in\theta}$,
+$$
+\abs{K_\rho} = -\frac{2\pi}{2i}\sum_{n\ge-1} in\abs{c_n}^2\rho^{2n} = \pi\qty(\frac{1}{\rho^2} - \sum_{n\ge1} n\abs{c_n}^2\rho^{2n}).
+$$
 :::
 
 :::
@@ -219,7 +226,7 @@ $g(z)^2 = z^2 \psi(z^2)^2 = z^2 \cdot f(z^2)/z^2 = f(z^2)$.
 $g$ is injective and satisfies $g(0) = 0$, $g'(0) = 1$.
 
 ::: pf-proof
-$g(0) = 0$ and $g'(0) = \psi(0) = 1$; injectivity follows from $g^2 = f \circ (z \mapsto z^2)$ and injectivity of $f$ (if $g(z_1) = g(z_2)$ then $f(z_1^2) = f(z_2^2)$, so $z_1^2 = z_2^2$, and $g$ is odd, forcing $z_1 = z_2$).
+$g(0) = 0$ and $g'(0) = \psi(0) = 1$. $g$ is odd. If $g(z_1) = g(z_2)$, then $f(z_1^2) = f(z_2^2)$, so $z_1^2 = z_2^2$ by injectivity of $f$. If $z_1 = -z_2$, then $g(z_2) = g(z_1) = -g(z_2)$, so $g(z_2) = 0$; since $g(z)^2 = f(z^2)$ vanishes only at $z = 0$, $z_1 = z_2 = 0$. Hence $z_1 = z_2$ in every case.
 :::
 
 :::
@@ -261,10 +268,10 @@ $\psi(z) = \sqrt{f(z)/z} = 1 + \frac{a_2}{2} z + \cdots$, so $\psi(z^2) = 1 + \f
 :::
 
 ::: pf-step
-By (c) applied to $1/g$, $\abs{b_2} \le 1/\sqrt2$... more precisely $1\cdot \abs{b_2}^2 \le 1$, so $\abs{b_2} \le 1$.
+$\abs{b_2} \le 1$.
 
 ::: pf-proof
-(c) gives $\sum n\abs{c_n}^2 \le 1$, so $\abs{c_1} = \abs{b_2} \le 1$.
+$1/g$ is injective on $0 < \abs z < 1$ because $g$ is, so (c) applies to $1/g$; its coefficient of $z$ is $c_1 = -b_2$, and $\abs{c_1}^2 \le \sum n\abs{c_n}^2 \le 1$.
 :::
 
 :::
@@ -279,19 +286,28 @@ $a_2 = 2b_2$.
 :::
 
 ::: pf-step
-Equality $\abs{a_2} = 2$ forces $\abs{b_2} = 1$, which by the equality case of (c) forces $1/g(z) = 1/z + e^{i\theta} z$, i.e. $g(z) = z/(1 + e^{i\theta}z^2)$.
+If $\abs{a_2} = 2$, write $a_2 = 2e^{i\theta}$; then $g(z) = z/(1 - e^{i\theta}z^2)$.
 
 ::: pf-proof
-equality in the area theorem forces $h$ to have the form $1/z + c_1 z$ with $\abs{c_1} = 1$.
+$\abs{c_1} = \abs{b_2} = 1$, so $\sum_{n\ge1} n\abs{c_n}^2 \le 1$ forces $c_n = 0$ for $n \ge 2$. $1/g$ is odd, so its constant term vanishes. Hence $1/g(z) = 1/z - b_2 z = (1 - e^{i\theta}z^2)/z$.
 :::
 
 :::
 
 ::: pf-step
-Then $f(z^2) = g(z)^2 = z^2/(1 + e^{i\theta}z^2)^2$, so $f(z) = z/(1 + e^{i\theta}z)^2$.
+Then $f(z) = z/(1 - e^{i\theta}z)^2$.
 
 ::: pf-proof
-substitute $z^2 \mapsto z$.
+$f(z^2) = g(z)^2 = z^2/(1 - e^{i\theta}z^2)^2$ for $z \in \DD$, and every point of $\DD$ is a square of a point of $\DD$.
+:::
+
+:::
+
+::: pf-step
+Conversely, $f(z) = z/(1 - e^{i\theta}z)^2$ satisfies the hypotheses and has $\abs{a_2} = 2$.
+
+::: pf-proof
+$f(z) = \sum_{n\ge1} n e^{i(n-1)\theta}z^n$, so $a_2 = 2e^{i\theta}$. $f(z) = e^{-i\theta}k(e^{i\theta}z)$ with $k(z) = z/(1-z)^2 = \frac14\qty(\qty(\frac{1+z}{1-z})^2 - 1)$. The map $z \mapsto \frac{1+z}{1-z}$ is injective from $\DD$ onto the right half-plane, and squaring is injective there, so $k$ and $f$ are injective.
 :::
 
 :::
@@ -306,28 +322,28 @@ substitute $z^2 \mapsto z$.
 ::: pf-proof
 
 ::: pf-step
-$1/(h(z) - z_j)$ is injective and has expansion $1/z + c_0 + c_1 z + \cdots$.
+$H_j = 1/(h - z_j)$, extended by $H_j(0) = 0$, is holomorphic and injective on $\DD$.
 
 ::: pf-proof
-$h - z_j$ has a simple pole at $0$ and avoids $0$, so its reciprocal is injective with a simple pole at $0$.
+$h - z_j$ never vanishes on $\DD \sm \theset{0}$ and has a simple pole at $0$, so $H_j$ is holomorphic on $\DD$ with $H_j(0) = 0$. It is injective on $\DD \sm \theset{0}$ because $h$ is, and $0$ is its only zero.
 :::
 
 :::
 
 ::: pf-step
-By (c), $\abs{c_1} \le 1$ for each $j$.
+$H_j(z) = z + (z_j - c_0)z^2 + \cdots$.
 
 ::: pf-proof
-apply (c) to $1/(h - z_j)$.
+$H_j(z) = \frac{z}{1 + (c_0 - z_j)z + c_1z^2 + \cdots} = z\qty(1 - (c_0 - z_j)z + O(z^2))$.
 :::
 
 :::
 
 ::: pf-step
-The coefficient $c_1$ of $1/(h - z_j)$ is related to $z_1 - z_2$; specifically $\abs{z_1 - z_2} \le 4$.
+$\abs{z_1 - z_2} \le 4$.
 
 ::: pf-proof
-the second coefficient of $1/(h - z_j)$ is $z_j$ (up to sign), and comparing the two expansions gives $\abs{z_1 - z_2} \le 2 + 2 = 4$ (the standard argument: $\abs{c_1^{(1)} - c_1^{(2)}} = \abs{z_1 - z_2} \le \abs{c_1^{(1)}} + \abs{c_1^{(2)}} \le 2$, refined to $4$ via the precise coefficient).
+By (e) applied to $H_j$, $\abs{z_j - c_0} \le 2$ for $j = 1, 2$, so $\abs{z_1 - z_2} \le \abs{z_1 - c_0} + \abs{c_0 - z_2} \le 4$.
 :::
 
 :::
@@ -354,7 +370,7 @@ assume for contradiction that some $w$ with $\abs{w} < 1/4$ is not in $f(\DD)$.
 Then $1/f$ avoids $0$ and $1/w$.
 
 ::: pf-proof
-$f$ avoids $w$ and $0$ (since $f(0) = 0$ and $f$ is injective, $f$ avoids $0$ on $\DD \sm \theset{0}$).
+$1/f$ never vanishes because $f$ takes finite values, and $1/f = 1/w$ would mean $f = w$. Also $w \neq 0$, since $f(0) = 0$. Since $f$ is injective with a simple zero only at $0$, $1/f = 1/z - a_2 + \cdots$ is injective on $\DD \sm \theset{0}$, as (f) requires.
 :::
 
 :::
