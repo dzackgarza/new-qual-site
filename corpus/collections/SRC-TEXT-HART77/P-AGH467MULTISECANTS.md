@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AGH467MULTISECANTS
 kind: problem
-title: Only four curves in $\PP^3$ have no multisecants
+title: Curves without multisecants in characteristic zero
 classification:
   areas:
   - algebraic-geometry
@@ -35,18 +35,29 @@ audit:
     earlier proof counted tangential length-three intersections and therefore
     did not establish the stated converse. The retained argument proves a
     conditional reduction; the tangent-contact implication remains open.
+- event: source-corrected
+  by: chatgpt
+  date: 2026-10-31
+  note: >-
+    The unqualified converse in IV.6.7 is false in positive characteristic.
+    The Frobenius graph of degree p+1 on a smooth quadric is a smooth
+    nonplanar curve with no lines through three distinct points for p at
+    least 3. The card states the characteristic-zero theorem and proves
+    the counterexample.
 ---
 
 ::: {.problem}
-The line, the conic, the twisted cubic curve and the elliptic quartic curve in $\PP^3$ have no multisecants.
-Every other curve in $\PP^3$ has infinitely many multisecants.
+Over an algebraically closed field of characteristic zero, the line, the
+conic, the twisted cubic and the elliptic quartic in $\PP^3$ have no
+multisecants. Every other smooth integral curve in $\PP^3$ has infinitely
+many multisecants.
 
 Hint: Consider a projection from a point of the curve to $\PP^2$.
 :::
 
 ::: {.remark}
-The following argument proves the exceptional cases and the converse in
-characteristic zero. The positive-characteristic converse remains open here.
+Hartshorne IV.6.7 states the converse without a characteristic restriction.
+It fails in characteristic $p\ge3$, as the final step shows.
 
 As in Hartshorne IV.3, a multisecant is a line meeting $X$ in at least
 three distinct points. A tangent with intersection length $3$ at one point
@@ -407,9 +418,8 @@ intersection of two quadrics.
 
 ::: {.pf-step #s13}
 
-Under the additional tangent-contact hypothesis in step [](#s5){.pf-ref},
-a curve with only finitely many multisecants is one of the four listed
-curves.
+In characteristic zero, a curve with only finitely many multisecants is one
+of the four listed curves.
 
 ::: pf-proof
 
@@ -417,7 +427,52 @@ Suppose a curve had only finitely many multisecants. If it were
 planar, step [](#s4){.pf-ref} would make it a line or a conic.  If it were nonplanar,
 step [](#s12){.pf-ref} would make it a twisted cubic or an elliptic quartic.
 
-This establishes the stated conditional conclusion.
+Step [](#tangent-char-zero){.pf-ref} supplies the tangent-contact hypothesis
+of step [](#s5){.pf-ref}, so the conclusion holds in characteristic zero.
+
+:::
+
+:::
+
+::: {.pf-step #positive-char-counterexample}
+
+For every prime $p\ge3$, there is a smooth nonplanar curve of degree $p+1$
+in characteristic $p$ with no multisecants.
+
+::: pf-proof
+
+Let $k$ be algebraically closed of characteristic $p$, and map $\PP^1$ to
+$\PP^3$ by
+$$
+[s:t]\longmapsto
+[s^{p+1}:s^pt:st^p:t^{p+1}].
+$$
+On $s\ne0$, the first two coordinates recover $t/s$; on $t\ne0$, the last
+two recover $s/t$. These coordinates also separate tangent vectors on both
+charts, so the map is a closed immersion. Its image $C$ is smooth and has
+degree $p+1$. The four coordinate sections are linearly independent, since
+on $s\ne0$ they are $1,u,u^p,u^{p+1}$; hence $C$ is nonplanar. It lies on
+the smooth quadric
+$$
+Q=\{X_0X_3=X_1X_2\}.
+$$
+
+A line meeting $C$ in three distinct points meets $Q$ in three distinct
+points, so it must lie on $Q$. Write a point of $Q$ as a rank-one matrix
+$$
+\begin{pmatrix}X_0&X_1\\X_2&X_3\end{pmatrix}
+=
+\begin{pmatrix}s^p\\t^p\end{pmatrix}
+\begin{pmatrix}s&t\end{pmatrix}.
+$$
+Each ruling line fixes one of the two projective factors. On $C$, both
+$[s:t]$ and $[s^p:t^p]$ determine a unique geometric point: the second
+map is injective because $k$ is a field of characteristic $p$. Thus every
+ruling line meets $C$ at only one distinct point. No line contains three
+distinct points of $C$.
+
+Since $p+1\ge4$ and $C$ has genus $0$, it is none of the four curves in the
+exercise. This disproves the unrestricted converse.
 
 :::
 
@@ -425,7 +480,11 @@ This establishes the stated conditional conclusion.
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove that the four stated curves have no multisecants. Step [](#tangent-char-zero){.pf-ref} supplies the extra hypothesis of step [](#s5){.pf-ref} in characteristic zero, so steps [](#s4){.pf-ref} and [](#s12){.pf-ref} prove the converse there. The stated converse in positive characteristic still needs a separate argument.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove that
+the four stated curves have no multisecants. Steps [](#s4){.pf-ref} and
+[](#s13){.pf-ref} prove the characteristic-zero converse.
+Step [](#positive-char-counterexample){.pf-ref} disproves its unrestricted
+form.
 
 :::
 
