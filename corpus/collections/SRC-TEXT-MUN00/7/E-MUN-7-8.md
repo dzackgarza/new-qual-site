@@ -42,22 +42,28 @@ For the opposite direction, use the axiom of choice to choose, for every nonempt
 $$
 e_S:\ZZ_+\to S.
 $$
-(For $S=\varnothing$, choose a fixed dummy sequence.) Since the range of $e_S$ is exactly $S$, distinct subsets give distinct chosen sequences of elements. Thus
+Fix one sequence $e_\varnothing\in(X^\omega)^\omega$. Since the range of
+$e_S$ is exactly $S$, distinct nonempty subsets give distinct chosen
+sequences of elements. Tag the empty subset separately. Thus
 $$
-S\mapsto e_S
+S\mapsto
+\begin{cases}
+(0,e_\varnothing),&S=\varnothing,\\
+(1,e_S),&S\ne\varnothing
+\end{cases}
 $$
 defines an injection
 $$
-\mathcal B\hookrightarrow (X^\omega)^\omega.
+\mathcal B\hookrightarrow X\times(X^\omega)^\omega.
 $$
 
 Now
 $$
-(X^\omega)^\omega
-\cong X^{\ZZ_+\times\ZZ_+}
+X\times(X^\omega)^\omega
+\cong X^{\{0\}\sqcup(\ZZ_+\times\ZZ_+)}
 \cong X^\omega,
 $$
-because $\ZZ_+\times\ZZ_+$ is countably infinite. Hence there is an injection $\mathcal B\to X^\omega$. Schroeder--Bernstein gives
+because $\{0\}\sqcup(\ZZ_+\times\ZZ_+)$ is countably infinite. Hence there is an injection $\mathcal B\to X^\omega$. Schroeder--Bernstein gives
 $$
 \boxed{\cardinality{\mathcal B}=\cardinality{X^\omega}}.
 $$
