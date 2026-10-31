@@ -20,6 +20,10 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-corrected
+  by: gpt-6.1-sol
+  date: 2026-10-31
+  note: 'The printed fixed-point claim needs X nonempty; the empty metric space is complete and has no fixed point.'
 ---
 
 ::: {.exercise}
@@ -31,7 +35,7 @@ d(f(x), f(y)) \leq \alpha \, d(x, y)
 $$
 
 for all $x, y \in X$.
-Show that if $f$ is a contraction of a complete metric space, then there is a unique point $x \in X$ such that $f(x) = x$.
+Show that if $f$ is a contraction of a nonempty complete metric space, then there is a unique point $x \in X$ such that $f(x) = x$.
 Compare [[E-70TGS]].
 :::
 
