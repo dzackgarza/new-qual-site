@@ -21,8 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that any two fields with $27 = 3^3$ elements are **isomorphic**:
-$$F_1 \cong F_2 \cong \FF_{27}.$$
+Prove that any two fields with $27$ elements are isomorphic.
 :::
 
 ::: {.solution}
