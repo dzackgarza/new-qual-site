@@ -22,60 +22,35 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used the barycentric-coordinate metric to show every orbit is uniformly separated at each point, then chose a small translate-disjoint neighborhood.
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The book says Delta-complex; the stored statement said complex.
+- event: solution-reviewed
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The barycentric l1 metric does not describe a Delta-complex, whose simplices need not be determined by their vertices, and need not give its topology; rewritten with open stars in the barycentric subdivision.
 ---
 
 ::: {.problem}
-Suppose a group $G$ acts simplicially on a complex $X$, where "simplicially" means that each element of $G$ takes each simplex of $X$ onto another simplex by a linear homeomorphism.
+Suppose a group $G$ acts simplicially on a $\Delta$-complex $X$, where "simplicially" means that each element of $G$ takes each simplex of $X$ onto another simplex by a linear homeomorphism.
 If the action is free, show it is a covering space action.
 :::
 
 ::: {.solution}
-Realize $X$ in barycentric coordinates. Thus every point has the form
-$$
-x=\sum_{v\in S}\lambda_v v,
-\qquad
-\lambda_v>0,
-\qquad
-\sum_{v\in S}\lambda_v=1,
-$$
-with finite support $S$, and use the standard $\ell^1$ metric
-$$
-d(x,y)=\sum_v\abs{x_v-y_v}.
-$$
-A simplicial automorphism permutes vertices, hence preserves this metric.
+Recall that the action is a covering space action when every point $x\in X$ has a neighborhood $U$ with $g_1U\cap g_2U=\varnothing$ for $g_1\ne g_2$, equivalently $U\cap gU=\varnothing$ for $g\ne1$.
+Let $X'$ be the barycentric subdivision of $X$.
+Each simplex of $X'$ lies in a simplex of $X$, and its vertices are the barycenters of faces of that simplex of pairwise distinct dimensions.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-For every $x\in X$ there is a number $\delta_x>0$ such that
-$$
-d(x,gx)\ge\delta_x
-\qquad
-\text{for all }g\ne1.
-$$
+$G$ acts simplicially on $X'$, and each $g\in G$ preserves the dimension of the face whose barycenter a vertex of $X'$ is.
 
 ::: pf-proof
 
-Let $S$ be the finite support of $x$ and put
-$$
-m=\min_{v\in S}\lambda_v>0.
-$$
-If $gS\ne S$, choose $v\in S$ such that either $gv\notin S$ or, equivalently after replacing $g$ by $g^{-1}$ if needed, some positive coordinate of $x$ is moved outside $S$.
-Then
-$$
-d(x,gx)\ge m.
-$$
-
-It remains to consider elements with $gS=S$.
-Their restrictions to $S$ are permutations of the finite set $S$, so only finitely many points $gx$ can arise.
-The action is free, hence none of these points equals $x$ when $g\ne1$.
-The finite set of positive distances
-$$
-\{d(x,gx):gS=S,\ g\ne1\}
-$$
-therefore has a positive minimum when nonempty.
-Taking the minimum of this number and $m$ gives the required $\delta_x$.
+A linear homeomorphism of simplices carries faces to faces of the same dimension and barycenters to barycenters, so it carries the barycentric subdivision of a simplex linearly onto the barycentric subdivision of its image.
 
 :::
 
@@ -83,32 +58,15 @@ Taking the minimum of this number and $m$ gives the required $\delta_x$.
 
 ::: {.pf-step #s2}
 
-If
-$$
-U=B(x,\delta_x/3),
-$$
-then
-$$
-gU\cap U=\varnothing
-\qquad
-(g\ne1).
-$$
+For a vertex $w$ of $X'$ let $\operatorname{st}(w)$ be its open star, the union of the open simplices of $X'$ having $w$ as a vertex.
+Then $\operatorname{st}(w)$ is open, $g\operatorname{st}(w)=\operatorname{st}(gw)$, the open stars cover $X$, and if $\operatorname{st}(w)\cap\operatorname{st}(w')\ne\varnothing$ then $w$ and $w'$ are vertices of one simplex of $X'$.
 
 ::: pf-proof
 
-Suppose $y\in U\cap gU$.
-Then $y=gz$ for some $z\in U$.
-Since $g$ is an isometry,
-$$
-d(gx,y)=d(x,z)<\delta_x/3.
-$$
-Also $d(x,y)<\delta_x/3$, so
-$$
-d(x,gx)
-\le d(x,y)+d(y,gx)
-<2\delta_x/3,
-$$
-contradicting step [](#s1){.pf-ref}.
+The complement of $\operatorname{st}(w)$ is the union of the closed simplices of $X'$ not having $w$ as a vertex, and its intersection with each closed simplex is a union of faces, hence closed; so $\operatorname{st}(w)$ is open in the weak topology.
+The identity $g\operatorname{st}(w)=\operatorname{st}(gw)$ follows from step [](#s1){.pf-ref}.
+Every point lies in some open simplex, which has a vertex, so the stars cover $X$.
+A point of $\operatorname{st}(w)\cap\operatorname{st}(w')$ lies in a unique open simplex, and that simplex has both $w$ and $w'$ as vertices.
 
 :::
 
@@ -116,26 +74,14 @@ contradicting step [](#s1){.pf-ref}.
 
 ::: {.pf-step #s3}
 
-The quotient map
-$$
-q:X\to X/G
-$$
-is evenly covered over $q(U)$.
+If $g\ne1$ and $w$ is a vertex of $X'$, then $\operatorname{st}(w)\cap g\operatorname{st}(w)=\varnothing$.
 
 ::: pf-proof
 
-The saturation of $U$ is the disjoint union
-$$
-q^{-1}(q(U))=\coprod_{g\in G}gU
-$$
-by step [](#s2){.pf-ref}.
-For each $g$, the restriction
-$$
-q:gU\to q(U)
-$$
-is bijective, since two points of one translate cannot lie in the same orbit unless some nontrivial translate of $U$ meets $U$.
-The quotient map is open, so each restriction is a homeomorphism.
-Hence $q(U)$ is evenly covered.
+Suppose the intersection is nonempty.
+By step [](#s2){.pf-ref}, $w$ and $gw$ are vertices of one simplex of $X'$.
+By step [](#s1){.pf-ref} they are barycenters of faces of the same dimension, and two distinct vertices of a simplex of $X'$ are barycenters of faces of different dimensions, so $gw=w$.
+Then $g$ fixes the point $w$, and freeness gives $g=1$, a contradiction.
 
 :::
 
@@ -143,11 +89,12 @@ Hence $q(U)$ is evenly covered.
 
 ::: pf-step
 
-Therefore a free simplicial action is a covering space action.
+Hence the action is a covering space action.
 
 ::: pf-proof
 
-Every point $x$ has a neighborhood $U$ satisfying steps [](#s2){.pf-ref} and [](#s3){.pf-ref} gives the covering-space condition for the orbit map.
+Given $x\in X$, choose by step [](#s2){.pf-ref} a vertex $w$ of $X'$ with $x\in\operatorname{st}(w)$ and put $U=\operatorname{st}(w)$.
+For $g_1\ne g_2$, step [](#s3){.pf-ref} applied to $g_1^{-1}g_2$ gives $U\cap g_1^{-1}g_2U=\varnothing$, so $g_1U\cap g_2U=\varnothing$.
 
 :::
 

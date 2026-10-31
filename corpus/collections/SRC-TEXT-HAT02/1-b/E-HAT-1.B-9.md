@@ -22,10 +22,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Constructed an N-sheeted graph-of-spaces cover using repeated universal covers of vertex and edge classifying spaces; the edge-boundary multiplicities match by the subgroup-index formula, and each component upstairs has free fundamental group.
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The book writes K Gamma for the graph of spaces; the stored statement had K.
 ---
 
 ::: {.problem}
-If $\Gamma$ is a finite graph of finite groups with injective edge homomorphisms, show that the graph product of the groups has a free subgroup of finite index by constructing a suitable finite-sheeted covering space of $K$ from universal covers of the mapping cylinders in $K$.
+If $\Gamma$ is a finite graph of finite groups with injective edge homomorphisms, show that the graph product of the groups has a free subgroup of finite index by constructing a suitable finite-sheeted covering space of $K\Gamma$ from universal covers of the mapping cylinders in $K\Gamma$.
 [The converse is also true: A finitely generated group having a free subgroup of finite index is isomorphic to such a graph product. For a proof of this see [Scott & Wall 1979], Theorem 7.3.]
 :::
 

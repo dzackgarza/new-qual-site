@@ -22,11 +22,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Computed the HNN presentation and described the universal cover as the Bass--Serre tree of vertex lines and edge strips, then straightened the line coordinates to obtain T times R.
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The book writes K Gamma for the graph of spaces; the stored statement had K.
 ---
 
 ::: {.problem}
 Consider the graph of groups having one vertex, $\ZZ$, and one edge, the map $\ZZ \to \ZZ$ that is multiplication by 2, realized by the 2-sheeted covering space $S^1 \to S^1$.
-Show that $\pi_1(K\Gamma)$ has presentation $\langle a, b \mid bab^{-1}a^{-2} \rangle$ and describe the universal cover of $K$ explicitly as a product $T \times \RR$ with $T$ a tree.
+Show that $\pi_1(K\Gamma)$ has presentation $\langle a, b \mid bab^{-1}a^{-2} \rangle$ and describe the universal cover of $K\Gamma$ explicitly as a product $T \times \RR$ with $T$ a tree.
 [The group $\pi_1(K\Gamma)$ is the first in a family of groups called Baumslag–Solitar groups, having presentations of the form $\langle a, b \mid ba^mb^{-1}a^{-n} \rangle$. These are HNN extensions $\ZZ *_\ZZ$.]
 :::
 
