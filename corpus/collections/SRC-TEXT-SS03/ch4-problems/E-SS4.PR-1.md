@@ -82,3 +82,7 @@ $$
 $$
 for suitable constants $A,C>0$.
 :::
+
+::: remark
+The book writes the bound as $\abs{f(z)} \le Ae^{a\abs{z}^q}$, with the same $a$ as in the decay hypothesis. That constant is not correct in general: for $\hat f(\xi) = e^{-a\abs{\xi}^p}$, the exponent of $\abs{f(iy)}$ grows like $C\abs{y}^q$ with $C$ depending on $a$ and $p$. The statement above therefore asks for some constant $C$.
+:::
