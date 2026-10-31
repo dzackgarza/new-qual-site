@@ -9,17 +9,17 @@ classification:
 relations: []
 review: draft
 completion: complete
-provenance: [assets/attachments/solns7.pdf]
+provenance: []
 source:
   source_kind: homework
   area: algebra
   problems:
-  - P-MT5824-7-01
-  - P-MT5824-7-02
-  - P-MT5824-7-03
-  - P-MT5824-7-04
-  - P-MT5824-7-05
-  - P-MT5824-7-06
+    - P-MT5824-7-01
+    - P-MT5824-7-02
+    - P-MT5824-7-03
+    - P-MT5824-7-04
+    - P-MT5824-7-05
+    - P-MT5824-7-06
   date: {kind: year, year: 2010}
 ---
 
