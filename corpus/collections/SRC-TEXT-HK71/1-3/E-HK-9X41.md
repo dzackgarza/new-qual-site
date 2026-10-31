@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HK-9X41
 kind: problem
-title: Solutions of $AX = cX$ for eigenvalue equations
+title: Solutions of $AX = 2X$ and $AX = 3X$ for a $3 \times 3$ matrix
 classification:
   areas:
   - algebra
@@ -30,7 +30,7 @@ $$
 A = \left[ \begin{array}{r r r} 6 & - 4 & 0 \\ 4 & - 2 & 0 \\ - 1 & 0 & 3 \end{array} \right]
 $$
 
-find all solutions of AX = 2X and all solutions of AX = 3X. (The symbol cX denotes the matrix each entry of which is c times the corresponding entry of X.)
+find all solutions of $AX = 2X$ and all solutions of $AX = 3X$. (The symbol $cX$ denotes the matrix each entry of which is c times the corresponding entry of X.)
 :::
 
 ::: {.solution}

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-Consider the system of equations AX = 0 where
+Consider the system of equations $AX = 0$ where
 
 $$
 A = \left[ \begin{array}{c c} a & b \\ c & d \end{array} \right]
