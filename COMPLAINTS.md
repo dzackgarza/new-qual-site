@@ -54,6 +54,24 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the card now requires $L\ne0$, with a `source-corrected` audit note pointing here; the solution proves both directions of the corrected statement.
   Nothing waits on the sheet's author.
 
+### TAMU Spring 2015 problem 10 states (i) without the closedness of $Y$
+
+- **Object and need:** `P-TAMURAS15-10` in `SRC-TAMU-RA-SPRING-2015`, whose source is `assets/attachments/j15.pdf`.
+  The problem asks, for a normed space $X$, a subspace $Y$, a norm $\norm{\cdot}_1$ on $Y$ with $\frac1K\norm y_1\le\norm y\le K\norm{y}_1$, and
+  $S=\{\varphi\in X^*:\abs{\varphi(y)}\le\norm y_1\ (y\in Y),\ \abs{\varphi(x)}\le K\norm x\ (x\in X)\}$, that $\norm x_2=\sup_{\varphi\in S}\abs{\varphi(x)}$ be a norm.
+
+- **Observed evidence:** statement (i) fails when $Y$ is not closed.
+  Take $X=C[0,1]$ with the sup norm, $Y$ the polynomials, and $\norm{y}_1=2\norm y$, so the bracket holds with $K=2$.
+  Every $\varphi\in S$ is bounded with $\abs{\varphi(x)}\le2\norm x$ on $X$ and vanishes on the dense subspace $Y$, hence is the zero functional; so $S=\{0\}$ and $\norm x_2=0$ for every $x$, including $x\ne0$.
+  The source prints only "with a subspace $Y$" (`j15.pdf`, problem 10), so the defect is in the source, not the transcription.
+  With $Y$ closed the statement is true, and the card's proof of (i) uses closedness exactly at the point where it needs $\operatorname{dist}(x,Y)>0$.
+
+- **Impact and owner:** statement (i) of `P-TAMURAS15-10`; parts (ii) and (iii) hold either way, since their arguments use only Hahn--Banach on $Y$ and the equivalence of the two norms on $Y$.
+
+- **Uncertainty:** verified, with the counterexample above; the remaining question is only whether the exam intended the closed case, which the printed text does not say.
+
+- **Repair:** the card's statement now says "a closed subspace $Y$", with a `source-corrected` audit note carrying the counterexample, and the card is solved.
+
 ### UCSD covering-spaces subgroup matching card holds no recoverable posed task
 
 - **Object and need:** `P-O2J6S` in `SRC-UNSORTED-TOPOLOGY`.
