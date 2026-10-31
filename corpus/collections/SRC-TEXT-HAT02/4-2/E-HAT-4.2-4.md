@@ -40,11 +40,10 @@ $$
 \Phi([f])=([r_kf])_k.
 $$
 
-First let $i<n$. Given $f:S^i\to X$, compactness of the domain and cellular approximation for this shrinking CW-type union allow $f$ to be homotoped into the $i$-skeleton. Each $S_k^n$ has no positive cells below dimension $n$, so this skeleton is just the common basepoint. Therefore
+The shrinking union has the metric topology of the $n$-dimensional Hawaiian earring; cellular approximation for a CW complex does not apply to it. For $n\ge2$, [Eda and Kawamura, Corollary 1.2](https://people.math.rochester.edu/faculty/doug/otherpapers/eda-kawamura1.pdf) proves that this space is $(n-1)$-connected. For $n=1$, the required assertion concerns only $\pi_0$, and $X$ is path-connected. Therefore
 $$
 \boxed{\pi_i(X)=0\qquad(i<n).}
 $$
-Equivalently, one may contract each compact image successively off the $n$-spheres since $S^i\to S^n$ is nullhomotopic for $i<n$, with continuity at the common point guaranteed by the shrinking diameters.
 
 To prove surjectivity of $\Phi$, choose arbitrary classes
 $$
