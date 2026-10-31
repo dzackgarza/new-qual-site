@@ -63,17 +63,14 @@ The action is a covering space action.
 ::: pf-proof
 
 Fix $z=(x,y)\in X$.
-If $x\ne0$, then the first coordinates of $\varphi^n(z)$ are $2^nx$, so only finitely many orbit points lie in any compact horizontal annulus
-$$
-c\le \abs{u}\le C.
-$$
-Choose a small rectangle $U$ about $z$ contained in such an annulus and disjoint from the finitely many distinct points $\varphi^n(z)$ that remain in a slightly larger rectangle.
-Shrinking $U$ if necessary gives
+If $x\ne0$, choose an interval $I$ about $x$, lying on the same side of zero, such that the ratio of its largest to its smallest absolute value is less than $2$.
+Then $2^nI\cap I=\varnothing$ for every nonzero integer $n$.
+Any open rectangle $U\subseteq X$ about $z$ whose first-coordinate interval is $I$ therefore satisfies
 $$
 \varphi^n(U)\cap U=\varnothing
 \qquad(n\ne0).
 $$
-The case $y\ne0$ is identical using the second coordinate $2^{-n}y$.
+If $x=0$, then $y\ne0$, and the same construction uses the second-coordinate interval and the dilation $2^{-n}$.
 Thus every point has a neighborhood disjoint from all its nontrivial translates.
 
 :::
@@ -175,29 +172,29 @@ Thus the two orbit classes cannot be separated.
 
 ::: pf-step
 
-Each open quadrant is invariant under the action, and its quotient is homeomorphic to $S^1\times\RR$.
+The two components of the complement of the $x$-axis and the two components of the complement of the $y$-axis are invariant under the action. Each has quotient homeomorphic to $S^1\times\RR$, and their four images cover $X/\ZZ$.
 
 ::: pf-proof
 
-On any quadrant introduce logarithmic coordinates
+On either half-plane $y>0$ or $y<0$, the coordinates
 $$
-u=\log\abs{x},\qquad v=\log\abs{y}.
+u=\log\abs{y},\qquad v=xy
 $$
-Then $\varphi$ becomes translation by
+give a homeomorphism with $\RR^2$: from $(u,v)$ one recovers $y=\pm e^u$ with the chosen sign and $x=v/y$.
+In these coordinates $\varphi$ acts by
 $$
-(u,v)\longmapsto(u+\log2,v-\log2).
+(u,v)\longmapsto(u-\log2,v).
 $$
-Use coordinates
+Thus the quotient of either half-plane is
 $$
-s=u+v,\qquad r=u-v.
+ (\RR/\log2\,\ZZ)\times\RR\cong S^1\times\RR.
 $$
-The action fixes $s$ and translates $r$ by $2\log2$.
-Therefore the quotient is
+On either half-plane $x>0$ or $x<0$, use instead
 $$
-\RR_s\times(\RR_r/2\log2\,\ZZ)
-\cong\RR\times S^1.
+u=\log\abs{x},\qquad v=xy.
 $$
-The four quadrants are precisely the complementary components of the union of the two coordinate axes, so their images give the four stated $S^1\times\RR$ subspaces of the orbit space.
+These coordinates again identify the half-plane with $\RR^2$, and $\varphi$ sends $(u,v)$ to $(u+\log2,v)$, giving the same quotient.
+Every point of $X$ has $x\ne0$ or $y\ne0$, so these four invariant half-planes cover $X$. Their orbit images therefore cover $X/\ZZ$.
 
 :::
 
