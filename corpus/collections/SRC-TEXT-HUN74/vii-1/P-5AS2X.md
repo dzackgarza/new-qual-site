@@ -29,7 +29,7 @@ For $1 \le i, j \le n$ let $E_{i,j} \in M_n(R)$ be the matrix unit with $1_R$ in
 
 ::: {.pf-step #s1}
 
-(a) $Z(M_n(R)) = \{r I_n : r \in Z(R)\}$.
+(a) $Z(M_n(R)) = \{r I_n \st r \in Z(R)\}$.
 
 ::: pf-proof
 
@@ -73,7 +73,7 @@ For $B = (b_{i, j}) \in M_n(R)$, $(r I_n B)_{i, j} = r b_{i, j} = b_{i, j} r = (
 
 ::: pf-qed
 
-A central matrix commutes with every $E_{i,j}$, so steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give $Z(M_n(R))\subseteq\{rI_n : r\in Z(R)\}$; step [](#s1-3){.pf-ref} gives the reverse inclusion.
+A central matrix commutes with every $E_{i,j}$, so steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give $Z(M_n(R))\subseteq\{rI_n \st r\in Z(R)\}$; step [](#s1-3){.pf-ref} gives the reverse inclusion.
 
 :::
 

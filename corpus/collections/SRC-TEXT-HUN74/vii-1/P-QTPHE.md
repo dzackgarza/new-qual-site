@@ -9,7 +9,6 @@ classification:
   topics:
   - Matrices
   - Canonical Forms
-  - Smith Normal Form
 relations: []
 review: draft
 audit:
@@ -26,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that similarity is an equivalence relation on $M_n(R)$, and \*equivalence\* is an equivalence relation on $M_{m\times n}(R)$.
+Show that similarity is an equivalence relation on $M_n(R)$, and equivalence is an equivalence relation on $M_{m\times n}(R)$.
 :::
 
 ::: {.solution}
@@ -34,13 +33,13 @@ Recall that $A,B\in M_n(R)$ are similar if
 $$
 B=P^{-1}AP
 $$
-for some $P\in\operatorname{GL}_n(R)$, and that
+for some $P\in\GL_n(R)$, and that
 $A,B\in M_{m\times n}(R)$ are equivalent if
 $$
 B=PAQ
 $$
-for some $P\in\operatorname{GL}_m(R)$ and
-$Q\in\operatorname{GL}_n(R)$.
+for some $P\in\GL_m(R)$ and
+$Q\in\GL_n(R)$.
 
 ::: pf
 
@@ -142,11 +141,11 @@ B=PAQ
 \qquad\text{and}\qquad
 C=UBV,
 $$
-with $P,U\in\operatorname{GL}_m(R)$ and $Q,V\in\operatorname{GL}_n(R)$, then
+with $P,U\in\GL_m(R)$ and $Q,V\in\GL_n(R)$, then
 $$
 C=(UP)A(QV).
 $$
-Both $UP\in\operatorname{GL}_m(R)$ and $QV\in\operatorname{GL}_n(R)$, so
+Both $UP\in\GL_m(R)$ and $QV\in\GL_n(R)$, so
 $C$ is equivalent to $A$.
 
 :::
