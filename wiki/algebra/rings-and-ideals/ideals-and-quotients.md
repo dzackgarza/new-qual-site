@@ -70,7 +70,7 @@ The [[D-2IO6Q|Jacobson radical]] $J(R)$ is the intersection of the maximal ideal
 
 [[E-JAPBK]]
 
-[[P-AMD-QBEEJKCX]]
+[[P-C2WAH]]
 
 [[D-2IO6Q]]
 
