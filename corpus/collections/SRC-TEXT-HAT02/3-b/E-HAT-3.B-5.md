@@ -101,7 +101,7 @@ The formula is bilinear and compatible with the coboundary maps.
 
 ::: pf-proof
 
-if $\varphi$ is a cocycle, then the resulting cochain $e^i \mapsto \varphi(e^i \times e^j)$ is a cocycle (its coboundary vanishes since $\delta\varphi = 0$ and $\partial e^j = 0$ for a cycle $e^j$).
+Extend the displayed formula linearly to a cellular cycle $d$ in $Y$. If $\varphi$ is a cocycle, then the resulting cochain $c\mapsto\varphi(c\times d)$ is a cocycle: the product boundary formula and $\partial d=0$ give $\varphi(\partial c\times d)=\varphi(\partial(c\times d))=0$.
 
 :::
 
@@ -130,5 +130,11 @@ Steps [](#s2){.pf-ref} and [](#s4){.pf-ref}.
 :::
 
 :::
+
+The formulas also respect changes of representatives. For the first product, if $\varphi=\delta\psi$ and $z$ is a cellular cycle of total degree $n$, the product boundary formula gives $z/\varphi=(-1)^{n-j+1}\partial(z/\psi)$, so its homology class is zero. If $z=\partial w$ and $\varphi$ is a cocycle, then $z/\varphi=\partial(w/\varphi)$. For the second product, if $d=\partial e$ and $\varphi$ is a cocycle, then for a cell $c$ of degree $n-j$,
+$$
+\varphi(c\times\partial e)=(-1)^{n-j+1}\varphi(\partial c\times e),
+$$
+so $\varphi/d$ is a coboundary. If $\varphi=\delta\theta$ and $d$ is a cycle, then $\varphi/d=\delta(\theta/d)$. Thus both formulas descend to the stated homology and cohomology products.
 
 :::
