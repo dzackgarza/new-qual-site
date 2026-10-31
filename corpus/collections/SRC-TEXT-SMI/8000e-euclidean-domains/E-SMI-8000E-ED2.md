@@ -18,6 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
+Assume $R$ is a Euclidean domain.
 Prove every submodule of $R^m$ is finitely generated, and in fact isomorphic to $R^n$ where $n$ is at most equal to $m$.
 [Hint: read the proof for $\ZZ$.]
 :::
