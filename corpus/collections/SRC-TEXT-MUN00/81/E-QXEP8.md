@@ -10,6 +10,11 @@ classification:
   - Covering Transformations
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: Codex
+  date: 2026-10-31
+  note: The printed homeomorphism criterion omits orientation reversal. Complex conjugation in the second coordinate gives L(n,k) homeomorphic to L(n,-k), so both congruences require a possible minus sign.
 ---
 
 ::: {.exercise}
@@ -25,7 +30,7 @@ $$
 The orbit space $S^3/G$ is called the lens space $L(n, k)$.
 
 (b) Show that if $L(n, k)$ and $L(n', k')$ are homeomorphic, then $n = n'$.
-[It is a theorem that $L(n, k)$ and $L(n', k')$ are homeomorphic if and only if $n = n'$ and either $k \equiv k' \pmod{n}$ or $kk' \equiv 1 \pmod{n}$. The proof is decidedly nontrivial.]
+[It is a theorem that $L(n, k)$ and $L(n', k')$ are homeomorphic if and only if $n = n'$ and either $k \equiv \pm k' \pmod{n}$ or $kk' \equiv \pm 1 \pmod{n}$. The proof is decidedly nontrivial.]
 
 (c) Show that $L(n, k)$ is a compact 3-manifold.
 :::
