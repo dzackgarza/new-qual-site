@@ -6,7 +6,9 @@ title: Antiderivative of $\frac{x+2}{x^3-x^2+2x-2}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integrals
+  - Partial Fractions
 relations: []
 review: draft
 ---

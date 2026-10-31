@@ -6,21 +6,19 @@ title: Counterexamples for the alternating series test and for $\sum b_n$ versus
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Series
+  - Counterexamples
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-Find a sequence $(a_{n})$ such that $a_{n} > 0$ for all $n \in \NN$ and $a_{n} \to 0$ but
-$$
-\sum_{n=1}^{\infty} (-1)^{n} a_{n} \text{ diverges}.
-$$
-[Note: this shows that the assumption that $a_{n}$ is decreasing is necessary in the Alternating Series Test.] Find a sequence $(b_{n})$ such that
-$$
-\sum_{n=1}^{\infty} b_{n} \text{ converges while } \sum_{n=1}^{\infty} b_{n}^{2} \text{ diverges}.
-$$
-Is it possible to choose $(b_{n})$ so that $\sum_{n=1}^{\infty} b_{n}$ converges absolutely while $\sum_{n=1}^{\infty} b_{n}^{2}$ diverges?
+(a) Find a sequence $(a_{n})$ such that $a_{n} > 0$ for all $n \in \NN$ and $a_{n} \to 0$ but $\sum_{n=1}^{\infty} (-1)^{n} a_{n}$ diverges. This shows that the hypothesis that $a_{n}$ is decreasing is necessary in the Alternating Series Test.
+
+(b) Find a sequence $(b_{n})$ such that $\sum_{n=1}^{\infty} b_{n}$ converges while $\sum_{n=1}^{\infty} b_{n}^{2}$ diverges.
+
+(c) Is it possible to choose $(b_{n})$ so that $\sum_{n=1}^{\infty} b_{n}$ converges absolutely while $\sum_{n=1}^{\infty} b_{n}^{2}$ diverges?
 :::
 
 ::: {.solution}

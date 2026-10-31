@@ -6,7 +6,9 @@ title: Integral of $\frac{1}{1+\tan^{2020}x}$ over $[0,\pi/2]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integrals
+  - Symmetry
 relations: []
 review: draft
 ---

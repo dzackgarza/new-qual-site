@@ -6,16 +6,19 @@ title: Convergence of $\sum(1-\tanh n)$ and $\sum(\frac\pi2-\arctan n)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Series
+  - Convergence
 relations: []
 review: draft
 ---
 
 ::: {.problem}
 Decide whether the following series converge or diverge:
-$$
-\text{(a)}\ \sum_{n=1}^{\infty} \left[ 1 - \tanh(n) \right], \qquad \text{(b)}\ \sum_{n=1}^{\infty} \left( \frac{\pi}{2} - \arctan(n) \right).
-$$
+
+(a) $\displaystyle\sum_{n=1}^{\infty} \left[ 1 - \tanh(n) \right]$;
+
+(b) $\displaystyle\sum_{n=1}^{\infty} \left( \frac{\pi}{2} - \arctan(n) \right)$.
 :::
 
 ::: {.solution}

@@ -6,7 +6,9 @@ title: Convergence of $\sum\frac{1}{\log(n!)}$ and $\sum\frac{1}{(\log n)^{\log 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Series
+  - Convergence
 relations: []
 review: draft
 ---

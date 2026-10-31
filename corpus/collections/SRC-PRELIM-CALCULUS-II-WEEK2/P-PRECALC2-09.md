@@ -6,7 +6,9 @@ title: Integral of $\frac{\log t}{1+t^2}$ over $(0,\infty)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Improper Integrals
+  - u-Substitution
 relations: []
 review: draft
 ---

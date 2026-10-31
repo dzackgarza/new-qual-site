@@ -6,7 +6,9 @@ title: Convergence and divergence of infinite products
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Infinite Products
+  - Series
 relations: []
 review: draft
 audit:
@@ -31,13 +33,13 @@ $$
 \lim_{N\to\infty}\prod_{n=1}^{N}a_n=L.
 $$
 Otherwise the product is said to diverge to zero or diverge to $+\infty$ if the limit is zero or $+\infty$, respectively.
-Consider the infinite products
-$$
-\text{(a) }\prod_{n=1}^{\infty}\left(1+\frac1{n^2}\right),\qquad
-\text{(b) }\prod_{n=1}^{\infty}\left(1+\frac1n\right),\qquad
-\text{(c) }\prod_{n=3}^{\infty}\left(1-\frac1{\log n}\right).
-$$
-Show that (a) converges, (b) diverges to $+\infty$, and (c) diverges to $0$.
+Show that:
+
+(a) $\displaystyle\prod_{n=1}^{\infty}\left(1+\frac1{n^2}\right)$ converges;
+
+(b) $\displaystyle\prod_{n=1}^{\infty}\left(1+\frac1n\right)$ diverges to $+\infty$;
+
+(c) $\displaystyle\prod_{n=3}^{\infty}\left(1-\frac1{\log n}\right)$ diverges to $0$.
 :::
 
 ::: {.solution}

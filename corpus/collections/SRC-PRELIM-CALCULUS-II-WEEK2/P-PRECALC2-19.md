@@ -6,7 +6,9 @@ title: First and second derivatives along a parametric curve
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Parametric Curves
+  - Differentiation
 relations: []
 review: draft
 ---

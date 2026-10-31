@@ -6,7 +6,9 @@ title: Convergence of $\sum_n 1/(3\sqrt{3}\sqrt[3]{3}\cdots\sqrt[n]{3})$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Series
+  - Convergence
 relations: []
 review: draft
 audit:
@@ -19,7 +21,7 @@ audit:
 ::: {.problem}
 Does the series
 $$
-\frac{1}{3} + \frac{1}{3\sqrt{3}} + \frac{1}{3\sqrt{3}\sqrt[3]{3}} + \cdots + \frac{1}{3\sqrt{3}\sqrt[3]{3} + \cdots + \sqrt[n]{3}} + \cdots
+\frac{1}{3} + \frac{1}{3\sqrt{3}} + \frac{1}{3\sqrt{3}\sqrt[3]{3}} + \cdots + \frac{1}{3\sqrt{3}\sqrt[3]{3} \cdots \sqrt[n]{3}} + \cdots
 $$
 converge or diverge?
 :::

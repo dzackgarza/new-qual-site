@@ -6,7 +6,9 @@ title: Integral of $\frac{\log(1+t)}{1+t^2}$ over $[0,1]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integrals
+  - Symmetry
 relations: []
 review: draft
 ---

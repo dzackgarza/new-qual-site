@@ -6,7 +6,9 @@ title: The integral $\int_0^\infty x^ne^{-x}\,dx$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Improper Integrals
+  - Integration by Parts
 relations: []
 review: draft
 ---

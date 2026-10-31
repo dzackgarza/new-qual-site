@@ -6,7 +6,9 @@ title: Convergence of $\sum\frac{1}{n^\alpha(\log n)^\beta}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Series
+  - Convergence
 relations: []
 review: draft
 ---

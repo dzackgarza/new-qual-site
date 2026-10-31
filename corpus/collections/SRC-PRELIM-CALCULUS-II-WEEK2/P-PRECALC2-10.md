@@ -6,13 +6,15 @@ title: Volume and surface area of Gabriel's horn
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Volumes of Revolution
+  - Improper Integrals
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-(Gabriel’s Horn) Let $f ( x ) = 1 / x$ , for $x \in [ 1 , \infty )$ . Find the volume and surface area of the shape which results from rotating the graph of f about the x-axis.
+(Gabriel's Horn) Let $f(x)=1/x$ for $x\in[1,\infty)$. Find the volume and surface area of the shape which results from rotating the graph of $f$ about the $x$-axis.
 :::
 
 ::: {.solution}

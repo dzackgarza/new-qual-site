@@ -6,7 +6,9 @@ title: Convergence of $\sum\frac{n!}{2^{n^2}}$ and $\sum\frac{n^{\sqrt n}}{2^n}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Series
+  - Convergence
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: Integral of $\frac{1}{x\log x}$ over $[e^{-3},e^{-2}]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integrals
+  - u-Substitution
 relations: []
 review: draft
 ---

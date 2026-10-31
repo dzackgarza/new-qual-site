@@ -6,7 +6,8 @@ title: Integral of $\frac{x^2+b^2}{x^2+a^2}$ over $[0,a]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integrals
 relations: []
 review: draft
 ---

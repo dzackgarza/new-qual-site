@@ -6,7 +6,9 @@ title: Telescoping sum $\sum_{n\ge1}\frac{m}{n(n+m)}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Series
+  - Telescoping Series
 relations: []
 review: draft
 ---

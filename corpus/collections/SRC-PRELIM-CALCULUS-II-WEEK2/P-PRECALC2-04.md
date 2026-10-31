@@ -6,7 +6,9 @@ title: Integral of $\frac{1}{\cosh t}$ over $(-\infty,x]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Improper Integrals
+  - Hyperbolic Functions
 relations: []
 review: draft
 ---

@@ -6,13 +6,15 @@ title: Arc length of the upper unit semicircle
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Arc Length
+  - Parametric Curves
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-What is the length of the curve $( x ( t ) , y ( t ) ) = ( \cos ( t ) , \sin ( t ) )$ for $0 \leq t \leq \pi ?$
+What is the length of the curve $(x(t),y(t))=(\cos t,\sin t)$ for $0\le t\le\pi$?
 :::
 
 ::: {.solution}

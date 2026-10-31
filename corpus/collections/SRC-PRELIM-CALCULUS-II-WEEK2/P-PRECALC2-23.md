@@ -6,7 +6,9 @@ title: Convergence of $\int_0^\infty\frac{dx}{1+x^4\sin^2x}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Improper Integrals
+  - Convergence
 relations: []
 review: draft
 ---
