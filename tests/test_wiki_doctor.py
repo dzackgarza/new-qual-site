@@ -5,6 +5,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import pytest
+
 from wiki_doctor import ALL, main, run
 
 
@@ -23,6 +25,11 @@ def _write(path: Path, body: str, *, order: int = 1, title: str | None = None) -
 def _findings(root: Path, name: str) -> list[str]:
     [check] = run([name], root=root)
     return check.findings
+
+
+def test_missing_wiki_is_an_error(tmp_path: Path) -> None:
+    with pytest.raises(FileNotFoundError, match="wiki"):
+        run(["empty-bodies"], root=tmp_path)
 
 
 def test_empty_bodies_are_the_stripped_body_and_not_a_discard_rule(
