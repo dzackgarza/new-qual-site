@@ -19,8 +19,6 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import cast
 
-import yaml
-
 from qualc.cli import load
 from qualc.model import (
     COLLECTION_ID_RE,
@@ -36,6 +34,7 @@ from qualc.model import (
     split_front_matter,
 )
 from qualc.pandoc_batch import PandocServer
+from qualc.publication import load_publications
 from qualc.wiki import WikiPage
 
 REPO = Path(__file__).resolve().parent.parent.parent
@@ -109,20 +108,7 @@ def check_one_exam_one_source(parsed: list[ParsedCard]) -> Check:
 
 
 def _manifest_ids(root: Path = REPO) -> set[str]:
-    ids: set[str] = set()
-    for path in (root / "publications").glob("*.yaml"):
-        text = path.read_text()
-        data = yaml.safe_load(text)
-        stack = [data]
-        while stack:
-            node = stack.pop()
-            if isinstance(node, dict):
-                stack.extend(node.values())
-            elif isinstance(node, list):
-                stack.extend(node)
-            elif isinstance(node, str):
-                ids.add(node)
-    return ids
+    return {item.ref for guide in load_publications(root / "publications") for section in guide.sections for item in section.items}
 
 
 def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path = REPO) -> set[str]:
