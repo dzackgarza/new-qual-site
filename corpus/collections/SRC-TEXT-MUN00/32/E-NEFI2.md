@@ -19,7 +19,7 @@ Show that every regular Lindelöf space is normal.
 :::
 
 ::: {.solution}
-Let $A,B\subset X$ be disjoint closed sets. Since $X$ is regular, for each $a\in A$ choose an open $U_a\ni a$ with
+Let $A,B\subset X$ be disjoint closed sets. If either is empty, $X$ and $\varnothing$ separate them. Assume both are nonempty. Since $X$ is regular, for each $a\in A$ choose an open $U_a\ni a$ with
 $$
 \overline{U_a}\cap B=\varnothing.
 $$
