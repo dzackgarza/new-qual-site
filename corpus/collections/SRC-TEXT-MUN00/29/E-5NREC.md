@@ -55,7 +55,7 @@ Since $X$ has the discrete topology, $f$ is continuous, and $f(X) = \QQ$.
 :::
 
 ::: pf-step
-The rational numbers $\QQ$ are not locally compact at any point: every compact subset of $\QQ$ has empty interior, so no point of $\QQ$ possesses a compact neighborhood.
+The rational numbers $\QQ$ are not locally compact by [[E-GO24I]].
 :::
 
 ::: pf-step
