@@ -5,7 +5,10 @@ kind: problem
 title: The dimension of a manifold is intrinsic
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Invariance of Dimension
+  - Local Homology
+  - Manifolds
 relations: []
 review: draft
 audit:

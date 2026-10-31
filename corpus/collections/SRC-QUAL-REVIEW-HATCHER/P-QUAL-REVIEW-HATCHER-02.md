@@ -5,7 +5,10 @@ kind: problem
 title: Total Hom complexes preserve chain homotopies
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Chain Complexes
+  - Chain Homotopy
+  - Kunneth Theorem
 relations: []
 review: draft
 audit:
@@ -24,19 +27,19 @@ $$
 for its total complex.
 The following facts are given:
 
-1. If $C_*$ is free, then the functor
-   $$
-   D_*\longmapsto \underline{\operatorname{Hom}}(C_*,D_*)
-   $$
-   preserves all quasi-isomorphisms.
+(i) If $C_*$ is free, then the functor
+$$
+D_*\longmapsto \underline{\operatorname{Hom}}(C_*,D_*)
+$$
+preserves all quasi-isomorphisms.
 
-2. For any $D_*$, the functor
-   $$
-   C_*\longmapsto \underline{\operatorname{Hom}}(C_*,D_*)
-   $$
-   preserves chain homotopies.
+(ii) For any $D_*$, the functor
+$$
+C_*\longmapsto \underline{\operatorname{Hom}}(C_*,D_*)
+$$
+preserves chain homotopies.
 
-Prove (2).
+Prove (ii).
 
 If
 $$
@@ -362,7 +365,7 @@ sends chain-homotopic maps to chain-homotopic maps.
 ::: pf-proof
 
 Step [](#s1-5){.pf-ref} explicitly constructs the required chain homotopy.
-This proves assertion (2) from the source.
+This proves assertion (ii) from the source.
 
 :::
 
@@ -423,7 +426,7 @@ into elementary summands representing its homology:
 
 Step [](#s1-6){.pf-ref} allows replacement of $C_*$ by this chain-homotopy equivalent
 model.
-Fact (1) from the source then allows replacement of $D_*$ by a convenient
+Fact (i) from the source then allows replacement of $D_*$ by a convenient
 quasi-isomorphic free model.
 
 For a free homology generator in degree $i$, total Hom contributes

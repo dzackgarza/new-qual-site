@@ -5,7 +5,10 @@ kind: problem
 title: A product decomposition of complex projective space has a cohomologically trivial factor
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Complex Projective Space
+  - Kunneth Theorem
+  - Cohomology Rings
 relations: []
 review: draft
 audit:

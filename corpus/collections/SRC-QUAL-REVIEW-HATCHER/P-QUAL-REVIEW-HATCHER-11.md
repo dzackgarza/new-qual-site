@@ -5,7 +5,10 @@ kind: problem
 title: Realize the Klein bottle as a quotient of the plane
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Klein Bottle
+  - Group Actions
+  - Covering Spaces
 relations: []
 review: draft
 audit:

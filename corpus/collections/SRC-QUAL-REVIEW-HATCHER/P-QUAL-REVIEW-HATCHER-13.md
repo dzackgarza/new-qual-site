@@ -5,7 +5,10 @@ kind: problem
 title: The figure-eight is not a retract of the torus
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Retractions
+  - Cup Product
+  - Torus
 relations: []
 review: draft
 audit:

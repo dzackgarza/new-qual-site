@@ -5,7 +5,10 @@ kind: problem
 title: Cohomological matrices of homeomorphisms of a product of even-dimensional spheres
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Cohomology Rings
+  - Kunneth Theorem
+  - Homeomorphisms
 relations: []
 review: draft
 audit:

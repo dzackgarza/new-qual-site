@@ -5,7 +5,10 @@ kind: problem
 title: A unital multiplication on a positive-dimensional sphere forces odd dimension
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - H-Spaces
+  - Cohomology Rings
+  - Spheres
 relations: []
 review: draft
 audit:

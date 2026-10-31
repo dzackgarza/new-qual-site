@@ -5,7 +5,10 @@ kind: problem
 title: Covering-space existence among spheres and the torus
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Covering Spaces
+  - Euler Characteristic
+  - Spheres
 relations: []
 review: draft
 audit:

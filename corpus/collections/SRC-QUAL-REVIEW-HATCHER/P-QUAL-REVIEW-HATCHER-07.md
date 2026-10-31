@@ -5,7 +5,10 @@ kind: problem
 title: Classify a circular chain of tori with two links replaced by projective planes
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Classification of Surfaces
+  - Euler Characteristic
+  - Nonorientable Surfaces
 relations: []
 review: draft
 audit:

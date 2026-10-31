@@ -5,7 +5,10 @@ kind: problem
 title: Homology and cohomology of twice-punctured real projective space
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Real Projective Space
+  - Homology
+  - Cohomology
 relations: []
 review: draft
 audit:

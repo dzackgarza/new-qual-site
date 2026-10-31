@@ -5,7 +5,9 @@ kind: problem
 title: Classify a closed surface drawn as a circular chain of tori
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Classification of Surfaces
+  - Euler Characteristic
 relations: []
 review: draft
 audit:

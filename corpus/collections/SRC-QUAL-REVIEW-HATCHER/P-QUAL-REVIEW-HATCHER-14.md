@@ -5,7 +5,10 @@ kind: problem
 title: Complex projective space does not split off a sphere wedge
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Complex Projective Space
+  - Cup Product
+  - Wedge Sums
 relations: []
 review: draft
 audit:

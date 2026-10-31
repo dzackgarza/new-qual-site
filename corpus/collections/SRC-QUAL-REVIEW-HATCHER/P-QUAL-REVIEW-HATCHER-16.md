@@ -5,7 +5,10 @@ kind: problem
 title: Degree of a normalized polynomial counts roots in the unit disk
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Degree of a Map
+  - Winding Number
+  - Argument Principle
 relations: []
 review: draft
 audit:

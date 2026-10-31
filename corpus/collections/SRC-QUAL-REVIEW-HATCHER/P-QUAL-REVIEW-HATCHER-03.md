@@ -5,7 +5,10 @@ kind: problem
 title: Cup-length obstruction from a contractible cover
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Cup Product
+  - Lusternik-Schnirelmann Category
+  - Real Projective Space
 relations: []
 review: draft
 audit:

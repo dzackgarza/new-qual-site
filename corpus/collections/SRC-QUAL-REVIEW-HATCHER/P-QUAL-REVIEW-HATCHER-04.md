@@ -5,7 +5,9 @@ kind: problem
 title: Degree of the coordinate-squaring map of the sphere
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Degree of a Map
+  - Spheres
 relations: []
 review: draft
 audit:

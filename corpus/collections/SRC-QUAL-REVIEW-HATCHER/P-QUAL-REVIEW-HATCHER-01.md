@@ -5,7 +5,10 @@ kind: problem
 title: Kronecker pairing descends to homology and cohomology
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Kronecker Pairing
+  - Singular Homology
+  - Singular Cohomology
 relations: []
 review: draft
 audit:
