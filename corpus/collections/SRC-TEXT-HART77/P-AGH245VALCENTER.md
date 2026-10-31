@@ -22,20 +22,21 @@ audit:
   date: 2026-09-17
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be an integral scheme of finite type over a field $k$, having function field $K$.
-We say that a valuation of $K/k$ has **center** $x$ on $X$ if its valuation ring $R$ dominates the local ring $\OO_{x, X}$.
+We say that a valuation of $K/k$ has **center** $x$ on $X$ if its valuation ring $R$ dominates the local ring $\OO_{X,x}$.
 
-a. If $X$ is separated over $k$, then the center of any valuation of $K/k$ on $X$, if it exists, is unique.
+(a) If $X$ is separated over $k$, then the center of any valuation of $K/k$ on $X$, if it exists, is unique.
 
-b. If $X$ is proper over $k$, then every valuation of $K/k$ has a unique center on $X$.
-   Note: if $X$ is a variety over $k$, the criterion of (b) is sometimes taken as the definition of a complete variety.
+(b) If $X$ is proper over $k$, then every valuation of $K/k$ has a unique center on $X$.
 
-c. Prove the converses of (a) and (b). *Hint:* while (a) and (b) follow easily from (4.3) and (4.7), their converses require some comparison of valuations in different fields.
+(c) Prove the converses of (a) and (b).
 
-d. If $X$ is proper over $k$, and if $k$ is algebraically closed, show that $\Gamma(X, \OO_X) = k$.
-   This result generalizes (I, 3.4a). *Hint:* let $a \in \Gamma(X, \OO_X)$ with $a \not\in k$.
-   Show that there is a valuation ring $R$ of $K/k$ with $\inverseof{a} \in \mfm_R$, then use (b) to get a contradiction.
+(d) If $X$ is proper over $k$, and if $k$ is algebraically closed, show that $\Gamma(X, \OO_X) = k$. This result generalizes I.3.4(a).
+:::
+
+::: {.hint}
+For (c), while (a) and (b) follow from (4.3) and (4.7), their converses require comparison of valuations in different fields. For (d), let $a\in\Gamma(X,\OO_X)$ with $a\notin k$. Find a valuation ring $R$ of $K/k$ with $a^{-1}\in\mfm_R$, then use (b).
 :::
 
 ::: {.solution}
@@ -379,12 +380,10 @@ is the structure map of the $k$-scheme $X$.  Hence equality holds.
 
 :::
 
-::: pf-qed
-
-Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s11){.pf-ref} prove parts (a), (b), (c), and (d), respectively.
-
 :::
 
 :::
 
+::: {.remark}
+For a variety over $k$, the criterion in (b) is sometimes taken as the definition of a complete variety.
 :::
