@@ -11,6 +11,11 @@ classification:
   - van Kampen
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: chatgpt
+  date: 2026-10-31
+  note: Traced the band attachments in the page-one PDF render; over-under crossings do not identify the bands.
 ---
 
 ::: {.problem}
@@ -28,11 +33,22 @@ The two band-and-disc diagrams appear on page 1 of the source sheet.
 
 ::: pf-step
 
-The left-hand source figure is a disc with three untwisted bands attached in planar cyclic order. It is an orientable genus-$0$ surface with four boundary components.
+The left-hand figure has one disc and three untwisted bands.
+Around the disc, the two attaching intervals of each band
+are neighbors. The bands pass over and under one another
+in the drawing, but those crossings do not identify points
+of the bands. The surface has genus $0$ and four boundary
+components.
 
 ::: pf-proof
 
-Starting from one disc ($\chi=1$), each band is a $1$-handle and decreases Euler characteristic by $1$, so $\chi=-2$. The cyclic order shown is planar, hence the surface has genus $0$. Therefore $2-b=-2$, so $b=4$.
+Each band is a $1$-handle, so
+$\chi=1-3=-2$. Attaching an untwisted band
+along neighboring intervals of one boundary circle
+splits that circle into two. The three bands
+therefore raise the boundary count successively
+from one to four. The equation
+$2-2g-b=-2$ then gives $g=0$.
 
 :::
 
@@ -55,11 +71,23 @@ A genus-$0$ surface with four boundary components deformation retracts to a wedg
 
 ::: pf-step
 
-The right-hand source figure consists of two discs joined by three bands with the opposite cyclic ordering shown. It is an orientable genus-$1$ surface with one boundary component.
+The right-hand figure has two discs joined by three
+untwisted bands. Tracing their ends through the
+over-under crossings shows that the order of the
+three bands at one disc is reversed at the other.
+Its boundary is one circle, and the surface has
+genus $1$.
 
 ::: pf-proof
 
-Here $\chi=2-3=-1$. The opposite cyclic order of the three bands is the standard thickening of a theta graph to a once-punctured torus rather than a pair of pants. Thus $2-2g-b=-1$ with $b=1$, giving $g=1$.
+The first band joins the two discs and leaves
+one boundary circle. The second splits it into
+two. Because the third band's ends occur in
+the reversed cyclic order, they lie on those
+two different boundary circles; attaching it
+joins them, leaving one boundary circle.
+Also $\chi=2-3=-1$. Hence
+$2-2g-1=-1$, so $g=1$.
 
 :::
 

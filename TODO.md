@@ -1754,11 +1754,9 @@ mathematical correction under its own node, not under copy policy.
   - **`ad-uga-ra05-complex-part`**. **Needs:** none. SRC-UGA-RA-SPRING-2005
     lists both parts of the January 2005 combined analysis exam in source
     order, with five problems in each section and both areas classified. **Closed.**
-  - **`ad-justin-band-figure`**. **Needs:** none. P-AMD-CM4OPBUE (sheet 3 #4): the left band
-    figure appears to have interlinked bands, and the solution claims the surface is planar with
-    boundary circles capped to give $S^2$. Read the figure from the page render, decide the
-    surface, and rewrite the solution. **Acceptance:** the solution identifies each surface from
-    the figure as drawn.
+  - **`ad-justin-band-figure`**. **Needs:** none. P-AMD-CM4OPBUE traces
+    the band attachments in the sheet 3 page render and identifies the
+    capped surfaces as $S^2$ and $T^2$. **Closed.**
   - **`ad-unl-combinatorics-area`**. **Needs:** none. The Section A problems of the UNL
     850-871 and 852-871 qualifying exams (P-UNL850871-06A1 to 06A5, P-UNL850871-08A1 to 08A5,
     P-UNL852871-07A1 to 07A5, and the 852 or 850 parts of the other UNL combined exams) are
