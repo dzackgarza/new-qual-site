@@ -307,6 +307,8 @@ source:
       comment: Ch. 7, Exercise 3
     - id: E-SS7.EX-4
       comment: Ch. 7, Exercise 4
+    - id: E-SS7.EX-5
+      comment: Ch. 7, Exercise 5
   - name: Ch7 Problems
     problems:
     - id: E-SS7.PR-1
