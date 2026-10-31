@@ -36,9 +36,9 @@ be a retraction and
 $$
 q:X\to X/A
 $$
-the quotient map. Suspending and using the addition on maps out of a suspension gives
+the quotient map. Let $j_A$ and $j_Q$ be the two wedge inclusions. Suspending and using the pinch map of $\Sigma X$ to add maps into the same target gives
 $$
-F=\Sigma r+\Sigma q:\Sigma X\longrightarrow
+F=(j_A\circ\Sigma r)+(j_Q\circ\Sigma q):\Sigma X\longrightarrow
 \Sigma A\vee\Sigma(X/A).
 $$
 We show that $F$ is a homology isomorphism.
