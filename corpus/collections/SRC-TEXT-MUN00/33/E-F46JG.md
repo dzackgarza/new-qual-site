@@ -55,102 +55,31 @@ This exercise is adapted from [M-Z], to which the reader is referred for further
 
 ::: {.solution}
 
-::: pf
+By Munkres's definition, a topological group is $T_1$; the supplementary exercises of §22 show it is Hausdorff. Let $A$ be closed and $x\notin A$. Translation reduces the problem to separating $e$ from the closed set $x^{-1}A$. Choose a symmetric open neighborhood $V_0$ of $e$ disjoint from $x^{-1}A$, and recursively choose symmetric open neighborhoods $V_{n+1}$ with $V_{n+1}^2\subset V_n$. These choices are possible by continuity of multiplication and inversion.
 
-::: pf-step
-We must show $V_n \cdot U(k/2^n) \subset U((k+1)/2^n)$ for all $k$ and $n$.
+Use the dyadic sets $U(p)$ in the question. We check the asserted inclusion for $0\le k<2^n$ by induction on $n$. At $n=0$ it reads $V_0U(0)=\varnothing\subset U(1)$. At level $n+1$, the case $k=0$ is again immediate. If $k=2j$ with $j\ge1$, the definition gives
+$$
+V_{n+1}U(j/2^n)=U((2j+1)/2^{n+1}).
+$$
+If $k=1$, then $V_{n+1}U(1/2^{n+1})=V_{n+1}^2\subset V_n=U(1/2^n)$. For $k=2j+1$ with $j\ge1$, the induction hypothesis gives
+$$
+V_{n+1}U((2j+1)/2^{n+1})
+=V_{n+1}^2U(j/2^n)
+\subset V_nU(j/2^n)
+\subset U((j+1)/2^n).
+$$
+This proves the inclusion, including the two boundary cases that use the separate definitions of $U(0)$ and $U(1/2^{n+1})$.
 
-::: pf-proof
-the claim to prove.
-:::
+Since $e\in V_n$, adjacent dyadic sets are nested. For any dyadic $0<p<q\le1$, choose a fine enough level that the interval $(p,q)$ contains adjacent dyadics $r,r+2^{-n}$. Then $U(p)\subset U(r)$, and symmetry of $V_n$ gives
+$$
+\overline{U(r)}\subset V_nU(r)\subset U(r+2^{-n})\subset U(q).
+$$
+Indeed, if $z\in\overline{U(r)}$, then $V_nz$ meets $U(r)$, so $z\in V_n^{-1}U(r)=V_nU(r)$. Consequently $\overline{U(p)}\subset U(q)$ whenever $p<q$ are dyadic in $(0,1]$.
 
-:::
-
-::: {.pf-step #n-zero-base-case}
-We prove by induction on $n$. For $n = 0$: $U(0) = \varnothing$ and $U(1) = V_0$, so $V_0 \cdot U(0) = \varnothing \subset U(1)$.
-
-::: pf-proof
-base case.
-:::
-
-:::
-
-::: pf-step
-Assume the claim holds for $n$; we prove it for $n+1$.
-
-::: pf-proof
-induction step.
-:::
-
-:::
-
-::: {.pf-step #even-k-definitions}
-For $k$ even, $k = 2j$: $U(k/2^{n+1}) = U(j/2^n)$, and $U((k+1)/2^{n+1}) = U((2j+1)/2^{n+1}) = V_{n+1} \cdot U(j/2^n)$.
-
-::: pf-proof
-the definitions.
-:::
-
-:::
-
-::: {.pf-step #even-k-conclusion}
-Then $V_{n+1} \cdot U(k/2^{n+1}) = V_{n+1} \cdot U(j/2^n) = U((k+1)/2^{n+1})$.
-
-::: pf-proof
-Step [](#even-k-definitions){.pf-ref}.
-:::
-
-:::
-
-::: {.pf-step #odd-k-definitions}
-For $k$ odd, $k = 2j+1$: $U(k/2^{n+1}) = U((2j+1)/2^{n+1}) = V_{n+1} \cdot U(j/2^n)$, and $U((k+1)/2^{n+1}) = U((2j+2)/2^{n+1}) = U((j+1)/2^n)$.
-
-::: pf-proof
-the definitions.
-:::
-
-:::
-
-::: {.pf-step #odd-k-conclusion}
-Then $V_{n+1} \cdot U(k/2^{n+1}) = V_{n+1} \cdot V_{n+1} \cdot U(j/2^n) \subset V_n \cdot U(j/2^n) \subset U((j+1)/2^n) = U((k+1)/2^{n+1})$.
-
-::: pf-proof
-Step [](#odd-k-definitions){.pf-ref}, using $V_{n+1} \cdot V_{n+1} \subset V_n$ and the induction hypothesis.
-:::
-
-:::
-
-::: {.pf-step #claim-proved-by-induction}
-Hence $V_n \cdot U(k/2^n) \subset U((k+1)/2^n)$ for all $k, n$.
-
-::: pf-proof
-Steps [](#n-zero-base-case){.pf-ref}, [](#even-k-conclusion){.pf-ref}, [](#odd-k-conclusion){.pf-ref}.
-:::
-
-:::
-
-::: {.pf-step #urysohn-construction}
-Proceeding as in the Urysohn lemma, this defines a continuous function $f : G \to [0,1]$ with $f(e) = 0$ and $f = 1$ outside $V_0$, separating $e$ from the closed set $G \setminus V_0$.
-
-::: pf-proof
-the Urysohn-lemma construction using the nested open sets $U(p)$.
-:::
-
-:::
-
-::: {.pf-step #g-completely-regular}
-Hence $G$ is completely regular.
-
-::: pf-proof
-Step [](#urysohn-construction){.pf-ref} (every point can be separated from a closed set by a continuous function, using translation invariance).
-:::
-
-:::
-
-::: pf-qed
-Steps [](#claim-proved-by-induction){.pf-ref} and [](#g-completely-regular){.pf-ref}.
-:::
-
-:::
+Define
+$$
+f(z)=\inf\{p\in\mathcal D:z\in U(p)\},
+$$
+where $\mathcal D$ is the set of dyadic rationals. The set in the infimum is nonempty because $U(p)=G$ for $p>1$, and $0\le f\le1$. For $0<t\le1$, the set $\{f<t\}$ is the union of the $U(p)$ with dyadic $p<t$, so it is open. The closure inclusion shows that $\{f>t\}$ is the union of the complements of $\overline{U(p)}$ with dyadic $p>t$; this is open as well. Thus $f$ is continuous. Since $e\in V_n=U(2^{-n})$ for every $n$, $f(e)=0$. Every $U(p)$ for $p\le1$ lies in $U(1)=V_0$, so $f=1$ on $G\setminus V_0$, in particular on $x^{-1}A$. Translating back separates $x$ from $A$. The $T_1$ property from the definition completes the claim.
 
 :::
