@@ -52,17 +52,17 @@ $$
 $$
 Its image contains every generator $g_i$, so $\Phi$ is surjective. Thus $G$ is a quotient of a direct sum of copies of $\QQ$.
 
-By Exercise 3, $\operatorname{Ext}(A,\QQ)=0$ for every $A$. Ext takes direct sums in the second variable here to the corresponding direct sums for free resolutions of $A$, so
+The direct sum $D=\bigoplus_I\QQ$ is divisible, since each element has only finitely many nonzero coordinates. The injectivity argument of Exercise 3 therefore applies to $D$ and gives
 $$
-\operatorname{Ext}\!\left(A,\bigoplus_I\QQ\right)=0.
+\operatorname{Ext}(A,D)=0.
 $$
 If
 $$
-0\to K\to\bigoplus_I\QQ\to G\to0
+0\to K\to D\to G\to0
 $$
 is the quotient sequence, the six-term exact sequence for $\operatorname{Hom}(A,-)$ and $\operatorname{Ext}(A,-)$ ends with
 $$
-\operatorname{Ext}\!\left(A,\bigoplus_I\QQ\right)
+\operatorname{Ext}(A,D)
 \longrightarrow \operatorname{Ext}(A,G)\longrightarrow0.
 $$
 The left group is zero, hence
