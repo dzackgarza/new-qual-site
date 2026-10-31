@@ -1232,4 +1232,6 @@ def parse_card(path: Path) -> ParsedCard:
 def discover(corpus: Path) -> list[Path]:
     """The corpus layout is semantically inert: every .md under it is a card,
     and its path contributes nothing but an edit link."""
+    if not corpus.is_dir():
+        raise FileNotFoundError(f"corpus directory missing: {corpus}")
     return sorted(p for p in corpus.rglob("*.md"))
