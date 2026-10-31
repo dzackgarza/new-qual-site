@@ -97,7 +97,11 @@ source:
   - id: P-UCTOP290-S4-16
     comment: Sheet 4, Problem 16
   - id: P-UCTOP290-S6-1
-    comment: Sheet 6, Problem 1
+    comment: Sheet 6, Problem 1, first three spaces
+  - id: P-T17Q2-8
+    comment: Sheet 6, Problem 1, equatorial disk
+  - id: P-UCTOP290-S6-1-TORUS
+    comment: Sheet 6, Problem 1, torus with attached disk
   - id: P-UCTOP290-S6-2
     comment: Sheet 6, Problem 2
   - id: P-UCTOP290-S6-3
