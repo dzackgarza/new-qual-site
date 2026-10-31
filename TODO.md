@@ -47,9 +47,9 @@ marked proposed. `E-HAT-1.A-8` is settled: `proofs/cards/SubgroupFiniteness.lean
 generating family has finitely many subgroups of a given nonzero index, with no `sorryAx`.
 
 `ad-text-hat02` is partly read, against the book itself
-(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §3.1; proofs are
-read for §1.1, §1.2, §1.A, §1.B-1..-4, §2.1-1..-17 and all of §2.2, §2.3 and §3.1. Exact scope, with
-no section counted as read beyond it:
+(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §3.2; proofs are
+read for §1.1, §1.2, §1.A, §1.B-1..-4, §2.1-1..-17 and all of §2.2, §2.3, §3.1 and §3.2. Exact scope,
+with no section counted as read beyond it:
 §1.1: 20 statements compared, the twelve solved proofs read line by line, `E-HAT-1.1-17` repaired.
 §1.2: 22 statements compared, all 22 proofs read line by line; `E-HAT-1.2-12`, `-14`, `-16` closing
 steps repaired, `E-HAT-1.2-22` restructured into one proof and its subcomplex framing corrected.
@@ -89,8 +89,16 @@ constant path and the triangulated homotopy square, `-6` by recomputing all six 
 `-7` and `-9` by the long exact sequence of a pair and the Kronecker pairing, `-10` from the alternating lens-space
 differential, `-11` for the two counterexamples to naturality, `-12` as the cohomology copy of the second proof of
 Lemma 2.34(c), and `-13` through Proposition 1B.9 and the universal coefficient sequence.
+§3.2: all 17 statements (the book's exercises 1-16 and 18; 17 is a placeholder there) compared with the printed exercises and all agree
+after two restorations: the bracketed pointer of `-4` to §2.C exercise 3 and the bracketed hint of `-5` to Theorem 3.19 were
+missing and are put back. All 17 proofs are read: `-1` through the quotient map $M_g\\to\\bigvee T_i$, `-2` by lifting to relative
+groups, `-3` and `-4` through $\\ZZ_2[\\alpha]/(\\alpha^{m+1})$ and the Lefschetz number $1+d+\\cdots+d^n$, `-5` from the alternating
+cellular differential, `-6`-`-8` by degree and restriction arguments, `-9` by the universal coefficient theorem, `-10`-`-11` by
+the rank of a finite sum and the vanishing of $H^k$ and $H^\\ell$ of $S^{k+\\ell}$, `-12`-`-14` by quoting the top cells
+$\\RP^{2k}/\\RP^{2k-1}$ and $\\CP^{2k}/\\CP^{2k-1}$, `-15` from the same ring descriptions, `-16` through
+$\\dim H^i(\\cdot;\\FF_p)=b_i+t_i+t_{i+1}$, and `-18` through the nondegenerate pairing on $H^1$.
 Unread entirely: the proofs of §1.3 beyond the ten listed, of §1.B-5..-9 and of §2.1-6, -8, -10, -17,
--23..-25, -27..-29, and the proofs and statements of §3.2 and §4 onward.
+-23..-25, -27..-29, and the proofs and statements of §3.3 and §4 onward.
 
 ## Fast local checks and complete CI acceptance
 

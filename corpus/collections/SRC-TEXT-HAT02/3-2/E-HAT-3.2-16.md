@@ -15,6 +15,18 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.2, Exercise 16; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the criterion and its use: $\dim_F H^i(Z;F_p)=b_i+t_i+t_{i+1}$ with $t_i$ the number of
+    $p$-power summands, so equality with $\dim_\QQ H^i(Z;\QQ)=b_i$ in every degree is exactly the
+    absence of $p$-primary torsion; Künneth over $\FF_p$ and over $\QQ$ gives the same convolution
+    on both sides for $X\times Y$, and the criterion then applies to $X\times Y$.
 ---
 
 ::: {.problem}

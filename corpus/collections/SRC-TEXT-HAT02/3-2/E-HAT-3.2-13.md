@@ -22,6 +22,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.2, Exercise 13; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the description: $H^*(\CP^\infty,\CP^1)$ is $\ZZ$ in every even degree at least $4$,
+    generated over $\ZZ[u]$ by $u^2$ and $u^3$ with the single relation $(u^3)^2=(u^2)^3$;
+    comparing with $H^*(S^6\times\HP^\infty)=\ZZ[x,y]/(x^2)$ with $|x|=6$, $|y|=4$, the graded
+    groups agree and the rings differ at the degree-six generator.
 ---
 
 ::: {.problem}

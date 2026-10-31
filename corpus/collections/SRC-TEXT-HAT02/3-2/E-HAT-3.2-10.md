@@ -22,6 +22,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.2, Exercise 10; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the counterexample: for discrete $X$ the cross product in degree zero is
+    $\operatorname{Map}(X,\ZZ)\otimes\operatorname{Map}(Y,\ZZ)\to\operatorname{Map}(X\times Y,\ZZ)$,
+    and the function $\delta_{ij}$ on a countable rectangle is not a finite sum of products because
+    an $N$-term sum has rank at most $N$ on every finite submatrix.
 ---
 
 ::: {.problem}

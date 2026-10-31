@@ -22,6 +22,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.2, Exercise 15; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the series: Künneth over a field makes the Betti numbers convolve, and the six basic
+    computations are checked against the cellular differentials ($\RP^n$ depending on whether $2=0$
+    in $F$); the three spaces of Exercises 12-14 are then read off from their ring descriptions,
+    including $1+t^4+\cdots+t^{4n}+t^{4n+2}/(1-t^2)=(1+t^{4n+2})/(1-t^4)$.
 ---
 
 ::: {.problem}

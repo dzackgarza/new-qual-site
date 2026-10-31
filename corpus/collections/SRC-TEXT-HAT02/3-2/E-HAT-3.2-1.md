@@ -22,6 +22,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.2, Exercise 1; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the computation: $q^*$ carries the two generators of each $H^1(T_i)$ to $a_i,b_i$ and
+    $q^*(u_i)=u$ because the composite of $q$ with the retraction onto $T_i$ has degree one, so
+    naturality turns $x_i\smile y_i=u_i$ into $a_i\smile b_j=\delta_{ij}u$; on the torus
+    $x_i^2=y_i^2=0$, and products of classes on different summands vanish, which gives the
+    remaining relations. Since $H^k(M_g)=0$ for $k>2$ these relations describe the whole ring.
 ---
 
 ::: {.problem}

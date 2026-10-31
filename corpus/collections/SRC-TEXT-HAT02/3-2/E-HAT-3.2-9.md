@@ -15,6 +15,18 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.2, Exercise 9; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the chain of identifications: $\operatorname{Ext}$ vanishes because $H_{n-1}$ is free, so
+    $H^n(X;\ZZ_p)=\operatorname{Hom}(H_n,\ZZ_p)=\operatorname{Hom}(H_n,\ZZ)\otimes\ZZ_p=H^n(X;\ZZ)\otimes\ZZ_p$;
+    the isomorphism is induced by the ring map $\ZZ\to\ZZ_p$ on coefficients, so it preserves cup
+    products.
 ---
 
 ::: {.problem}

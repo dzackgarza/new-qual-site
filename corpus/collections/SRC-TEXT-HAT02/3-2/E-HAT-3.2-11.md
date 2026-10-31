@@ -15,6 +15,17 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.2, Exercise 11; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: $a\smile b$ generates $H^{k+\ell}(S^k\times S^\ell)$ and both factors die
+    under $f^*$ since $H^k$ and $H^\ell$ of $S^{k+\ell}$ vanish for $0<k,\ell$; so
+    $f^*(a\smile b)=0$ and pairing with the fundamental class shows $f_*[S^{k+\ell}]=0$.
 ---
 
 ::: {.problem}
