@@ -366,11 +366,9 @@ while cyclotomic theory gives
 $$
 [\QQ(\zeta):\QQ]=\varphi(7)=6.
 $$
-The degree of their intersection divides both $7$ and $6$, hence
-$$
-\QQ(\alpha)\cap\QQ(\zeta)=\QQ.
-$$
-Therefore
+The tower law shows that $[E:\QQ]$ is divisible by both $7$ and $6$,
+hence by $42$. On the other hand, adjoining $\zeta$ to $\QQ(\alpha)$
+has degree at most $6$, so $[E:\QQ]\le7\cdot6=42$. Therefore
 $$
 \boxed{[E:\QQ]=7\cdot6=42.}
 $$
@@ -382,7 +380,9 @@ $$
 The Galois group is the faithful semidirect product $C_7\rtimes C_6$.
 
 ::: pf-proof
-Define
+By step [](#s11){.pf-ref}, $[E:\QQ(\zeta)]=7$, so $X^7-2$ remains
+irreducible over $\QQ(\zeta)$. Replacing one root by another therefore
+defines a $\QQ(\zeta)$-automorphism of $E$. In particular, define
 $$
 \sigma(\alpha)=\zeta\alpha,
 \qquad
@@ -390,8 +390,9 @@ $$
 $$
 Then $\sigma$ has order $7$.
 
-Since the two subfields in step [](#s11){.pf-ref} have trivial intersection, the
-automorphism of $\QQ(\zeta)$ defined by
+By step [](#s11){.pf-ref}, $[E:\QQ(\alpha)]=6$. Hence the sixth-degree
+minimal polynomial of $\zeta$ over $\QQ$ remains irreducible over
+$\QQ(\alpha)$. The automorphism of $\QQ(\zeta)$ defined by
 $$
 \zeta\longmapsto\zeta^3
 $$
