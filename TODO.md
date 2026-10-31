@@ -1768,7 +1768,7 @@ mathematical correction under its own node, not under copy policy.
     trees, Ramsey. They carry `areas: [topology]` because the combined exam is filed as a
     topology collection. No registered area holds combinatorics. Decide whether these problems
     are in scope, and if so under which area. **Acceptance:** each listed card carries the
-    decided area, or the decision to remove the Section A parts is applied to the collections.
+    decided area, or the decision to remove the Section A parts is applied to the collections. **Closed.** Filed under algebra with topic Combinatorics or Graph Theory (AGENTS.md Areas).
   - **`ad-unsorted-duplicate-candidates`**. **Needs:** none. The reading of the UNSORTED buckets
     found these pairs that may state the same mathematics; each needs both cards read and, if
     the mathematics is the same, a `CARD-04` merge. Algebra: E-AMD-F5ZHMJNK / E-AMD-YBSKHIZ3(b);
@@ -1780,15 +1780,15 @@ mathematical correction under its own node, not under copy policy.
     E-JJ746; P-FNUGX / E-TZFC7, E-7EL3U, E-UYQED; P-6BKXI / E-QCYEM, E-KUOXT; P-O2PWG /
     E-FFARP, E-4CL6A, E-SA3HI; P-PEND3 / E-XHB3F, E-CGVE4, E-BTA5L; E-IECHS / P-GAA3C.
     Elsewhere: P-G7GOP / P-XCE4G. **Acceptance:** each pair is merged or both cards are kept
-    after reading.
+    after reading. **Closed.** All merged.
   - **`ad-utct-4-53-open-book-steps`**. **Needs:** none. In P-UTCT-4-53, steps 20-23 (the
     framed-link description of each open book's plane field) are only sketched. **Acceptance:**
-    each step carries a complete proof.
+    each step carries a complete proof. **Closed.**
   - **`ad-vakil-risingsea-source`**. **Needs:** none. SRC-VAKIL-RISINGSEA has as its only
     provenance the 216 blog page, not the book, and there is no extraction. The statements,
     the exercise numbers 1.3.H, 1.3.K, 1.3.L, 1.3.P and 1.3.Q, and the source order are
     unchecked. **Acceptance:** the book is the provenance, and the five cards are read against
-    its extraction.
+    its extraction. **Closed.** October 21, 2025 public draft; the exercises are 1.2.H-1.2.Q there.
   - **`ad-bkf93-12-contour`**. **Needs:** none. P-BKF93-12: the retained Fall93.pdf prints
     "../Fig/Pr/Fa93-12.ps not found" where the curve $\gamma$ should be, so the statement has no
     contour and the solution answers in terms of winding numbers. Find another copy of the Fall
