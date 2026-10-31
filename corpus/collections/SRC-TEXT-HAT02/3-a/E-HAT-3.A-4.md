@@ -47,7 +47,7 @@ $$
 \to \varinjlim F(A_\alpha)
 \to \varinjlim A_\alpha\to0,
 $$
-because filtered colimits are exact in the category of abelian groups. The first two terms are free-resolution terms for the colimit for purposes of computing the kernel after tensoring.
+because filtered colimits are exact in the category of abelian groups. Both $K(A_\alpha)$ and $F(A_\alpha)$ are free abelian: $K(A_\alpha)$ is a subgroup of a free abelian group. Their filtered colimits are torsionfree, hence flat over $\ZZ$. Thus this exact sequence is a flat resolution of $\varinjlim A_\alpha$ and computes $\operatorname{Tor}_1$ after tensoring.
 
 Tensor the presentations with $B$. Since tensor product commutes with direct limits and filtered colimits preserve kernels of maps occurring in these exact sequences,
 $$
