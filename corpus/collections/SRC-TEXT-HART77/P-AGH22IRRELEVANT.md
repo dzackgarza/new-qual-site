@@ -32,7 +32,7 @@ Show that the following conditions are equivalent.
 
 (i) $Z(\mfa) = \emptyset$.
 
-(ii) $\sqrt{\mfa}$ is either $S$ or the irrelevant ideal $S_+ = \bigoplus_{d>0} S_d$.
+(ii) $\sqrt{\mfa}$ is either $S$ or the ideal $S_+ = \bigoplus_{d>0} S_d$.
 
 (iii) $\mfa \supseteq S_d$ for some $d > 0$.
 :::

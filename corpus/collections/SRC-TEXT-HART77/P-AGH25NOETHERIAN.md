@@ -28,7 +28,7 @@ Let $k$ be algebraically closed and let $n\ge0$.
 (a) Show that $\PP_k^n$ is a noetherian topological space.
 
 (b) Show that every algebraic set in $\PP_k^n$ can be written uniquely as a finite union of irreducible algebraic sets, no one containing another.
-These are called its **irreducible components**.
+These are called its \dfn{irreducible components}.
 :::
 
 ::: {.solution}

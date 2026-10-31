@@ -26,7 +26,7 @@ audit:
 
 ::: {.problem}
 Let $k$ be algebraically closed.
-Let $Y$ be the image of the $2$-uple embedding of $\PP^2$ in $\PP^5$; this is the **Veronese surface**. A **curve** is a variety of dimension $1$.
+Let $Y$ be the image of the $2$-uple embedding of $\PP^2$ in $\PP^5$; this is the \dfn{Veronese surface}. A \dfn{curve} is a variety of dimension $1$.
 If $Z \subseteq Y$ is a closed curve, show that there exists a hypersurface $V \subseteq \PP^5$ with $V \intersect Y = Z$.
 :::
 

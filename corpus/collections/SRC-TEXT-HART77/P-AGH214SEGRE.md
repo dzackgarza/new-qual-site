@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Let $k$ be algebraically closed and let $r,s\ge0$.
 Let $\psi: \PP^r \times \PP^s \to \PP^N$ be the map sending the ordered pair $\thevector{a_0 : \cdots : a_r} \times \thevector{b_0 : \cdots : b_s}$ to the point with coordinates $a_i b_j$ in lexicographic order, where $N = rs + r + s$.
-The map $\psi$ is well defined and injective; it is called the **Segre embedding**. Show that the image of $\psi$ is a subvariety of $\PP^N$.
+The map $\psi$ is well defined and injective; it is called the \dfn{Segre embedding}. Show that the image of $\psi$ is a subvariety of $\PP^N$.
 :::
 
 ::: {.hint}

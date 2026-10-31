@@ -27,7 +27,7 @@ audit:
 ::: {.problem}
 Let $k$ be algebraically closed and let $n\ge0$.
 A projective variety $Y \subseteq \PP^n$ has dimension $n-1$ if and only if it is the zero set of a single irreducible homogeneous polynomial $f$ of positive degree.
-In this case $Y$ is called a **hypersurface** in $\PP^n$.
+In this case $Y$ is called a \dfn{hypersurface} in $\PP^n$.
 :::
 
 ::: {.solution}

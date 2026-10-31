@@ -29,7 +29,7 @@ Define $\rho_d : \PP^n \to \PP^N$ by
 $$
 \rho_d\qty{ \thevector{a_0 : \cdots : a_n} } = \thevector{ M_0(a) : \cdots : M_N(a) } .
 $$
-This is the **$d$-uple embedding** of $\PP^n$ in $\PP^N$.
+This is the \dfn{$d$-uple embedding} of $\PP^n$ in $\PP^N$.
 For example, when $n = 1$ and $d = 2$ we have $N = 2$, and the image of the $2$-uple embedding of $\PP^1$ in $\PP^2$ is a conic.
 
 (a) Let $\theta: k[y_0,\ldots,y_N] \to k[x_0,\ldots,x_n]$ be the homomorphism sending $y_i \mapsto M_i$, and let $\mfa = \ker \theta$.
@@ -43,7 +43,7 @@ Show that $\mfa$ is a homogeneous prime ideal, so that $Z(\mfa)$ is a projective
 :::
 
 ::: {.hint}
-For (b), one inclusion follows from the definition of $\ker\theta$; the other can be checked by recovering the source coordinates on affine charts.
+For (b), one inclusion is easy. The other will require some calculation.
 :::
 
 ::: {.solution}
