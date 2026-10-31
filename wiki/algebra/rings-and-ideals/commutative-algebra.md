@@ -19,7 +19,7 @@ Throughout, rings are commutative with identity.
 
 [[PR-UTFSY]]
 
-[[E-NXHG6]]
+[[P-2E7UB]]
 
 ::: {.remark title="Existence statements proved by Zorn's lemma"}
 Every nonzero ring has a maximal ideal, every proper ideal is contained in a maximal ideal, and every vector space has a basis.
