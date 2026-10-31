@@ -28,8 +28,8 @@ audit:
     homology C2 + C2 in degree 0, i.e. H_1 = Z/2 + Z/2. Identifying H_1 with the abelianization of
     pi_1 is a theorem, not part of the computation.
 
-    Status: the recorded run used the host interpreter (Sage 10.8, Python 3.12.14), not the
-    supported Sage development image; the certificate is pending a rerun there.
+    Rerun on the supported Sage development image: Sage 11.0.beta5, Python 3.14.10, source
+    HEAD b0cd7d86e2, all checks passing there.
 ---
 
 ::: {.problem}

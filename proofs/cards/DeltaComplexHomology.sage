@@ -12,12 +12,20 @@ with `rows(data[k]) = rank C_{k-1}` and `cols(data[k]) = rank C_k`, and
 
 Run:  sage proofs/cards/DeltaComplexHomology.sage
 
-Status of the recorded run: PENDING RERUN.  The last execution used the host
-interpreter /opt/math/bin/sage, which reports Sage 10.8 on Python 3.12.14
-(3.12: the host image), not the supported Sage development environment.  The
-script is written against the maintained API only (ChainComplex, homology), so
-it needs no change; the certificate stands only once it has been rerun in the
-research image, and until then the cards' notes say the run is pending.
+Status of the recorded run: PASSED on the supported Sage development image.
+
+  Sage 11.0.beta5, Python 3.14.10, Sage source checkout at git HEAD
+  b0cd7d86e21eb450ed90e4c83707920e1d5d429a (rootfs/sage/.git), image rootfs at
+  $HOME/sage-image/rootfs, image config sha256
+  2d6a4754b6f1518af356dd28ac6ec2e7678c7fe4ab0d70c2e7c9ecbc2c605eca.
+
+  Reproduce with:
+
+    proot -R $HOME/sage-image/rootfs -b /proc -b /dev -b $REPO:/work -w / \
+          /sage/.venv/bin/sage /work/proofs/cards/DeltaComplexHomology.sage
+
+  An earlier run used the host interpreter (Sage 10.8, Python 3.12.14) and is not
+  the acceptance evidence; the results agree.
 """
 from sage.all import ChainComplex, matrix, ZZ
 

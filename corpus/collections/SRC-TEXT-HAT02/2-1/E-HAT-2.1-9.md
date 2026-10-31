@@ -36,8 +36,8 @@ audit:
     ChainComplex: with d_k the single alternating-sum entry, the homology is Z in degree 0, 0 in
     degrees 0 < k < n, and Z or 0 in degree n according as n is odd or even.
 
-    Status: the recorded run used the host interpreter (Sage 10.8, Python 3.12.14), not the
-    supported Sage development image; the certificate is pending a rerun there.
+    Rerun on the supported Sage development image: Sage 11.0.beta5, Python 3.14.10, source
+    HEAD b0cd7d86e2, all checks passing there.
 ---
 
 ::: {.problem}
