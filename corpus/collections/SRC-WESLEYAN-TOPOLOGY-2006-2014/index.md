@@ -24,7 +24,7 @@ source:
       comment: Problem 2
     - id: E-DWC4M
       comment: Problem 3
-    - {id: P-WESTOP09-II4, comment: Problem 4 (part 1 only)}
+    - {id: P-UCTOP290-S13-18, comment: Problem 4 (part 1 only)}
     - P-WESTOP14-5
     - P-WESTOP14-6
   - name: Doctoral Qualifying Topology Exam, August 7, 2013
@@ -79,7 +79,8 @@ source:
     - {id: P-WESTOP09-II1, comment: Part II Problem 1}
     - {id: P-WESTOP09-II2, comment: Part II Problem 2}
     - {id: P-WESTOP09-II3, comment: Part II Problem 3}
-    - {id: P-WESTOP09-II4, comment: Part II Problem 4}
+    - {id: P-UCTOP290-S13-18, comment: "Part II Problem 4, first part"}
+    - {id: P-WESTOP09-II4, comment: "Part II Problem 4, second part"}
     - {id: P-WESTOP09-II5, comment: Part II Problem 5}
   - name: Topology Qualifying Exam, August 4, 2008
     problems:

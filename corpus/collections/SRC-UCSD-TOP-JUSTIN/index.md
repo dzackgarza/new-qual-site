@@ -174,6 +174,8 @@ source:
     comment: Sheet 13, Problem 16
   - id: P-UCTOP290-S13-17
     comment: Sheet 13, Problem 17
+  - id: P-UCTOP290-S13-18
+    comment: Sheet 13, Problem 18
   - P-AMD-7NJ4YRS5
   - P-AMD-JXFYCMO7
   - P-AMD-HWZNNEDG
