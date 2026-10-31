@@ -129,6 +129,27 @@ for m in range(0, 5):
                 expected.append("C2" if k % 2 == 1 else "0")
         check(f"2.2-19 RP^{n}/RP^{m}", data, expected)
 
+# --- Exercise 2.3-1, the Moore pair (X, A) = (S^1 ∪_m e^2, S^1).  The cellular
+# complex of X has one cell in dimensions 0, 1, 2 with d_1 = 0 and d_2 = m, so
+# H_0 = Z, H_1 = Z/m and H_2 = 0.  This is the group data on which the exactness
+# failures certified in proofs/cards/MooreSpaceExactness.lean turn: T_1(X) = Z/m
+# is nontrivial while T_1(A) and T_1(X,A) = coker(Z --m--> Z) restricted to the
+# torsion of Z vanish, and MT_1(A) = Z is not hit by multiplication by m.
+for m in [2, 3, 4, 5, 6, 12]:
+    check(f"2.3-1 Moore space M(Z/{m},1)",
+          {1: matrix(ZZ, 1, 1, [0]), 2: matrix(ZZ, 1, 1, [m])},
+          ["Z", "C%d" % m, "0"])
+
+# The same map d_2 = m as a linear map Z -> Z: its Smith form is (m), so it is
+# injective with cokernel Z/m of order m, which is what makes the mod-torsion
+# sequence Z --m--> Z -> 0 fail exactness for m > 1.
+for m in [2, 3, 4, 5, 6, 12]:
+    D = matrix(ZZ, 1, 1, [m]).smith_form()[0]
+    ok = D[0, 0] == m and m > 1
+    print(f"2.3-1 Smith form of (x{m}) on Z: diag({D[0, 0]})  {'OK' if ok else 'MISMATCH'}")
+    if not ok:
+        failures.append(f"2.3-1 smith m={m}")
+
 print()
 if failures:
     print("MISMATCHES:", failures)

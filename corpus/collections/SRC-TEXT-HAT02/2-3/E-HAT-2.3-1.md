@@ -37,6 +37,19 @@ audit:
     removed and the proof now runs on the single Moore-space pair. On that pair $H_1(X,A)=0$ and
     $T_1(X)=\ZZ_m$ with $T_1(A)=T_2(X,A)=0$, so the torsion sequence cannot be exact at $T_1(X)$, and
     the mod-torsion sequence fails at $MT_1(A)$ because $m\ZZ\ne\ZZ$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Certificates for the rewritten proof, which the earlier note left as an obligation.
+    proofs/cards/MooreSpaceExactness.lean certifies the group theory: $\ZZ/m$ is nontrivial for
+    $m\ge2$ (`nontrivial_zmod`) and torsion (`nsmul_eq_zero_zmod`), a sequence with trivial ends
+    cannot be exact at $\ZZ/m$ (`subsingleton_of_kernel_eq_range`, applied in `torsion_not_exact`),
+    and multiplication by $m\ge2$ on $\ZZ$ is injective (`mul_eq_zero_int`) but not surjective
+    (`not_surjective_mul`, `mod_torsion_not_exact`). proofs/cards/DeltaComplexHomology.sage
+    certifies the cellular data: the complex with $d_1=0$, $d_2=m$ has homology $\ZZ$, $\ZZ/m$, $0$
+    for $m=2,3,4,5,6,12$, and the Smith form of $(m)$ is $(m)$. The identification of these groups
+    with the homology of the Moore pair is Hatcher's cellular computation and is not formalized.
 ---
 
 ::: {.problem}

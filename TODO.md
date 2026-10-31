@@ -46,6 +46,14 @@ printed hypothesis holds for $L=0$ and proves both directions of the corrected s
 marked proposed. `E-HAT-1.A-8` is settled: `proofs/cards/SubgroupFiniteness.lean` proves that a group with a finite
 generating family has finitely many subgroups of a given nonzero index, with no `sorryAx`.
 
+Two proof repairs made while reading Hatcher now have certificates: the group data of `E-HAT-2.3-1`
+(`proofs/cards/MooreSpaceExactness.lean`, with the Moore complex in `DeltaComplexHomology.sage`) and the
+coordinate step of the converse of `E-HAT-3.A-6` (`proofs/cards/TorTorsion.lean`). Both files are explicit that
+the topological or Tor-theoretic identifications around them are cited from Hatcher and from standard theory
+rather than formalized. The repairs that remain uncertified are listed, card by card, in
+[proofs/README.md](proofs/README.md); that list is the record of the obligation, and no section audit may be
+reported as leaving nothing outstanding while it is nonempty.
+
 `ad-text-hat02` is partly read, against the book itself
 (`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §3.3 and for §3.A and §3.B; proofs
 are read for §1.1, §1.2, §1.A, §1.B-1..-4, §2.1-1..-17 and all of §2.2, §2.3, §3.1, §3.2, §3.3, §3.A
