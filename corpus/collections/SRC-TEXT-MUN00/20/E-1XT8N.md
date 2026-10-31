@@ -43,7 +43,10 @@ $h$ is continuous if and only if $\boxed{\sup_i a_i<\infty}$.
 
 ::: pf-proof
 Suppose $M=\sup_ia_i<\infty$, and let $0<\varepsilon\le1$.
-If $\bar\rho(\mathbf x,\mathbf y)<\min\{\varepsilon/M,1\}$, then $\abs{x_i-y_i}<\varepsilon/M$ for every $i$, so $\abs{a_ix_i-a_iy_i}<\varepsilon$ and $\bar\rho(h\mathbf x,h\mathbf y)\le\varepsilon$.
+If $\bar\rho(\mathbf x,\mathbf y)<\min\{\varepsilon/M,1\}$, then $\abs{x_i-y_i}\le\bar\rho(\mathbf x,\mathbf y)$ for every $i$, so
+$$
+\bar\rho(h\mathbf x,h\mathbf y)\le M\bar\rho(\mathbf x,\mathbf y)<\varepsilon.
+$$
 
 Suppose $(a_i)$ is unbounded, and let $\delta\in(0,1)$.
 Choose $k$ with $a_k>1/\delta$, and let $\mathbf y$ have $k$-th coordinate $\delta/2$ and all other coordinates $0$.
