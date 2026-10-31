@@ -283,7 +283,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-TEXT-SMI
   - [x] SRC-TEXT-SS03
   - [x] SRC-TEXT-SS03-FOURIER
-  - [ ] SRC-TEXT-SS05
+  - [x] SRC-TEXT-SS05
   - [ ] SRC-TOP-2002Q1
   - [ ] SRC-TOP-2011Q2
   - [ ] SRC-TOP-2012Q1
