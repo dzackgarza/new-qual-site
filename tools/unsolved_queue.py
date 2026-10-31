@@ -47,7 +47,7 @@ def queue_entry_from_text(
 def incremental_from_range(root: Path, base: str) -> str:
     """Project Queue C from committed HEAD, without parsing historical card YAML.
 
-    The push gate uses the range to detect corpus changes. Once triggered, every
+    The incremental mode uses the range to detect corpus changes. Once triggered, every
     current committed card determines the queue; deleted paths and retired IDs
     disappear without interpreting an older schema or invalid historical YAML.
     Neither staged nor unstaged corpus content participates.
