@@ -14,6 +14,10 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-corrected
+  by: gpt-6.1-sol
+  date: 2026-10-31
+  note: 'The source writes f(x)>n for a vector-valued map. Escape to infinity means the norm of f(x) exceeds n outside a compact set.'
 ---
 
 ::: {.exercise}
@@ -24,7 +28,7 @@ Theorem.
 Let $X$ be a locally compact Hausdorff space with a countable basis, such that every compact subspace of $X$ has topological dimension at most $m$.
 Then $X$ is homeomorphic to a closed subspace of $\RR^{2m+1}$.
 
-If $f: X \to \RR^N$ is a continuous map, we say $f(x) \to \infty$ as $x \to \infty$ if given $n$, there is a compact subspace $C$ of $X$ such that $f(x) > n$ for $x \in X - C$.
+If $f: X \to \RR^N$ is a continuous map, we say $f(x) \to \infty$ as $x \to \infty$ if given $n$, there is a compact subspace $C$ of $X$ such that $\norm{f(x)} > n$ for $x \in X - C$.
 
 (a) Let $\bar{\rho}$ be the uniform metric on $\mathcal{C}(X, \RR^N)$.
 Show that if $f(x) \to \infty$ as $x \to \infty$ and $\bar{\rho}(f, g) < 1$, then $g(x) \to \infty$ as $x \to \infty$.
@@ -50,6 +54,8 @@ Show that $U_\epsilon(C)$ is open in $\mathcal{C}(X, \RR^N)$.
 :::
 
 ::: {.solution}
+The locally compact second-countable Hausdorff space $X$ is metrizable by the Urysohn metrization theorem. Fix a compatible metric $d$ on $X$. Use the maximum norm on $\RR^N$ and its uniform metric on the function space.
+
 ::: pf
 
 ::: {.pf-step #s1}
@@ -127,11 +133,11 @@ The set $S = \{(x_1, x_2) \in C \times C : d(x_1, x_2) \ge \varepsilon\}$ is com
 :::
 
 ::: pf-step
-If $f \in U_\varepsilon(C)$, the continuous function $(x_1, x_2) \mapsto \norm{f(x_1) - f(x_2)}$ is strictly positive on $S$, so it achieves a minimum $\delta = \min_S \norm{f(x_1) - f(x_2)} > 0$.
+If $S=\varnothing$, then $U_\varepsilon(C)$ is the whole function space. Otherwise, if $f \in U_\varepsilon(C)$, the continuous function $(x_1, x_2) \mapsto \norm{f(x_1) - f(x_2)}$ is strictly positive on compact $S$, so it achieves a minimum $\delta = \min_S \norm{f(x_1) - f(x_2)} > 0$.
 :::
 
 ::: pf-step
-If $\bar{\rho}(f, g) < \frac{\delta}{3}$, then for all $(x_1, x_2) \in S$: $$\norm{g(x_1) - g(x_2)} \ge \norm{f(x_1) - f(x_2)} - 2\bar{\rho}(f, g) \ge \delta - \frac{2\delta}{3} = \frac{\delta}{3} > 0.$$
+If $\bar{\rho}(f, g) < \min\{1,\delta/3\}$, then $\norm{f(x)-g(x)}\le\bar\rho(f,g)$ for every $x$, and for all $(x_1, x_2) \in S$: $$\norm{g(x_1) - g(x_2)} \ge \norm{f(x_1) - f(x_2)} - 2\bar{\rho}(f, g) > \delta - \frac{2\delta}{3} = \frac{\delta}{3} > 0.$$
 :::
 
 ::: pf-step
@@ -156,7 +162,7 @@ Given $f \in \mathcal{C}(X, \RR^N)$ and $\delta > 0$, choose $g_0 \in \mathcal{C
 :::
 
 ::: pf-step
-By the Tietze Extension Theorem, extend the coordinate functions of $g_0 - f\restrict_C: C \to [-\delta, \delta]^N$ to a continuous map $h: X \to [-\delta, \delta]^N$.
+The metrizable space $X$ is normal. By the Tietze extension theorem, extend the coordinate functions of $g_0 - f\restrict_C: C \to [-\delta, \delta]^N$ to a continuous map $h: X \to [-\delta, \delta]^N$.
 :::
 
 ::: pf-step
