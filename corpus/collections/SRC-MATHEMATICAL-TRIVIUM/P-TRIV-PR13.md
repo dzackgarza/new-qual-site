@@ -26,6 +26,10 @@ audit:
 (b) Find the mean time $m(x)$ of a random walk of the particle before it hits $A$ or $B$. Assume that $m(x) < \infty$. Check that if $p = q = \frac{1}{2}$ and $A = -B$, then $m(0) = B^2$. Hence the mean time of random walk is given by a square of distance traveled.
 :::
 
+::: {.remark}
+The source's Figure 8 shows one trajectory with $A = -5$, $B = 5$, and $x = 2$, which reaches $B$ after $7$ steps. Its caption writes "$A = -B = 5$", which contradicts $A \leqslant B$; the drawing places $A$ at $-5$.
+:::
+
 ::: {.solution}
 
 The particle moves left with probability $p$ and right with probability $q=1-p$. Put $N=B-A$ and $i=x-A$.
