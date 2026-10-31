@@ -29,6 +29,10 @@ $$
 where $c_\tau$ can be expressed in terms of the first three derivatives of $\Theta(z \thetaseparator \tau)$, with respect to $z$, at $z = 1/2 + \tau/2$. Compare this formula with the result in Exercise 5 in the previous chapter.
 :::
 
+::: {.remark}
+The source says "the first two derivatives". The constant term of the Laurent expansion at $z_0 = 1/2 + \tau/2$ involves $\Theta'''(z_0 \thetaseparator \tau)$, which the relation $\Theta(z_0 - w \thetaseparator \tau) = -e^{2\pi i w}\Theta(z_0 + w \thetaseparator \tau)$ does not eliminate; that relation gives only $\Theta''(z_0 \thetaseparator \tau) = -2\pi i\,\Theta'(z_0 \thetaseparator \tau)$.
+:::
+
 ::: {.solution}
 Let
 $$

@@ -31,6 +31,10 @@ $$
 and it suffices to take $y = A m^{-1/2}$ where $A$ is a large constant, and use the fact that the sequence $p(n)$ is increasing.]
 :::
 
+::: {.remark}
+The source does not restrict $n$. The lower bound fails at $n = 1$ for every $c_1 > 0$, because $p(1) = 1 < e^{c_1}$; it holds for $n \geq 2$. The sequence $p(n)$ is nondecreasing, not increasing: $p(0) = p(1) = 1$.
+:::
+
 ::: {.solution}
 Let $F(e^{-y}) = \sum_{k\ge0} p(k) e^{-ky}$ for $y > 0$. By [[E-SS10.EX-5]], $\log F(e^{-y})\sim\frac{\pi^2}{6(1-e^{-y})}\sim\frac{\pi^2}{6y}$ as $y\to0^+$, so there are constants $C,c,C_0,c_0>0$ with
 $$C_0e^{c_0/y}\le F(e^{-y})\le Ce^{c/y}\qquad(0<y\le1).$$

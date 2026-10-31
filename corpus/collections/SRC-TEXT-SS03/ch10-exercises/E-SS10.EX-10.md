@@ -28,7 +28,11 @@ Observe the following irregularities of the functions $r_2(n)$ and $r_4(n)$ as $
 
 (b) $r_4(n) = 24$ for infinitely many $n$ while $\limsup_{n \to \infty} r_4(n)/n = \infty$.
 
-[Hint: For (a) consider $n = 5^k$; for (b) consider alternatively $n = 2^k$, and $n = q^k$ using products of many distinct odd primes.]
+[Hint: For (a) consider $n = 5^k$; for (b) consider alternatively $n = 2^k$, and $n = q^k$ where $q$ is odd and large.]
+:::
+
+::: {.remark}
+The hint's second family does not give the $\limsup$: for an odd prime $q$, $r_4(q^k)/q^k = 8(1 + q^{-1} + \cdots + q^{-k}) < 8q/(q-1) \le 12$. The solution uses products of the first $k$ odd primes.
 :::
 
 ::: {.solution}
