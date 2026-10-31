@@ -22,6 +22,10 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Proved irreducibility, constructed F4, computed the degree-two splitting field and Frobenius Galois group, and corrected the radical-extension conclusion under the standard definition."
+- event: source-corrected
+  by: chatgpt
+  date: 2026-10-31
+  note: "The packet asks to prove the root field is not radical, but alpha^3=1 in F2, so F4=F2(alpha) is a one-step radical extension."
 ---
 
 ::: {.exercise}
@@ -188,11 +192,4 @@ $$
 
 :::
 
-:::
-
-::: {.remark}
-The source asks for a proof that the root field is not a radical extension.
-Under the standard definition that claim is false: a root $\alpha$ of
-$X^2+X+1$ satisfies $\alpha^3=1\in\mathbf F_2$, so
-$\mathbf F_4=\mathbf F_2(\alpha)$ is a one-step radical extension.
 :::
