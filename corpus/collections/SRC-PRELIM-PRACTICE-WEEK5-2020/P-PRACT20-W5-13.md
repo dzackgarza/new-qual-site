@@ -6,7 +6,9 @@ title: Boolean rings are commutative
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Rings
+  - Idempotents
 relations: []
 review: draft
 audit:

@@ -6,7 +6,10 @@ title: Kernels of homomorphisms are normal subgroups
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Groups
+  - Normal Subgroups
+  - Homomorphisms
 relations: []
 review: draft
 audit:

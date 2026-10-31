@@ -6,7 +6,9 @@ title: A unique element of order $2$ is central
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Groups
+  - Center of a Group
 relations: []
 review: draft
 audit:
@@ -17,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $G$ is a group and $x \in G$ is only element in $G$ of order $2$. Show that $xa = ax$ for all $a \in G$.
+Suppose $G$ is a group and $x \in G$ is the only element in $G$ of order $2$. Show that $xa = ax$ for all $a \in G$.
 :::
 
 ::: {.solution}

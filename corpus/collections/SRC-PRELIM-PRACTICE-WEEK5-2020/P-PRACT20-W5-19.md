@@ -6,7 +6,8 @@ title: The region $\abs{z-a}<\abs{z-b}$ in $\CC$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Numbers
 relations: []
 review: draft
 audit:

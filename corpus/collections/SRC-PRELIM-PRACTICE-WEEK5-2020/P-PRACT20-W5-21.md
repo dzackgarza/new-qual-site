@@ -6,7 +6,9 @@ title: Nonexistence of $\lim_{z\to0}\bar z^2/z^2$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
+  - Limits
 relations: []
 review: draft
 audit:

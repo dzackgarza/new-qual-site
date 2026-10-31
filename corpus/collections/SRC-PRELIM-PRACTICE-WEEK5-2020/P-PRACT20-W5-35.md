@@ -6,7 +6,11 @@ title: Entire functions of linear growth are linear polynomials
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
+  - Entire Functions
+  - Liouville's Theorem
+  - Cauchy Estimates
 relations: []
 review: draft
 audit:
@@ -17,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f : \CC \to \CC$ is an entire function such that $\abs{f(z)} \leq C\abs{z}$ for all $z$ sufficienty large. Prove that $f(z) = c_1 + c_2 z$ for some constants $c_1, c_2$. [Note: this is a generalization of Liouville’s Theorem. It can actually be generalized further: if $f$ is entire and $\abs{f(z)} \leq C\abs{z}^n$ for sufficiently large $z$, then $f$ is a polynomial of degree $\leq n$.]
+Suppose that $f : \CC \to \CC$ is an entire function such that $\abs{f(z)} \leq C\abs{z}$ for all $z$ sufficiently large. Prove that $f(z) = c_1 + c_2 z$ for some constants $c_1, c_2$. [Note: this is a generalization of Liouville’s Theorem. It can actually be generalized further: if $f$ is entire and $\abs{f(z)} \leq C\abs{z}^n$ for sufficiently large $z$, then $f$ is a polynomial of degree $\leq n$.]
 :::
 
 ::: {.solution}

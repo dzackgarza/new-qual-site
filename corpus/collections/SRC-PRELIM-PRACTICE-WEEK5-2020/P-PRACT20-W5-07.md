@@ -6,13 +6,17 @@ title: A group is not a union of two proper subgroups but can be a union of thre
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Groups
+  - Subgroups
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-Show that a group is never the union of two of its proper subgroups. Show by example that a group can be the union of three of its proper subgroups.
+(a) Show that a group is never the union of two of its proper subgroups.
+
+(b) Show by example that a group can be the union of three of its proper subgroups.
 :::
 
 ::: {.solution}

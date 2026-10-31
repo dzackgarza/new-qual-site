@@ -6,7 +6,10 @@ title: Image of the imaginary axis under a real-valued entire function
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
+  - Entire Functions
+  - Open Mapping Theorem
 relations: []
 review: draft
 audit:
@@ -19,7 +22,13 @@ audit:
 ::: {.problem}
 If $f$ is an entire function which maps the complex plane into the real axis, then which of the following are the possible images of the imaginary axis under $f$?
 
-(a) the point $0$ (b) any arbitrary point in $\RR$ (c) a half line (i.e., a set $(a, \infty)$ or $(-\infty, a)$) (d) the whole real line
+(a) the point $0$
+
+(b) any arbitrary point in $\RR$
+
+(c) a half line (i.e., a set $(a, \infty)$ or $(-\infty, a)$)
+
+(d) the whole real line
 :::
 
 ::: {.solution}

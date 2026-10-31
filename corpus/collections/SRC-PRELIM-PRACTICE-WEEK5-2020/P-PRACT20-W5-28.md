@@ -6,7 +6,10 @@ title: Contour integral of $\sin z-\frac{\cos z}{z-\pi/4}$ around $\abs{z}=\pi$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
+  - Contour Integration
+  - Cauchy Integral Formula
 relations: []
 review: draft
 audit:

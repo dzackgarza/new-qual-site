@@ -6,7 +6,8 @@ title: Computing $(1+i)^{10}$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Numbers
 relations: []
 review: draft
 audit:

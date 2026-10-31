@@ -6,7 +6,10 @@ title: The integral $\int_0^{2\pi}e^{e^{it}}\,dt$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
+  - Contour Integration
+  - Cauchy Integral Formula
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Laurent expansions of $\frac1{z(z^2+1)}$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
+  - Laurent Series
 relations: []
 review: draft
 audit:

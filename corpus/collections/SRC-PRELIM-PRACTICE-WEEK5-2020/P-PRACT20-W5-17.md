@@ -6,7 +6,9 @@ title: A cancellative semigroup with finite cyclic subsemigroups is a group
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Groups
+  - Semigroups
 relations: []
 review: draft
 audit:

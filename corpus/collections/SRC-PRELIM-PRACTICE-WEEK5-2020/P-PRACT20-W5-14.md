@@ -6,7 +6,10 @@ title: Which of $p$, $p+q$, $pq$, $p^q$, $q^p$ lie in a proper subgroup of $\ZZ$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Groups
+  - Subgroups
+  - Cyclic Groups
 relations: []
 review: draft
 audit:

@@ -6,7 +6,10 @@ title: The integral $\int_{-\infty}^\infty\frac{dx}{1+x^4}$ by residues
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 audit:

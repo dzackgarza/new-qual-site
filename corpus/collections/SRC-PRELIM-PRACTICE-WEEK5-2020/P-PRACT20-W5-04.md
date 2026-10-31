@@ -6,7 +6,9 @@ title: Endomorphisms of the group $\{1,i,-1,-i\}$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Cyclic Groups
+  - Homomorphisms
 relations: []
 review: draft
 audit:
@@ -136,8 +138,7 @@ $1$ to $-1$.
 
 ::: pf-qed
 
-Step [](#s1-4){.pf-ref} gives the complete list, and step [](#s1-5){.pf-ref} corrects the erroneous map
-in the supplied source solution.
+Step [](#s1-4){.pf-ref} gives the complete list, and step [](#s1-5){.pf-ref} identifies the homomorphism with $\phi(i)=-i$.
 
 :::
 

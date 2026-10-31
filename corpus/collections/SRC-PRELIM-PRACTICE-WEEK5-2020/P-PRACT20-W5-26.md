@@ -6,7 +6,10 @@ title: Contour integral of a polynomial around a circle
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
+  - Contour Integration
+  - Cauchy's Theorem
 relations: []
 review: draft
 audit:

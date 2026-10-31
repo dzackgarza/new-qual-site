@@ -6,7 +6,9 @@ title: $C[0,1]$ is not an integral domain
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Rings
+  - Integral Domains
 relations: []
 review: draft
 audit:

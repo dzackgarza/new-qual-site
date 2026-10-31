@@ -6,7 +6,9 @@ title: Units digit of $2019^{2019}$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Number Theory
+  - Modular Arithmetic
 relations: []
 review: draft
 audit:

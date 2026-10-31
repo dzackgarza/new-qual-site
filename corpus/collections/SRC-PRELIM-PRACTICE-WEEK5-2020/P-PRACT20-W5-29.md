@@ -6,7 +6,10 @@ title: Contour integral of $\frac{\cosh\pi z}{z(z^2+1)}$ around $\abs{z}=2$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 audit:

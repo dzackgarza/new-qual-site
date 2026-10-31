@@ -6,7 +6,9 @@ title: Singular $2\times2$ matrices of trace $1$ over $\FF_p$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Finite Fields
+  - Matrices
 relations: []
 review: draft
 audit:

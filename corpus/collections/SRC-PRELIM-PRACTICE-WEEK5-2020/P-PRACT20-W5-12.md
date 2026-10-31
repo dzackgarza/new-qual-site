@@ -6,7 +6,10 @@ title: A ring with exactly two right ideals is a division ring
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Rings
+  - Ideals
+  - Division Rings
 relations: []
 review: draft
 audit:

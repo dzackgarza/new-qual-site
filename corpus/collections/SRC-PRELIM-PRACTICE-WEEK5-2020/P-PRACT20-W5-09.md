@@ -6,7 +6,10 @@ title: Possible orders of a group with an element of order $7$ and no involution
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Groups
+  - Lagrange's Theorem
+  - Cauchy's Theorem
 relations: []
 review: draft
 audit:
@@ -19,7 +22,15 @@ audit:
 ::: {.problem}
 Suppose that a group has an element of order $7$ but no element which is its own inverse (other than the identity). Which of the following is a possible order for this group?
 
-(a) $27$ (b) $28$ (c) $35$ (d) $37$ (e) $42$
+(a) $27$
+
+(b) $28$
+
+(c) $35$
+
+(d) $37$
+
+(e) $42$
 :::
 
 ::: {.solution}

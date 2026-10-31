@@ -6,7 +6,9 @@ title: A polynomial in the primitive fifth root of unity $e^{2\pi i/5}$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Numbers
+  - Roots of Unity
 relations: []
 review: draft
 audit:

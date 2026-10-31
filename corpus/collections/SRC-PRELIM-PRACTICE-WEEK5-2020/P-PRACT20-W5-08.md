@@ -6,7 +6,9 @@ title: Automorphism and inner automorphism groups
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Groups
+  - Automorphisms
 relations: []
 review: draft
 audit:
@@ -17,7 +19,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a group and define $\Aut(G)$ to be the set of all isomorphisms of $G$ to itself. Prove that $\Aut(G)$ is a group under the operation of functional composition. For each $g \in G$, define the map $\phi_g(x) = gxg^{-1}$ for $x \in G$ and let $\operatorname{Inn}(G) = \{\phi_g : g \in G\}$. Show that $\operatorname{Inn}(G)$ is a subgroup of $\Aut(G)$. What does $\operatorname{Inn}(G)$ look like if $G$ is abelian?
+Let $G$ be a group and define $\Aut(G)$ to be the set of all isomorphisms of $G$ to itself. For each $g \in G$, define the map $\phi_g(x) = gxg^{-1}$ for $x \in G$ and let $\operatorname{Inn}(G) = \{\phi_g : g \in G\}$.
+
+(a) Prove that $\Aut(G)$ is a group under the operation of functional composition.
+
+(b) Show that $\operatorname{Inn}(G)$ is a subgroup of $\Aut(G)$.
+
+(c) What does $\operatorname{Inn}(G)$ look like if $G$ is abelian?
 :::
 
 ::: {.solution}

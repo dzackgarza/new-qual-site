@@ -6,7 +6,9 @@ title: Abelian groups of order $16$ and exponent dividing $4$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Abelian Groups
+  - Classification of Finitely Generated Abelian Groups
 relations: []
 review: draft
 audit:

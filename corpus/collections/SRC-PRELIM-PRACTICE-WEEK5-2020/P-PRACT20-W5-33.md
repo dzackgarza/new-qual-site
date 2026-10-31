@@ -6,7 +6,11 @@ title: Contour integral of $e^{1/(1-z)}/z$ around $\abs{z}=3$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
+  - Contour Integration
+  - Residues
+  - Laurent Series
 relations: []
 review: draft
 audit:

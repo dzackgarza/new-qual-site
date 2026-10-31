@@ -6,7 +6,10 @@ title: Group and ring endomorphisms of $\ZZ$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Groups
+  - Rings
+  - Homomorphisms
 relations: []
 review: draft
 audit:

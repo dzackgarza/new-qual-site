@@ -6,7 +6,10 @@ title: The integral $\int_0^{2\pi}\frac{dx}{10-8\cos x}$ by residues
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Complex numbers with $z^2=\abs{z}^2$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Numbers
 relations: []
 review: draft
 audit:

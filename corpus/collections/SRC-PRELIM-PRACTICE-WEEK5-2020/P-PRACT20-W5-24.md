@@ -6,7 +6,10 @@ title: Harmonic conjugate of $2x+3y$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
+  - Harmonic Functions
+  - Cauchy-Riemann
 relations: []
 review: draft
 audit:
