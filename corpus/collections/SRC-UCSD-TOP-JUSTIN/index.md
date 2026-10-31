@@ -114,6 +114,8 @@ source:
     comment: Sheet 6, Problem 6
   - id: P-UCTOP290-S6-7
     comment: Sheet 6, Problem 7
+  - id: P-CPUQK
+    comment: Sheet 6, Problem 8
   - P-AMD-M3CYGD2R
   - P-AMD-DDQM3X6Q
   - P-AMD-6KL53YZC
