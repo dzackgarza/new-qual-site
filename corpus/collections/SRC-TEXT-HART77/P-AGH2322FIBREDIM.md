@@ -554,23 +554,13 @@ which is constructible because $f(X)$ is constructible by Hartshorne II.3.19.  F
 The generic fibre $X_\eta$, where $\eta$ is the generic point of $Y$, is integral and has dimension $e$.
 
 ::: pf-proof
-Work on affine neighborhoods
+Choose an affine neighborhood $Y_0=\Spec B$ of $\eta$ and cover $f^{-1}(Y_0)$ by nonempty affine opens $X_i=\Spec A_i$. Dominance and integrality give inclusions $B\hookrightarrow A_i$ of domains. With $S=B\setminus\{0\}$, the corresponding affine opens of the generic fibre have coordinate rings
 $$
-Y_0=\Spec B,
-\qquad
-X_0=\Spec A
+S^{-1}A_i.
 $$
-of the generic points, with $B\hookrightarrow A$ an inclusion of domains.
-The generic fibre has coordinate ring
-$$
-S^{-1}A,
-\qquad
-S=B\setminus\{0\},
-$$
-which is a domain.
-Thus $X_\eta$ is integral.
+Each is a domain, and each contains the point induced by the generic point of $X$. They cover $X_\eta$, so the fibre is reduced and irreducible, hence integral.
 
-Its function field is $K(X)$ and its ground field is
+The fraction field of each $S^{-1}A_i$ is $K(X)$. Thus the function field of $X_\eta$ is $K(X)$, while its ground field is
 $$
 \kappa(\eta)=K(Y).
 $$
