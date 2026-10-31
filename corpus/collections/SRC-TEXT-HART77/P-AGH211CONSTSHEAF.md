@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $A$ be an abelian group and let $X$ be a topological space.
-Define the **constant presheaf** associated to $A$ on $X$ to be the presheaf $U \mapsto A$ for all $U \neq \varnothing$, with all restriction maps the identity.
+Define the \dfn{constant presheaf} associated to $A$ on $X$ to be the presheaf $U \mapsto A$ for all $U \neq \varnothing$, with all restriction maps the identity.
 Show that the constant sheaf $\mca$ defined in the text is the sheaf associated to this presheaf.
 
 Recall that the constant sheaf $\mca$ of the text is defined by giving $A$ the discrete topology and setting $\mca(U)$ to be the group of continuous maps $U \to A$.

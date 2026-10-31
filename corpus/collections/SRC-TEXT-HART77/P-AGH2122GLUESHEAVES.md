@@ -34,7 +34,7 @@ such that
 (ii) for each $i, j, k$, $\phi_{ik} = \phi_{jk} \circ \phi_{ij}$ on $U_i \intersect U_j \intersect U_k$.
 
 Show that there exists a unique sheaf $\mcf$ on $X$, together with isomorphisms $\psi_i: \restrictionof{\mcf}{U_i} \to \mcf_i$, such that for each $i, j$ one has $\psi_j = \phi_{ij} \circ \psi_i$ on $U_i \intersect U_j$.
-We say that $\mcf$ is obtained by **glueing** the sheaves $\mcf_i$ via the isomorphisms $\phi_{ij}$.
+We say that $\mcf$ is obtained by \dfn{glueing} the sheaves $\mcf_i$ via the isomorphisms $\phi_{ij}$.
 :::
 
 ::: {.solution}
@@ -44,7 +44,7 @@ $$
 $$
 Indeed, on $U_i\cap U_j$ one has
 $$
-\operatorname{id}
+\id
 =\phi_{ii}
 =\phi_{ji}\circ\phi_{ij}.
 $$
@@ -55,13 +55,13 @@ $$
 
 For every open set $V\subseteq X$, define
 $$
-\mathcal F(V)
+\mcf(V)
 $$
 to be the set of tuples
 $$
 (s_i)_i,
 \qquad
-s_i\in\mathcal F_i(V\cap U_i),
+s_i\in\mcf_i(V\cap U_i),
 $$
 such that for every pair $i,j$,
 $$
@@ -83,13 +83,13 @@ This is the natural compatibility condition saying that the local sections $s_i$
 
 ::: {.pf-step #s2}
 
-Componentwise restriction makes $\mathcal F$ a presheaf on $X$.
+Componentwise restriction makes $\mcf$ a presheaf on $X$.
 
 ::: pf-proof
 
 Let $W\subseteq V$ and let
 $$
-s=(s_i)_i\in\mathcal F(V).
+s=(s_i)_i\in\mcf(V).
 $$
 Define
 $$
@@ -105,7 +105,7 @@ $$
 =
 s_j\restrict_{W\cap U_i\cap U_j},
 $$
-because $\phi_{ij}$ is a morphism of sheaves and hence commutes with restrictions.  Thus the restricted tuple lies in $\mathcal F(W)$.
+because $\phi_{ij}$ is a morphism of sheaves and hence commutes with restrictions.  Thus the restricted tuple lies in $\mcf(W)$.
 
 Identity and composition laws hold componentwise, so these maps define a presheaf.
 
@@ -115,7 +115,7 @@ Identity and composition laws hold componentwise, so these maps define a preshea
 
 ::: {.pf-step #s3}
 
-The presheaf $\mathcal F$ satisfies the sheaf uniqueness axiom.
+The presheaf $\mcf$ satisfies the sheaf uniqueness axiom.
 
 ::: pf-proof
 
@@ -129,7 +129,7 @@ s=(s_i)_i,
 \qquad
 t=(t_i)_i
 $$
-in $\mathcal F(V)$ have equal restrictions to every $V_\alpha$.
+in $\mcf(V)$ have equal restrictions to every $V_\alpha$.
 
 Fix $i$.  Then
 $$
@@ -137,7 +137,7 @@ s_i\restrict_{V_\alpha\cap U_i}
 =
 t_i\restrict_{V_\alpha\cap U_i}
 $$
-for every $\alpha$.  The opens $V_\alpha\cap U_i$ cover $V\cap U_i$, and $\mathcal F_i$ is a sheaf, so
+for every $\alpha$.  The opens $V_\alpha\cap U_i$ cover $V\cap U_i$, and $\mcf_i$ is a sheaf, so
 $$
 s_i=t_i.
 $$
@@ -149,7 +149,7 @@ This holds for every $i$, hence $s=t$.
 
 ::: {.pf-step #s4}
 
-The presheaf $\mathcal F$ satisfies the sheaf gluing axiom.
+The presheaf $\mcf$ satisfies the sheaf gluing axiom.
 
 ::: pf-proof
 
@@ -162,7 +162,7 @@ $$
 s^{(\alpha)}
 =
 (s_i^{(\alpha)})_i
-\in\mathcal F(V_\alpha)
+\in\mcf(V_\alpha)
 $$
 are given.
 
@@ -170,11 +170,11 @@ Fix $i$.  The sections
 $$
 s_i^{(\alpha)}
 \in
-\mathcal F_i(V_\alpha\cap U_i)
+\mcf_i(V_\alpha\cap U_i)
 $$
-agree on overlaps because the tuples $s^{(\alpha)}$ do.  Since $\mathcal F_i$ is a sheaf, they glue uniquely to
+agree on overlaps because the tuples $s^{(\alpha)}$ do.  Since $\mcf_i$ is a sheaf, they glue uniquely to
 $$
-s_i\in\mathcal F_i(V\cap U_i).
+s_i\in\mcf_i(V\cap U_i).
 $$
 
 We must check that the tuple
@@ -199,13 +199,13 @@ These opens cover
 $$
 V\cap U_i\cap U_j,
 $$
-so uniqueness in the sheaf $\mathcal F_j$ gives
+so uniqueness in the sheaf $\mcf_j$ gives
 $$
 \phi_{ij}(s_i)=s_j
 $$
 on the whole overlap.  Thus
 $$
-s\in\mathcal F(V).
+s\in\mcf(V).
 $$
 
 By construction it restricts to every $s^{(\alpha)}$, and uniqueness follows from step [](#s3){.pf-ref}.
@@ -216,7 +216,7 @@ By construction it restricts to every $s^{(\alpha)}$, and uniqueness follows fro
 
 ::: {.pf-step #s5}
 
-Hence $\mathcal F$ is a sheaf on $X$.
+Hence $\mcf$ is a sheaf on $X$.
 
 ::: pf-proof
 
@@ -231,9 +231,9 @@ Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give the presheaf 
 For every $i$, projection to the $i$th component defines a morphism of sheaves on $U_i$,
 $$
 \psi_i:
-\mathcal F\restrict_{U_i}
+\mcf\restrict_{U_i}
 \longrightarrow
-\mathcal F_i.
+\mcf_i.
 $$
 
 ::: pf-proof
@@ -244,13 +244,13 @@ V\subseteq U_i
 $$
 and
 $$
-s=(s_j)_j\in\mathcal F(V),
+s=(s_j)_j\in\mcf(V),
 $$
 define
 $$
 (\psi_i)_V(s)=s_i.
 $$
-These projections commute with restriction because restrictions in $\mathcal F$ are componentwise.
+These projections commute with restriction because restrictions in $\mcf$ are componentwise.
 
 :::
 
@@ -268,7 +268,7 @@ V\subseteq U_i.
 $$
 Given
 $$
-t\in\mathcal F_i(V),
+t\in\mcf_i(V),
 $$
 define for every $j$
 $$
@@ -277,7 +277,7 @@ s_j
 \phi_{ij}
 \bigl(t\restrict_{V\cap U_j}\bigr)
 \in
-\mathcal F_j(V\cap U_j).
+\mcf_j(V\cap U_j).
 $$
 Here on $V\cap U_j$ the map $\phi_{ij}$ is understood after restricting to
 $$
@@ -297,7 +297,7 @@ s_k
 $$
 on $V\cap U_j\cap U_k$.  Thus
 $$
-(s_j)_j\in\mathcal F(V).
+(s_j)_j\in\mcf(V).
 $$
 
 Its $i$th component is
@@ -307,7 +307,7 @@ s_i
 $$
 so this construction is a right inverse to $(\psi_i)_V$.
 
-Conversely, if $s=(s_j)_j\in\mathcal F(V)$, compatibility with the $i$th component says
+Conversely, if $s=(s_j)_j\in\mcf(V)$, compatibility with the $i$th component says
 $$
 s_j
 =
@@ -332,7 +332,7 @@ $$
 
 ::: pf-proof
 
-For a compatible tuple $s=(s_k)_k$, the defining condition of $\mathcal F$ gives
+For a compatible tuple $s=(s_k)_k$, the defining condition of $\mcf$ gives
 $$
 s_j=\phi_{ij}(s_i)
 $$
@@ -346,15 +346,15 @@ on the overlap.  Since $\psi_i$ and $\psi_j$ are the corresponding component pro
 
 The pair
 $$
-(\mathcal F,\{\psi_i\})
+(\mcf,\{\psi_i\})
 $$
 is unique up to a unique isomorphism compatible with all the $\psi_i$.
 
 ::: pf-proof
 
-Suppose $\mathcal G$ is another sheaf on $X$ with isomorphisms
+Suppose $\mcg$ is another sheaf on $X$ with isomorphisms
 $$
-\chi_i:\mathcal G\restrict_{U_i}\xrightarrow{\sim}\mathcal F_i
+\chi_i:\mcg\restrict_{U_i}\xrightarrow{\sim}\mcf_i
 $$
 satisfying
 $$
@@ -364,7 +364,7 @@ on every overlap.
 
 For an open $V\subseteq X$ and a section
 $$
-t\in\mathcal G(V),
+t\in\mcg(V),
 $$
 define
 $$
@@ -376,11 +376,11 @@ $$
 $$
 The overlap condition on the $\chi_i$ says exactly that this tuple is compatible in the sense of step [](#s1){.pf-ref}.  Hence
 $$
-\Theta_V(t)\in\mathcal F(V).
+\Theta_V(t)\in\mcf(V).
 $$
 The construction commutes with restrictions, so it defines a sheaf morphism
 $$
-\Theta:\mathcal G\longrightarrow\mathcal F.
+\Theta:\mcg\longrightarrow\mcf.
 $$
 
 On $U_i$ one has
@@ -392,7 +392,7 @@ Since both $\psi_i$ and $\chi_i$ are isomorphisms, $\Theta$ restricts to an isom
 
 If
 $$
-\Theta':\mathcal G\to\mathcal F
+\Theta':\mcg\to\mcf
 $$
 is another morphism compatible with all local identifications, then
 $$
@@ -408,10 +408,10 @@ for every $i$.  Since the $U_i$ cover $X$, the two sheaf morphisms are equal.  T
 
 ::: {.pf-step #s10}
 
-Therefore the sheaves $\mathcal F_i$ glue along the cocycle $\phi_{ij}$ to a sheaf $\mathcal F$ on $X$, uniquely up to the unique compatible isomorphism:
+Therefore the sheaves $\mcf_i$ glue along the cocycle $\phi_{ij}$ to a sheaf $\mcf$ on $X$, uniquely up to the unique compatible isomorphism:
 $$
 \boxed{
-\mathcal F\restrict_{U_i}\cong\mathcal F_i,
+\mcf\restrict_{U_i}\cong\mcf_i,
 \qquad
 \psi_j=\phi_{ij}\psi_i.
 }

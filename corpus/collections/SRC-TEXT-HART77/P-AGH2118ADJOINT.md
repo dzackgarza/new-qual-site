@@ -30,15 +30,15 @@ Use these maps to show that there is a natural bijection of sets, for any sheave
 $$
 \Hom_X(\inverseof{f} \mcg, \mcf) = \Hom_Y(\mcg, f_* \mcf).
 $$
-Hence $\inverseof{f}$ is a **left adjoint** of $f_*$, and $f_*$ is a **right adjoint** of $\inverseof{f}$.
+Hence $\inverseof{f}$ is a \dfn{left adjoint} of $f_*$, and $f_*$ is a \dfn{right adjoint} of $\inverseof{f}$.
 :::
 
 ::: {.solution}
-Recall that for a sheaf $\mathcal G$ on $Y$, the inverse-image sheaf $f^{-1}\mathcal G$ is the sheaf associated to the presheaf
+Recall that for a sheaf $\mcg$ on $Y$, the inverse-image sheaf $f^{-1}\mcg$ is the sheaf associated to the presheaf
 $$
-\mathcal P_{\mathcal G}(U)
+\mcp_{\mcg}(U)
 =
-\varinjlim_{f(U)\subseteq V}\mathcal G(V),
+\varinjlim_{f(U)\subseteq V}\mcg(V),
 $$
 where $V$ runs over open neighborhoods of $f(U)$ in $Y$.
 
@@ -46,11 +46,11 @@ where $V$ runs over open neighborhoods of $f(U)$ in $Y$.
 
 ::: {.pf-step #s1}
 
-For every sheaf $\mathcal F$ on $X$ there is a natural morphism
+For every sheaf $\mcf$ on $X$ there is a natural morphism
 $$
 \boxed{
-\varepsilon_{\mathcal F}:
-f^{-1}f_*\mathcal F\longrightarrow\mathcal F.
+\varepsilon_{\mcf}:
+f^{-1}f_*\mcf\longrightarrow\mcf.
 }
 $$
 
@@ -58,13 +58,13 @@ $$
 
 Before sheafification, for an open $U\subseteq X$ one has
 $$
-\mathcal P_{f_*\mathcal F}(U)
+\mcp_{f_*\mcf}(U)
 =
 \varinjlim_{f(U)\subseteq V}
-(f_*\mathcal F)(V)
+(f_*\mcf)(V)
 =
 \varinjlim_{f(U)\subseteq V}
-\mathcal F(f^{-1}V).
+\mcf(f^{-1}V).
 $$
 For every such $V$,
 $$
@@ -72,23 +72,23 @@ U\subseteq f^{-1}V,
 $$
 so restriction gives
 $$
-\mathcal F(f^{-1}V)\longrightarrow\mathcal F(U).
+\mcf(f^{-1}V)\longrightarrow\mcf(U).
 $$
 These restriction maps are compatible as $V$ shrinks, hence induce
 $$
-\mathcal P_{f_*\mathcal F}(U)
+\mcp_{f_*\mcf}(U)
 \longrightarrow
-\mathcal F(U).
+\mcf(U).
 $$
 They commute with restriction in $U$, so define a presheaf morphism
 $$
-\mathcal P_{f_*\mathcal F}\longrightarrow\mathcal F.
+\mcp_{f_*\mcf}\longrightarrow\mcf.
 $$
-Since $\mathcal F$ is already a sheaf, the universal property of sheafification gives a unique sheaf morphism
+Since $\mcf$ is already a sheaf, the universal property of sheafification gives a unique sheaf morphism
 $$
-\varepsilon_{\mathcal F}:
-f^{-1}f_*\mathcal F
-\longrightarrow\mathcal F.
+\varepsilon_{\mcf}:
+f^{-1}f_*\mcf
+\longrightarrow\mcf.
 $$
 
 :::
@@ -97,11 +97,11 @@ $$
 
 ::: {.pf-step #s2}
 
-For every sheaf $\mathcal G$ on $Y$ there is a natural morphism
+For every sheaf $\mcg$ on $Y$ there is a natural morphism
 $$
 \boxed{
-\eta_{\mathcal G}:
-\mathcal G\longrightarrow f_*f^{-1}\mathcal G.
+\eta_{\mcg}:
+\mcg\longrightarrow f_*f^{-1}\mcg.
 }
 $$
 
@@ -109,7 +109,7 @@ $$
 
 Let $V\subseteq Y$ be open and take
 $$
-s\in\mathcal G(V).
+s\in\mcg(V).
 $$
 The open $V$ contains
 $$
@@ -117,17 +117,17 @@ f(f^{-1}V),
 $$
 so $s$ represents an element of
 $$
-\mathcal P_{\mathcal G}(f^{-1}V)
+\mcp_{\mcg}(f^{-1}V)
 =
-\varinjlim_{f(f^{-1}V)\subseteq W}\mathcal G(W).
+\varinjlim_{f(f^{-1}V)\subseteq W}\mcg(W).
 $$
 Passing to the associated sheaf gives a section
 $$
-\eta_{\mathcal G}(V)(s)
+\eta_{\mcg}(V)(s)
 \in
-(f^{-1}\mathcal G)(f^{-1}V)
+(f^{-1}\mcg)(f^{-1}V)
 =
-(f_*f^{-1}\mathcal G)(V).
+(f_*f^{-1}\mcg)(V).
 $$
 These maps commute with restriction in $V$, hence define the desired sheaf morphism.
 
@@ -137,36 +137,36 @@ These maps commute with restriction in $V$, hence define the desired sheaf morph
 
 ::: {.pf-step #s3}
 
-The maps $\varepsilon$ are natural in $\mathcal F$, and the maps $\eta$ are natural in $\mathcal G$.
+The maps $\varepsilon$ are natural in $\mcf$, and the maps $\eta$ are natural in $\mcg$.
 
 ::: pf-proof
 
 Let
 $$
-\alpha:\mathcal F\to\mathcal F'
+\alpha:\mcf\to\mcf'
 $$
 be a sheaf morphism on $X$.
 In the construction of step [](#s1){.pf-ref}, applying $\alpha$ before or after restricting
 $$
-\mathcal F(f^{-1}V)\to\mathcal F(U)
+\mcf(f^{-1}V)\to\mcf(U)
 $$
 gives the same result because $\alpha$ commutes with restrictions.
 Hence
 $$
-\varepsilon_{\mathcal F'}\circ f^{-1}f_*\alpha
+\varepsilon_{\mcf'}\circ f^{-1}f_*\alpha
 =
-\alpha\circ\varepsilon_{\mathcal F}.
+\alpha\circ\varepsilon_{\mcf}.
 $$
 
 Similarly, for
 $$
-\beta:\mathcal G\to\mathcal G'
+\beta:\mcg\to\mcg'
 $$
 on $Y$, applying $\beta$ to a representative section before or after the construction in step [](#s2){.pf-ref} gives
 $$
-f_*f^{-1}\beta\circ\eta_{\mathcal G}
+f_*f^{-1}\beta\circ\eta_{\mcg}
 =
-\eta_{\mathcal G'}\circ\beta.
+\eta_{\mcg'}\circ\beta.
 $$
 
 :::
@@ -178,34 +178,34 @@ $$
 The first triangle identity holds:
 $$
 \boxed{
-\varepsilon_{f^{-1}\mathcal G}
+\varepsilon_{f^{-1}\mcg}
 \circ
-f^{-1}\eta_{\mathcal G}
+f^{-1}\eta_{\mcg}
 =
-\operatorname{id}_{f^{-1}\mathcal G}.
+\id_{f^{-1}\mcg}.
 }
 $$
 
 ::: pf-proof
 
-A section of $f^{-1}\mathcal G$ is locally represented by a section
+A section of $f^{-1}\mcg$ is locally represented by a section
 $$
-s\in\mathcal G(V)
+s\in\mcg(V)
 $$
 on an open $V\subseteq Y$.
 Under
 $$
-f^{-1}\eta_{\mathcal G},
+f^{-1}\eta_{\mcg},
 $$
 that local representative is sent to the section of
 $$
-f^{-1}f_*f^{-1}\mathcal G
+f^{-1}f_*f^{-1}\mcg
 $$
 represented by the image of $s$ in
 $$
-(f^{-1}\mathcal G)(f^{-1}V).
+(f^{-1}\mcg)(f^{-1}V).
 $$
-The counit $\varepsilon_{f^{-1}\mathcal G}$ then restricts that section back to the open on which the original germ section was represented.
+The counit $\varepsilon_{f^{-1}\mcg}$ then restricts that section back to the open on which the original germ section was represented.
 By construction this returns exactly the original local section.
 
 Since the equality holds locally on a cover, the two sheaf morphisms are equal globally.
@@ -219,11 +219,11 @@ Since the equality holds locally on a cover, the two sheaf morphisms are equal g
 The second triangle identity holds:
 $$
 \boxed{
-f_*\varepsilon_{\mathcal F}
+f_*\varepsilon_{\mcf}
 \circ
-\eta_{f_*\mathcal F}
+\eta_{f_*\mcf}
 =
-\operatorname{id}_{f_*\mathcal F}.
+\id_{f_*\mcf}.
 }
 $$
 
@@ -231,20 +231,20 @@ $$
 
 Let $V\subseteq Y$ and
 $$
-s\in(f_*\mathcal F)(V)
-=\mathcal F(f^{-1}V).
+s\in(f_*\mcf)(V)
+=\mcf(f^{-1}V).
 $$
 The unit
 $$
-\eta_{f_*\mathcal F}
+\eta_{f_*\mcf}
 $$
 sends $s$ to the section of
 $$
-f^{-1}f_*\mathcal F
+f^{-1}f_*\mcf
 $$
 over $f^{-1}V$ represented by $s$ itself on the neighborhood $V$.
 
-The counit $\varepsilon_{\mathcal F}$ is defined by restricting such a representative from
+The counit $\varepsilon_{\mcf}$ is defined by restricting such a representative from
 $$
 f^{-1}V
 $$
@@ -258,24 +258,24 @@ to the open under consideration.  Here that open is already $f^{-1}V$, so it ret
 
 Given
 $$
-\alpha:f^{-1}\mathcal G\longrightarrow\mathcal F,
+\alpha:f^{-1}\mcg\longrightarrow\mcf,
 $$
 define
 $$
 \Phi(\alpha)
 :=
-\mathcal G
-\xrightarrow{\eta_{\mathcal G}}
-f_*f^{-1}\mathcal G
+\mcg
+\xrightarrow{\eta_{\mcg}}
+f_*f^{-1}\mcg
 \xrightarrow{f_*\alpha}
-f_*\mathcal F.
+f_*\mcf.
 $$
 Thus
 $$
 \Phi:
-\operatorname{Hom}_X(f^{-1}\mathcal G,\mathcal F)
+\Hom_X(f^{-1}\mcg,\mcf)
 \longrightarrow
-\operatorname{Hom}_Y(\mathcal G,f_*\mathcal F).
+\Hom_Y(\mcg,f_*\mcf).
 $$
 
 ::: pf-proof
@@ -290,24 +290,24 @@ Both arrows in the displayed composite are sheaf morphisms on $Y$, so their comp
 
 Given
 $$
-\beta:\mathcal G\longrightarrow f_*\mathcal F,
+\beta:\mcg\longrightarrow f_*\mcf,
 $$
 define
 $$
 \Psi(\beta)
 :=
-f^{-1}\mathcal G
+f^{-1}\mcg
 \xrightarrow{f^{-1}\beta}
-f^{-1}f_*\mathcal F
-\xrightarrow{\varepsilon_{\mathcal F}}
-\mathcal F.
+f^{-1}f_*\mcf
+\xrightarrow{\varepsilon_{\mcf}}
+\mcf.
 $$
 Thus
 $$
 \Psi:
-\operatorname{Hom}_Y(\mathcal G,f_*\mathcal F)
+\Hom_Y(\mcg,f_*\mcf)
 \longrightarrow
-\operatorname{Hom}_X(f^{-1}\mathcal G,\mathcal F).
+\Hom_X(f^{-1}\mcg,\mcf).
 $$
 
 ::: pf-proof
@@ -320,7 +320,7 @@ Again this is a composite of sheaf morphisms, now on $X$.
 
 ::: {.pf-step #s8}
 
-For every $\alpha:f^{-1}\mathcal G\to\mathcal F$,
+For every $\alpha:f^{-1}\mcg\to\mcf$,
 $$
 \Psi(\Phi(\alpha))=\alpha.
 $$
@@ -331,21 +331,21 @@ Expand the definitions:
 $$
 \Psi(\Phi(\alpha))
 =
-\varepsilon_{\mathcal F}
+\varepsilon_{\mcf}
 \circ
 f^{-1}(f_*\alpha)
 \circ
-f^{-1}\eta_{\mathcal G}.
+f^{-1}\eta_{\mcg}.
 $$
 By naturality of the counit from step [](#s3){.pf-ref},
 $$
-\varepsilon_{\mathcal F}
+\varepsilon_{\mcf}
 \circ
 f^{-1}f_*\alpha
 =
 \alpha
 \circ
-\varepsilon_{f^{-1}\mathcal G}.
+\varepsilon_{f^{-1}\mcg}.
 $$
 Hence
 $$
@@ -353,9 +353,9 @@ $$
 =
 \alpha
 \circ
-\varepsilon_{f^{-1}\mathcal G}
+\varepsilon_{f^{-1}\mcg}
 \circ
-f^{-1}\eta_{\mathcal G}.
+f^{-1}\eta_{\mcg}.
 $$
 The last two factors compose to the identity by step [](#s4){.pf-ref}, so the result is $\alpha$.
 
@@ -365,7 +365,7 @@ The last two factors compose to the identity by step [](#s4){.pf-ref}, so the re
 
 ::: {.pf-step #s9}
 
-For every $\beta:\mathcal G\to f_*\mathcal F$,
+For every $\beta:\mcg\to f_*\mcf$,
 $$
 \Phi(\Psi(\beta))=\beta.
 $$
@@ -376,19 +376,19 @@ Expanding gives
 $$
 \Phi(\Psi(\beta))
 =
-f_*\varepsilon_{\mathcal F}
+f_*\varepsilon_{\mcf}
 \circ
 f_*f^{-1}\beta
 \circ
-\eta_{\mathcal G}.
+\eta_{\mcg}.
 $$
 By naturality of the unit from step [](#s3){.pf-ref},
 $$
 f_*f^{-1}\beta
 \circ
-\eta_{\mathcal G}
+\eta_{\mcg}
 =
-\eta_{f_*\mathcal F}
+\eta_{f_*\mcf}
 \circ
 \beta.
 $$
@@ -396,9 +396,9 @@ Therefore
 $$
 \Phi(\Psi(\beta))
 =
-f_*\varepsilon_{\mathcal F}
+f_*\varepsilon_{\mcf}
 \circ
-\eta_{f_*\mathcal F}
+\eta_{f_*\mcf}
 \circ
 \beta.
 $$
@@ -413,9 +413,9 @@ The first two factors compose to the identity by step [](#s5){.pf-ref}, leaving 
 Thus there is a natural bijection
 $$
 \boxed{
-\operatorname{Hom}_X(f^{-1}\mathcal G,\mathcal F)
+\Hom_X(f^{-1}\mcg,\mcf)
 \cong
-\operatorname{Hom}_Y(\mathcal G,f_*\mathcal F).
+\Hom_Y(\mcg,f_*\mcf).
 }
 $$
 Hence
@@ -425,7 +425,7 @@ $$
 
 ::: pf-proof
 
-Steps [](#s8){.pf-ref} and [](#s9){.pf-ref} show that $\Phi$ and $\Psi$ are inverse bijections.  Their formulas are built functorially from $f^{-1}$, $f_*$, the unit, and the counit, so the bijection is natural in both $\mathcal F$ and $\mathcal G$.  This is exactly the definition that $f^{-1}$ is left adjoint to $f_*$.
+Steps [](#s8){.pf-ref} and [](#s9){.pf-ref} show that $\Phi$ and $\Psi$ are inverse bijections.  Their formulas are built functorially from $f^{-1}$, $f_*$, the unit, and the counit, so the bijection is natural in both $\mcf$ and $\mcg$.  This is exactly the definition that $f^{-1}$ is left adjoint to $f_*$.
 
 :::
 

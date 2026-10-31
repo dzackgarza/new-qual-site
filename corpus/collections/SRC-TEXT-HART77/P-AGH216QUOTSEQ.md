@@ -111,13 +111,13 @@ $$
 i_x:\mcf'_x\longrightarrow\mcf_x
 $$
 is injective.
-The image sheaf $\operatorname{im}i$ is, by definition, a subsheaf of $\mcf$.
+The image sheaf $\im i$ is, by definition, a subsheaf of $\mcf$.
 The induced morphism
 $$
-\mcf'\longrightarrow\operatorname{im}i
+\mcf'\longrightarrow\im i
 $$
 is an isomorphism on every stalk, hence an isomorphism of sheaves.
-Thus we may identify $\mcf'$ with the subsheaf $\operatorname{im}i\subseteq\mcf$.
+Thus we may identify $\mcf'$ with the subsheaf $\im i\subseteq\mcf$.
 :::
 
 :::
@@ -131,7 +131,7 @@ $$
 ::: pf-proof
 Exactness at $\mcf$ gives
 $$
-\ker p=\operatorname{im}i=\mcf'.
+\ker p=\im i=\mcf'.
 $$
 Therefore $p$ kills the subsheaf $\mcf'$ and induces a unique morphism
 $$

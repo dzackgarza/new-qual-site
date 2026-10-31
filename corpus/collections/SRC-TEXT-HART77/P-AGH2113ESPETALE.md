@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Given a presheaf $\mcf$ on $X$, define a topological space $\operatorname{Spe}(\mcf)$, called the **espace étalé** of $\mcf$, as follows.
+Given a presheaf $\mcf$ on $X$, define a topological space $\operatorname{Spe}(\mcf)$, called the \dfn{espace étalé} of $\mcf$, as follows.
 As a set, $\operatorname{Spe}(\mcf) = \Union_{P \in X} \mcf_P$.
 Define a projection map $\pi: \operatorname{Spe}(\mcf) \to X$ by sending $s \in \mcf_P$ to $P$.
 For each open set $U \subseteq X$ and each section $s \in \mcf(U)$ we obtain a map $\bar{s}: U \to \operatorname{Spe}(\mcf)$ sending $P \mapsto s_P$, the germ of $s$ at $P$.
@@ -33,10 +33,6 @@ Give $\operatorname{Spe}(\mcf)$ the strongest topology such that all the maps $\
 Show that the sheaf $\mcf^{+}$ associated to $\mcf$ can be described as follows: for any open $U \subseteq X$, the group $\mcf^{+}(U)$ is the set of continuous sections of $\operatorname{Spe}(\mcf)$ over $U$.
 
 In particular, the original presheaf $\mcf$ was a sheaf if and only if for each $U$ the group $\mcf(U)$ equals the set of all continuous sections of $\operatorname{Spe}(\mcf)$ over $U$.
-:::
-
-::: {.remark}
-This exercise connects Hartshorne's definition of a sheaf with the espace étalé definition used elsewhere in the literature, for example in Godement.
 :::
 
 ::: {.solution}
@@ -146,7 +142,7 @@ which is open.  By step [](#s1){.pf-ref}, $\pi^{-1}(U)$ is open, so $\pi$ is con
 
 By construction,
 $$
-\pi\circ\bar s=\operatorname{id}_U.
+\pi\circ\bar s=\id_U.
 $$
 The map $\bar s$ is injective because its values lie in different fibres of $\pi$ at different points.  Its image is open by step [](#s2){.pf-ref}.  Hence
 $$
@@ -162,7 +158,7 @@ is a continuous bijection whose inverse is the continuous restriction of $\pi$. 
 
 Let $\sigma:U\to E$ satisfy
 $$
-\pi\circ\sigma=\operatorname{id}_U.
+\pi\circ\sigma=\id_U.
 $$
 If $\sigma$ is continuous, then every point $P\in U$ has a neighborhood $W\subseteq U$ and a section $s\in\mcf(V)$ on an open $V\subseteq X$ such that
 $$
@@ -280,7 +276,7 @@ $$
 $$
 for any $\alpha$ with $P\in U_\alpha$.  Agreement on overlaps makes this well-defined, and clearly
 $$
-\pi\circ\sigma=\operatorname{id}.
+\pi\circ\sigma=\id.
 $$
 The restriction of $\sigma$ to each $U_\alpha$ is the continuous map $\sigma_\alpha$, so step [](#s5){.pf-ref}'s locality argument shows that $\sigma$ is continuous.
 
@@ -336,8 +332,8 @@ $$
 \mcf^+(U)
 =
 \{\sigma:U\to\operatorname{Spe}(\mcf)
-\mid
-\pi\circ\sigma=\operatorname{id}_U,
+\st
+\pi\circ\sigma=\id_U,
 \ \sigma\text{ continuous}\}.
 }
 $$
@@ -377,4 +373,8 @@ Steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} identify continuit
 
 :::
 
+:::
+
+::: {.remark}
+This exercise connects Hartshorne's definition of a sheaf with the espace étalé definition used elsewhere in the literature, for example in Godement.
 :::

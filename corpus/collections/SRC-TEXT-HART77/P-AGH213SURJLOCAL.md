@@ -42,6 +42,6 @@ There is no $g \in \OO_\CC(U)$ with $\exp(g) = z$ on all of $U$: such a $g$ woul
 So $\exp(U)$ is not surjective on sections.
 
 Nevertheless $\exp$ is surjective as a morphism of sheaves.
-For any $P \in \CCstar$, choose a disc $V \ni P$ small enough to avoid the origin.
-On $V$ a holomorphic branch of $\log$ exists, so $\exp$ is surjective on sections over $V$ and over every smaller open set, hence surjective on the stalk at $P$.
+For any $P \in \CC$, a germ of $\units{\OO_\CC}$ at $P$ is represented by a nowhere-vanishing holomorphic function on some open disc $V \ni P$.
+A disc is simply connected, so that function has a holomorphic logarithm on $V$, and $\exp$ is surjective on the stalk at $P$.
 :::

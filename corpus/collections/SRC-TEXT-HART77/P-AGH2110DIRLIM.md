@@ -131,9 +131,9 @@ $$
 
 Sheafification is left adjoint to the inclusion of sheaves into presheaves.  Equivalently, for every presheaf $\mcp$ and every sheaf $\mcg$, composition with the sheafification map induces a bijection
 $$
-\operatorname{Hom}_{\mathrm{Sh}(X)}(\mcp^+,\mcg)
+\Hom_{\mathrm{Sh}(X)}(\mcp^+,\mcg)
 \xrightarrow{\sim}
-\operatorname{Hom}_{\mathrm{PSh}(X)}(\mcp,\mcg).
+\Hom_{\mathrm{PSh}(X)}(\mcp,\mcg).
 $$
 Apply this universal property to the presheaf morphism $\phi$ from step [](#s2){.pf-ref}.
 

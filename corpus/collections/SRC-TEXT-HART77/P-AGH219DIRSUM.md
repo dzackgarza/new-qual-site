@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Let $\mcf$ and $\mcg$ be sheaves on $X$.
 Show that the presheaf $U \mapsto \mcf(U) \oplus \mcg(U)$ is a sheaf.
-It is called the **direct sum** of $\mcf$ and $\mcg$ and is denoted $\mcf \oplus \mcg$.
+It is called the \dfn{direct sum} of $\mcf$ and $\mcg$ and is denoted $\mcf \oplus \mcg$.
 
 Show that it plays the role of both the direct sum and the direct product in the category of sheaves of abelian groups on $X$.
 :::

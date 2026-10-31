@@ -35,11 +35,11 @@ Show that this sheaf can also be described as $i_*(A)$, where $A$ denotes the co
 ::: {.solution}
 Let
 $$
-\mathcal S=i_P(A).
+\mcs=i_P(A).
 $$
 Thus
 $$
-\mathcal S(U)=
+\mcs(U)=
 \begin{cases}
 A,&P\in U,\\
 0,&P\notin U,
@@ -51,7 +51,7 @@ with the evident restriction maps: identity when both opens contain $P$, and the
 
 ::: pf-step
 
-The presheaf $\mathcal S$ is a sheaf.
+The presheaf $\mcs$ is a sheaf.
 
 ::: pf-proof
 
@@ -81,9 +81,9 @@ a_\alpha=a_{\alpha_0}.
 $$
 For indices not containing $P$, the only section is zero.  Hence the family glues uniquely to the element
 $$
-a_{\alpha_0}\in\mathcal S(U)=A.
+a_{\alpha_0}\in\mcs(U)=A.
 $$
-Thus $\mathcal S$ is a sheaf.
+Thus $\mcs$ is a sheaf.
 
 :::
 
@@ -117,18 +117,18 @@ Q\in\overline{\{P\}},
 $$
 one has
 $$
-\boxed{\mathcal S_Q\cong A.}
+\boxed{\mcs_Q\cong A.}
 $$
 
 ::: pf-proof
 
 By step [](#s2){.pf-ref}, every neighborhood $U$ of $Q$ contains $P$, so
 $$
-\mathcal S(U)=A.
+\mcs(U)=A.
 $$
 Every restriction map between such neighborhoods is the identity on $A$.  Therefore the stalk, which is the direct limit over all neighborhoods of $Q$, is
 $$
-\mathcal S_Q
+\mcs_Q
 =\varinjlim_{Q\in U}A
 \cong A.
 $$
@@ -145,7 +145,7 @@ Q\notin\overline{\{P\}},
 $$
 then
 $$
-\boxed{\mathcal S_Q=0.}
+\boxed{\mcs_Q=0.}
 $$
 
 ::: pf-proof
@@ -160,16 +160,16 @@ P\notin V.
 $$
 Then
 $$
-\mathcal S(V)=0.
+\mcs(V)=0.
 $$
 
-Any germ in $\mathcal S_Q$ is represented by a section over some neighborhood $U$ of $Q$.  Restrict that representative to
+Any germ in $\mcs_Q$ is represented by a section over some neighborhood $U$ of $Q$.  Restrict that representative to
 $$
 U\cap V,
 $$
 which is still a neighborhood of $Q$ but does not contain $P$.  The restriction lands in
 $$
-\mathcal S(U\cap V)=0,
+\mcs(U\cap V)=0,
 $$
 so the germ is zero.  Hence the entire stalk is zero.
 

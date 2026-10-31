@@ -24,7 +24,7 @@ audit:
 
 ::: {.problem}
 Let $\mcf$ be a sheaf on $X$ and let $s \in \mcf(U)$ be a section over an open set $U$.
-The **support of $s$**, denoted $\supp s$, is defined to be $\theset{P \in U \st s_P \neq 0}$, where $s_P$ denotes the germ of $s$ in the stalk $\mcf_P$.
+The \dfn{support of $s$}, denoted $\supp s$, is defined to be $\theset{P \in U \st s_P \neq 0}$, where $s_P$ denotes the germ of $s$ in the stalk $\mcf_P$.
 Show that $\supp s$ is a closed subset of $U$.
 
 Define the support of $\mcf$ to be $\supp \mcf \coloneqq \theset{P \in X \st \mcf_P \neq 0}$.
@@ -39,8 +39,8 @@ Show that this need not be a closed subset.
 
 The complement of the support of a section is open:
 $$
-U\setminus\operatorname{supp}s
-=\{P\in U:s_P=0\}.
+U\setminus\supp s
+=\{P\in U \st s_P=0\}.
 $$
 
 ::: pf-proof
@@ -63,7 +63,7 @@ s_Q=0.
 $$
 Thus
 $$
-V\subseteq U\setminus\operatorname{supp}s.
+V\subseteq U\setminus\supp s.
 $$
 Every point of the complement has an open neighborhood contained in the complement, so the complement is open.
 
@@ -75,7 +75,7 @@ Every point of the complement has an open neighborhood contained in the compleme
 
 Hence
 $$
-\boxed{\operatorname{supp}s\text{ is closed in }U.}
+\boxed{\supp s\text{ is closed in }U.}
 $$
 
 ::: pf-proof
@@ -95,7 +95,7 @@ The support of a sheaf need not be closed.
 Take
 $$
 X=\AA^1_{\CC}
-=\operatorname{Spec}\CC[x].
+=\Spec \CC[x].
 $$
 For each positive integer $n$, let
 $$
@@ -103,11 +103,11 @@ i_n:\{n\}\hookrightarrow X
 $$
 be the closed-point inclusion and let
 $$
-\mathcal K_n=i_{n*}\CC
+\mck_n=i_{n*}\CC
 $$
 be the corresponding skyscraper sheaf.  Define
 $$
-\mcf=\bigoplus_{n\ge1}\mathcal K_n
+\mcf=\bigoplus_{n\ge1}\mck_n
 $$
 in the category of sheaves of abelian groups.
 
@@ -115,11 +115,11 @@ The stalk functor commutes with direct sums, so for every $P\in X$,
 $$
 \mcf_P
 \cong
-\bigoplus_{n\ge1}(\mathcal K_n)_P.
+\bigoplus_{n\ge1}(\mck_n)_P.
 $$
 For a skyscraper sheaf,
 $$
-(\mathcal K_n)_P
+(\mck_n)_P
 \cong
 \begin{cases}
 \CC,&P=n,\\
@@ -128,7 +128,7 @@ $$
 $$
 Therefore
 $$
-\operatorname{supp}\mcf
+\supp \mcf
 =\{1,2,3,\ldots\}
 \subseteq\AA^1_{\CC}.
 $$
@@ -148,8 +148,8 @@ is Zariski dense but is not all of $X$.  It is therefore not closed.
 Thus there is a genuine distinction:
 $$
 \boxed{
-\operatorname{supp}s\text{ is always closed, whereas }
-\operatorname{supp}\mcf\text{ need not be closed}.
+\supp s\text{ is always closed, whereas }
+\supp \mcf\text{ need not be closed}.
 }
 $$
 

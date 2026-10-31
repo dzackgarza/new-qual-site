@@ -74,9 +74,9 @@ $$
 ::: pf-proof
 Exactness at $\mcf$ gives
 $$
-\operatorname{im}i=\ker p.
+\im i=\ker p.
 $$
-By [[P-AGH216QUOTSEQ|Exercise II.1.6]], the injection $i$ identifies $\mcf'$ with the subsheaf $\operatorname{im}i$, hence with $\ker p$.
+By [[P-AGH216QUOTSEQ|Exercise II.1.6]], the injection $i$ identifies $\mcf'$ with the subsheaf $\im i$, hence with $\ker p$.
 
 The kernel sheaf is computed sectionwise:
 $$

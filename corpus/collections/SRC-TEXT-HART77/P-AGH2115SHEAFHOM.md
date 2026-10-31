@@ -30,44 +30,44 @@ $$
 U \mapsto \Hom(\restrictionof{\mcf}{U}, \restrictionof{\mcg}{U})
 $$
 is a sheaf.
-It is called the **sheaf of local morphisms of $\mcf$ into $\mcg$**, or "sheaf hom" for short, and is denoted $\sheafhom(\mcf, \mcg)$.
+It is called the \dfn{sheaf of local morphisms of $\mcf$ into $\mcg$}, or "sheaf hom" for short, and is denoted $\sheafhom(\mcf, \mcg)$.
 :::
 
 ::: {.solution}
 For an open set $U\subseteq X$, write
 $$
-\mathcal H(U)
-=\operatorname{Hom}(\mathcal F\restrict_U,\mathcal G\restrict_U).
+\mch(U)
+=\Hom(\mcf\restrict_U,\mcg\restrict_U).
 $$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-The set $\mathcal H(U)$ is naturally an abelian group.
+The set $\mch(U)$ is naturally an abelian group.
 
 ::: pf-proof
 
 Let
 $$
-\phi,\psi:\mathcal F\restrict_U\longrightarrow\mathcal G\restrict_U
+\phi,\psi:\mcf\restrict_U\longrightarrow\mcg\restrict_U
 $$
 be morphisms of sheaves of abelian groups.  Define
 $$
-(\phi+\psi)_V:\mathcal F(V)\longrightarrow\mathcal G(V)
+(\phi+\psi)_V:\mcf(V)\longrightarrow\mcg(V)
 $$
 for every open $V\subseteq U$ by
 $$
 (\phi+\psi)_V(s)=\phi_V(s)+\psi_V(s).
 $$
 
-Because the restriction maps of $\mathcal G$ are homomorphisms and both $\phi$ and $\psi$ commute with restrictions, so does $\phi+\psi$.  Hence it is a morphism of sheaves.
+Because the restriction maps of $\mcg$ are homomorphisms and both $\phi$ and $\psi$ commute with restrictions, so does $\phi+\psi$.  Hence it is a morphism of sheaves.
 
 The zero morphism is defined sectionwise by zero, and
 $$
 (-\phi)_V(s)=-\phi_V(s).
 $$
-All abelian-group identities hold sectionwise in the groups $\mathcal G(V)$.  Thus $\mathcal H(U)$ is an abelian group.
+All abelian-group identities hold sectionwise in the groups $\mcg(V)$.  Thus $\mch(U)$ is an abelian group.
 
 :::
 
@@ -77,21 +77,21 @@ All abelian-group identities hold sectionwise in the groups $\mathcal G(V)$.  Th
 
 If $V\subseteq U$, restriction of sheaf morphisms defines a homomorphism
 $$
-\rho_{UV}:\mathcal H(U)\longrightarrow\mathcal H(V),
+\rho_{UV}:\mch(U)\longrightarrow\mch(V),
 \qquad
 \phi\longmapsto\phi\restrict_V.
 $$
-These maps make $\mathcal H$ a presheaf of abelian groups.
+These maps make $\mch$ a presheaf of abelian groups.
 
 ::: pf-proof
 
 Restricting
 $$
-\phi:\mathcal F\restrict_U\to\mathcal G\restrict_U
+\phi:\mcf\restrict_U\to\mcg\restrict_U
 $$
 to the open subspace $V$ gives
 $$
-\phi\restrict_V:\mathcal F\restrict_V\to\mathcal G\restrict_V.
+\phi\restrict_V:\mcf\restrict_V\to\mcg\restrict_V.
 $$
 Restriction respects sums by the sectionwise definition in step [](#s1){.pf-ref}.  Also
 $$
@@ -113,7 +113,7 @@ U=\bigcup_iU_i
 $$
 and suppose morphisms
 $$
-\phi_i:\mathcal F\restrict_{U_i}\longrightarrow\mathcal G\restrict_{U_i}
+\phi_i:\mcf\restrict_{U_i}\longrightarrow\mcg\restrict_{U_i}
 $$
 agree on every overlap:
 $$
@@ -121,13 +121,13 @@ $$
 =
 \phi_j\restrict_{U_i\cap U_j}.
 $$
-For every open $V\subseteq U$ and every section $s\in\mathcal F(V)$, the local sections
+For every open $V\subseteq U$ and every section $s\in\mcf(V)$, the local sections
 $$
 t_i
 :=
 (\phi_i)_{V\cap U_i}(s\restrict_{V\cap U_i})
 \in
-\mathcal G(V\cap U_i)
+\mcg(V\cap U_i)
 $$
 agree on overlaps.
 
@@ -156,11 +156,11 @@ $$
 
 The sections in step [](#s3){.pf-ref} glue uniquely to a section
 $$
-\phi_V(s)\in\mathcal G(V).
+\phi_V(s)\in\mcg(V).
 $$
 This defines a homomorphism
 $$
-\phi_V:\mathcal F(V)\longrightarrow\mathcal G(V).
+\phi_V:\mcf(V)\longrightarrow\mcg(V).
 $$
 
 ::: pf-proof
@@ -169,16 +169,16 @@ The opens
 $$
 V\cap U_i
 $$
-cover $V$.  By step [](#s3){.pf-ref}, the sections $t_i$ are compatible, so the sheaf axiom for $\mathcal G$ gives a unique section
+cover $V$.  By step [](#s3){.pf-ref}, the sections $t_i$ are compatible, so the sheaf axiom for $\mcg$ gives a unique section
 $$
-t\in\mathcal G(V)
+t\in\mcg(V)
 $$
 restricting to every $t_i$.  Define
 $$
 \phi_V(s)=t.
 $$
 
-For $s,s'\in\mathcal F(V)$, the restrictions of
+For $s,s'\in\mcf(V)$, the restrictions of
 $$
 \phi_V(s+s')
 $$
@@ -200,12 +200,12 @@ Similarly $\phi_V(0)=0$, so $\phi_V$ is a group homomorphism.
 
 The homomorphisms $\phi_V$ commute with restrictions, so they define a sheaf morphism
 $$
-\phi:\mathcal F\restrict_U\longrightarrow\mathcal G\restrict_U.
+\phi:\mcf\restrict_U\longrightarrow\mcg\restrict_U.
 $$
 
 ::: pf-proof
 
-Let $W\subseteq V\subseteq U$ and $s\in\mathcal F(V)$.  Compare
+Let $W\subseteq V\subseteq U$ and $s\in\mcf(V)$.  Compare
 $$
 \phi_V(s)\restrict_W
 \qquad\text{and}\qquad
@@ -219,7 +219,7 @@ both restrict to
 $$
 (\phi_i)_{W\cap U_i}(s\restrict_{W\cap U_i}),
 $$
-because each local morphism $\phi_i$ commutes with restrictions.  Since the $W\cap U_i$ cover $W$, uniqueness for the sheaf $\mathcal G$ gives
+because each local morphism $\phi_i$ commutes with restrictions.  Since the $W\cap U_i$ cover $W$, uniqueness for the sheaf $\mcg$ gives
 $$
 \phi_V(s)\restrict_W=\phi_W(s\restrict_W).
 $$
@@ -235,7 +235,7 @@ The morphism $\phi$ restricts to $\phi_i$ on every $U_i$.
 
 ::: pf-proof
 
-Let $V\subseteq U_i$ and $s\in\mathcal F(V)$.  In the construction of $\phi_V(s)$, one of the local sections is
+Let $V\subseteq U_i$ and $s\in\mcf(V)$.  In the construction of $\phi_V(s)$, one of the local sections is
 $$
 (\phi_i)_V(s).
 $$
@@ -260,13 +260,13 @@ The morphism $\phi$ is the unique morphism on $U$ restricting to all the $\phi_i
 
 If
 $$
-\psi:\mathcal F\restrict_U\to\mathcal G\restrict_U
+\psi:\mcf\restrict_U\to\mcg\restrict_U
 $$
-has the same restrictions, then for every open $V\subseteq U$ and $s\in\mathcal F(V)$ the two sections
+has the same restrictions, then for every open $V\subseteq U$ and $s\in\mcf(V)$ the two sections
 $$
-\phi_V(s),\quad\psi_V(s)\in\mathcal G(V)
+\phi_V(s),\quad\psi_V(s)\in\mcg(V)
 $$
-have equal restrictions on every $V\cap U_i$.  Since those opens cover $V$ and $\mathcal G$ is a sheaf,
+have equal restrictions on every $V\cap U_i$.  Since those opens cover $V$ and $\mcg$ is a sheaf,
 $$
 \phi_V(s)=\psi_V(s).
 $$
@@ -282,12 +282,12 @@ Consequently
 $$
 \boxed{
 U\longmapsto
-\operatorname{Hom}(\mathcal F\restrict_U,\mathcal G\restrict_U)
+\Hom(\mcf\restrict_U,\mcg\restrict_U)
 }
 $$
 is a sheaf of abelian groups, denoted
 $$
-\mathcal Hom(\mathcal F,\mathcal G).
+\sheafhom(\mcf,\mcg).
 $$
 
 ::: pf-proof
