@@ -11,6 +11,13 @@ with `rows(data[k]) = rank C_{k-1}` and `cols(data[k]) = rank C_k`, and
 `C.homology(k)` is `ker d_k / im d_{k+1}`.
 
 Run:  sage proofs/cards/DeltaComplexHomology.sage
+
+Status of the recorded run: PENDING RERUN.  The last execution used the host
+interpreter /opt/math/bin/sage, which reports Sage 10.8 on Python 3.12.14
+(3.12: the host image), not the supported Sage development environment.  The
+script is written against the maintained API only (ChainComplex, homology), so
+it needs no change; the certificate stands only once it has been rerun in the
+research image, and until then the cards' notes say the run is pending.
 """
 from sage.all import ChainComplex, matrix, ZZ
 

@@ -42,6 +42,9 @@ audit:
     Certified in proofs/cards/DeltaComplexHomology.sage for n = 1, ..., 6 through Sage's
     ChainComplex, with d_2 assembled column by column (column k is the image of sigma_k);
     homology is (Z, Z/2^n, 0) in each sampled case.
+
+    Status: the recorded run used the host interpreter (Sage 10.8, Python 3.12.14), not the
+    supported Sage development image; the certificate is pending a rerun there.
 ---
 
 ::: {.problem}

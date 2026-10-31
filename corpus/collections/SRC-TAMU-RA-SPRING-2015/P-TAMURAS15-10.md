@@ -38,11 +38,13 @@ audit:
   by: claude
   date: 2026-10-31
   note: >-
-    Partial certification in proofs/cards/NormExtension.lean: for a closed subspace Y and
-    x not in Y, a functional of norm at most one vanishing on Y with phi x nonzero exists,
-    via the normed quotient and exists_dual_vector. The x in Y case, which needs the
-    given norm ||.||_1 as a normed structure on Y, is uncertified, so the correction stays
-    proposed.
+    Certified. proofs/cards/NormExtension.lean proves that for a closed subspace Y and
+    x not in Y a functional of norm at most one vanishes on Y and not at x;
+    proofs/cards/Tamuras15_10.lean proves the corrected statement in full: for a second
+    norm n on Y with n y <= K ‖y‖ and ‖y‖ <= K n y, the supremum of |phi x| over the
+    set S of the problem is nonnegative, vanishes only at 0, is homogeneous and
+    subadditive, agrees with n on Y, and satisfies K^-1 ‖x‖ <= sup <= K ‖x‖. No sorryAx.
+    The printed statement and the counterexample stay on the card.
 ---
 
 ::: {.problem}
