@@ -20,11 +20,15 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-corrected
+  by: gpt-6.1-sol
+  date: 2026-10-31
+  note: 'The source claim needs a nonempty space when the empty space has dimension -1.'
 ---
 
 ::: {.exercise}
 
-Show that any discrete space has dimension 0.
+Show that any nonempty discrete space has dimension 0.
 :::
 
 ::: {.solution}
