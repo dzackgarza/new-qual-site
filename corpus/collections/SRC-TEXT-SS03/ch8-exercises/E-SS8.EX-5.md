@@ -52,7 +52,7 @@ Now fix $\eta\in\halfplane$. The equation $f(z)=\eta$ is
 $$
 z^2+2\eta z+1=0.
 $$
-Its two roots are reciprocal. They are nonreal because $\eta\notin\RR$. Exactly one root lies in the upper half-plane, since if $z$ is nonreal then $1/z$ has imaginary part of the opposite sign. Let $z$ be the upper-half-plane root. If $\abs{z}>1$, then the formula above gives
+Its two roots are reciprocal. They are nonreal because $\eta\notin\RR$. Exactly one root lies in the upper half-plane, since if $z$ is nonreal then $1/z$ has imaginary part of the opposite sign. Let $z$ be the upper-half-plane root. If $\abs{z}=1$, then $z+1/z=2\Re z$ is real, contrary to $\eta\notin\RR$. If $\abs{z}>1$, then the formula above gives
 $$
 \Im f(z)<0,
 $$
@@ -66,5 +66,5 @@ and $f'(z)=0$ only at $z=\pm1$, neither of which lies in $D_+$. Hence $f$ is con
 :::
 
 ::: {.remark title="Variations"}
-Without the map given: find a conformal map from the upper half-disc $\DD\cap\HH$ onto $\HH$.
+Without the map given: find a conformal map from the upper half-disc $\DD\cap\halfplane$ onto $\halfplane$.
 :::

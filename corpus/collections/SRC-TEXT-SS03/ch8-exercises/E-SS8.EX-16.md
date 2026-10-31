@@ -42,164 +42,74 @@ $$
 :::
 
 ::: {.solution}
-**Goal.** Express disc automorphisms, conjugated by the Cayley transform $f$, as real Möbius transformations of the upper half-plane.
+Identify a fractional linear map $z \mapsto \frac{az+b}{cz+d}$ with the matrix $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$, up to a nonzero scalar; composition of maps is the matrix product. Then
+$$
+f \leftrightarrow \begin{pmatrix} -1 & i \\ 1 & i \end{pmatrix},
+\qquad
+f^{-1} \leftrightarrow \begin{pmatrix} -i & i \\ 1 & 1 \end{pmatrix},
+\qquad
+\psi_\alpha(w) = \frac{\alpha - w}{1 - \overline{\alpha} w} \leftrightarrow \begin{pmatrix} -1 & \alpha \\ -\overline{\alpha} & 1 \end{pmatrix}.
+$$
 
 ::: pf
 
-::: pf-step
-
-$f(z) = \frac{i-z}{i+z}$ maps $\HH$ to $\DD$, with inverse $f^{-1}(w) = i\frac{1-w}{1+w}$.
-
-::: pf-proof
-
-the Cayley transform; $f$ sends the upper half-plane to the unit disk and $f^{-1}$ is its inverse.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-(a) For $\theta \in \RR$, find real $a,b,c,d$ with $ad - bc = 1$ and $\frac{az+b}{cz+d} = f^{-1}(e^{i\theta} f(z))$.
+::: {.pf-step #rotation}
+For $\theta \in \RR$, take $a = d = \cos(\theta/2)$, $b = \sin(\theta/2)$, $c = -\sin(\theta/2)$.
 
 ::: pf-proof
+The rotation $w \mapsto e^{i\theta} w$ corresponds to $\begin{pmatrix} e^{i\theta/2} & 0 \\ 0 & e^{-i\theta/2} \end{pmatrix}$. The product
+$$
+\begin{pmatrix} -i & i \\ 1 & 1 \end{pmatrix}
+\begin{pmatrix} e^{i\theta/2} & 0 \\ 0 & e^{-i\theta/2} \end{pmatrix}
+\begin{pmatrix} -1 & i \\ 1 & i \end{pmatrix}
+=
+\begin{pmatrix} 2\cos(\theta/2) & 2\sin(\theta/2) \\ -2\sin(\theta/2) & 2\cos(\theta/2) \end{pmatrix}
+$$
+is $2$ times the stated matrix, which has real entries and determinant $\cos^2(\theta/2) + \sin^2(\theta/2) = 1$.
+:::
 
-::: pf-step
+:::
 
-$e^{i\theta} f(z)$ is a rotation of the disk, an automorphism of $\DD$.
+::: {.pf-step #translation}
+For $\alpha = p + iq \in \DD$ with $p, q \in \RR$, put $\lambda = \sqrt{1 - \abs{\alpha}^2}$ and take
+$$
+a = \frac{q}{\lambda},\qquad b = \frac{p-1}{\lambda},\qquad c = \frac{p+1}{\lambda},\qquad d = -\frac{q}{\lambda}.
+$$
 
 ::: pf-proof
-
-multiplication by $e^{i\theta}$ preserves $\DD$.
-
+First,
+$$
+\begin{pmatrix} -1 & \alpha \\ -\overline{\alpha} & 1 \end{pmatrix}
+\begin{pmatrix} -1 & i \\ 1 & i \end{pmatrix}
+=
+\begin{pmatrix} 1 + \alpha & i(\alpha - 1) \\ 1 + \overline{\alpha} & i(1 - \overline{\alpha}) \end{pmatrix}.
+$$
+Multiplying on the left by the matrix of $f^{-1}$ gives
+$$
+\begin{pmatrix} i(\overline{\alpha} - \alpha) & \alpha + \overline{\alpha} - 2 \\ 2 + \alpha + \overline{\alpha} & i(\alpha - \overline{\alpha}) \end{pmatrix}
+=
+\begin{pmatrix} 2q & 2p - 2 \\ 2p + 2 & -2q \end{pmatrix}.
+$$
+Its entries are real and its determinant is $-4q^2 - (4p^2 - 4) = 4\lambda^2 > 0$. Dividing by $2\lambda$ gives the stated $a, b, c, d$ with $ad - bc = 1$.
 :::
 
 :::
 
-::: pf-step
-
-The composition $f^{-1} \circ (\text{rotation by } \theta) \circ f$ is a Möbius transformation of $\HH$ with real coefficients.
+::: {.pf-step #general}
+For every $g \in \Aut(\DD)$ there are real $a, b, c, d$ with $ad - bc = 1$ and $\frac{az+b}{cz+d} = f^{-1} \circ g \circ f(z)$.
 
 ::: pf-proof
-
-$f$ and $f^{-1}$ have real coefficients, and the rotation $w \mapsto e^{i\theta} w$ conjugates to a real Möbius map (the stabilizer of $i$ in $\mathrm{PSL}_2(\RR)$).
-
-:::
-
-:::
-
-::: pf-step
-
-Explicitly, $f^{-1}(e^{i\theta} f(z)) = \frac{\cos(\theta/2)\, z + \sin(\theta/2)}{-\sin(\theta/2)\, z + \cos(\theta/2)}$.
-
-::: pf-proof
-
-the rotation by $\theta$ corresponds, under the Cayley transform, to the matrix $\begin{pmatrix} \cos(\theta/2) & \sin(\theta/2) \\ -\sin(\theta/2) & \cos(\theta/2) \end{pmatrix}$, which has determinant $1$ and real entries.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-(b) For $\alpha \in \DD$, find real $a,b,c,d$ with $ad - bc = 1$ and $\frac{az+b}{cz+d} = f^{-1}(\psi_\alpha(f(z)))$.
-
-::: pf-proof
-
-::: pf-step
-
-$\psi_\alpha(w) = \frac{w - \alpha}{1 - \bar\alpha w}$ is the disc automorphism sending $\alpha$ to $0$.
-
-::: pf-proof
-
-this is the standard automorphism of $\DD$ (Section 2.1).
-
-:::
-
-:::
-
-::: pf-step
-
-$f^{-1} \circ \psi_\alpha \circ f$ is a real Möbius transformation of $\HH$.
-
-::: pf-proof
-
-it is an automorphism of $\HH$ (conjugate of an automorphism of $\DD$), and every automorphism of $\HH$ is a real Möbius transformation $\frac{az+b}{cz+d}$ with $ad - bc = 1$.
-
-:::
-
-:::
-
-::: pf-step
-
-The coefficients are real and satisfy $ad - bc = 1$.
-
-::: pf-proof
-
-$\mathrm{Aut}(\HH) \cong \mathrm{PSL}_2(\RR)$, realized by matrices of determinant $1$.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-(c) Every automorphism $g$ of $\DD$ conjugates to a real Möbius transformation of $\HH$.
-
-::: pf-proof
-
-::: pf-step
-
-Every $g \in \mathrm{Aut}(\DD)$ factors as $g = \psi_\alpha \circ (\text{rotation})$.
-
-::: pf-proof
-
-$\mathrm{Aut}(\DD) = \theset{e^{i\theta}\psi_\alpha : \theta \in \RR, \alpha \in \DD}$ (every automorphism is a rotation composed with a $\psi_\alpha$).
-
-:::
-
-:::
-
-::: pf-step
-
-Hence $f^{-1} \circ g \circ f = (f^{-1} \circ \psi_\alpha \circ f) \circ (f^{-1} \circ R_\theta \circ f)$ is a product of real Möbius maps.
-
-::: pf-proof
-
-by steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, each factor is a real Möbius transformation.
-
-:::
-
-:::
-
-::: pf-step
-
-The product is a real Möbius transformation $\frac{az+b}{cz+d}$ with $ad - bc = 1$.
-
-::: pf-proof
-
-$\mathrm{PSL}_2(\RR)$ is closed under composition, and the determinant multiplies to $1$.
-
-:::
-
-:::
-
+By Theorem 2.4 of the chapter, $g(w) = e^{i\theta}\psi_\alpha(w)$ for some $\theta \in \RR$ and $\alpha \in \DD$. Hence
+$$
+f^{-1} \circ g \circ f = \left(f^{-1} \circ R_\theta \circ f\right) \circ \left(f^{-1} \circ \psi_\alpha \circ f\right),
+$$
+where $R_\theta(w) = e^{i\theta} w$. By steps [](#rotation){.pf-ref} and [](#translation){.pf-ref}, each factor has a real matrix of determinant $1$. Their product is a real matrix of determinant $1$, and it represents the composition.
 :::
 
 :::
 
 ::: pf-qed
-
-Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} answer (a), (b), and (c).
-
+Steps [](#rotation){.pf-ref}, [](#translation){.pf-ref} and [](#general){.pf-ref} answer (a), (b) and (c).
 :::
 
 :::

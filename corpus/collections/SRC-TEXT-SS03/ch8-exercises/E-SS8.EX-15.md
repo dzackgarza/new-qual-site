@@ -2,19 +2,19 @@
 schema: qual/card@1
 id: E-SS8.EX-15
 kind: problem
-title: An automorphism of $\HH$ is determined by the images of three boundary points
+title: An automorphism of $\halfplane$ is determined by the images of three boundary points
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics:
-  - Automorphisms
-  - Fractional Linear Transformations
+    - Automorphisms
+    - Fractional Linear Transformations
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}

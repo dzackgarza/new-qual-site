@@ -26,11 +26,11 @@ $$
 :::
 
 ::: {.solution}
-Put $\beta_j=1-\alpha_j$. Choose a Möbius map
+Put $\beta_j=1-\alpha_j$. By Theorem 4.2, $F$ extends to a homeomorphism $\overline{\DD}\to\overline P$; let $B_j\in\partial\DD$ be the point with $F(B_j)=a_j$. Choose a Möbius map
 $$
 \phi:\halfplane\longrightarrow\DD
 $$
-whose inverse sends real points $x_j$ to the boundary points $B_j\in\partial\DD$ that correspond under $F$ to the polygon vertices $a_j$.
+whose boundary value at $\infty$ is none of the $B_j$, and put $x_j=\phi^{-1}(B_j)\in\RR$.
 
 Then $G=F\circ\phi$ maps $\halfplane$ conformally onto $P$. By the Schwarz--Christoffel formula,
 $$

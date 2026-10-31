@@ -2,19 +2,18 @@
 schema: qual/card@1
 id: E-SS8.EX-4
 kind: problem
-title: No holomorphic surjection from the disc onto $\CC$
+title: A holomorphic surjection from the disc onto $\CC$
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics:
-  - Conformal Maps
-  - Liouville's Theorem
+    - Conformal Maps
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-11
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-11
 ---
 
 ::: {.exercise}

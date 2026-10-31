@@ -68,11 +68,24 @@ For (b), set
 $$
 x=\frac{2t}{1+k'+(1-k')t^2}.
 $$
-This maps $[0,1]$ onto $[0,1]$. Put
+Put
 $$
-\kappa=\frac{1-k'}{1+k'}.
+\kappa=\frac{1-k'}{1+k'},
 $$
-Straight substitution and simplification yield
+so that $1-k'=\kappa(1+k')$ and $k^2=(1-k')(1+k')$. Write $D=1+k'+(1-k')t^2=(1+k')(1+\kappa t^2)$. The quadratic $D-2t$ in $t$ has roots $1$ and $1/\kappa$, and $D+2t$ has roots $-1$ and $-1/\kappa$, so
+$$
+D^2-4t^2=(1+k')^2(1-t^2)(1-\kappa^2t^2).
+$$
+Also
+$$
+D^2-4k^2t^2=(1+k')^2\left[(1+\kappa t^2)^2-4\kappa t^2\right]=(1+k')^2(1-\kappa t^2)^2,
+$$
+and
+$$
+\frac{dx}{dt}=\frac{2\left[(1+k')-(1-k')t^2\right]}{D^2}=\frac{2(1+k')(1-\kappa t^2)}{D^2}>0
+\qquad(0\le t\le1).
+$$
+Since $x(0)=0$ and $x(1)=1$, the substitution maps $[0,1]$ increasingly onto $[0,1]$. With $1-x^2=(D^2-4t^2)/D^2$ and $1-k^2x^2=(D^2-4k^2t^2)/D^2$, these identities give
 $$
 \frac{dx}{\sqrt{(1-x^2)(1-k^2x^2)}}
 =\frac{2}{1+k'}\,
