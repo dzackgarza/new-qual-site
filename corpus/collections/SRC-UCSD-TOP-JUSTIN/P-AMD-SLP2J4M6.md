@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-SLP2J4M6
 kind: problem
-title: $K$ is not a topological group
+title: Topological groups have abelian fundamental group
 classification:
   areas:
   - topology
@@ -12,10 +12,21 @@ classification:
   - Groups
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: chatgpt
+  date: 2026-10-31
+  note: >-
+    Sheet 2, Problem 11 first asks for abelianness of the fundamental
+    group of a topological group, then asks for the Klein bottle
+    deduction. The former appeared only in the solution. The
+    nonabelianity proof also used an abelian quotient in error.
 ---
 
 ::: {.problem}
-Show that $K$ can not be a topological group.
+Prove that the fundamental group $\pi_1(G,e)$ of a topological group
+$G$ is abelian, where $e$ is the identity. Deduce that the Klein
+bottle $K$ cannot be a topological group.
 :::
 
 ::: {.solution}
@@ -31,7 +42,11 @@ $$
 
 ::: pf-proof
 
-This is the standard presentation obtained from the square model of the Klein bottle. It is nonabelian, since the relation gives $aba^{-1}=b^{-1}$ rather than $b$; for example the group maps onto the nonabelian infinite dihedral group after imposing $b^2=1$ and retaining the conjugation relation.
+This is the standard presentation obtained from the square model of
+the Klein bottle. To see that it is nonabelian, map it to the
+isometry group of $\RR$ by taking $a$ to the reflection $x\mapsto-x$
+and $b$ to the translation $x\mapsto x+1$. These isometries satisfy
+$aba^{-1}=b^{-1}$ but do not commute.
 
 :::
 
@@ -39,7 +54,7 @@ This is the standard presentation obtained from the square model of the Klein bo
 
 ::: {.pf-step #s2}
 
-The fundamental group of every path-connected topological group is abelian.
+The fundamental group of every topological group is abelian.
 
 ::: pf-proof
 

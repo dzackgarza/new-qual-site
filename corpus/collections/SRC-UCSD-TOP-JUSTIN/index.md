@@ -9,7 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: complete
+completion: incomplete
 provenance:
 - assets/attachments/UCSD_290_F14_sheet1.pdf
 - assets/attachments/UCSD_290_F14_sheet2.pdf
@@ -51,7 +51,8 @@ source:
   - P-AMD-D7IX7C4G
   - P-AMD-6OJQMSOZ
   - P-AMD-GEBWFMJF
-  - P-AMD-SLP2J4M6
+  - id: P-AMD-SLP2J4M6
+    comment: Sheet 2, Problem 11
   - P-AMD-6GFMKZVQ
   - P-AMD-ERYR6LDW
   - P-AMD-VH5QRTV2
