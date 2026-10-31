@@ -29,6 +29,8 @@ For connected spaces $X,Y$, give an example satisfying each statement below or s
 
 ::: {.solution}
 
+Read "connected" as path-connected, so that $\pi_1$ and $H_1$ do not depend on a choice of basepoint.
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -56,39 +58,16 @@ one point.
 
 ::: {.pf-step #s1-2}
 
-Statement (2) is possible as literally stated.
-
-Take two disjoint copies of the same connected space, for example
-$$
-X=S^1\times\{0\},
-\qquad
-Y=S^1\times\{1\}
-$$
-inside
-$$
-S^1\times\RR.
-$$
+Statement (2) is possible: let $X=S^1\vee S^1$ be the figure-eight graph and let $Y$ be the theta graph, two vertices joined by three edges.
 
 
 ::: pf-proof
 
-The two spaces are homeomorphic, hence homotopy equivalent.
+Both graphs are connected. Collapsing one edge of the theta graph, a contractible subcomplex, gives $S^1\vee S^1$, so $X\simeq Y$.
 
-However, a deformation retract relation
-$$
-X\subseteq Y
-$$
-or
-$$
-Y\subseteq X
-$$
-requires literal inclusion.
-Here the two copies are disjoint, so neither is a deformation retract of the
-other.
+A deformation retract of a space is in particular a subspace of it, so it suffices to show that neither graph embeds in the other. Say a point of a graph has $m$ arms if its small punctured neighborhoods have $m$ components. If $h$ embeds one graph in another, then $h$ carries a small star with $m$ arms at $p$ into a small neighborhood of $h(p)$, and distinct arms of the star go into distinct arms at $h(p)$, because each arm at $h(p)$ is homeomorphic to a half-open interval and cannot contain two arcs that meet only at $h(p)$. Hence $h(p)$ has at least as many arms as $p$. The wedge point of $X$ has $4$ arms, while every point of $Y$ has at most $3$, so $X$ does not embed in $Y$. The theta graph has two points with $3$ arms, while $X$ has only one point with more than $2$ arms, so $Y$ does not embed in $X$.
 
-Thus the statement is possible.
-This also records that “is a deformation retract of” depends on a chosen
-inclusion, unlike homotopy equivalence.
+Hence neither space is homeomorphic to a deformation retract of the other.
 
 :::
 

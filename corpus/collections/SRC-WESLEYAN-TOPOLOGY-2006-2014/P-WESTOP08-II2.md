@@ -230,7 +230,7 @@ fundamental group for the union.
 A universal covering of $S^1$ is
 $$
 \boxed{
-\RR\xrightarrow{,t\mapsto e^{2\pi i t},}S^1.
+\RR\xrightarrow{\,t\mapsto e^{2\pi i t}\,}S^1.
 }
 $$
 
