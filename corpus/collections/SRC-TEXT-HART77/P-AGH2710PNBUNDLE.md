@@ -55,7 +55,7 @@ For every affine open $W=\Spec A\subseteq U_i\cap U_j$, require $h_j\circ h_i^{-
 $$
 A[T_0,\ldots,T_n]\longrightarrow A[T_0,\ldots,T_n],\qquad
 T_a\longmapsto\sum_b c_{ab}T_b,
-\quad (c_{ab})\in\operatorname{GL}_{n+1}(A).
+\quad (c_{ab})\in\GL_{n+1}(A).
 $$
 Atlases are equivalent when their union has this property after common open refinement.
 An isomorphism of bundles is an $X$-isomorphism whose local expressions are projective linear in the two atlases, as in the vector-bundle definition of [[P-AGH2518VECBUN]].

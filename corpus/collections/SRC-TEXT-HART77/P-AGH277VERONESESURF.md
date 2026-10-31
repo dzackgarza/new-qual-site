@@ -131,7 +131,7 @@ Equivalently, this is a nonzero vector in the kernel of the tangent map.
 ::: {.pf-step #s4}
 The blowup at $P$ is the incidence surface
 $$
-B=\{([x:y:z],[s:t])\in\PP_k^2\times_k\PP_k^1:xt=ys\}.
+B=\{([x:y:z],[s:t])\in\PP_k^2\times_k\PP_k^1\st xt=ys\}.
 $$
 Its first projection $\pi:B\to\PP^2$ is an isomorphism away from $P$, and its exceptional curve is $E=\{P\}\times\PP^1$.
 

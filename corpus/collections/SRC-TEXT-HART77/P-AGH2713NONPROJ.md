@@ -39,15 +39,15 @@ The projections to the second factor are compatible with $\varphi$, so there is 
 
 (a) Show that $\pi$ is a proper morphism, and hence that $X$ is a complete variety over $k$.
 
-(b) Use the method of (Ex.
-    6.9) to show that $$ \Pic(C \times \AA^1) \cong \GG_m \times \ZZ \quad\text{and}\quad \Pic(C \times (\AA^1 - \theset{0})) \cong \GG_m \times \ZZ \times \ZZ
-.
+(b) Use the method of (Ex. 6.9) to show that
+$$
+\Pic(C \times \AA^1) \cong \GG_m \times \ZZ \quad\text{and}\quad \Pic(C \times (\AA^1 - \theset{0})) \cong \GG_m \times \ZZ \times \ZZ.
 $$
 
 (c) Now show that the restriction map $\Pic(C \times \AA^1) \to \Pic(C \times (\AA^1 - \theset{0}))$ is of the form $\generators{t, n} \mapsto \generators{t, 0, n}$, and that the automorphism $\varphi$ of $C \times (\AA^1 - \theset{0})$ induces a map of the form $\generators{t, d, n} \mapsto \generators{t, d + n, n}$ on its Picard group.
 
 (d) Conclude that the image of the restriction map $\Pic X \to \Pic(C \times \theset{0})$ consists entirely of divisors of degree $0$ on $C$.
-    Hence $X$ is not projective over $k$, and $\pi$ is not a projective morphism.
+Hence $X$ is not projective over $k$, and $\pi$ is not a projective morphism.
 :::
 
 ::: {.hint}
