@@ -150,7 +150,7 @@ $$
 $$
 
 ::: pf-proof
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}. Since $X$ is simply connected, the action of $\pi_1(X)$ on based homotopy classes is trivial, so based and free homotopy classes agree here.
 :::
 
 :::
