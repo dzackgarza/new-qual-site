@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Identified a normal rose cover with the Cayley graph of the quotient group, and conversely realized every generated group by the kernel cover.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: a normal cover of the wedge is the Cayley graph of $F_n/H$ on the images of the generators. Not every line checked.
 ---
 
 ::: {.problem}

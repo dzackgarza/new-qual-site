@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Identified the quotient as the order-eight dihedral group and described the normal cover as its labelled Cayley covering graph, then proved equality of subgroups by index.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: $F/N\cong\langle a,b\mid a^2=b^2=(ab)^4\rangle\cong D_8$ with $ara=r^{-1}$, and the covering graph drawn from the cosets. The drawing itself was not verified edge by edge.
 ---
 
 ::: {.problem}

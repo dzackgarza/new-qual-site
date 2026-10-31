@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Identified the orbit map as the universal cover and its deck group with G.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the whole proof: $q$ is a covering, the fiber is identified with $G$, lifting loops gives a homomorphism, and surjectivity and injectivity come from path connectedness and simple connectivity of $Y$.
 ---
 
 ::: {.problem}

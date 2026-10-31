@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used path-connected evenly covered neighborhoods to prove the intermediate map is locally a disjoint union of homeomorphisms, then descended deck transformations of the normal composite cover by uniqueness of lifts.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: common path-connected evenly covered neighbourhoods, and the local homeomorphism argument that makes $X\to Y$ a covering. Not every line checked.
 ---
 
 ::: {.problem}

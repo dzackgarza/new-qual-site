@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Identified the exponent-three quotient with the 27-element Heisenberg group and described the resulting normal Cayley cover and Hatcher torus cellulation.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: $N$ is normal because conjugates of cubes are cubes, and the quotient is the free two-generator group of exponent three. The 27-sheet count was not recomputed.
 ---
 
 ::: {.problem}

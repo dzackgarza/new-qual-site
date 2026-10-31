@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used the two path components of the topologist sine curve to confine each loop to a contractible finite truncation, then ruled out a lift by factoring it through the quotient and obtaining an impossible section of R to S1.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims and the argument: every path meets only finitely many oscillation excursions, separated by uniform continuity, so no lift of $f$ to $\RR$ can exist. Not every line checked.
 ---
 
 ::: {.problem}

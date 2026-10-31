@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Computed K-orbits of the Bass-Serre tree from the translation homomorphism and used Euler characteristic of the finite quotient graph.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: the action of $G_{m,n}$ on $T_{m,n}$, the vertex and edge counts of $T_{m,n}/K$ and the Euler-characteristic count of generators. Not every line checked.
 ---
 
 ::: {.problem}

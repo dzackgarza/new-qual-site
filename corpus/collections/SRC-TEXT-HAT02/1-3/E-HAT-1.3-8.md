@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Lifted homotopy inverse maps to the simply connected covers and lifted the base homotopies to prove the two composites are homotopic to the identities.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims and the lifting construction: $f\circ p_X$ lifts to $\widetilde Y$ because $\widetilde X$ is simply connected, and the homotopy inverses lift to homotopy inverses of the universal covers. Not every line checked.
 ---
 
 ::: {.problem}

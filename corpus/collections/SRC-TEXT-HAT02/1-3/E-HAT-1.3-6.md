@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Twisted one circle in each attached shrinking wedge, with the chosen circle index tending to infinity along the covering line, so the double cover is locally valid but the composite has no evenly covered neighborhood at the wedge point.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims and the construction: the horizontal line covering $C_1$, a shrinking wedge of sheets over every integer, and the choice $r_n=|n|+2$ that makes the selected sheet small. Not every line of the covering verification was checked.
 ---
 
 ::: {.problem}

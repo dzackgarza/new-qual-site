@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Classified connected finite covers by transitive permutation pairs modulo simultaneous conjugacy, yielding three double covers and seven triple covers.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims and the enumeration: connected $n$-sheeted covers as transitive pairs of permutations up to simultaneous conjugacy, giving the three two-sheeted classes. The three-sheeted count was not recomputed.
 ---
 
 ::: {.problem}

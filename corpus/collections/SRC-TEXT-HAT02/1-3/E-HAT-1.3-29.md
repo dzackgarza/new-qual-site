@@ -31,6 +31,11 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: 'Added the converse: a homeomorphism of orbit spaces lifts to a homeomorphism of Y that conjugates G_1 onto G_2.'
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: conjugate subgroups give homeomorphic orbit spaces through $h$, and conversely a homeomorphism of orbit spaces conjugates the groups. Not every line checked.
 ---
 
 ::: {.problem}

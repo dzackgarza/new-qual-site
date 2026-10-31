@@ -31,6 +31,11 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: Added the converse directions of (a) and (b).
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: the restricted one-skeleton cover corresponds to $j_*^{-1}(H)$, and the three parts follow from that correspondence. Not every line checked.
 ---
 
 ::: {.problem}

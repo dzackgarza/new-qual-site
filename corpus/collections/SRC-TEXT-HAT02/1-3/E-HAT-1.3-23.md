@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Shrunk a properly discontinuous neighborhood against the finitely many nontrivial intersecting translates, using Hausdorffness and freeness.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: proper discontinuity gives a finite stabilizer set, from which the covering-space condition follows. Not every line checked.
 ---
 
 ::: {.problem}

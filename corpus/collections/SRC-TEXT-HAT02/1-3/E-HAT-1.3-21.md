@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Computed both amalgam presentations; described the torus case as a Bass-Serre tree of planes and strips and the RP2 case as a four-sheeted annulus-plus-two-spheres universal cover with its deck action.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: the two presentations from the gluing relation $a=c^2$, and the description of the universal covers. Not every line checked.
 ---
 
 ::: {.problem}

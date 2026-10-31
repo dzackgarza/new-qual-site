@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Constructed the common double cover explicitly and proved neither quotient graph can nontrivially cover a connected graph.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: the theta and dumbbell graphs with the common two-sheeted cover built from two circles and two joining edges, the involution and its two quotients. Not every line checked.
 ---
 
 ::: {.problem}

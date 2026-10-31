@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Identified monodromy orbits with path components and stabilizers with closed lifts of based loops.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: orbits of the monodromy action are path components, and the stabilizer is the subgroup of the corresponding component. Not every line checked.
 ---
 
 ::: {.problem}

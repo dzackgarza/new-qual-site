@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Classified all subgroups of the infinite dihedral group up to conjugacy and translated their Schreier graphs into the corresponding covers built from lifted RP2 and S2 pieces.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: $\pi_1(\RP^2\vee\RP^2)=C_2*C_2$ and the classification of its subgroups into the four listed types. Not every line checked.
 ---
 
 ::: {.problem}

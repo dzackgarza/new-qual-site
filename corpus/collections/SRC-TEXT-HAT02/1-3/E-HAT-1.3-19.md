@@ -31,6 +31,11 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: 'Added both converses: n <= 2g via rank of the abelianization, and the embedding in R^3/Lambda for a translation deck group.'
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: $H_1(M_g)=\ZZ^{2g}$ bounds the rank, and the construction for $n=3$, $g\ge3$ inside $T^3$. Not every line checked.
 ---
 
 ::: {.problem}

@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used products of evenly covered neighborhoods and the universal property of orbit quotients.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: freeness of the product action, the product of evenly covered neighbourhoods, and the homeomorphism of orbit spaces. Not every line checked.
 ---
 
 ::: {.problem}

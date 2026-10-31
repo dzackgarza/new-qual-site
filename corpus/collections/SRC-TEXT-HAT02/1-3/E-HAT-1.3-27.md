@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Identified the two fiber actions as right multiplication by the inverse and left multiplication, yielding equality exactly for elementary abelian 2-groups.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: the fiber identified with $G$, monodromy as right multiplication and the deck action as left multiplication, with the two agreeing exactly when $G$ is abelian. Not every line checked.
 ---
 
 ::: {.problem}

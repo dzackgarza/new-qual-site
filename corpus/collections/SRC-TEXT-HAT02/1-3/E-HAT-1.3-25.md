@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the action locally, computed the fundamental-group extension, exhibited the non-Hausdorff orbit pair, and identified the four quadrant quotients.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: freeness of the $\ZZ$-action, $\pi_1(X/\ZZ)$, non-Hausdorffness at the two axes, and the four $S^1\times\RR$ pieces. Not every line checked.
 ---
 
 ::: {.problem}

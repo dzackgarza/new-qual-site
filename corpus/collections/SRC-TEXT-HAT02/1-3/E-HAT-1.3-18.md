@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Identified the universal abelian cover with the commutator-subgroup cover and described the two- and three-generator cases as integer lattice Cayley graphs.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: abelian normal covers are those whose subgroup contains the commutator subgroup, so the cover corresponding to $[G,G]$ is universal among them. Not every line checked.
 ---
 
 ::: {.problem}

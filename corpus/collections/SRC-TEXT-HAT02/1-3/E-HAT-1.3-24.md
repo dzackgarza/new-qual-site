@@ -27,6 +27,11 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 1.3, Exercise 24.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: the subgroup $H$ defined by the $G$-stabilizer of a covering intermediate to $X\to X/G$, and the conjugation and normality criteria. Not every line checked.
 ---
 
 ::: {.problem}

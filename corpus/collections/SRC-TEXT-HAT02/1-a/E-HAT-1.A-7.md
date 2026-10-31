@@ -19,6 +19,10 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: The old proof claimed every infinite graph has non-finitely-generated fundamental group, which is false; rewritten with a finite core subgraph and a deck translate of an embedded circle disjoint from it.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.A, Exercise 7.
 ---
 
 ::: {.problem}

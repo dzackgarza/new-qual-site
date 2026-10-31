@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Described the Cayley graph as the 3-regular tree with bi-infinite a-lines and b-edges forming a perfect matching.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the whole proof: valence three at every vertex, $a$-edges forming bi-infinite lines, the $b$-edges a perfect matching, and acyclicity from the normal-form theorem, so the Cayley graph is the infinite 3-regular tree.
 ---
 
 ::: {.problem}

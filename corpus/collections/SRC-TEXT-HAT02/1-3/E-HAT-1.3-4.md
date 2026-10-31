@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Constructed the universal covers as trees of copies of the sphere joined by lifts of the added arcs and checked the covering neighborhoods at the attachment points.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims, the openings and the construction: copies of $S^2$ chained by intervals covering the sphere-with-diameter space, and the analogous chain for the sphere with an attached circle. Not every line of the covering verification was checked.
 ---
 
 ::: {.problem}

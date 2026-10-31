@@ -20,6 +20,10 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: Counted based covers with their maps to the rose, which is what subgroups correspond to, instead of bare graphs.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.A, Exercise 8.
 ---
 
 ::: {.problem}
