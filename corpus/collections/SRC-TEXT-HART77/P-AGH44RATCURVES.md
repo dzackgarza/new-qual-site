@@ -33,7 +33,7 @@ audit:
 ---
 
 ::: {.problem}
-A variety $Y$ is *rational* if it is birationally equivalent to $\PP^n$ for some $n$; equivalently by (4.5), if $K(Y)$ is a purely transcendental extension of $k$.
+A variety $Y$ is \dfn{rational} if it is birationally equivalent to $\PP^n$ for some $n$; equivalently by (4.5), if $K(Y)$ is a purely transcendental extension of $k$.
 
 (a) Show that any conic in $\PP^2$ is a rational curve.
 
@@ -95,7 +95,7 @@ Thus
 $$
 K(C)=k(t),
 $$
-a purely transcendental extension of $k$ of degree one.
+a purely transcendental extension of $k$ of transcendence degree one.
 Hence $C$ is rational, proving (b).
 
 :::
@@ -198,7 +198,7 @@ Hence $Y$ is a rational curve, proving (c).
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove (a), (b), and (c), respectively.
+Step [](#s1){.pf-ref} proves (a), step [](#s2){.pf-ref} proves (b), and steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove (c).
 
 :::
 

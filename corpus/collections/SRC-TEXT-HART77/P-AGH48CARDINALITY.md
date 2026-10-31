@@ -31,12 +31,14 @@ audit:
 ::: {.problem}
 (a) Show that any variety of positive dimension over $k$ has the same cardinality as $k$.
 
-(b) Deduce that any two curves over $k$ are homeomorphic.
+(b) Deduce that any two curves over $k$ are homeomorphic (cf. Ex. I.3.1).
 :::
 
 ::: {.hint}
-Treat $\AA^n$ and $\PP^n$ first.
-Then for any $X$, use induction on the dimension $n$: make $X$ birational to a hypersurface $H \subseteq \PP^{n+1}$, and show that the projection of $H$ to $\PP^n$ from a point not on $H$ is finite-to-one and surjective.
+Do $\AA^n$ and $\PP^n$ first.
+Then for any $X$, use induction on the dimension $n$.
+Use Proposition I.4.9 to make $X$ birational to a hypersurface $H \subseteq \PP^{n+1}$.
+Use Ex. I.3.7 to show that the projection of $H$ to $\PP^n$ from a point not on $H$ is finite-to-one and surjective.
 :::
 
 ::: {.solution}

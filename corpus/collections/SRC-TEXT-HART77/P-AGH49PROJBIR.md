@@ -24,49 +24,30 @@ audit:
 
 ::: {.problem}
 Let $X$ be a projective variety of dimension $r$ in $\PP^n$, with $n \geq r + 2$.
-Show that for a suitable choice of a point $P \notin X$ and a linear subspace $\PP^{n-1} \subseteq \PP^n$, the projection from $P$ to $\PP^{n-1}$ induces a birational morphism of $X$ onto its image $X' \subseteq \PP^{n-1}$.
-
-This shows in particular that the birational map making $X$ birational to a hypersurface can be obtained by a finite number of such projections.
+Show that for a suitable choice of a point $P \notin X$ and a linear subspace $\PP^{n-1} \subseteq \PP^n$, the projection from $P$ to $\PP^{n-1}$ (Ex. I.3.14) induces a birational morphism of $X$ onto its image $X' \subseteq \PP^{n-1}$.
+You will need to use Theorem I.4.6A, Theorem I.4.7A and Theorem I.4.8A.
+This shows in particular that the birational map of Proposition I.4.9 can be obtained by a finite number of such projections.
 :::
 
 ::: {.solution}
-Let $K=k(X)$ be the function field of $X$.
-We use that $k$ is algebraically closed, hence perfect, so every finitely generated extension of $k$ is separably generated [@Har77, Theorem I.4.8A].
+Let $K=K(X)$ be the function field of $X$.
+Since $k$ is algebraically closed, hence perfect, $K$ is separably generated over $k$ [@Har77, Theorem I.4.8A].
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-After a projective linear change of coordinates, the rational functions
-$$
-u_i=\frac{x_i}{x_0}\qquad(1\le i\le r+1)
-$$
-generate $K$ over $k$.
+There are homogeneous coordinates $x_0,\ldots,x_n$ on $\PP^n$ such that $X \not\subseteq Z(x_0)$ and none of the coordinate points $e_1,\ldots,e_n$ lies on $X$.
 
 ::: pf-proof
 
-Choose a hyperplane not containing $X$ and call its equation $x_0=0$.
-On the dense affine open $X\cap D_+(x_0)$, the coordinate ratios $x_i/x_0$, $1\le i\le n$, generate $K$ as a field over $k$.
-
-Since $K/k$ is separably generated of transcendence degree $r$, Theorem I.4.7A permits, after an invertible linear change among these affine linear coordinates, a separating transcendence basis $u_1,\ldots,u_r$ chosen from them.
-Thus $K$ is finite separable over
-$$
-F=k(u_1,\ldots,u_r).
-$$
-The remaining affine coordinates generate this finite extension.
-By the primitive element theorem [@Har77, Theorem I.4.6A], a suitable $k$-linear combination of those remaining coordinates is a primitive element $u_{r+1}$ for $K/F$.
-Replacing one remaining projective coordinate by the same linear combination gives
-$$
-K=k(u_1,\ldots,u_r,u_{r+1}).
-$$
-
-The choices just made persist on a nonempty Zariski-open set of linear coordinate systems.
-For the transcendence basis, nonvanishing of $du_1\wedge\cdots\wedge du_r$ in $\Omega_{K/k}^r$ is an open nonvanishing condition on the linear coefficients.
-For the primitive element, if $K/F$ is replaced by a finite normal extension containing it, failure of a linear combination to separate two distinct $F$-embeddings is one linear equation in its coefficients; only finitely many pairs of embeddings occur.
-Hence primitive linear combinations form a nonempty open subset of the relevant coefficient space.
-Finally, the condition that the last coordinate point $[0:\cdots:0:1]$ lie outside the transformed $X$ is also open and nonempty, because $X\subsetneq\PP^n$.
-The parameter space of projective coordinate systems is irreducible, so these finitely many nonempty open conditions can be imposed simultaneously.
-We henceforth use such a coordinate system.
+The hyperplanes of $\PP^n$ have empty common intersection, so some hyperplane $H$ does not contain $X$.
+Then $X \intersect H$ is a proper closed subset of $H \cong \PP^{n-1}$.
+Choose $e_1 \in H \sm X$, and inductively choose $e_j \in H$ outside $X$ and outside the linear span of $e_1,\ldots,e_{j-1}$, for $j \le n$.
+Each choice is possible because $H$ is irreducible and the two excluded sets are proper closed subsets of $H$.
+The points $e_1,\ldots,e_n$ are linearly independent and span $H$.
+Take $x_0$ to be a linear form with $Z(x_0) = H$, extend to coordinates $x_0,\ldots,x_n$ dual to a basis $e_0, e_1, \ldots, e_n$ with $e_0 \notin H$.
+Then $e_1,\ldots,e_n$ are the coordinate points and $X \not\subseteq Z(x_0)$.
 
 :::
 
@@ -74,24 +55,14 @@ We henceforth use such a coordinate system.
 
 ::: {.pf-step #s2}
 
-Projection from
-$$
-P=[0:\cdots:0:1]\notin X
-$$
-to the hyperplane $H=V(x_n)\cong\PP^{n-1}$ restricts to a morphism
-$$
-\pi:X\longrightarrow X'\coloneqq\overline{\pi(X)}\subseteq H.
-$$
+After renumbering $x_1,\ldots,x_n$, the functions $y_i = x_i/x_0$ satisfy: $y_1,\ldots,y_r$ is a separating transcendence basis of $K/k$, and $K$ is finite separable over $F = k(y_1,\ldots,y_r)$.
 
 ::: pf-proof
 
-Projection from $P$ is
-$$
-[x_0:\cdots:x_n]\longmapsto[x_0:\cdots:x_{n-1}].
-$$
-Its only indeterminacy point is $P$.
-Since $P\notin X$, its restriction to $X$ is everywhere defined and is a morphism, by the coordinate description of projection in Exercise I.3.14.
-The image of the irreducible space $X$ is irreducible, so its closure $X'$ is a projective variety.
+On the dense open set $X \intersect D_+(x_0)$ the functions $y_1,\ldots,y_n$ generate $K$ over $k$.
+By [@Har77, Theorem I.4.7A], a separating transcendence basis can be chosen from this generating set; it has $r$ elements because $\trdeg_k K = \dim X = r$.
+Renumbering $x_1,\ldots,x_n$ permutes $e_1,\ldots,e_n$, so step [](#s1){.pf-ref} still holds.
+Then $K = F(y_{r+1},\ldots,y_n)$ is finite and separable over $F$.
 
 :::
 
@@ -99,24 +70,16 @@ The image of the irreducible space $X$ is irreducible, so its closure $X'$ is a 
 
 ::: {.pf-step #s3}
 
-The induced map of function fields $k(X')\hookrightarrow K$ is an isomorphism.
+For all but finitely many $c \in k$, the element $z_c = y_{n-1} + c\, y_n$ satisfies $F(y_{n-1}, y_n) = F(z_c)$.
 
 ::: pf-proof
 
-On the dense open set $x_0\ne0$, the projection retains the affine coordinate functions
-$$
-u_i=x_i/x_0\qquad(1\le i\le n-1).
-$$
-Therefore its pullback identifies $k(X')$ with the subfield
-$$
-k(u_1,\ldots,u_{n-1})\subseteq K.
-$$
-Because $n\ge r+2$, one has $r+1\le n-1$.
-Step [](#s1){.pf-ref} shows that the first $r+1$ of these retained functions already generate $K$.
-Hence
-$$
-k(X')=k(u_1,\ldots,u_{n-1})=K.
-$$
+Because $n \ge r+2$, the indices $n-1$ and $n$ are both at least $r+1$, so $y_{n-1}$ and $y_n$ are separable over $F$.
+Let $L$ be a normal closure of $K/F$, let $\beta_1,\ldots,\beta_p$ be the conjugates of $y_{n-1}$ in $L$, and let $\gamma_1,\ldots,\gamma_q$ be the conjugates of $y_n$, with $\gamma_1 = y_n$ and $\beta_1 = y_{n-1}$; the $\gamma_j$ are distinct by separability.
+Exclude the finitely many $c \in k$ with $\beta_i + c \gamma_j = \beta_1 + c \gamma_1$ for some $i$ and some $j \neq 1$.
+For any other $c$, let $g$ and $f$ be the minimal polynomials of $y_n$ and $y_{n-1}$ over $F$, and put $h(T) = f(z_c - cT)$. Then $g$ and $h$ both lie in $F(z_c)[T]$ and have $y_n$ as their only common root in $L$.
+Since $g$ has distinct roots, their greatest common divisor over $F(z_c)$ is $T - y_n$, so $y_n \in F(z_c)$, and then $y_{n-1} = z_c - c\, y_n \in F(z_c)$.
+This is the standard proof of the primitive element theorem [@Har77, Theorem I.4.6A]; the excluded set is finite and $k$ is infinite.
 
 :::
 
@@ -124,13 +87,25 @@ $$
 
 ::: {.pf-step #s4}
 
-The morphism $\pi:X\to X'$ is birational.
+Choose $c$ as in step [](#s3){.pf-ref} with
+$$
+P = [0 : \cdots : 0 : -c : 1] \notin X .
+$$
+Then projection from $P$ to the hyperplane $Z(x_n) \cong \PP^{n-1}$ restricts to a morphism $\pi : X \to X' \coloneqq \overline{\pi(X)}$.
 
 ::: pf-proof
 
-A dominant morphism of varieties is birational exactly when it induces an isomorphism of function fields [@Har77, Proposition I.4.4].
-Dominance holds by the definition of $X'$ as the closure of the image, and step [](#s3){.pf-ref} gives the required function-field isomorphism.
-Thus the chosen projection is birational onto its image.
+The points $P$ lie on the line $\ell = Z(x_0,\ldots,x_{n-2})$ through $e_{n-1}$ and $e_n$.
+By step [](#s1){.pf-ref}, $e_n \notin X$, so $\ell \not\subseteq X$, and $X \intersect \ell$ is a proper closed subset of $\ell \cong \PP^1$, hence finite.
+So all but finitely many $c$ give $P \notin X$, and a $c$ meeting both conditions exists.
+
+The point $P$ is the only common zero of the linear forms $x_0, \ldots, x_{n-2}, x_{n-1} + c\, x_n$, and $P \notin Z(x_n)$.
+By Ex. I.3.14, projection from $P$ to $Z(x_n)$ is
+$$
+[x_0 : \cdots : x_n] \longmapsto [x_0 : \cdots : x_{n-2} : x_{n-1} + c\, x_n : 0],
+$$
+a morphism on $\PP^n \sm \theset{P}$, hence on $X$.
+The image of the irreducible space $X$ is irreducible, so $X'$ is a projective variety.
 
 :::
 
@@ -138,14 +113,32 @@ Thus the chosen projection is birational onto its image.
 
 ::: {.pf-step #s5}
 
+The morphism $\pi : X \to X'$ is birational.
+
+::: pf-proof
+
+The morphism $\pi$ is dominant by the definition of $X'$, so it induces an inclusion $\pi^* : K(X') \hookrightarrow K$.
+On $X \intersect D_+(x_0)$ the coordinate functions of $X'$ pull back to $y_1, \ldots, y_{n-2}, z_c$, so
+$$
+\pi^* K(X') = k(y_1, \ldots, y_{n-2}, z_c) = F(y_{r+1}, \ldots, y_{n-2}, z_c) .
+$$
+By step [](#s3){.pf-ref} this field contains $y_{n-1}$ and $y_n$, hence equals $F(y_{r+1},\ldots,y_n) = K$.
+A dominant morphism inducing an isomorphism of function fields is birational [@Har77, Corollary I.4.5].
+
+:::
+
+:::
+
+::: {.pf-step #s6}
+
 Repeating the construction reduces the ambient projective dimension to $r+1$.
 
 ::: pf-proof
 
-If the current ambient dimension is greater than $r+1$, step [](#s4){.pf-ref} replaces the variety birationally by one in a projective space of dimension one less.
-Its dimension remains $r$, because birational varieties have the same function field and therefore the same transcendence degree over $k$.
-After finitely many repetitions the image lies in $\PP^{r+1}$, where an $r$-dimensional projective variety has codimension one and is therefore a hypersurface by [[P-AGH28HYPERSURFACE]].
-This proves the final assertion in the statement.
+The image $X'$ is birational to $X$, so it again has dimension $r$.
+While the ambient dimension $m$ satisfies $m \ge r+2$, step [](#s5){.pf-ref} replaces the variety birationally by one in $\PP^{m-1}$.
+After finitely many repetitions the image lies in $\PP^{r+1}$, where an $r$-dimensional projective variety is a hypersurface by [[P-AGH28HYPERSURFACE]].
+The composite is birational, which gives the final assertion of the statement.
 
 :::
 
@@ -153,10 +146,9 @@ This proves the final assertion in the statement.
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} construct the required point, projection, and birational morphism; step [](#s5){.pf-ref} gives the stated finite iteration to a hypersurface.
+Steps [](#s1){.pf-ref} to [](#s5){.pf-ref} construct the point $P$, the hyperplane $Z(x_n)$, and the birational projection; step [](#s6){.pf-ref} gives the finite iteration.
 
 :::
 
 :::
-
 :::

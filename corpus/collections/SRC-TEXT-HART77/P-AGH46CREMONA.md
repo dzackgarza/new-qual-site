@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-A birational map of $\PP^2$ into itself is called a *plane Cremona transformation*. One example, called a *quadratic transformation*, is the rational map $\varphi: \PP^2 \dashrightarrow \PP^2$ given by
+A birational map of $\PP^2$ into itself is called a \dfn{plane Cremona transformation}. We give an example, called a \dfn{quadratic transformation}. It is the rational map $\varphi: \PP^2 \dashrightarrow \PP^2$ given by
 $$
 (a_0, a_1, a_2) \mapsto (a_1 a_2,\ a_0 a_2,\ a_0 a_1)
 $$

@@ -28,7 +28,7 @@ Blow up the point $O = (0,0)$.
 Let $E$ be the exceptional curve, and let $\tilde{Y}$ be the strict transform of $Y$.
 Show that $E$ meets $\tilde{Y}$ in one point, and that $\tilde{Y} \cong \AA^1$.
 
-In this case the morphism $\rho: \tilde{Y} \to Y$ is bijective and bicontinuous, but it is not an isomorphism.
+In this case the morphism $\varphi: \tilde{Y} \to Y$ is bijective and bicontinuous, but it is not an isomorphism.
 :::
 
 ::: {.solution}
@@ -43,7 +43,7 @@ The blowup map is the projection to $(x,y)$.
 
 ::: {.pf-step #s1}
 
-On the chart $u\ne0$, with $t=v/u$, the blowup is $\Spec k[x,t]$ with
+On the chart $u\ne0$, with $t=v/u$, the blowup is isomorphic to $\AA^2$ with coordinates $x,t$ and
 $$
 y=xt,
 $$
@@ -120,7 +120,7 @@ Step [](#s2){.pf-ref} shows that no further intersection point occurs on the oth
 
 ::: {.pf-step #s4}
 
-Under the identification $\widetilde Y\cong\AA^1$, the morphism $\rho:\widetilde Y\to Y$ is
+Under the identification $\widetilde Y\cong\AA^1$, the morphism $\varphi:\widetilde Y\to Y$ is
 $$
 t\longmapsto(t^2,t^3),
 $$
@@ -149,11 +149,11 @@ Thus every point of $Y$ has exactly one preimage.
 
 ::: {.pf-step #s5}
 
-The bijection $\rho$ is bicontinuous but is not an isomorphism.
+The bijection $\varphi$ is bicontinuous but is not an isomorphism.
 
 ::: pf-proof
 
-On coordinate rings, $\rho$ is induced by
+On coordinate rings, $\varphi$ is induced by
 $$
 k[x,y]/(y^2-x^3)\longrightarrow k[t],
 \qquad x\longmapsto t^2,\quad y\longmapsto t^3.
@@ -163,8 +163,8 @@ $$
 T^2-x=0.
 $$
 Hence $k[t]$ is finite over $k[t^2,t^3]$: it is generated as a module by $1,t$.
-Therefore $\rho$ is a finite morphism and in particular a closed map.
-By step [](#s4){.pf-ref} it is also bijective, so a continuous closed bijection is a homeomorphism; equivalently, $\rho$ is bicontinuous.
+Therefore $\varphi$ is a finite morphism and in particular a closed map.
+By step [](#s4){.pf-ref} it is also bijective, so a continuous closed bijection is a homeomorphism; equivalently, $\varphi$ is bicontinuous.
 
 It is not an isomorphism because the displayed homomorphism of coordinate rings is not surjective.
 Indeed $t\notin k[t^2,t^3]$: every nonconstant monomial in that subring has degree at least two as a polynomial in $t$, so no polynomial in $t^2,t^3$ equals $t$.
@@ -176,7 +176,7 @@ Thus the inverse homeomorphism is not a morphism of varieties.
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} compute the strict transform and its exceptional intersection, while steps [](#s4){.pf-ref} and [](#s5){.pf-ref} establish the asserted properties of $\rho$.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} compute the strict transform and its exceptional intersection, while steps [](#s4){.pf-ref} and [](#s5){.pf-ref} establish the asserted properties of $\varphi$.
 
 :::
 

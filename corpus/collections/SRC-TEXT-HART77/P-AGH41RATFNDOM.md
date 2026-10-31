@@ -27,12 +27,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be a variety.
-
-(a) Let $f$ and $g$ be regular functions on open subsets $U$ and $V$ of $X$, and suppose $f = g$ on $U \intersect V$.
+Let $f$ and $g$ be regular functions on open subsets $U$ and $V$ of $X$, and suppose $f = g$ on $U \intersect V$.
 Show that the function which equals $f$ on $U$ and $g$ on $V$ is a regular function on $U \union V$.
-
-(b) Conclude that if $f$ is a rational function on $X$, then there is a largest open subset $U \subseteq X$ on which $f$ is represented by a regular function.
+Conclude that if $f$ is a rational function on $X$, then there is a largest open subset $U \subseteq X$ on which $f$ is represented by a regular function.
 One says that $f$ is defined at the points of $U$.
 :::
 
@@ -60,8 +57,6 @@ If $x\in U$, then on the open neighborhood $U$ of $x$ the function $h$ equals th
 If $x\in V$, then on the open neighborhood $V$ it equals the regular function $g$.
 Thus every point has an open neighborhood on which $h$ is regular.
 Regularity is local, so $h$ is regular on $U\cup V$.
-This proves (a).
-
 :::
 
 :::
@@ -115,15 +110,13 @@ $$
 W\subseteq D(r).
 $$
 Thus $D(r)$ is maximal by inclusion and is uniquely determined.
-This proves (b).
-
 :::
 
 :::
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves (a), and steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove (b).
+Step [](#s1){.pf-ref} proves the gluing assertion, and steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove the existence of the largest open subset.
 
 :::
 

@@ -38,7 +38,7 @@ Show that the quadric surface $Q: xy = zw$ in $\PP^3$ is birational to $\PP^2$, 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The open subset
 $$
@@ -106,7 +106,7 @@ is birational.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The surface $Q$ contains two disjoint projective lines.
 
