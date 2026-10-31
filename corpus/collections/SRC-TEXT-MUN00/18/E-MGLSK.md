@@ -61,5 +61,5 @@ For maps $f:\RR_\ell\to\RR_\ell$, continuity is equivalent to the following one-
 $$
 f([a,a+\delta))\subseteq[f(a),f(a)+\varepsilon).
 $$
-Necessity follows by applying continuity to the basic target neighborhood $[f(a),f(a)+\varepsilon)$. Conversely, suppose the condition holds, and let $a\in f^{-1}([c,d))$. With $\varepsilon=d-f(a)$, the condition gives $\delta>0$ with $f([a,a+\delta))\subseteq[f(a),d)\subseteq[c,d)$, so $f^{-1}([c,d))$ is open in $\RR_\ell$. Equivalently, such functions are right-continuous and locally nondecreasing from the right.
+Necessity follows by applying continuity to the basic target neighborhood $[f(a),f(a)+\varepsilon)$. Conversely, suppose the condition holds, and let $a\in f^{-1}([c,d))$. With $\varepsilon=d-f(a)$, the condition gives $\delta>0$ with $f([a,a+\delta))\subseteq[f(a),d)\subseteq[c,d)$, so $f^{-1}([c,d))$ is open in $\RR_\ell$.
 :::
