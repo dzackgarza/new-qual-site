@@ -37,6 +37,8 @@ be a map of connected $n$-dimensional CW complexes inducing isomorphisms on $\pi
 $$
 \widetilde f:\widetilde X\to\widetilde Y.
 $$
+For $n=0$, both spaces are points. For $n=1$, their universal covers are contractible trees, so Exercise 12 applies. Suppose henceforth that $n\ge2$.
+
 The universal covers are simply connected $n$-dimensional CW complexes, and $\widetilde f$ is an isomorphism on $\pi_i$ for $2\le i\le n$.
 
 Consider its mapping-cylinder pair $(M_{\widetilde f},\widetilde X)$. The long exact sequence of homotopy groups shows that this pair is $n$-connected. Relative Hurewicz therefore gives
@@ -44,7 +46,7 @@ $$
 H_i(M_{\widetilde f},\widetilde X)=0
 \qquad(i\le n).
 $$
-Equivalently,
+Relative Hurewicz also identifies $\pi_{n+1}(M_{\widetilde f},\widetilde X)$ with $H_{n+1}(M_{\widetilde f},\widetilde X)$. The homotopy exact sequence makes the former a quotient of $\pi_{n+1}(M_{\widetilde f})$. Its image under the relative Hurewicz map is zero: by naturality it factors through $H_{n+1}(M_{\widetilde f})=H_{n+1}(\widetilde Y)=0$. Thus $H_{n+1}(M_{\widetilde f},\widetilde X)=0$ as well. The homology exact sequence now gives
 $$
 \widetilde f_*:H_i(\widetilde X)\xrightarrow{\cong}H_i(\widetilde Y)
 \qquad(i\le n).
