@@ -10,6 +10,11 @@ classification:
   - Baire Spaces
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: gpt-6.1-sol
+  date: 2026-10-31
+  note: 'The printed theorem asks for a nonempty open set, so the complete metric space X must be nonempty.'
 ---
 
 ::: {.exercise}
@@ -17,7 +22,7 @@ review: draft
 Prove the following.
 
 Theorem (Uniform boundedness principle).
-Let $X$ be a complete metric space, and let $\mathcal{F}$ be a subset of $\mathcal{C}(X, \RR)$ such that for each $a \in X$, the set
+Let $X$ be a nonempty complete metric space, and let $\mathcal{F}$ be a subset of $\mathcal{C}(X, \RR)$ such that for each $a \in X$, the set
 
 $$
 \mathcal{F}_a = \theset{f(a) \mid f \in \mathcal{F}}
