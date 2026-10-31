@@ -130,7 +130,7 @@ a bounded entire function is constant.
 $F = 0$.
 
 ::: pf-proof
-$F(\xi) = A(\xi) = 0$ for all real $\xi$ (since $A(\xi) = B(\xi)$ and $A(\xi) - B(\xi) = 0$... more directly, $A(\xi) = \int_{-\infty}^t f(x)e^{-2\pi i\xi(x-t)}dx$, and as $\xi \to \infty$ this tends to $0$ by Riemann–Lebesgue, so the constant $F$ is $0$).
+For $y > 0$, $\abs{A(iy)} \le \int_{-\infty}^t \abs{f(x)}e^{2\pi y(x-t)}\,dx$. The integrand is dominated by the integrable $\abs{f}$ and tends to $0$ pointwise for $x < t$ as $y \to \infty$, so $A(iy) \to 0$ by dominated convergence. The constant value of $F$ is therefore $0$.
 :::
 
 :::
