@@ -30,7 +30,7 @@ Every $m$-manifold has topological dimension at most $m$.
 :::
 
 ::: {.solution}
-Let $M$ be an $m$-manifold. It is Hausdorff and second-countable, hence locally compact and $\sigma$-compact.
+Let $M$ be an $m$-manifold. Its local Euclidean charts make it locally compact. Since it is also Hausdorff and second-countable, it is $\sigma$-compact.
 
 Let $K\subset M$ be compact. Cover $K$ by finitely many coordinate neighborhoods and shrink them so that there are compact sets
 $$
