@@ -107,7 +107,7 @@ Since $(X, d)$ is complete and $d(x_n, x_{n+p}) < \sum_{k=n}^{n+p-1} 2^{-k} < 2^
 
 ::: pf-step
 
-Let $A = \overline{A_\infty}$. Then $A \in \mathcal{H}$ is closed and bounded.
+Choose $x_1\in A_1$. Since $D(A_n,A_{n+1})<2^{-n}$, choose successively $x_{n+1}\in A_{n+1}$ with $d(x_n,x_{n+1})<2^{-n}$. This gives a point of $A_\infty$, so $A_\infty$ is nonempty. Every point of $A_\infty$ lies within $1$ of some point of the bounded set $A_1$, so $A_\infty$ is bounded. Let $A = \overline{A_\infty}$. Then $A \in \mathcal{H}$ is nonempty, closed, and bounded.
 
 :::
 
