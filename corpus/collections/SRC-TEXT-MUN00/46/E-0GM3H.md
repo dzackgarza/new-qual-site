@@ -139,7 +139,7 @@ Part (c): If $X$ is compact, the fine and uniform topologies coincide.
 
 ::: pf-step
 
-By step [](#s2){.pf-ref}, the fine topology is at least as fine as the uniform topology.
+If $X=\varnothing$, the function space has one point and both topologies agree. Assume $X\ne\varnothing$. By step [](#s2){.pf-ref}, the fine topology is at least as fine as the uniform topology.
 
 :::
 
@@ -193,7 +193,7 @@ Furthermore, every function $\delta: X \to \RR_+$ is continuous.
 
 ::: pf-step
 
-A basic open set in the box topology on $\prod_{x \in X} Y$ containing $f$ is $\prod_{x \in X} B_d(f(x), \varepsilon_x)$ for an arbitrary collection of positive numbers $(\varepsilon_x)_{x \in X}$.
+Products $\prod_{x \in X} B_d(f(x), \varepsilon_x)$, for arbitrary positive radii $(\varepsilon_x)_{x \in X}$, form a neighborhood basis at $f$ for the box topology on $\prod_{x \in X}Y$.
 
 :::
 
