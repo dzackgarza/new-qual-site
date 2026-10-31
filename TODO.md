@@ -1,5 +1,34 @@
 # Outstanding work
 
+The standing task is to finish all outstanding repository work. The current route has
+two open parts: complete the source-by-source mathematical reading below and continue
+authoring solutions under issue #2. A tick means the whole source and every listed
+problem have been read against the source, with discovered gaps repaired or recorded as
+open tasks. A prior tick alone is not evidence of that condition.
+
+## Next work
+
+| ID | Needs | Required result |
+| --- | --- | --- |
+| `ad-text-hart77` | none | Read every `SRC-TEXT-HART77` card against the book, repair each defect one card at a time, then tick its reading item. |
+| `ad-text-hun74` | none | Do the same for `SRC-TEXT-HUN74`. |
+| `ad-text-smi` | none | Do the same for `SRC-TEXT-SMI`. |
+| `ad-text-hat02` | none | Do the same for `SRC-TEXT-HAT02`; the last reported reading stopped in section 2.1. |
+| `ad-text-mun00` | none | Do the same for `SRC-TEXT-MUN00`. |
+| `ad-text-ss03-gaps` | none | Compare `SRC-TEXT-SS03` with the book and add missing cards, one item at a time: chapter 2 problems 4–5; chapter 4 problems 3*–4*; chapter 5 exercises 15–17; chapter 7 exercises 5–12; chapter 8 problems 4–9; chapter 9 problems 2–3; chapter 10 problem 1 and problems 5 onward. Verify existing-card identity before adding each card. |
+| `ad-text-hk71-locators` | none | Check every `SRC-TEXT-HK71` appearance locator in sections 7.1–10.4 against the book; correct each mismatch. |
+| `ad-source-gaps` | none | Resolve the source-dependent questions identified below from source documents; do not reconstruct missing mathematics from conjecture. |
+| `audited-deployment` | `ad-text-hart77`, `ad-text-hun74`, `ad-text-smi`, `ad-text-hat02`, `ad-text-mun00`, `ad-text-ss03-gaps`, `ad-text-hk71-locators`, `ad-source-gaps` | Finish the reading checklist and all repairs; only then close this node. |
+| `unsolved-contribution` | none | Continue issue #2 by selecting, reading, proving, reviewing, and committing each unsolved problem card in source order. |
+
+For `ad-source-gaps`, the current source questions are: the added part (b) in the
+`SRC-MATH4100-6100-2020` appearance of `P-AZOFF-A05`; the truncated MH07 January
+2005 problems 3, 8, 9, and 10 and January 2006 problem 9; missing source documents
+for the NUS 1970 complex and real analysis collections; and the unidentified
+“Theorem 6.1” cited by RA-WORKSHOP D7-W3. Check the present cards and retained
+source material before changing each one. Record an unresolved source question in
+COMPLAINTS.md with its exact owner and evidence.
+
 ## Fast local checks and complete CI acceptance
 
 Local hooks reject basic defects in the actual changed content; CI owns full test suites,
@@ -37,10 +66,10 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
 
 ### Current route
 
-`publication-milestone`, `unsolved-contribution`, `slogans`, `lamport-conversion`,
-`solution-section-restoration`, `copy-policy-repair`, `audited-deployment`,
+`publication-milestone`, `slogans`, `lamport-conversion`,
+`solution-section-restoration`, `copy-policy-repair`,
 `refactor-audit`, `type-paydown`, and `bloat-audit-loop` are closed.
-The next ready work is authoring solutions under issue #2.
+The next ready work is the textbook reading and source gaps in the table above.
 
 Copy is reader-facing prose: wiki pages, remarks, and site strings. Problem statements and
 proofs are mathematics, not copy. A defect in a statement or proof is repaired as a
@@ -58,7 +87,7 @@ mathematical correction under its own node, not under copy policy.
   closed. Rounds 1-9 sampled slices without recording coverage, so the checklist starts
   unticked.
   Round 1 (revision `fe928e9a1`) injected the nodes below; `audited-deployment` needs all of them.
-  **Closed.** Every reading item is checked and the injected nodes are closed.
+  **Open.** The textbook reading and source gaps in the table above remain.
 
   Reading checklist. Each item is read once, in full, against its source; its repairs are
   committed before the item is ticked.
@@ -267,14 +296,14 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-TAMU-RA-SPRING-2017
   - [x] SRC-TEXT-DF04
   - [x] SRC-TEXT-FOL99
-  - [x] SRC-TEXT-HART77
-  - [x] SRC-TEXT-HAT02
-  - [x] SRC-TEXT-HK71
-  - [x] SRC-TEXT-HUN74
-  - [x] SRC-TEXT-MUN00
+  - [ ] SRC-TEXT-HART77
+  - [ ] SRC-TEXT-HAT02
+  - [ ] SRC-TEXT-HK71
+  - [ ] SRC-TEXT-HUN74
+  - [ ] SRC-TEXT-MUN00
   - [x] SRC-TEXT-RUD76
-  - [x] SRC-TEXT-SMI
-  - [x] SRC-TEXT-SS03
+  - [ ] SRC-TEXT-SMI
+  - [ ] SRC-TEXT-SS03
   - [x] SRC-TEXT-SS03-FOURIER
   - [x] SRC-TEXT-SS05
   - [x] SRC-TOP-2002Q1
