@@ -87,7 +87,7 @@ satisfies
 $$
 \Tr(1)=2.
 $$
-Because $\operatorname{char}k\ne2$, multiplication by $1/2$ gives a
+Because $\characteristic k\ne2$, multiplication by $1/2$ gives a
 retraction
 $$
 \frac12\Tr:A\longrightarrow\OO_Y

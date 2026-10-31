@@ -71,7 +71,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 It is enough to prove the bound after replacing the ground field by
 its algebraic closure.
@@ -240,9 +240,9 @@ If $s=4$, then
 $$
 E=2-\sum_{i=1}^4\frac1{r_i}.
 $$
-The choice $(2,2,2,2)$ gives $E=0$.  Subject to $E>0$, the reciprocal sum
-is maximized by changing just one denominator from $2$ to the next possible
-integer $3$.  Hence
+The choice $(2,2,2,2)$ gives $E=0$, so $E>0$ forces some $r_i\ge3$; the
+other three reciprocals are at most $1/2$ and that one is at most $1/3$.
+Hence
 $$
 \sum_{i=1}^4\frac1{r_i}
 \le

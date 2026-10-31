@@ -52,7 +52,7 @@ Show that $f_* f^*: \Pic Y \to \Pic Y$ is just multiplication by $n$.
 7.2) to show that $$\det f_* \Omega_X \cong \qty{ \det f_* \OO_X}^{-1} \tensor \Omega_Y^{\tensor n}.$$
 
 (d) Now assume that $f$ is separable, so we have the ramification divisor $R$.
-We define the **branch divisor** $B$ to be the divisor $f_* R$ on $Y$.
+We define the \dfn{branch divisor} $B$ to be the divisor $f_* R$ on $Y$.
 Show that $$\left(\det f_* \OO_X\right)^2 \cong \mcl(-B).$$
 :::
 
@@ -269,7 +269,7 @@ Finite duality gives an isomorphism
 $$
 f_*\Omega_X
 \cong
-\mathcal Hom_Y(E,\Omega_Y)
+\sheafhom_Y(E,\Omega_Y)
 \cong
 E^\vee\tensor\Omega_Y.
 $$
@@ -283,7 +283,7 @@ relative to the dualizing sheaf of $Y$:
 $$
 f_*\omega_X
 \cong
-\mathcal Hom_Y(f_*\OO_X,\omega_Y).
+\sheafhom_Y(f_*\OO_X,\omega_Y).
 $$
 On a nonsingular curve the dualizing sheaf is the sheaf of differentials, so
 $$
@@ -293,7 +293,7 @@ $$
 $$
 Because $E$ is locally free,
 $$
-\mathcal Hom_Y(E,\Omega_Y)
+\sheafhom_Y(E,\Omega_Y)
 \cong
 E^\vee\tensor\Omega_Y,
 $$

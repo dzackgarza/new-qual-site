@@ -34,7 +34,7 @@ Note that $f$ is uniquely determined, up to an automorphism of $\PP^1$, so $X$ d
 
 (b) Conversely, given six distinct elements $\alpha_1, \ldots, \alpha_6 \in k$, let $K$ be the extension of $k(x)$ determined by the equation $z^2=(x-\alpha_1) \cdots (x-\alpha_6)$.
 Let $f: X \to \PP^1$ be the corresponding morphism of curves.
-Show that $g(X)=2$, the map $f$ is the same as the one determined by the canonical linear system, and $f$ is ramified over the six points $x=\alpha_i$ of $\PP^1$, and nowhere else.
+Show that $g(X)=2$, the map is the same as the one determined by the canonical linear system, and $f$ is ramified over the six points $x=\alpha_i$ of $\PP^1$, and nowhere else.
 (Cf.
 (II, Ex.
 6.4).)
@@ -44,7 +44,7 @@ Show that $g(X)=2$, the map $f$ is the same as the one determined by the canonic
 Thus in (a), if we order the six points of $\PP^1$, and then normalize by sending the first three to $0,1,\infty$ respectively, we may assume that $X$ is ramified over $0,1,\infty, \beta_1, \beta_2, \beta_3$, where $\beta_1, \beta_2, \beta_3$ are three distinct elements of $k$, $\neq 0,1$.
 
 (d) Let $\Sigma_6$ be the symmetric group on 6 letters.
-Define an action of $\Sigma_6$ on sets of three distinct elements $\beta_1, \beta_2, \beta_3$ of $k$, $\neq 0,1$, as follows: reorder the set $0,1,\infty, \beta_1, \beta_2, \beta_3$ according to a given element $\sigma \in \Sigma_6$, then renormalise as in (c) so that the first three become $0,1,\infty$ again.
+Define an action of $\Sigma_6$ on sets of three distinct elements $\beta_1, \beta_2, \beta_3$ of $k$, $\neq 0,1$, as follows: reorder the set $0,1,\infty, \beta_1, \beta_2, \beta_3$ according to a given element $\sigma \in \Sigma_6$, then renormalize as in (c) so that the first three become $0,1,\infty$ again.
 Then the last three are the new $\beta_1', \beta_2', \beta_3'$.
 
 (e) Summing up, conclude that there is a one-to-one correspondence between the set of isomorphism classes of curves of genus 2 over $k$, and triples of distinct elements $\beta_1, \beta_2, \beta_3$ of $k$, $\neq 0,1$, modulo the action of $\Sigma_6$ described in (d). In particular, there are many non-isomorphic curves of genus 2. We say that curves of genus 2 depend on three parameters, since they correspond to the points of an open subset of $\AA_k^3$ modulo a finite group.
@@ -66,7 +66,7 @@ a finite morphism
 $$
 f:X\longrightarrow\PP^1
 $$
-of degree $2$. Since $\operatorname{char}k\ne2$, the induced degree-two
+of degree $2$. Since $\characteristic k\ne2$, the induced degree-two
 extension of function fields is separable and any ramification is tame.
 
 Riemann--Hurwitz gives
@@ -202,7 +202,7 @@ At $u=0$ this gives
 $$
 w^2=1.
 $$
-Since $\operatorname{char}k\ne2$, the two points $w=\pm1$ are nonsingular
+Since $\characteristic k\ne2$, the two points $w=\pm1$ are nonsingular
 and the derivative $2w$ is nonzero there. Thus the cover is unramified at
 infinity. Hence the six $\alpha_i$ are exactly the branch points.
 
@@ -217,7 +217,7 @@ The curve $X$ in step [](#s3){.pf-ref} has genus $2$.
 ::: pf-proof
 
 The extension is separable because its degree is $2$ and
-$\operatorname{char}k\ne2$. By step [](#s3){.pf-ref} there are exactly six tame
+$\characteristic k\ne2$. By step [](#s3){.pf-ref} there are exactly six tame
 ramification points, each with $e_P=2$. Riemann--Hurwitz gives
 $$
 2g(X)-2
@@ -372,7 +372,7 @@ $$
 F=k(\PP^1)=k(x),
 $$
 and let $L_1/F$ and $L_2/F$ be the function-field extensions of two such
-covers with the same branch locus. Since $\operatorname{char}k\ne2$, each
+covers with the same branch locus. Since $\characteristic k\ne2$, each
 quadratic extension has Kummer form
 $$
 L_i=F(\sqrt{d_i})
@@ -387,17 +387,17 @@ v_P(d_1/d_2)
 $$
 is even for every $P\in\PP^1$. Hence
 $$
-\operatorname{div}(d_1/d_2)=2D
+\div(d_1/d_2)=2D
 $$
 for an integral divisor $D$ on $\PP^1$. This divisor has degree $0$.
 Since every degree-zero divisor on $\PP^1$ is principal, there is
 $g\in F^\times$ with
 $$
-D=\operatorname{div}(g).
+D=\div(g).
 $$
 Consequently
 $$
-\operatorname{div}\!\left(\frac{d_1}{d_2g^2}\right)=0,
+\div\!\left(\frac{d_1}{d_2g^2}\right)=0,
 $$
 so
 $$
