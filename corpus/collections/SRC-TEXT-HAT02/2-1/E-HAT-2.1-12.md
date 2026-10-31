@@ -22,29 +22,21 @@ Show that chain homotopy of chain maps is an equivalence relation.
 :::
 
 ::: {.solution}
+Fix chain complexes $(C_*,d_C)$ and $(D_*,d_D)$. A chain homotopy from $f$ to $g$ is a degree-one family $P_n:C_n\to D_{n+1}$ satisfying
+$$
+f_n-g_n=d_D P_n+P_{n-1}d_C
+$$
+in every degree.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-Definition of chain homotopy:
-
-::: pf-proof
-
-::: pf-step
-
-Let $(C_*, \partial^C)$ and $(D_*, \partial^D)$ be chain complexes. Two chain maps $f, g: C_* \to D_*$ are **chain homotopic** (denoted $f \simeq g$) if there exists a sequence of homomorphisms $P_n: C_n \to D_{n+1}$ such that:
-$$
-f_n - g_n = \partial^D_{n+1} P_n + P_{n-1} \partial^C_n \quad \text{for all } n \in \ZZ.
-$$
+Chain homotopy is reflexive.
 
 ::: pf-proof
 
-standard definition of chain homotopy.
-
-:::
-
-:::
+For any chain map $f$, take $P_n=0$ in every degree. Then $f_n-f_n=d_D P_n+P_{n-1}d_C=0$.
 
 :::
 
@@ -52,26 +44,15 @@ standard definition of chain homotopy.
 
 ::: {.pf-step #s2}
 
-Reflexivity:
+Chain homotopy is symmetric.
 
 ::: pf-proof
 
-::: pf-step
-
-For any chain map $f: C_* \to D_*$, define $P_n = 0: C_n \to D_{n+1}$ for all $n$.
-Then:
+If $P$ is a chain homotopy from $f$ to $g$, then
 $$
-\partial^D_{n+1} P_n + P_{n-1} \partial^C_n = 0 = f_n - f_n.
+g_n-f_n=d_D(-P_n)+(-P_{n-1})d_C.
 $$
-Thus $f \simeq f$.
-
-::: pf-proof
-
-zero homomorphism satisfies the chain homotopy identity for $f - f = 0$.
-
-:::
-
-:::
+Thus $-P$ is a chain homotopy from $g$ to $f$.
 
 :::
 
@@ -79,50 +60,15 @@ zero homomorphism satisfies the chain homotopy identity for $f - f = 0$.
 
 ::: {.pf-step #s3}
 
-Symmetry:
+Chain homotopy is transitive.
 
 ::: pf-proof
 
-::: pf-step
-
-Suppose $f \simeq g$ via chain homotopy $P = \{P_n\}$.
-Then $f_n - g_n = \partial^D_{n+1} P_n + P_{n-1} \partial^C_n$.
-Define $Q_n = -P_n: C_n \to D_{n+1}$.
-Then:
+If $P$ is a chain homotopy from $f$ to $g$ and $Q$ is one from $g$ to $h$, add their defining identities:
 $$
-g_n - f_n = -(f_n - g_n) = -\big(\partial^D_{n+1} P_n + P_{n-1} \partial^C_n\big) = \partial^D_{n+1} (-P_n) + (-P_{n-1}) \partial^C_n = \partial^D_{n+1} Q_n + Q_{n-1} \partial^C_n.
+f_n-h_n=d_D(P_n+Q_n)+(P_{n-1}+Q_{n-1})d_C.
 $$
-Thus $g \simeq f$.
-
-::: pf-proof
-
-linearity of boundary operators and negation.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-Transitivity:
-
-::: pf-proof
-
-::: pf-step
-
-Suppose $f \simeq g$ via chain homotopy $P = \{P_n\}$ and $g \simeq h$ via chain homotopy $Q = \{Q_n\}$.
-Then:
-$$
-f_n - g_n = \partial^D_{n+1} P_n + P_{n-1} \partial^C_n \quad \text{and} \quad g_n - h_n = \partial^D_{n+1} Q_n + Q_{n-1} \partial^C_n.
-$$
-
-::: pf-proof
-
-definitions of $P$ and $Q$.
+Thus $P+Q$ is a chain homotopy from $f$ to $h$.
 
 :::
 
@@ -130,38 +76,15 @@ definitions of $P$ and $Q$.
 
 ::: pf-step
 
-Define $R_n = P_n + Q_n: C_n \to D_{n+1}$.
-Adding the two equations yields:
-$$
-f_n - h_n = (f_n - g_n) + (g_n - h_n) = \partial^D_{n+1} (P_n + Q_n) + (P_{n-1} + Q_{n-1}) \partial^C_n = \partial^D_{n+1} R_n + R_{n-1} \partial^C_n.
-$$
-Thus $f \simeq h$.
+Hence chain homotopy is an equivalence relation on the chain maps $C_*\to D_*$.
 
 ::: pf-proof
 
-linearity of boundary operators.
+This follows from steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref}.
 
 :::
 
 :::
 
 :::
-
-:::
-
-::: pf-step
-
-Conclusion:
-Chain homotopy is reflexive, symmetric, and transitive; hence it is an equivalence relation on chain maps. Q.E.D.
-
-::: pf-proof
-
-Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}.
-
-:::
-
-:::
-
-:::
-
 :::
