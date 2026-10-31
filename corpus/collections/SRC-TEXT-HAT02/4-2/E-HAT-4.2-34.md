@@ -80,7 +80,7 @@ If $f$ were nullhomotopic, then
 $$
 C_f\simeq S^2\vee\Sigma T^3.
 $$
-The degree-$2$ class coming from the $S^2$-summand would have square zero, a contradiction. Hence
+Every degree-$2$ class in this wedge has square zero: $S^2$ has no degree-$4$ cohomology, the cup product on a suspension is zero, and products between wedge summands are zero. This contradicts $\bar x^2\ne0$. Hence
 $$
 \boxed{pq\text{ is not nullhomotopic}.}
 $$
