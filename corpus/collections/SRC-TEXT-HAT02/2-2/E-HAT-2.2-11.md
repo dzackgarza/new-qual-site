@@ -23,28 +23,45 @@ Compute the homology groups of this complex.
 :::
 
 ::: {.solution}
+Use the CW structure and face words computed for this cube in Hatcher Exercise 1.2.14. It has two vertices, four edges, three faces, and one $3$-cell. Choose one edge as a maximal tree. The other three edges give a basis $i,j,k$ for the cycle group $\ker(d_1:C_1\to C_0)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-The complex $X$ is the quaternionic $3$-manifold $S^3/Q_8$: identifying opposite faces of the cube via a one-quarter twist gives the quotient of $S^3$ by the quaternion group $Q_8$.
+In this cycle basis, the cellular boundary $d_2:C_2\to\ker d_1$ has matrix
+$$
+M=
+\begin{pmatrix}
+1&-1&-1\\
+-1&1&-1\\
+-1&-1&1
+\end{pmatrix}.
+$$
 
 ::: pf-proof
 
-this is the standard construction of the quaternionic manifold.
+The three attaching words in Exercise 1.2.14 give the relations $i=jk$, $j=ki$, and $k=ij$ in the fundamental group. Their exponent sums are respectively
+$$
+i-j-k,\qquad -i+j-k,\qquad -i-j+k.
+$$
+These are the three columns of $M$. The edge chosen as a tree contributes no cycle generator.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
-$\pi_1(X) = Q_8$.
+The map $d_2$ is injective, and
+$$
+\operatorname{coker}(d_2:C_2\to\ker d_1)
+\cong\ZZ/2\oplus\ZZ/2.
+$$
 
 ::: pf-proof
 
-the fundamental group of this identification space is the quaternion group $Q_8$ (the two edges give generators $i, j$ with relations $i^2 = j^2 = k^2 = ijk$).
+The matrix is $2I-J$, where $J$ is the $3$ by $3$ all-ones matrix. Its eigenvalues over $\QQ$ are $-1,2,2$, so $\det M=-4$ and $d_2$ is injective. The gcd of its entries is $1$, and the gcd of its $2$ by $2$ minors is $2$. Hence its Smith invariant factors are $1,2,2$, giving the stated cokernel.
 
 :::
 
@@ -52,58 +69,36 @@ the fundamental group of this identification space is the quaternion group $Q_8$
 
 ::: {.pf-step #s3}
 
-$H_0(X) = \ZZ$.
+The cellular boundary $d_3:C_3\to C_2$ is zero.
 
 ::: pf-proof
 
-$X$ is connected.
+The chain identity gives $d_2d_3=0$. Since $d_2$ is injective by step [](#s2){.pf-ref}, its kernel is zero, so $d_3=0$.
 
 :::
 
 :::
 
-::: {.pf-step #s4}
+::: pf-step
 
-$H_1(X) = Q_8^{\text{ab}} = \ZZ/2 \times \ZZ/2$.
+The homology groups of the cube quotient are
+$$
+\boxed{
+H_0(X)\cong\ZZ,\quad
+H_1(X)\cong\ZZ/2\oplus\ZZ/2,\quad
+H_2(X)=0,\quad
+H_3(X)\cong\ZZ,
+}
+$$
+and $H_q(X)=0$ for $q>3$.
 
 ::: pf-proof
 
-$H_1 = \pi_1^{\text{ab}}$, and the abelianization of $Q_8$ is $\ZZ/2 \times \ZZ/2$ (the commutator subgroup of $Q_8$ is $\{\pm 1\}$, of order $2$, so $Q_8^{\text{ab}}$ has order $4$ and is $\ZZ/2 \times \ZZ/2$).
+The $1$-skeleton is connected, so $H_0(X)=\ZZ$. The cycle group of the $1$-skeleton is free on $i,j,k$, and step [](#s2){.pf-ref} computes its quotient by the $2$-cell boundaries. Injectivity of $d_2$ and step [](#s3){.pf-ref} give $H_2=0$ and $H_3=C_3\cong\ZZ$. There are no higher cells.
 
 :::
 
 :::
 
-::: {.pf-step #s5}
-
-$H_2(X) = 0$.
-
-::: pf-proof
-
-by Poincaré duality (and the universal coefficient theorem), $H_2(X) \cong H^1(X) \cong \operatorname{Hom}(H_1(X), \ZZ) = 0$, since $H_1(X) = \ZZ/2 \times \ZZ/2$ is torsion.
-
 :::
-
-:::
-
-::: {.pf-step #s6}
-
-$H_3(X) = \ZZ$.
-
-::: pf-proof
-
-$X$ is a closed orientable $3$-manifold, so $H_3(X) = \ZZ$.
-
-:::
-
-:::
-
-::: pf-qed
-
-$H_0 = \ZZ$, $H_1 = \ZZ/2 \times \ZZ/2$, $H_2 = 0$, $H_3 = \ZZ$ (steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}).
-
-:::
-
-:::
-
 :::
