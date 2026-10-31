@@ -23,6 +23,7 @@ Show that deleting a point from a manifold of dimension greater than 1 does not 
 :::
 
 ::: {.solution}
+Orientability is determined on connected components. Only the component containing the deleted point changes, so assume below that $M$ is connected.
 
 ::: pf
 
