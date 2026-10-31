@@ -33,6 +33,8 @@ Show that the following are equivalent:
 
 ::: {.solution}
 
+If $X=\varnothing$, all three conditions hold. Assume $X\neq\varnothing$ below.
+
 ::: pf
 
 ::: pf-step
