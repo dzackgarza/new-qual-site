@@ -33,7 +33,6 @@ $$
 is invertible and $A^{-1}$ has integer entries.
 Can you prove that?
 
-# 2. Vector Spaces
 :::
 
 

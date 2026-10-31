@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.exercise}
-Prove the following generalization of Exercise 6. If A is an $m \times n$ matrix, B is an $n \times m$ matrix and n < m, then AB is not invertible.
+Prove the following generalization of Exercise 6. If $A$ is an $m \times n$ matrix, $B$ is an $n \times m$ matrix and $n < m$, then $AB$ is not invertible.
 :::
 
 

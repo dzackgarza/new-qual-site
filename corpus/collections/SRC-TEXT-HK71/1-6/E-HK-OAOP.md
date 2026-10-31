@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HK-OAOP
 kind: problem
-title: Product of non-square matrices is not invertible
+title: A $2 \times 1$ matrix times a $1 \times 2$ matrix is not invertible
 classification:
   areas:
   - algebra

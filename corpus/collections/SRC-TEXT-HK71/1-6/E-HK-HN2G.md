@@ -38,7 +38,7 @@ Criterion for invertibility via elementary row operations:
 A square matrix $A \in M_2(F)$ is invertible if and only if it is row-equivalent to the identity matrix $I_2$ (i.e. its reduced row echelon form is $I_2$).
 
 ::: pf-proof
-Hoffman–Kunze Theorem 1.13 on invertible matrices and row equivalence.
+Theorem 12 of Section 1.6 [@HK71].
 :::
 
 :::

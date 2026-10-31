@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.exercise}
-An $n \times n$ matrix A is called upper-triangular if $A_{ij} = 0$ for i > j, that is, if every entry below the main diagonal is 0. Prove that an upper-triangular (square) matrix is invertible if and only if every entry on its main diagonal is different from 0.
+An $n \times n$ matrix $A$ is called upper-triangular if $A_{ij} = 0$ for $i > j$, that is, if every entry below the main diagonal is 0. Prove that an upper-triangular (square) matrix is invertible if and only if every entry on its main diagonal is different from 0.
 :::
 
 
