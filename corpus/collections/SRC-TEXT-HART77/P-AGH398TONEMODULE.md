@@ -338,13 +338,44 @@ The module $T^1(A)$ is independent of the chosen polynomial presentation of $A$.
 
 ::: pf-proof
 
-Step [](#s7){.pf-ref} identifies $T^1(A)$ intrinsically with the set of first-order
-deformations of the $k$-algebra $A$ up to isomorphism fixing the special fibre.
-This classification depends only on $A$, not on a presentation
-$P\surjects A$.
-Hence the classifying module denoted $T^1(A)$ is independent, up to the
-canonical identification supplied by deformation classes, of the chosen
-polynomial presentation.
+Flatness identifies the ideal $\epsilon A'$ of a deformation canonically with
+$A$: send $a\in A$ to $\epsilon\widetilde a$, where $\widetilde a$ is any lift
+of $a$ to $A'$. Thus every deformation gives a square-zero extension of
+$k$-algebras
+$$
+0\longrightarrow A\longrightarrow A'\longrightarrow A\longrightarrow0
+$$
+with its kernel identified as an $A$-module. Conversely, in any such extension,
+let $\epsilon$ act through the image of $1\in A$ in the kernel. Then
+$\epsilon A'$ is exactly the kernel, multiplication by $\epsilon$ has that
+same kernel, and the flatness criterion of [[P-AGH397INFDEFSUB]], step
+[](#s1){.pf-ref}, makes $A'$ flat over $k[\epsilon]/(\epsilon^2)$.
+These constructions are inverse.
+
+The [square-zero extension classification](https://stacks.math.columbia.edu/tag/08S3)
+(Lemma 91.2.3 and Remark 91.2.4) identifies these extensions, as an
+$A$-module, with
+$$
+\Ext_A^1(NL_{A/k},A),
+$$
+where $NL_{A/k}$ is the naive cotangent complex. For the chosen polynomial
+presentation $P\surjects A$ with kernel $J$, its two-term presentation is
+$$
+J/J^2\longrightarrow\Omega_{P/k}\tensor_P A.
+$$
+The second term is finite free, so the degree-one Ext module is exactly
+$$
+\operatorname{coker}\!\left(
+\Hom_A(\Omega_{P/k}\tensor_P A,A)
+\longrightarrow\Hom_A(J/J^2,A)
+\right)=T^1(A).
+$$
+The extension-class map in that result uses the same lift of $P\to A$ and
+the same map $J/J^2\to A$ as steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+It therefore identifies the classification above with this intrinsic
+$A$-module isomorphism. Since $NL_{A/k}$ depends only on $k\to A$, changing
+the polynomial presentation leaves $T^1(A)$ canonically isomorphic as an
+$A$-module.
 
 :::
 
