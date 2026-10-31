@@ -3,28 +3,16 @@
 ## Fast local checks and complete CI acceptance
 
 Local hooks reject basic defects in the actual changed content; CI owns full test suites,
-corpus-wide validation, builds, rendering, and broad audits. QC-01 through QC-05 and
-QC-07 through QC-11 are closed. Two items remain open.
+corpus-wide validation, builds, rendering, and broad audits. QC-01 through QC-11
+are closed. QC-12 remains open.
 
 | ID | Task | Needs |
 | --- | --- | --- |
-| QC-06 | Run the complete shared acceptance tier in hosted CI | none |
 | QC-12 | Close the workstream against a complete hosted run | QC-06 |
 
-- [ ] **QC-06 — Wire the hosted acceptance tier for this repository's workflow.**
-  **Owner:** ai-review-ci's supported workflow integration and `.github/workflows/`.
-  The hosted workflows are `development.yml` (build, link crawl, deploy, and the
-  `corpus-reports` job) and `ambient.yml` (the shared `_qc.yml` workflow). The shared
-  reusable workflow runs all diagnostics and can either report their failures or enforce
-  all of them; it has no supported result that enforces only the test suite. The full
-  doctor reports a missing PR workflow and branch protection. Determine the supported
-  integration for the repository's direct-to-main policy before changing repository
-  protection or requiring PRs. Full acceptance needs the Python, Pandoc, LaTeX, and filter
-  dependencies, must not inherit the local pytest file selection, and must not run the
-  complete suite twice.
-  **Acceptance:** a hosted run demonstrates execution of the complete intended acceptance
-  tier, with a real comparison base for diff checks and explicit failure propagation.
-  Any workflow-policy decision still requiring owner choice is stated before changing it.
+- [x] **QC-06 — Hosted acceptance tier.** `development.yml` invokes the shared
+  `test-ci` tier with `correctness` enforcement. Run `41215531023` used comparison
+  base `d2a58879b7`, executed `python-tests` once, and recorded zero failures.
 
 - [ ] **QC-12 — Close against the full completion condition.**
   Verify a single current revision through hosted acceptance, report publication, site

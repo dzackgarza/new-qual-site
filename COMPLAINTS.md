@@ -59,16 +59,3 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Workflow and rendering papercuts
 
-### Shared QC installation lacks its PR workflow and branch protection
-
-- **Object and need:** the shared QC installation declared in `justfile`.
-
-- **Observed evidence:** `ai-review-ci doctor --target . --json` on 2026-10-25 accepted the local recipe delegation but reported missing `.github/workflows/review-pr.yml` and an unprotected `main` branch.
-
-- **Impact and owner:** Pages CI runs the project suite and build; the shared required PR acceptance contexts are not installed.
-  The installation belongs to ai-review-ci.
-
-- **Uncertainty:** this is the doctor's current installation result, not a failure of the Pages tests or build.
-
-- **Repair:** reconcile the shared PR installation with `QUAL-09`'s direct-to-main workflow before changing branch protection.
-
