@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: source-checked
+- event: source-corrected
   by: chatgpt
   date: 2026-09-11
   note: "Checked the PDF text layer and local extraction. Both use an undefined v in the two primary-subspace annihilation conditions; corrected it to the bound variable x."
@@ -45,12 +45,6 @@ has $k$-dimension 4. How many are there?
 
 (c) Write down one Jordan matrix (over $\QQ$) in each conjugacy class with characteristic polynomial $(t - 2)^3 (t - 3)^4$.
 How many are there?
-:::
-
-::: {.remark}
-The source PDF writes the bound variable as $x$ in the definitions of $V(2)$
-and $V(3)$ but then uses an undefined $v$ in both annihilation conditions.
-The conditions above use the bound variable $x$.
 :::
 
 ::: {.solution}
