@@ -9,7 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - assets/attachments/UCSD_290_F14_sheet1.pdf
 - assets/attachments/UCSD_290_F14_sheet2.pdf
@@ -178,6 +178,21 @@ source:
     comment: Sheet 11, Problem 5
   - P-AMD-KB4OBOHW
   - P-AMD-4DYUOGAJ
+  - P-AMD-7NJ4YRS5
+  - P-AMD-JXFYCMO7
+  - P-AMD-HWZNNEDG
+  - P-UCTOP290-S12-1
+  - P-UCTOP290-S12-2
+  - P-UCTOP290-S12-3
+  - P-UCTOP290-S12-4
+  - P-UCTOP290-S12-5
+  - P-UCTOP290-S12-6
+  - P-UCTOP290-S12-7
+  - P-UCTOP290-S12-8
+  - P-UCTOP290-S12-9
+  - P-UCTOP290-S12-10
+  - P-UCTOP290-S12-11
+  - P-UCTOP290-S12-12
   - id: P-D6JY5
     comment: Sheet 13, Problem 1
   - id: P-UCTOP290-S13-2
@@ -216,21 +231,6 @@ source:
     comment: Sheet 13, Problem 17
   - id: P-UCTOP290-S13-18
     comment: Sheet 13, Problem 18
-  - P-AMD-7NJ4YRS5
-  - P-AMD-JXFYCMO7
-  - P-AMD-HWZNNEDG
-  - P-UCTOP290-S12-1
-  - P-UCTOP290-S12-2
-  - P-UCTOP290-S12-3
-  - P-UCTOP290-S12-4
-  - P-UCTOP290-S12-5
-  - P-UCTOP290-S12-6
-  - P-UCTOP290-S12-7
-  - P-UCTOP290-S12-8
-  - P-UCTOP290-S12-9
-  - P-UCTOP290-S12-10
-  - P-UCTOP290-S12-11
-  - P-UCTOP290-S12-12
   date:
     kind: unknown
 ---

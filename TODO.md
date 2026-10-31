@@ -1746,13 +1746,11 @@ mathematical correction under its own node, not under copy policy.
     decide the gluing maps, and rewrite the statement and the solution.
     **Acceptance:** the card statement names each face map, and the solution computes the
     space for that gluing. **Closed.**
-  - **`ad-ucsd-justin-missing-items`**. **Needs:** none. SRC-UCSD-TOP-JUSTIN lacks cards for
-    items present in the sheet extractions: sheet 2 #11 (first half), sheet 4 #2-4 and #6-16,
-    sheet 7 #9, sheet 11 #5, and sheet 13 #2-18. Sheets 6 and 9 have no checked-in extraction;
-    the [source course page](https://mathweb.ucsd.edu/~justin/290/290-F19.html)
-    lists sheet 5 as TBA and provides no PDF.
-    **Acceptance:** each listed item is a card in the collection in source order, and sheets
-    6 and 9 are extracted and compared with their cards.
+  - **`ad-ucsd-justin-missing-items`**. **Needs:** none. The Justin collection lists
+    the sheet 2, 4, 7, 11, and 13 items in source order. Sheets 6 and 9 have
+    checked-in extractions and their items are linked to cards. The
+    [source course page](https://mathweb.ucsd.edu/~justin/290/290-F19.html)
+    lists sheet 5 as TBA and provides no PDF. **Closed.**
   - **`ad-uga-ra05-complex-part`**. **Needs:** none. SRC-UGA-RA-SPRING-2005: the retained
     Combined_Analysis_Spring_2005.docx is one exam with a real-analysis part and a five-problem
     complex-analysis part, and the collection lists only the real part. Add the complex part as
