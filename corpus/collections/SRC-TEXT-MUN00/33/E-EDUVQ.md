@@ -20,7 +20,7 @@ Show that $\RR^J$ in the box topology is completely regular.
 :::
 
 ::: {.solution}
-The box topology is Hausdorff. To prove complete regularity, let $A\subset\RR^J$ be closed and $x\notin A$. Choose a basic box neighborhood
+If $J=\varnothing$, the product is a singleton and is completely regular. Assume $J\neq\varnothing$. The box topology is Hausdorff. To prove complete regularity, let $A\subset\RR^J$ be closed and $x\notin A$. Choose a basic box neighborhood
 $$
 U=\prod_{\alpha\in J}(x_\alpha-\varepsilon_\alpha,x_\alpha+\varepsilon_\alpha)
 $$
@@ -38,5 +38,5 @@ This is the distance from $y$ to $0$ in the uniform metric on $\RR^J$, hence is 
 $$
 f=g\circ h
 $$
-is continuous, $f(x)=0$, and $f(A)=\{1\}$. Hence $\RR^J$ with the box topology is completely regular.
+is continuous, $f(x)=0$, and $f(a)=1$ for every $a\in A$. Hence $\RR^J$ with the box topology is completely regular.
 :::
