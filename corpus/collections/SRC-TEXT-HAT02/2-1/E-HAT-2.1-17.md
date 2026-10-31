@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: 'Computed part (a) from the long exact sequence and part (b) from the source figure: collapsing A gives a wedge of two tori, while collapsing B gives a torus with two points identified.'
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the computation from the long exact sequence: for $m$ points in $S^2$ the sequence gives $H_2=\ZZ$, $H_1=\ZZ^{m-1}$ and $H_0=0$, and for the torus the same method gives $H_2=\ZZ$, $H_1=\ZZ^{m+1}$ and $H_0=0$; part (b) is read at the level of the stated quotients $X/A$ and $X/B$.
 ---
 
 ::: {.problem}

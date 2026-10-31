@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Read H_0 maps componentwise in the long exact sequence of the pair and applied the exact-sequence criterion from the preceding exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the two parts from the long exact sequence of the pair: $H_0(X,A)=0$ exactly when $H_0(A)\to H_0(X)$ is onto, which says $A$ meets every path component; and $H_1(X,A)=0$ exactly when $H_1(A)\to H_1(X)$ is onto and the kernel of $H_0(A)\to H_0(X)$ vanishes.
 ---
 
 ::: {.problem}

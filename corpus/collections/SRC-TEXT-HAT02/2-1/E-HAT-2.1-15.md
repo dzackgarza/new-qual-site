@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Applied exactness at B,C,D, then used consecutive five-term pieces of the long exact sequence of a pair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both directions: if $C=0$ then exactness at $B$ makes $\alpha$ surjective and exactness at $D$ makes $\delta$ injective; conversely surjectivity of $\alpha$ and injectivity of $\delta$ force $\beta=0$ and $\gamma=0$. The application to $(X,A)$ follows from the long exact sequence.
 ---
 
 ::: {.problem}
