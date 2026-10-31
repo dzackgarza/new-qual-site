@@ -22,7 +22,10 @@ audit:
 ---
 
 ::: {.problem}
-justify the statement that $\int_0^1\int_0^1 \frac{(x-y)\sin(xy)}{x^2+y^2}dxdy=\int_0^1\int_0^1\frac{(x-y)\sin(xy)}{x^2+y^2}dydx$
+Justify the statement that
+$$
+\int_0^1\int_0^1 \frac{(x-y)\sin(xy)}{x^2+y^2}\,dx\,dy=\int_0^1\int_0^1\frac{(x-y)\sin(xy)}{x^2+y^2}\,dy\,dx.
+$$
 :::
 
 ::: {.solution}
