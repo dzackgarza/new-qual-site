@@ -34,5 +34,5 @@ The proofs are direct.
 - If $X$ is Lindelöf and $f:X\to Y$ is continuous, pull an open cover of $f(X)$ back to $X$, take a countable subcover, and push it forward.
 - If $D\subset X$ is countable dense, then $f(D)$ is countable dense in $f(X)$.
 
-None of the other eleven properties is preserved by arbitrary continuous maps. Quotient maps already supply failures for Hausdorffness, regularity, normality, countability axioms, and metrizability; local connectedness/local path connectedness and local compactness likewise fail under general quotients. Identity maps from a finer topology to a coarser topology give further elementary counterexamples. Thus no additional item on the list is functorial under arbitrary continuous images.
+None of the other properties is preserved by arbitrary continuous maps. For example, put the discrete topology on the underlying set of the topologist's sine curve and map it by the identity to the usual sine-curve space. The source is locally connected and locally path connected, while the image is neither. Likewise, a discrete set maps continuously by the identity onto $\QQ$ with its usual topology; the source is locally compact Hausdorff, while $\QQ$ is not locally compact. Quotient maps give failures of Hausdorffness, regularity, normality, the countability axioms, and metrizability.
 :::
