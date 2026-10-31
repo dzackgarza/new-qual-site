@@ -27,7 +27,9 @@ Conclude without using the Tychonoff theorem that a countable product of compact
 :::
 
 ::: {.solution}
-Fix $\varepsilon>0$. Choose $N$ so large that $1/(N+1)<\varepsilon$. For each $1\le i\le N$, total boundedness of $(X_i,d_i)$ (equivalently of $(X_i,\bar d_i)$) gives a finite $\varepsilon i$-net $F_i\subset X_i$ for $\bar d_i$ (if $\varepsilon i\ge1$, one point suffices). Choose arbitrary basepoints $a_i\in X_i$ for $i>N$. The finite set
+If some $X_i$ is empty, the product is empty and both claims follow. Assume every factor is nonempty.
+
+Fix $\varepsilon>0$. Choose $N$ so large that $1/(N+1)<\varepsilon$. For each $1\le i\le N$, total boundedness of $(X_i,d_i)$ (equivalently of $(X_i,\bar d_i)$) gives a finite $\varepsilon i$-net $F_i\subset X_i$ for $\bar d_i$. Choose arbitrary basepoints $a_i\in X_i$ for $i>N$. The finite set
 $$
 F=F_1\times\cdots\times F_N\times\prod_{i>N}\{a_i\}
 $$
