@@ -5,7 +5,10 @@ kind: problem
 title: Degree of $F(a^{1/p^n})$ over a field with $p^n$-th roots of unity
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Kummer Theory
+  - Radical Extensions
+  - Roots of Unity
 relations: []
 review: draft
 audit:

@@ -5,7 +5,10 @@ kind: problem
 title: The splitting algebra of a monic polynomial is free with monomial basis
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Splitting Algebras
+  - Symmetric Polynomials
+  - Free Modules
 relations: []
 review: draft
 audit:

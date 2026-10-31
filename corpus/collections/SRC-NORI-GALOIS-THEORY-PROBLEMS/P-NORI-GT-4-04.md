@@ -5,7 +5,10 @@ kind: problem
 title: $E(X)/F(X)$ has the same degree as $E/F$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Norm Map
+  - Rational Function Fields
+  - Degree of Field Extensions
 relations: []
 review: draft
 audit:

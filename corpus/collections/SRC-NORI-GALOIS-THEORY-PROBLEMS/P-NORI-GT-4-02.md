@@ -5,7 +5,10 @@ kind: problem
 title: Injectivity of a matrix over an integral domain and its determinant
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Determinants
+  - Integral Domains
+  - Injectivity
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Additive polynomials in characteristic $p$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Additive Polynomials
+  - Positive Characteristic
 relations: []
 review: draft
 audit:

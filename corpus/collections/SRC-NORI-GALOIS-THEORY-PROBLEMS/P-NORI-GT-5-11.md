@@ -5,7 +5,10 @@ kind: problem
 title: Embedding a cyclic degree $p$ extension in a cyclic degree $p^2$ extension
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Cyclic Extensions
+  - Hilbert's Theorem 90
+  - Norm Map
 relations: []
 review: draft
 audit:

@@ -5,7 +5,10 @@ kind: problem
 title: Cube roots of unity in $\FF_p$ and the splitting field of $X^p-\omega X$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Finite Fields
+  - Roots of Unity
+  - Splitting Fields
 relations: []
 review: draft
 audit:

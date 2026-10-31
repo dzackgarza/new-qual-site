@@ -5,7 +5,10 @@ kind: problem
 title: Eigenspaces of a character of a Galois group are one-dimensional
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Characters of Galois Groups
+  - Linear Independence of Characters
+  - Kummer Theory
 relations: []
 review: draft
 audit:

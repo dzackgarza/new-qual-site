@@ -5,7 +5,10 @@ kind: problem
 title: Kernel of $F^\times/(F^\times)^2\to E^\times/(E^\times)^2$ for a quadratic extension
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Quadratic Extensions
+  - Square Classes
+  - Field Extensions
 relations: []
 review: draft
 audit:

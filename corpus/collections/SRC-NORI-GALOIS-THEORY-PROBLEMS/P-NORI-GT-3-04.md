@@ -5,7 +5,10 @@ kind: problem
 title: Towers of quadratic extensions of $\FF_p$ for $p\equiv 3 \pmod 4$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Finite Fields
+  - Quadratic Extensions
+  - Towers of Fields
 relations: []
 review: draft
 audit:
@@ -26,7 +29,7 @@ Assume that $u_0 \in \FF_p$ is not a square.
 Construct a sequence of pairs $(E_n, u_n)$ where $E_n$ is a field and $u_n \in E_n$ as follows.
 Define $(E_0, u_0) = (\FF_p, u_0)$.
 Assume that $(E_n, u_n)$ has been defined.
-Let $E_{n+1}$ be a field extension of $E_n$ obtaing by adjoining a square-root $u_{n+1}$ of $u_n \in E_n$.
+Let $E_{n+1}$ be a field extension of $E_n$ obtained by adjoining a square root $u_{n+1}$ of $u_n \in E_n$.
 Show that $\deg(E_n/E_{n-1}) = 2$ for all $n > 0$.
 
 Explain how you would construct a sequence of quadratic extensions when $k = 1$ in the previous problem.

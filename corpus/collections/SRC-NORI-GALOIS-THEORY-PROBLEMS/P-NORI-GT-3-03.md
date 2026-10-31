@@ -5,7 +5,10 @@ kind: problem
 title: Towers of quadratic extensions of $\FF_p$ by iterated square roots
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Finite Fields
+  - Quadratic Extensions
+  - Towers of Fields
 relations: []
 review: draft
 audit:

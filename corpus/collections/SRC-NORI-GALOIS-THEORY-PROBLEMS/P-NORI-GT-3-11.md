@@ -5,7 +5,10 @@ kind: problem
 title: Quartics over $\QQ$ with a quadratic subfield have no cubic factor mod odd primes
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Quartic Polynomials
+  - Reduction Mod p
+  - Quadratic Subfields
 relations: []
 review: draft
 audit:
@@ -24,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $E = \QQ(\theta)$ be a degree four extension of $\QQ$ that contains a quadratic extension of $\QQ$, and let $f$ be the monic minimal polynomial of $\theta$, written (by Problem 3.10) as $f = Q^2 - cP^2$ where $c \in \QQ$ and $P, Q \in \QQ[X]$ with $Q$ monic of degree two and $\deg(P) < 2$.
+Let $E = \QQ(\theta)$ be a degree four extension of $\QQ$ that contains a quadratic extension of $\QQ$, and let $f$ be the monic minimal polynomial of $\theta$, written (by [[P-NORI-GT-3-10]]) as $f = Q^2 - cP^2$ where $c \in \QQ$ and $P, Q \in \QQ[X]$ with $Q$ monic of degree two and $\deg(P) < 2$.
 Assume that $f \in \ZZ[X]$.
 Prove that we may choose $P, Q, c$ satisfying
 

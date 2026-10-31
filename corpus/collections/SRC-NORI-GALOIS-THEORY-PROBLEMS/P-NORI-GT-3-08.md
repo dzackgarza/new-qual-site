@@ -5,7 +5,9 @@ kind: problem
 title: $\Phi_{n'p^k}=\Phi_{n'}^{\varphi(p^k)}$ in $\FF_p[X]$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Cyclotomic Polynomials
+  - Positive Characteristic
 relations: []
 review: draft
 audit:
@@ -20,12 +22,12 @@ audit:
 ---
 
 ::: {.problem}
-The cylotomic polynomials $\Phi_n(X) \in \ZZ[X]$ defined for all natural numbers $n$ have the property
+The cyclotomic polynomials $\Phi_n(X) \in \ZZ[X]$ defined for all natural numbers $n$ have the property
 $$
 X^n - 1 = \prod_{d \mid n} \Phi_d(X).
 $$
 Let $n = n'p^k$ with $p$ not dividing $n'$, and let $\varphi$ be Euler's phi function.
-Problem 3.7 reads: let $F$ be a field of characteristic $p$ such that $\mu_{n'}(F)$ has order $n'$. Show that the roots of $\Phi_n(X)$ in $F$ are the primitive $n'$-th roots of unity, each of them occuring with multiplicity $\varphi(p^k)$.
+Problem 3.7 reads: let $F$ be a field of characteristic $p$ such that $\mu_{n'}(F)$ has order $n'$. Show that the roots of $\Phi_n(X)$ in $F$ are the primitive $n'$-th roots of unity, each of them occurring with multiplicity $\varphi(p^k)$.
 
 Deduce the equality $\Phi_n(X) = \Phi_{n'}(X)^{\varphi(p^k)}$ in $\FF_p[X]$ from the previous problem.
 :::

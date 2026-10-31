@@ -5,7 +5,10 @@ kind: problem
 title: The norm of an element of a free ring extension is a multiple of the element
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Norm Map
+  - Free Modules
+  - Ring Extensions
 relations: []
 review: draft
 audit:

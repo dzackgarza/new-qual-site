@@ -5,7 +5,9 @@ kind: problem
 title: Normal closure of a Kummer extension $K(a^{1/p})$ over $F$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Kummer Theory
+  - Normal Closure
 relations: []
 review: draft
 audit:

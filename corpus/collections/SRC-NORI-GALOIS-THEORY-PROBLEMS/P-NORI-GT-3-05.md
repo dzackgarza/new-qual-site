@@ -5,7 +5,10 @@ kind: problem
 title: Towers of cubic extensions of $\FF_{19}$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Finite Fields
+  - Cubic Extensions
+  - Towers of Fields
 relations: []
 review: draft
 audit:

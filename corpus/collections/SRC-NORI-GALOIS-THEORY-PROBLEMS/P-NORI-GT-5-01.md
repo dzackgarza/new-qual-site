@@ -5,7 +5,10 @@ kind: problem
 title: Galois group over a compositum of fixed fields is $H_1\cap H_2$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Galois Correspondence
+  - Fixed Fields
+  - Compositum
 relations: []
 review: draft
 audit:

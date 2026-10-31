@@ -5,7 +5,9 @@ kind: problem
 title: Size of the splitting field of $X^q+X$ over $\FF_p$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Finite Fields
+  - Splitting Fields
 relations: []
 review: draft
 audit:

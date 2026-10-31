@@ -5,7 +5,9 @@ kind: problem
 title: Kernel of $F^\times/(F^\times)^p\to E^\times/(E^\times)^p$ for a Kummer extension
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Kummer Theory
+  - Radical Extensions
 relations: []
 review: draft
 audit:

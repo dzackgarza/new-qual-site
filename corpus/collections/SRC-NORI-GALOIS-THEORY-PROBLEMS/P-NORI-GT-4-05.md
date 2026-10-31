@@ -5,7 +5,9 @@ kind: problem
 title: $E(X_1,\dots,X_d)/F(X_1,\dots,X_d)$ has the same degree as $E/F$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Rational Function Fields
+  - Degree of Field Extensions
 relations: []
 review: draft
 audit:

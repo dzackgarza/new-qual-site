@@ -5,7 +5,9 @@ kind: problem
 title: Every finite group is a Galois group
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Inverse Galois Problem
+  - Galois Groups
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Degree of a multi-Kummer extension and the subgroup of $F^\times/(F^\times)^p$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Kummer Theory
+  - Degree of Field Extensions
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Additive subgroups of an algebraically closed field and additive polynomials
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Additive Polynomials
+  - Algebraically Closed Fields
 relations: []
 review: draft
 audit:

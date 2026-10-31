@@ -5,7 +5,10 @@ kind: problem
 title: 'Natural irrationalities: $\operatorname{Gal}(EK/E)\cong\operatorname{Gal}(K/K\cap E)$'
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Natural Irrationalities
+  - Galois Correspondence
+  - Compositum
 relations: []
 review: draft
 audit:
@@ -22,7 +25,7 @@ audit:
 ::: {.problem}
 Given $F \subset E \subset E'$ and $F \subset K \subset E'$, where $F, E, K$ are subfields of $E'$.
 It is not assumed that $E$ is an algebraic extension of $F$.
-Assume that $K$ is a finite Galois extension of $F$, so that $EK$ is a finite Galois extension of $E$ (Problem 5.3).
+Assume that $K$ is a finite Galois extension of $F$, so that $EK$ is a finite Galois extension of $E$ ([[P-NORI-GT-5-03]]).
 Show that $\sigma \mapsto \sigma\restrict_K$ gives an isomorphism $\operatorname{Gal}(EK/E) \to \operatorname{Gal}(K/K \cap E)$.
 
 *Warning* If your proof never relies on the Fundamental Thm of Galois theory, it is likely to be wrong.

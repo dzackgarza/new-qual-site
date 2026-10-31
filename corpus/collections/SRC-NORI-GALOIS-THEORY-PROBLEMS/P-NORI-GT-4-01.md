@@ -5,7 +5,10 @@ kind: problem
 title: Adjugate matrix and solving $Tw=\det(T)v$ over a commutative ring
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Adjugate Matrix
+  - Determinants
+  - Commutative Rings
 relations: []
 review: draft
 audit:

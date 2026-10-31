@@ -5,7 +5,10 @@ kind: problem
 title: Roots of cyclotomic polynomials in characteristic $p$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Cyclotomic Polynomials
+  - Positive Characteristic
+  - Roots of Unity
 relations: []
 review: draft
 audit:

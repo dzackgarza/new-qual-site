@@ -5,7 +5,9 @@ kind: problem
 title: Abelian normal closure of $K(a^{1/p})$ is a Kummer extension by an element of $F$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Kummer Theory
+  - Abelian Extensions
 relations: []
 review: draft
 audit:
@@ -26,7 +28,7 @@ Let $a \in K^\times$, and let $L$ be the field obtained from $K$ by adjoining $p
 Assume that (i) $\operatorname{Gal}(L/F)$ is Abelian, and (ii) $F$ contains a primitive $p$-th root of unity.
 
 Assume furthermore that $p$ does not divide the order of $\operatorname{Gal}(K/F)$.
-Show hat there is some $b \in F$ such that $L = K(b^{1/p})$.
+Show that there is some $b \in F$ such that $L = K(b^{1/p})$.
 :::
 
 ::: {.solution}

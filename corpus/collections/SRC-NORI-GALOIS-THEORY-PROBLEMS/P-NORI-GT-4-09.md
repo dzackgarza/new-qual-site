@@ -5,7 +5,10 @@ kind: problem
 title: Rational functions invariant under $X\mapsto X+1$ in characteristic zero
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Fixed Fields
+  - Rational Function Fields
+  - Characteristic Zero
 relations: []
 review: draft
 audit:

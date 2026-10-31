@@ -5,7 +5,9 @@ kind: problem
 title: Degree eight polynomial with root $\sqrt{x_1}+\sqrt{x_2}+\sqrt{x_3}$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Minimal Polynomials
+  - Multiquadratic Extensions
 relations: []
 review: draft
 audit:

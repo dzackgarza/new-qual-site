@@ -5,7 +5,9 @@ kind: problem
 title: Galois group over an intersection of fixed fields is $\langle H_1,H_2\rangle$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Galois Correspondence
+  - Fixed Fields
 relations: []
 review: draft
 audit:

@@ -5,7 +5,10 @@ kind: problem
 title: Quartics of the form $Q^2-cP^2$ and quadratic subfields
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Quartic Polynomials
+  - Quadratic Subfields
+  - Irreducible Polynomials
 relations: []
 review: draft
 audit:

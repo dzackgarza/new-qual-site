@@ -5,7 +5,10 @@ kind: problem
 title: $S_d$ as a Galois group via symmetric rational functions
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Symmetric Functions
+  - Artin's Theorem
+  - Galois Groups
 relations: []
 review: draft
 audit:

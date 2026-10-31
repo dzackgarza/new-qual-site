@@ -5,7 +5,9 @@ kind: problem
 title: Abelian normal closure of $K(a^{1/p})$ forces $a^{-1}\sigma(a)$ to be a $p$-th power
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Kummer Theory
+  - Abelian Extensions
 relations: []
 review: draft
 audit:

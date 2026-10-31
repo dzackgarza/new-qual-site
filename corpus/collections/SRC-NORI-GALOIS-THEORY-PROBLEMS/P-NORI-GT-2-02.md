@@ -5,7 +5,10 @@ kind: problem
 title: Degree of a multiquadratic extension and the subgroup of $F^\times/(F^\times)^2$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Multiquadratic Extensions
+  - Square Classes
+  - Degree of Field Extensions
 relations: []
 review: draft
 audit:

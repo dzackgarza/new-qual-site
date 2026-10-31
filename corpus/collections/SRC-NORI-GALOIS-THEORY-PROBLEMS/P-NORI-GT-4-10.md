@@ -5,7 +5,10 @@ kind: problem
 title: Invariants of $X\mapsto X+1$ on $F(X)$ in characteristic $p$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Fixed Fields
+  - Rational Function Fields
+  - Artin-Schreier Extensions
 relations: []
 review: draft
 audit:

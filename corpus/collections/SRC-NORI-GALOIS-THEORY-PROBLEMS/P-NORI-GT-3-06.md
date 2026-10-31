@@ -5,7 +5,9 @@ kind: problem
 title: Image of $x\mapsto x-x^p$ on $\FF_q$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Finite Fields
+  - Artin-Schreier Extensions
 relations: []
 review: draft
 audit:

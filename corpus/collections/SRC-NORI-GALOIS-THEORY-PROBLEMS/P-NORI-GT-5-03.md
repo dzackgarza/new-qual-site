@@ -5,7 +5,10 @@ kind: problem
 title: Base change of separable, normal, and Galois extensions
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Base Change
+  - Separable Extensions
+  - Normal Extensions
 relations: []
 review: draft
 audit:
@@ -18,11 +21,11 @@ audit:
 ::: {.problem}
 Given $F \subset E \subset E'$ and $F \subset K \subset E'$, where $F, E, K$ are subfields of $E'$. *It is not assumed that $E$ is an algebraic extension of $F$.* Prove that
 
-(1) If $K$ is a finite separable extension of $F$, then $EK$ is a finite separable extension of $E$.
+(a) If $K$ is a finite separable extension of $F$, then $EK$ is a finite separable extension of $E$.
 
-(2) If $K$ is a finite normal extension of $F$, then $EK$ is a finite normal extension of $E$.
+(b) If $K$ is a finite normal extension of $F$, then $EK$ is a finite normal extension of $E$.
 
-(3) If $K$ is a finite Galois extension of $F$, then $EK$ is a finite Galois extension of $E$.
+(c) If $K$ is a finite Galois extension of $F$, then $EK$ is a finite Galois extension of $E$.
 :::
 
 ::: {.solution}
@@ -216,7 +219,7 @@ A finite Galois extension is both separable and normal. Apply step [](#s1-5){.pf
 
 ::: pf-qed
 
-Steps [](#s1-5){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-9){.pf-ref} prove parts (1), (2), and (3), respectively.
+Steps [](#s1-5){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-9){.pf-ref} prove parts (a), (b), and (c), respectively.
 
 :::
 

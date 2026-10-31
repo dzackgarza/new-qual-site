@@ -5,7 +5,9 @@ kind: problem
 title: Additivity of the polynomial vanishing on a finite additive subgroup
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Additive Polynomials
+  - Positive Characteristic
 relations: []
 review: draft
 audit:
