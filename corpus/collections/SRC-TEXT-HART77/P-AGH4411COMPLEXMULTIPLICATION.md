@@ -33,8 +33,7 @@ Let $R$ be the ring of endomorphisms of $X$.
 
 (a) If $f \in R$ is a nonzero endomorphism corresponding to complex multiplication by $\alpha$, as in (4.18), show that $\deg f=\abs{\alpha}^2$.
 
-(b) If $f \in R$ corresponds to $\alpha \in \CC$ again, show that the dual $\hat{f}$ of (Ex.
-4.7) corresponds to the complex conjugate $\bar{\alpha}$ of $\alpha$.
+(b) If $f \in R$ corresponds to $\alpha \in \CC$ again, show that the dual $\hat{f}$ of (Ex. 4.7) corresponds to the complex conjugate $\bar{\alpha}$ of $\alpha$.
 
 (c) If $\tau \in \QQ(\sqrt{-d})$ happens to be integral over $\ZZ$, show that $R=\ZZ[\tau]$.
 :::
@@ -79,8 +78,8 @@ $$
 \Lambda/\alpha\Lambda.
 $$
 Since the base field is $\CC$, the nonzero isogeny $f_\alpha$ is
-separable. Hence its degree is the number of points in its kernel, as in
-[[P-AGH447DUALOFAMORPHISM|Exercise IV.4.7(c)]]. Therefore
+separable. Hence its degree is the number of points in its kernel.
+Therefore
 $$
 \deg f_\alpha
 =

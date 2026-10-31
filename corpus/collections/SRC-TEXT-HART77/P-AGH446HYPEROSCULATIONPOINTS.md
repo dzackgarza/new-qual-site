@@ -37,9 +37,9 @@ $$
 $$
 inflection points. A node does not count as an inflection point. Assume $\characteristic k=0$.
 
-(b) Now let $X$ be a curve of genus $g$ embedded as a curve of degree $d$ in $\PP^n$, $n \geq 3$, not contained in any $\PP^{n-1}$. For each point $P \in X$, there is a hyperplane $H$ containing $P$, such that $P$ counts at least $n$ times in the intersection $H \intersect X$. This is called an **osculating** hyperplane at $P$. It generalizes the notion of tangent line for curves in $\PP^2$.
+(b) Now let $X$ be a curve of genus $g$ embedded as a curve of degree $d$ in $\PP^n$, $n \geq 3$, not contained in any $\PP^{n-1}$. For each point $P \in X$, there is a hyperplane $H$ containing $P$, such that $P$ counts at least $n$ times in the intersection $H \intersect X$. This is called an \dfn{osculating} hyperplane at $P$. It generalizes the notion of tangent line for curves in $\PP^2$.
 
-    If $P$ counts at least $n+1$ times in $H \intersect X$, we say $H$ is a **hyperosculating hyperplane**, and that $P$ is a **hyperosculation point**. Use Hurwitz's theorem as above, and induction on $n$, to show that $X$ has
+If $P$ counts at least $n+1$ times in $H \intersect X$, we say $H$ is a \dfn{hyperosculating hyperplane}, and that $P$ is a \dfn{hyperosculation point}. Use Hurwitz's theorem as above, and induction on $n$, to show that $X$ has
 $$
 n(n+1)(g-1)+(n+1) d
 $$

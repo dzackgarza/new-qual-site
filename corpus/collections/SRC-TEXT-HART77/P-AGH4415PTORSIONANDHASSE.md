@@ -33,8 +33,7 @@ audit:
 Let $X$ be an elliptic curve over a field $k$ of characteristic $p$.
 Let $F': X_p \to X$ be the $k$-linear Frobenius morphism (2.4.1). Use (4.10.7) to show that the dual morphism $\hat{F}': X \to X_p$ is separable if and only if the Hasse invariant of $X$ is 1.
 
-Now use (Ex.
-4.7) to show that if the Hasse invariant is 1, then the subgroup of points of order $p$ on $X$ is isomorphic to $\ZZ/p$; if the Hasse invariant is 0, it is 0.
+Now use (Ex. 4.7) to show that if the Hasse invariant is 1, then the subgroup of points of order $p$ on $X$ is isomorphic to $\ZZ/p$; if the Hasse invariant is 0, it is 0.
 :::
 
 ::: {.solution}
@@ -123,7 +122,7 @@ dV_0\ne0
 \iff
 F^*\ne0
 \iff
-\operatorname{Hasse}(X)=1.
+\Hasse(X)=1.
 $$
 This proves the first assertion.
 

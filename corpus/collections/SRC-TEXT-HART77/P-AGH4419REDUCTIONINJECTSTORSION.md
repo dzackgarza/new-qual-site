@@ -43,9 +43,7 @@ Let $T \subseteq \Spec \ZZ$ be the open subset consisting of all primes $p \neq 
 
 - Conclude that for any $p \in T$, the natural map $X(\QQ) \to X_{(p)}(\FF_p)$ induced on the groups of rational points, maps the $n$-torsion points of $X(\QQ)$ injectively into the torsion subgroup of $X_{(p)}(\FF_p)$, for any $(n, p)=1$.
 
-By this method one can show easily that the groups $X(\QQ)$ in (Ex.
-4.17) and (Ex.
-4.18) are torsion-free.
+By this method one can show easily that the groups $X(\QQ)$ in (Ex. 4.17) and (Ex. 4.18) are torsion-free.
 :::
 
 ::: {.solution}

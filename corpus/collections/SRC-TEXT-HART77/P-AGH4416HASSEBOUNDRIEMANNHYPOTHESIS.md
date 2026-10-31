@@ -45,13 +45,10 @@ Let $F': X_q \to X$ be the $k$-linear Frobenius with respect to $q$.
 
 (b) Show that $1_X-F'$ is a separable morphism and its kernel is just the set $X(\FF_q)$ of points of $X$ with coordinates in $\FF_q$.
 
-(c) Using (Ex.
-4.7), show that $F'+\hat{F}'=a_X$ for some integer $a$, and that $N=q-a+1$, where $N=\size X(\FF_q)$.
+(c) Using (Ex. 4.7), show that $F'+\hat{F}'=a_X$ for some integer $a$, and that $N=q-a+1$, where $N=\size X(\FF_q)$.
 
 (d) Use the fact that $\deg(m+n F')>0$ for all $m, n \in \ZZ$ to show that $\abs{a} \leq 2 \sqrt{q}$.
-This is Hasse's proof of the analogue of the Riemann hypothesis for elliptic curves (App.
-C, Ex.
-5.6).
+This is Hasse's proof of the analogue of the Riemann hypothesis for elliptic curves (App. C, Ex. 5.6).
 
 (e) Now assume $q=p$, and show that the Hasse invariant of $X$ is 0 if and only if $a \equiv 0 \pmod p$.
 Conclude for $p \geq 5$ that $X$ has Hasse invariant 0 if and only if $N=p+1$.
@@ -299,7 +296,7 @@ By [[P-AGH4415PTORSIONANDHASSE|Exercise IV.4.15]], the Hasse invariant is zero e
 An isogeny of elliptic curves is inseparable exactly when its differential at the origin vanishes.
 Therefore
 $$
-\operatorname{Hasse}(X)=0
+\Hasse(X)=0
 \iff
 dV_O=0
 \iff
@@ -330,7 +327,7 @@ $$
 Thus an integer $a$ in this range is divisible by $p$ exactly when $a=0$.
 By step [](#s8){.pf-ref},
 $$
-\operatorname{Hasse}(X)=0
+\Hasse(X)=0
 \iff
 a=0.
 $$

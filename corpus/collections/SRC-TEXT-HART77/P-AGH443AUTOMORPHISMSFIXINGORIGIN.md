@@ -171,7 +171,7 @@ as a vector space over $k(x)$, comparison of the coefficient of $y$ gives
 $$
 2c(dx+e)=0.
 $$
-Here $c\ne0$ and $\operatorname{char}k\ne2$, hence
+Here $c\ne0$ and $\characteristic k\ne2$, hence
 $$
 d=e=0.
 $$
@@ -223,7 +223,7 @@ f(ax+b)=a^3f(x),
 $$
 so the equality is equivalent to $c^2=a^3$.
 
-Since $k$ is algebraically closed and $\operatorname{char}k\ne2$, there are
+Since $k$ is algebraically closed and $\characteristic k\ne2$, there are
 exactly two choices of $c$ for each admissible $\tau$, differing by the
 involution
 $$
@@ -272,7 +272,7 @@ Suppose
 $$
 j(X)=1728,
 \qquad
-\operatorname{char}k\ne3.
+\characteristic k\ne3.
 $$
 Then
 $$
@@ -333,7 +333,7 @@ Suppose
 $$
 j(X)=0,
 \qquad
-\operatorname{char}k\ne3.
+\characteristic k\ne3.
 $$
 Then
 $$
@@ -401,7 +401,7 @@ Corollary IV.4.7 gives $\cardinality{G}=6$, so this subgroup is all of $G$.
 
 Finally suppose
 $$
-\operatorname{char}k=3,
+\characteristic k=3,
 \qquad
 j(X)=0=1728.
 $$

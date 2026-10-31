@@ -95,7 +95,7 @@ is a base-point-free pencil.
 
 The quadratic multiplication map
 $$
-\operatorname{Sym}^2H^0(X,L)
+\Sym^2H^0(X,L)
 \longrightarrow
 H^0(X,L^2)
 $$
@@ -205,7 +205,7 @@ The same is therefore true with $H^0(X,L)$ in place of $W$.
 
 For every $m\ge1$, the natural map
 $$
-\operatorname{Sym}^mH^0(X,L)
+\Sym^mH^0(X,L)
 \longrightarrow
 H^0(X,L^m)
 $$
@@ -217,7 +217,7 @@ The assertion is tautological for $m=1$ and is step [](#s2){.pf-ref} for $m=2$.
 Assume it for some $m\ge2$.  Compose its tensor product with $H^0(X,L)$
 with the multiplication map of step [](#s3){.pf-ref}:
 $$
-H^0(X,L)\otimes\operatorname{Sym}^mH^0(X,L)
+H^0(X,L)\otimes\Sym^mH^0(X,L)
 \twoheadrightarrow
 H^0(X,L)\otimes H^0(X,L^m)
 \twoheadrightarrow
@@ -225,7 +225,7 @@ H^0(X,L^{m+1}).
 $$
 This composition is multiplication and therefore factors through
 $$
-\operatorname{Sym}^{m+1}H^0(X,L).
+\Sym^{m+1}H^0(X,L).
 $$
 Hence the latter maps surjectively to $H^0(X,L^{m+1})$.  Induction proves
 the assertion for all $m$.
@@ -246,7 +246,7 @@ X\hookrightarrow\PP(H^0(X,L)^*),
 $$
 the restriction map on degree-$m$ homogeneous forms is precisely
 $$
-\operatorname{Sym}^mH^0(X,L)
+\Sym^mH^0(X,L)
 \longrightarrow
 H^0(X,L^m).
 $$
