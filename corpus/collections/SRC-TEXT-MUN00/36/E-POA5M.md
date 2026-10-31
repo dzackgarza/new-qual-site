@@ -20,6 +20,8 @@ Show that $X$ can be imbedded in $\RR^N$ for some positive integer $N$.
 :::
 
 ::: {.solution}
+If $X=\varnothing$, its unique map into $\RR$ is an embedding. Assume $X\neq\varnothing$ below.
+
 For each $x\in X$, choose a neighborhood $U_x$ and an embedding
 $$
 e_x:U_x\hookrightarrow\RR^{k_x}.
