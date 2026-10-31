@@ -56,7 +56,7 @@ Let
 $$
 g:S^n\to S^n
 $$
-collapse the complement of the interior of $B$ to the basepoint. This quotient map has degree $1$, hence is homotopic to the identity. Thus
+collapse the complement of the interior of $B$ to the basepoint. Choose spherical coordinates centered at $q$ and let $B$ be a polar ball. The map $g$ preserves each radial direction, stretches the radial coordinate of $B$ across the full interval from $q$ to the antipode, and sends all points outside $B$ to the antipode. Linear interpolation between the identity radial coordinate and this stretched coordinate is a homotopy from $\operatorname{id}_{S^n}$ to $g$. Thus
 $$
 gf\simeq f.
 $$
