@@ -23,88 +23,21 @@ Then use the Thom isomorphism to show that the Hopf invariant of $p$ must be $\p
 :::
 
 ::: {.solution}
+Suppose $n>1$. The fiber cannot be $S^0$, since a two-sheeted covering of the simply connected base $S^n$ has disconnected total space. Thus $k>0$. Local triviality gives $m=n+k$, so $m>k+1$ and $m>n$. The sphere bundle is orientable because $S^n$ is simply connected.
 
-::: pf
+Let $e\in H^{k+1}(S^n;\ZZ)$ be its Euler class. The Gysin sequence contains
+$$
+H^k(S^m)\longrightarrow H^0(S^n)
+\xrightarrow{\smile e}H^{k+1}(S^n)
+\xrightarrow{p^*}H^{k+1}(S^m).
+$$
+The outer groups vanish, so cup product with $e$ is an isomorphism. Hence $H^{k+1}(S^n)\cong\ZZ$, which forces $k+1=n$, and $e$ is a generator up to sign. Therefore $k=n-1$ and $m=2n-1$.
 
-::: pf-step
+Cone each sphere fiber to form an oriented $D^n$-bundle $V$ whose boundary is the given sphere bundle. Its Thom space $V/S(V)$ is homotopy equivalent to the mapping cone $C_p$, since $V$ retracts onto its zero section $S^n$. If $U\in H^n(C_p;\ZZ)$ is the Thom class, the Thom identity gives
+$$
+U^2=e\smile U.
+$$
+The Thom isomorphism sends the generator $e=\pm[S^n]^*$ to a generator of $H^{2n}(C_p;\ZZ)$. By the definition of the Hopf invariant, $H(p)=\pm1$.
 
-The Gysin sequence for the sphere bundle $S^k \to S^m \xrightarrow{p} S^n$ is
-$$\cdots \to H^{i-k-1}(S^n) \to H^i(S^n) \xrightarrow{p^*} H^i(S^m) \to H^{i-k}(S^n) \to \cdots.$$
-
-::: pf-proof
-
-the Gysin sequence of a sphere bundle.
-
-:::
-
-:::
-
-::: pf-step
-
-$H^i(S^m)$ is nonzero only for $i = 0, m$, and $H^i(S^n)$ is nonzero only for $i = 0, n$.
-
-::: pf-proof
-
-cohomology of spheres.
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-The Gysin sequence forces $m = n + k + 1$ (so that the total space $S^m$ has the right dimension).
-
-::: pf-proof
-
-the Euler class lives in $H^{k+1}(S^n)$, which is nonzero only if $k + 1 = n$, i.e. $k = n - 1$; then $m = n + k = 2n - 1$.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-Hence $k = n - 1$ and $m = 2n - 1$.
-
-::: pf-proof
-
-Step [](#s3){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-step
-
-The Euler class $e \in H^n(S^n) = \ZZ$ is a generator (up to sign), since the Gysin sequence is exact and the bundle is nontrivial.
-
-::: pf-proof
-
-the Euler class of the bundle $S^{n-1} \to S^{2n-1} \to S^n$ is $\pm 1$ times the generator of $H^n(S^n)$.
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-The Hopf invariant of $p$ equals the Euler class (up to sign), so $H(p) = \pm 1$.
-
-::: pf-proof
-
-by the Thom isomorphism, the Hopf invariant of the bundle map $p$ is the Euler class, which is $\pm 1$.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s4){.pf-ref} and [](#s6){.pf-ref}.
-
-:::
-
-:::
-
+For $n=1$, a connected fiber would make $\pi_1(S^m)\to\pi_1(S^1)$ surjective, while $m=1+k>1$ makes its source zero. Thus $k=0$ and $m=1$. The Hopf-invariant assertion concerns $n>1$.
 :::
