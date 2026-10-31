@@ -157,7 +157,7 @@ If
 $$
 g_{ij}'=h_i^{-1}g_{ij}h_j,
 $$
-multiplication by $h_i$ on $\mco_{U_i}$ intertwines the gluing maps defined by
+multiplication by $h_i^{-1}$ on $\mco_{U_i}$ intertwines the gluing maps defined by
 $g_{ij}$ and $g_{ij}'$, so these local maps glue to an isomorphism
 $\mcl_g\cong\mcl_{g'}$.
 
@@ -177,7 +177,7 @@ For every cover $\mathfrak U$, there is a bijection
 $$
 \left\{
 \begin{array}{c}
-\text{invertible sheaves on $X$}\
+\text{invertible sheaves on $X$}\\
 \text{trivialized by $\mathfrak U$}
 \end{array}
 \right\}/\cong
