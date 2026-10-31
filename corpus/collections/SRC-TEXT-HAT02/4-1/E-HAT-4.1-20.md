@@ -39,7 +39,7 @@ $$
 $$
 for the $d$-dimensional CW complex $X$.
 
-We now construct maps $X\to Y^d$ cell by cell. On the $0$-skeleton there is only one choice up to homotopy because $X$ is connected and we may fix a basepoint component of $Y$. Suppose a map has been constructed on $X^{k-1}$. For each $k$-cell, extension across the cell is obstructed by an element of
+We now construct maps $X\to Y^d$ cell by cell. Since $X$ is connected, each map lands in one path component of $Y$. There are finitely many such choices by the hypothesis on $\pi_0(Y)$; fix one component at a time. Suppose a map has been constructed on $X^{k-1}$. For each $k$-cell, extension across the cell is obstructed by an element of
 $$
 \pi_{k-1}(Y),
 $$
