@@ -19,7 +19,7 @@ audit:
 
 ::: {.exercise}
 
-Let $(X, d)$ be a metric space.
+Let $(X, d)$ be a nonempty metric space.
 If $f$ satisfies the condition
 
 $$
@@ -50,6 +50,8 @@ Show that $f(x) = x - x^2/2$ maps $X$ into $X$ and is a shrinking map that is no
 :::
 
 ::: {.solution}
+
+The nonempty hypothesis is needed for the fixed-point claims in (a) and (b).
 
 ::: pf
 
