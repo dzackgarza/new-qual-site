@@ -23,11 +23,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Proved Hausdorffness by separating points through the base or disjoint sheets, then proved compactness using finitely many shrunken evenly covered neighborhoods with compact closures.
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: The book states 'iff'; the stored statement had 'if'.
+- event: solution-reviewed
+  by: claude-opus-5.5
+  date: 2026-10-31
+  note: 'Added the converse: compactness and Hausdorffness of the base from those of the finite-sheeted cover.'
 ---
 
 ::: {.problem}
 Let $p: \tilde{X} \to X$ be a covering space with $p^{-1}(x)$ finite and nonempty for all $x \in X$.
-Show that $\tilde{X}$ is compact Hausdorff if $X$ is compact Hausdorff.
+Show that $\tilde{X}$ is compact Hausdorff iff $X$ is compact Hausdorff.
 :::
 
 ::: {.solution}
@@ -182,6 +190,33 @@ Hence $\widetilde X$ is compact Hausdorff.
 ::: pf-proof
 
 Hausdorffness is step [](#s1){.pf-ref} and compactness is step [](#s5){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-step
+
+Conversely, if $\widetilde X$ is compact Hausdorff, then so is $X$.
+
+::: pf-proof
+
+Every fiber is nonempty, so $p$ is surjective and $X=p(\widetilde X)$ is compact.
+For Hausdorffness, let $x\ne y$ in $X$, with fibers $\theset{a_1,\dots,a_k}$ and $\theset{b_1,\dots,b_l}$, where $k,l\ge1$.
+Choose evenly covered open neighborhoods $U$ of $x$ and $V$ of $y$; each sheet over $U$ contains exactly one $a_i$, so the sheets are $U_1,\dots,U_k$ with $a_i\in U_i$, and likewise the sheets over $V$ are $V_1,\dots,V_l$ with $b_j\in V_j$.
+Since $\widetilde X$ is Hausdorff and $a_i\ne b_j$, choose disjoint open sets $A_{ij}\ni a_i$ and $B_{ij}\ni b_j$.
+A covering map is open, so
+$$
+U'=\bigcap_{i=1}^k p\Bigl(U_i\cap\bigcap_{j}A_{ij}\Bigr),
+\qquad
+V'=\bigcap_{j=1}^l p\Bigl(V_j\cap\bigcap_{i}B_{ij}\Bigr)
+$$
+are open neighborhoods of $x$ and $y$.
+Suppose $z\in U'\cap V'$.
+Since $p\restrict_{U_i}$ is injective, the unique point $c_i$ of $U_i$ over $z$ lies in $\bigcap_jA_{ij}$, and $c_1,\dots,c_k$ is the whole fiber over $z\in U$.
+Likewise the point $d_1$ of $V_1$ over $z$ lies in $\bigcap_iB_{i1}$.
+Then $d_1=c_i$ for some $i$, so $c_i\in A_{i1}\cap B_{i1}=\varnothing$, a contradiction.
+Thus $U'\cap V'=\varnothing$.
 
 :::
 
