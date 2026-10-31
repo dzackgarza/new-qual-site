@@ -21,6 +21,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.A, Exercise 3; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: dualizing a chain complex of vector spaces is exact, so the hypothesis kills
+    $H_n(X;\QQ)$ and $H_n(X;\FF_p)$; the integral universal coefficient sequence then makes
+    multiplication by every prime bijective on $H_n(X;\ZZ)$, which is a $\QQ$-vector-space
+    structure, and $H_n(X;\QQ)=0$ then forces the group to vanish.
 ---
 
 ::: {.problem}

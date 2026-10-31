@@ -107,8 +107,11 @@ exactness of filtered direct limits, `-20`-`-23` through compactly supported coh
 duality plus $\\chi=0$, `-25` through the vanishing Ext term, `-26` by the connected-sum products, `-27` by the symplectic reduction,
 `-28` by $\\dim V^\\perp=n-k$, `-30`-`-35` through collar splittings, Lefschetz duality and the five lemma. `E-HAT-3.3-35` had a
 sentence broken mid-way ("The middle map is ... are isomorphisms"), which is repaired.
+§3.A: all 6 statements compared with the printed exercises; two of them had dropped half of a printed "iff" — `E-HAT-3.A-2` ("torsionfree iff $\\operatorname{Tor}(A,B)=0$ for all $B$") and
+`E-HAT-3.A-6` ("contains an element of order $n$ iff both do") — and the missing directions are restored, with the proofs extended
+to cover them. All 6 proofs are read.
 Unread entirely: the proofs of §1.3 beyond the ten listed, of §1.B-5..-9 and of §2.1-6, -8, -10, -17,
--23..-25, -27..-29, and the proofs and statements of §4 onward.
+-23..-25, -27..-29, and the proofs and statements of §3.B onward and §4 onward.
 
 ## Fast local checks and complete CI acceptance
 

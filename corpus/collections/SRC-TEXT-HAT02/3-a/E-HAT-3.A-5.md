@@ -21,6 +21,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.A, Exercise 5; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: a torsion-free group is the direct limit of its finitely generated
+    subgroups, each free, and the direct-limit formula of the preceding exercise turns vanishing at
+    every stage into vanishing at the limit.
 ---
 
 ::: {.problem}

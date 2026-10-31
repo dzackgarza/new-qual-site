@@ -21,10 +21,26 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.A, Exercise 6; it matches the printed text. The card stated only the "if" half of the printed "iff"; the other half is restored.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the first half: writing $A$ as a direct limit of finitely generated pieces reduces
+    $\operatorname{Tor}$ to $\bigoplus_jB[n_j]$, which is torsion; and the injection of a cyclic
+    subgroup $C=\ZZ_n\subset A$ embeds $\operatorname{Tor}(C,B)=B[n]$ in $\operatorname{Tor}(A,B)$.
+    The converse that the restored statement needs is added here: the class splits over the primary
+    decomposition, and a finitely generated $p$-primary stage
+    $A_{p,\alpha}=\bigoplus_j\ZZ_{p^{k_j}}$ has
+    $\operatorname{Tor}(A_{p,\alpha},B_p)=\bigoplus_jB_p[p^{k_j}]$, which forces elements of order
+    $p^{m_p}$ in both $A$ and $B$.
 ---
 
 ::: {.problem}
-Show that $\operatorname{Tor}(A, B)$ is always a torsion group, and that $\operatorname{Tor}(A, B)$ contains an element of order $n$ if both $A$ and $B$ contain elements of order $n$.
+Show that $\operatorname{Tor}(A, B)$ is always a torsion group, and that $\operatorname{Tor}(A, B)$ contains an element of order $n$ iff both $A$ and $B$ contain elements of order $n$.
 :::
 
 ::: {.solution}
@@ -66,5 +82,15 @@ But
 $$
 \operatorname{Tor}(\ZZ_n,B)\cong B[n].
 $$
-Since $B$ contains an element of order exactly $n$, $B[n]$ contains an element of order $n$. Its image in $\operatorname{Tor}(A,B)$ still has order $n$, proving the claim.
+Since $B$ contains an element of order exactly $n$, $B[n]$ contains an element of order $n$. Its image in $\operatorname{Tor}(A,B)$ still has order $n$, proving one direction.
+
+Conversely, suppose $\operatorname{Tor}(A,B)$ has an element of order $n$, and write $n=\prod_p p^{m_p}$. Since $\operatorname{Tor}$ commutes with direct sums in each variable, it splits over the primary decomposition,
+$$
+\operatorname{Tor}(A,B)\cong\bigoplus_p\operatorname{Tor}(A_p,B_p),
+$$
+so the given element has a component of order $p^{m_p}$ in $\operatorname{Tor}(A_p,B_p)$ for each prime $p$ dividing $n$. Fix such a $p$ and write the $p$-primary part of $A$ as the directed union of its finitely generated subgroups $A_{p,\alpha}$, each of the form $\bigoplus_j\ZZ_{p^{k_j}}$. By Exercise 4 the component of the class already lies in some
+$$
+\operatorname{Tor}(A_{p,\alpha},B_p)\cong\bigoplus_j B_p[p^{k_j}],
+$$
+so some $k_j\ge m_p$ and $B_p$ contains an element of order $p^{k_j}$, hence also one of order $p^{m_p}$; and $A$ contains an element of order $p^{k_j}$ for the same $j$. Summing the resulting elements over the primes dividing $n$ gives elements of order $n$ in $A$ and in $B$.
 :::

@@ -21,6 +21,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.A, Exercise 1; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: over a field of characteristic zero the Tor term of the universal
+    coefficient sequence vanishes and the dimensions are the free ranks; over a field of
+    characteristic $p$ they are $r_n+t_n+t_{n-1}$ with
+    $t_n=\dim_{\FF_p}(T_n/pT_n)=\dim_{\FF_p}T_n[p]$, and the two torsion sums cancel in the
+    alternating sum.
 ---
 
 ::: {.problem}
