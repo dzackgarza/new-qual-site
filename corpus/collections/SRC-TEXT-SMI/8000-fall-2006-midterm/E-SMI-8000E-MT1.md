@@ -112,6 +112,8 @@ be a chain and set
 $$
 J=\bigcup_{I\in\mathcal C}I.
 $$
+If $\mathcal C$ is empty, then $(x)\in\mathcal P$ is an upper bound.
+Assume henceforth that $\mathcal C$ is nonempty.
 Because $\mathcal C$ is totally ordered by inclusion, $J$ is an ideal: if
 $a,b\in J$, then $a\in I_1$ and $b\in I_2$ for some
 $I_1,I_2\in\mathcal C$; after interchanging them if necessary,
