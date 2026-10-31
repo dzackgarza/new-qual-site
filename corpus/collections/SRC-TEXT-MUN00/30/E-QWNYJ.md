@@ -23,7 +23,7 @@ Let
 $$
 X=\prod_{n=1}^\infty X_n,
 $$
-and for each $n$ choose a countable dense set $D_n\subset X_n$. Choose a basepoint $a_n\in D_n$. Let $D\subset X$ consist of all sequences $x=(x_n)$ such that $x_n\in D_n$ for every $n$ and $x_n=a_n$ for all but finitely many $n$.
+If some $X_n$ is empty, then $X$ is empty and is separable. Otherwise choose for each $n$ a countable dense set $D_n\subset X_n$ and a basepoint $a_n\in D_n$. Let $D\subset X$ consist of all sequences $x=(x_n)$ such that $x_n\in D_n$ for every $n$ and $x_n=a_n$ for all but finitely many $n$.
 
 The set $D$ is countable: it is a countable union, over finite subsets $F\subset\ZZ_+$, of the countable products $\prod_{n\in F}D_n$.
 
