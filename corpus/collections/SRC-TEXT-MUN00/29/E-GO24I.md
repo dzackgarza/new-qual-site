@@ -18,7 +18,7 @@ Show that the rationals $\QQ$ are not locally compact.
 :::
 
 ::: {.solution}
-Suppose $\QQ$ were locally compact at $q$. Then some neighborhood $V$ of $q$ in $\QQ$ would have compact closure in $\QQ$. Choose real numbers $a<b$ with
+Suppose $\QQ$ were locally compact at $q$. A compact subspace $C\subseteq\QQ$ would contain a neighborhood $V$ of $q$. Since $\QQ$ is Hausdorff, $C$ is closed, so $\overline V^{\QQ}\subseteq C$ is compact. Choose real numbers $a<b$ with
 $$
 q\in(a,b)\cap\QQ\subset V.
 $$
