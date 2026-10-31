@@ -360,8 +360,8 @@ $$
 
 ::: {.pf-step #s12}
 
-A nonplanar curve with only finitely many multisecants is either the
-twisted cubic or the elliptic quartic.
+A nonplanar curve satisfying the two finiteness assumptions in step
+[](#s5){.pf-ref} is either the twisted cubic or the elliptic quartic.
 
 ::: pf-proof
 
