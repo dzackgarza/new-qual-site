@@ -31,7 +31,7 @@ Thus $X$ has a single $k$ simplex for each $k \leq n$.
 :::
 
 ::: {.solution}
-Let $\sigma_k$ denote the unique $k$-simplex of $X$. Then
+For $n=0$, the space is a point and $H_0(X)=\ZZ$. Assume $n\ge1$ below. Let $\sigma_k$ denote the unique $k$-simplex of $X$. Then
 $$
 C_k(X)\cong\ZZ\langle\sigma_k\rangle
 \qquad(0\le k\le n).
