@@ -37,6 +37,18 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Hartshorne IV.6.7 proof uses tangent contacts as distinct multisecants
+
+- **Object and need:** `P-AGH467MULTISECANTS` must prove that every smooth space curve outside the four listed cases has infinitely many lines through at least three distinct curve points.
+
+- **Observed evidence:** Hartshorne IV.3 defines a multisecant by three distinct points. The card's former proof treated a tangent with contact order three, or a tangent through one further point, as a multisecant. Neither has three distinct intersection points. The general projection conclusion therefore does not follow from the stated finiteness assumption.
+
+- **Impact and owner:** the converse in the card's solution was unproved. The card now retains the exceptional-case proofs and a conditional projection argument as a remark. The missing implication belongs to this card's mathematical proof.
+
+- **Uncertainty:** the source statement itself has not been disproved. The remaining question is how to control tangent contacts from the finite distinct-trisecant hypothesis over the source's base-field scope.
+
+- **Repair:** supply a source-faithful argument for the tangent-contact step, then restore a complete solution under `TODO.md`'s Hartshorne collection audit.
+
 ### UCSD covering-spaces subgroup matching card holds no recoverable posed task
 
 - **Object and need:** `P-O2J6S` in `SRC-UNSORTED-TOPOLOGY`.

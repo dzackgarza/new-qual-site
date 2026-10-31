@@ -19,17 +19,22 @@ audit:
   note: >-
     Read Hartshorne IV.6.7, the projection exercises IV.3.10--3.11, the
     low-degree curve classification IV.3.4 and IV.3.6, Castelnuovo's bound,
-    and the retained Egbert working notes. The source statement needs no
-    correction. The proof below makes the hint precise: if only finitely many
-    multisecants existed, projection from a point of X lying on none of them
-    would embed X as a smooth plane curve of degree d-1; comparison with
-    Castelnuovo forces the four stated exceptional curves.
+    and the retained Egbert working notes. The projection argument below
+    requires a separate tangent-contact hypothesis.
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: chatgpt
+  date: 2026-10-31
+  note: >-
+    Hartshorne IV.3 defines a multisecant by three distinct points. The
+    earlier proof counted tangential length-three intersections and therefore
+    did not establish the stated converse. The retained argument proves a
+    conditional reduction; the tangent-contact implication remains open.
 ---
 
 ::: {.problem}
@@ -39,9 +44,13 @@ Every other curve in $\PP^3$ has infinitely many multisecants.
 Hint: Consider a projection from a point of the curve to $\PP^2$.
 :::
 
-::: {.solution}
-Here a multisecant line means a line not contained in $X$ whose
-scheme-theoretic intersection with $X$ has length at least $3$.
+::: {.remark}
+The following argument proves the exceptional cases and reduces the converse
+to a tangent-contact question. It is not a proof of the full assertion.
+
+As in Hartshorne IV.3, a multisecant is a line meeting $X$ in at least
+three distinct points. A tangent with intersection length $3$ at one point
+is not a multisecant under this definition.
 
 ::: pf
 
@@ -136,18 +145,22 @@ and one of degree $2$ is a conic.
 
 ::: {.pf-step #s5}
 
-Now suppose $X$ is nonplanar and has only finitely many multisecants.
+Now suppose $X$ is nonplanar and has only finitely many multisecants and
+only finitely many tangent lines meeting $X$ again or having contact order
+at least $3$.
 There is a point
 $$
 P\in X
 $$
-through which no multisecant passes.
+through which no multisecant passes and for which projection from $P$ is
+a closed immersion.
 
 ::: pf-proof
 
-Each multisecant has finite intersection with the integral curve $X$.
-The union of the intersections with the finitely many multisecants is
-therefore a finite set of points of $X$.  Choose $P$ outside that set.
+Each line in the two finite families has finite intersection with the
+integral curve $X$. Choose $P$ outside the union of these finite
+intersections. Steps [](#s6){.pf-ref}--[](#s9){.pf-ref} prove that projection
+from this point is a closed immersion.
 
 :::
 
@@ -203,8 +216,9 @@ $$
 \pi_P(Q)=\pi_P(P),
 $$
 then the line $PQ$ would equal $T_PX$.  Its intersection with $X$ would
-have length at least $2$ at $P$ and would also contain $Q$, again making it
-a multisecant through $P$.  Thus $\pi_P$ separates all points.
+have length at least $2$ at $P$ and would also contain $Q$. The choice
+of $P$ in step [](#s5){.pf-ref} excludes this tangent
+contact. Thus $\pi_P$ separates all points.
 
 :::
 
@@ -219,8 +233,8 @@ The morphism $\pi_P$ separates tangent vectors of $X$.
 Let $Q\ne P$.  The differential of projection at $Q$ fails to be injective
 exactly when the center $P$ lies on the embedded tangent line $T_QX$.  In
 that case the line $PQ=T_QX$ meets $X$ with length at least $2$ at $Q$ and
-also contains $P$, so it is a multisecant through $P$, impossible by step
-[](#s5){.pf-ref}.
+also contains $P$. The choice of $P$ in step [](#s5){.pf-ref}
+excludes this tangent contact.
 
 At $P$, choose affine coordinates centered at $P$ in which the tangent line
 is the $x$-axis and a local parameter $t$ on $X$ has expansions
@@ -242,8 +256,8 @@ a_2=b_2=0.
 $$
 That condition says that both transverse coordinates vanish to order at
 least $3$, so the tangent line meets $X$ at $P$ with length at least $3$.
-It would therefore be a multisecant through $P$, again impossible.  Hence
-$\pi_P$ separates tangent vectors everywhere.
+The choice of $P$ in step [](#s5){.pf-ref} excludes this
+contact as well. Hence $\pi_P$ separates tangent vectors everywhere.
 
 :::
 
@@ -351,7 +365,7 @@ twisted cubic or the elliptic quartic.
 
 ::: pf-proof
 
-If $d=3$, [[P-AGH434RATIONALNORMALCURVE|Exercise IV.3.4(d)]] says that a
+If $d=3$, [[P-AGH434RATIONALNORMALCURVE|Exercise IV.3.4(b)]] says that a
 nonplanar degree-$3$ curve in $\PP^3$ is the twisted cubic.
 
 If $d=4$, step [](#s10){.pf-ref} gives
@@ -368,18 +382,17 @@ intersection of two quadrics.
 
 ::: {.pf-step #s13}
 
-Every curve in $\PP^3$ other than the line, conic, twisted cubic,
-and elliptic quartic has infinitely many multisecants.
+Under the additional tangent-contact hypothesis in step [](#s5){.pf-ref},
+a curve with only finitely many multisecants is one of the four listed
+curves.
 
 ::: pf-proof
 
-Suppose instead that a curve had only finitely many multisecants.  If it were
+Suppose a curve had only finitely many multisecants. If it were
 planar, step [](#s4){.pf-ref} would make it a line or a conic.  If it were nonplanar,
 step [](#s12){.pf-ref} would make it a twisted cubic or an elliptic quartic.
 
-Thus any curve outside the four listed cases cannot have finitely many
-multisecants.  Since the set of multisecants is either finite or infinite,
-it must be infinite.
+This establishes the stated conditional conclusion.
 
 :::
 
@@ -387,8 +400,7 @@ it must be infinite.
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove that the four stated curves have no multisecants, and
-step [](#s13){.pf-ref} proves that every other curve has infinitely many.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove that the four stated curves have no multisecants. The converse needs a proof that the tangent contacts excluded in step [](#s5){.pf-ref} cannot obstruct the projection argument when distinct trisecants are finite.
 
 :::
 
