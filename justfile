@@ -128,7 +128,8 @@ _macros-push:
 
 # Generate downloadable measurements from the CI checkout
 [private]
-_reports-ci: backlog unsolved
+_reports-ci:
+    uv run python tools/backlog.py --with-unsolved
 
 # Fail if any worktree exists (QUAL-09: one checkout, one branch)
 #

@@ -11,42 +11,52 @@ dispositions live in TODO.md.
 
 from __future__ import annotations
 
+import argparse
 from pathlib import Path
 
+from unsolved_queue import render as render_unsolved
+from unsolved_queue import unsolved
 from qualc import audit, provenance_hrefs
 from qualc.card_completeness import check_card
 from qualc.cli import load
+from qualc.model import ParsedCard
 from qualc.pandoc_batch import PandocServer
 
 REPO = Path(__file__).resolve().parent.parent
-OUT = REPO / "BACKLOG.md"
 
 
-def corpus_sections() -> list[tuple[str, list[str]]]:
+def corpus_sections(
+    root: Path,
+) -> tuple[list[tuple[str, list[str]]], list[ParsedCard] | None]:
     """Audit-family checks over parsed cards, with full orphan id lists."""
     with PandocServer() as pandoc:
-        parsed, wiki_pages, errors = load(REPO, pandoc)
+        parsed, wiki_pages, errors = load(root, pandoc)
     if errors:
         return [
             (
                 "corpus-validation",
-                [f"corpus does not validate: {len(errors)} error(s); first: {errors[0]}"],
+                [
+                    f"corpus does not validate: {len(errors)} error(s); first: {errors[0]}"
+                ],
             )
-        ]
+        ], None
     sections: list[tuple[str, list[str]]] = []
     for name, fn in audit.CHECKS.items():
         sections.append((name, fn(parsed).violations))
-    sections.append(("orphans", sorted(audit.orphan_ids(parsed, wiki_pages))))
-    return sections
+    sections.append(("orphans", sorted(audit.orphan_ids(parsed, wiki_pages, root))))
+    return sections, parsed
 
 
-def provenance_sections() -> list[tuple[str, list[str]]]:
-    return [(check.name, check.findings) for check in provenance_hrefs.run(provenance_hrefs.ALL)]
+def provenance_sections(root: Path) -> list[tuple[str, list[str]]]:
+    return [
+        (check.name, check.findings)
+        for check in provenance_hrefs.run(provenance_hrefs.ALL, root=root)
+    ]
 
 
-def completeness_sections() -> list[tuple[str, list[str]]]:
+def completeness_sections(root: Path) -> list[tuple[str, list[str]]]:
     findings: list[str] = []
-    for path in sorted((REPO / "corpus").rglob("*.md")):
+    for path in sorted((root / "corpus").rglob("*.md")):
         issues = check_card(path)
         if issues:
             findings.append(f"{path.stem}: {', '.join(issues)}")
@@ -72,15 +82,37 @@ def render(sections: list[tuple[str, list[str]]]) -> str:
     return "\n".join(lines)
 
 
-def main() -> None:
-    sections = corpus_sections() + provenance_sections() + completeness_sections()
+def main(argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--root", type=Path, default=REPO)
+    parser.add_argument(
+        "--with-unsolved",
+        action="store_true",
+        help="write the unsolved queue from the same parsed cards",
+    )
+    args = parser.parse_args(argv)
+    root = args.root.resolve()
+    corpus, parsed = corpus_sections(root)
+    sections = corpus + provenance_sections(root) + completeness_sections(root)
     rendered = render(sections)
-    if OUT.exists() and OUT.read_text() == rendered:
-        print(f"{OUT.relative_to(REPO)}: up to date")
-        return
-    OUT.write_text(rendered)
-    total = sum(len(findings) for _name, findings in sections)
-    print(f"{OUT.relative_to(REPO)}: {len(sections)} queues, {total} finding(s)")
+    out = root / "BACKLOG.md"
+    if out.exists() and out.read_text() == rendered:
+        print("BACKLOG.md: up to date")
+    else:
+        out.write_text(rendered)
+        total = sum(len(findings) for _name, findings in sections)
+        print(f"BACKLOG.md: {len(sections)} queues, {total} finding(s)")
+    if args.with_unsolved:
+        if parsed is None:
+            raise SystemExit("corpus does not validate; unsolved queue was not written")
+        queue = root / "queues" / "C-unsolved-cards.md"
+        queue.parent.mkdir(parents=True, exist_ok=True)
+        queue_text = render_unsolved(unsolved(parsed))
+        if queue.exists() and queue.read_text() == queue_text:
+            print("queues/C-unsolved-cards.md: up to date")
+        else:
+            queue.write_text(queue_text)
+            print("queues/C-unsolved-cards.md: rewritten")
 
 
 if __name__ == "__main__":
