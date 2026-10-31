@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if $f: S^n \to S^n$ has degree $d$ then $f^*: H^n(S^n; G) \to H^n(S^n; G)$ is multiplication by $d$.
+For $n>0$, show that if $f: S^n \to S^n$ has degree $d$ then $f^*: H^n(S^n; G) \to H^n(S^n; G)$ is multiplication by $d$.
 :::
 
 ::: {.solution}
