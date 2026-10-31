@@ -21,8 +21,10 @@ audit:
     cubic formed by PP', QQ', RR' meets C in the nine points P,P',P'',
     Q,Q',Q'',R,R',R''; the cubic L union L' union P''Q'' contains eight, so
     Cayley--Bacharach forces R'' onto P''Q'' in the reduced nine-point case.
-    The hyperplane-divisor calculation P''+Q''+R''~H, together with
-    H^0(P^2,O(1))~=H^0(C,O_C(1)), supplies the tangent/coincident completion.
+    The hyperplane-divisor calculation supplies the tangent/coincident cases
+    when the named intersections are regular. It does not cover singular
+    intersections on an irreducible cubic; that part of the printed statement
+    remains open in this card.
     For associativity, write A for the third point on PQ, B for the third
     point on QR, S=P+Q for the third point on P_0A, and T=Q+R for the third
     point on P_0B. Applying part (a) to the collinear triples (P,Q,A) and
@@ -32,14 +34,6 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-19
-- event: solution-reviewed
-  by: chatgpt
-  date: 2026-09-19
-  note: >-
-    Re-read the full Cayley--Bacharach and associativity argument. The
-    reduced nine-point proof is supplemented by the line-section divisor
-    argument so that tangent and coincident intersections are covered with
-    multiplicity; all shifted Lamport references in part (b) were checked.
 ---
 
 ::: {.problem}
@@ -159,11 +153,13 @@ This proves part (a).
 :::
 
 ::: {.pf-step #collinear-with-multiplicity}
-The conclusion of part (a) remains valid with arbitrary intersection
-multiplicities, including tangent and coincident-point cases.
+The conclusion of part (a) remains valid with tangent and coincident-point
+intersections when all named points are regular on $C$.
 
 ::: pf-proof
-Write $H$ for the hyperplane divisor class on the integral plane cubic $C$.
+Write $H$ for the hyperplane divisor class on the regular locus of the
+integral plane cubic $C$. The assumption that the named points are regular
+allows their point divisors to be used in the following calculation.
 Every line cuts a Cartier divisor linearly equivalent to $H$. Thus, with
 intersection multiplicities understood,
 $$
@@ -219,9 +215,8 @@ $\PP^2$. Hence some line cuts $C$ in exactly $Z$, counted with
 multiplicity. This says precisely that $P'',Q'',R''$ are collinear in the
 chord-and-tangent sense.
 
-Step [](#cayley-bacharach-collinear-reduced){.pf-ref} is the Cayley--Bacharach proof requested in (4.5); the present
-argument supplies the scheme-theoretic completion when points coalesce or a
-line becomes tangent.
+Step [](#cayley-bacharach-collinear-reduced){.pf-ref} is the Cayley--Bacharach proof in the reduced case; the present
+argument covers coalescing regular points and tangent lines.
 :::
 
 :::
@@ -373,8 +368,8 @@ $$
 (P+Q)+R=P+(Q+R).
 $$
 
-The tangent interpretation covers the cases in which some of the points
-coincide; step [](#collinear-with-multiplicity){.pf-ref} proves part (a) with precisely those intersection
+The tangent interpretation covers the cases in which some of the regular
+points coincide; step [](#collinear-with-multiplicity){.pf-ref} proves part (a) with precisely those intersection
 multiplicities, so the same calculation remains valid.
 This proves part (b).
 :::
@@ -382,9 +377,17 @@ This proves part (b).
 :::
 
 ::: pf-qed
-Steps [](#nine-point-divisor){.pf-ref}, [](#eight-points-on-reducible-cubic){.pf-ref}, [](#cayley-bacharach-collinear-reduced){.pf-ref} and [](#collinear-with-multiplicity){.pf-ref} prove the cubic lemma in part (a), and steps [](#group-law-via-star-and-iota){.pf-ref}, [](#two-collinear-triples){.pf-ref}, [](#v-r-s-collinear){.pf-ref}, [](#v-equals-s-star-r){.pf-ref} and [](#associativity){.pf-ref} use
+Steps [](#nine-point-divisor){.pf-ref}, [](#eight-points-on-reducible-cubic){.pf-ref}, [](#cayley-bacharach-collinear-reduced){.pf-ref} and [](#collinear-with-multiplicity){.pf-ref} prove the cubic lemma in the stated cases, and steps [](#group-law-via-star-and-iota){.pf-ref}, [](#two-collinear-triples){.pf-ref}, [](#v-r-s-collinear){.pf-ref}, [](#v-equals-s-star-r){.pf-ref} and [](#associativity){.pf-ref} use
 that lemma to prove associativity of the chord-and-tangent law.
 :::
 
 :::
+:::
+
+::: {.remark}
+The printed part (a) allows singular intersections. The divisor argument
+above uses point divisors only at regular points. At a singular point, a
+degree-three cycle linearly equivalent to a hyperplane section need not be
+the divisor of a line in the given embedding. A proof of part (a) for those
+configurations remains to be written.
 :::
