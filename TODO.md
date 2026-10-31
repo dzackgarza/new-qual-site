@@ -47,8 +47,8 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
 ### Current route
 
 `publication-milestone`, `unsolved-contribution`, `slogans`, `lamport-conversion`,
-`solution-section-restoration`, and `copy-policy-repair` are closed. The next ready node is
-`audited-deployment`.
+`solution-section-restoration`, `copy-policy-repair`, and `audited-deployment` are closed.
+The next ready node is `refactor-audit`.
 
 Copy is reader-facing prose: wiki pages, remarks, and site strings. Problem statements and
 proofs are mathematics, not copy. A defect in a statement or proof is repaired as a
@@ -66,6 +66,7 @@ mathematical correction under its own node, not under copy policy.
   closed. Rounds 1-9 sampled slices without recording coverage, so the checklist starts
   unticked.
   Round 1 (revision `fe928e9a1`) injected the nodes below; `audited-deployment` needs all of them.
+  **Closed.** Every reading item is checked and the injected nodes are closed.
 
   Reading checklist. Each item is read once, in full, against its source; its repairs are
   committed before the item is ticked.
@@ -1328,6 +1329,8 @@ mathematical correction under its own node, not under copy policy.
     tab listing key and recursive collection counts. The changed-card push check runs the
     unread-math check on each changed card, without loading the corpus.
     **Acceptance:** a green `development.yml` run deploys, and `revision.txt` names its commit.
+    **Closed.** Run 41150305740 succeeded at `9127538cd5aa04d33258de2ebea7fa644bbf59d4`;
+    the deployed `revision.txt` names that commit.
   Round 3 (revision `5ba163ac9`, topology and algebraic geometry) injected the node below;
   `audited-deployment` needs it.
   - **`ad3-topology-content`**. **Needs:** none. Wrong mathematics: P-TOPS05A (a free
