@@ -60,7 +60,7 @@ $$
 \boxed{\alpha^2=k\beta.}
 $$
 
-Reduction of coefficients $R\to\ZZ_2$ sends $\beta$ to the nonzero class in $H^2(\RP^\infty;\ZZ_2)$, so $\beta^j$ is nonzero for every $j\ge1$. Likewise $\alpha\beta^j$ generates the odd-dimensional group in degree $2j+1$. Hence $\alpha,\beta$ generate the whole ring and there are no further relations. Therefore
+Reduction of coefficients $R\to\ZZ_2$ sends $\beta$ to the nonzero class in $H^2(\RP^\infty;\ZZ_2)$, so $\beta^j$ is nonzero for every $j\ge1$. The same cellular diagonal computes $\alpha\beta^j$ as the cochain taking value $k$ on the unique cell of degree $2j+1$; this is the nonzero element of $\ker(2:R\to R)$, also when $k$ is even. Hence $\alpha,\beta$ generate the whole ring and there are no further relations. Therefore
 $$
 \boxed{
 H^*(\RP^\infty;\ZZ_{2k})
