@@ -30,7 +30,6 @@ source:
   - id: E-AMD-3MQL7TPB
   - id: E-AMD-3TYWSS7F
   - id: E-AMD-4M7MSCEI
-  - id: E-AMD-4TXVF5CA
   - id: E-AMD-4WD576RU
   - id: E-AMD-4ZKQKRLH
   - id: E-AMD-5E2GZSH6

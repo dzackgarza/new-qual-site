@@ -96,3 +96,9 @@ By step [](#irreducible-divides-iff-degree-divides-n){.pf-ref}, the irreducible 
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The divisibility criterion alone is also asked: an irreducible $\pi\in\FF_p[x]$ divides $x^{p^n}-x$ if and only if $\deg\pi$ divides $n$.
+That is step [](#irreducible-divides-iff-degree-divides-n){.pf-ref}.
+A proof avoiding the minimality of $d$: $\FF_p(\alpha)$ has $p^d$ elements, and $\pi\mid x^{p^n}-x$ exactly when $\alpha\in\FF_{p^n}$; then $\FF_p(\alpha)\subseteq\FF_{p^n}$ forces $d\mid n$ by the tower law, and conversely $\alpha^{p^d}=\alpha$ iterated $n/d$ times gives $\alpha^{p^n}=\alpha$.
+:::
