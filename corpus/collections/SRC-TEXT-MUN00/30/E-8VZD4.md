@@ -86,7 +86,7 @@ Thus every one-point set in $\RR^\omega_{\text{box}}$ is a $G_\delta$ set.
 
 ::: pf-step
 **Failure of first countability:**
-As shown in §30 Example 2, the origin $\mathbf{0} \in \RR^\omega$ has no countable local neighborhood basis in the box topology (given any countable family $\{B_m\}_{m=1}^\infty$ of box-open neighborhoods of $\mathbf{0}$ with $B_m = \prod_{n=1}^\infty (-\varepsilon_{m, n}, \varepsilon_{m, n})$, the diagonal open neighborhood $W = \prod_{n=1}^\infty (-\frac{1}{2}\varepsilon_{n, n}, \frac{1}{2}\varepsilon_{n, n})$ contains no $B_m$).
+As shown in §30 Example 2, the origin $\mathbf{0} \in \RR^\omega$ has no countable local neighborhood basis in the box topology. Indeed, if $\{B_m\}_{m=1}^\infty$ were such a basis, choose for each $m$ a basic box $P_m=\prod_{n=1}^\infty(-\varepsilon_{m,n},\varepsilon_{m,n})\subseteq B_m$ about $\mathbf0$. Then $\{P_m\}$ would also be a local basis. But the box-open neighborhood $W=\prod_{n=1}^\infty(-\varepsilon_{n,n}/2,\varepsilon_{n,n}/2)$ contains no $P_m$, a contradiction.
 :::
 
 ::: pf-step
