@@ -18,8 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the field extension $\QQ\subseteq\QQ\left(
-\sqrt{2+\sqrt2}\right)$ is Galois and determine its Galois group.
+Show that the field extension $\QQ\subset\QQ[\sqrt{2+\sqrt{2}}]$ is Galois and determine its Galois group.
 :::
 
 ::: {.solution}

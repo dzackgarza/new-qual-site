@@ -16,12 +16,14 @@ source:
   institution: uw
   area: algebra
   problems:
-  - P-6P6KI
-  - P-CASNS
-  - P-CC3DW
-  - P-MBHKT
-  - P-NN3CO
   - P-ALGS08A
+  - P-MBHKT
+  - P-CASNS
+  - P-NN3CO
+  - P-CC3DW
+  - P-Q73UJ
+  - P-6P6KI
+  - P-AUD1Q
   date:
     kind: year
     year: 2018

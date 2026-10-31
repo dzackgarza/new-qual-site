@@ -19,7 +19,7 @@ audit:
 
 ::: {.problem}
 Let $\alpha,\beta$ denote the unique positive real $5^{\text{th}}$ root of 7 and $4^{\text{th}}$ root of 5, respectively.
-Determine the degree of $\QQ(\alpha,\beta)$ over $\QQ$.
+Determine the degree of $\QQ[\alpha,\beta]$ over $\QQ$.
 :::
 
 ::: {.solution}
@@ -32,8 +32,10 @@ We have $\alpha = 7^{1/5}$ and $\beta = 5^{1/4}$.
 2. Similarly, consider $g(x) = x^4 - 5 \in \QQ[x]$.
    By Eisenstein's criterion at the prime $p = 5$, $g(x)$ is irreducible over $\QQ$, so $[\QQ(\beta) : \QQ] = 4$.
 
-3. Since $\gcd([\QQ(\alpha) : \QQ], [\QQ(\beta) : \QQ]) = \gcd(5, 4) = 1$, and both extensions are subfields of $\QQ(\alpha, \beta)$, the degree of the compositum satisfies:
+3. By the tower law, $[\QQ(\alpha,\beta):\QQ]$ is divisible by $[\QQ(\alpha):\QQ]=5$ and by $[\QQ(\beta):\QQ]=4$, hence by $\operatorname{lcm}(5,4)=20$.
+On the other hand, $\beta$ is a root of $x^4-5\in\QQ(\alpha)[x]$, so $[\QQ(\alpha,\beta):\QQ(\alpha)]\le 4$ and $[\QQ(\alpha,\beta):\QQ]\le 5\cdot4=20$.
+Therefore
 $$
-[\QQ(\alpha, \beta) : \QQ] = [\QQ(\alpha) : \QQ] \cdot [\QQ(\beta) : \QQ] = 5 \cdot 4 = 20.
+[\QQ(\alpha, \beta) : \QQ] = 20.
 $$
 :::

@@ -42,16 +42,22 @@ By Sylow's theorem:
 
 - If $\theta(y)$ is inversion ($y x y^{-1} = x^{-1}$): $G \cong D_{18}$ (the dihedral group of order 18).
 
-**Case 2: $P \cong \ZZ_3 \times \ZZ_3$.** Here $\Aut(\ZZ_3 \times \ZZ_3) \cong \GL_2(\FF_3)$.
-Up to conjugacy in $\GL_2(\FF_3)$, there are two elements of order 2:
+**Case 2: $P \cong \ZZ_3 \times \ZZ_3$.** Here $\Aut(\ZZ_3 \times \ZZ_3) \cong \GL_2(\FF_3)$, and $\theta(y)$ is an element $A$ with $A^2 = I$.
+Such an $A$ is diagonalizable over $\FF_3$ with eigenvalues in $\{1,-1\}$ (its minimal polynomial divides $t^2-1=(t-1)(t+1)$, which has distinct roots), so up to conjugacy in $\GL_2(\FF_3)$ there are three choices.
+Conjugate choices of $\theta(y)$ give isomorphic semidirect products.
 
-1. Trivial map: $G \cong \ZZ_3 \times \ZZ_3 \times \ZZ_2 \cong \ZZ_3 \times \ZZ_6$.
+1. $A = I$: $G \cong \ZZ_3 \times \ZZ_3 \times \ZZ_2 \cong \ZZ_3 \times \ZZ_6$.
 
-2. Inversion on both coordinates (scalar $-I = \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix}$): $y v y^{-1} = -v$ for all $v \in P$.
-   This gives $G \cong (\ZZ_3 \times \ZZ_3) \rtimes \ZZ_2$, which is isomorphic to the generalized dihedral group $D_9 \times \ZZ_3$ or $(\ZZ_3 \times \ZZ_3) \rtimes_{-1} \ZZ_2$.
+2. $A = -I$: $y v y^{-1} = -v$ for all $v \in P$.
+This gives the generalized dihedral group $G \cong (\ZZ_3 \times \ZZ_3) \rtimes_{-1} \ZZ_2$.
 
-3. Reflection (e.g. $\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$): $y$ inverts one $\ZZ_3$ factor and centralizes the other.
-   This gives $G \cong (\ZZ_3 \rtimes_{-1} \ZZ_2) \times \ZZ_3 \cong S_3 \times \ZZ_3$.
+3. $A = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$: $y$ centralizes one $\ZZ_3$ factor and inverts the other.
+This gives $G \cong \ZZ_3 \times (\ZZ_3 \rtimes_{-1} \ZZ_2) \cong \ZZ_3 \times S_3$.
+
+**The five groups are pairwise nonisomorphic.**
+$\ZZ_{18}$ and $\ZZ_3 \times \ZZ_6$ are the abelian ones, and they differ because only $\ZZ_{18}$ is cyclic.
+Among the three nonabelian groups, the Sylow 3-subgroup is $\ZZ_9$ only for $D_{18}$.
+The centre of $\ZZ_3 \times S_3$ is $\ZZ_3 \times 1$, which is nontrivial, whereas $(\ZZ_3 \times \ZZ_3) \rtimes_{-1} \ZZ_2$ has trivial centre: an element $vy$ with $v \in P$ does not commute with any $w \in P$ with $w \ne -w$, that is $w \ne 0$, and a nonzero $v \in P$ does not commute with $y$.
 
 Thus, up to isomorphism, there are **5 groups of order 18**:
 
@@ -61,7 +67,7 @@ Thus, up to isomorphism, there are **5 groups of order 18**:
 
 3. $D_{18}$
 
-4. $S_3 \times \ZZ_3$
+4. $\ZZ_3 \times S_3$
 
 5. $(\ZZ_3 \times \ZZ_3) \rtimes_{-1} \ZZ_2$
 :::

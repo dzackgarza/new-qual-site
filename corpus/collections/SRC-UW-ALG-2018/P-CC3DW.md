@@ -32,9 +32,9 @@ M \sim C(p_1) \oplus C(p_2) \oplus \cdots \oplus C(p_k),
 $$
 where each $C(p_i)$ is the companion matrix of a monic polynomial $p_i(x) = x^d + a_{d-1}x^{d-1} + \cdots + a_1 x + a_0 \in K[x]$.
 
-2. Since transposition distributes over direct sums and preserves similarity:
+2. Write $N=C(p_1)\oplus\cdots\oplus C(p_k)$. If $M=SNS^{-1}$ then $M^T=(S^T)^{-1}N^TS^T$, and the transpose of a block-diagonal matrix is the block-diagonal matrix of the transposed blocks, so
 $$
-M \sim M^T \iff C(p_i) \sim C(p_i)^T \text{ for each } i=1, \ldots, k.
+M^T \sim C(p_1)^T \oplus C(p_2)^T \oplus \cdots \oplus C(p_k)^T.
 $$
 Thus, it suffices to prove that any companion matrix $C = C(p)$ is similar to its transpose $C^T$.
 
@@ -48,7 +48,7 @@ C = \begin{pmatrix}
 0 & 0 & \cdots & 1 & -a_{d-1}
 \end{pmatrix}.
 $$
-The characteristic and minimal polynomials of both $C$ and $C^T$ are equal to $p(x)$.
+The characteristic and minimal polynomials of $C$ are equal to $p(x)$. For every $q\in K[x]$ we have $q(C^T)=q(C)^T$, so $q(C^T)=0$ if and only if $q(C)=0$; hence $C^T$ also has minimal polynomial $p(x)$.
 Since $C^T$ has minimal polynomial $p(x)$ of degree equal to the dimension $d$, $C^T$ is also cyclic, and its single invariant factor is $p(x)$.
 
 4. By the uniqueness of the Rational Canonical Form, any two matrices over $K$ with the same invariant factors are similar over $K$.
