@@ -29,3 +29,58 @@ $$
 ::: {.hint}
 $\Delta$ and $\eta^{24}$ satisfy the same transformation laws under $\tau\mapsto\tau+1$ and $\tau\mapsto-1/\tau$. Use the fundamental domain of Chapter 10, Problem 2 and compare behavior at the cusp at infinity.
 :::
+
+::: {.solution}
+Put $q=e^{2\pi i\tau}$, so $q\to0$ as $\operatorname{Im}\tau\to\infty$.
+
+::: pf
+
+::: {.pf-step #weight-twelve}
+Both $\Delta$ and $\eta^{24}$ are holomorphic on $\halfplane$ and transform with weight $12$ under $\tau\mapsto\tau+1$ and $\tau\mapsto-1/\tau$.
+
+::: pf-proof
+Chapter 9, Theorem 2.1 gives $E_j(\tau+1)=E_j(\tau)$ and $E_j(-1/\tau)=\tau^jE_j(\tau)$ for $j=4,6$. Thus $g_2^3$ and $g_3^2$, and hence $\Delta$, are periodic and acquire the factor $\tau^{12}$ under inversion. The product definition gives $\eta(\tau+1)=e^{\pi i/12}\eta(\tau)$; Chapter 10, Proposition 1.9 gives $\eta(-1/\tau)=\sqrt{\tau/i}\,\eta(\tau)$. Taking twenty-fourth powers gives the same two laws for $\eta^{24}$, since $e^{2\pi i}=1$ and $i^{-12}=1$.
+:::
+
+:::
+
+::: {.pf-step #cusp}
+$\Delta(\tau)=(2\pi)^{12}q+O(q^2)$ and $\eta(\tau)^{24}=q+O(q^2)$ as $q\to0$.
+
+::: pf-proof
+Chapter 9, Theorem 2.5 and $\zeta(4)=\pi^4/90$, $\zeta(6)=\pi^6/945$ give
+$$
+g_2=\frac{4\pi^4}{3}(1+240q+O(q^2)),\qquad
+g_3=\frac{8\pi^6}{27}(1-504q+O(q^2)).
+$$
+Their constant terms cancel in $g_2^3-27g_3^2$, and its coefficient of $q$ is
+$$
+\frac{64\pi^{12}}{27}\bigl(3\cdot240+2\cdot504\bigr)
+=4096\pi^{12}=(2\pi)^{12}.
+$$
+The product $\eta(\tau)^{24}=q\prod_{n\ge1}(1-q^n)^{24}$ gives the second expansion.
+:::
+
+:::
+
+::: {.pf-step #invariant}
+The function $F=\Delta/((2\pi)^{12}\eta^{24})$ is holomorphic, bounded, and invariant under the modular group on $\halfplane$.
+
+::: pf-proof
+The product for $\eta$ converges to a nonzero value for $\abs{q}<1$, so $F$ is holomorphic. Step [](#weight-twelve){.pf-ref} makes $F$ invariant under translation and inversion; these generate the modular group by Chapter 10, Problem 2. Step [](#cusp){.pf-ref} gives $F(\tau)\to1$ as $\operatorname{Im}\tau\to\infty$, uniformly for $\abs{\operatorname{Re}\tau}\le\frac12$. The standard fundamental domain $\abs{\operatorname{Re}\tau}\le\frac12$, $\abs{\tau}\ge1$ has a compact part below every fixed height. Continuity bounds $F$ there; the cusp limit bounds it above that height. Invariance then bounds $F$ on all of $\halfplane$.
+:::
+
+:::
+
+::: pf-step
+Q.E.D. $\Delta=(2\pi)^{12}\eta^{24}$ on $\halfplane$.
+
+::: pf-proof
+The group $G$ of Chapter 10, Theorem 3.4 is a subgroup of the modular group. Thus step [](#invariant){.pf-ref} satisfies that theorem's boundedness and invariance hypotheses, so $F$ is constant. Its limit in step [](#cusp){.pf-ref} is $1$, so $F=1$.
+:::
+
+:::
+
+:::
+
+:::
