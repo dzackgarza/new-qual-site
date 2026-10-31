@@ -31,97 +31,30 @@ Show the inclusion $S^{n-1} - S \hookrightarrow D^n - D$ induces an isomorphism 
 :::
 
 ::: {.solution}
-Let
+If $k=0<n$, then $D$ is one interior point of $D^n$, and radial projection from that point retracts $D^n\setminus D$ onto $S^{n-1}$. Hence the inclusion induces an isomorphism.
+
+Now suppose $0<k<n$ and put $d=n-k-1\ge0$. Write
 $$
-i:S^{n-1}-S\longrightarrow D^n-D
+A=S^{n-1}\setminus S,\qquad B=D^n\setminus D.
 $$
-be the inclusion. We prove that $i_*$ is an isomorphism in every degree by the doubling construction in the hint.
-
-::: pf
-
-::: pf-step
-
-Glue two copies $(D^n_+,D_+)$ and $(D^n_-,D_-)$ of $(D^n,D)$ to the two ends of
+Glue two copies of $(D^n,D)$ to the ends of $(S^{n-1}\times I,S\times I)$. Their ambient union is $S^n$, and the two copies of $D^k$, joined by $S^{k-1}\times I$, form an embedded $S^k$. Let $W$ be its complement. Enlarging the two copies of $B$ slightly into the cylinder gives an open cover of $W$. Its intersection retracts onto $A$, and both inclusion maps from $A$ to the two copies of $B$ induce the map $i_*$ in the statement. Reduced Mayer--Vietoris therefore contains
 $$
-(S^{n-1}\times I,S\times I).
+\cdots\longrightarrow\widetilde H_j(A)
+\xrightarrow{(i_*,-i_*)}\widetilde H_j(B)^2
+\longrightarrow\widetilde H_j(W)
+\longrightarrow\widetilde H_{j-1}(A)\longrightarrow\cdots.
 $$
-The resulting pair is homeomorphic to
+Alexander duality for the embedded spheres $S\subset S^{n-1}$ and $S^k\subset S^n$ gives
 $$
-(S^n,S^k).
+\widetilde H_j(A)\cong\widetilde H_j(W)\cong
+\begin{cases}\ZZ,&j=d,\\0,&j\ne d.\end{cases}
 $$
-
-::: pf-proof
-
-The two $n$-disks together with the boundary cylinder form $S^n$. The two copies of $D^k$, joined along their common boundary by $S^{k-1}\times I$, form the double of $D^k$, hence $S^k$.
-
-:::
-
-:::
-
-::: pf-step
-
-Taking complements gives a decomposition of $S^n-S^k$ into two open sets $U_+$ and $U_-$ such that
+Thus $\widetilde H_j(B)=0$ for $j\ne d$. In degree $d$, the adjacent groups vanish, so the sequence reduces to
 $$
-U_\pm\simeq D^n-D,
-\qquad
-U_+\cap U_-\simeq S^{n-1}-S,
+0\longrightarrow\ZZ\xrightarrow{(i_*,-i_*)}
+\widetilde H_d(B)^2\longrightarrow\ZZ\longrightarrow0.
 $$
-and the two maps from the intersection to the two pieces induce the same map on homology, namely $i_*$ after these identifications.
+The middle group is free of rank two because this sequence splits as a sequence of abelian groups. Hence $\widetilde H_d(B)\cong\ZZ$. After choosing orientations, $i_*$ is multiplication by a positive integer $m$. The cokernel of the diagonal map $(m,-m):\ZZ\to\ZZ^2$ is $\ZZ\oplus\ZZ_m$, while the displayed exact sequence says it is $\ZZ$. Therefore $m=1$, and $i_*$ is an isomorphism. The reduced result gives the ordinary $H_0$ result as well, since both spaces are nonempty.
 
-::: pf-proof
-
-Thicken each disk half slightly into the connecting cylinder. Each thickened half deformation retracts onto its copy of $D^n-D$, while their overlap deformation retracts onto $(S^{n-1}-S)\times\{1/2\}$. Reflection interchanging the two halves identifies the two inclusion maps.
-
-:::
-
-:::
-
-::: pf-step
-
-The Mayer--Vietoris sequence for this decomposition has the segment
-$$
-\cdots\to H_j(S^{n-1}-S)
-\xrightarrow{(i_*,-i_*)}
-H_j(D^n-D)\oplus H_j(D^n-D)
-\to H_j(S^n-S^k)\to\cdots .
-$$
-Moreover, Alexander duality gives
-$$
-\widetilde H_j(S^n-S^k)\cong
-\begin{cases}
-\ZZ,&j=n-k-1,\\
-0,&\text{otherwise}.
-\end{cases}
-$$
-
-::: pf-proof
-
-The Mayer--Vietoris map has the usual sign convention. The displayed complement homology is Alexander duality for the embedded sphere $S^k\subset S^n$.
-
-:::
-
-:::
-
-::: pf-step
-
-Exactness forces
-$$
-\boxed{i_*:H_j(S^{n-1}-S)\xrightarrow{\cong}H_j(D^n-D)}
-$$
-for every $j$.
-
-::: pf-proof
-
-Apply the Mayer--Vietoris sequence simultaneously in degrees $j$ and $j+1$. The doubled sphere complement has reduced homology in only the single degree $n-k-1$. In all other degrees exactness immediately makes the diagonal map $(i_*,-i_*)$ identify the first group with the kernel of the difference map and hence makes $i_*$ an isomorphism. In the exceptional degree and the adjacent degree, the same conclusion follows from exactness together with the fact that the connecting morphism supplies the unique $\ZZ$ class of the sphere complement. Equivalently, this is the standard Mayer--Vietoris proof of the relative Alexander duality statement for a properly embedded disk pair; its relative group
-$$
-H_j(D^n-D,S^{n-1}-S)
-$$
-vanishes in every degree. Vanishing of these relative groups is exactly the assertion that $i_*$ is an isomorphism for all $j$.
-
-:::
-
-:::
-
-:::
-
+If $k=n$, then $S=S^{n-1}$ and $A$ is empty. The embedded $D^n$ has its boundary on $\partial D^n$. Invariance of domain makes its interior image open in $\operatorname{int}D^n$; it is also closed there, since the image of the whole disk is compact and its boundary image lies on $\partial D^n$. Hence $D=D^n$, so $B$ is empty too.
 :::
