@@ -129,3 +129,8 @@ Hence the minimal polynomial has degree $4$, so the displayed monic quartic that
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The same extension also appears as: prove $\QQ(\sqrt2+\sqrt3)=\QQ(\sqrt2-\sqrt3)=\QQ(\sqrt2,\sqrt3)$ and that it has degree $4$ over $\QQ$.
+Since $(\sqrt3+\sqrt2)(\sqrt3-\sqrt2)=1$, the element $\sqrt2-\sqrt3=-\alpha^{-1}$ generates the same field as $\alpha$; the rest is steps [](#k-degree-four){.pf-ref} and [](#k-eq-q-alpha){.pf-ref}.
+:::

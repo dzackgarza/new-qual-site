@@ -105,7 +105,6 @@ source:
   - id: E-AMD-V76MBREM
   - id: E-AMD-WKWEEJIZ
   - id: E-AMD-WW2OH6F2
-  - id: E-AMD-X26OEAAA
   - id: E-AMD-XFC4PD2E
   - id: E-AMD-XG4QLJKL
   - id: E-AMD-Y3DIXRGP
