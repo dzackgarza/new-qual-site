@@ -22,121 +22,17 @@ Show that Proposition 4G.2 and its corollary hold also for CW complexes and cove
 :::
 
 ::: {.solution}
+Let $X=\bigcup_{i\in I}X_i$ be a CW complex covered by subcomplexes. For each nonempty finite set $\sigma\subset I$, put $X_\sigma=\bigcap_{i\in\sigma}X_i$. Every $X_\sigma$ is again a subcomplex. Form the realization $\Delta X_{\mathcal U}$ of this diagram of intersections, and let
+$$
+p:\Delta X_{\mathcal U}\longrightarrow X
+$$
+be the map that forgets the simplex coordinate.
 
-::: pf
+The map $p$ is a homotopy equivalence. To see this, build $X$ by its cells. The interior of each cell belongs to exactly the subcomplexes that contain that cell. Over the cell, the realization adds a simplex of choices of these subcomplexes; this simplex is contractible. Along the boundary, the choices can only increase, and the attaching maps are inclusions of subcomplexes. The homotopy gluing lemma therefore proves by cellular induction that $p$ is a homotopy equivalence. Equivalently, the realization of this diagram of subcomplex inclusions computes their union because all the inclusions are cofibrations. This is the subcomplex-cover version of Proposition 4G.2.
 
-::: {.pf-step #s1}
-
-Proposition 4G.2 (the nerve lemma) states: if $X$ is covered by a family of open sets $\{U_\alpha\}$ such that every nonempty finite intersection $U_{\alpha_1} \cap \cdots \cap U_{\alpha_k}$ is contractible, then $X$ is homotopy equivalent to the nerve $N$ of the cover.
-
-::: pf-proof
-
-statement of the proposition.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-The same conclusion holds when $X$ is a CW complex covered by subcomplexes $\{X_\alpha\}$ with every nonempty finite intersection contractible.
-
-::: pf-proof
-
-::: pf-step
-
-Each subcomplex $X_\alpha$ has an open neighborhood $U_\alpha$ that deformation retracts onto $X_\alpha$.
-
-::: pf-proof
-
-a subcomplex of a CW complex has a regular neighborhood that deformation retracts onto it.
-
-:::
-
-:::
-
-::: {.pf-step #s2-2}
-
-The open sets $U_\alpha$ form an open cover of $X$, and every nonempty finite intersection $U_{\alpha_1} \cap \cdots \cap U_{\alpha_k}$ deformation retracts onto $X_{\alpha_1} \cap \cdots \cap X_{\alpha_k}$, which is contractible.
-
-::: pf-proof
-
-the regular neighborhoods can be chosen so that intersections of neighborhoods retract onto intersections of subcomplexes.
-
-:::
-
-:::
-
-::: {.pf-step #s2-3}
-
-Hence every nonempty finite intersection of the $U_\alpha$ is contractible.
-
-::: pf-proof
-
-Step [](#s2-2){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-step
-
-By the nerve lemma (step [](#s1){.pf-ref}), $X$ is homotopy equivalent to the nerve of the cover $\{U_\alpha\}$.
-
-::: pf-proof
-
-Step [](#s2-3){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-step
-
-The nerve of $\{U_\alpha\}$ equals the nerve of $\{X_\alpha\}$ (the same intersection pattern).
-
-::: pf-proof
-
-$U_{\alpha_1} \cap \cdots \cap U_{\alpha_k} \neq \varnothing$ iff $X_{\alpha_1} \cap \cdots \cap X_{\alpha_k} \neq \varnothing$.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Hence $X$ is homotopy equivalent to the nerve of the subcomplex cover $\{X_\alpha\}$.
-
-::: pf-proof
-
-Step [](#s2){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-The corollary (that a CW complex covered by contractible subcomplexes with contractible intersections is homotopy equivalent to the nerve) follows immediately.
-
-::: pf-proof
-
-Step [](#s3){.pf-ref} is exactly the corollary's statement.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
-
-:::
-
-:::
-
+If every nonempty $X_\sigma$ is contractible, the maps $X_\sigma\to *$ are homotopy equivalences. Proposition 4G.1 then gives a homotopy equivalence from $\Delta X_{\mathcal U}$ to the realization of the diagram of points, which is the nerve of the cover up to barycentric subdivision. Combining this with $p$ gives
+$$
+X\simeq N(\mathcal U),
+$$
+the stated corollary.
 :::
