@@ -21,11 +21,11 @@ Prove that if $X$ is an ordered set in which every closed interval is compact, t
 ::: {.solution}
 Let $A\subset X$ be nonempty and bounded above. Choose $a_0\in A$ and an upper bound $b$ of $A$. For each $a\in A$, consider the closed subset
 $$
-F_a=[a,b]\subset[a_0,b].
+F_a=[a,b]\cap[a_0,b]=[\max\{a,a_0\},b]\subseteq[a_0,b].
 $$
 The family $\{F_a:a\in A\}$ has the finite intersection property: for finitely many $a_1,\dots,a_n\in A$, one of them is largest, say $a_j$, and then
 $$
-F_{a_1}\cap\cdots\cap F_{a_n}=[a_j,b]\ne\varnothing.
+F_{a_1}\cap\cdots\cap F_{a_n}=[\max\{a_0,a_j\},b]\ne\varnothing.
 $$
 Since the closed interval $[a_0,b]$ is compact by hypothesis,
 $$
