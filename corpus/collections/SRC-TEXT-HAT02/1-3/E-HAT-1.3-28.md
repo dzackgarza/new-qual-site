@@ -35,21 +35,18 @@ Let
 $$
 q:Y\to Y/G
 $$
-be the orbit map.
+be the orbit map, and choose $y_0\in Y$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-The map $q$ is a covering map with deck transformation group $G$.
+The map $q$ is a covering map, and its action on the fiber over $q(y_0)$ identifies that fiber with $G$.
 
 ::: pf-proof
 
-This is exactly the definition and basic property of a covering space action: the translates of a suitable neighborhood are pairwise disjoint and map homeomorphically to one neighborhood in the quotient.
-Since $Y$ is path connected, every deck transformation of $q$ is determined by the image of one point, and Proposition 1.40 gives
-$$
-\operatorname{Deck}(Y/(Y/G))\cong G.
-$$
+The covering space action supplies pairwise disjoint translates of an open neighborhood of each point; the quotient map sends each translate homeomorphically onto the same open subset of $Y/G$.
+The fiber over $q(y_0)$ is $\{gy_0:g\in G\}$, and the action is free, so $g\mapsto gy_0$ is a bijection.
 
 :::
 
@@ -57,11 +54,16 @@ $$
 
 ::: pf-step
 
-Since $Y$ is simply connected, $q$ is the universal covering map of $Y/G$.
+Lifting loops at $q(y_0)$ from $y_0$ defines a homomorphism
+$$
+\Phi:\pi_1(Y/G,q(y_0))\longrightarrow G,
+$$
+where the lift of a loop representing $[\alpha]$ ends at $\Phi([\alpha])y_0$.
 
 ::: pf-proof
 
-A simply connected covering space is universal.
+Homotopic based loops have lifts with the same endpoint, so $\Phi$ is well defined.
+If the lifts of $\alpha$ and $\beta$ end at $gy_0$ and $hy_0$, respectively, then the lift of their concatenation first follows the lift of $\alpha$ and then the $g$-translate of the lift of $\beta$. It ends at $ghy_0$, so $\Phi([\alpha][\beta])=gh$.
 
 :::
 
@@ -69,15 +71,15 @@ A simply connected covering space is universal.
 
 ::: pf-step
 
-Therefore
+The homomorphism $\Phi$ is bijective. Therefore
 $$
 \boxed{\pi_1(Y/G)\cong G.}
 $$
 
 ::: pf-proof
 
-For a universal cover, the deck transformation group is canonically isomorphic to the fundamental group of the base, after choosing a basepoint in the fiber.
-Combining this with step [](#s1){.pf-ref} gives the displayed isomorphism.
+For each $g\in G$, path connectedness of $Y$ gives a path from $y_0$ to $gy_0$. Its projection is a loop whose class maps to $g$, so $\Phi$ is surjective.
+If $\Phi([\alpha])=e$, the lift of $\alpha$ at $y_0$ is a loop. Since $Y$ is simply connected, this lifted loop is nullhomotopic. Its projection is a nullhomotopy of $\alpha$, so $[\alpha]=e$ and $\Phi$ is injective.
 
 :::
 
