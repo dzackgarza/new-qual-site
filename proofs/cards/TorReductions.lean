@@ -193,6 +193,24 @@ theorem mem_of_p_smul_mem_of_pPrimary {B : Type*} [AddCommGroup B] {p : ℤ}
   obtain ⟨k, hk⟩ := (hP (p • x)).mp hx
   exact (hP x).mpr ⟨k + 1, by rw [pow_succ, ← smul_smul]; exact hk⟩
 
+/-! ## Additivity: attempted, not proved
+
+Hatcher, Proposition 3A.5(2) at the presentation level would be the statement that the
+presentation of a direct sum is the direct sum of the presentations, so that the
+presentation-level `Tor` of `f₁ ⊕ f₂` is `Tor f₁ × Tor f₂`. The tools are present —
+`TensorProduct.prodLeft` for the distributivity isomorphism, `TensorProduct.prodLeft_tmul`
+for its value on pure tensors, `LinearMap.ker_prodMap` for the kernel of a product map — and
+the two necessary computations are
+
+`prodLeft_F ∘ ((f₁ ⊕ f₂) ⊗ id_B) = ((f₁ ⊗ id_B) ⊕ (f₂ ⊗ id_B)) ∘ prodLeft_{K}`
+
+followed by the transfer of the kernel. The first of these is where this file stops: after
+`LinearMap.comp_apply` the goal contains the coerced application `↑(TensorProduct.prodLeft …)`
+while `TensorProduct.prodLeft_tmul` is stated for the uncoerced one, and neither
+`LinearEquiv.coe_coe`, `LinearEquiv.coe_toLinearMap` nor `change` rewrites between them in
+this Mathlib, so the rewrite does not fire. Additivity is therefore **not** certified here,
+and it is listed as an outstanding obligation in `proofs/README.md` rather than asserted. -/
+
 end TorReductions
 
 #print axioms TorReductions.torKernel_eq_bot_of_subsingleton
