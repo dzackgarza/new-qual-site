@@ -41,7 +41,7 @@ $$
 ,$$
 cf. (II, 8.13), and conclude that the \dfn{relative canonical sheaf} $\omega_{X/Y} = \wedge^n \Omega_{X/Y}$ is isomorphic to $(\pi^* \wedge^{n+1} \mce)(-n-1)$. Show furthermore that there is a natural isomorphism $R^n \pi_*(\omega_{X/Y}) \cong \mco_Y$ (cf. (7.1.1)).
 
-(c) Now show, for any $l \in \ZZ$, that $$ R^n \pi_*(\mco(l)) \cong \pi_*\dualof{(\mco(-l-n-1))} \tensor \dualof{(\wedge^{n+1} \mce)}
+(c) Now show, for any $l \in \ZZ$, that $$ R^n \pi_*(\mco(l)) \cong \dualof{(\pi_*\mco(-l-n-1))} \tensor \dualof{(\wedge^{n+1} \mce)}
 .$$
 
 (d) Assume additionally that $Y$ is a nonsingular projective variety over an algebraically closed field $k$.
