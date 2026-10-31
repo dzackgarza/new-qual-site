@@ -49,7 +49,7 @@ Prove the following "laws of algebra" for $\RR$, using only axioms (1)-(5):
 
 (k) x/1 = x.
 
-(1) $x \neq 0$ and $y \neq 0 \Rightarrow xy \neq 0$ .
+(l) $x \neq 0$ and $y \neq 0 \Rightarrow xy \neq 0$ .
 
 (m) $(1 / y)(1 / z) = 1 / (yz)$ if $y, z \neq 0$ .
 
