@@ -94,8 +94,8 @@ Part (b): Scheme $abc, cba, def, dfe^{-1}$.
 ::: pf-step
 
 **Component $X_1 = T_1 \cup T_2$:**
-        - $T_1$ has boundary word $abc$ and $T_2$ has boundary word $cba = (abc)^{-1}$.
-        - Identifying the three boundary edges of $T_1$ with the oppositely oriented boundary edges of $T_2$ glues two closed 2-disks along their boundary circles via an orientation-reversing homeomorphism, yielding the 2-sphere $S^2$.
+        - $T_1$ has boundary labels in the cyclic order $a,b,c$, while $T_2$ has them in the reverse cyclic order $c,b,a$.
+        - Identifying matching edges glues the two closed 2-disks along their entire boundary circles, yielding the 2-sphere $S^2$.
 
 :::
 
