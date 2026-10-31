@@ -24,11 +24,15 @@ from qualc.pandoc_batch import PandocServer
 
 REPO = Path(__file__).resolve().parent.parent
 
-SOLUTION_OPEN = re.compile(r"^:{3,}\s*(?:solution|\{[^}\n]*\.solution(?:\s+[^}]*)?\})\s*$", re.M)
+SOLUTION_OPEN = re.compile(
+    r"^:{3,}\s*(?:solution|\{[^}\n]*\.solution(?:\s+[^}]*)?\})\s*$", re.M
+)
 CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
 
 
-def queue_entry_from_text(text: str, path: Path, card_paths: dict[str, Path]) -> tuple[str, str] | None:
+def queue_entry_from_text(
+    text: str, path: Path, card_paths: dict[str, Path]
+) -> tuple[str, str] | None:
     """Return one unsolved queue entry from a card's text, without starting Pandoc."""
     meta, body = split_front_matter(text, path)
     card = CARD_ADAPTER.validate_python(meta)
@@ -69,6 +73,8 @@ def incremental_from_range(root: Path, base: str) -> str:
         path = Path(name.decode("utf-8"))
         if kind == b"blob" and path.suffix == ".md":
             cards.append((object_id, path))
+    if not cards:
+        raise FileNotFoundError("committed corpus has no card files")
     snapshot = subprocess.run(
         ["git", "cat-file", "--batch"],
         input=b"".join(object_id + b"\n" for object_id, _path in cards),
@@ -81,7 +87,12 @@ def incremental_from_range(root: Path, base: str) -> str:
     blobs = io.BytesIO(snapshot.stdout)
     for object_id, path in cards:
         actual_id, kind, size = blobs.readline().split()
-        assert (actual_id, kind) == (object_id, b"blob"), ("Unexpected Git blob response", path, actual_id, kind)
+        assert (actual_id, kind) == (object_id, b"blob"), (
+            "Unexpected Git blob response",
+            path,
+            actual_id,
+            kind,
+        )
         text = blobs.read(int(size)).decode("utf-8")
         assert blobs.read(1) == b"\n", ("Missing Git blob separator", path)
         entry = queue_entry_from_text(text, path, card_paths)
@@ -96,7 +107,12 @@ def unsolved(parsed: list[ParsedCard]) -> list[ParsedCard]:
     Solved means the card carries its own solution section. Solutions are not
     standalone cards, so there is no second relation-based solved state.
     """
-    return [item for item in parsed if item.card.kind == "problem" and not any(kind == "solution" for kind, _text in item.sections)]
+    return [
+        item
+        for item in parsed
+        if item.card.kind == "problem"
+        and not any(kind == "solution" for kind, _text in item.sections)
+    ]
 
 
 def render_entries(entries: list[tuple[str, str]] | ItemsView[str, str]) -> str:
@@ -136,22 +152,34 @@ def load_cards(root: Path) -> list[ParsedCard]:
     with PandocServer() as pandoc:
         parsed, errors = parse_cards_with(pandoc, discover(root / "corpus"))
     if not errors:
-        errors = index.validate(parsed, index.load_vocabularies(root / "vocabularies", root / "wiki"))
+        errors = index.validate(
+            parsed, index.load_vocabularies(root / "vocabularies", root / "wiki")
+        )
     if errors:
-        raise SystemExit(f"corpus does not validate: {len(errors)} error(s); first: {errors[0]}")
+        raise SystemExit(
+            f"corpus does not validate: {len(errors)} error(s); first: {errors[0]}"
+        )
     return parsed
 
 
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=REPO)
-    parser.add_argument("--incremental-range", metavar="BASE", help="when corpus changes since BASE are pushed, rebuild from committed HEAD cards")
+    parser.add_argument(
+        "--incremental-range",
+        metavar="BASE",
+        help="when corpus changes since BASE are pushed, rebuild from committed HEAD cards",
+    )
     args = parser.parse_args(argv)
     root = args.root.resolve()
     out = root / "queues" / "C-unsolved-cards.md"
     out.parent.mkdir(parents=True, exist_ok=True)
 
-    rendered = incremental_from_range(root, args.incremental_range) if args.incremental_range else render(unsolved(load_cards(root)))
+    rendered = (
+        incremental_from_range(root, args.incremental_range)
+        if args.incremental_range
+        else render(unsolved(load_cards(root)))
+    )
     if out.exists() and out.read_text() == rendered:
         print(f"{out.relative_to(root)}: up to date")
         return
