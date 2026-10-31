@@ -7,6 +7,8 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from threading import Thread
 
+import pytest
+
 from qualc.provenance_hrefs import ALL, collection_provenance_hrefs, main, run
 
 
@@ -69,6 +71,11 @@ def _problem(path: Path, card_id: str, *, areas: list[str], kind: str = "problem
 def _findings(root: Path, name: str, *, timeout: float = 2.0) -> list[str]:
     [check] = run([name], root=root, timeout=timeout)
     return check.findings
+
+
+def test_missing_corpus_is_an_error(tmp_path: Path) -> None:
+    with pytest.raises(FileNotFoundError, match="corpus"):
+        run(["empty-provenance"], root=tmp_path)
 
 
 class _Handler(BaseHTTPRequestHandler):
