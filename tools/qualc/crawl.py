@@ -22,18 +22,35 @@ Run it after `just build`:
 from __future__ import annotations
 
 import argparse
-import json
 import pathlib
 import re
 import sys
 import urllib.parse
 from dataclasses import dataclass
-from typing import Any
+from typing import TypedDict
+
+from pydantic import TypeAdapter
 
 SITE = pathlib.Path(__file__).resolve().parents[2] / "build" / "quarto" / "_site"
 LINK = re.compile(r'(?:href|src)="([^"]+)"')
 OFF_SITE = ("http:", "https:", "mailto:", "data:", "#", "//", "${")
 DATA_URLS = ("problems.json", "sources.json", "collection-problems.json")
+
+
+class CatalogRow(TypedDict):
+    url: str
+
+
+class CatalogData(TypedDict):
+    rows: list[CatalogRow]
+
+
+class CollectionData(TypedDict):
+    items: list[CatalogRow]
+
+
+CATALOG_DATA = TypeAdapter(CatalogData)
+COLLECTION_DATA = TypeAdapter(dict[str, CollectionData])
 
 
 @dataclass(frozen=True)
@@ -65,17 +82,26 @@ def targets(page: pathlib.Path, site: pathlib.Path = SITE) -> list[pathlib.Path]
     return out
 
 
-def _json(path: pathlib.Path) -> Any:
-    return json.loads(path.read_text())
+def _catalog(path: pathlib.Path) -> CatalogData:
+    return CATALOG_DATA.validate_json(path.read_bytes())
 
 
-def browser_targets(site: pathlib.Path = SITE) -> dict[pathlib.Path, list[pathlib.Path]]:
+def browser_targets(
+    site: pathlib.Path = SITE,
+) -> dict[pathlib.Path, list[pathlib.Path]]:
     """Canonical URLs rendered by the JavaScript problem/source browsers."""
     out: dict[pathlib.Path, list[pathlib.Path]] = {}
-    for page_name, data_name in (("problems.html", "problems.json"), ("sources.html", "sources.json")):
+    for page_name, data_name in (
+        ("problems.html", "problems.json"),
+        ("sources.html", "sources.json"),
+    ):
         data_path = site / data_name
-        rows = _json(data_path)["rows"]
-        out[(site / page_name).resolve()] = [target for row in rows if (target := _target(row["url"], site, site)) is not None]
+        rows = _catalog(data_path)["rows"]
+        out[(site / page_name).resolve()] = [
+            target
+            for row in rows
+            if (target := _target(row["url"], site, site)) is not None
+        ]
     return out
 
 
@@ -84,11 +110,12 @@ def data_urls(site: pathlib.Path = SITE) -> list[tuple[str, pathlib.Path]]:
     out: list[tuple[str, pathlib.Path]] = []
     for name in DATA_URLS:
         path = site / name
-        data = _json(path)
         urls: list[str]
         if name == "collection-problems.json":
+            data = COLLECTION_DATA.validate_json(path.read_bytes())
             urls = [item["url"] for source in data.values() for item in source["items"]]
         else:
+            data = _catalog(path)
             urls = [row["url"] for row in data["rows"]]
         for raw in urls:
             target = _target(raw, site, site)
@@ -114,7 +141,9 @@ def crawl(site: pathlib.Path = SITE) -> CrawlResult:
                 broken.append(
                     (
                         str(page.relative_to(site)),
-                        str(target.relative_to(site)) if target.is_relative_to(site) else str(target),
+                        str(target.relative_to(site))
+                        if target.is_relative_to(site)
+                        else str(target),
                     )
                 )
 
@@ -124,11 +153,15 @@ def crawl(site: pathlib.Path = SITE) -> CrawlResult:
             broken.append(
                 (
                     source,
-                    str(target.relative_to(site)) if target.is_relative_to(site) else str(target),
+                    str(target.relative_to(site))
+                    if target.is_relative_to(site)
+                    else str(target),
                 )
             )
 
-    indexed = frozenset(page for page in pages if "data-pagefind-body" in page.read_text())
+    indexed = frozenset(
+        page for page in pages if "data-pagefind-body" in page.read_text()
+    )
     dynamic = browser_targets(site)
     seen: set[pathlib.Path] = set()
     queue = [(site / "index.html").resolve()]
@@ -174,7 +207,9 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     result = crawl()
-    print(f"{len(result.pages)} pages, {len(result.seen & result.pages)} reachable from the home page")
+    print(
+        f"{len(result.pages)} pages, {len(result.seen & result.pages)} reachable from the home page"
+    )
     for source, target_name in result.broken:
         print(f"  broken: {source} -> {target_name}")
     if not args.links_only:
