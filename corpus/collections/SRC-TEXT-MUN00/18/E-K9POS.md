@@ -28,7 +28,7 @@ If $x$ is a limit point of the subset $A$ of $X$, is it necessarily true that $f
 ::: pf
 
 ::: {.pf-step #counterexample}
-No: for the constant map $f\equiv0\colon\RR\to\RR$ and $A=\theset{1/n : n\in\NN}$, the point $0$ is a limit point of $A$, but $f(0)$ is not a limit point of $f(A)$.
+No: for the constant map $f\equiv0\colon\RR\to\RR$ and $A=\theset{1/n : n\in\ZZ_+}$, the point $0$ is a limit point of $A$, but $f(0)$ is not a limit point of $f(A)$.
 
 ::: pf-proof
 A constant map is continuous.
