@@ -16,11 +16,23 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 21; it matches the printed text. The printed bracketed question about $X=\ZZ\times\RR$ was missing and is restored.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: excision identifies $H^n(X^+,U_K;G)$ with $H^n(X,X-K;G)$, cone-shaped
+    neighbourhoods are cofinal, and on each of them the point $\infty$ is a homotopy equivalence,
+    so the limit is $H^n(X^+,\infty;G)$.
 ---
 
 ::: {.problem}
 For a space $X$, let $X^+$ be the one-point compactification.
 If the added point, denoted $\infty$, has a neighborhood in $X^+$ that is a cone with $\infty$ the cone point, show that the evident map $H_c^n(X; G) \to H^n(X^+, \infty; G)$ is an isomorphism for all $n$.
+[Question: Does this result hold when $X = \ZZ \times \RR$?]
 :::
 
 ::: {.solution}

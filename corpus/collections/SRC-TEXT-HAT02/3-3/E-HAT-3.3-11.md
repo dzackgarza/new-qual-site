@@ -16,6 +16,17 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 11; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both directions: a degree 1 map makes $f^*$ injective on $H^1$ because the pairing on
+    $M_h$ is nondegenerate and $f^*\mu_h=\mu_g\ne0$, giving $2h\le2g$; conversely the pinch map
+    collapsing one connected-summand of $M_g=M_h\#M_{g-h}$ has degree 1.
 ---
 
 ::: {.problem}

@@ -47,9 +47,9 @@ marked proposed. `E-HAT-1.A-8` is settled: `proofs/cards/SubgroupFiniteness.lean
 generating family has finitely many subgroups of a given nonzero index, with no `sorryAx`.
 
 `ad-text-hat02` is partly read, against the book itself
-(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §3.2; proofs are
-read for §1.1, §1.2, §1.A, §1.B-1..-4, §2.1-1..-17 and all of §2.2, §2.3, §3.1 and §3.2. Exact scope,
-with no section counted as read beyond it:
+(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §3.3; proofs are
+read for §1.1, §1.2, §1.A, §1.B-1..-4, §2.1-1..-17 and all of §2.2, §2.3, §3.1, §3.2 and §3.3. Exact
+scope, with no section counted as read beyond it:
 §1.1: 20 statements compared, the twelve solved proofs read line by line, `E-HAT-1.1-17` repaired.
 §1.2: 22 statements compared, all 22 proofs read line by line; `E-HAT-1.2-12`, `-14`, `-16` closing
 steps repaired, `E-HAT-1.2-22` restructured into one proof and its subcomplex framing corrected.
@@ -97,8 +97,18 @@ cellular differential, `-6`-`-8` by degree and restriction arguments, `-9` by th
 the rank of a finite sum and the vanishing of $H^k$ and $H^\\ell$ of $S^{k+\\ell}$, `-12`-`-14` by quoting the top cells
 $\\RP^{2k}/\\RP^{2k-1}$ and $\\CP^{2k}/\\CP^{2k-1}$, `-15` from the same ring descriptions, `-16` through
 $\\dim H^i(\\cdot;\\FF_p)=b_i+t_i+t_{i+1}$, and `-18` through the nondegenerate pairing on $H^1$.
+§3.3: all 35 statements compared with the printed exercises and all agree after nine restorations of printed hints or questions that had been
+dropped (`-6`, `-10`, `-12`, `-13`, `-21`, `-23`, `-24`, `-26`, `-27`); `-5` says "nonempty" and `-7` "$n>0$" where the print leaves
+both implicit, and `-34` writes $[M,\partial M]$ where the print abbreviates the same class as $[M]$. All 35 proofs are read:
+`-1` through `-5` by the orientation double cover and local orientation modules, `-6` by excision and the rational boundary count,
+`-7`-`-12` through the local-degree formula and the nondegenerate pairing on $H^1$, `-13` and `-29` by isotropy in the symplectic
+space $H^1(M_g;F)$, `-14` by applying `-12` after retracting the tail, `-15` via Lemma 3.27, `-16` on a simplex, `-17`-`-19` by
+exactness of filtered direct limits, `-20`-`-23` through compactly supported cohomology as a limit over compact sets, `-24` by
+duality plus $\\chi=0$, `-25` through the vanishing Ext term, `-26` by the connected-sum products, `-27` by the symplectic reduction,
+`-28` by $\\dim V^\\perp=n-k$, `-30`-`-35` through collar splittings, Lefschetz duality and the five lemma. `E-HAT-3.3-35` had a
+sentence broken mid-way ("The middle map is ... are isomorphisms"), which is repaired.
 Unread entirely: the proofs of §1.3 beyond the ten listed, of §1.B-5..-9 and of §2.1-6, -8, -10, -17,
--23..-25, -27..-29, and the proofs and statements of §3.3 and §4 onward.
+-23..-25, -27..-29, and the proofs and statements of §4 onward.
 
 ## Fast local checks and complete CI acceptance
 

@@ -23,6 +23,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 32; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument over $\ZZ_2$, where every manifold is orientable: a retraction makes $i_*$
+    injective on $H_{n-1}$, while exactness together with $\delta[M,\partial M]=[\partial M]\ne0$
+    makes $i_*[\partial M]=0$.
 ---
 
 ::: {.problem}

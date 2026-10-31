@@ -23,6 +23,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 15; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: a class in $H_n(M,M-A;R)$ gives a family of local classes over $A$, which is
+    a section of $M_R$; Lemma 3.27(a) provides a unique class with prescribed local classes on a
+    compact set, which gives surjectivity and injectivity. The proof is read at the level of that
+    lemma, which is where the content sits.
 ---
 
 ::: {.problem}

@@ -23,6 +23,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 35; it matches the printed text. The diagram is transcribed as printed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument and repaired one sentence: the four neighbouring vertical maps in Hatcher's
+    diagram are isomorphisms by the noncompact duality applied to the interior and to $\partial M$,
+    and the five lemma then makes the middle map $D_M$ an isomorphism. The stored text broke off
+    mid-sentence ("The middle map is ... are isomorphisms"), which is corrected.
 ---
 
 ::: {.problem}
@@ -70,11 +82,11 @@ and
 $$
 H_c^k(\partial M;R)\xrightarrow{\cong}H_{n-k-1}(\partial M;R).
 $$
-The same interior duality also gives $H_c^{k+1}(M,\partial M;R)\cong H_{n-k-1}(M;R)$. Thus the two vertical maps on each side of the middle map in the five-term segment are isomorphisms. The middle map is
+The same interior duality also gives $H_c^{k+1}(M,\partial M;R)\cong H_{n-k-1}(M;R)$. Thus, in the five-term segment displayed in the diagram, the four vertical maps other than the middle one are isomorphisms, the middle one being
 $$
-D_M:H_c^k(M;R)\longrightarrow H_{n-k}(M,\partial M;R)
+D_M:H_c^k(M;R)\longrightarrow H_{n-k}(M,\partial M;R).
 $$
-are isomorphisms. The five-lemma applied to the surrounding five terms implies that $D_M$ is also an isomorphism. Hence
+The five-lemma applied to this segment therefore makes $D_M$ an isomorphism as well. Hence
 $$
 \boxed{H_c^k(M;R)\cong H_{n-k}(M,\partial M;R)}
 $$

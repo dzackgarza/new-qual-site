@@ -23,6 +23,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 20; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: for compact $K$ the complement is nonempty, so restriction of locally
+    constant functions from a path-connected $X$ to $X-K$ is injective and the relative group
+    vanishes; the compactly supported group is the limit of these.
 ---
 
 ::: {.problem}

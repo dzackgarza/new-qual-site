@@ -23,6 +23,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 29; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: a retraction makes $r^*$ injective into an isotropic subspace of the
+    symplectic $H^1(M_g;F)$, so its dimension is at most $g$; Exercise 13 follows by retracting the
+    punctured $M_h$ onto its spine of $2h$ circles, and the wedges of $k$ circles are retracted by
+    collapsing the remaining loops, which kills the attaching word.
 ---
 
 ::: {.problem}

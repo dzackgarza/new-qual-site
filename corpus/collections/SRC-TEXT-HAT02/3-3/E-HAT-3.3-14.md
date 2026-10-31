@@ -24,6 +24,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used the finite commutator-length obstruction from Exercise 12 after retracting onto finitely many circles.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 14; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both parts: if $[\gamma]=0$ then $\gamma$ is a product of $k$ commutators, and the
+    retraction onto the first $2k+2$ circles carries it to a product of $k+1$ basis commutators
+    expressed with only $k$ commutators, contradicting Exercise 12; and both one-sided retractions
+    kill $\gamma$, so the map to $H_1(A)\oplus H_1(B)$ has nontrivial kernel.
 ---
 
 ::: {.problem}

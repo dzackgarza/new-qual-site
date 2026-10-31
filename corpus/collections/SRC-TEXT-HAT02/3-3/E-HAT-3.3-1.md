@@ -11,11 +11,23 @@ classification:
   - Manifolds
   - Cohomology
 relations: []
+review: draft
 audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
-review: draft
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 1; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the construction: two copies of $\RR$ glued along their punctured lines by a homeomorphism
+    that is increasing on one component of the overlap and decreasing on the other, so no choice of
+    direction on the two charts is consistent; the two origins are distinct but inseparable, which
+    is what the failure of the Hausdorff condition buys.
 ---
 
 ::: {.problem}

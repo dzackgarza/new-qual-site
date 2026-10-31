@@ -23,10 +23,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 23; it matches the printed text. The printed sentence beginning "This can be done by showing that $\Delta_i^c(X;G)$ is the union of its subgroups ..." was missing and is restored.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: compact support means finitely many simplices, so both complexes are
+    filtered unions over the cofinite subcomplexes, and on each such subcomplex the simplicial and
+    singular theories agree naturally; exactness of filtered limits then identifies the two
+    colimits.
 ---
 
 ::: {.problem}
 Show that for a locally compact $\Delta$-complex $X$ the simplicial and singular cohomology groups $H_c^i(X; G)$ are isomorphic.
+This can be done by showing that $\Delta_i^c(X; G)$ is the union of its subgroups $\Delta^i(X, A; G)$ as $A$ ranges over subcomplexes of $X$ that contain all but finitely many simplices, and likewise $C_c^i(X; G)$ is the union of its subgroups $C^i(X, A; G)$ for the same family of subcomplexes $A$.
 :::
 
 ::: {.solution}
