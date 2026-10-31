@@ -97,10 +97,10 @@ Lindelöfness implies the countable intersection property of closed sets has non
 :::
 
 ::: {.pf-step #x-in-closure-of-every-d}
-The point $x = (x_\alpha)$ lies in $\overline{D}$ for every $D \in \mathcal{D}$, so every neighborhood of $x$ meets every $D \in \mathcal{D}$.
+Let $x=(x_\alpha)$. For every coordinate $\alpha$ and every neighborhood $W_\alpha$ of $x_\alpha$, the cylinder $\pi_\alpha^{-1}(W_\alpha)$ meets every $D\in\mathcal D$. By (ii), this cylinder belongs to $\mathcal D$. A basic neighborhood of $x$ is a finite intersection of such cylinders, so its intersection with any $D\in\mathcal D$ is nonempty by the countable intersection property. Hence $x\in\overline D$ for every $D\in\mathcal D$.
 
 ::: pf-proof
-Step [](#projections-cip){.pf-ref}.
+Step [](#projections-cip){.pf-ref} and the second assertion of (ii).
 :::
 
 :::
@@ -190,10 +190,10 @@ a countable intersection of elements of the union may involve one element from e
 :::
 
 ::: {.pf-step #i-fails}
-Hence Zorn's lemma cannot be applied to extend $\mathcal{A}$ to a maximal collection with the countable intersection property, so (i) fails.
+Hence this Zorn argument cannot establish (i). Since (ii) holds but (iii) fails for the Sorgenfrey plane, part (a) also proves that (i) itself is false.
 
 ::: pf-proof
-Step [](#breakdown-in-zorn-step){.pf-ref}.
+Step [](#breakdown-in-zorn-step){.pf-ref}, together with parts (a) and (b) and the non-Lindelöf Sorgenfrey plane.
 :::
 
 :::
