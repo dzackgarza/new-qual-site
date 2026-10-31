@@ -21,94 +21,13 @@ If $A \times B$ is finite, does it follow that $A$ and $B$ are finite?
 :::
 
 ::: {.solution}
-::: pf
+No. If $B=\varnothing$ and $A=\NN$, then $A\times B=\varnothing$ is
+finite, while $A$ is infinite.
 
-::: pf-step
-
-$\boxed{\text{No}}$: if $B = \emptyset$, then $A \times B$ is finite for every $A$, including infinite $A$.
-
-::: pf-proof
-
-::: pf-step
-
-Suppose $B = \emptyset$.
-
-:::
-
-::: pf-step
-
-By definition of the Cartesian product, $A \times \emptyset = \emptyset$.
-
-:::
-
-::: pf-step
-
-The empty set $\emptyset$ has cardinality $0$, which is finite.
-
-:::
-
-::: pf-step
-
-However, $A$ can be chosen to be an arbitrary infinite set (for example, $A = \NN$).
-
-:::
-
-::: pf-step
-
-Thus $A \times B$ is finite while $A$ is infinite.
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-If both $A$ and $B$ are nonempty, then $A$ and $B$ are finite.
-
-::: pf-proof
-
-::: pf-step
-
-Since $B \neq \emptyset$, fix an element $b_0 \in B$.
-
-:::
-
-::: pf-step
-
-Define the inclusion map $\iota: A \to A \times B$ by $\iota(a) = (a, b_0)$.
-
-:::
-
-::: pf-step
-
-The map $\iota$ is injective: if $\iota(a_1) = \iota(a_2)$, then $(a_1, b_0) = (a_2, b_0)$, so $a_1 = a_2$.
-
-:::
-
-::: pf-step
-
-Since $A \times B$ is finite and $\iota(A) \subseteq A \times B$, the image $\iota(A)$ is finite.
-
-:::
-
-::: pf-step
-
-Since $\iota: A \to \iota(A)$ is a bijection, $A$ is finite.
-
-:::
-
-::: pf-step
-
-Symmetrically, fixing $a_0 \in A$ and considering $b \mapsto (a_0, b)$ shows that $B$ is finite.
-
-:::
-
-:::
-
-:::
-
-:::
-
+If both factors are nonempty, finiteness of $A\times B$ does imply that
+each factor is finite. Fixing $b_0\in B$ gives an injection
+$a\mapsto(a,b_0)$ from $A$ into $A\times B$. Fixing $a_0\in A$ gives an
+injection $b\mapsto(a_0,b)$ from $B$ into $A\times B$. Each image is a
+subset of a finite set, hence finite by [[E-MUN-6-2]].
+Each factor is in bijection with its image, so both factors are finite.
 :::
