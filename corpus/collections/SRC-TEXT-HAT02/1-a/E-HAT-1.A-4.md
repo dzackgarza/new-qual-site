@@ -32,6 +32,7 @@ If $X$ is a finite graph and $Y$ is a subgraph homeomorphic to $S^1$ and contain
 
 ::: {.solution}
 Let $Y\subseteq X$ be the given subgraph homeomorphic to $S^1$ and containing the basepoint $x_0$.
+Subdivide edges if needed so that $x_0$ is a vertex and $Y$ has an edge whose interior does not contain $x_0$. Subdivision leaves the underlying space and its fundamental group unchanged.
 Choose an edge
 $$
 e\subseteq Y.
