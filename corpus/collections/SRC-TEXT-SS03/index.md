@@ -113,6 +113,10 @@ source:
       comment: Ch. 2, Problem 2
     - id: E-SS2.PR-3
       comment: Ch. 2, Problem 3
+    - id: E-SS2.PR-4
+      comment: Ch. 2, Problem 4
+    - id: E-SS2.PR-5
+      comment: Ch. 2, Problem 5
   - name: Ch3 Exercises
     problems:
     - id: E-SS3.EX-1
