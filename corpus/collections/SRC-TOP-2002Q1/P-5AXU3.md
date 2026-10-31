@@ -35,7 +35,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if $X$ is a path-connected, locally path-connected topological space with finite fundamental group $\pi_1(X, x_0)$, then every continuous map $f : X \to S^1$ is **homotopic to a constant map** (nullhomotopic).
+Show that if $X$ is a path-connected, locally path-connected topological space with finite fundamental group $\pi_1(X, x_0)$, then every continuous map $f : X \to S^1$ is homotopic to a constant map.
 :::
 
 ::: {.solution}
