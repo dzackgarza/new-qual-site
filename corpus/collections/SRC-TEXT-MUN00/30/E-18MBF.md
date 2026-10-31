@@ -30,6 +30,7 @@ Show that if $X$ is Lindelöf and $Y$ is compact, then $X \times Y$ is Lindelöf
 ::: {.pf-step #slices-finite-subcovers}
 Slices $\{x\} \times Y$ and finite subcovers:
 Let $\mathcal{A}$ be any open cover of $X \times Y$.
+If $X=\varnothing$, then $X\times Y=\varnothing$ is Lindelöf. Assume $X\neq\varnothing$ below.
 For each $x \in X$, there exists a finite subcollection $\mathcal{A}_x \subset \mathcal{A}$ and an open neighborhood $U_x \subseteq X$ of $x$ such that:
 $$U_x \times Y \subseteq \bigcup_{A \in \mathcal{A}_x} A.$$
 
