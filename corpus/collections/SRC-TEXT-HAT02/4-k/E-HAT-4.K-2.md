@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-4.K-2
 kind: problem
-title: Contractible fibers imply homotopy equivalence
+title: Contractible fibers of a simplicial map
 classification:
   areas:
   - topology
@@ -15,7 +15,7 @@ review: draft
 audit:
 - event: solution-written
   by: gemini-3.7-flash
-  date: 2026-08-30
+  date: 2026-08-29
 ---
 
 ::: {.problem}
@@ -23,63 +23,9 @@ Show that a simplicial map $f: K \to L$ is a homotopy equivalence if $f^{-1}(x)$
 :::
 
 ::: {.solution}
+For a simplex $\sigma$ of $L$, let $V_\sigma$ be its open star: the union of the interiors of all simplices containing $\sigma$. Put $U_\sigma=f^{-1}(V_\sigma)$. The $V_\sigma$ cover $L$, and the $U_\sigma$ cover $K$. A nonempty finite intersection of these open stars is $V_\rho$, where $\rho$ is the simplex spanned by the union of their vertices; the corresponding intersection of the $U_\sigma$ is $U_\rho$.
 
-::: pf
+Let $x_\rho$ be the barycenter of $\rho$. The space $V_\rho$ contracts to $x_\rho$. The preimage $U_\rho$ deformation retracts onto $f^{-1}(x_\rho)$. To see this, write a point of a simplex of $K$ in barycentric coordinates. For each vertex $w$ of its image simplex, the sum of the coordinates of vertices mapping to $w$ is the $w$-coordinate of its image. Move these sums linearly toward the coordinates of $x_\rho$, scaling all coordinates in each fiber of the vertex map by the same factor. Every coordinate corresponding to a vertex of $\rho$ has positive sum throughout $U_\rho$, so this scaling is continuous. At the end the image is $x_\rho$, and points already over $x_\rho$ remain fixed.
 
-::: {.pf-step #s1}
-
-For each simplex $\sigma$ of $L$, the preimage $f^{-1}(\sigma)$ is contractible.
-
-::: pf-proof
-
-$f^{-1}(\sigma)$ is the union of the contractible fibers $f^{-1}(x)$ over $x \in \sigma$, and it deformation retracts onto any single fiber (the fibers are contractible and the preimage of a simplex is a product-like structure).
-
-:::
-
-:::
-
-::: pf-step
-
-More precisely, $f^{-1}(\sigma)$ is homotopy equivalent to $f^{-1}(x_0)$ for any $x_0 \in \sigma$, hence contractible.
-
-::: pf-proof
-
-Step [](#s1){.pf-ref} (the preimage of a simplex deformation retracts onto the preimage of a point).
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-By the Vietoris–Begle theorem (or the fact that a map with contractible fibers is a homotopy equivalence for CW complexes), $f$ induces an isomorphism on all homotopy groups.
-
-::: pf-proof
-
-the Vietoris–Begle mapping theorem (a map with contractible fibers induces isomorphisms on homology, and for simply connected spaces, on homotopy).
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-Since $K$ and $L$ are CW complexes (simplicial complexes), and $f$ induces isomorphisms on all homotopy groups, $f$ is a homotopy equivalence (Whitehead's theorem).
-
-::: pf-proof
-
-Step [](#s3){.pf-ref} and Whitehead's theorem.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s4){.pf-ref}.
-
-:::
-
-:::
-
+By hypothesis $f^{-1}(x_\rho)$ is contractible. Thus each restriction $f:U_\rho\to V_\rho$ is a weak homotopy equivalence. Corollary 4K.2 applied to the open-star covers shows that $f$ is a weak homotopy equivalence. Since simplicial complexes have CW type, Whitehead's theorem gives the required homotopy equivalence.
 :::
