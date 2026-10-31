@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $S_n \cong \left\langle (12), (123\cdots n)\right\rangle$ and also that $S_n \cong \left\langle (12), (23\cdots n)\right\rangle$
+Show that $S_n = \left\langle (12), (123\cdots n)\right\rangle$ and also that $S_n = \left\langle (12), (23\cdots n)\right\rangle$.
 :::
 
 ::: {.solution}

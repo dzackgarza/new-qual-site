@@ -53,7 +53,7 @@ There are two possibilities for $N$.
 
 If $N\cong\ZZ_9$, then
 $$
-\operatorname{Aut}(N)\cong(\ZZ/9\ZZ)^\times\cong\ZZ_6.
+\Aut(N)\cong(\ZZ/9\ZZ)^\times\cong\ZZ_6.
 $$
 An action of $C\cong\ZZ_2$ therefore has image either trivial or the unique
 subgroup of order $2$. These give
@@ -65,7 +65,7 @@ $$
 the latter being the dihedral group of order $18$.
 
 If $N\cong\ZZ_3^2$, then an action of $C$ is determined by an involution in
-$\operatorname{GL}_2(\FF_3)$. Since $2$ is invertible in $\FF_3$, every such
+$\GL_2(\FF_3)$. Since $2$ is invertible in $\FF_3$, every such
 operator is diagonalizable with eigenvalues in $\{1,-1\}$. Up to conjugacy there
 are exactly three possibilities:
 $$
@@ -112,7 +112,7 @@ where $P\cong\ZZ_4$ or $P\cong\ZZ_2^2$.
 
 Now
 $$
-\operatorname{Aut}(\ZZ_5)\cong\ZZ_4.
+\Aut(\ZZ_5)\cong\ZZ_4.
 $$
 For $P\cong\ZZ_4$, the image of the action homomorphism
 $P\to\ZZ_4$ can have order $1$, $2$, or $4$. Up to automorphisms of source and
@@ -121,18 +121,18 @@ $$
 \ZZ_5\times\ZZ_4\cong\ZZ_{20},
 $$
 $$
-\ZZ_5\rtimes_{(\operatorname{im}=\ZZ_2)}\ZZ_4,
+\ZZ_5\rtimes_{(\im=\ZZ_2)}\ZZ_4,
 \qquad
-\ZZ_5\rtimes_{(\operatorname{im}=\ZZ_4)}\ZZ_4.
+\ZZ_5\rtimes_{(\im=\ZZ_4)}\ZZ_4.
 $$
 
 For $P\cong\ZZ_2^2$, the image has order $1$ or $2$; all nonzero maps
 $\ZZ_2^2\to\ZZ_2\le\ZZ_4$ are equivalent under
-$\operatorname{Aut}(\ZZ_2^2)$. Hence there are exactly two further groups:
+$\Aut(\ZZ_2^2)$. Hence there are exactly two further groups:
 $$
 \ZZ_5\times\ZZ_2^2,
 \qquad
-\ZZ_5\rtimes_{(\operatorname{im}=\ZZ_2)}\ZZ_2^2.
+\ZZ_5\rtimes_{(\im=\ZZ_2)}\ZZ_2^2.
 $$
 
 The five are pairwise nonisomorphic. First, their Sylow $2$-subgroups distinguish
@@ -165,18 +165,18 @@ $P_3$ be Sylow subgroups. If both are normal, then $P_3P_5$ is a subgroup of
 order $15$. If only $P_3$ is normal, then conjugation by $P_5$ on $P_3$ gives a
 homomorphism
 $$
-P_5\to\operatorname{Aut}(P_3)\cong\ZZ_2,
+P_5\to\Aut(P_3)\cong\ZZ_2,
 $$
 which is trivial because $\cardinality{P_5}=5$; hence $P_5$ normalizes and centralizes
 $P_3$, so again $P_3P_5$ is a subgroup of order $15$. Similarly, if only $P_5$
 is normal, conjugation by $P_3$ on $P_5$ maps a group of order $3$ into
-$\operatorname{Aut}(\ZZ_5)\cong\ZZ_4$ and is trivial, so $P_3P_5$ is again a
+$\Aut(\ZZ_5)\cong\ZZ_4$ and is trivial, so $P_3P_5$ is again a
 subgroup of order $15$.
 
 Call this subgroup $N$. Since $[G:N]=2$, it is normal. Also any group of order
 $15$ is cyclic: its Sylow $5$-subgroup is normal, and its Sylow $3$-subgroup
 acts trivially on it because there is no element of order $3$ in
-$\operatorname{Aut}(\ZZ_5)$. Hence
+$\Aut(\ZZ_5)$. Hence
 $$
 N\cong\ZZ_{15}.
 $$
@@ -199,8 +199,8 @@ $$
 
 By the Chinese remainder theorem,
 $$
-\operatorname{Aut}(\ZZ_{15})
-\cong\operatorname{Aut}(\ZZ_3)\times\operatorname{Aut}(\ZZ_5)
+\Aut(\ZZ_{15})
+\cong\Aut(\ZZ_3)\times\Aut(\ZZ_5)
 \cong\ZZ_2\times\ZZ_4.
 $$
 An action of $\ZZ_2$ is determined by an element of order dividing $2$. There

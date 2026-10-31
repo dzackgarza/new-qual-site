@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a finite group and $H \trianglelefteq G$ a normal subgroup of order $p^k$.
+Let $p$ be a prime, $G$ a finite group and $H \trianglelefteq G$ a normal subgroup of order $p^k$.
 Show that $H$ is contained in every Sylow $p$-subgroup of $G$.
 :::
 

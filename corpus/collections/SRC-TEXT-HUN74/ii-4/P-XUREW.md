@@ -28,8 +28,6 @@ audit:
 ::: {.problem}
 Let $Z(G)$ be the center of $G$.
 Show that if $G/Z(G)$ is cyclic, then $G$ is abelian.
-
-> Note that Hungerford uses the notation $C(G)$ for the center.
 :::
 
 ::: {.solution}
@@ -88,4 +86,8 @@ By step [](#s2){.pf-ref} every pair of elements of $G$ commutes.
 
 :::
 
+:::
+
+::: {.remark}
+Hungerford writes $C(G)$ for the center.
 :::
