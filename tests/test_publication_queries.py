@@ -12,6 +12,12 @@ from qualc.diagnostics import DiagnosticCode
 from qualc.publication import PublicationManifest, load_publications
 from test_invariants import read_html
 
+
+def test_publication_loader_rejects_missing_directory(tmp_path: Path) -> None:
+    with pytest.raises(FileNotFoundError, match="publications"):
+        load_publications(tmp_path / "publications")
+
+
 PROBLEM = """---
 schema: qual/card@1
 id: {id}
