@@ -36,7 +36,7 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
 
 `publication-milestone`, `unsolved-contribution`, `slogans`, `lamport-conversion`,
 `solution-section-restoration`, `copy-policy-repair`, and `audited-deployment` are closed.
-The next ready node is `type-paydown`.
+The next ready node is `bloat-audit-loop`.
 
 Copy is reader-facing prose: wiki pages, remarks, and site strings. Problem statements and
 proofs are mathematics, not copy. A defect in a statement or proof is repaired as a
@@ -1825,6 +1825,7 @@ recurring reporting programme.
   The objective is the resulting program structure, not a diagnostic count.
   Do not add contortions whose only value is silencing a checker.
   **Acceptance:** the type defects selected by the refactor pass have been repaired at their owning interfaces, with behavior preserved and the resulting annotations/interfaces clearer than the state they replace.
+  **Closed.** Generated catalog data and OCR responses now have validated boundary types.
 
 - **`bloat-audit-loop`**. **Needs:** `type-paydown`.
   Make one final whole-tooling/site convergence pass using the relevant lenses already established for this repository: publisher/tool architecture, proof-bearing tests, API and type design, dependency/offload opportunities, duplicated sources of truth, dead compatibility bridges, generated-versus-authored boundaries, build/preview cost, and AI-slop patterns.
