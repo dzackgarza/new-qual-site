@@ -20,6 +20,10 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-corrected
+  by: gpt-6.1-sol
+  date: 2026-10-31
+  note: 'The claim that [I,Y] has one class requires Y nonempty if path connectedness is allowed to hold vacuously for the empty space.'
 ---
 
 ::: {.exercise}
@@ -29,7 +33,7 @@ Given spaces $X$ and $Y$, let $[X, Y]$ denote the set of homotopy classes of map
 (a) Let $I = [0, 1]$.
 Show that for any $X$, the set $[X, I]$ has a single element.
 
-(b) Show that if $Y$ is path connected, the set $[I, Y]$ has a single element.
+(b) Show that if $Y$ is nonempty and path connected, the set $[I, Y]$ has a single element.
 :::
 
 ::: {.solution}
