@@ -139,7 +139,7 @@ $$B_J \cup B_K \subseteq A_{j_0} \in \mathcal{A}.$$
 
 ::: pf-step
 Conclusion:
-Such an open star-refinement $\mathcal{B}$ exists whenever $X$ is metrizable or compact Hausdorff (and more generally, whenever $X$ is paracompact).
+Such an open star-refinement $\mathcal{B}$ exists whenever $X$ is metrizable or compact Hausdorff.
 :::
 
 :::
