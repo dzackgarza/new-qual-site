@@ -125,7 +125,7 @@ Each $a$-vertex is joined to each $b$-vertex by exactly $d$ edges.
 
 ::: pf-proof
 
-The quotient action of $G_{m,n}/K\cong\ZZ$ is transitive on the vertices of each fixed type modulo the respective stabilizers, so the number of edges joining a given pair of vertex orbits is constant.
+The $a$-vertices and $b$-vertices are indexed by $\ZZ/m'\ZZ$ and $\ZZ/n'\ZZ$ respectively. Translation by one in $G_{m,n}/K\cong\ZZ$ acts on both indices. Since $\gcd(m',n')=1$, the Chinese remainder theorem makes this diagonal action transitive on all $m'n'$ ordered pairs of vertices. Therefore the number of edges joining a pair is constant.
 There are
 $$
 m'n'
