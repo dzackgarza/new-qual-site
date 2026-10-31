@@ -20,11 +20,15 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-corrected
+  by: gpt-6.1-sol
+  date: 2026-10-31
+  note: 'The projection is a covering map only if the discrete factor is nonempty when X is nonempty; a covering map is surjective.'
 ---
 
 ::: {.exercise}
 
-Let $Y$ have the discrete topology.
+Let $Y$ be a nonempty space with the discrete topology.
 Show that if $p: X \times Y \to X$ is projection on the first coordinate, then $p$ is a covering map.
 :::
 
