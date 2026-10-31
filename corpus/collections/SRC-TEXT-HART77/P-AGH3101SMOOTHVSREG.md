@@ -98,7 +98,7 @@ Step [](#s1){.pf-ref} shows that none of these elements is zero. Hence
 $$
 \boxed{
 A\cong
-\bigl\{q(x^p-y^2):0\ne q\in k_0[t]\bigr\}^{-1}k_0[x,y].
+\bigl\{q(x^p-y^2) \st 0\ne q\in k_0[t]\bigr\}^{-1}k_0[x,y].
 }
 $$
 

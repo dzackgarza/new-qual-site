@@ -101,7 +101,7 @@ F\in k+(v^2-1)k[v].
 $$
 Hence
 $$
-\boxed{A=\{F\in B:F(1)=F(-1)\}}.
+\boxed{A=\{F\in B \st F(1)=F(-1)\}}.
 $$
 This is also the branch-gluing description used in
 [[P-AGH2713NONPROJ]].

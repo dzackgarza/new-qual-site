@@ -34,7 +34,7 @@ Show that there is an open neighborhood $U$ of $y$ in $Y$ such that $f: f^{-1}(U
 ::: {.solution}
 Let
 $$
-V=\{x\in X:f\text{ is smooth at }x\}.
+V=\{x\in X \st f\text{ is smooth at }x\}.
 $$
 
 ::: pf
