@@ -246,7 +246,7 @@ mathematical correction under its own node, not under copy policy.
   - [ ] SRC-MGSA-COMPLEX-ORAL
   - [ ] SRC-MGSA-FIELDS-ORAL
   - [ ] SRC-MGSA-GROUPS-ORAL
-  - [ ] SRC-MTH674-DIFFGEOM-MIDTERM-SAMPLE
+  - [x] SRC-MTH674-DIFFGEOM-MIDTERM-SAMPLE
   - [ ] SRC-NORI-GALOIS-THEORY-PROBLEMS
   - [ ] SRC-NUS-CA-1970-SPRING
   - [ ] SRC-NUS-RA-1970-SPRING
