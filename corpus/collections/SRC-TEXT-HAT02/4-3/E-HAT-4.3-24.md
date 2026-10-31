@@ -112,7 +112,7 @@ Obstruction cochains and groups:
 
 Suppose $H$ has been extended to $(W \times I)^{n} \cup Y$.
 To extend $H$ across an $(n+1)$-cell $e^n \times (0, 1)$, $H$ is already defined on the boundary $\partial(e^n \times I) \cong S^n$.
-Since $p \circ H = g \circ \operatorname{pr}_W$ is contractible on $e^n \times I$, the map on the boundary takes values in the fiber $F$, determining an element of $\pi_n(F)$.
+Since $g \circ \operatorname{pr}_W$ is nullhomotopic on $e^n \times I$, lift a contraction of this base map to identify the restricted fibration with the constant fiber up to fiber homotopy. The boundary lift then determines an element of $\pi_n(F)$ under this identification.
 
 ::: pf-proof
 
