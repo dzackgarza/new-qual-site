@@ -36,7 +36,7 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
 
 `publication-milestone`, `unsolved-contribution`, `slogans`, `lamport-conversion`,
 `solution-section-restoration`, `copy-policy-repair`, and `audited-deployment` are closed.
-The next ready node is `refactor-audit`.
+The next ready node is `type-paydown`.
 
 Copy is reader-facing prose: wiki pages, remarks, and site strings. Problem statements and
 proofs are mathematics, not copy. A defect in a statement or proof is repaired as a
@@ -1819,6 +1819,7 @@ recurring reporting programme.
   Repair a defensible finding at its actual owner rather than creating an audit receipt, inventory-only node, or approval stage.
   A genuinely large cross-owner repair may become a concrete DAG node with its real dependencies and behavioral acceptance; the audit itself does not recursively manufacture scheduling nodes.
   **Acceptance:** every finding from the pass has been repaired at its owner, and a final repository-wide pass over the same scope finds no further concrete defect requiring work.
+  **Closed.** The source-boundary and reader-navigation repairs are committed at their owners.
 
 - **`type-paydown`**. **Needs:** `refactor-audit`. Repair the tooling type defects for which stronger typing materially improves legibility, comprehension, or static reasoning about correctness.
   The objective is the resulting program structure, not a diagnostic count.
