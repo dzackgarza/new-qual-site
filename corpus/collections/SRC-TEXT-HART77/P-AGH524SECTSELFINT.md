@@ -41,7 +41,7 @@ First show that $s$ is always an even integer, say $s=2 r$.
 
 (a) Show that $r=0$ and any $r \geqslant g+1$ are always possible.
 Cf.
-(V, Ex.
+(IV, Ex.
 6.8).
 
 (b) If $g=3$, show that $r=1$ is not possible, and just one of the two values $r=2,3$ is possible, depending on whether $C$ is hyperelliptic or not.

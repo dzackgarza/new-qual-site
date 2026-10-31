@@ -42,7 +42,7 @@ Show that either
 - $\deg Y$ is odd, say $2 a+1$, and $g(Y)=a^2-a$.
 
 Cf.
-(V, 6.4.1). Hint: Use (2.11.4).
+(IV, 6.4.1). Hint: Use (2.11.4).
 :::
 
 ::: {.solution}

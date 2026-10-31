@@ -42,7 +42,7 @@ Cf.
 
 (b) Let $e<0$, let $D$ be any divisor of degree $d=-e$, and let $\xi \in H^1(\mathcal{L}(-D))$ be a nonzero element defining an extension
 $$
-0 \rightarrow \mathcal{O}_C \rightarrow \mathcal{E} \rightarrow \mathcal{L}(D) \rightarrow 0 .
+0 \rightarrow \OO_C \rightarrow \mathcal{E} \rightarrow \mathcal{L}(D) \rightarrow 0 .
 $$
 Let $H \subseteq\linearsystem{D+K}$ be the sublinear system of codimension 1 defined by $\ker \xi$, where $\xi$ is considered as a linear functional on $H^0(\mathcal{L}(D+K))$.
 For any effective divisor $E$ of degree $d-1$, let $L_E \subseteq\linearsystem{D+K}$ be the sublinear system $\linearsystem{D+K-E}+E$.

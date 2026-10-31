@@ -44,7 +44,7 @@ $$
 ,$$
 we have
 $$
-(\operatorname{deg} \mathcal{F}) / \operatorname{rank} \mathcal{F}>(\operatorname{deg} \mathcal{E}) / \operatorname{rank} \mathcal{E}
+(\deg \mathcal{F}) / \rank \mathcal{F}>(\deg \mathcal{E}) / \rank \mathcal{E}
 .$$
 Replacing $>$ by $\geqslant$ defines **semistable**.
 
@@ -64,7 +64,7 @@ Replacing $>$ by $\geqslant$ defines **semistable**.
 ::: {.solution}
 For a nonzero locally free sheaf $\mathcal F$ on $C$, write
 $$
-\mu(\mathcal F)=\frac{\deg\mathcal F}{\operatorname{rank}\mathcal F}.
+\mu(\mathcal F)=\frac{\deg\mathcal F}{\rank\mathcal F}.
 $$
 
 ::: pf

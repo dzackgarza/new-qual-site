@@ -26,7 +26,7 @@ For any $n>e \geqslant 0$, let $X$ be the rational scroll of degree $d=2 n-e$ in
 
 Conclude that for every $g \geqslant 4$, there exists a nonhyperelliptic curve of genus $g$ which has a $g_3^1$.
 Cf.
-(V, §5).
+(IV, §5).
 :::
 
 ::: {.solution}
