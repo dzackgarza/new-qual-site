@@ -17,6 +17,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
+import sync_macros
 from sync_macros import definitions, preamble_text
 
 LATEXMACS = r"""
@@ -84,3 +85,25 @@ def test_an_input_on_no_search_path_is_an_error(tmp_path: Path) -> None:
 
     with pytest.raises(FileNotFoundError):
         preamble_text(entry, (tmp_path / "macros",))
+
+
+@pytest.mark.parametrize("missing", ["corpus", "wiki"])
+def test_sync_requires_both_authored_trees(tmp_path: Path, monkeypatch: pytest.MonkeyPatch, missing: str) -> None:
+    preamble = tmp_path / "dzg-macros.sty"
+    preamble.write_text(r"\newcommand{\foo}{x}" + "\n")
+    for name in ("corpus", "wiki"):
+        if name != missing:
+            directory = tmp_path / name
+            directory.mkdir()
+            (directory / "note.md").write_text(r"$\foo$" + "\n")
+    vocabulary = tmp_path / "vocabularies"
+    vocabulary.mkdir()
+    mirror = vocabulary / "macros.json"
+    mirror.write_text('{"\\\\foo": "old"}\n')
+    monkeypatch.setattr(sync_macros, "ROOT", tmp_path)
+    monkeypatch.setattr(sync_macros, "PREAMBLE", preamble)
+    monkeypatch.setattr(sync_macros, "SEARCH_PATH", ())
+
+    with pytest.raises(FileNotFoundError, match=missing):
+        sync_macros.main()
+    assert mirror.read_text() == '{"\\\\foo": "old"}\n'
