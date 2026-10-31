@@ -1796,7 +1796,9 @@ mathematical correction under its own node, not under copy policy.
     "../Fig/Pr/Sp81-11.ps not found" where the curve $C$ should be, so the statement has no
     contour and the solution answers in terms of winding numbers. Find another copy of the Spring
     1981 Berkeley prelim (or the Sp81-11 figure) and transcribe the curve. **Acceptance:** the
-    statement describes $C$ as drawn and the solution gives a number.
+    statement describes $C$ as drawn and the solution gives a number. **Closed.**
+    De Souza and Silva, Problem 5.11.18, pp. 81–82, reproduces the curve;
+    its winding numbers at $0,1$ are $-2,2$.
   - **`ad-bks83-4-network`**. **Needs:** none. P-BKS83-4: the retained Spring83.pdf prints
     "../Fig/Pr/Sp83-4.ps not found" where the triangular network should be, so the statement
     does not determine the network and the solution only shows the answer depends on it. Find
