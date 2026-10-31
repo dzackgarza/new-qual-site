@@ -21,7 +21,7 @@ audit:
 
 Theorem.
 Let $X$ be a compact Hausdorff space.
-Let $\mathcal{A}$ be a collection of closed connected subsets of $X$ that is simply ordered by proper inclusion.
+Let $\mathcal{A}$ be a nonempty collection of closed connected subsets of $X$ that is simply ordered by proper inclusion.
 Then
 
 $$
@@ -39,6 +39,8 @@ is not empty.]
 :::
 
 ::: {.solution}
+
+If $\varnothing\in\mathcal A$, then $Y=\varnothing$ is connected. Assume every member of $\mathcal A$ is nonempty.
 
 ::: pf
 
@@ -165,4 +167,8 @@ No separation of $Y$ can exist, so $Y = \bigcap_{A \in \mathcal{A}} A$ is connec
 
 :::
 
+:::
+
+::: {.remark}
+The family must be nonempty. For the empty family, its intersection is $X$, which need not be connected.
 :::
