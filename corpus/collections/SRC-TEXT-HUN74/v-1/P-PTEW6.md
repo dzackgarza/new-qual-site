@@ -37,7 +37,7 @@ We use the tower law in the following form: if $[L:K]=m$ with basis $\{x_i\}$ an
 
 ::: pf-step
 
-(1) $[\QQ(\sqrt 2, \sqrt 3) : \QQ] = \boxed{4}$, with basis $\boxed{\{1, \sqrt 2, \sqrt 3, \sqrt 6\}}$.
+(a) $[\QQ(\sqrt 2, \sqrt 3) : \QQ] = \boxed{4}$, with basis $\boxed{\{1, \sqrt 2, \sqrt 3, \sqrt 6\}}$.
 
 ::: pf-proof
 
@@ -77,7 +77,7 @@ By the tower law and steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, the degree
 
 ::: pf-step
 
-(2) $[\QQ(i, \sqrt 3, \zeta_3) : \QQ] = \boxed{4}$, with basis $\boxed{\{1, i, \sqrt 3, i\sqrt 3\}}$.
+(b) $[\QQ(i, \sqrt 3, \zeta_3) : \QQ] = \boxed{4}$, with basis $\boxed{\{1, i, \sqrt 3, i\sqrt 3\}}$.
 
 ::: pf-proof
 
@@ -87,7 +87,7 @@ $\QQ(i, \sqrt 3, \zeta_3) = \QQ(i, \sqrt 3)$.
 
 ::: pf-proof
 
-The complex third roots of $1$ other than $1$ are $\frac{-1 \pm i\sqrt 3}{2}\in\QQ(i,\sqrt3)$, and $\zeta_3=1$ also lies in $\QQ$.
+The complex third roots of $1$ other than $1$ are $\frac{-1 \pm i\sqrt 3}{2}\in\QQ(i,\sqrt3)$.
 
 :::
 

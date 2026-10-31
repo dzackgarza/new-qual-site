@@ -40,7 +40,7 @@ Show that
 
 ::: {.pf-step #s1}
 
-One has $[F:K]=1$ if and only if $F=K$.
+(a) One has $[F:K]=1$ if and only if $F=K$.
 
 ::: pf-proof
 
@@ -57,7 +57,7 @@ so $F\subseteq K$. Since $K\subseteq F$ by hypothesis, $F=K$.
 
 ::: pf-step
 
-If $[F:K]$ is prime, there is no proper intermediate field
+(b) If $[F:K]$ is prime, there is no proper intermediate field
 $K\subsetneq L\subsetneq F$.
 
 ::: pf-proof
@@ -76,7 +76,7 @@ proper intermediate field exists.
 
 ::: pf-step
 
-If $u\in F$ has degree $n$ over $K$, then
+(c) If $u\in F$ has degree $n$ over $K$, then
 $$
 [F:K]=[F:K(u)]\,n.
 $$

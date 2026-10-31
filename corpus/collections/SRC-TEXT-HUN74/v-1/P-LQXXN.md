@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that if $u\in F$ is algebraic of odd degree over $K$, then so is $u^2$, and moreover $K(u) = K(u^2)$.
+Let $F/K$ be a field extension. Show that if $u\in F$ is algebraic of odd degree over $K$, then so is $u^2$, and moreover $K(u) = K(u^2)$.
 :::
 
 ::: {.solution}

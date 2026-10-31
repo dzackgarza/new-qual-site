@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that in $\CC$, the fields $\QQ(i) \cong \QQ(\sqrt 2)$ as vector spaces, but not as fields.
+Show that in $\CC$, the fields $\QQ(i)$ and $\QQ(\sqrt 2)$ are isomorphic as vector spaces over $\QQ$, but not as fields.
 :::
 
 ::: {.solution}
