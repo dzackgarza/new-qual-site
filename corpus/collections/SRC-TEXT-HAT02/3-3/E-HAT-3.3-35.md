@@ -26,7 +26,15 @@ audit:
 ---
 
 ::: {.problem}
-If $M$ is a noncompact $R$-orientable $n$-manifold with boundary $\partial M$ having a collar neighborhood in $M$, show that there are Poincaré duality isomorphisms $H_c^k(M; R) \approx H_{n-k}(M, \partial M; R)$ for all $k$, using the five-lemma and the long exact sequence relating compactly supported cohomology of $M$, $M \setminus \partial M$, and $\partial M$.
+If $M$ is a noncompact $R$-orientable $n$-manifold with boundary $\partial M$ having a collar neighborhood in $M$, show that there are Poincaré duality isomorphisms $H_c^k(M;R)\approx H_{n-k}(M,\partial M;R)$ for all $k$, using the five-lemma and the following diagram:
+
+$$
+\begin{array}{ccccccc}
+\cdots\to H_c^{k-1}(\partial M;R)&\to&H_c^k(M,\partial M;R)&\to&H_c^k(M;R)&\to&H_c^k(\partial M;R)\to\cdots\\
+\downarrow D_{\partial M}&&\downarrow D_M&&\downarrow D_M&&\downarrow D_{\partial M}\\
+\cdots\to H_{n-k}(\partial M;R)&\to&H_{n-k}(M;R)&\to&H_{n-k}(M,\partial M;R)&\to&H_{n-k-1}(\partial M;R)\to\cdots
+\end{array}
+$$
 :::
 
 ::: {.solution}
@@ -62,7 +70,7 @@ and
 $$
 H_c^k(\partial M;R)\xrightarrow{\cong}H_{n-k-1}(\partial M;R).
 $$
-Thus in the commutative diagram all vertical maps except the middle map
+The same interior duality also gives $H_c^{k+1}(M,\partial M;R)\cong H_{n-k-1}(M;R)$. Thus the two vertical maps on each side of the middle map in the five-term segment are isomorphisms. The middle map is
 $$
 D_M:H_c^k(M;R)\longrightarrow H_{n-k}(M,\partial M;R)
 $$
