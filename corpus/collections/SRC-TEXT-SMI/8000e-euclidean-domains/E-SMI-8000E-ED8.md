@@ -26,6 +26,7 @@ audit:
 ---
 
 ::: {.exercise}
+Assume $R$ is a Euclidean domain.
 Conclude that if $M$ is a finitely generated $R$ module, with minimal set of generators $x_1, \ldots, x_m$, then $M$ is isomorphic to some product of the form
 
 $$
