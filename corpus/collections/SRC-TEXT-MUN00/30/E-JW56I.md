@@ -33,7 +33,7 @@ For $\overline S_\Omega=[0,\Omega]$:
 
 - It is compact, hence Lindelöf.
 - It is not first countable at $\Omega$. A countable local basis would give countably many left endpoints whose supremum is still $<\Omega$, leaving a smaller neighborhood of $\Omega$ not refined by the basis.
-- It is not separable for the same boundedness reason as above: every countable subset has supremum $<\Omega$, so it misses a final interval.
+- It is not separable. For any countable $D\subseteq\overline S_\Omega$, the set $D\cap S_\Omega$ has supremum $\beta<\Omega$. Then the nonempty open interval $(\beta,\Omega)$ misses $D$, even if $\Omega\in D$.
 - Hence it is not second countable.
 
 Thus $S_\Omega$ satisfies only first countability, while $\overline S_\Omega$ satisfies only Lindelöfness among the four axioms.
