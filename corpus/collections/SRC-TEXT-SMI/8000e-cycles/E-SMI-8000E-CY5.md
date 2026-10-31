@@ -22,6 +22,10 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Showed transpositions negate the Vandermonde, deduced the sign homomorphism and surjectivity for n>=2, and proved its kernel is exactly the even-transposition subgroup."
+- event: source-corrected
+  by: chatgpt
+  date: 2026-10-31
+  note: "The packet omits n>=2; for n=1, S1 is trivial and the sign map is not onto the two-element group."
 ---
 
 ::: {.exercise}
@@ -42,13 +46,6 @@ $$
 to $(X_2 - X_1)(X_2 - X_3)(X_1 - X_3) = -f(X)$.
 Deduce that every permutation $m$ takes $f$ to either $f$ or $-f$, and that setting $\operatorname{sgn}(m) = c$, where $m(f) = c \cdot f$, defines a surjective homomorphism $S(n) \to \theset{\pm 1}$ whose kernel consists of those permutations which can be written as a product of an even number of 2-cycles.
 Call that subgroup $A(n)$.
-:::
-
-::: {.remark}
-The printed exercise asserts that the sign map $S_n\to\{\pm1\}$ is
-surjective without restricting $n$. For $n=1$, the group $S_1$ is trivial,
-so no map from it onto the two-element group can be surjective. The statement
-therefore assumes $n\ge2$.
 :::
 
 ::: {.solution}
