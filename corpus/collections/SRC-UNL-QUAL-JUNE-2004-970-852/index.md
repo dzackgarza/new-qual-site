@@ -4,7 +4,7 @@ id: SRC-UNL-QUAL-JUNE-2004-970-852
 kind: collection
 title: UNL Mathematics Qualifying Exam 970/852, June 2004
 classification:
-  areas: [topology]
+  areas: [algebra, topology]
   topics: []
 relations: []
 review: draft

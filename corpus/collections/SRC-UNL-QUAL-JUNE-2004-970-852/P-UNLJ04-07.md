@@ -4,8 +4,8 @@ id: P-UNLJ04-07
 kind: problem
 title: Connectivity of cubic graphs and snarls
 classification:
-  areas: [topology]
-  topics: []
+  areas: [algebra]
+  topics: [Graph Theory]
 relations: []
 review: draft
 audit:

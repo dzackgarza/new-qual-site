@@ -372,7 +372,7 @@ its own right at Harvard and Berkeley, with its own examiners and its own
 question bank, so it is not a topic inside algebra.
 
 The remaining extensions do live inside those areas as topics: commutative
-algebra, differential geometry / manifolds, representation theory (filed in
+algebra, differential geometry / manifolds, representation theory, combinatorics and graph theory (filed in
 algebra), and number theory.
 
 Do not add numerical analysis, statistics, or probability. Those are out of

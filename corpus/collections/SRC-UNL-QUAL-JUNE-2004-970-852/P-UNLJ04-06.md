@@ -4,8 +4,8 @@ id: P-UNLJ04-06
 kind: problem
 title: A Hall-type criterion for disjoint prescribed subsets
 classification:
-  areas: [topology]
-  topics: []
+  areas: [algebra]
+  topics: [Combinatorics]
 relations: []
 review: draft
 audit:

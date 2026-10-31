@@ -4,8 +4,8 @@ id: P-UNLJ04-10
 kind: problem
 title: Turán theorem by minimum-degree reduction
 classification:
-  areas: [topology]
-  topics: []
+  areas: [algebra]
+  topics: [Graph Theory]
 relations: []
 review: draft
 audit:

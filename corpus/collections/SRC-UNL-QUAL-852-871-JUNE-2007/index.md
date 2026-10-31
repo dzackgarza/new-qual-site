@@ -4,7 +4,7 @@ id: SRC-UNL-QUAL-852-871-JUNE-2007
 kind: collection
 title: UNL Mathematics Qualifying Exam 852/871, June 2007
 classification:
-  areas: [topology]
+  areas: [algebra, topology]
   topics: []
 relations:
 - kind: related-to

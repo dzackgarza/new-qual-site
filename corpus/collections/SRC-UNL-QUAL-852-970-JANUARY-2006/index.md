@@ -4,7 +4,7 @@ id: SRC-UNL-QUAL-852-970-JANUARY-2006
 kind: collection
 title: UNL Mathematics Qualifying Exam 852/970, January 2006
 classification:
-  areas: [topology]
+  areas: [algebra, topology]
   topics: []
 relations:
 - kind: related-to

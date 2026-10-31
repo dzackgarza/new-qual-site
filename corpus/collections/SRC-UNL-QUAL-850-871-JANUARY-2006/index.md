@@ -4,7 +4,7 @@ id: SRC-UNL-QUAL-850-871-JANUARY-2006
 kind: collection
 title: UNL Mathematics Qualifying Exam 850/871, January 2006
 classification:
-  areas: [topology]
+  areas: [algebra, topology]
   topics: []
 relations:
 - kind: related-to

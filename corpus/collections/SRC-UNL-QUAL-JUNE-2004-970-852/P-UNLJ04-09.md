@@ -4,8 +4,8 @@ id: P-UNLJ04-09
 kind: problem
 title: Chromatic recurrence and acyclic orientations
 classification:
-  areas: [topology]
-  topics: []
+  areas: [algebra]
+  topics: [Graph Theory]
 relations: []
 review: draft
 audit:

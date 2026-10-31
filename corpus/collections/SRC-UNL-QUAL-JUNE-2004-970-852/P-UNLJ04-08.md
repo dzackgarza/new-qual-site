@@ -4,8 +4,8 @@ id: P-UNLJ04-08
 kind: problem
 title: Large cuts in graphs and cubic graphs
 classification:
-  areas: [topology]
-  topics: []
+  areas: [algebra]
+  topics: [Graph Theory]
 relations: []
 review: draft
 audit:
