@@ -23,6 +23,8 @@ Give an example of a free abelian group $G$ of rank $n$ having a subgroup $H$ of
 
 ::: {.solution}
 
+The requested example exists for $n\ge1$. For $n=0$, the only free abelian group of rank zero is the trivial group, so no proper subgroup of the same rank exists.
+
 ::: pf
 
 ::: pf-step
