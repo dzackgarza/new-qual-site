@@ -101,7 +101,7 @@ The dimension axiom holds.
 
 ::: pf-proof
 
-A point has every reduced homology group zero, so $Q(\mathrm{pt})=0$ and $\widetilde h_n(\mathrm{pt})=0$ for all $n$. The reduced homology of $S^0$ is zero in every degree except $0$, where it is $\ZZ$; there the product and the direct sum coincide, so $Q(S^0)=0$ as well.
+A point has every reduced homology group zero, so $Q(\mathrm{pt})=0$ and $\widetilde h_n(\mathrm{pt})=0$ for all $n$. The reduced homology of $S^0$ is zero in every degree except $0$, where it is $\ZZ$. There the direct sum already fills the product — every element of $\prod_i\widetilde H_i(S^0)$ has all but one coordinate zero — so the quotient $Q(S^0)=\prod_i\widetilde H_i(S^0)\big/\bigoplus_i\widetilde H_i(S^0)$ is trivial. The two groups are in fact isomorphic, the sum always injecting into the product, but the vanishing of the quotient is what the dimension axiom needs and is what `proofs/cards/FamilyQuotient.lean` certifies.
 
 :::
 
