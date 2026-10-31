@@ -26,7 +26,7 @@ The boundary of $X$ (denoted $\partial X$) consists of those points $x$ such tha
 :::
 
 ::: {.solution}
-(a) Let $q=(q_1,0)\in\partial H^2$. We use local homology. For a sufficiently small half-disk $D_+$ about $q$, both $D_+$ and $D_+-\{q\}$ are contractible: the punctured half-disk deformation retracts onto its semicircular boundary arc. Hence the long exact sequence of the pair gives
+(a) Let $q=(q_1,0)\in\partial H^2$. We use local homology. For a sufficiently small open half-disk $D_+$ about $q$, both $D_+$ and $D_+-\{q\}$ are contractible: the latter is star-shaped about any point directly above $q$ sufficiently close to it. Hence the long exact sequence of the pair gives
 $$
 H_2(D_+,D_+-\{q\})=0.
 $$
