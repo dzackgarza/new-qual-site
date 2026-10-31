@@ -425,6 +425,8 @@ source:
     problems:
     - id: E-SS9.PR-1
       comment: Ch. 9, Problem 1
+    - id: E-SS9.PR-2
+      comment: Ch. 9, Problem 2
   - name: Ch10 Exercises
     problems:
     - id: E-SS10.EX-1
