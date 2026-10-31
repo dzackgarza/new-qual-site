@@ -37,18 +37,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
-### Hatcher 2.1.10 edge-orientation proof leaves mixed vertices untreated
-
-- **Object and need:** `E-HAT-2.1-10` must orient the quotient edges of every paired-triangle surface so each triangle admits a compatible ordered-vertex characteristic map, as required by Hatcher §2.1, Exercise 10(b).
-
-- **Observed evidence:** solution step 5 defines $H_v$ as all half-edges at a quotient vertex but defines $T:H_v\to H_v$ by exchanging the ends of loop edges. A non-loop edge has only one half-edge at $v$, so $T$ is undefined whenever the vertex meets both loop and non-loop edges. Step 6 then uses $T\circ S$ to orient the all-$v$ triangles. The given cyclic-cut argument also does not establish its asserted choice of a good triangle.
-
-- **Impact and owner:** part (a) and the cases of part (b) with at least two quotient vertices in a triangle have independent arguments. The remaining edge-orientation proof belongs to `E-HAT-2.1-10`; its solution cannot be treated as complete from the current steps.
-
-- **Uncertainty:** this is a proof defect, not a counterexample to Hatcher's statement. A construction covering mixed vertices and the one-vertex case remains to be supplied.
-
-- **Repair:** replace steps 5–6 with a valid orientation argument for all quotient vertices under the Hatcher collection audit in `TODO.md`, then remove this entry after checking the full proof.
-
 ### Hartshorne IV.6.7 proof uses tangent contacts as distinct multisecants
 
 - **Object and need:** `P-AGH467MULTISECANTS` must prove that every smooth space curve outside the four listed cases has infinitely many lines through at least three distinct curve points.
