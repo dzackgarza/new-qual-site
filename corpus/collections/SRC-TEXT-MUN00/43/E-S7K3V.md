@@ -54,5 +54,5 @@ $$
 $$
 Then the closure in $X$ of $B(x,r)$ is the ordinary closed interval $[x-r,x+r]$, which is compact. Thus every point has a ball with compact closure.
 
-Nevertheless $X$ is not complete: the sequence $x_n=1/n$ is Cauchy in $X$ but has no limit in $X$. Hence the local hypothesis in (b) does not imply completeness.
+Nevertheless $X$ is not complete: the sequence $x_n=1/(n+1)$ for $n\ge 1$ is Cauchy in $X$ but has no limit in $X$. Hence the local hypothesis in (b) does not imply completeness.
 :::
