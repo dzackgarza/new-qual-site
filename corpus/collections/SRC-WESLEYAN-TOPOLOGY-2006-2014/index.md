@@ -45,7 +45,7 @@ source:
     - P-WESTOP12-4
     - P-WESTOP12-5
     - P-WESTOP12-6
-    - P-WESTOP12-7
+    - {id: P-WESTOP09-II1, comment: Problem 7 (statements 1 and 2 only)}
     - P-WESTOP12-8
   - name: PhD Qualifying Exam, Topology, August 10, 2011
     problems:

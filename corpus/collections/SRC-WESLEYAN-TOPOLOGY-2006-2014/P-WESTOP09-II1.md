@@ -30,7 +30,7 @@ Prove or disprove each statement:
 
 ::: pf
 
-::: {.pf-step #s1-1}
+::: pf-step
 
 Statement 1 is
 $$
@@ -89,7 +89,7 @@ so $r_*$ is surjective.
 
 :::
 
-::: {.pf-step #s1-3}
+::: pf-step
 
 Statement 3 is
 $$
@@ -123,12 +123,6 @@ $$
 $$
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} settle the three statements.
 
 :::
 
