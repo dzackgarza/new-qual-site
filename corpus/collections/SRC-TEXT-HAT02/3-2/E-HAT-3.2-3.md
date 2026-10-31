@@ -61,7 +61,7 @@ $$
 $$
 Since $H^{2m+2}(\CP^n;\ZZ)$ is torsion-free and $\beta_n^{m+1}\ne0$, this forces $d=0$. Hence $f^*:H^2\to H^2$ is zero.
 
-For Borsuk--Ulam, suppose $f:S^n\to\RR^n$ satisfies $f(x)\ne f(-x)$ for all $x$. Then
+For $n=0$, the target $\RR^0$ is a point, so the theorem is immediate. For $n=1$, choose a path in $S^1$ from $x$ to $-x$. The continuous real function $y\mapsto f(y)-f(-y)$ has opposite values at the endpoints, so it vanishes somewhere. Now let $n\ge2$ and suppose $f:S^n\to\RR^n$ satisfies $f(x)\ne f(-x)$ for all $x$. Then
 $$
 g(x)=\frac{f(x)-f(-x)}{\norm{f(x)-f(-x)}}
 $$
