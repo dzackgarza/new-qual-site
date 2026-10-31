@@ -24,7 +24,7 @@ audit:
 
 ::: {.problem}
 Let $X$ be a noetherian separated scheme.
-For nonempty $X$, define its **cohomological dimension**, denoted $\operatorname{cd}(X)$, to be the least integer $n$ such that $H^i(X,\mcf)=0$ for every quasi-coherent sheaf $\mcf$ and every $i>n$.
+For nonempty $X$, define its \dfn{cohomological dimension}, denoted $\operatorname{cd}(X)$, to be the least integer $n$ such that $H^i(X,\mcf)=0$ for every quasi-coherent sheaf $\mcf$ and every $i>n$.
 Set $\operatorname{cd}(\varnothing)=-\infty$.
 
 Thus for nonempty $X$, Serre's theorem (3.7) says that $\operatorname{cd}(X)=0$ if and only if $X$ is affine.

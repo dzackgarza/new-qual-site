@@ -19,8 +19,10 @@ Let $f: X \to Y$ be an affine morphism of noetherian separated schemes (II, Ex.
 $$
 H^i(X, \mcf) \cong H^i(Y, f_* \mcf).
 $$
+:::
 
-Hint: Use (II, 5.8).
+::: {.hint}
+Use (II, 5.8).
 :::
 
 ::: {.solution}
