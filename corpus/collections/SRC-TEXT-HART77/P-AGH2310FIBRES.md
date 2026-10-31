@@ -37,7 +37,7 @@ audit:
 
    - If $\eta$ is the generic point of $Y$, show that $X_\eta$ is a one-point scheme whose residue field is an extension of degree two of the residue field of $\eta$.
 
-   (Assume $k$ algebraically closed.)
+   (Assume $k$ algebraically closed of characteristic different from $2$.)
 :::
 
 ::: {.solution}
