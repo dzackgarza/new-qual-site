@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem cards
 
-69 problem cards have no solution section. These are
+53 problem cards have no solution section. These are
 the cards issue #2 targets: write a Lamport-style structured proof for each.
 
 Regenerate with `just unsolved` after a card gains a solution. CI publishes
@@ -10,9 +10,9 @@ regeneration, and writing the solution removes the line.
 
 ## Count
 
-- Problems: 69
+- Problems: 53
 
-## Problems (69)
+## Problems (53)
 
 - [ ] E-SS10.PR-6 — "Eight squares from an Eisenstein series"
 - [ ] E-SS2.PR-4 — "Converse of Runge's theorem"
@@ -53,33 +53,17 @@ regeneration, and writing the solution removes the line.
 - [ ] P-IH43M — "Values of $b$ for which $X^2=B$ has finitely many, but at least one, real $3\times3$ solutions, $B$ tridiagonal with entries $1,b$"
 - [ ] P-MH07-JAN06-03 — "Definition of the tangent bundle, and $TS^2$ is not diffeomorphic to $S^2\times\RR$"
 - [ ] P-PUS07 — "The ring of invariants $\CC[x_1,\ldots,x_n]^G$ of a subgroup $G\le S_n$ is a finitely generated $\CC$-algebra"
-- [ ] P-Q73UJ — "A module vanishes if and only if all its localizations at maximal ideals vanish, and a nonzero module over a local ring with $M/\mathfrak mM=0$"
 - [ ] P-Q7LG0 — "For an abelian group $G$, the group ring $\ZZ[G]$ is Noetherian if and only if $G$ is finitely generated"
 - [ ] P-R44X8 — "Projective modules over $k[\ZZ/p]\cong k[t]/(t^p)$ in characteristic $p$ and the rank of $\Sigma-\operatorname{Id}$"
-- [ ] P-TAMURAS15-02 — "An $L^1$-convergent sequence has an a.e.-convergent subsequence"
 - [ ] P-TAMURAS15-10 — "Extending an equivalent norm from a subspace of a normed space"
 - [ ] P-TOP-WORKSHOP-D9-HW2 — "Homology of the torus $T^2=S^1\times S^1$"
 - [ ] P-TSQDV — "The Heisenberg group $H_n$ as upper unitriangular matrices over $\ZZ/n\ZZ$, and the irreducible representations of $H_p$"
-- [ ] P-UCI13H3-2 — "Zeros of $\alpha e^z-z$ in the unit disk"
-- [ ] P-UCI13H3-3 — "A bound $\abs{f^{(n)}(z)}\le\abs z^{-n}$ makes the origin removable"
 - [ ] P-UCI13H3-4 — "Conformal map of a disk cut by a horizontal chord onto the disk"
-- [ ] P-UCI13H3-5 — "$\oint_{\abs z=2}\frac{4z^7-1}{z^8-2z+1}\,dz$"
-- [ ] P-UCI13H3-6 — "When analyticity of $f^2$ forces analyticity of $f$"
-- [ ] P-UCI13H3-7 — "An entire function bounded by $1+\abs z^{\sqrt{2010}}$ is a polynomial of degree at most $44$"
-- [ ] P-UCI18H5-1 — "Product of the multipliers at the two fixed points of a Möbius map"
-- [ ] P-UCI18H5-2 — "$z/2$ and $z/3$ are topologically but not conformally conjugate"
-- [ ] P-UCI18H5-3 — "Iterates of a disk self-map fixing the origin converge locally uniformly to zero unless it is a rotation"
-- [ ] P-UWALG05-6 — "Characteristic polynomials of $f(A)$ when $A^p=I$ in characteristic $p$"
-- [ ] P-UWALG06-1 — "A finitely generated abelian group killed by tensoring with every field is zero"
-- [ ] P-UWALG06-2 — "Eigenvalues of a matrix with $A(A^c)^T=I_n$ satisfy $\lambda c(\lambda)=1$"
 - [ ] P-UWALG06-6 — "Maximal and prime ideals of $\ZZ[x]$"
-- [ ] P-UWALG07-4 — "$\ZZ[i]$ is a UFD; is $\ZZ[\sqrt{-5}]$?"
 - [ ] P-UWALG07-5 — "A UFD is integrally closed; integral closures of $k[x,y]/(x^2-y^3)$ and $k[x,y,z]/(x^2-y^2z)$"
-- [ ] P-UWALG07-6 — "If $A^7=\operatorname{id}$ on a $\QQ$-vector space and $1$ is not an eigenvalue, then $6\mid\dim V$"
 - [ ] P-UWALG07-7 — "Symplectic bases and the dimension of isotropic subspaces"
 - [ ] P-UWALG07-8 — "Unit quaternions, $\SU(2)$, and $\SU(2)/U(1)\cong S^2$"
 - [ ] P-UWALG08-4 — "Every $\CC$-subalgebra of $\CC[x]$ is finitely generated"
 - [ ] P-UWALG10-6 — "Abelian Galois groups make every subextension Galois; $\QQ(\sqrt{1+\sqrt2})$ and its Galois closure"
 - [ ] P-UWALG11-1 — "Two elements of order $n$ in $\operatorname{PGL}_2(\CC)$: one is conjugate to a power of the other"
-- [ ] P-UWALG11-7 — "For finitely generated $\ZZ$-modules, $M\otimes_\ZZ N=0$ if and only if $\operatorname{Ann}(M)+\operatorname{Ann}(N)=(1)$"
 - [ ] P-ZNP0B — "For a finite abelian group $A$, $\Hom_\ZZ(A,\QQ/\ZZ)\cong\Ext^1_\ZZ(A,\ZZ)\cong A$"
