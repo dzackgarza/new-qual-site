@@ -24,6 +24,12 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete cellular/Euler-characteristic computation checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the computation: $\chi(M_g)=2-2g$, multiplicativity under an $n$-sheeted covering gives
+    $2-2g=n(2-2h)$, and dividing by $-2$ gives $g=n(h-1)+1$ with $n$ the number of sheets.
 ---
 
 ::: {.problem}

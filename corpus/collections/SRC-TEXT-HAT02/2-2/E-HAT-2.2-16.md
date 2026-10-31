@@ -30,6 +30,16 @@ audit:
     The card wrote the vertices of the simplex as the Greek letter, `\nu_0`,
     where Hatcher writes them `v_0`; the vertex symbol is restored throughout.
     Found by comparing the statement with the printed exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the ranks: $\operatorname{rank}C_i=\binom{n+1}{i+1}$ with the induction
+    $\binom{n+1}{i+1}-\binom{n}{i}=\binom{n}{i+1}$ simultaneously for cycles and boundaries, and
+    $\binom{n}{k+1}$ for the top group of the $k$-skeleton. The degree-zero case of the third step
+    as written compared $Z_0/B_0$ with the reduced homology of the simplex; that comparison is only
+    valid in the augmented complex, where $\partial_0$ is the augmentation, and the step is
+    repaired to say so.
 ---
 
 ::: {.problem}
@@ -126,13 +136,13 @@ $$
 
 ::: pf-proof
 
-In degrees at most $k$, the chain groups and boundary maps of $K$ agree with those of the full simplex. If $i<k$, then both $C_i$ and $C_{i+1}$ are present, so
+Work in the augmented chain complexes, in which $\partial_0$ is the augmentation $C_0\to\ZZ$; there $Z_0$ is the kernel of the augmentation rather than $C_0$. In degrees at most $k$ the chain groups and boundary maps of $K$ agree with those of the full simplex. If $i<k$, then $\partial_{i+1}$ is present in both, so
 $$
 Z_i(K)=Z_i(\Delta^n),
 \qquad
 B_i(K)=B_i(\Delta^n).
 $$
-Since the full simplex has zero reduced homology, the quotient $Z_i/B_i$ is zero.
+The augmented complex of $\Delta^n$ is exact, so its cycles and boundaries agree in every degree, and the quotient $Z_i(K)/B_i(K)$ is zero.
 
 :::
 

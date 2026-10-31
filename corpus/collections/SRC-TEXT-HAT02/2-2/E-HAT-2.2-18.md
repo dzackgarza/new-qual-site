@@ -24,6 +24,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete cellular-chain proof checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the construction: $H_n(X^n,X^{n-1}\cup A^n)$ is free on the $n$-cells outside $A$ and
+    agrees with the quotient $C_n^{CW}(X)/C_n^{CW}(A)$; the quotient differential is well defined
+    because $C_*^{CW}(A)$ is a subcomplex, so it squares to zero; and the short exact sequence of
+    chain complexes with the five lemma identifies the homology of the quotient with $H_n(X,A)$,
+    the comparison maps coming from naturality of the cellular-to-singular isomorphism.
 ---
 
 ::: {.problem}

@@ -24,6 +24,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete Mayer--Vietoris/algebraic proof checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the three steps: the projection retracts $X\times S^n$ onto $X\times\{x_0\}$, so the
+    pair's sequence splits and $H_i$ of the product is $H_i(X)$ plus the relative group; relative
+    Mayer-Vietoris over the two hemispheres, each retracting to the basepoint copy of $X$, shifts
+    degree by one; and iterating to $S^0$, where the pair adds one copy of $X$, gives $H_{i-n}(X)$.
 ---
 
 ::: {.problem}

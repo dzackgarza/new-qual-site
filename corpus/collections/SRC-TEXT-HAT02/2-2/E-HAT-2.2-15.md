@@ -24,6 +24,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof checked via cellular homology, covering spaces, and degree.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: $H_{n-1}(X^{n-2})=0$ makes $H_{n-1}(X^{n-1})\to H_{n-1}(X^{n-1},X^{n-2})$
+    injective and $H_n(X^{n-1})=0$ makes $H_n(X^n)\to H_n(X^n,X^{n-1})$ injective, so
+    $\ker d_n=\ker\partial$ is the image of $H_n(X^n)$; that relative group is free on the
+    $n$-cells, and a subgroup of a free abelian group is free.
 ---
 
 ::: {.problem}

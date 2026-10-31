@@ -20,6 +20,16 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 2.2, Exercise 37.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the derivation: for subcomplexes of a $\Delta$-complex every simplex of $A\cup B$ lies in
+    $A$ or in $B$ and one lying in both lies in $A\cap B$, so
+    $0\to C_*(A\cap B)\to C_*(A)\oplus C_*(B)\to C_*(X)\to0$ is degreewise short exact and the maps
+    commute with boundaries; its homology sequence is Mayer-Vietoris. This is exactly the point at
+    which the $\Delta$-complex hypothesis is used, the identity $C_*(A+B)=C_*(X)$ failing for
+    singular chains. The two closing steps are read at the level of their claims.
 ---
 
 ::: {.problem}

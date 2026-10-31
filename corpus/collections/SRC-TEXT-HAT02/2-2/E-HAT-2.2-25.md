@@ -29,6 +29,16 @@ audit:
   note: >-
     The book numbers the three clauses (a), (b), (c); the card printed (i), (ii), (iii).
     STYLE-05 keeps the source's labels, so they are restored.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the uniqueness induction: $\varphi(\mathrm{pt})=0$ from $S^0$ split at one of its points,
+    $\varphi(D^k)=0$ from $D^k$ cut into two half-balls, $\varphi(S^k)=(-1)^kn$ from
+    $D^k/S^{k-1}=S^k$, the value $(r-1)n$ on $r$ points, and the skeletal sum $n(\chi-1)$;
+    existence is then checked against the three axioms, with
+    $\tilde\chi(X)=\tilde\chi(A)+\tilde\chi(X/A)$ from cell counts, and homotopy invariance through
+    $\chi=\sum_i(-1)^i\dim H_i(\cdot;\QQ)$.
 ---
 
 ::: {.problem}

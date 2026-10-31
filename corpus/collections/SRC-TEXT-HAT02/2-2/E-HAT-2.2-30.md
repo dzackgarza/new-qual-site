@@ -23,6 +23,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete Mayer--Vietoris/Wang-sequence calculation checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read all five mapping tori against the Wang sequence. (a) multiplication by $2$ on $H_2$ gives
+    $\ZZ_2$. (b) multiplication by $-1$ is an isomorphism, so degrees at least two vanish. (c)
+    $\mathrm{diag}(1,-1)$ on $H_1$ gives $\ZZ\oplus\ZZ_2$ in degree one and, together with the
+    $\ZZ_2$-cokernel on $H_2$, $\ZZ\oplus\ZZ_2$ in degree two. (d) $2I$ on $H_1$ and the identity
+    on $H_2$ give $(\ZZ_2)^2\oplus\ZZ$, $\ZZ$ and $\ZZ$ in degrees $1,2,3$. (e) the matrix with
+    Smith form $\mathrm{diag}(1,2)$ and determinant $1$ gives $\ZZ_2\oplus\ZZ$, $\ZZ$ and $\ZZ$.
 ---
 
 ::: {.problem}

@@ -24,6 +24,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof checked via cellular homology, covering spaces, and degree.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both halves: collapsing the 1-skeleton collapses the boundary of the unique 2-cell, and
+    the cellular chain map is the identity on $C_2$ while both differentials vanish, so $q_*$ is an
+    isomorphism on $H_2$ and $q$ is not nullhomotopic; the lift to the universal cover $\RR^2$
+    exists since $S^2$ is simply connected, and contractibility of $\RR^2$ together with the
+    covering map gives the nullhomotopy.
 ---
 
 ::: {.problem}

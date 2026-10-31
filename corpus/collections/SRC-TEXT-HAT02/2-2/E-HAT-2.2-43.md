@@ -24,6 +24,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete Mayer--Vietoris/algebraic proof checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the splitting: $C_n=K_n\oplus L_n$ over the free quotient gives the two-term subcomplexes
+    $L_{n+1}\to K_n$; Smith normal form splits each into $\ZZ\xrightarrow{m}\ZZ$ and one-term $\ZZ$
+    summands; and tensoring with $G$ gives $G/mG$ in the lower degree and $\ker(m:G\to G)$ in the
+    upper, which is the stated decomposition of $H_n(X;G)$.
 ---
 
 ::: {.problem}

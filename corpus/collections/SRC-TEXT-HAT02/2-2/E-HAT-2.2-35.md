@@ -21,6 +21,15 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 2.2, Exercise 35.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: the mapping cylinder retracts to $X$ and its complement of the base is
+    $S\times[0,1)$; the open mapping cylinder and the open complement of the compact $X$ form an
+    excisive cover of $\RR^3$, and Mayer-Vietoris gives
+    $H_1(S)\cong H_1(X)\oplus H_1(\RR^3\setminus X)$, so $H_1(X)$ is a direct summand of a free
+    group and cannot have torsion.
 ---
 
 ::: {.problem}

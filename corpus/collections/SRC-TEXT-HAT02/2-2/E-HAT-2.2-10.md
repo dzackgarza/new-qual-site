@@ -23,6 +23,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete degree/cellular proof checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both cases: the quotient equator is $\RP^1$, the two hemispheres are 2-cells attached by
+    degree-$\pm2$ maps, so $\mathrm{im}\,d_2=2\ZZ$ and $\ker d_2\cong\ZZ$; for $S^3$ the 2-skeleton
+    is $\RP^2$ and both 3-cells attach as in $\RP^3$, where the coefficient is $1+(-1)^3=0$, so
+    $H_3\cong\ZZ^2$ and $H_2=0$.
 ---
 
 ::: {.problem}

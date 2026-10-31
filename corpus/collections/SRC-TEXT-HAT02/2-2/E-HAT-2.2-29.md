@@ -24,6 +24,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete Mayer--Vietoris/Wang-sequence calculation checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the double: $R$ is a genus-$g$ handlebody, $i_*:\ZZ^{2g}\to\ZZ^g$ is onto with kernel
+    $\ZZ^g$, and Mayer-Vietoris gives $H_3=\ZZ$, $H_2=\ZZ^g$ from the kernel of $(i_*,-i_*)$ and
+    $H_1=\ZZ^g$ from its anti-diagonal cokernel. Read the relative groups from the long exact
+    sequence of $(R,M_g)$: $H_3=\ZZ$, $H_2=\ZZ^g$, $H_1=H_0=0$, consistent with Lefschetz duality
+    for a compact $3$-manifold with boundary.
 ---
 
 ::: {.problem}

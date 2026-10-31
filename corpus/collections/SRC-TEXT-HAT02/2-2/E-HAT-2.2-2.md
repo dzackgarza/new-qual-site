@@ -20,6 +20,16 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 2.2, Exercise 2.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both parts: a fixed-point-free map of $S^{2n}$ has degree $(-1)^{2n+1}$, $-f$ is
+    fixed-point-free exactly when $f$ avoids $-x$, and $\deg(-f)=-\deg f$ gives the contradiction;
+    the lift of $g\circ p$ through $p$ exists because $\pi_1(S^{2n})=0$ and $[x]=[-x]$ turns
+    $\tilde g(x)=\pm x$ into a fixed class; and a real-eigenvector-free matrix is injective on
+    lines, so it induces a fixed-point-free map of $\RP^{2n-1}$, with the block rotation having
+    eigenvalues $\pm i$.
 ---
 
 ::: {.problem}

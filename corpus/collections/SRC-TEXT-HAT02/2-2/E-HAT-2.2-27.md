@@ -24,6 +24,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the two points: a degreewise section need not commute with boundaries, so it does not take
+    relative cycles to absolute cycles and does not pass to homology; the connecting map of the
+    long exact sequence is the obstruction, being zero exactly when the chain sequence splits; and
+    $(D^n,S^{n-1})$ has both absolute groups zero and the relative group $\ZZ$.
 ---
 
 ::: {.problem}

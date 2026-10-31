@@ -47,9 +47,9 @@ marked proposed. `E-HAT-1.A-8` is settled: `proofs/cards/SubgroupFiniteness.lean
 generating family has finitely many subgroups of a given nonzero index, with no `sorryAx`.
 
 `ad-text-hat02` is partly read, against the book itself
-(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §2.1; proofs are
-read for §1.1, §1.2, §1.A, §1.B-1..-4 and §2.1-1..-17. Exact scope, with no section counted as read
-beyond it:
+(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §2.2; proofs are
+read for §1.1, §1.2, §1.A, §1.B-1..-4, §2.1-1..-17 and all of §2.2. Exact scope, with no section
+counted as read beyond it:
 §1.1: 20 statements compared, the twelve solved proofs read line by line, `E-HAT-1.1-17` repaired.
 §1.2: 22 statements compared, all 22 proofs read line by line; `E-HAT-1.2-12`, `-14`, `-16` closing
 steps repaired, `E-HAT-1.2-22` restructured into one proof and its subcomplex framing corrected.
@@ -66,9 +66,18 @@ level of their claims, as their notes say.
 the remaining ten (`-6`, `-8`, `-10`, `-17`, `-23`, `-24`, `-25`, `-27`, `-28`, `-29`) are reviewed at
 the level their notes describe, not line by line.
 §2.2: all 43 statements compared with the printed exercises (the book deletes exercise 34) and all agree;
-the labels of exercise 25 were (i)–(iii) where the book prints (a)–(c) and are restored. No §2.2 proof is
-read yet.
-Unread entirely: the proofs of §2.2 onward, and the statements of §2.3, §3.1 and §4 onward.
+the labels of exercise 25 were (i)–(iii) where the book prints (a)–(c) and are restored. All 41 stored
+proofs are read line by line. `E-HAT-2.2-16`'s degree-zero step is repaired to compare cycles and
+boundaries in the augmented complex, where that quotient is the reduced homology; `E-HAT-2.2-39` is
+recorded as proving the sequence under the hypothesis $C\subset A$, $D\subset B$, which its argument uses
+and which the printed alternative "with $A=B$ or $C=D$" neither states nor needs. The four complexes of
+exercise 9 are recomputed here and the card's answers hold: in (c) the connecting map on the relative
+fundamental class is $(-1)+1+1$, odd for either orientation convention, so $H_2=0$ and $H_1\cong\ZZ^2$;
+in (d) the attaching word $a^mb^na^{-m}b^{-n}$ has vanishing exponent sums, so $H_1\cong\ZZ^2$ and
+$H_2\cong\ZZ$. The two graphs of exercise 24 are checked against the printed figure to be $K_5$ and
+$K_{3,3}$.
+Unread entirely: the proofs of §1.3 beyond the ten listed, of §1.B-5..-9 and of §2.1-6, -8, -10, -17,
+-23..-25, -27..-29, the proofs of §2.3 onward, and the statements of §2.3, §3.1 and §4 onward.
 
 ## Fast local checks and complete CI acceptance
 

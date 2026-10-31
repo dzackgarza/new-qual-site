@@ -23,10 +23,11 @@ audit:
   by: claude
   date: 2026-10-31
   note: >-
-    The abelianization of the presentation of card E-HAT-1.2-14 is certified in
-    proofs/cards/DeltaComplexHomology.sage: Sage's ChainComplex on the relation matrix gives
-    homology C2 + C2 in degree 0, i.e. H_1 = Z/2 + Z/2. Identifying H_1 with the abelianization of
-    pi_1 is a theorem, not part of the computation.
+    Read the cellular computation against the 1.2-14 presentation: the columns $i-j-k$, $-i+j-k$,
+    $-i-j+k$ form $2I-J$, with eigenvalues $-1,2,2$; the map is injective, its Smith invariants are
+    $1,2,2$, so $H_1=\ZZ/2\oplus\ZZ/2$, and injectivity of $d_2$ forces $d_3=0$ and $H_3=\ZZ$. The
+    abelianization itself is the certified Sage computation in
+    proofs/cards/DeltaComplexHomology.sage.
 
     Rerun on the supported Sage development image: Sage 11.0.beta5, Python 3.14.10, source
     HEAD b0cd7d86e2, all checks passing there.

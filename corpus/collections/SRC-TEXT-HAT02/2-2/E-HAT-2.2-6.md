@@ -23,6 +23,12 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof reviewed using degree theory and orthogonal-group homotopies.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: $SO(n+1)$ acts transitively on $S^n$ and is path connected for $n\ge1$, so
+    $R_t\circ f$ runs from $f$ to a map carrying $f(x_0)$ to $x_0$.
 ---
 
 ::: {.problem}

@@ -23,6 +23,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete degree/cellular proof checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof: properness of a polynomial extends it to $S^2$ by $\hat f(\infty)=\infty$; the
+    homotopy $f_t$ keeps the leading coefficient, so it is uniformly proper and extends as well;
+    $a_mz^m$ has degree $m$ because a regular value has $m$ preimages each of local degree $+1$;
+    and the local degree at a root is the winding number of $(z-z_0)^kg(z)$, the factor $g$
+    contributing none since it is nonzero on the disc.
 ---
 
 ::: {.problem}

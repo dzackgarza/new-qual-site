@@ -23,6 +23,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof checked via cellular homology, covering spaces, and degree.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read all three parts: evenness factors $f$ through $q:S^n\to\RP^n$; $H_n(\RP^n)=0$ for even $n$
+    kills $q_*$; for odd $n$ the quotient is a 2-sheeted covering of oriented manifolds, so
+    $q_*[S^n]=2[\RP^n]$ and $\deg f$ is even; and for odd $n$ the top cellular boundary of $\RP^n$
+    vanishes, so collapsing $\RP^{n-1}$ gives a degree-one map $c$ and $h_k\circ c\circ q$ realizes
+    the degree $2k$.
 ---
 
 ::: {.problem}

@@ -20,6 +20,15 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 2.2, Exercise 24.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Compared the two figures with the printed page (page 158 of the text): the five-vertex graph is
+    $K_5$ and the six-vertex graph is $K_{3,3}$. Read the counts: $K_5$ forces $F=7$ against
+    $2E\ge3F$, and $K_{3,3}$ forces $F=5$ against $2E\ge4F$, the last bound using that a face of a
+    simple bipartite graph has at least four sides, a closed walk of length two needing a repeated
+    edge.
 ---
 
 ::: {.problem}

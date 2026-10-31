@@ -24,6 +24,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete Mayer--Vietoris/Wang-sequence calculation checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both Mayer-Vietoris computations. (a) the intersection circle maps to $(a,-2c)$, which is
+    injective with primitive image, so $H_1\cong\ZZ^2$ and $H_2\cong\ZZ$. (b) the map
+    $\ZZ\to\ZZ_2\oplus\ZZ$ is injective because of its infinite cyclic coordinate, so $H_2=0$, and
+    the cokernel has the presentation $\langle u,c\mid 2u=0,\ u=2c\rangle=\ZZ_4$.
 ---
 
 ::: {.problem}

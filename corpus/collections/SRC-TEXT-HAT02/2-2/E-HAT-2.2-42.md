@@ -20,6 +20,20 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 2.2, Exercise 42.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument in full. The topologically defined vertex set, the points with no Euclidean
+    neighbourhood, is the set of vertices of valence at least three and is preserved by every
+    homeomorphism; $g_*=\mathrm{id}$ forces $g$ to fix each circle, since $g_\#z_C=\pm z_{g(C)}$
+    and $z_C=-z_C$ would need $2=0$; every circle contains a vertex fixed by $g$, found from a
+    circle through an edge at a vertex of valence at least three; an invariant circle is then fixed
+    vertex by vertex and edge by edge; each bridge is determined by the partition of circles that
+    cutting it induces, which also fixes its endpoints; and finite order together with an
+    increasing self-map of each open edge forces the identity. The $\ZZ_2$ example is the theta
+    graph, where the reflection reverses every edge and so acts as $-\mathrm{id}$, which is the
+    identity on $H_1(\cdot;\ZZ_2)$ although $g$ is not the identity.
 ---
 
 ::: {.problem}

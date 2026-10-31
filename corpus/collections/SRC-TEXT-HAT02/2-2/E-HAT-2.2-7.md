@@ -24,6 +24,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete degree/cellular proof checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the three steps: a path in $GL_n(\RR)$ is a homotopy of pairs $(\RR^n,\RR^n-\{0\})$
+    because every $f_t$ is injective; $GL_n(\RR)$ has two components, distinguished by the
+    determinant, containing $I$ and $r=\mathrm{diag}(-1,1,\dots,1)$; and under the boundary
+    isomorphism $r$ induces the reflection of $S^{n-1}$, of degree $-1$.
 ---
 
 ::: {.problem}
