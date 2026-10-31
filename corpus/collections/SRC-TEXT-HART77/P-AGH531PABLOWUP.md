@@ -17,17 +17,22 @@ audit:
   date: 2026-09-19
   note: >-
     Read Hartshorne V.3.1 and the retained Egbert companion calculation. The
-    source explicitly reduces the exercise to Hartshorne V.3.4, which gives
-    H^i(\tilde X,O_{\tilde X}) isomorphic to H^i(X,O_X) for the blowup of a
-    nonsingular variety along a nonsingular centre. The repository blowup
-    summary records the same invariance of chi(O). The proof below then uses
-    the intrinsic definition p_a=(-1)^dim(chi(O)-1).
+    source states the invariance of arithmetic genus under a blowup of a
+    smooth centre. The proof uses vanishing of higher direct images of the
+    structure sheaf and the definition p_a=(-1)^dim(chi(O)-1).
 - event: solution-written
   by: chatgpt
   date: 2026-09-19
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-19
+- event: source-checked
+  by: chatgpt
+  date: 2026-10-31
+  note: >-
+    V.3.4 concerns Hilbert-Samuel multiplicity, not blowup cohomology.
+    Replaced the false cross-reference with the projective birational
+    vanishing theorem of Chatzistamatiou and Rulling, Theorem 1.1.
 ---
 
 ::: {.problem}
@@ -57,14 +62,19 @@ H^i(X,\OO_X).}
 $$
 
 ::: pf-proof
-This is Hartshorne V.3.4, applied to the blowup
+The blowup of a nonsingular variety along a nonsingular centre is
+nonsingular, and the blowup morphism $\pi$ is projective and birational.
+Both varieties are excellent because they are of finite type over $k$.
+[Chatzistamatiou--Rülling, Theorem 1.1](https://arxiv.org/abs/1404.1827)
+therefore gives
 $$
-\pi:\widetilde X=\operatorname{Bl}_Y X\longrightarrow X
+R^j\pi_*\OO_{\widetilde X}=0\qquad(j>0).
 $$
-of the nonsingular projective variety $X$ along the nonsingular centre $Y$.
-It is exactly the blowup-cohomology statement cited by the source solution to
-V.3.1.  In the surface case the same fact is recorded in [[FE-SRFBLOW]] as
-the invariance of $\chi(\OO)$, $p_g$, and $q$.
+Since $X$ is normal and $\pi$ is proper and birational,
+$$
+\pi_*\OO_{\widetilde X}=\OO_X.
+$$
+The Leray spectral sequence now gives the displayed isomorphisms.
 :::
 
 :::
