@@ -23,158 +23,85 @@ Find a way of identifying pairs of faces of $\Delta^3$ to produce a $\Delta$-com
 :::
 
 ::: {.solution}
+Write $\Delta^3=[v_0,v_1]*[v_2,v_3]$ as the join of its two opposite edges. Pair the faces $[v_1,v_2,v_3]$ and $[v_0,v_2,v_3]$ by sending $v_1$ to $v_0$ and fixing $v_2,v_3$. Pair $[v_0,v_1,v_3]$ and $[v_0,v_1,v_2]$ by sending $v_3$ to $v_2$ and fixing $v_0,v_1$.
+
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-Construct the $\Delta$-complex by identifying the four faces of $\Delta^3$ in two pairs.
-
-::: pf-proof
-
-::: pf-step
-
-Label the vertices $v_0, v_1, v_2, v_3$ and the faces $F_0 = [v_1,v_2,v_3]$, $F_1 = [v_0,v_2,v_3]$, $F_2 = [v_0,v_1,v_3]$, $F_3 = [v_0,v_1,v_2]$.
+The face-paired quotient is homeomorphic to $S^3$.
 
 ::: pf-proof
 
-these are the four $2$-faces of the tetrahedron $\Delta^3$.
+The first pairing identifies the two endpoints of $[v_0,v_1]$ throughout its join with $[v_2,v_3]$. The second does the same for $[v_2,v_3]$. Thus the quotient is
+$$
+([v_0,v_1]/(v_0\sim v_1))*([v_2,v_3]/(v_2\sim v_3))
+\cong S^1*S^1\cong S^3.
+$$
+The last homeomorphism sends the join class of $(z,w,t)$ to $(\sqrt{1-t}\,z,\sqrt{t}\,w)$ in the unit sphere of $\CC^2$.
+The face pairings are affine and preserve vertex order on each paired face, so they also give the requested $\Delta$-complex structure.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
-Identify $F_0 \sim F_1$ (sending $v_1 \mapsto v_0$) and $F_2 \sim F_3$ (sending $v_3 \mapsto v_2$).
+The quotient has two vertices $A=[v_0]=[v_1]$ and $B=[v_2]=[v_3]$, three edges $a=[v_0,v_1]$, $b=[v_2,v_3]$, $c=[v_0,v_2]$, two faces $P=[v_1,v_2,v_3]$, $Q=[v_0,v_1,v_3]$, and one $3$-simplex $\sigma$.
 
 ::: pf-proof
 
-this glues the four faces in two pairs, as required.
+The face pairings identify the four edges joining one of $v_0,v_1$ to one of $v_2,v_3$, giving $c$. The opposite edges $a,b$ remain distinct. Each pair of faces gives one $2$-simplex.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
-The resulting $\Delta$-complex has one $3$-simplex, two $2$-simplices, three $1$-simplices, and two $0$-simplices.
+The simplicial boundary maps are
+$$
+\partial_3(\sigma)=0,\qquad
+\partial_2(P)=b,\qquad
+\partial_2(Q)=a,\qquad
+\partial_1(a)=\partial_1(b)=0,\qquad
+\partial_1(c)=B-A.
+$$
 
 ::: pf-proof
 
-the two face-pairs give two $2$-simplices $P = F_0 \sim F_1$ and $Q = F_2 \sim F_3$; the vertex identifications give $v_0 \sim v_1 =: A$ and $v_2 \sim v_3 =: B$; the six edges collapse to three: the loop $e_{01} = [v_0,v_1]$ at $A$, the loop $e_{23} = [v_2,v_3]$ at $B$, and a single edge $c$ from $A$ to $B$ (the four cross-edges $[v_0,v_2], [v_0,v_3], [v_1,v_2], [v_1,v_3]$ are all identified).
+With the chosen face orientations,
+$$
+\partial_3(\sigma)=P-P+Q-Q=0.
+$$
+The simplicial face formulas give
+$$
+\partial P=[v_2,v_3]-[v_1,v_3]+[v_1,v_2]=b-c+c=b
+$$
+and
+$$
+\partial Q=[v_1,v_3]-[v_0,v_3]+[v_0,v_1]=c-c+a=a.
+$$
+The edge boundaries follow from their endpoints.
 
 :::
 
 :::
 
-:::
+::: {.pf-step #s4}
 
-:::
-
-::: pf-step
-
-The simplicial boundary maps are $\partial_3 = 0$, $\partial_2(P) = e_{23}$, $\partial_2(Q) = e_{01}$, $\partial_1(e_{01}) = \partial_1(e_{23}) = 0$, and $\partial_1(c) = B - A$.
+The simplicial homology groups are
+$$
+\boxed{H_0\cong H_3\cong\ZZ,\qquad H_1=H_2=0,\qquad H_k=0\ (k>3).}
+$$
 
 ::: pf-proof
 
-::: pf-step
-
-$\partial_3 = 0$.
-
-::: pf-proof
-
-$\partial_3(\sigma) = F_0 - F_1 + F_2 - F_3 = P - P + Q - Q = 0$.
-
-:::
-
-:::
-
-::: pf-step
-
-$\partial_2(P) = e_{23}$ and $\partial_2(Q) = e_{01}$.
-
-::: pf-proof
-
-$\partial_2(F_0) = [v_2,v_3] - [v_1,v_3] + [v_1,v_2] = e_{23} - c + c = e_{23}$; $\partial_2(F_2) = [v_1,v_3] - [v_0,v_3] + [v_0,v_1] = c - c + e_{01} = e_{01}$.
-
-:::
-
-:::
-
-::: pf-step
-
-$\partial_1(e_{01}) = 0$, $\partial_1(e_{23}) = 0$, $\partial_1(c) = B - A$.
-
-::: pf-proof
-
-$e_{01}$ is a loop at $A$ and $e_{23}$ a loop at $B$, so their boundaries vanish; $c$ runs from $A$ to $B$.
+The chain groups in degrees $0$ through $3$ have ranks $2,3,2,1$. Step [](#s3){.pf-ref} shows that $\operatorname{im}\partial_1=\ZZ(B-A)$, $\ker\partial_1=\ZZ a\oplus\ZZ b=\operatorname{im}\partial_2$, $\ker\partial_2=0$, and $\ker\partial_3=\ZZ\sigma$. There are no higher simplices.
 
 :::
 
 :::
 
 :::
-
-:::
-
-::: pf-step
-
-$\boxed{H_0 \cong H_3 \cong \ZZ,\ H_1 = H_2 = 0}$, and $H_n = 0$ for $n > 3$.
-
-::: pf-proof
-
-::: pf-step
-
-$H_0 = \ZZ$.
-
-::: pf-proof
-
-$C_0 = \ZZ^2$ and $\im \partial_1 = \ZZ(B - A)$, so $H_0 = \ZZ^2/\ZZ = \ZZ$ (the space is connected).
-
-:::
-
-:::
-
-::: pf-step
-
-$H_1 = 0$.
-
-::: pf-proof
-
-$\ker \partial_1 = \ZZ e_{01} \oplus \ZZ e_{23} = \ZZ^2$, and $\im \partial_2 = \ZZ e_{23} \oplus \ZZ e_{01} = \ZZ^2$, so $H_1 = \ZZ^2/\ZZ^2 = 0$.
-
-:::
-
-:::
-
-::: pf-step
-
-$H_2 = 0$.
-
-::: pf-proof
-
-$\partial_2$ is injective (it sends the basis $P, Q$ to the independent elements $e_{23}, e_{01}$), so $\ker \partial_2 = 0$; hence $H_2 = 0/\im \partial_3 = 0$.
-
-:::
-
-:::
-
-::: pf-step
-
-$H_3 = \ZZ$.
-
-::: pf-proof
-
-$\ker \partial_3 = \ZZ$ and there is no $4$-simplex, so $H_3 = \ZZ/0 = \ZZ$.
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
 :::
