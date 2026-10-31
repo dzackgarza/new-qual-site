@@ -159,10 +159,10 @@ $$
 \boxed{\dim\Lambda=1}.
 $$
 
-As $t$ ranges through $k^\times$, the coefficient ratio $[t:2]$ ranges
-through the open subset of $\Lambda$ where both coordinates are nonzero. Its
-closure is the whole pencil. The missing boundary members are the expected
-projective limits $Q=0$ and $XZ=0$.
+The parameter morphism $\GG_{m,k}\to\Lambda$ sends $t$ to $[t:2]$ and
+identifies $\GG_{m,k}$ with the open subset where both coefficients are
+nonzero. Its scheme-theoretic closure is the whole pencil. The two boundary
+members are the projective limits $Q=0$ and $XZ=0$.
 :::
 
 :::
