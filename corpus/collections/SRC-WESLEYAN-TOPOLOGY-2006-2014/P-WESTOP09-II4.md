@@ -96,7 +96,7 @@ $\mu$.
 
 :::
 
-::: {.pf-step #s1-3}
+::: pf-step
 
 The relative homology of the solid torus and its boundary is
 $$
@@ -170,7 +170,7 @@ $$
 
 :::
 
-::: {.pf-step #s1-5}
+::: pf-step
 
 The homology of the complement is
 $$
@@ -212,12 +212,6 @@ is connected, so its unreduced $H_0$ is $\ZZ$. This gives the displayed
 answer in every degree.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1-3){.pf-ref} solves part 1 and step [](#s1-5){.pf-ref} solves part 2.
 
 :::
 
