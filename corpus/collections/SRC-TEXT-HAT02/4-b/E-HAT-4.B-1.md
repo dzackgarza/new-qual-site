@@ -21,107 +21,20 @@ Show that the Hopf invariant of a composition $S^{2n-1} \xrightarrow{f} S^{2n-1}
 :::
 
 ::: {.solution}
+For a map $h:S^{2n-1}\to S^n$, write $C_h=S^n\cup_h e^{2n}$. Choose generators $x_h\in H^n(C_h;\ZZ)$ and $y_h\in H^{2n}(C_h;\ZZ)$ compatible with orientations. The Hopf invariant is defined by
+$$
+x_h^2=H(h)y_h.
+$$
 
-::: pf
+First let $f:S^{2n-1}\to S^{2n-1}$ have degree $d$ and $g:S^{2n-1}\to S^n$. The commutative attaching-map square gives a map $C_{gf}\to C_g$ that is the identity on the bottom sphere and has degree $d$ on the top cell. Its cohomology map sends $x_g$ to $x_{gf}$ and $y_g$ to $d y_{gf}$. Pulling back $x_g^2=H(g)y_g$ gives
+$$
+x_{gf}^2=dH(g)y_{gf},
+$$
+so $H(gf)=dH(g)$.
 
-::: pf-step
-
-The Hopf invariant $H(g)$ is defined via the cohomology of the mapping cone $C_g$: $H(g)$ is the integer such that $\alpha \smile \alpha = H(g)\beta$ in $H^{2n}(C_g)$, where $\alpha \in H^n(C_g)$ and $\beta \in H^{2n}(C_g)$ are generators.
-
-::: pf-proof
-
-definition of the Hopf invariant.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-First composition: $S^{2n-1} \xrightarrow{f} S^{2n-1} \xrightarrow{g} S^n$.
-
-::: pf-proof
-
-::: pf-step
-
-The mapping cone $C_{gf}$ is homotopy equivalent to $C_g$ (since $f$ is a self-map of the domain sphere, and the cone of $gf$ is obtained from the cone of $g$ by precomposing the attaching map with $f$).
-
-::: pf-proof
-
-$C_{gf} = S^n \cup_{gf} e^{2n}$, and $C_g = S^n \cup_g e^{2n}$.
-
-:::
-
-:::
-
-::: pf-step
-
-The attaching map $gf$ is homotopic to $(\deg f) g$ in $\pi_{2n-1}(S^n)$.
-
-::: pf-proof
-
-precomposition by $f$ multiplies the homotopy class by $\deg f$ (the action of $\pi_{2n-1}(S^{2n-1}) = \ZZ$ on $\pi_{2n-1}(S^n)$).
-
-:::
-
-:::
-
-::: pf-step
-
-Hence $H(gf) = (\deg f) H(g)$.
-
-::: pf-proof
-
-the Hopf invariant is linear in the attaching map, so scaling the attaching map by $\deg f$ scales the Hopf invariant by $\deg f$.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Second composition: $S^{2n-1} \xrightarrow{f} S^n \xrightarrow{g} S^n$.
-
-::: pf-proof
-
-::: pf-step
-
-The mapping cone $C_{gf}$ has attaching map $gf$, and $gf$ is homotopic to $(\deg g) f$ in $\pi_{2n-1}(S^n)$.
-
-::: pf-proof
-
-postcomposition by $g$ multiplies the homotopy class by $\deg g$.
-
-:::
-
-:::
-
-::: pf-step
-
-The Hopf invariant satisfies $H(gf) = (\deg g)^2 H(f)$.
-
-::: pf-proof
-
-the Hopf invariant is a quadratic form on $\pi_{2n-1}(S^n)$ (for $n$ even it is a quadratic form; the general fact is that $H$ is a homomorphism for $n$ odd and a quadratic form for $n$ even, and in both cases postcomposition by a degree-$\deg g$ map multiplies $H$ by $(\deg g)^2$).
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
-
-:::
-
-:::
-
+Now let $f:S^{2n-1}\to S^n$ and let $g:S^n\to S^n$ have degree $d$. The attaching-map square gives a map $C_f\to C_{gf}$ that restricts to $g$ on the bottom sphere and has degree $1$ on the top cell. Its cohomology map sends $x_{gf}$ to $d x_f$ and $y_{gf}$ to $y_f$. Pulling back $x_{gf}^2=H(gf)y_{gf}$ gives
+$$
+d^2H(f)y_f=H(gf)y_f.
+$$
+Therefore $H(gf)=d^2H(f)$.
 :::
