@@ -177,12 +177,6 @@ By definition, a morphism is proper if it is separated, of finite type, and univ
 
 :::
 
-::: pf-qed
-
-Step [](#s6){.pf-ref} is the required conclusion.
-
-:::
-
 :::
 
 :::
