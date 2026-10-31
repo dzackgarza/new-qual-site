@@ -56,11 +56,7 @@ Borel's theorem expresses the finite-dimensional Hopf algebra $H^*(X;\FF_p)$ as 
 $$
 \FF_p[y]/(y^{p^k})
 $$
-with $\gradeddegree{y}$ even when $p$ is odd. If an exterior factor occurs, its Poincare polynomial vanishes at $-1$, giving $\chi(X)=0$, contradicting $\chi(X)=1$. If there are no exterior factors, every nontrivial truncated factor contributes
-$$
-1+1+\cdots+1=p^k
-$$
-to $P_{\FF_p}(-1)$, so $\chi(X)$ is divisible by $p$, again contradicting $\chi(X)=1$. Therefore $r=0$ is impossible.
+with $\gradeddegree{y}$ even when $p$ is odd. If an exterior factor occurs, its Poincare polynomial vanishes at $-1$, giving $\chi(X)=0$, contradicting $\chi(X)=1$. If there are no exterior factors, a nontrivial truncated factor contributes $p^k$ to $P_{\FF_p}(-1)$ when its generator has even degree. When $p=2$ and its generator has odd degree, the $2^k$ alternating terms instead sum to zero. In either case $P_{\FF_p}(-1)$ is divisible by $p$, again contradicting $\chi(X)=1$. Therefore $r=0$ is impossible.
 
 Hence necessarily
 $$
