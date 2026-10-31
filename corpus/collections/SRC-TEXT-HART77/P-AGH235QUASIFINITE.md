@@ -167,7 +167,7 @@ k[t]\longrightarrow k[t]/(t)\cong k.
 $$
 Since $X$ is the finite disjoint union of these two components, $f$ is of finite type.
 
-For $a\ne0$, the fibre over $a$ consists of the single point $a\in\Gm$.  The fibre over $0$ consists of the single extra point $\Spec k$.  Hence every fibre is finite, so $f$ is quasi-finite.
+Every point $y\in D(t)$, including the generic point of $\AA^1_k$, has a single preimage under the open immersion $\Gm\to\AA^1_k$. The fibre over the origin consists of the point in the second component. These are all the points of $Y$, so every fibre is finite and $f$ is quasi-finite.
 
 :::
 
