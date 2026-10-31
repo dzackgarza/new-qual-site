@@ -22,7 +22,7 @@ For the product topology, let $G_1, G_2, \ldots$ be dense open sets and $U_0$ a 
 $$
 \overline{U_n}\subset U_{n-1}\cap G_n,
 $$
-changing only finitely many coordinates at stage $n$ and choosing closed bounded coordinate intervals there. In each coordinate the resulting nested closed intervals have the finite intersection property; choosing one point in every coordinate gives a point of $U_0\cap\bigcap G_n$.
+changing only finitely many coordinates at stage $n$ and choosing closed bounded coordinate intervals there. In a coordinate that is ever restricted, the first closed bounded interval there is compact, and all later closed intervals are nested inside it, so their intersection is nonempty. Choose any real number in every coordinate never restricted. The resulting point lies in $U_0\cap\bigcap G_n$.
 
 For the box topology, perform the same construction coordinatewise, now shrinking every coordinate interval at stage $n$ and arranging diameter $<1/n$. Completeness of $\RR$ gives a point in every coordinate intersection, hence a point of $U_0\cap\bigcap G_n$.
 
