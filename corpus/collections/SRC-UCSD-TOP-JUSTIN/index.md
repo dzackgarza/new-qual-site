@@ -150,6 +150,8 @@ source:
     comment: Sheet 9, Problem 2(c)
   - id: P-UCTOP290-S9-3
     comment: Sheet 9, Problem 3
+  - id: E-HAT-2.2-21
+    comment: Sheet 9, Problem 4
   - P-AMD-E67LQFU5
   - P-AMD-MVCOFKIK
   - P-AMD-ES2H5QQF

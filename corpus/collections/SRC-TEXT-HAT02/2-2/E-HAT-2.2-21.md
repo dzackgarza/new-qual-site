@@ -48,3 +48,17 @@ $$
 \end{aligned}
 $$
 :::
+
+::: {.remark title="Variation"}
+If $Z=U\cup V$ with $U,V$ open, the same formula
+holds when the rational homology of
+$Z,U,V,U\cap V$ has finite rank and vanishes
+outside a bounded range. The Mayer--Vietoris
+sequence is then a bounded long exact sequence
+of finite-dimensional $\QQ$-vector spaces.
+Its alternating sum of dimensions is zero,
+which rearranges to
+$$
+\chi(Z)=\chi(U)+\chi(V)-\chi(U\cap V).
+$$
+:::
