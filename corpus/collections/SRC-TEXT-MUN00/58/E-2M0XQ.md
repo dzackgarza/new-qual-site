@@ -97,7 +97,7 @@ Spaces with fundamental group $\pi_1 \cong \ZZ$ (infinite cyclic):
 
 ::: pf-step
 
-**(j) $S^1 \cup (\RR_+ \times \RR)$:** The open right half-plane $\RR_+ \times \RR$ is convex (contractible) and contains the right half of $S^1$. The space deformation retracts onto the circle formed by the left half of $S^1$ and the segment $[0, 1] \times \{0\}$, giving $\pi_1 \cong \ZZ$.
+**(j) $S^1 \cup (\RR_+ \times \RR)$:** On the open right half-plane, move each point $z$ linearly to $z/\norm z$; the straight segment stays in the right half-plane because its first coordinate remains positive. Keep every point of $S^1$ fixed. These formulas agree and are continuous at the boundary points $(0,\pm1)$ of the right semicircle, so they give a deformation retraction onto $S^1$. Hence $\pi_1\cong\ZZ$.
 
 :::
 
@@ -126,7 +126,7 @@ Spaces with fundamental group $\pi_1 \cong \ZZ * \ZZ$ (figure eight):
 
 ::: pf-step
 
-**(k) $S^1 \cup (\RR \times \{0\})$:** The external rays $(-\infty, -1] \times \{0\}$ and $[1, \infty) \times \{0\}$ deformation retract onto $(-1, 0)$ and $(1, 0)$. The remaining space $S^1 \cup ([-1, 1] \times \{0\})$ is the theta space $\theta$, which deformation retracts onto $S^1 \vee S^1$. Hence $\pi_1 \cong \ZZ * \ZZ$.
+**(k) $S^1 \cup (\RR \times \{0\})$:** The external rays $(-\infty, -1] \times \{0\}$ and $[1, \infty) \times \{0\}$ deformation retract onto their endpoints. The remaining theta graph has two vertices, $(\pm1,0)$, and three edges: the two semicircles and the diameter. The diameter is a maximal tree. Collapsing it is a homotopy equivalence of graphs and gives $S^1\vee S^1$. Hence $\pi_1\cong\ZZ*\ZZ$.
 
 :::
 
@@ -149,7 +149,7 @@ Spaces with fundamental group $\pi_1 \cong \{1\}$ (trivial):
 
 ::: pf-step
 
-**(l) $\RR^2 \setminus (\RR_+ \times \{0\})$:** The slit plane is contractible via vertical deformation retraction onto the negative $x$-axis $(-\infty, 0] \times \{0\}$, which is itself contractible. Hence $\pi_1 \cong \{1\}$.
+**(l) $\RR^2 \setminus (\RR_+ \times \{0\})$:** The slit plane is star convex about $(-1,0)$. For a point off the $x$-axis, the open segment toward $(-1,0)$ keeps the same nonzero sign of its second coordinate; points on the retained part of the axis stay there. Straight-line contraction to $(-1,0)$ therefore remains in the slit plane, so $\pi_1\cong\{1\}$.
 
 :::
 
