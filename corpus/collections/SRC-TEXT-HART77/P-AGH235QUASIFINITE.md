@@ -25,11 +25,11 @@ audit:
 ::: {.problem}
 A morphism $f: X \to Y$ is **quasi-finite** if for every point $y \in Y$ the fibre $\inverseof{f}(y)$ is a finite set.
 
-a. Show that a finite morphism is quasi-finite.
+(a) Show that a finite morphism is quasi-finite.
 
-b. Show that a finite morphism is closed, that is, the image of any closed subset is closed.
+(b) Show that a finite morphism is closed, that is, the image of any closed subset is closed.
 
-c. Show by example that a surjective, finite-type, quasi-finite morphism need not be finite.
+(c) Show by example that a surjective, finite-type, quasi-finite morphism need not be finite.
 :::
 
 ::: {.solution}

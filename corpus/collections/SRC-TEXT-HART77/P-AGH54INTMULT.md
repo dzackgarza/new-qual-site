@@ -24,19 +24,19 @@ audit:
 
 ::: {.problem}
 Let $Y, Z \subseteq \AA^2$ be two distinct curves, given by equations $f = 0$ and $g = 0$.
-For $P \in Y \intersect Z$, define the *intersection multiplicity* $(Y \cdot Z)_P$ of $Y$ and $Z$ at $P$ to be the length of the $\mco_P\coloneqq$module $\mco_P / \generators{f, g}$.
+For $P \in Y \intersect Z$, define the *intersection multiplicity* $(Y \cdot Z)_P$ of $Y$ and $Z$ at $P$ to be the length of the $\mco_P$-module $\mco_P / \generators{f, g}$.
 
-1. Show that $(Y \cdot Z)_P$ is finite, and that $(Y \cdot Z)_P \geq \mu_P(Y) \cdot \mu_P(Z)$.
+(a) Show that $(Y \cdot Z)_P$ is finite, and that $(Y \cdot Z)_P \geq \mu_P(Y) \cdot \mu_P(Z)$.
 
-2. If $P \in Y$, show that for almost all lines $L$ through $P$, that is, all but a finite number, one has $(L \cdot Y)_P = \mu_P(Y)$.
+(b) If $P \in Y$, show that for almost all lines $L$ through $P$, that is, all but a finite number, one has $(L \cdot Y)_P = \mu_P(Y)$.
 
-3. If $Y$ is a curve of degree $d$ in $\PP^2$, and $L$ is a line in $\PP^2$ with $L \neq Y$, show that $(L \cdot Y) = d$.
-   Here $(L \cdot Y) = \sum (L \cdot Y)_P$, summed over all points $P \in L \intersect Y$, where $(L \cdot Y)_P$ is computed using a suitable affine cover of $\PP^2$.
+(c) If $Y$ is a curve of degree $d$ in $\PP^2$, and $L$ is a line in $\PP^2$ with $L \neq Y$, show that $(L \cdot Y) = d$.
+Here $(L \cdot Y) = \sum (L \cdot Y)_P$, summed over all points $P \in L \intersect Y$, where $(L \cdot Y)_P$ is computed using a suitable affine cover of $\PP^2$.
 :::
 
 ::: {.solution}
 Because $k$ is algebraically closed, every closed point considered below has residue field $k$.
-Translate coordinates in parts (1) and (2) so that $P=(0,0)$, and put
+Translate coordinates in parts (a) and (b) so that $P=(0,0)$, and put
 $$
 R=k[x,y]_{(x,y)},\qquad \mathfrak m=(x,y)R.
 $$
@@ -57,7 +57,7 @@ If a height-one prime contained both $f$ and $g$, that prime would be generated 
 Hence every prime containing $(f,g)$ has height two.
 After localizing at $(x,y)$, the quotient $R/(f,g)$ is therefore a noetherian local ring of dimension zero.
 Such a ring is Artinian, so it has finite length.
-This proves the finiteness assertion in part (1).
+This proves the finiteness assertion in part (a).
 :::
 
 :::
@@ -210,13 +210,13 @@ Summing over all intersection points gives
 $$
 (L\cdot Y)=\sum_i e_i=d.
 $$
-This proves part (3) directly from the degree of the restricted binary form.
+This proves part (c) directly from the degree of the restricted binary form.
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#finite-length){.pf-ref} and [](#intersection-mult-bound){.pf-ref} prove part (1), step [](#generic-line-equals-multiplicity){.pf-ref} proves part (2), and step [](#bezout-line-degree-d){.pf-ref} proves part (3).
+Steps [](#finite-length){.pf-ref} and [](#intersection-mult-bound){.pf-ref} prove part (a), step [](#generic-line-equals-multiplicity){.pf-ref} proves part (b), and step [](#bezout-line-degree-d){.pf-ref} proves part (c).
 :::
 
 :::

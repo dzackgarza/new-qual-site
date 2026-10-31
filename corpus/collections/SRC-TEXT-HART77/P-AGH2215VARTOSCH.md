@@ -23,12 +23,12 @@ audit:
 ---
 
 ::: {.problem}
-a. Let $V$ be a variety over the algebraically closed field $k$.
+(a) Let $V$ be a variety over the algebraically closed field $k$.
 Show that a point $P \in t(V)$ is a closed point if and only if its residue field is $k$.
 
-b. If $f: X \to Y$ is a morphism of schemes over $k$ and $P \in X$ is a point with residue field $k$, then $f(P) \in Y$ also has residue field $k$.
+(b) If $f: X \to Y$ is a morphism of schemes over $k$ and $P \in X$ is a point with residue field $k$, then $f(P) \in Y$ also has residue field $k$.
 
-c. Now show that if $V, W$ are any two varieties over $k$, then the natural map
+(c) Now show that if $V, W$ are any two varieties over $k$, then the natural map
 $$
 \Hom_{\mathsf{Var}_k}(V, W) \to \Hom_{\Sch_k}\qty{t(V), t(W)}
 $$

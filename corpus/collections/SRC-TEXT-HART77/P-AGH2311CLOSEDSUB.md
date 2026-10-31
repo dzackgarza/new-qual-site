@@ -23,15 +23,15 @@ audit:
 ---
 
 ::: {.problem}
-a. Closed immersions are stable under base extension: if $f: Y \to X$ is a closed immersion and $X' \to X$ is any morphism, then $f': \fiberprod{Y}{X}{X'} \to X'$ is also a closed immersion.
+(a) Closed immersions are stable under base extension: if $f: Y \to X$ is a closed immersion and $X' \to X$ is any morphism, then $f': \fiberprod{Y}{X}{X'} \to X'$ is also a closed immersion.
 
-b. If $Y$ is a closed subscheme of an affine scheme $X = \Spec A$, then $Y$ is also affine, and in fact $Y$ is the closed subscheme determined by a suitable ideal $\mfa \subseteq A$ as the image of the closed immersion $\Spec A/\mfa \to \Spec A$.
+(b) If $Y$ is a closed subscheme of an affine scheme $X = \Spec A$, then $Y$ is also affine, and in fact $Y$ is the closed subscheme determined by a suitable ideal $\mfa \subseteq A$ as the image of the closed immersion $\Spec A/\mfa \to \Spec A$.
 
-c. Let $Y$ be a closed subset of a scheme $X$ and give $Y$ the reduced induced subscheme structure.
+(c) Let $Y$ be a closed subset of a scheme $X$ and give $Y$ the reduced induced subscheme structure.
 If $Y'$ is any other closed subscheme of $X$ with the same underlying topological space, show that the closed immersion $Y \to X$ factors through $Y'$.
 We express this by saying that **the reduced induced structure is the smallest subscheme structure on a closed subset**.
 
-d. Let $f: Z \to X$ be a morphism.
+(d) Let $f: Z \to X$ be a morphism.
 Then there is a unique closed subscheme $Y$ of $X$ with the following property: the morphism $f$ factors through $Y$, and if $Y'$ is any other closed subscheme of $X$ through which $f$ factors, then $Y \to X$ factors through $Y'$ also.
 We call $Y$ the **scheme-theoretic image** of $f$.
 If $Z$ is a reduced scheme, then $Y$ is just the reduced induced structure on the closure of the image $f(Z)$.

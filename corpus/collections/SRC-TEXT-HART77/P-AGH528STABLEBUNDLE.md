@@ -48,11 +48,11 @@ $$
 .$$
 Replacing $>$ by $\geqslant$ defines **semistable**.
 
-a. A decomposable $\mathcal{E}$ is never stable.
+(a) A decomposable $\mathcal{E}$ is never stable.
 
-b. If $\mathcal{E}$ has rank 2 and is normalized, then $\mathcal{E}$ is stable (respectively, semistable) if and only if $\deg \mathcal{E}>0$ (respectively, $\geqslant 0$).
+(b) If $\mathcal{E}$ has rank 2 and is normalized, then $\mathcal{E}$ is stable (respectively, semistable) if and only if $\deg \mathcal{E}>0$ (respectively, $\geqslant 0$).
 
-c. Show that the indecomposable locally free sheaves $\mathcal{E}$ of rank 2 that are not semistable are classified, up to tensoring with an invertible sheaf, by giving
+(c) Show that the indecomposable locally free sheaves $\mathcal{E}$ of rank 2 that are not semistable are classified, up to tensoring with an invertible sheaf, by giving
 
    (1) an integer $0<e \leqslant 2 g-2$,
 

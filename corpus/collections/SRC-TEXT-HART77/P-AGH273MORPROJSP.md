@@ -31,10 +31,10 @@ Then
 (b) in the second case, let $\PP^r\subseteq\PP^m$ be the linear span of the image.
 Show that $\varphi$ can be obtained as the composition of
 
-    1. a $d$-uple embedding $\PP^n \to \PP^N$ for a uniquely determined $d \geq 1$,
-    2. a linear projection $\PP^N - L \to \PP^r$,
-    3. the standard linear inclusion $\PP^r\hookrightarrow\PP^m$, and
-    4. an automorphism of $\PP^m$ carrying that coordinate subspace to the image's linear span.
+    (i) a $d$-uple embedding $\PP^n \to \PP^N$ for a uniquely determined $d \geq 1$,
+    (ii) a linear projection $\PP^N - L \to \PP^r$,
+    (iii) the standard linear inclusion $\PP^r\hookrightarrow\PP^m$, and
+    (iv) an automorphism of $\PP^m$ carrying that coordinate subspace to the image's linear span.
 
 When the image is nondegenerate, $r=m$ and the inclusion is unnecessary.
 Also, $\varphi$ has finite fibres.

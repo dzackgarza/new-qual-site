@@ -25,9 +25,9 @@ audit:
 ::: {.problem}
 A sheaf $\mcf$ on a topological space $X$ is **flasque** if for every inclusion $V \subseteq U$ of open sets the restriction map $\mcf(U) \to \mcf(V)$ is surjective.
 
-a. Show that a constant sheaf on an irreducible topological space is flasque.
+(a) Show that a constant sheaf on an irreducible topological space is flasque.
 
-b. If
+(b) If
 $$
 0 \to \mcf' \to \mcf \to \mcf'' \to 0
 $$
@@ -37,15 +37,15 @@ $$
 $$
 of abelian groups is also exact.
 
-c. If
+(c) If
 $$
 0 \to \mcf' \to \mcf \to \mcf'' \to 0
 $$
 is an exact sequence of sheaves and $\mcf'$ and $\mcf$ are flasque, then $\mcf''$ is flasque.
 
-d. If $f: X \to Y$ is a continuous map and $\mcf$ is a flasque sheaf on $X$, then $f_* \mcf$ is a flasque sheaf on $Y$.
+(d) If $f: X \to Y$ is a continuous map and $\mcf$ is a flasque sheaf on $X$, then $f_* \mcf$ is a flasque sheaf on $Y$.
 
-e. Let $\mcf$ be any sheaf on $X$.
+(e) Let $\mcf$ be any sheaf on $X$.
 Define a new sheaf $\mcg$, called the sheaf of **discontinuous sections** of $\mcf$, as follows: for each open set $U \subseteq X$, let $\mcg(U)$ be the set of maps $s: U \to \Union_{P \in U} \mcf_P$ such that $s(P) \in \mcf_P$ for each $P \in U$.
 Show that $\mcg$ is a flasque sheaf and that there is a natural injective morphism $\mcf \to \mcg$.
 :::

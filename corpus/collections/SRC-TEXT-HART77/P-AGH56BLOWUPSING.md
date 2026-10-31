@@ -23,20 +23,20 @@ audit:
 ---
 
 ::: {.problem}
-1. Let $Y$ be the cusp or the node among the quartics $x^2 = x^4 + y^4$, $xy = x^6 + y^6$, $x^3 = y^2 + x^4 + y^4$, $x^2y + xy^2 = x^4 + y^4$.
-   Show that the curve $\tilde{Y}$ obtained by blowing up $Y$ at $O = (0,0)$ is nonsingular (cf. (4.9.1) and (Ex. 4.10)).
+(a) Let $Y$ be the cusp or the node among the quartics $x^2 = x^4 + y^4$, $xy = x^6 + y^6$, $x^3 = y^2 + x^4 + y^4$, $x^2y + xy^2 = x^4 + y^4$.
+Show that the curve $\tilde{Y}$ obtained by blowing up $Y$ at $O = (0,0)$ is nonsingular (cf. (4.9.1) and (Ex. 4.10)).
 
-2. Define a *node*, also called an ordinary double point, to be a double point, that is, a point of multiplicity $2$, of a plane curve with distinct tangent directions.
-   If $P$ is a node on a plane curve $Y$, show that $\varphi^{-1}(P)$ consists of two distinct nonsingular points on the blown-up curve $\tilde{Y}$.
-   One says that blowing up $P$ resolves the singularity at $P$.
+(b) Define a *node*, also called an ordinary double point, to be a double point, that is, a point of multiplicity $2$, of a plane curve with distinct tangent directions.
+If $P$ is a node on a plane curve $Y$, show that $\varphi^{-1}(P)$ consists of two distinct nonsingular points on the blown-up curve $\tilde{Y}$.
+One says that blowing up $P$ resolves the singularity at $P$.
 
-3. Let $P \in Y$ be the tacnode among the quartics above.
-   If $\varphi: \tilde{Y} \to Y$ is the blowing-up at $P$, show that $\varphi^{-1}(P)$ is a node.
-   By part 2, the tacnode is resolved by two successive blowings-up.
+(c) Let $P \in Y$ be the tacnode among the quartics above.
+If $\varphi: \tilde{Y} \to Y$ is the blowing-up at $P$, show that $\varphi^{-1}(P)$ is a node.
+By part (b), the tacnode is resolved by two successive blowings-up.
 
-4. Let $Y$ be the plane curve $y^3 = x^5$, which has a higher order cusp at $O$.
-   Show that $O$ is a triple point, that blowing up $O$ gives rise to a double point, and identify which kind.
-   Show that one further blowing up resolves the singularity.
+(d) Let $Y$ be the plane curve $y^3 = x^5$, which has a higher order cusp at $O$.
+Show that $O$ is a triple point, that blowing up $O$ gives rise to a double point, and identify which kind.
+Show that one further blowing up resolves the singularity.
 
 Note: any singular point of a plane curve can be resolved by a finite sequence of successive blowings-up (V, 3.8).
 :::
@@ -149,7 +149,7 @@ Therefore
 $$
 \boxed{\varphi^{-1}(P)=\{P_1,P_2\}}
 $$
-with both $P_i$ nonsingular on the strict transform, proving part (2).
+with both $P_i$ nonsingular on the strict transform, proving part (b).
 :::
 
 :::
@@ -179,7 +179,7 @@ $$
 Because the tacnode exercise assumes $\operatorname{char}k\ne2$, these are two distinct tangent directions.
 The point therefore has multiplicity two and distinct tangents: it is a node.
 Step [](#general-node-two-points){.pf-ref} shows that one further blowup resolves it.
-This proves part (3).
+This proves part (c).
 :::
 
 :::
@@ -236,21 +236,21 @@ t=s^2.
 $$
 This is nonsingular everywhere; at its unique exceptional point $(t,s)=(0,0)$ the derivative of $t-s^2$ with respect to $t$ is $1$.
 Away from that point the blowup is an isomorphism and the preceding strict transform had no other singular point.
-Hence the second blowup resolves the singularity, completing part (4).
+Hence the second blowup resolves the singularity, completing part (d).
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#node-blowup-separates-branches){.pf-ref} and [](#cusp-quartic-blowup-nonsingular){.pf-ref} establish the requested explicit node and cusp calculations in part (1), with the necessary characteristic qualification for the cusp quartic.
-Step [](#general-node-two-points){.pf-ref} proves the general node statement in part (2), step [](#tacnode-blowup-gives-node){.pf-ref} proves part (3), and steps [](#cusp-y3x5-first-blowup){.pf-ref} and [](#cusp-y3x5-second-blowup){.pf-ref} prove part (4).
+Steps [](#node-blowup-separates-branches){.pf-ref} and [](#cusp-quartic-blowup-nonsingular){.pf-ref} establish the requested explicit node and cusp calculations in part (a), with the necessary characteristic qualification for the cusp quartic.
+Step [](#general-node-two-points){.pf-ref} proves the general node statement in part (b), step [](#tacnode-blowup-gives-node){.pf-ref} proves part (c), and steps [](#cusp-y3x5-first-blowup){.pf-ref} and [](#cusp-y3x5-second-blowup){.pf-ref} prove part (d).
 :::
 
 :::
 :::
 
 ::: {.remark title="Characteristic exception inherited from Exercise I.5.1"}
-Under only the source's assumption $\operatorname{char}k\ne2$, the cusp quartic in part (1) has two additional singular points in characteristics $7$ and $13$.
+Under only the source's assumption $\operatorname{char}k\ne2$, the cusp quartic in part (a) has two additional singular points in characteristics $7$ and $13$.
 Blowing up the origin is an isomorphism near those points, so it cannot make the entire strict transform nonsingular in those characteristics.
 The chart computation in step [](#cusp-quartic-blowup-nonsingular){.pf-ref} proves that the singularity over the origin itself is resolved in every characteristic different from $2$; the global nonsingularity assertion requires excluding $7$ and $13$ as well.
 :::

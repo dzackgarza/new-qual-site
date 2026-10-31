@@ -25,18 +25,18 @@ audit:
 ::: {.problem}
 Let $f: X \to Y$ be a dominant morphism of integral schemes of finite type over a field $k$.
 
-a. Let $Y'$ be a closed irreducible subset of $Y$ whose generic point $\eta'$ is contained in $f(X)$.
+(a) Let $Y'$ be a closed irreducible subset of $Y$ whose generic point $\eta'$ is contained in $f(X)$.
    Let $Z$ be any irreducible component of $\inverseof{f}(Y')$ such that $\eta' \in f(Z)$, and show that $\codim(Z, X) \leq \codim(Y', Y)$.
 
-b. Let $e = \krulldim X - \krulldim Y$ be the relative dimension of $X$ over $Y$.
+(b) Let $e = \krulldim X - \krulldim Y$ be the relative dimension of $X$ over $Y$.
    For any point $y \in f(X)$, show that every irreducible component of the fibre $X_y$ has dimension $\geq e$.
 
-c. Show that there is a dense open subset $U \subseteq X$ such that for any $y \in f(U)$ one has $\krulldim U_y = e$.
+(c) Show that there is a dense open subset $U \subseteq X$ such that for any $y \in f(U)$ one has $\krulldim U_y = e$.
 
-d. Going back to the original morphism $f: X \to Y$, for any integer $h$ let $E_h$ be the set of points $x \in X$ such that, letting $y = f(x)$, there is an irreducible component $Z$ of the fibre $X_y$ containing $x$ with $\krulldim Z \geq h$.
+(d) Going back to the original morphism $f: X \to Y$, for any integer $h$ let $E_h$ be the set of points $x \in X$ such that, letting $y = f(x)$, there is an irreducible component $Z$ of the fibre $X_y$ containing $x$ with $\krulldim Z \geq h$.
    Show that $E_e = X$, that $E_h$ is not dense in $X$ when $h > e$, and that $E_h$ is closed for all $h$.
 
-e. Prove the following theorem of Chevalley.
+(e) Prove the following theorem of Chevalley.
    For each integer $h$, let $C_h$ be the set of points $y \in Y$ such that $\krulldim X_y = h$.
    Then the subsets $C_h$ are constructible, and $C_e$ contains an open dense subset of $Y$.
 :::

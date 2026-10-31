@@ -26,13 +26,13 @@ audit:
 Assume $\operatorname{char} k \neq 2$.
 Locate the singular points of the following curves in $\AA^2$ and sketch each curve.
 
-1. $x^2 = x^4 + y^4$
+(a) $x^2 = x^4 + y^4$
 
-2. $xy = x^6 + y^6$
+(b) $xy = x^6 + y^6$
 
-3. $x^3 = y^2 + x^4 + y^4$
+(c) $x^3 = y^2 + x^4 + y^4$
 
-4. $x^2 y + x y^2 = x^4 + y^4$
+(d) $x^2 y + x y^2 = x^4 + y^4$
 
 Which is which in the figure?
 
@@ -201,13 +201,13 @@ Therefore the origin is an ordinary triple point.
 ::: {.pf-step #s5}
 The four origin singularities in the figure are, respectively,
 $$
-\boxed{\text{(1) tacnode,\quad (2) node,\quad (3) cusp,\quad (4) ordinary triple point}.}
+\boxed{\text{(a) tacnode,\quad (b) node,\quad (c) cusp,\quad (d) ordinary triple point}.}
 $$
 
 ::: pf-proof
 This is exactly the tangent-cone and branch analysis in steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref}.
 The displayed source figure represents the characteristic-zero, equivalently the generic-characteristic, picture.
-In characteristics $7$ and $13$, part (3) has the two additional singular points found in step [](#s3){.pf-ref}, so that figure does not depict the entire singular locus under only the source's stated assumption $\operatorname{char}k\ne2$.
+In characteristics $7$ and $13$, part (c) has the two additional singular points found in step [](#s3){.pf-ref}, so that figure does not depict the entire singular locus under only the source's stated assumption $\operatorname{char}k\ne2$.
 :::
 
 :::
@@ -219,8 +219,8 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref}
 :::
 :::
 
-::: {.remark title="Characteristic exceptions in part (3)"}
+::: {.remark title="Characteristic exceptions in part (c)"}
 The source assumes only $\operatorname{char}k\ne2$.
-That hypothesis is sufficient for parts (1), (2), and (4), but part (3) acquires the two additional singular points displayed in step [](#s3){.pf-ref} when $\operatorname{char}k=7$ or $13$.
+That hypothesis is sufficient for parts (a), (b), and (d), but part (c) acquires the two additional singular points displayed in step [](#s3){.pf-ref} when $\operatorname{char}k=7$ or $13$.
 Thus the four-singularity picture is literally correct, without further points, for characteristic zero and for $\operatorname{char}k\notin\{2,7,13\}$.
 :::

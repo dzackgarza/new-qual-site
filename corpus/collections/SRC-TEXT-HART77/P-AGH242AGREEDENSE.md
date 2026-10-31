@@ -29,9 +29,9 @@ Show that $f = g$.
 
 Give examples to show that this result fails if either
 
-a. $X$ is nonreduced, or
+(a) $X$ is nonreduced, or
 
-b. $Y$ is nonseparated.
+(b) $Y$ is nonseparated.
 
 *Hint:* consider the map $h: X \to \fiberprod{Y}{S}{Y}$ obtained from $f$ and $g$.
 :::

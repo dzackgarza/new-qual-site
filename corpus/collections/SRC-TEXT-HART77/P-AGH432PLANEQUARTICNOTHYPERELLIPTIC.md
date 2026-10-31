@@ -35,11 +35,11 @@ audit:
 ::: {.problem}
 Let $X$ be a plane curve of degree 4.
 
-a. Show that the effective canonical divisors on $X$ are exactly the divisors $X.L$, where $L$ is a line in $\PP^2$.
+(a) Show that the effective canonical divisors on $X$ are exactly the divisors $X.L$, where $L$ is a line in $\PP^2$.
 
-b. If $D$ is any effective divisor of degree 2 on $X$, show that $\dim \abs{D}=0$.
+(b) If $D$ is any effective divisor of degree 2 on $X$, show that $\dim \abs{D}=0$.
 
-c. Conclude that $X$ is not hyperelliptic (Ex.
+(c) Conclude that $X$ is not hyperelliptic (Ex.
 1.7).
 :::
 

@@ -26,15 +26,15 @@ audit:
 ::: {.problem}
 Assume $\operatorname{char} k \neq 2$, and let $f$ be a nonzero homogeneous polynomial of degree $2$ in $x_0, \ldots, x_n$.
 
-1. Show that after a suitable linear change of variables, $f$ can be brought into the form $f = x_0^2 + \cdots + x_r^2$ for some $0 \leq r \leq n$.
+(a) Show that after a suitable linear change of variables, $f$ can be brought into the form $f = x_0^2 + \cdots + x_r^2$ for some $0 \leq r \leq n$.
 
-2. Show that $f$ is irreducible if and only if $r \geq 2$.
+(b) Show that $f$ is irreducible if and only if $r \geq 2$.
 
-3. Assume $r \geq 2$, and let $Q$ be the quadric hypersurface in $\PP^n$ defined by $f$.
-   Show that the singular locus $Z = \Sing Q$ of $Q$ is a linear variety of dimension $n - r - 1$.
-   In particular, $Q$ is nonsingular if and only if $r = n$.
+(c) Assume $r \geq 2$, and let $Q$ be the quadric hypersurface in $\PP^n$ defined by $f$.
+Show that the singular locus $Z = \Sing Q$ of $Q$ is a linear variety of dimension $n - r - 1$.
+In particular, $Q$ is nonsingular if and only if $r = n$.
 
-4. In case $r < n$, show that $Q$ is a cone with axis $Z$ over a nonsingular quadric hypersurface $Q' \subseteq \PP^r$.
+(d) In case $r < n$, show that $Q$ is a cone with axis $Z$ over a nonsingular quadric hypersurface $Q' \subseteq \PP^r$.
 
 Here, if $Y$ is a closed subset of $\PP^r$ and $Z$ is a linear subspace of dimension $n - r - 1$ in $\PP^n$, embed $\PP^r$ in $\PP^n$ so that $\PP^r \intersect Z = \emptyset$; the *cone over $Y$ with axis $Z$* is the union of all lines joining a point of $Y$ to a point of $Z$.
 :::
@@ -84,7 +84,7 @@ with every $a_i\ne0$.
 Since $k$ is algebraically closed, choose square roots $b_i^2=a_i$ and rescale $x_i$ by $b_i$.
 The resulting form is the displayed sum of squares.
 The number $r+1$ is the rank of the symmetric matrix of $B$, so it is independent of the choices.
-This proves part (1).
+This proves part (a).
 
 :::
 
@@ -122,7 +122,7 @@ $$
 x_0^2+\cdots+x_r^2
 $$
 has rank $r+1\ge3$.
-This contradiction proves irreducibility for $r\ge2$, establishing part (2).
+This contradiction proves irreducibility for $r\ge2$, establishing part (b).
 
 :::
 
@@ -166,7 +166,7 @@ Consequently
 $$
 \boxed{Q\text{ is nonsingular }\Longleftrightarrow r=n.}
 $$
-This proves part (3), with the usual convention that the empty singular locus corresponds to dimension $-1$ in the formula.
+This proves part (c), with the usual convention that the empty singular locus corresponds to dimension $-1$ in the formula.
 
 :::
 
@@ -231,7 +231,7 @@ z=[b_{r+1}:\cdots:b_n]\in Z.
 $$
 The point $p$ lies on the line joining $q$ and $z$.
 Hence every point of $Q$ lies in the cone.
-The two sets are equal, proving part (4).
+The two sets are equal, proving part (d).
 
 :::
 
@@ -248,7 +248,7 @@ Step [](#s1){.pf-ref} proves the normal form, step [](#s2){.pf-ref} proves irred
 :::
 
 ::: {.remark title="The zero quadratic"}
-The source states part (1) for an arbitrary homogeneous quadratic while requiring $0\le r\le n$ in the displayed normal form.
+The source states part (a) for an arbitrary homogeneous quadratic while requiring $0\le r\le n$ in the displayed normal form.
 The zero polynomial has rank zero and would correspond to an empty sum of squares, i.e. formally to $r=-1$.
 Thus the stated range implicitly excludes $f=0$; the card makes that hypothesis explicit.
 :::

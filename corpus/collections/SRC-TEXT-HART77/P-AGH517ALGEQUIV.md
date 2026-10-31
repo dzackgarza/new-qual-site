@@ -38,13 +38,13 @@ Recall that we have defined an algebraic family of effective divisors on $X$, pa
 Two arbitrary divisors are prealgebraically equivalent if they are differences of prealgebraically equivalent effective divisors.
 Two divisors $D, D^{\prime}$ are algebraically equivalent if there is a finite sequence $D=D_0, D_1, \ldots, D_n=D^{\prime}$ with $D_i$ and $D_{i+1}$ prealgebraically equivalent for each $i$.
 
-a. Show that the divisors algebraically equivalent to 0 form a subgroup of $\Div X$.
+(a) Show that the divisors algebraically equivalent to 0 form a subgroup of $\Div X$.
 
-b. Show that linearly equivalent divisors are algebraically equivalent.
+(b) Show that linearly equivalent divisors are algebraically equivalent.
 
 Hint: If $(f)$ is a principal divisor on $X$, consider the principal divisor $(t f-u)$ on $X \times \PP^1$, where $t, u$ are the homogeneous coordinates on $\PP^1$.
 
-c. Show that algebraically equivalent divisors are numerically equivalent.
+(c) Show that algebraically equivalent divisors are numerically equivalent.
 
 Hint: Use (III, 9.9) to show that for any very ample $H$, if $D$ and $D^{\prime}$ are algebraically equivalent, then $D . H=D^{\prime} . H$.
 

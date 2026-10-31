@@ -53,15 +53,15 @@ audit:
 ---
 
 ::: {.problem}
-a. Any automorphism of a nonhyperelliptic curve of genus 3 is induced by an automorphism of $\PP^2$ via the canonical embedding.
+(a) Any automorphism of a nonhyperelliptic curve of genus 3 is induced by an automorphism of $\PP^2$ via the canonical embedding.
 
-b. \* Assume $\characteristic k \neq 3, 7$. If $X$ is the curve given by
+(b) \* Assume $\characteristic k \neq 3, 7$. If $X$ is the curve given by
 $$
 x^3 y+y^3 z+z^3 x=0
 $$
 the group $\Aut X$ is the simple group of order 168, whose order is the maximum $84(g-1)$ allowed by (Ex. 2.5). See Burnside ($\S$ 232) or Klein.
 
-c. \* Over $\CC$, most curves of genus 3 have no automorphisms except the identity.
+(c) \* Over $\CC$, most curves of genus 3 have no automorphisms except the identity.
 
     Hint: For each $n$, count the dimension of the family of curves with an automorphism $T$ of order $n$. For example, if $n=2$, then for suitable choice of coordinates, $T$ can be written as $x \mapsto -x$, $y \mapsto y$, $z \mapsto z$. Then there is an 8-dimensional family of curves fixed by $T$; changing coordinates there is a 4-dimensional family of such $T$, so the curves having an automorphism of degree 2 form a family of dimension 12 inside the 14-dimensional family of all plane curves of degree 4.
 

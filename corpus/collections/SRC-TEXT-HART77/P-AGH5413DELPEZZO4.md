@@ -37,9 +37,9 @@ audit:
 ::: {.problem}
 Let $X$ be the Del Pezzo surface of degree 4 in $\PP^4$ obtained by blowing up 5 points of $\PP^2$ (4.7).
 
-a. Show that $X$ contains 16 lines.
+(a) Show that $X$ contains 16 lines.
 
-b. Show that $X$ is a complete intersection of two quadric hypersurfaces in $\PP^4$ (the converse follows from (4.7.1)).
+(b) Show that $X$ is a complete intersection of two quadric hypersurfaces in $\PP^4$ (the converse follows from (4.7.1)).
 :::
 
 ::: {.solution}

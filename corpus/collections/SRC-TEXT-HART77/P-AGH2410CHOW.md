@@ -29,12 +29,12 @@ Let $X$ be proper over a noetherian scheme $S$.
 Then there is a scheme $X'$ and a morphism $g: X' \to X$ such that $X'$ is projective over $S$, and there is an open dense subset $U \subseteq X$ such that $g$ induces an isomorphism of $\inverseof{g}(U)$ onto $U$.
 Prove this in the following steps.
 
-a. Reduce to the case $X$ irreducible.
+(a) Reduce to the case $X$ irreducible.
 
-b. Show that $X$ can be covered by finitely many open subsets $U_i$, $i = 1, \ldots, n$, each of which is quasi-projective over $S$.
+(b) Show that $X$ can be covered by finitely many open subsets $U_i$, $i = 1, \ldots, n$, each of which is quasi-projective over $S$.
    Let $U_i \injects P_i$ be an open immersion of $U_i$ into a scheme $P_i$ which is projective over $S$.
 
-c. Let $U = \bigcap_i U_i$, and consider the map
+(c) Let $U = \bigcap_i U_i$, and consider the map
 $$
 f: U \to X \fiberproduct{S} P_1 \fiberproduct{S} \cdots \fiberproduct{S} P_n
 $$
@@ -43,7 +43,7 @@ Let $X'$ be the closed image subscheme structure on $\cl_X f(U)$ (see Ex. 3.11d)
 Let $g: X' \to X$ be the projection onto the first factor, and let $h: X' \to P = P_1 \fiberproduct{S} \cdots \fiberproduct{S} P_n$ be the projection onto the product of the remaining factors.
 Show that $h$ is a closed immersion, hence $X'$ is projective over $S$.
 
-d. Show that $\inverseof{g}(U) \to U$ is an isomorphism, completing the proof.
+(d) Show that $\inverseof{g}(U) \to U$ is an isomorphism, completing the proof.
 :::
 
 ::: {.solution}

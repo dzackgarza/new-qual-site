@@ -31,12 +31,12 @@ audit:
 ---
 
 ::: {.problem}
-a. If $X$ is a surface of degree $d$ in $\PP^3$, then
+(a) If $X$ is a surface of degree $d$ in $\PP^3$, then
 $$
 K^2=d(d-4)^2
 .$$
 
-b. If $X$ is a product of two nonsingular curves $C, C^{\prime}$, of genus $g, g^{\prime}$ respectively, then
+(b) If $X$ is a product of two nonsingular curves $C, C^{\prime}$, of genus $g, g^{\prime}$ respectively, then
 $$
 K^2=8(g-1)\left(g^{\prime}-1\right)
 .$$

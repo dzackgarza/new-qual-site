@@ -27,7 +27,7 @@ audit:
 Let $Y$ be a noetherian scheme, and let $\mce$ be a locally free $\mco_Y\dash$module of rank $n+1$, with $n \geq 1$.
 Let $X = \PP(\mce)$ (II, §7), with the invertible sheaf $\mco_X(1)$ and the projection morphism $\pi: X \to Y$.
 
-a. Show that:
+(a) Show that:
 
    - $\pi_*(\mco(l)) \cong \operatorname{Sym}^l(\mce)$ for $l \geq 0$, and $\pi_*(\mco(l)) = 0$ for $l < 0$ (II, 7.11);
 
@@ -35,7 +35,7 @@ a. Show that:
 
    - $R^n \pi_*(\mco(l)) = 0$ for $l > -n-1$.
 
-b. Show there is a natural exact sequence
+(b) Show there is a natural exact sequence
 $$
 0 \to \Omega_{X/Y} \to (\pi^* \mce)(-1) \to \mco \to 0
 ,$$

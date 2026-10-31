@@ -40,11 +40,11 @@ audit:
 ::: {.problem}
 Assume $X$ is not hyperelliptic.
 
-a. The curves of genus 5 whose canonical model in $\PP^4$ is a complete intersection $F_2 . F_2 . F_2$ form a family of dimension 12.
+(a) The curves of genus 5 whose canonical model in $\PP^4$ is a complete intersection $F_2 . F_2 . F_2$ form a family of dimension 12.
 
-b. $X$ has a $g_3^1$ if and only if it can be represented as a plane quintic whose only singularity is one double point, a node or an ordinary cusp. These form an irreducible family of dimension 11. Hint: If $D \in g_3^1$, use $K-D$ to map $X \to \PP^2$.
+(b) $X$ has a $g_3^1$ if and only if it can be represented as a plane quintic whose only singularity is one double point, a node or an ordinary cusp. These form an irreducible family of dimension 11. Hint: If $D \in g_3^1$, use $K-D$ to map $X \to \PP^2$.
 
-c. \* In that case, the conics through the double point cut out the canonical system (not counting the fixed points at the double point). Mapping $\PP^2 \to \PP^4$ by this linear system of conics, show that the canonical curve $X$ is contained in a cubic surface $V \subseteq \PP^4$, with $V$ isomorphic to $\PP^2$ with one point blown up (II, Ex. 7.7).
+(c) \* In that case, the conics through the double point cut out the canonical system (not counting the fixed points at the double point). Mapping $\PP^2 \to \PP^4$ by this linear system of conics, show that the canonical curve $X$ is contained in a cubic surface $V \subseteq \PP^4$, with $V$ isomorphic to $\PP^2$ with one point blown up (II, Ex. 7.7).
 
     Furthermore, $V$ is the union of all the trisecants of $X$ corresponding to the $g_3^1$ (5.5.3), so $V$ is contained in the intersection of all the quadric hypersurfaces containing $X$. Thus $V$ and the $g_3^1$ are unique.
 

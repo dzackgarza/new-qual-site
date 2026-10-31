@@ -39,9 +39,9 @@ audit:
 ::: {.problem}
 Prove or disprove: the following two singularities have the same multiplicity, and the same configuration of infinitely near singular points with the same multiplicities, hence the same $\delta_P$, but are not equivalent.
 
-a. $x^4-x y^4=0$.
+(a) $x^4-x y^4=0$.
 
-b. $x^4-x^2 y^3-x^2 y^5+y^8=0$.
+(b) $x^4-x^2 y^3-x^2 y^5+y^8=0$.
 :::
 
 ::: {.solution}

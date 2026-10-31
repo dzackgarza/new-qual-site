@@ -40,14 +40,14 @@ p_a=1-\chi\left(\mathcal{O}_D\right)
 .$$
 See III, Ex. 5.3.
 
-a. If $D$ is an effective divisor on the surface $X$, use (1.6) to show that
+(a) If $D$ is an effective divisor on the surface $X$, use (1.6) to show that
 $$
 2 p_a-2= D.(D+K)
 .$$
 
-b. $p_a(D)$ depends only on the linear equivalence class of $D$ on $X$.
+(b) $p_a(D)$ depends only on the linear equivalence class of $D$ on $X$.
 
-c. More generally, for any divisor $D$ on $X$, we define the virtual arithmetic genus (which is equal to the ordinary arithmetic genus if $D$ is effective) by the same formula: $2 p_a-2=D .(D+K)$. Show that for any two divisors $C, D$ we have
+(c) More generally, for any divisor $D$ on $X$, we define the virtual arithmetic genus (which is equal to the ordinary arithmetic genus if $D$ is effective) by the same formula: $2 p_a-2=D .(D+K)$. Show that for any two divisors $C, D$ we have
 $$
 p_a(-D)=D^2-p_a(D)+2
 $$

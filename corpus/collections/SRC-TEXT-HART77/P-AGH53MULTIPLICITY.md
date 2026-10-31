@@ -30,9 +30,9 @@ Define the *multiplicity* of $P$ on $Y$, denoted $\mu_P(Y)$, to be the least $r$
 Note that $P \in Y$ if and only if $\mu_P(Y) > 0$.
 The linear factors of $f_r$ are called the *tangent directions* at $P$.
 
-1. Show that $\mu_P(Y) = 1$ if and only if $P$ is a nonsingular point of $Y$.
+(a) Show that $\mu_P(Y) = 1$ if and only if $P$ is a nonsingular point of $Y$.
 
-2. Find the multiplicity of each of the singular points of the four quartics $x^2 = x^4 + y^4$, $xy = x^6 + y^6$, $x^3 = y^2 + x^4 + y^4$, and $x^2 y + x y^2 = x^4 + y^4$.
+(b) Find the multiplicity of each of the singular points of the four quartics $x^2 = x^4 + y^4$, $xy = x^6 + y^6$, $x^3 = y^2 + x^4 + y^4$, and $x^2 y + x y^2 = x^4 + y^4$.
 :::
 
 ::: {.solution}
@@ -72,7 +72,7 @@ $$
 (f_x(P),f_y(P))\ne(0,0).
 $$
 For a plane hypersurface, the Jacobian criterion says precisely that $P$ is nonsingular when at least one first partial derivative is nonzero [@Har77, Chapter I, §5].
-This proves part (1).
+This proves part (a).
 :::
 
 :::

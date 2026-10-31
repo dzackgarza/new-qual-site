@@ -42,7 +42,7 @@ $$
 \langle\quad, \quad\rangle: H^1(X, \Omega) \times H^1(X, \Omega) \rightarrow k .
 $$
 
-a. Prove that this is compatible with the intersection pairing, in the following sense: for any two divisors $D, E$ on $X$, we have
+(a) Prove that this is compatible with the intersection pairing, in the following sense: for any two divisors $D, E$ on $X$, we have
 $$
 \langle c(D), c(E)\rangle=(D . E) \cdot 1
 $$
@@ -52,7 +52,7 @@ Hint: Reduce to the case where $D$ and $E$ are nonsingular curves meeting transv
 Then consider the analogous map $c: \Pic D \rightarrow H^1\left(D, \Omega_D\right)$, and the fact (III, Ex.
 7.4) that $c(\text{point})$ goes to 1 under the natural isomorphism of $H^1\left(D, \Omega_D\right)$ with $k$.
 
-b. If $\operatorname{char} k=0$, use the fact that $H^1\left(X, \Omega_X\right)$ is a finite-dimensional vector space to show that $\Num X$ is a finitely generated free abelian group.
+(b) If $\operatorname{char} k=0$, use the fact that $H^1\left(X, \Omega_X\right)$ is a finite-dimensional vector space to show that $\Num X$ is a finitely generated free abelian group.
 :::
 
 ::: {.solution}

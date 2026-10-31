@@ -23,19 +23,19 @@ audit:
 ---
 
 ::: {.problem}
-a. A closed immersion is a morphism of finite type.
+(a) A closed immersion is a morphism of finite type.
 
-b. A quasi-compact open immersion is of finite type.
+(b) A quasi-compact open immersion is of finite type.
 
-c. A composition of two morphisms of finite type is of finite type.
+(c) A composition of two morphisms of finite type is of finite type.
 
-d. Morphisms of finite type are stable under base extension.
+(d) Morphisms of finite type are stable under base extension.
 
-e. If $X$ and $Y$ are schemes of finite type over $S$, then $\fiberprod{X}{S}{Y}$ is of finite type over $S$.
+(e) If $X$ and $Y$ are schemes of finite type over $S$, then $\fiberprod{X}{S}{Y}$ is of finite type over $S$.
 
-f. If $X \mapsvia{f} Y \mapsvia{g} Z$ are two morphisms, and if $f$ is quasi-compact and $g \circ f$ is of finite type, then $f$ is of finite type.
+(f) If $X \mapsvia{f} Y \mapsvia{g} Z$ are two morphisms, and if $f$ is quasi-compact and $g \circ f$ is of finite type, then $f$ is of finite type.
 
-g. If $f: X \to Y$ is a morphism of finite type and $Y$ is noetherian, then $X$ is noetherian.
+(g) If $f: X \to Y$ is a morphism of finite type and $Y$ is noetherian, then $X$ is noetherian.
 :::
 
 ::: {.solution}

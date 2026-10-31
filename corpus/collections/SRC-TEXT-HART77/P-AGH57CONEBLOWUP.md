@@ -28,11 +28,11 @@ Let $Y \subseteq \PP^2$ be a nonsingular plane curve of degree $> 1$, defined by
 Let $X \subseteq \AA^3$ be the affine variety defined by $f$; this is the cone over $Y$.
 Let $P = (0,0,0)$ be the vertex of the cone, and let $\varphi: \tilde{X} \to X$ be the blowing-up of $X$ at $P$.
 
-1. Show that $X$ has just one singular point, namely $P$.
+(a) Show that $X$ has just one singular point, namely $P$.
 
-2. Show that $\tilde{X}$ is nonsingular, by covering it with open affines.
+(b) Show that $\tilde{X}$ is nonsingular, by covering it with open affines.
 
-3. Show that $\varphi^{-1}(P)$ is isomorphic to $Y$.
+(c) Show that $\varphi^{-1}(P)$ is isomorphic to $Y$.
 :::
 
 ::: {.solution}
@@ -188,7 +188,7 @@ Concretely, the isomorphism sends a point of the exceptional fibre represented b
 :::
 
 ::: pf-qed
-Steps [](#vertex-singular){.pf-ref} and [](#nonzero-points-nonsingular){.pf-ref} prove part (1), steps [](#x-chart-strict-transform){.pf-ref} and [](#blowup-nonsingular){.pf-ref} prove part (2), and step [](#exceptional-fibre-iso-y){.pf-ref} proves part (3).
+Steps [](#vertex-singular){.pf-ref} and [](#nonzero-points-nonsingular){.pf-ref} prove part (a), steps [](#x-chart-strict-transform){.pf-ref} and [](#blowup-nonsingular){.pf-ref} prove part (b), and step [](#exceptional-fibre-iso-y){.pf-ref} proves part (c).
 :::
 
 :::

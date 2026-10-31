@@ -31,12 +31,12 @@ audit:
 ---
 
 ::: {.problem}
-a. If $H$ is an ample divisor on the surface $X$, and if $D$ is any divisor, show that
+(a) If $H$ is an ample divisor on the surface $X$, and if $D$ is any divisor, show that
 $$
 \left(D^2\right)\left(H^2\right) \leqslant(D . H)^2 .
 $$
 
-b. Now let $X$ be a product of two curves $X=C \times C^{\prime}$.
+(b) Now let $X$ be a product of two curves $X=C \times C^{\prime}$.
 Let $l=C \times \mathrm{pt}$, and $m=\mathrm{pt} \times C^{\prime}$.
 For any divisor $D$ on $X$, let $a=D . l$, $b=D . m$.
 Then we say $D$ has type $(a, b)$.

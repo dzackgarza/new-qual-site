@@ -24,13 +24,13 @@ audit:
 
 ::: {.problem}
 For a point $P$ on a variety $X$, let $\mfm$ be the maximal ideal of the local ring $\mco_P$.
-Define the *Zariski tangent space* $T_P(X)$ of $X$ at $P$ to be the dual $k\coloneqq$vector space of $\mfm/\mfm^2$.
+Define the *Zariski tangent space* $T_P(X)$ of $X$ at $P$ to be the dual $k$-vector space of $\mfm/\mfm^2$.
 
-1. For any point $P \in X$, show that $\dim T_P(X) \geq \dim X$, with equality if and only if $P$ is nonsingular.
+(a) For any point $P \in X$, show that $\dim T_P(X) \geq \dim X$, with equality if and only if $P$ is nonsingular.
 
-2. For any morphism $\varphi: X \to Y$, show that there is a natural induced $k\coloneqq$linear map $T_P(\varphi): T_P(X) \to T_{\varphi(P)}(Y)$.
+(b) For any morphism $\varphi: X \to Y$, show that there is a natural induced $k$-linear map $T_P(\varphi): T_P(X) \to T_{\varphi(P)}(Y)$.
 
-3. If $\varphi$ is the vertical projection of the parabola $x = y^2$ onto the $x\coloneqq$axis, show that the induced map $T_0(\varphi)$ of tangent spaces at the origin is the zero map.
+(c) If $\varphi$ is the vertical projection of the parabola $x = y^2$ onto the $x$-axis, show that the induced map $T_0(\varphi)$ of tangent spaces at the origin is the zero map.
 :::
 
 ::: {.solution}
@@ -91,7 +91,7 @@ $$
 \dim A=\dim_k\mathfrak m/\mathfrak m^2.
 $$
 For varieties, the local ring $\OO_{X,P}$ is regular exactly when $P$ is nonsingular [@Har77, Theorem I.5.1].
-Thus equality in the tangent-space inequality is equivalent to nonsingularity, proving part (1).
+Thus equality in the tangent-space inequality is equivalent to nonsingularity, proving part (a).
 
 :::
 
@@ -141,7 +141,7 @@ T_P(\varphi)
 $$
 These are exactly $T_P(X)$ and $T_Q(Y)$.
 The construction uses only the induced local-ring map, so it is natural and respects identities and composition.
-This proves part (2).
+This proves part (b).
 
 :::
 
@@ -187,7 +187,7 @@ Geometrically, the parabola has vertical tangent at the origin, so its different
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (1), step [](#s3){.pf-ref} proves part (2), and step [](#s4){.pf-ref} proves part (3).
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), step [](#s3){.pf-ref} proves part (b), and step [](#s4){.pf-ref} proves part (c).
 
 :::
 

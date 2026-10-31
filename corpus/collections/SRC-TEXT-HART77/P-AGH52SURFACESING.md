@@ -26,11 +26,11 @@ audit:
 Assume $\operatorname{char} k \neq 2$.
 Locate the singular points and describe the singularities of the following surfaces in $\AA^3$.
 
-1. $x y^2 = z^2$
+(a) $x y^2 = z^2$
 
-2. $x^2 + y^2 = z^2$
+(b) $x^2 + y^2 = z^2$
 
-3. $xy + x^3 + y^3 = 0$
+(c) $xy + x^3 + y^3 = 0$
 
 Which is which in the figure?
 
@@ -152,7 +152,7 @@ This is the double-line singularity shown in the figure.
 ::: {.pf-step #match-figure}
 The three surfaces in the figure are, respectively,
 $$
-\boxed{\text{(1) pinch point,\qquad (2) conical double point,\qquad (3) double line}.}
+\boxed{\text{(a) pinch point,\qquad (b) conical double point,\qquad (c) double line}.}
 $$
 
 ::: pf-proof

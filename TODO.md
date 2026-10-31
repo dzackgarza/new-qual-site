@@ -274,7 +274,7 @@ mathematical correction under its own node, not under copy policy.
   - [ ] SRC-TAMU-RA-SPRING-2017
   - [x] SRC-TEXT-DF04
   - [x] SRC-TEXT-FOL99
-  - [ ] SRC-TEXT-HART77
+  - [x] SRC-TEXT-HART77
   - [x] SRC-TEXT-HAT02
   - [x] SRC-TEXT-HK71
   - [ ] SRC-TEXT-HUN74
