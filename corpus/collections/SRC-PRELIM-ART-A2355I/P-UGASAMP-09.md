@@ -5,7 +5,9 @@ kind: problem
 title: Cube roots of $i$ and the value of $(1+i)^5$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Complex Numbers
+  - Roots of Unity
 relations: []
 review: draft
 audit:

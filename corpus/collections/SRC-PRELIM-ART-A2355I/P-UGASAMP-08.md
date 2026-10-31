@@ -5,7 +5,9 @@ kind: problem
 title: Diagonalization of $\begin{pmatrix}2&1\\1&2\end{pmatrix}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Diagonalization
+  - Eigenvalues
 relations: []
 review: draft
 audit:

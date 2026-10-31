@@ -5,7 +5,9 @@ kind: problem
 title: Convergence of $\frac{n^2+2}{n^2+3n}$ to $1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Sequences
+  - Convergence
 relations: []
 review: draft
 audit:

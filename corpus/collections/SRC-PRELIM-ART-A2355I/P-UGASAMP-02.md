@@ -5,7 +5,9 @@ kind: problem
 title: Continuity at a point and continuity of $x^2$ at $2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Continuity
+  - Epsilon-Delta
 relations: []
 review: draft
 audit:

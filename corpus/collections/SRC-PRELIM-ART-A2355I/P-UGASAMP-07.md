@@ -5,7 +5,9 @@ kind: problem
 title: Three linear combinations of independent vectors are independent
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Independence
+  - Linear Algebra
 relations: []
 review: draft
 audit:

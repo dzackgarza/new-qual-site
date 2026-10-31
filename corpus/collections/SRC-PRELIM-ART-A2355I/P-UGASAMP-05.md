@@ -5,7 +5,8 @@ kind: problem
 title: $\int_0^{10\pi}\abs{\sin x}\,dx$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integrals
 relations: []
 review: draft
 audit:

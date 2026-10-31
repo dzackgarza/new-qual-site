@@ -5,7 +5,9 @@ kind: problem
 title: Inverse functions and the inverse of $(x+2)/(3x-1)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Inverse Functions
+  - Functions
 relations: []
 review: draft
 audit:
