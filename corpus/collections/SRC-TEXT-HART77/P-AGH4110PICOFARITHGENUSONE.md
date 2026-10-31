@@ -109,7 +109,7 @@ $$
 =
 \chi(\mct)
 =
-\operatorname{length}(\mct)
+\length(\mct)
 \ge0.
 $$
 Thus a line bundle of negative degree cannot have a nonzero section.
@@ -241,7 +241,7 @@ $$
 $$
 Taking Euler characteristics in the displayed sequence therefore gives
 $$
-\operatorname{length}(Z)=1.
+\length(Z)=1.
 $$
 
 Hence $Z$ is supported at a single closed point $P$. Since $k$ is

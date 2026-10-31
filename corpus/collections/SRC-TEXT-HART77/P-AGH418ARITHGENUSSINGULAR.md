@@ -33,7 +33,7 @@ $$
 0 \to \OO_X \to f_* \OO_{\tilde X} \to \sum_{P \in X} \tilde\OO_P/\OO_P \to 0
 $$
 where $\tilde\OO_P$ is the integral closure of $\OO_P$.
-For each $P \in X$, let $\delta_P=\operatorname{length}(\tilde\OO_P/\OO_P)$.
+For each $P \in X$, let $\delta_P=\length(\tilde\OO_P/\OO_P)$.
 
 (a) Show that $p_a(X)=p_a(\tilde{X})+\sum_{P \in X} \delta_P$.
 Hint: Use (III, Ex.
@@ -68,7 +68,7 @@ $$
 =
 \widetilde\mco_P/\mco_P,
 \qquad
-\operatorname{length}_{\mco_P}\mathcal Q_P
+\length_{\mco_P}\mathcal Q_P
 =
 \delta_P.
 $$
@@ -285,9 +285,9 @@ $$
 has finite length. Completion is exact on finite $A$-modules, and a
 finite-length module is unchanged by completion. Hence
 $$
-\operatorname{length}_A(B/A)
+\length_A(B/A)
 =
-\operatorname{length}_{\widehat A}
+\length_{\widehat A}
 \left(
 (B\otimes_A\widehat A)/\widehat A
 \right).
@@ -300,7 +300,7 @@ $\widehat A$ in its total ring of fractions. Therefore
 $$
 \delta_P
 =
-\operatorname{length}_{\widehat A}
+\length_{\widehat A}
 \left(
 \overline{\widehat A}/\widehat A
 \right).
