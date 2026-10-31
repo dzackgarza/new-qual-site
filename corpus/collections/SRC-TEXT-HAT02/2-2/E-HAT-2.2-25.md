@@ -23,10 +23,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof checked.
+- event: source-corrected
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The book numbers the three clauses (a), (b), (c); the card printed (i), (ii), (iii).
+    STYLE-05 keeps the source's labels, so they are restored.
 ---
 
 ::: {.problem}
-Show that for each $n \in \ZZ$ there is a unique function $\varphi$ assigning an integer to each finite CW complex, such that (i) $\varphi(X) = \varphi(Y)$ if $X$ and $Y$ are homeomorphic, (ii) $\varphi(X) = \varphi(A) + \varphi(X/A)$ if $A$ is a subcomplex of $X$, and (iii) $\varphi(S^0) = n$.
+Show that for each $n \in \ZZ$ there is a unique function $\varphi$ assigning an integer to each finite CW complex, such that (a) $\varphi(X) = \varphi(Y)$ if $X$ and $Y$ are homeomorphic, (b) $\varphi(X) = \varphi(A) + \varphi(X/A)$ if $A$ is a subcomplex of $X$, and (c) $\varphi(S^0) = n$.
 For such a function $\varphi$, show that $\varphi(X) = \varphi(Y)$ if $X \simeq Y$.
 :::
 

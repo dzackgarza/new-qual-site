@@ -65,8 +65,9 @@ level of their claims, as their notes say.
 `-9`, `-11`, `-12`, `-13`, `-14`, `-15`, `-16`, `-18`, `-19`, `-20`, `-21`, `-22`, `-26`, `-30`, `-31`;
 the remaining ten (`-6`, `-8`, `-10`, `-17`, `-23`, `-24`, `-25`, `-27`, `-28`, `-29`) are reviewed at
 the level their notes describe, not line by line.
-§2.2: statements 1–15 compared with the printed exercises and all agree; statements 16–42 and every proof
-are unread.
+§2.2: all 43 statements compared with the printed exercises (the book deletes exercise 34) and all agree;
+the labels of exercise 25 were (i)–(iii) where the book prints (a)–(c) and are restored. No §2.2 proof is
+read yet.
 Unread entirely: the proofs of §2.2 onward, and the statements of §2.3, §3.1 and §4 onward.
 
 ## Fast local checks and complete CI acceptance
