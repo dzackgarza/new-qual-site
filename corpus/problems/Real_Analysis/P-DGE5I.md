@@ -31,19 +31,19 @@ $$
 \sigma_n = \frac{s_0 + s_1 + \cdots + s_n}{n+1} \qquad (n = 0, 1, 2, \ldots).
 $$
 
-1. If $\lim s_n = s$, prove that $\lim \sigma_n = s$.
+(a) If $\lim s_n = s$, prove that $\lim \sigma_n = s$.
 
-2. Construct a sequence $\theset{s_n}$ which does not converge, although $\lim \sigma_n = 0$.
+(b) Construct a sequence $\theset{s_n}$ which does not converge, although $\lim \sigma_n = 0$.
 
-3. Can it happen that $s_n > 0$ for all $n$ and that $\limsup s_n = \infty$, although $\lim \sigma_n = 0$?
+(c) Can it happen that $s_n > 0$ for all $n$ and that $\limsup s_n = \infty$, although $\lim \sigma_n = 0$?
 
-4. Put $a_n = s_n - s_{n-1}$ for $n \geq 1$. Show that
-    $$
-    s_n - \sigma_n = \frac{1}{n+1}\sum_{k=1}^n ka_k.
-    $$
-    Assume that $\lim(na_n) = 0$ and that $\theset{\sigma_n}$ converges. Prove that $\theset{s_n}$ converges. This gives a converse of part 1, under the additional assumption that $na_n \to 0$.
+(d) Put $a_n = s_n - s_{n-1}$ for $n \geq 1$. Show that
+$$
+s_n - \sigma_n = \frac{1}{n+1}\sum_{k=1}^n ka_k.
+$$
+Assume that $\lim(na_n) = 0$ and that $\theset{\sigma_n}$ converges. Prove that $\theset{s_n}$ converges. This gives a converse of part (a), under the additional assumption that $na_n \to 0$.
 
-5. Derive the last conclusion from a weaker hypothesis: assume $M < \infty$, $\abs{na_n} \leq M$ for all $n$, and $\lim \sigma_n = \sigma$. Prove that $\lim s_n = \sigma$.
+(e) Derive the last conclusion from a weaker hypothesis: assume $M < \infty$, $\abs{na_n} \leq M$ for all $n$, and $\lim \sigma_n = \sigma$. Prove that $\lim s_n = \sigma$.
 :::
 
 ::: {.solution}
@@ -52,13 +52,13 @@ $$
 
 ::: pf-step
 
-The five claims about Cesàro means hold, and the answer to part 3 is $\boxed{\text{yes}}$.
+The five claims about Cesàro means hold, and the answer to part (c) is $\boxed{\text{yes}}$.
 
 ::: pf-proof
 
 ::: pf-step
 
-Part 1: If $s_n\to s$, then $\sigma_n\to s$.
+Part (a): If $s_n\to s$, then $\sigma_n\to s$.
 
 ::: pf-proof
 
@@ -70,7 +70,7 @@ Given $\varepsilon > 0$, choose $K$ with $\abs{s_k - s} < \varepsilon$ for $k > 
 
 ::: pf-step
 
-Part 2: $s_n=(-1)^n$ does not converge, while $\sigma_n\to0$.
+Part (b): $s_n=(-1)^n$ does not converge, while $\sigma_n\to0$.
 
 ::: pf-proof
 
@@ -82,7 +82,7 @@ $\abs{s_0 + \cdots + s_n} \leq 1$, so $\abs{\sigma_n} \leq 1/(n+1)$.
 
 ::: pf-step
 
-Part 3: $s_{2^k}=k$ for $k \geq 1$ and $s_n=1/(n+1)$ for all other $n$ gives $s_n>0$, $\limsup s_n=\infty$ and $\sigma_n\to0$.
+Part (c): $s_{2^k}=k$ for $k \geq 1$ and $s_n=1/(n+1)$ for all other $n$ gives $s_n>0$, $\limsup s_n=\infty$ and $\sigma_n\to0$.
 
 ::: pf-proof
 
@@ -97,7 +97,7 @@ $$
 
 ::: pf-step
 
-Part 4: $s_n-\sigma_n=\frac1{n+1}\sum_{k=1}^nka_k$, and if $na_n\to0$ and $\sigma_n$ converges, then $s_n$ converges to the same limit.
+Part (d): $s_n-\sigma_n=\frac1{n+1}\sum_{k=1}^nka_k$, and if $na_n\to0$ and $\sigma_n$ converges, then $s_n$ converges to the same limit.
 
 ::: pf-proof
 
@@ -107,7 +107,7 @@ $$
 =(n+1)s_n-\sum_{k=0}^{n}s_k
 =(n+1)(s_n-\sigma_n).
 $$
-If $na_n\to0$, then the averages $\frac1{n+1}\sum_{k=1}^nka_k$ tend to $0$ by part 1, so $s_n-\sigma_n\to0$.
+If $na_n\to0$, then the averages $\frac1{n+1}\sum_{k=1}^nka_k$ tend to $0$ by part (a), so $s_n-\sigma_n\to0$.
 
 :::
 
@@ -115,7 +115,7 @@ If $na_n\to0$, then the averages $\frac1{n+1}\sum_{k=1}^nka_k$ tend to $0$ by pa
 
 ::: pf-step
 
-Part 5: If $\abs{na_n}\le M$ for all $n$ and $\sigma_n\to\sigma$, then $s_n\to\sigma$.
+Part (e): If $\abs{na_n}\le M$ for all $n$ and $\sigma_n\to\sigma$, then $s_n\to\sigma$.
 
 ::: pf-proof
 
