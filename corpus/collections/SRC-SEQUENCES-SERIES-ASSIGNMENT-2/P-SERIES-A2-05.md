@@ -6,7 +6,9 @@ title: Sequences with $\abs{a_{n+1}-a_n}\le\frac12\abs{a_n-a_{n-1}}$ converge
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Cauchy Sequences
+  - Contractions
 relations: []
 review: draft
 ---

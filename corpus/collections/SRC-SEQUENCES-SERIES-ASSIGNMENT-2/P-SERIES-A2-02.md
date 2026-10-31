@@ -6,7 +6,9 @@ title: $\limsup$ and $\liminf$ as extreme subsequential limits
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Limit Superior
+  - Subsequences
 relations: []
 review: draft
 ---

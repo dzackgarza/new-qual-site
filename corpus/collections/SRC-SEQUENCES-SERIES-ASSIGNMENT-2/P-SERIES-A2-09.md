@@ -6,7 +6,9 @@ title: Ratio test versus root test
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Convergence Tests
+  - Limit Superior
 relations: []
 review: draft
 ---

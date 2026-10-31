@@ -6,7 +6,9 @@ title: Subsequence criteria for convergence of a sequence
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Subsequences
+  - Convergence of Sequences
 relations: []
 review: draft
 ---

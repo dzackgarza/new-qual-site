@@ -6,7 +6,9 @@ title: Epsilon-delta continuity of $x^n$ and $x^{1/n}$
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Continuity
+  - Epsilon-Delta Arguments
 relations: []
 review: draft
 ---

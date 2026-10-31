@@ -6,7 +6,9 @@ title: 'Convergent series: $\sum a_nb_n$, $\sum n^2a_n$ and $na_n\to0$'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Series of Numbers
+  - Counterexamples
 relations: []
 review: draft
 ---

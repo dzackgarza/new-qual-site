@@ -6,7 +6,9 @@ title: Convergence of ratios of consecutive Fibonacci numbers
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Recursive Sequences
+  - Cauchy Sequences
 relations: []
 review: draft
 ---

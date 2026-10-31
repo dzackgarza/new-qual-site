@@ -6,7 +6,9 @@ title: $\limsup$ and $\liminf$ of a recursively defined sequence
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Limit Superior
+  - Recursive Sequences
 relations: []
 review: draft
 ---

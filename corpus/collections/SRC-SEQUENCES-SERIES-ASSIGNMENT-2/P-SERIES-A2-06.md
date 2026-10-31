@@ -6,7 +6,9 @@ title: Convergence of the Kempner series omitting the digit 0
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Series of Numbers
+  - Comparison Test
 relations: []
 review: draft
 ---

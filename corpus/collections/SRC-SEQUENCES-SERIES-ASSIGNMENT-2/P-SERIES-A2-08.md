@@ -6,7 +6,9 @@ title: Convergence of $\sum p^nn^p$, $\sum\frac{n!}{n^n}$, $\sum(n^{1/n}-1)^n$ a
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Series of Numbers
+  - Convergence Tests
 relations: []
 review: draft
 ---

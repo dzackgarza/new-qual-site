@@ -6,7 +6,9 @@ title: Divergence when $na_n\to\ell\ne0$ and convergence of $\sum a_n^p$
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Series of Numbers
+  - Comparison Test
 relations: []
 review: draft
 ---
