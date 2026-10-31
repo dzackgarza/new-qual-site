@@ -21,87 +21,19 @@ Show that a principal fibration $\Omega C \to E \xrightarrow{p} B$ is fiber homo
 :::
 
 ::: {.solution}
+By definition, a principal fibration is fiber homotopy equivalent to the pullback of the path-space fibration
+$$
+\Omega C\longrightarrow PC\xrightarrow{\operatorname{ev}_1}C
+$$
+along a map $f:B\to C$. Thus its total space can be represented by pairs $(b,\gamma)$ with $\gamma(0)=c_0$ and $\gamma(1)=f(b)$.
 
-::: pf
-
-::: pf-step
-
-A principal fibration $\Omega C \to E \xrightarrow{p} B$ is a fibration whose fiber is the loop space $\Omega C$, with a compatible action of $\Omega C$ on $E$.
-
-::: pf-proof
-
-definition of a principal fibration.
-
-:::
-
-:::
-
-::: pf-step
-
-The section $s: B \to E$ gives a basepoint in each fiber $p^{-1}(b)$.
-
-::: pf-proof
-
-$s(b) \in p^{-1}(b)$ since $ps = 1$.
-
-:::
-
-:::
-
-::: pf-step
-
-Define $\Phi: \Omega C \times B \to E$ by $\Phi(\omega, b) = \omega \cdot s(b)$ (the action of the loop $\omega$ on the basepoint $s(b)$).
-
-::: pf-proof
-
-use the principal action of the fiber $\Omega C$ on $E$.
-
-:::
-
-:::
-
-::: pf-step
-
-$\Phi$ is a fiber-preserving map over $B$.
-
-::: pf-proof
-
-$p(\Phi(\omega, b)) = p(\omega \cdot s(b)) = p(s(b)) = b$ (the action preserves fibers).
-
-:::
-
-:::
-
-::: pf-step
-
-$\Phi$ restricts to a homotopy equivalence on each fiber.
-
-::: pf-proof
-
-on the fiber over $b$, $\Phi(-, b): \Omega C \to p^{-1}(b)$ is the orbit map $\omega \mapsto \omega \cdot s(b)$, which is a homeomorphism (the action of $\Omega C$ on a principal fiber is free and transitive).
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-Hence $\Phi$ is a fiber homotopy equivalence.
-
-::: pf-proof
-
-a fiber-preserving map that is a homotopy equivalence on each fiber is a fiber homotopy equivalence (for fibrations over a CW base, or by the standard criterion).
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s6){.pf-ref}.
-
-:::
-
-:::
-
+A section assigns to each $b$ such a path $\gamma_b$, continuously in $b$. The formula
+$$
+H(b,t)=\gamma_b(t)
+$$
+is a homotopy from the constant map at $c_0$ to $f$. By homotopy invariance of pullback fibrations (Exercise 11), pulling the path-space fibration back along $f$ gives a fibration fiber homotopy equivalent to its pullback along the constant map. The latter is
+$$
+B\times\Omega C\longrightarrow B.
+$$
+Consequently $E\to B$ is fiber homotopy equivalent to the stated product fibration.
 :::
