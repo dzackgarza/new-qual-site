@@ -1,7 +1,7 @@
 #!/usr/bin/env -S uv run --script
 # /// script
 # requires-python = ">=3.12"
-# dependencies = ["httpx>=0.27"]
+# dependencies = ["httpx>=0.27", "pydantic>=2"]
 # ///
 """Extract a PDF to Markdown with the Mistral OCR API and record its provenance.
 
@@ -18,19 +18,39 @@ import hashlib
 import json
 import os
 from pathlib import Path
-from typing import Any
 
 import httpx
+from pydantic import BaseModel
 
 API = "https://api.mistral.ai/v1"
 MODEL = "mistral-ocr-latest"
+
+
+class UploadedFile(BaseModel):
+    id: str
+
+
+class SignedURL(BaseModel):
+    url: str
+
+
+# Mistral's OCR response fields used by this extraction path:
+# https://docs.mistral.ai/studio/document-processing/basic_ocr
+class OCRPage(BaseModel):
+    index: int
+    markdown: str
+
+
+class OCRResult(BaseModel):
+    model: str
+    pages: list[OCRPage]
 
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def ocr(pdf: Path, key: str) -> dict[str, Any]:
+def ocr(pdf: Path, key: str) -> OCRResult:
     headers = {"Authorization": f"Bearer {key}"}
     with httpx.Client(headers=headers, timeout=httpx.Timeout(900.0)) as client:
         with pdf.open("rb") as fh:
@@ -40,7 +60,7 @@ def ocr(pdf: Path, key: str) -> dict[str, Any]:
                 files={"file": (pdf.name, fh, "application/pdf")},
             )
         upload.raise_for_status()
-        file_id = upload.json()["id"]
+        file_id = UploadedFile.model_validate_json(upload.content).id
         try:
             signed = client.get(f"{API}/files/{file_id}/url", params={"expiry": 1})
             signed.raise_for_status()
@@ -48,13 +68,17 @@ def ocr(pdf: Path, key: str) -> dict[str, Any]:
                 f"{API}/ocr",
                 json={
                     "model": MODEL,
-                    "document": {"type": "document_url", "document_url": signed.json()["url"]},
+                    "document": {
+                        "type": "document_url",
+                        "document_url": SignedURL.model_validate_json(
+                            signed.content
+                        ).url,
+                    },
                     "include_image_base64": False,
                 },
             )
             response.raise_for_status()
-            result: dict[str, Any] = response.json()
-            return result
+            return OCRResult.model_validate_json(response.content)
         finally:
             client.delete(f"{API}/files/{file_id}")
 
@@ -67,8 +91,10 @@ def main() -> None:
 
     key = os.environ["MISTRAL_API_KEY"]
     result = ocr(args.pdf, key)
-    pages = sorted(result["pages"], key=lambda page: page["index"])
-    body = "\n\n".join(f"<!-- page {page['index'] + 1} -->\n\n{page['markdown'].strip()}" for page in pages)
+    pages = sorted(result.pages, key=lambda page: page.index)
+    body = "\n\n".join(
+        f"<!-- page {page.index + 1} -->\n\n{page.markdown.strip()}" for page in pages
+    )
     args.markdown.parent.mkdir(parents=True, exist_ok=True)
     args.markdown.write_text(body + "\n")
 
@@ -78,12 +104,14 @@ def main() -> None:
         "extracted_markdown": str(args.markdown),
         "extracted_markdown_sha256": sha256(args.markdown),
         "extractor": "mistral-ocr",
-        "extractor_model": result["model"],
+        "extractor_model": result.model,
         "pages": len(pages),
         "command": f"just ocr-pdf {args.pdf} {args.markdown}",
         "generated_at": datetime.date.today().isoformat(),
     }
-    args.markdown.with_suffix(".provenance.json").write_text(json.dumps(provenance, indent=2) + "\n")
+    args.markdown.with_suffix(".provenance.json").write_text(
+        json.dumps(provenance, indent=2) + "\n"
+    )
     print(f"{args.markdown}: {len(pages)} pages")
 
 
