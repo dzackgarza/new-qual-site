@@ -90,3 +90,13 @@ $$
 :::
 
 :::
+
+::: {.remark title="Variation"}
+For a bounded chain complex of abelian groups whose
+chain groups have finite rank, tensor with $\QQ$.
+Flatness of $\QQ$ preserves homology, and
+$\dim_{\QQ}(A\otimes\QQ)=\operatorname{rank}A$.
+The field calculation above therefore gives equality
+of the alternating sums of the ranks of the chain
+groups and homology groups.
+:::
