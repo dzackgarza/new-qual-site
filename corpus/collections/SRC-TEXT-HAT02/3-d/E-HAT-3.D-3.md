@@ -21,63 +21,25 @@ Compute the Pontryagin ring structure in $H_*(SO(5); \ZZ)$.
 :::
 
 ::: {.solution}
+Use Hatcher's cellular chains. The subcomplexes $C^2$ and $C^4$ have generators $e^{2i-1}$, $e^{2i}$, and $E_i=e^{2i}e^{2i-1}$, with
+$$
+\partial e^{2i}=2e^{2i-1},\qquad
+\partial e^{2i-1}=\partial E_i=0.
+$$
+The cellular complex of $SO(5)$ is $C^2\otimes C^4$. The integral Künneth theorem therefore gives free groups in degrees $0,3,7,10$ and one $\ZZ_2$ in each of degrees $1,3,4,5,6,8$; all other groups vanish.
 
-::: pf
+Set $a=[e^1]$ and $c=[e^3]$, both of order $2$, and let $b=[E_1]\in H_3$ and $d=[E_2]\in H_7$ be free generators. There is one further torsion generator $t\in H_5$, represented by
+$$
+e^4e^1+e^3e^2.
+$$
+Indeed, its boundary is $2e^3e^1-2e^3e^1=0$, while it has order $2$ because $\partial(e^4e^2)=2(e^4e^1+e^3e^2)$. Its mod-two reduction is nonzero.
 
-::: {.pf-step #s1}
-
-$SO(5)$ has $H_*(SO(5); \ZZ) \cong \Lambda_\ZZ[x_1, x_3]$ (exterior algebra on generators of degrees $1$ and $3$), as an abelian group.
-
-::: pf-proof
-
-the homology of $SO(5)$ is the exterior algebra on generators in degrees $1$ and $3$ (from the standard computation of the homology of $SO(n)$).
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-The Pontryagin product (induced by the group multiplication) makes $H_*(SO(5))$ into a graded-commutative Hopf algebra.
-
-::: pf-proof
-
-the group structure gives a Hopf algebra structure on homology.
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Since $H_*(SO(5))$ is an exterior algebra on primitive generators $x_1$ (degree $1$) and $x_3$ (degree $3$), the Pontryagin ring is exactly the exterior algebra $\Lambda_\ZZ[x_1, x_3]$.
-
-::: pf-proof
-
-the generators are primitive (they come from the sphere factors in the CW structure), and the Pontryagin product of primitives in an exterior algebra is the exterior product.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-Hence the Pontryagin ring is $H_*(SO(5)) \cong \Lambda_\ZZ[x_1, x_3]$ with $\gradeddegree{x_1} = 1$, $\gradeddegree{x_3} = 3$, and $x_1^2 = x_3^2 = 0$, $x_1 x_3 = -x_3 x_1$.
-
-::: pf-proof
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s4){.pf-ref}.
-
-:::
-
-:::
-
+Hatcher's mod-two Pontryagin ring is the exterior algebra on $e^1,e^2,e^3,e^4$. Since the integral homology has only $2$-torsion, reduction modulo $2$ is injective on each torsion subgroup. Multiplication of the reductions of $a,b,c,d,t$ therefore determines every torsion-valued product. The nonzero products of distinct generators, apart from multiplication by $1$, are
+$$
+ac=[e^3e^1],\qquad
+at=bc=[e^3e^2e^1],\qquad
+ct=ad=[e^4e^3e^1],\qquad
+bd\text{ generates }H_{10}(SO(5);\ZZ).
+$$
+The first three displayed target classes have order $2$; $bd$ generates $H_{10}\cong\ZZ$. All squares of positive-degree generators vanish. Every other product of generators vanishes. The product $db=-bd$, while reversing the order of a product with torsion value leaves that value unchanged. These generators, additive groups, and products give the integral Pontryagin ring.
 :::
