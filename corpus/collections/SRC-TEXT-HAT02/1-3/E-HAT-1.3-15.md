@@ -23,82 +23,43 @@ Show that $p: \tilde{A} \to A$ is the covering space corresponding to the kernel
 :::
 
 ::: {.solution}
+Choose $a_0\in A$ and $\widetilde a_0\in\widetilde A$ above it. Write $i:A\hookrightarrow X$ for inclusion.
 
 ::: pf
 
 ::: pf-step
-
-$p: \tilde A \to A$ is a covering space.
-
-::: pf-proof
-
-the restriction of a covering map to a path-component of the preimage of a subspace is a covering map.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-The covering $p: \tilde A \to A$ corresponds to the subgroup $p_*(\pi_1(\tilde A)) \le \pi_1(A)$.
+The restriction $p:\widetilde A\to A$ is a connected covering space.
 
 ::: pf-proof
-
-the fundamental theorem of covering spaces: a covering corresponds to the image of the fundamental group of the total space.
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-$p_*(\pi_1(\tilde A)) = \ker(\pi_1(A) \to \pi_1(X))$.
-
-::: pf-proof
-
-::: {.pf-step #s3-1}
-
-$p_*(\pi_1(\tilde A)) \subseteq \ker(\pi_1(A) \to \pi_1(X))$.
-
-::: pf-proof
-
-the composition $\pi_1(\tilde A) \xrightarrow{p_*} \pi_1(A) \to \pi_1(X)$ factors through $\pi_1(\tilde X) = 0$ (since $\tilde A \subseteq \tilde X$ and $\tilde X$ is simply connected), so its image is trivial.
-
-:::
-
-:::
-
-::: {.pf-step #s3-2}
-
-$\ker(\pi_1(A) \to \pi_1(X)) \subseteq p_*(\pi_1(\tilde A))$.
-
-::: pf-proof
-
-a loop $\gamma$ in $A$ whose image in $\pi_1(X)$ is trivial lifts to a loop in $\tilde X$; since $\gamma$ is based in $A$ and its lift starts in $\tilde A$, the lift lies entirely in $\tilde A$ (a path-component of $p^{-1}(A)$), so $\gamma$ is the image of a loop in $\tilde A$, i.e. $\gamma \in p_*(\pi_1(\tilde A))$.
-
+By [[E-HAT-1.3-1|Exercise 1.3.1]], $p:p^{-1}(A)\to A$ is a covering. For $a\in A$, choose an evenly covered neighborhood that is path connected, using local path connectedness of $A$. Each sheet over this neighborhood is path connected. It is therefore either contained in the path component $\widetilde A$ or disjoint from it. The sheets contained in $\widetilde A$ evenly cover the neighborhood for the restricted map. Every $a\in A$ has a lift in $\widetilde A$: lift a path in $A$ from $a_0$ to $a$ starting at $\widetilde a_0$. Thus the restriction is a connected covering of all of $A$.
 :::
 
 :::
 
 ::: pf-step
-
-Hence equality holds.
+The subgroup of $\pi_1(A,a_0)$ corresponding to this cover is contained in $\ker i_*$.
 
 ::: pf-proof
-
-Steps [](#s3-1){.pf-ref} and [](#s3-2){.pf-ref}.
-
+A loop in $\widetilde A$ maps to a loop in $\widetilde X$. Since $\widetilde X$ is simply connected, its image under $p$ is nullhomotopic in $X$. Hence $i_*p_*\pi_1(\widetilde A,\widetilde a_0)=1$.
 :::
 
 :::
 
+::: pf-step
+The subgroup $\ker i_*$ is contained in $p_*\pi_1(\widetilde A,\widetilde a_0)$.
+
+::: pf-proof
+Let $\gamma$ be a loop in $A$ based at $a_0$ whose class is trivial in $\pi_1(X,a_0)$. Lift it through $p:\widetilde X\to X$ starting at $\widetilde a_0$. A nullhomotopic loop has a closed lift, by homotopy lifting. The lifted loop lies in $p^{-1}(A)$ and begins in $\widetilde A$, so its whole image lies in $\widetilde A$. Its class maps to $[\gamma]$.
 :::
 
 :::
 
-::: pf-qed
+::: pf-step
+The covering $p:\widetilde A\to A$ corresponds to $\ker i_*$.
 
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+::: pf-proof
+The two inclusions above give $p_*\pi_1(\widetilde A,\widetilde a_0)=\ker i_*$. This image is the subgroup assigned to the connected based covering.
+:::
 
 :::
 
