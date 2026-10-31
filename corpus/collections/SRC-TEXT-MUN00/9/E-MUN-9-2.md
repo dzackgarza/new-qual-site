@@ -22,71 +22,33 @@ Find if possible a choice function for each of the following collections, withou
 
 (a) The collection $\mathcal{A}$ of nonempty subsets of $\ZZ_{+}$ .
 
-(b) The collection B of nonempty subsets of Z.
+(b) The collection $\mathcal B$ of nonempty subsets of $\ZZ$.
 
-(c) The collection C of nonempty subsets of the rational numbers Q.
+(c) The collection $\mathcal C$ of nonempty subsets of $\QQ$.
 
 (d) The collection $\mathcal{D}$ of nonempty subsets of $X^{\omega}$, where $X = \{0,1\}$ .
 :::
 
 ::: {.solution}
 
-::: pf
+(a) Every nonempty $A\subseteq\ZZ_+$ has a least element. Thus
+$c(A)=\min A$ is a choice function for $\mathcal A$.
 
-::: {.pf-step #s1}
+(b) List the integers in the order $0,1,-1,2,-2,\ldots$. Every
+nonempty $B\subseteq\ZZ$ has a first element in this list. Choosing it
+defines a choice function for $\mathcal B$.
 
-(a) Yes: $c(A)=\min A$ (least element) is a choice function for nonempty subsets of $\ZZ_+$.
+(c) Enumerate $\QQ$ as in [[E-MUN-7-1]], and write the list as
+$q_1,q_2,\ldots$. For each
+nonempty $C\subseteq\QQ$, choose $q_n$ for the least $n$ with $q_n\in C$.
+This defines a choice function for $\mathcal C$.
 
-::: pf-proof
-
-$\ZZ_+$ well-ordered.
-
-:::
-
-:::
-
-::: pf-step
-
-(b) Yes: well-order $\ZZ$ as $0,1,-1,2,-2,\dots$ and take least in that order.
-
-::: pf-proof
-
-explicit well-ordering.
-
-:::
-
-:::
-
-::: pf-step
-
-(c) Yes: $\QQ$ countable, fix enumeration $q_1,q_2,\dots$ and take $c(A)=q_{\min\{n:q_n\in A\}}$.
-
-::: pf-proof
-
-countable well-ordering.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-(d) No: $\mathcal D$ is all nonempty subsets of Cantor set $2^\omega$; no definable choice without AC (requires AC).
-
-::: pf-proof
-
-$2^\omega$ uncountable with no definable well-order in ZF.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s4){.pf-ref}.
-
-:::
-
-:::
-
+(d) A choice function for *every* nonempty subset of $X^\omega$ exists
+if $X^\omega$ is well-orderable: choose the least element of each subset.
+Conversely, a choice function on all nonempty subsets of a set yields a
+well-order of that set by transfinite recursion. Thus part (d) asks for a
+well-order of $X^\omega$, which is not supplied by the coordinatewise
+order or by the explicit enumerations in (a)-(c). The axiom of choice
+guarantees one; without a further choice principle, its existence cannot
+be concluded in ZF.
 :::
