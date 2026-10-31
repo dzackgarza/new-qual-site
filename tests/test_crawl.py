@@ -41,6 +41,9 @@ def test_crawl_treats_pagefind_documents_as_search_reachable(tmp_path: Path) -> 
     site = tmp_path / "_site"
     write(site / "index.html", '<dialog id="site-search"></dialog>')
     write(site / "tag" / "T-ONE.html", "<main data-pagefind-body>Theory searchable only</main>")
+    write(site / "problems.json", '{"rows":[]}')
+    write(site / "sources.json", '{"rows":[]}')
+    write(site / "collection-problems.json", "{}")
 
     result = crawl(site)
 
@@ -53,6 +56,8 @@ def test_data_driven_broken_url_is_a_crawl_failure(tmp_path: Path) -> None:
     site = tmp_path / "_site"
     write(site / "index.html", '<dialog id="site-search"></dialog>')
     (site / "problems.json").write_text(json.dumps({"rows": [{"url": "tag/P-MISSING.html"}]}))
+    write(site / "sources.json", '{"rows":[]}')
+    write(site / "collection-problems.json", "{}")
 
     urls = data_urls(site)
     result = crawl(site)

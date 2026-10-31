@@ -58,7 +58,7 @@ def _target(raw: str, base: pathlib.Path, site: pathlib.Path) -> pathlib.Path | 
 def targets(page: pathlib.Path, site: pathlib.Path = SITE) -> list[pathlib.Path]:
     """What one page points at, as paths on disk."""
     out: list[pathlib.Path] = []
-    for raw in LINK.findall(page.read_text(errors="replace")):
+    for raw in LINK.findall(page.read_text()):
         target = _target(raw, page.parent, site)
         if target is not None:
             out.append(target)
@@ -74,8 +74,6 @@ def browser_targets(site: pathlib.Path = SITE) -> dict[pathlib.Path, list[pathli
     out: dict[pathlib.Path, list[pathlib.Path]] = {}
     for page_name, data_name in (("problems.html", "problems.json"), ("sources.html", "sources.json")):
         data_path = site / data_name
-        if not data_path.exists():
-            continue
         rows = _json(data_path)["rows"]
         out[(site / page_name).resolve()] = [target for row in rows if (target := _target(row["url"], site, site)) is not None]
     return out
@@ -86,8 +84,6 @@ def data_urls(site: pathlib.Path = SITE) -> list[tuple[str, pathlib.Path]]:
     out: list[tuple[str, pathlib.Path]] = []
     for name in DATA_URLS:
         path = site / name
-        if not path.exists():
-            continue
         data = _json(path)
         urls: list[str]
         if name == "collection-problems.json":
@@ -132,7 +128,7 @@ def crawl(site: pathlib.Path = SITE) -> CrawlResult:
                 )
             )
 
-    indexed = frozenset(page for page in pages if "data-pagefind-body" in page.read_text(errors="replace"))
+    indexed = frozenset(page for page in pages if "data-pagefind-body" in page.read_text())
     dynamic = browser_targets(site)
     seen: set[pathlib.Path] = set()
     queue = [(site / "index.html").resolve()]
@@ -144,7 +140,7 @@ def crawl(site: pathlib.Path = SITE) -> CrawlResult:
         seen.add(page)
         if not page.exists() or page.suffix != ".html":
             continue
-        text = page.read_text(errors="replace")
+        text = page.read_text()
         outgoing = targets(page, site)
         if page in dynamic:
             outgoing.extend(dynamic[page])
