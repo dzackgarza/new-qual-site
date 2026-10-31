@@ -84,8 +84,10 @@ If $\deg(f) \neq \deg(a)$, then $f$ has a fixed point.
 
 ::: pf-proof
 
+If $n=0$, the only fixed-point-free self-map of the two-point space $S^0$ is the transposition. It is the antipodal map and has degree $-1$. Hence the claim holds in this case.
+
 ::: pf-step
-The sphere $S^n$ is a compact, triangulable CW complex (a compact polyhedron).
+For $n\ge1$, the sphere $S^n$ is a compact, triangulable CW complex.
 :::
 
 ::: pf-step
