@@ -156,7 +156,6 @@ def test_random_problem_topic_selector_is_in_the_shared_header(built_fixture: Pa
         assert (site / route.parent / form.attrs["action"]).resolve() == site / "problems.html"
         assert selects[0].attrs["name"] == "area"
         assert form.find_all("input", name="sample")[0].attrs["value"] == "1"
-    assert "window.location.assign(new URL(problem.url, siteRoot).href)" in app
 
 
 LIST_PROBLEM = r"""---

@@ -806,14 +806,14 @@ def page_document(
         for area, name in sorted(subjects.items(), key=lambda item: item[1].casefold())
     )
     random_problem_html = (
-        '<form id="random-problem" class="header-random-problem" data-problems-url="problems.json">'
+        f'<form id="random-problem" class="header-random-problem" action="{prefix}problems.html" method="get">'
         '<label for="random-problem-subject">Random problem</label>'
-        '<select id="random-problem-subject" required>'
+        '<select id="random-problem-subject" name="area" required>'
         '<option value="" selected disabled>Choose subject</option>'
         f"{random_problem_options}"
         "</select>"
+        '<input type="hidden" name="sample" value="1">'
         '<button type="submit">Go</button>'
-        '<span id="random-problem-status" class="random-problem-status" role="status" aria-live="polite"></span>'
         "</form>"
     )
     match chrome:
