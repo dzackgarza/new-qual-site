@@ -56,7 +56,7 @@ i_*:H_0(A)\to H_0(X)
 $$
 is surjective.
 
-The group $H_0(X)$ is free on the path-components of $X$, and a component of $A$ maps to the generator of the component of $X$ containing it. Hence $i_*$ is surjective exactly when every component of $X$ contains a point, equivalently a component, of $A$.
+The group $H_0(X)$ is free on the path-components of $X$, and a component of $A$ maps to the generator of the component of $X$ containing it. Hence $i_*$ is surjective exactly when every component of $X$ contains a point of $A$, equivalently a component of $A$.
 
 :::
 
