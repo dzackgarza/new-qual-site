@@ -44,5 +44,5 @@ with the order topology, regarded as a subspace of the Hausdorff compact ordinal
 $$
 Z=[0,\omega_1].
 $$
-The space $X$ is countably compact: every countable subset of $X$ has supremum $<\omega_1$, and the standard order-topology argument gives a cluster point; equivalently, every countable open cover has a finite subcover. Hence, since $X$ is $T_1$, it is limit point compact by the preceding exercise. But $X$ is not closed in $Z$, since its closure contains the missing endpoint $\omega_1$. Thus a limit point compact subspace of a Hausdorff space need not be closed.
+The space $X$ is limit point compact. Every infinite subset $A\subseteq X$ has an increasing sequence $a_1<a_2<\cdots$ of its first countably many points. Its supremum $s$ is a countable limit ordinal, so $s<\omega_1$; every order neighborhood of $s$ contains some $a_n\ne s$. Thus $s$ is a limit point of $A$ in $X$. But $X$ is not closed in $Z$, since its closure contains the missing endpoint $\omega_1$. Thus a limit point compact subspace of a Hausdorff space need not be closed.
 :::
