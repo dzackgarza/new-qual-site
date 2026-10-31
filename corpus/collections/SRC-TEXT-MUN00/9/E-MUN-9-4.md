@@ -26,98 +26,23 @@ Rewrite the proof so as to make explicit the use of the choice axiom.
 
 ::: {.solution}
 
-::: pf
+The theorem is Theorem 7.5: a countable union of countable sets is
+countable. Let $\{A_n\}_{n\in\ZZ_+}$ be a family of countable sets, and put
+$I=\{n:A_n\ne\varnothing\}$. If $I$ is empty, the union is empty.
 
-::: pf-step
+For each $n\in I$, the set of surjections $\ZZ_+\to A_n$ is nonempty:
+finite nonempty sets can be listed with repetitions. Apply the axiom of
+choice to this family of sets of surjections, obtaining one map
+$f_n:\ZZ_+\to A_n$ for every $n\in I$. This simultaneous selection is
+the choice step in the proof. Countable choice suffices because $I$ is
+countable.
 
-The theorem is Theorem 7.5: a countable union of countable sets is countable.
-
-::: pf-proof
-
-this is the theorem in §7 whose proof requires infinitely many arbitrary choices.
-
-:::
-
-:::
-
-::: pf-step
-
-The proof requires choosing, for each countable set $A_n$, an enumeration (a surjection or bijection from a subset of $\ZZ_+$ onto $A_n$).
-
-::: pf-proof
-
-to write $\bigcup_n A_n$ as a countable list, one must pick a specific enumeration of each $A_n$, and there are infinitely many such choices (one per $n$).
-
-:::
-
-:::
-
-::: pf-step
-
-Rewritten proof making the choice explicit: let $\{A_n\}_{n \in \ZZ_+}$ be a countable family of countable sets.
-
-::: pf-proof
-
-setup.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-By the axiom of choice, choose for each $n$ a surjection $f_n: \ZZ_+ \to A_n$.
-
-::: pf-proof
-
-this is the single application of the axiom of choice (a choice function on the family of nonempty sets of surjections $\ZZ_+ \to A_n$).
-
-:::
-
-:::
-
-::: pf-step
-
-Define $g: \ZZ_+ \times \ZZ_+ \to \bigcup_n A_n$ by $g(n, m) = f_n(m)$.
-
-::: pf-proof
-
-definition.
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-$g$ is surjective.
-
-::: pf-proof
-
-every element of $\bigcup_n A_n$ lies in some $A_n$, hence is $f_n(m)$ for some $m$.
-
-:::
-
-:::
-
-::: {.pf-step #s7}
-
-Since $\ZZ_+ \times \ZZ_+$ is countable, $\bigcup_n A_n$ is countable.
-
-::: pf-proof
-
-Step [](#s6){.pf-ref} and the countability of $\ZZ_+ \times \ZZ_+$.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s7){.pf-ref}; the axiom of choice is used exactly once, in step [](#s4){.pf-ref}.
-
-:::
-
-:::
-
+The map
+$$
+I\times\ZZ_+\longrightarrow\bigcup_{n\in I}A_n,
+\qquad(n,m)\longmapsto f_n(m)
+$$
+is surjective. Its domain is a subset of the countable set
+$\ZZ_+\times\ZZ_+$, so its image is countable. Thus
+$\bigcup_{n\in\ZZ_+}A_n$ is countable.
 :::
