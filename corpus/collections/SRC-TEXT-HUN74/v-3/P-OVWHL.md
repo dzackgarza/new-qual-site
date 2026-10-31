@@ -28,11 +28,11 @@ audit:
 ::: {.problem}
 Show that if $[F: K] < \infty$, then the following conditions are equivalent:
 
-1. $F$ is Galois over $K$
+(i) $F$ is Galois over $K$
 
-2. $F$ is separable over $K$ and $F$ is a splitting field of some polynomial $f\in K[x]$.
+(ii) $F$ is separable over $K$ and $F$ is a splitting field of some polynomial $f\in K[x]$.
 
-3. $F$ is a splitting field over $K$ of some polynomial $f\in K[x]$ whose irreducible factors are separable.
+(iii) $F$ is a splitting field over $K$ of some polynomial $f\in K[x]$ whose irreducible factors are separable.
 :::
 
 ::: {.solution}

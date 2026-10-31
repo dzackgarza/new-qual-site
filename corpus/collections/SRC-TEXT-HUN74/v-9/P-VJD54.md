@@ -27,15 +27,15 @@ audit:
 
 ::: {.problem}
 Let $K$ be a field, $f\in K[x]$ an irreducible polynomial of degree $n\geq 5$ and $F$ a splitting field of $f$ over $K$.
-Assume that $Aut_{k}(F)\simeq S_{n}$.
+Assume that $\Aut_K(F)\cong S_n$.
 Let $u$ be a root of $f$ in $F$.
 Then,
 
-1. $K(u)$ is not Galois over $K$; $[K(u):K]=n$ and $Aut_{K}(K(u))=1$ (and hence solvable).
+(a) $K(u)$ is not Galois over $K$; $[K(u):K]=n$ and $\Aut_K(K(u))=1$ (and hence solvable).
 
-2. Every normal closure over $K$ that contains $u$ also contains an isomorphic copy of $F$.
+(b) Every normal closure over $K$ that contains $u$ also contains an isomorphic copy of $F$.
 
-3. There is no radical extension field $E$ of $K$ such that $K\subset K(u)\subset E$.
+(c) There is no radical extension field $E$ of $K$ such that $K\subset K(u)\subset E$.
 :::
 
 ::: {.solution}

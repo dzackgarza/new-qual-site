@@ -38,9 +38,9 @@ $$
 
 Prove the following:
 
-1. If $\alpha_1$ is an epimorphism and $\alpha_2, \alpha_4$ are monomorphisms then $\alpha_3$ is a monomorphism.
+(a) If $\alpha_1$ is an epimorphism and $\alpha_2, \alpha_4$ are monomorphisms then $\alpha_3$ is a monomorphism.
 
-2. If $\alpha_5$ is a monomorphism and $\alpha_2, \alpha_4$ are epimorphisms then $\alpha_3$ is an epimorphism.
+(b) If $\alpha_5$ is a monomorphism and $\alpha_2, \alpha_4$ are epimorphisms then $\alpha_3$ is an epimorphism.
 :::
 
 ::: {.solution}

@@ -20,9 +20,9 @@ audit:
 ::: {.problem}
 Let $\phi$ be the Euler function.
 
-1. $\phi(n)$ is even for $n>2$.
+(a) Show that $\phi(n)$ is even for $n>2$.
 
-2. find all $n>0$ such that $\phi(n)=2$.
+(b) Find all $n>0$ such that $\phi(n)=2$.
 :::
 
 ::: {.solution}

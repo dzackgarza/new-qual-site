@@ -28,13 +28,13 @@ audit:
 ::: {.problem}
 Let $R$ be a PID and let $A$ be a cyclic $R$-module of nonzero order $r\in R$.
 
-1. Show that if $s$ is relatively prime to $r$, then $sA = A$ and $A[s] = 0$.
+(a) Show that if $s$ is relatively prime to $r$, then $sA = A$ and $A[s] = 0$.
 
-2. If $s$ divides $r$, so $sk = r$, then $sA \cong R/(k)$ and $A[s] \cong R/(s)$.
+(b) If $s$ divides $r$, so $sk = r$, then $sA \cong R/(k)$ and $A[s] \cong R/(s)$.
 :::
 
 ::: {.remark title="Variations"}
-Part 2 holds over any commutative domain $R$: if $A=Ra$ with $\Ann_R(a)=(r)$ and $r=sk$ with $s,k\neq 0$, then $sA\cong R/(k)$ and $A[s]\cong R/(s)$.
+Part (b) holds over any commutative domain $R$: if $A=Ra$ with $\Ann_R(a)=(r)$ and $r=sk$ with $s,k\neq 0$, then $sA\cong R/(k)$ and $A[s]\cong R/(s)$.
 :::
 
 ::: {.solution}

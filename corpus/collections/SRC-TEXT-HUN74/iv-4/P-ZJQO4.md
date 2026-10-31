@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Let$\pi: \ZZ \to \ZZ_2$ be the canonical epimorphism.
+Let $\pi\colon \ZZ \to \ZZ_2$ be the canonical epimorphism.
 Show that the induced map $\overline{\pi}: \mathrm{Hom}(\ZZ_2, \ZZ) \to \mathrm{Hom}(\ZZ_2, \ZZ_2)$ is the zero map.
 Conclude that $\overline{\pi}$ is not an epimorphism, so the functor $\mathrm{Hom}(\ZZ_2, -)$ is not right exact.
 :::

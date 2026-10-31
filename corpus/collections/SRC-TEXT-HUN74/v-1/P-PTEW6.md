@@ -25,9 +25,9 @@ audit:
 ::: {.problem}
 \envlist
 
-1. If $F = \QQ(\sqrt 2, \sqrt 3)$, compute $[F: \QQ]$ and find a basis of $F/\QQ$.
+(a) If $F = \QQ(\sqrt 2, \sqrt 3)$, compute $[F: \QQ]$ and find a basis of $F/\QQ$.
 
-2. Do the same for $\QQ(i, \sqrt 3, \zeta_3)$ where $\zeta_3$ is a nonreal cube root of 1.
+(b) Do the same for $\QQ(i, \sqrt 3, \zeta_3)$ where $\zeta_3$ is a nonreal cube root of 1.
 :::
 
 ::: {.solution}

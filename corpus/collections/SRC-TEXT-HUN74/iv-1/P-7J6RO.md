@@ -19,11 +19,11 @@ audit:
 ---
 
 ::: {.problem}
-If $R$ has an identity, then a nonzero unitary $R\dash$module is **simple** if its only submodules are $0$ and $A$.
+If $R$ has an identity, then a nonzero unitary $R$-module $A$ is **simple** if its only submodules are $0$ and $A$.
 
-1. Show that every simple $R-$module is cyclic.
+(a) Show that every simple $R$-module is cyclic.
 
-2. If $A$ is simple, every $R-$module endomorphism is either the zero map or an isomorphism.
+(b) If $A$ is simple, every $R$-module endomorphism of $A$ is either the zero map or an isomorphism.
 :::
 
 ::: {.solution}

@@ -42,14 +42,14 @@ a_{n1}x_1+\cdots+a_{nm}x_m&=b_n.
 \end{aligned}
 $$
 
-1. Show that the system has a simultaneous solution if and only if the matrix
-   equation $AX=B$ has a solution.
+(a) Show that the system has a simultaneous solution if and only if the matrix
+equation $AX=B$ has a solution.
 
-2. If $A_1,B_1$ are obtained from $A,B$ by performing the same sequence of
-   elementary row operations, show that $X$ solves $AX=B$ if and only if it
-   solves $A_1X=B_1$.
+(b) If $A_1,B_1$ are obtained from $A,B$ by performing the same sequence of
+elementary row operations, show that $X$ solves $AX=B$ if and only if it
+solves $A_1X=B_1$.
 
-3. Let
+(c) Let
 $$
 C=[A\mid B]
 $$
@@ -63,7 +63,7 @@ $$
 \operatorname{rank}A=m.
 $$
 
-4. If $B=0$, show that the homogeneous system has a nontrivial solution if
+(d) If $B=0$, show that the homogeneous system has a nontrivial solution if
 and only if
 $$
 \operatorname{rank}A<m.

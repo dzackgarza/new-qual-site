@@ -42,11 +42,11 @@ E=K(v_0,\ldots,v_k).
 $$
 Then show that the following hold:
 
-1. $F$ is a splitting field of $g$ over $E$.
+(a) $F$ is a splitting field of $g$ over $E$.
 
-2. $F$ is Galois over $E$.
+(b) $F$ is Galois over $E$.
 
-3. $\mathrm{Aut}_E(F) = \mathrm{Aut}_K(F)$.
+(c) $\mathrm{Aut}_E(F) = \mathrm{Aut}_K(F)$.
 :::
 
 ::: {.solution}

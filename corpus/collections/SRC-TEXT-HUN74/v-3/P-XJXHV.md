@@ -27,9 +27,9 @@ audit:
 ::: {.problem}
 Let $E$ be an intermediate field extension in $K \leq E \leq F$.
 
-1. Show that if $u\in F$ is separable over $K$, then $u$ is separable over $E$.
+(a) Show that if $u\in F$ is separable over $K$, then $u$ is separable over $E$.
 
-2. Show that if $F$ is separable over $K$, then $F$ is separable over $E$ and $E$ is separable over $K$.
+(b) Show that if $F$ is separable over $K$, then $F$ is separable over $E$ and $E$ is separable over $K$.
 :::
 
 ::: {.solution}

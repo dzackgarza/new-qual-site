@@ -26,21 +26,21 @@ audit:
 ---
 
 ::: {.problem}
-Let $R$ be a principal ideal domain,$A$ a unitary left $R$-module, and $p\in R$ a prime (and thus
+Let $R$ be a principal ideal domain, $A$ a unitary left $R$-module, and $p\in R$ a prime (and thus
 irreducible) element. Define $$\begin{aligned}
-    pA &\coloneqq \{ pa \mid a\in A\} \\
-    A[p] &\coloneqq \{ a\in A \mid pa = 0\}.\end{aligned}$$
+pA &\coloneqq \{ pa \mid a\in A\} \\
+A[p] &\coloneqq \{ a\in A \mid pa = 0\}.\end{aligned}$$
 
 Show the following:
 
-1.  $R/(p)$ is a field.
+(a) $R/(p)$ is a field.
 
-2.  $pA$ and $A[p]$ are submodules of $A$.
+(b) $pA$ and $A[p]$ are submodules of $A$.
 
-3.  $A/pA$ is a vector space over $R/(p)$, with
-    $$(r + (p))(a + pA) = ra + pA.$$
+(c) $A/pA$ is a vector space over $R/(p)$, with
+$$(r + (p))(a + pA) = ra + pA.$$
 
-4.  $A[p]$ is a vector space over $R/(p)$ with $$(r + (p))a = ra.$$
+(d) $A[p]$ is a vector space over $R/(p)$ with $$(r + (p))a = ra.$$
 :::
 
 ::: {.solution}
@@ -90,7 +90,7 @@ makes $A/pA$ into an $R/(p)$-vector space.
 
 ::: pf-proof
 
-By step [](#s2){.pf-ref}, $pA$ is a submodule. Since $(p)A=pA$, part (2) of [[P-457V6]], applied
+By step [](#s2){.pf-ref}, $pA$ is a submodule. Since $(p)A=pA$, part (b) of [[P-457V6]], applied
 to the two-sided ideal $(p)$, gives an $R/(p)$-module structure on $A/pA$ by the stated
 formula. By step [](#s1){.pf-ref} the scalar ring $R/(p)$ is a field, so this module is a vector
 space.
@@ -133,6 +133,6 @@ and hence, by step [](#s1){.pf-ref}, an $R/(p)$-vector space.
 :::
 
 ::: {.remark title="Variations"}
-Part 4 holds for any commutative ring $R$, any $R$-module $A$, and any $p\in R$: $A[p]$ is an $R/(p)$-module under $(r+(p))a=ra$.
-The proof of part 4 applies unchanged, since it uses only $r-r'\in(p)$ and the commutativity of $R$; only the last sentence, that the module is a vector space, needs $(p)$ maximal.
+Part (d) holds for any commutative ring $R$, any $R$-module $A$, and any $p\in R$: $A[p]$ is an $R/(p)$-module under $(r+(p))a=ra$.
+The proof of part (d) applies unchanged, since it uses only $r-r'\in(p)$ and the commutativity of $R$; only the last sentence, that the module is a vector space, needs $(p)$ maximal.
 :::
