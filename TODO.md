@@ -3,8 +3,8 @@
 ## Fast local checks and complete CI acceptance
 
 Local hooks reject basic defects in the actual changed content; CI owns full test suites,
-corpus-wide validation, builds, rendering, and broad audits. QC-01 through QC-11
-are closed. QC-12 remains open.
+corpus-wide validation, builds, rendering, and broad audits. QC-01 through QC-12
+are closed.
 
 | ID | Task | Needs |
 | --- | --- | --- |
@@ -14,13 +14,16 @@ are closed. QC-12 remains open.
   `test-ci` tier with `correctness` enforcement. Run `41215531023` used comparison
   base `d2a58879b7`, executed `python-tests` once, and recorded zero failures.
 
-- [ ] **QC-12 — Close against the full completion condition.**
+- [x] **QC-12 — Close against the full completion condition.**
   Verify a single current revision through hosted acceptance, report publication, site
   build, crawl, and deployment. Confirm the deployed revision stamp. Reconcile resolved
   complaint entries with the delivered state.
   **Acceptance:** cheap errors are caught locally; expensive checks run in CI; generated
   reports are usable; remaining failures are explicitly owned. Successful local hooks
   alone do not close this workstream.
+  Run `41219993906` passed reports, shared QC, build, crawl, and deployment for
+  `3f1ebad6b4`; the deployed page carries that revision. The remaining source
+  question is recorded in `COMPLAINTS.md`.
 
 ## Execution DAG
 
@@ -35,8 +38,9 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
 ### Current route
 
 `publication-milestone`, `unsolved-contribution`, `slogans`, `lamport-conversion`,
-`solution-section-restoration`, `copy-policy-repair`, and `audited-deployment` are closed.
-The next ready node is `bloat-audit-loop`.
+`solution-section-restoration`, `copy-policy-repair`, `audited-deployment`,
+`refactor-audit`, `type-paydown`, and `bloat-audit-loop` are closed.
+The next ready work is authoring solutions under issue #2.
 
 Copy is reader-facing prose: wiki pages, remarks, and site strings. Problem statements and
 proofs are mathematics, not copy. A defect in a statement or proof is repaired as a
