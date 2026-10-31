@@ -42,7 +42,7 @@ Assume throughout that $[F:K]<\infty$.
 
 ::: {.pf-step #s1}
 
-Condition 1 implies condition 2.
+Condition (i) implies condition (ii).
 
 ::: pf-proof
 
@@ -61,7 +61,7 @@ $$
 K(\alpha_1,\ldots,\alpha_r)=F.
 $$
 Thus $F$ is the splitting field of $f$ over $K$. Together with separability,
-this is condition 2.
+this is condition (ii).
 
 :::
 
@@ -69,7 +69,7 @@ this is condition 2.
 
 ::: {.pf-step #s2}
 
-Condition 2 implies condition 3.
+Condition (ii) implies condition (iii).
 
 ::: pf-proof
 
@@ -78,7 +78,7 @@ $f\in K[x]$. Let $p\in K[x]$ be an irreducible factor of $f$. Since $f$ splits
 over $F$, the polynomial $p$ has a root $\alpha\in F$. Because $F/K$ is
 separable, $\alpha$ is separable over $K$. Its minimal polynomial over $K$ is
 $p$ up to a nonzero scalar, so $p$ is separable. Thus every irreducible factor
-of $f$ is separable, giving condition 3.
+of $f$ is separable, giving condition (iii).
 
 :::
 
@@ -86,7 +86,7 @@ of $f$ is separable, giving condition 3.
 
 ::: {.pf-step #s3}
 
-Condition 3 implies that $F/K$ is normal.
+Condition (iii) implies that $F/K$ is normal.
 
 ::: pf-proof
 
@@ -101,7 +101,7 @@ in $F$ splits over $F$. Hence $F/K$ is normal.
 
 ::: {.pf-step #s4}
 
-Condition 3 implies that $F/K$ is separable.
+Condition (iii) implies that $F/K$ is separable.
 
 ::: pf-proof
 
@@ -120,7 +120,7 @@ extension of $K$. Therefore $F/K$ is separable.
 
 ::: {.pf-step #s5}
 
-Condition 3 implies condition 1.
+Condition (iii) implies condition (i).
 
 ::: pf-proof
 
@@ -139,7 +139,7 @@ The three conditions are equivalent.
 
 The implications steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s5){.pf-ref} give
 $$
-1\Longrightarrow2\Longrightarrow3\Longrightarrow1.
+\text{(i)}\Longrightarrow\text{(ii)}\Longrightarrow\text{(iii)}\Longrightarrow\text{(i)}.
 $$
 
 :::

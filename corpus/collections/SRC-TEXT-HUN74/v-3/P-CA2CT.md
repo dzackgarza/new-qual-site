@@ -31,7 +31,7 @@ If $F$ is algebraically closed and $E$ is the set of all elements in $F$ that ar
 ::: {.solution}
 Assume $K\subseteq F$, with $F$ algebraically closed, and set
 $$
-E=\{a\in F:a\text{ is algebraic over }K\}.
+E=\{a\in F \st a\text{ is algebraic over }K\}.
 $$
 
 ::: pf
