@@ -59,11 +59,11 @@ $$
 $$
 Thus the pair is $(m+n+1)$-connected.
 
-Since $X\vee Y\hookrightarrow X\times Y$ is a cofibration, the quotient map identifies relative homotopy with the homotopy of the quotient in this range, and
+Since $X\vee Y\hookrightarrow X\times Y$ is a cofibration, the quotient is the smash product
 $$
 (X\times Y)/(X\vee Y)=X\wedge Y.
 $$
-Equivalently, the quotient CW structure on $X\wedge Y$ has no positive-dimensional cells below dimension $m+n+2$. Therefore
+The quotient CW structure on $X\wedge Y$ has no positive-dimensional cells below dimension $m+n+2$. Therefore
 $$
 \pi_i(X\wedge Y)=0
 \qquad(i\le m+n+1),
