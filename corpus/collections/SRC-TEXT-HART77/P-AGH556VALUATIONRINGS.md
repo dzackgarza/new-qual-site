@@ -55,7 +55,7 @@ Show that every valuation ring $R$ of $K / k$ is one of the three kinds describe
 
 Hint: In case (3), let $f \in R$.
 Use (Ex.
-5.1) to show that for all $i \gg 0$, $f \in \mathcal{O}_{X_i}$, so in fact $f \in R_0$.
+5.1) to show that for all $i \gg 0$, $f \in \OO_{X_i}$, so in fact $f \in R_0$.
 :::
 
 ::: {.solution}

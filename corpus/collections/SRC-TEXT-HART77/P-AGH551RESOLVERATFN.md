@@ -58,7 +58,7 @@ If $f$ is constant, it already defines a constant morphism
 $$
 X\longrightarrow\PP^1,
 $$
-so take $g=\operatorname{id}_X$. Assume from now on that
+so take $g=\id_X$. Assume from now on that
 $$
 f\in K(X)^\times
 $$
