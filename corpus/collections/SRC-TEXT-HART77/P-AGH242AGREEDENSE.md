@@ -126,7 +126,7 @@ be the ideal sheaf defining $E$.  The equality of underlying spaces means
 $$
 V(\mathcal I)=X.
 $$
-Affine-locally this says every element of the corresponding ideal lies in every prime ideal, hence is nilpotent.  Thus $\mathcal I$ is a sheaf of nilpotent ideals.
+Affine-locally this says every element of the corresponding ideal lies in every prime ideal, hence is nilpotent. Thus $\mathcal I$ is contained in the nilradical sheaf.
 
 Because $X$ is reduced, its nilradical is zero, so
 $$
