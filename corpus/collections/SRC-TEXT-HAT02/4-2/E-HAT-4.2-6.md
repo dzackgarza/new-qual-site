@@ -29,7 +29,7 @@ Show that the relative form of the Hurewicz theorem in dimension $n$ implies the
 :::
 
 ::: {.solution}
-Assume the relative Hurewicz theorem in dimension $n$. Let $X$ be $(n-2)$-connected, as in the absolute Hurewicz theorem in dimension $n-1$, and consider the cone pair $(CX,X)$. Since $CX$ is contractible, the long exact homotopy sequence gives
+Take $n\ge3$, so the absolute theorem in dimension $n-1$ lies in its stated range. Assume the relative Hurewicz theorem in dimension $n$. Let $X$ be $(n-2)$-connected, as in the absolute Hurewicz theorem in dimension $n-1$, and consider the cone pair $(CX,X)$. Since $CX$ is contractible, the long exact homotopy sequence gives
 $$
 \pi_i(CX,X)\cong \pi_{i-1}(X)\qquad(i\ge2).
 $$
