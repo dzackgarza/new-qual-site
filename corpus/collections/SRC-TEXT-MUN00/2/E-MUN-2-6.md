@@ -56,4 +56,6 @@ Its graph is the part of the cubic $y=x^3-x$ to the right of the local minimum $
 
 :::
 
+![The increasing branch of $y=x^3-x$ and its inverse, reflected across $y=x$.](../../../../assets/figures/munkres-2-6-inverse.svg)
+
 :::
