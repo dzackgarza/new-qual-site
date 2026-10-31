@@ -34,12 +34,12 @@ $$
 \krulldim X = \trdeg\qty{K(X)/k}.
 $$
 
-(c) If $Y$ is a closed subset of $X$, then
+(c) If $Y$ is a nonempty closed subset of $X$, then
 $$
 \codim(Y, X) = \inf \theset{\krulldim \OO_{P, X} \st P \in Y}.
 $$
 
-(d) If $Y$ is a closed subset of $X$, then
+(d) If $Y$ is a nonempty closed subset of $X$, then
 $$
 \krulldim Y + \codim(Y, X) = \krulldim X.
 $$
@@ -47,6 +47,10 @@ $$
 (e) If $U$ is a nonempty open subset of $X$, then $\krulldim U = \krulldim X$.
 
 (f) If $k \subseteq k'$ is a field extension, then every irreducible component of $X' = \fiberprod{X}{k}{k'}$ has dimension equal to $\krulldim X$.
+:::
+
+::: {.remark}
+Hartshorne states (c) and (d) for a closed subset without excluding the empty set. The dimension formula in (d) requires a nonempty subset.
 :::
 
 ::: {.solution}
@@ -223,7 +227,7 @@ Since $X$ is integral it has one irreducible component, so this is exactly $\cod
 :::
 
 ::: {.pf-step #codim-y-equals-inf-dim-op}
-For every closed subset $Y\subseteq X$,
+For every nonempty closed subset $Y\subseteq X$,
 $$
 \boxed{
 \codim(Y,X)
@@ -286,7 +290,7 @@ Using step [](#dimx-equals-trdeg){.pf-ref} for $X$ converts this exactly into th
 :::
 
 ::: {.pf-step #dimy-plus-codimy-equals-dimx}
-For every closed subset $Y\subseteq X$,
+For every nonempty closed subset $Y\subseteq X$,
 $$
 \boxed{
 \dim Y+\codim(Y,X)=\dim X.}
