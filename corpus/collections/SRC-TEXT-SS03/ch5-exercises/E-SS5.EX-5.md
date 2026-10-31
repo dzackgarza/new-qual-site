@@ -82,11 +82,11 @@ Upper bound on the order of growth:
 ::: pf-step
 
 Let $\beta = \frac{\alpha}{\alpha - 1}$, so that $\frac{1}{\alpha} + \frac{1}{\beta} = 1$ are conjugate exponents.
-By Young’s inequality $ab \le \frac{a^\alpha}{\alpha} + \frac{b^\beta}{\beta}$ with $a = 2^{1/\alpha} \abs{t}$ and $b = 2^{-1/\alpha} (2\pi \abs{z})$:
+By Young’s inequality $ab \le \frac{a^\alpha}{\alpha} + \frac{b^\beta}{\beta}$ with $a = (\alpha/2)^{1/\alpha} \abs{t}$ and $b = (2/\alpha)^{1/\alpha} (2\pi \abs{z})$:
 $$
-2\pi \abs{z} \abs{t} = (2^{1/\alpha} \abs{t}) (2^{-1/\alpha} 2\pi \abs{z}) \le \frac{2 \abs{t}^\alpha}{\alpha} + \frac{(2^{-1/\alpha} 2\pi \abs{z})^\beta}{\beta} \le \frac{\abs{t}^\alpha}{2} + c \abs{z}^\beta,
+2\pi \abs{z} \abs{t} = \qty((\alpha/2)^{1/\alpha} \abs{t}) \qty((2/\alpha)^{1/\alpha}\, 2\pi \abs{z}) \le \frac{\abs{t}^\alpha}{2} + \frac{\qty((2/\alpha)^{1/\alpha}\, 2\pi \abs{z})^\beta}{\beta} = \frac{\abs{t}^\alpha}{2} + c \abs{z}^\beta,
 $$
-where $c = \frac{(2\pi)^\beta}{\beta 2^{\beta/\alpha}} > 0$.
+where $c = \frac{(2\pi)^\beta}{\beta}\qty(\frac{2}{\alpha})^{\beta/\alpha} > 0$.
 
 ::: pf-proof
 
@@ -156,7 +156,7 @@ calculus optimization of $g(t)$.
 
 ::: pf-step
 
-Integrating over the interval $[t_0, t_0 + 1]$ gives $F_\alpha(-iy) \ge C_1 e^{c' y^\beta}$ for large $y > 0$.
+For $t \in [t_0, t_0 + 1]$, $g(t) - g(t_0) \ge -(t^\alpha - t_0^\alpha) \ge -\alpha(t_0 + 1)^{\alpha - 1}$, because $2\pi y(t - t_0) \ge 0$ and by the mean value theorem. Since $(t_0 + 1)^{\alpha - 1} = O(y)$, integrating over $[t_0, t_0 + 1]$ gives $\log F_\alpha(-iy) \ge c' y^\beta - O(y)$ for large $y > 0$, and $\beta > 1$.
 Thus the order of growth satisfies:
 $$
 \rho(F_\alpha) = \limsup_{r \to \infty} \frac{\log \log M(r)}{\log r} \ge \beta = \frac{\alpha}{\alpha - 1}.

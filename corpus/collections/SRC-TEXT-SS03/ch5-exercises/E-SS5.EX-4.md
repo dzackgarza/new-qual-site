@@ -34,6 +34,12 @@ Deduce that if $\{z_k\}$ is an enumeration of these zeros, we have
 $$
 \sum_k \frac{1}{\abs{z_k}^2} = \infty \quad \text{but} \quad \sum_k \frac{1}{\abs{z_k}^{2+\varepsilon}} < \infty \quad \text{for any } \varepsilon > 0.
 $$
+
+[Hint: To prove (a), write $F(z) = F_1(z)F_2(z)$ where
+$$
+F_1(z) = \prod_{n=1}^{N}(1 - e^{-2\pi nt}e^{2\pi iz}) \quad \text{and} \quad F_2(z) = \prod_{n=N+1}^{\infty}(1 - e^{-2\pi nt}e^{2\pi iz}).
+$$
+Choose $N \approx c\abs{z}$ with $c$ appropriately large. Then, since $\qty(\sum_{N+1}^{\infty} e^{-2\pi nt})e^{2\pi\abs{z}} \le 1$, one has $\abs{F_2(z)} \le A$. However, $\abs{1 - e^{-2\pi nt}e^{2\pi iz}} \le 1 + e^{2\pi\abs{z}} \le 2e^{2\pi\abs{z}}$. Thus $\abs{F_1(z)} \le 2^N e^{2\pi N\abs{z}} \le e^{c'\abs{z}^2}$.]
 :::
 
 ::: {.solution}

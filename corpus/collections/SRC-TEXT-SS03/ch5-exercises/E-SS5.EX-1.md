@@ -26,7 +26,7 @@ $$
 :::
 
 ::: {.solution}
-Let $f$ be holomorphic in a neighborhood of the closed unit disc, suppose $f(0)\ne0$, and let $z_1,\ldots,z_N$ be its zeros in $\DD$, repeated according to multiplicity. For $\abs{\alpha}<1$, the Blaschke factor
+Let $f$ be holomorphic in a neighborhood of the closed unit disc, suppose $f(0)\ne0$ and $f$ has no zeros on the unit circle, and let $z_1,\ldots,z_N$ be its zeros in $\DD$, repeated according to multiplicity. For $\abs{\alpha}<1$, the Blaschke factor
 $$
 \psi_\alpha(z)=\frac{\alpha-z}{1-\overline\alpha z}
 $$
