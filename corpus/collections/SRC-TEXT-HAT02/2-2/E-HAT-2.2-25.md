@@ -31,7 +31,7 @@ For such a function $\varphi$, show that $\varphi(X) = \varphi(Y)$ if $X \simeq 
 :::
 
 ::: {.solution}
-The unique function is
+The axiom with $A=\varnothing\subset S^0$ forces $\varphi(\varnothing)=0$. For nonempty finite CW complexes the unique function is
 $$
 \boxed{\varphi(X)=n\,\widetilde\chi(X)=n(\chi(X)-1)}
 $$
@@ -155,7 +155,7 @@ The formula $\varphi(X)=n\widetilde\chi(X)$ satisfies axioms (a)--(c).
 
 ::: pf-proof
 
-Homeomorphism invariance is clear. For a CW pair $(X,A)$,
+Homeomorphism invariance is clear. If $A=\varnothing$, additivity reads $\varphi(X)=0+\varphi(X)$; the empty $X$ case is also immediate. For a nonempty subcomplex $A\subseteq X$,
 $$
 \widetilde\chi(X)=\widetilde\chi(A)+\widetilde\chi(X/A),
 $$
