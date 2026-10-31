@@ -92,7 +92,10 @@ The $r_n$ are pairwise nonhomotopic.
 
 ::: pf-proof
 
-$r_n$ induces the homomorphism $a \mapsto 1$, $b \mapsto n$ on $\pi_1$; distinct $n$ give distinct homomorphisms, so the $r_n$ are pairwise nonhomotopic (homotopic maps induce equal homomorphisms on $\pi_1$).
+$r_n$ sends the class of the second circle to $n$ in $\pi_1(S^1)\cong\ZZ$.
+If $r_m$ and $r_n$ were freely homotopic, the basepoint track of the homotopy would conjugate their induced homomorphisms.
+Conjugation is trivial in $\ZZ$, so these homomorphisms would agree.
+Their values on the second circle would then give $m=n$.
 
 :::
 
