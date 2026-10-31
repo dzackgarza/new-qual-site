@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-If $R$ is a Noetherian ring, prove every ideal $I$ of $R$ is contained in a maximal ideal without using Zorn's lemma.
+If $R$ is a Noetherian ring, prove every proper ideal $I$ of $R$ is contained in a maximal ideal without using Zorn's lemma.
 :::
 
 ::: {.solution}

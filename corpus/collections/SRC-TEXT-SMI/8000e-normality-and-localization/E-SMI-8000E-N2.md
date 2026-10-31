@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Integral Closure
+  - Unique Factorization Domains
+  - Prime Ideals
+  - Principal Ideals
 relations: []
 review: draft
 audit:

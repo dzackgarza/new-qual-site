@@ -18,10 +18,7 @@ audit:
 
 ::: {.exercise}
 Let $H$ be a subgroup of the symmetric group $S_n$.
-Define a binary relation $\sim$ on the set $\{1, 2, \dots, n\}$ by setting:
-$$j \sim k \iff (j = k) \text{ or } ((j\,k) \in H).$$
-Prove that $\sim$ is an **equivalence relation** on $\{1, 2, \dots, n\}$.
-*(Note: If $j \sim k$ is defined solely by $(j\,k) \in H$, adding $j=k$ makes reflexivity explicit).*
+Prove that setting $j \sim k$ if and only if $j = k$ or the $2$-cycle $(j\,k)$ belongs to $H$ defines an equivalence relation on $\{1, 2, \dots, n\}$.
 :::
 
 ::: {.solution}
