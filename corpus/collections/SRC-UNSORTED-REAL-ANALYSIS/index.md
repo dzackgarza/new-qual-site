@@ -16,7 +16,6 @@ source:
   problems:
   - id: E-4CL6A
   - id: E-6X7Z4
-  - id: E-7EL3U
   - id: E-ASWCD
   - id: E-BTA5L
   - id: E-CGVE4
@@ -32,8 +31,6 @@ source:
   - id: P-RVL3K
   - id: E-SA3HI
   - id: E-TXSKL
-  - id: E-TZFC7
-  - id: E-UYQED
   - id: E-WSJ6P
   - id: E-XHB3F
   - id: P-2YFVO

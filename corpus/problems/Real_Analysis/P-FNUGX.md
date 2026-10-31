@@ -12,6 +12,7 @@ classification:
   - Convergence of Functions
   - Differentiation
   - Series of Functions
+  - Continuity
 relations: []
 review: draft
 audit:
@@ -21,9 +22,11 @@ audit:
 ---
 
 ::: {.problem}
+In (a) and (b), let $E \subseteq \RR$ and let $f_n, f : E \to \RR$.
+
 (a) Show that a uniform limit of bounded functions is bounded.
 
-(b) Show that a uniform limit of continuous function is continuous.
+(b) Show that a uniform limit of continuous functions is continuous.
 I.e. if $f_n\to f$ uniformly with each $f_n$ continuous then $f$ is continuous.
 
 (c) Show that if
@@ -52,7 +55,7 @@ If $f_n \to f$ uniformly and each $f_n$ is bounded, then $f$ is bounded.
 
 ::: pf-proof
 
-Choose $N$ with $\norm{f_N - f}_\infty < 1$; then $\norm{f}_\infty \le \norm{f_N}_\infty + 1$. See [[E-TZFC7]].
+Choose $N$ with $\norm{f_N - f}_\infty < 1$; then $\norm{f}_\infty \le \norm{f_N}_\infty + 1$.
 
 :::
 
@@ -64,7 +67,7 @@ If $f_n \to f$ uniformly and each $f_n$ is continuous, then $f$ is continuous.
 
 ::: pf-proof
 
-Fix $x$ and $\eps > 0$. Choose $n$ with $\norm{f_n - f}_\infty < \eps/3$, and $\delta > 0$ with $\abs{f_n(x) - f_n(y)} < \eps/3$ for $\abs{x-y} < \delta$. For such $y$, $\abs{f(x) - f(y)} \le \abs{f(x) - f_n(x)} + \abs{f_n(x) - f_n(y)} + \abs{f_n(y) - f(y)} < \eps$. See [[E-TZFC7]].
+Fix $x$ and $\eps > 0$. Choose $n$ with $\norm{f_n - f}_\infty < \eps/3$, and $\delta > 0$ with $\abs{f_n(x) - f_n(y)} < \eps/3$ for $\abs{x-y} < \delta$. For such $y$, $\abs{f(x) - f(y)} \le \abs{f(x) - f_n(x)} + \abs{f_n(x) - f_n(y)} + \abs{f_n(y) - f(y)} < \eps$.
 
 :::
 
@@ -90,7 +93,7 @@ By the mean value theorem applied to $f_m - f_n$, $\abs{f_m(x) - f_n(x)} \le \ab
 
 ::: pf-qed
 
-$g$ is continuous as a uniform limit of continuous functions. By the fundamental theorem of calculus $f_n(t) = f_n(x_0) + \int_{x_0}^t f_n'(s)\,ds$, and uniform convergence passes to the limit: $f(t) = f(x_0) + \int_{x_0}^t g(s)\,ds$. The fundamental theorem of calculus for continuous $g$ gives $f' = g$. See [[E-7EL3U]].
+$g$ is continuous as a uniform limit of continuous functions. By the fundamental theorem of calculus $f_n(t) = f_n(x_0) + \int_{x_0}^t f_n'(s)\,ds$, and uniform convergence passes to the limit: $f(t) = f(x_0) + \int_{x_0}^t g(s)\,ds$. The fundamental theorem of calculus for continuous $g$ gives $f' = g$.
 
 :::
 
@@ -104,7 +107,7 @@ Uniform convergence implies pointwise convergence, which implies a.e. convergenc
 
 ::: pf-proof
 
-$\abs{f_n(x) - f(x)} \le \sup\abs{f_n - f}$ for each $x$, and a set where convergence fails that is empty is null. On $[0,1]$, $x^n \to \chi_{\theset{1}}$ pointwise, but $\sup_{[0,1]}\abs{x^n - \chi_{\theset1}(x)} = 1$ for every $n$. On $[0,1]$, $\chi_{[0,1/n)} \to 0$ at every $x > 0$, so a.e., but $\chi_{[0,1/n)}(0) = 1$ for every $n$. See [[E-UYQED]].
+$\abs{f_n(x) - f(x)} \le \sup\abs{f_n - f}$ for each $x$, and a set where convergence fails that is empty is null. On $[0,1]$, $x^n \to \chi_{\theset{1}}$ pointwise, but $\sup_{[0,1]}\abs{x^n - \chi_{\theset1}(x)} = 1$ for every $n$. On $[0,1]$, $\chi_{[0,1/n)} \to 0$ at every $x > 0$, so a.e., but $\chi_{[0,1/n)}(0) = 1$ for every $n$.
 
 :::
 
