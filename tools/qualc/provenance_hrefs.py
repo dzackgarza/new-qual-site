@@ -157,7 +157,7 @@ def load_corpus_provenance(
     problem_areas: set[str] = set()
     corpus = root / "corpus"
     if not corpus.is_dir():
-        return collections, problem_areas
+        raise FileNotFoundError(f"corpus directory missing: {corpus}")
     for path in discover(corpus):
         try:
             meta, _body = split_front_matter(path.read_text(), path)
