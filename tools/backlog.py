@@ -14,13 +14,13 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from unsolved_queue import render as render_unsolved
-from unsolved_queue import unsolved
 from qualc import audit, provenance_hrefs
 from qualc.card_completeness import check_card
 from qualc.cli import load
 from qualc.model import ParsedCard
 from qualc.pandoc_batch import PandocServer
+from qualc.unsolved import render as render_unsolved
+from qualc.unsolved import unsolved
 
 REPO = Path(__file__).resolve().parent.parent
 

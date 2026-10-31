@@ -24,11 +24,16 @@ class Element:
 
     @property
     def text(self) -> str:
-        return " ".join(child.text if isinstance(child, Element) else child for child in self.children).strip()
+        return " ".join(
+            child.text if isinstance(child, Element) else child
+            for child in self.children
+        ).strip()
 
     def find_all(self, tag: str | None = None, **attrs: str) -> list[Element]:
         matches = []
-        if (tag is None or self.tag == tag) and all(self.attrs.get(key) == value for key, value in attrs.items()):
+        if (tag is None or self.tag == tag) and all(
+            self.attrs.get(key) == value for key, value in attrs.items()
+        ):
             matches.append(self)
         for child in self.children:
             if isinstance(child, Element):
@@ -91,12 +96,20 @@ def read_html(path: Path) -> SemanticHtml:
 def catalog_rows(root: Path) -> dict[str, list[tuple]]:
     con = sqlite3.connect(root / "build" / "catalog.sqlite")
     return {
-        "cards": con.execute("select id, kind, title, review, ast from cards order by id").fetchall(),
-        "classifications": con.execute("select * from classifications order by 1,2,3").fetchall(),
+        "cards": con.execute(
+            "select id, kind, title, review, ast from cards order by id"
+        ).fetchall(),
+        "classifications": con.execute(
+            "select * from classifications order by 1,2,3"
+        ).fetchall(),
         "relations": con.execute("select * from relations order by 1,2,3").fetchall(),
         "sources": con.execute("select * from sources order by id").fetchall(),
-        "collection_problems": con.execute("select * from collection_problems order by collection_id, coalesce(section_ordinal, -1), ordinal").fetchall(),
-        "collection_provenance": con.execute("select * from collection_provenance order by collection_id, ordinal").fetchall(),
+        "collection_problems": con.execute(
+            "select * from collection_problems order by collection_id, coalesce(section_ordinal, -1), ordinal"
+        ).fetchall(),
+        "collection_provenance": con.execute(
+            "select * from collection_provenance order by collection_id, ordinal"
+        ).fetchall(),
         "sections": con.execute("select * from sections order by 1,3").fetchall(),
     }
 
@@ -113,6 +126,7 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     work = tmp_path / "repo"
     shutil.copytree(ROOT / "tests" / "fixtures" / "kinds", work / "corpus")
     shutil.copytree(ROOT / "vocabularies", work / "vocabularies")
+    (work / "publications").mkdir()
     write_subject_branches(work)
 
     before = rebuild_catalog(work)
