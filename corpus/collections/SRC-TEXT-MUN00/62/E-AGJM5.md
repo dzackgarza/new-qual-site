@@ -78,11 +78,11 @@ Since $Y$ is open in $\RR^n$, the preimage $U = \widetilde{F}^{-1}(Y)$ is an ope
 :::
 
 ::: pf-step
-The disjoint closed sets $T$ and $(X \times I) \setminus U$ can be separated in the normal space $X \times I$.
+Since $U$ contains $A\times I$ and $I$ is compact, the tube lemma gives an open neighborhood $W$ of $A$ in $X$ such that $W\times I\subset U$.
 :::
 
 ::: pf-step
-By Urysohn's Lemma applied on slices (or Tube Lemma along the compact fibers), there exists a continuous function $\mu: X \to [0, 1]$ such that $\mu(A) = \{0\}$ and $\{ (x, t) \in X \times I \mid t \ge \mu(x) \} \subseteq U$.
+The space $X$ is normal as a closed subspace of $X\times I$. By Urysohn's lemma, choose a continuous $\mu:X\to[0,1]$ with $\mu=0$ on $A$ and $\mu=1$ on $X\setminus W$. If $x\in W$, every $(x,t)$ lies in $U$; if $x\notin W$, then $\mu(x)=1$ and $(x,\mu(x))\in X\times\{1\}\subset U$. Hence $\{(x,t):t\ge\mu(x)\}\subset U$.
 :::
 
 ::: pf-step
