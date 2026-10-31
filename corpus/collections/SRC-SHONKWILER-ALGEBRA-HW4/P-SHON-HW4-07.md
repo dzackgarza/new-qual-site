@@ -5,7 +5,10 @@ kind: problem
 title: Homomorphisms from $S_3$ and conjugacy
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Group Homomorphisms
+  - Symmetric Groups
+  - Group Representations
 relations: []
 review: draft
 audit:
@@ -21,11 +24,11 @@ $$
 f_1(x)=g f_2(x)g^{-1}\qquad\text{for all }x\in G_1.
 $$
 
-1. Find all homomorphisms $S_3\to\CC^\times$.
+(a) Find all homomorphisms $S_3\to\CC^\times$.
 
-2. Determine all homomorphisms $S_3\to S_3$ up to conjugation.
+(b) Determine all homomorphisms $S_3\to S_3$ up to conjugation.
 
-3. Prove that any two injective homomorphisms $S_3\to GL_2(\RR)$ are conjugate.
+(c) Prove that any two injective homomorphisms $S_3\to GL_2(\RR)$ are conjugate.
 :::
 
 ::: {.solution}
@@ -40,8 +43,6 @@ r=(123),
 \qquad
 s=(12).
 $$
-
-## Part 1: homomorphisms $S_3\to\CC^\times$
 
 ::: pf
 

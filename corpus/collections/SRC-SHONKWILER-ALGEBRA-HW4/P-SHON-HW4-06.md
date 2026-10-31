@@ -5,7 +5,9 @@ kind: problem
 title: A group is isomorphic to its opposite group
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Opposite Group
+  - Group Isomorphisms
 relations: []
 review: draft
 audit:

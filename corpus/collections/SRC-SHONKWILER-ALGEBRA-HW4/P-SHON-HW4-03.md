@@ -5,7 +5,8 @@ kind: problem
 title: Solvability passes to subgroups and quotients
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Solvable Groups
 relations: []
 review: draft
 audit:

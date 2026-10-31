@@ -5,7 +5,9 @@ kind: problem
 title: Two generators for the symmetric group
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Symmetric Groups
+  - Generators
 relations: []
 review: draft
 audit:

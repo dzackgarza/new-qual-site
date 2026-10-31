@@ -5,7 +5,9 @@ kind: problem
 title: A coprime-index normal subgroup is unique of its order
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Normal Subgroups
+  - Finite Groups
 relations: []
 review: draft
 audit:

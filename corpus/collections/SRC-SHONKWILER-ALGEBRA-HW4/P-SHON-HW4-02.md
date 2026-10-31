@@ -5,7 +5,10 @@ kind: problem
 title: Composition series of $Q_8$ and $D_8$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Composition Series
+  - Quaternion Group
+  - Dihedral Groups
 relations: []
 review: draft
 audit:

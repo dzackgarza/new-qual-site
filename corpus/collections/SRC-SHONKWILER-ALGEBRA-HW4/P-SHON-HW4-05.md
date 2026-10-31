@@ -5,7 +5,10 @@ kind: problem
 title: A composition series for $A_4$
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Composition Series
+  - Alternating Groups
+  - Solvable Groups
 relations: []
 review: draft
 audit:

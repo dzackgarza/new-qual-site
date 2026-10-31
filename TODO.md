@@ -264,7 +264,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-RA-WORKSHOP
   - [x] SRC-SEQUENCES-SERIES-ASSIGNMENT-2
   - [x] SRC-SHONKWILER-ALGEBRA-HW11
-  - [ ] SRC-SHONKWILER-ALGEBRA-HW4
+  - [x] SRC-SHONKWILER-ALGEBRA-HW4
   - [ ] SRC-STANDREWS-MT5824-PSET7-2010
   - [x] SRC-TAMU-RA-FALL-2014
   - [x] SRC-TAMU-RA-FALL-2015
