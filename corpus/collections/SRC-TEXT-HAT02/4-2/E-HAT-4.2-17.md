@@ -30,9 +30,9 @@ Deduce that CW complexes $K(G, n)$'s are uniquely determined, up to homotopy typ
 :::
 
 ::: {.solution}
-We use cellular obstruction theory. Since $X$ is $(n-1)$-connected, it is homotopy equivalent to a CW complex with one $0$-cell and no cells in dimensions $1,\dots,n-1$. We may therefore assume this form.
+For $n=1$, the assertion is the classification of based maps into a $K(\pi_1(Y),1)$ by homomorphisms of fundamental groups. Suppose $n\ge2$. We use cellular obstruction theory. Since $X$ is $(n-1)$-connected, it is homotopy equivalent to a CW complex with one $0$-cell and no cells in dimensions $1,\dots,n-1$. We may therefore assume this form.
 
-A based map $f:X\to Y$ is homotopic to the constant map on $X^{n-1}$. On each $n$-cell its restriction determines an element of $\pi_n(Y)$. The condition that these choices extend over the $(n+1)$-cells is exactly that the resulting homomorphism on $n$-cycles factor through
+A based map $f:X\to Y$ is constant on $X^{n-1}$. On each $n$-cell its restriction determines an element of $\pi_n(Y)$. Since the chosen CW structure has no cells in dimensions $1,\dots,n-1$, its cellular group $C_n(X)$ is the group of $n$-cycles. The choices extend over the $(n+1)$-cells exactly when the resulting homomorphism $C_n(X)\to\pi_n(Y)$ vanishes on the cellular boundaries. It then factors through
 $$
 H_n(X)\cong\pi_n(X)
 $$
@@ -40,14 +40,12 @@ $$
 $$
 \pi_n(X)\to\pi_n(Y).
 $$
-Conversely, any such homomorphism prescribes compatible maps on the $n$-cells. All higher extension obstructions lie in groups $\pi_i(Y)$ with $i>n$, which are zero by hypothesis, so the map extends over all higher cells. The same vanishing says that two extensions inducing the same map on $\pi_n$ are homotopic rel the $n$-skeleton.
+Conversely, any such homomorphism prescribes compatible maps on the $n$-cells. After the $(n+1)$-cell condition, all higher extension obstructions lie in groups $\pi_i(Y)$ with $i>n$, which are zero by hypothesis. If two maps induce the same homomorphism on $\pi_n$, their restrictions to the $n$-skeleton can first be made equal up to based homotopy. The vanishing of the higher homotopy groups then extends this homotopy over the remaining cells.
 
 Hence
 $$
 \boxed{\langle X,Y\rangle\xrightarrow{\cong}\operatorname{Hom}(\pi_nX,\pi_nY).}
 $$
-For $n=1$ the identical cellular argument is the usual classification of based maps into a $K(G,1)$ by homomorphisms of fundamental groups.
-
 Now let $X$ and $Y$ be CW complexes of type $K(G,n)$. The identity homomorphism of $G$ determines maps
 $$
 f:X\to Y,
