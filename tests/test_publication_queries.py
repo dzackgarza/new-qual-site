@@ -82,8 +82,12 @@ def reference_manifest(section: str, ref: str = "PRB-CPT") -> dict[str, object]:
     }
 
 
-def _problem(card_id: str, title: str, area: str, topic: str, body: str) -> tuple[str, str]:
-    return f"{card_id}.md", PROBLEM.format(id=card_id, title=title, area=area, topic=topic, body=body)
+def _problem(
+    card_id: str, title: str, area: str, topic: str, body: str
+) -> tuple[str, str]:
+    return f"{card_id}.md", PROBLEM.format(
+        id=card_id, title=title, area=area, topic=topic, body=body
+    )
 
 
 @pytest.fixture(scope="module")
@@ -98,8 +102,20 @@ def guide_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
     """
     cards = dict(
         [
-            _problem("PRB-CPT", "A compact Hausdorff space is normal", "topology", "compactness", "Let $X$ be compact Hausdorff. Show $X$ is normal."),
-            _problem("PRB-CPT-TOP", "A closed subset of a compact space is compact", "topology", "compactness", "Let $K$ be closed in a compact space. Show $K$ is compact."),
+            _problem(
+                "PRB-CPT",
+                "A compact Hausdorff space is normal",
+                "topology",
+                "compactness",
+                "Let $X$ be compact Hausdorff. Show $X$ is normal.",
+            ),
+            _problem(
+                "PRB-CPT-TOP",
+                "A closed subset of a compact space is compact",
+                "topology",
+                "compactness",
+                "Let $K$ be closed in a compact space. Show $K$ is compact.",
+            ),
             _problem(
                 "PRB-CPT-RA",
                 "A continuous function on a compact interval is uniformly continuous",
@@ -114,13 +130,32 @@ def guide_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
                 "connectedness",
                 "Let $f: X \\to Y$ be continuous and $X$ connected. Show $f(X)$ is connected.",
             ),
-            _problem("PRB-SEP", "A metric space is normal", "topology", "continuity", "Let $X$ be a metric space. Show $X$ is normal."),
+            _problem(
+                "PRB-SEP",
+                "A metric space is normal",
+                "topology",
+                "continuity",
+                "Let $X$ be a metric space. Show $X$ is normal.",
+            ),
         ]
     )
     work = fixture_repo(tmp_path_factory.mktemp("guide"), cards)
 
-    def section(slug: str, title: str, topics: list[str], refs: list[str], parent: str = "GUIDE-TOPOLOGY") -> dict[str, object]:
-        return {"slug": slug, "title": title, "parent": parent, "lede": f"The {slug} section.", "topics": topics, "items": [{"ref": ref} for ref in refs]}
+    def section(
+        slug: str,
+        title: str,
+        topics: list[str],
+        refs: list[str],
+        parent: str = "GUIDE-TOPOLOGY",
+    ) -> dict[str, object]:
+        return {
+            "slug": slug,
+            "title": title,
+            "parent": parent,
+            "lede": f"The {slug} section.",
+            "topics": topics,
+            "items": [{"ref": ref} for ref in refs],
+        }
 
     guide = {
         "schema": "qual/publication@2",
@@ -131,16 +166,26 @@ def guide_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
         "sections": [
             section("compactness", "Compactness", ["compactness"], []),
             section("family", "Family", ["compactness", "connectedness"], []),
-            section("explicit", "Explicit", ["compactness"], ["PRB-CPT"], parent="compactness"),
+            section(
+                "explicit",
+                "Explicit",
+                ["compactness"],
+                ["PRB-CPT"],
+                parent="compactness",
+            ),
         ],
     }
-    (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(guide, sort_keys=False))
+    (work / "publications" / "topology-guide.yaml").write_text(
+        yaml.safe_dump(guide, sort_keys=False)
+    )
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
     return work / "build" / "quarto" / "_site"
 
 
-def test_checked_in_guide_sections_store_topics_on_the_page_not_as_query_items() -> None:
+def test_checked_in_guide_sections_store_topics_on_the_page_not_as_query_items() -> (
+    None
+):
     """Problem discovery follows section metadata; `items` contains only refs."""
     publications = Path(__file__).resolve().parents[1] / "publications"
 
@@ -152,35 +197,57 @@ def test_checked_in_guide_sections_store_topics_on_the_page_not_as_query_items()
 def test_semisimplicity_guide_resolves_its_named_terms() -> None:
     """The guide named for representations and semisimplicity links both definitions."""
     publications = Path(__file__).resolve().parents[1] / "publications"
-    [algebra] = [guide for guide in load_publications(publications) if guide.id == "GUIDE-ALGEBRA"]
-    section = next(section for section in algebra.sections if section.slug == "semisimplicity-and-representations")
+    [algebra] = [
+        guide
+        for guide in load_publications(publications)
+        if guide.id == "GUIDE-ALGEBRA"
+    ]
+    section = next(
+        section
+        for section in algebra.sections
+        if section.slug == "semisimplicity-and-representations"
+    )
 
-    assert "[representation](../../wiki/algebra/representations/index.html)" in section.lede
+    assert (
+        "[representation](../../wiki/algebra/representations/index.html)"
+        in section.lede
+    )
     assert "[semisimple](../../tag/D-CYAJI.html)" in section.lede
 
 
-def test_guide_page_topics_are_only_a_deep_link_into_the_problem_browser(guide_site: Path) -> None:
+def test_guide_page_topics_are_only_a_deep_link_into_the_problem_browser(
+    guide_site: Path,
+) -> None:
     """The guide classifies its page; only the central browser evaluates that classification."""
     page = read_html(guide_site / "guide" / "GUIDE-TOPOLOGY" / "compactness.html")
     panels = page.root.find_all("div", **{"class": "panel problem-browse-link"})
     assert len(panels) == 1
     links = panels[0].find_all("a")
     assert len(links) == 1
-    assert links[0].attrs["href"] == "../../problems.html?area=topology&topic=compactness"
+    assert (
+        links[0].attrs["href"] == "../../problems.html?area=topology&topic=compactness"
+    )
     assert "data-count" not in panels[0].attrs
 
 
-def test_a_problem_browser_link_preserves_every_topic_in_the_authored_family(guide_site: Path) -> None:
+def test_a_problem_browser_link_preserves_every_topic_in_the_authored_family(
+    guide_site: Path,
+) -> None:
     """Multi-topic page metadata must not silently narrow to its first topic."""
     page = read_html(guide_site / "guide" / "GUIDE-TOPOLOGY" / "family.html")
     panels = page.root.find_all("div", **{"class": "panel problem-browse-link"})
     assert len(panels) == 1
     links = panels[0].find_all("a")
-    assert links[0].attrs["href"] == "../../problems.html?area=topology&topic=compactness&topic=connectedness"
+    assert (
+        links[0].attrs["href"]
+        == "../../problems.html?area=topology&topic=compactness&topic=connectedness"
+    )
     assert "data-count" not in panels[0].attrs
 
 
-def test_the_problem_browser_owns_filtering_sampling_and_legacy_generate_redirect(built_fixture: Path) -> None:
+def test_the_problem_browser_owns_filtering_sampling_and_legacy_generate_redirect(
+    built_fixture: Path,
+) -> None:
     """One interface filters all matches and can sample/print from that result set."""
     work = built_fixture
 
@@ -237,16 +304,24 @@ def test_a_named_card_moves_with_its_publication_section(tmp_path: Path) -> None
         },
     )
     manifest_path = work / "publications" / "topology-guide.yaml"
-    manifest_path.write_text(yaml.safe_dump(reference_manifest("first"), sort_keys=False))
+    manifest_path.write_text(
+        yaml.safe_dump(reference_manifest("first"), sort_keys=False)
+    )
     first_build = run_qualc("build", work)
     assert first_build.returncode == 0, first_build.stderr
 
-    manifest_path.write_text(yaml.safe_dump(reference_manifest("second"), sort_keys=False))
+    manifest_path.write_text(
+        yaml.safe_dump(reference_manifest("second"), sort_keys=False)
+    )
     second_build = run_qualc("build", work)
     assert second_build.returncode == 0, second_build.stderr
 
-    first = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "first.html")
-    second = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "second.html")
+    first = read_html(
+        work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "first.html"
+    )
+    second = read_html(
+        work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "second.html"
+    )
     # A referenced card is transcluded as its Stacks statement block, whose id is
     # the card id; it belongs to whichever section names it, not both.
     assert first.root.find_all("div", id="PRB-CPT") == []
@@ -312,23 +387,31 @@ Done.
     first = sections[0]
     assert isinstance(first, dict)
     first["items"] = [{"ref": "PRB-DUP"}, {"ref": "PRB-DUP"}]
-    (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(guide, sort_keys=False))
+    (work / "publications" / "topology-guide.yaml").write_text(
+        yaml.safe_dump(guide, sort_keys=False)
+    )
 
     assert diagnostic_codes(work) == [], "each ref is valid read on its own"
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
 
-    page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "first.html")
+    page = read_html(
+        work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "first.html"
+    )
     assert len(page.root.find_all("div", id="PRB-DUP")) == 1
 
 
-def test_a_section_topic_does_not_duplicate_its_explicit_card_appearance(guide_site: Path) -> None:
+def test_a_section_topic_does_not_duplicate_its_explicit_card_appearance(
+    guide_site: Path,
+) -> None:
     """Topic metadata discovers problems but only an explicit ref is a guide appearance.
 
     PRB-CPT matches the topic of all three sections and is named by one.
     """
     card = read_html(guide_site / "tag" / "PRB-CPT.html")
-    groups = card.root.find_all("section", **{"data-relation-group": "guide-appearances"})
+    groups = card.root.find_all(
+        "section", **{"data-relation-group": "guide-appearances"}
+    )
     assert len(groups) == 1
     assert [li.text for li in groups[0].find_all("li")] == ["Explicit"]
 
@@ -336,7 +419,10 @@ def test_a_section_topic_does_not_duplicate_its_explicit_card_appearance(guide_s
 def test_a_topic_match_is_not_a_guide_appearance(guide_site: Path) -> None:
     """Page topics point outward; matching cards are not displayed guide content."""
     card = read_html(guide_site / "tag" / "PRB-CPT-TOP.html")
-    assert card.root.find_all("section", **{"data-relation-group": "guide-appearances"}) == []
+    assert (
+        card.root.find_all("section", **{"data-relation-group": "guide-appearances"})
+        == []
+    )
 
 
 def test_check_names_a_publication_reference_no_card_answers(tmp_path: Path) -> None:
@@ -350,7 +436,9 @@ def test_check_names_a_publication_reference_no_card_answers(tmp_path: Path) -> 
     """
     work = fixture_repo(tmp_path, {})
     manifest = reference_manifest("first", ref="PRB-GONE")
-    (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(manifest, sort_keys=False))
+    (work / "publications" / "topology-guide.yaml").write_text(
+        yaml.safe_dump(manifest, sort_keys=False)
+    )
 
     assert diagnostic_codes(work) == [DiagnosticCode.PUBLICATION_REFERENCE_MISSING]
 
