@@ -22,10 +22,13 @@ Show that every irreducible component of $Z(\mfa)$ has dimension at least $n - r
 :::
 
 ::: {.solution}
-Induct on the generators.
-Put $Y_k = V(f_1,\ldots,f_k)$, so that $Y_k = Y_{k-1} \intersect H_k$ with $H_k = V(f_k)$ a hypersurface, and $Y_0 = \AA^n$.
+Let $\mfa = \generators{f_1,\ldots,f_r}$, put $Y_j = Z(f_1,\ldots,f_j)$, so $Y_0 = \AA^n$ and $Y_j = Y_{j-1} \intersect Z(f_j)$.
+We prove by induction on $j$ that every irreducible component of $Y_j$ has dimension at least $n - j$.
+The case $j = 0$ is clear.
 
-If $Y_{k-1} \not\subseteq H_k$, the previous exercise applies to each component and drops its dimension by exactly one, giving components of $Y_k$ of dimension $n - k$.
-If $Y_{k-1} \subseteq H_k$ the intersection is all of $Y_{k-1}$ and the dimension does not drop at all.
-Either way each component of $Y_k$ has dimension at least $n-k$, and at $k = r$ this is the claim.
+Let $C$ be an irreducible component of $Y_j$.
+Since $Y_j = \Union_D (D \intersect Z(f_j))$, where $D$ runs over the irreducible components of $Y_{j-1}$, the irreducible set $C$ lies in some $D \intersect Z(f_j)$, and by maximality $C$ is an irreducible component of $D \intersect Z(f_j)$.
+If $D \subseteq Z(f_j)$, then $C = D$ and $\dim C \geq n - j + 1$.
+Otherwise $f_j$ is not constant, $Z(f_j)$ is a hypersurface, and Ex. 1.8 gives $\dim C = \dim D - 1 \geq n - j$.
+At $j = r$ this is the claim.
 :::

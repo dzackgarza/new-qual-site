@@ -29,20 +29,28 @@ review: draft
 :::
 
 ::: {.solution}
-**(a)** Let $(U_i)_{0 \leq i \leq n}$ be a strict chain of irreducible closed subsets of $Y$, so $U_i = V_i \intersect Y$ for some $V_i$ closed in $X$.
-The $V_i$ need not form a chain; take partial unions $\tilde{V}_n = \Union_{i \leq n} V_i$, which do, and which remain strict.
-So $\dim X \geq n$.
+**(a)** Let $Z_0 \subsetneq \cdots \subsetneq Z_n$ be a chain of irreducible closed subsets of $Y$.
+Their closures $\bar Z_i$ in $X$ are irreducible by Ex. 1.6 and closed.
+Since $Z_i$ is closed in $Y$, one has $\bar Z_i \intersect Y = Z_i$, so the chain $\bar Z_0 \subsetneq \cdots \subsetneq \bar Z_n$ is strict.
+Hence $\dim X \geq n$, and so $\dim X \geq \dim Y$.
 
-**(b)** By (a) it suffices to find one $U_i$ with $\dim U_i \geq \dim X$.
-Take a strict chain $(C_j)_{0 \leq j \leq n}$ witnessing $\dim X = n$ and choose $i_0$ with $U_{i_0} \intersect C_0 \neq \emptyset$.
-Then $(C_j \intersect U_{i_0})_j$ is a strict chain of length $n$ in $U_{i_0}$.
+**(b)** By (a), $\sup_i \dim U_i \leq \dim X$.
+Conversely, let $C_0 \subsetneq \cdots \subsetneq C_n$ be a chain of irreducible closed subsets of $X$, and choose $i$ with $U_i \intersect C_0 \neq \emptyset$.
+Each $C_j \intersect U_i$ is a nonempty open subset of the irreducible space $C_j$, hence irreducible and dense in $C_j$ by Ex. 1.6, and it is closed in $U_i$.
+Its closure in $X$ is $C_j$, so the chain $C_0 \intersect U_i \subsetneq \cdots \subsetneq C_n \intersect U_i$ is strict, and $\dim U_i \geq n$.
 
-**(c)** $X = \AA^1_\CC = \Spec \CC[x]$ has dimension $1$; the open subset given by the generic point alone has dimension $0$ and is dense.
+**(c)** Let $X = \theset{a, b}$ with open sets $\emptyset$, $\theset{a}$ and $X$.
+The closed sets are $\emptyset$, $\theset{b}$ and $X$; both $\theset{b}$ and $X$ are irreducible, so $\theset{b} \subsetneq X$ gives $\dim X = 1$.
+The open set $U = \theset{a}$ is dense, since the only closed set containing it is $X$, and $\dim U = 0$.
 
-**(d)** Take a chain $(C_i)_{0 \leq i \leq n}$ in $Y$ with $n = \dim Y = \dim X$, arranged so that $C_n = Y$.
-If $Y \subsetneq X$ then $C_0 \subsetneq \cdots \subsetneq C_n = Y \subsetneq X$ is a strict chain of length $n+1$ in $X$, since $X$ is irreducible and therefore itself an irreducible closed subset.
-That contradicts $\dim X = n$.
+**(d)** Let $Z_0 \subsetneq \cdots \subsetneq Z_n$ be a chain of irreducible closed subsets of $Y$ with $n = \dim Y$.
+These are closed in $X$ because $Y$ is.
+If $Z_n \neq X$, then appending the irreducible closed set $X$ gives a chain of length $n + 1$ in $X$, contradicting $\dim X = n$.
+So $Z_n = X$, and $X = Z_n \subseteq Y$.
 
-**(e)** Take $X = \ZZ_{\geq 0}$ with closed sets $\emptyset$, $X$, and $\theset{1,\ldots,i}$ for each $i$.
-The chain $\theset{1} \subsetneq \theset{1,2} \subsetneq \cdots$ is infinite, so $\dim X = \infty$, and every descending chain of closed sets is finite, so $X$ is Noetherian.
+**(e)** Take $X = \ZZ_{\geq 0}$ with closed sets $\emptyset$, $X$, and $\theset{1,\ldots,i}$ for each $i \geq 1$.
+These sets are closed under finite unions and arbitrary intersections, so they define a topology.
+Every closed set other than $\emptyset$ is irreducible, because the closed sets are totally ordered.
+The chain $\theset{1} \subsetneq \theset{1,2} \subsetneq \cdots$ gives chains of every length, so $\dim X = \infty$.
+A strictly descending chain of closed sets has at most one member equal to $X$, and below that its members are $\theset{1,\ldots,i}$ with decreasing $i$, so it is finite and $X$ is Noetherian.
 :::

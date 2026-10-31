@@ -34,19 +34,17 @@ review: draft
 **(b)** $A(Z) = k[x,y]/\generators{xy-1} \cong k[x^{\pm 1}]$.
 This is not a polynomial ring: it contains the unit $\inverseof{x} \notin k$, while the units of $k[t]$ are exactly $k^*$.
 
-**(c)** An affine change of coordinates reduces $F$ to one of the two cases above.
-Write the conic as
-$$
-F(x,y) = \thevector{x, y, 1}^t
-\begin{pmatrix}
-A & B/2 & D/2 \\
-B/2 & C & E/2 \\
-D/2 & E/2 & F
-\end{pmatrix}
-\thevector{x, y, 1} .
-$$
-The matrix is symmetric, so it diagonalises, and the corresponding affine change of coordinates puts $F$ in the form $\lambda_1 x^2 + \lambda_2 y^2 + \lambda_3$.
+**(c)** An affine change of coordinates of $\AA^2$ induces a $k$-algebra automorphism of $k[x,y]$, so it does not change $A(W)$ up to isomorphism.
+Write $f = q + \ell + c$ with $q \neq 0$ a quadratic form, $\ell$ a linear form and $c \in k$.
+Since $k$ is algebraically closed, $q$ is a product of two linear forms.
 
-Which case appears is decided by whether the conic is degenerate at infinity: the parabola $y = x^2$ meets the line at infinity in one point, the hyperbola $xy = 1$ in two.
-So $A(W) \cong A(Y)$ when the conic is tangent to the line at infinity, and $A(W) \cong A(Z)$ otherwise.
+*Case 1: $q$ is a product of two non-proportional linear forms.* After a linear change of coordinates $q = xy$, so $f = xy + ax + by + c = (x+b)(y+a) + (c - ab)$.
+Translating, $f = xy + c'$, and $c' \neq 0$ because $f$ is irreducible.
+Rescaling $x$ gives $f = xy - 1$, so $A(W) \cong A(Z)$.
+
+*Case 2: $q$ is the square of a linear form.* After a linear change of coordinates $q = x^2$, so $f = x^2 + ax + by + c$.
+If $b = 0$, then $f \in k[x]$ factors into linear factors, so $b \neq 0$.
+The substitution $y' = -(ax + by + c)$ is an affine change of coordinates, and it gives $f = x^2 - y'$, so $A(W) \cong A(Y)$.
+
+So $A(W) \cong A(Y)$ exactly when the quadratic part of $f$ is a square, that is, when the projective closure of $W$ meets the line at infinity in one point, and $A(W) \cong A(Z)$ when it meets it in two points.
 :::

@@ -35,18 +35,23 @@ review: draft
 :::
 
 ::: {.solution}
-**(a)** $1 \implies 2$: given a family $\theset{Y_j}$ of closed sets, choose $Y_1$; if it is not minimal there is $Y_2 \subsetneq Y_1$, and so on.
+**(a)** Call the conditions (i)-(iv) in the order listed.
+(i) $\implies$ (ii): given a nonempty family of closed sets, choose $Y_1$ in it; if it is not minimal there is $Y_2 \subsetneq Y_1$ in the family, and so on.
 The resulting descending chain stabilises, and where it stabilises is a minimal element.
-$1 \iff 3$ and $2 \iff 4$ are complementation.
-$4 \implies 3$: a chain of opens is a family, so it has a maximal element, which is where it stabilises.
+(ii) $\implies$ (i): the members of a descending chain of closed sets form a nonempty family, and the chain stabilises at a minimal member.
+(i) $\iff$ (iii) and (ii) $\iff$ (iv) follow by taking complements.
 
-**(b)** Let $\mcu$ be an open cover and set $V_n = \Union_{i \leq n} U_i$.
-Then $V_1 \subseteq V_2 \subseteq \cdots$ is an ascending chain of opens, so it stabilises at some $V_n$, and $V_n = \Union_i U_i = X$ is a finite subcover.
+**(b)** Let $\theset{U_i}$ be an open cover of $X$.
+By (iv), the family of finite unions of the $U_i$ has a maximal element $V$.
+If $V \neq X$, some $U_i \not\subseteq V$, and $V \union U_i$ is a larger finite union, a contradiction.
+So $V = X$ is a finite subcover.
 
-**(c)** Let $U_1 \subseteq U_2 \subseteq \cdots$ be opens in $Y$, so $U_i = V_i \intersect Y$ with $V_i$ open in $X$.
-The family $\theset{V_i}$ has a maximal element $V_n$, and then $U_n = V_n \intersect Y$ is maximal in the chain.
+**(c)** Let $Y \subseteq X$ and let $U_1 \subseteq U_2 \subseteq \cdots$ be opens in $Y$, so $U_i = V_i \intersect Y$ with $V_i$ open in $X$.
+Put $W_i = V_1 \union \cdots \union V_i$.
+Since the $U_i$ increase, $W_i \intersect Y = U_i$.
+The chain $W_1 \subseteq W_2 \subseteq \cdots$ stabilises by (iii), so the chain $U_i$ stabilises.
 
-**(d)** Decompose $X = \Union_{i \leq n} C_i$ into irreducible components.
-Each $C_i$ is Hausdorff, and an irreducible Hausdorff space is a point: if $x \neq y$ in $C_i$ had disjoint neighbourhoods $U \ni x$, $V \ni y$, then $U$ would be a nonempty open that is not dense, contradicting irreducibility.
-So $X$ is a finite union of closed points, hence finite and discrete.
+**(d)** By (ii), $X$ is a finite union $X = \Union_{i \leq n} C_i$ of irreducible closed subsets.
+An irreducible Hausdorff space is a point: if $x \neq y$ in $C_i$ had disjoint open neighbourhoods $U \ni x$, $V \ni y$ in $C_i$, then $U$ would be a nonempty open subset that is not dense, contradicting Ex. 1.6.
+So $X$ is finite, and a finite Hausdorff space is discrete, because each point is closed and so every subset is closed.
 :::
