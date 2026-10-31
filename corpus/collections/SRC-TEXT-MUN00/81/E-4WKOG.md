@@ -137,7 +137,7 @@ Let $F = \{g \in G \mid K_x \cap g(K_y) \neq \varnothing\}$. For each $g \in F$,
 
 ::: pf-step
 
-Setting $U = U_x \cap \bigcap_{g \in F} V_g$ and $V = U_y \cap \bigcap_{g \in F} g^{-1}(W_g)$ gives open neighborhoods of $x$ and $y$ such that $g(U) \cap V = \varnothing$ for all $g \in G$.
+Setting $U = U_x \cap \bigcap_{g \in F} V_g$ and $V = U_y \cap \bigcap_{g \in F} g^{-1}(W_g)$ gives open neighborhoods of $x$ and $y$. For $g\in F$, $U\subset V_g$ and $g(V)\subset W_g$, so $U\cap g(V)=\varnothing$. For $g\notin F$, $U\cap g(V)\subset K_x\cap g(K_y)=\varnothing$. Thus $U\cap g(V)=\varnothing$ for every $g\in G$.
 
 :::
 
