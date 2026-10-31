@@ -60,7 +60,7 @@ Since $b=b^{-1}$, the $b$-edge from $g$ to $gb$ is the same undirected edge when
 
 ::: pf-step
 
-The $a$-edges form disjoint bi-infinite lines, one for each right coset of $\langle a\rangle$.
+The $a$-edges form disjoint bi-infinite lines, one for each left coset of $\langle a\rangle$.
 
 ::: pf-proof
 
