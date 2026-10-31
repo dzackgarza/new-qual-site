@@ -45,8 +45,8 @@ steps, and each now states the argument it rests on. `E-HAT-1.2-22` still opens 
 run-in labels between two separate `pf` blocks, against STYLE-08; its mathematics was checked and its
 structure is the remaining repair.
 §1.3: all 33 statements compared, including the bracketed hint on exercise 9, which the card already
-carried; the proofs of `E-HAT-1.3-1`, `-9`, `-15`, `-17` and `-20` are read, and the other 28 proofs
-are unread.
+carried; the proofs of `E-HAT-1.3-1`, `-2`, `-3`, `-5`, `-9`, `-15`, `-17` and `-20` are read, and the
+other 25 proofs are unread.
 Unread entirely: §1.A, §1.B, and every chapter 2, 3 and 4 section.
 
 ## Fast local checks and complete CI acceptance

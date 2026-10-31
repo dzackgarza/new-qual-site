@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Took products of evenly covered neighborhoods and identified the product sheets and their homeomorphisms explicitly.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the product-covering argument: the box $U_1\times U_2$ is evenly covered by the products of the sheets, and each product of homeomorphisms is a homeomorphism.
 ---
 
 ::: {.problem}

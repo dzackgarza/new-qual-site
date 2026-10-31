@@ -31,6 +31,11 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: 'Added the converse: compactness and Hausdorffness of the base from those of the finite-sheeted cover.'
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both directions: the Hausdorff argument separates points in one fibre using the sheets, and compactness follows because the fibre is finite, so $p^{-1}$ of a compact closed set is a finite union of compact sheets, and finitely many of them cover $\widetilde X$.
 ---
 
 ::: {.problem}

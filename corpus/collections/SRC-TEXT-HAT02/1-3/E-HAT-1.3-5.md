@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Proved a compact local-injectivity lemma for maps to metric spaces, applied it to a lift of the left edge, and used an explicit circle-valued map to demonstrate that the accumulating rectangle loops are nontrivial.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the compact local-injectivity lemma and its use: the diagonal argument produces an open set on which the covering projection is injective over the left edge, and the cover is then trivial over a neighbourhood of that edge.
 ---
 
 ::: {.problem}
