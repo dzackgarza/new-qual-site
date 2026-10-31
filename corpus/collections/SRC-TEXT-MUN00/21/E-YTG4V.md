@@ -27,14 +27,14 @@ $$
 $$
 
 (a) Show that addition is continuous.
-[Hint: Given $\epsilon$, let $\delta = \epsilon/2$ and note that
+Hint: Given $\epsilon$, let $\delta = \epsilon/2$ and note that
 
 $$
-d(x + y, x_0 + y_0) \leq \abs{x - x_0} + \abs{y - y_0}.]
+d(x + y, x_0 + y_0) \leq \abs{x - x_0} + \abs{y - y_0}.
 $$
 
 (b) Show that multiplication is continuous.
-[Hint: Given $(x_0, y_0)$ and $0 < \epsilon < 1$, let
+Hint: Given $(x_0, y_0)$ and $0 < \epsilon < 1$, let
 
 $$
 3\delta = \epsilon/(\abs{x_0} + \abs{y_0} + 1)
@@ -43,7 +43,7 @@ $$
 and note that
 
 $$
-d(xy, x_0y_0) \leq \abs{x_0}\abs{y - y_0} + \abs{y_0}\abs{x - x_0} + \abs{x - x_0}\abs{y - y_0}.]
+d(xy, x_0y_0) \leq \abs{x_0}\abs{y - y_0} + \abs{y_0}\abs{x - x_0} + \abs{x - x_0}\abs{y - y_0}.
 $$
 
 (c) Show that the operation of taking reciprocals is a continuous map from $\RR - \theset{0}$ to $\RR$.
