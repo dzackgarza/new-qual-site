@@ -25,7 +25,10 @@ audit:
 ::: {.problem}
 Let $f: X \to Y$ be a proper morphism of affine varieties over $k$.
 Then $f$ is a finite morphism.
-*Hint:* Use (4.11A).
+:::
+
+::: {.hint}
+Use (4.11A).
 :::
 
 ::: {.solution}
@@ -167,7 +170,7 @@ for finitely many elements $a_i\in A$.
 
 ::: {.pf-step #s6}
 
-A finitely generated integral algebra is finite as a module.  Hence $A$ is a finite $B$-module.
+A finitely generated $B$-algebra whose elements are integral over $B$ is a finite $B$-module. Hence $A$ is a finite $B$-module.
 
 ::: pf-proof
 
@@ -205,12 +208,6 @@ $$
 finiteness is exactly the condition that $A$ be finite as a $B$-module.  This is step [](#s6){.pf-ref}.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s7){.pf-ref} is the required conclusion.
 
 :::
 
