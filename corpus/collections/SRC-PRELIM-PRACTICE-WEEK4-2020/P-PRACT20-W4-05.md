@@ -19,5 +19,5 @@ Which of the following indicates the graphs of two functions satisfying $\left( 
 :::
 
 ::: {.solution}
-The equation can be factored into $( y ^ { \prime } ( x ) + y ( x ) ) ^ { 2 } = 0 \mathrm { s o } y ^ { \prime } ( x ) = - y ( x )$ and we find $y ( x ) = C e ^ { - x }$ . Thus the graphs should decay to zero as $x \to \infty$ so $\mathrm { ( A ) }$ is the correct answer.
+The equation factors as $(y'(x)+y(x))^2=0$, so $y'(x)=-y(x)$ and $y(x)=Ce^{-x}$. Thus the graphs decay to zero as $x\to\infty$, and (A) is the correct answer.
 :::

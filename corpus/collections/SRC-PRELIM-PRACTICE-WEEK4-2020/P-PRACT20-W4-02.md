@@ -17,15 +17,15 @@ Solve the initial value problem $y' + xy = x$, $y(0) = -1$.
 :::
 
 ::: {.solution}
-The integrating factor here is $\mu ( x ) = e ^ { \int x d x } = e ^ { x ^ { 2 } / 2 }$ . We see
+The integrating factor is $\mu(x)=e^{\int x\,dx}=e^{x^2/2}$. We see
 
 $$
-e ^ { x ^ { 2 } / 2 } y ^ { \prime } + x e ^ { x ^ { 2 } / 2 } y = x e ^ { x ^ { 2 } / 2 } \implies \frac { d } { d x } \left[ e ^ { x ^ { 2 } / 2 } y ( x ) \right] = x e ^ { x ^ { 2 } / 2 } \implies e ^ { x ^ { 2 } / 2 } y ( x ) - y ( 0 ) = e ^ { x ^ { 2 } / 2 } - 1 .
+e^{x^2/2}y'+xe^{x^2/2}y=xe^{x^2/2}\implies\frac{d}{dx}\left[e^{x^2/2}y(x)\right]=xe^{x^2/2}\implies e^{x^2/2}y(x)-y(0)=e^{x^2/2}-1.
 $$
 
-Thus
+With $y(0)=-1$ this gives
 
 $$
-\boxed { y ( x ) = 1 - 2 e ^ { - x ^ { 2 } / 2 } . }
+\boxed{y(x)=1-2e^{-x^2/2}.}
 $$
 :::

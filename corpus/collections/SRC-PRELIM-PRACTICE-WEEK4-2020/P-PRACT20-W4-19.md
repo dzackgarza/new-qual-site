@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Find the matrix for the transformation of the xy-plane which reflects each vector through the x-axis and doubles its length.
+Find the matrix for the transformation of the $xy$-plane which reflects each vector through the $x$-axis and doubles its length.
 :::
 
 ::: {.solution}

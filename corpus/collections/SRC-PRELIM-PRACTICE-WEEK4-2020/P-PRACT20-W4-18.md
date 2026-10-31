@@ -17,8 +17,11 @@ review: draft
 If $A,B$ are subspaces of $V$, which of the following are necessarily subspaces of $V$?
 
 (a) $A+B=\{x+y:x\in A,\ y\in B\}$
+
 (b) $A\cup B$
+
 (c) $A\cap B$
+
 (d) $A^c=\{x\in V:x\notin A\}$
 :::
 

@@ -19,5 +19,5 @@ If $f(1, 1) = 1$ and $f(-1, 0) = 2$, what is $f(3, 5)$?
 :::
 
 ::: {.solution}
-By linearity $\boxed{ f ( 3 , 5 ) = f ( 5 \cdot ( 1 , 1 ) + 2 \cdot ( - 1 , 0 ) ) = 5 f ( 1 , 1 ) + 2 f ( - 1 , 0 ) = 9 } .$
+Since $(3,5)=5(1,1)+2(-1,0)$, linearity gives $\boxed{f(3,5)=5f(1,1)+2f(-1,0)=9}$.
 :::

@@ -20,14 +20,14 @@ Find the solution of $x\, dy + (y - x e^{x})\, dx = 0$ which passes through the 
 This problem can be re-phrased
 
 $$
-x { \frac { d y } { d x } } + y = x e ^ { x } .
+x\frac{dy}{dx}+y=xe^x.
 $$
 
 The left-hand side is already a perfect derivative:
 
 $$
-{ \frac { d } { d x } } \left[ x y ( x ) \right] = x e ^ { x } \Longrightarrow x y ( x ) = x e ^ { x } - e ^ { x } + C \Longrightarrow y ( x ) = e ^ { x } - { \frac { e ^ { x } } { x } } + { \frac { C } { x } } .
+\frac{d}{dx}\left[xy(x)\right]=xe^x\Longrightarrow xy(x)=xe^x-e^x+C\Longrightarrow y(x)=e^x-\frac{e^x}{x}+\frac{C}{x}.
 $$
 
-Now y(1) = 0 gives C = 0 and so $\boxed { y ( x ) = e ^ { x } - e ^ { x } / x . }$
+Now $y(1)=0$ gives $C=0$, so $\boxed{y(x)=e^x-e^x/x}$ for $x>0$.
 :::

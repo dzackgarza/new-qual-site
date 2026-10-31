@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-What is the dimension of the space of all polynomials p of degree at most 3 such that $p ( - 1 ) = p ( 0 ) = p ( 1 ) = 0 ?$
+What is the dimension of the space of all real polynomials $p$ of degree at most $3$ such that $p(-1)=p(0)=p(1)=0$?
 :::
 
 ::: {.solution}

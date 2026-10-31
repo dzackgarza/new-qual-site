@@ -13,47 +13,51 @@ review: draft
 ---
 
 ::: {.problem}
-(Cauchy-Euler Equations) Consider the equation $2x^{2} y'' + 3x y' - 15y = 0$ for $x > 0$. Find the general solution by either (1) making the substitution $x = e^{t}$ or (2) searching for a solution of the form $y(x) = x^{\lambda}$. If you try the latter, you will arrive at a quadratic polynomial for $\lambda$ which has two roots.
-If the equation were changed so that the polynomial has only one root, you would only find one solution.
-How could you adjust to find another linearly independent solution?
+(Cauchy-Euler Equations) Consider the equation $2x^{2} y'' + 3x y' - 15y = 0$ for $x > 0$.
+
+(a) Find the general solution, either by making the substitution $x = e^{t}$ or by searching for a solution of the form $y(x) = x^{\lambda}$. The latter leads to a quadratic polynomial for $\lambda$ which has two roots.
+
+(b) If the equation were changed so that the polynomial has only one root, the search for $y=x^\lambda$ would give only one solution. How could you adjust to find another linearly independent solution?
 :::
 
 ::: {.solution}
 We’ll do the problem both ways.
-First, guessing $y ( x ) = x ^ { \lambda }$ , we find that
+First, substituting $y(x)=x^\lambda$, we find
 
 $$
-2 \lambda ( \lambda - 1 ) x ^ { \lambda } + 3 \lambda x ^ { \lambda } - 1 5 x ^ { \lambda } = 0 .
+2\lambda(\lambda-1)x^\lambda+3\lambda x^\lambda-15x^\lambda=0.
 $$
 
-Since this must hold for all $x ,$ we need $2 \lambda ^ { 2 } + \lambda - 1 5 = 0 \mathrm { ~ s o ~ } ( 2 \lambda - 5 ) ( \lambda + 3 ) = 0$ . Thus the general solution is given by
+Since this must hold for all $x>0$, we need $2\lambda^2+\lambda-15=0$, that is, $(2\lambda-5)(\lambda+3)=0$. The two solutions $x^{5/2}$ and $x^{-3}$ are linearly independent, so the general solution is
 
 $$
-\boxed { y ( x ) = C _ { 1 } x ^ { 5 / 2 } + C _ { 2 } x ^ { - 3 } } .
+\boxed{y(x)=C_1x^{5/2}+C_2x^{-3}}.
 $$
 
-Now we do this using the substitution $x = e ^ { t }$ . Indeed, define $Y ( t ) = y ( e ^ { t } )$ . We will find a differential equation for $Y ( t )$ . We see
+Now we use the substitution $x=e^t$. Define $Y(t)=y(e^t)$; we find a differential equation for $Y$. We see
 
 $$
-\begin{array} { l } { { Y ^ { \prime } ( t ) = e ^ { t } y ^ { \prime } ( e ^ { t } ) , } } \\ { { Y ^ { \prime \prime } ( t ) = e ^ { 2 t } y ^ { \prime \prime } ( e ^ { t } ) + e ^ { t } y ^ { \prime } ( e ^ { t } ) . } } \end{array}
+\begin{aligned}
+Y'(t)&=e^ty'(e^t),\\
+Y''(t)&=e^{2t}y''(e^t)+e^ty'(e^t).
+\end{aligned}
 $$
 
 Thus
 
 $$
-2 Y ^ { \prime \prime } ( t ) + Y ^ { \prime } ( t ) = 2 ( e ^ { t } ) ^ { 2 } y ( e ^ { t } ) + 3 e ^ { t } y ^ { \prime } ( e ^ { t } ) = 1 5 y ( e ^ { t } ) = 1 5 Y ( t ) .
+2Y''(t)+Y'(t)=2(e^t)^2y''(e^t)+3e^ty'(e^t)=15y(e^t)=15Y(t).
 $$
 
-Now we can solve for $Y ( t )$ by guessing $Y ( t ) = e ^ { r t }$ and we’ll find $r ^ { 2 } + r - 1 5 = 0 \mathrm { ~ s o ~ } r = 5 / 2 , - 3$ just as λ did above.
-Thus
+This is a constant-coefficient equation; substituting $Y(t)=e^{rt}$ gives $2r^2+r-15=0$, so $r=5/2,-3$, the same roots as $\lambda$ above. Thus
 
 $$
-Y ( t ) = C _ { 1 } e ^ { \frac { 5 } { 2 } t } + C _ { 2 } e ^ { - 3 t } \implies \boxed{ y ( x ) = Y ( \log ( x ) ) = C _ { 1 } x ^ { 5 / 2 } + C _ { 2 } x ^ { - 3 } } .
+Y(t)=C_1e^{\frac52t}+C_2e^{-3t}\implies\boxed{y(x)=Y(\log x)=C_1x^{5/2}+C_2x^{-3}}.
 $$
 
-This latter method was a bit more complicated, but it helps answer the last question: what if we had a repeated root for $\lambda ?$ In this case, we would transform the equation and find that the differential equation for $Y ( t )$ has a characteristic polynomial $( r - r _ { 1 } ) ^ { 2 } = 0$ and the solution would be
+The second method answers the last question: what if $\lambda$ were a repeated root? Then the transformed equation for $Y(t)$ has characteristic polynomial a multiple of $(r-r_1)^2$, and its solutions are
 
 $$
-Y ( t ) = C _ { 1 } e ^ { r _ { 1 } t } + C _ { 2 } t e ^ { r _ { 1 } t } \quad \Longrightarrow \quad \boxed{ y ( x ) = Y ( \log ( x ) ) = C _ { 1 } x ^ { r _ { 1 } } + C _ { 2 } x ^ { r _ { 1 } } \log ( x ) } .
+Y(t)=C_1e^{r_1t}+C_2te^{r_1t}\quad\Longrightarrow\quad\boxed{y(x)=Y(\log x)=C_1x^{r_1}+C_2x^{r_1}\log x}.
 $$
 :::

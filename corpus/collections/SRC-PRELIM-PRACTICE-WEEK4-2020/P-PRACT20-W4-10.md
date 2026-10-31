@@ -26,12 +26,12 @@ III. $\{ h : h \text{ is twice differentiable and } h''(x) = h(x) + 1 \text{ for
 
 ::: {.solution}
 The answer is that I. and II. are subspaces but III. is not.
-The problem with III. is that the set is not closed under addition or scaling.
-Indeed, it $h _ { 1 } , h _ { 2 }$ satisfy the equation, then
+Sets I and II are solution sets of linear homogeneous equations, so they contain $0$ and are closed under addition and scalar multiplication.
+Set III does not contain the zero function, since $0''=0\ne0+1$, so it is not a subspace. It is also not closed under addition: if $h_1,h_2$ satisfy the equation, then
 
 $$
-( h _ { 1 } + h _ { 2 } ) ^ { \prime \prime } = ( h _ { 1 } + h _ { 2 } ) + 2
+(h_1+h_2)''=(h_1+h_2)+2\ne(h_1+h_2)+1,
 $$
 
-which is a different equation, so $h _ { 1 } + h _ { 2 }$ does not lie in the solution set.
+so $h_1+h_2$ does not lie in the set. Set III is nonempty, since it contains $h\equiv-1$.
 :::

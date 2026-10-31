@@ -21,21 +21,21 @@ Assuming the mixing is instantaneous, how many grams of salt are in the tank aft
 
 ::: {.solution}
 Let $S$ denote the amount of salt in the tank in grams.
-Then $S ( 0 ) = 3$ , and the change in S is given by
+Then $S(0)=3$. The volume stays at $100$ liters, so the concentration is $S/100$ grams per liter, and with $t$ in minutes
 
 $$
-{ \frac { d S } { d t } } = \mathrm {  ~ \tilde { \ s a l t } ~ i n " ~ } - \mathrm {  ~ \tilde { \ s a l t } ~ o u t " ~ } = \left( 0 . 0 2 { \frac { g \mathrm { r a m s } } { \mathrm { l i t e r s } } } \right) \left( 4 \mathrm { \frac { l i t e r s } { s e c } } \right) - \left( { \frac { S } { 1 0 0 } } { \frac { g \mathrm { r a m s } } { \mathrm { l i t e r s } } } \right) \left( 4 { \frac { \mathrm { l i t e r s } } { s e c } } \right) = { \frac { 2 } { 2 5 } } - { \frac { S } { 2 5 } } .
+\frac{dS}{dt}=\text{``salt in''}-\text{``salt out''}=\left(0.02\,\frac{\text{grams}}{\text{liter}}\right)\left(4\,\frac{\text{liters}}{\text{min}}\right)-\left(\frac{S}{100}\,\frac{\text{grams}}{\text{liter}}\right)\left(4\,\frac{\text{liters}}{\text{min}}\right)=\frac{2}{25}-\frac{S}{25}.
 $$
 
-The particular solution is $S _ { p } ( t ) = 2$ and the homogeneous solution is $S _ { h } ( t ) = e ^ { - t / 2 5 }$ . Thus the solution is
+A particular solution is $S_p(t)=2$ and the homogeneous solutions are $Ce^{-t/25}$. Thus
 
 $$
-S ( t ) = 2 - C e ^ { - t / 2 5 } .
+S(t)=2+Ce^{-t/25},
 $$
 
-and S(0) = 3 gives $C = - 1$ so
+and $S(0)=3$ gives $C=1$, so
 
 $$
-S ( t ) = 2 + e ^ { - t / 2 5 } \quad \Longrightarrow \quad \Bigl \lceil S ( 1 0 0 ) = 2 + e ^ { - 4 } . \Bigr \rceil
+S(t)=2+e^{-t/25}\quad\Longrightarrow\quad\boxed{S(100)=2+e^{-4}}\text{ grams}.
 $$
 :::

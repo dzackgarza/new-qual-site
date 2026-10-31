@@ -17,21 +17,23 @@ Find all the solutions of the equation $y y'' - 2(y')^{2} = 0$ which pass throug
 :::
 
 ::: {.solution}
-Divide the equation by $y y ^ { \prime }$ to arrive at
+Near $x=1$ we have $y>0$, so the equation reads $y''=2(y')^2/y$, whose right side is smooth in $(y,y')$ for $y>0$. A solution is therefore determined by $y(1)=1$ and the slope $C:=y'(1)$. On an interval where $y>0$,
 
 $$
-{ \frac { y ^ { \prime \prime } } { y ^ { \prime } } } - 2 { \frac { y ^ { \prime } } { y } } = 0 \quad \Longrightarrow \quad \log ( y ^ { \prime } ) - 2 \log ( y ) = C \quad \Longrightarrow \quad { \frac { y ^ { \prime } } { y ^ { 2 } } } = C
+\frac{d}{dx}\left(\frac{y'}{y^2}\right)=\frac{yy''-2(y')^2}{y^3}=0,
 $$
 
-where now $C > 0$ . Integrating again gives
+so $y'/y^2$ is constant, equal to its value $C$ at $x=1$. Integrating again gives
 
 $$
-- { \frac { 1 } { y } } = C x + D \Longrightarrow y ( x ) = { \frac { 1 } { D - C x } }
+-\frac1y=Cx+D\Longrightarrow y(x)=\frac{1}{-D-Cx},
 $$
 
-where again $C > 0$ . Plugging in $y ( 1 ) = 1$ shows that $D - C = 1 { \mathrm { ~ s o ~ } } D = 1 + C$ . So the set of all such solutions is
+and $y(1)=1$ gives $-D-C=1$. So the solutions through $(1,1)$ are
 
 $$
-\boxed{ y ( x ) = { \frac { 1 } { 1 + C ( 1 - x ) } } } , \quad \mathrm { f o r } \ C > 0 .
+\boxed{y(x)=\frac{1}{1+C(1-x)}},\qquad C\in\RR,
 $$
+
+each on the interval containing $1$ where $1+C(1-x)>0$. The case $C=0$ is the constant solution $y\equiv1$. Conversely, each of these functions satisfies the equation: with $u=1+C(1-x)$, $y'=C/u^2$ and $y''=2C^2/u^3$, so $yy''=2C^2/u^4=2(y')^2$.
 :::

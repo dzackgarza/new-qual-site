@@ -19,12 +19,12 @@ If $T$ is a linear transformation from $V$ onto $\RR^{4}$, what is the dimension
 :::
 
 ::: {.solution}
-T is mapping a 6-dimensional vector space onto a 4-dimensional vector space.
-By the Rank-Nullity theorem, we have
+$T$ maps a 6-dimensional vector space onto a 4-dimensional vector space.
+By the rank-nullity theorem,
 
 $$
-\mathrm { d i m } \left( R ( T ) \right) + \mathrm { d i m } \left( N ( T ) \right) = 6
+\dim R(T)+\dim N(T)=6,
 $$
 
-and since T is onto, we have dim $( R ( T ) ) = \mathrm { d i m } ( \RR ^ { 4 } ) = 4 \ \mathrm { s o } \boxed{ \mathrm { d i m } ( N ( T ) ) = 2 } .$
+and since $T$ is onto, $\dim R(T)=\dim\RR^4=4$, so $\boxed{\dim N(T)=2}$.
 :::

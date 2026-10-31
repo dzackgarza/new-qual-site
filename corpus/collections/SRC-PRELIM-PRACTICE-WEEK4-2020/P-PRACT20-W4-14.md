@@ -14,30 +14,34 @@ review: draft
 ---
 
 ::: {.problem}
-Find the eigenvalues and eigenvectors of $M = { \left( \begin{array} { l } { 0 \ 1 \ 1 } \\ { 1 \ 0 \ 1 } \\ { 1 \ 1 \ 0 } \end{array} \right) }$
+Find the eigenvalues and eigenvectors of $M=\begin{pmatrix}0&1&1\\1&0&1\\1&1&0\end{pmatrix}$.
 :::
 
 ::: {.solution}
 We see
 
 $$
-\operatorname* { d e t } ( M - \lambda I ) = { \determinant{ \begin{array} { l l l } { - \lambda } & { 1 } & { 1 } \\ { 1 } & { - \lambda } & { 1 } \\ { 1 } & { 1 } & { - \lambda } \end{array} } } = - \lambda ( \lambda ^ { 2 } - 1 ) - ( - \lambda - 1 ) + ( 1 + \lambda )
+\det(M-\lambda I)=\begin{vmatrix}-\lambda&1&1\\1&-\lambda&1\\1&1&-\lambda\end{vmatrix}=-\lambda(\lambda^2-1)-(-\lambda-1)+(1+\lambda),
 $$
 
-where we used co-factor expansion across the top row.
-We can factor (1 + λ) from all terms:
+by cofactor expansion along the top row.
+Factoring $1+\lambda$ from all terms:
 
 $$
-\operatorname * { d e t } ( M - \lambda I ) = ( 1 + \lambda ) ( - \lambda ( \lambda - 1 ) + 2 ) = - ( 1 + \lambda ) ^ { 2 } ( \lambda - 2 ) .
+\det(M-\lambda I)=(1+\lambda)\bigl(-\lambda(\lambda-1)+2\bigr)=-(1+\lambda)^2(\lambda-2).
 $$
 
-Thus the eigenvalues are $\lambda _ { 1 } = 2$ with multiplicity 1 and $\lambda _ { 2 } = - 1$ with multiplicity 2. We look for an eigenvector $v _ { 1 } = ( x , y , z ) ^ { t }$ corresponding to $\lambda _ { 1 } = 2$ . We see $( M - 2 I ) v _ { 1 } = 0$ implies
+Thus the eigenvalues are $\lambda_1=2$ with multiplicity 1 and $\lambda_2=-1$ with multiplicity 2. An eigenvector $v_1=(x,y,z)^t$ for $\lambda_1=2$ satisfies $(M-2I)v_1=0$:
 
 $$
-\begin{array} { r } { - 2 x + y + z = 0 } \\ { x - 2 y + z = 0 } \\ { x + y - 2 z = 0 . } \end{array}
+\begin{aligned}
+-2x+y+z&=0,\\
+x-2y+z&=0,\\
+x+y-2z&=0.
+\end{aligned}
 $$
 
-Adding 3x to the first equation, $3 y$ to the second and $3 z$ to the third shows that $x = y = z$ thus an eigenvector corresponding to $\lambda _ { 1 } = 2$ is a scalar multiple of $v _ { 1 } = ( 1 , 1 , 1 ) ^ { t }$ .
+Each equation says that one coordinate equals the mean of the three, so $x=y=z$, and the eigenvectors for $\lambda_1=2$ are the nonzero multiples of $v_1=(1,1,1)^t$.
 
-Eigenvectors $\boldsymbol { v } = ( x , y , z )$ corresponding to $\lambda _ { 2 } = - 1$ satisfy $x + y + z = 0$ . All such vectors are linear combinations of $v _ { 2 } = ( 1 , 0 , - 1 ) ^ { t }$ and $v _ { 3 } = ( 1 , - 1 , 0 ) ^ { t }$
+The eigenvectors $v=(x,y,z)^t$ for $\lambda_2=-1$ are the nonzero solutions of $(M+I)v=0$, that is, of $x+y+z=0$. They are the nonzero linear combinations of $v_2=(1,0,-1)^t$ and $v_3=(1,-1,0)^t$.
 :::
