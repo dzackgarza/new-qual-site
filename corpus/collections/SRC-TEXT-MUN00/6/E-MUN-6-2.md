@@ -29,7 +29,17 @@ Show that if $B$ is not finite and $B \subset A$, then $A$ is not finite.
 :::
 
 ::: {.solution}
-Suppose, toward a contradiction, that $A$ were finite. Every subset of a finite set is finite: if $\cardinality{A}=n$, identify $A$ with $\{1,\dots,n\}$; then the image of $B$ is a subset of this finite set and hence is finite, so $B$ is finite as well. This contradicts the hypothesis that $B$ is not finite.
+Suppose, toward a contradiction, that $A$ were finite. We first prove by
+induction on $n$ that every subset of $\{1,\dots,n\}$ is finite. For $n=0$,
+the only subset is empty. Assume the claim for $n$ and let
+$C\subset\{1,\dots,n+1\}$. If $n+1\notin C$, the induction hypothesis
+applies. If $n+1\in C$, then $C-\{n+1\}$ is finite by the induction
+hypothesis, and adjoining one point gives a finite set. This proves the
+claim for $n+1$.
+
+Now identify $A$ with $\{1,\dots,n\}$. The image of $B$ under this
+bijection is a subset of $\{1,\dots,n\}$, hence is finite by the claim.
+Thus $B$ is finite, contrary to the hypothesis.
 
 Therefore
 $$
