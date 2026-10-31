@@ -76,7 +76,9 @@ Let
 $$
 \{(L_i,\varphi_i)\}_{i\in I}
 $$
-be a chain. Put
+be a chain.
+If the chain is empty, $(k,\operatorname{id}_k)$ is an upper bound.
+Assume henceforth that it is nonempty. Put
 $$
 L=\bigcup_{i\in I}L_i.
 $$
