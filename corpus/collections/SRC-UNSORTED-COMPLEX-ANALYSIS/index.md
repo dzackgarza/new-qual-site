@@ -197,7 +197,6 @@ source:
   - id: P-FAGTL
   - id: P-FHQAB
   - id: P-FWNW3
-  - id: P-G2RYI
   - id: P-GAPV3
   - id: P-GW3Y7
   - id: P-HUG4G

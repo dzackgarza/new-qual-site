@@ -33,7 +33,12 @@ Fix $n\ge0$ and a compact set $K\subset\Omega$.
 $f$ is holomorphic on $\Omega$.
 
 ::: pf-proof
-This is the uniform limit theorem for holomorphic functions, proved by Goursat's and Morera's theorems on discs.
+Every point of $\Omega$ has a compact disc neighborhood in $\Omega$ on which $f_k\to f$ uniformly, so $f$ is continuous.
+Let $T$ be a closed triangle contained in an open disc $D\subseteq\Omega$. Each $f_k$ is holomorphic on $D$, so $\int_{\partial T}f_k\,dz=0$ by Goursat's theorem, and uniform convergence on $\partial T$ gives
+$$
+\int_{\partial T}f(z)\,dz=\lim_{k\to\infty}\int_{\partial T}f_k(z)\,dz=0.
+$$
+By Morera's theorem $f$ is holomorphic on each such disc, hence on $\Omega$.
 :::
 
 :::
