@@ -36,7 +36,7 @@ Say what your hypotheses are.
 :::
 
 ::: {.solution}
-We prove option (ii). Let $F$ be a commutative field and
+We prove option (ii). Let $F$ be a field, let $n\ge1$, and let
 $A\in M_n(F)$. Write
 $$
 \chi_A(t)=\det(tI-A)=t^n+c_{n-1}t^{n-1}+\cdots+c_0.
