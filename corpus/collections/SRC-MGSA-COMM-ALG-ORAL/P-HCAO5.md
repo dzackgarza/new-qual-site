@@ -26,6 +26,10 @@ $$
 for some $q(x) \in E[x]$.
 :::
 
+::: {.remark}
+The source asks for $q(x) \in F[x]$. That fails when $a \notin F$: for $p(x) = x^2 - 2 \in \QQ[x]$ and $a = \sqrt2$, the quotient is $x + \sqrt2 \notin \QQ[x]$. The statement asks for $q(x) \in E[x]$.
+:::
+
 ::: {.solution}
 
 ::: pf
