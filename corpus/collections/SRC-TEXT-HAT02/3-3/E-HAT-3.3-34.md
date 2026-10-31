@@ -28,7 +28,13 @@ audit:
 ::: {.problem}
 For a compact manifold $M$ verify that the following diagram relating Poincaré duality for $M$ and $\partial M$ is commutative, up to sign at least:
 
-$$\begin{array}{cc} H^{k-1}(\partial M; R) \to H^k(M, \partial M; R) \to H^k(M; R) \to H^k(M; R) \to H^k(\partial M; R) \\ \downarrow [\partial M] \frown \quad \downarrow [M] \frown \quad \downarrow [\partial M] \frown \\ H_{n-k}(\partial M; R) \to H_{n-k}(M; R) \to H_{n-k}(M, \partial M; R) \to H_{n-k-1}(\partial M; R) \end{array}$$
+$$
+\begin{array}{ccccccc}
+H^{k-1}(\partial M;R)&\longrightarrow&H^k(M,\partial M;R)&\longrightarrow&H^k(M;R)&\longrightarrow&H^k(\partial M;R)\\
+\downarrow { [\partial M]\frown - }&&\downarrow { [M,\partial M]\frown - }&&\downarrow { [M,\partial M]\frown - }&&\downarrow { [\partial M]\frown - }\\
+H_{n-k}(\partial M;R)&\longrightarrow&H_{n-k}(M;R)&\longrightarrow&H_{n-k}(M,\partial M;R)&\longrightarrow&H_{n-k-1}(\partial M;R)
+\end{array}
+$$
 :::
 
 ::: {.solution}
@@ -42,15 +48,9 @@ $$
 H_{n-k}(\partial M;R)\to H_{n-k}(M;R)
 \to H_{n-k}(M,\partial M;R)\to H_{n-k-1}(\partial M;R).
 $$
-The vertical maps are cap product with $[\partial M]$ or $[M,\partial M]$ as indicated.
+The middle square commutes by naturality of cap product under the map from relative to absolute cochains and from absolute to relative chains.
 
-For the two middle squares, commutativity is the naturality of cap product with respect to the inclusion and quotient maps of pairs. Explicitly, if $j:\partial M\hookrightarrow M$, then
-$$
-j_*([\partial M]\frown j^*\alpha)
-$$
-agrees, up to the conventional sign, with the image of $[M,\partial M]\frown\alpha$ under the appropriate boundary/inclusion map.
-
-For the two squares involving connecting homomorphisms, use the cap-product boundary identity
+For the outer squares, use the chain-level cap-product boundary identity
 $$
 \partial(c\frown\varphi)
 =(\partial c)\frown\varphi\ \pm\ c\frown\delta\varphi
@@ -59,7 +59,5 @@ together with Exercise 31,
 $$
 \partial[M,\partial M]=[\partial M].
 $$
-If $\varphi$ is a cocycle, the second term disappears; if one is tracing a connecting cohomology class, the same identity gives the other square with the standard degree sign. Hence every square in the diagram commutes up to the unavoidable sign convention for connecting maps.
-
-Therefore the displayed Poincaré-duality diagram is commutative up to sign.
+For an absolute cocycle $\varphi$, the identity says that the boundary of $[M,\partial M]\frown\varphi$ is $[\partial M]\frown(\varphi\restrict_{\partial M})$, proving the right square. For a cocycle on $\partial M$, extend it to a cochain on $M$; its coboundary represents the cohomology connecting class. The same identity, now applied to that extension, says that its cap product with $[M,\partial M]$ is the inclusion of the boundary cap product, proving the left square. The signs are those in the chosen cap and connecting-map conventions.
 :::
