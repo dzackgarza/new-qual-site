@@ -705,12 +705,6 @@ If $X_0$ has a real point, apply step [](#s21){.pf-ref}.  If it does not, apply 
 
 :::
 
-::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (a), steps [](#s9){.pf-ref}, [](#s10){.pf-ref} and [](#s11){.pf-ref} prove part (b), steps [](#s12){.pf-ref}, [](#s13){.pf-ref} and [](#s14){.pf-ref} prove part (c), steps [](#s15){.pf-ref}, [](#s16){.pf-ref}, [](#s17){.pf-ref} and [](#s18){.pf-ref} prove part (d), and steps [](#s19){.pf-ref}, [](#s20){.pf-ref}, [](#s21){.pf-ref}, [](#s22){.pf-ref}, [](#s23){.pf-ref} and [](#s24){.pf-ref} prove part (e).
-
-:::
-
 :::
 
 :::
