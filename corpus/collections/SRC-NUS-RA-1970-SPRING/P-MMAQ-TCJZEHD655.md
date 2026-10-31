@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-If $\limsup_{n\rightarrow \infty} a_n\leq l$, show that $\limsup_{n\rightarrow \infty}\sum_{i=1}^n{a_i/n}\leq l$.
+If $\limsup_{n\rightarrow \infty} a_n\leq l$, show that $\limsup_{n\rightarrow \infty}\frac{1}{n}\sum_{i=1}^n a_i\leq l$.
 :::
 
 ::: {.solution}

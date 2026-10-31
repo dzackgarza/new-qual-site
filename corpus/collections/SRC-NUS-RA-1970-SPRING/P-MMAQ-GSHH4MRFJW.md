@@ -22,9 +22,9 @@ audit:
 ::: {.problem}
 Prove or disprove each of the following statements.
 
-(b) If ${f_n}$ is a sequence of measurable functions that converges uniformly to $f$ on $\RR$, then $\int{f}=\lim_{k\to \infty} \int f_k$
+(b) If $\{f_n\}$ is a sequence of measurable functions that converges uniformly to $f$ on $\RR$, then $\int{f}=\lim_{n\to \infty} \int f_n$
 
-(c) If $\{f_k\}$ is a sequence of function in $L_p[0,\infty)$ that converges to a function $f \in L_p [0,\infty)$, then $\{f_k\}$ has a subsequence that converges to $f$ almost everywhere.
+(c) If $\{f_k\}$ is a sequence of functions in $L_p[0,\infty)$ that converges in $L_p$ to a function $f \in L_p [0,\infty)$, then $\{f_k\}$ has a subsequence that converges to $f$ almost everywhere.
 :::
 
 ::: {.solution}
