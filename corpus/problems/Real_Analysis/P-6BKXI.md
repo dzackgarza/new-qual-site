@@ -11,6 +11,7 @@ classification:
   - Approximations to the Identity
   - Convolution
   - L¹
+  - Uniform Convergence
 relations: []
 review: draft
 audit:
@@ -48,7 +49,7 @@ For $f \in L^1$, $\norm{f \ast \phi_t - f}_1 \to 0$ as $t \to 0$.
 
 ::: pf-proof
 
-By Tonelli's theorem, $\norm{f\ast\phi_t - f}_1 \le \int\abs{\phi(y)}\,\omega(ty)\,dy$ with $\omega(h) = \int\abs{f(x-h) - f(x)}\,dx$. Continuity of translation in $L^1$ gives $\omega(ty) \to 0$ for each $y$, and $\abs{\phi(y)}\,\omega(ty) \le 2\norm{f}_1\abs{\phi(y)}$, so dominated convergence applies. See [[E-QCYEM]].
+By Tonelli's theorem, $\norm{f\ast\phi_t - f}_1 \le \int\abs{\phi(y)}\,\omega(ty)\,dy$ with $\omega(h) = \int\abs{f(x-h) - f(x)}\,dx$. Continuity of translation in $L^1$ gives $\omega(ty) \to 0$ for each $y$, and $\abs{\phi(y)}\,\omega(ty) \le 2\norm{f}_1\abs{\phi(y)}$, so dominated convergence applies.
 
 :::
 
@@ -74,7 +75,7 @@ $\Psi(x) = c(1+\norm{x})^{-n-\eps}$ is a radial, radially decreasing, integrable
 
 ::: pf-qed
 
-Let $\Omega f(x) = \limsup_{t\to0}\abs{f\ast\phi_t(x) - f(x)}$. For $g \in C_c(\RR^n)$, $g\ast\phi_t \to g$ uniformly by step [](#s3){.pf-ref}, so $\Omega f \le \Omega(f - g) \le A\,M(f-g) + \abs{f - g}$ by step [](#s2-1){.pf-ref}. For $\alpha > 0$, the weak type $(1,1)$ bound $m\theset{Mh > \beta} \le 3^n\norm{h}_1/\beta$ and Chebyshev's inequality give $m\theset{\Omega f > 2\alpha} \le (3^nA + 1)\norm{f - g}_1/\alpha$. Since $C_c$ is dense in $L^1$, $m\theset{\Omega f > 2\alpha} = 0$ for every $\alpha > 0$. See [[E-KUOXT]].
+Let $\Omega f(x) = \limsup_{t\to0}\abs{f\ast\phi_t(x) - f(x)}$. For $g \in C_c(\RR^n)$, $g\ast\phi_t \to g$ uniformly by step [](#s3){.pf-ref}, so $\Omega f \le \Omega(f - g) \le A\,M(f-g) + \abs{f - g}$ by step [](#s2-1){.pf-ref}. For $\alpha > 0$, the weak type $(1,1)$ bound $m\theset{Mh > \beta} \le 3^n\norm{h}_1/\beta$ and Chebyshev's inequality give $m\theset{\Omega f > 2\alpha} \le (3^nA + 1)\norm{f - g}_1/\alpha$. Since $C_c$ is dense in $L^1$, $m\theset{\Omega f > 2\alpha} = 0$ for every $\alpha > 0$.
 
 :::
 
