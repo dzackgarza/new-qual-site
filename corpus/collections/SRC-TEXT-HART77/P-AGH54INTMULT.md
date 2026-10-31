@@ -24,7 +24,7 @@ audit:
 
 ::: {.problem}
 Let $Y, Z \subseteq \AA^2$ be two distinct curves, given by equations $f = 0$ and $g = 0$.
-For $P \in Y \intersect Z$, define the *intersection multiplicity* $(Y \cdot Z)_P$ of $Y$ and $Z$ at $P$ to be the length of the $\mco_P$-module $\mco_P / \generators{f, g}$.
+For $P \in Y \intersect Z$, define the \dfn{intersection multiplicity} $(Y \cdot Z)_P$ of $Y$ and $Z$ at $P$ to be the length of the $\mco_P$-module $\mco_P / \generators{f, g}$.
 
 (a) Show that $(Y \cdot Z)_P$ is finite, and that $(Y \cdot Z)_P \geq \mu_P(Y) \cdot \mu_P(Z)$.
 
@@ -197,9 +197,9 @@ Fix $P_i$ and choose an affine chart and a local coordinate $t$ on $L$ vanishing
 The restriction of $F$ to $L$ is a unit times $t^{e_i}$ in the local ring of $L$ at that point.
 Quotienting the two-dimensional regular local ring of the affine plane first by the equation of $L$ therefore gives
 $$
-\frac{\OO_{\PP^2,P_i}}{(F,z)}
+\frac{\mco_{\PP^2,P_i}}{(F,z)}
 \cong
-\frac{\OO_{L,P_i}}{(t^{e_i})},
+\frac{\mco_{L,P_i}}{(t^{e_i})},
 $$
 whose length is $e_i$.
 Thus

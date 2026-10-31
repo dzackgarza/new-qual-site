@@ -31,12 +31,13 @@ Assume $\operatorname{char} k \neq 2$, and let $f$ be a nonzero homogeneous poly
 (b) Show that $f$ is irreducible if and only if $r \geq 2$.
 
 (c) Assume $r \geq 2$, and let $Q$ be the quadric hypersurface in $\PP^n$ defined by $f$.
-Show that the singular locus $Z = \Sing Q$ of $Q$ is a linear variety of dimension $n - r - 1$.
+Show that the singular locus $Z = \Sing Q$ of $Q$ is a linear variety ([[P-AGH211LINEAR]]) of dimension $n - r - 1$.
 In particular, $Q$ is nonsingular if and only if $r = n$.
 
 (d) In case $r < n$, show that $Q$ is a cone with axis $Z$ over a nonsingular quadric hypersurface $Q' \subseteq \PP^r$.
 
-Here, if $Y$ is a closed subset of $\PP^r$ and $Z$ is a linear subspace of dimension $n - r - 1$ in $\PP^n$, embed $\PP^r$ in $\PP^n$ so that $\PP^r \intersect Z = \emptyset$; the *cone over $Y$ with axis $Z$* is the union of all lines joining a point of $Y$ to a point of $Z$.
+This notion of cone generalizes the one defined in [[P-AGH210CONE]].
+If $Y$ is a closed subset of $\PP^r$, and if $Z$ is a linear subspace of dimension $n - r - 1$ in $\PP^n$, we embed $\PP^r$ in $\PP^n$ so that $\PP^r \intersect Z = \emptyset$, and define the \dfn{cone over $Y$ with axis $Z$} to be the union of all lines joining a point of $Y$ to a point of $Z$.
 :::
 
 ::: {.solution}

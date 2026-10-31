@@ -34,13 +34,15 @@ $$
 in $k[[x,y]]$ such that $f = gh$.
 
 (c) Let $Y$ be defined by $f(x,y) = 0$ in $\AA^2$, and let $P = (0,0)$ be a point of multiplicity $r$ on $Y$, so that $f = f_r + (\text{higher terms})$.
-Call $P$ an ordinary $r$-fold point if $f_r$ is a product of $r$ distinct linear factors.
+We say that $P$ is an \dfn{ordinary $r$-fold point} if $f_r$ is a product of $r$ distinct linear factors.
 Show that any two ordinary double points are analytically isomorphic, and likewise for ordinary triple points.
 Show however that there is a one-parameter family of mutually nonisomorphic ordinary $4$-fold points.
 
 (d) Assume $\operatorname{char} k \neq 2$.
 Show that any double point of a plane curve is analytically isomorphic to the singularity at $(0,0)$ of the curve $y^2 = x^r$, for a uniquely determined $r \geq 2$.
-If $r = 2$ it is a node; if $r = 3$ it is a cusp; if $r = 4$ it is a tacnode.
+If $r = 2$ it is a node ([[P-AGH56BLOWUPSING]]).
+If $r = 3$ we call it a \dfn{cusp}; if $r = 4$ a \dfn{tacnode}.
+See (V, 3.9.5) for further discussion.
 :::
 
 ::: {.solution}

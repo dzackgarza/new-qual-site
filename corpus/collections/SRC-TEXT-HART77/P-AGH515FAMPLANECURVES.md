@@ -33,8 +33,10 @@ $$
    The correspondence is one-to-one except in some cases where $f$ has a multiple factor.
 
 (b) Show that under this correspondence the irreducible nonsingular curves of degree $d$ correspond one-to-one to the points of a nonempty Zariski-open subset of $\PP^N$.
+:::
 
-*Hint:* Use elimination theory (5.7A) applied to the homogeneous polynomials $\frac{\partial f}{\partial x_0}, \ldots, \frac{\partial f}{\partial x_n}$, and use (Ex. 5.5, 5.8, 5.9).
+::: {.hint}
+(1) Use elimination theory (Theorem I.5.7A) applied to the homogeneous polynomials $\frac{\partial f}{\partial x_0}, \ldots, \frac{\partial f}{\partial x_n}$; (2) use the previous exercises [[P-AGH55NONSINGDEGD]], [[P-AGH58JACOBIANRANK]] and [[P-AGH59NONVANISHIRRED]] above.
 :::
 
 ::: {.solution}
@@ -137,7 +139,7 @@ Its coefficient point therefore belongs to $U_d$, so $U_d$ is nonempty.
 
 If $[f]\in U_d$, then $Z(f)$ is nonsingular by construction.
 It is also irreducible.
-Indeed, if $f=gh$ with $g,h$ nonconstant homogeneous forms, then the two positive-degree plane curves $Z(g)$ and $Z(h)$ meet in $\PP^2$.
+Indeed, if $f=gh$ with $g,h$ nonconstant homogeneous forms, then the two positive-degree plane curves $Z(g)$ and $Z(h)$ meet in $\PP^2$ by [[P-AGH37HYPMEETS]].
 At any point of intersection,
 $$
 \partial(gh)=g\,\partial h+h\,\partial g=0

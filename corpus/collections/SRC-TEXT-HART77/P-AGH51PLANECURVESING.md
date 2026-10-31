@@ -2,24 +2,24 @@
 schema: qual/card@1
 id: P-AGH51PLANECURVESING
 kind: problem
-title: Singular points of four plane quartics
+title: Singular points of four plane curves
 classification:
   areas:
-  - algebraic-geometry
+    - algebraic-geometry
   topics:
-  - Singularities
-  - Plane Curves
-  - Affine Varieties
+    - Singularities
+    - Plane Curves
+    - Affine Varieties
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: chatgpt
-  date: 2026-09-17
-  note: 'Compared all four equations and the figure request with the retained Hartshorne I.5.1 transcription. Direct Jacobian calculation shows that the stated characteristic hypothesis has an exceptional phenomenon in part (c): characteristics 7 and 13 produce two additional singular points. The solution records those points and identifies the four origin singularities from their tangent cones.'
-- event: solution-written
-  by: chatgpt
-  date: 2026-09-17
+  - event: source-checked
+    by: chatgpt
+    date: 2026-09-17
+    note: 'Compared all four equations and the figure request with the retained Hartshorne I.5.1 transcription. Direct Jacobian calculation shows that the stated characteristic hypothesis has an exceptional phenomenon in part (c): characteristics 7 and 13 produce two additional singular points. The solution records those points and identifies the four origin singularities from their tangent cones.'
+  - event: solution-written
+    by: chatgpt
+    date: 2026-09-17
 ---
 
 ::: {.problem}

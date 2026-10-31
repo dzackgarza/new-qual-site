@@ -29,8 +29,10 @@ $$
 $$
 is nonzero.
 Show that $f$ is irreducible, and hence that $Y$ is a nonsingular variety.
+:::
 
-*Hint:* Use (Ex. 3.7).
+::: {.hint}
+Use Ex. I.3.7.
 :::
 
 ::: {.solution}

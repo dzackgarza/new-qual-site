@@ -32,8 +32,8 @@ Let $P$ be the point $(x,y,z,w) = (0,0,0,1)$, and let $\varphi$ denote the proje
 Show that $\varphi$ induces an isomorphism of $Y \sm\theset{P}$ with the plane cubic curve $y^2 z - x^3 + x z^2 = 0$ minus the point $(1,0,-1)$.
 Then show that $Y$ is an irreducible nonsingular curve.
 
-This $Y$ is called the *elliptic quartic curve* in $\PP^3$.
-Since it is defined by two equations it is another example of a complete intersection.
+It is called the \dfn{elliptic quartic curve} in $\PP^3$.
+Since it is defined by two equations it is another example of a complete intersection (Ex. I.2.17).
 :::
 
 ::: {.solution}
@@ -250,6 +250,9 @@ $$
 \end{pmatrix},
 $$
 which has rank two.
+Let $g_1,\ldots,g_t$ be homogeneous generators of $I(Y)$ and write $F_m=\sum_k a_{mk}g_k$.
+Since every $g_k$ vanishes at $P$, the gradient of $F_m$ at $P$ is $\sum_k a_{mk}(P)\,\nabla g_k(P)$.
+So the Jacobian matrix of the $g_k$ at $P$ has rank at least two, and by the proof of [@Har77, Theorem I.5.3] its rank is at most $3-1=2$.
 By step [](#s5){.pf-ref}, $Y$ is a projective variety of dimension one.
 The projective Jacobian criterion [[P-AGH58JACOBIANRANK]] requires rank
 $$

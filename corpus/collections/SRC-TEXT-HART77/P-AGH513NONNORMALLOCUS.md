@@ -23,20 +23,15 @@ audit:
 ---
 
 ::: {.problem}
-It is a fact that any regular local ring is an integrally closed domain.
-Thus every variety has a nonempty open subset of normal points.
-
-In this exercise, show directly, without using the regularity fact, that the set of nonnormal points of a variety is a proper closed subset.
-You will need the finiteness of integral closure.
+It is a fact that any regular local ring is an integrally closed domain (Matsumura [2, Th. 36, p. 121]).
+Thus we see from Theorem I.5.3 that any variety has a nonempty open subset of normal points ([[P-AGH317NORMAL]]).
+In this exercise, show directly (without using Theorem I.5.3) that the set of nonnormal points of a variety is a proper closed subset (you will need the finiteness of integral closure: see Theorem I.3.9A).
 :::
 
 ::: {.solution}
-Let $X$ be a variety with function field $K=k(X)$.
-Normality is local, so we first work on an affine open
-$$
-U=\Spec A\subseteq X,
-$$
-where $A$ is a finitely generated $k$-domain with fraction field $K$.
+Let $X$ be a variety with function field $K=K(X)$.
+Normality is a property of local rings, so we first work on an affine open $U \subseteq X$ with affine coordinate ring $A$.
+Then $A$ is a finitely generated $k$-domain with fraction field $K$, and the points of $U$ correspond to the maximal ideals of $A$, with $\mco_P \cong A_{\mfm_P}$ [@Har77, Theorem I.3.2].
 Let $\overline A$ denote the integral closure of $A$ in $K$.
 
 ::: pf
@@ -51,7 +46,7 @@ is finite.
 
 ::: pf-proof
 
-The finiteness theorem for normalization says that the integral closure of a finitely generated domain over a field in its finite fraction-field extension is finite as a module over the original ring [@Har77, Theorem I.3.9A]. Here the extension of fraction fields is the identity $K/K$, so $\overline A$ is a finite $A$-module.
+By the finiteness of integral closure [@Har77, Theorem I.3.9A], applied with the finite extension $K/K$, the ring $\overline A$ is a finite $A$-module.
 Its quotient $M$ is therefore finite as well.
 
 :::
@@ -60,7 +55,7 @@ Its quotient $M$ is therefore finite as well.
 
 ::: {.pf-step #s2}
 
-For a prime $\mathfrak p\in\Spec A$, the local ring $A_{\mathfrak p}$ is normal if and only if
+For a prime $\mathfrak p$ of $A$, the local ring $A_{\mathfrak p}$ is integrally closed if and only if
 $$
 M_{\mathfrak p}=0.
 $$
@@ -75,20 +70,14 @@ $$
 \subseteq K.
 $$
 Indeed, localization of an integral extension is integral.
-Conversely, if $u\in K$ is integral over $A_{\mathfrak p}$, choose one denominator $s\notin\mathfrak p$ containing all denominators in a monic equation for $u$.
-For a sufficiently large $N$, multiplying that equation after setting $v=s^Nu$ gives a monic equation for $v$ with coefficients in $A$.
+Conversely, if $u\in K$ is integral over $A_{\mathfrak p}$, choose one denominator $s\notin\mathfrak p$ for all coefficients of a monic equation for $u$ of degree $n$.
+Multiplying that equation by $s^n$ shows that $v=su$ satisfies a monic equation with coefficients in $A$.
 Thus $v\in\overline A$ and
 $$
-u=v/s^N\in(\overline A)_{\mathfrak p}.
+u=v/s\in(\overline A)_{\mathfrak p}.
 $$
-Thus $(\overline A)_{\mathfrak p}$ is exactly the integral closure of $A_{\mathfrak p}$ in its fraction field.
 
-Consequently
-$$
-A_{\mathfrak p}\text{ is integrally closed}
-\quad\Longleftrightarrow\quad
-A_{\mathfrak p}=(\overline A)_{\mathfrak p}.
-$$
+Consequently $A_{\mathfrak p}$ is integrally closed exactly when $A_{\mathfrak p}=(\overline A)_{\mathfrak p}$.
 The localized exact sequence
 $$
 0\longrightarrow A_{\mathfrak p}
@@ -97,7 +86,6 @@ $$
 \longrightarrow0
 $$
 shows that this equality is equivalent to $M_{\mathfrak p}=0$.
-Since $A_{\mathfrak p}$ is already a domain, integrally closed is exactly normality here.
 
 :::
 
@@ -105,26 +93,18 @@ Since $A_{\mathfrak p}$ is already a domain, integrally closed is exactly normal
 
 ::: {.pf-step #s3}
 
-The nonnormal locus in $U$ is the closed subset
+The set of nonnormal points of $U$ is the closed subset
 $$
-\boxed{\operatorname{NNor}(U)
-=
-\operatorname{Supp}_A(M)
-=
-V(\Ann_A M).}
+\boxed{Z(\Ann_A M) \subseteq U.}
 $$
 
 ::: pf-proof
 
-By step [](#s2){.pf-ref}, a prime $\mathfrak p$ is nonnormal exactly when the localization $M_{\mathfrak p}$ is nonzero.
-This is the definition of the support of the finite module $M$.
-For a finite module over a ring,
-$$
-\operatorname{Supp}_A(M)=V(\Ann_A M).
-$$
-Indeed, if generators $m_1,\ldots,m_s$ all vanish after localization at $\mathfrak p$, choose denominators outside $\mathfrak p$ killing them and multiply those denominators to obtain an element of $\Ann_A M$ outside $\mathfrak p$.
+By step [](#s2){.pf-ref}, a point $P \in U$ is nonnormal exactly when $M_{\mfm_P}\neq 0$.
+For a finite module, $M_{\mfm}=0$ exactly when $\Ann_A M \not\subseteq \mfm$.
+Indeed, if generators $m_1,\ldots,m_s$ of $M$ all vanish after localization at $\mfm$, choose $a_i\notin\mfm$ with $a_im_i=0$; then $a_1\cdots a_s\in\Ann_A M\sm\mfm$.
 The converse is immediate.
-Thus the nonnormal locus on $U$ is closed.
+So $P$ is nonnormal exactly when $\Ann_A M\subseteq\mfm_P$, that is, when $P\in Z(\Ann_A M)$.
 
 :::
 
@@ -136,19 +116,9 @@ This closed subset is proper.
 
 ::: pf-proof
 
-Let $\eta$ be the generic point of $U$, corresponding to the zero prime.
-Its local ring is the fraction field
-$$
-A_{(0)}=K,
-$$
-which is integrally closed in itself.
-By step [](#s2){.pf-ref},
-$$
-M_{(0)}=0.
-$$
-Thus $\eta\notin\operatorname{Supp} M$.
-Since the support is closed and omits the generic point of the irreducible space $U$, it is a proper closed subset.
-Equivalently, $\Ann_A M$ contains a nonzero element, and the principal open defined by that element consists entirely of normal points.
+The localization of $A$ at the zero prime is $K$, which is integrally closed, so $M_{(0)}=0$ by step [](#s2){.pf-ref}.
+The argument of step [](#s3){.pf-ref} with $\mfm$ replaced by $(0)$ gives a nonzero $a\in\Ann_A M$.
+Then $Z(\Ann_A M)\subseteq Z(a)$, which is a proper closed subset of $U$ because $a$ is a nonzero element of the coordinate ring.
 
 :::
 
@@ -160,21 +130,11 @@ The nonnormal locus of $X$ is a proper closed subset of $X$.
 
 ::: pf-proof
 
-Choose a finite affine open cover
-$$
-X=U_1\cup\cdots\cup U_N.
-$$
-Normality of a local ring is unchanged when computed in an open neighborhood, so the global nonnormal locus $N$ satisfies
-$$
-N\cap U_i=\operatorname{NNor}(U_i).
-$$
-Step [](#s3){.pf-ref} makes each intersection closed in $U_i$.
-Closedness is local on an open cover, hence $N$ is closed in $X$.
-
-The generic point of the irreducible variety $X$ has local ring $K$, a field, and is therefore normal.
-Thus it does not lie in $N$.
-Hence $N$ is proper.
-Its complement is the nonempty open normal locus.
+Cover $X$ by affine opens $U_1,\ldots,U_N$ [@Har77, Proposition I.4.3].
+Normality of a point is a property of its local ring, which does not change when it is computed in an open neighborhood.
+So the nonnormal locus $N$ of $X$ satisfies $N\intersect U_i=Z(\Ann_{A_i} M_i)$ in the notation of step [](#s3){.pf-ref} for $U_i$.
+Each intersection is closed in $U_i$, so $N$ is closed in $X$.
+By step [](#s4){.pf-ref}, $N\intersect U_1$ is a proper subset of $U_1$, so $N\neq X$.
 
 :::
 
@@ -182,10 +142,9 @@ Its complement is the nonempty open normal locus.
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give the finite-module description and proper closedness on every affine chart, and step [](#s5){.pf-ref} glues those descriptions on the variety.
+Steps [](#s1){.pf-ref} to [](#s4){.pf-ref} prove that the nonnormal locus of an affine variety is a proper closed subset, and step [](#s5){.pf-ref} extends this to any variety.
 
 :::
 
 :::
-
 :::

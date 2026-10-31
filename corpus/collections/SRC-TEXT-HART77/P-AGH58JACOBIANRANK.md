@@ -31,8 +31,10 @@ $$
 \left[ \frac{\partial f_i}{\partial x_j}(a_0, \ldots, a_n) \right]
 $$
 has rank $n - r$.
+:::
 
-*Hint:* Show that this rank does not depend on the homogeneous coordinates chosen for $P$; pass to an open affine $U \subseteq \PP^n$ containing $P$ and use the affine Jacobian matrix; and use Euler's lemma, which says that a homogeneous polynomial $f$ of degree $d$ satisfies $\sum_i x_i \frac{\partial f}{\partial x_i} = d \cdot f$.
+::: {.hint}
+(a) Show that this rank is independent of the homogeneous coordinates chosen for $P$; (b) pass to an open affine $U_i \subseteq \PP^n$ containing $P$ and use the affine Jacobian matrix; (c) you will need Euler's lemma, which says that if $f$ is a homogeneous polynomial of degree $d$, then $\sum_i x_i \frac{\partial f}{\partial x_i} = d \cdot f$.
 :::
 
 ::: {.solution}

@@ -94,7 +94,7 @@ On the blowup chart corresponding to the $x$-direction, the strict transform is
 $$
 \widetilde X_x
 \cong
-\Spec k[x,u,v]/(f(1,u,v))
+Z(f(1,u,v)) \subseteq \AA^3_{x,u,v}
 \cong
 \AA_x^1\times\bigl(Y\cap D_+(x)\bigr).
 $$
@@ -116,7 +116,7 @@ Then
 $$
 y=xu,\qquad z=xv,
 $$
-so this blowup chart is $\Spec k[x,u,v]$.
+so this blowup chart is $\AA^3$ with coordinates $x,u,v$.
 
 By homogeneity,
 $$
@@ -171,7 +171,7 @@ Intersecting with the strict-transform equation from step [](#x-chart-strict-tra
 $$
 \varphi^{-1}(P)\cap\widetilde X_x
 =
-\Spec k[u,v]/(f(1,u,v)),
+Z(f(1,u,v)) \subseteq \AA^2_{u,v},
 $$
 which is exactly the standard affine chart $Y\cap D_+(x)$.
 The analogous calculations on the other two charts give $Y\cap D_+(y)$ and $Y\cap D_+(z)$.

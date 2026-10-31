@@ -23,22 +23,21 @@ audit:
 ---
 
 ::: {.problem}
-(a) Let $Y$ be the cusp or the node among the quartics $x^2 = x^4 + y^4$, $xy = x^6 + y^6$, $x^3 = y^2 + x^4 + y^4$, $x^2y + xy^2 = x^4 + y^4$.
+(a) Let $Y$ be the cusp or node of [[P-AGH51PLANECURVESING]].
 Show that the curve $\tilde{Y}$ obtained by blowing up $Y$ at $O = (0,0)$ is nonsingular (cf. (4.9.1) and (Ex. 4.10)).
 
-(b) Define a *node*, also called an ordinary double point, to be a double point, that is, a point of multiplicity $2$, of a plane curve with distinct tangent directions.
+(b) We define a \dfn{node} (also called \dfn{ordinary double point}) to be a double point (i.e., a point of multiplicity $2$) of a plane curve with distinct tangent directions ([[P-AGH53MULTIPLICITY]]).
 If $P$ is a node on a plane curve $Y$, show that $\varphi^{-1}(P)$ consists of two distinct nonsingular points on the blown-up curve $\tilde{Y}$.
-One says that blowing up $P$ resolves the singularity at $P$.
+We say that "blowing up $P$ resolves the singularity at $P$".
 
-(c) Let $P \in Y$ be the tacnode among the quartics above.
+(c) Let $P \in Y$ be the tacnode of [[P-AGH51PLANECURVESING]].
 If $\varphi: \tilde{Y} \to Y$ is the blowing-up at $P$, show that $\varphi^{-1}(P)$ is a node.
-By part (b), the tacnode is resolved by two successive blowings-up.
+Using (b) we see that the tacnode can be resolved by two successive blowings-up.
 
-(d) Let $Y$ be the plane curve $y^3 = x^5$, which has a higher order cusp at $O$.
-Show that $O$ is a triple point, that blowing up $O$ gives rise to a double point, and identify which kind.
-Show that one further blowing up resolves the singularity.
+(d) Let $Y$ be the plane curve $y^3 = x^5$, which has a "higher order cusp" at $O$.
+Show that $O$ is a triple point; that blowing up $O$ gives rise to a double point (what kind?) and that one further blowing up resolves the singularity.
 
-Note: any singular point of a plane curve can be resolved by a finite sequence of successive blowings-up (V, 3.8).
+Note: We will see later (V, 3.8) that any singular point of a plane curve can be resolved by a finite sequence of successive blowings-up.
 :::
 
 ::: {.solution}
@@ -105,6 +104,7 @@ $$
 h(x,t)=x-t^2-x^2(1+t^4)=0.
 $$
 Its intersection with the exceptional divisor $x=0$ is the single point $t=0$.
+On the other chart, $x=ys$, the strict transform is $ys^3=1+y^2(1+s^4)$, which does not meet $y=0$.
 At this point
 $$
 h_x=1,
@@ -172,6 +172,7 @@ $$
 h(y,s)=s^2-y^2(s^4+1)=0.
 $$
 Its intersection with the exceptional divisor $y=0$ is the single point $s=0$.
+On the other chart, $y=xt$, the strict transform is $1=x^2(1+t^4)$, which does not meet $x=0$.
 The lowest-degree homogeneous part of $h$ at that point is
 $$
 s^2-y^2=(s-y)(s+y).
@@ -207,6 +208,7 @@ $$
 t^3=x^2.
 $$
 It meets the exceptional divisor $x=0$ only at $(x,t)=(0,0)$.
+On the other chart, $x=ys$, the strict transform is $1=y^2s^5$, which does not meet $y=0$.
 The lowest-degree term there is $-x^2$, so the new point has multiplicity two and a double tangent.
 Its equation is the ordinary cusp form
 $$
@@ -234,6 +236,7 @@ After removing the exceptional factor, the strict transform is
 $$
 t=s^2.
 $$
+On the other chart, $t=xw$, the strict transform is $xw^3=1$, which does not meet $x=0$.
 This is nonsingular everywhere; at its unique exceptional point $(t,s)=(0,0)$ the derivative of $t-s^2$ with respect to $t$ is $1$.
 Away from that point the blowup is an isomorphism and the preceding strict transform had no other singular point.
 Hence the second blowup resolves the singularity, completing part (d).

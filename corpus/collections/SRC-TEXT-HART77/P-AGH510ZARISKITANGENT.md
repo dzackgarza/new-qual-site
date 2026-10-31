@@ -24,7 +24,7 @@ audit:
 
 ::: {.problem}
 For a point $P$ on a variety $X$, let $\mfm$ be the maximal ideal of the local ring $\mco_P$.
-Define the *Zariski tangent space* $T_P(X)$ of $X$ at $P$ to be the dual $k$-vector space of $\mfm/\mfm^2$.
+Define the \dfn{Zariski tangent space} $T_P(X)$ of $X$ at $P$ to be the dual $k$-vector space of $\mfm/\mfm^2$.
 
 (a) For any point $P \in X$, show that $\dim T_P(X) \geq \dim X$, with equality if and only if $P$ is nonsingular.
 
@@ -36,7 +36,7 @@ Define the *Zariski tangent space* $T_P(X)$ of $X$ at $P$ to be the dual $k$-vec
 ::: {.solution}
 Let
 $$
-A=\OO_{X,P},\qquad \mathfrak m=\mathfrak m_P.
+A=\mco_{X,P},\qquad \mathfrak m=\mathfrak m_P.
 $$
 Since $X$ is a variety over the algebraically closed field $k$, the residue field at the closed point $P$ is $k$.
 
@@ -90,7 +90,7 @@ By definition, a noetherian local ring is regular precisely when
 $$
 \dim A=\dim_k\mathfrak m/\mathfrak m^2.
 $$
-For varieties, the local ring $\OO_{X,P}$ is regular exactly when $P$ is nonsingular [@Har77, Theorem I.5.1].
+For varieties, the local ring $\mco_{X,P}$ is regular exactly when $P$ is nonsingular [@Har77, Theorem I.5.1].
 Thus equality in the tangent-space inequality is equivalent to nonsingularity, proving part (a).
 
 :::
@@ -108,12 +108,12 @@ $$
 
 Put $Q=\varphi(P)$ and let
 $$
-\mathfrak n\subseteq\OO_{Y,Q}
+\mathfrak n\subseteq\mco_{Y,Q}
 $$
 be the maximal ideal.
 The morphism induces the local homomorphism
 $$
-\varphi_P^*:\OO_{Y,Q}\longrightarrow\OO_{X,P}.
+\varphi_P^*:\mco_{Y,Q}\longrightarrow\mco_{X,P}.
 $$
 Because it is a local homomorphism,
 $$
