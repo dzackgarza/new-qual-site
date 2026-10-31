@@ -62,3 +62,14 @@ and $H_k(\Sigma_g)=0$ for $k\ge3$. For $g=0$, $\Sigma_0=S^2$ has $H_0=H_2=\ZZ$ a
 :::
 
 :::
+
+::: {.remark title="Variation"}
+If $\Sigma_h\to\Sigma_g$ is a $d$-sheeted
+cover, every cell of the displayed CW
+structure has $d$ lifts. Therefore
+$\chi(\Sigma_h)=d\chi(\Sigma_g)$, or
+$2-2h=d(2-2g)$. Hence
+$$
+h=d(g-1)+1.
+$$
+:::
