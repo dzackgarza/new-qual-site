@@ -35,7 +35,7 @@ Choose Moore spaces functorially enough for the given short exact sequence
 $$
 0\to A\xrightarrow{i}B\xrightarrow{q}C\to0.
 $$
-For $n\ge1$, realize $i$ by a cellular map
+For $n\ge2$, realize $i$ by a cellular map
 $$
 M(A,n)\longrightarrow M(B,n)
 $$
@@ -49,7 +49,7 @@ $$
 \qquad
 \widetilde H_n(Q)\cong B/A\cong C.
 $$
-Thus $Q$ is a Moore space $M(C,n)$ (up to the standard Moore-space homotopy uniqueness in this range), so
+The spaces in the pair are $(n-1)$-connected, so their quotient $Q$ is $(n-1)$-connected as well. Thus $Q$ is a Moore space $M(C,n)$, so
 $$
 M(C,n)\simeq M(B,n)/M(A,n).
 $$
