@@ -29,11 +29,11 @@ Show that a map $f: X \to Y$ between connected CW complexes factors as a composi
 :::
 
 ::: {.solution}
-Use the relative cell-attachment construction from the proof preceding Proposition 4.13. Starting with
+Use the cell-attachment construction from the proof preceding Proposition 4.13. Starting with
 $$
 f:X\longrightarrow Y,
 $$
-attach cells to the source only in dimensions at least $n+1$, extending the map over every attached cell.
+attach cells to the source only in dimensions at least $n+1$, extending the map over every attached cell. The cells of dimension $n+1$ will have constant attaching maps, so they do not change $\pi_n$.
 
 Inductively, suppose a map
 $$
@@ -43,21 +43,13 @@ has already been made an isomorphism on $\pi_i$ for
 $$
 n+1\le i<k.
 $$
-Attach $k$-cells corresponding to generators of the relative group
-$$
-\pi_k(Y,Z_k)
-$$
-so that the resulting map is surjective on $\pi_k$. Then attach $(k+1)$-cells along representatives of the kernel of
+For each class of $\pi_k(Y)$ not yet in the image, wedge a $k$-sphere onto $Z_k$ at the basepoint and extend $f_k$ over it by a representative of that class. This makes the map surjective on $\pi_k$ without changing lower homotopy groups. Then attach $(k+1)$-cells along representatives of the kernel of
 $$
 \pi_k(Z_k)\to\pi_k(Y)
 $$
 and extend them over $Y$ by chosen nullhomotopies. The resulting map is an isomorphism on $\pi_k$, while the already established lower homotopy groups are unchanged.
 
-Begin this process at $k=n+1$ and continue for all $k$. Let $Z_n$ be the union. Since every cell added to $X$ has dimension at least $n+1$, cellular approximation for the pair $(Z_n,X)$ gives
-$$
-\pi_i(Z_n,X)=0\qquad(i\le n),
-$$
-so the long exact sequence of the pair yields
+Begin this process at $k=n+1$ and continue for all $k$. Let $Z_n$ be the union. At the first stage the $(n+1)$-cells are attached by constant maps, so this stage is a wedge with $(n+1)$-spheres and induces isomorphisms on $\pi_i$ for $i\le n$. All later cells have dimension at least $n+2$ and preserve these groups by cellular approximation. Hence
 $$
 \pi_i(X)\xrightarrow{\cong}\pi_i(Z_n)
 \qquad(i\le n).
