@@ -32,6 +32,10 @@ for every integer $N \geq 2$, whenever $\operatorname{Re}(s) > 0$, where $\delta
 (d) Show that if $t \neq 0$ and $t$ is fixed, then the partial sums of the series $\sum_{n=1}^\infty n^{-1-it}$ are bounded, but the series does not converge.
 :::
 
+::: {.remark}
+The source prints the middle term as $-\frac{N^{s-1}}{s-1}$; summing $\int_n^{n+1} x^{-s}\,dx$ over $n \ge N$ gives $+\frac{N^{1-s}}{s-1}$. Part (c) in the source says only that the second conclusion of Proposition 2.7, the bound for $\zeta'$, can be refined in the same way; the statement gives that refinement.
+:::
+
 ::: {.solution}
 
 ::: pf
@@ -96,7 +100,7 @@ Part 1(b): Bound $\abs{\zeta(1+it)} = O(\log \abs{t})$ as $\abs{t} \to \infty$.
 
 ::: pf-step
 
-Set $s = 1+it$ with $\abs{t} \ge 2$, and choose $N = \lfloor \abs{t} \rfloor \ge 2$.
+Set $s = 1+it$ with $\abs{t} \ge 4$, and choose $N = \lfloor \abs{t} \rfloor \ge 4$, so $N - 1 > \abs{t} - 2$.
 
 :::
 
@@ -110,14 +114,14 @@ In the expansion from step [](#s1){.pf-ref}:
 ::: pf-step
 
 For the pole term:
-    $$\abs{ \frac{N^{1-s}}{s-1} } = \abs{ \frac{N^{-it}}{it} } = \frac{1}{\abs{t}} \le \frac{1}{2} = O(1).$$
+    $$\abs{ \frac{N^{1-s}}{s-1} } = \abs{ \frac{N^{-it}}{it} } = \frac{1}{\abs{t}} \le \frac{1}{4} = O(1).$$
 
 :::
 
 ::: pf-step
 
 For the tail: using $\abs{\delta_n(1+it)} \le \abs{1+it} n^{-2} \le (1+\abs{t}) n^{-2}$,
-    $$\abs{ \sum_{n=N}^\infty \delta_n(1+it) } \le (1+\abs{t}) \sum_{n=N}^\infty \frac{1}{n^2} \le (1+\abs{t}) \frac{1}{N-1} \le \frac{1+\abs{t}}{\abs{t}-1} \le 3 = O(1).$$
+    $$\abs{ \sum_{n=N}^\infty \delta_n(1+it) } \le (1+\abs{t}) \sum_{n=N}^\infty \frac{1}{n^2} \le (1+\abs{t}) \frac{1}{N-1} \le \frac{1+\abs{t}}{\abs{t}-2} \le \frac{5}{2} = O(1).$$
 
 :::
 
