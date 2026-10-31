@@ -32,9 +32,7 @@ $T_1$ separation axiom on $Y$:
 ::: pf-proof
 
 ::: pf-step
-For any $y \in Y$, the singleton $\{y\} \subset Y$ is closed:
-- Since $X$ is $T_1$ (normal implies $T_1$), and $p$ is continuous, the fiber $p^{-1}(\{y\})$ is closed in $X$.
-- Because $p$ is a closed map and $p$ is surjective, the image $p(p^{-1}(\{y\})) = \{y\}$ is closed in $Y$.
+For any $y \in Y$, surjectivity gives $x\in X$ with $p(x)=y$. Since $X$ is $T_1$, the singleton $\{x\}$ is closed in $X$. The map $p$ is closed, so $\{y\}=p(\{x\})$ is closed in $Y$.
 :::
 
 ::: pf-step
