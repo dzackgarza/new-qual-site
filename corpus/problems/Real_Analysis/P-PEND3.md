@@ -10,6 +10,7 @@ classification:
   - Measure Theory
   - Density
   - L¹
+  - Integrals
 relations: []
 review: draft
 audit:
@@ -48,7 +49,7 @@ Let $m^*$ be Lebesgue outer measure on $\RR^n$ and $m$ Lebesgue measure. For eve
 
 ::: pf
 
-::: {.pf-step #s1}
+::: pf-step
 
 (a, from below) If $E_1 \subseteq E_2 \subseteq \cdots$ and $E = \bigcup_j E_j$, then $m^*(E_j) \to m^*(E)$.
 
@@ -60,7 +61,7 @@ Monotonicity gives $m^*(E_j) \le m^*(E_{j+1}) \le m^*(E)$. Fix $\varepsilon > 0$
 
 :::
 
-::: {.pf-step #s2}
+::: pf-step
 
 (a, from above) If $E_1 \supseteq E_2 \supseteq \cdots$ are measurable, $m(E_1) < \infty$, and $E = \bigcap_j E_j$, then $m(E_j) \to m(E)$.
 
@@ -165,12 +166,6 @@ By step [](#s6){.pf-ref} it suffices to approximate $\chi_E$ with $m(E) < \infty
 Given $f \in L^1$ and $\varepsilon>0$, dominated convergence gives $R$ with $\norm{f - f\chi_{B(0,R)}}_1 < \varepsilon/2$. Let $\phi \ge 0$ be smooth with compact support and $\int \phi = 1$, and $\phi_\delta(x) = \delta^{-n}\phi(x/\delta)$. Then $(f\chi_{B(0,R)}) \ast \phi_\delta$ is smooth with compact support, and $\norm{(f\chi_{B(0,R)}) \ast \phi_\delta - f\chi_{B(0,R)}}_1 \to 0$ as $\delta \to 0$ by continuity of translation in $L^1$, so some $(f\chi_{B(0,R)}) \ast \phi_\delta$ lies within $\varepsilon$ of $f$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), the steps labelled (b) through (h) prove those parts, and step [](#nonneg){.pf-ref} supplies the converse directions of (c) and (d).
 
 :::
 
