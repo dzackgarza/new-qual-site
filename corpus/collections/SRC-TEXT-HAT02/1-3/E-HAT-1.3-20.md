@@ -22,127 +22,44 @@ Construct nonnormal covering spaces of the Klein bottle by a Klein bottle and by
 :::
 
 ::: {.solution}
-Let $K$ be the Klein bottle. A connected covering is normal exactly when its subgroup of $\pi_1(K)$ is normal, so it suffices to find non-normal finite-index subgroups whose coverings are a Klein bottle and a torus.
+Use the presentation
+$$
+\pi_1(K)=\langle a,b\mid aba^{-1}=b^{-1}\rangle
+$$
+for the Klein bottle. Every element has a unique form $a^m b^n$. The orientation character sends $a$ to $-1$ and $b$ to $1$.
 
 ::: pf
 
 ::: pf-step
-$\pi_1(K) = \langle a, b \mid a b a^{-1} = b^{-1} \rangle$, every element is uniquely $a^m b^n$, and $b a b^{-1} = a b^{-2}$.
+The subgroup $H_K=\langle a,b^3\rangle$ defines a nonnormal three-sheeted cover by a Klein bottle.
 
 ::: pf-proof
-
-::: pf-step
-The fundamental group of the Klein bottle has the presentation
-$$\pi_1(K) = \langle a, b \mid a b a^{-1} = b^{-1} \rangle.$$
-:::
-
-::: pf-step
-Every element $g \in \pi_1(K)$ can be written uniquely in normal form as $g = a^m b^n$ for $m, n \in \ZZ$.
-:::
-
-::: pf-step
-Group multiplication follows the semidirect product rule $(a^m b^n)(a^p b^q) = a^{m+p} b^{(-1)^p n + q}$.
-:::
-
-::: pf-step
-Conjugation of generators:
-the relation gives $a^{-1} b a = b^{-1}$, so
-$$b a b^{-1} = a (a^{-1} b a) b^{-1} = a b^{-1} b^{-1} = a b^{-2} \quad \text{and} \quad a b a^{-1} = b^{-1}.$$
-:::
-
+The normal form gives $H_K=\{a^m b^{3n}:m,n\in\ZZ\}$, so its index is $3$. It is not normal: the defining relation gives
+$$
+bab^{-1}=ab^{-2}\notin H_K.
+$$
+The corresponding cover is a closed connected surface with Euler characteristic $3\chi(K)=0$. It is nonorientable because its subgroup contains $a$, whose orientation character is $-1$. By the classification of closed surfaces, it is a Klein bottle.
 :::
 
 :::
 
 ::: pf-step
-$H_K = \langle a, b^3 \rangle$ gives a $3$-sheeted non-normal covering of $K$ by a Klein bottle.
+The subgroup $H_T=\langle a^2b,b^3\rangle$ defines a nonnormal six-sheeted cover by a torus.
 
 ::: pf-proof
-
-::: pf-step
-Define the subgroup $H_K = \langle a, b^3 \rangle \le \pi_1(K)$.
-:::
-
-::: pf-step
-The elements of $H_K$ are precisely $\{a^m b^{3n} : m, n \in \ZZ\}$.
-:::
-
-::: pf-step
-The generators satisfy $a (b^3) a^{-1} = (a b a^{-1})^3 = (b^{-1})^3 = (b^3)^{-1}$, so
-$$H_K \cong \langle a, b^3 \mid a (b^3) a^{-1} = (b^3)^{-1} \rangle \cong \pi_1(K).$$
-:::
-
-::: pf-step
-Since $H_K \cong \pi_1(K)$, the corresponding connected covering space $\widetilde{K}$ has $\pi_1(\widetilde{K}) \cong \pi_1(K)$, so $\widetilde{K}$ is a Klein bottle.
-:::
-
-::: pf-step
-The index is $[\pi_1(K) : H_K] = 3$, so $\widetilde{K} \to K$ is a 3-sheeted covering.
-:::
-
-::: pf-step
-Non-normality check: Conjugate the generator $a \in H_K$ by $b \in \pi_1(K)$:
-$$b a b^{-1} = a b^{-2}.$$
-:::
-
-::: pf-step
-The element $a b^{-2}$ has $b$-exponent $-2$. Since $-2 \not\equiv 0 \pmod 3$, $a b^{-2} \notin H_K$.
-:::
-
-::: pf-step
-Thus $b H_K b^{-1} \neq H_K$, so $H_K$ is not a normal subgroup of $\pi_1(K)$, and the 3-sheeted Klein bottle cover is non-normal.
+The element $a^2$ commutes with $b$, so
+$$
+H_T=\{a^{2m}b^{m+3n}:m,n\in\ZZ\}.
+$$
+Its index is $6$: the exponent of $a$ must be even, and for each even exponent the exponent of $b$ has one prescribed residue modulo $3$. Conjugation by $a$ gives
+$$
+a(a^2b)a^{-1}=a^2b^{-1}\notin H_T,
+$$
+since $-1$ is not congruent to $1$ modulo $3$. Thus the subgroup is not normal. Every element of $H_T$ has even $a$-exponent, so the corresponding closed connected cover is orientable. Its Euler characteristic is $6\chi(K)=0$; hence it is a torus.
 :::
 
 :::
 
 :::
 
-::: pf-step
-$H_T = \langle a^2 b, b^3 \rangle$ gives a $6$-sheeted non-normal covering of $K$ by a torus.
-
-::: pf-proof
-
-::: pf-step
-Define the subgroup $H_T = \langle a^2 b, b^3 \rangle \le \pi_1(K)$.
-:::
-
-::: pf-step
-The generators commute:
-$$(a^2 b) b^3 (a^2 b)^{-1} = a^2 b^4 b^{-1} a^{-2} = a^2 b^3 a^{-2} = (a^2 b a^{-2})^3 = (b^{(-1)^2})^3 = b^3.$$
-:::
-
-::: pf-step
-Thus $H_T \cong \ZZ^2$, so the covering space $\widetilde{T}$ is a closed, connected, orientable surface with $\pi_1(\widetilde{T}) \cong \ZZ^2$, which is the torus $T^2$.
-:::
-
-::: pf-step
-The elements of $H_T$ are precisely $\{(a^2 b)^m (b^3)^n = a^{2m} b^{m + 3n} : m, n \in \ZZ\}$.
-:::
-
-::: pf-step
-The index is $[\pi_1(K) : H_T] = 6$, so $\widetilde{T} \to K$ is a 6-sheeted covering.
-:::
-
-::: pf-step
-Non-normality check: Conjugate the generator $a^2 b \in H_T$ by $a \in \pi_1(K)$:
-$$a (a^2 b) a^{-1} = a^2 (a b a^{-1}) = a^2 b^{-1}.$$
-:::
-
-::: pf-step
-In the form $a^{2m} b^{m + 3n}$, the element $a^2 b^{-1}$ requires $m = 1$ and $1 + 3n = -1 \implies 3n = -2$, which has no integer solution $n \in \ZZ$.
-:::
-
-::: pf-step
-Thus $a (a^2 b) a^{-1} = a^2 b^{-1} \notin H_T$, so $a H_T a^{-1} \neq H_T$.
-:::
-
-::: pf-step
-Therefore $H_T$ is not a normal subgroup of $\pi_1(K)$, and the 6-sheeted torus cover is non-normal.
-:::
-
-:::
-
-:::
-
-:::
 :::
