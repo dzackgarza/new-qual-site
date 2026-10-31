@@ -358,12 +358,6 @@ The first assertion is step [](#s5){.pf-ref}.  The second is steps [](#s6){.pf-r
 
 :::
 
-::: pf-qed
-
-Step [](#s12){.pf-ref} is the required conclusion.
-
-:::
-
 :::
 
 :::
