@@ -9,7 +9,6 @@ classification:
   topics:
   - Structure Theorem
   - Modules
-  - Cyclic Groups
 relations: []
 review: draft
 audit:
@@ -28,11 +27,7 @@ audit:
 ::: {.problem}
 Let $R$ be a PID, and let $A,B$ be cyclic $R$-modules of nonzero orders $r,s$
 respectively, where $r$ is not relatively prime to $s$.
-Show that the invariant factors of $A \oplus B$ are $\mathrm{gcd}(r, s)$ and $\mathrm{lcm}(r, s)$.
-:::
-
-::: {.remark title="Variations"}
-Drop the hypothesis on $r$ and $s$: determine the invariant factors of $R/(r)\oplus R/(s)$ for arbitrary nonzero $r,s$. When $r$ and $s$ are relatively prime, the module is cyclic with the single invariant factor $rs$.
+Show that the invariant factors of $A \oplus B$ are $\gcd(r, s)$ and $\lcm(r, s)$.
 :::
 
 ::: {.solution}
@@ -51,7 +46,7 @@ Let
 $$
 d=\gcd(r,s),
 \qquad
-m=\operatorname{lcm}(r,s),
+m=\lcm(r,s),
 $$
 with representatives chosen up to multiplication by units.
 
@@ -117,7 +112,7 @@ The second invariant factor is associated to $m$.
 
 In a PID,
 $$
-\gcd(r,s)\operatorname{lcm}(r,s)\sim rs.
+\gcd(r,s)\lcm(r,s)\sim rs.
 $$
 Thus $dm\sim rs$. Combining this with step [](#s3){.pf-ref} and $d_1\sim d$ gives
 $d_2\sim m$.
@@ -132,7 +127,7 @@ Therefore the invariant factors of $A\oplus B$ are
 $$
 \gcd(r,s),
 \qquad
-\operatorname{lcm}(r,s).
+\lcm(r,s).
 $$
 
 ::: pf-proof
@@ -150,4 +145,8 @@ claimed pair.
 
 :::
 
+:::
+
+::: {.remark title="Variations"}
+When $r$ and $s$ are relatively prime, the Chinese remainder theorem gives $R/(r)\oplus R/(s)\cong R/(rs)$, a cyclic module with the single invariant factor $rs$.
 :::

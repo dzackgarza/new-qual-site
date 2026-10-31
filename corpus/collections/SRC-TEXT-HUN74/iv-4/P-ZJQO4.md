@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZJQO4
 kind: problem
-title: $\operatorname{Hom}(\ZZ_2,-)$ sends the epimorphism $\ZZ\to\ZZ_2$ to the zero map
+title: $\Hom(\ZZ_2,-)$ sends the epimorphism $\ZZ\to\ZZ_2$ to the zero map
 classification:
   areas:
   - algebra
@@ -20,8 +20,8 @@ audit:
 
 ::: {.problem}
 Let $\pi\colon \ZZ \to \ZZ_2$ be the canonical epimorphism.
-Show that the induced map $\overline{\pi}: \mathrm{Hom}(\ZZ_2, \ZZ) \to \mathrm{Hom}(\ZZ_2, \ZZ_2)$ is the zero map.
-Conclude that $\overline{\pi}$ is not an epimorphism, so the functor $\mathrm{Hom}(\ZZ_2, -)$ is not right exact.
+Show that the induced map $\overline{\pi}: \Hom(\ZZ_2, \ZZ) \to \Hom(\ZZ_2, \ZZ_2)$ is the zero map.
+Conclude that $\overline{\pi}$ is not an epimorphism, so the functor $\Hom(\ZZ_2, -)$ is not right exact.
 :::
 
 ::: {.solution}
@@ -31,11 +31,11 @@ The induced map is post-composition, $\overline{\pi}(\varphi) = \pi \circ \varph
 
 ::: {.pf-step #s1}
 
-$\operatorname{Hom}_\ZZ(\ZZ_2, \ZZ) = 0$.
+$\Hom_\ZZ(\ZZ_2, \ZZ) = 0$.
 
 ::: pf-proof
 
-Let $\varphi \in \operatorname{Hom}_\ZZ(\ZZ_2, \ZZ)$. Since $2 \cdot 1 = 0$ in $\ZZ_2$,
+Let $\varphi \in \Hom_\ZZ(\ZZ_2, \ZZ)$. Since $2 \cdot 1 = 0$ in $\ZZ_2$,
 $$2 \varphi(1) = \varphi(2 \cdot 1) = \varphi(0) = 0 \quad \text{in } \ZZ.$$
 As $\ZZ$ is torsion-free, $\varphi(1) = 0$, and since $1$ generates $\ZZ_2$, $\varphi = 0$.
 
@@ -61,7 +61,7 @@ $\overline{\pi}$ is not an epimorphism.
 
 ::: pf-proof
 
-The identity $\operatorname{id}_{\ZZ_2}$ is a nonzero element of $\operatorname{Hom}_\ZZ(\ZZ_2, \ZZ_2)$, since $\operatorname{id}_{\ZZ_2}(1) = 1 \neq 0$. By step [](#s2){.pf-ref} the image of $\overline{\pi}$ is $\{0\}$, so $\overline\pi$ is not surjective.
+The identity $\id_{\ZZ_2}$ is a nonzero element of $\Hom_\ZZ(\ZZ_2, \ZZ_2)$, since $\id_{\ZZ_2}(1) = 1 \neq 0$. By step [](#s2){.pf-ref} the image of $\overline{\pi}$ is $\{0\}$, so $\overline\pi$ is not surjective.
 
 :::
 
@@ -72,5 +72,5 @@ The identity $\operatorname{id}_{\ZZ_2}$ is a nonzero element of $\operatorname{
 :::
 
 ::: {.remark}
-Thus the functor $\operatorname{Hom}_\ZZ(\ZZ_2,-)$ applied to the short exact sequence $0\to\ZZ\xrightarrow{2}\ZZ\xrightarrow{\pi}\ZZ_2\to0$ gives a sequence that is not exact at $\operatorname{Hom}(\ZZ_2,\ZZ_2)$: the functor $\operatorname{Hom}_\ZZ(M,-)$ is left exact but not right exact in general.
+Thus the functor $\Hom_\ZZ(\ZZ_2,-)$ applied to the short exact sequence $0\to\ZZ\xrightarrow{2}\ZZ\xrightarrow{\pi}\ZZ_2\to0$ gives a sequence that is not exact at $\Hom(\ZZ_2,\ZZ_2)$: the functor $\Hom_\ZZ(M,-)$ is left exact but not right exact in general.
 :::

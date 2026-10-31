@@ -39,11 +39,11 @@ Show that for any homomorphism $f: A \to B$ of left $R$-modules the following di
 	\arrow["{\theta_B}"', from=2-1, to=2-2]
 \end{tikzcd}
 
-where $A^{**} \coloneqq \mathrm{Hom}_R(\mathrm{Hom}_R(A, R), R)$, the map $\theta_A\colon A\to A^{**}$ is the canonical map $\theta_A(a)(g)=g(a)$ (and likewise $\theta_B$), and $f^*$ is the map induced on $A^{**}$ by the map $$\overline f: \mathrm{Hom}_R(B, R) \to \mathrm{Hom}_R(A, R),\qquad \overline f(g)=g\circ f.$$
+where $A^{**} \coloneqq \Hom_R(\Hom_R(A, R), R)$, the map $\theta_A\colon A\to A^{**}$ is the canonical map $\theta_A(a)(g)=g(a)$ (and likewise $\theta_B$), and $f^*$ is the map induced on $A^{**}$ by the map $$\overline f: \Hom_R(B, R) \to \Hom_R(A, R),\qquad \overline f(g)=g\circ f.$$
 :::
 
 ::: {.solution}
-For a left $R$-module $M$ write $M^*=\operatorname{Hom}_R(M,R)$, and let $\theta_M\colon M \to M^{**}$ be the canonical map, $\theta_M(m)(g) = g(m)$ for $m \in M$ and $g \in M^*$. Let $\overline f\colon B^* \to A^*$ be $\overline f(g) = g \circ f$, and let $f^{**}\colon A^{**} \to B^{**}$ be $f^{**}(\varphi) = \varphi \circ \overline f$; this is the map the problem calls $f^*$. The diagram asserts $f^{**} \circ \theta_A = \theta_B \circ f$.
+For a left $R$-module $M$ write $M^*=\Hom_R(M,R)$, and let $\theta_M\colon M \to M^{**}$ be the canonical map, $\theta_M(m)(g) = g(m)$ for $m \in M$ and $g \in M^*$. Let $\overline f\colon B^* \to A^*$ be $\overline f(g) = g \circ f$, and let $f^{**}\colon A^{**} \to B^{**}$ be $f^{**}(\varphi) = \varphi \circ \overline f$; this is the map the problem calls $f^*$. The diagram asserts $f^{**} \circ \theta_A = \theta_B \circ f$.
 
 ::: pf
 

@@ -8,7 +8,6 @@ classification:
   - algebra
   topics:
   - Modules
-  - Cyclic Groups
   - Torsion
 relations: []
 review: draft
@@ -30,11 +29,7 @@ Let $R$ be a PID and let $A$ be a cyclic $R$-module of nonzero order $r\in R$.
 
 (a) Show that if $s$ is relatively prime to $r$, then $sA = A$ and $A[s] = 0$.
 
-(b) If $s$ divides $r$, so $sk = r$, then $sA \cong R/(k)$ and $A[s] \cong R/(s)$.
-:::
-
-::: {.remark title="Variations"}
-Part (b) holds over any commutative domain $R$: if $A=Ra$ with $\Ann_R(a)=(r)$ and $r=sk$ with $s,k\neq 0$, then $sA\cong R/(k)$ and $A[s]\cong R/(s)$.
+(b) Show that if $s$ divides $r$, so $sk = r$, then $sA \cong R/(k)$ and $A[s] \cong R/(s)$.
 :::
 
 ::: {.solution}
@@ -78,8 +73,6 @@ x=(us+vr)x=u(sx)+v(rx)=0.
 $$
 Thus the only element annihilated by $s$ is $0$.
 
-Now suppose $s\mid r$, say $r=sk$.
-
 :::
 
 :::
@@ -93,7 +86,7 @@ $$
 
 ::: pf-proof
 
-Define
+Suppose $s\mid r$, say $r=sk$; since $r\ne0$, also $s,k\ne0$. Define
 $$
 \phi:R\longrightarrow sA,
 \qquad
@@ -162,4 +155,8 @@ $$
 
 :::
 
+:::
+
+::: {.remark title="Variations"}
+Part (b) holds over any commutative domain $R$: if $A=Ra$ with $\Ann_R(a)=(r)$ and $r=sk$ with $s,k\neq 0$, then $sA\cong R/(k)$ and $A[s]\cong R/(s)$.
 :::
