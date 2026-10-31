@@ -23,87 +23,15 @@ Show that if $M$ is a compact contractible $n$-manifold then $\partial M$ is a h
 :::
 
 ::: {.solution}
-
-::: pf
-
-::: pf-step
-
-$M$ contractible implies $H_i(M)=0$ for $i>0$, $H_0=\ZZ$.
-
-::: pf-proof
-
-contractible.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Lefschetz duality: $H_i(M,\partial M)\cong H^{n-i}(M)=0$ for $i<n$.
-
-::: pf-proof
-
-duality for compact $n$-manifold.
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Long exact sequence of pair $(M,\partial M)$: $\cdots\to H_i(\partial M)\to H_i(M)\to H_i(M,\partial M)\to\cdots$.
-
-::: pf-proof
-
-LES.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-For $i<n-1$, $H_i(M,\partial M)=0$ and $H_i(M)=0$, so $H_i(\partial M)=0$.
-
-::: pf-proof
-
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-For $i=n-1$, $0\to H_{n-1}(\partial M)\to0\to\ZZ\to H_{n-2}(\partial M)\to0$ gives $H_{n-1}(\partial M)\cong\ZZ$.
-
-::: pf-proof
-
-Step [](#s3){.pf-ref} with $H_n(M,\partial M)\cong\ZZ$, $H_n(M)=0$.
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-Hence $H_i(\partial M)\cong H_i(S^{n-1})$.
-
-::: pf-proof
-
-Steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s6){.pf-ref}.
-
-:::
-
-:::
-
+Assume $n\ge1$. Since $M$ is contractible, it is orientable and $H^j(M;\ZZ)$ is $\ZZ$ for $j=0$ and zero for $j>0$. Lefschetz duality gives
+$$
+H_i(M,\partial M;\ZZ)\cong H^{n-i}(M;\ZZ)
+=\begin{cases}\ZZ&i=n,\\0&i\ne n.\end{cases}
+$$
+The reduced homology of $M$ is zero. The reduced long exact sequence of $(M,\partial M)$ therefore gives
+$$
+\widetilde H_i(\partial M;\ZZ)\cong H_{i+1}(M,\partial M;\ZZ)
+=\begin{cases}\ZZ&i=n-1,\\0&i\ne n-1.\end{cases}
+$$
+These are the reduced homology groups of $S^{n-1}$. This also covers $n=1$: $\widetilde H_0(\partial M)=\ZZ$, so $H_0(\partial M)=\ZZ^2$.
 :::
