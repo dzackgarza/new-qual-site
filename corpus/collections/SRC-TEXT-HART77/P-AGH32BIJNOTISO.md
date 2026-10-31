@@ -36,7 +36,7 @@ Show that $\phi$ is a bijective bicontinuous morphism of $\AA^1$ onto the curve 
 
 (b) Let the base field $k$ have characteristic $p > 0$, and define $\rho: \AA^1 \to \AA^1$ by $t \mapsto t^p$.
 Show that $\rho$ is bijective and bicontinuous but not an isomorphism.
-This is called the **Frobenius morphism**.
+This is called the \dfn{Frobenius morphism}.
 :::
 
 ::: {.solution}

@@ -32,7 +32,7 @@ Show that $X = \AA^2 \sm \theset{(0,0)}$ is not affine.
 :::
 
 ::: {.hint}
-Show that $\mco(X) \cong k[x,y]$ and compare with the affine criterion.
+Show that $\mco(X) \cong k[x,y]$ and use Proposition I.3.5. See Ex. III.4.3 for another proof.
 :::
 
 ::: {.solution}

@@ -31,12 +31,12 @@ audit:
 ---
 
 ::: {.problem}
-A **group variety** consists of a variety $Y$ together with a morphism $\mu: Y \times Y \to Y$ such that the set of points of $Y$ with the operation given by $\mu$ is a group, and such that the inverse map $y \mapsto \inverseof{y}$ is also a morphism $Y \to Y$.
+A \dfn{group variety} consists of a variety $Y$ together with a morphism $\mu: Y \times Y \to Y$ such that the set of points of $Y$ with the operation given by $\mu$ is a group, and such that the inverse map $y \mapsto \inverseof{y}$ is also a morphism $Y \to Y$.
 
-(a) The **additive group** $\GG_a$ is the variety $\AA^1$ with the morphism $\mu: \AA^1 \times \AA^1 \to \AA^1$ defined by $\mu(a,b) = a+b$.
+(a) The \dfn{additive group} $\GG_a$ is the variety $\AA^1$ with the morphism $\mu: \AA^1 \times \AA^1 \to \AA^1$ defined by $\mu(a,b) = a+b$.
     Show that it is a group variety.
 
-(b) The **multiplicative group** $\GG_m$ is the variety $\AA^1 \sm \theset{0}$ with the morphism $\mu(a,b) = ab$.
+(b) The \dfn{multiplicative group} $\GG_m$ is the variety $\AA^1 \sm \theset{0}$ with the morphism $\mu(a,b) = ab$.
     Show that it is a group variety.
 
 (c) If $G$ is a group variety and $X$ is any variety, show that the set $\Hom(X, G)$ has a natural group structure.

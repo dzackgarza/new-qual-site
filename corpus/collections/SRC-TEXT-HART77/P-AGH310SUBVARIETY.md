@@ -27,10 +27,10 @@ audit:
 ---
 
 ::: {.problem}
-A subset of a topological space is **locally closed** if it is an open subset of its closure, equivalently if it is the intersection of an open set with a closed set.
+A subset of a topological space is \dfn{locally closed} if it is an open subset of its closure, equivalently if it is the intersection of an open set with a closed set.
 
 If $X$ is a quasi-affine or quasi-projective variety and $Y \subseteq X$ is an irreducible locally closed subset, then $Y$ is itself quasi-affine, respectively quasi-projective, by virtue of being a locally closed subset of the same affine or projective space.
-This is the **induced structure** on $Y$, and $Y$ is called a **subvariety** of $X$.
+This is the \dfn{induced structure} on $Y$, and $Y$ is called a \dfn{subvariety} of $X$.
 
 Now let $\phi: X \to Y$ be a morphism, and let $X' \subseteq X$ and $Y' \subseteq Y$ be irreducible locally closed subsets with $\phi(X') \subseteq Y'$.
 Show that $\restrictionof{\phi}{X'} : X' \to Y'$ is a morphism.

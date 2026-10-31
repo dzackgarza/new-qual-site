@@ -29,6 +29,7 @@ audit:
 ::: {.problem}
 Let $H_i$ and $H_j$ be the hyperplanes in $\PP^n$ defined by $x_i = 0$ and $x_j = 0$, with $i \neq j$.
 Show that any regular function on $\PP^n \sm (H_i \intersect H_j)$ is constant.
+This gives an alternate proof of Theorem I.3.4(a) in the case $Y = \PP^n$.
 :::
 
 ::: {.solution}

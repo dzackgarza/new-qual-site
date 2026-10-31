@@ -31,8 +31,7 @@ audit:
 Show that for each $P \in X$, $\phi$ induces a homomorphism of local rings $\phi_P^* : \mco_{\phi(P), Y} \to \mco_{P, X}$.
 
 (b) Show that a morphism $\phi$ is an isomorphism if and only if $\phi$ is a homeomorphism and the induced map $\phi_P^*$ on local rings is an isomorphism for all $P \in X$.
-
-(c) Show that if $\phi(X)$ is dense in $Y$, then $\phi_P^*$ is injective for all $P \in X$.
+Show that if $\phi(X)$ is dense in $Y$, then $\phi_P^*$ is injective for all $P \in X$.
 :::
 
 ::: {.solution}
@@ -142,7 +141,7 @@ By hypothesis $\phi(X)$ is dense in $Y$, and therefore $C=Y$.
 
 ::: {.pf-step #s5}
 
-Under the hypothesis of (c), the map $\phi_P^*$ is injective for every $P\in X$.
+If $\phi(X)$ is dense in $Y$, the map $\phi_P^*$ is injective for every $P\in X$.
 
 ::: pf-proof
 
@@ -167,7 +166,7 @@ Therefore $\phi_P^*$ is injective.
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove (b), and steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove (c).
+Step [](#s1){.pf-ref} proves (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove the equivalence in (b), and steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove the injectivity assertion in (b).
 
 :::
 

@@ -30,7 +30,7 @@ audit:
 Let $X \subseteq \AA^n$ and $Y \subseteq \AA^m$ be affine varieties.
 
 (a) Show that $X \times Y \subseteq \AA^{n+m}$ with its induced topology is irreducible.
-The affine variety $X \times Y$ is called the **product** of $X$ and $Y$.
+The affine variety $X \times Y$ is called the \dfn{product} of $X$ and $Y$.
 Note that its topology is in general not the product topology.
 
 (b) Show that $A(X \times Y) \cong A(X) \tensor_k A(Y)$.

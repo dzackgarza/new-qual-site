@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-A variety $Y$ is **normal at a point** $P \in Y$ if $\mco_P$ is an integrally closed ring, and $Y$ is **normal** if it is normal at every point.
+A variety $Y$ is \dfn{normal at a point} $P \in Y$ if $\mco_P$ is an integrally closed ring, and $Y$ is \dfn{normal} if it is normal at every point.
 
 (a) Show that every conic in $\PP^2$ is normal.
 
@@ -40,8 +40,12 @@ A variety $Y$ is **normal at a point** $P \in Y$ if $\mco_P$ is an integrally cl
 (d) If $Y$ is affine, show that $Y$ is normal if and only if $A(Y)$ is integrally closed.
 
 (e) Let $Y$ be an affine variety.
-Show that there is a normal affine variety $\tilde{Y}$ and a morphism $\pi: \tilde{Y} \to Y$ with the following property: whenever $Z$ is a normal variety and $\phi: Z \to Y$ is a **dominant** morphism, meaning $\phi(Z)$ is dense in $Y$, there is a unique morphism $\theta: Z \to \tilde{Y}$ with $\phi = \pi \circ \theta$.
-The variety $\tilde{Y}$ is called the **normalization** of $Y$.
+Show that there is a normal affine variety $\tilde{Y}$ and a morphism $\pi: \tilde{Y} \to Y$ with the following property: whenever $Z$ is a normal variety and $\phi: Z \to Y$ is a \dfn{dominant} morphism, meaning $\phi(Z)$ is dense in $Y$, there is a unique morphism $\theta: Z \to \tilde{Y}$ with $\phi = \pi \circ \theta$.
+The variety $\tilde{Y}$ is called the \dfn{normalization} of $Y$.
+:::
+
+::: {.hint}
+For (e), you will need Theorem I.3.9A.
 :::
 
 ::: {.solution}
@@ -342,7 +346,7 @@ This is the required universal property.
 
 ::: pf-qed
 
-Steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s2){.pf-ref}, [](#s8){.pf-ref} and [](#s9){.pf-ref} prove parts (a)--(e), respectively.
+Step [](#s3){.pf-ref} proves (a), steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove (b), step [](#s7){.pf-ref} proves (c), step [](#s2){.pf-ref} proves (d), and steps [](#s8){.pf-ref} and [](#s9){.pf-ref} prove (e).
 
 :::
 

@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-A projective variety $Y \subseteq \PP^n$ is **projectively normal**, with respect to the given embedding, if its homogeneous coordinate ring $S(Y)$ is integrally closed.
+A projective variety $Y \subseteq \PP^n$ is \dfn{projectively normal}, with respect to the given embedding, if its homogeneous coordinate ring $S(Y)$ is integrally closed.
 
 (a) If $Y$ is projectively normal, show that $Y$ is normal.
 
@@ -90,7 +90,7 @@ has coordinate ring
 $$
 A(Y_i)=(S_{x_i})_0
 $$
-[@Har77, Theorem I.3.4(b)].
+by [[P-AGH26HOMDIM]].
 By step [](#s1){.pf-ref} this ring is integrally closed.
 The affine normality criterion from [[P-AGH317NORMAL]] therefore makes every $Y_i$ normal.
 These standard opens cover $Y$, so every local ring of $Y$ is integrally closed and $Y$ is normal.

@@ -27,9 +27,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $\phi: \AA^n \to \AA^n$ be a morphism given by $n$ polynomials $f_1,\ldots,f_n$ in the variables $x_1,\ldots,x_n$, and let $J = \det\qty{ \frac{\partial f_i}{\partial x_j} }$ be the **Jacobian polynomial** of $\phi$.
+Let $\phi: \AA^n \to \AA^n$ be a morphism given by $n$ polynomials $f_1,\ldots,f_n$ in the variables $x_1,\ldots,x_n$, and let $J = \det\qty{ \frac{\partial f_i}{\partial x_j} }$ be the \dfn{Jacobian polynomial} of $\phi$.
 
-(a) If $\phi$ is an isomorphism, in which case $\phi$ is called an **automorphism** of $\AA^n$, show that $J$ is a nonzero constant polynomial.
+(a) If $\phi$ is an isomorphism, in which case $\phi$ is called an \dfn{automorphism} of $\AA^n$, show that $J$ is a nonzero constant polynomial.
 
 (b) The converse is an unsolved problem, even for $n = 2$.
 :::
