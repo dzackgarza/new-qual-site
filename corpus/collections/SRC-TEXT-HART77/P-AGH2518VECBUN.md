@@ -180,7 +180,7 @@ A bundle isomorphism carries sections to sections; step [](#s2){.pf-ref} makes t
 Thus both maps are defined on the indicated isomorphism classes.
 For a locally free $\mce$, step [](#s3){.pf-ref} and the canonical bidual isomorphism from [[P-AGH251DUALSHEAF]] give
 $$
-\dualof{\mathcal S_{\mathbf V(\mce)}}\dualof{\cong(\dualof{\mce})}\cong\mce.
+\dualof{\mathcal S_{\mathbf V(\mce)}}\cong\dualof{(\dualof{\mce})}\cong\mce.
 $$
 For a vector bundle, step [](#s4){.pf-ref} gives the inverse reconstruction.
 Consequently the two maps are mutually inverse.
