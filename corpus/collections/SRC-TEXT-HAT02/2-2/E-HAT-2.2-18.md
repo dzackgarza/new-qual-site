@@ -31,35 +31,23 @@ For a CW pair $(X, A)$ show there is a relative cellular chain complex formed by
 :::
 
 ::: {.solution}
-Let $(X,A)$ be a CW pair, so $A$ is a subcomplex of $X$. Define
+Let $A$ be a CW subcomplex of $X$ and put $A^n=A\cap X^n$. The inclusion of cellular chain complexes $C_*^{CW}(A)\hookrightarrow C_*^{CW}(X)$ is degreewise injective. Form the quotient chain complex
 $$
-C_n^{CW}(X,A)
-=
-H_n(X^n,X^{n-1}\cup A^n),
-\qquad A^n=A\cap X^n.
+C_*^{CW}(X,A)=C_*^{CW}(X)/C_*^{CW}(A).
 $$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-These groups are naturally the cellular chain groups of the quotient CW complex $X/A$.
+In every degree $n$, the quotient chain group is naturally
+$$
+C_n^{CW}(X,A)\cong H_n(X^n,X^{n-1}\cup A^n).
+$$
 
 ::: pf-proof
 
-The quotient $X/A$ inherits a CW structure whose non-basepoint cells are exactly the cells of $X$ not contained in $A$. Its $n$-skeleton is
-$$
-(X/A)^n=X^n/A^n.
-$$
-Therefore
-$$
-C_n^{CW}(X/A)
-=H_n(X^n/A^n,\,X^{n-1}/A^{n-1}).
-$$
-By the quotient theorem for relative homology, this is naturally isomorphic to
-$$
-H_n(X^n,X^{n-1}\cup A^n)=C_n^{CW}(X,A).
-$$
+The cellular chain group $H_n(X^n,X^{n-1})$ is free on the $n$-cells of $X$, and $H_n(A^n,A^{n-1})$ is free on the subset of $n$-cells in $A$. Their quotient is free on the $n$-cells of $X$ outside $A$. The characteristic maps of these remaining cells give the same basis for $H_n(X^n,X^{n-1}\cup A^n)$, by the relative cellular calculation. This includes degree zero: the group is free on the vertices of $X$ outside $A$.
 
 :::
 
@@ -67,38 +55,15 @@ $$
 
 ::: {.pf-step #s2}
 
-Under these identifications, the cellular boundary on $X/A$ gives boundary maps
-$$
-d_n:C_n^{CW}(X,A)\to C_{n-1}^{CW}(X,A).
-$$
+The groups in step [](#s1){.pf-ref} carry a differential, and their chain complex computes $H_n(X,A)$.
 
 ::: pf-proof
 
-The cellular boundary of $X/A$ is defined using the connecting homomorphisms for its skeletal pairs. Transport these maps through the natural isomorphisms of step [](#s1){.pf-ref}. Equivalently, they are the connecting maps obtained from the triples
+Because $A$ is a subcomplex, its cellular differential is the restriction of that of $X$, so the quotient differential is well defined and squares to zero. The short exact sequence of cellular chain complexes
 $$
-(X^n,\,X^{n-1}\cup A^n,\,X^{n-2}\cup A^{n-1}).
+0\to C_*^{CW}(A)\to C_*^{CW}(X)\to C_*^{CW}(X,A)\to0
 $$
-Since they come from an ordinary cellular chain complex, they satisfy $d_{n-1}d_n=0$.
-
-:::
-
-:::
-
-::: pf-step
-
-The homology of this relative cellular chain complex is $H_n(X,A)$.
-
-::: pf-proof
-
-By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the relative cellular complex is canonically the cellular chain complex of $X/A$. Hence its homology is
-$$
-H_n^{CW}(X/A)\cong\widetilde H_n(X/A).
-$$
-For a CW pair, collapsing $A$ gives the standard relative-homology isomorphism
-$$
-\widetilde H_n(X/A)\cong H_n(X,A)
-$$
-(with the usual unreduced interpretation in degree $0$). Therefore
+gives a long exact sequence in homology. Naturality of the cellular-to-singular comparison identifies the first two terms and maps with the corresponding terms in the long exact sequence of the pair $(X,A)$. The connecting maps agree by their chain-level definitions. The five lemma therefore identifies the remaining terms:
 $$
 \boxed{H_n(C_*^{CW}(X,A))\cong H_n(X,A).}
 $$
@@ -108,6 +73,4 @@ $$
 :::
 
 :::
-
-Thus the groups specified in the problem form the desired relative cellular chain complex.
 :::
