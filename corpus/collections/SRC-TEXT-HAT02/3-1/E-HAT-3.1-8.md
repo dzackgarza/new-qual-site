@@ -94,11 +94,11 @@ for all $n$.
 
 ::: pf-proof
 
-Choose a neighborhood $N$ of $A$ that deformation retracts onto $A$. Excision and homotopy invariance identify
+The good-pair quotient theorem for homology applies to the closed subspace $A$ with its deformation-retract neighborhood: the quotient map induces
 $$
-H^n(X,A)\cong H^n(X,N).
+H_j(X,A;\ZZ)\xrightarrow{\cong}\widetilde H_j(X/A;\ZZ)
 $$
-Collapsing $N$ to a point identifies the latter relative cochain theory with reduced cohomology of $X/N$. Since $N/A$ is contractible, the natural map $X/A\to X/N$ is a homotopy equivalence. Composing these identifications gives the asserted quotient isomorphism.
+in every degree $j$. The natural universal coefficient short exact sequences for the pair and the quotient have $\operatorname{Ext}(H_{n-1}(-;\ZZ),G)$ on the left and $\operatorname{Hom}(H_n(-;\ZZ),G)$ on the right. The quotient map is an isomorphism on both outer terms by the homology result. Naturality and the short five lemma give the stated isomorphism on cohomology.
 
 :::
 
