@@ -113,9 +113,6 @@ It runs through the under-arcs $\alpha_1,\ldots,\alpha_m$ in cyclic order, and b
 
 :::
 
-
-:::
-
 ::: {.pf-step #p2-4}
 Hence all generators $x_i$ are identified, so the abelianization is $\langle x \rangle \cong \ZZ$.
 
@@ -126,7 +123,7 @@ steps [](#p2-2){.pf-ref} and [](#p2-3){.pf-ref}.
 :::
 
 ::: pf-qed
-step [](#p1-5){.pf-ref} (a) and step [](#p2-4){.pf-ref} (b).
+step [](#p1-3){.pf-ref} (a) and step [](#p2-4){.pf-ref} (b).
 :::
 
 :::
