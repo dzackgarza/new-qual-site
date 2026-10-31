@@ -28,8 +28,8 @@ audit:
 ::: {.problem}
 Let $R$ be a principal ideal domain, $A$ a unitary left $R$-module, and $p\in R$ a prime (and thus
 irreducible) element. Define $$\begin{aligned}
-pA &\coloneqq \{ pa \mid a\in A\} \\
-A[p] &\coloneqq \{ a\in A \mid pa = 0\}.\end{aligned}$$
+pA &\coloneqq \{ pa \st a\in A\} \\
+A[p] &\coloneqq \{ a\in A \st pa = 0\}.\end{aligned}$$
 
 Show the following:
 

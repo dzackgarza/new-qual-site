@@ -26,13 +26,13 @@ audit:
 ---
 
 ::: {.problem}
-If $F_1, F_2$ are free modules of a ring with the invariant dimension property, then $$\mathrm{rank}(F_1 \oplus F_2) = \mathrm{rank} F_1 + \mathrm{rank} F_2.$$
+If $F_1, F_2$ are free modules over a ring with the invariant dimension property, then $$\rank(F_1 \oplus F_2) = \rank F_1 + \rank F_2.$$
 :::
 
 ::: {.solution}
 Let $X$ be a basis of $F_1$ and $Y$ a basis of $F_2$. Define
 $$
-B=\{(x,0):x\in X\}\cup\{(0,y):y\in Y\}
+B=\{(x,0)\st x\in X\}\cup\{(0,y)\st y\in Y\}
 \subseteq F_1\oplus F_2.
 $$
 
@@ -92,8 +92,8 @@ Thus $B$ is linearly independent.
 
 Therefore $B$ is a basis of $F_1\oplus F_2$ and
 $$
-\operatorname{rank}(F_1\oplus F_2)
-=\operatorname{rank}F_1+\operatorname{rank}F_2.
+\rank(F_1\oplus F_2)
+=\rank F_1+\rank F_2.
 $$
 
 ::: pf-proof
@@ -106,10 +106,10 @@ $$
 Because the ring has the invariant dimension property, the rank of a free module
 is the cardinality of any basis. Hence
 $$
-\operatorname{rank}(F_1\oplus F_2)
+\rank(F_1\oplus F_2)
 =\cardinality{B}
 =\cardinality{X}+\cardinality{Y}
-=\operatorname{rank}F_1+\operatorname{rank}F_2.
+=\rank F_1+\rank F_2.
 $$
 
 :::

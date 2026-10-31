@@ -9,7 +9,6 @@ classification:
   topics:
   - Modules
   - Semisimplicity
-  - Cyclic Groups
 relations: []
 review: draft
 audit:
@@ -19,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-If $R$ has an identity, then a nonzero unitary $R$-module $A$ is **simple** if its only submodules are $0$ and $A$.
+If $R$ has an identity, then a nonzero unitary $R$-module $A$ is \dfn{simple} if its only submodules are $0$ and $A$.
 
 (a) Show that every simple $R$-module is cyclic.
 
@@ -36,7 +35,7 @@ Every simple $R$-module $A$ is cyclic; indeed $A=Ra$ for every nonzero $a\in A$.
 
 ::: pf-proof
 
-Since $A\ne0$, there is $a\in A$ with $a\ne0$. The cyclic submodule $Ra=\{ra : r\in R\}$ contains $a=1_R\cdot a$ because $A$ is unitary, so $Ra\ne0$. As $A$ is simple, its only submodules are $0$ and $A$, hence $Ra=A$.
+Since $A\ne0$, there is $a\in A$ with $a\ne0$. The cyclic submodule $Ra=\{ra \st r\in R\}$ contains $a=1_R\cdot a$ because $A$ is unitary, so $Ra\ne0$. As $A$ is simple, its only submodules are $0$ and $A$, hence $Ra=A$.
 
 :::
 

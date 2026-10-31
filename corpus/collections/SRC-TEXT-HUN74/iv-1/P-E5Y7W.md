@@ -118,11 +118,11 @@ $$((f + g) \circ h)(a) = f(h(a)) + g(h(a)) = (f \circ h + g \circ h)(a).$$
 
 ::: {.pf-step #s2-3}
 
-The identity map $\operatorname{id}_A$ is a multiplicative identity.
+The identity map $\id_A$ is a multiplicative identity.
 
 ::: pf-proof
 
-The map $\operatorname{id}_A$ is $R$-linear and $\operatorname{id}_A \circ f = f \circ \operatorname{id}_A = f$ for all $f \in \operatorname{End}_R(A)$.
+The map $\id_A$ is $R$-linear and $\id_A \circ f = f \circ \id_A = f$ for all $f \in \operatorname{End}_R(A)$.
 
 :::
 
@@ -148,7 +148,7 @@ For $f, g \in \operatorname{End}_R(A)$ and $a, b \in A$:
 $$f \cdot (a + b) = f(a) + f(b) = f \cdot a + f \cdot b,$$
 $$(f + g) \cdot a = f(a) + g(a) = f \cdot a + g \cdot a,$$
 $$(f \circ g) \cdot a = f(g(a)) = f \cdot (g \cdot a),$$
-$$\operatorname{id}_A \cdot a = a.$$
+$$\id_A \cdot a = a.$$
 These are the axioms of a unitary left module over the ring of step [](#s2){.pf-ref}.
 
 :::
