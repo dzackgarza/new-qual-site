@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $M \times N$ is orientable iff $M$ and $N$ are both orientable.
+For nonempty manifolds $M$ and $N$, show that $M \times N$ is orientable iff $M$ and $N$ are both orientable.
 :::
 
 ::: {.solution}
