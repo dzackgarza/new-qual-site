@@ -43,7 +43,7 @@ A=X\cup V,
 \qquad
 B=U\cup Y,
 $$
-slightly thickened if necessary so that they form an excisive cover for Mayer--Vietoris.
+The interiors of $A$ and $B$ cover $W$: away from the wedge point this follows from the copies of $X$ and $Y$, and at the wedge point it follows because $U$ and $V$ are neighborhoods of their basepoints. Thus Mayer--Vietoris applies to this cover.
 
 ::: pf
 
