@@ -229,7 +229,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-MATH4100-6100-2020
   - [x] SRC-MATH504-FINAL-AUTUMN-2003
   - [x] SRC-MATH6338-HW8
-  - [ ] SRC-MATH655-HW3-2003
+  - [x] SRC-MATH655-HW3-2003
   - [ ] SRC-MATH7200-EXERCISE-SET-8-FALL-2006
   - [x] SRC-MATH8100-ASSIGNMENT-1
   - [x] SRC-MATH8100-ASSIGNMENT-2
