@@ -1053,6 +1053,9 @@ mathematical correction under its own node, not under copy policy.
     `[@key]`. **Acceptance:** no deployed page shows a literal `[@`. **Closed.**
   - **`ad-tikzcd`**. **Needs:** none. `tikzcd` blocks vanish on transclusion (D-KRKV7,
     T-SKJB2, E-B4ZSQ). **Acceptance:** every card diagram renders wherever the card appears.
+    **Closed.** The shared HTML preparation compiles TikZ blocks before transclusion;
+    deployed tag pages for D-KRKV7, T-SKJB2, and E-B4ZSQ contain their SVG diagrams,
+    as does the covering-spaces wiki page.
   - **`ad-fancy-lists`**. **Needs:** none. A proof step opening with `(a)` splits into a
     bare number and a list. **Acceptance:** such steps render as one numbered claim. **Closed.**
   - **`ad-smart-titles`**. **Needs:** none. `--` and `$…$` reach titles, prompts, link
@@ -1315,7 +1318,8 @@ mathematical correction under its own node, not under copy policy.
     - [x] SRC-UNSORTED-TOPOLOGY: 91 cards tried, no source found
     - [x] SRC-UNSORTED-PRELIM: empty
     **Acceptance:** every bucket card tried; each bucket's count of cards with no source found
-    is recorded here.
+    is recorded here. **Closed.** The five bucket checks above record the completed search
+    and its unresolved source counts.
   CI on `main` is red from the STYLE-04 bar codemod (`1f17231d05`) on; nothing deploys after
   `5ba163ac9`. `audited-deployment` needs the node below.
   - **`ci-red-style04`**. **Needs:** none. The codemod left a space before closing dollars
