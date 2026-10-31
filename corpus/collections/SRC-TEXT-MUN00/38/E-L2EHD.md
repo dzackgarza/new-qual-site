@@ -46,8 +46,8 @@ $$
 $$
 Because $X$ is dense and $\widetilde\chi_A(X)\subset\{0,1\}$, the whole image of $\widetilde\chi_A$ lies in the closed set $\{0,1\}$. Therefore
 $$
-\overline A\subset \widetilde\chi_A^{-1}(0),\qquad
-\overline{X-A}\subset \widetilde\chi_A^{-1}(1),
+\overline A\subset \widetilde\chi_A^{-1}(1),\qquad
+\overline{X-A}\subset \widetilde\chi_A^{-1}(0),
 $$
 so these two closures are disjoint.
 
