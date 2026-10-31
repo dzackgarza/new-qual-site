@@ -75,8 +75,8 @@ $f$ is a homeomorphism:
 ::: pf-proof
 
 ::: pf-step
-For $x \in S_\Omega$, a local neighborhood basis at $x$ in $S_\Omega^*$ consists of open intervals $(a, b) \subseteq S_\Omega$ containing $x$.
-In $\overline{S}_\Omega$, open intervals $(a, b)$ with $b < \Omega$ form the exact same local neighborhood basis at $x$.
+For $x \in S_\Omega$, the intrinsic order intervals, or initial rays when $x=0$, form a local neighborhood basis in $S_\Omega^*$.
+The same intervals and initial rays, with upper endpoint below $\Omega$, form a local neighborhood basis at $x$ in $\overline{S}_\Omega$.
 :::
 
 ::: pf-step
