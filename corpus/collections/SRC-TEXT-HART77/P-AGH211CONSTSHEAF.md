@@ -25,11 +25,12 @@ Recall that the constant sheaf $\mca$ of the text is defined by giving $A$ the d
 ::: {.solution}
 Write $\tilde\mca$ for the constant presheaf of the question and $\mca$ for the sheaf of the text.
 
-Define a morphism of presheaves $F: \tilde\mca \to \mca$ by giving, for each open $U$, the map
+Set $\tilde\mca(\varnothing)=0$. Define a morphism of presheaves $F: \tilde\mca \to \mca$ by giving, for each nonempty open $U$, the map
 $$
 F_U: \tilde\mca(U) = A \to \mca(U) = C^0(U, A)
 $$
 which sends $a \in A$ to the constant function with value $a$.
+On the empty open set, $F_\varnothing$ is the unique map between zero groups.
 Since $A$ carries the discrete topology, every constant function is continuous, so $F_U$ lands in $\mca(U)$.
 The maps $F_U$ are compatible with restriction, because restricting a constant function gives the constant function with the same value, so $F$ is a morphism of presheaves.
 
