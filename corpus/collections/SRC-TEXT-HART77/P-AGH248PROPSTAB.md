@@ -39,7 +39,10 @@ Then show that
 
 (f) if $f: X \to Y$ has $\mathscr{P}$, then $f_{\text{red}}: X_{\text{red}} \to Y_{\text{red}}$ has $\mathscr{P}$.
 
-*Hint:* for (e), consider the graph morphism $\Gamma_f: X \to \fiberprod{X}{Z}{Y}$ and note that it is obtained by base extension from the diagonal morphism $\Delta: Y \to \fiberprod{Y}{Z}{Y}$.
+:::
+
+::: {.hint}
+For (e), consider the graph morphism $\Gamma_f: X \to \fiberprod{X}{Z}{Y}$ and note that it is obtained by base extension from the diagonal morphism $\Delta: Y \to \fiberprod{Y}{Z}{Y}$.
 :::
 
 ::: {.solution}
@@ -323,12 +326,6 @@ shows that $f_{\mathrm{red}}$ has $\mathscr P$.
 This proves part (f).
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s3){.pf-ref} proves part (d), step [](#s7){.pf-ref} proves part (e), and step [](#s11){.pf-ref} proves part (f).
 
 :::
 
