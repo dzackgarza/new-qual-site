@@ -9,103 +9,101 @@ classification:
 relations: []
 review: draft
 completion: complete
-provenance:
-- assets/attachments/Topology_Prelim_Answers_-_Unknown.pdf
+provenance: []
 source:
   source_kind: compilation
   sections:
-  - name: Math 6520 Final Exam 2007
-    problems:
-    - P-MH07-6520-01
-    - P-MH07-6520-02
-    - P-MH07-6520-03
-    - P-MH07-6520-04
-    - P-MH07-6520-05
-    - P-MH07-6520-06
-    - P-MH07-6520-07
-    - P-MH07-6520-08
-  - name: January 2007
-    problems:
-    - P-MH07-JAN07-01
-    - P-MH07-JAN07-02
-    - P-MH07-JAN07-03
-    - P-MH07-JAN07-04
-    - P-MH07-JAN07-05
-    - P-MH07-JAN07-06
-    - P-MH07-JAN07-07
-    - id: P-MH07-6510-07
-      comment: Problem 8
-    - P-MH07-JAN07-09
-    - P-MH07-JAN07-10
-    - P-MH07-JAN07-11
-    - P-MH07-JAN07-12
-    - P-MH07-JAN07-13
-    - P-MH07-JAN07-14
-    - P-MH07-JAN07-15
-    - P-MH07-JAN07-16
-  - name: Math 6510 Final Exam
-    problems:
-    - P-MH07-6510-01
-    - P-MH07-6510-02
-    - P-MH07-6510-03
-    - P-MH07-6510-04
-    - P-MH07-6510-05
-    - P-MH07-6510-06
-    - P-MH07-6510-07
-    - P-MH07-6510-08
-  - name: August 2006
-    problems:
-    - P-MH07-AUG06-01
-    - P-MH07-AUG06-02
-    - P-MH07-AUG06-03
-    - P-MH07-AUG06-04
-    - P-MH07-AUG06-05
-    - P-MH07-AUG06-06
-    - P-MH07-AUG06-07
-    - P-MH07-AUG06-08
-    - P-MH07-AUG06-09
-    - P-MH07-AUG06-10
-    - P-MH07-AUG06-11
-    - P-MH07-AUG06-12
-    - P-MH07-AUG06-13
-    - P-MH07-AUG06-14
-    - P-MH07-AUG06-15
-    - P-MH07-AUG06-16
-  - name: January 2006
-    problems:
-    - P-MH07-JAN06-01
-    - P-MH07-JAN06-02
-    - id: P-MH07-AUG05-07
-      comment: Problem 3
-    - P-MH07-JAN06-04
-    - P-MH07-JAN06-05
-    - P-MH07-JAN06-06
-    - P-MH07-JAN06-07
-    - P-MH07-JAN06-08
-    - P-MH07-JAN06-09
-  - name: August 2005
-    problems:
-    - P-MH07-AUG05-01
-    - P-MH07-AUG05-02
-    - P-MH07-AUG05-03
-    - P-MH07-AUG05-04
-    - P-MH07-AUG05-05
-    - P-MH07-AUG05-06
-    - P-MH07-AUG05-07
-    - id: P-MH07-AUG06-05
-      comment: Problem 8
-  - name: January 2005
-    problems:
-    - P-MH07-JAN05-01
-    - P-MH07-JAN05-02
-    - P-MH07-JAN05-03
-    - P-MH07-JAN05-04
-    - P-MH07-JAN05-05
-    - P-MH07-JAN05-06
-    - P-MH07-JAN05-07
-    - P-MH07-JAN05-08
-    - P-MH07-JAN05-09
-    - P-MH07-JAN05-10
+    - name: Math 6520 Final Exam 2007
+      problems:
+        - P-MH07-6520-01
+        - P-MH07-6520-02
+        - P-MH07-6520-03
+        - P-MH07-6520-04
+        - P-MH07-6520-05
+        - P-MH07-6520-06
+        - P-MH07-6520-07
+        - P-MH07-6520-08
+    - name: January 2007
+      problems:
+        - P-MH07-JAN07-01
+        - P-MH07-JAN07-02
+        - P-MH07-JAN07-03
+        - P-MH07-JAN07-04
+        - P-MH07-JAN07-05
+        - P-MH07-JAN07-06
+        - P-MH07-JAN07-07
+        - id: P-MH07-6510-07
+          comment: Problem 8
+        - P-MH07-JAN07-09
+        - P-MH07-JAN07-10
+        - P-MH07-JAN07-11
+        - P-MH07-JAN07-12
+        - P-MH07-JAN07-13
+        - P-MH07-JAN07-14
+        - P-MH07-JAN07-15
+        - P-MH07-JAN07-16
+    - name: Math 6510 Final Exam
+      problems:
+        - P-MH07-6510-01
+        - P-MH07-6510-02
+        - P-MH07-6510-03
+        - P-MH07-6510-04
+        - P-MH07-6510-05
+        - P-MH07-6510-06
+        - P-MH07-6510-07
+        - P-MH07-6510-08
+    - name: August 2006
+      problems:
+        - P-MH07-AUG06-01
+        - P-MH07-AUG06-02
+        - P-MH07-AUG06-03
+        - P-MH07-AUG06-04
+        - P-MH07-AUG06-05
+        - P-MH07-AUG06-06
+        - P-MH07-AUG06-07
+        - P-MH07-AUG06-08
+        - P-MH07-AUG06-09
+        - P-MH07-AUG06-10
+        - P-MH07-AUG06-11
+        - P-MH07-AUG06-12
+        - P-MH07-AUG06-13
+        - P-MH07-AUG06-14
+        - P-MH07-AUG06-15
+        - P-MH07-AUG06-16
+    - name: January 2006
+      problems:
+        - P-MH07-JAN06-01
+        - P-MH07-JAN06-02
+        - P-MH07-JAN06-03
+        - P-MH07-JAN06-04
+        - P-MH07-JAN06-05
+        - P-MH07-JAN06-06
+        - P-MH07-JAN06-07
+        - P-MH07-JAN06-08
+        - P-MH07-JAN06-09
+    - name: August 2005
+      problems:
+        - P-MH07-AUG05-01
+        - P-MH07-AUG05-02
+        - P-MH07-AUG05-03
+        - P-MH07-AUG05-04
+        - P-MH07-AUG05-05
+        - P-MH07-AUG05-06
+        - P-MH07-AUG05-07
+        - id: P-MH07-AUG06-05
+          comment: Problem 8
+    - name: January 2005
+      problems:
+        - P-MH07-JAN05-01
+        - P-MH07-JAN05-02
+        - P-MH07-JAN05-03
+        - P-MH07-JAN05-04
+        - P-MH07-JAN05-05
+        - P-MH07-JAN05-06
+        - P-MH07-JAN05-07
+        - P-MH07-JAN05-08
+        - P-MH07-JAN05-09
+        - P-MH07-JAN05-10
   date:
     kind: year
     year: 2007
