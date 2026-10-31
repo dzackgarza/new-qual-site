@@ -39,7 +39,7 @@ $$
 Let $\pi_\alpha: X \to X_\alpha$ be the projection map.
 Well-order $J$, once and for all, in such a way that $J$ has a largest element.
 
-(a) Let $\beta \in J$.
+(a) Let $\beta \in J$ be nonleast.
 Suppose points $p_i \in X_i$ are given, for all $i < \beta$.
 For any $\alpha < \beta$, let $Y_\alpha$ denote the subspace of $X$ defined by the equation
 
@@ -80,7 +80,7 @@ The union $U_x = \bigcup_{A \in \mathcal{A}_x} A$ is an open set in $X \times Y$
 :::
 
 ::: pf-step
-Because $Y$ is compact (or simply by the Tube Lemma since $\{x\}$ is compact and $U_x$ contains the slice), there exists an open neighborhood $W_x$ of $x$ in $X$ such that $W_x \times Y \subseteq U_x$.
+Write each member of the finite family $\mathcal A_x$ as a product $O_A\times P_A$. Keep the members for which $x\in O_A$; their $P_A$ cover $Y$. The finite intersection $W_x=\bigcap_{x\in O_A}O_A$ is an open neighborhood of $x$, and $W_x\times Y\subseteq U_x$. This uses that the cover members are basic rectangles; no compactness of $Y$ is required.
 :::
 
 ::: pf-step
@@ -121,7 +121,7 @@ Because $\mathcal{A}_0$ is finite, the union $F = \bigcup_{A \in \mathcal{A}_0} 
 :::
 
 ::: pf-step
-If $F = \varnothing$, let $\alpha$ be any index less than $\beta$. If $F \neq \varnothing$, let $\alpha = \max F < \beta$.
+If $F = \varnothing$, let $\alpha$ be any index less than $\beta$, which exists because $\beta$ is nonleast. If $F \neq \varnothing$, let $\alpha = \max F < \beta$.
 :::
 
 ::: pf-step
@@ -154,7 +154,7 @@ Proof of Part (b) and Theorem:
 ::: pf-proof
 
 ::: pf-step
-Assume $\mathcal{A}$ is a basic open cover of $X$ with no finite subcover.
+If $J=\varnothing$, the product is a singleton and is compact. Assume $J\neq\varnothing$, and let $\mathcal{A}$ be a basic open cover of $X$ with no finite subcover.
 :::
 
 ::: pf-step
