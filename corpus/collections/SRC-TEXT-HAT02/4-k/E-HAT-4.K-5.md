@@ -44,17 +44,7 @@ j:p^{-1}(b)\hookrightarrow F_b
 $$
 obtained by using the constant path at $b$.
 
-The homotopy fiber fits into the fibration sequence
-$$
-F_b\longrightarrow E\longrightarrow B,
-$$
-whose long exact homotopy sequence identifies, for $i>0$,
-$$
-\pi_i(F_b,p^{-1}(b),x_0)
-\cong
-\ker\!\left[\pi_i(E,p^{-1}(b),x_0)\to\pi_i(B,b)\right]
-$$
-together with the corresponding cokernel one degree higher. Comparing the long exact sequence of the pair $(E,p^{-1}(b))$ with that of the homotopy-fiber fibration and applying the five-lemma shows:
+The homotopy fiber fits into the fibration sequence $F_b\to E_p\to B$, where the mapping-path replacement $E_p$ is homotopy equivalent to $E$. Compare the long exact sequence of the pair $(E,p^{-1}(b))$ with that of $(E_p,F_b)$, using the inclusion of pairs induced by $E\to E_p$. The five-lemma, including the component terms at the end of the sequences, shows:
 $$
 j:p^{-1}(b)\to F_b\text{ is a weak equivalence}
 $$
