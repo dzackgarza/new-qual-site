@@ -42,7 +42,7 @@ $$
 
 ::: pf
 
-::: {.pf-step #subgroups}
+::: pf-step
 (a) $C_G(H)$ and $N_G(H)$ are subgroups of $G$, and $C_G(H)\subseteq N_G(H)$.
 
 ::: pf-proof
