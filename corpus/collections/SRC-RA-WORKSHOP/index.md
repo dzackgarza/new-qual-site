@@ -123,7 +123,8 @@ source:
     problems:
     - P-RA-WORKSHOP-D7-W1
     - P-RA-WORKSHOP-D7-W2
-    - P-RA-WORKSHOP-D7-W3
+    - id: P-RA-WORKSHOP-D7-W3
+      comment: 'Workshop 3; the sheet numbers this Theorem 6.1 ([Rud76, Thm. 7.12])'
     - P-RA-WORKSHOP-D7-W4
     - P-RA-WORKSHOP-D7-W5
     - P-7P5F5

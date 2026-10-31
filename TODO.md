@@ -17,17 +17,24 @@ open tasks. A prior tick alone is not evidence of that condition.
 | `ad-text-mun00` | none | Do the same for `SRC-TEXT-MUN00`. |
 | `ad-text-ss03-gaps` | none | Compare `SRC-TEXT-SS03` with the book and add missing cards, one item at a time: chapter 2 problems 4–5; chapter 4 problems 3*–4*; chapter 5 exercises 15–17; chapter 7 exercises 5–12; chapter 8 problems 4–9; chapter 9 problems 2–3; chapter 10 problem 1 and problems 5 onward. Verify existing-card identity before adding each card. |
 | `ad-text-hk71-locators` | none | Check every `SRC-TEXT-HK71` appearance locator in sections 7.1–10.4 against the book; correct each mismatch. |
-| `ad-source-gaps` | none | Resolve the source-dependent questions identified below from source documents; do not reconstruct missing mathematics from conjecture. |
-| `audited-deployment` | `ad-text-hart77`, `ad-text-hun74`, `ad-text-smi`, `ad-text-hat02`, `ad-text-mun00`, `ad-text-ss03-gaps`, `ad-text-hk71-locators`, `ad-source-gaps` | Finish the reading checklist and all repairs; only then close this node. |
+| `audited-deployment` | `ad-text-hart77`, `ad-text-hun74`, `ad-text-smi`, `ad-text-hat02`, `ad-text-mun00`, `ad-text-ss03-gaps`, `ad-text-hk71-locators` | Finish the reading checklist and all repairs; only then close this node. |
 | `unsolved-contribution` | none | Continue issue #2 by selecting, reading, proving, reviewing, and committing each unsolved problem card in source order. |
 
-For `ad-source-gaps`, the current source questions are: the added part (b) in the
-`SRC-MATH4100-6100-2020` appearance of `P-AZOFF-A05`; the truncated MH07 January
-2005 problems 3, 8, 9, and 10 and January 2006 problem 9; missing source documents
-for the NUS 1970 complex and real analysis collections; and the unidentified
-“Theorem 6.1” cited by RA-WORKSHOP D7-W3. Check the present cards and retained
-source material before changing each one. Record an unresolved source question in
-COMPLAINTS.md with its exact owner and evidence.
+`ad-source-gaps` is closed, each of its four questions settled from a source document.
+The `SRC-MATH4100-6100-2020` appearance of `P-AZOFF-A05` adds a part (b), an example of a
+differentiable function that is not uniformly differentiable: the card now states both
+parts and proves them.
+The five truncated MH07 statements (January 2005 problems 3, 8, 9, 10 and January 2006
+problem 9) were read against the University of Utah qualifying-exam question bank, which
+prints all five in full at `quals.math.utah.edu/exams/257/` and `.../258/`, and each card
+now carries that citation.
+The NUS 1970 collections' witness is make-me-a-qual `Combined_Questions.yaml` at revision
+`6190e0ee`, whose sha256 is the one `sources/mmaq-source.yaml` records; the examination
+papers themselves are in no reachable archive, which is recorded in
+[COMPLAINTS.md](COMPLAINTS.md) together with the correction that the dataset's
+`year: 1970` is a year and not its unknown-year sentinel.
+“Theorem 6.1” of RA-WORKSHOP D7-W3 is that sheet's own numbering for [Rud76, Thm. 7.12],
+the continuity of a uniform limit of continuous functions.
 
 ## Fast local checks and complete CI acceptance
 
@@ -87,7 +94,7 @@ mathematical correction under its own node, not under copy policy.
   closed. Rounds 1-9 sampled slices without recording coverage, so the checklist starts
   unticked.
   Round 1 (revision `fe928e9a1`) injected the nodes below; `audited-deployment` needs all of them.
-  **Open.** The textbook reading and source gaps in the table above remain.
+  **Open.** The textbook reading in the table above remains.
 
   Reading checklist. Each item is read once, in full, against its source; its repairs are
   committed before the item is ticked.

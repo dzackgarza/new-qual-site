@@ -57,5 +57,32 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** blocked on recovering the original UCSD 290 covering-spaces sheet; until then the card stays unauthored rather than being given an invented statement.
 
+### NUS 1970 collections rest on a dataset, not on an examination paper
+
+- **Object and need:** `SRC-NUS-CA-1970-SPRING` and `SRC-NUS-RA-1970-SPRING`, 20 problem cards between them.
+  The opened question was the missing source document for both collections.
+
+- **Observed evidence:** the collections were intaken from make-me-a-qual, and `sources/mmaq-source.yaml` records that file's identity: `Combined_Questions.yaml` at revision `6190e0eeaf93ac471a2450444d0b70872b7b9dfa`, sha256 `63845aa447e86bdd9a32f02dd83d9f21ca823b250aebe1fcc0468b2758d49176`.
+  The recorded path `assets/ws9/make-me-a-qual/Combined_Questions.yaml` is not in this repository, but the file at that revision of `dzackgarza/make-me-a-qual` hashes to exactly that value, so the witness is recoverable byte for byte rather than merely cited.
+  Its 20 `university: NUS` rows carry `exam` `Complex_Analysis` or `Real_Analysis`, `year: 1970`, `season: Spring` (two rows lowercase `spring`), and question numbers 4, 5, 6, 8, 6, 7, 8, 7 (complex) and `1abch`, `1de`, `1fg`, 2, 3, 1, 2, 3, 4, 4, 4, 5 (real); `sources/mmaq-reconciliation.jsonl` rows 108–115 and 194–205 tie each card to one of those rows.
+
+- **Searched:** the repository for a NUS or Singapore document (`grep -a -ril singapore assets wiki corpus`, `find . -iname '*singapore*' -o -iname '*nus*1970*'`), the attachment ledger, and the public NUS qualifying-exam archive at `zr9558.com/nationaluniversityofsingapore/phd-qe-papers/analysis/`.
+  **Found:** the dataset rows only, and a public archive whose complex- and real-analysis papers begin with the 2000–2001 academic year.
+  **Conclusion:** no examination paper for these twenty problems exists in the repository or in the reachable archive; the dataset is the only witness.
+  **Confidence:** high for absence from retained bytes and from that archive; high for the dataset's identity, which the hash fixes.
+  **Gaps:** nothing establishes where the dataset's own metadata came from. Its `Complex_Analysis` rows carry question numbers 4–8 twice over, so the label merges two sittings whose papers are not separated anywhere.
+
+- **Impact and owner:** every statement in the two collections, and the site's claim that these are NUS 1970 papers.
+  The statements themselves are unaffected: all twenty were read against the dataset and agree with it, apart from the two garbles repaired on `P-R623W` and `P-MMAQ-RML5AHHINX`.
+
+- **Uncertainty:** the year. `tools/qualc/model.py` described `year: 1970` as a sentinel under which a real season is hidden, and `TermOnly` exists on that account.
+  The dataset does not bear this out: its unknown-year marker is `year: 0`, which appears on 191 rows and never once beside a real season, while `1970` appears only on these 20 rows and always beside one, exactly as 2005–2019 do on the sittings that really happened.
+  So 1970 is read here as a recorded year, and `TermOnly` is corrected to say that no collection uses it.
+  A reader who disbelieves the dataset's year has nothing to replace it with.
+
+- **Repair:** both collections now carry a `provenance:` href pinning the dataset at that revision, and `source.date` records the academic term the dataset gives (spring 1970) instead of `unknown`.
+  Where a card renumbers the source's parts, its entry carries the source letters as a comment, and the two repaired statements carry `source-corrected` audit notes naming the garbled bytes.
+  Nothing further is recoverable without the papers themselves.
+
 ## Workflow and rendering papercuts
 

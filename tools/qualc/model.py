@@ -71,9 +71,11 @@ class YearOnly(Strict):
 class TermOnly(Strict):
     """Season known, year not.
 
-    Not hypothetical: 20 make-me-a-qual records (all NUS) carry a real season
-    under the sentinel `year: 1970`. Without this case the season is lost, since
-    `AcademicTerm` demands a year and `YearOnly` demands one too.
+    No collection uses this case: the make-me-a-qual file it was written for
+    records its unknown years as `0` (191 rows, none of them beside a real
+    season) and carries `1970` only on the 20 NUS rows, every one with a real
+    season, so those dates are the academic term 1970 spring. The case stays
+    for a source that gives a season and no year at all.
     """
 
     kind: Literal["term"]
