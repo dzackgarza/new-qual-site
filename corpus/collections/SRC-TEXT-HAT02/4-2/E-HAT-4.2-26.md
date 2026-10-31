@@ -21,131 +21,21 @@ Generalizing the example of $\RP^2$ and $S^2 \times \RP^\infty$, show that if $X
 :::
 
 ::: {.solution}
-
-::: pf
-
-::: {.pf-step #s1}
-
-$X$ and $\tilde X \times K(\pi_1(X), 1)$ have isomorphic homotopy groups.
-
-::: pf-proof
-
-::: {.pf-step #s1-1}
-
-$\pi_1(\tilde X \times K(\pi_1(X),1)) = \pi_1(\tilde X) \times \pi_1(K(\pi_1(X),1)) = 1 \times \pi_1(X) = \pi_1(X)$.
-
-::: pf-proof
-
-$\tilde X$ is simply connected and $K(\pi_1(X),1)$ has fundamental group $\pi_1(X)$.
-
-:::
-
-:::
-
-::: {.pf-step #s1-2}
-
-For $n \ge 2$, $\pi_n(\tilde X \times K(\pi_1(X),1)) = \pi_n(\tilde X) \times \pi_n(K(\pi_1(X),1)) = \pi_n(\tilde X) \times 0 = \pi_n(\tilde X)$.
-
-::: pf-proof
-
-$K(\pi_1(X),1)$ has vanishing higher homotopy groups.
-
-:::
-
-:::
-
-::: {.pf-step #s1-3}
-
-$\pi_n(X) = \pi_n(\tilde X)$ for $n \ge 2$.
-
-::: pf-proof
-
-the universal cover $\tilde X \to X$ induces isomorphisms on $\pi_n$ for $n \ge 2$.
-
-:::
-
-:::
-
-::: pf-step
-
-Hence $\pi_n(X) \cong \pi_n(\tilde X \times K(\pi_1(X),1))$ for all $n$.
-
-::: pf-proof
-
-Steps [](#s1-1){.pf-ref}, [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-$X$ and $\tilde X \times K(\pi_1(X),1)$ are not homotopy equivalent if $\pi_1(X)$ has an element of finite order.
-
-::: pf-proof
-
-::: {.pf-step #s2-1}
-
-$X$ is finite-dimensional, so $\pi_n(X) = 0$ for all sufficiently large $n$.
-
-::: pf-proof
-
-a finite-dimensional CW complex has finitely many nonzero homotopy groups in the sense that $\pi_n(X) = 0$ for $n > \dim X$ (by cellular approximation, since $S^n$ has no cells below dimension $n$... more precisely, $\pi_n(X) = 0$ for $n > \dim X$).
-
-:::
-
-:::
-
-::: {.pf-step #s2-2}
-
-But $K(\pi_1(X),1)$ has infinitely many nonzero homotopy groups when $\pi_1(X)$ has an element of finite order.
-
-::: pf-proof
-
-if $\pi_1(X)$ has an element of finite order, then $K(\pi_1(X),1)$ has nonzero homology (hence nonzero homotopy) in infinitely many dimensions (e.g. $\ZZ/m$ has $H_{2k+1}(K(\ZZ/m,1)) = \ZZ/m$ for all $k$).
-
-:::
-
-:::
-
-::: {.pf-step #s2-3}
-
-Hence $\tilde X \times K(\pi_1(X),1)$ has nonzero homotopy groups in infinitely many dimensions.
-
-::: pf-proof
-
-Step [](#s2-2){.pf-ref} and the product structure.
-
-:::
-
-:::
-
-::: pf-step
-
-Therefore $X$ and $\tilde X \times K(\pi_1(X),1)$ are not homotopy equivalent.
-
-::: pf-proof
-
-homotopy equivalence preserves homotopy groups, but steps [](#s2-1){.pf-ref} and [](#s2-3){.pf-ref} contradict.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
-
-:::
-
-:::
-
+Put $G=\pi_1(X)$ and $Y=\widetilde X\times K(G,1)$. The first homotopy groups of $X$ and $Y$ are both $G$. For $n\ge2$, the covering map and the product formula give
+$$
+\pi_n(X)\cong\pi_n(\widetilde X)\cong\pi_n(Y).
+$$
+These are abstract group isomorphisms; they need not preserve the $G$-actions.
+
+Suppose that $X\simeq Y$ and let $C_p\le G$ be a cyclic subgroup of prime order, obtained from an element of finite order. The homotopy equivalence lifts to a homotopy equivalence between the covers corresponding to $C_p$. The cover of $Y$ is
+$$
+\widetilde X\times K(C_p,1),
+$$
+whereas the corresponding cover $X_{C_p}$ of $X$ has the same finite CW dimension as $X$. Projection and inclusion make $K(C_p,1)$ a retract of the cover of $Y$. Hence its homology would be a direct summand of $H_*(X_{C_p};\ZZ)$ and would vanish above $\dim X$.
+
+But the standard periodic resolution of the cyclic group gives
+$$
+H_{2k+1}(K(C_p,1);\ZZ)\cong\ZZ/p\qquad(k\ge0).
+$$
+This contradicts the finite dimension of $X_{C_p}$. Therefore $X$ and $Y$ are not homotopy equivalent.
 :::
