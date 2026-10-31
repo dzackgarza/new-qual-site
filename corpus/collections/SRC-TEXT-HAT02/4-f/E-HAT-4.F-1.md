@@ -56,17 +56,9 @@ $$
 X_1\subset X_2\subset\cdots,
 \qquad X=\bigcup_iX_i.
 $$
-Let $T$ be the mapping telescope of this sequence. There is a standard cofibration
-$$
-\bigvee_{i\ge1}X_i
-\xrightarrow{\,1-s\,}
-\bigvee_{i\ge1}X_i
-\longrightarrow T,
-\tag{1}
-$$
-where on the $i$-th summand the shift $s$ is the inclusion $X_i\to X_{i+1}$ followed by inclusion into the $(i+1)$-st wedge summand. The telescope deformation retracts onto $X$ up to homotopy, so $\widetilde h_*(T)\cong\widetilde h_*(X)$.
+Let $T$ be the based mapping telescope of this sequence, with the track of the common basepoint collapsed. The telescope is homotopy equivalent to $X$ because the inclusions $X_i\subset X_{i+1}$ are cofibrations, so $\widetilde h_*(T)\cong\widetilde h_*(X)$. Write $s_*$ for the map on $\bigoplus_i\widetilde h_n(X_i)$ that shifts the $i$-th summand to the $(i+1)$-st using the inclusion $X_i\to X_{i+1}$.
 
-By the wedge axiom, applying $\widetilde h_n$ to (1) yields
+Cover the telescope by the unions of neighborhoods of its even and odd mapping cylinders. After collapsing the basepoint track, each union and their intersection retract onto wedges of the corresponding $X_i$. The Mayer--Vietoris sequence, followed by the wedge axiom, yields
 $$
 \bigoplus_i\widetilde h_n(X_i)
 \xrightarrow{\,1-s_*\,}
