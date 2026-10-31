@@ -31,9 +31,9 @@ $$
 $$
 for all $x$ and $y$ in $I$ is called a *Lipschitz function*.
 
-1. Show that a Lipschitz function is absolutely continuous.
+(a) Show that a Lipschitz function is absolutely continuous.
 
-2. Show that an absolutely continuous function $f$ on an interval is Lipschitz if and only if $f'$ is essentially bounded.
+(b) Show that an absolutely continuous function $f$ on an interval is Lipschitz if and only if $f'$ is essentially bounded.
 :::
 
 ::: {.solution}
