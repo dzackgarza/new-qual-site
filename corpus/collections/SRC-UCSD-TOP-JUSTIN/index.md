@@ -142,6 +142,12 @@ source:
   - P-AMD-V5MCE5HZ
   - id: E-PER08-9.1
     comment: Sheet 9, Problem 1
+  - id: E-HAT-2.2-20
+    comment: Sheet 9, Problem 2(a)
+  - id: E-HAT-2.2-21
+    comment: Sheet 9, Problem 2(b)
+  - id: E-HAT-2.2-22
+    comment: Sheet 9, Problem 2(c)
   - P-AMD-E67LQFU5
   - P-AMD-MVCOFKIK
   - P-AMD-ES2H5QQF
