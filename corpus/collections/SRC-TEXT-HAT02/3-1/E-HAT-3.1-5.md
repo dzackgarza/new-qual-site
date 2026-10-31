@@ -84,7 +84,7 @@ Step [](#s3){.pf-ref}.
 
 ::: {.pf-step #s5}
 
-**(c)** If $f \simeq g$ (rel endpoints), then $f$ and $g$ differ by the boundary of a $2$-chain (a homotopy gives a $2$-chain whose boundary is $f - g$), so $\varphi(f) - \varphi(g) = \varphi(\partial(\text{homotopy})) = 0$.
+**(c)** If $f \simeq g$ rel endpoints, triangulate the homotopy square. The boundary of its image as a singular $2$-chain is $g-f$ plus two constant endpoint paths. By step [](#s4){.pf-ref} the cocycle vanishes on those constant paths, so $\varphi(f)=\varphi(g)$.
 
 ::: pf-proof
 
@@ -120,11 +120,11 @@ definition of coboundary.
 
 ::: {.pf-step #s8}
 
-($\Leftarrow$) If $\varphi(f)$ depends only on the endpoints, define $\psi(x) = \varphi(f_x)$ for any path $f_x$ from a fixed basepoint to $x$; then $\varphi(f) = \psi(f(1)) - \psi(f(0)) = \delta\psi(f)$, so $\varphi$ is a coboundary.
+($\Leftarrow$) Choose one basepoint in each path component. If $\varphi(f)$ depends only on endpoints, define $\psi(x)=\varphi(f_x)$ using any path $f_x$ from the chosen basepoint of $x$'s component to $x$. This is well-defined. By part (a), $\varphi(f)=\psi(f(1))-\psi(f(0))=\delta\psi(f)$ for every path $f$, so $\varphi$ is a coboundary.
 
 ::: pf-proof
 
-Step [](#s7){.pf-ref}, reversed.
+The endpoint hypothesis makes the choice of $f_x$ immaterial, and concatenation gives the displayed difference.
 
 :::
 
