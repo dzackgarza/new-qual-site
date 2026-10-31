@@ -84,12 +84,18 @@ def test_nested_page_rewrites_card_and_asset_links(tmp_path: Path) -> None:
 
     links = LinkCollector()
     links.feed((site_root / "tag" / "P-ONE.html").read_text())
-    assert {"P-TWO.html", "../problems.html?area=algebra&topic=Groups", "../assets/figures/diagram.png"} <= set(links.hrefs)
+    assert {
+        "P-TWO.html",
+        "../problems.html?area=algebra&topic=Groups",
+        "../assets/figures/diagram.png",
+    } <= set(links.hrefs)
     assert "../assets/figures/diagram.png" in links.srcs
     assert (site_root / "assets" / "figures" / "diagram.png").samefile(image)
 
 
-def test_every_page_carries_generation_and_repository_footer(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+def test_every_page_carries_generation_and_repository_footer(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
     revision = "0123456789abcdef0123456789abcdef01234567"
     monkeypatch.setenv("GITHUB_SHA", revision)
     assets_root = tmp_path / "assets"
@@ -114,9 +120,14 @@ def test_every_page_carries_generation_and_repository_footer(tmp_path: Path, mon
     assert len(times) == 1
     assert times[0].text.startswith("Generated ")
     assert times[0].attrs["datetime"].endswith("Z")
-    revision_links = [a for a in footer[0].find_all("a") if a.text == "Revision 012345678"]
+    revision_links = [
+        a for a in footer[0].find_all("a") if a.text == "Revision 012345678"
+    ]
     assert len(revision_links) == 1
-    assert revision_links[0].attrs["href"] == f"https://github.com/dzackgarza/new-qual-site/commit/{revision}"
+    assert (
+        revision_links[0].attrs["href"]
+        == f"https://github.com/dzackgarza/new-qual-site/commit/{revision}"
+    )
     source = footer[0].find_all("a", **{"class": "footer-repository"})
     assert len(source) == 1
     assert source[0].attrs["href"] == "https://github.com/dzackgarza/new-qual-site"
@@ -124,7 +135,9 @@ def test_every_page_carries_generation_and_repository_footer(tmp_path: Path, mon
     assert source[0].find_all("svg") != []
 
 
-def test_random_problem_topic_selector_is_in_the_shared_header(built_fixture: Path) -> None:
+def test_random_problem_topic_selector_is_in_the_shared_header(
+    built_fixture: Path,
+) -> None:
     work = built_fixture
 
     site = work / "build" / "quarto" / "_site"
@@ -153,7 +166,9 @@ def test_random_problem_topic_selector_is_in_the_shared_header(built_fixture: Pa
 
         form = forms[0]
         assert form.attrs["method"] == "get"
-        assert (site / route.parent / form.attrs["action"]).resolve() == site / "problems.html"
+        assert (
+            site / route.parent / form.attrs["action"]
+        ).resolve() == site / "problems.html"
         assert selects[0].attrs["name"] == "area"
         assert form.find_all("input", name="sample")[0].attrs["value"] == "1"
 
@@ -184,13 +199,18 @@ Let $R$ be a ring.
 """
 
 
-def test_problem_lists_survive_display_math_and_keep_nested_items(static_site: Path) -> None:
+def test_problem_lists_survive_display_math_and_keep_nested_items(
+    static_site: Path,
+) -> None:
     """Display math inside one item must not flatten the authored list to prose."""
     page = read_html(static_site / "build" / "quarto" / "_site" / "tag" / "P-LIST.html")
     statement = page.root.find_all("div", **{"class": "card-statement"})[0]
     assert len(statement.find_all("ul")) == 2
     assert any(item.find_all("ul") for item in statement.find_all("li"))
-    assert any(item.find_all("span", **{"class": "math display"}) for item in statement.find_all("li"))
+    assert any(
+        item.find_all("span", **{"class": "math display"})
+        for item in statement.find_all("li")
+    )
 
 
 def test_missing_asset_fails_the_build(tmp_path: Path) -> None:
@@ -261,7 +281,9 @@ A compilation reprints whole exams. Those entries are collections, not problems.
 """
 
 
-def test_every_internal_card_or_asset_link_resolves_in_the_built_site(static_site: Path) -> None:
+def test_every_internal_card_or_asset_link_resolves_in_the_built_site(
+    static_site: Path,
+) -> None:
     """Published card and asset links must name files in the built site.
 
     `SRC-PACKET` lists a sibling collection among its contents, which is the
@@ -279,16 +301,24 @@ def test_every_internal_card_or_asset_link_resolves_in_the_built_site(static_sit
         links.feed(page.read_text())
         for href in [*links.hrefs, *links.srcs]:
             target = html.unescape(href).split("#")[0].split("?", 1)[0]
-            if not target or target.startswith(("http:", "https:", "mailto:", "data:", "//")):
+            if not target or target.startswith(
+                ("http:", "https:", "mailto:", "data:", "//")
+            ):
                 continue
-            if not (re.search(r"(?:^|/)(?:tag|exam|source)/[A-Z]", target) or "/assets/" in f"/{target}" or target.startswith("assets/")):
+            if not (
+                re.search(r"(?:^|/)(?:tag|exam|source)/[A-Z]", target)
+                or "/assets/" in f"/{target}"
+                or target.startswith("assets/")
+            ):
                 continue
             if not (page.parent / target).resolve().exists():
                 dead.append(f"{page.relative_to(site)} -> {href}")
     assert dead == []
 
 
-def test_the_not_found_page_resolves_its_links_from_the_site_root(built_fixture: Path) -> None:
+def test_the_not_found_page_resolves_its_links_from_the_site_root(
+    built_fixture: Path,
+) -> None:
     """404.html is served for a request at any depth, so `../` cannot be used.
 
     It installs a `<base>` naming the site root instead. The stylesheet and the
@@ -346,7 +376,9 @@ One sitting.
 """
 
 
-def test_exams_lists_the_sittings_of_a_year_in_the_order_they_were_sat(static_site: Path) -> None:
+def test_exams_lists_the_sittings_of_a_year_in_the_order_they_were_sat(
+    static_site: Path,
+) -> None:
     """Spring 2019 was sat before Fall 2019, so it is listed first.
 
     Ordering by card id put Fall ahead of Spring in every year on the real
@@ -358,7 +390,9 @@ def test_exams_lists_the_sittings_of_a_year_in_the_order_they_were_sat(static_si
     site = work / "build" / "quarto" / "_site"
     # SRC-UGA-FIX is the fixture corpus's own Spring 2019 sitting.
     sittings = ["SRC-UGA-FIX", "SRC-UGA-FALL-2019", "SRC-UGA-SPRING-2020"]
-    keyed = sorted(sittings, key=lambda name: listing_key(site / "exam" / f"{name}.html"))
+    keyed = sorted(
+        sittings, key=lambda name: listing_key(site / "exam" / f"{name}.html")
+    )
     assert keyed == sittings
 
 
@@ -382,7 +416,9 @@ Exhibit an ideal of $\\mathbb{Z}[x]$ that no single element generates.
 """
 
 
-def test_the_problem_browser_groups_by_area_and_leads_with_prose_titles(static_site: Path) -> None:
+def test_the_problem_browser_groups_by_area_and_leads_with_prose_titles(
+    static_site: Path,
+) -> None:
     """Some titles begin with mathematics, and `$` sorts under every
     letter, so ordering by the raw title opened the page on a wall of formulas
     with nothing above them naming a subject.
@@ -405,7 +441,9 @@ def test_the_problem_browser_groups_by_area_and_leads_with_prose_titles(static_s
     assert keyed["P-PACKET-2"] == formula
 
 
-def test_the_source_index_lists_every_collection_under_its_kind(built_fixture: Path) -> None:
+def test_the_source_index_lists_every_collection_under_its_kind(
+    built_fixture: Path,
+) -> None:
     """The listing held only the 338 sittings.
 
     Munkres, 586 problems and the largest collection on the site, was one of the
@@ -453,7 +491,9 @@ def test_problem_browser_uses_datatables_searchpanes(built_fixture: Path) -> Non
     assert len(page.root.find_all("button", id="practice-print")) == 1
 
 
-def test_sources_are_one_named_route_and_area_labels_come_from_the_registry(built_fixture: Path) -> None:
+def test_sources_are_one_named_route_and_area_labels_come_from_the_registry(
+    built_fixture: Path,
+) -> None:
     site = built_fixture / "build" / "quarto" / "_site"
     home = read_html(site / "index.html")
     main = home.root.find_all("main")[0]
@@ -467,17 +507,25 @@ def test_sources_are_one_named_route_and_area_labels_come_from_the_registry(buil
 def test_a_card_area_is_labelled_by_the_subject_registry(tmp_path: Path) -> None:
     """The label is the subject's wiki title, not the area id title-cased."""
     work = fixture_repo(tmp_path)
-    (work / "wiki" / "Algebra" / "index.md").write_text("---\ntitle: Abstract Algebra\norder: 1\n---\n\n# Abstract Algebra\n")
+    (work / "wiki" / "Algebra" / "index.md").write_text(
+        "---\ntitle: Abstract Algebra\norder: 1\n---\n\n# Abstract Algebra\n"
+    )
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
     card = read_html(work / "build" / "quarto" / "_site" / "tag" / "PRB-INDEXP.html")
     [facts] = card.root.find_all("dl", **{"class": "page-facts"})
     assert "data-pagefind-ignore" in facts.attrs
-    [area] = [fact.find_all("dd")[0].text for fact in facts.find_all("div") if fact.find_all("dt")[0].text == "Area"]
+    [area] = [
+        fact.find_all("dd")[0].text
+        for fact in facts.find_all("div")
+        if fact.find_all("dt")[0].text == "Area"
+    ]
     assert area == "Abstract Algebra"
 
 
-def test_unsolved_problems_are_a_navigation_view_with_prefilled_solution_submission(static_site: Path) -> None:
+def test_unsolved_problems_are_a_navigation_view_with_prefilled_solution_submission(
+    static_site: Path,
+) -> None:
     work = static_site
 
     site = work / "build" / "quarto" / "_site"
@@ -485,7 +533,10 @@ def test_unsolved_problems_are_a_navigation_view_with_prefilled_solution_submiss
     home_links.feed((site / "index.html").read_text())
     assert "problems.html?solution=unsolved" in home_links.hrefs
 
-    rows = {row["id"]: row for row in json.loads((site / "problems.json").read_text())["rows"]}
+    rows = {
+        row["id"]: row
+        for row in json.loads((site / "problems.json").read_text())["rows"]
+    }
     assert rows["PRB-INDEXP"]["solutionStatus"] == "Solved"
     assert rows["P-CENTER"]["solutionStatus"] == "Unsolved"
 
@@ -497,27 +548,52 @@ def test_unsolved_problems_are_a_navigation_view_with_prefilled_solution_submiss
 
     unsolved = LinkCollector()
     unsolved.feed((site / "tag" / "P-CENTER.html").read_text())
-    submission = [href for href in unsolved.hrefs if href.startswith("https://github.com/dzackgarza/new-qual-site/issues/new?")]
+    submission = [
+        href
+        for href in unsolved.hrefs
+        if href.startswith("https://github.com/dzackgarza/new-qual-site/issues/new?")
+    ]
     assert len(submission) == 1
     query = parse_qs(urlsplit(submission[0]).query)
     assert query["template"] == ["solution.yml"]
     assert query["card-id"] == ["P-CENTER"]
     assert query["card-title"] == ["The centre of a nontrivial $p\\dash$group"]
-    assert query["source-appearance"] == ["UGA Algebra qualifying exam, Spring 2019, Problem 7"]
-    assert query["card-url"] == ["https://dzackgarza.github.io/new-qual-site/tag/P-CENTER.html"]
+    assert query["source-appearance"] == [
+        "UGA Algebra qualifying exam, Spring 2019, Problem 7"
+    ]
+    assert query["card-url"] == [
+        "https://dzackgarza.github.io/new-qual-site/tag/P-CENTER.html"
+    ]
 
     solved = LinkCollector()
     solved.feed((site / "tag" / "PRB-INDEXP.html").read_text())
-    assert not any(href.startswith("https://github.com/dzackgarza/new-qual-site/issues/new?") for href in solved.hrefs)
+    assert not any(
+        href.startswith("https://github.com/dzackgarza/new-qual-site/issues/new?")
+        for href in solved.hrefs
+    )
 
 
 def test_solution_issue_form_exposes_every_prefilled_card_field() -> None:
-    issue_form = yaml.safe_load((ROOT / ".github" / "ISSUE_TEMPLATE" / "solution.yml").read_text())
-    fields = {item["id"] for item in issue_form["body"] if item["type"] in {"input", "textarea"}}
-    assert {"card-id", "card-title", "source-appearance", "card-url", "solution"} <= fields
+    issue_form = yaml.safe_load(
+        (ROOT / ".github" / "ISSUE_TEMPLATE" / "solution.yml").read_text()
+    )
+    fields = {
+        item["id"]
+        for item in issue_form["body"]
+        if item["type"] in {"input", "textarea"}
+    }
+    assert {
+        "card-id",
+        "card-title",
+        "source-appearance",
+        "card-url",
+        "solution",
+    } <= fields
 
 
-def test_result_slogan_renders_with_prefilled_suggestion_link(built_fixture: Path) -> None:
+def test_result_slogan_renders_with_prefilled_suggestion_link(
+    built_fixture: Path,
+) -> None:
     work = built_fixture
 
     site = work / "build" / "quarto" / "_site"
@@ -531,12 +607,20 @@ def test_result_slogan_renders_with_prefilled_suggestion_link(built_fixture: Pat
     query = parse_qs(urlsplit(suggestion).query)
     assert query["card-id"] == ["THM-SYLOW"]
     assert query["card-title"] == ["Sylow's first theorem"]
-    assert query["card-url"] == ["https://dzackgarza.github.io/new-qual-site/tag/THM-SYLOW.html"]
+    assert query["card-url"] == [
+        "https://dzackgarza.github.io/new-qual-site/tag/THM-SYLOW.html"
+    ]
 
 
 def test_slogan_issue_form_exposes_every_prefilled_card_field() -> None:
-    issue_form = yaml.safe_load((ROOT / ".github" / "ISSUE_TEMPLATE" / "slogan.yml").read_text())
-    fields = {item["id"] for item in issue_form["body"] if item["type"] in {"input", "textarea"}}
+    issue_form = yaml.safe_load(
+        (ROOT / ".github" / "ISSUE_TEMPLATE" / "slogan.yml").read_text()
+    )
+    fields = {
+        item["id"]
+        for item in issue_form["body"]
+        if item["type"] in {"input", "textarea"}
+    }
     assert {"card-id", "card-title", "card-url", "slogan"} <= fields
 
 
@@ -545,8 +629,13 @@ def test_problem_pagination_is_library_owned(built_fixture: Path) -> None:
     work = built_fixture
 
     app = (work / "build" / "quarto" / "_site" / "app.js").read_text()
-    table_script = (work / "build" / "quarto" / "_site" / "assets" / "scripts" / "catalog-tables.js").read_text()
-    assert "listing-more" not in (work / "build" / "quarto" / "_site" / "problems.html").read_text()
+    table_script = (
+        work / "build" / "quarto" / "_site" / "assets" / "scripts" / "catalog-tables.js"
+    ).read_text()
+    assert (
+        "listing-more"
+        not in (work / "build" / "quarto" / "_site" / "problems.html").read_text()
+    )
     assert "moreButton" not in app
     assert "pageLength: 50" in table_script
     assert 'bottomEnd: "paging"' in table_script
@@ -579,7 +668,9 @@ def test_a_subject_is_called_what_its_wiki_branch_calls_it(static_site: Path) ->
     # above owns both matching ids and their display names.
 
 
-def test_the_build_emits_a_contents_rail_from_authored_headings(static_site: Path) -> None:
+def test_the_build_emits_a_contents_rail_from_authored_headings(
+    static_site: Path,
+) -> None:
     """The in-page Contents rail is built at compile time, not in the browser.
 
     A page's own <h2>/<h3> become the rail, in document order, each anchor
@@ -589,7 +680,9 @@ def test_the_build_emits_a_contents_rail_from_authored_headings(static_site: Pat
     """
     work = static_site
 
-    built = read_html(work / "build" / "quarto" / "_site" / "wiki" / "algebra" / "reading-order.html")
+    built = read_html(
+        work / "build" / "quarto" / "_site" / "wiki" / "algebra" / "reading-order.html"
+    )
     aside = built.root.find_all("aside", id="page-toc")[0]
     assert [a.attrs["href"] for a in aside.find_all("a")] == [
         "#groups",
@@ -604,7 +697,9 @@ def test_the_build_emits_a_contents_rail_from_authored_headings(static_site: Pat
     ]
 
     body = built.root.find_all("article", **{"class": "page-body"})[0]
-    heading_ids = {h.attrs["id"] for h in body.find_all("h2")} | {h.attrs["id"] for h in body.find_all("h3")}
+    heading_ids = {h.attrs["id"] for h in body.find_all("h2")} | {
+        h.attrs["id"] for h in body.find_all("h3")
+    }
     assert heading_ids == {"groups", "sylow", "rings"}
     # The same rail is offered as a disclosure where the layout hides the rail.
     assert built.root.find_all("details", **{"class": "page-toc-narrow"}) != []
@@ -653,17 +748,28 @@ def static_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
             "P-PACKET-1.md": PACKET_PROBLEM,
             "P-PACKET-2.md": FORMULA_TITLED_PROBLEM,
             "SRC-UGA-FALL-2019.md": _uga_sitting("SRC-UGA-FALL-2019", 2019, "fall"),
-            "SRC-UGA-SPRING-2020.md": _uga_sitting("SRC-UGA-SPRING-2020", 2020, "spring"),
+            "SRC-UGA-SPRING-2020.md": _uga_sitting(
+                "SRC-UGA-SPRING-2020", 2020, "spring"
+            ),
         },
     )
     # An unsolved problem listed on the fixture's own exam.
     legacy = work / "corpus" / "EXE-CENTER.md"
-    (work / "corpus" / "P-CENTER.md").write_text(legacy.read_text().replace("id: EXE-CENTER", "id: P-CENTER", 1))
+    (work / "corpus" / "P-CENTER.md").write_text(
+        legacy.read_text().replace("id: EXE-CENTER", "id: P-CENTER", 1)
+    )
     exam = work / "corpus" / "SRC-UGA-FIX.md"
-    exam.write_text(exam.read_text().replace("  area: algebra\n  date:\n", "  area: algebra\n  problems:\n  - id: P-CENTER\n    comment: Problem 7\n  date:\n"))
+    exam.write_text(
+        exam.read_text().replace(
+            "  area: algebra\n  date:\n",
+            "  area: algebra\n  problems:\n  - id: P-CENTER\n    comment: Problem 7\n  date:\n",
+        )
+    )
     # A subject named by its wiki branch rather than by its area id.
     branch = work / "wiki" / "Algebra" / "index.md"
-    branch.write_text(branch.read_text().replace("title: Algebra", "title: Abstract Algebra"))
+    branch.write_text(
+        branch.read_text().replace("title: Algebra", "title: Abstract Algebra")
+    )
     (work / "wiki" / "Algebra" / "reading-order.md").write_text(
         "---\ntitle: Reading Order\norder: 5\n---\n\n# Reading Order\n\n## Groups\n\ntext\n\n### Sylow\n\nmore\n\n## Rings\n\neven more\n"
     )
@@ -675,21 +781,32 @@ def static_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
 def test_a_source_counts_only_the_problem_cards_it_lists(static_site: Path) -> None:
     """SRC-PACKET lists P-PACKET-1 and a reprinted exam listing P-CENTER; the exam itself is not a problem."""
     site = static_site / "build" / "quarto" / "_site"
-    rows = {row["id"]: row for row in json.loads((site / "sources.json").read_text())["rows"]}
+    rows = {
+        row["id"]: row
+        for row in json.loads((site / "sources.json").read_text())["rows"]
+    }
     assert rows["SRC-PACKET"]["worked"] == "0 / 2 solved"
 
 
 def test_an_institution_is_named_by_the_vocabulary(static_site: Path) -> None:
     site = static_site / "build" / "quarto" / "_site"
-    sources = {row["id"]: row for row in json.loads((site / "sources.json").read_text())["rows"]}
+    sources = {
+        row["id"]: row
+        for row in json.loads((site / "sources.json").read_text())["rows"]
+    }
     assert sources["SRC-UGA-FIX"]["institution"] == "University of Georgia"
-    problems = {row["id"]: row for row in json.loads((site / "problems.json").read_text())["rows"]}
+    problems = {
+        row["id"]: row
+        for row in json.loads((site / "problems.json").read_text())["rows"]
+    }
     assert problems["P-CENTER"]["institutions"] == ["University of Georgia"]
 
 
 def test_site_apparatus_is_kept_out_of_the_search_index(built_fixture: Path) -> None:
     """Search excerpts should quote mathematics, not the slogan prompt."""
-    page = read_html(built_fixture / "build" / "quarto" / "_site" / "tag" / "THM-SYLOW.html")
+    page = read_html(
+        built_fixture / "build" / "quarto" / "_site" / "tag" / "THM-SYLOW.html"
+    )
     suggest = page.root.find_all("a", **{"class": "result-slogan-suggest"})[0]
     assert "data-pagefind-ignore" in suggest.attrs
 
@@ -702,25 +819,43 @@ def test_default_problem_order_is_by_first_area_then_title(tmp_path: Path) -> No
 
     def card(card_id: str, title: str, areas: list[str]) -> str:
         text = base.replace("PRB-INDEXP", card_id)
-        text = text.replace("title: Show a subgroup of index $p$ in a $p\\dash$group is normal", f"title: {title}")
-        return text.replace("  areas:\n  - algebra\n", "  areas:\n" + "".join(f"  - {area}\n" for area in areas))
+        text = text.replace(
+            "title: Show a subgroup of index $p$ in a $p\\dash$group is normal",
+            f"title: {title}",
+        )
+        return text.replace(
+            "  areas:\n  - algebra\n",
+            "  areas:\n" + "".join(f"  - {area}\n" for area in areas),
+        )
 
     work = fixture_repo(
         tmp_path,
         {
-            "P-ORDAG.md": card("P-ORDAG", "Aaa geometric problem", ["algebraic-geometry"]),
-            "P-ORDMULTI.md": card("P-ORDMULTI", "Aaa shared problem", ["algebra", "topology"]),
+            "P-ORDAG.md": card(
+                "P-ORDAG", "Aaa geometric problem", ["algebraic-geometry"]
+            ),
+            "P-ORDMULTI.md": card(
+                "P-ORDMULTI", "Aaa shared problem", ["algebra", "topology"]
+            ),
             "P-ORDALG.md": card("P-ORDALG", "Zzz algebra problem", ["algebra"]),
         },
     )
     branch = work / "wiki" / "algebraic-geometry"
     branch.mkdir()
-    (branch / "index.md").write_text("---\ntitle: Algebraic Geometry\norder: 1\n---\n\n# Algebraic Geometry\n")
+    (branch / "index.md").write_text(
+        "---\ntitle: Algebraic Geometry\norder: 1\n---\n\n# Algebraic Geometry\n"
+    )
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
 
-    rows = json.loads((work / "build" / "quarto" / "_site" / "problems.json").read_text())["rows"]
-    ordered = [row["id"] for row in sorted(rows, key=lambda row: row["order"]) if row["id"].startswith("P-ORD")]
+    rows = json.loads(
+        (work / "build" / "quarto" / "_site" / "problems.json").read_text()
+    )["rows"]
+    ordered = [
+        row["id"]
+        for row in sorted(rows, key=lambda row: row["order"])
+        if row["id"].startswith("P-ORD")
+    ]
     assert ordered == ["P-ORDALG", "P-ORDMULTI", "P-ORDAG"]
 
 
@@ -730,15 +865,22 @@ def test_a_search_excerpt_is_never_cut_inside_mathematics() -> None:
     import subprocess
 
     app = (ROOT / "site" / "app.js").read_text()
-    source = app[app.index("const MATH_DELIMITER") : app.index("const randomProblem")]
+    source = app[app.index("const MATH_DELIMITER") : app.index("const dialog")]
     cases = {
         "Consider the ideal generated by two polynomials in the plane, whose radical is wanted: "
         + r"\(I = (x^2 - y^3,\; x - y^2) \subseteq \CC[x, y]\)"
         + " and more.": "Consider the ideal generated by two polynomials in the plane, whose radical is wanted: …",
-        "Determine I for " + r"\[ I\definedas" : "Determine I for …",
+        "Determine I for " + r"\[ I\definedas": "Determine I for …",
         "Short " + r"\(x\)" + " text.": "Short " + r"\(x\)" + " text.",
         "a" * 130: "a" * 120 + " …",
     }
-    script = source + "\nconst cases = " + json.dumps(list(cases)) + ";\nconsole.log(JSON.stringify(cases.map((text) => excerptOf(text, 120))));\n"
-    result = subprocess.run(["node", "-e", script], capture_output=True, text=True, check=True)
+    script = (
+        source
+        + "\nconst cases = "
+        + json.dumps(list(cases))
+        + ";\nconsole.log(JSON.stringify(cases.map((text) => excerptOf(text, 120))));\n"
+    )
+    result = subprocess.run(
+        ["node", "-e", script], capture_output=True, text=True, check=True
+    )
     assert json.loads(result.stdout) == list(cases.values())
