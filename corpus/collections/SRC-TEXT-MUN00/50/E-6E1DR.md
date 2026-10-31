@@ -42,7 +42,7 @@ Second-countability is hereditary to all subspaces, so $X$ has a countable basis
 
 ::: pf-step
 **Finite topological dimension:** By the dimension properties of Euclidean space, $\dim \RR^N = N$.
-Topological dimension is monotonic on subspaces, so $\dim X = \dim h(X) \le N < \infty$.
+The image $h(X)$ is closed, so dimension monotonicity for closed subspaces gives $\dim X = \dim h(X) \le N < \infty$.
 :::
 
 :::
@@ -50,40 +50,16 @@ Topological dimension is monotonic on subspaces, so $\dim X = \dim h(X) \le N < 
 :::
 
 ::: {.pf-step #s2}
-Converse implication ($\impliedby$): Suppose $X$ is locally compact Hausdorff, second-countable, with topological dimension $\dim X = m < \infty$.
+Converse implication ($\impliedby$): Suppose $X$ is locally compact Hausdorff, second-countable, with finite topological dimension.
 
 ::: pf-proof
 
 ::: pf-step
-**One-point compactification:** Let $X^* = X \cup \{\infty\}$ be the one-point compactification of $X$.
-Since $X$ is locally compact Hausdorff and second-countable, $X^*$ is a compact metrizable space with $\dim X^* = \dim X = m$.
+If $X=\varnothing$, it is closed in $\RR^0$. Otherwise let $m=\dim X\ge0$. Every compact subspace $K$ is closed in the Hausdorff space $X$, so $\dim K\le m$ by dimension monotonicity for closed subspaces.
 :::
 
 ::: pf-step
-**Embedding of compactification:** By the imbedding theorem for compact metrizable spaces (Theorem 50.5), a compact metrizable space of topological dimension $m$ imbeds in $\RR^{2m+1}$, so there exists a topological embedding $g: X^* \to \RR^{2m+1}$.
-:::
-
-::: pf-step
-**Construction of closed embedding into $\RR^{2m+2}$:** Let $p_0 = g(\infty) \in \RR^{2m+1}$.
-For $x \in X$, $g(x) \neq p_0$.
-Define $F: X \to \RR^{2m+1} \times \RR = \RR^{2m+2}$ by: $$F(x) = \left( g(x), \frac{1}{\norm{g(x) - p_0}} \right).$$
-:::
-
-::: pf-step
-**Embedding and properness:**
-- Since $g$ and $\norm{\cdot - p_0}^{-1}$ are continuous, $F$ is continuous.
-
-- Since $g\restrict_X$ is injective, $F$ is injective.
-
-- If a sequence $(x_k)$ in $X$ leaves every compact set of $X$, then $x_k \to \infty$ in $X^*$.
-
-- Then $g(x_k) \to g(\infty) = p_0$, so $\norm{g(x_k) - p_0} \to 0$, which forces the last coordinate $\frac{1}{\norm{g(x_k) - p_0}} \to \infty$.
-
-- Hence $\norm{F(x_k)} \to \infty$, showing that $F$ is a proper map.
-:::
-
-::: pf-step
-Any proper continuous injection into a Hausdorff space is a closed embedding, so $F(X)$ is closed in $\RR^{2m+2}$.
+For nonempty $X$, [[E-26ELV]] embeds a locally compact Hausdorff space with a countable basis whose compact subspaces have dimension at most $m$ as a closed subspace of $\RR^{2m+1}$. Apply it to $X$.
 :::
 
 :::
@@ -91,7 +67,7 @@ Any proper continuous injection into a Hausdorff space is a closed embedding, so
 :::
 
 ::: pf-qed
-Step [](#s1){.pf-ref} proves the forward implication, and step [](#s2){.pf-ref} imbeds $X$ as a closed subspace of $\RR^N$ with $N = 2m+2$.
+Step [](#s1){.pf-ref} proves the forward implication, and step [](#s2){.pf-ref} imbeds $X$ as a closed subspace of some Euclidean space.
 :::
 
 :::
