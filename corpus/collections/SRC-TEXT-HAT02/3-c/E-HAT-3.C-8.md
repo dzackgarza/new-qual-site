@@ -61,11 +61,5 @@ A\otimes B
 $$
 where the second map interchanges the middle two factors with the Koszul sign.
 
-Coassociativity follows immediately from coassociativity of $\Delta_A$ and $\Delta_B$ together with associativity of the graded symmetry. The counit is
-$$
-\varepsilon_A\otimes\varepsilon_B,
-$$
-and the two counit identities follow factorwise. Finally, $\Delta_{A\otimes B}$ is an algebra homomorphism because $\Delta_A$ and $\Delta_B$ are algebra homomorphisms and the Koszul sign in the middle interchange is exactly the sign required by the graded tensor-product multiplication.
-
-Thus $A\otimes B$ satisfies the Hopf-algebra axioms.
+The degree-zero part of $A\otimes B$ is the coefficient ring. For every positive-degree element $z$, the degree-zero terms of its coproduct are $z\otimes1$ and $1\otimes z$; every remaining term has positive degree in both factors. This follows by expanding the corresponding formulas in $A$ and $B$. The displayed coproduct is an algebra homomorphism because the graded interchange is an algebra isomorphism and $\Delta_A,\Delta_B$ are algebra homomorphisms. These are the Hopf-algebra conditions used here.
 :::
