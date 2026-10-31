@@ -95,14 +95,15 @@ $$
 p_X(t)=\frac{1-t^{2n+2}}{1-t^2}.
 $$
 
-For the analogous pushout $Y$ associated to $\CP^\infty\to\quatprojective^\infty$, the pair $(Y,\quatprojective^n)$ is the same cellular pair as $(\CP^\infty,\CP^{2n+1})$. Thus, over every field,
+For the analogous pushout $Y$ associated to $\CP^\infty\to\quatprojective^\infty$, the pair $(Y,\quatprojective^n)$ has the cells of $(\CP^\infty,\CP^{2n})$. Thus, over every field,
 $$
 H^*(Y;F)
 $$
-has one generator in degrees $0,4,8,\ldots,4n$ and one generator in every even degree $\ge4n+4$, with no other groups. Therefore
+has one generator in degrees $0,4,8,\ldots,4n$ and one generator in every even degree $\ge4n+2$, with no other groups. Therefore
 $$
 \boxed{
-p_Y(t)=1+t^4+\cdots+t^{4n}+\frac{t^{4n+4}}{1-t^2}.
+p_Y(t)=1+t^4+\cdots+t^{4n}+\frac{t^{4n+2}}{1-t^2}
+=\frac{1+t^{4n+2}}{1-t^4}.
 }
 $$
 These formulas complete the Poincaré-series calculation for all spaces in Exercises 12--14.
