@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SMI-8000E-GA3
 kind: problem
-title: Kernels of maps onto Z are free abelian of rank one higher
+title: An extension of $\ZZ$ by $\ZZ^s$ is free of rank $s+1$
 classification:
   areas:
   - algebra
