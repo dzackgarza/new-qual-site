@@ -37,8 +37,11 @@ audit:
     vertex/edge of Gamma has n preimages", "the correspondence theorem for the
     quotient"), and three closing steps plus the qed only named earlier steps.
     Every step now carries a complete-sentence argument, and the closing step
-    says why the count for F bounds the count for G. This replacement proof is a
-    repair awaiting machine certification; no artifact covers it yet.
+    says why the count for F bounds the count for G. The finiteness claim the proof
+    rests on is certified in Lean in proofs/cards/SubgroupFiniteness.lean:
+    a group with a finite generating family has only finitely many subgroups of a
+    given nonzero index, via finiteness of homomorphisms into Equiv.Perm (Fin m) and
+    the coset action on G/H.
 - event: solution-reviewed
   by: claude
   date: 2026-10-31
