@@ -31,7 +31,6 @@ Conclude that $X_f$ is an open subset of $X$.
 (b) Assume that $X$ is quasi-compact.
 Let $A = \Gamma(X, \OO_X)$ and let $a \in A$ be an element whose restriction to $X_f$ is $0$.
 Show that $f^n a = 0$ for some $n > 0$.
-Hint: use an open affine cover of $X$.
 
 (c) Now assume that $X$ has a finite cover by open affines $U_i$ such that each intersection $U_i \intersect U_j$ is quasi-compact.
 This hypothesis is satisfied, for example, if $\underlyingspace{X}$ is noetherian.
@@ -39,6 +38,10 @@ Let $b \in \Gamma(X_f, \OO_{X_f})$.
 Show that for some $n > 0$ the section $f^n b$ is the restriction of an element of $A$.
 
 (d) With the hypothesis of (c), conclude that $\Gamma(X_f, \OO_{X_f}) \cong A_f$.
+:::
+
+::: {.hint}
+(b) Use an open affine cover of $X$.
 :::
 
 ::: {.solution}

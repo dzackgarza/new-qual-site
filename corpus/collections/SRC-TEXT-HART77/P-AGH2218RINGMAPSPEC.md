@@ -37,6 +37,10 @@ Show furthermore that in that case $f$ is dominant, that is, $f(Y)$ is dense in 
 (d) Prove the converse to (c): if $f: Y \to X$ is a homeomorphism onto a closed subset and $f^{\sharp}: \OO_X \to f_* \OO_Y$ is surjective, then $\phi$ is surjective.
 :::
 
+::: {.hint}
+(d) Consider $X' = \Spec\qty{A/\ker \phi}$ and use parts (b) and (c).
+:::
+
 ::: {.solution}
 
 ::: pf
@@ -235,8 +239,4 @@ Step [](#df-empty-iff-nilpotent){.pf-ref} proves part (a), steps [](#phi-injecti
 
 :::
 
-:::
-
-::: {.remark}
-For part (d), consider $X' = \Spec\qty{A/\ker \phi}$ and apply parts (b) and (c).
 :::

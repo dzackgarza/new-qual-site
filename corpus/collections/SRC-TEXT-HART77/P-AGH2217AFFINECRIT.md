@@ -29,6 +29,10 @@ audit:
 (b) A scheme $X$ is affine if and only if there is a finite set of elements $f_1, \ldots, f_r \in A = \Gamma(X, \OO_X)$ such that the open subsets $X_{f_i}$ are affine and $f_1, \ldots, f_r$ generate the unit ideal in $A$.
 :::
 
+::: {.hint}
+(b) Use Hartshorne II.2.4 and II.2.16(d).
+:::
+
 ::: {.solution}
 
 ::: pf
@@ -233,8 +237,4 @@ Steps [](#local-inverses-glue-to-g){.pf-ref} and [](#g-inverse-to-f-isomorphism)
 
 :::
 
-:::
-
-::: {.remark}
-Part (b) uses Hartshorne II.2.4 and II.2.16(d).
 :::
