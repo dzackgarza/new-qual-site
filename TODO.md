@@ -242,7 +242,7 @@ mathematical correction under its own node, not under copy policy.
   - [x] SRC-MATH8100-FALL-2019-ASSIGNMENTS
   - [x] SRC-MATHEMATICAL-TRIVIUM
   - [x] SRC-MAXIM-PROBLEMS-ALGEBRAIC-TOPOLOGY
-  - [ ] SRC-MGSA-COMM-ALG-ORAL
+  - [x] SRC-MGSA-COMM-ALG-ORAL
   - [ ] SRC-MGSA-COMPLEX-ORAL
   - [ ] SRC-MGSA-FIELDS-ORAL
   - [ ] SRC-MGSA-GROUPS-ORAL
