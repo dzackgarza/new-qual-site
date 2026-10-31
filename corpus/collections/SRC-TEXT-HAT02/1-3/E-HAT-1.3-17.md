@@ -26,80 +26,20 @@ Given a group $G$ and a normal subgroup $N$, show that there exists a normal cov
 ::: pf
 
 ::: pf-step
-
-Choose a CW complex $X$ with $\pi_1(X) \cong G$ (e.g., the presentation complex of $G$; a $K(G,1)$).
-
-::: pf-proof
-
-every group is the fundamental group of a CW complex (attach $2$-cells for relations and kill higher homotopy).
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Let $p : \tilde X \to X$ be the connected covering corresponding to the subgroup $N \le \pi_1(X) \cong G$.
+There is a connected CW complex $X$ with $\pi_1(X)\cong G$.
 
 ::: pf-proof
-
-covering space theory (for nice $X$, connected coverings are classified by conjugacy classes of subgroups of $\pi_1$).
-
+Choose a presentation of $G$. Form a CW complex with one vertex, one $1$-cell for each generator, and one $2$-cell attached along each relator. Van Kampen identifies its fundamental group with the presented group $G$. A CW complex is locally path connected and semilocally simply connected, so the covering classification applies.
 :::
 
 :::
 
-::: {.pf-step #s3}
-
-Then $\pi_1(\tilde X) \cong N$.
+::: pf-step
+The connected covering of $X$ corresponding to $N\leq G$ has fundamental group isomorphic to $N$ and deck group isomorphic to $G/N$.
 
 ::: pf-proof
-
-Step [](#s2){.pf-ref} ($p_*(\pi_1(\tilde X)) = N$).
-
+Choose an isomorphism $\pi_1(X)\cong G$ and use the covering-space classification for the subgroup corresponding to $N$. The covering map injects its fundamental group with image $N$, giving $\pi_1(\widetilde X)\cong N$. Since $N$ is normal, the covering is normal, and the deck transformation group is $\pi_1(X)/N\cong G/N$.
 :::
-
-:::
-
-::: {.pf-step #s4}
-
-The covering is normal iff $N$ is normal in $\pi_1(X)$.
-
-::: pf-proof
-
-a covering is normal (regular) iff the corresponding subgroup is normal.
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-Hence, since $N \triangleleft G$, the covering $\tilde X \to X$ is normal.
-
-::: pf-proof
-
-Step [](#s4){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-The group of deck transformations is $G(\tilde X) \cong \pi_1(X)/p_*(\pi_1(\tilde X)) \cong G/N$.
-
-::: pf-proof
-
-for a normal covering, the deck group is the quotient of the base fundamental group by the image of the covering.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s3){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}.
 
 :::
 
