@@ -21,11 +21,14 @@ audit:
   date: 2026-09-17
 ---
 
-::: problem
+::: {.problem}
 Show that a composition of projective morphisms is projective.
 Conclude that projective morphisms have the stability properties (a)--(f) of (Ex. 4.8) above.
 
-*Hint:* use the Segre embedding defined in (I, Ex. 2.14), and show that it gives a closed immersion $\PP^r \times \PP^s \injects \PP^{r + s + rs}$.
+:::
+
+::: {.hint}
+Use the Segre embedding of I.2.14 to give a closed immersion $\PP^r \times \PP^s \injects \PP^{r+s+rs}$.
 :::
 
 ::: {.solution}
@@ -268,12 +271,6 @@ Hartshorne II.4.8 proves formally that any class of morphisms satisfying (a)--(c
 Applying that exercise to projective morphisms using step [](#s9){.pf-ref} proves (d)--(f) as well.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s6){.pf-ref} proves closure under composition, and step [](#s10){.pf-ref} gives the requested stability package.
 
 :::
 
