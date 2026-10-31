@@ -52,7 +52,7 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   A reader who insists the sheet means "nonzero" by implication is reading in a hypothesis the page does not print.
 
 - **Repair:** the card now requires $L\ne0$, with a `source-corrected` audit note pointing here; the solution proves both directions of the corrected statement.
-  Nothing waits on the sheet's author.
+  The correction is certified: `proofs/cards/FieldHomework1.lean` proves that `L = ⊥` satisfies the printed hypothesis for every $\alpha$, and proves both directions of the corrected statement, with `#print axioms` showing no `sorryAx`.
 
 ### TAMU Spring 2015 problem 10 states (i) without the closedness of $Y$
 
@@ -71,6 +71,7 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Uncertainty:** verified, with the counterexample above; the remaining question is only whether the exam intended the closed case, which the printed text does not say.
 
 - **Repair:** the card's statement now says "a closed subspace $Y$", with a `source-corrected` audit note carrying the counterexample, and the card is solved.
+  The *replacement* is not certified: no Lean or Sage artifact establishes statements (i)–(iii) with closedness, so the card marks it proposed and `TODO.md` carries an open certification node.
 
 ### UCSD covering-spaces subgroup matching card holds no recoverable posed task
 

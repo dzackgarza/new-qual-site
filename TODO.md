@@ -17,6 +17,7 @@ open tasks. A prior tick alone is not evidence of that condition.
 | `ad-text-mun00` | none | Do the same for `SRC-TEXT-MUN00`. |
 | `ad-text-ss03-gaps` | none | Compare `SRC-TEXT-SS03` with the book and add missing cards, one item at a time: chapter 2 problems 4–5; chapter 4 problems 3*–4*; chapter 5 exercises 15–17; chapter 7 exercises 5–12; chapter 8 problems 4–9; chapter 9 problems 2–3; chapter 10 problem 1 and problems 5 onward. Verify existing-card identity before adding each card. |
 | `ad-text-hk71-locators` | none | Check every `SRC-TEXT-HK71` appearance locator in sections 7.1–10.4 against the book; correct each mismatch. |
+| `certify-card-corrections` | none | A mathematical correction to a card is settled only with a Lean formalization or an exact Sage proof/certificate of the corrected claim, published under `proofs/`. A source transcription proves what the source prints, and a counterexample refutes the printed claim without establishing the replacement. Open here: the closedness hypothesis added to `P-TAMURAS15-10`, and the rewritten finiteness proof of `E-HAT-1.A-8`. `P-FHW1-01` is certified by `proofs/cards/FieldHomework1.lean`. |
 | `ad-source-gaps-nus` | none | Recover the NUS 1970 examination papers, or leave `SRC-NUS-CA-1970-SPRING` and `SRC-NUS-RA-1970-SPRING` marked as imported-only in their provenance and title. A dataset that answers *what the import said* does not answer *what the examination asked*. |
 | `audited-deployment` | `ad-text-hart77`, `ad-text-hun74`, `ad-text-smi`, `ad-text-hat02`, `ad-text-mun00`, `ad-text-ss03-gaps`, `ad-text-hk71-locators`, `ad-source-gaps-nus` | Finish the reading checklist and all repairs; only then close this node. |
 | `unsolved-contribution` | none | Continue issue #2 by selecting, reading, proving, reviewing, and committing each unsolved problem card in source order. |
@@ -38,6 +39,11 @@ repository or in a reachable archive. That unresolved source question is recorde
 `ad-source-gaps` questions were settled from documents.
 “Theorem 6.1” of RA-WORKSHOP D7-W3 is that sheet's own numbering for [Rud76, Thm. 7.12],
 the continuity of a uniform limit of continuous functions.
+
+`certify-card-corrections` is open. `P-FHW1-01` is settled: `proofs/cards/FieldHomework1.lean` proves that the
+printed hypothesis holds for $L=0$ and proves both directions of the corrected statement, with no `sorryAx`.
+`P-TAMURAS15-10` keeps both the printed statement and the proposed closedness hypothesis, and its correction is
+marked proposed. `E-HAT-1.A-8`'s rewritten proof is marked as awaiting certification.
 
 `ad-text-hat02` is partly read, against the book itself
 (`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §2.1; proofs are

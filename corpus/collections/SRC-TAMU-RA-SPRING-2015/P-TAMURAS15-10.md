@@ -28,7 +28,9 @@ audit:
     bracket. Every phi in S is bounded for 2||.|| on X and vanishes on the dense
     subspace Y, hence is zero, so ||x||_2 = 0 for every x and ||.||_2 is not a
     norm. The statement now requires Y closed, which is what the proof of (i)
-    uses. COMPLAINTS.md records the source defect.
+    uses. That replacement is a proposed correction: the counterexample refutes
+    the printed claim but does not establish the corrected one, and no
+    machine-checked certificate exists yet. COMPLAINTS.md records both facts.
 - event: solution-written
   by: claude
   date: 2026-10-31
@@ -125,4 +127,10 @@ for every $x\in X$.
 :::
 
 :::
+:::
+
+::: {.remark}
+The paper prints problem 10 with a subspace $Y$ and no closedness hypothesis.
+As printed, statement (i) fails: for $X=C[0,1]$ with the sup norm, $Y$ the polynomials and $\norm y_1=2\norm y$, every $\varphi\in S$ is bounded and vanishes on a dense subspace, so $S=\{0\}$ and $\norm x_2=0$ for every $x$.
+The statement above adds closed; that replacement is proposed and not certified.
 :::

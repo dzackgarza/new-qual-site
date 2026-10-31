@@ -1,0 +1,3 @@
+# Type-check every proof artifact
+check:
+    @for f in $(find . -name '*.lean'); do echo "lean $f"; lean "$$f"; done

@@ -21,8 +21,10 @@ audit:
     alpha L inside L and states no nonvanishing condition. With L = {0} the
     condition holds for every alpha in F, so the converse direction fails as
     the sheet writes it (for F = K(t) and alpha = t no nonzero such L exists).
-    The statement now requires L to be nonzero; COMPLAINTS.md records the
-    source defect.
+    The statement now requires L to be nonzero. Both directions of the corrected
+    statement, and the fact that the printed hypothesis holds for L = 0, are
+    certified in Lean in proofs/cards/FieldHomework1.lean; COMPLAINTS.md records
+    the source defect and the certificate.
 - event: solution-written
   by: claude
   date: 2026-10-31
@@ -71,4 +73,10 @@ Both are monic, so they are equal.
 
 :::
 
+:::
+
+::: {.remark}
+The sheet prints problem 1(a) with no nonvanishing condition on $L$, and with $L=\{0\}$ the printed hypothesis holds for every $\alpha\in F$, so the printed statement is false.
+The statement above adds $L\ne0$.
+The refutation of the printed form and both directions of the corrected form are checked in Lean in `proofs/cards/FieldHomework1.lean`.
 :::
