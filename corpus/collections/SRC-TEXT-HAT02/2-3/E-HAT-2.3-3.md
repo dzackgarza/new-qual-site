@@ -31,53 +31,19 @@ Deduce that there are suspension isomorphisms $\tilde{h}_n(X) \approx \tilde{h}_
 :::
 
 ::: {.solution}
-::: pf
-
-::: {.pf-step #s1}
-One has $\widetilde h_n(*)=0$ for every $n$.
-
-::: pf-proof
-The identity map of a point equals the constant map. By the reduced dimension axiom (equivalently, by exactness applied to the trivial pair), the reduced theory has zero coefficient group on a point. Hence $\widetilde h_n(*)=0$.
-:::
-
-:::
-
-::: {.pf-step #s2}
-Let $CX$ be the cone on $X$. Then
+Apply the exactness axiom to the CW pair $(*,*)$. The inclusion $*\to *$ and the quotient map $*\to */*=*$ are both the identity. Thus the exact sequence contains
 $$
-\widetilde h_n(CX)=0
+\widetilde h_n(*)\xrightarrow{\mathrm{id}}\widetilde h_n(*)
+\xrightarrow{\mathrm{id}}\widetilde h_n(*).
 $$
-for all $n$.
+The image of the first map is the whole group, while the kernel of the second is zero. Exactness forces $\widetilde h_n(*)=0$ for every $n$.
 
-::: pf-proof
-The cone is contractible, so homotopy invariance and step [](#s1){.pf-ref} give the result.
-:::
-
-:::
-
-::: {.pf-step #s3}
-The pair $(CX,X)$ gives natural isomorphisms
+Let $CX$ be the cone on $X$. It is contractible, so homotopy invariance gives $\widetilde h_k(CX)=0$ for every $k$. The exact sequence of the CW pair $(CX,X)$ therefore contains
 $$
-\widetilde h_{n+1}(CX,X)\cong\widetilde h_n(X).
+0=\widetilde h_{n+1}(CX)
+\longrightarrow\widetilde h_{n+1}(CX/X)
+\xrightarrow{\partial}\widetilde h_n(X)
+\longrightarrow\widetilde h_n(CX)=0.
 $$
-
-::: pf-proof
-In the long exact sequence of the pair, the two adjacent groups of $CX$ vanish by step [](#s2){.pf-ref}, so the connecting map is an isomorphism.
-:::
-
-:::
-
-::: pf-step
-Since $CX/X\cong SX$, excision identifies
-$$
-\widetilde h_{n+1}(CX,X)\cong\widetilde h_{n+1}(SX).
-$$
-Combining with step [](#s3){.pf-ref} yields
-$$
-\boxed{\widetilde h_n(X)\cong\widetilde h_{n+1}(SX)}.
-$$
-:::
-
-:::
-
+Since $CX/X\cong SX$, the boundary map gives the required suspension isomorphism.
 :::
