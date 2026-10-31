@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-We say a sequence $\{a_n\}$ in $[0,1]$ is equi-distributed if for all interval $[c,d] \subset [0,1]$, $\lim_{n\to\infty} \frac{\cardinality{\{a_1,\dots,a_n\}\cap[c,d]}}{n} = d-c$.
+We say a sequence $\{a_n\}$ in $[0,1]$ is equi-distributed if for all intervals $[c,d] \subset [0,1]$, $\lim_{n\to\infty} \frac{\cardinality{\{a_1,\dots,a_n\}\cap[c,d]}}{n} = d-c$.
 Prove that $\{a_n\}$ in $[0,1]$ is equi-distributed iff $\lim_{n\to\infty} \int f d\mu_n = \int f dm$ for all $f \in C[0,1]$, where $\mu_n = \frac{1}{n}\sum_{k=1}^n \delta_{a_k}$.
 :::
 
@@ -34,7 +34,7 @@ Now, fix a $n$ big enough such that $6/n<\epsilon$ and $\abs{\int f_n d\mu_k - \
 This implies that whenever $k>K_n$, $\abs{\int \chi_{[c,d]}d\mu_k - \int \chi_{[c,d]}dm} \le \int\abs{f_n-\chi_{[c,d]}}d\mu_k + \abs{\int f_n d\mu_k - \int f_n dm} + \int \abs{f_n-\chi_{[c,d]}}dm \le 6/n+2\epsilon < 3\epsilon$.
 We are done.
 
-In the converse, If for all interval $[c,d] \subset [0,1]$, $\lim_{n\to\infty} \int \chi_{[c,d]} d\mu_n = \int \chi_{[c,d]} dm$.
+In the converse, If for all intervals $[c,d] \subset [0,1]$, $\lim_{n\to\infty} \int \chi_{[c,d]} d\mu_n = \int \chi_{[c,d]} dm$.
 Then we pass to all step functions.
 For any continuous function $f \in C[0,1]$, we can use step functions to approximate $f$ under the norm $\norm{\cdot}_\infty$, say for every $\epsilon>0$, there is a $0=x_0<x_1<\dots<x_N=1$ such that for all $n\le N$, $\abs{\max_{x_n\le x\le x_{n+1}} f(x) - \min_{x_n\le x\le x_{n+1}} f(x)}<\epsilon$.
 Now, define $g=\sum_{n=0}^N a_n \chi_{[x_n,x_{n+1}]}$ where $a_n$ is an arbitrary number between $\min_{x_n\le x\le x_{n+1}} f(x)$ and $\max_{x_n\le x\le x_{n+1}} f(x)$.

@@ -14,7 +14,8 @@ review: draft
 ---
 
 ::: {.problem}
-Show that every continuous convex function $f$ defined on the closed unit ball of a reflexive Banach space $X$ can achieve the minimum
+Show that every convex continuous function defined on the closed unit ball of a reflexive Banach space achieves a minimum.
+(A convex function on a convex subset $A$ of a normed space is a real valued function $f$ on $A$ such that for every $x,y\in A$ and every $0<\lambda<1$ we have $f(\lambda x+(1-\lambda)y)\le\lambda f(x)+(1-\lambda)f(y)$.)
 :::
 
 ::: {.solution}
