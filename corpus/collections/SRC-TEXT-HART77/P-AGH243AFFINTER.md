@@ -199,12 +199,6 @@ Thus the two affine opens $U_1,U_2\subseteq X$ have nonaffine intersection, so $
 
 :::
 
-::: pf-qed
-
-Step [](#s4){.pf-ref} proves the theorem and step [](#s5){.pf-ref} gives the requested nonseparated example.
-
-:::
-
 :::
 
 :::
