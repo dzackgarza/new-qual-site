@@ -128,7 +128,7 @@ $$
 In degree zero, the empty-index component is the constant sheaf on $X$.
 Every pair of omitted indices occurs with opposite signs in the next differential, so $d^2=0$.
 
-To verify exactness, fix $x\in X$ and let $T=\{i:x\in H_i\}$.
+To verify exactness, fix $x\in X$ and let $T=\{i \st x\in H_i\}$.
 If $T$ is empty, then $x\in U$ and the stalk complex is the identity $\ZZ\to\ZZ$ followed by zeros.
 If $T$ is nonempty, its cardinality is at most $n$ by step [](#s3){.pf-ref}.
 The stalk of $\ZZ_U$ is zero, and the remaining stalk complex has one copy of $\ZZ$ for every subset of $T$, including the empty subset, with the displayed alternating maps.
