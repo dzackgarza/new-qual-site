@@ -43,6 +43,23 @@ def run_queue(repo: Path, *args: str) -> subprocess.CompletedProcess[str]:
     )
 
 
+def test_incremental_queue_rejects_missing_committed_corpus(tmp_path: Path) -> None:
+    repo = tmp_path / "repo"
+    repo.mkdir()
+    (repo / "README.md").write_text("A repository without a corpus.\n")
+    subprocess.run(["git", "init", "-q"], cwd=repo, check=True)
+    subprocess.run(["git", "config", "user.name", "Test"], cwd=repo, check=True)
+    subprocess.run(["git", "config", "user.email", "test@example.invalid"], cwd=repo, check=True)
+    subprocess.run(["git", "add", "."], cwd=repo, check=True)
+    subprocess.run(["git", "-c", "core.hooksPath=/dev/null", "commit", "-qm", "baseline"], cwd=repo, check=True)
+    base = subprocess.run(["git", "rev-parse", "HEAD"], cwd=repo, check=True, capture_output=True, text=True).stdout.strip()
+
+    result = run_queue(repo, "--incremental-range", base)
+
+    assert result.returncode != 0
+    assert "corpus" in result.stderr
+
+
 def test_incremental_range_matches_full_rebuild_over_committed_changes(tmp_path: Path) -> None:
     """At push time Queue C is updated from the commits being pushed, not the index."""
     repo = fixture_repo(tmp_path)
