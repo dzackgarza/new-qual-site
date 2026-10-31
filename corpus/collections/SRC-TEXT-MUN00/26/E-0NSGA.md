@@ -171,3 +171,7 @@ This is a finite subcover of $\mathcal{U}$ covering $G$. Hence $G$ is compact. Q
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The supplementary nets exercise gives another proof of (a). If $x\in\overline{A\cdot B}$, choose a net $a_\alpha b_\alpha\to x$ with $a_\alpha\in A$ and $b_\alpha\in B$. Compactness gives a subnet $b_{\alpha_\beta}\to b\in B$; along that subnet, $a_{\alpha_\beta}=(a_{\alpha_\beta}b_{\alpha_\beta})b_{\alpha_\beta}^{-1}\to xb^{-1}\in A$, since $A$ is closed. Thus $x=(xb^{-1})b\in A\cdot B$. For metrizable $G$, convergent sequences replace these nets.
+:::

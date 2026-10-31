@@ -557,8 +557,8 @@ source:
       comment: Munkres §29 Supplementary
     - id: E-GYVM8
       comment: Munkres §29 Supplementary
-    - id: E-XVP93
-      comment: Munkres §29 Supplementary
+    - id: E-0NSGA
+      comment: Munkres §29 Supplementary, net proof of §26.13(a)
     - id: E-TRFP3
       comment: Munkres §29 Supplementary
   - name: '30'
