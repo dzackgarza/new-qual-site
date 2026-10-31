@@ -100,6 +100,8 @@ source:
     comment: Sheet 6, Problem 1
   - id: P-UCTOP290-S6-2
     comment: Sheet 6, Problem 2
+  - id: P-UCTOP290-S6-3
+    comment: Sheet 6, Problem 3
   - P-AMD-M3CYGD2R
   - P-AMD-DDQM3X6Q
   - P-AMD-6KL53YZC
