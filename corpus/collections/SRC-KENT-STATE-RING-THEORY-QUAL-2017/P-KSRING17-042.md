@@ -15,6 +15,10 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 42 of the retained Kent State Algebra Qualifying Exam Problems — Ring Theory compilation, version August 29, 2017.
+- event: source-corrected
+  by: chatgpt
+  date: 2026-10-31
+  note: "Smith Noetherian rings 7 says every ideal; the unit ideal cannot lie in a proper maximal ideal."
 ---
 
 ::: {.problem}
@@ -67,7 +71,7 @@ $$
 \subseteq
 \mathcal P
 $$
-be a chain.
+be a nonempty chain.
 Then
 $$
 U
@@ -79,7 +83,7 @@ is an ideal of $R$.
 
 ::: pf-proof
 
-The union is nonempty because every member of $\mathcal C$ contains $I$.
+The union contains $I$ because the chain is nonempty and every member contains $I$.
 
 Let
 $$
@@ -198,7 +202,7 @@ The poset $\mathcal P$ has a maximal element.
 
 ::: pf-proof
 
-By step [](#s1-1){.pf-ref}, $\mathcal P$ is nonempty. By step [](#s1-4){.pf-ref}, every chain in $\mathcal P$ has an upper bound in $\mathcal P$. Zorn's lemma therefore gives a maximal element
+By step [](#s1-1){.pf-ref}, $\mathcal P$ is nonempty, so $I$ bounds the empty chain. By step [](#s1-4){.pf-ref}, every nonempty chain in $\mathcal P$ has an upper bound in $\mathcal P$. Zorn's lemma therefore gives a maximal element
 $$
 M\in\mathcal P.
 $$
@@ -266,9 +270,4 @@ Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 
-:::
-
-::: {.remark}
-Smith's exercise (Noetherian rings 7) asks for this with Zorn's lemma for "every ideal".
-The unit ideal $R$ lies in no maximal ideal, since maximal ideals are proper, so the statement holds for proper ideals.
 :::
