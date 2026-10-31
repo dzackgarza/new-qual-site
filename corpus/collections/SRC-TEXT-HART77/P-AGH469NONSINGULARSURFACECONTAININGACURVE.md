@@ -171,7 +171,7 @@ Consider the incidence variety
 $$
 \mathcal B
 =
-\{(P,H)\in X\dualof{\times(\PP^N)}:
+\{(P,H)\in X\times\dualof{(\PP^N)}:
 \iota_m(E_P)\subseteq H\}.
 $$
 By step [](#s3){.pf-ref}, $\iota_m(E_P)$ is a line.
@@ -186,7 +186,7 @@ N-1.
 $$
 The projection
 $$
-\mathcal B\dualof{\longrightarrow(\PP^N)}
+\mathcal B\longrightarrow\dualof{(\PP^N)}
 $$
 is proper because $X$ is projective, so its image is closed.
 Its dimension is at most $N-1$, strictly smaller than the dimension $N$ of the dual projective space.

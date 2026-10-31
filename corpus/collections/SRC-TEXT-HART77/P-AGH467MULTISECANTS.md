@@ -299,7 +299,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s11}
 
 Castelnuovo's bound and step [](#s10){.pf-ref} force
 $$

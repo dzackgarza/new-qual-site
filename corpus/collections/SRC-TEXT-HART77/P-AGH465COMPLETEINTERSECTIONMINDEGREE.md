@@ -43,7 +43,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The saturated homogeneous ideal of $X$ is
 $$
