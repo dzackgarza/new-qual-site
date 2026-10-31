@@ -159,9 +159,12 @@ $$
 $$
 whose stalk at $x$ is an isomorphism.
 
-Because $\mcf$ is coherent, the kernel and cokernel of $\psi$ are coherent.
-Their stalks at $x$ vanish, so after shrinking $V$ once more both sheaves
-vanish identically. Thus
+Because $\mcf$ is locally finitely presented, the cokernel of $\psi$ is
+locally finitely generated. Its stalk at $x$ vanishes, so shrink $V$ until
+$\psi$ is surjective. On an affine neighborhood there, the kernel of a
+surjection from a finite free module to a finitely presented module is
+finitely generated. Its stalk at $x$ also vanishes, so shrink once more until
+the kernel is zero. Thus
 $$
 \psi:\OO_V^{\oplus r}\xrightarrow{\sim}\mcf\restrict_V.
 $$
