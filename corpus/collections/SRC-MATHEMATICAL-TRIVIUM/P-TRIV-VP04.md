@@ -5,7 +5,9 @@ kind: problem
 title: Minimal surface of revolution
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus of Variations
+  - Minimal Surfaces
 relations: []
 review: draft
 audit:

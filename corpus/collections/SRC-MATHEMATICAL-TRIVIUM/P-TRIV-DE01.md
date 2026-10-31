@@ -5,7 +5,8 @@ kind: problem
 title: Separable equation $y'=xe^{x^2-2\log y}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Separable Equations
 relations: []
 review: draft
 audit:

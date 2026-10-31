@@ -5,7 +5,9 @@ kind: problem
 title: $\delta(x)$ as the limit of $\frac1\pi\operatorname{Im}\frac{1}{x-i\epsilon}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Dirac Delta
+  - Distributions
 relations: []
 review: draft
 audit:

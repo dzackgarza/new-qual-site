@@ -5,7 +5,9 @@ kind: problem
 title: Determinant of a $2\times 2$ block matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Determinants
+  - Block Matrices
 relations: []
 review: draft
 audit:

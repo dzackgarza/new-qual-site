@@ -5,7 +5,8 @@ kind: problem
 title: Fourier transforms under scaling and translation
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Fourier Transform
 relations: []
 review: draft
 audit:

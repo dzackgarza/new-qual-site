@@ -5,7 +5,9 @@ kind: problem
 title: Integral solution of the modified Bessel equation of order zero
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Bessel Functions
+  - Integral Representations
 relations: []
 review: draft
 audit:

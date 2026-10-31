@@ -5,7 +5,8 @@ kind: problem
 title: Determinant of the all-ones matrix with zeros on the diagonal after the first entry
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Determinants
 relations: []
 review: draft
 audit:
@@ -16,10 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Calculate det A, if
+Calculate $\det A$, if
 
 $$
-A = \left[ { \begin{array} { l l l l l } { 1 } & { 1 } & { 1 } & { \dots } & { 1 } \\ { 1 } & { 0 } & { 1 } & { \dots } & { 1 } \\ { 1 } & { 1 } & { 0 } & { \dots } & { 1 } \\ { \vdots } & { \vdots } & { \vdots } & { \ddots } & { \vdots } \\ { 1 } & { 1 } & { 1 } & { \dots } & { 0 } \end{array} } \right] .\tag{2}
+A = \begin{bmatrix} 1 & 1 & 1 & \dots & 1 \\ 1 & 0 & 1 & \dots & 1 \\ 1 & 1 & 0 & \dots & 1 \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 1 & 1 & 1 & \dots & 0 \end{bmatrix}. \tag{2}
 $$
 :::
 

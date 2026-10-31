@@ -5,7 +5,8 @@ kind: problem
 title: Determinant under a row interchange
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Determinants
 relations: []
 review: draft
 audit:

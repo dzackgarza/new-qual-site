@@ -5,7 +5,9 @@ kind: problem
 title: Small-$x$ asymptotics of the modified Bessel function $K_\nu$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Bessel Functions
+  - Asymptotic Expansions
 relations: []
 review: draft
 audit:

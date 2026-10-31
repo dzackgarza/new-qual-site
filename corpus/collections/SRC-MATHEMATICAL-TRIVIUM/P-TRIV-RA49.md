@@ -5,7 +5,8 @@ kind: problem
 title: Fourier transform of the Yukawa potential $\alpha e^{-\mu r}/r$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Fourier Transform
 relations: []
 review: draft
 audit:

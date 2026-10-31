@@ -5,7 +5,9 @@ kind: problem
 title: Probability that five randomly shelved volumes are in order
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Combinatorial Probability
+  - Permutations
 relations: []
 review: draft
 audit:

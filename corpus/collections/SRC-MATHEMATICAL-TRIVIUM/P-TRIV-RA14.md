@@ -5,7 +5,9 @@ kind: problem
 title: Double and iterated limits of $x+y\sin\frac1x$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Iterated Limits
+  - Limits
 relations: []
 review: draft
 audit:

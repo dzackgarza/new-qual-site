@@ -5,7 +5,9 @@ kind: problem
 title: $\int e^{2x}\sin x\,dx$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Antiderivatives
+  - Integration by Parts
 relations: []
 review: draft
 audit:

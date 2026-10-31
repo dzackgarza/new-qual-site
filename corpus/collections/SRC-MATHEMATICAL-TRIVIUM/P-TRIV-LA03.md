@@ -5,7 +5,8 @@ kind: problem
 title: Linear independence of $(1,2,3)$, $(1,3,5)$, $(5,13,15)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Independence
 relations: []
 review: draft
 audit:
@@ -16,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Find if the vectors ${ \left[ \begin{array} { l } { 1 } \\ { 2 } \\ { 3 } \end{array} \right] } , { \left[ \begin{array} { l } { 1 } \\ { 3 } \\ { 5 } \end{array} \right] } , { \left[ \begin{array} { l } { 5 } \\ { 1 3 } \\ { 1 5 } \end{array} \right] }$ are linear independent or not.
+Find if the vectors $\begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}$, $\begin{bmatrix} 1 \\ 3 \\ 5 \end{bmatrix}$, $\begin{bmatrix} 5 \\ 13 \\ 15 \end{bmatrix}$ are linear independent or not.
 :::
 
 ::: {.solution}

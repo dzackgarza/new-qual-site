@@ -5,7 +5,9 @@ kind: problem
 title: De Méré's dice problem
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Combinatorial Probability
+  - Complementary Events
 relations: []
 review: draft
 audit:

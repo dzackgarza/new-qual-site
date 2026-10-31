@@ -5,7 +5,9 @@ kind: problem
 title: Coplanarity of four points in $\RR^3$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Analytic Geometry
+  - Determinants
 relations: []
 review: draft
 audit:

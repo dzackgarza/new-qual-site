@@ -5,7 +5,9 @@ kind: problem
 title: Fubini instanton for the potential $-\frac\lambda4 f^4$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus of Variations
+  - Instantons
 relations: []
 review: draft
 audit:

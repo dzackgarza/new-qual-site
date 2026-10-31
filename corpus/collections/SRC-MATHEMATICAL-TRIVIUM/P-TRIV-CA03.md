@@ -5,7 +5,10 @@ kind: problem
 title: Complex roots of $z^2+3z+12$, $z^4+5z^2+4$, $z^6=1$ and $z^3=-1$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Complex Numbers
+  - Roots of Polynomials
+  - Roots of Unity
 relations: []
 review: draft
 audit:

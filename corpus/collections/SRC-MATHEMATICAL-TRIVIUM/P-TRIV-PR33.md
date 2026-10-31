@@ -5,7 +5,9 @@ kind: problem
 title: Borel's normal number theorem
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Normal Numbers
+  - Strong Law of Large Numbers
 relations: []
 review: draft
 audit:

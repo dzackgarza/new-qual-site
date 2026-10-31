@@ -5,7 +5,9 @@ kind: problem
 title: $\int_0^\infty e^{-ax}\frac{\sin xy}{x}\,dx$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Improper Integrals
+  - Differentiation Under the Integral Sign
 relations: []
 review: draft
 audit:

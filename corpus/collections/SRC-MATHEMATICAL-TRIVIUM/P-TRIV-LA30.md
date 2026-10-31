@@ -5,7 +5,8 @@ kind: problem
 title: Number of independent real parameters of a unitary matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Unitary Matrices
 relations: []
 review: draft
 audit:

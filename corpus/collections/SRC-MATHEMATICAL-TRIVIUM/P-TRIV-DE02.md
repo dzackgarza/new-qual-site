@@ -5,7 +5,9 @@ kind: problem
 title: Linear system $x'=-x+6y$, $y'=2x+3y$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Systems of ODEs
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

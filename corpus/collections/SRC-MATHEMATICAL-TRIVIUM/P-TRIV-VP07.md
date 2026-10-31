@@ -5,7 +5,9 @@ kind: problem
 title: Dirichlet energy and Laplace's equation
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus of Variations
+  - Laplace Equation
 relations: []
 review: draft
 audit:

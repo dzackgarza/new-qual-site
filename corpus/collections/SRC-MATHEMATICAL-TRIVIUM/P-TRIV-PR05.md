@@ -5,7 +5,9 @@ kind: problem
 title: Probability of a derangement of five presents
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Derangements
+  - Inclusion-Exclusion
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Conditional expectations of sums of independent Bernoulli variables
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Conditional Expectation
+  - Bernoulli Distribution
 relations: []
 review: draft
 audit:

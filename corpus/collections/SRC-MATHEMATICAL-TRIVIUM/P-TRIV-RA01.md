@@ -5,7 +5,8 @@ kind: problem
 title: Derivatives of $\log\frac{a}{x}$, $\cos\arcsin x$ and $\frac{x^2+1}{x^3+1}$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Derivatives
 relations: []
 review: draft
 audit:

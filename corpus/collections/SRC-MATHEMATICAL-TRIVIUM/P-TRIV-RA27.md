@@ -5,7 +5,9 @@ kind: problem
 title: Convergence of $\int_0^1 x^{-\alpha}\,dx$ and $\int_1^\infty x^{-\alpha}\,dx$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Improper Integrals
+  - Convergence of Integrals
 relations: []
 review: draft
 audit:
@@ -18,7 +20,9 @@ audit:
 ::: {.problem}
 For what values of $\alpha$ the following integrals are convergent?
 
-(a) $\int_0^1 \frac{dx}{x^\alpha}$, (b) $\int_1^{\infty} \frac{dx}{x^\alpha}$.
+(a) $\int_0^1 \frac{dx}{x^\alpha}$,
+
+(b) $\int_1^{\infty} \frac{dx}{x^\alpha}$.
 :::
 
 ::: {.solution}

@@ -5,7 +5,9 @@ kind: problem
 title: $\int_0^\infty \frac{dx}{1+x^\alpha}$ by contour integration of $\frac{\log z}{1+z^\alpha}$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
+  - Complex Logarithm
 relations: []
 review: draft
 audit:

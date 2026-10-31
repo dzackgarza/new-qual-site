@@ -5,7 +5,9 @@ kind: problem
 title: No nonnegative solution of $\int \frac{x(t)\,dt}{(y-t)^2+1}=e^{-y^2}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integral Equations
+  - Fourier Transform
 relations: []
 review: draft
 audit:

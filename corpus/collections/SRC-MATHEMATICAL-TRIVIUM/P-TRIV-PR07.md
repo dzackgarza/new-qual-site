@@ -5,7 +5,9 @@ kind: problem
 title: Probability that $ax^2+bx+c$ has real roots for uniform coefficients
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Geometric Probability
+  - Uniform Distribution
 relations: []
 review: draft
 audit:

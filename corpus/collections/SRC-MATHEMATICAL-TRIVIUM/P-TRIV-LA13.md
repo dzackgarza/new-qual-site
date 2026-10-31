@@ -5,7 +5,10 @@ kind: problem
 title: Rotation and reflection matrices in $\RR^2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Rotations
+  - Reflections
+  - Orthogonal Matrices
 relations: []
 review: draft
 audit:

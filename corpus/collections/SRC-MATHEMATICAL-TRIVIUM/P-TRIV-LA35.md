@@ -5,7 +5,9 @@ kind: problem
 title: Change of basis for a matrix exponential
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Matrix Exponential
+  - Change of Basis
 relations: []
 review: draft
 audit:

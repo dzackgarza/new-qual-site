@@ -5,7 +5,9 @@ kind: problem
 title: Green function of $-\frac{d^2}{dx^2}+m^2$ on the line
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Green's Functions
+  - Fourier Transform
 relations: []
 review: draft
 audit:

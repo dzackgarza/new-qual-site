@@ -5,7 +5,9 @@ kind: problem
 title: Extremal of $\int_0^{\pi/2}(f'^2-f^2)\,dx$ with fixed endpoints
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus of Variations
+  - Euler-Lagrange Equations
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Poisson arrivals at a counter with dead time
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Poisson Process
 relations: []
 review: draft
 audit:

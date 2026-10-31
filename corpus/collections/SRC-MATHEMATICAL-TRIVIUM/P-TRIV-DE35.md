@@ -5,7 +5,9 @@ kind: problem
 title: Expansion of $\delta''(x-x_0)/(1+x-x_0)$ in derivatives of $\delta$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Dirac Delta
+  - Distributions
 relations: []
 review: draft
 audit:

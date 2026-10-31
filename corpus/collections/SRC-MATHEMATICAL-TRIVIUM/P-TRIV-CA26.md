@@ -5,7 +5,9 @@ kind: problem
 title: Saddle-point asymptotics of $\int_{-\infty}^\infty \frac{e^{-t(z^2-1/4)}\cos tz}{1+z^2}\,dz$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Saddle Point Method
+  - Asymptotic Expansions
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Simultaneous diagonalization of two binary quadratic forms
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Quadratic Forms
+  - Simultaneous Diagonalization
 relations: []
 review: draft
 audit:

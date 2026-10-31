@@ -5,7 +5,9 @@ kind: problem
 title: $\int_0^\infty \frac{dx}{1+x^2}$ by residues
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residue Theorem
+  - Contour Integration
 relations: []
 review: draft
 audit:

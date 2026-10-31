@@ -5,7 +5,9 @@ kind: problem
 title: Poles and residues of the Gamma function at nonpositive integers
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Gamma Function
+  - Residues
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Central limit estimate of accumulated round-off error
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Central Limit Theorem
+  - Uniform Distribution
 relations: []
 review: draft
 audit:

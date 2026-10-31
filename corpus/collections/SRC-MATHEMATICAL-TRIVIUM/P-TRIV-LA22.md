@@ -5,7 +5,9 @@ kind: problem
 title: Common eigenvectors and commuting transformations
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Commuting Operators
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Frobenius series for the Bessel functions $J_{\pm p}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Frobenius Method
+  - Bessel Functions
 relations: []
 review: draft
 audit:

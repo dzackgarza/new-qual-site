@@ -5,7 +5,9 @@ kind: problem
 title: Borwein integrals
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Borwein Integrals
+  - Fourier Transform
 relations: []
 review: draft
 audit:

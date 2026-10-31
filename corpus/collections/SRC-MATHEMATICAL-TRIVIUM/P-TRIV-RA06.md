@@ -5,7 +5,9 @@ kind: problem
 title: Derivative of $\cosh\sqrt{1-x^2}$ at $0$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Derivatives
+  - Chain Rule
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Fourier transforms of a box function and a one-sided exponential
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Fourier Transform
 relations: []
 review: draft
 audit:

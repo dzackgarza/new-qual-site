@@ -5,7 +5,9 @@ kind: problem
 title: Rotation--scaling--shear decomposition of $SL_2(\RR)$ matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Special Linear Group
+  - Matrix Decompositions
 relations: []
 review: draft
 audit:

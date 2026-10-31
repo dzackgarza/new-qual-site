@@ -5,7 +5,9 @@ kind: problem
 title: Large-$x$ asymptotics of the modified Bessel function $K_\nu$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Asymptotic Expansions
+  - Bessel Functions
 relations: []
 review: draft
 audit:

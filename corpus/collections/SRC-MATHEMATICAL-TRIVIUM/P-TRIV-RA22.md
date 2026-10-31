@@ -5,7 +5,9 @@ kind: problem
 title: $\int_0^{\pi^2}\cos\sqrt x\,dx$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Definite Integrals
+  - Substitution
 relations: []
 review: draft
 audit:

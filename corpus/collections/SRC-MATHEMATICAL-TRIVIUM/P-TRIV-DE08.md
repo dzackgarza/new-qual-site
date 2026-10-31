@@ -5,7 +5,9 @@ kind: problem
 title: Forced equation $y''-3y'+2y=\sin x$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Constant-Coefficient ODEs
+  - Undetermined Coefficients
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Outlier test for wheat yield data
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Hypothesis Testing
+  - Outliers
 relations: []
 review: draft
 audit:
@@ -19,7 +21,7 @@ audit:
 Here is the data about wheat yield from 8 identical wheat fields in conventional units:
 
 $$
-2 6 . 5 \quad 2 6 . 2 \quad 3 5 . 9 \quad 3 0 . 1 \quad 3 2 . 3 \quad 2 9 . 3 \quad 2 6 . 1 \quad 2 5 . 0
+26.5 \quad 26.2 \quad 35.9 \quad 30.1 \quad 32.3 \quad 29.3 \quad 26.1 \quad 25.0
 $$
 
 There is a suspicion that the data about the third field is incorrect.

@@ -5,7 +5,9 @@ kind: problem
 title: $\int_0^\infty \frac{\log x}{1+x^\alpha}\,dx$ by a wedge contour
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
+  - Wedge Contours
 relations: []
 review: draft
 audit:

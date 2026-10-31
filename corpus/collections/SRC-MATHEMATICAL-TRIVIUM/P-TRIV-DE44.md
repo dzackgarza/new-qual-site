@@ -5,7 +5,9 @@ kind: problem
 title: Vibrating rectangular membrane with a single-mode initial profile
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Wave Equation
+  - Separation of Variables
 relations: []
 review: draft
 audit:

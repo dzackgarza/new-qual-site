@@ -5,7 +5,10 @@ kind: problem
 title: Powers, inverse, eigenvalues and diagonalization of $\begin{pmatrix}1&2\\5&4\end{pmatrix}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Eigenvalues and Eigenvectors
+  - Diagonalization
+  - Matrix Inverses
 relations: []
 review: draft
 audit:

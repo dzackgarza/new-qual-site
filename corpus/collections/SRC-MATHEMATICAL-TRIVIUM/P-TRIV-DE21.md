@@ -5,7 +5,9 @@ kind: problem
 title: Perturbative ground-state energy of the quartic anharmonic oscillator
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Perturbation Theory
+  - Recurrence Relations
 relations: []
 review: draft
 audit:

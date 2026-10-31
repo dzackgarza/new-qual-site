@@ -5,7 +5,9 @@ kind: problem
 title: Heat equation on a rod with fixed end temperatures
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Heat Equation
+  - Separation of Variables
 relations: []
 review: draft
 audit:

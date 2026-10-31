@@ -5,7 +5,9 @@ kind: problem
 title: Initial value problem $y'-y=e^{3t}$, $y(0)=2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Laplace Transform
+  - Initial Value Problems
 relations: []
 review: draft
 audit:

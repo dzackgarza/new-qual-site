@@ -5,7 +5,9 @@ kind: problem
 title: Integrating factor for $(xy^2-y)\,dx+x\,dy=0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integrating Factors
+  - Exact Equations
 relations: []
 review: draft
 audit:

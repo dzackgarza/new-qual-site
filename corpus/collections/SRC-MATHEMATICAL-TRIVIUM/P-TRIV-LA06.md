@@ -5,7 +5,10 @@ kind: problem
 title: $\log\det A=\operatorname{Tr}\log A$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Determinants
+  - Traces
+  - Matrix Logarithm
 relations: []
 review: draft
 audit:

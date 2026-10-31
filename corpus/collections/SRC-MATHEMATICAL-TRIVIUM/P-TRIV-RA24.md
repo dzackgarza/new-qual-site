@@ -5,7 +5,9 @@ kind: problem
 title: $\int_{-\infty}^\infty e^{-x^{-4}-x^4}\sin^5x\,dx$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Definite Integrals
+  - Odd Functions
 relations: []
 review: draft
 audit:

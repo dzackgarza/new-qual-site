@@ -5,7 +5,8 @@ kind: problem
 title: $e^A=(e^{A/N})^N$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Matrix Exponential
 relations: []
 review: draft
 audit:

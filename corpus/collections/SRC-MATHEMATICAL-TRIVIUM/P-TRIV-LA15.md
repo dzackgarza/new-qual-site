@@ -5,7 +5,8 @@ kind: problem
 title: Number of independent entries of an orthogonal matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Orthogonal Matrices
 relations: []
 review: draft
 audit:

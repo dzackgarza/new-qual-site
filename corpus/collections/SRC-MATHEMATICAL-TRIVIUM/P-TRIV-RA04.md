@@ -5,7 +5,9 @@ kind: problem
 title: $f^{(100)}(0)$ for $f(x)=(x^{100}+x)e^{100x}$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Higher Derivatives
+  - Leibniz Rule
 relations: []
 review: draft
 audit:

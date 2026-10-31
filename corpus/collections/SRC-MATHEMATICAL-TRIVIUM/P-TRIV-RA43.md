@@ -5,7 +5,9 @@ kind: problem
 title: Flux of the Coulomb field through a sphere
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Flux
+  - Divergence Theorem
 relations: []
 review: draft
 audit:

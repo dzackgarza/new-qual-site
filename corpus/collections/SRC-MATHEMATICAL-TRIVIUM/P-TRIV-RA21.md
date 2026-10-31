@@ -5,7 +5,8 @@ kind: problem
 title: Gaussian integral $\int_0^\infty e^{-x^2}\,dx$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Gaussian Integral
 relations: []
 review: draft
 audit:

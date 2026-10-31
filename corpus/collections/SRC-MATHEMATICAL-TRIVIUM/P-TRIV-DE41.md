@@ -5,7 +5,9 @@ kind: problem
 title: First-order PDE $(\partial_x+\partial_y+\partial_z)f=x-y$ by characteristics
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Method of Characteristics
+  - First-Order PDEs
 relations: []
 review: draft
 audit:

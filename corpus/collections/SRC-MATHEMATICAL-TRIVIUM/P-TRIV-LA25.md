@@ -5,7 +5,10 @@ kind: problem
 title: Diagonalization and invariant subspaces of a symmetric $3\times 3$ matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Symmetric Matrices
+  - Diagonalization
+  - Invariant Subspaces
 relations: []
 review: draft
 audit:

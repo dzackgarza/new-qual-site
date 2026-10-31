@@ -5,7 +5,9 @@ kind: problem
 title: Components of $\nabla\log\frac1r$ in Cartesian, cylindrical and spherical coordinates
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Gradient
+  - Curvilinear Coordinates
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Separable rate equation $C'=\alpha(a-C)(b-C)$ with $C(0)=0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Separable Equations
+  - Partial Fractions
 relations: []
 review: draft
 audit:

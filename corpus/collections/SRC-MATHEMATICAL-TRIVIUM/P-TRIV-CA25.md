@@ -5,7 +5,9 @@ kind: problem
 title: Matsubara sums giving the Bose and Fermi distributions
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residue Theorem
+  - Infinite Series
 relations: []
 review: draft
 audit:

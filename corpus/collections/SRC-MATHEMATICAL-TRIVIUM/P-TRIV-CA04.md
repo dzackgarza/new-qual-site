@@ -5,7 +5,8 @@ kind: problem
 title: Laurent series of $e^z/(z-1)^2$ about $z=1$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Laurent Series
 relations: []
 review: draft
 audit:

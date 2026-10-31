@@ -5,7 +5,9 @@ kind: problem
 title: Sample size for testing coin-matching probability $2/3$ against $1/2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Hypothesis Testing
+  - Sample Size
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Limit as $x\to0$ involving $\sin\tan x-\tan\sin x$ and $\arcsin\arctan x-\arctan\arcsin x$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Limits
+  - Taylor Series
 relations: []
 review: draft
 audit:

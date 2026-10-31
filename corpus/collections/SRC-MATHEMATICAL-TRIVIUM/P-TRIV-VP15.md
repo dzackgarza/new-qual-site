@@ -5,7 +5,9 @@ kind: problem
 title: Derrick's theorem
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus of Variations
+  - Scaling Arguments
 relations: []
 review: draft
 audit:
@@ -42,7 +44,11 @@ $$
 
 (c) Give a conclusion about the existence of $\phi_0$, if
 
-(a) $d > 2$ (b) $d = 2$ (c) $d = 1$
+(i) $d > 2$,
+
+(ii) $d = 2$,
+
+(iii) $d = 1$.
 :::
 
 ::: {.solution}

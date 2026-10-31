@@ -5,7 +5,9 @@ kind: problem
 title: Brachistochrone
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus of Variations
+  - Brachistochrone
 relations: []
 review: draft
 audit:
@@ -16,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-"Brachistochrone curve" On a vertical plane $x O y$ consider the two points A and B. Find a curve $y = y ( x )$ connecting these points and such that an ideal pointlike body, that starts at rest at the point A and moves along this curve without friction under constant gravity, reaches the point B within the shortest time.
+"Brachistochrone curve" On a vertical plane $xOy$ consider the two points $A$ and $B$. Find a curve $y = y(x)$ connecting these points and such that an ideal pointlike body, that starts at rest at the point $A$ and moves along this curve without friction under constant gravity, reaches the point $B$ within the shortest time.
 :::
 
 ::: {.solution}

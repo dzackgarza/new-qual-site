@@ -5,7 +5,10 @@ kind: problem
 title: 'Gambler''s ruin: absorption probabilities and mean duration of a random walk'
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Random Walks
+  - Gambler's Ruin
+  - Markov Chains
 relations: []
 review: draft
 audit:
@@ -16,9 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-"Random walk" Let $A$, $B$, $x$ be integers, $A \leqslant x \leqslant B$. Consider the particle that starts moving from the point $x$ at time $t = 0$. At each step $\Delta t = 1$ the particle can move left or right from its recent position with the probabilities $p$ and $q = 1 - p$ correspondingly. If at some step it reaches the points $A$ or $B$, it stays there forever (see example figure below).
-
-The source's Figure 8 illustrates one sample trajectory with $A=-B=5$ and $x=2$; the graphical trajectory is not present in the deterministic extraction.
+"Random walk" Let $A$, $B$, $x$ be integers, $A \leqslant x \leqslant B$. Consider the particle that starts moving from the point $x$ at time $t = 0$. At each step $\Delta t = 1$ the particle can move left or right from its recent position with the probabilities $p$ and $q = 1 - p$ correspondingly. If at some step it reaches the points $A$ or $B$, it stays there forever.
 
 (a) Assuming that the total number of steps approaches infinity, compute the probabilities $\alpha(x)$, $\beta(x)$ to find the particle at the points $A$ and $B$ correspondingly, as functions of the initial position $x$ of the particle.
 

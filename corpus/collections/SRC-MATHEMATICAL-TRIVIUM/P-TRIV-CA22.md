@@ -5,7 +5,9 @@ kind: problem
 title: $\int_0^1 (x^2-x^3)^{-1/3}\,dx$ by a dogbone contour
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
+  - Branch Cuts
 relations: []
 review: draft
 audit:

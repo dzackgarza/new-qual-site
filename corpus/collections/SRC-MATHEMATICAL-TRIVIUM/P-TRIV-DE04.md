@@ -5,7 +5,8 @@ kind: problem
 title: Bernoulli equation $y'=f(x)y+g(x)y^n$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Bernoulli Equations
 relations: []
 review: draft
 audit:

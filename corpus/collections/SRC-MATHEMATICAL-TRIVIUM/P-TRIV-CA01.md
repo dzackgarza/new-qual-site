@@ -5,7 +5,9 @@ kind: problem
 title: Polar forms of $3i$, $1-i$, $2+i$, $-4$, $2-i\sqrt3$ and $\frac{2-i}{1+4i}$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Complex Numbers
+  - Polar Form
 relations: []
 review: draft
 audit:

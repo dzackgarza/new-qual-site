@@ -5,7 +5,9 @@ kind: problem
 title: Probability that the $j$th student draws a lucky ticket
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Combinatorial Probability
+  - Exchangeability
 relations: []
 review: draft
 audit:

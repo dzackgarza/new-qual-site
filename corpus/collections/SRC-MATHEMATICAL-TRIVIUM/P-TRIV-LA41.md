@@ -5,7 +5,8 @@ kind: problem
 title: Consistency of a $3\times 3$ linear system
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Systems of Linear Equations
 relations: []
 review: draft
 audit:
@@ -19,7 +20,7 @@ audit:
 Check if the system of linear equations has a solution and solve
 
 $$
-\left\{ { \begin{array} { l } { x + 2 y + 3 z = - 4 } \\ { 2 x + 3 y + 4 z = 1 } \\ { 3 x + 4 y + 5 z = 6 } \end{array} } \right.\tag{9}
+\begin{cases} x + 2y + 3z = -4 \\ 2x + 3y + 4z = 1 \\ 3x + 4y + 5z = 6 \end{cases} \tag{9}
 $$
 :::
 

@@ -5,7 +5,9 @@ kind: problem
 title: Green function of the damped harmonic oscillator
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Green's Functions
+  - Harmonic Oscillator
 relations: []
 review: draft
 audit:

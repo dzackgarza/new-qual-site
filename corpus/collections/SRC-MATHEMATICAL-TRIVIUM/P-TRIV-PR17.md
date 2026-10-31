@@ -5,7 +5,9 @@ kind: problem
 title: Chernoff and Markov tail bounds
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Markov Inequality
+  - Chernoff Bound
 relations: []
 review: draft
 audit:

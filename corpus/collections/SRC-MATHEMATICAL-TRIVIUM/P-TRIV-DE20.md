@@ -5,7 +5,8 @@ kind: problem
 title: Frobenius series of $(\xi u')'+(\frac12E\xi+\alpha-\frac{m^2}{4\xi}-\frac14F\xi^2)u=0$ at $\xi=0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Frobenius Method
 relations: []
 review: draft
 audit:

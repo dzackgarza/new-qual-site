@@ -5,7 +5,9 @@ kind: problem
 title: $\int\frac{x^5+2}{x^2-1}\,dx$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Antiderivatives
+  - Partial Fractions
 relations: []
 review: draft
 audit:

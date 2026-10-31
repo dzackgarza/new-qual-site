@@ -5,7 +5,9 @@ kind: problem
 title: Closed form and small-$a$ expansion of $\sum_n ne^{-an}$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Series
+  - Asymptotic Expansions
 relations: []
 review: draft
 audit:

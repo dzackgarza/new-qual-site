@@ -5,7 +5,8 @@ kind: problem
 title: $\int_{\sqrt2}^\infty\frac{dx}{x+x^{\sqrt2}}$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Improper Integrals
 relations: []
 review: draft
 audit:

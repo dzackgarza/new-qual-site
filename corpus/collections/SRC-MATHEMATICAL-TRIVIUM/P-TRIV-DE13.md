@@ -5,7 +5,9 @@ kind: problem
 title: Initial value problem $y''-3y'+2y=e^{3t}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Laplace Transform
+  - Initial Value Problems
 relations: []
 review: draft
 audit:

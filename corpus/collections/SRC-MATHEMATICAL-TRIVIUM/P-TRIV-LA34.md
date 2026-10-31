@@ -5,7 +5,9 @@ kind: problem
 title: Expansion of $e^{-\lambda B}Ae^{\lambda B}$ in nested commutators
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Matrix Exponential
+  - Commutators
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Radial harmonic functions in $\RR^d$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Laplace Equation
+  - Harmonic Functions
 relations: []
 review: draft
 audit:

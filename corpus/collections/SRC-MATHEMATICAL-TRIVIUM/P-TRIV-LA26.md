@@ -5,7 +5,10 @@ kind: problem
 title: Linear transformations preserving a sphere, a light cone and a hyperboloid
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Transformations
+  - Quadratic Forms
+  - Lorentz Transformations
 relations: []
 review: draft
 audit:

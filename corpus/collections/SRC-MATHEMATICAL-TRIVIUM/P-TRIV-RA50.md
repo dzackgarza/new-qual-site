@@ -5,7 +5,8 @@ kind: problem
 title: Fourier transform of the indicator of a ball in $\RR^3$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Fourier Transform
 relations: []
 review: draft
 audit:

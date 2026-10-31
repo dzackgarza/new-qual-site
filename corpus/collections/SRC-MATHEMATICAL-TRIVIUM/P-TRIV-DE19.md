@@ -5,7 +5,8 @@ kind: problem
 title: Power series solution of $x(2-x)y''+3(1-x)y'-y=0$ about $x=1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Power Series Solutions
 relations: []
 review: draft
 audit:

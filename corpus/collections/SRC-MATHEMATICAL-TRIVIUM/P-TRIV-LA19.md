@@ -5,7 +5,9 @@ kind: problem
 title: Pauli matrices as a basis of $2\times 2$ Hermitian matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Pauli Matrices
+  - Hermitian Matrices
 relations: []
 review: draft
 audit:

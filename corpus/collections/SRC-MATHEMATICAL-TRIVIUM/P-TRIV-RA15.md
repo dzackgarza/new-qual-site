@@ -5,7 +5,8 @@ kind: problem
 title: $\int\cot x\,dx$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Antiderivatives
 relations: []
 review: draft
 audit:

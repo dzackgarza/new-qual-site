@@ -5,7 +5,9 @@ kind: problem
 title: Positive definiteness of $9x_1^2+6x_1x_2+6x_2^2+8x_2x_3+4x_3^2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Quadratic Forms
+  - Positive Definite Matrices
 relations: []
 review: draft
 audit:

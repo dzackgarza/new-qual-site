@@ -5,7 +5,9 @@ kind: problem
 title: Variational principle for Poisson's equation
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus of Variations
+  - Poisson Equation
 relations: []
 review: draft
 audit:

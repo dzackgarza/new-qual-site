@@ -5,7 +5,9 @@ kind: problem
 title: Large-$x$ asymptotics of the Hankel function $H^{(1)}_\nu$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Asymptotic Expansions
+  - Bessel Functions
 relations: []
 review: draft
 audit:

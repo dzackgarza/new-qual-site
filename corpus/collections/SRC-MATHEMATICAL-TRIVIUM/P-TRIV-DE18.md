@@ -5,7 +5,9 @@ kind: problem
 title: Charge distribution of the Yukawa potential $e^{-ar}/r$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Dirac Delta
+  - Laplacian
 relations: []
 review: draft
 audit:

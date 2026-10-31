@@ -5,7 +5,9 @@ kind: problem
 title: Series solution of Laguerre's equation
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Power Series Solutions
+  - Laguerre Polynomials
 relations: []
 review: draft
 audit:

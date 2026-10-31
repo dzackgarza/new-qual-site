@@ -5,7 +5,9 @@ kind: problem
 title: Eigenfunctions of the Fourier transform
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Fourier Transform
+  - Eigenfunctions
 relations: []
 review: draft
 audit:

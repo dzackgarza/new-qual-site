@@ -5,7 +5,9 @@ kind: problem
 title: Volumes of high-dimensional balls and concentration near the boundary
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Volume
+  - High-Dimensional Geometry
 relations: []
 review: draft
 audit:

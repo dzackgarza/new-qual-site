@@ -5,7 +5,9 @@ kind: problem
 title: Sum of the alternating harmonic series
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Alternating Series
+  - Power Series
 relations: []
 review: draft
 audit:

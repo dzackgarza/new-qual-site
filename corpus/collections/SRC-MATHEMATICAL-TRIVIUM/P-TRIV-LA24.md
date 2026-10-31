@@ -5,7 +5,8 @@ kind: problem
 title: Translations are not linear
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Transformations
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Conic sections of the cone $z^2=x^2+y^2$ by the planes $z-ax=1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Conic Sections
+  - Quadric Surfaces
 relations: []
 review: draft
 audit:

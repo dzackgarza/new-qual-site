@@ -5,7 +5,9 @@ kind: problem
 title: 'Wronskian: Abel''s formula, change of variables and scaling'
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Wronskians
+  - Determinants
 relations: []
 review: draft
 audit:

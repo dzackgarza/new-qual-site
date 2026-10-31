@@ -5,7 +5,9 @@ kind: problem
 title: Stirling asymptotics of $\binom{2N}{N}$ and $\log\binom{N}{m}$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Stirling's Formula
+  - Binomial Coefficients
 relations: []
 review: draft
 audit:

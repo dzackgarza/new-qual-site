@@ -5,7 +5,9 @@ kind: problem
 title: Chi-squared test of a Poisson fit to a cosmic-ray spectrum
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Chi-Squared Test
+  - Poisson Distribution
 relations: []
 review: draft
 audit:

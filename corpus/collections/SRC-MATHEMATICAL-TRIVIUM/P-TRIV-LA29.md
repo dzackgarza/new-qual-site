@@ -5,7 +5,9 @@ kind: problem
 title: Continuous path from the identity to the unilateral shift
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Path Connectedness
+  - Shift Operators
 relations: []
 review: draft
 audit:

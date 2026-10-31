@@ -5,7 +5,9 @@ kind: problem
 title: Laurent series of $\sin\frac{z}{1-z}$ about $z=1$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Laurent Series
+  - Essential Singularities
 relations: []
 review: draft
 audit:

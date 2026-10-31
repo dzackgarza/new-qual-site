@@ -5,7 +5,8 @@ kind: problem
 title: Image of the sector $\operatorname{Re} z>\operatorname{Im} z>0$ under $e^{z^2}$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Conformal Maps
 relations: []
 review: draft
 audit:

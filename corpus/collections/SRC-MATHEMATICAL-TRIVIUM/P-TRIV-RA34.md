@@ -5,7 +5,9 @@ kind: problem
 title: Polar equation and asymptotics of the hyperbolic spiral
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Polar Coordinates
+  - Asymptotes
 relations: []
 review: draft
 audit:

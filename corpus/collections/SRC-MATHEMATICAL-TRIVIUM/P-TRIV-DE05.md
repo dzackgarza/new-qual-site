@@ -5,7 +5,8 @@ kind: problem
 title: Constant-coefficient equation $y''-y'-2y=0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Constant-Coefficient ODEs
 relations: []
 review: draft
 audit:

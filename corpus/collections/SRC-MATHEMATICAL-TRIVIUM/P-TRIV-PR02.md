@@ -5,7 +5,9 @@ kind: problem
 title: Birthday problem
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Birthday Problem
+  - Combinatorial Probability
 relations: []
 review: draft
 audit:

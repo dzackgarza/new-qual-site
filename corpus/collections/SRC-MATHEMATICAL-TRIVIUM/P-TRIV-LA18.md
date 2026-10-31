@@ -5,7 +5,10 @@ kind: problem
 title: Rotation matrix about an axis and its trace
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Rotations
+  - Traces
+  - Orthogonal Matrices
 relations: []
 review: draft
 audit:

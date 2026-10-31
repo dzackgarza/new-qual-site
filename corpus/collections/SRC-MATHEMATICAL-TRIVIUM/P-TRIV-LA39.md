@@ -5,7 +5,8 @@ kind: problem
 title: Solving a $3\times 3$ linear system
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Systems of Linear Equations
 relations: []
 review: draft
 audit:
@@ -19,7 +20,7 @@ audit:
 Solve the system of linear equations
 
 $$
-\left\{ \begin{array} { l l } { y + 3 z = - 1 } \\ { 2 x + 3 y + 5 z = 3 } \\ { 3 x + 5 y + 7 z = 6 } \end{array} \right.\tag{8}
+\begin{cases} y + 3z = -1 \\ 2x + 3y + 5z = 3 \\ 3x + 5y + 7z = 6 \end{cases} \tag{8}
 $$
 :::
 

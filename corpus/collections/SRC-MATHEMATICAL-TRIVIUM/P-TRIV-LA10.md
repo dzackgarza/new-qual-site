@@ -5,7 +5,10 @@ kind: problem
 title: Eigenvalues and eigenvectors of the cyclic shift matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Eigenvalues and Eigenvectors
+  - Permutation Matrices
+  - Roots of Unity
 relations: []
 review: draft
 audit:
@@ -19,7 +22,7 @@ audit:
 Calculate the eigenvalues and the eigenvectors of the matrix
 
 $$
-A = { \left[ \begin{array} { l l l l l l } { 0 } & { 0 } & { 0 } & { \dots } & { 0 } & { 1 } \\ { 1 } & { 0 } & { 0 } & { \dots } & { 0 } & { 0 } \\ { 0 } & { 1 } & { 0 } & { \dots } & { 0 } & { 0 } \\ { \vdots } & { \vdots } & { \vdots } & { \ddots } & { \vdots } & { \vdots } \\ { 0 } & { 0 } & { 0 } & { \dots } & { 1 } & { 0 } \end{array} \right] } ~ .\tag{3}
+A = \begin{bmatrix} 0 & 0 & 0 & \dots & 0 & 1 \\ 1 & 0 & 0 & \dots & 0 & 0 \\ 0 & 1 & 0 & \dots & 0 & 0 \\ \vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\ 0 & 0 & 0 & \dots & 1 & 0 \end{bmatrix}. \tag{3}
 $$
 :::
 

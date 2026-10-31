@@ -5,7 +5,9 @@ kind: problem
 title: $\int_0^\pi \cos^{2n}\theta\,d\theta$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residue Theorem
+  - Trigonometric Integrals
 relations: []
 review: draft
 audit:

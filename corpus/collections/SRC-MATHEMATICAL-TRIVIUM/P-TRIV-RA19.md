@@ -5,7 +5,8 @@ kind: problem
 title: $\int\frac{dx}{\sin x}$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Antiderivatives
 relations: []
 review: draft
 audit:

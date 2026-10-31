@@ -5,7 +5,9 @@ kind: problem
 title: First-order linear equation $(x+1)y'=2y+(x+1)^{5/2}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - First-Order Linear ODEs
+  - Integrating Factors
 relations: []
 review: draft
 audit:

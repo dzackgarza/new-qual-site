@@ -5,7 +5,9 @@ kind: problem
 title: Struck string with fixed ends
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Wave Equation
+  - Fourier Series
 relations: []
 review: draft
 audit:

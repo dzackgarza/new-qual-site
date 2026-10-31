@@ -5,7 +5,9 @@ kind: problem
 title: Finite geometric sums $\sum r^ke^{ik\phi}$, $\sum r^k\cos k\phi$ and $\sum r^k\sin k\phi$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Geometric Series
+  - Trigonometric Sums
 relations: []
 review: draft
 audit:
@@ -18,7 +20,11 @@ audit:
 ::: {.problem}
 Compute the following series:
 
-(a) $\sum_{k=0}^{n} r^k e^{ik\phi}$, (b) $\sum_{k=0}^{n} r^k\cos k\phi$, (c) $\sum_{k=0}^{n} r^k\sin k\phi$.
+(a) $\sum_{k=0}^{n} r^k e^{ik\phi}$,
+
+(b) $\sum_{k=0}^{n} r^k\cos k\phi$,
+
+(c) $\sum_{k=0}^{n} r^k\sin k\phi$.
 :::
 
 ::: {.solution}

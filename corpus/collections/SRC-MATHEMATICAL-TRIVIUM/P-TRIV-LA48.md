@@ -5,7 +5,9 @@ kind: problem
 title: Arranging three stars by spaceship rotations and boosts
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Rotations
+  - Lorentz Transformations
 relations: []
 review: draft
 audit:

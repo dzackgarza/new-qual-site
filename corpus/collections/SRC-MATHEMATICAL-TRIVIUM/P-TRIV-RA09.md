@@ -5,7 +5,9 @@ kind: problem
 title: Extrema of $x^2+y^2+z^2$ on an ellipsoid
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Lagrange Multipliers
+  - Extrema
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Jacobians of spherical and cylindrical coordinates
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Jacobians
+  - Change of Variables
 relations: []
 review: draft
 audit:

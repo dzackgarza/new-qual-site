@@ -5,7 +5,8 @@ kind: problem
 title: Inverse Fourier transform of $-\frac1\pi\frac{k}{a^2+k^2}$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Fourier Transform
 relations: []
 review: draft
 audit:

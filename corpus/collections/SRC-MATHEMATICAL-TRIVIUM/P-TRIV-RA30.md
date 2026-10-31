@@ -5,7 +5,9 @@ kind: problem
 title: Asymptotic approximation of the cosine integral $\operatorname{Ci}x$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Asymptotic Expansions
+  - Cosine Integral
 relations: []
 review: draft
 audit:

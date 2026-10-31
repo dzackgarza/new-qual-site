@@ -5,7 +5,10 @@ kind: problem
 title: Exponentials of the infinitesimal rotation generators of $SO(3)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Matrix Exponential
+  - Rotations
+  - Lie Algebras
 relations: []
 review: draft
 audit:

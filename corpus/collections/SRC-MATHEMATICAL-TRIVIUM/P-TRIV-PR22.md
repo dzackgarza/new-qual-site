@@ -5,7 +5,9 @@ kind: problem
 title: Maximum likelihood capture--recapture estimate
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Maximum Likelihood Estimation
+  - Hypergeometric Distribution
 relations: []
 review: draft
 audit:

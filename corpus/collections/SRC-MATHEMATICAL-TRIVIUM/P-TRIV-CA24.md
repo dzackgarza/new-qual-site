@@ -5,7 +5,9 @@ kind: problem
 title: $\int_0^\infty \frac{\log^2 x}{1+x^2}\,dx$ by contour integration
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
+  - Complex Logarithm
 relations: []
 review: draft
 audit:

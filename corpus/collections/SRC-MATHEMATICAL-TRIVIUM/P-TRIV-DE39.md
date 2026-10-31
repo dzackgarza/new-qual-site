@@ -5,7 +5,9 @@ kind: problem
 title: First-order PDE $f_x+af_y+(x-2y)f=0$ by characteristics
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Method of Characteristics
+  - First-Order PDEs
 relations: []
 review: draft
 audit:

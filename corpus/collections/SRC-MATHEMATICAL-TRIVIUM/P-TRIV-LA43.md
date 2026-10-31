@@ -5,7 +5,9 @@ kind: problem
 title: Relative position of two lines given as intersections of planes
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Analytic Geometry
+  - Systems of Linear Equations
 relations: []
 review: draft
 audit:

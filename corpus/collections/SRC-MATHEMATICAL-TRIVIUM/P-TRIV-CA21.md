@@ -5,7 +5,10 @@ kind: problem
 title: $\int_0^\infty \frac{x^p}{x^2+1}\,dx$ for $0<p<1$ by a keyhole contour
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
+  - Branch Cuts
+  - Keyhole Contours
 relations: []
 review: draft
 audit:

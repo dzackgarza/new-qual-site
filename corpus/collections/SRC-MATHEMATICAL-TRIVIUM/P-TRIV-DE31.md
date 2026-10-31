@@ -5,7 +5,9 @@ kind: problem
 title: Eigenvalues of $(xu')'=-\lambda u/x$ with mixed boundary conditions
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Sturm-Liouville Theory
+  - Eigenvalue Problems
 relations: []
 review: draft
 audit:

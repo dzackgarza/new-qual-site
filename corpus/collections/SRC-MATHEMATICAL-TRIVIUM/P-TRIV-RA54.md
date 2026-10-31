@@ -5,7 +5,8 @@ kind: problem
 title: $\sum_{n\ge1}\frac{x^{n-1}}{n(n+1)}$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Power Series
 relations: []
 review: draft
 audit:

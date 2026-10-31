@@ -5,7 +5,9 @@ kind: problem
 title: Triple product rule for partial derivatives of an implicit function
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Implicit Function Theorem
+  - Partial Derivatives
 relations: []
 review: draft
 audit:

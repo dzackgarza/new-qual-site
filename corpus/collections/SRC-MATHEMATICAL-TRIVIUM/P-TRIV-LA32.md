@@ -5,7 +5,9 @@ kind: problem
 title: $e^Ae^B=e^{A+B}$ for commuting matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Matrix Exponential
+  - Commuting Operators
 relations: []
 review: draft
 audit:

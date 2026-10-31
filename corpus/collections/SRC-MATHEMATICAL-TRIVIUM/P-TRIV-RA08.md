@@ -5,7 +5,9 @@ kind: problem
 title: Local extrema of $xy\log(x^2+y^2)$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Extrema
+  - Partial Derivatives
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Electric field on the axis of a charged ring and a charged disk
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Multiple Integrals
+  - Electrostatics
 relations: []
 review: draft
 audit:

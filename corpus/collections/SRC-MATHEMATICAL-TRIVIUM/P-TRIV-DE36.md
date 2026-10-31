@@ -5,7 +5,9 @@ kind: problem
 title: Boundary value problem $y''-3y'+2y=\delta(x-1)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Dirac Delta
+  - Boundary Value Problems
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Transition probabilities of a Markov chain on energy levels
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Markov Chains
+  - Transition Probabilities
 relations: []
 review: draft
 audit:

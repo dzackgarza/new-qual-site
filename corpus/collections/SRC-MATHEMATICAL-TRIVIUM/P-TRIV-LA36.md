@@ -5,7 +5,9 @@ kind: problem
 title: Lie--Trotter product formula
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Matrix Exponential
+  - Lie-Trotter Product Formula
 relations: []
 review: draft
 audit:

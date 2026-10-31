@@ -5,7 +5,9 @@ kind: problem
 title: $\int_0^\pi\log(1-2a\cos x+a^2)\,dx=0$ for $\abs{ a}<1$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Definite Integrals
+  - Parametric Integrals
 relations: []
 review: draft
 audit:

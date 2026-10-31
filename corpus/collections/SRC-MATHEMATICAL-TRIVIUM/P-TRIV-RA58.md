@@ -5,7 +5,9 @@ kind: problem
 title: Ant on a stretching rubber rope
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Differential Equations
+  - Harmonic Series
 relations: []
 review: draft
 audit:
@@ -16,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Consider the rubber cord with one end attached to a tree and another - to a car moving away from the tree with the velocity $V = 1 0 m / s$ At some point an ant appears on the fixed end of the cord and starts running along it with the velocity $v = 1 0 c m / s$ Will it reach the car?
+Consider the rubber cord with one end attached to a tree and another - to a car moving away from the tree with the velocity $V = 10\ \mathrm{m/s}$. At some point an ant appears on the fixed end of the cord and starts running along it with the velocity $v = 10\ \mathrm{cm/s}$. Will it reach the car?
 Assume the cord can be stretched up to arbitrary length.
 :::
 

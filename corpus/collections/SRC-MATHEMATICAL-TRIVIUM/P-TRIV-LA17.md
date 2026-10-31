@@ -5,7 +5,10 @@ kind: problem
 title: Which reflections in $\RR^n$ are rotations
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Reflections
+  - Rotations
+  - Orthogonal Matrices
 relations: []
 review: draft
 audit:
@@ -20,7 +23,13 @@ Consider the reflection maps in $\RR^n$. The reflection across the origin transf
 
 (a) Observe that in $\RR^2$ the central reflection is equivalent to the rotation by an angle $\pi$ around $O$. Show that no reflections across a line crossing $O$ can be achieved by any rotation.
 
-(b) In $\RR^3$, find if one can achieve by some rotation around $O$ 1) the reflection across $O$, 2) the reflection across an arbitrary line crossing $O$, 3) the reflection across an arbitrary plane crossing $O$.
+(b) In $\RR^3$, find if one can achieve by some rotation around $O$
+
+(i) the reflection across $O$,
+
+(ii) the reflection across an arbitrary line crossing $O$,
+
+(iii) the reflection across an arbitrary plane crossing $O$.
 
 (c) In $\RR^n$, formulate and prove a general statement about the existence of rotations that perform the reflection across a given $m$-dimensional plane, $m = 0, 1, \ldots, n - 1$, crossing the origin (where $m = 1$ corresponds to the line, and $m = 0$ to the point).
 :::

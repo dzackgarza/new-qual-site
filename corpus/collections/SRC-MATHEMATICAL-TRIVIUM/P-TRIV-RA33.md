@@ -5,7 +5,8 @@ kind: problem
 title: Arc length of a helix
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Arc Length
 relations: []
 review: draft
 audit:
@@ -19,11 +20,11 @@ audit:
 A helix is written in a parametric form as follows,
 
 $$
-x = r \cos \phi , y = r \sin \phi , z = a \phi ,\tag{12}
+x = r\cos\phi, \quad y = r\sin\phi, \quad z = a\phi, \tag{12}
 $$
 
-where $r , a > 0$ are constants and $\phi$ varies from $0$ to $\infty$.
-Find the length of the helix as a function of $\phi$
+where $r, a > 0$ are constants and $\phi$ varies from $0$ to $\infty$.
+Find the length of the helix as a function of $\phi$.
 :::
 
 ::: {.solution}

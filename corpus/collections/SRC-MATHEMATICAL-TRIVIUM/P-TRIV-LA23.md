@@ -5,7 +5,9 @@ kind: problem
 title: Matrices of stretching transformations of $\RR^3$ and their eigenvectors
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Transformations
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

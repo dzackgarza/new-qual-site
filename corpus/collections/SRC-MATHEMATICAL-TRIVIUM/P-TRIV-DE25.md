@@ -5,7 +5,9 @@ kind: problem
 title: Recurrence relations for Bessel functions of the first kind
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Bessel Functions
+  - Recurrence Relations
 relations: []
 review: draft
 audit:

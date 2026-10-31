@@ -5,7 +5,10 @@ kind: problem
 title: Wald's identities for a random sum
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Wald's Identity
+  - Conditional Expectation
+  - Variance
 relations: []
 review: draft
 audit:

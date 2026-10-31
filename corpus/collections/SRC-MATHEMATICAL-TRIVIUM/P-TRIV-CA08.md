@@ -5,7 +5,9 @@ kind: problem
 title: Laurent series of $1/((z+1)(z+2))$ on its annuli of convergence
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Laurent Series
+  - Annuli
 relations: []
 review: draft
 audit:

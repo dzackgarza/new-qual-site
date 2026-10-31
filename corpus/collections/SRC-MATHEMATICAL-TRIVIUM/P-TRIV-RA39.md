@@ -5,7 +5,9 @@ kind: problem
 title: Volume of the solid of revolution of $y=\arcsin x$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Volume
+  - Solids of Revolution
 relations: []
 review: draft
 audit:

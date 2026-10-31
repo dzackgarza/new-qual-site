@@ -5,7 +5,9 @@ kind: problem
 title: Extremal of $\int_0^1(360x^2f-f''^2)\,dx$ with clamped endpoints
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus of Variations
+  - Higher-Order Euler-Lagrange Equations
 relations: []
 review: draft
 audit:

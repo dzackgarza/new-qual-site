@@ -5,7 +5,9 @@ kind: problem
 title: Homogeneous linear systems and their solution spaces
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Systems of Linear Equations
+  - Null Spaces
 relations: []
 review: draft
 audit:

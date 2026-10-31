@@ -5,7 +5,9 @@ kind: problem
 title: Canonical forms, rank and signature of three quadratic forms
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Quadratic Forms
+  - Signature
 relations: []
 review: draft
 audit:

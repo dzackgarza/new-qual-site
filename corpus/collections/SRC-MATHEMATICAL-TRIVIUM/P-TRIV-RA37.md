@@ -5,7 +5,9 @@ kind: problem
 title: Area of the surface of revolution of $y=\sin x$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Surface Area
+  - Surfaces of Revolution
 relations: []
 review: draft
 audit:

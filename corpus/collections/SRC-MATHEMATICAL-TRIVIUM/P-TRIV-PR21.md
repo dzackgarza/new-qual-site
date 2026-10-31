@@ -5,7 +5,9 @@ kind: problem
 title: Expected area of the projection of a randomly oriented unit cube
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Geometric Probability
+  - Expectation
 relations: []
 review: draft
 audit:

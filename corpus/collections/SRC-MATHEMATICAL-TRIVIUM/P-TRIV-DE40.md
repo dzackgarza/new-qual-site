@@ -5,7 +5,9 @@ kind: problem
 title: First-order PDE $xf_x-yf_y=0$ by characteristics
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Method of Characteristics
+  - First-Order PDEs
 relations: []
 review: draft
 audit:

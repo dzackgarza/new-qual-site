@@ -5,7 +5,9 @@ kind: problem
 title: 'Huygens problem: amplifying velocity through a chain of elastic collisions'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Optimization
+  - Elastic Collisions
 relations: []
 review: draft
 audit:

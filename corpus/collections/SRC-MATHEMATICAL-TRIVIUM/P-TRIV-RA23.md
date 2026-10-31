@@ -5,7 +5,9 @@ kind: problem
 title: $\int_0^{x_0}\sqrt{1-x^2/x_0^2}\,dx$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Definite Integrals
+  - Substitution
 relations: []
 review: draft
 audit:

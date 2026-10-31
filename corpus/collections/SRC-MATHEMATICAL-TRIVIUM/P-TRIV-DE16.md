@@ -5,7 +5,9 @@ kind: problem
 title: Oscillator $y''+16y=\theta(\pi-t)$ with Heaviside forcing
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Laplace Transform
+  - Heaviside Function
 relations: []
 review: draft
 audit:

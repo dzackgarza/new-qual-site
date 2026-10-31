@@ -5,7 +5,9 @@ kind: problem
 title: Integral representation and functional equation of the Riemann zeta function
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Riemann Zeta Function
+  - Analytic Continuation
 relations: []
 review: draft
 audit:

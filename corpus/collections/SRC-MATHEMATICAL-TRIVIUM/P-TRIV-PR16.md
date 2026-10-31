@@ -5,7 +5,10 @@ kind: problem
 title: Sums of independent normal and of independent Poisson random variables
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Normal Distribution
+  - Poisson Distribution
+  - Sums of Random Variables
 relations: []
 review: draft
 audit:

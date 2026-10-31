@@ -5,7 +5,9 @@ kind: problem
 title: Divergence of the $p$-series $\sum n^{-\alpha}$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Series Convergence
+  - p-Series
 relations: []
 review: draft
 audit:

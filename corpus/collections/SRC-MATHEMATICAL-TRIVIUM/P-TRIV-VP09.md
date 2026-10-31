@@ -5,7 +5,9 @@ kind: problem
 title: Variational principle for the biharmonic equation
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus of Variations
+  - Biharmonic Equation
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Random variables with $\mathbf{E}\xi^2=\mathbf{E}\xi^3=\mathbf{E}\xi^4$ are $\{0,1\}$-valued
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Moments
+  - Discrete Random Variables
 relations: []
 review: draft
 audit:

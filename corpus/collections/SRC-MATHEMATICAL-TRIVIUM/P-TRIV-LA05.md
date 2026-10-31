@@ -5,7 +5,9 @@ kind: problem
 title: Determinants of $A^T$, $A^{-1}$ and $cA$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Determinants
+  - Transposes
 relations: []
 review: draft
 audit:

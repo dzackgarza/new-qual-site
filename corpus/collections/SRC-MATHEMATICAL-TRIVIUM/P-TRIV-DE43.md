@@ -5,7 +5,9 @@ kind: problem
 title: Helmholtz equation in a cube with Dirichlet boundary conditions
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Helmholtz Equation
+  - Separation of Variables
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Euler--Lagrange equations for a particle in a potential
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Euler-Lagrange Equations
+  - Lagrangian Mechanics
 relations: []
 review: draft
 audit:

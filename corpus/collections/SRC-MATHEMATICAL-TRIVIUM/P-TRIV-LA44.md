@@ -5,7 +5,9 @@ kind: problem
 title: Canonical form, rank and signature of a ternary quadratic form
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Quadratic Forms
+  - Signature
 relations: []
 review: draft
 audit:

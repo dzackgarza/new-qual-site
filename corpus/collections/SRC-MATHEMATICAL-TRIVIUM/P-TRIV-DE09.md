@@ -5,7 +5,8 @@ kind: problem
 title: Forced equation $y''+3y'+2y=\tanh x$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Variation of Parameters
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: $\sum_{n\in\ZZ}\abs{ 2n+1} e^{-a\abs{ 2n+1}}$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Series
+  - Asymptotic Expansions
 relations: []
 review: draft
 audit:

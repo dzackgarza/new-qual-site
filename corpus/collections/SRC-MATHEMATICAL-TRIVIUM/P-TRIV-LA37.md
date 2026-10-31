@@ -5,7 +5,8 @@ kind: problem
 title: Polar decomposition of $2\times 2$ matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Polar Decomposition
 relations: []
 review: draft
 audit:
@@ -16,7 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Write the following matrix A as a product $A = S O$ of a symmetric matrix S and an orthogonal matrix O. (a) $A = { \left[ \begin{array} { l l } { 5 } & { 0 } \\ { 4 } & { 3 } \end{array} \right] } ,$ (b) $A = { \left[ \begin{array} { l l } { 0 } & { 0 } \\ { 4 } & { - 3 } \end{array} \right] }$ In which case is such decomposition unique?
+Write the following matrix $A$ as a product $A = SO$ of a symmetric matrix $S$ and an orthogonal matrix $O$.
+
+(a) $A = \begin{bmatrix} 5 & 0 \\ 4 & 3 \end{bmatrix}$,
+
+(b) $A = \begin{bmatrix} 0 & 0 \\ 4 & -3 \end{bmatrix}$.
+
+In which case is such decomposition unique?
 :::
 
 ::: {.remark}

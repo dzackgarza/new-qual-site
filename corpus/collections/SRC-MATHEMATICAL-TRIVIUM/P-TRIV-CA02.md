@@ -5,7 +5,9 @@ kind: problem
 title: Cartesian forms of $e^{i\theta}$, $3e^{i\pi/4}$, $\frac12 e^{i\pi}$, $2e^{2i\pi/3}$ and $e^{-3i\pi/4}$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Complex Numbers
+  - Polar Form
 relations: []
 review: draft
 audit:

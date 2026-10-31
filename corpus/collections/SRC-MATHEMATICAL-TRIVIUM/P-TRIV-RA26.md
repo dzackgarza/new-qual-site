@@ -5,7 +5,8 @@ kind: problem
 title: $\int_0^1\frac{dx}{(ax+b(1-x))^2}=\frac1{ab}$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Definite Integrals
 relations: []
 review: draft
 audit:

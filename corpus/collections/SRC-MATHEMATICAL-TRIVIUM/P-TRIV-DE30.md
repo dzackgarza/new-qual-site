@@ -5,7 +5,9 @@ kind: problem
 title: Eigenvalue problem for the Euler equation $x^2y''+3xy'+\lambda y=0$ on $[1,e]$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Euler Equations
+  - Eigenvalue Problems
 relations: []
 review: draft
 audit:

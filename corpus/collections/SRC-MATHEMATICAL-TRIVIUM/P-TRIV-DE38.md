@@ -5,7 +5,9 @@ kind: problem
 title: Distributional derivative of $\log x$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Distributions
+  - Complex Logarithm
 relations: []
 review: draft
 audit:

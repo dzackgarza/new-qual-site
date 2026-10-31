@@ -5,7 +5,9 @@ kind: problem
 title: Repeated-root equation $y''-6y'+9y=0$ with boundary conditions
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Constant-Coefficient ODEs
+  - Boundary Value Problems
 relations: []
 review: draft
 audit:

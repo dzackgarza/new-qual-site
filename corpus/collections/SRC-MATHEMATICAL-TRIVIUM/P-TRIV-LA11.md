@@ -5,7 +5,8 @@ kind: problem
 title: Vandermonde determinant
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Vandermonde Determinant
 relations: []
 review: draft
 audit:

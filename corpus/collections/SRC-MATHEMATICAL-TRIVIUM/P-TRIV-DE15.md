@@ -5,7 +5,9 @@ kind: problem
 title: First-order equation $y'+2y=e^{-t}\theta(t)$ with Heaviside forcing
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Laplace Transform
+  - Heaviside Function
 relations: []
 review: draft
 audit:

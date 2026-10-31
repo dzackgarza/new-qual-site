@@ -5,7 +5,9 @@ kind: problem
 title: Conformal map from the unit disk onto the left half-plane
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Conformal Maps
+  - Mobius Transformations
 relations: []
 review: draft
 audit:

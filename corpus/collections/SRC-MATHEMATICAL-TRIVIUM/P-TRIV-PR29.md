@@ -5,7 +5,8 @@ kind: problem
 title: Markov chain of a die rolled onto adjacent faces
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Markov Chains
 relations: []
 review: draft
 audit:

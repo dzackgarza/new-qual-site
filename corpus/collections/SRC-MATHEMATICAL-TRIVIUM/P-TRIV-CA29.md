@@ -5,7 +5,9 @@ kind: problem
 title: Stirling's approximation from the Gamma integral
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Stirling's Formula
+  - Gamma Function
 relations: []
 review: draft
 audit:

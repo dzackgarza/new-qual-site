@@ -5,7 +5,9 @@ kind: problem
 title: First-order expansion of $\det(I+\epsilon B)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Determinants
+  - Traces
 relations: []
 review: draft
 audit:

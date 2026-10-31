@@ -5,7 +5,9 @@ kind: problem
 title: Gaussian variational ansatz for the harmonic oscillator ground state
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Variational Method
+  - Harmonic Oscillator
 relations: []
 review: draft
 audit:

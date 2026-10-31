@@ -5,7 +5,9 @@ kind: problem
 title: Convergence of the pendulum period integral at the turning point
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Improper Integrals
+  - Convergence of Integrals
 relations: []
 review: draft
 audit:

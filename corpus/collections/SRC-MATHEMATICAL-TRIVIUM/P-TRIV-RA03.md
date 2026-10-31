@@ -5,7 +5,9 @@ kind: problem
 title: Derivatives of $e^{-1/x^2}$ at $0$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Derivatives
+  - Smooth Non-Analytic Functions
 relations: []
 review: draft
 audit:

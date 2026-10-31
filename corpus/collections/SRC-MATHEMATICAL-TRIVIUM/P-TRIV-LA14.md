@@ -5,7 +5,9 @@ kind: problem
 title: Orthogonality of real matrices with $(\det A)^2=1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Orthogonal Matrices
+  - Determinants
 relations: []
 review: draft
 audit:

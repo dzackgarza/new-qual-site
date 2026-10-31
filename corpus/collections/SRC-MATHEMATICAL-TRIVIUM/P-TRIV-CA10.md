@@ -5,7 +5,9 @@ kind: problem
 title: Image of a disk under the principal branch of $\log z$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Conformal Maps
+  - Complex Logarithm
 relations: []
 review: draft
 audit:

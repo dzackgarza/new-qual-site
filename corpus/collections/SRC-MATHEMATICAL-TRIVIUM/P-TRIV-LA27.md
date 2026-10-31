@@ -5,7 +5,8 @@ kind: problem
 title: Orthogonal transformation sending $(1,\sqrt2,\sqrt3)$ to $(0,\sqrt2,2)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Orthogonal Matrices
 relations: []
 review: draft
 audit:

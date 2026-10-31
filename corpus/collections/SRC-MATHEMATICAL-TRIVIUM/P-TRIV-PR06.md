@@ -5,7 +5,8 @@ kind: problem
 title: 'Pairwise but not mutual independence: Bernstein''s tetrahedron'
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Independence of Events
 relations: []
 review: draft
 audit:
@@ -16,14 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Three faces of a tetrahedron are painted red (R), green (G) and blue (B), while the forth face is painted in all three colors (see the figure).
-Denote by P (A) the probability that it falls on a face containing the color A, A = R, G, B.
+Three faces of a tetrahedron are painted red (R), green (G) and blue (B), while the forth face is painted in all three colors.
+Denote by $P(A)$ the probability that it falls on a face containing the color $A$, $A = R, G, B$.
 
-The source also includes Figure 6 showing the tetrahedron; Flash preserves only the textual face-color description.
+(a) Check if $P(A \cap B) = P(A)P(B)$ for all $A, B = R, G, B$.
 
-(a) Check if $P ( A \cap B ) = P ( A ) P ( B )$ for all $A , B = R , G , B$
-
-(b) Check if $P ( R \cap G \cap B ) = P ( R ) P ( G ) P ( B )$ . Are the events R, G, B pairwise independent?
+(b) Check if $P(R \cap G \cap B) = P(R)P(G)P(B)$. Are the events $R$, $G$, $B$ pairwise independent?
 Are they mutually independent?
 :::
 

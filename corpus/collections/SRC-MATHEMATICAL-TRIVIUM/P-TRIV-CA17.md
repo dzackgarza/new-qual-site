@@ -5,7 +5,9 @@ kind: problem
 title: $\int_{-\infty}^\infty \frac{x^2}{x^4-2x^2\cos 2\theta+1}\,dx$ by residues
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residue Theorem
+  - Contour Integration
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Composition of the Dirac delta with a function
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Dirac Delta
+  - Distributions
 relations: []
 review: draft
 audit:

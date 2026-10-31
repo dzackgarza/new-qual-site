@@ -5,7 +5,9 @@ kind: problem
 title: Action functionals for the time-dependent and stationary Schrödinger equations
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus of Variations
+  - Schrodinger Equation
 relations: []
 review: draft
 audit:

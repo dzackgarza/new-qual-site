@@ -5,7 +5,9 @@ kind: problem
 title: Integrable smooth function with a single nonzero derivative at $0$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Smooth Functions
+  - Bump Functions
 relations: []
 review: draft
 audit:
@@ -18,7 +20,7 @@ audit:
 ::: {.problem}
 Give an example of the $C^{\infty}(\RR)$ function $f(x)$ with the following properties:
 $$
-\begin{array}{rl} 1) & f^{(n)}(0) = 1 \text{ for some } n \geqslant 0, \\ 2) & f^{(i)}(0) = 0, \quad i \geqslant 0, \quad i \neq n, \\ 3) & \displaystyle\int_0^{\infty} \abs{f(x)}\, dx < \infty. \end{array} \tag{13}
+\begin{array}{rl} \text{(i)} & f^{(n)}(0) = 1 \text{ for some } n \geqslant 0, \\ \text{(ii)} & f^{(i)}(0) = 0, \quad i \geqslant 0, \quad i \neq n, \\ \text{(iii)} & \displaystyle\int_0^{\infty} \abs{f(x)}\, dx < \infty. \end{array} \tag{13}
 $$
 :::
 

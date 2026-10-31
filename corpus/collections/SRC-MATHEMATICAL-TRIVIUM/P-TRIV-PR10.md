@@ -5,7 +5,9 @@ kind: problem
 title: Buffon's needle
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Geometric Probability
+  - Buffon's Needle
 relations: []
 review: draft
 audit:
@@ -16,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-”Buffon’s needle” A needle of length l is thrown randomly on a plane lined with parallel lines with distance d between them, $l < d .$ Find the probability that the needle will cross some line.
+"Buffon's needle" A needle of length $l$ is thrown randomly on a plane lined with parallel lines with distance $d$ between them, $l < d$. Find the probability that the needle will cross some line.
 :::
 
 ::: {.solution}

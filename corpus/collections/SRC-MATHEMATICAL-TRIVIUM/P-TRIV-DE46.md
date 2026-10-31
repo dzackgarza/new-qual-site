@@ -5,7 +5,9 @@ kind: problem
 title: Heat equation on a half-line with delta initial data
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Heat Equation
+  - Method of Images
 relations: []
 review: draft
 audit:

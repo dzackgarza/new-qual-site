@@ -5,7 +5,9 @@ kind: problem
 title: Normal approximation to the number of sixes in 12000 dice throws
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Central Limit Theorem
+  - Normal Approximation
 relations: []
 review: draft
 audit:

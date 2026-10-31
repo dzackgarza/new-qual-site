@@ -5,7 +5,8 @@ kind: problem
 title: Surface areas of the sphere and the torus
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Surface Area
 relations: []
 review: draft
 audit:

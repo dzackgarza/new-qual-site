@@ -5,7 +5,9 @@ kind: problem
 title: Natural boundary conditions from a boundary term in the functional
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Calculus of Variations
+  - Natural Boundary Conditions
 relations: []
 review: draft
 audit:

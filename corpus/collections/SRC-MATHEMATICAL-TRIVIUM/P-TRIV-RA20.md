@@ -5,7 +5,9 @@ kind: problem
 title: $\int_0^\infty x^ne^{-x}\,dx=n!$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Gamma Function
+  - Integration by Parts
 relations: []
 review: draft
 audit:

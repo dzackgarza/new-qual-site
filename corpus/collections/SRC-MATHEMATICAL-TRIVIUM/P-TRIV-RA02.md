@@ -5,7 +5,9 @@ kind: problem
 title: Derivative of $x^x$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Derivatives
+  - Logarithmic Differentiation
 relations: []
 review: draft
 audit:

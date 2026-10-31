@@ -5,7 +5,9 @@ kind: problem
 title: $\int_{-\infty}^\infty \delta''(x-2)\frac{dx}{1+x^2}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Dirac Delta
+  - Distributions
 relations: []
 review: draft
 audit:

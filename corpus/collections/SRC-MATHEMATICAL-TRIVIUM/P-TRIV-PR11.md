@@ -5,7 +5,9 @@ kind: problem
 title: Exponential waiting time between collisions
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Exponential Distribution
+  - Poisson Process
 relations: []
 review: draft
 audit:

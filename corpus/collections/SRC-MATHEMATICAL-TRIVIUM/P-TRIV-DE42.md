@@ -5,7 +5,9 @@ kind: problem
 title: Boundary value problem for $u_{xx}+2u_{xy}+u_{yy}=0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Second-Order PDEs
+  - Boundary Value Problems
 relations: []
 review: draft
 audit:

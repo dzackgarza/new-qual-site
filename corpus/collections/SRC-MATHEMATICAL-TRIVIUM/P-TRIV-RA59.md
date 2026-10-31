@@ -5,7 +5,8 @@ kind: problem
 title: Solutions of the exponential functional equation $f(x)f(y)=f(x+y)$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Functional Equations
 relations: []
 review: draft
 audit:
@@ -16,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Find all differentiable solutions of the equation $f ( x ) f ( y ) = f ( x + y )$ . Find all continuous solutions of the same equation.
+Find all differentiable solutions of the equation $f(x)f(y) = f(x + y)$. Find all continuous solutions of the same equation.
 :::
 
 ::: {.solution}

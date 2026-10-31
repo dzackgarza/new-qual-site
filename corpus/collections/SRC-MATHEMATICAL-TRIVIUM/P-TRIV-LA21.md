@@ -5,7 +5,9 @@ kind: problem
 title: No commutator of real matrices is a nonzero multiple of the identity
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Commutators
+  - Traces
 relations: []
 review: draft
 audit:

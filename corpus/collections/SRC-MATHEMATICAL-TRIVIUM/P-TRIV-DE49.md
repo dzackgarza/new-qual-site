@@ -5,7 +5,9 @@ kind: problem
 title: Steady temperature in a semi-infinite cylinder
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Laplace Equation
+  - Bessel Functions
 relations: []
 review: draft
 audit:

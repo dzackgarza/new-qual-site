@@ -5,7 +5,8 @@ kind: problem
 title: Reduction of order for $y''+P y'+Qy=0$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Reduction of Order
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: $\int_{-\infty}^\infty \frac{e^{i\alpha x}}{(3-ix)(1+ix)}\,dx$ by residues
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residue Theorem
+  - Fourier Transform
 relations: []
 review: draft
 audit:

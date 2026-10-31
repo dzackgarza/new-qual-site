@@ -5,7 +5,9 @@ kind: problem
 title: Reflection matrices in $\RR^3$ across a point, an axis and a plane
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Reflections
+  - Orthogonal Matrices
 relations: []
 review: draft
 audit:

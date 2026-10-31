@@ -5,7 +5,10 @@ kind: problem
 title: Reliability of a five-relay bridge circuit
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Independence of Events
+  - Conditional Probability
+  - Bayes' Theorem
 relations: []
 review: draft
 audit:

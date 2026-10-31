@@ -5,7 +5,8 @@ kind: problem
 title: Meeting problem with a ten-minute wait
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Geometric Probability
 relations: []
 review: draft
 audit:

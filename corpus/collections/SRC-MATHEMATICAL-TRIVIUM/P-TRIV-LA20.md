@@ -5,7 +5,9 @@ kind: problem
 title: Commutators and anticommutators of the Pauli matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Pauli Matrices
+  - Commutators
 relations: []
 review: draft
 audit:

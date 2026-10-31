@@ -5,7 +5,9 @@ kind: problem
 title: Monte Carlo integration and its sample size
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Monte Carlo Methods
+  - Law of Large Numbers
 relations: []
 review: draft
 audit:

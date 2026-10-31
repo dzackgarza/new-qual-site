@@ -5,7 +5,9 @@ kind: problem
 title: Neumann eigenvalue problem for $y''+\lambda y=0$ on $[0,\pi]$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Sturm-Liouville Theory
+  - Eigenvalue Problems
 relations: []
 review: draft
 audit:

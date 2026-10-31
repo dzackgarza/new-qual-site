@@ -5,7 +5,8 @@ kind: problem
 title: Confidence interval for a proportion of defective goods
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Confidence Intervals
 relations: []
 review: draft
 audit:

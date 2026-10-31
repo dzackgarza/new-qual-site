@@ -5,7 +5,9 @@ kind: problem
 title: Self-adjoint forms of the Laguerre, Hermite and Chebyshev equations
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Self-Adjoint Operators
+  - Sturm-Liouville Theory
 relations: []
 review: draft
 audit:

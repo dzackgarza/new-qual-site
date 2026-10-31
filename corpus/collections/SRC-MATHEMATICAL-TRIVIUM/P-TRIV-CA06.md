@@ -5,7 +5,8 @@ kind: problem
 title: Laurent series of $z/((z+1)(z-1))$ about $z=1$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Laurent Series
 relations: []
 review: draft
 audit:

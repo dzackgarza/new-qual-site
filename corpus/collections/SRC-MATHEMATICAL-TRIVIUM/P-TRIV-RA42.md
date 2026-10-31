@@ -5,7 +5,10 @@ kind: problem
 title: Divergence, Laplacian and curl of $\nabla\frac1r$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Divergence
+  - Curl
+  - Laplacian
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Typical sequences and entropy for Bernoulli trials
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Entropy
+  - Asymptotic Equipartition
 relations: []
 review: draft
 audit:

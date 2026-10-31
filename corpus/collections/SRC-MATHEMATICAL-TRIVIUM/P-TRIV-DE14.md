@@ -5,7 +5,9 @@ kind: problem
 title: Initial value problem $y''-6y'+15y=2\sin 3t$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Laplace Transform
+  - Initial Value Problems
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Volume of the ball in $\RR^3$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Volume
+  - Multiple Integrals
 relations: []
 review: draft
 audit:

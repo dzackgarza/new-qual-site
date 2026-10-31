@@ -5,7 +5,9 @@ kind: problem
 title: Convergence of $\int\frac{dx}{x^\alpha\log^\beta x}$ on $(0,1)$ and $(1,\infty)$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Improper Integrals
+  - Convergence of Integrals
 relations: []
 review: draft
 audit:
@@ -18,7 +20,9 @@ audit:
 ::: {.problem}
 For what values of $\alpha$ and $\beta$ the following integrals are convergent?
 
-(a) $\int_0^1 \frac{dx}{x^\alpha\log^\beta x}$, (b) $\int_1^{\infty} \frac{dx}{x^\alpha\log^\beta x}$.
+(a) $\int_0^1 \frac{dx}{x^\alpha\log^\beta x}$,
+
+(b) $\int_1^{\infty} \frac{dx}{x^\alpha\log^\beta x}$.
 :::
 
 ::: {.remark}

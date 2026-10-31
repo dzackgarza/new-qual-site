@@ -5,7 +5,9 @@ kind: problem
 title: Almost sure convergence of the random harmonic series $\sum \xi_n/n$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Kolmogorov Three-Series Theorem
+  - Random Series
 relations: []
 review: draft
 audit:

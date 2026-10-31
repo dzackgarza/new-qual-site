@@ -5,7 +5,9 @@ kind: problem
 title: Grounded conducting sphere in a uniform electric field
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Laplace Equation
+  - Electrostatics
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Fourier transform of $f_0(\frac1r+\frac1a)e^{-2r/a}$ in $\RR^3$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Fourier Transform
 relations: []
 review: draft
 audit:

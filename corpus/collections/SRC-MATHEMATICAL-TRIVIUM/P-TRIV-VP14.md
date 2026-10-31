@@ -5,7 +5,9 @@ kind: problem
 title: Q-ball ansatz in the Euler--Lagrange equations of a complex scalar field
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Euler-Lagrange Equations
+  - Field Theory
 relations: []
 review: draft
 audit:

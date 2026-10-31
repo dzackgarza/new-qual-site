@@ -5,7 +5,9 @@ kind: problem
 title: Estimating $\sin^{100} 0.1$ to within $10\%$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Estimates
+  - Exponential Function
 relations: []
 review: draft
 audit:

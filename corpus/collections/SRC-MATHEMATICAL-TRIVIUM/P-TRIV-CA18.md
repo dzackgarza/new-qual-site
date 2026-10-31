@@ -5,7 +5,9 @@ kind: problem
 title: $\int_0^{2\pi}\frac{d\theta}{1+a\cos\theta}$ for $\abs{a}<1$
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residue Theorem
+  - Trigonometric Integrals
 relations: []
 review: draft
 audit:

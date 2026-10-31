@@ -5,7 +5,9 @@ kind: problem
 title: Minimum of the tilted double well $\frac\lambda4(x^2-v^2)^2-\epsilon x$ for small $\epsilon$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Extrema
+  - Perturbation Theory
 relations: []
 review: draft
 audit:

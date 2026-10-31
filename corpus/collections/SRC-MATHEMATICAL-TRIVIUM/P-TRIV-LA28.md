@@ -5,7 +5,9 @@ kind: problem
 title: Orthonormal basis adapted to two vectors in $\RR^2$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Orthonormal Bases
+  - Gram-Schmidt Process
 relations: []
 review: draft
 audit:

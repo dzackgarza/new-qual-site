@@ -5,7 +5,8 @@ kind: problem
 title: Arc length of $y=\log\cos x$ on $[0,\pi/6]$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Arc Length
 relations: []
 review: draft
 audit:

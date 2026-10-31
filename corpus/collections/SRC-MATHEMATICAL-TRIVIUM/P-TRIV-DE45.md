@@ -5,7 +5,9 @@ kind: problem
 title: Steady temperature in a sphere with hemispheres at different temperatures
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Laplace Equation
+  - Legendre Polynomials
 relations: []
 review: draft
 audit:

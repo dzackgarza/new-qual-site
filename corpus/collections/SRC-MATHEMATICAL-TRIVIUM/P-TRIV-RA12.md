@@ -5,7 +5,8 @@ kind: problem
 title: $\lim_{x\to0}\frac{\sin x}{x}$
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Limits
 relations: []
 review: draft
 audit:
