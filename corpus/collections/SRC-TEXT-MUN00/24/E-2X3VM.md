@@ -45,7 +45,13 @@ The map $\gamma(t)=(\gamma_\alpha(t))_\alpha$ is continuous because its coordina
 
 ::: pf-proof
 The set $A=\{(x,\sin(1/x)):0<x\le1\}\subseteq\RR^2$ is the image of $(0,1]$ under a continuous map, hence path connected.
-Its closure $\overline A=A\cup(\{0\}\times[-1,1])$ is the topologist's sine curve, which is not path connected: no path in $\overline A$ joins $(0,0)$ to a point of $A$.
+Its closure is $\overline A=A\cup(\{0\}\times[-1,1])$.
+Suppose a path $\gamma(t)=(u(t),v(t))$ joined $(0,0)$ to a point of $A$, and let $t_0=\inf\{t:u(t)>0\}$.
+Then $u(t_0)=0$, and there are times $s_n\downarrow t_0$ with $u(s_n)>0$.
+Between $t_0$ and $s_n$, the intermediate value theorem gives points where $u$ equals arbitrarily small positive numbers of the forms $1/(2\pi k+\pi/2)$ and $1/(2\pi k+3\pi/2)$.
+At those points $v=1$ and $v=-1$, respectively.
+Both sets of times approach $t_0$, contradicting continuity of $v$.
+Thus $\overline A$ is not path connected.
 :::
 
 :::
