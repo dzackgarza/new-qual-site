@@ -44,7 +44,7 @@ Every finite free module $R^m$ is noetherian.
 ::: pf-proof
 
 Because $R$ is a noetherian ring, $R$ is noetherian as an $R$-module. We
-induct on $m$. The case $m=1$ is exactly the hypothesis.
+induct on $m$. The case $m=0$ is the zero module, and the case $m=1$ is exactly the hypothesis.
 
 For $m>1$, use the exact sequence
 $$
