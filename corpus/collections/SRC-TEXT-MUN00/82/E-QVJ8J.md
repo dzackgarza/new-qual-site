@@ -50,7 +50,9 @@ $$
 :::
 
 ::: {.solution}
-Let $\mathcal A$ and the countable star-fine path-connected cover $\mathcal B$ be as in the statement. Thus whenever $B,B'\in\mathcal B$ intersect, there is $A\in\mathcal A$ with
+Semilocal simple connectedness and local path connectedness supply the cover $\mathcal A$ by path-connected open sets whose loops become nullhomotopic in $X$. Regularity and second countability make $X$ metrizable by the Urysohn metrization theorem. Apply [[E-8Q9TN]] to $\mathcal A$ to obtain an open cover with the stated pairwise-union property. Its path components are open because $X$ is locally path connected. They retain that property, and second countability gives a countable subcover of them. This constructs the required path-connected cover $\mathcal B$.
+
+Thus whenever $B,B'\in\mathcal B$ intersect, there is $A\in\mathcal A$ with
 $$
 B\cup B'\subset A,
 $$
