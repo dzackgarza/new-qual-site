@@ -56,7 +56,7 @@ $$
 The point $(0)$ is the generic point, and every $(p)$ is closed.
 
 ::: pf-proof
-The closure of a point $\mfp $ in an affine spectrum is
+The closure of a point $\mfp$ in an affine spectrum is
 $$
 V(\mfp)
 =\{\mfq \st \mfq\supseteq\mfp \}.
@@ -88,7 +88,7 @@ V(n)=\{(p) \st p\mid n\}.
 $$
 
 ::: pf-proof
-A prime ideal $\mfp $ belongs to $V(n)$ exactly when
+A prime ideal $\mfp$ belongs to $V(n)$ exactly when
 $$
 n\in\mfp.
 $$

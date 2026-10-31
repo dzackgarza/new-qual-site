@@ -87,10 +87,10 @@ $$
 I\cap\{1,f,f^2,\ldots\}=\varnothing.
 $$
 It is nonempty because $(0)$ belongs to it, and the union of any chain is again a homogeneous ideal disjoint from the powers of $f$.
-By Zorn's lemma there is a maximal such homogeneous ideal $\mfp $.
+By Zorn's lemma there is a maximal such homogeneous ideal $\mfp$.
 
-We claim $\mfp $ is prime.
-Let $a,b$ be homogeneous elements not in $\mfp $.
+We claim $\mfp$ is prime.
+Let $a,b$ be homogeneous elements not in $\mfp$.
 By maximality, the homogeneous ideals
 $$
 \mfp +(a)
@@ -104,25 +104,25 @@ f^m=p_1+ra,
 \qquad
 f^n=p_2+sb
 $$
-with $p_1,p_2\in\mfp $.
+with $p_1,p_2\in\mfp$.
 Multiplying gives
 $$
 f^{m+n}
 \in
 \mfp +(ab).
 $$
-If $ab\in\mfp $, this would put $f^{m+n}$ in $\mfp $, contradiction.
+If $ab\in\mfp$, this would put $f^{m+n}$ in $\mfp$, contradiction.
 Hence
 $$
 ab\notin\mfp.
 $$
-So the complement of $\mfp $ is multiplicatively closed on homogeneous elements, which is the homogeneous-prime criterion.
+So the complement of $\mfp$ is multiplicatively closed on homogeneous elements, which is the homogeneous-prime criterion.
 
 Since
 $$
 f\notin\mfp 
 $$
-and $f\in S_+$, the prime $\mfp $ does not contain $S_+$.
+and $f\in S_+$, the prime $\mfp$ does not contain $S_+$.
 Hence
 $$
 \mfp \in\Proj S,
@@ -379,7 +379,7 @@ Then
 $$
 t^m\in T_{mn}\subseteq\mfp.
 $$
-Since $\mfp $ is prime,
+Since $\mfp$ is prime,
 $$
 t\in\mfp.
 $$
@@ -513,7 +513,7 @@ $$
 s=a^N
 $$
 has degree at least $d_0$.
-Since $\mfq $ is prime and $a\notin\mfq $,
+Since $\mfq$ is prime and $a\notin\mfq$,
 $$
 s\notin\mfq .
 $$

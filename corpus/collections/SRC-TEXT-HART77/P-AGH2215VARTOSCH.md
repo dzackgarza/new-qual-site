@@ -65,7 +65,7 @@ is defined by a prime ideal
 $$
 \mfp \subseteq A.
 $$
-The point $\eta_Z$ is the prime $\mfp $.  Its residue field is
+The point $\eta_Z$ is the prime $\mfp$.  Its residue field is
 $$
 \kappa(\mfp)
 =\Frac(A/\mfp),

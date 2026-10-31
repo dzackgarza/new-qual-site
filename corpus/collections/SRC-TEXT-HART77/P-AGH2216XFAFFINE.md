@@ -84,7 +84,7 @@ because contraction of the localized prime is
 $$
 \mfp B_{\mfp}\cap B=\mfp.
 $$
-Thus $f_x$ is a unit, equivalently is not in the maximal ideal, exactly when $\bar f\notin\mfp $.
+Thus $f_x$ is a unit, equivalently is not in the maximal ideal, exactly when $\bar f\notin\mfp$.
 :::
 
 :::

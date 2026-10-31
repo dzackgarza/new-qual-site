@@ -146,7 +146,7 @@ The ring-theoretic direction is consistent with this variance: every ring $R$ ha
 $$
 R\longrightarrow0,
 $$
-and the contravariant functor $\Spec $ turns it into the unique scheme morphism
+and the contravariant functor $\Spec$ turns it into the unique scheme morphism
 $$
 \Spec 0\longrightarrow\Spec R.
 $$

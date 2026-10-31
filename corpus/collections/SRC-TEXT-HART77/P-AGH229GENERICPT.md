@@ -126,14 +126,14 @@ Let
 $$
 \zeta\in U
 $$
-be the point corresponding to $\mfp $.  Then
+be the point corresponding to $\mfp$.  Then
 $$
 \overline{\{\zeta\}}^{\,U}
 =Z\cap U.
 $$
 
 ::: pf-proof
-In an affine spectrum, the closure of the point corresponding to a prime $\mfp $ is
+In an affine spectrum, the closure of the point corresponding to a prime $\mfp$ is
 $$
 V(\mfp).
 $$
@@ -230,7 +230,7 @@ The closures of $\zeta$ and $\eta$ inside $U$ are both
 $$
 Z\cap U.
 $$
-If they correspond to prime ideals $\mfp $ and $\mfq $ of $A$, then
+If they correspond to prime ideals $\mfp$ and $\mfq$ of $A$, then
 $$
 V(\mfp)=V(\mfq ).
 $$

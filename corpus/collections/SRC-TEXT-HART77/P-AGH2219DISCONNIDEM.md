@@ -131,7 +131,7 @@ These are complementary orthogonal idempotents.  For every prime ideal $\mfp \su
 $$
 e_1e_2=0
 $$
-forces $e_1\in\mfp $ or $e_2\in\mfp $, while $e_1+e_2=1$ prevents both from lying in $\mfp $.
+forces $e_1\in\mfp$ or $e_2\in\mfp$, while $e_1+e_2=1$ prevents both from lying in $\mfp$.
 
 Hence
 $$
