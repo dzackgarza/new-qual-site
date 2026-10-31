@@ -23,87 +23,71 @@ Show that each $n$ simplex in the barycentric subdivision of $\Delta^n$ is defin
 :::
 
 ::: {.solution}
+A maximal chain of nonempty faces of $\Delta^n$ has the form
+$$
+S_k=\{i_0,\ldots,i_k\}\qquad(0\le k\le n)
+$$
+for a permutation $(i_0,\ldots,i_n)$ of $(0,\ldots,n)$. Let $b_k$ be the barycenter of the face $S_k$.
 
 ::: pf
 
+::: {.pf-step #s1}
+
+Every point of the subdivided simplex $[b_0,\ldots,b_n]$ satisfies
+$$
+t_{i_0}\ge t_{i_1}\ge\cdots\ge t_{i_n}.
+$$
+
+::: pf-proof
+
+The barycenter $b_k$ has coordinate $1/(k+1)$ at each $i_j$ with $j\le k$ and coordinate $0$ at all other vertices. Hence its coordinates have the stated order. The inequalities are preserved under convex combinations.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+Every point of $\Delta^n$ whose coordinates satisfy this order lies in $[b_0,\ldots,b_n]$.
+
+::: pf-proof
+
+Put $t_{i_{n+1}}=0$ and define
+$$
+\lambda_k=(k+1)(t_{i_k}-t_{i_{k+1}})\qquad(0\le k\le n).
+$$
+The ordering gives $\lambda_k\ge0$, and telescoping gives
+$$
+\sum_{k=0}^n\lambda_k
+=\sum_{k=0}^n t_{i_k}=1.
+$$
+The coordinate at $i_j$ of $\sum_k\lambda_k b_k$ is
+$$
+\sum_{k=j}^n\frac{\lambda_k}{k+1}
+=\sum_{k=j}^n(t_{i_k}-t_{i_{k+1}})
+=t_{i_j}.
+$$
+Thus the point is the displayed convex combination of the barycenters.
+
+:::
+
+:::
+
 ::: pf-step
 
-The barycentric subdivision of $\Delta^n$ has one vertex for each nonempty face of $\Delta^n$, i.e. for each nonempty subset $S \subseteq \{0, \ldots, n\}$.
+The $n$-simplices of the barycentric subdivision are exactly the regions defined by one ordering of the barycentric coordinates.
 
 ::: pf-proof
 
-definition of barycentric subdivision.
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show that the simplex for the chain $S_0\subsetneq\cdots\subsetneq S_n$ equals the region $t_{i_0}\ge\cdots\ge t_{i_n}$. Reversing the permutation writes the same region as
+$$
+t_{i_n}\le\cdots\le t_{i_0},
+$$
+which has the form stated in the exercise.
 
 :::
 
 :::
 
-::: pf-step
-
-The vertex corresponding to $S$ is the barycenter of the face spanned by $\{e_i : i \in S\}$, whose barycentric coordinates are $t_i = 1/\cardinality{S}$ for $i \in S$ and $t_i = 0$ for $i \notin S$.
-
-::: pf-proof
-
-the barycenter of a face.
-
 :::
-
-:::
-
-::: {.pf-step #s3}
-
-An $n$-simplex of the subdivision is spanned by a chain of faces $S_0 \subsetneq S_1 \subsetneq \cdots \subsetneq S_n$ with $\cardinality{S_k} = k + 1$.
-
-::: pf-proof
-
-a maximal chain of faces gives an $n$-simplex of the subdivision.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-Such a chain corresponds to a permutation $(i_0, \ldots, i_n)$ of $(0, \ldots, n)$, where $S_k = \{i_0, \ldots, i_k\}$.
-
-::: pf-proof
-
-Step [](#s3){.pf-ref} (each step adds one new vertex).
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-A point in the simplex spanned by the barycenters of $S_0, \ldots, S_n$ has barycentric coordinates satisfying $t_{i_0} \ge t_{i_1} \ge \cdots \ge t_{i_n}$.
-
-::: pf-proof
-
-the barycenter of $S_k$ has $t_{i_0} = \cdots = t_{i_k} = 1/(k+1)$ and $t_{i_{k+1}} = \cdots = t_{i_n} = 0$, so convex combinations of these barycenters have $t_{i_0} \ge t_{i_1} \ge \cdots \ge t_{i_n}$.
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-Hence each $n$-simplex of the subdivision is defined by the $n$ inequalities $t_{i_0} \le t_{i_1} \le \cdots \le t_{i_n}$ (up to reversing the order), for a permutation $(i_0, \ldots, i_n)$.
-
-::: pf-proof
-
-Steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s6){.pf-ref}.
-
-:::
-
-:::
-
 :::
