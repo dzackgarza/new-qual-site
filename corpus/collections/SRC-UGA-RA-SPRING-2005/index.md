@@ -32,6 +32,8 @@ source:
       comment: Problem 2
     - id: P-UCLAB06S-02
       comment: Problem 3
+    - id: P-UGA-CA-SPRING-2005-4
+      comment: Problem 4
   date:
     kind: academic-term
     term: spring
