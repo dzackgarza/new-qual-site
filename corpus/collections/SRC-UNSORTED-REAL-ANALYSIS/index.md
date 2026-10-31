@@ -14,20 +14,17 @@ source:
   date:
     kind: unknown
   problems:
-  - id: E-4CL6A
   - id: E-6X7Z4
   - id: E-ASWCD
   - id: E-BTA5L
   - id: E-CGVE4
   - id: E-EJN4Q
-  - id: E-FFARP
   - id: E-GMYE2
   - id: E-JY5OT
   - id: E-M3CGY
   - id: E-MFCCS
   - id: E-QSNCL
   - id: P-RVL3K
-  - id: E-SA3HI
   - id: E-TXSKL
   - id: E-WSJ6P
   - id: E-XHB3F
