@@ -237,6 +237,8 @@ source:
       comment: Ch. 5, Exercise 14
     - id: E-SS5.EX-15
       comment: Ch. 5, Exercise 15
+    - id: E-SS5.EX-16
+      comment: Ch. 5, Exercise 16
   - name: Ch5 Problems
     problems:
     - id: E-SS5.PR-1
