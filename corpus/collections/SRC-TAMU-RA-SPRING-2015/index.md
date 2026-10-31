@@ -5,25 +5,27 @@ kind: collection
 title: TAMU real-analysis Spring 2015
 classification:
   areas:
-  - real-analysis
+    - real-analysis
   topics: []
 relations: []
 review: draft
 provenance:
-- assets/attachments/j15.pdf
+  - assets/attachments/j15.pdf
 source:
   source_kind: university-exam
   institution: tamu
   area: real-analysis
   problems:
-  - P-8XT93
-  - P-8XT94
-  - P-8XT95
-  - P-8XT96
-  - P-8XT97
-  - P-8XT98
-  - P-CTQ6G
-  - P-8XT99
+    - P-8XT93
+    - P-TAMURAS15-02
+    - P-8XT94
+    - P-8XT95
+    - P-8XT96
+    - P-8XT97
+    - P-8XT98
+    - P-CTQ6G
+    - P-8XT99
+    - P-TAMURAS15-10
   date:
     kind: academic-term
     term: spring

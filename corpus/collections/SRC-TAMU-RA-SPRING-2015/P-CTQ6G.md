@@ -16,10 +16,10 @@ review: draft
 ---
 
 ::: {.problem}
-(1) $Y$ is metric space.
-Prove $y\in Y$ is isolated iff the complement $\{y\}^c$ is not dense in $Y$
+(i) A point $y$ in a metric space $Y$ is isolated if the set $\{y\}$ is both open and closed in $Y$.
+Prove that $y\in Y$ is isolated if and only if the complement $\{y\}^c$ is not dense in $Y$.
 
-(2) Let $X$ be a countable nonempty complete metric space.
+(ii) Let $X$ be a countable nonempty complete metric space.
 Prove that the set of isolated points is dense in $X$.
 :::
 
