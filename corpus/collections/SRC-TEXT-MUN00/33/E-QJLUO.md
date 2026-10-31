@@ -11,6 +11,11 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: gpt-6.1-sol
+  date: 2026-10-31
+  note: 'The source states f(A)={0} and f(B)={1}. For an empty set, its image is empty; the intended assertion is pointwise separation.'
 ---
 
 ::: {.exercise}

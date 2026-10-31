@@ -15,6 +15,10 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-corrected
+  by: gpt-6.1-sol
+  date: 2026-10-31
+  note: 'Part (a) requires a predecessor index, so the least index is excluded. The empty product case is treated separately.'
 ---
 
 ::: {.exercise}

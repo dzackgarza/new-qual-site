@@ -15,6 +15,10 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-corrected
+  by: gpt-6.1-sol
+  date: 2026-10-31
+  note: 'The source claims that each component has a countable basis. An uncountable product of compact intervals is connected, compact, Hausdorff, and not first countable. The printed proof establishes a countable compact cover.'
 ---
 
 ::: {.exercise}
@@ -27,10 +31,6 @@ If $X_0$ is a component of $X$, then $X_0$ is locally compact and paracompact.
 Let $\mathcal{C}$ be a locally finite covering of $X_0$ by sets open in $X_0$ that have compact closures.
 Let $U_1$ be a nonempty element of $\mathcal{C}$, and in general let $U_n$ be the union of all elements of $\mathcal{C}$ that intersect $\overline{U}_{n-1}$.
 Show that $\overline{U}_n$ is compact, and the sets $U_n$ cover $X_0$.
-:::
-
-::: {.remark}
-The printed theorem claims that each component has a countable basis. The compact connected cube $[0,1]^J$, for uncountable $J$, is locally compact, paracompact, and Hausdorff, but is not first countable. The proof establishes the stated countable compact cover.
 :::
 
 ::: {.solution}
