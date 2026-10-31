@@ -306,7 +306,16 @@ $$
 \qquad q\in X',
 $$
 form the closure of the graph of $\rho$, because on the common dense open
-where $\phi$ and $\rho$ are inverse they give exactly that graph. Therefore
+where $\phi$ and $\rho$ are inverse they give exactly that graph. This
+gives a proper birational map from $X'$ onto $\operatorname{Bl}_pY$.
+
+It has finite fibres. Away from $L$, the first coordinate $\psi(q)$
+determines $q$ because $\rho$ is defined there. On $L$, the second
+coordinate $\pi(q)$ determines $q$, since the strict transform of the
+line through two distinct blown-up points maps isomorphically to that
+line. A proper map with finite fibres is finite. The target is
+nonsingular, hence normal, so a finite birational map to it is an
+isomorphism. Therefore
 $$
 X'\cong\operatorname{Bl}_pY.
 $$
