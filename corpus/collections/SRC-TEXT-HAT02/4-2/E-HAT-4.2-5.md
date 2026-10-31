@@ -69,10 +69,10 @@ $\pi_2(X) \cong \ZZ\alpha \oplus \ZZ\beta$ and $\pi_1(X) \cong \ZZ$.
 ::: pf-proof
 
 ::: pf-step
-$X = M_f$ fibers over $S^1$ with fiber $F = S^2_\alpha \vee S^2_\beta$.
+$f:F\to F$ is a homotopy equivalence: it induces the displayed invertible matrix on $H_2(F)$, and $F$ is simply connected, so the homology form of Whitehead's theorem applies. The universal cover of its mapping torus is the double mapping telescope of $f$. By Exercise 3.F.1, this telescope deformation retracts onto an ordinary tail, and the tail is homotopy equivalent to $F$ since every bonding map is a homotopy equivalence.
 
 ::: pf-proof
-the mapping torus is the total space of a fibration $F \to M_f \to S^1$.
+The telescope description gives the homotopy type of the universal cover without treating the mapping torus as a fiber bundle.
 :::
 
 :::
@@ -81,7 +81,7 @@ the mapping torus is the total space of a fibration $F \to M_f \to S^1$.
 $\pi_2(X) \cong \pi_2(F) = \ZZ \oplus \ZZ$.
 
 ::: pf-proof
-in the long exact sequence of the fibration, $\pi_2(S^1) = 0$ and $\pi_3(S^1) = 0$, so $\pi_2(F) \to \pi_2(X)$ is an isomorphism.
+Covering-space invariance gives $\pi_2(X)\cong\pi_2(\widetilde X)$, and the preceding telescope equivalence identifies this with $\pi_2(F)$.
 :::
 
 :::
@@ -90,7 +90,7 @@ in the long exact sequence of the fibration, $\pi_2(S^1) = 0$ and $\pi_3(S^1) = 
 $\pi_1(X) = \ZZ$.
 
 ::: pf-proof
-$\pi_1(F) = 0$ and $\pi_0(F) = 0$, so $\pi_1(X) \to \pi_1(S^1) = \ZZ$ is an isomorphism.
+The mapping torus is built from the simply connected space $F$ by identifying its two ends using $f$. Van Kampen gives one stable-letter generator and no further relation, so $\pi_1(X)\cong\ZZ$.
 :::
 
 :::
