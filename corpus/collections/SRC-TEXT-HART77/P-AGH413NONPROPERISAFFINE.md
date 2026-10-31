@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be an integral, separated, regular, one-dimensional scheme of finite type over $k$, which is **not** proper over $k$.
+Let $X$ be an integral, separated, regular, one-dimensional scheme of finite type over $k$, which is not proper over $k$.
 Then $X$ is affine.
 
 Hint: Embed $X$ in a (proper) curve $\bar{X}$ over $k$, and use (Ex.

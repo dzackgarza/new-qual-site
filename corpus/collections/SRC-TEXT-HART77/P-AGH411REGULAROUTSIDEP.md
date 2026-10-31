@@ -20,14 +20,40 @@ Then there exists a nonconstant rational function $f \in K(X)$, which is regular
 :::
 
 ::: {.solution}
-Such a function is a section $f\in \globsec{X; \mcl(nD) }$ for some large enough $n$ measuring the order of the pole at $P$, where $D = [P]$ is the divisor of $P$.
-So it suffices to show that $h^0(\mcl(nD)) > 0$ for some $n$.
-RR says $$\chi(\mcl(nD)) = \deg D + 1 - g \implies h^0(\mcl(nD)) - h^1(\mcl(nD)) = n + 1-g.$$ Claim: if $n$ is large, $h^1(\mcl(nD)) = 0$ and thus $h^0(\mcl(nD)) = n+1 -g$, and since $g$ is fixed and $n$ can vary, $h^0(\mcl(nD)) > 0$ for some $n$.
+Let $g$ be the genus of $X$, and for $n\ge0$ let $\ell(nP)=h^0(X,\mcl(nP))$.
 
-Why this claim is true: by Serre duality,
-$$
-H^1(X; \mcl(nD)) \cong \dualof{H^0(X; K_X \tensor \dualof{\mcl(nD)} )} =
-\dualof{H^0(X; K_X \tensor \mcl(-nD))} = \dualof{H^0(X; \mcl(K_X - nD))}
-$$
-so $h^1(\mcl(nD)) = h^0(\mcl(K_X - nD)) =0$ as soon as $\deg(K_X - nD) < 0$, which happens for large $n$ since $\deg(K_X - nD) = 2g-2-n$.
+::: pf
+
+::: {.pf-step #s1}
+
+If $n>2g-2$, then $\ell(nP)=n+1-g$.
+
+::: pf-proof
+
+By Riemann-Roch, $\ell(nP)-\ell(K-nP)=\deg(nP)+1-g=n+1-g$. The divisor $K-nP$ has degree $2g-2-n<0$, so $\ell(K-nP)=0$.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+For $n=\max(2g,1)$ one has $\ell(nP)\ge2$.
+
+::: pf-proof
+
+Since $n>2g-2$, step [](#s1){.pf-ref} gives $\ell(nP)=n+1-g$. If $g\ge1$ this is $g+1\ge2$; if $g=0$ it is $2$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Fix $n$ as in step [](#s2){.pf-ref}. The constants form a one-dimensional subspace of $\globsec{X; \mcl(nP)}=\{f\in K(X) \st f=0 \text{ or } (f)+nP\ge0\}$, so this space contains a nonconstant $f$. The condition $(f)+nP\ge0$ says that $f$ is regular at every point other than $P$.
+
+:::
+
+:::
+
 :::

@@ -46,7 +46,7 @@ Use (II, Ex.
 
 (d) Assume furthermore that $X$ is a locally complete intersection in some projective space.
 Then by (III, 7.11) the dualizing sheaf $\omega_X$ is an invertible sheaf on $X$, so we can define the canonical divisor $K$ to be a divisor with support in $X_{\reg}$ corresponding to $\omega_X$.
-Then the formula of a. becomes
+Then the formula of (a) becomes
 $$
 l(D)-l(K-D)=\deg D+1-p_a
 $$

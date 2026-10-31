@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-A curve $X$ is called **hyperelliptic** if $g \geq 2$ and there exists a finite morphism $f: X \to \PP^1$ of degree 2.
+A curve $X$ is called \dfn{hyperelliptic} if $g \geq 2$ and there exists a finite morphism $f: X \to \PP^1$ of degree 2.
 
 (a) If $X$ is a curve of genus $g=2$, show that the canonical divisor defines a complete linear system $\abs{K}$ of degree 2 and dimension 1, without base points.
 Use (II, 7.8.1) to conclude that $X$ is hyperelliptic.

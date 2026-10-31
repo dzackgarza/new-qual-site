@@ -79,7 +79,7 @@ By definition,
 $$
 L(D)=H^0(X,\mco_X(D))
 =
-\{f\in K(X):\operatorname{div}(f)+D\ge0\}\cup\{0\}.
+\{f\in K(X) \st \operatorname{div}(f)+D\ge0\}\cup\{0\}.
 $$
 The constants form a one-dimensional subspace of $L(D)$, while step [](#s1){.pf-ref} gives $\dim_kL(D)\ge2$. Hence there is a nonconstant $f\in L(D)$.
 
