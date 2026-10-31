@@ -22,6 +22,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: 'Used the standard maximal-tree presentation of a graph of groups: finitely many vertex generators and stable letters generate, while finite vertex presentations and finitely generated edge groups give finitely many relations.'
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Examined the preamble and the step claims: generators taken from the vertex groups together with one element per edge outside a maximal tree, and relations for each edge group.
 ---
 
 ::: {.problem}

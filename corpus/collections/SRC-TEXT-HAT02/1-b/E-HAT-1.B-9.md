@@ -26,6 +26,11 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: The book writes K Gamma for the graph of spaces; the stored statement had K.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Examined the preamble and the step claims: a common multiple $N$ of the group orders, the $N$-sheeted covers of the vertex spaces, and the finite-index free subgroup they assemble.
 ---
 
 ::: {.problem}

@@ -22,6 +22,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Subdivided each original edge by a midpoint carrying the edge group, replacing it by two edges whose midpoint-side homomorphisms are identities.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Examined the preamble and the step claims: subdividing every edge once and orienting the halves so that all edges run from the first part to the second.
 ---
 
 ::: {.problem}

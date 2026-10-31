@@ -20,6 +20,11 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 1.A, Exercise 11.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof: the reduced word is drawn as a finite labelled path with locally injective edge germs, that partial bijection is completed to a finite covering by Exercise 1.A.10, and the lift of $x$ stays open in the completion, so $x$ dies in $F/N$ for a finite-index $N$.
 ---
 
 ::: {.problem}

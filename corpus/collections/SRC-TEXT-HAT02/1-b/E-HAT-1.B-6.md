@@ -26,6 +26,11 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: The book writes K Gamma for the graph of spaces; the stored statement had K.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Examined the preamble and the step claims: edge homomorphisms as multiplication by $m$, the product $T\times\RR$ for injective edge maps, and the identification of the colimit with $\QQ$ in the sequence $2,3,4,\dots$.
 ---
 
 ::: {.problem}

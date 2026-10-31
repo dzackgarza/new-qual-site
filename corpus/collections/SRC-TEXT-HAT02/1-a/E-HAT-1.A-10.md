@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Viewed each circle label as a partial permutation of the finite vertex set and completed each partial bijection to a permutation.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the whole proof: the labelled partial bijections of the finite vertex set, the completion of each to a permutation, and the resulting finite cover extending the given subgraph with no new vertices.
 ---
 
 ::: {.problem}
