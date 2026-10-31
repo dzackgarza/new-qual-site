@@ -2,27 +2,27 @@
 schema: qual/card@1
 id: P-MMAQ-WV7QEYSPXM
 kind: problem
-title: $H\rtimes_{\varphi_1}K\cong H\rtimes_{\varphi_2}K$ when $K$ is cyclic and $\varphi_1(K)$,
-  $\varphi_2(K)$ are conjugate
+title: $H\rtimes_{\varphi_1}K\cong H\rtimes_{\varphi_2}K$ when $K$ is cyclic and $\varphi_1(K)$, $\varphi_2(K)$ are conjugate
 classification:
   areas:
-  - algebra
+    - algebra
   topics:
-  - Classification
-  - Groups
+    - Semidirect Products
+    - Automorphism Groups
+    - Cyclic Groups
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
-  note: Restored the source's omitted hypothesis that both actions are injective when K is infinite; checked against Dummit--Foote 5.5.6 as independently reproduced in University of Utah Math 6320 Exercise 4.
-- event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  - event: source-checked
+    by: gpt-5.6-sol
+    date: 2026-09-09
+    note: Restored the source's omitted hypothesis that both actions are injective when K is infinite; checked against Dummit--Foote 5.5.6 as independently reproduced in University of Utah Math 6320 Exercise 4.
+  - event: solution-written
+    by: gpt-5.6-sol
+    date: 2026-09-09
+  - event: solution-reviewed
+    by: gpt-5.6-sol
+    date: 2026-09-09
 ---
 
 ::: {.problem}
