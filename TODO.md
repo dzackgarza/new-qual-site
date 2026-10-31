@@ -53,7 +53,11 @@ bracketed notes. Every proof is examined. Read line by line: `E-HAT-1.A-1`, `-2`
 the level of preamble, step claims and construction: `E-HAT-1.B-5`, `-6`, `-7`, `-8`, `-9`, whose
 review notes say so. Four proofs were repaired rather than only logged: `E-HAT-1.A-8` rewritten from
 one-line fragments, and the closing steps of `E-HAT-1.A-9`, `-12` and `E-HAT-1.B-2`.
-Unread entirely: §2.1 onward, that is every chapter 2, 3 and 4 section.
+§2.1: all 31 statements compared with the printed exercises and each matches one-to-one. Two
+defects repaired: the simplex vertices were written with the Greek letter `\nu` instead of `v` in
+`E-HAT-2.1-1`, `-2`, `-6` and `E-HAT-2.2-16`, and `E-HAT-2.1-2` had dropped the word "order-preserving"
+from its edge identifications. The statements are read; the proofs of §2.1 are unread.
+Unread entirely: the proofs of §2.1 onward, that is every proof in chapters 2, 3 and 4.
 
 ## Fast local checks and complete CI acceptance
 

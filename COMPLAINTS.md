@@ -141,3 +141,18 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** no repository change is required for CI, which already has all four.
   A local `_local-setup` recipe naming the four would save the next session the diagnosis; this entry is the record until one exists.
 
+### A glued math control word passes `qualc check`
+
+- **Object and need:** card statements and solutions in `SRC-TEXT-HAT02`, and `qualc check`, the gate that validates every card's Markdown and mathematics.
+
+- **Observed evidence:** while comparing §2.1's statements with the book I found four cards (`E-HAT-2.1-1`, `-2`, `-6`, `E-HAT-2.2-16`) writing the simplex vertices as the Greek letter `\nu_0` where Hatcher writes `v_0`, 114 occurrences in all.
+  Renaming them exposed a second problem: TeX reads `\mapsto\nu_1` as `\mapsto` followed by `\nu_1`, but the renamed `\mapstov_1` is a single undefined control word, so the repair introduced twelve broken spans that `qualc check` accepted without complaint — it validates YAML, div structure and the Lamport filter, not whether a control word exists.
+  A reader's MathJax would have shown those spans as errors.
+
+- **Impact and owner:** any card whose mathematics contains an undefined control word; the site renders it as a MathJax error rather than failing the build.
+
+- **Uncertainty:** verified on the four cards above, and the twelve glued spans were separated again (`\mapsto v_1` and so on).
+  I did not survey the whole corpus for glued control words, so other instances may remain.
+
+- **Repair:** the vertex symbol and the twelve spans are fixed in place. A check over the corpus for control words that are neither defined in `vocabularies/macros.json` nor standard TeX would catch this class; none exists, and this entry is the record until one does.
+

@@ -23,14 +23,21 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: 'Computed the simplicial boundary maps explicitly: d_2(Delta_0)=e_0 and d_2(Delta_i)=2e_i-e_{i-1}; the resulting Smith form gives Z/2^n in degree 1.'
+- event: source-corrected
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The card wrote the vertices of the simplex as the Greek letter, `\nu_0`,
+    where Hatcher writes them `v_0`; the vertex symbol is restored throughout.
+    Found by comparing the statement with the printed exercise.
 ---
 
 ::: {.problem}
-Compute the simplicial homology groups of the $\Delta$-complex obtained from $n+1$ 2 simplices $\Delta_0^2, \cdots, \Delta_n^2$ by identifying all three edges of $\Delta_0^2$ to a single edge, and for $i > 0$ identifying the edges $[\nu_0, \nu_1]$ and $[\nu_1, \nu_2]$ of $\Delta_i^2$ to a single edge and the edge $[\nu_0, \nu_2]$ to the edge $[\nu_0, \nu_1]$ of $\Delta_{i-1}^2$.
+Compute the simplicial homology groups of the $\Delta$-complex obtained from $n+1$ 2 simplices $\Delta_0^2, \cdots, \Delta_n^2$ by identifying all three edges of $\Delta_0^2$ to a single edge, and for $i > 0$ identifying the edges $[v_0, v_1]$ and $[v_1, v_2]$ of $\Delta_i^2$ to a single edge and the edge $[v_0, v_2]$ to the edge $[v_0, v_1]$ of $\Delta_{i-1}^2$.
 :::
 
 ::: {.solution}
-Let $\sigma_i$ denote the image of $\Delta_i^2$ and let $e_i$ denote the common image of the two edges $[\nu_0,\nu_1]$ and $[\nu_1,\nu_2]$ of $\Delta_i^2$ for $i>0$. For $i=0$, let $e_0$ be the common image of all three edges.
+Let $\sigma_i$ denote the image of $\Delta_i^2$ and let $e_i$ denote the common image of the two edges $[v_0,v_1]$ and $[v_1,v_2]$ of $\Delta_i^2$ for $i>0$. For $i=0$, let $e_0$ be the common image of all three edges.
 
 All vertices are identified, so
 $$
