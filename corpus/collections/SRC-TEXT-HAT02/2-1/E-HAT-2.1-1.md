@@ -30,6 +30,11 @@ audit:
     The card wrote the vertices of the simplex as the Greek letter, `\nu_0`,
     where Hatcher writes them `v_0`; the vertex symbol is restored throughout.
     Found by comparing the statement with the printed exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof: the order-preserving identification merges the three vertices, the two boundary edges become a single edge class $a$ with $b$ a loop, and the $\Delta$-complex chain complex gives $H_1=\ZZ$ and $H_0=\ZZ$, so the quotient is $S^1$.
 ---
 
 ::: {.problem}

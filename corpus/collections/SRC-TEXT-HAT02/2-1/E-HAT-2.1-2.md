@@ -31,6 +31,11 @@ audit:
     The card wrote the vertices of the simplex as the Greek letter, `\nu_0`,
     where Hatcher writes them `v_0`; the vertex symbol is restored throughout.
     Found by comparing the statement with the printed exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the construction: the two faces of $\Delta^3$ form a square whose order-preserving edge identifications give the Klein bottle's presentation, and the deformation retraction commutes with them; the other identifications are given by the same square with different gluing words.
 ---
 
 ::: {.problem}
