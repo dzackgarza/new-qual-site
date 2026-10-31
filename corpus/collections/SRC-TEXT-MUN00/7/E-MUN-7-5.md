@@ -36,7 +36,7 @@ Justify your answers.
 
 (d) The set $D$ of all functions $f: \ZZ_{+} \to \ZZ_{+}$ .
 
-(e) The set E of all functions $f : Z_{+} \to \{0, 1\}$ .
+(e) The set $E$ of all functions $f:\ZZ_+\to\{0,1\}$.
 
 (f) The set $F$ of all functions $f: \ZZ_{+} \to \{0,1\}$ that are "eventually zero."
 [We say that $f$ is eventually zero if there is a positive integer $N$ such that $f(n) = 0$ for all $n \geq N$ .]
@@ -99,11 +99,11 @@ is bijective, and the domain is a subset of the countable set $\ZZ_+^2$.
 
 (j) $J$ is countable. Let $J_n$ denote the family of subsets having at most $n$ elements. The map
 $$
-(\ZZ_+)^n\to J_n,
+(\ZZ_+)^n\to J_n-\{\varnothing\},
 \qquad
 (a_1,\ldots,a_n)\mapsto\{a_1,\ldots,a_n\}
 $$
-is surjective after allowing repetitions (with the empty set handled separately), so $J_n$ is countable. Since
+is surjective because repetitions are allowed. Adding the empty set shows that $J_n$ is countable. Since
 $$
 J=\{\varnothing\}\cup\bigcup_{n\ge1}J_n,
 $$
