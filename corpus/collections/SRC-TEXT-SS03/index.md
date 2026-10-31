@@ -467,6 +467,8 @@ source:
       comment: Ch. 10, Problem 4
     - id: E-SS10.PR-5
       comment: Ch. 10, Problem 5
+    - id: E-SS10.PR-6
+      comment: Ch. 10, Problem 6
 ---
 
 
