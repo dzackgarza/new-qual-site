@@ -9,6 +9,8 @@ classification:
   topics:
   - Measure Theory
   - Integrals
+  - Compactness
+  - Fubini-Tonelli
 relations: []
 review: draft
 audit:
@@ -28,7 +30,7 @@ audit:
 2. $E = H\union Z$ where $H$ is $F_\sigma$ and $Z$ is null
 3. $E = V\setminus Z'$ where $V\in G_\delta$ and $Z'$ is null.
 
-(b) $\star$: Show that if $E\subseteq \RR^n$ is measurable then $m(E) = \sup \theset{ m(K) \suchthat K\subset E\text{ compact}}$ iff for all $\varepsilon> 0$ there exists a compact $K\subseteq E$ such that $m(K) \geq m(E) - \varepsilon$.
+(b) $\star$: Show that if $E\subseteq \RR^n$ is measurable with $m(E)<\infty$ then $m(E) = \sup \theset{ m(K) \suchthat K\subset E\text{ compact}}$ iff for all $\varepsilon> 0$ there exists a compact $K\subseteq E$ such that $m(K) \geq m(E) - \varepsilon$.
 
 (c) $\star$: Show that cylinder functions are measurable, i.e. if $f$ is measurable on $\RR^s$, then $F(x, y) \coloneqq f(x)$ is measurable on $\RR^s\cross \RR^t$ for any $t$.
 
@@ -68,11 +70,13 @@ If $E$ is measurable, outer regularity gives open $G_k \supseteq E$ and, applied
 
 ::: {.pf-step #s2}
 
-(b) $m(E) = \sup\theset{m(K) : K \subseteq E \text{ compact}}$ if and only if for every $\varepsilon > 0$ there is a compact $K \subseteq E$ with $m(K) \ge m(E) - \varepsilon$.
+(b) If $m(E)<\infty$, then $m(E) = \sup\theset{m(K) : K \subseteq E \text{ compact}}$ if and only if for every $\varepsilon > 0$ there is a compact $K \subseteq E$ with $m(K) \ge m(E) - \varepsilon$.
 
 ::: pf-proof
 
-$m(E)$ is an upper bound of $\theset{m(K) : K \subseteq E \text{ compact}}$ by monotonicity. It is the least upper bound exactly when no $m(E) - \varepsilon$ with $\varepsilon > 0$ is an upper bound, which is the stated condition. See [[E-3OAGD]].
+Let $\mathcal{S}=\theset{m(K) : K \subseteq E \text{ compact}}$. By monotonicity, $m(K)\le m(E)$ for every compact $K\subseteq E$, so $\sup\mathcal{S}\le m(E)$.
+If $m(E)=\sup\mathcal{S}$ and $\varepsilon>0$, then $m(E)-\varepsilon<\sup\mathcal{S}$ because $m(E)$ is finite, so $m(E)-\varepsilon$ is not an upper bound of $\mathcal{S}$, and some compact $K\subseteq E$ has $m(K)> m(E)-\varepsilon$.
+Conversely, if every $\varepsilon>0$ has a compact $K_\varepsilon\subseteq E$ with $m(K_\varepsilon)\ge m(E)-\varepsilon$, then $\sup\mathcal{S}\ge m(E)-\varepsilon$ for every $\varepsilon>0$, so $\sup\mathcal{S}\ge m(E)$.
 
 :::
 
@@ -84,7 +88,7 @@ $m(E)$ is an upper bound of $\theset{m(K) : K \subseteq E \text{ compact}}$ by m
 
 ::: pf-proof
 
-For an open $W \subseteq \RR$, $F^{-1}(W) = f^{-1}(W) \times \RR^t$ with $f^{-1}(W)$ Lebesgue measurable. Write $f^{-1}(W) = V \setminus Z$ with $V$ a $G_\delta$ set and $Z$ null by step [](#s1){.pf-ref}. Then $V \times \RR^t$ is Borel and $Z \times \RR^t$ is null, so $F^{-1}(W)$ is measurable. See [[E-JJ746]].
+For an open $W \subseteq \RR$, $F^{-1}(W) = f^{-1}(W) \times \RR^t$ with $f^{-1}(W)$ Lebesgue measurable. Write $f^{-1}(W) = V \setminus Z$ with $V$ a $G_\delta$ set and $Z$ null by step [](#s1){.pf-ref}. Then $V \times \RR^t$ is the preimage of $V$ under the continuous projection $\RR^s\times\RR^t\to\RR^s$, so it is Borel. The set $Z \times \RR^t$ is null: for every $\varepsilon>0$, a cover of $Z$ by cubes of total measure less than $\varepsilon$ gives a cover of $Z\times[-k,k]^t$ by boxes of total measure less than $(2k)^t\varepsilon$, and $Z\times\RR^t$ is the countable union over $k$ of these sets. So $F^{-1}(W)=(V\times\RR^t)\setminus(Z\times\RR^t)$ is measurable.
 
 :::
 
@@ -140,4 +144,8 @@ If $\mu(X) = 0$ both sides vanish. Otherwise $\norm{f}_p \le \norm{f}_\infty\,\m
 
 :::
 
+:::
+
+::: {.remark}
+Part (b) assumes $m(E)<\infty$. If $m(E)=\infty$, the condition $m(K)\ge m(E)-\varepsilon$ fails for every compact $K$, while the supremum is $\infty$ by inner regularity, so the equivalence is false without it.
 :::

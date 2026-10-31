@@ -68,7 +68,7 @@ If $f$ is measurable, then $\mca$ is measurable.
 
 ::: pf-proof
 
-$\mca = \theset{(x,t) : t \ge 0} \cap \theset{(x,t) : f(x) - t \ge 0}$, where $f(x) - t$ is taken in $[-\infty, \infty]$. The function $(x,t) \mapsto f(x)$ is measurable on $\RR^{n+1}$ because $f$ is measurable (cylinder functions of measurable functions are measurable; see [[E-JJ746]]), and $(x,t) \mapsto t$ is continuous, so their difference is measurable.
+$\mca = \theset{(x,t) : t \ge 0} \cap \theset{(x,t) : f(x) - t \ge 0}$, where $f(x) - t$ is taken in $[-\infty, \infty]$. The function $(x,t) \mapsto f(x)$ is measurable on $\RR^{n+1}$ because $f$ is measurable (cylinder functions of measurable functions are measurable; see [[P-4EOE5]]), and $(x,t) \mapsto t$ is continuous, so their difference is measurable.
 
 :::
 

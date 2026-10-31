@@ -46,7 +46,7 @@ $F(x,y) = f(x)$ and $G(x,y) = g(y)$ are measurable on $\RR^n \times \RR^n$.
 
 ::: pf-proof
 
-For open $W \subseteq \CC$, $F^{-1}(W) = f^{-1}(W) \times \RR^n$. Write $f^{-1}(W) = V \setminus Z$ with $V$ a $G_\delta$ set and $Z$ null. Then $V \times \RR^n$ is a $G_\delta$ set and $Z \times \RR^n$ is null, so $F^{-1}(W)$ is measurable. The same argument applies to $G$. See [[E-JJ746]].
+For open $W \subseteq \CC$, $F^{-1}(W) = f^{-1}(W) \times \RR^n$. Write $f^{-1}(W) = V \setminus Z$ with $V$ a $G_\delta$ set and $Z$ null. Then $V \times \RR^n$ is a $G_\delta$ set and $Z \times \RR^n$ is null, so $F^{-1}(W)$ is measurable. The same argument applies to $G$. See [[P-4EOE5]].
 
 :::
 

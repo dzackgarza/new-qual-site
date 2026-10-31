@@ -14,7 +14,6 @@ source:
   date:
     kind: unknown
   problems:
-  - id: E-3OAGD
   - id: E-4CL6A
   - id: E-6X7Z4
   - id: E-7EL3U
@@ -24,7 +23,6 @@ source:
   - id: E-EJN4Q
   - id: E-FFARP
   - id: E-GMYE2
-  - id: E-JJ746
   - id: E-JY5OT
   - id: E-KUOXT
   - id: E-M3CGY
