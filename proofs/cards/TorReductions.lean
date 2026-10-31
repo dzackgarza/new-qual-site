@@ -62,8 +62,7 @@ variable {B : Type*} [AddCommGroup B]
 
 /-- The presentation-level `Tor`: for a presentation `f : K →ₗ[ℤ] F` and a group `B`, the
 kernel of `f ⊗ id_B`. -/
-def torKernel {K F : Type*} [AddCommGroup K] [AddCommGroup F]
-    (f : K →ₗ[ℤ] F) : Submodule ℤ (TensorProduct ℤ K B) :=
+def torKernel {K F : Type*} [AddCommGroup K] [AddCommGroup F] (f : K →ₗ[ℤ] F) :=
   (f.rTensor B).ker
 
 /-- Hatcher, Proposition 3A.5(3), the free case at the presentation level: a presentation
@@ -90,9 +89,121 @@ theorem rTensor_injective_of_flat {M N P : Type*} [AddCommGroup M] [AddCommGroup
     Function.Injective (LinearMap.rTensor M f) :=
   Module.Flat.rTensor_preserves_injective_linearMap f hf
 
+/-- `E-HAT-3.A-2`: the quotient by the torsion subgroup is torsion-free, which is the
+hypothesis that makes `A/T(A)` flat and kills the connecting map of the Tor sequence for
+`(T(A), A, A/T(A))`. Reused from Mathlib's `Submodule.torsion_eq_bot`. -/
+theorem torsionFree_quotient_torsion (M : Type*) [AddCommGroup M] :
+    Module.IsTorsionFree ℤ (M ⧸ Submodule.torsion ℤ M) :=
+  inferInstance
+
+/-- Consequece of the previous lemma and `flat_of_torsionFree`: the quotient of an abelian
+group by its torsion subgroup is flat over `ℤ`. -/
+theorem flat_quotient_torsion (M : Type*) [AddCommGroup M] :
+    Module.Flat ℤ (M ⧸ Submodule.torsion ℤ M) :=
+  @flat_of_torsionFree (M ⧸ Submodule.torsion ℤ M) _ (torsionFree_quotient_torsion M)
+
+/-- `E-HAT-3.A-2`, exercise 5's first ingredient: a torsion-free `ℤ`-module spanned by a
+finite family is free. Reused from Mathlib's principal-ideal-domain result
+`Module.free_of_finite_type_torsion_free`; the finiteness hypothesis is kept explicit as a
+`Finite` index type and a spanning family. -/
+theorem free_of_finite_torsionFree {M : Type*} [AddCommGroup M]
+    [Module.IsTorsionFree ℤ M] {ι : Type*} [Finite ι] {s : ι → M}
+    (hs : Submodule.span ℤ (Set.range s) = ⊤) : Module.Free ℤ M :=
+  Module.free_of_finite_type_torsion_free (R := ℤ) hs
+
+/-- Under `ℤ ⊗ B ≅ B`, tensoring `n · id` with `id_B` is multiplication by `n` on `B`. -/
+theorem lid_rTensor_mulByInt (n : ℤ) (x : TensorProduct ℤ ℤ B) :
+    (TensorProduct.lid ℤ B) ((mulByInt n).rTensor B x) =
+      (DistribSMul.toLinearMap ℤ B n) ((TensorProduct.lid ℤ B) x) := by
+  have key :
+      (TensorProduct.lid ℤ B).toLinearMap.comp ((mulByInt n).rTensor B) =
+        (DistribSMul.toLinearMap ℤ B n).comp (TensorProduct.lid ℤ B).toLinearMap := by
+    refine LinearMap.ext fun y => ?_
+    induction y using TensorProduct.induction_on with
+    | zero => simp
+    | tmul r b =>
+        simp only [LinearMap.comp_apply, LinearMap.rTensor_tmul, mulByInt_apply,
+          TensorProduct.lid_tmul, DistribSMul.toLinearMap_apply]
+        exact mul_smul n r b
+    | add y z hy hz => simp only [map_add, hy, hz]
+  simpa only [LinearMap.comp_apply, LinearEquiv.coe_coe] using congrArg (fun g => g x) key
+
+/-- Hatcher, Proposition 3A.5(5) at the presentation level: the kernel of `(n · id) ⊗ id_B`
+inside `ℤ ⊗ B` is carried by `ℤ ⊗ B ≅ B` onto the `n`-torsion of `B`, that is,
+`Tor(ℤ/n, B) ≅ B[n]` for this resolution. -/
+theorem map_torKernel_mulByInt (n : ℤ) :
+    (torKernel (B := B) (mulByInt n)).map (TensorProduct.lid ℤ B).toLinearMap =
+      Submodule.torsionBy ℤ B n := by
+  ext b
+  constructor
+  · rintro ⟨x, hx, rfl⟩
+    have hx' : (mulByInt n).rTensor B x = 0 := hx
+    have h := lid_rTensor_mulByInt (B := B) n x
+    rw [hx', map_zero] at h
+    exact (Submodule.mem_torsionBy_iff n _).mpr h.symm
+  · intro hb
+    have hb' : (DistribSMul.toLinearMap ℤ B n) b = 0 :=
+      (Submodule.mem_torsionBy_iff n b).mp hb
+    refine ⟨(TensorProduct.lid ℤ B).symm b, ?_, ?_⟩
+    · have h1 : (TensorProduct.lid ℤ B) ((mulByInt n).rTensor B ((TensorProduct.lid ℤ B).symm b)) = 0 := by
+        rw [lid_rTensor_mulByInt, LinearEquiv.apply_symm_apply, hb']
+      exact (TensorProduct.lid ℤ B).injective (by rw [h1, map_zero])
+    · exact LinearEquiv.apply_symm_apply (TensorProduct.lid ℤ B) b
+
+/-- If `p • x = 0` forces `x = 0` then `p^k • x = 0` does. -/
+theorem eq_zero_of_pow_smul_eq_zero {C : Type*} [AddCommGroup C] {p : ℤ}
+    (h : ∀ x : C, p • x = 0 → x = 0) (k : ℕ) : ∀ x : C, p ^ k • x = 0 → x = 0 := by
+  induction k with
+  | zero => intro x hx; simpa using hx
+  | succ k ih =>
+      intro x hx
+      rw [pow_succ, ← smul_smul] at hx
+      exact h x (ih (p • x) hx)
+
+/-- The form the card uses to kill the connecting map: if `C` has no `p`-torsion then
+`C[p^k] = 0` for every `k`, and so `Tor(ℤ/p^k, C) = 0` by the identification above. This is
+the correct hypothesis in that step: `B/B_p` has no `p`-torsion, but it is *not* torsion-free
+(for `p = 2`, `B = ℤ/2 ⊕ ℤ/3` gives `B/B_2 = ℤ/3`). -/
+theorem torsionBy_pow_eq_bot_of_no_p_torsion {C : Type*} [AddCommGroup C] {p : ℕ}
+    (h : Submodule.torsionBy ℤ C (p : ℤ) = ⊥) (k : ℕ) :
+    Submodule.torsionBy ℤ C ((p : ℤ) ^ k) = ⊥ := by
+  have h' : ∀ x : C, (p : ℤ) • x = 0 → x = 0 := by
+    intro x hx
+    have hx' : x ∈ Submodule.torsionBy ℤ C (p : ℤ) :=
+      (Submodule.mem_torsionBy_iff (p : ℤ) x).mpr hx
+    rwa [h, Submodule.mem_bot] at hx'
+  refine le_antisymm ?_ bot_le
+  intro x hx
+  rw [Submodule.mem_bot]
+  exact eq_zero_of_pow_smul_eq_zero h' k x ((Submodule.mem_torsionBy_iff ((p : ℤ) ^ k) x).mp hx)
+
+/-- The premise the card uses, with the hypothesis made explicit. If `P` is a subgroup
+containing exactly the elements killed by some power of `p` — the `p`-primary torsion
+subgroup `B_p` — then `P` is saturated for multiplication by `p`, which says precisely that
+the quotient `B/P` has no `p`-torsion: `p • [x] = 0` means `p • x ∈ P`, hence `x ∈ P`, hence
+`[x] = 0`.
+
+This is the correct premise in that step and it is strictly weaker than torsion-freeness:
+for `p = 2` and `B = ℤ/2 ⊕ ℤ/3` the quotient `B/B_2 = ℤ/3` is not torsion-free, but it has
+no `2`-torsion. Rule (3) of Hatcher's Proposition 3A.5 cannot be applied to it; rule (5)
+can, and that is what the card now does. -/
+theorem mem_of_p_smul_mem_of_pPrimary {B : Type*} [AddCommGroup B] {p : ℤ}
+    {P : Submodule ℤ B} (hP : ∀ x : B, x ∈ P ↔ ∃ k : ℕ, p ^ k • x = 0) {x : B}
+    (hx : p • x ∈ P) : x ∈ P := by
+  obtain ⟨k, hk⟩ := (hP (p • x)).mp hx
+  exact (hP x).mpr ⟨k + 1, by rw [pow_succ, ← smul_smul]; exact hk⟩
+
 end TorReductions
 
 #print axioms TorReductions.torKernel_eq_bot_of_subsingleton
 #print axioms TorReductions.torsionBy_eq_ker
 #print axioms TorReductions.flat_of_torsionFree
 #print axioms TorReductions.rTensor_injective_of_flat
+#print axioms TorReductions.torsionFree_quotient_torsion
+#print axioms TorReductions.flat_quotient_torsion
+#print axioms TorReductions.free_of_finite_torsionFree
+#print axioms TorReductions.lid_rTensor_mulByInt
+#print axioms TorReductions.map_torKernel_mulByInt
+#print axioms TorReductions.eq_zero_of_pow_smul_eq_zero
+#print axioms TorReductions.torsionBy_pow_eq_bot_of_no_p_torsion
+#print axioms TorReductions.mem_of_p_smul_mem_of_pPrimary

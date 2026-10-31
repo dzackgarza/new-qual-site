@@ -36,6 +36,20 @@ audit:
     gives the same conclusion because only $\tilde H_0$ is nonzero there, where product and sum
     coincide; and the wedge axiom fails on $\bigvee_{j\ge1}S^j$, whose reduced $H_i$ is $\ZZ$ for
     every $i\ge1$ while each summand $S^j$ has $Q=0$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The dimension step's mechanism is now certified in the form the card uses, with the finiteness
+    hypothesis explicit: proofs/cards/FamilyQuotient.lean proves that when the family $(f_i)$ is
+    carried by a finite set of indices, the canonical map $\bigoplus_i f_i\to\prod_i f_i$ is
+    surjective (`directSumToPi_surjective_of_finite_support`), so the quotient
+    $\prod_i f_i\big/\bigoplus_i f_i$ is trivial (`quotient_subsingleton_of_finite_support`), with
+    the point case and the $S^0$ case (exactly one nonzero index) as corollaries. What is certified
+    is the vanishing of the quotient under finite support, not an isomorphism between the sum and
+    the product, and nothing is asserted for families with infinite support, where the map is not
+    surjective in general beneath the card's wedge-axiom step. The identification of the $f_i$ with
+    reduced homology groups is not formalized.
 ---
 
 ::: {.problem}

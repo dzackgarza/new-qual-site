@@ -30,8 +30,9 @@ replacement. A correction is marked settled on its card only when a file here ce
 | `cards/Tamuras15_10.lean` | `P-TAMURAS15-10` | The corrected statement in full, including the `x ∈ Y` case `exists_mem_S` by Hahn--Banach. |
 | `cards/MooreSpaceExactness.lean` | `E-HAT-2.3-1` | The group data behind the two exactness failures: $\ZZ/m$ is nontrivial for $m\ge2$ and torsion; a sequence with trivial ends cannot be exact at $\ZZ/m$; multiplication by $m\ge2$ on $\ZZ$ is injective but not surjective. |
 | `cards/TorTorsion.lean` | `E-HAT-3.A-6` | The coordinate step of the converse and the refutation of the inference it replaces: `ratchet_le`, `exact_order_smul`, `exists_coord`, `zmod_two_no_exact_order_eight`, `zmod_eight_order_four`. |
-| `cards/ChainLevelSteps.lean` | `E-HAT-2.2-16` | The two ingredients of the repaired degree-zero step: `choose_rank_step` (Pascal's identity in the form the rank induction uses) and `ker_ne_top_of_surjective_to_int` (an augmentation onto $\ZZ$ has proper kernel, so the augmented degree-zero cycles are not the ordinary $Z_0=C_0$). |
-| `cards/TorReductions.lean` | `E-HAT-3.A-6` | The presentation-level `Tor` and the parts of Hatcher's Proposition 3A.5 that Mathlib supplies: the free case of (3) (`torKernel_eq_bot_of_subsingleton`), the group in (5) (`torsionBy_eq_ker`), the torsion-free-is-flat hypothesis of (3) (`flat_of_torsionFree`, Mathlib's Dedekind-domain instance), and the flatness form of (6) (`rTensor_injective_of_flat`, Mathlib's `Module.Flat.rTensor_preserves_injective_linearMap`). |
+| `cards/FamilyQuotient.lean` | `E-HAT-2.3-2` | The precise implication the dimension step needs: if the family $(f_i)_{i\in\ZZ}$ of groups is carried by a `Finset` (every group outside it is trivial), then the canonical map $\bigoplus_i f_i\to\prod_i f_i$ is **surjective**, so the quotient $\prod_i f_i\big/\bigoplus_i f_i$ is trivial; stated as `directSumToPi_surjective_of_finite_support` and `quotient_subsingleton_of_finite_support`, with the point case (all groups trivial) and the $S^0$ case (exactly one nonzero index) as corollaries. It does **not** assert that the sum and the product are isomorphic, and says nothing for a family with infinite support — there the map is not surjective in general, which is why the candidate fails the wedge axiom. The identification of the $f_i$ with reduced homology groups is not formalized. |
+| `cards/ChainLevelSteps.lean` | `E-HAT-2.2-16` | *Two intermediate lemmas only, not the card's implication*: `choose_rank_step` (Pascal's identity) and `ker_ne_top_of_surjective_to_int` (an augmentation onto $\ZZ$ has proper kernel, so the augmented degree-zero cycles are not the ordinary $Z_0=C_0$). It does **not** prove $\ker\varepsilon=\operatorname{im}\partial_1$, does not prove exactness of the augmented complex, and does not prove that the $k$-skeleton's differentials agree with the simplex's in degrees at most $k$; the vanishing $\widetilde H_i=0$ for $i<k$ is therefore **not** certified. |
+| `cards/TorReductions.lean` | `E-HAT-3.A-6` | The presentation-level `Tor` and the parts of Hatcher's Proposition 3A.5 that Mathlib supplies: the free case of (3) (`torKernel_eq_bot_of_subsingleton`), the group in (5) (`torsionBy_eq_ker`), the torsion-free-is-flat hypothesis of (3) (`flat_of_torsionFree`, Mathlib's Dedekind-domain instance), and the flatness form of (6) (`rTensor_injective_of_flat`, Mathlib's `Module.Flat.rTensor_preserves_injective_linearMap`); and, for the step that needs the *$p$-primary* hypothesis rather than torsion-freeness, item (5) in full: `lid_rTensor_mulByInt` and `map_torKernel_mulByInt`, that the kernel of $(n\cdot\mathrm{id})\otimes\mathrm{id}_B$ inside $\ZZ\otimes B$ is carried by $\ZZ\otimes B\cong B$ onto $B[n]$ — that is, $\operatorname{Tor}(\ZZ/n,B)\cong B[n]$ for this resolution — together with `eq_zero_of_pow_smul_eq_zero`, `torsionBy_pow_eq_bot_of_no_p_torsion` (no $p$-torsion gives $C[p^k]=0$) and `mem_of_p_smul_mem_of_pPrimary` ($B_p$ is saturated for multiplication by $p$, i.e. $B/B_p$ has no $p$-torsion). **Not** certified: that the presentation-level kernel computes $\operatorname{Tor}$ for an arbitrary resolution (Lemma 3A.2), additivity (2), and commutation with direct limits (Exercise 4), which is what carries the cyclic case to an arbitrary $p$-primary group. |
 
 ## 2. Chain-level checks in Sage
 
@@ -82,10 +83,16 @@ Repairs made to a stored proof whose mathematical content no file here certifies
 claim of the form "this argument proves the stored statement", and none may be reported as
 settled until a file here covers it:
 
-- `E-HAT-2.3-2`, dimension step: the candidate's dimension axiom is checked at a point,
-  with $S^0$ as the same computation. What is needed is that when all but one reduced
-  homology group vanish the direct sum fills the product; that statement is not certified
-  yet, because it needs `DirectSum.toModule` composed with the single-coordinate maps.
+- `E-HAT-2.2-16`, third step: the repaired argument needs three things that no file here
+  proves — the augmented exactness $\ker\varepsilon=\operatorname{im}\partial_1$, the
+  agreement of the $k$-skeleton's differentials with the simplex's in degrees at most $k$,
+  and hence $\widetilde H_i=0$ for $i<k$. `cards/ChainLevelSteps.lean` supplies only
+  Pascal's identity and the properness of the augmentation kernel, and is not a completion
+  of the card's implication.
+- `E-HAT-3.A-6`, passage from cyclic summands to a general $p$-primary group: the identity
+  $\operatorname{Tor}(\ZZ/p^k,C)\cong C[p^k]$ is certified at the presentation level and
+  the hypothesis "$B/B_p$ has no $p$-torsion" is certified, but additivity (2) and
+  Exercise 4's direct limits, which carry that to every $p$-primary $A_p$, are cited.
 - `E-HAT-3.A-2`: the restored direction "torsion-free implies $\operatorname{Tor}(A,B)=0$
   for all $B$" is a citation of exercise 5 of the same section.
 - The step-level repairs of earlier audits — `E-HAT-1.1-17`, the closing steps of

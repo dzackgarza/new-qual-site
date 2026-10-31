@@ -70,6 +70,24 @@ audit:
     (Lemma 3A.2), additivity (2), the torsion reduction (4) and the direct-limit statement are
     cited, and the file records that Mathlib's `CategoryTheory.Tor` has no long exact sequence or
     comparison API to reuse.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Correction of the previous review's step, which invoked rule (3) of Proposition 3A.5 on the
+    false premise that $B/B_p$ is torsion-free: it is not, since with $p=2$ and
+    $B=\ZZ/2\oplus\ZZ/3$ the quotient is $\ZZ/3$. The step now uses rule (5), which gives
+    $\operatorname{Tor}(\ZZ_{p^k},B/B_p)\cong(B/B_p)[p^k]=0$ because $B/B_p$ has no $p$-torsion,
+    with rule (2) for finite direct sums and Exercise 4 for the passage to an arbitrary $p$-primary
+    group. proofs/cards/TorReductions.lean certifies the pieces that are formalizable:
+    `map_torKernel_mulByInt` (the kernel of $(n\cdot\mathrm{id})\otimes\mathrm{id}_B$ inside
+    $\ZZ\otimes B$ is carried onto $B[n]$ by $\ZZ\otimes B\cong B$, that is
+    $\operatorname{Tor}(\ZZ/n,B)\cong B[n]$ for this resolution),
+    `torsionBy_pow_eq_bot_of_no_p_torsion` (no $p$-torsion gives $C[p^k]=0$), and
+    `mem_of_p_smul_mem_of_pPrimary` ($B_p$ is saturated for multiplication by $p$, which is what
+    "$B/B_p$ has no $p$-torsion" means). Additivity and the direct-limit step are cited, not
+    formalized, and proofs/README.md lists that as an outstanding obligation rather than claiming
+    the reduction is complete.
 ---
 
 ::: {.problem}
@@ -117,7 +135,7 @@ $$
 $$
 Since $B$ contains an element of order exactly $n$, $B[n]$ contains an element of order $n$. Its image in $\operatorname{Tor}(A,B)$ still has order $n$, proving one direction.
 
-Conversely, suppose $\operatorname{Tor}(A,B)$ has an element of order $n$, and write $n=\prod_p p^{m_p}$. Three rules of Proposition 3A.5 pass from the mixed groups to their primary parts. Rule (4) gives $\operatorname{Tor}(A,B)\cong\operatorname{Tor}(T(A),B)$, so the torsion subgroup, not the free part, carries all of $\operatorname{Tor}$. Rule (2) gives $\operatorname{Tor}(T(A),B)\cong\bigoplus_p\operatorname{Tor}(A_p,B)$ over the direct sum $T(A)=\bigoplus_pA_p$. Finally, rule (6) applied to $0\to B_p\to B\to B/B_p\to0$ gives an exact sequence whose last Tor term is $\operatorname{Tor}(A_p,B/B_p)=0$ by rule (3), since $B/B_p$ is torsionfree, so $\operatorname{Tor}(A_p,B)\cong\operatorname{Tor}(A_p,B_p)$. Combining them,
+Conversely, suppose $\operatorname{Tor}(A,B)$ has an element of order $n$, and write $n=\prod_p p^{m_p}$. Three rules of Proposition 3A.5 pass from the mixed groups to their primary parts. Rule (4) gives $\operatorname{Tor}(A,B)\cong\operatorname{Tor}(T(A),B)$, so the torsion subgroup, not the free part, carries all of $\operatorname{Tor}$. Rule (2) gives $\operatorname{Tor}(T(A),B)\cong\bigoplus_p\operatorname{Tor}(A_p,B)$ over the direct sum $T(A)=\bigoplus_pA_p$. Finally, rule (6) applied to $0\to B_p\to B\to B/B_p\to0$ gives an exact sequence whose last Tor term $\operatorname{Tor}(A_p,B/B_p)$ vanishes: $B/B_p$ has no $p$-torsion, and rule (5) gives $\operatorname{Tor}(\ZZ_{p^k},B/B_p)\cong (B/B_p)[p^k]=0$ for each $k$, so by rule (2) the same holds for every $p$-primary $A_p$, finite direct sums of cyclic ones first and then, by Exercise 4, for the group itself. Note that $B/B_p$ is *not* torsionfree in general — for $p=2$ and $B=\ZZ/2\oplus\ZZ/3$ the quotient is $\ZZ/3$ — so rule (3) does not apply here; the hypothesis in play is the absence of $p$-torsion. Hence $\operatorname{Tor}(A_p,B)\cong\operatorname{Tor}(A_p,B_p)$. Combining them,
 $$
 \operatorname{Tor}(A,B)\cong\bigoplus_p\operatorname{Tor}(A_p,B_p),
 $$
