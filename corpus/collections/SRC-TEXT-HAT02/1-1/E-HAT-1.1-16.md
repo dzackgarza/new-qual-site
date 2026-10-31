@@ -27,7 +27,7 @@ audit:
   note: In each case used the necessary split-injectivity of the inclusion on pi_1 and exhibited the obstruction explicitly.
 - event: source-corrected
   by: claude-opus-5.5
-  date: "2026-10-31"
+  date: 2026-10-31
   note: Part (c) of the source refers to a figure; the statement now describes the figure's circle A, which winds twice around the core.
 ---
 
