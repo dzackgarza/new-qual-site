@@ -536,17 +536,14 @@ structure up to isotopy.
 
 ::: {.pf-step #s1-20}
 
-By Definition 4.51, $\xi_-$ is homotopic as an oriented plane field
-to the canonical plane field obtained by smoothing the tangent planes to the
-pages of $H_-$ near the binding.
-
+For an open book $B=(L,\pi)$ of $S^3$, orient each page so that a vector $v$ with $d\pi(v)>0$ followed by an oriented basis of the page is an oriented basis of $S^3$, and orient $L$ as the boundary of the pages.
+Let $\mathcal C(B)$ be the set of nowhere-zero vector fields $R$ on $S^3$ with $d\pi(R)>0$ on $S^3-L$ and $R$ a positive multiple of the oriented tangent of $L$ at each point of $L$.
+Any two elements $R_0,R_1$ of $\mathcal C(B)$ are joined by the path $R_\tau=(1-\tau)R_0+\tau R_1$, $0\le\tau\le1$, in $\mathcal C(B)$.
 
 ::: pf-proof
 
-A supporting family begins at $\xi_-$ and ends, away from the binding, at
-the page foliation. The standard local smoothing near each binding component
-extends this limiting page plane field to a nonsingular plane field on all of
-$S^3$. The family itself supplies the homotopy.
+At a point off $L$, both $d\pi(R_0)$ and $d\pi(R_1)$ are positive, so $d\pi(R_\tau)>0$; in particular $R_\tau\ne0$ there.
+At a point of $L$, both $R_0$ and $R_1$ are positive multiples of the oriented tangent of $L$, so $R_\tau$ is a positive multiple of it as well.
 
 :::
 
@@ -554,19 +551,15 @@ $S^3$. The family itself supplies the homotopy.
 
 ::: {.pf-step #s1-21}
 
-Under the Pontryagin--Thom correspondence from Section 1.3, the
-canonical plane field of an open book is represented by a binding component
-with its page framing.
-
+Let $\xi=\ker\alpha$ be a plane field co-oriented by $\alpha$.
+If $\alpha(R')>0$ for some $R'\in\mathcal C(B)$, then for every $R\in\mathcal C(B)$ the oriented plane field $\xi$ is homotopic to $R^\perp$, the orthogonal complement of $R$ in the round metric co-oriented by $R$.
 
 ::: pf-proof
 
-Near a binding component, the smoothed page plane field rotates from the
-page tangent plane to a nonsingular plane. Choose a regular value of the
-associated Gauss map in this local rotation. Its inverse image is the binding
-circle, and the derivative identifies its normal bundle with the framing
-given by the inward normal direction in the page. This is precisely the page
-framing.
+An oriented plane field is the same datum as its positive unit normal, so it suffices to join the unit normal $n$ of $\xi$ to $R/\abs{R}$ through nowhere-zero vector fields.
+Since $\alpha(R')>0$, the field $R'$ lies on the positive side of $\xi$, so $\langle n,R'\rangle>0$ and the fields $(1-\tau)n+\tau R'$ have positive inner product with $n$; they never vanish.
+Step [](#s1-20){.pf-ref} joins $R'$ to $R$ through nowhere-zero fields.
+Normalizing the concatenated path gives the homotopy of plane fields.
 
 :::
 
@@ -574,17 +567,21 @@ framing.
 
 ::: {.pf-step #s1-22}
 
-For a Hopf band, the framing number of either binding component with
-its page framing equals the linking number of the two boundary components.
-
+Let $R_+(z_1,z_2)=(iz_1,iz_2)=\partial_{\theta_1}+\partial_{\theta_2}$.
+Then $R_+\in\mathcal C(H_+)$, and $\xi_{\mathrm{std}}$ is homotopic to $R_+^\perp$.
 
 ::: pf-proof
 
-Push one binding component slightly into the annulus in the page-framing
-direction. The pushed-off curve is isotopic through the annulus complement
-of the original component to the other boundary component. Therefore the
-linking number of the original component with its page-framed push-off is
-the linking number of the two Hopf-link components.
+Steps [](#s1-9){.pf-ref} and [](#s1-10){.pf-ref} at $t=0$, for the positive contact form $\alpha_{\mathrm{std}}$, show that $ds\wedge d\theta_1\wedge d\theta_2$ is positive.
+For $H_+$ one has $d\pi_+=d\theta_1+d\theta_2$, so $d\pi_+(R_+)=2>0$, and the page tangent vectors $\partial_s$, $\partial_{\theta_1}-\partial_{\theta_2}$ satisfy
+$$
+ds\wedge d\theta_1\wedge d\theta_2\bigl(R_+,\partial_s,\partial_{\theta_1}-\partial_{\theta_2}\bigr)=2>0,
+$$
+so $(\partial_s,\partial_{\theta_1}-\partial_{\theta_2})$ is an oriented basis of the page.
+At the binding circle $\{z_2=0\}$, where $s=1$, the outward normal of the page is $\partial_s$, and the boundary orientation is $\partial_{\theta_1}-\partial_{\theta_2}$, which equals $\partial_{\theta_1}$ on that circle because $\partial_{\theta_2}$ vanishes there.
+At $\{z_1=0\}$, where $s=0$, the outward normal is $-\partial_s$, and the boundary orientation is $-(\partial_{\theta_1}-\partial_{\theta_2})=\partial_{\theta_2}$ there.
+On both circles $R_+$ is the oriented tangent, so $R_+\in\mathcal C(H_+)$.
+Finally $\alpha_{\mathrm{std}}(R_+)=s+(1-s)=1>0$, and step [](#s1-21){.pf-ref} applies with $R'=R=R_+$.
 
 :::
 
@@ -592,22 +589,32 @@ the linking number of the two Hopf-link components.
 
 ::: {.pf-step #s1-23}
 
-Hence the Pontryagin--Thom framing integer is
+Model $H_-$ by the binding $L_-=\{z_1=0\}\cup\{z_2=0\}$ and
 $$
-\boxed{+1}
+\pi_-(z_1,z_2)=\frac{z_1\overline{z_2}}{\abs{z_1z_2}}=e^{i(\theta_1-\theta_2)}.
 $$
-for $H_+$ and
+With the orientations of step [](#s1-20){.pf-ref}, the binding is oriented by $-\partial_{\theta_1}$ on $\{z_2=0\}$ and by $\partial_{\theta_2}$ on $\{z_1=0\}$, and the vector field
 $$
-\boxed{-1}
+R_-=\Bigl(\tfrac32-2s\Bigr)\partial_{\theta_1}+\Bigl(\tfrac12-2s\Bigr)\partial_{\theta_2}
 $$
-for $H_-$, with the same choice of orientation convention.
-
+lies in $\mathcal C(H_-)$.
 
 ::: pf-proof
 
-Step [](#s1-22){.pf-ref} identifies the framing integer with the Hopf-link linking number.
-The positive and negative Hopf links have linking numbers $+1$ and $-1$,
-respectively.
+The pages $\theta_1-\theta_2=\mathrm{const}$ are open annuli with ends on the two coordinate circles, exactly as in step [](#s1-3){.pf-ref}.
+Here $d\pi_-=d\theta_1-d\theta_2$, the vector $\partial_{\theta_1}-\partial_{\theta_2}$ has $d\pi_-$-value $2$, and
+$$
+ds\wedge d\theta_1\wedge d\theta_2\bigl(\partial_{\theta_1}-\partial_{\theta_2},\partial_s,\partial_{\theta_1}+\partial_{\theta_2}\bigr)=-2,
+$$
+so $\bigl(\partial_s,-(\partial_{\theta_1}+\partial_{\theta_2})\bigr)$ is an oriented basis of the page.
+At $s=1$ the outward normal is $\partial_s$ and the boundary orientation is $-(\partial_{\theta_1}+\partial_{\theta_2})=-\partial_{\theta_1}$; at $s=0$ the outward normal is $-\partial_s$ and the boundary orientation is $\partial_{\theta_1}+\partial_{\theta_2}=\partial_{\theta_2}$.
+Compared with the orientations $\partial_{\theta_1}$, $\partial_{\theta_2}$ of $H_+$, exactly one component is reversed, so the binding is the Hopf link of linking number $-1$, and this open book is $H_-$.
+
+Write $u(s)=\tfrac32-2s$ and $v(s)=\tfrac12-2s$.
+In coordinates $R_-(z_1,z_2)=(iu\,z_1,iv\,z_2)$; since $u$ and $v$ are polynomials in $s=\abs{z_1}^2$, $R_-$ is smooth on $S^3$, and $\abs{R_-}^2=u^2s+v^2(1-s)$.
+On $0<s<1$ this vanishes only if $u=v=0$, which is impossible since $u-v=1$; at $s=1$ it equals $u(1)^2=\tfrac14$, and at $s=0$ it equals $v(0)^2=\tfrac14$.
+Off the binding $d\pi_-(R_-)=u-v=1>0$.
+On $\{z_2=0\}$, $R_-=u(1)\partial_{\theta_1}=\tfrac12(-\partial_{\theta_1})$, and on $\{z_1=0\}$, $R_-=v(0)\partial_{\theta_2}=\tfrac12\partial_{\theta_2}$; both are positive multiples of the oriented binding tangent.
 
 :::
 
@@ -615,24 +622,66 @@ respectively.
 
 ::: {.pf-step #s1-24}
 
-Framed links in $S^3$ with different framing integers are not
-framed cobordant.
-
+The contact structure $\xi_-$ supported by $H_-$ is homotopic to $R_-^\perp$.
 
 ::: pf-proof
 
-The Pontryagin--Thom correspondence identifies framed-cobordism classes of
-framed $1$-manifolds in $S^3$ with
+By Theorem 4.52, $\xi_-$ is, up to isotopy, the Thurston--Winkelkemper structure $\ker\alpha$ of the notes.
+On the mapping torus of the monodromy, with circle coordinate $z$ and $d\pi=dz$, one has $\alpha=dz+\epsilon\eta$ with $\epsilon$ small, so $\alpha(\partial_z)>0$ and $d\pi(\partial_z)=1>0$.
+Near a binding component, in coordinates $(r,\theta,z')$ with the binding $\{r=0\}$ oriented by $\partial_{z'}$ and the pages $\{\theta=\mathrm{const}\}$, one has $\alpha=dz'+\tfrac{r^2}{2}d\theta$; the field $\partial_{z'}+\kappa(r)\partial_\theta$, with $\kappa$ smooth, $\kappa(r)=r^2$ for small $r$, gives $\alpha$-value $1+\tfrac{r^2}{2}\kappa>0$, $d\theta$-value $\kappa>0$ off the binding, and equals $\partial_{z'}$ on it.
+At each point off the binding the set of vectors $w$ with $\alpha(w)>0$ and $d\pi(w)>0$ is convex, and each of the two local fields lies in it on its domain, so a partition of unity subordinate to these two regions glues them to a field $R'\in\mathcal C(H_-)$ with $\alpha(R')>0$.
+Step [](#s1-21){.pf-ref} with $R=R_-$, which lies in $\mathcal C(H_-)$ by step [](#s1-23){.pf-ref}, gives $\xi_-\simeq R_-^\perp$.
+An isotopy of contact structures is a homotopy of plane fields, so the choice within the isotopy class does not matter.
+
+:::
+
+:::
+
+::: {.pf-step #frame-maps}
+
+Identify $S^3$ with the unit quaternions $q=z_1+z_2j$ in $\quaternions$, and trivialize $TS^3$ by the frame $(qi,qj,qk)$, so that an oriented plane field corresponds to the map $S^3\to S^2\subset\operatorname{Im}\quaternions$ sending $q$ to $\overline q\,n(q)$, where $n$ is its unit normal.
+Let $h(q)=\overline q\,i\,q$ be the Hopf map, and for $x\in S^2$ write $x=t(x)\,i+y$ with $y\in\operatorname{span}(j,k)$.
+Then $R_+^\perp$ corresponds to $h$, and $R_-^\perp$ corresponds to $g\circ h$, where
 $$
-[S^3,S^2]
-\cong
-\pi_3(S^2)
-\cong
-\ZZ.
+g(x)=\frac{-t(x)\,x+\tfrac12 i}{\abs{-t(x)\,x+\tfrac12 i}}.
 $$
-The integer can be computed as the linking number of a framed link with a
-small framed push-off. Distinct integers therefore represent distinct
-classes.
+
+::: pf-proof
+
+Multiplication by the complex scalar $i$ is left multiplication, $iq=iz_1+(iz_2)j$, and right multiplication is $qi=iz_1+z_2(ji)=iz_1-(iz_2)j$.
+Hence $R_+(q)=iq$ and $\partial_{\theta_1}-\partial_{\theta_2}=qi$.
+Both are unit vectors, so $\overline q R_+(q)=\overline q\,i\,q=h(q)$.
+Writing $u=\tfrac32-2s$, $v=\tfrac12-2s$ as in step [](#s1-23){.pf-ref},
+$$
+R_-=\tfrac{u+v}{2}(\partial_{\theta_1}+\partial_{\theta_2})+\tfrac{u-v}{2}(\partial_{\theta_1}-\partial_{\theta_2})=(1-2s)\,iq+\tfrac12\,qi,
+$$
+so $\overline q R_-(q)=(1-2s)h(q)+\tfrac12 i$.
+Using $\overline q=\overline{z_1}-z_2j$ and $jw=\overline w j$ for $w\in\CC$, a direct expansion gives
+$$
+h(z_1+z_2j)=\bigl(\abs{z_1}^2-\abs{z_2}^2\bigr)i+2i\,\overline{z_1}z_2\,j,
+$$
+whose $i$-coordinate is $2s-1$ and whose second term lies in $\operatorname{span}(j,k)$.
+Thus $1-2s=-t(h(q))$, and normalizing gives $g(h(q))$.
+
+:::
+
+:::
+
+::: {.pf-step #degree-zero}
+
+The map $g:S^2\to S^2$ has degree $0$, so $g\circ h$ is null-homotopic, while $h$ generates $\pi_3(S^2)\cong\ZZ$.
+
+::: pf-proof
+
+For $x=ti+y$ the vector $-tx+\tfrac12 i$ has $i$-coordinate $\tfrac12-t^2$ and $(j,k)$-part $-ty$; these vanish together only if $t^2=\tfrac12$ and $y=0$, which is impossible, so $g$ is smooth.
+Compute the preimages of $-i$: $g(x)=-i$ forces $-ty=0$ and $\tfrac12-t^2<0$, so $y=0$ and $x=\pm i$, and both points do map to $-i$.
+Near $x=-i$ write $x=-i+y+O(\abs{y}^2)$ with $y\in\operatorname{span}(j,k)$; then $-tx+\tfrac12i=-\tfrac12i+y+O(\abs{y}^2)$, so $g(x)=-i+2y+O(\abs{y}^2)$.
+The derivative $T_{-i}S^2\to T_{-i}S^2$ is multiplication by $2$, so the local degree is $+1$.
+Near $x=i$ write $x=i+y+O(\abs{y}^2)$; then $-tx+\tfrac12i=-\tfrac12i-y+O(\abs{y}^2)$, so $g(x)=-i-2y+O(\abs{y}^2)$.
+The tangent planes $T_iS^2$ and $T_{-i}S^2$ are both $\operatorname{span}(j,k)$ but carry opposite orientations, since their outward normals $i$ and $-i$ are opposite, and $-2\,\mathrm{id}$ preserves the orientation of a plane; so this local degree is $-1$.
+Thus $-i$ is a regular value and $\deg g=1-1=0$.
+By the Hopf degree theorem $g$ is null-homotopic, hence so is $g\circ h$.
+The Hopf map $h$ has Hopf invariant $1$ and generates $\pi_3(S^2)\cong\ZZ$, so it is not null-homotopic.
 
 :::
 
@@ -640,19 +689,16 @@ classes.
 
 ::: {.pf-step #s1-25}
 
-Consequently, the plane field supported by $H_-$ is not homotopic
-to the standard contact plane field:
+Consequently, the plane field supported by $H_-$ is not homotopic to the standard contact plane field:
 $$
 \boxed{
 \xi_-\not\simeq\xi_{\mathrm{std}}}.
 $$
 
-
 ::: pf-proof
 
-By steps [](#s1-16){.pf-ref} and [](#s1-20){.pf-ref} through [](#s1-23){.pf-ref}, the two plane fields correspond under
-Pontryagin--Thom to framed links with different integer invariants. Step
-[](#s1-24){.pf-ref} says they cannot be homotopic.
+By steps [](#s1-22){.pf-ref} and [](#s1-24){.pf-ref}, $\xi_{\mathrm{std}}\simeq R_+^\perp$ and $\xi_-\simeq R_-^\perp$.
+Under the bijection between homotopy classes of oriented plane fields and $[S^3,S^2]$ given by the fixed frame, step [](#frame-maps){.pf-ref} sends these to the classes of $h$ and $g\circ h$, which differ by step [](#degree-zero){.pf-ref}.
 
 :::
 
@@ -721,14 +767,6 @@ A contact structure in dimension $3$ is either tight or overtwisted.
 Step [](#s1-28){.pf-ref} rules out tightness.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1-16){.pf-ref} proves that $H_+$ supports the standard contact structure.
-Steps [](#s1-25){.pf-ref} and [](#s1-29){.pf-ref} show that $H_-$ supports a different homotopy class
-and that its supported contact structure is overtwisted.
 
 :::
 
