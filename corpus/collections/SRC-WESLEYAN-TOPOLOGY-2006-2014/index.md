@@ -83,8 +83,7 @@ source:
     - {id: P-WESTOP09-II5, comment: Part II Problem 5}
   - name: Topology Qualifying Exam, August 4, 2008
     problems:
-    - id: E-MGS22
-      comment: Part I Problem 1
+    - {id: P-WESTOP14-1, comment: Part I Problem 1 (compactness statement only)}
     - id: E-E3JL6
       comment: Part I Problem 2
     - {id: P-WESTOP08-I3, comment: Part I Problem 3}

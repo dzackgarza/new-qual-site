@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP14-1
 kind: problem
 title: Continuous images preserve connectedness and compactness
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Connectedness, Compactness, Continuity]}
 relations: []
 review: draft
 audit:
@@ -21,10 +21,9 @@ Let $f:X\to Y$ be continuous.
 
 ::: pf
 
-::: {.pf-step #s1-1}
+::: pf-step
 
 If $X$ is connected, then $f(X)$ is connected.
-
 
 ::: pf-proof
 
@@ -44,23 +43,9 @@ are open in $X$. They are disjoint and their union is $X$. They are both nonempt
 
 :::
 
-::: {.pf-step #s1-2}
-
-Therefore continuous images preserve connectedness.
-
-
-::: pf-proof
-
-Step [](#s1-1){.pf-ref} proves that whenever $X$ is connected, its image $f(X)$ is connected.
-
-:::
-
-:::
-
-::: {.pf-step #s1-3}
+::: pf-step
 
 If $X$ is compact, then $f(X)$ is compact.
-
 
 ::: pf-proof
 
@@ -85,25 +70,6 @@ $$
 Hence the original cover has a finite subcover of $f(X)$, so $f(X)$ is compact.
 
 :::
-
-:::
-
-::: {.pf-step #s1-4}
-
-Therefore continuous images preserve compactness.
-
-
-::: pf-proof
-
-Step [](#s1-3){.pf-ref} proves that whenever $X$ is compact, its image $f(X)$ is compact.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref} prove the two requested statements.
 
 :::
 
