@@ -24,109 +24,14 @@ Do the same for closed nonorientable surfaces using cohomology with $\ZZ_2$ coef
 :::
 
 ::: {.solution}
+For an orientable surface $M_g$, choose the symplectic basis $a_1,b_1,\ldots,a_g,b_g$ of $H^1(M_g;\ZZ)$ from the surface cup-product calculation. With $u$ the orientation class,
+$$
+a_i\smile b_j=\delta_{ij}u,\qquad
+b_i\smile a_j=-\delta_{ij}u,
+$$
+and all products of two $a$'s or two $b$'s vanish. If a class $\alpha$ has a nonzero $a_i$ coefficient, its product with $b_i$ is nonzero; if it has no $a_i$ coefficient but is nonzero, its product with a suitable $a_i$ is nonzero. Thus the pairing on $H^1(M_g;\ZZ)$ has zero radical.
 
-::: pf
+Suppose $M_g\simeq X\vee Y$ with both factors having nontrivial reduced integral homology. Wedge homology splits, and $M_g$ has reduced integral homology only in degrees $1$ and $2$, with $H_2(M_g)\cong\ZZ$. Therefore one factor, say $X$, has $H_2(X)=0$, and its nontrivial reduced homology lies in $H_1(X)$. This group is a nonzero free abelian summand of $H_1(M_g)$, so $H^1(X;\ZZ)\ne0$ and the universal coefficient theorem gives $H^2(X;\ZZ)=0$. Choose a nonzero class $\alpha$ from this summand of $H^1(X\vee Y;\ZZ)$. Its product with a class from $Y$ is zero because products across wedge summands vanish; its product with a class from $X$ lies in $H^2(X;\ZZ)=0$. Thus $\alpha$ is in the radical of the cup-product pairing, a contradiction.
 
-::: {.pf-step #s1}
-
-$H^1(M;\ZZ) \cong \ZZ^{2g}$, and the cup product pairing $H^1 \times H^1 \to H^2 \cong \ZZ$ is a nondegenerate symplectic form.
-
-::: pf-proof
-
-standard computation of the cohomology ring of a closed orientable surface of genus $g$; the cup product is the intersection form, which is symplectic (nondegenerate alternating).
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-For each nonzero $\alpha \in H^1(M;\ZZ)$ there is $\beta \in H^1(M;\ZZ)$ with $\alpha \smile \beta \neq 0$.
-
-::: pf-proof
-
-nondegeneracy of the symplectic form in step [](#s1){.pf-ref}: if $\alpha \smile \beta = 0$ for all $\beta$, then $\alpha = 0$.
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-$M$ is not homotopy equivalent to a wedge $X \vee Y$ with $\widetilde{H}_*(X) \neq 0$ and $\widetilde{H}_*(Y) \neq 0$.
-
-::: pf-proof
-
-::: {.pf-step #s3-1}
-
-For a wedge $X \vee Y$, the cup product of any class in $H^1(X)$ with any class in $H^1(Y)$ is zero.
-
-::: pf-proof
-
-the cup product $H^1(X \vee Y) \times H^1(X \vee Y) \to H^2(X \vee Y)$ is zero, since $H^1(X \vee Y) \cong H^1(X) \oplus H^1(Y)$ and cross terms vanish (the two summands are "disjoint" in the wedge).
-
-:::
-
-:::
-
-::: {.pf-step #s3-2}
-
-But $M$ has a nonzero cup product $H^1 \times H^1 \to H^2$.
-
-::: pf-proof
-
-Step [](#s2){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-step
-
-Hence $M$ is not homotopy equivalent to any such wedge.
-
-::: pf-proof
-
-the cup product structure is a homotopy invariant, and step [](#s3-1){.pf-ref} contradicts step [](#s3-2){.pf-ref}.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-Nonorientable case: for a closed nonorientable surface $N$, $H^1(N;\ZZ_2) \cong \ZZ_2^{g}$ (where $g$ is the genus), and the cup product pairing $H^1(N;\ZZ_2) \times H^1(N;\ZZ_2) \to H^2(N;\ZZ_2) \cong \ZZ_2$ is nondegenerate.
-
-::: pf-proof
-
-standard computation of the $\ZZ_2$-cohomology ring of a nonorientable surface.
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-Hence for each nonzero $\alpha \in H^1(N;\ZZ_2)$ there is $\beta$ with $\alpha \smile \beta \neq 0$, and $N$ is not homotopy equivalent to a wedge $X \vee Y$ with nontrivial reduced homology.
-
-::: pf-proof
-
-the same argument as steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, with $\ZZ_2$ coefficients.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s5){.pf-ref}.
-
-:::
-
-:::
-
+For a closed nonorientable surface $N_g$, use $\ZZ_2$ coefficients. In the basis dual to its $g$ crosscap loops, the pairing $H^1(N_g;\ZZ_2)^2\to H^2(N_g;\ZZ_2)\cong\ZZ_2$ has identity matrix, hence zero radical. Its reduced integral homology is confined to $H_1(N_g;\ZZ)\cong\ZZ^{g-1}\oplus\ZZ_2$. If $N_g\simeq X\vee Y$ with both factors having nontrivial reduced integral homology, then each factor has nonzero $H_1$ as a direct summand of this group and hence nonzero $H^1(-;\ZZ_2)$. Since $H^2(N_g;\ZZ_2)$ is one-dimensional and splits over the wedge, one factor has zero second cohomology. Any nonzero degree-one class from that factor pairs to zero with every degree-one class of the wedge, again a contradiction.
 :::
