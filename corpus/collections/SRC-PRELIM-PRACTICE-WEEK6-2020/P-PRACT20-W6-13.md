@@ -6,17 +6,24 @@ title: Continuous images of compact sets are compact
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Compactness
+  - Continuity
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-Let X, Y be topological spaces and let $f : X \to Y$ be continuous.
-Show that $f ( K )$ is compact in Y for any compact set $K \subseteq X$ . In short: show that the continuous image of a compact set is compact.
+Let $X, Y$ be topological spaces and let $f : X \to Y$ be continuous.
+Show that $f(K)$ is compact in $Y$ for any compact set $K \subseteq X$. In short: show that the continuous image of a compact set is compact.
 :::
 
 ::: {.solution}
-Suppose that $K \subset X$ is compact.
-We want to prove that $f ( K )$ is compact, so take an open cover {Vi} of $f ( K )$ . Since f is continuous, we have that $U _ { i } = f ^ { - 1 } ( V _ { i } )$ are open in X. Now if $x \in K$ , then $f ( x ) \in f ( K )$ which means that $f ( x ) \in V _ { i }$ for some i. But if $f ( x ) \in V _ { i }$ then $x \in U _ { i }$ . This shows that $\{ U _ { i } \}$ forms an open cover of K in X. Since K is compact, there is a finite subcover $U _ { 1 } , \ldots , U _ { n }$ . But then since $K \subset \cup _ { k = 1 } ^ { n } U _ { k }$ , we have $f ( K ) \subset \cup _ { k = 1 } ^ { n } f ( U _ { k } ) = \cup _ { k = 1 } ^ { n } V _ { k }$ , and so $V _ { 1 } , \ldots , V _ { n }$ forms a finite subcover of $f ( K )$ . Since $\{ V _ { i } \}$ was an arbitrary open cover of $f ( K )$ and we were able to extract a finite subcover, we conclude that $f ( K )$ is compact.
+Suppose that $K\subseteq X$ is compact, and let $\{V_i\}_{i\in I}$ be an open cover of $f(K)$. Since $f$ is continuous, the sets $U_i=f^{-1}(V_i)$ are open in $X$. If $x\in K$, then $f(x)\in V_i$ for some $i$, so $x\in U_i$. Thus $\{U_i\}$ is an open cover of $K$. Since $K$ is compact, there are $i_1,\dots,i_n$ with $K\subseteq\bigcup_{k=1}^nU_{i_k}$. Then
+
+$$
+f(K)\subseteq\bigcup_{k=1}^nf(U_{i_k})\subseteq\bigcup_{k=1}^nV_{i_k},
+$$
+
+so $V_{i_1},\dots,V_{i_n}$ is a finite subcover. Since the cover was arbitrary, $f(K)$ is compact.
 :::

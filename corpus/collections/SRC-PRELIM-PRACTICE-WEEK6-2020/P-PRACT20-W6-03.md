@@ -6,7 +6,8 @@ title: Candidate metrics on $\RR$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Metric Spaces
 relations: []
 review: draft
 ---
@@ -26,9 +27,13 @@ Which of the following does not define a metric on $\RR$?
 :::
 
 ::: {.solution}
-(A) is a scaled version of the discrete metric. (B) and (D) are bounded versions of the standard metric (i.e., the generate the standard topology even though they give bounded distance between points). (C) is a scaled version of the standard metric. (E) is not a metric because the triangle inequality is not satisfied. Indeed, let $\scriptstyle x = 0 , y = { \frac { 1 } { 2 } } , z = 1$ . Then
+The answer is (E).
+
+(A) is twice the discrete metric. (B) and (D) are bounded metrics that generate the standard topology. (C) is a positive multiple of the standard metric.
+
+(E) is not a metric because the triangle inequality fails. Let $x=0$, $y=\frac12$, $z=1$. Then
 
 $$
-\begin{array} { r } { 1 = \omega ( x , z ) \not \subseteq \omega ( x , y ) + \omega ( y , z ) = \left( { \frac { 1 } { 2 } } \right) ^ { 2 } + \left( { \frac { 1 } { 2 } } \right) ^ { 2 } = { \frac { 1 } { 2 } } } \end{array}
+1=\omega(x,z)>\omega(x,y)+\omega(y,z)=\left(\frac12\right)^2+\left(\frac12\right)^2=\frac12.
 $$
 :::

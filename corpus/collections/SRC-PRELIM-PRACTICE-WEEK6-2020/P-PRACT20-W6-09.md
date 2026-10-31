@@ -6,7 +6,10 @@ title: Compactness, boundedness of continuous functions and connectedness in $\R
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Compactness
+  - Heine-Borel Theorem
+  - Connectedness
 relations: []
 review: draft
 audit:
@@ -31,13 +34,9 @@ Let $\emptyset \neq K \subseteq \RR^n$. Which of the following statements are tr
 :::
 
 ::: {.solution}
-(A) is true; indeed, defining $U _ { n } = f ^ { - 1 } ( [ - n , n ] )$ for $n \in \NN .$ , we see that $U _ { n }$ forms an open cover of K. By compactness there is a finite subcover and since the sets $U _ { n }$ are nested, we will have $K \subset U _ { N }$ for some $N \in \NN .$ . But then $\abs{ f ( x ) } \leq N$ for all $x \in K$
+(A) is true. Let $f$ be continuous on $K$ and set $U_n=f^{-1}((-n,n))$ for $n\in\NN$. These sets are open in $K$ and cover $K$. By compactness finitely many cover $K$, and since they are nested, $K\subset U_N$ for some $N$. Then $\abs{f(x)}<N$ for all $x\in K$.
 
-(B) is true.
-We prove this by contrapositive.
-If K is not compact, then it is either not closed or not bounded (by the Heine-Borel theorem).
-If K is not closed, then there is $x _ { 0 } \in \RR ^ { n }$ such that $x _ { 0 } \notin K$ but $x _ { 0 }$ is a limit point of K. Then putting $\begin{array} { r } { f ( x ) = \frac { 1 } { \norm{ x - x _ { 0 } } } } \end{array}$ gives a function which is continuous and unbounded on K. If K is unbounded, then $f ( x ) = \norm{ x }$ is continuous and unbounded on K. Contrapositively, if every continuous function on K is bounded, then K is compact.
+(B) is true. We prove the contrapositive. If $K$ is not compact, then by the Heine--Borel theorem it is not closed or not bounded. If $K$ is not closed, there is $x_0\in\RR^n\setminus K$ that is a limit point of $K$; then $f(x)=\frac{1}{\norm{x-x_0}}$ is continuous and unbounded on $K$. If $K$ is unbounded, then $f(x)=\norm{x}$ is continuous and unbounded on $K$.
 
-(C) is false.
-The set $K = [ - 2 , - 1 ] ^ { n } \cup [ 1 , 2 ] ^ { n }$ is compact but not connected.
+(C) is false. The set $K=[-2,-1]^n\cup[1,2]^n$ is compact but not connected.
 :::

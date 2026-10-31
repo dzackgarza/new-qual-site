@@ -6,7 +6,8 @@ title: Maximum of two independent geometric random variables
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Probability
 relations: []
 review: draft
 audit:
@@ -21,23 +22,21 @@ Suppose $X, Y$ are i.i.d. random variables taking value $n \in \NN$ with probabi
 :::
 
 ::: {.solution}
-We see that max $\{ X , Y \} > 3$ iff $X > 3$ or $Y > 3$ and
+$\max\{X,Y\}>3$ iff $X>3$ or $Y>3$, so by independence
 
 $$
-\operatorname* { P r o b } \{ X > 3 { \mathrm { ~ o r ~ } } Y > 3 \} = 1 - \operatorname* { P r o b } \{ X \leq 3 { \mathrm { ~ a n d ~ } } Y \leq 3 \} = 1 - \operatorname* { P r o b } \{ X \leq 3 \} \operatorname* { P r o b } \{ Y \leq 3 \}
+P(X>3\text{ or }Y>3)=1-P(X\leq3\text{ and }Y\leq3)=1-P(X\leq3)\,P(Y\leq3).
 $$
 
-where the last step follows by independence.
 Now
 
 $$
-\operatorname { P r o b } \{ X \leq 3 \} = \sum _ { i = 1 } ^ { 3 } \operatorname { P r o b } \{ X = i \} = { \frac { 1 } { 2 } } + { \frac { 1 } { 4 } } + { \frac { 1 } { 8 } } = { \frac { 7 } { 8 } } ,
+P(X\leq3)=\sum_{i=1}^3P(X=i)=\frac12+\frac14+\frac18=\frac78,
 $$
 
-and likewise for Y since they are identically distributed.
-Thus
+and likewise for $Y$, since the two are identically distributed. Thus
 
 $$
-{ \mathrm { P r o b } } \{ X > 3 { \mathrm { ~ o r ~ } } Y > 3 \} = 1 - \left( { \frac { 7 } { 8 } } \right) ^ { 2 } = { \frac { 1 5 } { 6 4 } } .
+P(\max\{X,Y\}>3)=1-\left(\frac78\right)^2=\frac{15}{64}.
 $$
 :::

@@ -6,7 +6,10 @@ title: Separating continuity, uniform continuity, Lipschitz continuity and diffe
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Uniform Continuity
+  - Lipschitz Continuity
+  - Differentiability
 relations: []
 review: draft
 ---
@@ -24,38 +27,41 @@ Find examples of a function $f : ( - 1 , 1 ) \to \RR$ which is
 :::
 
 ::: {.solution}
-For (A), let $\textstyle f ( x ) = { \frac { 1 } { 1 - x } }$ . Then f is continuous, but it is not uniformly continuous.
-Indeed, the sequence $f ( 1 - 1 / n ) = n$ does not converge, which shows by Problem 4 (contrapositively) that f is not uniformly continuous.
+(A) Let $f(x)=\frac{1}{1-x}$. Then $f$ is continuous on $(-1,1)$. It is not uniformly continuous: $x_n=1-1/n\to1$ is a Cauchy sequence, but $f(x_n)=n$ is not Cauchy, while a uniformly continuous function maps Cauchy sequences to Cauchy sequences.
 
-For (B), consider $f ( x ) = { \sqrt { 1 - x } }$ . Then f is uniformly continuous because it is can be continuously extended to the compact set $[ - 1 , 1 ]$ However, f is not Lipschitz continuous.
-Indeed, notice that f is differentiable on $( - 1 , 1 )$ with $\begin{array} { r } { f ^ { \prime } ( x ) = \frac { 1 } { 2 \sqrt { 1 - x } }  \infty \mathrm { ~ a s ~ } x  1 } \end{array}$ . Thus for any $K > 0$ , we can find $\delta > 0$ such that $f ^ { \prime } ( x ) > K$ when $x \in ( 1 - \delta , 1 ]$ . But then by the mean value theorem, for any $x , y \in \left( 1 - \delta , 1 \right] x \neq y .$ , we can find c between x and y such that
+(B) Let $f(x)=\sqrt{1-x}$. Then $f$ extends continuously to the compact set $[-1,1]$, so it is uniformly continuous there and hence on $(-1,1)$. It is not Lipschitz continuous. Indeed, $f$ is differentiable on $(-1,1)$ with
 
 $$
-\abs{ f ( x ) - f ( y ) } = \abs{ f ^ { \prime } ( c ) } \abs{ x - y } > K \abs{ x - y }
+\abs{f'(x)}=\frac{1}{2\sqrt{1-x}}\to\infty\quad\text{as }x\to1.
 $$
 
-which shows that K is not a Lipschitz constant for f . Since $K > 0$ was arbitrary, we conclude that f is not Lipschitz continuous.
-
-For (C), consider $f ( x ) = \abs{ x }$ . Then f is Lipschitz continuous with Lipschitz constant 1 by the reverse triangle inequality, but f is not differentiable at $x = 0$
-
-For (D) consider the function
+So for any $K>0$ there is $\delta>0$ with $\abs{f'(x)}>K$ for $x\in(1-\delta,1)$. For $x\neq y$ in $(1-\delta,1)$, the mean value theorem gives $c$ between $x$ and $y$ with
 
 $$
-f ( x ) = \left\{ \begin{array} { c c } { x ^ { 2 } \sin \left( \frac { 1 } { x } \right) , } & { x \in ( - 1 , 0 ) \cup ( 0 , 1 ) , } \\ { 0 , } & { x = 0 . } \end{array} \right.
+\abs{f(x)-f(y)}=\abs{f'(c)}\abs{x-y}>K\abs{x-y},
 $$
 
-Certainly f is differentiable for $x \neq 0$ since it is the product of smooth functions in that domain.
-Indeed, we see that
+so $K$ is not a Lipschitz constant for $f$. Since $K>0$ was arbitrary, $f$ is not Lipschitz continuous.
+
+(C) Let $f(x)=\abs{x}$. It is Lipschitz continuous with constant $1$ by the reverse triangle inequality, but it is not differentiable at $x=0$.
+
+(D) Let
 
 $$
-f ^ { \prime } ( x ) = 2 x \sin \left( { \frac { 1 } { x } } \right) - \cos \left( { \frac { 1 } { x } } \right) , x \in ( - 1 , 0 ) \cup ( 0 , 1 ) .
+f(x)=\begin{cases}x^2\sin\left(\frac1x\right),&x\in(-1,0)\cup(0,1),\\0,&x=0.\end{cases}
 $$
 
-Also at $x = 0$ , we see that
+For $x\neq0$, $f$ is a product of smooth functions, with
 
 $$
-\operatorname* { l i m } _ { x \to 0 } { \frac { f ( x ) - f ( 0 ) } { x - 0 } } = \operatorname* { l i m } _ { x \to 0 } x \sin \left( { \frac { 1 } { x } } \right) = 0
+f'(x)=2x\sin\left(\frac1x\right)-\cos\left(\frac1x\right),\qquad x\in(-1,0)\cup(0,1).
 $$
 
-which shows that $f ^ { \prime } ( 0 ) = 0$ . Thus f is differentiable for all $x \in ( - 1 , 1 )$ . However, the derivative is discontinuous because along the sequence $\begin{array} { r } { x _ { n } = \frac { 1 } { \sqrt { ( 2 n + 1 ) \pi } } } \end{array}$ , we have $f ^ { \prime } ( x _ { n } ) = 1 \not \to 0 = f ^ { \prime } ( 0 )$ even though $x _ { n } \to 0$
+At $x=0$,
+
+$$
+\lim_{x\to0}\frac{f(x)-f(0)}{x-0}=\lim_{x\to0}x\sin\left(\frac1x\right)=0,
+$$
+
+so $f'(0)=0$ and $f$ is differentiable on $(-1,1)$. The derivative is discontinuous at $0$: along $x_n=\frac{1}{(2n+1)\pi}\to0$, we have $\sin(1/x_n)=0$ and $\cos(1/x_n)=-1$, so $f'(x_n)=1\not\to0=f'(0)$.
 :::

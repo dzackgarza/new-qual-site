@@ -6,7 +6,9 @@ title: Pointwise and uniform convergence of $x^n/(1+x^n)$ on $[0,1]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Pointwise Convergence
 relations: []
 review: draft
 audit:
@@ -31,25 +33,27 @@ Define $f_n(x) = \frac{x^n}{1 + x^n}$ for $x \in [0, 1]$, $n \in \NN$. Which of 
 :::
 
 ::: {.solution}
-At $x = 1$ , we see that $f _ { n } ( 1 ) = 1 / 2$ for all $n \in \NN$ so $f _ { n } ( 1 ) \to 1 / 2$. For any $x \in [ 0 , 1 )$ , we have
+(A) and (C) are true; (B) is false.
+
+At $x=1$, $f_n(1)=1/2$ for all $n$. For $x\in[0,1)$,
 
 $$
-0 \leq f _ { n } ( x ) = { \frac { x ^ { n } } { 1 + x ^ { n } } } \leq x ^ { n } \to 0 , \quad { \mathrm { ~ a s ~ } } \ n \to \infty .
+0\leq f_n(x)=\frac{x^n}{1+x^n}\leq x^n\to0\quad\text{as }n\to\infty.
 $$
 
-Thus f converges pointwise to the function
+Thus $f_n$ converges pointwise to
 
 $$
-f ( x ) = { \left\{ \begin{array} { l l } { 0 , } & { x \in [ 0 , 1 ) } \\ { 1 / 2 , } & { x = 1 . } \end{array} \right. }
+f(x)=\begin{cases}0,&x\in[0,1),\\1/2,&x=1.\end{cases}
 $$
 
-Now each $f _ { n }$ is continuous, but this limit is discontinuous - we conclude that the convergence is not uniform since the uniform limit of continuous functions remains continuous.
-However, since the domain is compact and each $f _ { n }$ is bounded by 1 for all $x \in [ 0 , 1 ]$ , the limit of the integrals is the integral of the limit.
-More explicitly
+Each $f_n$ is continuous but $f$ is not, so the convergence is not uniform, since a uniform limit of continuous functions is continuous.
+
+For (C),
 
 $$
-0 \leq \int _ { 0 } ^ { 1 } f _ { n } ( x ) d x = \int _ { 0 } ^ { 1 } { \frac { x ^ { n } d x } { 1 + x ^ { n } } } \leq \int _ { 0 } ^ { 1 } x ^ { n } d x = { \frac { 1 } { n + 1 } } \to 0
+0\leq\int_0^1f_n(x)\,dx=\int_0^1\frac{x^n}{1+x^n}\,dx\leq\int_0^1x^n\,dx=\frac{1}{n+1}\to0,
 $$
 
-and $\begin{array} { r } { \int _ { 0 } ^ { 1 } f ( x ) d x = 0 } \end{array}$ so $\begin{array} { r } { \int _ { 0 } ^ { 1 } f _ { n } ( x ) d x \to \int _ { 0 } ^ { 1 } f ( x ) d x } \end{array}$ . Thus we conclude that (A) and (C) are true, while (B) is false.
+and $\int_0^1f(x)\,dx=0$, so $\int_0^1f_n\to\int_0^1f$.
 :::

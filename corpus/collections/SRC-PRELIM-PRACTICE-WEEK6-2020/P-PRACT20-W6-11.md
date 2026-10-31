@@ -6,7 +6,9 @@ title: Open, closed and uncountable sets containing $\QQ$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Topology of the Real Line
+  - Lebesgue Measure
 relations: []
 review: draft
 audit:
@@ -31,21 +33,27 @@ Which of the following necessarily holds for $\QQ \subseteq A \subseteq \RR$?
 :::
 
 ::: {.solution}
-(A) is false, and this is a bit surprising because if A is open and contains each rationals, then it contains open intervals around each rational.
-Now if each interval had a fixed length, then we would have $A = \RR$ by density of $\QQ .$ . However, the intervals around the rationals could get infinitesimally small so that $A \neq \RR$ . To make this really rigorous, one needs to know a bit about the Lebesgue measure, but the idea is this: let $\{ q _ { n } \} _ { n = 1 } ^ { \infty } = \QQ$ and let $\begin{array} { r } { A = \cup _ { n = 1 } ^ { \infty } ( q _ { n } - \frac { 1 } { 2 ^ { n + 1 } } , q _ { n } + \frac { 1 } { 2 ^ { n + 1 } } ) } \end{array}$ Then certainly $\QQ \subset A$ , but the total length of A satisfies
+Only (B) necessarily holds.
+
+(A) is false. Enumerate $\QQ=\{q_n\}_{n=1}^\infty$ and let
 
 $$
-\ell ( A ) \leq \sum _ { n = 1 } ^ { \infty } \ell \left( \left( q _ { n } - { \frac { 1 } { 2 ^ { n + 1 } } } , q _ { n } + { \frac { 1 } { 2 ^ { n + 1 } } } \right) \right) = \sum _ { n = 1 } ^ { \infty } { \frac { 1 } { 2 ^ { n } } } = 1 ,
+A=\bigcup_{n=1}^\infty\left(q_n-\frac{1}{2^{n+1}},q_n+\frac{1}{2^{n+1}}\right).
 $$
 
-whereas the length of R is +∞. Thus $A \neq \RR { \mathrm { ~ s o ~ } } ( { \mathrm { A } } )$ is false.
-[Indeed, replacing $1 / 2 ^ { n + 1 }$ with $\varepsilon / 2 ^ { n + 1 }$ for arbitrarily small $\varepsilon > 0$ , this argument shows that the Lebesgue measure of $\QQ$ [or any other countable set] is zero).
+Then $A$ is open and $\QQ\subset A$, but the Lebesgue measure of $A$ satisfies
 
-(C) is false: take $A = ( 0 , 1 ) \cup \QQ$
+$$
+m(A)\leq\sum_{n=1}^\infty m\left(\left(q_n-\frac{1}{2^{n+1}},q_n+\frac{1}{2^{n+1}}\right)\right)=\sum_{n=1}^\infty\frac{1}{2^n}=1,
+$$
 
-(D) is false: take $A = ( 0 , 1 ) \cup \QQ$
+whereas $m(\RR)=+\infty$. Thus $A\neq\RR$. Replacing $1/2^{n+1}$ by $\varepsilon/2^{n+1}$ shows that $\QQ$, and any countable set, has Lebesgue measure zero.
 
-(E) is false: take $A = \QQ$
+(B) is true: a closed set containing $\QQ$ contains its closure $\RR$.
 
-(B) is true: if A is closed and contains the rationals, then it contains the closure of the rationals which is R, thus $A = \RR$
+(C) is false: take $A=(0,1)\cup\QQ$.
+
+(D) is false: the same $A=(0,1)\cup\QQ$ is not open, since $2\in A$ but no interval around $2$ lies in $A$.
+
+(E) is false: take $A=\QQ$, which is not closed.
 :::

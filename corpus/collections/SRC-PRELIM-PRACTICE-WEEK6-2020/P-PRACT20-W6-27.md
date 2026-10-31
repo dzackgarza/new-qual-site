@@ -6,7 +6,9 @@ title: Tracing the Euclidean algorithm and two integer loops
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Algorithms
+  - Euclidean Algorithm
 relations: []
 review: draft
 ---

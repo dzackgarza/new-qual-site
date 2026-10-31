@@ -6,7 +6,9 @@ title: The nested radical $\sqrt{x+\sqrt{x+\sqrt{x+\cdots}}}$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Sequences
+  - Monotone Convergence
 relations: []
 review: draft
 ---
@@ -21,40 +23,41 @@ What happens as $x \searrow 0$?
 :::
 
 ::: {.solution}
-We prove that $a _ { n }$ is increasing an bounded above, and thus converges by the monotone convergence theorem.
-Note that $a _ { 1 } = { \sqrt { x + { \sqrt { x } } } } \geq { \sqrt { x } } = a _ { 0 }$ . Now assume that $a _ { n } \geq a _ { n - 1 }$ for some $n \in \NN$ . Then
+Let $L=\frac{1+\sqrt{1+4x}}{2}$. We prove that $(a_n)$ is increasing and bounded above by $L$, so it converges by the monotone convergence theorem.
+
+First, $a_1=\sqrt{x+\sqrt x}\geq\sqrt x=a_0$. If $a_n\geq a_{n-1}$ for some $n$, then
 
 $$
-x + a _ { n } \geq x + a _ { n - 1 } \implies \sqrt { x + a _ { n } } \geq \sqrt { x + a _ { n - 1 } } \implies a _ { n + 1 } \geq a _ { n } .
+x+a_n\geq x+a_{n-1}\implies\sqrt{x+a_n}\geq\sqrt{x+a_{n-1}}\implies a_{n+1}\geq a_n.
 $$
 
-This induction proves that $a _ { n }$ is an increasing sequence.√ √
+By induction, $(a_n)$ is increasing.
 
-Next, we see that $\begin{array} { r } { a _ { 0 } = \sqrt { x } = \frac { \sqrt { 4 x } } { 2 } \le \frac { 1 + \sqrt { 1 + 4 x } } { 2 } } \end{array}$ . Again, assume that $\textstyle a _ { n } \leq { \frac { 1 + { \sqrt { 1 + 4 x } } } { 2 } }$ for some $n \in \NN$ . Note that
-
-$$
-\left( { \frac { 1 + { \sqrt { 1 + 4 x } } } { 2 } } \right) ^ { 2 } = { \frac { 1 + 2 { \sqrt { 1 + 4 x } } + 1 + 4 x } { 4 } } = x + { \frac { 1 + { \sqrt { 1 + 4 x } } } { 2 } } .
-$$
-
-Then
+Next, $a_0=\sqrt x=\frac{\sqrt{4x}}{2}\leq L$. Note that
 
 $$
-a _ { n + 1 } = { \sqrt { x + a _ { n } } } \leq { \sqrt { x + { \frac { 1 + { \sqrt { 1 + 4 x } } } { 2 } } } } = { \sqrt { \left( { \frac { 1 + { \sqrt { 1 + 4 x } } } { 2 } } \right) ^ { 2 } } } = { \frac { 1 + { \sqrt { 1 + 4 x } } } { 2 } } .
+L^2=\frac{1+2\sqrt{1+4x}+1+4x}{4}=x+L.
 $$
 
-This shows by induction that $a _ { n }$ is bounded above.
-Hence there is a limit $a _ { n }  a \in \RR$ . Taking the limit on both sides of the recursive relationship, we see
+If $a_n\leq L$ for some $n$, then
 
 $$
-a = { \sqrt { x + a } } \implies a ^ { 2 } - a - x = 0 \implies a = { \frac { 1 \pm { \sqrt { 1 + 4 x } } } { 2 } } .
+a_{n+1}=\sqrt{x+a_n}\leq\sqrt{x+L}=\sqrt{L^2}=L.
 $$
 
-Note that each member of the sequence is positive and thus the limit is positive, and so we can ignore the false root.
-This shows that for $x > 0$ ,
+By induction, $(a_n)$ is bounded above by $L$.
+
+Hence $a_n\to a$ for some $a\in\RR$. Taking the limit on both sides of $a_{n+1}^2=x+a_n$ gives
 
 $$
-{ \sqrt { x + { \sqrt { x + { \sqrt { x + \cdots } } } } } } = { \frac { 1 + { \sqrt { 1 + 4 x } } } { 2 } } .
+a^2=x+a\implies a^2-a-x=0\implies a=\frac{1\pm\sqrt{1+4x}}{2}.
 $$
 
-However, this formula fails for $x = 0$ . If $x = 0$ , then $a _ { n } = 0$ for all n and thus the limit is zero, which does not agree with the limit of the above formula as x $\searrow 0$
+Every $a_n$ is at least $a_0=\sqrt x>0$, so $a>0$, and the negative root is excluded. Thus for $x>0$,
+
+$$
+\sqrt{x+\sqrt{x+\sqrt{x+\cdots}}}=\frac{1+\sqrt{1+4x}}{2}.
+$$
+
+As $x\searrow0$ this value tends to $1$. If instead $x=0$, then $a_n=0$ for all $n$ and the limit is $0$. So the value of the nested radical is not continuous at $x=0$.
 :::

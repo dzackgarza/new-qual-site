@@ -6,13 +6,14 @@ title: Total variation of a piecewise linear function
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Bounded Variation
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-Let $f$ be the function whose graph is pictured on the right.
+Let $f$ be the function whose graph is pictured below.
 Find the supremum of the set
 $$
 \left\{ \sum_{k=1}^{n} \abs{f(x_{k}) - f(x_{k-1})} : \{x_{k}\}_{k=0}^{n} \text{ is a partition of } [0, 12] \right\}.
@@ -22,27 +23,23 @@ $$
 :::
 
 ::: {.solution}
-This notation is a bit hard to parse, but what we are really measuring when taking this supremum is the variation in $f ;$ i.e., how much f changes.
-Since the extreme points are roughly $f ( 0 ) = 1 , f ( 2 ) = 3 , f ( 5 ) = - 2 , f ( 8 ) = 5$ and $f ( 1 2 ) = 3$ , the total change in $f$ is
-
-Problem 6
+The supremum is the total variation of $f$ on $[0,12]$. The graph is monotone between its turning points, which read from the figure as $f(0)=1$, $f(2)=3$, $f(5)=-2$, $f(8)=5$ and $f(12)=3$. On a monotone piece the sum telescopes to the change in $f$, so the total variation is
 
 $$
-\abs{ 3 - 1 } + \abs{ ( - 2 ) - 3 } + \abs{ 5 - ( - 2 ) } + \abs{ 3 - 5 } = 2 + 5 + 7 + 2 = 1 6 ,
+\abs{3-1}+\abs{(-2)-3}+\abs{5-(-2)}+\abs{3-5}=2+5+7+2=16,
 $$
 
-so 16 is the supremum of the set.
+and $16$ is the supremum of the set.
 
-As an aside, for any function $f : [ a , b ]  \RR$ one can define
-
-$$
-T V ( f , [ a , b ] ) : = \operatorname* { s u p } \left\{ \sum _ { k = 1 } ^ { n } \abs{ f ( x _ { k } ) - f ( x _ { k - 1 } ) } : \{ x _ { k } \} _ { k = 0 } ^ { n } { \mathrm { ~ i s ~ a ~ p a r t i t i o n ~ o f ~ } } [ a , b ] \right\} .
-$$
-
-For many such f this number will be $+ \infty$ , but one defines the set $B V ( [ a , b ] )$ to be the functions $f$ such that $T V ( f , [ a , b ] ) < \infty ;$ these are the functions of bounded (pointwise) variation.
-And one can prove that if $f : [ a , b ]  \RR$ is continuously differentiable, then
+For any $f\colon[a,b]\to\RR$ one defines
 
 $$
-T V ( f , [ a , b ] ) = \int _ { a } ^ { b } \abs{ f ^ { \prime } ( x ) } d x .
+TV(f,[a,b]):=\sup\left\{\sum_{k=1}^n\abs{f(x_k)-f(x_{k-1})}:\{x_k\}_{k=0}^n\text{ is a partition of }[a,b]\right\}.
+$$
+
+For many $f$ this number is $+\infty$. The set $BV([a,b])$ consists of the $f$ with $TV(f,[a,b])<\infty$; these are the functions of bounded variation. If $f\colon[a,b]\to\RR$ is continuously differentiable, then
+
+$$
+TV(f,[a,b])=\int_a^b\abs{f'(x)}\,dx.
 $$
 :::

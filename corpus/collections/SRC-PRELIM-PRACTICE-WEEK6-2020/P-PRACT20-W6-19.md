@@ -6,7 +6,9 @@ title: Probability that the first player tosses heads first
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Probability
+  - Geometric Series
 relations: []
 review: draft
 ---
@@ -17,27 +19,23 @@ What is the probability that the first player wins?
 :::
 
 ::: {.solution}
-Let H denote heads and T denote tails.
-If the first player wins, the sequence of events must be one of
+Write $H$ for heads and $T$ for tails. The first player wins exactly on the toss sequences
 
 $$
-\{ H , T T H , T T T T H , T T T T T T . . . \} .
+H,\quad TTH,\quad TTTTH,\quad\dots,
 $$
 
-That is, there must be 2n tails tossed and then a heads, where $n = 0 , 1 , 2 , \ldots$ Since the tosses are independent and the coin is fair, the probability of one such event occuring is $\left( { \frac { 1 } { 2 } } \right) ^ { 2 n } \cdot \left( { \frac { 1 } { 2 } } \right)$ . Summing over all $n ,$ we find that player one wins with probability
+that is, $2n$ tails followed by heads, for $n=0,1,2,\dots$. Since the tosses are independent and the coin is fair, such a sequence has probability $\left(\frac12\right)^{2n}\cdot\frac12$. Summing over $n$, the first player wins with probability
 
 $$
-\sum _ { n = 0 } ^ { \infty } \left( { \frac { 1 } { 2 } } \right) ^ { 2 n } \cdot \left( { \frac { 1 } { 2 } } \right) = { \frac { 1 } { 2 } } \sum _ { n = 0 } ^ { \infty } { \frac { 1 } { 4 ^ { n } } } = { \frac { 1 } { 2 } } \cdot { \frac { 1 } { 1 - 1 / 4 } } = { \frac { 2 } { 3 } } .
+\sum_{n=0}^\infty\left(\frac12\right)^{2n}\cdot\frac12=\frac12\sum_{n=0}^\infty\frac{1}{4^n}=\frac12\cdot\frac{1}{1-1/4}=\frac23.
 $$
 
-There is another clever way to reason through this problem without doing the computation.
-Let $p$ denote the probability that player one wins.
-Since the game is essentially reset if the first two tosses are tails, we have
+Alternatively, let $p$ be the probability that the first player wins. If the first two tosses are tails, the game starts again, so
 
 $$
-p = { \frac { 1 } { 2 } } + { \frac { 1 } { 4 } } p
+p=\frac12+\frac14p,
 $$
 
-where $\begin{array} { l } { { \frac { 1 } { 2 } } } \end{array}$ represents the probability that player one wins on the first toss and ${ \scriptstyle { \frac { 1 } { 4 } } } p$ represents the probability of reaching the reset point and player one winning thereafter.
-Solving this gives $p = 2 / 3$ •
+where $\frac12$ is the probability that the first player wins on the first toss and $\frac14p$ is the probability of reaching the restart and then winning. Solving gives $p=2/3$.
 :::

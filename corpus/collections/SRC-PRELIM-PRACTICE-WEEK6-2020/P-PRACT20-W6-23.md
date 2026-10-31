@@ -6,7 +6,9 @@ title: Negating bijectivity of a function
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Logic
+  - Functions
 relations: []
 review: draft
 audit:
@@ -27,18 +29,15 @@ R: There exist $x_1, x_2 \in X$ with $x_1 \neq x_2$ and $f(x_1) = f(x_2)$
 :::
 
 ::: {.solution}
-P is just the statement that f is a function.
-Q is the statement that $f$ is surjective.
-R is the statement that $f$ is not injective.
-Thus
+$P$ says that $f$ is defined at every point of $X$, which holds for any function. $Q$ says that $f$ is surjective, and $R$ says that $f$ is not injective. Thus
 
 $$
-f { \mathrm { ~ i s ~ b i j e c t i v e } } \quad \Longleftrightarrow \quad { \mathrm { ~ Q ~ a n d ~ } } ( \lnot \mathrm { R } ) .
+f\text{ is bijective}\iff Q\text{ and }(\lnot R),
 $$
 
-So the negation is
+so the negation is
 
 $$
-f { \mathrm { ~ i s ~ n o t ~ b i j e c t i v e } } \quad \Longleftrightarrow \quad ( \lnot \mathrm { Q } ) { \mathrm { ~ o r ~ } } \mathrm { R } .
+f\text{ is not bijective}\iff(\lnot Q)\text{ or }R.
 $$
 :::

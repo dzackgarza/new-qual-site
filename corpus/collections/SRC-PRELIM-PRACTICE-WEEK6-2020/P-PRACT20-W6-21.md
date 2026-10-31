@@ -6,7 +6,9 @@ title: Surjections from a $4$-element set onto a $3$-element set
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Combinatorics
+  - Inclusion-Exclusion
 relations: []
 review: draft
 audit:
@@ -21,7 +23,7 @@ How many surjective functions are there from $\{1, 2, 3, 4\}$ to $\{1, 2, 3\}$?
 :::
 
 ::: {.solution}
-Since there are 3 choices for the image of each of the four elements, there are $3 ^ { 4 } = 8 1$ total functions from {1, 2, 3, 4} to {1, 2, 3}. It is easier to count the functions that are not surjective.
-If a function is not surjective, then it maps {1, 2, 3, 4} into {1, 2}, {1, 3} or {2, 3}. There are three choices for which set to map into and there are $2 ^ { 4 }$ maps in each case, thus at first glance it seems there are 48 total maps.
-However, we have double counted the constant maps which send the set to a single point (the map $x \mapsto 1$ for all $x \in \{ 1 , 2 , 3 , 4 \}$ was counted as a map from {1, 2, 3, 4} into {1, 2} and counted again as a map from {1, 2, 3, 4} into {1, 3}). Adjusting for this double counting, we find there are 45 non-surjective maps and thus $8 1 - 4 5 = 3 6$ surjective maps.
+There are $3$ choices for the image of each of the four elements, so there are $3^4=81$ functions $\{1,2,3,4\}\to\{1,2,3\}$. We count the functions that are not surjective.
+
+A non-surjective function maps into one of $\{1,2\}$, $\{1,3\}$, $\{2,3\}$. There are $2^4=16$ maps into each, giving $48$, but each of the $3$ constant maps is counted twice (for example $x\mapsto1$ maps into both $\{1,2\}$ and $\{1,3\}$). So there are $48-3=45$ non-surjective maps and $81-45=36$ surjective maps.
 :::

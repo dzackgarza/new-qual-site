@@ -6,7 +6,8 @@ title: Standard deviation of the density $\frac34(1-x^2)$ on $[-1,1]$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Probability
 relations: []
 review: draft
 ---
@@ -17,29 +18,29 @@ What is the standard deviation of $X$?
 :::
 
 ::: {.solution}
-Recall, the variance of X if given by
+The variance of $X$ is
 
 $$
-\operatorname { V a r } ( X ) = E ( X ^ { 2 } ) - E ( X ) ^ { 2 }
+\operatorname{Var}(X)=E(X^2)-E(X)^2,
 $$
 
-and since X has distribution function $f ,$ we see that
+and since $X$ has density $f$,
 
 $$
-E ( g ( X ) ) = \int _ { \RR } g ( x ) f ( x ) d x .
+E(g(X))=\int_\RR g(x)f(x)\,dx.
 $$
 
 Thus
 
 $$
-E ( X ) = \int _ { \RR } x f ( x ) d x = { \frac { 3 } { 4 } } \int _ { - 1 } ^ { 1 } ( x - x ^ { 3 } ) d x = 0 { \mathrm { ~ s i n c e ~ t h e ~ i n t e g r a n d ~ i s ~ o d d } } .
+E(X)=\int_\RR xf(x)\,dx=\frac34\int_{-1}^1(x-x^3)\,dx=0,
 $$
 
-Next,
+since the integrand is odd. Next,
 
 $$
-E ( X ^ { 2 } ) = \int _ { \RR } x ^ { 2 } f ( x ) d x = { \frac { 3 } { 4 } } \int _ { - 1 } ^ { 1 } ( x ^ { 2 } - x ^ { 4 } ) = { \frac { 3 } { 4 } } \left( { \frac { 2 } { 3 } } - { \frac { 2 } { 5 } } \right) = { \frac { 3 } { 4 } } \cdot { \frac { 4 } { 1 5 } } = { \frac { 1 } { 5 } } .
+E(X^2)=\int_\RR x^2f(x)\,dx=\frac34\int_{-1}^1(x^2-x^4)\,dx=\frac34\left(\frac23-\frac25\right)=\frac34\cdot\frac{4}{15}=\frac15.
 $$
 
-The standard deviation is the square root of the variance so $\begin{array} { r } { \mathrm { S t D e v } ( X ) = \frac { 1 } { \sqrt { 5 } } } \end{array}$
+The standard deviation is the square root of the variance, so it equals $\frac{1}{\sqrt5}$.
 :::

@@ -6,7 +6,9 @@ title: The discrete metric on $\RR$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Metric Spaces
+  - Discrete Topology
 relations: []
 review: draft
 audit:
@@ -33,9 +35,9 @@ Let $d(x, y) = \begin{cases} 0, & x = y, \\ 1, & x \neq y. \end{cases}$ Which of
 :::
 
 ::: {.solution}
-This is the discrete metric which generates the discrete topology on R; thus every set is open.
-If every set is open, then every set is closed as well.
-Thus (A) and (B) are true.
+(A), (B) and (C) hold; (D) does not.
 
-For (C) and (D), consider any space X with two topologies $\tau _ { 1 } , \tau _ { 2 }$ Recall the identity $\iota :$ $( X , \tau _ { 1 } ) \to ( X , \tau _ { 2 } )$ is continuous iff $\iota ^ { - 1 } ( V ) \in \tau _ { 1 }$ whenever $V \in \tau _ { 2 }$ But $\iota ^ { - 1 } ( V ) = V$ Thus the identity is continuous iff $V \in \tau _ { 1 }$ whenever $V \in \tau _ { 2 }$ . rephrasing yet again, the identity is continuous iff $\tau _ { 2 } \subset \tau _ { 1 }$ which is true iff $\tau _ { 1 }$ is finer than $\tau _ { 2 }$ . The discrete topology is finer than any other topology on R so (D) is false while (C) is true.
+$d$ is the discrete metric: the ball of radius $1/2$ about $x$ is $\{x\}$, so every singleton is open and $d$ generates the discrete topology on $\RR$. Every set is open, so every set is also closed. Thus (A) and (B) hold.
+
+For (C) and (D), let $X$ carry two topologies $\tau_1,\tau_2$. The identity $\iota\colon(X,\tau_1)\to(X,\tau_2)$ is continuous iff $\iota^{-1}(V)=V\in\tau_1$ for every $V\in\tau_2$, that is, iff $\tau_2\subseteq\tau_1$. The discrete topology contains every topology on $\RR$, so (C) holds. The standard topology does not contain the open set $\{0\}$ of the discrete topology, so (D) fails.
 :::

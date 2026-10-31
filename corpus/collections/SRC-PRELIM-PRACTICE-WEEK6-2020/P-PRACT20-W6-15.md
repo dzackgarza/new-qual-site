@@ -6,7 +6,9 @@ title: Topology of the points of the unit square with an irrational coordinate
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Connectedness
+  - Path-Connectedness
 relations: []
 review: draft
 ---
@@ -15,23 +17,27 @@ review: draft
 Let $S \subset [0, 1] \times [0, 1]$ consist of all points $(x, y) \in [0, 1] \times [0, 1]$ such that $x$ or $y$ or both is irrational.
 Which of the following is true (with respect to the standard topology on $\RR^{2}$)?
 
-(A) $S$ is open (B) $S$ is closed (C) $S$ is connected (D) $S$ is totally disconnected (E) $S$ is compact
+(A) $S$ is open
+
+(B) $S$ is closed
+
+(C) $S$ is connected
+
+(D) $S$ is totally disconnected
+
+(E) $S$ is compact
 :::
 
 ::: {.solution}
-(A) is false.
-By density of $\QQ ^ { 2 }$ in $\RR ^ { 2 }$ , any open ball centered at a point in S contains a point with rational coordinates which is not in S.
+Only (C) is true.
 
-(B) is false.
-By density of $( \RR \setminus \QQ ) ^ { 2 }$ in $\RR ^ { 2 }$ , S doesn’t contain all its limit points since we can take a sequence of points in $S$ converging to a point with rational coordinates which is not in S.
+(A) is false. By density of $\QQ^2$ in $\RR^2$, every open ball centred at a point of $S$ contains a point with rational coordinates, which is not in $S$.
 
-(E) is false.
-S is not compact since it is not closed.
+(B) is false. By density of $(\RR\setminus\QQ)^2$, there is a sequence of points of $S$ converging to a point of $[0,1]^2$ with rational coordinates, which is not in $S$.
 
-(C) is true.
-In fact this set is path-connected.
-Consider for any $( x , y ) \in S .$ , one of x or $y$ is irrational.
-If x is irrational then the vertical line $V _ { x } = \{ ( x , t ) : t \in [ 0 , 1 ] \}$ is contained in S. Then we can travel along this line to the point $( x , \pi / 4 )$ . But the entire horizontal line $H _ { \pi / 4 } = \{ ( t , \pi / 4 )$ : $t \in [ 0 , 1 ] \}$ is contained in S and so we can then travel along this line to $( \pi / 4 , \pi / { \dot { 4 } } )$ . Likewise, if y is irrational, we can travel along the horizontal line $H _ { y }$ to the point $( \pi / 4 , y )$ and then along the vertical line $V _ { \pi / 4 }$ to the point $( \pi / 4 , \pi / 4 )$ . This shows that any point can be connected by a continuous path to $( \pi / 4 , \pi / 4 )$ , but then by composing paths, any two points can be connected to each other by a continuous path.
+(E) is false, since $S$ is not closed.
 
-(D) is false since (C) is true.
+(C) is true; in fact $S$ is path-connected. Let $(x,y)\in S$. If $x$ is irrational, the vertical segment $V_x=\{(x,t):t\in[0,1]\}$ lies in $S$, so we can travel along it to $(x,\pi/4)$. The horizontal segment $H_{\pi/4}=\{(t,\pi/4):t\in[0,1]\}$ lies in $S$, so we can continue to $(\pi/4,\pi/4)$. If instead $y$ is irrational, travel along $H_y$ to $(\pi/4,y)$ and then along $V_{\pi/4}$ to $(\pi/4,\pi/4)$. So every point of $S$ is joined by a path to $(\pi/4,\pi/4)$, and composing paths joins any two points.
+
+(D) is false, since $S$ is connected and has more than one point.
 :::
