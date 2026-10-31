@@ -76,12 +76,20 @@ A cover is $n$-sheeted exactly when that index is $n$.
 :::
 
 ::: {.pf-step #finite-data}
-There are only finitely many based connected $n$-sheeted covers of $\Gamma$ up to isomorphism over $\Gamma$.
+There are only finitely many based connected $n$-sheeted covers of the rose $\Gamma$ up to isomorphism over $\Gamma$.
 
 ::: pf-proof
-Such a cover $\widetilde\Gamma$ is a graph with $n\abs{V(\Gamma)}$ vertices and $n\abs{E(\Gamma)}$ edges, because each vertex and each edge of $\Gamma$ has exactly $n$ preimages.
-A map of graphs from $\widetilde\Gamma$ to $\Gamma$ is determined by its values on the vertices and on the oriented edges, and each value is one of the finitely many vertices or oriented edges of $\Gamma$; the basepoint is one of the $n$ points over the basepoint of $\Gamma$.
-A based cover is determined up to isomorphism over $\Gamma$ by this finite list of choices, so there are only finitely many of them.
+Let $\Gamma$ be the rose with $r$ circles $a_1,\ldots,a_r$ and basepoint $v_0$, and let $p\colon\widetilde\Gamma\to\Gamma$ be a connected $n$-sheeted cover with a chosen point $\widetilde x_0$ over $v_0$.
+The fibre $F_0=p^{-1}(v_0)$ has $n$ elements; label them by $\{1,\ldots,n\}$ so that $\widetilde x_0$ receives the label $1$.
+Lifting the loop $a_i$ from a point of the fibre ends at a point of the fibre, and lifting it from different points gives a bijection $\sigma_i\colon F_0\to F_0$, because the lift of the reversed loop is the inverse map; so $\sigma_i\in S_n$.
+
+Conversely, let $(\sigma_1,\ldots,\sigma_r)\in S_n^r$.
+Form the graph with vertex set $\{1,\ldots,n\}$ and, for each $i$ and each $j$, one edge $e_{i,j}$ from $j$ to $\sigma_i(j)$ labelled $a_i$, and map it to $\Gamma$ by sending every vertex to $v_0$ and carrying $e_{i,j}$ around $a_i$.
+At every vertex there is exactly one outgoing and one incoming edge of each label, so this map is a covering.
+It is connected exactly when the $\sigma_i$ generate a transitive subgroup, and it is based because the vertex $1$ sits over $v_0$.
+
+These two constructions are inverse: lifting recovers the $\sigma_i$ from the cover, and the cover built from a tuple has that tuple as its monodromy, with two tuples giving isomorphic based covers only if they are equal.
+There are $\abs{S_n}^r=(n!)^r$ tuples, so there are only finitely many based connected $n$-sheeted covers of $\Gamma$.
 :::
 
 :::
@@ -100,8 +108,15 @@ By step [](#index-covers){.pf-ref} the subgroups of index $n$ are in bijection w
 If $G=F/N$ with $F$ free, then subgroups of $G$ of index $n$ correspond to subgroups $H$ of $F$ with $N\le H$ and $[F:H]=n$.
 
 ::: pf-proof
-The correspondence theorem for the quotient map $F\to F/N$ bijects the subgroups of $G$ with the subgroups $H$ of $F$ containing $N$, sending $H$ to $H/N$.
-For such an $H$ the third isomorphism theorem gives $[F/N:H/N]=[F:H]$, so $H/N$ has index $n$ in $G$ exactly when $H$ has index $n$ in $F$.
+The correspondence theorem for $F\to F/N=G$ bijects the subgroups of $G$ with the subgroups $H$ of $F$ containing $N$, sending $H$ to $H/N$.
+Fix such an $H$ and consider the map
+$$
+\varphi\colon F/H\longrightarrow G/(H/N),\qquad \varphi(gH)=(gN)(H/N).
+$$
+It is well defined: if $gH=g'H$ then $g'^{-1}g\in H$, hence $(g'N)^{-1}(gN)=g'^{-1}gN\in H/N$ and the two cosets of $H/N$ agree.
+It is injective, with the same implication read backwards, and it is surjective because every coset of $H/N$ in $G$ is $(gN)(H/N)$ for some $g\in F$.
+So $\varphi$ is a bijection between the cosets of $H$ in $F$ and the cosets of $H/N$ in $G$, which gives $[G:H/N]=[F:H]$ without any normality assumption on $H$.
+Hence $H/N$ has index $n$ in $G$ exactly when $H$ has index $n$ in $F$.
 :::
 
 :::

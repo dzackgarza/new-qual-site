@@ -17,10 +17,12 @@ open tasks. A prior tick alone is not evidence of that condition.
 | `ad-text-mun00` | none | Do the same for `SRC-TEXT-MUN00`. |
 | `ad-text-ss03-gaps` | none | Compare `SRC-TEXT-SS03` with the book and add missing cards, one item at a time: chapter 2 problems 4–5; chapter 4 problems 3*–4*; chapter 5 exercises 15–17; chapter 7 exercises 5–12; chapter 8 problems 4–9; chapter 9 problems 2–3; chapter 10 problem 1 and problems 5 onward. Verify existing-card identity before adding each card. |
 | `ad-text-hk71-locators` | none | Check every `SRC-TEXT-HK71` appearance locator in sections 7.1–10.4 against the book; correct each mismatch. |
-| `audited-deployment` | `ad-text-hart77`, `ad-text-hun74`, `ad-text-smi`, `ad-text-hat02`, `ad-text-mun00`, `ad-text-ss03-gaps`, `ad-text-hk71-locators` | Finish the reading checklist and all repairs; only then close this node. |
+| `ad-source-gaps-nus` | none | Recover the NUS 1970 examination papers, or leave `SRC-NUS-CA-1970-SPRING` and `SRC-NUS-RA-1970-SPRING` marked as imported-only in their provenance and title. A dataset that answers *what the import said* does not answer *what the examination asked*. |
+| `audited-deployment` | `ad-text-hart77`, `ad-text-hun74`, `ad-text-smi`, `ad-text-hat02`, `ad-text-mun00`, `ad-text-ss03-gaps`, `ad-text-hk71-locators`, `ad-source-gaps-nus` | Finish the reading checklist and all repairs; only then close this node. |
 | `unsolved-contribution` | none | Continue issue #2 by selecting, reading, proving, reviewing, and committing each unsolved problem card in source order. |
 
-`ad-source-gaps` is closed, each of its four questions settled from a source document.
+`ad-source-gaps` is closed for three of its four questions, each settled from a source document;
+the fourth, the NUS 1970 collections, is not settled and is now the open node `ad-source-gaps-nus`.
 The `SRC-MATH4100-6100-2020` appearance of `P-AZOFF-A05` adds a part (b), an example of a
 differentiable function that is not uniformly differentiable: the card now states both
 parts and proves them.
@@ -28,37 +30,33 @@ The five truncated MH07 statements (January 2005 problems 3, 8, 9, 10 and Januar
 problem 9) were read against the University of Utah qualifying-exam question bank, which
 prints all five in full at `quals.math.utah.edu/exams/257/` and `.../258/`, and each card
 now carries that citation.
-The NUS 1970 collections' witness is make-me-a-qual `Combined_Questions.yaml` at revision
-`6190e0ee`, whose sha256 is the one `sources/mmaq-source.yaml` records; the examination
-papers themselves are in no reachable archive, which is recorded in
-[COMPLAINTS.md](COMPLAINTS.md) together with the correction that the dataset's
-`year: 1970` is a year and not its unknown-year sentinel.
+The NUS 1970 question is *not* settled: make-me-a-qual `Combined_Questions.yaml` at revision
+`6190e0ee`, whose sha256 matches `sources/mmaq-source.yaml`, is the provenance of the imported
+data, not an independent examination source, and no NUS 1970 examination paper is in the
+repository or in a reachable archive. That unresolved source question is recorded in
+[COMPLAINTS.md](COMPLAINTS.md) and tracked as `ad-source-gaps-nus` below; the three other
+`ad-source-gaps` questions were settled from documents.
 “Theorem 6.1” of RA-WORKSHOP D7-W3 is that sheet's own numbering for [Rud76, Thm. 7.12],
 the continuity of a uniform limit of continuous functions.
 
-`ad-text-hat02` is read through §1.B against the book itself
-(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`, §1.1 p. 38, §1.2 pp. 52–55, §1.3 pp. 79–83).
-§1.1: all 20 statements compared and the twelve solved cards' proofs read; `E-HAT-1.1-17` repaired.
-§1.2: all 22 statements compared and every one of the 22 proofs read, each card carrying the review
-event; three closing steps that only named earlier steps (`E-HAT-1.2-12`, `-14`, `-16`) now state the
-argument they rest on, and `E-HAT-1.2-22` is restructured into one proof with its two parts as the
-top-level steps.
-§1.3: all 33 statements compared, including the bracketed hint on exercise 9, which the card already
-carried. Every proof is examined: ten line by line (`E-HAT-1.3-1`, `-2`, `-3`, `-5`, `-9`, `-15`,
-`-17`, `-20`, `-28`, `-30`) and the other twenty-three at the level of their step claims, openings and
-closing steps, which their review events say in those words.
-§1.A and §1.B: all 23 statements compared with pp. 83–95 and all agree with the book, including the
-bracketed notes. Every proof is examined. Read line by line: `E-HAT-1.A-1`, `-2`, `-3`, `-4`, `-5`,
-`-6`, `-7`, `-8`, `-9`, `-10`, `-11`, `-12`, `-13`, `-14`, `E-HAT-1.B-1`, `-2`, `-3`, `-4`; examined at
-the level of preamble, step claims and construction: `E-HAT-1.B-5`, `-6`, `-7`, `-8`, `-9`, whose
-review notes say so. Four proofs were repaired rather than only logged: `E-HAT-1.A-8` rewritten from
-one-line fragments, and the closing steps of `E-HAT-1.A-9`, `-12` and `E-HAT-1.B-2`.
-§2.1: all 31 statements compared with the printed exercises and each matches one-to-one. Two
-defects repaired: the simplex vertices were written with the Greek letter `\nu` instead of `v` in
-`E-HAT-2.1-1`, `-2`, `-6` and `E-HAT-2.2-16`, and `E-HAT-2.1-2` had dropped the word "order-preserving"
-from its edge identifications. The statements are read; the proofs of `E-HAT-2.1-1` through `-17` are read (with `-6`, `-8`, `-10`
-and `-17(b)` read at the level their review notes describe) and the other 14 are unread.
-Unread entirely: the proofs of §2.1 onward, that is every proof in chapters 2, 3 and 4.
+`ad-text-hat02` is partly read, against the book itself
+(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §2.1; proofs are
+read for §1.1, §1.2, §1.A, §1.B-1..-4 and §2.1-1..-17. Exact scope, with no section counted as read
+beyond it:
+§1.1: 20 statements compared, the twelve solved proofs read line by line, `E-HAT-1.1-17` repaired.
+§1.2: 22 statements compared, all 22 proofs read line by line; `E-HAT-1.2-12`, `-14`, `-16` closing
+steps repaired, `E-HAT-1.2-22` restructured into one proof and its subcomplex framing corrected.
+§1.3: 33 statements compared. Proofs read line by line in `E-HAT-1.3-1`, `-2`, `-3`, `-5`, `-9`,
+`-15`, `-17`, `-20`, `-28`, `-30`; the other 23 proofs are reviewed only at the level of their step
+claims, openings and closing steps, as each review note says. They are *not* line-by-line reads.
+§1.A: 14 statements compared, all 14 proofs read line by line; `E-HAT-1.A-8` rewritten twice, once from
+fragments and once to encode covers by monodromy permutations and to compare indices by an explicit
+coset bijection; closing steps of `-9` and `-12` repaired.
+§1.B: 9 statements compared; proofs `-1` .. `-4` read line by line, `-5` .. `-9` reviewed only at the
+level of their claims, as their notes say.
+§2.1: 31 statements compared; proofs `-1` .. `-17` read, with `-6`, `-8`, `-10` and `-17(b)` as their
+notes describe. Proofs `-18` .. `-31` are unread.
+Unread entirely: §2.2 onward, that is every proof in chapters 2, 3 and 4 beyond §2.1.
 
 ## Fast local checks and complete CI acceptance
 

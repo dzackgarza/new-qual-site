@@ -28,7 +28,19 @@ audit:
   by: claude
   date: 2026-10-31
   note: >-
-    Read the complex $X_1=T\cup\bigcup_iR_i$, the cyclic word $x_ix_jx_i^{-1}x_k^{-1}$ on each square, and the abelianization. The two parts now sit in one proof as its top-level steps, with the old run-in labels and the second `pf` block removed, and the closing steps of (b) state their arguments instead of naming earlier steps.
+    Read the complex $X_0=T\cup\bigcup_iR_i$, the cyclic word $x_ix_jx_i^{-1}x_k^{-1}$ on each square, and the abelianization. The two parts now sit in one proof as its top-level steps, with the old run-in labels and the second `pf` block removed, and the closing steps of (b) state their arguments instead of naming earlier steps.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Corrected the framing of the subcomplex. $T$ and the strips are rectangles, so
+    $T\cup\bigcup_iR_i$ is two-dimensional and is not a 1-skeleton; it is now
+    written $X_0$ and described as the subcomplex before the squares are attached,
+    with $X$ obtained from it by attaching one square per crossing. The collapse
+    argument is spelled out: after collapsing the table, each strip becomes a
+    rectangle with both long edges identified to the basepoint, which is the union
+    of two triangles along a transverse segment, hence a disk that retracts onto
+    the image circle of $x_i$.
 ---
 
 ::: {.problem}
@@ -47,8 +59,13 @@ Finally, over each arc $\beta_\ell$ put a square $S_\ell$, bent downward along i
 :::
 
 ::: {.solution}
-Write $X$ for the two-dimensional complex of the exercise: $X_1=T\cup\bigcup_iR_i$ is its $1$-skeleton, and one square $S_\ell$ is attached at each crossing $\beta_\ell$.
-Fix an orientation of $K$ and orient each circle $x_i$ of $X_1$ so that it passes under $K$ in the direction given by the right-hand rule with respect to that orientation.
+Write
+$$
+X_0=T\cup\bigcup_iR_i
+$$
+for the subcomplex built from the table and the strips before any square is attached; it is two-dimensional, since $T$ is a rectangle and each strip $R_i$ is a rectangle glued to $T$ along its two long edges.
+The full complex $X$ is obtained from $X_0$ by attaching one square $S_\ell$ at each crossing $\beta_\ell$, along four edges that lie in the strips.
+Fix an orientation of $K$ and orient each loop $x_i$ so that it passes under $K$ in the direction given by the right-hand rule with respect to that orientation.
 
 ::: pf
 
@@ -58,19 +75,20 @@ Fix an orientation of $K$ and orient each circle $x_i$ of $X_1$ so that it passe
 ::: pf-proof
 
 ::: {.pf-step #p1-1}
-The subcomplex $X_1=T\cup\bigcup_i R_i$ is homotopy equivalent to a wedge of circles, one circle $x_i$ for each strip, where $x_i$ starts on $T$, crosses $R_i$ once from one long edge to the other, and returns along $T$.
+The subcomplex $X_0=T\cup\bigcup_i R_i$ is homotopy equivalent to a wedge of circles, one circle $x_i$ for each strip, where $x_i$ starts on $T$, crosses $R_i$ once from one long edge to the other, and returns along $T$.
 
 ::: pf-proof
-The table $T$ is a disk, hence contractible, so collapsing it gives a homotopy equivalence $X_1\to X_1/T$.
-Write $R_i=[0,1]\times[0,1]$ with long edges $[0,1]\times\{0\}$ and $[0,1]\times\{1\}$ on $T$.
-In $X_1/T$ the strip becomes $[0,1]\times[0,1]$ with both long edges collapsed to the basepoint; this deformation retracts onto the image of a transverse segment $\{1/2\}\times[0,1]$, which is a circle.
-The strips meet $T$ only along their long edges, so these retractions combine to a deformation retraction of $X_1/T$ onto a wedge of circles, and the circle for $R_i$ is the image of $x_i$.
+The table $T$ is a disk, hence contractible, so the quotient map $X_0\to X_0/T$ is a homotopy equivalence.
+Write $R_i=[0,1]\times[0,1]$ with long edges $[0,1]\times\{0\}$ and $[0,1]\times\{1\}$ glued to $T$.
+In $X_0/T$ the strip becomes the rectangle with both long edges identified to the basepoint, which is a disk: it is the union of the two triangles cut out by the transverse segment $\{1/2\}\times[0,1]$, glued along that segment.
+That disk deformation retracts onto the image of the transverse segment, whose two endpoints are both the basepoint, so the image is a circle.
+The strips meet $T$ only along their long edges, so these retractions combine to a deformation retraction of $X_0/T$ onto a wedge of circles, and the circle for $R_i$ is the image of $x_i$.
 :::
 
 :::
 
 ::: {.pf-step #p1-2}
-In $\pi_1(X_1)$ the four edges of a square $S_\ell$ represent, in cyclic order, $x_i$, $x_j$, $x_i^{-1}$, $x_k^{-1}$, after a choice of paths in $T$ to the basepoint.
+In $\pi_1(X_0)$ the four edges of a square $S_\ell$ represent, in cyclic order, $x_i$, $x_j$, $x_i^{-1}$, $x_k^{-1}$, after a choice of paths in $T$ to the basepoint.
 
 ::: pf-proof
 A short edge of $R_j$ is a transverse segment of $R_j$ with endpoints on $T$, so with a path in $T$ it is homotopic to $x_j^{\pm1}$; the same holds for the short edge of $R_k$.
@@ -85,8 +103,8 @@ The under-arcs $\alpha_j$ and $\alpha_k$ are consecutive along the oriented knot
 $\pi_1(\RR^3-K)\cong\langle x_1,\ldots,x_m\mid x_ix_jx_i^{-1}=x_k\text{ for each }S_\ell\rangle$.
 
 ::: pf-proof
-$\RR^3-K$ deformation retracts onto $X$, and $X$ is obtained from $X_1$ by attaching one $2$-cell $S_\ell$ for each crossing.
-By step [](#p1-1){.pf-ref}, $\pi_1(X_1)$ is free on the $x_i$.
+$\RR^3-K$ deformation retracts onto $X$, and $X$ is obtained from $X_0$ by attaching one square $S_\ell$ for each crossing.
+By step [](#p1-1){.pf-ref}, $\pi_1(X_0)$ is free on the $x_i$.
 Attaching a $2$-cell adds its attaching word as a relator, and by step [](#p1-2){.pf-ref} the attaching word of $S_\ell$ is $x_ix_jx_i^{-1}x_k^{-1}$ up to cyclic permutation, which is the relation $x_ix_jx_i^{-1}=x_k$.
 :::
 

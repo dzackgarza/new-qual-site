@@ -103,9 +103,9 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Searched:** the repository for a NUS or Singapore document (`grep -a -ril singapore assets wiki corpus`, `find . -iname '*singapore*' -o -iname '*nus*1970*'`), the attachment ledger, and the public NUS qualifying-exam archive at `zr9558.com/nationaluniversityofsingapore/phd-qe-papers/analysis/`.
   **Found:** the dataset rows only, and a public archive whose complex- and real-analysis papers begin with the 2000–2001 academic year.
-  **Conclusion:** no examination paper for these twenty problems exists in the repository or in the reachable archive; the dataset is the only witness.
+  **Conclusion:** no examination paper for these twenty problems exists in the repository or in the reachable archive. The dataset is the provenance of the imported statements, which is a different thing from an examination source: it answers what the import said, not what the examination asked.
   **Confidence:** high for absence from retained bytes and from that archive; high for the dataset's identity, which the hash fixes.
-  **Gaps:** nothing establishes where the dataset's own metadata came from. Its `Complex_Analysis` rows carry question numbers 4–8 twice over, so the label merges two sittings whose papers are not separated anywhere.
+  **Gaps:** nothing establishes where the dataset's own metadata came from, and no document attests that the twenty statements were ever set as an examination at NUS in 1970. Its `Complex_Analysis` rows carry question numbers 4–8 twice over, so the label merges two sittings whose papers are not separated anywhere.
 
 - **Impact and owner:** every statement in the two collections, and the site's claim that these are NUS 1970 papers.
   The statements themselves are unaffected: all twenty were read against the dataset and agree with it, apart from the two garbles repaired on `P-R623W` and `P-MMAQ-RML5AHHINX`.
@@ -117,7 +117,7 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** both collections now carry a `provenance:` href pinning the dataset at that revision, and `source.date` records the academic term the dataset gives (spring 1970) instead of `unknown`.
   Where a card renumbers the source's parts, its entry carries the source letters as a comment, and the two repaired statements carry `source-corrected` audit notes naming the garbled bytes.
-  Nothing further is recoverable without the papers themselves.
+  The source question stays open as `ad-source-gaps-nus` in TODO: recovering the papers, or else marking both collections as imported-only, is what would close it. A pinned dataset is not a substitute.
 
 ## Workflow and rendering papercuts
 
