@@ -1737,7 +1737,7 @@ mathematical correction under its own node, not under copy policy.
     proves outer regularity of $\mu_A$. Decide whether $\mu_A$ is Radon in general (the Riesz
     measure of $f\mapsto\int_A f\,d\mu$ agrees with $\mu_A$ on open sets and on subsets of $A$;
     the open question is the mass it gives to $\partial A$) and write a correct answer.
-    **Acceptance:** the card states the correct truth value with a complete proof or counterexample.
+    **Acceptance:** the card states the correct truth value with a complete proof or counterexample. **Closed.**
   - **`ad-topf22h-cube-gluing`**. **Needs:** none. P-TOPF22H (UCSD Topology Fall 2022): the cube
     figure does not fix the face identifications. The P glyphs on the front and back faces are
     upright at diagonally opposite positions, the R on the right face is mirrored, and the two Q

@@ -21,6 +21,15 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-corrected
+  by: chatgpt
+  date: 2026-10-31
+  note: >-
+    Statement 3 is false without a countability hypothesis on X. The former
+    proof used inner regularity on every Borel set and omitted outer
+    regularity of the restricted measure. An uncountable disjoint union
+    of convergent sequences gives a Radon measure whose restriction to
+    the open set of isolated points is not outer regular.
 ---
 
 ::: {.problem}
@@ -103,27 +112,40 @@ $$
 
 ::: pf-step
 
-Statement 3 is true.
+Statement 3 is false.
 
 ::: pf-proof
 
-Because $A$ is open, it is Borel, so $\mu_A(E)=\mu(A\cap E)$ defines a Borel measure. If $K\subseteq X$ is compact, then
+Let $I$ be uncountable. For each $i\in I$, take a copy
 $$
-\mu_A(K)=\mu(A\cap K)\le\mu(K)<\infty,
+X_i=\{0\}\cup\{1/n:n\ge1\}
 $$
-so $\mu_A$ is finite on compact sets.
+of the convergent sequence, and let $X$ be their topological disjoint
+union. It is locally compact and Hausdorff. Give $0$ mass $1$ and $1/n$
+mass $2^{-n}$ in each component. The resulting atomic Borel measure
+$\mu$ is finite on compact sets: a compact subset of $X$ meets only
+finitely many components, each of total mass $2$.
 
-Let $E$ be Borel. Since $\mu$ is Radon,
+Every open set is inner regular, since its measure is the supremum of
+the masses of its finite subsets. The measure is also outer regular.
+If a Borel set $B$ has infinite mass, this is immediate. If $\mu(B)$ is
+finite, $B$ contains at most countably many points because every point
+has positive mass. The points $1/n$ are isolated. At each point $0$
+in $B$, choose a neighborhood whose additional tail mass is as small
+as desired. Doing this for the countably many such points, with
+summable error bounds, gives for every $\varepsilon>0$ an open
+$U\supseteq B$ with $\mu(U)\le\mu(B)+\varepsilon$. Thus $\mu$ is Radon.
+
+Let $A$ be the set of all isolated points $1/n$ in all components, and
+let $E=X\setminus A$ be the set of all limit points $0$. Then $A$ is
+open and $\mu_A(E)=0$. Every open neighborhood $U$ of $E$ contains a
+tail of isolated points in each of the uncountably many components.
+Each such tail has positive $\mu_A$-mass, so $\mu_A(U)=\infty$. Hence
 $$
-\mu_A(E)=\mu(A\cap E)
-=\sup\{\mu(K):K\subseteq A\cap E,\ K\text{ compact}\}.
+\inf_{U\supseteq E,\ U\text{ open}}\mu_A(U)=\infty
+>\mu_A(E)=0.
 $$
-For every such $K$, $\mu_A(K)=\mu(K)$. Therefore
-$$
-\mu_A(E)
-=\sup\{\mu_A(K):K\subseteq E,\ K\text{ compact}\}.
-$$
-Thus $\mu_A$ is inner regular and finite on compact sets, hence Radon.
+The restriction is not outer regular and therefore is not Radon.
 
 :::
 
