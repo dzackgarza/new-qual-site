@@ -290,3 +290,34 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   evaluating that is not a check of their claim, it is a check of mine, and the two differ by exactly
   the correction under discussion. Where a claim is about a formula, the refutation must evaluate the
   claim's own expression, printed out, preferably symbolically rather than by transcription.
+## What the audit campaigns installed, and what is still open
+
+Recorded so that "swarm ended solved" and "queue 0" are not read as "the collection is verified".
+The audits covered `SRC-TEXT-HAT02` §3.D, §3.F, §3.H, §4.1 (ex. 10–23), §4.2, §4.3, §4.A/§4.B/§4.D/
+§4.F/§4.G/§4.H/§4.I/§4.K/§4.L, and `SRC-TEXT-SS03` for completeness and statement fidelity, plus the
+nine printed SS03 items that had no card.
+
+**Installed and gated.** Statement restorations on 40+ cards (dropped printed hints, pointers,
+parentheticals and printed sentences; one halved "iff" in `E-HAT-4.3-22`, one in `E-HAT-3.F-9(a)`, one
+in `E-HAT-4.1-19`, one in `E-HAT-4.1-22`); proof repairs in `E-HAT-3.F-2/3/7` and `E-HAT-3.H-2/4/5`;
+a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS3.PR-3/4/5`,
+`E-SSA.PR-1/2/3/4/5`; the Airy label correction on `E-SSA.PR-3`.
+
+**Explicitly open — not completion, not oversight.**
+
+1. **`E-SSA.PR-5`, final sentence.** The exercise's closing claim — that the modified series converges
+   and gives an exact formula for $p(n)$ — is **not proved**, on the card, in §4 of its solution, with
+   the four missing ingredients named (Farey dissection, uniform arc estimates, the level
+   $N\asymp n^{1/2}$ refinement, Rademacher 1937). The book does not supply them and its own error
+   term is larger than every $q\ge2$ contribution.
+2. **97 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+   but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
+   §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
+   reported and repaired above; the rest is unaudited.
+3. **`P-AGH467MULTISECANTS`.** The Kaji citation is checked at the level of the paper's abstract only.
+   The paper's body — in particular the singularity condition that is vacuous for smooth curves — was
+   not read, and steps `s1`–`s13` of that card were not re-derived.
+4. **The book's starred markers.** No card in the corpus records which printed items carry the
+   difficulty asterisk; the audits confirmed that the extraction has no ASCII `*` and nothing was
+   invented in its place.
+5. **Five `ad-text-*` nodes** stay blocked on books absent from the repository, as recorded above.
