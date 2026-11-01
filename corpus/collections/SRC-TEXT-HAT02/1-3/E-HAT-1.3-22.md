@@ -28,6 +28,18 @@ audit:
   date: 2026-10-31
   note: >-
     Read the step claims: freeness of the product action, the product of evenly covered neighbourhoods, and the homeomorphism of orbit spaces. Not every line checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct, and it clears the trap this exercise contains. Free and locally
+    disjoint translates are checked properly (freeness of the product from freeness of the factors;
+    the product of the local trivializing neighbourhoods). The homeomorphism half is where a
+    careless proof fails, because a bijective continuous map out of a quotient need not be a
+    homeomorphism; the card does not fall into that: it proves each `q_i` open via
+    `q_i^{-1}(q_i(V_i)) = union_g g_i V_i`, hence `q_1 x q_2` open, and concludes that `Phi` is open
+    from `q_1 x q_2 = Phi q` with `q` a quotient map, so `Phi` is a continuous bijective open map.
+    No correction was needed.
 ---
 
 ::: {.problem}
