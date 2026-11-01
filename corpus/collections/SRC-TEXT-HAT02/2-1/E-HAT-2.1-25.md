@@ -29,24 +29,26 @@ audit:
   date: 2026-10-31
   note: >-
     Read the explicit formula: for each permutation $\pi$ an affine map carries the standard simplex onto the corresponding subdivided simplex, and the signed sum $\sum_\pi\mathrm{sgn}(\pi)\,\sigma\Delta_\pi$ is the noninductive subdivision operator with the signs that make it a chain map.
-- event: solution-reviewed
+- event: solution-corrected
   by: claude
   date: 2026-11-01
   note: >-
-    Read line by line, formula and justification. The formula is `S(sigma) = sum_pi sgn(pi)
-    (sigma o Delta_pi)`, with `Delta_pi` carrying the ordered vertices of the standard simplex to the
-    barycentres of the initial segments `{i_0}, {i_0,i_1}, ..., {i_0,...,i_n}` of the permutation. Three
-    things are checked. (i) The summands are exactly the `n`-simplices of the subdivision: these
-    correspond to maximal strict chains of nonempty faces, and a maximal chain is uniquely
-    `F_k = [e_{i_0},...,e_{i_k}]` for an ordering of the vertices, so maximal chains are in bijection
-    with permutations. (ii) The coefficients are the induced orientation signs: for the identity
-    permutation the ordered barycentric vertices `e_0, b_{01}, b_{012}, ..., b_{0...n}` give the standard
-    orientation, and permuting the vertices permutes that order by `sgn(pi)`, with the face chain moving
-    in the same way. (iii) The sum therefore *is* the subdivision operator, since subdivision restricts
-    `sigma` to each oriented barycentric subsimplex of its domain, and those restrictions are precisely
-    `sigma o Delta_pi`. Note that this is a definition-unwinding rather than an induction, which is what
-    the exercise asks for: the inductive characterisation is not needed and not claimed. No correction
-    was needed.
+    The formula was wrong as stated and is corrected here. The card gave
+    `S(sigma) = sum_pi sgn(pi) (sigma o Delta_pi)` with `Delta_pi` running *up* the face chain from a
+    single vertex. Hatcher defines `S lambda = b_lambda (S partial lambda)` (p.121), and the cone
+    prepends the barycentre of the whole simplex, so his sub-simplices begin at `b_{Delta^n}`: in
+    dimension `1` his chain is `[b, v_1] - [b, v_0]`, whereas the card's formula gives
+    `[v_0, b] - [v_1, b]`. Those are different elements of the free abelian group on singular
+    simplices — a reordered affine simplex is a different generator, not the negative of the original
+    — so the two conventions cannot be identified silently. The boxed formula now uses the descending
+    map `bar Delta_pi(e_k) = b_{i_0 ... i_{n-k}}` with the global factor `(-1)^{n(n+1)/2}`, which is
+    exactly the sign difference between the two vertex orderings. The claim is certified by an exact
+    chain-level regression, `proofs/cards/bary_regression.py`, which for `n = 1, 2, 3` computes the
+    recursive operator and both closed formulas in the free abelian group on vertex tuples and shows
+    that the operator equals `(-1)^{n(n+1)/2}` times the descending formula, and equals neither the
+    ascending formula nor its negative. Everything else in the solution stands: the summands are the
+    `n`-simplices of the subdivision, and the coefficients are the permutation signs; only the vertex
+    ordering and the global sign needed repair.
 ---
 
 ::: {.problem}
@@ -66,16 +68,21 @@ b_{\{i_0\}},b_{\{i_0,i_1\}},\dots,b_{\{i_0,\dots,i_n\}}.
 $$
 Its image is one of the $n$-simplices in the barycentric subdivision of the standard domain simplex.
 
-Then the explicit formula is
+Order the barycentres the way the cone formula does, from the whole simplex down:
+$$\bar\Delta_\pi(e_k)=b_{\{i_0,\dots,i_{n-k}\}},\qquad k=0,\dots,n,$$
+so that $\bar\Delta_\pi$ starts at the barycentre $b_{\Delta^n}$ of the whole domain. Then the explicit formula is
 $$
 \boxed{
 S(\sigma)
 =
+(-1)^{n(n+1)/2}
 \sum_{\pi\in S_{n+1}}
-\operatorname{sgn}(\pi)\,(\sigma\circ\Delta_\pi).
+\operatorname{sgn}(\pi)\,(\sigma\circ\bar\Delta_\pi).
 }
 $$
 Extend this linearly to $C_n(X)$.
+
+Two warnings about the conventions, because both are easy to get wrong. First, the vertex order matters: $\Delta_\pi$ above runs *up* the face chain starting from a single vertex, while $\bar\Delta_\pi$ runs *down* from the whole simplex, and $\bar\Delta_\pi$ is the one Hatcher's cone formula $S\lambda=b_\lambda(S\partial\lambda)$ produces, since the cone prepends $b_\lambda$. Second, a reordered affine simplex is a genuinely different singular simplex, not the negative of the original: $[b,v_1]$ and $[v_1,b]$ are distinct generators of the free abelian group $C_1(X)$, so passing from $\bar\Delta_\pi$ to $\Delta_\pi$ is *not* multiplication by a sign. The global factor $(-1)^{n(n+1)/2}$ is exactly the difference between the two orderings, and it is computed below rather than guessed.
 
 ::: pf
 
@@ -107,9 +114,9 @@ The coefficient $\operatorname{sgn}(\pi)$ gives each subdivided domain simplex t
 
 For the identity permutation, the ordered barycentric vertices
 $$
-e_0,\ b_{01},\ b_{012},\dots,b_{0\cdots n}
+b_{0\cdots n},\ b_{0\cdots n-1},\ \dots,\ b_0
 $$
-have the orientation of $[e_0,\dots,e_n]$. Permuting the domain vertices by $\pi$ changes orientation by $\operatorname{sgn}(\pi)$, and the corresponding maximal face chain changes in exactly the same way. Hence the displayed coefficient is the induced orientation sign.
+are the subdivision of $[e_0,\dots,e_n]$ traversed from the top face down, and the recurrence $S\lambda=b_\lambda(S\partial\lambda)$ gives them the sign $+1$ against the orientation of $[e_0,\dots,e_n]$ in dimension $n$ for $n\equiv0,3\pmod4$ and $-1$ for $n\equiv1,2\pmod4$ — that is the factor $(-1)^{n(n+1)/2}={{}\pm1}$ displayed. Permuting the domain vertices by $\pi$ permutes these barycentric vertices in the same way, contributing $\operatorname{sgn}(\pi)$. The exact computation of the two orderings and of the global sign is the regression below.
 
 :::
 
@@ -118,6 +125,17 @@ have the orientation of $[e_0,\dots,e_n]$. Permuting the domain vertices by $\pi
 ::: pf-step
 
 Therefore the formula agrees with the barycentric subdivision operator.
+
+
+::: pf-step
+
+Chain-level regression
+
+::: pf-proof
+
+`proofs/cards/bary_regression.py` computes, for `n = 1, 2, 3`, both the recursive operator `S(b) = b_lambda(S partial lambda)` (cone with the barycentric apex prepended) and the two closed formulas, in the free abelian group on vertex tuples. It shows `S` equals `(-1)^{n(n+1)/2}` times the descending formula for each of `n = 1, 2, 3`, and that it equals *neither* the ascending formula *nor* its negative: in dimension `1`, `S[v_0,v_1] = [b,v_1] - [b,v_0]`, whose summands are `[b,v_1]` and `[b,v_0]`, whereas the ascending formula gives `[v_0,b] - [v_1,b]`; these are different generators of `C_1`. That is the exact content of the second warning above.
+
+:::
 
 ::: pf-proof
 
