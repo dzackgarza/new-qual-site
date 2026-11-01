@@ -27,6 +27,17 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 3.C, Exercise 1; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof. The hypotheses of the cited strictification theorem (tom Dieck--Kamps--Puppe,
+    Theorem 3.37 and Proposition 3.38) are checked rather than assumed: $e$ a $0$-cell makes
+    $\{e\}\hookrightarrow X$ a closed cofibration, hence so is $X\vee X\hookrightarrow X\times X$,
+    and the two one-sided unit homotopies are given by hypothesis. The second half extends the
+    homotopy from the wedge to $X\times X$ by the homotopy extension property and gets a strict
+    two-sided unit. The step that is a citation rather than an argument is the strictification
+    itself; the geometric hypotheses around it are verified here.
 ---
 
 ::: {.problem}

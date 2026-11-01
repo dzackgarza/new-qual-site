@@ -27,6 +27,14 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 3.C, Exercise 2; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof: $\mu_A=r\circ\mu\circ(i\times i)$ with $i,r$ the retract pair, and the unit
+    homotopies for $\mu_A$ are the composites of the given homotopies with $i$ and $r$, using
+    $r\circ i=\mathrm{id}$. The identity element stays in $A$ by hypothesis, which is what makes
+    $\mu_A(e,a)$ and $\mu_A(a,e)$ well formed.
 ---
 
 ::: {.problem}
