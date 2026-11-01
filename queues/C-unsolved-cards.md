@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem cards
 
-40 problem cards have no solution section. These are
+35 problem cards have no solution section. These are
 the cards issue #2 targets: write a Lamport-style structured proof for each.
 
 Regenerate with `just unsolved` after a card gains a solution. CI publishes
@@ -10,15 +10,10 @@ regeneration, and writing the solution removes the line.
 
 ## Count
 
-- Problems: 40
+- Problems: 35
 
-## Problems (40)
+## Problems (35)
 
-- [ ] E-SS7.EX-5 — "Alternating zeta series and real zeros"
-- [ ] E-SS7.EX-6 — "A vertical contour integral for the step function"
-- [ ] E-SS7.EX-7 — "Reality of the completed zeta function on two lines"
-- [ ] E-SS7.EX-8 — "Infinitely many zeta zeros in the critical strip"
-- [ ] E-SS7.EX-9 — "Zeta estimates on the line of real part one"
 - [ ] E-SS8.PR-4 — "SU(1,1) and automorphisms of the unit disc"
 - [ ] E-SS8.PR-5 — "Zeros of bounded holomorphic functions on the upper half-plane"
 - [ ] E-SS8.PR-6 — "Boundary extension for a Jordan domain"
