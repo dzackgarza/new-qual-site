@@ -13,6 +13,19 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct. The interchange law is checked region by region: with `+` using the
+    first coordinate and `+'` the second, the two composites `(f+g)+'(h+k)` and `(f+'h)+(g+'k)` put
+    `f, g, h, k` on the same four half-size sub-cubes of `I^n` and send the same separating faces to
+    `x_0`, so the maps agree on the nose, not merely up to homotopy. The two deductions are right and
+    use the constant map as a two-sided identity up to homotopy relative to the boundary: with
+    `g = h = 0` the interchange law gives `f +' k ~ f + k` in `pi_n`, and with `f = k = 0` it gives
+    `g +' h ~ h + g`, which combined with the agreement of the two sums gives
+    `[g] + [h] = [g] +' [h] = [h] + [g]`. The dimension restriction `n >= 2` is exactly what makes two
+    coordinates available. No correction was needed.
 review: draft
 ---
 
