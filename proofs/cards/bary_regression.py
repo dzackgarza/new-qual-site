@@ -49,7 +49,7 @@ def formula(simplex, descending):
 def scale(c, s):
     return {k: s*v for k, v in c.items() if s*v}
 
-for n in (1, 2):
+for n in (1, 2, 3):
     simplex = tuple(range(n + 1))
     H, C, D = hatcher(simplex), formula(simplex, False), formula(simplex, True)
     rev = (-1) ** (n*(n+1)//2)
@@ -57,9 +57,9 @@ for n in (1, 2):
     print("  Hatcher :", H)
     print("  card    :", C)
     print("  desc    :", D)
-    print("  card == Hatcher ?      ", C == H)
-    print("  desc == Hatcher ?      ", D == H)
-    print("  Hatcher == rev * card ?", H == scale(C, rev), f"(rev = {rev})")
-    print("  Hatcher == -desc ?     ", H == scale(D, -1))
-    print("  Hatcher == desc*sign?  ", H == scale(D, rev))
-    print("  equal as SETS (flip convention): ", set(H) == set(C) or set(H) == set(D))
+    # executable assertions: the operator IS sgn(w0) times the descending formula,
+    # and is NEITHER the ascending formula nor its negative.
+    assert H == scale(D, rev), (n, "operator != sgn(w0)*descending")
+    assert H != C, (n, "operator unexpectedly equals the ascending formula")
+    assert H != scale(C, -1), (n, "operator unexpectedly equals minus the ascending formula")
+    print(f"  n = {n}: all three assertions hold (sign factor {rev:+d})")
