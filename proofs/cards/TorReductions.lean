@@ -264,6 +264,26 @@ theorem lTensor_subtype_injective_of_flat {F B : Type*} [AddCommGroup F] [AddCom
     Function.Injective (LinearMap.lTensor F B'.subtype) :=
   Module.Flat.lTensor_preserves_injective_linearMap _ B'.subtype_injective
 
+/-- The Tor passage the cards use, in the presentation-level model: every element of
+`ker (f ⊗ id_B)` already comes from the Tor of a *finitely generated sub-presentation*
+`P ≤ K`, together with the witness that its image vanishes there. This is the statement that
+lets `E-HAT-3.A-6` say "the component of the class already lies in some stage" and that
+`E-HAT-3.A-2` uses when it writes a torsion-free group as the directed union of its finitely
+generated subgroups.
+
+The finite support comes from Mathlib's `TensorProduct.exists_of_fg` (pinned
+`RingTheory/TensorProduct/DirectLimitFG.lean`), and the vanishing at the stage is
+functoriality of `rTensor` (`rTensor_comp`), not a descent argument: the element already
+vanishes, and the stage inclusion is a tensor of linear maps. -/
+theorem exists_fg_stage {K F B : Type*} [AddCommGroup K] [AddCommGroup F] [AddCommGroup B]
+    (f : K →ₗ[ℤ] F) {x : TensorProduct ℤ K B} (hx : (LinearMap.rTensor B f) x = 0) :
+    ∃ (P : Submodule ℤ K) (_ : P.FG) (t : TensorProduct ℤ P B),
+      (LinearMap.rTensor B P.subtype) t = x ∧
+        (LinearMap.rTensor B (f.comp P.subtype)) t = 0 := by
+  obtain ⟨P, hP, t, ht⟩ := TensorProduct.exists_of_fg x
+  refine ⟨P, hP, t, ht, ?_⟩
+  rw [LinearMap.rTensor_comp, LinearMap.comp_apply, ht, hx]
+
 end TorReductions
 
 #print axioms TorReductions.torKernel_eq_bot_of_subsingleton
@@ -281,3 +301,4 @@ end TorReductions
 #print axioms TorReductions.prodLeft_comp_rTensor
 #print axioms TorReductions.map_prodLeft_torKernel
 #print axioms TorReductions.lTensor_subtype_injective_of_flat
+#print axioms TorReductions.exists_fg_stage

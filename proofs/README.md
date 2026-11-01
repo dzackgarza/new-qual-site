@@ -116,17 +116,18 @@ Three proof applications stay open until the canonical Mathlib is built in the r
 and the files are re-elaborated there. Grepping the pinned source for the names they use does
 **not** close them; the definitions have to be read at that revision when the build exists:
 
-- the `Tor` half of §3.A exercise 4, now down to one step. Additivity
-  (`map_prodLeft_torKernel`) and the tensor/colimit comparison (`tensorLeft_colim_iso`) are
-  proved, and so is the piece that makes a finite stage meaningful:
-  `lTensor_subtype_injective_of_flat`, that for flat `F` the inclusion `B' ≤ B` gives an
-  injection `F ⊗ B' → F ⊗ B`, so a finite sum vanishing in `F ⊗ B` vanishes already in
-  `F ⊗ B'`. What remains is the finite-stage witness itself: for `x ∈ ker(f ⊗ id_B)` there must
-  be finitely generated `K' ≤ K`, `B' ≤ B` with `x` in the image of `K' ⊗ B' → K ⊗ B`. The
-  design is an induction on `TensorProduct.induction_on`: `0` takes the two bottom submodules,
-  a pure tensor `k ⊗ b` takes `span{k}` and `span{b}` (both `Submodule.FG`), and a sum takes
-  `K' ⊔ K''`, `B' ⊔ B''`, using that the subtype inclusions factor through the sup. It is not
-  proved,
+- the `Tor` half of §3.A exercise 4 is now proved in the form both cards use, as
+  `exists_fg_stage`: for a presentation `f : K →ₗ F`, a group `B` and `x` with
+  `(f ⊗ id_B) x = 0`, there are a finitely generated `P ≤ K` and a class `t ∈ P ⊗ B` mapping to
+  `x` whose image under `(f|_P) ⊗ id_B` is zero — that is, every element of the
+  presentation-level `Tor` already lies in the `Tor` of a finitely generated sub-presentation.
+  Finite support is Mathlib's `TensorProduct.exists_of_fg` (pinned
+  `RingTheory/TensorProduct/DirectLimitFG.lean`); the vanishing at the stage is functoriality,
+  `rTensor_comp`, not a descent argument. The companion `lTensor_subtype_injective_of_flat`
+  records why a finite stage is meaningful for the other variable too. What is still cited
+  rather than formalized is the *interpretation*: that the presentation-level kernel is `Tor`
+  independently of the resolution (Hatcher Lemma 3A.2). `E-HAT-3.A-6` and `E-HAT-3.A-2` now
+  use the proved statement; their remaining citation is 3A.2 alone,
 - the simplex chain-model comparison for `E-HAT-2.2-16`, instantiating
   `ker_eq_range_of_comm_iso` with the barycentric chains of `Δ^n` and the skeleton maps.
 
