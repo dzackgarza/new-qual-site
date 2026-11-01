@@ -33,13 +33,21 @@ audit:
   by: claude
   date: 2026-11-01
   note: >-
-    **PARTIAL review, not a complete read.** The following was not checked: the second half (subdivision of a `Delta`-complex with distinct vertices per simplex is simplicial).
-    Step 1 read and checked: a `k`-simplex of the barycentric subdivision lies in a single original
-    simplex and is determined by a strict chain of faces, so its vertices are the barycenters of
-    simplices of strictly increasing dimension and are pairwise distinct. That is the property the
-    exercise asks for in the first sentence. Scope of this review: the second half — that for a
-    `Delta`-complex with distinct vertices per simplex the barycentric subdivision is a simplicial
-    complex — was **not** read, so nothing is claimed for it here.
+    Read line by line, both halves. First half: a `k`-simplex of the subdivision lies in one original
+    simplex and is determined by a strict chain of faces, so its vertices are barycentres of simplices
+    of strictly increasing dimension, hence distinct; distinctness of the *barycentres* follows because
+    distinct faces of a simplex have distinct barycentres. Second half, and this is where the real
+    content is: for `Y` with distinct vertices per simplex, a face of a simplex is determined by its
+    vertex set, because the characteristic map is injective on the standard simplex and distinct faces
+    have distinct vertex sets — that is exactly the hypothesis being cashed in; then in `Y'` a finite
+    vertex set spans at most one simplex, since the vertices are simplices of `Y`, a spanning set must
+    be orderable into a strict face chain, that ordering is unique because dimensions strictly increase
+    along proper inclusions, and each incidence is unambiguous by the previous step; and two simplices
+    of `Y'` meet in their common vertices, which form a chain because either chain is totally ordered by
+    inclusion, hence span a common face, which is unique. Those are precisely the two combinatorial
+    conditions for a simplicial complex. The two halves are consistent: step 1 gives `X'` the distinct
+    vertices property and steps 2-4 are then applied with `Y = X'` to conclude that `X''` is simplicial.
+    No correction was needed.
 ---
 
 ::: {.problem}
