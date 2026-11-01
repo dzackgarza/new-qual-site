@@ -116,18 +116,22 @@ Three proof applications stay open until the canonical Mathlib is built in the r
 and the files are re-elaborated there. Grepping the pinned source for the names they use does
 **not** close them; the definitions have to be read at that revision when the build exists:
 
-- the `Tor` half of §3.A exercise 4 is now proved in the form both cards use, as
-  `exists_fg_stage`: for a presentation `f : K →ₗ F`, a group `B` and `x` with
-  `(f ⊗ id_B) x = 0`, there are a finitely generated `P ≤ K` and a class `t ∈ P ⊗ B` mapping to
-  `x` whose image under `(f|_P) ⊗ id_B` is zero — that is, every element of the
-  presentation-level `Tor` already lies in the `Tor` of a finitely generated sub-presentation.
-  Finite support is Mathlib's `TensorProduct.exists_of_fg` (pinned
-  `RingTheory/TensorProduct/DirectLimitFG.lean`); the vanishing at the stage is functoriality,
-  `rTensor_comp`, not a descent argument. The companion `lTensor_subtype_injective_of_flat`
-  records why a finite stage is meaningful for the other variable too. What is still cited
-  rather than formalized is the *interpretation*: that the presentation-level kernel is `Tor`
-  independently of the resolution (Hatcher Lemma 3A.2). `E-HAT-3.A-6` and `E-HAT-3.A-2` now
-  use the proved statement; their remaining citation is 3A.2 alone,
+- the `Tor` half of §3.A exercise 4 is proved as `exists_fg_stage`, and its scope is exactly:
+  for a presentation `f : K →ₗ F`, **`F` and `B` are held fixed** and only `K` is restricted —
+  there are `P ≤ K` finitely generated and `t ∈ P ⊗ B` with `t ↦ x` and `(f|_P ⊗ id_B) t = 0`.
+  What that gives the two cards, and what it does not, stated honestly:
+
+  * `E-HAT-3.A-6`: the stage `(P, F, f|_P)` presents the subgroup `A_α = im(f|_P)` with the
+    *same* free middle term `F`, so the sub-stage's kernel is `Tor(A_α, B)` by the same
+    definition — no further identification is needed for that step. Two things are still
+    needed and are not certified: that the resulting `A_α` are cofinal in the directed family
+    the card uses, and the interpretation that the presentation-level kernel is `Tor`
+    independently of the resolution (Hatcher Lemma 3A.2). The card's transition maps
+    `A_α → A_β` and `K_α → K_β` are not constructed here.
+  * `E-HAT-3.A-2`: the card uses the stage existence for the finitely generated subgroups of a
+    torsion-free group; that the subgroups are free, and that the family is directed with the
+    claimed transition maps, are separate identifications the card makes and this file does not.
+
 - the simplex chain-model comparison for `E-HAT-2.2-16`, instantiating
   `ker_eq_range_of_comm_iso` with the barycentric chains of `Δ^n` and the skeleton maps.
 
@@ -240,3 +244,28 @@ which is not yet the card's chain model: `E-HAT-2.2-16` needs the barycentric/si
 chain complex of $\Delta^n$ and the skeleton maps that commute with the differentials, so
 `ker_eq_range_of_comm_iso` still has no instantiation. That identification is the open part
 of the $2.2$-$16$ obligation recorded above.
+
+### Simplex chain model (for `E-HAT-2.2-16`): route fixed against the pinned API
+
+Verified in the pinned tree, as the maintained inputs:
+
+- `SSet.Augmented.StandardSimplex.extraDegeneracy : (Δ : SimplexCategory) →
+  CategoryTheory.SimplicialObject.Augmented.ExtraDegeneracy (SSet.Augmented.stdSimplex.obj Δ)`
+  — present, `AlgebraicTopology/ExtraDegeneracy.lean`.
+- `CategoryTheory.SimplicialObject.Augmented.ExtraDegeneracy.homotopyEquiv : X.ExtraDegeneracy →
+  HomotopyEquiv (AlternatingFaceMapComplex.obj (Augmented.drop.obj X))
+  ((ChainComplex.single₀ C).obj (Augmented.point.obj X))` — present.
+
+That yields a chain homotopy contraction of the *alternating face map* complex of the standard
+simplex onto a single copy of the coefficients in degree `0`, which is exactly the exactness
+of the augmented complex that `ker_eq_range_of_comm_iso` consumes. Two steps remain, and
+neither is a formality:
+
+1. the card's chain model for `Δ^n` is the simplicial one on **nondegenerate** simplices,
+   while `AlternatingFaceMapComplex` is the unnormalised complex; passing between them needs
+   the normalisation comparison, which is not cited yet;
+2. the `k`-skeleton maps have to be built and shown to commute with the differentials in
+   degrees at most `k`, which is the hypothesis of `ker_eq_range_of_comm_iso`.
+
+Until both exist, `ker_eq_range_of_comm_iso` still has no instantiation and the card's
+vanishing statement stays uncertified.
