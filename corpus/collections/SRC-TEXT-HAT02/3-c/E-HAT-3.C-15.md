@@ -27,6 +27,22 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 3.C, Exercise 15; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read and checked line by line; nothing needed repair. The rank-one conclusion on
+    $A^{nd}$ follows from $A\otimes\QQ\cong\QQ[\alpha]$ together with the hypothesis that $A$ is free
+    in each degree, and $d$ is even because $\alpha^2\ne0$ in a graded-commutative ring. With
+    $a_n=q_n\alpha^n$ and $a_ia_j=m_{ij}a_{i+j}$ one gets $m_{ij}=q_iq_j/q_{i+j}$, and the recursion
+    $q_{n+1}=q_1q_n/m_{1,n}$ determines the $q_n$ from the $m_{ij}$ up to the rescaling
+    $\alpha\mapsto c\alpha$, so the rational coproduct is pinned by the integral ring. Two points
+    worth recording as correct rather than automatic: $\Delta(\alpha)=\alpha\otimes1+1\otimes\alpha$
+    because $d$ is the least positive degree, so there are no decomposable terms of degree $d$; and
+    cocommutativity is read off that displayed formula, not from the H-space being homotopy
+    commutative, which is not assumed. Torsion-freeness of $A\otimes A$ is what carries the rational
+    computation back to $\ZZ$, and it is used twice, once for the coproduct and once for
+    commutativity and associativity of the Pontryagin product.
 ---
 
 ::: {.problem}

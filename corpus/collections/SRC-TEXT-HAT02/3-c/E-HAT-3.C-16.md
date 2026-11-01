@@ -33,6 +33,29 @@ audit:
   note: >-
     The book writes the homogeneous component $A_n$ with a subscript; the card had $A^n$.
     The printed grading is restored.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read and checked against both parities of $d$. The table of $b_{ij}$ is right: for even
+    $d$ it is $\binom{i+j}{i}$, and for odd $d$ the two middle terms of $\Delta(t)^2$ cancel
+    instead of adding, so $b_{ij}=0$ when $i$ and $j$ are both odd and
+    $\binom{\lfloor(i+j)/2\rfloor}{\lfloor i/2\rfloor}$ otherwise — checked on $(x+y)^3$ with
+    $x=t\otimes1$ and $y=1\otimes t$ of odd degree, which is $x^3+x^2y+xy^2+y^3$. The reduction to
+    a positive-integer cocycle $(m_{ij})$ on a rank-one basis is correct, as are the recursion
+    $q_{n+1}=q_n/m_{n,1}$, the two examples $\ZZ[t]$ and $\Gamma_{\ZZ}[t]$, and the criterion
+    $m_{ij}\mid b_{ij}$ with the cocycle $m_{ij}m_{i+j,k}=m_{jk}m_{i,j+k}$. Repaired: the criterion
+    now carries the normalizations $m_{i0}=m_{0i}=1$ and says why multiplicativity and
+    coassociativity of $\Delta$ are automatic, both targets being free and hence torsionfree,
+    rather than conditions to impose; and the solution wrote $A^{nd}$ where the corrected statement
+    has $A_{nd}$. Corrected over-claim: the paragraph on $A\otimes\FF_p$ asserted that the mod-$p$
+    Hopf algebra is determined by the valuations $v_p(m_{ij})$. It is not: $v_p$ records only
+    whether a structure constant vanishes, and the reduction also depends on the residues, modulo
+    the unit action $\overline{m_{ij}}\mapsto\overline{m_{ij}}u_iu_j/u_{i+j}$. The paragraph now
+    states the valuations as a necessary invariant with $e_{i0}=e_{0i}=0$, and keeps the correct
+    converse — any divisor cocycle of valuations lifts to an integral form whose reduction vanishes
+    exactly where $e_{ij}>0$. The classification of the reductions up to unit rescaling is recorded
+    as open, not as proved.
 ---
 
 ::: {.problem}
@@ -59,7 +82,7 @@ b_{ij}=\begin{cases}
 \end{cases}
 $$
 
-Since each $A^{nd}$ is a free rank-one subgroup of $\QQ t^n$, choose generators
+Since each $A_{nd}$ is a free rank-one subgroup of $\QQ t^n$, choose generators
 $$
 x_n=q_nt^n,
 \qquad q_n\in\QQ_{>0},
@@ -81,9 +104,12 @@ $$
 Thus $A$ is an integral Hopf algebra exactly when, for every $i,j\ge0$,
 $$
 \boxed{m_{ij}\in\ZZ_{>0},\qquad
-c_{ij}=\frac{b_{ij}}{m_{ij}}\in\ZZ.}
+c_{ij}=\frac{b_{ij}}{m_{ij}}\in\ZZ,}
 $$
+with $m_{i0}=m_{0i}=1$ for all $i$.
 Equivalently, $m_{ij}$ divides $b_{ij}$ whenever $b_{ij}\ne0$; a zero $b_{ij}$ imposes no divisibility condition.
+
+Two of the Hopf axioms need no further condition, and it is worth saying why. Multiplicativity and coassociativity of $\Delta$ are identities between elements of $A\otimes A$ and of $A\otimes A\otimes A$; they hold for the corresponding rational map, and both targets are free, hence torsionfree, so they hold integrally. The counit is $\varepsilon(x_0)=1$, $\varepsilon(x_n)=0$. What the displayed conditions encode is closure under multiplication and the coproduct formula, together with associativity of the multiplication, which is the cocycle relation below.
 Associativity is exactly the cocycle relation
 $$
 \boxed{m_{ij}m_{i+j,k}=m_{jk}m_{i,j+k}}
@@ -122,24 +148,27 @@ $$
 \overline{\frac{b_{i,n-i}}{m_{i,n-i}}}
 \,\bar x_i\otimes\bar x_{n-i}.
 $$
-Up to a change of generator by a unit in each graded piece, the mod-$p$ Hopf algebra is determined by the $p$-adic valuations
+The $p$-adic valuations
 $$
-e_{ij}=v_p(m_{ij}).
+e_{ij}=v_p(m_{ij})
 $$
-They satisfy
+satisfy
 $$
 0\le e_{ij}\le v_p(b_{ij}),
+\qquad
+e_{i0}=e_{0i}=0,
 $$
 and the additive cocycle relation
 $$
-e_{ij}+e_{i+j,k}=e_{jk}+e_{i,j+k}.
+e_{ij}+e_{i+j,k}=e_{jk}+e_{i,j+k},
 $$
-Here $v_p(0)=\infty$, so a zero coproduct coefficient imposes no upper bound.
-Conversely, any such $p$-adic divisor cocycle lifts: take
+because divisibility and the product cocycle pass to valuations. Here $v_p(0)=\infty$, so a zero coproduct coefficient imposes no upper bound. But $e_{ij}$ records only whether $\overline{m_{ij}}$ vanishes: $m_{ij}=p$ and $m_{ij}=p^2$ reduce alike, and when $e_{ij}=0$ the reduction still depends on the residue in $\FF_p^\times$. Likewise a rescaling $x_n\mapsto u_nx_n$ with $u_n\in\FF_p^\times$ changes $\overline{m_{ij}}$ to $\overline{m_{ij}}u_iu_j/u_{i+j}$, so forms with different residues can have isomorphic reductions. The valuations therefore give the *vanishing pattern* of the reduction, a necessary invariant, not the mod-$p$ Hopf algebra itself; the classification of the reductions up to the unit action is not settled here.
+
+What the valuations do produce is a family of integral forms together with their vanishing patterns, by a converse that is a direct application of the criterion above: given integers $e_{ij}$ satisfying the two bounds and the cocycle relation, and $e_{i0}=e_{0i}=0$, put
 $$
 m_{ij}=p^{e_{ij}}
 $$
-(and choose valuation $0$ at all other primes), then the preceding integral construction produces a Hopf algebra whose reduction has exactly this structure. Up to rescaling each one-dimensional graded piece by a unit of $\FF_p$, these are precisely the Hopf algebras $A\otimes\FF_p$ that arise.
+and valuation $0$ at all other primes. The divisor and cocycle conditions hold by construction, so the recipe above gives an integral form, and its reduction has $\overline{m_{ij}}=0$ exactly when $e_{ij}>0$.
 
 When $d$ is even, the polynomial and divided-power reductions are the two extreme valuation choices $e_{ij}=0$ and
 $$

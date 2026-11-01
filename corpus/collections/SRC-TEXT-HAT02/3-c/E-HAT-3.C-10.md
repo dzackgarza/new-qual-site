@@ -27,6 +27,21 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 3.C, Exercise 10; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    All three parts read and checked. (a) is right and the repaired line now names the Künneth
+    identification that turns $\delta_{f,g}^*$ into $f^*\otimes g^*$, which is the only use of the
+    hypothesis that $H^*(X;R)$ is free and finitely generated — the original left that hypothesis
+    dangling. (b) is right: the induction is on the product formula, and primitivity of the degree
+    three generator of $S^3$ is now justified rather than waved at, since the mixed terms would
+    have bidegree $(i,j)$ with $i,j>0$ and $i+j=3$ while $H^1=H^2=0$. (c) is right: properness
+    from the leading term, the proper homotopy to $a_nx^nb_n$, degree $+1$ for left and right
+    multiplication by a nonzero quaternion, degree $n$ for the $n$-th power by (b), hence
+    $\deg\widehat P=n$; the closing step now says why a proper map missing a point has degree
+    zero, namely that it lands in a contractible $S^4\setminus\{0\}$. Cited and not re-proved:
+    the degree formula for radial extensions and Hatcher Theorem 1.8.
 ---
 
 ::: {.problem}
@@ -70,8 +85,11 @@ Therefore
 $$
 (fg)^*(\alpha)
 =\delta_{f,g}^*\mu^*(\alpha)
+=\delta_{f,g}^*(\alpha\times1)+\delta_{f,g}^*(1\times\alpha)
+=f^*(\alpha)\otimes1+1\otimes g^*(\alpha)
 =f^*(\alpha)+g^*(\alpha).
 $$
+The penultimate step is the Künneth identification $H^*(X\times X;R)\cong H^*(X;R)\otimes H^*(X;R)$ under which $\delta_{f,g}^*$ becomes $f^*\otimes g^*$; this is the only place the hypothesis that $H^*(X;R)$ is free and finitely generated in each dimension is used, and without it $\times$ and $\otimes$ are not the same.
 
 :::
 
@@ -87,7 +105,7 @@ Induct on $k$ using part 1. For the identity map $P_1$, $P_1^*(\alpha)=\alpha$. 
 $$
 P_{k+1}^*(\alpha)=P_k^*(\alpha)+\alpha=(k+1)\alpha.
 $$
-On $S^3$, a generator of $H^3(S^3;\ZZ)$ is primitive for dimensional reasons. Hence the quaternionic power map $q\mapsto q^k$ has degree $k$.
+On $S^3$, a generator $\alpha$ of $H^3(S^3;\ZZ)$ is primitive: by the Künneth formula the mixed terms of $\mu^*(\alpha)$ would have bidegree $(i,j)$ with $i,j>0$ and $i+j=3$, and $H^i(S^3)=0$ for $i=1,2$, so there are none. Since $H^3(S^3;\ZZ)=\ZZ\cdot\alpha$, the degree of a self-map of $S^3$ is read off on $\alpha$, so the quaternionic power map $q\mapsto q^k$ has degree $k$.
 
 :::
 
@@ -119,7 +137,7 @@ Left and right multiplication by a nonzero quaternion are orientation-preserving
 $$
 \deg\widehat P=n\ne0.
 $$
-If $P$ had no root, then $0\notin P(\quaternions)$; a proper map missing a point has degree $0$, contradiction. Thus $P(x)=0$ for some $x\in\quaternions$.
+If $P$ had no root, then $0\notin P(\quaternions)$, and since $\widehat P(\infty)=\infty$ the compactified map would miss $0$ altogether: it would land in $S^4\setminus\{0\}\cong\RR^4$, which is contractible, so $\widehat P$ would be null-homotopic and have degree $0$, contradicting $\deg\widehat P=n\ne0$. Thus $P(x)=0$ for some $x\in\quaternions$.
 
 :::
 
