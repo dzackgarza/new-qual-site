@@ -120,7 +120,7 @@ sentence broken mid-way ("The middle map is ... are isomorphisms"), which is rep
 to cover them. All 6 proofs are read.
 §3.B: all 5 statements compared with the printed exercises and all 5 proofs read.
 §3.C: all 16 statements compared with the printed exercises and all agree; `E-HAT-3.C-16` had $A^n$ where the book prints $A_n$
-for the homogeneous component, and the subscript is restored. Proofs of `E-HAT-3.C-1` .. `-4` are read and their review notes say what was checked; the proofs of `-5` .. `-16` are **not** read yet. `E-HAT-3.B-1`'s group formulas are rechecked from the cellular
+for the homogeneous component, and the subscript is restored. Proofs of `E-HAT-3.C-1` .. `-4` and `-5`, `-6`, `-7`, `-9` are read and their review notes say what was checked; the proofs of `-8`, `-10` .. `-16` are **not** read yet. `E-HAT-3.B-1`'s group formulas are rechecked from the cellular
 tensor complex (free part $f_i$, torsion part $t_i$, cohomology shifted by one), `-2` on both directions of the $I\\otimes C$ dictionary, `-3` by
 recomputing $H_{2n+1}$ on both sides of $f\\times1$, `-4` through naturality and excision of the local cross product, `-5` through the four
 invariance checks.

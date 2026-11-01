@@ -27,6 +27,16 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 3.C, Exercise 6; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof. A multiplication with strict two-sided identity is exactly an extension of the
+    fold $\nabla:S^n\vee S^n\to S^n$ over $S^n\times S^n$, which exists iff $\nabla\circ\omega$ is
+    nullhomotopic, and $J_2(S^n)$ is defined so that its single $2n$-cell is attached by exactly
+    that composite. The converse uses Exercise 1 to homotope an H-space multiplication to one with
+    strict unit. The step that is asserted rather than expanded is that the $n$-skeleton of
+    $J_2(S^n)$ is the fold quotient of the wedge, which is the definition's content.
 ---
 
 ::: {.problem}

@@ -27,6 +27,19 @@ audit:
   by: claude
   date: 2026-10-31
   note: Statement compared with Hatcher, Algebraic Topology, Section 3.C, Exercise 9; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof, both halves. Over $\QQ$, Hopf's theorem gives an exterior algebra on odd
+    generators because finite-dimensionality forbids polynomial generators, so $P_\QQ(-1)=0$ when
+    there is any generator. If there is none, $H^*(X;\QQ)=\QQ$, the positive integral homology is
+    torsion, and some prime $p$ has $\widetilde H^*(X;\FF_p)\ne0$. Borel's theorem then splits
+    $H^*(X;\FF_p)$ into single-generator factors: an exterior factor makes $P_{\FF_p}(-1)=0$, a
+    truncated factor $\FF_p[y]/(y^{p^k})$ with $\deg y$ even contributes $p^k$, and with $p=2$ and
+    $\deg y$ odd the alternating sum of its $2^k$ terms is zero. Each case contradicts
+    $\chi(X)=P(-1)=1$, so $\chi(X)=0$. Hopf's and Borel's theorems are the cited inputs; the case
+    analysis around them is read.
 ---
 
 ::: {.problem}
