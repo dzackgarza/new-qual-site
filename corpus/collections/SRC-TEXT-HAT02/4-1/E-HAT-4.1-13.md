@@ -14,6 +14,15 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    The card cited "Hatcher, Lemma 4.15 / Extension Lemma" for the homotopy extension property.
+    Hatcher's Section 4.1 has no Lemma 4.15: a search of the text for Lemmas 4.11 through 4.19
+    returns only Lemma 4.10. The citation is replaced by a reference to the property as Hatcher
+    states it for CW pairs in §4.1, with Proposition 0.16 named for the HEP itself.
+
 ---
 
 ::: {.exercise}
@@ -33,7 +42,7 @@ A subcomplex $A$ of a CW complex $X$ forms a **CW pair** $(X, A)$.
 :::
 
 ::: pf-step
-By the **Homotopy Extension Property (HEP)** (Hatcher, Lemma 4.15 / Extension Lemma):
+By the **Homotopy Extension Property (HEP)** for CW pairs (Hatcher, §4.1: a CW pair satisfies the homotopy extension property; see also Proposition 0.16 for the HEP itself):
 For any CW pair $(X, A)$, the pair has the homotopy extension property with respect to every topological space $Y$.
 :::
 
