@@ -32,13 +32,16 @@ audit:
     **PARTIAL review, not a complete read.** The following was not checked: the detailed steps of part (b).
     Part (a) read and checked: the map of long exact sequences is natural, the four surrounding
     vertical maps are isomorphisms because `f` is a homotopy equivalence on `X` and on `A`, and the
-    five lemma gives the isomorphism on relative groups. Part (b): the closure observation is the
-    right tool — a pair homotopy equivalence restricts to one for the closure pairs — and the
-    contradiction is the intended one, since `H_n(D^n, S^{n-1}) = Z` while `H_n(D^n, D^n - {0}) = 0`,
-    so no pair homotopy equivalence can exist although `f` is a homotopy equivalence on the total
-    spaces and on the subspaces separately; that is exactly the point of the exercise, and it shows
-    the hypothesis of (a) cannot be weakened to "homotopy equivalence on each space". The detailed
-    step-by-step of part (b) beyond this was skimmed, not read line by line.
+    five lemma gives the isomorphism on relative groups. Part (b): the closure observation is the tool, and it is needed for exactly the
+    reason the book's hint gives. The second pair is `(D^n, D^n - {0})`, whose relative homology is
+    *not* zero: `H_n(D^n, D^n - {0}) = H_{n-1}(D^n - {0}) = H_{n-1}(S^{n-1}) = Z`, the same group as
+    `H_n(D^n, S^{n-1})`, so comparing those two pairs directly yields no contradiction. What separates
+    them is the closure: a pair homotopy equivalence carries the same maps and pair homotopies to the
+    closure pairs, making `(D^n, closure(D^n - {0})) = (D^n, D^n)` pair homotopy equivalent to
+    `(D^n, S^{n-1})`, while `H_n(D^n, D^n) = 0` and `H_n(D^n, S^{n-1}) = Z`. That is the argument the
+    card makes and it is correct. The hypothesis of (a) -- `f` a homotopy equivalence on `X` and on
+    `A` -- is exactly satisfied here, which is why only the pair conclusion can fail. The detailed
+    
 ---
 
 ::: {.problem}
