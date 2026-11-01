@@ -138,12 +138,17 @@ Three things must be discharged explicitly, and each has bitten before:
 
 Nothing above requires resolution comparison or flat-cokernel injectivity: those are maintained.
 
-**Pending certification, stated concretely.** The next Lean obligation is
-`rTensor_injective_of_flat_cokernel`: for `f : K →ₗ[ℤ] F` injective with `[Module.Flat ℤ (F ⧸
-LinearMap.range f)]`, `rTensor B f` is injective, hence `torKernel f = ⊥`; proved by
-`LinearMap.lTensor_injective_of_exact_of_flat` (with `g = f`, the quotient map as the surjection,
-and `Exact f (Submodule.mkQ _)`) composed with `LinearMap.lTensor_inj_iff_rTensor_inj`. This
-statement is not yet elaborated here, so it is recorded as the obligation, not as a result.
+**Now proved, not pending.** `TorReductions.rTensor_injective_of_flat_cokernel`: for
+`f : K →ₗ[ℤ] F` injective with `[Module.Flat ℤ (F ⧸ LinearMap.range f)]`, the map `rTensor B f` is
+injective for every `B` — hence `TorReductions.torKernel_eq_bot_of_flat_cokernel`, the kernel
+vanishes. The proof applies the maintained
+`LinearMap.lTensor_injective_of_exact_of_flat` to `0 → K → F → F ⧸ range f → 0` (the quotient map
+as the surjection, exactness from `Submodule.mkQ_apply` and `LinearMap.mem_range`) and moves from
+`lTensor` to the `rTensor` factor order by `LinearMap.lTensor_inj_iff_rTensor_inj`. Axioms
+`propext`, `Classical.choice`, `Quot.sound`. This settles the vanishing direction of `E-HAT-3.A-2`
+for a genuine free resolution, which is what the cards need; the identification
+`Tor 1 A B ≅ ker (f.rTensor B)` for an arbitrary two-term resolution remains the open item, with
+`ProjectiveResolution.isoLeftDerivedObj` as the maintained bridge.
 
 ## 5. Outstanding obligations
 

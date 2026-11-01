@@ -284,6 +284,34 @@ theorem exists_fg_stage {K F B : Type*} [AddCommGroup K] [AddCommGroup F] [AddCo
   refine ⟨P, hP, t, ht, ?_⟩
   rw [LinearMap.rTensor_comp, LinearMap.comp_apply, ht, hx]
 
+/-- **`E-HAT-3.A-2`, the vanishing direction, at the presentation level.** Let `f : K →ₗ[ℤ] F` be the
+relation map of a genuine two-term free resolution — injective, with `F` free — and suppose the
+quotient `A = F ⧸ range f` is flat. Then the presentation-level kernel vanishes: `f ⊗ id_B` is
+injective for every `B`.
+
+This is `LinearMap.lTensor_injective_of_exact_of_flat` applied to the short exact sequence
+`0 → K → F → A → 0` (the quotient map is the surjection, `range f` its kernel by
+`Submodule.ker_mkQ`), transported from `lTensor` to the `rTensor` factor order that
+`torKernel` uses by `LinearMap.lTensor_inj_iff_rTensor_inj`. No connecting map and no snake
+lemma is invoked directly: that theory is inside the maintained lemma. -/
+theorem rTensor_injective_of_flat_cokernel {K F B : Type*} [AddCommGroup K] [AddCommGroup F]
+    [AddCommGroup B] (f : K →ₗ[ℤ] F) (hf : Function.Injective f)
+    [Module.Flat ℤ (F ⧸ LinearMap.range f)] :
+    Function.Injective (LinearMap.rTensor B f) := by
+  have hex : Function.Exact f (LinearMap.range f).mkQ := fun x => by
+    simp [Submodule.mkQ_apply, LinearMap.mem_range]
+  have hL : Function.Injective (LinearMap.lTensor B f) :=
+    LinearMap.lTensor_injective_of_exact_of_flat (LinearMap.range f).mkQ
+      (Submodule.mkQ_surjective _) f hf hex B
+  exact (LinearMap.lTensor_inj_iff_rTensor_inj B f).mp hL
+
+/-- The kernel form: for a genuine free resolution with flat cokernel, the presentation-level
+`Tor` vanishes. -/
+theorem torKernel_eq_bot_of_flat_cokernel {K F : Type*} [AddCommGroup K] [AddCommGroup F]
+    (f : K →ₗ[ℤ] F) (hf : Function.Injective f) [Module.Flat ℤ (F ⧸ LinearMap.range f)] :
+    torKernel (B := B) f = ⊥ := by
+  exact LinearMap.ker_eq_bot.mpr (rTensor_injective_of_flat_cokernel (B := B) f hf)
+
 end TorReductions
 
 #print axioms TorReductions.torKernel_eq_bot_of_subsingleton
@@ -302,3 +330,5 @@ end TorReductions
 #print axioms TorReductions.map_prodLeft_torKernel
 #print axioms TorReductions.lTensor_subtype_injective_of_flat
 #print axioms TorReductions.exists_fg_stage
+#print axioms TorReductions.rTensor_injective_of_flat_cokernel
+#print axioms TorReductions.torKernel_eq_bot_of_flat_cokernel
