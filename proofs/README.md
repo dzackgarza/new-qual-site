@@ -240,8 +240,29 @@ requires a construction, not a citation.
   tensor product rather than on a submodule: `rTensor`'s output carries `TensorProduct.addCommMonoid`
   and `TensorProduct.instModule`, while `kerMapModule`'s parameters ask for
   `AddCommGroup.toAddCommMonoid`, so the statement fails instance unification (the `Submodule.module`
-  diamond was resolved by `kerModule`/`kerMapModule`, this one is not). The composition is written; the
-  fix is explicit instance ascription at that boundary.
+  diamond was resolved by `kerModule`/`kerMapModule`, this one is not). The composition is written; the fix is explicit
+  instance ascription at that boundary.
+
+  **The exact residual, for the next pass.** Parameterising the orientation equivalence by the module
+  structures (`kerCommEquiv {M P N} [AddCommGroup _] [Module ℤ M] [Module ℤ P] [Module ℤ N] (f : M →ₗ[ℤ] P)
+  : (f.rTensor N).ker ≃ₗ[ℤ] (f.lTensor N).ker`) is not enough: elaboration then fails *inside that
+  statement*, on the two kernels' ambient types,
+
+  ```
+  error: synthesized type class instance is not definitionally equal to expression inferred by typing rules,
+    synthesized  AddCommGroup.toIntModule (TensorProduct ℤ M N)
+    inferred     TensorProduct.instModule
+  ```
+
+  and the same for `TensorProduct ℤ N M`. That is, one path (`rTensor`/`lTensor`'s own typing) fixes
+  `TensorProduct.instModule`, while the other (`Submodule.ker`'s implicit ambient instance) synthesizes
+  `AddCommGroup.toIntModule`; `CategoryTheory.Iso.toLinearEquiv` / `LinearEquiv.toModuleIso` preserve a
+  supplied structure but cannot reconcile the two. Two concrete ways out: compare the kernels as submodules
+  of the *bundled* categorical tensor (`tensorLeft`/`tensorRight` in `ModuleCat ℤ`, so both sides carry
+  `isModule`), or ascribe the ambient instances at the statement with explicit `@`-application
+  (`@Submodule.ker ℤ ℤ _ _ (RingHom.id ℤ) (TensorProduct ℤ M N) _ _ TensorProduct.addCommMonoid
+  (TensorProduct.instModule …) …`). Nothing in the bridge's mathematics changes; no axiom and no assumed map
+  equality is used anywhere in the file.
   Hatcher's Lemma 3A.2 as the cards use it is the *unrestricted* application: it needs that kernel
   step **together with** the finite-stage descent already proved in `cards/TorStages.lean`
   (`exists_stage_of_free`, `stageMap_injective`, the directed system). The flat-cokernel lemma
