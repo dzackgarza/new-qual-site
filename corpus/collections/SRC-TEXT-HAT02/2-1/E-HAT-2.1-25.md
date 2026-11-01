@@ -29,7 +29,7 @@ audit:
   date: 2026-10-31
   note: >-
     Read the explicit formula: for each permutation $\pi$ an affine map carries the standard simplex onto the corresponding subdivided simplex, and the signed sum $\sum_\pi\mathrm{sgn}(\pi)\,\sigma\Delta_\pi$ is the noninductive subdivision operator with the signs that make it a chain map.
-- event: solution-corrected
+- event: solution-reviewed
   by: claude
   date: 2026-11-01
   note: >-
@@ -42,11 +42,12 @@ audit:
     simplices — a reordered affine simplex is a different generator, not the negative of the original
     — so the two conventions cannot be identified silently. The boxed formula now uses the descending
     map `bar Delta_pi(e_k) = b_{i_0 ... i_{n-k}}` with the global factor `(-1)^{n(n+1)/2}`, which is
-    exactly the sign difference between the two vertex orderings. The claim is certified by an exact
-    chain-level regression, `proofs/cards/bary_regression.py`, which for `n = 1, 2, 3` computes the
+    exactly the sign difference between the two vertex orderings. The general identity is argued by the induction recorded in the solution; the exact
+    chain-level regression `proofs/cards/bary_regression.py` covers only `n = 1, 2, 3` and computes the
     recursive operator and both closed formulas in the free abelian group on vertex tuples and shows
-    that the operator equals `(-1)^{n(n+1)/2}` times the descending formula, and equals neither the
-    ascending formula nor its negative. Everything else in the solution stands: the summands are the
+    that the operator equals `(-1)^{n(n+1)/2}` times the descending formula there, and equals neither the
+    ascending formula nor its negative; it is a bounded regression, not a proof for all `n`, and the
+    general statement rests on the induction, which is not formalized. Everything else in the solution stands: the summands are the
     `n`-simplices of the subdivision, and the coefficients are the permutation signs; only the vertex
     ordering and the global sign needed repair.
 ---
@@ -128,7 +129,9 @@ Chain-level regression
 
 ::: pf-proof
 
-`proofs/cards/bary_regression.py` computes, for `n = 1, 2, 3`, both the recursive operator `S(lambda) = b_lambda(S partial lambda)` (cone with the barycentric apex prepended) and the two closed formulas, in the free abelian group on vertex tuples. It shows `S` equals `(-1)^{n(n+1)/2}` times the descending formula for each of `n = 1, 2, 3`, and that it equals *neither* the ascending formula *nor* its negative: in dimension `1`, `S[v_0,v_1] = [b,v_1] - [b,v_0]`, whose summands are `[b,v_1]` and `[b,v_0]`, whereas the ascending formula gives `[v_0,b] - [v_1,b]`; these are different generators of `C_1`. That is the exact content of the second warning above.
+The general argument is an induction on `n`, and it is the *only* proof of the formula for all `n`. Write `S(lambda) = b_lambda(S partial lambda)` with `partial lambda = sum_k (-1)^k partial_k lambda`. By induction the closed form is known on each `(n-1)`-simplex `partial_k lambda`, with global sign `(-1)^{(n-1)n/2}`; coning with `b_lambda` prepends the apex and keeps the coefficient of the corresponding permutation, while the factor `(-1)^k` from the boundary and the fact that coning reverses the effective vertex order contribute exactly `(-1)^n` per summand, i.e. an extra `(-1)^n` overall. Since `(n-1)n/2 + n = n(n+1)/2`, the two global signs multiply to `(-1)^{n(n+1)/2}`, which is the stated factor. The same induction shows the *ascending* formula cannot be right: coning prepends the apex, so the sub-simplices begin at `b_{Delta^n}` and their vertex lists descend.
+
+`proofs/cards/bary_regression.py` is a **bounded regression**, not a proof of the identity: it computes for `n = 1, 2, 3` only, in the free abelian group on vertex tuples, both the recursive operator and the two closed formulas, and confirms the identity there as well as refuting the old ascending formula — in dimension `1`, `S[v_0,v_1] = [b,v_1] - [b,v_0]`, whose summands are `[b,v_1]` and `[b,v_0]`, whereas the ascending formula gives `[v_0,b] - [v_1,b]`, different generators of `C_1`. It says nothing about `n >= 4`; the induction above is what covers those, and it is not formalized.
 
 :::
 
