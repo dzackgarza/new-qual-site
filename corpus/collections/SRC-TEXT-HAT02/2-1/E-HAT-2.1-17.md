@@ -64,6 +64,8 @@ audit:
 ::: {.solution}
 Let $A$ first denote a finite set of $m\ge1$ points in a connected space $X$ equal to $S^2$ or $T^2=S^1\times S^1$.
 
+If $A$ is empty there is nothing to collapse and the pair is the absolute case: $H_k(X,\emptyset)=H_k(X)$ for every $k$, so $S^2$ gives $\ZZ$ in degrees $0$ and $2$ and $0$ in degree $1$, and $T^2$ gives $\ZZ,\ZZ^2,\ZZ$ in degrees $0,1,2$. The computations below therefore assume $m\ge1$, which is exactly what makes $H_0(A)\to H_0(X)$ surjective; at $m=0$ that map is not onto and the formula $\ZZ^{m-1}$ does not extend, $H_0$ being $\ZZ$ rather than $0$.
+
 ::: pf
 
 ::: pf-step

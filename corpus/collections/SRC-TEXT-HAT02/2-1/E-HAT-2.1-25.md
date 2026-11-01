@@ -109,7 +109,7 @@ Thus maximal chains are in bijection with permutations of the vertices, and the 
 
 ::: {.pf-step #s2}
 
-The coefficient $\operatorname{sgn}(\pi)$ gives each subdivided domain simplex the orientation induced from $\Delta^n$.
+The coefficient $(-1)^{n(n+1)/2}\operatorname{sgn}(\pi)$ gives each subdivided domain simplex the orientation induced from $\Delta^n$.
 
 ::: pf-proof
 
@@ -117,7 +117,15 @@ For the identity permutation, the ordered barycentric vertices
 $$
 b_{0\cdots n},\ b_{0\cdots n-1},\ \dots,\ b_0
 $$
-are the subdivision of $[e_0,\dots,e_n]$ traversed from the top face down, and the recurrence $S\lambda=b_\lambda(S\partial\lambda)$ gives them the sign $+1$ against the orientation of $[e_0,\dots,e_n]$ in dimension $n$ for $n\equiv0,3\pmod4$ and $-1$ for $n\equiv1,2\pmod4$ — that is the factor $(-1)^{n(n+1)/2}={{}\pm1}$ displayed. Permuting the domain vertices by $\pi$ permutes these barycentric vertices in the same way, contributing $\operatorname{sgn}(\pi)$. The exact computation of the two orderings and of the global sign is the regression below.
+are the subdivision of $[e_0,\dots,e_n]$ traversed from the top face down, and the recurrence $S\lambda=b_\lambda(S\partial\lambda)$ gives them the sign $+1$ against the orientation of $[e_0,\dots,e_n]$ in dimension $n$ for $n\equiv0,3\pmod4$ and $-1$ for $n\equiv1,2\pmod4$ — that is the factor $(-1)^{n(n+1)/2}={{}\pm1}$ displayed. Permuting the domain vertices by $\pi$ permutes these barycentric vertices in the same way, contributing $\operatorname{sgn}(\pi)$.
+
+The global factor is not a convention and not a guess: it is the parity of the sum of the deletion positions along the descending chain. Going from the face $F_j=\{\pi 0,\dots,\pi j\}$ down to $F_{j-1}$ deletes the vertex $\pi j$, and its position among the vertices of $F_j$ is
+$$d_j=\#\{i\le j: \pi i<\pi j\},$$
+so the recursion's sign for the $\pi$-summand is $(-1)^{d_0+\dots+d_{n-1}}$. The diagonal terms contribute nothing, so
+$$d_0+\dots+d_{n-1}=\#\{(i,j): i<j,\ \pi i<\pi j\},$$
+the number of *noninversions* of $\pi$; and inversions plus noninversions count all pairs, $n(n+1)/2$ of them. Hence
+$$(-1)^{d_0+\dots+d_{n-1}}=(-1)^{n(n+1)/2}(-1)^{\operatorname{inv}(\pi)}=(-1)^{n(n+1)/2}\operatorname{sgn}(\pi),$$
+which is the displayed factor. The pair counts, the inversion/noninversion partition and $\operatorname{sgn}(\pi)=(-1)^{\operatorname{inv}(\pi)}$ are proved in `proofs/cards/BarySign.lean` (`card_pairSet`, `noninv_add_inv`, `sign_eq_neg_one_pow_inv`); the identification of $d_j$ with the position of the deleted vertex, and the modelling of the singular-chain recursion, are not formalized, and the $n=1,2,3$ regression below is a bounded check of the resulting chains.
 
 :::
 
