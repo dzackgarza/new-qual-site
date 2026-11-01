@@ -187,7 +187,11 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   hence `det = -2b^2 ≠ 1`); it has to come from `θ(-1/τ)^8 = τ^4 θ(τ)^8` together with (a). That is
   the structure I would expect, but I did not carry it through.
 
-- **Repair:** none attempted. The next pass on this queue starts at `E-SS10.PR-6` again, unless it
-  is closed first. What this pass did instead is `E-SS2.PR-4`, the next card, whose solution is
-  complete.
+- **Repair:** **resolved on 2026-11-01.** The card is solved: all six parts are proved and then
+  assembled through the book's own maximum-principle criterion (Chapter 10, Theorem 3.4), and the
+  identity is checked numerically for $n\le8$ by brute force. The paragraph above is kept because
+  its structural observation stands and was used: part (d) cannot be obtained from the modularity of
+  $E_4$ alone, and in the solution it is proved directly from the defining series by the bijection
+  $(m,n)\mapsto(n,-m)$, which needs no modularity at all. The next card in this queue was `E-SS2.PR-5`,
+  also now solved.
 
