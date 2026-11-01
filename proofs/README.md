@@ -167,6 +167,29 @@ means building Mathlib inside `/repos/lean-categories` with its own `lake` (the 
 dependency setup, already pinned by that `lake-manifest.json`); that build was not run here
 and no toolchain was installed.
 
+### Pinned-source API check against the canonical Mathlib (`db584cd6`)
+
+The canonical Mathlib is present in that rootfs as **source** (no build), so the names these
+proofs depend on can be checked against the revision they will have to be elaborated with.
+Grepping `…/opt/lake-packages/mathlib@db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib`:
+
+| Name | Present at `db584cd6` |
+| --- | --- |
+| `TensorProduct.prodLeft`, `prodLeft_tmul` | yes — `LinearAlgebra/TensorProduct/Prod.lean` |
+| `LinearMap.ker_prodMap` | yes |
+| `Submodule.map_comap_eq_self` | yes |
+| `Submodule.torsionBy`, `mem_torsionBy_iff` | yes — `Algebra/Module/Torsion/Basic.lean` |
+| `Submodule.torsion_eq_bot`, `isTorsionFree_iff_torsion_eq_bot` | yes, but in `RingTheory/Flat/TorsionFree.lean`, **not** in `Algebra/Module/Torsion/Basic.lean` as in this VM's tree — which is why the VM attempt to cite `Submodule.torsion_eq_bot` failed and the proof had to go through `inferInstance` |
+| `Module.Flat.rTensor_preserves_injective_linearMap` | yes |
+| `Module.free_of_finite_type_torsion_free` | yes |
+| `PreservesColimits (tensorLeft A)` | yes — `CategoryTheory/Monoidal/Closed/Basic.lean` |
+| `AlgebraicTopology/ExtraDegeneracy.lean` | present, so `extraDegeneracy` and `ExtraDegeneracy.homotopyEquiv` have a home at the canonical revision |
+
+Not yet checked at the pinned revision, and to be checked before the re-run rather than
+assumed: `DirectSum.toModule`, `LinearMap.single`, `Finset.sum_pi_single` (the three used by
+`FamilyQuotient.lean`) — the greps above matched these names only in incidental use sites, not
+at their definitions.
+
 ### Where the certificates below actually come from
 
 They were elaborated by this VM's own provision, with `/opt/lean/bin/lean` (Lean 4.33.1,
