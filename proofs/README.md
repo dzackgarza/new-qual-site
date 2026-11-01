@@ -144,22 +144,44 @@ sage proofs/cards/DeltaComplexHomology.sage
 
 ## Toolchain used by these certificates
 
-The proofs above were elaborated by the interpreter on this image, not against the reference
-snapshot under `/opt/nucleus/docs` (which is Lean 4.27.0 / Mathlib `a3a10db0e9`, a different
-version, so its names must be confirmed against the installed tree — as was done for every
-Mathlib lemma cited here).
+These proofs were elaborated by this image's own Lean against this image's own Mathlib. The
+identifiers below come from the image manifest `/opt/environment.json`, which is the
+authoritative record here — not from the reference snapshot under `/opt/nucleus/docs` (that
+snapshot is Lean 4.27.0 / Mathlib `a3a10db0e9`, a different version, so every Mathlib name
+used was checked against the installed tree).
 
-- Lean: `4.33.1`, commit `819816b2e0a3bf405af45ae5c7af2491d8f5bee6`.
-- `/opt/mathlib/lean-toolchain` reads `leanprover/lean4:v4.33.1`.
-- `/opt/mathlib` carries no git metadata, so it has no revision string. Its dependency
-  revisions are recorded in `/opt/mathlib/lake-manifest.json`: `plausible b7eb3304ae`,
-  `LeanSearchClient 5f4d51b81c`, `importGraph 16f02aa764`, `proofwidgets 4be2e3d508`,
-  `aesop 3448c0bcc5`, `Qq 92c15be17b`, `batteries 4488d40d07`, `Cli 6130a47896`.
-- Fingerprints of the two sources these proofs cite: `Mathlib/AlgebraicTopology/ExtraDegeneracy.lean`
-  `e4becd37161c31cfa81e8bfea…`, `Mathlib/LinearAlgebra/TensorProduct/Prod.lean`
-  `db6648de2b0ea1ac0afff73d4…` (sha256, truncated).
-- `TensorProduct.prodLeft_tmul` is `rfl` in this tree, and so is `prodLeft_symm_tmul`; the
-  additivity proof above relies on the former only through `prodLeft_comp_rTensor`.
+| Item | Value |
+| --- | --- |
+| Image identity | `base_sha256 4908fb59ccd4e87ae4e8e973b7ef56f535448eacb24a87fd787270c0048987bc` |
+| Launcher actually used | `/opt/lean/bin/lean` (the image's Lean, invoked directly; `lean --version` there reports `4.33.1`, commit `819816b2e0a3bf405af45ae5c7af2491d8f5bee6`) |
+| Mathlib | `/opt/mathlib`, image-recorded commit `0df444a360eaa60ab8c11dca51a86af692955474`, `lean-toolchain` = `leanprover/lean4:v4.33.1` |
+| CSLib | `/opt/cslib`, image-recorded commit `98e395a701f2027a413ad24729e1a11a6c772eb4` |
+| `LEAN_PATH` | `/opt/mathlib/...` build directories plus `/opt/cslib/.lake/build/lib/lean` and `/opt/lean/lib/lean`, as the shell environment reports |
+
+Properties of the provision, checked rather than assumed:
+
+- `/opt/mathlib` is a **directory inside the image rootfs**, on the same `ext4` filesystem as
+  `/` (`findmnt -T /opt/mathlib` reports `/dev/vda4 ext4 /`): it is neither a symlink
+  (`readlink -f` returns itself) nor a bind mount, and no `/opt/lake-packages` exists in this
+  image.
+- `/opt/mathlib` carries **no git metadata**, so it has no revision string of its own; the
+  commit above is the image manifest's record of what was installed, which is the only
+  available identification. The dependency revisions in `/opt/mathlib/lake-manifest.json`
+  (`plausible b7eb3304ae`, `LeanSearchClient 5f4d51b81c`, `importGraph 16f02aa764`,
+  `proofwidgets 4be2e3d508`, `aesop 3448c0bcc5`, `Qq 92c15be17b`, `batteries 4488d40d07`,
+  `Cli 6130a47896`) identify the *dependencies*, not Mathlib.
+- The `elan` shim on `PATH` is **not** the launcher used: `~/.elan/toolchains` holds only
+  `leanprover--lean4---v4.33.0`, and `elan` has no default toolchain configured, so bare
+  `lean` and `lake` fail on this image. No toolchain was installed, changed or defaulted to
+  make these proofs work; `/opt/lean/bin/lean` was used as provided.
+- **Discrepancy with the canonical guide.** The guide quoted for the shared image records
+  Lean/Lake **4.33.0**, launchers under `/opt/elan/bin`, and Mathlib under
+  `/opt/lake-packages/<name>@<revision>`. None of those three paths exists here, and the
+  manifest of this image records **4.33.1** instead. These certificates are therefore
+  acceptance **for this image's provision** (identifiers above), not acceptance under the
+  4.33.0 `/opt/lake-packages` setup; they should be re-run under that setup before being
+  called shared-image acceptance, and any API differences there should be adapted without
+  weakening the statements.
 
 ### Simplicial contraction infrastructure, verified in this tree
 
