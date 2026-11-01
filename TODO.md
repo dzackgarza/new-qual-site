@@ -20,7 +20,7 @@ open tasks. A prior tick alone is not evidence of that condition.
 | `certify-card-corrections` | none | A mathematical correction to a card is settled only with a Lean formalization or an exact Sage proof/certificate of the corrected claim, published under `proofs/`. Both corrections are certified (`P-FHW1-01`, `P-TAMURAS15-10`), and the six Sage homology checks passed on the supported Sage development image (Sage 11.0.beta5, Python 3.14.10, source HEAD `b0cd7d86e2`). |
 | `ad-source-gaps-nus` | none | Recover the NUS 1970 examination papers, or leave `SRC-NUS-CA-1970-SPRING` and `SRC-NUS-RA-1970-SPRING` marked as imported-only in their provenance and title. A dataset that answers *what the import said* does not answer *what the examination asked*. |
 | `audited-deployment` | `ad-text-hart77`, `ad-text-hun74`, `ad-text-smi`, `ad-text-hat02`, `ad-text-mun00`, `ad-text-ss03-gaps`, `ad-text-hk71-locators`, `ad-source-gaps-nus` | Finish the reading checklist and all repairs; only then close this node. |
-| `unsolved-contribution` | none | Continue issue #2 by selecting, reading, proving, reviewing, and committing each unsolved problem card in source order. |
+| `unsolved-contribution` | none | Continue issue #2 by selecting, reading, proving, reviewing, and committing each unsolved problem card in source order. **Closed 2026-11-01: the queue is empty.** `tools/unsolved_queue.py` regenerates `queues/C-unsolved-cards.md` at 0 cards, from 86 when the queue was first generated and 51 when this pass began. |
 
 `ad-source-gaps` is closed for three of its four questions, each settled from a source document;
 the fourth, the NUS 1970 collections, is not settled and is now the open node `ad-source-gaps-nus`.
