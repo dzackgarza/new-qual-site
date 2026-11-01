@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem cards
 
-35 problem cards have no solution section. These are
+34 problem cards have no solution section. These are
 the cards issue #2 targets: write a Lamport-style structured proof for each.
 
 Regenerate with `just unsolved` after a card gains a solution. CI publishes
@@ -10,11 +10,10 @@ regeneration, and writing the solution removes the line.
 
 ## Count
 
-- Problems: 35
+- Problems: 34
 
-## Problems (35)
+## Problems (34)
 
-- [ ] E-SS8.PR-4 — "SU(1,1) and automorphisms of the unit disc"
 - [ ] E-SS8.PR-5 — "Zeros of bounded holomorphic functions on the upper half-plane"
 - [ ] E-SS8.PR-6 — "Boundary extension for a Jordan domain"
 - [ ] E-SS8.PR-7 — "Koebe's construction of a Riemann map"
