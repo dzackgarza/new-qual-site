@@ -131,6 +131,40 @@ audit:
     reciprocal convention in the script, not the theorem. Also removed from this card: the paragraph
     headed "A second, independent way the residues can matter", which asserted that the product system
     could be unsolvable -- false, by Theorem 8 -- and the earlier "open" status paragraph.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Consolidated the reduction analysis into a single development and renumbered it, so that the
+    historical notes above do not compete with what the card now says. The live statements are now:
+    Lemma 1 (the two-operation criterion, both equations needed and why), Lemma 2 (which of the two
+    equations bites, in the three cases e=0, 0<e=f, 0<e<f), Theorem 3 (the valuation vector determines
+    the reduction), Theorem 4 (the reduction sees exactly the two bits), Corollary 5 (reductions are
+    isomorphic iff the least degrees agree and the flags (delta, epsilon) agree). Four defects found
+    while consolidating and fixed. (i) Corollary 5 was stated as an iff over ALL forms of Q[alpha], but
+    the flag does not determine the least degree d: the polynomial forms with d=1 and with d=2 have
+    identical flags on every pair and yet their reductions have different graded dimensions (B_1 = Z/2
+    for d=1, B_1 = 0 for d=2). Proved, not sampled: for p=2 Kummer's formula gives
+    v_2(C(n,k)) = s_2(k)+s_2(n-k)-s_2(n), and with i=2a+eps, j=2b+eta the two families
+    C(i+j,i) and C(floor((i+j)/2), floor(i/2)) have the same 2-adic valuation in each of the three
+    parity cases, while for i,j both odd the d=1 coefficient is 0 and C(i+j,i) is even, so both second
+    bits are 0 there. Checked the valuation identity by machine for a,b<400 as well. The corollary, Theorem 3 and
+    Theorem 4 now carry the hypothesis that the two forms share d, and a sentence states why that
+    loses nothing. (ii) The card asserted the polynomial form has delta=epsilon=0 for all i,j. The
+    second bit is [e_ij = f_ij] = [0 = v_p(b_ij)] = [p does not divide b_ij], which is NOT identically
+    zero: for d even and p=2, b_12 = 3 so epsilon_12 = 1. Corrected, with that example recorded.
+    (iii) The divided-power form was described as m_ij = b_ij without restricting d; for d odd, b_ij = 0
+    whenever i and j are both odd, so m_ij = b_ij is not a positive integer and no such form exists.
+    The item now says the divided-power form is the d even case only. (iv) Lemma 2(a) said both
+    equations "reduce to" the same thing when e_ij = 0; that is right only when b_ij is a p-unit, since
+    when b_ij = 0 mod p the coproduct equation is vacuous while the product equation is not. Both
+    the lemma and its proof now say which of the two happens. Also checked and NOT changed: the
+    three case computations of Theorem 3 (each verified by hand), the cocycle and divisor conditions
+    of the classification of forms, the vanishing b_ij for i,j both odd when d is odd, and the
+    non-isomorphism of the divided-power reduction to F_p[alpha] via x_1^p = p! x_p = 0. Not claimed
+    and said so on the card: no realisation theorem for every flag pattern, and no decision
+    procedure -- Corollary 5 is a criterion, and the underlying equation system is infinite.
+    Not checked: no independent source beyond Hatcher p.292 (PDF page 301), which was read again.
 ---
 
 ::: {.problem}
@@ -213,135 +247,86 @@ m_{ij}=\binom{i+j}{i},
 $$
 which gives the divided-power Hopf algebra $\Gamma_{\ZZ}[t]$. For odd $d$, the polynomial form still has $m_{ij}=1$, while the vanishing $b_{ij}$ allow further integral forms.
 
-Now fix a prime $p$ and reduce modulo $p$. With $\bar x_n$ denoting the image of $x_n$, every reduction arising from an integral form above has
+Now fix a prime $p$, put $B=A\otimes\FF_p$, and write $\bar x_n$ for the image of $x_n$; the $\bar x_n$ are an $\FF_p$-basis of $B$, one vector in each degree $nd$. The structure constants of $B$ are
 $$
-\bar x_i\bar x_j=\overline{m_{ij}}\,\bar x_{i+j},
-$$
-$$
-\Delta(\bar x_n)
-=\sum_{i=0}^n
-\overline{\frac{b_{i,n-i}}{m_{i,n-i}}}
-\,\bar x_i\otimes\bar x_{n-i}.
-$$
-The $p$-adic valuations
-$$
-e_{ij}=v_p(m_{ij})
-$$
-satisfy
-$$
-0\le e_{ij}\le v_p(b_{ij}),
+\bar x_i\bar x_j=\bar m_{ij}\,\bar x_{i+j},
 \qquad
-e_{i0}=e_{0i}=0,
-$$
-and the additive cocycle relation
-$$
-e_{ij}+e_{i+j,k}=e_{jk}+e_{i,j+k},
-$$
-because divisibility and the product cocycle pass to valuations. Here $v_p(0)=\infty$, so a zero coproduct coefficient imposes no upper bound. But $e_{ij}$ records only whether $\overline{m_{ij}}$ vanishes: $m_{ij}=p$ and $m_{ij}=p^2$ reduce alike, and when $e_{ij}=0$ the reduction still depends on the residue in $\FF_p^\times$. Likewise a rescaling $x_n\mapsto u_nx_n$ with $u_n\in\FF_p^\times$ changes $\overline{m_{ij}}$ to $\overline{m_{ij}}u_iu_j/u_{i+j}$, so forms with different residues can have isomorphic reductions. The valuations therefore give the *vanishing pattern* of the reduction, a necessary invariant, not the mod-$p$ Hopf algebra itself.
-
-### The classification of the reductions
-
-Write $\bar x_n$ for the image of $x_n=q_nt^n$ in $B=A\otimes\FF_p$, so that $\{\bar x_n\}$ is an $\FF_p$-basis with $\deg\bar x_n=nd$ and $\bar x_0=1$. Since $A_n$ is free of rank one, $B$ has one basis vector in each degree $nd$ and none elsewhere. An isomorphism of graded Hopf algebras $B\to B'$ is therefore given by $\bar x_n\mapsto u_n\bar y_n$ with $u_n\in\FF_p^\times$ and $u_0=1$, and it carries the structure constants to
-$$
-\bar m_{ij}\longmapsto \bar m_{ij}\,\frac{u_iu_j}{u_{i+j}},
+\Delta(\bar x_n)=\sum_{i+j=n}\bar c_{ij}\,\bar x_i\otimes\bar x_j,
 \qquad
-\overline{b_{ij}/m_{ij}}\longmapsto \overline{b_{ij}/m_{ij}}\,\frac{u_{i+j}}{u_iu_j},
+\bar c_{ij}=\overline{\frac{b_{ij}}{m_{ij}}},
 $$
-the two transformations being inverse, so it is enough to record the product constants. Normalise the basis once and for all by $q_1=1$, which leaves every $m_{ij}$ unchanged because $q_n\mapsto q_nc^n$ does not move $m_{ij}=q_iq_j/q_{i+j}$.
+where $\bar m_{ij}=m_{ij}\bmod p$ and $\bar c_{ij}$ is the reduction of the integer $c_{ij}=b_{ij}/m_{ij}$. Throughout, $e_{ij}:=v_p(m_{ij})$ and $f_{ij}:=v_p(b_{ij})$, with $v_p(0)=\infty$; the divisibility $m_{ij}\mid b_{ij}$ gives $e_{ij}\le f_{ij}$ always, and $b_{ij}=0$ (which happens only when $d$ is odd and $i,j$ are both odd) gives $f_{ij}=\infty$ and no condition.
 
-**Proposition 1 (the orbit space).** *The isomorphism classes of reductions are the orbits of the action of $(\FF_p^\times)^{\NN}$ on the reduced cocycles $(\bar m_{ij})$, and the support $\{(i,j):\bar m_{ij}=0\}$ is an isomorphism invariant.*
+Two forms are only compared when they share their least degree $d$, hence their $b_{ij}$ and their $f_{ij}$. Nothing is lost: a form whose least degree is $d$ has $B=0$ in every degree that is not a multiple of $d$, so reductions of forms with different $d$ are already non-isomorphic as graded vector spaces. The hypothesis is not vacuous bookkeeping. The two polynomial forms with $d=1$ and $d=2$ have *identical* flags, and their reductions are not isomorphic. Their flags agree: both have $\delta\equiv0$, and for $p=2$ the second bit is $[\,v_2(b_{ij})=0\,]$, where $b_{ij}=\binom{i+j}{i}$ for $d=2$ and $b_{ij}=0$ for $i,j$ both odd and $\binom{\lfloor (i+j)/2\rfloor}{\lfloor i/2\rfloor}$ otherwise for $d=1$; Kummer's formula gives $v_2\binom{n}{k}=s_2(k)+s_2(n-k)-s_2(n)$, and writing $i=2a+\epsilon$, $j=2b+\eta$ it gives the same value $s_2(a)+s_2(b)-s_2(a+b)$ for both families in each of the three parity cases, while for $i,j$ both odd the $d=1$ coefficient vanishes and $\binom{i+j}{i}$ is even. Yet $B_1=\ZZ/2$ for $d=1$ and $B_1=0$ for $d=2$.
 
-*Proof.* The action displayed above is the action of the change of basis, and two bases of $B$ differ by such a $(u_n)$, so the orbits are exactly the isomorphism classes. If $\bar m_{ij}=0$ then $\bar m_{ij}u_iu_j/u_{i+j}=0$ for every choice of units, so a zero structure constant cannot be removed; hence the support is invariant. $\square$
-
-**Proposition 2 (no vanishing below degree $p$).** *If $p\nmid m_{ij}$ for all $i,j$ then $B\cong\FF_p[x]$ with $x=\bar x_1$ of degree $d$. More generally $p\mid m_{ij}$ forces $p\mid b_{ij}$, so for $i+j<p$ no $m_{ij}$ is divisible by $p$; consequently every reduction agrees with $\FF_p[x]$ in degrees $<pd$.*
-
-*Proof.* From $m_{1,j}=q_1q_j/q_{1+j}$ and $q_1=1$ we get $q_n=\prod_{j=1}^{n-1}m_{1,j}^{-1}$. If all $m_{ij}$ are $p$-units then every $q_n$ is a $p$-unit, so $u_n:=q_n^{-1}\bmod p$ is a well-defined unit and $\bar m_{ij}u_iu_j/u_{i+j}=\bar m_{ij}\bar m_{ij}^{-1}=1$: after this rescaling all structure constants are $1$, and the coproduct constants become $\overline{b_{ij}/m_{ij}}\cdot1=\overline{b_{ij}}$, which is the coproduct of the polynomial Hopf algebra. For the second statement, integrality of the coproduct says $m_{ij}\mid b_{ij}$ in $\ZZ$, so $p\mid m_{ij}$ implies $p\mid b_{ij}$; and for $i+j<p$ the binomial coefficient $b_{ij}=\binom{i+j}{i}$ is not divisible by $p$ (no carry occurs in adding $i$ and $j$ in base $p$, by Lucas' theorem), so $p\nmid m_{ij}$. $\square$
-
-**Proposition 3 (the two extremes differ).** *For $d$ even, $\Gamma_{\ZZ}[t]\otimes\FF_p$ is not isomorphic to $\FF_p[t]$ as a graded algebra.*
-
-*Proof.* In $\Gamma_{\ZZ}[t]$ one has $\gamma_1^n=n!\,\gamma_n$, so in $\Gamma_{\ZZ}[t]\otimes\FF_p$ the element $\bar\gamma_1$ satisfies $\bar\gamma_1^{\,p}=\overline{p!}\,\bar\gamma_p=0$, while $\bar\gamma_p\neq0$ because $\gamma_p$ is a basis vector and $\Gamma_{\ZZ}$ is free. In $\FF_p[t]$ the $p$-th power map from degree $d$ to degree $pd$ is injective. A graded isomorphism preserves support of elements and $p$-th powers, so none exists. $\square$
-
-**Proposition 4 (the reductions with entries in $\{0,1\}$).** *Let $e_{ij}$ satisfy the conditions recorded above, let $m_{ij}=p^{e_{ij}}$ with valuation $0$ at every other prime, and let $S=\{(i,j):e_{ij}>0\}$. The reduction of the resulting form has $\bar m_{ij}=0$ on $S$ and $\bar m_{ij}=1$ off $S$, and two such reductions are isomorphic if and only if $S=S'$.*
-
-*Proof.* $\bar m_{ij}$ is $0$ or $1$ by construction, and the coproduct constant is $\overline{b_{ij}/m_{ij}}=\overline{b_{ij}/m_{ij}}$, an integer by the criterion. Proposition 1 gives that the support is an invariant; conversely, if $S=S'$ then the identity rescaling $u_n=1$ already makes the two reduced cocycles equal. $\square$
-
-So for this family the answer to the exercise's second question is complete: the reductions are exactly the $\FF_p$-Hopf algebras with $\bar x_i\bar x_j=\bar x_{i+j}$ off an admissible $S$ and $\bar x_i\bar x_j=0$ on $S$, one for each admissible $S$, and admissible $S$ are those of the form $\{e_{ij}>0\}$ for a divisor cocycle $e$ with $e_{ij}\le v_p(b_{ij})$ and $e_{i0}=e_{0i}=0$ — the converse construction recorded below shows every such $S$ occurs.
-
-**Proposition 5 (the general normalisation problem is a linear system).** *Let $g$ generate $\FF_p^\times$ and write $\bar m_{ij}=g^{c_{ij}}$ for $(i,j)\notin S$. A rescaling $(u_n)$ exists if and only if there are $v_n\in\ZZ/(p-1)$ with $u_n=g^{v_n}$ satisfying*
+**Lemma 1 (the two-operation criterion).** *A graded linear map $\phi(\bar x_n)=u_n\bar y_n$ with $u_n\in\FF_p^\times$ between two such reductions is an isomorphism of Hopf algebras if and only if, for all $i,j$,*
 $$
-v_{i+j}\equiv c_{ij}+v_i+v_j \pmod{p-1}\qquad\text{for every }(i,j)\notin S .
+\bar m'_{ij}\,u_iu_j=\bar m_{ij}\,u_{i+j}
+\qquad\text{and}\qquad
+\bar c'_{ij}\,u_{i+j}=\bar c_{ij}\,u_iu_j .
 $$
-*This system is triangular: each equation has index $i+j$ exceeding both $i$ and $j$, so it determines $v_{i+j}$ from earlier values and the system is solvable if and only if, for every $n$ and every two pairs $(i,n-i),(j,n-j)\notin S$, the two resulting values of $v_n$ agree.*
+*Proof.* The first equation is $\phi(x_ix_j)=\phi(x_i)\phi(x_j)$ and the second is $(\phi\otimes\phi)\Delta=\Delta\phi$; a map of graded Hopf algebras preserves the unit, the counit, the product and the coproduct, and a graded linear map carrying basis vector to basis vector does this exactly when both families of structure constants agree after transport. Both equations are needed: where $\bar m_{ij}=0$ the first is vacuous while the second need not be. $\square$
 
-*Proof.* $u_{i+j}=\bar m_{ij}u_iu_j$ is exactly the displayed congruence after taking logarithms to base $g$; that the map $n\mapsto v_n$ determines and is determined by $u_n$ is the definition. For the triangularity, an equation with $i+j=n$ involves only $v_n$ among the indices $\ge n$, and $v_i,v_j$ with $i,j<n$ — including $i=0$, where $v_0=0$ — so solving proceeds by increasing $n$, and at step $n$ each pair $(i,n-i)\notin S$ proposes a value for $v_n$; the system is consistent exactly when all proposals agree. $\square$
+**Lemma 2 (which of the two equations bites).** *Assume $e_{ij}=e'_{ij}$ for all $i,j$, so that $\bar m_{ij}=0\iff\bar m'_{ij}=0$ and $\bar c_{ij}=0\iff\bar c'_{ij}=0$.*
+*(a) If $e_{ij}=0$ both equations are satisfied by $u_{i+j}=(\bar m'_{ij}/\bar m_{ij})u_iu_j$; where $\bar b_{ij}\ne0$ the second is equivalent to the first, and where $\bar b_{ij}=0$ the second is vacuous and only the first bites.*
+*(b) If $0<e_{ij}=f_{ij}$ then $\bar m_{ij}=\bar m'_{ij}=0$ and the second equation reduces to $u_{i+j}=(\bar c_{ij}/\bar c'_{ij})u_iu_j$, both coproduct constants being non-zero.*
+*(c) If $0<e_{ij}<f_{ij}$ then $\bar m_{ij}=\bar m'_{ij}=0$ and $\bar c_{ij}=\bar c'_{ij}=0$, so both equations are vacuous.*
 
-Proposition 5 is not a negative result: it converts the classification into a finite linear problem, and it also shows when the problem disappears.
+*Proof.* In (a), $m_{ij}$ and $m'_{ij}$ are $p$-units so the coproduct constants are $\bar b_{ij}/\bar m_{ij}$ and $\bar b_{ij}/\bar m'_{ij}$ with the same $\bar b_{ij}$ — both forms are forms of the same $\QQ[\alpha]$ with the same $b_{ij}$ — and the two equations are then equivalent when $\bar b_{ij}\ne0$ (dividing by $\bar b_{ij}$) and the second is vacuous when $\bar b_{ij}=0$. In (b), $c_{ij}=b_{ij}/m_{ij}$ has $v_p(c_{ij})=f_{ij}-e_{ij}=0$, so $\bar c_{ij}\ne0$ and likewise $\bar c'_{ij}\ne0$, while both product constants vanish. In (c), $f_{ij}>e_{ij}>0$ gives $v_p(c_{ij})>0$ and the same for $c'_{ij}$. Finally $e_{ij}\le f_{ij}$ always, so these are the only cases. $\square$
 
-**Theorem 6 (an isomorphism must preserve both operations, and the coproduct is why the valuation data is not enough).** *Let $\bar x_n\mapsto u_n\bar y_n$, $u_n\in\FF_p^\times$, be a graded linear map between two reductions. It is an isomorphism of Hopf algebras if and only if both*
+**Theorem 3 (the valuation vector determines the reduction).** *Let $A,A'$ be forms with the same least degree $d$. If $v_p(m_{ij})=v_p(m'_{ij})$ for all $i,j$ then $B\cong B'$ as graded Hopf algebras.*
+
+*Proof.* Write $q_n=p^{\tau_n}\sigma_n$ and $q'_n=p^{\tau'_n}\sigma'_n$ with $\sigma_n,\sigma'_n\in\ZZ_p^\times$, the exponents possibly negative, and set
 $$
-\bar m'_{ij}\,u_iu_j=\bar m_{ij}\,u_{i+j},
+\omega_n:=\frac{\sigma_n}{\sigma'_n}\bmod p\ \in\FF_p^\times,
+\qquad\text{so that}\qquad
+\mu_{ij}:=\frac{m_{ij}}{p^{e_{ij}}}=\frac{\sigma_i\sigma_j}{\sigma_{i+j}},\quad
+\mu'_{ij}=\frac{\sigma'_i\sigma'_j}{\sigma'_{i+j}} .
+$$
+Take $u_n=\omega_n$ in Lemma 1 and go through Lemma 2's cases.
+
+*Case (a), $e_{ij}=0$.* Then
+$$
+\bar m'_{ij}\omega_i\omega_j=\frac{\sigma'_i\sigma'_j}{\sigma'_{i+j}}\cdot\frac{\sigma_i\sigma_j}{\sigma'_i\sigma'_j}=\frac{\sigma_i\sigma_j}{\sigma'_{i+j}}
+=\frac{\sigma_i\sigma_j}{\sigma_{i+j}}\cdot\frac{\sigma_{i+j}}{\sigma'_{i+j}}=\bar m_{ij}\omega_{i+j}.
+$$
+*Case (b), $0<e_{ij}=f_{ij}$.* Put $\beta_{ij}=b_{ij}/p^{f_{ij}}\bmod p\ne0$, so $\bar c_{ij}=\beta_{ij}/\mu_{ij}$ and $\bar c'_{ij}=\beta_{ij}/\mu'_{ij}$. Then
+$$
+\bar c'_{ij}\omega_{i+j}=\frac{\beta_{ij}\sigma'_{i+j}}{\sigma'_i\sigma'_j}\cdot\frac{\sigma_{i+j}}{\sigma'_{i+j}}=\frac{\beta_{ij}\sigma_{i+j}}{\sigma'_i\sigma'_j}
+=\frac{\beta_{ij}\sigma_{i+j}}{\sigma_i\sigma_j}\cdot\frac{\sigma_i\sigma_j}{\sigma'_i\sigma'_j}=\bar c_{ij}\omega_i\omega_j .
+$$
+*Case (c)* is vacuous on both sides. Hence the single choice $u_n=\omega_n$ satisfies every constraint, and $\phi$ preserves multiplication and comultiplication. $\square$
+
+**Theorem 4 (what the reduction sees).** *Let $A,A'$ be forms with the same least degree $d$. If $B\cong B'$ as graded Hopf algebras then for every pair $i,j$,*
+$$
+[\,v_p(m_{ij})>0\,]=[\,v_p(m'_{ij})>0\,]
+\qquad\text{and}\qquad
+[\,v_p(m_{ij})=v_p(b_{ij})\,]=[\,v_p(m'_{ij})=v_p(b_{ij})\,].
+$$
+
+*Proof.* In any isomorphism the $u_n$ are units, so in Lemma 1's first equation $\bar m_{ij}=0\iff\bar m'_{ij}=0$, giving the first equality; and in the second $\bar c_{ij}=0\iff\bar c'_{ij}=0$, which by $e_{ij}\le f_{ij}$ and $v_p(c_{ij})=f_{ij}-e_{ij}$ is the second. $\square$
+
+Define the **flag** of a form to be the pair of bits
+$$
+\delta_{ij}(A)=[\,e_{ij}>0\,],
 \qquad
-\bar c'_{ij}\,u_{i+j}=\bar c_{ij}\,u_iu_j
-\qquad\text{for all } i,j,
+\varepsilon_{ij}(A)=[\,e_{ij}=f_{ij}\,],
+\qquad i,j\ge1 .
 $$
-*where $\bar c_{ij}=\overline{b_{ij}/m_{ij}}$ is the reduced coproduct constant.*
 
-*Proof.* The first equation is $\phi(x_ix_j)=\phi(x_i)\phi(x_j)$, the second is $(\phi\otimes\phi)\Delta=\Delta\phi$; a map of graded Hopf algebras must satisfy both, and together they are sufficient because the algebra and the coalgebra generate. $\square$
+**Corollary 5 (the classification).** *For forms $A,A'$ of $\QQ[\alpha]$ with least degrees $d,d'$: there is an isomorphism of graded Hopf algebras $A\otimes\FF_p\cong A'\otimes\FF_p$ if and only if $d=d'$, $\delta(A)=\delta(A')$ and $\varepsilon(A)=\varepsilon(A')$.*
 
-Three consequences, none of which the product constants alone see.
+*Proof.* If the reductions are isomorphic as graded vector spaces then $d=d'$, since $d$ is the least positive degree in which $B$ is nonzero; and given that, the flags agree by Theorem 4. Conversely, if $d=d'$ and the flags agree, then at every pair the trichotomy of Lemma 2 falls in the same case for both forms, and the computation of Theorem 3 — which uses only the case, not the size of $e_{ij}$ — supplies an isomorphism. $\square$
 
-*(i) The two equations are equivalent only where the constants are non-zero.* If $p\nmid m_{ij}$ and $p\nmid m'_{ij}$ then $\bar c_{ij}=\bar b_{ij}/\bar m_{ij}$ and $\bar c'_{ij}=\bar b_{ij}/\bar m'_{ij}$ with the same $\bar b_{ij}$ — both are forms of the same $\QQ[\alpha]$ — so the pair of equations is equivalent. If $\bar m_{ij}=0$ the first equation says nothing, and the second still does.
+**Which flag patterns are classified, and what realises them.** The corollary classifies reductions by flags, so the answer to the exercise's second question is: *the Hopf algebras $A\otimes\ZZ_p$ arising are one isomorphism class for each flag pattern that is realised by an integral form, and no claim is made that every pattern is realised.* Three families are realised explicitly.
 
-*(ii) So the support does not determine the reduction, not even for $p=2$.* Take $d$ even, so $b_{ij}=\binom{i+j}{i}$, and put $f_{ij}=v_p(b_{ij})=s_p(i)+s_p(j)-s_p(i+j)$ (Legendre's formula), a valuation cocycle because that expression is symmetric in $(i,j,k)$. Then $m_{ij}=p^{f_{ij}}$ is an integral form with $m_{ij}\mid b_{ij}$ and the cocycle satisfied. For a pair with $f_{ij}\ge1$ one has $\bar m_{ij}=0$, but $\bar c_{ij}=\overline{b_{ij}/m_{ij}}$ is $0$ or $1$ according to whether $v_p(m_{ij})<v_p(b_{ij})$ or $=v_p(b_{ij})$. Hence two forms that agree on which constants vanish and differ in $v_p$ at a pair with $f_{ij}\ge2$ — say $v_p(m_{13})=1$ against $v_p(m_{13})=2$ at $(1,3)$, where $b_{13}=4$ — have the same support but $\bar c'_{13}=0\ne1=\bar c_{13}$, and no choice of $u$ can satisfy the second equation. In particular the previous note on this card, which asserted that the support classifies the reductions for $p=2$ because $\FF_2^\times=\{1\}$, **was wrong**: over $\FF_2$ every non-zero product constant is indeed $1$, but a coproduct constant can be $0$ or $1$ according to the exact valuation, and the second equation sees it.
+1. *The polynomial form*, $m_{ij}=1$ for all $i,j$: here $e_{ij}=0$, so $\delta_{ij}=0$ for every $i,j$, while $\varepsilon_{ij}=[\,0=f_{ij}\,]=[\,p\nmid b_{ij}\,]$ is **not** identically zero — for $d$ even and $p=2$ one has $b_{12}=3$, so $\varepsilon_{12}=1$. The reduction is $B=\FF_p[\bar x_1]$, a polynomial algebra on the generator $\bar x_1$, since $\bar x_i\bar x_j=\bar x_{i+j}$.
 
-*(iii) What the reduction does depend on* is, for each $(i,j)$, the pair of bits $\{\bar m_{ij}=0\}$ and $\{\bar c_{ij}=0\}$ — equivalently the comparisons $v_p(m_{ij})>0$ and $v_p(m_{ij})=v_p(b_{ij})$. Both are read off the valuation vector $e_{ij}=v_p(m_{ij})$, which is therefore a strictly finer invariant than the support.
+2. *The divided-power form*, which exists when $d$ is even: $m_{ij}=b_{ij}=\binom{i+j}{i}>0$, so $e_{ij}=f_{ij}$ and $\varepsilon_{ij}=1$ for all $i,j$, while $\delta_{ij}=[\,p\mid\binom{i+j}{i}\,]$. (For $d$ odd there is no such form: $b_{ij}=0$ whenever $i,j$ are both odd, and $m_{ij}$ must be a positive integer.) This is not isomorphic to $\FF_p[\alpha]$: here $\bar x_1^{\,p}=p!\,\bar x_p=0$ while $\bar x_p\ne0$, whereas in $\FF_p[\alpha]$ the $p$-th power map is injective.
 
-**Theorem 7 (the classification is the solvability of an explicit system).** *Two reductions are isomorphic if and only if the system of the two equations of Theorem 6 has a solution $u\in(\FF_p^\times)^\NN$. For forms agreeing on the two bits of (iii), that system is the linear system of Proposition 5 over $\ZZ/(p-1)$, so for any fixed pair of forms the question is decidable.*
+3. *The whole family $m_{ij}=p^{e_{ij}}$*, for any non-negative integers $e_{ij}$ with $e_{ij}\le f_{ij}$ satisfying the valuation cocycle $e_{ij}+e_{i+j,k}=e_{jk}+e_{i,j+k}$ and $e_{i0}=e_{0i}=0$: these are admissible integral data, by the divisor and cocycle conditions of the classification of forms, and they realise exactly the patterns $\delta_{ij}=[e_{ij}>0]$, $\varepsilon_{ij}=[e_{ij}=f_{ij}]$ that arise from such a valuation cocycle. Item 1 is the member $e\equiv0$ of this family; item 2 is *not* a member, since its $m_{ij}=\binom{i+j}{i}$ need not be a power of $p$.
 
-*Proof.* Immediate from Theorem 6 and Proposition 5. $\square$
+**What is not claimed.** Three things, stated so that no later reader takes them from this card. First, no claim that *every* flag pattern is realised: what is proved is that a realised pattern determines the class, and that the patterns in item 3 are realised; characterising the realisable patterns among all pairs of bits is left open. Some patterns are certainly not realisable — at a pair with $p\nmid b_{ij}$ one has $f_{ij}=0$, so $e_{ij}\le f_{ij}$ forces $e_{ij}=0$ and hence the flag $(0,1)$ at that pair, and at a pair with $b_{ij}=0$ one has $f_{ij}=\infty$ and hence $\varepsilon_{ij}=0$; but no full characterisation is given. Second, no decision procedure is claimed for comparing two reductions: Corollary 5 gives a *condition* — equality of flags — and the flags form an infinite family of bits, which is not an algorithm. Third, reductions are compared only between forms with the same least degree $d$; across different $d$ nothing is claimed beyond the observation recorded before Lemma 1, that the graded dimensions already differ. The parity hypothesis is kept as the book's: for $d$ even all $b_{ij}=\binom{i+j}{i}$ are non-zero, while for $d$ odd the pairs with $i,j$ both odd have $b_{ij}=0$, hence $f_{ij}=\infty$, hence $\varepsilon_{ij}=0$ there for every form, so those pairs contribute only $\delta_{ij}$ to the flag.
 
-**Theorem 8 (the valuation vector determines the reduction).** *Let $A,A'$ be two forms with $m_{ij},m'_{ij}$ their structure constants in the bases normalised by $q_1=q'_1=1$. If $v_p(m_{ij})=v_p(m'_{ij})$ for all $i,j$, then $A\otimes\FF_p\cong A'\otimes\FF_p$.*
-
-*Proof.* Write $q_n=p^{\tau_n}\sigma_n$ and $q'_n=p^{\tau'_n}\sigma'_n$ with $\sigma_n,\sigma'_n\in\ZZ_p^\times$ (the $\tau$'s may be negative), and put $\omega_n=\sigma_n/\sigma'_n\bmod p\in\FF_p^\times$. Define $\phi(\bar x_n)=\omega_n\bar y_n$; by Theorem 6 it suffices to check the two equations at every pair.
-
-Both forms are forms of the same $\QQ[\alpha]$ with $x_1=t$, so $b_{ij}=b'_{ij}$; write $\mu_{ij}=m_{ij}/p^{e_{ij}}\bmod p$ and $\mu'_{ij}=m'_{ij}/p^{e_{ij}}\bmod p$ for the unit parts, which are $\sigma_i\sigma_j/\sigma_{i+j}$ and $\sigma'_i\sigma'_j/\sigma'_{i+j}$ respectively because $m_{ij}=q_iq_j/q_{i+j}$.
-
-*Case $e_{ij}=0$.* Then $m_{ij},m'_{ij}$ are $p$-units and the first equation is the only constraint. Using $\mu_{ij}=\sigma_i\sigma_j/\sigma_{i+j}$,
-$$
-\bar m'_{ij}\omega_i\omega_j=\mu'_{ij}\frac{\sigma_i\sigma_j}{\sigma'_i\sigma'_j}=\frac{\sigma'_i\sigma'_j}{\sigma'_{i+j}}\cdot\frac{\sigma_i\sigma_j}{\sigma'_i\sigma'_j}=\frac{\sigma_i\sigma_j}{\sigma'_{i+j}},
-$$
-$$
-\bar m_{ij}\omega_{i+j}=\mu_{ij}\frac{\sigma_{i+j}}{\sigma'_{i+j}}=\frac{\sigma_i\sigma_j}{\sigma_{i+j}}\cdot\frac{\sigma_{i+j}}{\sigma'_{i+j}}=\frac{\sigma_i\sigma_j}{\sigma'_{i+j}} .
-$$
-*Case $e_{ij}>0$ and $e_{ij}=v_p(b_{ij})>0$.* Then $\bar m_{ij}=\bar m'_{ij}=0$ and the constraint is the second equation. With $\beta_{ij}=b_{ij}/p^{f_{ij}}\bmod p\ne0$ one has $\bar c_{ij}=\beta_{ij}/\mu_{ij}$ and $\bar c'_{ij}=\beta_{ij}/\mu'_{ij}$, so
-$$
-\bar c'_{ij}\omega_{i+j}=\frac{\beta_{ij}}{\mu'_{ij}}\cdot\frac{\sigma_{i+j}}{\sigma'_{i+j}}
-=\frac{\beta_{ij}\sigma'_{i+j}}{\sigma'_i\sigma'_j}\cdot\frac{\sigma_{i+j}}{\sigma'_{i+j}}
-=\frac{\beta_{ij}\sigma_{i+j}}{\sigma'_i\sigma'_j},
-$$
-$$
-\bar c_{ij}\omega_i\omega_j=\frac{\beta_{ij}}{\mu_{ij}}\cdot\frac{\sigma_i\sigma_j}{\sigma'_i\sigma'_j}
-=\frac{\beta_{ij}\sigma_{i+j}}{\sigma_i\sigma_j}\cdot\frac{\sigma_i\sigma_j}{\sigma'_i\sigma'_j}
-=\frac{\beta_{ij}\sigma_{i+j}}{\sigma'_i\sigma'_j} .
-$$
-*Case $e_{ij}>0$ and $e_{ij}<v_p(b_{ij})$.* Then $\bar m_{ij}=\bar m'_{ij}=0$ and $\bar c_{ij}=\bar c'_{ij}=0$, so both equations are vacuous. These are the only cases, since $m_{ij}\mid b_{ij}$ gives $e_{ij}\le v_p(b_{ij})$ always. Hence $\phi$ preserves both operations. $\square$
-
-**Theorem 9 (the reduction sees exactly two bits per pair).** *If $A\otimes\FF_p\cong A'\otimes\FF_p$ then for every pair $i,j$: $[v_p(m_{ij})>0]=[v_p(m'_{ij})>0]$ and $[v_p(m_{ij})=v_p(b_{ij})]=[v_p(m'_{ij})=v_p(b_{ij})]$.*
-
-*Proof.* In the isomorphism the $u_n$ are units, so the first equation of Theorem 6 shows $\bar m_{ij}=0\iff\bar m'_{ij}=0$, i.e. $v_p(m_{ij})>0\iff v_p(m'_{ij})>0$; and the second shows $\bar c_{ij}=0\iff\bar c'_{ij}=0$, which with $m_{ij}\mid b_{ij}$ is $v_p(m_{ij})=v_p(b_{ij})\iff v_p(m'_{ij})=v_p(b_{ij})$. $\square$
-
-**Corollary (the classification asked for by the exercise).** *Define the flag of a form by the two bits*
-$$
-\delta_{ij}(A)=[\,v_p(m_{ij})>0\,],
-\qquad
-\varepsilon_{ij}(A)=[\,v_p(m_{ij})=v_p(b_{ij})\,].
-$$
-*Then $A\otimes\FF_p\cong A'\otimes\FF_p$ if and only if $\delta(A)=\delta(A')$ and $\varepsilon(A)=\varepsilon(A')$.*
-
-*Proof.* The proof of Theorem 8 uses the valuation vector only through the trichotomy of its three cases, which is exactly the pair of bits $(\delta,\varepsilon)$: equal flags force equal cases at every pair, and the same $\phi$ satisfies both equations, so the forward implication holds with flags in place of valuations. The converse is Theorem 9. $\square$
-
-So the answer to the exercise's second question is: the Hopf algebras over $\ZZ_p$ arising are exactly one isomorphism class for each flag pattern $(\delta,\varepsilon)$ realised by an integral form, and the whole $p$-adic valuation vector determines the class (Theorem 8) without being injective on it (Theorem 9: the class sees the bits, not the magnitudes). Consistency with §§3.C.12–13 of the book: for the divided-power form the flags are $\delta_{ij}=[p\mid\binom{i+j}{i}]$, $\varepsilon_{ij}=1$, which is the pattern of $\Gamma\otimes\FF_p$ computed above; for the polynomial form both flags vanish identically, giving $\FF_p[\alpha]$.
-
-**Status of the exercise.** Both parts answered. The forms $A$ are classified by the integral cocycle $m_{ij}$ with $m_{ij}\mid b_{ij}$ and the cocycle identity (§ above). The reductions $A\otimes\ZZ_p$ are classified by the flag $(\delta,\varepsilon)$ of Theorem 9's corollary: the valuation vector determines the reduction (Theorem 8), and the reduction determines exactly those two bits per pair (Theorem 9), so distinct flag patterns give distinct Hopf algebras and each realised pattern gives one.
 
 :::
