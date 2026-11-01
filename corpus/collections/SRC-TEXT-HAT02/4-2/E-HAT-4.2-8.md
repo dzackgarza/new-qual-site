@@ -14,6 +14,18 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read against Hatcher Sec. 4.2 Exercise 8 (AT.txt 19356-19357) and correct; one remark was repaired
+    because its stated reason was wrong. The suspension isomorphism kills H~_n for n>=1, van Kampen on the
+    two open cones (whose intersection is homotopy equivalent to X, hence path connected) kills pi_1, and
+    Hurewicz plus Whitehead finish; all of that is right. The repair: the card justified X nonempty by
+    calling H~_0 of the empty space Z in degree -1, which is not the reason; X is nonempty because
+    otherwise Sigma X = S^0 has H~_0 = Z, contradicting the vanishing just proved. The repaired sentence
+    now says that. Not checked: nothing outside this exercise.
+
 ---
 
 ::: {.problem}
@@ -43,7 +55,7 @@ This is the suspension isomorphism for reduced homology, which holds for all $n 
 $\widetilde H_0(\Sigma X) = 0$.
 
 ::: pf-proof
-Every point of $\Sigma X$ is joined by a path to a cone point, and the two cone points are joined through any point of $X$; $X$ is nonempty because $\widetilde H_0$ of the empty space is $\ZZ$ in degree $-1$, which acyclicity excludes. So $\Sigma X$ is path-connected.
+Every point of $\Sigma X$ is joined by a path to a cone point, and when $X$ is nonempty the two cone points are joined through any point of $X$; so $\Sigma X$ is path-connected. Acyclicity does force $X\neq\emptyset$: for $X=\emptyset$ one has $\Sigma X=S^0$, whose $\widetilde H_0$ is $\ZZ$, contradicting the vanishing of step [](#homology){.pf-ref}.
 :::
 
 :::

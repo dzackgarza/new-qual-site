@@ -21,6 +21,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read against Hatcher Sec. 4.2 Exercise 11 (AT.txt 19367-19370) and correct as it stands. The
+    sequence 0 -> pi_2(X) -> pi_2(X,X^1) -> K -> 1 is the pair sequence with pi_2(X^1) = 0, and a section
+    exists because K is free by Nielsen-Schreier. Checked the conclusion that the split extension is a
+    direct product: with pi_2(X) central (Hatcher Sec. 4.2 Exercise 27, a result of the same section) the
+    multiplication map pi_2(X) x K -> pi_2(X,X^1), (a,k) -> a s(k), is a homomorphism and is bijective by
+    the split exact sequence, so no abelianness of pi_2(X,X^1) has to be assumed. The RP^2 counterexample
+    is right: pi_2'(X) = Z/2 from the (-1)-action, pi_2'(X,X^1) = H_2(X,X^1) = Z by the relative Hurewicz
+    theorem in its coinvariant form, and Z/2 -> Z is zero. Not checked: nothing outside these exercises.
+
 ---
 
 ::: {.problem}

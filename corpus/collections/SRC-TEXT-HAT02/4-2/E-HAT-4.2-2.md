@@ -21,6 +21,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read against Hatcher Sec. 4.2 Exercise 2 (AT.txt 19334-19335) and correct as it stands. The
+    computation is right: the pi_1-action on pi_n(RP^n) is induced by the deck transformation, which is
+    the antipodal map of degree (-1)^{n+1}, so the action is +1 for n odd and -1 for n even, and the n=1
+    case is conjugation in the abelian group Z, hence trivial. Checked that "degree (-1)^{n+1} of the
+    antipodal map" is the book's standard fact and that the deck group of S^n -> RP^n is exactly Z_2
+    acting antipodally. Not checked: nothing outside this exercise.
 
 ---
 

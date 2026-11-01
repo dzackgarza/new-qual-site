@@ -21,6 +21,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read against Hatcher Sec. 4.2 Exercise 6 (AT.txt 19351-19353) and correct as it stands. The cone
+    pair is the right device: pi_i(CX,X) = pi_{i-1}(X) for i>=2 with CX contractible, so X (n-2)-connected
+    makes (CX,X) (n-1)-connected; relative Hurewicz then identifies pi_n(CX,X) with H_n(CX,X), which
+    H_n(CX,X) = H~_{n-1}(X) computes; and naturality of the Hurewicz map makes the comparison square
+    commute, so the bottom map is an isomorphism. Checked the restriction n>=3: it is correct and
+    necessary, since the absolute Hurewicz theorem in dimension n-1 is stated for n-1>=2, while dimension 1
+    has H_1 = pi_1^ab instead of an isomorphism, which the card does not claim. Not checked: nothing
+    outside this exercise.
 
 ---
 

@@ -21,6 +21,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read against Hatcher Sec. 4.2 Exercise 9 (AT.txt 19358-19361) and correct as it stands. The
+    simply connected half is right: a contractible mapping cone makes the cofibration sequence give an
+    isomorphism on reduced homology, and the homology Whitehead theorem for simply connected complexes
+    finishes. The counterexample is also right, and I checked the point that could go wrong: for the
+    constant map A -> pt the mapping cone is the suspension of A, since the mapping cone of A -> pt is CA
+    with A x {0} collapsed to the basepoint, which is (A x I)/(A x {0}, A x {1}) = Sigma A -- and that is
+    contractible only when A is acyclic, which is why the preceding exercise is needed rather than
+    redundant. Acyclic noncontractible complexes exist (for instance an acyclic K(G,1)). Not checked:
+    nothing outside this exercise.
 
 ---
 

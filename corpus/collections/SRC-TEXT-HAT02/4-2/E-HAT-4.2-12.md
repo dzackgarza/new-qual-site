@@ -31,6 +31,18 @@ audit:
     comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
     applying the repair. The restored text is the printed wording and the mathematics of the
     statement is otherwise unchanged.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read against Hatcher Sec. 4.2 Exercise 12 (AT.txt 19390-19395) and correct as it stands. The lift
+    is a homology isomorphism between simply connected CW complexes, so it is a homotopy equivalence by the
+    homology Whitehead theorem; being a homotopy equivalence it induces isomorphisms on pi_i for i>=2;
+    covering maps are isomorphisms on pi_i for i>=2, so the rectangle identifies f_* on pi_i for i>=2; with
+    pi_1 an isomorphism by hypothesis and pi_0 as both are connected, f is a weak homotopy equivalence and
+    hence, between CW complexes, a homotopy equivalence. Not checked: the local-coefficient restatement
+    offered in the bracket, which the card does not use.
+
 ---
 
 ::: {.problem}

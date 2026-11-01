@@ -23,6 +23,22 @@ audit:
     comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
     applying the repair. The restored text is the printed wording and the mathematics of the
     statement is otherwise unchanged.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read against Hatcher Sec. 4.2 Exercise 5 (AT.txt 19344-19350) and the mathematics is correct; two
+    proof steps were rewritten because they only cited earlier steps instead of giving the argument, which
+    the card policy forbids. Verified as correct: f_* is the matrix [[1,1],[0,1]] on pi_2 = Z alpha + Z
+    beta; the universal cover of the mapping torus is the double mapping telescope, which deformation
+    retracts onto an ordinary telescope (Sec. 3.F Exercise 1, AT.txt 15974-15979, read) and hence onto F
+    since f is a homotopy equivalence (invertible on H_2 with F simply connected, so Whitehead applies);
+    pi_2(X) = Z^2 and pi_1(X) = Z; A = S^1 x S^2_alpha; and the pair sequence is 0 -> Z -> Z^2 -> Z -> 0
+    because the boundary map dies as pi_1(A) -> pi_1(X) is an isomorphism. The action statements are
+    right: trivial on pi_2(A) since A is a product, the monodromy f_* on pi_2(X) is nontrivial as it sends
+    beta to beta+alpha, and the action on pi_2(X,A) = Z beta is trivial because f_* fixes the class of
+    beta modulo Z alpha. Not checked: nothing outside this exercise.
+
 ---
 
 ::: {.problem}
@@ -63,7 +79,7 @@ $f$ is the identity on $S^2_\alpha$, and on $S^2_\beta$ it is $\id_\beta + h$ wh
 So $f_* = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ in the basis $(\alpha, \beta)$.
 
 ::: pf-proof
-read off the columns from step [](#s1-2){.pf-ref}.
+The two columns are the images of the basis vectors, and step [](#s1-2){.pf-ref} computes them: $f_*(\alpha)=\alpha$ gives the column $(1,0)$ and $f_*(\beta)=\beta+\alpha$ gives the column $(1,1)$, so the matrix is the displayed one, which is invertible over $\ZZ$ with inverse $\begin{pmatrix} 1 & -1 \\ 0 & 1 \end{pmatrix}$.
 :::
 
 :::
@@ -171,7 +187,7 @@ $\pi_1(A) \to \pi_1(X)$ is an isomorphism (both $\ZZ$), so the boundary map in t
 Hence $0 \to \pi_2(A) \to \pi_2(X) \to \pi_2(X, A) \to 0$ is exact, i.e. $0 \to \ZZ \to \ZZ \oplus \ZZ \to \ZZ \to 0$.
 
 ::: pf-proof
-combine steps [](#s4-1){.pf-ref}, [](#s4-2){.pf-ref}, [](#s4-3){.pf-ref}.
+Step [](#s4-1){.pf-ref} makes the first map injective with image $\ZZ\alpha$, and step [](#s4-2){.pf-ref} identifies the quotient $\pi_2(X)/\ZZ\alpha$ with $\ZZ$; step [](#s4-3){.pf-ref} makes the last map of the triple zero, so $\pi_2(X)\to\pi_2(X,A)$ is onto with kernel $\ZZ\alpha$. Those three facts are exactness of $0\to\pi_2(A)\to\pi_2(X)\to\pi_2(X,A)\to0$.
 :::
 
 :::

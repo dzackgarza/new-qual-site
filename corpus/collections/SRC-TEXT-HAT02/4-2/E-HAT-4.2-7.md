@@ -21,6 +21,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read against Hatcher Sec. 4.2 Exercise 7 (AT.txt 19354-19355) and correct as it stands. The Borel
+    construction EG_1 x_{G_1} F is the right device: it is a fibre bundle over K(G_1,1) with simply
+    connected fibre F = prod_{i>1} K(G_i,i), so the long exact sequence gives pi_1(X) = G_1 and
+    pi_i(X) = G_i for i>1; the universal cover is EG_1 x F, which is homotopy equivalent to F, and the
+    deck transformation by g acts on pi_i through rho_i(g) by construction. Checked that the prescribed
+    G_i must be abelian for i>1, which the card states, and that functorial Eilenberg-MacLane models
+    supply the G_1-action. Not checked: any construction of the functorial models, which is standard and
+    cited rather than built. Nothing outside this exercise.
+
 ---
 
 ::: {.problem}
