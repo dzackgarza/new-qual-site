@@ -61,12 +61,10 @@ and §3.B. Exact scope, with no section counted as read beyond it:
 §1.1: 20 statements compared, the twelve solved proofs read line by line, `E-HAT-1.1-17` repaired.
 §1.2: 22 statements compared, all 22 proofs read line by line; `E-HAT-1.2-12`, `-14`, `-16` closing
 steps repaired, `E-HAT-1.2-22` restructured into one proof and its subcomplex framing corrected.
-§1.3: 33 statements compared. All 33 proofs read line by line: `E-HAT-1.3-1` .. `-18` except
-`-19`, together with `-20`, `-28` and `-30` — explicitly `-1`, `-2`, `-3`, `-4`, `-5`, `-6`, `-7`,
-`-8`, `-9`, `-10`, `-11`, `-12`, `-13`, `-14`, `-15`, `-16`, `-17`, `-18`, `-19`, `-20`, `-21`, `-22`, `-23`, `-24`, `-25`, `-26`, `-27`, `-28`, `-29`, `-30`, `-31`, `-32`, `-33`. The
-remaining 2 are `-32`, `-32`, `-33`;
-those are reviewed only at the level of their step claims, openings and closing steps, as each review
-note says, and are *not* line-by-line reads. The one defect found so far is in `-19`, whose `iff` had only its existence half proved; the necessity is now supplied in the card.
+§1.3: 33 statements compared. All 33 proofs read line by line, `E-HAT-1.3-1` through `E-HAT-1.3-33`.
+The one defect found in the block is `E-HAT-1.3-19`, whose `iff` had only its existence half proved; the
+necessity (a deck group `Z^n` is a quotient of the abelianization `Z^{2g}`, so `n <= 2g`) is now supplied in
+the card. No other correction was needed in the section.
 §1.A: 14 statements compared, all 14 proofs read line by line; `E-HAT-1.A-8` rewritten twice, once from
 fragments and once to encode covers by monodromy permutations and to compare indices by an explicit
 coset bijection; closing steps of `-9` and `-12` repaired.
