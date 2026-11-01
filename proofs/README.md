@@ -20,6 +20,20 @@ A source transcription check proves what the source prints; it does not prove th
 source's theorem. A counterexample refutes the printed claim but does not establish the
 replacement. A correction is marked settled on its card only when a file here certifies it.
 
+## Status: this development is parked
+
+`cards/BarySubdiv.lean` and `cards/TorBridge.lean` are **supporting artifacts, not a repository goal**.
+They exist because a corpus card's correction had to be certified; the certificates below do that for
+their stated scope, and they stand. What was stopped on instruction, and must not be resumed, is the
+general textbook re-derivation around them: no subdivision operator on all of `C_n(X)`, no completed
+Tor resolution/kernel packaging, no new proof development undertaken merely because a Mathlib API bridge
+is absent.
+
+Established statements are **cited with their hypotheses and conventions** instead: Hatcher's subdivision
+formula with its prepend-your-cone convention, and Hatcher's Lemma 3A.2 (a free/projective resolution
+computes `Tor`) — the cards name them, state what they require, and do not re-prove them here. The park
+is recorded with the exact residual in section 5b, which is where any future pass starts.
+
 ## 1. Group lemmas proved in Lean
 
 | File | Card | What it proves |
@@ -262,7 +276,9 @@ requires a construction, not a citation.
   `isModule`), or ascribe the ambient instances at the statement with explicit `@`-application
   (`@Submodule.ker ℤ ℤ _ _ (RingHom.id ℤ) (TensorProduct ℤ M N) _ _ TensorProduct.addCommMonoid
   (TensorProduct.instModule …) …`). Nothing in the bridge's mathematics changes; no axiom and no assumed map
-  equality is used anywhere in the file.
+  equality is used anywhere in the file. **Parked:** the packaging is not being pursued. The card's proof
+  cites Hatcher's Lemma 3A.2 with its hypotheses (a free resolution of `A`, `B` arbitrary) rather than
+  deriving it here, and the artifacts above are kept as verified scaffolding.
   Hatcher's Lemma 3A.2 as the cards use it is the *unrestricted* application: it needs that kernel
   step **together with** the finite-stage descent already proved in `cards/TorStages.lean`
   (`exists_stage_of_free`, `stageMap_injective`, the directed system). The flat-cokernel lemma
