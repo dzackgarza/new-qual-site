@@ -27,11 +27,12 @@ audit:
   note: >-
     Parts (a) and (b) are proved in full: the reduction from (17) to universality, and the
     construction of $F=\sum u_n$ with the parameters $c_n$, $M_n$ chosen inductively so that the
-    three estimates hold. **Not proved in full:** the closing sentence about $G$, for which the step
-    below gives the Baire framework and the density argument in outline, with the two points that
-    make it work named (surjectivity of $D^N$ on entire functions, and transfer of a Runge
-    approximation of an antiderivative to its $N$-th derivative by Cauchy's estimates). It is
-    recorded as an outline, not as a completed proof, and this card's obligation is parts (a) and (b).
+    three estimates hold. The closing sentence about $G$ is proved as well: the sets
+    $V_n=\{G:\exists N\ge n,\ \sup_{|z|\le n}|D^NG-p_n|<1/n\}$ are open and dense in the complete
+    space of entire functions (denseness by writing $G=G_0+\Psi$ with $\Psi$ an $N$-fold
+    antiderivative of $p_n-D^NG_0$, whose size on a disc is controlled by Cauchy's estimates), and
+    Baire's theorem then supplies $G$; the enumeration is taken with each polynomial occurring
+    infinitely often. Nothing is left in outline and nothing is deferred.
 ---
 
 ::: {.exercise}
@@ -181,19 +182,48 @@ by (B), applied to this fixed $n$ and every $j>n$. The sum of the three bounds i
 
 ::: {.pf-step #s5}
 
-The derivative-universal function $G$: Baire framework, in outline.
+Let $\mathcal E$ be the space of entire functions with the metric of uniform convergence on compact sets, and for $n\ge1$ put
+$$
+V_n=\Bigl\{G\in\mathcal E:\ \exists N\ge n\ \text{with}\ \sup_{\abs{z}\le n}\abs{D^NG(z)-p_n(z)}<\tfrac1n\Bigr\}.
+$$
+Each $V_n$ is open and dense in $\mathcal E$.
 
 ::: pf-proof
 
-Let $\mathcal E$ be the space of entire functions with the metric of uniform convergence on compact sets, a complete metric space, and let $(K_j)$ be an exhaustion by compact sets and $(\epsilon_j)$ a sequence of positive numbers tending to $0$. For each $j$, the set
-$$
-V_j=\bigl\{G\in\mathcal E:\ \exists N\ge j \text{ with } \sup_{z\in K_j}\abs{D^NG(z)-p_j(z)}<\epsilon_j\bigr\}
-$$
-is open, being a union over $N$ of open conditions. If each $V_j$ is dense then $\bigcap_jV_j$ is a dense $G_\delta$, and any $G$ in it has the required property, since the $p_j$ are dense in $\mathcal E$: given $h$ and a compact set one finds $j$ large with $K_j$ containing it and $\abs{p_j-h}<\epsilon_j$ there, and then some $N\ge j$ with $D^NG$ close to $p_j$.
+For fixed $N$ the condition $\sup_{\abs{z}\le n}\abs{D^NG-p_n}<1/n$ is the preimage under the continuous linear map $G\mapsto D^NG$ of an open ball of $\mathcal E$, hence open; and $V_n$ is the union of these sets over $N\ge n$.
 
-Denseness needs two ingredients. First, $D^N\colon\mathcal E\to\mathcal E$ is a continuous linear surjection (every entire function has an $N$-th antiderivative), hence open, so preimages of open sets are open. Second, given $G_0\in\mathcal E$, an open neighbourhood of $G_0$ and a target $(j,N,\epsilon_j)$, one finds $G$ in that neighbourhood with $\sup_{K_j}\abs{D^NG-p_j}<\epsilon_j$: choose an $N$-fold antiderivative $\Psi$ of $p_j-D^NG_0$ on a simply connected neighbourhood of $K_j$, take a holomorphic $\varphi$ equal to $\Psi$ near $K_j$ and to $0$ near the compact set on which $G_0$ is constrained, and approximate $\varphi$ on a slightly larger compact set by an entire function using Runge's theorem (the relevant compact set has connected complement); Cauchy's estimates on the smaller compact set transfer the approximation of $\varphi$ to one of $D^N\varphi$, and then $G=G_0+\psi$ works.
+For density, let $U=\{G\in\mathcal E:\sup_{\abs{z}\le R}\abs{G(z)-G_0(z)}<\delta\}$ be a basic neighbourhood. Fix $N\ge n$, put $\varphi=p_n-D^NG_0$, which is entire, and let $\Psi$ be the $N$-fold antiderivative of $\varphi$ vanishing to order $N$ at the origin:
+$$
+\Psi(z)=\frac{1}{(N-1)!}\int_0^z(z-w)^{N-1}\varphi(w)\,dw .
+$$
+Then $D^N\Psi=\varphi$, so for $G=G_0+\Psi$ one has $D^NG=D^NG_0+\varphi=p_n$ identically, and in particular $G\in V_n$.
 
-This is an outline: the two quoted facts (openness of $D^N$ and the Runge step with Cauchy's estimates) are standard but are not written out here, and the case in which the two compact sets meet needs the usual shrinking of the constraint set to a smaller one. The assertion in the exercise is that such a $G$ exists; that is what the outline establishes.
+It remains to see that $G\in U$ for $N$ large. Choose $\rho>2R$ and put $M_\rho=\sup_{\abs{z}\le\rho}\abs{G_0(z)}$, which is finite. For $\abs{z}\le R$,
+$$
+\abs{\Psi(z)}\le\frac{R^N}{N!}\sup_{\abs{w}\le R}\abs{\varphi(w)}
+\le\frac{R^N}{N!}\sup_{\abs{w}\le R}\abs{p_n(w)}+\frac{R^N}{N!}\cdot\frac{N!\,M_\rho}{(\rho-R)^N},
+$$
+where Cauchy's estimate for the $N$-th derivative on the smaller disc was used for the second term. The first term tends to $0$ because $R^N/N!\to0$, and the second is $M_\rho\bigl(R/(\rho-R)\bigr)^N\to0$ because $R<\rho-R$. Hence $\sup_{\abs{z}\le R}\abs{\Psi}<\delta$ for all large $N$, and such a $G$ lies in $U\cap V_n$. Since the basic neighbourhoods generate the topology, $V_n$ is dense.
+
+:::
+
+:::
+
+::: {.pf-step #s6}
+
+Any $G\in\bigcap_{n\ge1}V_n$ has the required property, so such an entire function exists.
+
+::: pf-proof
+
+The space $\mathcal E$ is complete, so Baire's theorem applies to the countable family of open dense sets $V_n$, and $\bigcap_nV_n\ne\varnothing$; in fact it is dense.
+
+Fix $G\in\bigcap_nV_n$. Take the enumeration with each polynomial occurring infinitely often, which is harmless for the conclusion. Let $h$ be entire and let $\varepsilon>0$ and a compact set $K$ be given. Choose a polynomial $q$ with rational real and imaginary parts such that $\sup_{K}\abs{q-h}<\varepsilon/2$, which is possible because the Taylor polynomials of $h$ converge uniformly on $K$ and their coefficients can be perturbed to Gaussian rationals. Since $q$ occurs infinitely often in the enumeration, there are arbitrarily large $n$ with $p_n=q$; fix such an $n$ with $K\subseteq D(0,n)$ and $1/n<\varepsilon/2$. Because $G\in V_n$, there is $N\ge n$ with
+$$
+\sup_{\abs{z}\le n}\abs{D^NG(z)-p_n(z)}<\tfrac1n .
+$$
+Then $\sup_K\abs{D^NG-h}<\frac1n+\frac{\varepsilon}{2}<\varepsilon$.
+
+Repeating this with $K=D(0,k)$ and $\varepsilon=1/k$, and choosing at each step an index larger than the previous one — which is possible because the set of admissible $n$, hence of admissible $N$, is unbounded — produces a strictly increasing sequence $N_1<N_2<\cdots$ with $\sup_{\abs{z}\le k}\abs{D^{N_k}G-h}<1/k$. For a compact $K\subseteq D(0,k_0)$ and $k\ge k_0$ this gives $\sup_K\abs{D^{N_k}G-h}<1/k\to0$. Hence $D^{N_k}G\to h$ uniformly on every compact subset of $\CC$.
 
 :::
 
