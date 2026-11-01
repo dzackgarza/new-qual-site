@@ -142,46 +142,45 @@ sage proofs/cards/DeltaComplexHomology.sage
 `#print axioms` at the end of each file must show only `propext`, `Classical.choice` and
 `Quot.sound`; any appearance of `sorryAx` means the certificate is not a proof.
 
-## Toolchain used by these certificates
+## Toolchain: what these certificates were elaborated with, and the shared-image block
 
-These proofs were elaborated by this image's own Lean against this image's own Mathlib. The
-identifiers below come from the image manifest `/opt/environment.json`, which is the
-authoritative record here — not from the reference snapshot under `/opt/nucleus/docs` (that
-snapshot is Lean 4.27.0 / Mathlib `a3a10db0e9`, a different version, so every Mathlib name
-used was checked against the installed tree).
+### The shared research image (target baseline): present, but Mathlib is not built there
 
-| Item | Value |
+Inspected through the launcher that the passing Sage checks use,
+`$HOME/.udocker/bin/proot-x86_64 -R $HOME/sage-image/rootfs -b /proc -b /dev -b <repo>:/work`:
+
+| Item | Value found inside the rootfs |
 | --- | --- |
-| Image identity | `base_sha256 4908fb59ccd4e87ae4e8e973b7ef56f535448eacb24a87fd787270c0048987bc` |
-| Launcher actually used | `/opt/lean/bin/lean` (the image's Lean, invoked directly; `lean --version` there reports `4.33.1`, commit `819816b2e0a3bf405af45ae5c7af2491d8f5bee6`) |
-| Mathlib | `/opt/mathlib`, image-recorded commit `0df444a360eaa60ab8c11dca51a86af692955474`, `lean-toolchain` = `leanprover/lean4:v4.33.1` |
-| CSLib | `/opt/cslib`, image-recorded commit `98e395a701f2027a413ad24729e1a11a6c772eb4` |
-| `LEAN_PATH` | `/opt/mathlib/...` build directories plus `/opt/cslib/.lake/build/lib/lean` and `/opt/lean/lib/lean`, as the shell environment reports |
+| Canonical launchers | `/opt/elan/bin/{elan,lake,lean,leanc,leanchecker}` — present |
+| Canonical package layout | `/opt/lake-packages/<name>@<rev>/` — present (24 entries) |
+| Project toolchain pin | `/repos/lean-categories/lean-toolchain` = `leanprover/lean4:v4.33.0` |
+| Effective Lean | 4.33.0, commit `d8b18978322de05a8f3dba51ef03cf5461676c17`, resolved by elan's *directory override* from that `lean-toolchain`; running the same binary from any other working directory fails with "no default toolchain configured" |
+| Mathlib pin | `db584cd6d46c92f209a44c0f1c829460d327499d`, from `/repos/lean-categories/lake-manifest.json` |
+| Mathlib build artifacts | **absent**: `mathlib@db584cd6…` has no `.lake` directory at all |
 
-Properties of the provision, checked rather than assumed:
+Consequence, verified by running it: `lean` on that baseline refuses the files at line 1 with
+`unknown module prefix 'Mathlib'`, listing the `/opt/lake-packages/*/.lake/build/lib/lean`
+entries that exist for the dependencies but none for Mathlib. So the six certificates below
+**cannot be re-elaborated on the shared image as provisioned** — the block is a missing Mathlib
+build, not an API difference, and no statement needs weakening to accommodate it. Closing it
+means building Mathlib inside `/repos/lean-categories` with its own `lake` (the canonical
+dependency setup, already pinned by that `lake-manifest.json`); that build was not run here
+and no toolchain was installed.
 
-- `/opt/mathlib` is a **directory inside the image rootfs**, on the same `ext4` filesystem as
-  `/` (`findmnt -T /opt/mathlib` reports `/dev/vda4 ext4 /`): it is neither a symlink
-  (`readlink -f` returns itself) nor a bind mount, and no `/opt/lake-packages` exists in this
-  image.
-- `/opt/mathlib` carries **no git metadata**, so it has no revision string of its own; the
-  commit above is the image manifest's record of what was installed, which is the only
-  available identification. The dependency revisions in `/opt/mathlib/lake-manifest.json`
-  (`plausible b7eb3304ae`, `LeanSearchClient 5f4d51b81c`, `importGraph 16f02aa764`,
-  `proofwidgets 4be2e3d508`, `aesop 3448c0bcc5`, `Qq 92c15be17b`, `batteries 4488d40d07`,
-  `Cli 6130a47896`) identify the *dependencies*, not Mathlib.
-- The `elan` shim on `PATH` is **not** the launcher used: `~/.elan/toolchains` holds only
-  `leanprover--lean4---v4.33.0`, and `elan` has no default toolchain configured, so bare
-  `lean` and `lake` fail on this image. No toolchain was installed, changed or defaulted to
-  make these proofs work; `/opt/lean/bin/lean` was used as provided.
-- **Discrepancy with the canonical guide.** The guide quoted for the shared image records
-  Lean/Lake **4.33.0**, launchers under `/opt/elan/bin`, and Mathlib under
-  `/opt/lake-packages/<name>@<revision>`. None of those three paths exists here, and the
-  manifest of this image records **4.33.1** instead. These certificates are therefore
-  acceptance **for this image's provision** (identifiers above), not acceptance under the
-  4.33.0 `/opt/lake-packages` setup; they should be re-run under that setup before being
-  called shared-image acceptance, and any API differences there should be adapted without
-  weakening the statements.
+### Where the certificates below actually come from
+
+They were elaborated by this VM's own provision, with `/opt/lean/bin/lean` (Lean 4.33.1,
+commit `819816b2e0a3bf405af45ae5c7af2491d8f5bee6`) against `/opt/mathlib`
+(image-recorded Mathlib commit `0df444a360eaa60ab8c11dca51a86af692955474`), image
+`base_sha256 4908fb59ccd4e87ae4e8e973b7ef56f535448eacb24a87fd787270c0048987bc`
+(`/opt/environment.json`). `/opt/mathlib` is a directory inside that rootfs on the same `ext4`
+filesystem as `/`, not a bind mount or symlink; it has no git metadata of its own.
+
+That is **not** the shared research image. These are acceptance for this VM's `/opt` provision
+only, and they must be re-run on the shared baseline once its Mathlib is built. Note also that
+the guides quoted for the shared image and for the reference snapshot disagree with each other
+on the Lean version (4.33.0 versus 4.27.0), so no name in this directory should be assumed to
+carry over without a check on the target baseline.
 
 ### Simplicial contraction infrastructure, verified in this tree
 
