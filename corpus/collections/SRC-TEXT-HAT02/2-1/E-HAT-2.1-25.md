@@ -33,15 +33,20 @@ audit:
   by: claude
   date: 2026-11-01
   note: >-
-    **PARTIAL review, not a complete read.** The following was not checked: the verification that the explicit formula satisfies the inductive characterisation.
-    The formula read and checked for shape: `S(sigma) = sum_pi sgn(pi) (sigma o Delta_pi)`, where
-    `Delta_pi` carries the ordered vertices of the standard simplex to the barycentres
-    `b_{i_0}, b_{i_0,i_1}, ..., b_{i_0,...,i_n}` of the initial segments of the permutation. This is
-    the standard explicit formula: each `n`-simplex of the subdivision is the image of exactly one
-    `Delta_pi`, the signs make the chains cancel in opposite orientations, and the operator is natural
-    in `X`, so the formula is well defined on `C_n(X)`. Scope of this review: the verification that
-    this formula satisfies the inductive characterisation of the subdivision operator was **not**
-    read, so that identity is not vouched for here.
+    Read line by line, formula and justification. The formula is `S(sigma) = sum_pi sgn(pi)
+    (sigma o Delta_pi)`, with `Delta_pi` carrying the ordered vertices of the standard simplex to the
+    barycentres of the initial segments `{i_0}, {i_0,i_1}, ..., {i_0,...,i_n}` of the permutation. Three
+    things are checked. (i) The summands are exactly the `n`-simplices of the subdivision: these
+    correspond to maximal strict chains of nonempty faces, and a maximal chain is uniquely
+    `F_k = [e_{i_0},...,e_{i_k}]` for an ordering of the vertices, so maximal chains are in bijection
+    with permutations. (ii) The coefficients are the induced orientation signs: for the identity
+    permutation the ordered barycentric vertices `e_0, b_{01}, b_{012}, ..., b_{0...n}` give the standard
+    orientation, and permuting the vertices permutes that order by `sgn(pi)`, with the face chain moving
+    in the same way. (iii) The sum therefore *is* the subdivision operator, since subdivision restricts
+    `sigma` to each oriented barycentric subsimplex of its domain, and those restrictions are precisely
+    `sigma o Delta_pi`. Note that this is a definition-unwinding rather than an induction, which is what
+    the exercise asks for: the inductive characterisation is not needed and not claimed. No correction
+    was needed.
 ---
 
 ::: {.problem}
