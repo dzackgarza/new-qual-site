@@ -135,8 +135,21 @@ tensor complex (free part $f_i$, torsion part $t_i$, cohomology shifted by one),
 recomputing $H_{2n+1}$ on both sides of $f\\times1$, `-4` through naturality and excision of the local cross product, `-5` through the four
 invariance checks.
 §4.1: exercises 1–9 compared with the printed exercises and all 9 proofs read line by line on 2026-11-01, their notes
-recording the specific checks; `E-HAT-4.1-1` through `E-HAT-4.1-9`. Exercises 10–23 of the section are unread.
-Unread entirely: the statements and proofs of §3.D, §3.F, §3.H, of §4.1 exercises 10–23, and of all of §4.2 onward. Everything from
+recording the specific checks; `E-HAT-4.1-1` through `E-HAT-4.1-9`.
+§3.D, §3.F, §3.H, §4.1 exercises 10–23, §4.2, §4.3, §4.A, §4.B, §4.D, §4.F, §4.G, §4.H, §4.I, §4.K and §4.L: all 137
+statements were compared with the printed exercises on 2026-11-01 and the necessary repairs applied — dropped bracketed
+hints and pointers, printed sentences and parentheticals, and four halved "iff"s (`E-HAT-3.F-9(a)`, `E-HAT-4.1-19`,
+`E-HAT-4.1-22`, `E-HAT-4.3-22`). Proof repairs applied where a proof was missing or wrong: `E-HAT-3.F-2`, `-3`, `-7`,
+`E-HAT-3.H-2`, `-4`, `-5`, and `E-HAT-4.3-24`, which had no proof at all.
+**Proofs still to read, by card, in that same slice (97 cards):** `3-f` exercises 4–9 (6); `4-a/E-HAT-4.A-4` and `-5`;
+`4-l/E-HAT-4.L-4` and `-5`; `4-1` exercises 10–23 (14); `4-2` exercises 1–39 (39); `4-3` exercises 1–24 (24), of which
+`-24` now has its replacement proof but is counted here until that proof is read; `4-d` exercises 1–10 (10). Statement
+work on these cards is done; the proofs are not, and their pre-existing `solution-reviewed` notes are not evidence.
+Hatcher's printed difficulty markers: **there are none**, checked on 2026-11-01 and not merely assumed. The
+character `∗` occurs 2085 times in the PDF text layer of `tmp/hat/AT.pdf` and every occurrence is the join `X ∗ Y`
+or the same symbol in a formula; no line begins `N.∗` and no `d.∗` occurs anywhere in the book. So the missing
+star markers are an `SRC-TEXT-SS03` item only, and no `SRC-TEXT-HAT02` card is defective for lacking one.
+Unread entirely: everything from
 §1.1 through §3.3 and in §3.A, §3.B, §3.C and §3.E is covered at the level the paragraphs above state —
 statements compared, proofs read — with only the citations each section names left unformalized.
 

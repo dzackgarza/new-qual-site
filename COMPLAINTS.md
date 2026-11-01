@@ -324,7 +324,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 3. **`P-AGH467MULTISECANTS`.** The Kaji citation is checked at the level of the paper's abstract only.
    The paper's body — in particular the singularity condition that is vacuous for smooth curves — was
    not read, and steps `s1`–`s13` of that card were not re-derived.
-4. **The book's starred markers.** No card in the corpus records which printed items carry the
-   difficulty asterisk; the audits confirmed that the extraction has no ASCII `*` and nothing was
-   invented in its place.
+4. **Starred markers — Stein–Shakarchi only, and checked.** No `SRC-TEXT-SS03` card records which
+   printed items carry the difficulty asterisk; reports this week put the number of starred printed
+   items between 26 and 28 and only `E-SS2.PR-5` mentions its star. For `SRC-TEXT-HAT02` the question
+   is closed: Hatcher marks no exercise with an asterisk. The PDF text layer of `tmp/hat/AT.pdf`
+   contains 2085 occurrences of `∗` and all of them are the join `X ∗ Y` or the same symbol inside a
+   formula — no line begins `N.∗`, and the pattern `d.∗` occurs nowhere. So absence of a star on a
+   Hatcher card is correct, not a defect, and nothing was invented in its place.
 5. **Five `ad-text-*` nodes** stay blocked on books absent from the repository, as recorded above.
