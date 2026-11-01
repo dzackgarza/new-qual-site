@@ -911,6 +911,267 @@ theorem coeff_subdiv_peel_sign {N : ℕ} (π : Equiv.Perm (Fin N)) :
   rw [coeff_subdiv_chainOf_eq_pow (peel_nodup π) (peel_toFinset π), pairCount_peel_eq_delSum,
     pow_delSum_eq_global_mul_sign_int]
 
+/-! ## 9. The whole chain: exhausted and nonduplicated -/
+
+/-- A nodup list enumerating a face with at most one vertex is `F.toList`. -/
+theorem eq_toList_of_card_le_one {F : Finset (Fin N)} {l : List (Fin N)} (hl : l.Nodup)
+    (hlF : l.toFinset = F) (hcard : F.card ≤ 1) : l = F.toList := by
+  have hlen : l.length = F.card := by
+    rw [← List.toFinset_card_of_nodup hl, hlF]
+  match l with
+  | [] => rw [← hlF]; simp
+  | [v] => rw [← hlF]; simp
+  | a :: b :: t =>
+      exfalso
+      have : 2 ≤ (a :: b :: t).length := by simp
+      omega
+
+/-- The chain of a face with at most one vertex, from its own `toList`. -/
+theorem chainOf_toList_of_card_le_one {F : Finset (Fin N)} (h : F.card ≤ 1) :
+    chainOf F F.toList = [F] := by
+  match hL : F.toList with
+  | [] => exact chainOf_nil F
+  | [v] =>
+      simp only [chainOf]
+      rw [if_pos h]
+  | a :: b :: t =>
+      exfalso
+      have h2 : 2 ≤ F.card := by
+        rw [← Finset.length_toList, hL]
+        simp
+      omega
+
+/-- **Support exhaustion.** A chain with a nonzero predicted coefficient is the chain of a peeling
+order that enumerates the face. -/
+theorem chainCoeff_exists_chainOf {F : Finset (Fin N)} {c : List (Finset (Fin N))}
+    (h : chainCoeff F c ≠ 0) :
+    ∃ l : List (Fin N), l.Nodup ∧ l.toFinset = F ∧ c = chainOf F l := by
+  induction c generalizing F with
+  | nil => rw [chainCoeff_nil] at h; exact absurd rfl h
+  | cons G rest ih =>
+      cases rest with
+      | nil =>
+          rw [chainCoeff_singleton] at h
+          by_cases hc : G = F ∧ F.card ≤ 1
+          · obtain ⟨hGF, hcard⟩ := hc
+            refine ⟨F.toList, F.nodup_toList, by simp, ?_⟩
+            rw [hGF]
+            exact (chainOf_toList_of_card_le_one hcard).symm
+          · rw [if_neg hc] at h
+            exact absurd rfl h
+      | cons G' rest' =>
+          rw [chainCoeff_cons_cons] at h
+          by_cases hc : G = F ∧ ¬ F.card ≤ 1
+          · rw [if_pos hc] at h
+            have hex : ∃ v ∈ F.attach,
+                (if G' = F.erase v.1 then
+                  (((-1 : ℤˣ) ^ deletionPos F v.1 : ℤˣ) : ℤ) *
+                    chainCoeff (F.erase v.1) (G' :: rest')
+                else 0) ≠ 0 := by
+              by_contra hcon
+              have hz : ∀ v ∈ F.attach,
+                  (if G' = F.erase v.1 then
+                    (((-1 : ℤˣ) ^ deletionPos F v.1 : ℤˣ) : ℤ) *
+                      chainCoeff (F.erase v.1) (G' :: rest')
+                  else 0) = 0 := by
+                intro v hv
+                by_contra hne
+                exact hcon ⟨v, hv, hne⟩
+              exact h (Finset.sum_eq_zero hz)
+            obtain ⟨v, hv, hvne⟩ := hex
+            by_cases hG' : G' = F.erase v.1
+            · rw [if_pos hG'] at hvne
+              have hcoef : chainCoeff (F.erase v.1) (G' :: rest') ≠ 0 := by
+                intro hzero
+                exact hvne (by rw [hzero, mul_zero])
+              obtain ⟨l, hlnd, hlF, hlc⟩ := ih hcoef
+              have hvF : v.1 ∈ F := v.2
+              have hnot : v.1 ∉ l := by
+                intro hmem
+                have : v.1 ∈ l.toFinset := List.mem_toFinset.mpr hmem
+                rw [hlF] at this
+                exact (Finset.notMem_erase v.1 F) this
+              refine ⟨v.1 :: l, List.nodup_cons.mpr ⟨hnot, hlnd⟩, ?_, ?_⟩
+              · rw [List.toFinset_cons, hlF, Finset.insert_erase hvF]
+              · rw [chainOf_cons v.1 l hc.2, hlc, hc.1]
+            · rw [if_neg hG'] at hvne
+              exact absurd rfl hvne
+          · rw [if_neg hc] at h
+            exact absurd rfl h
+
+/-- **Nonduplication.** Two peeling orders that give the same chain are the same order. -/
+theorem chainOf_injective {F : Finset (Fin N)} {l l' : List (Fin N)} (hl : l.Nodup)
+    (hlF : l.toFinset = F) (hl' : l'.Nodup) (hl'F : l'.toFinset = F)
+    (h : chainOf F l = chainOf F l') : l = l' := by
+  suffices H : ∀ (F : Finset (Fin N)) (l l' : List (Fin N)), l.Nodup → l.toFinset = F →
+      l'.Nodup → l'.toFinset = F → chainOf F l = chainOf F l' → l = l' from H F l l' hl hlF hl' hl'F h
+  intro F
+  induction F using Finset.strongInduction with
+  | H F ih =>
+    intro l l' hl hlF hl' hl'F h
+    by_cases hcard : F.card ≤ 1
+    · rw [eq_toList_of_card_le_one hl hlF hcard, eq_toList_of_card_le_one hl' hl'F hcard]
+    · have hlt : 1 < F.card := by omega
+      cases l with
+      | nil =>
+          cases l' with
+          | nil => rfl
+          | cons v' l₂' =>
+              rw [chainOf_nil, chainOf_cons v' l₂' (by omega)] at h
+              exact absurd h (by simp [chainOf_ne_nil])
+      | cons v l₂ =>
+          cases l' with
+          | nil =>
+              rw [chainOf_cons v l₂ (by omega), chainOf_nil] at h
+              exact absurd h (by simp [chainOf_ne_nil])
+          | cons v' l₂' =>
+              rw [chainOf_cons v l₂ (by omega), chainOf_cons v' l₂' (by omega)] at h
+              have hnd : l₂.Nodup := (List.nodup_cons.mp hl).2
+              have hnd' : l₂'.Nodup := (List.nodup_cons.mp hl').2
+              have htail : chainOf (F.erase v) l₂ = chainOf (F.erase v') l₂' := by
+                simpa using h
+              have hvF : v ∈ F := by
+                have : v ∈ (v :: l₂).toFinset := List.mem_toFinset.mpr (by simp)
+                rwa [hlF] at this
+              have hv'F : v' ∈ F := by
+                have : v' ∈ (v' :: l₂').toFinset := List.mem_toFinset.mpr (by simp)
+                rwa [hl'F] at this
+              have hface : F.erase v = F.erase v' := by
+                have h1 := chainOf_head (F.erase v) l₂
+                rw [htail] at h1
+                have h2 := chainOf_head (F.erase v') l₂'
+                rw [h2] at h1
+                exact (Option.some.inj h1).symm
+              have hvv : v = v' := erase_inj_of_eq hvF hface
+              rw [← hvv] at htail hl' hl'F ⊢
+              have hnot : v ∉ l₂.toFinset := by
+                rw [List.mem_toFinset]
+                exact (List.nodup_cons.mp hl).1
+              have hnot' : v ∉ l₂'.toFinset := by
+                rw [List.mem_toFinset]
+                exact (List.nodup_cons.mp hl').1
+              have ht2 : l₂.toFinset = F.erase v := by
+                have hins : F = insert v l₂.toFinset := by rw [← hlF, List.toFinset_cons]
+                rw [hins, Finset.erase_insert hnot]
+              have ht2' : l₂'.toFinset = F.erase v := by
+                have hins : F = insert v l₂'.toFinset := by rw [← hl'F, List.toFinset_cons]
+                rw [hins, Finset.erase_insert hnot']
+              have := ih (F.erase v) (Finset.erase_ssubset hvF) l₂ l₂' hnd ht2 hnd' ht2' htail
+              rw [this]
+
+/-- Every nodup enumeration of all of `Fin N` is the peeling order of a permutation. -/
+theorem exists_perm_peel {l : List (Fin N)} (hl : l.Nodup) (hlF : l.toFinset = Finset.univ) :
+    ∃ π : Equiv.Perm (Fin N), l = peel π := by
+  have hlen : l.length = N := by
+    rw [← List.toFinset_card_of_nodup hl, hlF, Finset.card_univ, Fintype.card_fin]
+  have hmem : ∀ x : Fin N, x ∈ l := by
+    intro x
+    rw [← List.mem_toFinset, hlF]
+    exact Finset.mem_univ x
+  have hfinj : Function.Injective fun i : Fin N => l.get (Fin.cast hlen.symm (Fin.rev i)) := by
+    intro a b hab
+    have h2 : Fin.cast hlen.symm (Fin.rev a) = Fin.cast hlen.symm (Fin.rev b) :=
+      hl.get_inj_iff.mp hab
+    have h3 : Fin.rev a = Fin.rev b := Fin.ext (by simpa using congrArg Fin.val h2)
+    exact Fin.rev_injective h3
+  have hfsurj : Function.Surjective fun i : Fin N => l.get (Fin.cast hlen.symm (Fin.rev i)) := by
+    intro x
+    obtain ⟨i, hi⟩ := List.mem_iff_get.mp (hmem x)
+    refine ⟨Fin.rev (Fin.cast hlen i), ?_⟩
+    have hval : Fin.cast hlen.symm (Fin.rev (Fin.rev (Fin.cast hlen i))) = i := by
+      rw [Fin.rev_rev]
+      exact Fin.ext (by simp)
+    show l.get (Fin.cast hlen.symm (Fin.rev (Fin.rev (Fin.cast hlen i)))) = x
+    rw [hval]
+    exact hi
+  refine ⟨Equiv.ofBijective (fun i : Fin N => l.get (Fin.cast hlen.symm (Fin.rev i)))
+    ⟨hfinj, hfsurj⟩, ?_⟩
+  have hpeel : peel (Equiv.ofBijective (fun i : Fin N => l.get (Fin.cast hlen.symm (Fin.rev i)))
+      ⟨hfinj, hfsurj⟩) = List.ofFn (fun i : Fin N => l.get (Fin.cast hlen.symm i)) := by
+    refine congrArg List.ofFn (funext fun i => ?_)
+    show l.get (Fin.cast hlen.symm (Fin.rev (Fin.rev i))) = l.get (Fin.cast hlen.symm i)
+    rw [Fin.rev_rev]
+  rw [hpeel, ← List.ofFn_congr hlen (fun i : Fin l.length => l.get i)]
+  simp
+
+/-- **Nonduplication, in the form the sum needs.** Distinct permutations give distinct descending
+chains. -/
+theorem chainOf_peel_injective {N : ℕ} :
+    Function.Injective fun π : Equiv.Perm (Fin N) =>
+      chainOf (Finset.univ : Finset (Fin N)) (peel π) := by
+  intro π π' h
+  have h1 : peel π = peel π' :=
+    chainOf_injective (peel_nodup π) (peel_toFinset π) (peel_nodup π') (peel_toFinset π') h
+  have h2 : (fun i : Fin N => π (Fin.rev i)) = (fun i : Fin N => π' (Fin.rev i)) := by
+    have h3 := h1
+    rw [show peel π = List.ofFn (fun i : Fin N => π (Fin.rev i)) from rfl,
+      show peel π' = List.ofFn (fun i : Fin N => π' (Fin.rev i)) from rfl] at h3
+    exact List.ofFn_injective h3
+  refine Equiv.ext fun i => ?_
+  have h4 := congrFun h2 (Fin.rev i)
+  simp only [Fin.rev_rev] at h4
+  exact h4
+
+/-- Equality of elements of the free abelian group on chains is equality of all coefficients. -/
+theorem ext_coeff {x y : FreeAbelianGroup (List (Finset (Fin N)))}
+    (h : ∀ c, FreeAbelianGroup.coeff c x = FreeAbelianGroup.coeff c y) : x = y := by
+  have h1 : FreeAbelianGroup.toFinsupp x = FreeAbelianGroup.toFinsupp y := by
+    ext c
+    exact h c
+  calc x = Finsupp.toFreeAbelianGroup (FreeAbelianGroup.toFinsupp x) :=
+        (Finsupp.toFreeAbelianGroup_toFinsupp x).symm
+    _ = Finsupp.toFreeAbelianGroup (FreeAbelianGroup.toFinsupp y) := by rw [h1]
+    _ = y := Finsupp.toFreeAbelianGroup_toFinsupp y
+
+/-- **The whole chain.** The recursion is the signed sum over *all* permutations — one summand each,
+with the coefficient of each proved above — not merely the coefficient statement on selected
+chains. -/
+theorem subdiv_univ_eq_sum_perm {N : ℕ} :
+    subdiv (Finset.univ : Finset (Fin N))
+      = ∑ π : Equiv.Perm (Fin N),
+          ((-1 : ℤ) ^ (N * (N - 1) / 2) * ((π.sign : ℤˣ) : ℤ)) •
+            FreeAbelianGroup.of (chainOf (Finset.univ : Finset (Fin N)) (peel π)) := by
+  classical
+  refine ext_coeff fun c => ?_
+  rw [coeff_subdiv, map_sum]
+  simp only [map_zsmul, Int.zsmul_eq_mul]
+  have hterm : ∀ π : Equiv.Perm (Fin N),
+      ((-1 : ℤ) ^ (N * (N - 1) / 2) * ((π.sign : ℤˣ) : ℤ)) *
+        FreeAbelianGroup.coeff c (FreeAbelianGroup.of (chainOf Finset.univ (peel π)))
+      = if chainOf Finset.univ (peel π) = c then
+          ((-1 : ℤ) ^ (N * (N - 1) / 2) * ((π.sign : ℤˣ) : ℤ)) else 0 := by
+    intro π
+    rw [coeff_of]
+    by_cases hh : chainOf Finset.univ (peel π) = c
+    · rw [if_pos hh, if_pos hh, mul_one]
+    · rw [if_neg hh, if_neg hh, mul_zero]
+  rw [Finset.sum_congr rfl fun π _ => hterm π]
+  by_cases hc : ∃ π : Equiv.Perm (Fin N), chainOf Finset.univ (peel π) = c
+  · obtain ⟨π₀, hπ₀⟩ := hc
+    have hsingle : (∑ π : Equiv.Perm (Fin N),
+        (if chainOf Finset.univ (peel π) = c then
+          ((-1 : ℤ) ^ (N * (N - 1) / 2) * ((π.sign : ℤˣ) : ℤ)) else 0))
+        = (if chainOf Finset.univ (peel π₀) = c then
+          ((-1 : ℤ) ^ (N * (N - 1) / 2) * ((π₀.sign : ℤˣ) : ℤ)) else 0) := by
+      refine Finset.sum_eq_single π₀ ?_ ?_
+      · intro π _ hne
+        rw [if_neg]
+        intro hh
+        exact hne (chainOf_peel_injective (hh.trans hπ₀.symm))
+      · intro hnot
+        exact absurd (Finset.mem_univ π₀) hnot
+    rw [hsingle, if_pos hπ₀, ← hπ₀, ← coeff_subdiv, coeff_subdiv_peel_sign]
+  · have hzero : chainCoeff (Finset.univ : Finset (Fin N)) c = 0 := by
+      by_contra hne
+      obtain ⟨l, hlnd, hlF, hlc⟩ := chainCoeff_exists_chainOf hne
+      obtain ⟨π, hπ⟩ := exists_perm_peel hlnd hlF
+      exact hc ⟨π, by rw [hlc, hπ]⟩
+    rw [hzero]
+    exact (Finset.sum_eq_zero fun π _ => by
+      rw [if_neg]
+      intro hh
+      exact hc ⟨π, hh⟩).symm
+
 end BarySubdiv
 
 #print axioms BarySubdiv.stepSign_eq_pow_stepExp
@@ -939,3 +1200,9 @@ end BarySubdiv
 #print axioms BarySubdiv.delSum_eq_noninv
 #print axioms BarySubdiv.pow_delSum_eq_global_mul_sign
 #print axioms BarySubdiv.coeff_subdiv_peel_sign
+#print axioms BarySubdiv.chainCoeff_exists_chainOf
+#print axioms BarySubdiv.chainOf_injective
+#print axioms BarySubdiv.exists_perm_peel
+#print axioms BarySubdiv.chainOf_peel_injective
+#print axioms BarySubdiv.ext_coeff
+#print axioms BarySubdiv.subdiv_univ_eq_sum_perm
