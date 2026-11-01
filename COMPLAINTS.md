@@ -305,11 +305,18 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 
 **Explicitly open — not completion, not oversight.**
 
-1. **`E-SSA.PR-5`, final sentence.** The exercise's closing claim — that the modified series converges
-   and gives an exact formula for $p(n)$ — is **not proved**, on the card, in §4 of its solution, with
-   the four missing ingredients named (Farey dissection, uniform arc estimates, the level
-   $N\asymp n^{1/2}$ refinement, Rademacher 1937). The book does not supply them and its own error
-   term is larger than every $q\ge2$ contribution.
+1. **`E-SSA.PR-5` final sentence — closed by citation, 2026-11-01.** The exercise's closing claim is
+   Rademacher's theorem. §4 of that card now states the exact formula with Dedekind-sum coefficients,
+   his remainder bound ($|A_k^*(n)|<2k^{1/3}$, remainder $O(n^{-1/4})$ uniformly for
+   $N\ge\lfloor\sqrt n\rfloor$), and cites Rademacher, PNAS **23** (1937) 78–84
+   (doi:10.1073/pnas.23.2.78) and Trans. AMS **43** (1938) 271–295 (doi:10.2307/1990043), with Lehmer,
+   J. London Math. Soc. **12** (1937) 171–176 for the divergence of the Hardy–Ramanujan series. It
+   distinguishes the three series explicitly: the asymptotic one with $N$ coupled to $n$ (divergent to
+   infinity), Rademacher's with $N$ decoupled (convergent, equal to $p(n)$), and the book's single-term
+   shape whose coefficient is constant only at $q=1$. Checked: the $q=1$ reduction to the book's
+   Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
+   $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
+   omission, and it is cited, not reproduced.
 2. **97 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones

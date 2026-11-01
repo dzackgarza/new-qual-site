@@ -28,6 +28,22 @@ audit:
   date: 2026-11-01
   note: >-
     Solution installed up to, but not including, the exercise's final sentence. Proved: the multiplier system of eta on SL2(Z) with values in mu_24 by Euclidean descent, the transformation at every rational p/q with a constant of modulus one and order dividing 24q, and the resulting contribution of p/q to the asymptotic formula. **Left open on the card:** the convergence of the resulting series and hence the exact formula for p(n), which needs the Farey dissection, uniform arc estimates and Rademacher's theorem; the book's own error term is larger than every q >= 2 contribution, so its estimates cannot supply this. This is recorded as open, not claimed.
+- event: source-checked
+  by: claude
+  date: 2026-11-01
+  note: >-
+    The exercise's last sentence ("when suitably modified ... converges and gives an exact formula for
+    p(n)") is now discharged by citation rather than left open. Section 4 states Rademacher's exact
+    formula with the Dedekind-sum coefficients, his remainder bound (|A_k^*(n)| < 2k^(1/3), remainder
+    O(n^(-1/4)) uniformly for N >= floor(sqrt n)), and cites Rademacher, PNAS 23 (1937) 78-84
+    (doi:10.1073/pnas.23.2.78) for the series and its absolute convergence and Rademacher, Trans. AMS
+    43 (1938) 271-295 (doi:10.2307/1990043) for the bound. Three series are distinguished: the
+    Hardy-Ramanujan asymptotic series with N coupled to n (divergent when summed to infinity, Lehmer
+    1937), Rademacher's series with N decoupled (convergent, equal to p(n)), and the book's displayed
+    single-term shape, whose coefficient is constant only for q = 1. Verified here: the q = 1 reduction
+    to the book's Theorem 4.1(ii), and a finite check that truncating at N = floor(sqrt n) and rounding
+    reproduces p(n) for n = 1,...,12. Not claimed: a re-proof of Rademacher's theorem, which is the
+    book's omission and is cited, not reproduced.
 ---
 
 ::: {.exercise}
@@ -361,7 +377,66 @@ Two consequences worth recording, since they are the bookkeeping the exercise as
   $c_{p/q}/\sqrt q$ over $p$ with $(p,q)=1$ is $\sum_p e^{-2\pi inp/q}\omega_{p/q}$, the
   Hardy--Ramanujan sum.
 
-## 4. What the book does not carry out, and what is therefore not proved here
+## 4. The exercise's last sentence, and what settles it
+
+The exercise ends: *"When suitably modified, the resulting series, summed over all proper fractions
+$p/q$ in $[0,1)$, actually converges and gives an exact formula for $p(n)$."* That sentence is a theorem
+of Rademacher. It is **not** a claim about the series printed in the book, and it is not implied by the
+asymptotic formula of Chapter 7.
+
+**The exact formula** (Rademacher 1937; remainder in Rademacher 1938). For $n\ge1$,
+$$
+p(n)=\frac{1}{\pi\sqrt2}\sum_{k=1}^{\infty}A_k(n)\,k^{1/2}\,\frac{d}{dn}\Bigl[\frac{\sinh\bigl(\frac{\pi}{k}\sqrt{\frac23\bigl(n-\frac1{24}\bigr)}\bigr)}{\sqrt{n-\frac1{24}}}\Bigr],
+\qquad
+A_k(n)=\sum_{\substack{h\bmod k\\ (h,k)=1}}e^{\pi i\,s(h,k)-2\pi i\,nh/k},
+$$
+with $s(h,k)$ the Dedekind sum, and the series is **absolutely convergent**. The modifier the exercise
+alludes to is the factor $e^{\pi i s(h,k)}$, the multiplier of $\eta$ at the cusp $h/k$. It is a
+$24k$-th root of unity in general, not a $24$th root — for $k=3$ it has order $36$ (Remark 3(c)) — which
+is how the book's "appropriate $24$th root of unity" $\omega_{p/q}$ must be read.
+
+**The error estimate** (Rademacher 1938). Writing $A_k^*(n)=A_k(n)k^{-1/2}$ one has
+$\abs{A_k^*(n)}<2k^{1/3}$, and the remainder after $N$ terms satisfies
+$$
+\abs{R_N(n)}<\frac{4\pi^{23/12}}{9\mu_n^2}\sum_{k>N}k^{1/3}\sum_{j\ge1}\frac{j(\mu_n/k)^{2j}}{(2j+1)!},
+\qquad \mu_n=\frac{\pi}{6}\sqrt{24n-1},
+$$
+which is $O(n^{-1/4})$ uniformly for $N\ge\lfloor\sqrt n\rfloor$. This is what makes the formula
+computational: $p(n)$ is the nearest integer to the truncated sum.
+
+**Three different series, kept apart.** (i) The Hardy--Ramanujan series of Chapter 7's (2), with the
+dissection order $N=\alpha\sqrt n$ coupled to $n$, is asymptotic with error $O(n^{-1/4})$; the same
+series summed to infinity *diverges*, by Lehmer (1937). So it is neither the exercise's formula nor a
+convergent one. (ii) Rademacher's series is the modification that uncouples $N$ from $n$: $N\to\infty$
+with $n$ fixed, and then the sum converges to $p(n)$ exactly. (iii) The book's displayed contribution
+$c_{p/q}\frac{1}{2\pi\sqrt2}\frac{d}{dn}[\cdot]$ is the *shape* of one term; in the exact formula the
+coefficient is $A_q(n)\sqrt q$, which depends on $n$ through $e^{-2\pi inh/q}$ and through $s(h,q)$, so
+it is constant only for $q=1$, the case §3 treats.
+
+**Checks.** At $q=1$: $A_1(n)=1$ and the derivative displayed above is the one proved in §3, so the
+formula reduces to Theorem 4.1(ii) — this was checked in the remark to Theorem 3. Numerically,
+truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives, for $n=1,\dots,12$,
+$$
+1.1336,\ 1.9285,\ 3.1108,\ 5.0296,\ 7.0279,\ 10.9325,\ 15.0420,\ 22.0555,\ 30.0115,\ 42.0157,\ 56.0139,\ 76.9582,
+$$
+whose nearest integers $1,2,3,5,7,11,15,22,30,42,56,77$ are the values of $p(n)$. This is a finite
+check of the formula's shape and of the size of the truncation, not a proof of the formula.
+
+**Sources.** H. Rademacher, *A convergent series for the partition function $p(n)$*, Proc. Nat. Acad.
+Sci. USA **23** (1937), 78--84, doi:10.1073/pnas.23.2.78 — the exact series and its absolute
+convergence. H. Rademacher, *On the series for the partition function*, Trans. Amer. Math. Soc. **43**
+(1938), 271--295, doi:10.2307/1990043 — $\abs{A_k^*(n)}<2k^{1/3}$ and the remainder bound above.
+D. H. Lehmer, *On the Hardy--Ramanujan series for the partition function*, J. London Math. Soc. **12**
+(1937), 171--176 — divergence of that series. The whole development is reproduced as Theorem 5.10 and
+its corollaries in T. M. Apostol, *Modular Functions and Dirichlet Series in Number Theory*, Springer
+GTM 41, Chapter 5.
+
+**Conclusion for this card.** The exercise's last sentence is true and is discharged here by
+Rademacher's theorem, stated with its hypotheses and its error bound and cited to the papers that prove
+it. What the book supplies is $q=1$; what the book does not supply, and what this card does not
+reprove, is the analysis passing from one cusp to all of them.
+
+## 5. What the book does not carry out, and where the cited proof supplies it
 
 The exercise's last sentence — that the series over all proper fractions $p/q$, "when suitably
 modified", converges and gives an **exact** formula for $p(n)$ — is not proved in the book, and it is
@@ -404,8 +479,9 @@ not proved above. What is missing is the following, and each item is needed for 
 
 So: the transformation law is proved (Theorem 2, with the corrections of Remark 3), and the local
 contribution of each rational point is proved (Theorem 3, with $|c_{p/q}|=\sqrt q$ and the constant
-$1/(2\pi\sqrt2)$, both checked by reduction to Theorem 4.1(ii) at $q=1$). The exact formula itself is
-asserted by the book without proof, and items 1--4 above are what a proof would still have to
-supply.
+$1/(2\pi\sqrt2)$, both checked by reduction to Theorem 4.1(ii) at $q=1$). Items 1--4 above are exactly
+the analysis the book defers with "when suitably modified"; section 4 records that Rademacher carried it
+out, states his theorem and his remainder bound, and cites them. Nothing in the exercise is false: what
+the book omits is a proof, and what this card omitted before section 4 was the theorem itself.
 
 :::
