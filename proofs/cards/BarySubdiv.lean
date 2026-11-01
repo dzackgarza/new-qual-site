@@ -1440,7 +1440,7 @@ theorem continuous_affineMap {N m : ℕ} (v : Fin (m+1) → Fin N → ℝ) :
   rw [continuous_pi_iff]
   intro i
   simp only [affineMap]
-  exact continuous_finset_sum _ fun k _ => (continuous_apply k).mul continuous_const
+  exact continuous_finsetSum _ fun k _ => (continuous_apply k).mul continuous_const
 
 /-! ## 13. Hatcher's operator formula
 
@@ -1499,6 +1499,97 @@ theorem hatcher_formula {M : ℕ} {X : Type*} [TopologicalSpace X]
   refine Finset.sum_congr rfl fun π _ => ?_
   rw [map_zsmul, FreeAbelianGroup.map_of_apply, chainAffineMap_chainOf_peel]
 
+/-! ## 14. Packaged as singular simplices of the standard simplex
+
+`barySimplex` is a self-map of the ambient space. Here it is packaged as a singular `M`-simplex of the
+standard simplex — an element of degree `M` of `TopCat.toSSet`, the simplicial set the singular chain
+complex is built from — and read back through the maintained equivalence `TopCat.toSSetObjEquiv`, which
+states that singular `M`-simplices *are* continuous maps out of the standard `M`-simplex.
+-/
+
+/-- The standard `n`-simplex as a topological space. -/
+abbrev stdSimplexTop (n : ℕ) : TopCat := TopCat.of ↥(stdSimplex ℝ (Fin (n+1)))
+
+/-- `Δ̄_π` as a continuous self-map of the standard simplex (not merely of the ambient space). -/
+noncomputable def barySimplexOn {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
+    C(↥(stdSimplex ℝ (Fin (M+1))), ↥(stdSimplex ℝ (Fin (M+1)))) where
+  toFun x := ⟨affineMap M (fun k => descVertex π k) x.1, affineMap_mem (descVertex_mem π) x.2⟩
+  continuous_toFun := Continuous.subtype_mk ((continuous_affineMap _).comp continuous_subtype_val) _
+
+/-- **The π-summand as a singular `M`-simplex** of the standard simplex: an element of degree `M` of
+its singular set. -/
+noncomputable def barySimplexSingular {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
+    (TopCat.toSSet.obj (stdSimplexTop M)).obj (Opposite.op (SimplexCategory.mk M)) :=
+  (TopCat.toSSetObjEquiv (stdSimplexTop M) (Opposite.op (SimplexCategory.mk M))).symm (barySimplexOn π)
+
+/-- The packaging is faithful: read back through `TopCat.toSSetObjEquiv`, the singular simplex is the
+affine barycentric map `Δ̄_π` on the standard simplex. -/
+theorem toSSetObjEquiv_barySimplexSingular {M : ℕ} (π : Equiv.Perm (Fin (M+1)))
+    (x : ↥(stdSimplex ℝ (Fin (M+1)))) :
+    (TopCat.toSSetObjEquiv (stdSimplexTop M) (Opposite.op (SimplexCategory.mk M)))
+        (barySimplexSingular π) x
+      = ⟨affineMap M (fun k => descVertex π k) x.1, affineMap_mem (descVertex_mem π) x.2⟩ := by
+  simp [barySimplexSingular, barySimplexOn]
+
+/-! ## 15. Into degree `n` of the maintained singular chain complex
+
+`(X.chainComplex (ModuleCat.of ℤ ℤ)).X M` is definitionally the coproduct of one copy of `ℤ` per
+singular `M`-simplex of `X` (checked by `rfl`), so a singular simplex has a coprojection into it. That
+gives the formal chain identity a home in the maintained chain complex: the recursion, pushed through
+the barycentric affine maps and the coprojections, is the signed sum of the `Δ̄_π`.
+-/
+
+/-- A chain of faces read as a singular `M`-simplex of the *ambient* space `Fin (n+1) → ℝ` (the affine
+map of the barycentres of its faces). No membership hypothesis is needed: the ambient space contains
+the standard simplex, and `affineMap_mem` records that on the standard simplex the image stays inside. -/
+noncomputable def chainSingular {M : ℕ} (c : List (Finset (Fin (M+1)))) :
+    (TopCat.toSSet.obj (TopCat.of (Fin (M+1) → ℝ))).obj (Opposite.op (SimplexCategory.mk M)) :=
+  (TopCat.toSSetObjEquiv (TopCat.of (Fin (M+1) → ℝ)) (Opposite.op (SimplexCategory.mk M))).symm
+    ⟨fun x => affineMap M (fun k => baryWeight (c.getD k.val ∅)) x.1,
+      (continuous_affineMap _).comp continuous_subtype_val⟩
+
+/-- `Δ̄_π` as a singular `M`-simplex of the ambient space. -/
+noncomputable def barySingular {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
+    (TopCat.toSSet.obj (TopCat.of (Fin (M+1) → ℝ))).obj (Opposite.op (SimplexCategory.mk M)) :=
+  (TopCat.toSSetObjEquiv (TopCat.of (Fin (M+1) → ℝ)) (Opposite.op (SimplexCategory.mk M))).symm
+    ⟨fun x => affineMap M (fun k => descVertex π k) x.1,
+      (continuous_affineMap _).comp continuous_subtype_val⟩
+
+/-- The chain of `π`, packaged as a singular simplex, is `Δ̄_π`. -/
+theorem chainSingular_chainOf_peel {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
+    chainSingular (chainOf (Finset.univ : Finset (Fin (M+1))) (peel π)) = barySingular π := by
+  have hverts : (fun k : Fin (M+1) =>
+        baryWeight ((chainOf (Finset.univ : Finset (Fin (M+1))) (peel π)).getD k.val ∅))
+      = fun k : Fin (M+1) => descVertex π k := by
+    funext k
+    rw [chainOf_peel_eq_ofFn_descFace, List.getD_eq_getElem?_getD, List.getElem?_ofFn,
+      dif_pos k.isLt]
+    rfl
+  simp only [chainSingular, barySingular, hverts]
+
+/-- The coprojection of a singular `M`-simplex into degree `M` of the singular chain complex: one copy
+of `ℤ` per simplex, so the simplex itself is `1` in its copy. -/
+noncomputable def singularChainIota (X : SSet) (M : ℕ)
+    (x : X.obj (Opposite.op (SimplexCategory.mk M))) : (X.chainComplex (ModuleCat.of ℤ ℤ)).X M :=
+  (CategoryTheory.Limits.Sigma.ι
+    (fun _ : X.obj (Opposite.op (SimplexCategory.mk M)) => ModuleCat.of ℤ ℤ) x) 1
+
+/-- **Hatcher's formula in degree `M` of the maintained singular chain complex.** Pushing the
+recursion through the barycentric affine maps and the coprojections gives the signed sum over
+permutations of the singular `M`-simplices `Δ̄_π`. -/
+theorem singular_chain_formula {M : ℕ} :
+    FreeAbelianGroup.lift (fun c : List (Finset (Fin (M+1))) =>
+        singularChainIota (TopCat.toSSet.obj (TopCat.of (Fin (M+1) → ℝ))) M (chainSingular c))
+        (subdiv (Finset.univ : Finset (Fin (M+1))))
+      = ∑ π : Equiv.Perm (Fin (M+1)),
+          ((-1 : ℤ) ^ (M * (M + 1) / 2) * ((π.sign : ℤˣ) : ℤ)) •
+            singularChainIota (TopCat.toSSet.obj (TopCat.of (Fin (M+1) → ℝ))) M (barySingular π) := by
+  rw [subdiv_univ_eq_sum_perm, map_sum]
+  simp only [show (M + 1) * (M + 1 - 1) / 2 = M * (M + 1) / 2 from by
+    rw [Nat.add_sub_cancel, Nat.mul_comm]]
+  refine Finset.sum_congr rfl fun π _ => ?_
+  rw [map_zsmul, FreeAbelianGroup.lift_apply_of, chainSingular_chainOf_peel]
+
 end BarySubdiv
 
 #print axioms BarySubdiv.stepSign_eq_pow_stepExp
@@ -1549,3 +1640,8 @@ end BarySubdiv
 #print axioms BarySubdiv.continuous_affineMap
 #print axioms BarySubdiv.chainAffineMap_chainOf_peel
 #print axioms BarySubdiv.hatcher_formula
+#print axioms BarySubdiv.barySimplexOn
+#print axioms BarySubdiv.barySimplexSingular
+#print axioms BarySubdiv.toSSetObjEquiv_barySimplexSingular
+#print axioms BarySubdiv.chainSingular_chainOf_peel
+#print axioms BarySubdiv.singular_chain_formula
