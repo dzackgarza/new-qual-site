@@ -23,10 +23,20 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.C, Exercise 16; it matches the printed text.
+- event: source-corrected
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The book writes the homogeneous component $A_n$ with a subscript; the card had $A^n$.
+    The printed grading is restored.
 ---
 
 ::: {.problem}
-Classify algebraically the Hopf algebras $A$ over $\ZZ$ such that $A^n$ is free for each $n$ and $A \otimes \QQ \approx \QQ[\alpha]$.
+Classify algebraically the Hopf algebras $A$ over $\ZZ$ such that $A_n$ is free for each $n$ and $A \otimes \QQ \approx \QQ[\alpha]$.
 In particular, determine which Hopf algebras $A \otimes \ZZ_p$ arise from such $A$'s.
 :::
 

@@ -110,6 +110,21 @@ settled until a file here covers it:
   presentation vanishes (`torKernel_eq_bot_of_subsingleton`); the third, that
   $\operatorname{Tor}$ commutes with the filtered colimit of the finitely generated
   subgroups, is exercise 4 of the same section and is not formalized.
+## 5b. Pending the shared build, and not to be closed by name checks
+
+Three proof applications stay open until the canonical Mathlib is built in the research image
+and the files are re-elaborated there. Grepping the pinned source for the names they use does
+**not** close them; the definitions have to be read at that revision when the build exists:
+
+- the comparison isomorphism `B ⊗ colim F ≅ colim (B ⊗ F ·)` in `cards/ColimitTensor.lean`
+  (statement and failure recorded in that file),
+- the `Tor` half of §3.A exercise 4, which also needs Lemma 3A.2,
+- the simplex chain-model comparison for `E-HAT-2.2-16`, instantiating
+  `ker_eq_range_of_comm_iso` with the barycentric chains of `Δ^n` and the skeleton maps.
+
+The name-by-name check against `db584cd6` recorded above is a preparation for that re-run; it
+is not acceptance of any of the three.
+
 ## 6. Chapter 1 step repairs: expository, with the backing theorem checked
 
 These repairs were made to stored proofs but assert no theorem beyond the source's own

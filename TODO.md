@@ -55,7 +55,7 @@ rather than formalized. The repairs that remain uncertified are listed, card by 
 reported as leaving nothing outstanding while it is nonempty.
 
 `ad-text-hat02` is partly read, against the book itself
-(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §3.3 and for §3.A and §3.B; proofs
+(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §3.3 and for §3.A, §3.B and §3.C; proofs
 are read for §1.1, §1.2, §1.A, §1.B-1..-4, §2.1-1..-17 and all of §2.2, §2.3, §3.1, §3.2, §3.3, §3.A
 and §3.B. Exact scope, with no section counted as read beyond it:
 §1.1: 20 statements compared, the twelve solved proofs read line by line, `E-HAT-1.1-17` repaired.
@@ -118,12 +118,14 @@ sentence broken mid-way ("The middle map is ... are isomorphisms"), which is rep
 §3.A: all 6 statements compared with the printed exercises; two of them had dropped half of a printed "iff" — `E-HAT-3.A-2` ("torsionfree iff $\\operatorname{Tor}(A,B)=0$ for all $B$") and
 `E-HAT-3.A-6` ("contains an element of order $n$ iff both do") — and the missing directions are restored, with the proofs extended
 to cover them. All 6 proofs are read.
-§3.B: all 5 statements compared with the printed exercises and all 5 proofs read. `E-HAT-3.B-1`'s group formulas are rechecked from the cellular
+§3.B: all 5 statements compared with the printed exercises and all 5 proofs read.
+§3.C: all 16 statements compared with the printed exercises and all agree; `E-HAT-3.C-16` had $A^n$ where the book prints $A_n$
+for the homogeneous component, and the subscript is restored. The 16 proofs are **not** read yet. `E-HAT-3.B-1`'s group formulas are rechecked from the cellular
 tensor complex (free part $f_i$, torsion part $t_i$, cohomology shifted by one), `-2` on both directions of the $I\\otimes C$ dictionary, `-3` by
 recomputing $H_{2n+1}$ on both sides of $f\\times1$, `-4` through naturality and excision of the local cross product, `-5` through the four
 invariance checks.
 Unread entirely: the proofs of §1.3 beyond the ten listed, of §1.B-5..-9 and of §2.1-6, -8, -10, -17,
--23..-25, -27..-29, and the proofs and statements of §3.C onward and §4 onward.
+-23..-25, -27..-29, the proofs of §3.C, and the proofs and statements of §4 onward.
 
 ## Fast local checks and complete CI acceptance
 

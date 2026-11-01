@@ -23,6 +23,10 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.C, Exercise 6; it matches the printed text.
 ---
 
 ::: {.problem}
