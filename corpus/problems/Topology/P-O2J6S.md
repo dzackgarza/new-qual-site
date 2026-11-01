@@ -119,7 +119,7 @@ Let $\Gamma$ be a connected graph covering $W$, with its edges labelled $a$ or $
 $$
 \operatorname{rank}\pi_1(\Gamma)=1-V+E ,
 $$
-and a $k$-sheeted cover of a wedge of $r$ circles has $\operatorname{rank}=1+k(r-1)=1+k$. When $\Gamma$ is **infinite** there is no integer formula: $\pi_1(\Gamma)$ is still free on the non-forest edges, but $1-V+E$ is not defined, and such a subgroup has infinite index however few non-forest edges there are. Both infinite pictures below are of this kind: in the order they are listed, the fourth has one non-forest edge and the fifth has two.
+and a $k$-sheeted cover of a wedge of $r$ circles has $\operatorname{rank}=1+k(r-1)$. For the figure-eight $W$ of this problem $r=2$, so that formula specialises to $1+k$; the equality $1+k(r-1)=1+k$ is thus a statement about $r=2$ only, not about arbitrary $r$. When $\Gamma$ is **infinite** there is no integer formula: $\pi_1(\Gamma)$ is still free on the non-forest edges, but $1-V+E$ is not defined, and such a subgroup has infinite index however few non-forest edges there are. Both infinite pictures below are of this kind: in the order they are listed, the fourth has one non-forest edge and the fifth has two.
 
 **The five covers.** For the first three pictures write $T,L,R$ for the top, lower-left and lower-right vertices.
 
