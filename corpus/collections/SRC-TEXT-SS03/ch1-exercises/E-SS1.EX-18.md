@@ -20,10 +20,19 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-10
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    The card's statement omitted the bracketed hint the book prints at PDF page 48, printed p.29: "[Hint: Write z = z0 + (z − z0 ) and use the binomial expansion for z n .]"
+    A completeness audit of the collection against the book flagged the omission; the hint
+    is restored verbatim from the print. The mathematics of the statement is unchanged.
+
 ---
 
 ::: {.exercise}
 Let $f$ be a power series centered at the origin. Prove that $f$ has a power-series expansion around every point in its disc of convergence.
+[Hint: Write $z=z_0+(z-z_0)$ and use the binomial expansion for $z^n$.]
 :::
 
 ::: {.solution}

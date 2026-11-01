@@ -21,6 +21,14 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-10
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    The card's statement omitted the bracketed hint the book prints at PDF page 47, printed p.28: "[Hint: Sum by parts.]"
+    A completeness audit of the collection against the book flagged the omission; the hint
+    is restored verbatim from the print. The mathematics of the statement is unchanged.
+
 ---
 
 ::: {.exercise}
@@ -31,6 +39,7 @@ $$
 \sum_{n=1}^{\infty}a_n.
 $$
 In other words, a convergent series is Abel summable to its ordinary sum.
+[Hint: Sum by parts.]
 :::
 
 ::: {.solution}
