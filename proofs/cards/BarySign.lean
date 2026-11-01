@@ -67,7 +67,7 @@ theorem prod_ite_neg_one {N : ℕ} (π : Equiv.Perm (Fin N)) (s : Finset (Sigma 
       rw [Finset.prod_insert ha, ih, Finset.filter_insert]
       by_cases h : π a.2 < π a.1
       · rw [if_pos h, if_neg (by simp [h]), one_mul]
-      · rw [if_neg h, if_pos h, Finset.card_insert_of_notMem (by simp [h, ha]), pow_succ,
+      · rw [if_neg h, if_pos h, Finset.card_insert_of_notMem (by simp [ha]), pow_succ,
           mul_comm]
 
 /-- And therefore `sgn π = (-1)^{inv π}`. -/
@@ -75,8 +75,56 @@ theorem sign_eq_neg_one_pow_inv {N : ℕ} (π : Equiv.Perm (Fin N)) :
     π.sign = (-1 : ℤˣ) ^ inv π := by
   rw [sign_eq_prod_pairSet, prod_ite_neg_one, inv]
 
+/-- **The correspondence.** The exponent of Hatcher's recursion is the sum, over the stages of the
+descending chain, of the position of the deleted vertex in the current face. Going from the face
+`F_j = {π 0, …, π j}` down to `F_{j-1}` the deleted vertex is `π j`, whose position among the vertices
+of `F_j` is the number of `i ≤ j` with `π i < π j`. So the recursion's exponent is `delSum π` below. -/
+def delSum {N : ℕ} (π : Equiv.Perm (Fin N)) : ℕ :=
+  ∑ j : Fin N, ((Finset.Iic j).filter fun i => π i < π j).card
+
+/-- The diagonal contributes nothing, so the position can be counted with `i < j`. -/
+theorem filter_Iic_eq_filter_Iio {N : ℕ} (π : Equiv.Perm (Fin N)) (j : Fin N) :
+    (Finset.Iic j).filter (fun i => π i < π j) = (Finset.Iio j).filter (fun i => π i < π j) := by
+  ext i
+  simp only [Finset.mem_filter, Finset.mem_Iic, Finset.mem_Iio]
+  constructor
+  · rintro ⟨hle, hlt⟩
+    rcases lt_or_eq_of_le hle with h' | h'
+    · exact ⟨h', hlt⟩
+    · subst h'
+      exact absurd hlt (lt_irrefl _)
+  · rintro ⟨hlt, hlt'⟩
+    exact ⟨le_of_lt hlt, hlt'⟩
+
+/-- The pair set filters through the sigma structure. -/
+theorem filter_pairSet {N : ℕ} (π : Equiv.Perm (Fin N)) :
+    (pairSet N).filter (fun p => π p.2 < π p.1)
+      = Finset.univ.sigma (fun j : Fin N => (Finset.Iio j).filter (fun i => π i < π j)) := by
+  ext p
+  obtain ⟨j, i⟩ := p
+  simp [pairSet, Finset.mem_sigma, Finset.mem_filter]
+
+/-- **The deletion-index correspondence.** The recursion's exponent is the number of noninversions. -/
+theorem delSum_eq_noninv {N : ℕ} (π : Equiv.Perm (Fin N)) : delSum π = noninv π := by
+  rw [delSum, noninv, filter_pairSet, Finset.card_sigma]
+  exact Finset.sum_congr rfl fun j _ => by rw [filter_Iic_eq_filter_Iio]
+
+/-- **The all-`n` sign identity.** The recursion's sign `(-1)^{delSum π}` is `(-1)^{N(N-1)/2} sgn(π)`. -/
+theorem pow_delSum_eq_global_mul_sign {N : ℕ} (π : Equiv.Perm (Fin N)) :
+    (-1 : ℤˣ) ^ (delSum π) = (-1 : ℤˣ) ^ (N * (N - 1) / 2) * π.sign := by
+  have hT : N * (N - 1) / 2 = delSum π + inv π := by
+    rw [← noninv_add_inv π, delSum_eq_noninv π]
+  rw [sign_eq_neg_one_pow_inv, hT, pow_add]
+  have h2 : ((-1 : ℤˣ) ^ inv π) * ((-1 : ℤˣ) ^ inv π) = 1 := by
+    rw [← mul_pow]
+    norm_num
+  rw [mul_assoc, h2, mul_one]
+
 end BarySign
 
 #print axioms BarySign.card_pairSet
 #print axioms BarySign.noninv_add_inv
 #print axioms BarySign.sign_eq_neg_one_pow_inv
+#print axioms BarySign.delSum_eq_noninv
+#print axioms BarySign.pow_delSum_eq_global_mul_sign
+
