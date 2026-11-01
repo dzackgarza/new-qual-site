@@ -116,23 +116,30 @@ Three proof applications stay open until the canonical Mathlib is built in the r
 and the files are re-elaborated there. Grepping the pinned source for the names they use does
 **not** close them; the definitions have to be read at that revision when the build exists:
 
-- the `Tor` half of §3.A exercise 4 is proved as `exists_fg_stage`, and its scope is exactly:
-  for a presentation `f : K →ₗ F`, **`F` and `B` are held fixed** and only `K` is restricted —
-  there are `P ≤ K` finitely generated and `t ∈ P ⊗ B` with `t ↦ x` and `(f|_P ⊗ id_B) t = 0`.
-  What that gives the two cards, and what it does not, stated honestly:
+- **both card applications are pending.** The lemmas `exists_fg_stage` and
+  `lTensor_subtype_injective_of_flat` are proved and useful, but they are not the implication
+  the cards need, and the record must not conflate the two.
 
-  * `E-HAT-3.A-6`: the stage `(P, F, f|_P)` presents the subgroup `A_α = im(f|_P)` with the
-    *same* free middle term `F`, so the sub-stage's kernel is `Tor(A_α, B)` by the same
-    definition — no further identification is needed for that step. Two things are still
-    needed and are not certified: that the resulting `A_α` are cofinal in the directed family
-    the card uses, and the interpretation that the presentation-level kernel is `Tor`
-    independently of the resolution (Hatcher Lemma 3A.2). The card's transition maps
-    `A_α → A_β` and `K_α → K_β` are not constructed here.
-  * `E-HAT-3.A-2`: the card uses the stage existence for the finitely generated subgroups of a
-    torsion-free group; that the subgroups are free, and that the family is directed with the
-    claimed transition maps, are separate identifications the card makes and this file does not.
+  `exists_fg_stage` holds `F` and `B` fixed and restricts only `K`: it produces a finitely
+  generated `P ≤ K` and a class `t ∈ P ⊗ B` mapping to `x` with `(f|_P ⊗ id_B) t = 0`. It does
+  **not** produce a finitely generated subgroup `A_α ≤ A = coker(f)` with a compatible
+  presentation, and the stage it does produce need not embed in `A`: with `f = id_ℤ`, `K = F = ℤ`
+  and `P = 2ℤ`, the stage's cokernel is `ℤ/2` while `A = coker(id_ℤ) = 0`. Nothing in the lemma
+  gives the class, order or transition maps the cards use.
 
-- the simplex chain-model comparison for `E-HAT-2.2-16`, instantiating
+  `lTensor_subtype_injective_of_flat` gives injectivity *given* a submodule `B' ≤ B`; it does
+  not produce a finitely generated `B'` and does not lift an element.
+
+  What is still required is one of: the genuine Tor filtered-colimit comparison — the
+  presentations of the stages as a filtered diagram of complexes with its colimit identified
+  with the presentation of `A`, and `Tor(A,B)` identified with the colimit of the stage `Tor`s —
+  or, avoiding resolution theory, an explicit construction of finitely generated subgroup
+  stages `A_α ≤ A` with compatible presentations and the order-preservation and transition
+  maps: for `A = coker(f)` one takes `F_α ⊆ F` finitely generated (free, since `F` is) and
+  `K_α = K ∩ f^{-1}(F_α)`, so that `A_α ≅ F_α/(F_α ∩ f(K))` with the presentation
+  `K_α → F_α`, together with the inclusion of `A_α` into `A` being injective and compatible
+  with the directed structure. Neither route is proved. Hatcher's Lemma 3A.2 is a further
+  citation on top of either, not a substitute for them,- the simplex chain-model comparison for `E-HAT-2.2-16`, instantiating
   `ker_eq_range_of_comm_iso` with the barycentric chains of `Δ^n` and the skeleton maps.
 
 The name-by-name check against `db584cd6` recorded above is a preparation for that re-run; it
