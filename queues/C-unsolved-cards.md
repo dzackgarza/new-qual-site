@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem cards
 
-34 problem cards have no solution section. These are
+32 problem cards have no solution section. These are
 the cards issue #2 targets: write a Lamport-style structured proof for each.
 
 Regenerate with `just unsolved` after a card gains a solution. CI publishes
@@ -10,14 +10,12 @@ regeneration, and writing the solution removes the line.
 
 ## Count
 
-- Problems: 34
+- Problems: 32
 
-## Problems (34)
+## Problems (32)
 
-- [ ] E-SS8.PR-5 — "Zeros of bounded holomorphic functions on the upper half-plane"
 - [ ] E-SS8.PR-6 — "Boundary extension for a Jordan domain"
 - [ ] E-SS8.PR-7 — "Koebe's construction of a Riemann map"
-- [ ] E-SS8.PR-8 — "Bieberbach bound for real Taylor coefficients"
 - [ ] E-SS8.PR-9 — "Arithmetic-geometric mean and Gauss's elliptic integral"
 - [ ] E-SS9.PR-2 — "Sine series for the Weierstrass elliptic function"
 - [ ] E-SS9.PR-3 — "Inversion of an elliptic integral by the Weierstrass function"
