@@ -40,8 +40,7 @@ audit:
     closure pairs, making `(D^n, closure(D^n - {0})) = (D^n, D^n)` pair homotopy equivalent to
     `(D^n, S^{n-1})`, while `H_n(D^n, D^n) = 0` and `H_n(D^n, S^{n-1}) = Z`. That is the argument the
     card makes and it is correct. The hypothesis of (a) -- `f` a homotopy equivalence on `X` and on
-    `A` -- is exactly satisfied here, which is why only the pair conclusion can fail. The detailed
-    
+    `A` -- is exactly satisfied here, which is why only the pair conclusion can fail.
 ---
 
 ::: {.problem}
