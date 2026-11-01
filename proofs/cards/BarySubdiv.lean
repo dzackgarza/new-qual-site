@@ -1172,6 +1172,88 @@ theorem subdiv_univ_eq_sum_perm {N : ℕ} :
       intro hh
       exact hc ⟨π, hh⟩).symm
 
+/-! ## 10. The affine side: the faces of a chain and the endpoints of the vertex list
+
+What is proved here is the computation of a chain's faces from its peeling order, and the two
+endpoints of the descending barycentric vertex list of a permutation: the list starts at the
+barycentre of the whole simplex and ends at the vertex `π 0` itself. The identification of these two
+faces with the vertices of the affine simplex spanned by `descVertex π`, and the transport to singular
+chains of `Δ^n`, is *not* proved; see `proofs/README.md`.
+-/
+
+/-- **The faces of a chain.** The `k`-th face of `chainOf F l` is `F` with the first `k` peeled
+vertices removed. -/
+theorem chainOf_getElem?_take {N : ℕ} (F : Finset (Fin N)) (l : List (Fin N))
+    (hl : l.toFinset = F) (hnd : l.Nodup) (k : ℕ) (hk : k < l.length) :
+    (chainOf F l)[k]? = some (F \ (l.take k).toFinset) := by
+  revert F l
+  induction k with
+  | zero =>
+      intro F l hl hnd hk
+      rw [List.take_zero, List.toFinset_nil, Finset.sdiff_empty]
+      cases l with
+      | nil => simp at hk
+      | cons v l' =>
+          simp only [chainOf]
+          split <;> rfl
+  | succ j ih =>
+      intro F l hl hnd hk
+      cases l with
+      | nil => simp at hk
+      | cons v l' =>
+          obtain ⟨hvl, hnd'⟩ := List.nodup_cons.mp hnd
+          have hl' : l'.toFinset = F.erase v := by
+            rw [← hl, List.toFinset_cons, Finset.erase_insert (by simpa using hvl)]
+          have hlen : F.card = l'.length + 1 := by
+            rw [← hl, List.toFinset_card_of_nodup hnd, List.length_cons]
+          by_cases hcard : F.card ≤ 1
+          · exfalso
+            simp only [List.length_cons] at hk
+            omega
+          · rw [chainOf_cons v l' hcard, List.getElem?_cons_succ,
+              ih (F.erase v) l' hl' hnd' (by simp only [List.length_cons] at hk; omega),
+              List.take_succ_cons, List.toFinset_cons]
+            congr 1
+            ext x
+            simp only [Finset.mem_sdiff, Finset.mem_erase, Finset.mem_insert]
+            constructor
+            · rintro ⟨⟨hxv, hxF⟩, hxS⟩
+              exact ⟨hxF, fun h => h.elim hxv hxS⟩
+            · rintro ⟨hxF, hxS⟩
+              exact ⟨⟨fun h => hxS (Or.inl h), hxF⟩, fun h => hxS (Or.inr h)⟩
+
+/-- The faces of the descending chain are nested. -/
+theorem descFace_antitone {N : ℕ} (π : Equiv.Perm (Fin N)) {k k' : Fin N} (h : k ≤ k') :
+    descFace π k' ⊆ descFace π k := by
+  intro x hx
+  simp only [descFace, Finset.mem_image, Finset.mem_Iic] at hx ⊢
+  obtain ⟨i, hi, rfl⟩ := hx
+  exact ⟨i, hi.trans (Fin.rev_le_rev.mpr h), rfl⟩
+
+/-- The last face of the descending chain is the single vertex `π 0`. -/
+theorem descFace_last {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
+    descFace π (Fin.last M) = {π 0} := by
+  rw [descFace]
+  have hrev : Fin.rev (Fin.last M) = 0 := Fin.ext (by simp [Fin.rev, Fin.last])
+  have hIic : Finset.Iic (0 : Fin (M+1)) = {0} := by
+    ext i
+    simp [Fin.le_zero_iff]
+  rw [hrev, hIic]
+  simp
+
+/-- **The two endpoints of the vertex list.** The descending barycentric vertex list of `π` ends at
+the vertex `π 0` itself, as the cone formula's last vertex must. -/
+theorem descVertex_last {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
+    descVertex π (Fin.last M) = vertexWeight (π 0) := by
+  have hface : descFace π (Fin.last M) = {π 0} := descFace_last π
+  funext i
+  rw [descVertex, hface]
+  show (if i ∈ ({π 0} : Finset (Fin (M+1))) then
+      ((({π 0} : Finset (Fin (M+1))).card : ℝ))⁻¹ else 0)
+    = (if i = π 0 then 1 else 0)
+  rw [Finset.card_singleton, Nat.cast_one, inv_one]
+  by_cases hi : i = π 0 <;> simp [hi]
+
 end BarySubdiv
 
 #print axioms BarySubdiv.stepSign_eq_pow_stepExp
@@ -1206,3 +1288,7 @@ end BarySubdiv
 #print axioms BarySubdiv.chainOf_peel_injective
 #print axioms BarySubdiv.ext_coeff
 #print axioms BarySubdiv.subdiv_univ_eq_sum_perm
+#print axioms BarySubdiv.chainOf_getElem?_take
+#print axioms BarySubdiv.descFace_antitone
+#print axioms BarySubdiv.descFace_last
+#print axioms BarySubdiv.descVertex_last
