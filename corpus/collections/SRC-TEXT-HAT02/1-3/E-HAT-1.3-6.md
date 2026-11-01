@@ -28,6 +28,22 @@ audit:
   date: 2026-10-31
   note: >-
     Read the step claims and the construction: the horizontal line covering $C_1$, a shrinking wedge of sheets over every integer, and the choice $r_n=|n|+2$ that makes the selected sheet small. Not every line of the covering verification was checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. The construction is right and so is the failure of the covering property.
+    The double cover `p: Y -> X~` is legitimate: cutting one selected circle in each attached
+    wedge and cross-gluing the two sheets gives the connected double cover on that circle and a
+    trivial double cover elsewhere, the selected points form a closed discrete set (one point in
+    the wedge at each integer, and those wedges sit over distinct integers with bounded diameter,
+    so there is no accumulation along the line), and local finiteness gives the covering property
+    away from the selected circles. The choice `r_n = |n|+2` is what makes the argument work,
+    because any neighbourhood of the wedge point contains all sufficiently small circles, so for
+    large `n` the circle `C_{r_n}` lies inside it, while over that circle the composite restricts
+    to the connected double cover of a circle — two points over every point of `C_{r_n}`, which no
+    homeomorphism of a sheet can do. The closing remark that the composite still has the unique
+    path lifting property is correct and is the point of the exercise. No correction was needed.
 ---
 
 ::: {.problem}

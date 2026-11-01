@@ -30,9 +30,13 @@ audit:
     the Künneth theorem over the field $\ZZ_p$, it is the $k$-fold tensor product of the two-term
     complex $a\mapsto b$, and that complex is acyclic because $\beta a=b\ne0$. Repaired: the card
     asserted the vanishing and then ignored it, computing the integral groups by a separate
-    cellular argument, whereas the exercise asks to *use* the Bockstein. The solution now records
-    the consequence — $E_2=0$ for the Bockstein spectral sequence, hence
-    $(H^*(X;\ZZ)/T)\otimes\ZZ_p=0$ and $H^*(X;\ZZ)$ is all torsion, since $X$ is a finite complex —
+    The solution now records the consequence *for reduced cohomology*, which is where the computation
+    lives: the reduced Bockstein cohomology vanishes, so the reduced $E_2$ is zero and
+    $(\widetilde H^*(X;\ZZ)/T)\otimes\ZZ_p=0$, hence $\widetilde H^*(X;\ZZ)$ is all torsion. Degree zero is separate
+    and must be kept out, because $\beta$ vanishes on $H^0(X;\ZZ_p)=\ZZ_p$: the unreduced $E_2$ is $\ZZ_p$ in
+    degree $0$, matching $H^0(X;\ZZ)=\ZZ$. An earlier version of this note, and of the solution, said
+    "$E_2=0$" and "$H^*(X;\ZZ)$ is all torsion" without that qualification, which contradicts $H^0(X;\ZZ)=\ZZ$.
+    Then the Koszul-complex computation supplies the torsion groups
     and then the Koszul-complex computation supplies the torsion groups
     $\widetilde H_{kn+j}(X;\ZZ)=(\ZZ_p)^{\binom{k-1}{j}}$. That computation is also checked: the
     reduced chains of $X$ are the $k$-fold tensor product of $\ZZ\xrightarrow{p}\ZZ$, the
@@ -92,7 +96,7 @@ Thus the Bockstein complex is the $k$-fold tensor product of the two-term comple
 $$
 \ZZ_p\{a\}\xrightarrow{\cong}\ZZ_p\{b\},
 $$
-which is acyclic: $\beta a=b\ne0$, so $\ker\beta=\ZZ_p\{b\}$ and $\operatorname{im}\beta=\ZZ_p\{b\}$. Over a field the tensor product of acyclic complexes is acyclic, by the Künneth formula, so the Bockstein cohomology $\ker\beta/\operatorname{im}\beta$ of $X$ vanishes in every degree.
+which is acyclic: $\beta a=b\ne0$, so $\ker\beta=\ZZ_p\{b\}$ and $\operatorname{im}\beta=\ZZ_p\{b\}$. Over a field the tensor product of acyclic complexes is acyclic, by the Künneth formula, so the Bockstein cohomology $\ker\beta/\operatorname{im}\beta$ of the **reduced** complex of $X$ vanishes in every degree. The unreduced complex is a different matter and must not be confused with it: in degree $0$ its differential is zero, so its $\ker\beta/\operatorname{im}\beta$ is $H^0(X;\ZZ_p)=\ZZ_p$.
 
 That vanishing is what the exercise asks for, and it answers half of the second question *for reduced cohomology*, which is where it is proved. The Bockstein spectral sequence of the coefficient sequence $0\to\ZZ\to\ZZ\to\ZZ_p\to0$ has $E_1=H^*(X;\ZZ_p)$ with $d_1=\beta$ and converges to $(H^*(X;\ZZ)/T)\otimes\ZZ_p$, $T$ the torsion subgroup. The acyclicity computed above is that of the *reduced* complex, so what vanishes is the reduced $E_2$. Degree zero must be kept separate, and it is the reason the two statements are compatible: $\beta$ is zero on $H^0(X;\ZZ_p)=\ZZ_p$, so the unreduced $E_2$ is $\ZZ_p$ in degree $0$ and zero above, matching $H^0(X;\ZZ)=\ZZ$. Hence
 $$

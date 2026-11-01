@@ -28,6 +28,23 @@ audit:
   date: 2026-10-31
   note: >-
     Read the step claims, the openings and the construction: copies of $S^2$ chained by intervals covering the sphere-with-diameter space, and the analogous chain for the sphere with an attached circle. Not every line of the covering verification was checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Both constructions are correct. For the sphere with a diameter, the chains
+    of sphere copies joined by intervals have incidence graph the infinite line, and the evenly
+    covered neighbourhoods check out at the two special points: at `p` one takes a disk in the
+    sphere together with a short initial segment of the diameter, whose lifts at `p_n` are the
+    disk copy in `S_n^2` joined to the terminal segment of `I_{n-1}`, pairwise disjoint; at `q` the
+    same with the initial segment of `I_n`. Simple connectivity follows because the pieces are
+    simply connected, adjacent pieces meet in one point and the incidence graph is a tree, and a
+    loop has compact image so it meets finitely many pieces. For the sphere with a circle meeting
+    it in `p` and `q`, indexing the sheets by `F_2` is the right choice: the incidence graph
+    `g <-> ga`, `g <-> gb` is the Cayley graph of the free group on two generators, hence a tree,
+    and the local checks are exact — at `p_g` there is one lift of each of the two arc germs, and
+    at `q_g` the two incident terminals are those of `A_{ga^{-1}}` and `B_{gb^{-1}}`, which is
+    right because `A_{g'}` ends at `q_{g'a}`. No correction was needed.
 ---
 
 ::: {.problem}

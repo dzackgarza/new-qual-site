@@ -11,11 +11,19 @@ the `j`-th coordinate map has derivative `diag(1, k_j)`, so its local degree the
 `k_j`; there are `|k_j|` preimages, and the contribution of the coordinate is
 `|k_j| · sgn(k_j) = k_j`, whose product over the coordinates is `k_1 ⋯ k_n`.
 
-This file certifies that bookkeeping: the determinant of the frame derivative, the orientation
-criterion read off it, and the per-coordinate identity together with its product over a finite
-set. It does **not** certify the topological statement `deg f~ = k_1 ⋯ k_n` itself: that is the
-standard computation for self-maps of `S^{2n-1}` (the lens-space discussion in §3.E), it is
-cited, and no formalization of it exists in this repository.
+What this file certifies is *arithmetic only*: that the linear map `diag(1, k)` of the frame has
+determinant `k`, that it preserves orientation exactly when `k > 0`, and that `|k| sgn(k) = k` holds
+per coordinate and multiplies over a finite set of coordinates.
+
+It does **not** certify, and should not be read as certifying, any of the geometric steps:
+
+* that the angular extension `f~` has derivative `diag(1, k_j)` in that frame,
+* that its local degree at a preimage is therefore `sgn(k_j)`,
+* the degree formula `deg f~ = k_1 ⋯ k_n` for self-maps of `S^{2n-1}`, or
+* the degree of `f`, which the card gets from the covering square `p' f~ = f p`.
+
+The first three are inputs quoted from the lens-space discussion in §3.E and are named as such in
+the card; the last is a consequence of those inputs together with multiplicativity of degree.
 
 It also does not certify the holomorphic comparison: `z ↦ z^k` is conformal on `ℂ^×` for every
 `k ≠ 0`, so its local degree is `+1`, and it is *not* the angular extension when `k < 0` (it

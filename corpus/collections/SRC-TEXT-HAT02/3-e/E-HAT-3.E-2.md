@@ -30,10 +30,20 @@ audit:
     $\varepsilon=\pm1$ since $h$ has degree $\pm1$ on integral top cohomology, so $a^nt=\varepsilon t'$
     and the two classes agree in $\ZZ_m^*/(\pm(\ZZ_m^*)^n)$. Added: the same computation shows
     $\tau(L)$ is independent of the chosen generator $x$, which the card used without saying — an
-    $a$-fold change of generator multiplies $t$ by $a^n$. (b) is right in all four items; the local
-    degree argument for $\deg\widetilde f=\prod k_j$ is now spelled out (the $k_j$-th power map is
-    orientation-preserving for $k_j>0$ and reversing for $k_j<0$, uniformly on all preimages), and
-    the degree computation for $f$ is now the honest $\deg\widetilde f=(\deg f)(\deg p)=m\deg f$
+    (b) is right in all four items. The local-degree bookkeeping is about the *angular* extension
+    $(r,\theta)\mapsto(r,k_j\theta)$ and is now stated in those terms: in the oriented frame
+    $(\partial_r,r^{-1}\partial_\theta)$ the derivative is $\operatorname{diag}(1,k_j)$, so the local degree is
+    $\operatorname{sgn}(k_j)$ at each of the $|k_j|$ preimages. An earlier version of *this note* described that
+    argument through the holomorphic power $z\mapsto z^{k_j}$; that was wrong, since $z\mapsto z^k$ is conformal on
+    $\CC^\times$ with local degree $+1$ for every $k\ne0$, and it is a different map when $k<0$. What is **not**
+    certified, and is a named input from the section: that $\widetilde f$ has this derivative and this local degree
+    at all, and the degree formula $\deg\widetilde f=\prod_j k_j$ itself, which is the standard computation for
+    self-maps of $S^{2n-1}$. `proofs/cards/LensDegree.lean` certifies only the arithmetic:
+    $\det\operatorname{diag}(1,k)=k$, the orientation criterion read off it, and $|k|\operatorname{sgn}(k)=k$ with the
+    product over the coordinates, and nothing about the geometric map. The degree of $f$ comes from the covering
+    square $p'\circ\widetilde f=f\circ p$ with both coverings of degree $m$, giving $\deg f=\deg\widetilde f$; the
+    earlier version of the solution wrote $\deg\widetilde f=m\deg f$, false for $m>1$, and the earlier version of
+    this note repeated it.
     rather than an equation with $m$ on both sides. (c) and (d) are right, including the use of
     $L_m(1,\dots,1)$ and of $k_j\equiv\ell_j^{-1}$ to get $\tau(L)=(\prod\ell_j)^{-1}\tau(L_0)$; the
     cancellation is legitimate because $\tau$ takes values in a group. Nothing is left uncited
