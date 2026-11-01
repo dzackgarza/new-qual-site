@@ -141,13 +141,11 @@ statements were compared with the printed exercises on 2026-11-01 and the necess
 hints and pointers, printed sentences and parentheticals, and four halved "iff"s (`E-HAT-3.F-9(a)`, `E-HAT-4.1-19`,
 `E-HAT-4.1-22`, `E-HAT-4.3-22`). Proof repairs applied where a proof was missing or wrong: `E-HAT-3.F-2`, `-3`, `-7`,
 `E-HAT-3.H-2`, `-4`, `-5`, and `E-HAT-4.3-24`, which had no proof at all.
-`E-HAT-3.C-16` (source read: Hatcher printed p.292 = PDF 301): an isomorphism of mod-$p$ reductions must
-preserve multiplication **and** comultiplication, i.e. satisfy $\bar m'_{ij}u_iu_j=\bar m_{ij}u_{i+j}$ and
-$\bar c'_{ij}u_{i+j}=\bar c_{ij}u_iu_j$ simultaneously; since $\bar c_{ij}=\overline{b_{ij}/m_{ij}}$ depends on the
-*exact* valuation, the support of the structure constants is not a complete invariant (two forms differing only in
-$v_p(m_{13})$ at $b_{13}=4$ have the same support and different coproduct constants). For a fixed pair of forms the
-question is therefore a decidable system over $\FF_p$. **Open: whether the valuation vector is a complete
-invariant.** The bounded-degree search on the card is a check, not a classification.
+`E-HAT-3.C-16` **resolved.** Source: Hatcher printed p.292 (PDF 301). Forms are classified by the integral
+cocycle $m_{ij}$ with $m_{ij}\mid b_{ij}$; reductions are classified by the flag
+$\left([v_p(m_{ij})>0],[v_p(m_{ij})=v_p(b_{ij})]\right)_{ij}$ — the valuation vector determines the reduction
+(Theorem 8, explicit isomorphism $\bar x_n\mapsto\omega_n\bar y_n$, preserving multiplication and
+comultiplication in all three cases) and the reduction determines exactly those two bits (Theorem 9).
 Raw audit reports are preserved under `reports/audit-2026-11/` with a status table.
 **Proofs still to read, by card, in that same slice (97 cards):** `3-f` exercises 4–9 (6); `4-a/E-HAT-4.A-4` and `-5`;
 `4-l/E-HAT-4.L-4` and `-5`; `4-1` exercises 10–23 (14); `4-2` exercises 1–39 (39); `4-3` exercises 1–24 (24), of which

@@ -114,6 +114,23 @@ audit:
     fixed pair of forms the question is the solvability of an explicit system over F_p, decidable.
     What remains open and is stated as open: whether the valuation vector is a complete invariant. The
     finite search on this card is labelled a bounded-degree check, not an all-degree classification.
+- event: solution-written
+  by: claude
+  date: 2026-11-01
+  note: >-
+    The open question is settled. Theorem 8: if v_p(m_ij) = v_p(m'_ij) for all i,j then the reductions are
+    isomorphic, with an explicit isomorphism phi(x_n) = omega_n y_n where omega_n is the unit part of
+    q_n/q'_n; the proof checks both the multiplication and the comultiplication equations at every pair,
+    splitting into the three cases e_ij = 0, 0 < e_ij = v_p(b_ij) and 0 < e_ij < v_p(b_ij), the last being
+    vacuous on both sides. Theorem 9: conversely an isomorphism forces the two bits
+    [v_p(m_ij) > 0] and [v_p(m_ij) = v_p(b_ij)] to agree, since the u_n are units and each equation is
+    homogeneous. Corollary: the reductions are classified by those two bits per pair, i.e. by the flag
+    (delta, epsilon); the valuation vector determines the reduction but is not injective on classes.
+    Corroborated numerically on the pair (Gamma, p^{v_p(binomial)}) at p = 3, 5, 7, with u_n = omega_n
+    satisfying every constraint; an earlier run of that check reported violations and the fault was the
+    reciprocal convention in the script, not the theorem. Also removed from this card: the paragraph
+    headed "A second, independent way the residues can matter", which asserted that the product system
+    could be unsolvable -- false, by Theorem 8 -- and the earlier "open" status paragraph.
 ---
 
 ::: {.problem}
@@ -283,10 +300,48 @@ Three consequences, none of which the product constants alone see.
 
 *Proof.* Immediate from Theorem 6 and Proposition 5. $\square$
 
-**What is open, exactly.** Whether the valuation vector $(v_p(m_{ij}))$ is a *complete* invariant, equivalently whether the system of Theorem 7 is always solvable for two forms with equal valuation vectors. Nothing here settles it; no counterexample is known to this card; and the finite search recorded below covers finitely many forms of bounded degree and is not a proof at any degree.
+**Theorem 8 (the valuation vector determines the reduction).** *Let $A,A'$ be two forms with $m_{ij},m'_{ij}$ their structure constants in the bases normalised by $q_1=q'_1=1$. If $v_p(m_{ij})=v_p(m'_{ij})$ for all $i,j$, then $A\otimes\FF_p\cong A'\otimes\FF_p$.*
 
-**A second, independent way the residues can matter.** Beyond the coproduct mechanism of (ii) above, the product equation alone can fail to be solvable: when the auxiliary pairs $(i,t)$ and $(t,n-j)$ of Proposition 5 are singular, the integral identity $m_{it}m_{j,n-j}=m_{t,n-j}m_{i,n-i}$ forces $e_{it}=e_{t,n-j}\ge1$ and, after dividing both singular factors by that common power of $p$, leaves the relation $\overline{M_{it}}\,\bar m_{j,n-j}=\overline{M_{t,n-j}}\,\bar m_{i,n-i}$ among *units*. The unit parts $M_{it}$ of the singular constants are not recorded by any valuation, so two forms with equal valuation vectors may impose different relations on the residues off the support, and the product system may then be unsolvable. This is a mechanism, not an example: this card exhibits no such pair, and the finite search it records — all forms with $m_{1j}\le24$ for $j\le6$ — is a check at bounded degree and not a proof.
+*Proof.* Write $q_n=p^{\tau_n}\sigma_n$ and $q'_n=p^{\tau'_n}\sigma'_n$ with $\sigma_n,\sigma'_n\in\ZZ_p^\times$ (the $\tau$'s may be negative), and put $\omega_n=\sigma_n/\sigma'_n\bmod p\in\FF_p^\times$. Define $\phi(\bar x_n)=\omega_n\bar y_n$; by Theorem 6 it suffices to check the two equations at every pair.
 
-**Status of the exercise's second question.** Partly answered, with the boundary explicit. The reductions are the orbits of Proposition 1 under the *two* conditions of Theorem 6, so an isomorphism is a solution of an explicit system over $\FF_p$ and the question is decidable for each pair of forms (Theorem 7). Not settled: whether the valuation vector is a complete invariant. Corrected here: the previous note's claim that the support classifies the reductions for $p=2$ — false, by (ii) above.
+Both forms are forms of the same $\QQ[\alpha]$ with $x_1=t$, so $b_{ij}=b'_{ij}$; write $\mu_{ij}=m_{ij}/p^{e_{ij}}\bmod p$ and $\mu'_{ij}=m'_{ij}/p^{e_{ij}}\bmod p$ for the unit parts, which are $\sigma_i\sigma_j/\sigma_{i+j}$ and $\sigma'_i\sigma'_j/\sigma'_{i+j}$ respectively because $m_{ij}=q_iq_j/q_{i+j}$.
+
+*Case $e_{ij}=0$.* Then $m_{ij},m'_{ij}$ are $p$-units and the first equation is the only constraint. Using $\mu_{ij}=\sigma_i\sigma_j/\sigma_{i+j}$,
+$$
+\bar m'_{ij}\omega_i\omega_j=\mu'_{ij}\frac{\sigma_i\sigma_j}{\sigma'_i\sigma'_j}=\frac{\sigma'_i\sigma'_j}{\sigma'_{i+j}}\cdot\frac{\sigma_i\sigma_j}{\sigma'_i\sigma'_j}=\frac{\sigma_i\sigma_j}{\sigma'_{i+j}},
+$$
+$$
+\bar m_{ij}\omega_{i+j}=\mu_{ij}\frac{\sigma_{i+j}}{\sigma'_{i+j}}=\frac{\sigma_i\sigma_j}{\sigma_{i+j}}\cdot\frac{\sigma_{i+j}}{\sigma'_{i+j}}=\frac{\sigma_i\sigma_j}{\sigma'_{i+j}} .
+$$
+*Case $e_{ij}>0$ and $e_{ij}=v_p(b_{ij})>0$.* Then $\bar m_{ij}=\bar m'_{ij}=0$ and the constraint is the second equation. With $\beta_{ij}=b_{ij}/p^{f_{ij}}\bmod p\ne0$ one has $\bar c_{ij}=\beta_{ij}/\mu_{ij}$ and $\bar c'_{ij}=\beta_{ij}/\mu'_{ij}$, so
+$$
+\bar c'_{ij}\omega_{i+j}=\frac{\beta_{ij}}{\mu'_{ij}}\cdot\frac{\sigma_{i+j}}{\sigma'_{i+j}}
+=\frac{\beta_{ij}\sigma'_{i+j}}{\sigma'_i\sigma'_j}\cdot\frac{\sigma_{i+j}}{\sigma'_{i+j}}
+=\frac{\beta_{ij}\sigma_{i+j}}{\sigma'_i\sigma'_j},
+$$
+$$
+\bar c_{ij}\omega_i\omega_j=\frac{\beta_{ij}}{\mu_{ij}}\cdot\frac{\sigma_i\sigma_j}{\sigma'_i\sigma'_j}
+=\frac{\beta_{ij}\sigma_{i+j}}{\sigma_i\sigma_j}\cdot\frac{\sigma_i\sigma_j}{\sigma'_i\sigma'_j}
+=\frac{\beta_{ij}\sigma_{i+j}}{\sigma'_i\sigma'_j} .
+$$
+*Case $e_{ij}>0$ and $e_{ij}<v_p(b_{ij})$.* Then $\bar m_{ij}=\bar m'_{ij}=0$ and $\bar c_{ij}=\bar c'_{ij}=0$, so both equations are vacuous. These are the only cases, since $m_{ij}\mid b_{ij}$ gives $e_{ij}\le v_p(b_{ij})$ always. Hence $\phi$ preserves both operations. $\square$
+
+**Theorem 9 (the reduction sees exactly two bits per pair).** *If $A\otimes\FF_p\cong A'\otimes\FF_p$ then for every pair $i,j$: $[v_p(m_{ij})>0]=[v_p(m'_{ij})>0]$ and $[v_p(m_{ij})=v_p(b_{ij})]=[v_p(m'_{ij})=v_p(b_{ij})]$.*
+
+*Proof.* In the isomorphism the $u_n$ are units, so the first equation of Theorem 6 shows $\bar m_{ij}=0\iff\bar m'_{ij}=0$, i.e. $v_p(m_{ij})>0\iff v_p(m'_{ij})>0$; and the second shows $\bar c_{ij}=0\iff\bar c'_{ij}=0$, which with $m_{ij}\mid b_{ij}$ is $v_p(m_{ij})=v_p(b_{ij})\iff v_p(m'_{ij})=v_p(b_{ij})$. $\square$
+
+**Corollary (the classification asked for by the exercise).** *Define the flag of a form by the two bits*
+$$
+\delta_{ij}(A)=[\,v_p(m_{ij})>0\,],
+\qquad
+\varepsilon_{ij}(A)=[\,v_p(m_{ij})=v_p(b_{ij})\,].
+$$
+*Then $A\otimes\FF_p\cong A'\otimes\FF_p$ if and only if $\delta(A)=\delta(A')$ and $\varepsilon(A)=\varepsilon(A')$.*
+
+*Proof.* The proof of Theorem 8 uses the valuation vector only through the trichotomy of its three cases, which is exactly the pair of bits $(\delta,\varepsilon)$: equal flags force equal cases at every pair, and the same $\phi$ satisfies both equations, so the forward implication holds with flags in place of valuations. The converse is Theorem 9. $\square$
+
+So the answer to the exercise's second question is: the Hopf algebras over $\ZZ_p$ arising are exactly one isomorphism class for each flag pattern $(\delta,\varepsilon)$ realised by an integral form, and the whole $p$-adic valuation vector determines the class (Theorem 8) without being injective on it (Theorem 9: the class sees the bits, not the magnitudes). Consistency with §§3.C.12–13 of the book: for the divided-power form the flags are $\delta_{ij}=[p\mid\binom{i+j}{i}]$, $\varepsilon_{ij}=1$, which is the pattern of $\Gamma\otimes\FF_p$ computed above; for the polynomial form both flags vanish identically, giving $\FF_p[\alpha]$.
+
+**Status of the exercise.** Both parts answered. The forms $A$ are classified by the integral cocycle $m_{ij}$ with $m_{ij}\mid b_{ij}$ and the cocycle identity (§ above). The reductions $A\otimes\ZZ_p$ are classified by the flag $(\delta,\varepsilon)$ of Theorem 9's corollary: the valuation vector determines the reduction (Theorem 8), and the reduction determines exactly those two bits per pair (Theorem 9), so distinct flag patterns give distinct Hopf algebras and each realised pattern gives one.
 
 :::

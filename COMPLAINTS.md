@@ -321,25 +321,20 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
    reported and repaired above; the rest is unaudited.
-3. **`E-HAT-3.C-16`, the mod-$p$ classification: OPEN, and two of my own claims retracted.** The
-   exercise is read from the source — Hatcher, printed p.292 (PDF page 301): *"Classify algebraically the
-   Hopf algebras $A$ over $\ZZ$ such that $A_n$ is free for each $n$ and $A\otimes\QQ\approx\QQ[\alpha]$.
-   In particular, determine which Hopf algebras $A\otimes\ZZ_p$ arise from such $A$'s."*
-   **Proved on the card:** an isomorphism of reductions must satisfy *both*
-   $\bar m'_{ij}u_iu_j=\bar m_{ij}u_{i+j}$ and $\bar c'_{ij}u_{i+j}=\bar c_{ij}u_iu_j$ (Theorem 6);
-   these are equivalent only where the constants are non-zero, so **the support does not classify the
-   reductions** — with $m_{ij}=p^{f_{ij}}$, $f_{ij}=v_p\binom{i+j}{i}=s_p(i)+s_p(j)-s_p(i+j)$ (a valuation
-   cocycle, checked), $b_{13}=4$, two forms differing in $v_p(m_{13})\in\{1,2\}$ have equal support and
-   coproduct constants $0$ and $1$, hence are non-isomorphic; and for a fixed pair of forms the question
-   is the solvability of an explicit system over $\FF_p$, hence decidable (Theorem 7).
-   **Open:** whether the valuation vector $v_p(m_{ij})$ is a *complete* invariant.
-   **Retracted here, with the reason:** (a) my claim that the reductions are NOT determined by the
-   valuations — unproved then, and now known to be at best a finer question than the support suggests;
-   (b) my follow-up theorem that for $p=2$ the support classifies them — **false**, because over
-   $\FF_2$ a coproduct constant still distinguishes exact valuations, and I had justified reducing the
-   isomorphism condition to product constants by an argument that only holds off the vanishing set. The
-   finite search on the card ($m_{1j}\le24$, $j\le6$) is a bounded-degree check and is not presented as
-   an all-degree classification.
+3. **`E-HAT-3.C-16`, the mod-$p$ classification: RESOLVED.** The exercise is read from the source —
+   Hatcher, printed p.292 (PDF page 301). **Theorem 8:** if the $p$-adic valuation vectors agree,
+   $v_p(m_{ij})=v_p(m'_{ij})$ for all $i,j$, then $A\otimes\FF_p\cong A'\otimes\FF_p$, with the explicit
+   isomorphism $\phi(\bar x_n)=\omega_n\bar y_n$, $\omega_n$ the unit part of $q_n/q'_n$; the proof checks
+   multiplication *and* comultiplication at every pair in the three cases $e_{ij}=0$,
+   $0<e_{ij}=v_p(b_{ij})$, and $0<e_{ij}<v_p(b_{ij})$ (vacuous). **Theorem 9:** an isomorphism forces the two
+   bits $[v_p(m_{ij})>0]$ and $[v_p(m_{ij})=v_p(b_{ij})]$ to agree. **Corollary:** the reductions are
+   classified by that flag; the valuation vector determines the reduction but is not injective on classes.
+   Corroborated on $(\Gamma,\ p^{v_p\binom{i+j}{i}})$ at $p=3,5,7$. **Three of my own earlier claims are
+   retracted here:** that the reductions are *not* determined by the valuations (they are); that for $p=2$
+   the support classifies them (it does not — coproduct constants see exact valuations); and that the
+   product system "may be unsolvable" (it is always solvable, by Theorem 8). A fourth, smaller slip is
+   recorded because it nearly caused a false alarm: a verification script used the reciprocal of
+   $\omega_n$ and reported violations that do not exist.
 
 4. **`P-AGH467MULTISECANTS`.** The Kaji citation is checked at the level of the paper's abstract only.
    The paper's body — in particular the singularity condition that is vacuous for smooth curves — was
