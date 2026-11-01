@@ -1539,7 +1539,7 @@ end BarySubdiv
 #print axioms BarySubdiv.descVertex_last
 #print axioms BarySubdiv.peel_take_toFinset
 #print axioms BarySubdiv.rev_image_Iio
-#print axioms BarySubdiv.sdiff_image_of_injective
+#print axioms BarySubdiv.sdiff_image_of_bijective
 #print axioms BarySubdiv.peel_take_face
 #print axioms BarySubdiv.chainOf_length
 #print axioms BarySubdiv.chainOf_peel_eq_ofFn_descFace
