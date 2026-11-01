@@ -32,7 +32,7 @@ replacement. A correction is marked settled on its card only when a file here ce
 | `cards/TorTorsion.lean` | `E-HAT-3.A-6` | The coordinate step of the converse and the refutation of the inference it replaces: `ratchet_le`, `exact_order_smul`, `exists_coord`, `zmod_two_no_exact_order_eight`, `zmod_eight_order_four`. |
 | `cards/FamilyQuotient.lean` | `E-HAT-2.3-2` | The precise implication the dimension step needs: if the family $(f_i)_{i\in\ZZ}$ of groups is carried by a `Finset` (every group outside it is trivial), then the canonical map $\bigoplus_i f_i\to\prod_i f_i$ is **surjective**, so the quotient $\prod_i f_i\big/\bigoplus_i f_i$ is trivial; stated as `directSumToPi_surjective_of_finite_support` and `quotient_subsingleton_of_finite_support`, with the point case (all groups trivial) and the $S^0$ case (exactly one nonzero index) as corollaries. It does **not** assert that the sum and the product are isomorphic, and says nothing for a family with infinite support — there the map is not surjective in general, which is why the candidate fails the wedge axiom. The identification of the $f_i$ with reduced homology groups is not formalized. |
 | `cards/ChainLevelSteps.lean` | `E-HAT-2.2-16` | The degree-zero and skeleton steps of the repair, but not the enumeration of the simplex's chains: `choose_rank_step` (Pascal's identity), `ker_ne_top_of_surjective_to_int` (a surjection onto $\ZZ$ has proper kernel), `not_subsingleton_ordinary_homology` (with $\ker\varepsilon=\operatorname{im}\partial_1$ and $\varepsilon$ onto $\ZZ$, the ordinary $C_0/\operatorname{im}\partial_1\cong\ZZ$ is not trivial, so $Z_0/B_0$ cannot stand in for $\widetilde H_0$), and `ker_eq_range_of_comm_iso` (exactness transports across an isomorphism of three-term complexes, which is how the $k$-skeleton inherits exactness in the degrees where its differentials agree with the simplex's). **Not** certified: that the simplex's augmented complex is exact, that its chains are the barycentric ones, and hence $\widetilde H_i((\Delta^n)^k)=0$ for $i<k$ as a statement about the simplex. |
-| `cards/TorReductions.lean` | `E-HAT-3.A-6` | The presentation-level `Tor` and the parts of Hatcher's Proposition 3A.5 that Mathlib supplies: the free case of (3) (`torKernel_eq_bot_of_subsingleton`), the group in (5) (`torsionBy_eq_ker`), the torsion-free-is-flat hypothesis of (3) (`flat_of_torsionFree`, Mathlib's Dedekind-domain instance), and the flatness form of (6) (`rTensor_injective_of_flat`, Mathlib's `Module.Flat.rTensor_preserves_injective_linearMap`); and, for the step that needs the *$p$-primary* hypothesis rather than torsion-freeness, item (5) in full: `lid_rTensor_mulByInt` and `map_torKernel_mulByInt`, that the kernel of $(n\cdot\mathrm{id})\otimes\mathrm{id}_B$ inside $\ZZ\otimes B$ is carried by $\ZZ\otimes B\cong B$ onto $B[n]$ — that is, $\operatorname{Tor}(\ZZ/n,B)\cong B[n]$ for this resolution — together with `eq_zero_of_pow_smul_eq_zero`, `torsionBy_pow_eq_bot_of_no_p_torsion` (no $p$-torsion gives $C[p^k]=0$) and `mem_of_p_smul_mem_of_pPrimary` ($B_p$ is saturated for multiplication by $p$, i.e. $B/B_p$ has no $p$-torsion). **Not** certified: that the presentation-level kernel computes $\operatorname{Tor}$ for an arbitrary resolution (Lemma 3A.2), additivity (2), and commutation with direct limits (Exercise 4), which is what carries the cyclic case to an arbitrary $p$-primary group. |
+| `cards/TorReductions.lean` | `E-HAT-3.A-6` | The presentation-level `Tor` and the parts of Hatcher's Proposition 3A.5 that Mathlib supplies: the free case of (3) (`torKernel_eq_bot_of_subsingleton`), the group in (5) (`torsionBy_eq_ker`), the torsion-free-is-flat hypothesis of (3) (`flat_of_torsionFree`, Mathlib's Dedekind-domain instance), and the flatness form of (6) (`rTensor_injective_of_flat`, Mathlib's `Module.Flat.rTensor_preserves_injective_linearMap`); and, for the step that needs the *$p$-primary* hypothesis rather than torsion-freeness, item (5) in full: `lid_rTensor_mulByInt` and `map_torKernel_mulByInt`, that the kernel of $(n\cdot\mathrm{id})\otimes\mathrm{id}_B$ inside $\ZZ\otimes B$ is carried by $\ZZ\otimes B\cong B$ onto $B[n]$ — that is, $\operatorname{Tor}(\ZZ/n,B)\cong B[n]$ for this resolution — together with `eq_zero_of_pow_smul_eq_zero`, `torsionBy_pow_eq_bot_of_no_p_torsion` (no $p$-torsion gives $C[p^k]=0$) and `mem_of_p_smul_mem_of_pPrimary` ($B_p$ is saturated for multiplication by $p$, i.e. $B/B_p$ has no $p$-torsion). Additivity (2) is now proved as `prodLeft_comp_rTensor` and `map_prodLeft_torKernel`: the presentation of a direct sum is the direct sum of the presentations, so `torKernel (f₁ ⊕ f₂)` is carried by `TensorProduct.prodLeft` onto `torKernel f₁ × torKernel f₂`. The proof avoids `prodLeft.symm` on arbitrary elements by rewriting the kernel as a `comap` and mapping forward through `Submodule.map_comap_eq_self`. **Not** certified: that the presentation-level kernel computes $\operatorname{Tor}$ for an arbitrary resolution (Lemma 3A.2) and commutation with filtered colimits (Exercise 4), which is what carries the cyclic case and the summand-by-summand case to an arbitrary $p$-primary or torsion-free group. |
 
 ## 2. Chain-level checks in Sage
 
@@ -91,15 +91,11 @@ settled until a file here covers it:
   $H_0$, and the transport of exactness across an isomorphism of three-term complexes; it
   does not supply the simplex's chain complex itself, so the card's implication is still not
   completed.
-- `E-HAT-3.A-6` and `E-HAT-3.A-2`, additivity (Proposition 3A.5(2)) and the filtered
-  colimit step (Exercise 4). The computation is now proved — `prodLeft_comp_rTensor` in
-  `cards/TorReductions.lean`, with clean axioms: tensoring a product map with `id_B` commutes
-  with `TensorProduct.prodLeft`. What is missing is one kernel transfer, isolated in that file:
-  the equation `prodLeft ((prodLeft).symm y) = y` is needed in the *coerced* shape in which it
-  occurs inside that commutation, while `LinearEquiv.apply_symm_apply` produces it uncoerced,
-  and no coercion lemma in this Mathlib bridges the two (`rw` reports
-  `Did not find an occurrence of the pattern ?e ((LinearEquiv.symm ?e) ?c)`). The filtered-colimit
-  step then needs additivity plus commutation of `⊗` with filtered colimits of abelian groups.
+- `E-HAT-3.A-6` and `E-HAT-3.A-2`, the filtered-colimit passage (Exercise 4 of §3.A): with
+  additivity proved, what remains is that `Tor` commutes with the filtered colimit of the
+  finitely generated subgroups of a torsion-free group, and with the directed union of the
+  `p`-primary subgroups in `A_p = colim A_{p,α}`. This needs `⊗` commuting with filtered
+  colimits of abelian groups on top of `map_prodLeft_torKernel`, and is not proved.
 - `E-HAT-3.A-2`: the restored direction "torsion-free implies $\operatorname{Tor}(A,B)=0$
   for all $B$" is a citation of exercise 5 of the same section. Two of its three
   ingredients are certified in `cards/TorReductions.lean` — a finitely generated
@@ -139,3 +135,38 @@ sage proofs/cards/DeltaComplexHomology.sage
 
 `#print axioms` at the end of each file must show only `propext`, `Classical.choice` and
 `Quot.sound`; any appearance of `sorryAx` means the certificate is not a proof.
+
+## Toolchain used by these certificates
+
+The proofs above were elaborated by the interpreter on this image, not against the reference
+snapshot under `/opt/nucleus/docs` (which is Lean 4.27.0 / Mathlib `a3a10db0e9`, a different
+version, so its names must be confirmed against the installed tree — as was done for every
+Mathlib lemma cited here).
+
+- Lean: `4.33.1`, commit `819816b2e0a3bf405af45ae5c7af2491d8f5bee6`.
+- `/opt/mathlib/lean-toolchain` reads `leanprover/lean4:v4.33.1`.
+- `/opt/mathlib` carries no git metadata, so it has no revision string. Its dependency
+  revisions are recorded in `/opt/mathlib/lake-manifest.json`: `plausible b7eb3304ae`,
+  `LeanSearchClient 5f4d51b81c`, `importGraph 16f02aa764`, `proofwidgets 4be2e3d508`,
+  `aesop 3448c0bcc5`, `Qq 92c15be17b`, `batteries 4488d40d07`, `Cli 6130a47896`.
+- Fingerprints of the two sources these proofs cite: `Mathlib/AlgebraicTopology/ExtraDegeneracy.lean`
+  `e4becd37161c31cfa81e8bfea…`, `Mathlib/LinearAlgebra/TensorProduct/Prod.lean`
+  `db6648de2b0ea1ac0afff73d4…` (sha256, truncated).
+- `TensorProduct.prodLeft_tmul` is `rfl` in this tree, and so is `prodLeft_symm_tmul`; the
+  additivity proof above relies on the former only through `prodLeft_comp_rTensor`.
+
+### Simplicial contraction infrastructure, verified in this tree
+
+- `SSet.Augmented.StandardSimplex.extraDegeneracy : (Δ : SimplexCategory) →
+  CategoryTheory.SimplicialObject.Augmented.ExtraDegeneracy (SSet.Augmented.stdSimplex.obj Δ)`
+  — present.
+- `CategoryTheory.SimplicialObject.Augmented.ExtraDegeneracy.homotopyEquiv : X.ExtraDegeneracy →
+  HomotopyEquiv (AlternatingFaceMapComplex.obj (Augmented.drop.obj X))
+  ((ChainComplex.single₀ C).obj (Augmented.point.obj X))` — present.
+- `SSet.Augmented.ExtraDegeneracy.map` does **not** exist in this tree under that name.
+
+These give the contraction of the *alternating face map* complex of the standard simplex,
+which is not yet the card's chain model: `E-HAT-2.2-16` needs the barycentric/simplicial
+chain complex of $\Delta^n$ and the skeleton maps that commute with the differentials, so
+`ker_eq_range_of_comm_iso` still has no instantiation. That identification is the open part
+of the $2.2$-$16$ obligation recorded above.

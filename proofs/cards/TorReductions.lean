@@ -207,30 +207,49 @@ theorem prodLeft_comp_rTensor {K₁ K₂ F₁ F₂ : Type*} [AddCommGroup K₁] 
   | tmul k b => obtain ⟨k₁, k₂⟩ := k; simp [TensorProduct.prodLeft_tmul]
   | add x y hx hy => simp only [map_add, hx, hy]
 
-/-! ## Additivity: the isolated missing step
+/-- Hatcher, Proposition 3A.5(2) at the presentation level: the presentation of a direct
+sum is the direct sum of the presentations, so the presentation-level `Tor` splits. Here
+`torKernel (f₁ ⊕ f₂)` is the kernel of `(f₁ ⊕ f₂) ⊗ id_B` inside `(K₁ × K₂) ⊗ B`, and the
+statement says that the distributivity isomorphism
+`TensorProduct.prodLeft` carries it onto `Tor(f₁) × Tor(f₂)`.
 
-With `prodLeft_comp_rTensor` proved, additivity
-`(torKernel (f₁ ⊕ f₂)).map prodLeft = (torKernel f₁).prod (torKernel f₂)`
-reduces to one kernel transfer: from a point `y` in `(ker (f₁ ⊗ id)).prod (ker (f₂ ⊗ id))`,
-to show that `(prodLeft).symm y` lies in the kernel of `(f₁ ⊕ f₂) ⊗ id`.
+The proof avoids the `.symm` of `prodLeft` on arbitrary elements — which is where the
+earlier attempt stalled, because `prodLeft_tmul` and `apply_symm_apply` are available in
+different coercion shapes — by rewriting the kernel as a `comap` and mapping it forward;
+`Submodule.map_comap_eq_self` only needs `prodLeft` to be onto its kernel, and the whole
+element-level content is the composition identity `prodLeft_comp_rTensor`. -/
+theorem map_prodLeft_torKernel {K₁ K₂ F₁ F₂ : Type*} [AddCommGroup K₁] [AddCommGroup K₂]
+    [AddCommGroup F₁] [AddCommGroup F₂] (f₁ : K₁ →ₗ[ℤ] F₁) (f₂ : K₂ →ₗ[ℤ] F₂) :
+    (torKernel (B := B) (f₁.prodMap f₂)).map
+        (TensorProduct.prodLeft ℤ ℤ K₁ K₂ B).toLinearMap =
+      (torKernel (B := B) f₁).prod (torKernel (B := B) f₂) := by
+  have key := prodLeft_comp_rTensor (B := B) f₁ f₂
+  have hcomap : LinearMap.ker ((f₁.prodMap f₂).rTensor B)
+      = (LinearMap.ker ((f₁.rTensor B).prodMap (f₂.rTensor B))).comap
+          (TensorProduct.prodLeft ℤ ℤ K₁ K₂ B).toLinearMap := by
+    ext x
+    rw [Submodule.mem_comap, LinearMap.mem_ker, LinearMap.mem_ker]
+    have h := LinearMap.congr_fun key x
+    simp only [LinearMap.comp_apply] at h
+    rw [← h]
+    constructor
+    · intro hx; rw [hx, map_zero]
+    · intro hx
+      exact (TensorProduct.prodLeft ℤ ℤ F₁ F₂ B).injective (by simpa using hx)
+  simp only [torKernel]
+  have hside : ((LinearMap.rTensor B f₁).prodMap (f₂.rTensor B)).ker ≤
+      (TensorProduct.prodLeft ℤ ℤ K₁ K₂ B).toLinearMap.range := by
+    intro y _
+    exact ⟨(TensorProduct.prodLeft ℤ ℤ K₁ K₂ B).symm y, LinearEquiv.apply_symm_apply _ y⟩
+  rw [hcomap, Submodule.map_comap_eq_self hside, LinearMap.ker_prodMap]
 
-The transfer needs the equation `hq : prodLeft ((prodLeft).symm y) = y` in the *coerced*
-shape in which it occurs inside `prodLeft_comp_rTensor`, namely
+/-! ## The filtered-colimit passage (Exercise 4 of §3.A): still open
 
-`↑(TensorProduct.prodLeft ℤ ℤ K₁ K₂ B) ((TensorProduct.prodLeft ℤ ℤ K₁ K₂ B).symm y) = y`,
-
-while `LinearEquiv.apply_symm_apply` produces it in the uncoerced shape
-`(TensorProduct.prodLeft ℤ ℤ K₁ K₂ B) ((TensorProduct.prodLeft ℤ ℤ K₁ K₂ B).symm y) = y`.
-`rw` at that hypothesis reports
-
-`Did not find an occurrence of the pattern ?e ((LinearEquiv.symm ?e) ?c)`,
-
-and `LinearEquiv.coe_coe`, `LinearEquiv.coe_toLinearMap`, `change` and `simp only` over the
-coercion lemmas do not bridge it in this Mathlib. This is the precise upstream gap: a
-normalisation lemma for the `LinearEquiv` coercion that lets `apply_symm_apply` fire through
-it. Everything else in the additivity proof is available: the computation is
-`prodLeft_comp_rTensor`, the kernel splitting is `LinearMap.ker_prodMap`, and the map on
-kernels is `Submodule.map` along `(TensorProduct.prodLeft ℤ ℤ K₁ K₂ B).toLinearMap`. -/
+With additivity proved, the remaining step shared by `E-HAT-3.A-6` and `E-HAT-3.A-2` is that
+`Tor` commutes with the filtered colimit of the finitely generated subgroups of a torsion-free
+group, and with the directed union of the `p`-primary subgroups in `A_p = colim A_{p,α}`. That
+needs `⊗` commuting with filtered colimits of abelian groups together with additivity; it is
+not proved here and is listed as an obligation in `proofs/README.md`. -/
 
 end TorReductions
 
@@ -247,3 +266,4 @@ end TorReductions
 #print axioms TorReductions.torsionBy_pow_eq_bot_of_no_p_torsion
 #print axioms TorReductions.mem_of_p_smul_mem_of_pPrimary
 #print axioms TorReductions.prodLeft_comp_rTensor
+#print axioms TorReductions.map_prodLeft_torKernel
