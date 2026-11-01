@@ -78,8 +78,35 @@ B[n]$, and (6) the long exact sequence; together with Exercise 4 of §3.A for co
 with direct limits. `cards/TorReductions.lean` formalizes the parts of (3), (5) and (6) that
 are statements about torsion, flatness and tensor products; the comparison theorem (Lemma
 3A.2), additivity (2), the torsion reduction (4) and the direct-limit statement (Exercise
-4) are cited, and the file records why: Mathlib's `CategoryTheory.Tor` has no long exact
-sequence or comparison API to reuse.
+4) are cited. An earlier version of this note said that Mathlib's `CategoryTheory.Tor` has no comparison
+API; that was wrong, and it was wrong because it came from searching the `Tor` namespace alone. The
+pinned tree (`db584cd6`) has, with exact names:
+
+- `Mathlib/CategoryTheory/Abelian/Projective/Resolution.lean`: `ProjectiveResolution.lift`
+  (`def lift`, l.92) with `lift_commutes` (l.100), the homotopies `liftHomotopy` (l.162),
+  `liftIdHomotopy` (l.168), `liftCompHomotopy` (l.173), and **`homotopyEquiv` (l.180)**, which
+  states that two projective resolutions of the same object are homotopy equivalent — the engine
+  of Lemma 3A.2.
+- `Mathlib/CategoryTheory/Abelian/LeftDerived.lean`: `Functor.leftDerived` (l.107) and
+  `ProjectiveResolution.isoLeftDerivedObj` (l.111) with its naturalities
+  `isoLeftDerivedObj_hom_naturality` (l.123) and `isoLeftDerivedObj_inv_naturality` (l.138),
+  computing the derived functor from *any* chosen projective resolution; plus
+  `Functor.leftDerived_map_eq` (l.161). `homotopyEquiv` sits in the same file at l.180 with
+  `homotopyEquiv_hom_π` / `homotopyEquiv_inv_π` immediately after it, which give the compatibility
+  with the augmentation `pi` that a comparison of resolutions needs.
+- `Mathlib/CategoryTheory/Monoidal/Tor.lean`: `Tor` (l.44) and `Tor'` (l.50), defined as the left
+  derived functor of the tensor product.
+- `Mathlib/RingTheory/Flat/Basic.lean`: `Module.Flat.rTensor_exact` (l.340),
+  `rTensor_preserves_injective_linearMap` (l.120), `iff_rTensor_exact` (l.393).
+
+So resolution independence is not what is missing. The smallest missing theorem, stated exactly,
+is the one that ties the concrete computation to the categorical functor: for `f : K -> F`
+injective with `F` free and `A = coker f`, the two-term complex `0 -> K -> F -> 0` is a projective
+resolution of `A` (an `A.ProjectiveResolution` built from it), and therefore
+`Tor 1 A B ≅ ker (f.rTensor B)` — the homology of that complex after `tensorLeft B`, which is
+`ker/im` in degree 1 with the incoming differential zero. Nothing here needs the long exact
+sequence, which is genuinely absent from the pinned `Tor` API; what is absent is this instance
+plus the degree-1 homology computation.
 
 ## 5. Outstanding obligations
 
