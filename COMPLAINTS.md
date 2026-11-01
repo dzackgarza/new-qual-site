@@ -195,3 +195,34 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   $(m,n)\mapsto(n,-m)$, which needs no modularity at all. The next card in this queue was `E-SS2.PR-5`,
   also now solved.
 
+## P-AGH467MULTISECANTS: recorded dependencies verified, one cited input not checked
+
+- **Object and need:** `P-AGH467MULTISECANTS` (Hartshorne IV.6.7 and its converse). Its solution
+  block was moved into place on 2026-11-01; the question is whether the card's completion criteria and
+  dependencies are actually met, as opposed to whether the container is now correct.
+
+- **Observed evidence:** all four internal dependencies of the card resolve —
+  `[[P-AGH434RATIONALNORMALCURVE]]`, `[[P-AGH436CURVESOFDEGREEFOUR]]`, `[[T-CRVCAST]]` and
+  `[[T-DIVMAPPN]]` each exist as a card in `corpus/`. The previously open tangent-contact implication
+  now has its own step, `#tangent-char-zero`, and the characteristic-$p$ failure is a separate step,
+  `#positive-char-counterexample`; `pf-qed` names which steps carry which claim.
+
+- **Impact and owner:** one input remains unverified. Step `#tangent-char-zero` invokes "Kaji's
+  theorem on tangentially degenerate curves" through a DOI link
+  (`10.1112/jlms/s2-33.3.430`) to conclude that the tangent line at a general point of a smooth
+  nonplanar curve does not meet the curve again. The exact statement and hypotheses of that theorem
+  were **not** checked against the paper in this pass — the article is not in the repository and the
+  publisher page is not reachable from here — so the step's citation is recorded as used but
+  unchecked.
+
+- **Uncertainty:** verified — the dependency links, the block structure, and the second half of the
+  step (contact order at least three at the generic point forces $X$ onto a line in characteristic
+  zero, by the two-coordinate argument given in the step). Not verified — the Kaji citation, and
+  steps `s1`--`s13`, which were not re-derived here; the mathematical review of those remains the
+  earlier auditors' record in the card's audit trail, and no event in this pass supersedes it.
+
+- **Repair:** none attempted. What would settle it: reading Theorem 1 (or the relevant statement) of
+  Kaji's paper and confirming that it gives the finiteness of tangent lines meeting the curve again
+  for a smooth nonplanar curve in characteristic zero. Until then the card's own note states the
+  dependence, and the queue records the card as solved on the strength of the existing proof rather
+  than of a fresh verification.
