@@ -99,6 +99,27 @@ theorem stageMap_comp_stageIncl {f : K →ₗ[ℤ] F} {F' F'' : Submodule ℤ F}
   obtain ⟨a, rfl⟩ := Submodule.Quotient.mk_surjective (p := stageRel f F') x
   rfl
 
+/-- The transition map of the identity inclusion is the identity: the stages carry a functor on
+the poset of submodules of `F`, not just a family of maps. -/
+theorem stageIncl_refl (f : K →ₗ[ℤ] F) (F' : Submodule ℤ F) :
+    stageIncl (f := f) (le_refl F') = LinearMap.id := by
+  apply LinearMap.ext
+  intro x
+  obtain ⟨a, rfl⟩ := Submodule.Quotient.mk_surjective (p := stageRel f F') x
+  rw [LinearMap.id_apply]
+  exact congrArg Submodule.Quotient.mk (Subtype.ext rfl)
+
+/-- Transition maps compose: `A' → A'' → A'''` is the transition map of `F' ≤ F'''`. -/
+theorem stageIncl_comp {f : K →ₗ[ℤ] F} {F' F'' F''' : Submodule ℤ F} (h : F' ≤ F'')
+    (h' : F'' ≤ F''') :
+    (stageIncl (f := f) h').comp (stageIncl (f := f) h) =
+      stageIncl (f := f) (le_trans h h') := by
+  apply LinearMap.ext
+  intro x
+  obtain ⟨a, rfl⟩ := Submodule.Quotient.mk_surjective (p := stageRel f F') x
+  rw [LinearMap.comp_apply]
+  exact congrArg Submodule.Quotient.mk (Subtype.ext rfl)
+
 /-- A transition map is injective, since the composite into `A` is. -/
 theorem stageIncl_injective {f : K →ₗ[ℤ] F} {F' F'' : Submodule ℤ F} (h : F' ≤ F'') :
     Function.Injective (stageIncl (f := f) h) := by
@@ -359,6 +380,8 @@ end TorStages
 #print axioms TorStages.range_stageRelMap
 #print axioms TorStages.subtype_comp_stageRelMap
 #print axioms TorStages.stageMap_comp_stageIncl
+#print axioms TorStages.stageIncl_refl
+#print axioms TorStages.stageIncl_comp
 #print axioms TorStages.stageIncl_injective
 #print axioms TorStages.rTensor_subtype_injective_of_retraction
 #print axioms TorStages.exists_stage_witness_of_retraction
