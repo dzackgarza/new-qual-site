@@ -129,9 +129,14 @@ Three things must be discharged explicitly, and each has bitten before:
   *first* for `Tor'`. Resolving `A` with `(- ⊗ B)` computes `Tor' A B`; using `(B ⊗ -)` computes
   `Tor B A`. The card's statement is symmetric, but the Lean statement is not, and the two must not
   be identified silently: no balancing theorem is being invoked here.
-- **Projectivity of `K`.** A two-term projective resolution needs `K` projective. Over `ℤ` this
-  follows from `K ↪ F` with `F` free (submodules of free `ℤ`-modules are free), but that
-  application has to be made, not assumed.
+- **Projectivity of `K`.** A two-term projective resolution needs `K` projective. `Module.Projective.of_free`
+  (`Algebra/Module/Projective.lean`, l.161) turns `Module.Free` into it, and in a *free* resolution `K`
+  is free by construction, so the bridge should carry `[Module.Free ℤ K]` (or `Module.Projective ℤ K`)
+  as a hypothesis rather than derive it. Deriving it from `K ↪ F` with `F` free would need "a submodule
+  of a free module over a PID is free", which this audit did not locate in the pinned tree — a search of
+  `LinearAlgebra/FreeModule/`, `RingTheory/Flat/TorsionFree.lean` and `Algebra/Module/Submodule/` found no
+  such statement, and for infinite rank it is not a triviality. So the projectivity hypothesis belongs in
+  the statement, not in a side lemma.
 - **The kernel identification itself.** An unmatched one-shot isomorphism between the degree-1
   homology of the two-term complex after the tensor functor and `ker (f.rTensor B)`; the incoming
   differential at degree 1 is zero, so this is `ker/im` with `im = 0`.
