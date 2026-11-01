@@ -28,6 +28,18 @@ audit:
   date: 2026-10-31
   note: >-
     Read the step claims: a normal cover of the wedge is the Cayley graph of $F_n/H$ on the images of the generators. Not every line checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line, both directions. Forward: for a normal cover the fiber over the vertex is
+    `H \ F_n`, which is the group `F_n/H` because `H` is normal, and the lift of the `i`-th circle from
+    the vertex `q` ends at `q x_i`, so the covering graph is the Cayley graph of that quotient with the
+    images of the generators — the case distinction between cosets and group elements is exactly where
+    normality is used, and the card says so. Converse: given any group `Q` with `n` specified
+    generators, the Cayley graph is a connected covering of `R_n` whose corresponding subgroup is the
+    kernel of the evident surjection `F_n -> Q`, which is normal, so the cover is normal. No
+    correction was needed.
 ---
 
 ::: {.problem}

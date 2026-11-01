@@ -36,6 +36,17 @@ audit:
   date: 2026-10-31
   note: >-
     Read the step claims: conjugate subgroups give homeomorphic orbit spaces through $h$, and conversely a homeomorphism of orbit spaces conjugates the groups. Not every line checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line, both directions. The forward direction is a computation and is done correctly:
+    `h(G_1 y) = G_2 h(y)` using `G_2 = h G_1 h^{-1}`, so `h` induces a bijection of orbit spaces, which
+    is a homeomorphism because the orbit maps are open. The converse is the substantive half and is
+    present: a homeomorphism `f : Y/G_1 -> Y/G_2` lifts to a self-map of `Y` by the lifting criterion,
+    since `Y` is simply connected and both `q_i` are coverings, and the lift conjugates `G_1` onto
+    `G_2`; the hypothesis that `Y` is simply connected is exactly what makes that lifting possible and
+    is not available for a general `Y`. No correction was needed.
 ---
 
 ::: {.problem}
