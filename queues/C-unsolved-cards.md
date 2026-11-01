@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem cards
 
-41 problem cards have no solution section. These are
+40 problem cards have no solution section. These are
 the cards issue #2 targets: write a Lamport-style structured proof for each.
 
 Regenerate with `just unsolved` after a card gains a solution. CI publishes
@@ -10,11 +10,10 @@ regeneration, and writing the solution removes the line.
 
 ## Count
 
-- Problems: 41
+- Problems: 40
 
-## Problems (41)
+## Problems (40)
 
-- [ ] E-SS7.EX-12 — "Asymptotic size of the nth prime"
 - [ ] E-SS7.EX-5 — "Alternating zeta series and real zeros"
 - [ ] E-SS7.EX-6 — "A vertical contour integral for the step function"
 - [ ] E-SS7.EX-7 — "Reality of the completed zeta function on two lines"
