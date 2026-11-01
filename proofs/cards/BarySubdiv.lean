@@ -1442,6 +1442,63 @@ theorem continuous_affineMap {N m : ℕ} (v : Fin (m+1) → Fin N → ℝ) :
   simp only [affineMap]
   exact continuous_finset_sum _ fun k _ => (continuous_apply k).mul continuous_const
 
+/-! ## 13. Hatcher's operator formula
+
+The formal chain identity, read geometrically and composed with an arbitrary singular simplex `σ`:
+
+`S σ = (-1)^{n(n+1)/2} Σ_π sgn(π) · (σ ∘ Δ̄_π)`,
+
+where `S` is defined from the recursion `S λ = b_λ (S ∂λ)` (each summand contributes the barycentres of
+its faces, composed with `σ`) and `Δ̄_π` is the affine simplex whose vertices are the barycentres of the
+descending flags of `π`, the barycentre of the whole simplex first.
+
+The maps here are self-maps of the *ambient* space `Fin (n+1) → ℝ`; `affineMap_mem` shows they land in
+`stdSimplex`, which is the standard simplex, and `TopCat.toSSetObjEquiv` identifies the resulting maps
+with the singular `n`-simplices of that space (`(toSSet.obj X).obj n ≃ C(stdSimplex ℝ (Fin (n+1)), X)`).
+No subdivision operator is assumed on the chain complex: `S` *is* the transport of the proved recursion.
+-/
+
+/-- The affine map a chain of faces denotes, as a continuous self-map of the ambient space: vertex `k`
+is the barycentre of the `k`-th face. Outside the support (a chain of the wrong length) the definition
+is junk; on the recursion's chains every entry is a face of the right length. -/
+noncomputable def chainAffineMap {M : ℕ} (c : List (Finset (Fin (M+1)))) :
+    C(Fin (M+1) → ℝ, Fin (M+1) → ℝ) :=
+  ⟨affineMap M (fun k => baryWeight (c.getD k.val ∅)), continuous_affineMap _⟩
+
+/-- The affine barycentric simplex `Δ̄_π`: its vertices are the barycentres of the descending flags of
+`π`, the barycentre of the whole simplex first (`descVertex_zero`). -/
+noncomputable def barySimplex {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
+    C(Fin (M+1) → ℝ, Fin (M+1) → ℝ) :=
+  ⟨affineMap M (fun k => descVertex π k), continuous_affineMap _⟩
+
+/-- **The chain of `π`, read geometrically, is its barycentric affine simplex.** -/
+theorem chainAffineMap_chainOf_peel {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
+    chainAffineMap (chainOf (Finset.univ : Finset (Fin (M+1))) (peel π)) = barySimplex π := by
+  have hverts : (fun k : Fin (M+1) =>
+        baryWeight ((chainOf (Finset.univ : Finset (Fin (M+1))) (peel π)).getD k.val ∅))
+      = fun k : Fin (M+1) => descVertex π k := by
+    funext k
+    rw [chainOf_peel_eq_ofFn_descFace, List.getD_eq_getElem?_getD, List.getElem?_ofFn,
+      dif_pos k.isLt]
+    rfl
+  simp only [chainAffineMap, barySimplex, hverts]
+
+/-- **Hatcher's operator formula.** For a continuous map `σ` out of the standard `n`-simplex with
+`n = M`, the subdivision of `σ` obtained from the recursion is the displayed signed sum over
+permutations of `σ ∘ Δ̄_π`. -/
+theorem hatcher_formula {M : ℕ} {X : Type*} [TopologicalSpace X]
+    (σ : C(Fin (M+1) → ℝ, X)) :
+    FreeAbelianGroup.map (fun c : List (Finset (Fin (M+1))) => σ.comp (chainAffineMap c))
+        (subdiv (Finset.univ : Finset (Fin (M+1))))
+      = ∑ π : Equiv.Perm (Fin (M+1)),
+          ((-1 : ℤ) ^ (M * (M + 1) / 2) * ((π.sign : ℤˣ) : ℤ)) •
+            FreeAbelianGroup.of (σ.comp (barySimplex π)) := by
+  rw [subdiv_univ_eq_sum_perm, map_sum]
+  simp only [show (M + 1) * (M + 1 - 1) / 2 = M * (M + 1) / 2 from by
+    rw [Nat.add_sub_cancel, Nat.mul_comm]]
+  refine Finset.sum_congr rfl fun π _ => ?_
+  rw [map_zsmul, FreeAbelianGroup.map_of_apply, chainAffineMap_chainOf_peel]
+
 end BarySubdiv
 
 #print axioms BarySubdiv.stepSign_eq_pow_stepExp
@@ -1490,3 +1547,5 @@ end BarySubdiv
 #print axioms BarySubdiv.map_subdiv_univ_bary
 #print axioms BarySubdiv.affineMap_cons_apply
 #print axioms BarySubdiv.continuous_affineMap
+#print axioms BarySubdiv.chainAffineMap_chainOf_peel
+#print axioms BarySubdiv.hatcher_formula
