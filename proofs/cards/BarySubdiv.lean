@@ -471,6 +471,164 @@ theorem coeff_subdiv_chainOf_eq_pow {F : Finset (Fin N)} {l : List (Fin N)} (hl 
   rw [coeff_subdiv_chainOf hl hF, stepSign_eq_pow_stepExp, stepExp_eq_pairCount hl hF,
     val_neg_one_pow]
 
+/-! ## 5. The descending chain of a permutation, and the outermost deletion -/
+
+/-- The position of a vertex in the whole simplex is its value: at the outermost step of the
+recursion the face is the whole simplex. -/
+theorem deletionPos_univ {N : ℕ} (v : Fin N) : deletionPos (Finset.univ) v = v.val := by
+  have h : (Finset.univ.filter (fun u : Fin N => u < v)) = Finset.Iio v := by
+    ext u
+    simp
+  rw [deletionPos, h, Fin.card_Iio]
+
+/-- The peeling order of the vertices of the standard `N - 1`-simplex for a permutation `π`: the
+recursion deletes from the top face down, so the deleted vertices are `π (N-1), π (N-2), …, π 0`. -/
+def peel {N : ℕ} (π : Equiv.Perm (Fin N)) : List (Fin N) := List.ofFn fun i => π (Fin.rev i)
+
+theorem peel_nodup {N : ℕ} (π : Equiv.Perm (Fin N)) : (peel π).Nodup :=
+  List.nodup_ofFn.mpr (π.injective.comp Fin.rev_injective)
+
+theorem peel_toFinset {N : ℕ} (π : Equiv.Perm (Fin N)) : (peel π).toFinset = Finset.univ := by
+  refine Finset.eq_univ_of_forall fun a => ?_
+  rw [List.mem_toFinset, peel, List.mem_ofFn', Set.mem_range]
+  exact ⟨Fin.rev (π.symm a), by simp⟩
+
+/-- **The coefficient of the descending chain of `π` in the recursion.** The chain is the one the
+recursion builds by peeling `π (N-1), π (N-2), …, π 0`; its coefficient is `-1` to the number of
+"later, smaller" pairs of that peeling order, which is the recursion's own sign. -/
+theorem coeff_subdiv_peel {N : ℕ} (π : Equiv.Perm (Fin N)) :
+    FreeAbelianGroup.coeff (chainOf Finset.univ (peel π)) (subdiv Finset.univ)
+      = (-1 : ℤ) ^ pairCount N (peel π) :=
+  coeff_subdiv_chainOf_eq_pow (peel_nodup π) (peel_toFinset π)
+
+/-- The same coefficient, as the recursion's sign at the peeling order. -/
+theorem coeff_subdiv_peel_stepSign {N : ℕ} (π : Equiv.Perm (Fin N)) :
+    FreeAbelianGroup.coeff (chainOf Finset.univ (peel π)) (subdiv Finset.univ)
+      = ((stepSign Finset.univ (peel π) : ℤˣ) : ℤ) :=
+  coeff_subdiv_chainOf (peel_nodup π) (peel_toFinset π)
+
+/-! ## 6. The geometric side: barycentric vertices and affine simplexes
+
+The transport target is Hatcher's operator on singular chains of `Δ^n`. What is built here is the
+geometric object a chain denotes: the barycentre of a face as a weight vector on the vertices, and the
+affine map spanned by an ordered list of such vectors. That the chain of a peeling order denotes the
+affine simplex on its barycentres in the descending order, and that the recursion's prepend is the
+geometric cone, is *not* proved here; see `proofs/README.md`.
+-/
+
+/-- The barycentre of a face of the standard simplex, as a weight vector on the vertices. -/
+noncomputable def baryWeight {N : ℕ} (F : Finset (Fin N)) : Fin N → ℝ :=
+  fun i => if i ∈ F then ((F.card : ℝ))⁻¹ else 0
+
+theorem baryWeight_mem {N : ℕ} {F : Finset (Fin N)} (hF : F.Nonempty) :
+    baryWeight F ∈ stdSimplex ℝ (Fin N) := by
+  have hcard : (F.card : ℝ) ≠ 0 := by
+    have hpos : 0 < F.card := Finset.card_pos.mpr hF
+    have : (0 : ℝ) < (F.card : ℝ) := by exact_mod_cast hpos
+    exact ne_of_gt this
+  have hbw : baryWeight F = fun i => if i ∈ F then ((F.card : ℝ))⁻¹ else 0 := rfl
+  constructor
+  · intro i
+    show (0 : ℝ) ≤ if i ∈ F then ((F.card : ℝ))⁻¹ else 0
+    by_cases hi : i ∈ F
+    · rw [if_pos hi]
+      positivity
+    · rw [if_neg hi]
+  · have h1 : (Finset.univ.filter (fun i : Fin N => i ∈ F)) = F := by
+      ext i
+      simp
+    rw [hbw, ← Finset.sum_filter, h1, Finset.sum_const, nsmul_eq_mul]
+    exact mul_inv_cancel₀ hcard
+
+/-- The affine map spanned by an ordered list of vertex weight vectors: the point of the standard
+simplex whose weights are those of `x`, spread over the listed vertices. -/
+def affineMap {N : ℕ} (m : ℕ) (v : Fin (m+1) → Fin N → ℝ) : (Fin (m+1) → ℝ) → Fin N → ℝ :=
+  fun x i => ∑ k, x k * v k i
+
+theorem affineMap_mem {N m : ℕ} {v : Fin (m+1) → Fin N → ℝ}
+    (hv : ∀ k, v k ∈ stdSimplex ℝ (Fin N)) {x : Fin (m+1) → ℝ}
+    (hx : x ∈ stdSimplex ℝ (Fin (m+1))) : affineMap m v x ∈ stdSimplex ℝ (Fin N) := by
+  constructor
+  · intro i
+    exact Finset.sum_nonneg fun k _ => mul_nonneg (hx.1 k) ((hv k).1 i)
+  · have h2 : ∀ k : Fin (m+1), ∑ i : Fin N, x k * v k i = x k := by
+      intro k
+      rw [← Finset.mul_sum, (hv k).2, mul_one]
+    calc ∑ i : Fin N, ∑ k : Fin (m+1), x k * v k i
+        = ∑ k : Fin (m+1), ∑ i : Fin N, x k * v k i := Finset.sum_comm
+      _ = ∑ k : Fin (m+1), x k := Finset.sum_congr rfl fun k _ => h2 k
+      _ = 1 := hx.2
+
+/-- The `k`-th vertex of the standard `m`-simplex, as a weight vector. -/
+def vertexWeight {m : ℕ} (k : Fin (m+1)) : Fin (m+1) → ℝ := fun i => if i = k then 1 else 0
+
+theorem vertexWeight_self {m : ℕ} (k : Fin (m+1)) : vertexWeight k k = 1 := if_pos rfl
+
+theorem vertexWeight_of_ne {m : ℕ} {j k : Fin (m+1)} (h : j ≠ k) : vertexWeight k j = 0 :=
+  if_neg h
+
+/-- The vertices are points of the standard simplex. -/
+theorem vertexWeight_mem {m : ℕ} (k : Fin (m+1)) :
+    vertexWeight k ∈ stdSimplex ℝ (Fin (m+1)) := by
+  constructor
+  · intro i
+    by_cases hi : i = k
+    · rw [vertexWeight, if_pos hi]
+      norm_num
+    · rw [vertexWeight, if_neg hi]
+  · rw [Finset.sum_eq_single k]
+    · exact vertexWeight_self k
+    · intro j _ hj
+      exact vertexWeight_of_ne hj
+    · intro hnot
+      exact absurd (Finset.mem_univ k) hnot
+
+/-- The affine map takes the `k`-th vertex of the standard simplex to the `k`-th listed vertex: the
+listed vectors really are its vertices. -/
+theorem affineMap_single {N m : ℕ} {v : Fin (m+1) → Fin N → ℝ} (k : Fin (m+1)) :
+    affineMap m v (vertexWeight k) = v k := by
+  funext i
+  rw [affineMap, Finset.sum_eq_single k]
+  · rw [vertexWeight_self, one_mul]
+  · intro j _ hj
+    rw [vertexWeight_of_ne hj, zero_mul]
+  · intro hnot
+    exact absurd (Finset.mem_univ k) hnot
+
+/-- The face of the standard simplex spanned by the first `k+1` vertices of the permutation, counted
+from the top: `b_{π 0, …, π (N-1-k)}`. -/
+def descFace {N : ℕ} (π : Equiv.Perm (Fin N)) (k : Fin N) : Finset (Fin N) :=
+  (Finset.Iic (Fin.rev k)).image π
+
+theorem descFace_nonempty {N : ℕ} (π : Equiv.Perm (Fin N)) (k : Fin N) :
+    (descFace π k).Nonempty :=
+  ⟨π (Fin.rev k), Finset.mem_image_of_mem π (Finset.mem_Iic.mpr le_rfl)⟩
+
+/-- The descending barycentric vertex list of the chain of `π`: vertex `k` is the barycentre of the
+face of the `N-k` lowest vertices `π 0, …, π (N-1-k)`. -/
+noncomputable def descVertex {N : ℕ} (π : Equiv.Perm (Fin N)) (k : Fin N) : Fin N → ℝ :=
+  baryWeight (descFace π k)
+
+theorem descVertex_mem {N : ℕ} (π : Equiv.Perm (Fin N)) (k : Fin N) :
+    descVertex π k ∈ stdSimplex ℝ (Fin N) :=
+  baryWeight_mem (descFace_nonempty π k)
+
+/-- **The cone prepends the barycentre of the whole simplex**: the first vertex of the descending
+chain is `b_{Δ^{N-1}}`, the barycentre of the whole standard simplex, and the last is a barycentre of
+a single vertex. This is the ordering the recursion's `b_λ` produces. -/
+theorem descVertex_zero {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
+    descVertex π 0 = baryWeight (Finset.univ : Finset (Fin (M+1))) := by
+  have hrev : Fin.rev (0 : Fin (M+1)) = Fin.last M := Fin.ext (by simp [Fin.rev, Fin.last])
+  have h : descFace π 0 = Finset.univ := by
+    ext i
+    rw [descFace, hrev]
+    simp only [Finset.mem_image, Finset.mem_Iic, Finset.mem_univ, iff_true]
+    refine ⟨π.symm i, ?_, by simp⟩
+    show ((π.symm i).val ≤ M)
+    have := (π.symm i).isLt
+    omega
+  rw [descVertex, h]
+
 end BarySubdiv
 
 #print axioms BarySubdiv.stepSign_eq_pow_stepExp
@@ -480,3 +638,9 @@ end BarySubdiv
 #print axioms BarySubdiv.coeff_subdiv
 #print axioms BarySubdiv.coeff_subdiv_chainOf
 #print axioms BarySubdiv.coeff_subdiv_chainOf_eq_pow
+#print axioms BarySubdiv.coeff_subdiv_peel
+#print axioms BarySubdiv.deletionPos_univ
+#print axioms BarySubdiv.baryWeight_mem
+#print axioms BarySubdiv.affineMap_mem
+#print axioms BarySubdiv.affineMap_single
+#print axioms BarySubdiv.descVertex_zero
