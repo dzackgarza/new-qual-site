@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem cards
 
-43 problem cards have no solution section. These are
+42 problem cards have no solution section. These are
 the cards issue #2 targets: write a Lamport-style structured proof for each.
 
 Regenerate with `just unsolved` after a card gains a solution. CI publishes
@@ -10,11 +10,10 @@ regeneration, and writing the solution removes the line.
 
 ## Count
 
-- Problems: 43
+- Problems: 42
 
-## Problems (43)
+## Problems (42)
 
-- [ ] E-SS7.EX-10 — "Asymptotic expansion of the logarithmic integral"
 - [ ] E-SS7.EX-11 — "Equivalent forms of the prime number theorem"
 - [ ] E-SS7.EX-12 — "Asymptotic size of the nth prime"
 - [ ] E-SS7.EX-5 — "Alternating zeta series and real zeros"
