@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem cards
 
-27 problem cards have no solution section. These are
+24 problem cards have no solution section. These are
 the cards issue #2 targets: write a Lamport-style structured proof for each.
 
 Regenerate with `just unsolved` after a card gains a solution. CI publishes
@@ -10,13 +10,10 @@ regeneration, and writing the solution removes the line.
 
 ## Count
 
-- Problems: 27
+- Problems: 24
 
-## Problems (27)
+## Problems (24)
 
-- [ ] P-1AUEA — "Finitely generated projective modules over a Noetherian local ring are free"
-- [ ] P-5CDU3 — "For a nondegenerate skew-symmetric form, $\dim U+\dim U^\perp=\dim V$, and a subspace $W$ with $W^\perp=W$ exists"
-- [ ] P-6MA8X — "$\Tor$ against $R/(x)$, flatness via $\Tor_1$, and finitely generated flat modules over a PID are free"
 - [ ] P-779HN — "An operator whose eigenspaces all have dimension at most $1$ has a cyclic vector"
 - [ ] P-7JZQA — "The additive group of $\QQ$ has no maximal proper subgroups, and the same question for $\QQ^\times$"
 - [ ] P-7P63H — "Ring homomorphisms $\QQ[x]/(x^{100}+2)\to\QQ[x]/(x^{1001}+2)$"
