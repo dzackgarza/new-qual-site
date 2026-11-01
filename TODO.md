@@ -40,17 +40,6 @@ repository or in a reachable archive. That unresolved source question is recorde
 “Theorem 6.1” of RA-WORKSHOP D7-W3 is that sheet's own numbering for [Rud76, Thm. 7.12],
 the continuity of a uniform limit of continuous functions.
 
-**Stop recorded on the supporting Lean development.** The two certificates below settle the card
-corrections they were written for, and `proofs/cards/BarySubdiv.lean` settles `E-HAT-2.1-25`'s corrected
-formula for an arbitrary singular simplex. Beyond that, the development around them — a subdivision
-operator on all of `C_n(X)`, the completed Tor resolution/kernel packaging in
-`proofs/cards/TorBridge.lean` — is **parked and is not a repository goal**; established statements
-(Hatcher's subdivision formula with its prepend-the-cone convention, Lemma 3A.2 for a free resolution)
-are cited with their hypotheses and conventions in the cards instead of being re-derived. See
-[proofs/README.md](proofs/README.md#status-this-development-is-parked), which records the exact residual
-so a future pass can start there. A missing Mathlib API is not by itself a reason to begin a proof
-development.
-
 `certify-card-corrections` is open. `P-FHW1-01` is settled: `proofs/cards/FieldHomework1.lean` proves that the
 printed hypothesis holds for $L=0$ and proves both directions of the corrected statement, with no `sorryAx`.
 `P-TAMURAS15-10` keeps both the printed statement and the proposed closedness hypothesis, and its correction is
