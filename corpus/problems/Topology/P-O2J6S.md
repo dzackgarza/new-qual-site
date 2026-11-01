@@ -119,7 +119,7 @@ Let $\Gamma$ be a connected graph covering $W$, with its edges labelled $a$ or $
 $$
 \operatorname{rank}\pi_1(\Gamma)=1-V+E ,
 $$
-and a $k$-sheeted cover of a wedge of $r$ circles has $\operatorname{rank}=1+k(r-1)=1+k$. When $\Gamma$ is **infinite** there is no integer formula: $\pi_1(\Gamma)$ is still free on the non-forest edges, but $1-V+E$ is not defined, and such a subgroup has infinite index however few non-forest edges there are. Both infinite pictures below are of this kind, with two and one non-forest edges respectively.
+and a $k$-sheeted cover of a wedge of $r$ circles has $\operatorname{rank}=1+k(r-1)=1+k$. When $\Gamma$ is **infinite** there is no integer formula: $\pi_1(\Gamma)$ is still free on the non-forest edges, but $1-V+E$ is not defined, and such a subgroup has infinite index however few non-forest edges there are. Both infinite pictures below are of this kind: in the order they are listed, the fourth has one non-forest edge and the fifth has two.
 
 **The five covers.** For the first three pictures write $T,L,R$ for the top, lower-left and lower-right vertices.
 
@@ -148,7 +148,7 @@ a^{-1}b\quad\text{and}\quad ba ,
 $$
 since $a^{-1}b=(b^{-1}a)^{-1}$.
 
-The first three covers are $3$-sheeted, so their subgroups have index $3$ and rank $1+3=4$, matching the four-element bases. The last two have infinite index and rank $2$ and $1$.
+The first three covers are $3$-sheeted, so their subgroups have index $3$ and rank $1+3=4$, matching the four-element bases. The last two have infinite index and rank $1$ and $2$ respectively, as computed for the fourth and fifth covers.
 
 **Matching the five lists in the retained solutions.** The retained notebook gives five lists under "Generators of the subgroups", and the sheet's own solutions pair them with these five pictures in this order. Each pairing is now an identity of subgroups at the basepoint named above, not a resemblance.
 
