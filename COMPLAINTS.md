@@ -157,3 +157,37 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** the vertex symbol and the twelve spans are fixed in place. A check over the corpus for control words that are neither defined in `vocabularies/macros.json` nor standard TeX would catch this class; none exists, and this entry is the record until one does.
 
+## Queue head passed over, not blocked
+
+- **Object and need:** `E-SS10.PR-6` ("Eight squares from an Eisenstein series"), the first card in
+  `queues/C-unsolved-cards.md`. It asks for a six-part proof that `r_8(n) = 16 σ_3^*(n)`, passing
+  through `θ(τ)^8 = 48π^{-4} E_4^*(τ)`, the identity `E_4^* = E_4 - 2^{-4}E_4((τ-1)/2)`, the
+  periodicity `E_4^*(τ+2) = E_4^*(τ)`, the transformation law `E_4^*(τ) = τ^{-4}E_4^*(-1/τ)`, and two
+  asymptotic statements.
+
+- **Observed evidence:** the prerequisite is present. The book is in the repository at
+  `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` (398 pages), and Chapter 10
+  "Applications of Theta Functions" begins at the page whose text is extracted in this session, so the
+  card is **not** covered by the standing "source PDFs are not in the repository" note that applies to
+  the `ad-text-*` reading nodes. While checking the statement I verified part (b) outright: with
+  `l = m`, `k = 2n - m`, the substitution `n + m(τ-1)/2 = ((2n-m) + mτ)/2` is a bijection from
+  `Z^2 \ {0}` onto the pairs `k ≡ l (mod 2)`, not both zero, so `2^{-4}E_4((τ-1)/2)` is the sum over
+  the *same*-parity pairs and `E_4^*`, the sum over opposite-parity pairs, is the difference. Part (c)
+  is the same substitution `(m,n) ↦ (m, n+2m)`.
+
+- **Impact and owner:** the queue's head remains unsolved. I did not attempt the full six-part
+  write-up in this pass, and this entry exists so that the pass-over is on the record as a choice
+  rather than as a blocked prerequisite. It is not a claim that the card is hard for anyone in
+  particular, and it is not a deferral granted by the queue.
+
+- **Uncertainty:** verified — parts (b) and (c) as above, and that the source is present. Not
+  established: whether parts (a), (d), (e), (f) follow entirely from Chapter 10 as developed there.
+  In particular (d) does **not** follow from the modularity `E_4(-1/τ) = τ^4 E_4(τ)` alone, since
+  `-(τ+1)/(2τ)` is not `γτ` for any `γ ∈ SL_2(Z)` (matching coefficients forces `d = 0`, `c = 2b`,
+  hence `det = -2b^2 ≠ 1`); it has to come from `θ(-1/τ)^8 = τ^4 θ(τ)^8` together with (a). That is
+  the structure I would expect, but I did not carry it through.
+
+- **Repair:** none attempted. The next pass on this queue starts at `E-SS10.PR-6` again, unless it
+  is closed first. What this pass did instead is `E-SS2.PR-4`, the next card, whose solution is
+  complete.
+

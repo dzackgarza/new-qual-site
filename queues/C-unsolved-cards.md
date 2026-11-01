@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem cards
 
-51 problem cards have no solution section. These are
+50 problem cards have no solution section. These are
 the cards issue #2 targets: write a Lamport-style structured proof for each.
 
 Regenerate with `just unsolved` after a card gains a solution. CI publishes
@@ -10,12 +10,11 @@ regeneration, and writing the solution removes the line.
 
 ## Count
 
-- Problems: 51
+- Problems: 50
 
-## Problems (51)
+## Problems (50)
 
 - [ ] E-SS10.PR-6 — "Eight squares from an Eisenstein series"
-- [ ] E-SS2.PR-4 — "Converse of Runge's theorem"
 - [ ] E-SS2.PR-5 — "A universal entire function under translation"
 - [ ] E-SS4.PR-3 — "Three-lines lemma for bounded holomorphic functions"
 - [ ] E-SS4.PR-4 — "Borel representation of entire functions of exponential type"

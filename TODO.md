@@ -13,7 +13,7 @@ open tasks. A prior tick alone is not evidence of that condition.
 | `ad-text-hart77` | none | Read every `SRC-TEXT-HART77` card against the book, repair each defect one card at a time, then tick its reading item. |
 | `ad-text-hun74` | none | Do the same for `SRC-TEXT-HUN74`. |
 | `ad-text-smi` | none | Do the same for `SRC-TEXT-SMI`. |
-| `ad-text-hat02` | none | Do the same for `SRC-TEXT-HAT02`; the last reported reading stopped in section 2.1. |
+| `ad-text-hat02` | none | Do the same for `SRC-TEXT-HAT02`; §1.1–§1.3, §1.A, §1.B, §2.1–§2.3, §3.1–§3.3, §3.A, §3.B, §3.C, §3.E and §4.1 exercises 1–9 are read. The next unread card is `E-HAT-4.1-10`; §3.D, §3.F, §3.H and §4.2 onward are untouched. Take the position from the card audit records, not from this cell. |
 | `ad-text-mun00` | none | Do the same for `SRC-TEXT-MUN00`. |
 | `ad-text-ss03-gaps` | none | Compare `SRC-TEXT-SS03` with the book and add missing cards, one item at a time: chapter 2 problems 4–5; chapter 4 problems 3*–4*; chapter 5 exercises 15–17; chapter 7 exercises 5–12; chapter 8 problems 4–9; chapter 9 problems 2–3; chapter 10 problem 1 and problems 5 onward. Verify existing-card identity before adding each card. |
 | `ad-text-hk71-locators` | none | Check every `SRC-TEXT-HK71` appearance locator in sections 7.1–10.4 against the book; correct each mismatch. |
@@ -55,9 +55,13 @@ rather than formalized. The repairs that remain uncertified are listed, card by 
 reported as leaving nothing outstanding while it is nonempty.
 
 `ad-text-hat02` is partly read, against the book itself
-(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §3.3 and for §3.A, §3.B and §3.C; proofs
-are read for §1.1, §1.2, §1.A, §1.B-1..-4, §2.1-1..-17 and all of §2.2, §2.3, §3.1, §3.2, §3.3, §3.A
-and §3.B. Exact scope, with no section counted as read beyond it:
+(`pi.math.cornell.edu/~hatcher/AT/AT.pdf`). Statements are compared for §1.1 through §3.3, for §3.A, §3.B, §3.C and §3.E, and for
+§4.1 exercises 1–9; proofs are read for all of §1.1, §1.2, §1.3, §1.A, §1.B, §2.1, §2.2, §2.3, §3.1, §3.2, §3.3,
+§3.A, §3.B, §3.C, §3.E, and for §4.1 exercises 1–9. That sentence is a summary of the per-card audit records, which
+are the authority: where the section paragraphs below, or an older "next unread card" pointer, disagree with the
+cards, the cards win. A section being covered is not a claim that every statement in it is free of defects — the
+defects found are named below, and a defect found later is a repair, not a restart. Exact scope, with no section
+counted as read beyond it:
 §1.1: 20 statements compared, the twelve solved proofs read line by line, `E-HAT-1.1-17` repaired.
 §1.2: 22 statements compared, all 22 proofs read line by line; `E-HAT-1.2-12`, `-14`, `-16` closing
 steps repaired, `E-HAT-1.2-22` restructured into one proof and its subcomplex framing corrected.
@@ -130,7 +134,9 @@ for the homogeneous component, and the subscript is restored. Proofs of `E-HAT-3
 tensor complex (free part $f_i$, torsion part $t_i$, cohomology shifted by one), `-2` on both directions of the $I\\otimes C$ dictionary, `-3` by
 recomputing $H_{2n+1}$ on both sides of $f\\times1$, `-4` through naturality and excision of the local cross product, `-5` through the four
 invariance checks.
-Unread entirely: the statements and proofs of §3.D, §3.F, §3.H and of all of §4 onward. Everything from
+§4.1: exercises 1–9 compared with the printed exercises and all 9 proofs read line by line on 2026-11-01, their notes
+recording the specific checks; `E-HAT-4.1-1` through `E-HAT-4.1-9`. Exercises 10–23 of the section are unread.
+Unread entirely: the statements and proofs of §3.D, §3.F, §3.H, of §4.1 exercises 10–23, and of all of §4.2 onward. Everything from
 §1.1 through §3.3 and in §3.A, §3.B, §3.C and §3.E is covered at the level the paragraphs above state —
 statements compared, proofs read — with only the citations each section names left unformalized.
 
