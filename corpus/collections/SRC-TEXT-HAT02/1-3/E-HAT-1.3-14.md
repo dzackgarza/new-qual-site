@@ -28,6 +28,22 @@ audit:
   date: 2026-10-31
   note: >-
     Read the step claims: $\pi_1(\RP^2\vee\RP^2)=C_2*C_2$ and the classification of its subgroups into the four listed types. Not every line checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct and complete. The subgroup list is the standard one for
+    `C_2 * C_2 = <r,a | a^2 = 1, ara = r^{-1}>`: inside `<r>` one gets `1` or `<r^n>`; otherwise a
+    reflection `r^k a` is present and the group is `<r^k a>` when the intersection with `<r>` is
+    trivial, or `<r^n, r^k a>` otherwise. The conjugacy bookkeeping is right and is the point: `r^m`
+    sends `r^k a` to `r^{k+2m} a`, a reflection conjugates `k` to `-k`, so for reflection subgroups only
+    the parity of `k` survives, giving `<a>` and `<b>`; for `H_{n,k}` the index is `n`, and modulo `n`
+    the shifts by even integers reach everything when `n` is odd and preserve parity when `n` is even,
+    giving one class for odd `n` and two for even `n`. The geometric translation is right as well, in
+    particular the two cases for a lifted summand: a generator fixing a sheet lifts the `RP^2` piece
+    homeomorphically, while a generator exchanging two sheets joins them by the double cover `S^2`, and
+    the endpoint types of the path for `H_{n,k}` follow from the alternation of labels along a path of
+    `n-1` edges. No correction was needed.
 ---
 
 ::: {.problem}

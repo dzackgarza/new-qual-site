@@ -28,6 +28,21 @@ audit:
   date: 2026-10-31
   note: >-
     Read the step claims: $N$ is normal because conjugates of cubes are cubes, and the quotient is the free two-generator group of exponent three. The 27-sheet count was not recomputed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line and recomputed the sheet count. `N` is normal because `(gwg^{-1})^3 = g w^3 g^{-1}`,
+    and `|F/N| = 27` follows from the two bounds actually given: at most `27` from moving `a`'s past
+    `b`'s once the commutator is central, and at least `27` from the surjection onto `UT_3(F_3)`, whose
+    27 elements all have cube `1` because `(I+N)^3 = I + 3N + 3N^2 + N^3 = I` in characteristic `3`.
+    Worth recording: the long word computation of step 2 is not needed for the argument, because step 4
+    already identifies `G` with `UT_3(F_3)`, which is nilpotent of class two, so `[a,b]` is central there
+    and hence in `G`; the identity `[[x,y],y] = 1` for groups of exponent three is a two-variable
+    identity, so it holds in `G` as soon as it holds in the free object on two generators, which is
+    `UT_3(F_3)` itself. The nine/nine/nine decomposition is right: `a`, `b` and `ab` all have order
+    three and act freely on the 27 vertices, so each gives `27/3 = 9` cycles of length three, three and
+    six. The torus count checks out: `V = 27`, `E = 54`, `F = 27`, `chi = 0`. No correction was needed.
 ---
 
 ::: {.problem}
