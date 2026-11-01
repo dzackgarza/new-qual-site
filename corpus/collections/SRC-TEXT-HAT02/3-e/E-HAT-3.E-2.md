@@ -122,7 +122,7 @@ For a regular value with every coordinate nonzero, the $j$th angular coordinate 
 $$
 \deg\widetilde f=k_1\cdots k_n.
 $$
-The local-degree bookkeeping deserves one clause. In the $j$th coordinate the map is $z\mapsto z^{k_j}$ near a point $z_0\ne0$, hence $w\mapsto k_jz_0^{k_j-1}w$ to first order; for $k_j>0$ that is complex linear and orientation-preserving, and for $k_j<0$ the map is $z\mapsto1/z^{\abs{k_j}}$, whose linear term is multiplication by a complex number composed with conjugation, so it reverses orientation. Each preimage therefore contributes $\operatorname{sgn}(k_j)$, and the product over $j$ gives $\operatorname{sgn}(k_1\cdots k_n)$, which multiplied by the $\prod_j\abs{k_j}$ preimages is $k_1\cdots k_n$.
+The bookkeeping deserves one clause, and it is about the *angular* extension $(r,\theta)\mapsto(r,k_j\theta)$, not about the holomorphic power $z\mapsto z^{k_j}$: in the oriented frame $(\partial_r,r^{-1}\partial_\theta)$ of the punctured plane the derivative is $\operatorname{diag}(1,k_j)$, with determinant $k_j$, so the $j$th coordinate map has local degree $\operatorname{sgn}(k_j)$ at each of its preimages, and there are $|k_j|$ of them, giving $|k_j|\operatorname{sgn}(k_j)=k_j$. The holomorphic power is a *different* map when $k_j<0$ — it also changes the radius, and its local degree is $+1$ everywhere, because $z\mapsto z^{k_j}$ is conformal on $\CC^\times$ — so it cannot be used here; only the product of the $n$ signs and the $n$ preimage counts gives $k_1\cdots k_n$. The determinant computation behind the sign, $\det\operatorname{diag}(1,k)=k$ together with $|k|\operatorname{sgn}(k)=k$, is certified in `proofs/cards/LensDegree.lean`.
 
 Let the generator of the $\ZZ_m$ action defining $L$ multiply the $j$th coordinate by
 $$
@@ -142,14 +142,19 @@ f:L\to L'.
 $$
 The induced map on $\pi_1\cong\ZZ_m$ is therefore the identity, hence an isomorphism, and so is the induced map on $H^1(-;\ZZ_m)$.
 
-Finally the covering projections have degree $m$ and fit into the commutative square with $\widetilde f$ and $f$. Multiplicativity of degree applied to $\widetilde f=f\circ p$ gives
+Finally, the covering projections $p:S^{2n-1}\to L$ and $p':S^{2n-1}\to L'$ both have degree $m$, and they fit into the commutative square $p'\circ\widetilde f=f\circ p$. Multiplicativity of degree applied to the two composites of that square gives, on the one hand
 $$
-\deg\widetilde f=(\deg f)(\deg p)=m\deg f,
+\deg(p'\circ\widetilde f)=\deg(p')\deg(\widetilde f)=m\deg\widetilde f
 $$
-so
+and on the other
 $$
-\deg f=k_1\cdots k_n.
+\deg(f\circ p)=\deg(f)\deg(p)=m\deg f,
 $$
+and the two composites are the same map, so $m\deg\widetilde f=m\deg f$. Since $m\ne0$,
+$$
+\deg f=\deg\widetilde f=k_1\cdots k_n.
+$$
+Note that $\widetilde f\ne f\circ p$: that composite has codomain $L'$, not $S^{2n-1}$, and the square is the only relation between the three maps.
 
 :::
 

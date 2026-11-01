@@ -67,8 +67,11 @@ claims, openings and closing steps, as each review note says. They are *not* lin
 §1.A: 14 statements compared, all 14 proofs read line by line; `E-HAT-1.A-8` rewritten twice, once from
 fragments and once to encode covers by monodromy permutations and to compare indices by an explicit
 coset bijection; closing steps of `-9` and `-12` repaired.
-§1.B: 9 statements compared; proofs `-1` .. `-4` read line by line, `-5` .. `-9` reviewed only at the
-level of their claims, as their notes say.
+§1.B: 9 statements compared; all 9 proofs are now read line by line — `-1` .. `-4` earlier, `-5` .. `-9` on
+2026-11-01, with their notes recording the specific checks (the coset count giving the trivalent tree in `-5`, the
+colimit computations in `-6`, the subdivision bipartition in `-7`, the hypothesis on edge groups for finite
+presentability in `-8`, and the sheet count `(N/|G_v|)[G_v:G_e]=N/|G_e|` in `-9`). No correction was needed in any of
+the five.
 §2.1: 31 statements compared. Proofs read line by line in `E-HAT-2.1-1`, `-2`, `-3`, `-4`, `-5`, `-7`,
 `-9`, `-11`, `-12`, `-13`, `-14`, `-15`, `-16`, `-18`, `-19`, `-20`, `-21`, `-22`, `-26`, `-30`, `-31`;
 the remaining ten (`-6`, `-8`, `-10`, `-17`, `-23`, `-24`, `-25`, `-27`, `-28`, `-29`) are reviewed at

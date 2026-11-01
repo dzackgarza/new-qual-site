@@ -94,7 +94,11 @@ $$
 $$
 which is acyclic: $\beta a=b\ne0$, so $\ker\beta=\ZZ_p\{b\}$ and $\operatorname{im}\beta=\ZZ_p\{b\}$. Over a field the tensor product of acyclic complexes is acyclic, by the Künneth formula, so the Bockstein cohomology $\ker\beta/\operatorname{im}\beta$ of $X$ vanishes in every degree.
 
-That vanishing is what the exercise asks for, and it already answers half of the second question: the Bockstein spectral sequence of $X$ for the coefficient sequence $0\to\ZZ\to\ZZ\to\ZZ_p\to0$ has $E_1=H^*(X;\ZZ_p)$ and $d_1=\beta$, so $E_2=0$, and $E_1\Rightarrow(H^*(X;\ZZ)/T)\otimes\ZZ_p$ with $T$ the torsion subgroup. Since $X$ is a finite complex and $(H^*/T)\otimes\ZZ_p=(H^*/T)/p(H^*/T)=0$, a finitely generated $H^*(X;\ZZ)/T$ vanishes, i.e. $H^*(X;\ZZ)$ is all torsion. The chain computation that follows identifies which torsion.
+That vanishing is what the exercise asks for, and it answers half of the second question *for reduced cohomology*, which is where it is proved. The Bockstein spectral sequence of the coefficient sequence $0\to\ZZ\to\ZZ\to\ZZ_p\to0$ has $E_1=H^*(X;\ZZ_p)$ with $d_1=\beta$ and converges to $(H^*(X;\ZZ)/T)\otimes\ZZ_p$, $T$ the torsion subgroup. The acyclicity computed above is that of the *reduced* complex, so what vanishes is the reduced $E_2$. Degree zero must be kept separate, and it is the reason the two statements are compatible: $\beta$ is zero on $H^0(X;\ZZ_p)=\ZZ_p$, so the unreduced $E_2$ is $\ZZ_p$ in degree $0$ and zero above, matching $H^0(X;\ZZ)=\ZZ$. Hence
+$$
+\bigl(\widetilde H^*(X;\ZZ)/T\bigr)\otimes\ZZ_p=0,
+$$
+and since $X$ is a finite complex, $\widetilde H^*(X;\ZZ)$ is finitely generated and therefore all torsion, while $H^0(X;\ZZ)=\ZZ$ is untouched. The chain computation that follows identifies which torsion.
 
 To recover the integral groups explicitly, use cellular chains. The reduced cellular chain complex of $M$ is the two-term complex
 $$
