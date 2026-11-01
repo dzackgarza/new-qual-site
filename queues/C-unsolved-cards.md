@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem cards
 
-14 problem cards have no solution section. These are
+12 problem cards have no solution section. These are
 the cards issue #2 targets: write a Lamport-style structured proof for each.
 
 Regenerate with `just unsolved` after a card gains a solution. CI publishes
@@ -10,12 +10,10 @@ regeneration, and writing the solution removes the line.
 
 ## Count
 
-- Problems: 14
+- Problems: 12
 
-## Problems (14)
+## Problems (12)
 
-- [ ] P-MH07-JAN06-03 — "Definition of the tangent bundle, and $TS^2$ is not diffeomorphic to $S^2\times\RR$"
-- [ ] P-PUS07 — "The ring of invariants $\CC[x_1,\ldots,x_n]^G$ of a subgroup $G\le S_n$ is a finitely generated $\CC$-algebra"
 - [ ] P-Q7LG0 — "For an abelian group $G$, the group ring $\ZZ[G]$ is Noetherian if and only if $G$ is finitely generated"
 - [ ] P-R44X8 — "Projective modules over $k[\ZZ/p]\cong k[t]/(t^p)$ in characteristic $p$ and the rank of $\Sigma-\operatorname{Id}$"
 - [ ] P-TOP-WORKSHOP-D9-HW2 — "Homology of the torus $T^2=S^1\times S^1$"
