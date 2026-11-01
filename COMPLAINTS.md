@@ -258,3 +258,35 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   different witness (a solutions manual, a table of contents plus a statement database) and say so in
   the node. The two nodes whose books *are* present — `ad-text-hat02` and `ad-text-ss03-gaps` — have
   been started here and are executable.
+## A numeric refutation of mine that was wrong, and the rule it breaks
+
+- **Object and need:** a proposed correction to the printed Airy series in
+  `E-SSA.PR-3` (`SRC-TEXT-SS03`, Appendix A §5 problem 3). The proposal was that the series printed
+  for $\operatorname{Ai}(-x)$ needs a factor $(-1)^n$.
+
+- **Observed evidence:** I tested it by summing $\frac1\pi\sum_n \frac{x^n}{n!}\sin\frac{2\pi(n+1)}{3}
+  3^{n/3-2/3}\Gamma(\frac n3+\frac13)$ twice — once as printed, once "with $(-1)^n$" — and concluded
+  that the printed series is $\operatorname{Ai}(x)$ (correct) but that the proposed fix gives
+  $-\operatorname{Ai}(x)$, hence was also wrong. **The second half of that was my error:** the test
+  multiplied every term by the constant $(-1)$ instead of by $(-1)^n$, so it computed $-S(1)$ rather
+  than $S(-1)$. Redone correctly, $S(z)=\operatorname{Ai}(z)$ to $10^{-31}$ at $z=\pm0.5,\pm1,\pm2$,
+  so $(-1)^n$ does give $\operatorname{Ai}(-x)$ and the proposal was right.
+
+- **Impact and owner:** I rejected a correct submission on the strength of it, and wrote the wrong
+  conclusion into a commit message (`c1ccb13fdc`). The card has since been corrected: its statement
+  now reads $\operatorname{Ai}(x)=S(x)$, with a `source-corrected` event recording the printed line,
+  the numeric agreement and the ODE proof ($S''=zS$, matching initial values, so $S=\operatorname{Ai}$
+  by uniqueness). The swarm member was told plainly that the rejection was mine to own.
+
+- **Uncertainty:** verified — the corrected numerics, the ODE identity, and the printed text at PDF
+  p.360 (printed p.341), which shows the label `Ai(−x)` over a series in $x^n$, so the print's own
+  two sides disagree. Not verified: whether the printed book carries a minus sign that the OCR layer
+  dropped; the extraction shows `xn` with the superscript inline and no sign, which is why the card
+  records the disagreement rather than asserting a typo.
+
+- **Repair:** done in the card, and here is the rule it establishes, which belongs with the other
+  audit rules rather than in a session's memory: **a numeric refutation must be re-derived from the
+  formula as stated by the person making the claim.** Substituting a "corrected" version by hand and
+  evaluating that is not a check of their claim, it is a check of mine, and the two differ by exactly
+  the correction under discussion. Where a claim is about a formula, the refutation must evaluate the
+  claim's own expression, printed out, preferably symbolically rather than by transcription.
