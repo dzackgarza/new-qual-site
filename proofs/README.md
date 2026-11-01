@@ -99,14 +99,30 @@ pinned tree (`db584cd6`) has, with exact names:
 - `Mathlib/RingTheory/Flat/Basic.lean`: `Module.Flat.rTensor_exact` (l.340),
   `rTensor_preserves_injective_linearMap` (l.120), `iff_rTensor_exact` (l.393).
 
-So resolution independence is not what is missing. The smallest missing theorem, stated exactly,
-is the one that ties the concrete computation to the categorical functor: for `f : K -> F`
-injective with `F` free and `A = coker f`, the two-term complex `0 -> K -> F -> 0` is a projective
-resolution of `A` (an `A.ProjectiveResolution` built from it), and therefore
-`Tor 1 A B ≅ ker (f.rTensor B)` — the homology of that complex after `tensorLeft B`, which is
-`ker/im` in degree 1 with the incoming differential zero. Nothing here needs the long exact
-sequence, which is genuinely absent from the pinned `Tor` API; what is absent is this instance
-plus the degree-1 homology computation.
+So resolution independence is not what is missing, and neither is the flat case, which a `Tor`
+namespace search had also missed: `Mathlib/RingTheory/Flat/Equalizer.lean` provides
+`LinearMap.lTensor_injective_of_exact_of_flat`, which for `M --g→ N --f→ P` with `P` flat, `f`
+surjective, `g` injective and `Exact g f`, gives `Injective (g.lTensor A)` for every `A`. With
+`g` the relation map `K → F` of a two-term free resolution, `f` the quotient map `F → F ⧸ range f`
+and `P` that quotient, this *is* the kernel-zero case of the cards' vanishing direction — no
+connecting map and no snake lemma needed, only `LinearMap.lTensor_inj_iff_rTensor_inj`
+(`RingTheory/Flat/Basic.lean`) to move to the factor order the presentation-level `torKernel`
+uses. So `E-HAT-3.A-2`'s "torsion-free `A` implies `Tor(A,B) = 0`" is formalizable today for a
+genuine free resolution, given the injectivity of the relation map.
+
+What remains missing is therefore narrower than this note previously said: the identification
+`Tor 1 A B ≅ ker (f.rTensor B)` for a two-term resolution (a `ProjectiveResolution` instance built
+from `0 → K → F → 0` plus the degree-1 homology computation), and — for `E-HAT-3.A-6` — the
+structure of a finite f.g. stage. Neither requires reimplementing comparison or exactness theory:
+`ProjectiveResolution.homotopyEquiv` and `LinearMap.lTensor_injective_of_exact_of_flat` are the
+maintained constructions to use.
+
+**Pending certification, stated concretely.** The next Lean obligation is
+`rTensor_injective_of_flat_cokernel`: for `f : K →ₗ[ℤ] F` injective with `[Module.Flat ℤ (F ⧸
+LinearMap.range f)]`, `rTensor B f` is injective, hence `torKernel f = ⊥`; proved by
+`LinearMap.lTensor_injective_of_exact_of_flat` (with `g = f`, the quotient map as the surjection,
+and `Exact f (Submodule.mkQ _)`) composed with `LinearMap.lTensor_inj_iff_rTensor_inj`. This
+statement is not yet elaborated here, so it is recorded as the obligation, not as a result.
 
 ## 5. Outstanding obligations
 
