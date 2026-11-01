@@ -92,18 +92,14 @@ settled until a file here covers it:
   does not supply the simplex's chain complex itself, so the card's implication is still not
   completed.
 - `E-HAT-3.A-6` and `E-HAT-3.A-2`, additivity (Proposition 3A.5(2)) and the filtered
-  colimit step (Exercise 4): not certified. `cards/TorReductions.lean` records how far the
-  additivity went — the tools are `TensorProduct.prodLeft`, `prodLeft_tmul` and
-  `LinearMap.ker_prodMap`, and the commutation `prodLeft ∘ ((f₁ ⊕ f₂) ⊗ id) = ((f₁ ⊗ id) ⊕
-  (f₂ ⊗ id)) ∘ prodLeft` fails to be provable there because after `LinearMap.comp_apply` the
-  goal shows the coerced application of `prodLeft` while `prodLeft_tmul` is stated for the
-  uncoerced one, and no coercion lemma in this Mathlib rewrites between them. The
-  filtered-colimit step needs the same additivity plus commutation of `⊗` with filtered
-  colimits of abelian groups.
-- `E-HAT-3.A-6`, passage from cyclic summands to a general $p$-primary group: the identity
-  $\operatorname{Tor}(\ZZ/p^k,C)\cong C[p^k]$ is certified at the presentation level and
-  the hypothesis "$B/B_p$ has no $p$-torsion" is certified, but additivity (2) and
-  Exercise 4's direct limits, which carry that to every $p$-primary $A_p$, are cited.
+  colimit step (Exercise 4). The computation is now proved — `prodLeft_comp_rTensor` in
+  `cards/TorReductions.lean`, with clean axioms: tensoring a product map with `id_B` commutes
+  with `TensorProduct.prodLeft`. What is missing is one kernel transfer, isolated in that file:
+  the equation `prodLeft ((prodLeft).symm y) = y` is needed in the *coerced* shape in which it
+  occurs inside that commutation, while `LinearEquiv.apply_symm_apply` produces it uncoerced,
+  and no coercion lemma in this Mathlib bridges the two (`rw` reports
+  `Did not find an occurrence of the pattern ?e ((LinearEquiv.symm ?e) ?c)`). The filtered-colimit
+  step then needs additivity plus commutation of `⊗` with filtered colimits of abelian groups.
 - `E-HAT-3.A-2`: the restored direction "torsion-free implies $\operatorname{Tor}(A,B)=0$
   for all $B$" is a citation of exercise 5 of the same section. Two of its three
   ingredients are certified in `cards/TorReductions.lean` — a finitely generated

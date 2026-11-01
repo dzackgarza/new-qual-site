@@ -193,23 +193,44 @@ theorem mem_of_p_smul_mem_of_pPrimary {B : Type*} [AddCommGroup B] {p : ℤ}
   obtain ⟨k, hk⟩ := (hP (p • x)).mp hx
   exact (hP x).mpr ⟨k + 1, by rw [pow_succ, ← smul_smul]; exact hk⟩
 
-/-! ## Additivity: attempted, not proved
+/-- Hatcher, Proposition 3A.5(2), the computation: tensoring a product map with `id_B`
+commutes with the distributivity isomorphism of `TensorProduct.prodLeft`. This is the
+mathematical content of additivity at the presentation level. -/
+theorem prodLeft_comp_rTensor {K₁ K₂ F₁ F₂ : Type*} [AddCommGroup K₁] [AddCommGroup K₂]
+    [AddCommGroup F₁] [AddCommGroup F₂] (f₁ : K₁ →ₗ[ℤ] F₁) (f₂ : K₂ →ₗ[ℤ] F₂) :
+    (TensorProduct.prodLeft ℤ ℤ F₁ F₂ B).toLinearMap.comp ((f₁.prodMap f₂).rTensor B) =
+      ((f₁.rTensor B).prodMap (f₂.rTensor B)).comp
+        (TensorProduct.prodLeft ℤ ℤ K₁ K₂ B).toLinearMap := by
+  refine LinearMap.ext fun x => ?_
+  induction x using TensorProduct.induction_on with
+  | zero => simp only [map_zero, Prod.mk_zero_zero]
+  | tmul k b => obtain ⟨k₁, k₂⟩ := k; simp [TensorProduct.prodLeft_tmul]
+  | add x y hx hy => simp only [map_add, hx, hy]
 
-Hatcher, Proposition 3A.5(2) at the presentation level would be the statement that the
-presentation of a direct sum is the direct sum of the presentations, so that the
-presentation-level `Tor` of `f₁ ⊕ f₂` is `Tor f₁ × Tor f₂`. The tools are present —
-`TensorProduct.prodLeft` for the distributivity isomorphism, `TensorProduct.prodLeft_tmul`
-for its value on pure tensors, `LinearMap.ker_prodMap` for the kernel of a product map — and
-the two necessary computations are
+/-! ## Additivity: the isolated missing step
 
-`prodLeft_F ∘ ((f₁ ⊕ f₂) ⊗ id_B) = ((f₁ ⊗ id_B) ⊕ (f₂ ⊗ id_B)) ∘ prodLeft_{K}`
+With `prodLeft_comp_rTensor` proved, additivity
+`(torKernel (f₁ ⊕ f₂)).map prodLeft = (torKernel f₁).prod (torKernel f₂)`
+reduces to one kernel transfer: from a point `y` in `(ker (f₁ ⊗ id)).prod (ker (f₂ ⊗ id))`,
+to show that `(prodLeft).symm y` lies in the kernel of `(f₁ ⊕ f₂) ⊗ id`.
 
-followed by the transfer of the kernel. The first of these is where this file stops: after
-`LinearMap.comp_apply` the goal contains the coerced application `↑(TensorProduct.prodLeft …)`
-while `TensorProduct.prodLeft_tmul` is stated for the uncoerced one, and neither
-`LinearEquiv.coe_coe`, `LinearEquiv.coe_toLinearMap` nor `change` rewrites between them in
-this Mathlib, so the rewrite does not fire. Additivity is therefore **not** certified here,
-and it is listed as an outstanding obligation in `proofs/README.md` rather than asserted. -/
+The transfer needs the equation `hq : prodLeft ((prodLeft).symm y) = y` in the *coerced*
+shape in which it occurs inside `prodLeft_comp_rTensor`, namely
+
+`↑(TensorProduct.prodLeft ℤ ℤ K₁ K₂ B) ((TensorProduct.prodLeft ℤ ℤ K₁ K₂ B).symm y) = y`,
+
+while `LinearEquiv.apply_symm_apply` produces it in the uncoerced shape
+`(TensorProduct.prodLeft ℤ ℤ K₁ K₂ B) ((TensorProduct.prodLeft ℤ ℤ K₁ K₂ B).symm y) = y`.
+`rw` at that hypothesis reports
+
+`Did not find an occurrence of the pattern ?e ((LinearEquiv.symm ?e) ?c)`,
+
+and `LinearEquiv.coe_coe`, `LinearEquiv.coe_toLinearMap`, `change` and `simp only` over the
+coercion lemmas do not bridge it in this Mathlib. This is the precise upstream gap: a
+normalisation lemma for the `LinearEquiv` coercion that lets `apply_symm_apply` fire through
+it. Everything else in the additivity proof is available: the computation is
+`prodLeft_comp_rTensor`, the kernel splitting is `LinearMap.ker_prodMap`, and the map on
+kernels is `Submodule.map` along `(TensorProduct.prodLeft ℤ ℤ K₁ K₂ B).toLinearMap`. -/
 
 end TorReductions
 
@@ -225,3 +246,4 @@ end TorReductions
 #print axioms TorReductions.eq_zero_of_pow_smul_eq_zero
 #print axioms TorReductions.torsionBy_pow_eq_bot_of_no_p_torsion
 #print axioms TorReductions.mem_of_p_smul_mem_of_pPrimary
+#print axioms TorReductions.prodLeft_comp_rTensor
