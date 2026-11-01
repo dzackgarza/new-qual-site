@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem cards
 
-16 problem cards have no solution section. These are
+14 problem cards have no solution section. These are
 the cards issue #2 targets: write a Lamport-style structured proof for each.
 
 Regenerate with `just unsolved` after a card gains a solution. CI publishes
@@ -10,12 +10,10 @@ regeneration, and writing the solution removes the line.
 
 ## Count
 
-- Problems: 16
+- Problems: 14
 
-## Problems (16)
+## Problems (14)
 
-- [ ] P-H1NVQ — "$M_2(\FF_4)\otimes_{\FF_2}M_2(\FF_4)$ as a product of matrix rings over division rings"
-- [ ] P-IH43M — "Values of $b$ for which $X^2=B$ has finitely many, but at least one, real $3\times3$ solutions, $B$ tridiagonal with entries $1,b$"
 - [ ] P-MH07-JAN06-03 — "Definition of the tangent bundle, and $TS^2$ is not diffeomorphic to $S^2\times\RR$"
 - [ ] P-PUS07 — "The ring of invariants $\CC[x_1,\ldots,x_n]^G$ of a subgroup $G\le S_n$ is a finitely generated $\CC$-algebra"
 - [ ] P-Q7LG0 — "For an abelian group $G$, the group ring $\ZZ[G]$ is Noetherian if and only if $G$ is finitely generated"
