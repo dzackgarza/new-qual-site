@@ -345,9 +345,42 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    that a realisable one determines the class, plus the two extreme families and the
    $m_{ij}=p^{e_{ij}}$ family), and no decision procedure — the flags are infinitely many bits, so
    Corollary 5 is a criterion, not an algorithm.
-4. **`P-AGH467MULTISECANTS`.** The Kaji citation is checked at the level of the paper's abstract only.
-   The paper's body — in particular the singularity condition that is vacuous for smooth curves — was
-   not read, and steps `s1`–`s13` of that card were not re-derived.
+4. **`P-AGH467MULTISECANTS` — attribute misidentified, body still unread (2026-11-01).**
+   The card's step `tangent-char-zero` cites Kaji, *On the tangentially degenerate curves*, J. London
+   Math. Soc. (2) **33** (1986) 430–440, doi:10.1112/jlms/s2-33.3.430, for the finiteness of the
+   tangent lines that meet the curve again. **The abstract previously quoted in that card's audit note
+   is not this paper's.** That text — "A projective curve $X$ in $\PP^N$ is said to be tangentially
+   degenerate … if $X$ is tangentially degenerate in characteristic zero, then $X$ is contained in a
+   2-plane under a certain condition on singularities of $X$ … we also investigate a counter-example of
+   E. Esteves and M. Homma" — is the abstract of the sequel, Kaji, *On the tangentially degenerate
+   curves, II*, Bull. Braz. Math. Soc. (N.S.) **45** (2014) 745–752,
+   doi:10.1007/s00574-014-0072-8. Three independent confirmations: the Waseda University Pure record
+   for the 1986 paper carries no abstract field at all, while its record for the 2014 paper carries
+   exactly that text; the Crossref deposit for the 1986 DOI has no abstract, while the 2014 DOI's
+   reference list cites Kaji 1986 as its own [8]; and the text mentions Esteves–Homma, whose method is
+   from 1994 (their paper is the 2014 article's reference [3]), so it cannot be an abstract of 1986.
+   The earlier note's inference — "for a smooth curve the singularity condition is vacuous" — was
+   therefore reasoning about the wrong paper. **What replaces it, as a secondary source only:** the
+   hypothesis of the 1986 theorem, as stated by a specialist citing it, is
+   *"$p=0$ and the morphism $X\to\PP^N$ induced by the normalization $\phi:X\to C$ is unramified"*,
+   with the conclusion that no such curve is tangentially degenerate (Fukasawa, *A generalization of
+   Esteves–Homma's example of tangentially degenerate curves*, arXiv:2108.00650, Atti Accad. Naz.
+   Lincei 33 (2022) 959–966, §1 and reference [6]). The same source calls the 2014 paper a
+   *generalization* of it. For a smooth curve the normalization is an isomorphism, hence unramified, so
+   that hypothesis is satisfied here — but this is a restatement by a third party, **not the body of
+   the paper**. **Body not obtained; the precise access operations that failed are:** the DOI resolves
+   to `doi.wiley.com`, which answers with a Cloudflare human check; the Wiley text-and-data-mining
+   endpoint (`api.wiley.com/onlinelibrary/tdm/v1/articles/…`, the only machine link in the Crossref
+   deposit) requires a Wiley TDM token; the same archive at `academic.oup.com/jlms` answers with a
+   Cloudflare human check; `zbmath.org` answers with a Cloudflare human check and the zbMATH API
+   `api.zbmath.org/v1/document/3900930` returns the record with its review text withheld —
+   *"zbMATH Open Web Interface contents unavailable due to conflicting licenses"*; the 2014 sequel at
+   `link.springer.com` redirects to `idp.springer.com/authorize`, i.e. institutional login; there is no
+   arXiv copy of either paper (an arXiv API search for "tangentially degenerate" returns 8 records,
+   none by Kaji); and the Waseda Pure record is metadata only, with no full-text link. **Portal access
+   or a library copy of JLMS (2) 33 (1986) 430–440 is the missing operation.** The step therefore stays
+   a citation: it is **not** upgraded to verified, and steps `s1`–`s13` of that card remain
+   not re-derived.
 5. **Starred markers — Stein–Shakarchi only, and checked.** No `SRC-TEXT-SS03` card records which
    printed items carry the difficulty asterisk; reports this week put the number of starred printed
    items between 26 and 28 and only `E-SS2.PR-5` mentions its star. For `SRC-TEXT-HAT02` the question

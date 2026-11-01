@@ -74,6 +74,63 @@ audit:
     nonplanar curve in characteristic zero is not tangentially degenerate, that is, its tangent line at
     a general point does not meet the curve again. What remains unchecked: the precise form of the
     singularity condition, which is irrelevant here, and the body of the paper.
+- event: source-checked
+  by: claude
+  date: 2026-11-01
+  note: >-
+    SUPERSEDES the event of even date above that claimed the Kaji citation was checked "at the level of
+    the paper's own abstract". That abstract is not this paper's. The text quoted there -- tangentially
+    degenerate defined, characteristic zero forcing the curve into a 2-plane under a condition on
+    singularities, and a counter-example of Esteves and Homma -- is the abstract of the SEQUEL: Kaji, On
+    the tangentially degenerate curves, II, Bull. Braz. Math. Soc. (N.S.) 45 (2014) 745-752,
+    doi:10.1007/s00574-014-0072-8. Three checks: the Waseda University Pure record for the 1986 paper
+    carries no abstract field, while its record for the 2014 paper carries exactly that text; the Crossref
+    deposit of the 1986 DOI has no abstract, and the 2014 DOI's reference list cites the 1986 paper as its
+    own reference [8]; and the text names Esteves-Homma, whose method dates from 1994 and is the 2014
+    article's reference [3]. The earlier inference "for a smooth curve the singularity condition is
+    vacuous" was thus reasoning about the wrong paper and is withdrawn, not relied on. What is now known
+    about the 1986 theorem comes from a secondary source: Fukasawa, A generalization of Esteves-Homma's
+    example of tangentially degenerate curves, arXiv:2108.00650 (Atti Accad. Naz. Lincei 33 (2022)
+    959-966), whose introduction states that "for the case where p = 0 and the morphism X -> P^N induced
+    by the normalization phi: X -> C is unramified, the nonexistence of such curves was proved by Kaji
+    [6] in 1986", and which calls the 2014 paper a generalization of it. That hypothesis is satisfied by
+    the smooth curve of step tangent-char-zero, whose normalization is an isomorphism. It is however a
+    third party's restatement, NOT the body of the paper, and it is not treated as verification here.
+    NOT VERIFIED: the body of JLMS (2) 33 (1986) 430-440. The access operations tried, and how each
+    failed: doi.org resolves to doi.wiley.com, which answers with a Cloudflare human check; the only
+    machine-readable link in the Crossref record, api.wiley.com/onlinelibrary/tdm/v1/articles/...,
+    requires a Wiley text-and-data-mining token; the same archive at academic.oup.com/jlms answers with a
+    Cloudflare human check; zbmath.org answers with a Cloudflare human check and the zbMATH API record
+    3900930 returns with its review text withheld ("contents unavailable due to conflicting licenses");
+    the 2014 sequel at link.springer.com redirects to idp.springer.com/authorize, i.e. institutional
+    login; there is no arXiv copy of either paper. What would close it: institutional or library access
+    to JLMS (2) 33 (1986) 430-440. Until then step tangent-char-zero remains a citation step and the
+    obligation stays open. Also unchanged: steps s1--s13 were not re-derived.
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Correction to step tangent-char-zero, whose incidence formulation was wrong as written earlier the
+    same day. The step had said the bad locus is the image of the CLOSED subset of X x X on which
+    X(P), X'(P), X(Q) become dependent. That subset contains the diagonal: for Q = P the three columns
+    are X(P), X'(P), X(P), whose rank is at most 2, so every 3x3 minor vanishes. Hence its projection to
+    the first factor is all of X, it does contain the generic point, and the appeal to constructibility
+    proved nothing at all. The second-point condition Q != P is not a convenience in the statement but
+    the substance of it. The step now uses the LOCALLY CLOSED set Z* = {Q != P and X(Q) in
+    <X(P),X'(P)>} = Z minus the diagonal, notes explicitly that Z itself is useless for this reason,
+    and applies Chevalley's theorem to the constructible set Z* -- not the image of a closed set -- to
+    conclude that B = pr_1(Z*) is constructible. Kaji says B does not contain the generic point, and a
+    constructible subset of a curve omitting the generic point is finite. Checked separately and
+    unchanged: the dependence condition is the vanishing of the 3x3 minors of the 4x3 matrix, and
+    Q in T_P X for Q != P is equivalent to X(Q) lying in the projective span of X(P) and X'(P), which
+    is that line. The second paragraph of the step, on contact order at least 3, needed no change: it
+    is a condition on P alone, via the dependence of X(P), X'(P), X''(P), so it has no diagonal issue.
+    UNCHANGED AND STILL OPEN: the body of Kaji, J. London Math. Soc. (2) 33 (1986) 430-440, remains
+    unread; the hypothesis available to us is a third party's restatement (Fukasawa, arXiv:2108.00650,
+    Sec. 1: p = 0 with the normalization unramified, which a smooth curve satisfies), not the paper.
+    Step tangent-char-zero therefore remains a CITATION step, not a verified one, and the portal or
+    library access recorded in the preceding event is still required to close it.
+
 ---
 
 ::: {.problem}
@@ -219,9 +276,35 @@ In characteristic zero, the tangent-line finiteness assumption in step
 
 By [Kaji's theorem on tangentially degenerate curves](https://doi.org/10.1112/jlms/s2-33.3.430),
 the tangent line at a general point of a smooth nonplanar curve does not meet
-the curve at a second point. The points where it does form a constructible
-subset of $X$. Since this subset does not contain the generic point, it is
-finite.
+the curve at a second point. That statement is about a general point; passing to
+"all but finitely many" needs the second-point incidence, and the distinctness
+$Q\ne P$ is essential to it. In homogeneous coordinates put
+$$
+Z=\{(P,Q)\in X\times X:\ X(Q)\in\langle X(P),X'(P)\rangle\},
+$$
+the vanishing locus of the $3\times3$ minors of the $4\times3$ matrix with
+columns $X(P)$, $X'(P)$, $X(Q)$, so that $Z$ is closed. The diagonal is
+contained in $Z$, because $X(P)$ lies in the span of $X(P)$ and $X'(P)$
+trivially; for that reason $Z$ is useless here, its projection to the first
+factor being all of $X$. Remove the diagonal, which is the locus excluded by the
+statement, and take the second-point incidence
+$$
+Z^{*}=\{(P,Q)\in X\times X:\ Q\ne P,\ X(Q)\in\langle X(P),X'(P)\rangle\}
+=Z\smallsetminus\Delta .
+$$
+This is locally closed, hence constructible, though not closed. Let
+$$
+B=\operatorname{pr}_1(Z^{*})
+$$
+be the set of points whose tangent line meets $X$ again at a point other than
+$P$. Since $Z^{*}$ is constructible, $B$ is constructible, by Chevalley's
+theorem that the image of a constructible set under a morphism of varieties is
+constructible; this is where the diagonal having been removed matters, since the
+image of $Z$ itself is $X$. Kaji's theorem says that no point of $Z^{*}$ lies
+over the generic point of $X$, so $B$ does not contain that generic point. A
+constructible subset of a curve that omits the generic point is finite, so $B$
+is finite: for all but finitely many $P$, the tangent line meets $X$ only at
+$P$.
 
 The points where the tangent line has contact order at least $3$ are also
 finite. Indeed, this is a closed condition on $X$. If it held at the generic
