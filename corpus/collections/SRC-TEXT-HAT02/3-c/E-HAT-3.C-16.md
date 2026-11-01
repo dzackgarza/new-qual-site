@@ -74,6 +74,24 @@ audit:
     exactly when the product of the residues around each cycle is 1 -- so deciding the orbit set for a
     fixed support is a 1-cocycle computation not carried out here. The refuted claim remains refuted:
     the valuations determine the support, not the reduction.
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Correction to the previous note on this card, which asserted that the residues off the support "need
+    not be normalisable to 1" and that the valuations therefore do not determine the mod-p Hopf algebra.
+    Neither assertion is supported: no counterexample is known and no proof was given. What is now on the
+    card is what can be proved. Proposition 5: after taking logarithms in F_p^x, an isomorphism between
+    two reductions with the same support is exactly a solution of the triangular system
+    v_{i+j} = c_ij + v_i + v_j over Z/(p-1), so the classification is a finite linear problem, consistent
+    iff the values proposed at each level agree. Theorem 6: for p = 2 the reduced constants are already
+    0 or 1 because F_2^x = {1}, so the support alone classifies the reductions and the valuation claim is
+    TRUE there. Proposition 4: for m_ij = p^{e_ij} the support classifies. The residual is stated as open
+    for odd p, with the mechanism named: when the auxiliary pairs are singular the integral cocycle
+    relates the residues off the support to the unit parts of the singular constants, which the
+    valuations cannot see. The search recorded on the card (all forms with m_{1j} <= 24, j <= 6) found no
+    pair of equal support with non-isomorphic reductions, and that is reported as a finite check, not a
+    theorem.
 ---
 
 ::: {.problem}
@@ -210,7 +228,29 @@ the two transformations being inverse, so it is enough to record the product con
 
 So for this family the answer to the exercise's second question is complete: the reductions are exactly the $\FF_p$-Hopf algebras with $\bar x_i\bar x_j=\bar x_{i+j}$ off an admissible $S$ and $\bar x_i\bar x_j=0$ on $S$, one for each admissible $S$, and admissible $S$ are those of the form $\{e_{ij}>0\}$ for a divisor cocycle $e$ with $e_{ij}\le v_p(b_{ij})$ and $e_{i0}=e_{0i}=0$ — the converse construction recorded below shows every such $S$ occurs.
 
-**What is still open, stated exactly.** For a general form the residues $\bar m_{ij}\in\FF_p^\times$ off $S$ need not be normalisable to $1$: the constraints $u_{i+j}=\bar m_{ij}u_iu_j$, imposed only for $(i,j)\notin S$, form a graph on $\NN$, and a rescaling exists if and only if the product of the $\bar m$'s around every cycle of that graph is $1$. Deciding the orbit set for a fixed support is therefore a $1$-cocycle computation on that graph; it is not carried out here, and in particular the claim that the valuations alone classify the reductions remains false: the support is determined by the valuations, and the finer orbits are not.
+**Proposition 5 (the general normalisation problem is a linear system).** *Let $g$ generate $\FF_p^\times$ and write $\bar m_{ij}=g^{c_{ij}}$ for $(i,j)\notin S$. A rescaling $(u_n)$ exists if and only if there are $v_n\in\ZZ/(p-1)$ with $u_n=g^{v_n}$ satisfying*
+$$
+v_{i+j}\equiv c_{ij}+v_i+v_j \pmod{p-1}\qquad\text{for every }(i,j)\notin S .
+$$
+*This system is triangular: each equation has index $i+j$ exceeding both $i$ and $j$, so it determines $v_{i+j}$ from earlier values and the system is solvable if and only if, for every $n$ and every two pairs $(i,n-i),(j,n-j)\notin S$, the two resulting values of $v_n$ agree.*
+
+*Proof.* $u_{i+j}=\bar m_{ij}u_iu_j$ is exactly the displayed congruence after taking logarithms to base $g$; that the map $n\mapsto v_n$ determines and is determined by $u_n$ is the definition. For the triangularity, an equation with $i+j=n$ involves only $v_n$ among the indices $\ge n$, and $v_i,v_j$ with $i,j<n$ — including $i=0$, where $v_0=0$ — so solving proceeds by increasing $n$, and at step $n$ each pair $(i,n-i)\notin S$ proposes a value for $v_n$; the system is consistent exactly when all proposals agree. $\square$
+
+Proposition 5 is not a negative result: it converts the classification into a finite linear problem, and it also shows when the problem disappears.
+
+**Theorem 6 (the support classifies the reductions for $p=2$).** *Let $p=2$. Then every nonzero reduced structure constant equals $1$, and the reductions of two forms are isomorphic if and only if their supports coincide. Hence for $p=2$ the mod-$2$ Hopf algebra is determined by the valuations — by their positivity pattern, which is all that $v_2$ records about vanishing.*
+
+*Proof.* $\FF_2^\times=\{1\}$, so $\bar m_{ij}=1$ whenever $(i,j)\notin S$ and no rescaling is needed or possible: the reduced structure constants are already $0$ or $1$. Proposition 1 gives that the support is an invariant and Proposition 4 that forms with the same support have equal reduced constants, hence isomorphic reductions. $\square$
+
+**Theorem 7 (the residual is genuine, and its shape).** *For $p>2$ and a support $S$ for which the system of Proposition 5 is inconsistent, two forms with support $S$ have non-isomorphic reductions; such a pair exists exactly when the system is inconsistent for some admissible $S$. Whether inconsistency can occur is **not settled here**.*
+
+*Proof.* The first sentence is the definition of inconsistency. The second is a restatement; the third is the open point, and no counterexample is asserted.
+
+What is known about the third point: whenever the two pairs $(i,t)$ and $(t,n-j)$ arising in the consistency check of Proposition 5 both lie outside $S$, consistency follows from the integral cocycle $m_{it}m_{j,n-j}=m_{t,n-j}m_{i,n-i}$ (with $t=j-i$), by Proposition 5's comparison — this is the computation carried out for the $p$-unit case in Proposition 2 and it does not use $p$. So an obstruction can only arise from a support which is "thick" in the sense that it contains those auxiliary pairs, and the smallest place to look is $p=3$, where $\FF_3^\times$ has order $2$ and the coefficient $2$ of a free $v_n$ vanishes mod $2$.
+
+Where such an obstruction would have to come from is visible in the integral cocycle. In the case $(i,t)\in S$ the identity $m_{it}m_{j,n-j}=m_{t,n-j}m_{i,n-i}$ forces $e_{it}=e_{t,n-j}\ge1$ and, after dividing both singular factors by that common power of $p$, leaves the relation $\overline{M_{it}}\,\bar m_{j,n-j}=\overline{M_{t,n-j}}\,\bar m_{i,n-i}$ among *units*. The unit parts $M_{it}$ of the singular structure constants are invisible to the valuations, so two forms with the same support may impose different relations on the residues off the support. That is the mechanism by which the support could fail to determine the reduction for odd $p$; this card does not exhibit such a pair, and the search carried out here — all forms with $m_{1j}\le24$ for $j\le6$ — found no two forms of equal support with non-isomorphic reductions.
+
+**Status of the exercise's second question, stated without overclaiming.** The reductions are classified by the orbits of Proposition 1, and by Theorem 6 the answer is complete for $p=2$ and for the family $m_{ij}=p^{e_{ij}}$: there the support alone decides. For odd $p$ and a general form the answer is the consistency question of Proposition 5, which is open. In particular the earlier claim that the valuations determine $A\otimes\ZZ_p$ is **not refuted** — it is proved for $p=2$ (Theorem 6) and open for odd $p$ — and the intermediate claim that the residues "can fail to be normalisable" is **not proved**: no counterexample is known to this card.
 
 What the valuations do produce is a family of integral forms together with their vanishing patterns, by a converse that is a direct application of the criterion above: given integers $e_{ij}$ satisfying the two bounds and the cocycle relation, and $e_{i0}=e_{0i}=0$, put
 $$

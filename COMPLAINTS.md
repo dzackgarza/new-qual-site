@@ -321,16 +321,21 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
    reported and repaired above; the rest is unaudited.
-3. **`E-HAT-3.C-16`, the orbit set for a fixed support.** The card now proves that the mod-$p$
-   reductions are the orbits of $(\FF_p^\times)^{\NN}$ on reduced structure constants, that the support is
-   an invariant, that a form with no structure constant divisible by $p$ reduces to $\FF_p[x]$, that
-   $p\mid m_{ij}$ forces $p\mid\binom{i+j}{i}$ (so nothing vanishes below degree $pd$), and that the
-   family $m_{ij}=p^{e_{ij}}$ is classified by its support. **Open, and stated on the card:** for a general
-   form the residues off the support need not be normalisable to $1$; the constraints
-   $u_{i+j}=\bar m_{ij}u_iu_j$ on the complement of the support are satisfiable exactly when the product
-   of the residues around every cycle is $1$, so deciding the orbit set for a fixed support is a
-   $1$-cocycle computation on the graph $\{(i,j)\notin S\}$ that has not been carried out. The refuted
-   claim stays refuted: valuations determine the support, not the reduction.
+3. **`E-HAT-3.C-16`, the mod-$p$ classification: OPEN for odd $p$.** This one was wrongly
+   reported settled earlier in the same session, and the correction matters. What is proved on the card
+   now: the reductions are the orbits of $(\FF_p^\times)^{\NN}$ on reduced structure constants
+   (Proposition 1); after taking logarithms an isomorphism with fixed support is exactly a solution of
+   the triangular system $v_{i+j}=c_{ij}+v_i+v_j$ over $\ZZ/(p-1)$ (Proposition 5), so the
+   classification is a finite linear problem; for $p=2$ the reduced constants are already $0$ or $1$,
+   since $\FF_2^\times=\{1\}$, so **the support classifies the reductions and the valuation claim is
+   true** (Theorem 6); for the family $m_{ij}=p^{e_{ij}}$ the support classifies as well
+   (Proposition 4). **Open:** for odd $p$ and a general form, whether the system of Proposition 5 is
+   always consistent. The mechanism by which it could fail is named on the card — when the auxiliary
+   pairs are singular the integral cocycle ties the residues off the support to the *unit parts* of the
+   singular constants, which the valuations cannot see — but no such pair is exhibited, and the search
+   recorded there (all forms with $m_{1j}\le24$, $j\le6$) found none. Two things previously written here
+   and now withdrawn: that the valuation-only claim is **false** (unproved; and false for $p=2$ by
+   Theorem 6), and that the residues "need not be normalisable to 1" (unproved, no counterexample).
 
 4. **`P-AGH467MULTISECANTS`.** The Kaji citation is checked at the level of the paper's abstract only.
    The paper's body — in particular the singularity condition that is vacuous for smooth curves — was
