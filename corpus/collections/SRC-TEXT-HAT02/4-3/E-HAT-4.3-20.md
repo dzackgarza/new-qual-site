@@ -21,6 +21,11 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof repaired: the card displayed the three-term sequence Omega X_{n+1} -> Omega X_n -> Omega X_{n-1} and called it principal with an Eilenberg--MacLane loop space as fibre. In the book's indexing that is misaligned: AT.txt:20426-20430 has the Postnikov fibration K(pi_{n+1}X, n+1) -> X_{n+1} -> X_n, whose loop is K(pi_{n+1}X, n) -> Omega X_{n+1} -> Omega X_n, whereas the fibre of Omega X_n -> Omega X_{n-1} is K(pi_n X, n-1). The display now names the correct spaces.
 ---
 
 ::: {.problem}
@@ -48,7 +53,7 @@ $$
 $$
 as a pullback of a path-space fibration. Equivalently, the three-term sequence
 $$
-\Omega X_{n+1}\longrightarrow\Omega X_n\longrightarrow\Omega X_{n-1}
+K(\pi_{n+1}X,n)=\Omega K(\pi_{n+1}X,n+1)\longrightarrow\Omega X_{n+1}\longrightarrow\Omega X_n
 $$
 is a principal fibration, with fiber an Eilenberg--MacLane loop space. Thus
 $$
