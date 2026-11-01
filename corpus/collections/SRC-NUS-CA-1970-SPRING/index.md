@@ -28,7 +28,7 @@ source:
   - P-MMAQ-YUXDCVQRF5
   - P-MMAQ-WPHHQBXBQ3
   source_kind: university-exam
-title: Complex Analysis under the imported label “NUS 1970 Spring” (unverified; at least two papers)
+title: Complex Analysis questions under an unverified imported label (dataset says NUS, 1970, Spring)
 ---
 
 

@@ -39,7 +39,7 @@ source:
   - id: P-MMAQ-RML5AHHINX
     comment: 'Source parts (a), (b)'
   source_kind: university-exam
-title: Real Analysis under the imported label “NUS 1970 Spring” (unverified; two papers)
+title: Real Analysis questions under an unverified imported label (dataset says NUS, 1970, Spring)
 ---
 
 

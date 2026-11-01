@@ -18,7 +18,7 @@ open tasks. A prior tick alone is not evidence of that condition.
 | `ad-text-ss03-gaps` | none | Compare `SRC-TEXT-SS03` with the book and add missing cards, one item at a time: chapter 2 problems 4–5; chapter 4 problems 3*–4*; chapter 5 exercises 15–17; chapter 7 exercises 5–12; chapter 8 problems 4–9; chapter 9 problems 2–3; chapter 10 problem 1 and problems 5 onward. Verify existing-card identity before adding each card. |
 | `ad-text-hk71-locators` | none | Check every `SRC-TEXT-HK71` appearance locator in sections 7.1–10.4 against the book; correct each mismatch. |
 | `certify-card-corrections` | none | A mathematical correction to a card is settled only with a Lean formalization or an exact Sage proof/certificate of the corrected claim, published under `proofs/`. Both corrections are certified (`P-FHW1-01`, `P-TAMURAS15-10`), and the six Sage homology checks passed on the supported Sage development image (Sage 11.0.beta5, Python 3.14.10, source HEAD `b0cd7d86e2`). |
-| `ad-source-gaps-nus` | none | Recover the NUS 1970 examination papers, or leave `SRC-NUS-CA-1970-SPRING` and `SRC-NUS-RA-1970-SPRING` marked as imported-only in their provenance and title. A dataset that answers *what the import said* does not answer *what the examination asked*. **Imported-only branch done 2026-11-01** (both titles and both `provenance` lists say so, with the upstream per-university files recorded); **recovery branch blocked** on the University of Singapore's 1970 complex- and real-analysis papers — at least two of each on the numbering evidence — in the NUS Libraries Singapore-Malaysia Collection or the NUS Archives. |
+| `ad-source-gaps-nus` | none | Recover the NUS 1970 examination papers, or leave `SRC-NUS-CA-1970-SPRING` and `SRC-NUS-RA-1970-SPRING` marked as imported-only in their provenance and title. A dataset that answers *what the import said* does not answer *what the examination asked*. **Imported-only branch done 2026-11-01:** both titles and both `provenance` lists mark the values as an unverified imported label, and the dataset's own per-university files are recorded there. **Recovery branch blocked:** the dataset names no source identifier, so the original source is unidentified; an external document naming the examination (an examination paper, university calendar or results notice in a library or archive) is needed. NUS Libraries' Examination Papers Database cannot supply it from here — its guide restricts access to NUS staff and students. |
 | `audited-deployment` | `ad-text-hart77`, `ad-text-hun74`, `ad-text-smi`, `ad-text-hat02`, `ad-text-mun00`, `ad-text-ss03-gaps`, `ad-text-hk71-locators`, `ad-source-gaps-nus` | Finish the reading checklist and all repairs; only then close this node. |
 | `unsolved-contribution` | none | Continue issue #2 by selecting, reading, proving, reviewing, and committing each unsolved problem card in source order. **Closed 2026-11-01: the queue is empty.** `tools/unsolved_queue.py` regenerates `queues/C-unsolved-cards.md` at 0 cards, from 86 when the queue was first generated and 51 when this pass began. |
 
@@ -31,22 +31,22 @@ The five truncated MH07 statements (January 2005 problems 3, 8, 9, 10 and Januar
 problem 9) were read against the University of Utah qualifying-exam question bank, which
 prints all five in full at `quals.math.utah.edu/exams/257/` and `.../258/`, and each card
 now carries that citation.
-The NUS 1970 question is *not* settled, and 2026-11-01 traced it as far as the evidence goes.
+The NUS label is *not* settled, and 2026-11-01 traced it as far as its own bytes allow.
 make-me-a-qual's per-university files `Questions/Complex_Analysis/NUS/NUS_Complex_Analysis.yaml` and
 `Questions/Real_Analysis/NUS/NUS_Real_Analysis.yaml` at revision `6190e0ee` are the direct source of
-the twenty statements — they are now listed in both collections' `provenance` — and they carry no
-source document, URL or paper identifier, only `year`, `season`, `exam`, `number`, `university`,
-`tags` and `question`; the repository's README says only `year`, `exam` and `question` are required
-and that the year may be entered as `0`, so the metadata is contributor-entered and unverified. Both
-labels conflate papers, by their own counters: Complex Analysis numbers its rows 4, 5, 6, 6, 7, 7, 8, 8
-with `Spring` on six and `spring` on two, and Real Analysis runs 1(abch, de, fg), 2, 3 and then 1, 2, 3,
-4, 4, 4, 5. The institution's name dates the label as well: in 1970 it was the **University of
-Singapore** (1962–1980), the National University of Singapore being created by the 1980 merger with
-Nanyang University. No copy is reachable — NUS Libraries' Examination Papers Database indexes NUS
-papers released by its Faculties, holds about five years of them, and is restricted to NUS staff and
-students — so `1970 Spring` is carried as an unverified imported label, not an examination date. That
-unresolved source question is recorded in [COMPLAINTS.md](COMPLAINTS.md) and tracked as
-`ad-source-gaps-nus` below; the three other `ad-source-gaps` questions were settled from documents.
+the twenty statements and are now listed in both collections' `provenance`. Their entries carry seven
+fields — `year`, `season`, `exam`, `number`, `university`, `tags`, `question` — and no source
+document, URL, paper identifier or sitting identifier; the repository's README says only `year`,
+`exam` and `question` are required and that the year may be entered as `0`; and the generated
+`Combined_Questions.md` numbers questions globally with no attribution. The dataset therefore names no
+original source, and its `NUS` / `1970` / `Spring` values and its question numbers are contributor-entered
+metadata: they do not establish the date, the institution or the number of papers behind these
+statements, and nothing here claims they do. Both collections carry those values as an explicitly
+unverified imported label. NUS Libraries' Examination Papers Database was examined through its library
+guide and could not be searched from here, because access to it is restricted to NUS staff and
+students. The original source remains unidentified and that unresolved question is recorded in
+[COMPLAINTS.md](COMPLAINTS.md) and tracked as `ad-source-gaps-nus` below; the three other
+`ad-source-gaps` questions were settled from documents.
 “Theorem 6.1” of RA-WORKSHOP D7-W3 is that sheet's own numbering for [Rud76, Thm. 7.12],
 the continuity of a uniform limit of continuous functions.
 
