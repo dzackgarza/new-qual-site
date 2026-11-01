@@ -21,6 +21,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    All four parts read and checked. (a) is right: for a homotopy equivalence $h$ one has
+    $h^*x'=ax$, $h^*y'=ay$ by naturality of the Bockstein, $h^*z'=\varepsilon z$ with
+    $\varepsilon=\pm1$ since $h$ has degree $\pm1$ on integral top cohomology, so $a^nt=\varepsilon t'$
+    and the two classes agree in $\ZZ_m^*/(\pm(\ZZ_m^*)^n)$. Added: the same computation shows
+    $\tau(L)$ is independent of the chosen generator $x$, which the card used without saying — an
+    $a$-fold change of generator multiplies $t$ by $a^n$. (b) is right in all four items; the local
+    degree argument for $\deg\widetilde f=\prod k_j$ is now spelled out (the $k_j$-th power map is
+    orientation-preserving for $k_j>0$ and reversing for $k_j<0$, uniformly on all preimages), and
+    the degree computation for $f$ is now the honest $\deg\widetilde f=(\deg f)(\deg p)=m\deg f$
+    rather than an equation with $m$ on both sides. (c) and (d) are right, including the use of
+    $L_m(1,\dots,1)$ and of $k_j\equiv\ell_j^{-1}$ to get $\tau(L)=(\prod\ell_j)^{-1}\tau(L_0)$; the
+    cancellation is legitimate because $\tau$ takes values in a group. Nothing is left uncited
+    except the standard facts on lens spaces quoted from the section.
 ---
 
 ::: {.problem}
@@ -48,6 +65,7 @@ Let $x\in H^1(L;\ZZ_m)$ be a generator, put $y=\beta(x)$, and let $z\in H^{2n-1}
 $$
 xy^{n-1}=tz.
 $$
+Replacing $x$ by $ax$ with $a\in\ZZ_m^*$ multiplies $y$ by $a$ and $xy^{n-1}$ by $a^n$, hence multiplies $t$ by $a^n$ and leaves the class of $t$ in $\ZZ_m^*/\bigl(\pm(\ZZ_m^*)^n\bigr)$ unchanged. So $\tau(L)$ does not depend on the choice of generator, which is why the quotient by $n$th powers is the right one; the argument below repeats this computation for a homotopy equivalence.
 
 ::: pf
 
@@ -104,6 +122,7 @@ For a regular value with every coordinate nonzero, the $j$th angular coordinate 
 $$
 \deg\widetilde f=k_1\cdots k_n.
 $$
+The local-degree bookkeeping deserves one clause. In the $j$th coordinate the map is $z\mapsto z^{k_j}$ near a point $z_0\ne0$, hence $w\mapsto k_jz_0^{k_j-1}w$ to first order; for $k_j>0$ that is complex linear and orientation-preserving, and for $k_j<0$ the map is $z\mapsto1/z^{\abs{k_j}}$, whose linear term is multiplication by a complex number composed with conjugation, so it reverses orientation. Each preimage therefore contributes $\operatorname{sgn}(k_j)$, and the product over $j$ gives $\operatorname{sgn}(k_1\cdots k_n)$, which multiplied by the $\prod_j\abs{k_j}$ preimages is $k_1\cdots k_n$.
 
 Let the generator of the $\ZZ_m$ action defining $L$ multiply the $j$th coordinate by
 $$
@@ -123,9 +142,9 @@ f:L\to L'.
 $$
 The induced map on $\pi_1\cong\ZZ_m$ is therefore the identity, hence an isomorphism, and so is the induced map on $H^1(-;\ZZ_m)$.
 
-Finally the covering projections have degree $m$ and fit into the commutative square with $\widetilde f$ and $f$. Multiplicativity of degree gives
+Finally the covering projections have degree $m$ and fit into the commutative square with $\widetilde f$ and $f$. Multiplicativity of degree applied to $\widetilde f=f\circ p$ gives
 $$
-m\deg f=(\deg\widetilde f)m,
+\deg\widetilde f=(\deg f)(\deg p)=m\deg f,
 $$
 so
 $$

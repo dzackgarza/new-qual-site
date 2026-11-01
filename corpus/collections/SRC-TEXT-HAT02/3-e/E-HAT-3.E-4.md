@@ -22,6 +22,24 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read; the argument is correct and none of its steps needed repair. Checked in detail:
+    both factors are homotopy dominated by $SO(5)$, so their integral cohomology is a direct
+    summand and the only torsion available is 2-torsion; over $\FF_2$ the Künneth theorem makes
+    $H^*(SO(5);\FF_2)\cong H^*(X)\otimes H^*(Y)$ as graded algebras; indecomposables split as
+    $Q(B\otimes C)\cong QB\oplus QC$, and both factors have nonzero reduced cohomology, so each
+    carries exactly one of the two indecomposables; the degree-one factor then contains
+    $1,\beta_1,\dots,\beta_1^7$, so a nonzero square in the other factor would give a nonzero class
+    of degree $13$ in a $10$-dimensional space; the degree-three elements of
+    $\FF_2[\beta_1,\beta_3]/(\beta_1^8,\beta_3^2)$ are $0,\beta_1^3,\beta_3,\beta_1^3+\beta_3$ with
+    squares $0,\beta_1^6,0,\beta_1^6$, so the second generator is $\beta_3$; and the final
+    contradiction via the two axis restrictions is exactly the statement that the images of the
+    two projections have zero intersection in positive degrees. Cited from Hatcher and not
+    re-derived here: the mod-2 ring of $SO(5)$ and the integral facts
+    $2x=0,\ \delta(\beta_1)=x,\ \delta(\beta_3)=x^2\ne0$ of Example 3E.7, which the card names.
 ---
 
 ::: {.problem}
