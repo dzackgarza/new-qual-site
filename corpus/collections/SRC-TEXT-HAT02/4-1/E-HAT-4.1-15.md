@@ -41,7 +41,7 @@ Show that every map $f: S^n \to S^n$ is homotopic to a multiple of the identity 
 (b) For $f$ as in (a), consider the composition $gf$ where $g: S^n \to S^n$ collapses the complement of a small ball about $q$ to the basepoint.
 Use this to reduce (a) further to the case $k = 1$.
 
-(c) Finish the argument by showing that an invertible $n \times n$ matrix can be joined by a path of such matrices to either the identity matrix or the matrix of a reflection. (Use Gaussian elimination, for example.)
+(c) Finish the argument by showing that an invertible $n \times n$ matrix can be joined by a path of such matrices to either the identity matrix or the matrix of a reflection. (Use Gaussian elimination, for example.) (Use Gaussian elimination, for example.)
 :::
 
 ::: {.solution}

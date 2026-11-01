@@ -49,6 +49,7 @@ audit:
 ::: {.problem}
 Show that a path-connected space $X$ has a CW approximation with countably many cells if and only if $\pi_n(X)$ is countable for all $n$.
 [Use the results on simplicial approximations to maps and spaces in §2.C.]
+[Use the results on simplicial approximations to maps and spaces in §2.C.]
 :::
 
 ::: {.solution}

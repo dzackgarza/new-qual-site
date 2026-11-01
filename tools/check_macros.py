@@ -21,7 +21,7 @@ import re
 import sys
 from pathlib import Path
 
-CONTROL_WORD = re.compile(r"\\([A-Za-z]+)")
+CONTROL_WORD = re.compile(r"(?<!\\)\\([A-Za-z]+)")
 
 
 def known_words(root: Path) -> frozenset[str]:

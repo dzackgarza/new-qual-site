@@ -56,27 +56,35 @@ I_i=\operatorname{im}(G_j\to G_i)
 =\alpha_{i+1}\bigl(\operatorname{im}(G_j\to G_{i+1})\bigr)
 =\alpha_{i+1}(I_{i+1}).
 $$
-Hence the tower $(I_i)$ has surjective bonding maps, so its $\varprojlim{}^1$ vanishes: given $(b_i)\in\prod I_i$, choose $g_0$ arbitrarily and then recursively choose $g_{i+1}$ with
+Hence the tower $(I_i)$ has surjective bonding maps, so its $\varprojlim{}^1$ vanishes. Precisely, since $\alpha_{i+1}(I_{i+1})=I_i$, the map $\Phi$ carries $\prod_i I_i$ into itself, so $\varprojlim{}^1I_i$ is the cokernel of the restriction of $\Phi$ to $\prod_i I_i$, and it is enough to solve $\Phi(g)=b$ with $g\in\prod_i I_i$, for each $b=(b_i)\in\prod_i I_i$. Take $g_0=0$, which lies in $I_0$, and then choose $g_{i+1}\in I_{i+1}$ recursively with
 $$
 \alpha_{i+1}(g_{i+1})=g_i-b_i.
 $$
-This solves $\Phi(g)=b$.
+Each choice is possible: $g_i\in I_i$ by induction and $b_i\in I_i$, so $g_i-b_i\in I_i=\alpha_{i+1}(I_{i+1})$. The resulting $g=(g_i)\in\prod_i I_i$ satisfies
+$$
+g_i-\alpha_{i+1}(g_{i+1})=b_i\qquad\text{for all }i,
+$$
+that is, $\Phi(g)=b$.
 
 Now let $Q_i=G_i/I_i$. The quotient tower is pro-zero: for every $i$ some sufficiently long composite
 $$
 Q_j\longrightarrow Q_i
 $$
-is zero, since the image of $G_j\to G_i$ is then exactly $I_i$. Passing to a cofinal subsequence, we may assume each bonding map $Q_{i+1}\to Q_i$ is zero. For a zero-bonding tower,
+is zero, since the image of $G_j\to G_i$ is then exactly $I_i$. Since $\varprojlim$ and $\varprojlim{}^1$ do not change when the tower is replaced by a subsequence, with the appropriate composites of the $\alpha_i$ as bonding maps (Hatcher, page 313), we may pass to a cofinal subsequence and assume each bonding map $Q_{i+1}\to Q_i$ is zero. For a zero-bonding tower,
 $$
 \Phi((q_i))=(q_i),
 $$
 so $\Phi$ is an isomorphism and $\varprojlim{}^1Q_i=0$.
 
-The short exact sequence of towers
+Taking products over $i$, the short exact sequence of towers
 $$
 0\to I_i\to G_i\to Q_i\to0
 $$
-gives the standard exact sequence for inverse limits and their first derived limits. Since both outer $\varprojlim{}^1$ terms vanish, so does the middle one:
+gives a short exact sequence of two-term complexes $0\to\prod_i I_i\to\prod_i G_i\to\prod_i Q_i\to0$ whose boundary maps are $\delta$, and the snake lemma applied to $\delta$ yields the exact sequence
+$$
+0\to\varprojlim I_i\to\varprojlim G_i\to\varprojlim Q_i\to\varprojlim{}^1I_i\to\varprojlim{}^1G_i\to\varprojlim{}^1Q_i\to0.
+$$
+Since $\varprojlim{}^1I_i=0$ and $\varprojlim{}^1Q_i=0$, exactness at $\varprojlim{}^1G_i$ forces $\varprojlim{}^1G_i=0$:
 $$
 \boxed{\varprojlim{}^1G_i=0.}
 $$
