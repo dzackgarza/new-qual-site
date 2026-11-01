@@ -74,7 +74,7 @@ colimit computations in `-6`, the subdivision bipartition in `-7`, the hypothesi
 presentability in `-8`, and the sheet count `(N/|G_v|)[G_v:G_e]=N/|G_e|` in `-9`). No correction was needed in any of
 the five.
 §2.1: 31 statements compared. Complete line-by-line reads: `E-HAT-2.1-1`, `-2`, `-3`, `-4`, `-5`, `-6`,
-`-7`, `-8`, `-9`, `-10`, `-11`, `-12`, `-13`, `-14`, `-15`, `-16`, `-17`, `-18`, `-19`, `-20`, `-21`, `-22`, `-23`, `-24`, `-25`, `-26`, `-27`,
+`-7`, `-8`, `-9`, `-10`, `-11`, `-12`, `-13`, `-14`, `-15`, `-16`, `-17`, `-18`, `-19`, `-20`, `-21`, `-22`, `-23`, `-24`, `-25`, `-26`, `-27`, `-28`,
 `-30`, `-31`. **Partial reviews, explicitly marked as such on the cards**: `-23` (first step only), `-25` (the
 formula only), `-27` (part (a) only), `-28` (the cone point only), `-29` (the homology comparison only). These five are *not* reviewed and must be finished before the block counts
 as complete.
@@ -111,7 +111,7 @@ the rank of a finite sum and the vanishing of $H^k$ and $H^\\ell$ of $S^{k+\\ell
 $\\RP^{2k}/\\RP^{2k-1}$ and $\\CP^{2k}/\\CP^{2k-1}$, `-15` from the same ring descriptions, `-16` through
 $\\dim H^i(\\cdot;\\FF_p)=b_i+t_i+t_{i+1}$, and `-18` through the nondegenerate pairing on $H^1$.
 §3.3: all 35 statements compared with the printed exercises and all agree after nine restorations of printed hints or questions that had been
-dropped (`-6`, `-10`, `-12`, `-13`, `-21`, `-23`, `-24`, `-25`, `-26`, `-27`, `-27`); `-5` says "nonempty" and `-7` "$n>0$" where the print leaves
+dropped (`-6`, `-10`, `-12`, `-13`, `-21`, `-23`, `-24`, `-25`, `-26`, `-27`, `-28`, `-27`); `-5` says "nonempty" and `-7` "$n>0$" where the print leaves
 both implicit, and `-34` writes $[M,\partial M]$ where the print abbreviates the same class as $[M]$. All 35 proofs are read:
 `-1` through `-5` by the orientation double cover and local orientation modules, `-6` by excision and the rational boundary count,
 `-7`-`-12` through the local-degree formula and the nondegenerate pairing on $H^1$, `-13` and `-29` by isotropy in the symplectic

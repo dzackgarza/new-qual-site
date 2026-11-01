@@ -32,14 +32,20 @@ audit:
   by: claude
   date: 2026-11-01
   note: >-
-    **PARTIAL review, not a complete read.** The following was not checked: the local homology away from the cone point, the boundary subspace and the invariant subsets.
-    Read line by line as far as the local homology at the cone point, which is the computation the
-    rest of the exercise is built on, and it is right: `G` is the 1-skeleton of `Delta^3`, i.e. `K_4`
-    with `4` vertices and `6` edges, so `H_1(G) = Z^{6-4+1} = Z^3`; `X` is contractible and
-    `X - {c}` deformation retracts onto `G`, so the long exact sequence of the pair collapses to
-    `H_n(X, X - {c}) = H_{n-1}(G)`, giving `Z^3` in degree `2` and zero elsewhere. Scope: the local
-    homology at the other points of `X`, the computation for the subspace `partial X` defined by the
-    vanishing local homology, and the determination of the invariant subsets were **not** read.
+    Read line by line, every stratum. `G = K_4` gives `H_1(G) = Z^{6-4+1} = Z^3`, and `X = CG` is
+    contractible with `X - {c}` retracting onto `G`, so `H_n(X, X-{c}) = H_{n-1}(G)`: `Z^3` in degree
+    `2`. An interior point of a radial edge has three incident triangles, so its link is three points
+    and its neighbourhood is `R x C(P_3)`, giving `H_n = H_{n-2}(P_3)`, i.e. `Z^2` in degree `2`. An
+    interior point of a `2`-cell has a neighbourhood `R^2`, giving `Z` in degree `2`. Points of `G` have
+    vanishing local homology: an interior edge point has a half-plane neighbourhood, and at a vertex the
+    link is the star `K_{1,3}` — three edges of `G` at the vertex plus the radial direction — which is a
+    tree and hence contractible, so the reduced homology of the link vanishes in every degree. Hence
+    `partial X = G`, and inside it an edge interior has local `H_1 = Z` (locally a line) while a vertex
+    has `H_1 = H_0(P_3) = Z^2`. The five strata are then distinguished by these invariants (ranks
+    `3, 2, 1` of local `H_2`, then ranks `2, 1` of local `H_1` within the intrinsic subspace `partial X`),
+    and each is a single orbit by tetrahedral symmetry together with moving points inside one open cell.
+    Finally, applying the invariance hypothesis to `f` and to `f^{-1}` gives `f(A) = A`, so the
+    invariant subsets are exactly the unions of the five orbits. No correction was needed.
 ---
 
 ::: {.problem}
