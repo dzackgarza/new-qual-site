@@ -31,6 +31,20 @@ audit:
   date: 2026-10-31
   note: >-
     Examined the preamble and the step claims: edge homomorphisms as multiplication by $m$, the product $T\times\RR$ for injective edge maps, and the identification of the colimit with $\QQ$ in the sequence $2,3,4,\dots$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. The general statement is the same straightening argument as the previous
+    exercise and is correct: with injective edge maps `k\mapsto mk` the lift is `t\mapsto mt+c`,
+    a homeomorphism, so coordinates on the vertex lines can be propagated from a root along the
+    Bass--Serre tree and the tree of lines and strips is the product `T\times\RR`. The two
+    computations are right: for the ray with maps `x2, x3, x4, ...` the composite from the first
+    copy to the `k`th is `\times k!`, so `\phi_k(r)=r/k!` is compatible and the colimit is
+    `\bigcup_k \frac1{k!}\ZZ=\QQ`, since every denominator divides some `k!`; and replacing every
+    map by `\times2` gives `\bigcup_k 2^{-k}\ZZ=\ZZ[1/2]`. One point worth keeping explicit, and it
+    is in the card: the colimit description relies on the underlying graph being a tree, so that
+    the maximal tree is the whole graph and there are no stable letters. No correction was needed.
 ---
 
 ::: {.problem}

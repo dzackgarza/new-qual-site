@@ -31,6 +31,20 @@ audit:
   date: 2026-10-31
   note: >-
     Examined the preamble, the step claims and the construction of the tree of spaces; the presentation and the product structure were checked, the gluing details of the strips only at the level of the step claims.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. The presentation is right: with the loop edge `e`, the HNN relation
+    `b\iota_0(c)b^{-1}=\iota_1(c)` becomes `bab^{-1}=a^2`, i.e. the relator `bab^{-1}a^{-2}`. The
+    valence count is right, and the card now says where the two numbers come from: vertices of the
+    Bass--Serre tree are the cosets `G/A` and edges the cosets `G/C`, so the number of edge-ends at
+    a vertex is `[A:\iota_0(C)]+[A:\iota_1(C)]=1+2=3`. The straightening argument is the correct
+    one — a degree-`m` self-map of `S^1` lifts to `t\mapsto mt+c`, a homeomorphism of the universal
+    line, so each boundary attachment can be made the identity in the `\RR` coordinate, and the tree
+    is what makes the choices consistent — giving `T\times\RR` with `T` trivalent. Cited and not
+    proved here: the normal-form theorem that the incidence graph of the lifted pieces is a tree,
+    which the card names. No correction was needed.
 ---
 
 ::: {.problem}

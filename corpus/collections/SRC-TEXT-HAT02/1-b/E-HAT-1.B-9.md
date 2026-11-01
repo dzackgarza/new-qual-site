@@ -31,6 +31,21 @@ audit:
   date: 2026-10-31
   note: >-
     Examined the preamble and the step claims: a common multiple $N$ of the group orders, the $N$-sheeted covers of the vertex spaces, and the finite-index free subgroup they assemble.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. The construction is correct and the counting is the crux, which the card
+    gets right: with `N` a common multiple of the orders, take `N/|G_v|` copies of `EG_v` over each
+    vertex space and `N/|G_e|` copies of `EG_e\times I` over each edge cylinder, so both pieces
+    have total degree `N`; and over one incidence the `N/|G_v|` copies of `EG_v` contribute
+    `(N/|G_v|)[G_v:G_e]=N/|G_e|` boundary copies of `EG_e`, exactly matching the cylinders, the same
+    at the other endpoint. Then every component upstairs has contractible vertex and edge spaces,
+    so it is homotopy equivalent to a graph and has free fundamental group, and a connected
+    component gives a connected cover of some finite degree `d\le N`, i.e. a free subgroup of index
+    `d`. Handled correctly rather than glossed: the cover `\widehat K` need not be connected, which
+    is why the card passes to a component and gets index `d\le N`. The converse is cited from
+    Scott--Wall and is marked as a citation in the statement. No correction was needed.
 ---
 
 ::: {.problem}

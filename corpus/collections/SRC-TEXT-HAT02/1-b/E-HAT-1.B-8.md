@@ -27,6 +27,20 @@ audit:
   date: 2026-10-31
   note: >-
     Examined the preamble and the step claims: generators taken from the vertex groups together with one element per edge outside a maximal tree, and relations for each edge group.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Both statements are right, and the hypotheses are stated correctly, which
+    matters here: finite generation needs only finitely many vertex groups, but finite presentation
+    also needs the *edge* groups to be finitely generated, and the card assumes exactly that in the
+    second step and then observes that a finitely presented edge group is in particular finitely
+    generated. The presentation used is the standard one for a graph of groups with a maximal tree:
+    the union of the vertex generating sets plus one stable letter per edge outside the tree, with
+    the vertex relators, the tree-edge identifications, and the HNN relations for the remaining
+    edges; finitely many of each because the graph is finite, and the relations on a generating set
+    of each edge group suffice for the whole edge group because both endpoint maps are
+    homomorphisms. No correction was needed.
 ---
 
 ::: {.problem}
