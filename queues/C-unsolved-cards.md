@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem cards
 
-30 problem cards have no solution section. These are
+29 problem cards have no solution section. These are
 the cards issue #2 targets: write a Lamport-style structured proof for each.
 
 Regenerate with `just unsolved` after a card gains a solution. CI publishes
@@ -10,11 +10,10 @@ regeneration, and writing the solution removes the line.
 
 ## Count
 
-- Problems: 30
+- Problems: 29
 
-## Problems (30)
+## Problems (29)
 
-- [ ] E-SS8.PR-9 — "Arithmetic-geometric mean and Gauss's elliptic integral"
 - [ ] E-SS9.PR-2 — "Sine series for the Weierstrass elliptic function"
 - [ ] E-SS9.PR-3 — "Inversion of an elliptic integral by the Weierstrass function"
 - [ ] P-1AUEA — "Finitely generated projective modules over a Noetherian local ring are free"
