@@ -21,7 +21,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
-
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct. Surjectivity: a triple map `f : (D^n, S^{n-1}, s_0) -> (X, A, x_0)` lifts
+    uniquely through `p` because `D^n` is simply connected, and since `f(S^{n-1}) subset A` the lift
+    carries `S^{n-1}` into `p^{-1}(A) = A~`, so it represents a relative class upstairs. Injectivity: a
+    relative homotopy of the projected maps lifts uniquely once its value at `(s_0,0)` is fixed, its two
+    ends are the prescribed lifts by uniqueness, and its boundary stays in `p^{-1}(A)`; hence the two
+    lifts were already relatively homotopic. The hypothesis `n > 1` is exactly what supplies the simple
+    connectivity of `D^n` used in both halves. No correction was needed.
 ---
 
 ::: {.problem}

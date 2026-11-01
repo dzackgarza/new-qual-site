@@ -21,7 +21,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
-
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct, and it separates the two things that have to be checked: that the collar
+    construction depends only on the relative class (reparametrization and width, standard), and that the
+    resulting maps are compatible with the rest of the long exact sequence. The inverse is `beta` along the
+    reversed path and the cocycle is `beta_{gamma eta} = beta_gamma beta_eta` with the stated path order;
+    concatenation and homotopy rel endpoints behave as claimed. The naturality `partial beta_gamma =
+    beta_gamma partial` with the boundary map into `pi_{n-1}(A)` is the point that makes the relative
+    theory work, and it is stated. The closing remark about `A` path-connected and the `pi_1(A)`-ambiguity
+    matches the absolute case. No correction was needed.
 ---
 
 ::: {.problem}
