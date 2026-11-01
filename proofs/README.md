@@ -159,51 +159,47 @@ sage proofs/cards/DeltaComplexHomology.sage
 
 ## Toolchain: what these certificates were elaborated with, and the shared-image block
 
-### The shared research image (target baseline): present, but Mathlib is not built there
+### The shared research image: provisioned, and the baseline for these certificates
 
-Inspected through the launcher that the passing Sage checks use,
-`$HOME/.udocker/bin/proot-x86_64 -R $HOME/sage-image/rootfs -b /proc -b /dev -b <repo>:/work`:
+The image owner's provisioning script was run inside the shared rootfs through the same
+launcher the Sage checks use, and it is the same implementation the image build runs, not a
+local installer:
 
-| Item | Value found inside the rootfs |
-| --- | --- |
-| Canonical launchers | `/opt/elan/bin/{elan,lake,lean,leanc,leanchecker}` — present |
-| Canonical package layout | `/opt/lake-packages/<name>@<rev>/` — present (24 entries) |
-| Project toolchain pin | `/repos/lean-categories/lean-toolchain` = `leanprover/lean4:v4.33.0` |
-| Effective Lean | 4.33.0, commit `d8b18978322de05a8f3dba51ef03cf5461676c17`, resolved by elan's *directory override* from that `lean-toolchain`; running the same binary from any other working directory fails with "no default toolchain configured" |
-| Mathlib pin | `db584cd6d46c92f209a44c0f1c829460d327499d`, from `/repos/lean-categories/lake-manifest.json` |
-| Mathlib build artifacts | **absent**: `mathlib@db584cd6…` has no `.lake` directory at all |
+```
+proot-x86_64 -R $HOME/sage-image/rootfs -b /proc -b /dev \
+  -b provision-script.sh:/opt/provision-lean-packages.sh -w / \
+  /bin/bash /opt/provision-lean-packages.sh /repos
+```
 
-Consequence, verified by running it: `lean` on that baseline refuses the files at line 1 with
-`unknown module prefix 'Mathlib'`, listing the `/opt/lake-packages/*/.lake/build/lib/lean`
-entries that exist for the dependencies but none for Mathlib. So the six certificates below
-**cannot be re-elaborated on the shared image as provisioned** — the block is a missing Mathlib
-build, not an API difference, and no statement needs weakening to accommodate it. Closing it
-means building Mathlib inside `/repos/lean-categories` with its own `lake` (the canonical
-dependency setup, already pinned by that `lake-manifest.json`); that build was not run here
-and no toolchain was installed.
+- Artifact bytes: `sha256 47b2953961fcdc19b5b0c5b75dedae8b627ffab98bb8413d59654b477d750f33`,
+  7651 bytes, from Sage fork local commit `e4ae7ac79c5172711d48ed69d94b816a5289ba56`. The
+  delivered attachment carried a 1093-byte instruction preamble ahead of `#!/usr/bin/env bash`;
+  the hash is of the script bytes, and those bytes are what was bound and run.
+- Outcome: toolchain `leanprover/lean4:v4.33.0` already installed; Mathlib retrieved from the
+  official cache and built, `Build completed successfully (8705 jobs)`. No new toolchain, no
+  second Mathlib source.
+- **Reported, not fixed:** `lean_categories` is pinned at `eea5c7f3bce7a1d2fdfbd58840c4d4bd75c9a8bc`
+  by `lean-cas-dsl` and at `82d1370de372a00a86391b74fc2566c9547dfcb6` by
+  `lean-cas-dsl-leaf-contracts`, both resolving `/.local/share/lean/v4.33.0/packages`. The
+  script reports it, links neither revision, and exits 1; `lean-cas-dsl-leaf-contracts` then
+  fails its own manifest check. That project is **not** fixed and is not claimed to be.
 
-### Pinned-source API check against the canonical Mathlib (`db584cd6`)
+Baseline these certificates now rest on: `/repos/lean-categories`, Lean `4.33.0`
+(commit `d8b18978322de05a8f3dba51ef03cf5461676c17`) resolved by elan's directory override from
+that checkout's `lean-toolchain`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Verified:
+`lake env lean` there imports `Mathlib` and sees `TensorProduct.prodLeft` with the same
+signature the proofs use.
 
-The canonical Mathlib is present in that rootfs as **source** (no build), so the names these
-proofs depend on can be checked against the revision they will have to be elaborated with.
-Grepping `…/opt/lake-packages/mathlib@db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib`:
+**All six proof files re-elaborate on that baseline, unchanged**, with zero occurrences of
+`sorryAx` and axiom lists `propext`, `Classical.choice`, `Quot.sound` — so these certificates
+are shared-image acceptance, not merely this VM's `/opt` provision. The three applications in
+section 5b remain open; they can now be worked on this baseline.
 
-| Name | Present at `db584cd6` |
-| --- | --- |
-| `TensorProduct.prodLeft`, `prodLeft_tmul` | yes — `LinearAlgebra/TensorProduct/Prod.lean` |
-| `LinearMap.ker_prodMap` | yes |
-| `Submodule.map_comap_eq_self` | yes |
-| `Submodule.torsionBy`, `mem_torsionBy_iff` | yes — `Algebra/Module/Torsion/Basic.lean` |
-| `Submodule.torsion_eq_bot`, `isTorsionFree_iff_torsion_eq_bot` | yes, but in `RingTheory/Flat/TorsionFree.lean`, **not** in `Algebra/Module/Torsion/Basic.lean` as in this VM's tree — which is why the VM attempt to cite `Submodule.torsion_eq_bot` failed and the proof had to go through `inferInstance` |
-| `Module.Flat.rTensor_preserves_injective_linearMap` | yes |
-| `Module.free_of_finite_type_torsion_free` | yes |
-| `PreservesColimits (tensorLeft A)` | yes — `CategoryTheory/Monoidal/Closed/Basic.lean` |
-| `AlgebraicTopology/ExtraDegeneracy.lean` | present, so `extraDegeneracy` and `ExtraDegeneracy.homotopyEquiv` have a home at the canonical revision |
+### Where the certificates were first produced (superseded by the section above)
 
-Not yet checked at the pinned revision, and to be checked before the re-run rather than
-assumed: `DirectSum.toModule`, `LinearMap.single`, `Finset.sum_pi_single` (the three used by
-`FamilyQuotient.lean`) — the greps above matched these names only in incidental use sites, not
-at their definitions.
+They were originally elaborated by this VM's `/opt/lean/bin/lean` (4.33.1, commit
+`819816b2e0`) against `/opt/mathlib` (image Mathlib commit `0df444a36`), image
+`base_sha256 4908fb59`. That is superseded: the canonical run above reproduces every file.
 
 ### Where the certificates below actually come from
 
