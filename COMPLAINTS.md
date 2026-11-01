@@ -230,3 +230,31 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   what `tangent-char-zero` uses. Recorded on the card as a `source-checked` event. Still open: the
   precise singularity condition (irrelevant for smooth $X$) and the body of the paper, and — separately
   — the re-derivation of steps `s1`--`s13`, which no event in this pass supersedes.
+## The five `ad-text-*` nodes that cannot be read: their books are not in the repository
+
+- **Object and need:** the `ad-text-hart77`, `ad-text-hun74`, `ad-text-smi`, `ad-text-mun00` and
+  `ad-text-hk71-locators` nodes of `TODO.md`, each of which requires reading every card of its
+  collection against the printed book.
+
+- **Observed evidence:** the repository holds full text for exactly two of the textbooks the corpus
+  is drawn from. `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` (398 pages, OCR'd) and
+  `tmp/hat/AT.pdf` with its extracted text `tmp/hat/AT.txt` (8.1 MB / 1.8 MB). For Hartshorne,
+  Hungerford, Smith, Munkres and Hilton–Kirby there is no book: a search of `assets/attachments` for
+  PDFs over 1 MB returns no title matching any of them, and the only Hartshorne file present is
+  `Hartshorne_Solutions.pdf`, 29 pages of worked solutions, which is not the book and cannot certify
+  that a card matches a printed statement.
+
+- **Impact and owner:** the five nodes stay open for a reason that is not effort. Reading
+  "against the book" is the whole required result, and a card cannot be checked against a page that
+  is not there. `audited-deployment` depends on all five.
+
+- **Uncertainty:** verified for this checkout — the searches above are reproducible and the file list
+  is complete. Not verified: whether the books exist elsewhere on this machine outside the project
+  (the owner's rule is that the project's own assets are the source of record, and copying a
+  personal library into the repository is a decision for the owner, not for an agent). This entry
+  does not claim the books are unavailable anywhere, only that they are absent here.
+
+- **Repair:** obtain the five books, or make a decision that those nodes are read against a
+  different witness (a solutions manual, a table of contents plus a statement database) and say so in
+  the node. The two nodes whose books *are* present — `ad-text-hat02` and `ad-text-ss03-gaps` — have
+  been started here and are executable.
