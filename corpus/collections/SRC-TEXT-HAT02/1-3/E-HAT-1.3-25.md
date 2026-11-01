@@ -28,6 +28,22 @@ audit:
   date: 2026-10-31
   note: >-
     Read the step claims: freeness of the $\ZZ$-action, $\pi_1(X/\ZZ)$, non-Hausdorffness at the two axes, and the four $S^1\times\RR$ pieces. Not every line checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct throughout. Freeness is checked directly from `2^n x = x` and
+    `2^{-n} y = y`, and the covering-space condition from an interval of ratio less than two, which
+    is exactly what makes `2^n I` disjoint from `I`; the `x = 0` case uses the second coordinate with
+    the dilation `2^{-n}`. For `pi_1` the exact sequence `1 -> Z -> pi_1(X/Z) -> Z -> 1` of the normal
+    cover is right, and the extension is split with commuting generators: the linear map has
+    determinant `1`, and more precisely it is homotopic to the identity through invertible linear
+    maps (`(1-t) phi + t id` has `(1-t)2 + t` and `(1-t)/2 + t` on the two coordinates, both
+    positive), so it acts as the identity on `pi_1(X) = Z`, whence `t a t^{-1} = a` and
+    `pi_1(X/Z) = <a,t | [a,t]> = Z^2`. Non-Hausdorffness is proved by the saturation argument with
+    `z_n = (1, 2^{-n})` and `phi^{-n}(z_n) = (2^{-n}, 1)`. The four pieces are right: on a half-plane
+    the coordinates `(log|y|, xy)` linearise the action to a translation by `log 2` in the first
+    coordinate, so each half-plane quotient is `S^1 x R`. No correction was needed.
 ---
 
 ::: {.problem}
