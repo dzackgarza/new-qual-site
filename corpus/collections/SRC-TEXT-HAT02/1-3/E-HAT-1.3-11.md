@@ -28,6 +28,26 @@ audit:
   date: 2026-10-31
   note: >-
     Read the step claims: the theta and dumbbell graphs with the common two-sheeted cover built from two circles and two joining edges, the involution and its two quotients. Not every line checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. The construction is correct and so is the non-existence half. `Z` has four
+    vertices and six edges; the involution `alpha` pairs `N_1` with `S_2` and `S_1` with `N_2` and
+    carries the two arcs of `C_1` to the two of `C_2`, so the four arcs fall into two edge orbits
+    and the joining edges into one, giving two vertex orbits and three edge orbits between them,
+    i.e. the theta graph; `beta` pairs `N_i` with `S_i` and swaps the arcs within each circle,
+    giving a loop at each of the two quotient vertices plus the joining edge, i.e. the dumbbell.
+    Both actions are free on vertices and on edge interiors, so both quotients are two-sheeted
+    coverings. For the non-existence: both graphs have exactly two vertices of valence three, so
+    a covering of a connected `W` has degree `n` with `2 = n` times the number of valence-three
+    vertices of `W`; that number divides `2`, `n = 2` would leave `W` with a single odd-valence
+    vertex, impossible for a finite graph since the degrees sum to twice the edge count, so `n = 1`.
+    Separating versus non-separating edges then distinguishes `X_1` from `X_2`, and no connected
+    common base exists. The convention issue is handled correctly rather than hidden: under
+    Hatcher's non-surjective covering convention `X_1` and `X_2` do have the disconnected common
+    target `X_1` disjoint-union `X_2`, which is why the card's remark states the intended connected
+    version. No correction was needed.
 ---
 
 ::: {.problem}
