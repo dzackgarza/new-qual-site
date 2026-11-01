@@ -1590,6 +1590,102 @@ theorem singular_chain_formula {M : ℕ} :
   refine Finset.sum_congr rfl fun π _ => ?_
   rw [map_zsmul, FreeAbelianGroup.lift_apply_of, chainSingular_chainOf_peel]
 
+/-! ## 16. An arbitrary singular simplex `σ : Δⁿ → X`
+
+The affine maps are corestricted to the standard-simplex subtype by `affineMap_mem` (with a junk
+fallback vertex, so that the map is total on chains), packaged with their continuity, composed with
+`σ`, and pushed through `TopCat.toSSet` and the maintained singular chain complex. The left side stays
+the *transported recursion* — `S λ = b_λ (S ∂λ)` read through the barycentres and then through `σ` —
+not a separately defined formula.
+-/
+
+/-- The vertex function of a chain, valued in the standard simplex: the barycentre of the `k`-th face,
+with a fixed vertex as junk fallback off the support. -/
+noncomputable def chainVertex {M : ℕ} (c : List (Finset (Fin (M+1)))) (k : Fin (M+1)) :
+    Fin (M+1) → ℝ :=
+  if (c.getD k.val ∅).Nonempty then baryWeight (c.getD k.val ∅) else vertexWeight (0 : Fin (M+1))
+
+theorem chainVertex_mem {M : ℕ} (c : List (Finset (Fin (M+1)))) (k : Fin (M+1)) :
+    chainVertex c k ∈ stdSimplex ℝ (Fin (M+1)) := by
+  rw [chainVertex]
+  split
+  · next h => exact baryWeight_mem h
+  · exact vertexWeight_mem 0
+
+/-- **The chain's affine map, corestricted to the standard simplex.** -/
+noncomputable def chainAffineOn {M : ℕ} (c : List (Finset (Fin (M+1)))) :
+    C(↥(stdSimplex ℝ (Fin (M+1))), ↥(stdSimplex ℝ (Fin (M+1)))) where
+  toFun x := ⟨affineMap M (chainVertex c) x.1, affineMap_mem (fun k => chainVertex_mem c k) x.2⟩
+  continuous_toFun := Continuous.subtype_mk ((continuous_affineMap _).comp continuous_subtype_val) _
+
+/-- On the recursion's chains the corestricted map is the barycentric affine simplex. -/
+theorem chainAffineOn_chainOf_peel {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
+    chainAffineOn (chainOf (Finset.univ : Finset (Fin (M+1))) (peel π)) = barySimplexOn π := by
+  have hface : ∀ k : Fin (M+1),
+      (chainOf (Finset.univ : Finset (Fin (M+1))) (peel π)).getD k.val ∅ = descFace π k := by
+    intro k
+    rw [chainOf_peel_eq_ofFn_descFace, List.getD_eq_getElem?_getD, List.getElem?_ofFn,
+      dif_pos k.isLt]
+    simp
+  have hvert : chainVertex (chainOf (Finset.univ : Finset (Fin (M+1))) (peel π))
+      = fun k => descVertex π k := by
+    funext k
+    rw [chainVertex, hface k, if_pos (descFace_nonempty π k)]
+    rfl
+  refine ContinuousMap.ext fun x => ?_
+  simp only [chainAffineOn, barySimplexOn, hvert]
+
+/-- The π-summand of the transported recursion, as a singular `M`-simplex of `X`: `σ ∘ Δ̄_π`. -/
+noncomputable def barySigma {M : ℕ} {X : Type} [TopologicalSpace X]
+    (σ : C(↥(stdSimplex ℝ (Fin (M+1))), X)) (π : Equiv.Perm (Fin (M+1))) :
+    (TopCat.toSSet.obj (TopCat.of X)).obj (Opposite.op (SimplexCategory.mk M)) :=
+  (TopCat.toSSetObjEquiv (TopCat.of X) (Opposite.op (SimplexCategory.mk M))).symm
+    (σ.comp (barySimplexOn π))
+
+/-- The `c`-summand of the transported recursion, as a singular `M`-simplex of `X`. -/
+noncomputable def chainSigma {M : ℕ} {X : Type} [TopologicalSpace X]
+    (σ : C(↥(stdSimplex ℝ (Fin (M+1))), X)) (c : List (Finset (Fin (M+1)))) :
+    (TopCat.toSSet.obj (TopCat.of X)).obj (Opposite.op (SimplexCategory.mk M)) :=
+  (TopCat.toSSetObjEquiv (TopCat.of X) (Opposite.op (SimplexCategory.mk M))).symm
+    (σ.comp (chainAffineOn c))
+
+theorem chainSigma_chainOf_peel {M : ℕ} {X : Type} [TopologicalSpace X]
+    (σ : C(↥(stdSimplex ℝ (Fin (M+1))), X)) (π : Equiv.Perm (Fin (M+1))) :
+    chainSigma σ (chainOf (Finset.univ : Finset (Fin (M+1))) (peel π)) = barySigma σ π := by
+  simp only [chainSigma, barySigma, chainAffineOn_chainOf_peel]
+
+/-- Read back, the `π`-summand is `σ ∘ Δ̄_π`. -/
+theorem toSSetObjEquiv_barySigma {M : ℕ} {X : Type} [TopologicalSpace X]
+    (σ : C(↥(stdSimplex ℝ (Fin (M+1))), X)) (π : Equiv.Perm (Fin (M+1))) :
+    (TopCat.toSSetObjEquiv (TopCat.of X) (Opposite.op (SimplexCategory.mk M))) (barySigma σ π)
+      = σ.comp (barySimplexOn π) :=
+  Equiv.apply_symm_apply _ _
+
+/-- Read back, the `c`-summand is `σ` composed with the affine map of that chain of faces. -/
+theorem toSSetObjEquiv_chainSigma {M : ℕ} {X : Type} [TopologicalSpace X]
+    (σ : C(↥(stdSimplex ℝ (Fin (M+1))), X)) (c : List (Finset (Fin (M+1)))) :
+    (TopCat.toSSetObjEquiv (TopCat.of X) (Opposite.op (SimplexCategory.mk M))) (chainSigma σ c)
+      = σ.comp (chainAffineOn c) :=
+  Equiv.apply_symm_apply _ _
+
+/-- **Hatcher's operator formula for an arbitrary singular simplex `σ : Δⁿ → X`.** The left side is
+the recursion `S λ = b_λ (S ∂λ)` transported: each chain of faces is read as its affine map, restricted
+to the standard simplex, composed with `σ`, and coprojected into the maintained singular chain complex.
+The right side is the displayed closed formula, one summand per permutation. -/
+theorem hatcher_formula_arbitrary {M : ℕ} {X : Type} [TopologicalSpace X]
+    (σ : C(↥(stdSimplex ℝ (Fin (M+1))), X)) :
+    FreeAbelianGroup.lift (fun c : List (Finset (Fin (M+1))) =>
+        singularChainIota (TopCat.toSSet.obj (TopCat.of X)) M (chainSigma σ c))
+        (subdiv (Finset.univ : Finset (Fin (M+1))))
+      = ∑ π : Equiv.Perm (Fin (M+1)),
+          ((-1 : ℤ) ^ (M * (M + 1) / 2) * ((π.sign : ℤˣ) : ℤ)) •
+            singularChainIota (TopCat.toSSet.obj (TopCat.of X)) M (barySigma σ π) := by
+  rw [subdiv_univ_eq_sum_perm, map_sum]
+  simp only [show (M + 1) * (M + 1 - 1) / 2 = M * (M + 1) / 2 from by
+    rw [Nat.add_sub_cancel, Nat.mul_comm]]
+  refine Finset.sum_congr rfl fun π _ => ?_
+  rw [map_zsmul, FreeAbelianGroup.lift_apply_of, chainSigma_chainOf_peel]
+
 end BarySubdiv
 
 #print axioms BarySubdiv.stepSign_eq_pow_stepExp
@@ -1645,3 +1741,8 @@ end BarySubdiv
 #print axioms BarySubdiv.toSSetObjEquiv_barySimplexSingular
 #print axioms BarySubdiv.chainSingular_chainOf_peel
 #print axioms BarySubdiv.singular_chain_formula
+#print axioms BarySubdiv.chainAffineOn_chainOf_peel
+#print axioms BarySubdiv.chainSigma_chainOf_peel
+#print axioms BarySubdiv.toSSetObjEquiv_barySigma
+#print axioms BarySubdiv.toSSetObjEquiv_chainSigma
+#print axioms BarySubdiv.hatcher_formula_arbitrary
