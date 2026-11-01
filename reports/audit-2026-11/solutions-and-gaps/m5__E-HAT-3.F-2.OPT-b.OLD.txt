@@ -1,0 +1,5 @@
+The short exact sequence of towers
+$$
+0\to I_i\to G_i\to Q_i\to0
+$$
+gives the standard exact sequence for inverse limits and their first derived limits. Since both outer $\varprojlim{}^1$ terms vanish, so does the middle one:

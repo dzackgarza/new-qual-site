@@ -1,0 +1,9 @@
+Hence the tower $(I_i)$ has surjective bonding maps, so its $\varprojlim{}^1$ vanishes. Precisely, since $\alpha_{i+1}(I_{i+1})=I_i$, the map $\Phi$ carries $\prod_i I_i$ into itself, so $\varprojlim{}^1I_i$ is the cokernel of the restriction of $\Phi$ to $\prod_i I_i$, and it is enough to solve $\Phi(g)=b$ with $g\in\prod_i I_i$, for each $b=(b_i)\in\prod_i I_i$. Take $g_0=0$, which lies in $I_0$, and then choose $g_{i+1}\in I_{i+1}$ recursively with
+$$
+\alpha_{i+1}(g_{i+1})=g_i-b_i.
+$$
+Each choice is possible: $g_i\in I_i$ by induction and $b_i\in I_i$, so $g_i-b_i\in I_i=\alpha_{i+1}(I_{i+1})$. The resulting $g=(g_i)\in\prod_i I_i$ satisfies
+$$
+g_i-\alpha_{i+1}(g_{i+1})=b_i\qquad\text{for all }i,
+$$
+that is, $\Phi(g)=b$.

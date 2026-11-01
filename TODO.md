@@ -141,6 +141,12 @@ statements were compared with the printed exercises on 2026-11-01 and the necess
 hints and pointers, printed sentences and parentheticals, and four halved "iff"s (`E-HAT-3.F-9(a)`, `E-HAT-4.1-19`,
 `E-HAT-4.1-22`, `E-HAT-4.3-22`). Proof repairs applied where a proof was missing or wrong: `E-HAT-3.F-2`, `-3`, `-7`,
 `E-HAT-3.H-2`, `-4`, `-5`, and `E-HAT-4.3-24`, which had no proof at all.
+`E-HAT-3.C-16`'s reduction question is settled as far as the card's own construction goes: the mod-$p$
+reductions are the orbits of $\left(\FF_p^\times\right)^{\NN}$ acting on the reduced structure constants, the
+support is an invariant, a form with no structure constant divisible by $p$ reduces to $\FF_p[x]$, and the
+family $m_{ij}=p^{e_{ij}}$ is classified by its support. What remains open there, and is stated on the card
+and in `COMPLAINTS.md`, is the orbit set for a general fixed support.
+Raw audit reports are preserved under `reports/audit-2026-11/` with a status table.
 **Proofs still to read, by card, in that same slice (97 cards):** `3-f` exercises 4–9 (6); `4-a/E-HAT-4.A-4` and `-5`;
 `4-l/E-HAT-4.L-4` and `-5`; `4-1` exercises 10–23 (14); `4-2` exercises 1–39 (39); `4-3` exercises 1–24 (24), of which
 `-24` now has its replacement proof but is counted here until that proof is read; `4-d` exercises 1–10 (10). Statement

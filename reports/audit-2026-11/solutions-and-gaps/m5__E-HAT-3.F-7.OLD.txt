@@ -1,0 +1,22 @@
+Choose Moore spaces functorially enough for the given short exact sequence
+$$
+0\to A\xrightarrow{i}B\xrightarrow{q}C\to0.
+$$
+For $n\ge2$, realize $i$ by a cellular map
+$$
+M(A,n)\longrightarrow M(B,n)
+$$
+inducing $i$ on the only nonzero reduced homology group. Replace it by a mapping-cylinder inclusion, so we may regard $M(A,n)$ as a subcomplex of $M(B,n)$. Let
+$$
+Q=M(B,n)/M(A,n).
+$$
+The reduced homology long exact sequence of the pair gives
+$$
+\widetilde H_j(Q)=0\quad(j\ne n),
+\qquad
+\widetilde H_n(Q)\cong B/A\cong C.
+$$
+The spaces in the pair are $(n-1)$-connected, so their quotient $Q$ is $(n-1)$-connected as well. Thus $Q$ is a Moore space $M(C,n)$, so
+$$
+M(C,n)\simeq M(B,n)/M(A,n).
+$$

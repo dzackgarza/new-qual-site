@@ -1,0 +1,9 @@
+Taking products over $i$, the short exact sequence of towers
+$$
+0\to I_i\to G_i\to Q_i\to0
+$$
+gives a short exact sequence of two-term complexes $0\to\prod_i I_i\to\prod_i G_i\to\prod_i Q_i\to0$ whose boundary maps are $\delta$, and the snake lemma applied to $\delta$ yields the exact sequence
+$$
+0\to\varprojlim I_i\to\varprojlim G_i\to\varprojlim Q_i\to\varprojlim{}^1I_i\to\varprojlim{}^1G_i\to\varprojlim{}^1Q_i\to0.
+$$
+Since $\varprojlim{}^1I_i=0$ and $\varprojlim{}^1Q_i=0$, exactness at $\varprojlim{}^1G_i$ forces $\varprojlim{}^1G_i=0$:

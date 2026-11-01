@@ -1,0 +1,5 @@
+Hence the tower $(I_i)$ has surjective bonding maps, so its $\varprojlim{}^1$ vanishes: given $(b_i)\in\prod I_i$, choose $g_0$ arbitrarily and then recursively choose $g_{i+1}$ with
+$$
+\alpha_{i+1}(g_{i+1})=g_i-b_i.
+$$
+This solves $\Phi(g)=b$.

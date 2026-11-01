@@ -56,6 +56,24 @@ audit:
     converse — any divisor cocycle of valuations lifts to an integral form whose reduction vanishes
     exactly where $e_{ij}>0$. The classification of the reductions up to unit rescaling is recorded
     as open, not as proved.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    The reduction question left open by the previous note is now settled for the family the card
+    constructs, and the residual is stated exactly. Added: Proposition 1, that the isomorphism classes
+    of reductions are the orbits of (F_p^x)^N acting by m_ij -> m_ij u_i u_j / u_{i+j}, with the support
+    of the reduced structure constants an invariant (zeros cannot be rescaled away); Proposition 2,
+    that if no m_ij is divisible by p then a rescaling by u_n = q_n^{-1} makes every structure constant
+    1, so the reduction is the polynomial Hopf algebra F_p[x], and that p | m_ij forces p | binom(i+j,i),
+    so nothing vanishes in degrees below p*d; Proposition 3, that the divided-power reduction is not
+    isomorphic to F_p[x], since gamma_1^p = p! gamma_p = 0 there while x^p is nonzero; Proposition 4,
+    that for m_ij = p^{e_ij} the reductions are classified by the support S = {e_ij > 0}, one for each
+    admissible S. Still open and said so: for a general form the residues off the support need not be
+    normalisable to 1 -- the constraints u_{i+j} = m_ij u_i u_j on the complement graph are satisfiable
+    exactly when the product of the residues around each cycle is 1 -- so deciding the orbit set for a
+    fixed support is a 1-cocycle computation not carried out here. The refuted claim remains refuted:
+    the valuations determine the support, not the reduction.
 ---
 
 ::: {.problem}
@@ -162,7 +180,37 @@ and the additive cocycle relation
 $$
 e_{ij}+e_{i+j,k}=e_{jk}+e_{i,j+k},
 $$
-because divisibility and the product cocycle pass to valuations. Here $v_p(0)=\infty$, so a zero coproduct coefficient imposes no upper bound. But $e_{ij}$ records only whether $\overline{m_{ij}}$ vanishes: $m_{ij}=p$ and $m_{ij}=p^2$ reduce alike, and when $e_{ij}=0$ the reduction still depends on the residue in $\FF_p^\times$. Likewise a rescaling $x_n\mapsto u_nx_n$ with $u_n\in\FF_p^\times$ changes $\overline{m_{ij}}$ to $\overline{m_{ij}}u_iu_j/u_{i+j}$, so forms with different residues can have isomorphic reductions. The valuations therefore give the *vanishing pattern* of the reduction, a necessary invariant, not the mod-$p$ Hopf algebra itself; the classification of the reductions up to the unit action is not settled here.
+because divisibility and the product cocycle pass to valuations. Here $v_p(0)=\infty$, so a zero coproduct coefficient imposes no upper bound. But $e_{ij}$ records only whether $\overline{m_{ij}}$ vanishes: $m_{ij}=p$ and $m_{ij}=p^2$ reduce alike, and when $e_{ij}=0$ the reduction still depends on the residue in $\FF_p^\times$. Likewise a rescaling $x_n\mapsto u_nx_n$ with $u_n\in\FF_p^\times$ changes $\overline{m_{ij}}$ to $\overline{m_{ij}}u_iu_j/u_{i+j}$, so forms with different residues can have isomorphic reductions. The valuations therefore give the *vanishing pattern* of the reduction, a necessary invariant, not the mod-$p$ Hopf algebra itself.
+
+### The classification of the reductions
+
+Write $\bar x_n$ for the image of $x_n=q_nt^n$ in $B=A\otimes\FF_p$, so that $\{\bar x_n\}$ is an $\FF_p$-basis with $\deg\bar x_n=nd$ and $\bar x_0=1$. Since $A_n$ is free of rank one, $B$ has one basis vector in each degree $nd$ and none elsewhere. An isomorphism of graded Hopf algebras $B\to B'$ is therefore given by $\bar x_n\mapsto u_n\bar y_n$ with $u_n\in\FF_p^\times$ and $u_0=1$, and it carries the structure constants to
+$$
+\bar m_{ij}\longmapsto \bar m_{ij}\,\frac{u_iu_j}{u_{i+j}},
+\qquad
+\overline{b_{ij}/m_{ij}}\longmapsto \overline{b_{ij}/m_{ij}}\,\frac{u_{i+j}}{u_iu_j},
+$$
+the two transformations being inverse, so it is enough to record the product constants. Normalise the basis once and for all by $q_1=1$, which leaves every $m_{ij}$ unchanged because $q_n\mapsto q_nc^n$ does not move $m_{ij}=q_iq_j/q_{i+j}$.
+
+**Proposition 1 (the orbit space).** *The isomorphism classes of reductions are the orbits of the action of $(\FF_p^\times)^{\NN}$ on the reduced cocycles $(\bar m_{ij})$, and the support $\{(i,j):\bar m_{ij}=0\}$ is an isomorphism invariant.*
+
+*Proof.* The action displayed above is the action of the change of basis, and two bases of $B$ differ by such a $(u_n)$, so the orbits are exactly the isomorphism classes. If $\bar m_{ij}=0$ then $\bar m_{ij}u_iu_j/u_{i+j}=0$ for every choice of units, so a zero structure constant cannot be removed; hence the support is invariant. $\square$
+
+**Proposition 2 (no vanishing below degree $p$).** *If $p\nmid m_{ij}$ for all $i,j$ then $B\cong\FF_p[x]$ with $x=\bar x_1$ of degree $d$. More generally $p\mid m_{ij}$ forces $p\mid b_{ij}$, so for $i+j<p$ no $m_{ij}$ is divisible by $p$; consequently every reduction agrees with $\FF_p[x]$ in degrees $<pd$.*
+
+*Proof.* From $m_{1,j}=q_1q_j/q_{1+j}$ and $q_1=1$ we get $q_n=\prod_{j=1}^{n-1}m_{1,j}^{-1}$. If all $m_{ij}$ are $p$-units then every $q_n$ is a $p$-unit, so $u_n:=q_n^{-1}\bmod p$ is a well-defined unit and $\bar m_{ij}u_iu_j/u_{i+j}=\bar m_{ij}\bar m_{ij}^{-1}=1$: after this rescaling all structure constants are $1$, and the coproduct constants become $\overline{b_{ij}/m_{ij}}\cdot1=\overline{b_{ij}}$, which is the coproduct of the polynomial Hopf algebra. For the second statement, integrality of the coproduct says $m_{ij}\mid b_{ij}$ in $\ZZ$, so $p\mid m_{ij}$ implies $p\mid b_{ij}$; and for $i+j<p$ the binomial coefficient $b_{ij}=\binom{i+j}{i}$ is not divisible by $p$ (no carry occurs in adding $i$ and $j$ in base $p$, by Lucas' theorem), so $p\nmid m_{ij}$. $\square$
+
+**Proposition 3 (the two extremes differ).** *For $d$ even, $\Gamma_{\ZZ}[t]\otimes\FF_p$ is not isomorphic to $\FF_p[t]$ as a graded algebra.*
+
+*Proof.* In $\Gamma_{\ZZ}[t]$ one has $\gamma_1^n=n!\,\gamma_n$, so in $\Gamma_{\ZZ}[t]\otimes\FF_p$ the element $\bar\gamma_1$ satisfies $\bar\gamma_1^{\,p}=\overline{p!}\,\bar\gamma_p=0$, while $\bar\gamma_p\neq0$ because $\gamma_p$ is a basis vector and $\Gamma_{\ZZ}$ is free. In $\FF_p[t]$ the $p$-th power map from degree $d$ to degree $pd$ is injective. A graded isomorphism preserves support of elements and $p$-th powers, so none exists. $\square$
+
+**Proposition 4 (the reductions with entries in $\{0,1\}$).** *Let $e_{ij}$ satisfy the conditions recorded above, let $m_{ij}=p^{e_{ij}}$ with valuation $0$ at every other prime, and let $S=\{(i,j):e_{ij}>0\}$. The reduction of the resulting form has $\bar m_{ij}=0$ on $S$ and $\bar m_{ij}=1$ off $S$, and two such reductions are isomorphic if and only if $S=S'$.*
+
+*Proof.* $\bar m_{ij}$ is $0$ or $1$ by construction, and the coproduct constant is $\overline{b_{ij}/m_{ij}}=\overline{b_{ij}/m_{ij}}$, an integer by the criterion. Proposition 1 gives that the support is an invariant; conversely, if $S=S'$ then the identity rescaling $u_n=1$ already makes the two reduced cocycles equal. $\square$
+
+So for this family the answer to the exercise's second question is complete: the reductions are exactly the $\FF_p$-Hopf algebras with $\bar x_i\bar x_j=\bar x_{i+j}$ off an admissible $S$ and $\bar x_i\bar x_j=0$ on $S$, one for each admissible $S$, and admissible $S$ are those of the form $\{e_{ij}>0\}$ for a divisor cocycle $e$ with $e_{ij}\le v_p(b_{ij})$ and $e_{i0}=e_{0i}=0$ — the converse construction recorded below shows every such $S$ occurs.
+
+**What is still open, stated exactly.** For a general form the residues $\bar m_{ij}\in\FF_p^\times$ off $S$ need not be normalisable to $1$: the constraints $u_{i+j}=\bar m_{ij}u_iu_j$, imposed only for $(i,j)\notin S$, form a graph on $\NN$, and a rescaling exists if and only if the product of the $\bar m$'s around every cycle of that graph is $1$. Deciding the orbit set for a fixed support is therefore a $1$-cocycle computation on that graph; it is not carried out here, and in particular the claim that the valuations alone classify the reductions remains false: the support is determined by the valuations, and the finer orbits are not.
 
 What the valuations do produce is a family of integral forms together with their vanishing patterns, by a converse that is a direct application of the criterion above: given integers $e_{ij}$ satisfying the two bounds and the cocycle relation, and $e_{i0}=e_{0i}=0$, put
 $$

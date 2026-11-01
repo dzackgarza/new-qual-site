@@ -1,0 +1,5 @@
+The long exact sequence of the pair, together with
+$$
+H^*(M(B,n),M(A,n);G)\cong\widetilde H^*(M(C,n);G),
+$$
+therefore becomes exactly

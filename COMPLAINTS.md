@@ -321,14 +321,25 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
    reported and repaired above; the rest is unaudited.
-3. **`P-AGH467MULTISECANTS`.** The Kaji citation is checked at the level of the paper's abstract only.
+3. **`E-HAT-3.C-16`, the orbit set for a fixed support.** The card now proves that the mod-$p$
+   reductions are the orbits of $(\FF_p^\times)^{\NN}$ on reduced structure constants, that the support is
+   an invariant, that a form with no structure constant divisible by $p$ reduces to $\FF_p[x]$, that
+   $p\mid m_{ij}$ forces $p\mid\binom{i+j}{i}$ (so nothing vanishes below degree $pd$), and that the
+   family $m_{ij}=p^{e_{ij}}$ is classified by its support. **Open, and stated on the card:** for a general
+   form the residues off the support need not be normalisable to $1$; the constraints
+   $u_{i+j}=\bar m_{ij}u_iu_j$ on the complement of the support are satisfiable exactly when the product
+   of the residues around every cycle is $1$, so deciding the orbit set for a fixed support is a
+   $1$-cocycle computation on the graph $\{(i,j)\notin S\}$ that has not been carried out. The refuted
+   claim stays refuted: valuations determine the support, not the reduction.
+
+4. **`P-AGH467MULTISECANTS`.** The Kaji citation is checked at the level of the paper's abstract only.
    The paper's body — in particular the singularity condition that is vacuous for smooth curves — was
    not read, and steps `s1`–`s13` of that card were not re-derived.
-4. **Starred markers — Stein–Shakarchi only, and checked.** No `SRC-TEXT-SS03` card records which
+5. **Starred markers — Stein–Shakarchi only, and checked.** No `SRC-TEXT-SS03` card records which
    printed items carry the difficulty asterisk; reports this week put the number of starred printed
    items between 26 and 28 and only `E-SS2.PR-5` mentions its star. For `SRC-TEXT-HAT02` the question
    is closed: Hatcher marks no exercise with an asterisk. The PDF text layer of `tmp/hat/AT.pdf`
    contains 2085 occurrences of `∗` and all of them are the join `X ∗ Y` or the same symbol inside a
    formula — no line begins `N.∗`, and the pattern `d.∗` occurs nowhere. So absence of a star on a
    Hatcher card is correct, not a defect, and nothing was invented in its place.
-5. **Five `ad-text-*` nodes** stay blocked on books absent from the repository, as recorded above.
+6. **Five `ad-text-*` nodes** stay blocked on books absent from the repository, as recorded above.
