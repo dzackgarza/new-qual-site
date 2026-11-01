@@ -32,6 +32,21 @@ audit:
   date: 2026-10-31
   note: >-
     Read the step claims: the subgroup $H$ defined by the $G$-stabilizer of a covering intermediate to $X\to X/G$, and the conjugation and normality criteria. Not every line checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct in all three parts, and the proof is careful about the hypothesis it
+    needs: `X` is not assumed simply connected, only connected (uniqueness of lifts) and the action
+    free. (a) The stabilizer-like subgroup `H = {g | f g = f}` is a subgroup, and `f(x) = f(x')`
+    iff `x' = hx` with `h` in it, because `q(x) = q(x')` gives `x' = gx` and then `f` and `f g` are
+    lifts of `q` through `p` agreeing at `x`. Surjectivity of `f` is shown properly (open image by
+    local homeomorphism, complement open by an evenly covered neighbourhood with empty preimage),
+    and the induced bijection `X/H -> Y` is open because `f` is a quotient map. (b) The map over
+    `X/G` determines `g` with `gH_1g^{-1} <= H_2`, the inclusion following from seeing that
+    `h'^{-1}ghg^{-1}` fixes `gx` and so is trivial by freeness; applying the same to the inverse
+    gives the reverse inclusion. (c) The deck group is `N_G(H)/H`, with `phi_g` the identity only
+    for `g` in `H` by freeness. No correction was needed.
 ---
 
 ::: {.problem}
