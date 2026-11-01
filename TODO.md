@@ -64,7 +64,10 @@ steps repaired, `E-HAT-1.2-22` restructured into one proof and its subcomplex fr
 §1.3: 33 statements compared. All 33 proofs read line by line, `E-HAT-1.3-1` through `E-HAT-1.3-33`.
 The one defect found in the block is `E-HAT-1.3-19`, whose `iff` had only its existence half proved; the
 necessity (a deck group `Z^n` is a quotient of the abelianization `Z^{2g}`, so `n <= 2g`) is now supplied in
-the card. No other correction was needed in the section.
+the card. No other correction was needed in the section. On 2026-11-01 the five cards whose notes had stopped at
+the step level — `-1`, `-2`, `-3`, `-5`, `-9` — were read line by line against the book and their notes brought to
+that standard; `-5`'s step asserting that the lift of the left edge is a homeomorphism was justified only by a
+phrase, and that step now proves `X~` Hausdorff and invokes compact-to-Hausdorff. No other change in the section.
 §1.A: 14 statements compared, all 14 proofs read line by line; `E-HAT-1.A-8` rewritten twice, once from
 fragments and once to encode covers by monodromy permutations and to compare indices by an explicit
 coset bijection; closing steps of `-9` and `-12` repaired.

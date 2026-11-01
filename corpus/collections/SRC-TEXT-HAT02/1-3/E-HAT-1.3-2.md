@@ -28,6 +28,16 @@ audit:
   date: 2026-10-31
   note: >-
     Read the product-covering argument: the box $U_1\times U_2$ is evenly covered by the products of the sheets, and each product of homeomorphisms is a homeomorphism.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line against Hatcher, Algebraic Topology, §1.3 Exercise 2. Verified: $(p_1\times
+    p_2)^{-1}(U_1\times U_2)=p_1^{-1}(U_1)\times p_2^{-1}(U_2)$; the distribution of that product over
+    the two disjoint-sheet decompositions, with the product sheets open; and that a product of
+    homeomorphisms, with the product of the continuous inverses as inverse, is a homeomorphism. Products
+    of open sets forming a basis of the product topology is the only topological input. No gap found;
+    nothing deferred.
 ---
 
 ::: {.problem}

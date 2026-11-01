@@ -24,6 +24,17 @@ audit:
   date: 2026-10-31
   note: >-
     Read the lifting proof: $f_*$ is trivial because $\pi_1(X)$ is finite and $\ZZ$ is torsion free, the lifting criterion applies to $\RR\to S^1$, and the straight-line homotopy in $\RR$ descends to a null-homotopy of $f$. The hint block agrees with the book's bracketed hint.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line against Hatcher, Algebraic Topology, §1.3 Exercise 9. Verified: $f_*$ has finite
+    image in $\pi_1(S^1)\cong\ZZ$, and the only finite subgroup of $\ZZ$ is trivial; the lifting
+    criterion for the covering $\RR\to S^1$ applies with the chosen basepoint $t_0$ because
+    $p_*(\pi_1(\RR,t_0))$ is trivial and $X$ is path connected and locally path connected; and
+    $H(x,u)=p((1-u)\widetilde f(x)+ut_0)$ is a continuous homotopy, the straight line staying in $\RR$,
+    from $f$ to the constant map at $s_0$. The local path-connectedness hypothesis is used exactly at
+    the lifting criterion. No gap found; nothing deferred.
 ---
 
 ::: {.exercise}
