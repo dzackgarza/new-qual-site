@@ -141,11 +141,19 @@ statements were compared with the printed exercises on 2026-11-01 and the necess
 hints and pointers, printed sentences and parentheticals, and four halved "iff"s (`E-HAT-3.F-9(a)`, `E-HAT-4.1-19`,
 `E-HAT-4.1-22`, `E-HAT-4.3-22`). Proof repairs applied where a proof was missing or wrong: `E-HAT-3.F-2`, `-3`, `-7`,
 `E-HAT-3.H-2`, `-4`, `-5`, and `E-HAT-4.3-24`, which had no proof at all.
-`E-HAT-3.C-16` **resolved.** Source: Hatcher printed p.292 (PDF 301). Forms are classified by the integral
-cocycle $m_{ij}$ with $m_{ij}\mid b_{ij}$; reductions are classified by the flag
-$\left([v_p(m_{ij})>0],[v_p(m_{ij})=v_p(b_{ij})]\right)_{ij}$ — the valuation vector determines the reduction
-(Theorem 8, explicit isomorphism $\bar x_n\mapsto\omega_n\bar y_n$, preserving multiplication and
-comultiplication in all three cases) and the reduction determines exactly those two bits (Theorem 9).
+`E-HAT-3.C-16` **resolved**, on a consolidated development (2026-11-01). Source: Hatcher printed p.292 (PDF 301).
+Forms are classified by the integral cocycle $m_{ij}$ with $m_{ij}\mid b_{ij}$; the reduction question is now one
+numbered chain: Lemma 1 (a graded basis-to-basis map is an isomorphism iff both the product and the coproduct
+equations hold — both are needed), Lemma 2 (which of the two bites, in the three cases $e_{ij}=0$,
+$0<e_{ij}=f_{ij}$, $0<e_{ij}<f_{ij}$), Theorem 3 (the valuation vector determines the reduction, explicit
+isomorphism $\bar x_n\mapsto\omega_n\bar y_n$), Theorem 4 (an isomorphism forces exactly the two bits
+$[v_p(m_{ij})>0]$ and $[v_p(m_{ij})=v_p(b_{ij})]$), Corollary 5 (reductions are isomorphic iff the flags agree
+*and the least degrees $d$ agree*). Four of this card's own earlier claims are retracted: that the valuations do
+not determine the reduction; that the support classifies it for $p=2$; that the product system may be unsolvable;
+and — found in the consolidation — that the flag alone classifies across different $d$, which is false because the
+polynomial forms with $d=1$ and $d=2$ have identical flags by Kummer's formula yet $B_1=\ZZ/2$ versus $B_1=0$.
+Two things are explicitly **not** claimed on the card: no realisation theorem for every flag pattern, and no
+decision procedure (the flags are infinitely many bits).
 Raw audit reports are preserved under `reports/audit-2026-11/` with a status table.
 **Proofs still to read, by card, in that same slice (97 cards):** `3-f` exercises 4–9 (6); `4-a/E-HAT-4.A-4` and `-5`;
 `4-l/E-HAT-4.L-4` and `-5`; `4-1` exercises 10–23 (14); `4-2` exercises 1–39 (39); `4-3` exercises 1–24 (24), of which

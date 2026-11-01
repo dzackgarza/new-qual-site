@@ -321,21 +321,30 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
    reported and repaired above; the rest is unaudited.
-3. **`E-HAT-3.C-16`, the mod-$p$ classification: RESOLVED.** The exercise is read from the source —
-   Hatcher, printed p.292 (PDF page 301). **Theorem 8:** if the $p$-adic valuation vectors agree,
-   $v_p(m_{ij})=v_p(m'_{ij})$ for all $i,j$, then $A\otimes\FF_p\cong A'\otimes\FF_p$, with the explicit
-   isomorphism $\phi(\bar x_n)=\omega_n\bar y_n$, $\omega_n$ the unit part of $q_n/q'_n$; the proof checks
-   multiplication *and* comultiplication at every pair in the three cases $e_{ij}=0$,
-   $0<e_{ij}=v_p(b_{ij})$, and $0<e_{ij}<v_p(b_{ij})$ (vacuous). **Theorem 9:** an isomorphism forces the two
-   bits $[v_p(m_{ij})>0]$ and $[v_p(m_{ij})=v_p(b_{ij})]$ to agree. **Corollary:** the reductions are
-   classified by that flag; the valuation vector determines the reduction but is not injective on classes.
-   Corroborated on $(\Gamma,\ p^{v_p\binom{i+j}{i}})$ at $p=3,5,7$. **Three of my own earlier claims are
-   retracted here:** that the reductions are *not* determined by the valuations (they are); that for $p=2$
-   the support classifies them (it does not — coproduct constants see exact valuations); and that the
-   product system "may be unsolvable" (it is always solvable, by Theorem 8). A fourth, smaller slip is
-   recorded because it nearly caused a false alarm: a verification script used the reciprocal of
-   $\omega_n$ and reported violations that do not exist.
-
+3. **`E-HAT-3.C-16`, the mod-$p$ classification: RESOLVED, on a consolidated development (2026-11-01).**
+   The exercise is read from the source — Hatcher, printed p.292 (PDF page 301). The card now carries one
+   numbered development, replacing four contradictory audit notes and their superseded numbering.
+   **Lemma 1:** a graded basis-to-basis map $\phi(\bar x_n)=u_n\bar y_n$ is an isomorphism iff both the
+   product equations $\bar m'_{ij}u_iu_j=\bar m_{ij}u_{i+j}$ and the coproduct equations
+   $\bar c'_{ij}u_{i+j}=\bar c_{ij}u_iu_j$ hold; both are needed, since where $\bar m_{ij}=0$ the first is
+   vacuous and the second need not be. **Lemma 2:** which of the two bites, in the three cases
+   $e_{ij}=0$, $0<e_{ij}=f_{ij}$, $0<e_{ij}<f_{ij}$ (the last vacuous on both sides). **Theorem 3:** if
+   $v_p(m_{ij})=v_p(m'_{ij})$ for all $i,j$ then the reductions are isomorphic, with the explicit
+   $\phi(\bar x_n)=\omega_n\bar y_n$, $\omega_n$ the unit part of $q_n/q'_n$ — the three case computations
+   were re-verified by hand. **Theorem 4:** an isomorphism forces the two bits $[v_p(m_{ij})>0]$ and
+   $[v_p(m_{ij})=v_p(b_{ij})]$ to agree. **Corollary 5:** reductions are isomorphic iff the flags
+   $(\delta,\varepsilon)$ agree *and the least degrees $d$ agree*. **Four of my own claims are retracted:**
+   that the reductions are *not* determined by the valuations (they are); that for $p=2$ the support
+   classifies them; that the product system "may be unsolvable"; and, new here, that the flag alone
+   classifies across different $d$ — the polynomial forms with $d=1$ and $d=2$ have identical flags, by
+   Kummer's formula applied to both coefficient families, yet $B_1=\ZZ/2$ versus $B_1=0$. Three further
+   defects were found and fixed in the same pass: the polynomial form's second flag bit is
+   $[p\nmid b_{ij}]$, not identically zero; the divided-power form exists only for $d$ even; and
+   Lemma 2(a)'s "both equations reduce to the same thing" fails where $b_{ij}\equiv0\bmod p$.
+   **Not claimed, and stated as such on the card:** no realisation theorem for every flag pattern (only
+   that a realisable one determines the class, plus the two extreme families and the
+   $m_{ij}=p^{e_{ij}}$ family), and no decision procedure — the flags are infinitely many bits, so
+   Corollary 5 is a criterion, not an algorithm.
 4. **`P-AGH467MULTISECANTS`.** The Kaji citation is checked at the level of the paper's abstract only.
    The paper's body — in particular the singularity condition that is vacuous for smooth curves — was
    not read, and steps `s1`–`s13` of that card were not re-derived.
