@@ -181,16 +181,68 @@ theorem tensor_d_hom_eq_lTensor {A B : ModuleCat ℤ} (P : ProjectiveResolution 
     ((resolutionTensor B P).d 1 0).hom = (P.complex.d 1 0).hom.lTensor (↥B) :=
   rfl
 
-/-- **The tensor symmetry on the two kernels, with its maps.** `ker (f.rTensor N) ≃ₗ ker (f.lTensor N)`
-by `comm` and its inverse, whose two inverse identities are checked: this is the orientation change
-between the bridge (`tensorLeft B`, so `B ⊗ -`) and the card's `torKernel` (`f.rTensor B`, so `- ⊗ B`). -/
-noncomputable def kerCommEquiv {M P : Type*} [AddCommGroup M] [AddCommGroup P]
-    (f : M →ₗ[ℤ] P) (N : Type*) [AddCommGroup N] :
+/-! ## The composed isomorphism, at an explicitly ascribed boundary
+
+Every module structure that the composition touches is named here: the tensor products get
+`TensorProduct.instModule` built from the given structures, declared as inherited instances in the
+section below, so that the map's typing and the kernel's ambient instance resolve to the *same*
+structure; the kernels then get their submodule structure pinned by `submoduleModule`. This is the
+ascription the earlier attempts lacked, and it does not weaken the statement or assume any map.
+-/
+
+section Boundary
+
+variable {M P N : Type*} [AddCommGroup M] [AddCommGroup P] [AddCommGroup N]
+  [Module ℤ M] [Module ℤ P] [Module ℤ N]
+
+/-- The module structure on `M ⊗ N` built from the given structures on `M` and `N`. -/
+noncomputable def tensorMod : Module ℤ (TensorProduct ℤ M N) :=
+  TensorProduct.instModule
+
+/-- The module structure on `P ⊗ N`. -/
+noncomputable def tensorModPN : Module ℤ (TensorProduct ℤ P N) :=
+  TensorProduct.instModule
+
+/-- The module structure on `N ⊗ M`. -/
+noncomputable def tensorModNM : Module ℤ (TensorProduct ℤ N M) :=
+  TensorProduct.instModule
+
+/-- The module structure on `N ⊗ P`. -/
+noncomputable def tensorModNP : Module ℤ (TensorProduct ℤ N P) :=
+  TensorProduct.instModule
+
+attribute [local instance] tensorMod tensorModPN tensorModNM tensorModNP
+
+/-- A submodule as a `ModuleCat`, with its `ℤ`-module structure pinned. -/
+noncomputable abbrev submoduleModule (p : Submodule ℤ (TensorProduct ℤ M N)) : ModuleCat ℤ :=
+  letI := p.module
+  ModuleCat.of ℤ ↥p
+
+/-- The orientation equality under the pinned instances: the same statement as
+`ker_rTensor_eq_comap_ker_lTensor`, restated here so that its tensor module structures are the pinned
+ones of this section. -/
+theorem ker_rTensor_eq_comap_ker_lTensor' (f : M →ₗ[ℤ] P) :
+    (f.rTensor N).ker
+      = Submodule.comap (TensorProduct.comm ℤ M N).toLinearMap (f.lTensor N).ker := by
+  ext x
+  simp only [LinearMap.mem_ker, Submodule.mem_comap]
+  constructor
+  · intro hx
+    show (LinearMap.lTensor N f) ((TensorProduct.comm ℤ M N) x) = 0
+    rw [LinearMap.lTensor_comm, hx, map_zero]
+  · intro hx
+    have h2 : (TensorProduct.comm ℤ P N) ((LinearMap.rTensor N f) x) = 0 := by
+      rw [← LinearMap.lTensor_comm (N := N) f x]
+      exact hx
+    exact (TensorProduct.comm ℤ P N).injective (by rw [h2, map_zero])
+
+/-- **The tensor symmetry on the two kernels, with its maps.** -/
+noncomputable def kerCommEquiv (f : M →ₗ[ℤ] P) :
     (f.rTensor N).ker ≃ₗ[ℤ] (f.lTensor N).ker where
   toFun x := ⟨(TensorProduct.comm ℤ M N) x.1, by
     have h : (x : TensorProduct ℤ M N) ∈ Submodule.comap (TensorProduct.comm ℤ M N).toLinearMap
         (f.lTensor N).ker := by
-      rw [← ker_rTensor_eq_comap_ker_lTensor]
+      rw [← ker_rTensor_eq_comap_ker_lTensor']
       exact x.2
     exact Submodule.mem_comap.mp h⟩
   invFun y := ⟨(TensorProduct.comm ℤ M N).symm (y : TensorProduct ℤ N M), by
@@ -201,11 +253,13 @@ noncomputable def kerCommEquiv {M P : Type*} [AddCommGroup M] [AddCommGroup P]
     have h' : ((TensorProduct.comm ℤ M N).symm (y : TensorProduct ℤ N M)) ∈
         Submodule.comap (TensorProduct.comm ℤ M N).toLinearMap (f.lTensor N).ker :=
       Submodule.mem_comap.mpr h
-    rwa [← ker_rTensor_eq_comap_ker_lTensor] at h'⟩
+    rwa [← ker_rTensor_eq_comap_ker_lTensor'] at h'⟩
   left_inv x := by ext; simp
   right_inv y := by ext; simp
   map_add' a b := by ext; simp
   map_smul' c a := by ext; simp
+
+end Boundary
 
 end TorBridge
 
@@ -218,4 +272,6 @@ end TorBridge
 #print axioms TorBridge.ker_rTensor_eq_comap_ker_lTensor
 #print axioms TorBridge.kernelIsoKerModule
 #print axioms TorBridge.tensor_d_hom_eq_lTensor
+#print axioms TorBridge.ker_rTensor_eq_comap_ker_lTensor'
+#print axioms TorBridge.tensorMod
 #print axioms TorBridge.kerCommEquiv

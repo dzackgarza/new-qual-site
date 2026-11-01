@@ -231,9 +231,19 @@ requires a construction, not a citation.
   **The instance diamond is resolved at the boundary:** `kerModule` pins the kernel's `ℤ`-module
   structure (`letI := f.hom.ker.module`) and `kernelIsoKerModule` is `ModuleCat.kernelIsoKer` stated
   over that pinned module, so the categorical kernel and the linear-map kernel are identified without a
-  diamond. **The symmetry on the kernels is now a map-level equivalence:** `kerCommEquiv` gives
-  `ker (f.rTensor N) ≃ₗ ker (f.lTensor N)` with `comm` and `comm.symm` as its two maps and both inverse
-  identities checked, so the orientation change is a construction, not an assumed equality.
+  diamond. **The symmetry on the kernels is now a map-level equivalence at an explicitly ascribed boundary:**
+  in a section whose tensor products carry `TensorProduct.instModule` built from the given structures —
+  `tensorMod`, `tensorModPN`, `tensorModNM`, `tensorModNP`, declared as inherited local instances —
+  `kerCommEquiv` gives `ker (f.rTensor N) ≃ₗ ker (f.lTensor N)` with `comm` and `comm.symm` as its two
+  maps and both inverse identities checked, and the orientation equality is restated under those same
+  instances (`ker_rTensor_eq_comap_ker_lTensor'`), which is what the earlier attempts lacked: the lemma
+  and the maps now mention *one* tensor module structure. The remaining mismatch is one level further
+  in, on the kernel subtypes: `ModuleCat.ofHom (e : p ≃ₗ q)` synthesizes
+  `AddCommGroup.toIntModule ↥p` where `ModuleCat.of` (via `submoduleModule`, which pins `p.module`)
+  infers `p.module`, with the compiler reporting
+  "'synthesized type class instance is not definitionally equal to expression inferred by typing rules'
+  — synthesized `AddCommGroup.toIntModule ↥p`, inferred `p.module`". Pinning the subtype structures the
+  same way is the next step.
   **One packaging step remains, and it is Lean plumbing, not mathematics:** composing
   `torOneIsoKernel ≪≫ kernelIsoKerModule ≪≫ isoOfKerEquiv (kerCommEquiv …).symm` into one
   `torOne A B ≅ kerMapModule (f.hom.rTensor ↥B)`. The blocker is a *second* instance diamond, on the
