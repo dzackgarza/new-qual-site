@@ -28,6 +28,19 @@ audit:
   date: 2026-10-31
   note: >-
     Read the step claims: orbits of the monodromy action are path components, and the stabilizer is the subgroup of the corresponding component. Not every line checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct. The orbit/component correspondence is proved in both directions and
+    not merely asserted: lifting a loop realises the action, and conversely a path between two fiber
+    points projects to a loop whose monodromy carries one endpoint to the other. The passage from
+    path components to components uses exactly the hypothesis in play — a cover of a locally path
+    connected space is locally path connected, where components are open and so coincide with path
+    components. Part (b) identifies the stabilizer with the subgroup of `pi_1` corresponding to the
+    component, which is the same statement read through the correspondence of part (a). The
+    semilocally-simply-connected hypothesis is used to know that subgroups and connected covers
+    correspond at all. No correction was needed.
 ---
 
 ::: {.problem}
