@@ -50,6 +50,24 @@ audit:
     general statement rests on the induction, which is not formalized. Everything else in the solution stands: the summands are the
     `n`-simplices of the subdivision, and the coefficients are the permutation signs; only the vertex
     ordering and the global sign needed repair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Certificate scope recorded after `proofs/cards/BarySubdiv.lean`. Now formalized, with no `sorryAx`
+    and axioms only `propext`, `Classical.choice`, `Quot.sound`: (i) the recursion
+    $S\lambda=b_\lambda(S\partial\lambda)$ itself, in the free abelian group on ordered chains of faces of
+    $\Delta^n$, with **every** coefficient of it computed (`coeff_subdiv`) and the coefficient of the chain of
+    a peeling order proved to be the recursion's own sign at that order (`coeff_subdiv_chainOf`,
+    `coeff_subdiv_chainOf_eq_pow`); (ii) the deletion positions aggregated with no reference to the
+    intermediate faces (`stepExp_eq_pairCount`), and the outermost deletion's factor identified with the
+    peeled vertex's value (`deletionPos_univ`); (iii) the first vertex of the descending barycentric vertex
+    list proved to be the barycentre of the whole simplex (`descVertex_zero`), the vertex the cone prepends.
+    Not formalized, and not claimed: the reindexing of the peeling-order pair count against
+    $\sum_j \#\{i\le j:\pi i<\pi j\}$, hence the coefficient $(-1)^{n(n+1)/2}\operatorname{sgn}(\pi)$
+    itself; the exhaustive nonduplicated indexing of the recursion's support by $S_{n+1}$; and the transport
+    to singular chains of $\Delta^n$. This event records certificate scope only: the solution text was not
+    re-proved here.
 ---
 
 ::: {.problem}
@@ -125,7 +143,7 @@ so the recursion's sign for the $\pi$-summand is $(-1)^{d_0+\dots+d_{n-1}}$. The
 $$d_0+\dots+d_{n-1}=\#\{(i,j): i<j,\ \pi i<\pi j\},$$
 the number of *noninversions* of $\pi$; and inversions plus noninversions count all pairs, $n(n+1)/2$ of them. Hence
 $$(-1)^{d_0+\dots+d_{n-1}}=(-1)^{n(n+1)/2}(-1)^{\operatorname{inv}(\pi)}=(-1)^{n(n+1)/2}\operatorname{sgn}(\pi),$$
-which is the displayed factor. The pair counts, the inversion/noninversion partition and $\operatorname{sgn}(\pi)=(-1)^{\operatorname{inv}(\pi)}$ are proved in `proofs/cards/BarySign.lean` (`card_pairSet`, `noninv_add_inv`, `sign_eq_neg_one_pow_inv`); the identification of $d_j$ with the position of the deleted vertex, and the modelling of the singular-chain recursion, are not formalized, and the $n=1,2,3$ regression below is a bounded check of the resulting chains.
+which is the displayed factor. The pair counts, the inversion/noninversion partition and $\operatorname{sgn}(\pi)=(-1)^{\operatorname{inv}(\pi)}$ are proved in `proofs/cards/BarySign.lean` (`card_pairSet`, `noninv_add_inv`, `sign_eq_neg_one_pow_inv`); that $d_j$ really is the position of the deleted vertex, and that the recursion carries these positions as its signs, is proved in `proofs/cards/BarySubdiv.lean` (`coeff_subdiv`, `coeff_subdiv_chainOf`, `stepExp_eq_pairCount`), where $S\lambda=b_\lambda(S\partial\lambda)$ is modelled in the free abelian group on ordered chains of faces and **every** coefficient of it is computed rather than assumed. Not formalized: the reindexing of the peeling-order pair count against the permutation-indexed sum $\sum_j\#\{i\le j:\pi i<\pi j\}$ (which is what turns the recursion's exponent into $n(n+1)/2-\operatorname{inv}(\pi)$ for the index $\pi$), the exhaustive nonduplicated indexing of the recursion's support by $S_{n+1}$, and the transport to singular chains of $\Delta^n$; the $n=1,2,3$ regression below is a bounded check of the resulting chains.
 
 :::
 
@@ -137,7 +155,7 @@ Chain-level regression
 
 ::: pf-proof
 
-The general argument is an induction on `n` whose bookkeeping is a stated combinatorial identity, and it is the *only* proof of the formula for all `n`. Write `S(lambda) = b_lambda(S partial lambda)` with `partial lambda = sum_k (-1)^k partial_k lambda`. By induction the closed form is known on each `(n-1)`-simplex `partial_k lambda`, with global sign `(-1)^{(n-1)n/2}`; coning with `b_lambda` prepends the apex and keeps the coefficient of the corresponding permutation, while the factor `(-1)^k` from the boundary and the fact that coning reverses the effective vertex order contribute exactly `(-1)^n` per summand, i.e. an extra `(-1)^n` overall. Since `(n-1)n/2 + n = n(n+1)/2`, the two global signs multiply to `(-1)^{n(n+1)/2}`, which is the stated factor. Equivalently, and this is the form to prove outright: along the descending chain indexed by `\pi`, the sum of the deletion positions equals the number of noninversions of `\pi`, namely `n(n+1)/2 - \operatorname{inv}(\pi)`, so the recursion's sign `(-1)^{\text{sum}}` equals `(-1)^{n(n+1)/2}\operatorname{sgn}(\pi)` because `\operatorname{sgn}(\pi) = (-1)^{\operatorname{inv}(\pi)}`. That identity is a statement about permutations and is what the all-`n` proof rests on; it is not formalized here. The same induction shows the *ascending* formula cannot be right: coning prepends the apex, so the sub-simplices begin at `b_{Delta^n}` and their vertex lists descend.
+The general argument is an induction on `n` whose bookkeeping is a stated combinatorial identity, and it is the *only* proof of the formula for all `n`. Write `S(lambda) = b_lambda(S partial lambda)` with `partial lambda = sum_k (-1)^k partial_k lambda`. By induction the closed form is known on each `(n-1)`-simplex `partial_k lambda`, with global sign `(-1)^{(n-1)n/2}`; coning with `b_lambda` prepends the apex and keeps the coefficient of the corresponding permutation, while the factor `(-1)^k` from the boundary and the fact that coning reverses the effective vertex order contribute exactly `(-1)^n` per summand, i.e. an extra `(-1)^n` overall. Since `(n-1)n/2 + n = n(n+1)/2`, the two global signs multiply to `(-1)^{n(n+1)/2}`, which is the stated factor. Equivalently, and this is the form to prove outright: along the descending chain indexed by `\pi`, the sum of the deletion positions equals the number of noninversions of `\pi`, namely `n(n+1)/2 - \operatorname{inv}(\pi)`, so the recursion's sign `(-1)^{\text{sum}}` equals `(-1)^{n(n+1)/2}\operatorname{sgn}(\pi)` because `\operatorname{sgn}(\pi) = (-1)^{\operatorname{inv}(\pi)}`. That identity is a statement about permutations and is what the all-`n` proof rests on. Of it, machine-checked are the sign algebra (`proofs/cards/BarySign.lean`) and, in `proofs/cards/BarySubdiv.lean`, the modelling of the recursion with all its coefficients and the aggregation of the deletion positions to a pair count (`stepExp_eq_pairCount`); the reindexing of that pair count against the index $\pi$, and hence this identity for all `n`, is not formalized. The same induction shows the *ascending* formula cannot be right: coning prepends the apex, so the sub-simplices begin at `b_{Delta^n}` and their vertex lists descend.
 
 `proofs/cards/bary_regression.py` is a **bounded regression**, not a proof of the identity: it computes for `n = 1, 2, 3` only, in the free abelian group on vertex tuples, both the recursive operator and the two closed formulas, and confirms the identity there as well as refuting the old ascending formula — in dimension `1`, `S[v_0,v_1] = [b,v_1] - [b,v_0]`, whose summands are `[b,v_1]` and `[b,v_0]`, whereas the ascending formula gives `[v_0,b] - [v_1,b]`, different generators of `C_1`. It says nothing about `n >= 4`; the induction above is what covers those, and it is not formalized.
 
