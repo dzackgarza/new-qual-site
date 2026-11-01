@@ -181,6 +181,32 @@ theorem tensor_d_hom_eq_lTensor {A B : ModuleCat ℤ} (P : ProjectiveResolution 
     ((resolutionTensor B P).d 1 0).hom = (P.complex.d 1 0).hom.lTensor (↥B) :=
   rfl
 
+/-- **The tensor symmetry on the two kernels, with its maps.** `ker (f.rTensor N) ≃ₗ ker (f.lTensor N)`
+by `comm` and its inverse, whose two inverse identities are checked: this is the orientation change
+between the bridge (`tensorLeft B`, so `B ⊗ -`) and the card's `torKernel` (`f.rTensor B`, so `- ⊗ B`). -/
+noncomputable def kerCommEquiv {M P : Type*} [AddCommGroup M] [AddCommGroup P]
+    (f : M →ₗ[ℤ] P) (N : Type*) [AddCommGroup N] :
+    (f.rTensor N).ker ≃ₗ[ℤ] (f.lTensor N).ker where
+  toFun x := ⟨(TensorProduct.comm ℤ M N) x.1, by
+    have h : (x : TensorProduct ℤ M N) ∈ Submodule.comap (TensorProduct.comm ℤ M N).toLinearMap
+        (f.lTensor N).ker := by
+      rw [← ker_rTensor_eq_comap_ker_lTensor]
+      exact x.2
+    exact Submodule.mem_comap.mp h⟩
+  invFun y := ⟨(TensorProduct.comm ℤ M N).symm (y : TensorProduct ℤ N M), by
+    have h : (TensorProduct.comm ℤ M N) ((TensorProduct.comm ℤ M N).symm (y : TensorProduct ℤ N M))
+        ∈ (f.lTensor N).ker := by
+      rw [LinearEquiv.apply_symm_apply]
+      exact y.2
+    have h' : ((TensorProduct.comm ℤ M N).symm (y : TensorProduct ℤ N M)) ∈
+        Submodule.comap (TensorProduct.comm ℤ M N).toLinearMap (f.lTensor N).ker :=
+      Submodule.mem_comap.mpr h
+    rwa [← ker_rTensor_eq_comap_ker_lTensor] at h'⟩
+  left_inv x := by ext; simp
+  right_inv y := by ext; simp
+  map_add' a b := by ext; simp
+  map_smul' c a := by ext; simp
+
 end TorBridge
 
 #print axioms TorBridge.torOneIsoHomology
@@ -192,3 +218,4 @@ end TorBridge
 #print axioms TorBridge.ker_rTensor_eq_comap_ker_lTensor
 #print axioms TorBridge.kernelIsoKerModule
 #print axioms TorBridge.tensor_d_hom_eq_lTensor
+#print axioms TorBridge.kerCommEquiv

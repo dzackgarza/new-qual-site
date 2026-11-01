@@ -231,10 +231,17 @@ requires a construction, not a citation.
   **The instance diamond is resolved at the boundary:** `kerModule` pins the kernel's `ℤ`-module
   structure (`letI := f.hom.ker.module`) and `kernelIsoKerModule` is `ModuleCat.kernelIsoKer` stated
   over that pinned module, so the categorical kernel and the linear-map kernel are identified without a
-  diamond. **One packaging step remains:** composing `torOneIsoKernel ≪≫ kernelIsoKerModule` with the
-  `comap`-transport along `comm` into a single isomorphism naming `kerModule` of
-  `f.hom.rTensor ↥B` — a `Submodule`-restriction isomorphism along `TensorProduct.comm`, not a new
-  hypothesis.
+  diamond. **The symmetry on the kernels is now a map-level equivalence:** `kerCommEquiv` gives
+  `ker (f.rTensor N) ≃ₗ ker (f.lTensor N)` with `comm` and `comm.symm` as its two maps and both inverse
+  identities checked, so the orientation change is a construction, not an assumed equality.
+  **One packaging step remains, and it is Lean plumbing, not mathematics:** composing
+  `torOneIsoKernel ≪≫ kernelIsoKerModule ≪≫ isoOfKerEquiv (kerCommEquiv …).symm` into one
+  `torOne A B ≅ kerMapModule (f.hom.rTensor ↥B)`. The blocker is a *second* instance diamond, on the
+  tensor product rather than on a submodule: `rTensor`'s output carries `TensorProduct.addCommMonoid`
+  and `TensorProduct.instModule`, while `kerMapModule`'s parameters ask for
+  `AddCommGroup.toAddCommMonoid`, so the statement fails instance unification (the `Submodule.module`
+  diamond was resolved by `kerModule`/`kerMapModule`, this one is not). The composition is written; the
+  fix is explicit instance ascription at that boundary.
   Hatcher's Lemma 3A.2 as the cards use it is the *unrestricted* application: it needs that kernel
   step **together with** the finite-stage descent already proved in `cards/TorStages.lean`
   (`exists_stage_of_free`, `stageMap_injective`, the directed system). The flat-cokernel lemma
