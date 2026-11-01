@@ -7,6 +7,7 @@ id: SRC-NUS-RA-1970-SPRING
 kind: collection
 provenance:
 - https://github.com/dzackgarza/make-me-a-qual/blob/6190e0eeaf93ac471a2450444d0b70872b7b9dfa/Combined_Questions.yaml
+- https://github.com/dzackgarza/make-me-a-qual/blob/6190e0eeaf93ac471a2450444d0b70872b7b9dfa/Questions/Real_Analysis/NUS/NUS_Real_Analysis.yaml
 relations: []
 review: draft
 schema: qual/card@1
@@ -38,7 +39,7 @@ source:
   - id: P-MMAQ-RML5AHHINX
     comment: 'Source parts (a), (b)'
   source_kind: university-exam
-title: NUS Real Analysis 1970 Spring
+title: Real Analysis under the imported label “NUS 1970 Spring” (unverified; two papers)
 ---
 
 
