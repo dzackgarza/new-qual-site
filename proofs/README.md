@@ -117,6 +117,27 @@ structure of a finite f.g. stage. Neither requires reimplementing comparison or 
 `ProjectiveResolution.homotopyEquiv` and `LinearMap.lTensor_injective_of_exact_of_flat` are the
 maintained constructions to use.
 
+**The identification, with the API and the pitfalls fixed.** `CategoryTheory/Abelian/LeftDerived.lean`
+provides `ProjectiveResolution.isoLeftDerivedObj (P) (T) (n) : (T.leftDerived n).obj X ≅ H_n (T
+applied to P.complex)`. The plan is therefore: (1) build `P : ProjectiveResolution A` from the
+two-term complex `0 → K → F → 0`; (2) apply the isomorphism with `T = Tor`-side functor; (3) compute
+the degree-1 homology of `T P.complex` and identify it with `ker (f.rTensor B)`.
+
+Three things must be discharged explicitly, and each has bitten before:
+
+- **Orientation.** `CategoryTheory/Monoidal/Tor.lean` resolves the *second* argument for `Tor` and the
+  *first* for `Tor'`. Resolving `A` with `(- ⊗ B)` computes `Tor' A B`; using `(B ⊗ -)` computes
+  `Tor B A`. The card's statement is symmetric, but the Lean statement is not, and the two must not
+  be identified silently: no balancing theorem is being invoked here.
+- **Projectivity of `K`.** A two-term projective resolution needs `K` projective. Over `ℤ` this
+  follows from `K ↪ F` with `F` free (submodules of free `ℤ`-modules are free), but that
+  application has to be made, not assumed.
+- **The kernel identification itself.** An unmatched one-shot isomorphism between the degree-1
+  homology of the two-term complex after the tensor functor and `ker (f.rTensor B)`; the incoming
+  differential at degree 1 is zero, so this is `ker/im` with `im = 0`.
+
+Nothing above requires resolution comparison or flat-cokernel injectivity: those are maintained.
+
 **Pending certification, stated concretely.** The next Lean obligation is
 `rTensor_injective_of_flat_cokernel`: for `f : K →ₗ[ℤ] F` injective with `[Module.Flat ℤ (F ⧸
 LinearMap.range f)]`, `rTensor B f` is injective, hence `torKernel f = ⊥`; proved by
