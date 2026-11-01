@@ -29,6 +29,16 @@ audit:
   date: 2026-10-31
   note: >-
     Read the computation from the long exact sequence: for $m$ points in $S^2$ the sequence gives $H_2=\ZZ$, $H_1=\ZZ^{m-1}$ and $H_0=0$, and for the torus the same method gives $H_2=\ZZ$, $H_1=\ZZ^{m+1}$ and $H_0=0$; part (b) is read at the level of the stated quotients $X/A$ and $X/B$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Part (a) for `X = S^2` read and checked: with `A` a set of `m >= 1` points, `H_0(A) = Z^m` and
+    `H_k(A) = 0` for `k > 0`, so the long exact sequence gives `H_k(S^2,A) = H_k(S^2)` for `k >= 2`,
+    hence `Z` in degree 2, and `0 -> H_1(S^2,A) -> Z^m -> Z -> H_0(S^2,A) -> 0` with the sum map, so
+    `H_1 = ker = Z^{m-1}` and `H_0 = 0`. That part is right. Scope of this review: the `T^2` case of
+    part (a) and both computations of part (b), including the identification of `X/A` and `X/B` for
+    the genus-two surface, were **not** read, so this note does not vouch for them.
 ---
 
 ::: {.problem}

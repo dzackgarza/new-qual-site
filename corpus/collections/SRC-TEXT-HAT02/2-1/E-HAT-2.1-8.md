@@ -29,6 +29,19 @@ audit:
   date: 2026-10-31
   note: >-
     Read the generators and the rank-one computation for $\partial_1$; the higher boundary matrices of the lens space were not recomputed entry by entry.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct, and the ranks are consistent, which is the check worth making: two
+    vertices give `C_0 = Z^2`, and `partial_1` has rank one (the `f_i` all map to `w - v` while `p`
+    and `b` are loops), so `H_0 = Z`. `partial_3(T_i) = A_i - A_{i-1} + B_{i-1} - B_i` telescopes, and
+    the coefficient of `A_i` in a general combination being `c_i - c_{i+1}` makes `ker partial_3` the
+    diagonal `Z`, so `H_3 = Z` as there are no 4-simplices. For `partial_2` the stated Smith normal
+    form has `n` ones and one `n`, i.e. rank `n+1` out of `2n` columns, which is exactly right: it
+    leaves `ker partial_2` of rank `n-1`, matching `im partial_3 = Z^{n-1}`, so `H_2 = 0`, and
+    `ker partial_1 / im partial_2` has one relation `n` times the class, i.e. `H_1 = Z_n`. The claimed
+    `Z, Z_n, 0, Z` follows. No correction was needed.
 ---
 
 ::: {.problem}

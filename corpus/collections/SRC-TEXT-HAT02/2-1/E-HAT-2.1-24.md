@@ -25,6 +25,16 @@ audit:
   date: 2026-10-31
   note: >-
     Read the inequality argument: along a maximal chain the barycentric coordinates satisfy $t_{i_0}\ge\cdots\ge t_{i_n}$, and the $n!$ chains give exactly the $n!$ $n$-simplices of the subdivision.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct in substance, with one convention to note: the card parametrizes the
+    maximal chain as `S_k = {i_0,...,i_k}` and gets the order `t_{i_0} >= ... >= t_{i_n}`, which is
+    the exercise's `t_{i_0} <= ... <= t_{i_n}` after reversing the permutation, so the two agree up to
+    the indexing convention. The barycenter computation is right — `b_k` has coordinate `1/(k+1)` at
+    the `i_j` with `j <= k` and `0` elsewhere, so the coordinates are ordered as claimed, and
+    convex combinations preserve the inequalities.
 ---
 
 ::: {.problem}

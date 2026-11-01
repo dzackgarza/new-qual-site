@@ -29,6 +29,18 @@ audit:
   date: 2026-10-31
   note: >-
     Read the explicit formula: for each permutation $\pi$ an affine map carries the standard simplex onto the corresponding subdivided simplex, and the signed sum $\sum_\pi\mathrm{sgn}(\pi)\,\sigma\Delta_\pi$ is the noninductive subdivision operator with the signs that make it a chain map.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    The formula read and checked for shape: `S(sigma) = sum_pi sgn(pi) (sigma o Delta_pi)`, where
+    `Delta_pi` carries the ordered vertices of the standard simplex to the barycentres
+    `b_{i_0}, b_{i_0,i_1}, ..., b_{i_0,...,i_n}` of the initial segments of the permutation. This is
+    the standard explicit formula: each `n`-simplex of the subdivision is the image of exactly one
+    `Delta_pi`, the signs make the chains cancel in opposite orientations, and the operator is natural
+    in `X`, so the formula is well defined on `C_n(X)`. Scope of this review: the verification that
+    this formula satisfies the inductive characterisation of the subdivision operator was **not**
+    read, so that identity is not vouched for here.
 ---
 
 ::: {.problem}

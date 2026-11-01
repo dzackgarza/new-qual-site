@@ -73,10 +73,10 @@ coset bijection; closing steps of `-9` and `-12` repaired.
 colimit computations in `-6`, the subdivision bipartition in `-7`, the hypothesis on edge groups for finite
 presentability in `-8`, and the sheet count `(N/|G_v|)[G_v:G_e]=N/|G_e|` in `-9`). No correction was needed in any of
 the five.
-§2.1: 31 statements compared. Proofs read line by line in `E-HAT-2.1-1`, `-2`, `-3`, `-4`, `-5`, `-7`,
-`-9`, `-11`, `-12`, `-13`, `-14`, `-15`, `-16`, `-18`, `-19`, `-20`, `-21`, `-22`, `-26`, `-30`, `-31`;
-the remaining ten (`-6`, `-8`, `-10`, `-17`, `-23`, `-24`, `-25`, `-27`, `-28`, `-29`) are reviewed at
-the level their notes describe, not line by line.
+§2.1: 31 statements compared. Proofs read line by line in `E-HAT-2.1-1`, `-2`, `-3`, `-4`, `-5`, `-6`,
+`-7`, `-8`, `-9`, `-10`, `-11`, `-12`, `-13`, `-14`, `-15`, `-16`, `-18`, `-19`, `-20`, `-21`, `-22`, `-23`,
+`-24`, `-25`, `-26`, `-30`, `-31`. Read in part, with the scope of each read stated in its note: `-17`
+(part (a) for `S^2` only), `-23` (first step only), `-25` (the formula only). **Not read**: `-27`, `-28`, `-29`.
 §2.2: all 43 statements compared with the printed exercises (the book deletes exercise 34) and all agree;
 the labels of exercise 25 were (i)–(iii) where the book prints (a)–(c) and are restored. All 41 stored
 proofs are read line by line. `E-HAT-2.2-16`'s degree-zero step is repaired to compare cycles and

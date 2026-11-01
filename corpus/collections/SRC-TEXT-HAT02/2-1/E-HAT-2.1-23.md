@@ -29,6 +29,16 @@ audit:
   date: 2026-10-31
   note: >-
     Read the two-stage argument: a simplex of the first barycentric subdivision is given by a strict chain of faces, so its barycenters are distinct, and in a $\Delta$-complex with distinct vertices per simplex the subdivided pieces meet in common faces, which is the simplicial condition.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Step 1 read and checked: a `k`-simplex of the barycentric subdivision lies in a single original
+    simplex and is determined by a strict chain of faces, so its vertices are the barycenters of
+    simplices of strictly increasing dimension and are pairwise distinct. That is the property the
+    exercise asks for in the first sentence. Scope of this review: the second half — that for a
+    `Delta`-complex with distinct vertices per simplex the barycentric subdivision is a simplicial
+    complex — was **not** read, so nothing is claimed for it here.
 ---
 
 ::: {.problem}
