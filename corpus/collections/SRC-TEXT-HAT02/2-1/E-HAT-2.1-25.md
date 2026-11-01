@@ -124,18 +124,19 @@ are the subdivision of $[e_0,\dots,e_n]$ traversed from the top face down, and t
 
 ::: pf-step
 
-Therefore the formula agrees with the barycentric subdivision operator.
-
-
-::: pf-step
-
 Chain-level regression
 
 ::: pf-proof
 
-`proofs/cards/bary_regression.py` computes, for `n = 1, 2, 3`, both the recursive operator `S(b) = b_lambda(S partial lambda)` (cone with the barycentric apex prepended) and the two closed formulas, in the free abelian group on vertex tuples. It shows `S` equals `(-1)^{n(n+1)/2}` times the descending formula for each of `n = 1, 2, 3`, and that it equals *neither* the ascending formula *nor* its negative: in dimension `1`, `S[v_0,v_1] = [b,v_1] - [b,v_0]`, whose summands are `[b,v_1]` and `[b,v_0]`, whereas the ascending formula gives `[v_0,b] - [v_1,b]`; these are different generators of `C_1`. That is the exact content of the second warning above.
+`proofs/cards/bary_regression.py` computes, for `n = 1, 2, 3`, both the recursive operator `S(lambda) = b_lambda(S partial lambda)` (cone with the barycentric apex prepended) and the two closed formulas, in the free abelian group on vertex tuples. It shows `S` equals `(-1)^{n(n+1)/2}` times the descending formula for each of `n = 1, 2, 3`, and that it equals *neither* the ascending formula *nor* its negative: in dimension `1`, `S[v_0,v_1] = [b,v_1] - [b,v_0]`, whose summands are `[b,v_1]` and `[b,v_0]`, whereas the ascending formula gives `[v_0,b] - [v_1,b]`; these are different generators of `C_1`. That is the exact content of the second warning above.
 
 :::
+
+:::
+
+::: pf-step
+
+Therefore the formula agrees with the barycentric subdivision operator.
 
 ::: pf-proof
 
