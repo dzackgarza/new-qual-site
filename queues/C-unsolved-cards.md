@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem cards
 
-47 problem cards have no solution section. These are
+46 problem cards have no solution section. These are
 the cards issue #2 targets: write a Lamport-style structured proof for each.
 
 Regenerate with `just unsolved` after a card gains a solution. CI publishes
@@ -10,11 +10,10 @@ regeneration, and writing the solution removes the line.
 
 ## Count
 
-- Problems: 47
+- Problems: 46
 
-## Problems (47)
+## Problems (46)
 
-- [ ] E-SS4.PR-4 — "Borel representation of entire functions of exponential type"
 - [ ] E-SS5.EX-15 — "Meromorphic functions as quotients of entire functions"
 - [ ] E-SS5.EX-16 — "Prescribed principal parts at discrete poles"
 - [ ] E-SS5.EX-17 — "Entire interpolation on a discrete sequence"
