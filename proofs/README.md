@@ -59,7 +59,7 @@ state, after `cards/BarySubdiv.lean`, is the following.
 
 | `cards/TorBridge.lean` | `E-HAT-3.A-6`, `E-HAT-3.A-2` | **`Tor₁` is the homology of the tensored projective resolution**, proved: `torOneIsoHomology` gives `((tensorLeft B).leftDerived 1).obj A ≅ H₁(P.complex ⊗ B)` for every projective resolution `P` of `A`, by `ProjectiveResolution.isoLeftDerivedObj` at degree one, with the tensored complex and its degree-1 differential named (`resolutionTensor`, `tensorDiffOne`). Axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`. **Also proved:** the two-term step, `homologyIsoKernelOfZero`, `homologyOneIsoKernelOfD`, `homologyOneIsoKernel` and `tensor_d_two_one_eq_zero`, giving `torOneIsoKernel`: for a projective resolution with `IsZero (P.complex.X 2)`, `Tor₁(A,B) ≅ kernel((resolutionTensor B P).d 1 0)`, plus `torOneIsoKerLinear` composed with `ModuleCat.kernelIsoKer`. The map-level content is `resolutionTensor_d` (the tensored differential is the tensor of the resolution's differential). **Also proved:** the orientation `ker_rTensor_eq_comap_ker_lTensor` (`ker (f.rTensor N)` is the `comm`-preimage of `ker (f.lTensor N)`, by `LinearMap.lTensor_comm`), the pinned kernel module `kerModule` with `kernelIsoKerModule` (the `ℤ`-module instance diamond resolved at that boundary), and `tensor_d_hom_eq_lTensor` (the tensored differential is the resolution differential with `B` on the left). **Open:** the single packaging step that composes the two-term bridge with the `comm`-transport into one isomorphism naming `kerModule` of `f.hom.rTensor ↥B`. See section 5b. |
 | `cards/ColimitTensor.lean` | `E-HAT-3.A-6`, `E-HAT-3.A-2` | Exercise 4 of §3.A, the `⊗` half, completely: `tensorLeft_preserves_colimits` (for `B : ModuleCat ℤ`, `tensorLeft B` preserves colimits, Mathlib's instance `instPreservesColimitsTensorLeft`) and `tensorLeft_colim_iso`, the comparison `B ⊗ colim F ≅ colim (B ⊗ F ·)` for any `F : J ⥤ ModuleCat ℤ` with `HasColimitsOfShape J (ModuleCat ℤ)`, built from `PreservesColimit.preserves` (which yields `Nonempty (IsColimit _)`, extracted with `Classical.choice`) and `IsColimit.coconePointUniqueUpToIso`. Axioms: propext, Classical.choice, Quot.sound. **Not** certified: the `Tor` half. |
-| `cards/TorTorsionClass.lean` | `E-HAT-3.A-6` | **`Tor` of a torsion module is torsion, by the torsion-class route instead of a free resolution.** `prop_homology` (a property closed under subobjects and quotients passes from a complex term to its homology in the same degree) and `prop_leftDerived_obj` (if an additive functor sends projectives into such a class, every left derived functor does) are proved for a general abelian setting; `AddCommGrpCat.isTorsion` is the class of torsion abelian groups with its `IsClosedUnderSubobjects` and `IsClosedUnderQuotients` instances; `isAddTorsion_tensorProduct_left` (tensoring a torsion monoid is torsion, no flatness, no finite generation); and `isAddTorsion_Tor_left`: for `M`, `N` in `ModuleCat R` over **any** commutative ring, `IsAddTorsion M → IsAddTorsion (((Tor (ModuleCat R) n).obj M).obj N)`, with the `ℤ` form `isAddTorsion_tor_int`. Axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`; `exit 0`. **Provenance:** this is a **port**, not new mathematics — the four lemmas are copied from the Tau Ceti project at commit `67e852853c5192ec69775bb7ef417fc199e4190e` (Apache-2.0), see section 7. **What it does not cover:** the card's statement is about **all** `A`, and this file proves the case where `A` is torsion — the reduction `Tor(A,B) ≅ Tor(T(A),B)` is §7b's named residual; the second half of the card (an element of order `n` in `Tor(A,B)` iff in both `A` and `B`), which no located formalization proves; and it says nothing about `Tor'`, the other orientation. It does not need — and does not supply — Hatcher's Lemma 3A.2 or a finite-stage witness, because the left-derived-functor definition of `Tor` is already resolution-independent. |
+| `cards/TorTorsionClass.lean` | `E-HAT-3.A-6` | **`Tor` of a torsion module is torsion, by the torsion-class route instead of a free resolution.** `prop_homology` (a property closed under subobjects and quotients passes from a complex term to its homology in the same degree) and `prop_leftDerived_obj` (if an additive functor sends projectives into such a class, every left derived functor does) are proved for a general abelian setting; `AddCommGrpCat.isTorsion` is the class of torsion abelian groups with its `IsClosedUnderSubobjects` and `IsClosedUnderQuotients` instances; `isAddTorsion_tensorProduct_left` (tensoring a torsion monoid is torsion, no flatness, no finite generation); and `isAddTorsion_Tor_left`: for `M`, `N` in `ModuleCat R` over **any** commutative ring, `IsAddTorsion M → IsAddTorsion (((Tor (ModuleCat R) n).obj M).obj N)`, with the `ℤ` form `isAddTorsion_tor_int`. Axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`; `exit 0`. **Provenance:** this is a **port**, not new mathematics — the four lemmas are copied from the Tau Ceti project at commit `67e852853c5192ec69775bb7ef417fc199e4190e` (Apache-2.0), see section 7. **No node obligation attaches to this file**: `Tor(A,B)` is torsion is not a corrected claim, so `certify-card-corrections` does not reach it, and the card is discharged by citing the upstream theorem with its hypotheses (§7c). It is kept as a supplement, not as a card requirement. **What it does not cover:** the card's statement is about **all** `A`, and this file proves the case where `A` is torsion — the reduction `Tor(A,B) ≅ Tor(T(A),B)` is §7b's named residual; the second half of the card (an element of order `n` in `Tor(A,B)` iff in both `A` and `B`), which no located formalization proves; and it says nothing about `Tor'`, the other orientation. It does not need — and does not supply — Hatcher's Lemma 3A.2 or a finite-stage witness, because the left-derived-functor definition of `Tor` is already resolution-independent. |
 
 ## 2. Chain-level checks in Sage
 
@@ -369,12 +369,17 @@ version 1.1.0, operations `POST /api/search`, `POST /api/search/batch`, `POST /a
 below was checked by opening the upstream repository at a pinned commit; the corpus is a discovery
 index and its snapshots are not commit-pinned evidence.
 
-Access note, so that neither a hit nor a miss is invented: the earlier report of a `403` from this
-API was a **client** artefact, not an authorization decision. Requesting `/api/search/batch` from
-Python's default `urllib` user agent returns `403` with no body; the same request over `curl` (or
-with any identifying user agent, which is what the corpus's own `scripts/formalization_corpus.py`
-sends) returns `200`, and `/api/search` answered `200` throughout. No endpoint, source or declaration
-below rests on a route around an access control.
+Access note, recorded factually. The earlier report of a `403` from this API is not explained by
+this pass, so its cause is not asserted. What was observed: `POST /api/search` with a JSON body over
+`curl` returned **HTTP 200** throughout; `POST /api/search/batch` sent from Python 3.12's
+`urllib.request` with its default user agent raised `HTTPError 403` (response body not read at the
+time); the same endpoint over `curl` with a well-formed body returned **HTTP 400** with body
+`{"Error":"Field required; Field required"}`, because the batch schema requires `{ID, Request}` items
+rather than bare search requests; and after correcting the body it returned **HTTP 200**. These are
+status codes and clients, nothing more. They do not establish *why* the 403 occurred, and no refusal
+is labelled here as authorized or unauthorised. No query below depends on the batch endpoint: every
+source and declaration recorded was retrieved by opening the upstream repository at the pinned commit
+shown, and the one endpoint that answered for every request in this pass was `/api/search`.
 
 ### 7a. Barycentric subdivision of singular chains (`E-HAT-2.1-25`)
 
@@ -409,20 +414,23 @@ for the coefficient formula and it is formalized, three times over, in three sys
 | **facebookresearch/atlas-lean** | corpus snapshot | `v1/Atlas/AlgebraicTopologyI/code/{Section12,Section13,SubdivisionSmall,LocalityPrinciple}.lean` | (not read) | Located, not inspected in this pass. Recorded so the next pass does not have to rediscover it. |
 
 **Routing, and what changed.** `cards/TorTorsionClass.lean` is a **port** of the four Tau Ceti
-lemmas on the route above and now compiles on the canonical baseline with no `sorryAx`. That proves
-the torsion case of `E-HAT-3.A-6`'s first claim. It is *a step*, not the claim: the card says
-`Tor(A,B)` is torsion for **all** `A`, and what is now proved is the case where `A` is torsion.
+lemmas on the route above and compiles on the canonical baseline with no `sorryAx`. It proves the
+torsion case of `E-HAT-3.A-6`'s first claim — *a step, not the claim*: the card says `Tor(A,B)` is
+torsion for **all** `A`, and what is proved is the case where `A` is torsion. It carries **no node
+obligation**; §7c explains why, and what the card is actually discharged by.
 
-**What remains genuinely ours (and what it needs, named):**
+**What is genuinely missing, and whether it is scheduled work:**
 
-- **The reduction `A ↦ T(A)` in the first claim of `E-HAT-3.A-6`.** Over `ℤ` one needs
-  `Tor_n(A,B) ≅ Tor_n(T(A),B)` for `n ≥ 1`, from `0 → T(A) → A → A/T(A) → 0` with `A/T(A)`
+- **The reduction `A ↦ T(A)` in the first claim of `E-HAT-3.A-6`. Not scheduled.** Over `ℤ` it
+  needs `Tor_n(A,B) ≅ Tor_n(T(A),B)` for `n ≥ 1`, from `0 → T(A) → A → A/T(A) → 0` with `A/T(A)`
   torsion-free, hence flat. Two pieces, both already in the located source and neither ours:
   flat ⇒ `Tor`-acyclic (Tau Ceti `isZero_Tor_succ_of_flat`, itself `Functor.isZero_leftDerived_succ`
   — neither is in the pin) and the long exact sequence of `Tor`
   (Tau Ceti `isZero_Tor_X₂`, `isZero_Tor_succ_X₃`, `isZero_Tor_one_X₃`, built on
   `shortExact_tensorResolutionShortComplex` with `tensorResolution`/`isZero_Tor_iff`, also not in the
-  pin). This is a **port**, of perhaps 150 lines, not research.
+  pin). It is a port of perhaps 150 lines rather than research, and it is the price of an
+  *executable local* proof of a claim that is neither corrected nor required by a node — so it waits
+  until a card needs `Tor`-acyclicity or the long exact sequence inside Lean for its own sake.
 - **The second half of `E-HAT-3.A-6`** (an element of order `n` in `Tor(A,B)` iff in both `A` and
   `B`). No located source proves it. `cards/TorTorsion.lean` certifies only its group-theoretic core.
   It still needs `Tor(\ZZ/n, B) ≅ B[n]` — for which `cards/TorReductions.lean` has the kernel
@@ -434,6 +442,47 @@ the torsion case of `E-HAT-3.A-6`'s first claim. It is *a step*, not the claim: 
   route is to port that statement rather than to keep fighting the `ModuleCat ℤ` instance diamonds in
   section 5b. Any repair attempted there should first ask whether the general statement makes the
   special one unnecessary.
+
+### 7c. What these findings discharge, and what they do not oblige
+
+The repository's acceptance criterion is narrow, and this is the point at which that matters.
+`certify-card-corrections` (TODO.md) says: *"A mathematical correction to a card is settled only
+with a Lean formalization or an exact Sage proof/certificate **of the corrected claim**, published
+under `proofs/`."* `AGENTS.md` §"Data issues" ranks *incorrect data* — statements, titles,
+classifications — as the most urgent class and says completion of solutions is "a very low priority
+concern and is NOT a data issue".
+
+| Card | What was corrected on it | What the node requires | Discharged by |
+| --- | --- | --- | --- |
+| `E-HAT-3.A-6` | The printed `iff` restored (the card carried only the "if" half); the proof step that read `B/B_p` as torsion-free replaced by the absence of `p`-torsion | A certificate **of the corrected claims** | The `iff` is settled by the source: Hatcher §3.A Exercise 6 prints it, and the card now matches. The `p`-torsion step is certified by `cards/TorReductions.lean` (`torsionBy_pow_eq_bot_of_no_p_torsion`, `mem_of_p_smul_mem_of_pPrimary`, `map_torKernel_mulByInt`), and the converse's group-theoretic core by `cards/TorTorsion.lean`. |
+| `E-HAT-2.1-25` | The displayed formula corrected from the ascending to the descending barycentric parametrisation, with the sign `(-1)^{n(n+1)/2}` | A certificate of the corrected formula | `cards/BarySubdiv.lean` (`hatcher_formula_arbitrary`), plus the bounded regression `cards/bary_regression.py`. |
+
+Two consequences, stated because the opposite was assumed earlier in this session.
+
+1. **The statement "`Tor(A,B)` is a torsion group" is not a corrected claim.** It is what the card
+   already said, and `certify-card-corrections` does not reach it. A local formalization of it is
+   therefore **not** an obligation of any node, and `cards/TorTorsionClass.lean` is a **supplement**
+   with no card obligation attached, kept because it is committed and it compiles, not because a
+   node demanded it. What the card requires is a correct sourced solution, and that is supplied by
+   citation — the source is `TauCeti.isAddTorsion_Tor_left` in
+   `https://github.com/TauCetiProject/TauCeti/blob/67e852853c5192ec69775bb7ef417fc199e4190e/TauCeti/AlgebraicTopology/SerreClass/TensorTor.lean`
+   (Apache-2.0), whose exact statement is: for a commutative ring `R`, `M N : ModuleCat R` and
+   `IsAddTorsion M`, every `n : ℕ` satisfies `IsAddTorsion (((Tor (ModuleCat R) n).obj M).obj N)`.
+   Note what that hypothesis is and is not — it asks `M` itself to be torsion, and the card's
+   `Tor(A,B)` is torsion for unrestricted `A`; the citation covers the reduction target, not the
+   card as printed, and the card says so.
+2. **The 150-line port described in §7b is not scheduled work.** It is the price of an *executable*
+   local proof of a fact that is already formalized upstream and is not a corrected claim here. It
+   becomes justified only if a future card needs `Tor`-acyclicity of flat modules or the long exact
+   sequence of `Tor` *inside Lean* for its own sake. Until then the reference is the citation.
+
+This also settles how the two §7b residuals should be read. `TorBridge.lean`'s packaging step is not
+a card correction either: it is supporting development, and its honest resolution is to cite
+`CategoryTheory.ShortComplex.ShortExact.torOneIsoKernel` (Tau Ceti,
+`https://github.com/TauCetiProject/TauCeti/blob/67e852853c5192ec69775bb7ef417fc199e4190e/TauCeti/CategoryTheory/Monoidal/Tor.lean`,
+exact statement: for a short exact sequence `S` with `S.X₁`, `S.X₂` projective, `Tor₁(X, S.X₃) ≅
+kernel (X ◁ S.f)`, natural in `X` and in maps of presentations) rather than to keep maintaining a
+special case of it.
 
 ## Checking
 

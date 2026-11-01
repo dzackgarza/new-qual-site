@@ -114,6 +114,33 @@ audit:
     demanded for the presentation-level route is not supplied here and is not needed for this case,
     because `Tor` is defined as a left derived functor and `ProjectiveResolution.isoLeftDerivedObj`
     already removes the choice of resolution.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Correction to the previous event's framing, which treated a port as a step toward a card
+    obligation. It is neither. The repository's criterion is `certify-card-corrections`: a
+    *corrected* claim is settled only with a certificate of that claim. The claims corrected on this
+    card were the restored printed `iff` and the replacement of the false `B/B_p` torsion-free premise
+    by the absence of `p`-torsion; those are settled by the source text and by
+    `proofs/cards/TorReductions.lean` (`torsionBy_pow_eq_bot_of_no_p_torsion`,
+    `mem_of_p_smul_mem_of_pPrimary`, `map_torKernel_mulByInt`), with the converse's group-theoretic
+    core in `proofs/cards/TorTorsion.lean`. That "$\operatorname{Tor}(A,B)$ is a torsion group" was
+    *not* a corrected claim, so no node requires a local formalization of it, and
+    `proofs/cards/TorTorsionClass.lean` is recorded in proofs/README.md §1 and §7c as a supplement
+    with no obligation attached rather than as progress on one. The card's requirement — a correct,
+    sourced solution — is met by citation, and the citation is
+    `TauCeti.isAddTorsion_Tor_left` at
+    https://github.com/TauCetiProject/TauCeti/blob/67e852853c5192ec69775bb7ef417fc199e4190e/TauCeti/AlgebraicTopology/SerreClass/TensorTor.lean
+    (Apache-2.0), statement verbatim: for `{R} [CommRing R] {M N : ModuleCat R}`,
+    `IsAddTorsion M → (n : ℕ) → IsAddTorsion (((Tor (ModuleCat R) n).obj M).obj N)`, proved via
+    `ObjectProperty.prop_leftDerived_obj` and the subobject/quotient closure of the torsion class.
+    What that citation covers, stated exactly: it gives the case in which the first variable is
+    already torsion, over any commutative ring. It does **not** give this card as printed, which
+    quantifies over all `A`; the passage from `A` to its torsion subgroup is not covered by it and is
+    not claimed here. The alternative route the card writes out — finitely generated stages,
+    $\operatorname{Tor}(A_\alpha,B)\cong\bigoplus_j B[n_j]$, then the direct limit — is Hatcher's own
+    and remains the card's displayed proof; the citation is corroboration, not a replacement of it.
 ---
 
 ::: {.problem}

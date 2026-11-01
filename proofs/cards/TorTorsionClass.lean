@@ -33,11 +33,16 @@ import.
 
 ## What this does and does not cover
 
+**This file is a supplement, not a card obligation.** `E-HAT-3.A-6` requires a correct sourced
+solution; the fact below is not a *corrected* claim on that card, so `certify-card-corrections`
+does not reach it, and the card is discharged by citing the upstream theorem with its hypotheses
+(see `proofs/README.md` §7c). The file is kept because it is committed and it compiles.
+
 It proves the torsion case of the first half of `E-HAT-3.A-6`: if the module `M` underlying the
 first variable **is** torsion, then `Tor_n(M, N)` is a torsion group, for every `N` and over every
-commutative ring.  That is not yet the card's statement, which quantifies over all `A`: the
+commutative ring.  That is not the card's statement, which quantifies over all `A`: the
 remaining step is the reduction `Tor_n(A, B) ≅ Tor_n(T(A), B)` (via flatness of `A ⧸ T(A)` and the
-long exact sequence of `Tor`), and it is recorded as a residual in `proofs/README.md` §7b.
+long exact sequence of `Tor`), which is **not** scheduled work — see §7c.
 
 It also does **not** prove the second half of the card (that `Tor(A, B)` contains an element of
 order `n` iff both `A` and `B` do); that remains a separate obligation, and
