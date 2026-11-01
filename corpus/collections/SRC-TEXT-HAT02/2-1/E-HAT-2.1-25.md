@@ -181,6 +181,38 @@ audit:
     (the exercise asks for the coefficient formula); nothing else is deferred. 58 printed theorems,
     exit 0 on the canonical baseline, no errors of any form, zero `sorryAx`, axioms only `propext`,
     `Classical.choice`, `Quot.sound`.
+- event: source-checked
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Prior-art check on the certificate above, run through the formalization corpus API (OpenAPI
+    1.1.0) under the formulations barycentric subdivision, singular_subdivision, simplicial_subdivision,
+    `barycentric subBarycenter`, subdivision boundary chain, iterated subdivision, `file:Tor.lean`-style
+    filters, then opened at pinned commits. What was checked and what it changes. (1) Mathlib at the
+    pinned `db584cd6d46c92f209a44c0f1c829460d327499d` has no barycentric subdivision of singular
+    chains and no `∂S = S∂`; the only subdivision there is the simplicial-**set** functor `SSet.sd` in
+    `AlgebraicTopology/SimplicialSet/Subdivision.lean`. Verified by search of that tree, not inferred
+    from a missing search hit. (2) The formula is already formalized in Lean 4 twice:
+    `TauCeti/AlgebraicTopology/Singular/Subdivision/Basic.lean` at TauCeti commit 67e852853c
+    (`sum_sign_boundary`, `singularSubdivisionChainMap`, `singularSubdivision`) with
+    `…/Subdivision/Homotopy.lean` adding `∂P + P∂ = 1 − S`, and
+    `DifferentialGeometry/External/CanonicalTopology/Topology/Homology/SingularSubdivisionBoundary.lean`
+    at qinz1yang/differential-geometry commit fd2f07fba4 (`integralSingularSubdivision_boundary_simplex`,
+    `integralSingularSubdivision_boundary`), both Apache-2.0. (3) Cross-prover: Isabelle
+    `src/HOL/Homology/Simplices.thy` (`simplicial_subdivision`, `singular_subdivision`) and HOL Light
+    `Multivariate/homology.ml` at commit 31fe213ce4 (`simplicial_subdivision` l.1716,
+    `singular_subdivision` l.2031, `CHAIN_BOUNDARY_SIMPLICIAL_SUBDIVISION` l.1797,
+    `CHAIN_BOUNDARY_SINGULAR_SUBDIVISION` l.2293, `CHAIN_HOMOTOPIC_SINGULAR_SUBDIVISION` l.2598), the
+    last with hypotheses checked at the source: `singular_chain (p,s) c ⟹
+    chain_boundary p (singular_subdivision p c) = singular_subdivision (p-1) (chain_boundary p c)`.
+    Consequence recorded rather than silently absorbed: `proofs/cards/BarySubdiv.lean` is an
+    independent re-derivation in an explicit coefficient model, not the first formalization of this
+    formula, and the card's notes and proofs/README.md §7a now say so. The decision not to develop
+    `∂S = S∂` locally is corroborated by this lookup — that identity is proved in Lean 4 in both
+    projects above and in HOL Light and Isabelle — but no claim in this card rests on the upstream
+    proofs: the certificate here is separate and its scope is unchanged. Not checked in this pass:
+    the facebookresearch/atlas-lean `AlgebraicTopologyI` files, which the corpus lists and which were
+    located but not opened.
 ---
 
 ::: {.problem}

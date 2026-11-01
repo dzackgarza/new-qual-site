@@ -88,6 +88,32 @@ audit:
     "$B/B_p$ has no $p$-torsion" means). Additivity and the direct-limit step are cited, not
     formalized, and proofs/README.md lists that as an outstanding obligation rather than claiming
     the reduction is complete.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Formalization-corpus lookup before further authorship, and a port that follows from it. The
+    corpus was searched through its live API (OpenAPI 1.1.0) under several formulations (Tor,
+    torFunctor, leftDerived tensor, torsion product, Tor of cyclic module, derived tensor torsion,
+    `file:Tor.lean`, `content:"torOneIsoKernel"`, `content:"Tor' C"`); the earlier `403` was a client
+    user-agent artefact and not an access denial, so no coverage was lost. Result: the first claim's
+    torsion case is already formalized, and by a different route. `TauCeti.isAddTorsion_Tor_left`
+    (TauCetiProject/TauCeti at commit 67e852853c5192ec69775bb7ef417fc199e4190e, Apache-2.0,
+    `TauCeti/AlgebraicTopology/SerreClass/TensorTor.lean`) proves that `Tor_n(M,N)` is torsion
+    whenever `M` is, for arbitrary `N` and over any commutative ring, via `ObjectProperty.prop_leftDerived_obj`
+    (a class closed under subobjects and quotients is closed under left derived functors whose
+    projective values lie in it). `proofs/cards/TorTorsionClass.lean` ports that argument and its
+    three dependencies and compiles on the canonical baseline with no `sorryAx`, axioms only
+    `propext`, `Classical.choice`, `Quot.sound`. What this does **not** do, stated so it is not read
+    as the card: the card says `Tor(A,B)` is torsion for all `A`, and the file proves the case where
+    `A` is torsion. The remaining reduction `Tor_n(A,B) ≅ Tor_n(T(A),B)` needs flat ⇒ Tor-acyclic and
+    the long exact sequence of Tor, both of which exist upstream as TauCeti's `isZero_Tor_succ_of_flat`
+    and `isZero_Tor_X₂`/`isZero_Tor_succ_X₃` and neither of which is in the pinned Mathlib; that is a
+    port, not research, and proofs/README.md §7b records it as the next step. The converse half of the
+    card is untouched by this event and no located formalization proves it. The finite-stage witness
+    demanded for the presentation-level route is not supplied here and is not needed for this case,
+    because `Tor` is defined as a left derived functor and `ProjectiveResolution.isoLeftDerivedObj`
+    already removes the choice of resolution.
 ---
 
 ::: {.problem}

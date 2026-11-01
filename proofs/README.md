@@ -59,6 +59,7 @@ state, after `cards/BarySubdiv.lean`, is the following.
 
 | `cards/TorBridge.lean` | `E-HAT-3.A-6`, `E-HAT-3.A-2` | **`Tor₁` is the homology of the tensored projective resolution**, proved: `torOneIsoHomology` gives `((tensorLeft B).leftDerived 1).obj A ≅ H₁(P.complex ⊗ B)` for every projective resolution `P` of `A`, by `ProjectiveResolution.isoLeftDerivedObj` at degree one, with the tensored complex and its degree-1 differential named (`resolutionTensor`, `tensorDiffOne`). Axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`. **Also proved:** the two-term step, `homologyIsoKernelOfZero`, `homologyOneIsoKernelOfD`, `homologyOneIsoKernel` and `tensor_d_two_one_eq_zero`, giving `torOneIsoKernel`: for a projective resolution with `IsZero (P.complex.X 2)`, `Tor₁(A,B) ≅ kernel((resolutionTensor B P).d 1 0)`, plus `torOneIsoKerLinear` composed with `ModuleCat.kernelIsoKer`. The map-level content is `resolutionTensor_d` (the tensored differential is the tensor of the resolution's differential). **Also proved:** the orientation `ker_rTensor_eq_comap_ker_lTensor` (`ker (f.rTensor N)` is the `comm`-preimage of `ker (f.lTensor N)`, by `LinearMap.lTensor_comm`), the pinned kernel module `kerModule` with `kernelIsoKerModule` (the `ℤ`-module instance diamond resolved at that boundary), and `tensor_d_hom_eq_lTensor` (the tensored differential is the resolution differential with `B` on the left). **Open:** the single packaging step that composes the two-term bridge with the `comm`-transport into one isomorphism naming `kerModule` of `f.hom.rTensor ↥B`. See section 5b. |
 | `cards/ColimitTensor.lean` | `E-HAT-3.A-6`, `E-HAT-3.A-2` | Exercise 4 of §3.A, the `⊗` half, completely: `tensorLeft_preserves_colimits` (for `B : ModuleCat ℤ`, `tensorLeft B` preserves colimits, Mathlib's instance `instPreservesColimitsTensorLeft`) and `tensorLeft_colim_iso`, the comparison `B ⊗ colim F ≅ colim (B ⊗ F ·)` for any `F : J ⥤ ModuleCat ℤ` with `HasColimitsOfShape J (ModuleCat ℤ)`, built from `PreservesColimit.preserves` (which yields `Nonempty (IsColimit _)`, extracted with `Classical.choice`) and `IsColimit.coconePointUniqueUpToIso`. Axioms: propext, Classical.choice, Quot.sound. **Not** certified: the `Tor` half. |
+| `cards/TorTorsionClass.lean` | `E-HAT-3.A-6` | **`Tor` of a torsion module is torsion, by the torsion-class route instead of a free resolution.** `prop_homology` (a property closed under subobjects and quotients passes from a complex term to its homology in the same degree) and `prop_leftDerived_obj` (if an additive functor sends projectives into such a class, every left derived functor does) are proved for a general abelian setting; `AddCommGrpCat.isTorsion` is the class of torsion abelian groups with its `IsClosedUnderSubobjects` and `IsClosedUnderQuotients` instances; `isAddTorsion_tensorProduct_left` (tensoring a torsion monoid is torsion, no flatness, no finite generation); and `isAddTorsion_Tor_left`: for `M`, `N` in `ModuleCat R` over **any** commutative ring, `IsAddTorsion M → IsAddTorsion (((Tor (ModuleCat R) n).obj M).obj N)`, with the `ℤ` form `isAddTorsion_tor_int`. Axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`; `exit 0`. **Provenance:** this is a **port**, not new mathematics — the four lemmas are copied from the Tau Ceti project at commit `67e852853c5192ec69775bb7ef417fc199e4190e` (Apache-2.0), see section 7. **What it does not cover:** the card's statement is about **all** `A`, and this file proves the case where `A` is torsion — the reduction `Tor(A,B) ≅ Tor(T(A),B)` is §7b's named residual; the second half of the card (an element of order `n` in `Tor(A,B)` iff in both `A` and `B`), which no located formalization proves; and it says nothing about `Tor'`, the other orientation. It does not need — and does not supply — Hatcher's Lemma 3A.2 or a finite-stage witness, because the left-derived-functor definition of `Tor` is already resolution-independent. |
 
 ## 2. Chain-level checks in Sage
 
@@ -359,6 +360,80 @@ and nothing is claimed as certified. No machine certificate exists for any of th
 
 A `solution-reviewed` note on a card records that the proof was read and what was checked;
 it is a review record, not a certificate.
+
+## 7. Reuse audit: what the formalization corpus already owns
+
+Run before any further authorship of the two §3.A and §2.1 developments, through the formalization
+corpus (the live OpenAPI contract at `https://formalization-corpus.dzackgarza.com/api/openapi.json`,
+version 1.1.0, operations `POST /api/search`, `POST /api/search/batch`, `POST /api/list`). Every row
+below was checked by opening the upstream repository at a pinned commit; the corpus is a discovery
+index and its snapshots are not commit-pinned evidence.
+
+Access note, so that neither a hit nor a miss is invented: the earlier report of a `403` from this
+API was a **client** artefact, not an authorization decision. Requesting `/api/search/batch` from
+Python's default `urllib` user agent returns `403` with no body; the same request over `curl` (or
+with any identifying user agent, which is what the corpus's own `scripts/formalization_corpus.py`
+sends) returns `200`, and `/api/search` answered `200` throughout. No endpoint, source or declaration
+below rests on a route around an access control.
+
+### 7a. Barycentric subdivision of singular chains (`E-HAT-2.1-25`)
+
+| Source | Pin | Path / declarations | Licence | Comparison |
+| --- | --- | --- | --- | --- |
+| **Mathlib (ours)** | `db584cd6d46c92f209a44c0f1c829460d327499d` | `AlgebraicTopology/SimplicialSet/Subdivision.lean`: `SSet.sd`, `SSet.ex`, `sdExAdjunction`. `AlgebraicTopology/SingularHomology/Basic.lean` has the singular chain functor but **no** subdivision, and no `∂S = S∂`. | Apache-2.0 | Route 1 fails: the only subdivision in the pin is the simplicial-**set** subdivision functor `sd`, not the barycentric subdivision of singular chains. |
+| **Tau Ceti** | `67e852853c5192ec69775bb7ef417fc199e4190e` | `TauCeti/AlgebraicTopology/Singular/Subdivision/Basic.lean`: `BarycentricSubdivision.vertex` (`π k ↦` barycentre of the face spanned by `π k, …, π n`), `sum_sign_face_succ_eq_zero`, `sum_sign_face_zero`, **`sum_sign_boundary`**, `singularSubdivisionX`, **`singularSubdivisionChainMap`** (`∂S = S∂` as a chain map), `singularSubdivision` (natural in `X`). `…/Subdivision/Homotopy.lean`: `AffineChain.prism`, **`boundary_prism_add_prism_boundary`** (`∂P + P∂ = 1 − S`), `singularSubdivisionHomotopy`, `homologyMap_singularSubdivisionChainMap`. Also `Small/Basic.lean` and `Twisted/Subdivision.lean`. | Apache-2.0 | **Strictly stronger than `cards/BarySubdiv.lean`.** Stated for a preadditive category `C` with coproducts and any `n`, on the maintained singular chain complex, and it includes the chain-map property our file explicitly does not claim. Its `vertex π k` is the same descending-barycentre model our `chainOf`/`descVertex` builds by hand; `sum_sign_boundary` is our pair-cancellation plus facet reindexing in about 40 lines. |
+| **qinz1yang/differential-geometry** | `fd2f07fba4c6c102ba626c59153ad98da8f0d442` | `DifferentialGeometry/External/CanonicalTopology/Topology/Homology/SingularSubdivisionBoundary.lean`: `integralSingularSubdivision_boundary_simplex` (the formula for one `(n+1)`-simplex), `integralSingularSubdivision_boundary` (chain level, same carrier), `integralSingularSubdivisionChainMap`. Plus `SingularSubdivision.lean`, `UniversalSubdivisionFaces.lean`, `UniversalHomotopyBoundary.lean`. | Apache-2.0 | Independent second Lean 4 formalization of the same identity, in an `integralSingularChains` API of its own. (`Topology/Homology/Subdivision/Basic.lean` returned `404` at this commit; the live files are under `External/CanonicalTopology/`.) |
+| **Isabelle** | corpus snapshot `isabelle-prover__mirror-isabelle` | `src/HOL/Homology/Simplices.thy`: `simplicial_subdivision`, `singular_subdivision`, `chain_boundary_simplicial_subdivision`, `naturality_singular_subdivision`, `singular_chain_singular_subdivision`. | BSD-style | Cross-prover reference; the Tau Ceti Lean development follows this file's shape. |
+| **HOL Light** | `31fe213ce4f7ee7296366511335998ebeb956900` | `Multivariate/homology.ml`: `simplicial_subdivision` (l. 1716), `singular_subdivision` (l. 2031), `CHAIN_BOUNDARY_SIMPLICIAL_SUBDIVISION` (l. 1797), `CHAIN_BOUNDARY_SINGULAR_SUBDIVISION` (l. 2293), `CHAIN_HOMOTOPIC_SINGULAR_SUBDIVISION` (l. 2598). Verbatim hypotheses: `chain_boundary p (singular_subdivision p c) = singular_subdivision (p-1) (chain_boundary p c)` for `singular_chain (p,s) c`; and `?h` additive in `c`, sending `frag_0` to `frag_0`, raising degree by one, with `chain_boundary (p+1) (h p c) + h (p-1) (chain_boundary p c) = singular_subdivision p c - c` for `singular_chain (p,top) c`. | HOL Light BSD-style (`LICENSE`, © University of Cambridge 1998, John Harrison and others) | The original machine-checked statement of both facts. Vendored verbatim in `CakeML__candle` at the same path. |
+
+**Routing.** Mathlib fails, and Tau Ceti is not a Lake dependency of this repository (nor of the
+pinned image), so the gate's route 3 applies: cite, do not re-derive. Consequence for the
+deliverable: `cards/BarySubdiv.lean` is an **independent re-derivation in an explicit coefficient
+model** (`FreeAbelianGroup (List (Finset (Fin N)))`, every coefficient computed), not the first
+formalization of the formula, and the card's notes must say so. The decision not to develop
+`∂S = S∂` locally is now backed by prior art rather than by an argument from scope: that identity
+is already proved in Lean 4 twice (Tau Ceti `singularSubdivisionChainMap`; qinz1yang
+`integralSingularSubdivisionChainMap`) and in HOL Light and Isabelle. Nothing about the card's claim
+is missing from the literature; what our file adds is a coefficient-level model, which is the part
+the card displays.
+
+**Genuinely task-specific glue that no located source provides:** none for this card. The card asks
+for the coefficient formula and it is formalized, three times over, in three systems.
+
+### 7b. `Tor` over `ℤ` (`E-HAT-3.A-6`, `E-HAT-3.A-2`)
+
+| Source | Pin | Path / declarations | Licence | Comparison |
+| --- | --- | --- | --- | --- |
+| **Mathlib (ours)** | `db584cd6…` | `CategoryTheory/Monoidal/Tor.lean`: `Tor`, `Tor'`, `isZero_Tor_succ_of_projective`, and the file's own note "we have almost nothing to say about it". `CategoryTheory/Abelian/LeftDerived.lean`: `ProjectiveResolution.isoLeftDerivedObj`, `Functor.isZero_leftDerived_obj_projective_succ`. `CategoryTheory/ObjectProperty/{Basic,EpiMono,ClosedUnderIsomorphisms}.lean`: `inverseImage`, `IsClosedUnderSubobjects`, `IsClosedUnderQuotients`, `prop_of_mono`, `prop_of_epi`, `prop_of_iso`. `RingTheory/TensorProduct/Finite.lean`: **`Submodule.exists_fg_le_eq_rTensor_inclusion`**. `RingTheory/Finiteness/Basic.lean`: **`Submodule.fg_iff_compact`**. | Apache-2.0 | The primitives are all here; the *closed-under-left-derived-functors* lemma and every `Tor`-specific vanishing statement are not. Crucially, the finite-generation step that `cards/TorStages.lean` constructs by hand is a **library lemma** in this pin: `exists_fg_le_eq_rTensor_inclusion` says that for `x : I ⊗ M` there is a finitely generated `J ≤ I` with `x` in the image of `J ⊗ M`, and `fg_iff_compact` turns "finitely generated" into compactness of the submodule lattice. |
+| **Tau Ceti** | `67e852853c…` | `CategoryTheory/ObjectProperty/Homology.lean`: `prop_homology`, **`prop_leftDerived_obj`**. `AlgebraicTopology/SerreClass/Torsion.lean`: `AddCommGrpCat.isTorsion` + `IsSerreClass` instance. `AlgebraicTopology/SerreClass/TensorTor.lean`: **`isAddTorsion_Tor_left`**, `isKilledBySomePower_Tor_left`. `LinearAlgebra/TensorProduct/Torsion.lean`: `isTorsionBy_tensorProduct_left`, `isAddTorsion_tensorProduct_left`. `CategoryTheory/Monoidal/Tor.lean`: **`ShortExact.torOneIsoKernel`**, `isZero_Tor_add_two`, naturality in `X` and in maps of presentations, `Tor'` additivity. `CategoryTheory/Abelian/LeftDerived.lean`: `leftDerivedOneIsoKernel`, **`Functor.isZero_leftDerived_succ`**, `NatTrans.leftDerived_add`, `ShortExact.projectiveResolution`, `isZero_leftDerived_add_two`. `Algebra/Category/ModuleCat/Monoidal/Tor.lean`: `isZero_Tor_succ_of_flat` (**flat ⇒ `Tor`-acyclic**), **`isZero_Tor_succ_quotient_iSup`** (`Tor` of a quotient by a directed union vanishes when it vanishes at every stage), `isZero_Tor_X₂`, `isZero_Tor_succ_X₃`, `isZero_Tor_one_X₃`, `isZero_Tor_prod`, `isZero_Tor_restrictScalars_iff`. | Apache-2.0 | **Part of the card's first claim, already proved, in general form**: `isAddTorsion_Tor_left` is `Tor_n(M,N)` torsion whenever `M` *is* torsion, for any `N` over any commutative ring. It uses no free resolution, no finite stage and no Lemma 3A.2, because `Tor` is *defined* as a left derived functor and `isoLeftDerivedObj` already gives resolution-independence. It is **not** the card's statement, which quantifies over all `A`: see the residual named below. Independently, `isZero_Tor_succ_quotient_iSup` is what the direct-limit step of Hatcher's proof needs, and `isZero_Tor_succ_of_flat` is our `torKernel_eq_bot_of_flat_cokernel` in categorical form. |
+| **facebookresearch/atlas-lean** | corpus snapshot | `v1/Atlas/AlgebraicTopologyI/code/{Section12,Section13,SubdivisionSmall,LocalityPrinciple}.lean` | (not read) | Located, not inspected in this pass. Recorded so the next pass does not have to rediscover it. |
+
+**Routing, and what changed.** `cards/TorTorsionClass.lean` is a **port** of the four Tau Ceti
+lemmas on the route above and now compiles on the canonical baseline with no `sorryAx`. That proves
+the torsion case of `E-HAT-3.A-6`'s first claim. It is *a step*, not the claim: the card says
+`Tor(A,B)` is torsion for **all** `A`, and what is now proved is the case where `A` is torsion.
+
+**What remains genuinely ours (and what it needs, named):**
+
+- **The reduction `A ↦ T(A)` in the first claim of `E-HAT-3.A-6`.** Over `ℤ` one needs
+  `Tor_n(A,B) ≅ Tor_n(T(A),B)` for `n ≥ 1`, from `0 → T(A) → A → A/T(A) → 0` with `A/T(A)`
+  torsion-free, hence flat. Two pieces, both already in the located source and neither ours:
+  flat ⇒ `Tor`-acyclic (Tau Ceti `isZero_Tor_succ_of_flat`, itself `Functor.isZero_leftDerived_succ`
+  — neither is in the pin) and the long exact sequence of `Tor`
+  (Tau Ceti `isZero_Tor_X₂`, `isZero_Tor_succ_X₃`, `isZero_Tor_one_X₃`, built on
+  `shortExact_tensorResolutionShortComplex` with `tensorResolution`/`isZero_Tor_iff`, also not in the
+  pin). This is a **port**, of perhaps 150 lines, not research.
+- **The second half of `E-HAT-3.A-6`** (an element of order `n` in `Tor(A,B)` iff in both `A` and
+  `B`). No located source proves it. `cards/TorTorsion.lean` certifies only its group-theoretic core.
+  It still needs `Tor(\ZZ/n, B) ≅ B[n]` — for which `cards/TorReductions.lean` has the kernel
+  computation for one resolution, and the ported `torOneIsoKernel` would give it for any projective
+  presentation — and the primary decomposition of `\operatorname{Tor}`.
+- **The packaging step in `cards/TorBridge.lean`** (composing `torOneIsoKernel` with the orientation
+  transport) is *not* card-specific. `ShortExact.torOneIsoKernel` upstream states the same
+  isomorphism in a general monoidal abelian category, with naturality in both variables; the honest
+  route is to port that statement rather than to keep fighting the `ModuleCat ℤ` instance diamonds in
+  section 5b. Any repair attempted there should first ask whether the general statement makes the
+  special one unnecessary.
 
 ## Checking
 
