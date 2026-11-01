@@ -1,5 +1,7 @@
 import Mathlib
 
+open scoped BigOperators
+
 /-!
 # `E-HAT-3.A-6` / `E-HAT-3.A-2`: genuine subgroup stages of a presented group
 
@@ -10,13 +12,17 @@ For a presentation `f : K →ₗ[ℤ] F` of `A = F / range f` and a submodule `F
 `stageMap` is the map `A' → A` induced by `F' ↪ F`, and `stageMap_injective` shows it is
 injective — the point a bare sub-presentation does not give, since the cokernel of a
 sub-presentation need not embed in `A`. Built with Mathlib's `Submodule.mapQ` and
-`Submodule.ker_mapQ`: the kernel of `stageMap` is `p.map p.mkQ` for `p` the stage's
-relations, which is `⊥` by `Submodule.Quotient.mk_eq_zero`.
+`Submodule.ker_mapQ` and `Submodule.mkQ_map_self`: the kernel of `stageMap` is `p.map p.mkQ`
+for `p` the stage's relations, which is `⊥`.
 
 `stageRelMap`, `range_stageRelMap` and `stageIncl` present the stage and give the transition
-maps, `stageMap_comp_stageIncl` the compatibility of the triangles into `A`. The last section
-records what a stage must be for the filtered-colimit step of Exercise 4 of §3.A to descend:
-a *direct summand* of `F`, not merely a submodule.
+maps, `stageMap_comp_stageIncl` the compatibility of the triangles into `A`.
+
+For the filtered-colimit step of Exercise 4 of §3.A a stage must be a *direct summand* of `F`,
+not merely a submodule: `rTensor_subtype_injective_of_retraction` is the criterion,
+`rTensor_subtype_not_injective` certifies that an arbitrary submodule fails, and for the
+cards' free `F` the summands are built from finite sets of basis vectors, which completes the
+descent in `exists_stage_of_free`.
 -/
 
 namespace TorStages
@@ -39,15 +45,11 @@ noncomputable def stageMap (f : K →ₗ[ℤ] F) (F' : Submodule ℤ F) :
   Submodule.mapQ _ (LinearMap.range f) F'.subtype le_rfl
 
 /-- The stage embeds in `A`. By `Submodule.ker_mapQ` the kernel of `stageMap` is
-`p.map p.mkQ` for `p` the stage's relations, and a member of that is `p.mkQ x` with `x ∈ p`,
-hence `0` by `Submodule.Quotient.mk_eq_zero`. -/
+`p.map p.mkQ` for `p` the stage's relations, and `Submodule.mkQ_map_self` is `map p.mkQ p = ⊥`. -/
 theorem stageMap_injective (f : K →ₗ[ℤ] F) (F' : Submodule ℤ F) :
     Function.Injective (stageMap f F') := by
   rw [← LinearMap.ker_eq_bot, stageMap, Submodule.ker_mapQ]
-  rw [Submodule.eq_bot_iff]
-  rintro y ⟨x, hx, rfl⟩
-  rw [Submodule.mkQ_apply]
-  simpa using hx
+  exact Submodule.mkQ_map_self _
 
 /-! ## The stage's own presentation, and the transition maps
 
@@ -232,6 +234,124 @@ theorem exists_stage_witness_of_retraction {B : Type*} [AddCommGroup B]
       ← LinearMap.rTensor_comp, hcomp, hu]
   exact (rTensor_subtype_injective_of_retraction F' ρ hρ) (by rw [h0, map_zero])
 
+
+/-! ### Choosing the stages: finitely generated direct summands of a free `F`
+
+For the cards `F` is free, and there the missing choice of `F'` is available: the span of
+*any finite set of basis vectors* is a direct summand of `F`, because discarding the
+coordinates outside that finite set (`coordProj`) retracts the inclusion. So every finitely
+generated `P ≤ K` sits inside a finitely generated direct summand of `F`
+(`exists_fg_summand`), and with `exists_stage_witness_of_retraction` the descent of a Tor
+class to its stage is complete (`exists_stage_of_free`).
+-/
+
+section FreeMiddleTerm
+
+variable {ι : Type*}
+
+/-- Discarding the coordinates of `b` outside the finite set `t`. -/
+noncomputable def coordProj (b : Module.Basis ι ℤ F) (t : Finset ι) : F →ₗ[ℤ] F :=
+  ∑ i ∈ t, ((Finsupp.lapply i).comp b.repr.toLinearMap).smulRight (b i)
+
+theorem coordProj_apply (b : Module.Basis ι ℤ F) (t : Finset ι) (x : F) :
+    coordProj b t x = ∑ i ∈ t, (b.repr x) i • b i := by
+  simp [coordProj]
+
+/-- The span of the basis vectors indexed by the finite set `t`. -/
+abbrev coordSpan (b : Module.Basis ι ℤ F) (t : Finset ι) : Submodule ℤ F :=
+  Submodule.span ℤ (b '' (t : Set ι))
+
+/-- A combination of the basis vectors in `t` uses only coordinates in `t`. -/
+theorem support_subset_coordSpan (b : Module.Basis ι ℤ F) (t : Finset ι) {y : F}
+    (hy : y ∈ coordSpan b t) : (b.repr y).support ⊆ t := by
+  have hle : coordSpan b t ≤
+      Submodule.comap b.repr.toLinearMap (Finsupp.supported ℤ ℤ (t : Set ι)) := by
+    rw [coordSpan, Submodule.span_le]
+    rintro _ ⟨i, hi, rfl⟩
+    refine Submodule.mem_comap.mpr ?_
+    rw [show b.repr.toLinearMap (b i) = b.repr (b i) from rfl, Module.Basis.repr_self,
+      Finsupp.mem_supported]
+    exact Finset.Subset.trans Finsupp.support_single_subset (by simpa using hi)
+  exact hle hy
+
+/-- Discarding the other coordinates fixes the span of `t` pointwise. -/
+theorem coordProj_eq_self (b : Module.Basis ι ℤ F) (t : Finset ι) {y : F}
+    (hy : y ∈ coordSpan b t) : coordProj b t y = y := by
+  rw [coordProj_apply]
+  conv_rhs => rw [← b.linearCombination_repr y, Finsupp.linearCombination_apply, Finsupp.sum]
+  exact (Finset.sum_subset (support_subset_coordSpan b t hy) fun i _ hi => by
+    rw [Finsupp.notMem_support_iff.mp hi, zero_smul]).symm
+
+/-- The retraction of `F` onto the span of the basis vectors in `t`. -/
+noncomputable def coordRetract (b : Module.Basis ι ℤ F) (t : Finset ι) :
+    F →ₗ[ℤ] coordSpan b t :=
+  (coordProj b t).codRestrict _ fun x => by
+    rw [coordProj_apply]
+    exact Submodule.sum_mem _ fun i hi =>
+      Submodule.smul_mem _ _ (Submodule.subset_span ⟨i, hi, rfl⟩)
+
+/-- The span of finitely many basis vectors is a direct summand of `F`. -/
+theorem coordRetract_comp_subtype (b : Module.Basis ι ℤ F) (t : Finset ι) :
+    (coordRetract b t).comp (coordSpan b t).subtype = LinearMap.id := by
+  ext y
+  exact coordProj_eq_self b t y.2
+
+theorem coordSpan_fg (b : Module.Basis ι ℤ F) (t : Finset ι) : (coordSpan b t).FG := by
+  classical
+  have h : ((t.image b : Finset F) : Set F) = b '' (t : Set ι) := by
+    simp only [Finset.coe_image]
+  rw [coordSpan, ← h]
+  exact Submodule.fg_span (t.image b).finite_toSet
+
+/-- **Every finitely generated `P ≤ K` lies in a finitely generated direct summand of the
+free module `F`.** Take the union of the supports of the images of a finite generating set of
+`P`, and the span of the corresponding basis vectors. -/
+theorem exists_fg_summand (b : Module.Basis ι ℤ F) (f : K →ₗ[ℤ] F) (P : Submodule ℤ K)
+    (hP : P.FG) :
+    ∃ (F' : Submodule ℤ F) (_ : F'.FG) (ρ : F →ₗ[ℤ] F')
+      (_ : ρ.comp F'.subtype = LinearMap.id), Submodule.map f P ≤ F' := by
+  classical
+  obtain ⟨s, hsf, hs⟩ := Submodule.fg_def.mp hP
+  have hs' : Submodule.span ℤ (((hsf.toFinset : Finset K) : Set K)) = P := by
+    rw [hsf.coe_toFinset]
+    exact hs
+  refine ⟨coordSpan b (hsf.toFinset.biUnion fun k => (b.repr (f k)).support),
+    coordSpan_fg b _, coordRetract b _, coordRetract_comp_subtype b _, ?_⟩
+  rw [← hs', Submodule.map_span, Submodule.span_le]
+  rintro _ ⟨k, hk, rfl⟩
+  rw [← b.linearCombination_repr (f k), Finsupp.linearCombination_apply, Finsupp.sum]
+  exact Submodule.sum_mem _ fun i hi =>
+    Submodule.smul_mem _ _ (Submodule.subset_span
+      ⟨i, Finset.subset_biUnion_of_mem _ hk hi, rfl⟩)
+
+/-- **Exercise 4 of §3.A, completed for a free middle term.** With `F` free, every element of
+the presentation-level `torKernel f` is carried by the `Tor` of a stage `K' = comap f F' → F'`
+whose middle term is a finitely generated direct summand of `F`, and it already vanishes at
+that stage. Casting out through `stageMap_injective`, the stage's `A'` is a finitely generated
+subgroup of `A`, so this is the card's "the component of the class already lies in some
+stage". -/
+theorem exists_stage_of_free {B : Type*} [AddCommGroup B] (b : Module.Basis ι ℤ F)
+    (f : K →ₗ[ℤ] F) {x : TensorProduct ℤ K B} (hx : LinearMap.rTensor B f x = 0) :
+    ∃ (F' : Submodule ℤ F) (_ : F'.FG) (ρ : F →ₗ[ℤ] F')
+      (_ : ρ.comp F'.subtype = LinearMap.id)
+      (t : TensorProduct ℤ (Submodule.comap f F') B),
+      LinearMap.rTensor B (Submodule.comap f F').subtype t = x ∧
+        LinearMap.rTensor B (stageRelMap f F') t = 0 := by
+  classical
+  obtain ⟨P, hP, u, hu⟩ := TensorProduct.exists_of_fg x
+  have hu0 : LinearMap.rTensor B (f.comp P.subtype) u = 0 := by
+    rw [LinearMap.rTensor_comp, LinearMap.comp_apply, hu, hx]
+  obtain ⟨F', hF', ρ, hρ, hle'⟩ := exists_fg_summand (K := K) b f P hP
+  have hle : P ≤ Submodule.comap f F' := Submodule.map_le_iff_le_comap.mp hle'
+  exact ⟨F', hF', ρ, hρ, LinearMap.rTensor B (Submodule.inclusion hle) u,
+    by
+      rw [← LinearMap.comp_apply, ← LinearMap.rTensor_comp,
+        Submodule.subtype_comp_inclusion P _ hle]
+      exact hu,
+    exists_stage_witness_of_retraction f F' ρ hρ P hle u hu0⟩
+
+end FreeMiddleTerm
+
 end TorStages
 
 #print axioms TorStages.map_stageRel
@@ -243,3 +363,6 @@ end TorStages
 #print axioms TorStages.rTensor_subtype_injective_of_retraction
 #print axioms TorStages.exists_stage_witness_of_retraction
 #print axioms TorStages.rTensor_subtype_not_injective
+#print axioms TorStages.coordRetract_comp_subtype
+#print axioms TorStages.exists_fg_summand
+#print axioms TorStages.exists_stage_of_free
