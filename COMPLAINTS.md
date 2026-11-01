@@ -221,8 +221,12 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   steps `s1`--`s13`, which were not re-derived here; the mathematical review of those remains the
   earlier auditors' record in the card's audit trail, and no event in this pass supersedes it.
 
-- **Repair:** none attempted. What would settle it: reading Theorem 1 (or the relevant statement) of
-  Kaji's paper and confirming that it gives the finiteness of tangent lines meeting the curve again
-  for a smooth nonplanar curve in characteristic zero. Until then the card's own note states the
-  dependence, and the queue records the card as solved on the strength of the existing proof rather
-  than of a fresh verification.
+- **Repair:** **partly resolved on 2026-11-01.** The paper's own abstract was retrieved from a
+  bibliographic index (the full text is behind a publisher paywall and was not obtained): it defines a
+  curve to be tangentially degenerate when *"a tangent line to $X$ at a general point $P$ meets $X$
+  again at a point other than $P$"*, and states that *"if $X$ is tangentially degenerate in
+  characteristic zero, then $X$ is contained in a 2-plane under a certain condition on singularities
+  of $X$"*. For a smooth curve the singularity condition is vacuous, so the contrapositive is exactly
+  what `tangent-char-zero` uses. Recorded on the card as a `source-checked` event. Still open: the
+  precise singularity condition (irrelevant for smooth $X$) and the body of the paper, and — separately
+  — the re-derivation of steps `s1`--`s13`, which no event in this pass supersedes.

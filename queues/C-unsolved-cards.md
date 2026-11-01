@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem cards
 
-17 problem cards have no solution section. These are
+16 problem cards have no solution section. These are
 the cards issue #2 targets: write a Lamport-style structured proof for each.
 
 Regenerate with `just unsolved` after a card gains a solution. CI publishes
@@ -10,11 +10,10 @@ regeneration, and writing the solution removes the line.
 
 ## Count
 
-- Problems: 17
+- Problems: 16
 
-## Problems (17)
+## Problems (16)
 
-- [ ] P-FYZLW — "The Dirichlet integral $\int_{-\infty}^{\infty}\frac{\sin x}{x}\,dx$ by complex methods"
 - [ ] P-H1NVQ — "$M_2(\FF_4)\otimes_{\FF_2}M_2(\FF_4)$ as a product of matrix rings over division rings"
 - [ ] P-IH43M — "Values of $b$ for which $X^2=B$ has finitely many, but at least one, real $3\times3$ solutions, $B$ tridiagonal with entries $1,b$"
 - [ ] P-MH07-JAN06-03 — "Definition of the tangent bundle, and $TS^2$ is not diffeomorphic to $S^2\times\RR$"

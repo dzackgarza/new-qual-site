@@ -58,6 +58,22 @@ audit:
     $X$ on a line; and `positive-char-counterexample`, which supplies the failure in
     characteristic $p\ge3$. **Not checked here:** steps `s1`--`s13` were not re-derived line by line
     in this pass, and the mathematical review on record remains the earlier sequence of events.
+- event: source-checked
+  by: claude
+  date: 2026-11-01
+  note: >-
+    The Kaji citation in `tangent-char-zero` is now checked at the level of the paper's own abstract,
+    which was retrieved from a bibliographic index (the full text is behind a publisher paywall and
+    was not obtained). The abstract defines the notion and states the result: *"A projective curve
+    $X$ in $\PP^N$ is said to be tangentially degenerate if a tangent line to $X$ at a general point
+    $P$ meets $X$ again at a point other than $P$. In this article, we prove that if $X$ is
+    tangentially degenerate in characteristic zero, then $X$ is contained in a 2-plane under a certain
+    condition on singularities of $X$."* (H. Kaji, *On the tangentially degenerate curves*, J. London
+    Math. Soc. (2) **33** (1986), 430--440, doi:10.1112/jlms/s2-33.3.430.) For a **smooth** curve the
+    condition on singularities is vacuous, so the contrapositive is exactly the step's claim: a smooth
+    nonplanar curve in characteristic zero is not tangentially degenerate, that is, its tangent line at
+    a general point does not meet the curve again. What remains unchecked: the precise form of the
+    singularity condition, which is irrelevant here, and the body of the paper.
 ---
 
 ::: {.problem}
