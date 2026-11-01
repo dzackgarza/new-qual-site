@@ -92,6 +92,28 @@ audit:
     valuations cannot see. The search recorded on the card (all forms with m_{1j} <= 24, j <= 6) found no
     pair of equal support with non-isomorphic reductions, and that is reported as a finite check, not a
     theorem.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Second correction to the reduction analysis, and the exercise text itself is now read: Hatcher
+    printed p.292 (PDF page 301) reads "Classify algebraically the Hopf algebras A over Z such that A_n
+    is free for each n and A (x) Q ~ Q[alpha]. In particular, determine which Hopf algebras A (x) Z_p
+    arise from such A's." The earlier note's Theorem 6 -- that for p = 2 the support classifies the
+    reductions because F_2^x = {1} -- was false, and it is replaced. The mistake was to justify
+    reducing the isomorphism condition to product constants: an isomorphism must satisfy both
+    m'_ij u_i u_j = m_ij u_{i+j} and c'_ij u_{i+j} = c_ij u_i u_j, and these are equivalent only where
+    the constants are non-zero. Where m vanishes the product equation is vacuous while the coproduct
+    equation is not, and c_ij = b_ij/m_ij is zero or non-zero according to the exact valuation, not
+    merely its vanishing. Verified concretely: with d even and m_ij = p^{f_ij}, f_ij = v_p(binomial) =
+    s_p(i)+s_p(j)-s_p(i+j) is a valuation cocycle (checked for i,j,k <= 6), b_13 = 4, and forms
+    differing only in v_2(m_13) in {1,2} have the same support but coproduct constants 0 and 1, so they
+    are non-isomorphic. What the card now asserts: Theorem 6, the two-operation criterion, with the
+    three consequences (equivalence only off the zero constants; the support is insufficient; the
+    reduction depends on the valuation vector through the two bits per pair); Theorem 7, that for a
+    fixed pair of forms the question is the solvability of an explicit system over F_p, decidable.
+    What remains open and is stated as open: whether the valuation vector is a complete invariant. The
+    finite search on this card is labelled a bounded-degree check, not an all-degree classification.
 ---
 
 ::: {.problem}
@@ -238,29 +260,33 @@ $$
 
 Proposition 5 is not a negative result: it converts the classification into a finite linear problem, and it also shows when the problem disappears.
 
-**Theorem 6 (the support classifies the reductions for $p=2$).** *Let $p=2$. Then every nonzero reduced structure constant equals $1$, and the reductions of two forms are isomorphic if and only if their supports coincide. Hence for $p=2$ the mod-$2$ Hopf algebra is determined by the valuations — by their positivity pattern, which is all that $v_2$ records about vanishing.*
-
-*Proof.* $\FF_2^\times=\{1\}$, so $\bar m_{ij}=1$ whenever $(i,j)\notin S$ and no rescaling is needed or possible: the reduced structure constants are already $0$ or $1$. Proposition 1 gives that the support is an invariant and Proposition 4 that forms with the same support have equal reduced constants, hence isomorphic reductions. $\square$
-
-**Theorem 7 (the residual is genuine, and its shape).** *For $p>2$ and a support $S$ for which the system of Proposition 5 is inconsistent, two forms with support $S$ have non-isomorphic reductions; such a pair exists exactly when the system is inconsistent for some admissible $S$. Whether inconsistency can occur is **not settled here**.*
-
-*Proof.* The first sentence is the definition of inconsistency. The second is a restatement; the third is the open point, and no counterexample is asserted.
-
-What is known about the third point: whenever the two pairs $(i,t)$ and $(t,n-j)$ arising in the consistency check of Proposition 5 both lie outside $S$, consistency follows from the integral cocycle $m_{it}m_{j,n-j}=m_{t,n-j}m_{i,n-i}$ (with $t=j-i$), by Proposition 5's comparison — this is the computation carried out for the $p$-unit case in Proposition 2 and it does not use $p$. So an obstruction can only arise from a support which is "thick" in the sense that it contains those auxiliary pairs, and the smallest place to look is $p=3$, where $\FF_3^\times$ has order $2$ and the coefficient $2$ of a free $v_n$ vanishes mod $2$.
-
-Where such an obstruction would have to come from is visible in the integral cocycle. In the case $(i,t)\in S$ the identity $m_{it}m_{j,n-j}=m_{t,n-j}m_{i,n-i}$ forces $e_{it}=e_{t,n-j}\ge1$ and, after dividing both singular factors by that common power of $p$, leaves the relation $\overline{M_{it}}\,\bar m_{j,n-j}=\overline{M_{t,n-j}}\,\bar m_{i,n-i}$ among *units*. The unit parts $M_{it}$ of the singular structure constants are invisible to the valuations, so two forms with the same support may impose different relations on the residues off the support. That is the mechanism by which the support could fail to determine the reduction for odd $p$; this card does not exhibit such a pair, and the search carried out here — all forms with $m_{1j}\le24$ for $j\le6$ — found no two forms of equal support with non-isomorphic reductions.
-
-**Status of the exercise's second question, stated without overclaiming.** The reductions are classified by the orbits of Proposition 1, and by Theorem 6 the answer is complete for $p=2$ and for the family $m_{ij}=p^{e_{ij}}$: there the support alone decides. For odd $p$ and a general form the answer is the consistency question of Proposition 5, which is open. In particular the earlier claim that the valuations determine $A\otimes\ZZ_p$ is **not refuted** — it is proved for $p=2$ (Theorem 6) and open for odd $p$ — and the intermediate claim that the residues "can fail to be normalisable" is **not proved**: no counterexample is known to this card.
-
-What the valuations do produce is a family of integral forms together with their vanishing patterns, by a converse that is a direct application of the criterion above: given integers $e_{ij}$ satisfying the two bounds and the cocycle relation, and $e_{i0}=e_{0i}=0$, put
+**Theorem 6 (an isomorphism must preserve both operations, and the coproduct is why the valuation data is not enough).** *Let $\bar x_n\mapsto u_n\bar y_n$, $u_n\in\FF_p^\times$, be a graded linear map between two reductions. It is an isomorphism of Hopf algebras if and only if both*
 $$
-m_{ij}=p^{e_{ij}}
+\bar m'_{ij}\,u_iu_j=\bar m_{ij}\,u_{i+j},
+\qquad
+\bar c'_{ij}\,u_{i+j}=\bar c_{ij}\,u_iu_j
+\qquad\text{for all } i,j,
 $$
-and valuation $0$ at all other primes. The divisor and cocycle conditions hold by construction, so the recipe above gives an integral form, and its reduction has $\overline{m_{ij}}=0$ exactly when $e_{ij}>0$.
+*where $\bar c_{ij}=\overline{b_{ij}/m_{ij}}$ is the reduced coproduct constant.*
 
-When $d$ is even, the polynomial and divided-power reductions are the two extreme valuation choices $e_{ij}=0$ and
-$$
-e_{ij}=v_p\binom{i+j}{i},
-$$
-while intermediate divisor cocycles give the mixed integral forms.
+*Proof.* The first equation is $\phi(x_ix_j)=\phi(x_i)\phi(x_j)$, the second is $(\phi\otimes\phi)\Delta=\Delta\phi$; a map of graded Hopf algebras must satisfy both, and together they are sufficient because the algebra and the coalgebra generate. $\square$
+
+Three consequences, none of which the product constants alone see.
+
+*(i) The two equations are equivalent only where the constants are non-zero.* If $p\nmid m_{ij}$ and $p\nmid m'_{ij}$ then $\bar c_{ij}=\bar b_{ij}/\bar m_{ij}$ and $\bar c'_{ij}=\bar b_{ij}/\bar m'_{ij}$ with the same $\bar b_{ij}$ — both are forms of the same $\QQ[\alpha]$ — so the pair of equations is equivalent. If $\bar m_{ij}=0$ the first equation says nothing, and the second still does.
+
+*(ii) So the support does not determine the reduction, not even for $p=2$.* Take $d$ even, so $b_{ij}=\binom{i+j}{i}$, and put $f_{ij}=v_p(b_{ij})=s_p(i)+s_p(j)-s_p(i+j)$ (Legendre's formula), a valuation cocycle because that expression is symmetric in $(i,j,k)$. Then $m_{ij}=p^{f_{ij}}$ is an integral form with $m_{ij}\mid b_{ij}$ and the cocycle satisfied. For a pair with $f_{ij}\ge1$ one has $\bar m_{ij}=0$, but $\bar c_{ij}=\overline{b_{ij}/m_{ij}}$ is $0$ or $1$ according to whether $v_p(m_{ij})<v_p(b_{ij})$ or $=v_p(b_{ij})$. Hence two forms that agree on which constants vanish and differ in $v_p$ at a pair with $f_{ij}\ge2$ — say $v_p(m_{13})=1$ against $v_p(m_{13})=2$ at $(1,3)$, where $b_{13}=4$ — have the same support but $\bar c'_{13}=0\ne1=\bar c_{13}$, and no choice of $u$ can satisfy the second equation. In particular the previous note on this card, which asserted that the support classifies the reductions for $p=2$ because $\FF_2^\times=\{1\}$, **was wrong**: over $\FF_2$ every non-zero product constant is indeed $1$, but a coproduct constant can be $0$ or $1$ according to the exact valuation, and the second equation sees it.
+
+*(iii) What the reduction does depend on* is, for each $(i,j)$, the pair of bits $\{\bar m_{ij}=0\}$ and $\{\bar c_{ij}=0\}$ — equivalently the comparisons $v_p(m_{ij})>0$ and $v_p(m_{ij})=v_p(b_{ij})$. Both are read off the valuation vector $e_{ij}=v_p(m_{ij})$, which is therefore a strictly finer invariant than the support.
+
+**Theorem 7 (the classification is the solvability of an explicit system).** *Two reductions are isomorphic if and only if the system of the two equations of Theorem 6 has a solution $u\in(\FF_p^\times)^\NN$. For forms agreeing on the two bits of (iii), that system is the linear system of Proposition 5 over $\ZZ/(p-1)$, so for any fixed pair of forms the question is decidable.*
+
+*Proof.* Immediate from Theorem 6 and Proposition 5. $\square$
+
+**What is open, exactly.** Whether the valuation vector $(v_p(m_{ij}))$ is a *complete* invariant, equivalently whether the system of Theorem 7 is always solvable for two forms with equal valuation vectors. Nothing here settles it; no counterexample is known to this card; and the finite search recorded below covers finitely many forms of bounded degree and is not a proof at any degree.
+
+**A second, independent way the residues can matter.** Beyond the coproduct mechanism of (ii) above, the product equation alone can fail to be solvable: when the auxiliary pairs $(i,t)$ and $(t,n-j)$ of Proposition 5 are singular, the integral identity $m_{it}m_{j,n-j}=m_{t,n-j}m_{i,n-i}$ forces $e_{it}=e_{t,n-j}\ge1$ and, after dividing both singular factors by that common power of $p$, leaves the relation $\overline{M_{it}}\,\bar m_{j,n-j}=\overline{M_{t,n-j}}\,\bar m_{i,n-i}$ among *units*. The unit parts $M_{it}$ of the singular constants are not recorded by any valuation, so two forms with equal valuation vectors may impose different relations on the residues off the support, and the product system may then be unsolvable. This is a mechanism, not an example: this card exhibits no such pair, and the finite search it records — all forms with $m_{1j}\le24$ for $j\le6$ — is a check at bounded degree and not a proof.
+
+**Status of the exercise's second question.** Partly answered, with the boundary explicit. The reductions are the orbits of Proposition 1 under the *two* conditions of Theorem 6, so an isomorphism is a solution of an explicit system over $\FF_p$ and the question is decidable for each pair of forms (Theorem 7). Not settled: whether the valuation vector is a complete invariant. Corrected here: the previous note's claim that the support classifies the reductions for $p=2$ — false, by (ii) above.
+
 :::

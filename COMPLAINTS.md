@@ -321,21 +321,25 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
    reported and repaired above; the rest is unaudited.
-3. **`E-HAT-3.C-16`, the mod-$p$ classification: OPEN for odd $p$.** This one was wrongly
-   reported settled earlier in the same session, and the correction matters. What is proved on the card
-   now: the reductions are the orbits of $(\FF_p^\times)^{\NN}$ on reduced structure constants
-   (Proposition 1); after taking logarithms an isomorphism with fixed support is exactly a solution of
-   the triangular system $v_{i+j}=c_{ij}+v_i+v_j$ over $\ZZ/(p-1)$ (Proposition 5), so the
-   classification is a finite linear problem; for $p=2$ the reduced constants are already $0$ or $1$,
-   since $\FF_2^\times=\{1\}$, so **the support classifies the reductions and the valuation claim is
-   true** (Theorem 6); for the family $m_{ij}=p^{e_{ij}}$ the support classifies as well
-   (Proposition 4). **Open:** for odd $p$ and a general form, whether the system of Proposition 5 is
-   always consistent. The mechanism by which it could fail is named on the card — when the auxiliary
-   pairs are singular the integral cocycle ties the residues off the support to the *unit parts* of the
-   singular constants, which the valuations cannot see — but no such pair is exhibited, and the search
-   recorded there (all forms with $m_{1j}\le24$, $j\le6$) found none. Two things previously written here
-   and now withdrawn: that the valuation-only claim is **false** (unproved; and false for $p=2$ by
-   Theorem 6), and that the residues "need not be normalisable to 1" (unproved, no counterexample).
+3. **`E-HAT-3.C-16`, the mod-$p$ classification: OPEN, and two of my own claims retracted.** The
+   exercise is read from the source — Hatcher, printed p.292 (PDF page 301): *"Classify algebraically the
+   Hopf algebras $A$ over $\ZZ$ such that $A_n$ is free for each $n$ and $A\otimes\QQ\approx\QQ[\alpha]$.
+   In particular, determine which Hopf algebras $A\otimes\ZZ_p$ arise from such $A$'s."*
+   **Proved on the card:** an isomorphism of reductions must satisfy *both*
+   $\bar m'_{ij}u_iu_j=\bar m_{ij}u_{i+j}$ and $\bar c'_{ij}u_{i+j}=\bar c_{ij}u_iu_j$ (Theorem 6);
+   these are equivalent only where the constants are non-zero, so **the support does not classify the
+   reductions** — with $m_{ij}=p^{f_{ij}}$, $f_{ij}=v_p\binom{i+j}{i}=s_p(i)+s_p(j)-s_p(i+j)$ (a valuation
+   cocycle, checked), $b_{13}=4$, two forms differing in $v_p(m_{13})\in\{1,2\}$ have equal support and
+   coproduct constants $0$ and $1$, hence are non-isomorphic; and for a fixed pair of forms the question
+   is the solvability of an explicit system over $\FF_p$, hence decidable (Theorem 7).
+   **Open:** whether the valuation vector $v_p(m_{ij})$ is a *complete* invariant.
+   **Retracted here, with the reason:** (a) my claim that the reductions are NOT determined by the
+   valuations — unproved then, and now known to be at best a finer question than the support suggests;
+   (b) my follow-up theorem that for $p=2$ the support classifies them — **false**, because over
+   $\FF_2$ a coproduct constant still distinguishes exact valuations, and I had justified reducing the
+   isomorphism condition to product constants by an argument that only holds off the vanishing set. The
+   finite search on the card ($m_{1j}\le24$, $j\le6$) is a bounded-degree check and is not presented as
+   an all-degree classification.
 
 4. **`P-AGH467MULTISECANTS`.** The Kaji citation is checked at the level of the paper's abstract only.
    The paper's body — in particular the singularity condition that is vacuous for smooth curves — was
