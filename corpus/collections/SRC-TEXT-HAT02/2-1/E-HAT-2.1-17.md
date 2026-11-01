@@ -33,13 +33,21 @@ audit:
   by: claude
   date: 2026-11-01
   note: >-
-    **PARTIAL review, not a complete read.** The following was not checked: the `T^2` case of part (a) and both computations of part (b).
-    Part (a) for `X = S^2` read and checked: with `A` a set of `m >= 1` points, `H_0(A) = Z^m` and
-    `H_k(A) = 0` for `k > 0`, so the long exact sequence gives `H_k(S^2,A) = H_k(S^2)` for `k >= 2`,
-    hence `Z` in degree 2, and `0 -> H_1(S^2,A) -> Z^m -> Z -> H_0(S^2,A) -> 0` with the sum map, so
-    `H_1 = ker = Z^{m-1}` and `H_0 = 0`. That part is right. Scope of this review: the `T^2` case of
-    part (a) and both computations of part (b), including the identification of `X/A` and `X/B` for
-    the genus-two surface, were **not** read, so this note does not vouch for them.
+    Read line by line, every case. (a) With `A` a set of `m >= 1` points, `H_0(A) = Z^m` and `H_k(A)
+    = 0` for `k > 0`. For `S^2`: `H_k(S^2,A) = H_k(S^2)` for `k >= 2` since `H_{k-1}(A) = 0`, giving
+    `Z` in degree `2`; the low-degree segment `0 -> H_1(S^2,A) -> Z^m -> Z -> H_0(S^2,A) -> 0` with
+    the sum map has `H_1 = ker = Z^{m-1}` and `H_0 = 0`. For `T^2`: again degree `2` is `H_2(T^2) =
+    Z`, and the segment is `0 -> Z^2 -> H_1(T^2,A) -> Z^{m-1} -> 0`, which splits because the quotient
+    is free, giving `Z^{m+1}`, with `H_0 = 0`. (b) For the separating circle `A`, cutting along it and
+    capping gives two tori meeting in a point, so `X/A = T^2 vee T^2`; `(X,A)` is a good pair, so
+    `H_*(X,A) = reduced H_*(T^2 vee T^2)`, i.e. `Z^4` in degree `1`, `Z^2` in degree `2`, nothing else,
+    and the reduced degree-zero group vanishes as stated. For the nonseparating circle `B`, cutting
+    gives a genus-one surface with two boundary circles, so `X/B` is a torus with two points
+    identified, and identifying two points of a path-connected space is homotopy equivalent to
+    wedging on `S^1`, so `X/B = T^2 vee S^1` and `H_*(X,B)` is `Z^3` in degree `1`, `Z` in degree `2`.
+    All the hypotheses used are checked: nonemptiness of `A` for surjectivity of `H_0(A) -> H_0(X)`,
+    goodness of the pairs for the `X/A` and `X/B` identifications, and freeness of `Z^{m-1}` for the
+    splitting. No correction was needed.
 ---
 
 ::: {.problem}
