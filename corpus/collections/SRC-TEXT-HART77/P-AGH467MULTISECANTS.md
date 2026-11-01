@@ -44,6 +44,20 @@ audit:
     nonplanar curve with no lines through three distinct points for p at
     least 3. The card states the characteristic-zero theorem and proves
     the counterexample.
+- event: solution-written
+  by: claude
+  date: 2026-11-01
+  note: >-
+    The proof below already existed in full but sat inside the `remark` block, so the card carried no
+    solution section and `just unsolved` counted it as unsolved. This event moves it into a solution
+    block. What was checked here: the block structure (sixteen steps, `pf-qed` closing, all renderer
+    checks pass); the two steps that the earlier audit left open — `tangent-char-zero`, which now
+    cites Kaji's theorem on tangentially degenerate curves for the finiteness of tangent lines meeting
+    the curve again, together with a characteristic-zero argument that contact order at least three at
+    the generic point would make the two remaining coordinates affine in a local parameter and put
+    $X$ on a line; and `positive-char-counterexample`, which supplies the failure in
+    characteristic $p\ge3$. **Not checked here:** steps `s1`--`s13` were not re-derived line by line
+    in this pass, and the mathematical review on record remains the earlier sequence of events.
 ---
 
 ::: {.problem}
@@ -62,6 +76,9 @@ It fails in characteristic $p\ge3$, as the final step shows.
 As in Hartshorne IV.3, a multisecant is a line meeting $X$ in at least
 three distinct points. A tangent with intersection length $3$ at one point
 is not a multisecant under this definition.
+:::
+
+::: {.solution}
 
 ::: pf
 
