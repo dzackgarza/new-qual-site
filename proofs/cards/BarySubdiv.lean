@@ -629,6 +629,288 @@ theorem descVertex_zero {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
     omega
   rw [descVertex, h]
 
+/-! ## 7. The list index against the `Fin` index
+
+`pairCount` counts along a list; `delSum` (`BarySign.delSum`) counts over `Fin N`. The lemmas here
+carry a list count over to `Fin`-indexed cardinals, which is the only content of the reindexing.
+-/
+
+theorem toFinset_ofFn {n M : ℕ} {f : Fin n → Fin M} :
+    (List.ofFn f).toFinset = Finset.univ.image f := by
+  ext a
+  simp only [List.mem_toFinset, List.mem_ofFn', Set.mem_range, Finset.mem_image,
+    Finset.mem_univ, true_and]
+
+theorem length_filter_ofFn {n M : ℕ} {f : Fin n → Fin M} (hf : Function.Injective f)
+    (p : Fin M → Prop) [DecidablePred p] :
+    ((List.ofFn f).filter p).length = (Finset.univ.filter (fun i : Fin n => p (f i))).card := by
+  have hnd : (List.ofFn f).Nodup := List.nodup_ofFn.mpr hf
+  rw [← List.toFinset_card_of_nodup (hnd.filter p), ← List.filter_toFinset (s := List.ofFn f),
+    toFinset_ofFn, Finset.filter_image, Finset.card_image_of_injective _ hf]
+
+theorem succ_inj_val {n : ℕ} {a b : Fin n} (h : (Fin.succ a : Fin (n+1)) = Fin.succ b) : a = b :=
+  Fin.ext (by have := congrArg Fin.val h; simpa [Fin.succ] using this)
+
+/-- The positive indices of `Fin (n+1)` are the indices of `Fin n`. -/
+theorem card_filter_pos {n : ℕ} (P : Fin (n+1) → Prop) [DecidablePred P] :
+    (Finset.univ.filter (fun j : Fin (n+1) => 0 < j ∧ P j)).card
+      = (Finset.univ.filter (fun j : Fin n => P (Fin.succ j))).card := by
+  have hset : (Finset.univ.filter (fun j : Fin n => P (Fin.succ j))).image Fin.succ
+      = Finset.univ.filter (fun j : Fin (n+1) => 0 < j ∧ P j) := by
+    ext b
+    simp only [Finset.mem_image, Finset.mem_filter, Finset.mem_univ, true_and]
+    constructor
+    · rintro ⟨j, hj, rfl⟩
+      refine ⟨?_, hj⟩
+      show (0 : ℕ) < (Fin.succ j).val
+      simp [Fin.succ]
+    · rintro ⟨hb0, hbP⟩
+      refine ⟨⟨b.val - 1, by have := b.isLt; omega⟩, ?_, ?_⟩
+      · have hs : (Fin.succ ⟨b.val - 1, by have := b.isLt; omega⟩ : Fin (n+1)) = b := by
+          ext
+          simp [Fin.succ]
+          omega
+        rw [hs]
+        exact hbP
+      · ext
+        simp [Fin.succ]
+        omega
+  rw [← hset, Finset.card_image_of_injective _ (fun a b h => succ_inj_val h)]
+
+/-- The same, above a threshold: the indices of `Fin (n+1)` above `k+1` are the indices of `Fin n`
+above `k`. -/
+theorem card_filter_succ_lt {n : ℕ} (P : Fin (n+1) → Prop) [DecidablePred P] (k : Fin n) :
+    (Finset.univ.filter (fun j : Fin (n+1) => Fin.succ k < j ∧ P j)).card
+      = (Finset.univ.filter (fun j : Fin n => k < j ∧ P (Fin.succ j))).card := by
+  have hset : (Finset.univ.filter (fun j : Fin n => k < j ∧ P (Fin.succ j))).image Fin.succ
+      = Finset.univ.filter (fun j : Fin (n+1) => Fin.succ k < j ∧ P j) := by
+    ext b
+    simp only [Finset.mem_image, Finset.mem_filter, Finset.mem_univ, true_and]
+    constructor
+    · rintro ⟨j, ⟨hkj, hj⟩, rfl⟩
+      refine ⟨?_, hj⟩
+      show (Fin.succ k).val < (Fin.succ j).val
+      simp [Fin.succ]
+      omega
+    · rintro ⟨hbk, hbP⟩
+      have hb0 : 0 < b.val := by
+        have := (Fin.succ k).isLt
+        have h2 : (Fin.succ k).val < b.val := hbk
+        omega
+      refine ⟨⟨b.val - 1, by have := b.isLt; omega⟩, ⟨?_, ?_⟩, ?_⟩
+      · show k.val < b.val - 1
+        have h2 : (Fin.succ k).val < b.val := hbk
+        simp [Fin.succ] at h2
+        omega
+      · have hs : (Fin.succ ⟨b.val - 1, by have := b.isLt; omega⟩ : Fin (n+1)) = b := by
+          ext
+          simp [Fin.succ]
+          omega
+        rw [hs]
+        exact hbP
+      · ext
+        simp [Fin.succ]
+        omega
+  rw [← hset, Finset.card_image_of_injective _ (fun a b h => succ_inj_val h)]
+
+/-- **The list count is a `Fin`-indexed count.** Peeling the entries of `List.ofFn g` in order counts
+exactly the pairs `i < j` with `g j < g i`. -/
+theorem pairCount_ofFn {M : ℕ} : ∀ (n : ℕ) (g : Fin n → Fin M), Function.Injective g →
+    pairCount M (List.ofFn g)
+      = ∑ i : Fin n, (Finset.univ.filter (fun j : Fin n => i < j ∧ g j < g i)).card := by
+  intro n
+  induction n with
+  | zero =>
+      intro g _
+      rw [show List.ofFn g = ([] : List (Fin M)) from List.ofFn_zero]
+      simp [pairCount]
+  | succ n ih =>
+      intro g hg
+      have hinj : Function.Injective (fun i : Fin n => g i.succ) :=
+        fun a b h => succ_inj_val (hg h)
+      rw [List.ofFn_succ, pairCount,
+        length_filter_ofFn hinj (fun u => u < g 0), ih (fun i => g i.succ) hinj,
+        Fin.sum_univ_succ]
+      rw [card_filter_pos (fun j : Fin (n+1) => g j < g 0)]
+      refine congrArg (fun x => _ + x) ?_
+      exact Finset.sum_congr rfl fun i _ =>
+        (card_filter_succ_lt (fun j : Fin (n+1) => g j < g (Fin.succ i)) i).symm
+
+/-- The diagonal of `Iic j` contributes nothing to the count of smaller vertices, so the deletion
+sum may be taken over `Iio j`. (Same statement as `BarySign.filter_Iic_eq_filter_Iio`.) -/
+theorem filter_Iic_eq_filter_Iio {N : ℕ} (π : Equiv.Perm (Fin N)) (j : Fin N) :
+    (Finset.Iic j).filter (fun i => π i < π j) = (Finset.Iio j).filter (fun i => π i < π j) := by
+  ext i
+  simp only [Finset.mem_filter, Finset.mem_Iic, Finset.mem_Iio]
+  constructor
+  · rintro ⟨hle, hlt⟩
+    rcases lt_or_eq_of_le hle with h' | h'
+    · exact ⟨h', hlt⟩
+    · subst h'
+      exact absurd hlt (lt_irrefl _)
+  · rintro ⟨hlt, hlt'⟩
+    exact ⟨le_of_lt hlt, hlt'⟩
+
+/-- The permutation's deletion sum: the total of the deletion positions along the descending face
+chain. (The same definition as `BarySign.delSum`, restated because a file in `proofs/cards/` cannot
+import a sibling.) -/
+def delSum {N : ℕ} (π : Equiv.Perm (Fin N)) : ℕ :=
+  ∑ j : Fin N, ((Finset.Iic j).filter fun i => π i < π j).card
+
+/-- Reversing the index of a sum over `Fin N` changes nothing. -/
+theorem sum_rev {N : ℕ} {M : Type*} [AddCommMonoid M] (f : Fin N → M) :
+    (∑ i : Fin N, f (Fin.rev i)) = ∑ i : Fin N, f i := by
+  have h := Equiv.sum_comp (Fin.revPerm (n := N)) f
+  simpa using h
+
+/-- **The link.** The recursion's deletion positions along the peeling order `π n, …, π 0` are exactly
+the permutation's deletion sum: the pair count of the peeling order is the count of pairs `i < j` with
+`π i < π j`. -/
+theorem pairCount_peel_eq_delSum {N : ℕ} (π : Equiv.Perm (Fin N)) :
+    pairCount N (peel π) = delSum π := by
+  have hio : ∀ j : Fin N,
+      ((Finset.Iic j).filter (fun i => π i < π j)).card
+        = (Finset.univ.filter (fun i : Fin N => i < j ∧ π i < π j)).card := by
+    intro j
+    rw [filter_Iic_eq_filter_Iio]
+    congr 1
+    ext i
+    simp [Finset.mem_Iio]
+  rw [delSum, Finset.sum_congr rfl fun j _ => hio j]
+  have hinj : Function.Injective (fun i : Fin N => π (Fin.rev i)) :=
+    fun a b h => Fin.rev_injective (π.injective h)
+  rw [show peel π = List.ofFn (fun i : Fin N => π (Fin.rev i)) from rfl,
+    pairCount_ofFn N _ hinj]
+  have hstep : ∀ i : Fin N,
+      (Finset.univ.filter (fun j : Fin N => i < j ∧ π (Fin.rev j) < π (Fin.rev i))).card
+        = (Finset.univ.filter (fun a : Fin N => a < Fin.rev i ∧ π a < π (Fin.rev i))).card := by
+    intro i
+    have hset : (Finset.univ.filter (fun a : Fin N => a < Fin.rev i ∧ π a < π (Fin.rev i))).image
+          Fin.rev
+        = Finset.univ.filter (fun j : Fin N => i < j ∧ π (Fin.rev j) < π (Fin.rev i)) := by
+      ext j
+      simp only [Finset.mem_image, Finset.mem_filter, Finset.mem_univ, true_and]
+      constructor
+      · rintro ⟨a, ⟨ha, hπ⟩, rfl⟩
+        exact ⟨(Fin.lt_rev_iff (i := a) (j := i)).mp ha, by simpa using hπ⟩
+      · rintro ⟨hij, hπ⟩
+        exact ⟨Fin.rev j, ⟨(Fin.rev_lt_iff (i := j) (j := Fin.rev i)).mpr (by simpa using hij),
+          by simpa using hπ⟩, by simp⟩
+    rw [← hset, Finset.card_image_of_injective _ Fin.rev_injective]
+  rw [Finset.sum_congr rfl fun i _ => hstep i]
+  have hrev : (∑ i : Fin N,
+        (Finset.univ.filter (fun a : Fin N => a < Fin.rev i ∧ π a < π (Fin.rev i))).card)
+      = ∑ b : Fin N,
+        (Finset.univ.filter (fun a : Fin N => a < b ∧ π a < π b)).card :=
+    sum_rev (fun b : Fin N => (Finset.univ.filter (fun a : Fin N => a < b ∧ π a < π b)).card)
+  rw [hrev]
+
+/-! ## 8. The sign algebra, applied
+
+The theorems of `cards/BarySign.lean`, restated here because a file in `proofs/cards/` cannot import a
+sibling; they are the same statements, with the same proofs, on the same baseline.
+-/
+
+/-- The pairs `i < j` in `Fin N`, as a finset of dependent pairs. -/
+def pairSet (N : ℕ) : Finset (Sigma fun _ : Fin N => Fin N) :=
+  Finset.univ.sigma fun j => Finset.Iio j
+
+theorem card_pairSet (N : ℕ) : (pairSet N).card = N * (N - 1) / 2 := by
+  rw [pairSet, Finset.card_sigma]
+  have h : ∀ j : Fin N, (Finset.Iio j).card = j.val := fun j => Fin.card_Iio j
+  rw [Finset.sum_congr rfl (fun j _ => h j), Fin.sum_univ_eq_sum_range (fun i => i) N,
+    Finset.sum_range_id]
+
+/-- The number of noninversions: pairs `i < j` with `π i < π j`, which is the number counted by the
+deletion positions of the descending chain. -/
+def noninv {N : ℕ} (π : Equiv.Perm (Fin N)) : ℕ :=
+  (pairSet N).filter (fun p => π p.2 < π p.1) |>.card
+
+/-- The number of inversions. -/
+def inv {N : ℕ} (π : Equiv.Perm (Fin N)) : ℕ :=
+  (pairSet N).filter (fun p => ¬ π p.2 < π p.1) |>.card
+
+theorem noninv_add_inv {N : ℕ} (π : Equiv.Perm (Fin N)) :
+    noninv π + inv π = N * (N - 1) / 2 := by
+  rw [noninv, inv, Finset.card_filter_add_card_filter_not, card_pairSet]
+
+/-- The maintained sign formula: `sgn π` is the product over pairs `i < j` of `1` at a noninversion
+and `-1` at an inversion. -/
+theorem sign_eq_prod {N : ℕ} (π : Equiv.Perm (Fin N)) :
+    π.sign = ∏ j, ∏ i ∈ Finset.Iio j, (if π i < π j then (1 : ℤˣ) else -1) :=
+  π.sign_eq_prod_prod_Iio
+
+theorem sign_eq_prod_pairSet {N : ℕ} (π : Equiv.Perm (Fin N)) :
+    π.sign = ∏ p ∈ pairSet N, (if π p.2 < π p.1 then (1 : ℤˣ) else -1) := by
+  rw [sign_eq_prod, pairSet, Finset.prod_sigma']
+
+theorem prod_ite_neg_one {N : ℕ} (π : Equiv.Perm (Fin N))
+    (s : Finset (Sigma fun _ : Fin N => Fin N)) :
+    (∏ p ∈ s, (if π p.2 < π p.1 then (1 : ℤˣ) else -1))
+      = (-1 : ℤˣ) ^ (s.filter (fun p => ¬ π p.2 < π p.1)).card := by
+  induction s using Finset.induction with
+  | empty => simp
+  | insert a s ha ih =>
+      rw [Finset.prod_insert ha, ih, Finset.filter_insert]
+      by_cases h : π a.2 < π a.1
+      · rw [if_pos h, if_neg (by simp [h]), one_mul]
+      · rw [if_neg h, if_pos h, Finset.card_insert_of_notMem (by simp [ha]), pow_succ,
+          mul_comm]
+
+theorem sign_eq_neg_one_pow_inv {N : ℕ} (π : Equiv.Perm (Fin N)) :
+    π.sign = (-1 : ℤˣ) ^ inv π := by
+  rw [sign_eq_prod_pairSet, prod_ite_neg_one, inv]
+
+theorem filter_pairSet {N : ℕ} (π : Equiv.Perm (Fin N)) :
+    (pairSet N).filter (fun p => π p.2 < π p.1)
+      = Finset.univ.sigma (fun j : Fin N => (Finset.Iio j).filter (fun i => π i < π j)) := by
+  ext p
+  obtain ⟨j, i⟩ := p
+  simp [pairSet, Finset.mem_sigma, Finset.mem_filter]
+
+/-- The deletion sum is the number of noninversions. -/
+theorem delSum_eq_noninv {N : ℕ} (π : Equiv.Perm (Fin N)) : delSum π = noninv π := by
+  have hio : ∀ j : Fin N,
+      ((Finset.Iic j).filter (fun i => π i < π j)).card
+        = ((Finset.Iio j).filter (fun i => π i < π j)).card := by
+    intro j
+    rw [filter_Iic_eq_filter_Iio]
+  rw [delSum, Finset.sum_congr rfl fun j _ => hio j, noninv, filter_pairSet,
+    Finset.card_sigma]
+
+/-- **The all-`n` sign identity.** The recursion's sign `(-1)^{delSum π}` is
+`(-1)^{N(N-1)/2} sgn(π)`. -/
+theorem pow_delSum_eq_global_mul_sign {N : ℕ} (π : Equiv.Perm (Fin N)) :
+    (-1 : ℤˣ) ^ (delSum π) = (-1 : ℤˣ) ^ (N * (N - 1) / 2) * π.sign := by
+  have hT : N * (N - 1) / 2 = delSum π + inv π := by
+    rw [← noninv_add_inv π, delSum_eq_noninv π]
+  rw [sign_eq_neg_one_pow_inv, hT, pow_add]
+  have h2 : ((-1 : ℤˣ) ^ inv π) * ((-1 : ℤˣ) ^ inv π) = 1 := by
+    rw [← mul_pow]
+    norm_num
+  rw [mul_assoc, h2, mul_one]
+
+/-- The same identity read in `ℤ`. -/
+theorem pow_delSum_eq_global_mul_sign_int {N : ℕ} (π : Equiv.Perm (Fin N)) :
+    (-1 : ℤ) ^ (delSum π) = (-1 : ℤ) ^ (N * (N - 1) / 2) * ((π.sign : ℤˣ) : ℤ) := by
+  calc (-1 : ℤ) ^ (delSum π) = (((-1 : ℤˣ) ^ delSum π : ℤˣ) : ℤ) :=
+        (val_neg_one_pow (delSum π)).symm
+    _ = (((-1 : ℤˣ) ^ (N * (N - 1) / 2) * π.sign : ℤˣ) : ℤ) := by
+        rw [pow_delSum_eq_global_mul_sign]
+    _ = (((-1 : ℤˣ) ^ (N * (N - 1) / 2) : ℤˣ) : ℤ) * ((π.sign : ℤˣ) : ℤ) := by
+        rw [Units.val_mul]
+    _ = (-1 : ℤ) ^ (N * (N - 1) / 2) * ((π.sign : ℤˣ) : ℤ) := by
+        rw [val_neg_one_pow]
+
+/-- **The coefficient of the descending chain of `π`, in the form the card displays.** In dimension
+`n = N - 1` the recursion's coefficient of the chain built from `π` is
+`(-1)^{n(n+1)/2} sgn(π) = (-1)^{N(N-1)/2} sgn(π)`. -/
+theorem coeff_subdiv_peel_sign {N : ℕ} (π : Equiv.Perm (Fin N)) :
+    FreeAbelianGroup.coeff (chainOf Finset.univ (peel π)) (subdiv Finset.univ)
+      = (-1 : ℤ) ^ (N * (N - 1) / 2) * ((π.sign : ℤˣ) : ℤ) := by
+  rw [coeff_subdiv_chainOf_eq_pow (peel_nodup π) (peel_toFinset π), pairCount_peel_eq_delSum,
+    pow_delSum_eq_global_mul_sign_int]
+
 end BarySubdiv
 
 #print axioms BarySubdiv.stepSign_eq_pow_stepExp
@@ -644,3 +926,16 @@ end BarySubdiv
 #print axioms BarySubdiv.affineMap_mem
 #print axioms BarySubdiv.affineMap_single
 #print axioms BarySubdiv.descVertex_zero
+#print axioms BarySubdiv.length_filter_ofFn
+#print axioms BarySubdiv.card_filter_pos
+#print axioms BarySubdiv.card_filter_succ_lt
+#print axioms BarySubdiv.pairCount_ofFn
+#print axioms BarySubdiv.filter_Iic_eq_filter_Iio
+#print axioms BarySubdiv.pairCount_peel_eq_delSum
+#print axioms BarySubdiv.sum_rev
+#print axioms BarySubdiv.card_pairSet
+#print axioms BarySubdiv.noninv_add_inv
+#print axioms BarySubdiv.sign_eq_neg_one_pow_inv
+#print axioms BarySubdiv.delSum_eq_noninv
+#print axioms BarySubdiv.pow_delSum_eq_global_mul_sign
+#print axioms BarySubdiv.coeff_subdiv_peel_sign
