@@ -134,6 +134,53 @@ noncomputable def torOneIsoKerLinear {A B : ModuleCat ℤ} (P : ProjectiveResolu
   torOneIsoKernel P h2 ≪≫
     ModuleCat.kernelIsoKer (R := ℤ) (f := (resolutionTensor B P).d 1 0)
 
+/-! ## The orientation glue, and the pinned kernel module
+
+`tensorLeft B` is `B ⊗ -`, so the bridge's kernel lives in `B ⊗ K`; the presentation-level
+`TorReductions.torKernel f` is the kernel of `f.rTensor B`, living in `K ⊗ B`. `TensorProduct.comm`
+carries one to the other, and `LinearMap.lTensor_comm` is the naturality that makes this exact rather
+than an assumption. The kernel module is also pinned at this boundary, so that `ModuleCat.of` and
+`ModuleCat.kernelIsoKer` agree on which `ℤ`-module structure the kernel carries.
+-/
+
+/-- **The orientation glue.** The kernel of `f.rTensor N` in `M ⊗ N` is the inverse image under the
+tensor symmetry of the kernel of `f.lTensor N` in `N ⊗ M`. Naturality is `LinearMap.lTensor_comm`;
+nothing is assumed. -/
+theorem ker_rTensor_eq_comap_ker_lTensor {M P : Type*} [AddCommGroup M] [AddCommGroup P]
+    (f : M →ₗ[ℤ] P) (N : Type*) [AddCommGroup N] :
+    (f.rTensor N).ker
+      = Submodule.comap (TensorProduct.comm ℤ M N).toLinearMap (f.lTensor N).ker := by
+  ext x
+  simp only [LinearMap.mem_ker, Submodule.mem_comap]
+  constructor
+  · intro hx
+    show (LinearMap.lTensor N f) ((TensorProduct.comm ℤ M N) x) = 0
+    rw [LinearMap.lTensor_comm, hx, map_zero]
+  · intro hx
+    have h2 : (TensorProduct.comm ℤ P N) ((LinearMap.rTensor N f) x) = 0 := by
+      rw [← LinearMap.lTensor_comm (N := N) f x]
+      exact hx
+    exact (TensorProduct.comm ℤ P N).injective (by rw [h2, map_zero])
+
+/-- The kernel of a morphism in `ModuleCat ℤ`, with its module structure pinned to the submodule
+structure. This is the boundary at which `Submodule.module` and `AddCommGroup.toIntModule` would
+otherwise clash, so both sides of the identification below are stated over this abbreviation. -/
+noncomputable abbrev kerModule {M N : ModuleCat ℤ} (f : M ⟶ N) : ModuleCat ℤ :=
+  letI := f.hom.ker.module
+  ModuleCat.of ℤ ↥(f.hom.ker)
+
+/-- `ModuleCat.kernelIsoKer` stated at that pinned boundary: the categorical kernel is the
+linear-map kernel, as objects. -/
+noncomputable def kernelIsoKerModule {M N : ModuleCat ℤ} (f : M ⟶ N) :
+    Limits.kernel f ≅ kerModule f :=
+  ModuleCat.kernelIsoKer (R := ℤ) f
+
+/-- The differential-map identity on the `ModuleCat` side: the tensored complex's degree-`1`
+differential is the resolution's differential with `B` tensored on the left. -/
+theorem tensor_d_hom_eq_lTensor {A B : ModuleCat ℤ} (P : ProjectiveResolution A) :
+    ((resolutionTensor B P).d 1 0).hom = (P.complex.d 1 0).hom.lTensor (↥B) :=
+  rfl
+
 end TorBridge
 
 #print axioms TorBridge.torOneIsoHomology
@@ -142,4 +189,6 @@ end TorBridge
 #print axioms TorBridge.homologyOneIsoKernel
 #print axioms TorBridge.tensor_d_two_one_eq_zero
 #print axioms TorBridge.torOneIsoKernel
-#print axioms TorBridge.torOneIsoKerLinear
+#print axioms TorBridge.ker_rTensor_eq_comap_ker_lTensor
+#print axioms TorBridge.kernelIsoKerModule
+#print axioms TorBridge.tensor_d_hom_eq_lTensor
