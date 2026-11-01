@@ -33,6 +33,7 @@ audit:
   by: claude
   date: 2026-11-01
   note: >-
+    **PARTIAL review, not a complete read.** The following was not checked: the verification that the explicit formula satisfies the inductive characterisation.
     The formula read and checked for shape: `S(sigma) = sum_pi sgn(pi) (sigma o Delta_pi)`, where
     `Delta_pi` carries the ordered vertices of the standard simplex to the barycentres
     `b_{i_0}, b_{i_0,i_1}, ..., b_{i_0,...,i_n}` of the initial segments of the permutation. This is

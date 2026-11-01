@@ -33,6 +33,7 @@ audit:
   by: claude
   date: 2026-11-01
   note: >-
+    **PARTIAL review, not a complete read.** The following was not checked: the `T^2` case of part (a) and both computations of part (b).
     Part (a) for `X = S^2` read and checked: with `A` a set of `m >= 1` points, `H_0(A) = Z^m` and
     `H_k(A) = 0` for `k > 0`, so the long exact sequence gives `H_k(S^2,A) = H_k(S^2)` for `k >= 2`,
     hence `Z` in degree 2, and `0 -> H_1(S^2,A) -> Z^m -> Z -> H_0(S^2,A) -> 0` with the sum map, so

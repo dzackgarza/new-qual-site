@@ -32,6 +32,7 @@ audit:
   by: claude
   date: 2026-11-01
   note: >-
+    **PARTIAL review, not a complete read.** The following was not checked: the local homology away from the cone point, the boundary subspace and the invariant subsets.
     Read line by line as far as the local homology at the cone point, which is the computation the
     rest of the exercise is built on, and it is right: `G` is the 1-skeleton of `Delta^3`, i.e. `K_4`
     with `4` vertices and `6` edges, so `H_1(G) = Z^{6-4+1} = Z^3`; `X` is contractible and

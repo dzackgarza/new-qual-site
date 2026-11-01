@@ -33,6 +33,7 @@ audit:
   by: claude
   date: 2026-11-01
   note: >-
+    **PARTIAL review, not a complete read.** The following was not checked: the universal-cover comparison.
     The homology comparison read and checked: the torus has one 0-cell, two 1-cells and one 2-cell
     with all cellular boundary maps zero, giving `Z, Z^2, Z` in degrees `0, 1, 2`; and for a finite
     wedge reduced homology is the direct sum of the summands, so `S^1 vee S^1 vee S^2` has the same

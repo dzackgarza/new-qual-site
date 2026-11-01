@@ -29,6 +29,7 @@ audit:
   by: claude
   date: 2026-11-01
   note: >-
+    **PARTIAL review, not a complete read.** The following was not checked: the detailed steps of part (b).
     Part (a) read and checked: the map of long exact sequences is natural, the four surrounding
     vertical maps are isomorphisms because `f` is a homotopy equivalence on `X` and on `A`, and the
     five lemma gives the isomorphism on relative groups. Part (b): the closure observation is the

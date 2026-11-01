@@ -33,6 +33,7 @@ audit:
   by: claude
   date: 2026-11-01
   note: >-
+    **PARTIAL review, not a complete read.** The following was not checked: the second half (subdivision of a `Delta`-complex with distinct vertices per simplex is simplicial).
     Step 1 read and checked: a `k`-simplex of the barycentric subdivision lies in a single original
     simplex and is determined by a strict chain of faces, so its vertices are the barycenters of
     simplices of strictly increasing dimension and are pairwise distinct. That is the property the
