@@ -28,6 +28,19 @@ audit:
   date: 2026-10-31
   note: >-
     Read the step claims: $F/N\cong\langle a,b\mid a^2=b^2=(ab)^4\rangle\cong D_8$ with $ara=r^{-1}$, and the covering graph drawn from the cosets. The drawing itself was not verified edge by edge.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct. With `r = ab`, `r^4 = (ab)^4 = 1` and `ara = a(ab)a = ba`; and
+    `ba = b^{-1}a^{-1} = (ab)^{-1} = r^{-1}` using `a^2 = b^2 = 1`, which is exactly where those two
+    relations are needed, so the quotient is `D_8` of order 8 with the listed eight distinct
+    elements. The covering is the labelled Cayley covering graph and is a genuine eight-sheeted
+    cover, since every vertex has one incoming and one outgoing edge of each label. The subgroup
+    identification is by index: the monodromy is the quotient map `F -> D_8`, which kills `a^2`,
+    `b^2` and `(ab)^4`, so `N <= K`; the cover has eight sheets, so `[F:K] = 8 = [F:N]`, hence
+    `K = N`. Inclusion plus equality of finite indices is the right argument and is what makes the
+    picture a proof.
 ---
 
 ::: {.problem}

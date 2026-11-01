@@ -28,6 +28,18 @@ audit:
   date: 2026-10-31
   note: >-
     Read the step claims: common path-connected evenly covered neighbourhoods, and the local homeomorphism argument that makes $X\to Y$ a covering. Not every line checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct, and the hypotheses are used where they matter. Local path
+    connectedness of `Z` is what lets an evenly covered neighbourhood be shrunk to a path connected
+    one, and the path connectedness of `U` is then what makes a sheet `W` of `r` connected, so that
+    `p(W)` lies in a single sheet `V` of `q`; the homeomorphism statement follows as
+    `(q|_V)^{-1} r|_W`. The normality half is also right and needs its one hypothesis: since `r` is
+    a normal covering, `X` is path connected, so uniqueness of lifts applies to the two lifts
+    `p h` and `p` of `r` through `q`, which agree at `x_1` because `p(x_1) = p(x_2) = y`. No
+    correction was needed.
 ---
 
 ::: {.problem}
