@@ -402,6 +402,28 @@ theorem exists_stage_of_free {B : Type*} [AddCommGroup B] (b : Module.Basis ι �
       exact hu,
     exists_stage_witness_of_retraction f F' ρ hρ P hle u hu0⟩
 
+/-- **The projectivity obligation, discharged for the finitely generated case.** A submodule of a
+torsion-free `ℤ`-module is torsion-free, and a finitely generated torsion-free module over `ℤ` is
+free (`Module.free_of_finite_type_torsion_free'`, `LinearAlgebra/FreeModule/PID.lean`), hence
+projective (`Module.Projective.of_free`). So for the stages the cards use — `F` free, `K' = comap f
+F'` finitely generated — the middle term of the two-term resolution is projective with no extra
+hypothesis.
+
+Scope, stated honestly: this discharges the projectivity obligation for the finitely generated
+stages the cards use, and **not** for an arbitrary-rank kernel. The pinned tree's two relevant
+results both carry that limitation: `Module.free_of_finite_type_torsion_free'`
+(`LinearAlgebra/FreeModule/PID.lean`, l.387) requires `Module.Finite`, and `Submodule.basisOfPid`
+requires a finite-indexed ambient basis. Nothing in the pinned tree makes an arbitrary submodule of
+a free `ℤ`-module free, so the general two-term bridge stays conditional on projectivity of the
+relation module — or on using the maintained full projective resolution — rather than silently
+treating every kernel of an injective map into a free module as free. -/
+theorem projective_comap_of_fg {F : Type*} [AddCommGroup F] [Module.IsTorsionFree ℤ F]
+    (K' : Submodule ℤ F) [Module.Finite ℤ K'] : Module.Projective ℤ K' := by
+  have : Module.IsTorsionFree ℤ K' :=
+    Function.Injective.moduleIsTorsionFree (Submodule.subtype K')
+      (fun _ _ h => Subtype.ext h) fun _ _ => rfl
+  exact Module.Projective.of_free
+
 end FreeMiddleTerm
 
 end TorStages
@@ -420,6 +442,7 @@ end TorStages
 #print axioms TorStages.coordRetract_comp_subtype
 #print axioms TorStages.exists_fg_summand
 #print axioms TorStages.exists_stage_of_free
+#print axioms TorStages.projective_comap_of_fg
 #print axioms TorStages.stage_range_fg
 #print axioms TorStages.stage_finite
 #print axioms TorStages.exists_stage_containing
