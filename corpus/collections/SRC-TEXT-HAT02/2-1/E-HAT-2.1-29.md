@@ -29,6 +29,16 @@ audit:
   date: 2026-10-31
   note: >-
     Read the comparison: both spaces have $\ZZ$ in degrees 0, 1 (rank two) and 2 and zero above, while the universal cover of the wedge sum contains a sphere and so has $H_2\ne0$, unlike the plane covering the torus.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    The homology comparison read and checked: the torus has one 0-cell, two 1-cells and one 2-cell
+    with all cellular boundary maps zero, giving `Z, Z^2, Z` in degrees `0, 1, 2`; and for a finite
+    wedge reduced homology is the direct sum of the summands, so `S^1 vee S^1 vee S^2` has the same
+    groups. Scope: the second half — that the universal covers are not homeomorphic, which is the
+    point of the exercise since the torus is aspherical with cover `R^2` while the wedge's cover is
+    not — was **not** read, so it is not vouched for here.
 ---
 
 ::: {.problem}

@@ -25,6 +25,19 @@ audit:
   date: 2026-10-31
   note: >-
     Read the five-lemma argument: naturality compares the two long exact sequences, the four outer vertical maps are isomorphisms because $f$ is a homotopy equivalence on $X$ and on $A$, so the middle map is too; part (b) is read at the level of the stated non-equivalence of pairs.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Part (a) read and checked: the map of long exact sequences is natural, the four surrounding
+    vertical maps are isomorphisms because `f` is a homotopy equivalence on `X` and on `A`, and the
+    five lemma gives the isomorphism on relative groups. Part (b): the closure observation is the
+    right tool — a pair homotopy equivalence restricts to one for the closure pairs — and the
+    contradiction is the intended one, since `H_n(D^n, S^{n-1}) = Z` while `H_n(D^n, D^n - {0}) = 0`,
+    so no pair homotopy equivalence can exist although `f` is a homotopy equivalence on the total
+    spaces and on the subspaces separately; that is exactly the point of the exercise, and it shows
+    the hypothesis of (a) cannot be weakened to "homotopy equivalence on each space". The detailed
+    step-by-step of part (b) beyond this was skimmed, not read line by line.
 ---
 
 ::: {.problem}

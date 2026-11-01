@@ -28,6 +28,17 @@ audit:
   date: 2026-10-31
   note: >-
     Read the cone computation: $\widetilde H_1(G)=\ZZ^3$ for the complete graph on four vertices, the cone point has contractible complement, and the local homology at points of $X$ away from the cone point reduces to the local homology of the graph, which is $\ZZ$ in degree one at interior points of edges.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line as far as the local homology at the cone point, which is the computation the
+    rest of the exercise is built on, and it is right: `G` is the 1-skeleton of `Delta^3`, i.e. `K_4`
+    with `4` vertices and `6` edges, so `H_1(G) = Z^{6-4+1} = Z^3`; `X` is contractible and
+    `X - {c}` deformation retracts onto `G`, so the long exact sequence of the pair collapses to
+    `H_n(X, X - {c}) = H_{n-1}(G)`, giving `Z^3` in degree `2` and zero elsewhere. Scope: the local
+    homology at the other points of `X`, the computation for the subspace `partial X` defined by the
+    vanishing local homology, and the determination of the invariant subsets were **not** read.
 ---
 
 ::: {.problem}
