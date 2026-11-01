@@ -45,8 +45,12 @@ audit:
     gives a genus-one surface with two boundary circles, so `X/B` is a torus with two points
     identified, and identifying two points of a path-connected space is homotopy equivalent to
     wedging on `S^1`, so `X/B = T^2 vee S^1` and `H_*(X,B)` is `Z^3` in degree `1`, `Z` in degree `2`.
-    All the hypotheses used are checked: nonemptiness of `A` for surjectivity of `H_0(A) -> H_0(X)`,
-    goodness of the pairs for the `X/A` and `X/B` identifications, and freeness of `Z^{m-1}` for the
+    The case `A = empty` is separate and is the reason `m >= 1` was assumed. With `A` empty there is no
+    `H_0(A) -> H_0(X)` to be surjective, and `H_k(X, empty) = H_k(X)`, so the answers are the absolute
+    groups: for `S^2`, `Z` in degrees `0` and `2` and `0` in degree `1` (note `H_0` is `Z`, not `0`,
+    and the formula `Z^{m-1}` does not extend to `m = 0`); for `T^2`, `Z`, `Z^2`, `Z` in degrees
+    `0`, `1`, `2`. All the hypotheses used are checked: nonemptiness of `A` for surjectivity of `H_0(A) -> H_0(X)`,
+    with the empty case now stated separately as the absolute groups, goodness of the pairs for the `X/A` and `X/B` identifications, and freeness of `Z^{m-1}` for the
     splitting. No correction was needed.
 ---
 

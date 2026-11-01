@@ -127,8 +127,9 @@ for the homogeneous component, and the subscript is restored. Proofs of `E-HAT-3
 tensor complex (free part $f_i$, torsion part $t_i$, cohomology shifted by one), `-2` on both directions of the $I\\otimes C$ dictionary, `-3` by
 recomputing $H_{2n+1}$ on both sides of $f\\times1$, `-4` through naturality and excision of the local cross product, `-5` through the four
 invariance checks.
-Unread entirely: the proofs of §1.3 beyond the ten listed, of §1.B-5..-9 and of §2.1-6, -8, -10, -17,
--23..-25, -27..-29, the proofs of §3.C, and the proofs and statements of §4 onward.
+Unread entirely: the statements and proofs of §3.D, §3.F, §3.H and of all of §4 onward. Everything from
+§1.1 through §3.3 and in §3.A, §3.B, §3.C and §3.E is covered at the level the paragraphs above state —
+statements compared, proofs read — with only the citations each section names left unformalized.
 
 ## Fast local checks and complete CI acceptance
 
