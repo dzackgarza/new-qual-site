@@ -32,14 +32,18 @@ noncomputable def stageMap (f : K →ₗ[ℤ] F) (F' : Submodule ℤ F) :
     F' ⧸ Submodule.comap F'.subtype (LinearMap.range f) →ₗ[ℤ] F ⧸ LinearMap.range f :=
   Submodule.mapQ _ (LinearMap.range f) F'.subtype le_rfl
 
-/-! The injectivity of `stageMap` — that the stage really is a *subgroup* of `A` — is the
-next step and is **not** proved here: it reduces to `Submodule.map p.mkQ p = ⊥` for
-`p = comap F'.subtype (range f)`, where `Submodule.map_eq_bot_iff` does not fire on the shape
-Lean produces (`Submodule.map p.mkQ p` has `mkQ` as a `LinearMap`, while the lemma's pattern is
-a coerced map). The proof sketch is `elementwise`: `y ∈ map p.mkQ p` means `y = p.mkQ x` with
-`x ∈ p = ker p.mkQ`, hence `y = 0`. Until that is closed, the stage is only a quotient of `F'`
-with a map to `A`, not yet a subgroup. -/
+/-- The stage embeds in `A`. By `Submodule.ker_mapQ` the kernel of `stageMap` is
+`p.map p.mkQ` for `p` the stage's relations, and a member of that is `p.mkQ x` with `x ∈ p`,
+hence `0` by `Submodule.Quotient.mk_eq_zero`. -/
+theorem stageMap_injective (f : K →ₗ[ℤ] F) (F' : Submodule ℤ F) :
+    Function.Injective (stageMap f F') := by
+  rw [← LinearMap.ker_eq_bot, stageMap, Submodule.ker_mapQ]
+  rw [Submodule.eq_bot_iff]
+  rintro y ⟨x, hx, rfl⟩
+  rw [Submodule.mkQ_apply]
+  simpa using hx
 
 end TorStages
 
 #print axioms TorStages.map_stageRel
+#print axioms TorStages.stageMap_injective
