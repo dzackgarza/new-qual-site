@@ -21,23 +21,26 @@ open CategoryTheory Limits MonoidalCategory
 
 namespace ColimitTensor
 
-variable {J : Type*} [Category J]
+variable {J : Type*} [Category J] [HasColimitsOfShape J (ModuleCat ℤ)]
 
 /-- Exercise 4 of §3.A, first half, at abelian groups: `B ⊗ -` preserves colimits. -/
 theorem tensorLeft_preserves_colimits (B : ModuleCat ℤ) : PreservesColimits (tensorLeft B) :=
   inferInstance
 
-/-! The comparison isomorphism `B ⊗ colim F ≅ colim (B ⊗ F ·)` is the next step and is
-not written here: with `PreservesColimits (tensorLeft B)` available, it is
-`IsColimit.coconePointUniqueUpToIso (PreservesColimit.preserves (colimit.cocone F)
-(colimit.isColimit F)) (colimit.isColimit (F ⋙ tensorLeft B))`, but that term does not
-elaborate in this file yet: instance synthesis fails at
-`PreservesColimit.preserves (colimit.cocone F)` and at `colimit (F ⋙ tensorLeft B)`, most
-likely because the monoidal and `MonoidalClosed` instances on `ModuleCat ℤ` that
-`tensorLeft` needs are not the ones in scope here. The next attempt should fix the instance
-arguments explicitly (`ModuleCat.monoidalCategory`, `ModuleCat.monoidalClosed`) rather than
-leave synthesis to inference. -/
+/-- Exercise 4 of §3.A, first half, at abelian groups: for any functor `F : J ⥤ ModuleCat ℤ`
+and any `B`, the tensor product commutes with the colimit,
+`B ⊗ colim F ≅ colim (B ⊗ F ·)`.
+
+The witness of colimit preservation is `Nonempty (IsColimit _)` (`PreservesColimit.preserves`),
+so it is extracted with `Classical.choice`; the comparison is the canonical map between two
+colimit cocones, `IsColimit.coconePointUniqueUpToIso`. Both are Mathlib's. -/
+noncomputable def tensorLeft_colim_iso (F : J ⥤ ModuleCat ℤ) (B : ModuleCat ℤ) :
+    (tensorLeft B).obj (colimit F) ≅ colimit (F ⋙ tensorLeft B) :=
+  IsColimit.coconePointUniqueUpToIso
+    (Classical.choice (PreservesColimit.preserves (colimit.isColimit F)))
+    (colimit.isColimit (F ⋙ tensorLeft B))
 
 end ColimitTensor
 
 #print axioms ColimitTensor.tensorLeft_preserves_colimits
+#print axioms ColimitTensor.tensorLeft_colim_iso
