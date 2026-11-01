@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem cards
 
-24 problem cards have no solution section. These are
+22 problem cards have no solution section. These are
 the cards issue #2 targets: write a Lamport-style structured proof for each.
 
 Regenerate with `just unsolved` after a card gains a solution. CI publishes
@@ -10,12 +10,10 @@ regeneration, and writing the solution removes the line.
 
 ## Count
 
-- Problems: 24
+- Problems: 22
 
-## Problems (24)
+## Problems (22)
 
-- [ ] P-779HN — "An operator whose eigenspaces all have dimension at most $1$ has a cyclic vector"
-- [ ] P-7JZQA — "The additive group of $\QQ$ has no maximal proper subgroups, and the same question for $\QQ^\times$"
 - [ ] P-7P63H — "Ring homomorphisms $\QQ[x]/(x^{100}+2)\to\QQ[x]/(x^{1001}+2)$"
 - [ ] P-AGH467MULTISECANTS — "Curves without multisecants in characteristic zero"
 - [ ] P-AKYLF — "Residue fields of $\ZZ[x_1,\ldots,x_n]$ at maximal ideals are finite"
