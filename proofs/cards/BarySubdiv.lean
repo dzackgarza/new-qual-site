@@ -1254,6 +1254,148 @@ theorem descVertex_last {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
   rw [Finset.card_singleton, Nat.cast_one, inv_one]
   by_cases hi : i = π 0 <;> simp [hi]
 
+/-! ## 11. The flags of the descending chain
+
+The elementary `List.take`/`Ici` computation: the `k`-th face of `chainOf univ (peel π)` is
+`descFace π k = π '' Iic (rev k)`, i.e. the prefix faces of `π` counted from the top.
+-/
+
+/-- The vertices peeled in the first `k` steps of `peel π` are `π (rev 0), …, π (rev (k-1))`. -/
+theorem peel_take_toFinset {N : ℕ} (π : Equiv.Perm (Fin N)) :
+    ∀ k : ℕ, k ≤ N → ((peel π).take k).toFinset
+      = (Finset.univ.filter (fun i : Fin N => i.val < k)).image (fun i => π (Fin.rev i)) := by
+  have happ : ∀ (a b : List (Fin N)), (a ++ b).toFinset = a.toFinset ∪ b.toFinset := by
+    intro a b
+    ext x
+    simp [List.mem_toFinset]
+  intro k
+  induction k with
+  | zero =>
+      intro _
+      rw [List.take_zero, List.toFinset_nil]
+      simp
+  | succ j ih =>
+      intro hj
+      have hsome : (peel π)[j]? = some (π (Fin.rev (⟨j, by omega⟩ : Fin N))) := by
+        rw [show peel π = List.ofFn (fun i : Fin N => π (Fin.rev i)) from rfl, List.getElem?_ofFn,
+          dif_pos (by omega)]
+      rw [List.take_add_one, happ, ih (by omega), hsome, Option.toList_some, List.toFinset_cons,
+        List.toFinset_nil, Finset.insert_empty]
+      have hstep : (Finset.univ.filter (fun i : Fin N => i.val < j + 1))
+          = insert (⟨j, by omega⟩ : Fin N)
+              (Finset.univ.filter (fun i : Fin N => i.val < j)) := by
+        ext i
+        simp only [Finset.mem_filter, Finset.mem_univ, true_and, Finset.mem_insert]
+        constructor
+        · intro hi
+          rcases Nat.lt_succ_iff_lt_or_eq.mp hi with h | h
+          · exact Or.inr h
+          · exact Or.inl (Fin.ext h)
+        · rintro (h | h)
+          · rw [h]
+            exact Nat.lt_succ_self j
+          · exact Nat.lt_succ_of_lt h
+      rw [hstep, Finset.image_insert, Finset.insert_eq, Finset.union_comm]
+
+/-- Reversal carries the first `k` indices to the last ones. -/
+theorem rev_image_Iio {N : ℕ} (k : Fin N) :
+    (Finset.Iio k).image (fun i : Fin N => Fin.rev i) = Finset.Ioi (Fin.rev k) := by
+  ext j
+  simp only [Finset.mem_image, Finset.mem_Iio, Finset.mem_Ioi]
+  constructor
+  · rintro ⟨i, hi, rfl⟩
+    exact (Fin.rev_lt_iff (i := k) (j := Fin.rev i)).mpr (by simpa using hi)
+  · intro hj
+    exact ⟨Fin.rev j, (Fin.rev_lt_iff (i := k) (j := j)).mp hj, by simp⟩
+
+/-- A bijection carries the complement of a set to the complement of its image. -/
+theorem sdiff_image_of_bijective {N : ℕ} {f : Fin N → Fin N} (hf : Function.Bijective f)
+    (S : Finset (Fin N)) :
+    Finset.univ \ S.image f = (Finset.univ \ S).image (fun i => f i) := by
+  ext j
+  constructor
+  · intro hj
+    obtain ⟨i, rfl⟩ := hf.2 j
+    refine Finset.mem_image.mpr ⟨i, ?_, rfl⟩
+    refine Finset.mem_sdiff.mpr ⟨Finset.mem_univ _, ?_⟩
+    intro hmem
+    exact (Finset.mem_sdiff.mp hj).2 (Finset.mem_image.mpr ⟨i, hmem, rfl⟩)
+  · intro hj
+    obtain ⟨i, hi, rfl⟩ := Finset.mem_image.mp hj
+    refine Finset.mem_sdiff.mpr ⟨Finset.mem_univ _, ?_⟩
+    intro hmem
+    obtain ⟨i', hi', heq⟩ := Finset.mem_image.mp hmem
+    exact (Finset.mem_sdiff.mp hi).2 (hf.1 heq ▸ hi')
+
+theorem univ_sdiff_Ioi {N : ℕ} (m : Fin N) : Finset.univ \ Finset.Ioi m = Finset.Iic m := by
+  ext j
+  simp
+
+/-- **The faces of the descending chain are the flags.** -/
+theorem peel_take_face {N : ℕ} (π : Equiv.Perm (Fin N)) (k : Fin N) :
+    Finset.univ \ ((peel π).take k.val).toFinset = descFace π k := by
+  rw [peel_take_toFinset π k.val k.isLt.le]
+  have hIio : (Finset.univ.filter (fun i : Fin N => i.val < k.val)) = Finset.Iio k := by
+    ext i
+    simp
+  rw [hIio]
+  have himg : (Finset.Iio k).image (fun i => π (Fin.rev i))
+      = ((Finset.Iio k).image Fin.rev).image (fun i => π i) := by
+    rw [Finset.image_image]
+    rfl
+  rw [himg, rev_image_Iio, sdiff_image_of_bijective, univ_sdiff_Ioi]
+  · rfl
+  · exact ⟨fun a b h => π.injective h, fun j => ⟨π.symm j, by simp⟩⟩
+
+/-- The length of a chain. -/
+theorem chainOf_length {F : Finset (Fin N)} {l : List (Fin N)} (hl : l.toFinset = F)
+    (hnd : l.Nodup) : (chainOf F l).length = max 1 F.card := by
+  induction l generalizing F with
+  | nil =>
+      rw [List.toFinset_nil] at hl
+      subst hl
+      rw [chainOf_nil]
+      simp
+  | cons v l ih =>
+      obtain ⟨hvl, hnd'⟩ := List.nodup_cons.mp hnd
+      have hvF : v ∈ F := by
+        have : v ∈ (v :: l).toFinset := List.mem_toFinset.mpr (by simp)
+        rwa [hl] at this
+      have hl' : l.toFinset = F.erase v := by
+        rw [← hl, List.toFinset_cons, Finset.erase_insert (by simpa using hvl)]
+      by_cases hcard : F.card ≤ 1
+      · have hc1 : F.card = 1 := by
+          have := Finset.card_pos.mpr ⟨v, hvF⟩
+          omega
+        have htrunc : chainOf F (v :: l) = [F] := by
+          simp only [chainOf]
+          rw [if_pos hcard]
+        rw [htrunc, hc1]
+        simp
+      · rw [chainOf_cons v l hcard, List.length_cons, ih hl' hnd',
+          Finset.card_erase_of_mem hvF]
+        omega
+
+/-- **The flags of the descending chain**, as a list equality: the recursion's chain for `π` is the
+list of its prefix faces, from the whole simplex down. -/
+theorem chainOf_peel_eq_ofFn_descFace {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
+    chainOf (Finset.univ : Finset (Fin (M+1))) (peel π)
+      = List.ofFn (fun k : Fin (M+1) => descFace π k) := by
+  have hlen : (chainOf (Finset.univ : Finset (Fin (M+1))) (peel π)).length = M + 1 := by
+    rw [chainOf_length (peel_toFinset π) (peel_nodup π), Finset.card_univ, Fintype.card_fin]
+    omega
+  have hpeel : (peel π).length = M + 1 := List.length_ofFn
+  refine List.ext_getElem? fun i => ?_
+  rw [List.getElem?_ofFn]
+  by_cases hi : i < M + 1
+  · rw [dif_pos hi]
+    have hstep := chainOf_getElem?_take (F := Finset.univ) (l := peel π) (peel_toFinset π)
+      (peel_nodup π) i (by rw [hpeel]; exact hi)
+    rw [peel_take_face π ⟨i, hi⟩] at hstep
+    exact hstep
+  · rw [dif_neg hi]
+    exact List.getElem?_eq_none (by rw [hlen]; omega)
+
 end BarySubdiv
 
 #print axioms BarySubdiv.stepSign_eq_pow_stepExp
@@ -1292,3 +1434,9 @@ end BarySubdiv
 #print axioms BarySubdiv.descFace_antitone
 #print axioms BarySubdiv.descFace_last
 #print axioms BarySubdiv.descVertex_last
+#print axioms BarySubdiv.peel_take_toFinset
+#print axioms BarySubdiv.rev_image_Iio
+#print axioms BarySubdiv.sdiff_image_of_injective
+#print axioms BarySubdiv.peel_take_face
+#print axioms BarySubdiv.chainOf_length
+#print axioms BarySubdiv.chainOf_peel_eq_ofFn_descFace
