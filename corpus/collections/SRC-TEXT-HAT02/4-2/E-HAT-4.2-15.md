@@ -22,10 +22,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Statement repaired against Hatcher's printed text: the card had dropped printed matter
+    (a bracketed hint or pointer, or a printed sentence) that an audit located by word-by-word
+    comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
+    applying the repair. The restored text is the printed wording and the mathematics of the
+    statement is otherwise unchanged.
 ---
 
 ::: {.problem}
-Show that a closed simply-connected 3-manifold is homotopy equivalent to $S^3$.
+Show that a closed simply-connected 3-manifold is homotopy equivalent to $S^3$. [Use Poincaré duality, and also the fact that closed manifolds are homotopy equivalent to CW complexes, from Corollary A.12 in the Appendix. The stronger statement that a closed simply-connected 3-manifold is homeomorphic to $S^3$ is the Poincaré conjecture, finally proved by Perelman. The higher-dimensional analog, that a closed $n$-manifold homotopy equivalent to $S^n$ is homeomorphic to $S^n$, had been proved earlier for all $n \geq 4$.]
 :::
 
 ::: {.solution}

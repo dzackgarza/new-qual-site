@@ -14,10 +14,20 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Statement repaired against Hatcher's printed text: the card had dropped printed matter
+    (a bracketed hint or pointer, or a printed sentence) that an audit located by word-by-word
+    comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
+    applying the repair. The restored text is the printed wording and the mathematics of the
+    statement is otherwise unchanged.
 ---
 
 ::: {.problem}
 Using the Künneth formula, show that $\Sigma K(\ZZ_m \times \ZZ_n, 1) \simeq \Sigma K(\ZZ_m, 1) \vee \Sigma K(\ZZ_n, 1)$ if $m$ and $n$ are relatively prime.
+Thus to determine stable splittings of $K(\ZZ_n, 1)$ it suffices to do the case that $n$ is a prime power, as in Proposition 4I.3.
 :::
 
 ::: {.solution}

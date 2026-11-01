@@ -13,11 +13,20 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Statement repaired against Hatcher's printed text: the card had dropped printed matter
+    (a bracketed hint or pointer, or a printed sentence) that an audit located by word-by-word
+    comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
+    applying the repair. The restored text is the printed wording and the mathematics of the
+    statement is otherwise unchanged.
 review: draft
 ---
 
 ::: {.problem}
-Show that if $S^k \to S^m \to S^n$ is a fiber bundle, then $k = n-1$ and $m = 2n-1$.
+Show that if $S^k \to S^m \to S^n$ is a fiber bundle, then $k = n-1$ and $m = 2n-1$. [Look at the long exact sequence of homotopy groups.]
 :::
 
 ::: {.solution}

@@ -14,10 +14,20 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Statement repaired against Hatcher's printed text: the card had dropped printed matter
+    (a bracketed hint or pointer, or a printed sentence) that an audit located by word-by-word
+    comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
+    applying the repair. The restored text is the printed wording and the mathematics of the
+    statement is otherwise unchanged.
 ---
 
 ::: {.problem}
 With the notation of the preceding problem, show that $\operatorname{Aut}(\bigvee_n S^k) \approx \operatorname{GL}_n(\ZZ)$ for $k > 1$, where $\bigvee_n S^k$ denotes the wedge sum of $n$ copies of $S^k$ and $\operatorname{GL}_n(\ZZ)$ is the group of $n \times n$ matrices with entries in $\ZZ$ having an inverse matrix of the same form.
+[$\operatorname{GL}_n(\ZZ)$ is the automorphism group of $\ZZ^n \approx \pi_k(\bigvee_n S^k) \approx H_k(\bigvee_n S^k)$.]
 :::
 
 ::: {.solution}

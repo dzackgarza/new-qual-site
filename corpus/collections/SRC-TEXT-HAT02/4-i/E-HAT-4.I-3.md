@@ -21,10 +21,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Statement repaired against Hatcher's printed text: the card had dropped printed matter
+    (a bracketed hint or pointer, or a printed sentence) that an audit located by word-by-word
+    comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
+    applying the repair. The restored text is the printed wording and the mathematics of the
+    statement is otherwise unchanged.
 ---
 
 ::: {.problem}
-Extending Proposition 4I.3, show that the $(2k+1)$-skeleton of the suspension of a high-dimensional lens space with fundamental group of order $p^n$ is homotopy equivalent to the wedge sum of the $(2k+1)$-skeleta of the spaces $X_i$, if these $X_i$'s are chosen to have the minimum number of cells in each dimension.
+Extending Proposition 4I.3, show that the $(2k+1)$-skeleton of the suspension of a high-dimensional lens space with fundamental group of order $p^n$ is homotopy equivalent to the wedge sum of the $(2k+1)$-skeleta of the spaces $X_i$, if these $X_i$'s are chosen to have the minimum number of cells in each dimension, as described in the remarks following the proof.
 :::
 
 ::: {.solution}

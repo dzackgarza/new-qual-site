@@ -22,11 +22,20 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Statement repaired against Hatcher's printed text: the card had dropped printed matter
+    (a bracketed hint or pointer, or a printed sentence) that an audit located by word-by-word
+    comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
+    applying the repair. The restored text is the printed wording and the mathematics of the
+    statement is otherwise unchanged.
 ---
 
 ::: {.problem}
 Since there is a fiber bundle $S^2 \to \CP^5 \to \quatprojective^2$ by Exercise 35 in §4.2, one might ask whether there is an analogous bundle $S^4 \to \quatprojective^5 \to \OP^2$.
-Use Steenrod powers for the prime 3 to show that such a bundle cannot exist.
+Use Steenrod powers for the prime 3 to show that such a bundle cannot exist. [The Gysin sequence can be used to determine the map on cohomology induced by the bundle projection $\quatprojective^5 \to \OP^2$.]
 :::
 
 ::: {.solution}

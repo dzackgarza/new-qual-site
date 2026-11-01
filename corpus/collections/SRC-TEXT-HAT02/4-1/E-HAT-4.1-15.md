@@ -22,6 +22,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Statement repaired against Hatcher's printed text: the card had dropped printed matter
+    (a bracketed hint or pointer, or a printed sentence) that an audit located by word-by-word
+    comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
+    applying the repair. The restored text is the printed wording and the mathematics of the
+    statement is otherwise unchanged.
 ---
 
 ::: {.problem}
@@ -32,7 +41,7 @@ Show that every map $f: S^n \to S^n$ is homotopic to a multiple of the identity 
 (b) For $f$ as in (a), consider the composition $gf$ where $g: S^n \to S^n$ collapses the complement of a small ball about $q$ to the basepoint.
 Use this to reduce (a) further to the case $k = 1$.
 
-(c) Finish the argument by showing that an invertible $n \times n$ matrix can be joined by a path of such matrices to either the identity matrix or the matrix of a reflection.
+(c) Finish the argument by showing that an invertible $n \times n$ matrix can be joined by a path of such matrices to either the identity matrix or the matrix of a reflection. (Use Gaussian elimination, for example.)
 :::
 
 ::: {.solution}

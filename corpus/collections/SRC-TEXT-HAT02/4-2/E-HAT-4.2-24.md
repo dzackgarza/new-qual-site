@@ -14,10 +14,19 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Statement repaired against Hatcher's printed text: the card had dropped printed matter
+    (a bracketed hint or pointer, or a printed sentence) that an audit located by word-by-word
+    comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
+    applying the repair. The restored text is the printed wording and the mathematics of the
+    statement is otherwise unchanged.
 ---
 
 ::: {.problem}
-Show there is a Moore space $M(G, 1)$ with $\pi_1\bigl(M(G, 1)\bigr) \approx G$ iff $H_2(K(G, 1); \ZZ) = 0$.
+Show there is a Moore space $M(G, 1)$ with $\pi_1\bigl(M(G, 1)\bigr) \approx G$ iff $H_2(K(G, 1); \ZZ) = 0$. [Use the preceding problem. Build such an $M(G, 1)$ from the 2-skeleton $K^2$ of a $K(G, 1)$ by attaching 3-cells according to a basis for the free group $H_2(K^2; \ZZ)$.]
 In particular, there is no $M(\ZZ^n, 1)$ with fundamental group $\ZZ^n$, free abelian of rank $n$, if $n \geq 2$.
 :::
 

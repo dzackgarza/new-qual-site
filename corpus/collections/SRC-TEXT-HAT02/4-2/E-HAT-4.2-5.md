@@ -14,11 +14,20 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Statement repaired against Hatcher's printed text: the card had dropped printed matter
+    (a bracketed hint or pointer, or a printed sentence) that an audit located by word-by-word
+    comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
+    applying the repair. The restored text is the printed wording and the mathematics of the
+    statement is otherwise unchanged.
 ---
 
 ::: {.problem}
 Let $f: S_\alpha^2 \vee S_\beta^2 \to S_\alpha^2 \vee S_\beta^2$ be the map which is the identity on the $S_\alpha^2$ summand and which on the $S_\beta^2$ summand is the sum of the identity map and a homeomorphism $S_\beta^2 \to S_\alpha^2$.
-Let $X$ be the mapping torus of $f$.
+Let $X$ be the mapping torus of $f$, the quotient space of $(S_\alpha^2 \vee S_\beta^2) \times I$ under the identifications $(x, 0) \sim (f(x), 1)$.
 The mapping torus of the restriction of $f$ to $S_\alpha^2$ forms a subspace $A = S^1 \times S_\alpha^2 \subset X$.
 Show that the maps $\pi_2(A) \to \pi_2(X) \to \pi_2(X, A)$ form a short exact sequence $0 \to \ZZ \to \ZZ \oplus \ZZ \to \ZZ \to 0$, and compute the action of $\pi_1(A)$ on these three groups.
 In particular, show the action of $\pi_1(A)$ is trivial on $\pi_2(A)$ and $\pi_2(X, A)$ but is nontrivial on $\pi_2(X)$.

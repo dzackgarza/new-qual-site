@@ -22,10 +22,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Statement repaired against Hatcher's printed text: the card had dropped printed matter
+    (a bracketed hint or pointer, or a printed sentence) that an audit located by word-by-word
+    comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
+    applying the repair. The restored text is the printed wording and the mathematics of the
+    statement is otherwise unchanged.
 ---
 
 ::: {.problem}
-Show that a map $f: X \to Y$ of connected CW complexes is a homotopy equivalence if it induces an isomorphism on $\pi_1$ and if a lift $\tilde{f}: \tilde{X} \to \tilde{Y}$ to the universal covers induces an isomorphism on homology.
+Show that a map $f: X \to Y$ of connected CW complexes is a homotopy equivalence if it induces an isomorphism on $\pi_1$ and if a lift $\tilde{f}: \tilde{X} \to \tilde{Y}$ to the universal covers induces an isomorphism on homology. [The latter condition can be restated in terms of homology with local coefficients as saying that $f_*: H_*(X; \ZZ[\pi_1 X]) \to H_*(Y; \ZZ[\pi_1 Y])$ is an isomorphism; see §3.H.]
 :::
 
 ::: {.solution}

@@ -35,10 +35,20 @@ audit:
     because every map from S^n has compact image and so lands in a finite subcomplex, of which there
     are countably many, each with countable homotopy groups by simplicial approximation.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Statement repaired against Hatcher's printed text: the card had dropped printed matter
+    (a bracketed hint or pointer, or a printed sentence) that an audit located by word-by-word
+    comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
+    applying the repair. The restored text is the printed wording and the mathematics of the
+    statement is otherwise unchanged.
 ---
 
 ::: {.problem}
 Show that a path-connected space $X$ has a CW approximation with countably many cells if and only if $\pi_n(X)$ is countable for all $n$.
+[Use the results on simplicial approximations to maps and spaces in §2.C.]
 :::
 
 ::: {.solution}
