@@ -251,6 +251,19 @@ group, and with the directed union of the `p`-primary subgroups in `A_p = colim 
 needs `⊗` commuting with filtered colimits of abelian groups together with additivity; it is
 not proved here and is listed as an obligation in `proofs/README.md`. -/
 
+/-- The vanishing transfers to the finite stage, which is the point of the Tor passage: for a
+flat `F` — in the cards `F` is the free middle term of the presentation — the inclusion
+`B' ≤ B` induces an injection `F ⊗ B' → F ⊗ B`, so a finite sum that vanishes in `F ⊗ B`
+vanishes already in `F ⊗ B'`. Without this, a finitely supported tensor element would only
+show that its image vanishes outside the finite stage.
+
+Reused from Mathlib's `Module.Flat.lTensor_preserves_injective_linearMap` applied to
+`Submodule.subtype`; nothing is rebuilt. -/
+theorem lTensor_subtype_injective_of_flat {F B : Type*} [AddCommGroup F] [AddCommGroup B]
+    [Module.Flat ℤ F] (B' : Submodule ℤ B) :
+    Function.Injective (LinearMap.lTensor F B'.subtype) :=
+  Module.Flat.lTensor_preserves_injective_linearMap _ B'.subtype_injective
+
 end TorReductions
 
 #print axioms TorReductions.torKernel_eq_bot_of_subsingleton
@@ -267,3 +280,4 @@ end TorReductions
 #print axioms TorReductions.mem_of_p_smul_mem_of_pPrimary
 #print axioms TorReductions.prodLeft_comp_rTensor
 #print axioms TorReductions.map_prodLeft_torKernel
+#print axioms TorReductions.lTensor_subtype_injective_of_flat

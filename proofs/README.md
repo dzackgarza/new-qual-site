@@ -116,13 +116,17 @@ Three proof applications stay open until the canonical Mathlib is built in the r
 and the files are re-elaborated there. Grepping the pinned source for the names they use does
 **not** close them; the definitions have to be read at that revision when the build exists:
 
-- the `Tor` half of §3.A exercise 4. The tensor half is now proved (`tensorLeft_colim_iso`)
-  and the additivity is proved (`map_prodLeft_torKernel`), so what remains is exactly one of
-  two routes: Hatcher's Lemma 3A.2 (that the presentation-level kernel is independent of the
-  resolution), or, avoiding it, the finite-generation lemma that every element of
-  `ker(f ⊗ id_B)` lies in the image of `K' ⊗ B'` for a finitely generated `K' ≤ K` and
-  `B' ≤ B` — which is what the cards actually use when they say the class lies in some stage.
-  Neither is proved,
+- the `Tor` half of §3.A exercise 4, now down to one step. Additivity
+  (`map_prodLeft_torKernel`) and the tensor/colimit comparison (`tensorLeft_colim_iso`) are
+  proved, and so is the piece that makes a finite stage meaningful:
+  `lTensor_subtype_injective_of_flat`, that for flat `F` the inclusion `B' ≤ B` gives an
+  injection `F ⊗ B' → F ⊗ B`, so a finite sum vanishing in `F ⊗ B` vanishes already in
+  `F ⊗ B'`. What remains is the finite-stage witness itself: for `x ∈ ker(f ⊗ id_B)` there must
+  be finitely generated `K' ≤ K`, `B' ≤ B` with `x` in the image of `K' ⊗ B' → K ⊗ B`. The
+  design is an induction on `TensorProduct.induction_on`: `0` takes the two bottom submodules,
+  a pure tensor `k ⊗ b` takes `span{k}` and `span{b}` (both `Submodule.FG`), and a sum takes
+  `K' ⊔ K''`, `B' ⊔ B''`, using that the subtype inclusions factor through the sup. It is not
+  proved,
 - the simplex chain-model comparison for `E-HAT-2.2-16`, instantiating
   `ker_eq_range_of_comm_iso` with the barycentric chains of `Δ^n` and the skeleton maps.
 
