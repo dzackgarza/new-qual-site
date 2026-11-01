@@ -345,6 +345,37 @@ theorem exists_fg_summand (b : Module.Basis ι ℤ F) (f : K →ₗ[ℤ] F) (P :
     Submodule.smul_mem _ _ (Submodule.subset_span
       ⟨i, Finset.subset_biUnion_of_mem _ hk hi, rfl⟩)
 
+/-- **The stage is a finitely generated subgroup of `A`.** `stageMap` is injective, and its
+range is the image of `F'` under the quotient map, so the stage is a quotient of the finitely
+generated `F'`. This is the finite-generation claim the cards make about `A_α`. -/
+theorem stage_range_fg (f : K →ₗ[ℤ] F) {F' : Submodule ℤ F} (hF' : F'.FG) :
+    (LinearMap.range (stageMap f F')).FG := by
+  rw [stageMap, Submodule.range_mapQ, Submodule.range_subtype]
+  exact hF'.map (LinearMap.range f).mkQ
+
+/-- The stage's group is a finitely generated `ℤ`-module, which is the hypothesis the structure
+theorem consumes. -/
+theorem stage_finite (b : Module.Basis ι ℤ F) (f : K →ₗ[ℤ] F) (t : Finset ι) :
+    Module.Finite ℤ (coordSpan b t ⧸ stageRel f (coordSpan b t)) := by
+  haveI : Module.Finite ℤ (coordSpan b t) :=
+    Module.Finite.of_fg (coordSpan_fg b t)
+  infer_instance
+
+/-- **The stages cover `A`.** Every element of `A = F ⧸ range f` lies in the image of the stage
+belonging to some finitely generated `F'` — namely `span {x}` for any lift `x`. With `stageIncl`
+this is the identification `A = ⋃_α A_α` that the cards' direct-limit step starts from.
+
+The covering stage need not be a direct summand; that extra condition is what the *Tor* descent
+of `exists_stage_witness_of_retraction` requires, and `exists_fg_summand` supplies it
+separately. -/
+theorem exists_stage_containing (f : K →ₗ[ℤ] F) (a : F ⧸ LinearMap.range f) :
+    ∃ (F' : Submodule ℤ F), F'.FG ∧ a ∈ LinearMap.range (stageMap f F') := by
+  obtain ⟨x, rfl⟩ := Submodule.Quotient.mk_surjective (p := LinearMap.range f) a
+  refine ⟨Submodule.span ℤ {x}, Submodule.fg_span_singleton x, ?_⟩
+  simp only [LinearMap.mem_range]
+  exact ⟨Submodule.Quotient.mk (Subtype.mk x (Submodule.mem_span_singleton_self x)), by
+    simp [stageMap, Submodule.mapQ_apply]⟩
+
 /-- **Exercise 4 of §3.A, completed for a free middle term.** With `F` free, every element of
 the presentation-level `torKernel f` is carried by the `Tor` of a stage `K' = comap f F' → F'`
 whose middle term is a finitely generated direct summand of `F`, and it already vanishes at
@@ -389,3 +420,6 @@ end TorStages
 #print axioms TorStages.coordRetract_comp_subtype
 #print axioms TorStages.exists_fg_summand
 #print axioms TorStages.exists_stage_of_free
+#print axioms TorStages.stage_range_fg
+#print axioms TorStages.stage_finite
+#print axioms TorStages.exists_stage_containing
