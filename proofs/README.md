@@ -32,7 +32,7 @@ replacement. A correction is marked settled on its card only when a file here ce
 | `cards/TorTorsion.lean` | `E-HAT-3.A-6` | The coordinate step of the converse and the refutation of the inference it replaces: `ratchet_le`, `exact_order_smul`, `exists_coord`, `zmod_two_no_exact_order_eight`, `zmod_eight_order_four`. |
 | `cards/FamilyQuotient.lean` | `E-HAT-2.3-2` | The precise implication the dimension step needs: if the family $(f_i)_{i\in\ZZ}$ of groups is carried by a `Finset` (every group outside it is trivial), then the canonical map $\bigoplus_i f_i\to\prod_i f_i$ is **surjective**, so the quotient $\prod_i f_i\big/\bigoplus_i f_i$ is trivial; stated as `directSumToPi_surjective_of_finite_support` and `quotient_subsingleton_of_finite_support`, with the point case (all groups trivial) and the $S^0$ case (exactly one nonzero index) as corollaries. It does **not** assert that the sum and the product are isomorphic, and says nothing for a family with infinite support — there the map is not surjective in general, which is why the candidate fails the wedge axiom. The identification of the $f_i$ with reduced homology groups is not formalized. |
 | `cards/ChainLevelSteps.lean` | `E-HAT-2.2-16` | The degree-zero and skeleton steps of the repair, but not the enumeration of the simplex's chains: `choose_rank_step` (Pascal's identity), `ker_ne_top_of_surjective_to_int` (a surjection onto $\ZZ$ has proper kernel), `not_subsingleton_ordinary_homology` (with $\ker\varepsilon=\operatorname{im}\partial_1$ and $\varepsilon$ onto $\ZZ$, the ordinary $C_0/\operatorname{im}\partial_1\cong\ZZ$ is not trivial, so $Z_0/B_0$ cannot stand in for $\widetilde H_0$), and `ker_eq_range_of_comm_iso` (exactness transports across an isomorphism of three-term complexes, which is how the $k$-skeleton inherits exactness in the degrees where its differentials agree with the simplex's). **Not** certified: that the simplex's augmented complex is exact, that its chains are the barycentric ones, and hence $\widetilde H_i((\Delta^n)^k)=0$ for $i<k$ as a statement about the simplex. |
-| `cards/TorStages.lean` | `E-HAT-3.A-6`, `E-HAT-3.A-2` | The genuine stage construction for a presented group: `stageRel` (the stage's relations inside `F'`), `map_stageRel` (they are the relations of the sub-presentation `comap f F' → F'`, by `Submodule.map_comap_eq` and `Submodule.range_subtype`), and `stageMap`, the map `F'/(F' ⊓ range f) → F/range f` into `A` built with `Submodule.mapQ`. **Not** proved: that `stageMap` is injective, i.e. that the stage is a subgroup of `A`; the file states the remaining obligation and its elementwise proof. |
+| `cards/TorStages.lean` | `E-HAT-3.A-6`, `E-HAT-3.A-2` | The genuine stage construction for a presented group, and the sharp form of its hypothesis. The stage: `stageRel` (its relations inside `F'`), `map_stageRel` (they are the relations of the sub-presentation `comap f F' → F'`), `stageMap` (`A' → A`, by `Submodule.mapQ`) and `stageMap_injective`, so **the stage is a subgroup `A' ≤ A`**. Its own presentation: `stageRelMap` with `range_stageRelMap` (the cokernel is `A'`) and `subtype_comp_stageRelMap` (it composes to `f`). The directed system: `stageIncl` for `F' ≤ F''`, `stageMap_comp_stageIncl` (the triangles `A' → A'' → A` and `A' → A` commute) and `stageIncl_injective`. The filtered-colimit step: `rTensor_subtype_injective_of_retraction` (a retraction of `F' ↪ F` makes `F' ⊗ B → F ⊗ B` injective), `exists_stage_witness_of_retraction` (hence a class of `torKernel f` that comes from a finitely generated `P ≤ comap f F'` already vanishes at the stage), and `rTensor_subtype_not_injective`, **the certified counterexample** that `F' = 2ℤ ⊆ F = ℤ`, `B = ℤ/2` breaks the step for a submodule that is not a direct summand. **Not** proved: that the finitely generated stages can be chosen among the direct summands of `F` (for free `F`: spans of finite subsets of a basis); see section 5b. |
 | `cards/TorReductions.lean` | `E-HAT-3.A-6` | The presentation-level `Tor` and the parts of Hatcher's Proposition 3A.5 that Mathlib supplies: the free case of (3) (`torKernel_eq_bot_of_subsingleton`), the group in (5) (`torsionBy_eq_ker`), the torsion-free-is-flat hypothesis of (3) (`flat_of_torsionFree`, Mathlib's Dedekind-domain instance), and the flatness form of (6) (`rTensor_injective_of_flat`, Mathlib's `Module.Flat.rTensor_preserves_injective_linearMap`); and, for the step that needs the *$p$-primary* hypothesis rather than torsion-freeness, item (5) in full: `lid_rTensor_mulByInt` and `map_torKernel_mulByInt`, that the kernel of $(n\cdot\mathrm{id})\otimes\mathrm{id}_B$ inside $\ZZ\otimes B$ is carried by $\ZZ\otimes B\cong B$ onto $B[n]$ — that is, $\operatorname{Tor}(\ZZ/n,B)\cong B[n]$ for this resolution — together with `eq_zero_of_pow_smul_eq_zero`, `torsionBy_pow_eq_bot_of_no_p_torsion` (no $p$-torsion gives $C[p^k]=0$) and `mem_of_p_smul_mem_of_pPrimary` ($B_p$ is saturated for multiplication by $p$, i.e. $B/B_p$ has no $p$-torsion). Additivity (2) is now proved as `prodLeft_comp_rTensor` and `map_prodLeft_torKernel`: the presentation of a direct sum is the direct sum of the presentations, so `torKernel (f₁ ⊕ f₂)` is carried by `TensorProduct.prodLeft` onto `torKernel f₁ × torKernel f₂`. The proof avoids `prodLeft.symm` on arbitrary elements by rewriting the kernel as a `comap` and mapping forward through `Submodule.map_comap_eq_self`. **Not** certified: that the presentation-level kernel computes $\operatorname{Tor}$ for an arbitrary resolution (Lemma 3A.2) and commutation with filtered colimits (Exercise 4), which is what carries the cyclic case and the summand-by-summand case to an arbitrary $p$-primary or torsion-free group. |
 
 | `cards/ColimitTensor.lean` | `E-HAT-3.A-6`, `E-HAT-3.A-2` | Exercise 4 of §3.A, the `⊗` half, completely: `tensorLeft_preserves_colimits` (for `B : ModuleCat ℤ`, `tensorLeft B` preserves colimits, Mathlib's instance `instPreservesColimitsTensorLeft`) and `tensorLeft_colim_iso`, the comparison `B ⊗ colim F ≅ colim (B ⊗ F ·)` for any `F : J ⥤ ModuleCat ℤ` with `HasColimitsOfShape J (ModuleCat ℤ)`, built from `PreservesColimit.preserves` (which yields `Nonempty (IsColimit _)`, extracted with `Classical.choice`) and `IsColimit.coconePointUniqueUpToIso`. Axioms: propext, Classical.choice, Quot.sound. **Not** certified: the `Tor` half. |
@@ -95,14 +95,12 @@ settled until a file here covers it:
   does not supply the simplex's chain complex itself, so the card's implication is still not
   completed.
 - `E-HAT-3.A-6` and `E-HAT-3.A-2`, the filtered-colimit passage (Exercise 4 of §3.A). The
-  `⊗` half is now located in Mathlib and certified up to its statement:
-  `ColimitTensor.tensorLeft_preserves_colimits`, with the instance
-  `PreservesColimits (tensorLeft A)` from `CategoryTheory/Monoidal/Closed/Basic.lean`. Still
-  open: the comparison isomorphism `B ⊗ colim F ≅ colim (B ⊗ F ·)` (instance synthesis fails at
-  `PreservesColimit.preserves (colimit.cocone F)` and at `colimit (F ⋙ tensorLeft B)`; the
-  next step is to pass `ModuleCat.monoidalCategory` and `ModuleCat.monoidalClosed` explicitly),
-  and then the `Tor` half, which additionally needs Lemma 3A.2 and the concrete subgroup
-  inclusions of the two cards rather than an abstract colimit.
+  `⊗` half is closed: `ColimitTensor.tensorLeft_colim_iso` gives `B ⊗ colim F ≅ colim (B ⊗ F ·)`,
+  built from `PreservesColimit.preserves` with `PreservesColimits (tensorLeft B)` obtained
+  explicitly from `ModuleCat.monoidalCategory` and `ModuleCat.monoidalClosed`. The `Tor` half
+  is now reduced to two things, both recorded in section 5b: the choice of the stages among
+  the direct summands of `F`, and Hatcher's Lemma 3A.2 (presentation-independence), which is a
+  citation on top and is not formalized.
 - `E-HAT-3.A-2`: the restored direction "torsion-free implies $\operatorname{Tor}(A,B)=0$
   for all $B$" is a citation of exercise 5 of the same section. Two of its three
   ingredients are certified in `cards/TorReductions.lean` — a finitely generated
@@ -111,11 +109,11 @@ settled until a file here covers it:
   presentation vanishes (`torKernel_eq_bot_of_subsingleton`); the third, that
   $\operatorname{Tor}$ commutes with the filtered colimit of the finitely generated
   subgroups, is exercise 4 of the same section and is not formalized.
-## 5b. Pending the shared build, and not to be closed by name checks
+## 5b. The two card applications that stay open, and why
 
-Three proof applications stay open until the canonical Mathlib is built in the research image
-and the files are re-elaborated there. Grepping the pinned source for the names they use does
-**not** close them; the definitions have to be read at that revision when the build exists:
+These are the applications that the group lemmas do not reach. They are stated here with the
+obstruction named, so that neither is closed by a name check against the pinned source: each
+requires a construction, not a citation.
 
 - **both card applications are pending.** The lemmas `exists_fg_stage` and
   `lTensor_subtype_injective_of_flat` are proved and useful, but they are not the implication
@@ -131,20 +129,27 @@ and the files are re-elaborated there. Grepping the pinned source for the names 
   `lTensor_subtype_injective_of_flat` gives injectivity *given* a submodule `B' ≤ B`; it does
   not produce a finitely generated `B'` and does not lift an element.
 
-  What is still required is one of: the genuine Tor filtered-colimit comparison — the
-  presentations of the stages as a filtered diagram of complexes with its colimit identified
-  with the presentation of `A`, and `Tor(A,B)` identified with the colimit of the stage `Tor`s —
-  or, avoiding resolution theory, an explicit construction of finitely generated subgroup
-  stages `A_α ≤ A` with compatible presentations and the order-preservation and transition
-  maps: for `A = coker(f)` one takes `F_α ⊆ F` finitely generated (free, since `F` is) and
-  `K_α = K ∩ f^{-1}(F_α)`, so that `A_α ≅ F_α/(F_α ∩ f(K))` with the presentation
-  `K_α → F_α`, together with the inclusion of `A_α` into `A` being injective and compatible
-  with the directed structure. Neither route is proved. Hatcher's Lemma 3A.2 is a further
-  citation on top of either, not a substitute for them,- the simplex chain-model comparison for `E-HAT-2.2-16`, instantiating
+  The stage construction of `cards/TorStages.lean` is now that second route, as far as the
+  group theory goes: for `A = coker(f)` one takes `F_α ⊆ F` finitely generated and
+  `K_α = K ∩ f^{-1}(F_α)`, so that `A_α ≅ F_α/(F_α ∩ f(K))` presents by `K_α → F_α`, the
+  inclusion `A_α ↪ A` is injective (`stageMap_injective`), and the transition maps commute
+  with the maps into `A` (`stageMap_comp_stageIncl`). **One step remains, and it is not the
+  flatness step one would first try:** vanishing in `F ⊗ B` descends to `F_α ⊗ B` only when
+  `F_α` is a *direct summand* of `F`. It is false for a general submodule, and
+  `TorStages.rTensor_subtype_not_injective` certifies the failure with `F = ℤ`, `F_α = 2ℤ`,
+  `B = ℤ/2`: `2ℤ ⊗ ℤ/2 → ℤ ⊗ ℤ/2` kills the nonzero generator `2 ⊗ 1`. What
+  `TorStages.rTensor_subtype_injective_of_retraction` and
+  `TorStages.exists_stage_witness_of_retraction` give is exactly the retraction hypothesis, so
+  the remaining obligation is to choose the `F_α` as finitely generated direct summands of
+  `F` containing the chosen lifts — for the cards' free `F`, spans of finite subsets of a
+  basis. That choice is not formalized here. Hatcher's Lemma 3A.2 is a further citation on top
+  of it, not a substitute for it.
+
+- the simplex chain-model comparison for `E-HAT-2.2-16`, instantiating
   `ker_eq_range_of_comm_iso` with the barycentric chains of `Δ^n` and the skeleton maps.
 
-The name-by-name check against `db584cd6` recorded above is a preparation for that re-run; it
-is not acceptance of any of the three.
+The name-by-name check against `db584cd6` is a check, not acceptance: what is written above is
+what the files prove on the canonical baseline, and nothing more.
 
 ## 6. Chapter 1 step repairs: expository, with the backing theorem checked
 
@@ -167,13 +172,20 @@ it is a review record, not a certificate.
 
 Lean 4.33.1 with the Mathlib on `LEAN_PATH`, and Sage for the integer linear algebra:
 
+On the canonical baseline (the shared research image, section "Toolchain" below) every file
+in `proofs/cards/` is elaborated by
+
 ```sh
-lean proofs/cards/MooreSpaceExactness.lean
-lean proofs/cards/TorTorsion.lean
-lean proofs/cards/TorReductions.lean
-lean proofs/cards/FieldHomework1.lean
-sage proofs/cards/DeltaComplexHomology.sage
+ROOT=$HOME/sage-image/rootfs; REPO=$PWD
+for f in proofs/cards/*.lean; do
+  $HOME/.udocker/bin/proot-x86_64 -R $ROOT -b /proc -b /dev -b $REPO:/work \
+    -w /repos/lean-categories /bin/sh -c "lake env lean /work/$f"
+done
 ```
+
+The Sage check is run inside the same image as recorded in section 2; its entry point is the
+image's own (the image has no `sage` on `PATH`, so the command used is the one recorded
+there, not a path invented here).
 
 `#print axioms` at the end of each file must show only `propext`, `Classical.choice` and
 `Quot.sound`; any appearance of `sorryAx` means the certificate is not a proof.
@@ -211,10 +223,12 @@ that checkout's `lean-toolchain`, Mathlib `db584cd6d46c92f209a44c0f1c829460d3274
 `lake env lean` there imports `Mathlib` and sees `TensorProduct.prodLeft` with the same
 signature the proofs use.
 
-**All six proof files re-elaborate on that baseline, unchanged**, with zero occurrences of
-`sorryAx` and axiom lists `propext`, `Classical.choice`, `Quot.sound` — so these certificates
-are shared-image acceptance, not merely this VM's `/opt` provision. The three applications in
-section 5b remain open; they can now be worked on this baseline.
+**All eleven files in `proofs/cards/` re-elaborate on that baseline**, with zero occurrences of
+`sorryAx` and axiom lists only `propext`, `Classical.choice`, `Quot.sound` — so these
+certificates are shared-image acceptance, not merely this VM's `/opt` provision: 11 files, exit
+status 0 each, most recently re-run when `cards/TorStages.lean` gained the stage presentation,
+the transition maps and the direct-summand counterexample. The applications in section 5b
+remain open, on this baseline.
 
 ### Where the certificates were first produced (superseded by the section above)
 
