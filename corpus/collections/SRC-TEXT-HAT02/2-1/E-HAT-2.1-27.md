@@ -29,18 +29,22 @@ audit:
   by: claude
   date: 2026-11-01
   note: >-
-    **PARTIAL review, not a complete read.** The following was not checked: the detailed steps of part (b).
-    Part (a) read and checked: the map of long exact sequences is natural, the four surrounding
-    vertical maps are isomorphisms because `f` is a homotopy equivalence on `X` and on `A`, and the
-    five lemma gives the isomorphism on relative groups. Part (b): the closure observation is the tool, and it is needed for exactly the
-    reason the book's hint gives. The second pair is `(D^n, D^n - {0})`, whose relative homology is
-    *not* zero: `H_n(D^n, D^n - {0}) = H_{n-1}(D^n - {0}) = H_{n-1}(S^{n-1}) = Z`, the same group as
-    `H_n(D^n, S^{n-1})`, so comparing those two pairs directly yields no contradiction. What separates
-    them is the closure: a pair homotopy equivalence carries the same maps and pair homotopies to the
-    closure pairs, making `(D^n, closure(D^n - {0})) = (D^n, D^n)` pair homotopy equivalent to
-    `(D^n, S^{n-1})`, while `H_n(D^n, D^n) = 0` and `H_n(D^n, S^{n-1}) = Z`. That is the argument the
-    card makes and it is correct. The hypothesis of (a) -- `f` a homotopy equivalence on `X` and on
-    `A` -- is exactly satisfied here, which is why only the pair conclusion can fail.
+    Read line by line, all three steps. (a): naturality gives a map from the long exact sequence of
+    `(X,A)` to that of `(Y,B)`; the four surrounding vertical maps are isomorphisms because `f` is a
+    homotopy equivalence on `X` and on `A`; the five lemma then gives the isomorphism on `H_n(X,A) ->
+    H_n(Y,B)`, and this is a genuine isomorphism of the relative groups, not of the absolute ones.
+    (b): the closure step is the tool and it is needed for exactly the reason the book's hint gives.
+    The second pair `(D^n, D^n - {0})` has relative homology `H_n = H_{n-1}(S^{n-1}) = Z`, the *same*
+    group as `H_n(D^n, S^{n-1})`, so comparing those two pairs directly proves nothing; what separates
+    them is taking closures: `S^{n-1}` is already closed while `D^n - {0}` is dense with closure
+    `D^n`, and a pair homotopy equivalence carries its maps and pair homotopies to the closure pairs,
+    so a pair equivalence `(D^n, S^{n-1}) ~ (D^n, D^n - {0})` would give one
+    `(D^n, S^{n-1}) ~ (D^n, D^n)`, whence `H_n(D^n,S^{n-1}) = Z` would have to equal
+    `H_n(D^n,D^n) = 0`. So the inclusion is not a pair homotopy equivalence, although `f` is a
+    homotopy equivalence on the total spaces and on the subspaces — which is precisely the hypothesis
+    of (a), so the lesson is the one the exercise intends: pair homotopy equivalence implies relative
+    homology isomorphism, and the converse direction fails because the two conditions on `f` (on `X`
+    and on `A`) do not suffice for a *pair* equivalence. No correction was needed.
 ---
 
 ::: {.problem}
