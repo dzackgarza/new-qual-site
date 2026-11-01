@@ -1396,6 +1396,52 @@ theorem chainOf_peel_eq_ofFn_descFace {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
   · rw [dif_neg hi]
     exact List.getElem?_eq_none (by rw [hlen]; omega)
 
+/-! ## 12. The transport: faces to barycentric vertices, and the prepend formula
+
+The linear extension of "read a flag as the barycentre of its face", together with the coordinate form
+of Hatcher's prepend: prepending an apex to a vertex list weights it by the apex's own barycentric
+coordinate `x 0`, which is exactly what `S λ = b_λ (S ∂λ)` does at each stage.
+-/
+
+/-- The faces of the descending chain of `π`, read as barycentres, are the descending vertex list. -/
+theorem map_baryWeight_chainOf_peel {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
+    (chainOf (Finset.univ : Finset (Fin (M+1))) (peel π)).map baryWeight
+      = List.ofFn (fun k : Fin (M+1) => descVertex π k) := by
+  rw [chainOf_peel_eq_ofFn_descFace, List.map_ofFn]
+  rfl
+
+/-- **The linear extension.** Reading every flag of the recursion as the barycentre of its face
+carries the whole chain of `π` to its descending vertex list, and the recursion to the signed sum of
+those lists. -/
+theorem map_subdiv_univ_bary {M : ℕ} :
+    FreeAbelianGroup.map (fun c : List (Finset (Fin (M+1))) => c.map baryWeight)
+        (subdiv (Finset.univ : Finset (Fin (M+1))))
+      = ∑ π : Equiv.Perm (Fin (M+1)),
+          ((-1 : ℤ) ^ ((M + 1) * ((M + 1) - 1) / 2) * ((π.sign : ℤˣ) : ℤ)) •
+            FreeAbelianGroup.of (List.ofFn (fun k : Fin (M+1) => descVertex π k)) := by
+  rw [subdiv_univ_eq_sum_perm, map_sum]
+  refine Finset.sum_congr rfl fun π _ => ?_
+  rw [map_zsmul, FreeAbelianGroup.map_of_apply, map_baryWeight_chainOf_peel]
+
+/-- **The prepend formula in coordinates.** Prepending an apex `b` to a vertex list gives the affine
+map whose value is the apex weighted by `x 0` plus the tail evaluated on the remaining weights — the
+coordinate form of `b_λ`, with the apex's barycentric coordinate as its coefficient. -/
+theorem affineMap_cons_apply {N m : ℕ} (b : Fin N → ℝ) (v : Fin m → Fin N → ℝ)
+    (x : Fin (m+1) → ℝ) (i : Fin N) :
+    affineMap m (Fin.cons b v) x i = x 0 * b i + ∑ k : Fin m, x k.succ * v k i := by
+  rw [affineMap, Fin.sum_univ_succ]
+  simp [Fin.cons_zero, Fin.cons_succ]
+
+/-- The affine barycentric simplex of a vertex list is continuous, so it is a map of the standard
+simplex: with `affineMap_mem` it lands in `stdSimplex` and with `affineMap_single` its vertices are
+the listed points. -/
+theorem continuous_affineMap {N m : ℕ} (v : Fin (m+1) → Fin N → ℝ) :
+    Continuous (affineMap m v) := by
+  rw [continuous_pi_iff]
+  intro i
+  simp only [affineMap]
+  exact continuous_finset_sum _ fun k _ => (continuous_apply k).mul continuous_const
+
 end BarySubdiv
 
 #print axioms BarySubdiv.stepSign_eq_pow_stepExp
@@ -1440,3 +1486,7 @@ end BarySubdiv
 #print axioms BarySubdiv.peel_take_face
 #print axioms BarySubdiv.chainOf_length
 #print axioms BarySubdiv.chainOf_peel_eq_ofFn_descFace
+#print axioms BarySubdiv.map_baryWeight_chainOf_peel
+#print axioms BarySubdiv.map_subdiv_univ_bary
+#print axioms BarySubdiv.affineMap_cons_apply
+#print axioms BarySubdiv.continuous_affineMap
