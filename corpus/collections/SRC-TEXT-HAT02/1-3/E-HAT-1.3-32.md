@@ -36,6 +36,19 @@ audit:
   date: 2026-10-31
   note: >-
     Read the step claims: the restricted one-skeleton cover corresponds to $j_*^{-1}(H)$, and the three parts follow from that correspondence. Not every line checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct, and the mechanism is the right one: `j_* : pi_1(X^1) -> pi_1(X)` is
+    surjective because `X` is built from `X^1` by attaching cells of dimension at least two, and the
+    restricted 1-skeleton cover corresponds to `j_*^{-1}(H)`. Since `j_*` is onto, `H |-> j_*^{-1}(H)`
+    is injective, so equality of the restricted subgroups is equivalent to equality of the subgroups
+    themselves — this gives (a) — and it reflects normality, since `j_*^{-1}(H)` is normal in
+    `pi_1(X^1)` exactly when `H` is normal in `pi_1(X)` — this gives (b). Part (c) follows from the
+    third isomorphism theorem applied to the surjection `j_*`: `pi_1(X)/H` and
+    `pi_1(X^1)/j_*^{-1}(H)` are canonically isomorphic, which is the restriction map on deck groups.
+    No correction was needed.
 ---
 
 ::: {.problem}
