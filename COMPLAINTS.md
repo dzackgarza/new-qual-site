@@ -212,7 +212,17 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Uncertainty:** verified on the four cards above, and the twelve glued spans were separated again (`\mapsto v_1` and so on).
   I did not survey the whole corpus for glued control words, so other instances may remain.
 
-- **Repair:** the vertex symbol and the twelve spans are fixed in place. A check over the corpus for control words that are neither defined in `vocabularies/macros.json` nor standard TeX would catch this class; none exists, and this entry is the record until one does.
+- **Repair:** the vertex symbol and the twelve spans are fixed in place.
+  The check this entry said did not exist now does: `tools/check_macros.py` extracts every `\word`
+  from named files and reports those in neither `vocabularies/macros.json` nor MathJax's command set.
+  Run over all 14 362 tracked card files on 2026-11-02 it flags 724 of them, and **its output is not a
+  defect list without triage**: 699 of the flags are `\dfn` (a prose defined-term macro, as in
+  `\dfn{affine cone}`, used outside math) and the rest are dominated by tikzcd's `\arrow`/`\ar`,
+  both outside the known set but not errors. The residue that could be real is five files with a
+  stray control word — `\n` in `P-CSEAZ`, `\xE` in `P-BKF80-18`, `\H` in `P-AMD-MU3IE25C`,
+  `\C` in `P-T17Q1-3`, `\O` in `P-T06Q2-2` — which have not been inspected, so this entry does not
+  claim they are defects. Closing this class therefore needs the known set widened (add `\dfn` and
+  the tikzcd words) before a clean run means anything.
 
 ## Queue head passed over, not blocked
 
