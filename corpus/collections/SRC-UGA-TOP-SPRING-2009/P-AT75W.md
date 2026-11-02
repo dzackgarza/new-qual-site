@@ -23,7 +23,7 @@ review: draft
 (b) Give an example that shows that the "Hausdorff" hypothesis in part (a) is necessary.
 :::
 
-::: {.concept}
+::: {.hint}
 \envlist
 
 - Continuous bijection + open map (or closed map) $\implies$ homeomorphism.

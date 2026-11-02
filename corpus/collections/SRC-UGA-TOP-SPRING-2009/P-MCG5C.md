@@ -34,6 +34,26 @@ audit:
     finitely many cells, so chi(X) is an integer and d divides 1. A remark records that scope, since
     the printed part (c) renames only the total space and omits it. The statement is unchanged from
     the printed Problem 6 of the Spring 2009 UGA topology qualifying exam.
+- event: source-corrected
+  by: claude
+  date: 2026-11-02
+  note: >-
+    Correction to the remark added in the preceding event, which said the problem's standing hypothesis
+    is that X is a *connected* CW complex. The source assumes no such thing: it says "Let X be a
+    CW-complex and pi: Y -> X be a covering space", with no connectedness and no finiteness hypothesis,
+    and narrowing it that way silently strengthened the question. The remark now states the reconciliation
+    instead. (a) needs no connectedness: "finite degree" is read as "every fibre is finite", a compact CW
+    complex has finitely many components, and the finite-subcover argument runs on each component, so the
+    step is proved for arbitrary CW X. (b) is a statement about chi, which is an integer only for
+    finitely many cells, so it presupposes a finite CW complex; and a single factor d is what connectedness
+    of X gives, the general form being the componentwise identity chi(Y) = sum_i d_i chi(X_i). Both are now
+    said on the card. (c) assumes nothing beyond a CW base: X is connected because it is the image of the
+    connected RP^N, compact by (a), and finitely cellular because it is a compact CW complex, so chi(X) is
+    an integer. The proofs were changed only where this reconciliation touches them: the fibre-cardinality
+    step now says "on each component", the compactness step is proved for finite fibres over an arbitrary
+    compact CW base, and the multiplicativity step names both its finiteness and its single-d assumption.
+    The printed statement is unchanged. Not checked here: no source beyond the extracted exam text.
+
 ---
 
 ::: {.problem}
@@ -50,10 +70,13 @@ Show that if $N$ is even, $\pi$ is a homeomorphism.
 :::
 
 ::: {.remark}
-The problem's standing hypothesis is that $X$ is a **connected CW complex**, and each part uses it. Connectedness is what makes the sheet number a single integer instead of one number per component, and the CW hypothesis is what makes $\chi$ defined and integral.
+The source states only "Let $X$ be a CW complex and let $\pi\colon Y\to X$ be a covering space": it assumes neither connectedness nor finiteness, and the three parts do not need more than they say, as follows.
 
-Parts (a) and (b) are stated for a CW base, and (b) needs it finite, since the alternating sum over cells is an integer only then. Part (c) renames only the total space, so the base is still a CW complex; that is what turns compactness of $X$ into $\chi(X)\in\ZZ$, as step [](#finite-base){.pf-ref} records. For a base space with no such structure, (a) still gives $d<\infty$ but $\chi(X)$ need not be defined, so (c) does not follow by this route.
+**Connectedness is not assumed anywhere.** In (a), read "finite degree" as "every fibre is finite". A compact CW complex has finitely many components, so the sheet numbers are bounded, and the finite-subcover argument runs on each component; nothing needs the sheet number to agree between components.
 
+**A single degree $d$ is a connectedness effect, not a hypothesis.** The fibre cardinality is locally constant, hence constant on each component of $X$. It is one number exactly when $X$ is connected, and (b) displays that case; for disconnected $X$ the same proof gives the componentwise identity $\chi(Y)=\sum_i d_i\,\chi(X_i)$.
+
+**Finiteness is what $\chi$ needs.** $\chi$ is an alternating sum over cells, an integer only when there are finitely many of them, so (b) is stated for a CW complex with finitely many cells, and then $Y$ has finitely many too. In (c) nothing is assumed in advance: $X$ is the image of the connected $\RP^N$, so it is connected; it is compact by (a); and being a CW complex by the opening hypothesis, compactness forces finitely many cells, so $\chi(X)\in\ZZ$.
 :::
 
 ::: {.solution}
@@ -61,10 +84,10 @@ Parts (a) and (b) are stated for a CW base, and (b) needs it finite, since the a
 ::: pf
 
 ::: {.pf-step #sheet-count}
-The fibre cardinality is locally constant, so on the connected space $X$ there is $d\in\NN\cup\{\infty\}$, the degree, with $\abs{\pi^{-1}(x)}=d$ for every $x\in X$.
+The fibre cardinality is locally constant, hence constant on each connected component of $X$; on a connected $X$ it is therefore a single $d\in\NN\cup\{\infty\}$, the degree.
 
 ::: pf-proof
-Let $U$ be an evenly covered neighbourhood of $x$, so that $\pi^{-1}(U)$ is a disjoint union of open subsets each mapped homeomorphically onto $U$ by $\pi$. For $x'\in U$, each such sheet meets $\pi^{-1}(x')$ in exactly one point: the sheet is homeomorphic to $U$ over $U$, so it contains exactly one point over $x'$. Hence $\abs{\pi^{-1}(x')}=\abs{\pi^{-1}(x)}$, and the function $x\mapsto\abs{\pi^{-1}(x)}$ is locally constant. A locally constant function from a connected space to a discrete set is constant.
+Let $U$ be an evenly covered neighbourhood of $x$, so that $\pi^{-1}(U)$ is a disjoint union of open subsets each mapped homeomorphically onto $U$ by $\pi$. For $x'\in U$, each such sheet meets $\pi^{-1}(x')$ in exactly one point: the sheet is homeomorphic to $U$ over $U$, so it contains exactly one point over $x'$. Hence $\abs{\pi^{-1}(x')}=\abs{\pi^{-1}(x)}$, and $x\mapsto\abs{\pi^{-1}(x)}$ is locally constant. A locally constant function is constant on each connected component, and constant on $X$ when $X$ is connected.
 
 :::
 
@@ -91,20 +114,22 @@ The map $\pi$ is continuous and surjective, so $X=\pi(Y)$ is a continuous image 
 :::
 
 ::: {.pf-step #total-compact}
-If $X$ is compact and $d<\infty$ then $Y$ is compact.
+If $X$ is compact and every fibre is finite then $Y$ is compact.
 
 ::: pf-proof
-Let $\mathcal{U}$ be an open cover of $Y$. Fix $x\in X$ and write $\pi^{-1}(x)=\{y_1,\dots,y_d\}$. For each $i$ choose $U_i\in\mathcal{U}$ with $y_i\in U_i$, and an evenly covered neighbourhood $V_i$ of $x$ with sheet $S_i$ through $y_i$. Then $\pi(S_i\cap U_i)$ is an open neighbourhood of $x$ inside $V_i$, because $\pi$ maps $S_i$ homeomorphically onto the open set $V_i$; put $W_i=\pi(S_i\cap U_i)$ and $W=\bigcap_i W_i$, an open neighbourhood of $x$. Over $W$ the sheet through $y_i$ is $S_i\cap\pi^{-1}(W)$, and it lies in $U_i$: if $z\in S_i$ has $\pi(z)\in W\subseteq\pi(S_i\cap U_i)$ then $z$, being the unique point of $S_i$ over $\pi(z)$, lies in $S_i\cap U_i$. These $d$ sheets cover $\pi^{-1}(W)$. The sets $W$, one for each $x$, cover the compact $X$, so finitely many $W_{x_1},\dots,W_{x_m}$ cover $X$; the finitely many sets $U_i$ used for these $m$ points cover $Y$, and each lies in $\mathcal{U}$.
+A compact CW complex has finitely many cells, hence finitely many components, so write them $X_1,\dots,X_m$. On each $X_j$ the fibre cardinality is a finite constant $d_j$ by step [](#sheet-count){.pf-ref} and the hypothesis, and it suffices to cover each $\pi^{-1}(X_j)$ by finitely many members of a given cover of $Y$.
+
+So let $\mathcal{U}$ be an open cover of $Y$ and work in one component $X_j$, putting $d=d_j$. Fix $x\in X_j$ and write $\pi^{-1}(x)=\{y_1,\dots,y_d\}$. For each $i$ choose $U_i\in\mathcal{U}$ with $y_i\in U_i$, and an evenly covered neighbourhood $V_i$ of $x$ with sheet $S_i$ through $y_i$. Then $\pi(S_i\cap U_i)$ is an open neighbourhood of $x$ inside $V_i$, because $\pi$ maps $S_i$ homeomorphically onto the open set $V_i$; put $W_i=\pi(S_i\cap U_i)$ and $W=\bigcap_i W_i$, an open neighbourhood of $x$. Over $W$ the sheet through $y_i$ is $S_i\cap\pi^{-1}(W)$, and it lies in $U_i$: if $z\in S_i$ has $\pi(z)\in W\subseteq\pi(S_i\cap U_i)$ then $z$, being the unique point of $S_i$ over $\pi(z)$, lies in $S_i\cap U_i$. These $d$ sheets cover $\pi^{-1}(W)$. The sets $W$, one for each $x$, cover the compact $X_j$, so finitely many of them cover $X_j$, and the finitely many sets $U_i$ used for those points cover $\pi^{-1}(X_j)$ and lie in $\mathcal{U}$. Doing this for the finitely many components covers $Y$ by finitely many members of $\mathcal{U}$.
 
 :::
 
 :::
 
 ::: {.pf-step #compactness}
-$Y$ is compact if and only if $X$ is compact and $d$ is finite.
+$Y$ is compact if and only if $X$ is compact and every fibre is finite; when $X$ is connected, "every fibre is finite" is "$d<\infty$".
 
 ::: pf-proof
-If $Y$ is compact then $X$ is compact by step [](#base-compact){.pf-ref} and $d$ is finite by steps [](#fibre-finite){.pf-ref} and [](#sheet-count){.pf-ref}. Conversely if $X$ is compact and $d$ is finite then $Y$ is compact by step [](#total-compact){.pf-ref}.
+If $Y$ is compact then $X$ is compact by step [](#base-compact){.pf-ref} and every fibre is finite by step [](#fibre-finite){.pf-ref}. Conversely if $X$ is compact and every fibre is finite then $Y$ is compact by step [](#total-compact){.pf-ref}.
 
 :::
 
@@ -121,7 +146,7 @@ Take a cell $e\subseteq X$ with characteristic map $\Phi\colon D^k\to X$. Since 
 :::
 
 ::: {.pf-step #chi-multiplicative}
-If $X$ is a finite CW complex and $d$ is finite then $\chi(Y)=d\,\chi(X)$.
+If $X$ is a finite CW complex and the sheet number is the same $d$ on every component, then $\chi(Y)=d\,\chi(X)$; without the last clause the same proof gives $\chi(Y)=\sum_i d_i\,\chi(X_i)$ over the components.
 
 ::: pf-proof
 By step [](#lifted-cells){.pf-ref},
@@ -145,17 +170,17 @@ The standard CW structure on $\RP^N$ has exactly one cell in each dimension $0,\
 :::
 
 ::: {.pf-step #finite-base}
-Let $\pi\colon\RP^N\to X$ be a covering with $X$ a connected CW complex and $N$ even. Then $X$ is a finite CW complex and $\chi(X)$ is an integer.
+Let $\pi\colon\RP^N\to X$ be a covering with $X$ a CW complex and $N$ even. Then $X$ is connected, compact, and a finite CW complex, so $\chi(X)$ is an integer.
 
 ::: pf-proof
-$\RP^N$ is compact, so $X$ is compact by step [](#base-compact){.pf-ref}. A compact CW complex has finitely many cells: if $X$ had infinitely many, it would be the union of a strictly increasing sequence of finite subcomplexes, each closed and proper, and a compact subset of a CW complex lies in a finite subcomplex, so no strictly increasing sequence can exhaust it. Hence $X$ is a finite CW complex and $\chi(X)$ is an integer.
+$\RP^N$ is connected, so its continuous image $X$ is connected, which is what makes the degree of $\pi$ a single number. It is compact, so $X$ is compact by step [](#base-compact){.pf-ref}. A compact CW complex has finitely many cells: if $X$ had infinitely many, it would be the union of a strictly increasing sequence of finite subcomplexes, each closed and proper, and a compact subset of a CW complex lies in a finite subcomplex, so no strictly increasing sequence can exhaust it. Hence $X$ is a finite CW complex and $\chi(X)$ is an integer.
 
 :::
 
 :::
 
 ::: {.pf-step #degree-one}
-Let $\pi\colon\RP^N\to X$ be a covering with $X$ a connected CW complex and $N$ even. Then $d=1$.
+Let $\pi\colon\RP^N\to X$ be a covering with $X$ a CW complex and $N$ even. Then $d=1$.
 
 ::: pf-proof
 By steps [](#compactness){.pf-ref}, [](#finite-base){.pf-ref} and [](#chi-multiplicative){.pf-ref},
