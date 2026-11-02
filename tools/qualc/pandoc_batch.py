@@ -5,6 +5,7 @@ from __future__ import annotations
 import base64
 import fcntl
 import hashlib
+import http.client
 import io
 import json
 import os
@@ -26,7 +27,19 @@ BATCH_SIZE = 256
 PARALLEL_WORKERS = min(8, os.cpu_count() or 1)
 SERVER_START_ATTEMPTS = 500
 SERVER_START_INTERVAL_SECONDS = 0.01
-SERVER_REQUEST_TIMEOUT_SECONDS = 60
+# `pandoc server --timeout` is a deadline on ONE REQUEST, not an idle timeout:
+# a request that outlives it is answered with an empty 503 and the server stays
+# up, ready for the next one. Verified against the pinned Pandoc 3.10.2 here —
+# a server started with `--timeout 2` survived a 36 s idle gap, returned 503
+# after exactly 2.0 s for a request that needed longer, and served the next
+# request normally. A loaded machine can push a 256-document batch past 30 s
+# (issue #100 records a load average of 29 on 12 cores), which is why the
+# deadline is generous and the client's timeout is longer still: the client must
+# outlast the server so that a too-slow batch arrives as the 503 `_request` can
+# recover from, rather than as a bare socket timeout that says nothing.
+SERVER_REQUEST_DEADLINE_SECONDS = 300
+SERVER_REQUEST_TIMEOUT_SECONDS = SERVER_REQUEST_DEADLINE_SECONDS + 60
+HTTP_SERVICE_UNAVAILABLE = 503
 
 
 class PandocBatchError(RuntimeError):
@@ -218,7 +231,7 @@ class PandocServer:
         # port chosen here and released for the server to bind can be handed
         # to a concurrent build in between.
         process = subprocess.Popen(
-            [pandoc, "server", "--port", "0", "--timeout", "30"],
+            [pandoc, "server", "--port", "0", "--timeout", str(SERVER_REQUEST_DEADLINE_SECONDS)],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             text=True,
@@ -345,12 +358,44 @@ class PandocServer:
     def _convert(self, requests: list[dict[str, object]]) -> list[PandocResult]:
         results: list[PandocResult] = []
         for offset in range(0, len(requests), BATCH_SIZE):
-            results.extend(self._request(requests[offset : offset + BATCH_SIZE]))
+            results.extend(self._request(requests[offset : offset + BATCH_SIZE], offset))
         if len(results) != len(requests):
             raise PandocBatchError(f"pandoc batch returned {len(results)} results for {len(requests)} requests")
         return results
 
-    def _request(self, requests: list[dict[str, object]]) -> list[PandocResult]:
+    def _request(self, requests: list[dict[str, object]], offset: int = 0) -> list[PandocResult]:
+        """Convert one batch, halving it when the server abandons the request.
+
+        A request that outlives the server's deadline is abandoned while the
+        server stays healthy, and it does so in more than one shape: an empty
+        503, a response truncated in flight (``IncompleteRead``), a mangled
+        status line, a reset connection. All of them mean the same thing — this
+        request was too long — so the batch is retried as two halves, in order,
+        until every piece fits. The recursion ends at a single document: if one
+        document alone cannot be converted inside the deadline, that is a real
+        failure and it is raised with the last transport error attached, never
+        retried away or swallowed.
+        """
+        try:
+            return self._post(requests)
+        except urllib.error.HTTPError as error:
+            if error.code != HTTP_SERVICE_UNAVAILABLE:
+                raise PandocBatchError(
+                    f"pandoc server answered HTTP {error.code} for a batch of {len(requests)} requests starting at {offset}"
+                ) from error
+            abandonment: BaseException = error
+        except (http.client.HTTPException, OSError, json.JSONDecodeError) as error:
+            abandonment = error
+        if len(requests) > 1:
+            middle = len(requests) // 2
+            return self._request(requests[:middle], offset) + self._request(requests[middle:], offset + middle)
+        raise PandocBatchError(
+            f"pandoc abandoned request {offset} after its {SERVER_REQUEST_DEADLINE_SECONDS}s deadline, "
+            f"and it is a single document ({type(abandonment).__name__}: {abandonment}): "
+            "this is a conversion that does not fit the deadline, not a batch that was too large"
+        ) from abandonment
+
+    def _post(self, requests: list[dict[str, object]]) -> list[PandocResult]:
         request = urllib.request.Request(
             f"http://127.0.0.1:{self._require_port()}/batch",
             data=json.dumps(requests).encode(),

@@ -179,18 +179,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Workflow and rendering papercuts
 
-### `qualc check` can abort on its own pandoc batch server, which says nothing about any card
-
-- **Object and need:** `./.venv/bin/python -m qualc check`, the full gate, which renders every card through pandoc.
-
-- **Observed evidence:** on 2026-11-01 it aborted twice with a server fault rather than a card fault. First `urllib.error.HTTPError: HTTP Error 503: Service Unavailable` raised from `tools/qualc/pandoc_batch.py` `_request`; later `TimeoutError: timed out` from the same call, both against `http://127.0.0.1:<port>/batch`, the batch server the checker starts itself on loopback. In both cases the immediate rerun with no change to the tree passed and printed `14362 cards and 321 wiki pages OK`.
-
-- **Impact and owner:** a red gate that does not mean a defective card, at the moment when the gate is the last check before a push. The risk is a false defect report against a card, or a push withheld for a non-reason.
-
-- **Uncertainty:** the cause was not diagnosed; both failures clear on rerun and neither recurred on a second immediate run, so the trigger is unknown and possibly load-dependent on the shared VM. Not reproduced deliberately. No change to `tools/qualc/` was attempted.
-
-- **Repair:** rerun the gate before treating its exit status as evidence about a card; a 503 or a timeout from the loopback batch server is an infrastructure result, not a content result. If it starts recurring, the thing to diagnose is the server's start-up and per-request timeout in `pandoc_batch.py`, not the corpus.
-
 ### A fresh VM cannot run three of the suite's tests without four local prerequisites
 
 - **Object and need:** `just test` (= `uv run --group dev pytest -q`), the local counterpart of the `test-ci` tier that `development.yml` gates on at `enforcement: correctness`.
