@@ -32,11 +32,11 @@ from pydantic import (
 from .diagnostics import Diagnostic, DiagnosticCode
 from .lamport import LAMPORT_CLASSES
 from .pandoc_batch import (
-    PARALLEL_WORKERS,
     Citations,
     PandocBatchError,
     PandocFailure,
     PandocServer,
+    parallel_workers,
     read_markdown_parallel,
 )
 from .tex import mark_definienda
@@ -1245,7 +1245,7 @@ def parse_cards_with(
     prepared: list[tuple[Path, Card, str]] = []
     errors: list[Diagnostic] = []
     if len(paths) >= 1_000:
-        with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
+        with ProcessPoolExecutor(max_workers=parallel_workers()) as executor:
             source_results = list(
                 executor.map(_prepare_card_source, paths, chunksize=64)
             )
@@ -1302,7 +1302,7 @@ def parse_cards_with(
         pandoc, [source for _, _, source in processable], citations
     )
     if len(sources) >= 1_000:
-        with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
+        with ProcessPoolExecutor(max_workers=parallel_workers()) as executor:
             normalized = list(executor.map(_normalize_ast, sources, chunksize=64))
     else:
         normalized = [_normalize_ast(source) for source in sources]

@@ -45,12 +45,12 @@ from .model import (
     typeset_dashes,
 )
 from .pandoc_batch import (
-    PARALLEL_WORKERS,
     PandocBatchError,
     PandocFailure,
     PandocResult,
     PandocServer,
     pandoc_executable,
+    parallel_workers,
     read_markdown_parallel,
     write_html_parallel,
     write_markdown_parallel,
@@ -1442,7 +1442,7 @@ def _html_asts(documents: list[str]) -> list[str]:
     documents = _lamport_proofs(documents)
     if len(documents) < 1_000:
         return [_html_ast(document) for document in documents]
-    with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
+    with ProcessPoolExecutor(max_workers=parallel_workers()) as executor:
         return list(executor.map(_html_ast, documents, chunksize=64))
 
 
@@ -2619,7 +2619,7 @@ def project(
     body_jobs = [(True, jcache[card["id"]]) for card in problem_cards]
     body_jobs.extend((False, jcache[card["id"]]) for card in plain_cards)
     if len(body_jobs) >= 1_000:
-        with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
+        with ProcessPoolExecutor(max_workers=parallel_workers()) as executor:
             prepared_bodies = list(executor.map(_prepare_json_body, body_jobs, chunksize=64))
     else:
         prepared_bodies = [_prepare_json_body(job) for job in body_jobs]

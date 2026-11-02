@@ -11,6 +11,7 @@ from pathlib import Path
 import pytest
 
 from qualc import emit, model
+from qualc import pandoc_batch as pb
 from qualc.pandoc_batch import (
     PandocBatchError,
     PandocFailure,
@@ -242,8 +243,8 @@ def test_a_single_document_over_the_deadline_is_raised_not_swallowed() -> None:
             server._convert(_requests(3))
 
     message = str(raised.value)
-    assert "single document" in message and "deadline" in message
-    assert "request 0" in message
+    assert "request 0" in message and "cannot help" in message
+    assert "HTTP 503" in message, "the observed failure must be reported, not only the inference"
 
 
 def test_a_response_truncated_by_the_deadline_is_recovered_too() -> None:
@@ -326,3 +327,53 @@ def test_conversion_failures_are_not_retried() -> None:
 
     assert calls == [4], "a conversion failure in the payload must not be retried or halved"
     assert all(isinstance(result, PandocFailure) and result.error == "not a card" for result in results)
+
+
+def test_parallel_workers_stays_within_its_bounds(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.delenv(pb.PARALLEL_WORKERS_ENV, raising=False)
+    for cpus in (1, 2, 4, 12, 64):
+        for load in (0.0, 0.5, 1.0, 3.7, 29.0, 1000.0):
+            workers = pb.parallel_workers(load=load, cpus=cpus)
+            assert pb.PARALLEL_WORKERS_FLOOR <= workers <= pb.PARALLEL_WORKERS_CEILING
+            assert workers <= max(1, cpus)
+
+
+def test_parallel_workers_shrinks_under_load(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.delenv(pb.PARALLEL_WORKERS_ENV, raising=False)
+    assert pb.parallel_workers(load=0.0, cpus=12) == 8, "an idle 12-core machine reaches the ceiling"
+    assert pb.parallel_workers(load=29.0, cpus=12) == 1, "the case issue #100 recorded collapses to one worker"
+    assert pb.parallel_workers(load=3.0, cpus=4) == 1
+    assert pb.parallel_workers(load=1.0, cpus=4) == 2
+    # One core is reserved for the rest of the machine, so an idle two-core box
+    # leaves a single worker rather than both.
+    assert pb.parallel_workers(load=0.0, cpus=2) == 1
+    assert pb.parallel_workers(load=0.0, cpus=1) == 1
+
+
+def test_parallel_workers_honours_the_documented_override(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv(pb.PARALLEL_WORKERS_ENV, "2")
+    assert pb.parallel_workers(load=29.0, cpus=64) == 2
+    monkeypatch.setenv(pb.PARALLEL_WORKERS_ENV, " 8 ")
+    assert pb.parallel_workers(load=0.0, cpus=1) == 8
+
+
+@pytest.mark.parametrize("value", ["", "two", "0", "-1", "9", "3.5"])
+def test_parallel_workers_rejects_an_unusable_override(value: str, monkeypatch: pytest.MonkeyPatch) -> None:
+    if not value.strip():
+        monkeypatch.delenv(pb.PARALLEL_WORKERS_ENV, raising=False)
+        assert pb.parallel_workers(load=0.0, cpus=4) >= 1  # empty means "no override", not an error
+        return
+    monkeypatch.setenv(pb.PARALLEL_WORKERS_ENV, value)
+    with pytest.raises(pb.PandocBatchError) as raised:
+        pb.parallel_workers(load=0.0, cpus=4)
+    assert pb.PARALLEL_WORKERS_ENV in str(raised.value)
+
+
+def test_parallel_workers_falls_back_when_no_load_average_is_reported(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.delenv(pb.PARALLEL_WORKERS_ENV, raising=False)
+    monkeypatch.setattr(pb, "_one_minute_load", lambda: None)
+    assert pb.parallel_workers(cpus=12) == 8
+    assert pb.parallel_workers(cpus=3) == 3
+    assert pb.parallel_workers(cpus=1) == 1
