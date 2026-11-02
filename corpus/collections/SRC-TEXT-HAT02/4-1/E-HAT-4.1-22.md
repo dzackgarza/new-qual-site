@@ -44,11 +44,19 @@ audit:
     comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
     applying the repair. The restored text is the printed wording and the mathematics of the
     statement is otherwise unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-02
+  note: >-
+    The statement printed the book's bracketed hint twice, "[Use the results on simplicial approximations
+    to maps and spaces in §2.C.]" repeated. AT.txt:17908-17909 prints it once, so this was a duplication
+    introduced when the hint was restored, not two printed hints; one copy is removed. No other statement
+    text is touched, and the "if and only if" reading of the exercise is unchanged.
+
 ---
 
 ::: {.problem}
 Show that a path-connected space $X$ has a CW approximation with countably many cells if and only if $\pi_n(X)$ is countable for all $n$.
-[Use the results on simplicial approximations to maps and spaces in §2.C.]
 [Use the results on simplicial approximations to maps and spaces in §2.C.]
 :::
 

@@ -22,6 +22,20 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-02
+  note: >-
+    Read against the book (AT.txt:17887-17889 for the statement, 17590-17602 and 17605-17609 for the
+    cell-attachment constructions it follows). The construction is correct: cells of dimension at least
+    n+1 preserve pi_i for i <= n, and at each k the map is made surjective by wedging k-spheres and then
+    injective by attaching (k+1)-cells along representatives of the kernel. One step was asserted and is
+    now given: passing from an isomorphism at the stage k = i to an isomorphism on the union Z_n needs
+    pi_i(Z_n) = colim_k pi_i(Z_k), which holds because a map S^i -> Z_n has compact image, hence lies in
+    a finite subcomplex and so in a single stage (Hatcher, Proposition A.1, AT.txt:25888-25889). The
+    pi_0 hypothesis is met because X, Y and Z_n are connected. Not checked: no verification of the
+    book's own construction beyond the two cited spans.
+
 ---
 
 ::: {.problem}
@@ -63,6 +77,7 @@ $$
 \pi_i(Z_n)\xrightarrow{\cong}\pi_i(Y)
 \qquad(i\ge n+1).
 $$
+Passing from a single stage to the union uses compactness: $Z_n$ is the increasing union of the stages of the construction, and a map $S^i\to Z_n$ has compact image, hence by Hatcher's Proposition A.1 lies in a finite subcomplex and therefore in some single stage $Z_k$, so $\pi_i(Z_n)=\varinjlim_k\pi_i(Z_k)$. The isomorphism at stage $k=i$, for every $i\ge n+1$, therefore assembles to the displayed isomorphism of the union.
 The original map is the composite
 $$
 X\longrightarrow Z_n\xrightarrow{g}Y.

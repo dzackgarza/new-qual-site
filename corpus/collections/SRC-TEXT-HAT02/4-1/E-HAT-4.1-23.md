@@ -22,6 +22,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-02
+  note: >-
+    Read against the book (AT.txt:17913-17915 for the statement). Correct: replace f by a cellular map f'
+    between CW models, note that the square with the homotopy equivalences is homotopy commutative so that
+    homotopy invariance of homotopy pushouts gives (M_f', X') ~ (M_f, X) as pairs, and observe that a
+    cellular f' has a CW structure on its mapping cylinder with X' a subcomplex; then C_f ~ M_f'/X', a
+    quotient of a CW complex by a subcomplex. The one step taken at reference level rather than expanded is
+    homotopy invariance of homotopy pushouts, which is standard. Not checked: no independent construction of
+    the explicit pair homotopy equivalence.
+
 ---
 
 ::: {.problem}

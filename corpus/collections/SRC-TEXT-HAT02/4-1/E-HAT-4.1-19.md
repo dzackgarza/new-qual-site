@@ -33,6 +33,18 @@ audit:
     proved: a CW approximation of each space in the zigzag is well defined up to homotopy equivalence,
     so the approximation of the first space is a common CW approximation.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-02
+  note: >-
+    Read against the book (AT.txt:17894-17897 for the statement, which is the "if and only if" the card
+    now states). Both directions are present and correct: a common CW approximation gives the zigzag
+    X <- K -> Y; conversely each arrow of a zigzag between CW complexes is a weak homotopy equivalence
+    between CW complexes, hence a homotopy equivalence by Whitehead, so the chosen CW approximations of
+    the vertices are all homotopy equivalent and one of them is common. The auxiliary step s2 states this
+    and is what the converse uses. Not checked: nothing beyond the written argument; no counterexample
+    search for the converse, which is the book's claim.
+
 ---
 
 ::: {.problem}

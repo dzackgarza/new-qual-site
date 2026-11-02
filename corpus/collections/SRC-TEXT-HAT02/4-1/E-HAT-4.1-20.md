@@ -22,6 +22,20 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-02
+  note: >-
+    Read against the book (AT.txt:17898-17899 for the statement). The obstruction induction is written at
+    sketch level but is sound: replacing Y by its d-th Postnikov stage is legitimate because Y -> Y^d is an
+    isomorphism on pi_i for i <= d and X is d-dimensional; a map is then built cell by cell, with
+    obstructions in pi_{k-1}(Y) and the set of extensions up to homotopy rel boundary a torsor under
+    pi_k(Y); both finite for k <= d, and only finitely many cells occur. The free-homotopy bookkeeping is
+    covered by the card's use of the hypothesis at i = 0: a map lands in one component of Y and pi_0(Y) is
+    finite, which the statement's "for i <= dim X" supplies, and without it the claim fails (a point and a
+    space with infinitely many components). Not checked: no re-derivation of the Postnikov-stage reduction
+    beyond the argument given.
+
 ---
 
 ::: {.problem}
