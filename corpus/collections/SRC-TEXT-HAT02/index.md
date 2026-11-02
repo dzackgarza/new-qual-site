@@ -583,6 +583,8 @@ source:
       comment: 3.A.7
     - id: E-HAT-3.A-8
       comment: 3.A.8
+    - id: E-HAT-3.A-9
+      comment: 3.A.9
   - name: 3.B
     problems:
     - id: E-HAT-3.B-1
