@@ -79,6 +79,29 @@ audit:
     exam text; the counterexample and the two sufficient-hypothesis statements were verified by hand
     against the locally-constant and alternating-sum arguments on this card, not by a machine check.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-02
+  note: >-
+    Replaces the two preceding corrections, which were themselves wrong twice, with one statement of
+    the hypotheses each part actually needs. Wrong claim one: the remark offered as an example of
+    "finitely many cells is not necessary" a finite-type CW complex of bounded dimension with
+    infinitely many cells. No such complex exists, since finite type plus bounded dimension is a
+    finite union of finite sets of cells, so the example was impossible. Wrong claim two: the remark
+    refuted part (b) with a base whose components have different sheet numbers, but part (b) as
+    printed assumes a finite degree d, so an example without a common d does not touch it. What is
+    true, and is now recorded instead, is that the phrase "finite degree d" presupposes that the
+    locally constant fibre cardinality is constant, so the printed text is underspecified for a
+    disconnected base, whose correct form is the componentwise chi(Y) = sum_i d_i chi(X_i). The
+    remark now names the standard hypothesis behind (b)'s single d, namely constancy of the sheet
+    number, secured by connectedness of X, and behind chi, namely an integer from the cell sum for a
+    finite CW complex or from the homology sum when the integral homology is finitely generated in
+    each degree and vanishes above some degree, and it marks both as hypotheses the source does not
+    state rather than as claims about the printed wording. The compactness and even-dimensional-RP
+    arguments and every proof step are unchanged. Not checked here: no source beyond the extracted
+    exam text; the hypothesis analysis is elementary and was verified by hand against the
+    locally-constant and alternating-sum arguments on this card, not by a machine check.
+
 ---
 
 ::: {.problem}
@@ -95,13 +118,13 @@ Show that if $N$ is even, $\pi$ is a homeomorphism.
 :::
 
 ::: {.remark}
-The source states only "Let $X$ be a CW complex and let $\pi\colon Y\to X$ be a covering space": it assumes neither connectedness nor finiteness, and the three parts do not need more than they say, as follows.
+The source prints only "Let $X$ be a CW complex and let $\pi\colon Y\to X$ be a covering space", with no connectedness and no finiteness hypothesis. The standard hypotheses that each part needs, and that the printed text leaves implicit, are the following.
 
-**Connectedness is not assumed anywhere.** In (a), read "finite degree" as "every fibre is finite". A compact CW complex has finitely many components, so the sheet numbers are bounded, and the finite-subcover argument runs on each component; nothing needs the sheet number to agree between components.
+**(a)** Read "finite degree" as "every fibre is finite". Nothing further is needed: the fibre cardinality is locally constant, a compact CW complex has finitely many components, and the finite-subcover argument runs on each component. Connectedness of $X$ is not used anywhere in this part.
 
-**A single degree $d$ needs the sheet number to agree on all components, for which connectedness is sufficient but not necessary.** The fibre cardinality is locally constant, hence constant on each component, so $d$ is one number as soon as those componentwise values coincide. Connectedness is one way to secure that, and it is the hypothesis (b) is stated under; a disconnected base with equal sheet numbers on every component gives the same single $d$. When the values differ there is no common $d$, and the honest general form is the componentwise identity $\chi(Y)=\sum_i d_i\,\chi(X_i)$. Without a common $d$ the printed (b) has no true reading at all: for $X=\{p\}\sqcup\{q\}$, so that $\chi(X)=2$, take $Y$ to be the covering with one point over $p$ and two over $q$; then $\chi(Y)=3$, whereas $d\,\chi(X)$ is $2$ or $4$ according to which component's sheet number is called $d$, so no value of $d$ satisfies the conclusion.
+**(b)** The printed hypothesis is "$\pi$ has finite degree $d$", and a single number $d$ exists exactly when the locally constant fibre cardinality is constant on $X$. Connectedness of $X$ is the standard sufficient condition for that, and it is what the part is usually read under; since the source does not state it, the printed phrase is underspecified for a disconnected base, where the correct general statement is the componentwise identity $\chi(Y)=\sum_i d_i\,\chi(X_i)$ with $d_i$ the sheet number over the component $X_i$. Separately, $\chi(X)$ has to be defined: the alternating sum over cells is an integer for a finite CW complex, and the standard weaker hypothesis is that $H_k(X;\ZZ)$ be finitely generated in each degree and vanish above some degree, with $\chi$ then defined as $\sum_k(-1)^k\operatorname{rank}H_k(X;\ZZ)$. The multiplicity proof below is the cell-count one, so it uses the finite case.
 
-**For $\chi$ to be an integer, finitely many cells is sufficient but not necessary.** $\chi$ is the alternating sum of the cell counts, which is an integer as soon as each count is finite and only finitely many of them are nonzero — in particular for a CW complex with finitely many cells, which is the hypothesis (b) is stated under, and then $Y$ has finitely many too. That hypothesis is stronger than necessary: a finite-type CW complex of bounded dimension, with infinitely many cells in all, still has an integral $\chi$ by the same alternating sum, and so does any space whose integral homology is finitely generated in each degree and vanishes above some degree, where $\chi$ is defined by the homology sum instead. What is genuinely needed for the argument below is that $\chi(X)$, and hence each $\chi(X_i)$ used, be a well-defined integer, together with a common $d$. In (c) nothing is assumed in advance: $X$ is the image of the connected $\RP^N$, so it is connected; it is compact by (a); and being a CW complex by the opening hypothesis, compactness forces finitely many cells, so $\chi(X)\in\ZZ$.
+**(c)** Nothing beyond a CW base is needed: $X$ is connected as the image of the connected $\RP^N$, compact by (a), and a compact CW complex has finitely many cells, so $\chi(X)$ is an integer and $d\,\chi(X)=1$ forces $d=1$.
 :::
 
 ::: {.solution}
