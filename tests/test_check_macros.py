@@ -131,8 +131,8 @@ def test_a_yaml_escape_in_a_rendered_field_decodes() -> None:
     # scalar cannot also hold $\ZZ$: \Z is not a YAML escape, which is the
     # next test's point.)
     body = _card(
-        title='"Rouch\xE9 counts the zeros"',
-        prompt="'Why is $\ZZ$ cyclic?'",
+        title=r'"Rouch\xE9 counts the zeros"',
+        prompt=r"'Why is $\ZZ$ cyclic?'",
     )
 
     assert check_macros.unknown_control_words(body, KNOWN) == []
@@ -144,12 +144,13 @@ def test_an_unparseable_card_is_scanned_whole() -> None:
     # audit note the rendered-field pass would ignore -- which can only add
     # flags, never lose one.
     body = _card(
-        title='"$\ZZ$"',
-        prompt="'Why is $\ZZ$ cyclic?'",
-        note="The note may mention $\q$ when the card does not parse.",
+        title=r'"$\ZZ$"',
+        prompt=r"'Why is $\ZZ$ cyclic?'",
+        note=r"The note may mention $\q$ when the card does not parse.",
     )
 
     assert check_macros.unknown_control_words(body, KNOWN) == ["q"]
+
 
 def test_the_cli_checks_a_file(tmp_path: Path, capsys) -> None:
     good = tmp_path / "good.md"
