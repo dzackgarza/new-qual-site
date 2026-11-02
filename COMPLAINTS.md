@@ -215,14 +215,18 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the vertex symbol and the twelve spans are fixed in place.
   The check this entry said did not exist now does: `tools/check_macros.py` extracts every `\word`
   from named files and reports those in neither `vocabularies/macros.json` nor MathJax's command set.
-  Run over all 14 362 tracked card files on 2026-11-02 it flags 724 of them, and **its output is not a
-  defect list without triage**: 699 of the flags are `\dfn` (a prose defined-term macro, as in
-  `\dfn{affine cone}`, used outside math) and the rest are dominated by tikzcd's `\arrow`/`\ar`,
-  both outside the known set but not errors. The residue that could be real is five files with a
-  stray control word — `\n` in `P-CSEAZ`, `\xE` in `P-BKF80-18`, `\H` in `P-AMD-MU3IE25C`,
-  `\C` in `P-T17Q1-3`, `\O` in `P-T06Q2-2` — which have not been inspected, so this entry does not
-  claim they are defects. Closing this class therefore needs the known set widened (add `\dfn` and
-  the tikzcd words) before a clean run means anything.
+  Run over all 14 362 tracked card files on 2026-11-02 it flagged 724 of them, all but four of them
+  falsely, and the same day the checker was fixed to read the dialect the site actually supports
+  rather than a widened allowlist: it now reads each card through `qualc.tex.checkable_tex`, which
+  rewrites the one supported prose command `\dfn{term}` out with the pipeline's own parser
+  (`mark_definienda`), blanks code spans and tikzcd environments (compiled to SVG by the emitter,
+  skipped by `unrenderable_tex` too), and strips the YAML front matter exactly as
+  `qualc.authoring check` does, so YAML escapes such as `"Rouch\xE9"` and note prose such as `X\C`
+  are never scanned. The four residual flags were all of that last class: `\xE` in `P-BKF80-18`,
+  `\O` in `P-T06Q2-2`, `\C` in `P-T17Q1-3`, `\H` in `P-AMD-MU3IE25C`, each in front matter, none
+  a mathematics defect. The corpus-wide run is now clean: 0 of 14 362 files flagged, with the glued
+  (`\mapstov_1`) and undefined (`\q`) detections preserved and pinned by
+  `tests/test_check_macros.py`.
 
 ## Queue head passed over, not blocked
 

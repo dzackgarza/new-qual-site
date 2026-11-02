@@ -93,6 +93,33 @@ def mark_definienda(markdown: str) -> str:
     return "".join(out)
 
 
+TIKZCD_ENV = re.compile(r"(?ms)\\begin\{tikzcd\}.*?\\end\{tikzcd\}")
+
+
+def checkable_tex(markdown: str) -> str:
+    """The authored text whose control words must be defined.
+
+    This is the markdown-level image of `unrenderable_tex`'s undefined-macro
+    check, which walks the parsed document and so never sees three things:
+    `\\dfn{term}`, which `mark_definienda` rewrites before Pandoc reads the
+    card; code spans, which are not TeX at all; and tikzcd environments, which
+    the emitter compiles to SVG (`emit._compile_tikzcd`) exactly as
+    `unrenderable_tex` skips them. Blanking rather than deleting keeps the
+    result the same length as the input, so a caller reporting positions still
+    can. An unbalanced `\\dfn{` is left as written and so stays in the text,
+    matching `unrenderable_tex`, which reports it as dropped raw TeX.
+    """
+    text = mark_definienda(markdown)
+    spans = _code_spans(text)
+    spans.extend(match.span() for match in TIKZCD_ENV.finditer(text))
+    if not spans:
+        return text
+    chars = list(text)
+    for start, end in spans:
+        chars[start:end] = [" "] * (end - start)
+    return "".join(chars)
+
+
 def mathjax_commands() -> frozenset[str]:
     names = json.loads(MATHJAX_COMMANDS.read_text())
     if not isinstance(names, list) or not all(isinstance(name, str) for name in names):
