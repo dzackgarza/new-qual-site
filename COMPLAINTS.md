@@ -224,9 +224,13 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   `qualc.authoring check` does, so YAML escapes such as `"Rouch\xE9"` and note prose such as `X\C`
   are never scanned. The four residual flags were all of that last class: `\xE` in `P-BKF80-18`,
   `\O` in `P-T06Q2-2`, `\C` in `P-T17Q1-3`, `\H` in `P-AMD-MU3IE25C`, each in front matter, none
-  a mathematics defect. The corpus-wide run is now clean: 0 of 14 362 files flagged, with the glued
-  (`\mapstov_1`) and undefined (`\q`) detections preserved and pinned by
-  `tests/test_check_macros.py`.
+  a mathematics defect. One further refinement, same day: rendered metadata is scanned with the body,
+  because the site typesets it -- `title`, `slogan` and `prompts` are Markdown per
+  `model.typeset_dashes`, which preserves their `$...$` spans -- so `title: '$\undefinedword$'` on an
+  otherwise valid card fails the check, while audit notes stay unscanned and the front matter is read
+  through the YAML loader, so `"Rouch\xE9"` decodes before the scan. The corpus-wide run is now clean:
+  0 of 14 362 files flagged, with the glued (`\mapstov_1`), undefined (`\q`) and rendered-metadata
+  detections pinned by `tests/test_check_macros.py`.
 
 ## Queue head passed over, not blocked
 

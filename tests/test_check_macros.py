@@ -62,25 +62,94 @@ def test_an_undefined_macro_is_reported() -> None:
     assert check_macros.unknown_control_words(body, KNOWN) == ["q"]
 
 
-def test_front_matter_is_not_mathematics() -> None:
-    # Rouch\xE9 is a YAML hex escape and X\C is note prose: both are metadata
-    # that unrenderable_tex never sees, and both were false rejections.
-    card = (
-        "---\n"
-        'topics: ["Rouch\xE9", Zeros]\n'
-        "audit:\n"
-        "- event: solution-reviewed\n"
-        "  by: claude\n"
-        "  date: 2026-11-02\n"
-        "  note: >-\n"
-        "    For the shrinking step, A=C\\O2 and B=C\\O1.\n"
-        "---\n"
-        "\n"
-        "The set $\\ZZ$ is infinite, but $\\q$ is undefined.\n"
+def _card(title: str, prompt: str, note: str = "Nothing to see.") -> str:
+    return f"""---
+id: P-TEST
+kind: problem
+title: {title}
+prompts:
+- {prompt}
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-02
+  note: >-
+    {note}
+---
+
+::: {{.problem}}
+Show that $\\ZZ$ is cyclic.
+:::
+"""
+
+
+def test_non_rendered_metadata_is_not_mathematics() -> None:
+    # An audit note's X\C is prose about mathematics and "Rouch\xE9" in a
+    # non-rendered field is a YAML escape: neither reaches a reader, so neither
+    # is scanned.
+    body = _card(
+        title="A valid title about $\\ZZ$",
+        prompt="'Why is $\\ZZ$ cyclic?'",
+        note="For the shrinking step, A=C\\O2 and B=C\\O1, as Rouch\\xE9 noted.",
     )
 
-    assert check_macros.unknown_control_words(card, KNOWN) == ["q"]
+    assert check_macros.unknown_control_words(body, KNOWN) == []
 
+
+def test_an_undefined_macro_in_a_title_is_reported() -> None:
+    # Titles are rendered page text whose $...$ spans typeset_dashes preserves,
+    # so an undefined macro there is red source exactly as in the body.
+    body = _card(
+        title="A valid title about $\\undefinedword$",
+        prompt="'Why is $\\ZZ$ cyclic?'",
+    )
+
+    assert check_macros.unknown_control_words(body, KNOWN) == ["undefinedword"]
+
+
+def test_an_undefined_macro_in_a_prompt_is_reported() -> None:
+    body = _card(
+        title="A valid title about $\\ZZ$",
+        prompt="'Why is $\\undefinedword$ cyclic?'",
+    )
+
+    assert check_macros.unknown_control_words(body, KNOWN) == ["undefinedword"]
+
+
+def test_a_slogan_with_an_undefined_macro_is_reported() -> None:
+    body = _card(
+        title="A valid title about $\\ZZ$",
+        prompt="'Why is $\\ZZ$ cyclic?'",
+    ).replace("prompts:\n", "slogan: Every $\\undefinedword$-module is free\nprompts:\n")
+
+    assert check_macros.unknown_control_words(body, KNOWN) == ["undefinedword"]
+
+
+def test_a_yaml_escape_in_a_rendered_field_decodes() -> None:
+    # The front matter is read through the YAML loader, so \xE9 decodes to é
+    # before the scan instead of surfacing as a control word. (A double-quoted
+    # scalar cannot also hold $\ZZ$: \Z is not a YAML escape, which is the
+    # next test's point.)
+    body = _card(
+        title='"Rouch\xE9 counts the zeros"',
+        prompt="'Why is $\ZZ$ cyclic?'",
+    )
+
+    assert check_macros.unknown_control_words(body, KNOWN) == []
+
+
+def test_an_unparseable_card_is_scanned_whole() -> None:
+    # \Z is not a YAML escape, so the double-quoted title makes the front
+    # matter unparseable. The fallback then scans the raw text, including the
+    # audit note the rendered-field pass would ignore -- which can only add
+    # flags, never lose one.
+    body = _card(
+        title='"$\ZZ$"',
+        prompt="'Why is $\ZZ$ cyclic?'",
+        note="The note may mention $\q$ when the card does not parse.",
+    )
+
+    assert check_macros.unknown_control_words(body, KNOWN) == ["q"]
 
 def test_the_cli_checks_a_file(tmp_path: Path, capsys) -> None:
     good = tmp_path / "good.md"
