@@ -40,6 +40,29 @@ audit:
     cases n < m-1 and n = m-1 were checked and are unchanged. Not checked: no re-reading of Hatcher's
     §4.3 beyond the statement of uniqueness.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-02
+  note: >-
+    Corrects the immediately preceding event, which introduced a hypothesis the exercise does not have.
+    That note claimed an (m-1)-connected covering X_m exists only when pi_i(X) = 0 for 2 <= i <= m-1,
+    on the reasoning of an ordinary covering space, for which pi_i(X_m) is isomorphic to pi_i(X) for
+    i >= 2. The reasoning is sound for a covering map but the premise is wrong: Hatcher's
+    "(m-1)-connected covering" is the (m-1)-connected cover in the Whitehead tower (Example 4.20,
+    AT.txt:17730-17747, where the map Z_n -> X is described as an "n connected cover" and the case n = 1
+    is only the universal cover by analogy), realized as the homotopy fibre of X -> X^{m-1} (Section 4.3,
+    AT.txt:20576-20579: "The n connected covering of Y can also be obtained as the homotopy fiber of the
+    nth stage Y -> Y^n of a Postnikov tower for Y"). It therefore exists for every connected CW complex,
+    it is generally not a covering map when m > 1 (the Hopf map S^3 -> S^2 is the 2 connected cover of
+    S^2, the book's own example), and no vanishing hypothesis on pi_i(X) is needed. The card now says
+    this, and deduces pi_i(X_m) = 0 for i <= m-1 and pi_i(X_m) = pi_i(X) for i >= m from the long exact
+    sequence of that homotopy fibration, which is the property the rest of the proof uses. The exercise
+    is not false and X_m is not undefined; the audit note this event replaces said otherwise and was
+    wrong. The earlier audit report on this card carries the same error (it restricted existence to
+    2 <= i <= m-2 and called X_m the universal cover for m >= 2); a correction is appended to that report.
+    Not checked: nothing beyond the cited spans; no independent verification of the Whitehead-tower
+    construction.
+
 ---
 
 ::: {.problem}
@@ -68,7 +91,7 @@ X_m\simeq\operatorname{hofib}(X\to X^{m-1}),
 \qquad
 (X^n)_m\simeq\operatorname{hofib}(X^n\to X^{m-1})
 $$
-when $n\ge m-1$. These displays carry a hypothesis that the problem's notation carries as well: an $(m-1)$-connected covering $X_m$ exists only if $\pi_i(X)=0$ for $2\le i\le m-1$, since a covering has $\pi_i(X_m)\cong\pi_i(X)$ for $i\ge2$. For $m=2$ the condition is vacuous and $X_2$ is the universal cover; when it fails, for instance for $X=S^2$ and $m=3$, the symbol $X_m$ denotes nothing. Under it, $X_m$ is the cover whose classifying subgroup makes it $(m-1)$-connected, the projection $X_m\to X$ is a fibration with fibre the homotopy fibre, and the fibre is $(m-1)$-connected with the same homotopy groups as $X_m$, so Whitehead's theorem gives the displayed equivalence. The map $X\to X^n$ induces a map between these fibers. Its long exact homotopy sequence shows that $X_m\to(X^n)_m$ is an isomorphism on $\pi_i$ for $i\le n$. The target has no homotopy above $n$, so this map exhibits $(X^n)_m$ as an $n$th Postnikov stage of $X_m$. Hence
+when $n\ge m-1$. The word "covering" in the exercise is Hatcher's name for the $(m-1)$-connected cover in the Whitehead tower, not an ordinary covering space: it is defined, for every connected CW complex $X$, as the homotopy fibre of $X\to X^{m-1}$ (Example 4.20, and §4.3 where the $n$ connected covering of $Y$ is identified with the homotopy fibre of $Y\to Y_n$). The long exact sequence of that homotopy fibration gives $\pi_i(X_m)=0$ for $i\le m-1$ and $\pi_i(X_m)\cong\pi_i(X)$ for $i\ge m$, because $X^{m-1}$ carries the homotopy groups of $X$ up to degree $m-1$ and none above; no vanishing hypothesis on $\pi_i(X)$ is needed. For $m=2$ the cover is the universal cover, and for $m>1$ it need not be a covering map at all: the Hopf map $S^3\to S^2$ is the 2 connected cover of $S^2$. That identification is what makes the two iterands comparable, and it is the same object on both sides, $\operatorname{hofib}(X^n\to X^{m-1})$. The map $X\to X^n$ induces a map between these fibers. Its long exact homotopy sequence shows that $X_m\to(X^n)_m$ is an isomorphism on $\pi_i$ for $i\le n$. The target has no homotopy above $n$, so this map exhibits $(X^n)_m$ as an $n$th Postnikov stage of $X_m$. Hence
 $$
 \boxed{(X^n)_m\simeq (X_m)^n.}
 $$

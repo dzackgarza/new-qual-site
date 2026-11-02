@@ -458,3 +458,26 @@ verbatim; E-HAT-4.1-15 (dropped parenthetical hint), E-HAT-4.1-19 (iff → if), 
 least at sketch level (-10, -16, -19, -21, -22; -19 and -22 because only one direction of the
 printed "iff" is proved, -16 and -21 because one step is asserted). No card in this slice was
 left unread.
+
+---
+
+## Correction, 2026-11-02 (claude): the X_m claim in the E-HAT-4.1-21 section
+
+The section above records that `X_m ≃ hofib(X → X^{m-1})` "is only true under the implicit hypothesis
+that an (m−1)-connected *covering* of X exists, i.e. that π_i(X) = 0 for 2 ≤ i ≤ m−2", and adds that
+"then X_m is the universal cover (for m ≥ 2)". Both statements are wrong, and acting on them put a
+false hypothesis into the card, which has since been reverted.
+
+The "covering" in Hatcher's Exercise 21 is the (m−1)-connected cover of the **Whitehead tower**, not an
+ordinary covering space. Hatcher introduces it in Example 4.20 (AT.txt:17730–17747), where the maps
+`Z_n → X` of the tower of n-connected CW models are said to be viewable "by analogy" as an "n connected
+cover" of X, with `Z_1 → X` the universal cover; and §4.3 identifies it as a homotopy fibre:
+"The n connected covering of Y can also be obtained as the homotopy fiber of the nth stage Y → Y_n of a
+Postnikov tower for Y" (AT.txt:20576–20579). It exists for every connected CW complex X, and for
+m > 1 it need not be a covering map — the book's own example is the Hopf map `S^3 → S^2`, which is the
+2-connected cover of S^2 (AT.txt:17744–17745).
+
+So no vanishing hypothesis on π_i(X) is needed, the homotopy-fibre model is not an extra assumption, and
+the exercise is not false. The defect the section did correctly identify in the card — that the model was
+asserted without justification — was real; the fix is to name the construction and read the long exact
+sequence, which is what the card now does.
