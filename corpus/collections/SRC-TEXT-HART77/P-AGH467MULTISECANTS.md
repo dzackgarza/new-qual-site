@@ -130,6 +130,28 @@ audit:
     Sec. 1: p = 0 with the normalization unramified, which a smooth curve satisfies), not the paper.
     Step tangent-char-zero therefore remains a CITATION step, not a verified one, and the portal or
     library access recorded in the preceding event is still required to close it.
+- event: source-checked
+  by: claude
+  date: 2026-11-02
+  note: >-
+    CLOSES the open citation requirement recorded in the events above, on the owner's instruction that
+    the original publication need not be obtained merely because it is the original. The step now cites
+    the restatement actually consulted: Fukasawa, A generalization of Esteves-Homma's example of
+    tangentially degenerate curves, arXiv:2108.00650v3, section 1, retrieved and read in full. Its two
+    sentences are the definition and the theorem used: an irreducible projective curve C in P^N with
+    N >= 3, not contained in any plane, over an algebraically closed field of characteristic p >= 0, is
+    tangentially degenerate if (T_P C minus P) meets C for a general P; and "for the case where p = 0
+    and the morphism X -> P^N induced by the normalization phi: X -> C is unramified, the nonexistence
+    of such curves was proved by Kaji [6] in 1986". Each hypothesis was checked against this step:
+    N = 3, the field is algebraically closed of characteristic 0, X is not contained in a plane, and X
+    is smooth so its normalization is an isomorphism, hence unramified. The conclusion is therefore the
+    non-tangential-degeneracy this step needs, and the passage from "general point" to "all but
+    finitely many" is the constructible-set argument that follows it. Kaji's own paper is retained as
+    the primary reference and is not claimed to have been read: the attempts are the ones recorded
+    above (Wiley and Oxford Academic answered with human checks, the Wiley TDM endpoint needs a token,
+    zbMATH withholds the review text under licence, the 2014 sequel is behind institutional login, and
+    no arXiv copy exists). The earlier misattribution of the 2014 sequel's abstract to the 1986 paper
+    stands corrected as recorded. Not checked: the body of Kaji 1986, and steps s1--s13 of this card.
 
 ---
 
@@ -274,9 +296,7 @@ In characteristic zero, the tangent-line finiteness assumption in step
 
 ::: pf-proof
 
-By [Kaji's theorem on tangentially degenerate curves](https://doi.org/10.1112/jlms/s2-33.3.430),
-the tangent line at a general point of a smooth nonplanar curve does not meet
-the curve at a second point. That statement is about a general point; passing to
+Kaji's theorem in characteristic zero, in the form stated and cited by Fukasawa (*A generalization of Esteves--Homma's example of tangentially degenerate curves*, [arXiv:2108.00650v3](https://arxiv.org/abs/2108.00650v3), §1): an irreducible projective curve $C\subset\PP^N$ with $N\ge3$, not contained in any plane, over an algebraically closed field of characteristic $0$, is *tangentially degenerate* when $T_PC$ meets $C$ away from $P$ for a general $P\in C$, and **no such curve is tangentially degenerate when the morphism $X\to\PP^N$ induced by the normalization $\phi\colon X\to C$ is unramified**. Each hypothesis holds here: $\PP^3$ has $N=3$, the field is algebraically closed of characteristic zero, $X$ is nonplanar, and $X$ is smooth, so its normalization is an isomorphism and hence unramified. So the tangent line at a general point does not meet the curve at a second point. (Kaji's original is *On the tangentially degenerate curves*, J. London Math. Soc. (2) **33** (1986) 430--440, [doi:10.1112/jlms/s2-33.3.430](https://doi.org/10.1112/jlms/s2-33.3.430); the restatement above is the source consulted.) That statement is about a general point; passing to
 "all but finitely many" needs the second-point incidence, and the distinctness
 $Q\ne P$ is essential to it. In homogeneous coordinates put
 $$
