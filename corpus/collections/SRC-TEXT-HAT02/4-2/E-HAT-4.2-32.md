@@ -23,6 +23,12 @@ audit:
     applying the repair. The restored text is the printed wording and the mathematics of the
     statement is otherwise unchanged.
 review: draft
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-02
+  note: >-
+    Cards read. Verdict record is m7__proofs-4-2-14-26.md (14-26: 11 correct, 16 and 26 each a single named step; both repaired) and m5__proofs-4-2-27-39.md (27-39: 10 correct, 28, 29 defective single cases, 34 a wrong intermediate assertion; all three repaired). No card in this slice has an unmet piece.
+
 ---
 
 ::: {.problem}
