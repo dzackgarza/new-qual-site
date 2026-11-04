@@ -244,36 +244,20 @@ requires a construction, not a citation.
   infers `p.module`, with the compiler reporting
   "'synthesized type class instance is not definitionally equal to expression inferred by typing rules'
   — synthesized `AddCommGroup.toIntModule ↥p`, inferred `p.module`". Pinning the subtype structures the
-  same way is the next step.
-  **One packaging step remains, and it is Lean plumbing, not mathematics:** composing
-  `torOneIsoKernel ≪≫ kernelIsoKerModule ≪≫ isoOfKerEquiv (kerCommEquiv …).symm` into one
-  `torOne A B ≅ kerMapModule (f.hom.rTensor ↥B)`. The blocker is a *second* instance diamond, on the
-  tensor product rather than on a submodule: `rTensor`'s output carries `TensorProduct.addCommMonoid`
-  and `TensorProduct.instModule`, while `kerMapModule`'s parameters ask for
-  `AddCommGroup.toAddCommMonoid`, so the statement fails instance unification (the `Submodule.module`
-  diamond was resolved by `kerModule`/`kerMapModule`, this one is not). The composition is written; the fix is explicit
-  instance ascription at that boundary.
+  same way is what the earlier passes tried and did not settle.
+  **The packaging step is now proved, and it is closed by not going through subtypes at all.**
+  `TorBridge.torOneIsoTorKernel` composes `torOneIsoKernel` with `kernel.mapIso` transported across
+  the tensor symmetry, and names `torOne A B ≅ Limits.kernel (diffRight P)`: the kernel of the
+  **right-tensored** differential `X₁ ⊗ B → X₀ ⊗ B`, which is what the presentation-level
+  `torKernel f` of `cards/TorReductions.lean` is. Every object in that statement is a *bundled*
+  `ModuleCat ℤ`, so no submodule module structure is synthesized anywhere in it; the ambient tensor
+  instances are ascribed in the section, so both sides of the two `comm` isomorphisms mention the same
+  one; and the commuting square `kernel.mapIso` asks for is `LinearMap.lTensor_comm` and nothing else
+  (`diff_square`). Axioms `propext, Classical.choice, Quot.sound`; no `sorryAx`, on the pinned
+  baseline. The subtype route through `kerCommEquiv` stays in the file and stays correct — it is
+  simply no longer needed for the composition, and its two instance diamonds (on the kernel subtype
+  and on the ambient tensor) are recorded above as what the bundling avoids.
 
-  **The exact residual, for the next pass.** Parameterising the orientation equivalence by the module
-  structures (`kerCommEquiv {M P N} [AddCommGroup _] [Module ℤ M] [Module ℤ P] [Module ℤ N] (f : M →ₗ[ℤ] P)
-  : (f.rTensor N).ker ≃ₗ[ℤ] (f.lTensor N).ker`) is not enough: elaboration then fails *inside that
-  statement*, on the two kernels' ambient types,
-
-  ```
-  error: synthesized type class instance is not definitionally equal to expression inferred by typing rules,
-    synthesized  AddCommGroup.toIntModule (TensorProduct ℤ M N)
-    inferred     TensorProduct.instModule
-  ```
-
-  and the same for `TensorProduct ℤ N M`. That is, one path (`rTensor`/`lTensor`'s own typing) fixes
-  `TensorProduct.instModule`, while the other (`Submodule.ker`'s implicit ambient instance) synthesizes
-  `AddCommGroup.toIntModule`; `CategoryTheory.Iso.toLinearEquiv` / `LinearEquiv.toModuleIso` preserve a
-  supplied structure but cannot reconcile the two. Two concrete ways out: compare the kernels as submodules
-  of the *bundled* categorical tensor (`tensorLeft`/`tensorRight` in `ModuleCat ℤ`, so both sides carry
-  `isModule`), or ascribe the ambient instances at the statement with explicit `@`-application
-  (`@Submodule.ker ℤ ℤ _ _ (RingHom.id ℤ) (TensorProduct ℤ M N) _ _ TensorProduct.addCommMonoid
-  (TensorProduct.instModule …) …`). Nothing in the bridge's mathematics changes; no axiom and no assumed map
-  equality is used anywhere in the file.
   Hatcher's Lemma 3A.2 as the cards use it is the *unrestricted* application: it needs that kernel
   step **together with** the finite-stage descent already proved in `cards/TorStages.lean`
   (`exists_stage_of_free`, `stageMap_injective`, the directed system). The flat-cokernel lemma

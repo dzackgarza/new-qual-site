@@ -6,9 +6,9 @@ import Mathlib
 `Tor₁` is the first left derived functor of `tensorLeft B`. `ProjectiveResolution.isoLeftDerivedObj`
 computes that derived functor from a chosen projective resolution: the value at `A` is the first
 homology of the complex `P.complex ⊗ B`. This file records that bridge as an elaborated theorem, at the
-generality of `ModuleCat ℤ`, and states precisely the one finite step that is *not* taken here — the
-identification of that homology with the kernel of the degree-1 differential for a two-term resolution,
-which is what connects it to the presentation-level `torKernel` of `cards/TorReductions.lean`.
+generality of `ModuleCat ℤ`, takes the finite step that identifies that homology with the kernel of the
+degree-1 differential for a two-term resolution, and packages the result as the kernel of the
+right-tensored differential — the presentation-level `torKernel` of `cards/TorReductions.lean`.
 
 Nothing here rebuilds homology: the derived functor, the projective resolution, `mapHomologicalComplex`
 and the homology functor are the maintained ones.
@@ -44,25 +44,19 @@ noncomputable abbrev tensorDiffOne (B : ModuleCat ℤ) {A : ModuleCat ℤ}
     (resolutionTensor B P).X 1 ⟶ (resolutionTensor B P).X 0 :=
   (resolutionTensor B P).d 1 0
 
-/-! ## The one step not taken here, stated exactly
+/-! ## The step this file takes, and what it still does not claim
 
 For a two-term resolution — `P.complex` with `X 2 = 0`, so that the complex is `K → F → 0` — the first
 homology of `P.complex ⊗ B` is the kernel of `d 1 0 ⊗ B`, because there is nothing in degree two to
-quotient by:
+quotient by. Proved below as `torOneIsoKernel`, with `IsZero ((P.complex).X 2)` the hypothesis, and
+composed with the tensor symmetry into `torOneIsoTorKernel`, which identifies `Tor₁(A,B)` with the
+presentation-level `torKernel` of `cards/TorReductions.lean` — `ker(K ⊗ B → F ⊗ B)` for `A = F/K` —
+as the kernel of the right-tensored differential.
 
-`IsZero ((P.complex).X 2) → H₁(P.complex ⊗ B) ≅ kernel ((P.complex).d 1 0 ⊗ B)`.
-
-Composing that with `torOneIsoHomology` would identify `Tor₁(A,B)` with the presentation-level
-`torKernel` of `cards/TorReductions.lean`, i.e. with `ker(K ⊗ B → F ⊗ B)` for `A = F/K`.
-
-It is not proved here. It is a finite statement about `ShortComplex` homology —
-`ShortComplex.cyclesIsoKernel` gives `S.cycles ≅ kernel S.g`, and with `S.X₁` a zero object
-(`IsZero (K.X 2)` for `S = K.sc 1`) the homology, which is the cokernel of `S.toCycles`, is
-`S.cycles` up to the cokernel of a zero map — and it is recorded here rather than glossed: the
-derived-functor half above is unconditional in the resolution, this kernel step is not, and Hatcher's
-use of Lemma 3A.2 in `E-HAT-3.A-6` is the *unrestricted* application (any resolution, then passage to
-the colimit of stages), which needs this step plus the finite-stage descent already proved in
-`cards/TorStages.lean`. -/
+Hatcher's use of Lemma 3A.2 in `E-HAT-3.A-6` remains the *unrestricted* application: any resolution,
+then passage to the colimit of the finitely generated stages. That citation is not formalized here, and
+nothing in this file substitutes for it; what is formalized is the presentation-level identification
+above plus the finite-stage descent of `cards/TorStages.lean`. -/
 
 /-! ## The two-term step: the homology is the kernel of the incoming differential
 
@@ -261,6 +255,70 @@ noncomputable def kerCommEquiv (f : M →ₗ[ℤ] P) :
 
 end Boundary
 
+/-! ## The packaged composition
+
+`Tor₁(A,B)` is the kernel of the left-tensored differential `B ⊗ d`; the presentation-level
+`torKernel` of `cards/TorReductions.lean` is the kernel of the right-tensored `d ⊗ B`. The tensor
+symmetry `comm` carries one to the other, and `LinearMap.lTensor_comm` is exactly the statement that
+the square it induces commutes. Stating the composition between *bundled* kernels keeps every module
+structure bundled, so no submodule instance is synthesized anywhere in the statement.
+
+The transport is oriented from the right-tensored kernel to the left-tensored one, which is the
+direction `lTensor_comm` is stated in; the ambient tensor instances are ascribed in this section so
+that both sides of each isomorphism mention the same one. -/
+
+section PackagedBridge
+
+variable {A B : ModuleCat ℤ} (P : ProjectiveResolution A) (h2 : IsZero ((P.complex).X 2))
+
+/-- The ambient module structure on `X₁ ⊗ B`. -/
+private abbrev mX1B : Module ℤ (TensorProduct ℤ ↥((P.complex).X 1) ↥B) := TensorProduct.instModule
+
+/-- The ambient module structure on `X₀ ⊗ B`. -/
+private abbrev mX0B : Module ℤ (TensorProduct ℤ ↥((P.complex).X 0) ↥B) := TensorProduct.instModule
+
+attribute [local instance] mX1B mX0B
+
+/-- The right-tensored differential of the resolution, bundled: this is the map whose kernel is the
+presentation-level `torKernel`. -/
+noncomputable abbrev diffRight : ModuleCat.of ℤ (TensorProduct ℤ ↥((P.complex).X 1) ↥B) ⟶
+    ModuleCat.of ℤ (TensorProduct ℤ ↥((P.complex).X 0) ↥B) :=
+  ModuleCat.ofHom (((P.complex).d 1 0).hom.rTensor ↥B)
+
+/-- The tensor symmetry at the domain, going from the right-tensored side to `B ⊗ X₁`. -/
+noncomputable def commDom :
+    ModuleCat.of ℤ (TensorProduct ℤ ↥((P.complex).X 1) ↥B) ≅ (resolutionTensor B P).X 1 :=
+  (TensorProduct.comm ℤ ↥((P.complex).X 1) ↥B).toModuleIso
+
+/-- The tensor symmetry at the codomain. -/
+noncomputable def commCod :
+    ModuleCat.of ℤ (TensorProduct ℤ ↥((P.complex).X 0) ↥B) ≅ (resolutionTensor B P).X 0 :=
+  (TensorProduct.comm ℤ ↥((P.complex).X 0) ↥B).toModuleIso
+
+/-- The square commutes: this is `LinearMap.lTensor_comm` and nothing else. It says that the
+left-tensored differential, precomposed with the tensor symmetry, is the symmetry applied to the
+right-tensored differential. -/
+theorem diff_square :
+    diffRight (B := B) P ≫ (commCod P).hom = (commDom P).hom ≫ (resolutionTensor B P).d 1 0 := by
+  apply ModuleCat.hom_ext
+  apply LinearMap.ext
+  intro x
+  simp only [ModuleCat.comp_apply, ModuleCat.ofHom_apply, commCod, commDom,
+    LinearEquiv.toModuleIso_hom, LinearEquiv.coe_toLinearMap, resolutionTensor_d]
+  exact (LinearMap.lTensor_comm ((P.complex).d 1 0).hom x).symm
+
+/-- **The packaged bridge.** For a two-term projective resolution, `Tor₁(A,B)` is isomorphic to the
+kernel of the right-tensored differential `K ⊗ B → F ⊗ B`, the presentation-level `torKernel` of
+`cards/TorReductions.lean`: `torOneIsoKernel` gives the kernel of the tensored (left-tensored)
+differential, and `kernel.mapIso` transports it across the tensor symmetry using `diff_square`. -/
+noncomputable def torOneIsoTorKernel :
+    torOne A B ≅ Limits.kernel (diffRight (B := B) P) :=
+  torOneIsoKernel P h2 ≪≫
+    (kernel.mapIso (f := diffRight (B := B) P) ((resolutionTensor B P).d 1 0)
+      (commDom P) (commCod P) (diff_square P)).symm
+
+end PackagedBridge
+
 end TorBridge
 
 #print axioms TorBridge.torOneIsoHomology
@@ -275,3 +333,5 @@ end TorBridge
 #print axioms TorBridge.ker_rTensor_eq_comap_ker_lTensor'
 #print axioms TorBridge.tensorMod
 #print axioms TorBridge.kerCommEquiv
+#print axioms TorBridge.diff_square
+#print axioms TorBridge.torOneIsoTorKernel
