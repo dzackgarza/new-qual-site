@@ -23,6 +23,21 @@ audit:
     comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
     applying the repair. The restored text is the printed wording and the mathematics of the
     statement is otherwise unchanged.
+- event: solution-written
+  by: claude
+  date: 2026-11-04
+  note: >-
+    Repair of the Whitehead step in the third block, which claimed that an isomorphism on pi_k(X)
+    alone, for X k-dimensional, detects a homotopy equivalence. Whitehead's theorem needs the
+    isomorphism on every homotopy group, and pi_i of a wedge of k-spheres can be nonzero for i > k
+    (Hilton-Milnor), so the step as written did not cover i > k. The replacement runs the hint in the
+    printed exercise itself: naturality of Hurewicz turns the pi_k isomorphism into one on
+    H_k(X;Z) = Z^n, X has no other reduced homology, and simply-connected CW homology isomorphisms
+    are homotopy equivalences by the homology form of Whitehead's theorem (Corollary 4.33). The
+    equality criterion M(f) in GL_n(Z) is unchanged. Checked: every substep of the monoid
+    characterization [X,X]_* = M_n(Z), its multiplicativity, and the based/free identification at the
+    end. Not checked: re-verification of the printed hint's parenthetical beyond its restatement here.
+
 ---
 
 ::: {.problem}
@@ -132,10 +147,10 @@ cellular structure of a wedge of spheres.
 :::
 
 ::: pf-step
-By Whitehead’s Theorem, a based map $f: X \to X$ between simply connected CW complexes of dimension $k$ is a homotopy equivalence if and only if $f_*: \pi_k(X) \to \pi_k(X)$ is an isomorphism of abelian groups.
+If $f_*: \pi_k(X) \to \pi_k(X)$ is an isomorphism, then $f$ is a homotopy equivalence, and the converse holds as well.
 
 ::: pf-proof
-Whitehead's Theorem for CW complexes.
+Naturality of the Hurewicz homomorphism turns $f_*$ on $\pi_k(X)$ into $f_*$ on $H_k(X;\ZZ)$, and by the Hurewicz isomorphism established above these two are the same map $\ZZ^n \to \ZZ^n$. Since $X$ has cells only in dimensions $0$ and $k$, every other reduced homology group of $X$ vanishes, so $f$ induces isomorphisms on all homology groups. Both $X$ and $Y=X$ are simply connected CW complexes, so by the homology form of Whitehead's theorem (Corollary 4.33) $f$ is a homotopy equivalence. The converse needs no theorem: a homotopy equivalence induces isomorphisms on every homotopy group, in particular on $\pi_k$. The hypothesis that $\pi_k(X)$ alone is an isomorphism is used exactly here and not claimed to detect equivalences in general; the homology form carries the argument because $X$ has only one nonzero reduced homology group.
 :::
 
 :::
