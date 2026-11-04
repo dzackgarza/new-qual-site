@@ -228,6 +228,37 @@ theorem twoTermComplex_homology_one_isZero :
   exact IsZero.of_iso (isZero_kernel_of_mono ((twoTermComplex r f).d 1 0))
     (homologyOneIsoKernel (twoTermComplex_isZero_X_two r f))
 
+/-! ## The quasi-isomorphism, above degree zero
+
+Both complexes have vanishing homology in every positive degree — the two-term complex by
+`twoTermComplex_homology_one_isZero` and `twoTermComplex_homology_isZero`, and `single₀ A` because it
+is concentrated in degree `0` — so the comparison map is an isomorphism on homology there by
+`IsZero.isIso`. Degree `0`, where the map is `F/K ≅ A`, is treated separately since it needs
+surjectivity of the presentation. -/
+
+/-- The homology of the two-term complex vanishes in every positive degree. -/
+theorem twoTermComplex_homology_pos_isZero (i : ℕ) (hi : i ≠ 0) :
+    IsZero ((twoTermComplex r f).homology i) := by
+  match i with
+  | 0 => exact absurd rfl hi
+  | 1 => exact twoTermComplex_homology_one_isZero r f
+  | k + 2 => exact twoTermComplex_homology_isZero r f k
+
+/-- The homology of `single₀ A` vanishes in every positive degree. -/
+theorem single₀_homology_pos_isZero (i : ℕ) (hi : i ≠ 0) :
+    IsZero (((ChainComplex.single₀ (ModuleCat ℤ)).obj (ModuleCat.of ℤ A)).homology i) := by
+  have h := HomologicalComplex.isZero_single_obj_homology (C := ModuleCat ℤ)
+    (c := ComplexShape.down ℕ) (j := 0) (ModuleCat.of ℤ A) i hi
+  simpa using h
+
+/-- **The comparison map is a quasi-isomorphism above degree zero**: both sides have zero homology
+there. -/
+theorem quasiIsoAt_twoTermPi_of_pos (i : ℕ) (hi : i ≠ 0) :
+    QuasiIsoAt (twoTermPi r f) i := by
+  rw [quasiIsoAt_iff_isIso_homologyMap]
+  exact IsZero.isIso (twoTermComplex_homology_pos_isZero r f i hi)
+    (single₀_homology_pos_isZero (A := A) i hi) _
+
 end TwoTerm
 
 end TorFreeResolution
@@ -245,5 +276,6 @@ end TorFreeResolution
 #print axioms TorFreeResolution.twoTermPi
 #print axioms TorFreeResolution.coker_subtype_iso
 #print axioms TorFreeResolution.isZero_kernel_of_isZero_source
+#print axioms TorFreeResolution.quasiIsoAt_twoTermPi_of_pos
 #print axioms TorFreeResolution.twoTermComplex_homology_isZero
 #print axioms TorFreeResolution.twoTermComplex_homology_one_isZero
