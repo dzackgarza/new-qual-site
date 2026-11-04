@@ -31,6 +31,18 @@ audit:
     comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
     applying the repair. The restored text is the printed wording and the mathematics of the
     statement is otherwise unchanged.
+- event: solution-written
+  by: claude
+  date: 2026-11-04
+  note: >-
+    Repair of the stated mod-3 Adem identity, which wrote P^1P^3 = P^4. Against Hatcher's form of
+    the relation, a = 1 < p = 3 means only the j = 0 summand appears, with coefficient
+    (-1)^1 * binom((3-1)*3 - 1, 1) = -5, so P^1P^3 = -5 P^4 = -P^4 over Z_3. The defect changes
+    nothing about the contradiction, which needs only that P^3x lies in the zero group H^20(C_p; Z_3),
+    but the printed identity was false as stated. Checked: instability P^4x = x^3 on a degree-eight
+    class; the Thom mapping-cone computation Z{1, x, x^2, x^3} with x^3 the fundamental class up to
+    sign; H^20(C_p) = 0; and each subsequent step, all unchanged.
+
 ---
 
 ::: {.problem}
@@ -67,9 +79,13 @@ $$
 P^4x=x^3.
 \tag{2}
 $$
-But the mod-3 Adem relation with $a=1,b=3$ is
+The mod-3 Adem relation with $a=1,b=3$ has only the $j=0$ term, since $a<p$, and its coefficient is
 $$
-P^1P^3=P^4.
+(-1)^{1}\binom{(3-1)\cdot 3-1}{1}P^4=-\binom{5}{1}P^4=-P^4,
+$$
+so
+$$
+P^1P^3=-P^4.
 \tag{3}
 $$
 Since
@@ -82,7 +98,7 @@ P^3x=0.
 $$
 Equations (2) and (3) then give
 $$
-x^3=P^4x=P^1P^3x=0,
+x^3=P^4x=-P^1P^3x=0,
 $$
 contradicting (1). Therefore
 $$
