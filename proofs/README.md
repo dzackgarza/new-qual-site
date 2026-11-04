@@ -354,8 +354,14 @@ requires a construction, not a citation.
     (`LinearAlgebra/FreeModule/Int.lean`). That is a named upstream gap, not a gap in this
     directory's reasoning.
   So the remaining work splits cleanly: build the two-term resolution in the finitely generated case
-  from `Module.free_of_finite_type_torsion_free'` and instantiate `torOneIsoTorKernel` there; the
-  unrestricted statement waits on the upstream lemma.
+  and instantiate `torOneIsoTorKernel` there; the unrestricted statement waits on the upstream lemma.
+  **The decisive hypothesis of that instantiation is now certified.** `cards/TorFreeResolution.lean`
+  proves, for every `f : ℤⁿ → A`, that the syzygy `ker f` is finitely generated (`syzygy_finite`),
+  torsion-free (`syzygy_torsionFree`), free (`syzygy_free`) and hence projective
+  (`syzygy_projective`), and that `ℤⁿ` is projective (`free_projective`), together in
+  `presentation_projective`. Both terms of `0 → K → ℤⁿ → A → 0` are therefore projective, which is
+  the condition `ProjectiveResolution` imposes degreewise; what remains is the assembly of that
+  complex and its quasi-isomorphism, and then the instantiation itself.
 
 - the simplex chain-model comparison for `E-HAT-2.2-16`, instantiating
   `ker_eq_range_of_comm_iso` with the barycentric chains of `Δ^n` and the skeleton maps. Its
