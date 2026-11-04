@@ -27,7 +27,7 @@ open scoped ZeroObject
 
 namespace TorFreeResolution
 
-variable {A : Type*} [AddCommGroup A] [Module ℤ A]
+variable {A : Type} [AddCommGroup A] [Module ℤ A]
 
 /-- The syzygy of a map out of `ℤⁿ` is finitely generated: it is a submodule of a Noetherian
 module. -/
@@ -112,6 +112,17 @@ theorem twoTermComplex_projective (n : ℕ) : Projective ((twoTermComplex r f).X
       (ModuleCat.of ℤ ↥(LinearMap.ker f)) (ModuleCat.ofHom (LinearMap.ker f).subtype)
       (fun _ => ⟨0, 0, by simp⟩) k)) (inferInstance : Projective (0 : ModuleCat ℤ))
 
+/-- The augmentation of the two-term complex onto `A`, i.e. the map `F → A` in degree zero and zero
+above it. It exists precisely because `f` kills the syzygy, which is the side condition
+`ChainComplex.toSingle₀Equiv` asks for. -/
+noncomputable def twoTermPi :
+    twoTermComplex r f ⟶ (ChainComplex.single₀ (ModuleCat ℤ)).obj (ModuleCat.of ℤ A) :=
+  (ChainComplex.toSingle₀Equiv _ _).symm ⟨ModuleCat.ofHom f, by
+    rw [twoTermComplex_d_one_zero]
+    apply ModuleCat.hom_ext
+    ext x
+    exact x.2⟩
+
 end TwoTerm
 
 end TorFreeResolution
@@ -125,3 +136,4 @@ end TorFreeResolution
 #print axioms TorFreeResolution.twoTermComplex
 #print axioms TorFreeResolution.twoTermComplex_isZero_X_two
 #print axioms TorFreeResolution.twoTermComplex_projective
+#print axioms TorFreeResolution.twoTermPi
