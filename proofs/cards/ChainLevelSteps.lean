@@ -111,9 +111,11 @@ The skeleton step above is stated for a `k`-skeleton that "has the simplex's cha
 at most `k`". That is now proved, at the level of simplices: `SSet.sk k X` is the `k`-skeleton and
 `IsIso ((SSet.skAdj k).unit)` — the coreflection of the truncation onto it — gives an equivalence of
 `i`-simplices for every `i ≤ k`, and `skSimplexEquiv_δ` shows that equivalence is natural for the face
-maps whenever `j + 1 ≤ k`. What this file still does **not** prove is the chain-level half: that these
-give an isomorphism of chain groups in degrees `≤ k` together with agreement of the differentials
-there, and that `H̃_i((Δ^m)^k) = 0` for `i < k` follows. `ker_eq_range_of_comm_iso` above is the
+maps whenever `j + 1 ≤ k`. `skChainsIso` compares the chain groups: the
+alternating face map complex has the free abelian group on the `i`-simplices in degree `i`, so the
+equivalence gives an isomorphism there for `i ≤ k`. What this file still does **not** prove is the
+agreement of the *differentials*, i.e. the chain map itself, and with it
+`H̃_i((Δ^m)^k) = 0` for `i < k`. `ker_eq_range_of_comm_iso` above is the
 transport those pieces will feed. -/
 
 open CategoryTheory Opposite Simplicial
@@ -141,6 +143,16 @@ theorem skSimplexEquiv_δ (k : ℕ) (X : SSet.{0}) {j : ℕ} (hj : j ≤ k) (hj1
     (op (SimplexCategory.Truncated.Hom.tr (SimplexCategory.δ i)
       (by simpa using hj) (by simpa using hj1)) : _ ⟶ _) x
 
+/-- **The `k`-skeleton's chain groups in degrees at most `k`.** The alternating face map complex of a
+simplicial set has the free abelian group on its `i`-simplices in degree `i`, so `skSimplexEquiv`
+induces an isomorphism of chain groups there. This is the degreewise half of the chain-level step; the
+differentials' agreement is the remaining piece. -/
+noncomputable def skChainsIso (k : ℕ) (X : SSet.{0}) (i : ℕ) (hi : i ≤ k) :
+    (AlgebraicTopology.AlternatingFaceMapComplex.obj (X ⋙ (ModuleCat.free ℤ))).X i
+      ≅ (AlgebraicTopology.AlternatingFaceMapComplex.obj
+          (((SSet.sk k).obj X) ⋙ (ModuleCat.free ℤ))).X i :=
+  (ModuleCat.free ℤ).mapIso (skSimplexEquiv k X i hi).toIso
+
 end ChainLevelSteps
 
 #print axioms ChainLevelSteps.choose_rank_step
@@ -149,3 +161,4 @@ end ChainLevelSteps
 #print axioms ChainLevelSteps.not_subsingleton_ordinary_homology
 #print axioms ChainLevelSteps.skSimplexEquiv
 #print axioms ChainLevelSteps.skSimplexEquiv_δ
+#print axioms ChainLevelSteps.skChainsIso
