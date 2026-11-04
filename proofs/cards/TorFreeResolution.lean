@@ -102,6 +102,13 @@ theorem twoTermComplex_isZero_X_two : IsZero ((twoTermComplex r f).X 2) :=
     (ChainComplex.mk'XIso (ModuleCat.of ℤ (Fin r → ℤ)) (ModuleCat.of ℤ ↥(LinearMap.ker f))
       (ModuleCat.ofHom (LinearMap.ker f).subtype) (fun _ => ⟨0, 0, by simp⟩) 0)
 
+/-- Every degree from `2` up is the zero object: the complex really is two-term. -/
+theorem twoTermComplex_isZero_X (n : ℕ) (hn : 2 ≤ n) : IsZero ((twoTermComplex r f).X n) := by
+  obtain ⟨k, rfl⟩ : ∃ k, n = k + 2 := ⟨n - 2, by omega⟩
+  exact IsZero.of_iso (isZero_zero (ModuleCat ℤ))
+    (ChainComplex.mk'XIso (ModuleCat.of ℤ (Fin r → ℤ)) (ModuleCat.of ℤ ↥(LinearMap.ker f))
+      (ModuleCat.ofHom (LinearMap.ker f).subtype) (fun _ => ⟨0, 0, by simp⟩) k)
+
 /-- Every degree of the two-term complex is projective, so it can be a `ProjectiveResolution`. -/
 theorem twoTermComplex_projective (n : ℕ) : Projective ((twoTermComplex r f).X n) := by
   match n with
@@ -137,3 +144,4 @@ end TorFreeResolution
 #print axioms TorFreeResolution.twoTermComplex_isZero_X_two
 #print axioms TorFreeResolution.twoTermComplex_projective
 #print axioms TorFreeResolution.twoTermPi
+#print axioms TorFreeResolution.twoTermComplex_isZero_X
