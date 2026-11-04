@@ -109,6 +109,14 @@ theorem twoTermComplex_isZero_X (n : ℕ) (hn : 2 ≤ n) : IsZero ((twoTermCompl
     (ChainComplex.mk'XIso (ModuleCat.of ℤ (Fin r → ℤ)) (ModuleCat.of ℤ ↥(LinearMap.ker f))
       (ModuleCat.ofHom (LinearMap.ker f).subtype) (fun _ => ⟨0, 0, by simp⟩) k)
 
+/-- The differential of the two-term complex is a monomorphism: it is the inclusion of the syzygy
+into `ℤⁿ`. This is what makes `H₁` vanish. -/
+theorem twoTermComplex_mono_d_one_zero :
+    Mono ((twoTermComplex r f).d 1 0) := by
+  rw [twoTermComplex_d_one_zero]
+  exact ModuleCat.mono_as_hom'_subtype (R := ℤ) (X := ModuleCat.of ℤ (Fin r → ℤ))
+    (LinearMap.ker f)
+
 /-- Every degree of the two-term complex is projective, so it can be a `ProjectiveResolution`. -/
 theorem twoTermComplex_projective (n : ℕ) : Projective ((twoTermComplex r f).X n) := by
   match n with
@@ -130,6 +138,41 @@ noncomputable def twoTermPi :
     ext x
     exact x.2⟩
 
+/-! ## The homology of the two-term complex
+
+`H₁` vanishes because the differential is the inclusion of the syzygy, and every degree from `2` up
+is the zero object. These are the vanishing half of the quasi-isomorphism computation; `H₀` is
+`F/K ≅ A`, which needs `f` surjective and is treated separately. -/
+
+/-- A short complex with vanishing incoming differential has homology its kernel. Copied from the
+sibling certificate rather than imported: a file under `proofs/cards/` has no olean of its siblings
+on the search path. -/
+noncomputable def homologyIsoKernelOfZero {S : ShortComplex (ModuleCat ℤ)} (hf : S.f = 0) :
+    S.homology ≅ Limits.kernel S.g :=
+  (ShortComplex.LeftHomologyData.ofHasKernel S hf).homologyIso
+
+/-- The degree-`1` homology of a chain complex, with the incoming differential vanishing, is the
+kernel of the outgoing one. -/
+noncomputable def homologyOneIsoKernelOfD {K : ChainComplex (ModuleCat ℤ) ℕ}
+    (h : K.d 2 1 = 0) : K.homology 1 ≅ Limits.kernel (K.d 1 0) :=
+  (K.homologyIsoSc' 2 1 0
+      (ComplexShape.prev_eq' (c := ComplexShape.down ℕ) (by simp))
+      (ComplexShape.next_eq' (c := ComplexShape.down ℕ) (by simp))) ≪≫
+    homologyIsoKernelOfZero (S := K.sc' 2 1 0) h
+
+/-- The same from the shape hypothesis `IsZero (K.X 2)`. -/
+noncomputable def homologyOneIsoKernel {K : ChainComplex (ModuleCat ℤ) ℕ} (h2 : IsZero (K.X 2)) :
+    K.homology 1 ≅ Limits.kernel (K.d 1 0) :=
+  homologyOneIsoKernelOfD (K := K) (IsZero.eq_of_src h2 _ _)
+
+/-- **`H₁` of the two-term complex vanishes**: the differential is the inclusion of the syzygy,
+which is a monomorphism, so its kernel is the zero object. -/
+theorem twoTermComplex_homology_one_isZero :
+    IsZero ((twoTermComplex r f).homology 1) := by
+  haveI : Mono ((twoTermComplex r f).d 1 0) := twoTermComplex_mono_d_one_zero r f
+  exact IsZero.of_iso (isZero_kernel_of_mono ((twoTermComplex r f).d 1 0))
+    (homologyOneIsoKernel (twoTermComplex_isZero_X_two r f))
+
 end TwoTerm
 
 end TorFreeResolution
@@ -141,7 +184,8 @@ end TorFreeResolution
 #print axioms TorFreeResolution.free_projective
 #print axioms TorFreeResolution.presentation_projective
 #print axioms TorFreeResolution.twoTermComplex
+#print axioms TorFreeResolution.twoTermComplex_isZero_X
 #print axioms TorFreeResolution.twoTermComplex_isZero_X_two
 #print axioms TorFreeResolution.twoTermComplex_projective
 #print axioms TorFreeResolution.twoTermPi
-#print axioms TorFreeResolution.twoTermComplex_isZero_X
+#print axioms TorFreeResolution.twoTermComplex_homology_one_isZero
