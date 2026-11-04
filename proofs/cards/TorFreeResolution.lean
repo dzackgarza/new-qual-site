@@ -383,14 +383,35 @@ kernel of `torOne_iso_kernel` is `B[n]` up to the tensor unit isomorphisms.
 This file carries the first half of that: the presentation, its surjectivity, the divisibility
 describing its syzygy, and `syzygyEquiv`, which identifies that syzygy with `ℤ`. The second half —
 transporting `kernel ((resolutionTensor B (cyclicResolution n)).d 1 0)` to `kernel (mulByIntEndo B n)`
-— is **not** here, and the obstruction is a coercion-shape one worth recording: writing the two
-tensor-unit isomorphisms with `X 1`/`X 0` as their domains typechecks under default transparency, but
-`↥((resolutionTensor B (cyclicResolution n)).X 1)` is not definitionally
-`TensorProduct ℤ ↥B ↥((cyclicResolution n).complex.X 1)` at implicit transparency, so the commuting
-square that `kernel.mapIso` needs cannot be closed in that shape. The route that does work elsewhere
-in this directory is `TorBridge`'s: build the isomorphisms between **explicitly written** tensor
-objects (with the ambient module structure pinned by `[local instance]`, as `mX1B`/`mX0B` do there)
-and relate them to `X j` by one transport, rather than starting from `X j`. -/
+— is **not** here. What follows is the isolated blocker, with the facts checked in the pinned
+elaborator, so that the next attempt starts from them.
+
+1. `↥((resolutionTensor B (cyclicResolution n)).X j)` is **not** definitionally
+   `TensorProduct ℤ ↥B ↥((cyclicResolution n).complex.X j)`: `rfl` fails for both `j`, so the
+   left-tensored objects cannot be used as the ambient type of a pure tensor.
+2. Consequently the square has to be stated on the *right*-tensored objects, i.e. on the packaging
+   that `cards/TorBridge.lean` already carries (`diffRight`, `commDom`, `commCod`, `diff_square`,
+   `torOneIsoDiffRight`); a certificate cannot import it, so the packaging was copied in, elaborated
+   cleanly — with the ambient tensor module structure pinned by `[local instance]`, exactly as
+   `mX1B`/`mX0B` do there — and then removed again, because nothing here consumes it yet. That is
+   where the cyclic computation has to live.
+3. On those objects the residual obstruction is the *coordinate*: an element of `X 1` does not coerce
+   to `Fin 1 → ℤ` by ascription, although `↥(X 1) = ↥(LinearMap.ker (cyclicPresentation n))` holds by
+   `rfl` (checked); it needs `cycSyzygy`-style transport first, because the coercion is elaborated
+   where the `Module` structure, not the carrier, is what has to unify.
+4. Matching `TensorProduct.congr_tmul` then fails on `(TensorProduct.congr f g) (x ⊗ₜ b)` when `x`
+   is typed through `X 1` rather than through `ker`: the pattern is syntactic in the tensor factor's
+   type. `erw` closes the gap but exceeds the default 200000-heartbeat budget on this term.
+5. Two syntactic walls remain for the final arithmetic, both quote-able: `ModuleCat.Hom.hom` versus
+   `ConcreteCategory.hom` blocks `ModuleCat.comp_apply` from rewriting `(f ≫ g) y`; and the closed
+   scalar equation `(↑x 0 / ↑n) • b = (↑x 0 / ↑n) • b` is *not* `rfl`, because the two sides carry
+   `DistribMulAction.toDistribSMul.toSMul` and `ZSMul.toSMul` respectively. The bridging lemma for
+   the second is `Int.cast_smul_eq_zsmul`; the first needs `change` to a `(cycCod …).hom ((…) y)`
+   shape, which does work.
+
+Nothing above is a mathematical obstruction: `Tor₁(ℤ/n, B) ≅ B[n]` is the standard computation, and
+`n * (a / n) = a` for `n ∣ a` is `Int.mul_ediv_cancel'`. What is missing is the plumbing through the
+three shapes in items 1, 3 and 5. -/
 
 /-- The canonical cyclic presentation `ℤ → ℤ/n`, sending `1` to a generator. -/
 noncomputable def cyclicPresentation (n : ℕ) : (Fin 1 → ℤ) →ₗ[ℤ] ZMod n where

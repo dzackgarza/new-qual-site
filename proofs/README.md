@@ -348,16 +348,21 @@ requires a construction, not a citation.
     `isZero_torOne_of_projective` and Mathlib's projective-vanishing of higher left derived functors.
     No resolution and no presentation is chosen there.
   - **The torsion statement for a finitely generated stage is still open.** It needs the structure
-    theorem applied to the stage plus additivity of `Tor` in its first argument; what the file now
-    supplies is the projective-vanishing end of that, not the decomposition. For the cyclic stage the
-    syzygy half is proved — `cyclicPresentation`, its surjectivity, the divisibility characterising its
+    theorem applied to the stage plus additivity of `Tor` in its first argument; what the file supplies
+    is the projective-vanishing end of that, not the decomposition. For the cyclic stage the syzygy
+    half is proved — `cyclicPresentation`, its surjectivity, the divisibility characterising its
     syzygy, and `syzygyEquiv` identifying that syzygy with `ℤ` — while the transport of
-    `kernel ((resolutionTensor B (cyclicResolution n)).d 1 0)` to `kernel (mulByIntEndo B n)` is not:
-    `↥((resolutionTensor B P).X 1)` is not definitionally `TensorProduct ℤ ↥B ↥(P.complex.X 1)` at
-    implicit transparency, so the square `kernel.mapIso` needs cannot be closed in that shape. The
-    route that works in this directory is `TorBridge`'s — isomorphisms between explicitly written
-    tensor objects with the module structure pinned by `[local instance]` — and the file's section
-    docstring records it.
+    `kernel ((resolutionTensor B (cyclicResolution n)).d 1 0)` to `kernel (mulByIntEndo B n)` is not.
+    The blocker is isolated in the file's section docstring as five facts checked in the pinned
+    elaborator: the left-tensored objects are not definitionally the tensor of `X j` with `B` (`rfl`
+    fails on both `j`), so the square must be stated on right-tensored objects; an element of `X 1`
+    does not coerce to `Fin 1 → ℤ` by ascription even though the carriers are `rfl`-equal, so a
+    `cycSyzygy`-style transport comes first; `TensorProduct.congr_tmul` then fails to match
+    syntactically and `erw` exceeds the default 200000-heartbeat budget; `ModuleCat.Hom.hom` versus
+    `ConcreteCategory.hom` blocks `ModuleCat.comp_apply`; and the closed scalar equation is not `rfl`
+    because its two sides carry `DistribMulAction.toDistribSMul.toSMul` and `ZSMul.toSMul`, which
+    `Int.cast_smul_eq_zsmul` bridges. None of that is mathematics: the computation is
+    `n * (a / n) = a` for `n ∣ a`.
   - **The passage from a stage to an arbitrary `A`** needs `Tor` to commute with the filtered colimit
     of the finitely generated subgroups — exercise 4 of the same section — and that statement is
     absent at the pin rather than merely unnamed: `CategoryTheory/Abelian/LeftDerived.lean` carries no
