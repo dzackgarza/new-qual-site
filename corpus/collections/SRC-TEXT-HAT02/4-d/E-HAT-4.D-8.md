@@ -22,6 +22,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-04
+  note: >-
+    The second clause of the printed exercise asks for the homology suspension isomorphism
+    H-tilde_i(B;R) = H-tilde_{n+i}(Sigma^n B;R) given by the reduced cross product; the card answered
+    only in cohomology, which is a true analogue but not the statement asked. The missing homology
+    form is added on top of the existing quotient and cross-product work: relative cross product in
+    homology with field coefficients (Kunneth an isomorphism there) is the homology Thom isomorphism,
+    and the same quotient identification gives the reduced suspension isomorphism. The existing
+    statements are unchanged and were checked.
+
 ---
 
 ::: {.problem}
@@ -72,4 +84,14 @@ $$
 \boxed{\widetilde H^i(B;R)\cong\widetilde H^{i+n}(\Sigma^nB;R)}
 $$
 induced by the reduced cross product.
+
+The homology form asked for in the printed exercise is the same product from the other side. The relative cross product of §3.2 (with field coefficients $R$, so the Künneth map is an isomorphism) sends a cycle on $B$ and the top relative class of the pair to
+$$
+\widetilde H_i(B;R)\otimes H_n(D^n,S^{n-1};R)\longrightarrow \widetilde H_{i+n}(B\times D^n,B\times S^{n-1};R)=\widetilde H_{i+n}(\Sigma^n(B_+);R),
+$$
+and it is the Thom isomorphism in homology: for a class $a\in H_i(B;R)$ its image is $a\times[D^n,S^{n-1}]$, which is the composition of the homology Thom isomorphism $H_i(B;R)\cong H_{i+n}(E,E';R)$ with the quotient identification already made. Hence
+$$
+\boxed{\widetilde H_i(B;R)\cong\widetilde H_{n+i}(\Sigma^nB;R),}
+$$
+the suspension isomorphism given by the reduced cross product, as the exercise states.
 :::
