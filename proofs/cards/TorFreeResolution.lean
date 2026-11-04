@@ -373,6 +373,80 @@ theorem isZero_torOne_of_finite_torsionFree (A : Type) [AddCommGroup A] [Module 
     IsZero (torOne (ModuleCat.of ℤ A) B) :=
   isZero_torOne_of_projective (A := ModuleCat.of ℤ A) B
 
+
+/-! ### The cyclic computation
+
+`Tor₁(ℤ/n, B)` is the `n`-torsion of `B`. The syzygy of the canonical presentation `ℤ → ℤ/n` is `ℤ`
+with generator `n`, and tensoring its inclusion with `B` turns it into multiplication by `n`, so the
+kernel of `torOne_iso_kernel` is `B[n]` up to the tensor unit isomorphisms.
+
+This file carries the first half of that: the presentation, its surjectivity, the divisibility
+describing its syzygy, and `syzygyEquiv`, which identifies that syzygy with `ℤ`. The second half —
+transporting `kernel ((resolutionTensor B (cyclicResolution n)).d 1 0)` to `kernel (mulByIntEndo B n)`
+— is **not** here, and the obstruction is a coercion-shape one worth recording: writing the two
+tensor-unit isomorphisms with `X 1`/`X 0` as their domains typechecks under default transparency, but
+`↥((resolutionTensor B (cyclicResolution n)).X 1)` is not definitionally
+`TensorProduct ℤ ↥B ↥((cyclicResolution n).complex.X 1)` at implicit transparency, so the commuting
+square that `kernel.mapIso` needs cannot be closed in that shape. The route that does work elsewhere
+in this directory is `TorBridge`'s: build the isomorphisms between **explicitly written** tensor
+objects (with the ambient module structure pinned by `[local instance]`, as `mX1B`/`mX0B` do there)
+and relate them to `X j` by one transport, rather than starting from `X j`. -/
+
+/-- The canonical cyclic presentation `ℤ → ℤ/n`, sending `1` to a generator. -/
+noncomputable def cyclicPresentation (n : ℕ) : (Fin 1 → ℤ) →ₗ[ℤ] ZMod n where
+  toFun x := (x 0 : ZMod n)
+  map_add' x y := by simp
+  map_smul' c x := by simp
+
+/-- The cyclic presentation is surjective: `ℤ` maps onto `ℤ/n`. -/
+theorem cyclicPresentation_surjective (n : ℕ) : Function.Surjective (cyclicPresentation n) := by
+  intro y
+  obtain ⟨a, rfl⟩ := ZMod.intCast_surjective (n := n) y
+  exact ⟨fun _ => a, by simp [cyclicPresentation]⟩
+
+/-- The syzygy of the cyclic presentation is the subgroup of vectors whose first coordinate is
+divisible by `n`. -/
+theorem cyclicPresentation_ker_dvd (n : ℕ) {x : Fin 1 → ℤ} (hx : cyclicPresentation n x = 0) :
+    (n : ℤ) ∣ x 0 :=
+  (ZMod.intCast_zmod_eq_zero_iff_dvd (x 0) n).mp hx
+
+/-- **The syzygy is `ℤ`**, with generator the vector `n`. -/
+noncomputable def syzygyEquiv (n : ℕ) (hn : n ≠ 0) :
+    ↥(LinearMap.ker (cyclicPresentation n)) ≃ₗ[ℤ] ℤ where
+  toFun x := x.1 0 / (n : ℤ)
+  invFun c := ⟨fun _ => (n : ℤ) * c, by
+    show ((((n : ℤ) * c : ℤ)) : ZMod n) = 0
+    rw [Int.cast_mul]
+    have h : ((n : ℤ) : ZMod n) = 0 :=
+      (ZMod.intCast_zmod_eq_zero_iff_dvd (n : ℤ) n).mpr (dvd_refl _)
+    rw [h, zero_mul]⟩
+  left_inv x := by
+    apply Subtype.ext
+    funext i
+    fin_cases i
+    dsimp
+    exact Int.mul_ediv_cancel' (cyclicPresentation_ker_dvd n x.2)
+  right_inv c := by
+    dsimp
+    rw [mul_comm]
+    exact Int.mul_ediv_cancel c (by exact_mod_cast hn)
+  map_add' x y := by
+    show (x.1 + y.1) 0 / (n : ℤ) = x.1 0 / (n : ℤ) + y.1 0 / (n : ℤ)
+    rw [Pi.add_apply, Int.add_ediv_of_dvd_right (cyclicPresentation_ker_dvd n y.2)]
+  map_smul' c x := by
+    show (c • x.1) 0 / (n : ℤ) = c • (x.1 0 / (n : ℤ))
+    rw [Pi.smul_apply, smul_eq_mul, Int.mul_ediv_assoc c (cyclicPresentation_ker_dvd n x.2),
+      smul_eq_mul]
+
+/-- The two-term projective resolution attached to the cyclic presentation. -/
+noncomputable abbrev cyclicResolution (n : ℕ) :
+    ProjectiveResolution (ModuleCat.of ℤ (ZMod n)) :=
+  twoTermProjectiveResolution 1 (cyclicPresentation n) (cyclicPresentation_surjective n)
+
+/-- Multiplication by `n` on `B`, as an endomorphism of the bundled module. -/
+noncomputable abbrev mulByIntEndo (B : ModuleCat ℤ) (n : ℕ) : B ⟶ B :=
+  ModuleCat.ofHom (((n : ℤ) • LinearMap.id : ↥B →ₗ[ℤ] ↥B))
+
 end TorBridgeLocal
 
 end TorFreeResolution
@@ -399,3 +473,4 @@ end TorFreeResolution
 #print axioms TorFreeResolution.torOne_iso_kernel
 #print axioms TorFreeResolution.isZero_torOne_of_projective
 #print axioms TorFreeResolution.isZero_torOne_of_finite_torsionFree
+#print axioms TorFreeResolution.syzygyEquiv
