@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Tracked the vertex, edge, and face orbits under the quarter-turn identifications and reduced the resulting presentation to the eight-element quaternion presentation.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the cell count for the cube quotient and the eight-element bound; the closing step now says how the eight words multiply, instead of pointing at earlier steps.
 ---
 
 ::: {.problem}
@@ -281,7 +286,7 @@ $$
 
 ::: pf-proof
 
-Combine steps [](#s5){.pf-ref} and [](#s9){.pf-ref}.
+Step [](#s5){.pf-ref} presents $\pi_1(X)$ on three generators with three relations; step [](#s8){.pf-ref} writes every element of that group as one of eight words, and step [](#s9){.pf-ref} shows those eight words are distinct and multiply by the quaternion rules. Hence the presented group has exactly eight elements and is $Q_8$.
 
 :::
 

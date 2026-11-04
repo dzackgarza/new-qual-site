@@ -29,6 +29,19 @@ audit:
     differentiability to (x,y) and to (y,x) makes the same difference
     quotient approximate both f'(y) and f'(x), proving f' uniformly
     continuous. Neither source supplies a worked proof.
+- event: source-corrected
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The SRC-MATH4100-6100-2020 appearance, Assignment 8 Math 6100 Bonus
+    Problem 1, adds part (b), an example of a function differentiable on
+    [a,b] but not uniformly differentiable there, which the card did not
+    state. The statement now carries both parts; the Azoff appearance poses
+    only part (a).
+- event: solution-written
+  by: claude
+  date: 2026-10-31
+  note: Rewrote the solution as a two-part structured proof and added the example for part (b).
 ---
 
 ::: {.problem}
@@ -39,158 +52,97 @@ $$
 $$
 whenever $x,y\in[a,b]$, $x\ne y$, and $\abs{x-y}<\delta$.
 
-Prove that $f$ is uniformly differentiable on $[a,b]$ if and only if $f'$ is continuous on $[a,b]$.
+(a) Prove that $f$ is uniformly differentiable on $[a,b]$ if and only if $f'$ is continuous on $[a,b]$.
+
+(b) Give an example of a function that is differentiable on $[a,b]$ but is not uniformly differentiable on $[a,b]$.
 :::
 
 ::: {.solution}
 For distinct $x,y\in[a,b]$, write
 $$
-Q(x,y)=\frac{f(x)-f(y)}{x-y}.
+Q(x,y)=\frac{f(x)-f(y)}{x-y},
 $$
-Then
-$$
-Q(y,x)=Q(x,y).
-$$
+so that $Q(y,x)=Q(x,y)$.
 
 ::: pf
 
-::: {.pf-step #s1}
-
-If $f'$ is continuous on $[a,b]$, then $f'$ is uniformly continuous
-on $[a,b]$.
+::: {.pf-step}
+(a) $f$ is uniformly differentiable on $[a,b]$ if and only if $f'$ is continuous on $[a,b]$.
 
 ::: pf-proof
 
-The interval $[a,b]$ is compact. Hence the Heine--Cantor theorem applied to
-the continuous function $f'$ shows that $f'$ is uniformly continuous.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-If $f'$ is continuous on $[a,b]$, then $f$ is uniformly
-differentiable on $[a,b]$.
+::: {.pf-step #a-reverse}
+If $f'$ is continuous on $[a,b]$, then $f$ is uniformly differentiable on $[a,b]$.
 
 ::: pf-proof
-
-Let $\varepsilon>0$. By step [](#s1){.pf-ref}, choose $\delta>0$ such that
+The interval $[a,b]$ is compact, so by the Heine--Cantor theorem the continuous function $f'$ is uniformly continuous on it.
+Let $\varepsilon>0$ and choose $\delta>0$ such that $\abs{u-v}<\delta$ implies $\abs{f'(u)-f'(v)}<\varepsilon$ for all $u,v\in[a,b]$.
+Let $x,y\in[a,b]$ be distinct with $\abs{x-y}<\delta$.
+The mean value theorem applied to the interval with endpoints $x$ and $y$ gives a point $c$ strictly between them with $Q(x,y)=f'(c)$.
+Since $c$ lies between $x$ and $y$, we have $\abs{c-y}<\abs{x-y}<\delta$, and therefore
 $$
-\abs{u-v}<\delta
-\quad\Longrightarrow\quad
-\abs{f'(u)-f'(v)}<\varepsilon
+\abs{Q(x,y)-f'(y)}=\abs{f'(c)-f'(y)}<\varepsilon.
 $$
-for all $u,v\in[a,b]$.
-
-Take distinct $x,y\in[a,b]$ with
-$$
-\abs{x-y}<\delta.
-$$
-The mean value theorem applied to the interval with endpoints $x$ and $y$
-gives a point $c$ strictly between them such that
-$$
-Q(x,y)=f'(c).
-$$
-Since $c$ lies between $x$ and $y$,
-$$
-\abs{c-y}<\abs{x-y}<\delta.
-$$
-Therefore
-$$
-\abs{Q(x,y)-f'(y)}
-=
-\abs{f'(c)-f'(y)}
-<
-\varepsilon.
-$$
-The same $\delta$ works for every such pair $x,y$, so $f$ is uniformly
-differentiable.
-
+The number $\delta$ depends only on $\varepsilon$, so $f$ is uniformly differentiable on $[a,b]$.
 :::
 
 :::
 
-::: {.pf-step #s3}
-
-If $f$ is uniformly differentiable on $[a,b]$, then $f'$ is uniformly
-continuous on $[a,b]$.
+::: {.pf-step #a-forward}
+If $f$ is uniformly differentiable on $[a,b]$, then $f'$ is continuous on $[a,b]$, so that with step [](#a-reverse){.pf-ref} the equivalence in (a) holds.
 
 ::: pf-proof
-
-Let $\varepsilon>0$. By uniform differentiability, choose $\delta>0$ such
-that for distinct $x,y\in[a,b]$ with $\abs{x-y}<\delta$,
+Let $\varepsilon>0$ and choose $\delta>0$ witnessing uniform differentiability for $\varepsilon/2$: for distinct $x,y\in[a,b]$ with $\abs{x-y}<\delta$,
 $$
 \abs{Q(x,y)-f'(y)}<\frac{\varepsilon}{2}.
 $$
-Apply the same estimate to the ordered pair $(y,x)$. Since
+The pair $(y,x)$ satisfies the same hypotheses, and $Q(y,x)=Q(x,y)$, so
 $$
-Q(y,x)=Q(x,y),
+\abs{Q(x,y)-f'(x)}=\abs{Q(y,x)-f'(x)}<\frac{\varepsilon}{2}.
 $$
-we also have
+For such a pair the triangle inequality gives
 $$
-\abs{Q(x,y)-f'(x)}<\frac{\varepsilon}{2}.
+\abs{f'(x)-f'(y)}\le\abs{f'(x)-Q(x,y)}+\abs{Q(x,y)-f'(y)}<\varepsilon,
 $$
-Hence
-$$
-\begin{aligned}
-\abs{f'(x)-f'(y)}
-&\leq
-\abs{f'(x)-Q(x,y)}
-+
-\abs{Q(x,y)-f'(y)}\\
-&<
-\varepsilon.
-\end{aligned}
-$$
-If $x=y$, the same conclusion is immediate. Hence the estimate holds for
-all $x,y\in[a,b]$ with $\abs{x-y}<\delta$.
-Thus $f'$ is uniformly continuous on $[a,b]$.
+and for $x=y$ the left-hand side is $0<\varepsilon$.
+Hence $f'$ is uniformly continuous on $[a,b]$, and in particular continuous there.
+:::
+
+:::
 
 :::
 
 :::
 
-::: {.pf-step #s4}
-
-If $f$ is uniformly differentiable on $[a,b]$, then $f'$ is
-continuous on $[a,b]$.
+::: {.pf-step}
+(b)
+$$
+\boxed{f(x)=x^{2}\sin\left(1/x^{2}\right)\ \text{for } 0<x\le1,\qquad f(0)=0}
+$$
+is differentiable on $[0,1]$ and not uniformly differentiable on $[0,1]$.
 
 ::: pf-proof
-
-Every uniformly continuous function is continuous. Apply this to $f'$ using
-step [](#s3){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-Therefore
+On $(0,1]$ the function is built from differentiable functions by products and compositions, with
 $$
-\boxed{
-f\text{ is uniformly differentiable on }[a,b]
-\quad\Longleftrightarrow\quad
-f'\text{ is continuous on }[a,b]
-}.
+f'(x)=2x\sin\left(1/x^{2}\right)-\frac{2}{x}\cos\left(1/x^{2}\right),
 $$
+and at the origin
+$$
+\frac{f(h)-f(0)}{h-0}=h\sin\left(1/h^{2}\right)\longrightarrow 0\qquad(h\to0,\ h\ne0)
+$$
+because $\abs{h\sin(1/h^{2})}\le\abs{h}$.
+Hence $f'(0)=0$ and $f$ is differentiable on $[0,1]$.
 
-::: pf-proof
-
-Step [](#s2){.pf-ref} proves the reverse implication, and step [](#s4){.pf-ref} proves the forward
-implication.
-
+For every integer $k\ge1$ put $x_k=1/\sqrt{2\pi k}$, an element of $(0,1]$ with $1/x_k^{2}=2\pi k$.
+Then $\sin(1/x_k^{2})=0$ and $\cos(1/x_k^{2})=1$, so
+$$
+f'(x_k)=-\frac{2}{x_k}=-2\sqrt{2\pi k}\longrightarrow-\infty.
+$$
+A function continuous at a point is bounded on a neighbourhood of it, so $f'$ is not continuous at $0$, hence not continuous on $[0,1]$.
+By part (a), $f$ is not uniformly differentiable on $[0,1]$.
 :::
 
 :::
 
-::: pf-qed
-
-Step [](#s5){.pf-ref} is the required equivalence.
-
 :::
-
-:::
-
 :::

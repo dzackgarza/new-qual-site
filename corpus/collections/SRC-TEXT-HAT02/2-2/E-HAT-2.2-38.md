@@ -23,6 +23,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Recast the spliced sequence as the homology sequence of the mapping cone of the vertical chain map; exactness and the required minus sign follow directly.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Checked all three diagram chases: the composites vanish using the two exact rows and the three
+    commutative squares, and exactness at $B_n$, at $C_n\oplus D_n$ and at $E_n$ follows by the
+    stated decompositions, the minus sign on the second coordinate being what makes $cr-r'b$
+    vanish.
 ---
 
 ::: {.problem}

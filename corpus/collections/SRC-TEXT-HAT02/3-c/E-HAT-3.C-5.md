@@ -16,6 +16,20 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.C, Exercise 5; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof: the Eckmann--Hilton argument in the form the exercise asks for. Concatenation
+    $*$ and the pointwise product $\odot$ are compared through the unit homotopies, which gives
+    $[f*g]=[f\odot g]$ by gluing the two half-interval computations, and then $[g*f]=[f\odot g]$ by
+    the same computation with the other pair of unit homotopies; hence $[f*g]=[g*f]$. The
+    half-interval identities used are $(f*c_e)(t)=f(2t)$ and $(c_e*g)(t)=g(2t-1)$ on the two
+    halves, which are checked.
 ---
 
 ::: {.problem}

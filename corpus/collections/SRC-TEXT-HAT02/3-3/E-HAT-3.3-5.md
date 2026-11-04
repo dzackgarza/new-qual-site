@@ -23,6 +23,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 5; it matches the printed text. The card says 'nonempty manifolds', which the print leaves implicit.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both directions: product charts with the product orientation in one direction, and in the
+    other the restriction of the orientation system of $M\times N$ to $M\times\{y_0\}$, which is
+    the tensor of the system of $M$ with a fixed copy of $\ZZ$.
 ---
 
 ::: {.problem}

@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof checked at chain/skeletal/combinatorial level.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the explicit chain maps: the cone operators satisfy $\partial C_\pm+C_\pm\partial=i_\#$ on augmented chains, so $s_n=C_+-C_-$ is a chain map with $\partial s+s\partial=0$, and it induces the suspension isomorphism.
 ---
 
 ::: {.problem}

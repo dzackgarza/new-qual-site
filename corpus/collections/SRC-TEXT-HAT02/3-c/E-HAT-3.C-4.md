@@ -23,6 +23,20 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.C, Exercise 4; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof: $\mu\circ(p\times p)$ lifts uniquely to $\widetilde\mu$ because
+    $\widetilde X\times\widetilde X$ is simply connected, and the given unit homotopies lift
+    uniquely with the prescribed starting point, ending at the identity map. For the group case the
+    inversion lifts the same way and associativity follows from uniqueness of lifts: the two triple
+    products are lifts of the same map agreeing at $(\widetilde e,\widetilde e,\widetilde e)$. Read
+    at the level of the lifting arguments, which are stated rather than expanded.
 ---
 
 ::: {.problem}

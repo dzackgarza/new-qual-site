@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Inducted over the convex sets and used van Kampen; the triple-intersection hypothesis makes each successive overlap path connected.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the induction over the nested union $U_r$: each $X_i$ is convex, the triple intersections of the hypothesis are exactly what van Kampen needs at each stage, and $U_r$ is open and path connected throughout.
 ---
 
 ::: {.problem}

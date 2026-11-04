@@ -32,11 +32,11 @@ from pydantic import (
 from .diagnostics import Diagnostic, DiagnosticCode
 from .lamport import LAMPORT_CLASSES
 from .pandoc_batch import (
-    PARALLEL_WORKERS,
     Citations,
     PandocBatchError,
     PandocFailure,
     PandocServer,
+    parallel_workers,
     read_markdown_parallel,
 )
 from .tex import mark_definienda
@@ -71,9 +71,11 @@ class YearOnly(Strict):
 class TermOnly(Strict):
     """Season known, year not.
 
-    Not hypothetical: 20 make-me-a-qual records (all NUS) carry a real season
-    under the sentinel `year: 1970`. Without this case the season is lost, since
-    `AcademicTerm` demands a year and `YearOnly` demands one too.
+    No collection uses this case: the make-me-a-qual file it was written for
+    records its unknown years as `0` (191 rows, none of them beside a real
+    season) and carries `1970` only on the 20 NUS rows, every one with a real
+    season, so those dates are the academic term 1970 spring. The case stays
+    for a source that gives a season and no year at all.
     """
 
     kind: Literal["term"]
@@ -1243,7 +1245,7 @@ def parse_cards_with(
     prepared: list[tuple[Path, Card, str]] = []
     errors: list[Diagnostic] = []
     if len(paths) >= 1_000:
-        with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
+        with ProcessPoolExecutor(max_workers=parallel_workers()) as executor:
             source_results = list(
                 executor.map(_prepare_card_source, paths, chunksize=64)
             )
@@ -1300,7 +1302,7 @@ def parse_cards_with(
         pandoc, [source for _, _, source in processable], citations
     )
     if len(sources) >= 1_000:
-        with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
+        with ProcessPoolExecutor(max_workers=parallel_workers()) as executor:
             normalized = list(executor.map(_normalize_ast, sources, chunksize=64))
     else:
         normalized = [_normalize_ast(source) for source in sources]

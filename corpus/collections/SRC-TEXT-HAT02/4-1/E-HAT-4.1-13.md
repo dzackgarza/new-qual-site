@@ -14,121 +14,70 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    The card cited "Hatcher, Lemma 4.15 / Extension Lemma" for the homotopy extension property.
+    Hatcher's Section 4.1 has no Lemma 4.15: a search of the text for Lemmas 4.11 through 4.19
+    returns only Lemma 4.10. The citation is replaced by a reference to the property as Hatcher
+    states it for CW pairs in §4.1, with Proposition 0.16 named for the HEP itself.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-02
+  note: >-
+    Second correction to this card's citation, superseding the gloss left by the preceding event. The
+    preceding note correctly established that Section 4.1 has no Lemma 4.15, but the wording it put in
+    the statement, "the extension lemma (homotopy extension property for CW pairs)", still misidentified
+    the book's lemma: Hatcher's extension lemma is Lemma 4.7 (AT.txt:17363-17367, indexed at 27215 as
+    "extension lemma 348"), a criterion for extending a map A -> Y when the target's homotopy groups
+    vanish in the degrees of the relative cells, and the homotopy extension property is a different
+    result, Proposition 0.16 (AT.txt:926-928). The statement now quotes Lemma 4.7's content, and the
+    solution is that lemma applied once: A contractible makes every pi_k(A) vanish and A path-connected,
+    so id_A extends to r: X -> A, which is a retraction. The previous solution proved the same conclusion
+    by the homotopy extension property. That argument was correct -- target A, initial map the constant
+    map, hypothesis of Proposition 0.16 satisfied -- but it is a different tool from the one the exercise
+    names, and it was an expanded derivation of a standard consequence, so it is replaced rather than
+    kept alongside. It remains in the file's history at commit 78363c50b0. Not checked: nothing further
+    in the book; the two cited spans are the whole source basis of this correction.
+
 ---
 
 ::: {.exercise}
-Use the **Extension Lemma** (homotopy extension property for CW pairs) to show that a CW complex $X$ **retracts** onto any contractible subcomplex $A \subseteq X$.
+Use the **extension lemma** (Lemma 4.7: for a CW pair $(X,A)$, a map $f\colon A\to Y$ with $Y$ path-connected extends to a map $X\to Y$ provided $\pi_{n-1}(Y)=0$ for every $n$ such that $X-A$ has cells of dimension $n$) to show that a CW complex $X$ **retracts** onto any contractible subcomplex $A \subseteq X$.
+
 :::
 
 ::: {.solution}
+
 ::: pf
 
-::: pf-step
-The CW pair $(X, A)$ has the homotopy extension property with respect to every space $Y$.
+::: {.pf-step #vanishes}
+Every homotopy group of $A$ vanishes, and $A$ is path-connected.
 
 ::: pf-proof
-
-::: pf-step
-A subcomplex $A$ of a CW complex $X$ forms a **CW pair** $(X, A)$.
-:::
-
-::: pf-step
-By the **Homotopy Extension Property (HEP)** (Hatcher, Lemma 4.15 / Extension Lemma):
-For any CW pair $(X, A)$, the pair has the homotopy extension property with respect to every topological space $Y$.
-:::
-
-::: pf-step
-Specifically: Given a continuous map $f: X \to Y$ and a homotopy $h: A \times I \to Y$ starting at $f\restrict_A$ (i.e. $h(a, 0) = f(a)$ for all $a \in A$), there exists a continuous homotopy $H: X \times I \to Y$ such that:
-- $H(x, 0) = f(x)$ for all $x \in X$, and
-- $H(a, t) = h(a, t)$ for all $(a, t) \in A \times I$.
-:::
+Contractibility of $A$ gives a point $a_0\in A$ and a homotopy $h\colon A\times I\to A$ from $\operatorname{id}_A$ to the constant map at $a_0$. For a map $\alpha\colon S^k\to A$, the composite $h(\alpha(-),t)$ is a homotopy from $\alpha$ to the constant map at $a_0$, so every element of $\pi_k(A,a_0)$ is trivial, for every $k\ge0$. At $k=0$ this says that $A$ has one path component, that is, that $A$ is path-connected.
 
 :::
 
 :::
 
-::: pf-step
-There is a homotopy $\bar{h}: A \times I \to A$ from the constant map at a point $a_0 \in A$ to $\operatorname{id}_A$.
+::: {.pf-step #extends}
+$\operatorname{id}_A$ extends to a map $r\colon X\to A$.
 
 ::: pf-proof
-
-::: pf-step
-Let $A \subseteq X$ be a contractible subcomplex.
-:::
-
-::: pf-step
-By definition of contractibility, the identity map $\operatorname{id}_A: A \to A$ is homotopic to a constant map $c_{a_0}: A \to A$ (where $c_{a_0}(a) = a_0 \in A$).
-:::
-
-::: pf-step
-That is, there exists a continuous homotopy:
-$$h: A \times [0, 1] \longrightarrow A$$
-such that $h(a, 0) = a = \operatorname{id}_A(a)$ and $h(a, 1) = a_0$ for all $a \in A$.
-:::
-
-::: pf-step
-Reversing the time parameter $t \mapsto 1 - t$, we get a continuous homotopy:
-$$\bar{h}: A \times [0, 1] \longrightarrow A, \qquad \bar{h}(a, t) = h(a, 1 - t)$$
-satisfying $\bar{h}(a, 0) = a_0$ (constant map) and $\bar{h}(a, 1) = a = \operatorname{id}_A(a)$.
-:::
+Take the CW pair $(X,A)$, the map $f=\operatorname{id}_A\colon A\to A$ and the target $Y=A$ in Lemma 4.7. The target is path-connected by step [](#vanishes){.pf-ref}, and for every $n$ such that $X-A$ has cells of dimension $n$ one has $\pi_{n-1}(A)=0$ by the same step. The lemma's induction begins at the $0$-cells of $X-A$, where the hypothesis needed is exactly that $A\neq\emptyset$ be path-connected, so the hypothesis is met in every degree and $f$ extends.
 
 :::
 
 :::
 
-::: pf-step
-$\bar{h}$ extends to a homotopy $H: X \times I \to A$ starting at the constant map $x \mapsto a_0$.
+::: {.pf-step #retract}
+$r$ is a retraction of $X$ onto $A$.
 
 ::: pf-proof
-
-::: pf-step
-Set the target space to be $Y = A$.
-:::
-
-::: pf-step
-Define the initial map $f_0: X \to A$ to be the constant map:
-$$f_0(x) = a_0 \quad \text{for all } x \in X.$$
-:::
-
-::: pf-step
-Notice that the restriction of $f_0$ to $A$ matches the start of the homotopy $\bar{h}$:
-$$f_0\restrict_A(a) = a_0 = \bar{h}(a, 0) \quad \text{for all } a \in A.$$
-:::
-
-::: pf-step
-Since $(X, A)$ is a CW pair, by the **Homotopy Extension Property** (with target space $Y = A$), there exists a continuous homotopy:
-$$H: X \times [0, 1] \longrightarrow A$$
-such that:
-- $H(x, 0) = f_0(x) = a_0$ for all $x \in X$, and
-- $H(a, t) = \bar{h}(a, t)$ for all $a \in A, t \in [0, 1]$.
-:::
-
-:::
-
-:::
-
-::: pf-step
-$r(x) = H(x, 1)$ is a retraction of $X$ onto $A$.
-
-::: pf-proof
-
-::: pf-step
-Define the map $r: X \to A$ by evaluating $H$ at time $t = 1$:
-$$r(x) \coloneqq H(x, 1).$$
-:::
-
-::: pf-step
-Since $H$ is continuous and has image in $A$, $r: X \to A$ is a continuous map.
-:::
-
-::: pf-step
-For any point $a \in A$:
-$$r(a) = H(a, 1) = \bar{h}(a, 1) = \operatorname{id}_A(a) = a.$$
-:::
-
-::: pf-step
-Thus $r\restrict_A = \operatorname{id}_A$, which proves that $r: X \to A$ is a **retraction**.
-:::
+The map $r$ is continuous and extends $\operatorname{id}_A$, so $r(a)=a$ for every $a\in A$. A continuous map $X\to A$ whose restriction to $A$ is the identity of $A$ is by definition a retraction of $X$ onto $A$.
 
 :::
 

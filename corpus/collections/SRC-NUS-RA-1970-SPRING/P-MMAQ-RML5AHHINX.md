@@ -16,6 +16,16 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-corrected
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The only witness for this problem, make-me-a-qual Combined_Questions.yaml at
+    revision 6190e0e (sha256 63845aa4..., the file sources/mmaq-source.yaml
+    records), prints part (a) with the interval "(i1, 1)", an evident garble of
+    "(-1, 1)", and closes the hint with an unmatched parenthesis. The card reads
+    the interval (-1, 1) and writes the hint as a parenthetical sentence. No
+    exam paper for the sitting is retained.
 ---
 
 ::: {.problem}

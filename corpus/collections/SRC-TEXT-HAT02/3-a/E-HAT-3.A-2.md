@@ -21,11 +21,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.A, Exercise 2; it matches the printed text. The card originally ended "... torsionfree if $\operatorname{Tor}(A,B)=0$ for all $B$" where the print says "iff"; the missing direction is restored.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: $\QQ$ is flat, so the sequence of $0\to\ZZ\to\QQ\to\QQ/\ZZ\to0$ gives
+    $\operatorname{Tor}(A,\QQ/\ZZ)$ as the kernel of the localization $A\to A\otimes\QQ$, which is
+    exactly the torsion subgroup. The converse of the restored equivalence is the preceding
+    exercise's vanishing statement, now cited.
 ---
 
 ::: {.problem}
 Show that $\operatorname{Tor}(A, \QQ/\ZZ)$ is isomorphic to the torsion subgroup of $A$.
-Deduce that $A$ is torsionfree if $\operatorname{Tor}(A, B) = 0$ for all $B$.
+Deduce that $A$ is torsionfree iff $\operatorname{Tor}(A, B) = 0$ for all $B$.
 :::
 
 ::: {.solution}
@@ -53,5 +65,5 @@ Consequently, if $\operatorname{Tor}(A,B)=0$ for every abelian group $B$, then i
 $$
 \operatorname{Tor}(A,\QQ/\ZZ)=0,
 $$
-so $T(A)=0$ and $A$ is torsionfree.
+so $T(A)=0$ and $A$ is torsionfree. Conversely a torsionfree $A$ has $\operatorname{Tor}(A,B)=0$ for every $B$, by Exercise 5, so the two conditions are equivalent.
 :::

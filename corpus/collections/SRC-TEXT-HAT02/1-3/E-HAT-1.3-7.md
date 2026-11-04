@@ -23,6 +23,28 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used the two path components of the topologist sine curve to confine each loop to a contractible finite truncation, then ruled out a lift by factoring it through the quotient and obtaining an impossible section of R to S1.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims and the argument: every path meets only finitely many oscillation excursions, separated by uniform continuity, so no lift of $f$ to $\RR$ can exist. Not every line checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. The argument is correct in all its steps. The truncation lemma is the
+    substantive one and is proved properly: a path leaving the graph must come back through the
+    attachment point of the added arc, so each excursion has both endpoints at that point; uniform
+    continuity bounds below the parameter length of any excursion reaching horizontal coordinate
+    below `x_b/2`; finitely many disjoint intervals of length at least `delta`; and on each of the
+    finitely many remaining closed pieces the positive coordinate attains a positive minimum. The
+    contractible set of step 2 should be read as the star of arcs about the attachment point — the
+    vertical segment, the added arc, and the full segment of the graph spanned by the loop's image,
+    not only the part with `x >= epsilon` — and read that way it is a finite tree containing the
+    loop, which is what the argument needs. The non-lifting half is right and uses exactly the
+    right tools: the lift is constant on the collapsed segment because a connected set mapping into
+    a discrete fibre is a point, so it factors through the quotient, which would give a continuous
+    section of `R -> S^1`, and no such section exists since `pi_1(R) = 0`. No correction was needed.
 ---
 
 ::: {.problem}

@@ -16,6 +16,19 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 2.2, Exercise 3.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both halves: $f(x)\ne x$ gives a homotopy from $f$ to the antipodal map and $f(x)\ne -x$
+    one to the identity, each contradicting $\deg f=0$; the norm computation
+    $(1-t)\norm{f(x)}=t\norm{x}$ forces $t=1/2$ and then $f(x)=x$; and the vector-field part
+    normalizes $F$ on $D^n$, its boundary restriction is null-homotopic and so of degree zero on
+    $S^{n-1}$, and the two halves give the outward and inward points.
 ---
 
 ::: {.problem}

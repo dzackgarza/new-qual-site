@@ -16,6 +16,18 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 2; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument through the orientation double cover: the cover of $M-\{x_0\}$ is the
+    restriction, so it is enough to know whether removing at most two points disconnects a
+    connected $n$-manifold for $n\ge2$, which it does not. Both cases (orientable and not) are
+    carried through by that step.
 ---
 
 ::: {.problem}

@@ -22,6 +22,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.2, Exercise 7; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both sides: in $\ZZ_2[\alpha]/(\alpha^4)$ the degree-one class has nonzero cube, while in
+    the wedge $\RP^2\vee S^3$ the class $x$ comes from $\RP^2$, whose $H^3(\ZZ_2)$ vanishes, and
+    products across summands vanish, so $x^3=0$.
 ---
 
 ::: {.problem}

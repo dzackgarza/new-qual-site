@@ -23,6 +23,23 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Identified the universal abelian cover with the commutator-subgroup cover and described the two- and three-generator cases as integer lattice Cayley graphs.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: abelian normal covers are those whose subgroup contains the commutator subgroup, so the cover corresponding to $[G,G]$ is universal among them. Not every line checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct throughout. The translation between normality, abelian deck group
+    and `[G,G] <= H` is stated in the right direction and used both ways: existence and universality
+    of the cover for `[G,G]` come from the factorization criterion `K <= H`, and uniqueness from
+    applying that criterion to a universal abelian cover `U` with subgroup `K`, which gives
+    `[G,G] <= K` by abelianness and `K <= [G,G]` by universality. The two explicit models are right:
+    the cover for `[F(a,b),F(a,b)]` is the Cayley graph of `Z^2`, the square lattice with `a` and `b`
+    edges in the two coordinate directions, and for three generators the cubic lattice; in each case
+    the deck group is the translation group, matching `G_ab`. No correction was needed.
 ---
 
 ::: {.problem}

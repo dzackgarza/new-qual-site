@@ -15,6 +15,24 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.2, Exercise 14; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the whole argument. The top-cell step identifies $\RP^{2k}/\RP^{2k-1}$ with
+    $\CP^k/\CP^{k-1}$ through the open disk of points with positive last coordinate, and the same
+    for $\CP^{2k}/\CP^{2k-1}\to\HP^k/\HP^{k-1}$. The surjectivity of $q^*$ in even degrees follows
+    from $q^*x=\gamma$ and $\gamma^k\ne0$, the latter through reduction mod $2$. The cell structure
+    of $X$ is read cell by cell, including $d(e^{2n+1})=0$ because the composite
+    $S^{2n}\to\RP^{2n}\to\RP^{2n}/\RP^{2n-1}\to\CP^n/\CP^{n-1}$ has degree $1+(-1)^{2n+1}$; the two
+    ring statements then follow by detecting classes with $i^*$ and $j^*$ and by matching a basis.
+    The quaternionic case is the same with $\CP^{2k}$ in place of $\RP^{2k}$ and the cells of
+    $\CP^\infty$ attached in dimensions at least $4n+2$, where all cells are even and all
+    coboundaries vanish.
 ---
 
 ::: {.problem}

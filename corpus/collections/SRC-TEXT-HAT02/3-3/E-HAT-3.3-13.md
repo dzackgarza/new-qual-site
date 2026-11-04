@@ -24,11 +24,23 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Replaced the invalid homological argument with a correct proof.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 13; it matches the printed text. The printed bracketed hint "[Apply the previous problem ...]" was missing and is restored.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: $r^*$ is injective on $H^1$ and lands in an isotropic subspace because $H^2$
+    of a surface with boundary vanishes; the cup-product form on $H^1(M_g;F)$ is nondegenerate and
+    alternating, so isotropy bounds the dimension by $g$ and $2h\le g$.
 ---
 
 ::: {.problem}
 Let $M_h' \subset M_g$ be a compact subsurface of genus $h$ with one boundary circle, so $M_h'$ is homeomorphic to $M_h$ with an open disk removed.
 Show there is no retraction $M_g \to M_h'$ if $h > g/2$.
+[Apply the previous problem, using the fact that $M_g - M_h'$ has genus $g - h$.]
 :::
 
 ::: {.solution}

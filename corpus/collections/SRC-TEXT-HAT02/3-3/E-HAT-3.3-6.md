@@ -24,6 +24,21 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Replaced the invalid homological argument with a correct proof.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 6; it matches the printed text. The printed bracketed sentence "[Euler characteristics may help in the exceptional case.]" was missing and is restored.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both parts. For (a): excision identifies $H_j(M_i,N_i)$ with $H_j(D^n,S^{n-1})$,
+    Mayer-Vietoris gives the direct sum below degree $n-1$, and the rank of $H_{n-1}$ is settled by
+    counting how many of the two boundary spheres are rationally essential, which happens exactly
+    for the nonorientable summands; Corollary 3.28 then supplies the torsion, so one $\ZZ_2$ is
+    replaced by $\ZZ$ precisely when both summands are nonorientable. For (b) the Euler
+    characteristic count $\chi(N_i)=\chi(M_i)-(-1)^n$ with additivity over $S^{n-1}$ gives
+    $\chi(M_1)+\chi(M_2)-\chi(S^n)$.
 ---
 
 ::: {.problem}
@@ -31,6 +46,7 @@ Given two disjoint connected $n$-manifolds $M_1$ and $M_2$, a connected $n$-mani
 (Assume that each $B_i$ embeds nicely in a larger ball in $M_i$.)
 
 (a) Show that if $M_1$ and $M_2$ are closed then there are isomorphisms $H_i(M_1 \sharp M_2; \ZZ) \approx H_i(M_1; \ZZ) \oplus H_i(M_2; \ZZ)$ for $0 < i < n$, with one exception: If both $M_1$ and $M_2$ are nonorientable, then $H_{n-1}(M_1 \sharp M_2; \ZZ)$ is obtained from $H_{n-1}(M_1; \ZZ) \oplus H_{n-1}(M_2; \ZZ)$ by replacing one of the two $\ZZ_2$ summands by a $\ZZ$ summand.
+[Euler characteristics may help in the exceptional case.]
 
 (b) Show that $\chi(M_1 \sharp M_2) = \chi(M_1) + \chi(M_2) - \chi(S^n)$ if $M_1$ and $M_2$ are closed.
 :::

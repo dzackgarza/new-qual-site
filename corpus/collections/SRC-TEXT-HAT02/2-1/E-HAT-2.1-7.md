@@ -16,6 +16,15 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 2.1, Exercise 7.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the join description and the pairings: collapsing each edge of the join gives $S^1*S^1\cong S^3$, and the affine face pairings preserve vertex order, so the quotient carries a $\Delta$-complex structure with one 3-simplex.
 ---
 
 ::: {.problem}

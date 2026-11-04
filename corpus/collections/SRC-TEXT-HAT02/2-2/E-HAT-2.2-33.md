@@ -15,6 +15,20 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 2.2, Exercise 33.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the induction: $Y=A_1\cup\cdots\cup A_{n-1}$ and $Z=Y\cap A_n$ have vanishing reduced
+    homology above $n-2$, by the inductive hypothesis applied to their own covers, and the
+    Mayer-Vietoris segment then forces $\tilde H_i(X)=0$ for $i\ge n-1$. Read the sharpness
+    example: the $n$ open sets $\lambda_j>0$ on $\partial\Delta^{n-1}$ cover it, their total
+    intersection is empty on the boundary, each proper intersection retracts to a barycenter inside
+    the boundary, and $\tilde H_{n-2}(S^{n-2})=\ZZ$.
 ---
 
 ::: {.problem}

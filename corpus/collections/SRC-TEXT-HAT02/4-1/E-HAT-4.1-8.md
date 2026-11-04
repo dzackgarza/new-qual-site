@@ -21,7 +21,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
-
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct, in Hatcher's convention where a relative path has `u(0) = x_0` and
+    `u(1) in A` and `partial[u] = [u(1)]`. At `pi_1(X,A,x_0)`: `[u]` is in the kernel exactly when `u(1)`
+    lies in the component of `x_0` in `A`, and then a path `v` in `A` from `u(1)` back to `x_0` turns `u`
+    into the loop `uv`, whose relative class is that of `u`; so the kernel is the image of
+    `pi_1(X,x_0)`. At `pi_0(A,x_0)`: a component lies in the image of `partial` exactly when it is joined
+    to `x_0` by a path in `X`, i.e. exactly when it maps to the distinguished component of `X`. Exactness
+    as pointed sets follows. No correction was needed.
 ---
 
 ::: {.problem}

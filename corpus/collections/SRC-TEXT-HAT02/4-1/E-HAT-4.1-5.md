@@ -21,7 +21,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
-
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct, both directions. A relative path `u` with `u(0) in A`, `u(1) = x_0` and
+    a path `v` in `A` from `x_0` to `u(0)` give the loop `vu`, and the left coset `H[vu]` is well
+    defined because another choice `v'` differs by the loop `v'v^{-1}` in `A`, i.e. by an element of
+    `H = i_* pi_1(A,x_0)`. Conversely a loop at `x_0` is a relative path with initial point in `A`, and
+    two loops give the same relative class exactly when `[alpha'][alpha]^{-1} in H`, i.e. exactly when
+    the left cosets agree. The bijection is with the *left* cosets `H \ pi_1(X,x_0)`, the side the card
+    displays, and it is natural in the pair.
 ---
 
 ::: {.problem}

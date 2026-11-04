@@ -21,6 +21,20 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.B, Exercise 1; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read and rechecked the formulas: with $H_p(\RP^r)$ free on $F_r$ and $\ZZ_2$ on $T_r$, Künneth
+    gives $\ZZ^{f_i}$ for the free part and $(\ZZ_2)^{t_i}$ where the three tensor contributions
+    and the shifted Tor contribution are counted separately; the integral cohomology then shifts
+    the torsion count by one through $\operatorname{Ext}(\ZZ_2,\ZZ)=\ZZ_2$ and
+    $\operatorname{Hom}(\ZZ_2,\ZZ)=0$, and over $\ZZ_2$ every differential vanishes so both
+    theories are $(\ZZ_2)^{N_i}$ with $N_i$ the number of product cells of total dimension $i$.
 ---
 
 ::: {.problem}

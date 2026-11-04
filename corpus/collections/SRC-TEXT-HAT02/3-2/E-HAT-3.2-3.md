@@ -22,6 +22,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.2, Exercise 3; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both parts: over $\ZZ_2$, $f^*(\alpha_m)=\alpha_n$ forces
+    $0=f^*(\alpha_m^{m+1})=\alpha_n^{m+1}\ne0$ when $m+1\le n$, and for $\CP^n\to\CP^m$ the same
+    computation gives $d^{m+1}\beta_n^{m+1}=0$ in a torsion-free group, so $d=0$; the Borsuk-Ulam
+    half handles $n=0$ and $n=1$ separately and otherwise uses the equivariant $g$, whose induced
+    map on $\RP^n\to\RP^{n-1}$ is nontrivial on $H^1(\ZZ_2)$.
 ---
 
 ::: {.problem}

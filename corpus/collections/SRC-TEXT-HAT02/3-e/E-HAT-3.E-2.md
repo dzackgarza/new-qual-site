@@ -21,6 +21,33 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    All four parts read and checked. (a) is right: for a homotopy equivalence $h$ one has
+    $h^*x'=ax$, $h^*y'=ay$ by naturality of the Bockstein, $h^*z'=\varepsilon z$ with
+    $\varepsilon=\pm1$ since $h$ has degree $\pm1$ on integral top cohomology, so $a^nt=\varepsilon t'$
+    and the two classes agree in $\ZZ_m^*/(\pm(\ZZ_m^*)^n)$. Added: the same computation shows
+    $\tau(L)$ is independent of the chosen generator $x$, which the card used without saying — an
+    (b) is right in all four items. The local-degree bookkeeping is about the *angular* extension
+    $(r,\theta)\mapsto(r,k_j\theta)$ and is now stated in those terms: in the oriented frame
+    $(\partial_r,r^{-1}\partial_\theta)$ the derivative is $\operatorname{diag}(1,k_j)$, so the local degree is
+    $\operatorname{sgn}(k_j)$ at each of the $|k_j|$ preimages. An earlier version of *this note* described that
+    argument through the holomorphic power $z\mapsto z^{k_j}$; that was wrong, since $z\mapsto z^k$ is conformal on
+    $\CC^\times$ with local degree $+1$ for every $k\ne0$, and it is a different map when $k<0$. What is **not**
+    certified, and is a named input from the section: that $\widetilde f$ has this derivative and this local degree
+    at all, and the degree formula $\deg\widetilde f=\prod_j k_j$ itself, which is the standard computation for
+    self-maps of $S^{2n-1}$. `proofs/cards/LensDegree.lean` certifies only the arithmetic:
+    $\det\operatorname{diag}(1,k)=k$, the orientation criterion read off it, and $|k|\operatorname{sgn}(k)=k$ with the
+    product over the coordinates, and nothing about the geometric map. The degree of $f$ comes from the covering
+    square $p'\circ\widetilde f=f\circ p$ with both coverings of degree $m$, giving $\deg f=\deg\widetilde f$; the
+    earlier version of the solution wrote $\deg\widetilde f=m\deg f$, false for $m>1$, and the earlier version of
+    this note repeated it.
+    rather than an equation with $m$ on both sides. (c) and (d) are right, including the use of
+    $L_m(1,\dots,1)$ and of $k_j\equiv\ell_j^{-1}$ to get $\tau(L)=(\prod\ell_j)^{-1}\tau(L_0)$; the
+    cancellation is legitimate because $\tau$ takes values in a group. Nothing is left uncited
+    except the standard facts on lens spaces quoted from the section.
 ---
 
 ::: {.problem}
@@ -48,6 +75,7 @@ Let $x\in H^1(L;\ZZ_m)$ be a generator, put $y=\beta(x)$, and let $z\in H^{2n-1}
 $$
 xy^{n-1}=tz.
 $$
+Replacing $x$ by $ax$ with $a\in\ZZ_m^*$ multiplies $y$ by $a$ and $xy^{n-1}$ by $a^n$, hence multiplies $t$ by $a^n$ and leaves the class of $t$ in $\ZZ_m^*/\bigl(\pm(\ZZ_m^*)^n\bigr)$ unchanged. So $\tau(L)$ does not depend on the choice of generator, which is why the quotient by $n$th powers is the right one; the argument below repeats this computation for a homotopy equivalence.
 
 ::: pf
 
@@ -104,6 +132,7 @@ For a regular value with every coordinate nonzero, the $j$th angular coordinate 
 $$
 \deg\widetilde f=k_1\cdots k_n.
 $$
+The bookkeeping deserves one clause, and it is about the *angular* extension $(r,\theta)\mapsto(r,k_j\theta)$, not about the holomorphic power $z\mapsto z^{k_j}$: in the oriented frame $(\partial_r,r^{-1}\partial_\theta)$ of the punctured plane the derivative is $\operatorname{diag}(1,k_j)$, with determinant $k_j$, so the $j$th coordinate map has local degree $\operatorname{sgn}(k_j)$ at each of its preimages, and there are $|k_j|$ of them, giving $|k_j|\operatorname{sgn}(k_j)=k_j$. The holomorphic power is a *different* map when $k_j<0$ — it also changes the radius, and its local degree is $+1$ everywhere, because $z\mapsto z^{k_j}$ is conformal on $\CC^\times$ — so it cannot be used here; only the product of the $n$ signs and the $n$ preimage counts gives $k_1\cdots k_n$. The determinant computation behind the sign, $\det\operatorname{diag}(1,k)=k$ together with $|k|\operatorname{sgn}(k)=k$, is certified in `proofs/cards/LensDegree.lean`.
 
 Let the generator of the $\ZZ_m$ action defining $L$ multiply the $j$th coordinate by
 $$
@@ -123,14 +152,19 @@ f:L\to L'.
 $$
 The induced map on $\pi_1\cong\ZZ_m$ is therefore the identity, hence an isomorphism, and so is the induced map on $H^1(-;\ZZ_m)$.
 
-Finally the covering projections have degree $m$ and fit into the commutative square with $\widetilde f$ and $f$. Multiplicativity of degree gives
+Finally, the covering projections $p:S^{2n-1}\to L$ and $p':S^{2n-1}\to L'$ both have degree $m$, and they fit into the commutative square $p'\circ\widetilde f=f\circ p$. Multiplicativity of degree applied to the two composites of that square gives, on the one hand
 $$
-m\deg f=(\deg\widetilde f)m,
+\deg(p'\circ\widetilde f)=\deg(p')\deg(\widetilde f)=m\deg\widetilde f
 $$
-so
+and on the other
 $$
-\deg f=k_1\cdots k_n.
+\deg(f\circ p)=\deg(f)\deg(p)=m\deg f,
 $$
+and the two composites are the same map, so $m\deg\widetilde f=m\deg f$. Since $m\ne0$,
+$$
+\deg f=\deg\widetilde f=k_1\cdots k_n.
+$$
+Note that $\widetilde f\ne f\circ p$: that composite has codomain $L'$, not $S^{2n-1}$, and the square is the only relation between the three maps.
 
 :::
 

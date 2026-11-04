@@ -15,6 +15,18 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.2, Exercise 6; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the reduction: on a coordinate line $\CP^1\subset\CP^n$ the map is $z\mapsto z^d$ of
+    degree $d$, so $f^*(x)$ restricts to $dx$ and hence equals $dx$ because
+    $H^2(\CP^n)\to H^2(\CP^1)$ is an isomorphism; multiplicativity then gives $f^*(x^k)=d^kx^k$,
+    consistent with the degree $d^n$ of $f$ on the top class.
 ---
 
 ::: {.problem}

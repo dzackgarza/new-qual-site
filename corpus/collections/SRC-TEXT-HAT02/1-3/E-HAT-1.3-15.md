@@ -15,6 +15,15 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.3, Exercise 15.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the two inclusions: the restriction is a connected cover of $A$; its subgroup lies in $\ker i_*$ because $\widetilde X$ is simply connected; and homotopy lifting puts every class of $\ker i_*$ in the image.
 ---
 
 ::: {.problem}

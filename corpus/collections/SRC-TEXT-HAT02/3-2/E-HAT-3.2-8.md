@@ -22,6 +22,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.2, Exercise 8; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both coefficient computations: integrally both spaces are $\ZZ_p$ in degree $3$ and $\ZZ$
+    in degree $4$, and every product of positive-dimensional classes vanishes for degree reasons,
+    so the rings agree; over $\ZZ_p$ both are $\ZZ_p$ in degrees $2,3,4$, but in $X$ the class $x$
+    restricts to the generator of $H^2(\CP^2)$, so $x^2\ne0$, while in $Y$ the class $y$ is
+    supported on the Moore summand and $y^2=0$.
 ---
 
 ::: {.problem}

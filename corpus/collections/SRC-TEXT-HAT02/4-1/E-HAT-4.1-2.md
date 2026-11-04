@@ -21,7 +21,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
-
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct, and the basepoint bookkeeping is stated rather than hidden: a homotopy
+    `psi phi ~ id_X` gives a path `eta` from `x_0` to `psi phi (x_0)`, naturality of homotopy groups
+    under a homotopy gives `beta_eta (psi phi)_* = id`, and `phi psi ~ id_Y` similarly makes
+    `phi_* psi_*` the identity after the corresponding change of basepoint. So `phi_*` is invertible once
+    the canonical basepoint isomorphisms are composed in, which is the claim; the `n = 0` remark about
+    path components is right as well.
 ---
 
 ::: {.problem}

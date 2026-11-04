@@ -1,12 +1,20 @@
-"""One build-scoped Pandoc process with independent batched conversions."""
+"""One build-scoped Pandoc process with independent batched conversions.
+
+Fan-out of the corpus-wide pools comes from :func:`parallel_workers`: bounded to
+``PARALLEL_WORKERS_FLOOR``..``PARALLEL_WORKERS_CEILING``, reduced by the load the
+machine already carries, and overridable for a gate run with the environment
+variable ``QUALC_PARALLEL_WORKERS``.
+"""
 
 from __future__ import annotations
 
 import base64
 import fcntl
 import hashlib
+import http.client
 import io
 import json
+import math
 import os
 import platform
 import subprocess
@@ -23,14 +31,111 @@ from typing import Self
 import psutil
 
 BATCH_SIZE = 256
-PARALLEL_WORKERS = min(8, os.cpu_count() or 1)
+#: Fan-out of the corpus-wide pools. Bounded above because each worker is a
+#: separate OS process (or thread) driving its own work, and issue #100 records a
+#: load average of 29 on 12 cores when eight were used on a loaded machine.
+PARALLEL_WORKERS_CEILING = 8
+PARALLEL_WORKERS_FLOOR = 1
+#: Cores left for everything else on the machine, including the Pandoc servers.
+PARALLEL_LOAD_RESERVE_CORES = 1.0
+#: Explicit override, e.g. `QUALC_PARALLEL_WORKERS=2`. Documented here and in
+#: `parallel_workers`; an unparsable or out-of-range value is an error rather
+#: than a silent fallback, because a typo should not quietly change the fan-out.
+PARALLEL_WORKERS_ENV = "QUALC_PARALLEL_WORKERS"
 SERVER_START_ATTEMPTS = 500
 SERVER_START_INTERVAL_SECONDS = 0.01
-SERVER_REQUEST_TIMEOUT_SECONDS = 60
+# `pandoc server --timeout` is a deadline on ONE REQUEST, not an idle timeout:
+# a request that outlives it is answered with an empty 503 and the server stays
+# up, ready for the next one. Verified against the pinned Pandoc 3.10.2 here —
+# a server started with `--timeout 2` survived a 36 s idle gap, returned 503
+# after exactly 2.0 s for a request that needed longer, and served the next
+# request normally. A loaded machine can push a 256-document batch past 30 s
+# (issue #100 records a load average of 29 on 12 cores), which is why the
+# deadline is generous and the client's timeout is longer still: the client must
+# outlast the server so that a too-slow batch arrives as the 503 `_request` can
+# recover from, rather than as a bare socket timeout that says nothing.
+SERVER_REQUEST_DEADLINE_SECONDS = 300
+SERVER_REQUEST_TIMEOUT_SECONDS = SERVER_REQUEST_DEADLINE_SECONDS + 60
+HTTP_SERVICE_UNAVAILABLE = 503
 
 
 class PandocBatchError(RuntimeError):
     """The persistent Pandoc boundary failed or returned an invalid response."""
+
+
+def _describe_transport_failure(error: BaseException, deadline_seconds: int) -> str:
+    """Say what was seen, and only then what it might mean.
+
+    An empty 503 is the server's own report that the request outlived its
+    deadline — that is read off the protocol, and the pinned Pandoc 3.10.2 was
+    observed doing exactly this. Every other transport error here is only
+    *consistent* with an expired deadline: a truncated response, a reset
+    connection or unparsable JSON can equally come from a server that died, ran
+    out of memory or answered something malformed. None of them proves the
+    deadline expired, so the message reports the observed failure first and
+    marks the inference as such.
+    """
+    observed = f"{type(error).__name__}: {error}"
+    if isinstance(error, urllib.error.HTTPError) and error.code == HTTP_SERVICE_UNAVAILABLE:
+        return f"the server answered HTTP 503 {error.reason!r}, which is how it reports that a request outlived its {deadline_seconds}s deadline ({observed})"
+    return (
+        f"{observed}. This does not by itself establish why: a {deadline_seconds}s per-request deadline "
+        "is one possible cause, and a server that exited, ran out of memory or answered malformed data "
+        "would look the same to this client"
+    )
+
+
+def _one_minute_load() -> float | None:
+    """The 1-minute load average, or None where the platform does not report one."""
+    getloadavg = getattr(os, "getloadavg", None)
+    if getloadavg is None:
+        return None
+    try:
+        return float(getloadavg()[0])
+    except OSError:  # pragma: no cover - platform-dependent
+        return None
+
+
+def parallel_workers(load: float | None = None, cpus: int | None = None) -> int:
+    """How many pools may run at once: bounded, resource-aware, and overridable.
+
+    The explicit override is the environment variable
+    ``QUALC_PARALLEL_WORKERS``, an integer in ``PARALLEL_WORKERS_FLOOR``..
+    ``PARALLEL_WORKERS_CEILING``. It wins over everything and is validated:
+    a value that does not parse, or lies outside the bounds, raises
+    ``PandocBatchError`` instead of being ignored.
+
+    Without an override the count is what the machine can actually take: the CPU
+    count, reduced by the work already runnable (the 1-minute load average,
+    rounded up) and by ``PARALLEL_LOAD_RESERVE_CORES``, then clamped to the
+    bounds. On an idle 12-core machine that is 8; on that machine at load 29 it
+    is 1, which is the case issue #100 recorded. Where the platform reports no
+    load average the count falls back to the CPU bound alone, and the result is
+    never below ``PARALLEL_WORKERS_FLOOR`` nor above ``PARALLEL_WORKERS_CEILING``.
+    """
+    override = os.environ.get(PARALLEL_WORKERS_ENV, "").strip()
+    if override:
+        try:
+            requested = int(override)
+        except ValueError:
+            raise PandocBatchError(
+                f"{PARALLEL_WORKERS_ENV}={override!r} is not an integer; it must be "
+                f"{PARALLEL_WORKERS_FLOOR}..{PARALLEL_WORKERS_CEILING}"
+            ) from None
+        if not PARALLEL_WORKERS_FLOOR <= requested <= PARALLEL_WORKERS_CEILING:
+            raise PandocBatchError(
+                f"{PARALLEL_WORKERS_ENV}={requested} is outside "
+                f"{PARALLEL_WORKERS_FLOOR}..{PARALLEL_WORKERS_CEILING}"
+            )
+        return requested
+    cores = cpus if cpus is not None else (os.cpu_count() or 1)
+    cores = max(PARALLEL_WORKERS_FLOOR, cores)
+    if load is None:
+        load = _one_minute_load()
+    if load is None:
+        return max(PARALLEL_WORKERS_FLOOR, min(PARALLEL_WORKERS_CEILING, cores))
+    spare = cores - math.ceil(load) - PARALLEL_LOAD_RESERVE_CORES
+    return max(PARALLEL_WORKERS_FLOOR, min(PARALLEL_WORKERS_CEILING, int(spare)))
 
 
 @dataclass(frozen=True)
@@ -109,7 +214,7 @@ def read_markdown_parallel(
 ) -> list[PandocResult]:
     if not texts:
         return []
-    workers = min(PARALLEL_WORKERS, len(texts))
+    workers = min(parallel_workers(), len(texts))
     partitions = [texts[offset::workers] for offset in range(workers)]
     with ThreadPoolExecutor(max_workers=workers) as executor:
         results = list(
@@ -129,7 +234,7 @@ def write_markdown_parallel(
 ) -> list[PandocResult]:
     if not documents:
         return []
-    workers = min(PARALLEL_WORKERS, len(documents))
+    workers = min(parallel_workers(), len(documents))
     partitions = [documents[offset::workers] for offset in range(workers)]
     with ThreadPoolExecutor(max_workers=workers) as executor:
         results = list(
@@ -147,7 +252,7 @@ def write_html_parallel(
 ) -> list[PandocResult]:
     if not documents:
         return []
-    workers = min(PARALLEL_WORKERS, len(documents))
+    workers = min(parallel_workers(), len(documents))
     partitions = [documents[offset::workers] for offset in range(workers)]
     with ThreadPoolExecutor(max_workers=workers) as executor:
         results = list(executor.map(_write_html_partition, partitions))
@@ -218,7 +323,7 @@ class PandocServer:
         # port chosen here and released for the server to bind can be handed
         # to a concurrent build in between.
         process = subprocess.Popen(
-            [pandoc, "server", "--port", "0", "--timeout", "30"],
+            [pandoc, "server", "--port", "0", "--timeout", str(SERVER_REQUEST_DEADLINE_SECONDS)],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             text=True,
@@ -345,12 +450,43 @@ class PandocServer:
     def _convert(self, requests: list[dict[str, object]]) -> list[PandocResult]:
         results: list[PandocResult] = []
         for offset in range(0, len(requests), BATCH_SIZE):
-            results.extend(self._request(requests[offset : offset + BATCH_SIZE]))
+            results.extend(self._request(requests[offset : offset + BATCH_SIZE], offset))
         if len(results) != len(requests):
             raise PandocBatchError(f"pandoc batch returned {len(results)} results for {len(requests)} requests")
         return results
 
-    def _request(self, requests: list[dict[str, object]]) -> list[PandocResult]:
+    def _request(self, requests: list[dict[str, object]], offset: int = 0) -> list[PandocResult]:
+        """Convert one batch, halving it when the server abandons the request.
+
+        A request that outlives the server's deadline is abandoned while the
+        server stays healthy, and it does so in more than one shape: an empty
+        503, a response truncated in flight (``IncompleteRead``), a mangled
+        status line, a reset connection. All of them mean the same thing — this
+        request was too long — so the batch is retried as two halves, in order,
+        until every piece fits. The recursion ends at a single document: if one
+        document alone cannot be converted inside the deadline, that is a real
+        failure and it is raised with the last transport error attached, never
+        retried away or swallowed.
+        """
+        try:
+            return self._post(requests)
+        except urllib.error.HTTPError as error:
+            if error.code != HTTP_SERVICE_UNAVAILABLE:
+                raise PandocBatchError(
+                    f"pandoc server answered HTTP {error.code} for a batch of {len(requests)} requests starting at {offset}"
+                ) from error
+            abandonment: BaseException = error
+        except (http.client.HTTPException, OSError, json.JSONDecodeError) as error:
+            abandonment = error
+        if len(requests) > 1:
+            middle = len(requests) // 2
+            return self._request(requests[:middle], offset) + self._request(requests[middle:], offset + middle)
+        raise PandocBatchError(
+            f"request {offset} could not be converted on its own, so splitting the batch cannot help. "
+            f"Observed: {_describe_transport_failure(abandonment, SERVER_REQUEST_DEADLINE_SECONDS)}"
+        ) from abandonment
+
+    def _post(self, requests: list[dict[str, object]]) -> list[PandocResult]:
         request = urllib.request.Request(
             f"http://127.0.0.1:{self._require_port()}/batch",
             data=json.dumps(requests).encode(),

@@ -21,6 +21,14 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-10
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    The card's statement omitted the bracketed hint the book prints at PDF page 49, printed p.30: "[Hint: Use the dyadic expansion of an integer and the fact that 2k+1 − 1 = 1 + 2 + 22 + · · · + 2k .]"
+    A completeness audit of the collection against the book flagged the omission; the hint
+    is restored verbatim from the print. The mathematics of the statement is unchanged.
+
 ---
 
 ::: {.exercise}
@@ -43,6 +51,7 @@ $$
 =\frac{z}{1-z}.
 $$
 Justify any change in the order of summation.
+[Hint: Use the dyadic expansion of an integer and the fact that $2^{k+1}-1=1+2+2^2+\cdots+2^k$.]
 :::
 
 ::: {.solution}

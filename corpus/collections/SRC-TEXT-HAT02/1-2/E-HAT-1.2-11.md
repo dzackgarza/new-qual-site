@@ -27,6 +27,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Derived the HNN-type presentation by adjoining the mapping-torus circle and imposing one conjugacy relation for each free generator.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the cell structure of the mapping torus and the two attaching relations $t a t^{-1}=f_*(a)$, $t b t^{-1}=f_*(b)$ read off the cylinder boundaries.
 ---
 
 ::: {.problem}

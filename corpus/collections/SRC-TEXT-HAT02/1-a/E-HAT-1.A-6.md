@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used the square-lattice cover for ker(F2 -> Z2), chose a spanning tree of all horizontal edges plus the vertical axis, and read the non-tree-edge loops as a free basis.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the covering graph: the kernel of $F\to\ZZ^2$ corresponds to the square lattice, whose squares give the free generators $aba^{-1}b^{-1}$ and its conjugates.
 ---
 
 ::: {.problem}

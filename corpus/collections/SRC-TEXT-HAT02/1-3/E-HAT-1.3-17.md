@@ -15,6 +15,15 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.3, Exercise 17.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the two steps: a presentation realizes $G$ as the fundamental group of a CW complex, and the classification supplies the normal cover with the stated subgroups and deck group.
 ---
 
 ::: {.problem}

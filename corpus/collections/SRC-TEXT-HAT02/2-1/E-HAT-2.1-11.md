@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used the retraction identity r i = id and functoriality of homology.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the functoriality argument: $r_*i_*=(ri)_*=\mathrm{id}$, so $i_*$ has a left inverse and is injective.
 ---
 
 ::: {.problem}

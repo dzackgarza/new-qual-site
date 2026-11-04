@@ -1,0 +1,1 @@
+Since $\varprojlim$ and $\varprojlim{}^1$ do not change when the tower is replaced by a subsequence, with the appropriate composites of the $\alpha_i$ as bonding maps (Hatcher, page 313), we may pass to a cofinal subsequence and assume each bonding map $Q_{i+1}\to Q_i$ is zero.

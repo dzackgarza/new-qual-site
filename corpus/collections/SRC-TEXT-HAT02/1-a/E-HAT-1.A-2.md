@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Extended the identity on the connected subgraph cellwise over all remaining vertices and edges, using weak-topology continuity.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof: the vertex map and the extension across each edge along a path in $A$ give a continuous retraction fixing $A$ pointwise.
 ---
 
 ::: {.problem}

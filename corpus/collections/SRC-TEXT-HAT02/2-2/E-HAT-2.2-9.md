@@ -23,6 +23,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Computed all four cases by quotient/CW/Kunneth/relative-homology arguments, including the orientation sign in the pair-of-pants case.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read all four parts. (a) identifying the two poles gives $S^2\vee S^1$, one cell in dimensions
+    $0,1,2$ with zero differentials. (b) Künneth over free groups gives $\ZZ^3$ and $\ZZ^2$ with no
+    Tor term. (c) from $Y/C\cong P/\partial P$ and $H_*(P,\partial P)=(\ZZ,\ZZ^2,\ZZ)$, the
+    relative fundamental class maps to $(-1)+1+1$, since the boundary orientation is
+    counterclockwise on the outer circle and clockwise on the two inner ones while all three are
+    glued preserving clockwise orientation; the sum of three signs is odd in any convention, so the
+    connecting map is an isomorphism and $H_2=0$, $H_1\cong\ZZ^2$. (d) the attaching word is
+    $a^mb^na^{-m}b^{-n}$, so both exponent sums vanish and $d_2=0$.
 ---
 
 ::: {.problem}

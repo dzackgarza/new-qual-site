@@ -24,6 +24,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete Mayer--Vietoris/algebraic proof checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the Bockstein sequence: exactness of $H_i\xrightarrow{n}H_i\to H_i(\ZZ_n)\to H_{i-1}$
+    gives $0\to H_i/nH_i\to H_i(\ZZ_n)\to{}_nH_{i-1}\to0$. Read both directions of the
+    characterisation: vanishing of $G/pG$ and of ${}_pG$ for every prime makes multiplication by
+    every nonzero integer invertible, which is a $\QQ$-vector-space structure, and on a
+    $\QQ$-vector space multiplication by $p$ is an automorphism, so both terms vanish.
 ---
 
 ::: {.problem}

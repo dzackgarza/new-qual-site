@@ -23,6 +23,29 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Proved a compact local-injectivity lemma for maps to metric spaces, applied it to a lift of the left edge, and used an explicit circle-valued map to demonstrate that the accumulating rectangle loops are nontrivial.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the compact local-injectivity lemma and its use: the diagonal argument produces an open set on which the covering projection is injective over the left edge, and the cover is then trivial over a neighbourhood of that edge.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line against Hatcher, Algebraic Topology, §1.3 Exercise 5, and repaired one step.
+    Correct as written: the compact local-injectivity lemma, including the product-neighborhood lemma
+    for a compact set inside an open set and the role of the diagonal $Z=g^{-1}(0)$; the application,
+    where $\widetilde L$ is compact, $p$ is injective on it and locally injective near it, and $p$ open
+    makes $p(N)$ a neighborhood of $L$; the estimate giving $R_n\subseteq U$ once $1/n<d(L,X\setminus
+    U)$, since every point of $R_n$ is within $1/n$ of $L$; and nontriviality of $[R_n]$, where
+    $\varphi_n$ is continuous because the top and bottom edges map to $1$ and agree with $V_n$ at its
+    endpoints. **Repaired:** the step asserting that $p\restrict_{\widetilde L}$ is a homeomorphism
+    justified it by the phrase that $\widetilde X$ is 'Hausdorff locally over the metric space $X$ along
+    each covering sheet', which is not an argument. The step now proves $\widetilde X$ is Hausdorff —
+    distinct images in the Hausdorff base, or distinct disjoint sheets over one point — and invokes that
+    a continuous bijection from a compact space onto a Hausdorff space is a homeomorphism. The
+    conclusion was already true; its justification was incomplete, and it is now written out. Not
+    checked in this pass: the figure referred to by the book, and no other card.
 ---
 
 ::: {.problem}
@@ -124,11 +147,11 @@ is a homeomorphism.
 
 ::: pf-proof
 
-The lifted path is injective.
-If two distinct parameters had the same lifted point, their images under $p$ would be the same point of the injectively parametrized left edge $L$.
-Thus the lifted path is a continuous bijection from the compact interval $I$ onto $\widetilde L$.
-Since $\widetilde X$ is Hausdorff locally over the metric space $X$ along each covering sheet, this map is a homeomorphism onto its image.
-Equivalently, its inverse is simply the restriction of $p$ followed by the inverse parametrization of $L$.
+The lifted path is injective: if two parameters $s\ne t$ had the same lifted point, applying $p$ would give the same point of the injectively parametrized left edge $L$, hence $s=t$.
+So the lift is a continuous bijection from the compact interval $I$ onto $\widetilde L$.
+The space $\widetilde X$ is Hausdorff: two distinct points with distinct images in the Hausdorff space $X$ are separated by the inverse images of disjoint open sets, and two distinct points over the same point of $X$ are separated by two distinct sheets of an evenly covered neighborhood, which are disjoint and open.
+A continuous bijection from a compact space onto a Hausdorff space is a homeomorphism, so the lift is a homeomorphism $I\to\widetilde L$.
+Its inverse is the restriction of $p$ composed with the inverse parametrization of $L$, which is therefore continuous.
 
 :::
 

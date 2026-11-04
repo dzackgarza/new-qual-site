@@ -23,6 +23,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 7; it matches the printed text. The card makes the implicit $n>0$ explicit.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the construction: collapse the complement of an orientation-compatible ball, giving a map
+    to $B/\partial B=S^n$ of local degree 1 at an interior regular value.
 ---
 
 ::: {.problem}

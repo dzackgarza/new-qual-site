@@ -22,10 +22,25 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.2, Exercise 5. The printed bracketed hint "[Use the coefficient map $\ZZ_{2k} \to \ZZ_2$ and the proof of Theorem 3.19.]" was missing and is restored.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the whole computation: the alternating cellular differential gives $R$ in degree $0$,
+    $\ker(2)=\{0,k\}$ in odd degrees and $R/2R$ in positive even degrees; $\alpha$ is the class of
+    $k$ times the basic $1$-cochain and $\beta$ the class of the basic $2$-cochain, so
+    $2\alpha=2\beta=0$ and $\alpha^2=k^2\beta=k\beta$ since $2\beta=0$ and $k^2\equiv k$ mod $2$;
+    the products $\alpha\beta^j$ are the nonzero elements of $\ker 2$, so $\alpha$ and $\beta$
+    generate with no further relations.
 ---
 
 ::: {.problem}
 Show the ring $H^*(\RP^\infty; \ZZ_{2k})$ is isomorphic to $\ZZ_{2k}[\alpha, \beta] / (2\alpha, 2\beta, \alpha^2 - k\beta)$ where $\gradeddegree{\alpha} = 1$ and $\gradeddegree{\beta} = 2$.
+[Use the coefficient map $\ZZ_{2k} \to \ZZ_2$ and the proof of Theorem 3.19.]
 :::
 
 ::: {.solution}

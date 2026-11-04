@@ -22,10 +22,33 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Statement repaired against Hatcher's printed text: the card had dropped printed matter
+    (a bracketed hint or pointer, or a printed sentence) that an audit located by word-by-word
+    comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
+    applying the repair. The restored text is the printed wording and the mathematics of the
+    statement is otherwise unchanged.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read against Hatcher Sec. 4.2 Exercise 13 (AT.txt 19396-19398) and correct as it stands. Checked the
+    delicate step: the pair (M_f~, X~) is n-connected, so relative Hurewicz kills H_i for i<=n and
+    identifies pi_{n+1} of the pair with H_{n+1} of the pair; pi_{n+1}(M_f~,X~) is a quotient of
+    pi_{n+1}(M_f~) because pi_n(X~) -> pi_n(M_f~) is an isomorphism; and that quotient maps to
+    H_{n+1}(M_f~) = H_{n+1}(Y~) = 0 by naturality, since Y~ is n-dimensional. Hence H_{n+1} of the pair
+    vanishes too, the homology exact sequence gives an isomorphism in degrees <= n, and both sides vanish
+    above n, so the lift is a homology isomorphism in all degrees. Then Exercise 12 applies. Also checked
+    the low cases the card separates: n=0 gives two points, and n=1 gives contractible universal covers so
+    Exercise 12 applies directly. Not checked: nothing outside this exercise.
+
 ---
 
 ::: {.problem}
-Show that a map between connected $n$-dimensional CW complexes is a homotopy equivalence if it induces an isomorphism on $\pi_i$ for $i \leq n$.
+Show that a map between connected $n$-dimensional CW complexes is a homotopy equivalence if it induces an isomorphism on $\pi_i$ for $i \leq n$. [Pass to universal covers and use homology.]
 :::
 
 ::: {.solution}

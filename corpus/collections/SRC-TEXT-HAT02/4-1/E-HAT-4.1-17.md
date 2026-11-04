@@ -22,6 +22,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-02
+  note: >-
+    Read against the book (AT.txt:17890-17891 for the statement). Correct: replacing X and Y by CW models
+    with no cells in dimensions 1..m and 1..n is legitimate, the relative cells of the product are the
+    products e^p x e^q with p,q > 0 hence of dimension at least m+n+2, and Corollary 4.12 (no relative
+    cells in dimensions at most m+n+1 implies (m+n+1)-connected) gives the pair. For the smash product the
+    card's claim that the quotient CW structure has positive cells only in dimensions at least m+n+2 is
+    what carries the conclusion, and it is correct since the 0-skeleton of X ^ Y is a point. Not checked:
+    no independent verification of Corollary 4.12 beyond its statement.
+
 ---
 
 ::: {.problem}

@@ -15,6 +15,22 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 2.2, Exercise 11.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the cellular computation against the 1.2-14 presentation: the columns $i-j-k$, $-i+j-k$,
+    $-i-j+k$ form $2I-J$, with eigenvalues $-1,2,2$; the map is injective, its Smith invariants are
+    $1,2,2$, so $H_1=\ZZ/2\oplus\ZZ/2$, and injectivity of $d_2$ forces $d_3=0$ and $H_3=\ZZ$. The
+    abelianization itself is the certified Sage computation in
+    proofs/cards/DeltaComplexHomology.sage.
+
+    Rerun on the supported Sage development image: Sage 11.0.beta5, Python 3.14.10, source
+    HEAD b0cd7d86e2, all checks passing there.
 ---
 
 ::: {.problem}

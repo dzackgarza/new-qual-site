@@ -14,6 +14,18 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.1, Exercise 9; it matches the printed text. The card makes the implicit $n>0$ of the degree explicit.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the Kronecker pairing argument: naturality gives
+    $\langle f^*\alpha,[S^n]\rangle=\langle\alpha,f_*[S^n]\rangle=d\langle\alpha,[S^n]\rangle$, and
+    evaluation on the fundamental class is an isomorphism $H^n(S^n;G)\cong G$, so
+    $f^*\alpha=d\alpha$.
 ---
 
 ::: {.problem}

@@ -1,0 +1,12 @@
+::: pf-step
+
+Since $\QQ$ is a field, $H_{n+1}(X; \QQ) \cong H_{n+1}(X) \otimes \QQ = 0 \otimes \QQ = 0$, so $H^{n+1}(X; \QQ) = 0$.
+The exact sequence forces $\operatorname{Ext}(A, \QQ) = 0$.
+
+::: pf-proof
+
+exactness with vanishing middle group.
+
+:::
+
+:::

@@ -15,6 +15,15 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.2, Exercise 19.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the bounded-homotopy lemma for paths in one sphere, the excursion decomposition of a loop, and the patching argument that makes the homotopy continuous at the origin.
 ---
 
 ::: {.exercise}

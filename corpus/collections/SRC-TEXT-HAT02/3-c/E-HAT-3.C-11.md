@@ -16,6 +16,23 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.C, Exercise 11; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read. The skeleton is right and the four steps are the correct ones. Repaired: step 2
+    now records that Künneth's hypothesis holds ($H_*(S^1;ℤ)$ is free and finitely generated
+    in each degree) and that the comparison is the Eilenberg--Zilber map, and step 3, which
+    previously said only "the multiplication on $T^n$ is coordinatewise", now says what actually
+    carries the claim: the Eilenberg--Zilber comparison is associative, unital and natural for the
+    product maps, so it is an isomorphism of rings for the Pontryagin products, not merely of
+    graded groups. Step 4 now names the last isomorphism — for odd-degree generators the tensor
+    product of exterior algebras is the exterior algebra on the union of the generators, with
+    $x_ix_j=-x_jx_i$ — instead of asserting it in a parenthesis. No statement was changed.
 ---
 
 ::: {.problem}
@@ -44,7 +61,7 @@ By the Künneth theorem, $H_*(T^n) \cong H_*(S^1)^{\otimes n}$.
 
 ::: pf-proof
 
-$T^n = (S^1)^n$, and the Künneth theorem computes the homology of a product.
+$T^n=(S^1)^n$, and the Künneth theorem computes the homology of a product. Its hypothesis holds here because $H_*(S^1;\ZZ)$ is free and finitely generated in each degree, so the comparison map $H_*(S^1)^{\otimes n}\to H_*((S^1)^n)$ is an isomorphism — the Eilenberg--Zilber map, which is what makes the next step work.
 
 :::
 
@@ -56,7 +73,11 @@ The Pontryagin product on $H_*(T^n)$ is the tensor product of the Pontryagin pro
 
 ::: pf-proof
 
-the multiplication on $T^n$ is coordinatewise.
+the multiplication on $T^n$ is coordinatewise, so its induced product on homology is the composite
+$$
+H_*((S^1)^n)\otimes H_*((S^1)^n)\longrightarrow H_*((S^1)^n\times(S^1)^n)\longrightarrow H_*((S^1)^n)
+$$
+of the Eilenberg--Zilber map with the diagonal-induced one. The point is that the Künneth comparison of the previous step is itself the Eilenberg--Zilber map: it is associative and unital and natural for the product maps, so it is an isomorphism of *rings*, not only of graded groups, and transports the coordinatewise product to the tensor product of the products on the factors. This is the step the exercise takes for granted.
 
 :::
 
@@ -68,7 +89,7 @@ Hence $H_*(T^n) \cong \Lambda_\ZZ[x_1, \ldots, x_n]$, the exterior algebra on ge
 
 ::: pf-proof
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} (the tensor product of exterior algebras on one generator each is the exterior algebra on all the generators).
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}. It remains to name the last isomorphism: for generators of odd degree the tensor product of exterior algebras is the exterior algebra on the disjoint union of the generators, with $x_ix_j=-x_jx_i$ because $|x_i||x_j|=1$ is odd, and $x_i^2=0$; applied $n$ times this gives $\Lambda_\ZZ[x_1,\dots,x_n]$.
 
 :::
 

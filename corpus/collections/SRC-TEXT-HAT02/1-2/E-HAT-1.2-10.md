@@ -19,6 +19,15 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: The old solution used an unstated relator r and an unchecked map to S_3; rewritten to show the complement group is free on the two meridians and gamma is their commutator.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.2, Exercise 10.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the reduction of the clasp to two unlinked arcs and the class of $\gamma$ as the commutator, a nontrivial reduced word in the free group.
 ---
 
 ::: {.problem}

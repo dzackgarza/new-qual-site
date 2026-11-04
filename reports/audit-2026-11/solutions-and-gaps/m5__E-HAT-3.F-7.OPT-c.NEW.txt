@@ -1,0 +1,5 @@
+For this CW pair the relative cellular chain complex $C_*(M(B,n),M(A,n))$ is the cellular chain complex of $Q$, with free terms, so that
+$$
+H^*(M(B,n),M(A,n);G)\cong\widetilde H^*(M(C,n);G)
+$$
+(Proposition 2.22, applied to the cellular chain complexes); the long exact sequence of the pair therefore becomes exactly

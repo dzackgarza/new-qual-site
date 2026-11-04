@@ -23,6 +23,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 22; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: products $K\times I$ are cofinal among compact sets in $X\times\RR$, and the
+    relative suspension isomorphism, from the cross product with the generator of $H^1(\RR,\RR-I)$,
+    shifts degree by one compatibly with inclusions.
 ---
 
 ::: {.problem}

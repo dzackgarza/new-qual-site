@@ -20,6 +20,24 @@ audit:
     pages. Problem 8 asks for the commutator cover that Problem 7 already
     asks for in its fourth subgroup. The five source cover diagrams are
     retained as a crop of the PDF.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Correction to part (a), the fifth cover only, made while recovering the source of the separate card
+    P-O2J6S; the same printed problem is on that card. The card had said the two lower diagrams each show
+    an infinite a-line with one b-loop, giving <b> up to conjugacy. That is right for the fourth diagram
+    and wrong for the fifth: in the fifth the loop crosses the line, so it meets it in two distinct
+    points, which are consecutive vertices alpha, beta of the line with one b-edge each way between them.
+    With the basepoint at beta the a-line is a spanning tree and those two b-edges are the only non-forest
+    edges, giving the free basis a^-1 b and b a, i.e. the subgroup <ba, b^-1 a> = <ba, a^-1 b>, of rank 2
+    and infinite index. It is not conjugate to <b>, since rank is a conjugacy invariant. The paragraph now
+    separates the two pictures and states this. Checked while making the correction, and left unchanged:
+    the left, middle and right finite diagrams' bases (a^3, ba^-1, aba^-2, a^2b), (a^3, b, aba^-1,
+    a^2ba^-2) and (a^3, ba^-2, aba^-1, a^2b) all agree with the bases recomputed from the printed diagrams
+    on P-O2J6S with the basepoints named there. Not checked: part (b)'s five covers beyond what was
+    already recorded, and steps of the (a) solution other than the fifth diagram.
+
 ---
 
 ::: {.problem}
@@ -80,12 +98,15 @@ generators
 $$
 a^3,\qquad ba^{-2},\qquad aba^{-1},\qquad a^2b.
 $$
-The two lower diagrams each show an infinite $a$-line with one
-$b$-loop and the remaining $b$-edges completed by trees. With the
-lifted basepoint at the loop, the subgroup is $\langle b\rangle$.
-Moving the lifted basepoint along $a$ changes it to a conjugate
-$\langle a^rba^{-r}\rangle$. The figures mark no lifted basepoint,
-so they determine the subgroup only up to conjugacy.
+The two lower diagrams are not the same cover, and the difference is what a basepoint at the loop would hide. In the **fourth** diagram the $b$-loop meets the $a$-line at one vertex: with the lifted basepoint there the $a$-line is a spanning tree and the loop is the only non-forest edge, so the subgroup is $\langle b\rangle$, of rank $1$; moving the basepoint along $a$ conjugates it to $\langle a^rba^{-r}\rangle$.
+
+In the **fifth** diagram the loop crosses the line, so it meets it in two distinct points: those two vertices $\alpha,\beta$ are consecutive on the line, one $b$-edge runs $\alpha\to\beta$ and the other $\beta\to\alpha$. With the lifted basepoint at $\beta$ the $a$-line is again a spanning tree and the two $b$-edges are the only non-forest edges, giving the free basis
+$$
+a^{-1}b\quad\text{and}\quad ba ,
+$$
+that is, the subgroup $\langle ba,\ b^{-1}a\rangle$, since $a^{-1}b=(b^{-1}a)^{-1}$. It has **rank $2$** and infinite index, so it is not conjugate to $\langle b\rangle$: rank is a conjugacy invariant.
+
+The figures mark no lifted basepoint, so each picture determines its subgroup only up to conjugacy; the basis above is for the basepoint named.
 
 For (b), specify each covering graph by its labeled directed
 edges. At any vertex where a label lacks an incoming or outgoing

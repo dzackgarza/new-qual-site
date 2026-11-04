@@ -24,6 +24,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read (a) in both directions: restricting a retraction to the cone gives the contraction of $A$
+    in $X$, and a contraction extends over the cone and is well defined at the cone vertex. Read
+    (b): $(Y,X)$ is a good pair with $Y/X=SA$, so $H_n(Y,X)\cong\tilde H_{n-1}(A)$; the retraction
+    makes $i_*$ injective and splits the long exact sequence, giving
+    $\tilde H_n(Y)\cong\tilde H_n(X)\oplus\tilde H_{n-1}(A)$; and excision over the contractible
+    cone identifies $H_n(X,A)$ with $\tilde H_n(Y)$.
 ---
 
 ::: {.problem}

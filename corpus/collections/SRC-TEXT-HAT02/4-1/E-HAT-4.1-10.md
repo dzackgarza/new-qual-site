@@ -22,6 +22,21 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-02
+  note: >-
+    Read against the book (AT.txt:17861-17862 for the statement; the §1.3 exercise at 4069-4075). The
+    argument is correct: the image of a map S^n -> Y is the image of a path of Y, which the §1.3 step
+    confines to a finite truncation and hence to a contractible subspace, so the map is nullhomotopic;
+    non-contractibility then follows because a nullhomotopy of the quotient map q: Y -> S^1 would lift
+    through the covering R -> S^1, giving q a lift; and the CW conclusion is Whitehead. One citation was
+    added, not a new argument: the step "S^n is a Peano continuum, therefore it is a continuous image of
+    I" is the Hahn-Mazurkiewicz theorem and now names it. The dependence recorded in the card, that the
+    path-confinement fact is proved in §1.3 Exercise 7, was checked to be true of that card's current
+    solution (its step s1). Not checked: the fine structure of the quasi-circle's topology was not
+    re-derived beyond what §1.3's card proves.
+
 ---
 
 ::: {.problem}
@@ -42,7 +57,7 @@ We show first that every homotopy group of $Y$ is trivial. The space $Y$ is path
 $$
 f:S^n\to Y.
 $$
-The sphere $S^n$ is a compact, connected, locally connected metric space, hence a Peano continuum. Therefore there is a continuous surjection
+The sphere $S^n$ is a compact, connected, locally connected metric space, hence a Peano continuum, and by the Hahn--Mazurkiewicz theorem every Peano continuum is a continuous image of $I$: there is a continuous surjection
 $$
 r:I\twoheadrightarrow S^n.
 $$

@@ -23,6 +23,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 34; it matches the printed text. The card writes $[M,\partial M]\frown-$ where the print abbreviates the same relative fundamental class as $[M]\frown-$; the diagram is otherwise transcribed as printed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the diagram square by square: the middle square is naturality of the cap product, and the
+    outer ones follow from the chain-level identity
+    $\partial(c\frown\varphi)=(\partial c)\frown\varphi\pm c\frown\delta\varphi$ together with
+    $\partial[M,\partial M]=[\partial M]$, the sign being left to the conventions as the exercise
+    allows.
 ---
 
 ::: {.problem}

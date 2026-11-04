@@ -22,6 +22,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used a two-set Mayer--Vietoris cover whose intersection deformation retracts to Q intersect I; this gives countably generated free H_1 and no higher homology.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the Mayer--Vietoris setup: $U$ and $V$ are contractible by the vertical homotopy that preserves the rational first coordinate, and their intersection is the four boundary edges together with the rational vertical segments cut at $1/4<y<3/4$, whose homology the computation then takes.
 ---
 
 ::: {.problem}

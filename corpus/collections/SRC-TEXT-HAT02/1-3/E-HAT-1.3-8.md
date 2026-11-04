@@ -23,6 +23,24 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Lifted homotopy inverse maps to the simply connected covers and lifted the base homotopies to prove the two composites are homotopic to the identities.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims and the lifting construction: $f\circ p_X$ lifts to $\widetilde Y$ because $\widetilde X$ is simply connected, and the homotopy inverses lift to homotopy inverses of the universal covers. Not every line checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct as it stands, including the two points where this exercise can go
+    wrong. First, the lifting criterion is applied with the right hypotheses: `X~` and `Y~` are
+    simply connected, hence path connected, and locally path connected because they cover locally
+    path connected spaces, and the subgroup condition `(f p_X)_* pi_1(X~) = 0 <= (p_Y)_* pi_1(Y~)`
+    is satisfied trivially. Second, the composite `g~ f~` is handled by lifting the homotopy
+    `H (p_X x id)` rather than by claiming the lifts compose to a lift of `g f`: the lifted
+    homotopy ends at a self-map `u` of `X~` with `p_X u = p_X`, and `u` and the identity are two
+    lifts of `p_X` that agree at the chosen basepoint, so they agree everywhere because `X~` is
+    connected. That is the step that needs the basepoint bookkeeping, and the card says so.
 ---
 
 ::: {.problem}

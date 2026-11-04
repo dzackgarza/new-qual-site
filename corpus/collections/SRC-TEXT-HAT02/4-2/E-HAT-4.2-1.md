@@ -21,6 +21,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read against Hatcher Sec. 4.2 Exercise 1 (AT.txt 19332-19333) and correct as it stands. The
+    argument is right in both cases: for k>=2 a retraction would make i_*: pi_k(RP^k) -> pi_k(RP^n)
+    injective, but pi_k(RP^k) = pi_k(S^k) = Z and pi_k(RP^n) = pi_k(S^n) = 0 since k<n; for k=1,
+    pi_1(RP^1) = Z and pi_1(RP^n) = Z_2 for n>1, and no injection Z -> Z_2 exists. Checked that the
+    identifications used are covering-space invariance (S^m -> RP^m is the universal cover for m>=2) and
+    need no further hypothesis. Not checked: nothing outside this exercise.
 
 ---
 

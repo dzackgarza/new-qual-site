@@ -39,11 +39,11 @@ from .model import (
     unread_math,
 )
 from .pandoc_batch import (
-    PARALLEL_WORKERS,
     Citations,
     PandocFailure,
     PandocResult,
     PandocServer,
+    parallel_workers,
 )
 from .static_site import AssetCatalog, _asset_source
 from .tex import mark_definienda
@@ -302,7 +302,7 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
     restored: list[str] = []
     batches = [prepared[offset : offset + WIKI_BATCH_SIZE] for offset in range(0, len(prepared), WIKI_BATCH_SIZE)]
     if len(batches) > 1:
-        workers = min(PARALLEL_WORKERS, len(batches))
+        workers = min(parallel_workers(), len(batches))
         with ThreadPoolExecutor(max_workers=workers) as executor:
             result_batches = list(
                 executor.map(

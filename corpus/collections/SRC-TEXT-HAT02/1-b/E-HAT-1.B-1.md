@@ -30,6 +30,11 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: The barycentric l1 metric does not describe a Delta-complex, whose simplices need not be determined by their vertices, and need not give its topology; rewritten with open stars in the barycentric subdivision.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof: the barycentric subdivision makes the simplicial action dimension-preserving on stars, and the open stars of a free action are disjoint from their translates, which is the covering-space condition.
 ---
 
 ::: {.problem}

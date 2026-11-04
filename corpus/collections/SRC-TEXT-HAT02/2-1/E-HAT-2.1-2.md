@@ -24,25 +24,37 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Collapsed the tetrahedron to the two-face square and read the four side-pairing words, giving the Klein bottle, torus, sphere, and projective plane.
+- event: source-corrected
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The card wrote the vertices of the simplex as the Greek letter, `\nu_0`,
+    where Hatcher writes them `v_0`; the vertex symbol is restored throughout.
+    Found by comparing the statement with the printed exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the construction: the two faces of $\Delta^3$ form a square whose order-preserving edge identifications give the Klein bottle's presentation, and the deformation retraction commutes with them; the other identifications are given by the same square with different gluing words.
 ---
 
 ::: {.problem}
-Show that the $\Delta$-complex obtained from $\Delta^3$ by performing the edge identifications $[\nu_0, \nu_1] \sim [\nu_1, \nu_3]$ and $[\nu_0, \nu_2] \sim [\nu_2, \nu_3]$ deformation retracts onto a Klein bottle.
+Show that the $\Delta$-complex obtained from $\Delta^3$ by performing the order-preserving edge identifications $[v_0, v_1] \sim [v_1, v_3]$ and $[v_0, v_2] \sim [v_2, v_3]$ deformation retracts onto a Klein bottle.
 Find other pairs of identifications of edges that produce $\Delta$-complexes deformation retracting onto a torus, a 2 sphere, and $\RP^2$.
 :::
 
 ::: {.solution}
 Let the vertices of the tetrahedron be
 $$
-\nu_0,\nu_1,\nu_2,\nu_3.
+v_0,v_1,v_2,v_3.
 $$
 The union
 $$
-Q=[\nu_0,\nu_1,\nu_3]\cup[\nu_0,\nu_2,\nu_3]
+Q=[v_0,v_1,v_3]\cup[v_0,v_2,v_3]
 $$
-is a square split by the diagonal $[\nu_0,\nu_3]$, with boundary traversed as
+is a square split by the diagonal $[v_0,v_3]$, with boundary traversed as
 $$
-\nu_0\to\nu_1\to\nu_3\to\nu_2\to\nu_0.
+v_0\to v_1\to v_3\to v_2\to v_0.
 $$
 
 ::: pf
@@ -55,11 +67,11 @@ The tetrahedron deformation retracts onto $Q$ in a way compatible with identific
 
 The two omitted faces
 $$
-[\nu_0,\nu_1,\nu_2],
+[v_0,v_1,v_2],
 \qquad
-[\nu_1,\nu_2,\nu_3]
+[v_1,v_2,v_3]
 $$
-form an open book on the edge $[\nu_1,\nu_2]$ opposite the diagonal $[\nu_0,\nu_3]$.
+form an open book on the edge $[v_1,v_2]$ opposite the diagonal $[v_0,v_3]$.
 Collapse each line segment transverse to $Q$ linearly onto $Q$.
 This fixes $Q$ pointwise and gives a deformation retraction.
 Since all edge identifications below involve only edges of $Q$, the retraction descends to the corresponding quotients.
@@ -72,9 +84,9 @@ Since all edge identifications below involve only edges of $Q$, the retraction d
 
 The identifications in the problem,
 $$
-[\nu_0,\nu_1]\sim[\nu_1,\nu_3],
+[v_0,v_1]\sim[v_1,v_3],
 \qquad
-[\nu_0,\nu_2]\sim[\nu_2,\nu_3],
+[v_0,v_2]\sim[v_2,v_3],
 $$
 produce the Klein bottle.
 
@@ -83,7 +95,7 @@ produce the Klein bottle.
 Call the first edge class $a$ and the second $b$.
 Around the square boundary
 $$
-\nu_0\to\nu_1\to\nu_3\to\nu_2\to\nu_0
+v_0\to v_1\to v_3\to v_2\to v_0
 $$
 the four directed sides become
 $$
@@ -108,9 +120,9 @@ By step [](#s1){.pf-ref} the full tetrahedral quotient deformation retracts onto
 
 A torus is obtained by the pairings
 $$
-[\nu_0,\nu_2]\sim[\nu_1,\nu_3],
+[v_0,v_2]\sim[v_1,v_3],
 \qquad
-[\nu_0,\nu_1]\sim[\nu_2,\nu_3],
+[v_0,v_1]\sim[v_2,v_3],
 $$
 with the displayed orderings preserved.
 
@@ -131,9 +143,9 @@ the standard torus polygon.
 
 A $2$-sphere is obtained by the pairings
 $$
-[\nu_0,\nu_2]\sim[\nu_3,\nu_2],
+[v_0,v_2]\sim[v_3,v_2],
 \qquad
-[\nu_0,\nu_1]\sim[\nu_3,\nu_1].
+[v_0,v_1]\sim[v_3,v_1].
 $$
 
 ::: pf-proof
@@ -153,9 +165,9 @@ Equivalently, this is the usual two-disk decomposition of $S^2$ after the cancel
 
 A projective plane is obtained by the pairings
 $$
-[\nu_0,\nu_2]\sim[\nu_3,\nu_1],
+[v_0,v_2]\sim[v_3,v_1],
 \qquad
-[\nu_0,\nu_1]\sim[\nu_3,\nu_2].
+[v_0,v_1]\sim[v_3,v_2].
 $$
 
 ::: pf-proof

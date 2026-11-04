@@ -23,6 +23,24 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Shrunk a properly discontinuous neighborhood against the finitely many nontrivial intersecting translates, using Hausdorffness and freeness.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: proper discontinuity gives a finite stabilizer set, from which the covering-space condition follows. Not every line checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct. The shrinking step is the substance and is done properly: the set
+    `F` of group elements with `U` meeting `gU` is finite, so only finitely many nonidentity
+    elements need handling; for each, Hausdorffness separates `x` from `gx`, and the neighbourhood
+    `A_g` is replaced by `A_g cap g^{-1}(B_g)` precisely so that `gA_g` lands in `B_g` and
+    `A_g cap gA_g` is empty; the finite intersection with `U` then gives `V` with `V cap gV` empty
+    for every nonidentity `g`, including those outside `F` because `V` is inside `U`. Pairwise
+    disjointness of the translates and `q^{-1}(q(V)) = coproduct_g gV` follow, giving the covering
+    space action. The corollary for a finite group acting freely is immediate. No correction was
+    needed.
 ---
 
 ::: {.problem}

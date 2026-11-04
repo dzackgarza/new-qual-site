@@ -14,6 +14,18 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-02
+  note: >-
+    Read against the book (AT.txt:17892-17893 for the statement). The pseudocircle with minimal opens
+    {a}, {b}, {a,b,c}, {a,b,d} has specialization order a,b < c,d, whose order complex is a 4-cycle, so its
+    realization is S^1 and McCord's theorem gives a weak homotopy equivalence S^1 -> P. In the other
+    direction every map g: P -> S^1 has finite image in a Hausdorff space, hence a discrete subspace, and
+    P is connected because pi_0(P) = pi_0(S^1) is a point, so g is constant and induces the zero map on
+    pi_1 = Z. That is the example the exercise asks for. Not checked: McCord's theorem is cited, not
+    re-proved.
+
 ---
 
 ::: {.problem}

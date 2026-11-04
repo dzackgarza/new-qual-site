@@ -15,6 +15,15 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.3, Exercise 20.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both constructions: the normal forms in $\pi_1(K)$, the index and non-normality computations for $H_K$ and $H_T$, and the Euler-characteristic and orientability arguments that identify the covers as a Klein bottle and a torus.
 ---
 
 ::: {.exercise}

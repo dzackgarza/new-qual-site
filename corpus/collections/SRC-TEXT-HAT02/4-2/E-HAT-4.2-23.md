@@ -21,10 +21,25 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Statement repaired against Hatcher's printed text: the card had dropped printed matter
+    (a bracketed hint or pointer, or a printed sentence) that an audit located by word-by-word
+    comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
+    applying the repair. The restored text is the printed wording and the mathematics of the
+    statement is otherwise unchanged.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-02
+  note: >-
+    Cards read. Verdict record is m7__proofs-4-2-14-26.md (14-26: 11 correct, 16 and 26 each a single named step; both repaired) and m5__proofs-4-2-27-39.md (27-39: 10 correct, 28, 29 defective single cases, 34 a wrong intermediate assertion; all three repaired). No card in this slice has an unmet piece.
+
 ---
 
 ::: {.problem}
-Extend the Hurewicz theorem by showing that if $X$ is an $(n-1)$-connected CW complex, then the Hurewicz homomorphism $h: \pi_{n+1}(X) \to H_{n+1}(X)$ is surjective when $n > 1$, and when $n = 1$ show there is an isomorphism $H_2(X) / h\bigl(\pi_2(X)\bigr) \approx H_2\bigl(K(\pi_1(X), 1)\bigr)$.
+Extend the Hurewicz theorem by showing that if $X$ is an $(n-1)$-connected CW complex, then the Hurewicz homomorphism $h: \pi_{n+1}(X) \to H_{n+1}(X)$ is surjective when $n > 1$, and when $n = 1$ show there is an isomorphism $H_2(X) / h\bigl(\pi_2(X)\bigr) \approx H_2\bigl(K(\pi_1(X), 1)\bigr)$. [Build a $K(\pi_n(X), n)$ from $X$ by attaching cells of dimension $n + 2$ and greater, and then consider the homology sequence of the pair $(Y, X)$ where $Y$ is $X$ with the $(n + 2)$-cells of $K(\pi_n(X), n)$ attached. Note that the image of the boundary map $H_{n+2}(Y, X) \to H_{n+1}(X)$ coincides with the image of $h$, and $H_{n+1}(Y) \approx H_{n+1}(K(\pi_n(X), n))$. The previous exercise is needed for the case $n > 1$.]
 :::
 
 ::: {.solution}

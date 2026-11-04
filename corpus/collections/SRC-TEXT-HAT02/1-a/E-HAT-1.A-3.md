@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used the edge-vertex count for trees and collapse of a maximal tree to a wedge of circles.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof: the leaf induction gives $E=V-1$ for a tree, and contracting a maximal tree leaves $1-\chi(X)$ circles, which is the rank.
 ---
 
 ::: {.problem}

@@ -23,6 +23,29 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof reviewed against the relevant chain, relative-homology, local-homology, or covering-space calculation.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the cone computation: $\widetilde H_1(G)=\ZZ^3$ for the complete graph on four vertices, the cone point has contractible complement, and the local homology at points of $X$ away from the cone point reduces to the local homology of the graph, which is $\ZZ$ in degree one at interior points of edges.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line, every stratum. `G = K_4` gives `H_1(G) = Z^{6-4+1} = Z^3`, and `X = CG` is
+    contractible with `X - {c}` retracting onto `G`, so `H_n(X, X-{c}) = H_{n-1}(G)`: `Z^3` in degree
+    `2`. An interior point of a radial edge has three incident triangles, so its link is three points
+    and its neighbourhood is `R x C(P_3)`, giving `H_n = H_{n-2}(P_3)`, i.e. `Z^2` in degree `2`. An
+    interior point of a `2`-cell has a neighbourhood `R^2`, giving `Z` in degree `2`. Points of `G` have
+    vanishing local homology: an interior edge point has a half-plane neighbourhood, and at a vertex the
+    link is the star `K_{1,3}` — three edges of `G` at the vertex plus the radial direction — which is a
+    tree and hence contractible, so the reduced homology of the link vanishes in every degree. Hence
+    `partial X = G`, and inside it an edge interior has local `H_1 = Z` (locally a line) while a vertex
+    has `H_1 = H_0(P_3) = Z^2`. The five strata are then distinguished by these invariants (ranks
+    `3, 2, 1` of local `H_2`, then ranks `2, 1` of local `H_1` within the intrinsic subspace `partial X`),
+    and each is a single orbit by tetrahedral symmetry together with moving points inside one open cell.
+    Finally, applying the invariance hypothesis to `f` and to `f^{-1}` gives `f(A) = A`, so the
+    invariant subsets are exactly the unions of the five orbits. No correction was needed.
 ---
 
 ::: {.problem}

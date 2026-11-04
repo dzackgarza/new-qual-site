@@ -23,6 +23,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 4; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the construction: the orientation of a sheet is transported to the quotient, and the only
+    ambiguity is a deck transformation, which is orientation-preserving by hypothesis, so the
+    transported orientation is well defined.
 ---
 
 ::: {.problem}

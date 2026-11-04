@@ -21,7 +21,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
-
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct. `mu_*` is a homomorphism because it is a map of groups between
+    `pi_n(X) x pi_n(X)`, whose group structure is componentwise, and `pi_n(X x X) = pi_n(X) x pi_n(X)`;
+    the unit conditions give `mu_*(a,0) = a` and `mu_*(0,b) = b`; hence
+    `mu_*(a,b) = mu_*((a,0)+(0,b)) = a + b`, and the composite class is represented by
+    `x |-> mu(f(x),g(x))`. One hypothesis the card does not name: calling this *the* group operation
+    presupposes `pi_n` is a group for this `mu`, i.e. that `mu` is homotopy associative; without it the
+    computation still shows the pointwise rule and the usual rule agree, both being `mu_*`.
 ---
 
 ::: {.problem}

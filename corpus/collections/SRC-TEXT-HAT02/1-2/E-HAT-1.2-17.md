@@ -19,6 +19,15 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: The old solution used winding numbers about irrational points, which are not removed; replaced by rectangles with irrational sides, separated by winding about a removed rational point.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.2, Exercise 17.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the rectangles $\gamma_s$ for irrational $s$ and their separation by winding numbers about a rational point between consecutive values of $s$, which gives uncountably many distinct classes.
 ---
 
 ::: {.problem}

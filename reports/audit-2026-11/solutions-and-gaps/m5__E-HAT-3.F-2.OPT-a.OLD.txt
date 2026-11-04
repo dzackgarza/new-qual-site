@@ -1,0 +1,1 @@
+Passing to a cofinal subsequence, we may assume each bonding map $Q_{i+1}\to Q_i$ is zero.

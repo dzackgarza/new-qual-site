@@ -23,6 +23,27 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read (a): the link at a quotient vertex is a finite connected 2-regular graph, hence a circle, and the neighbourhood is its cone, a disk. Part (b) rests on a cited branching theorem whose hypotheses the text checks against the identification data.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Part (a) read and checked independently; part (b) read and its citation verified for scope. (a)
+    The three local models are right: triangle interiors are disks, an interior point of a paired
+    edge gets two half-disks glued along their diameters, and at a quotient vertex the link is a
+    finite graph in which every vertex has degree two — because each triangle corner has exactly one
+    partner — and which is connected, so it is a circle and its cone is a disk. This is the standard
+    argument and it is complete, including the absence of boundary. (b) is not proved here: it is
+    referred to a branching lemma for ideal triangulations of closed surfaces from a paper on
+    deformation of hyperbolic triangulations, and the hypothesis `chi(X) - #V < 0` is discharged by
+    `F = 2(#V - chi(X)) > 0`, which is `3F = 2E` substituted into `chi = V - E + F`. That is
+    consistent, and the citation is to a named lemma rather than to folklore, but the result is
+    research-level for an exercise the book marks as more difficult, so the claim of (b) should be
+    read as a citation. No correction was needed.
 ---
 
 ::: {.problem}

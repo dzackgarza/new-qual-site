@@ -22,6 +22,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-02
+  note: >-
+    Read against the book (AT.txt:17863-17865 and 17869-17870 for the statement, 25888-25889 for
+    Proposition A.1, 17284-17287 for Whitehead). The argument is correct and complete: path-connectedness
+    from the nullhomotopies, compact image of S^n lying in a finite subcomplex and hence in one X_i,
+    nullhomotopy of the inclusion giving nullhomotopy of f, all pi_n vanishing, and Whitehead giving
+    X ~ *. The S^infinity and infinite-suspension examples are the book's. Not checked: nothing was
+    recomputed; the reading is of the written argument and its citations.
+
 ---
 
 ::: {.problem}

@@ -14,6 +14,20 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.1, Exercise 1; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both functorialities: a free resolution is projective, so any homomorphism lifts to a
+    chain map and any two lifts are chain homotopic, which makes $\alpha^*$ well defined and
+    independent of the lift; post-composition gives covariance in $G$, with
+    $d^*\beta_*=\beta_*d^*$. Ext is taken here as the cokernel of
+    $\operatorname{Hom}(F_0,G)\to\operatorname{Hom}(F_1,G)$, which is its definition for abelian
+    groups.
 ---
 
 ::: {.problem}

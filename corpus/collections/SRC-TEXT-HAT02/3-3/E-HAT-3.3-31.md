@@ -23,6 +23,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 31; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: at each boundary point the global class restricts to the local fundamental
+    class of a half-ball, whose boundary is the local generator of the induced boundary
+    orientation; a class with that property at every point is the fundamental class of
+    $\partial M$. Read at the level of that characterisation.
 ---
 
 ::: {.problem}

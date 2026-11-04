@@ -23,6 +23,21 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Intersected an evenly covered neighborhood in X with the subspace A and checked the restricted sheets explicitly.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the steps: an evenly covered neighbourhood of a point of $A$ restricts to an evenly covered neighbourhood in the subspace, with the sheets cut down to their intersections with $p^{-1}(A)$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line against Hatcher, Algebraic Topology, §1.3 Exercise 1. Verified: $U_A=U\cap A$ is
+    open in the subspace $A$; the preimage of $U_A$ under $p\restrict_{\widetilde A}$ is
+    $p^{-1}(U_A)\cap\widetilde A=\coprod_\lambda(V_\lambda\cap\widetilde A)$, the sheets staying
+    pairwise disjoint and open in $\widetilde A$; and each $V_\lambda\cap\widetilde A\to U_A$ is the
+    restriction of the homeomorphism $V_\lambda\to U$ to the inverse image of the subspace $U\cap A$,
+    hence a homeomorphism. No gap found; nothing deferred.
 ---
 
 ::: {.problem}

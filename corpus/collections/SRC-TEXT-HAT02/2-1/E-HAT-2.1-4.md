@@ -23,6 +23,22 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Wrote the simplicial chain complex with one vertex, three edges, and one 2-simplex; the single primitive boundary relation leaves H1 of rank two.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the chain groups and both boundary maps: the alternating sum gives $\partial_2\sigma=a-b+c$, so $H_2=0$, $H_1=\ZZ^2$ and $H_0=\ZZ$, matching the homotopy type of a wedge of two circles.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The homology is certified in proofs/cards/DeltaComplexHomology.sage: the boundary matrices
+    are fed to Sage's ChainComplex (which checks d^2 = 0) and the group read off homology(0..2)
+    is (Z, Z^2, 0), as the card states. Identifying that complex with the space is the geometric
+    step and rests on the book's description.
+
+    Rerun on the supported Sage development image: Sage 11.0.beta5, Python 3.14.10, source
+    HEAD b0cd7d86e2, all checks passing there.
 ---
 
 ::: {.problem}

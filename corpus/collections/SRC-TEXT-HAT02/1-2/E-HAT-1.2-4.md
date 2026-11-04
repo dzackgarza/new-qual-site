@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Radially retracted the complement to a sphere punctured at the 2n antipodal line-directions and identified its fundamental group as free of rank 2n-1.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the radial deformation retraction and the count $2n$ of intersection points of the lines with $S^2$, which gives $F_{2n-1}$.
 ---
 
 ::: {.problem}

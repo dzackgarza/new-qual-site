@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used monodromy on the n-sheeted fiber to identify conjugates with point stabilizers, and the kernel/core to obtain a finite-index normal subgroup.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the orbit argument for the conjugates and repaired the closing step, which now says why the intersection of the conjugates is normal and of finite index.
 ---
 
 ::: {.problem}
@@ -142,7 +147,7 @@ $$
 
 ::: pf-proof
 
-Combine steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+Step [](#s2){.pf-ref} bounds the number of conjugates of $H$ by $n$, so the intersection $K$ of [](#s3){.pf-ref} is an intersection of at most $n$ conjugates of $H$; it is normal because any conjugate of $K$ permutes those factors, and it has finite index by step [](#s4){.pf-ref}.
 
 :::
 

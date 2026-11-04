@@ -22,6 +22,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-02
+  note: >-
+    Read against the book (AT.txt:17874-17875 for the statement, 17395-17397 for cellular approximation).
+    Correct: cellular approximation makes f and g cellular, so they restrict to the n-skeleta; the
+    homotopy gf ~ id restricted to X^n x I is a map of CW pairs already cellular on X^n x dI, so its
+    relative form homotopes it rel the two ends to a cellular map, whose image lies in X^{n+1} = X^n
+    because X^n x I has dimension n+1 and there are no (n+1)-cells. The same for f_n g_n, so the
+    restrictions are homotopy inverses. The (n+1)-cell hypothesis is used exactly where it is needed.
+    Not checked: nothing beyond the written argument.
+
 ---
 
 ::: {.problem}

@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof checked at chain/skeletal/combinatorial level.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the induction on skeleta: $H_i(X^r,X^{r-1})$ is $\ZZ$ on the $r$-cells and zero elsewhere, so the long exact sequences force $H_i(X^r)=H_i(X^{r-1})$ for $i\ne r,r-1$ and give the freeness and generation statements of (a), (b) and (c).
 ---
 
 ::: {.problem}

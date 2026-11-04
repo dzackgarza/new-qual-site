@@ -14,10 +14,24 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Statement repaired against Hatcher's printed text: the card had dropped printed matter
+    (a bracketed hint or pointer, or a printed sentence) that an audit located by word-by-word
+    comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
+    applying the repair. The restored text is the printed wording and the mathematics of the
+    statement is otherwise unchanged.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof completed: the statement is an iff, and only the direction section => fibre homotopy equivalent to Omega C x B was proved. The converse is now supplied: a fibre homotopy equivalence over B contains a map r: B x Omega C -> E with p r = pr_B, and composing with the product's own section const_{c_0} gives a section of E -> B.
 ---
 
 ::: {.problem}
-Show that a principal fibration $\Omega C \to E \xrightarrow{p} B$ is fiber homotopy equivalent to the product $\Omega C \times B$ if it has a section, a map $s: B \to E$ with $ps = \id$.
+Show that a principal fibration $\Omega C \to E \xrightarrow{p} B$ is fiber homotopy equivalent to the product $\Omega C \times B$ if and only if it has a section, a map $s: B \to E$ with $ps = \id$.
 :::
 
 ::: {.solution}
@@ -36,4 +50,11 @@ $$
 B\times\Omega C\longrightarrow B.
 $$
 Consequently $E\to B$ is fiber homotopy equivalent to the stated product fibration.
+
+Conversely, suppose $E\to B$ is fiber homotopy equivalent to the product fibration
+$B\times\Omega C\to B$. A fiber homotopy equivalence over $B$ contains a map
+$r:B\times\Omega C\to E$ with $p\,r=\mathrm{pr}_B$, and the product fibration has the section
+$s_0(b)=(b,\mathrm{const}_{c_0})$. Then $s=r\circ s_0$ satisfies $p\,s=\mathrm{pr}_B\circ s_0=\id$,
+so $E\to B$ has a section. Together with the preceding paragraph this shows that $E\to B$ has a
+section if and only if it is fiber homotopy equivalent to $\Omega C\times B\to B$.
 :::

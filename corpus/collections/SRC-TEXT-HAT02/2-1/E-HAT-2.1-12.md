@@ -15,6 +15,15 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 2.1, Exercise 12.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the three properties: the zero homotopy, the negated homotopy for symmetry, and the sum of two homotopies for transitivity, each verified against the defining equation.
 ---
 
 ::: {.problem}

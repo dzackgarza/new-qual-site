@@ -23,6 +23,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 18; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both statements: a relation $mx=0$ is already a relation at some stage, where
+    torsion-freeness kills it; and a finitely generated subgroup is presented by a finitely
+    generated relation lattice, each of whose generators vanishes at some stage, with directedness
+    producing a single stage where all of them vanish.
 ---
 
 ::: {.problem}

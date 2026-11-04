@@ -22,6 +22,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the cochain, exact-sequence, and universal-coefficient calculations directly.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.1, Exercise 7; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the counterexample: for $X=M(\ZZ_m,1)$ the segment of the pair reads
+    $0\to\operatorname{Hom}(\ZZ,\ZZ)\to\operatorname{Hom}(\ZZ,\ZZ)\to0$ after applying
+    $\operatorname{Hom}(-,\ZZ)$, since $\operatorname{Hom}(\ZZ_m,\ZZ)=0$, and the middle map is
+    multiplication by $m$, which is not onto for $m>1$.
 ---
 
 ::: {.problem}

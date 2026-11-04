@@ -23,6 +23,21 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Observed that the unique k-simplex has boundary coefficient sum 1 for even k and 0 for odd k, so the chain complex alternates identity and zero maps.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the collapsing boundary formula: every face of $\sigma_k$ is the single $\sigma_{k-1}$, so the alternating sum is $1$ for even $k$ and $0$ for odd $k$, giving $H_k=\ZZ$ for even $k$ and $0$ for odd $k$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Certified in proofs/cards/DeltaComplexHomology.sage for n = 1, ..., 8 through Sage's
+    ChainComplex: with d_k the single alternating-sum entry, the homology is Z in degree 0, 0 in
+    degrees 0 < k < n, and Z or 0 in degree n according as n is odd or even.
+
+    Rerun on the supported Sage development image: Sage 11.0.beta5, Python 3.14.10, source
+    HEAD b0cd7d86e2, all checks passing there.
 ---
 
 ::: {.problem}

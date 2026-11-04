@@ -23,6 +23,20 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 24; it matches the printed text. The printed bracketed hint about the manifold obtained from $S^2\times I$ by a reflection was missing and is restored.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the computation: for orientable $M$, $H_2\cong H^1\cong\operatorname{Hom}(H_1,\ZZ)$
+    because $\operatorname{Ext}(H_0,\ZZ)=0$; for nonorientable $M$, Corollary 3.28 gives the
+    $\ZZ_2$ torsion and $\chi(M)=0$ with $H_3=0$ gives rank $r-1$. The examples are read too:
+    connected sums of $S^1\times S^2$ with lens spaces, and of the twisted $S^2$-bundle over $S^1$
+    (whose mapping torus computation gives $H_1=\ZZ$, $H_2=\ZZ_2$) with $S^1\times S^2$'s and lens
+    spaces.
 ---
 
 ::: {.problem}
@@ -30,6 +44,7 @@ Let $M$ be a closed connected 3-manifold, and write $H_1(M; \ZZ)$ as $\ZZ^r \opl
 Show that $H_2(M; \ZZ)$ is $\ZZ^r$ if $M$ is orientable and $\ZZ^{r-1} \oplus \ZZ_2$ if $M$ is nonorientable.
 In particular, $r \geq 1$ when $M$ is nonorientable.
 Using Exercise 6, construct examples showing there are no other restrictions on the homology groups of closed 3-manifolds.
+[In the nonorientable case consider the manifold $N$ obtained from $S^2 \times I$ by identifying $S^2 \times \{0\}$ with $S^2 \times \{1\}$ via a reflection of $S^2$.]
 :::
 
 ::: {.solution}

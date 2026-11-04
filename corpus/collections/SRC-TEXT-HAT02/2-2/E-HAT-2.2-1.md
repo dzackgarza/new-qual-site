@@ -23,6 +23,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof reviewed using degree theory and orthogonal-group homotopies.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof: $F$ has image in the closed southern hemisphere, so it is nullhomotopic and of
+    degree zero; a fixed point of $F$ off the equator is a fixed point of $f$, and on the equator
+    the two hemispheres agree on the boundary; the straight-line homotopy to the antipodal map is
+    defined because $(1-t)G(x)-tx=0$ forces $G(x)=x$; and $\deg(-\mathrm{id})=(-1)^{n+1}\ne0$
+    contradicts $\deg F=0$.
 ---
 
 ::: {.problem}

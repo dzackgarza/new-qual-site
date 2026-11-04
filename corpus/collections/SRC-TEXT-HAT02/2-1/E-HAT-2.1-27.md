@@ -16,6 +16,35 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 2.1, Exercise 27.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the five-lemma argument: naturality compares the two long exact sequences, the four outer vertical maps are isomorphisms because $f$ is a homotopy equivalence on $X$ and on $A$, so the middle map is too; part (b) is read at the level of the stated non-equivalence of pairs.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line, all three steps. (a): naturality gives a map from the long exact sequence of
+    `(X,A)` to that of `(Y,B)`; the four surrounding vertical maps are isomorphisms because `f` is a
+    homotopy equivalence on `X` and on `A`; the five lemma then gives the isomorphism on `H_n(X,A) ->
+    H_n(Y,B)`, and this is a genuine isomorphism of the relative groups, not of the absolute ones.
+    (b): the closure step is the tool and it is needed for exactly the reason the book's hint gives.
+    The second pair `(D^n, D^n - {0})` has relative homology `H_n = H_{n-1}(S^{n-1}) = Z`, the *same*
+    group as `H_n(D^n, S^{n-1})`, so comparing those two pairs directly proves nothing; what separates
+    them is taking closures: `S^{n-1}` is already closed while `D^n - {0}` is dense with closure
+    `D^n`, and a pair homotopy equivalence carries its maps and pair homotopies to the closure pairs,
+    so a pair equivalence `(D^n, S^{n-1}) ~ (D^n, D^n - {0})` would give one
+    `(D^n, S^{n-1}) ~ (D^n, D^n)`, whence `H_n(D^n,S^{n-1}) = Z` would have to equal
+    `H_n(D^n,D^n) = 0`. So the inclusion is not a pair homotopy equivalence, although `f` is a
+    homotopy equivalence on the total spaces and on the subspaces — which is precisely the hypothesis
+    of (a), so the lesson is the one the exercise intends: pair homotopy equivalence implies relative
+    homology isomorphism, and the converse direction fails because the two conditions on `f` (on `X`
+    and on `A`) do not suffice for a *pair* equivalence. No correction was needed.
 ---
 
 ::: {.problem}

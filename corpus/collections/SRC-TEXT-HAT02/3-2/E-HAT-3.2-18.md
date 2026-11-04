@@ -15,6 +15,20 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.2, Exercise 18; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both halves. For $M_g$ the symplectic basis gives a nondegenerate pairing on $H^1$, so
+    each nonzero class pairs nontrivially with something. If $M_g\simeq X\vee Y$ then one factor,
+    say $X$, has $H_2=0$ and nonzero $H_1$, hence $H^2(X;\ZZ)=0$ by the universal coefficient
+    theorem, and a nonzero class from that summand pairs trivially with everything. The
+    nonorientable case repeats the argument over $\ZZ_2$, where the pairing on $H^1(N_g;\ZZ_2)$ is
+    nondegenerate in the dual crosscap basis.
 ---
 
 ::: {.problem}

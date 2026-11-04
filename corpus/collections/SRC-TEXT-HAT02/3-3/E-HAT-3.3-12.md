@@ -23,10 +23,30 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-corrected
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The card wrote `\nu_i` for the first element of each commutator; the book prints
+    `[v_i, w_i]` of elements `v_i, w_i` in F, and the neighbouring letter is `w`, so the
+    Greek letter is a transcription slip. Compare the statement with Hatcher §3.3
+    exercise 12.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 12; it matches the printed text. The printed bracketed hint recalling the attaching word of $M_k$ and asking to construct a degree 1 map $M_j\to M_k$ was missing and is restored.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the construction: a relation of $r_k$ as $j$ commutators turns the attaching words into a
+    map $M_j\to M_k$ carrying the $2$-cell once over the $2$-cell, hence of degree $\pm1$, which
+    Exercise 11 forbids when $j<k$.
 ---
 
 ::: {.problem}
-As an algebraic application of the preceding problem, show that in a free group $F$ with basis $x_1, \ldots, x_{2k}$, the product of commutators $[x_1, x_2] \cdots [x_{2k-1}, x_{2k}]$ is not equal to a product of fewer than $k$ commutators $[\nu_i, w_i]$ of elements $\nu_i, w_i \in F$.
+As an algebraic application of the preceding problem, show that in a free group $F$ with basis $x_1, \ldots, x_{2k}$, the product of commutators $[x_1, x_2] \cdots [x_{2k-1}, x_{2k}]$ is not equal to a product of fewer than $k$ commutators $[v_i, w_i]$ of elements $v_i, w_i \in F$.
+[Recall that the $2$-cell of $M_k$ is attached by the product $[x_1, x_2]\cdots[x_{2k-1}, x_{2k}]$. From a relation $[x_1, x_2]\cdots[x_{2k-1}, x_{2k}] = [v_1, w_1]\cdots[v_j, w_j]$ in $F$, construct a degree 1 map $M_j \to M_k$.]
 :::
 
 ::: {.solution}

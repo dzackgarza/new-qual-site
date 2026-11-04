@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used the unit-edge path metric, truncated across components, and finite valence to compare metric and weak neighborhoods at vertices.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof: the truncated path metric is a metric, the metric topology sits inside the weak topology, and local finiteness of the vertex degrees makes the identity continuous the other way.
 ---
 
 ::: {.problem}

@@ -24,6 +24,30 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof checked at chain/skeletal/combinatorial level.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the two-stage argument: a simplex of the first barycentric subdivision is given by a strict chain of faces, so its barycenters are distinct, and in a $\Delta$-complex with distinct vertices per simplex the subdivided pieces meet in common faces, which is the simplicial condition.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line, both halves. First half: a `k`-simplex of the subdivision lies in one original
+    simplex and is determined by a strict chain of faces, so its vertices are barycentres of simplices
+    of strictly increasing dimension, hence distinct; distinctness of the *barycentres* follows because
+    distinct faces of a simplex have distinct barycentres. Second half, and this is where the real
+    content is: for `Y` with distinct vertices per simplex, a face of a simplex is determined by its
+    vertex set, because the characteristic map is injective on the standard simplex and distinct faces
+    have distinct vertex sets — that is exactly the hypothesis being cashed in; then in `Y'` a finite
+    vertex set spans at most one simplex, since the vertices are simplices of `Y`, a spanning set must
+    be orderable into a strict face chain, that ordering is unique because dimensions strictly increase
+    along proper inclusions, and each incidence is unambiguous by the previous step; and two simplices
+    of `Y'` meet in their common vertices, which form a chain because either chain is totally ordered by
+    inclusion, hence span a common face, which is unique. Those are precisely the two combinatorial
+    conditions for a simplicial complex. The two halves are consistent: step 1 gives `X'` the distinct
+    vertices property and steps 2-4 are then applied with `Y = X'` to conclude that `X''` is simplicial.
+    No correction was needed.
 ---
 
 ::: {.problem}

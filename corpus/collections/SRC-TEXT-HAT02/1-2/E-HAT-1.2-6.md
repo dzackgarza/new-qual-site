@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Replaced each puncture by a small boundary sphere, then filled the spheres by n-cells and applied Proposition 1.26(b).
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the local-finiteness estimate for the chosen balls, the radial deformation retraction onto $Z$, and the attachment of $n$-cells with $n\ge3$, which leaves $\pi_1$ unchanged.
 ---
 
 ::: {.problem}

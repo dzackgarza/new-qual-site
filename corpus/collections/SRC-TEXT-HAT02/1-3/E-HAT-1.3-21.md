@@ -23,6 +23,27 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Computed both amalgam presentations; described the torus case as a Bass-Serre tree of planes and strips and the RP2 case as a four-sheeted annulus-plus-two-spheres universal cover with its deck action.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: the two presentations from the gluing relation $a=c^2$, and the description of the universal covers. Not every line checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct throughout. For the torus space the amalgam is genuine — both maps
+    out of `D` are injective, `a` into `Z^2` and `c^2` into `Z` — so the presentation
+    `G = <b,c | [b,c^2]> = Z^2 *_Z Z` is right and the Bass-Serre tree of planes and strips is the
+    universal cover; the gluing check at an attaching line is the one that can fail, and it is
+    checked. For the second space the point is that the Möbius boundary represents `c^2` while the
+    `1`-skeleton circle of `RP^2` satisfies `a^2 = 1`, so `a = c^2` and `a^2 = 1` give `c^4 = 1`,
+    i.e. `pi_1 = Z/4`. The four-sheeted cover is right and its two pieces are right: the kernel of
+    `Z -> Z/4` is `4Z`, whose connected cover of the Möbius band is an annulus (even degree, so the
+    boundary is separated, not glued to itself), and `pi_1(RP^2) = Z/2` maps onto the order-two
+    subgroup of `Z/4`, so the projective piece has `[Z/4 : Z/2] = 2` components, each the double
+    cover `S^2`. Simple connectivity follows because the annulus generator is killed by the
+    hemisphere the equator bounds. No correction was needed.
 ---
 
 ::: {.problem}

@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Pushed an arbitrary loop off the Y-end of the join using path-connectedness of X, retracted it to X, and contracted it inside the cone X*{y0}.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the join model and the deformation retraction of $(X*Y)\setminus Y$ onto the $X$-end, which yields simple connectivity from path-connectedness of $X$.
 ---
 
 ::: {.problem}

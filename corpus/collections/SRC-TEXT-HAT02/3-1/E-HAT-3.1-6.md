@@ -22,6 +22,20 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the cochain, exact-sequence, and universal-coefficient calculations directly.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.1, Exercise 6; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Recomputed all six answers from the dualized $\Delta$-complex complexes. For the torus
+    $\ker\delta^1$ is one linear equation and $\operatorname{im}\delta^1$ the diagonal, giving
+    $G,G^2,G$. For $\RP^2$ and the Klein bottle the matrices are $[[-1,1,1],[1,-1,1]]$ and
+    $[[1,1,-1],[1,-1,1]]$, whose $2\times2$ minors have gcd $2$, giving $\ZZ,0,\ZZ_2$ and
+    $\ZZ,\ZZ,\ZZ_2$; over $\ZZ_2$ both have rank one, giving $\ZZ_2$ in every degree. The boundary
+    formulas used are the ones printed for these $\Delta$-complexes in §2.1.
 ---
 
 ::: {.problem}

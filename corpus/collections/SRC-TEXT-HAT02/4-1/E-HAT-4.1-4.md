@@ -21,7 +21,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
-
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct in substance and careful about the two conventions that make this
+    exercise error-prone: the deck transformation for `gamma` is fixed by the *endpoint* of the lifted
+    path, so `(T_gamma)_*` lands in `pi_n(X~, T_gamma x~_0)` and must be followed by the
+    change-of-basepoint isomorphism along `gamma~`; and the choice of `beta_{gamma~}` versus its inverse
+    is exactly the convention the card flags. With `p T_gamma = p`, projecting the corrected class gives
+    `gamma . p_*(alpha) = p_*(beta_{gamma~} (T_gamma)_*(alpha))`, i.e. under `p_*` the `pi_1`-action is
+    the deck action with basepoint correction.
 ---
 
 ::: {.problem}

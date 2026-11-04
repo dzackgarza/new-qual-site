@@ -22,6 +22,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Observed that the graph-of-spaces model collapses to the underlying graph when every vertex and edge group is trivial, so its fundamental group is free.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof: trivial vertex and edge groups give point vertex spaces and interval edge spaces, so the realization is the underlying graph itself and its fundamental group is free.
 ---
 
 ::: {.problem}

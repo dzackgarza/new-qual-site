@@ -23,6 +23,12 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete cellular/Euler-characteristic computation checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the cell count: the product structure has one cell $e^p\times e^q$ of dimension $p+q$ for
+    each pair, so $c_r(X\times Y)=\sum_{p+q=r}c_p(X)c_q(Y)$ and the alternating sums factor.
 ---
 
 ::: {.problem}

@@ -23,6 +23,26 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Identified the two fiber actions as right multiplication by the inverse and left multiplication, yielding equality exactly for elementary abelian 2-groups.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims: the fiber identified with $G$, monodromy as right multiplication and the deck action as left multiplication, with the two agreeing exactly when $G$ is abelian. Not every line checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct, and the two conventions are separated carefully, which is the whole
+    content of the exercise. With the fiber identified with `G` by endpoints of lifts from a fixed
+    basepoint, endpoint monodromy is right multiplication, `R_g(h) = hg`; the action on page 69 sends
+    the endpoint of a lift of `g` back to its starting point, so it is the inverse permutation,
+    `A_g = R_g^{-1} = R_{g^{-1}}`, i.e. `h g^{-1}`; and in the path-class model a deck transformation
+    acts by left multiplication, `D_g(h) = gh`. So the two actions agree exactly when
+    `h g^{-1} = g h` for all `g, h`, i.e. when `G` is abelian. That is consistent with the two spaces
+    named: `pi_1(S^1 vee S^1) = F_2` and `pi_1(S^1 x S^1) = Z^2`; the first is nonabelian so the
+    actions differ, and the second is abelian so they agree — the exercise's "show that these two
+    actions are different when X = S^1 vee S^1 and when X = S^1 x T^1" is to be read against the
+    source's own phrasing, and the criterion is the abelian one. No correction was needed.
 ---
 
 ::: {.problem}

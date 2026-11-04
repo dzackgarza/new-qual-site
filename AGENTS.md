@@ -1,6 +1,11 @@
 # Repository work documents
 
-Read the [issue tree](https://github.com/dzackgarza/new-qual-site/issues/83) for the ordered work (`itree next dzackgarza/new-qual-site` selects the next work unit),
+Use the [shared math container](https://github.com/dzackgarza/ai-review-ci/blob/main/SAGE-CONTAINER.md#use-the-image)
+(`ghcr.io/dzackgarza/sage:develop`) for Lean/elan, Sage with mypy, GAP,
+Julia/Oscar, Macaulay2, and Singular. The guide covers image pull/run commands,
+CI use, and the host launchers.
+
+Read [TODO.md](TODO.md) for the task DAG,
 [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) for named contribution policies,
 and [COMPLAINTS.md](COMPLAINTS.md) for mathematical issues and workflow papercuts.
 Apply `QUAL-05` when a problem is encountered, including outside the selected card.
@@ -299,8 +304,8 @@ and fifty-five minutes each — more total time than every blocked commit, stale
 hook that day combined.
 
 Ending a turn is a decision to stop, so make it deliberately. When a unit of work is committed,
-take the next one in the same turn from the first open work unit in the
-[issue tree](https://github.com/dzackgarza/new-qual-site/issues/83) (`itree next dzackgarza/new-qual-site`): open it,
+take the next one in the same turn from the highest-priority node with ready work in the
+[TODO.md milestone](TODO.md#execution-dag): open it,
 read it, begin. If work genuinely must pause — a run you are waiting on, a decision you cannot
 make — say what you are waiting for and what you will do when it returns, so the next turn begins
 with an instruction rather than a question.
@@ -710,8 +715,8 @@ statement are the opposite case: that is a duplicate, merged under `CARD-04`. Wh
 Completion of all solutions is a very low priority concern and is NOT a data
 issue. Solutions are authored content that will be filled in over time, after
 `publication-milestone`. The order of work across copy, intake, mathematical
-repair and proof adjudication is the sibling order of the
-[issue tree](https://github.com/dzackgarza/new-qual-site/issues/83).
+repair and proof adjudication is the
+[TODO.md milestone](TODO.md#execution-dag).
 
 Within data issues, in order of urgency:
 1. Incorrect data — problem statements, titles, or classifications that are
@@ -725,7 +730,7 @@ concerns, not data integrity problems.
 
 # Finding work
 
-The [issue tree](https://github.com/dzackgarza/new-qual-site/issues/83) holds the ordered work. Unsolved problems are the problem cards with no `solution`
+`TODO.md` holds the task DAG. Unsolved problems are the problem cards with no `solution`
 section; `just unsolved` lists them. Before taking a card, read it: a sibling may have solved it
 since the list was produced. Never author the same card as a sibling.
 
@@ -910,7 +915,7 @@ no `solves` relation: the solution is content of the problem it answers. There
 is no `solved` field; a solutions commit writes
 the body and the status follows from it.
 
-To write solutions, follow [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2), whose body carries the per-card procedure:
+To write solutions, follow `TODO.md` §7, "Author solutions" ([issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)):
 select one unsolved card, read the problem and its source, independently verify any source
 solution, write a complete Lamport-style structured proof in a `solution` section on that problem
 card in the layout `STYLE-08` fixes, and commit it before selecting the next card.

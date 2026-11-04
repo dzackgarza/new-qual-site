@@ -22,6 +22,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the resolution and Hom-complex calculations directly from the definitions.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.1, Exercise 4; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the three cases: $\operatorname{Hom}(\ZZ,C_n)=C_n$; $\operatorname{Hom}(\ZZ_m,C_n)=0$
+    because $C_n$ is free and so torsion-free; and $\operatorname{Hom}(\QQ,C_n)=0$ because a free
+    abelian group has no element divisible by every integer. Hence $h_n(X;\ZZ)=H_n(X)$ and
+    $h_n(X;\ZZ_m)=h_n(X;\QQ)=0$.
 ---
 
 ::: {.problem}

@@ -16,6 +16,22 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.C, Exercise 7; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof, including the case split. If $p=2$ or $\deg x$ is even the two tensor summands
+    of $\Delta x$ commute, and the Frobenius identity makes every $x^{p^r}$ primitive. Conversely
+    an exponent $m=p^rq$ with $q>1$ gives the mixed term $x^{(q-1)p^r}\otimes x^{p^r}$ with
+    coefficient $q\ne0$ in $\ZZ_p$, and distinct total powers cannot cancel it. For $p$ odd and
+    $\deg x$ odd, $y=x^2$ is primitive by the Koszul sign ($\Delta(x^2)=x^2\otimes1+1\otimes x^2$
+    because the two cross terms cancel), so the primitives are spanned by $x$ and the
+    $y^{p^r}=x^{2p^r}$; the odd part contributes only $x$ since $\Delta(xy^m)$ has the uncancelled
+    mixed term $x\otimes y^m$ for $m>0$.
 ---
 
 ::: {.problem}

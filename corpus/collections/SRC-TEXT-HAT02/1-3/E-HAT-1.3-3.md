@@ -31,6 +31,25 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: 'Added the converse: compactness and Hausdorffness of the base from those of the finite-sheeted cover.'
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both directions: the Hausdorff argument separates points in one fibre using the sheets, and compactness follows because the fibre is finite, so $p^{-1}$ of a compact closed set is a finite union of compact sheets, and finitely many of them cover $\widetilde X$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read both directions line by line against Hatcher, Algebraic Topology, §1.3 Exercise 3. Forward
+    direction: regularity of the compact Hausdorff $X$ gives $x\in V_x\subseteq\overline{V_x}\subseteq
+    U_x$ with $U_x$ evenly covered; the number of sheets over $U_x$ equals the fibre, which is finite by
+    hypothesis, so $p^{-1}(\overline{V_x})$ is a finite union of copies of the compact $\overline{V_x}$;
+    finitely many $V_x$ cover $X$. Converse: surjectivity gives compactness of $X=p(\widetilde X)$; for
+    Hausdorffness the sets $U'$ and $V'$ are open, being finite intersections of images of open sets
+    under the open map $p$, and contain $x$ and $y$ respectively; the contradiction is sound because for
+    $z\in U$ the whole fibre over $z$ is computed inside the single evenly covered set $U$. The
+    hypotheses $k,l\ge1$ used are exactly nonemptiness of the fibres. No gap found. Not checked: nothing
+    outside this exercise.
 ---
 
 ::: {.problem}

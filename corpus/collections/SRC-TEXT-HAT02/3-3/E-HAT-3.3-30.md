@@ -23,6 +23,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 30; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: in a collar the local orientation module of $M$ splits as the tensor product
+    of the local orientation module of $\partial M$ with the orientation module of the interval
+    factor, and dividing by the interval generator gives boundary orientations that agree on
+    overlaps.
 ---
 
 ::: {.problem}

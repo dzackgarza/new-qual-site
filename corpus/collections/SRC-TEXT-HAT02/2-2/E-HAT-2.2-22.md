@@ -23,6 +23,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete cellular/Euler-characteristic computation checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the lifted structure: the restriction of an $n$-sheeted covering over a contractible open
+    cell is a trivial covering, so each open cell has exactly $n$ lifts, and the lifted
+    characteristic maps give a CW structure with $c_k(\tilde X)=n\,c_k(X)$.
 ---
 
 ::: {.problem}

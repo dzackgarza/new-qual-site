@@ -23,6 +23,20 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.C, Exercise 3; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof: left multiplication $L_x$ maps the identity component to the component of $x$,
+    homotopy associativity gives $L_yL_x\simeq L_{yx}$, and $yx$ lies in the identity component, so
+    a path from $yx$ to $e$ inside it makes $L_{yx}\simeq L_e\simeq\mathrm{id}$. The same in the
+    other order gives a homotopy inverse, so each component is homotopy equivalent to the identity
+    component. The only input beyond the H-space axioms is that the component set is a group, which
+    is the exercise's hypothesis.
 ---
 
 ::: {.problem}

@@ -22,6 +22,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof reviewed using degree theory and orthogonal-group homotopies.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the construction: $g$ carries the first wedge summand identically onto $S^n$, so
+    $g\circ p$ is onto, and the pinch map sends $[S^n]$ to the sum of the two summand classes, so
+    $\deg f=1+(-1)=0$.
 ---
 
 ::: {.problem}

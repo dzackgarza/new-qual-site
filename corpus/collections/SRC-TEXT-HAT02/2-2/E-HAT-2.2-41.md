@@ -23,6 +23,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete Mayer--Vietoris/algebraic proof checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the dimension count: over a field the cellular chain groups have dimension $c_n$, and
+    $\dim C_n=\dim B_n+\dim H_n+\dim B_{n-1}$ makes the two boundary sums cancel in the alternating
+    sum.
 ---
 
 ::: {.problem}

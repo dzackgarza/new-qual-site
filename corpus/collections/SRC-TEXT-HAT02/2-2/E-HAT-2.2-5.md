@@ -23,6 +23,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof reviewed using degree theory and orthogonal-group homotopies.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the reflection formula: $R_u=R_{-u}$, a continuous path of unit vectors from $u$ to
+    $\pm v$ exists for $n\ge1$, and $x-2\langle x,u_t\rangle u_t$ depends continuously on $(x,t)$,
+    lands in $S^n$, and is a reflection for each $t$; $n=0$ has only the single hyperplane.
 ---
 
 ::: {.problem}

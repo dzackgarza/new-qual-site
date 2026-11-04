@@ -24,6 +24,20 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used the standard square-with-diagonal Delta-complex, obtaining two independent 2-boundaries whose quotient of C1 is Z plus Z/2.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the two triangles in the square model: $\partial U=a+b-c$ and $\partial L=a-b-c$ give the displayed matrix, whose image has rank two, so $H_1=\ZZ\oplus\ZZ/2$ and $H_2=0$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Certified in proofs/cards/DeltaComplexHomology.sage through Sage's ChainComplex: the
+    two-triangle complex has d^2 = 0 and homology (Z, Z + Z/2, 0), as the card states.
+
+    Rerun on the supported Sage development image: Sage 11.0.beta5, Python 3.14.10, source
+    HEAD b0cd7d86e2, all checks passing there.
 ---
 
 ::: {.problem}

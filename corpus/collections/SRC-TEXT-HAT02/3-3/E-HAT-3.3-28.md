@@ -16,10 +16,26 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-corrected
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The card wrote `\nu` for the first vector of the pair; the book prints "all pairs of
+    vectors v, w in a k dimensional subspace" (Hatcher §3.3 exercise 28).
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 28; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: nonsingularity makes $F^n\to V^*$ surjective, so $V^\perp$ has dimension
+    $n-k$; vanishing on $V\times V$ means $V\subseteq V^\perp$, which forces $k\le n/2$.
 ---
 
 ::: {.problem}
-Show that a nonsingular symmetric or skew-symmetric bilinear pairing over a field $F$, of the form $F^n \times F^n \to F$, cannot be identically zero when restricted to all pairs of vectors $\nu, w$ in a $k$-dimensional subspace $V \subset F^n$ if $k > n/2$.
+Show that a nonsingular symmetric or skew-symmetric bilinear pairing over a field $F$, of the form $F^n \times F^n \to F$, cannot be identically zero when restricted to all pairs of vectors $v, w$ in a $k$-dimensional subspace $V \subset F^n$ if $k > n/2$.
 :::
 
 ::: {.solution}

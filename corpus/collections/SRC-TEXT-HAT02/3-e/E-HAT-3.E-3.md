@@ -21,6 +21,28 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read and checked. The Bockstein computation is right: $\beta$ is a derivation, so on
+    $\widetilde H^*(M;\ZZ_p)^{\otimes k}$, which is the reduced cohomology of the smash product by
+    the Künneth theorem over the field $\ZZ_p$, it is the $k$-fold tensor product of the two-term
+    complex $a\mapsto b$, and that complex is acyclic because $\beta a=b\ne0$. Repaired: the card
+    asserted the vanishing and then ignored it, computing the integral groups by a separate
+    The solution now records the consequence *for reduced cohomology*, which is where the computation
+    lives: the reduced Bockstein cohomology vanishes, so the reduced $E_2$ is zero and
+    $(\widetilde H^*(X;\ZZ)/T)\otimes\ZZ_p=0$, hence $\widetilde H^*(X;\ZZ)$ is all torsion. Degree zero is separate
+    and must be kept out, because $\beta$ vanishes on $H^0(X;\ZZ_p)=\ZZ_p$: the unreduced $E_2$ is $\ZZ_p$ in
+    degree $0$, matching $H^0(X;\ZZ)=\ZZ$. An earlier version of this note, and of the solution, said
+    "$E_2=0$" and "$H^*(X;\ZZ)$ is all torsion" without that qualification, which contradicts $H^0(X;\ZZ)=\ZZ$.
+    Then the Koszul-complex computation supplies the torsion groups
+    and then the Koszul-complex computation supplies the torsion groups
+    $\widetilde H_{kn+j}(X;\ZZ)=(\ZZ_p)^{\binom{k-1}{j}}$. That computation is also checked: the
+    reduced chains of $X$ are the $k$-fold tensor product of $\ZZ\xrightarrow{p}\ZZ$, the
+    multiplicities obey Pascal's identity under Künneth, and the universal coefficient theorem
+    shifts by one degree through Ext, giving
+    $\widetilde H^{kn+r}(X;\ZZ)=(\ZZ_p)^{\binom{k-1}{r-1}}$ for $1\le r\le k$ and nothing else.
 ---
 
 ::: {.problem}
@@ -70,11 +92,17 @@ $$
 (-1)^{\gradeddegree{u_1}+\cdots+\gradeddegree{u_{j-1}}}
  u_1\otimes\cdots\otimes\beta(u_j)\otimes\cdots\otimes u_k.
 $$
-Thus the Bockstein complex is the $k$-fold tensor product of the two-term acyclic complex
+Thus the Bockstein complex is the $k$-fold tensor product of the two-term complex
 $$
-\ZZ_p\{a\}\xrightarrow{\cong}\ZZ_p\{b\}.
+\ZZ_p\{a\}\xrightarrow{\cong}\ZZ_p\{b\},
 $$
-In particular its Bockstein cohomology is zero.
+which is acyclic: $\beta a=b\ne0$, so $\ker\beta=\ZZ_p\{b\}$ and $\operatorname{im}\beta=\ZZ_p\{b\}$. Over a field the tensor product of acyclic complexes is acyclic, by the Künneth formula, so the Bockstein cohomology $\ker\beta/\operatorname{im}\beta$ of the **reduced** complex of $X$ vanishes in every degree. The unreduced complex is a different matter and must not be confused with it: in degree $0$ its differential is zero, so its $\ker\beta/\operatorname{im}\beta$ is $H^0(X;\ZZ_p)=\ZZ_p$.
+
+That vanishing is what the exercise asks for, and it answers half of the second question *for reduced cohomology*, which is where it is proved. The Bockstein spectral sequence of the coefficient sequence $0\to\ZZ\to\ZZ\to\ZZ_p\to0$ has $E_1=H^*(X;\ZZ_p)$ with $d_1=\beta$ and converges to $(H^*(X;\ZZ)/T)\otimes\ZZ_p$, $T$ the torsion subgroup. The acyclicity computed above is that of the *reduced* complex, so what vanishes is the reduced $E_2$. Degree zero must be kept separate, and it is the reason the two statements are compatible: $\beta$ is zero on $H^0(X;\ZZ_p)=\ZZ_p$, so the unreduced $E_2$ is $\ZZ_p$ in degree $0$ and zero above, matching $H^0(X;\ZZ)=\ZZ$. Hence
+$$
+\bigl(\widetilde H^*(X;\ZZ)/T\bigr)\otimes\ZZ_p=0,
+$$
+and since $X$ is a finite complex, $\widetilde H^*(X;\ZZ)$ is finitely generated and therefore all torsion, while $H^0(X;\ZZ)=\ZZ$ is untouched. The chain computation that follows identifies which torsion.
 
 To recover the integral groups explicitly, use cellular chains. The reduced cellular chain complex of $M$ is the two-term complex
 $$

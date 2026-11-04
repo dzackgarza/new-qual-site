@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used the boundary of the cross-polytope with vertices plus/minus coordinate vectors and descended its antipodal simplicial action.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the construction: the cross-polytope's boundary is a simplicial complex whose facets choose one vertex from each antipodal pair, and the antipodal identification folds it onto a $\Delta$-complex structure on $\RP^n$ with the stated vertices.
 ---
 
 ::: {.problem}

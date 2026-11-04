@@ -18,6 +18,16 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: >-
+    "Theorem 6.1" is the Day 7 sheet's own numbering, not an outside
+    reference: the sheet lists it as "Theorem 6.1 ([Rud76, Thm. 7.12])", the
+    statement that a uniform limit of continuous functions is continuous, and
+    sets its workshop exercise 3 as "Prove the results of Theorem 6.1
+    directly". The card states that exercise and adds the base-set hypothesis
+    E subset R from the sheet. Source: assets/attachments/Day_7_Sequences_and_Series_of_Functions_extracted.md.
 ---
 ::: {.problem}
 Assume that $\theset{f_n}$ is a sequence of continuous functions $f_n\colon E\subseteq\RR\to\RR$ which converges uniformly to $f$.

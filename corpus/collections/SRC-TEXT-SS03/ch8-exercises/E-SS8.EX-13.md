@@ -18,6 +18,14 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    The card's statement omitted the bracketed hint the book prints at PDF page 268, printed p.249: "[Hint: Consider the automorphism ψα (z) = (z − α)/(1 − αz) and apply the Schwarz lemma to ψ −1 f (w) ◦ f ◦ ψw .]"
+    A completeness audit of the collection against the book flagged the omission; the hint
+    is restored verbatim from the print. The mathematics of the statement is unchanged.
+
 ---
 
 ::: {.exercise}
@@ -31,6 +39,7 @@ $$\rho(f(z), f(w)) = \rho(z, w) \quad \text{for all } z, w \in \DD.$$
 
 (b) Prove the **Schwarz-Pick Lemma**: for any holomorphic function $f: \DD \to \DD$,
 $$\frac{\abs{f'(z)}}{1 - \abs{f(z)}^2} \le \frac{1}{1 - \abs{z}^2} \quad \text{for all } z \in \DD.$$
+[Hint: Consider the automorphism $\psi_\alpha(z)=(z-\alpha)/(1-\bar\alpha z)$ and apply the Schwarz lemma to $\psi_{f(w)}^{-1}\circ f\circ\psi_w$.]
 :::
 
 ::: {.solution}

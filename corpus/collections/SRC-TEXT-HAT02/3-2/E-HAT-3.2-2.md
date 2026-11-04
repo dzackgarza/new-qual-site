@@ -22,6 +22,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.2, Exercise 2; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: $H^p(A;R)=0$ for $p>0$ makes $H^p(X,A;R)\to H^p(X;R)$ surjective, so
+    positive-dimensional classes lift to the relative groups, and the relative cup product lands in
+    $H^{p+q}(X,A\cup B;R)=0$; forgetting the relative structure gives $x\smile y=0$. The $n$-fold
+    statement is the same iteration with $A_1\cup\cdots\cup A_n=X$.
 ---
 
 ::: {.problem}

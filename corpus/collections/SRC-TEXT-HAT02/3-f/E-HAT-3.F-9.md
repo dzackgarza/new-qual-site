@@ -21,6 +21,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Statement compared with Hatcher, Algebraic Topology, Sec. 3.F, AT.txt:16022, which prints
+    "(a) Ext(A, Z) is divisible iff A is torsionfree." The card previously read "is divisible if A is
+    torsionfree": the only-if half was dropped and unproved, and the earlier source-checked note
+    claiming that the stored statement matched was false. Both are repaired: the iff is restored and
+    the missing direction is proved from the card's own spliced sequence, since surjectivity of
+    multiplication by p forces Ext(_p A, Z) = 0, which is impossible for a nonzero Z/p-vector space.
+
 ---
 
 ::: {.problem}
@@ -31,7 +42,7 @@ $$\operatorname{Hom}(pA, \ZZ) \to \operatorname{Ext}(A_p, \ZZ) \to \operatorname
 where the map labeled "$p$" is multiplication by $p$.
 Use this to show:
 
-(a) $\operatorname{Ext}(A, \ZZ)$ is divisible if $A$ is torsionfree.
+(a) $\operatorname{Ext}(A, \ZZ)$ is divisible if and only if $A$ is torsionfree.
 
 (b) $\operatorname{Ext}(A, \ZZ)$ is torsionfree if $A$ is divisible, and the converse holds if $\operatorname{Hom}(A, \ZZ) = 0$.
 :::
@@ -79,7 +90,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 If $A$ is torsionfree, then $\operatorname{Ext}(A,\ZZ)$ is divisible.
 
@@ -91,7 +102,23 @@ Torsionfreeness gives ${}_pA=0$. Exactness at the second copy of $\operatorname{
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
+
+Conversely, if $\operatorname{Ext}(A,\ZZ)$ is divisible then $A$ is torsionfree.
+
+::: pf-proof
+
+Suppose ${}_pA\ne0$ for some prime $p$; then ${}_pA$ is a nonzero vector space over $\ZZ/p$.
+
+Divisibility makes multiplication by $p$ surjective on $\operatorname{Ext}(A,\ZZ)$, so in the spliced sequence $\operatorname{Ext}(A,\ZZ)\xrightarrow{p}\operatorname{Ext}(A,\ZZ)\to\operatorname{Ext}({}_pA,\ZZ)\to0$ the map into $\operatorname{Ext}({}_pA,\ZZ)$ is zero, whence $\operatorname{Ext}({}_pA,\ZZ)=0$.
+
+But for a nonzero finite-dimensional $\ZZ/p$-vector space $V$ one has $\Ext^1_\ZZ(V,\ZZ)\cong\operatorname{Hom}_{\ZZ/p}(V,\ZZ/p)\ne0$: the resolution $0\to\ZZ\xrightarrow{p}\ZZ\to\ZZ/p\to0$ gives $\Ext^1_\ZZ(\ZZ/p,\ZZ)\cong\ZZ/p$, $\Ext^1$ is additive over finite direct sums, and a nonzero finite-dimensional space over a field carries a nonzero linear functional. This contradicts $\operatorname{Ext}({}_pA,\ZZ)=0$, so ${}_pA=0$ for every prime $p$, that is, $A$ is torsionfree.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
 
 If $A$ is divisible, then $\operatorname{Ext}(A,\ZZ)$ is torsionfree.
 
@@ -103,7 +130,7 @@ Divisibility gives $A_p=0$ for every prime $p$. Exactness at the first copy of $
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 Conversely, if $\operatorname{Hom}(A,\ZZ)=0$ and $\operatorname{Ext}(A,\ZZ)$ is torsionfree, then $A$ is divisible.
 

@@ -24,6 +24,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete Mayer--Vietoris/algebraic proof checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the cover by the two cones: both are contractible and their intersection deformation
+    retracts onto the equatorial copy of $X$, so the connecting homomorphism is an isomorphism in
+    every degree.
 ---
 
 ::: {.problem}

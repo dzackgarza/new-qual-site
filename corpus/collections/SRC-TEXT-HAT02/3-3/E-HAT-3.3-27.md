@@ -23,10 +23,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 27; it matches the printed text. The printed bracketed hint about realizing row and column operations by a change of basis was missing and is restored.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the induction: a primitive $e$ has $B(e,-)$ primitive, so some $f$ pairs to $1$; the
+    symplectic correction $x'=x-B(x,f)e+B(x,e)f$ lies in $P^\perp$, which gives the orthogonal
+    splitting $L=P\oplus P^\perp$ and lets the rank drop by two; replacing $f$ by $-f$ puts the
+    block in the printed shape.
 ---
 
 ::: {.problem}
 Show that after a suitable change of basis, a skew-symmetric nonsingular bilinear form over $\ZZ$ can be represented by a matrix consisting of $2 \times 2$ blocks $\bigl(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\bigr)$ along the diagonal and zeros elsewhere.
+[For the matrix of a bilinear form, the following operation can be realized by a change of basis: Add an integer multiple of the $i$th row to the $j$th row and add the same integer multiple of the $i$th column to the $j$th column. Use this to fix up each column in turn. Note that a skew-symmetric matrix must have zeros on the diagonal.]
 :::
 
 ::: {.solution}

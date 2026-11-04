@@ -19,6 +19,14 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    The card's statement omitted the bracketed hint the book prints at PDF page 147, printed p.128: "[Hint: To prove the result, use the inequality −ξ p + ξu ≤ uq ...]"
+    A completeness audit of the collection against the book flagged the omission; the hint
+    is restored verbatim from the print. The mathematics of the statement is unchanged.
+
 ---
 
 ::: {.exercise}
@@ -43,6 +51,7 @@ $$
 and the sector $0 \leq \theta \leq \pi/\beta < \pi$, and let $\beta \downarrow 1$ to deduce that $e^{\pi z} g(z)$ is bounded in the closed upper half-plane. The same result holds in the lower half-plane, so by Liouville's theorem $e^{\pi z} g(z)$ is constant, as desired.
 
 (c) If $f$ is odd, then $\hat{f}(0) = 0$, and apply the above argument to $\hat{f}(z)/z$ to deduce that $f = \hat{f} = 0$. Finally, write an arbitrary $f$ as an appropriate sum of an even function and an odd function.
+[Hint: To prove the result, use the inequality $-\xi^p+\xi u\le u^q$, which is valid when $\xi$ and $u$ are non-negative. To establish this inequality, examine separately the cases $\xi^p\ge\xi u$ and $\xi^p<\xi u$; note also that the functions $\xi=u^{q-1}$ and $u=\xi^{p-1}$ are inverses of each other because $(p-1)(q-1)=1$.]
 :::
 
 ::: {.solution}

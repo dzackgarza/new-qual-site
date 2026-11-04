@@ -23,10 +23,37 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete cellular-chain proof checked.
+- event: source-corrected
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The card wrote the vertices of the simplex as the Greek letter, `\nu_0`,
+    where Hatcher writes them `v_0`; the vertex symbol is restored throughout.
+    Found by comparing the statement with the printed exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the ranks: $\operatorname{rank}C_i=\binom{n+1}{i+1}$ with the induction
+    $\binom{n+1}{i+1}-\binom{n}{i}=\binom{n}{i+1}$ simultaneously for cycles and boundaries, and
+    $\binom{n}{k+1}$ for the top group of the $k$-skeleton. The degree-zero case of the third step
+    as written compared $Z_0/B_0$ with the reduced homology of the simplex; that comparison is only
+    valid in the augmented complex, where $\partial_0$ is the augmentation, and the step is
+    repaired to say so.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Certificate for the repaired degree-zero step. proofs/cards/ChainLevelSteps.lean proves the two
+    ingredients: `choose_rank_step`, Pascal's identity
+    $\binom{n+1}{i+1}-\binom{n}{i}=\binom{n}{i+1}$ in the form the rank induction uses, and
+    `ker_ne_top_of_surjective_to_int`, that an augmentation onto $\ZZ$ has proper kernel, so the
+    augmented degree-zero cycles are not the ordinary $Z_0=C_0$. The passage from the chain complex
+    of the simplex to its homology remains Hatcher's computation and is not formalized.
 ---
 
 ::: {.problem}
-Let $\Delta^n = [\nu_0, \cdots, \nu_n]$ have its natural $\Delta$-complex structure with $k$ simplices $[\nu_{i_0}, \cdots, \nu_{i_k}]$ for $i_0 < \cdots < i_k$.
+Let $\Delta^n = [v_0, \cdots, v_n]$ have its natural $\Delta$-complex structure with $k$ simplices $[v_{i_0}, \cdots, v_{i_k}]$ for $i_0 < \cdots < i_k$.
 Compute the ranks of the simplicial (or cellular) chain groups $\Delta_i(\Delta^n)$ and the subgroups of cycles and boundaries.
 [Hint: Pascal's triangle.] Apply this to show that the $k$ skeleton of $\Delta^n$ has homology groups $\tilde{H}_i((\Delta^n)^k)$ equal to 0 for $i < k$, and free of rank $\binom{n}{k+1}$ for $i = k$.
 :::
@@ -119,13 +146,13 @@ $$
 
 ::: pf-proof
 
-In degrees at most $k$, the chain groups and boundary maps of $K$ agree with those of the full simplex. If $i<k$, then both $C_i$ and $C_{i+1}$ are present, so
+Work in the augmented chain complexes, in which $\partial_0$ is the augmentation $C_0\to\ZZ$; there $Z_0$ is the kernel of the augmentation rather than $C_0$. In degrees at most $k$ the chain groups and boundary maps of $K$ agree with those of the full simplex. If $i<k$, then $\partial_{i+1}$ is present in both, so
 $$
 Z_i(K)=Z_i(\Delta^n),
 \qquad
 B_i(K)=B_i(\Delta^n).
 $$
-Since the full simplex has zero reduced homology, the quotient $Z_i/B_i$ is zero.
+The augmented complex of $\Delta^n$ is exact, so its cycles and boundaries agree in every degree, and the quotient $Z_i(K)/B_i(K)$ is zero.
 
 :::
 

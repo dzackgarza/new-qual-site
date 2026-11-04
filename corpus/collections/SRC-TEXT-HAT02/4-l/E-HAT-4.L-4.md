@@ -22,10 +22,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-corrected
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Statement repaired against Hatcher's printed text: the card had dropped printed matter
+    (a bracketed hint or pointer, or a printed sentence) that an audit located by word-by-word
+    comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
+    applying the repair. The restored text is the printed wording and the mathematics of the
+    statement is otherwise unchanged.
 ---
 
 ::: {.problem}
-Show there is no fiber bundle $S^7 \to S^{23} \to \OP^2$.
+Show there is no fiber bundle $S^7 \to S^{23} \to \OP^2$. [Compute the cohomology ring of the mapping cone of the projection $S^{23} \to \OP^2$ via Poincaré duality or the Thom isomorphism.]
 :::
 
 ::: {.solution}

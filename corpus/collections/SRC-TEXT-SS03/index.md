@@ -169,6 +169,12 @@ source:
       comment: Ch. 3, Problem 1
     - id: E-SS3.PR-2
       comment: Ch. 3, Problem 2
+    - id: E-SS3.PR-3
+      comment: Ch. 3, Problem 3
+    - id: E-SS3.PR-4
+      comment: Ch. 3, Problem 4
+    - id: E-SS3.PR-5
+      comment: Ch. 3, Problem 5
   - name: Ch4 Exercises
     problems:
     - id: E-SS4.EX-1
@@ -429,6 +435,8 @@ source:
       comment: Ch. 9, Problem 2
     - id: E-SS9.PR-3
       comment: Ch. 9, Problem 3
+    - id: E-SS9.PR-4
+      comment: Ch. 9, Problem 4
   - name: Ch10 Exercises
     problems:
     - id: E-SS10.EX-1
@@ -469,6 +477,18 @@ source:
       comment: Ch. 10, Problem 5
     - id: E-SS10.PR-6
       comment: Ch. 10, Problem 6
+  - name: Appendix A Problems
+    problems:
+    - id: E-SSA.PR-1
+      comment: Appendix A, Problem 1
+    - id: E-SSA.PR-2
+      comment: Appendix A, Problem 2
+    - id: E-SSA.PR-3
+      comment: Appendix A, Problem 3
+    - id: E-SSA.PR-4
+      comment: Appendix A, Problem 4
+    - id: E-SSA.PR-5
+      comment: Appendix A, Problem 5
 ---
 
 

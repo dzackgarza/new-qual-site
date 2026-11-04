@@ -26,6 +26,18 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Moved the statement into a problem block and stated Proposition 1B.9 from Hatcher, Algebraic Topology, p. 90.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.1, Exercise 13; it matches the printed text. The card also states Proposition 1B.9, which the exercise refers to; that is extra context, not a change to the exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the composition: Proposition 1B.9 gives the bijection with $\operatorname{Hom}(\pi_1X,G)$;
+    abelianness factors that through $\pi_1^{ab}=H_1(X)$; the universal coefficient sequence with
+    $\operatorname{Ext}(H_0,G)=\operatorname{Ext}(\ZZ,G)=0$ identifies it with $H^1(X;G)$; and the
+    induced map on $H_1$ is the abelianization of the induced map on $\pi_1$.
 ---
 
 ::: {.problem}

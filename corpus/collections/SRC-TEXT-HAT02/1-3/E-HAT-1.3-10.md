@@ -23,6 +23,29 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Classified connected finite covers by transitive permutation pairs modulo simultaneous conjugacy, yielding three double covers and seven triple covers.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the step claims and the enumeration: connected $n$-sheeted covers as transitive pairs of permutations up to simultaneous conjugacy, giving the three two-sheeted classes. The three-sheeted count was not recomputed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line and recomputed the enumeration independently. Both totals are right: three
+    connected double covers and seven connected triple covers, matching the number of index-`n`
+    subgroups of the free group on two generators for `n = 2, 3`, which is what these classes
+    count. The double covers are right because `S_2` is abelian, so simultaneous conjugacy is
+    trivial and the classes are exactly `(tau,1)`, `(1,tau)`, `(tau,tau)`. For the triple covers
+    the split by transitive subgroup is right, since the transitive subgroups of `S_3` are `A_3`
+    and `S_3`. In the `A_3` case the four classes are exhaustive and distinct for the reason
+    given: conjugating both entries by an odd permutation inverts both `3`-cycles, so `(1,c)` is a
+    single class — it also contains `(1,c^{-1})` — while diagonal entries cannot become off-diagonal
+    ones, keeping `(c,c)` and `(c,c^{-1})` apart. In the `S_3` case the orbit counts confirm that
+    each listed shape is a single class: six ordered pairs of a transposition and a `3`-cycle with
+    trivial stabilizer, six ordered pairs of two distinct transpositions likewise, and the excluded
+    shapes — `(t,t)`, `(t,1)` — fail transitivity because a transposition fixes a sheet. No
+    correction was needed.
 ---
 
 ::: {.problem}

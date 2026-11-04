@@ -24,6 +24,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete Mayer--Vietoris/algebraic proof checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the cover: $A=X\cup V$ and $B=U\cup Y$ have interiors covering $X\vee Y$, retract to $X$
+    and $Y$, and meet in $U\cup V$, which retracts to the common basepoint and is contractible; the
+    reduced Mayer-Vietoris sequence then makes the middle map an isomorphism.
 ---
 
 ::: {.problem}

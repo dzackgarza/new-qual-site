@@ -12,3 +12,6 @@ _site/
 
 # Scratch space. Never part of the repo.
 tmp/
+
+# Scratch space used while probing the toolchain.
+.scratch/

@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Built explicit homotopy-equivalence maps by uniformly collapsing a neighborhood of the common tangency point, then separated the spaces by first countability at the wedge point.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Review the circlewise maps in both directions, the degree-one collapse, and the first-countability argument that separates $X$ from the CW wedge.
 ---
 
 ::: {.problem}

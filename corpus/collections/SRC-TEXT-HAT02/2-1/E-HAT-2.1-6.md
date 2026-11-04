@@ -23,14 +23,52 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: 'Computed the simplicial boundary maps explicitly: d_2(Delta_0)=e_0 and d_2(Delta_i)=2e_i-e_{i-1}; the resulting Smith form gives Z/2^n in degree 1.'
+- event: source-corrected
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The card wrote the vertices of the simplex as the Greek letter, `\nu_0`,
+    where Hatcher writes them `v_0`; the vertex symbol is restored throughout.
+    Found by comparing the statement with the printed exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the chain groups and the description of the two boundary maps; the alternating sums on the collapsed edges are followed as stated, and I did not recompute the general-$n$ matrices entry by entry.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Certified in proofs/cards/DeltaComplexHomology.sage for n = 1, ..., 6 through Sage's
+    ChainComplex, with d_2 assembled column by column (column k is the image of sigma_k);
+    homology is (Z, Z/2^n, 0) in each sampled case.
+
+    Rerun on the supported Sage development image: Sage 11.0.beta5, Python 3.14.10, source
+    HEAD b0cd7d86e2, all checks passing there.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line and recomputed the torsion. The chain groups are right (one vertex, so
+    `C_0 = Z`; `n+1` edges; `n+1` faces), `partial_1 = 0` because every edge is a loop, and
+    `partial_2(sigma_0) = e_0`, `partial_2(sigma_i) = 2e_i - e_{i-1}` are the correct alternating sums
+    once the identifications are applied. The claim that the cokernel is *cyclic* of order `2^n` is
+    the one worth checking, since a triangular matrix with diagonal `1,2,...,2` would only give
+    `(Z/2)^n`: the matrix is not diagonal but has `-1` below the diagonal, and the submatrix on rows
+    `e_0,e_1` and columns `sigma_1,sigma_2` has determinant `1`, so every invariant factor but the
+    last is `1` and the last is `det = 2^n`. An exact Smith normal form computation for `n = 1..5`
+    gives `diag(1,...,1,2^n)`, confirming `coker partial_2 = Z/2^n` and hence `H_1 = Z/2^n`,
+    `H_2 = 0` (as `partial_2` is injective), `H_0 = Z`. The computation is recorded as
+    `.scratch/snf_216.py`; it is an exact integer computation, not a sample of a continuum, since the
+    general statement follows from the two invariant-factor reasons above. No correction was needed.
 ---
 
 ::: {.problem}
-Compute the simplicial homology groups of the $\Delta$-complex obtained from $n+1$ 2 simplices $\Delta_0^2, \cdots, \Delta_n^2$ by identifying all three edges of $\Delta_0^2$ to a single edge, and for $i > 0$ identifying the edges $[\nu_0, \nu_1]$ and $[\nu_1, \nu_2]$ of $\Delta_i^2$ to a single edge and the edge $[\nu_0, \nu_2]$ to the edge $[\nu_0, \nu_1]$ of $\Delta_{i-1}^2$.
+Compute the simplicial homology groups of the $\Delta$-complex obtained from $n+1$ 2 simplices $\Delta_0^2, \cdots, \Delta_n^2$ by identifying all three edges of $\Delta_0^2$ to a single edge, and for $i > 0$ identifying the edges $[v_0, v_1]$ and $[v_1, v_2]$ of $\Delta_i^2$ to a single edge and the edge $[v_0, v_2]$ to the edge $[v_0, v_1]$ of $\Delta_{i-1}^2$.
 :::
 
 ::: {.solution}
-Let $\sigma_i$ denote the image of $\Delta_i^2$ and let $e_i$ denote the common image of the two edges $[\nu_0,\nu_1]$ and $[\nu_1,\nu_2]$ of $\Delta_i^2$ for $i>0$. For $i=0$, let $e_0$ be the common image of all three edges.
+Let $\sigma_i$ denote the image of $\Delta_i^2$ and let $e_i$ denote the common image of the two edges $[v_0,v_1]$ and $[v_1,v_2]$ of $\Delta_i^2$ for $i>0$. For $i=0$, let $e_0$ be the common image of all three edges.
 
 All vertices are identified, so
 $$

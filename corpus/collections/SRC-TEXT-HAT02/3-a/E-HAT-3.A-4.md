@@ -21,6 +21,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.A, Exercise 4; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: $\otimes$ commutes with colimits as a left adjoint, and $\operatorname{Tor}$
+    is computed from the functorial free presentation, whose filtered colimit is again torsion-free
+    and hence flat, so the tensorized sequence stays exact and the colimits interchange. The proof
+    leans on torsion-free groups being flat, which is the standard Baer criterion.
 ---
 
 ::: {.problem}

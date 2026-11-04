@@ -22,6 +22,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the resolution and Hom-complex calculations directly from the definitions.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.1, Exercise 2; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both halves: the endomorphism $[n]_G$ acts on each cochain group as multiplication by $n$,
+    and $[n]_H$ lifts to the chain endomorphism multiplying each $F_i$ by $n$, which commutes with
+    the differentials, so the contravariant map is precomposition and again multiplies cochain
+    values by $n$.
 ---
 
 ::: {.problem}

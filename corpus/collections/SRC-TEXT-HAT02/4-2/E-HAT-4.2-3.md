@@ -21,6 +21,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read against Hatcher Sec. 4.2 Exercise 3 (AT.txt 19336-19338) and correct as it stands. Verified
+    each step: the preimage of the deleted point is one free G-orbit, so the universal cover is
+    S^{2n+1} minus m points, which is homotopy equivalent to a wedge of m-1 copies of S^{2n}; Hurewicz
+    applies since this is (2n-1)-connected; and the module is computed by equivariant Alexander duality
+    as the reduced H^0 of the free G-set, which is Z[G]/Z.N. Checked the isomorphism Z[G]/Z.N = I_G
+    directly: ker(t-1) on Z[G] is exactly Z.N, since (t-1)x = 0 forces all coefficients of x to be equal;
+    so the displayed exact sequence is right and the answer I_G = (t-1)Z[G] is correct. Not checked:
+    nothing outside this exercise.
 
 ---
 

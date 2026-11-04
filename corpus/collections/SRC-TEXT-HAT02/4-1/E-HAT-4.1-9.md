@@ -21,7 +21,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
-
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line. Correct in its two parts. The extension by `pi_0(X,A,x_0) = pi_0(X,x_0) /
+    i_* pi_0(A,x_0)` is exact at the tail because the components of `X` mapping to the distinguished
+    relative class are precisely those meeting `A`, and the quotient map is onto. (a) The five-lemma in
+    degrees `>= 2` is the ordinary one; in the pointed-set tail the argument is the appropriate
+    replacement — exactness says that the fiber of the next map over the distinguished element is the
+    image of the preceding map — and the hypothesis that the four surrounding maps are bijections *for all
+    basepoints* is exactly what allows rebasing at an arbitrary component, which is the one place the
+    naive group-theoretic version fails. (b) The triple sequence stops at `pi_0(A,B,x_0)` because there is
+    no distinguished element of `pi_0(B)` to feed the next term. No correction was needed.
 ---
 
 ::: {.problem}

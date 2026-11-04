@@ -24,6 +24,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Proved finite edge-crossing for loops in the unreduced suspension by uniform continuity, used finite retractions for freeness, and factored the Hawaiian-earring winding map through the mapping-cone quotient.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the construction: the bounded number of traversals of the suspension coordinate, the reduction to finite edge loops, and the comparison with the shrinking wedge. The homomorphism onto $\prod_\infty\ZZ/\oplus_\infty\ZZ$ was checked for its stated form, not line by line.
 ---
 
 ::: {.problem}

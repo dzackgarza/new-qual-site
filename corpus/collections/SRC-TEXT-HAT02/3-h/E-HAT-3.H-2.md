@@ -14,6 +14,11 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof repaired: the card invoked Poincare duality for an arbitrary local system, which is false -- for M = N_g with the trivial system H_2(M;Z)=0 while H^0(M;Z)=Z. The step is replaced by the duality that actually applies, Theorem 3H.6 for the orientation system, with the fundamental class supplied by Example 3H.3. The groups the card computes are unchanged.
 ---
 
 ::: {.problem}
@@ -34,11 +39,37 @@ Let $\mathcal{L} = \mathcal{M}_\ZZ$ be the orientation local coefficient system 
 :::
 
 ::: pf-step
-By Poincaré Duality for manifolds with local coefficients, for any closed $n$-manifold:
+Duality must be applied to the *orientation* system, not to an arbitrary one. In the generality stated,
+Poincaré duality with local coefficients is false: for $M=N_g$ and $\mathcal{L}=\ZZ$ the trivial
+system, $H_2(M;\ZZ)=0$ (Theorem 3.26: $H_n(M;\ZZ)$ is $\ZZ$ for $M$ closed, connected and orientable and $0$ otherwise; Example 3H.3 uses exactly this), whereas $H^0(M;\ZZ)=\ZZ$ because $M$ is connected; so
+"$H_k(M;\mathcal L)\cong H^{n-k}(M;\ZZ)$ for any closed $n$-manifold and any local system" fails
+already for $k=n=2$. What is true, and all that is used, is the following.
+
+Write $\widetilde{\ZZ}=M_\ZZ$ for the system with fibre $\ZZ$ on which a loop acts by $+1$ or $-1$
+according to its orientation character $w_1\colon\pi_1M\to\{\pm1\}$; this is the $\mathcal L$ of the
+present computation, and $M$ is closed, connected and nonorientable.
+
+(i) *Fundamental class.* By Example 3H.3 (the exact sequence of the twofold orientable cover
+$\widetilde M\to M$): $H_n(M;\widetilde{\ZZ})\approx H_n(\widetilde M)\approx\ZZ$; Hatcher identifies
+the resulting class as a fundamental class for the nonorientable manifold $M$. In the paragraph
+preceding Theorem 3H.6 he states the version of duality that the cap product with a fundamental class
+gives for a bundle of rings $E$, under the assumption "that there exists a fundamental class
+$[M]\in H_n(M;E)$ restricting to a generator of $H_n(M,M-\{x\};E)$ for all $x\in M$", and notes that
+the class just constructed from $H_n(M;\widetilde{\ZZ})$ can be viewed as such a class — the *pure
+imaginary fundamental class* $[M]\in H_n(M;E)$ for $E$ the bundle of rings $\ZZ[i]$ with conjugation
+acting by $\omega=w_1$.
+
+(ii) *The duality in the form used.* Cap product with that class is an isomorphism
 $$
-H_k(M; \mathcal{L}) \cong H^{n-k}(M; \ZZ).
+[M]\frown(-)\colon H^{k}(M;\ZZ)\;\xrightarrow{\ \approx\ }\;H_{n-k}(M;\widetilde{\ZZ})
 $$
-For $n = 2$, this gives $H_k(M; \mathcal{L}) \cong H^{2-k}(M; \ZZ)$.
+(Theorem 3H.6, first displayed isomorphism). Replacing $k$ by $n-j$ gives, for all $j$,
+$$
+H_j(M;\mathcal M_{\ZZ})=H_j(M;\widetilde{\ZZ})\;\cong\;H^{\,n-j}(M;\ZZ).
+$$
+For the surface $n=2$ this is exactly $H_j(M;\mathcal L)\cong H^{2-j}(M;\ZZ)$, $j=0,1,2$.
+
+(For an *orientable* closed connected $n$-manifold the analogous statement with $\mathcal L=\ZZ$ is ordinary Poincaré duality, Theorem 3.30; the $M$ of this exercise is nonorientable, so Theorem 3H.6 is the applicable form.)
 :::
 
 :::

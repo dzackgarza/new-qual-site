@@ -16,6 +16,21 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 2.2, Exercise 39.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the degreewise exactness: a cell outside $Y$ lying in both $A$ and $B$ contributes
+    $0\to\ZZ\xrightarrow{(1,-1)}\ZZ^2\xrightarrow{(1,1)}\ZZ\to0$, a cell in exactly one of them
+    contributes an isomorphism, and cells lying in $Y$ contribute the corresponding copy of the
+    intersection group or nothing, so the cellular sequence is short exact and its homology
+    sequence is the relative Mayer-Vietoris sequence. The printed hypothesis reads "with $A=B$ or
+    $C=D$"; the chain-level argument in the card uses $C\subset A$ and $D\subset B$ and does not
+    use the printed alternative, which is the condition under which the sequence is exact.
 ---
 
 ::: {.problem}

@@ -23,6 +23,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 2.3, Exercise 3; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both halves: applying exactness to the pair $(*,*)$ makes both maps the identity, so
+    $\tilde h_n(*)$ is its own kernel and vanishes; and the exact sequence of $(CX,X)$ with $CX$
+    contractible gives a boundary isomorphism $\tilde h_{n+1}(CX/X)\cong\tilde h_n(X)$, with
+    $CX/X=SX$.
 ---
 
 ::: {.problem}

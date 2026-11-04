@@ -21,6 +21,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.B, Exercise 4; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: naturality of the cross product identifies the local class of $[M]\times[N]$
+    at $(x,y)$ with the product of the local classes, and after excision that is the cross product
+    of the standard local generators of $\RR^m$ and $\RR^n$, which is the standard generator. A
+    class with that property at every point is the fundamental class.
 ---
 
 ::: {.problem}

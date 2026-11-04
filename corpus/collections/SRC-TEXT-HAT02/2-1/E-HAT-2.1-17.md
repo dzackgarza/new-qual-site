@@ -24,6 +24,34 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: 'Computed part (a) from the long exact sequence and part (b) from the source figure: collapsing A gives a wedge of two tori, while collapsing B gives a torus with two points identified.'
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the computation from the long exact sequence: for $m$ points in $S^2$ the sequence gives $H_2=\ZZ$, $H_1=\ZZ^{m-1}$ and $H_0=0$, and for the torus the same method gives $H_2=\ZZ$, $H_1=\ZZ^{m+1}$ and $H_0=0$; part (b) is read at the level of the stated quotients $X/A$ and $X/B$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line, every case. (a) With `A` a set of `m >= 1` points, `H_0(A) = Z^m` and `H_k(A)
+    = 0` for `k > 0`. For `S^2`: `H_k(S^2,A) = H_k(S^2)` for `k >= 2` since `H_{k-1}(A) = 0`, giving
+    `Z` in degree `2`; the low-degree segment `0 -> H_1(S^2,A) -> Z^m -> Z -> H_0(S^2,A) -> 0` with
+    the sum map has `H_1 = ker = Z^{m-1}` and `H_0 = 0`. For `T^2`: again degree `2` is `H_2(T^2) =
+    Z`, and the segment is `0 -> Z^2 -> H_1(T^2,A) -> Z^{m-1} -> 0`, which splits because the quotient
+    is free, giving `Z^{m+1}`, with `H_0 = 0`. (b) For the separating circle `A`, cutting along it and
+    capping gives two tori meeting in a point, so `X/A = T^2 vee T^2`; `(X,A)` is a good pair, so
+    `H_*(X,A) = reduced H_*(T^2 vee T^2)`, i.e. `Z^4` in degree `1`, `Z^2` in degree `2`, nothing else,
+    and the reduced degree-zero group vanishes as stated. For the nonseparating circle `B`, cutting
+    gives a genus-one surface with two boundary circles, so `X/B` is a torus with two points
+    identified, and identifying two points of a path-connected space is homotopy equivalent to
+    wedging on `S^1`, so `X/B = T^2 vee S^1` and `H_*(X,B)` is `Z^3` in degree `1`, `Z` in degree `2`.
+    The case `A = empty` is separate and is the reason `m >= 1` was assumed. With `A` empty there is no
+    `H_0(A) -> H_0(X)` to be surjective, and `H_k(X, empty) = H_k(X)`, so the answers are the absolute
+    groups: for `S^2`, `Z` in degrees `0` and `2` and `0` in degree `1` (note `H_0` is `Z`, not `0`,
+    and the formula `Z^{m-1}` does not extend to `m = 0`); for `T^2`, `Z`, `Z^2`, `Z` in degrees
+    `0`, `1`, `2`. All the hypotheses used are checked: nonemptiness of `A` for surjectivity of `H_0(A) -> H_0(X)`,
+    with the empty case now stated separately as the absolute groups, goodness of the pairs for the `X/A` and `X/B` identifications, and freeness of `Z^{m-1}` for the
+    splitting. No correction was needed.
 ---
 
 ::: {.problem}
@@ -35,6 +63,8 @@ audit:
 
 ::: {.solution}
 Let $A$ first denote a finite set of $m\ge1$ points in a connected space $X$ equal to $S^2$ or $T^2=S^1\times S^1$.
+
+If $A$ is empty there is nothing to collapse and the pair is the absolute case: $H_k(X,\emptyset)=H_k(X)$ for every $k$, so $S^2$ gives $\ZZ$ in degrees $0$ and $2$ and $0$ in degree $1$, and $T^2$ gives $\ZZ,\ZZ^2,\ZZ$ in degrees $0,1,2$. The computations below therefore assume $m\ge1$, which is exactly what makes $H_0(A)\to H_0(X)$ surjective; at $m=0$ that map is not onto and the formula $\ZZ^{m-1}$ does not extend, $H_0$ being $\ZZ$ rather than $0$.
 
 ::: pf
 

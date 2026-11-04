@@ -23,6 +23,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete cellular/Euler-characteristic computation checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the inclusion-exclusion: every cell of $X=A\cup B$ lies in $A$ or in $B$ and in both
+    exactly when it is a cell of $A\cap B$, so the cell counts satisfy inclusion-exclusion
+    degreewise and the alternating sum is linear; the remark's Mayer-Vietoris version for open
+    covers with bounded finite-rank homology is correct, the alternating sum of dimensions in a
+    bounded exact sequence being zero.
 ---
 
 ::: {.problem}

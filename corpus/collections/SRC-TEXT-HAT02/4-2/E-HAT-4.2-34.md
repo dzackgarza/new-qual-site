@@ -21,6 +21,20 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read against Hatcher Sec. 4.2 Exercise 34 (AT.txt 19481-19484). One false intermediate
+    assertion, replaced: the card said the map C_p -> C_f "is an isomorphism in degree 2", which is
+    impossible. Since f_* = 0 on H_2, the cofiber sequence T^3 -> S^2 -> C_f gives the split exact
+    sequence 0 -> H_2(S^2) -> H_2(C_f) -> H_1(T^3) -> 0, so H_2(C_f;Z) = Z^4 and H_1(C_f;Z) = 0,
+    hence H^2(C_f;Z) = Z^4 while H^2(C_p;Z) = Z; the map is injective, which is all the argument
+    needs, and the card now says so and records the computation. Nothing downstream changes: the
+    degree-4 step is an isomorphism because the suspension of q has degree 1, so x-bar^2 != 0, and the
+    nullhomotopy contradiction from C_f = S^2 v Sigma T^3 stands. Also verified: q_* = 0 on reduced
+    homology and pi_*(T^3) = 0 above degree 1. Not checked: nothing outside this exercise.
+
 ---
 
 ::: {.problem}
@@ -67,7 +81,7 @@ The Hopf mapping cone is $C_p\simeq\CP^2$. If $x\in H^2(C_p;\ZZ)$ is its standar
 $$
 x^2\ne0\in H^4(C_p;\ZZ).
 $$
-The induced map is an isomorphism in degree $2$, since it is the identity on the $S^2$ subspace. In degree $4$, the quotient description of mapping cones identifies the induced map with the suspension of
+The induced map is injective in degree $2$: it is the identity on the $S^2$ subspace, and since $f_*$ is zero on $H_2$ the cofiber sequence $T^3\to S^2\to C_f$ gives the split exact sequence $0\to H_2(S^2;\ZZ)\to H_2(C_f;\ZZ)\to H_1(T^3;\ZZ)\to0$, so $H_2(C_f;\ZZ)\cong\ZZ^4$ and $H_1(C_f;\ZZ)=0$, hence $H^2(C_f;\ZZ)\cong H^2(S^2;\ZZ)\oplus H^1(T^3;\ZZ)$. In degree $4$, the quotient description of mapping cones identifies the induced map with the suspension of
 $$
 q:T^3\to S^3.
 $$

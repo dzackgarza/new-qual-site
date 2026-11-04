@@ -22,6 +22,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the cochain, exact-sequence, and universal-coefficient calculations directly.
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.1, Exercise 8; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the three parts: $H^i(S^n;G)$ comes from the pair $(D^{n+1},S^n)$ and from reducing
+    Mayer-Vietoris to $\tilde H^{i-1}(S^{n-1})$; the good-pair isomorphism is carried to cohomology
+    by naturality of the universal coefficient sequence together with the short five lemma; and for
+    a retract $i^*r^*$ is the identity, so $i^*$ is split surjective and the connecting map
+    vanishes.
 ---
 
 ::: {.problem}

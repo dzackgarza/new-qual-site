@@ -21,6 +21,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read against Hatcher Sec. 4.2 Exercise 10 (AT.txt 19362-19366) and correct as it stands. pi'_n is
+    the quotient by the t-action, so M/(t-1)M = Z[t,t^{-1}]/(p, t-1), and evaluating at t=1 gives
+    Z/(p(1)), cyclic of order |p(1)| or infinite when p(1)=0: right. Checked all four examples:
+    (t+1) gives M = Z and pi' = Z/2; (t-1) gives M = Z and pi' = Z; (2t-1) gives M = Z[1/2], not finitely
+    generated, and p(1)=1 so pi' = 0; p=0 gives M = Z[t,t^{-1}], not finitely generated, and pi' = Z. All
+    four combinations of finite generation and finiteness of pi'_n occur, which is what the exercise asks.
+    Not checked: nothing outside this exercise.
+
 ---
 
 ::: {.problem}

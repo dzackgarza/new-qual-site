@@ -23,6 +23,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 19; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both parts: a countable disjoint union modulo a relation is countable, and an open set in
+    $\RR^n$ is exhausted by finite subcomplexes so that chains and homology are the direct limits
+    of the compact stages.
 ---
 
 ::: {.problem}

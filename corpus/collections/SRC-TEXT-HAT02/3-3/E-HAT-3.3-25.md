@@ -23,6 +23,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 25; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: torsion-freeness of the finitely generated $H_{k-1}$ kills the Ext term, so
+    $H^k\cong\operatorname{Hom}(H_k,\ZZ)$ is free, and Poincaré duality identifies it with $H_k$.
 ---
 
 ::: {.problem}

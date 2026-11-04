@@ -24,6 +24,26 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete proof reviewed against the relevant chain, relative-homology, local-homology, or covering-space calculation.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the comparison: both spaces have $\ZZ$ in degrees 0, 1 (rank two) and 2 and zero above, while the universal cover of the wedge sum contains a sphere and so has $H_2\ne0$, unlike the plane covering the torus.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Read line by line, both halves. Homology: the torus has one `0`-cell, two `1`-cells and one
+    `2`-cell with all cellular boundaries zero, giving `Z, Z^2, Z`; reduced homology of a finite wedge
+    is the direct sum over the summands, so `S^1 vee S^1 vee S^2` has the same groups. Universal
+    covers, which is the point: that of `T` is `R^2` by the quotient `R^2 -> R^2/Z^2`, hence
+    contractible with vanishing reduced homology; that of `Y` has fundamental group `F_2`, so the
+    preimage of the `1`-skeleton is the Cayley tree, and at every lift of the wedge point the simply
+    connected `S^2` summand contributes a copy, so `Y~` is a tree with a `2`-sphere at each vertex.
+    Collapsing the contractible tree gives a wedge of one `S^2` per vertex, so
+    `H_2(Y~) = direct sum over F_2 of Z`, which is nonzero. Homology is a homotopy invariant, so the
+    two universal covers are neither homeomorphic nor homotopy equivalent, even though the two spaces
+    have isomorphic homology in every degree. No correction was needed.
 ---
 
 ::: {.problem}

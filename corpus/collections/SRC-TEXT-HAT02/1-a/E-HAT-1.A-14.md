@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used Zorn for Choice implies maximal trees, and encoded an arbitrary family of nonempty sets as parallel edges from a common root to recover a choice function from a spanning tree.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read both directions: Zorn's lemma applied to the chain-closed family of trees containing a fixed vertex gives a maximal tree, and the reverse direction derives a choice function from maximal trees.
 ---
 
 ::: {.problem}

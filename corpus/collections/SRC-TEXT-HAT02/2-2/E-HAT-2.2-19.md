@@ -24,6 +24,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete cellular/Euler-characteristic computation checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    The cellular complex with one cell in degrees m+1, ..., n, d_{m+1} = 0 and d_i = 2 for even
+    i > m+1, is checked in proofs/cards/DeltaComplexHomology.sage through Sage's ChainComplex for
+    the sampled range m = 0, ..., 4 and m < n <= 8, against the card's case table; every sampled case
+    agrees. This is a finite check, not a proof of the case table.
+
+    Rerun on the supported Sage development image: Sage 11.0.beta5, Python 3.14.10, source
+    HEAD b0cd7d86e2, all checks passing there.
 ---
 
 ::: {.problem}

@@ -23,6 +23,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Used the countable rose with right-shift and left-shift maps, giving a literal split epimorphism on the space and nonisomorphic induced free-group endomorphisms.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the construction: the shift $g$ on the wedge of countably many circles and the collapse $f$ with $fg=\mathrm{id}$, where $g_*$ is injective but not surjective and $f_*$ is surjective but not injective on $\pi_1$.
 ---
 
 ::: {.problem}

@@ -24,6 +24,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Complete cellular-chain proof checked.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the naturality argument: a cellular map is a map of the skeletal pairs, so it induces
+    $f_n$ on the cellular chain groups and commutes with $d_n$ because both arrows of the composite
+    boundary, the connecting map and the inclusion-induced map, are natural. The closing step is
+    read at the level of the claim it makes: it asserts, rather than diagram-chases, that the
+    comparison maps $H_n^{CW}\cong H_n$ are natural.
 ---
 
 ::: {.problem}

@@ -23,6 +23,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 16; it matches the printed text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Checked the chain-level identity with Hatcher's conventions on a simplex: capping with
+    $\varphi$ then $\psi$ truncates the simplex twice, which is the same as capping once with
+    $\varphi\smile\psi$, and both sides are the product of the two evaluations on the doubly
+    truncated simplex. The module statement follows from naturality of the boundary formula.
 ---
 
 ::: {.problem}

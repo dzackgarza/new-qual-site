@@ -21,6 +21,20 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-01
+  note: >-
+    Proof read against Hatcher Sec. 4.2 Exercise 4 (AT.txt 19340-19343) and correct as it stands, with one
+    external citation that was checked against the source. The map r_k collapsing the other spheres to the
+    common point is continuous because the diameters shrink, and the collapse construction for
+    surjectivity of Phi is the standard one; both are right. The (n-1)-connectedness claim for n>=2 rests
+    on Eda and Kawamura, Fundamenta Mathematicae 165 (2000) 17-28, Corollary 1.2, which I read: it states
+    that for the n-dimensional Hawaiian earring H_n with n>=2, pi_n(H_n) is Z^omega and pi_i(H_n) is
+    trivial for 1 <= i <= n-1. That is exactly the cited assertion, and it is stronger than what the
+    exercise asks (the paper's pi_n is the full product, so Phi is in fact an isomorphism). Not checked:
+    the proof of that corollary, which is the paper's. The n=1 case is only pi_0, correctly.
+
 ---
 
 ::: {.problem}

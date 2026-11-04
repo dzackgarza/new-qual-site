@@ -23,10 +23,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 3.3, Exercise 10; it matches the printed text. The printed bracketed hint about lifting $f$ to the covering space corresponding to $\operatorname{Im} f_*$ was missing and is restored.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the argument: lift $f$ to the covering corresponding to $\operatorname{Im} f_*$; an
+    infinite-sheeted cover is a connected noncompact $n$-manifold with trivial $H_n$, which would
+    force $f_*[M]=0$, so the cover is finite of degree $d$, and $1=\pm\deg f=d\cdot\deg\tilde f$
+    forces $d=1$.
 ---
 
 ::: {.problem}
 Show that for a degree 1 map $f: M \to N$ of connected closed orientable manifolds, the induced map $f_*: \pi_1 M \to \pi_1 N$ is surjective, hence also $f_*: H_1(M) \to H_1(N)$.
+[Lift $f$ to the covering space $\tilde N \to N$ corresponding to the subgroup $\operatorname{Im} f_* \subset \pi_1 N$, then consider the two cases that this covering is finite-sheeted or infinite-sheeted.]
 :::
 
 ::: {.solution}

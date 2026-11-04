@@ -14,6 +14,15 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-10-31
+  note: Statement compared with Hatcher, Algebraic Topology, Section 1.B, Exercise 4.
+- event: solution-reviewed
+  by: claude
+  date: 2026-10-31
+  note: >-
+    Read the proof: the graph of spaces for $A*_C$ with the two injections, the normalization that makes both attaching maps agree at a basepoint, and the van Kampen computation giving $A*\langle t\rangle$ modulo $t\varphi(c)t^{-1}\psi(c)^{-1}$.
 ---
 
 ::: {.problem}
