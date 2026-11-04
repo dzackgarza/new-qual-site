@@ -17,8 +17,7 @@ Use the codes in contributions, commit messages, and review.
 
 ### Current milestone checkpoint
 
-The repository is in the `audited-deployment` milestone; every node before it is closed.
-The live dependencies, full obligations, and cold-resume instructions are recorded in [TODO.md](TODO.md#execution-dag).
+The live obligations, their order, and cold-resume instructions are recorded in the [issue tree](https://github.com/dzackgarza/new-qual-site/issues/83); `itree next dzackgarza/new-qual-site` selects the next work unit.
 
 An owner-requested handoff checkpoint may run `just build`, `just check`, and `just preview` locally to verify the parked working tree.
 This does not publish the site and does not weaken `QUAL-06`: ordinary content commits remain reading-verified, while build/render checks stay at an explicitly required integration or deployment boundary.
@@ -28,11 +27,11 @@ This does not publish the site and does not weaken `QUAL-06`: ordinary content c
 | `QUAL-01` | Source-faithful mathematics | Read the complete card and relevant source before changing a statement, title, classification, relation, or proof. Preserve hypotheses and every requested part. The public statement is true and well-posed: correct a typo, and repair a false or ill-posed statement to the intended true one (add the missing hypothesis, fix the conclusion). Record the source's printed text and the change in the card's `audit` metadata, not in a rendered remark. |
 | `QUAL-02` | Semantic authorship | Decide mathematical meaning by reading. Measurements and matching names identify candidates; they do not decide equivalence, correctness, or deletion. |
 | `QUAL-03` | One card, one proof owner | Author and review one card at a time. Solutions and hints belong in their problem card; commit the reviewed card before continuing. |
-| `QUAL-04` | Dependency-directed work | Use [the TODO DAG](TODO.md#execution-dag). Give each concrete task a stable ID, immediate prerequisites and an observable result. Preserve the scope of unfinished work and reject cycles or unresolved prerequisite IDs. |
+| `QUAL-04` | Dependency-directed work | Use [the issue tree](https://github.com/dzackgarza/new-qual-site/issues/83). Give each concrete task its own issue with acceptance criteria and a position among its siblings. Preserve the scope of unfinished work and keep `itree doctor dzackgarza/new-qual-site` free of errors and warnings. |
 | `QUAL-05` | Capture issues when encountered | Record mathematical errors, source ambiguities, and actual papercuts in [COMPLAINTS.md](COMPLAINTS.md), including independent discoveries. Supply evidence, affected card or owner, expected result, uncertainty, and a repair link. Extend an existing entry for the same issue. Logging is not repair. |
 | `QUAL-06` | Verify content by reading; keep local gates fast | Read mathematical proofs for correctness; a parser cannot certify them. Content work is verified by reading its diff. `just commit-card` validates the selected card's YAML and schema before its hook-free content commit. Explicit `git commit --no-verify` remains sanctioned for authored content; the push hook validates those committed card blobs before upload. Normal commit hooks validate staged card blobs and run shared syntax checks. The shared Git hooks invoke `scripts/local-validate.py` on the exact staged or outgoing blobs. `just test-push` is the explicit project diagnostic command, adding extraction-residue and macro-mirror checks and focused tests. CI runs the full suite, corpus reports, builds, and link crawl. Reports are available in the `corpus-reports` workflow artifact with their source revision. Rendered-page inspection uses the CI build at the deployment boundary. |
 | `QUAL-07` | Preserve concurrent authorship | Reread target files before editing, preserve others' changes and staged files, and commit only the intended paths. Keep complaint and TODO edits confined to the selected entry. |
-| `QUAL-08` | Keep process off public cards | Record issue capture and project process in COMPLAINTS.md, TODO.md, and the work queues, not in rendered remarks (`PROSE-11`). |
+| `QUAL-08` | Keep process off public cards | Record issue capture and project process in COMPLAINTS.md, the issue tree, and the work queues, not in rendered remarks (`PROSE-11`). |
 | `QUAL-09` | One checkout, one branch | Work directly on `main` in the single clone. Do not create worktrees or branches: streams author disjoint cards, so there is nothing to isolate. A commit that sweeps in a sibling's edit is a wrong message, not lost work — `git commit --amend`, or commit an explicit pathspec. Before retiring a worktree left over from the old rule, take all three readings — clean tree, commits reachable from `main`, no live process — and leave it in place and report it if any one fails. |
 | `QUAL-10` | Proof standard is the qual examiner | Theory cards and wiki pages state results and cite standard course material; they carry no proof obligation. Write a proof only where a solution uses a result an examiner would not accept by citation — beyond the standard course material for its subject — and put that proof in the solution or on the linked card it uses. Do not add proofs to standard results. |
 
@@ -220,7 +219,7 @@ Fiber-product notation may name a pullback when the fiber-product definition car
 
 ### Curation and open problems (`PROSE-11`, `PR-72`)
 
-Provenance, status, and curation concerns, and deferred generalizations, are recorded in [COMPLAINTS.md](COMPLAINTS.md), [TODO.md](TODO.md), or the work queues (`QUAL-08`), never on a public page.
+Provenance, status, and curation concerns, and deferred generalizations, are recorded in [COMPLAINTS.md](COMPLAINTS.md), the [issue tree](https://github.com/dzackgarza/new-qual-site/issues/83), or the work queues (`QUAL-08`), never on a public page.
 
 ### Source formatting (`PR-11`)
 

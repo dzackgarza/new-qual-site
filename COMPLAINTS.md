@@ -2,7 +2,7 @@
 
 Record issues encountered during source reading, solving, review, authoring or site use under [QUAL-05](CONTRIBUTING.md#named-policies).
 Include findings outside the selected card.
-This file owns observations; [TODO.md](TODO.md) owns selected repair tasks and dependencies.
+This file owns observations; the [issue tree](https://github.com/dzackgarza/new-qual-site/issues/83) owns selected repair tasks and their order.
 Keep existing GitHub issue links rather than copying their live status.
 The [corpus review patterns](CONTRIBUTING.md#corpus-review-patterns) supply named candidate patterns, not proof that a candidate is a defect.
 
@@ -20,7 +20,7 @@ Add a descriptive heading in the appropriate section below, with:
   State inspected scope and remaining questions.
   For absence claims supply Searched, Found, Conclusion, Confidence and Gaps.
 
-- **Repair:** link the existing TODO task or issue when available and state the result that would resolve the observation.
+- **Repair:** link the existing issue when available and state the result that would resolve the observation.
 
 A missing hypothesis with a concrete counterexample is a mathematical issue.
 An unreadable source is an unresolved source question.
@@ -36,26 +36,6 @@ After verifying the full repair, remove the resolved entry with evidence in the 
 Put durable mathematical errata on the owning card and durable policy in CONTRIBUTING. Keep process notes out of public mathematical remarks.
 
 ## Mathematical issues and source questions
-
-### UCSD covering-spaces subgroup matching card holds no recoverable posed task
-
-- **Object and need:** `P-O2J6S` in `SRC-UNSORTED-TOPOLOGY`.
-
-- **Observed evidence:** the card body lists five subgroups of $\langle a,b\rangle$ and five images of covering diagrams, but no posed question.
-  The card was intaken from the vendored compilation `assets/Topology/650_UCSD_Qual_Questions/Quals/Topology Problems (Solutions).pdf` (with its checked-in extraction), whose "Covering Spaces" section reads only "Generators of the subgroups:" followed by the same list and the same images: those bytes are the author's answer material, recorded without the question, because the compilation assumes the reader has the original course sheet.
-
-- **Searched:** the vendored compilation and its extraction, `UCSD_290_F14_sheet*` extractions, `UCSD_Topology_Qual_Problems_2020-05-29`, `UCSD_290_Qualifying_Exams`, and the `qual-wiki` UCSD finals.
-  **Found:** the subgroup list and images only.
-  **Conclusion:** the posed task is not recoverable from any retained source.
-  **Confidence:** high for absence from retained bytes.
-  **Gaps:** the original UCSD 290 covering-spaces homework sheet that posed the question is not in this repository or the sibling clones; the vendored compilation is owner-authored notes and so is also not a valid `provenance:` oracle, which is why the collection's provenance list stays empty.
-
-- **Impact and owner:** the card is not a self-contained problem; a solution cannot be authored without inventing the task.
-  The five covering diagrams in `assets/Topology/650_UCSD_Qual_Questions/Quals/assets/` are the only record of the covers.
-
-- **Uncertainty:** the intended task (presumably matching each subgroup with the corresponding cover of $S^1\vee S^1$) is a plausible reconstruction, not a reading of any source.
-
-- **Repair:** blocked on recovering the original UCSD 290 covering-spaces sheet; until then the card stays unauthored rather than being given an invented statement.
 
 ## Workflow and rendering papercuts
 
