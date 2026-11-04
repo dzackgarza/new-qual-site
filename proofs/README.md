@@ -337,6 +337,26 @@ requires a construction, not a citation.
   Missing, and named as such: the free-resolution instantiation itself and Lemma 3A.2. The
   example above is prose, not certified.
 
+  **What the free-resolution instantiation now reduces to, checked against the pin.** It cannot use
+  `ProjectiveResolution.of`: that construction is an infinite resolution, so `IsZero (P.complex.X 2)`
+  fails and `torOneIsoTorKernel` does not apply to it. A two-term resolution `0 → K → F → A → 0`
+  needs `K` projective, i.e. (over `ℤ`) free, and the resolution has to be built. Two facts decide
+  how far that reaches:
+  - For **finitely generated** `A` the presentation is `ℤⁿ → A`, the kernel `K ≤ ℤⁿ` is finitely
+    generated (a submodule of a finite free module over the Noetherian ring `ℤ`) and torsion-free,
+    so `K` is free by `Module.free_of_finite_type_torsion_free'` — note the prime in the name at
+    this pin; the unprimed form does not exist here. That is the case the card application needs,
+    since §5b's stages are finitely generated.
+  - For **arbitrary** `A` the corresponding statement is "every subgroup of a free abelian group is
+    free", and no such instance is present at `db584cd6`: a search for a `Module.Free` or `Projective`
+    instance on `↥(N)` for `N : Submodule ℤ (ι → ℤ)` with arbitrary `ι` returns only the lattice
+    case (`Algebra/Module/Lattice.lean:173`) and the finite-index Smith-normal-form lemmas
+    (`LinearAlgebra/FreeModule/Int.lean`). That is a named upstream gap, not a gap in this
+    directory's reasoning.
+  So the remaining work splits cleanly: build the two-term resolution in the finitely generated case
+  from `Module.free_of_finite_type_torsion_free'` and instantiate `torOneIsoTorKernel` there; the
+  unrestricted statement waits on the upstream lemma.
+
 - the simplex chain-model comparison for `E-HAT-2.2-16`, instantiating
   `ker_eq_range_of_comm_iso` with the barycentric chains of `Δ^n` and the skeleton maps. Its
   acyclicity input is now proved in both models (`cards/SimplexChains.lean`, with the Dold--Kan
