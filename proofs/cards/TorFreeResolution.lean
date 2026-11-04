@@ -22,6 +22,9 @@ is *not* available at this pin and is recorded as an upstream gap in §5b; it is
 cards, whose stages are finitely generated.
 -/
 
+open CategoryTheory Limits
+open scoped ZeroObject
+
 namespace TorFreeResolution
 
 variable {A : Type*} [AddCommGroup A] [Module ℤ A]
@@ -63,6 +66,54 @@ theorem presentation_projective (n : ℕ) (f : (Fin n → ℤ) →ₗ[ℤ] A) :
       CategoryTheory.Projective (ModuleCat.of ℤ (Fin n → ℤ)) :=
   ⟨syzygy_projective n f, free_projective n⟩
 
+/-! ## The two-term projective complex of a finite free presentation
+
+`0 → K → ℤⁿ → A → 0` as a chain complex concentrated in degrees `0` and `1`. It is built with
+`ChainComplex.mk'`, whose inductive continuation is the zero complex, so degree `2` and above are
+literally the zero object — which is the shape `torOneIsoTorKernel` needs (`IsZero (X 2)`). -/
+
+section TwoTerm
+
+variable (r : ℕ) (f : (Fin r → ℤ) →ₗ[ℤ] A)
+
+/-- The two-term complex `K → ℤⁿ → 0 → 0 → ⋯` attached to a finite free presentation. -/
+noncomputable def twoTermComplex : ChainComplex (ModuleCat ℤ) ℕ :=
+  ChainComplex.mk' (ModuleCat.of ℤ (Fin r → ℤ)) (ModuleCat.of ℤ ↥(LinearMap.ker f))
+    (ModuleCat.ofHom (LinearMap.ker f).subtype)
+    (fun _ => ⟨0, 0, by simp⟩)
+
+/-- Degree `0` of the complex is `ℤⁿ`. -/
+theorem twoTermComplex_X_zero : (twoTermComplex r f).X 0 = ModuleCat.of ℤ (Fin r → ℤ) :=
+  ChainComplex.mk'_X_0 ..
+
+/-- Degree `1` of the complex is the syzygy. -/
+theorem twoTermComplex_X_one : (twoTermComplex r f).X 1 = ModuleCat.of ℤ ↥(LinearMap.ker f) :=
+  ChainComplex.mk'_X_1 ..
+
+/-- The only nonzero differential is the inclusion of the syzygy. -/
+theorem twoTermComplex_d_one_zero :
+    (twoTermComplex r f).d 1 0 = ModuleCat.ofHom (LinearMap.ker f).subtype :=
+  ChainComplex.mk'_d_1_0 ..
+
+/-- **Degree two vanishes**: the complex is two-term, which is the hypothesis `torOneIsoTorKernel`
+carries. -/
+theorem twoTermComplex_isZero_X_two : IsZero ((twoTermComplex r f).X 2) :=
+  IsZero.of_iso (isZero_zero (ModuleCat ℤ))
+    (ChainComplex.mk'XIso (ModuleCat.of ℤ (Fin r → ℤ)) (ModuleCat.of ℤ ↥(LinearMap.ker f))
+      (ModuleCat.ofHom (LinearMap.ker f).subtype) (fun _ => ⟨0, 0, by simp⟩) 0)
+
+/-- Every degree of the two-term complex is projective, so it can be a `ProjectiveResolution`. -/
+theorem twoTermComplex_projective (n : ℕ) : Projective ((twoTermComplex r f).X n) := by
+  match n with
+  | 0 => exact free_projective r
+  | 1 => exact syzygy_projective r f
+  | k + 2 =>
+    exact Projective.of_iso (Iso.symm (ChainComplex.mk'XIso (ModuleCat.of ℤ (Fin r → ℤ))
+      (ModuleCat.of ℤ ↥(LinearMap.ker f)) (ModuleCat.ofHom (LinearMap.ker f).subtype)
+      (fun _ => ⟨0, 0, by simp⟩) k)) (inferInstance : Projective (0 : ModuleCat ℤ))
+
+end TwoTerm
+
 end TorFreeResolution
 
 #print axioms TorFreeResolution.syzygy_finite
@@ -71,3 +122,6 @@ end TorFreeResolution
 #print axioms TorFreeResolution.syzygy_projective
 #print axioms TorFreeResolution.free_projective
 #print axioms TorFreeResolution.presentation_projective
+#print axioms TorFreeResolution.twoTermComplex
+#print axioms TorFreeResolution.twoTermComplex_isZero_X_two
+#print axioms TorFreeResolution.twoTermComplex_projective
