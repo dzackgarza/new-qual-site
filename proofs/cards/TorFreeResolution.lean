@@ -209,6 +209,17 @@ theorem twoTermComplex_homology_isZero (k : ℕ) :
     ((twoTermComplex r f).d (k + 2) (k + 1)) (twoTermComplex_isZero_X r f (k + 2) (by omega)))
     (homologyIsoKernelAt (twoTermComplex r f) k hd)
 
+/-- **The cokernel of the inclusion of the syzygy is `A`**, for a surjective presentation: this is
+the first isomorphism theorem, `ℤⁿ ⧸ ker f ≅ A`, transported to the categorical cokernel by
+`ModuleCat.cokernelIsoRangeQuotient`. It is the `H₀` half of the quasi-isomorphism. -/
+noncomputable def coker_subtype_iso (hf : Function.Surjective f) :
+    Limits.cokernel (ModuleCat.ofHom (LinearMap.ker f).subtype :
+        ModuleCat.of ℤ ↥(LinearMap.ker f) ⟶ ModuleCat.of ℤ (Fin r → ℤ)) ≅
+      ModuleCat.of ℤ A := by
+  refine (ModuleCat.cokernelIsoRangeQuotient (ModuleCat.ofHom (LinearMap.ker f).subtype)).trans ?_
+  rw [ModuleCat.hom_ofHom, Submodule.range_subtype]
+  exact LinearEquiv.toModuleIso (f.quotKerEquivOfSurjective hf)
+
 /-- **`H₁` of the two-term complex vanishes**: the differential is the inclusion of the syzygy,
 which is a monomorphism, so its kernel is the zero object. -/
 theorem twoTermComplex_homology_one_isZero :
@@ -232,6 +243,7 @@ end TorFreeResolution
 #print axioms TorFreeResolution.twoTermComplex_isZero_X_two
 #print axioms TorFreeResolution.twoTermComplex_projective
 #print axioms TorFreeResolution.twoTermPi
+#print axioms TorFreeResolution.coker_subtype_iso
 #print axioms TorFreeResolution.isZero_kernel_of_isZero_source
 #print axioms TorFreeResolution.twoTermComplex_homology_isZero
 #print axioms TorFreeResolution.twoTermComplex_homology_one_isZero
