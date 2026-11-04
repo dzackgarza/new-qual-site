@@ -105,9 +105,34 @@ theorem not_subsingleton_ordinary_homology {C₀ C₁ : Type*} [AddCommGroup C�
     rwa [Submodule.Quotient.mk_eq_zero] at hx
   exact ker_ne_top_of_surjective_to_int ε hε hker
 
+/-! ## The `k`-skeleton's simplices in degrees at most `k`
+
+The skeleton step above is stated for a `k`-skeleton that "has the simplex's chain groups in degrees
+at most `k`". That is now proved, at the level of simplices: `SSet.sk k X` is the `k`-skeleton and
+`IsIso ((SSet.skAdj k).unit)` — the coreflection of the truncation onto it — gives an equivalence of
+`i`-simplices for every `i ≤ k`. What this file still does **not** prove is the chain-level half: that
+the differentials agree, i.e. that the equivalence is natural for the face maps and hence induces an
+isomorphism of chain groups in those degrees, and that `H̃_i((Δ^m)^k) = 0` for `i < k` follows. Those
+are the two remaining pieces of the skeleton step; `ker_eq_range_of_comm_iso` above is the transport
+they will feed. -/
+
+open CategoryTheory Opposite Simplicial
+
+/-- **The `i`-simplices of the `k`-skeleton are those of `X`, for `i ≤ k`.** This is the unit of the
+skeleton–truncation adjunction, which is an isomorphism because `SSet.Truncated.sk k` is a
+coreflection. -/
+noncomputable def skSimplexEquiv (k : ℕ) (X : SSet.{0}) (i : ℕ) (hi : i ≤ k) :
+    X _⦋i⦌ ≃ ((SSet.sk k).obj X) _⦋i⦌ := by
+  haveI : IsIso ((SSet.skAdj k).unit.app ((SSet.truncation k).obj X)) := inferInstance
+  have e : X _⦋i⦌ ≅ ((SSet.sk k).obj X) _⦋i⦌ :=
+    (asIso ((SSet.skAdj k).unit.app ((SSet.truncation k).obj X))).app
+      (op (⟨SimplexCategory.mk i, by simpa using hi⟩ : SimplexCategory.Truncated k))
+  exact e.toEquiv
+
 end ChainLevelSteps
 
 #print axioms ChainLevelSteps.choose_rank_step
 #print axioms ChainLevelSteps.ker_ne_top_of_surjective_to_int
 #print axioms ChainLevelSteps.ker_eq_range_of_comm_iso
 #print axioms ChainLevelSteps.not_subsingleton_ordinary_homology
+#print axioms ChainLevelSteps.skSimplexEquiv
