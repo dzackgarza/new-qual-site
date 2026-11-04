@@ -15,6 +15,20 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-04
+  note: >-
+    Repair of the converse direction's H_2 step, which asserted that c_* on H_2(M) is an
+    isomorphism. From c^* u = alpha a generator of H^2(M) = Hom(H_2(M), Z) (H_1 = 0 in universal
+    coefficients), naturality of the pairing gives c_* on H_2 surjective, via an element on which
+    alpha evaluates to 1; that the map is an isomorphism can fail when H_2(M) carries torsion, a
+    possibility the ring hypothesis does not exclude. The conclusion pi_1(E) = 0, which is all the
+    proof uses, runs on surjectivity alone, as does everything downstream of it (the homology shape
+    of E and the Whitehead equivalence with S^{2n+1}). Checked: the forward direction's Gysin
+    computation and ring identification, the classification of alpha by [M, CP^infinity] = H^2(M), and
+    the E-cohomology and Whitehead steps of the converse, none of which changes.
+
 ---
 
 ::: {.problem}
@@ -100,7 +114,7 @@ In the ring $\ZZ[\alpha]/(\alpha^{n+1})$, $\smile \alpha: H^j(M) \to H^{j+2}(M)$
 $\pi_1(E) = 0$.
 
 ::: pf-proof
-The homotopy sequence gives $\pi_2(M) \xrightarrow{\partial} \pi_1(S^1) \to \pi_1(E) \to \pi_1(M) = 0$. By naturality, $\partial = \partial_\infty \circ c_*$, where $\partial_\infty: \pi_2(\CP^\infty) \to \pi_1(S^1)$ is an isomorphism because $S^\infty$ is contractible. Both $M$ and $\CP^\infty$ are simply connected, so by Hurewicz $c_*$ on $\pi_2$ is $c_*$ on $H_2$. Because $H_1 = 0$, $H^2 = \operatorname{Hom}(H_2, \ZZ)$, and $c^* u = \alpha$ is a generator, so $c_*$ on $H_2$ is an isomorphism. So $\partial$ is surjective and $\pi_1(E) = 0$.
+The homotopy sequence gives $\pi_2(M) \xrightarrow{\partial} \pi_1(S^1) \to \pi_1(E) \to \pi_1(M) = 0$. By naturality, $\partial = \partial_\infty \circ c_*$, where $\partial_\infty: \pi_2(\CP^\infty) \to \pi_1(S^1)$ is an isomorphism because $S^\infty$ is contractible. Both $M$ and $\CP^\infty$ are simply connected, so by Hurewicz $c_*$ on $\pi_2$ is $c_*$ on $H_2$. Because $H_1 = 0$, universal coefficients gives $H^2 = \operatorname{Hom}(H_2, \ZZ)$. Write the pairing as $\langle u, c_* \xi \rangle = \langle c^* u, \xi \rangle = \langle \alpha, \xi \rangle$. The generator $\alpha$ of that Hom group cannot have all its values divisible by an integer greater than $1$, so some $\xi \in H_2(M)$ has $\langle \alpha, \xi \rangle = 1$, and $c_*$ on $H_2$ is surjective. Hence $\partial$ is surjective and $\pi_1(E) = 0$. (An isomorphism on $H_2$ is not needed here and is not claimed: the argument runs on surjectivity alone.)
 :::
 
 :::
