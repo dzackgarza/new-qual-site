@@ -76,8 +76,42 @@ noncomputable def homologyZeroIso (m : ℕ) :
       (c := ComplexShape.down ℕ) (j := 0) (point.obj (chains m))
     simpa using h)
 
+/-- **The Dold–Kan comparison**, at the point this file needs: for any simplicial object in an
+abelian category — here the chains on the standard simplex — the normalized Moore complex and the
+alternating face map complex are homotopy equivalent. This is maintained API
+(`DoldKan.homotopyEquivNormalizedMooreComplexAlternatingFaceMapComplex`), so the normalized and
+unnormalized models are not merely related by a comparison map here: they have the same homotopy
+type, hence the same homology. -/
+noncomputable def normalizedHomotopyEquiv (m : ℕ) :
+    HomotopyEquiv
+      ((AlgebraicTopology.normalizedMooreComplex (ModuleCat ℤ)).obj (drop.obj (chains m)))
+      (AlgebraicTopology.AlternatingFaceMapComplex.obj (drop.obj (chains m))) :=
+  AlgebraicTopology.DoldKan.homotopyEquivNormalizedMooreComplexAlternatingFaceMapComplex
+
+/-- The normalized Moore complex of the simplex's chains is homotopy equivalent to a complex
+supported in degree zero. -/
+noncomputable def normalizedChainsHomotopyEquiv (m : ℕ) :
+    HomotopyEquiv
+      ((AlgebraicTopology.normalizedMooreComplex (ModuleCat ℤ)).obj (drop.obj (chains m)))
+      ((ChainComplex.single₀ (ModuleCat ℤ)).obj (point.obj (chains m))) :=
+  (normalizedHomotopyEquiv m).trans (chainsHomotopyEquiv m)
+
+/-- **The normalized complex of the standard simplex is acyclic in positive degrees as well**, so
+`H̃_i(Δ^m) = 0` for `i ≠ 0` holds in both models and the choice of model does not matter here. -/
+theorem isZero_normalizedHomology (m : ℕ) (i : ℕ) (hi : i ≠ 0) :
+    IsZero (((AlgebraicTopology.normalizedMooreComplex (ModuleCat ℤ)).obj
+      (drop.obj (chains m))).homology i) := by
+  have h : IsZero (((ChainComplex.single₀ (ModuleCat ℤ)).obj
+      (point.obj (chains m))).homology i) := by
+    have h' := HomologicalComplex.isZero_single_obj_homology (C := ModuleCat ℤ)
+      (c := ComplexShape.down ℕ) (j := 0) (point.obj (chains m)) i hi
+    simpa using h'
+  exact h.of_iso ((normalizedChainsHomotopyEquiv m).toHomologyIso i)
+
 end SimplexChains
 
 #print axioms SimplexChains.chainsHomotopyEquiv
 #print axioms SimplexChains.isZero_homology
 #print axioms SimplexChains.homologyZeroIso
+#print axioms SimplexChains.normalizedChainsHomotopyEquiv
+#print axioms SimplexChains.isZero_normalizedHomology
