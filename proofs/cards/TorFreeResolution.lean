@@ -165,6 +165,50 @@ noncomputable def homologyOneIsoKernel {K : ChainComplex (ModuleCat ℤ) ℕ} (h
     K.homology 1 ≅ Limits.kernel (K.d 1 0) :=
   homologyOneIsoKernelOfD (K := K) (IsZero.eq_of_src h2 _ _)
 
+/-- A kernel module with its structure pinned to the submodule structure, so that
+`ModuleCat.kernelIsoKer` and the surrounding statements mention one instance. -/
+noncomputable abbrev kerModule {M N : ModuleCat ℤ} (g : M ⟶ N) : ModuleCat ℤ :=
+  letI := g.hom.ker.module
+  ModuleCat.of ℤ ↥(g.hom.ker)
+
+/-- `ModuleCat.kernelIsoKer` stated at that pinned boundary. -/
+noncomputable def kernelIsoKerModule {M N : ModuleCat ℤ} (g : M ⟶ N) :
+    Limits.kernel g ≅ kerModule g :=
+  ModuleCat.kernelIsoKer (R := ℤ) g
+
+/-- **A kernel of a map out of a zero object is zero.** This is the step that makes the homology
+vanish in every degree where the complex itself is zero: `ModuleCat.kernelIsoKer` presents the
+categorical kernel as the linear-map kernel, and a map out of a trivial module has all of its domain
+in its kernel. -/
+theorem isZero_kernel_of_isZero_source {X Y : ModuleCat ℤ} (g : X ⟶ Y) (hX : IsZero X) :
+    IsZero (Limits.kernel g) := by
+  haveI : Subsingleton ↥X := ModuleCat.subsingleton_of_isZero hX
+  haveI : Subsingleton ↥(g.hom.ker) :=
+    ⟨fun a b => Subtype.ext (Subsingleton.elim (a : ↥X) (b : ↥X))⟩
+  exact IsZero.of_iso (ModuleCat.isZero_of_subsingleton (kerModule g)) (kernelIsoKerModule g)
+
+/-- The degree-`k+2` homology of a chain complex, when the incoming differential vanishes, is the
+kernel of the outgoing one. -/
+noncomputable def homologyIsoKernelAt (K : ChainComplex (ModuleCat ℤ) ℕ) (k : ℕ)
+    (h : K.d (k + 3) (k + 2) = 0) :
+    K.homology (k + 2) ≅ Limits.kernel (K.d (k + 2) (k + 1)) :=
+  (K.homologyIsoSc' (k + 3) (k + 2) (k + 1)
+      (ComplexShape.prev_eq' (c := ComplexShape.down ℕ) (by simp))
+      (ComplexShape.next_eq' (c := ComplexShape.down ℕ) (by simp))) ≪≫
+    homologyIsoKernelOfZero (S := K.sc' (k + 3) (k + 2) (k + 1)) h
+
+/-- **The two-term complex has no homology above degree zero**, besides the vanishing of `H₁`
+proved separately: for `n ≥ 2` the degree-`n` term is the zero object, so the degree-`n` homology is
+the kernel of a map out of it. -/
+theorem twoTermComplex_homology_isZero (k : ℕ) :
+    IsZero ((twoTermComplex r f).homology (k + 2)) := by
+  have hzero3 : IsZero ((twoTermComplex r f).X (k + 3)) :=
+    twoTermComplex_isZero_X r f (k + 3) (by omega)
+  have hd : (twoTermComplex r f).d (k + 3) (k + 2) = 0 := IsZero.eq_of_src hzero3 _ _
+  refine IsZero.of_iso (isZero_kernel_of_isZero_source
+    ((twoTermComplex r f).d (k + 2) (k + 1)) (twoTermComplex_isZero_X r f (k + 2) (by omega)))
+    (homologyIsoKernelAt (twoTermComplex r f) k hd)
+
 /-- **`H₁` of the two-term complex vanishes**: the differential is the inclusion of the syzygy,
 which is a monomorphism, so its kernel is the zero object. -/
 theorem twoTermComplex_homology_one_isZero :
@@ -188,4 +232,6 @@ end TorFreeResolution
 #print axioms TorFreeResolution.twoTermComplex_isZero_X_two
 #print axioms TorFreeResolution.twoTermComplex_projective
 #print axioms TorFreeResolution.twoTermPi
+#print axioms TorFreeResolution.isZero_kernel_of_isZero_source
+#print axioms TorFreeResolution.twoTermComplex_homology_isZero
 #print axioms TorFreeResolution.twoTermComplex_homology_one_isZero
