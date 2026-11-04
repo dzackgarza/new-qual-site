@@ -1,6 +1,6 @@
 """Nothing the corpus holds is missing from the site that is supposed to show it.
 
-Each claim here was a line in TODO.md's publication section, checked by hand
+Each claim here was a line of the former publication checklist, checked by hand
 against one build. A hand check answers for the corpus that existed that
 afternoon; these answer for any corpus, which is what the claims were reaching
 for. They are set equalities rather than counts: a count matches by accident,

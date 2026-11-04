@@ -2,7 +2,7 @@
 
 Record issues encountered during source reading, solving, review, authoring or site use under [QUAL-05](CONTRIBUTING.md#named-policies).
 Include findings outside the selected card.
-This file owns observations; [TODO.md](TODO.md) owns selected repair tasks and dependencies.
+This file owns observations; the [issue tree](https://github.com/dzackgarza/new-qual-site/issues/83) owns selected repair tasks and their order.
 Keep existing GitHub issue links rather than copying their live status.
 The [corpus review patterns](CONTRIBUTING.md#corpus-review-patterns) supply named candidate patterns, not proof that a candidate is a defect.
 
@@ -20,7 +20,7 @@ Add a descriptive heading in the appropriate section below, with:
   State inspected scope and remaining questions.
   For absence claims supply Searched, Found, Conclusion, Confidence and Gaps.
 
-- **Repair:** link the existing TODO task or issue when available and state the result that would resolve the observation.
+- **Repair:** link the existing issue when available and state the result that would resolve the observation.
 
 A missing hypothesis with a concrete counterexample is a mathematical issue.
 An unreadable source is an unresolved source question.
@@ -71,7 +71,7 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Uncertainty:** verified, with the counterexample above; the remaining question is only whether the exam intended the closed case, which the printed text does not say.
 
 - **Repair:** the card's statement now says "a closed subspace $Y$", with a `source-corrected` audit note carrying the counterexample, and the card is solved.
-  The *replacement* is not certified: no Lean or Sage artifact establishes statements (i)–(iii) with closedness, so the card marks it proposed and `TODO.md` carries an open certification node.
+  The *replacement* is not certified: no Lean or Sage artifact establishes statements (i)–(iii) with closedness, so the card marks it proposed and the certification obligation is [#111](https://github.com/dzackgarza/new-qual-site/issues/111).
 
 ### UCSD covering-spaces subgroup matching card holds no recoverable posed task
 
@@ -118,7 +118,7 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** both collections now carry a `provenance:` href pinning the dataset at that revision, and `source.date` records the academic term the dataset gives (spring 1970) instead of `unknown`.
   Where a card renumbers the source's parts, its entry carries the source letters as a comment, and the two repaired statements carry `source-corrected` audit notes naming the garbled bytes.
-  The source question stays open as `ad-source-gaps-nus` in TODO: recovering the papers, or else marking both collections as imported-only, is what would close it. A pinned dataset is not a substitute.
+  The source question stays open as `ad-source-gaps-nus` ([#109](https://github.com/dzackgarza/new-qual-site/issues/109)): recovering the papers, or else marking both collections as imported-only, is what would close it. A pinned dataset is not a substitute.
   **2026-11-01:** the imported-only branch is now carried out -- both collection titles say the label is an unverified imported one, and both `provenance` lists carry the dataset's own per-university file as well as the combined one.
 
 **Provenance trace, 2026-11-01: what the dataset actually records, and what it does not.**
@@ -310,8 +310,9 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## The five `ad-text-*` nodes that cannot be read: their books are not in the repository
 
-- **Object and need:** the `ad-text-hart77`, `ad-text-hun74`, `ad-text-smi`, `ad-text-mun00` and
-  `ad-text-hk71-locators` nodes of `TODO.md`, each of which requires reading every card of its
+- **Object and need:** the `ad-text-hart77` ([#102](https://github.com/dzackgarza/new-qual-site/issues/102)), `ad-text-hun74` ([#103](https://github.com/dzackgarza/new-qual-site/issues/103)),
+  `ad-text-smi` ([#104](https://github.com/dzackgarza/new-qual-site/issues/104)), `ad-text-mun00` ([#106](https://github.com/dzackgarza/new-qual-site/issues/106)) and `ad-text-hk71-locators`
+  ([#108](https://github.com/dzackgarza/new-qual-site/issues/108)) work units, each of which requires reading every card of its
   collection against the printed book.
 
 - **Observed evidence:** the repository holds full text for exactly two of the textbooks the corpus

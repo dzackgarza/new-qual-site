@@ -446,7 +446,7 @@ obligation**; §7c explains why, and what the card is actually discharged by.
 ### 7c. What these findings discharge, and what they do not oblige
 
 The repository's acceptance criterion is narrow, and this is the point at which that matters.
-`certify-card-corrections` (TODO.md) says: *"A mathematical correction to a card is settled only
+`certify-card-corrections` ([#111](https://github.com/dzackgarza/new-qual-site/issues/111)) says: *"A mathematical correction to a card is settled only
 with a Lean formalization or an exact Sage proof/certificate **of the corrected claim**, published
 under `proofs/`."* `AGENTS.md` §"Data issues" ranks *incorrect data* — statements, titles,
 classifications — as the most urgent class and says completion of solutions is "a very low priority
