@@ -110,11 +110,11 @@ theorem not_subsingleton_ordinary_homology {C₀ C₁ : Type*} [AddCommGroup C�
 The skeleton step above is stated for a `k`-skeleton that "has the simplex's chain groups in degrees
 at most `k`". That is now proved, at the level of simplices: `SSet.sk k X` is the `k`-skeleton and
 `IsIso ((SSet.skAdj k).unit)` — the coreflection of the truncation onto it — gives an equivalence of
-`i`-simplices for every `i ≤ k`. What this file still does **not** prove is the chain-level half: that
-the differentials agree, i.e. that the equivalence is natural for the face maps and hence induces an
-isomorphism of chain groups in those degrees, and that `H̃_i((Δ^m)^k) = 0` for `i < k` follows. Those
-are the two remaining pieces of the skeleton step; `ker_eq_range_of_comm_iso` above is the transport
-they will feed. -/
+`i`-simplices for every `i ≤ k`, and `skSimplexEquiv_δ` shows that equivalence is natural for the face
+maps whenever `j + 1 ≤ k`. What this file still does **not** prove is the chain-level half: that these
+give an isomorphism of chain groups in degrees `≤ k` together with agreement of the differentials
+there, and that `H̃_i((Δ^m)^k) = 0` for `i < k` follows. `ker_eq_range_of_comm_iso` above is the
+transport those pieces will feed. -/
 
 open CategoryTheory Opposite Simplicial
 
@@ -129,6 +129,18 @@ noncomputable def skSimplexEquiv (k : ℕ) (X : SSet.{0}) (i : ℕ) (hi : i ≤ 
       (op (⟨SimplexCategory.mk i, by simpa using hi⟩ : SimplexCategory.Truncated k))
   exact e.toEquiv
 
+/-- **The simplex identification is natural for the face maps**, which is the compatibility the
+chain-level half of the skeleton step needs: for `j + 1 ≤ k` the equivalence intertwines `δ_i` on `X`
+with `δ_i` on the skeleton. -/
+theorem skSimplexEquiv_δ (k : ℕ) (X : SSet.{0}) {j : ℕ} (hj : j ≤ k) (hj1 : j + 1 ≤ k)
+    (i : Fin (j + 2)) (x : X _⦋j + 1⦌) :
+    skSimplexEquiv k X j hj ((X.δ i) x)
+      = ((SSet.sk k).obj X).δ i (skSimplexEquiv k X (j + 1) hj1 x) := by
+  exact NatTrans.naturality_apply
+    (asIso ((SSet.skAdj k).unit.app ((SSet.truncation k).obj X))).hom
+    (op (SimplexCategory.Truncated.Hom.tr (SimplexCategory.δ i)
+      (by simpa using hj) (by simpa using hj1)) : _ ⟶ _) x
+
 end ChainLevelSteps
 
 #print axioms ChainLevelSteps.choose_rank_step
@@ -136,3 +148,4 @@ end ChainLevelSteps
 #print axioms ChainLevelSteps.ker_eq_range_of_comm_iso
 #print axioms ChainLevelSteps.not_subsingleton_ordinary_homology
 #print axioms ChainLevelSteps.skSimplexEquiv
+#print axioms ChainLevelSteps.skSimplexEquiv_δ
