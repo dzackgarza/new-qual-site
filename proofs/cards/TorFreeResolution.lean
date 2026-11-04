@@ -20,6 +20,14 @@ This file supplies it, and the proof is an instance chain rather than new mathem
 The general case — an arbitrary index set, i.e. "every subgroup of a free abelian group is free" —
 is *not* available at this pin and is recorded as an upstream gap in §5b; it is not needed for the
 cards, whose stages are finitely generated.
+
+The second half of the file is the `Tor` layer. `twoTermProjectiveResolution` assembles the complex
+`0 → K → ℤⁿ → 0`, its augmentation onto `single₀ A` and the quasi-isomorphism into a
+`ProjectiveResolution`, and `torOne_iso_kernel` identifies `Tor₁(A,B)` with the kernel of the
+tensored first differential — the derived-functor computation at a genuine free resolution. On top
+of it, `isZero_torOne_of_projective` records that `Tor₁` of a projective module vanishes in every
+second argument, which makes `isZero_torOne_of_finite_torsionFree` — the finitely generated case of
+the direction "torsion-free implies `Tor₁(A,B) = 0`" — an instance rather than a citation.
 -/
 
 open CategoryTheory Limits MonoidalCategory
@@ -345,6 +353,26 @@ noncomputable def torOne_iso_kernel (r : ℕ) (f : (Fin r → ℤ) →ₗ[ℤ] A
       Limits.kernel ((resolutionTensor B (twoTermProjectiveResolution r f hf)).d 1 0) :=
   torOneIsoKernel (twoTermProjectiveResolution r f hf) (twoTermComplex_isZero_X_two r f)
 
+/-- **`Tor₁` of a projective module vanishes**, in every second argument: the higher left derived
+functors of `tensorLeft B` die on projectives. This is `ModuleCat ℤ`'s projectivity used through
+Mathlib's `Functor.isZero_leftDerived_obj_projective_succ`, and it is the vanishing half of the
+`Tor` statements the cards need, at the level of the derived functor rather than of a chosen
+presentation. -/
+theorem isZero_torOne_of_projective {A : ModuleCat ℤ} [Projective A] (B : ModuleCat ℤ) :
+    IsZero (torOne A B) :=
+  Functor.isZero_leftDerived_obj_projective_succ (tensorLeft B) 0 A
+
+/-- **`Tor₁(A,B) = 0` for finitely generated torsion-free `A`** — the direction of §3.A exercise 2
+that the card records as a citation. Over `ℤ` a finitely generated torsion-free module is free
+(`Module.free_of_finite_type_torsion_free'`, the primed form at this pin), a free module is
+projective (`Module.Projective.of_free`, `ModuleCat.projective_of_category_module_projective`), and
+`Tor₁` of a projective module vanishes. No presentation is chosen and no resolution is built: the
+statement holds for every `B` at once. -/
+theorem isZero_torOne_of_finite_torsionFree (A : Type) [AddCommGroup A] [Module ℤ A]
+    [Module.Finite ℤ A] [Module.IsTorsionFree ℤ A] (B : ModuleCat ℤ) :
+    IsZero (torOne (ModuleCat.of ℤ A) B) :=
+  isZero_torOne_of_projective (A := ModuleCat.of ℤ A) B
+
 end TorBridgeLocal
 
 end TorFreeResolution
@@ -369,3 +397,5 @@ end TorFreeResolution
 #print axioms TorFreeResolution.quasiIso_twoTermPi
 #print axioms TorFreeResolution.twoTermProjectiveResolution
 #print axioms TorFreeResolution.torOne_iso_kernel
+#print axioms TorFreeResolution.isZero_torOne_of_projective
+#print axioms TorFreeResolution.isZero_torOne_of_finite_torsionFree
