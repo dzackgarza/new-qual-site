@@ -353,15 +353,50 @@ requires a construction, not a citation.
     case (`Algebra/Module/Lattice.lean:173`) and the finite-index Smith-normal-form lemmas
     (`LinearAlgebra/FreeModule/Int.lean`). That is a named upstream gap, not a gap in this
     directory's reasoning.
-  So the remaining work splits cleanly: build the two-term resolution in the finitely generated case
-  and instantiate `torOneIsoTorKernel` there; the unrestricted statement waits on the upstream lemma.
-  **The decisive hypothesis of that instantiation is now certified.** `cards/TorFreeResolution.lean`
+  That split the work in two: build the two-term resolution in the finitely generated case and
+  instantiate `torOneIsoTorKernel` there, and leave the unrestricted statement on the upstream
+  lemma. The first half is now done.
+  **The instantiation is now delivered, for every `A` presented by `ℤⁿ`.** `cards/TorFreeResolution.lean`
   proves, for every `f : ℤⁿ → A`, that the syzygy `ker f` is finitely generated (`syzygy_finite`),
   torsion-free (`syzygy_torsionFree`), free (`syzygy_free`) and hence projective
   (`syzygy_projective`), and that `ℤⁿ` is projective (`free_projective`), together in
-  `presentation_projective`. Both terms of `0 → K → ℤⁿ → A → 0` are therefore projective, which is
-  the condition `ProjectiveResolution` imposes degreewise; what remains is the assembly of that
-  complex and its quasi-isomorphism, and then the instantiation itself.
+  `presentation_projective`; it then builds the resolution itself. `twoTermComplex` is the complex
+  `0 → K → ℤⁿ → 0` (`ChainComplex.mk'` data, with `twoTermComplex_isZero_X` giving vanishing in every
+  degree `n ≥ 2` and `twoTermComplex_mono_d_one_zero` the injectivity of its first differential),
+  `twoTermPi` is the augmentation onto `single₀ A` (`ChainComplex.toSingle₀Equiv`), and the
+  augmentation is a quasi-isomorphism in two steps: above degree zero both sides have vanishing
+  homology (`twoTermComplex_homology_pos_isZero` against `single₀_homology_pos_isZero`, by
+  `IsZero.isIso`), and in degree zero — the one degree carrying homology — `F/K → A` is an
+  isomorphism, which is what `ShortComplex.quasiIso_iff_of_zeros'` asks for and is discharged by
+  `ModuleCat.isColimitCokernelCofork` on the exact pair `K ↪ F ->> A` (`quasiIsoAt_twoTermPi_zero`);
+  `coker_subtype_iso` is the cokernel identification it rests on, and `quasiIso_twoTermPi` is the
+  all-degrees statement. With the degreewise projectivity `twoTermComplex_projective`,
+  `twoTermProjectiveResolution` assembles these into a `ProjectiveResolution (ModuleCat.of ℤ A)`, and
+  `torOne_iso_kernel` applies the file's `torOneIsoKernel` to it:
+  `Tor₁(A,B) ≅ kernel ((tensorLeft B).map (d 1 0))` — the kernel of the tensored first differential
+  of a genuine free resolution, which is the presentation-level `torKernel` of
+  `cards/TorReductions.lean`. Axioms `propext, Classical.choice, Quot.sound` for every declaration in
+  the file, no `sorryAx`, on the pinned baseline.
+
+  Two scoping remarks, so that the statement is not read as more than it is. It names the
+  **left**-tensored differential — `torOne` is `((tensorLeft B).leftDerived 1).obj A` and
+  `resolutionTensor` applies `tensorLeft B` — while `TorBridge.torOneIsoTorKernel` names the
+  right-tensored `diffRight P`; the two differ only by the tensor symmetry `TorBridge` already
+  transports, so neither statement loses content. And it is the derived-functor computation applied to
+  a *chosen* two-term resolution. Because `ProjectiveResolution.isoLeftDerivedObj` holds for every
+  projective resolution, applying `torOneIsoHomology` to two of them composes to an isomorphism
+  between their homologies: **resolution-independence for two-term free resolutions of a finitely
+  generated `A` is an instance of the API, not an extra theorem.** It is worth recording why: a
+  `ProjectiveResolution` at the pin is `CategoryTheory.Preadditive/Projective/Resolution.lean:41` —
+  a degreewise projective complex in degrees `≥ 0` with a quasi-isomorphic augmentation to
+  `single₀ Z` — which is exactly Hatcher's data for a free resolution, since a free module is
+  projective and exactness of the augmented sequence is that quasi-isomorphism. So the content of
+  Lemma 3A.2 for a resolution *in hand* is not an open mathematical step; what §5b's obstruction
+  really consists of is **producing** the resolution for a given presentation, which for arbitrary
+  `A` is the upstream gap recorded above ("every subgroup of a free abelian group is free"), and
+  whether the citation of 3A.2 is acceptable in place of that construction is a ruling for the
+  owner, not something this file decides. The obligation below is restated in those terms rather
+  than deleted.
 
 - the simplex chain-model comparison for `E-HAT-2.2-16`, instantiating
   `ker_eq_range_of_comm_iso` with the barycentric chains of `Δ^n` and the skeleton maps. Its

@@ -22,7 +22,7 @@ is *not* available at this pin and is recorded as an upstream gap in §5b; it is
 cards, whose stages are finitely generated.
 -/
 
-open CategoryTheory Limits
+open CategoryTheory Limits MonoidalCategory
 open scoped ZeroObject
 
 namespace TorFreeResolution
@@ -251,6 +251,25 @@ theorem single₀_homology_pos_isZero (i : ℕ) (hi : i ≠ 0) :
     (c := ComplexShape.down ℕ) (j := 0) (ModuleCat.of ℤ A) i hi
   simpa using h
 
+/-- **The comparison map is a quasi-isomorphism in degree zero.** This is the degree where the
+complex really carries homology, so the statement is that `F/K → A` is an isomorphism. It is proved
+as `ShortComplex.quasiIso_iff_of_zeros'` asks: the short complex `K → F → A` is exact because `A` is
+a cokernel of the inclusion — `ModuleCat.isColimitCokernelCofork` builds that colimit from
+`Function.Exact` and surjectivity of `f` — and `f` is an epimorphism for the same reason. -/
+theorem quasiIsoAt_twoTermPi_zero (hf : Function.Surjective f) :
+    QuasiIsoAt (twoTermPi r f) 0 := by
+  rw [ChainComplex.quasiIsoAt₀_iff]
+  have hexact : Function.Exact (Submodule.subtype (LinearMap.ker f)) f :=
+    LinearMap.exact_iff.mpr (Submodule.range_subtype (LinearMap.ker f)).symm
+  have hc := ModuleCat.isColimitCokernelCofork
+    (f := (ModuleCat.ofHom (LinearMap.ker f).subtype :
+      ModuleCat.of ℤ ↥(LinearMap.ker f) ⟶ ModuleCat.of ℤ (Fin r → ℤ)))
+    (g := (ModuleCat.ofHom f : ModuleCat.of ℤ (Fin r → ℤ) ⟶ ModuleCat.of ℤ A)) hexact hf
+  refine (ShortComplex.quasiIso_iff_of_zeros'
+    (φ := (HomologicalComplex.shortComplexFunctor' (ModuleCat ℤ) (ComplexShape.down ℕ) 1 0 0).map
+      (twoTermPi r f)) rfl rfl rfl).2 ?_
+  exact ⟨ShortComplex.exact_of_g_is_cokernel (S := _) hc, Limits.epi_of_isColimit_cofork hc⟩
+
 /-- **The comparison map is a quasi-isomorphism above degree zero**: both sides have zero homology
 there. -/
 theorem quasiIsoAt_twoTermPi_of_pos (i : ℕ) (hi : i ≠ 0) :
@@ -259,7 +278,74 @@ theorem quasiIsoAt_twoTermPi_of_pos (i : ℕ) (hi : i ≠ 0) :
   exact IsZero.isIso (twoTermComplex_homology_pos_isZero r f i hi)
     (single₀_homology_pos_isZero (A := A) i hi) _
 
+/-- **The comparison map is a quasi-isomorphism**, all degrees: degree zero by `hf`, and every
+positive degree because both sides vanish there. -/
+theorem quasiIso_twoTermPi (hf : Function.Surjective f) : QuasiIso (twoTermPi r f) where
+  quasiIsoAt := fun i => by
+    rcases Nat.eq_zero_or_pos i with h | h
+    · subst h
+      exact quasiIsoAt_twoTermPi_zero r f hf
+    · exact quasiIsoAt_twoTermPi_of_pos r f i h.ne'
+
+/-- **The two-term complex is a projective resolution of `A`**, for a surjective finite free
+presentation: the complex is two-term and degreewise projective, and its augmentation is a
+quasi-isomorphism. This is the genuine free resolution that §5b's card application needs. -/
+noncomputable def twoTermProjectiveResolution (hf : Function.Surjective f) :
+    ProjectiveResolution (ModuleCat.of ℤ A) where
+  complex := twoTermComplex r f
+  projective := twoTermComplex_projective r f
+  π := twoTermPi r f
+  quasiIso := quasiIso_twoTermPi r f hf
+
 end TwoTerm
+
+/-! ## The instantiation: `Tor₁` of a finite free presentation
+
+The `Tor` layer of `cards/TorBridge.lean`, restated here so that the instantiation is in one
+self-contained file (a certificate under `proofs/cards/` has no olean of its sibling on the search
+path). -/
+
+section TorBridgeLocal
+
+/-- `Tor₁(A,B)`, the first left derived functor of `tensorLeft B` at `A`. -/
+noncomputable abbrev torOne (A B : ModuleCat ℤ) : ModuleCat ℤ :=
+  ((tensorLeft B).leftDerived 1).obj A
+
+/-- The complex `P ⊗ B` attached to a projective resolution `P` of `A`. -/
+noncomputable abbrev resolutionTensor (B : ModuleCat ℤ) {A : ModuleCat ℤ}
+    (P : ProjectiveResolution A) : ChainComplex (ModuleCat ℤ) ℕ :=
+  ((tensorLeft B).mapHomologicalComplex (ComplexShape.down ℕ)).obj P.complex
+
+/-- `Tor₁(A,B)` is the first homology of the tensored resolution: the derived functor computed from
+any chosen projective resolution. -/
+noncomputable def torOneIsoHomology {A B : ModuleCat ℤ} (P : ProjectiveResolution A) :
+    torOne A B ≅
+      (HomologicalComplex.homologyFunctor (ModuleCat ℤ) (ComplexShape.down ℕ) 1).obj
+        (resolutionTensor B P) :=
+  P.isoLeftDerivedObj (tensorLeft B) 1
+
+/-- For a two-term projective resolution, `Tor₁(A,B)` is the kernel of the tensored first
+differential — the presentation-level `torKernel` of `cards/TorReductions.lean`. -/
+noncomputable def torOneIsoKernel {A B : ModuleCat ℤ} (P : ProjectiveResolution A)
+    (h2 : IsZero (P.complex.X 2)) :
+    torOne A B ≅ Limits.kernel ((resolutionTensor B P).d 1 0) :=
+  torOneIsoHomology P ≪≫
+    homologyOneIsoKernelOfD (K := resolutionTensor B P) (by
+      have hd : (P.complex).d 2 1 = 0 := IsZero.eq_of_src h2 _ _
+      rw [show (resolutionTensor B P).d 2 1 =
+        (tensorLeft B).map ((P.complex).d 2 1) from rfl, hd, Functor.map_zero]
+      rfl)
+
+/-- **`Tor₁(A,B)` is the kernel of `K ⊗ B → F ⊗ B`** for a surjective finite free presentation of
+`A`: the free-resolution instantiation that §5b records as missing. It is `torOneIsoKernel` applied
+to `twoTermProjectiveResolution`, whose degree two is the zero object by construction. -/
+noncomputable def torOne_iso_kernel (r : ℕ) (f : (Fin r → ℤ) →ₗ[ℤ] A) (hf : Function.Surjective f)
+    (B : ModuleCat ℤ) :
+    torOne (ModuleCat.of ℤ A) B ≅
+      Limits.kernel ((resolutionTensor B (twoTermProjectiveResolution r f hf)).d 1 0) :=
+  torOneIsoKernel (twoTermProjectiveResolution r f hf) (twoTermComplex_isZero_X_two r f)
+
+end TorBridgeLocal
 
 end TorFreeResolution
 
@@ -279,3 +365,7 @@ end TorFreeResolution
 #print axioms TorFreeResolution.quasiIsoAt_twoTermPi_of_pos
 #print axioms TorFreeResolution.twoTermComplex_homology_isZero
 #print axioms TorFreeResolution.twoTermComplex_homology_one_isZero
+#print axioms TorFreeResolution.quasiIsoAt_twoTermPi_zero
+#print axioms TorFreeResolution.quasiIso_twoTermPi
+#print axioms TorFreeResolution.twoTermProjectiveResolution
+#print axioms TorFreeResolution.torOne_iso_kernel
