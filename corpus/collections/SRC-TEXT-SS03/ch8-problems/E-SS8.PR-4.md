@@ -43,7 +43,7 @@ $$
 \begin{pmatrix}a&b\\\overline b&\overline a\end{pmatrix},
 \qquad \abs{a}^2-\abs{b}^2=1.
 $$
-Use $J=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$ and $\inner{Z}{W}=\overline W^{,t}JZ$.
+Use $J=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$ and $\inner{Z}{W}={}^t\overline{W}JZ$, where ${}^t\overline{W}$ denotes the conjugate transpose of $W$.
 
 (b) Associate to $M$ the fractional linear map $z\mapsto(az+b)/(cz+d)$. Prove that $\mathrm{SU}(1,1)/\{\pm I\}$ is isomorphic to the group of automorphisms of the unit disc.
 :::
