@@ -5,35 +5,22 @@ kind: problem
 title: Arithmetic-geometric mean and Gauss's elliptic integral
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
   topics:
-  - Elliptic Integrals
+    - Elliptic Integrals
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: claude
-  date: 2026-11-01
-  note: >-
-    Statement compared with Stein--Shakarchi, *Complex Analysis*, Chapter 8, §3, problem 9, read
-    from `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`. The card matches the printed
-    exercise. The card's remark about the missing factor $2/\pi$ was confirmed at the printed line
-    $I(a,b)=\frac1aK(k)=\frac1a\int_0^1\frac{dx}{\sqrt{(1-x^2)(1-k^2x^2)}}$ of Problem 9(b): with
-    $I$ defined in that same problem as the integral carrying $2/\pi$, one has
-    $I(1,1)=1$ while $\frac1aK(k)$ there equals $\pi/2$. The correct relation, proved below, is
-    $I(a,b)=\frac{2}{\pi a}K(k)$. Gauss's identity and the invariance were also checked numerically
-    for $(a,b)=(2,1),(3,0.5),(5,4.9)$: $I(a,b)$, $I(A,B)$ and $1/M(a,b)$ agree to ten digits, and
-    $I(1,1)=1$.
-- event: solution-written
-  by: claude
-  date: 2026-11-01
-  note: >-
-    (a) monotonicity and $a_n-b_n\le(a-b)/2^n$, giving a common limit. (b) the Landen invariance is
-    verified by the substitution $\sin\theta=\frac{2a\sin\varphi}{(a+b)+(a-b)\sin^2\varphi}$, with the
-    derivative computed in full: it reduces to the identity
-    $\bigl((a+b)-(a-b)s^2\bigr)^2=(a+b)^2-2(a^2-b^2)s^2+(a-b)^2s^4$; then continuity of $I$ gives
-    $I(a,b)=I(M,M)=1/M$. The relation with $K(k)$ is recomputed and the printed factor is corrected
-    with the $a=b=1$ check. Nothing is left in outline.
+  - event: source-checked
+    by: claude
+    date: "2026-11-06"
+    note: >-
+      Statement compared with Stein--Shakarchi, *Complex Analysis*, Chapter 8, §6, problem 9, read from the Zotero extraction of the book (attachment KGX4N6YF). The book defines $I(a,b)$ as the bare integral $\int_0^{\pi/2}d\theta/\sqrt{a^2\cos^2\theta+b^2\sin^2\theta}$ and states Gauss's identity as $1/M(a,b)=\frac2\pi I(a,b)$; with that definition its printed relation $I(a,b)=\frac1aK(k)$ is correct. An earlier version of this card put $2/\pi$ inside $I$ and then reported the printed relation as an erratum; the statement and solution now use the book's normalization, and the erratum remark is deleted. Check at $a=b=1$: $I(1,1)=\pi/2=K(0)$ and $\frac2\pi I(1,1)=1=1/M(1,1)$.
+  - event: solution-written
+    by: claude
+    date: 2026-11-01
+    note: >-
+      (a) monotonicity and $a_n-b_n\le(a-b)/2^n$, giving a common limit. (b) the Landen invariance is verified by the substitution $\sin\theta=\frac{2a\sin\varphi}{(a+b)+(a-b)\sin^2\varphi}$, with the derivative computed in full: it reduces to the identity $\bigl((a+b)-(a-b)s^2\bigr)^2=(a+b)^2-2(a^2-b^2)s^2+(a-b)^2s^4$; then continuity of $I$ gives $I(a,b)=I(M,M)=\pi/(2M)$. The relation $I(a,b)=K(k)/a$ follows from the substitution $x=\sin\theta$.
 ---
 
 ::: {.exercise}
@@ -44,12 +31,12 @@ $$
 
 (a) Prove that $a_n$ and $b_n$ have a common limit $M(a,b)$, called the arithmetic-geometric mean.
 
-(b) Let
+(b) Gauss's identity states that
 $$
-I(a,b)=\frac2\pi\int_0^{\pi/2}
+\frac{1}{M(a,b)}=\frac2\pi\int_0^{\pi/2}
 \frac{d\theta}{\sqrt{a^2\cos^2\theta+b^2\sin^2\theta}}.
 $$
-Prove Gauss's identity $I(a,b)=1/M(a,b)$ by showing that
+Let $I(a,b)$ denote the integral on the right-hand side. Prove the identity by showing that it suffices to establish the invariance
 $$
 I(a,b)=I\left(\frac{a+b}{2},\sqrt{ab}\right).
 $$
@@ -64,10 +51,6 @@ and that the invariance follows from Chapter 8, Exercise 24(b).
 
 ::: {.hint}
 For (a), show $a_0\geq a_1\geq\cdots\geq a_n\geq b_n\geq\cdots\geq b_1\geq b_0$ and $a_n-b_n\leq(a-b)/2^n$.
-:::
-
-::: {.remark}
-The source omits the factor $2/\pi$ in its displayed formula $I(a,b)=K(k)/a$ if $K(k)$ is the integral it displays. At $a=b=1$, its left side is $1$ and its right side is $\pi/2$.
 :::
 
 ::: {.solution}
@@ -138,7 +121,7 @@ $$
 =\frac{2\,d\varphi}{\sqrt{(a+b)^2-(a-b)^2\sin^2\varphi}}
 =\frac{d\varphi}{\sqrt{A^2\cos^2\varphi+B^2\sin^2\varphi}},
 $$
-because $(a+b)^2-(a-b)^2s^2=4(A^2-B^2s^2)$ with $A^2-B^2=(a-b)^2/4$; explicitly $4A^2=4\cdot\frac{(a+b)^2}{4}=(a+b)^2$ and $4B^2=4ab$ give $A^2\cos^2\varphi+B^2\sin^2\varphi=\bigl((a+b)^2-(a-b)^2\sin^2\varphi\bigr)/4$. Integrating over $\varphi\in[0,\frac\pi2]$, and multiplying by $2/\pi$, gives $I(a,b)=I(A,B)$.
+because $(a+b)^2-(a-b)^2s^2=4(A^2-B^2s^2)$ with $A^2-B^2=(a-b)^2/4$; explicitly $4A^2=4\cdot\frac{(a+b)^2}{4}=(a+b)^2$ and $4B^2=4ab$ give $A^2\cos^2\varphi+B^2\sin^2\varphi=\bigl((a+b)^2-(a-b)^2\sin^2\varphi\bigr)/4$. Integrating over $\varphi\in[0,\frac\pi2]$ gives $I(a,b)=I(A,B)$.
 
 :::
 
@@ -146,7 +129,7 @@ because $(a+b)^2-(a-b)^2s^2=4(A^2-B^2s^2)$ with $A^2-B^2=(a-b)^2/4$; explicitly 
 
 ::: {.pf-step #s3}
 
-Gauss's identity: $I(a,b)=1/M(a,b)$.
+Gauss's identity: $\dfrac{1}{M(a,b)}=\dfrac2\pi I(a,b)$.
 
 ::: pf-proof
 
@@ -156,8 +139,9 @@ I(a,b)=\lim_{n\to\infty}I(a_n,b_n)=I(M,M),
 $$
 where $M=M(a,b)$ is the common limit of step [](#s1){.pf-ref}. At $a=b=M$ the integrand is the constant $1/M$, so
 $$
-I(M,M)=\frac2\pi\int_0^{\pi/2}\frac{d\theta}{M}=\frac2\pi\cdot\frac\pi2\cdot\frac1M=\frac1M .
+I(M,M)=\int_0^{\pi/2}\frac{d\theta}{M}=\frac{\pi}{2M},
 $$
+and therefore $\frac2\pi I(a,b)=\frac2\pi\cdot\frac{\pi}{2M}=\frac1M$.
 
 :::
 
@@ -165,7 +149,7 @@ $$
 
 ::: {.pf-step #s4}
 
-The relation with the complete elliptic integral: $I(a,b)=\dfrac{2}{\pi a}K(k)$ with $k^2=1-\dfrac{b^2}{a^2}$, where $K(k)=\displaystyle\int_0^1\frac{dx}{\sqrt{(1-x^2)(1-k^2x^2)}}$.
+The relation with the complete elliptic integral: $I(a,b)=\dfrac{1}{a}K(k)$ with $k^2=1-\dfrac{b^2}{a^2}$, where $K(k)=\displaystyle\int_0^1\frac{dx}{\sqrt{(1-x^2)(1-k^2x^2)}}$.
 
 ::: pf-proof
 
@@ -175,11 +159,9 @@ a^2\cos^2\theta+b^2\sin^2\theta=a^2\bigl(1-k^2\sin^2\theta\bigr),
 $$
 so
 $$
-I(a,b)=\frac2\pi\cdot\frac1a\int_0^{\pi/2}\frac{d\theta}{\sqrt{1-k^2\sin^2\theta}} .
+I(a,b)=\frac1a\int_0^{\pi/2}\frac{d\theta}{\sqrt{1-k^2\sin^2\theta}} .
 $$
-Substituting $x=\sin\theta$ in that integral gives $\int_0^1dx/\sqrt{(1-x^2)(1-k^2x^2)}=K(k)$. Hence $I(a,b)=\frac{2}{\pi a}K(k)$.
-
-Note the correction: the printed Problem 9(b) displays $I(a,b)=\frac1aK(k)$ with the same $K$, which is inconsistent with the definition of $I$ used in that problem, since it omits the factor $2/\pi$. At $a=b=1$ the definition gives $I(1,1)=\frac2\pi\cdot\frac\pi2=1$, while $\frac1aK(0)=\frac\pi2$; the correct value $\frac{2}{\pi a}K(0)=1$ agrees, and it agrees with Gauss's identity $I(1,1)=1/M(1,1)=1$ from step [](#s3){.pf-ref}.
+Substituting $x=\sin\theta$ in that integral gives $\int_0^1dx/\sqrt{(1-x^2)(1-k^2x^2)}=K(k)$. Hence $I(a,b)=\frac{1}{a}K(k)$.
 
 :::
 
