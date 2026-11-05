@@ -19,7 +19,8 @@ Use the codes in contributions, commit messages, and review.
 
 The live obligations, their order, and cold-resume instructions are recorded in the [issue tree](https://github.com/dzackgarza/new-qual-site/issues/83); `itree next dzackgarza/new-qual-site` selects the next work unit.
 
-An owner-requested handoff checkpoint may run `just build`, `just check`, and `just preview` locally to verify the parked working tree.
+An owner-requested handoff checkpoint may run `just check` and `just preview` locally to verify the parked working tree.
+`just preview` depends on `build`, so it compiles the tree once; naming `just build` beside it compiled the same unchanged tree a second time with up to eight Pandoc servers (issue #100).
 This does not publish the site and does not weaken `QUAL-06`: ordinary content commits remain reading-verified, while build/render checks stay at an explicitly required integration or deployment boundary.
 
 | ID | Name | Required action |
