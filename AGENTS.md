@@ -844,6 +844,20 @@ The same changed-card validation obligation holds at each supported content rout
   parser and Git-boundary tests. It is not how cards are normally committed; it is the command to run when
   you want the fast local checks plus their focused tests in one place.
 
+The push path compiles nothing and writes no queue. `build`, `site`, `crawl` and `preview` all reach the
+whole-corpus compile, so none of them is on the push path: `.github/workflows/development.yml` builds,
+crawls and deploys on a push to `main`, and its `corpus-reports` job runs `just _reports-ci` for
+`BACKLOG.md` and `queues/C-unsolved-cards.md`. `tests/test_push_gate_dependencies.py` holds that shape —
+it reads the `justfile` and fails if a recipe a commit or push reaches compiles the corpus, renders the
+site, or writes the queue, which is the defect issue #100 recorded when a push ran a full build with
+eight Pandoc servers and the queue refusal made it run a second time.
+
+The fan-out of that build is `QUALC_PARALLEL_WORKERS`, a validated integer in 1..8
+(`tools/qualc/pandoc_batch.py`). Left unset, the count is the CPU count reduced by the one-minute load
+average, rounded up, and by one reserved core, so a machine already carrying work gets fewer Pandoc
+servers and a loaded machine gets one. A gate run that does build sets the value explicitly for its
+machine instead of taking whatever the default gives there.
+
 Checks follow `QUAL-06` in [CONTRIBUTING.md](CONTRIBUTING.md#named-policies). Content work — copy,
 prose, mathematics, solutions, statement corrections, and new cards or ingested collections — is
 verified by reading its diff and reviewing the mathematics, and is committed as soon as the item is
