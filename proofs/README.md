@@ -186,8 +186,10 @@ Repairs made to a stored proof whose mathematical content no file here certifies
 claim of the form "this argument proves the stored statement", and none may be reported as
 settled until a file here covers it:
 
-- `E-HAT-2.2-16`, third step: the repaired argument needs three things, of which **the first is now
-  certified**. `cards/SimplexChains.lean` proves the augmented exactness for the standard simplex:
+- `E-HAT-2.2-16`, third step: the repaired argument needs three things, of which **the first two
+  are now certified** (the augmented exactness of the simplex, and the agreement of the
+  `k`-skeleton's differentials with the simplex's in degrees at most `k`); the third, the homology
+  statement that transports along them, is not. `cards/SimplexChains.lean` proves the augmented exactness for the standard simplex:
   `H̃_i(Δ^m) = 0` for `i ≠ 0` (`isZero_homology`) and `H_0` equal to the augmentation's target
   (`homologyZeroIso`, the form `ker ε = im ∂_1` takes), by transporting the standard simplex's
   extra degeneracy along the free `ℤ`-module functor and applying
@@ -216,25 +218,35 @@ settled until a file here covers it:
   `propext, Classical.choice, Quot.sound`, no `sorryAx`. **The chain groups are now compared too**:
   `skChainsIso` gives an isomorphism of the alternating face map complexes' degree-`i` objects for
   `i ≤ k` — that complex has the free abelian group on the `i`-simplices in degree `i`, so it is
-  `(ModuleCat.free ℤ).mapIso` of the equivalence (`rfl`-checked shape). What is still absent is the
-  agreement of the *differentials* there, i.e. the chain map itself, and with it
-  `H̃_i((Δ^m)^k) = 0` for `i < k`. For that comparison the only truncation of a chain
-  complex at this pin is `ChainComplex.truncate` (`Algebra/Homology/Augment.lean:31`), which deletes
-  degree `0` and shifts everything down — it says nothing about killing degrees above `k`;
-  `natTrunc`/`truncLE` occur only in the triangulated `TStructure` files. And there is no lemma
-  relating the chains of `sk_k X` to those of `X`. The work is
-  therefore to build the chain map from `(skAdj k).counit` and prove it an isomorphism in degrees
-  `≤ k`; then `cards/SimplexChains.lean`'s `isZero_homology` transports along it.
-  Open still, and stated as such on the file: it establishes nothing about the $k$-skeleton's
-  differentials agreeing with the simplex's in degrees at most $k$, hence nothing yet about
-  $\widetilde H_i((Δ^m)^k)=0$ for $i<k$, and nothing about barycentric chains. The three-things sentence below is the original statement of the obligation, kept for its
+  `(ModuleCat.free ℤ).mapIso` of the equivalence (`rfl`-checked shape). **The differentials are now
+  compared too, and the comparison is the square, not a transport.** `skChainsIso_δ` shows the
+  degree-wise isomorphism commutes with each face map: on the generators `freeMk x` of the free
+  abelian group the statement is exactly `skSimplexEquiv_δ`, which is why no element of
+  `X _⦋i⦌` has to be coerced across the tensor-style wrappers that stop `↥((…) .X i)` from being
+  the tensor. `skChainsIso_d` sums that over `Fin (i + 2)` with
+  `AlternatingFaceMapComplex.obj_d_eq` (`(obj X).d (n+1) n = ∑ i, (-1)^i • X.δ i`) and
+  `Preadditive.comp_sum`/`sum_comp`/`comp_zsmul`/`zsmul_comp`, giving
+  `skChainsIso (i+1) ≫ d_sk = d_X ≫ skChainsIso i` for `i + 1 ≤ k` — the low-degree part of a chain
+  map, i.e. the `k`-skeleton's differentials agree with the simplex's in degrees at most `k`, which
+  is the second of §5's three named pieces. Axioms `propext, Classical.choice, Quot.sound`, no
+  `sorryAx`. For the record, the reason this is a direct proof and not a `skAdj` map: no truncation
+  of a chain complex at this pin kills degrees above `k` (`ChainComplex.truncate`,
+  `Algebra/Homology/Augment.lean:31`, deletes degree `0` and shifts down; `natTrunc`/`truncLE` occur
+  only in the triangulated `TStructure` files), and `sk_k X ⟶ X` is not a simplicial map in general —
+  the unit of `skAdj` lives in the truncated category, so it exists only degree by degree.
+  **What remains is the homology step, and it is a transport rather than new mathematics**:
+  `cards/SimplexChains.lean`'s `isZero_homology` (`H̃_i(Δ^m) = 0` for `i ≠ 0`) has to be carried
+  along `skChainsIso_d` through `ker_eq_range_of_comm_iso` to give
+  $\widetilde H_i((Δ^m)^k)=0$ for $i<k$. The transport needs the degree-wise isomorphisms as
+  `LinearEquiv`s (the `ModuleCat` iso and the bundled `→ₗ[ℤ]` differ by `ConcreteCategory.hom`), and
+  that plumbing is not written. Nothing about barycentric chains either: the pin has no `SSet.B` and
+  no `sd ⟶ B`, so that piece stays open as upstream work. The three-things sentence below is the original statement of the obligation, kept for its
   wording: the augmented exactness $\ker\varepsilon=\operatorname{im}\partial_1$, the
   agreement of the $k$-skeleton's differentials with the simplex's in degrees at most $k$,
-  and hence $\widetilde H_i=0$ for $i<k$. `cards/ChainLevelSteps.lean` supplies Pascal's
-  identity, the properness of the augmentation kernel, the non-triviality of the *ordinary*
-  $H_0$, and the transport of exactness across an isomorphism of three-term complexes; it
-  does not supply the simplex's chain complex itself, so the card's implication is still not
-  completed.
+  and hence $\widetilde H_i=0$ for $i<k$. Of the three, the first is certified in
+  `cards/SimplexChains.lean` and the second in `cards/ChainLevelSteps.lean` (`skChainsIso_δ`,
+  `skChainsIso_d`); the third is the transport named above, which is not written, so the
+  card's implication is still not completed.
 - `E-HAT-3.A-6` and `E-HAT-3.A-2`, the filtered-colimit passage (Exercise 4 of §3.A). The
   `⊗` half is closed: `ColimitTensor.tensorLeft_colim_iso` gives `B ⊗ colim F ≅ colim (B ⊗ F ·)`,
   built from `PreservesColimit.preserves` with `PreservesColimits (tensorLeft B)` obtained

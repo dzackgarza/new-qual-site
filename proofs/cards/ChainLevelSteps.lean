@@ -25,6 +25,16 @@ passes to it. `ker_eq_range_of_comm_iso` is the transport: if the three-term com
 $A \\leftarrow B \\leftarrow C$ and $A' \\leftarrow B' \\leftarrow C'$ are isomorphic by a chain
 map, then $\\ker\\partial = \\operatorname{im}\\partial'$ transports. The range restriction
 $i < k$ is where the agreement hypothesis is used.
+
+Both halves of that chain-level comparison are now proved. `skSimplexEquiv` and
+`skSimplexEquiv_δ` compare the simplices, `skChainsIso` compares the chain groups, and
+`skChainsIso_δ` and `skChainsIso_d` compare the differentials: the alternating face map
+differential is the alternating sum of the face maps, so the face-level compatibility summed
+over `Fin (i + 2)` gives the chain-level square, for `i + 1 ≤ k`. What this file still does not
+prove, and what `proofs/README.md` §5 records: the homology statement
+$\widetilde H_i((\Delta^m)^k) = 0$ for $i < k$, which is `SimplexChains.isZero_homology`
+transported along that square, and the barycentric chains, for which the pin has no `SSet.B`
+and no `sd ⟶ B`.
 -/
 
 namespace ChainLevelSteps
@@ -153,6 +163,46 @@ noncomputable def skChainsIso (k : ℕ) (X : SSet.{0}) (i : ℕ) (hi : i ≤ k) 
           (((SSet.sk k).obj X) ⋙ (ModuleCat.free ℤ))).X i :=
   (ModuleCat.free ℤ).mapIso (skSimplexEquiv k X i hi).toIso
 
+/-- The chain complex of a simplicial set's free chain groups, named so that the differential
+statements below read as chain-level statements. -/
+noncomputable abbrev chainsCpx (X : SSet.{0}) : ChainComplex (ModuleCat ℤ) ℕ :=
+  AlgebraicTopology.AlternatingFaceMapComplex.obj (X ⋙ (ModuleCat.free ℤ))
+
+/-- **The `k`-skeleton's chain groups are the simplex's, compatibly with one face map.** The
+degree-wise isomorphism of `skChainsIso` commutes with `δ j`: on generators `freeMk x` it says that
+`skSimplexEquiv_δ` holds, which is the only input. This is the face-level half of the chain map. -/
+theorem skChainsIso_δ (k : ℕ) (X : SSet.{0}) {i : ℕ} (hi : i + 1 ≤ k) (j : Fin (i + 2)) :
+    (skChainsIso k X (i + 1) hi).hom ≫
+        SimplicialObject.δ (X := (SSet.sk k).obj X ⋙ ModuleCat.free ℤ) j =
+      SimplicialObject.δ (X := X ⋙ ModuleCat.free ℤ) j ≫
+        (skChainsIso k X i (Nat.le_of_succ_le hi)).hom := by
+  have h1 : SimplicialObject.δ (X := (SSet.sk k).obj X ⋙ ModuleCat.free ℤ) j
+      = (ModuleCat.free ℤ).map (((SSet.sk k).obj X).δ j) := rfl
+  have h2 : SimplicialObject.δ (X := X ⋙ ModuleCat.free ℤ) j
+      = (ModuleCat.free ℤ).map (X.δ j) := rfl
+  rw [h1, h2]
+  apply ModuleCat.free_hom_ext
+  intro x
+  simp only [ModuleCat.comp_apply, skChainsIso, Functor.mapIso_hom]
+  simp only [ModuleCat.free_map_apply (R := ℤ)]
+  exact congrArg (ModuleCat.freeMk (R := ℤ))
+    (skSimplexEquiv_δ k X (Nat.le_of_succ_le hi) hi j x).symm
+
+/-- **The `k`-skeleton's differentials agree with the simplex's in degrees at most `k`.** The
+alternating face map differential is the alternating sum of the face maps, so the face-level
+compatibility of `skChainsIso_δ`, summed over `Fin (i + 2)`, gives the square. With
+`skChainsIso` this is the degreewise isomorphism of the two chain complexes where both are
+defined, i.e. the low-degree part of a chain map; the differentials above degree `k` are the
+part the skeleton does not have. -/
+theorem skChainsIso_d (k : ℕ) (X : SSet.{0}) {i : ℕ} (hi : i + 1 ≤ k) :
+    (skChainsIso k X (i + 1) hi).hom ≫ (chainsCpx ((SSet.sk k).obj X)).d (i + 1) i =
+      (chainsCpx X).d (i + 1) i ≫ (skChainsIso k X i (Nat.le_of_succ_le hi)).hom := by
+  rw [AlgebraicTopology.AlternatingFaceMapComplex.obj_d_eq,
+    AlgebraicTopology.AlternatingFaceMapComplex.obj_d_eq]
+  simp only [Preadditive.comp_sum, Preadditive.comp_zsmul, Preadditive.sum_comp,
+    Preadditive.zsmul_comp]
+  exact Finset.sum_congr rfl fun j _ => by rw [skChainsIso_δ k X hi j]
+
 end ChainLevelSteps
 
 #print axioms ChainLevelSteps.choose_rank_step
@@ -162,3 +212,5 @@ end ChainLevelSteps
 #print axioms ChainLevelSteps.skSimplexEquiv
 #print axioms ChainLevelSteps.skSimplexEquiv_δ
 #print axioms ChainLevelSteps.skChainsIso
+#print axioms ChainLevelSteps.skChainsIso_δ
+#print axioms ChainLevelSteps.skChainsIso_d
