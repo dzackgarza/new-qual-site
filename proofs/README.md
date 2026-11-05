@@ -503,9 +503,12 @@ requires a construction, not a citation.
 
 ### Provider requests, stated so that they can be accepted or refused
 
-Four statements are wanted from the pinned library rather than from this directory. None is a request
-to relax anything above: where a proof needed one of them, the claim was restricted to the case that
-could be certified, and the restricted case is what is proved.
+Four statements were wanted from the pinned library rather than from this directory; three are still
+wanted, and the fourth is withdrawn below because the work was done without it. None is a request to
+relax anything above: where a proof needed one of them, the claim was restricted to the case that
+could be certified, and the restricted case is what is proved. Each absence was re-checked against
+`db584cd6` in the pass that wrote this paragraph, by reading the named file rather than by searching
+for a name.
 
 1. **`Module.Free R ↥N` for `N : Submodule ℤ (ι → ℤ)` with `ι` arbitrary** — equivalently, every
    subgroup of a free abelian group is free. Present only for finite `ι`:
@@ -524,13 +527,16 @@ could be certified, and the restricted case is what is proved.
    and the stage lemmas do not reach.
 3. **`SSet.B`**, the functor sending `X` to the nerve of its partially ordered type of nondegenerate
    simplices, **together with a natural transformation `sd ⟶ B`**. This is Mathlib's own TODO at
-   `AlgebraicTopology/SimplicialSet/Subdivision.lean:19-23`. *Needed by:* the barycentric chains of
-   `E-HAT-2.2-16`, the last piece of that card's third step.
-4. **Truncation of a chain complex above a degree**, `truncLE k`, with
-   `H_i(truncLE k C) ≅ H_i(C)` for `i ≤ k`. The only truncation present is
-   `ChainComplex.truncate` (`Algebra/Homology/Augment.lean:31`), which deletes degree `0` and shifts
-   everything down. *Needed by:* the `k`-skeleton comparison of `E-HAT-2.2-16`;
-   `IsIso ((skAdj k).unit)` supplies the simplex-level half of it.
+   `AlgebraicTopology/SimplicialSet/Subdivision.lean:19-21`, in exactly those words. *Needed by:* the
+   barycentric chain model of `E-HAT-2.2-16` — not its third step, which is now fully certified
+   (`cards/SkeletonHomology.lean`), but the identification of the chains the card writes down with
+   the barycentric ones.
+4. ~~**Truncation of a chain complex above a degree**, `truncLE k`~~ — **withdrawn.** The skeleton
+   comparison of `E-HAT-2.2-16` needed no truncation functor: `K.exactAt_iff'` already states
+   exactness at a degree as exactness of the three-term complex `K.sc' (j+2) (j+1) j`, so comparing
+   three degrees and two differentials is enough, and `cards/SkeletonHomology.lean` does exactly that.
+   The absence recorded here (only `ChainComplex.truncate`, `Algebra/Homology/Augment.lean:31`,
+   which deletes degree `0` and shifts down) is still true; it is simply no longer in the way.
 
 They are recorded here because this section is where the directory's upstream dependencies are
 audited. They are **not** filed against the library: the connected GitHub scope is this repository,
