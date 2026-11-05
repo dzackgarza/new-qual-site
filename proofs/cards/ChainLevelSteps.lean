@@ -32,9 +32,19 @@ Both halves of that chain-level comparison are now proved. `skSimplexEquiv` and
 differential is the alternating sum of the face maps, so the face-level compatibility summed
 over `Fin (i + 2)` gives the chain-level square, for `i + 1 ≤ k`. What this file still does not
 prove, and what `proofs/README.md` §5 records: the homology statement
-$\widetilde H_i((\Delta^m)^k) = 0$ for $i < k$, which is `SimplexChains.isZero_homology`
-transported along that square, and the barycentric chains, for which the pin has no `SSet.B`
-and no `sd ⟶ B`.
+$\widetilde H_i((\Delta^m)^k) = 0$ for $i < k$, and the barycentric chains, for which the pin has
+no `SSet.B` and no `sd ⟶ B`.
+
+The transport that the homology statement needs is `skChains_exact`: exactness at a degree,
+`\\ker \\partial_{j+1} = \\operatorname{im} \\partial_{j+2}`, passes to the $k$-skeleton when
+$j + 2 \\le k$, through `ker_eq_range_of_comm_iso` and the two squares. The lemma it feeds was
+stated over `[AddCommGroup]` alone, so its linear maps carried `AddCommGroup.toIntModule` while the
+`ModuleCat` differentials carry `ModuleCat.isModule`; the two structures are the same on paper and
+not definitionally, which is the type-class diamond section 5b of `proofs/README.md` records
+elsewhere. The binders are now explicit `[Module ℤ _]`, which is a sharper statement of the same
+transport and leaves every existing use intact. What is still absent for the card's sentence is the
+simplex's own exactness in `\\ker = \\operatorname{range}` form, which is a bridge from
+`SimplexChains.isZero_homology` (`IsZero` of a homology object), not new mathematics.
 -/
 
 namespace ChainLevelSteps
@@ -70,6 +80,7 @@ agree. -/
 theorem ker_eq_range_of_comm_iso
     {A B C A' B' C' : Type*} [AddCommGroup A] [AddCommGroup B] [AddCommGroup C]
     [AddCommGroup A'] [AddCommGroup B'] [AddCommGroup C']
+    [Module ℤ A] [Module ℤ B] [Module ℤ C] [Module ℤ A'] [Module ℤ B'] [Module ℤ C']
     (ea : A' ≃ₗ[ℤ] A) (eb : B' ≃ₗ[ℤ] B) (ec : C' ≃ₗ[ℤ] C)
     (d₁ : B →ₗ[ℤ] A) (d₂ : C →ₗ[ℤ] B) (d₁' : B' →ₗ[ℤ] A') (d₂' : C' →ₗ[ℤ] B')
     (h₁ : d₁ ∘ₗ eb.toLinearMap = ea.toLinearMap ∘ₗ d₁')
@@ -203,6 +214,59 @@ theorem skChainsIso_d (k : ℕ) (X : SSet.{0}) {i : ℕ} (hi : i + 1 ≤ k) :
     Preadditive.zsmul_comp]
   exact Finset.sum_congr rfl fun j _ => by rw [skChainsIso_δ k X hi j]
 
+
+/-- Inverting a commuting square of linear maps: from `d' ∘ e₁ = e₀ ∘ d` with `e₀`, `e₁` linear
+equivalences, the square with the inverses commutes the other way, `d ∘ e₁⁻¹ = e₀⁻¹ ∘ d'`. This is
+the orientation `ker_eq_range_of_comm_iso` asks for, and `skChainsIso_d` supplies the other one. -/
+theorem comp_inv_of_inv_comp {A A' B B' : Type*}
+    [AddCommGroup A] [AddCommGroup A'] [AddCommGroup B] [AddCommGroup B']
+    [Module ℤ A] [Module ℤ A'] [Module ℤ B] [Module ℤ B']
+    (e₀ : A ≃ₗ[ℤ] A') (e₁ : B ≃ₗ[ℤ] B') (d : B →ₗ[ℤ] A) (d' : B' →ₗ[ℤ] A')
+    (h : d'.comp e₁.toLinearMap = e₀.toLinearMap.comp d) :
+    d.comp e₁.symm.toLinearMap = e₀.symm.toLinearMap.comp d' := by
+  ext y
+  apply e₀.injective
+  have hh := LinearMap.congr_fun h (e₁.symm y)
+  simp only [LinearMap.comp_apply, LinearEquiv.coe_coe, LinearEquiv.apply_symm_apply] at hh ⊢
+  exact hh.symm
+
+/-- **Exactness at a degree transports to the `k`-skeleton.** If the simplex's chain complex has
+`ker ∂_{j+1} = im ∂_{j+2}` and `j + 2 ≤ k`, then so does the `k`-skeleton's: their chain groups in
+degrees `j`, `j + 1`, `j + 2` agree (`skChainsIso`) and so do the two differentials involved
+(`skChainsIso_d`), which is exactly what `ker_eq_range_of_comm_iso` transports. -/
+theorem skChains_exact (k : ℕ) (X : SSet.{0}) {j : ℕ} (hj : j + 2 ≤ k)
+    (hex : LinearMap.ker ((chainsCpx X).d (j + 1) j).hom
+      = LinearMap.range ((chainsCpx X).d (j + 2) (j + 1)).hom) :
+    LinearMap.ker ((chainsCpx ((SSet.sk k).obj X)).d (j + 1) j).hom
+      = LinearMap.range ((chainsCpx ((SSet.sk k).obj X)).d (j + 2) (j + 1)).hom := by
+  have hsq1 := (comp_inv_of_inv_comp
+    ((skChainsIso k X j (by omega)).toLinearEquiv)
+    ((skChainsIso k X (j + 1) (by omega)).toLinearEquiv)
+    ((chainsCpx X).d (j + 1) j).hom
+    ((chainsCpx ((SSet.sk k).obj X)).d (j + 1) j).hom
+    (by
+      have := congrArg ModuleCat.Hom.hom (skChainsIso_d k X (i := j) (by omega : j + 1 ≤ k))
+      simpa only [ModuleCat.hom_comp, CategoryTheory.Iso.toLinearMap_toLinearEquiv] using this))
+  have hsq2 := (comp_inv_of_inv_comp
+    ((skChainsIso k X (j + 1) (by omega)).toLinearEquiv)
+    ((skChainsIso k X (j + 2) hj).toLinearEquiv)
+    ((chainsCpx X).d (j + 2) (j + 1)).hom
+    ((chainsCpx ((SSet.sk k).obj X)).d (j + 2) (j + 1)).hom
+    (by
+      have := congrArg ModuleCat.Hom.hom
+        (skChainsIso_d k X (i := j + 1) (by omega : j + 1 + 1 ≤ k))
+      simpa only [ModuleCat.hom_comp, CategoryTheory.Iso.toLinearMap_toLinearEquiv] using this))
+  exact ker_eq_range_of_comm_iso
+    ((skChainsIso k X j (by omega)).symm.toLinearEquiv)
+    ((skChainsIso k X (j + 1) (by omega)).symm.toLinearEquiv)
+    ((skChainsIso k X (j + 2) hj).symm.toLinearEquiv)
+    ((chainsCpx X).d (j + 1) j).hom ((chainsCpx X).d (j + 2) (j + 1)).hom
+    ((chainsCpx ((SSet.sk k).obj X)).d (j + 1) j).hom
+    ((chainsCpx ((SSet.sk k).obj X)).d (j + 2) (j + 1)).hom
+    (by simpa only [CategoryTheory.Iso.toLinearEquiv_symm] using hsq1)
+    (by simpa only [CategoryTheory.Iso.toLinearEquiv_symm] using hsq2)
+    hex
+
 end ChainLevelSteps
 
 #print axioms ChainLevelSteps.choose_rank_step
@@ -214,3 +278,5 @@ end ChainLevelSteps
 #print axioms ChainLevelSteps.skChainsIso
 #print axioms ChainLevelSteps.skChainsIso_δ
 #print axioms ChainLevelSteps.skChainsIso_d
+#print axioms ChainLevelSteps.comp_inv_of_inv_comp
+#print axioms ChainLevelSteps.skChains_exact

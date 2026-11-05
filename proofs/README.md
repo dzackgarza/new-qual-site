@@ -234,19 +234,31 @@ settled until a file here covers it:
   `Algebra/Homology/Augment.lean:31`, deletes degree `0` and shifts down; `natTrunc`/`truncLE` occur
   only in the triangulated `TStructure` files), and `sk_k X ⟶ X` is not a simplicial map in general —
   the unit of `skAdj` lives in the truncated category, so it exists only degree by degree.
-  **What remains is the homology step, and it is a transport rather than new mathematics**:
-  `cards/SimplexChains.lean`'s `isZero_homology` (`H̃_i(Δ^m) = 0` for `i ≠ 0`) has to be carried
-  along `skChainsIso_d` through `ker_eq_range_of_comm_iso` to give
-  $\widetilde H_i((Δ^m)^k)=0$ for $i<k$. The transport needs the degree-wise isomorphisms as
-  `LinearEquiv`s (the `ModuleCat` iso and the bundled `→ₗ[ℤ]` differ by `ConcreteCategory.hom`), and
-  that plumbing is not written. Nothing about barycentric chains either: the pin has no `SSet.B` and
-  no `sd ⟶ B`, so that piece stays open as upstream work. The three-things sentence below is the original statement of the obligation, kept for its
+  **The transport itself is now proved: `skChains_exact`.** Exactness at a degree,
+  `ker ∂_{j+1} = im ∂_{j+2}`, passes to the `k`-skeleton whenever `j + 2 ≤ k`, by
+  `ker_eq_range_of_comm_iso` fed the degree-wise `ModuleCat` isomorphisms as `LinearEquiv`s
+  (`CategoryTheory.Iso.toLinearEquiv`), the two squares of `skChainsIso_d`, and
+  `comp_inv_of_inv_comp`, which turns the square `d' ∘ e₁ = e₀ ∘ d` into the orientation that lemma
+  asks for. Axioms `propext, Classical.choice, Quot.sound`, no `sorryAx`. One change was needed in
+  the transport lemma this file already carried: `ker_eq_range_of_comm_iso` was stated over
+  `[AddCommGroup _]` alone, so its bundled maps carried `AddCommGroup.toIntModule` while the
+  `ModuleCat` differentials carry `ModuleCat.isModule` — the same structure on paper, not
+  definitionally, which is the diamond §5b records elsewhere. The binders are now explicit
+  `[Module ℤ _]`: a sharper statement of the same transport, and every existing use is intact.
+  **What still keeps the card's sentence open**: `cards/SimplexChains.lean` gives
+  `isZero_homology` as `IsZero` of a homology object, and `skChains_exact` wants the hypothesis as
+  `ker = range`; bridging `HomologicalComplex.exactAt_iff_isZero_homology` to that form is
+  bookkeeping that is not written, and the instantiation at `Δ^m` (identifying
+  `(Δ^m)^k` with `SSet.sk k (stdSimplex m)`) goes with it. And nothing about barycentric chains:
+  the pin has no `SSet.B` and no `sd ⟶ B`, so that piece stays open as upstream work. The three-things sentence below is the original statement of the obligation, kept for its
   wording: the augmented exactness $\ker\varepsilon=\operatorname{im}\partial_1$, the
   agreement of the $k$-skeleton's differentials with the simplex's in degrees at most $k$,
   and hence $\widetilde H_i=0$ for $i<k$. Of the three, the first is certified in
   `cards/SimplexChains.lean` and the second in `cards/ChainLevelSteps.lean` (`skChainsIso_δ`,
-  `skChainsIso_d`); the third is the transport named above, which is not written, so the
-  card's implication is still not completed.
+  `skChainsIso_d`); the third — the homology statement — is now a proved transport
+  (`skChains_exact`) that has not yet been applied: the simplex's exactness is in `IsZero` form, and
+  the bridge to `ker = range` plus the barycentric chains are still missing, so the card's
+  implication is still not completed.
 - `E-HAT-3.A-6` and `E-HAT-3.A-2`, the filtered-colimit passage (Exercise 4 of §3.A). The
   `⊗` half is closed: `ColimitTensor.tensorLeft_colim_iso` gives `B ⊗ colim F ≅ colim (B ⊗ F ·)`,
   built from `PreservesColimit.preserves` with `PreservesColimits (tensorLeft B)` obtained
