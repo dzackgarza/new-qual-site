@@ -22,6 +22,15 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Applied the Sylow congruence and divisibility conditions to the Sylow 7-subgroups, forcing uniqueness and hence a proper nontrivial normal subgroup."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 7, Sylow problem 3:
+    "Prove no group of order 182 is simple." Correct: 182 = 2·7·13, n_7 divides 26
+    and is ≡ 1 mod 7, and 1, 2, 6, 5 are the four residues, so n_7 = 1 and the
+    Sylow 7-subgroup is a proper nontrivial normal subgroup. No defect.
+---
 ---
 
 ::: {.exercise}
