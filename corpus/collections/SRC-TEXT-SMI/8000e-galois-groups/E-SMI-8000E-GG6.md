@@ -22,6 +22,18 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Factored mod 2 as irreducible degrees 2 and 3, cubed the resulting Frobenius element to obtain a transposition, proved irreducibility mod 3 to obtain a 5-cycle, and showed a 5-cycle together with any transposition generates S5."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 9, prelim item 10, with
+    the printed cycle-type fact quoted on the card. Checked: X^5+X+1 factors mod 2
+    as (X^2+X+1)(X^3+X^2+1), both irreducible, so the group contains an element of
+    cycle type (2)(3), whose cube is a transposition; irreducibility mod 3 gives a
+    5-cycle; and a 5-cycle together with any transposition generates S_5 by
+    conjugating the transposition around the 5-cycle. Hence the Galois group is
+    S_5. No defect.
+---
 ---
 
 ::: {.exercise}
