@@ -22,6 +22,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the Alexander-duality and Mayer--Vietoris calculations and all degree shifts.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.B Exercise 4, printed page
+    176, with the printed hint. (a) checked: Φ(x,y) = (y/|y|, x/|y|) is a
+    homeomorphism S^{p+q−1} − S^{p−1} → S^{q−1} × R^p with inverse
+    (v,u)/√(1+|v|²), and contracting the R^p factor gives the deformation retraction.
+    (b) checked: [S^{q−1}] generates H̃_{q−1} of the complement of S^{p−1} (Exercise 3
+    applied to (D^p,S^{p−1}) ⊂ (D^{p+q},S^{p+q−1}) makes the inclusion an
+    isomorphism on H_{q−1}), yet a disjoint D^q is a chain there bounding it, so the
+    class would vanish. No defect.
+---
 ---
 
 ::: {.problem}
