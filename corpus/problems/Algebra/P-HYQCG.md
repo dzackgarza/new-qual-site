@@ -19,6 +19,28 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Reviewed against the Lamport standard. What was found: the question asks for a
+    definition (composition series), for the meanings of three adjectives, for the
+    definitions of three series, and for which class of groups each series detects —
+    statements throughout, so there is no proof obligation and no pf block was added.
+    What was checked, by reading against a fresh derivation: the definition of simple
+    and of composition series, including the equivalence of simple factors with
+    maximal proper normal subgroups and the Jordan-Holder independence of the factor
+    multiset; the derived series with solvability, and the claim that abelian-factor
+    subnormal series characterise solvability, whose induction step (G^(i) <= H_i
+    implies G^(i+1) <= [H_i, H_i] <= H_(i+1) when H_i/H_(i+1) is abelian) is correct;
+    the lower and upper central series with nilpotency and the coincidence of the
+    two classes; and the two concluding claims, that G^(i) <= gamma_(i+1)(G) gives
+    nilpotent implies solvable (G^(i+1) = [G^(i), G^(i)] <= [gamma_(i+1), G] =
+    gamma_(i+2)), and that S_3 is a solvable non-nilpotent group (A_3 is normal with
+    abelian factors of order 2 and 3, while the centre is trivial and a nilpotent
+    group of order 6 would have nontrivial centre). All correct. What was not checked:
+    no source solution is retained for this card, so no source comparison was made,
+    and none of the quoted theorems (Jordan-Holder) is proved here.
 ---
 
 ::: {.problem}
