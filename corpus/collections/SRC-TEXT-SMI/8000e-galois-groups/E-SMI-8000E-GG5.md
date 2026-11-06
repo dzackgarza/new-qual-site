@@ -14,6 +14,16 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 9, prelim item 9, of
+    which the card states the mathematical content: X^5 - X - 1 is irreducible and
+    separable over F_3. Checked, the values 2, 2, 2 on F_3 exclude a linear factor,
+    the three monic irreducible quadratics over F_3 are X^2+1, X^2+X+2, X^2+2X+2,
+    and division leaves remainders 2, X+2, X+2, so no quadratic factor either;
+    separability from gcd(f, f') = 1 with f' = 2X^4 - 1 of degree 4. No defect.
 ---
 
 ::: {.exercise}
