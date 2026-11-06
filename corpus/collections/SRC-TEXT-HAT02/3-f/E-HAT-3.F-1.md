@@ -21,6 +21,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §3.F Exercise 1, printed page
+    320; the statement matches word for word. Checked: each mapping cylinder
+    deformation retracts onto its top copy of X_{i+1} by sliding along the interval
+    direction, and these retractions are compatible with the gluing in the reverse
+    telescope (indices i < 0), so the whole retracts onto X_0; in the double
+    telescope the same slides retract it onto the sub-telescope over indices i > n.
+    No defect.
 ---
 
 ::: {.problem}
