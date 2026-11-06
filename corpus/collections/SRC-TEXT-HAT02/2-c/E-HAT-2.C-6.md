@@ -23,6 +23,20 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the simplicial, Lefschetz-trace, or surface argument against the preceding section results.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.C Exercise 6, printed page
+    184, which asks for an even-genus analog of Example 2C.4 (genus 3, p. 181) with
+    the central torus replaced by a sphere and f the antipodal map there; the card's
+    statement matches. Proof checked: attaching handles in m antipodal pairs with
+    matching parametrizations gives a fixed-point-free homeomorphism of the genus 2m
+    surface; f_* swaps the rank-two summands of H_1 pairwise, so its trace is 0; and
+    on H_2 = Z it is the antipodal map of S^2, of degree -1 (Proposition 2.30,
+    p. 134). Then tau(f) = 1 - 0 - 1 = 0, as the fixed-point-free map requires. No
+    defect.
+---
 ---
 
 ::: {.problem}
