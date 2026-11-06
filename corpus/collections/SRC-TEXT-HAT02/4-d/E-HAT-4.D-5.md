@@ -34,11 +34,15 @@ H^k(S^m)\longrightarrow H^0(S^n)
 $$
 The outer groups vanish, so cup product with $e$ is an isomorphism. Hence $H^{k+1}(S^n)\cong\ZZ$, which forces $k+1=n$, and $e$ is a generator up to sign. Therefore $k=n-1$ and $m=2n-1$.
 
-Cone each sphere fiber to form an oriented $D^n$-bundle $V$ whose boundary is the given sphere bundle (orientable sphere bundles are exactly those with $\ZZ$ Thom classes, Theorem 4D.10, p. 442). Its Thom space $V/S(V)$ is homotopy equivalent to the mapping cone $C_p$, since $V$ retracts onto its zero section $S^n$. If $U\in H^n(C_p;\ZZ)$ is the Thom class, the Thom identity gives
+Cone each sphere fiber to form an oriented $D^n$-bundle $V$ over $S^n$ whose boundary is the given sphere bundle; being orientable, it has a Thom class with $\ZZ$ coefficients (Theorem 4D.10, p. 442, in the direction orientable $\Rightarrow$ integral Thom class, which is the direction used here; the converse is Exercise 7 of this section). Its Thom space $V/S(V)$ is homotopy equivalent to the mapping cone $C_p$, since $V$ retracts onto its zero section $S^n$, so the Thom class becomes a class
 $$
-U^2=e\smile U.
+U\in H^n(C_p;\ZZ).
 $$
-The Thom isomorphism sends the generator $e=\pm[S^n]^*$ to a generator of $H^{2n}(C_p;\ZZ)$. By the definition of the Hopf invariant, $H(p)=\pm1$.
+By the Thom isomorphism of Corollary 4D.9 (p. 441), $\Phi\colon H^i(S^n;\ZZ)\to H^{i+n}(V,S(V);\ZZ)$ is an isomorphism with $\Phi(b)=p^*(b)\smile U$, and $\Phi(1)=p^*(1)\smile U=U$; hence $U$ *generates* $H^n(C_p;\ZZ)\cong\ZZ$, which is what the definition of the Hopf invariant requires. The Euler class $e\in H^n(S^n;\ZZ)$ is a generator, and the identity at the end of §4.D (p. 444) says that $\Phi(e)$ is the class corresponding to $c\smile c$ under the Thom isomorphism, that is,
+$$
+\Phi(e)=U\smile U.
+$$
+Since $\Phi$ is an isomorphism and $e$ generates, $U^2$ generates $H^{2n}(C_p;\ZZ)$. By the definition of the Hopf invariant (p. 427), which writes the square of a generator $\alpha$ of $H^n(C_p;\ZZ)$ as $\alpha^2=H(p)\beta$ with $\beta$ a generator of $H^{2n}(C_p;\ZZ)$, taking $\alpha=U$ gives $H(p)=\pm1$.
 
 For $n=1$, a connected fiber would make $\pi_1(S^m)\to\pi_1(S^1)$ surjective, while $m=1+k>1$ makes its source zero. Thus $k=0$ and $m=1$. The Hopf-invariant assertion concerns $n>1$.
 :::
