@@ -22,6 +22,15 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Checked the two products pointwise on the support of each cycle and outside both supports."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 8, problem 2. Correct:
+    on the support of one cycle the other acts trivially and preserves that
+    support, and off both supports both act trivially, so the two products agree
+    everywhere. No defect.
+---
 ---
 
 ::: {.exercise}
