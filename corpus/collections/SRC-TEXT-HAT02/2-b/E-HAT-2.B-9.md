@@ -14,6 +14,17 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.B Exercise 9, printed page
+    177; the statement matches word for word. Checked: for the trivial double cover
+    X × S^0 = X ⊔ X over Z_2 the transfer and projection are τ(c) = (c,c) and
+    p(a,b) = a + b, so the transfer sequence is the split short exact sequence
+    0 → H_n(X) → H_n(X)^2 → H_n(X) → 0 with all connecting maps zero, the splitting
+    being c ↦ (c,0); the chain-level sequence of Hatcher's construction (§2.B,
+    p. 173) is split for the same reason. No defect.
 ---
 
 ::: {.problem}
