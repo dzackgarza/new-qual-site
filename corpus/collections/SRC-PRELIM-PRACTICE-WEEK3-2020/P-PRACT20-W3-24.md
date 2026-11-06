@@ -27,6 +27,22 @@ audit:
   date: 2026-11-06
   note: >-
     The booklet's differentiation under the integral, its two integrations by parts giving I-prime = -1/(1+s squared), and the integration with the limit at infinity are transcribed, with the domination hypotheses stated for Leibniz and dominated convergence.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Two defects corrected in the final step of the proof. First, from
+    I(s) - I(sigma) = arctan(sigma) - arctan(s) and I(s) -> 0 the conclusion is
+    I(sigma) = pi/2 - arctan(sigma), not I(sigma) = arctan(sigma), so the step
+    now derives the former and reads the limit pi/2 off it. Second, the passage
+    to sigma = 0 was attributed to dominated convergence, which does not apply:
+    sin(t)/t is not absolutely integrable and there is no integrable dominating
+    function uniform in sigma in (0,1). The step now argues by uniform
+    convergence of the integral on [0, infinity), by Dirichlet's test, since the
+    partial integrals of sin(t) are bounded by 2 and e^(-sigma t)/t decreases to
+    0 in t with a bound independent of sigma; continuity of I on [0, infinity)
+    then gives I(0) = lim I(sigma) = pi/2. The bound |I(s)| <= 1/s, which gives
+    I(s) -> 0, is kept.
 ---
 
 ::: {.problem}
@@ -82,14 +98,24 @@ $\boxed{\displaystyle\int_0^\infty\frac{\sin t}{t}\,dt=\frac{\pi}{2}}$.
 
 Integrating step [](#ode){.pf-ref},
 $I(s)-I(\sigma)=-\int_\sigma^s\frac{dr}{1+r^2}=\arctan\sigma-\arctan s$ for
-$0<\sigma<s$. For $s\to\infty$ we have $I(s)\to0$ by dominated convergence
-with dominating function $e^{-s_0t}$, so $I(\sigma)=\arctan\sigma$; letting
-$\sigma\to0^{+}$ gives $I(0)=\lim_{\sigma\to0^+}\arctan\sigma$ corrected by
-the vanishing term, that is $\frac{\pi}{2}$ in the sense that
-$\lim_{\sigma\to0^+}I(\sigma)=\frac{\pi}{2}$, which is the value of the
-improper integral since $I(\sigma)\to I(0)$ as $\sigma\to0$ by dominated
-convergence. The printed solution writes the same conclusion as
-$I(0)=\lim_{s\to\infty}(I(s)+\arctan s)=\frac\pi2$.
+$0<\sigma<s$. Since $\abs{\sin t/t}\le1$, $\abs{I(s)}\le\int_0^\infty e^{-st}dt=\frac1s$,
+so $I(s)\to0$ as $s\to\infty$; letting $s\to\infty$ in the identity therefore
+gives $I(\sigma)=\frac{\pi}{2}-\arctan\sigma$ for every $\sigma>0$, and hence
+$\lim_{\sigma\to0^{+}}I(\sigma)=\frac{\pi}{2}$.
+
+It remains to identify that limit with $I(0)$, which is continuity of $I$ at
+the endpoint. This is not an application of dominated convergence, since
+$\sin t/t$ is not absolutely integrable and no integrable dominating function
+uniform in $\sigma\in(0,1)$ exists; the argument is uniform convergence of the
+improper integral on $[0,\infty)$. The partial integrals
+$\int_0^T\sin t\,dt$ are bounded by $2$ for every $T$, and for fixed $t$ the
+factor $e^{-\sigma t}/t$ decreases in $t$ to $0$ uniformly in $\sigma\ge0$,
+since $0<e^{-\sigma t}/t\le1/t$ and this bound is independent of $\sigma$ and
+tends to $0$. Dirichlet's test for uniform convergence then gives that
+$\int_0^\infty e^{-\sigma t}\frac{\sin t}{t}\,dt$ converges uniformly for
+$\sigma\in[0,\infty)$, so $I$ is continuous on $[0,\infty)$ and
+$I(0)=\lim_{\sigma\to0^+}I(\sigma)=\frac\pi2$. The printed solution writes the
+same conclusion as $I(0)=\lim_{s\to\infty}(I(s)+\arctan s)=\frac\pi2$.
 
 :::
 
