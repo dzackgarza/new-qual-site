@@ -23,6 +23,21 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.1,
+    exercise 7, book page 241: "If v is algebraic over K(u) for some u ∈ F and v
+    is transcendental over K, then u is algebraic over K(v)." The card states
+    this with the letters renamed a for u and b for v, and with the hypotheses
+    spelled out. The proof was checked: a nonzero q(Y) ∈ K(a)[Y] with q(b) = 0
+    exists by hypothesis; clearing the denominators s_i(a) ≠ 0 gives a nonzero
+    P(X,Y) ∈ K[X,Y] with P(a,b) = 0, and it is nonzero because some coefficient
+    r_i(a) is nonzero and all s_j(a) are; and P(X,b) is nonzero because b
+    transcendental over K makes K[Y] → F, Y ↦ b injective, so not all of its
+    coefficients p_j(b) vanish. Hence a is a root of a nonzero polynomial over
+    K(b). Complete; no defect.
 ---
 
 ::: {.problem}
