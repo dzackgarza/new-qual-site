@@ -23,6 +23,21 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section VII.2,
+    exercise 2, book page 346: "An n × m matrix A over a division ring D has an
+    m × n left inverse B (that is, BA = I_m) if and only if rank A = m. A has an
+    m × n right inverse C (with AC = I_n) if and only if rank A = n." The card
+    states exactly both halves. The proof was checked: BA = I_m makes x ↦ Ax
+    injective, so rank A = dim D^m = m; conversely rank m gives injectivity, and
+    defining S on the image and 0 on a complement of it produces B. AC = I_n makes
+    x ↦ Ax surjective, so rank A = n; conversely surjectivity lets one choose
+    preimages of a basis and extend by linearity to C. The rank-nullity count used
+    in the converse directions is stated in the closing remark. Complete; no
+    defect.
 ---
 
 ::: {.problem}
