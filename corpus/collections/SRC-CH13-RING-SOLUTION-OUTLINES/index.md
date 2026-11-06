@@ -20,7 +20,8 @@ source:
     - id: P-CH13-12
       comment: Exercise 12
     - id: P-CH13-13
-      comment: Exercise 13
+      comment: Exercise 11 (printed as exercise 13 when the card was created; the
+        commutative-ring-without-zero-divisors exercise is 11 in Gallian 7e)
     - id: P-CH13-16
       comment: Exercise 16
     - id: P-CH13-18
