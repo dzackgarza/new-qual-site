@@ -14,6 +14,17 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §3.F Exercise 8, printed page
+    320; the statement matches word for word. Checked: for a Moore space
+    H̃_n(M(G,n)) = G with all other reduced homology zero, so the universal
+    coefficient theorem (Theorem 3.2, p. 195) gives H^n = Hom(G,−) and
+    H^{n+1} = Ext(G,−) and kills the rest; the Bockstein sequence of
+    0 → A → B → C → 0 (§3.E, p. 305) therefore has only two nonzero terms, and the
+    displayed six-term sequence is its exactness written out. No defect.
 ---
 
 ::: {.problem}
