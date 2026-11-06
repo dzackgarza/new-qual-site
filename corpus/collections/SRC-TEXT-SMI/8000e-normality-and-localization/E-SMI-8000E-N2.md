@@ -20,6 +20,18 @@ audit:
   by: chatgpt
   date: 2026-10-31
   note: "Clarified proper containment: inclusive containment would force P=0."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 6, Exercise 2: "In a
+    ufd R, prove all 'minimal' prime ideals are principal. I.e. if the only prime
+    ideal contained in P is {0}, then P is principal." The printed wording is
+    literal only if P itself is excluded, since P is a prime ideal contained in P;
+    the card states the proper-containment reading and says so. Correct under that
+    reading: a nonzero a in P has an irreducible factor p in P, (p) is a nonzero
+    prime contained in P, so (p) = P. No defect.
+---
 ---
 
 ::: {.exercise}
