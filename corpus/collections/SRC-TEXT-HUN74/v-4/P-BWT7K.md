@@ -23,6 +23,25 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.4,
+    exercise 11, book page 277: "Determine all the subgroups of the Galois group
+    and all of the intermediate fields of the splitting field (over Q) of the
+    polynomial (x^3 - 2)(x^2 - 3) ∈ Q[x]." The card states exactly this. I
+    recomputed the subgroup list from scratch: G = S_3 × C_2 has order 12, and
+    writing a subgroup by its projection to S_3 gives, with graphs of
+    homomorphisms P → C_2, ten subgroups, plus the four containing ε: ⟨ε⟩, the
+    three ⟨τ_j, ε⟩, ⟨ρ, ε⟩ and G, for sixteen in total, matching the card's count
+    of 1 + 7 + 1 + 3 + 3 + 1 rows. The involution count of seven, the unique
+    order-3 subgroup, the three order-4 subgroups (no element of order 4 exists,
+    and a subgroup of order 4 must contain ε because its projection has order 2),
+    and the three index-2 kernels via G_ab = C_2 × C_2 all check. Each fixed field
+    in the table was verified together with its degree against the subgroup
+    index, including that τ_j inverts √-3 and ε inverts √3 so that τ_j ε fixes
+    i = √-3/√3. Complete; no defect.
 ---
 
 ::: {.problem}
