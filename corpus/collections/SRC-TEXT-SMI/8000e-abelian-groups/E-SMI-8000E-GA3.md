@@ -23,6 +23,21 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Lifted 1 in Z, adjoined that lift to the injected standard basis of Z^s, and proved generation and independence by applying the quotient map."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith Math 8000 packet 8000e.pdf page 1,
+    abelian-groups (generators) problem 3: "prove if 0-->Z^s-->K-->Z-->0 is an
+    exact sequence, then there is a linearly independent generating set
+    consisting of s+1 elements for K, and hence K is isomorphic to Z^(s+1)." The
+    card states exactly this. The proof was checked: t with p(t) = 1 exists by
+    surjectivity; for x in K the element x - p(x)t lies in ker p = im i, so the
+    images of the standard basis together with t generate; and a relation
+    sum a_j i(e_j) + n t = 0 gives n = 0 after applying p and then all a_j = 0 by
+    injectivity of i together with independence of the e_j. A linearly independent
+    generating set of s + 1 elements is a basis, so K ≅ Z^{s+1}. Complete; no
+    defect.
 ---
 
 ::: {.exercise}
