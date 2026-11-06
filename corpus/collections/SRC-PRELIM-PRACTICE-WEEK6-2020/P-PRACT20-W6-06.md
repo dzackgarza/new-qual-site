@@ -30,6 +30,18 @@ audit:
   note: >-
     No published solution set is retained for this sheet, so the solution is
     derived here rather than transcribed. Four explicit examples, with the failure of uniform continuity, of the Lipschitz condition, of differentiability at 0, and of continuity of the derivative, each verified
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Correction to the preceding event, which said that no source page is
+    retained. Three page images of the solutions booklet GRE Prep: Miscellaneous
+    Practice Problem Solutions by Christian Parkinson are retained under
+    assets/attachments/prelim-practice-week6-2020/, and page 4 carries the
+    printed solution to problem 6 of the sheet (its part (D) tail is visible at
+    the top of the page). The practice sheet itself is still not retained, so the
+    statement is read from the card; the solution on the card was compared with
+    the printed one on page 4.
 ---
 
 ::: {.problem}
