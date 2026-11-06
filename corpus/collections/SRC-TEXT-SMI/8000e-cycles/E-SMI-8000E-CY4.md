@@ -22,6 +22,14 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Expressed every transposition (ij) as a product of star transpositions and invoked the preceding transposition-generation result."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 8, problem 4, with its
+    printed hint (1i)(1j)(1i) = (ij). Correct: the star transpositions give every
+    transposition by conjugation, and transpositions generate S_n. No defect.
+---
 ---
 
 ::: {.exercise}
