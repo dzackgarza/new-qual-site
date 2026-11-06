@@ -22,6 +22,16 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Paired transpositions in an even decomposition and reduced equal, overlapping, and disjoint pairs to products of 3-cycles; also checked every 3-cycle is even."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 8, problem 6, with its
+    printed hint. Both hint identities were checked under the sheet's convention:
+    (ac)(ab) = (abc) and (cd)(ab) = (abc)(bcd). The three cases for a pair of
+    transpositions (equal, sharing one point, disjoint) are exhaustive, and pairing
+    an even decomposition gives every element of A_n. No defect.
+---
 ---
 
 ::: {.exercise}
