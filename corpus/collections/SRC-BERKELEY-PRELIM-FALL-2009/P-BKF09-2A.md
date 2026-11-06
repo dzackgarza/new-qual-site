@@ -23,9 +23,8 @@ Prove that no polynomial $p(a, b, c, d)$ in four variables over $\CC$ has the pr
 
 ::: {.solution}
 Assuming the opposite, we arrive at the absurd conclusion that $\sqrt{z}$ is a polynomial in $z$; namely $p(0,z,1,0)^2=z$ for all $z\in\CC$.
-:::
 
-::: {.solution}
+A second argument uses the trace and the determinant.
 Suppose $p$ always evaluates to an eigenvalue of $A$. Then $q=\operatorname{tr}(A)-p=a+d-p$ evaluates to the other eigenvalue, hence
 $$
 pq=\det(A)=ad-bc.
