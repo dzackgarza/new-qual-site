@@ -22,6 +22,15 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Compared the card's statement in full with the printed Exercise 2.7 (scan
+    page 27 of the retained PDF), tails included: hypotheses, every lettered
+    part and the closing clauses. The book also prints a bracketed hint — to
+    use Ex. 2.6 to reduce to (1.10) — which the card had dropped; restored as
+    a hint block.
 ---
 
 ::: {.problem}
@@ -30,6 +39,10 @@ Let $k$ be algebraically closed and let $n\ge0$.
 (a) Show that $\dim \PP_k^n = n$.
 
 (b) If $Y \subseteq \PP_k^n$ is a quasi-projective variety, show that $\dim Y = \dim \bar{Y}$.
+:::
+
+::: {.hint}
+Use Ex. 2.6 to reduce to (1.10).
 :::
 
 ::: {.hint}
