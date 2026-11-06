@@ -23,6 +23,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hungerford, Algebra (1974), Chapter II, section 1, exercise 9:
+    "Let G be a finitely generated abelian group in which no element (except 0)
+    has finite order. Show that G is a free abelian group." The card states
+    exactly this and its II.1.9 locator is the printed number. The proof was read
+    and checked: the structure theorem writes G as Z^r plus cyclic summands of
+    orders d_i > 1, and any such summand contributes a nonzero element of order
+    d_i, so torsion-freeness forces t = 0 and G = Z^r. Complete; no defect.
 ---
 
 ::: {.problem}
