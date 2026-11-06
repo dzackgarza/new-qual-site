@@ -24,6 +24,23 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Proved row-operation invariance using elementary matrices, consistency using the augmented-column rank criterion, uniqueness by rank-nullity, and the homogeneous criterion by nullity."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section VII.2,
+    exercise 4, book page 346, all four parts: (a) the system is the coordinate
+    form of AX = B; (b) simultaneous elementary row operations preserve the
+    solution set; (c) AX = B is solvable if and only if rank A = rank C for the
+    augmented matrix C = [A | B], and in that case the solution is unique if and
+    only if rank A = m; (d) the homogeneous system has a nontrivial solution if
+    and only if rank A < m, in particular when n < m. The card's statement agrees
+    with the printed text, including the conditional "In this case" on uniqueness
+    and the printed "rank A < m" (not its reverse) in (d). The proofs were
+    checked: an elementary row operation is left multiplication by an invertible
+    matrix, consistency is membership of B in the column space, which the rank of
+    [A | B] detects, and uniqueness and nontriviality are ker A = 0 and ker A ≠ 0
+    read through rank-nullity. Complete; no defect.
 ---
 
 ::: {.problem}
