@@ -22,6 +22,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the Alexander-duality and Mayer--Vietoris calculations and all degree shifts.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.B Exercise 1, printed page
+    176; the statement matches word for word. Checked: Alexander duality
+    H̃_i(S^n − X) ≅ H̃^{n−i−1}(X) (Theorem 3.44, p. 253) applies to these compact
+    locally contractible X; H̃^j(S^k ∨ S^ℓ) is Z in degrees k and ℓ (Z^2 when
+    k = ℓ) and H̃^0 = 0, giving Z in degrees n−k−1 and n−ℓ−1; for the disjoint union
+    there is also H̃^0 = Z, giving one more Z in degree n−1. Degree shifts and the
+    ordinary H_0 statement checked. No defect.
+---
 ---
 
 ::: {.problem}
