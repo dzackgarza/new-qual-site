@@ -22,6 +22,18 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Verified contraction is an ideal, computed the kernel of the induced quotient map, and pulled primality back along the ring map."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 5, problem 8: f^{-1}(I)
+    is an ideal, the induced map R/f^{-1}(I) → S/I is injective, and f^{-1}(I) is
+    prime when I is. Correct: contraction is closed under subtraction and under
+    multiplication by elements of R on either side (the written step does the left
+    side and the same computation gives the right), the induced map has kernel zero,
+    and primality pulls back because f(1) = 1 keeps the contraction proper. No
+    defect.
+---
 ---
 
 ::: {.exercise}
