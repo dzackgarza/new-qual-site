@@ -61,7 +61,7 @@ $\FF_{p^n}^\times$ is a finite subgroup of the multiplicative group of a field, 
 $p^n=\sum_{d\mid n}d\cdot N_p(d)$ for every $n\geq1$.
 
 ::: pf-proof
-Over $\Omega$ the polynomial $x^{p^n}-x$ has derivative $-1$, so it has no repeated roots, and its roots are exactly the elements of $\FF_{p^n}$ by the argument of step [](#exists-all){.pf-ref} in reverse: each element of $\FF_{p^n}$ satisfies $x^{p^n}=x$, and there are $p^n$ of them, which is the degree. Hence $x^{p^n}-x=\prod_{a\in\FF_{p^n}}(x-a)$.
+Over $\Omega$ the polynomial $x^{p^n}-x$ has derivative $-1$, so it has no repeated roots. By Lagrange's theorem in $\FF_{p^n}^\times$, every element satisfies $x^{p^n}=x$: a nonzero element has $x^{p^n-1}=1$ because the group has order $p^n-1$, and $0$ satisfies the equation trivially. So the roots include all $p^n$ elements of $\FF_{p^n}$, which is the degree of the polynomial, and being as many as the degree they are all of them. Hence $x^{p^n}-x=\prod_{a\in\FF_{p^n}}(x-a)$.
 
 A monic irreducible $f\in\FF_p[x]$ of degree $d$ divides $x^{p^n}-x$ exactly when $d\mid n$: if $f$ divides it, a root $\beta$ of $f$ lies in $\FF_{p^n}$, so $\FF_p(\beta)\subseteq\FF_{p^n}$ and $d=[\FF_p(\beta):\FF_p]$ divides $[\FF_{p^n}:\FF_p]=n$ by the tower law; conversely if $d\mid n$ then $\FF_{p^d}\subseteq\FF_{p^n}$, and a root of $f$ lies in $\FF_{p^d}$, hence in $\FF_{p^n}$, hence is a root of $x^{p^n}-x$. Since $x^{p^n}-x$ is separable, it is the product of the distinct monic irreducibles whose degree divides $n$, and each such $f$ of degree $d$ contributes $d$ to the degree. Comparing degrees gives the identity.
 :::
