@@ -20,6 +20,14 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Compared the card's statement in full with the printed Exercise 2.12 (scan
+    page 28 of the retained PDF), tails included: hypotheses, every lettered
+    part and the closing clauses. Agrees, including N = binom(n+d, n) - 1 and
+    the definition of the map.
 ---
 
 ::: {.problem}
