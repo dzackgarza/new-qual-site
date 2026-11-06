@@ -37,11 +37,11 @@ The inclusion of a fiber induces on fundamental groups the reduction map
 $$
 \ZZ=\pi_1(S^1)\longrightarrow\pi_1(S^\infty/\ZZ_p)=\ZZ_p.
 $$
-Therefore the generator
+Here $S^\infty/\ZZ_p$ is a $K(\ZZ_p,1)$, since $\ZZ_p\subset S^1$ acts freely on the contractible space $S^\infty$. Because $H^1(-;\ZZ_p)=\operatorname{Hom}(\pi_1(-),\ZZ_p)$, the reduction $\ZZ\to\ZZ_p$ being onto means the generator
 $$
 a\in H^1(S^\infty/\ZZ_p;\ZZ_p)
 $$
-restricts to the generator of $H^1(S^1;\ZZ_p)$. Leray--Hirsch gives
+restricts to the generator of $H^1(S^1;\ZZ_p)$. The Leray--Hirsch theorem (Theorem 4D.1, p. 432) applies, since $H^*(S^1;\ZZ_p)$ is free with generator the restriction of $a$; it gives
 $$
 H^*(K(\ZZ_p,1);\ZZ_p)
 \cong H^*(\CP^\infty;\ZZ_p)\{1,a\}
@@ -57,7 +57,7 @@ $$
 \boxed{H^*(K(\ZZ_p,1);\ZZ_p)
 \cong \Lambda(a)\otimes\ZZ_p[b]\qquad(p\text{ odd}).}
 $$
-The Bockstein associated to $0\to\ZZ_p\to\ZZ_{p^2}\to\ZZ_p\to0$ satisfies $\beta(a)=b$. For $p=2$, this Bockstein is $Sq^1$ on degree-one classes, so $b=a^2$. Hence
+The Bockstein associated to $0\to\ZZ_p\to\ZZ_{p^2}\to\ZZ_p\to0$ (defined in §3.E, p. 303) satisfies $\beta(a)=b$: by construction it detects whether the class lifts to $\ZZ_{p^2}$ coefficients, and $a$ does not, while $a$ generates $H^1$ of the fiber. For $p=2$ the Bockstein is $Sq^1$ (Theorem 4L.12(7), p. 504), and $Sq^1$ of a degree-one class is its square, so $b=a^2$. Hence
 $$
 \boxed{H^*(K(\ZZ_2,1);\ZZ_2)\cong\ZZ_2[a],\quad \gradeddegree{a}=1.}
 $$
