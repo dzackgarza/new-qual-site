@@ -57,7 +57,7 @@ Since $r\circ i=\operatorname{id}_A$, the inclusion
 $$
 i_*:\widetilde H_*(A)\to\widetilde H_*(X)
 $$
-is split injective, with splitting $r_*$. The long exact sequence of the pair $(X,A)$ therefore breaks into split short exact sequences
+is split injective, with splitting $r_*$. The long exact sequence of the pair $(X,A)$ (Theorem 2.16, p. 117) therefore breaks into split short exact sequences
 $$
 0\longrightarrow\widetilde H_j(A)
 \stackrel{i_*}{\longrightarrow}
@@ -77,7 +77,7 @@ Both $\Sigma X$ and
 $$
 \Sigma A\vee\Sigma(X/A)
 $$
-are simply connected CW complexes because $X$ is connected. The homology version of Whitehead's theorem therefore gives
+are simply connected CW complexes because $X$ is connected. The homology version of Whitehead's theorem (Corollary 4.33, p. 367) therefore gives
 $$
 \boxed{\Sigma X\simeq\Sigma A\vee\Sigma(X/A).}
 $$
