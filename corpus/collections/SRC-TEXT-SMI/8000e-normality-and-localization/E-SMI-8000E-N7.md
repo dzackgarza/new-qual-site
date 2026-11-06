@@ -23,6 +23,17 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Cleared a common denominator in a monic equation over R_P to show that a suitable denominator multiple of the integral element is integral over R, then divided by that denominator in the localization."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 6, Exercise 7: "If R is
+    normal, P prime, prove R_P also normal." Correct: with a common denominator
+    s not in P for the coefficients, multiplying by s^n turns an integral equation
+    for z over R_P into the monic equation
+    y^n + b_1 y^{n-1} + b_2 s y^{n-2} + ... + b_n s^{n-1} = 0 for y = sz over R,
+    so y in R by normality and z = y/s in R_P. No defect.
+---
 ---
 
 ::: {.exercise}
