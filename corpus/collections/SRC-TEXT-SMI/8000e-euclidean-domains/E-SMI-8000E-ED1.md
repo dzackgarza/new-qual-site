@@ -24,6 +24,15 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Chose a nonzero ideal element of minimal Euclidean size, used division to force zero remainder, and identified a nonzero principal ideal with R because R is a domain."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 2, Euclidean-domain
+    problem 1. Statement and proof agree with the printed hint and are correct:
+    r = y - qx ∈ I with δ(r) < δ(x) forces r = 0, and r ↦ rx is an R-module
+    isomorphism R → (x) because R is a domain, giving I = {0} or I ≅ R. No defect.
+---
 ---
 
 ::: {.exercise}
