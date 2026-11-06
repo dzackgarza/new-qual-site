@@ -23,6 +23,25 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.9,
+    exercise 3, book page 309: "Let K be a field, f ∈ K[x] an irreducible
+    polynomial of degree n ≥ 5 and F a splitting field of f over K. Assume that
+    Aut_K F ≅ S_n. Let u be a root of f in F. Then (a) K(u) is not Galois over K;
+    [K(u) : K] = n and Aut_K K(u) = 1 (and hence is solvable). (b) Every normal
+    closure over K that contains u also contains an isomorphic copy of F. (c)
+    There is no radical extension field E of K such that E ⊃ K(u) ⊃ K." The card
+    states the three parts. All were checked: |Aut_K F| = n! = [F : K] makes F/K
+    Galois; the action on the roots is faithful and transitive, so G is the full
+    symmetric group; the stabilizer of u is S_{n-1}, giving [K(u) : K] = n; that
+    stabilizer is not normal, so K(u)/K is not Galois; and
+    Aut_K K(u) ≅ N_G(H)/H = 1 because an element normalizing a point stabilizer
+    fixes the point. Part (b) is normality of the root's minimal polynomial; part
+    (c) is Corollary 9.5 together with nonsolvability of S_n for n ≥ 5, whose
+    normal subgroup A_n is nonabelian simple. Complete; no defect.
 ---
 
 ::: {.problem}
