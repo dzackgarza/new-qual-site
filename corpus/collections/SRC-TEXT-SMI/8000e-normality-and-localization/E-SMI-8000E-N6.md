@@ -22,6 +22,16 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Identified PR_P as fractions with numerator in P, showed every fraction outside it has its reciprocal in R_P, and deduced uniqueness of the maximal ideal."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 6, Exercise 6, with the
+    printed definitions of the fraction field and of R_P above it. Correct:
+    PR_P is exactly the set of a/s with a in P, well defined because at = ps in P
+    with t not in P forces a in P; every a/s with a not in P is a unit; so PR_P is
+    proper and maximal, and every proper ideal is contained in it. No defect.
+---
 ---
 
 ::: {.exercise}
