@@ -22,7 +22,20 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
-  note: Verified the simplicial, Lefschetz-trace, or surface argument against the preceding section results.
+  note: Verified the simplicial, Lefschetz-trace, or surface argument used against the preceding section results.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.C Exercise 5, printed page
+    184; the statement matches word for word. The card answers yes with an explicit
+    construction, and it was checked: in a collar (θ,t) of a fixed circle the
+    reflection is r(θ,t) = (θ,−t), the twist h(θ,t) = (θ + δρ(t), t) with ρ = 1 near
+    t = 0 is an isotopy of homeomorphisms supported in the collars, and g = h∘r
+    satisfies g(θ,t) = (θ + δρ(−t), −t), so a fixed point would force t = 0 and
+    δρ(0) = δ ≠ 0. This is consistent with tau(r) = chi(M ∩ P) = 0 from the preceding
+    exercise, so the Lefschetz theorem does not obstruct it. No defect.
+---
 ---
 
 ::: {.problem}
