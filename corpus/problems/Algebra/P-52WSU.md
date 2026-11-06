@@ -17,6 +17,25 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Reviewed against the Lamport standard. What was found: the question asks for three
+    definitions and a description of the matrix, so there is no proof obligation and
+    no pf block was added; this note is the record. What was checked, by reading
+    against a fresh derivation: the Hardy space as the closed span of the
+    nonnegative powers of z, equivalently the L^2 functions whose negative Fourier
+    coefficients vanish, which is the standard definition; the Szego projection and
+    the definition T_phi = P_+ M_phi restricted to H^2, with the bound
+    ||T_phi|| <= ||phi||_infty following from ||M_phi|| = ||phi||_infty and
+    ||P_+|| = 1; and the matrix entries, which were recomputed: with
+    <f,g> = (1/2pi) int f conj(g) the entry <T_phi e_j, e_i> equals
+    (1/2pi) int phi z^{j-i} = hat(phi)(i-j), so the matrix is the semi-infinite
+    Toeplitz matrix (a_{i-j}) with a_k = hat(phi)(k), constant on diagonals, as
+    displayed. All correct. What was not checked: no source solution is retained for
+    this card, so no source comparison was made, and no theorem about Toeplitz
+    operators (Fredholmness, essential spectrum) is stated or needed here.
 ---
 
 ::: {.problem}
