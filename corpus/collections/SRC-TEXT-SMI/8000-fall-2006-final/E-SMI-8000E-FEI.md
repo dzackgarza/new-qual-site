@@ -22,6 +22,26 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Determined the Galois groups C3, S5, and C7 semidirect C6, the splitting-field degrees and real/solvable status, and classified every intermediate field normal over Q via the corresponding normal subgroups."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 12, final part I, all three
+    polynomials and all three parts. (i) X^3-3X+1: no rational root; three real roots
+    by monotonicity at the critical points ±1; discriminant -4(-3)^3-27 = 81 = 9^2, so
+    the group lies in A_3 and is A_3 = C_3, [E:Q] = 3, E ⊆ R, solvable, and the only
+    subfields are Q and E. (ii) X^5-20X+4: g(X+1) = X^5+5X^4+10X^3+10X^2-15X-15 is
+    Eisenstein at 5, so g is irreducible; g' = 5(x^4-4) with g(-√2) > 0 > g(√2) gives
+    exactly three real roots, hence a transposition from conjugation, and with the
+    5-cycle from transitivity the group is S_5 of order 120; the discriminant was
+    recomputed as -818400000 = -2^8·3·5^5·11·31, square class -5115, so the middle
+    normal subfield is Q(√-5115); the normal subgroups of S_5 are 1, A_5, S_5. (iii)
+    X^7-2: Eisenstein at 2; E = Q(2^{1/7}, ζ_7) of degree 42; the group is C_7 ⋊ C_6
+    with τστ^{-1} = σ^3 and 3 of order 6 modulo 7; solvable with C_7 normal, not real;
+    and the normal subgroups are 1, N, N⋊C_2, N⋊C_3, G, whose fixed fields are E,
+    Q(ζ_7), Q(ζ_7 + ζ_7^{-1}), Q(√-7) and Q of degrees 42, 6, 3, 2, 1. All three parts
+    check. No defect.
+---
 ---
 
 ::: {.exercise}
