@@ -22,6 +22,19 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Checked characteristic polynomials and exact ranks/nullities of the relevant powers, then recovered the Jordan block partitions from kernel growth."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 4, Jordan forms
+    Exercise 3(i)-(iii). The three answers were recomputed independently: for A the
+    characteristic polynomial is (X-1)(X+1)^2 and A + I has rank 1, so the form is
+    diagonal with entries 1, -1, -1; for B the characteristic polynomial is
+    (X-2)(X-1)^3 with rank(B-I) = 2 and rank(B-I)^2 = 1, giving blocks 2,1 at 1
+    and 1 at 2; for C the characteristic polynomial is (X-2)^5 with
+    rank(C-2I) = 3, rank(C-2I)^2 = 1 and (C-2I)^3 = 0, giving blocks 3,2. No
+    defect.
+---
 ---
 
 ::: {.exercise}
