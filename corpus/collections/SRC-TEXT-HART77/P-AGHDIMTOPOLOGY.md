@@ -14,6 +14,20 @@ relations:
 - kind: uses
   target: D-5LJUX
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry, §I.1 Exercise 1.10 (scan page
+    23 of the retained PDF). What was checked: parts (a) through (e) against
+    the card — dim Y <= dim X for a subset; dim X = sup dim U_i for an open
+    cover; a dense open subset of smaller dimension; a closed subset of an
+    irreducible finite-dimensional space with dim Y = dim X being the space;
+    and a Noetherian space of infinite dimension. All five agree; the card
+    renders (c) with the same content in a different order of clauses. No
+    repair needed; no star. What was not checked: the solution was read only
+    for consistency, not re-derived.
 ---
 
 ::: {.problem}
