@@ -14,6 +14,19 @@ relations:
 - kind: uses
   target: PR-TNVSI
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry, §I.1 Exercise 1.3 (scan page 22
+    of the retained PDF). What was checked: the printed text against the card's
+    statement, wording by wording — the algebraic set in A^3 defined by the two
+    polynomials x^2 - yz and xz - x, the assertion that it is a union of three
+    irreducible components, and the two tasks (describe them; find their prime
+    ideals). No difference was found and no repair was needed; the exercise
+    carries no star. What was not checked: the solution was read only for
+    consistency with the statement, not re-derived.
 ---
 
 ::: {.problem}
