@@ -14,6 +14,15 @@ relations:
 - kind: uses
   target: P-AGHTWCUBIC
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Compared the card's statement in full with the printed Exercise 2.9 (scan
+    page 27 of the retained PDF), tails included: hypotheses, every lettered
+    part and the closing clauses. Agrees; the card states the identification
+    and the comparison map in the book's sense.
 ---
 
 ::: {.problem}
