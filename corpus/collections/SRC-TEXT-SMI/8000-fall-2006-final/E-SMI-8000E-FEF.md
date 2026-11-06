@@ -22,6 +22,17 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Used Zorn's lemma on partial k-embeddings L→F and extended a maximal embedding across one algebraic element by sending it to a root of the transported minimal polynomial in the algebraically closed field F."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 12, final part F(ii), the
+    option proved. Correct: partial k-embeddings of subfields of E into F are partially
+    ordered by extension, chains have upper bounds whose properness comes from the
+    chain argument, and a maximal element must have domain E, since for alpha outside
+    it the transported minimal polynomial has a root beta in the algebraically closed
+    F and L[x]/(m) = L(alpha) → F extends the embedding. No defect.
+---
 ---
 
 ::: {.exercise}
