@@ -44,7 +44,7 @@ j:p^{-1}(b)\hookrightarrow F_b
 $$
 obtained by using the constant path at $b$.
 
-The homotopy fiber fits into the fibration sequence $F_b\to E_p\to B$, where the mapping-path replacement $E_p$ is homotopy equivalent to $E$. Compare the long exact sequence of the pair $(E,p^{-1}(b))$ with that of $(E_p,F_b)$, using the inclusion of pairs induced by $E\to E_p$. The five-lemma, including the component terms at the end of the sequences, shows:
+The homotopy fiber fits into the fibration sequence $F_b\to E_p\to B$ of §4.3 (p. 405), where the mapping-path replacement $E_p$ is homotopy equivalent to $E$ (Proposition 4.65, p. 407). Compare the long exact sequence of the pair $(E,p^{-1}(b))$ with that of $(E_p,F_b)$, using the inclusion of pairs induced by $E\to E_p$. The five-lemma, including the component terms at the end of the sequences, shows:
 $$
 j:p^{-1}(b)\to F_b\text{ is a weak equivalence}
 $$
@@ -60,10 +60,10 @@ $$
 \boxed{(i)\Longleftrightarrow(ii)\Longleftrightarrow(iii).}
 $$
 
-We now extend Lemma 4K.3 to non-path-connected bases. Each proof in the lemma is based at a chosen point $b$, so after the preceding equivalence it suffices to work in the path component containing $b$.
+We now extend Lemma 4K.3 (p. 480) to non-path-connected bases. Each proof in the lemma is based at a chosen point $b$, so after the preceding equivalence it suffices to work in the path component containing $b$.
 
 - In **(a)**, intersect the two open sets with this path component. The five-lemma proof with the triples used in Hatcher then applies verbatim. The $\pi_0$-tail is handled by the exactness clause in (i).
-- In **(b)**, use the corrected current hypothesis that every compact subset of $B$ is contained in some $B_n$. A representative sphere or disk has compact image, so each relative homotopy class occurs in some stage. Consequently
+- In **(b)**, use the lemma's hypothesis, as printed, that every compact subset of $B$ is contained in some $B_n$. A representative sphere or disk has compact image, so each relative homotopy class occurs in some stage. Consequently
   $$
   \pi_i(E,p^{-1}(b))\cong\varinjlim_n
   \pi_i(p^{-1}(B_n),p^{-1}(b)),
