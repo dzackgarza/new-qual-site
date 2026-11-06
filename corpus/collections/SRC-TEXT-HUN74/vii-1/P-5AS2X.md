@@ -12,6 +12,22 @@ classification:
   - Rings
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section VII.1,
+    exercise 3, book page 335, including its printed hint: "(a) The center of the
+    ring Mat_n R consists of all matrices of the form rI_n, where r is in the
+    center of R. (b) The center of Mat_n R is isomorphic to the center of R." The
+    card states both parts. The proof was checked entry by entry: forcing
+    A E_{i,j} = E_{i,j} A for all i,j gives a_{i,i} = a_{j,j} (take k = i, l = j)
+    and a_{k,i} = 0 for k ≠ i (take k ≠ i, l = j), so a central matrix is
+    rI_n; comparing (1,1) entries of rI_n sI_n = sI_n rI_n gives r ∈ Z(R); and
+    r ∈ Z(R) makes rI_n central. The map r ↦ rI_n is then a ring isomorphism onto
+    the center. The card uses exactly the matrix units the hint names. Complete;
+    no defect.
 ---
 
 ::: {.problem}
