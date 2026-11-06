@@ -24,6 +24,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the simplicial, Lefschetz-trace, or surface argument against the preceding section results.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.C Exercise 1, printed page
+    184; the statement matches the book word for word. Proof checked: a simplicial
+    map carries each edge of K onto an edge or a vertex, so f_*(z_K) = n z_L forces
+    at least |n| edges of K over each edge of L, whence e(K) >= |n| e(L) >= 3|n| with
+    e(L) >= 3; the polygon with 3|n| edges mapped periodically around a triangle
+    attains the bound, and n = 0 is attained by two triangles with a constant map.
+    No defect. Not claimed by the card: the total e(K) + e(L) minimised over e(L),
+    which is 3|n| + 3 for the same reason.
+---
 ---
 
 ::: {.problem}
