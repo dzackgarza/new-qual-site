@@ -15,6 +15,15 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 2, Euclidean-domain
+    problem 2, with its printed hint "read the proof for Z". Correct: induction on
+    m splitting off the first coordinate, π(M) = aR by problem 1, and
+    M = (M ∩ ker π) ⊕ Rv by the domain argument, so M ≅ R^k ⊕ R with k + 1 ≤ m.
+    No defect.
 ---
 
 ::: {.exercise}
