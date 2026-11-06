@@ -23,6 +23,20 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the simplicial, Lefschetz-trace, or surface argument against the preceding section results.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.C Exercise 4, printed page
+    184, including the printed hint. Proof checked: after one barycentric subdivision
+    a simplex carried to itself by a simplicial homeomorphism is fixed pointwise,
+    because its vertices are barycentres of simplices of strictly increasing
+    dimension, so the fixed set is a subcomplex and the simplicial chain trace in
+    degree n is the number of its n-simplices; the Hopf trace formula (additivity of
+    trace on 0 → Z_n → C_n → B_{n-1} → 0 and 0 → B_n → Z_n → H_n → 0, cancelling in
+    the alternating sum) identifies the alternating chain trace with tau(f); and the
+    alternating count of simplices is the Euler characteristic. No defect.
+---
 ---
 
 ::: {.problem}
