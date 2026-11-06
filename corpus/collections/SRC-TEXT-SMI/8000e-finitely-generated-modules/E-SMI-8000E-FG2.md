@@ -23,6 +23,18 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Used primary decomposition and the squarefree annihilator to force elementary primary summands; enumerated all multiplicities in dimension seven and then imposed both eigenvalues for the exact minimal polynomial."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 3, #2(a),(b),(c).
+    Checked: multiplication by 3 is an automorphism of the 2-primary part of a
+    group of order 648, so 6G = 0 forces exponent 2 there and exponent 3 on the
+    3-part, giving the single group (Z/2)^3 ⊕ (Z/3)^4 ≅ (Z/6)^3 ⊕ Z/3; a
+    (t-2)(t-3)-module of dimension 7 is a direct sum with r copies of k[t]/(t-2)
+    and 7-r of k[t]/(t-3), eight classes; requiring the minimal polynomial to be
+    exactly (t-2)(t-3) excludes r = 0, 7, leaving six Jordan forms. No defect.
+---
 ---
 
 ::: {.exercise}
