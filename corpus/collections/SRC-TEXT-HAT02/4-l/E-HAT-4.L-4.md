@@ -60,7 +60,7 @@ C_p=\OP^2\cup_p CS^{23}
 $$
 be the mapping cone of the projection.
 
-Coning each fiber $S^7$ produces a disk $D^8$. Thus $C_p$ is the Thom space of the associated cone/disk bundle over $\OP^2$. Since its boundary is the sphere $S^{23}$, collapsing this boundary to the cone point gives a closed $24$-manifold. The Thom isomorphism (equivalently Poincaré duality in $C_p$) gives
+Coning each fiber $S^7$ produces a disk $D^8$. Thus $C_p$ is the Thom space of the associated cone/disk bundle over $\OP^2$. Since its boundary is the sphere $S^{23}$, collapsing this boundary to the cone point gives a closed $24$-manifold. The Thom isomorphism (Corollary 4D.9, p. 441; equivalently Poincaré duality in $C_p$) gives
 $$
 H^*(C_p;\ZZ)
 \cong
@@ -74,18 +74,18 @@ x^3\ne0\in H^{24}(C_p;\ZZ).
 $$
 More explicitly, $x$ restricts to a generator of $H^8(\OP^2)$, $x^2$ generates degree $16$, and Poincaré duality forces the pairing of degrees $8$ and $16$ to be unimodular, so $x^3$ is a generator up to sign.
 
-Reduce mod $3$. The instability axiom for reduced powers says that for a degree-eight class,
+Reduce mod $3$. The instability axiom for reduced powers (Theorem 4L.12, p. 504: $P^ix=x^p$ when $2i=|x|$) says that for a degree-eight class,
 $$
 P^4x=x^3.
 \tag{2}
 $$
-The mod-3 Adem relation with $a=1,b=3$ has only the $j=0$ term, since $a<p$, and its coefficient is
+The Adem relation for powers (p. 506) with $p=3$, $a=1$, $b=3$ has only the $j=0$ term, since $a<p$, and its coefficient there is
 $$
-(-1)^{1}\binom{(3-1)\cdot 3-1}{1}P^4=-\binom{5}{1}P^4=-P^4,
+(-1)^{1+0}\binom{(3-1)(3-0)-1}{1-0}=-5\equiv 1 \pmod 3,
 $$
-so
+so in $\mathcal{A}_3$
 $$
-P^1P^3=-P^4.
+P^1P^3=P^4.
 \tag{3}
 $$
 Since
@@ -98,7 +98,7 @@ P^3x=0.
 $$
 Equations (2) and (3) then give
 $$
-x^3=P^4x=-P^1P^3x=0,
+x^3=P^4x=P^1P^3x=P^1(0)=0,
 $$
 contradicting (1). Therefore
 $$
