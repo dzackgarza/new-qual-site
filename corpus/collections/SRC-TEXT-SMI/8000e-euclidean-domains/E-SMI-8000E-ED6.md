@@ -23,6 +23,15 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Identified the new kernel as g^{-1}(ker f) and constructed the quotient isomorphism induced by h on cokernels."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 2, Euclidean-domain
+    problem 6. Correct: h injective gives ker(hfg) = g^{-1}(ker f) and g carries
+    it isomorphically onto ker f; im(hfg) = h(im f) because g is onto; and h
+    induces an isomorphism N/im f → N/h(im f) on the cokernels. No defect.
+---
 ---
 
 ::: {.exercise}
