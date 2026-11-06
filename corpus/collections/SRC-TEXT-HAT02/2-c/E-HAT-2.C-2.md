@@ -15,6 +15,18 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.C Exercise 2, printed page
+    184; the statement matches word for word. Proof checked: deg of the antipodal
+    map is (-1)^{n+1} (Proposition 2.30, p. 134, as n+1 coordinate reflections), the
+    Lefschetz number of f: S^n → S^n is 1 + (-1)^n d since f_* is the identity on
+    H_0 and multiplication by d on H_n, and it vanishes exactly when d = (-1)^{n+1};
+    Theorem 2C.3 (Lefschetz fixed point theorem, stated p. 179, proved p. 180) then
+    gives a fixed point otherwise. The case n = 0 is handled separately, where the
+    only fixed-point-free self-map is the antipodal one, of degree -1. No defect.
 ---
 
 ::: {.exercise}
