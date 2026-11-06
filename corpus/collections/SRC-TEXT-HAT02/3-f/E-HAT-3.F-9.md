@@ -31,6 +31,20 @@ audit:
     claiming that the stored statement matched was false. Both are repaired: the iff is restored and
     the missing direction is proved from the card's own spliced sequence, since surjectivity of
     multiplication by p forces Ext(_p A, Z) = 0, which is impossible for a nonzero Z/p-vector space.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §3.F Exercise 9, printed page
+    320, whose (a) reads "Ext(A, Z) is divisible if A is torsionfree" — one
+    implication. The earlier correction on this card had replaced it by an "if and
+    only if"; the printed implication is restored here, since a card's statement
+    follows the printed exercise. The splicing argument and both directions of the
+    printed (b), including the converse under Hom(A,Z) = 0, were checked: exactness at
+    Ext(A,Z) reads divisibility as surjectivity and torsionfreeness as injectivity of
+    multiplication by p, and Ext(A_p,Z) ≅ Hom(A_p,Q/Z) from Exercise 5 detects
+    A_p = 0. What this note does not do: it does not certify the converse of (a),
+    which the printed exercise does not ask for.
 
 ---
 
@@ -42,7 +56,7 @@ $$\operatorname{Hom}(pA, \ZZ) \to \operatorname{Ext}(A_p, \ZZ) \to \operatorname
 where the map labeled "$p$" is multiplication by $p$.
 Use this to show:
 
-(a) $\operatorname{Ext}(A, \ZZ)$ is divisible if and only if $A$ is torsionfree.
+(a) $\operatorname{Ext}(A, \ZZ)$ is divisible if $A$ is torsionfree.
 
 (b) $\operatorname{Ext}(A, \ZZ)$ is torsionfree if $A$ is divisible, and the converse holds if $\operatorname{Hom}(A, \ZZ) = 0$.
 :::
