@@ -15,6 +15,19 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.8,
+    exercise 3, book page 301: "(a) φ(n) is even for n > 2. (b) Find all n > 0
+    such that φ(n) = 2." The card states both parts. The proof was checked:
+    k ↦ n - k is an involution of the units in {1, ..., n} with a fixed point only
+    when n/2 = 1, so for n > 2 the set splits into two-element orbits and φ(n) is
+    even; and for φ(n) = 2, writing n = 2^k ∏ p_i^{e_i}, each odd p_i satisfies
+    p_i - 1 | 2, so p_i = 3 and e_i = 1, after which φ(2^k)·2 = 2 forces n = 3 or
+    6, and with no odd prime φ(2^k) = 2 forces k = 2, n = 4. The answer {3,4,6} is
+    right and the converse is verified. Complete; no defect.
 ---
 
 ::: {.problem}
