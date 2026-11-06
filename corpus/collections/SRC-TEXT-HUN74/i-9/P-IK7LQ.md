@@ -22,6 +22,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hungerford, Algebra (1974), Chapter I, section 9, exercise 1
+    (tmp/sources/hungerford-1974-algebra.md, line 2358): "Every nonidentity
+    element in a free group F has infinite order." The card states exactly this
+    and its I.9.1 locator is the printed number. The proof was read and checked:
+    a reduced word is conjugated to a cyclically reduced one, g = u v u^{-1}
+    with v nonempty, and v^m is reduced and nonempty for every m >= 1, so g^m is
+    never the identity. Complete; no defect.
 ---
 
 ::: {.problem}
