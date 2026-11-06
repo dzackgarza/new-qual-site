@@ -22,6 +22,16 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Tracked commutators under automorphisms, proved the quotient abelian, and showed every homomorphism to an abelian group kills G'."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 9, problem 9, with the
+    sheet's definition of characteristic subgroup. Correct: an automorphism carries
+    commutators to commutators, so G' is characteristic and hence normal; G/G' is
+    abelian; and a homomorphism to an abelian group kills every commutator, so G'
+    lies in its kernel. No defect.
+---
 ---
 
 ::: {.exercise}
