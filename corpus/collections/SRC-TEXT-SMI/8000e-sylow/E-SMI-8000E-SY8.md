@@ -27,6 +27,18 @@ audit:
   by: chatgpt
   date: 2026-10-31
   note: "Smith part (i) omits p>2; for p=2, a Sylow 2-subgroup of S4 is the nonabelian dihedral group of order 8."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 7, Sylow problem 8. The
+    restored hypothesis p > 2 in (i) is necessary, as the card now says on the
+    statement, since a Sylow 2-subgroup of S_4 is D_8. The general argument was
+    checked: for n < p the Sylow p-subgroup of S_{np} has order p^n by Legendre;
+    orbits on np < p^2 letters have size 1 or p; each nontrivial orbit gives an
+    image of order p inside S_p; the product map is injective, so p^n ≤ p^k and
+    k = n; hence P embeds in C_p^n and is abelian. No defect.
+---
 ---
 
 ::: {.exercise}
@@ -35,6 +47,8 @@ audit:
 (ii) Prove it for $p > 3$, and $P$ a Sylow $p$-subgroup of $S(3p)$.
 
 (iii) Prove it for $p > n$, with $P$ a Sylow $p$-subgroup of $S(np)$.
+
+The hypothesis $p > 2$ in (i) is needed and is not in the sheet's wording: for $p = 2$ a Sylow $2$-subgroup of $S(4)$ is dihedral of order $8$, which is not abelian. Parts (ii) and (iii) carry the printed hypotheses $p > 3$ and $p > n$.
 :::
 
 ::: {.solution}
