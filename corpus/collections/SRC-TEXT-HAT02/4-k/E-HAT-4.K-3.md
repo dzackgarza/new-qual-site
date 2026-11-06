@@ -34,7 +34,7 @@ An element of the symmetric product
 $$
 SP_n(I)=I^n/\Sigma_n
 $$
-is an unordered $n$-tuple of points of $I=[0,1]$. Every orbit has a unique representative whose coordinates are weakly increasing:
+(p. 481) is an unordered $n$-tuple of points of $I=[0,1]$. Every orbit has a unique representative whose coordinates are weakly increasing:
 $$
 0\le x_1\le x_2\le\cdots\le x_n\le1.
 $$
