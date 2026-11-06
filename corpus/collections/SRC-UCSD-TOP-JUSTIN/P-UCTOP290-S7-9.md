@@ -16,6 +16,19 @@ audit:
   by: chatgpt
   date: 2026-10-31
   note: Read sheet 7, Problem 9 in its checked-in extraction.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against UCSD Math 290 Fall 2014 problem sheet 7, problem 9
+    (assets/attachments/UCSD_290_F14_sheet7.pdf, printed page 260), from the
+    checked-in extraction and a 300 dpi render. The printed problem reads "Let N
+    be a knotted solid torus in S^3, let T be its boundary torus, and let X be
+    its exterior, that is the closure of S^3 - N. Use Mayer-Vietoris to compute
+    the homology H_*(X;Z)." The card states this with the notation X = closure
+    of the complement, so no repair was needed. Not checked: whether the printed
+    sheet intends the closure convention or the open complement, which differ
+    only on the boundary.
 ---
 
 ::: {.problem}
@@ -26,42 +39,98 @@ Use Mayer–Vietoris to compute $H_*(X;\ZZ)$.
 
 ::: {.solution}
 
-Use the Mayer–Vietoris sequence for $S^3=N\cup X$,
-with intersection homotopy equivalent to $T$.
-The relevant groups are
-$$
-H_2(T)=\ZZ,\quad H_1(T)=\ZZ^2,\quad
-H_1(N)=\ZZ,\quad H_2(N)=H_3(N)=0.
-$$
+Let $N\subset S^3$ be a knotted solid torus, $T=\partial N$, and
+$X=\overline{S^3\setminus N}$, so that $S^3=N\cup X$ and $N\cap X=T$.
 
-The connecting map
-$$
-H_3(S^3)\longrightarrow H_2(T)
-$$
-sends the oriented fundamental class of $S^3$ to the oriented
-fundamental class of the common boundary $T$. It is an
-isomorphism $\ZZ\to\ZZ$. Exactness therefore gives
-$H_3(X)=0$ and $H_2(X)=0$.
+::: pf
 
-The next part of the sequence is
+::: {.pf-step #groups}
+
+$H_2(T)=\ZZ$, $H_1(T)=\ZZ^2$, $H_k(T)=0$ for $k\ge3$; $H_0(N)=H_1(N)=\ZZ$ and
+$H_k(N)=0$ for $k\ge2$; $H_k(S^3)=\ZZ$ for $k=0,3$ and $0$ otherwise.
+
+::: pf-proof
+
+$T$ is a torus and $N$ is a solid torus, which deformation retracts onto its
+core circle, so their homology is that of $S^1\times S^1$ and of $S^1$; a
+closed orientable surface of genus one has $H_0=H_2=\ZZ$ and $H_1=\ZZ^2$. The
+spheres' homology is standard.
+
+:::
+
+:::
+
+::: {.pf-step #high}
+
+$H_3(X;\ZZ)=0$ and $H_2(X;\ZZ)=0$.
+
+::: pf-proof
+
+$X$ is a compact $3$-manifold with nonempty boundary $T$, so it has no
+fundamental class: by Poincaré-Lefschetz duality $H_3(X;\ZZ)\cong H^0(X,T;\ZZ)$,
+which vanishes because $T$ meets $X$ and $X$ is connected; concretely, a
+$3$-cycle of $X$ is a $3$-cycle of $S^3$ whose support misses the interior of
+$N$, so its class is $k[S^3]$ for some $k$, while its local degree at a point of
+the interior of $N$ is $0$ and that of $[S^3]$ is $1$, forcing $k=0$. For $H_2$,
+the Mayer-Vietoris sequence of $S^3=N\cup X$ begins
 $$
-0=H_2(S^3)\longrightarrow H_1(T)
-\longrightarrow H_1(N)\oplus H_1(X)
-\longrightarrow H_1(S^3)=0.
+H_3(S^3)\xrightarrow{\ \partial\ }H_2(T)\to H_2(N)\oplus H_2(X)\to H_2(S^3).
 $$
-Thus $\ZZ^2\cong\ZZ\oplus H_1(X)$, and the structure
-theorem for finitely generated abelian groups gives
-$H_1(X)\cong\ZZ$.
-The degree-zero part of Mayer–Vietoris, using that $T$ and
-$N$ are connected, gives $H_0(X)\cong\ZZ$.
-Higher homology vanishes by dimension. Hence
+The connecting map sends the fundamental class $[S^3]$ to the fundamental
+class of the common boundary $T$, since the boundary of the oriented $3$-chain
+$S^3=N\cup X$ is the oriented $2$-cycle $T$; it is therefore an isomorphism
+$\ZZ\to\ZZ$. Hence the map $H_2(T)\to H_2(N)\oplus H_2(X)$ is zero, and
+exactness makes $H_2(N)\oplus H_2(X)$ inject into $H_2(S^3)=0$. With
+$H_2(N)=0$ this gives $H_2(X)=0$.
+
+:::
+
+:::
+
+::: {.pf-step #hone}
+
+$H_1(X;\ZZ)\cong\ZZ$ and $H_0(X;\ZZ)\cong\ZZ$.
+
+::: pf-proof
+
+The next segment of the sequence is
 $$
-H_k(X;\ZZ)\cong
-\begin{cases}
-\ZZ,&k=0,1,\\
-0,&k\ge2.
-\end{cases}
+H_2(S^3)\to H_1(T)\to H_1(N)\oplus H_1(X)\to H_1(S^3),
 $$
-The knot type does not change these homology groups.
+that is $0\to\ZZ^2\to\ZZ\oplus H_1(X)\to0$ by step [](#groups){.pf-ref}, so
+$\ZZ^2\cong\ZZ\oplus H_1(X)$. The inclusion $N\to S^3$ induces an isomorphism
+on $H_1$, both groups being $\ZZ$, and the meridian of $T$ maps to $0$ in
+$H_1(N)$ while the longitude maps to a generator, so the map $\ZZ^2\to\ZZ$ is
+onto and $\ZZ\oplus H_1(X)$ is free of rank two; hence $H_1(X)\cong\ZZ$.
+Finally $X$ is path-connected, being the closure of the complement of a solid
+torus in the connected $S^3$, so $H_0(X)=\ZZ$; this is also the Mayer-Vietoris
+computation at degree zero, where $\widetilde H_0$ of all three spaces
+vanishes.
+
+:::
+
+:::
+
+::: {.pf-step #result}
+
+$H_k(X;\ZZ)$ is $\ZZ$ for $k=0,1$ and $0$ for $k\ge2$, independently of the
+knot.
+
+::: pf-proof
+
+Steps [](#high){.pf-ref} and [](#hone){.pf-ref} give degrees $0$ through $3$,
+and $X$ is a $3$-dimensional manifold, so there is nothing above degree $3$.
+The computation used only that $N$ is a solid torus embedded in $S^3$ with
+boundary a torus, never how it is knotted, so the knot type does not enter;
+for a knot $K$, $X$ is the knot exterior, and the same argument gives
+$H_1(X)=\ZZ$ generated by a longitude, with the meridian bounding a disc in
+$N$.
+
+:::
+
+:::
+
+:::
+
 
 :::
