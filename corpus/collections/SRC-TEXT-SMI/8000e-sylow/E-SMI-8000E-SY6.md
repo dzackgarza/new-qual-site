@@ -27,6 +27,17 @@ audit:
   by: chatgpt
   date: 2026-10-31
   note: "The packet prints S(5)≅Icos but later identifies Icos with A(5); the icosahedral rotation group has order 60, as does A5, while S5 has order 120."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 7, Sylow problem 6,
+    "assuming S(5) ≈ Icos", which is the sheet's slip for A(5): the card states
+    A(5) ≅ Icos and assumes its simplicity, and says so. The proof was checked: a
+    nonabelian simple group has no abelian normal tower with a repeated term, so it
+    is not solvable; subgroups of solvable groups are solvable by intersecting a
+    tower; and A_5 embeds in S_n for n ≥ 5 fixing the rest. No defect.
+---
 ---
 
 ::: {.exercise}
