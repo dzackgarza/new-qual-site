@@ -12,6 +12,26 @@ classification:
   - Structure Theorem
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Reviewed against the Lamport standard. What was found: the question asks to
+    state the theorem, not to prove it, so no pf block was added; a structured proof
+    here would answer a question the card does not ask. What was checked: the
+    statement as given — R is simple Artinian iff R = M_n(D) for some n >= 1 and some
+    division ring D — is the standard form of the simple case of Artin-Wedderburn,
+    and the two definitions it uses (simple: no two-sided ideals other than 0 and R;
+    Artinian: descending chains of left ideals terminate) are the standard ones.
+    The proof sketch already on the card was also read against a fresh derivation and
+    is correct, including the two steps easiest to get wrong: that a nonzero
+    two-sided ideal of M_n(D) contains a matrix unit E_ij = a_kl^{-1} E_ik A E_lj and
+    hence everything, and that taking endomorphism rings of _R R = L^n gives
+    R^op = M_n(End_R(L)) = M_n(D^op), which transposes to R = M_n(D) since
+    M_n(E)^op = M_n(E^op). What was not checked: no source solution is retained for
+    this card, so no source comparison was made, and the theorem itself is not
+    proved by a certificate here, the card asking only for its statement.
 ---
 
 ::: {.problem}
