@@ -22,6 +22,15 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Checked that x^3+x+1 has no root in F5, hence is irreducible, and counted the residue classes in the quotient field."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 10, Galois problem 2.
+    Correct: X^3+X+1 takes the values 1, 3, 1, 1, 4 on F_5, so it has no root and,
+    being cubic, is irreducible; the quotient is then a field of 5^3 = 125
+    elements. No defect.
+---
 ---
 
 ::: {.exercise}
