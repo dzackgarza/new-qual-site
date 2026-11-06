@@ -15,6 +15,20 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.9,
+    exercise 1, book page 309: "If F is a radical extension field of K and E is an
+    intermediate field, then F is a radical extension of E." The card states
+    exactly this. The proof was checked against the section's definition of a
+    radical extension as a tower K = E_0 ⊂ ... with E_i = E_{i-1}(u_i) and
+    u_i^{m_i} ∈ E_{i-1}: writing F = K(α_1, ..., α_n) with α_i^{n_i} in the
+    preceding step field, the same list generates F over E and each α_i^{n_i} lies
+    in the corresponding step field over E because K ⊆ E, so the tower can be
+    re-based at E. Complete; no defect.
+---
 review: draft
 ---
 
