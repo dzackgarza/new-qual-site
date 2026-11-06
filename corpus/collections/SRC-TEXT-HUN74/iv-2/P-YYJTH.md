@@ -16,6 +16,18 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section IV.2,
+    exercise 8, book page 189: "If V is a finite dimensional vector space and V^m
+    is the vector space V ⊕ V ⊕ ... ⊕ V (m summands), then for each m ≥ 1, V^m is
+    finite dimensional and dim V^m = m(dim V)." The card states exactly this,
+    with m ≥ 1 as printed. The proof was checked: the mn images ι_j(e_i) span
+    since every element of the direct sum is a finite sum of its coordinates, and
+    they are independent since a vanishing combination has vanishing j-th
+    coordinate for each j and the e_i are independent. Complete; no defect.
 ---
 
 ::: {.problem}
