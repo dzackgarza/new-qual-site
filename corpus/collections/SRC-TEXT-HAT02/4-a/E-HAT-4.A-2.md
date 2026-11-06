@@ -32,18 +32,23 @@ In particular, if $\pi$ is abelian then $[X, K(\pi, 1)] = \langle X, K(\pi, 1) \
 :::
 
 ::: {.solution}
-Let $H:X\times I\to Y$ represent the action of a loop $\gamma$ on a based map $f:X\to Y$. Thus $H(-,0)=f$, $H(-,1)$ represents $\gamma f$, and the path $H(x_0,t)$ represents $\gamma$. For any based $a:S^n\to X$, the composite
+Let $H:X\times I\to Y$ represent the action of a loop $\gamma$ on a based map $f:X\to Y$. Thus $H(-,0)=f$, $H(-,1)$ represents $\gamma f$, and the path $H(x_0,t)$ represents $\gamma$; this is the action of Proposition 4A.1 (p. 422), in the left-action convention obtained from Hatcher's right action by $[\gamma][f_0]=[f_0][\gamma]^{-1}$. For any based $a:S^n\to X$, the composite
 $$
 S^n\times I\xrightarrow{a\times\id}X\times I\xrightarrow{H}Y
 $$
-is a homotopy from $fa$ to $(\gamma f)a$ whose basepoint traces $\gamma$. The definition of the basepoint-change action on $\pi_n(Y)$ therefore gives
+is a homotopy from $fa$ to $(\gamma f)a$ whose basepoint traces $\gamma$. The definition of the basepoint-change isomorphism $\beta_\gamma$ on $\pi_n(Y,y_0)$ (§4.1, p. 342) therefore gives
 $$
 [(\gamma f)a]=\beta_\gamma[fa].
 $$
 Since this holds for every $[a]\in\pi_n(X)$, it proves $(\gamma f)_*=\beta_\gamma f_*$.
 
-A based map $X\to K(\pi,1)$ is classified up to based homotopy by its homomorphism $\pi_1(X)\to\pi$. In degree one, $\beta_\gamma$ is conjugation by $\gamma\in\pi$. Passing from based to free homotopy classes takes orbits under this action. Hence
+A based map $X\to K(\pi,1)$ is classified up to based homotopy by its homomorphism $\pi_1(X)\to\pi$, and every homomorphism is realized (Proposition 1B.9, p. 90). In degree one, $\beta_\gamma$ is conjugation by $\gamma\in\pi$. Passing from based to free homotopy classes takes orbits under this action, by Proposition 4A.2 (p. 422) applied to $Z=X$ and $X=K(\pi,1)$. Hence
 $$
 [X,K(\pi,1)]\cong\operatorname{Hom}(\pi_1(X),\pi)/\operatorname{Inn}(\pi).
+$$
+
+If $\pi$ is abelian then $\operatorname{Inn}(\pi)=1$, so the orbit set is the whole of $\operatorname{Hom}(\pi_1(X),\pi)$, and the bijection says that the forgetful map $\langle X,K(\pi,1)\rangle\to[X,K(\pi,1)]$ is itself a bijection: every free homotopy class contains a unique based one. Hence
+$$
+[X,K(\pi,1)]=\langle X,K(\pi,1)\rangle=\operatorname{Hom}(\pi_1(X),\pi).
 $$
 :::
