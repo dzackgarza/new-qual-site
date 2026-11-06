@@ -22,6 +22,17 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Used strict size decrease on nonunit factors to obtain irreducible factorization by induction, then bounded its length from the strictly increasing integer sizes of successive partial products."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 3, Euclidean-domain
+    problem 9, together with the printed definition of "strongly euclidean" just
+    above it, which the card reproduces. Correct: induction on |a| gives a finite
+    irreducible factorization, and in any such factorization the partial products
+    q_j have strictly increasing positive integer sizes bounded by |a|, so the
+    number r of irreducible factors satisfies r ≤ |a|. No defect.
+---
 ---
 
 ::: {.exercise}
