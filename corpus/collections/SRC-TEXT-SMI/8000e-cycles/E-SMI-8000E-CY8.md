@@ -14,6 +14,17 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 8, problem 8. Correct:
+    H permutes the equivalence classes of the relation j ~ k iff (j k) in H,
+    transitivity makes the class sizes equal, so for prime p either all classes are
+    singletons or there is one class; hence H contains no 2-cycle or all of them,
+    and with one 2-cycle it contains every transposition and equals S_p. A subgroup
+    containing a p-cycle is transitive, so the consequence stated in the exercise
+    follows. No defect.
 ---
 
 ::: {.exercise}
