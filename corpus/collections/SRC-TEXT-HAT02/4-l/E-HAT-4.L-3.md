@@ -55,7 +55,7 @@ H^*(\OP^2;\ZZ_3)=\ZZ_3[y]/(y^3),
 \qquad \gradeddegree{y}=8.
 $$
 
-The Gysin sequence of the $S^4$-bundle shows that
+The Gysin sequence of the $S^4$-bundle (p. 438) shows that
 $$
 p^*:H^8(\OP^2;\ZZ_3)
 \longrightarrow H^8(\quatprojective^5;\ZZ_3)
@@ -66,7 +66,7 @@ p^*y=x^2.
 \tag{1}
 $$
 
-At the prime $3$, the reduced power $P^1$ raises degree by $4$. Since
+At the prime $3$, the reduced power $P^1$ raises degree by $2\cdot1\cdot(3-1)=4$ (Theorem 4L.12, p. 504). Since
 $$
 H^{12}(\OP^2;\ZZ_3)=0,
 $$
@@ -83,7 +83,7 @@ Indeed, after restriction to $\CP^\infty$ one has $x=-u^2$, and
 $$
 P^1(-u^2)=-2u^4=u^4=x^2\quad\text{in }\ZZ_3.
 $$
-The Cartan formula therefore yields
+The Cartan formula (Theorem 4L.12, p. 504) therefore yields
 $$
 P^1(x^2)=2x^3\ne0.
 \tag{3}
