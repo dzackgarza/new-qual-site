@@ -23,6 +23,21 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.4,
+    exercise 12, book page 277: "Let K be a subfield of the real numbers and
+    f ∈ K[x] an irreducible quartic. If f has exactly two real roots, the Galois
+    group of f is S_4 or D_4." The card states exactly this. The proof was
+    checked: irreducibility makes the action on the four roots transitive and the
+    action is faithful on the splitting field; complex conjugation restricts to
+    an automorphism because K ⊆ R, and it is a transposition since it fixes the
+    two real roots and swaps the conjugate pair; a transitive subgroup of S_4 has
+    order divisible by 4, hence is one of C_4, V_4, D_4, A_4, S_4; and of these
+    only D_4 and S_4 contain a transposition in their transitive degree-4
+    actions. Complete; no defect.
 ---
 
 ::: {.problem}
