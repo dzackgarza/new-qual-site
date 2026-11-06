@@ -20,12 +20,13 @@ audit:
 ::: {.problem}
 Use the Gysin sequence to show that for a fiber bundle $S^k \to S^m \xrightarrow{p} S^n$ we must have $k = n-1$ and $m = 2n-1$.
 Then use the Thom isomorphism to show that the Hopf invariant of $p$ must be $\pm 1$.
+[Hence $n = 1, 2, 4, 8$ by Adams' theorem.]
 :::
 
 ::: {.solution}
 Suppose $n>1$. The fiber cannot be $S^0$, since a two-sheeted covering of the simply connected base $S^n$ has disconnected total space. Thus $k>0$. Local triviality gives $m=n+k$, so $m>k+1$ and $m>n$. The sphere bundle is orientable because $S^n$ is simply connected.
 
-Let $e\in H^{k+1}(S^n;\ZZ)$ be its Euler class. The Gysin sequence contains
+Let $e\in H^{k+1}(S^n;\ZZ)$ be its Euler class. The Gysin sequence (p. 438) contains
 $$
 H^k(S^m)\longrightarrow H^0(S^n)
 \xrightarrow{\smile e}H^{k+1}(S^n)
@@ -33,7 +34,7 @@ H^k(S^m)\longrightarrow H^0(S^n)
 $$
 The outer groups vanish, so cup product with $e$ is an isomorphism. Hence $H^{k+1}(S^n)\cong\ZZ$, which forces $k+1=n$, and $e$ is a generator up to sign. Therefore $k=n-1$ and $m=2n-1$.
 
-Cone each sphere fiber to form an oriented $D^n$-bundle $V$ whose boundary is the given sphere bundle. Its Thom space $V/S(V)$ is homotopy equivalent to the mapping cone $C_p$, since $V$ retracts onto its zero section $S^n$. If $U\in H^n(C_p;\ZZ)$ is the Thom class, the Thom identity gives
+Cone each sphere fiber to form an oriented $D^n$-bundle $V$ whose boundary is the given sphere bundle (orientable sphere bundles are exactly those with $\ZZ$ Thom classes, Theorem 4D.10, p. 442). Its Thom space $V/S(V)$ is homotopy equivalent to the mapping cone $C_p$, since $V$ retracts onto its zero section $S^n$. If $U\in H^n(C_p;\ZZ)$ is the Thom class, the Thom identity gives
 $$
 U^2=e\smile U.
 $$
