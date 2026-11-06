@@ -23,6 +23,16 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Used zero divisors in R/I for the prime criterion and the ideal correspondence above I for the maximal/field criterion."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 5, problem 5: R/I is a
+    domain iff I is prime, and R/I is a field iff I is maximal. All four
+    implications checked for rings with identity: primality is exactly the absence
+    of nonzero zero divisors in the quotient, and I maximal iff the only ideals of
+    R/I are 0 and R/I iff every nonzero class is invertible. No defect.
+---
 ---
 
 ::: {.exercise}
