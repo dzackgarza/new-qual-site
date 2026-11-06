@@ -22,6 +22,16 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Used the conjugation action of Q on the Sylow p-subgroups, the mod-p fixed-point count, and maximality of a Sylow subgroup to pass from normalization to containment."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 7, Sylow problem 1.
+    Correct and matching the printed hint: Q acts on the set of Sylow p-subgroups
+    by conjugation, orbit sizes are powers of p and the total is ≡ 1 mod p, so
+    there is a fixed P; then PQ is a p-subgroup and PQ = P by maximality, so
+    Q ≤ P. No defect.
+---
 ---
 
 ::: {.exercise}
