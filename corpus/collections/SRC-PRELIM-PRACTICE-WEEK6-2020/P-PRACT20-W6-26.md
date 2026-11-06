@@ -11,6 +11,22 @@ classification:
   - Boolean Algebras
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against page 11 of the retained solutions booklet GRE Prep:
+    Miscellaneous Practice Problem Solutions by Christian Parkinson
+    (assets/attachments/prelim-practice-week6-2020/page-11.png), which prints
+    this problem with a worked solution. The practice sheet itself is not
+    retained and the collection's provenance list is empty, so the statement was
+    compared with the card from that page: the printed problem defines S_0 = {A,B} and S_{i+1} from unions, intersections and complements, and asks for the largest possible number of distinct sets in the union, which is what the card asks
+- event: solution-written
+  by: claude
+  date: 2026-11-06
+  note: >-
+    The printed solution's answer 16 is reproduced with its reason written out: every generated set is a union of the four Venn atoms, there are four atoms hence 16 unions, and the bound is attained when all four atoms are nonempty, the printed examples A subsetneq B and A = B giving 8 and 4.
 ---
 
 ::: {.problem}
@@ -18,15 +34,72 @@ Let $A, B$ be subsets of some set $X$. Define $S_{0} = \{A, B\}$. For $i \geq 0$
 :::
 
 ::: {.solution}
-The answer is $16$.
 
-The sets $A$ and $B$ cut $X$ into four disjoint pieces:
+Let $A,B\subseteq X$, $S_0=\{A,B\}$, and $S_{i+1}$ the set of all $C\cup D$,
+$C\cap D$ and $X\setminus C$ with $C,D\in S_i$; let $\bigcup_{i\ge0}S_i$ be
+the generated family.
 
+::: pf
+
+::: {.pf-step #atoms}
+
+Every set in $\bigcup_iS_i$ is a union of the four sets
 $$
-X_1=A\setminus B,\quad X_2=B\setminus A,\quad X_3=A\cap B,\quad X_4=X\setminus(A\cup B).
+X_1=A\setminus B,\qquad X_2=B\setminus A,\qquad X_3=A\cap B,\qquad X_4=X\setminus(A\cup B).
 $$
 
-Every set in $\bigcup_{i\geq0}S_i$ is a union of some of these pieces: $A=X_1\cup X_3$ and $B=X_2\cup X_3$ are, and unions, intersections and complements of unions of pieces are again unions of pieces. So there are at most $2^4=16$ distinct sets.
+::: pf-proof
 
-Conversely, every union of pieces occurs: $X_1=A\cap(X\setminus B)$, $X_2=B\cap(X\setminus A)$, $X_3=A\cap B$ and $X_4=(X\setminus A)\cap(X\setminus B)$ are obtained in finitely many steps, and so are their unions, including $\emptyset=A\cap(X\setminus A)$. When all four pieces are nonempty, distinct unions of pieces are distinct sets, so the maximum $16$ is attained. There can be fewer: if $A\subsetneq B$ with $A$ nonempty and $B\neq X$, then $X_1=\emptyset$ and there are $8$ sets; if $A=B$ with $\emptyset\neq A\neq X$, there are $4$.
+The four $X_j$ are pairwise disjoint with union $X$. The statement is proved
+by induction: $A=X_1\cup X_3$ and $B=X_2\cup X_3$ are such unions, so $S_0$
+consists of such sets. Complements: the complement of a union of some of the
+$X_j$ is the union of the remaining ones, so the family of such unions is
+closed under complement. Unions and intersections of two such sets are again
+unions of $X_j$'s, since the $X_j$ are disjoint atoms:
+$(X_S)\cap(X_T)=X_{S\cap T}$ and $(X_S)\cup(X_T)=X_{S\cup T}$ where
+$X_S=\bigcup_{j\in S}X_j$. So $S_{i+1}$ consists of such sets whenever $S_i$
+does.
+
+:::
+
+:::
+
+::: {.pf-step #upper}
+
+The family has at most $2^4=16$ elements.
+
+::: pf-proof
+
+By step [](#atoms){.pf-ref} every member is $X_S$ for some
+$S\subseteq\{1,2,3,4\}$, and there are only $16$ such subsets, so the family
+has at most $16$ distinct sets. This bound cannot be improved for two
+generators, since the four atoms are the most a Venn diagram of two sets can
+have.
+
+:::
+
+:::
+
+::: {.pf-step #attained}
+
+The bound $16$ is attained, so the largest possible number of distinct sets is
+$\boxed{16}$.
+
+::: pf-proof
+
+Take $X=\{1,2,3,4\}$, $A=\{1,3\}$ and $B=\{2,3\}$; then $X_1=\{1\}$,
+$X_2=\{2\}$, $X_3=\{3\}$, $X_4=\{4\}$ are four nonempty disjoint sets, and the
+$16$ unions $X_S$ are pairwise distinct, each determined by which of the four
+points it contains. So all $16$ occur, and they are exactly the members of
+$\bigcup_iS_i$ by the two preceding steps. The printed solution notes that
+smaller counts occur when the atoms are fewer: if $A\subsetneq B$ there are
+$8$ sets, and if $A=B$ there are $4$.
+
+:::
+
+:::
+
+:::
+
+
 :::
