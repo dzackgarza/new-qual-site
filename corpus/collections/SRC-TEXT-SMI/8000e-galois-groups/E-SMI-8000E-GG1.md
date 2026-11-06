@@ -26,6 +26,18 @@ audit:
   by: chatgpt
   date: 2026-10-31
   note: "The packet asks to prove the root field is not radical, but alpha^3=1 in F2, so F4=F2(alpha) is a one-step radical extension."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 9, Galois problem 1.
+    X^2+X+1 is irreducible over F_2 since it has no root, so the quotient is a
+    field of four elements; the second root is alpha+1, so the splitting field has
+    degree 2 with group C_2. The card's correction of the printed leading question
+    about radicalness is right: alpha^3 = 1 in characteristic 2, so F_4 = F_2(alpha)
+    is a one-step radical extension and the printed expectation is wrong. No
+    defect in the card.
+---
 ---
 
 ::: {.exercise}
