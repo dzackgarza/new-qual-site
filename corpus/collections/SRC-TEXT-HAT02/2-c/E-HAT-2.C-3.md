@@ -23,6 +23,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the simplicial, Lefschetz-trace, or surface argument against the preceding section results.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.C Exercise 3, printed page
+    184; the statement matches word for word. Proof checked: the formula is
+    conjugate-linear with F(λz) = λ̄F(z) and F² = −id on each coordinate pair, so F
+    maps complex lines to complex lines and induces f on CP^{2k−1}; a fixed point
+    would give F(z) = λz and hence −z = F²(z) = |λ|² z, impossible. This is the map
+    Hatcher discusses on p. 180, where he also notes it is only conjugate-linear and
+    that the induced CP^{2k−1} map has no fixed points. No defect.
+---
 ---
 
 ::: {.problem}
