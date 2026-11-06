@@ -22,6 +22,20 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.3,
+    exercise 12, book page 268: "Let E be an intermediate field. (a) If u ∈ F is
+    separable over K, then u is separable over E. (b) If F is separable over K,
+    then F is separable over E and E is separable over K." The card states both
+    parts. The proof was checked: the minimal polynomial over E divides that over
+    K in E[x], and a divisor of a polynomial with distinct roots has distinct
+    roots, so separability of u descends; and separability of the whole extension
+    follows elementwise in both directions. Complete; no defect. The card does not
+    claim the converse assertions (F separable over E and E over K giving F over
+    K), which are not part of this exercise.
 ---
 
 ::: {.problem}
