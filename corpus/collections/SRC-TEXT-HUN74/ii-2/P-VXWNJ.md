@@ -23,6 +23,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section II.2,
+    exercise 1, book page 81: "Show that a finite abelian group that is not
+    cyclic contains a subgroup which is isomorphic to Z_p ⊕ Z_p for some prime
+    p." The card states exactly this, with the same "for some prime p". Both
+    steps were checked as proofs. The Sylow summands have pairwise coprime
+    orders, so if all were cyclic the direct sum would be cyclic by the Chinese
+    remainder theorem, and G would be cyclic, which is the stated contradiction.
+    For a noncyclic p-group the elementary-divisor decomposition
+    Z_{p^{a_1}} ⊕ ... ⊕ Z_{p^{a_r}} has r ≥ 2, because r = 1 gives a cyclic
+    group and r ≥ 2 gives exponent p^{a_r} strictly below the order p^{a_1+...+a_r};
+    then p^{a_i-1} is a nonzero element of order p in the i-th summand for
+    i = 1, 2, and distinct direct summands meet in 0. Complete; no defect. Not
+    checked: nothing beyond the exercise itself is claimed by this card.
 ---
 
 ::: {.problem}
