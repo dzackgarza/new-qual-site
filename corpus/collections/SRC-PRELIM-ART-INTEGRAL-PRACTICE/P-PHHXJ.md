@@ -66,9 +66,8 @@ Put $x=\sin u$ with $u\in(-\frac\pi2,\frac\pi2)$, so $dx=\cos u\,du$ and
 $\sqrt{1-x^2}=\cos u>0$; the integral is
 $\int\cos^2u\,du=\frac12\int(1+\cos2u)du=\frac12u+\frac14\sin2u+C=\frac12(u+\sin
 u\cos u)+C$ using $\sin2u=2\sin u\cos u$. Substituting back $\sin u=x$, $\cos
-u=\sqrt{1-x^2}$ gives the stated primitive; differentiating it gives
-$\frac12\left(\frac{1}{\sqrt{1-x^2}}+\sqrt{1-x^2}-\frac{x^2}{\sqrt{1-x^2}}\right)=\frac12\cdot\frac{1+1-x^2-x^2}{\sqrt{1-x^2}}=\frac{1-2x^2/2}{\sqrt{1-x^2}}$
-computed directly as $\frac{1-x^2}{\sqrt{1-x^2}}=\sqrt{1-x^2}$.
+u=\sqrt{1-x^2}$ gives the stated primitive. Differentiating it returns the integrand:
+$\frac12\left(\frac{1}{\sqrt{1-x^2}}+\sqrt{1-x^2}-\frac{x^2}{\sqrt{1-x^2}}\right)=\frac12\cdot\frac{1+(1-x^2)-x^2}{\sqrt{1-x^2}}=\frac{1-x^2}{\sqrt{1-x^2}}=\sqrt{1-x^2}$.
 
 :::
 
