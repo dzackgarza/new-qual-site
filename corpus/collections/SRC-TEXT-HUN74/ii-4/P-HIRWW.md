@@ -23,6 +23,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section II.4,
+    exercise 1, book page 91: "Let G be a group and A a normal abelian subgroup.
+    Show that G/A operates on A by conjugation and obtain a homomorphism
+    G/A → Aut A." The card states exactly this. The solution was checked as a
+    proof: normality puts gag^{-1} in A; for gA = hA, writing g = hb with b in A
+    gives gag^{-1} = h(bab^{-1})h^{-1} = hah^{-1} because A is abelian, which is
+    the only place abelianness is used and is used correctly; the left-action
+    axiom holds since (gh)a(gh)^{-1} = g(hah^{-1})g^{-1}; and conjugation by g
+    restricted to A is an automorphism with inverse conjugation by g^{-1}, so
+    the map into Aut(A) and its multiplicativity are immediate. Complete; no
+    defect. The card does not claim that the action is by inner automorphisms
+    of G or that the map is injective, and the exercise does not ask for
+    either.
 ---
 
 ::: {.problem}
