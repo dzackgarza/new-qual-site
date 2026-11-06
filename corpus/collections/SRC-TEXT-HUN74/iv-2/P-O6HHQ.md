@@ -23,6 +23,24 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section IV.2,
+    exercise 4, book page 189: "Let R be a principal ideal domain, A a unitary
+    left R-module, and p ∈ R a prime (= irreducible). Let pA = {pa | a ∈ A} and
+    A[p] = {a ∈ A | pa = 0}. (a) R/(p) is a field. (b) pA and A[p] are
+    submodules of A. (c) A/pA is a vector space over R/(p), with
+    (r + (p))(a + pA) = ra + pA. (d) A[p] is a vector space over R/(p), with
+    (r + (p))a = ra." The card states all four parts. All four were checked:
+    irreducibles are prime in a PID, so (p) is maximal and the quotient is a
+    field; multiplication by p is R-linear because R is commutative, so its
+    image pA and kernel A[p] are submodules; (p)A = pA and Exercise IV.1.3(b)
+    gives the R/(p)-module structure on A/pA; and for A[p], r - r' = tp gives
+    (r - r')a = t(pa) = 0, so the scalar action is well defined, with ra ∈ A[p]
+    and the axioms inherited from A. Complete; no defect. The closing remark that
+    only the last sentence of (d) needs (p) maximal is correct.
 ---
 
 ::: {.problem}
