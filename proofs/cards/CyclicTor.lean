@@ -10,34 +10,36 @@ tensored first differential of a two-term free resolution and provides the cycli
 `cards/TorReductions.lean` identifies the kernel of `(n · id) ⊗ id_B` inside `ℤ ⊗ B` with `B[n]`
 (`map_torKernel_mulByInt`). This file writes the index transport that joins them.
 
-**What is certified here.** The identification the transport rests on, at the point level:
-`d_apply` — the cyclic resolution's first differential is `constOne ∘ (n · id) ∘ syzygyEquiv`, since a
-syzygy vector is `fun _ => n * c` with `c = syzygyEquiv x` — together with its two supporting facts,
-`projZero_comp_constOne` (the zeroth coordinate retracts the constant-vector map) and
-`constOne_tmul_eq_zero` (`constOne y ⊗ b = 0` implies `y ⊗ b = 0`, by `rTensor` of that retraction),
-and `d_eq_hom`, the `.hom`-level form of the factorisation.
+**What is certified here.** The index transport the cyclic stage needs, in two steps.
 
-**What is not certified: the kernel transport itself**, and the failure is an elaboration one, pasted
-here so that the next pass starts from it rather than from a plan. To state the kernel statement for
-`t ⊗ b` with `t` a syzygy vector, `t` must be given the type
-`↑((twoTermComplex 1 (cyclicPresentation n)).X 1)`, and `TensorProduct.tmul` then rejects it:
+`d_apply`: the cyclic resolution's first differential is `constOne ∘ (n · id) ∘ syzygyEquiv`, because a
+syzygy vector is `fun _ => n * c` with `c = syzygyEquiv x`. In words: the resolution's first
+differential is the subtype of the syzygy, and under `syzygyEquiv` that subtype is `n · id` followed by
+the constant-vector identification `constOne : ℤ → (Fin 1 → ℤ)`.
 
-```
-error: Application type mismatch: The argument
-  t
-has type
-  ↑((twoTermComplex 1 (cyclicPresentation n)).X 1)
-but is expected to have type
-  ↥(cyclicPresentation n).ker
-in the application
-  TensorProduct.tmul ℤ t
-```
+`ker_d_rTensor_eq`: **the kernel of the tensored first differential is the preimage, under
+`syzygyEquiv ⊗ id_B`, of the kernel of `(n · id) ⊗ id_B`.** That is the transport: the left side is
+what `Tor₁` is computed from (`cards/TorFreeResolution.lean`), and the right side is the
+presentation-level `torKernel` whose image under `TensorProduct.lid` is `B[n]`
+(`cards/TorReductions.lean`, `map_torKernel_mulByInt`). Supporting facts, all proved here:
+`projZero_comp_constOne` (the zeroth coordinate retracts `constOne`), `constOne_tmul_eq_zero`, and
+`ker_constOne_rTensor_eq_bot` (`constOne ⊗ id_B` is injective, because `projZero` retracts it); the
+generic form is `ker_subtype_rTensor_eq`.
 
-So `↑((twoTermComplex 1 (cyclicPresentation n)).X 1)` and `↥(LinearMap.ker (cyclicPresentation n))` are
-not interchangeable in the `⊗ₜ` notation, although `twoTermComplex_X_one` states their equality by
-`rfl`. The fix is to state the transport for `(LinearMap.ker f).subtype`, whose carrier is
-`↥(LinearMap.ker f)` by construction, and to connect that to `Tor₁` at the end. Until then
-`Tor₁(ℤ/n, B) ≅ B[n]` stays uncertified.
+Two notes on why this is stated the way it is, since both cost a failed attempt. First, the carrier:
+`↑((twoTermComplex 1 (cyclicPresentation n)).X 1)` and `↥(LinearMap.ker (cyclicPresentation n))` are
+not interchangeable in the `⊗ₜ` notation even though `twoTermComplex_X_one` gives their equality by
+`rfl`, so the transport is proved in the generic form for `(LinearMap.ker f).subtype` — whose carrier
+is `↥(LinearMap.ker f)` by construction — and `ker_d_rTensor_eq` specializes it by the `rfl` step
+`hsub`. Second, the instances: stating the factorisation as a composite of `ModuleCat.ofHom`s and
+taking `.hom` puts `ModuleCat.isModule` on both sides, where a composite written with
+`LinearMap.comp` alone is headed by `Int.instRing.toSemiring` and does not unify.
+
+**What is not yet written**: the last hop that turns `ker_d_rTensor_eq` into a statement about
+`Submodule.torsionBy ℤ ↥B n`, namely that `σ ⊗ id_B` is surjective (it is `TensorProduct.congr` of a
+linear equivalence) so that the preimage can be turned into an image and `map_torKernel_mulByInt`
+applied. Until that is written, `Tor₁(ℤ/n, B) ≅ B[n]` is not a named theorem here, though both of its
+halves now are.
 -/
 
 
@@ -1064,10 +1066,7 @@ open Cyclic Reductions
 
 section Transport
 
-/-- The constant-vector map `ℤ → (Fin 1 → ℤ)`. -/
 noncomputable def constOne : ℤ →ₗ[ℤ] (Fin 1 → ℤ) := LinearMap.pi fun _ => LinearMap.id
-
-/-- Its retraction, the zeroth coordinate. -/
 noncomputable def projZero : (Fin 1 → ℤ) →ₗ[ℤ] ℤ := LinearMap.proj 0
 
 theorem projZero_comp_constOne : projZero.comp constOne = LinearMap.id := by
@@ -1076,8 +1075,6 @@ theorem projZero_comp_constOne : projZero.comp constOne = LinearMap.id := by
   change (constOne c) 0 = c
   simp only [constOne, LinearMap.pi_apply, LinearMap.id_apply]
 
-/-- **The cyclic resolution's first differential, pointwise.** A syzygy vector is `fun _ => n * c`
-with `c = syzygyEquiv x`, so the differential is `constOne ∘ (n · id) ∘ syzygyEquiv`. -/
 theorem d_apply (n : ℕ) (hn : n ≠ 0) (x : ↥(LinearMap.ker (cyclicPresentation n))) :
     ((twoTermComplex 1 (cyclicPresentation n)).d 1 0).hom x
       = constOne ((mulByInt (n : ℤ)) ((syzygyEquiv n hn) x)) := by
@@ -1086,8 +1083,6 @@ theorem d_apply (n : ℕ) (hn : n ≠ 0) (x : ↥(LinearMap.ker (cyclicPresentat
   show x.1 0 = (n : ℤ) * (x.1 0 / (n : ℤ))
   exact (Int.mul_ediv_cancel' (cyclicPresentation_ker_dvd n x.2)).symm
 
-/-- **`constOne` tensored with anything kills nothing**: if `constOne y ⊗ b = 0` then `y ⊗ b = 0`,
-because `projZero` retracts `constOne`. -/
 theorem constOne_tmul_eq_zero (B : ModuleCat ℤ) (y : ℤ) (b : ↥B)
     (h : constOne y ⊗ₜ[ℤ] b = (0 : TensorProduct ℤ (Fin 1 → ℤ) ↥B)) :
     y ⊗ₜ[ℤ] b = (0 : TensorProduct ℤ ℤ ↥B) := by
@@ -1097,6 +1092,54 @@ theorem constOne_tmul_eq_zero (B : ModuleCat ℤ) (y : ℤ) (b : ↥B)
   rw [hy] at h2
   exact h2
 
+/-- **`constOne` tensored with anything is injective**: `projZero` retracts it, so the tensored
+composite `(projZero ⊗ id) ∘ (constOne ⊗ id)` is the identity. -/
+theorem ker_constOne_rTensor_eq_bot (B : ModuleCat ℤ) :
+    LinearMap.ker (constOne.rTensor ↥B) = ⊥ := by
+  have h : (projZero.rTensor ↥B).comp (constOne.rTensor ↥B) = LinearMap.id := by
+    rw [← LinearMap.rTensor_comp, projZero_comp_constOne, LinearMap.rTensor_id]
+  have hlin : Function.LeftInverse (projZero.rTensor ↥B) (constOne.rTensor ↥B) := by
+    intro x
+    have := LinearMap.congr_fun h x
+    simpa using this
+  exact LinearMap.ker_eq_bot.mpr hlin.injective
+
+/-- **The transport, for any presentation whose syzygy is identified with `ℤ` by `σ` and whose
+relation map is `n · σ`.** The kernel of `subtype ⊗ id_B` is the preimage under `σ ⊗ id_B` of the
+kernel of `(n · id) ⊗ id_B`. -/
+theorem ker_subtype_rTensor_eq (B : ModuleCat ℤ) (n : ℕ)
+    {F : Type*} [AddCommGroup F] [Module ℤ F] (f : (Fin 1 → ℤ) →ₗ[ℤ] F)
+    (σ : ↥(LinearMap.ker f) ≃ₗ[ℤ] ℤ)
+    (h : ∀ x : ↥(LinearMap.ker f), (LinearMap.ker f).subtype x = constOne ((n : ℤ) * σ x)) :
+    LinearMap.ker ((LinearMap.ker f).subtype.rTensor ↥B)
+      = Submodule.comap (σ.toLinearMap.rTensor ↥B)
+          (LinearMap.ker ((mulByInt (n : ℤ)).rTensor ↥B)) := by
+  have hcomp : (LinearMap.ker f).subtype
+      = constOne.comp ((mulByInt (n : ℤ)).comp σ.toLinearMap) := by
+    apply LinearMap.ext
+    intro x
+    exact h x
+  rw [hcomp, LinearMap.rTensor_comp, LinearMap.rTensor_comp, LinearMap.ker_comp,
+    ker_constOne_rTensor_eq_bot B, Submodule.comap_bot, LinearMap.ker_comp]
+
+/-- **The cyclic transport, in the form `Tor₁` uses.** The first differential of the cyclic
+resolution is the syzygy subtype, whose kernel under `⊗ B` is the preimage under `syzygyEquiv ⊗ B` of
+`B[n]`. -/
+theorem ker_d_rTensor_eq (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0) :
+    LinearMap.ker (((twoTermComplex 1 (cyclicPresentation n)).d 1 0).hom.rTensor ↥B)
+      = Submodule.comap ((syzygyEquiv n hn).toLinearMap.rTensor ↥B)
+          (LinearMap.ker ((mulByInt (n : ℤ)).rTensor ↥B)) := by
+  have hsub : ((twoTermComplex 1 (cyclicPresentation n)).d 1 0).hom
+      = (LinearMap.ker (cyclicPresentation n)).subtype := rfl
+  rw [hsub]
+  refine ker_subtype_rTensor_eq (B := B) (n := n) (cyclicPresentation n) (syzygyEquiv n hn) ?_
+  intro x
+  show x.1 = constOne ((n : ℤ) * (syzygyEquiv n hn x))
+  funext i
+  fin_cases i
+  show x.1 0 = (n : ℤ) * (x.1 0 / (n : ℤ))
+  exact (Int.mul_ediv_cancel' (cyclicPresentation_ker_dvd n x.2)).symm
+
 end Transport
 
 end CyclicTransport
@@ -1104,3 +1147,6 @@ end CyclicTransport
 #print axioms CyclicTransport.projZero_comp_constOne
 #print axioms CyclicTransport.d_apply
 #print axioms CyclicTransport.constOne_tmul_eq_zero
+#print axioms CyclicTransport.ker_constOne_rTensor_eq_bot
+#print axioms CyclicTransport.ker_subtype_rTensor_eq
+#print axioms CyclicTransport.ker_d_rTensor_eq
