@@ -14,6 +14,20 @@ relations:
 - kind: uses
   target: PR-7OT2Z
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry, §I.1 Exercise 1.1 (scan page 22
+    of the retained PDF). What was checked: the printed text of (a), (b) and (c)
+    against the card's statement, wording by wording. (a) and (b) agree as
+    printed. (c) carries a star in the book, which the card did not record: a
+    remark now says so, since a remark may note a starred question. The book's
+    closing question reads "Which one is it when?", and the card read "Which one,
+    and when?"; restored to the printed wording. What was not checked: the
+    solution was read only for consistency with the repaired statement, not
+    re-derived; no other part of §I.1 was read.
 ---
 
 ::: {.problem}
@@ -25,7 +39,7 @@ review: draft
 
 (c) Let $f$ be any irreducible quadratic polynomial in $k[x,y]$, and let $W$ be the conic it defines.
     Show that $A(W)$ is isomorphic to $A(Y)$ or to $A(Z)$.
-    Which one, and when?
+    Which one is it when?
 :::
 
 ::: {.solution}
@@ -47,4 +61,8 @@ If $b = 0$, then $f \in k[x]$ factors into linear factors, so $b \neq 0$.
 The substitution $y' = -(ax + by + c)$ is an affine change of coordinates, and it gives $f = x^2 - y'$, so $A(W) \cong A(Y)$.
 
 So $A(W) \cong A(Y)$ exactly when the quadratic part of $f$ is a square, that is, when the projective closure of $W$ meets the line at infinity in one point, and $A(W) \cong A(Z)$ when it meets it in two points.
+:::
+
+::: {.remark}
+Part (c) is starred in the source.
 :::
