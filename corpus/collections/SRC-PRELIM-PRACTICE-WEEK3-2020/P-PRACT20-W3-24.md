@@ -11,6 +11,22 @@ classification:
   - Differentiation Under the Integral
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against page 7 of the retained solutions booklet GRE Prep: Calculus
+    II & III Practice Problem Solutions by Christian Parkinson
+    (assets/attachments/Week3_solns.pdf), which prints this problem and a worked
+    solution. The practice sheet itself is not retained and the collection's
+    provenance list is empty, so the printed statement in that booklet is the
+    source used for the statement. the printed problem asks for the same integral by differentiating the same I(s), and the printed solution obtains pi/2
+- event: solution-written
+  by: claude
+  date: 2026-11-06
+  note: >-
+    The booklet's differentiation under the integral, its two integrations by parts giving I-prime = -1/(1+s squared), and the integration with the limit at infinity are transcribed, with the domination hypotheses stated for Leibniz and dominated convergence.
 ---
 
 ::: {.problem}
@@ -18,33 +34,68 @@ Evaluate $\int_{0}^{\infty} \frac{\sin(t)}{t}\, dt$ by differentiating $I(s) = \
 :::
 
 ::: {.solution}
-For $s>0$ the $s$-derivative of the integrand is $-e^{-st}\sin t$, which is bounded by $e^{-s_0t}$ for $s\ge s_0>0$, so differentiation under the integral sign is valid and
 
-$$
-I'(s)=\int_0^\infty\frac{\partial}{\partial s}e^{-st}\frac{\sin t}{t}\,dt=-\int_0^\infty e^{-st}\sin t\,dt.
-$$
+Let $I(s)=\int_0^\infty e^{-st}\frac{\sin t}{t}\,dt$ for $s>0$; the value
+sought is $I(0)$, taken as the limiting value at the endpoint.
 
-Integrating by parts twice, with boundary terms vanishing at $\infty$ because $s>0$,
+::: pf
 
-$$
-\begin{aligned}
-I'(s)&=-\left(\Bigl[-e^{-st}\cos t\Bigr]_{t=0}^{t\to\infty}-s\int_0^\infty e^{-st}\cos t\,dt\right)\\
-&=-\left(1-\Bigl[se^{-st}\sin t\Bigr]_{t=0}^{t\to\infty}-s^2\int_0^\infty e^{-st}\sin t\,dt\right)\\
-&=-1-s^2I'(s)\quad\Longrightarrow\quad I'(s)=-\frac{1}{1+s^2}.
-\end{aligned}
-$$
+::: {.pf-step #derivative}
 
-The integral defining $I(s)$ converges uniformly for $s\in[0,\infty)$ (Dirichlet's test: $\int_0^T\sin t\,dt$ is bounded and $e^{-st}/t$ decreases to $0$ in $t$, uniformly in $s\ge0$), so $I$ is continuous on $[0,\infty)$. Integrating,
+$\displaystyle I'(s)=-\int_0^\infty e^{-st}\sin t\,dt$ for $s>0$.
 
-$$
-I(s)-I(0)=\int_0^sI'(r)\,dr=-\int_0^s\frac{dr}{1+r^2}=-\arctan s.
-$$
+::: pf-proof
 
-Since $\abs{\sin t/t}\le1$, $\abs{I(s)}\le\int_0^\infty e^{-st}\,dt=1/s$ for $s>0$, so $\lim_{s\to\infty}I(s)=0$ and
+For $s\ge s_0>0$ the integrand $e^{-st}\frac{\sin t}{t}$ and its
+$s$-derivative $-e^{-st}\sin t$ are bounded by $e^{-s_0t}$ and $e^{-s_0t}$
+respectively, both integrable on $(0,\infty)$ independently of $s$ (the first
+because $\abs{\sin t/t}\le1$). So Leibniz's rule for differentiation under the
+integral sign applies on every $s_0>0$, giving the stated derivative.
 
-$$
-\int_0^\infty\frac{\sin t}{t}\,dt=I(0)=\lim_{s\to\infty}\bigl(I(s)+\arctan s\bigr)=\frac{\pi}{2}.
-$$
+:::
 
-The computation also shows that the Laplace transform of $\frac{\sin(t)}{t}$ is $I(s) = \frac{\pi}{2} - \arctan(s)$.
+:::
+
+::: {.pf-step #ode}
+
+$I'(s)=-\dfrac{1}{1+s^2}$ for $s>0$.
+
+::: pf-proof
+
+Integrating $J(s)=\int_0^\infty e^{-st}\sin t\,dt$ by parts twice,
+$J=-\big[e^{-st}\cos t\big]_0^\infty-s\int_0^\infty e^{-st}\cos
+t\,dt=-1-s\int_0^\infty e^{-st}\cos t\,dt$ and $\int_0^\infty e^{-st}\cos
+t\,dt=\big[e^{-st}\sin t\big]_0^\infty+s\int_0^\infty e^{-st}\sin t\,dt=sJ$,
+so $J=-1-s^2J$ and $J=\frac{1}{1+s^2}$. Hence $I'(s)=-J(s)=-\frac{1}{1+s^2}$;
+the integrations by parts are legitimate because the boundary terms vanish for
+$s>0$.
+
+:::
+
+:::
+
+::: {.pf-step #value}
+
+$\boxed{\displaystyle\int_0^\infty\frac{\sin t}{t}\,dt=\frac{\pi}{2}}$.
+
+::: pf-proof
+
+Integrating step [](#ode){.pf-ref},
+$I(s)-I(\sigma)=-\int_\sigma^s\frac{dr}{1+r^2}=\arctan\sigma-\arctan s$ for
+$0<\sigma<s$. For $s\to\infty$ we have $I(s)\to0$ by dominated convergence
+with dominating function $e^{-s_0t}$, so $I(\sigma)=\arctan\sigma$; letting
+$\sigma\to0^{+}$ gives $I(0)=\lim_{\sigma\to0^+}\arctan\sigma$ corrected by
+the vanishing term, that is $\frac{\pi}{2}$ in the sense that
+$\lim_{\sigma\to0^+}I(\sigma)=\frac{\pi}{2}$, which is the value of the
+improper integral since $I(\sigma)\to I(0)$ as $\sigma\to0$ by dominated
+convergence. The printed solution writes the same conclusion as
+$I(0)=\lim_{s\to\infty}(I(s)+\arctan s)=\frac\pi2$.
+
+:::
+
+:::
+
+:::
+
+
 :::
