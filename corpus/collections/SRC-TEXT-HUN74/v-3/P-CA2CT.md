@@ -22,6 +22,22 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.3,
+    exercise 7, book page 267, read from the page image: "If F is algebraically
+    closed and E consists of all elements in F that are algebraic over K, then E
+    is an algebraic closure of K [see Theorem 1.14]." The card states exactly
+    this, with K ⊆ F made explicit, which the printed statement presupposes. The
+    proof was checked: E is a subfield since a, b algebraic over K makes K(a,b)
+    finite so a - b, ab and a^{-1} are algebraic; E/K is algebraic by definition;
+    and for f ∈ E[x] nonconstant, a root α ∈ F is algebraic over the finite
+    extension K(a_0, ..., a_n) of K, hence algebraic over K by the tower law, so
+    α ∈ E; iterating gives that every polynomial over E splits in E. An algebraic
+    and algebraically closed extension is an algebraic closure. Complete; no
+    defect.
 ---
 
 ::: {.problem}
