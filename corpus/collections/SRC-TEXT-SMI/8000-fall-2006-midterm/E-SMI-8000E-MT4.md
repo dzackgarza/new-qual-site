@@ -22,6 +22,16 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Used surjectivity of every iterate to lift a fixed nonzero kernel element and witness each strict kernel inclusion, then applied ACC."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 11, midterm 4(a),(b).
+    Correct: ker f^n ⊆ ker f^{n+1} always; strictness uses surjectivity to find y_n
+    with f^n(y_n) = x ≠ 0 in ker f, so y_n ∈ ker f^{n+1} but not ker f^n; and on a
+    noetherian module that strictly increasing chain is impossible, so a surjective
+    endomorphism is injective, hence an automorphism. No defect.
+---
 ---
 
 ::: {.exercise}
