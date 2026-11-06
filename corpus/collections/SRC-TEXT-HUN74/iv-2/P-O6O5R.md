@@ -23,6 +23,21 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section IV.2,
+    exercise 9, book page 190: "If F_1 and F_2 are free modules over a ring with
+    the invariant dimension property, then rank(F_1 ⊕ F_2) = rank F_1 +
+    rank F_2." The card states exactly this. The proof was checked: the union of
+    the two copies of the bases spans and is independent by comparing
+    coordinates, so it is a basis; the two parts are disjoint and in bijection
+    with the bases, so its cardinality is the sum of the two ranks; and because
+    the ring has the invariant dimension property that cardinality is the rank of
+    F_1 ⊕ F_2. Complete; no defect. The card correctly does not use the theorem
+    that a direct sum of free modules is free with the sum of the bases, which
+    would have been circular here.
 ---
 
 ::: {.problem}
