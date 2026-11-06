@@ -63,19 +63,15 @@ computation gives $P(Y\le3)=\frac78$.
 
 ::: {.pf-step #count}
 
-$P(\max\{X,Y\}>3)=\left(1-\frac78\right)+\left(1-\frac78\right)-\left(1-\frac78\right)^2=\frac1{64}+\frac{16}{64}\cdot\ldots=\boxed{\frac{15}{64}}$;
-equivalently $1-\left(\frac78\right)^2=\frac{64-49}{64}$.
+$P(\max\{X,Y\}>3)=1-P(X\le3)P(Y\le3)=1-\frac{49}{64}=\boxed{\frac{15}{64}}$.
 
 ::: pf-proof
 
 $\{\max\{X,Y\}\le3\}=\{X\le3\}\cap\{Y\le3\}$, and $X,Y$ are independent
 because the product weights factor, so its probability is
 $\frac78\cdot\frac78=\frac{49}{64}$. The event in question is the complement,
-with probability $1-\frac{49}{64}=\frac{15}{64}$. Counting directly over the
-$3\times3$ rectangle would give the same: the complement consists of the
-$64-49=15$ unit cells of the $8\times8$ weighted square outside the $7\times7$
-sub-square when the masses $2^{-n}$ are viewed as dividing the unit interval
-into lengths $2^{-n}$.
+with probability $1-\frac{49}{64}=\frac{15}{64}$. The same number is obtained by inclusion-exclusion,
+$P(X>3)+P(Y>3)-P(X>3,Y>3)=\frac18+\frac18-\frac1{64}=\frac{15}{64}$, which agrees.
 
 :::
 
