@@ -16,6 +16,18 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.5,
+    exercise 3, book page 281: "If |K| = p^n, then every element of K has a unique
+    pth root in K." The card states exactly this. The proof was checked: a field
+    of order p^n has prime field F_p and characteristic p, so (x+y)^p = x^p + y^p
+    since the intermediate binomial coefficients vanish, giving the Frobenius
+    endomorphism; its kernel is a proper ideal in a field, hence 0, so it is
+    injective, and an injective self-map of a finite set is bijective, which gives
+    existence and uniqueness of the pth root. Complete; no defect.
 ---
 
 ::: {.problem}
