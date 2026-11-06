@@ -22,6 +22,16 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Used the universal abelian quotient property of the commutator subgroup in both directions, comparing the derived series with an arbitrary abelian subnormal tower."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 9, problem 10, with the
+    sheet's definition of solvable as having an abelian subnormal tower. Correct in
+    both directions: the derived series is an abelian normal tower when it reaches
+    1; and if an abelian tower exists, H_i/H_{i+1} abelian gives H_i' ≤ H_{i+1}, so
+    inductively G^{(i)} ≤ H_i and the series reaches 1. No defect.
+---
 ---
 
 ::: {.exercise}
