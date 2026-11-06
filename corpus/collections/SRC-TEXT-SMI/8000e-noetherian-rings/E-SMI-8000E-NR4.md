@@ -22,6 +22,15 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Proved finite free modules noetherian by induction using short exact sequences, then passed to the finitely generated quotient."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 5, problem 4: "If R is a
+    noetherian ring, prove any fin gen R module M is noetherian." Correct: R^m is
+    noetherian by induction on m using problem 3 on
+    0 → R^{m-1} → R^m → R → 0, and M ≅ R^m/ker π is a quotient of it. No defect.
+---
 ---
 
 ::: {.exercise}
