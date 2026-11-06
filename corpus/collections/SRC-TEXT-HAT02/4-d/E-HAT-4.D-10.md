@@ -26,6 +26,7 @@ audit:
 
 ::: {.problem}
 Fill in the details of the following argument to show that every $n \times n$ matrix $A$ with entries in $\quaternions$ has an eigenvalue in $\quaternions$.
+(The usual argument over $\CC$ involving roots of the characteristic polynomial does not work due to the lack of a good quaternionic determinant function.)
 For $t \in [0, 1]$ and $\lambda \in S^3 \subset \quaternions$, consider the matrix $t\lambda I + (1-t)A$.
 If $A$ has no eigenvalues, this is invertible for all $t$.
 Thus the map $S^3 \to GL_n(\quaternions)$, $\lambda \mapsto \lambda I$, is nullhomotopic.
@@ -59,7 +60,7 @@ But $GL_n(\quaternions)$ deformation retracts onto $Sp(n)$, and the preceding ex
 $$
 \operatorname{diag}(\lambda^n,1,\ldots,1).
 $$
-By Exercise 10(b) of §3.C, the power map $S^3\to S^3$, $\lambda\mapsto\lambda^n$, represents $n$ times a generator of $\pi_3(S^3)$. The inclusion $Sp(1)\hookrightarrow Sp(n)$ induces an isomorphism on $\pi_3$, so $\lambda\mapsto\lambda I$ represents
+By Exercise 10(b) of §3.C, the power map $S^3\to S^3$, $\lambda\mapsto\lambda^n$, represents $n$ times a generator of $\pi_3(S^3)\cong\ZZ$, the degree map being an isomorphism by Corollary 4.25 (p. 361). The inclusion $Sp(1)\hookrightarrow Sp(n)$ induces an isomorphism on $\pi_3$, so $\lambda\mapsto\lambda I$ represents
 $$
 n\ne0\in\pi_3(GL_n(\quaternions))\cong\ZZ.
 $$
