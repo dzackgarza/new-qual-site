@@ -21,6 +21,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §3.F Exercise 2, printed page
+    320; the statement matches word for word. Checked: with
+    Φ((g_i)) = (g_i − α_{i+1}(g_{i+1})) on the product, lim G_i = ker Φ and
+    lim¹ G_i = coker Φ (Hatcher's definition, p. 316); Mittag-Leffler makes the image
+    of G_{i+n} in G_i stabilise at some I_i, and solving Φ(g) = h by choosing g_i in a
+    stabilised preimage gives surjectivity of Φ, hence vanishing of lim¹. No defect.
 ---
 
 ::: {.problem}
