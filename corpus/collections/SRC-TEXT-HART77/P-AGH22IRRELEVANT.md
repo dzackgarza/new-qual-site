@@ -24,6 +24,15 @@ audit:
   by: chatgpt
   date: 2026-09-17
   note: Reviewed the recovered proof against the affine Nullstellensatz and checked each implication, including the unit ideal and the bound for all monomials of a fixed degree.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Compared the card's statement in full with the printed Exercise 2.2 (scan
+    page 26 of the retained PDF), tails included: hypotheses, every lettered
+    part and the closing clauses. The card states the chapter's standing
+    hypotheses (k algebraically closed, S = k[x_0,...,x_n]) explicitly, which
+    adds no condition.
 ---
 
 ::: {.problem}
