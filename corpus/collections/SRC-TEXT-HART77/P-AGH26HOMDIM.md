@@ -12,6 +12,16 @@ classification:
   - Transcendence Degree
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Compared the card's statement in full with the printed Exercise 2.6 (scan
+    page 26 of the retained PDF), tails included: hypotheses, every lettered
+    part and the closing clauses. The book's bracketed hint, which continues
+    onto scan page 27, is present on the card as a hint block and is not part
+    of the statement.
 ---
 
 ::: {.problem}
