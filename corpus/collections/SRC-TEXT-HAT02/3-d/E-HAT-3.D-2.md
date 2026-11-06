@@ -21,6 +21,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §3.D Exercise 2, printed page
+    302. The statement matches the book word for word. Checked: the cells of SO(n)
+    are indexed by admissible sequences n > i_1 > ... > i_r > 0 with dimension
+    i_1 + ... + i_r (Proposition 3D.1, p. 294), so the 2-skeleton has exactly e^0,
+    e^1, e^2; the cellular boundary is de^i = 2e^{i-1} for even i and 0 for odd i
+    (§3.D, p. 299), so the 2-cell is attached by a degree 2 map and
+    π₁ = ⟨a | a²⟩ = Z_2; cells of dimension at least 3 do not change π₁. The
+    generator is the rotation loop in a fixed 2-plane, and the characteristic disk of
+    e^2 is the explicit nullhomotopy of its double. No defect.
 ---
 
 ::: {.problem}
