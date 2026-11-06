@@ -14,11 +14,25 @@ relations:
 - kind: uses
   target: D-5LJUX
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry, §I.1 Exercise 1.8 (scan page
+    23 of the retained PDF). What was checked: the hypotheses and conclusion
+    against the card — Y an affine variety of dimension r in A^n, H a
+    hypersurface with Y not contained in H, every irreducible component of Y
+    cap H of dimension r - 1 — all present. The book closes with the cross-
+    reference "(See (7.1) for a generalization.)", which the card had dropped;
+    restored in the statement, since a bracketed pointer belongs to the
+    source's wording. What was not checked: the solution was read only for
+    consistency, not re-derived.
 ---
 
 ::: {.problem}
 Let $Y$ be an affine variety of dimension $r$ in $\AA^n$, let $H$ be a hypersurface in $\AA^n$, and assume $Y \not\subseteq H$.
-Show that every irreducible component of $Y \intersect H$ has dimension $r - 1$.
+Show that every irreducible component of $Y \intersect H$ has dimension $r - 1$ (see (7.1) for a generalization).
 :::
 
 ::: {.solution}
