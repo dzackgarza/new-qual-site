@@ -14,6 +14,25 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §3.D Exercise 3, printed page
+    302; the statement matches. The additive structure was recomputed and is right:
+    C_*(SO(5)) ≅ C^2 ⊗ C^4 with C^{2i} spanned by e^0, e^{2i-1}, e^{2i}, E_i = e^{2i}e^{2i-1}
+    in degrees 0, 2i-1, 2i, 4i-1 (Hatcher, p. 299), giving H_*(C^2) = Z, Z_2, Z in
+    degrees 0, 1, 3 and H_*(C^4) = Z, Z_2, Z in degrees 0, 3, 7, so Künneth gives
+    Z in degrees 0, 3, 7, 10 and Z_2 in degrees 1, 3, 4, 5, 6, 8, exactly as the card
+    says; the total 16 matches the 16 cells, and the mod 2 dimensions agree with the
+    exterior algebra of Theorem 3D.2(b). The cycle e^4e^1 + e^3e^2 of order 2 in H_5
+    was checked. NOT verified: the multiplicative claims. The card's justification —
+    that mod 2 reduction is injective on 2-torsion, plus a list of products — does
+    not establish the products it displays (for instance at = bc = [e^3e^2e^1] and
+    db = -bd are asserted, not computed from the chain-level Pontryagin product), and
+    it does not say why its list is complete. This gap is reported, not repaired; the
+    fix would be a product-by-product computation in C_*(SO(5)) using Proposition
+    3D.4 (p. 300) and the mod 2 ring of Theorem 3D.2(b).
 ---
 
 ::: {.problem}
