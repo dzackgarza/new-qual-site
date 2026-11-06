@@ -22,6 +22,19 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Applied Hom(-,Q) to a hypothetical group isomorphism and used exercise 4 to compare finite-dimensional Q-vector-space dimensions."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith Math 8000 packet 8000e.pdf page 1,
+    abelian-groups (generators) problem 5: "Assuming the dimension of a Q vector
+    space is well defined, use the result of 4, to deduce that Z^s cannot be
+    isomorphic to Z^t unless s = t." The card states exactly this, and its
+    reference is to the packet's own problem 4, which the neighbouring card
+    proves. The proof was checked: precomposition with an isomorphism
+    phi: Z^s → Z^t is a Q-linear isomorphism Hom(Z^t,Q) → Hom(Z^s,Q) with
+    inverse precomposition by phi^{-1}; problem 4 identifies these with Q^t and
+    Q^s; invariance of dimension gives t = s. Complete; no defect.
 ---
 
 ::: {.exercise}
