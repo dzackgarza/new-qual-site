@@ -62,7 +62,6 @@ the three equations.
 
 ::: {.pf-step #solve}
 
-$\lambda^2=\frac{17}{8}$, and the candidate points are
 $\lambda^2=\frac{17}{8}$, and the stationary points are
 $\pm\big(\sqrt{2/17},\,0,\,\sqrt{32/17}\big)$.
 
