@@ -20,6 +20,14 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Compared the card's statement in full with the printed Exercise 2.3 (scan
+    page 26 of the retained PDF), tails included: hypotheses, every lettered
+    part and the closing clauses. Same remark on the explicit standing
+    hypotheses; the three parts agree.
 ---
 
 ::: {.problem}
