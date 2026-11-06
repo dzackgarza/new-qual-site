@@ -28,7 +28,8 @@ source:
         - id: P-CH16-11
           comment: Exercise 11
         - id: P-CH16-15
-          comment: Exercise 15
+          comment: Exercise 13 (printed as exercise 15 when the card was created;
+            the 2x+1-in-Z4[x] exercise is 13 in Gallian 7e)
         - id: P-CH16-16
           comment: Exercise 16
         - id: P-CH16-17
