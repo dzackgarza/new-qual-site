@@ -12,7 +12,28 @@ classification:
   - Invertible Sheaves
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry (1977), Chapter III, section 4,
+    exercise 4.5, printed page 224 (PDF page 239 of
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, the checked-in
+    extraction). The printed exercise reads: "For any ringed space (X, O_X), let
+    Pic X be the group of isomorphism classes of invertible sheaves (II, 6). Show
+    that Pic X = H^1(X, O_X^*), where O_X^* denotes the sheaf whose sections over
+    an open set U are the units in the ring Gamma(U, O_X), with multiplication as
+    the group operation." The card states exactly this. The proof was read and
+    checked: transition functions of a trivialized invertible sheaf are units,
+    they satisfy the multiplicative cocycle identity on triple overlaps, a change
+    of trivialization alters them by the coboundary of (h_i), the converse gluing
+    of rank-one free sheaves along a cocycle is the sheaf gluing theorem, tensor
+    product multiplies cocycles, and the coverwise bijection passes to the direct
+    limit and then to derived-functor cohomology by the exercise's own III.4.4.
+    Nothing is asserted beyond the ringed-space generality the exercise states.
 ---
+
 ::: {.problem}
 For any ringed space $(X, \mco_X)$, let $\Pic X$ be the group of isomorphism classes of invertible sheaves (II, §6). Show that $\Pic X \cong H^1(X, \mco_X^*)$, where $\mco_X^*$ denotes the sheaf whose sections over an open set $U$ are the units in the ring $\Gamma(U, \mco_X)$, with multiplication as the group operation.
 :::
