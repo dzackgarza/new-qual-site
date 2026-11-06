@@ -23,6 +23,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section II.6,
+    exercise 4, book page 99: "What is the center of the quaternion group Q_8?
+    Show that Q_8/C(Q_8) is abelian." The card states this with Z(Q_8) for the
+    center; section 4 of this chapter writes C(G) for the center and the card's
+    use of Z is the same object. The proof was checked: ±1 are central; ij = k
+    and ji = -k show i and -i are not, and the cyclic permutation of i, j, k
+    gives the same for ±j, ±k, so the center is exactly {±1}; the quotient has
+    order 4 with every coset of square 1, so it is Z_2 ⊕ Z_2 rather than Z_4 and
+    in particular is abelian. Complete; no defect.
 ---
 
 ::: {.problem}
