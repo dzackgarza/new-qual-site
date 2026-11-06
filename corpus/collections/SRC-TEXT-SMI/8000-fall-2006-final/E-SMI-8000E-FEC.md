@@ -22,6 +22,17 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Stated all three Sylow assertions and Jordan--Hoelder, then proved Sylow existence, containment/conjugacy, and the congruence/divisibility count without circularity."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf pages 11-12, final part C(i),(ii)
+    with its instruction to prove one of the two theorems. The three Sylow assertions
+    (existence, containment and conjugacy, number congruent to 1 mod p and dividing m)
+    and the Jordan-Hoelder statement are both correct, and the proof supplied is
+    Sylow's: the fixed-point argument for the congruence, n_p = [G : N_G(P)], and the
+    PQ = Q maximality step. No defect.
+---
 ---
 
 ::: {.exercise}
