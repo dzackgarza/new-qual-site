@@ -39,7 +39,8 @@ source:
     - id: P-CH13-47
       comment: Exercise 47
     - id: P-CH13-57
-      comment: Exercise 57
+      comment: Exercise 53 (printed as exercise 57 when the card was created; the
+        x^2 - 5x + 6 exercise is 53 in Gallian 7e)
     - id: P-CH13-68
       comment: Exercise 68
   date: {kind: year, year: 2016}
