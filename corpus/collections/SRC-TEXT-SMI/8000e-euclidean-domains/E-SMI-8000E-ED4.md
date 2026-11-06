@@ -12,9 +12,15 @@ classification:
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: muse-spark-1.2
-  date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 2, Euclidean-domain
+    problem 4. Correct: π: R^m → M onto the m generators has kernel finitely
+    generated inside R^m by problem 2, the map f: R^n → R^m with f(e_j) = y_j is
+    given by the m × n matrix of coordinates, and M ≅ R^m/im f = coker f.
+    No defect.
 ---
 
 ::: {.exercise}
