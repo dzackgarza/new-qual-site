@@ -12,7 +12,26 @@ classification:
   - Subsheaves
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry (1977), Chapter II, section 1,
+    exercise 1.4, printed page 66 (PDF page 81 of
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, the checked-in
+    extraction). The printed exercise reads: "(a) Let phi: F -> G be a morphism
+    of presheaves such that phi(U): F(U) -> G(U) is injective for each U. Show
+    that the induced map phi^+: F^+ -> G^+ of associated sheaves is injective.
+    (b) Use part (a) to show that if phi: F -> G is a morphism of sheaves, then
+    im phi can be naturally identified with a subsheaf of G, as mentioned in
+    the text." The card states exactly this. The proof was checked: (a) passes
+    to stalks, where the map is a colimit of the injective section maps, and
+    sheafification preserves stalks; (b) applies (a) to the presheaf image.
+    That a filtered colimit of injective abelian-group maps is injective is
+    used, not reproved.
 ---
+
 
 ::: {.problem}
 (a) Let $\varphi: \mcf \to \mcg$ be a morphism of presheaves such that $\varphi(U): \mcf(U) \to \mcg(U)$ is injective for each $U$.
