@@ -83,11 +83,11 @@ every $n$.
 
 For each $x$ there is at most one $n$ with $x\in[n,n+1)$ and none for large
 $n$, so $f_n(x)\to0$; each $f_n$ has integral $1$ over its interval of length
-one. No integrable dominating function exists, since $\sup_nf_n=1$ is
-integrable but $\abs{f_n}\le g$ with $\int g<\infty$ would force
-$\sum_n\int_{[n,n+1]}g<\infty$ to dominate an infinite sum of $1$s; the
-conclusion fails, which shows that the hypothesis $\abs{f_n}\le g$ with $g\in
-L^1$ is essential.
+one. No integrable dominating function exists: if $g\in L^1$ had
+$\abs{f_n}\le g$ for every $n$, then on the disjoint intervals $[n,n+1]$ we would
+get $1=\int f_n\le\int_{[n,n+1]}g$ for every $n$, so $\int g=\sum_n\int_{[n,n+1]}g\ge\sum_n1=\infty$,
+contradicting $g\in L^1$. The conclusion fails, which shows that the hypothesis
+$\abs{f_n}\le g$ with $g\in L^1$ is essential.
 
 :::
 
