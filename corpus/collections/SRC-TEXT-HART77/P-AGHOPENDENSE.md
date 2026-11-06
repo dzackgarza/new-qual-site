@@ -13,6 +13,19 @@ relations:
 - kind: uses
   target: D-9DIKB
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry, §I.1 Exercise 1.6 (scan page
+    23 of the retained PDF). What was checked: both printed sentences — that a
+    nonempty open subset of an irreducible space is dense and irreducible, and
+    that a subset which is irreducible in its induced topology has irreducible
+    closure — against the card, which states them as two sentences of the same
+    content. No difference; no repair needed; the exercise carries no star.
+    What was not checked: the solution was read only for consistency, not re-
+    derived.
 ---
 
 ::: {.problem}
