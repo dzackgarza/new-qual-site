@@ -14,6 +14,16 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 10, midterm 2(a),(b).
+    (a) is correct: a PID is noetherian, so a maximal non-factorable principal ideal
+    gives existence by descent, irreducibles are prime because (p) is maximal, and
+    uniqueness follows by induction on the number of factors with cancellation.
+    (b) answers with Z[x], a UFD by Gauss's lemma in which (2,x) is not principal.
+    No defect.
 ---
 
 ::: {.exercise}
