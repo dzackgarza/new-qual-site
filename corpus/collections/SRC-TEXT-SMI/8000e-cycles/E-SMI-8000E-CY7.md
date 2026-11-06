@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 8, problem 6's opening
+    definition: j ~ k iff j = k or (j k) in H. Correct: reflexivity by the first
+    clause, symmetry because (k j) = (j k), and transitivity because
+    (j k)(k l)(j k) = (j l) lies in the subgroup H. No defect.
 ---
 
 ::: {.exercise}
