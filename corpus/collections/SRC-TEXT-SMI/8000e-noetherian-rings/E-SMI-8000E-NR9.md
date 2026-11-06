@@ -22,6 +22,17 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Gave a nonsurjective counterexample, proved image ideals under surjections, and showed extension and contraction are inverse bijections above ker f."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 5, problem 9: f(I) need
+    not be an ideal; for surjective f it is, and I ↦ f(I) is a bijection from
+    ideals containing ker f onto ideals of S. Correct: the inclusion Z → Q with
+    I = 2Z gives the counterexample since 1/2·2 = 1 leaves 2Z; the surjective case
+    uses a preimage of the scalar; and both composites are the identity on the two
+    sides, the first using ker f ⊆ I. No defect.
+---
 ---
 
 ::: {.exercise}
