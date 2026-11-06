@@ -22,6 +22,18 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Constructed explicit eigenvector and generalized-eigenvector bases for all five matrices and checked each Q is invertible and satisfies Q^{-1}AQ equal to the stated upper Jordan form."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 4, Jordan forms
+    Exercise 4(i),(ii),(iii) and the two further matrices printed at the top of
+    page 5 (which the packet mislabels "(ii)" twice and the card numbers (iv) and
+    (v)). All five answers were checked by recomputing Q^{-1}MQ: the determinants
+    are 2i, 4, -6, 2, 1 and each product is exactly the displayed Jordan matrix
+    (diag(i,-i); J_2(3) ⊕ J_1(1); diag(-2,1,3); J_2(2) ⊕ J_1(2) ⊕ J_1(-2);
+    J_2(3) ⊕ J_2(2) ⊕ J_1(2)). No defect.
+---
 ---
 
 ::: {.exercise}
