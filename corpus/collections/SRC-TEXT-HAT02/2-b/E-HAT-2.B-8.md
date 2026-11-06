@@ -22,6 +22,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the determinant or transfer-sequence argument, including the mod-2 endpoint maps.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.B Exercise 8, printed page
+    177; the statement matches word for word. Checked: in a division algebra left
+    multiplication L_a is bijective for a ≠ 0, so det L_a ≠ 0; a path in
+    R^{2n+1} − {0} joins a to −a, and det L_{−a} = (−1)^{2n+1} det L_a = −det L_a, so
+    t ↦ det L_{γ(t)} is a path in R − {0} from d to −d, which is impossible. This
+    gives the theorem for the odd dimensions 3, 5, 7 in place of the division-algebra
+    classification (Theorem 2B.5, p. 173). No defect.
+---
 ---
 
 ::: {.problem}
