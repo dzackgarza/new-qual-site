@@ -21,6 +21,21 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.1,
+    exercise 1, book page 240: "(a) [F : K] = 1 if and only if F = K. (b) If
+    [F : K] is prime, then there are no intermediate fields between F and K.
+    (c) If u ∈ F has degree n over K, then n divides [F : K]." The card states
+    exactly these three parts. The proof was checked: {1} is a basis precisely
+    when F = K; the tower law factors a prime degree into two positive integers
+    one of which is 1, and degree 1 means equality by (a); and [F : K] =
+    [F : K(u)]·n follows from the tower law. One point of care, correctly taken
+    by the card: the divisibility in (c) is concluded only in the finite case,
+    where [F : K(u)] is a positive integer, and the card proves the degree
+    identity first. Complete; no defect.
 ---
 
 ::: {.problem}
