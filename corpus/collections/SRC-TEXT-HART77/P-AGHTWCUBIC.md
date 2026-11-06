@@ -16,6 +16,19 @@ relations:
 - kind: uses
   target: PR-7OT2Z
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry, §I.1 Exercise 1.2 (scan page 22
+    of the retained PDF). What was checked: the printed text against the card's
+    statement, wording by wording — the set Y = {(t, t^2, t^3) : t in k}, the three
+    tasks (affine variety of dimension 1; generators for I(Y); A(Y) isomorphic to
+    a polynomial ring in one variable), and the closing sentence defining the
+    parametric representation. No difference was found and no repair was needed;
+    the exercise carries no star. What was not checked: the solution was read only
+    for consistency with the statement, not re-derived.
 ---
 
 ::: {.problem}
