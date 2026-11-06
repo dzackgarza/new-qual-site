@@ -57,7 +57,7 @@ Compute $\pi_k(X)$ for $X = \bigvee_{j=1}^n S^k$ ($k > 1$):
 Since $k > 1$, the space $X$ is $(k-1)$-connected: $\pi_1(X) = \cdots = \pi_{k-1}(X) = 0$.
 
 ::: pf-proof
-Seifert–van Kampen theorem and cellular approximation for $k$-dimensional CW complexes.
+Every map $S^i\to X$ with $i<k$ is homotopic to a cellular map by the cellular approximation theorem (Theorem 4.8, p. 349), and a cellular map $S^i\to X$ has image in the $i$-skeleton of $X$, which is the single $0$-cell when $i<k$; so $\pi_i(X)=0$ for $0<i<k$. (For $i=1$ the same conclusion follows from van Kampen's theorem, Theorem 1.20, p. 43, since $k>1$ makes each summand $S^k$ simply connected and a wedge of simply connected spaces is simply connected.)
 :::
 
 :::
@@ -69,7 +69,7 @@ $$
 $$
 
 ::: pf-proof
-Hurewicz isomorphism theorem for $(k-1)$-connected spaces and homology of wedge sums.
+Theorem 4.32 (p. 366), the Hurewicz theorem, applies because $X$ is $(k-1)$-connected with $k\ge2$ and gives $\pi_k(X)\cong H_k(X;\ZZ)$; and $H_k(\bigvee_j S^k)\cong\bigoplus_j H_k(S^k)\cong\ZZ^n$ since the $k$-spheres are the $k$-cells of $X$ and cellular homology is computed by the cellular chain complex (Theorem 2.35, p. 139).
 :::
 
 :::
@@ -78,7 +78,7 @@ Hurewicz isomorphism theorem for $(k-1)$-connected spaces and homology of wedge 
 Let $\iota_j: S^k \hookrightarrow X$ denote the inclusion of the $j$-th sphere summand; their homotopy classes $\{[\iota_1], \dots, [\iota_n]\}$ form a standard $\ZZ$-basis for $\pi_k(X)$.
 
 ::: pf-proof
-generators of the homology of the wedge sum.
+Each $\iota_j$ is a cellular cycle generating the $j$-th summand $H_k(S^k)\cong\ZZ$ of $H_k(X)$, and the Hurewicz isomorphism of Theorem 4.32 (p. 366) is natural, so their classes form a $\ZZ$-basis of $\pi_k(X)$.
 :::
 
 :::
@@ -96,7 +96,7 @@ Characterize the monoid of based homotopy classes $[X, X]_*$:
 By the universal property of the wedge sum, a based map $f: X \to X$ is determined up to based homotopy by its restrictions $f \circ \iota_j: S^k \to X$ for $j = 1, \dots, n$.
 
 ::: pf-proof
-$[A \vee B, X]_* \cong [A, X]_* \times [B, X]_*$.
+A based map out of a wedge is determined by the restrictions to the summands, bijectively, because a map on the quotient $\bigvee_j S^k=(S^k\sqcup\cdots\sqcup S^k)/{\sim}$ is exactly a compatible family of maps on the summands (the universal property of the quotient, the basepoints being identified).
 :::
 
 :::
@@ -105,7 +105,7 @@ $[A \vee B, X]_* \cong [A, X]_* \times [B, X]_*$.
 Each restriction $[f \circ \iota_j] \in \pi_k(X) \cong \ZZ^n$.
 
 ::: pf-proof
-definition of the $k$-th homotopy group.
+The composite $f\circ\iota_j:S^k\to X$ is a based map, so its class lies in $\pi_k(X)=[S^k,X]_*$ by definition of the $k$-th homotopy group, and it is computed through the identification of $\pi_k(X)$ with $\operatorname{Hom}(\ZZ^n,\ZZ^n)$ above.
 :::
 
 :::
@@ -114,7 +114,7 @@ definition of the $k$-th homotopy group.
 Thus $[X, X]_* \cong \prod_{j=1}^n \pi_k(X) \cong M_n(\ZZ)$, where $f$ corresponds to the matrix $M(f) \in M_n(\ZZ)$ whose $j$-th column is the coordinate vector of $f_*([\iota_j])$ in the basis $\{[\iota_1], \dots, [\iota_n]\}$.
 
 ::: pf-proof
-column-by-column representation of linear maps on $\ZZ^n$.
+$\prod_{j=1}^n\pi_k(X)=\operatorname{Hom}(\ZZ^n,\ZZ^n)$: a homomorphism out of the free group $\ZZ^n$ is determined by the images of the $n$ basis elements, which are the columns of $M(f)$.
 :::
 
 :::
@@ -159,7 +159,7 @@ Naturality of the Hurewicz homomorphism turns $f_*$ on $\pi_k(X)$ into $f_*$ on 
 The group homomorphism $f_*: \ZZ^n \to \ZZ^n$ is an isomorphism if and only if its representation matrix $M(f)$ is invertible over $\ZZ$, which means $M(f) \in \operatorname{GL}_n(\ZZ)$ (i.e. $\det M(f) = \pm 1$).
 
 ::: pf-proof
-invertible $\ZZ$-linear endomorphisms of $\ZZ^n$ form the group $\operatorname{GL}_n(\ZZ)$.
+A $\ZZ$-linear endomorphism of $\ZZ^n$ is an isomorphism exactly when its matrix has a two-sided inverse over $\ZZ$; such a matrix has $\det=\pm1$ by multiplicativity of the determinant and conversely an integer matrix with $\det=\pm1$ has the integer inverse $(\det M)^{-1}\operatorname{adj}(M)$. This is $\operatorname{GL}_n(\ZZ)$ as in Hatcher's hint, the automorphism group of $\pi_k(X)$.
 :::
 
 :::
