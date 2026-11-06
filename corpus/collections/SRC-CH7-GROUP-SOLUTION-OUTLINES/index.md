@@ -57,7 +57,9 @@ source:
     - id: P-CH7-60
       comment: Exercise 60
     - id: P-CH7-65
-      comment: Exercise 65
+      comment: Exercise 49 (printed as exercise 65 when the card was created; the
+        fewer-than-100-elements exercise is 49 in Gallian 7e, whose chapter 7
+        ends at 50)
   date: {kind: year, year: 2016}
 ---
 
