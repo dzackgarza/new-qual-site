@@ -22,6 +22,20 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.3,
+    exercise 8, book page 267, read from the page image: "No finite field K is
+    algebraically closed. [Hint: If K = {a_0, ..., a_n} consider
+    a_1 + (x - a_0)(x - a_1)···(x - a_n) ∈ K[x], where a_1 ≠ 0.]" The card keeps
+    the printed hint and the printed condition a_1 ≠ 0; the checked-in extraction
+    renders the subscript as a_i, and the page image shows a_1, so the card is
+    right and the extraction is not. The proof was checked: the polynomial has
+    degree n + 1 > 0 because adding the constant does not touch the leading term,
+    and f(a_j) = a_1 ≠ 0 at every element of K because the factor x - a_j
+    vanishes. Complete; no defect.
 ---
 
 ::: {.problem}
