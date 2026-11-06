@@ -20,11 +20,28 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry, §I.2 Exercise 2.1 (scan page
+    26 of the retained PDF). What was checked: the printed statement of the
+    homogeneous Nullstellensatz — homogeneous ideal a in S, homogeneous f of
+    degree > 0 vanishing on Z(a) in P^n, conclusion f^q in a for some q > 0 —
+    against the card, which agrees, and the card's explicit hypothesis that k
+    is algebraically closed together with S = k[x_0,...,x_n], which is the
+    standing convention of the chapter rather than a new condition. The book
+    also prints a bracketed hint pointing at the affine (n+1)-space and at the
+    usual Nullstellensatz (1.3A), which the card had dropped; restored in the
+    statement as printed. What was not checked: the solution was read only for
+    consistency with the statement, not re-derived.
 ---
 
 ::: {.problem}
 Let $k$ be algebraically closed and let $S\coloneqq k[x_0,\ldots,x_n]$.
 Prove the **homogeneous Nullstellensatz**: if $\mfa \subseteq S$ is a homogeneous ideal and $f \in S$ is a homogeneous polynomial with $\deg f > 0$ such that $f(P) = 0$ for all $P \in Z(\mfa)$ in $\PP^n$, then $f^q \in \mfa$ for some $q > 0$.
+
+[Hint: interpret the problem in terms of the affine $(n+1)$-space whose affine coordinate ring is $S$, and use the usual Nullstellensatz (1.3A).]
 :::
 
 ::: {.hint}
