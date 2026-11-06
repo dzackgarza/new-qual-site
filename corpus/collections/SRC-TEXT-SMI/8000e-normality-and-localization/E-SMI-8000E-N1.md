@@ -24,6 +24,17 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Reduced an integral fraction a/b to coprime terms, cleared a monic integral equation, and used unique factorization to force b to be a unit."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 6, "Further properties
+    of ufd's" Exercise 1: "Any ufd is normal. [hint: look at the proof of the
+    'rational root' theorem from precalculus.]" The card carries out exactly the
+    rational-root argument and it is correct: a/b in lowest terms satisfying a
+    monic equation gives b | a^n, and a prime divisor of b would then divide a. No
+    defect.
+---
 ---
 
 ::: {.exercise}
