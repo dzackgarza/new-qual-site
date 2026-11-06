@@ -15,6 +15,19 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith Math 8000 packet 8000e.pdf page 1,
+    abelian-groups problem 1: "prove: if A-->B-->C-->0 is an exact sequence of
+    abelian groups, and if A and C are finitely generated, then so is B. [hint:
+    use the images of some generators of A, and some choice of preimages of some
+    generators of C.]" The card states exactly this with the hint. The proof was
+    checked and is the hint carried out: surjectivity of beta supplies b_j with
+    beta(b_j) = c_j, and for any b the difference b - sum n_j b_j lies in ker beta
+    = im alpha, so the images of the generators of A together with the chosen
+    preimages generate B. Complete; no defect.
 ---
 
 ::: {.exercise}
