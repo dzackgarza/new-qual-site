@@ -29,7 +29,7 @@ Show that the map $[X, B\operatorname{Aut}(G)] \to \mathcal{B}(X; G)$, $[f] \map
 :::
 
 ::: {.solution}
-Regard $\operatorname{Aut}(G)$ as a discrete group. Then
+Regard $\Gamma:=\operatorname{Aut}(G)$ as a discrete group and take $B\Gamma$ to be a $K(\Gamma,1)$; by Theorem 1B.8 (p. 90) its homotopy type is determined by $\Gamma$. Then
 $$
 B\operatorname{Aut}(G)=K(\operatorname{Aut}(G),1),
 $$
@@ -47,22 +47,22 @@ defines the bundle
 $$
 \widetilde X\times_{\pi_1(X)}G\longrightarrow X,
 $$
-where the deck group acts on $G$ through $\rho$. These two constructions are inverse up to bundle isomorphism. Thus
+where the deck group acts on $G$ through $\rho$. These two constructions are inverse. Indeed, the dictionary is stated in §3.H (p. 331): covering spaces that are bundles of groups with fiber $G$ are equivalent to actions of $\pi_1(X)$ on $G$ by automorphisms of $G$, that is, to homomorphisms $\pi_1(X)\to\operatorname{Aut}(G)$; it rests on the classification of covering spaces of §1.3 (Theorem 1.38, p. 67; the permutation description, pp. 68-70). An isomorphism of bundles of groups over $X$ between $\widetilde X\times_\rho G$ and $\widetilde X\times_{\rho'}G$ is a $\pi_1(X)$-equivariant family of group automorphisms of the fiber, i.e. an element $c\in\operatorname{Aut}(G)$ with $c\,\rho(\gamma)=\rho'(\gamma)\,c$ for all $\gamma$, so $\rho'=c\rho c^{-1}$: the ambiguity is conjugation *in the group $\operatorname{Aut}(G)$*, by its own elements. Thus
 $$
 \mathcal B(X;G)
 \cong
-\operatorname{Hom}(\pi_1X,\operatorname{Aut}(G))/\text{conjugacy}.
+\operatorname{Hom}(\pi_1X,\operatorname{Aut}(G))/\text{conjugacy in }\operatorname{Aut}(G).
 $$
 
-Since $B\operatorname{Aut}(G)$ is a $K(\operatorname{Aut}(G),1)$ and $X$ is a CW complex, the standard classification of maps into a $K(\pi,1)$ gives
+Since $B\operatorname{Aut}(G)$ is a $K(\Gamma,1)$ with $\Gamma=\operatorname{Aut}(G)$ and $X$ is a connected CW complex, Proposition 1B.9 (p. 90) gives the classification of maps into such a space: every homomorphism $\pi_1(X)\to\Gamma$ is induced by a map $X\to B\Gamma$, uniquely up to homotopy relative to the basepoint. Dropping the basepoint replaces "unique up to based homotopy" by "unique up to homotopy and conjugation in $\Gamma$", because transporting the image of the basepoint along a path in $B\Gamma$ conjugates $f_*$ by the class of that path (Proposition 1B.9, p. 90; $\Gamma$ is not assumed abelian). Hence
 $$
 [X,B\operatorname{Aut}(G)]
 \cong
-\operatorname{Hom}(\pi_1X,\operatorname{Aut}(G))/\text{conjugacy}.
+\operatorname{Hom}(\pi_1X,\operatorname{Aut}(G))/\text{conjugacy in }\operatorname{Aut}(G).
 $$
-Under this correspondence, a map $f:X\to B\operatorname{Aut}(G)$ corresponds to the monodromy homomorphism $f_*$. The pullback $f^*E_0$ has exactly this monodromy, so the displayed identification is precisely the map
+Under this correspondence, a map $f:X\to B\operatorname{Aut}(G)$ corresponds to the monodromy homomorphism $f_*$: pulling back commutes with monodromy, so the bundle $f^*E_0$ has monodromy $\mathrm{id}_\Gamma\circ f_*=f_*$ and these are the same quotient set on the two sides. Since the displayed identification is precisely the map
 $$
-[f]\longmapsto f^*(E_0).
+[f]\longmapsto f^*(E_0),
 $$
-Hence it is a bijection. For disconnected $X$, apply the same argument independently on each component.
+it is a bijection. For disconnected $X$, apply the same argument independently on each component: both $\mathcal B(X;G)$ and $[X,B\operatorname{Aut}(G)]$ split as products over the components of $X$.
 :::
