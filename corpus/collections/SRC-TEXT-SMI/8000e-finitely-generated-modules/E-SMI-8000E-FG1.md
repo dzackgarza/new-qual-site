@@ -23,6 +23,18 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Classified the 2- and 3-primary parts by partitions of 3 and 4, then translated the same partition pairs into k[t]-primary modules and Jordan block decompositions, giving 3·5=15 classes in each part."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 3, "Finitely generated
+    abelian grps and k[X] modules" #1(a),(b),(c). All three counts checked: 648 =
+    2^3·3^4 gives p(3)·p(4) = 3·5 = 15 abelian groups; the module condition
+    dim V(2) = 3 and dim V(3) = 4 with 3 + 4 = 7 forces V = V(2) ⊕ V(3) because
+    the two generalized eigenspaces meet in 0, giving 15 modules; and a Jordan
+    matrix over Q with characteristic polynomial (t-2)^3(t-3)^4 is a pair of
+    partitions of 3 and 4, again 15 classes. No defect.
+---
 ---
 
 ::: {.exercise}
