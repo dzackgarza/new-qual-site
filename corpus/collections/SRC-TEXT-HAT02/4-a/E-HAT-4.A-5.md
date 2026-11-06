@@ -44,7 +44,7 @@ and let
 $$
 \phi_n:\pi_1(X_n)=F_2^n\longrightarrow\ZZ
 $$
-send each of the $2n$ standard generators to $1$. Let
+send each of the $2n$ standard generators to $1$, exactly as does $f_*$ for $f:T^{2n}\to S^1$, $f(\theta_1,\dots,\theta_{2n})=\theta_1+\cdots+\theta_{2n}$ (p. 423). Let
 $$
 \widetilde X_n\to X_n
 $$
@@ -52,14 +52,15 @@ be the corresponding infinite cyclic cover, with deck generator $T$. Hatcher's l
 $$
 Z=X_3\cap f^{-1}(0)
 $$
-lifts homeomorphically to a subcomplex of $\widetilde X_3$, and the construction preceding the exercise shows that $\widetilde X_3$ is homotopy equivalent to a complex obtained from $Z$ by attaching only 3-cells. Consequently
+lifts homeomorphically to a subcomplex of $\widetilde X_3$ (p. 423, the subspace $\widetilde f^{-1}(0)\cap\widetilde X$), and assertion (∗) on p. 423, proved on pp. 424-425, shows that $\widetilde X_3$ is homotopy equivalent to a complex $Y$ obtained from $Z$ by attaching only $3$-cells. Consequently
 $$
-\pi_1(Z)\cong\pi_1(\widetilde X_3).
+\pi_1(Z)\cong\pi_1(\widetilde X_3),
 $$
+attaching cells of dimension $3$ leaving $\pi_1$ unchanged (van Kampen, Theorem 1.20, p. 43).
 
 ### (a) Homology of $Z$ for $n=3$
 
-In Hatcher's octahedral model of $Z$, the six vertices are all identified to one vertex. Each of the twelve edges of the octahedron occurs with two choices of normal direction, and opposite directed edges are identified, leaving twelve 1-cells. Each of the eight triangular faces occurs with two normal directions, giving sixteen 2-cells. Thus
+In Hatcher's octahedral model of $Z$ (p. 426: the regular octahedron inscribed in the cube with vertices $(\pm1,\pm1,\pm1)$, each triangular face taken twice, once for each normal direction, each edge likewise doubled and opposite directed edges identified), the six vertices are all identified to one vertex. Each of the twelve edges of the octahedron occurs with two choices of normal direction, and opposite directed edges are identified, leaving twelve 1-cells. Each of the eight triangular faces occurs with two normal directions, giving sixteen 2-cells. Thus
 $$
 C_0(Z)\cong\ZZ,
 \qquad
@@ -72,7 +73,7 @@ $$
 \chi(Z)=1-12+16=5.
 $$
 
-We compute $H_1$ from the fundamental group. The presentation obtained in part (c) below for $\pi_1(\widetilde X_3)$ has five generators and only conjugacy/commutator-type relators, hence its abelianization is free abelian of rank five. Therefore
+We compute $H_1$ from the fundamental group. By Theorem 2A.1 (p. 166), $H_1$ of a path-connected space is the abelianization of $\pi_1$; the presentation obtained in part (c) below for $\pi_1(\widetilde X_3)$ has five generators and only conjugacy/commutator-type relators, so every relator becomes trivial in the abelianization, which is therefore free abelian on those five generators. Therefore
 $$
 H_1(Z;\ZZ)\cong\ZZ^5.
 $$
@@ -133,7 +134,7 @@ If
 $$
 H_{n-1}=\langle S\mid R\rangle,
 $$
-then van Kampen applied to the two mapping tori gives
+then van Kampen's theorem (Theorem 1.20, p. 43) applied to the union of the two mapping tori, which meet in the connected subspace $\widetilde X_{n-1}$, gives
 $$
 H_n=
 \left\langle
@@ -196,7 +197,7 @@ $$
 $$
 while $H_2$ has a presentation with finitely many generators.
 
-Finally $\widetilde X_2$ is a 2-dimensional $K(H_2,1)$, and Hatcher's construction gives that
+Finally $\widetilde X_2$ is a 2-dimensional $K(H_2,1)$: $\widetilde X$ is stated on p. 423 to be a subcomplex of a $K(\pi,1)$, and for $n=2$ the complex $\widetilde X_2=\widetilde X$ is $2$-dimensional. Hatcher's construction gives that
 $$
 H_2(\widetilde X_2;\ZZ)
 $$
