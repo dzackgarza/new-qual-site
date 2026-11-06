@@ -18,6 +18,23 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Reviewed against the Lamport standard. What was found: the question asks what
+    a nilpotent matrix is, so its answer is a definition, not a proposition, and
+    a structured proof has nothing to prove — no `pf` block was added, because
+    one here would be invented structure rather than a proof. What was checked:
+    the definition in the solution agrees with the one on the definition card
+    D-GIGM2 (nilpotent element: r^n = 0 for some n >= 1), so the solution adds
+    no second defining occurrence; the least such r is the nilpotency index, and
+    that is a definition rather than a claim; the remark's assertions (minimal
+    polynomial x^r, eigenvalues 0, Jordan blocks J_s(0), and A^n = 0 by
+    Cayley-Hamilton) are standard and are stated as a remark, not as part of the
+    solution. What was not checked: no source solution exists for this card and
+    none was compared; the remark's equivalences were not proved here, since they
+    are outside the solution section.
 ---
 
 ::: {.problem}
