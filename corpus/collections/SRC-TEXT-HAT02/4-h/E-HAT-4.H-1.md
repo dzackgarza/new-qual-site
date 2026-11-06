@@ -46,7 +46,7 @@ be a cofibration, with $A$ and $X$ compact Hausdorff, and let
 $$
 r:Y^X\longrightarrow Y^A
 $$
-be restriction. We use the compact-open topology on mapping spaces.
+be restriction. We use the compact-open topology on mapping spaces, and the characterization of cofibrations as pairs with the homotopy extension property (§0.4, p. 14); a fibration is a map with the homotopy lifting property for all spaces (p. 375).
 
 To verify the homotopy lifting property for $r$, suppose given a space $Z$, a map
 $$
@@ -60,7 +60,7 @@ with
 $$
 g(z,0)=r(f_0(z)).
 $$
-By the exponential law for compact Hausdorff source spaces, these data are adjoint to continuous maps
+By the exponential law for compact Hausdorff source spaces (Proposition A.16, p. 531), these data are adjoint to continuous maps
 $$
 F_0:Z\times X\to Y,
 \qquad
@@ -70,8 +70,9 @@ which agree on $Z\times\{0\}\times A$.
 
 Since $A\hookrightarrow X$ is a cofibration, so is
 $$
-Z\times A\hookrightarrow Z\times X.
+Z\times A\hookrightarrow Z\times X,
 $$
+which is the printed hint; equivalently (§0.4, p. 14) the pair has the homotopy extension property.
 Equivalently, the inclusion
 $$
 (Z\times X\times\{0\})\cup(Z\times A\times I)
