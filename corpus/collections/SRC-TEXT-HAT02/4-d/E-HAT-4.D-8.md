@@ -65,7 +65,11 @@ Let $u\in H^n(D^n,S^{n-1};R)$ be the fiber orientation class. The Thom class of 
 $$
 1\times u\in H^n(B\times D^n,B\times S^{n-1};R).
 $$
-The Thom isomorphism sends
+The Thom isomorphism (Corollary 4D.9, p. 441, whose hypothesis here is that the product disk bundle is orientable, with orientation class $u$)
+$$
+H^i(B;R)\longrightarrow H^{i+n}(E,E';R)
+$$
+sends
 $$
 a\in H^i(B;R)
 $$
