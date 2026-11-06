@@ -22,6 +22,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the simplicial, Lefschetz-trace, or surface argument against the preceding section results.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.C Exercise 9, printed page
+    184; the statement matches word for word. Proof checked: Theorem 2C.5 (p. 182)
+    replaces a finite CW complex by a homotopy equivalent finite simplicial complex;
+    for each N there are only finitely many simplicial complexes with vertex set
+    {1,...,N}, since such a complex is a subset of the finite power set closed under
+    taking nonempty subsets; so there are countably many isomorphism classes, and
+    passing to homotopy types only identifies them. No defect.
+---
 ---
 
 ::: {.problem}
