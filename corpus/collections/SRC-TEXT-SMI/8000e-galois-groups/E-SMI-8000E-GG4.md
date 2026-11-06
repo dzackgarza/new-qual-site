@@ -22,6 +22,24 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Proved the needed prime-congruence input using cyclotomic polynomials, then used the structure theorem, CRT, cyclotomic Galois groups, and Galois correspondence to realize an arbitrary finite abelian group."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 9, items 4)-8) of the
+    prelim list: "Work problems 14, 15, 16, 17, page 557 of DF, then deduce Cor 28,
+    p. 600, that every finite abelian group occurs as the Galois group over Q of
+    some subextension of a cyclotomic extension." The card states exactly this. The
+    four intermediate steps are the standard DF 14-17 and were checked as
+    mathematics: monic integer polynomials have infinitely many prime divisors by
+    the F(N + aQt) trick; p | Phi_m(a) with p not dividing m forces order exactly m,
+    hence m | p - 1, using that x^m - 1 is separable mod such p; so infinitely many
+    primes are 1 mod m; and choosing distinct p_i = 1 mod n_i with cyclic unit
+    groups, the fixed fields of the order-n_i subgroups give the C_{n_i} factors.
+    The DF numbering itself cannot be checked in this repository, which retains no
+    copy of Dummit and Foote; the statements the card proves are the ones that
+    argument needs. No defect.
+---
 ---
 
 ::: {.exercise}
