@@ -19,6 +19,23 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Reviewed against the Lamport standard. What was found: both questions ask for a
+    statement — "what is a semisimple algebra" and "state the structure theorem" —
+    so neither is a proof obligation and no pf block was added; a structured proof
+    here would be invented structure. What was checked: the definition given (A_A
+    semisimple, equivalently every left A-module semisimple, equivalently every
+    short exact sequence of left A-modules splits) is the standard one; the
+    Artin-Wedderburn statement as given (semisimple iff a finite product of matrix
+    rings over division rings) is correct, including that the factors are
+    determined up to permutation and isomorphism; and the specialisation over an
+    algebraically closed field (each division ring finite dimensional over an
+    algebraically closed k is k itself) is correct. What was not checked: no
+    proof of the theorem was written or reviewed here, since the card asks only for
+    its statement, and no source solution is retained for this card.
 ---
 
 ::: {.problem}
