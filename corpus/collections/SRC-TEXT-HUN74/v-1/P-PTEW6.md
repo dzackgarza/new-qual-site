@@ -20,6 +20,21 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: Hungerford V.1.14(b) takes a complex (nonreal) cube root of 1; the statement omitted nonreal.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.1,
+    exercise 14, book page 241: "(a) If F = Q(√2, √3), find [F : Q] and a basis of
+    F over Q. (b) Do the same for F = Q(i, √3, ω), where i ∈ C, i^2 = -1, and ω
+    is a complex (nonreal) cube root of 1." The card states both parts and now
+    says nonreal, matching the printed "(nonreal)". The computations were
+    checked: √3 ∉ Q(√2) because a + b√2 squaring to 3 forces ab = 0 and either
+    alternative contradicts the irrationality of √3 or of √6, so [F : Q] = 4 with
+    basis 1, √2, √3, √6; and the nonreal cube roots of 1 are (-1 ± i√3)/2, so
+    Q(i, √3, ζ_3) = Q(i, √3), where Q(i) ∩ R = Q makes √3 of degree 2 over Q(i)
+    and gives degree 4 with basis 1, i, √3, i√3. Complete; no defect.
+---
 ---
 
 ::: {.problem}
