@@ -22,6 +22,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the local van Kampen injections and the free-group bonding maps for the horned constructions.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.B Exercise 6, printed page
+    176; the statement matches word for word. Checked: the construction localises the
+    Alexander horned sphere (Example 2B.2, p. 170) in two disjoint small balls, one on
+    each side of a round sphere and each meeting it in a tame disk, so each
+    complementary domain acquires a copy of the wild fundamental group and neither is
+    simply connected. No defect.
+---
 ---
 
 ::: {.problem}
