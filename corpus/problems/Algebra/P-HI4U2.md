@@ -17,6 +17,24 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: 'The source asks "What are the following objects?" without declaring $K$, $x$ or $\alpha$; the statement declares them.'
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Reviewed against the Lamport standard. What was found: the question asks what
+    four objects are, so it is a description request, not a proof obligation, and no
+    pf block was added; the record is this note. What was checked: the four answers
+    (K[x] the polynomial ring; K(x) its fraction field of rational functions; K[alpha]
+    the smallest subring of the ambient field containing K and alpha; K(alpha) the
+    smallest subfield), and the three further claims the solution makes, which were
+    verified by reading against a fresh derivation: evaluation at alpha is the
+    unique K-algebra map K[x] -> K[alpha] and is surjective by the definition of
+    K[alpha] as the image; its injectivity when alpha is transcendental gives
+    K[alpha] = K[x] and hence K(alpha) = K(x); and when alpha is algebraic with
+    minimal polynomial m the kernel is (m), irreducible, so K[x]/(m) is a field and
+    K[alpha] = K(alpha). All correct. What was not checked: no source solution is
+    retained for this card, so no source comparison was made; the statements are not
+    certified by a formal proof here, the card asking for descriptions.
 ---
 
 ::: {.problem}
