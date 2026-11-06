@@ -22,6 +22,16 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Stated Zorn's lemma and applied it to the poset of proper ideals containing (x), verifying chain unions are proper upper bounds and that maximality in this poset is maximal-ideal maximality."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 10, Fall 2006 midterm
+    1(a),(b). Zorn's lemma is stated correctly, and the proof is right: a nonunit x
+    generates a proper ideal, the poset of proper ideals containing (x) is nonempty,
+    a chain union is a proper ideal because 1 in the union puts 1 in a member, and a
+    maximal element of the poset is a maximal ideal containing x. No defect.
+---
 ---
 
 ::: {.exercise}
