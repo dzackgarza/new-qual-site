@@ -19,6 +19,30 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry (1977), Chapter V, section 2,
+    exercise 2.10, printed page 385 (PDF page 400 of
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, the checked-in
+    extraction). The printed exercise reads: "For any n > e >= 0, let X be the
+    rational scroll of degree d = 2n - e in P^{d+1} given by (2.19). If
+    n >= 2e - 2, show that X contains a nonsingular curve Y of genus g = d + 2
+    which is a canonical curve in this embedding. Conclude that for every
+    g >= 4, there exists a nonhyperelliptic curve of genus g which has a g_3^1."
+    The card states exactly this. The proof was read and checked, and the two
+    numerical claims were recomputed: with H = C_0 + nf, H^2 = 2n - e = d and
+    K.H = e - 2n - 2, so a member of |H - K_X| has degree
+    H.(H - K_X) = 4n - 2e + 2 = 2g - 2 and genus g = d + 2; adjunction gives
+    K_Y = (K_X + Y)|_Y = H|_Y, so Y is canonical in the embedding. Base-point
+    freeness comes from pi_*O(aC_0 + bf) = sum_{i=0}^{a} O(b - ie) with a = 3
+    and b - 3e = n - 2e + 2 >= 0, which is exactly the hypothesis
+    n >= 2e - 2; the q = 0 case uses D.C_0 = 3(C_0 + ef).C_0 = 0 and Bertini off
+    the contracted section. No retained solution set in the repository covers
+    this exercise (Egbert's set, the only one that mentions scrolls, does not
+    treat it), so the proof is derived and says so; the hyperplane class and
+    K_X are taken from [[FE-TORHIRZ]].
 ---
 
 ::: {.problem}
