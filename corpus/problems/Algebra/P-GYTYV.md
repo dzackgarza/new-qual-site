@@ -22,6 +22,24 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: Source did not say what G and H are; the statement now declares G a group and H a subgroup of G.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section II.4,
+    exercise 4, book page 92: "Let H be a subgroup of G. The centralizer of H is
+    the set C_G(H) = {g ∈ G | hg = gh for all h ∈ H}. Show that C_G(H) is a
+    subgroup of N_G(H)." The statement agrees with the printed text, including
+    the order of the factors hg = gh, and the hypotheses G a group, H ≤ G are
+    exactly the book's. The proof was checked: an element of C_G(H) fixes H
+    pointwise under conjugation, so it lies in N_G(H); N_G(H) is a subgroup by
+    the usual two-step computation ((g1g2)H(g1g2)^{-1} = H and g^{-1}Hg = H
+    obtained by conjugating gHg^{-1} = H by g^{-1}); C_G(H) is a subgroup by
+    (g1g2)h = h(g1g2) and by multiplying gh = hg on both sides by g^{-1};
+    membership in N_G(H) plus containment gives the conclusion. Complete; no
+    defect. The card claims nothing about normality of C_G(H) in G, which is
+    false in general.
+---
 ---
 
 ::: {.problem}
