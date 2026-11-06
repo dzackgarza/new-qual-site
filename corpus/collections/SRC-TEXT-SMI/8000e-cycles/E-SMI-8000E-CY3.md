@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 8, problem 3, with its
+    printed hint. Correct under the sheet's right-to-left composition: the cycle
+    decomposition, and (a_1 a_k)(a_1 a_2 ... a_{k-1}) = (a_1 a_2 ... a_k), which
+    unfolds to (a_1 a_k)(a_1 a_{k-1}) ... (a_1 a_2). No defect.
 ---
 
 ::: {.exercise}
