@@ -23,6 +23,22 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section II.7,
+    exercise 10, book page 107: "S_n is solvable for n ≤ 4, but S_3 and S_4 are
+    not nilpotent." The card states exactly this. The proof was checked: S_1 and
+    S_2 are abelian; S_3 ⊵ A_3 ⊵ {e} has abelian factors Z_2 and Z_3; the Klein
+    four group V of S_4 is normal because conjugation preserves cycle type, lies
+    in A_4, and S_4 ⊵ A_4 ⊵ V ⊵ {e} has abelian factors Z_2, Z_3, Z_2^2; the
+    centers of S_3 and S_4 are trivial, computed from the centralizer of a
+    transposition and from the relabelling action on transpositions; and a
+    nontrivial nilpotent group has nontrivial center, since a trivial Z(G) keeps
+    every term of the ascending central series trivial. Complete; no defect. The
+    card does not classify nilpotent symmetric groups beyond these two, and the
+    exercise does not ask it to.
 ---
 
 ::: {.problem}
