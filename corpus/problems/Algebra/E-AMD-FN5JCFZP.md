@@ -49,7 +49,7 @@ Let $R$ be a commutative ring with $1$, let $A\in\Mat_n(R)$ with $n\geq1$, and l
 $p$ has degree $n$ and leading coefficient $c_n=1$, and $\operatorname{adj}(t\Id-A)$ is a matrix over $R$ whose entries are polynomials in $t$ of degree at most $n-1$; hence $\operatorname{adj}(t\Id-A)=B_0+B_1t+\cdots+B_{n-1}t^{n-1}$ with $B_k\in\Mat_n(R)$.
 
 ::: pf-proof
-$t\Id-A$ has degree-one entries on the diagonal and constant entries elsewhere, so its determinant is a sum of products of $n$ entries, exactly one of which contributes the $t$ from each row; the term of highest degree is the product of the $n$ diagonal entries, namely $t^n$, so $p$ is monic of degree $n$ and $c_n=1$. The $(i,j)$ entry of the adjugate is $(-1)^{i+j}$ times the determinant of an $(n-1)\times(n-1)$ submatrix of $t\Id-A$, hence a polynomial of degree at most $n-1$; collecting the coefficients of $t^k$ across all entries gives the matrices $B_k$.
+The determinant is the Leibniz sum over permutations, each product in that sum taking one entry from each row. The variable $t$ occurs only in the diagonal entries $t-a_{ii}$. The identity permutation gives the product $\prod_i(t-a_{ii})$, which is monic of degree $n$; every other permutation fixes at most $n-2$ indices — a permutation with $n-1$ fixed points is the identity — so its product involves at most $n-2$ diagonal entries and has degree at most $n-2$. No other term can cancel the $t^n$ of the identity's product, so $p$ is monic of degree $n$ and $c_n=1$. The $(i,j)$ entry of the adjugate is $(-1)^{i+j}$ times the determinant of an $(n-1)\times(n-1)$ submatrix of $t\Id-A$, hence a polynomial of degree at most $n-1$; collecting the coefficients of $t^k$ across all entries gives the matrices $B_k$.
 :::
 
 :::
@@ -80,7 +80,7 @@ $c_0\Id+c_1A+\cdots+c_nA^n=0$.
 ::: pf-proof
 Multiply the equations of step [](#coefficients){.pf-ref} on the left by $\Id,A,A^2,\ldots,A^n$ respectively and add:
 $$-AB_0+\bigl(AB_0-A^2B_1\bigr)+\bigl(A^2B_1-A^3B_2\bigr)+\cdots+\bigl(A^{n-1}B_{n-2}-A^nB_{n-1}\bigr)+A^nB_{n-1}=0,$$
-where the right-hand sides sum to $c_0\Id+c_1A+\cdots+c_nA^n$. In the left-hand side each $A^{k}B_{k-1}$ occurs once with a plus sign and once with a minus sign, except the first term $-AB_0$ and the last term $A^nB_{n-1}$, which have no partner; so the sum telescopes to $0$. The two sides being equal, $c_0\Id+c_1A+\cdots+c_nA^n=0$.
+where the right-hand sides sum to $c_0\Id+c_1A+\cdots+c_nA^n$. Every term on the left has a partner: $-AB_0$ cancels against $+AB_0$ in the bracket for $k=1$, and for $2\leq k\leq n-1$ the term $-A^{k}B_{k-1}$ in the bracket for $k$ cancels against $+A^{k}B_{k-1}$ in the bracket for $k-1$, while the final $+A^nB_{n-1}$ cancels against $-A^nB_{n-1}$ in the bracket for $k=n-1$. So the left-hand side is $0$. The two sides being equal, $c_0\Id+c_1A+\cdots+c_nA^n=0$.
 :::
 
 :::

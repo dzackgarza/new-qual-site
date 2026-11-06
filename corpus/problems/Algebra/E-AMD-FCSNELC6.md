@@ -71,7 +71,7 @@ using step [](#subfield){.pf-ref} at both ends. Hence $d$ divides $n$.
 If $d\mid n$ then $\FF_{p^d}\subseteq\FF_{p^n}$.
 
 ::: pf-proof
-Write $n=dk$. Let $x\in\FF_{p^d}$, so $x^{p^d}=x$. Applying the map $y\mapsto y^{p^d}$ — which is the $k$-fold iterate of the $p^d$-power Frobenius — a total of $k$ times to the equality $x^{p^d}=x$ gives $x^{p^{dk}}=x$, that is $x^{p^n}=x$, so $x\in K_n=\FF_{p^n}$ by the definition of $K_n$. Hence every element of $\FF_{p^d}$ lies in $\FF_{p^n}$.
+Write $n=dk$. Let $x\in\FF_{p^d}$, so $x^{p^d}=x$. Applying the map $y\mapsto y^{p^d}$ a total of $k$ times to the equality $x^{p^d}=x$ gives $x^{p^{dk}}=x$, that is $x^{p^n}=x$, so $x\in K_n=\FF_{p^n}$ by the definition of $K_n$. Hence every element of $\FF_{p^d}$ lies in $\FF_{p^n}$.
 :::
 
 :::
