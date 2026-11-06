@@ -22,6 +22,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section II.5,
+    exercise 9, book page 96: "If |G| = p^n q, with p > q primes, then G
+    contains a unique normal subgroup of index q." The card states exactly this,
+    with n ≥ 0 allowed as the book allows. The proof was checked: n_p divides q
+    and is ≡ 1 mod p, so n_p is 1 or q, and n_p = q would force p | q - 1 with
+    0 < q - 1 < p, impossible; a unique Sylow subgroup is normal and has index
+    p^n q/p^n = q; any subgroup of index q has order p^n and so is that Sylow
+    subgroup, giving uniqueness among all subgroups of index q, not only the
+    normal ones. Complete; no defect.
 ---
 
 ::: {.problem}
