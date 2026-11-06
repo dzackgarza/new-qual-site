@@ -23,6 +23,21 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section II.8,
+    exercise 3, book page 111: "If N is a simple normal subgroup of a group G and
+    G/N has a composition series, then G has a composition series." The card
+    states exactly this. The proof was checked: the preimages G_i of the terms of
+    a composition series of G/N form a normal series from G to N, with
+    G_i/G_{i+1} ≅ Ḡ_i/Ḡ_{i+1} simple by the third isomorphism theorem; the terms
+    are distinct because the Ḡ_i are; and appending {e} adds the simple factor
+    N. The last step is legitimate only because Hungerford's Definition 8.6
+    excludes the trivial group from being simple, so N ≠ {e} and the final
+    inclusion is strict; the card's use of the hypothesis therefore matches the
+    book's convention. Complete; no defect.
 ---
 
 ::: {.problem}
