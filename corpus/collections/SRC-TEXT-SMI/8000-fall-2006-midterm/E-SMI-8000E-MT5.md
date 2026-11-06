@@ -22,6 +22,17 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Proved Cayley--Hamilton from the adjugate identity by comparing polynomial-matrix coefficients and telescoping, avoiding the invalid direct substitution of A into a matrix polynomial with non-scalar coefficients."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 11, midterm 5. The theorem
+    is stated for T in End_F(V) of a finite-dimensional F-space, and the proof is the
+    adjugate argument over M_n(F[x]): coefficients of (xI - A)adj(xI - A) = chi_A(x)I
+    are compared, the recurrence is solved for B_0, and -AB_0 = c_0 I telescopes to
+    chi_A(A) = 0. Correct, and it avoids substituting A into a matrix with non-scalar
+    coefficients. No defect.
+---
 ---
 
 ::: {.exercise}
