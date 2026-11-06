@@ -23,6 +23,17 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Proved both directions using finite generation of submodules, included the finite-generation extension lemma requested in brackets, and specialized to 0→N→M→M/N→0."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 5, problem 3, all three
+    sentences including the bracketed "if A, C are finitely generated, prove B is
+    too" and the concluding submodule/quotient statement. All checked: submodules
+    of A are submodules of B; submodules of C pull back and their generators map
+    onto generators; and for the converse, N ∩ A together with lifts of generators
+    of q(N) generate N. No defect.
+---
 ---
 
 ::: {.exercise}
