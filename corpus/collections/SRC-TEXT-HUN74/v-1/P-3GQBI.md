@@ -23,6 +23,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.1,
+    exercise 16, book page 241: "In C, Q(i) and Q(√2) are isomorphic as vector
+    spaces, but not as fields." The card states exactly this, with the base field
+    Q made explicit. The proof was checked: X^2 + 1 and X^2 - 2 are irreducible
+    over Q, so both extensions have degree 2 with the displayed power bases; the
+    basis-to-basis map a + bi ↦ a + b√2 is a Q-linear isomorphism; and a field
+    isomorphism would carry a square root of -1 to a square root of -1, which
+    Q(√2) ⊂ R does not contain. Complete; no defect.
 ---
 
 ::: {.problem}
