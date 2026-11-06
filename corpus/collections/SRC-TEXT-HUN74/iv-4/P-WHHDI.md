@@ -25,6 +25,22 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: Hungerford IV.4.9 cites Theorem 4.12; the statement now defines theta_A and f-bar on the card.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section IV.4,
+    exercise 9, book page 206, whose diagram was read from the page image: the
+    square has A --θ_A--> A** across the top, A --f--> B down the left,
+    A** --f*--> B** down the right, and B --θ_B--> B** across the bottom, with
+    the surrounding text "For any homomorphism f: A → B of left R-modules the
+    diagram is commutative, where θ_A, θ_B are as in Theorem 4.12 and f* is the
+    map induced on A** = Hom_R(Hom_R(A,R),R) by the map f̄: Hom_R(B,R) →
+    Hom_R(A,R)." The card's tikzcd reproduces that square with the same labels,
+    and its definitions of θ and f̄ are the book's. The proof was checked: both
+    composites send a ∈ A to the functional g ↦ g(f(a)) on B*, so the square
+    commutes. Complete; no defect.
+---
 ---
 
 ::: {.problem}
