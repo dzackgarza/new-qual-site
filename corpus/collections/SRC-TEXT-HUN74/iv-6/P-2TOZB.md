@@ -23,6 +23,20 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section IV.6,
+    exercise 2, book page 226, read from the page image: "Every free module over
+    an arbitrary integral domain with identity is torsion-free. The converse is
+    false (Exercise II.1.10)." The card states both halves and replaces the
+    book's cross-reference by its content, Q as a torsion-free non-free Z-module,
+    which is exactly what II.1.10(b) establishes. The proof was checked: a
+    vanishing multiple of a finite basis expansion has all coefficients zero by
+    independence, and a domain has no zero divisors; and Q is divisible, so
+    halving a basis element and comparing basis coordinates in b = Σ 2n_i b_i
+    would make the coefficient of b both 1 and even. Complete; no defect.
 ---
 
 ::: {.problem}
