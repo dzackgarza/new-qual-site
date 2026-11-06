@@ -49,7 +49,7 @@ r_n:M_n\times I\to M_n
 $$
 onto $T_n$, chosen so that $r_{n+1}$ restricts to $r_n$ on $M_n$. Concretely, on the new mapping-cylinder block one only straightens the extra cylinder coordinate; all earlier stages are left unchanged.
 
-Since the finite-stage homotopies are compatible, they assemble on the union
+The infinite iterated mapping cylinder carries the topology of the union of the nested closed subspaces $M_n$, so a map out of it, or out of it times $I$, is continuous as soon as its restrictions to the $M_n\times I$ are (this is the standard criterion for the direct-limit topology used for mapping telescopes in §4.F, p. 455). Since the finite-stage homotopies are compatible, they therefore assemble on the union
 $$
 M(f_1,f_2,\ldots)=\bigcup_nM_n
 $$
