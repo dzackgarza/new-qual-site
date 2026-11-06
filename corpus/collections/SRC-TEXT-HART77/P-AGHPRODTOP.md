@@ -13,6 +13,20 @@ relations:
 - kind: related-to
   target: FE-ISIPR
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry, §I.1 Exercise 1.4 (scan page 22
+    of the retained PDF). What was checked: the printed text against the card's
+    statement — the identification of A^2 with A^1 x A^1 in the natural way and the
+    assertion that the Zariski topology on A^2 is not the product topology of the
+    two Zariski topologies. The card renders the book's "If we identify ..." as an
+    imperative "Identify ...", which states the same thing and changes no
+    mathematics; nothing else differs, and the exercise carries no star. No repair
+    was needed. What was not checked: the solution was read only for consistency
+    with the statement, not re-derived.
 ---
 
 ::: {.problem}
