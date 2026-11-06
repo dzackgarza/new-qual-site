@@ -23,6 +23,26 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section II.2,
+    exercise 12(b), book page 82: "Determine up to isomorphism all abelian
+    groups of order 64; do the same for order 96." The card states exactly this
+    and answers the part it names. Both lists were read to the end and checked
+    against the partitions. Order 64 = 2^6 has p(6) = 11 partitions, and the
+    displayed types are 6, 5+1, 4+2, 4+1+1, 3+3, 3+2+1, 3+1+1+1, 2+2+2,
+    2+2+1+1, 2+1+1+1+1, 1+1+1+1+1+1, in that order and with no repetition:
+    Z_64, Z_32⊕Z_2, Z_16⊕Z_4, Z_16⊕Z_2^2, Z_8^2, Z_8⊕Z_4⊕Z_2, Z_8⊕Z_2^3,
+    Z_4^3, Z_4^2⊕Z_2^2, Z_4⊕Z_2^4, Z_2^6. Order 96 = 2^5·3 has Sylow 3 of
+    order 3, hence Z_3, and p(5) = 7 partitions for the Sylow 2-subgroup, and
+    the displayed seven are 5, 4+1, 3+2, 3+1+1, 2+2+1, 2+1+1+1, 1+1+1+1+1
+    with Z_3 adjoined. Both counts and both lists are right. Distinctness is by
+    uniqueness of the elementary divisors, and completeness by the primary
+    decomposition, so no case is missing. Complete; no defect. Part (a) and
+    part (c) of the same numbered exercise are other cards' business and are
+    not claimed here.
 ---
 
 ::: {.problem}
