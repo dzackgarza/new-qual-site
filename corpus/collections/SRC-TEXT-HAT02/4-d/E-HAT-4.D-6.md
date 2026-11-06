@@ -34,10 +34,11 @@ audit:
 ::: {.problem}
 Show that if $M$ is a manifold of dimension $2n$ for which there exists a fiber bundle $S^1 \to S^{2n+1} \to M$, then $M$ is simply-connected and $H^*(M; \ZZ) \approx H^*(\CP^n; \ZZ)$ as rings.
 Conversely, if $M$ is simply-connected and $H^*(M; \ZZ) \approx H^*(\CP^n; \ZZ)$ as rings, show there is a bundle $S^1 \to E \to M$ where $E \simeq S^{2n+1}$.
+[When $n > 1$ there are examples where $M$ is not homeomorphic to $\CP^n$.]
 :::
 
 ::: {.solution}
-Take $n \ge 1$; for $n = 0$, $M$ is a point in both directions. All cohomology has $\ZZ$ coefficients. For an orientable circle bundle $S^1 \to E \xrightarrow{\pi} M$ with Euler class $e \in H^2(M)$, the Gysin sequence is
+Take $n \ge 1$; for $n = 0$, $M$ is a point in both directions. All cohomology has $\ZZ$ coefficients. For an orientable circle bundle $S^1 \to E \xrightarrow{\pi} M$ with Euler class $e \in H^2(M)$, the Gysin sequence (p. 438) is
 $$\cdots \to H^{j}(M) \xrightarrow{\smile e} H^{j+2}(M) \xrightarrow{\pi^*} H^{j+2}(E) \to H^{j+1}(M) \xrightarrow{\smile e} H^{j+3}(M) \to \cdots.$$
 
 ::: pf
@@ -114,7 +115,7 @@ In the ring $\ZZ[\alpha]/(\alpha^{n+1})$, $\smile \alpha: H^j(M) \to H^{j+2}(M)$
 $\pi_1(E) = 0$.
 
 ::: pf-proof
-The homotopy sequence gives $\pi_2(M) \xrightarrow{\partial} \pi_1(S^1) \to \pi_1(E) \to \pi_1(M) = 0$. By naturality, $\partial = \partial_\infty \circ c_*$, where $\partial_\infty: \pi_2(\CP^\infty) \to \pi_1(S^1)$ is an isomorphism because $S^\infty$ is contractible. Both $M$ and $\CP^\infty$ are simply connected, so by Hurewicz $c_*$ on $\pi_2$ is $c_*$ on $H_2$. Because $H_1 = 0$, universal coefficients gives $H^2 = \operatorname{Hom}(H_2, \ZZ)$. Write the pairing as $\langle u, c_* \xi \rangle = \langle c^* u, \xi \rangle = \langle \alpha, \xi \rangle$. The generator $\alpha$ of that Hom group cannot have all its values divisible by an integer greater than $1$, so some $\xi \in H_2(M)$ has $\langle \alpha, \xi \rangle = 1$, and $c_*$ on $H_2$ is surjective. Hence $\partial$ is surjective and $\pi_1(E) = 0$. (An isomorphism on $H_2$ is not needed here and is not claimed: the argument runs on surjectivity alone.)
+The homotopy sequence gives $\pi_2(M) \xrightarrow{\partial} \pi_1(S^1) \to \pi_1(E) \to \pi_1(M) = 0$. The classification $[M,\CP^\infty]=\langle M,\CP^\infty\rangle=H^2(M;\ZZ)$ used here is Theorem 4.57 (p. 393), with based and free classes agreeing because $M$ is simply connected (Proposition 4A.2, p. 422). By naturality, $\partial = \partial_\infty \circ c_*$, where $\partial_\infty: \pi_2(\CP^\infty) \to \pi_1(S^1)$ is an isomorphism because $S^\infty$ is contractible. Both $M$ and $\CP^\infty$ are simply connected, so by Hurewicz $c_*$ on $\pi_2$ is $c_*$ on $H_2$. Because $H_1 = 0$, universal coefficients gives $H^2 = \operatorname{Hom}(H_2, \ZZ)$. Write the pairing as $\langle u, c_* \xi \rangle = \langle c^* u, \xi \rangle = \langle \alpha, \xi \rangle$. The generator $\alpha$ of that Hom group cannot have all its values divisible by an integer greater than $1$, so some $\xi \in H_2(M)$ has $\langle \alpha, \xi \rangle = 1$, and $c_*$ on $H_2$ is surjective. Hence $\partial$ is surjective and $\pi_1(E) = 0$. (An isomorphism on $H_2$ is not needed here and is not claimed: the argument runs on surjectivity alone.)
 :::
 
 :::
@@ -123,7 +124,7 @@ The homotopy sequence gives $\pi_2(M) \xrightarrow{\partial} \pi_1(S^1) \to \pi_
 $E \simeq S^{2n+1}$.
 
 ::: pf-proof
-$E$ is a closed manifold, so it has the homotopy type of a CW complex with finitely generated homology. By step [](#E-cohomology){.pf-ref} and universal coefficients, $\widetilde H_k(E) = 0$ for $k \le 2n$ and $H_{2n+1}(E) \cong \ZZ$. By step [](#E-simply-connected){.pf-ref} and Hurewicz, $E$ is $2n$-connected and $\pi_{2n+1}(E) \cong H_{2n+1}(E)$. A generator gives $\phi: S^{2n+1} \to E$ inducing an isomorphism on all homology groups. Both spaces are simply connected CW complexes, so $\phi$ is a homotopy equivalence by Whitehead's theorem.
+$E$ is a closed manifold, so it is homotopy equivalent to a finite CW complex (Corollary A.12, p. 529) and its homology is finitely generated. By step [](#E-cohomology){.pf-ref} and universal coefficients, $\widetilde H_k(E) = 0$ for $k \le 2n$ and $H_{2n+1}(E) \cong \ZZ$. By step [](#E-simply-connected){.pf-ref} and Hurewicz, $E$ is $2n$-connected and $\pi_{2n+1}(E) \cong H_{2n+1}(E)$. A generator gives $\phi: S^{2n+1} \to E$ inducing an isomorphism on all homology groups. Both spaces are simply connected CW complexes, so $\phi$ is a homotopy equivalence by the homology form of Whitehead's theorem (Corollary 4.33, p. 367).
 :::
 
 :::
