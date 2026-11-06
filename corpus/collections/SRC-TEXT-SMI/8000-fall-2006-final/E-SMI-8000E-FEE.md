@@ -22,6 +22,16 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "For an arbitrary element alpha, used linear dependence of 1, alpha, ..., alpha^n in the finite-dimensional k-vector space E to produce a nonzero annihilating polynomial."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 12, final part E(i). The
+    proof of the chosen option is the standard one and is correct: n+1 vectors in an
+    n-dimensional space are dependent, and the dependence is a nonzero polynomial over
+    k annihilating the arbitrary element alpha, so every element is algebraic. No
+    defect.
+---
 ---
 
 ::: {.exercise}
