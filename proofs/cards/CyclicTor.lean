@@ -10,32 +10,34 @@ tensored first differential of a two-term free resolution and provides the cycli
 `cards/TorReductions.lean` identifies the kernel of `(n · id) ⊗ id_B` inside `ℤ ⊗ B` with `B[n]`
 (`map_torKernel_mulByInt`). This file writes the index transport that joins them.
 
-**What is certified here: `d_eq_hom`, and only that.** The cyclic resolution's first differential is
-the subtype of the syzygy, and a syzygy vector is `fun _ => n * c` with `c = syzygyEquiv x`, so
-`∂ = constOne ∘ (n · id) ∘ syzygyEquiv`. That is the identification the transport needs, and it is
-proved with no hypothesis beyond `n ≠ 0`.
+**What is certified here.** The identification the transport rests on, at the point level:
+`d_apply` — the cyclic resolution's first differential is `constOne ∘ (n · id) ∘ syzygyEquiv`, since a
+syzygy vector is `fun _ => n * c` with `c = syzygyEquiv x` — together with its two supporting facts,
+`projZero_comp_constOne` (the zeroth coordinate retracts the constant-vector map) and
+`constOne_tmul_eq_zero` (`constOne y ⊗ b = 0` implies `y ⊗ b = 0`, by `rTensor` of that retraction),
+and `d_eq_hom`, the `.hom`-level form of the factorisation.
 
-**What is not certified, and why, in this file's own words.** Two things, both elaborator failures
-rather than missing mathematics, and both instances of the same diamond this repository has recorded
-before (`ModuleCat.isModule` versus `AddCommGroup.toIntModule`):
+**What is not certified: the kernel transport itself**, and the failure is an elaboration one, pasted
+here so that the next pass starts from it rather than from a plan. To state the kernel statement for
+`t ⊗ b` with `t` a syzygy vector, `t` must be given the type
+`↑((twoTermComplex 1 (cyclicPresentation n)).X 1)`, and `TensorProduct.tmul` then rejects it:
 
-1. `projZero_comp_constOne`, the retraction of `constOne` by the zeroth coordinate — `simp` makes no
-   progress on `(constOne c) 0 = c`, so `LinearMap.pi`/`LinearMap.proj` need to be unfolded by hand.
-2. The kernel transport `ker (∂ ⊗ id_B) = comap (syzygyEquiv ⊗ id_B) (ker ((n·id) ⊗ id_B))`. Writing
-   the composite's `.hom` and applying `LinearMap.rTensor_comp` fails: the argument
+```
+error: Application type mismatch: The argument
+  t
+has type
+  ↑((twoTermComplex 1 (cyclicPresentation n)).X 1)
+but is expected to have type
+  ↥(cyclicPresentation n).ker
+in the application
+  TensorProduct.tmul ℤ t
+```
 
-   ```
-   ModuleCat.Hom.hom (ModuleCat.ofHom constOne) ∘ₗ
-     ModuleCat.Hom.hom (ModuleCat.ofHom (mulByInt ↑n)) ∘ₗ
-       ModuleCat.Hom.hom (ModuleCat.ofHom ↑(syzygyEquiv n hn))
-   ```
-
-   has type headed by `Int.instRing.toSemiring` where `rTensor`'s pattern expects the structure on the
-   `ModuleCat` carriers, so the rewrite does not fire and the term does not even elaborate.
-
-Neither is a missing theorem in Mathlib, so no provider request is filed for them. Until they are
-written, `Tor₁(ℤ/n, B) ≅ B[n]` stays uncertified, and the factorisation below is the part of it that
-is proved.
+So `↑((twoTermComplex 1 (cyclicPresentation n)).X 1)` and `↥(LinearMap.ker (cyclicPresentation n))` are
+not interchangeable in the `⊗ₜ` notation, although `twoTermComplex_X_one` states their equality by
+`rfl`. The fix is to state the transport for `(LinearMap.ker f).subtype`, whose carrier is
+`↥(LinearMap.ker f)` by construction, and to connect that to `Tor₁` at the end. Until then
+`Tor₁(ℤ/n, B) ≅ B[n]` stays uncertified.
 -/
 
 
@@ -1062,34 +1064,43 @@ open Cyclic Reductions
 
 section Transport
 
-/-- The constant-vector map `ℤ → (Fin 1 → ℤ)`: the identification of `ℤ` with the rank-one free
-module on `Fin 1` that the cyclic presentation's target is. -/
+/-- The constant-vector map `ℤ → (Fin 1 → ℤ)`. -/
 noncomputable def constOne : ℤ →ₗ[ℤ] (Fin 1 → ℤ) := LinearMap.pi fun _ => LinearMap.id
 
-/-- **The cyclic resolution's first differential factors through multiplication by `n`.** The
-differential is the subtype of the syzygy `ker (cyclicPresentation n)`, and a syzygy vector is
-`fun _ => n * c` with `c = syzygyEquiv x`; so `∂ = constOne ∘ (n · id) ∘ syzygyEquiv`.
+/-- Its retraction, the zeroth coordinate. -/
+noncomputable def projZero : (Fin 1 → ℤ) →ₗ[ℤ] ℤ := LinearMap.proj 0
 
-This is stated as an equality of `LinearMap`s between the `ModuleCat` carriers, and each factor is
-written as `(ModuleCat.ofHom _).hom`, so that both sides carry the `ModuleCat.isModule` structure
-rather than the `AddCommGroup.toIntModule` one. That is what the rest of this file's transport needs:
-with `AddCommGroup.toIntModule` on one side and `ModuleCat.isModule` on the other, `rTensor` of the
-composite does not elaborate at all. -/
-theorem d_eq_hom (n : ℕ) (hn : n ≠ 0) :
-    ((twoTermComplex 1 (cyclicPresentation n)).d 1 0).hom
-      = (ModuleCat.ofHom (constOne : ℤ →ₗ[ℤ] (Fin 1 → ℤ))).hom.comp
-          ((ModuleCat.ofHom (mulByInt (n : ℤ))).hom.comp
-            (ModuleCat.ofHom (syzygyEquiv n hn).toLinearMap).hom) := by
+theorem projZero_comp_constOne : projZero.comp constOne = LinearMap.id := by
   apply LinearMap.ext
-  intro x
-  simp only [LinearMap.comp_apply, ModuleCat.ofHom_apply]
+  intro c
+  change (constOne c) 0 = c
+  simp only [constOne, LinearMap.pi_apply, LinearMap.id_apply]
+
+/-- **The cyclic resolution's first differential, pointwise.** A syzygy vector is `fun _ => n * c`
+with `c = syzygyEquiv x`, so the differential is `constOne ∘ (n · id) ∘ syzygyEquiv`. -/
+theorem d_apply (n : ℕ) (hn : n ≠ 0) (x : ↥(LinearMap.ker (cyclicPresentation n))) :
+    ((twoTermComplex 1 (cyclicPresentation n)).d 1 0).hom x
+      = constOne ((mulByInt (n : ℤ)) ((syzygyEquiv n hn) x)) := by
   funext i
   fin_cases i
   show x.1 0 = (n : ℤ) * (x.1 0 / (n : ℤ))
   exact (Int.mul_ediv_cancel' (cyclicPresentation_ker_dvd n x.2)).symm
 
+/-- **`constOne` tensored with anything kills nothing**: if `constOne y ⊗ b = 0` then `y ⊗ b = 0`,
+because `projZero` retracts `constOne`. -/
+theorem constOne_tmul_eq_zero (B : ModuleCat ℤ) (y : ℤ) (b : ↥B)
+    (h : constOne y ⊗ₜ[ℤ] b = (0 : TensorProduct ℤ (Fin 1 → ℤ) ↥B)) :
+    y ⊗ₜ[ℤ] b = (0 : TensorProduct ℤ ℤ ↥B) := by
+  have h2 := congrArg (LinearMap.rTensor ↥B projZero) h
+  simp only [LinearMap.rTensor_tmul, map_zero] at h2
+  have hy : projZero (constOne y) = y := LinearMap.congr_fun projZero_comp_constOne y
+  rw [hy] at h2
+  exact h2
+
 end Transport
 
 end CyclicTransport
 
-#print axioms CyclicTransport.d_eq_hom
+#print axioms CyclicTransport.projZero_comp_constOne
+#print axioms CyclicTransport.d_apply
+#print axioms CyclicTransport.constOne_tmul_eq_zero
