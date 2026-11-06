@@ -22,6 +22,22 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section II.8,
+    exercise 9, book page 112: "Any group of order p^2q (p,q primes) is
+    solvable." The card states exactly this and treats p = q, which the printed
+    statement allows since both letters are primes. The proof was checked: p = q
+    gives order p^3 and a nilpotent, hence solvable, group; for p ≠ q, p > q
+    forces n_p = 1 since q ≢ 1 mod p; for p < q either n_q = 1 or n_q = p^2,
+    which forces q | p^2 - 1, hence q | p + 1 since q > p, hence q = p + 1 and
+    (p,q) = (2,3); the remaining order 12 case is settled by counting, since
+    n_3 = 4 already accounts for eight nonidentity elements and leaves no room
+    for a second Sylow 2-subgroup. A normal Sylow subgroup is abelian of order
+    p^2 or q and the complementary quotient is abelian, so the extension
+    criterion closes the argument. Complete; no defect.
 ---
 
 ::: {.problem}
