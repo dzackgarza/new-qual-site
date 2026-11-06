@@ -26,6 +26,20 @@ audit:
   by: Codex
   date: 2026-10-31
   note: The printed primary-subspace condition mixes f and T and reuses t as polynomial variable and root. The statement now names the operator and root separately.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 4, Jordan forms
+    Exercise 2(i)-(iii), including its notation mixing f, T and t, which the card
+    separates without changing the assertions. Recomputed: ch = (X-4)^3 gives the
+    three forms J_3(4), J_2(4) ⊕ J_1(4), 4I_3 with minimal polynomials
+    (X-4)^3, (X-4)^2, X-4; every characteristic root is a root of the minimal
+    polynomial by the eigenvector argument; dim M_c = m_c from the block diagonal
+    characteristic polynomial; and the determinants give X^2+1 for A,
+    (X-1)(X-3)^2 for B, (X-3)(X-1)(X+2) for C and (X+2)(X-2)^3 for D, each
+    re-derived here. No defect.
+---
 ---
 
 ::: {.exercise}
