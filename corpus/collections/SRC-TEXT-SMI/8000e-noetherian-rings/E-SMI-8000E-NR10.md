@@ -26,6 +26,17 @@ audit:
   by: chatgpt
   date: 2026-10-31
   note: "The printed rank claim omits R nonzero; every finite power of the zero ring is the zero module."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 5, problem 10. The card
+    keeps the printed nonzero hypothesis it had already restored. The isomorphism
+    R^n/IR^n ≅ (R/I)^n as R-modules and as R/I-modules was checked through
+    IR^n = I^n coordinatewise, and the rank deduction was checked: an isomorphism
+    R^n ≅ R^m carries IR^n onto IR^m, so reducing modulo a maximal ideal gives an
+    isomorphism of k-vector spaces k^n ≅ k^m, whence n = m. No defect.
+---
 ---
 
 ::: {.exercise}
