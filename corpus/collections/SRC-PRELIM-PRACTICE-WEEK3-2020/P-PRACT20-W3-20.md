@@ -63,8 +63,8 @@ the three equations.
 ::: {.pf-step #solve}
 
 $\lambda^2=\frac{17}{8}$, and the candidate points are
-$\pm\big(\sqrt{2/17},\,0,\,\sqrt{32/17}\big)$ scaled by the common factor
-$\frac1{2\lambda}\sqrt2$.
+$\lambda^2=\frac{17}{8}$, and the stationary points are
+$\pm\big(\sqrt{2/17},\,0,\,\sqrt{32/17}\big)$.
 
 ::: pf-proof
 
@@ -82,8 +82,8 @@ in each solution; $y=0$ in both.
 
 ::: {.pf-step #minimum}
 
-$\boxed{f$ is minimised at $\big(-\sqrt{2/17},\,0,\,-\sqrt{32/17}\big)$ with
-value $-\sqrt{34}$}.
+$f$ attains its minimum at $\big(-\sqrt{2/17},\,0,\,-\sqrt{32/17}\big)$, where
+$\boxed{f=-\sqrt{34}}$.
 
 ::: pf-proof
 
