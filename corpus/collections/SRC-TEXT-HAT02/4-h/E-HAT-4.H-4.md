@@ -23,7 +23,7 @@ Define the dual of an iterated mapping cylinder precisely, in terms of maps from
 ::: {.solution}
 Let $X_0 \xrightarrow{f_1} X_1 \xrightarrow{f_2} \cdots \xrightarrow{f_n} X_n$ be maps, and for $i \le j$ write $f_{ji} = f_j \circ \cdots \circ f_{i+1}: X_i \to X_j$, with $f_{ii} = \id$. Faces of $\Delta^n = [v_0, \dots, v_n]$ are written $\sigma = [v_{i_0}, \dots, v_{i_k}]$ with $i_0 < \dots < i_k$, and $\max \sigma = i_k$. All mapping spaces have the compact-open topology.
 
-The iterated mapping cylinder $M(f_1, \dots, f_n)$ is a quotient of $\coprod_\sigma X_{\min \sigma} \times \sigma$, where $X_{\min\sigma} \times \tau$ is glued to $X_{\min \tau} \times \tau$ by $f_{\min\tau, \min\sigma} \times \id$ for each face $\tau \subseteq \sigma$. It deformation retracts onto $X_n$. The dual replaces the product $X \times \sigma$ by the mapping space $X^\sigma$, the quotient by a subspace, and the end $X_n$ by the end $X_0$.
+Here a complex of spaces over a $\Delta$-complex is as in §4.G (p. 459), and the duals used below are those of Eckmann--Hilton duality as in §4.H (p. 460): mapping cylinder versus mapping path space, quotient versus subspace. The iterated mapping cylinder $M(f_1, \dots, f_n)$ is a quotient of $\coprod_\sigma X_{\min \sigma} \times \sigma$, where $X_{\min\sigma} \times \tau$ is glued to $X_{\min \tau} \times \tau$ by $f_{\min\tau, \min\sigma} \times \id$ for each face $\tau \subseteq \sigma$. It deformation retracts onto $X_n$. The dual replaces the product $X \times \sigma$ by the mapping space $X^\sigma$, the quotient by a subspace, and the end $X_n$ by the end $X_0$.
 
 ::: pf
 
@@ -39,7 +39,7 @@ The condition compares two maps $\tau \to X_{\max\sigma}$, and each side is cont
 :::
 
 ::: pf-step
-For $n = 1$, $\nabla(f_1)$ is the mapping path space $E_{f_1} = \theset{(x, \gamma) \in X_0 \times X_1^I \suchthat \gamma(0) = f_1(x)}$, the dual of the mapping cylinder $M_{f_1}$.
+For $n = 1$, $\nabla(f_1)$ is the mapping path space $E_{f_1} = \theset{(x, \gamma) \in X_0 \times X_1^I \suchthat \gamma(0) = f_1(x)}$ of §4.3 (p. 405), the dual of the mapping cylinder $M_{f_1}$.
 
 ::: pf-proof
 The data are $\phi_{v_0} \in X_0$, $\phi_{v_1} \in X_1$, and $\gamma = \phi_{[v_0, v_1]}: I \to X_1$. The conditions say $\gamma(0) = f_1(\phi_{v_0})$ and $\gamma(1) = \phi_{v_1}$, so $\phi_{v_1}$ is determined by $\gamma$, and $(\phi_{v_0}, \gamma)$ ranges over $E_{f_1}$.
