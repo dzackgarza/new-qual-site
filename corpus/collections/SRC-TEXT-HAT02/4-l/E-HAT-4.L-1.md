@@ -35,9 +35,9 @@ H^m(-;G)\longrightarrow H^n(-;H)
 $$
 are represented by classes in
 $$
-H^n(K(G,m);H).
+H^n(K(G,m);H)
 $$
-We apply this to the three cases.
+(Hatcher's Proposition 4L.1, p. 488, the case $m=n$ there, applied with the Eilenberg--MacLane space $K(G,m)$), and the operation is recovered by evaluating the class on the fundamental class. We apply this to the three cases.
 
 For target degree $n=0$, all three representing spaces are connected, so their $H^0$ consists of constant classes. These give the constant operations, with values in $\ZZ$ or $\ZZ_p$ as appropriate.
 
@@ -63,8 +63,9 @@ For $H^2(-;\ZZ)$, use
 $$
 K(\ZZ,2)=\CP^\infty,
 \qquad
-H^*(\CP^\infty;\ZZ)=\ZZ[x],\quad \gradeddegree{x}=2.
+H^*(\CP^\infty;\ZZ)=\ZZ[x],\quad \gradeddegree{x}=2
 $$
+as in Example 3.12 (p. 213).
 Therefore
 $$
 H^n(K(\ZZ,2);\ZZ)=
@@ -95,7 +96,7 @@ H^*(K(\ZZ_p,1);\ZZ_p)
 =\Lambda(x)\otimes\ZZ_p[y],
 \qquad \gradeddegree{x}=1,\quad \gradeddegree{y}=2,\quad y=\beta x,
 $$
-where $\beta$ is the mod-$p$ Bockstein. Thus there is again one basis operation in every positive degree:
+where $\beta$ is the mod-$p$ Bockstein: additively this is the cohomology of the infinite lens space $K(\ZZ_p,1)=\bigcup_n L_p^{2n+1}$ (Example 2.43, p. 144), and multiplicatively the Bockstein of §3.E (p. 303) gives $y=\beta x$. Thus there is again one basis operation in every positive degree:
 $$
 \boxed{
 \begin{aligned}
