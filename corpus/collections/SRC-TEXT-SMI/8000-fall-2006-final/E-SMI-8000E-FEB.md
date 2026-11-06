@@ -22,6 +22,17 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Gave standard definitions and two equivalent characterizations each of separability and normality for algebraic extensions."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 11, final part B(i)-(vi).
+    All six definitions are correct, and the two characterizations the sheet asks for
+    are supplied in both cases: separable (minimal polynomials with distinct roots;
+    equivalently every irreducible with a root in E is separable, gcd(f,f') = 1) and
+    normal (every irreducible with a root in E splits; equivalently sigma(E) = E for
+    every k-embedding into an algebraic closure). No defect.
+---
 ---
 
 ::: {.exercise}
