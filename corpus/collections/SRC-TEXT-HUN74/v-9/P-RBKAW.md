@@ -11,6 +11,7 @@ classification:
   - Solvable Groups
   - Galois Theory
 relations: []
+review: draft
 audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
@@ -28,8 +29,6 @@ audit:
     preceding step field, the same list generates F over E and each α_i^{n_i} lies
     in the corresponding step field over E because K ⊆ E, so the tower can be
     re-based at E. Complete; no defect.
----
-review: draft
 ---
 
 ::: {.problem}
