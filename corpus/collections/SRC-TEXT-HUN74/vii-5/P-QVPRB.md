@@ -23,6 +23,21 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section VII.5,
+    exercise 2, book page 369, including its printed hint: "(Cayley-Hamilton) If φ
+    is an endomorphism of a free K-module E of finite rank, then p_φ(φ) = 0." The
+    card states exactly this and reproduces the hint. The proof was checked: the
+    adjugate identity adj(M)M = det(M)I over the commutative ring K[x] applied to
+    M = xI_n − A; the K[x]-module structure on E with x acting as φ, where the
+    coordinate vector of the basis satisfies (xI_n − A)^t e = 0 entry by entry
+    because x e_j = φ(e_j); and then p_φ(x)e = adj(B^t)B^t e = 0, so p_φ(x) kills
+    a generating set, hence acts as zero, which is exactly p_φ(φ) = 0. The
+    transpose is used consistently and the associativity of the M_n(K[x])-action
+    on E^n is legitimate over the commutative ring K[x]. Complete; no defect.
 ---
 
 ::: {.problem}
