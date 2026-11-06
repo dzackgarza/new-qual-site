@@ -14,6 +14,16 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §3.F Exercise 3, printed page
+    320, with the printed hint. Checked both routes the card uses: Q is divisible, so
+    it is an injective Z-module by Baer's criterion and Ext(A,Q) = 0; equivalently,
+    for a Moore space M(A,n) the universal coefficient theorem (Theorem 3.2, p. 195)
+    gives H^{n+1}(M(A,n);Q) ≅ Ext(A,Q) with the Q-coefficient cohomology group
+    vanishing because H_n(M(A,n);Q) = 0. No defect.
 ---
 
 ::: {.problem}
