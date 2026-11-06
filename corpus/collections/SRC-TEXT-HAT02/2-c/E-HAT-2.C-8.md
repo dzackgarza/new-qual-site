@@ -22,6 +22,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the simplicial, Lefschetz-trace, or surface argument against the preceding section results.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.C Exercise 8, printed page
+    184; the statement matches word for word. Proof checked: K is a finite simplicial
+    complex and L finite or countable, a simplicial map from a subdivision of K is
+    determined by its values on the finitely many vertices, so for each r there are
+    at most countably many such maps and the union over r is countable, and every map
+    K → L is homotopic to one of these by the simplicial approximation theorem
+    (Theorem 2C.1, p. 179). No defect.
+---
 ---
 
 ::: {.problem}
