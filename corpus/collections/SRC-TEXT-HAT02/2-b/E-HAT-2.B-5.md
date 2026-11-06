@@ -14,6 +14,17 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.B Exercise 5, printed page
+    176; the statement matches word for word. Checked: Alexander duality gives
+    H̃_i(S^n − S) ≅ H̃^{n−i−1}(S^k) = Z exactly in degree r = n−k−1, matching
+    H̃_*(S^r); the normal disk D^{n−k} meets S in one transverse point of the
+    coordinate disk, so the Alexander-duality coordinate of the image of [S^r] is
+    ±1 and the inclusion is an isomorphism in degree r and hence in all degrees,
+    with the r = 0 case read on reduced H_0. No defect.
 ---
 
 ::: {.problem}
