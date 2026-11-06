@@ -145,3 +145,7 @@ Its codimension there is two, so this also proves failure of the local complete-
 
 :::
 :::
+
+::: {.remark}
+This exercise is starred in the source.
+:::
