@@ -15,6 +15,19 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith Math 8000 packet 8000e.pdf page 1,
+    abelian-groups (generators) problem 4: "Prove that Hom(Z^s, Q) is isomorphic
+    as a Q-vector space to Q^s, by sending the map f:Z^s-->Q to the vector
+    (f(e_1),...,f(e_s)) ... [hint: find a Q-basis for Hom(Z^s,Q) consisting of
+    exactly s elements]." The card states exactly this, with the printed device
+    of multiplying maps by rationals pointwise. The proof was checked: pointwise
+    operations make Phi Q-linear and well defined, vanishing on the basis gives
+    f = 0, and (q_1,...,q_s) is the image of the homomorphism n ↦ sum n_i q_i,
+    which is well defined because e_1,...,e_s is a basis. Complete; no defect.
 ---
 
 ::: {.exercise}
