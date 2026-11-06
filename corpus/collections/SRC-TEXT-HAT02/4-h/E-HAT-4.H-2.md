@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Consider a pushout diagram where $B\cup_f X$ is $B$ with $X$ attached along $A$ via $f$.
-Show that if $A \hookrightarrow X$ is a cofibration, so is $B \hookrightarrow B\cup_f X$.
+Consider a pushout diagram as at the right, where $B\sqcup_f X$ is $B$ with $X$ attached along $A$ via $f$.
+Show that if $A \hookrightarrow X$ is a cofibration, so is $B \hookrightarrow B\sqcup_f X$.
 :::
 
 ::: {.solution}
@@ -38,7 +38,7 @@ Let $P = B \sqcup_f X$ be the pushout space, with canonical inclusions $j: B \ho
 
 ::: pf-proof
 
-definition of adjunction space / pushout.
+Definition of the adjunction space $B\sqcup_f X$ as the pushout of $A\to B$ and $A\to X$ (§0.1, p. 8); cofibrations are tested by the homotopy extension property (§0.4, p. 14), which is what the rest of the argument verifies.
 
 :::
 
