@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that for any sequence $Z_1 \to Z_2 \to \cdots$, the natural map $\operatorname{hocolim} \Omega Z_n \to \Omega \operatorname{hocolim} Z_n$ is a weak homotopy equivalence, where the direct limits mean mapping telescopes.
+Show that for any sequence $Z_1 \to Z_2 \to \cdots$, the natural map $\varinjlim \Omega Z_n \to \Omega \varinjlim Z_n$ is a weak homotopy equivalence, where the direct limits mean mapping telescopes.
 :::
 
 ::: {.solution}
@@ -40,7 +40,7 @@ There is a natural map
 $$
 \kappa:T_\Omega\longrightarrow\Omega T
 $$
-obtained by regarding a loop in a stage $Z_n$ as a loop in the corresponding slice of the telescope.
+obtained by regarding a loop in a stage $Z_n$ as a loop in the corresponding slice of the telescope; this is the map $\kappa$ used in Hatcher's construction of the spectrum associated to a cohomology theory (p. 455), where he calls it the natural weak equivalence $\varinjlim\Omega Z_n\to\Omega\varinjlim Z_n$, the statement proved here.
 
 For every $j\ge0$, compactness of $S^j$ implies
 $$
