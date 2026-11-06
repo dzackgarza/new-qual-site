@@ -27,6 +27,18 @@ audit:
   date: 2026-10-31
   note: Hungerford V.6.1 prints nv in K, so the statement stays; a remark proves the purely inseparable
     v^n in K version.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.6,
+    exercise 1, book page 288: "Let char K = p ≠ 0 and let n ≥ 1 be an integer
+    such that (p,n) = 1. If v ∈ F and nv ∈ K, then v ∈ K." The card states
+    exactly this, with the printed nv (not v^n). The proof was checked: n·1_K = 0
+    exactly when p | n, so (p,n) = 1 makes n·1_K a nonzero element of the field K,
+    hence invertible, and v = (n·1_K)^{-1}(nv) lies in K. The remark's
+    multiplicative version is also correct, using v^{p^e} ∈ K and Bézout with
+    (n,p^e) = 1. Complete; no defect.
 ---
 
 ::: {.problem}
