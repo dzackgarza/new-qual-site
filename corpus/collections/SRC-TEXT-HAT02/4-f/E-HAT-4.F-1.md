@@ -29,7 +29,7 @@ Show that the converse also holds for countable CW complexes.
 :::
 
 ::: {.solution}
-Let $\widetilde h_*$ satisfy the homotopy and exactness axioms. Recall first that these two axioms already imply the wedge axiom for finite wedge sums.
+Let $\widetilde h_*$ satisfy the first two axioms of Hatcher's list (p. 160), namely the homotopy axiom (1) and the exactness axiom (2); the wedge sum axiom is axiom (3) of that list. Recall first that these two axioms already imply axiom (3) for finite wedge sums, as Hatcher notes on p. 160: apply axiom (2) to the pair $(X_1\vee X_2,X_1)$ and use that the quotient is $X_2$.
 
 Assume the direct-limit axiom. Let
 $$
@@ -44,7 +44,7 @@ $$
 \widetilde h_n(K)
 \cong\bigoplus_{i=1}^r\widetilde h_n(K_{\alpha_i}).
 $$
-Taking the filtered colimit over finite subcomplexes and using the direct-limit axiom in each summand gives
+Taking the filtered colimit over finite subcomplexes — the direct-limit axiom, which replaces axiom (3) in Hatcher's discussion on p. 455 — and using that a filtered colimit commutes with the direct sum over a fixed index set gives
 $$
 \widetilde h_n\!\left(\bigvee_\alpha X_\alpha\right)
 \cong\bigoplus_\alpha \widetilde h_n(X_\alpha).
@@ -58,7 +58,7 @@ X_1\subset X_2\subset\cdots,
 $$
 Let $T$ be the based mapping telescope of this sequence, with the track of the common basepoint collapsed. The telescope is homotopy equivalent to $X$ because the inclusions $X_i\subset X_{i+1}$ are cofibrations, so $\widetilde h_*(T)\cong\widetilde h_*(X)$. Write $s_*$ for the map on $\bigoplus_i\widetilde h_n(X_i)$ that shifts the $i$-th summand to the $(i+1)$-st using the inclusion $X_i\to X_{i+1}$.
 
-Cover the telescope by the unions of neighborhoods of its even and odd mapping cylinders. After collapsing the basepoint track, each union and their intersection retract onto wedges of the corresponding $X_i$. The Mayer--Vietoris sequence, followed by the wedge axiom, yields
+Cover the telescope by the unions of neighborhoods of its even and odd mapping cylinders. After collapsing the basepoint track, each union and their intersection retract onto wedges of the corresponding $X_i$, so the Mayer--Vietoris sequence of this cover, which the first two axioms supply (axiom (2) for the pair $(N_{\mathrm{even}}\cup N_{\mathrm{odd}},N_{\mathrm{even}}\cap N_{\mathrm{odd}})$ together with the quotient identification), followed by the wedge axiom (3), yields
 $$
 \bigoplus_i\widetilde h_n(X_i)
 \xrightarrow{\,1-s_*\,}
