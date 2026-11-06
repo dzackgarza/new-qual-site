@@ -12,7 +12,25 @@ classification:
   - Quasicoherent Sheaves
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry (1977), Chapter III, section 4,
+    exercise 4.1, printed page 222 (PDF page 237 of
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, the checked-in
+    extraction). The printed exercise reads: "Let f: X -> Y be an affine morphism
+    of noetherian separated schemes (II, Ex. 5.17). Show that for any
+    quasi-coherent sheaf F on X, there are natural isomorphisms for all i >= 0,
+    H^i(X, F) = H^i(Y, f_* F)." The card states exactly this. The proof was read
+    and checked: a finite affine cover of Y pulls back to one of X because f is
+    affine, intersections of affine opens are affine on a separated scheme, the
+    two Cech complexes agree by the definition of f_*, f_* F is quasi-coherent
+    (II.5.8), and both sides are Cech cohomology, so the comparison is an
+    isomorphism in every degree and natural in F.
 ---
+
 ::: {.problem}
 Let $f: X \to Y$ be an affine morphism of noetherian separated schemes (II, Ex.
 5.17). Show that for any quasi-coherent sheaf $\mcf$ on $X$, there are natural isomorphisms for all $i \geq 0$,
