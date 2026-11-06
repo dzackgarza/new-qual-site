@@ -12,7 +12,27 @@ classification:
   - Stalks
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry (1977), Chapter II, section 1,
+    exercise 1.3, printed page 66 (PDF page 81 of
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, the checked-in
+    extraction). The printed exercise reads: "(a) Let phi: F -> G be a morphism
+    of sheaves on X. Show that phi is surjective if and only if the following
+    condition holds: for every open set U of X, and for every s in G(U), there
+    is a covering {U_i} of U and there are elements t_i in F(U_i) such that
+    phi(t_i) = s|_{U_i} for all i. (b) Give an example of a surjective morphism
+    of sheaves phi: F -> G, and an open set U such that phi(U): F(U) -> G(U) is
+    not surjective." The card states exactly this. The proof of (a) was checked
+    in both directions, and the example of (b), the exponential sequence on
+    the punctured plane, was checked to be a morphism that is surjective on
+    stalks (a disc is simply connected) but not on sections over the punctured
+    plane.
 ---
+
 
 ::: {.problem}
 (a) Let $\varphi: \mcf \to \mcg$ be a morphism of sheaves on $X$.
