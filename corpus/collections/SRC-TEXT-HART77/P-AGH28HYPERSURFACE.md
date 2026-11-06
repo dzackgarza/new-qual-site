@@ -22,6 +22,14 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Compared the card's statement in full with the printed Exercise 2.8 (scan
+    page 27 of the retained PDF), tails included: hypotheses, every lettered
+    part and the closing clauses. Agrees; the card's added "in this case" for
+    the naming clause changes nothing.
 ---
 
 ::: {.problem}
