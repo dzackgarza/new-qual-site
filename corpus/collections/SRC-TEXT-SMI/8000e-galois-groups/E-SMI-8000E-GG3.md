@@ -22,6 +22,16 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Used reciprocal irreducible cubics x^3+x+1 and x^3+x^2+1, and gave the explicit quotient-field isomorphism sending the second generator to the inverse of the first."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 10, Galois problem 3.
+    Correct: X^3+X+1 has values 1, 3, 1, 1, 4 on F_5 so is irreducible, and
+    X^3+X^2+1 is its reciprocal, so a root of the second gives an inverse root of
+    the first and irreducibility transfers; both quotients are the field of 125
+    elements, and the explicit isomorphism is the standard one. No defect.
+---
 ---
 
 ::: {.exercise}
