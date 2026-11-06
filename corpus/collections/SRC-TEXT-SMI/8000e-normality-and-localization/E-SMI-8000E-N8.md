@@ -14,6 +14,17 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 6, Exercise 8: "If R is
+    ufd, P prime, prove R_P also ufd." The card uses Kaplansky's criterion, that a
+    domain is a UFD exactly when every nonzero prime contains a prime element, and
+    both steps were checked: the contraction of a nonzero prime of R_P is a nonzero
+    prime of R inside P, hence contains a prime p of R with p in P; and p/1 is
+    prime in R_P, since p does not divide denominators outside P and primality of p
+    passes through the domain identity s_3 ab = s_1 s_2 p c. No defect.
 ---
 
 ::: {.exercise}
