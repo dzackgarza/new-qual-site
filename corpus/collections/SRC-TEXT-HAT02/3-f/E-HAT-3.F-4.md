@@ -21,6 +21,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §3.F Exercise 4, printed page
+    320; the statement matches word for word. Checked: a direct sum of copies of Q is
+    divisible coordinatewise and divisibility passes to quotients, giving one
+    direction; conversely a divisible G is a quotient of ⊕_I Q by choosing a
+    generating set and dividing repeatedly to build Q-linear combinations mapping
+    onto G. The deduction uses Exercise 3 (Ext(A,Q) = 0) with the long exact Ext
+    sequence, so Ext(A,G) = 0 for divisible G. No defect.
 ---
 
 ::: {.problem}
