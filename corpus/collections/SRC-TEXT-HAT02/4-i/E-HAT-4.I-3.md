@@ -46,7 +46,7 @@ $$
 \Sigma K\simeq X_1\vee\cdots\vee X_{p-1}
 \tag{1}
 $$
-be the splitting of Proposition 4I.3. Choose each $X_i$ in the minimal-cell form described after the proof: one $0$-cell and one cell in each dimension congruent to
+be the splitting of Proposition 4I.3 (p. 468). Choose each $X_i$ in the minimal-cell form described after the proof: one $0$-cell and one cell in each dimension congruent to
 $$
 2i\quad\text{or}\quad2i+1\pmod{2p-2},
 $$
@@ -66,7 +66,7 @@ $$
 F:\Sigma K\longrightarrow\bigvee_{i=1}^{p-1}X_i.
 \tag{2}
 $$
-By cellular approximation choose $F$ cellular. Because the $X_i$'s have the minimal cell structures just described, (2) restricts to a cellular map
+By the cellular approximation theorem (Theorem 4.8, p. 349) choose $F$ cellular. Because the $X_i$'s have the minimal cell structures just described, (2) restricts to a cellular map
 $$
 F^{(2k+1)}:(\Sigma K)^{(2k+1)}\longrightarrow
 \bigvee_{i=1}^{p-1}X_i^{(2k+1)}.
@@ -74,7 +74,7 @@ F^{(2k+1)}:(\Sigma K)^{(2k+1)}\longrightarrow
 $$
 The homology calculation in Proposition 4I.3 is degree-by-degree, so (3) induces an isomorphism on homology in every degree $\le2k+1$. Above degree $2k+1$, both sides have zero homology because they are $(2k+1)$-dimensional CW complexes. Hence (3) is a homology isomorphism in all degrees.
 
-Both sides of (3) are simply connected: they are skeleta of suspensions, with no $1$-cells in the minimal models. Therefore the homology Whitehead theorem implies that (3) is a homotopy equivalence. Identifying the source with the corresponding skeleton of the suspension of the chosen high-dimensional lens space gives
+Both sides of (3) are simply connected: they are skeleta of suspensions, with no $1$-cells in the minimal models. Therefore the homology form of Whitehead's theorem (Corollary 4.33, p. 367) implies that (3) is a homotopy equivalence. Identifying the source with the corresponding skeleton of the suspension of the chosen high-dimensional lens space gives
 $$
 \boxed{
 (\Sigma L)^{(2k+1)}\simeq
