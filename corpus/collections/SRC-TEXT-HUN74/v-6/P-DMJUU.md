@@ -16,6 +16,20 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.6,
+    exercise 11, book page 289: "If f ∈ K[x] is irreducible of degree m > 0, and
+    char K does not divide m, then f is separable." The card states exactly this.
+    The proof was checked: the coefficient of x^{m-1} in f' is m·a_m, nonzero
+    because char K ∤ m and a_m ≠ 0, so deg f' = m - 1 and f' ≠ 0; the monic gcd of
+    f and f' divides the irreducible f, so it is 1 or essentially f, and the
+    second is impossible since f | f' would force deg f' ≥ deg f; a common root of
+    f and f' would then make 1 = uf + vf' vanish, so f has no repeated root. The
+    characteristic-zero case is covered by the same argument because 0 divides no
+    positive integer. Complete; no defect.
 ---
 
 ::: {.problem}
