@@ -22,6 +22,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section IV.6,
+    exercise 6, book page 226, read from the page image: "If A and B are cyclic
+    modules over R of nonzero orders r and s respectively, and r is not relatively
+    prime to s, then the invariant factors of A ⊕ B are the greatest common
+    divisor of r,s and the least common multiple of r,s." The card states exactly
+    this, with the section's standing PID hypothesis. The proof was checked
+    through the determinantal divisors of diag(r,s): the first is a generator of
+    (r,s) = (gcd(r,s)) and the second is det = rs, and the Smith normal form
+    identifies the products of the first j invariant factors with the j-th
+    determinantal divisor, so the invariant factors are gcd(r,s) and
+    rs/gcd(r,s) = lcm(r,s). The hypothesis that r and s are not relatively prime
+    is used exactly to make gcd a nonunit, so that there are two invariant
+    factors rather than one, and the card says so. Complete; no defect.
 ---
 
 ::: {.problem}
