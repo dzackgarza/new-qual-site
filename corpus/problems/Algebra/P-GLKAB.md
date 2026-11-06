@@ -19,6 +19,24 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Reviewed against the Lamport standard. What was found: the question asks what a
+    discriminant is, so the answer is a definition and there is no proof obligation;
+    no pf block was added. What was checked: the definition as given,
+    disc f = a_n^{2n-2} prod_{i<j} (r_i - r_j)^2 in a splitting field, which is the
+    standard normalization; the equivalence disc f = (-1)^{n(n-1)/2} a_n^{-1}
+    Res(f, f'), which is the standard resultant formula (the sign is the parity of
+    the number of pairs, and the a_n^{-1} matches the resultant's own normalization);
+    the claim that the discriminant is a polynomial in the coefficients, which holds
+    because the squared Vandermonde product is symmetric in the roots; the
+    equivalence disc f = 0 iff f has a repeated root iff gcd(f, f') != 1 over a
+    field; and the quadratic check b^2 - 4c for monic x^2 + bx + c. All correct. What
+    was not checked: nothing beyond the statements — the resultant formula and the
+    symmetric-function claim are standard results quoted, not proved, here; no
+    source solution is retained for this card, so no source comparison was made.
 ---
 
 ::: {.problem}
