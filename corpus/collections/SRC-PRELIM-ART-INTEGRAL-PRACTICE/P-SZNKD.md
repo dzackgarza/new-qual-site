@@ -18,6 +18,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    No source document is retained for this card. The collection
+    SRC-PRELIM-ART-INTEGRAL-PRACTICE has an empty provenance list, its own
+    remark records that the drill sheet's original paper was not found, and
+    searching assets/attachments/ and the migration records finds no copy of the
+    sheet, so there is no page to read and the printed statement could not be
+    compared with a source document. What was checked here is the statement and
+    its answer: the substitution u = x^3 and the resulting primitive, checked by differentiating the answer
+- event: solution-written
+  by: claude
+  date: 2026-11-06
+  note: >-
+    No published solution set is retained for this sheet, so the value is
+    derived here rather than transcribed. The substitution and the primitive, verified by differentiation.
 ---
 
 ::: {.problem}
@@ -28,8 +45,44 @@ $$
 :::
 
 ::: {.solution}
-Let $u=x^3$, so $du=3x^2\,dx$. Therefore
-$$
-\boxed{\int\frac{x^2}{1+x^6}\,dx=\frac13\arctan(x^3)+C.}
-$$
+
+The integrand is defined and continuous on $\RR$, since $1+x^6\ge1$.
+
+::: pf
+
+::: {.pf-step #substitution}
+
+With $u=x^3$, $du=3x^2\,dx$ and $1+x^6=1+u^2$, so
+$\dfrac{x^2\,dx}{1+x^6}=\dfrac13\cdot\dfrac{du}{1+u^2}$.
+
+::: pf-proof
+
+The derivative of $x^3$ is $3x^2$, so $x^2\,dx=\frac13du$, and
+$x^6=(x^3)^2=u^2$.
+
+:::
+
+:::
+
+::: {.pf-step #value}
+
+$\boxed{\displaystyle\int\frac{x^2}{1+x^6}\,dx=\frac13\arctan(x^3)+C}$ on
+$\RR$.
+
+::: pf-proof
+
+By step [](#substitution){.pf-ref} the integral is
+$\frac13\int\frac{du}{1+u^2}=\frac13\arctan u+C=\frac13\arctan(x^3)+C$.
+Directly,
+$\frac{d}{dx}\frac13\arctan(x^3)=\frac13\cdot\frac{3x^2}{1+x^6}=\frac{x^2}{1+x^6}$
+by the chain rule, and the integrand is continuous on the connected interval
+$\RR$, so a single constant suffices.
+
+:::
+
+:::
+
+:::
+
+
 :::
