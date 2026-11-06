@@ -34,7 +34,7 @@ Let $f:X\to Y$ carry each subcomplex $U_i$ into $V_i$, and suppose that its rest
 $$
 f_J:\bigcap_{j\in J}U_j\longrightarrow\bigcap_{j\in J}V_j
 $$
-is a weak homotopy equivalence for every nonempty finite index set $J$. These intersections are CW subcomplexes. Whitehead's theorem therefore makes each $f_J$ a homotopy equivalence.
+is a weak homotopy equivalence for every nonempty finite index set $J$. These intersections are CW subcomplexes. The homology form of Whitehead's theorem (Corollary 4.33, p. 367) therefore makes each $f_J$ a homotopy equivalence.
 
-Form the complexes of spaces associated to the two intersection diagrams, as in Section 4.G. The maps $f_J$ give a map between their realizations. Proposition 4G.1 says that this map is a homotopy equivalence because every map on a vertex space is one. By the subcomplex-cover version of Proposition 4G.2 (Exercise 4 of Section 4.G), each realization maps by a homotopy equivalence to the union of its subcomplexes, namely $X$ or $Y$. These maps commute with $f$. Hence $f$ is a homotopy equivalence, and in particular the weak homotopy equivalence asserted by Corollary 4K.2.
+Form the complexes of spaces associated to the two intersection diagrams, as in Section 4.G. The maps $f_J$ give a map between their realizations. Proposition 4G.1 (p. 458) says that this map is a homotopy equivalence because every map on a vertex space is one. By the subcomplex-cover version of Proposition 4G.2 (Exercise 4 of Section 4.G, p. 460), each realization maps by a homotopy equivalence to the union of its subcomplexes, namely $X$ or $Y$. These maps commute with $f$. Hence $f$ is a homotopy equivalence, and in particular the weak homotopy equivalence asserted by Corollary 4K.2 (p. 478).
 :::
