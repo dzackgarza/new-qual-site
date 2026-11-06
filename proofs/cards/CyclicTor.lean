@@ -35,11 +35,20 @@ is `↥(LinearMap.ker f)` by construction — and `ker_d_rTensor_eq` specializes
 taking `.hom` puts `ModuleCat.isModule` on both sides, where a composite written with
 `LinearMap.comp` alone is headed by `Int.instRing.toSemiring` and does not unify.
 
-**What is not yet written**: the last hop that turns `ker_d_rTensor_eq` into a statement about
-`Submodule.torsionBy ℤ ↥B n`, namely that `σ ⊗ id_B` is surjective (it is `TensorProduct.congr` of a
-linear equivalence) so that the preimage can be turned into an image and `map_torKernel_mulByInt`
-applied. Until that is written, `Tor₁(ℤ/n, B) ≅ B[n]` is not a named theorem here, though both of its
-halves now are.
+**What is certified about the last hop.** `map_ker_d_rTensor_eq` closes it as far as the two
+mathematics steps go: mapping the kernel by `σ ⊗ id_B` recovers `ker ((n · id) ⊗ id_B)`, because
+`σ ⊗ id_B` is invertible and the kernel therefore lies in its range
+(`Submodule.map_comap_eq_self`). Composing that with `TorReductions.map_torKernel_mulByInt` — the
+statement that this kernel, carried by `TensorProduct.lid`, is `Submodule.torsionBy ℤ ↥B n` — is the
+final `Tor₁(ℤ/n, B) ≅ B[n]` sentence, and `map_comp_map` proves the composition step it needs.
+
+**What is not written** is that one composition, and the obstruction is ascription, not mathematics:
+writing `Submodule.map (((TensorProduct.lid ℤ ↥B).toLinearMap).comp (σ ⊗ id_B)) (ker ∂⊗B) = torsionBy`
+and rewriting with `map_comp_map` fails to unify the two `Submodule` types, whose implicit instance
+arguments are the `TensorProduct.instModule` path here and the `Int.instCommSemiring` path there.
+Ascription at that boundary — the same fix this repository has used for the other diamonds — is the
+next step; until it is written, `Tor₁(ℤ/n, B) ≅ B[n]` is not a named theorem, though both halves and
+the composition lemma now are.
 -/
 
 
@@ -1140,6 +1149,45 @@ theorem ker_d_rTensor_eq (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0) :
   show x.1 0 = (n : ℤ) * (x.1 0 / (n : ℤ))
   exact (Int.mul_ediv_cancel' (cyclicPresentation_ker_dvd n x.2)).symm
 
+/-- **The preimage becomes an image.** Since `σ ⊗ id_B` is invertible, the image of the preimage of
+`ker ((n · id) ⊗ id_B)` under it is that kernel itself. -/
+theorem map_ker_d_rTensor_eq (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0) :
+    (LinearMap.ker (((twoTermComplex 1 (cyclicPresentation n)).d 1 0).hom.rTensor ↥B)).map
+        ((syzygyEquiv n hn).toLinearMap.rTensor ↥B)
+      = LinearMap.ker ((mulByInt (n : ℤ)).rTensor ↥B) := by
+  rw [ker_d_rTensor_eq]
+  have h1 : ∀ y : TensorProduct ℤ ℤ ↥B,
+      ((syzygyEquiv n hn).toLinearMap.rTensor ↥B)
+        (((syzygyEquiv n hn).symm.toLinearMap.rTensor ↥B) y) = y := by
+    intro y
+    induction y using TensorProduct.induction_on with
+    | zero => simp
+    | add a b ha hb => simp [map_add, ha, hb]
+    | tmul a b =>
+      rw [LinearMap.rTensor_tmul, LinearMap.rTensor_tmul]
+      congr 1
+      exact (syzygyEquiv n hn).apply_symm_apply a
+  refine Submodule.map_comap_eq_self ?_
+  intro y _
+  exact LinearMap.mem_range.mpr
+    ⟨((syzygyEquiv n hn).symm.toLinearMap.rTensor ↥B) y, h1 y⟩
+
+/-- Composing the two maps is mapping twice, for the pair this file uses. -/
+theorem map_comp_map (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0)
+    (p : Submodule ℤ (TensorProduct ℤ
+      ↑((twoTermComplex 1 (cyclicPresentation n)).X 1) ↥B)) :
+    Submodule.map (((TensorProduct.lid ℤ ↥B).toLinearMap).comp
+        ((syzygyEquiv n hn).toLinearMap.rTensor ↥B)) p
+      = Submodule.map (TensorProduct.lid ℤ ↥B).toLinearMap
+          (Submodule.map ((syzygyEquiv n hn).toLinearMap.rTensor ↥B) p) := by
+  ext z
+  simp only [Submodule.mem_map, LinearMap.comp_apply]
+  constructor
+  · rintro ⟨x, hx, rfl⟩
+    exact ⟨_, ⟨x, hx, rfl⟩, rfl⟩
+  · rintro ⟨w, ⟨x, hx, rfl⟩, rfl⟩
+    exact ⟨x, hx, rfl⟩
+
 end Transport
 
 end CyclicTransport
@@ -1150,3 +1198,4 @@ end CyclicTransport
 #print axioms CyclicTransport.ker_constOne_rTensor_eq_bot
 #print axioms CyclicTransport.ker_subtype_rTensor_eq
 #print axioms CyclicTransport.ker_d_rTensor_eq
+#print axioms CyclicTransport.map_ker_d_rTensor_eq
