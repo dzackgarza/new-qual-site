@@ -21,6 +21,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §3.F Exercise 5, printed page
+    320; the statement matches word for word. Checked: applying Hom(A,−) and Ext(A,−)
+    to 0 → Z → Q → Q/Z → 0 and using Ext(A,Q) = 0 (Exercise 3) identifies Ext(A,Z)
+    with the cokernel of Hom(A,Q) → Hom(A,Q/Z); for A = Z_p^∞ the map is
+    Hom(Z_p^∞,Q) = 0 → Hom(Z_p^∞,Q/Z) = Ẑ_p, giving Ext(Z_p^∞,Z) ≅ Ẑ_p, as computed
+    by the other route on p. 317. No defect.
 ---
 
 ::: {.problem}
