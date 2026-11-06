@@ -23,6 +23,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.8,
+    exercise 9, book page 301: "If n > 2 and ζ is a primitive nth root of unity
+    over Q, then [Q(ζ + ζ^{-1}) : Q] = φ(n)/2." The card states exactly this. The
+    proof was checked: [Q(ζ) : Q] = φ(n) by Theorem 8.1; ζ satisfies
+    x^2 - (ζ + ζ^{-1})x + 1 over Q(ζ + ζ^{-1}), so the degree over that field is at
+    most 2; that field lies in R because ζ + ζ^{-1} = 2cos(2π/n), while a real
+    primitive nth root of unity is ±1, of order 1 or 2, so ζ is outside it and the
+    degree is exactly 2; the tower law then divides φ(n) by 2. Complete; no
+    defect.
 ---
 
 ::: {.problem}
