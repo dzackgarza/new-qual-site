@@ -12,7 +12,27 @@ classification:
   - Serre Criterion
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry (1977), Chapter III, section 3,
+    exercise 3.1, printed page 216 (PDF page 231 of
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, the checked-in
+    extraction). The printed exercise reads: "Let X be a noetherian scheme. Show
+    that X is affine if and only if X_red (II, Ex. 2.3) is affine. [Hint: Use
+    (3.7), and for any coherent sheaf F on X, consider the filtration by powers
+    of the nilradical.]" The card states the exercise and carries the hint's
+    filtration in its proof, so the statement matches. The proof was read and
+    checked: N^n = 0 from noetherianity of a finite affine cover, the layers
+    N^i F/N^{i+1}F are pushed forward from X_red because N acts by zero, hence
+    have vanishing H^1 when X_red is affine, and descending induction gives
+    H^1(X, F) = 0 for all coherent F, which is the criterion the card cites as
+    [[T-5IOUR]]. The criterion itself is taken from that theorem card, not
+    reproved here.
 ---
+
 ::: {.problem}
 Let $X$ be a noetherian scheme.
 Show that $X$ is affine if and only if $X_{\mathrm{red}}$ (II, Ex.
