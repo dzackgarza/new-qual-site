@@ -14,6 +14,19 @@ relations:
 - kind: uses
   target: PR-7OT2Z
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry, §I.1 Exercise 1.5 (scan page
+    23 of the retained PDF). What was checked: the printed biconditional — B
+    is isomorphic to the affine coordinate ring of some algebraic set in A^n
+    for some n if and only if B is a finitely generated k-algebra with no
+    nilpotent elements — against the card's statement, word for word. No
+    difference; no repair needed; the exercise carries no star. What was not
+    checked: the solution was read only for consistency with the statement,
+    not re-derived.
 ---
 
 ::: {.problem}
