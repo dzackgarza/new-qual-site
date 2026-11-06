@@ -22,6 +22,17 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Gave standard definitions, including the explicit multiplication convention for the semidirect product determined by c:H→Aut(K)."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 11, final part A(i)-(v).
+    All five definitions are the standard ones and correct: normal subgroup by
+    gNg^{-1} = N, Sylow p-subgroup of order the full p-part, simple as nontrivial with
+    only two normal subgroups, left action with the two axioms, and the semidirect
+    product with (k,h)(k',h') = (k c(h)(k'), hh'), whose identity and inverse are as
+    displayed. No defect.
+---
 ---
 
 ::: {.exercise}
