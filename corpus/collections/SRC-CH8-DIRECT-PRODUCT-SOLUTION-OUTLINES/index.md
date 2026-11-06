@@ -36,7 +36,8 @@ source:
         - id: P-CH8-15
           comment: Exercise 15
         - id: P-CH8-19
-          comment: Exercise 19
+          comment: Exercise 17 (printed as exercise 19 when the card was created;
+            the subgroup-of-Zm-x-Zn exercise is 17 in Gallian 7e)
         - id: P-CH8-20
           comment: Exercise 20
         - id: P-CH8-23
