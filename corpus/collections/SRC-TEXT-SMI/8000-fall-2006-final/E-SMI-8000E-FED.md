@@ -22,6 +22,17 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Used the center of a p^2-group for order 9 and Sylow plus the two possible C2-actions on C5 for order 10."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 12, final part D(i). The
+    proof of the chosen option is correct: a group of order 9 has centre of order 3 or
+    9, and a cyclic central quotient forces abelian, so no nonabelian group of order 9
+    exists; for order 10, n_5 = 1 gives C_5 normal, the Sylow 2-subgroup is C_2, and
+    the two possible C_2-actions on C_5 give C_10 and the dihedral group, so exactly
+    one nonabelian group of order 10. No defect.
+---
 ---
 
 ::: {.exercise}
