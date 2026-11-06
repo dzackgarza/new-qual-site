@@ -20,6 +20,15 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Compared the card's statement in full with the printed Exercise 2.4 (scan
+    page 26 of the retained PDF), tails included: hypotheses, every lettered
+    part and the closing clauses. Same remark; the correspondence and its note
+    agree (the card renders the book's "Note: since S_+ does not occur..." as
+    a clause of the same content).
 ---
 
 ::: {.problem}
