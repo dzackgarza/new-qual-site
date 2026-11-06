@@ -38,7 +38,7 @@ For fibrations $E_1 \to B$ and $E_2 \to B$, show that a fiber-preserving map $E_
 :::
 
 ::: {.solution}
-Let
+This is the Eckmann--Hilton dual of Proposition 0.19 (p. 16), which gives the corresponding statement for cofibrations; a fibration is a map with the homotopy lifting property for all spaces (p. 375), which is what the argument uses throughout. Let
 $$
 p_1:E_1\to B,
 \qquad
