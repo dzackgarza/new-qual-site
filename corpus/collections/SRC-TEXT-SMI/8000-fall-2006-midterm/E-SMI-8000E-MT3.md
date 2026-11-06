@@ -23,6 +23,18 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Stated the invariant-factor classification over a Euclidean domain, sketched existence via finite presentation and Smith normal form, and enumerated the six abelian groups of order 360 from the 2-, 3-, and 5-primary parts."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 10, midterm 3(a),(b). The
+    stated theorem is the invariant-factor form with d_1 | ... | d_t nonunits plus
+    the elementary-divisor form; the sketch (finite presentation, Smith normal form
+    by minimal-size pivots, cokernel, uniqueness by determinantal divisors) is the
+    standard existence argument and is sound. (b) is right: 360 = 2^3·3^2·5 gives
+    p(3)p(2)p(1) = 6 classes, and the six groups are displayed explicitly. No
+    defect.
+---
 ---
 
 ::: {.exercise}
