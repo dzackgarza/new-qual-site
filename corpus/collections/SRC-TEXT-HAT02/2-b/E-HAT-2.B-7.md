@@ -22,6 +22,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the local van Kampen injections and the free-group bonding maps for the horned constructions.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.B Exercise 7, printed page
+    177, together with the figure there. The exercise asks for an analysis, and the
+    card's description was checked against the standard construction: each handle of
+    the basic building block becomes four smaller handles in two linked pairs, so
+    after n stages the complement has free fundamental group on 4^n meridians, and
+    one old meridian a bounds a punctured genus-two surface, giving
+    a ↦ [a_1,a_2][a_3,a_4] in place of the single commutator of Example 2B.2 (p. 170).
+    No defect.
+---
 ---
 
 ::: {.problem}
