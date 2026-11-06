@@ -16,6 +16,22 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section IV.4,
+    exercise 3, book page 206, read from the page image: "Let π: Z → Z_2 be the
+    canonical epimorphism. The induced map π̄: Hom(Z_2, Z) → Hom(Z_2, Z_2) is the
+    zero map. Since Hom(Z_2, Z_2) ≠ 0 (Exercise 1(b)), π̄ is not an epimorphism."
+    The card states this, and adds the sentence that Hom(Z_2, -) is therefore not
+    right exact, which the printed exercise does not spell out but which is
+    exactly its point: applied to 0 → Z → Z → Z_2 → 0 the functor ends in
+    Hom(Z_2, Z_2) ≠ 0 reached from Hom(Z_2, Z) = 0, so the sequence is not exact
+    at the right. That added sentence is true. The proof was checked: a
+    homomorphism out of Z_2 into the torsion-free Z is zero, so the induced map
+    has zero domain, and the identity of Z_2 is a nonzero element missed by it.
+    Complete; no defect.
 ---
 
 ::: {.problem}
