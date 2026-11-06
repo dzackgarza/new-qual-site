@@ -22,6 +22,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.1,
+    exercise 8, book page 241: "If u ∈ F is algebraic of odd degree over K, then
+    so is u^2 and K(u) = K(u^2)." The card states exactly this. The proof was
+    checked: u^2 lies in the finite extension K(u) so is algebraic; u is a root
+    of X^2 - u^2 over K(u^2), so [K(u) : K(u^2)] ≤ 2; the tower law makes that
+    degree divide the odd number n = [K(u) : K]; hence it is 1 and K(u) =
+    K(u^2), after which [K(u^2) : K] = n is odd. Complete; no defect. The card
+    never divides by 2 or assumes char K ≠ 2, which is right: the argument is
+    degree-theoretic.
 ---
 
 ::: {.problem}
