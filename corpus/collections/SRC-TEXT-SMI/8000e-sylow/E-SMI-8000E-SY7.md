@@ -22,6 +22,16 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Proved the fixed-point congruence by orbit decomposition and deduced Sylow conjugacy from the P'-action on G/P without invoking the conjugacy part of Sylow's theorem."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 7, Sylow problem 7, both
+    parts and the printed restriction to part (i) and existence only. Correct: the
+    fixed point count is ≡ |X| mod p by orbit decomposition; P' acts on G/P by left
+    multiplication, whose size [G : P] is prime to p, so a fixed coset gP exists
+    and g^{-1}P'g ≤ P, hence equal by equal orders. No defect.
+---
 ---
 
 ::: {.exercise}
