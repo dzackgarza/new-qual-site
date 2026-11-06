@@ -22,6 +22,16 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Chose Cayley--Hamilton over a commutative field and proved it from the adjugate identity by coefficient comparison."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 12, final part H(ii), the
+    option proved, with the sheet's instruction to say what the hypotheses are: the
+    card states F a field, n ≥ 1 and A in M_n(F), and proves chi_A(A) = 0 by comparing
+    coefficients in (tI - A)adj(tI - A) = chi_A(t)I and descending the recurrence to
+    B_0. Correct. No defect.
+---
 ---
 
 ::: {.exercise}
