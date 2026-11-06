@@ -22,6 +22,18 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Enumerated elementary-divisor decompositions of total F_2-dimension three using the two linear irreducibles, unique quadratic irreducible, and two cubic irreducibles, obtaining fourteen classes."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 4, item #4. The count
+    was recomputed independently by invariant factors: monic degree-3 polynomials
+    over F_2 give 8 classes with one invariant factor, chains f_1 | f_2 of degrees
+    1 and 2 give 4, and chains of three linear factors give 2, for 14 in total,
+    matching the card's 6 + 4 + 2 + 2. The irreducibles listed (X, X+1, X^2+X+1,
+    X^3+X+1, X^3+X^2+1) are exactly the monic irreducibles of degree at most 3,
+    checked by the no-root test the card performs. No defect.
+---
 ---
 
 ::: {.exercise}
