@@ -94,3 +94,9 @@ elements. So there are seven, listed above.
 
 
 :::
+
+::: {.remark}
+Certificate. `proofs/cards/CH8DirectProduct.g` checks in GAP that
+$\ZZ_{2}\oplus\ZZ_{2}\oplus\ZZ_{2}$ has exactly seven subgroups of order $2$
+(`P-CH8-2` in the file), by filtering GAP's own subgroup list.
+:::
