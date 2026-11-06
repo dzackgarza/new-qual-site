@@ -22,6 +22,17 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Reduced to a Sylow p-subgroup, then proved by induction that a finite p-group has subgroups of every intermediate p-power order using a central subgroup of order p and passage to the quotient."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 8, Sylow problem 10, with
+    its printed hint. Correct: it suffices to work inside a Sylow p-subgroup of
+    order p^r, and a p-group has subgroups of every order p^s by induction on r
+    using a central subgroup of order p and the preimage of a subgroup of P/C. The
+    hint's two ingredients (induction, nontrivial centre) are exactly those used.
+    No defect.
+---
 ---
 
 ::: {.exercise}
