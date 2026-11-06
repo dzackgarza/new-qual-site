@@ -21,7 +21,7 @@ Show that the Hopf invariant of a composition $S^{2n-1} \xrightarrow{f} S^{2n-1}
 :::
 
 ::: {.solution}
-For a map $h:S^{2n-1}\to S^n$, write $C_h=S^n\cup_h e^{2n}$. Choose generators $x_h\in H^n(C_h;\ZZ)$ and $y_h\in H^{2n}(C_h;\ZZ)$ compatible with orientations. The Hopf invariant is defined by
+For a map $h:S^{2n-1}\to S^n$, write $C_h=S^n\cup_h e^{2n}$ (p. 427). Its cohomology is $\ZZ$ in degrees $0$, $n$ and $2n$ and zero otherwise, since the cellular chain complex has one cell in each of those dimensions and the boundary $\ZZ\to\ZZ$ in degree $2n$ is multiplication by $\deg h=0$ as $2n-1>n$ (Theorem 2.35, p. 139). Choose generators $x_h\in H^n(C_h;\ZZ)$ and $y_h\in H^{2n}(C_h;\ZZ)$ compatible with orientations. The Hopf invariant is defined by
 $$
 x_h^2=H(h)y_h.
 $$
