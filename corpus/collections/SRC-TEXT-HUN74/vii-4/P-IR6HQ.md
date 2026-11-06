@@ -15,6 +15,20 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section VII.4,
+    exercise 4, book page 365, read from the page image: "If q is the minimal
+    polynomial of a linear transformation φ : E → E, with dim_K E = n, then
+    deg q ≤ n." The card states exactly this. The proof was checked: the
+    characteristic polynomial det(xI_n − A) is monic of degree n, Cayley-Hamilton
+    gives p(φ) = 0, and the minimal polynomial generates the ideal of polynomials
+    annihilating φ, so q | p and deg q ≤ n. Cayley-Hamilton is Theorem 5.3, later
+    in the same chapter, and is available as a theorem; within section 4 the same
+    bound also follows from q being an invariant factor whose product with the
+    others is p. Complete; no defect.
 ---
 
 ::: {.problem}
