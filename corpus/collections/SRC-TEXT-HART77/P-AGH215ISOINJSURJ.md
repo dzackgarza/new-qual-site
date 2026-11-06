@@ -12,7 +12,24 @@ classification:
   - Stalks
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry (1977), Chapter II, section 1,
+    exercise 1.5, printed page 66 (PDF page 81 of
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, the checked-in
+    extraction). The printed exercise reads: "Show that a morphism of sheaves
+    is an isomorphism if and only if it is both injective and surjective." The
+    card states exactly this. The proof was checked: injective plus surjective
+    is exactness of 0 -> F -> G -> 0, which by exercise 1.2 is exactness on
+    stalks, hence every phi_P is an isomorphism; conversely an isomorphism on
+    stalks gives injectivity on sections and local liftability of sections of
+    G, and the lifts agree on overlaps by injectivity, so they glue and the
+    sectionwise inverses are compatible with restriction.
 ---
+
 
 ::: {.problem}
 Show that a morphism of sheaves is an isomorphism if and only if it is both injective and surjective.
