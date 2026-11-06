@@ -22,6 +22,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section VII.1,
+    exercise 7, book page 335: "Similarity of matrices is an equivalence relation
+    on Mat_n R. Equivalence of matrices is an equivalence relation on the set of
+    all m × n matrices over R." The card states exactly this. The proof was
+    checked: reflexivity by I_n and I_m, symmetry by taking inverses of the
+    conjugating and multiplying matrices, transitivity by multiplying them; the
+    products of invertible matrices are invertible, which is the only fact used.
+    Complete; no defect.
 ---
 
 ::: {.problem}
