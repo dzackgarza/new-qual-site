@@ -18,6 +18,22 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.1,
+    exercise 4(d), book page 241: "(d) If each u_i is algebraic over K, then
+    K(u_1, ..., u_n) = K[u_1, ..., u_n]." The card states exactly this part,
+    which is the part the collection lists. The proof was checked: for α
+    algebraic over a field L with minimal polynomial m_α, evaluation gives
+    L[x]/(m_α) ≅ L[α], and since m_α is irreducible the ideal is maximal, so
+    L[α] is a field and equals L(α); adjoining the α_i one at a time, each
+    remains algebraic over the larger field because its minimal polynomial over
+    K is still available there; and K[u_1, ..., u_n] is the iterated simple
+    extension ring. Complete; no defect. The card claims only part (d); parts
+    (a), (b), (c) of the same exercise are not claimed.
+---
 
 ---
 
