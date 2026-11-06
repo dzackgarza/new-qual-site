@@ -43,7 +43,7 @@ $$
 Q=\{(x_1,\ldots,x_n):0\le x_1\le\cdots\le x_n\le1\}
 \longrightarrow SP_n(I).
 $$
-The domain is compact and the target is Hausdorff, so this is a homeomorphism.
+The domain is compact, and the target is Hausdorff: $SP_n(I)=I^n/\Sigma_n$ is the quotient of the compact Hausdorff space $I^n$ by the finite group $\Sigma_n$ acting by permutations, and such a quotient is Hausdorff (distinct orbits are finite sets, separated by disjoint saturated open sets). A continuous bijection from a compact space to a Hausdorff space is a homeomorphism, so this is one.
 
 Now set
 $$
