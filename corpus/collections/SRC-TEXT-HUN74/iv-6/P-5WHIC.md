@@ -22,6 +22,21 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section IV.6,
+    exercise 3, book page 226, read from the page image: "Let A be a cyclic
+    R-module of order r ∈ R. (a) If s ∈ R is relatively prime to r, then sA = A
+    and A[s] = 0. (b) If s divides r, say sk = r, then sA ≅ R/(k) and
+    A[s] ≅ R/(s)." The card states both parts, with the section's standing
+    hypothesis R a PID made explicit and nonzero order, both of which the book's
+    note supplies. The proof was checked: Bézout us + vr = 1 gives x = s(ux) for
+    all x because rx = 0, and the same identity kills any element annihilated by
+    s; for (b) the maps t ↦ tsa and t ↦ tka have kernels (k) and (s) by
+    cancellation of the nonzero elements s and k in the domain R, and surjectivity
+    of the second uses st ∈ (r) to write t = uk. Complete; no defect.
 ---
 
 ::: {.problem}
