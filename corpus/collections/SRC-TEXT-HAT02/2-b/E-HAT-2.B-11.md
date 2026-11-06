@@ -22,6 +22,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the determinant or transfer-sequence argument, including the mod-2 endpoint maps.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.B Exercise 11, printed page
+    177; the statement matches word for word. Checked: X × S^∞ ≃ X, so over Z_2 the
+    transfer sequence of X × S^∞ → X × RP^∞ gives H_n(B) ≅ H_{n−1}(B) ⊕ H_n(X) with
+    B = X × RP^∞, since H_n(E) = H_n(X) and the connecting map shifts degree by one
+    onto the kernel of the projection; inducting on n from H_0(X × RP^∞) = H_0(X)
+    yields H_n(X × RP^∞;Z_2) ≅ ⊕_{i≤n} H_i(X;Z_2). No defect.
+---
 ---
 
 ::: {.problem}
