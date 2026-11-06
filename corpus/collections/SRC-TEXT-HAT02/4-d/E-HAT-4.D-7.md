@@ -29,7 +29,7 @@ Show that if a disk bundle $D^n \to E \to B$ has a Thom class with $\ZZ$ coeffic
 :::
 
 ::: {.solution}
-Let
+Hatcher defines a sphere bundle $S^{n-1}\to E'\to B$ to be orientable if each lifted transport homotopy equivalence $L_\gamma$ of a loop induces the identity on $H^{n-1}(S^{n-1};\ZZ)$, and a disk bundle to be orientable if its boundary sphere bundle is (p. 442); the exercise is the converse of Theorem 4D.10 (p. 442). Let
 $$
 (D^n,S^{n-1})\longrightarrow(E,E')\longrightarrow B
 $$
