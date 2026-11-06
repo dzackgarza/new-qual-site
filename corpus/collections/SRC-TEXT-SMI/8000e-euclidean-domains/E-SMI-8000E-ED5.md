@@ -13,9 +13,20 @@ classification:
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: muse-spark-1.2
-  date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 2, Euclidean-domain
+    problem 5, whose hint asks for induction on the size of the upper-left entry
+    rather than on the number of prime factors. The card instead minimizes the
+    size of a nonzero entry over the equivalence class and then inducts on m + n;
+    both reductions are correct and the induction step preserves the cleared first
+    row and column. Checked in detail: if b_11 does not divide b_1j then Euclidean
+    division produces a smaller nonzero entry after a column operation, so b_11
+    divides the first row and column and those are cleared, and operations on the
+    remaining block are operations on the big matrix fixing its first row and
+    column. No defect.
 ---
 
 ::: {.exercise}
