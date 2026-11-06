@@ -56,30 +56,30 @@ $$
 
 Assume first that $n>1$. Then the base is simply connected. The fiber cannot be $S^0$, since a bundle with discrete two-point fiber over a simply connected base is the trivial double cover, whose total space is disconnected. Hence $k>0$, and by (1), $m>n$ and $m>k$.
 
-The long exact homotopy sequence of the bundle contains
+The long exact homotopy sequence of the bundle (Theorem 4.41, p. 376) contains
 $$
 \pi_n(S^m)\longrightarrow\pi_n(S^n)
 \longrightarrow\pi_{n-1}(S^k).
 $$
-Since $m>n$, the first group is zero, while
+Since $m>n$, the first group is zero (Corollary 4.9, p. 349), while
 $$
-\pi_n(S^n)\cong\ZZ.
+\pi_n(S^n)\cong\ZZ
 $$
-Thus $\pi_{n-1}(S^k)\ne0$, forcing
+(Corollary 4.25, p. 361). Exactness makes the map $\ZZ\to\pi_{n-1}(S^k)$ injective, so $\pi_{n-1}(S^k)\ne0$; but $\pi_i(S^k)=0$ whenever $i<k$ (Corollary 4.9, p. 349), forcing
 $$
 k\le n-1.
 \tag{2}
 $$
-On the other hand, if $k<n-1$, then the segment
+On the other hand, if $k<n-1$, then by Corollary 4.9 (p. 349) the segment
 $$
 \pi_{k+1}(S^n)\longrightarrow\pi_k(S^k)
 \longrightarrow\pi_k(S^m)
 $$
-would be
+of the same sequence would be
 $$
-0\longrightarrow\ZZ\longrightarrow0,
+0\longrightarrow\ZZ\longrightarrow0
 $$
-a contradiction. Hence
+(with $\pi_k(S^k)\cong\ZZ$ by Corollary 4.25, p. 361, and $\pi_k(S^m)=0$ because $k<m$); exactness would make the middle group a quotient of $0$, a contradiction. Hence
 $$
 k\ge n-1.
 \tag{3}
@@ -92,7 +92,7 @@ and then (1) gives
 $$
 \boxed{m=2n-1}.
 $$
-For $n=1$, the same dimension relation and the homotopy sequence force $k=0$, hence $m=1$, which is the exceptional double-cover case.
+For $n=1$, the same dimension relation $m=1+k$ and the segment $\pi_1(S^m)\to\pi_1(S^1)\to\pi_0(S^k)$ force $k=0$: if $k>0$ then $\pi_0(S^k)=0$, so $\pi_1(S^m)\to\pi_1(S^1)=\ZZ$ would be onto, whereas $m=1+k\ge2$ gives $\pi_1(S^m)=0$. Hence $m=1$, which is the exceptional double-cover case $S^0\to S^1\to S^1$.
 
 Now suppose $n>1$, so the bundle has the form
 $$
@@ -106,7 +106,7 @@ This is a closed $2n$-manifold. Indeed, away from the copy of $S^n$ and the cone
 $$
 U\times D^n\cong\RR^{2n}.
 $$
-A neighborhood of the cone point is the cone on $S^{2n-1}$, hence a $2n$-disk.
+A neighborhood of the cone point is the cone on $S^{2n-1}$, hence a $2n$-disk. It is orientable: $C_p$ is the one-point compactification of the interior of the associated disk bundle $D^n\to D(E)\to S^n$, and the tangent bundle of $D(E)$ is $\pi^*TS^n\oplus\pi^*\xi$ for the rank $n$ vector bundle $\xi$ of the bundle; since $H^1(S^n;\ZZ_2)=0$ for $n>1$, every vector bundle over $S^n$ has $w_1(\xi)=0$, so $D(E)$ and hence $C_p$ are orientable.
 
 The cellular cohomology of the mapping cone has
 $$
@@ -118,12 +118,12 @@ Let $\alpha$ and $\beta$ be generators in these degrees. By definition of the Ho
 $$
 \alpha^2=H(p)\,\beta.
 $$
-Since $C_p$ is a closed orientable $2n$-manifold, Poincaré duality says that the middle-dimensional intersection pairing
+Since $C_p$ is a closed connected orientable $2n$-manifold, Poincaré duality (Theorem 3.30, p. 241) makes the cup product pairing
 $$
 H^n(C_p;\ZZ)\times H^n(C_p;\ZZ)
 \longrightarrow H^{2n}(C_p;\ZZ)\cong\ZZ
 $$
-is unimodular. As the middle cohomology has rank one, its matrix is the $1\times1$ matrix $(H(p))$. Unimodularity therefore forces
+nonsingular, in the form of Corollary 3.39 (p. 250): an element of $H^n$ generates an infinite cyclic summand if and only if it pairs to a generator with some element of the complementary degree. Write $\alpha^2=H(p)\,\gamma$ with $\gamma$ a generator of $H^{2n}(C_p;\ZZ)\cong\ZZ$. Since $H^n(C_p;\ZZ)\cong\ZZ=\ZZ\langle\alpha\rangle$, every element of $H^n$ is $\beta=m\alpha$, so $\alpha\smile\beta=mH(p)\,\gamma$; Corollary 3.39 supplies such a $\beta$ for which this is a generator of $H^{2n}$, forcing $mH(p)=\pm1$ and hence
 $$
 \boxed{H(p)=\pm1}.
 $$
