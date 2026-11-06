@@ -45,9 +45,9 @@ and we define
 $$
 H_*^{lf}(X;G)=H_*(C_*^{lf}(X;G)).
 $$
-Ordinary finite chains embed as a subcomplex. Proper maps induce homomorphisms on locally finite chains, since the inverse image of a compact neighborhood is compact and therefore meets only finitely many simplices in a locally finite family.
+Ordinary finite chains embed as a subcomplex. A proper map $f\colon X\to Y$ carries a locally finite family $\{\sigma\}$ of $X$ to a locally finite family $\{f\circ\sigma\}$ of $Y$: a compact neighborhood $K$ of a point of $Y$ has compact inverse image, which meets only finitely many of the $\sigma$, hence $K$ meets only finitely many of the images. When in addition only finitely many of the $\sigma$ with $g_\sigma\neq0$ map to any one simplex — as for a covering projection, or whenever the fibres of $f$ on simplices are finite — the coefficient sums are finite and $f$ induces $f_*\colon C_*^{lf}(X;G)\to C_*^{lf}(Y;G)$. With infinite multiplicities the termwise sum is not defined, so this is a genuine hypothesis rather than a formality.
 
-Now suppose $X$ is a finite-dimensional locally compact CW complex. Such a CW complex is locally finite: every point has a neighborhood meeting only finitely many cells. Hence an arbitrary formal cellular chain
+Now suppose $X$ is a finite-dimensional locally compact CW complex. Then $X$ is locally finite: a point $x$ has a compact neighborhood $N$, and by Proposition A.1 (p. 520) $N$ is contained in a finite subcomplex of $X$, so $N$ meets only finitely many cells. Hence an arbitrary formal cellular chain
 $$
 \sum_\alpha g_\alpha e_\alpha^n
 $$
@@ -62,9 +62,9 @@ $$
 H_n^{lf}(X^n,X^{n-1};G)
 \cong\prod_{e_\alpha^n}G,
 $$
-the product rather than the direct sum, since infinitely many $n$-cells may carry nonzero coefficients. The boundary maps in the exact couples of the skeletal filtration are exactly the usual cellular incidence-number boundary maps, extended to these infinite locally finite sums.
+the product rather than the direct sum, since infinitely many $n$-cells may carry nonzero coefficients and all of them may be taken nonzero at once ($X$ is locally finite). Concretely the relative complex in degree $n$ consists of all formal sums $\sum_\alpha g_\alpha e^n_\alpha$, with no finiteness restriction, and it has no other degrees after passing to the quotient $X^n/X^{n-1}=\bigvee_\alpha S^n_\alpha$. The passage to the quotient is excision, Theorem 2.20 (p. 119), and the homology of that wedge is $\prod_\alpha G$ in degree $n$ and $0$ elsewhere. The long exact sequences of the pairs $(X^n,X^{n-1})$ are those of Theorem 2.16 (p. 117), available here because $C_*^{lf}(X^{n-1})\to C_*^{lf}(X^n)\to C_*^{lf}(X^n,X^{n-1})$ is short exact. The boundary maps in the exact couples of the skeletal filtration are therefore exactly the usual cellular incidence-number boundary maps, extended to these infinite locally finite sums.
 
-Because $X$ is finite-dimensional, the skeletal filtration is finite in each total degree, so the standard cellular-homology argument applies without convergence issues. It yields a chain equivalence between $C_*^{lf}(X;G)$ and the locally finite cellular complex
+Because $X$ is finite-dimensional, the skeletal filtration is finite in each total degree, so the standard cellular-homology argument — the five-lemma of Lemma 2.34 (p. 137) and the comparison with the singular complex in Theorem 2.35 (p. 139) — applies without convergence issues; the only change is that the chain groups are these products rather than direct sums, which affects none of the incidence-number algebra. It yields a chain equivalence between $C_*^{lf}(X;G)$ and the locally finite cellular complex
 $$
 C_n^{lf,cell}(X;G)=\left\{\sum_\alpha g_\alpha e_\alpha^n\right\},
 $$
