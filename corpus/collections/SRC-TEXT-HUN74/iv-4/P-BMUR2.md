@@ -16,6 +16,21 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section IV.4,
+    exercise 1, book page 206, whose four parts were read from the page image:
+    "(a) For any abelian group A and positive integer m, Hom(Z_m, A) ≅ A[m] =
+    {a ∈ A | ma = 0}. (b) Hom(Z_m, Z_n) ≅ Z_(m,n). (c) The Z-module Z_m has
+    Z_m* = 0. (d) For each k ≥ 1, Z_m is a Z_mk-module (Exercise 1.1); as a
+    Z_mk-module, Z_m* ≅ Z_m." The card states all four parts with the same
+    hypotheses. All four were checked: evaluation at 1 is a bijection onto A[m]
+    with inverse a ↦ (k̄ ↦ ka), well defined because k - k' = qm kills ma = 0;
+    Z_n[m] = (n/d)Z_n has order d = gcd(m,n); Hom(Z_m, Z) = Z[m] = 0; and for
+    Z_mk the elements killed by m are exactly the multiples of k̄, which form a
+    cyclic submodule of order m isomorphic to Z_m. Complete; no defect.
 ---
 
 ::: {.problem}
