@@ -12,6 +12,25 @@ classification:
   - Rings
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section IV.1,
+    exercise 7, book page 179: "(a) If A and B are R-modules, then the set
+    Hom_R(A,B) of all R-module homomorphisms A → B is an abelian group with
+    f + g given on a ∈ A by (f + g)(a) = f(a) + g(a) ∈ B. The identity element
+    is the zero map. (b) Hom_R(A,A) is a ring with identity, where multiplication
+    is composition of functions. Hom_R(A,A) is called the endomorphism ring of
+    A. (c) A is a left Hom_R(A,A)-module with fa defined to be f(a)." The card
+    states exactly the three parts. The proof was checked: pointwise sums and
+    inverses are R-linear because addition in B is abelian and B is a module;
+    the endomorphism ring axioms use additivity of f for right distributivity
+    and pointwise addition for left distributivity, and id_A is the identity;
+    the module axioms in (c) are exactly f(a+b) = f(a)+f(b), pointwise
+    addition, (f∘g)(a) = f(g(a)) and id_A(a) = a, so the action is unitary.
+    Complete; no defect.
 ---
 
 ::: {.problem}
