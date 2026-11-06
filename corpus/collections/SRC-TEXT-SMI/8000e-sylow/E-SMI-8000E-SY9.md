@@ -23,6 +23,21 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Classified all invertible rational forms over F2, independently verified the six conjugacy-class sizes 1,21,56,42,24,24 by exact enumeration, counted all element orders and Sylow subgroups, exhibited representatives, and proved simplicity from the conjugacy-class sizes."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 7, Sylow problem 9, the
+    whole of it. Every number was checked, most of them again by brute-force
+    enumeration of the 168 invertible 3 × 3 matrices over F_2: order 168 = 2^3·3·7;
+    four characteristic polynomials by the nonzero constant term; six rational
+    forms (three partitions for (x+1)^3 and one for each of x^3+1 and the two
+    irreducible cubics); element orders 1, 21, 56, 42, 48; conjugacy class sizes
+    1, 21, 56, 42, 24, 24 summing to 168; n_7 = 8, n_3 = 28, n_2 = 21 from
+    2n_2 ≥ 42 and n_2 | 21; the five exhibited representatives have orders
+    2, 3, 4, 7, 7 as stated; and no nontrivial proper normal subgroup exists because
+    none of 23, 27, 41, 55, 83 is a subset sum of 21, 42, 56, 24, 24. No defect.
+---
 ---
 
 ::: {.exercise}
