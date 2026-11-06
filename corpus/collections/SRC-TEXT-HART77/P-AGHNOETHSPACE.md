@@ -14,6 +14,19 @@ relations:
 - kind: uses
   target: D-9DIKB
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry, §I.1 Exercise 1.7 (scan page
+    23 of the retained PDF). What was checked: parts (a), (c), (d) against the
+    card word for word — the four equivalent conditions, subsets of Noetherian
+    spaces, and the Hausdorff case — all agree. Part (b) differs: the book
+    reads "A noetherian topological space is quasi-compact, i.e., every open
+    cover has a finite subcover", and the card had dropped the gloss after
+    i.e., which is the definition the part turns on; restored. What was not
+    checked: the solution was read only for consistency, not re-derived.
 ---
 
 ::: {.problem}
@@ -27,7 +40,7 @@ review: draft
 
 - every nonempty family of open subsets has a maximal element.
 
-(b) A Noetherian topological space is quasicompact.
+(b) A Noetherian topological space is quasicompact, i.e. every open cover has a finite subcover.
 
 (c) Any subset of a Noetherian topological space is Noetherian in its induced topology.
 
