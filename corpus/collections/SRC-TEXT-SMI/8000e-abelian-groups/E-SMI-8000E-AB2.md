@@ -16,6 +16,21 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith Math 8000 packet 8000e.pdf page 1,
+    abelian-groups problem 2: "prove if 0-->A-->B-->Z^t-->0 is an exact sequence,
+    then B is isomorphic to Ax(Z^t) ... Give an example of an exact sequence
+    0-->Z^s-->Z^t-->C-->0 that does not split, and where Z^t is not isomorphic
+    [by any map], to Z^s x C." The card states both halves with the printed hint.
+    The proof was checked: freeness of Z^t makes e_i ↦ b_i a homomorphism s with
+    p∘s = id, and Psi(a,z) = i(a) + s(z) is injective because p∘Psi recovers z
+    and i is injective, surjective because b - s(p(b)) lies in ker p = im i. The
+    example 0 → Z →(·2) Z → Z/2 → 0 is exact, Z × Z/2 has a torsion element while
+    Z does not, and every Z/2 → Z is zero, so the sequence does not split. The
+    card's s = t = 1, C = Z/2 is a valid instance. Complete; no defect.
 ---
 
 ::: {.exercise}
