@@ -40,11 +40,11 @@ $$
 \qquad
 p:\widetilde X\to X
 $$
-be the universal cover. Proposition 3H.5 identifies
+be the universal cover. Proposition 3H.5 (p. 334) identifies
 $$
 H^n(X;\ZZ[\pi])\cong H_c^n(\widetilde X;\ZZ).
 $$
-Since $X$ is a finite connected graph with free fundamental group of rank $g>0$, $\widetilde X$ is a locally finite tree.
+Since $X$ is a finite connected graph with free fundamental group of rank $g>0$, $\widetilde X$ is a tree (Example 1B.1, p. 88: a connected graph is a $K(G,1)$ because its universal cover is a tree), it is locally finite because $X$ is (each vertex of $X$ has finitely many incident edges, and Lemma 1A.3, p. 85, says the cover is again a graph with vertices and edges the lifts), and it is contractible.
 
 Choose an exhaustion by finite connected subtrees
 $$
@@ -52,16 +52,16 @@ T_1\subset T_2\subset\cdots,
 \qquad
 \bigcup_iT_i=\widetilde X.
 $$
-Compactly supported cohomology is
+Compactly supported cohomology is the direct limit over compact subsets displayed in Hatcher's alternative definition (p. 245); by Proposition A.1 (p. 520) every compact subset lies in a finite subcomplex, and such a subcomplex lies in some $T_i$ since $T_i$ contains every vertex at distance $\le i$ (see below), so the $T_i$ are cofinal and
 $$
 H_c^n(\widetilde X)
 \cong\varinjlim_i H^n(\widetilde X,\widetilde X-T_i).
 $$
-Because $\widetilde X$ is contractible and one-dimensional, the long exact sequence of the pair gives
+Because $\widetilde X$ is contractible and one-dimensional and $\widetilde X-T_i$ is a disjoint union of subtrees, the long exact sequence of the pair (Theorem 2.16, p. 117) gives
 $$
 H^n(\widetilde X,\widetilde X-T_i)=0\qquad(n\ne1),
 $$
-while
+for $n=0$ because $T_i\neq\emptyset$ meets each of the components of the connected space $\widetilde X$, so that $H^0(\widetilde X)\to H^0(\widetilde X-T_i)$ is injective, and for $n\ge2$ because $H^{n}(\widetilde X)=0$ and $H^{n-1}(\widetilde X-T_i)=0$ (a disjoint union of contractible pieces has no cohomology in positive degrees); and
 $$
 H^1(\widetilde X,\widetilde X-T_i)
 \cong\widetilde H^0(\widetilde X-T_i).
@@ -107,7 +107,7 @@ $$
 \qquad
 \psi_i\sigma_i=\operatorname{id}.
 $$
-The $T_i$ are cofinal among compact subsets of $\widetilde X$: every compact set lies in a finite subcomplex by Proposition A.1, and a subcomplex lies in $T_i$ as soon as its vertices do, since $T_i$ contains every edge whose two endpoints lie in it; so Hatcher's description of $H_c^*$ as the direct limit over compact sets applies to this sequence.
+The $T_i$ are cofinal among compact subsets of $\widetilde X$: every compact set lies in a finite subcomplex by Proposition A.1 (p. 520), and a subcomplex lies in $T_i$ as soon as its vertices do, since $T_i$ contains every edge whose two endpoints lie in it; so Hatcher's description of $H_c^*$ as the direct limit over compact sets applies to this sequence.
 
 (b) *The splitting.* Realise the reduced group as $\widetilde H^0(Y)=H^0(Y)/\ZZ\cdot\mathbf 1$, the quotient by constant functions, and define
 $$
