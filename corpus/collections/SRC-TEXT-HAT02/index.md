@@ -931,6 +931,10 @@ source:
       comment: 4.I.2
     - id: E-HAT-4.I-3
       comment: 4.I.3
+  - name: 4.J
+    problems:
+    - id: E-HAT-4.J-1
+      comment: 4.J.1
   - name: 4.K
     problems:
     - id: E-HAT-4.K-1
