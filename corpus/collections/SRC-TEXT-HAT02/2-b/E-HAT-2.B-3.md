@@ -22,6 +22,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the Alexander-duality and Mayer--Vietoris calculations and all degree shifts.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.B Exercise 3, printed page
+    176, with the printed hint. Checked: k = 0 by radial projection; for 0 < k < n,
+    gluing two copies of (D^n, D) to the ends of (S^{n−1}×I, S×I) makes an embedded
+    S^k in S^n whose complement W is covered by the two copies of B with intersection
+    ≃ A, and Alexander duality gives H̃_j(A) ≅ H̃_j(W) ≅ Z exactly in degree
+    d = n−k−1, so reduced Mayer–Vietoris forces H̃_d(B)² to be an extension of Z by
+    Z, free of rank 2, with i_* = diag(m,−m) whose cokernel Z ⊕ Z_m must be Z, hence
+    m = 1; k = n gives A and B empty. No defect.
+---
 ---
 
 ::: {.problem}
