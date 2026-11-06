@@ -23,6 +23,24 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.4,
+    exercise 10, parts (a), (g) and (h), book page 277: "(a) x^4 - 5 over Q; over
+    Q(√5); over Q(√5i). (g) x^3 - 2 over Q. (h) (x^3 - 2)(x^2 - 5) over Q." The
+    card states the three parts it answers, with Q(i√5) for the printed Q(√5i).
+    Every group in the card was recomputed. x^4 - 5: the splitting field is
+    Q(∜5, i) of degree 8, and the exhibited automorphisms r (α ↦ iα, i ↦ i) and
+    s (α ↦ α, i ↦ -i) satisfy s r s = r^{-1} and generate a group of order 8, so
+    D_4; over Q(√5) = Q(α^2) the fixed group is ⟨r^2, s⟩ and over Q(i√5) it is
+    ⟨r^2, rs⟩, both of order 4 with commuting involutions, so Z_2 × Z_2 in each
+    case. x^3 - 2 has splitting field Q(∛2, ω) of degree 6, embedding in S_3, so
+    S_3. For (x^3-2)(x^2-5) the splitting field is the compositum and
+    M ∩ Q(√5) = Q because the only quadratic subfield of Q(∛2, ω) is
+    Q(√-3) = Q(ω), from disc(x^3 - 2) = -108 = -3·36; hence S_3 × Z_2. All the
+    answers are right. Complete; no defect.
 ---
 
 ::: {.problem}
