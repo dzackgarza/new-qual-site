@@ -23,6 +23,25 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section IV.1,
+    exercise 12, book page 180: "(The Five Lemma). Let [diagram] be a commutative
+    diagram of R-modules and R-module homomorphisms, with exact rows. Prove that:
+    (a) α_1 an epimorphism and α_2, α_4 monomorphisms ⇒ α_3 is a monomorphism;
+    (b) α_5 a monomorphism and α_2, α_4 epimorphisms ⇒ α_3 is an epimorphism."
+    The book prints the diagram as a figure; the card's reconstruction is the
+    standard five-term ladder A_1 → A_2 → A_3 → A_4 → A_5 over B_1 → ... → B_5
+    with α_i vertical over A_i, which is the only shape on which the stated
+    hypotheses of (a) and (b) can be made. That figure was read from the page
+    image of book page 180 (rendered from the retained PDF), and it is the
+    five-term ladder with α_1, ..., α_5 in that order over A_1, ..., A_5, so the
+    card's transcription of it is right. Both diagram chases were checked
+    line by line, including that (a) uses exactness only at A_2, A_3, B_2, B_1
+    and (b) only at A_4, A_3, B_4, B_3, and that each cited hypothesis is used
+    exactly once. Complete; no defect.
 ---
 
 ::: {.problem}
