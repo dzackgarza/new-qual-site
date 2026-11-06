@@ -23,6 +23,19 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Used dimensions of successive kernels to count cyclic/Jordan blocks and their lengths, then used exponent equal to total order and maximal Jordan-block sizes to force the final two unique classifications."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problems, Smith 8000e.pdf page 3, item 3(a),(b), the
+    "annihilator 648" item, and the "7 by 7 Jordan matrices over Q with minimal
+    polynomial (t-2)^3(t-3)^4" item that continues at the top of page 4. All four
+    answers checked: dim ker(2) = 2 and dim ker(2^2)/ker(2) = 1 force the 2-part
+    Z/4 ⊕ Z/2 and the stated 3-part data force Z/9 ⊕ Z/9, so the group is unique;
+    the kernel dimensions at 2 and 3 force block sizes (2,1) and (2,2); exponent
+    648 forces Z/648; and minimal polynomial (t-2)^3(t-3)^4 with only 7
+    dimensions forces J_3(2) ⊕ J_4(3). No defect.
+---
 ---
 
 ::: {.exercise}
