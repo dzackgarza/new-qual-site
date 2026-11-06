@@ -49,5 +49,5 @@ $$
 \boxed{SP_2(S^1)\cong\text{Möbius band}.}
 $$
 
-This agrees with Example 4K.5. For $n=1$, the space denoted there by $S^n\RP^{\,n-1}$ is the unreduced suspension of $\RP^0$, hence an interval. The example describes $SP_2(S^1)$ as the mapping cone obtained by attaching the cone on this interval to the diagonal $S^1$ via the endpoint identification coming from interchanging the two points. Attaching this twisted strip to the diagonal circle is precisely the usual mapping-cone construction of a Möbius band. Thus the two descriptions coincide.
+This agrees with Example 4K.5 (p. 482), where $S^n\RP^{n-1}$ denotes the $n$-fold unreduced suspension of $\RP^{n-1}$. For $n=1$, $\RP^0$ is a point, so that space is the (unreduced) suspension of a point, an interval. The example describes $SP_2(S^1)$ as the mapping cone obtained by attaching the cone on this interval to the diagonal $S^1$ via the endpoint identification coming from interchanging the two points. Attaching this twisted strip to the diagonal circle is precisely the usual mapping-cone construction of a Möbius band. Thus the two descriptions coincide.
 :::
