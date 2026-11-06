@@ -23,6 +23,17 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Presented M as a cokernel of a map between free modules, diagonalized that map by invertible row/column operations, used cokernel invariance and the coordinate quotient theorem, then excluded unit factors by minimality of the number of generators."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 2, Euclidean-domain
+    problem 8, and followed the route its clarification recommends: first the
+    product of m cyclic factors, then the exclusion of unit factors from a
+    minimal generating set. Correct throughout, including the padding of the
+    diagonal list with zeros and the conclusion that a unit factor makes the
+    product generate with fewer than m elements. No defect.
+---
 ---
 
 ::: {.exercise}
