@@ -12,7 +12,24 @@ classification:
   - Divisors
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry (1977), Chapter IV, section 1,
+    exercise 1.1, printed page 297 (PDF page 312 of
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, the checked-in
+    extraction). The printed exercise reads: "Let X be a curve, and let P be a
+    point. Then there exists a nonconstant rational function f in K(X), which is
+    regular everywhere except at P." The card states exactly this. The proof was
+    read and checked: Riemann-Roch on nP with n > 2g-2 gives
+    l(nP) = n+1-g, since deg(K-nP) < 0 kills the correction term; for
+    n = max(2g, 1) this is at least 2, so L(nP) contains a function outside the
+    constants, and (f) + nP >= 0 makes f regular away from P. The two cases g = 0
+    and g >= 1 are separated correctly.
 ---
+
 
 ::: {.problem}
 Let $X$ be a curve, and let $P \in X$ be a point.
