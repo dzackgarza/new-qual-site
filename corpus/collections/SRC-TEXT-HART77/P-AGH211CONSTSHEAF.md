@@ -12,7 +12,27 @@ classification:
   - Stalks
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry (1977), Chapter II, section 1,
+    exercise 1.1, printed page 65 (PDF page 80 of
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, the checked-in
+    extraction). The printed exercise reads: "Let A be an abelian group, and
+    define the constant presheaf associated to A on the topological space X to
+    be the presheaf U -> A for all U nonempty, with restriction maps the
+    identity. Show that the constant sheaf A defined in the text is the sheaf
+    associated to this presheaf." The card states exactly this; its added
+    "Recall that ..." sentence restates the text's definition of the constant
+    sheaf and adds no hypothesis. The proof was read and checked: the presheaf
+    map a -> constant function is well defined because A is discrete, compatible
+    with restriction, and its stalk map is the identity since a continuous map
+    into a discrete group is locally constant. Not checked: the universal
+    property of sheafification is used as the text states it, not re-proved.
 ---
+
 
 ::: {.problem}
 Let $A$ be an abelian group and let $X$ be a topological space.
