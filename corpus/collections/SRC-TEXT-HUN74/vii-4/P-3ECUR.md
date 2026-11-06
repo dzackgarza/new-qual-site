@@ -16,10 +16,32 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section VII.4,
+    exercise 10, book page 365, read from the page image: "Find all possible
+    [primary] rational canonical forms for a matrix A ∈ Mat_n Q such that (i) A is
+    6 × 6 with minimal polynomial (x − 2)^2(x + 3); (ii) A is 7 × 7 with minimal
+    polynomial (x^2 + 1)(x − 7). Find all possible Jordan canonical forms of A
+    considered as a matrix over C." Repaired here: the statement had dropped the
+    printed bracketed "[primary]", which is in the book, and the card now carries
+    it and a closing remark with the primary forms (block diagonal of the
+    companion matrices of the elementary divisors). Every count was recomputed.
+    For (i) the divisor chains below the minimal polynomial with degrees summing
+    to 3 give exactly the six lists displayed, and the elementary-divisor
+    multisets of total degree 6 containing (x − 2)^2 and x + 3 are also exactly
+    six, matching them. For (ii) the divisor chains below q with degrees summing
+    to 4 give exactly the three lists displayed, and the multisets with m copies
+    of x^2 + 1 and 7 − 2m copies of x − 7 for m = 1, 2, 3 are again three. All six
+    and all three Jordan forms were checked block by block against the
+    elementary divisors, including the multiplicities 5, 3, 1 of the eigenvalue 7
+    in (ii). Complete.
 ---
 
 ::: {.problem}
-Find all possible rational canonical forms for a matrix $A\in M_n(\QQ)$ such that
+Find all possible [primary] rational canonical forms for a matrix $A\in M_n(\QQ)$ such that
 
 (a) $A$ is $6\times 6$ with minimal polynomial $q(x) = (x-2)^2(x+3)$.
 
@@ -104,4 +126,15 @@ Over $\CC$, $q = (x-i)(x+i)(x-7)$ has distinct roots, so every invariant factor 
 
 :::
 
+:::
+
+::: remark
+The book prints "[primary]" as an optional word, and the primary rational canonical form is the block diagonal of the companion matrices of the elementary divisors rather than of the invariant factors. The lists above determine the elementary divisors, so the primary forms are read off from them: in (a) the six multisets are
+$\{(x-2)^2,(x-2)^2,(x+3),(x+3)\}$,
+$\{(x-2),(x-2)^2,(x-2)^2,(x+3)\}$,
+$\{(x-2),(x-2),(x+3),(x-2)^2,(x+3)\}$,
+$\{(x+3),(x-2),(x+3),(x-2)^2,(x+3)\}$,
+$\{(x-2),(x-2),(x-2),(x-2)^2,(x+3)\}$,
+$\{(x+3),(x+3),(x+3),(x-2)^2,(x+3)\}$,
+and in (b) they are $m$ copies of $x^2+1$ together with $7-2m$ copies of $x-7$ for $m=1,2,3$. Splitting the prime powers over $\CC$ turns these blocks into exactly the Jordan forms displayed in the two steps, which is why the same six and three cases occur in both readings.
 :::
