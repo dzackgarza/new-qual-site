@@ -24,6 +24,22 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Proved F=E(u_1,...,u_k), used the distinct roots of g for separability, and showed every K-automorphism permutes the u_i and hence fixes the coefficients of g."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.4,
+    exercise 1, book pages 276-277: "Suppose f ∈ K[x] splits in F as f =
+    (x - u_1)^{n_1}···(x - u_k)^{n_k} (u_i distinct; n_i ≥ 1). Let v_0, ..., v_k
+    be the coefficients of g = (x - u_1)···(x - u_k) and let E = K(v_0, ..., v_k).
+    Then (a) F is a splitting field of g over E. (b) F is Galois over E.
+    (c) Aut_E F = Aut_K F." The card states exactly this, keeping the
+    section-wide hypothesis that F is the splitting field of f over K. The proof
+    was checked: F = E(u_1, ..., u_k) because F = K(u_1, ..., u_k) and E lies in
+    F, so F is generated over E by the roots of g; g is separable over E since
+    its roots are distinct, so F/E is Galois; and a K-automorphism permutes the
+    distinct roots hence fixes the coefficients of g, giving Aut_K F ⊆ Aut_E F,
+    the other inclusion being immediate from K ⊆ E. Complete; no defect.
 ---
 
 ::: {.problem}
