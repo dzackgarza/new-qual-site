@@ -12,7 +12,25 @@ classification:
   - Exact Sequences
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry (1977), Chapter II, section 1,
+    exercise 1.2, printed page 66 (PDF page 81 of
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, the checked-in
+    extraction). The printed exercise has the three parts (a) (ker phi)_P =
+    ker(phi_P) and (im phi)_P = im(phi_P), (b) injectivity and surjectivity are
+    stalkwise, (c) exactness of a sequence of sheaves is stalkwise exactness.
+    The card states exactly these three parts. The proof was read and checked,
+    including the two inclusions of part (a) and the sheaf axiom invoked in
+    (b): a section of ker phi whose germ vanishes everywhere is zero. What the
+    proof takes as known is that a filtered colimit commutes with finite limits
+    in sheaves of abelian groups, which is the text's AB5 environment; it does
+    not reprove it.
 ---
+
 
 ::: {.problem}
 (a) For any morphism of sheaves $\varphi: \mcf \to \mcg$, show that for each point $P$ one has $(\ker \varphi)_P = \ker(\varphi_P)$ and $(\im \varphi)_P = \im(\varphi_P)$.
