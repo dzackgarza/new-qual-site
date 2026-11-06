@@ -21,6 +21,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §3.F Exercise 7, printed page
+    320; the statement matches word for word. Checked: choosing bases F_A ⊆ F_B with
+    K_B ∩ F_A = K_A makes K_B/K_A free (Example 2.40, p. 125), so M(B,n)/M(A,n) has
+    the homology of M(C,n); the long exact cohomology sequence of the pair, together
+    with the universal coefficient theorem (Theorem 3.2, p. 195) applied to A, B, C,
+    gives the six-term exact sequence displayed. No defect.
 ---
 
 ::: {.problem}
