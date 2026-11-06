@@ -22,6 +22,17 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Computed the characteristic polynomial from the block-upper-triangular form, determined the eigenvalue-one Jordan partition from kernel dimensions, obtained the minimal polynomial, and split the Jordan form into semisimple and nilpotent parts."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 11, midterm 6(a),(b). The
+    matrix printed on the sheet matches the card. Recomputed here: ch_A = (x-1)^4(x-2)
+    from the block form, ker(A-I) has dimension 2 and ker(A-I)^2 dimension 3, so the
+    blocks at 1 are 3 and 1 (the partition (2,2) would give kernel dimension 4), the
+    eigenvalue 2 contributes a single 1 by 1 block, m_A = (x-1)^3(x-2), and (b) is
+    J = diag(1,1,1,1,2) + N_J with N_J^3 = 0. No defect.
+---
 ---
 
 ::: {.exercise}
