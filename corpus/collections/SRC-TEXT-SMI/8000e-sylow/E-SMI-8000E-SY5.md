@@ -22,6 +22,18 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Handled order pq by the normal Sylow subgroup for the larger prime; handled order p^2q by Sylow counts, isolating the exceptional order-12 case and proving its Sylow 2-subgroup unique by element counting."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 7, Sylow problem 5, and
+    against the printed definition of solvable as having an abelian normal tower.
+    Checked: for order pq with p < q, n_q = 1 and G ⊵ Q ⊵ 1 has abelian factors; for
+    p^2 q with q < p, n_p = 1 and P is abelian with cyclic quotient; for p < q,
+    n_q = p^2 would force q | p + 1 so (p,q) = (2,3), and the remaining order 12
+    case is closed by the count 4·2 = 8 elements of order 3 leaving a unique Sylow
+    2-subgroup. No defect.
+---
 ---
 
 ::: {.exercise}
