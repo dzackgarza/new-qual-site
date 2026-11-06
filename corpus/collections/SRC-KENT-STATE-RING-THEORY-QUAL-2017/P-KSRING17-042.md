@@ -19,6 +19,18 @@ audit:
   by: chatgpt
   date: 2026-10-31
   note: "Smith Noetherian rings 7 says every ideal; the unit ideal cannot lie in a proper maximal ideal."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read as the Smith 8000e.pdf page 5, Noetherian rings problem 7 appearance of
+    this card: "Using Zorn's lemma, prove in any ring R, that every ideal I of R is
+    contained in a maximal ideal." The card states the corrected proper-ideal form
+    for a nonzero ring with identity and carries it out: the poset of proper ideals
+    above I is nonempty, a chain has the proper ideal union as upper bound because
+    1_R in the union would put 1_R in a member, and Zorn gives a maximal element,
+    which is maximal in R. No defect.
+---
 ---
 
 ::: {.problem}
