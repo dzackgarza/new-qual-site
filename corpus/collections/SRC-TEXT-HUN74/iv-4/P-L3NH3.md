@@ -20,6 +20,22 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-31
   note: Hungerford IV.4.5 asserts a ring isomorphism Hom_R(R,R) = R^op; the statement said homomorphism.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section IV.4,
+    exercise 5, book page 206, read from the page image: "Let R be a ring with
+    identity; then there is a ring isomorphism Hom_R(R,R) ≅ R^op where Hom_R
+    denotes left R-module homomorphisms (see Exercises III.1.17 and 1.7). In
+    particular, if R is commutative, then there is a ring isomorphism
+    Hom_R(R,R) ≅ R." The card states exactly this. The proof was checked:
+    evaluation at 1 is a bijection, since f(r) = f(r·1) = r f(1) recovers f from
+    f(1) and r ↦ ra is left R-linear; multiplicativity is reversed because
+    Φ(f∘g) = f(g(1)) = g(1)f(1), which is Φ(f)·Φ(g) in R^op, so R^op and not R
+    is the correct codomain; and for commutative R the two multiplications
+    coincide. Complete; no defect.
+---
 ---
 
 ::: {.problem}
