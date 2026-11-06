@@ -23,6 +23,20 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section II.5,
+    exercise 6, book page 96: "If H is a normal subgroup of order p^k of a
+    finite group G, then H is contained in every Sylow p-subgroup of G." The
+    card states exactly this. The proof was checked: H is a p-subgroup, so it
+    lies in some Sylow p-subgroup Q, and every Sylow p-subgroup is conjugate to
+    the given P, say Q = gPg^{-1}; conjugating H ≤ gPg^{-1} by g^{-1} gives
+    g^{-1}Hg ≤ P, and normality of H makes g^{-1}Hg = H, so H ≤ P. Both halves
+    of the Sylow theory used (existence of a containing Sylow subgroup, and
+    conjugacy of Sylow subgroups) are theorems of the same section, and the
+    argument concludes for an arbitrary P. Complete; no defect.
 ---
 
 ::: {.problem}
