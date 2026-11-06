@@ -22,6 +22,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the simplicial, Lefschetz-trace, or surface argument against the preceding section results.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.C Exercise 7, printed page
+    184; the statement matches word for word. Proof checked: with field coefficients
+    the Hopf trace formula holds verbatim (additivity of trace on the short exact
+    sequences of cycles, boundaries and homology, with the boundary terms cancelling
+    in the alternating sum), and Hatcher's proof of Theorem 2C.3 (p. 180) uses only
+    a subdivision and a simplicial map g homotopic to f with g(σ) ∩ σ = ∅ together
+    with the trace formula, both of which are coefficient-independent over a field.
+    No defect.
+---
 ---
 
 ::: {.problem}
