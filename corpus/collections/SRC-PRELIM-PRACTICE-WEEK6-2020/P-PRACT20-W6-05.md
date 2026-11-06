@@ -11,6 +11,24 @@ classification:
   - Cauchy Sequences
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    No source document is retained for this card. The collection
+    SRC-PRELIM-PRACTICE-WEEK6-2020 has an empty provenance list, and the only
+    retained pages of the practice sheet are the three page images
+    assets/attachments/prelim-practice-week6-2020/page-4.png, page-5.png and
+    page-11.png, none of which carries this problem; so there is no printed page
+    to compare the statement with. What was checked is the statement as it stands
+    on the card: the statement was read as printed and the proof re-derived; the argument uses only uniform continuity and completeness of the reals
+- event: solution-written
+  by: claude
+  date: 2026-11-06
+  note: >-
+    No published solution set is retained for this sheet, so the solution is
+    derived here rather than transcribed. Cauchyness of the image sequence from uniform continuity, then convergence by completeness, with independence of the sequence
 ---
 
 ::: {.problem}
@@ -20,13 +38,46 @@ Let $\{x_{n}\}$ be a sequence in $(0, 1)$ such that $x_{n} \to 0$. Show that the
 :::
 
 ::: {.solution}
-Set $y_n=f(x_n)$ and let $\varepsilon>0$. Since $f$ is uniformly continuous, there is $\delta>0$, independent of $x,y$, such that $\abs{x-y}<\delta\implies\abs{f(x)-f(y)}<\varepsilon$ for all $x,y\in(0,1)$. Since $x_n\to0$, the sequence $(x_n)$ is Cauchy, so there is $N\in\NN$ with $\abs{x_n-x_m}<\delta$ whenever $n,m\geq N$. Then
 
-$$
-\abs{y_n-y_m}=\abs{f(x_n)-f(x_m)}<\varepsilon
-$$
+Let $f\colon(0,1)\to\RR$ be uniformly continuous and let $x_n\in(0,1)$ with
+$x_n\to0$.
 
-for $n,m\geq N$. So $(y_n)$ is Cauchy and converges to some $f_0\in\RR$.
+::: pf
 
-The limit does not depend on the sequence: if also $x_n'\to0$, the interleaved sequence $x_1,x_1',x_2,x_2',\dots$ tends to $0$, so its image converges, and the two subsequences have the same limit. The same argument at $1$ gives a limit $f_1$ of $f(w_n)$ for every sequence $w_n\to1$ in $(0,1)$. Defining $F(0)=f_0$, $F(1)=f_1$ and $F(x)=f(x)$ for $x\in(0,1)$ gives a continuous extension of $f$ to $[0,1]$, which indicates how to prove the note.
+::: {.pf-step #cauchy}
+
+$(x_n)$ is Cauchy in $(0,1)$, hence $(f(x_n))$ is Cauchy in $\RR$.
+
+::: pf-proof
+
+A convergent sequence in a metric space is Cauchy: given $\eta>0$ there is $N$
+with $\abs{x_n}<\eta$ for $n\ge N$, so $\abs{x_n-x_m}<\eta$ for $m,n\ge N$.
+Uniform continuity gives, for $\varepsilon>0$, a $\delta>0$ such that
+$\abs{f(s)-f(t)}<\varepsilon$ whenever $\abs{s-t}<\delta$; with $N$ chosen for
+$\eta=\delta$, all $m,n\ge N$ satisfy $\abs{f(x_n)-f(x_m)}<\varepsilon$.
+
+:::
+
+:::
+
+::: {.pf-step #converges}
+
+$(f(x_n))$ converges in $\RR$.
+
+::: pf-proof
+
+$\RR$ is complete, so a Cauchy sequence of real numbers converges. Hence
+$\lim_nf(x_n)$ exists, which is the assertion; and the value is
+$\lim_{x\to0^{+}}f(x)$, since for any other sequence $y_n\to0$ in $(0,1)$ the
+same argument applies and $\abs{f(x_n)-f(y_n)}\to0$ by uniform continuity, so
+the limit does not depend on the sequence. This is the one-dimensional case of
+the extension theorem quoted on the card.
+
+:::
+
+:::
+
+:::
+
+
 :::
