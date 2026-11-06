@@ -26,10 +26,27 @@ audit:
   by: chatgpt
   date: 2026-10-31
   note: "The printed statement omits nonemptiness; the empty union is not an ideal."
+- event: source-corrected
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 5, problem 6: "If {I_j}
+    is any linearly ordered indexed set of proper ideals in a ring R ... then their
+    union is a proper ideal." Two hypotheses are missing and both are now on the
+    statement. Nonemptiness was already added, since the empty union is not an
+    ideal. With identity is added here: the proof of properness needs
+    1_R ∈ U ⇒ 1_R ∈ I_j for some j, and without an identity the claim is false, as
+    the closing remark shows with the additive group of Z under zero
+    multiplication and the chain 2Z ⊃ 4Z ⊃ 8Z ⊃ ..., whose union is all of R.
+    The ideal axioms and the symmetric two-sided argument were checked and are
+    correct under the identity hypothesis.
+---
 ---
 
 ::: {.exercise}
-If $\theset{I_j}$ is any nonempty linearly ordered indexed set of proper ideals in a ring $R$ — i.e. for any two ideals $I_j$ and $I_k$, one is contained in the other — then their union is a proper ideal.
+If $\theset{I_j}$ is any nonempty linearly ordered indexed set of proper ideals in a ring $R$ with identity — i.e. for any two ideals $I_j$ and $I_k$, one is contained in the other — then their union is a proper ideal.
+
+The identity hypothesis is needed and is supplied here: without it the union of a chain of proper ideals can be all of $R$, as the closing remark shows.
 :::
 
 ::: {.solution}
@@ -103,4 +120,8 @@ Hence
 $$
 \boxed{\bigcup_j I_j\text{ is a proper ideal of }R.}
 $$
+:::
+
+::: remark
+The identity is what makes the union proper. Without it the statement fails: let $R$ be the additive group $\ZZ$ with all products defined to be $0$, a ring without identity in which every additive subgroup is an ideal, and take the chain $2\ZZ \supsetneq 4\ZZ \supsetneq 8\ZZ \supsetneq \cdots$ of proper ideals. Its union is $\ZZ = R$, which is not a proper ideal. Smith's remaining problems in this section are stated for rings with identity, and step 2 above uses $1_R \in J \Rightarrow J = R$ exactly as the identity hypothesis allows.
 :::
