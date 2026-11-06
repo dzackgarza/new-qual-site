@@ -91,3 +91,13 @@ direct products with external ones.
 
 
 :::
+
+::: {.remark}
+Certificate. `proofs/cards/CH8DirectProduct.lean` proves the three assertions of
+this exercise: `prod_bot_eq_ker_snd` identifies $G\times\{e\}$ with the kernel of
+the second projection, `prod_bot_normal` and `bot_prod_normal` give normality of
+$G\times\{e\}$ and $\{e\}\times H$, `quotient_prod_bot_mulEquiv` and
+`quotient_bot_prod_mulEquiv` give the quotient isomorphisms onto $H$ and $G$, and
+`prod_bot_mulEquiv` and `bot_prod_mulEquiv` give $G\times\{e\}\cong G$ and
+$\{e\}\times H\cong H$. No `sorryAx`.
+:::

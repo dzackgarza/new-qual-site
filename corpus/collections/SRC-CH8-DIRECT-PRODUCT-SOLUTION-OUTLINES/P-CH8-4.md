@@ -92,3 +92,10 @@ to state, and it uses no hypothesis beyond finiteness of the product.
 
 
 :::
+
+::: {.remark}
+Certificate. `proofs/cards/CH8DirectProduct.lean` (`prod_comm_iff`) proves that a
+direct product is abelian exactly when both factors are: one direction projects
+the product commutator to each factor, the other assembles the two commutators
+coordinatewise.
+:::

@@ -27,3 +27,10 @@ Let $( g _ { 2 } , g _ { 1 } ) \in G _ { 2 } \oplus G _ { 1 }$ . Then we know th
 
 In general, $G _ { 1 } \oplus G _ { 2 } \oplus \cdots \oplus G _ { n } \approx G _ { \sigma ( 1 ) } \oplus G _ { \sigma ( 2 ) } \oplus \cdots \oplus G _ { \sigma ( n ) }$ for $\sigma \in S _ { n }$ .
 :::
+
+::: {.remark}
+Certificate. `proofs/cards/CH8DirectProduct.lean` proves both halves:
+`prod_comm_mulEquiv` is the isomorphism $G_{1}\oplus G_{2}\cong
+G_{2}\oplus G_{1}$, and `pi_perm_mulEquiv` the general case, that permuting the
+index set of a direct product of a family of groups gives an isomorphic group.
+:::

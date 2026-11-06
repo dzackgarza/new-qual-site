@@ -101,3 +101,11 @@ factors are abelian.
 
 
 :::
+
+::: {.remark}
+Certificate. `proofs/cards/CH8DirectProduct.lean` (`product_mul_apply`,
+`product_one_apply`) proves that the product of a finite family of groups, with
+the componentwise operations, is a group: the group structure is Mathlib's
+instance for a function type into groups, and the two lemmas record that the
+operations are the componentwise ones.
+:::
