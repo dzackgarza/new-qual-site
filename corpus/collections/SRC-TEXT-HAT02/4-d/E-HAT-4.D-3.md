@@ -26,13 +26,13 @@ The projection $V_n(\CC^k)\to V_{n-1}(\CC^k)$ forgets the last frame vector. Its
 $$
 E\oplus\underline{\CC}^{,n-1}\cong\underline{\CC}^{,k}.
 $$
-Thus all Chern classes of $E$ vanish, including its Euler class $c_{k-n+1}(E)$. In the Gysin sequence of its oriented sphere bundle, vanishing of the Euler class says that a class
+Thus all Chern classes of $E$ vanish, including its Euler class $c_{k-n+1}(E)$. The complex bundle $E$ is oriented, and the Euler class of the underlying oriented real bundle of a complex bundle is its top Chern class $c_{k-n+1}$ (p. 444). In the Gysin sequence (p. 438) of its oriented sphere bundle, vanishing of the Euler class says that a class
 $$
 x_{2k-2n+1}\in H^{2k-2n+1}(V_n(\CC^k);\ZZ)
 $$
-restricts to the generator on every fiber. Leray--Hirsch then makes $H^*(V_n(\CC^k);\ZZ)$ a free module over $H^*(V_{n-1}(\CC^k);\ZZ)$ with basis $1,x_{2k-2n+1}$.
+restricts to the generator on every fiber, and that the Gysin sequence breaks into short exact sequences. Leray--Hirsch (Theorem 4D.1, p. 432) then makes $H^*(V_n(\CC^k);\ZZ)$ a free module over $H^*(V_{n-1}(\CC^k);\ZZ)$ with basis $1,x_{2k-2n+1}$.
 
-Start with $V_1(\CC^k)=S^{2k-1}$ and repeat. The resulting cohomology is torsionfree, and each new generator has odd degree. Graded commutativity makes twice its square zero, so its square is zero. Leray--Hirsch gives the products of distinct generators as an additive basis. Therefore
+Start with $V_1(\CC^k)=S^{2k-1}$ and repeat, as in the computation of Corollary 4D.3 (p. 434). The resulting cohomology is torsionfree, and each new generator has odd degree. Graded commutativity makes twice its square zero, so its square is zero. Leray--Hirsch gives the products of distinct generators as an additive basis. Therefore
 $$
 H^*(V_n(\CC^k);\ZZ)\cong
 \Lambda_\ZZ[x_{2k-2n+1},x_{2k-2n+3},\ldots,x_{2k-1}].
