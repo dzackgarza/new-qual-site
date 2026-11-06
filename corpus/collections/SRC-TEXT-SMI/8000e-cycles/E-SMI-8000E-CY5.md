@@ -26,6 +26,19 @@ audit:
   by: chatgpt
   date: 2026-10-31
   note: "The packet omits n>=2; for n=1, S1 is trivial and the sign map is not onto the two-element group."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 8, problem 5, which
+    continues on the next page. The restored hypothesis n ≥ 2 is right, since for
+    n = 1 the sign map cannot be onto {±1}. The proof was checked: a transposition
+    changes the single factor X_a - X_b and pairs the remaining factors with net
+    sign +1, so Δ ↦ -Δ; transpositions generate S_n, so every m acts as ±1, which
+    well defines sgn; multiplicativity of the action gives the homomorphism
+    property; surjectivity from a transposition; and the kernel is by definition
+    the even products. No defect.
+---
 ---
 
 ::: {.exercise}
