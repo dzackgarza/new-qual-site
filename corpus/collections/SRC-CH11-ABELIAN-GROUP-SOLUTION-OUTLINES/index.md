@@ -32,7 +32,8 @@ source:
     - id: P-CH11-26
       comment: Exercise 26
     - id: P-CH11-34
-      comment: Exercise 34
+      comment: Exercise 32 (printed as exercise 34 when the card was created; the
+        diagonal-matrices exercise is 32 in Gallian 7e)
   date: {kind: year, year: 2016}
 ---
 
