@@ -22,10 +22,21 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry, §I.1 Exercise 1.12 (scan page
+    23 of the retained PDF). What was checked: the printed request — an
+    irreducible f in R[x,y] whose zero set in A^2_R is not irreducible, with
+    the cross-reference (cf. 1.4.2) — against the card, which had dropped the
+    cross-reference; restored. No other difference; the exercise carries no
+    star. What was not checked: the solution was read only for consistency,
+    not re-derived.
 ---
 
 ::: {.problem}
-Give an example of an irreducible polynomial $f \in \RR[x,y]$ whose zero set $Z(f)$ in $\AA^2_\RR$ is not irreducible.
+Give an example of an irreducible polynomial $f \in \RR[x,y]$ whose zero set $Z(f)$ in $\AA^2_\RR$ is not irreducible (cf. 1.4.2).
 :::
 
 ::: {.solution}
