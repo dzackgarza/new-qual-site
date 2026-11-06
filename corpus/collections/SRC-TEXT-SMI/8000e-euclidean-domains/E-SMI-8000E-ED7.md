@@ -23,6 +23,17 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Used the coordinatewise quotient map R^m→product R/Ra_i and identified its kernel exactly, then applied the first isomorphism theorem."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 2, Euclidean-domain
+    problem 7, with the sheet's clarification that the a_i are elements of R. The
+    card reads the printed "Ra_1e_1 x ... x Ra_me_m" as the submodule of R^m whose
+    i-th coordinate lies in Ra_i, which is what that product means inside R^m, and
+    says so. Correct: the coordinatewise quotient has exactly that kernel, so the
+    isomorphism follows. No defect.
+---
 ---
 
 ::: {.exercise}
