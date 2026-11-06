@@ -12,6 +12,24 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section VII.5,
+    exercise 7, book page 369: "(a) Let φ and ψ be endomorphisms of a finite
+    dimensional vector space E such that φψ = ψφ. If E has a basis of eigenvectors
+    of φ and a basis of eigenvectors of ψ, then E has a basis consisting of vectors
+    that are eigenvectors for both φ and ψ. (b) Interpret (a) as a statement about
+    matrices that are similar to a diagonal matrix." The card states both parts.
+    The proof was checked: each eigenspace of ψ is φ-invariant by commutativity;
+    the restriction of φ to such an eigenspace is diagonalizable because its
+    minimal polynomial divides that of φ, which is a product of distinct linear
+    factors (equivalently Exercise VII.4.8, whose statement is that a matrix is
+    similar to a diagonal one exactly when its elementary divisors are linear);
+    and the union of the bases so obtained is a basis of the direct sum. Part (b)
+    is the matrix reading with the change-of-basis matrix P. Complete; no defect.
 ---
 
 ::: {.problem}
