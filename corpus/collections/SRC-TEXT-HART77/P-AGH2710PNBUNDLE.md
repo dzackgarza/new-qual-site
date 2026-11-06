@@ -17,6 +17,30 @@ audit:
   by: chatgpt
   date: 2026-09-17
   note: Followed the card's hyperplane-extension hint, using the quotient convention checked against Stacks Project Tag 01OA. The construction works for locally factorial noetherian bases, includes disconnected bases and n=0, and does not assume that projective transition matrices already lift to a vector-bundle cocycle.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry (1977), Chapter II, section 7,
+    exercise 7.10, printed page 179 (PDF page 194 of
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, the checked-in
+    extraction). The printed exercise has the four parts: (a) define a
+    projective n-space bundle by analogy with Ex. 5.18, (b) P(E) for a locally
+    free sheaf of rank n+1 is such a bundle, (c) for regular X every P^n-bundle
+    is P(E), with a question about weakening the hypothesis, (d) the resulting
+    bijection between P^n-bundles and locally free sheaves modulo tensoring by an
+    invertible sheaf. The card states all four. Steps s3 to s7 were read and
+    checked, which is where the mathematics is: local factoriality is what the
+    argument uses, and regular local rings are UFDs (Remark II.6.11.1A); the
+    closure of a hyperplane of one chart is an effective Cartier divisor because
+    a height-one prime in a factorial local ring is principal; Pic(P^n_V) =
+    Pic(V) + Z normalises that divisor to relative degree one; then
+    E = pi_* L is locally free of rank n+1 and P = P(E). Step s6's separation of
+    local factoriality from regularity is right, the cone over a smooth quadric
+    being a UFD with a nonregular vertex. Taken from other cards rather than
+    reproved here: the class-group computation of [[P-AGH261CLPROJBUN]], the
+    quadric calculation of [[P-AGH265QUADRIC]], the twist criterion of
+    [[P-AGH279PICPE]].
 ---
 
 ::: {.problem}
