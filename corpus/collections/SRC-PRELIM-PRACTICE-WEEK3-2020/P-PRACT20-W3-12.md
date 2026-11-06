@@ -84,9 +84,9 @@ telescopes to $A_N-1$.
 
 ::: {.pf-step #area}
 
-$\boxed{\text{area}=1+\frac34\sum_{n\ge0}\Big(\frac49\Big)^n\cdot\frac19\cdot\ldots=\frac85}$;
-explicitly
-$1+\sum_{n\ge0}3\cdot4^n9^{-n-1}=1+\frac{3}{9}\cdot\frac{1}{1-\frac49}=\frac85$.
+$\boxed{\text{area}=1+\sum_{n\ge0}3\cdot4^n9^{-n-1}=1+\frac13\sum_{n\ge0}\Big(\frac49\Big)^n=\frac85}$.
+
+Here $3\cdot4^n9^{-n-1}=\frac13\big(\frac49\big)^n$.
 
 ::: pf-proof
 
