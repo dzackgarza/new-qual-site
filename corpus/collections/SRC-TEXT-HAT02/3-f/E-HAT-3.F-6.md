@@ -21,6 +21,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §3.F Exercise 6, printed page
+    320; the statement matches word for word. Checked: with generators x_n of order
+    p^n and p x_{n+1} = x_n, the free module on e_n surjects onto Z_p^∞ and its kernel
+    is free on r_0 = p e_1 and r_n = p e_{n+1} − e_n; applying Hom(−,Z_p) to that
+    resolution and reading Ext as the cokernel of the dual map, every functional on
+    the second module extends, so Ext(Z_p^∞,Z_p) ≅ Z_p. No defect.
 ---
 
 ::: {.problem}
