@@ -16,6 +16,22 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hungerford, Algebra (1974), Chapter II, section 1, exercise 10:
+    "(a) Show that the additive group of rationals (Q,+) is not finitely
+    generated. (b) Show that (Q,+) is not a free abelian group. (c) Conclude that
+    the statement 'every torsion-free abelian group is free' is false if the
+    hypothesis 'finitely generated' is omitted." The card states exactly this and
+    its II.1.10 locator is the printed number. All three parts were read and
+    checked: (a) a finitely generated subgroup lies in (1/B)Z with B the product
+    of the denominators, and 1/p is outside it for a prime p > B; (b) a basis
+    cannot have one element (that would make Q cyclic, contradicting (a)) and
+    cannot have two, since bc x - ad y = 0 for distinct rationals x = a/b,
+    y = c/d with nonzero coefficients; (c) Q is torsion-free and not free, which
+    is the counterexample the exercise asks for. Complete; no defect.
 ---
 
 ::: {.problem}
