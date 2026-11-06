@@ -34,7 +34,7 @@ $$
 a=Sq^1,
 \qquad b=Sq^2.
 $$
-The mod-2 Adem relations give
+The mod-2 Adem relations (p. 506) give
 $$
 a^2=0,
 \qquad
@@ -78,7 +78,7 @@ and hence
 $$
 b^3=(bab)a=Sq^5Sq^1.
 $$
-These are nonzero combinations of distinct admissible basis elements, and the grading separates all cases except degree three, where $Sq^3$ and $Sq^2Sq^1$ are distinct admissible monomials. Thus (4) is a basis and the generated subalgebra has dimension $8$.
+These are nonzero combinations of distinct admissible monomials, and admissible monomials are linearly independent in $\mathcal{A}_2$ (§4.L, where admissibility is introduced on p. 500); the grading separates all cases except degree three, where $Sq^3$ and $Sq^2Sq^1$ are distinct admissible monomials. Thus (4) is a basis and the generated subalgebra has dimension $8$.
 
 It remains to record left multiplication. From (1)--(3):
 $$
