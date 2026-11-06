@@ -23,6 +23,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section II.4,
+    exercise 9, book page 92: "If G/C(G) is cyclic, then G is abelian." The card
+    states this with Z(G) for the center and remarks that Hungerford writes C(G);
+    the printed page uses C(G) throughout section 4, so the remark is accurate.
+    The proof was checked: a generator xZ(G) writes every g as x^m z with z in
+    Z(G); then gh = x^m z x^n w = x^{m+n} zw = x^{n+m} wz = hg, the two middle
+    steps moving z and w past powers of x, which is exactly what centrality
+    gives. Complete; no defect. The stronger conclusion usually drawn, that
+    G/Z(G) is then trivial, is not stated and is not needed by the exercise.
 ---
 
 ::: {.problem}
