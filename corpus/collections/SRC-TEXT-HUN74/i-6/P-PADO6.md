@@ -22,6 +22,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hungerford, Algebra (1974), Chapter I, section 6, exercise 3
+    (checked-in extraction tmp/sources/hungerford-1974-algebra.md, line 1916):
+    "If sigma = (i_1 i_2 ... i_r) in S_n and tau in S_n, then tau sigma tau^{-1}
+    is the r-cycle (tau(i_1) tau(i_2) ... tau(i_r))." The card states exactly
+    this and its I.6.3 locator is the printed number. The proof was read and
+    checked: it evaluates tau sigma tau^{-1} at tau(i_j) and gets tau(i_{j+1}),
+    cyclically, and at the points outside {tau(i_j)}, where tau^{-1} lands
+    outside {i_j} so sigma fixes the point. A complete pointwise identification
+    of two permutations; no defect.
 ---
 
 ::: {.problem}
