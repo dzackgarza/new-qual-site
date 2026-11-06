@@ -22,6 +22,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the Alexander-duality and Mayer--Vietoris calculations and all degree shifts.
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §2.B Exercise 2, printed page
+    176, with the printed hint. Checked: a finite tree is contractible, so Alexander
+    duality (Theorem 3.44, p. 253) makes the complement's reduced homology vanish; in
+    general the homology of a connected graph is free with H_0 = Z and H_1 of rank r,
+    so the universal coefficient theorem (Theorem 3.2, p. 195) has no Ext term and
+    H̃^j(X) ≅ H̃_j(X), giving H̃_i(S^n − X) ≅ H̃_{n−i−1}(X) and H̃_{n−2} ≅ Z^r. No
+    defect.
+---
 ---
 
 ::: {.problem}
