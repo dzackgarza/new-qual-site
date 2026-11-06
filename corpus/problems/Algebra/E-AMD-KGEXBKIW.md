@@ -46,7 +46,7 @@ Write $[x,y]=xyx^{-1}y^{-1}$ for $x,y\in G$, and $[G,G]$ for the subgroup genera
 $G$ is abelian.
 
 ::: pf-proof
-Since $G$ is cyclic, $G=\gen{g}$ for some $g\in G$. Any two elements are $g^a$ and $g^b$ with $a,b\in\ZZ$, and $g^ag^b=g^{a+b}=g^bg^a$.
+Since $G$ is cyclic, $G=\generators{g}$ for some $g\in G$. Any two elements are $g^a$ and $g^b$ with $a,b\in\ZZ$, and $g^ag^b=g^{a+b}=g^bg^a$.
 :::
 
 :::
