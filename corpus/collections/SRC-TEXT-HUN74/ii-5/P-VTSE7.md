@@ -23,6 +23,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section II.5,
+    exercise 8, book page 96: "If every Sylow p-subgroup of a finite group G is
+    normal for every prime p, then G is the direct product of its Sylow
+    subgroups." The card states exactly this. All five steps were checked:
+    pairwise intersections are trivial because a common order divides two
+    coprime Sylow orders; the commutator of x in P_i and y in P_j lies in P_i
+    and in P_j by normality of each and so is trivial, whence distinct factors
+    commute; that commutativity makes the multiplication map a homomorphism;
+    injectivity follows by fixing i and observing x_i and its inverse
+    expression have orders dividing coprime integers; and surjectivity follows
+    from equal finite orders. Complete; no defect. Nothing outside the exercise
+    is claimed: the argument does not assert normality of the factors is
+    necessary, and it need not, since the hypothesis already gives it.
 ---
 
 ::: {.problem}
