@@ -19,6 +19,28 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Rewritten as a Lamport structured proof, one step per question. What was
+    checked: the statement (four questions — normality, splitting field, Galois
+    group, subfield lattice — all answered, no repair needed), and the existing
+    prose solution against a fresh re-derivation: x^3 - 21 is Eisenstein at 3, so
+    irreducible with roots alpha, omega*alpha, omega^2*alpha; Q(alpha) lies in R so
+    the two non-real roots are outside it, giving non-normality; the splitting field
+    is Q(alpha, omega) = Q(alpha, sqrt(-3)) and [K:Q] = 3*2 = 6 because omega has
+    degree 2 over Q(alpha); sigma: alpha -> omega*alpha fixing omega exists since
+    x^3 - 21 is irreducible of degree 3 = [K:Q(omega)], and tau is complex
+    conjugation, with tau*sigma*tau = sigma^{-1}; a nonabelian group of order 6 is
+    S_3; and the subgroups of S_3 give the five intermediate fields, the three cubic
+    ones being Q(omega^k*alpha). Correct. Two things in the prose are now argued
+    rather than asserted: that the generated group has order 6 (it is nonabelian,
+    so not C_6), and that the three degree-3 fields are distinct. The prose's
+    discriminant argument for S_3 was replaced by the nonabelian-of-order-6
+    argument, which needs less machinery; the discriminant is not used. No source
+    solution is retained for this card, so no source comparison was made. What was
+    not checked: any printed source.
 ---
 
 ::: {.problem}
@@ -29,40 +51,60 @@ Describe the lattice of subfields.
 :::
 
 ::: {.solution}
-Let $\alpha=\sqrt[3]{21}$ and let $\omega$ be a primitive cube root of unity. The polynomial
-$$
-f(x)=x^3-21
-$$
-is irreducible over $\QQ$ by Eisenstein at $3$ (or $7$). Its roots are $\alpha,\omega\alpha,\omega^2\alpha$.
+Let $\alpha=\sqrt[3]{21}\in\RR$, let $\omega$ be a primitive cube root of unity, and $f(x)=x^3-21$.
 
-Since $\QQ(\alpha)\subset\RR$, it contains only the real root, so it is not normal over $\QQ$. The splitting field is
-$$
-K=\QQ(\alpha,\omega)=\QQ(\alpha,\sqrt{-3}).
-$$
-Now $[\QQ(\alpha):\QQ]=3$ and $\omega\notin\RR$, so $[K:\QQ(\alpha)]=2$; hence $[K:\QQ]=6$.
+::: pf
 
-The discriminant of $x^3-21$ is
-$$
--27\cdot 21^2,
-$$
-which is not a square in $\QQ$. Therefore the Galois group of the irreducible cubic is
-$$
-\operatorname{Gal}(K/\QQ)\cong S_3.
-$$
-One may take generators
-$$
-\sigma(\alpha)=\omega\alpha,\quad \sigma(\omega)=\omega,
-\qquad
-\tau(\alpha)=\alpha,\quad \tau(\omega)=\omega^2,
-$$
-with $\sigma^3=\tau^2=1$ and $\tau\sigma\tau=\sigma^{-1}$.
+::: {.pf-step #irreducible}
+$f$ is irreducible over $\QQ$, its roots are $\alpha,\omega\alpha,\omega^2\alpha$, and $[\QQ(\alpha):\QQ]=3$.
 
-By Galois correspondence, the intermediate fields are:
-$$
-\QQ,
-\quad \QQ(\omega),
-\quad \QQ(\alpha),\quad \QQ(\omega\alpha),\quad \QQ(\omega^2\alpha),
-\quad K.
-$$
-The quadratic field $\QQ(\omega)=\QQ(\sqrt{-3})$ corresponds to $A_3$, and the three cubic fields correspond to the three subgroups of order $2$ in $S_3$.
+::: pf-proof
+$f$ is Eisenstein at $3$: the leading coefficient is $1$, the other coefficients $0,0$ are divisible by $3$, and the constant term $-21$ is divisible by $3$ but not by $9$. So $f$ is irreducible and is the minimal polynomial of $\alpha$, giving the degree. Its roots are the three numbers whose cube is $21$; since $(\omega^k\alpha)^3=\omega^{3k}\alpha^3=21$ and these are distinct, and a nonzero cubic has at most three roots in $\CC$, they are exactly $\alpha,\omega\alpha,\omega^2\alpha$.
+:::
+
+:::
+
+::: {.pf-step #not-normal}
+$\QQ(\alpha)$ is not normal over $\QQ$.
+
+::: pf-proof
+$\QQ(\alpha)\subseteq\RR$ because $\alpha\in\RR$ and $\RR$ is a field containing $\QQ$. Write $\omega=-\frac12+\frac{\sqrt3}{2}i$; then $\omega\alpha$ and $\omega^2\alpha$ have imaginary parts $\pm\frac{\sqrt3}{2}\alpha\neq0$, so neither is real and neither lies in $\QQ(\alpha)$. Hence the irreducible polynomial $f$ has the root $\alpha$ in $\QQ(\alpha)$ without splitting there, which is the failure of normality.
+:::
+
+:::
+
+::: {.pf-step #splitting}
+The splitting field is $K=\QQ(\alpha,\omega)=\QQ(\alpha,\sqrt{-3})$, and $[K:\QQ]=6$.
+
+::: pf-proof
+The roots of $f$ are $\alpha,\omega\alpha,\omega^2\alpha$ by step [](#irreducible){.pf-ref}, and they generate $\QQ(\alpha,\omega)$ over $\QQ$: it contains $\alpha$ and $\omega=\omega\alpha/\alpha$. So $K=\QQ(\alpha,\omega)$ is the splitting field. Since $\omega$ is a root of $x^2+x+1$ and $\omega\notin\RR\supseteq\QQ(\alpha)$, the minimal polynomial of $\omega$ over $\QQ(\alpha)$ is $x^2+x+1$ and $[K:\QQ(\alpha)]=2$. The tower law then gives $[K:\QQ]=[\QQ(\alpha):\QQ]\cdot[K:\QQ(\alpha)]=3\cdot2=6$. Finally $\QQ(\omega)=\QQ(\sqrt{-3})$, because $\omega=-\frac12+\frac{\sqrt3}{2}i$ is a rational combination of $\sqrt{-3}=i\sqrt3$ and conversely.
+:::
+
+:::
+
+::: {.pf-step #galois-group}
+$\Gal(K/\QQ)\cong S_3$; it is generated by $\sigma$ with $\sigma(\alpha)=\omega\alpha,\ \sigma(\omega)=\omega$ and $\tau$ with $\tau(\alpha)=\alpha,\ \tau(\omega)=\omega^2$, satisfying $\sigma^3=\tau^2=1$ and $\tau\sigma\tau=\sigma^{-1}$.
+
+::: pf-proof
+$K$ is the splitting field of the separable polynomial $f$ (separable since $\operatorname{char}\QQ=0$), so $K/\QQ$ is Galois of degree $6$ and $\abs{\Gal(K/\QQ)}=6$.
+
+For $\sigma$: $[\QQ(\alpha,\omega):\QQ(\omega)]=6/2=3$ by step [](#splitting){.pf-ref}, which equals the degree of $f$, so $f$ is irreducible over $\QQ(\omega)$; both $\alpha$ and $\omega\alpha$ are roots, so there is a $\QQ(\omega)$-automorphism sending $\alpha\mapsto\omega\alpha$; its powers act by $\alpha\mapsto\omega^k\alpha$, so it has order $3$. For $\tau$: complex conjugation is a $\QQ$-automorphism of $K$ fixing $\alpha$ and sending $\omega\mapsto\omega^2$, of order $2$. These two satisfy $\tau\sigma\tau(\alpha)=\tau\sigma(\alpha)=\tau(\omega\alpha)=\omega^2\alpha=\sigma^{-1}(\alpha)$ and $\tau\sigma\tau(\omega)=\omega=\sigma^{-1}(\omega)$, so $\tau\sigma\tau=\sigma^{-1}$.
+
+Finally the group has order $6$ and is nonabelian: the relation $\tau\sigma\tau^{-1}=\sigma^{-1}$ with $\sigma\neq\sigma^{-1}$ shows that $\sigma$ and $\tau$ do not commute. A group of order $6$ is either cyclic of order $6$ or isomorphic to $S_3$, so $\Gal(K/\QQ)\cong S_3$.
+:::
+
+:::
+
+::: {.pf-step #subfields}
+The intermediate fields are exactly $\QQ$, $\QQ(\omega)=\QQ(\sqrt{-3})$, $\QQ(\alpha)$, $\QQ(\omega\alpha)$, $\QQ(\omega^2\alpha)$ and $K$, with $\QQ(\omega)$ corresponding to $A_3$ and the three cubic fields to the three subgroups of order $2$.
+
+::: pf-proof
+By the fundamental theorem of Galois theory, intermediate fields of the Galois extension $K/\QQ$ correspond to subgroups of $S_3$, order-reversing, and degrees match indices; step [](#galois-group){.pf-ref} gives the group and step [](#splitting){.pf-ref} the degree.
+
+The subgroups are: the trivial group, giving $K$; the whole group, giving $\QQ$; the alternating group $A_3=\generators{\sigma}$, of index $2$, giving the unique quadratic subfield $\QQ(\omega)$; and the three subgroups of order $2$, generated by $\tau$, by $\sigma\tau\sigma^{-1}$ and by $\sigma^2\tau\sigma^{-2}$, each of index $3$, giving three fields of degree $3$ over $\QQ$. Those three are $\QQ(\alpha)$, $\QQ(\omega\alpha)$ and $\QQ(\omega^2\alpha)$: each contains $\alpha$ or a conjugate, has degree $3$ over $\QQ$ by step [](#irreducible){.pf-ref}, and they are distinct because $\omega\alpha\notin\QQ(\alpha)$ and likewise for $\omega^2\alpha$, the same argument as in step [](#not-normal){.pf-ref}. Since there are exactly three index-$3$ subgroups and exactly these three distinct degree-$3$ fields, the correspondence is complete.
+:::
+
+:::
+
+:::
 :::
