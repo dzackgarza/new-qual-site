@@ -51,7 +51,9 @@ source:
     - id: P-CH7-45
       comment: Exercise 45
     - id: P-CH7-58
-      comment: Exercise 58
+      comment: Exercise 44 (printed as exercise 58 when the card was created; the
+        orbits-of-rotations exercise is 44 in Gallian 7e, whose chapter 7 ends at
+        50)
     - id: P-CH7-60
       comment: Exercise 60
     - id: P-CH7-65
