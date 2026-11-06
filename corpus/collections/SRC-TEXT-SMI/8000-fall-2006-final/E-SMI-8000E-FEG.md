@@ -22,6 +22,16 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "For an arbitrary intermediate field L, set H=Gal(E/L), used that E/L remains finite Galois, and compared |H| with the degree over the fixed field E^H to force E^H=L."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 12, final part G(i), the
+    option proved. Correct: for an intermediate L, H = Gal(E/L) equals [E : L] because
+    E/L is finite Galois (separable since k ⊆ L ⊆ E, normal by transport of the k-
+    normality), and |H| ≤ [E : E^H] ≤ [E : L] with L ⊆ E^H forces equality, hence
+    E^H = L, which is exactly surjectivity of the fixed-field map. No defect.
+---
 ---
 
 ::: {.exercise}
