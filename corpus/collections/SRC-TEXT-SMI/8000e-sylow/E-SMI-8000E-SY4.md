@@ -22,6 +22,16 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Observed that P is the unique Sylow p-subgroup of its normalizer, then used conjugation by an element of N(N(P)) to force preservation of P."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 7, Sylow problem 4:
+    N(N(P)) = N(P) for P Sylow. Correct: P is normal in N = N_G(P) and hence the
+    unique Sylow p-subgroup of N; for g normalizing N, gPg^{-1} is a Sylow
+    p-subgroup of N, so it equals P and g ∈ N; the reverse inclusion is trivial.
+    No defect.
+---
 ---
 
 ::: {.exercise}
