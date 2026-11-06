@@ -23,6 +23,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section V.6,
+    exercise 8, book page 288: "If char K = p ≠ 0 and [F : K] is finite and not
+    divisible by p, then F is separable over K." The card states exactly this.
+    The proof was checked: an inseparable finite extension has an element u whose
+    minimal polynomial is inseparable, and an irreducible inseparable polynomial
+    in characteristic p has zero derivative, hence all its exponents are multiples
+    of p, hence its degree is divisible by p; the tower law then forces p | [F : K],
+    contradicting the hypothesis. The cited facts are the section's own (Theorem
+    6.4 and the definition of separability). Complete; no defect.
 ---
 
 ::: {.problem}
