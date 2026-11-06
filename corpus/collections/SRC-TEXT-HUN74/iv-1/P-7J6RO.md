@@ -15,6 +15,21 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section IV.1,
+    exercise 5, book page 179: "If R has an identity, then a nonzero unitary
+    R-module A is simple if its only submodules are 0 and A. (a) Every simple
+    R-module is cyclic. (b) If A is simple every R-module endomorphism is
+    either the zero map or an isomorphism." The card states exactly this,
+    including the definition. The proof was checked: for nonzero a, the cyclic
+    submodule Ra contains 1_R a = a by unitarity, so Ra ≠ 0 and simplicity gives
+    Ra = A; and for an endomorphism f of a simple A the kernel is 0 or A and the
+    image is 0 or A, so f is zero or bijective. Complete; no defect. The result
+    is not called Schur's lemma in the book, but the card's title uses the
+    standard name for the same statement and adds no hypothesis.
 ---
 
 ::: {.problem}
