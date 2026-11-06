@@ -20,6 +20,20 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Compared the card's statement in full with the printed Exercise 2.5 (scan
+    page 26 of the retained PDF): (a) P^n is a noetherian topological space;
+    (b) every algebraic set in P^n is uniquely a finite union of irreducible
+    algebraic sets, none containing another, these being its irreducible
+    components. Both parts agree, the card rendering the book's declarative
+    sentences as "Show that" and making the chapter's standing hypothesis
+    explicit. The OCR of this exercise is garbled at its heading (printed as
+    ".5."), and an unnumbered sentence "Show that P^n itself is irreducible"
+    appears between Exercise 2.4 and this one; which exercise owns it is not
+    settled here, and this card does not claim it.
 ---
 
 ::: {.problem}
