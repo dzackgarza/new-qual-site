@@ -23,6 +23,20 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Proved every homomorphism Q→Z vanishes by divisibility, then exhibited a nonzero coordinate projection from every nonzero free abelian group to Z."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith Math 8000 packet 8000e.pdf page 1,
+    abelian-groups problem 6: "Prove that (Q,+) is not a free abelian group, i.e.
+    is not isomorpic to a coproduct of either a finite or an infinite number of
+    copies of Z. [hint: show that Hom(Q,Z) = {0}, but that Hom(G,Z) is not zero,
+    if G is free abelian.]" The card states exactly this with the printed hint.
+    The proof was checked: f(1) = n f(1/n) makes f(1) divisible by every n, so
+    f(1) = 0, and then b f(a/b) = a f(1) = 0 with Z torsion-free gives f = 0; and
+    a nonzero free abelian group has a basis element, whose coordinate projection
+    is a nonzero homomorphism to Z, finite support making it well defined for
+    infinite index sets as the printed statement requires. Complete; no defect.
 ---
 
 ::: {.exercise}
