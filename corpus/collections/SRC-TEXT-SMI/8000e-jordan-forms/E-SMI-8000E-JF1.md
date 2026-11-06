@@ -22,6 +22,20 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Enumerated partitions constrained by largest block sizes in parts (i)--(iii), and converted each invariant-factor exponent into the corresponding elementary divisor/Jordan block in part (iv)."
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 4, Jordan forms
+    Exercise 1(i)-(iv). Recomputed: with minimal polynomial (X-5)^2 on 5
+    dimensions the block sizes are partitions of 5 with largest part exactly 2,
+    namely (2,2,1) and (2,1,1,1); with three distinct linear factors on 5
+    dimensions the multiplicities are positive and sum to 5, six forms; with
+    (X-1)^2(X-2)^2 on 6 dimensions the generalized dimensions are (2,4), (3,3),
+    (4,2) and the partitions with largest part 2 give 2 + 1 + 2 = 5 forms; and the
+    given invariant factors have elementary divisors giving blocks 1,3,3 at 1;
+    1,1,2 at 2; 3 at 5. All lists are complete and distinct. No defect.
+---
 ---
 
 ::: {.exercise}
