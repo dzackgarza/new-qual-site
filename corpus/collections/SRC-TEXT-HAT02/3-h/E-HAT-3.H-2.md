@@ -34,9 +34,16 @@ Setup and Poincaré Duality with local coefficients:
 ::: pf-proof
 
 ::: pf-step
-Let $M = N_g$ ($g \ge 1$) be a closed connected nonorientable surface of genus $g$ (homeomorphic to $\#^g \RP^2$).
+Let $M$ be a closed nonorientable surface. The duality used below, Theorem 3H.6 (p. 336), is stated for a *closed connected* $n$-manifold, so the computation is carried out for connected $M$, written $M=N_g$ ($g\ge 1$, homeomorphic to $\#^g\RP^2$).
+
+For a general closed nonorientable $M$ with components $M_1,\dots,M_r$ each $M_i$ is itself a closed connected nonorientable surface, and the chain groups of §3.H split: $C_n(M;M_\ZZ)=\bigoplus_i C_n(M_i;M_{\ZZ|M_i})$, because a chain is a finite sum of singular simplices each of which has image in a single component (p. 331). Hence the disjoint-union axiom for homology with local coefficients (p. 333) gives
+$$
+H_n(M;M_\ZZ)\cong\bigoplus_{i=1}^r H_n(M_i;M_{\ZZ}),
+$$
+so the answer for $M$ is the direct sum of the answers for its components, and it suffices to compute the connected case.
+
 Let $\mathcal{L} = \mathcal{M}_\ZZ$ be the orientation local coefficient system with fiber $\ZZ$, where loops act by $\pm 1$ according to their orientation character $w_1: \pi_1(M) \to \{\pm 1\}$.
-By Proposition 3H.4 (p. 331) a bundle of groups with fiber $\ZZ$ is the same thing as a $\ZZ[\pi_1M]$-module, so this is a legitimate coefficient system for the homology groups $H_n(M;M_\ZZ)$ of the exercise; it is the system denoted $\widetilde{\ZZ}$ in Example 3H.3 (p. 329), whose associated twofold cover is the orientation cover $\widetilde M\to M$.
+The sentence preceding Proposition 3H.4 (p. 331) — covering spaces that are bundles of groups with fiber $G$ are equivalent to actions of $\pi_1(X)$ on $G$ by automorphisms of $G$, that is, to $\ZZ[\pi_1X]$-modules — makes a bundle of groups with fiber $\ZZ$ the same thing as a $\ZZ[\pi_1M]$-module; Proposition 3H.4 (p. 331) is then what identifies $H_n(M;E)$ with homology in that module. So this is a legitimate coefficient system for the homology groups $H_n(M;M_\ZZ)$ of the exercise; it is the system denoted $\widetilde{\ZZ}$ in Example 3H.3 (p. 329), whose associated twofold cover is the orientation cover $\widetilde M\to M$.
 :::
 
 ::: pf-step
