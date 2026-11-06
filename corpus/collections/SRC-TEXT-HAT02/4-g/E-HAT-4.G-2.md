@@ -42,7 +42,7 @@ where $(x, 0) \sim f_{e, 0}(x)$ and $(x, 1) \sim f_{e, 1}(x)$ for all $x \in X_e
 
 ::: pf-proof
 
-definition of the total space of a complex of spaces.
+Definition of the realization $\Delta X$ of a complex of spaces over $\Gamma$, as in Hatcher's discussion of graphs of groups (p. 458) and of complexes of spaces in §4.G (p. 459).
 
 :::
 
@@ -55,7 +55,7 @@ Because all attaching maps $f_{e, i}$ are homeomorphisms and $\Gamma$ is connect
 
 ::: pf-proof
 
-composition of homeomorphisms along paths in $\Gamma$.
+Composition of homeomorphisms along paths in the connected graph $\Gamma$: each attaching map is a homeomorphism onto a vertex space, so all vertex and edge spaces are homeomorphic.
 
 :::
 
