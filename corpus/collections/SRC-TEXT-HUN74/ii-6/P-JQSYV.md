@@ -23,6 +23,40 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section II.6,
+    exercise 9, book page 100: "Classify up to isomorphism all groups of order
+    18. Do the same for orders 20 and 30." The card states exactly this. All
+    three classifications were checked, including the counts.
+    Order 18 = 2·3^2: n_3 = 1, and a subgroup of order 2 exists by Cauchy, so
+    G = N ⋊ C. For N = Z_9 the image of the action is trivial or the involution,
+    giving Z_18 and D_18. For N = Z_3^2 an involution of GL_2(F_3) has minimal
+    polynomial dividing (x-1)(x+1), so it is diagonalizable with eigenvalues ±1,
+    giving exactly the three classes I, diag(1,-1), -I; none of the three is
+    conjugate to another. The five listed groups are distinct: the unique
+    subgroup of order 9 is characteristic and is Z_9 in two cases and Z_3^2 in
+    three, and inside each family the fixed space of the involution has
+    dimension 2, 1, 0 (respectively 2, 1). I checked independently that
+    Z_3^2 ⋊_{-I} Z_2 has trivial center, so it is not Z_3 × S_3.
+    Order 20 = 2^2·5: n_5 = 1, G = Z_5 ⋊ P with P of order 4. For P = Z_4 the
+    image of P in Aut(Z_5) = Z_4 has order 1, 2 or 4 and for P = Z_2^2 order 1
+    or 2, the nonzero maps Z_2^2 → Z_2 being equivalent under GL_2(F_2). The
+    count of five is right. One point checked separately because it is easy to
+    get wrong and the card does not claim it: Z_5 ⋊ Z_4 with image of order 2 is
+    not the dihedral group of order 20, which is the Z_2^2 case; the card names
+    that group only as a semidirect product, so it is correct as written.
+    Order 30 = 2·3·5: n_5 = 6 and n_3 = 10 cannot both hold (24 + 20 > 29), so
+    a subgroup of order 15 exists and, by index 2, is normal; groups of order 15
+    are cyclic since 3 does not divide |Aut(Z_5)| = 4. Then G = Z_15 ⋊ Z_2 acting
+    through Aut(Z_15) = Z_2 × Z_4, whose elements of order dividing 2 are four,
+    so four groups, distinct because the two characteristic Sylow subgroups are
+    fixed or inverted independently. The printed table on the same page lists
+    Z_15 as the only group of order 15, which agrees.
+    Complete; no defect. Not claimed: an independent derivation of the
+    semidirect-product classification theorem itself, which the section proves.
 ---
 
 ::: {.problem}
