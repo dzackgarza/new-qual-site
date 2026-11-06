@@ -12,7 +12,25 @@ classification:
   - Divisors
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against Hartshorne, Algebraic Geometry (1977), Chapter IV, section 1,
+    exercise 1.2, printed page 297 (PDF page 312 of
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, the checked-in
+    extraction). The printed exercise reads: "Again let X be a curve, and let
+    P_1, ..., P_r be points. Then there is a rational function f in K(X) having
+    poles (of some order) at each of the P_i, and regular elsewhere." The card
+    states exactly this. The proof was read and checked: with D the sum of the
+    points and n-1 > 2g-2, Riemann-Roch gives l(nD) - l(nD - P_i) = 1 for each
+    i, so L(nD - P_i) is a proper subspace of L(nD); a vector space over an
+    infinite field is not a union of finitely many proper subspaces, so some f
+    lies outside all of them, and then v_{P_i}(f) = -n at each P_i with no pole
+    elsewhere.
 ---
+
 
 ::: {.problem}
 Again let $X$ be a curve, and let $P_1, \ldots, P_r \in X$ be points. Then there is a rational function $f \in K(X)$ having poles (of some order) at each of the $P_i$, and regular elsewhere.
