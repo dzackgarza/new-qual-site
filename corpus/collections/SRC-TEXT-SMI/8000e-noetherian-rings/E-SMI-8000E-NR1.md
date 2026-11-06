@@ -15,6 +15,18 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed problem, Smith 8000e.pdf page 5, Noetherian rings
+    problem 1: "If R is a noetherian ring, prove every ideal I of R is contained in
+    a maximal ideal without using Zorn's lemma." The card restricts to proper I and
+    says why: a maximal ideal is proper, so I = R lies in none. Under that reading
+    the proof is the standard one and is correct, since a proper ideal inside no
+    maximal ideal starts a strictly increasing chain of proper ideals, which the
+    ascending chain condition forbids. No defect beyond the printed statement's own
+    omission of "proper".
 ---
 
 ::: {.exercise}
