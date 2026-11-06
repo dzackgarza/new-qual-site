@@ -23,6 +23,22 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-06
+  note: >-
+    Read against the printed exercise, Hungerford, Algebra (1974), section VII.3,
+    exercise 1, book page 354, read from the page image: "If r + r ≠ 0 for all
+    nonzero r ∈ R, then prove that an n-linear form B^n → R is alternating if and
+    only if it is skew-symmetric. What if char R = 2?" Here B^n → R is the
+    section's notation (Definition 3.1) for an R-multilinear form on B, which the
+    card states as B an R-module. Both implications were checked: alternation
+    gives 0 = f(..., x + y, ..., x + y, ...) and hence f(..., x, ..., y, ...) +
+    f(..., y, ..., x, ...) = 0, and skew-symmetry on two equal arguments gives
+    r = -r, hence r = 0 under the hypothesis. The characteristic 2 answer is the
+    printed question's point and the card's counterexample is right: on F_2 with
+    f(x,y) = xy the form is symmetric hence skew-symmetric because -1 = 1, but
+    f(1,1) = 1. Complete; no defect.
 ---
 
 ::: {.problem}
