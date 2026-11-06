@@ -49,7 +49,7 @@ $$
 
 ::: pf-proof
 
-Hatcher Proposition 4I.1 (suspension splits product into wedges with the smash product).
+Hatcher Proposition 4I.1 (p. 467): $\Sigma(X\times Y)\simeq\Sigma X\vee\Sigma Y\vee\Sigma(X\wedge Y)$ for CW complexes.
 
 :::
 
@@ -64,7 +64,7 @@ $$
 
 ::: pf-proof
 
-product of Eilenberg–MacLane spaces.
+$\pi_1(X\times Y)\cong\pi_1(X)\times\pi_1(Y)$ (Proposition 4.2, p. 343), and a product of $K(G,1)$'s is a $K(G\times H,1)$ since the product of the universal covers is contractible.
 
 :::
 
@@ -86,7 +86,7 @@ The reduced homology groups $\widetilde{H}_i(X)$ are non-zero only in odd degree
 
 ::: pf-proof
 
-homology of lens spaces / $K(\ZZ_m, 1)$.
+$K(\ZZ_m,1)$ is the infinite lens space, whose homology is $\ZZ_m$ in odd positive degrees and $0$ in even positive degrees (as computed for lens spaces in Example 2.43, p. 144).
 
 :::
 
@@ -132,7 +132,7 @@ algebra of torsion abelian groups.
 
 ::: pf-step
 
-By the Künneth formula for smash products:
+By the Künneth formula (Theorem 3B.6, p. 275, applied to the pair $(X\times Y, X\vee Y)$ whose quotient is $X\wedge Y$) for the smash product:
 $$
 \widetilde{H}_k(X \wedge Y) \cong \bigoplus_{i+j=k} \big(\widetilde{H}_i(X) \otimes \widetilde{H}_j(Y)\big) \oplus \bigoplus_{i+j=k-1} \operatorname{Tor}_1^\ZZ\big(\widetilde{H}_i(X), \widetilde{H}_j(Y)\big) = 0 \quad \text{for all } k \ge 0.
 $$
@@ -162,7 +162,7 @@ suspension isomorphism in homology.
 
 ::: pf-step
 
-By Whitehead’s Theorem for simply connected CW complexes with trivial homology, $\Sigma(X \wedge Y) \simeq *$.
+By the homology form of Whitehead's theorem (Corollary 4.33, p. 367) a simply connected CW complex with all reduced homology zero is contractible, so $\Sigma(X \wedge Y) \simeq *$.
 
 ::: pf-proof
 
