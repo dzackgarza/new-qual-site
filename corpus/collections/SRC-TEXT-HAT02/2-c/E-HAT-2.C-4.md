@@ -123,7 +123,9 @@ Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}. The alternating number of s
 If the fixed points are isolated, the fixed subcomplex has only $0$-simplices, so
 $$
 \tau(f)=\#F.
-$$The subdivision and fixed-simplex arguments are in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.C.4, printed pp. 85--88. In the refined complex a preserved simplex is fixed pointwise, so every diagonal trace entry is $+1$. It follows that the alternating chain trace over $n$ is $\sum(-1)^nc_n(F)=\chi(F)$, and for an isolated fixed point set this is just $\#F$.
+$$
+
+The subdivision and fixed-simplex arguments are in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.C.4, printed pp. 85--88. In the refined complex a preserved simplex is fixed pointwise, so every diagonal trace entry is $+1$. It follows that the alternating chain trace over $n$ is $\sum(-1)^nc_n(F)=\chi(F)$, and for an isolated fixed point set this is just $\#F$.
 
 
 :::
