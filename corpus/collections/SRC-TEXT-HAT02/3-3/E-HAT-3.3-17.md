@@ -43,6 +43,15 @@ audit:
     Read it against this card: Sam's surjectivity and injectivity steps pass to a later stage of the
     directed system, which is the same device as the card's, and the two arguments agree. The
     printed page is cited because the file's cover sheet shifts the page index by one.
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Second published solution located: Math 538 homework solutions, HMW 4 handwritten p.3 (PDF page
+    19), whose proof is the card's own route (limit of exact sequences on representatives, then the
+    three short exact sequences 0 -> Z_n -> C_n -> B_{n-1} -> 0, 0 -> Z_{n+1} -> C_{n+1} -> B_n -> 0
+    and 0 -> B_n -> Z_n -> H_n -> 0). Both sets are now cited with page locators.
+
 ---
 
 ::: {.problem}
@@ -86,5 +95,5 @@ $$
 \boxed{H_n(\varinjlim C_\alpha)\cong\varinjlim H_n(C_\alpha).}
 $$
 
-Compare Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.3 Exercise 17, printed pp.15--16: the same statement, proved there by exhibiting the comparison map between $\varinjlim H_n(C_\alpha)$ and $H_n(\varinjlim C_\alpha)$ and showing it injective and surjective by passing to a later stage. The card's route instead uses exactness of filtered direct limits for the second half, which is the first half of the same exercise.
+Compare Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.3 Exercise 17, printed pp.15--16: the same statement, proved there by exhibiting the comparison map between $\varinjlim H_n(C_\alpha)$ and $H_n(\varinjlim C_\alpha)$ and showing it injective and surjective by passing to a later stage. The card's route instead uses exactness of filtered direct limits for the second half, which is the first half of the same exercise. It is also solved in the Math 538 homework solutions, HMW 4, handwritten page 3 (PDF page 19 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`), by exactly the card's route: exactness of the limit on representatives, then $0\to\lim Z_n\to C_n\to C_{n-1}$, $\operatorname{im}\partial_{n+1}=\lim B_n$ and $0\to\lim B_n\to\lim Z_n\to\lim H_n\to0$.
 :::
