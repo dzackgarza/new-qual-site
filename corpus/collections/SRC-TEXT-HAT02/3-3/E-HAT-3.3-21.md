@@ -50,6 +50,18 @@ audit:
     hence uncountable. So no such isomorphism exists; the earlier lim^1 remark was unnecessary and
     has been removed.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Withdraws the incorrect counterexample and its audit claim. A surjection H_1(X+) to the product
+    of Z gives an injection on the corresponding Hom groups, not uncountability; and the Hom group
+    of the product is itself countable by Specker's theorem. Frankland, Cohomology of the Hawaiian
+    Earring (2017), Theorems 1.2 and 1.3 (p.2) gives H^1(E;Z) equal to the countable direct sum,
+    and Theorem 1.4 (p.3) the induced dual iso. Stanford Solution Set 4's false counterexample is
+    removed. The definite answer to Hatcher's bracketed question is not established from this
+    source and remains deferred.
+
 ---
 
 ::: {.problem}
@@ -77,22 +89,25 @@ H^n(X^+,U;G)\xrightarrow{\cong}H^n(X^+,\infty;G).
 $$
 These isomorphisms commute with restriction to smaller cone neighborhoods. Taking the direct limit gives the asserted isomorphism $H_c^n(X;G)\cong H^n(X^+,\infty;G)$.
 
-For $X=\ZZ\times\RR$ the conclusion is **false**, not merely the cone-neighborhood proof. Under stereographic projection, $X^+$ is a double shrinking wedge of circles, so a neighborhood of $\infty$ cannot be a cone with cone point $\infty$; but the following explicit computation proves more.
+For the bracketed question $X=\ZZ\times\RR$, the cone argument above is not available: inverse stereographic projection makes $X^+$ a double Hawaiian earring, so $\infty$ has no cone neighborhood that can supply the contractible $U_K$ used there.
 
-For $N\ge1$ choose the cofinal rectangles
+The proposed proof that the isomorphism is false has a substantive error and is not accepted here. Its retraction argument would produce a surjection $H_1(X^+;\ZZ)\to\prod_{\NN}\ZZ$, which by dualization gives an **injection**
 $$
-K_N=[-N-\tfrac12,N+\tfrac12]\times[-N,N].
+\operatorname{Hom}_{\ZZ}(\prod_{\NN}\ZZ,\ZZ)\hookrightarrow \operatorname{Hom}_{\ZZ}(H_1(X^+),\ZZ),
 $$
-If $K$ meets only the lines $\{m\}\times\RR$ with $-N\le m\le N$, then line by line $K\cap(\{m\}\times\RR)$ is a compact interval $J_m$ in the second coordinate. The relative cohomology decomposes as the finite direct sum
+not an uncountability proof. Moreover, by Specker's theorem every homomorphism $\prod_{\NN}\ZZ\to\ZZ$ is a finite linear combination of coordinate projections, so
 $$
-H^1(X,X-K_N;\ZZ)=\bigoplus_{m=-N}^{N}
-H^1(\RR,\RR-J_m;\ZZ),
+\operatorname{Hom}_{\ZZ}(\prod_{\NN}\ZZ,\ZZ)\cong\bigoplus_{\NN}\ZZ
 $$
-and each summand is $\ZZ$ by the pair sequence $H^1(\RR)=0$ and $\widetilde H^0(\RR-J_m)=0$. Hence $H^1(X,X-K_N)=\ZZ^{2N+1}$. The rectangles are cofinal, so $H_c^1(X;\ZZ)$ is the direct limit of these countable groups and is countable.
+is countable.
 
-On the other hand, the based retractions of $X^+$ onto its circles give a surjection $H_1(X^+;\ZZ)\to\prod_{\NN}\ZZ$, so composing with that surjection embeds $\operatorname{Hom}(\prod_{\NN}\ZZ,\ZZ)$ in $H^1(X^+;\ZZ)$. The group of arbitrary integer coordinate functions is uncountable, so $H^1(X^+;\ZZ)\cong H^1(X^+,\infty;\ZZ)$ is uncountable. Therefore
+The precise group computations are in **Martin Frankland, *Cohomology of the Hawaiian Earring* (22 February 2017)**, local file `tmp/sources/frankland-hawaiian-earring-2017.pdf` ([course page PDF](https://uregina.ca/~franklam/Frankland_HawaiianEarring_20170222.pdf)): Theorem 1.2, p. 2, is Specker's theorem; Theorem 1.3, p. 2, gives
 $$
-H_c^1(\ZZ\times\RR;\ZZ)\not\cong H^1((\ZZ\times\RR)^+,\infty;\ZZ).
+H^1(E;\ZZ)\cong\bigoplus_{\NN}\ZZ
 $$
-This is the counterexample in **Stanford Math 215C, Solution Set 4**, Hatcher 3.3.21, printed p. 1, [`solution4.pdf`](https://math.stanford.edu/~ralph/math215c/solution4.pdf), held at `tmp/sources/stanford-math215c-spring2009-solution4.pdf`. The line-by-line finite-rank and cofinality statements above check the countability argument instead of just citing the assertion.
+for the Hawaiian earring $E$; and Theorem 1.4, p. 3, says that the map induced by the retraction is an isomorphism
+$$
+\operatorname{Hom}_{\ZZ}(\prod_{\NN}\ZZ,\ZZ)\cong\operatorname{Hom}_{\ZZ}(H_1(E),\ZZ).
+$$
+As the question does not specify $G$, choose the same integer coefficients used by Frankland: and the compactly supported $H_c^1(\ZZ\times\RR;\ZZ)$ is also countable: the source\'s cofinal rectangle calculation gives $H^1(X,X-K_N;\ZZ)=\ZZ^{2N+1}$, one relative interval generator for each of the $2N+1$ included lines. Countability therefore gives no disproof of the bracketed isomorphism. **The bracketed question is deferred rather than answered falsely by Stanford Solution Set 4's countability argument.** Establishing a definite answer requires a different published argument checking the natural map itself.
 :::
