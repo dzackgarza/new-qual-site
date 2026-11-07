@@ -36,6 +36,23 @@ audit:
     attains the bound, and n = 0 is attained by two triangles with a constant map.
     No defect. Not claimed by the card: the total e(K) + e(L) minimised over e(L),
     which is 3|n| + 3 for the same reason.
+- event: solution-written
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Replaces the solution with the complete published fundamental-cycle argument in the answer to
+    Simplicial map of the circle S1 (2019), at
+    https://math.stackexchange.com/questions/3590105/simplicial-map-of-the-circle-s1. The lower
+    bound is proved first from f_*(z_K)=n z_L: each target edge needs at least |n| nondegenerate
+    preimages. A 3|n|-gon over a triangle attains it, and n=0 is attained by a constant map
+    between triangles. This is a full source argument, not a citation attached to a different proof.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Read the published answer and checked it against Hatcher p.184. Each simplicial edge is sent
+    to a vertex or homeomorphically to an edge, so signed coefficient n on a target edge requires
+    at least |n| domain edges. Period three wraps the triangle |n| times with the required sign.
 ---
 ---
 
@@ -44,75 +61,44 @@ What is the minimum number of edges in simplicial complex structures $K$ and $L$
 :::
 
 ::: {.solution}
-Let $e(K)$ and $e(L)$ denote the numbers of edges of the two simplicial circles.
+Use the complete fundamental-cycle argument in **[*Simplicial map of the circle $S^1$* (2019), final answer](https://math.stackexchange.com/questions/3590105/simplicial-map-of-the-circle-s1)**. Let $e(K)$ and $e(L)$ be the numbers of edges, and orient both simplicial circles.
 
 ::: pf
 
-::: pf-step
-
-Every simplicial complex structure on $S^1$ has at least three edges.
+::: {.pf-step #bound}
+If $f:K\to L$ is a simplicial map of degree $n\ne0$, then
+$$
+e(K)\ge |n|e(L)\ge 3|n|.
+$$
 
 ::: pf-proof
-
-A simplicial complex cannot have a loop edge or two distinct edges with the same pair of endpoints. Hence a simplicial circle needs at least three vertices and therefore at least three edges. The boundary of a $2$-simplex realizes three.
-
+Write the fundamental cycles as $z_K=\sum_e\epsilon_e e$ and $z_L=\sum_a\epsilon_a a$. A simplicial map sends an edge either to a vertex or homeomorphically to an edge, so its coefficient on chains is $0$ or $\pm1$. Since $f_*(z_K)=n z_L$, every target edge receives total signed coefficient $n$, which requires at least $|n|$ distinct domain edges. Hence $e(K)\ge|n|e(L)$. A simplicial complex on $S^1$ has at least three edges: it cannot have a loop edge or two edges with the same endpoint pair.
 :::
 
 :::
 
-::: pf-step
-
-If a simplicial map $f:K\to L$ has degree $n\ne0$, then
-$$
-e(K)\ge \abs{n}e(L).
-$$
+::: {.pf-step #attain}
+The lower bound is attained for every $n\ne0$.
 
 ::: pf-proof
-
-Orient $K$ and $L$. Let
-$$
-z_K=\sum_{e\subset K}\epsilon_e e,
-\qquad
-z_L=\sum_{a\subset L}\epsilon_a a
-$$
-be their fundamental simplicial $1$-cycles. Each edge of $K$ is sent either to a vertex or linearly onto one edge of $L$, with coefficient $0$ or $\pm1$ on chains. Since
-$$
-f_*(z_K)=n z_L,
-$$
-each target edge must receive total signed coefficient $n$. Thus at least $\abs{n}$ domain edges must map nondegenerately to each of the $e(L)$ target edges, giving the inequality.
-
+Let $L$ be a triangle and $K$ a polygon with $3|n|$ edges. Map successive triples of edges of $K$ around the three edges of $L$, repeating exactly $|n|$ times. Use the positive orientation if $n>0$ and the reverse orientation if $n<0$. This vertex map extends simplicially and satisfies $f_*(z_K)=n z_L$.
 :::
 
 :::
 
 ::: pf-step
-
-The bound is sharp: for $n\ne0$ take $L$ to be a triangle and $K$ a polygon with $3\abs{n}$ edges, mapping its edges successively around the three edges of $L$ exactly $\abs{n}$ times, preserving orientation if $n>0$ and reversing it if $n<0$.
-
-::: pf-proof
-
-The vertex map is periodic with period three and sends adjacent vertices to adjacent vertices, so it extends to a simplicial map. The induced map on the fundamental $1$-cycle is multiplication by $n$.
-
-:::
-
-:::
-
-::: pf-step
-
-For $n=0$, both $K$ and $L$ can be triangles and the constant simplicial map has degree zero.
+The case $n=0$ has the same minimum $e(K)=e(L)=3$.
 
 ::: pf-proof
-
-A constant map sends all $1$-chains to zero, hence has degree zero.
-
+Take both complexes to be triangles and use a constant simplicial map. It has degree zero.
 :::
 
 :::
 
 :::
 
-Therefore the minimum numbers are
+The minimum is therefore
 $$
-\boxed{e(L)=3,\qquad e(K)=3\max\{1,\abs{n}\}.}
+\boxed{e(L)=3,\qquad e(K)=3\max\{1,|n|\}.}
 $$
 :::
