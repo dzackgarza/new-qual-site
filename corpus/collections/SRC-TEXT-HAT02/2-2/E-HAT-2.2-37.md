@@ -42,7 +42,7 @@ audit:
   by: claude
   date: 2026-11-08
   note: >-
-    Statement matches Exercise 37 as printed on p. 159. The rewritten proof: chain groups are free
+    Statement matches Exercise 37 as printed on p. 158. The rewritten proof: chain groups are free
     on the open simplices (p. 105) and a subcomplex is a union of simplices (p. 107); every open
     simplex of X lies wholly in A or in B because it is connected and A, B are unions of open
     simplices, whence Delta_n(A) + Delta_n(B) = Delta_n(X); the maps phi(x) = (x,-x) and
@@ -52,6 +52,15 @@ audit:
     is needed, unlike the singular case which needs Proposition 2.21 p. 119. What is not covered:
     the independence of the connecting map from the choice of x and y is deferred to p. 150
     rather than redone.
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Locator corrected after checking the printed exercise page: Hatcher §2.2 Exercise 37 is on
+    p.158, not p.159 as the previous audit note and commit summary said. The solution is unchanged:
+    the simplicial Mayer-Vietoris sequence comes from the exact sequence of chain complexes
+    Delta_n(A cap B) -> Delta_n(A) + Delta_n(B) -> Delta_n(X) and Theorem 2.16 p.117.
+
 ---
 
 ::: {.problem}
