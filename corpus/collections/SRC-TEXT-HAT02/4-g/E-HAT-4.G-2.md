@@ -15,16 +15,6 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
-- event: source-checked
-  by: claude
-  date: 2026-11-08
-  note: >-
-    Read Hatcher p.459: complex of spaces over Δ-complex Γ with n-simplex data X_0->...->X_n and iterated mapping cylinder M(f1,...,fn)->Δ^n; definition for n=1 as M(f1) and for n>1 as mapping cylinder of M(f1,...,fn-1)->X_{n-1}->X_n via canonical projection. The statement's hypothesis is all maps are homeomorphisms.
-- event: solution-reviewed
-  by: claude
-  date: 2026-11-08
-  note: >-
-    Previous proof handled only the graph case (vertex/edge spaces, edge cylinders). Extended to general n: by induction M(f1,...,fn) ≅ F×Δ^n when each f_i is a homeomorphism, using M(f1)≅F×I and the join description F×(Δ^{n-1}⋆I)≅F×Δ^n. Local triviality over int σ and over open stars U_v then gives F×U, so projection is a fiber bundle with fiber F, the common homeomorphism type of all vertex/edge spaces.
 ---
 
 ::: {.problem}
@@ -56,26 +46,26 @@ Iterated mapping cylinder of a string of homeomorphisms is a product:
 
 For $n=1$, $M(f_1)$ with $f_1$ a homeomorphism is $X_0\times I$ with
 $X_0\times\{1\}$ identified to $X_1$ via $f_1$; since $f_1$ is a homeomorphism,
-$(x,t)\mapsto (f_1(x),t)$ for $t$ in the cylinder coordinate gives a
-homeomorphism $M(f_1)\cong X_0\times I\cong F\times\Delta^1$.
+$(x,t)\mapsto (f_1(x),t)$ gives a homeomorphism $M(f_1)\cong X_0\times I\cong
+F\times\Delta^1$ commuting with projection to $\Delta^1$.
 
 Inductively, let $X_0\xrightarrow{f_1}\cdots\xrightarrow{f_n}X_n$ with each $f_i$ a
-homeomorphism, and let $M_{n-1}=M(f_1,\ldots,f_{n-1})$. By induction
-$M_{n-1}\cong F\times\Delta^{n-1}$ compatibly with its projection to
-$\Delta^{n-1}$. The iterated cylinder $M(f_1,\ldots,f_n)$ is defined (p.459) as
-the mapping cylinder of the composition
+homeomorphism and $M_{n-1}=M(f_1,\ldots,f_{n-1})\cong F\times\Delta^{n-1}$ by
+induction, respecting projection to $\Delta^{n-1}$. The iterated cylinder
+$M(f_1,\ldots,f_n)$ is defined (p.458–459) as the mapping cylinder of
 $M_{n-1}\xrightarrow{\pi}X_{n-1}\xrightarrow{f_n}X_n$, where $\pi$ is the
-canonical projection of a mapping cylinder onto its target end. Since $\pi$
-is a homotopy equivalence and $f_n$ a homeomorphism, the composition is a
-homotopy equivalence that is in fact a homeomorphism on the $F$-factor:
-using $M_{n-1}\cong F\times\Delta^{n-1}$ and $X_n\cong F$, the mapping cylinder
-of $F\times\Delta^{n-1}\to F$ (projection to $F$ followed by $f_n$) is
-$F\times (\Delta^{n-1}\star I)\cong F\times\Delta^n$, star denoting join with
-an interval, i.e. the cone on the base simplex. Explicitly,
-$(y,s,t)\mapsto (y, (1-t)s + t e_n)$ with $s\in\Delta^{n-1}$, $t\in I$, gives the
-homeomorphism $M(f_1,\ldots,f_n)\cong F\times\Delta^n$ commuting with
-projection to $\Delta^n$. Thus for every $n$-simplex $\sigma$ of $\Gamma$,
-$p^{-1}(\sigma)=M(f_1,\ldots,f_n)$ is $F\times\sigma$.
+canonical projection onto the target end. Under the product identifications
+$M_{n-1}\cong F\times\Delta^{n-1}$ and $X_{n-1},X_n\cong F$, the composition is
+$(y,s)\mapsto f_n(\pi_F(y,s))=f_n(y)$ with $\pi_F$ the $F$-projection; its
+mapping cylinder is $F\times C(\Delta^{n-1})=F\times(\Delta^{n-1}\star\{pt\})
+\cong F\times\Delta^n$, the cone on $\Delta^{n-1}$ (join with a point, not
+$\Delta^{n-1}\star I$, which has dimension $n+1$). Explicitly
+$((y,s),t)\mapsto (y,(1-t)s+t e_n)$ with $s\in\Delta^{n-1}$, $t\in I$, gives a
+homeomorphism $M(f_1,\ldots,f_n)\cong F\times\Delta^n$ over $\Delta^n$.
+Thus for the $n$-simplex $\sigma$ corresponding to this string,
+$p^{-1}(\sigma)=M(f_1,\ldots,f_n)\cong F\times\sigma$, and on each face the
+identification is the product of the fiber homeomorphism $F\to F$ given by the
+corresponding edge map.
 
 :::
 
@@ -87,17 +77,34 @@ Local triviality:
 
 ::: pf-proof
 
-Let $\sigma$ be any simplex of $\Gamma$ and let $\operatorname{int}\sigma$ be its
-open interior; no identifications occur there, so
-$p^{-1}(\operatorname{int}\sigma)=F\times\operatorname{int}\sigma$
-as above. For a vertex $v$ let $U_v$ be its open star in $\Gamma$ (all open
-simplices incident to $v$ together with $v$). Each such open simplex
-contributes $F\times\operatorname{int}\tau$ glued along homeomorphisms at faces,
-hence $p^{-1}(U_v)$ is obtained by gluing copies of $F\times\operatorname{int}\tau$
-along the identity on $F$, giving $p^{-1}(U_v)\cong F\times U_v$ via the
-product of the fiber identifications. The $U_v$ cover $\Gamma$, and the same
-holds for the open star of any simplex. Hence every $x\in\Gamma$ has a
-neighborhood $U$ with $p^{-1}(U)\cong F\times U$.
+Fix $n$-simplex $\sigma$ and its interior $\operatorname{int}\sigma$: no
+identifications from other simplices meet $\operatorname{int}\sigma$, so
+$p^{-1}(\operatorname{int}\sigma)=F\times\operatorname{int}\sigma$ as above,
+trivial over $\operatorname{int}\sigma$. For general local triviality,
+use the barycentric subdivision $\Gamma'$: every point $x\in\Gamma$ lies in the
+open star $\operatorname{St}(b_\tau)$ of the barycenter $b_\tau$ of a unique
+simplex $\tau$ of $\Gamma$, and $\operatorname{St}(b_\tau)$ meets only those
+simplices containing $\tau$ as a face. Choose a maximal simplex
+$\sigma\supset\tau$ containing $x$ in its interior (if $x$ is in $\operatorname{int}
+\tau$, take $\sigma=\tau$). The fiber over each simplex $\rho\supset\tau$ in
+$\operatorname{St}(b_\tau)$ is $F\times\rho$ with face identifications given by
+the edge homeomorphisms of $\Gamma$; since $\tau$ is a common face, all those
+identifications agree on $\tau$: for two $n$-simplices $\sigma_1,\sigma_2$
+containing $\tau$, the compositions of edge homeomorphisms along any path in
+$\sigma_1$ from a vertex of $\tau$ to the corresponding vertex coincide on
+$\tau$ because $\Gamma$ is a $\Delta$-complex (its simplices have ordered
+vertices and face maps are inclusions, so the diagram of spaces over $\tau$ is
+commutative; the repeated-face case is the consistency of the $\Delta$-complex
+structure). Hence $p^{-1}(\operatorname{St}(b_\tau))$ is obtained by gluing the
+products $F\times(\operatorname{St}(b_\tau)\cap\rho)$ along fiber
+homeomorphisms that agree on overlaps, giving $p^{-1}(\operatorname{St}(b_\tau))
+\cong F\times\operatorname{St}(b_\tau)$. These barycentric stars cover
+$\Gamma$ and are open, so $p$ is locally trivial. In particular, a loop edge
+with distinct attaching homeomorphisms $f_{e,0},f_{e,1}:F\to F$ has monodromy
+$f_{e,1}^{-1}f_{e,0}$ around the loop, but its bundle over $S^1$ is still locally
+trivial over arcs $U_e=\operatorname{int}e$ and over $U_v$ as above, with
+transition function the monodromy on overlaps; the vertex-star $U_v$ alone need
+not trivialize the loop, which is why the barycentric-star cover is used.
 
 :::
 
