@@ -33,6 +33,16 @@ audit:
   note: >-
     Read the argument: torsion-freeness of the finitely generated $H_{k-1}$ kills the Ext term, so
     $H^k\cong\operatorname{Hom}(H_k,\ZZ)$ is free, and Poincaré duality identifies it with $H_k$.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Published argument located at Guanyu Li, Hatcher.pdf, Exercise 3.3.9 (Hatcher 3.3 #25), printed
+    p.59, with its symbol defect corrected: the universal coefficient sequence goes from
+    Ext(H_{k-1}) to H^k to Hom(H_k), so the object after its vanishing Ext term is Hom(H_k(M),Z),
+    not Ext(H_k(M),Z). Poincare duality then gives H_k(M), and Hom of a finitely generated group
+    into Z is free (in particular torsionfree).
+
 ---
 
 ::: {.problem}
@@ -61,4 +71,6 @@ $$
 H^k(M;\ZZ)\cong H_{2k-k}(M;\ZZ)=H_k(M;\ZZ).
 $$
 Hence $H_k(M;\ZZ)$ is free abelian, in particular torsionfree.
+
+This is the argument in Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf), Exercise 3.3.9 (Hatcher §3.3 #25), printed p. 59 (local file `tmp/sources/hatcher-solutions-guanyu-li.pdf`). The source writes $H^k(M;\ZZ)\cong\operatorname{Ext}(H_k(M),\ZZ)$ immediately after the universal coefficient sequence; that symbol must be $\operatorname{Hom}(H_k(M),\ZZ)$, as displayed here. After this typo is corrected, the remaining step is Poincare duality, and freeness of Hom follows because $H_k(M)$ is finitely generated (Corollaries A.8 and A.9 in Hatcher's Appendix).
 :::
