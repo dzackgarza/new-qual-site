@@ -30,7 +30,7 @@ Show that the change-of-basepoint homomorphism $\beta_h$ depends only on the hom
 :::
 
 ::: {.solution}
-Let $h,k:I\to X$ be paths from $x_0$ to $x_1$ that are homotopic relative to their endpoints.
+Here $\beta_h$ is Hatcher's change-of-basepoint map, $h$ a path from $x_0$ to $x_1$ and $\beta_h[f]=[h\cdot f\cdot\bar h]$, an isomorphism $\pi_1(X,x_1)\to\pi_1(X,x_0)$ (p. 28, Proposition 1.5). Let $h,k:I\to X$ be paths from $x_0$ to $x_1$ that are homotopic relative to their endpoints.
 Thus there is a continuous map
 $$
 H:I\times I\to X
