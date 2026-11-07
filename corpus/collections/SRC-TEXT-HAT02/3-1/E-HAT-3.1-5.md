@@ -27,6 +27,11 @@ audit:
     the triangulated homotopy square gives invariance once the constant endpoint paths vanish; and
     $\varphi=\delta\psi$ says $\varphi(f)=\psi(v_1)-\psi(v_0)$, with the converse by joining each
     point to one basepoint per component.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Statement matches Exercise 5 (p.205) including the bracketed parenthetical and the printed iff in (d). Rechecked (a) on the triangle, (b) from c.c = c, (c) by the boundary computation now written out, and both directions of (d) with the explicit psi(x) = phi(f_x) and the chain phi(f_{x_0} . f) = phi(f_{x_0}) + phi(f) that makes delta psi = phi. The terse proofs "definition of cocycle" and "definition of coboundary" replaced by the p.191 identification delta = partial*. Not covered: the bracket's appeal to Theorem 3.2 (p.195) is cited, not re-proved.
 ---
 
 ::: {.problem}
@@ -53,7 +58,7 @@ A $1$-cochain $\varphi$ assigns to each path $f$ a value $\varphi(f) \in G$, and
 
 ::: pf-proof
 
-definition of cocycle.
+Hatcher p.191: $\delta = \partial^*$, so a cocycle is a cochain with $\varphi(\partial\sigma) = 0$ for every singular $2$-simplex $\sigma$.
 
 :::
 
@@ -101,7 +106,7 @@ Step [](#s3){.pf-ref}.
 
 ::: pf-proof
 
-Step [](#s1){.pf-ref}.
+Step [](#s1){.pf-ref} and step [](#s4){.pf-ref}, applied to the following chain. Split $[0,1]\times[0,1]$ into the triangles with vertices $(0,0),(1,0),(1,1)$ and $(0,0),(1,1),(0,1)$ and compose both affine maps with a homotopy $H$ from $f$ to $g$ fixing the ends. Their sum $T$ is a singular $2$-chain whose boundary is $g - f + c_{f(1)} - c_{f(0)}$ up to the degenerate edges, where $c_x$ is the constant path at $x$. Since $\varphi$ is a homomorphism on chains and vanishes on constant paths by step [](#s4){.pf-ref}, $0 = \varphi(\partial T) = \varphi(g) - \varphi(f)$.
 
 :::
 
@@ -125,7 +130,7 @@ Step [](#s5){.pf-ref}.
 
 ::: pf-proof
 
-definition of coboundary.
+Hatcher p.191: $\delta\psi(f) = \psi(\partial f) = \psi(f(1)) - \psi(f(0))$, a $0$-chain being a formal sum of points.
 
 :::
 
@@ -137,7 +142,7 @@ definition of coboundary.
 
 ::: pf-proof
 
-The endpoint hypothesis makes the choice of $f_x$ immaterial, and concatenation gives the displayed difference.
+The endpoint hypothesis makes the choice of $f_x$ immaterial. For a path $f$ from $x_0 = f(0)$ to $x_1 = f(1)$, part (a) gives $\varphi(f_{x_0} \cdot f) = \varphi(f_{x_0}) + \varphi(f)$, and $f_{x_0} \cdot f$ has the same endpoints as $f_{x_1}$, so the hypothesis gives $\psi(x_1) - \psi(x_0) = \varphi(f)$.
 
 :::
 
