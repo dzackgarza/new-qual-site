@@ -100,16 +100,17 @@ Then, using $x^2=X$, $y^2=Y$, and the fact that the cube of every word is $1$,
 $$
 \begin{aligned}
 [[x,y],y]
-&=xyXY\,y\,(xyXY)^{-1}Y\\
-&=xyXY\,yyxYXY\\
-&=xyXyxx yx(XY)^3\\
-&=xyXyXyx\\
-&=xx(Xy)^3x\\
-&=x^3\\
-&=1.
+&=xyXY\,y\,(xyXY)^{-1}Y &&\text{definition, }(xyXY)^{-1}=yxYX\\
+&=xyXY\,yyxYXY &&\text{free cancellation}\\
+&=xyXyxx\,yx(XY)^3 &&\text{free, with }x^2=X,\ y^2=Y\\
+&=xyXyXyx &&(XY)^3=1,\ \text{then }xx=X\\
+&=xx(Xy)^3x &&\text{free, with }x^2=X,\ y^2=Y\\
+&=x^3 &&(Xy)^3=1\\
+&=1 &&x^3=1.
 \end{aligned}
 $$
-Here the third and fifth lines only insert cube relations and use $x^2=X$, while the other steps are free cancellation.
+Lines 2, 3 and 5 are rewrites that use only $x^2=X$, $y^2=Y$ and free cancellation.
+The cube relations enter at line 4, where $(XY)^3=1$ deletes the cube inserted in line 3 and $xx=X$ then cancels the remaining pair; at line 6, where $(Xy)^3=1$ leaves $x^3$; and at line 7, where $x^3=1$.
 Thus $[x,y]$ commutes with $y$.
 Interchanging $x$ and $y$ shows that $[y,x]=[x,y]^{-1}$ commutes with $x$, hence $[x,y]$ commutes with $x$ as well.
 Applying this with $x=a$, $y=b$ proves that $c$ commutes with both generators and is therefore central in $G$.
@@ -164,15 +165,31 @@ A=\begin{pmatrix}1&1&0\\0&1&0\\0&0&1\end{pmatrix},
 \qquad
 B=\begin{pmatrix}1&0&0\\0&1&1\\0&0&1\end{pmatrix}.
 $$
-Every element of $U$ has cube $1$, so the assignment
+Every element of $U$ has cube $1$: if $M=I+N$ with $N$ strictly upper triangular then $N^3=0$, and $3=0$ in $\FF_3$, so
+$$
+M^3=(I+N)^3=I+3N+3N^2+N^3=I.
+$$
+The matrices $A$ and $B$ generate $U$. Write $(x,y,z)$ for the matrix with $x$ in position $(1,2)$, $y$ in position $(2,3)$ and $z$ in position $(1,3)$; multiplying,
+$$
+(x,y,z)(x',y',z')=(x+x',\,y+y',\,z+z'+xy').
+$$
+Hence $A=(1,0,0)$, $B=(0,1,0)$ and
+$$
+ABA^{-1}B^{-1}=(1,1,1)(-1,0,0)(0,-1,0)=(0,0,-1)=I-E_{13},
+$$
+so $I+E_{13}=(0,0,1)$ and
+$$
+A^jB^k(I+E_{13})^l=(j,k,l)
+\qquad(j,k,l\in\FF_3).
+$$
+These are the $27$ elements of $U$.
+
+Since every element of $U$ has cube $1$, the assignment
 $$
 a\mapsto A,
 \qquad b\mapsto B
 $$
-induces a surjection
-$$
-G\twoheadrightarrow U.
-$$
+sends each cube $w^3$ to $1$, hence kills the normal subgroup $N$ and induces a homomorphism $G=F/N\to U$; it is surjective because $A$ and $B$ generate $U$.
 Hence $\cardinality{G}\ge27$.
 Together with step [](#s3){.pf-ref},
 $$
@@ -265,7 +282,18 @@ so
 $$
 \chi=27-54+27=0.
 $$
-The labelled incidence pattern is connected and each edge is incident with two of these faces, giving a closed orientable surface of Euler characteristic $0$, hence a torus.
+The labelled incidence pattern is connected, and every edge lies in exactly two of the faces: an $a$-edge in one $aaa$ triangle and one $ababab$ hexagon, a $b$-edge in one $bbb$ triangle and one $ababab$ hexagon, because the orbits of steps [](#s6){.pf-ref} and [](#s7){.pf-ref} partition the $27$ $a$-edges and the $27$ $b$-edges and each hexagon uses three $a$-edges and three $b$-edges.
+
+The vertex links are single cycles. At a vertex $v$ there are exactly two $a$-edge ends and two $b$-edge ends, one outgoing and one incoming of each label, since $a^3=b^3=1$. The faces at $v$ are the $aaa$ triangle, the $bbb$ triangle and two hexagons: the hexagon that leaves $v$ along $v\to va$ returns to $v$ along a $b$-edge, so it uses the outgoing $a$-end and the incoming $b$-end, and the hexagon that leaves along $v\to vb$ uses the outgoing $b$-end and the incoming $a$-end. The four faces therefore pair the four edge ends into the single cycle
+$$
+\{a_{\mathrm{out}},a_{\mathrm{in}}\},\quad
+\{a_{\mathrm{in}},b_{\mathrm{out}}\},\quad
+\{b_{\mathrm{out}},b_{\mathrm{in}}\},\quad
+\{b_{\mathrm{in}},a_{\mathrm{out}}\},
+$$
+so every vertex has a neighbourhood that is a cone on a $4$-cycle, and the complex is a closed surface.
+
+It is orientable: orient each $aaa$ triangle against the direction of the $a$-edges and each $bbb$ triangle against the direction of the $b$-edges. Then each $a$-edge is traversed once against its direction, by its triangle, and once along its direction, by its hexagon, and each $b$-edge likewise, so the two faces at every edge traverse it in opposite directions and the orientation of the faces orients the surface. A closed orientable surface with $\chi=0$ is a torus.
 Removing the interiors of these faces leaves exactly the covering graph from step [](#s5){.pf-ref}, with the stated nine $aaa$ triangles, nine $bbb$ triangles, and nine $ababab$ hexagons as complementary regions.
 
 :::
