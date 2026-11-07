@@ -34,6 +34,11 @@ audit:
     positive-dimensional classes lift to the relative groups, and the relative cup product lands in
     $H^{p+q}(X,A\cup B;R)=0$; forgetting the relative structure gives $x\smile y=0$. The $n$-fold
     statement is the same iteration with $A_1\cup\cdots\cup A_n=X$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Statement matches Exercise 2 (p.229) including the suspension remark and the n-fold generalization. Rechecked: contractibility of A and B kills their positive cohomology, so positive-degree classes lift to the relative groups by exactness of the sequence of the pair (p.200), and the relative cup product of p.209 lands in H^*(X,X) = 0; forgetting the relative structure gives the absolute product. The n-fold case iterates the same pairing. Citations added for p.200 and p.209. Not covered: no statement about infinite unions, which the exercise does not ask.
 ---
 
 ::: {.problem}
@@ -45,11 +50,11 @@ Generalize to the situation that $X$ is the union of $n$ contractible open subse
 ::: {.solution}
 Suppose first that $X=A\cup B$ with $A,B$ contractible and let $x\in H^p(X;R)$, $y\in H^q(X;R)$ with $p,q>0$.
 
-Since $H^p(A;R)=0$ for $p>0$, exactness of the cohomology sequence of $(X,A)$ gives a lift
+Since $A$ is contractible, $H^p(A;R)=0$ for $p>0$, so exactness of the cohomology sequence of the pair $(X,A)$ (p.200) gives a lift
 $$
 \bar x\in H^p(X,A;R)
 $$
-of $x$. Likewise $y$ lifts to some $\bar y\in H^q(X,B;R)$. The relative cup product gives
+of $x$. Likewise $y$ lifts to some $\bar y\in H^q(X,B;R)$. The relative cup product of p.209, valid for $A,B$ open as here, gives
 $$
 \bar x\smile\bar y\in H^{p+q}(X,A\cup B;R)=H^{p+q}(X,X;R)=0.
 $$
@@ -69,5 +74,5 @@ $$
 \in H^{d_1+\cdots+d_n}(X,A_1\cup\cdots\cup A_n;R)
 =H^*(X,X;R)=0.
 $$
-Its image in absolute cohomology is $x_1\smile\cdots\smile x_n$, hence every $n$-fold product of positive-dimensional classes is zero.
+Its image in absolute cohomology is $x_1\smile\cdots\smile x_n$, hence every $n$-fold product of positive-dimensional classes is zero. Each step uses only the relative cup product of p.209 with the open sets $A_i$, iterated.
 :::
