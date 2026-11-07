@@ -34,6 +34,11 @@ audit:
     $v=su$ in degree $3$ with $v^2=s^2u^2=0$ and one $R$ in each degree at least $2$, which is the
     same graded ring as $H^*(S^3;R)\otimes R[u]$. The Künneth step needs no Tor term because the
     cohomology of $S^1$ and of $\CP^\infty$ is free.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Statement matches Exercise 12 (p.229) with the bracketed pointer to §4.L. Rechecked both sides over an arbitrary coefficient ring: for Q the good pair gives H^*(Q) = H^*(S^1 x Y, S^1 x y_0) = H^*(S^1) tensor H~(Y) by the relative cross product of Theorem 3.18 p.219, so additively u^k and s u^k, multiplicatively v^2 = s^2 u^2 = 0, giving R[u,v]/(v^2) with |u| = 2, |v| = 3; and S^3 x CP^inf gives R[u] tensor Lambda(v) with v^2 = 0 in H^6(S^3) = 0. The cited theorems are now named with pages, including Theorem 3.15 p.216 and Example 3.12 p.213. Not covered: the failure of homotopy equivalence, which the exercise defers to §4.L.
 ---
 
 ::: {.problem}
@@ -46,22 +51,23 @@ Let $Y=\CP^\infty$ with basepoint $y_0$, and set
 $$
 Q=(S^1\times Y)/(S^1\times\{y_0\}).
 $$
-Reduced cohomology of $Q$ is relative cohomology:
+Reduced cohomology of $Q$ is relative cohomology,
 $$
-\widetilde H^*(Q;R)\cong H^*(S^1\times Y,S^1\times\{y_0\};R)
+\widetilde H^*(Q;R)\cong H^*(S^1\times Y,S^1\times\{y_0\};R),
 $$
-for any coefficient ring $R$.
+for any coefficient ring $R$, because $(S^1\times Y,S^1\times\{y_0\})$ is a CW pair and hence a good pair (Proposition 2.22, p.124).
 
-Write $u\in H^2(Y;R)$ for the standard generator and $s\in H^1(S^1;R)$. The relative Künneth theorem gives
+Write $u\in H^2(Y;R)$ for the standard generator and $s\in H^1(S^1;R)$. The relative cross product of Theorem 3.18 (p.219), together with Theorem 3.15 (p.216) applied to $S^1$ and $Y$, gives
 $$
 H^*(S^1\times Y,S^1\times\{y_0\};R)
-\cong H^*(S^1;R)\otimes\widetilde H^*(Y;R).
+\cong H^*(S^1;R)\otimes\widetilde H^*(Y;R),
 $$
+the cohomology of $\CP^\infty$ being free in each degree by Example 3.12 (p.213).
 Thus, additively, the positive-degree classes are
 $$
 u^k\quad(k\ge1),\qquad s u^k\quad(k\ge1).
 $$
-The relative cross product is compatible with cup products, so
+The relative cup product of p.209 is compatible with this identification, so
 $$
 u^i u^j=u^{i+j},\qquad
 (su^i)u^j=su^{i+j},\qquad
@@ -76,11 +82,11 @@ $$
 H^*(Q;R)\cong R[u,v]/(v^2),\qquad \gradeddegree{u}=2,\ \gradeddegree{v}=3.
 $$
 
-On the other hand
+On the other hand Theorem 3.15 (p.216) gives
 $$
 H^*(S^3\times\CP^\infty;R)
 \cong H^*(S^3;R)\otimes_R R[u]
 \cong R[u,v]/(v^2),
 $$
-with the same degrees. Therefore the two spaces have isomorphic cohomology rings with $\ZZ$ coefficients and, by the same calculation, with arbitrary coefficients.
+with the same degrees, $v$ being the degree-$3$ generator of $H^*(S^3;R)$, whose square vanishes because $H^6(S^3;R)=0$. Therefore the two spaces have isomorphic cohomology rings with $\ZZ$ coefficients and, by the same calculation, with arbitrary coefficients.
 :::
