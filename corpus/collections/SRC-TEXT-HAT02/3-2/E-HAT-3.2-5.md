@@ -36,6 +36,11 @@ audit:
     $2\alpha=2\beta=0$ and $\alpha^2=k^2\beta=k\beta$ since $2\beta=0$ and $k^2\equiv k$ mod $2$;
     the products $\alpha\beta^j$ are the nonzero elements of $\ker 2$, so $\alpha$ and $\beta$
     generate with no further relations.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Statement matches Exercise 5 (p.229) including the bracketed hint about the coefficient map and Theorem 3.19. Rechecked the cellular computation with R = Z_2k: delta^q = 2 for q odd and 0 for q even, so H^0 = R, H^odd = ker 2 = {0,k} = Z_2, H^even>0 = R/2R = Z_2, and alpha (the class of the 1-cocycle of value k) and beta (the 2-cocycle of value 1) satisfy alpha^2 = k^2 beta = k beta because beta has order 2, with 2alpha = 2beta = 0 and alpha beta^j = k times the (2j+1)-cell, nonzero even for k even. One defect repaired: the diagonal was cited to Theorem 3.12, which is the pre-2015 number (the table on p. xii of this reprinting lists old 3.12 as new 3.19); it now reads Theorem 3.19 p.220. Also noted that the coefficient reduction kills alpha, which is consistent with alpha^2 = k beta. Not covered: no independent derivation of the diagonal formula, which is taken from the proof of Theorem 3.19.
 ---
 
 ::: {.problem}
@@ -66,7 +71,7 @@ Let $\alpha\in H^1$ be represented by the cellular $1$-cocycle taking the value 
 $$
 2\alpha=2\beta=0.
 $$
-The cellular diagonal used in the proof of Hatcher's Theorem 3.12 shows that the cup product of the basic degree-one cellular cochain with itself represents the basic degree-two cochain. Since our degree-one cocycle has coefficient $k$, its square is represented by $k^2$ times the basic degree-two cochain. Thus
+The cellular diagonal used in the proof of Hatcher's Theorem 3.19 (p.220) shows that the cup product of the basic degree-one cellular cochain with itself represents the basic degree-two cochain. Since our degree-one cocycle has coefficient $k$, its square is represented by $k^2$ times the basic degree-two cochain. Thus
 $$
 \alpha^2=k^2\beta.
 $$
@@ -75,7 +80,7 @@ $$
 \boxed{\alpha^2=k\beta.}
 $$
 
-Reduction of coefficients $R\to\ZZ_2$ sends $\beta$ to the nonzero class in $H^2(\RP^\infty;\ZZ_2)$, so $\beta^j$ is nonzero for every $j\ge1$. The same cellular diagonal computes $\alpha\beta^j$ as the cochain taking value $k$ on the unique cell of degree $2j+1$; this is the nonzero element of $\ker(2:R\to R)$, also when $k$ is even. Hence $\alpha,\beta$ generate the whole ring and there are no further relations. Therefore
+Reduction of coefficients $R\to\ZZ_2$, which is a ring map, sends $\beta$ to the nonzero class in $H^2(\RP^\infty;\ZZ_2)$ and $\alpha$ to $0$ (the $1$-cocycle of value $k$ reduces to the zero cochain when $k$ is even); since $\beta^j$ is nonzero in $H^{2j}(\RP^\infty;\ZZ_2)=\ZZ_2$ by Theorem 3.19 (p.220), $\beta^j$ is nonzero in the $R$-cohomology for every $j\ge1$. The same cellular diagonal computes $\alpha\beta^j$ as the cochain taking value $k$ on the unique cell of degree $2j+1$; this is the nonzero element of $\ker(2:R\to R)$, also when $k$ is even. Hence $\alpha,\beta$ generate the whole ring and there are no further relations. Therefore
 $$
 \boxed{
 H^*(\RP^\infty;\ZZ_{2k})
