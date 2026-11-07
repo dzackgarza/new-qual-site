@@ -22,7 +22,7 @@ Show that composition of paths satisfies the following cancellation property: If
 :::
 
 ::: {.solution}
-All path homotopies are relative to endpoints. Write $\bar g$ for the reverse of a path $g$, and $c_x$ for the constant path at $x$.
+All path homotopies are relative to endpoints. Write $\bar g$ for the reverse of a path $g$, and $c_x$ for the constant path at $x$. The rules used below — $g\cdot\bar g\simeq c_{g(0)}$ relative to endpoints, and associativity of concatenation up to homotopy — are those of Hatcher's discussion of path composition (p. 27).
 
 ::: pf
 
