@@ -34,6 +34,17 @@ audit:
     applied to (D^p,S^{p−1}) ⊂ (D^{p+q},S^{p+q−1}) makes the inclusion an
     isomorphism on H_{q−1}), yet a disjoint D^q is a chain there bounding it, so the
     class would vanish. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Examined the indexed answer to Math StackExchange question 666444, including its diagram;
+    the direct page fetch presented a Cloudflare challenge. Its map f is zero for a reason that
+    also destroys the proposed contradiction: with C=D^{p+q}-D^q and
+    A=S^{p+q-1}-S^{q-1}, Exercise 3 makes A into C a homology isomorphism in every degree,
+    so H_*(C,A)=0. Thus neither that diagram nor the suggested acyclic-pair shortcut supplies a
+    complete published proof. Did not alter the checked bounding-chain proof; the complete
+    published-solution obligation remains open.
 ---
 ---
 
