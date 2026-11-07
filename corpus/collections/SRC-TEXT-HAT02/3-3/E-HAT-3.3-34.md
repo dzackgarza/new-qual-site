@@ -47,6 +47,17 @@ audit:
     cochain on the boundary is extended through the collar. The middle square is now justified by
     both sides being the same chain-level product rather than by the word "naturality". Not verified:
     the sign of the relative cap product forms, which is taken from p.240 and not recomputed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    The cochain extension in the first square formerly claimed to come from a retraction of M onto
+    its boundary. No such retraction exists by Exercise 32 for compact M with nonempty boundary.
+    It is replaced by the algebraic extension singular cohomology always provides: C_*(boundary M)
+    is free on a subset of the singular-simplex basis of C_*(M), so define Psi by psi on that subset
+    and zero on the remaining simplices. Then Psi restricts to psi and its coboundary is relative
+    because psi is a cocycle. The sign computations are unchanged.
+
 ---
 
 ::: {.problem}
@@ -81,7 +92,7 @@ $$
 
 Third square: take $\varphi$ a cocycle on $M$ of degree $k$, so $\delta\varphi=0$. Then $\partial(c\frown\varphi)=(-1)^k\,\partial c\frown\varphi = (-1)^k\,\partial c\frown i^*\varphi$ (the values of $\varphi$ on faces of $\partial c$ are those of its restriction to $\partial M$), which is the statement that $[\partial M]\frown i^*\varphi=(-1)^k\partial([M,\partial M]\frown\varphi)$: the square commutes up to the sign $(-1)^k$.
 
-First square: take $\psi$ a cocycle on $\partial M$ of degree $k-1$ and extend it to a cochain $\Psi$ on $M$, which the collar allows by pulling back along a retraction $M\to\partial M$. Then $\delta\Psi$ vanishes on chains in $\partial M$, so it is a relative cocycle whose class is $\delta\psi$. The identity with $\ell=k-1$ gives
+First square: take $\psi$ a cocycle on $\partial M$ of degree $k-1$. Extend it to a cochain $\Psi$ on $M$ by setting $\Psi(\sigma)=\psi(\sigma)$ for singular simplices $\sigma$ whose image lies in $\partial M$ and $\Psi(\sigma)=0$ on all other singular simplices. This defines a cochain because these two kinds of simplices give subsets of the free basis of $C_*(M)$ and $C_*(\partial M)$ respectively, so no retraction $M\to\partial M$ is needed. Then $\Psi\restrict_{\partial M}=\psi$, and $\delta\Psi$ vanishes on chains in $\partial M$ because $\psi$ is a cocycle; hence $\delta\Psi$ is a relative cocycle whose class is $\delta\psi$. The identity with $\ell=k-1$ gives
 $$
 \partial(c\frown\Psi)=(-1)^{k-1}\bigl(\partial c\frown\Psi-c\frown\delta\Psi\bigr),\qquad\text{so}\qquad c\frown\delta\Psi=\partial c\frown\Psi-(-1)^{k-1}\partial(c\frown\Psi).
 $$
