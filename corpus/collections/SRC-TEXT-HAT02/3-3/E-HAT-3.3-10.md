@@ -47,6 +47,16 @@ audit:
     and applies Proposition 3.29 p.239 to get top homology zero, contradicting degree one. The
     source file is not claimed complete or error-free.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    A fuller published source now covers the gap omitted by Li: Stanford Math 215C Solution Set 3,
+    printed p.1, Hatcher 3.3 #10. Its infinite-sheeted branch observes noncompactness of the total
+    space and applies Proposition 3.29, as also used in the earlier version here; its finite branch
+    has exactly the lift and multiplicativity argument. This supersedes relying on Li for the
+    finite case alone.
+
 ---
 
 ::: {.problem}
@@ -96,5 +106,6 @@ $$
 f_*:H_1(M)\twoheadrightarrow H_1(N).
 $$
 
-The finite-sheeted part is the argument in Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf), Exercise 3.3.5 (Hatcher §3.3 #10), printed p. 57, also held locally as `tmp/sources/hatcher-solutions-guanyu-li.pdf`: after lifting, the multiplicativity of degree gives $1=\deg\widetilde f\,\deg p$, so the two integers are $\pm1$ and the covering has one sheet. Li's displayed argument does not treat infinitely many sheets, so the noncompact $H_n(\widetilde N;\ZZ)=0$ step above is the required separate case; it is not omitted from this card.
+The lifting and both sheet-count cases are in **Stanford Math 215C, Solution Set 3**, problem 10, printed p. 1, [`solution3.pdf`](https://math.stanford.edu/~ralph/math215c/solution3.pdf): the lift satisfies $\deg f=\deg p\deg\widetilde f$; finitely-sheeted covers have $|\deg p|$ equal to the sheet count by Exercises 9 and force that count to be $1$; and in an infinite-sheeted cover the total space is noncompact, so $H_n(\widetilde N;\ZZ)=0$ by Proposition 3.29, p. 239. The card's compact-discrete-fiber remark makes that noncompactness precise. The final passage to abelianizations is the one in the same set.
+
 :::
