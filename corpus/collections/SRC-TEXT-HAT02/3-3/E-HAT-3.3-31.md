@@ -64,7 +64,7 @@ $$
 $$
 be the boundary homomorphism.
 
-Fix $x\in\partial M$. Choose a closed half-ball $N\subset M$ around $x$ that meets $\partial M$ in the flat disk $N'=N\cap\partial M$ and lies in a single boundary chart $H=\{u\in\RR^n:|u|\le\varepsilon,\ u_n\ge0\}$, with $x$ at the centre of $N'$. Excision of the complementary part of $\partial M$ identifies $H_n(M,\partial M;R)\cong H_n(N,N';R)$ and $H_{n-1}(\partial M,\partial M-\{x\};R)\cong H_{n-1}(N',N'-\{x\};R)$, and under these identifications the boundary map of $(M,\partial M)$ becomes the boundary map of $(N,N')$. That pair is $(D^n,D^{n-1})$ up to a homeomorphism of pairs, and $N$ is contractible, so its long exact sequence consists of isomorphisms
+Fix $x\in\partial M$. Choose a closed half-ball $N\subset M$ around $x$ that meets $\partial M$ in the flat disk $N'=N\cap\partial M$ and lies in a single boundary chart $H=\{u\in\RR^n:|u|\le\varepsilon,\ u_n\ge0\}$, with $x$ at the centre of $N'$. Excision of the complementary part of $\partial M$ gives $H_n(M,\partial M;R)\cong H_n(M\setminus A,N')$ with $A=\partial M\setminus N'$, and $M\setminus A=(M-\partial M)\cup N'$ deformation retracts onto $N$ through a collar of $\partial M$, so $H_n(M\setminus A,N')\cong H_n(N,N';R)$; and excision again gives $H_{n-1}(\partial M,\partial M-\{x\};R)\cong H_{n-1}(N',N'-\{x\};R)$. Under these identifications the boundary map of $(M,\partial M)$ becomes the boundary map of $(N,N')$. That pair is $(D^n,D^{n-1})$ up to a homeomorphism of pairs, and $N$ is contractible, so its long exact sequence consists of isomorphisms
 $$
 \partial:H_n(N,N';R)\longrightarrow H_{n-1}(N';R),\qquad H_{n-1}(N';R)\cong R .
 $$
