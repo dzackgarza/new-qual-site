@@ -42,6 +42,16 @@ audit:
     trivially, while for k < n the normal disk meets S in one transverse point, giving
     Alexander-duality coordinate plus or minus one for the image of the normal-sphere
     fundamental class. The r = 0 reduced-H_0 interpretation remains included.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Transcribed the complete pair-sequence argument published by the questioner in Math
+    StackExchange question 4773641. D minus ell retracts to the normal sphere; excision
+    reduces the inclusion question to vanishing H_n(S^n-D';D), and shrinking ell puts the
+    boundary of D' in the good manifold so generalized Schoenflies gives acyclicity of D and
+    its complement. Added this published proof alongside, rather than replacing, the checked
+    Alexander-intersection argument and the k=n case.
 ---
 
 ::: {.problem}
@@ -84,6 +94,30 @@ The image of the oriented fundamental class of $S^r$ is a generator of $\widetil
 
 ::: pf-proof
 Inside the coordinate disk $D^n$, the normal disk $D^{n-k}$ meets $S\cap D^n=D^k$ at its center and nowhere else. The boundary of the normal disk is the sphere in the statement. Under Alexander duality, evaluation of the image of its oriented fundamental class on the fundamental class of $S$ is the intersection number of this normal disk with $S$. Excision restricts that intersection calculation to the coordinate disk, where the two coordinate disks meet in one transverse point with local intersection number $+1$ or $-1$. Thus the image has Alexander-duality coordinate $\pm1$, so it is a generator.
+:::
+
+:::
+
+::: {.pf-step #schoenflies-pair}
+The complete exercise solution in **[Math StackExchange question 4773641](https://math.stackexchange.com/questions/4773641/what-was-the-intended-more-elementary-solution-to-hatcher-2b-5-on-isomorphis), *What was the intended, more elementary solution to Hatcher $2B.5$?*,** also proves the normal-sphere step by a long exact sequence and excision.
+
+::: pf-proof
+Let $D$ and $D'$ be the auxiliary disks and let $\ell$ be the closed subset used in the published solution. It first arranges that
+$$
+D\setminus\ell=h'(D^n\setminus D^k)
+$$
+strongly deformation retracts onto $h'(\partial D^{n-k})$, the sphere in Hatcher's exercise, and that
+$$
+S^n\setminus h'(S^k)=(S^n\setminus D')\setminus\ell.
+$$
+The long exact sequence of a pair and excision therefore reduce the desired statement to
+$$
+H_n(S^n\setminus D';D)
+\cong
+H_n((S^n\setminus D')\setminus\ell;D\setminus\ell)
+\cong0.
+$$
+The published construction shortens $\ell$ so that $\overline{\ell}\cap h(S^k)$, the boundary of $D'$, lies in the good manifold $h'(D^n)$. Thus the generalized Schoenflies theorem applies to the embedded $k$-disk $D'$, making both $S^n\setminus D'$ and $D$ have trivial reduced homology. The required relative group and its excision isomorph are therefore zero, proving that the inclusion is an isomorphism on homology.
 :::
 
 :::
