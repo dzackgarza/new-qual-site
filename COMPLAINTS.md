@@ -461,3 +461,5 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    formula — no line begins `N.∗`, and the pattern `d.∗` occurs nowhere. So absence of a star on a
    Hatcher card is correct, not a defect, and nothing was invented in its place.
 6. **Five `ad-text-*` nodes** stay blocked on books absent from the repository, as recorded above.
+
+7. **Published-solution coverage gaps — open, 2026-11-07.** These are source obligations, not claims that the displayed mathematics is false. `E-HAT-3.3-21` has a checked degree-two counterexample, but Eda–Kawamura and Wiegold are supporting theorems, not a complete published solution to Hatcher's bracketed question; that complete solution has not been located. Likewise `E-HAT-2.B-3`, `E-HAT-2.B-4`, and `E-HAT-2.C-6` have readable proofs but no identified published complete exercise solution. Book pages carrying only the statements do not discharge the #105 transcription contract. Preserve the proofs without calling those obligations closed.
