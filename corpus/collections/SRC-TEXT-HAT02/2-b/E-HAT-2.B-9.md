@@ -44,6 +44,16 @@ audit:
     specialization to X times S^0 is precisely the displayed diagonal/sum sequence and split
     section in the card. Corrected the citation from pp.173-174 to pp.174-175 and checked the
     trivial covering against Hatcher p.177 Exercise 9. The #105 source obligation is covered.
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Corrected the preceding coverage claim. Hatcher pp.174-175 supplies the general transfer
+    theorem, and the card instantiates it by diagonal/sum coordinates with a chain section.
+    That specialization is not itself a complete published exercise solution: the trivial-cover
+    coordinate computation and its splitting are absent from every retained published solution
+    collection. The mathematical proof is unchanged; the #105 complete-solution source obligation
+    remains open.
 ---
 
 ::: {.problem}
@@ -51,7 +61,7 @@ Make the transfer sequence explicit in the case of a trivial covering $\tilde{X}
 :::
 
 ::: {.solution}
-Hatcher's complete published transfer construction in **§2.B, printed pp. 174--175**, specializes directly to $X\times S^0\to X$. He defines the short exact sequence of chain complexes by sending a singular simplex to the sum of its two lifts and projecting from the total space. The computation below carries out that construction in the two-sheet coordinates; no separate exactness argument is needed.
+Hatcher's complete published transfer construction in **§2.B, printed pp. 174--175**, specializes directly to $X\times S^0\to X$. He defines the short exact sequence of chain complexes by sending a singular simplex to the sum of its two lifts and projecting from the total space. The computation below carries out that construction in the two-sheet coordinates; no separate exactness argument is needed. This is a checked instantiation of the general theorem, not a found complete published solution of Exercise 2.B.9, whose source obligation remains open.
 
 Use $\ZZ_2$ coefficients, as in the transfer sequence of §2.B.
 
