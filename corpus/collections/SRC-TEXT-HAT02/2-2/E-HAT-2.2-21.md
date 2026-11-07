@@ -79,5 +79,7 @@ Its alternating sum of dimensions is zero,
 which rearranges to
 $$
 \chi(Z)=\chi(U)+\chi(V)-\chi(U\cap V).
-$$
+$$The inclusion--exclusion count agrees with Sam's §2.2 Exercise 21, printed p. 12. The cells in the union are those counted only by $c_i(A)$, only by $c_i(B)$, or those of $A\cap B$, since subcomplexes are closed unions of cells which are pairwise disjoint (Hatcher pp. 5, 7).
+
+
 :::
