@@ -46,11 +46,11 @@ Existence of a fixed point ($f(x) = x$):
 ::: pf-proof
 
 ::: pf-step
-Suppose for contradiction that $f(x) \neq x$ for all $x \in S^n$.
-Then $f(x)$ is never antipodal to $-x$, so $(1 - t)f(x) - tx \neq 0$ for all $t \in [0, 1]$ and $x \in S^n$.
+Suppose $f(x) \neq x$ for all $x \in S^n$.
+Then $(1 - t)f(x) - tx \neq 0$ for all $t \in [0, 1]$ and $x \in S^n$.
 
 ::: pf-proof
-if $(1-t)f(x) - tx = 0$, taking norms gives $1-t = t \implies t = 1/2$, so $f(x) = x$, contradiction.
+If $(1-t)f(x) - tx = 0$, taking norms and using $\norm{f(x)} = \norm{x} = 1$ gives $1-t = t$, so $t = 1/2$ and then $f(x) = x$, contrary to hypothesis.
 :::
 
 :::
@@ -77,7 +77,7 @@ This contradicts $\deg(f) = 0$.
 Thus there exists $x \in S^n$ such that $f(x) = x$.
 
 ::: pf-proof
-degree of antipodal map on $S^n$.
+Property (c) of degree (Hatcher p. 134) gives $\deg f = \deg a$ for homotopic maps, and property (f) (p. 134) gives $\deg(-11) = (-1)^{n+1}$ for the antipodal map, which is nonzero.
 :::
 
 :::
@@ -119,7 +119,7 @@ Thus $\deg(f) = \deg(\operatorname{id}_{S^n}) = 1$, contradicting $\deg(f) = 0$.
 Therefore there exists $y \in S^n$ such that $f(y) = -y$.
 
 ::: pf-proof
-degree of identity map on $S^n$.
+Property (a) of degree (Hatcher p. 134) gives $\deg 11 = 1$, and property (c) (p. 134) transports it along the homotopy $G$ to $\deg f$.
 :::
 
 :::
@@ -144,10 +144,10 @@ $F(z) \neq 0$ ensures $\widetilde{F}$ is well-defined and continuous.
 :::
 
 ::: pf-step
-Since $g$ extends to the contractible disk $D^n$ via $\widetilde{F}$, $g$ is null-homotopic, so $\deg(g) = 0$.
+Since $g$ extends over $D^n$ via $\widetilde{F}$, the formula $H(x, t) = \widetilde{F}((1-t)x)$ is defined for $(1-t)x \in D^n$ and gives a homotopy from $g$ to the constant map at $\widetilde{F}(0)$, so $\deg(g) = 0$.
 
 ::: pf-proof
-maps extending to a contractible space are null-homotopic.
+For $n-1 \ge 1$ a constant map of $S^{n-1}$ is not surjective, so it has degree $0$ by property (b) of degree (Hatcher p. 134), and property (c) (p. 134) gives $\deg g = 0$.
 :::
 
 :::
@@ -160,7 +160,7 @@ Applying steps [](#s1){.pf-ref} and [](#s2){.pf-ref} to $g: S^{n-1} \to S^{n-1}$
 - There exists $y \in S^{n-1} = \partial D^n$ with $g(y) = -y \implies F(y) = -\norm{F(y)} y$, so $F$ points radially inward at $y$.
 
 ::: pf-proof
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} applied to $S^{n-1}$.
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} applied to $S^{n-1}$, which is $S^m$ with $m = n-1 \ge 1$; for $n = 1$ the boundary is $S^0 = \{\pm1\}$, a continuous nonvanishing $F$ on the interval $D^1$ has one sign throughout, and at the two endpoints that sign points outward at one of them and inward at the other.
 :::
 
 :::
