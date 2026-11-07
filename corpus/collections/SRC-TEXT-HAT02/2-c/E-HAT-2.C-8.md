@@ -33,6 +33,16 @@ audit:
     at most countably many such maps and the union over r is countable, and every map
     K → L is homotopic to one of these by the simplicial approximation theorem
     (Theorem 2C.1, p. 179). No defect.
+- event: solution-written
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Makes the published argument explicit in the solution: Theorem 2C.1 on pp.178-179 supplies
+    a simplicial representative after finitely many barycentric subdivisions of the finite
+    domain. Each sd^rK has finitely many vertices, so there are countably many maps into L for
+    each r, and the union over r is countable. Homotopy equivalences X ≃ K and Y ≃ L transfer
+    this bound to [X,Y]. The source paragraph is kept with the mathematics, as in Hatcher's
+    own remark that a simplicial map is determined by its vertex images.
 ---
 ---
 
@@ -42,6 +52,8 @@ Using the simplicial approximation theorem, show that there are at most countabl
 :::
 
 ::: {.solution}
+Use **Hatcher's simplicial approximation theorem, Theorem 2C.1, printed pp. 178--179**, in the form actually proved there: after finitely many barycentric subdivisions of the finite domain, every continuous map is homotopic to a simplicial map. The remaining count is the source's own vertex-map count.
+
 Choose homotopy equivalences
 $$
 X\simeq K,
