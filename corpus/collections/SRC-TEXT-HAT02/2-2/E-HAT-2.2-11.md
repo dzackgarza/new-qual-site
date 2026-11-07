@@ -39,7 +39,7 @@ Compute the homology groups of this complex.
 :::
 
 ::: {.solution}
-Use the CW structure and face words computed for this cube in Hatcher Exercise 1.2.14. It has two vertices, four edges, three faces, and one $3$-cell. Choose one edge as a maximal tree. The other three edges give a basis $i,j,k$ for the cycle group $\ker(d_1:C_1\to C_0)$.
+Use the CW structure and face words computed for this cube in Hatcher Exercise 1.2.14 (p. 54): two vertices, four edges, three faces, and one $3$-cell. Choose one edge as a maximal tree. The other three edges give a basis $i,j,k$ for the cycle group $\ker(d_1:C_1\to C_0)$, and Theorem 2.35 (p. 139) identifies the cellular homology of this CW structure with the singular homology of the quotient space.
 
 ::: pf
 
@@ -61,7 +61,7 @@ The three attaching words in Exercise 1.2.14 give the relations $i=jk$, $j=ki$, 
 $$
 i-j-k,\qquad -i+j-k,\qquad -i-j+k.
 $$
-These are the three columns of $M$. The edge chosen as a tree contributes no cycle generator.
+These are the three columns of $M$, the cellular boundary formula being the one of Hatcher p. 141. The edge chosen as a tree contributes no cycle generator.
 
 :::
 
@@ -110,7 +110,7 @@ and $H_q(X)=0$ for $q>3$.
 
 ::: pf-proof
 
-The $1$-skeleton is connected, so $H_0(X)=\ZZ$. The cycle group of the $1$-skeleton is free on $i,j,k$, and step [](#s2){.pf-ref} computes its quotient by the $2$-cell boundaries. Injectivity of $d_2$ and step [](#s3){.pf-ref} give $H_2=0$ and $H_3=C_3\cong\ZZ$. There are no higher cells.
+The $1$-skeleton is connected, so $H_0(X)=\ZZ$. The cycle group of the $1$-skeleton is free on $i,j,k$, and step [](#s2){.pf-ref} computes its quotient by the $2$-cell boundaries; this agrees with $H_1(X)$ being the abelianization of the quaternion group that Exercise 1.2.14 (p. 54) gives for $\pi_1(X)$. Injectivity of $d_2$ and step [](#s3){.pf-ref} give $H_2=0$ and $H_3=C_3\cong\ZZ$. There are no higher cells.
 
 :::
 
