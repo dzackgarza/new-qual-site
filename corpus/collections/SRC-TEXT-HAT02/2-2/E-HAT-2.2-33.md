@@ -29,6 +29,20 @@ audit:
     example: the $n$ open sets $\lambda_j>0$ on $\partial\Delta^{n-1}$ cover it, their total
     intersection is empty on the boundary, each proper intersection retracts to a barycenter inside
     the boundary, and $\tilde H_{n-2}(S^{n-2})=\ZZ$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Statement matches Exercise 33 as printed on p. 158. The induction is correct: the cover of
+    Y has n-1 sets and that of Z = Y cap A_n has n-1 sets, so both vanish in degrees at least
+    n-2, and the Mayer-Vietoris segment kills H~_i(X) for i at least n-1. The case Z empty, in
+    which the reduced sequence does not apply, is now separated and handled by Proposition 2.6
+    p. 109; the sequence is cited to pp. 149-150 and H~_{n-2}(S^{n-2})=Z to Corollary 2.14
+    p. 114. The sharpness example was checked: the n sets {lambda_j > 0} are open in the
+    boundary, their union is X, the total intersection is empty, and for a proper index set I
+    the intersection is contracted to the barycentre of the face I by a straight-line homotopy
+    that stays in the boundary because some coordinate outside I is zero at every point of it.
+    What is not covered: no certificate.
 ---
 
 ::: {.problem}
@@ -48,7 +62,7 @@ $$
 \widetilde H_i(Y)=\widetilde H_i(Z)=0
 \qquad (i\ge n-2).
 $$
-The same hypothesis gives $\widetilde H_i(A_n)=0$ for every $i$. For $i\ge n-1$, the reduced Mayer--Vietoris sequence for $X=Y\cup A_n$ therefore has the segment
+The same hypothesis gives $\widetilde H_i(A_n)=0$ for every $i$. If $Z=\varnothing$ then $X$ is the disjoint union of the open sets $Y$ and $A_n$, so $\widetilde H_i(X)=\widetilde H_i(Y)\oplus\widetilde H_i(A_n)=0$ for $i\ge n-2$ by Proposition 2.6 (p. 109). Otherwise the reduced Mayer--Vietoris sequence of pp. 149--150 for $X=Y\cup A_n$ applies, and for $i\ge n-1$ it has the segment
 $$
 0=\widetilde H_i(Y)\oplus\widetilde H_i(A_n)
 \longrightarrow \widetilde H_i(X)
@@ -62,7 +76,7 @@ A_j=\{x\in X:\lambda_j(x)>0\}.
 $$
 These $n$ open sets cover $X$. Their total intersection is empty. For every proper nonempty set of indices $I$, the intersection $\bigcap_{j\in I}A_j$ contracts to the barycenter of the face spanned by $I$: the straight-line homotopy stays in $X$, since each point and that barycenter share a zero coordinate outside $I$, and all coordinates indexed by $I$ remain positive. Yet
 $$
-\widetilde H_{n-2}(X)\cong\ZZ.
+\widetilde H_{n-2}(X)\cong\ZZ,
 $$
-Thus the vanishing range cannot start at $n-2$. For $n=1$, the hypothesis itself says that the sole nonempty set is acyclic.
+by Corollary 2.14 (p. 114), the boundary $\partial\Delta^{n-1}$ being homeomorphic to $S^{n-2}$. Thus the vanishing range cannot start at $n-2$. For $n=1$, the hypothesis itself says that the sole nonempty set is acyclic, and the conclusion $\widetilde H_i(X)=0$ for $i\ge0$ is then immediate.
 :::
