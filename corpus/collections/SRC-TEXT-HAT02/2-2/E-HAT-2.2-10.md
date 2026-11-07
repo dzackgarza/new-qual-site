@@ -40,93 +40,64 @@ Do the same for $S^3$ with antipodal points of the equatorial $S^2 \subset S^3$ 
 :::
 
 ::: {.solution}
-Let $X_2$ be the quotient of $S^2$ obtained by identifying antipodal points on the equator.
+Write $X_n$ for the quotient of $S^n$ by the identification $x\sim -x$ for $x$ in the equatorial $S^{n-1}$. Both answers are computed from the reduced Mayer–Vietoris sequence (Hatcher p. 149, in its reduced form on p. 150), which is the exact sequence of a pair (Theorem 2.13, p. 114) together with excision (Theorem 2.20, p. 119), applied to the two open sets obtained from the two closed hemispheres by adjoining a collar of the equator from the other side.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-The space $X_2$ has a CW structure with one $0$-cell, one $1$-cell, and two $2$-cells, with both $2$-cells attached to the $1$-skeleton $\RP^1\cong S^1$ by maps of degree $2$ up to sign.
-
-::: pf-proof
-
-The quotient equator is $S^1/(x\sim-x)=\RP^1\cong S^1$. The northern and southern open hemispheres descend to two open $2$-cells. On the boundary of either hemisphere the quotient map $S^1\to\RP^1$ is the standard double covering, hence has degree $\pm2$ according to orientation choices.
-
-Thus the cellular chain complex is
+For $n=2$,
 $$
-0\longrightarrow\ZZ^2
-\xrightarrow{d_2}\ZZ
-\xrightarrow{0}\ZZ\longrightarrow0,
-\qquad
- d_2(a,b)=2a\pm2b.
-$$
-Therefore
-$$
-\boxed{
 H_i(X_2)\cong
 \begin{cases}
 \ZZ,&i=0,2,\\
 \ZZ_2,&i=1,\\
 0,&\text{otherwise}.
-\end{cases}}
-$$
-Indeed, $\operatorname{im}d_2=2\ZZ$ and $\ker d_2\cong\ZZ$.
-
-Now let $X_3$ be the quotient of $S^3$ obtained by identifying antipodal points on the equatorial $S^2$.
-
-:::
-
-:::
-
-::: pf-step
-
-The $2$-skeleton of $X_3$ is $\RP^2$, and the two hemispheres give two $3$-cells attached by the standard covering map
-$$
-S^2\longrightarrow\RP^2.
+\end{cases}
 $$
 
 ::: pf-proof
 
-The equator quotient is exactly $\RP^2$. Each open hemisphere of $S^3$ is a $3$-ball, and its boundary is identified with $\RP^2$ by the antipodal quotient map.
+The image of the closed upper hemisphere under the quotient map is the quotient of $D^2$ by the identification of antipodal points of $\partial D^2$, which is $\RP^2$ by Example 0.4 (p. 6); the image of the closed lower hemisphere is another copy of $\RP^2$; a collar of the equator in either hemisphere also retracts onto its boundary circle, so the two open sets $U$, $V$ are homotopy equivalent to $\RP^2$ and their intersection $U\cap V$, the image of a collar of the equator, retracts onto the quotient circle $\RP^1\cong S^1$.
+For $\RP^2$ the cell structure $e^0\cup e^1\cup e^2$ of Example 0.4 (p. 6) has $d_2$ of degree $2$ and $d_1=0$ (the $2$ cell is attached by the quotient projection $S^1\to\RP^1$, of degree $2$), so by Theorem 2.35 (p. 139)
+$$
+H_0(\RP^2)=\ZZ,\qquad H_1(\RP^2)=\ZZ_2,\qquad H_2(\RP^2)=0.
+$$
+The relevant part of the reduced Mayer–Vietoris sequence is
+$$
+0=\widetilde H_2(U)\oplus\widetilde H_2(V)\to\widetilde H_2(X_2)\xrightarrow{\partial}\widetilde H_1(U\cap V)=\ZZ\xrightarrow{\varphi}\widetilde H_1(U)\oplus\widetilde H_1(V)=\ZZ_2\oplus\ZZ_2\to\widetilde H_1(X_2)\to\widetilde H_0(U\cap V)=0 .
+$$
+The circle $U\cap V$ includes into each half as the circle $\RP^1$ inside $\RP^2$, whose class generates $\ZZ_2$, so $\varphi(1)=(1,1)$: it is injective, whence $\widetilde H_2(X_2)\cong\ZZ$ and $\widetilde H_1(X_2)\cong(\ZZ_2\oplus\ZZ_2)/\langle(1,1)\rangle\cong\ZZ_2$. Together with $H_0(X_2)=\ZZ$, since $X_2$ is connected, this gives the displayed groups.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
-The cellular boundary $d_3:\ZZ^2\to\ZZ$ is zero.
-
-::: pf-proof
-
-For the standard CW structure on $\RP^3$, the attaching map of the $3$-cell is the same quotient map $S^2\to\RP^2$, and its cellular boundary coefficient is
+For $n=3$,
 $$
-1+(-1)^3=0.
-$$
-Equivalently, after collapsing $\RP^1$, the attaching map $S^2\to S^2$ has degree zero. Each of the two $3$-cells in $X_3$ has this attaching map, so both columns of $d_3$ vanish.
-
-:::
-
-:::
-
-:::
-
-The cellular chain complex is therefore
-$$
-0\longrightarrow\ZZ^2
-\xrightarrow{0}\ZZ
-\xrightarrow{2}\ZZ
-\xrightarrow{0}\ZZ\longrightarrow0.
-$$
-Hence
-$$
-\boxed{
 H_i(X_3)\cong
 \begin{cases}
 \ZZ,&i=0,\\
-\ZZ_2,&i=1,\\
-\ZZ^2,&i=3,\\
+\ZZ_2,&i=2,\\
 0,&\text{otherwise}.
-\end{cases}}
+\end{cases}
 $$
+
+::: pf-proof
+
+Here the image of a closed hemisphere is $D^3$ with antipodal points of $\partial D^3=S^2$ identified, which is the cone on $\RP^2$ — the cone on $S^2$ with its base quotiented by the antipodal map — hence a contractible space, so the open sets $U$, $V$ have $\widetilde H_i(U)=\widetilde H_i(V)=0$ for all $i$. Their intersection is the image of a collar $S^2\times[-\varepsilon,\varepsilon]$ of the equator with $(x,0)\sim(-x,0)$, which retracts equivariantly onto the middle slice $\RP^2$; so $U\cap V\simeq\RP^2$, with $\widetilde H_1(\RP^2)=\ZZ_2$, $\widetilde H_2(\RP^2)=0$ and $\widetilde H_0(\RP^2)=0$ as in step [](#s1){.pf-ref}.
+The reduced Mayer–Vietoris sequence then reads, for each $n$,
+$$
+0=\widetilde H_n(U)\oplus\widetilde H_n(V)\to\widetilde H_n(X_3)\to\widetilde H_{n-1}(U\cap V)\to\widetilde H_{n-1}(U)\oplus\widetilde H_{n-1}(V)=0,
+$$
+so $\widetilde H_n(X_3)\cong\widetilde H_{n-1}(\RP^2)$: $\widetilde H_1(X_3)=0$, $\widetilde H_2(X_3)=\ZZ_2$ and $\widetilde H_3(X_3)=\widetilde H_2(\RP^2)=0$. With $H_0(X_3)=\ZZ$ this gives the displayed groups.
+
+:::
+
+:::
+
+:::
+
 :::
