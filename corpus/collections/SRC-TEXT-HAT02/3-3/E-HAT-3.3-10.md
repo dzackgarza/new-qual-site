@@ -35,6 +35,18 @@ audit:
     infinite-sheeted cover is a connected noncompact $n$-manifold with trivial $H_n$, which would
     force $f_*[M]=0$, so the cover is finite of degree $d$, and $1=\pm\deg f=d\cdot\deg\tilde f$
     forces $d=1$.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Published-source citation and an actual gap repair. The finite-sheeted lifting/multiplicativity
+    argument is Guanyu Li, Hatcher.pdf, Exercise 3.3.5 (Hatcher 3.3 #10), printed p.57: integer
+    degrees force the lift and covering both to have degree +-1, hence one sheet and surjectivity
+    on pi_1, followed by abelianization. Li omits infinite-sheeted covers; the card proves that an
+    infinite-sheeted total space is noncompact (a compact one has finite compact discrete fibers)
+    and applies Proposition 3.29 p.239 to get top homology zero, contradicting degree one. The
+    source file is not claimed complete or error-free.
+
 ---
 
 ::: {.problem}
@@ -57,7 +69,7 @@ $$
 \qquad p\circ\widetilde f=f.
 $$
 
-If $p$ has infinitely many sheets, then $\widetilde N$ is a connected noncompact $n$-manifold. Hence
+If $p$ has infinitely many sheets, then $\widetilde N$ is a connected noncompact $n$-manifold: were $\widetilde N$ compact, a fiber would be compact and discrete, hence finite. Hence by Proposition 3.29, p. 239,
 $$
 H_n(\widetilde N;\ZZ)=0.
 $$
@@ -83,4 +95,6 @@ Passing to abelianizations gives the surjection
 $$
 f_*:H_1(M)\twoheadrightarrow H_1(N).
 $$
+
+The finite-sheeted part is the argument in Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf), Exercise 3.3.5 (Hatcher §3.3 #10), printed p. 57, also held locally as `tmp/sources/hatcher-solutions-guanyu-li.pdf`: after lifting, the multiplicativity of degree gives $1=\deg\widetilde f\,\deg p$, so the two integers are $\pm1$ and the covering has one sheet. Li's displayed argument does not treat infinitely many sheets, so the noncompact $H_n(\widetilde N;\ZZ)=0$ step above is the required separate case; it is not omitted from this card.
 :::
