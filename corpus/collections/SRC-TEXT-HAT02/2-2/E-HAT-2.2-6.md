@@ -36,61 +36,29 @@ Show that every map $S^n \to S^n$ can be homotoped to have a fixed point if $n >
 :::
 
 ::: {.solution}
-Let
-$$
-f:S^n\to S^n,
-\qquad n>0.
-$$
-Choose a point $x_0\in S^n$.
+Let $f:S^n\to S^n$ with $n>0$, and choose a point $x_0\in S^n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-There exists a rotation $R\in SO(n+1)$ such that
-$$
-R(f(x_0))=x_0.
-$$
+There is a continuous path of orthogonal transformations $R_t$ of $\RR^{n+1}$, $t\in[0,1]$, with $R_0=\id$ and $R_1(f(x_0))=x_0$.
 
 ::: pf-proof
 
-The group $SO(n+1)$ acts transitively on $S^n$ for $n>0$, so some orientation-preserving orthogonal transformation carries $f(x_0)$ to $x_0$.
+If $f(x_0)=x_0$ take $R_t=\id$. Otherwise put $e_1=f(x_0)$. If $f(x_0)\neq -x_0$, let $e_2$ be the normalization of $x_0-\langle x_0,e_1\rangle e_1$, so that $e_1,e_2$ are orthonormal and $x_0=\cos\theta\,e_1+\sin\theta\,e_2$ with $\theta\in(0,\pi)$; if $f(x_0)=-x_0$, let $e_2$ be any unit vector orthogonal to $e_1$ and set $\theta=\pi$, which is possible because $n+1\ge2$. Let $V$ be the plane spanned by $e_1,e_2$ and let $R_t$ rotate $V$ by the angle $t\theta$, carrying $e_1$ to $\cos t\theta\,e_1+\sin t\theta\,e_2$, and fix $V^\perp$ pointwise. Each $R_t$ is orthogonal and depends continuously on $t$, $R_0=\id$, and $R_1(e_1)=x_0$, that is $R_1(f(x_0))=x_0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
-The rotation $R$ is joined to the identity by a path in $SO(n+1)$.
+The maps $f_t=R_t\circ f$ form a homotopy from $f$ to a map having $x_0$ as a fixed point.
 
 ::: pf-proof
 
-The group $SO(m)$ is path connected for every $m\ge2$. Here $m=n+1\ge2$, so there is a continuous path
-$$
-R_t\in SO(n+1),
-\qquad R_0=I,\quad R_1=R.
-$$
-
-:::
-
-:::
-
-::: pf-step
-
-The maps
-$$
-f_t=R_t\circ f
-$$
-form a homotopy from $f$ to a map having a fixed point.
-
-::: pf-proof
-
-Clearly $f_0=f$. At the other endpoint,
-$$
-f_1(x_0)=R(f(x_0))=x_0,
-$$
-so $x_0$ is a fixed point of $f_1$.
+A homotopy is a continuous family of maps indexed by $t\in[0,1]$ with the stated endpoints (Hatcher p. 3), and $R_t\circ f$ is such a family. At $t=0$ it is $f$, and at $t=1$ it sends $x_0$ to $R_1(f(x_0))=x_0$.
 
 :::
 
@@ -98,5 +66,5 @@ so $x_0$ is a fixed point of $f_1$.
 
 :::
 
-Therefore every map $S^n\to S^n$ with $n>0$ is homotopic to a map with a fixed point.
+Hence every map $S^n\to S^n$ with $n>0$ is homotopic to a map with a fixed point.
 :::
