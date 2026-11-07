@@ -34,6 +34,17 @@ audit:
     Read the construction: the orientation of a sheet is transported to the quotient, and the only
     ambiguity is a deck transformation, which is orientation-preserving by hypothesis, so the
     transported orientation is well defined.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Source-backed rewrite from the Math 538 homework solutions, HMW 3 handwritten page 2 (PDF page
+    14), Hatcher 3.3 #4: the solution now runs that proof — disjointness of the translates of a ball,
+    an orientation-preserving deck transformation carrying mu_x to mu_gx, the two excisions
+    H_n(M,M-x) = H_n(B_x,B_x-x) = H_n(B_(x),B_(x)-(x)) = H_n(M/G, M/G-(x)), and the inherited local
+    consistency. Checked against Hatcher p.72 for the covering space action and p.233 for the local
+    homology notation. The sheet names the course and host only, so no author is attributed.
+
 ---
 
 ::: {.problem}
@@ -41,13 +52,17 @@ Given a covering space action of a group $G$ on an orientable manifold $M$ by or
 :::
 
 ::: {.solution}
-Let $q:M\to M/G$ be the quotient map. Since the action is a covering-space action, $q$ is a covering map and $M/G$ is a manifold.
+Let $q:M\to M/G$ be the quotient map; since the action is a covering space action, $q$ is a covering map and $M/G$ is an $n$-manifold.
 
-Fix $y\in M/G$ and choose an evenly covered neighborhood $U$ of $y$. Let $\widetilde U$ be one sheet over $U$. Because $M$ is oriented, $\widetilde U$ inherits a local orientation. Transport this orientation to $U$ using the homeomorphism
-$$
-q\restrict_{\widetilde U}:\widetilde U\xrightarrow{\cong}U.
-$$
-We must show this does not depend on the chosen sheet. Any two sheets over $U$ differ by a unique deck transformation coming from an element $g\in G$. By hypothesis every such $g$ preserves the orientation of $M$, so the two transported orientations on $U$ agree.
+Fix $x\in M$ and let $B_x$ be a ball around $x$ small enough that the translates $gB_x$, $g\in G$, are pairwise disjoint — this is what a covering space action gives (Hatcher, p. 72). Let $\mu_x\in H_n(M,M-\{x\})$ be the given orientation class. Since every $g$ is orientation preserving, the induced isomorphism $g_*:H_n(M,M-\{x\})\to H_n(M,M-\{gx\})$ carries $\mu_x$ to $\mu_{gx}$; and by the local consistency of $\mu$, the class $\mu_{B_x}\in H_n(M\,|\,B_x)$ restricts to $\mu_y$ for every $y\in B_x$.
 
-Hence every sufficiently small $U\subset M/G$ has a well-defined orientation, and these local orientations agree on overlaps. Thus $M/G$ is orientable.
+Now $q$ restricts to a homeomorphism $B_x\to B_{(x)}$ onto the image of the ball, so excision (in the form $H_n(X\,|\,A)$ of p. 233) gives
+$$
+H_n(M,M-\{x\})\cong H_n(B_x,B_x-\{x\})\cong H_n(B_{(x)},B_{(x)}-\{(x)\})\cong H_n(M/G,M/G-\{(x)\}),
+$$
+and the class $\mu_{(x)}$ defined as the image of $\mu_x$ is well defined: any other preimage of $(x)$ in the orbit is $gx$ with $g\in G$, and $\mu_{gx}$ is the image of $\mu_x$ under the orientation-preserving $g_*$, so it maps to the same class downstairs.
+
+Local consistency downstairs is inherited: for $y\in B_x$ the class $\mu_{B_x}$ restricts to $\mu_y$ upstairs, so its image restricts to $\mu_{(y)}$ in $B_{(x)}$. Hence $y\mapsto\mu_{(y)}$ is an orientation of $M/G$, and $M/G$ is orientable.
+
+This is the solution printed in the Math 538 homework solutions, HMW 3, handwritten page 2 (PDF page 14 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`), Hatcher 3.3 #4: the same disjointness of translates, the observation that an orientation-preserving $g$ sends $\mu_x$ to $\mu_{gx}$, both excisions, and the conclusion "local consistency holds in $B_{(x)}$ since it holds in $B_x$".
 :::
