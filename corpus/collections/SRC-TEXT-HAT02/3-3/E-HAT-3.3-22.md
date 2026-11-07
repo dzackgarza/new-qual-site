@@ -91,6 +91,20 @@ audit:
     leaving the tangent-bottom components implicit. All claims from the earlier invalid interval-
     cycle and free-cochain argument remain withdrawn.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Two corrections to the relative MV presentation. The intersection term in the displayed long
+    exact sequence is now H^n(A cap B,C cap D), with the connecting map to H^{n+1} of the union;
+    only the subsequent comparison H^n(union) = H^{n-1}(X,X-K) has the degree shift. Also the
+    compatibility assertion is supplied explicitly: for N<=M and K contained in L, the maps of
+    triples go from the (L,M) object to the (K,N) object, and relative MV is natural under them.
+    The fixed-cover assertion is nevertheless still not available verbatim for arbitrary N: for X
+    a singleton and N=2, C=(-1,-2) union (2,infinity) has two interval components and H_1(A,C) is Z,
+    not zero. The endpoint-parameterized cover is what makes the vanishing and naturality claims
+    simultaneously correct.
+
 ---
 
 ::: {.problem}
@@ -120,16 +134,22 @@ $$
 \begin{aligned}
 \cdots&\to H^n(X\times\RR,(X\times\RR)-(K\times I_N);G)\\
 &\to H^n(A,C;G)\oplus H^n(B,D;G)=0\\
-&\to H^{n-1}(X,X-K;G)\\
+&\to H^n(A\cap B,C\cap D;G)\cong H^n((X-K)\times(-N,N);G)\\
 &\to H^{n+1}(X\times\RR,(X\times\RR)-(K\times I_N);G)\to\cdots .
 \end{aligned}
 $$
-Consequently
+Consequently, shifting degree only at this step,
 $$
 H^n(X\times\RR,(X\times\RR)-(K\times I_N);G)
+\cong H^n(A\cap B,C\cap D;G)
 \cong H^{n-1}(X,X-K;G).
 $$
-These identifications are compatible with inclusions in $K$ and $N$, by naturality of the relative Mayer--Vietoris sequence and of the pair homotopies above.
+
+For $N\le M$ and $K\subset L$, the inclusions define maps of triples from the object indexed by $(L,M)$ to the one indexed by $(K,N)$:
+$$
+(A_M,C_M)\to(A_N,C_N),\qquad (B_M,D_M)\to(B_N,D_N),\qquad (A_M\cap B_M,C_M\cap D_M)\to(A_N\cap B_N,C_N\cap D_N).
+$$
+Here use $C_J$ and $D_J$ for the compact set $L$ and interval $I_M$ on the left, and $K$ and $I_N$ on the right. These are maps of pairs: $A_M\subset A_N$ and $B_M\subset B_N$, while points of $C_M$ or $D_M$ lie outside $L\times I_M$ and hence outside $K\times I_N$. Similarly, on the intersection $(-M,M)\subset(-N,N)$, every point of $C_M\cap D_M$ lies in $(X-L)\times(-M,M)$ and therefore in $(X-K)\times(-N,N)$. The same inclusion convention applies to the total pair $(X\times\RR,(X\times\RR)-L\times I_M)\to(X\times\RR,(X\times\RR)-K\times I_N)$. Relative Mayer--Vietoris is natural with respect to all these inclusions, so the entire diagrams, not merely the groups, are compatible with the filtered system.
 
 The compact sets $K\times I_N$ with $K$ compact and $N\ge1$ are cofinal among compact subsets of $X\times\RR$: any compact $L$ has compact projections $K\subset X$ and $J\subset\RR$, and $J$ is contained in some $I_N$. Taking the filtered direct limit therefore yields
 $$
