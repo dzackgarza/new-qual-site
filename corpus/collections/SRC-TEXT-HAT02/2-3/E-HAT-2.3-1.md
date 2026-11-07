@@ -61,6 +61,17 @@ audit:
     proofs/README.md records these three citations with their hypotheses checked, separately from
     the Lean group lemmas and from the Sage sample, which covers only $m\in\{2,3,4,5,6,12\}$ and
     does not settle the uniform statement.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Statement matches Exercise 1 of §2.3 as printed on p. 165, both functors included. The
+    Moore-space counterexample was recomputed: with X = S^1 with a 2-cell attached by a degree m
+    map, H_2(X)=0, H_1(X)=Z_m, H_2(X,A)=Z and the connecting map is m, so T_1(X)=Z_m sits between
+    two vanishing torsion groups, and for MT the segment Z -m-> Z -> 0 is not exact at the middle
+    term. Results now cited: the axioms of p. 160, Theorem 2.35 p. 139 with the Cellular Boundary
+    Formula p. 141, Proposition 2.22 p. 124 and Corollary 2.14 p. 114. What is not covered: no
+    certificate.
 ---
 
 ::: {.problem}
@@ -69,7 +80,7 @@ Do the same for the 'mod torsion' functor $MT_n(X, A) = H_n(X, A; \ZZ) / T_n(X, 
 :::
 
 ::: {.solution}
-The exactness axiom fails for both constructions, already on the Moore-space pair $(X,A)$ in which $X$ is obtained from $A=S^1$ by attaching a $2$-cell by a degree-$m$ map, $m>1$.
+The exactness axiom fails for both constructions, already on the Moore-space pair $(X,A)$ in which $X$ is obtained from $A=S^1$ by attaching a $2$-cell by a degree-$m$ map, $m>1$. The axioms are those of p. 160, and the exactness axiom is the one requiring a long exact sequence for a CW pair.
 
 ::: pf
 
@@ -83,7 +94,7 @@ $$
 
 ::: pf-proof
 
-The cellular chain complex of $X$ is $\ZZ\xrightarrow{m}\ZZ\to\ZZ$, so $H_2(X)=0$ and $H_1(X)\cong\ZZ_m$. Because $(X,A)$ is a good pair with $X/A\cong S^2$, the relative group is $H_2(X,A)\cong H_2(S^2)\cong\ZZ$, and the connecting map is multiplication by the attaching degree $m$. Finally $H_1(A)\to H_1(X)$ is onto, so $H_1(X,A)=0$.
+The cellular chain complex of $X$ is $\ZZ\xrightarrow{m}\ZZ\to\ZZ$, so $H_2(X)=0$ and $H_1(X)\cong\ZZ_m$; the chain complex of a cell complex and the Cellular Boundary Formula are those of Theorem 2.35 (p. 139) and p. 141. Because $(X,A)$ is a good pair with $X/A\cong S^2$, the relative group is $H_2(X,A)\cong H_2(S^2)\cong\ZZ$ by Proposition 2.22 (p. 124) with Corollary 2.14 (p. 114), and the connecting map is multiplication by the attaching degree $m$, which is the cellular boundary $d_2$ of p. 141 read through that identification. Finally $H_1(A)\to H_1(X)$ is onto, so $H_1(X,A)=0$.
 
 :::
 
