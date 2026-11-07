@@ -121,7 +121,7 @@ induces an isomorphism on fundamental groups.
 ::: pf-proof
 
 By step [](#s3){.pf-ref}, $\RR^n$ is obtained from $Z$ by attaching cells all of the same dimension $n>2$.
-Proposition 1.26(b) says that attaching cells of dimension greater than $2$ does not change the fundamental group.
+Proposition 1.26(b) (p. 50) attaches $n$-cells for a fixed $n>2$ without changing $\pi_1$; the attachment here is over the whole locally finite family, and a loop together with a homotopy of loops is compact, so by local finiteness of the balls it meets only finitely many of them and the finite-attachment case applies.
 Hence
 $$
 \pi_1(Z)\cong\pi_1(\RR^n)=0.
