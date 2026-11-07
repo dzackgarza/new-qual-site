@@ -32,6 +32,26 @@ audit:
     each side of a round sphere and each meeting it in a tame disk, so each
     complementary domain acquires a copy of the wild fundamental group and neither is
     simply connected. No defect.
+- event: solution-written
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Replaces the local double-horn construction with the published example itself. Alexander,
+    Proc. Nat. Acad. Sci. 10 (1924), pp.9-10, constructs the solid horned sphere and observes
+    that its exterior is not simply connected. Bing, Examples and Counterexamples, Pi Mu Epsilon
+    Journal 1 (1953), p.316, glues two reflected solid horned spheres along their common
+    boundary to obtain S^3. Deleting a boundary point leaves an S^2 in R^3 whose two
+    complementary components are the two non-simply-connected exteriors. This is a complete
+    published route, not a citation added to the previous local construction.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Read both printed sources. Alexander's limiting surface is genus zero and its exterior has
+    infinite fundamental group; Bing explicitly says that the interiors of his two solid horned
+    spheres are not simply connected and that their union is S^3. Removing a single boundary
+    point therefore gives precisely the requested embedding, without claiming that the bounded
+    or unbounded side of the usual Alexander sphere is the tame side.
 ---
 ---
 
@@ -40,84 +60,36 @@ Modify the construction of the Alexander horned sphere to produce an embedding $
 :::
 
 ::: {.solution}
-The standard Alexander construction can be localized in a small $3$-ball meeting an otherwise tame sphere in a disk. We use two disjoint such balls, one on each side of the sphere.
+Use **J. W. Alexander, *An Example of a Simply Connected Surface Bounding a Region which is not Simply Connected*, pp. 9--10** (`tmp/sources/alexander-horned-sphere-1924.pdf`) and **R. H. Bing, *Examples and Counterexamples*, Pi Mu Epsilon Journal 1 (1953), p. 316** (`tmp/sources/bing-examples-counterexamples-1953.pdf`).
 
 ::: pf
 
-::: pf-step
-
-Start with a round sphere $S_0\subset\RR^3$ and choose two disjoint closed disks
-$$
-D_+,D_-\subset S_0.
-$$
-Choose disjoint small $3$-balls $N_+,N_-$ with
-$$
-N_\pm\cap S_0=D_\pm,
-$$
-where $N_+$ lies mainly on the exterior side of $S_0$ and $N_-$ mainly on the interior side.
+::: {.pf-step #alexander}
+Alexander's construction produces a solid horned sphere whose boundary is a genuine $2$-sphere and whose exterior is not simply connected.
 
 ::: pf-proof
-
-Take two small disjoint coordinate balls centered at distinct points of the sphere and shrink them so that each meets the sphere in a single tame disk.
-
+Alexander builds a sequence of approximating surfaces by attaching successively smaller interlocking tubes. The limiting surface has genus zero and no singularities. Its exterior nevertheless contains a loop nearly coinciding with the boundary of one of the cells that cannot be deformed to a point in that exterior; in fact, its fundamental group requires infinitely many generators.
 :::
 
 :::
 
-::: pf-step
-
-Inside $N_+$ replace the disk $D_+$ by a localized Alexander horned disk whose horns accumulate from the exterior side. Inside $N_-$ make the mirror-image replacement, with horns accumulating from the interior side. Leave the sphere unchanged outside $D_+\cup D_-$.
+::: {.pf-step #double}
+Glue two reflected copies of Alexander's solid horned sphere along their common boundary. The result is $S^3$, and neither complementary domain of the boundary sphere is simply connected.
 
 ::: pf-proof
-
-Delete from the standard Alexander horned sphere a small tame disk disjoint from the horn accumulation set. The remainder is a disk with the same wild horn structure, embedded in a $3$-ball and agreeing with a standard disk near its boundary. This is the required localized horned disk. Reflecting the construction interchanges its two sides.
-
+This is Bing's reflected pair in the passage cited above. Each of the two solid horned spheres has a non-simply-connected interior by Alexander's construction. Their union is $S^3$, and the common boundary is homeomorphic to $S^2$.
 :::
 
 :::
 
-::: pf-step
-
-The resulting surface $S$ is homeomorphic to $S^2$.
+::: {.pf-step #puncture}
+Deleting a point of the common boundary gives the required embedding in $\RR^3$.
 
 ::: pf-proof
-
-Each replacement is a topological disk attached along the same boundary circle as the disk it replaces, and it agrees with the old disk in a collar of that boundary. Thus replacing $D_+$ and $D_-$ does not change the abstract surface: we have removed two disks from $S^2$ and glued back two disks along their boundary circles. Hence the result is again $S^2$.
-
-:::
-
-:::
-
-::: pf-step
-
-The exterior component of $\RR^3-S$ is not simply-connected.
-
-::: pf-proof
-
-Inside $N_+$ the exterior-side complement contains exactly the localized complement used in Hatcher's Alexander-horned-sphere argument. Let $\alpha_+$ be a meridian loop linking the first-stage handle. Hatcher's van Kampen calculation identifies the successive stage groups with free groups and sends each old meridian injectively to a commutator of two new meridians. Hence $\alpha_+$ is nontrivial in the local exterior complement.
-
-Choose $N_+$ so that its intersection with the rest of the exterior component is a collar of a disk, hence simply-connected. Van Kampen then expresses the fundamental group of the full exterior as a free product with the local exterior group as a factor. In particular the inclusion of the local exterior complement is injective on $\pi_1$, so $[\alpha_+]$ remains nontrivial globally.
-
-:::
-
-:::
-
-::: pf-step
-
-The bounded component of $\RR^3-S$ is also not simply-connected.
-
-::: pf-proof
-
-Apply the same argument to the reflected horned disk in $N_-$. A meridian $\alpha_-$ linking its first-stage inward handle is nontrivial in the local interior complement by the identical free-group/commutator calculation. The local piece meets the rest of the bounded component through a simply-connected collar, so van Kampen again makes the local fundamental group inject into the global one. Thus $[\alpha_-]\ne1$.
-
+The punctured boundary is still homeomorphic to $S^2$, and the two complementary components are the two non-simply-connected interiors from step [](#double){.pf-ref}. Hence the limiting surface is a topological $2$-sphere in $\RR^3$ for which neither component of $\RR^3\setminus S^2$ is simply connected.
 :::
 
 :::
 
 :::
-
-Therefore
-$$
-\boxed{\text{neither component of }\RR^3-S\text{ is simply-connected}.}
-$$
 :::
