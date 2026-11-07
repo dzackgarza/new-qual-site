@@ -73,7 +73,7 @@ Compute the ranks of the simplicial (or cellular) chain groups $\Delta_i(\Delta^
 :::
 
 ::: {.solution}
-For the standard simplex $\Delta^n$, the group of $i$-chains is free on the $(i+1)$-element subsets of its $n+1$ vertices; this is the definition of the simplicial chain group, the free abelian group on the open $i$-simplices of a $\Delta$-complex (p. 104). Hence
+For the standard simplex $\Delta^n$, the group of $i$-chains is free on the $(i+1)$-element subsets of its $n+1$ vertices; this is the definition of the chain group $\Delta_i(X)$ of a $\Delta$-complex, the free abelian group on the open $i$-simplices (p. 105). Hence
 $$
 \operatorname{rank} C_i(\Delta^n)=\binom{n+1}{i+1}.
 $$
