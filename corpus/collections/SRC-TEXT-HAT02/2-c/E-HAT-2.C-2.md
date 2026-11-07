@@ -27,106 +27,69 @@ audit:
     Theorem 2C.3 (Lefschetz fixed point theorem, stated p. 179, proved p. 180) then
     gives a fixed point otherwise. The case n = 0 is handled separately, where the
     only fixed-point-free self-map is the antipodal one, of degree -1. No defect.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Uses the published proof by Kenneth DeMason, M382C Full Credit HW Problems (2021), Hatcher
+    2.C.2, printed p.84. Every simplex of the approximation has zero reduced homology except in top
+    degree, the identity on H_0 comes from path-connectedness with vertices joined by 1-simplices,
+    and f_* on H_n is multiplication by d. Hence Lambda(f)=1+(-1)^n d for n>=1; zero exactly means
+    d=(-1)^{n+1}, equal to the antipodal degree. The two-point case n=0 is covered by its only
+    fixed-point-free map, the antipodal transposition, rather than by applying that formula.
+
 ---
 
-::: {.exercise}
+::: {.problem}
 Use the Lefschetz fixed point theorem to show that a map $f: S^n \to S^n$ has a fixed point unless its degree is equal to the degree of the antipodal map $x \mapsto -x$.
 :::
 
 ::: {.solution}
-Write $a(x) = -x$ for the antipodal map of $S^n$ and $d = \deg f$.
+Let $a(x)=-x$ denote the antipodal map, and let $d=\deg f\in\ZZ$.
 
 ::: pf
 
 ::: {.pf-step #s1}
-$\deg(a) = (-1)^{n+1}$.
+
+$\deg a=(-1)^{n+1}$.
 
 ::: pf-proof
 
-::: pf-step
-The antipodal map $a: S^n \to S^n$ is given by $a(x_0, x_1, \dots, x_n) = (-x_0, -x_1, \dots, -x_n)$ on $S^n \subset \RR^{n+1}$.
-:::
-
-::: pf-step
-The map $a$ is the composition of $n + 1$ coordinate reflections $r_i(x_0, \dots, x_i, \dots, x_n) = (x_0, \dots, -x_i, \dots, x_n)$.
-:::
-
-::: pf-step
-Each reflection has degree $-1$, so by functoriality of topological degree:
-$$\deg(a) = \deg(r_0 \circ r_1 \circ \cdots \circ r_n) = (-1)^{n+1}.$$
+Write $a$ as the composite of the $n+1$ coordinate reflections. A reflection in one coordinate has degree $-1$, so composition gives $(-1)^{n+1}$.
 :::
 
 :::
 
-:::
+::: {.pf-step #s2}
 
-::: {.pf-step #lefschetz-number}
-For $n \ge 1$, the Lefschetz number of $f$ is $\Lambda(f) = 1 + (-1)^n d$.
+After applying simplicial approximation, the Lefschetz number of $f$ is $\Lambda(f)=1+(-1)^n d$ for $n\ge1$.
 
 ::: pf-proof
 
-::: pf-step
-The rational homology groups of the $n$-sphere $S^n$ are:
-$$H_k(S^n; \QQ) \cong \begin{cases} \QQ & k = 0, n, \\ 0 & 0 < k < n \text{ and } k > n. \end{cases}$$
-:::
-
-::: pf-step
-For $k = 0$, $S^n$ is non-empty and connected, so $f_*: H_0(S^n; \QQ) \to H_0(S^n; \QQ)$ is the identity, with $\operatorname{tr}(f_*\restrict_{H_0}) = 1$.
-:::
-
-::: pf-step
-For $k = n$, by definition of topological degree, $f_*: H_n(S^n; \QQ) \to H_n(S^n; \QQ)$ is multiplication by $\deg(f) = d$, so $\operatorname{tr}(f_*\restrict_{H_n}) = d$.
-:::
-
-::: pf-step
-If $n = 0$, $S^0 = \{-1, 1\}$ has $H_0(S^0; \QQ) \cong \QQ^2$, where a degree $d$ map satisfies $\Lambda(f) = 1 + d$.
-:::
-
-::: pf-step
-For $n \ge 1$, the Lefschetz number $\Lambda(f)$ is
-$$\Lambda(f) = \sum_{k=0}^n (-1)^k \operatorname{tr}(f_*\restrict_{H_k(S^n; \QQ)}) = (-1)^0 (1) + (-1)^n (d) = 1 + (-1)^n d.$$
+Triangulate $S^n$ as a finite simplicial complex. The simplicial approximation theorem asserts that after further barycentric subdivision $f$ is homotopic to a simplicial map; homotopy preserves both degree and Lefschetz number, so I compute for that approximation. As DeMason argues on p. 84, for a path-connected simplicial complex every vertex lies in the same $H_0$ class: a $1$-simplex joining them has boundary their difference. So a simplicial map induces the identity on $H_0$ and has trace $1$ there. In the remaining dimension the homology of a sphere is zero unless $k=n$, and there the induced map is multiplication by $d$. Therefore
+$$
+\Lambda(f)=1+(-1)^n d.
+$$
 :::
 
 :::
 
-:::
+::: {.pf-step #degzero}
 
-::: pf-step
-If $\deg(f) \neq \deg(a)$, then $f$ has a fixed point.
+If $d\ne(-1)^{n+1}$, then $f$ has a fixed point.
 
 ::: pf-proof
 
-If $n=0$, the only fixed-point-free self-map of the two-point space $S^0$ is the transposition. It is the antipodal map and has degree $-1$. Hence the claim holds in this case.
-
-::: pf-step
-For $n\ge1$, the sphere $S^n$ is a compact, triangulable CW complex.
-:::
-
-::: pf-step
-By the Lefschetz Fixed Point Theorem, if $\Lambda(f) \neq 0$, then $f$ must have at least one fixed point (there exists $x \in S^n$ such that $f(x) = x$).
-:::
-
-::: pf-step
-By step [](#lefschetz-number){.pf-ref}, the Lefschetz number vanishes exactly when
-$$\Lambda(f) = 0 \iff 1 + (-1)^n d = 0 \iff (-1)^n d = -1 \iff d = -(-1)^{-n} = (-1)^{n+1}.$$
-:::
-
-::: pf-step
-By step [](#s1){.pf-ref}, $(-1)^{n+1} = \deg(a)$.
-:::
-
-::: pf-step
-Therefore, $\Lambda(f) = 0$ if and only if $\deg(f) = \deg(a) = (-1)^{n+1}$.
-:::
-
-::: pf-step
-If $\deg(f) \neq \deg(a)$, then $\Lambda(f) \neq 0$, so $f$ must have a fixed point.
+For $n\ge1$, the Lefschetz fixed-point theorem applies to $S^n$. Were there no fixed point,
+$$0=\Lambda(f)=1+(-1)^n d,$$
+which exactly means $d=(-1)^{n+1}$. For $n=0$ no such formula in $H_0$ is needed: $S^0$ has two points, and the only self-map with no fixed point is their transposition, precisely the antipodal map.
 :::
 
 :::
 
 :::
 
+
+This is **Kenneth DeMason's argument in *M382C Full Credit HW Problems* (2021)**, Hatcher 2.C.2, printed p. 84 of the local file `tmp/sources/demason-m382c-hatcher-20210404.pdf` ([author's PDF](https://math.mcmaster.ca/~demasonk/files/exercises/DeMason%2C%20Kenneth%20M382C%20HW%20Full%20Credit%2020210404.pdf)). The central facts are that $H_0$ contributes trace $1$, $H_n$ contributes $(-1)^n d$ because $f_*$ is multiplication by $d$, and the antipodal degree comes from composition of reflections.
 :::
 
-:::
