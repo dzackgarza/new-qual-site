@@ -53,10 +53,10 @@ $$
 \qquad
  d_2(a,b)=2a+3b.
 $$
-Hence
+Hence, cellular homology being singular homology by Theorem 2.35 (Hatcher p. 139),
 $$
 H_2(X)=\ker d_2=\ZZ(3,-2),
-\qquad H_1(X)=0,
+\qquad H_1(X)=\ZZ/\operatorname{im}d_2=0,
 \qquad H_0(X)=\ZZ.
 $$
 
@@ -94,7 +94,7 @@ and
 $$
 0\to\ZZ\xrightarrow{3}\ZZ\to\ZZ\to0,
 $$
-which give the stated groups. The groups for $X$ follow from the cellular complex above.
+which give the stated groups. The groups for $X$ follow from the cellular complex above, and for all five complexes cellular homology is singular homology by Theorem 2.35 (p. 139).
 
 :::
 
@@ -114,7 +114,7 @@ X/A_3\cong S^2,
 \qquad
 X/X=\mathrm{pt}.
 $$
-Thus
+Thus, the homology of the wedge being the direct sum of the summands by Corollary 2.25 (p. 126) and that of $S^2$ being $\ZZ$ in degree $2$ by Corollary 2.14 (p. 114),
 $$
 \widetilde H_2(X/S^1)\cong\ZZ^2,
 \quad
@@ -142,7 +142,7 @@ First attach the degree-$2$ cell, obtaining $A_2$. Its fundamental group is
 $$
 \pi_1(A_2)\cong\ZZ_2.
 $$
-The degree-$3$ attaching loop for the second $2$-cell represents the same element of this group as a degree-$1$ loop, since $3\equiv1\pmod2$. Hence these two attaching maps are homotopic in $A_2$. Replacing the degree-$3$ attaching map by the homotopic degree-$1$ attaching map does not change the homotopy type of the adjunction space.
+The degree-$3$ attaching loop for the second $2$-cell represents the same element of this group as a degree-$1$ loop, since $3\equiv1\pmod2$. Hence these two attaching maps are homotopic in $A_2$. Replacing the degree-$3$ attaching map by the homotopic degree-$1$ attaching map does not change the homotopy type of the adjunction space, by Proposition 0.18 (Hatcher p. 16).
 
 With this replacement, $S^1\cup e^2_3$ is a disk, so the remaining degree-$2$ cell is attached to a contractible disk along a loop that is nullhomotopic there. Therefore the resulting space is homotopy equivalent to
 $$
