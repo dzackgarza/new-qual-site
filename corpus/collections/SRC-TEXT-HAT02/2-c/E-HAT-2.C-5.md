@@ -121,7 +121,7 @@ $$
 $$
 This is consistent with Exercise 4: $\tau(r)=\chi(F)=0$ because $F$ is a disjoint union of circles.
 
-The annulus-based perturbation is in **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, Exercise 2.C.3 (Hatcher 2.C.5), printed p. 45 (`tmp/sources/hatcher-solutions-guanyu-li.pdf`). The displayed isotopy is the explicit realization of that argument: it twists the fixed circles in their $r$-invariant annuli while doing nothing outside, and the consistency check $\tau(r)=\chi(C_1\sqcup\cdots\sqcup C_r)=0$ uses the previous exercise.
+The annulus-based perturbation is in **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, Exercise 2.C.3 (Hatcher 2.C.5), printed p. 45 (`tmp/sources/hatcher-solutions-guanyu-li.pdf`). Li's displayed formula is not adopted: outside the annular neighborhood $U$, at $t=0$ it is $x$ rather than $r(x)$, and at $s=0$ the twist term vanishes. The construction immediately above is the **correction of that endpoint behavior**: $h_s$ is an isotopy to the identity supported inside each annulus, so $h_s\circ r$ still agrees with $r$ outside those annuli and removes every point fixed by $r$ on their boundaries $s=0$. The consistency check $\tau(r)=\chi(C_1\sqcup\cdots\sqcup C_r)=0$ uses Exercise 4.
 
 
 :::
