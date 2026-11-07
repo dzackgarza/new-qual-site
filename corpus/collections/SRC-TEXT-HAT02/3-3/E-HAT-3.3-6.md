@@ -39,6 +39,17 @@ audit:
     replaced by $\ZZ$ precisely when both summands are nonorientable. For (b) the Euler
     characteristic count $\chi(N_i)=\chi(M_i)-(-1)^n$ with additivity over $S^{n-1}$ gives
     $\chi(M_1)+\chi(M_2)-\chi(S^n)$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Re-read at the level of the gap: the vanishing $H_n(N_i;\QQ)=0$ that the rational pair sequence
+    displays as a leading zero was asserted, not proved, and it is what makes the rank count work;
+    it now comes from $M_i\setminus\{p\}\simeq N_i$ being a connected noncompact $n$-manifold and
+    Proposition 3.29 p.239. The Mayer-Vietoris step now also says that it is read in reduced
+    homology, which is what removes the $H_0(S^{n-1})$ term at $j=1$. The rest is as previously
+    checked: the exceptional case is a rank count plus the torsion of Corollary 3.28 p.238. Not
+    checked: the additivity of $\chi$ over a CW decomposition is used as in the text, not reproved.
 ---
 
 ::: {.problem}
@@ -54,7 +65,7 @@ Given two disjoint connected $n$-manifolds $M_1$ and $M_2$, a connected $n$-mani
 ::: {.solution}
 Put $N_i=M_i\setminus\operatorname{int}B_i$ and $M=M_1\#M_2=N_1\cup_{S^{n-1}}N_2$. For $n=1$ there are no degrees $0<i<n$; the Euler-characteristic calculation below still applies. Assume $n\ge2$ for part (a).
 
-Excision gives $H_j(M_i,N_i;\ZZ)\cong H_j(D^n,S^{n-1};\ZZ)$, which is $\ZZ$ in degree $n$ and zero otherwise. Thus $H_j(N_i;\ZZ)\cong H_j(M_i;\ZZ)$ for $0<j<n-1$. Mayer--Vietoris for $M=N_1\cup N_2$ gives the direct sum formula in these degrees.
+Excision gives $H_j(M_i,N_i;\ZZ)\cong H_j(D^n,S^{n-1};\ZZ)$, which is $\ZZ$ in degree $n$ and zero otherwise. Thus $H_j(N_i;\ZZ)\cong H_j(M_i;\ZZ)$ for $0<j<n-1$. Mayer--Vietoris for $M=N_1\cup N_2$ gives the direct sum formula in these degrees: reading it in reduced homology — legitimate because $S^{n-1}$, $N_1$, $N_2$ and $M$ are all connected, so $\tilde H_j=H_j$ for $j\ge1$ — the terms of the sequence involving $S^{n-1}$ that sit next to $H_1$ vanish, since $\tilde H_j(S^{n-1})=0$ for $j<n-1$.
 
 It remains to determine $H_{n-1}(M;\ZZ)$ as a finitely generated abelian group. Let $\epsilon_i=0$ when $M_i$ is orientable and $\epsilon_i=1$ otherwise. With rational coefficients, the pair sequence gives
 $$
@@ -62,7 +73,7 @@ $$
 \longrightarrow H_{n-1}(N_i;\QQ)
 \longrightarrow H_{n-1}(M_i;\QQ)\longrightarrow0.
 $$
-The first map is an isomorphism for orientable $M_i$ and zero for nonorientable $M_i$. Hence
+The initial $0$ is $H_n(N_i;\QQ)$. For $p\in\operatorname{int}B_i$ the punctured ball $\operatorname{int}B_i\setminus\{p\}$ retracts onto $\partial B_i$, so $M_i\setminus\{p\}$ deformation retracts onto $N_i$, and $M_i\setminus\{p\}$ is a connected noncompact $n$-manifold — connected because $n\ge2$ — so its homology vanishes in degrees $\ge n$ by Proposition 3.29 p.239. The last term is $H_{n-1}(M_i,N_i;\QQ)=0$ from the excision computation above. The first map is an isomorphism for orientable $M_i$ and zero for nonorientable $M_i$. Hence
 $$
 \operatorname{rank}H_{n-1}(N_i)
 =\operatorname{rank}H_{n-1}(M_i)+\epsilon_i,
