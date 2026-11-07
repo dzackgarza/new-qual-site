@@ -77,6 +77,14 @@ audit:
     each summand. Replaced the alternate snake-lemma presentation with this published argument.
     Hatcher p.165 also asks for invariance in n, finite-support vanishing and homotopy invariance,
     all retained explicitly. The #105 source obligation is covered.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Supplied the two axiom arguments omitted from the earlier transcription. Homotopic maps
+    have equal induced maps on every reduced homology group, hence equal induced maps on
+    product, sum and quotient. Suspension reindexes H_i(Sigma X) as H_{i-1}(X), giving the
+    published A_i ≅ B_i quotient argument. Preserved Casassas's exactness and wedge steps.
 ---
 
 ::: {.problem}
@@ -102,7 +110,26 @@ Homotopy invariance holds.
 
 ::: pf-proof
 
-A homotopy equivalence induces isomorphisms on every reduced homology group, hence on their product, their direct sum, and therefore on the quotient $Q(X)$.
+If $f\simeq g$ as maps on a space or on a pair, then $\widetilde H_i(f)=\widetilde H_i(g)$ for each index $i$ by ordinary homotopy invariance. The induced maps on the product and on its direct summand are therefore equal, and their induced maps on the quotient are equal. Thus $f_*=g_*$ on $Q(X)$. This is Casassas's homotopy-invariance step on p. 7, not merely preservation of homotopy equivalences.
+
+:::
+
+:::
+
+::: pf-step
+
+Suspension holds.
+
+::: pf-proof
+
+For each $i$, ordinary suspension gives $\widetilde H_i(\Sigma X)\cong\widetilde H_{i-1}(X)$. These isomorphisms identify the corresponding products and, by restriction, their direct sums. Taking quotients and reindexing $j=i-1$ gives
+$$
+Q(\Sigma X)
+=\frac{\prod_i\widetilde H_i(\Sigma X)}{\bigoplus_i\widetilde H_i(\Sigma X)}
+\cong\frac{\prod_j\widetilde H_j(X)}{\bigoplus_j\widetilde H_j(X)}
+=Q(X).
+$$
+This is the published $A_i\cong B_i$ step on p. 7. Consequently $\widetilde h_{n+1}(\Sigma X)\cong\widetilde h_n(X)$ for every $n$, independently of $n$ by construction.
 
 :::
 
