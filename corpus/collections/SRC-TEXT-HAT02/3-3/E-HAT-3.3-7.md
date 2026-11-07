@@ -69,6 +69,19 @@ audit:
     d[S^0] = (d,d). The card now states the degree convention of p.258 and this dimension boundary
     precisely.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Repaired the remaining false local-pair assertions. The collapsed point is now named infinity
+    and is distinct from y = f(p), where p lies in the open disk. The previous map
+    H_n(M,M-B) -> H_n(B,B-p) was not excision; the diagram instead uses excision for the pair
+    (M, M-p), deleting M-B, whose closure lies in M-p, to obtain H_n(B,B-p), and the same excision
+    at y in f(B). Commutativity with the two maps induced by f and the fundamental-class
+    restrictions of Theorem 3.26(a) proves the local degree, hence the global degree, is +-1. The
+    dimension-zero paragraph now distinguishes Hatcher's connected-target convention from the
+    componentwise fundamental class of S^0.
+
 ---
 
 ::: {.problem}
@@ -77,21 +90,42 @@ Show that for any connected closed orientable $n$-manifold $M$ there is a degree
 :::
 
 ::: {.solution}
-Write $[M]\in H_n(M;\ZZ)$ and $[S^n]\in H_n(S^n;\ZZ)$ for the fundamental classes; by the definition quoted in the exercise, a map $f$ has degree $d$ when $f_*([M])=d\,[S^n]$, and the sign depends on the two classes.
+Hatcher's convention, printed in this exercise on p. 258, is that $M$ and $N$ are *connected* closed orientable $n$-manifolds with fundamental classes $[M]$ and $[N]$, and $\deg f=d$ where $f_*([M])=d[N]$. Theorem 3.26(a), p. 236, then says that $H_n(M)$ and $H_n(N)$ are infinite cyclic and that $[M]$ and $[N]$ restrict to generators of $H_n(M\,|\,p)$ and $H_n(N\,|\,y)$ for every point $p$ and $y$.
 
-Take $n\ge1$ for the construction below. The case $n=0$ is worth stating exactly, because it is the boundary of the definition rather than of the topology. The definition requires the target to be a *connected* closed orientable manifold, and $S^0$ is not connected, so "a degree 1 map $M\to S^0$" is not covered by it. $S^0$ does have a fundamental class in the sense of p. 236: $H_0(S^0;\ZZ)=\ZZ^2$ and $[S^0]=(1,1)$, whose image in each local group $H_0(S^0\,|\,\{p\})=\ZZ$ is a generator. But for $M$ a point every map has $f_*([M])\in\{(\pm1,0),(0,\pm1)\}$, whereas $d\,[S^0]=(d,d)$, so no integer $d$ satisfies $f_*([M])=d[S^0]$ at all: for $n=0$ there is no degree 1 map, and the statement of the exercise is a statement about $n\ge1$.
+For $n=0$, $S^0$ is disconnected, so it is outside that convention. With the usual componentwise extension of a fundamental class, $[S^0]=(1,1)\in H_0(S^0)=\ZZ^2$ does restrict to a generator at each point; nevertheless, for $M$ a point $f_*([M])$ is one of $(\pm1,0)$ and $(0,\pm1)$, whereas $d[S^0]=(d,d)$, so the displayed equation is unsatisfiable. The construction below therefore takes $n\ge1$.
 
-So let $B\subset M$ be an open disk, a ball whose closure lies in a larger ball, and fix $p\in B$. Define
+Choose an open coordinate disk $B\subset M$ and a point $p\in B$. Let $q:M\to Q=M/(M-B)$ collapse the closed complement of $B$ to a point, write $\infty=q(M-B)$, and choose a homeomorphism $h:Q\to S^n$ with $\infty$ as the antipode of $h(q(p))$; this quotient is $S^n$, as in the proof of Theorem 2.44, p. 146. Put $f=h\circ q$ and
 $$
-f:M\longrightarrow S^n
+y=f(p)=h(q(p)),\qquad \infty\ne y .
 $$
-as the collapse of $M-B$ to a point followed by a homeomorphism: $f$ is the composite $M\to M/(M-B)\xrightarrow{\ \cong\ }S^n$, where collapsing the complement of a disk in a connected closed $n$-manifold gives $S^n$ (as in the proof of Theorem 2.44, p. 146). Thus $f$ maps $B$ onto $S^n-\{f(p)\}$ and $M-B$ onto the point $f(p)$.
+Thus the quotient pair is $(Q,\{\infty\})$: $f$ sends $M-B$ to $\infty$, while $p$ is sent to the distinct point $y$. Moreover $q\restrict_B$ and $h$ give a homeomorphism
+$$
+f\restrict_B:(B,B-\{p\})\xrightarrow{\ \cong\ }
+(f(B),f(B)-\{y\})
+$$
+between the two displayed pairs of open sets.
 
-As a map of pairs, $f$ is a map $(M,M-B)\to(S^n,\{f(p)\})$ — not to $(S^n,S^n-\{f(p)\})$, since $f(M-B)=\{f(p)\}$ — and on the target the pair sequence of $(S^n,\{f(p)\})$, together with $H_i(\{f(p)\})=0$ for $i>0$, gives
+The precise local-degree diagram is
 $$
-H_n(S^n)\xrightarrow{\ \cong\ }H_n(S^n,\{f(p)\})\qquad(n\ge1).
+\begin{array}{ccccc}
+H_n(M) & \xrightarrow{\ f_*\ } & H_n(S^n) \\
+\Big\downarrow{\rho_M} && \Big\downarrow{\rho_S} \\
+H_n(M,M-\{p\}) & \xrightarrow{\ f_*^{(p)}\ } & H_n(S^n,S^n-\{y\}) \\
+\Big\uparrow{e_M} && \Big\uparrow{e_S} \\
+H_n(B,B-\{p\}) & \xrightarrow{\ (f\restrict_B)_*\ } & H_n(f(B),f(B)-\{y\}) .
+\end{array}
 $$
-On the source, excision for the ball gives $H_n(M,M-B)\cong H_n(B,B-\{p\})\cong\ZZ$, and the pair sequence of $(M,M-B)$ shows that $H_n(M)\to H_n(M,M-B)$ is an isomorphism sending $[M]$ to the local class $\mu_p$: that is exactly the condition that the image of $[M]$ in $H_n(M\,|\,p)$ be a generator. Under these two identifications $f_*$ becomes an isomorphism of infinite cyclic groups, so $f_*[M]=\pm[S^n]$. If the sign is $-1$, replace $[M]$ by its negative, the fundamental class of the opposite orientation of $M$; then $f_*[M]=[S^n]$ and $\deg f=1$.
+All coefficients are $\ZZ$. Here $\rho_M$ and $\rho_S$ are induced by inclusions of pairs and are isomorphisms by Theorem 3.26(a). The two squares commute by naturality of homology for the same continuous maps. The vertical maps $e_M$ and $e_S$ are isomorphisms by excision: for example, with $A=M-\{p\}$ and $Z=M-B$, one has $\overline Z\subset\operatorname{int}A$ because $B$ is open and $p\in B$, so
+$$
+H_n(M-Z,A-Z)=H_n(B,B-\{p\})\cong H_n(M,M-\{p\}).
+$$
+The same computation applies inside $S^n$ with $f(B)$ replacing $B$ and $y$ replacing $p$. The bottom map is an isomorphism because $f\restrict_B$ is a homeomorphism of pairs. Consequently $f_*^{(p)}$ is an isomorphism.
 
-This is the solution printed in the Math 538 homework solutions, HMW 4, handwritten page 1 (PDF page 17 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`), Hatcher 3.3 #7: it defines $f$ by sending an open disk $B$ to $S^n-\{\mathrm{pt}\}$ and $M-B$ to $\{\mathrm{pt}\}$, notes that $M/(M-B)\to S^n$ is a homeomorphism, and concludes $f_*[M]=\pm[S^n]$ with the sign removed "since we can choose the other orientation of $M$".
+Now $\rho_M([M])$ and $\rho_S([S^n])$ are local generators by the definition of a fundamental class. Hence the middle horizontal map carries one local generator to $\pm$ the other, and commutativity gives
+$$
+f_*([M])=\pm[S^n].
+$$
+If the sign is $-1$, replace $[M]$ by $-[M]$, the fundamental class for the opposite orientation of $M$. Then $f_*([M])=[S^n]$, so Hatcher's definition above gives $\deg f=1$.
+
+The construction is the one in the Math 538 homework solutions, HMW 4, handwritten p. 1 (PDF p. 17 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`), Hatcher 3.3 #7: collapse an open disk's complement, identify the quotient with $S^n$, and change the orientation to remove the sign. The diagram above supplies the local identifications that the sheet does not display.
 :::
