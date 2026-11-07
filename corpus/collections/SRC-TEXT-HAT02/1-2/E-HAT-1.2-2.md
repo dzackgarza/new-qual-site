@@ -111,7 +111,7 @@ $$
 $$
 Their intersection is path connected by step [](#s2){.pf-ref}.
 
-The Seifert--van Kampen theorem therefore gives
+The Seifert--van Kampen theorem (Theorem 1.20, p. 43) therefore gives
 $$
 \pi_1(U_r)
 \cong
