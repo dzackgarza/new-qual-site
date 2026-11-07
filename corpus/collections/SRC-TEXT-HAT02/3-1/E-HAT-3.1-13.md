@@ -38,6 +38,11 @@ audit:
     abelianness factors that through $\pi_1^{ab}=H_1(X)$; the universal coefficient sequence with
     $\operatorname{Ext}(H_0,G)=\operatorname{Ext}(\ZZ,G)=0$ identifies it with $H^1(X;G)$; and the
     induced map on $H_1$ is the abelianization of the induced map on $\pi_1$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Statement matches Exercise 13 (p.206), with Proposition 1B.9 restated as context. Rechecked the composition: Proposition 1B.9 p.90 gives the bijection with Hom(pi_1 X,G); abelian G factors it through pi_1^ab = H_1(X) by Theorem 2A.1 p.166; Theorem 3.2 p.195 with H_0 free identifies Hom(H_1,G) with H^1(X;G); and the composite sends f to f_* on H_1. Citations added at each step, including the page of Proposition 1B.9 and of Theorem 2A.1. Not covered: X not connected, which the exercise excludes.
 ---
 
 ::: {.problem}
@@ -66,7 +71,7 @@ $$
 
 ::: pf-proof
 
-For a connected CW complex $X$, Proposition 1B.9 classifies based homotopy classes of based maps into a $K(G,1)$ by the induced homomorphism on fundamental groups. Because maps and homotopies are based, there is no quotient by conjugation.
+Proposition 1B.9 (p.90) states that for a connected CW complex $X$ and a $K(G,1)$, every homomorphism $\pi_1(X,x_0)\to\pi_1(Y,y_0)$ is induced by a based map, unique up to based homotopy; with $\pi_1(K(G,1))=G$ this is the displayed bijection. Because maps and homotopies are based, there is no quotient by conjugation.
 
 :::
 
@@ -91,7 +96,7 @@ $$
 
 ::: pf-proof
 
-The commutator subgroup lies in the kernel of every homomorphism to an abelian group. The universal property of abelianization gives the unique factorization. The Hurewicz theorem in degree one identifies the abelianization with $H_1(X)$.
+The commutator subgroup lies in the kernel of every homomorphism to an abelian group, and the universal property of abelianization gives the unique factorization. Theorem 2A.1 (p.166) identifies $\pi_1(X)^{\mathrm{ab}}$ with $H_1(X)$ for path-connected $X$, which a connected CW complex is.
 
 :::
 
@@ -106,13 +111,13 @@ $$
 
 ::: pf-proof
 
-The cohomological universal coefficient sequence is
+The cohomological universal coefficient sequence of Theorem 3.2 (p.195) is
 $$
 0\to\operatorname{Ext}(H_0(X),G)
 \to H^1(X;G)
 \to\operatorname{Hom}(H_1(X),G)\to0.
 $$
-Since $X$ is connected, $H_0(X)\cong\ZZ$ is free, so the Ext term vanishes.
+Since $X$ is connected, $H_0(X)\cong\ZZ$ is free, so the Ext term vanishes and $H^1(X;G)\cong\operatorname{Hom}(H_1(X),G)$.
 
 :::
 
