@@ -50,6 +50,20 @@ audit:
     homology, which is what removes the $H_0(S^{n-1})$ term at $j=1$. The rest is as previously
     checked: the exceptional case is a rank count plus the torsion of Corollary 3.28 p.238. Not
     checked: the additivity of $\chi$ over a CW decomposition is used as in the text, not reproved.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Source-backed rewrite from the Math 538 homework solutions, HMW 3 handwritten pages 2-4 (PDF
+    pages 14, 15, 16), Hatcher 3.3 #6, replacing the card's excision-plus-Mayer-Vietoris route with
+    the printed pair-sequence of (M, S^{n-1}) and the identification M/S^{n-1} = M_1 v M_2; the three
+    cases, the Corollary 3.28 torsion step, and part (b) as the degree-by-degree rank count ending in
+    (-1) + (-1)^{n+1} = -chi(S^n) are the sheet's. Verified independently that all three cases give
+    chi(M_1) + chi(M_2) - chi(S^n), and supplied the two things the sheet leaves implicit: n = 2
+    (where H_{n-2}(S^{n-1}) is nonzero and the sequence must be read in reduced homology) and the
+    good-pair justification of H_i(M,S^{n-1}) = H_i(M_1 v M_2). The earlier note below on
+    H_n(N_i;Q) belonged to the route this rewrite replaced.
+
 ---
 
 ::: {.problem}
@@ -63,48 +77,35 @@ Given two disjoint connected $n$-manifolds $M_1$ and $M_2$, a connected $n$-mani
 :::
 
 ::: {.solution}
-Put $N_i=M_i\setminus\operatorname{int}B_i$ and $M=M_1\#M_2=N_1\cup_{S^{n-1}}N_2$. For $n=1$ there are no degrees $0<i<n$; the Euler-characteristic calculation below still applies. Assume $n\ge2$ for part (a).
+Put $N_i=M_i\setminus\operatorname{int}B_i$, so that $M=M_1\sharp M_2=N_1\cup_{S^{n-1}}N_2$ with $N_1\cap N_2=S^{n-1}$, and collapsing the glued sphere gives $M/S^{n-1}=M_1\vee M_2$. Since $\partial N_i=S^{n-1}$ has a collar in $M$, $(M,S^{n-1})$ is a good pair, so $H_i(M,S^{n-1})\cong\widetilde H_i(M_1\vee M_2)=\widetilde H_i(M_1)\oplus\widetilde H_i(M_2)$ for $i\ge1$. The pair sequence of $(M,S^{n-1})$ therefore reads
+$$
+\cdots\to\widetilde H_i(S^{n-1})\to H_i(M)\to H_i(M_1)\oplus H_i(M_2)\to\widetilde H_{i-1}(S^{n-1})\to\cdots
+$$
+with $\widetilde H_i(S^{n-1})=0$ for $i\ne n-1$ and $\widetilde H_{n-1}(S^{n-1})=\ZZ$.
 
-Excision gives $H_j(M_i,N_i;\ZZ)\cong H_j(D^n,S^{n-1};\ZZ)$, which is $\ZZ$ in degree $n$ and zero otherwise. Thus $H_j(N_i;\ZZ)\cong H_j(M_i;\ZZ)$ for $0<j<n-1$. Mayer--Vietoris for $M=N_1\cup N_2$ gives the direct sum formula in these degrees: reading it in reduced homology — legitimate because $S^{n-1}$, $N_1$, $N_2$ and $M$ are all connected, so $\tilde H_j=H_j$ for $j\ge1$ — the terms of the sequence involving $S^{n-1}$ that sit next to $H_1$ vanish, since $\tilde H_j(S^{n-1})=0$ for $j<n-1$.
+For $1\le i\le n-2$ both neighbouring terms vanish, so $H_i(M)\cong H_i(M_1)\oplus H_i(M_2)$: this is the claimed formula in those degrees.
 
-It remains to determine $H_{n-1}(M;\ZZ)$ as a finitely generated abelian group. Let $\epsilon_i=0$ when $M_i$ is orientable and $\epsilon_i=1$ otherwise. With rational coefficients, the pair sequence gives
+In degree $n-1$, take $n\ge3$ first, so that $H_{n-2}(S^{n-1})=0$ and the sequence ends
 $$
-0\longrightarrow H_n(M_i;\QQ)\longrightarrow\QQ
-\longrightarrow H_{n-1}(N_i;\QQ)
-\longrightarrow H_{n-1}(M_i;\QQ)\longrightarrow0.
+0\to H_n(M)\to H_n(M_1)\oplus H_n(M_2)\xrightarrow{\ \psi\ }\ZZ\to H_{n-1}(M)\to H_{n-1}(M_1)\oplus H_{n-1}(M_2)\to0 .
 $$
-The initial $0$ is $H_n(N_i;\QQ)$. For $p\in\operatorname{int}B_i$ the punctured ball $\operatorname{int}B_i\setminus\{p\}$ retracts onto $\partial B_i$, so $M_i\setminus\{p\}$ deformation retracts onto $N_i$, and $M_i\setminus\{p\}$ is a connected noncompact $n$-manifold — connected because $n\ge2$ — so its homology vanishes in degrees $\ge n$ by Proposition 3.29 p.239. The last term is $H_{n-1}(M_i,N_i;\QQ)=0$ from the excision computation above. The first map is an isomorphism for orientable $M_i$ and zero for nonorientable $M_i$. Hence
-$$
-\operatorname{rank}H_{n-1}(N_i)
-=\operatorname{rank}H_{n-1}(M_i)+\epsilon_i,
-$$
-and the boundary sphere has a nonzero rational class in $N_i$ exactly when $\epsilon_i=1$.
+Here $H_n(M_i)$ is $\ZZ$ or $0$ according as $M_i$ is orientable (Theorem 3.26, p. 236), and $\psi$ is the sum of the two boundary maps $\ZZ\to\ZZ$, each of which is an isomorphism for an orientable summand and zero for a nonorientable one. Three cases follow.
 
-The Mayer--Vietoris sequence with rational coefficients shows that $H_{n-1}(M;\QQ)$ is the cokernel of
-$$
-H_{n-1}(S^{n-1};\QQ)\longrightarrow
-H_{n-1}(N_1;\QQ)\oplus H_{n-1}(N_2;\QQ).
-$$
-This map has rank zero if both $M_i$ are orientable and rank one otherwise. For $n=2$, the same conclusion follows from the reduced Mayer--Vietoris sequence, since both $N_i$ are connected. Therefore
-$$
-\operatorname{rank}H_{n-1}(M)
-=
-\begin{cases}
-\operatorname{rank}H_{n-1}(M_1)+\operatorname{rank}H_{n-1}(M_2)+1,
-&\epsilon_1=\epsilon_2=1,\\
-\operatorname{rank}H_{n-1}(M_1)+\operatorname{rank}H_{n-1}(M_2),
-&\text{otherwise}.
-\end{cases}
-$$
-The connected sum is orientable exactly when both summands are orientable: an orientation restricts to each punctured summand, and compatible orientations on the punctured summands glue. Corollary 3.28 says that the torsion subgroup of $H_{n-1}$ of a closed connected $n$-manifold is zero if it is orientable and $\ZZ_2$ otherwise. Combining this torsion statement with the rank calculation and the classification of finitely generated abelian groups gives the direct sum formula when at most one $M_i$ is nonorientable. When both are nonorientable, the rank rises by one and the torsion changes from $\ZZ_2\oplus\ZZ_2$ to $\ZZ_2$, exactly replacing one $\ZZ_2$ summand by $\ZZ$.
+If both $M_i$ are orientable, $\psi:\ZZ\oplus\ZZ\to\ZZ$ is onto, so $H_n(M)\cong\ker\psi\cong\ZZ$ — which makes $M$ orientable — and $H_{n-1}(M)\cong H_{n-1}(M_1)\oplus H_{n-1}(M_2)$.
 
-For part (b), removing the interior of an $n$-ball changes Euler characteristic by $-(-1)^n$, so $\chi(N_i)=\chi(M_i)-(-1)^n$. Additivity for the gluing along $S^{n-1}$ gives
+If exactly one is orientable, $\psi:\ZZ\to\ZZ$ is an isomorphism, so $H_n(M)=0$, $M$ is nonorientable, and again $H_{n-1}(M)\cong H_{n-1}(M_1)\oplus H_{n-1}(M_2)$.
+
+If neither is orientable, $\psi=0$ and $0\to\ZZ\to H_{n-1}(M)\to H_{n-1}(M_1)\oplus H_{n-1}(M_2)\to0$ is exact. In this case $M$, $M_1$ and $M_2$ are all nonorientable, so Corollary 3.28 (p. 238) gives torsion $\ZZ_2$ to $H_{n-1}$ of each of them; hence $H_{n-1}(M)=\ZZ\oplus F\oplus\ZZ_2$ while $H_{n-1}(M_1)\oplus H_{n-1}(M_2)=F\oplus\ZZ_2\oplus\ZZ_2$ with $F$ free. One of the two $\ZZ_2$ summands is replaced by a $\ZZ$ summand, as claimed.
+
+Conversely, if $M_1\sharp M_2$ is orientable then $H_n(M)=\ZZ$ injects into $H_n(M_1)\oplus H_n(M_2)$, which forces both summands to be $\ZZ$, so both $M_i$ are orientable. Hence the connected sum is orientable exactly when both summands are, which is what the case distinction above uses.
+
+For $n=2$ the same three cases apply with the sequence read in reduced homology, where $\widetilde H_0(S^1)=0$ replaces the copy of $\ZZ$ that appears at $i=0$ in the unreduced sequence; the conclusions, and the torsion statement of Corollary 3.28, are unchanged.
+
+For (b), compute the Euler characteristic degree by degree, as the handout does. Since $H_i(M)\cong H_i(M_1)\oplus H_i(M_2)$ for $1\le i\le n-2$, and $H_n(M)$ is $\ZZ$ or $0$ according to the three cases, while $\rk H_{n-1}(M)=\rk H_{n-1}(M_1)+\rk H_{n-1}(M_2)$ in the first two cases and that rank plus one in the third,
 $$
-\begin{aligned}
-\chi(M)
-&=\chi(N_1)+\chi(N_2)-\chi(S^{n-1})\\
-&=\chi(M_1)+\chi(M_2)-2(-1)^n-(1+(-1)^{n-1})\\
-&=\chi(M_1)+\chi(M_2)-\chi(S^n).
-\end{aligned}
+\chi(M)=\chi(M_1)+\chi(M_2)+(-1)+(-1)^{n+1}=\chi(M_1)+\chi(M_2)-\bigl(1+(-1)^n\bigr)=\chi(M_1)+\chi(M_2)-\chi(S^n),
 $$
+because $(-1)+(-1)^{n+1}=-(1+(-1)^n)$ and $\chi(S^n)=1+(-1)^n$ (Corollary 2.14, p. 114).
+
+This is the solution printed in the Math 538 homework solutions, HMW 3, handwritten pages 2--4 (PDF pages 14, 15 and 16 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`), Hatcher 3.3 #6: the same identification $M_1\sharp M_2/S^{n-1}=M_1\vee M_2$, the same pair sequence, the same three cases with Corollary 3.28 for the torsion, and part (b) by the degree-by-degree count of ranks ending in the identity $(-1)+(-1)^{n+1}=-\chi(S^n)$. Two things that sheet leaves implicit are supplied here: the case $n=2$, where $H_{n-2}(S^{n-1})\ne0$ and the sequence must be read in reduced homology, and the good-pair justification of $H_i(M,S^{n-1})\cong H_i(M_1\vee M_2)$.
 :::
