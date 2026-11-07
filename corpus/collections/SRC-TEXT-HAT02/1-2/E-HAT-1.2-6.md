@@ -43,7 +43,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 Choose pairwise disjoint closed balls
 $$
@@ -112,6 +112,28 @@ Since the balls are disjoint, doing this for all $d\in D$ recovers all of $\RR^n
 
 ::: pf-step
 
+The space $Z$ is path connected, and $\RR^n$ carries the topology of the space obtained from $Z$ by attaching the $n$-cells $B_d$ along their boundary spheres $\partial B_d$.
+
+::: pf-proof
+
+Path connectedness: let $x,y\in Z$ and take a polygonal path in $\RR^n$ from $x$ to $y$. Its image is compact, so by the local finiteness proved in step [](#s1){.pf-ref} it meets only finitely many of the balls $B_d$. For each ball whose interior the path enters, it enters and leaves through the sphere $\partial B_d$, and
+$$
+\partial B_d\subseteq Z,
+$$
+because the closed balls are pairwise disjoint and lie outside $D$. Since $n-1\ge2$ the sphere $\partial B_d$ is path connected, so the part of the path in $\operatorname{int}(B_d)$ may be replaced by a path in $\partial B_d$ joining the same two points. Only finitely many such replacements are needed, and each replacement stays in $Z$, so $x$ and $y$ are joined in $Z$.
+
+Topology: $Z$ is closed, each $B_d$ is closed, the interiors of the balls are pairwise disjoint, and by step [](#s1){.pf-ref} the family is locally finite. Hence
+$$
+\{Z\}\cup\{B_d:d\in D\}
+$$
+is a locally finite closed cover of $\RR^n$, so $\RR^n$ carries the weak topology with respect to it. That is precisely the topology of the space obtained from $Z$ by attaching the $n$-cells $B_d$ along the attaching maps $\partial B_d\to Z$ of the construction on p. 49.
+
+:::
+
+:::
+
+::: pf-step
+
 The inclusion
 $$
 Z\hookrightarrow\RR^n
@@ -120,12 +142,11 @@ induces an isomorphism on fundamental groups.
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref}, $\RR^n$ is obtained from $Z$ by attaching cells all of the same dimension $n>2$.
-Proposition 1.26(b) (p. 50) attaches $n$-cells for a fixed $n>2$ without changing $\pi_1$; the attachment here is over the whole locally finite family, and a loop together with a homotopy of loops is compact, so by local finiteness of the balls it meets only finitely many of them and the finite-attachment case applies.
-Hence
+By step [](#s3){.pf-ref} and the preceding step, $\RR^n$ is obtained from the path connected space $Z$ by attaching a collection of $n$-cells with $n>2$. Proposition 1.26(b) (p. 50) applies to the whole collection at once and gives
 $$
-\pi_1(Z)\cong\pi_1(\RR^n)=0.
+\pi_1(Z)\cong\pi_1(\RR^n).
 $$
+The space $\RR^n$ is contractible, so both groups are trivial.
 
 :::
 
@@ -137,11 +158,11 @@ Therefore $Y$ is simply connected.
 
 ::: pf-proof
 
-By step [](#s2){.pf-ref},
+By step [](#s2){.pf-ref}, $Y$ deformation retracts onto $Z$, so
 $$
-\pi_1(Y)\cong\pi_1(Z)=0.
+\pi_1(Y)\cong\pi_1(Z)=0,
 $$
-Also $Y$ is path connected: any two points can be joined by a polygonal path, and since $D$ is discrete one can perturb finitely many segments slightly to avoid the finitely many points of $D$ met by a compact polygonal path.
+and $Y$ is path connected because $Z$ is.
 Thus $Y$ is path connected with trivial fundamental group, hence simply connected.
 
 :::
