@@ -70,8 +70,10 @@ audit:
     Hawaiian earring E, whose H_1 has a Q direct summand by Eda-Kawamura, Theorem 3.1,
     pp.307-310 (also stated as Frankland Theorem 2.1, p.3). Universal coefficients and
     Wiegold's nonzero Ext(Q,Z), pp.341-342, then give H^2(E; Z) != 0, so the natural map is not
-    an isomorphism. Replaces the deferred and H^1-only discussion with this complete published
-    argument; the cone-neighborhood proof in the first part is unchanged.
+    an isomorphism. Replaces the deferred and H^1-only discussion with an argument assembled from
+    separately published theorems, not with a published complete exercise solution. The #105
+    published-solution obligation stays open; the cone-neighborhood proof in the first part is
+    unchanged.
 - event: solution-reviewed
   by: claude
   date: 2026-11-07
@@ -81,6 +83,15 @@ audit:
     the Q direct summand, and that the cofinal relative intervals make all degree-two compactly
     supported groups vanish. Thus this is a counterexample already for n = 2 and G = Z, not a
     claim that H^1 fails or that no coefficient group could work.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Removed the unsupported assertion that inverse stereographic projection proves the absence
+    of a cone neighborhood. The final paragraph now uses the justified implication instead: the
+    degree-two contradiction proves that the cone-neighborhood hypothesis of the first part cannot
+    hold for Z x R. Eda-Kawamura and Wiegold remain supporting citations only; a complete published
+    solution to the exercise has not been located, so the #105 source obligation remains open.
 ---
 
 ::: {.problem}
@@ -161,7 +172,7 @@ Steps [](#compact-degree-two){.pf-ref} and [](#earring-degree-two){.pf-ref} give
 $$
 \boxed{H_c^2(\ZZ\times\RR;\ZZ)=0,\qquad H^2((\ZZ\times\RR)^+,\infty;\ZZ)\ne0,}
 $$
-so the evident map cannot be an isomorphism. Inverse stereographic projection already shows that $\infty$ has no cone neighborhood that could supply the contractible $U_K$ in step [](#cone-case){.pf-ref}. This counterexample does not depend on the previously rejected countability argument, and it makes no assertion that the degree-one map fails.
+so the evident map cannot be an isomorphism. Consequently the cone-neighborhood hypothesis of step [](#cone-case){.pf-ref} cannot hold here. This counterexample does not depend on the previously rejected countability argument, and it makes no assertion that the degree-one map fails.
 :::
 
 :::
