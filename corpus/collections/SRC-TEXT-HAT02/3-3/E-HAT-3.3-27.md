@@ -52,6 +52,26 @@ audit:
     Recomputed B(x',e)=B(x',f)=0 explicitly and checked the P-perp adjoint by extending any
     functional on P-perp by zero on P and using L=P plus P-perp. STYLE-08 conversion leaves the
     mathematics and the printed block unchanged.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Read Bourbaki, Algebre IX, section 5, no.1, theorem 1, printed pp.79-80, from the retained
+    scan. Compared its induction with the card: the adjoint image and largest invariant factor
+    produce the first binary summand, its orthogonal complement frees the next induction, and
+    unimodularity over Z makes each invariant factor a unit. Added this complete published
+    argument and its specialization to the exercise; James remains only a secondary pointer.
+    Also corrected the primitive-functional factorization test to exclude only |m|>1, since
+    m=+1 or -1 does not contradict primitivity.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Verified the Bourbaki citation and page range against the rendered pp.80-81 and the theorem
+    beginning on p.79; the source is section 5, not section 4. Rechecked that applying the inverse
+    adjoint to B-flat(e)=m lambda gives e=m times a lattice element, so exactly |m|>1 supplies the
+    contradiction. The source theorem is stronger than the exercise and its displayed invariant-
+    factor induction was compared with all three displayed steps, not merely cited by name.
 ---
 
 ::: {.problem}
@@ -66,7 +86,7 @@ B:L\times L\to\ZZ.
 $$
 Nonsingularity over $\ZZ$ means the adjoint map $L\to L^*$ is an isomorphism.
 
-The same binary decomposition appears in **D. G. James, *Witt's Theorem for Symplectic Modular Forms*, p. 410** (`tmp/sources/james-witt-symplectic-modular-forms-1967.pdf`), which also notes that a primitive vector may begin a symplectic basis.
+A complete published proof in greater generality is **N. Bourbaki, *Algèbre*, chapitre IX, §5, no. 1, théorème 1, printed pp. 79--80** (`tmp/sources/bourbaki-algebra-ch9-1959.pdf`). Its induction on rank uses the largest invariant factor of the image of the adjoint, splits off a two-dimensional orthogonal summand, and repeats on its orthogonal complement. For $A=\ZZ$ it gives $B(e_{2i-1},e_{2i})=\alpha_i$ with all other pairings zero. Nonsingularity makes the adjoint surjective, so the largest invariant factor at each stage is all of $\ZZ$; hence every $\alpha_i$ is $\pm1$, and changing the sign of every second basis vector where necessary gives the required blocks. **D. G. James, *Witt's Theorem for Symplectic Modular Forms*, p. 410** (`tmp/sources/james-witt-symplectic-modular-forms-1967.pdf`) states this integral decomposition and cites Bourbaki, but does not reproduce its induction. The following is the same splitting argument specialized to the unimodular integral case, with the primitive-functional step made explicit.
 
 ::: pf
 
@@ -74,7 +94,7 @@ The same binary decomposition appears in **D. G. James, *Witt's Theorem for Symp
 Every primitive $e\in L$ has a partner $f\in L$ with $B(e,f)=1$.
 
 ::: pf-proof
-Let $B^\flat:L\to L^*$ be the adjoint isomorphism. If $B^\flat(e)=m\lambda$ for some $\lambda\in L^*$ and nonzero integer $m$, then $e$ is $m$ times an element of $L$, contradicting primitivity of $e$. Thus $B^\flat(e)$ is primitive in $L^*$. A primitive functional is not an integer multiple of another functional with larger content, so its values include $1$: some $f\in L$ has $B(e,f)=1$.
+Let $B^\flat:L\to L^*$ be the adjoint isomorphism. If $B^\flat(e)=m\lambda$ for some $\lambda\in L^*$ and an integer $|m|>1$, then applying $(B^\flat)^{-1}$ shows that $e$ is $m$ times an element of $L$, contradicting primitivity of $e$. The cases $m=0$ and $m=\pm1$ are harmless. Thus $B^\flat(e)$ is primitive in $L^*$. A primitive functional is not an integer multiple of another functional with larger content, so its values include $1$: some $f\in L$ has $B(e,f)=1$.
 :::
 
 :::
