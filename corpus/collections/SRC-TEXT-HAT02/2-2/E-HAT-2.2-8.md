@@ -125,5 +125,7 @@ Choose a small circle $\abs{z-z_0}=\varepsilon$ on which $g$ has no zero, and le
 :::
 
 :::
+The rootwise computation is in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.2.8, printed pp. 65--66. A root of multiplicity $k$ has local form $(z-z_0)^k(c_0+O(z-z_0))$, with $c_0\ne0$ and local degree $k$. Using disjoint preimages of the target $0\in S^2$, the degree is then the sum of multiplicities, which is the polynomial degree. The leading coefficient also shows the extension at $\infty$ is continuous because $|f(z)|\to\infty$ as $|z|\to\infty$.
+
 
 :::
