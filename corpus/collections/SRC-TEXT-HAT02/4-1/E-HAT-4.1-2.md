@@ -49,4 +49,6 @@ $$
 \boxed{\varphi_*:\pi_n(X,x_0)\xrightarrow{\cong}\pi_n(Y,\varphi(x_0))}
 $$
 for every $n\ge1$. (For $n=0$, the same argument says that a homotopy equivalence induces a bijection on path components.)
+
+The case $n=1$ is Hatcher's Proposition 1.18 (p. 62): a homotopy equivalence induces an isomorphism on fundamental groups. For $n\ge2$ the argument above applies verbatim, since the change-of-basepoint isomorphisms $\beta_\eta$ are available in every degree and the homotopies $\psi\varphi\simeq\operatorname{id}_X$, $\varphi\psi\simeq\operatorname{id}_Y$ give the two one-sided inverses up to those basepoint changes. This is the split the DeMason solution set uses (M382C p. 89).
 :::
