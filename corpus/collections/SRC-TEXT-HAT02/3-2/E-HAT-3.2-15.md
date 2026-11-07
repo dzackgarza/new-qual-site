@@ -34,6 +34,11 @@ audit:
     computations are checked against the cellular differentials ($\RP^n$ depending on whether $2=0$
     in $F$); the three spaces of Exercises 12-14 are then read off from their ring descriptions,
     including $1+t^4+\cdots+t^{4n}+t^{4n+2}/(1-t^2)=(1+t^{4n+2})/(1-t^4)$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Statement matches Exercise 15 (p.230). Rechecked the multiplicativity from Theorem 3.15 p.216 over a field, and each series against the ring computations: S^n gives 1+t^n; RP^n gives 1+t+...+t^n for char F = 2 by Theorem 3.19 p.220 and 1 or 1+t^n according to the parity of n otherwise; RP^inf gives 1/(1-t) or 1; CP^n and CP^inf give 1+t^2+...+t^{2n} and 1/(1-t^2) by Example 3.12 p.213; the two spaces of Exercise 12 give 1+t^2/(1-t); CP^inf/CP^1 gives the even tail; and the two spaces of Exercise 14 give the stated series. Not covered: the series for the spaces of Exercise 14 are reported from that card.
 ---
 
 ::: {.problem}
@@ -43,7 +48,7 @@ Compute the Poincaré series for $S^n$, $\RP^n$, $\RP^\infty$, $\CP^n$, $\CP^\in
 :::
 
 ::: {.solution}
-Over the fixed field $F$, the Künneth theorem has no Tor term and gives
+Over the fixed field $F$, Theorem 3.15 (p.216) applies (a field has no Tor, and the cohomology of a space with finite Betti numbers is free in each degree) and gives
 $$
 H^n(X\times Y;F)\cong\bigoplus_{i+j=n}H^i(X;F)\otimes_F H^j(Y;F).
 $$
