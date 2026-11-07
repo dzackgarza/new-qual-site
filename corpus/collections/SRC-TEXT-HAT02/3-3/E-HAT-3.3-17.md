@@ -34,6 +34,15 @@ audit:
     Read the argument: an element of the limit that dies does so at a later stage, so exactness
     passes to the limit; then direct limits, being exact, commute with the kernels, images and
     cokernels in $0\to Z_n\to C_n\to B_{n-1}\to0$ and $0\to B_n\to Z_n\to H_n\to0$.
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Added the published corroboration: Steven V. Sam, Solutions to Algebraic Topology (2008),
+    SS3.3 Exercise 17, printed pp.15-16, proves the same statement by an explicit comparison map.
+    Read it against this card: Sam's surjectivity and injectivity steps pass to a later stage of the
+    directed system, which is the same device as the card's, and the two arguments agree. The
+    printed page is cited because the file's cover sheet shifts the page index by one.
 ---
 
 ::: {.problem}
@@ -76,4 +85,6 @@ and taking the quotient gives
 $$
 \boxed{H_n(\varinjlim C_\alpha)\cong\varinjlim H_n(C_\alpha).}
 $$
+
+Compare Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.3 Exercise 17, printed pp.15--16: the same statement, proved there by exhibiting the comparison map between $\varinjlim H_n(C_\alpha)$ and $H_n(\varinjlim C_\alpha)$ and showing it injective and surjective by passing to a later stage. The card's route instead uses exactness of filtered direct limits for the second half, which is the first half of the same exercise.
 :::
