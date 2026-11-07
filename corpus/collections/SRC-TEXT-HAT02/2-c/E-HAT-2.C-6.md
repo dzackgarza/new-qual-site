@@ -47,6 +47,15 @@ audit:
     even genus. Transcribed this as the card's map. The antipodal interchange of paired handles
     gives the zero diagonal on H_1, and the nonorientable quotient confirms degree-1 on H_2.
     Thus Lefschetz is 1-0-1=0, the complete published even-genus argument matching Hatcher p.184.
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Corrected the preceding coverage claim. Dugger supplies the centered antipodal involution,
+    its decomposition and quotient, but not a complete solution to Hatcher Exercise 2.C.6:
+    the exercise's paired-handle trace computation is assembled by instantiation. No retained
+    published exercise solution performs that computation. The mathematics and Dugger citation
+    remain, but the complete published-solution obligation remains open.
 ---
 ---
 
@@ -55,7 +64,7 @@ Do an even-genus analog of Example 2C.4 by replacing the central torus by a sphe
 :::
 
 ::: {.solution}
-Use the standard centered antipodal action $T_g^{\mathrm{anti}}$ published in **Daniel Dugger, *Involutions on Surfaces*, §2.7, printed pp. 11--12** (`tmp/sources/dugger-involutions-surfaces-2016.pdf`). His Proposition 2.8 gives $T_{2g}^{\mathrm{anti}}\cong S^2_a\mathbin{\#_\mathrm{eq}}T_g$, an antipodal sphere with paired handles, and Theorem 4.1(a), p. 18, identifies this as the free involution in even genus. This is exactly Hatcher's requested even-genus analog. Write $g=2m$, let $M_{2m}=T_{2m}^{\mathrm{anti}}$, and regard it as a central sphere with $m$ antipodal pairs of handles. Dugger also computes $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$, so the involution is orientation reversing.
+Use the standard centered antipodal action $T_g^{\mathrm{anti}}$ published in **Daniel Dugger, *Involutions on Surfaces*, §2.7, printed pp. 11--12** (`tmp/sources/dugger-involutions-surfaces-2016.pdf`). His Proposition 2.8 gives $T_{2g}^{\mathrm{anti}}\cong S^2_a\mathbin{\#_\mathrm{eq}}T_g$, an antipodal sphere with paired handles, and Theorem 4.1(a), p. 18, identifies this as the free involution in even genus. This is exactly Hatcher's requested even-genus analog. Write $g=2m$, let $M_{2m}=T_{2m}^{\mathrm{anti}}$, and regard it as a central sphere with $m$ antipodal pairs of handles. Dugger also computes $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$, so the involution is orientation reversing. The general construction supplies the checked model below, but not a complete published solution of Hatcher Exercise 2.C.6, whose source obligation remains open.
 
 ::: pf
 
