@@ -50,6 +50,21 @@ audit:
     the product, and nothing is asserted for families with infinite support, where the map is not
     surjective in general beneath the card's wedge-axiom step. The identification of the $f_i$ with
     reduced homology groups is not formalized.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Statement matches Exercise 2 of §2.3 as printed on p. 165. The candidate Q(X) = prod/oplus is
+    independent of n, vanishes for finite-dimensional X because the family has finite support,
+    and fails the wedge axiom on the wedge of one sphere in each positive degree, where every
+    H_i is Z; homotopy invariance and exactness hold, the latter by the snake lemma applied to
+    the quotient sequence for the three terms, products and direct sums of exact sequences being
+    exact. The exactness axiom is now cited to p. 160. The S^0 step was reworded: what the
+    dimension step needs is the finite-support surjectivity of oplus -> prod, which is what
+    proofs/cards/FamilyQuotient.lean certifies (quotient_subsingleton_of_finite_support); the
+    earlier sentence invoking an isomorphism of sum and product blurred that. What is not
+    covered: the identification of the f_i with reduced homology groups is not formalized, as the
+    README for that certificate says.
 ---
 
 ::: {.problem}
@@ -85,7 +100,7 @@ Exactness holds, with all connecting maps induced coordinatewise from ordinary h
 
 ::: pf-proof
 
-For a cofibration sequence $A\to X\to X/A$, ordinary reduced homology gives a long exact sequence. Reindexing turns the connecting map into a degree-preserving map between the products defining $Q$. Products of exact sequences of abelian groups are exact. Direct sums are exact as well. Applying the snake lemma to
+For a cofibration sequence $A\to X\to X/A$, ordinary reduced homology gives a long exact sequence, which is axiom (2) of p. 160. Reindexing turns the connecting map into a degree-preserving map between the products defining $Q$. Products of exact sequences of abelian groups are exact, and so are direct sums. Applying the snake lemma to
 $$
 0\to\bigoplus_i\widetilde H_i(-)\to\prod_i\widetilde H_i(-)\to Q(-)\to0
 $$
@@ -101,7 +116,7 @@ The dimension axiom holds.
 
 ::: pf-proof
 
-A point has every reduced homology group zero, so $Q(\mathrm{pt})=0$ and $\widetilde h_n(\mathrm{pt})=0$ for all $n$. The reduced homology of $S^0$ is zero in every degree except $0$, where it is $\ZZ$. There the direct sum already fills the product — every element of $\prod_i\widetilde H_i(S^0)$ has all but one coordinate zero — so the quotient $Q(S^0)=\prod_i\widetilde H_i(S^0)\big/\bigoplus_i\widetilde H_i(S^0)$ is trivial. The two groups are in fact isomorphic, the sum always injecting into the product, but the vanishing of the quotient is what the dimension axiom needs and is what `proofs/cards/FamilyQuotient.lean` certifies.
+A point has every reduced homology group zero, so $Q(\mathrm{pt})=0$ and $\widetilde h_n(\mathrm{pt})=0$ for all $n$. The reduced homology of $S^0$ is zero in every degree except $0$, where it is $\ZZ$. There the family has finite support, so the direct sum already fills the product and the quotient $Q(S^0)$ is trivial; this finite-support implication, that the canonical map $\bigoplus_i f_i\to\prod_i f_i$ is surjective when all but finitely many $f_i$ vanish, is what `proofs/cards/FamilyQuotient.lean` certifies, and it is exactly what the vanishing of the quotient needs. That file does not assert that the sum and the product are isomorphic for a family with infinite support, and there the quotient need not vanish — which is the failure exhibited in the next step.
 
 :::
 
