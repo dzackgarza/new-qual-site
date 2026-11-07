@@ -32,6 +32,15 @@ audit:
     degreewise and the alternating sum is linear; the remark's Mayer-Vietoris version for open
     covers with bounded finite-rank homology is correct, the alternating sum of dimensions in a
     bounded exact sequence being zero.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Statement matches Exercise 21 as printed on p. 157. The inclusion-exclusion over cells is
+    correct; it now cites p. 7 for subcomplexes and p. 146 for the definition of chi, and states
+    that the cells of X are partitioned into those of A only, of B only, and of A cap B.
+    What is not covered: the added remark on the open-cover Mayer-Vietoris version is a
+    variation and is not part of the exercise; it is left as stated.
 ---
 
 ::: {.problem}
@@ -39,13 +48,13 @@ If a finite CW complex $X$ is the union of subcomplexes $A$ and $B$, show that $
 :::
 
 ::: {.solution}
-Because $A$ and $B$ are subcomplexes of $X$, every open cell of $X=A\cup B$ lies in $A$ or in $B$, and it lies in both exactly when it is a cell of $A\cap B$.
+Because $A$ and $B$ are subcomplexes of $X$, every open cell of $X=A\cup B$ lies in $A$ or in $B$, and it lies in both exactly when it is a cell of $A\cap B$. Here a subcomplex is a closed union of cells (p. 7), $A\cap B$ is again one, and the cells of a cell complex are disjoint (p. 5), so the cells of $X$ are partitioned into those of $A$ only, of $B$ only, and of $A\cap B$.
 
 Let $c_i(Z)$ denote the number of $i$-cells of a finite CW complex $Z$. For each $i$, ordinary inclusion--exclusion for the finite sets of $i$-cells gives
 $$
 c_i(X)=c_i(A)+c_i(B)-c_i(A\cap B).
 $$
-Taking alternating sums,
+Taking alternating sums, using the definition of $\chi$ for a finite CW complex as the alternating sum of the numbers of its cells (p. 146),
 $$
 \begin{aligned}
 \chi(X)
@@ -56,6 +65,7 @@ $$
 &=\boxed{\chi(A)+\chi(B)-\chi(A\cap B)}.
 \end{aligned}
 $$
+The sums are finite because the three complexes have finitely many cells.
 :::
 
 ::: {.remark title="Variation"}
