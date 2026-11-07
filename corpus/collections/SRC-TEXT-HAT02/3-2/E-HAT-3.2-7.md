@@ -33,6 +33,11 @@ audit:
     Read both sides: in $\ZZ_2[\alpha]/(\alpha^4)$ the degree-one class has nonzero cube, while in
     the wedge $\RP^2\vee S^3$ the class $x$ comes from $\RP^2$, whose $H^3(\ZZ_2)$ vanishes, and
     products across summands vanish, so $x^3=0$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Statement matches Exercise 7 (p.229). Rechecked: H^*(RP^3;Z_2) = Z_2[alpha]/(alpha^4) by Theorem 3.19 p.220 so alpha^3 != 0, while in the wedge the degree-one class x is pulled back from RP^2, whose H^3(-;Z_2) vanishes by the same theorem, and products from distinct summands vanish. The vanishing is now proved by the relative cup product of p.209 rather than asserted. Not covered: nothing beyond mod 2 coefficients, which suffice.
 ---
 
 ::: {.problem}
@@ -40,7 +45,7 @@ Use cup products to show that $\RP^3$ is not homotopy equivalent to $\RP^2 \vee 
 :::
 
 ::: {.solution}
-With $\ZZ_2$ coefficients,
+With $\ZZ_2$ coefficients, Theorem 3.19 (p.220) gives
 $$
 H^*(\RP^3;\ZZ_2)
 \cong \ZZ_2[\alpha]/(\alpha^4),
@@ -48,7 +53,7 @@ H^*(\RP^3;\ZZ_2)
 $$
 so $\alpha^3\ne0$.
 
-For the wedge $Y=\RP^2\vee S^3$, reduced cohomology splits additively as the direct sum of the reduced cohomologies of the two wedge summands, and products between positive-dimensional classes coming from different summands vanish. The unique nonzero class $x\in H^1(Y;\ZZ_2)$ comes from $\RP^2$, so
+For the wedge $Y=\RP^2\vee S^3$, reduced cohomology is the direct sum of the reduced cohomologies of the two summands, and products of positive-dimensional classes from different summands vanish: such a class restricts to $0$ on the other summand, so it lifts to the relative group of the pair obtained by deleting that summand, and the relative cup product of p.209 lands in the cohomology of the pair $(Y,Y)$. The unique nonzero class $x\in H^1(Y;\ZZ_2)$ comes from $\RP^2$, so
 $$
 x^3=0
 $$
