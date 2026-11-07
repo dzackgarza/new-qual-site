@@ -98,5 +98,7 @@ The retraction $X\vee Y\to Y$ collapsing $X$ supplies a section of the quotient-
 
 :::
 
-Iterating the binary isomorphism gives the wedge axiom for every finite wedge.
+Iterating the binary isomorphism gives the wedge axiom for every finite wedge.The retraction splitting and induction are in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.3.4, printed pp. 83--84. The collapsing map is a retraction of the wedge onto a summand, which splits the pair sequence, and the other collapsing retraction supplies an inverse. Thus a binary wedge splits, and induction gives the axiom for every finite wedge.
+
+
 :::
