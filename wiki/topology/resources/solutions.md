@@ -48,8 +48,9 @@ sheet reads the pair sequence only for $n\ge3$, where $H_{n-2}(S^{n-1})=0$.
 inferred author:
 
 - [`solution3.pdf`](https://math.stanford.edu/~ralph/math215c/solution3.pdf): Hatcher §3.3 Ex. 9 and 10, p. 1; Ex. 11, pp. 1–2.
-- [`solution4.pdf`](https://math.stanford.edu/~ralph/math215c/solution4.pdf): Hatcher §3.3 Ex. 21, p. 1 (including the $\mathbb Z	imes\mathbb R$
-  counterexample); Ex. 22, pp. 1–2 (relative Mayer–Vietoris); Ex. 24, p. 2.
+- [`solution4.pdf`](https://math.stanford.edu/~ralph/math215c/solution4.pdf): Hatcher §3.3 Ex. 21, p. 1 (its proposed
+  $\mathbb Z	imes\mathbb R$ counterexample is **not** accepted: it gives an injection on Hom groups, not an uncountability argument);
+  Ex. 22, pp. 1–2 (relative Mayer–Vietoris); Ex. 24, p. 2.
 - [`solution2.pdf`](https://math.stanford.edu/~ralph/math215c/solution2.pdf): Hatcher §3.B Ex. 1, pp. 3–4 (whose integral and mod-2 homology
   computations are used here, but which explicitly skips cohomology); Ex. 3, p. 5 (the cellular Tor example and its non-natural splitting).
 
@@ -84,3 +85,11 @@ It has **no §3.A, §3.B or §3.E at all**, and within §3.3 and §3.C only the 
 Hatcher's chapter-3 sections other than the few above there is no published solution in the checkout,
 and a source still to be acquired. Coverage of the Riemannian Hunger set listed above stops at
 §2.1, so it does not help for chapter 3 either.
+
+
+For the algebraic correction on §3.3 Ex. 21, use **Martin Frankland, *Cohomology of the Hawaiian
+Earring* (2017)**, `tmp/sources/frankland-hawaiian-earring-2017.pdf` ([PDF](https://uregina.ca/~franklam/Frankland_HawaiianEarring_20170222.pdf)).
+Theorem 1.2 (p. 2) is Specker's theorem: $\operatorname{Hom}(\prod_{\mathbb N}\mathbb Z,\mathbb Z)$ is the countable
+free group on the coordinate projections. Theorem 1.3 (p. 2) gives $H^1(E;\mathbb Z)\congigoplus_{\mathbb N}\mathbb Z$,
+and Theorem 1.4 (p. 3) the induced dual isomorphism. The cardinality argument cannot answer the
+bracketed one-point-compactification question either way.
