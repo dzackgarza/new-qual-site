@@ -32,6 +32,20 @@ audit:
     $L_{n+1}\to K_n$; Smith normal form splits each into $\ZZ\xrightarrow{m}\ZZ$ and one-term $\ZZ$
     summands; and tensoring with $G$ gives $G/mG$ in the lower degree and $\ker(m:G\to G)$ in the
     upper, which is the stated decomposition of $H_n(X;G)$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Statement matches Exercise 43 (a), (b), (c) as printed on p. 159, the three bullets included.
+    Checked the splitting: K_n = ker partial_n, C_n = K_n + L_n with L_n mapping isomorphically to
+    im partial_n, and the complex is the direct sum of the pieces L_{n+1} -> K_n; the diagonal form
+    of the map between finitely generated free groups gives Z -> Z with entry m and one-term Z
+    pieces; and after tensoring, a piece in degrees n+1, n gives G/mG in degree n and ker(m) in
+    degree n+1. Additions: the splitting is cited to the remark after the Splitting Lemma p.148,
+    the diagonal form is tied to the echelon reduction named in the printed hint, and the two
+    facts needed for (c) are stated — C_*(X) tensor G computes H_*(X;G) by the coefficient form of
+    Theorem 2.35 p.139 as in Example 2.50 p.154, and tensor and homology preserve the direct sum
+    decomposition. What is not covered: no certificate.
 ---
 
 ::: {.problem}
@@ -73,7 +87,7 @@ splits.
 
 ::: pf-proof
 
-The subgroup $\operatorname{im}\partial_n$ of the free abelian group $C_{n-1}$ is free abelian. A short exact sequence with free quotient splits, so choose a complement $L_n\subset C_n$ such that
+The subgroup $\operatorname{im}\partial_n$ of the free abelian group $C_{n-1}$ is free abelian, as a subgroup of a free abelian group. A short exact sequence with free quotient splits, by the remark following the Splitting Lemma on p. 148, so choose a complement $L_n\subset C_n$ such that
 $$
 C_n=K_n\oplus L_n.
 $$
@@ -126,13 +140,13 @@ $$
 
 ::: pf-proof
 
-The groups $L_{n+1}$ and $K_n$ are finitely generated free abelian. Smith normal form gives bases in which the injective map $L_{n+1}\to K_n$ is diagonal with nonzero diagonal entries $m_1,\dots,m_r$. Each diagonal entry yields a two-term summand
+The groups $L_{n+1}$ and $K_n$ are finitely generated free abelian, so the matrix of the injective map $L_{n+1}\to K_n$ with respect to some bases is diagonal with nonzero diagonal entries $m_1,\dots,m_r$; this is the reduction to echelon form by row and column operations named in the printed hint. Each diagonal entry yields a two-term summand
 $$
 \ZZ\xrightarrow{m_j}\ZZ,
 $$
-while any unused basis vectors of $K_n$ yield one-term summands $\ZZ$.
+while the basis vectors of $K_n$ not hit by the map yield one-term summands $\ZZ$ in degree $n$.
 
-Now let $X$ be a CW complex with finitely many cells in each dimension and tensor its cellular chain complex with an abelian group $G$.
+Now let $X$ be a CW complex with finitely many cells in each dimension, so that each cellular chain group is a finitely generated free abelian group, and tensor its cellular chain complex with an abelian group $G$. The complex $C_*^{CW}(X)\otimes G$ computes $H_*(X;G)$, which is the coefficient form of Theorem 2.35 (p. 139) used in Example 2.50 (p. 154). Since the tensor product distributes over direct sums, this complex is the direct sum of the tensor products of the two-term pieces found above, and the homology of a direct sum of chain complexes is the direct sum of their homologies.
 
 :::
 
@@ -192,7 +206,7 @@ is the direct sum of:
 
 ::: pf-proof
 
-A torsion summand $\ZZ_m$ in integral homology arises as the cokernel of one of the multiplication-by-$m$ two-term pieces. Apply steps [](#s4){.pf-ref} and [](#s5){.pf-ref} and collect all direct summands contributing in degree $n$.
+A torsion summand $\ZZ_m$ in integral homology arises as the cokernel of one of the multiplication-by-$m$ two-term pieces, by part (b); a free summand as a one-term piece. Apply steps [](#s4){.pf-ref} and [](#s5){.pf-ref} and collect all direct summands contributing in degree $n$. A summand $\ZZ_m$ of $H_n(X)$ is the cokernel of a piece with lower degree $n$, contributing $G/mG$ to $H_n(X;G)$; a summand $\ZZ_m$ of $H_{n-1}(X)$ is the cokernel of a piece with lower degree $n-1$, whose upper term lies in degree $n$ and contributes $\ker(m:G\to G)$.
 
 :::
 
