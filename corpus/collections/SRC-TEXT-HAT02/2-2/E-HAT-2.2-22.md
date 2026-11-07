@@ -82,5 +82,7 @@ $$
 &=\boxed{n\chi(X)}.
 \end{aligned}
 $$
-The sums are finite because $X$ has finitely many cells.
+The sums are finite because $X$ has finitely many cells.The covering-space Euler count agrees with Sam's §2.2 Exercise 22, printed p. 12: each open cell has exactly $n$ distinct lifted open cells; hence each $c_k(\widetilde X)=n c_k(X)$ and $\chi(\widetilde X)=n\chi(X)$. The present card also justifies existence of the lifted CW structure by Propositions 1.30 and 1.33 of Hatcher, pp. 60--61.
+
+
 :::
