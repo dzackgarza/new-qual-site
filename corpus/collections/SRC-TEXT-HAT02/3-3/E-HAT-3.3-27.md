@@ -94,7 +94,7 @@ A complete published proof in greater generality is **N. Bourbaki, *Algèbre*, c
 Every primitive $e\in L$ has a partner $f\in L$ with $B(e,f)=1$.
 
 ::: pf-proof
-Let $B^\flat:L\to L^*$ be the adjoint isomorphism. If $B^\flat(e)=m\lambda$ for some $\lambda\in L^*$ and an integer $|m|>1$, then applying $(B^\flat)^{-1}$ shows that $e$ is $m$ times an element of $L$, contradicting primitivity of $e$. The cases $m=0$ and $m=\pm1$ are harmless. Thus $B^\flat(e)$ is primitive in $L^*$. A primitive functional is not an integer multiple of another functional with larger content, so its values include $1$: some $f\in L$ has $B(e,f)=1$.
+Let $B^\flat:L\to L^*$ be the adjoint isomorphism. If $B^\flat(e)=m\lambda$ for some $\lambda\in L^*$ and an integer $\abs{m}>1$, then applying $(B^\flat)^{-1}$ shows that $e$ is $m$ times an element of $L$, contradicting primitivity of $e$. The cases $m=0$ and $m=\pm1$ are harmless. Thus $B^\flat(e)$ is primitive in $L^*$. A primitive functional is not an integer multiple of another functional with larger content, so its values include $1$: some $f\in L$ has $B(e,f)=1$.
 :::
 
 :::
