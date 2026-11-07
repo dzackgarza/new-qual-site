@@ -79,6 +79,18 @@ audit:
     source-backed proof under the current source requirement. Needed is a published solution set
     with precise page coverage, not another argument derived from Hatcher's statement or theory.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Source now supplied and used: Stanford Math 215C Spring 2009, Solution Set 4, Hatcher 3.3.22,
+    printed pp.1-2, relative Mayer-Vietoris and cofinal compact products. The side pairs have zero
+    cohomology from explicit projection maps and slice homotopies, and the intersection is (X,X-K).
+    Taking N=1 gives the source's fixed (-1,1) overlap; writing A and B with N in their endpoints
+    shows precisely why its retractions respect C and D for the whole cofinal family, rather than
+    leaving the tangent-bottom components implicit. All claims from the earlier invalid interval-
+    cycle and free-cochain argument remain withdrawn.
+
 ---
 
 ::: {.problem}
@@ -86,7 +98,43 @@ Show that $H_c^n(X \times \RR; G) \approx H_c^{n-1}(X; G)$ for all $n$.
 :::
 
 ::: {.solution}
-Let $K\subset X$ be compact and $I=[-a,a]\subset\RR$ with $a>0$. The sets $K\times I$ are cofinal among compact subsets of $X\times\RR$: the projections of any compact subset are compact and lie in such a product. **Published solution required; the proof is deferred.** The retained solution sets contain no solution to Hatcher §3.3 Exercise 22: neither Sam's §3.3 selection nor the Math 538 sheets includes it. Consequently this compact-support computation has no accepted source-backed proof in the corpus.
+For $K\subset X$ compact and an integer $N\ge1$, put
+$$
+I_N=[-N,N],\qquad A=X\times(-N,\infty),\qquad B=X\times(-\infty,N),
+$$
+and
+$$
+C=A\cap((X\times\RR)-(K\times I_N)),\qquad
+D=B\cap((X\times\RR)-(K\times I_N)).
+$$
+Then $A\cup B=X\times\RR$, $C\cup D=(X\times\RR)-(K\times I_N)$, and
+$$
+A\cap B=X\times(-N,N),\qquad C\cap D=(X-K)\times(-N,N).
+$$
+Taking $N=1$ gives Stanford's fixed overlap $(-1,1)$, so the intersection is the intended copy of $(X,X-K)$.
 
-The argument formerly kept here is withdrawn rather than patched by another derivation. It used $I=[-a,a]$, but $\pm a\notin\mathbb R-I$, so $e:(I,\partial I)\to(\mathbb R,\mathbb R-I)$ was not a map of pairs; $e$ was not a relative cycle and $[a]-[-a]$ was not a class in $H_0(\mathbb R-I)$. The previously displayed product map and the claimed $\operatorname{Hom}$ comparison therefore did not deliver the degree shift. Needed source: a published solution set covering §3.3 Exercise 22, with the set and printed page cited.
+The pair $(A,C)$ has zero cohomology because it is homotopy equivalent to $(X,X)$. Projection $A\to X$ and inclusion $g:X\to A$ as the slice $\{N+1\}$ give maps of pairs $(A,C)\to(X,X)$ and $(X,X)\to(A,C)$: $g(X)\subset C$ because it lies outside $I_N$. The composite in one direction is the identity on $X$, and in the other is homotopic to the identity through straight-line homotopies in the $t$-coordinate. Along such a homotopy, points with $x\notin K$ remain in $C$; points with $x\in K$ and $(x,t)\in C$ have $t>N$ and remain outside $I_N$ as they move to $N+1$. Thus it is a homotopy of pairs. The same argument for $(B,D)$, using the slice $\{-N-1\}$, shows it too is homotopy equivalent to $(X,X)$.
+
+Since $C\cap D=(X-K)\times(-N,N)$, projection identifies the pair $(A\cap B,C\cap D)$ with $(X,X-K)$ up to homotopy. Applying relative Mayer--Vietoris with coefficients $G$ therefore gives
+$$
+\begin{aligned}
+\cdots&\to H^n(X\times\RR,(X\times\RR)-(K\times I_N);G)\\
+&\to H^n(A,C;G)\oplus H^n(B,D;G)=0\\
+&\to H^{n-1}(X,X-K;G)\\
+&\to H^{n+1}(X\times\RR,(X\times\RR)-(K\times I_N);G)\to\cdots .
+\end{aligned}
+$$
+Consequently
+$$
+H^n(X\times\RR,(X\times\RR)-(K\times I_N);G)
+\cong H^{n-1}(X,X-K;G).
+$$
+These identifications are compatible with inclusions in $K$ and $N$, by naturality of the relative Mayer--Vietoris sequence and of the pair homotopies above.
+
+The compact sets $K\times I_N$ with $K$ compact and $N\ge1$ are cofinal among compact subsets of $X\times\RR$: any compact $L$ has compact projections $K\subset X$ and $J\subset\RR$, and $J$ is contained in some $I_N$. Taking the filtered direct limit therefore yields
+$$
+H_c^n(X\times\RR;G)\cong H_c^{n-1}(X;G).
+$$
+
+This is the argument in **Stanford Math 215C, Solution Set 4**, Hatcher 3.3.22, printed pp. 1--2, [`solution4.pdf`](https://math.stanford.edu/~ralph/math215c/solution4.pdf) on [Ralph Cohen's Math 215C page](https://math.stanford.edu/~ralph/math215c/), held at `tmp/sources/stanford-math215c-spring2009-solution4.pdf`: relative Mayer--Vietoris, vanishing cohomology of the two side pairs, and cofinal compact products. The explicit slice-and-homotopy checks above supply the exact pairs for that argument; the slices used to define them are listed here rather than assumed.
 :::
