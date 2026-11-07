@@ -34,6 +34,11 @@ audit:
     because $C_n$ is free and so torsion-free; and $\operatorname{Hom}(\QQ,C_n)=0$ because a free
     abelian group has no element divisible by every integer. Hence $h_n(X;\ZZ)=H_n(X)$ and
     $h_n(X;\ZZ_m)=h_n(X;\QQ)=0$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Statement matches Exercise 4 (p.205). Rechecked the three answers: Hom(Z,C_n) = C_n with differential partial; Hom(Z_m,C_n) = 0 and Hom(Q,C_n) = 0 because C_n is free on the singular n-simplices (p.108), hence torsion-free and reduced; so h_n(X;Z) = H_n(X;Z) while h_n(X;Z_m) = h_n(X;Q) = 0. Added the p.108 and p.191 citations. Not covered: nothing beyond the three coefficient groups the exercise names.
 ---
 
 ::: {.problem}
@@ -42,7 +47,7 @@ More specifically, what are the groups $h_n(X; G)$ when $G = \ZZ$, $\ZZ_m$, and 
 :::
 
 ::: {.solution}
-For a space $X$, each singular chain group $C_n(X)$ is a free abelian group. We compute
+Hatcher p.108: $C_n(X)$ is the free abelian group with basis the singular $n$-simplices of $X$, so it is torsion-free and has no nonzero element divisible by every integer, the two facts the last two cases use. We compute
 $$
 h_n(X;G)=H_n\bigl(\operatorname{Hom}(G,C_\bullet(X))\bigr)
 $$
@@ -63,7 +68,7 @@ Evaluation at $1$ gives a natural isomorphism
 $$
 \operatorname{Hom}(\ZZ,C_n(X))\cong C_n(X)
 $$
-for every $n$, and under this identification the induced differential is the ordinary singular boundary. Thus the two chain complexes are naturally isomorphic.
+for every $n$, and under this identification the differential $\varphi \mapsto \partial \circ \varphi$, which is the dual of p.191 with the two entries interchanged, becomes $\partial$ itself applied to $\varphi(1)$. Thus the two chain complexes are naturally isomorphic and $h_n(X;\ZZ) = H_n(X;\ZZ)$, the singular homology of p.108.
 
 :::
 
