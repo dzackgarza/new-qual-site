@@ -31,6 +31,11 @@ audit:
     Read the cover: $A=X\cup V$ and $B=U\cup Y$ have interiors covering $X\vee Y$, retract to $X$
     and $Y$, and meet in $U\cup V$, which retracts to the common basepoint and is contractible; the
     reduced Mayer-Vietoris sequence then makes the middle map an isomorphism.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Statement matches Exercise 31 as printed on p. 158. The cover A = X union V, B = U union Y with intersection U union V is right and the reduced Mayer-Vietoris argument is correct; it now cites the reduced sequence of pp. 149-150 and Corollary 2.11 p. 111 for the homotopy equivalences A = X, B = Y and U union V contractible. What is not covered: no certificate.
 ---
 
 ::: {.problem}
@@ -67,7 +72,7 @@ $$
 
 ::: pf-proof
 
-Retract $V$ to the wedge point while fixing $X$, and similarly retract $U$ while fixing $Y$. Since both $U$ and $V$ retract to the common basepoint, their wedge $U\cup V$ is contractible.
+Retract $V$ to the wedge point while fixing $X$, and similarly retract $U$ while fixing $Y$. Since both $U$ and $V$ retract to the common basepoint, their union $U\cup V$ is contractible. Each of these inclusions is a homotopy equivalence, and so induces isomorphisms on homology in every degree by Corollary 2.11 (p. 111).
 
 :::
 
@@ -83,7 +88,7 @@ for every $n$.
 
 ::: pf-proof
 
-The reduced Mayer--Vietoris sequence contains
+The reduced Mayer--Vietoris sequence, the reduced form of the sequence in the subsection beginning on p. 149 and set out on p. 150, contains
 $$
 \widetilde H_n(A\cap B)
 \longrightarrow
@@ -93,7 +98,7 @@ $$
 \longrightarrow
 \widetilde H_{n-1}(A\cap B).
 $$
-By step [](#s1){.pf-ref} both outer groups vanish, so the middle arrow is an isomorphism. Replacing $A$ and $B$ by their deformation retracts yields
+By step [](#s1){.pf-ref} both outer groups vanish, so the middle arrow is an isomorphism. Replacing $A$ and $B$ by their deformation retracts, which does not change reduced homology, yields
 $$
 \boxed{
 \widetilde H_n(X\vee Y)\cong
