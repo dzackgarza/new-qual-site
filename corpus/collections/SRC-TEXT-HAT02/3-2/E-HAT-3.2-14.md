@@ -33,6 +33,11 @@ audit:
     The quaternionic case is the same with $\CP^{2k}$ in place of $\RP^{2k}$ and the cells of
     $\CP^\infty$ attached in dimensions at least $4n+2$, where all cells are even and all
     coboundaries vanish.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Read against Exercise 14 (p.230) and Theorem 3.19 p.220, Theorem 3.5 p.203, Theorem 3.2 p.195. Verified: the homeomorphism RP^{2k}/RP^{2k-1} -> CP^k/CP^{k-1} and its quaternionic analogue; q^* x = gamma on H^2 with the good pair (RP^2,RP^1); gamma^k nonzero because the mod 2 reduction is injective on Z_2, whose kernel is the image of multiplication by 2, zero there; the cells of X and the two coboundary computations giving H^m(X;Z) = Z for even m <= 2n, Z_2 for even m >= 2n+2 and 0 for odd m, hence Z[alpha]/(2 alpha^(n+1)); and the mod 2 ring Z_2[alpha,beta]/(beta^2 - alpha^(2n+1)) with the basis {alpha^k, beta alpha^l} matched degree by degree. DEFECT FOUND AND NOT REPAIRED: the last step says Y is HP^n with the cells of CP^inf of dimension at least 4n+2 attached and concludes H^m(Y;R) = R for m in {0,4,...,4n} and even m >= 4n+2, with ring R[mu,nu]/(nu^2 - mu^(2n+1)), |mu| = 4, |nu| = 4n+2. The cells of CP^inf outside CP^(2n) are those of dimension at least 2n+1, not 4n+2, and their boundaries vanish just as well, so the correct additive structure is H^m(Y;R) = R for m in {0,4,...,4n} and every m >= 2n+1, and 0 otherwise. The presented ring has no class in degree 2n+1, so it is not isomorphic to H^*(Y;R); for n = 1, Y has a 3-cell and H^3(Y;Z) = Z while the card's ring vanishes there. The quaternionic step therefore needs redoing, and with it the sentence asserting H^*(Y;Z_2) = Z_2[mu,nu]/(nu^2 - mu^(2n+1)).
 ---
 
 ::: {.problem}
