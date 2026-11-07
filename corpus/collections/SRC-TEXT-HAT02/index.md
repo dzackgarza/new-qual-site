@@ -357,6 +357,15 @@ source:
       comment: 2.2.32
     - id: E-HAT-2.2-33
       comment: 2.2.33
+    # Printed entry 2.2.34 is deliberately not carded. Hatcher, printed p. 158,
+    # prints "[Deleted — see the errata for comments.]" in its place, and the
+    # errata entry "§2.2, page 158, Exercise 34" (AT-errata.pdf, sha256
+    # 8ba129ae482e615b0ce36af20de39a7eda548bf499140144cbe48d79b5d3b77d) records
+    # that the author deleted the problem: its original form asked to derive the
+    # long exact sequence of a pair from Mayer–Vietoris, which he judged to
+    # require circular reasoning. The cards listed here therefore cover every
+    # printed exercise of §2.2, and the count is 42 cards for 42 printed
+    # exercises, not 42 of 43.
     - id: E-HAT-2.2-35
       comment: 2.2.35
     - id: E-HAT-2.2-36

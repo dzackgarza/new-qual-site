@@ -92,6 +92,32 @@ audit:
     degree-two contradiction proves that the cone-neighborhood hypothesis of the first part cannot
     hold for Z x R. Eda-Kawamura and Wiegold remain supporting citations only; a complete published
     solution to the exercise has not been located, so the #105 source obligation remains open.
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Located and checked the complete published solution of the first part: Stanford Math 215C,
+    Solution Set 4, Hatcher 3.3.21, printed p. 1, served at
+    http://math.stanford.edu/~ralph/math215c/solution4.pdf and held as
+    tmp/sources/stanford-math215c-spring2009-solution4.pdf, 59584 bytes, sha256
+    b4c348109162ed7e97309e15f1b153efa363cd0338800e8d251f64f335eef470, the local size matching the
+    served content length. Checked its steps: excision of the point infinity out of the open set
+    X^+ - K is legitimate because the closure of {infinity} is {infinity}, contained in that open
+    set, and gives H^n(X^+, X^+ - K) = H^n(X, X - K); the exact sequence of the pair (X^+, U_K) is
+    reduced and legitimate as both entries are nonempty; for K the complement of a cone-shaped
+    neighbourhood U_K is a cone, hence contractible with vanishing reduced cohomology, which is
+    what makes the restriction H^n(X^+, U_K) -> H^n(X^+, infinity) an isomorphism; the K's of this
+    form are cofinal among compact subsets since cone-shaped neighbourhoods can be shrunk inside any
+    neighbourhood of infinity, and the isomorphisms are compatible with inclusions, so they pass to
+    the direct limit. That is the argument already in steps excision-limit and cone-case, so this
+    citation confirms rather than replaces them, and it discharges the published-solution
+    obligation for the first part. This supersedes the closing sentence of the previous event,
+    which said no complete published solution had been located. NOT used and explicitly rejected in
+    the card: the source's paragraph on Z x R, which infers uncountability of H^1 from a surjection
+    H_1 -> product of Z, whereas dualizing a surjection gives an injection and Hom(product Z, Z) is
+    the countable direct sum by Specker's theorem. The bracketed question therefore still rests on
+    the assembled degree-two counterexample from Eda-Kawamura and Wiegold, not on a published
+    complete exercise solution, and that narrower obligation stays open.
 ---
 
 ::: {.problem}
@@ -178,4 +204,8 @@ so the evident map cannot be an isomorphism. Consequently the cone-neighborhood 
 :::
 
 :::
+
+The first part is the complete published solution of **Stanford Math 215C, Solution Set 4, Hatcher 3.3.21, printed p. 1**, [`solution4.pdf`](http://math.stanford.edu/~ralph/math215c/solution4.pdf), held locally as `tmp/sources/stanford-math215c-spring2009-solution4.pdf` (59584 bytes, sha256 `b4c348109162ed7e97309e15f1b153efa363cd0338800e8d251f64f335eef470`, matching the served file). Its argument is the one transcribed in steps [](#excision-limit){.pf-ref} and [](#cone-case){.pf-ref}: for compact $K\subset X$ the point $\infty$ is excised, giving $H^n(X^+,X^+\setminus K;G)\cong H^n(X,X\setminus K;G)$; the exact sequence of the pair $(X^+,U_K)$ with $U_K=X^+\setminus K$ has $\widetilde H^m(U_K;G)=0$ for all $m$ when $K$ is the complement of a cone-shaped neighbourhood of $\infty$, so $H^n(X,X\setminus K;G)\cong\widetilde H^n(X^+;G)=H^n(X^+,\infty;G)$; these $K$ are cofinal among compact subsets because cone-shaped neighbourhoods can be shrunk inside any neighbourhood of $\infty$, and the isomorphism passes to the direct limit $H_c^n(X;G)$.
+
+The closing paragraph of that solution, on $X=\ZZ\times\RR$, is **not** used and must not be: it concludes that $H^1$ of the compactification is uncountable from a surjection $H_1\twoheadrightarrow\prod_\NN\ZZ$, whereas dualizing a surjection gives an injection, and $\operatorname{Hom}(\prod_\NN\ZZ,\ZZ)\cong\bigoplus_\NN\ZZ$ is countable by Specker's theorem. The bracketed question is answered above, in degree two with $G=\ZZ$, by the assembled counterexample.
 :::
