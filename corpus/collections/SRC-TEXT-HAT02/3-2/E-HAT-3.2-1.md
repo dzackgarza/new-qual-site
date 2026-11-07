@@ -35,6 +35,11 @@ audit:
     naturality turns $x_i\smile y_i=u_i$ into $a_i\smile b_j=\delta_{ij}u$; on the torus
     $x_i^2=y_i^2=0$, and products of classes on different summands vanish, which gives the
     remaining relations. Since $H^k(M_g)=0$ for $k>2$ these relations describe the whole ring.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Statement matches Exercise 1 (p.228). Rechecked the computation: q^* identifies the generators of H^1(T_i) with a_i,b_i and q^*(u_i) = u because r_i q has degree 1, so naturality of the cup product turns x_i y_i = u_i into a_i b_i = u; products from distinct summands vanish. The vanishing is now proved by the relative cup product of p.209 in the pairs (W,T_j) and (W,T_i) rather than asserted, and naturality is cited to Proposition 3.10 p.210. Not covered: the g = 0 case is stated separately, and no torus computation is redone, the exercise assuming it.
 ---
 
 ::: {.problem}
@@ -61,7 +66,7 @@ $$
 x_i\smile y_i=u_i,\qquad y_i\smile x_i=-u_i,
 \qquad x_i^2=y_i^2=0.
 $$
-Products of classes supported on distinct wedge summands vanish. Naturality of the cup product therefore gives
+Products of classes supported on distinct wedge summands vanish, and this is not an extra assumption: writing $W=\bigvee_iT_i$, a class pulled back from $T_i$ restricts to $0$ on $T_j$ for $j\ne i$, so by the exact sequence of the pair (p.200) it lifts to $H^*(W,T_j;R)$, and for $i\ne j$ the relative cup product of p.209 lands in $H^*(W,T_i\cup T_j;R)=H^*(W,W;R)=0$. Naturality of the cup product (Proposition 3.10, p.210) therefore gives
 $$
 \boxed{a_i\smile b_j=\delta_{ij}u,\qquad
 b_i\smile a_j=-\delta_{ij}u,}
