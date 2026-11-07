@@ -34,6 +34,16 @@ audit:
     $H_{2n+1}=\ZZ_m$, matching the Tor term; the same degree for $S^{n+1}\times M$ is $\ZZ_m$, and
     $f\times1$ carries the generator to $u\otimes b$, an isomorphism, while $f_*$ vanishes on
     reduced homology, which is what kills naturality of the splitting.
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Checked against the printed page image of Stanford Math 215C Solution Set 2, Hatcher 3.B.3,
+    printed p.5: f collapses the n-skeleton, the map of tensor chain complexes carries the displayed
+    relative cycle to u tensor b, H_{2n+1} is Z_m in both products, and the induced map is an
+    isomorphism. The set's final observation is that a natural splitting would factor that
+    automorphism of Z_m through zero, which is the same contradiction as this card's proof.
+
 ---
 
 ::: {.problem}
@@ -110,4 +120,5 @@ H_{2n+1}(S^{n+1}\times M).
 $$
 
 If the splitting of the Künneth short exact sequence were natural, the Tor summand in the source would map to the corresponding summands using only the induced maps on the homology of the factors. But $f_*$ is zero on reduced homology, so naturality would force the displayed map on the Tor contribution to be zero. It is in fact an isomorphism. This contradiction proves that the Künneth splitting cannot be natural.
+The computation and non-naturality conclusion are in **Stanford Math 215C, Solution Set 2**, Hatcher 3.B.3, printed p. 5, held at `tmp/sources/stanford-math215c-spring2009-solution2.pdf` ([course PDF](https://math.stanford.edu/~ralph/math215c/solution2.pdf)). Its cellular diagram has the same relative-cycle generator, obtains $H_{2n+1}\cong\ZZ_m$ for both product spaces, and shows that $(f\times1)_*$ is an isomorphism. Its naturality square then makes the source's Tor summand go to zero while $(f\times1)_*$ is an isomorphism — the conclusion proved here.
 :::
