@@ -61,7 +61,11 @@ $r_m$ and $r_n$ are not homotopic when $m\ne n$.
 ::: pf-proof
 
 The composite $r_n\circ j:S^1\to S^1$ is $z\mapsto z^n$, and $(r_n\circ j)_*$ is multiplication by $n$ on $\pi_1(S^1)=\ZZ$ (Theorem 1.7, p. 29).
-A homotopy $H:r_m\simeq r_n$ restricts to a homotopy from $r_m\circ j$ to $r_n\circ j$, so by Lemma 1.19 (p. 37) the induced homomorphisms satisfy $(r_n\circ j)_*=\beta_\gamma\circ(r_m\circ j)_*$ for the track $\gamma$ of the basepoint.
+A homotopy $H:r_m\simeq r_n$ restricts to a homotopy from $r_m\circ j$ to $r_n\circ j$, so by Lemma 1.19 (p. 37), which reads $\phi_{0*}=\beta_h\,\phi_{1*}$ for the track $h$ of the basepoint, the induced homomorphisms satisfy
+$$
+(r_m\circ j)_*=\beta_\gamma\circ(r_n\circ j)_*
+$$
+with $\phi_0=r_m$ and $\phi_1=r_n$, where $\gamma$ is the track of the basepoint.
 A basepoint-change map is conjugation (p. 28), and $\pi_1(S^1)$ is abelian, so $\beta_\gamma$ is the identity on $\ZZ$.
 Hence multiplication by $m$ equals multiplication by $n$, that is $m=n$.
 
