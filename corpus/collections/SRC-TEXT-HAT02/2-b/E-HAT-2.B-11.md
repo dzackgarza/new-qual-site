@@ -32,7 +32,6 @@ audit:
     B = X × RP^∞, since H_n(E) = H_n(X) and the connecting map shifts degree by one
     onto the kernel of the projection; inducting on n from H_0(X × RP^∞) = H_0(X)
     yields H_n(X × RP^∞;Z_2) ≅ ⊕_{i≤n} H_i(X;Z_2). No defect.
----
 - event: source-checked
   by: claude
   date: 2026-11-07
