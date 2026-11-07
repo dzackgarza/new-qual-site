@@ -14,6 +14,27 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Read Hatcher p.427: C_h=S^n\cup_h e^{2n} first with m=n, then 'When m>n'
+    the cohomology is Z in 0,n,2n and the generators x_h in H^n and y_h in
+    H^{2n} are obtained there, then specialized to m=2n-1. Thus the Hopf
+    invariant as defined has n>1 (2n-1>n), where deg h=0 gives the Z's. The
+    odd-n vanishing H=0 for odd n (p.427, x^2=-x^2) is within that n>1 domain,
+    not a definition for arbitrary degree-d S^1->S^1 maps, whose cones need not
+    have H^1=H^2=Z. The exercise is read with that n>1 domain.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    The composition proof is correct for its n>1 domain: C_{gf}->C_g (identity on
+    S^n, degree d on 2n-cell) and C_f->C_{gf} (degree d on S^n, degree 1 on
+    2n-cell) give the two pullback identities. No n=1 case is missing; the
+    previous claim that n>=2 omitted n=1 and was repairable by odd vanishing
+    misread the domain, since odd vanishing does not supply the missing H^n,
+    H^{2n}=Z. No change to the proof text is needed.
 ---
 
 ::: {.problem}
