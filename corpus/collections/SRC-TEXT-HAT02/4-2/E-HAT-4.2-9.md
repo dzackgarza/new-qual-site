@@ -53,7 +53,7 @@ f_*:H_i(X;\ZZ)\xrightarrow{\cong}H_i(Y;\ZZ)
 $$
 is an isomorphism for every $i$. The homology Whitehead theorem for simply-connected CW complexes then implies that $f$ is a homotopy equivalence.
 
-The simply-connected hypothesis is essential. Let $A$ be any acyclic, noncontractible CW complex (for example an acyclic $K(G,1)$ for a nontrivial acyclic group $G$), and take the constant map
+The simply-connected hypothesis is essential. Let $A$ be any acyclic, noncontractible CW complex (for example the 2-dimensional complex of Hatcher, Example 2.38, printed p.142, obtained from $S^1\vee S^1$ by attaching two cells by the words $a^5b^{-3}$ and $b^3(ab)^{-2}$, whose $d_2$ has determinant $1$ so that $\widetilde H_*(A)=0$ while $\pi_1(A)$ is the nontrivial group $\langle a,b\mid a^5=b^3=(ab)^2\rangle$ of order $120$), and take the constant map
 $$
 f:A\longrightarrow *.
 $$

@@ -50,7 +50,7 @@ r_*i_*=\operatorname{id}
 $$
 on every homotopy group, so $i_*$ would be injective.
 
-If $k\ge2$, covering-space invariance of higher homotopy groups gives
+If $k\ge2$, covering-space invariance of higher homotopy groups (Hatcher, Proposition 4.1, printed p.348) gives
 $$
 \pi_k(\RP^k)\cong\pi_k(S^k)\cong\ZZ,
 $$
