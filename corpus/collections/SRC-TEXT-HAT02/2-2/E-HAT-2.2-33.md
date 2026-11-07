@@ -43,6 +43,17 @@ audit:
     the intersection is contracted to the barycentre of the face I by a straight-line homotopy
     that stays in the boundary because some coordinate outside I is zero at every point of it.
     What is not covered: no certificate.
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    The induction and sharpness argument compare correctly with DeMason, M382C Full Credit HW
+    Problems (2021), Hatcher 2.2.33, printed pp.79-80. The cover Y∩A_n itself has n-1 open sets, so
+    induction at n-1 gives vanishing for Y and every Ai∩An for i>=n-2; reduced MV then gives
+    H~_i(X)=0 for i>=n-1. The source's face-neighborhood example on S^{n-2} is reproduced by the
+    explicit barycentric open sets in the card, whose proper intersections have trivial reduced
+    homology and whose full intersection is empty.
+
 ---
 
 ::: {.problem}
@@ -79,4 +90,6 @@ $$
 \widetilde H_{n-2}(X)\cong\ZZ,
 $$
 by Corollary 2.14 (p. 114), the boundary $\partial\Delta^{n-1}$ being homeomorphic to $S^{n-2}$. Thus the vanishing range cannot start at $n-2$. For $n=1$, the hypothesis itself says that the sole nonempty set is acyclic, and the conclusion $\widetilde H_i(X)=0$ for $i\ge0$ is then immediate.
+The induction and the acyclic open cover of $\partial\Delta^{n-1}$ appear in **Kenneth DeMason, *M382C Full Credit HW Problems* (4 April 2021)**, Hatcher 2.2.33, printed pp. 79--80, [`DeMason, Kenneth M382C HW Full Credit 20210404.pdf`](https://math.mcmaster.ca/~demasonk/files/exercises/DeMason%2C%20Kenneth%20M382C%20HW%20Full%20Credit%2020210404.pdf), held locally as `tmp/sources/demason-m382c-hatcher-20210404.pdf`. The card refines his small open face-neighborhoods into the explicit barycentric sets $\{\lambda_j>0\}$, whose intersections have exactly the contractible form needed for the induction.
+
 :::
