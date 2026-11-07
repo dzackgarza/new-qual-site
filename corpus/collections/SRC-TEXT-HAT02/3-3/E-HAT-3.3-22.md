@@ -100,10 +100,24 @@ audit:
     only the subsequent comparison H^n(union) = H^{n-1}(X,X-K) has the degree shift. Also the
     compatibility assertion is supplied explicitly: for N<=M and K contained in L, the maps of
     triples go from the (L,M) object to the (K,N) object, and relative MV is natural under them.
-    The fixed-cover assertion is nevertheless still not available verbatim for arbitrary N: for X
-    a singleton and N=2, C=(-1,-2) union (2,infinity) has two interval components and H_1(A,C) is Z,
-    not zero. The endpoint-parameterized cover is what makes the vanishing and naturality claims
-    simultaneously correct.
+    The earlier special case of H^n(union) = H^{n-1}(X,X-K) has now been corrected explicitly.
+    The fixed Stanford cover works for every N>=1: for any x in K, the points of C have t>N, and
+    no lower interval (-1,-N) exists, since the interval bounds already force -N<=-1. The alleged
+    singleton counterexample involving (-1,-2) was an error on my part: that interval is empty.
+    Its assertion that the fixed-cover side pair can be nonzero is withdrawn.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Degree and conditional-structure repairs. In the isolated comparison, the source's relative MV
+    sequence gives H^{n-1}(A cap B,C cap D) is isomorphic to H^n of the union, not H^n of the
+    intersection. The sequence itself retains H^n of the intersection, with connecting degree n+1.
+    The fixed Stanford cover is restored, and the previously alleged counterexample is withdrawn:
+    the interval written "(-1,-2)" is empty by the usual convention, and in general points in A
+    with t<-N cannot exist when N>=1. For X a point the nonzero-pair assertion was therefore false.
+    Under K contained in L and N<=M, the source's fixed side sets include C_{L,M} in C_{K,N}, with
+    B symmetric, and the intersection inclusions make the resulting relative MV diagrams commute.
 
 ---
 
@@ -112,49 +126,63 @@ Show that $H_c^n(X \times \RR; G) \approx H_c^{n-1}(X; G)$ for all $n$.
 :::
 
 ::: {.solution}
-For $K\subset X$ compact and an integer $N\ge1$, put
+For each compact $K\subset X$ and integer $N\ge1$, set $I_N=[-N,N]$, and use Stanford's fixed cover
 $$
-I_N=[-N,N],\qquad A=X\times(-N,\infty),\qquad B=X\times(-\infty,N),
+A=X\times(-1,\infty),\qquad B=X\times(-\infty,1).
 $$
-and
+Define
 $$
 C=A\cap((X\times\RR)-(K\times I_N)),\qquad
 D=B\cap((X\times\RR)-(K\times I_N)).
 $$
-Then $A\cup B=X\times\RR$, $C\cup D=(X\times\RR)-(K\times I_N)$, and
+Then $A\cup B=X\times\RR$, $C\cup D=(X\times\RR)-(K\times I_N)$, $A\cap B=X\times(-1,1)$ and, because $N\ge1$ gives $(-1,1)\subset I_N$,
 $$
-A\cap B=X\times(-N,N),\qquad C\cap D=(X-K)\times(-N,N).
+C\cap D=(X-K)\times(-1,1).
 $$
-Taking $N=1$ gives Stanford's fixed overlap $(-1,1)$, so the intersection is the intended copy of $(X,X-K)$.
 
-The pair $(A,C)$ has zero cohomology because it is homotopy equivalent to $(X,X)$. Projection $A\to X$ and inclusion $g:X\to A$ as the slice $\{N+1\}$ give maps of pairs $(A,C)\to(X,X)$ and $(X,X)\to(A,C)$: $g(X)\subset C$ because it lies outside $I_N$. The composite in one direction is the identity on $X$, and in the other is homotopic to the identity through straight-line homotopies in the $t$-coordinate. Along such a homotopy, points with $x\notin K$ remain in $C$; points with $x\in K$ and $(x,t)\in C$ have $t>N$ and remain outside $I_N$ as they move to $N+1$. Thus it is a homotopy of pairs. The same argument for $(B,D)$, using the slice $\{-N-1\}$, shows it too is homotopy equivalent to $(X,X)$.
+I prove that $(A,C)$ has zero cohomology. The projection $\pi:A\to X$ and the inclusion $g:X\to A$ onto the slice $\{N+1\}$ give maps of pairs $(A,C)\to(X,X)$ and $(X,X)\to(A,C)$: $g(X)\subset C$ because $N+1\notin I_N$. Plainly $\pi g=\operatorname{id}_X$, and $g\pi$ is homotopic to $\operatorname{id}_A$ by straight-line homotopy in the second coordinate. This respects $C$: if $x\notin K$, all points on the slice belong to $C$; if $x\in K$ and $(x,t)\in C$, then $t>N$, so the segment from $t$ to $N+1$ remains outside $I_N$. There is no lower component with $t<-N$, because points of $A$ have $t>-1$ and $N\ge1$. Similarly $(B,D)\simeq(X,X)$ using the slice $\{-N-1\}$.
 
-Since $C\cap D=(X-K)\times(-N,N)$, projection identifies the pair $(A\cap B,C\cap D)$ with $(X,X-K)$ up to homotopy. Applying relative Mayer--Vietoris with coefficients $G$ therefore gives
+Projection also gives the pair homotopy equivalence
 $$
-\begin{aligned}
-\cdots&\to H^n(X\times\RR,(X\times\RR)-(K\times I_N);G)\\
-&\to H^n(A,C;G)\oplus H^n(B,D;G)=0\\
-&\to H^n(A\cap B,C\cap D;G)\cong H^n((X-K)\times(-N,N);G)\\
-&\to H^{n+1}(X\times\RR,(X\times\RR)-(K\times I_N);G)\to\cdots .
-\end{aligned}
+(A\cap B,C\cap D)\simeq(X,X-K).
 $$
-Consequently, shifting degree only at this step,
+Relative Mayer--Vietoris therefore reads
+$$
+\cdots\to H^n(A,C;G)\oplus H^n(B,D;G)=0
+\to H^n(A\cap B,C\cap D;G)
+\to H^{n+1}(X\times\RR,(X\times\RR)-(K\times I_N);G)\to\cdots .
+$$
+Consequently,
+$$
+H^{n-1}(A\cap B,C\cap D;G)
+\cong H^n(X\times\RR,(X\times\RR)-(K\times I_N);G).
+$$
+In particular,
 $$
 H^n(X\times\RR,(X\times\RR)-(K\times I_N);G)
-\cong H^n(A\cap B,C\cap D;G)
 \cong H^{n-1}(X,X-K;G).
 $$
+The comparison is **not** with $H^n$ of the intersection.
 
-For $N\le M$ and $K\subset L$, the inclusions define maps of triples from the object indexed by $(L,M)$ to the one indexed by $(K,N)$:
+For naturality, let $K\subset L$ and $N\le M$, and distinguish the objects by writing $C_{K,N}$ and $D_{K,N}$ on the left and $C_{L,M}$ and $D_{L,M}$ next:
 $$
-(A_M,C_M)\to(A_N,C_N),\qquad (B_M,D_M)\to(B_N,D_N),\qquad (A_M\cap B_M,C_M\cap D_M)\to(A_N\cap B_N,C_N\cap D_N).
+C_{L,M}\subset C_{K,N},\qquad D_{L,M}\subset D_{K,N}.
 $$
-Here, $C$ and $D$ on the left use the compact set $L$ and interval $I_M$; on the right they use $K$ and $I_N$. These are maps of pairs: $A_M\subset A_N$ and $B_M\subset B_N$, while points of $C_M$ or $D_M$ lie outside $L\times I_M$ and hence outside $K\times I_N$. Similarly, on the intersection $(-M,M)\subset(-N,N)$, every point of $C_M\cap D_M$ lies in $(X-L)\times(-M,M)$ and therefore in $(X-K)\times(-N,N)$. The same inclusion convention applies to the total pair $(X\times\RR,(X\times\RR)-L\times I_M)\to(X\times\RR,(X\times\RR)-K\times I_N)$. Relative Mayer--Vietoris is natural with respect to all these inclusions, so the entire diagrams, not merely the groups, are compatible with the filtered system.
+These inclusions are immediate from $(L\times I_M)\supset(K\times I_N)$. The same holds for the total pair:
+$$
+(X\times\RR)-(L\times I_M)\subset (X\times\RR)-(K\times I_N).
+$$
+On the intersections, both inclusions and their targets agree:
+$$
+C_{L,M}\cap D_{L,M}=(X-L)\times(-1,1)
+\;\subset\; (X-K)\times(-1,1)=C_{K,N}\cap D_{K,N}.
+$$
+Each such inclusion is induced by the identity on the ambient space. The resulting restrictions are exactly the maps used to form the filtered compact-support limit, and relative Mayer--Vietoris is functorial in these inclusions. Thus the whole diagrams, not merely their cohomology groups, commute.
 
-The compact sets $K\times I_N$ with $K$ compact and $N\ge1$ are cofinal among compact subsets of $X\times\RR$: any compact $L$ has compact projections $K\subset X$ and $J\subset\RR$, and $J$ is contained in some $I_N$. Taking the filtered direct limit therefore yields
+The sets $K\times I_N$ with $K$ compact and $N\ge1$ are cofinal among compact subsets of $X\times\RR$: a compact set has compact projection $K$ in $X$ and bounded projection in $\RR$, contained in some $I_N$. Taking the filtered direct limit yields
 $$
 H_c^n(X\times\RR;G)\cong H_c^{n-1}(X;G).
 $$
 
-This is the argument in **Stanford Math 215C, Solution Set 4**, Hatcher 3.3.22, printed pp. 1--2, [`solution4.pdf`](https://math.stanford.edu/~ralph/math215c/solution4.pdf) on [Ralph Cohen's Math 215C page](https://math.stanford.edu/~ralph/math215c/), held at `tmp/sources/stanford-math215c-spring2009-solution4.pdf`: relative Mayer--Vietoris, vanishing cohomology of the two side pairs, and cofinal compact products. The explicit slice-and-homotopy checks above supply the exact pairs for that argument; the slices used to define them are listed here rather than assumed.
+This is **Stanford Math 215C, Solution Set 4**, Hatcher 3.3.22, printed pp. 1--2, from [Ralph Cohen's Math 215C page](https://math.stanford.edu/~ralph/math215c/), [`solution4.pdf`](https://math.stanford.edu/~ralph/math215c/solution4.pdf), held at `tmp/sources/stanford-math215c-spring2009-solution4.pdf`. The fixed overlap is $(-1,1)$, with the side-pair homotopies and cofinal compact products proved above.
 :::
