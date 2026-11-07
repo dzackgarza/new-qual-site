@@ -35,6 +35,11 @@ audit:
     telescope steps, with $R=Y^0\times[0,\infty)$ contractible and $Z/R$, $T/Z$ wedges of
     finite-dimensional complexes whose $n$- and $(n+1)$-skeleta are points; and the conclusion
     applied to $Y=X/X^n$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Statement matches Exercise 12 (p.205), whose extra paragraph restating Lemma 2.34's second proof matches Hatcher pp.137-139. The cohomological transcription rechecked step by step: good pair and Proposition 2.22 p.124 for the reduction to Y = X/X^n; vanishing of H^k(Y^m,Y^{m-1}) for k != m now derived from Theorem 3.5 p.203 applied to the wedge of m-spheres rather than cited vaguely, with the product (not sum) in degree m noted; the restriction maps injective by the sequence of the pair on p.200; steps for Z and T as in the book. Not covered: the book's own homology proof is not re-derived here, only its cohomological counterpart.
 ---
 
 ::: {.problem}
@@ -59,7 +64,7 @@ It suffices to show that $\widetilde H^k(Y)=0$ for $k\le n$ whenever $Y$ is a CW
 
 ::: pf-proof
 
-$(X,X^n)$ is a good pair, so $H^k(X,X^n)\cong\widetilde H^k(X/X^n)$ [@Hat02, §3.1].
+$(X,X^n)$ is a CW pair and hence a good pair, so Proposition 2.22 (p.124) in its cohomological form gives $H^k(X,X^n;G)\cong\widetilde H^k(X/X^n;G)$.
 The quotient $X/X^n$ is a CW complex whose $n$-skeleton is a point.
 
 :::
@@ -72,8 +77,8 @@ The claim holds when $Y$ is finite-dimensional.
 
 ::: pf-proof
 
-$H^k(Y^m,Y^{m-1})\cong\widetilde H^k(Y^m/Y^{m-1})$ vanishes for $k\ne m$, since $Y^m/Y^{m-1}$ is a wedge of $m$-spheres and the reduced cohomology of a wedge is the product of the reduced cohomologies of the summands [@Hat02, §3.1].
-For $m>n$ and $k\le n$, the exact sequence
+$H^k(Y^m,Y^{m-1})\cong\widetilde H^k(Y^m/Y^{m-1})$ vanishes for $k\ne m$: the quotient is a wedge of $m$-spheres, so its cellular cochain complex has $G$ in degree $0$, one factor $G$ per sphere in degree $m$ and nothing else, and Theorem 3.5 (p.203) gives $H^k=0$ for $0<k\ne m$ (and $\prod G$ for $k=m$).
+For $m>n$ and $k\le n$, the exact sequence of the pair (p.200)
 $$
 H^k(Y^m,Y^{m-1})\to\widetilde H^k(Y^m)\to\widetilde H^k(Y^{m-1})
 $$
@@ -90,7 +95,7 @@ $\widetilde H^k(Z)=0$ for $k\le n$.
 
 ::: pf-proof
 
-$R=Y^0\times[0,\infty)$ is contractible because $Y^0$ is a point, so $\widetilde H^k(Z)\cong H^k(Z,R)\cong\widetilde H^k(Z/R)$ by the long exact sequence of the good pair $(Z,R)$.
+$R=Y^0\times[0,\infty)$ is contractible because $Y^0$ is a point, so the sequence of the pair (p.200) in the form $H^k(Z,R)\to\widetilde H^k(Z)\to\widetilde H^k(R)=0$ gives $\widetilde H^k(Z)\cong H^k(Z,R)$, and Proposition 2.22 (p.124) gives $H^k(Z,R)\cong\widetilde H^k(Z/R)$.
 The quotient $Z/R$ is a wedge of finite-dimensional complexes with $n$-skeleton a point, so its reduced cohomology in degrees $k\le n$ is a product of groups that vanish by step [](#s2){.pf-ref}.
 
 :::
