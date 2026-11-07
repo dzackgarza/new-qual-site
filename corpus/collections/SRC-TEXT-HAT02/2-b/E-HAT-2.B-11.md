@@ -33,6 +33,15 @@ audit:
     onto the kernel of the projection; inducting on n from H_0(X × RP^∞) = H_0(X)
     yields H_n(X × RP^∞;Z_2) ≅ ⊕_{i≤n} H_i(X;Z_2). No defect.
 ---
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Verified with Guanyu Li, Hatcher.pdf, Exercise 2.B.2 (Hatcher 2.B.11), printed p.44. Under
+    projection to the contractible factor, transfer gives twice any class, hence is zero over Z_2;
+    so H_n(B) = H_n(X) + H_{n-1}(B), and induction reaches the direct sum with indices i<=n rather
+    than the source's displayed repeated n. The card also has an explicit splitting section j.
+
 ---
 
 ::: {.problem}
@@ -142,5 +151,7 @@ For $n=0$, $H_0(B)\cong H_0(X)$ because $\RP^\infty$ is connected. Iterating the
 :::
 
 :::
+The covering-space recurrence is in **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, Exercise 2.B.2 (Hatcher 2.B.11), printed p. 44 of `tmp/sources/hatcher-solutions-guanyu-li.pdf`. The source's displayed final index reads $H_n$ where $H_i$ is intended; step [](#s3){.pf-ref} gives the corrected induction. In the present proof the two lifts in $S^\infty$ have the same $X$-coordinate, so the transfer is zero over $\ZZ_2$, and the section $j$ splits the sequence. Li instead only observes that the sequence splits over a field.
+
 
 :::
