@@ -51,6 +51,16 @@ audit:
     every face has at least three sides, 20 <= 18. What is not covered: that the boundary of a
     face is a closed walk of length equal to its number of sides is argued from the side pairing
     and not proved formally.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    The formerly naked assertion "a polygon has at least three sides" is now justified for the two
+    printed simple graphs: a one-sided face gives a loop, and an out-and-back two-sided face
+    repeats an edge and is a whole connected component, not K_5 or K_3,3 with ten and nine edges.
+    The side double count and the consequences 3F <= 2E and 4F <= 2E are unchanged. The printed
+    locator is p.157; an earlier audit note's p.158 is contradicted by this page check.
+
 ---
 
 ::: {.problem}
@@ -88,7 +98,9 @@ $$
 
 ::: pf-proof
 
-Each side borders exactly one face, its own, so the number of sides is the number of pairs (face, side). The sides are identified in pairs, and each pair becomes one edge of the $1$-skeleton, so the number of sides is exactly $2E$. A polygon has at least three sides. Hence $3F\le 2E$.
+Each side borders exactly one face, its own, so the number of sides is the number of pairs (face, side). The sides are identified in pairs, and each pair becomes one edge of the $1$-skeleton, so the number of sides is exactly $2E$.
+
+For either of the two printed graphs a face has at least three sides. A one-sided face would traverse a loop edge, which neither simple graph has. A two-sided face would have to run out and back along one edge (a closed walk of length two in a simple graph repeats an edge). Its interior together with that open edge is then an open and closed piece of the identification space, because both sides of that edge have already been accounted for. Hence an out-and-back two-sided face would be a whole component, forcing the whole sphere to be that single degenerate face-edge object rather than the connected graph $K_5$ or $K_{3,3}$, with ten and nine edges respectively. Thus every face has at least three sides, and $3F\le 2E$.
 
 :::
 
