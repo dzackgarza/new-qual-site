@@ -47,25 +47,63 @@ The eight vertices of the cube fall into two equivalence classes under the three
 
 ::: pf-proof
 
-Each face pairing is a quarter-turn followed by translation to the opposite face.
-Starting from one vertex and applying the three pairings reaches exactly the four vertices of one parity class; starting from an adjacent vertex reaches the other four.
-No face pairing changes between these two classes.
-Hence the quotient has exactly two $0$-cells, say $v_0,v_1$.
+Write the vertices as triples $(x,y,z)\in\{0,1\}^3$ and take the three face pairings to be the quarter-turn screw motions
+$$
+(0,y,z)\sim(1,1-z,y),\qquad
+(x,0,z)\sim(z,1,1-x),\qquad
+(x,y,0)\sim(1-y,x,1),
+$$
+which carry a one-unit translation perpendicular to the face together with the same quarter turn in the three coordinate directions.
+
+Each pairing carries even vertices to even vertices and odd to odd, and the three identifications
+$$
+000\sim110,\qquad 000\sim011,\qquad 000\sim101
+$$
+join the four even vertices, while
+$$
+001\sim100,\qquad 001\sim111,\qquad 001\sim010
+$$
+join the four odd ones. The remaining partner pairs -- $010\sim111$ and $011\sim101$ for the first pairing, $100\sim010$ and $101\sim110$ for the second, $100\sim111$ and $110\sim011$ for the third -- stay inside these two sets. Hence the quotient has exactly two $0$-cells,
+$$
+v_0=\{000,011,101,110\},\qquad v_1=\{001,010,100,111\}.
+$$
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The twelve cube edges fall into four edge orbits, and the six faces fall into three face orbits.
 Thus the quotient has four $1$-cells and three $2$-cells; the cube interior gives one $3$-cell.
 
 ::: pf-proof
 
-Under a quarter-turn face pairing, an edge is carried to an edge on the opposite face.
-Following the induced identifications partitions the twelve edges into four orbits of three edges each.
-Similarly, each face is identified with its opposite face, giving three face orbits.
+Orient every cube edge from $v_0$ to $v_1$; this is consistent because no pairing exchanges the two classes, by step [](#s1){.pf-ref}. The twelve edges then fall into the four classes
+$$
+\begin{aligned}
+a&=\{000\to001,\ 011\to111,\ 110\to100\},&
+b&=\{000\to010,\ 101\to001,\ 110\to111\},\\
+c&=\{011\to001,\ 110\to010,\ 101\to100\},&
+d&=\{000\to100,\ 011\to010,\ 101\to111\}.
+\end{aligned}
+$$
+The pairings send a representative of each class to the other two edges listed with it:
+$$
+\begin{aligned}
+000\to001&\ \mapsto\ 110\to100\ (x=0\sim x=1),
+&\quad 000\to001&\ \mapsto\ 011\to111\ (y=0\sim y=1),\\
+000\to010&\ \mapsto\ 110\to111\ (x=0\sim x=1),
+&\quad 000\to010&\ \mapsto\ 101\to001\ (z=0\sim z=1),\\
+011\to001&\ \mapsto\ 101\to100\ (x=0\sim x=1),
+&\quad 011\to001&\ \mapsto\ 110\to010\ (z=0\sim z=1),\\
+000\to100&\ \mapsto\ 011\to010\ (y=0\sim y=1),
+&\quad 000\to100&\ \mapsto\ 101\to111\ (z=0\sim z=1).
+\end{aligned}
+$$
+An edge perpendicular to a pair of opposite faces is not moved to a further edge by that pairing, since the pairing then only moves the two endpoints. So the twelve edges form exactly these four orbits, giving four $1$-cells.
+
+Each face is identified with its opposite face, so the six faces form three $2$-cells.
 The open interior of the cube is not identified with any boundary point and therefore descends to a single open $3$-cell.
 Together with step [](#s1){.pf-ref} this gives the claimed cell counts
 $$
@@ -109,20 +147,35 @@ $$
 
 ::: pf-proof
 
-Trace the oriented boundary of one representative of each pair of opposite faces before collapsing the tree edge $a$.
-With the edge orientations from step [](#s3){.pf-ref}, the three face words are
+Represent the three face orbits by the faces $x=0$, $y=0$, $z=0$. With the classes of step [](#s2){.pf-ref}, the four edges of each are
 $$
-bc^{-1}ad^{-1},\qquad
-ba^{-1}dc^{-1},\qquad
-ac^{-1}db^{-1}.
+x=0:\ a=[000,001],\ c=[001,011],\ d=[011,010],\ b=[010,000],
 $$
-Substituting the loops
 $$
-i=ab^{-1},\quad j=ac^{-1},\quad k=ad^{-1}
+y=0:\ d=[000,100],\ c=[100,101],\ b=[101,001],\ a=[001,000],
 $$
-after collapsing $a$ gives respectively
 $$
-i^{-1}jk,\qquad i^{-1}k^{-1}j,\qquad jk^{-1}i.
+z=0:\ d=[000,100],\ a=[100,110],\ c=[110,010],\ b=[010,000].
+$$
+Read each boundary in the direction
+$$
+000\to001\to011\to010,\qquad
+000\to100\to101\to001,\qquad
+000\to100\to110\to010
+$$
+respectively, and write a side as the inverse of its class whenever it is traversed against the even-to-odd orientation. The three oriented boundary words are
+$$
+a\,c^{-1}d\,b^{-1},\qquad d\,c^{-1}b\,a^{-1},\qquad d\,a^{-1}c\,b^{-1},
+$$
+which up to cyclic permutation and reversal are the three words claimed:
+$$
+b\,c^{-1}a\,d^{-1},\qquad b\,a^{-1}d\,c^{-1},\qquad a\,c^{-1}d\,b^{-1}.
+$$
+The loops $i=ab^{-1}$, $j=ac^{-1}$, $k=ad^{-1}$ give $b=i^{-1}a$, $c=j^{-1}a$, $d=k^{-1}a$, hence $b^{-1}=a^{-1}i$, $c^{-1}=a^{-1}j$, $d^{-1}=a^{-1}k$. Substituting into the three words in order,
+$$
+(i^{-1}a)(a^{-1}j)(a)(a^{-1}k)=i^{-1}jk,\qquad
+(i^{-1}a)(a^{-1})(k^{-1}a)(a^{-1}j)=i^{-1}k^{-1}j,\qquad
+(a)(a^{-1}j)(k^{-1}a)(a^{-1}i)=jk^{-1}i.
 $$
 Attaching a $2$-cell sets each of these loops equal to the identity.
 
@@ -151,7 +204,7 @@ k j^{-1}=i
 \iff
 k=ij.
 $$
-The $3$-cell does not alter the fundamental group.
+The single $3$-cell does not alter the fundamental group: Proposition 1.26(b) (p. 50) applied with $X=X^2$ and $n=3$.
 
 :::
 
