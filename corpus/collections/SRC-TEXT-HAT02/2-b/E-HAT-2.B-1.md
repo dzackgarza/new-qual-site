@@ -34,6 +34,17 @@ audit:
     there is also H̃^0 = Z, giving one more Z in degree n−1. Degree shifts and the
     ordinary H_0 statement checked. No defect.
 ---
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Source coverage and degree accounting verified against DeMason, M382C Full Credit HW Problems
+    (2021), Hatcher 2.B.1, pp.68-70. The wedge's reduced cohomology is the direct sum of the two
+    sphere contributions; the disjoint case has one further H~^0=Z, and terms at the coinciding
+    indices n-k-1, n-l-1, n-1 must be summed. Explicitly, at n=1 and k=l=0, X has four points and
+    the complement has H~_0=Z^3, so H_0=Z^4. This refines the existing correct formula without
+    invoking an inappropriate connectedness assumption for S^0.
+
 ---
 
 ::: {.problem}
@@ -93,17 +104,17 @@ Apply Alexander duality to step [](#s1){.pf-ref}, replacing the cohomological de
 
 ::: pf-step
 
-If $X=S^k\amalg S^\ell$, then in addition to the two positive-dimensional sphere classes there is
+If $X=S^k\amalg S^\ell$, then reduced cohomology has, in addition to the sphere factors, the summand
 $$
 \widetilde H^0(X)\cong\ZZ.
 $$
-Thus
+For every $k$ and $\ell$ (including zero, where $S^0$ itself is disconnected), the value of Alexander duality is
 $$
 \widetilde H_i(S^n-X)
 \cong
 \widetilde H^{\,n-i-1}(S^k\amalg S^\ell).
 $$
-Explicitly this contributes one copy of $\ZZ$ in degree $i=n-1$, and copies of $\ZZ$ in degrees $n-k-1$ and $n-\ell-1$ (combined to $\ZZ^2$ when $k=\ell$).
+Hence extra copies of $\ZZ$ occur at the indices $n-k-1$, $n-\ell-1$ and $n-1$ when these are relevant; repeated indices are summed rather than counted separately or lost. In particular, when $n=1$ and $k=\ell=0$, the degree-$0$ reduced group is $\ZZ^3$, not merely $\ZZ$ from the displayed $\widetilde H^0(X)$.
 
 ::: pf-proof
 
@@ -115,5 +126,7 @@ A disjoint union of two connected spaces has reduced $H^0$ equal to $\ZZ$, while
 
 :::
 
-The unreduced group $H_0$ is obtained, as usual, by adjoining one copy of $\ZZ$ to $\widetilde H_0$.
+The unreduced group $H_0$ is obtained, as usual, by adjoining one copy of $\ZZ$ to $\widetilde H_0$.The two decompositions and their sphere-class computations are in **Kenneth DeMason, *M382C Full Credit HW Problems* (4 April 2021)**, Hatcher 2.B.1, printed pp. 68--70. The present proof collates those cases by Alexander duality, which applies here because a sphere is compact and locally contractible (Theorem 3.45, p. 254 of Hatcher). In the disjoint union case, as in the source, the extra reduced component class accompanies the sphere classes only once their indices are summed; the unreduced $H_0$ is obtained afterward.
+
+
 :::
