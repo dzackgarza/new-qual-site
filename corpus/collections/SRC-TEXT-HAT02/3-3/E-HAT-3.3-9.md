@@ -53,6 +53,15 @@ audit:
     sum being ±p, is a gap in the handout: the signs must be shown equal, which is what the card's
     locally constant sign function on the connected total space does. The card now records this.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Stanford Math 215C Solution Set 3, problem 9, printed p.1, supplies the full published argument:
+    evenly covered balls, local sign locally constant on a connected total space, and degree the sum
+    of the p signs. It confirms the correction previously supplied for the Math 538 sheet's jump to
+    d=+-p and leaves no missing step in the card's display.
+
 ---
 
 ::: {.problem}
@@ -77,5 +86,5 @@ $$
 \boxed{\deg q=\pm p.}
 $$
 
-This is the reduction printed in the Math 538 homework solutions, HMW 4, handwritten page 2 (PDF page 18 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`), where it carries the printed number #8 and says "apply the previous question to $\pi$": the same evenly covered ball, the same appeal to the degree-sum formula of Exercise 8. One step there is not sufficient as written — the sheet records that each $\pi_*k_i(\mu_{x_i})$ is $+1$ or $-1$ and concludes $d=\pm p$, which is only valid if the $p$ signs agree — so the paragraph above, showing the sign function is locally constant on the connected total space, is what closes it.
+The degree computation is also printed in **Stanford Math 215C, Solution Set 3**, problem 9, printed p. 1 of `tmp/sources/stanford-math215c-spring2009-solution3.pdf` ([course PDF](https://math.stanford.edu/~ralph/math215c/solution3.pdf)): it gives an evenly covered neighborhood with homeomorphic sheets, then explicitly states that local degree is locally constant on a connected total space, and sums the local degrees to get $\deg f=\sum_i\epsilon_i=\pm p$. That is exactly the proof above, including the step the Math 538 sheet omits.
 :::
