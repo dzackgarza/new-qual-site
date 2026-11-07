@@ -52,7 +52,7 @@ f_0(t)=
 (\cos2t,-\sin2t),&\pi\le t\le2\pi.
 \end{cases}
 $$
-The first piece wraps once around the circle counterclockwise and the second returns clockwise. Both wrap once onto the circle and they have the same value $(-1,0)$ at $t=\pi$, so $f_0$ is continuous, surjective, and has winding number $0$, hence degree $0$.
+The first piece wraps once around the circle counterclockwise and the second returns clockwise. Both wrap once onto the circle and they have the same value $(1,0)$ at $t=\pi$, so $f_0$ is continuous, surjective, and has winding number $0$, hence degree $0$.
 
 ::: pf
 
