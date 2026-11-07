@@ -53,6 +53,21 @@ audit:
     is about the printed statement's own hypothesis and not part of the handout. Checked against
     Hatcher p.146 (collapsing a disk complement gives S^n) and p.236 (fundamental class).
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Two defects in the previous revision, both substantive. (1) The target pair was written
+    (S^n, S^n - {pt}) although f sends M - B to the collapsed point, so the map of pairs was
+    ill-formed; it is now (S^n, {f(p)}), with H_n(S^n) = H_n(S^n,{f(p)}) from the pair sequence for
+    n >= 1. (2) The paragraph excluding n = 0 asserted that S^0 has no fundamental class, which is
+    false: a disconnected closed orientable 0-manifold has one, namely the sum of the point classes,
+    and H_0(S^0) = Z^2 with [S^0] = (1,1) does map to a generator of every local group. What fails at
+    n = 0 is the definition itself, whose target must be connected, and even read naively the
+    equation f_*([M]) = d[S^0] has no solution, since f_*([M]) is one of (+-1,0), (0,+-1) while
+    d[S^0] = (d,d). The card now states the degree convention of p.258 and this dimension boundary
+    precisely.
+
 ---
 
 ::: {.problem}
@@ -61,11 +76,21 @@ Show that for any connected closed orientable $n$-manifold $M$ there is a degree
 :::
 
 ::: {.solution}
-The case $n=0$ is excluded by the definition rather than by the mathematics: $S^0$ is disconnected, so it has no fundamental class, and for $M$ a point the image $f_*([M])\in H_0(S^0;\ZZ)=\ZZ^2$ is a single summand for every map $f$, so no integer $d$ satisfies $f_*([M])=d[S^0]$. So take $n\ge1$.
+Write $[M]\in H_n(M;\ZZ)$ and $[S^n]\in H_n(S^n;\ZZ)$ for the fundamental classes; by the definition quoted in the exercise, a map $f$ has degree $d$ when $f_*([M])=d\,[S^n]$, and the sign depends on the two classes.
 
-Let $B\subset M$ be an open disk (a ball whose closure lies in a larger ball), and define $f:M\to S^n$ by sending $B$ onto $S^n$ minus a point and $M-B$ to that point. This is the composite of the collapse $M\to M/(M-B)$ with a homeomorphism $M/(M-B)\to S^n$: collapsing the complement of a disk in a connected closed $n$-manifold gives $S^n$, as in the proof of Theorem 2.44 (p. 146).
+Take $n\ge1$ for the construction below. The case $n=0$ is worth stating exactly, because it is the boundary of the definition rather than of the topology. The definition requires the target to be a *connected* closed orientable manifold, and $S^0$ is not connected, so "a degree 1 map $M\to S^0$" is not covered by it. $S^0$ does have a fundamental class in the sense of p. 236: $H_0(S^0;\ZZ)=\ZZ^2$ and $[S^0]=(1,1)$, whose image in each local group $H_0(S^0\,|\,\{p\})=\ZZ$ is a generator. But for $M$ a point every map has $f_*([M])\in\{(\pm1,0),(0,\pm1)\}$, whereas $d\,[S^0]=(d,d)$, so no integer $d$ satisfies $f_*([M])=d[S^0]$ at all: for $n=0$ there is no degree 1 map, and the statement of the exercise is a statement about $n\ge1$.
 
-The pair sequence for $(M,M-B)$ and excision for the ball give the isomorphism $H_n(M)\cong H_n(M,M-B)$ sending the fundamental class $[M]$ to the local class $\mu_B\in H_n(M\,|\,B)$ that restricts to $\mu_y$ for each $y\in B$; and $f$ carries $H_n(M,M-B)$ isomorphically to $H_n(S^n,S^n-\{\mathrm{pt}\})=H_n(S^n)$. Hence $f_*:H_n(M)\to H_n(S^n)$ is an isomorphism of infinite cyclic groups, so $f_*[M]=\pm[S^n]$. If the sign is $-1$, replace $[M]$ by its negative, which is the fundamental class for the opposite orientation of $M$; then $f_*[M]=[S^n]$ and $\deg f=1$.
+So let $B\subset M$ be an open disk, a ball whose closure lies in a larger ball, and fix $p\in B$. Define
+$$
+f:M\longrightarrow S^n
+$$
+as the collapse of $M-B$ to a point followed by a homeomorphism: $f$ is the composite $M\to M/(M-B)\xrightarrow{\ \cong\ }S^n$, where collapsing the complement of a disk in a connected closed $n$-manifold gives $S^n$ (as in the proof of Theorem 2.44, p. 146). Thus $f$ maps $B$ onto $S^n-\{f(p)\}$ and $M-B$ onto the point $f(p)$.
+
+As a map of pairs, $f$ is a map $(M,M-B)\to(S^n,\{f(p)\})$ — not to $(S^n,S^n-\{f(p)\})$, since $f(M-B)=\{f(p)\}$ — and on the target the pair sequence of $(S^n,\{f(p)\})$, together with $H_i(\{f(p)\})=0$ for $i>0$, gives
+$$
+H_n(S^n)\xrightarrow{\ \cong\ }H_n(S^n,\{f(p)\})\qquad(n\ge1).
+$$
+On the source, excision for the ball gives $H_n(M,M-B)\cong H_n(B,B-\{p\})\cong\ZZ$, and the pair sequence of $(M,M-B)$ shows that $H_n(M)\to H_n(M,M-B)$ is an isomorphism sending $[M]$ to the local class $\mu_p$: that is exactly the condition that the image of $[M]$ in $H_n(M\,|\,p)$ be a generator. Under these two identifications $f_*$ becomes an isomorphism of infinite cyclic groups, so $f_*[M]=\pm[S^n]$. If the sign is $-1$, replace $[M]$ by its negative, the fundamental class of the opposite orientation of $M$; then $f_*[M]=[S^n]$ and $\deg f=1$.
 
 This is the solution printed in the Math 538 homework solutions, HMW 4, handwritten page 1 (PDF page 17 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`), Hatcher 3.3 #7: it defines $f$ by sending an open disk $B$ to $S^n-\{\mathrm{pt}\}$ and $M-B$ to $\{\mathrm{pt}\}$, notes that $M/(M-B)\to S^n$ is a homeomorphism, and concludes $f_*[M]=\pm[S^n]$ with the sign removed "since we can choose the other orientation of $M$".
 :::
