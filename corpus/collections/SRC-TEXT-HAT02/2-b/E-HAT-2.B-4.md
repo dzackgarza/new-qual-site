@@ -45,6 +45,25 @@ audit:
     so H_*(C,A)=0. Thus neither that diagram nor the suggested acyclic-pair shortcut supplies a
     complete published proof. Did not alter the checked bounding-chain proof; the complete
     published-solution obligation remains open.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Repaired a hypothesis gap in (b). The previous step applied Exercise 3 to the pair
+    (D^p,S^{p-1}) inside (D^{p+q},S^{p+q-1}), but Exercise 3 requires D^p to meet the boundary
+    sphere in exactly S^{p-1}, and the hypothesis of (b) does not give that: an embedded disk with
+    boundary S^{p-1} can meet the boundary sphere in the interior of the disk, as the arc
+    gamma(t) = (t, 1-t^2) in D^2 shows, with endpoints at (+-1,0) in S^1 and
+    norm(gamma(t))^2 = t^4 - t^2 + 1 <= 1, equality exactly at t = 0 and t = +-1, so the arc is
+    tangent to S^1 at (0,1). Checked replacement: radial contraction z -> z/norm(z) retracts
+    D^{p+q} - S^{p-1} onto S^{p+q-1} - S^{p-1}, since a point (x,y) with y nonzero and
+    norm <= 1 has last coordinates y((1-t) + t/norm(x,y)) with bracket >= 1 along the segment;
+    that retraction is a homotopy equivalence, the inclusion into D^{p+q} - D^p factors it
+    because S^{p-1} is contained in D^p, and a map with injective composite is injective. So the
+    inclusion into D^{p+q} - D^p is injective on reduced H_{q-1}, which is all the contradiction
+    needs, and no properness is used. Parts (a) and (b)'s bounding-chain argument are otherwise
+    unchanged. What is not covered: no complete published solution to (a) has been located, so
+    that source obligation stays open; no certificate.
 ---
 ---
 
@@ -125,15 +144,19 @@ By steps [](#s1){.pf-ref} and [](#s2){.pf-ref} the coordinate $S^{q-1}$ is a def
 
 ::: {.pf-step #s4}
 
-By Exercise 3, the inclusion
+The inclusion
 $$
 S^{p+q-1}-S^{p-1}\hookrightarrow D^{p+q}-D^p
 $$
-induces an isomorphism on homology.
+induces an injection on $\widetilde H_{q-1}$, which is all the next step needs.
 
 ::: pf-proof
 
-Apply Exercise 3 to the properly embedded pair $(D^p,S^{p-1})\subset(D^{p+q},S^{p+q-1})$.
+Radial contraction $r(z)=z/\norm{z}$ retracts $D^{p+q}-S^{p-1}$ onto $S^{p+q-1}-S^{p-1}$: a point $(x,y)$ of $D^{p+q}$ with $y\ne0$ has $\norm{(x,y)}\le1$, so on the segment to $r(x,y)$ the last $q$ coordinates are $y\bigl((1-t)+t/\norm{(x,y)}\bigr)$ with the bracket $\ge1$, hence nonzero throughout. So $S^{p+q-1}-S^{p-1}\subset D^{p+q}-S^{p-1}$ is a homotopy equivalence and induces an isomorphism on $\widetilde H_{q-1}$.
+
+Since $S^{p-1}\subset D^p$, the inclusion $S^{p+q-1}-S^{p-1}\hookrightarrow D^{p+q}-D^p$ factors that homotopy equivalence. A map whose composite with another map is injective is itself injective, so the inclusion into $D^{p+q}-D^p$ is injective on $\widetilde H_{q-1}$, as claimed.
+
+Exercise 3 is not used here, and cannot be applied as stated: its hypothesis is that the disk meets the boundary sphere in exactly its own boundary, which the hypothesis of (b) does not supply. An embedded disk with boundary $S^{p-1}$ can meet $\partial D^{p+q}$ in the interior of the disk --- already for $p=1$, $q=1$ the arc $\gamma(t)=(t,1-t^2)$ lies in $D^2$, has endpoints $(\pm1,0)\in S^1$, and meets $S^1$ at $\gamma(0)=(0,1)$, where $\norm{\gamma(t)}^2=t^4-t^2+1\le1$; that arc is tangent to $S^1$ at $(0,1)$, so Exercise 3 does not apply to it, while the factorization above does.
 
 :::
 
