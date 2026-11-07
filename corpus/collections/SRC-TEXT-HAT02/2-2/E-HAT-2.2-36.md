@@ -32,6 +32,18 @@ audit:
     pair's sequence splits and $H_i$ of the product is $H_i(X)$ plus the relative group; relative
     Mayer-Vietoris over the two hemispheres, each retracting to the basepoint copy of $X$, shifts
     degree by one; and iterating to $S^0$, where the pair adds one copy of $X$, gives $H_{i-n}(X)$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Statement matches Exercise 36 as printed on p. 158, both displayed isomorphisms and the hint.
+    The two halves are correct: the projection retracts X times S^n onto X times x_0, so the pair
+    sequence splits; and the relative Mayer-Vietoris sequence for the two hemisphere pairs has
+    vanishing neighbours, giving the degree shift. Citations added: Theorem 2.16 p. 117 for the
+    pair sequence, the Splitting Lemma pp. 147-148 for the splitting, and p. 153 for the relative
+    Mayer-Vietoris sequence, whose terms are now written out. Iterating to n = 0 uses
+    H_j(X times S^0, X times x_0) = H_j(X). What is not covered: the deformation retractions of
+    the hemisphere and band pairs are stated, not constructed; no certificate.
 ---
 
 ::: {.problem}
@@ -61,7 +73,7 @@ The inclusion
 $$
 A_n\cong X\hookrightarrow X\times S^n
 $$
-has the projection $X\times S^n\to X$ as a retraction. Hence its induced map on homology is injective and split. The long exact sequence of the pair therefore breaks into split short exact sequences
+has the projection $X\times S^n\to X$ as a retraction. Hence its induced map on homology is injective and split. The long exact sequence of the pair, that of Theorem 2.16 (p. 117), therefore breaks by the Splitting Lemma (pp. 147--148) into split short exact sequences
 $$
 0\to H_i(X)\to H_i(P_n)\to H_i(P_n,A_n)\to0.
 $$
@@ -76,9 +88,9 @@ H_i(P_n,A_n)\cong H_{i-1}(P_{n-1},A_{n-1}).
 $$
 
 ::: pf-proof
-Choose $x_0$ on the equator $S^{n-1}$. Cover $S^n$ by open, slightly enlarged upper and lower hemispheres $U_+$ and $U_-$. Each $U_\pm$ contracts to $x_0$ while fixing $x_0$, and their intersection is an equatorial band that deformation retracts onto $S^{n-1}$ while fixing $x_0$. Apply relative Mayer--Vietoris to the pair
+Choose $x_0$ on the equator $S^{n-1}$. Cover $S^n$ by open, slightly enlarged upper and lower hemispheres $U_+$ and $U_-$. Each $U_\pm$ contracts to $x_0$ while fixing $x_0$, and their intersection is an equatorial band that deformation retracts onto $S^{n-1}$ while fixing $x_0$. Apply the relative Mayer--Vietoris sequence, which is described on p. 153 and applies to a decomposition $(X,Y)=(A\cup B,\,C\cup D)$ with $C=D$, here $A=X\times U_+$, $B=X\times U_-$ and $C=D=X\times\{x_0\}$. The sequence is
 $$
-(X\times S^n,\,X\times\{x_0\}).
+\cdots\to H_i(A\cap B,C\cap D)\to H_i(A,C)\oplus H_i(B,D)\to H_i(X\times S^n,X\times\{x_0\})\to H_{i-1}(A\cap B,C\cap D)\to\cdots
 $$
 The two hemisphere pairs
 $$
@@ -88,7 +100,7 @@ deformation retract to $(X,X)$ and hence have zero relative homology. Their inte
 $$
 (X\times S^{n-1},\,X\times\{x_0\}).
 $$
-Thus the connecting homomorphism in the relative Mayer--Vietoris sequence is an isomorphism shifting degree by one.
+Thus both neighbouring terms of $H_i(X\times S^n,X\times\{x_0\})$ vanish term by term, and the connecting homomorphism in the relative Mayer--Vietoris sequence is an isomorphism shifting degree by one.
 :::
 
 :::
