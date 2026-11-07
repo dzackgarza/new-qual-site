@@ -113,7 +113,9 @@ Since $z\ne0$, this would imply $\abs{\lambda}^2=-1$, impossible.
 
 :::
 
-Thus the displayed conjugate-linear map induces a fixed-point-free self-map of $\CP^{2k-1}$.The conjugate-linear construction and fixed-point computation are given by **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.C.3, printed pp. 84--85. The present computation is a concise form of the eigenvector/line argument there: $F(z)=\lambda z$ implies $-z=F^2(z)=\bar\lambda F(z)=|\lambda|^2z$, which cannot happen for $z\ne0$ and complex $\lambda$. Surjectivity and well-definedness on complex lines therefore leave no fixed point.
+Thus the displayed conjugate-linear map induces a fixed-point-free self-map of $\CP^{2k-1}$.
+
+The conjugate-linear construction and fixed-point computation are given by **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.C.3, printed pp. 84--85. The present computation is a concise form of the eigenvector/line argument there: $F(z)=\lambda z$ implies $-z=F^2(z)=\bar\lambda F(z)=|\lambda|^2z$, which cannot happen for $z\ne0$ and complex $\lambda$. Surjectivity and well-definedness on complex lines therefore leave no fixed point.
 
 
 :::
