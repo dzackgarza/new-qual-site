@@ -157,5 +157,7 @@ $$
 \iff
 \widetilde H_i(X)\text{ is a }\QQ\text{-vector space for all }i.}
 $$
-In degree $0$ both sides say the same thing about the number of path components: $\widetilde H_0(X;\ZZ_p)\cong\ZZ_p^{c-1}$ and $\widetilde H_0(X)\cong\ZZ^{c-1}$ for $c$ the number of path components, by Proposition 2.6 (p. 109) applied to each coefficient group, so both vanish for all $p$ exactly when $c=1$, which is also exactly when $\widetilde H_0(X)$ is a $\QQ$-vector space.
+In degree $0$ both sides say the same thing about the number of path components: $\widetilde H_0(X;\ZZ_p)\cong\ZZ_p^{c-1}$ and $\widetilde H_0(X)\cong\ZZ^{c-1}$ for $c$ the number of path components, by Proposition 2.6 (p. 109) applied to each coefficient group, so both vanish for all $p$ exactly when $c=1$, which is also exactly when $\widetilde H_0(X)$ is a $\QQ$-vector space.The coefficient exact sequence and divisibility conclusion match **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.2.40, printed p. 68. In particular, $G/pG=0$ and ${}_pG=0$ for all primes $p$ says precisely that $G$ is uniquely $p$-divisible for every $p$, which is the scalar restriction from $\QQ$ to $\ZZ$. Hence it has a natural $\QQ$-vector-space structure exactly when every reduced mod-$p$ group vanishes.
+
+
 :::
