@@ -65,6 +65,18 @@ audit:
     earlier sentence invoking an isomorphism of sum and product blurred that. What is not
     covered: the identification of the f_i with reduced homology groups is not formalized, as the
     README for that certificate says.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Read the actual published proof in Pau Casassas Massana, Acyclic Classes of Nonrepresentable
+    Homologies (30 June 2014), section2.1, printed pp.7-9, in the 25-page thesis at
+    https://hdl.handle.net/2445/65313. Casassas defines the same product-minus-direct-sum
+    candidate and proves exactness by applying Proposition2.1.2 pp.8-9 to all three operations;
+    his wedge-of-spheres counterexample has prod Z/oplus Z nonzero on the wedge and Z/Z=0 on
+    each summand. Replaced the alternate snake-lemma presentation with this published argument.
+    Hatcher p.165 also asks for invariance in n, finite-support vanishing and homotopy invariance,
+    all retained explicitly. The #105 source obligation is covered.
 ---
 
 ::: {.problem}
@@ -74,9 +86,11 @@ Show that the axioms for a homology theory are satisfied except that the wedge a
 :::
 
 ::: {.solution}
+The complete published argument is **Pau Casassas Massana, *Acyclic Classes of Nonrepresentable Homologies*, §2.1, printed pp. 7--9** (`tmp/sources/casassas-acyclic-classes-2014.pdf`, Universitat de Barcelona, 30 June 2014, director Carles Casacuberta, [repository record](https://hdl.handle.net/2445/65313)). Casassas defines exactly Hatcher's candidate, which he writes $JW_k(X)$, proves exactness using his Proposition 2.1.2, and gives the same counterexample of an infinite wedge of spheres. This is the published proof, not an independently assembled product/difference construction. The finite-support dimension calculation is made explicit below.
+
 Put
 $$
-Q(X)=\prod_{i\in\ZZ}\widetilde H_i(X)\big/\bigoplus_{i\in\ZZ}\widetilde H_i(X),
+Q(X)=JW_k(X)=\prod_{i\in\ZZ}\widetilde H_i(X)\big/\bigoplus_{i\in\ZZ}\widetilde H_i(X),
 \qquad \widetilde h_n(X)=Q(X).
 $$
 
@@ -100,11 +114,20 @@ Exactness holds, with all connecting maps induced coordinatewise from ordinary h
 
 ::: pf-proof
 
-For a cofibration sequence $A\to X\to X/A$, ordinary reduced homology gives a long exact sequence, which is axiom (2) of p. 160. Reindexing turns the connecting map into a degree-preserving map between the products defining $Q$. Products of exact sequences of abelian groups are exact, and so are direct sums. Applying the snake lemma to
+For a cofibration sequence $A\to X\to X/A$, ordinary reduced homology gives a long exact sequence, which is axiom (2) of p. 160. Reindexing turns the connecting map into a degree-preserving map between the products defining $Q$. As in Casassas p. 7, consider the family of sequences
 $$
-0\to\bigoplus_i\widetilde H_i(-)\to\prod_i\widetilde H_i(-)\to Q(-)\to0
+B_*^j=\cdots\longrightarrow \widetilde H_{n+1+j}(X,A)
+\longrightarrow\widetilde H_{n+j}(A)
+\longrightarrow\widetilde H_{n+j}(X)
+\longrightarrow\widetilde H_{n+j}(X,A)\longrightarrow\cdots.
 $$
-for the three terms of the cofibration sequence gives exactness for $Q$.
+Products and direct sums preserve exactness. The quotient construction $\prod/\bigoplus$ also preserves exactness: if $0\to A\to B\to C\to0$ is exact, coordinatewise application gives
+$$
+0\longrightarrow\prod_iA_i\big/\bigoplus_iA_i
+\longrightarrow\prod_iB_i\big/\bigoplus_iB_i
+\longrightarrow\prod_iC_i\big/\bigoplus_iC_i\longrightarrow0.
+$$
+This is **Casassas's Proposition 2.1.2(1), printed pp. 8--9**. Applying it to the displayed family of $B_*^j$ yields exactness for $Q$.
 
 :::
 
