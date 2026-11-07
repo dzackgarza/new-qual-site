@@ -150,5 +150,7 @@ $T$ has no real eigenvectors (its eigenvalues are $\pm i$), so the induced map o
 :::
 
 :::
+The three parts are checked against **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.2.2, printed p. 64 (`tmp/sources/demason-m382c-hatcher-20210404.pdf`): fixed-point-freeness gives antipodal degree $-1$, absence of antipodal matching identities gives degree $1$, lifting to $S^{2n}$ gives the projective-space result, and the standard no-real-eigenvector rotation gives the odd-dimensional fixed-point-free example. The card contains the same computations and their explicit homotopies.
+
 
 :::
