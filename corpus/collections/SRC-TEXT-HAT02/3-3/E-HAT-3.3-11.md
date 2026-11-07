@@ -38,6 +38,19 @@ audit:
     =\mu_g$ from $\deg f=1$ by evaluation on the fundamental class, nondegeneracy of the cup product
     pairing on $H^1$ of a closed orientable surface, and the pinch map on $M_h\#M_{g-h}$ which is a
     local orientation-preserving homeomorphism off the collapsed point.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    The existence direction now follows Guanyu Li, Hatcher.pdf, Exercise 3.3.6 (Hatcher 3.3 #11),
+    printed pp.57-58. The standard one-vertex, one-two-cell structure on M_g has attaching word the
+    product of the g commutators; quotienting by X, the union of the last g-h handles a_i and b_i,
+    leaves exactly the attaching word of M_h and maps the positive two-cell once onto the target's
+    positive two-cell. Hence degree one. The earlier connected-sum construction is retained in the
+    git history but this quotient construction is the published one shown at the top of p.58. Li's
+    necessity direction uses Ex.10 and H_1 rank; the checked cup-product necessity on this card is
+    retained and the printed if-statement is not widened.
+
 ---
 
 ::: {.problem}
@@ -45,7 +58,7 @@ If $M_g$ denotes the closed orientable surface of genus $g$, show that degree 1 
 :::
 
 ::: {.solution}
-The printed exercise asks for the direction $g\ge h$; step [](#s1){.pf-ref} proves in addition the converse, that a degree 1 map $M_g\to M_h$ forces $g\ge h$, because Exercises 12 and 13 use that direction and it is not printed there.
+Step [](#s1){.pf-ref} proves the converse, used by Exercises 12 and 13, although the printed sentence asks only for the direction $g\ge h$. Step [](#s2){.pf-ref} is the existence construction in Guanyu Li, Exercise 3.3.6 (Hatcher §3.3 #11), pp. 57--58.
 
 ::: pf
 
@@ -124,56 +137,43 @@ $\dim H^1(M_k; \RR) = 2k$.
 
 ::: {.pf-step #s2}
 
-Reverse direction, the one the exercise asks for ($g \ge h \implies$ existence of a degree 1 map $M_g \to M_h$):
+Existence, the direction asked for in the printed exercise ($g \ge h \implies$ there is a degree 1 map $M_g \to M_h$):
 
 ::: pf-proof
 
 ::: pf-step
 
-If $g = h$, the identity map $\operatorname{id}: M_g \to M_g$ has degree 1.
+For $g=h$, the identity has degree $1$.
 
 ::: pf-proof
 
-$\deg(\operatorname{id}) = 1$.
-
-:::
-
-:::
-
-::: pf-step
-
-If $g > h$, decompose $M_g$ as the connected sum $M_g = M_h \# M_{g-h}$.
-Let $c$ be the separating circle along which the sum is glued.
-
-::: pf-proof
-
-connected sum decomposition of surfaces.
-
+$\deg(\operatorname{id})=1$.
 :::
 
 :::
 
 ::: pf-step
 
-Collapse the punctured $M_{g-h}$ summand, including the separating circle $c$, to one point. The resulting quotient is the punctured $M_h$ summand with its boundary circle collapsed to a point, which is homeomorphic to $M_h$. Let $f:M_g\to M_h$ be this quotient map, choosing the homeomorphism to preserve orientation on the interior of the punctured $M_h$ summand.
+For $g>h$, let $M_g$ have its standard one-vertex cell structure: loops $a_1,b_1,\dots,a_g,b_g$ and one $2$-cell attached by $\prod_{i=1}^g[a_i,b_i]$, and let $M_h$ have the corresponding loops $c_1,d_1,\dots,c_h,d_h$. Set
+$$
+X=\bigcup_{i=h+1}^{g}(a_i\cup b_i)
+$$
+and form the quotient $M_g/X$. The first $2h$ loops map to the loops of $M_h$, and the attaching word of the remaining $2$-cell becomes $\prod_{i=1}^h[c_i,d_i]$. Thus $M_g/X\cong M_h$, with the quotient map carrying the single $2$-cell of $M_g$ once onto the single $2$-cell of $M_h$.
 
 ::: pf-proof
 
-pinch map collapsing one connected summand to a point.
-
+The quotient identification is immediate from the two attaching words: the loops in $X$ become the basepoint, so their commutators disappear, and exactly the attaching word of $M_h$ remains. This is the construction in Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf), Exercise 3.3.6 (Hatcher §3.3 #11), printed pp. 57--58 (local file `tmp/sources/hatcher-solutions-guanyu-li.pdf`).
 :::
 
 :::
 
 ::: pf-step
 
-Any point $y \in M_h \setminus \{p\}$ has $f^{-1}(y) = \{x\}$ consisting of a single point where $f$ is a local orientation-preserving homeomorphism.
-Thus $\deg(f) = +1$.
+The quotient map has degree $1$ after the positive generators of the two $2$-cells are chosen as fundamental classes.
 
 ::: pf-proof
 
-local degree formula for degree of smooth/continuous maps.
-
+In these one-$2$-cell structures, the two fundamental classes are the positive $2$-cell chains. The quotient carries one to the other exactly once and with the chosen orientation. This is the degree computation at the top of printed p. 58 of Li's solution; it supplies the existence direction explicitly.
 :::
 
 :::
@@ -181,7 +181,6 @@ local degree formula for degree of smooth/continuous maps.
 :::
 
 :::
-
 ::: pf-step
 
 Conclusion:
