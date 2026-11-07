@@ -101,17 +101,25 @@ H_1\cong\ZZ^r\oplus F,
 H_2\cong\ZZ^r.
 $$
 
+The building blocks have homology
+$$
+H_*(S^1\times S^2)=\ZZ,\ZZ,\ZZ,\ZZ
+\quad\text{in degrees }0,1,2,3,
+$$
+$$
+H_*(L(m_j,1))=\ZZ,\ZZ_{m_j},0,\ZZ
+\quad\text{in degrees }0,1,2,3.
+$$
 For nonorientable examples, let $N$ be the twisted $S^2$-bundle over $S^1$, obtained as the mapping torus of a reflection of $S^2$. Its mapping-torus sequence gives
 $$
-H_1(N)\cong\ZZ,
-\qquad
-H_2(N)\cong\ZZ_2.
+H_0(N)=\ZZ,\quad H_1(N)\cong\ZZ,\quad
+H_2(N)\cong\ZZ_2,\quad H_3(N)=0.
 $$
-Taking the connected sum of $N$, $r-1$ copies of $S^1\times S^2$, and the same lens spaces yields
+Taking the connected sum of $N$, $r-1$ copies of $S^1\times S^2$, and the same lens spaces yields, since connected sum adds $H_1$ and $H_2$ (the range $0<i<3$ of Exercise 6),
 $$
-H_1\cong\ZZ^r\oplus F,
+H_1\cong\ZZ\oplus\ZZ^{r-1}\oplus F=\ZZ^r\oplus F,
 \qquad
-H_2\cong\ZZ^{r-1}\oplus\ZZ_2.
+H_2\cong\ZZ_2\oplus\ZZ^{r-1}.
 $$
 The rank and torsion computation and the connected-sum examples appear in **Stanford Math 215C, Solution Set 4**, Hatcher 3.3.24, printed p. 2, [`solution4.pdf`](https://math.stanford.edu/~ralph/math215c/solution4.pdf). It uses odd-dimensional Euler characteristic zero and Corollary 3.28 for the torsion, as above. In its typography "dim $H^1(M;\ZZ)$" must be read as **rank**, not vector-space dimension: the finite summand $F$ contributes no rank. The mapping-torus sequence for the reflection $r$ has $r_*=-1$ on $H_2(S^2)$, so $H_2(N)\cong\operatorname{coker}(-2)=\ZZ_2$, $H_1(N)\cong\ZZ$, and $H_3(N)=0$. Since every example has exactly one nonorientable connected-sum factor, Exercise 6 requires no exceptional-case correction.
 Thus every group pattern allowed by the formulas occurs.
