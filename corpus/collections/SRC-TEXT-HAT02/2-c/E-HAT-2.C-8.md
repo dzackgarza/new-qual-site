@@ -43,6 +43,18 @@ audit:
     each r, and the union over r is countable. Homotopy equivalences X ≃ K and Y ≃ L transfer
     this bound to [X,Y]. The source paragraph is kept with the mathematics, as in Hatcher's
     own remark that a simplicial map is determined by its vertex images.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Identified and read the complete published solution: Morten Poulsen, Allen Hatcher: Algebraic
+    Topology (3 November 2006), Ex.2.C.8, printed p.30, in the 33-page archived AT-ex.pdf.
+    Its argument is the bijection [X,Y] with [K,L], the simplicial representatives over all
+    iterated subdivisions, and the countable union of countable vertex-map sets. Checked the
+    rendered PDF page directly against Hatcher p.184. Poulsen's K in the clashing typo for the
+    codomain of psi_Y is corrected to L here; the four steps otherwise retain his proof verbatim
+    in expanded form. The complete #105 source obligation is discharged, not merely a theorem
+    citation supplied by the agent.
 ---
 ---
 
@@ -52,7 +64,7 @@ Using the simplicial approximation theorem, show that there are at most countabl
 :::
 
 ::: {.solution}
-Use **Hatcher's simplicial approximation theorem, Theorem 2C.1, printed pp. 178--179**, in the form actually proved there: after finitely many barycentric subdivisions of the finite domain, every continuous map is homotopic to a simplicial map. The remaining count is the source's own vertex-map count.
+The complete published argument is **Morten Poulsen, *Allen Hatcher: Algebraic Topology* (3 November 2006), Exercise 2.C.8, printed p. 30** (`tmp/sources/poulsen-at-ex.pdf`), checked against the rendered page. It transports $[X,Y]$ to $[K,L]$, applies simplicial approximation over all iterated subdivisions, and counts the vertex maps. The theorem used for the simplicial-representative step is **Hatcher's Theorem 2C.1, printed pp. 178--179**: after finitely many barycentric subdivisions of the finite domain, every continuous map is homotopic to a simplicial map. Poulsen's printed $K$ in the codomain of $\psi_Y$ is an evident typo for $L$; the proof below uses the mathematically required codomain.
 
 Choose homotopy equivalences
 $$
