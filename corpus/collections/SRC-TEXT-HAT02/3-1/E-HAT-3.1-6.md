@@ -36,6 +36,11 @@ audit:
     $[[1,1,-1],[1,-1,1]]$, whose $2\times2$ minors have gcd $2$, giving $\ZZ,0,\ZZ_2$ and
     $\ZZ,\ZZ,\ZZ_2$; over $\ZZ_2$ both have rank one, giving $\ZZ_2$ in every degree. The boundary
     formulas used are the ones printed for these $\Delta$-complexes in §2.1.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Statement matches Exercise 6 (p.205). All six answers recomputed from the dual complexes: torus H^0=G, H^1=G^2, H^2=G; RP^2 integral Z, 0, Z/2 and mod 2 all Z/2; Klein bottle integral Z, Z, Z/2 and mod 2 Z/2, Z/2^2, Z/2. Cross-checked each against Theorem 3.2 (p.195). Boundary formulas are now cited: Example 2.3 p.106 for the torus, Example 2.4 p.106 for RP^2, the figure on p.102 for the Klein bottle (which the book does not compute). Not covered: nothing about the higher-dimensional surfaces.
 ---
 
 ::: {.problem}
@@ -68,7 +73,7 @@ $$
 
 ::: pf-proof
 
-This is the dual of the simplicial boundary maps in the standard two-triangle $\Delta$-complex on the torus.
+The $\Delta$-complex structure is the one obtained from a square as on Hatcher p.102, and Example 2.3 (p.106) prints $\partial_2 U = a+b-c = \partial_2 L$ for it. The displayed $\delta^1$ is its dual in the sense of p.191.
 
 :::
 
@@ -114,7 +119,7 @@ $$
 
 ::: pf-proof
 
-These are obtained by evaluating cochains on the displayed simplicial boundaries.
+These are obtained by evaluating cochains on the boundaries of Example 2.4 (p.106), which prints $\partial_2 U = -a+b+c$, $\partial_2 L = a-b+c$ and $\operatorname{im}\partial_1 = \ZZ(w-v)$, so that $\partial a = \partial b = w-v$ and $\partial c = 0$ (the same example notes that $a-b$ and $c$ form a basis of $\ker\partial_1$).
 
 :::
 
@@ -177,7 +182,7 @@ $$
 
 ::: pf-proof
 
-All vertices are identified, so the boundary of every edge is zero. Dualizing the two face boundaries gives the displayed coboundary.
+All vertices are identified, so the boundary of every edge is zero. The boundary formulas are read off the Klein bottle in the figure on p.102, which the book does not compute: with the two triangles oriented as stated, $\partial U = a+b-c$ and $\partial L = a-b+c$, and dualizing them as on p.191 gives the displayed coboundary.
 
 :::
 
@@ -207,7 +212,7 @@ $$
 
 ::: pf-proof
 
-Modulo $2$, both components of $\delta^1$ are $p+q+r$, so $\delta^1$ has rank one. Since $\delta^0=0$, the kernel has dimension two and the cokernel dimension one.
+Modulo $2$, both components of $\delta^1$ are $p+q+r$, so $\delta^1$ has rank one. Since $\delta^0=0$, the kernel has dimension two and the cokernel dimension one. Every answer on this card agrees with Theorem 3.2 (p.195), which computes $H^n$ of a complex of free abelian groups from $\operatorname{Hom}(H_n,\ZZ)$ and $\operatorname{Ext}(H_{n-1},\ZZ)$: for $\RP^2$ one gets $H^1=0$ and $H^2=\Ext(\ZZ_2,\ZZ)=\ZZ_2$ with $\ZZ$ coefficients, $H^1=\Hom(\ZZ_2,\ZZ_2)=\ZZ_2$ and $H^2=\Ext(\ZZ_2,\ZZ_2)=\ZZ_2$ with $\ZZ_2$ coefficients, and likewise for the Klein bottle with $H_1=\ZZ\oplus\ZZ_2$.
 
 :::
 
