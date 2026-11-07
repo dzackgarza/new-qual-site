@@ -43,6 +43,16 @@ audit:
     constant. The mathematics is the same as before: Exercise 8 applied to an evenly covered ball.
     Not checked: Exercise 8 itself is cited, and the case of a non-connected total space is excluded
     by the exercise's hypotheses.
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Published solution located and compared: Math 538 homework solutions, HMW 4 handwritten page 2
+    (PDF page 18), printed as #8 there, Hatcher 3.3 Ex.9. It reduces to Exercise 8 over an evenly
+    covered ball exactly as the card does. Its last step, each local sign being +1 or -1 hence the
+    sum being ±p, is a gap in the handout: the signs must be shown equal, which is what the card's
+    locally constant sign function on the connected total space does. The card now records this.
+
 ---
 
 ::: {.problem}
@@ -66,4 +76,6 @@ Hence
 $$
 \boxed{\deg q=\pm p.}
 $$
+
+This is the reduction printed in the Math 538 homework solutions, HMW 4, handwritten page 2 (PDF page 18 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`), where it carries the printed number #8 and says "apply the previous question to $\pi$": the same evenly covered ball, the same appeal to the degree-sum formula of Exercise 8. One step there is not sufficient as written — the sheet records that each $\pi_*k_i(\mu_{x_i})$ is $+1$ or $-1$ and concludes $d=\pm p$, which is only valid if the $p$ signs agree — so the paragraph above, showing the sign function is locally constant on the connected total space, is what closes it.
 :::
