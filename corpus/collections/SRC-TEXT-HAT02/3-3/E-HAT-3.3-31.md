@@ -62,6 +62,18 @@ audit:
     boundary sphere to compare with H_{n-1}(boundary M,boundary M-x). The n = 1 local group is
     treated separately using reduced H_0(S^0) and unreduced H_0 of a point.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    The lower-right excision is now the actual comparison: deleting boundary M-V from the pair
+    (boundary M,boundary M-x) leaves (V,V-x), so H_{n-1}(V,V-x) is excision-isomorphic to
+    H_{n-1}(boundary M,boundary M-x), not to H_{n-1}(boundary M,boundary M-V), which would leave
+    (V,empty). The comparison is stated as an equality in the common target H_{n-1}(V,V-x), with
+    r_D and r_M induced by inclusion and the same excision on boundary D. Unit tracking is
+    corrected: over an arbitrary coefficient ring R a generator is u[D] with u in R's unit group,
+    not necessarily +-D, and the boundary normalization carries that unit.
+
 ---
 
 ::: {.problem}
@@ -92,33 +104,36 @@ D/\partial D\xrightarrow{\ \cong\ }M/A
 $$
 because everything outside $D$ is contained in $A$. Proposition 2.22, p. 124, therefore gives the first isomorphism; the second is the pair sequence of $(D,\partial D)$, with $\partial D\cong S^{n-1}$. In particular $H_2(D,\partial D;R)=R$ for a disk or a half-disk in an annulus, in contrast to the zero group of a pair of two contractible disks.
 
-I next check that the image of $[M]$ in $H_n(M,A;R)$ is a generator. Pick an interior point $z\in U-V$. Since $A\subset M-\{z\}$, the image of $[M]$ in $H_n(M,A;R)$ maps under the pair inclusion to its local orientation in $H_n(M,M-\{z\};R)$, which is a generator by the first paragraph. As $H_n(M,A;R)$ also has the single generator $[D]$ coming from $H_n(D,\partial D;R)$, the image of $[M]$ is $\pm[D]$ (and the local restriction map is an isomorphism onto $H_n(M,M-\{z\};R)$).
+I next check that the image of $[M]$ in $H_n(M,A;R)$ is a generator. Pick an interior point $z\in U-V$. Since $A\subset M-\{z\}$, the image of $[M]$ in $H_n(M,A;R)$ maps under the pair inclusion to its local orientation in $H_n(M,M-\{z\};R)$, which is a generator by the first paragraph. As $H_n(M,A;R)$ also has the single generator $[D]$ coming from $H_n(D,\partial D;R)$, the image of $[M]$ is $u[D]$ for a unit $u\in R^\times$ (and the local restriction map is an isomorphism onto $H_n(M,M-\{z\};R)$).
 
-It remains to pass to the boundary at $x$. Write $\partial_{D,V}$ for the composite
+It remains to pass to the boundary at $x$. Ordinary excision, deleting $\partial M-V$ from the pair $(\partial M,\partial M-\{x\})$, gives
+$$
+H_{n-1}(V,V-\{x\};R)\cong H_{n-1}(\partial M,\partial M-\{x\};R):
+$$
+indeed $V=U\cap\partial M$ is open in $\partial M$ and $x\in V$, and $(\partial M-\{x\})-(\partial M-V)=V-\{x\}$. It is the same computation as Exercise 7's excision, but with the pair $(\partial M,\partial M-\{x\})$, not with $(\partial M,\partial M-V)$. Likewise, on $\partial D\cong S^{n-1}$,
+$$
+H_{n-1}(V,V-\{x\};R)\cong H_{n-1}(\partial D,\partial D-\{x\};R).
+$$
+
+Now define the local boundary $\partial_{D,x}$ as the composite
 $$
 H_n(D,\partial D;R)\xrightarrow{\ \partial\ }
-H_{n-1}(\partial D;R)\longrightarrow
-H_{n-1}(\partial D,\partial D-\{x\};R)
-\xleftarrow[\ \cong\ ]{\ \operatorname{exc}\ }
-H_{n-1}(V,V-\{x\};R).
+H_{n-1}(\partial D;R)\longrightarrow H_{n-1}(\partial D,\partial D-\{x\};R).
 $$
-The last arrow is an isomorphism by excision in the $(n-1)$-sphere $\partial D$, since $V$ is an open disk in $\partial D$ around $x$ and $x\in V$. By naturality of the boundary map in the triple $(M,A,\partial M-V)$, and of the quotient-pair isomorphisms above, the following diagram commutes:
+Write $e_D:H_{n-1}(V,V-\{x\};R)\to H_{n-1}(\partial D,\partial D-\{x\};R)$ and $e_M:H_{n-1}(V,V-\{x\};R)\to H_{n-1}(\partial M,\partial M-\{x\};R)$ for the two excision isomorphisms above, and let $r_D$ and $r_M$ be the two maps induced on local homology by inclusion. The required comparison is the equality
 $$
-\begin{array}{ccc}
-H_n(M,\partial M;R) & \xrightarrow{\ \delta\ } & H_{n-1}(\partial M;R)\\
-\Big\downarrow && \Big\downarrow\\
-H_n(M,A;R) && H_{n-1}(\partial M,\partial M-V;R)\\
-\Big\uparrow{\cong} && \Big\uparrow{\cong}\\
-H_n(D,\partial D;R) & \xrightarrow{\ \partial_{D,V}\ } & H_{n-1}(V,V-\{x\};R) .
-\end{array}
+e_M\bigl(r_M(\delta[M])\bigr)
+ =u\,e_D\bigl(\partial_{D,x}[D]\bigr)
+ \qquad\text{in }H_{n-1}(V,V-\{x\};R),
 $$
-The upper-left vertical map is the relative localization just computed; the upper-right one is induced by inclusion. The right-hand lower vertical map is again excision, with $V$ open in $\partial M$. The bottom equality of the two composites is the chain-level statement that a relative local cycle and its boundary are localized by the same restriction.
+where $u\in R^\times$ is the unit already found. To see it, localize the relative fundamental class to a representative of $[D]$ via the good-pair quotient comparison. Applying $\partial$ and restricting to the open face $V$ commute with that localization: in either order one obtains the same sum of the boundary simplices lying in the open face. This is naturality of the connecting map on the corresponding relative singular chain complexes, restricted to the displayed local pairs; no map through $H_{n-1}(\partial M,\partial M-V)$ is involved.
 
-Now $H_n(D,\partial D;R)\cong R$ and $H_{n-1}(\partial D;R)\cong R$ for $n\ge2$, with $\delta$ an isomorphism by the pair sequence because $D$ is contractible. For $n=1$, the reduced pair sequence gives $H_1(D,\partial D;R)\cong\widetilde H_0(S^0;R)\cong R$, while the unreduced local groups are $H_0(S^0,S^0-\{x\};R)\cong H_0(V;R)\cong R$ because $V=\{x\}$. In every dimension the boundary map sends $[D]$ to a fundamental class $[\partial D]$. Its restriction to $H_{n-1}(V,V-\{x\};R)$ is therefore a generator. By the diagram, $\delta[M]$ maps to a generator of
+Now $H_n(D,\partial D;R)\cong R$ and $H_{n-1}(\partial D;R)\cong R$ for $n\ge2$, with $\delta$ an isomorphism by the pair sequence because $D$ is contractible. For $n=1$, the reduced pair sequence gives $H_1(D,\partial D;R)\cong\widetilde H_0(S^0;R)\cong R$, while the unreduced local groups are $H_0(S^0,S^0-\{x\};R)\cong H_0(V;R)\cong R$ because $V=\{x\}$. In every dimension the boundary map sends $[D]$ to a fundamental class $[\partial D]$, with its unit of normalization determined by Exercise 30's collar convention. Hence $\delta[M]$ maps to a generator of
 $$
-H_{n-1}(\partial M,\partial M-\{x\};R).
+H_{n-1}(\partial M,\partial M-\{x\};R),
 $$
-Its sign is exactly the one fixed by Exercise 30's product orientation of the collar: the relative class comes from an oriented interior disk times the collar interval, and $\partial$ picks out that interval's endpoint.
+with coefficient $u$ times the image of the local fundamental class.
+Its normalization is exactly the unit fixed by Exercise 30's product orientation of the collar: the relative class comes from an oriented interior disk times the collar interval, and $\partial$ picks out that interval's endpoint.
 
 Since $x$ was arbitrary, $\delta[M]$ restricts to a local orientation generator at every boundary point. As $M$ is compact, $\partial M$ is compact, so Lemma 3.27(a), p. 236, with $A=\partial M$ identifies this section with the fundamental class of $\partial M$. Hence
 $$
