@@ -36,6 +36,16 @@ audit:
     retraction onto the first $2k+2$ circles carries it to a product of $k+1$ basis commutators
     expressed with only $k$ commutators, contradicting Exercise 12; and both one-sided retractions
     kill $\gamma$, so the map to $H_1(A)\oplus H_1(B)$ has nontrivial kernel.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Cosmetically only, the mathematics rechecked and unchanged: $r_N$ was called a retraction, but
+    the wedge is not a subspace of $X$, so it is a based collapse map; the definition now says so
+    and the ordering of the bound is checked once more — supposing $[\gamma]=0$ gives $k$ commutators,
+    and projecting to the first $2k+2$ circles leaves $k+1$ basis commutators, which Exercise 12
+    with $k+1$ in place of $k$ forbids. Not checked: the continuity of the infinite concatenation is
+    asserted from the vanishing diameters, as in Example 1.25.
 ---
 
 ::: {.problem}
@@ -57,7 +67,7 @@ For $N\ge1$, let
 $$
 r_N:X\longrightarrow \bigvee_{i=1}^N S_i^1
 $$
-be the retraction that is the identity on the first $N$ circles and collapses all later circles to the wedge point.
+be the collapse map that is the identity on the first $N$ circles and crumples all later circles to the wedge point; it is not a retraction in the technical sense, since $X$ carries no copy of that wedge as a subspace, but it is a based map, so it induces a map on $\pi_1$ and on homology.
 
 ::: pf
 
