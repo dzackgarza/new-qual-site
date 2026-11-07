@@ -37,6 +37,18 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### May's p.169 chart chain does not prove boundary-orientation compatibility
+
+- **Object and need:** J. P. May, *A Concise Course in Algebraic Topology*, §21.4, pp.169--170, formerly used to complete `E-HAT-3.3-31`; the needed result is $\partial_*[M]=[\partial M]$ for a compact $R$-orientable manifold.
+
+- **Observed evidence:** the first displayed identification on p.169 is false for May's stated chart. For $M=[0,1]$, $x=0$, $U=[0,\epsilon)$, $V=\{0\}$, and $y\in(0,\epsilon)$, the pair $(M^\circ,M^\circ-U^\circ)=((0,1),[\epsilon,1))$ has contractible total space and subspace, hence zero $H_1$, while $H_1((0,1),(0,1)-\{y\};R)=R$. The closed-half-disk variant has the same defect. The printed inclusion $(M-U^\circ)-\{x\}\to M-U$ also has the wrong direction because its source contains $V-\{x\}$ but its target does not. On p.170, the injectivity argument assumes $H_n(M^\circ)=0$ although closed components of $M$ are not excluded. The retained `tmp/sources/may-concise-errata.pdf` has no p.169 entry; Michael Paluch's Lecture 39, pp.111--112, repeats the same chart chain rather than repairing it.
+
+- **Impact and owner:** the May-based solution installed in `3ce2e79ef9` was not a proof of the exercise. The boundary-class theorem itself is not counterexampled. This entry records a verified defect in the cited argument, not an ambiguity in Hatcher's statement.
+
+- **Uncertainty:** the counterexample and the reversed inclusion were checked directly against the retained revised May PDF, printed p.169. No correction to May's chain is claimed here; the absence statement is limited to the one-page official errata file actually inspected.
+
+- **Repair:** `E-HAT-3.3-31` now uses Glen E. Bredon, *Topology and Geometry*, Chapter VI, §9, Lemma 9.1, printed pp.356--357. Bredon's triple $(M,A\cup B,B)$ proves the compatibility one boundary component at a time; the card supplies the mod-2 and coefficient-change steps for arbitrary $R$ and treats closed components separately. This resolves the card's missing proof without asserting a repaired version of May's chart chain.
+
 ### Field Homework 1, problem 1(a): the invariant subspace must be nonzero
 
 - **Object and need:** `P-FHW1-01` in `SRC-FIELDS-HOMEWORK-1`, whose provenance is `assets/attachments/fields-homework-1.pdf`.

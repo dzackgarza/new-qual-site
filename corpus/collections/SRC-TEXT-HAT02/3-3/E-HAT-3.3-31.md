@@ -99,6 +99,43 @@ audit:
     relative fundamental class using a compact collar complement N in the interior oriented manifold.
     Naturality of the diagram, rather than the invalid earlier e_M/e_D square, concludes delta[M]
     equals the unique boundary fundamental class. R-units, not mere signs, are preserved.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    NOT ACCEPTED: the preceding completion claim and the May-based solution are withdrawn. May's
+    first displayed identification on p.169 is false for his stated chart. Take M=[0,1], x=0,
+    U=[0,epsilon), V={0}, and y in (0,epsilon). Then
+    (M^o,M^o-U^o)=((0,1),[epsilon,1)); both spaces are contractible, so its H_1 is zero, whereas
+    H_1((0,1),(0,1)-{y})=R. This is not an excision isomorphism, and the closed-half-disk variant
+    has the same defect. May's printed inclusion (M-U^o)-{x} to M-U is also not an inclusion in
+    that direction: its source contains V-{x}, which its target omits. The last map is not the
+    claimed excision either. In addition, the p.170 injectivity argument uses H_n(M^o)=0 without
+    excluding closed components of M, although Hatcher's exercise permits them. May's retained
+    Errata.pdf contains no p.169 correction. Michael Paluch's Lecture 39, pp.111-112, repeats the
+    same chain and is not a repaired source. None of these sources is accepted as supplying the
+    compatibility.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Replaces the defective May argument with Glen E. Bredon, Topology and Geometry, Chapter VI,
+    Section 9, Lemma 9.1, printed pp.356-357 (PDF page 193 of the retained scan). Bredon proves
+    [boundary M]=boundary_*[M] by using the triple (M,A union B,B) for one boundary component A
+    at a time, not the false chart chain. The integral argument and its torsion-free cokernel were
+    checked against the page image. The solution also checks the mod-2 case, coefficient-change
+    naturality for arbitrary R, unit multiples of fundamental classes, and the componentwise
+    reduction; closed components therefore need no global injectivity assertion.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Read the replacement proof in full. The required compatibility is supplied by Bredon's exact
+    sequence and excision to each boundary component. In the integral case the cokernel is
+    torsion-free, forcing the map between infinite cyclic groups to be onto; in the mod-2 case the
+    exact sequence is 0 to Z_2 to Z_2. Naturality under Z to R, or under Z_2 to R when 2R=0,
+    gives the arbitrary-R statement up to the global unit on each connected component. The
+    bracketed question on E-HAT-3.3-21 is a separate open item and is unchanged.
 
 ---
 
@@ -107,42 +144,33 @@ Show that if $M$ is a compact $R$-orientable $n$-manifold, then the boundary map
 :::
 
 ::: {.solution}
-Use the collar existence theorem (Hatcher Proposition 3.42, p. 249), since $M$ is compact, and the boundary-orientation argument in **J. P. May, *Concise Course in Algebraic Topology*, §21.4, "Poincaré duality for manifolds with boundary", printed pp. 169--170**, held at `tmp/sources/may-concise-algebraic-topology.pdf`. In particular, the definition at the start of that section says that $M$ being $R$-orientable means that its interior $M^\circ=M\setminus\partial M$ is $R$-orientable as a manifold without boundary.
+Use **Glen E. Bredon, *Topology and Geometry*, Chapter VI, §9, Lemma 9.1, printed pp. 356--357** (PDF page 193 of `tmp/sources/bredon-topology-and-geometry.pdf`). Bredon proves precisely the required compatibility, $[\partial M]=\partial_*[M]$. The following is his argument, with the coefficient and disconnected cases made explicit.
 
-Fix $x\in\partial M$ and let $U$ be a half-disk boundary chart around $x$, with $U\cong D^n_+=\{(u_1,\dots,u_n)\in D^n:u_n\ge0\}$. Let $V=U\cap\partial M$ be its flat face and choose an interior point $y\in U^\circ=U\setminus V$. May's sequence of identifications is
-$$
-H_n(M^\circ,M^\circ-U^\circ)
-\xrightarrow[\cong]{\operatorname{exc}}
-H_n(M^\circ,M^\circ-y)
-\cong H_n(M,M-y),
-$$
-with the unique class in the first term restricting to the orientation at $y$. The boundary homomorphism for the triple $(M,M-U^\circ,M-U)$ then gives
-$$
-\delta_x:H_n(M^\circ,M^\circ-y)
-\xrightarrow{\ \cong\ }H_{n-1}(M-U^\circ,M-U).
-$$
-The left isomorphism is excision. The inclusion $(M-U^\circ)-\{x\}\hookrightarrow M-U$ is a homotopy equivalence, which identifies its bottom group with
-$$
-H_{n-1}(\partial M,\partial M-x).
-$$
-Finally, excising $M^\circ-U^\circ$ identifies this last group with
-$$
-H_{n-1}(\partial M,\partial M-V).
-$$
-These are the precise identifications in **May's Proposition**, p. 169. The homomorphism $\delta$ of the triple is an isomorphism because
-$$
-H_*(M,M-U)=0.
-$$
-Consequently, $\delta_x$ carries the given local orientation at $y$ to a generator (a unit multiple, not merely a sign) of $H_{n-1}(\partial M,\partial M-x)$.
+Compactness leaves only finitely many components of $M$. The long exact sequences of the pairs and the local characterization of fundamental classes split over these components, so we may assume that $M$ is connected. A closed component has empty boundary and needs no further argument; in particular, no global injectivity claim is required. Assume now that $\partial M\ne\varnothing$.
 
-For the relative fundamental class itself, May's next proposition (p. 170) proceeds as follows. Let $N$ be the part of $M$ outside a collar. Then $N$ is compact in $M^\circ$, and the collar gives May's natural identification
+First take integral coefficients and suppose that $M$ is orientable. Let $A$ be a component of $\partial M$ and put $B=\partial M\setminus A$. The exact sequence of the triple $(M,A\cup B,B)$ contains
 $$
-H_n(M,\partial M;R)\cong H_n(M^\circ,M^\circ-N;R).
+H_n(M,B)\longrightarrow H_n(M,\partial M)
+\xrightarrow{\ \partial_A\ }H_{n-1}(\partial M,B)
+\longrightarrow H_{n-1}(M,B).
 $$
-As in May's displayed argument: $N$ is compact in the noncompact oriented manifold $M^\circ$, so Lemma 3.27(a) (p. 236) supplies a unique class in $H_n(M^\circ,M^\circ-N;R)$ restricting to the chosen orientation at every interior point. Its image $[M]\in H_n(M,\partial M;R)$ is the relative fundamental class. Since a compact collar also identifies $H_n(M)$ and $H_n(M^\circ)$, the vanishing theorem of Proposition 3.29 gives $\delta:H_n(M,\partial M)\hookrightarrow H_{n-1}(\partial M)$.
+Excision identifies $H_{n-1}(\partial M,B)$ with $H_{n-1}(A)$. If $c$ is a representative relative cycle for $[M]$, then $\partial_A[M]$ is represented by the part of $\partial c$ lying in $A$. Thus surjectivity of $\partial_A$ is exactly what is needed for this boundary component.
 
-At this point naturality is the content of May's naturality diagram, not a newly asserted excision: the boundary of $[M]$ restricts under $\delta_x$ exactly to the unique generator determined by the induced boundary orientation from Exercise 30. This holds for every $x\in\partial M$, and there is only one class with this local restriction. Since $\partial M$ is compact, Lemma 3.27(a) applied to $\partial M$ identifies that section as $[\partial M]$; uniqueness gives
+Bredon's collar and orientation-sheaf computation gives $H_n(M,B;G)=0$ for every coefficient group $G$: after excision this is a compactly supported section group over the connected noncompact manifold $M^\circ\setminus(B\times(0,1))$. Taking $G=\QQ/\ZZ$ and applying the universal coefficient theorem shows that $H_{n-1}(M,B;\ZZ)$ is torsion-free. The displayed exact sequence therefore becomes
 $$
-\boxed{\partial[M]=[\partial M].}
+0\longrightarrow H_n(M,\partial M;\ZZ)
+\xrightarrow{\ \partial_A\ }H_{n-1}(A;\ZZ)
+\longrightarrow \text{a torsion-free group}.
+$$
+Here $H_n(M,\partial M;\ZZ)\cong\ZZ$, while $H_{n-1}(A;\ZZ)$ is either $\ZZ$ or $0$ according as $A$ is orientable. Since the cokernel is torsion-free, the second group must be $\ZZ$ and $\partial_A$ must be onto. Hence $\partial_A$ is multiplication by $\pm1$. Doing this for every $A$ proves Bredon's identity
+$$
+\partial_*[M]_{\ZZ}=[\partial M]_{\ZZ}.
+$$
+
+The same argument with $\ZZ_2$ coefficients requires no orientability hypothesis. Both $H_n(M,\partial M;\ZZ_2)$ and $H_{n-1}(A;\ZZ_2)$ are $\ZZ_2$, so the beginning of the exact sequence is $0\to\ZZ_2\to\ZZ_2$ and $\partial_A$ is an isomorphism. This is the unrestricted $\ZZ_2$ case that Bredon also records in Theorem 9.2 on p. 357. Thus the mod-$2$ fundamental class satisfies the same boundary identity.
+
+For general $R$, use naturality of connecting homomorphisms under change of coefficients. If $M$ is $\ZZ$-orientable, apply $\ZZ\to R$ to Bredon's identity. Otherwise, an $R$-orientation forces $2R=0$: on the connected orientation double cover of $M^\circ$, the pullback orientation is invariant under the deck transformation but is also negated by it. Apply $\ZZ_2\to R$ to the mod-$2$ identity instead. In either case coefficient change preserves the local-generator condition, so it carries fundamental classes to fundamental classes and commutes with $\partial_*$. On a connected component, any two $R$-fundamental classes differ by a global unit of $R$. Therefore every $R$-fundamental class, not merely one obtained by coefficient change, has boundary equal to an $R$-fundamental class of $\partial M$. Summing over the components of $M$ gives
+$$
+\boxed{\partial_*[M]_{R}=[\partial M]_{R}.}
 $$
 :::
