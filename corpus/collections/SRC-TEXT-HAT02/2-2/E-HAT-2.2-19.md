@@ -35,6 +35,19 @@ audit:
 
     Rerun on the supported Sage development image: Sage 11.0.beta5, Python 3.14.10, source
     HEAD b0cd7d86e2, all checks passing there.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Statement matches Exercise 19 as printed on p. 157. Recomputed the alternating pattern by
+    hand on (n,m) = (2,1), (3,0), (3,1), (4,0), (4,2): with d_{m+1} = 0 and d_i = 1+(-1)^i
+    for i > m+1, H_{m+1} is Z for m odd and Z_2 for m even, H_i is Z_2 for odd i and 0 for
+    even i strictly between, and H_n is Z for odd n and 0 for even n. Results now cited:
+    Example 0.4 p. 6 and Example 2.42 p. 144 for the cells and the projective boundary
+    d_i = 1+(-1)^i, the Cellular Boundary Formula p. 141 for why d_i above dimension m+1 is
+    unchanged by the collapse, Proposition 2.22 p. 124 for H_i(RP^n/RP^m) = H_i(RP^n,RP^m),
+    and Theorem 2.35 p. 139 for cellular equals singular. Added the missing statement that
+    the groups vanish in degrees 1 to m. What is not covered: no certificate.
 ---
 
 ::: {.problem}
@@ -51,6 +64,7 @@ The quotient CW structure has one $0$-cell and one cell in each dimension
 $$
 m+1,m+2,\dots,n.
 $$
+The cells of $\RP^n$ are one in each dimension (Example 0.4, p. 6, and Example 2.42, p. 144) and $\RP^m$ is a subcomplex, so $Y$ is a CW complex and $(Y,\ast)$ is a good pair; by Proposition 2.22 (p. 124), $H_i(Y)=H_i(\RP^n,\RP^m)$.
 Thus its reduced cellular chain groups are
 $$
 \widetilde C_i(Y)\cong
@@ -67,7 +81,7 @@ d_i=
 0,&i\text{ odd},
 \end{cases}
 $$
-while $d_{m+1}=0$ because its target chain group has been collapsed away.
+which is $d_i=1+(-1)^i$ in Example 2.42 (p. 144); it is unchanged by the collapse because the Cellular Boundary Formula (p. 141) computes its entries as degrees of maps into the $(i-1)$-skeleton, which for $i-1\ge m+1$ is the same in $Y$ as in $\RP^n$. On the other hand $d_{m+1}=0$ because its target chain group has been collapsed away.
 
 ::: pf
 
@@ -145,9 +159,9 @@ There is no incoming boundary from degree $n+1$. Thus top homology is $\ker d_n$
 ::: pf-step
 Finally $Y$ is connected, so
 $$
-H_0(Y)\cong\ZZ.
+H_0(Y)\cong\ZZ,
 $$
-Together steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give all homology groups of $\RP^n/\RP^m$.
+and for $1\le i\le m$ there are no $i$-chains at all, so $\widetilde H_i(Y)=0$. The cellular groups computed above are the singular homology groups by Theorem 2.35 (p. 139). Together steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give all homology groups of $\RP^n/\RP^m$.
 :::
 
 :::
