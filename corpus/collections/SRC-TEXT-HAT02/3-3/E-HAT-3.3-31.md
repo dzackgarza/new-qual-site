@@ -74,6 +74,18 @@ audit:
     corrected: over an arbitrary coefficient ring R a generator is u[D] with u in R's unit group,
     not necessarily +-D, and the boundary normalization carries that unit.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    SOURCE DEFERRED, NOT VERIFIED. The local excision in the preceding draft maps from
+    H_{n-1}(V,V-x) into H_{n-1}(boundary M,boundary M-x) and H_{n-1}(boundary D,boundary D-x);
+    it was incorrectly applied to ambient elements in the proposed equality. The asserted chain
+    compatibility was also not constructed. That continuation is now removed and marked deferred.
+    Sam has no Ex.31 and the Math 538 sheets have no Ex.31, so the required published solution with
+    exact page citations is missing locally. Earlier source-corrected events on this card do not
+    constitute a completed source-backed proof under the current source requirement.
+
 ---
 
 ::: {.problem}
@@ -104,39 +116,7 @@ D/\partial D\xrightarrow{\ \cong\ }M/A
 $$
 because everything outside $D$ is contained in $A$. Proposition 2.22, p. 124, therefore gives the first isomorphism; the second is the pair sequence of $(D,\partial D)$, with $\partial D\cong S^{n-1}$. In particular $H_2(D,\partial D;R)=R$ for a disk or a half-disk in an annulus, in contrast to the zero group of a pair of two contractible disks.
 
-I next check that the image of $[M]$ in $H_n(M,A;R)$ is a generator. Pick an interior point $z\in U-V$. Since $A\subset M-\{z\}$, the image of $[M]$ in $H_n(M,A;R)$ maps under the pair inclusion to its local orientation in $H_n(M,M-\{z\};R)$, which is a generator by the first paragraph. As $H_n(M,A;R)$ also has the single generator $[D]$ coming from $H_n(D,\partial D;R)$, the image of $[M]$ is $u[D]$ for a unit $u\in R^\times$ (and the local restriction map is an isomorphism onto $H_n(M,M-\{z\};R)$).
+**Published solution required; the rest of this proof is deferred.** The retained solution sets contain no solution to Hatcher §3.3 Exercise 31: Sam's §3.3 coverage is Exercises 8, 17 and 32, and the Math 538 sheets cover Exercises 3, 4, 6, 7, 8, 9 and 17. Accordingly, this card has no accepted source-backed proof.
 
-It remains to pass to the boundary at $x$. Ordinary excision, deleting $\partial M-V$ from the pair $(\partial M,\partial M-\{x\})$, gives
-$$
-H_{n-1}(V,V-\{x\};R)\cong H_{n-1}(\partial M,\partial M-\{x\};R):
-$$
-indeed $V=U\cap\partial M$ is open in $\partial M$ and $x\in V$, and $(\partial M-\{x\})-(\partial M-V)=V-\{x\}$. It is the same computation as Exercise 7's excision, but with the pair $(\partial M,\partial M-\{x\})$, not with $(\partial M,\partial M-V)$. Likewise, on $\partial D\cong S^{n-1}$,
-$$
-H_{n-1}(V,V-\{x\};R)\cong H_{n-1}(\partial D,\partial D-\{x\};R).
-$$
-
-Now define the local boundary $\partial_{D,x}$ as the composite
-$$
-H_n(D,\partial D;R)\xrightarrow{\ \partial\ }
-H_{n-1}(\partial D;R)\longrightarrow H_{n-1}(\partial D,\partial D-\{x\};R).
-$$
-Write $e_D:H_{n-1}(V,V-\{x\};R)\to H_{n-1}(\partial D,\partial D-\{x\};R)$ and $e_M:H_{n-1}(V,V-\{x\};R)\to H_{n-1}(\partial M,\partial M-\{x\};R)$ for the two excision isomorphisms above, and let $r_D$ and $r_M$ be the two maps induced on local homology by inclusion. The required comparison is the equality
-$$
-e_M\bigl(r_M(\delta[M])\bigr)
- =u\,e_D\bigl(\partial_{D,x}[D]\bigr)
- \qquad\text{in }H_{n-1}(V,V-\{x\};R),
-$$
-where $u\in R^\times$ is the unit already found. To see it, localize the relative fundamental class to a representative of $[D]$ via the good-pair quotient comparison. Applying $\partial$ and restricting to the open face $V$ commute with that localization: in either order one obtains the same sum of the boundary simplices lying in the open face. This is naturality of the connecting map on the corresponding relative singular chain complexes, restricted to the displayed local pairs; no map through $H_{n-1}(\partial M,\partial M-V)$ is involved.
-
-Now $H_n(D,\partial D;R)\cong R$ and $H_{n-1}(\partial D;R)\cong R$ for $n\ge2$, with $\delta$ an isomorphism by the pair sequence because $D$ is contractible. For $n=1$, the reduced pair sequence gives $H_1(D,\partial D;R)\cong\widetilde H_0(S^0;R)\cong R$, while the unreduced local groups are $H_0(S^0,S^0-\{x\};R)\cong H_0(V;R)\cong R$ because $V=\{x\}$. In every dimension the boundary map sends $[D]$ to a fundamental class $[\partial D]$, with its unit of normalization determined by Exercise 30's collar convention. Hence $\delta[M]$ maps to a generator of
-$$
-H_{n-1}(\partial M,\partial M-\{x\};R),
-$$
-with coefficient $u$ times the image of the local fundamental class.
-Its normalization is exactly the unit fixed by Exercise 30's product orientation of the collar: the relative class comes from an oriented interior disk times the collar interval, and $\partial$ picks out that interval's endpoint.
-
-Since $x$ was arbitrary, $\delta[M]$ restricts to a local orientation generator at every boundary point. As $M$ is compact, $\partial M$ is compact, so Lemma 3.27(a), p. 236, with $A=\partial M$ identifies this section with the fundamental class of $\partial M$. Hence
-$$
-\delta[M]=[\partial M].
-$$
+The deleted continuation used $e_M$ and $e_D$, defined *from* $H_{n-1}(V,V-\{x\};R)$ *into* the ambient local groups, but applied them to ambient elements; multiplying on the other side would have required their inverses. Its claimed equality also lacked a construction of the required chain-compatibility maps. Those claims are withdrawn rather than replaced by a newly derived argument. Needed source: a published solution set covering §3.3 Exercise 31 with stable printed-page locators.
 :::
