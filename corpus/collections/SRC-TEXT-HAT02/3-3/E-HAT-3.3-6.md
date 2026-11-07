@@ -64,6 +64,19 @@ audit:
     good-pair justification of H_i(M,S^{n-1}) = H_i(M_1 v M_2). The earlier note below on
     H_n(N_i;Q) belonged to the route this rewrite replaced.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Two proof defects in the previous revision. (1) The orientability converse argued from the
+    injection H_n(M) -> H_n(M_1) + H_n(M_2) that both summands must be Z, which is false (Z injects
+    into Z + 0); what settles it is the computation of ker psi already made in the three cases —
+    psi is an isomorphism on the summand of an orientable factor and zero on a nonorientable one, so
+    ker psi = Z exactly when both factors are orientable. The paragraph now says that. (2) The
+    rewrite had dropped the case n = 1; it is restored and settled against the printed exercise: a
+    closed connected 1-manifold is a circle, so the connected sum is S^1, part (a) is vacuous there
+    (0 < i < 1) and part (b) reads 0 = 0 + 0 - 0.
+
 ---
 
 ::: {.problem}
@@ -97,7 +110,9 @@ If exactly one is orientable, $\psi:\ZZ\to\ZZ$ is an isomorphism, so $H_n(M)=0$,
 
 If neither is orientable, $\psi=0$ and $0\to\ZZ\to H_{n-1}(M)\to H_{n-1}(M_1)\oplus H_{n-1}(M_2)\to0$ is exact. In this case $M$, $M_1$ and $M_2$ are all nonorientable, so Corollary 3.28 (p. 238) gives torsion $\ZZ_2$ to $H_{n-1}$ of each of them; hence $H_{n-1}(M)=\ZZ\oplus F\oplus\ZZ_2$ while $H_{n-1}(M_1)\oplus H_{n-1}(M_2)=F\oplus\ZZ_2\oplus\ZZ_2$ with $F$ free. One of the two $\ZZ_2$ summands is replaced by a $\ZZ$ summand, as claimed.
 
-Conversely, if $M_1\sharp M_2$ is orientable then $H_n(M)=\ZZ$ injects into $H_n(M_1)\oplus H_n(M_2)$, which forces both summands to be $\ZZ$, so both $M_i$ are orientable. Hence the connected sum is orientable exactly when both summands are, which is what the case distinction above uses.
+For $n=1$ a closed connected $1$-manifold is a circle, so $M_1\sharp M_2=S^1$: part (a) has no degrees to prove, its range $0<i<1$ being empty, and part (b) reads $0=0+0-0$, both sides being $\chi(S^1)$.
+
+The three cases also settle orientability, since $H_n(M)=\ker\psi$. The map $\psi$ is the sum of the two boundary maps $H_n(M_i)\to H_{n-1}(S^{n-1})$, and each of those is an isomorphism when $M_i$ is orientable (so $H_n(M_i)=\ZZ$) and zero when it is not (so $H_n(M_i)=0$); hence $\ker\psi\cong\ZZ$ exactly when both $M_i$ are orientable and $\ker\psi=0$ otherwise. So $M_1\sharp M_2$ is orientable exactly when both summands are, which is what the torsion step in the third case uses.
 
 For $n=2$ the same three cases apply with the sequence read in reduced homology, where $\widetilde H_0(S^1)=0$ replaces the copy of $\ZZ$ that appears at $i=0$ in the unreduced sequence; the conclusions, and the torsion statement of Corollary 3.28, are unchanged.
 
