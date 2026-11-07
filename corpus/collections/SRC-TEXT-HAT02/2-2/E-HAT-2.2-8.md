@@ -96,7 +96,7 @@ Multiplication by $a_m\ne0$ is orientation preserving as a real linear map of $\
 $$
 z^m=w
 $$
-has exactly $m$ distinct roots. Near each root the derivative $mz^{m-1}$ is nonzero and complex multiplication by a nonzero complex number preserves the real orientation. Hence each preimage contributes local degree $+1$, so the total degree is $m$.
+has exactly $m$ distinct roots. Near each root the derivative $mz^{m-1}$ is nonzero and complex multiplication by a nonzero number preserves the real orientation, so each of the $m$ points of the finite preimage of the regular value $w$ contributes local degree $+1$; by Proposition 2.30 (Hatcher p. 136) the degree of the compactified map is the sum of the local degrees over the finite preimage of $w$, so the total degree is $m$.
 
 Therefore
 $$
@@ -118,7 +118,7 @@ $$
 f(z)=(z-z_0)^k g(z),
 \qquad g(z_0)\ne0.
 $$
-Choose a small circle $\abs{z-z_0}=\varepsilon$ on which $g$ has no zero. The local degree equals the winding number around $0$ of the image of this circle under $f$. The factor $(z-z_0)^k$ winds exactly $k$ times. The loop $g(z)$ is homotopic in $\CC^*$ to the constant loop $g(z_0)$ when $\varepsilon$ is small, so it contributes winding number $0$. Hence the total winding number, and therefore the local degree, is $k$.
+Choose a small circle $\abs{z-z_0}=\varepsilon$ on which $g$ has no zero, and let $D$ be the disk it bounds. By the definition of local degree (Hatcher p. 136) the local degree of $\widehat f$ at $z_0$ is the degree of the map $f/\abs{f}:\partial D\to S^1$ for $\varepsilon$ small enough that $f$ maps $D$ into a disk around $0$ containing no other zero, with $H_2(S^2)\cong\ZZ$ from Corollary 2.14 (p. 114); that degree is the winding number around $0$ of the image loop. The factor $(z-z_0)^k$ winds exactly $k$ times about $0$. The loop $g(z)$ is homotopic in $\CC^\times$ to the constant loop $g(z_0)$, for $\varepsilon$ small, by the straight-line homotopy through $g$ restricted to $\partial D$, which avoids $0$; so it contributes winding number $0$. Hence the total winding number, and therefore the local degree, is $k$.
 
 :::
 
