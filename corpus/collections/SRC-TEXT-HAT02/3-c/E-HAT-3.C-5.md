@@ -30,6 +30,14 @@ audit:
     the same computation with the other pair of unit homotopies; hence $[f*g]=[g*f]$. The
     half-interval identities used are $(f*c_e)(t)=f(2t)$ and $(c_e*g)(t)=g(2t-1)$ on the two
     halves, which are checked.
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Published source located and compared: Steven V. Sam, Solutions to Algebraic Topology (2008),
+    SS3.C Exercise 5, printed p.16 — the same two-orderings argument, written with the pointwise
+    product and concatenation in the opposite notation. The card's steps s2 and s3 are that
+    argument, so the card now cites it; no step of the proof was changed.
 ---
 
 ::: {.problem}
@@ -197,6 +205,8 @@ $$
 [f][g] = [f * g] = [f \odot g] = [g * f] = [g][f].
 $$
 Thus $\pi_1(X, e)$ is an abelian group.
+
+This is the published solution of Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.C Exercise 5, printed p.16: he writes $\cdot$ for the pointwise product and $*$ for concatenation, shows $h*h' \simeq (h\cdot 1)*(1\cdot h') \simeq h\cdot h'$ and, with the two factors exchanged, $h\cdot h' \simeq (1\cdot h')*(h\cdot 1) \simeq h'*h$, and concludes $h*h' \simeq h'*h$. The card's steps #s2 and #s3 are those two chains of homotopies, one written out on each half of the interval.
 
 ::: pf-proof
 Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
