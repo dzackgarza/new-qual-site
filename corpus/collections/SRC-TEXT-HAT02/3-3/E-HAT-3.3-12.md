@@ -42,6 +42,15 @@ audit:
     Read the construction: a relation of $r_k$ as $j$ commutators turns the attaching words into a
     map $M_j\to M_k$ carrying the $2$-cell once over the $2$-cell, hence of degree $\pm1$, which
     Exercise 11 forbids when $j<k$.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    The stored solution claimed degree 1 while this card's own earlier review note said $\pm1$; the
+    solution now agrees: the composite with the collapse $M_k\to M_k/M_k^1=S^2$ carries the open
+    2-cell homeomorphically onto $S^2$ minus the basepoint, so the degree is $\pm1$ and the
+    hypothesis the argument needs is only nonvanishing, which is what the previous exercise's
+    converse supplies. No other change; the attaching-word construction is unchanged.
 ---
 
 ::: {.problem}
@@ -78,7 +87,7 @@ which is exactly the attaching loop of the $2$-cell of $M_k$. Hence $g$ extends 
 $$
 f:M_j\to M_k
 $$
-that maps the source $2$-cell once over the target $2$-cell. Therefore $f$ has degree $1$.
+that carries the interior of the source $2$-cell homeomorphically onto the interior of the target $2$-cell. The composite $M_j\to M_k\to M_k/M_k^1=S^2$ is then a homeomorphism from that open $2$-cell onto the complement of the basepoint, so $f$ has degree $\pm1$, the sign depending on the two chosen fundamental classes; only the nonvanishing of the degree is used below.
 
-By Exercise 11, a degree-$1$ map $M_j\to M_k$ can exist only if $j\ge k$. This contradicts $j<k$. Thus $r_k$ cannot be expressed as a product of fewer than $k$ commutators.
+By the converse direction proved with Exercise 11, a map $M_j\to M_k$ of nonzero degree can exist only if $j\ge k$. This contradicts $j<k$. Thus $r_k$ cannot be expressed as a product of fewer than $k$ commutators.
 :::
