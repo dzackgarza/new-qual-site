@@ -119,7 +119,9 @@ Thus
 $$
 \boxed{r\text{ can be homotoped to a fixed-point-free map}.}
 $$
-This is consistent with Exercise 4: $\tau(r)=\chi(F)=0$ because $F$ is a disjoint union of circles.The annulus-based perturbation is in **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, Exercise 2.C.3 (Hatcher 2.C.5), printed p. 45 (`tmp/sources/hatcher-solutions-guanyu-li.pdf`). The displayed isotopy is the explicit realization of that argument: it twists the fixed circles in their $r$-invariant annuli while doing nothing outside, and the consistency check $\tau(r)=\chi(C_1\sqcup\cdots\sqcup C_r)=0$ uses the previous exercise.
+This is consistent with Exercise 4: $\tau(r)=\chi(F)=0$ because $F$ is a disjoint union of circles.
+
+The annulus-based perturbation is in **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, Exercise 2.C.3 (Hatcher 2.C.5), printed p. 45 (`tmp/sources/hatcher-solutions-guanyu-li.pdf`). The displayed isotopy is the explicit realization of that argument: it twists the fixed circles in their $r$-invariant annuli while doing nothing outside, and the consistency check $\tau(r)=\chi(C_1\sqcup\cdots\sqcup C_r)=0$ uses the previous exercise.
 
 
 :::
