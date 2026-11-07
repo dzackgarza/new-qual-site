@@ -145,5 +145,7 @@ commutes.
 
 :::
 
-Thus cellular homology is natural for cellular maps.
+Thus cellular homology is natural for cellular maps.This matches Steven V. Sam, *Solutions to Algebraic Topology* (2008), §2.2 Exercise 17, printed p. 11, locally `tmp/sources/hatcher-solutions-sam-2008.pdf`. In particular, the restriction of a cellular map to each $(X^n,X^{n-1})$ is a map of pairs, the connecting and inclusion-induced maps are natural, and therefore the comparison isomorphism for cellular and singular homology is natural in exactly the sense shown here.
+
+
 :::
