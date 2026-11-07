@@ -34,6 +34,16 @@ audit:
     C_*(X;Z_2), the transfer is the diagonal, projection is addition, and c maps to (c,0) is a
     chain section of projection. Consequently all connecting homomorphisms are zero, not merely
     zero on a homology calculation suggested by the reader.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Read Hatcher pp.174-175 in the actual book: p.174 defines the two-lift transfer and proves
+    surjectivity of projection, and p.175 identifies the transfer image with its exactness
+    kernel before passing to homology. This is a complete published chain-level argument whose
+    specialization to X times S^0 is precisely the displayed diagonal/sum sequence and split
+    section in the card. Corrected the citation from pp.173-174 to pp.174-175 and checked the
+    trivial covering against Hatcher p.177 Exercise 9. The #105 source obligation is covered.
 ---
 
 ::: {.problem}
@@ -41,13 +51,14 @@ Make the transfer sequence explicit in the case of a trivial covering $\tilde{X}
 :::
 
 ::: {.solution}
-Read **Hatcher's transfer construction, §2.B, printed pp. 173--174**, for the covering $X\times S^0\to X$. This gives the complete chain-level computation; no separate exactness argument is needed.
+Hatcher's complete published transfer construction in **§2.B, printed pp. 174--175**, specializes directly to $X\times S^0\to X$. He defines the short exact sequence of chain complexes by sending a singular simplex to the sum of its two lifts and projecting from the total space. The computation below carries out that construction in the two-sheet coordinates; no separate exactness argument is needed.
 
-Use $\ZZ_2$ coefficients, as in the transfer sequence of §2.B. Since $X\times S^0=X\amalg X$, its singular chain complex is $C_*(X;\ZZ_2)\oplus C_*(X;\ZZ_2)$. In these coordinates the transfer and projection are
-$$
-\tau(c)=(c,c),\qquad p_\#(a,b)=a+b.
-$$
-Thus the short exact sequence defining Hatcher's transfer sequence is
+Use $\ZZ_2$ coefficients, as in the transfer sequence of §2.B.
+
+::: pf
+
+::: {.pf-step #trivial-chains}
+In two-sheet coordinates the transfer and projection are $\tau(c)=(c,c)$ and $p_\#(a,b)=a+b$, giving the exact sequence
 $$
 0\longrightarrow C_*(X;\ZZ_2)
 \xrightarrow{\Delta}
@@ -55,7 +66,24 @@ C_*(X;\ZZ_2)^2
 \xrightarrow{+}
 C_*(X;\ZZ_2)\longrightarrow0.
 $$
-The diagonal is injective, the sum is surjective, and its kernel is the diagonal because the coefficients have characteristic two. The sequence splits as a sequence of chain complexes: $c\mapsto(c,0)$ is a section of the sum map. Consequently every connecting homomorphism vanishes, and the transfer sequence is the split short exact sequence
+
+::: pf-proof
+Since $X\times S^0=X\amalg X$, its singular chain complex is $C_*(X;\ZZ_2)\oplus C_*(X;\ZZ_2)$. The two lifts of a base simplex are its images in the two copies, hence $\tau(c)=(c,c)$; projection adds them. The diagonal is injective, addition is surjective, and $(a,b)$ lies in its kernel exactly when $b=-a=a$ in characteristic two, which is exactly the diagonal image.
+:::
+
+:::
+
+::: {.pf-step #chain-section}
+The short exact sequence in step [](#trivial-chains){.pf-ref} splits as a sequence of chain complexes.
+
+::: pf-proof
+The chain map $s(c)=(c,0)$ satisfies $p_\#\circ s=\operatorname{id}$, so it is a section of projection.
+:::
+
+:::
+
+::: pf-step
+All connecting homomorphisms vanish, and the transfer sequence is the split short exact sequence
 $$
 0\longrightarrow H_n(X;\ZZ_2)
 \xrightarrow{x\mapsto(x,x)}
@@ -64,4 +92,12 @@ H_n(X;\ZZ_2)^2
 H_n(X;\ZZ_2)\longrightarrow0
 $$
 in each degree $n$.
+
+::: pf-proof
+By step [](#chain-section){.pf-ref}, the long exact sequence associated to a split short exact sequence of chain complexes has zero connecting homomorphisms. Exactness at each term therefore gives the displayed homology sequence.
+:::
+
+:::
+
+:::
 :::
