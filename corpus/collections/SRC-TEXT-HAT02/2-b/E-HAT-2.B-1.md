@@ -64,11 +64,7 @@ Compute $H_i(S^n - X)$ when $X$ is a subspace of $S^n$ homeomorphic to $S^k \vee
 :::
 
 ::: {.solution}
-We use Alexander duality in the form
-$$
-\widetilde H_i(S^n-X;\ZZ)\cong \widetilde H^{\,n-i-1}(X;\ZZ)
-$$
-for these compact locally contractible subspaces of $S^n$.
+Use DeMason's reduced Mayer--Vietoris decompositions for both cases, printed pp. 68--70. Proposition 2B.1(b) supplies the homology of the complement of an individual sphere, and the cover and the reduced sequence are compared term by term.
 
 ::: pf
 
@@ -108,7 +104,7 @@ $$
 
 ::: pf-proof
 
-Apply Alexander duality to step [](#s1){.pf-ref}, replacing the cohomological degree $j$ by $n-i-1$.
+Use DeMason's cover $A$ and $B$ adapted to the two sphere factors $X_k$ and $X_\ell$. Their union is $S^n-p$, where $p$ is the wedge point, hence is contractible; their intersection is $S^n-(X_k\cup X_\ell)$, with $X_k\cap X_\ell=\{p\}$. Relative reduced Mayer--Vietoris gives the direct sum of the two individual sphere-complement contributions, with the degree shift. This is the published proof, not an assertion of equivalence with a different one.
 
 :::
 
@@ -116,7 +112,7 @@ Apply Alexander duality to step [](#s1){.pf-ref}, replacing the cohomological de
 
 ::: pf-step
 
-If $X=S^k\amalg S^\ell$, following DeMason on pp. 68--70, separate the two sphere factors with open neighborhoods $A$ and $B$ which deformation retract onto $S^n-X_k$ and $S^n-X_\ell$, where $X_k\cong S^k$ and $X_\ell\cong S^\ell$. Their union is $S^n$, and a suitably smaller intersection deformation retracts to $S^n-X$. Proposition 2B.1(b) supplies the complement of each individual sphere, and reduced Mayer--Vietoris compares these groups with $S^n-X$ and $S^n$.
+If $X=S^k\amalg S^\ell$, DeMason's construction uses $A$, an open set having the homology of $S^n-X_k$, and $B$, an open set having the homology of $S^n-X_\ell$. The sphere factors are disjoint, so these sets cover $S^n$, and their intersection deforms to $S^n-X$. Reduced Mayer--Vietoris then compares the individual sphere complements in Proposition 2B.1(b) with $S^n-X$ and $S^n$.
 
 For $k,\ell\ge1$ this gives copies of $\ZZ$ in the two dimensions $n-k-1$ and $n-\ell-1$, together with one additional copy in degree $n-1$. If two of these dimensions coincide, the corresponding contributions add rather than being counted as one group; in particular $k=\ell$ gives $\ZZ^2$ there.
 
@@ -142,7 +138,7 @@ These are exactly the sphere/complement computations on pp. 68--70, with the com
 
 The unreduced group $H_0$ is obtained, as usual, by adjoining one copy of $\ZZ$ to $\widetilde H_0$.
 
-The two decompositions and their sphere-class computations are in **Kenneth DeMason, *M382C Full Credit HW Problems* (4 April 2021)**, Hatcher 2.B.1, printed pp. 68--70. The present proof collates those cases by Alexander duality, which applies here because a sphere is compact and locally contractible (Theorem 3.45, p. 254 of Hatcher). In the disjoint union case, as in the source, the extra reduced component class accompanies the sphere classes only once their indices are summed; the unreduced $H_0$ is obtained afterward.
+The source is **Kenneth DeMason, *M382C Full Credit HW Problems* (4 April 2021)**, Hatcher 2.B.1, printed pp. 68--70, also held locally at `tmp/sources/demason-m382c-hatcher-20210404.pdf`. The wedge and the disjoint-union arguments above follow its sphere-factor covers and reduced Mayer--Vietoris sequences. Their degree-zero component counts are kept separate in the disjoint case, and the unreduced $H_0$ is obtained afterward.
 
 
 :::
