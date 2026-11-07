@@ -35,7 +35,7 @@ Recall that
 $$
 \beta_h([f])=[h\cdot f\cdot\bar h]
 $$
-for $[f]\in\pi_1(X,x_1)$.
+for $[f]\in\pi_1(X,x_1)$, with $h$ a path from $x_0$ to $x_1$ (p. 28); composition of path classes is associative up to homotopy and $\bar h\cdot h\simeq c$ (p. 27).
 
 ::: pf
 
@@ -46,7 +46,7 @@ Then $\beta_h=\beta_k$ whenever $h$ and $k$ have the same endpoints.
 
 ::: pf-proof
 
-Since $X$ is path connected, all fundamental groups at different basepoints are isomorphic, so it is enough that $\pi_1(X,x_0)$ is abelian.
+Since $X$ is path connected, all fundamental groups at different basepoints are isomorphic (Proposition 1.5, p. 28), so it is enough that $\pi_1(X,x_0)$ is abelian.
 
 For $[f]\in\pi_1(X,x_1)$, set
 $$
