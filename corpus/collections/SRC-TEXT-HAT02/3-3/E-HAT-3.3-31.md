@@ -86,6 +86,20 @@ audit:
     exact page citations is missing locally. Earlier source-corrected events on this card do not
     constitute a completed source-backed proof under the current source requirement.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Replaces the deferred compatibility attempt with a complete published proof: J. P. May,
+    Concise Course in Algebraic Topology, §21.4, pp.169-170 (project file
+    tmp/sources/may-concise-algebraic-topology.pdf). Across the boundary chart U with flat face V
+    and interior y, the excisions, the collar pair homotopy equivalence, and the connecting
+    isomorphism of the triple (M,M-U^o,M-U) transport the local interior orientation to a generator
+    in H_{n-1}(boundary M,boundary M-x). May's next proposition identifies that class with the
+    relative fundamental class using a compact collar complement N in the interior oriented manifold.
+    Naturality of the diagram, rather than the invalid earlier e_M/e_D square, concludes delta[M]
+    equals the unique boundary fundamental class. R-units, not mere signs, are preserved.
+
 ---
 
 ::: {.problem}
@@ -93,30 +107,42 @@ Show that if $M$ is a compact $R$-orientable $n$-manifold, then the boundary map
 :::
 
 ::: {.solution}
-Let $[M]\in H_n(M,\partial M;R)$ be the relative fundamental class. On p. 250 Hatcher constructs it from the collar identification
-$$
-H_i(M,\partial M;R)\cong
-H_i\bigl(M-\partial M,\partial M\times(0,\varepsilon);R\bigr):
-$$
-its restriction to $H_n(M-\partial M,(M-\partial M)-\{z\};R)$ is the chosen local orientation at every interior point $z$.
+Use the collar existence theorem (Hatcher Proposition 3.42, p. 249), since $M$ is compact, and the boundary-orientation argument in **J. P. May, *Concise Course in Algebraic Topology*, §21.4, "Poincaré duality for manifolds with boundary", printed pp. 169--170**, held at `tmp/sources/may-concise-algebraic-topology.pdf`. In particular, the definition at the start of that section says that $M$ being $R$-orientable means that its interior $M^\circ=M\setminus\partial M$ is $R$-orientable as a manifold without boundary.
 
-Fix $x\in\partial M$. Choose an open half-ball $U\subset M$ around $x$ in a single boundary chart, with $\overline U\cong D^n$ and $V=U\cap\partial M$ an open $(n-1)$-disk in the flat face. Put $D=\overline U$ and
+Fix $x\in\partial M$ and let $U$ be a half-disk boundary chart around $x$, with $U\cong D^n_+=\{(u_1,\dots,u_n)\in D^n:u_n\ge0\}$. Let $V=U\cap\partial M$ be its flat face and choose an interior point $y\in U^\circ=U\setminus V$. May's sequence of identifications is
 $$
-A=M-(U-V)=(M-U)\cup V .
+H_n(M^\circ,M^\circ-U^\circ)
+\xrightarrow[\cong]{\operatorname{exc}}
+H_n(M^\circ,M^\circ-y)
+\cong H_n(M,M-y),
 $$
-Then $\partial M\subset A$ and $V=\partial M\cap U$, so $(M,A,\partial M-V)$ is a triple. Also $A\cap D=\partial D$: the flat face $V$ is included in $\partial M$, and the curved cap is included in $M-U$.
+with the unique class in the first term restricting to the orientation at $y$. The boundary homomorphism for the triple $(M,M-U^\circ,M-U)$ then gives
+$$
+\delta_x:H_n(M^\circ,M^\circ-y)
+\xrightarrow{\ \cong\ }H_{n-1}(M-U^\circ,M-U).
+$$
+The left isomorphism is excision. The inclusion $(M-U^\circ)-\{x\}\hookrightarrow M-U$ is a homotopy equivalence, which identifies its bottom group with
+$$
+H_{n-1}(\partial M,\partial M-x).
+$$
+Finally, excising $M^\circ-U^\circ$ identifies this last group with
+$$
+H_{n-1}(\partial M,\partial M-V).
+$$
+These are the precise identifications in **May's Proposition**, p. 169. The homomorphism $\delta$ of the triple is an isomorphism because
+$$
+H_*(M,M-U)=0.
+$$
+Consequently, $\delta_x$ carries the given local orientation at $y$ to a generator (a unit multiple, not merely a sign) of $H_{n-1}(\partial M,\partial M-x)$.
 
-The local relative group is computed by
+For the relative fundamental class itself, May's next proposition (p. 170) proceeds as follows. Let $N$ be the part of $M$ outside a collar. Then $N$ is compact in $M^\circ$, and the collar gives May's natural identification
 $$
-H_n(M,A;R)\cong H_n(D,\partial D;R)\cong R .
+H_n(M,\partial M;R)\cong H_n(M^\circ,M^\circ-N;R).
 $$
-This is not excision by deleting a flat boundary patch. Instead, both $(M,A)$ and $(D,\partial D)$ are good pairs: shrinking a boundary-chart half-ball and a collar gives neighborhoods that deformation retract to $A$ and $\partial D$, respectively. The inclusion of pairs induces a homeomorphism
-$$
-D/\partial D\xrightarrow{\ \cong\ }M/A
-$$
-because everything outside $D$ is contained in $A$. Proposition 2.22, p. 124, therefore gives the first isomorphism; the second is the pair sequence of $(D,\partial D)$, with $\partial D\cong S^{n-1}$. In particular $H_2(D,\partial D;R)=R$ for a disk or a half-disk in an annulus, in contrast to the zero group of a pair of two contractible disks.
+As in May's displayed argument: $N$ is compact in the noncompact oriented manifold $M^\circ$, so Lemma 3.27(a) (p. 236) supplies a unique class in $H_n(M^\circ,M^\circ-N;R)$ restricting to the chosen orientation at every interior point. Its image $[M]\in H_n(M,\partial M;R)$ is the relative fundamental class. Since a compact collar also identifies $H_n(M)$ and $H_n(M^\circ)$, the vanishing theorem of Proposition 3.29 gives $\delta:H_n(M,\partial M)\hookrightarrow H_{n-1}(\partial M)$.
 
-**Published solution required; the rest of this proof is deferred.** The retained solution sets contain no solution to Hatcher §3.3 Exercise 31: Sam's §3.3 coverage is Exercises 8, 17 and 32, and the Math 538 sheets cover Exercises 3, 4, 6, 7, 8, 9 and 17. Accordingly, this card has no accepted source-backed proof.
-
-The deleted continuation used $e_M$ and $e_D$, defined *from* $H_{n-1}(V,V-\{x\};R)$ *into* the ambient local groups, but applied them to ambient elements; multiplying on the other side would have required their inverses. Its claimed equality also lacked a construction of the required chain-compatibility maps. Those claims are withdrawn rather than replaced by a newly derived argument. Needed source: a published solution set covering §3.3 Exercise 31 with stable printed-page locators.
+At this point naturality is the content of May's naturality diagram, not a newly asserted excision: the boundary of $[M]$ restricts under $\delta_x$ exactly to the unique generator determined by the induced boundary orientation from Exercise 30. This holds for every $x\in\partial M$, and there is only one class with this local restriction. Since $\partial M$ is compact, Lemma 3.27(a) applied to $\partial M$ identifies that section as $[\partial M]$; uniqueness gives
+$$
+\boxed{\partial[M]=[\partial M].}
+$$
 :::
