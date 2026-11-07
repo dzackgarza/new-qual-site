@@ -27,6 +27,11 @@ audit:
     $H^n(X;\ZZ_p)=\operatorname{Hom}(H_n,\ZZ_p)=\operatorname{Hom}(H_n,\ZZ)\otimes\ZZ_p=H^n(X;\ZZ)\otimes\ZZ_p$;
     the isomorphism is induced by the ring map $\ZZ\to\ZZ_p$ on coefficients, so it preserves cup
     products.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Statement matches Exercise 9 (p.229). Rechecked: Ext(H_{n-1},Z_p) = 0 and Ext(H_{n-1},Z) = 0 by freeness, so H^n(X;Z_p) = Hom(H_n,Z_p) = Hom(H_n,Z) tensor Z_p = H^n(X;Z) tensor Z_p, and the identification is multiplicative because the cochain cup product formula of Lemma 3.6 p.206 is polynomial in the values, so a coefficient ring map carries cup products to cup products. Terse proofs now cite Theorem 3.2 p.195 and the properties of Ext on p.195, and the multiplicativity argument is written out instead of alluded to. Not covered: no example showing the hypothesis is needed.
 ---
 
 ::: {.problem}
@@ -43,7 +48,7 @@ By the universal coefficient theorem, $H^n(X; \ZZ_p) \cong \operatorname{Hom}(H_
 
 ::: pf-proof
 
-universal coefficient theorem for cohomology.
+Theorem 3.2 (p.195), applied to the singular chain complex, whose terms are free abelian.
 
 :::
 
@@ -55,7 +60,7 @@ Since $H_{n-1}(X)$ is free, $\operatorname{Ext}(H_{n-1}(X), \ZZ_p) = 0$.
 
 ::: pf-proof
 
-$\operatorname{Ext}$ of a free abelian group vanishes.
+The second of the three properties of Ext listed on p.195: $\operatorname{Ext}(H,G)=0$ if $H$ is free.
 
 :::
 
@@ -79,7 +84,7 @@ Since $H_n(X)$ is free, $\operatorname{Hom}(H_n(X), \ZZ_p) \cong \operatorname{H
 
 ::: pf-proof
 
-$\operatorname{Hom}(F, \ZZ_p) \cong \operatorname{Hom}(F, \ZZ) \otimes \ZZ_p$ for free $F$, and $H^n(X; \ZZ) \cong \operatorname{Hom}(H_n(X), \ZZ)$ (since $\operatorname{Ext}(H_{n-1}, \ZZ) = 0$ by freeness).
+For a free abelian $F$ with basis $B$, $\operatorname{Hom}(F,\ZZ_p)=\prod_B\ZZ_p=\operatorname{Hom}(F,\ZZ)\otimes\ZZ_p$; and $H^n(X;\ZZ)\cong\operatorname{Hom}(H_n(X),\ZZ)$ by Theorem 3.2 (p.195), again because $\operatorname{Ext}(H_{n-1},\ZZ)=0$.
 
 :::
 
@@ -103,7 +108,7 @@ This isomorphism is compatible with the cup product (it is induced by the natura
 
 ::: pf-proof
 
-the cup product is natural with respect to coefficient maps, and the reduction map $\ZZ \to \ZZ_p$ induces a ring homomorphism $H^*(X; \ZZ) \to H^*(X; \ZZ_p)$.
+The cochain formula of Lemma 3.6 (p.206) is polynomial in the two cochain values, so a ring homomorphism $R\to R'$ carries $\varphi\smile\psi$ to the cup product of the reduced cochains and gives a ring map $H^*(X;R)\to H^*(X;R')$; in particular $\ZZ\to\ZZ_p$ makes $H^*(X;\ZZ_p)$ a $\ZZ_p$-algebra. The isomorphism above is exactly this map followed by the identification with $H^*(X;\ZZ)\otimes\ZZ_p$.
 
 :::
 
