@@ -65,5 +65,7 @@ $$
 &=\boxed{\chi(X)\chi(Y)},
 \end{aligned}
 $$
-where the first and last equalities are the definition of $\chi$ as the alternating sum of the numbers of cells of a finite CW complex, p. 146, which Theorem 2.44 (p. 146) shows agrees with the alternating sum of the ranks of the homology groups. Both sums are finite, so the rearrangement of the double sum is legitimate.
+where the first and last equalities are the definition of $\chi$ as the alternating sum of the numbers of cells of a finite CW complex, p. 146, which Theorem 2.44 (p. 146) shows agrees with the alternating sum of the ranks of the homology groups. Both sums are finite, so the rearrangement of the double sum is legitimate.This computation agrees with Sam's §2.2 Exercise 20, printed p. 12 of the same source: the product cell $e_p\times e_q$ has dimension $p+q$, and summing $(-1)^{p+q}$ over those cells factorizes the alternating sum into $\chi(X)\chi(Y)$.
+
+
 :::
