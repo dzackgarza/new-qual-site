@@ -28,6 +28,11 @@ audit:
     $d^*\beta_*=\beta_*d^*$. Ext is taken here as the cokernel of
     $\operatorname{Hom}(F_0,G)\to\operatorname{Hom}(F_1,G)$, which is its definition for abelian
     groups.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Re-read against Hatcher pp.194-195 with Exercise 1 (p.204); the statement matches the printed text. Two placeholder proofs ("setup.") replaced by the existence of the free resolution of p.195 and by Lemma 3.1(b); the lifting step cites Lemma 3.1(a) (p.194) instead of an unnamed comparison theorem, and the independence-of-lift step now carries the chain-homotopy computation. Not covered: the extension interpretation of Ext on p.195, which the exercise does not ask for.
 ---
 
 ::: {.problem}
@@ -38,15 +43,16 @@ Show that $\operatorname{Ext}(H, G)$ is a contravariant functor of $H$ for fixed
 ::: pf
 
 ::: pf-step
-Definition of $\operatorname{Ext}(H, G)$:
+Definition of $\operatorname{Ext}(H, G)$: for a free resolution $0 \to F_1 \xrightarrow{d} F_0 \xrightarrow{\varepsilon} H \to 0$ with $F_i = 0$ for $i > 1$, $\operatorname{Ext}(H, G) = H^1(\operatorname{Hom}(F, G)) = \operatorname{coker}(d^*)$.
 
 ::: pf-proof
+Hatcher p.195: $\operatorname{Ext}(H, G)$ is $H^1(F; G)$ for such a resolution, independent of the resolution by Lemma 3.1(b) (p.194), and $H^1$ of a two-term complex is $\operatorname{Hom}(F_1, G)/\operatorname{im}(d^*)$.
 
 ::: pf-step
 For an abelian group $H$, choose a free resolution $0 \to F_1 \xrightarrow{d} F_0 \xrightarrow{\varepsilon} H \to 0$.
 
 ::: pf-proof
-every abelian group is a quotient of a free abelian group, and subgroups of free abelian groups are free.
+Hatcher p.195: take $F_0$ free on a set of generators of $H$ and $F_1 = \ker \varepsilon$, free because a subgroup of a free abelian group is free.
 :::
 
 :::
@@ -86,7 +92,7 @@ Contravariance of $\operatorname{Ext}(-, G)$ in the first variable $H$:
 Let $\alpha: H \to H'$ be a group homomorphism, and let $0 \to F_1' \xrightarrow{d'} F_0' \xrightarrow{\varepsilon'} H' \to 0$ be a free resolution of $H'$.
 
 ::: pf-proof
-setup.
+$H'$ has a free resolution by the construction on p.195, and $H$ one by the first step; this is the hypothesis of Hatcher Lemma 3.1(a) (p.194).
 :::
 
 :::
@@ -98,7 +104,7 @@ $$
 $$
 
 ::: pf-proof
-comparison theorem for projective resolutions.
+Hatcher Lemma 3.1(a) (p.194), which produces the chain map $\alpha_i$ inductively from the freeness of the $F_i$.
 :::
 
 :::
@@ -128,7 +134,7 @@ quotient map between cokernels.
 Any two lifts of $\alpha$ are chain homotopic, so the induced map $\alpha^*$ is independent of the choice of lift $(\alpha_0, \alpha_1)$.
 
 ::: pf-proof
-chain homotopy induces the zero map on homology/cohomology.
+Hatcher Lemma 3.1(a) (p.194) gives a chain homotopy $h$ with $\alpha_1 - \alpha_1' = d h + h d'$; then $\alpha_1^* - (\alpha_1')^* = h^* d^* + (d')^* h^*$ takes values in $\operatorname{im} d^*$ on $\ker (d')^*$, so the two maps of cokernels agree.
 :::
 
 :::
@@ -164,7 +170,7 @@ Covariance of $\operatorname{Ext}(H, -)$ in the second variable $G$:
 Let $\beta: G \to G'$ be a group homomorphism, and fix a free resolution $0 \to F_1 \xrightarrow{d} F_0 \to H \to 0$.
 
 ::: pf-proof
-setup.
+One resolution of $H$ is fixed throughout; $\operatorname{Ext}(H, G)$ does not depend on the choice by Lemma 3.1(b) (p.194), so covariance may be checked on this single resolution.
 :::
 
 :::
