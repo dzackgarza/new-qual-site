@@ -37,6 +37,16 @@ audit:
     winding number 0, and suspension preserves both surjectivity and degree by Proposition 2.33, so
     every S^n admits the required map. The order in which suspension is iterated is also stated in
     the proof; it does not alter the answer.
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Read against Hatcher, §2.2 Exercise 4, printed p. 155: the printed statement is "Construct a
+    surjective map S^n -> S^n of degree zero, for each n >= 1", which the card reproduces. Checked:
+    the two pieces of f_0 meet at (1,0) at t = pi, each piece alone maps onto the circle, and the
+    winding numbers 1 and -1 cancel, so f_0 is a well-defined continuous surjection S^1 -> S^1 of
+    degree 0; suspension of a surjection is a surjection, and Proposition 2.33 in the book states
+    deg Sf = deg f, so the (n-1)-fold suspension gives the case n >= 2. No defect.
 ---
 
 ::: {.problem}
