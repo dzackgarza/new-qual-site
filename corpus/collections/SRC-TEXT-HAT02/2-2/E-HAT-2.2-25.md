@@ -39,6 +39,20 @@ audit:
     existence is then checked against the three axioms, with
     $\tilde\chi(X)=\tilde\chi(A)+\tilde\chi(X/A)$ from cell counts, and homotopy invariance through
     $\chi=\sum_i(-1)^i\dim H_i(\cdot;\QQ)$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Statement matches Exercise 25 as printed on p. 157, all three axioms and the homotopy
+    invariance part. Checked the answer phi(X) = n chi-tilde(X) = n(chi(X)-1) against the axioms:
+    phi(pt)=0 from collapsing one point of S^0; phi(D^k)=0 from D^k/A = D^k with A a closed ball;
+    phi(S^k)=(-1)^k n by induction from D^k/S^{k-1}=S^k; discrete r points give (r-1)n; and the
+    skeleton induction gives n(chi(X)-1). Gaps repaired: the skeleton step now says the wedge
+    induction explicitly and that additivity is applied to the pair (X^k,X^{k-1}); the choice of
+    a CW structure on D^k with S^{k-1} a subcomplex is justified by (a) and step (s2); the cell
+    count for X/A is cited to p. 8; chi = alternating sum of dimensions of H_i(X;Q) is
+    Theorem 2.44 p. 146 and homotopy invariance Corollary 2.11 p. 111. What is not covered: the
+    empty complex is discussed only in passing; no certificate.
 ---
 
 ::: {.problem}
@@ -100,11 +114,11 @@ $$
 
 ::: pf-proof
 
-The case $k=0$ is axiom (c). For $k\ge1$, regard $S^{k-1}=\partial D^k$ as a subcomplex of $D^k$. Since
+The case $k=0$ is axiom (c). For $k\ge1$, give $D^k$ a CW structure in which $S^{k-1}=\partial D^k$ is a subcomplex; since $\varphi(D^k)=0$ was established in step [](#s2){.pf-ref} for the space, and $\varphi$ is homeomorphism invariant by (a), any such structure may be used. Then
 $$
 D^k/S^{k-1}\cong S^k,
 $$
-additivity and step [](#s2){.pf-ref} give
+and additivity applied to the pair $(D^k,S^{k-1})$ gives
 $$
 0=\varphi(D^k)=\varphi(S^{k-1})+\varphi(S^k).
 $$
@@ -147,13 +161,13 @@ $$
 $$
 For $k\ge1$, collapsing $X^{k-1}$ gives
 $$
-X^k/X^{k-1}\cong\bigvee^{c_k}S^k.
+X^k/X^{k-1}\cong\bigvee^{c_k}S^k,
 $$
-Repeated additivity for wedge summands, together with steps [](#s1){.pf-ref} and [](#s3){.pf-ref}, yields
+the standard description of the quotient of a skeleton by the preceding one (p. 8). Repeated additivity for wedge summands, together with steps [](#s1){.pf-ref} and [](#s3){.pf-ref}, yields
 $$
 \varphi(X^k/X^{k-1})=c_k(-1)^k n.
 $$
-Induction over the skeleta therefore gives
+This is an induction on the number of summands: a single summand is a subcomplex whose collapse leaves the wedge of the remaining ones, and the wedge of no summands is a point, with $\varphi=0$ by step [](#s1){.pf-ref}. Additivity applied to the pair $(X^k,X^{k-1})$, whose quotient is displayed above, gives $\varphi(X^k)=\varphi(X^{k-1})+c_k(-1)^kn$, so induction over the skeleta gives
 $$
 \varphi(X)
 =n\left((c_0-1)+\sum_{k\ge1}(-1)^kc_k\right)
@@ -175,7 +189,7 @@ Homeomorphism invariance is clear. If $A=\varnothing$, additivity reads $\varphi
 $$
 \widetilde\chi(X)=\widetilde\chi(A)+\widetilde\chi(X/A),
 $$
-which follows immediately from cell counts: the quotient has the cells of $X-A$ plus the quotient basepoint. Finally
+which follows from cell counts: the cells of $X/A$ are the cells of $X$ outside $A$ together with one new $0$-cell, the image of $A$ (p. 8), so $c_0$ increases by one while every other count is reduced by that of $A$, and the alternating sums agree as displayed. Finally
 $$
 \widetilde\chi(S^0)=1,
 $$
@@ -195,7 +209,7 @@ For finite CW complexes,
 $$
 \chi(X)=\sum_i(-1)^i\dim_{\QQ}H_i(X;\QQ),
 $$
-so Euler characteristic is preserved by homotopy equivalence. Therefore the reduced Euler characteristic, and hence $\varphi=n\widetilde\chi$, is also preserved. Thus
+by Theorem 2.44 (p. 146), whose ranks equal these dimensions, so Euler characteristic is preserved by homotopy equivalence, whose induced maps on homology are isomorphisms by Corollary 2.11 (p. 111). Therefore the reduced Euler characteristic, and hence $\varphi=n\widetilde\chi$, is also preserved. Thus
 $$
 X\simeq Y\quad\Longrightarrow\quad\varphi(X)=\varphi(Y).
 $$
