@@ -15,6 +15,16 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Read Hatcher p.459: complex of spaces over Δ-complex Γ with n-simplex data X_0->...->X_n and iterated mapping cylinder M(f1,...,fn)->Δ^n; definition for n=1 as M(f1) and for n>1 as mapping cylinder of M(f1,...,fn-1)->X_{n-1}->X_n via canonical projection. The statement's hypothesis is all maps are homeomorphisms.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Previous proof handled only the graph case (vertex/edge spaces, edge cylinders). Extended to general n: by induction M(f1,...,fn) ≅ F×Δ^n when each f_i is a homeomorphism, using M(f1)≅F×I and the join description F×(Δ^{n-1}⋆I)≅F×Δ^n. Local triviality over int σ and over open stars U_v then gives F×U, so projection is a fiber bundle with fiber F, the common homeomorphism type of all vertex/edge spaces.
 ---
 
 ::: {.problem}
@@ -27,58 +37,45 @@ Show that if $X$ is a complex of spaces in which all the maps are homeomorphisms
 
 ::: pf-step
 
-Structure of the total space $\Delta X$:
+Common fiber:
 
 ::: pf-proof
 
-::: pf-step
-
-A complex of spaces $X$ over a graph $\Gamma$ consists of a vertex space $X_v$ for each $v \in \Gamma$, an edge space $X_e$ for each edge $e \in \Gamma$, and attaching maps $f_{e, 0}: X_e \to X_{d_0(e)}$ and $f_{e, 1}: X_e \to X_{d_1(e)}$.
-The realization $\Delta X$ is the quotient space:
-$$
-\Delta X = \left( \bigsqcup_{v \in \Gamma^{(0)}} X_v \sqcup \bigsqcup_{e \in \Gamma^{(1)}} (X_e \times [0, 1]) \right) \Big/ \sim,
-$$
-where $(x, 0) \sim f_{e, 0}(x)$ and $(x, 1) \sim f_{e, 1}(x)$ for all $x \in X_e$.
-
-::: pf-proof
-
-Definition of the realization $\Delta X$ of a complex of spaces over $\Gamma$, as in Hatcher's discussion of graphs of groups (p. 458) and of complexes of spaces in §4.G (p. 459).
+All vertex and edge spaces of the complex are homeomorphic to a common fiber $F$.
+Indeed, $\Gamma$ is connected and every attaching map is a homeomorphism, so composing
+homeomorphisms along paths joins any two vertex or edge spaces.
 
 :::
-
 :::
 
 ::: pf-step
 
-The projection $p: \Delta X \to \Gamma$ maps $X_v \mapsto v$ and $(x, t) \in X_e \times [0, 1] \mapsto t \in e$.
-Because all attaching maps $f_{e, i}$ are homeomorphisms and $\Gamma$ is connected, all vertex spaces $X_v$ and edge spaces $X_e$ are homeomorphic to a common fiber space $F$.
+Iterated mapping cylinder of a string of homeomorphisms is a product:
 
 ::: pf-proof
 
-Composition of homeomorphisms along paths in the connected graph $\Gamma$: each attaching map is a homeomorphism onto a vertex space, so all vertex and edge spaces are homeomorphic.
+For $n=1$, $M(f_1)$ with $f_1$ a homeomorphism is $X_0\times I$ with
+$X_0\times\{1\}$ identified to $X_1$ via $f_1$; since $f_1$ is a homeomorphism,
+$(x,t)\mapsto (f_1(x),t)$ for $t$ in the cylinder coordinate gives a
+homeomorphism $M(f_1)\cong X_0\times I\cong F\times\Delta^1$.
 
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Local triviality over open edges:
-
-::: pf-proof
-
-::: pf-step
-
-Let $e$ be an edge of $\Gamma$, and let $U_e = \operatorname{int}(e) \cong (0, 1)$ be the open interior of $e$.
-The preimage is $p^{-1}(U_e) = X_e \times (0, 1)$.
-
-::: pf-proof
-
-interior of edge has no quotient identifications.
+Inductively, let $X_0\xrightarrow{f_1}\cdots\xrightarrow{f_n}X_n$ with each $f_i$ a
+homeomorphism, and let $M_{n-1}=M(f_1,\ldots,f_{n-1})$. By induction
+$M_{n-1}\cong F\times\Delta^{n-1}$ compatibly with its projection to
+$\Delta^{n-1}$. The iterated cylinder $M(f_1,\ldots,f_n)$ is defined (p.459) as
+the mapping cylinder of the composition
+$M_{n-1}\xrightarrow{\pi}X_{n-1}\xrightarrow{f_n}X_n$, where $\pi$ is the
+canonical projection of a mapping cylinder onto its target end. Since $\pi$
+is a homotopy equivalence and $f_n$ a homeomorphism, the composition is a
+homotopy equivalence that is in fact a homeomorphism on the $F$-factor:
+using $M_{n-1}\cong F\times\Delta^{n-1}$ and $X_n\cong F$, the mapping cylinder
+of $F\times\Delta^{n-1}\to F$ (projection to $F$ followed by $f_n$) is
+$F\times (\Delta^{n-1}\star I)\cong F\times\Delta^n$, star denoting join with
+an interval, i.e. the cone on the base simplex. Explicitly,
+$(y,s,t)\mapsto (y, (1-t)s + t e_n)$ with $s\in\Delta^{n-1}$, $t\in I$, gives the
+homeomorphism $M(f_1,\ldots,f_n)\cong F\times\Delta^n$ commuting with
+projection to $\Delta^n$. Thus for every $n$-simplex $\sigma$ of $\Gamma$,
+$p^{-1}(\sigma)=M(f_1,\ldots,f_n)$ is $F\times\sigma$.
 
 :::
 
@@ -86,37 +83,21 @@ interior of edge has no quotient identifications.
 
 ::: pf-step
 
-Using the homeomorphism $\phi_e: X_e \xrightarrow{\sim} F$, we have a trivializing homeomorphism:
-$$
-p^{-1}(U_e) = X_e \times U_e \xrightarrow{\phi_e \times \operatorname{id}} F \times U_e,
-$$
-which satisfies $\operatorname{pr}_2 \circ (\phi_e \times \operatorname{id}) = p$.
+Local triviality:
 
 ::: pf-proof
 
-direct Cartesian product.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Local triviality over vertex neighborhoods:
-
-::: pf-proof
-
-::: pf-step
-
-For each vertex $v \in \Gamma^{(0)}$, let $U_v \subset \Gamma$ be the open star of $v$, consisting of $v$ together with open half-edges $[0, 1/2)$ for all edges incident to $v$.
-
-::: pf-proof
-
-open star basis for 1-complexes.
+Let $\sigma$ be any simplex of $\Gamma$ and let $\operatorname{int}\sigma$ be its
+open interior; no identifications occur there, so
+$p^{-1}(\operatorname{int}\sigma)=F\times\operatorname{int}\sigma$
+as above. For a vertex $v$ let $U_v$ be its open star in $\Gamma$ (all open
+simplices incident to $v$ together with $v$). Each such open simplex
+contributes $F\times\operatorname{int}\tau$ glued along homeomorphisms at faces,
+hence $p^{-1}(U_v)$ is obtained by gluing copies of $F\times\operatorname{int}\tau$
+along the identity on $F$, giving $p^{-1}(U_v)\cong F\times U_v$ via the
+product of the fiber identifications. The $U_v$ cover $\Gamma$, and the same
+holds for the open star of any simplex. Hence every $x\in\Gamma$ has a
+neighborhood $U$ with $p^{-1}(U)\cong F\times U$.
 
 :::
 
@@ -124,46 +105,12 @@ open star basis for 1-complexes.
 
 ::: pf-step
 
-The preimage $p^{-1}(U_v)$ is the union of $X_v$ and $X_e \times [0, 1/2)$ for each incident edge $e$, glued via $(x, 0) \sim f_{e, v}(x)$.
-Since each $f_{e, v}: X_e \xrightarrow{\sim} X_v$ is a homeomorphism, the map $(x, t) \mapsto (f_{e, v}(x), t)$ is a homeomorphism $X_e \times [0, 1/2) \xrightarrow{\sim} X_v \times [0, 1/2)$.
+Hence $p:\Delta X\to\Gamma$ is a fiber bundle with fiber $F$.
 
 ::: pf-proof
 
-product of homeomorphisms.
-
-:::
-
-:::
-
-::: pf-step
-
-Under these maps, the gluing along $t = 0$ corresponds to the identity map on $X_v$.
-Thus we obtain a canonical homeomorphism:
-$$
-\psi_v: p^{-1}(U_v) \xrightarrow{\sim} X_v \times U_v \cong F \times U_v,
-$$
-which commutes with the projection $p$.
-
-::: pf-proof
-
-gluing local product charts along the identity at the vertex.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-Conclusion:
-Every point in $\Gamma$ has an open neighborhood $U$ with $p^{-1}(U) \cong F \times U$, so $p: \Delta X \to \Gamma$ is a fiber bundle with fiber $F$. Q.E.D.
-
-::: pf-proof
-
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+Fiber bundle definition: locally $F\times U$ as above, with $F$ the common
+fiber from the first step.
 
 :::
 
