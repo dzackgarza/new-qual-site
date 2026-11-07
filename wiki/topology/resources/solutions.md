@@ -43,6 +43,14 @@ Two defects found on checking it against Hatcher and recorded on the cards: the 
 $d=\pm p$ from local signs that are individually $\pm1$ without proving they agree, and the §3.3 Ex.6
 sheet reads the pair sequence only for $n\ge3$, where $H_{n-2}(S^{n-1})=0$.
 
+**Kenneth DeMason, *M382C Full Credit HW Problems* (4 April 2021)**,
+`tmp/sources/demason-m382c-hatcher-20210404.pdf` ([resources](https://math.mcmaster.ca/~demasonk/resources.html),
+[PDF](https://math.mcmaster.ca/~demasonk/files/exercises/DeMason%2C%20Kenneth%20M382C%20HW%20Full%20Credit%2020210404.pdf)).
+The table of contents locates §2.2 Ex. 10 pp. 76–77, Ex. 33 pp. 79–80 and Ex. 42 p. 80; further
+chapter-two items are indexed there. The Ex. 42 section explicitly says the proof is not fully fleshed
+out, leaves faithfulness as an intuition, and gives only a rank-$1$ mod-2 example, so it is **not**
+accepted as a complete published proof of that exercise.
+
 **Stanford Math 215C, Spring 2009, solution sets**, linked from
 [Ralph Cohen's Math 215C page](https://math.stanford.edu/~ralph/math215c/). Cite the individual set and printed page, not an
 inferred author:
