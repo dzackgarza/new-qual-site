@@ -68,7 +68,7 @@ $$
 
 ::: pf-proof
 
-Lemma 1.19 states that for a homotopy $f_t:X\to X$ and the basepoint track $h(t)=f_t(x_0)$, the induced maps satisfy exactly this relation after the appropriate change of basepoint by $h$.
+Lemma 1.19 (p. 37) states that for a homotopy $f_t:X\to X$ and the basepoint track $h(t)=f_t(x_0)$, the induced maps satisfy exactly this relation after the appropriate change of basepoint by $h$.
 Here both endpoint maps take $x_0$ to $x_0$, so all three maps act on
 $$
 \pi_1(X,x_0).
