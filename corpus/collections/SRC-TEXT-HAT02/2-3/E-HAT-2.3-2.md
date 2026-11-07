@@ -110,7 +110,7 @@ Homotopy invariance holds.
 
 ::: pf-proof
 
-If $f\simeq g$ as maps on a space or on a pair, then $\widetilde H_i(f)=\widetilde H_i(g)$ for each index $i$ by ordinary homotopy invariance. The induced maps on the product and on its direct summand are therefore equal, and their induced maps on the quotient are equal. Thus $f_*=g_*$ on $Q(X)$. This is Casassas's homotopy-invariance step on p. 7, not merely preservation of homotopy equivalences.
+If $f\simeq g$ as maps on a space or on a pair, then $\widetilde H_i(f)=\widetilde H_i(g)$ for each index $i$ by ordinary homotopy invariance. The induced maps on the product and on its direct-sum subgroup are therefore equal, and their induced maps on the quotient are equal. Thus $f_*=g_*$ on $Q(X)$. This is Casassas's homotopy-invariance step on p. 7, not merely preservation of homotopy equivalences.
 
 :::
 
