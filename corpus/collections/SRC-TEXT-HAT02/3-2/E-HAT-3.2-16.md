@@ -27,6 +27,11 @@ audit:
     $p$-power summands, so equality with $\dim_\QQ H^i(Z;\QQ)=b_i$ in every degree is exactly the
     absence of $p$-primary torsion; Künneth over $\FF_p$ and over $\QQ$ gives the same convolution
     on both sides for $X\times Y$, and the criterion then applies to $X\times Y$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Statement matches Exercise 16 (p.230) including the bracketed hint. Rechecked the criterion and its use: for a finite CW complex the coefficient sequence of 0 -> Z -> Z -> F_p -> 0 gives dim_Fp H^i(Z;F_p) = b_i + t_i + t_{i+1} with t_i the number of p-power summands, while dim_Q H^i(Z;Q) = b_i, so equality in every degree is exactly the vanishing of all t_i; Künneth over a field (Theorem 3.15 p.216) makes the dimension sequences of X x Y the convolutions of those of X and Y, which agree for F_p and for Q, so X x Y has no p-primary torsion. Citations added for Theorem 3.15. Not covered: the exercise leaves the field-coefficient Künneth to the reader and so does the card.
 ---
 
 ::: {.problem}
@@ -49,7 +54,7 @@ $$
 $$
 The numbers $t_i$ are nonnegative. Hence equality of the two dimensions in every degree is equivalent to the absence of $p$-primary torsion in all the integral cohomology groups.
 
-By hypothesis, the mod-$p$ and rational cohomology of each of $X$ and $Y$ have equal dimensions degree by degree. The field-coefficient Künneth theorem gives, for either field $F$,
+By hypothesis, the mod-$p$ and rational cohomology of each of $X$ and $Y$ have equal dimensions degree by degree. Theorem 3.15 (p.216) with field coefficients gives, for either field $F$ and in every degree $n$,
 $$
 \dim_F H^n(X\times Y;F)
 =\sum_{i+j=n}\dim_F H^i(X;F)\,\dim_F H^j(Y;F).
