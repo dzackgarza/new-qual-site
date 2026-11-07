@@ -54,7 +54,7 @@ The quotient map is a homeomorphism on the open cell. Its inverse images show th
 The inclusion $A\hookrightarrow X$ induces a surjection on fundamental groups.
 
 ::: pf-proof
-Let $\gamma$ be a loop in $X$ based at $x_0\in A$. Apply the subdivision argument of Lemma 1.15 to the open cover in step [](#open-cover){.pf-ref}, with the first and last pieces chosen in $U$. Combine consecutive pieces that lie in the same cover set. Each remaining $V$ piece has both endpoints in $U\cap V$. Replace it by a path in $U\cap V$ with the same endpoints. The replacement is homotopic relative to endpoints in $V$, because $V$ is simply connected. This yields a loop in $U$ homotopic to $\gamma$ relative to $x_0$. The deformation retraction $U\to A$ then gives a loop in $A$ representing $[\gamma]$.
+Let $\gamma$ be a loop in $X$ based at $x_0\in A$. Apply the subdivision argument of Lemma 1.15 (p. 35) to the open cover in step [](#open-cover){.pf-ref}, with the first and last pieces chosen in $U$. Combine consecutive pieces that lie in the same cover set. Each remaining $V$ piece has both endpoints in $U\cap V$. Replace it by a path in $U\cap V$ with the same endpoints. The replacement is homotopic relative to endpoints in $V$, because $V$ is simply connected. This yields a loop in $U$ homotopic to $\gamma$ relative to $x_0$. The deformation retraction $U\to A$ then gives a loop in $A$ representing $[\gamma]$.
 :::
 
 :::
@@ -72,7 +72,7 @@ It is obtained from $S^1$ by attaching a $2$-cell by the constant map. Step [](#
 For every path-connected CW complex $X$, the inclusion $X^1\hookrightarrow X$ induces a surjection on fundamental groups.
 
 ::: pf-proof
-For a finite CW complex, attach its cells of dimension at least $2$ one at a time. Step [](#cell-surjection){.pf-ref} applies to each attachment, and the composite of these surjections is surjective. For an arbitrary CW complex, Proposition A.1 places the compact image of any loop in a finite subcomplex $K$. Apply the finite case to the path component of $K$ containing the loop. Its $1$-skeleton lies in $X^1$, so the loop class comes from $\pi_1(X^1)$.
+For a finite CW complex, attach its cells of dimension at least $2$ one at a time. Step [](#cell-surjection){.pf-ref} applies to each attachment, and the composite of these surjections is surjective. For an arbitrary CW complex, Proposition A.1 (p. 520) places the compact image of any loop in a finite subcomplex $K$. Apply the finite case to the path component of $K$ containing the loop. Its $1$-skeleton lies in $X^1$, so the loop class comes from $\pi_1(X^1)$.
 :::
 
 :::
