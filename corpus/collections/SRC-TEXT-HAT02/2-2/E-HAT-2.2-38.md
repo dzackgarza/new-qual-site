@@ -31,6 +31,16 @@ audit:
     commutative squares, and exactness at $B_n$, at $C_n\oplus D_n$ and at $E_n$ follows by the
     stated decompositions, the minus sign on the second coordinate being what makes $cr-r'b$
     vanish.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Statement checked against the printed diagram, rendered from p. 159: the two rows and the six
+    vertical arrows agree with the card, including the identity arrows at A_n and A_{n-1}, and the
+    text matches as printed. The chase is correct at all three middle terms, and the two composite
+    vanishings follow from rq = 0, q'p' = 0 and the commutativity bq = q', cr = r'b, s'c = s. What
+    is not covered: the convergence of the sequence (that consecutive composite maps vanish) is
+    asserted rather than computed term by term.
 ---
 
 ::: {.problem}
@@ -62,7 +72,7 @@ E_{n+1}\xrightarrow{qp'}B_n
 \xrightarrow{c+r'}E_n
 \xrightarrow{ts'}B_{n-1}.
 $$
-Consecutive composites vanish by exactness of the two rows and the three commutative squares. We check the three types of middle term.
+Consecutive composites vanish by exactness of the two rows and the three commutative squares. What follows is a chase in the printed diagram on p. 159; its only inputs are the exactness of the two rows and the commutativity of the six squares of that diagram, the vertical maps at $A_n$ and at $A_{n-1}$ being identities. We check the three types of middle term.
 
 If $(r(b_0),-b(b_0))=0$, exactness of the upper row gives $b_0=q(a)$. Then $0=b(b_0)=q'(a)$, so exactness of the lower row gives $a=p'(e)$ for some $e\in E_{n+1}$. Hence $b_0=qp'(e)$, proving exactness at $B_n$.
 
