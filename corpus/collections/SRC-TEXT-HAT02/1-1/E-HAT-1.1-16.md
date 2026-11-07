@@ -70,7 +70,7 @@ Functoriality of the fundamental group gives
 $$
 (r\circ i)_*=r_*\circ i_*=(\operatorname{id}_A)_*.
 $$
-Any homomorphism possessing a left inverse is injective (this is Proposition 1.17, p. 36).
+Since $r_*\,i_*=\operatorname{id}$, the homomorphism $i_*$ has a left inverse and is therefore injective: if $i_*(a)=i_*(b)$ then $a=r_*i_*(a)=r_*i_*(b)=b$. This group-theoretic step is the one used in the proof of Proposition 1.17 (p. 36), whose statement is only that for a retraction $r$ the map $i_*:\pi_1(A,x_0)\to\pi_1(X,x_0)$ is injective.
 
 :::
 
