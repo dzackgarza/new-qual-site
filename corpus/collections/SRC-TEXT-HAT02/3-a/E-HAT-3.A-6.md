@@ -141,10 +141,23 @@ audit:
     not claimed here. The alternative route the card writes out — finitely generated stages,
     $\operatorname{Tor}(A_\alpha,B)\cong\bigoplus_j B[n_j]$, then the direct limit — is Hatcher's own
     and remains the card's displayed proof; the citation is corroboration, not a replacement of it.
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Statement restored to the printed text of p.267, which reads "contains an element of order $n$
+    if both $A$ and $B$ contain elements of order $n$" — the stored card had widened it to "iff"
+    without saying so. The converse is true and is kept, now explicitly labelled as the direction the
+    print does not ask for. The rambling passage that carried the converse was rewritten: the
+    vanishing of $\operatorname{Tor}(A_p,B/B_p)$ is now displayed inside the exact sequence of rule
+    (6) where it is used, the false intermediate remark about coordinates was removed (the argument
+    needs only that the order of a tuple is the largest coordinate order), and the statement that
+    $B/B_p$ need not be torsionfree stays, since it is why rule (3) does not apply. The first
+    direction and the torsion-group claim are unchanged.
 ---
 
 ::: {.problem}
-Show that $\operatorname{Tor}(A, B)$ is always a torsion group, and that $\operatorname{Tor}(A, B)$ contains an element of order $n$ iff both $A$ and $B$ contain elements of order $n$.
+Show that $\operatorname{Tor}(A, B)$ is always a torsion group, and that $\operatorname{Tor}(A, B)$ contains an element of order $n$ if both $A$ and $B$ contain elements of order $n$.
 :::
 
 ::: {.solution}
@@ -188,15 +201,15 @@ $$
 $$
 Since $B$ contains an element of order exactly $n$, $B[n]$ contains an element of order $n$. Its image in $\operatorname{Tor}(A,B)$ still has order $n$, proving one direction.
 
-Conversely, suppose $\operatorname{Tor}(A,B)$ has an element of order $n$, and write $n=\prod_p p^{m_p}$. Three rules of Proposition 3A.5 pass from the mixed groups to their primary parts. Rule (4) gives $\operatorname{Tor}(A,B)\cong\operatorname{Tor}(T(A),B)$, so the torsion subgroup, not the free part, carries all of $\operatorname{Tor}$. Rule (2) gives $\operatorname{Tor}(T(A),B)\cong\bigoplus_p\operatorname{Tor}(A_p,B)$ over the direct sum $T(A)=\bigoplus_pA_p$. Finally, rule (6) applied to $0\to B_p\to B\to B/B_p\to0$ gives an exact sequence whose last Tor term $\operatorname{Tor}(A_p,B/B_p)$ vanishes: $B/B_p$ has no $p$-torsion, and rule (5) gives $\operatorname{Tor}(\ZZ_{p^k},B/B_p)\cong (B/B_p)[p^k]=0$ for each $k$, so by rule (2) the same holds for every $p$-primary $A_p$, finite direct sums of cyclic ones first and then, by Exercise 4, for the group itself. Note that $B/B_p$ is *not* torsionfree in general — for $p=2$ and $B=\ZZ/2\oplus\ZZ/3$ the quotient is $\ZZ/3$ — so rule (3) does not apply here; the hypothesis in play is the absence of $p$-torsion. Hence $\operatorname{Tor}(A_p,B)\cong\operatorname{Tor}(A_p,B_p)$. Combining them,
+Conversely — the direction the print does not ask for, proved here because the first part is otherwise easy to misread — suppose $\operatorname{Tor}(A,B)$ has an element of order $n$, and write $n=\prod_p p^{m_p}$. The reduction to primary parts uses three rules of Proposition 3A.5. Rule (4) gives $\operatorname{Tor}(A,B)\cong\operatorname{Tor}(T(A),B)$, so the torsion subgroup carries all of $\operatorname{Tor}$. Rule (2) gives $\operatorname{Tor}(T(A),B)\cong\bigoplus_p\operatorname{Tor}(A_p,B)$ over the direct sum $T(A)=\bigoplus_pA_p$. Finally rule (6), applied to $0\to B_p\to B\to B/B_p\to0$, gives the exact sequence
 $$
-\operatorname{Tor}(A,B)\cong\bigoplus_p\operatorname{Tor}(A_p,B_p),
+0\to\operatorname{Tor}(A_p,B_p)\to\operatorname{Tor}(A_p,B)\to\operatorname{Tor}(A_p,B/B_p)\to A_p\otimes B_p ,
 $$
-so the given element has a component of order exactly $p^{m_p}$ in $\operatorname{Tor}(A_p,B_p)$ for each prime $p$ dividing $n$.
+whose third term vanishes: $B/B_p$ has no $p$-torsion, rule (5) gives $\operatorname{Tor}(\ZZ_{p^k},B/B_p)\cong(B/B_p)[p^k]=0$ for each $k$, and rule (2) with Exercise 4 extends this from finite direct sums of cyclic groups to all $p$-primary $A_p$. (Note that $B/B_p$ need not be torsionfree — for $p=2$ and $B=\ZZ/2\oplus\ZZ/3$ the quotient is $\ZZ/3$ — so rule (3) is not what applies here; the hypothesis in play is the absence of $p$-torsion.) Hence $\operatorname{Tor}(A_p,B)\cong\operatorname{Tor}(A_p,B_p)$, and
+$$
+\operatorname{Tor}(A,B)\cong\bigoplus_p\operatorname{Tor}(A_p,B_p):
+$$
+the given element has a component $x_p$ of order exactly $p^{m_p}$ in $\operatorname{Tor}(A_p,B_p)$ for each prime $p$ dividing $n$.
 
-Fix such a $p$ and write $A_p$ as the directed union of its finitely generated subgroups $A_{p,\alpha}$, each of the form $\bigoplus_j\ZZ_{p^{k_j}}$. By Exercise 4 of the same section the component of the class already lies in some
-$$
-\operatorname{Tor}(A_{p,\alpha},B_p)\cong\bigoplus_j B_p[p^{k_j}],
-$$
-using rule (2) for the direct sum and rule (5) for each cyclic summand. Here the argument must use the coordinate and nothing more. Write the class as $x=(x_j)$ and let $x_j$ be a coordinate killed by $p^{k_j}$ on which $p^{m_p-1}x$ does not vanish, so that $x_j$ is killed by $p^{m_p}$ but not by $p^{m_p-1}$; such a coordinate exists because $x$ has order exactly $p^{m_p}$. Then $p^{m_p}\mid p^{k_j}$, so $k_j\ge m_p$, and $x_j$ is itself an element of $B$ of order $p^{m_p}$. The coordinate $x_j$ gives no element of order $p^{k_j}$ in $B$ — with $A=\ZZ/8$ and $B=\ZZ/2$ the coordinate lies in $B[8]$ and has order $2$ — so the element of order $p^{m_p}$ in $B$ is $x_j$ itself. On the other side $A_{p,\alpha}$ has an element of order $p^{k_j}$ in its $j$th summand, and multiplying it by $p^{k_j-m_p}$ gives an element of $A$ of order $p^{m_p}$. Summing the resulting elements over the primes dividing $n$ gives elements of order $n$ in $A$ and in $B$.
+Fix such a $p$. Write $A_p$ as the directed union of its finitely generated subgroups $A_{p,\alpha}=\bigoplus_j\ZZ_{p^{k_j}}$. By Exercise 4 the component $x_p$ already lies in $\operatorname{Tor}(A_{p,\alpha},B_p)\cong\bigoplus_j B_p[p^{k_j}]$ for some $\alpha$, by rule (2) and rule (5). Write $x_p=(x_j)$; the order of a tuple is the largest of the orders of its coordinates, so some coordinate $x_j$ has order exactly $p^{m_p}$. Then $x_j\in B[p^{k_j}]$, so $p^{m_p}\mid p^{k_j}$ and $k_j\ge m_p$; and $x_j$ is an element of $B$ of order $p^{m_p}$. On the other side, $A_{p,\alpha}$ has a generator of order $p^{k_j}$ in its $j$th summand, and multiplying it by $p^{k_j-m_p}$ gives an element of $A$ of order $p^{m_p}$. Summing the elements so obtained over the primes $p$ dividing $n$ gives an element of order $\prod_p p^{m_p}=n$ in $A$, and likewise in $B$, since each of the coordinates $x_j$ lies in $B$.
 :::
