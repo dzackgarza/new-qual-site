@@ -34,6 +34,16 @@ audit:
     H̃^j(X) ≅ H̃_j(X), giving H̃_i(S^n − X) ≅ H̃_{n−i−1}(X) and H̃_{n−2} ≅ Z^r. No
     defect.
 ---
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Checked against DeMason, M382C Full Credit HW Problems (2021), Hatcher 2.B.2, pp.70-71: a
+    tree is contractible, and induction on edges outside a maximal subtree keeps track of the
+    complement and the rank of H_1. The card's Alexander-duality formulation is equivalent and
+    applies to every embedded finite graph (compact and locally contractible). Its identification
+    of the reduced cohomology with homology uses that H_*(graph) is free, so Ext(H_0(graph),Z)=0.
+
 ---
 
 ::: {.problem}
@@ -96,5 +106,7 @@ The homology of a connected graph is free: $H_0(X)=\ZZ$, $H_1(X)$ is a free abel
 In particular, if $r=\operatorname{rank}H_1(X)$, then the only possible nonzero reduced homology group of the complement is
 $$
 \widetilde H_{n-2}(S^n-X)\cong\ZZ^r.
-$$
+$$The two inductions, first on leaves in a tree and then on edges outside a maximal tree, are in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.B.2, printed pp. 70--71. Collapsing a maximal subtree produces a wedge of $r$ circles, matching the groups computed here. The displayed statement also follows by Alexander duality, and the card records that it applies because every finite graph is compact and locally contractible (Theorem 3.45, p. 254); in cohomology the Ext term vanishes because homology of a graph is free, as shown above.
+
+
 :::
