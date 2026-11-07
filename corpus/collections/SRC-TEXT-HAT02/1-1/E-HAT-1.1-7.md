@@ -107,7 +107,7 @@ But the first loop represents $0$ and the second represents $1$ in
 $$
 \pi_1(S^1,\theta_0)\cong\ZZ.
 $$
-They therefore cannot be based-homotopic.
+They therefore cannot be based-homotopic, since $\pi_1(S^1,\theta_0)\cong\ZZ$ with the standard loop as generator (Theorem 1.7, p. 29).
 
 :::
 
