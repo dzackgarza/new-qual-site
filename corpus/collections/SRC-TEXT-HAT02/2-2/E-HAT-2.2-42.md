@@ -59,6 +59,17 @@ audit:
     finite-order g_* congruent to the identity modulo m is itself the integral identity by Serre,
     so Putman applies. The m=2 theta-graph reflection acts as -1=1 on H_1 with Z_2 coefficients
     but is not the identity.
+- event: source-corrected
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Repaired an incomplete transcription of Putman's general case. Deleting fixed loops can leave
+    rank zero or one, so the rank-at-least-two contradiction is not enough. The solution now
+    includes Putman's rank-one fixed-point argument and rank-zero fixed-valence-one argument and
+    proves those hypotheses persist after collapsing each component of the maximal forest and
+    deleting fixed loops. It also states that the remaining graph contains an edge and the
+    induced homeomorphism is nontrivial. The corrupted delimiter in G=langle-g-rangle was
+    repaired in the same proof edit, not as an independent correction.
 - event: solution-reviewed
   by: claude
   date: 2026-11-08
@@ -96,14 +107,17 @@ If $g:X	o X$ is a homeomorphism of finite order and $g_*=\operatorname{id}$ on $
 ::: pf-proof
 This is exactly Putman's Theorem 3.1. Its two other hypotheses are automatic here: $X$ has no valence-$1$ vertex, and its first integral homology has rank $n>1$, so the exceptional rank-$1$ condition is not needed. For completeness, Putman's argument is as follows.
 
-Subdivide so that $g$ is simplicial and flips no edge, and replace $g$ by a power of prime order $p$. First suppose that $g$ fixes no edge. Since $g_*=\operatorname{id}$ on $H_1(X;\QQ)$, Proposition 1.1 of Putman's note gives $\chi(X)=\chi(X/G)$, where $G=\langle g
-angle$. Let $v_0$ be the number of fixed vertices of $X$, and let $v$ and $e$ be the numbers of vertices and edges of $X/G$. All other vertex and edge orbits have size $p$. Hence $X$ has $p(v-v_0)+v_0$ vertices and $pe$ edges. Therefore
+Subdivide so that $g$ is simplicial and flips no edge, and replace $g$ by a power of prime order $p$. First suppose that $g$ fixes no edge. Since $g_*=\operatorname{id}$ on $H_1(X;\QQ)$, Proposition 1.1 of Putman's note gives $\chi(X)=\chi(X/G)$, where $G=\langle g\rangle$. Let $v_0$ be the number of fixed vertices of $X$, and let $v$ and $e$ be the numbers of vertices and edges of $X/G$. All other vertex and edge orbits have size $p$. Hence $X$ has $p(v-v_0)+v_0$ vertices and $pe$ edges. Therefore
 $$
 v-e=\chi(X/G)=\chi(X)=p(v-v_0)+v_0-pe,
 $$
-so $(p-1)(v-e)=(p-1)v_0$ and $v-e=v_0$. But $\chi(X)=1-n<0$, hence $v-e<0\le v_0$, a contradiction.
+so $(p-1)(v-e)=(p-1)v_0$ and $v-e=v_0$.
 
-In the general case, let $X^{\mathrm{fix}}$ be the fixed subgraph. Collapse a maximal forest in $X^{\mathrm{fix}}$ to a point. The quotient is homotopy equivalent to $X$, and $g$ still acts simplicially of order $p$ without flipping an edge. Every fixed edge in this quotient is a loop. Delete those fixed loops. The induced homeomorphism on the resulting subgraph now has no fixed edge, so the preceding calculation applies and forces the identity. Therefore $g=\operatorname{id}_X$.
+There are three cases. If $\operatorname{rank}H_1(X;\ZZ)\ge2$, then $\chi(X)<0$, so $v-e<0\le v_0$, a contradiction. If the rank is $1$, then $\chi(X)=0$, and the extra hypothesis in Putman's theorem supplies a fixed point. Hence $v_0\ge1$, again contradicting $v-e=v_0$. If the rank is $0$, then $X$ is a tree and $v-e=1$, so $v_0=1$. Since $g$ fixes every valence-$1$ vertex, $X$ has only one such vertex; the only compact tree with exactly one valence-$1$ vertex is a point, contradicting $g\neq\operatorname{id}$.
+
+For the general case, first assume $g\neq\operatorname{id}_X$, so $X^{\mathrm{fix}}$ is a proper subgraph. Collapse **each component separately** of a maximal forest in $X^{\mathrm{fix}}$. The quotient $X'$ is homotopy equivalent to $X$, and the induced map $g'$ still has order $p$ and flips no edge. Every edge fixed by $g'$ is a loop. Delete all those loops and let $X''$ be the remaining graph and $g''$ the induced homeomorphism. Since $X^{\mathrm{fix}}$ was proper, $X''$ has an edge and $g''\neq\operatorname{id}$. Also $g''$ has no fixed edge and still acts trivially on $H_1(X'';\ZZ)$.
+
+The three exclusions needed above remain true. If $\operatorname{rank}H_1(X'';\ZZ)\ge2$, the first calculation applies directly. If the rank is $1$, then either the rank of $X$ was already $1$ and Putman's fixed-point hypothesis held, or at least one fixed loop was deleted; in the latter case the basepoint of that loop is a fixed point. So $g''$ has a fixed point. Finally, every valence-$1$ vertex of $X''$ is fixed: a loop fixed by $g'$ can only have a fixed basepoint, so no nonfixed vertex loses an incident edge when the loops are deleted, and a fixed vertex was already fixed. The rank-zero tree case therefore applies, as does the nontriviality of $g''$ in every rank. This contradicts the assumption $g\neq\operatorname{id}_X$.
 :::
 
 :::
