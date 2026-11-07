@@ -47,6 +47,21 @@ audit:
     isomorphism there; and it says that M compact makes the boundary compact, so Lemma 3.27(a)
     applies with A equal to the boundary. Not checked: the global sign, which is the one fixed by
     Exercise 30's collar convention.
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Replaced the false half-disk computation. Explicitly, for a half-disk N in D^2 or an annulus,
+    N and N cap boundary M are contractible, so the previously used H_2(N,N cap boundary M) is 0,
+    not R, and H_1(N cap boundary M) = H_1(D^1) = 0, not R; the asserted deformation retraction
+    onto N also does not hold. The correct local pair is (D, boundary D), with D a closed half-ball
+    and boundary D consisting of both its flat face and curved cap, so H_n(D,boundary D) = R and
+    its boundary map is the suspension isomorphism. The new proof uses A = (M-U) union V and
+    proves H_n(M,A) = H_n(D,boundary D) via good-pair quotients (Proposition 2.22 p.124), not a
+    global excision. It then uses naturality of the triple (M,A,boundary M-V) and excision on the
+    boundary sphere to compare with H_{n-1}(boundary M,boundary M-x). The n = 1 local group is
+    treated separately using reduced H_0(S^0) and unreduced H_0 of a point.
+
 ---
 
 ::: {.problem}
@@ -54,21 +69,59 @@ Show that if $M$ is a compact $R$-orientable $n$-manifold, then the boundary map
 :::
 
 ::: {.solution}
-Let
+Let $[M]\in H_n(M,\partial M;R)$ be the relative fundamental class. On p. 250 Hatcher constructs it from the collar identification
 $$
-[M,\partial M]\in H_n(M,\partial M;R)
+H_i(M,\partial M;R)\cong
+H_i\bigl(M-\partial M,\partial M\times(0,\varepsilon);R\bigr):
 $$
-be a fundamental class, and let
-$$
-\delta:H_n(M,\partial M;R)\to H_{n-1}(\partial M;R)
-$$
-be the boundary homomorphism.
+its restriction to $H_n(M-\partial M,(M-\partial M)-\{z\};R)$ is the chosen local orientation at every interior point $z$.
 
-Fix $x\in\partial M$. Choose a closed half-ball $N\subset M$ around $x$ that meets $\partial M$ in the flat disk $N'=N\cap\partial M$ and lies in a single boundary chart $H=\{u\in\RR^n:|u|\le\varepsilon,\ u_n\ge0\}$, with $x$ at the centre of $N'$. Excision of the complementary part of $\partial M$ gives $H_n(M,\partial M;R)\cong H_n(M\setminus A,N')$ with $A=\partial M\setminus N'$, and $M\setminus A=(M-\partial M)\cup N'$ deformation retracts onto $N$ through a collar of $\partial M$, so $H_n(M\setminus A,N')\cong H_n(N,N';R)$; and excision again gives $H_{n-1}(\partial M,\partial M-\{x\};R)\cong H_{n-1}(N',N'-\{x\};R)$. Under these identifications the boundary map of $(M,\partial M)$ becomes the boundary map of $(N,N')$. That pair is $(D^n,D^{n-1})$ up to a homeomorphism of pairs, and $N$ is contractible, so its long exact sequence consists of isomorphisms
+Fix $x\in\partial M$. Choose an open half-ball $U\subset M$ around $x$ in a single boundary chart, with $\overline U\cong D^n$ and $V=U\cap\partial M$ an open $(n-1)$-disk in the flat face. Put $D=\overline U$ and
 $$
-\partial:H_n(N,N';R)\longrightarrow H_{n-1}(N';R),\qquad H_{n-1}(N';R)\cong R .
+A=M-(U-V)=(M-U)\cup V .
 $$
-Hence $\partial$ carries the generator $\mu_N$ that is the image of $[M,\partial M]$ to a generator of $H_{n-1}(N';R)$, and therefore to a generator of the local group $H_{n-1}(\partial M,\partial M-\{x\};R)$; the generator is the one fixed in Exercise 30 by dividing the local orientation at $x$ by the collar direction.
+Then $\partial M\subset A$ and $V=\partial M\cap U$, so $(M,A,\partial M-V)$ is a triple. Also $A\cap D=\partial D$: the flat face $V$ is included in $\partial M$, and the curved cap is included in $M-U$.
 
-Since this holds at every $x\in\partial M$, the class $\delta[M,\partial M]$ is a section of the orientation cover of $\partial M$ whose value at each point is a generator, and $M$ compact makes $\partial M$ compact, so Lemma 3.27(a) with $A=\partial M$ identifies it with the fundamental class: $\delta[M,\partial M]=[\partial M]$, up to the global sign convention for the induced orientation on $\partial M$.
+The local relative group is computed by
+$$
+H_n(M,A;R)\cong H_n(D,\partial D;R)\cong R .
+$$
+This is not excision by deleting a flat boundary patch. Instead, both $(M,A)$ and $(D,\partial D)$ are good pairs: shrinking a boundary-chart half-ball and a collar gives neighborhoods that deformation retract to $A$ and $\partial D$, respectively. The inclusion of pairs induces a homeomorphism
+$$
+D/\partial D\xrightarrow{\ \cong\ }M/A
+$$
+because everything outside $D$ is contained in $A$. Proposition 2.22, p. 124, therefore gives the first isomorphism; the second is the pair sequence of $(D,\partial D)$, with $\partial D\cong S^{n-1}$. In particular $H_2(D,\partial D;R)=R$ for a disk or a half-disk in an annulus, in contrast to the zero group of a pair of two contractible disks.
+
+I next check that the image of $[M]$ in $H_n(M,A;R)$ is a generator. Pick an interior point $z\in U-V$. Since $A\subset M-\{z\}$, the image of $[M]$ in $H_n(M,A;R)$ maps under the pair inclusion to its local orientation in $H_n(M,M-\{z\};R)$, which is a generator by the first paragraph. As $H_n(M,A;R)$ also has the single generator $[D]$ coming from $H_n(D,\partial D;R)$, the image of $[M]$ is $\pm[D]$ (and the local restriction map is an isomorphism onto $H_n(M,M-\{z\};R)$).
+
+It remains to pass to the boundary at $x$. Write $\partial_{D,V}$ for the composite
+$$
+H_n(D,\partial D;R)\xrightarrow{\ \partial\ }
+H_{n-1}(\partial D;R)\longrightarrow
+H_{n-1}(\partial D,\partial D-\{x\};R)
+\xleftarrow[\ \cong\ ]{\ \operatorname{exc}\ }
+H_{n-1}(V,V-\{x\};R).
+$$
+The last arrow is an isomorphism by excision in the $(n-1)$-sphere $\partial D$, since $V$ is an open disk in $\partial D$ around $x$ and $x\in V$. By naturality of the boundary map in the triple $(M,A,\partial M-V)$, and of the quotient-pair isomorphisms above, the following diagram commutes:
+$$
+\begin{array}{ccc}
+H_n(M,\partial M;R) & \xrightarrow{\ \delta\ } & H_{n-1}(\partial M;R)\\
+\Big\downarrow && \Big\downarrow\\
+H_n(M,A;R) && H_{n-1}(\partial M,\partial M-V;R)\\
+\Big\uparrow{\cong} && \Big\uparrow{\cong}\\
+H_n(D,\partial D;R) & \xrightarrow{\ \partial_{D,V}\ } & H_{n-1}(V,V-\{x\};R) .
+\end{array}
+$$
+The upper-left vertical map is the relative localization just computed; the upper-right one is induced by inclusion. The right-hand lower vertical map is again excision, with $V$ open in $\partial M$. The bottom equality of the two composites is the chain-level statement that a relative local cycle and its boundary are localized by the same restriction.
+
+Now $H_n(D,\partial D;R)\cong R$ and $H_{n-1}(\partial D;R)\cong R$ for $n\ge2$, with $\delta$ an isomorphism by the pair sequence because $D$ is contractible. For $n=1$, the reduced pair sequence gives $H_1(D,\partial D;R)\cong\widetilde H_0(S^0;R)\cong R$, while the unreduced local groups are $H_0(S^0,S^0-\{x\};R)\cong H_0(V;R)\cong R$ because $V=\{x\}$. In every dimension the boundary map sends $[D]$ to a fundamental class $[\partial D]$. Its restriction to $H_{n-1}(V,V-\{x\};R)$ is therefore a generator. By the diagram, $\delta[M]$ maps to a generator of
+$$
+H_{n-1}(\partial M,\partial M-\{x\};R).
+$$
+Its sign is exactly the one fixed by Exercise 30's product orientation of the collar: the relative class comes from an oriented interior disk times the collar interval, and $\partial$ picks out that interval's endpoint.
+
+Since $x$ was arbitrary, $\delta[M]$ restricts to a local orientation generator at every boundary point. As $M$ is compact, $\partial M$ is compact, so Lemma 3.27(a), p. 236, with $A=\partial M$ identifies this section with the fundamental class of $\partial M$. Hence
+$$
+\delta[M]=[\partial M].
+$$
 :::
