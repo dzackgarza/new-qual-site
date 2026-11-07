@@ -34,6 +34,31 @@ audit:
     increasing self-map of each open edge forces the identity. The $\ZZ_2$ example is the theta
     graph, where the reflection reverses every edge and so acts as $-\mathrm{id}$, which is the
     identity on $H_1(\cdot;\ZZ_2)$ although $g$ is not the identity.
+- event: solution-written
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Replaces the independently assembled circle-and-bridge proof with a complete published
+    argument. Andrew Putman, The action on homology of finite groups of automorphisms of surfaces
+    and graphs, Theorem 3.1, pp.4-5, proves the integral statement by quotient Euler
+    characteristics. Jean-Pierre Serre, Bounds for the orders of the finite subgroups of G(k),
+    Section 1.2, Lemma 1, printed p.5, proves that the kernel of GL_n(Z) to GL_n(Z/mZ) is
+    torsion-free for m>=3, which reduces the modular statement to Putman's theorem. The theta
+    graph gives the explicit m=2 counterexample. The earlier loop-edge correction was valid but is
+    no longer needed by this different proof; DeMason p.80 explicitly says his argument is not
+    fully fleshed and is not used as a completion source.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Read Hatcher p.159 and the complete Putman and Serre arguments. In Putman's no-fixed-edge
+    case, if p is prime and v_0 counts fixed vertices, the quotient has v vertices and e edges,
+    while the original graph has p(v-v_0)+v_0 vertices and pe edges. Equality of Euler
+    characteristics gives v-e=v_0, contradicting rank at least two. The general case collapses a
+    maximal forest in the fixed subgraph and deletes fixed loops to reach that case. For m>2 a
+    finite-order g_* congruent to the identity modulo m is itself the integral identity by Serre,
+    so Putman applies. The m=2 theta-graph reflection acts as -1=1 on H_1 with Z_2 coefficients
+    but is not the identity.
 - event: solution-reviewed
   by: claude
   date: 2026-11-08
@@ -61,195 +86,66 @@ What goes wrong when $m = 2$?
 :::
 
 ::: {.solution}
-Throughout, $R$ denotes $\ZZ$ or $\ZZ_m$ with $m > 2$; the only property of $R$ used is $2 \neq 0$ in $R$.
-A *circle* in $X$ is a subgraph homeomorphic to $S^1$, and a *bridge* is an edge whose removal (keeping its endpoints) disconnects $X$.
-For a homeomorphism $g$ of $X$, write $g_\#$ for the induced map on cellular chains.
+Use **Andrew Putman, *The action on homology of finite groups of automorphisms of surfaces and graphs*, Theorem 3.1, pp. 4--5** (`tmp/sources/putman-finite-order-homology.pdf`) for integral homology, and **Jean-Pierre Serre, *Bounds for the orders of the finite subgroups of $G(k)$*, §1.2, Lemma 1, printed p. 5** (`tmp/sources/serre-bounds-finite-subgroups.pdf`) for modular coefficients.
 
 ::: pf
 
-::: {.pf-step #graph}
-$X$ has a graph structure whose vertex set $V$ is nonempty, in which every vertex has valence at least $3$, and which every homeomorphism of $X$ preserves: it permutes $V$ and permutes the edges.
+::: {.pf-step #integral}
+If $g:X	o X$ is a homeomorphism of finite order and $g_*=\operatorname{id}$ on $H_1(X;\ZZ)$, then $g=\operatorname{id}_X$.
 
 ::: pf-proof
-Let $V$ be the set of points of $X$ having no open neighbourhood homeomorphic to $\RR$.
-In the given structure a point interior to an edge, or a vertex of valence $2$, has such a neighbourhood, while a vertex of valence $k \ge 3$ does not, since deleting it disconnects every small connected neighbourhood into at least $3$ components, whereas deleting a point of an interval leaves $2$.
-There are no vertices of valence $1$ by hypothesis, and none of valence $0$ because $X$ is connected with $n > 1$.
-So $V$ is the set of vertices of valence at least $3$.
-If $V$ were empty, $X$ would be a compact connected $1$-manifold, hence a circle, with $H_1 \cong \ZZ$, contradicting $n > 1$.
-Each component of $X \setminus V$ is a union of open edges and valence-$2$ vertices; it is not a circle, since a circle component would be both open and compact, hence a component of $X$, contradicting $V \ne \emptyset$. It is a connected $1$-manifold without boundary, so it is an open arc, and as $X$ is compact its closure in $X$ adds one or two points of $V$: these closures are the edges of a graph structure on $X$ with vertex set $V$, an edge whose two ends are the same point of $V$ being a loop. In particular the wedge of two circles has the single vertex at the wedge point and two loop edges.
-A homeomorphism preserves $V$, because $V$ is defined topologically, and therefore permutes the components of $X \setminus V$, which are the edges.
+This is exactly Putman's Theorem 3.1. Its two other hypotheses are automatic here: $X$ has no valence-$1$ vertex, and its first integral homology has rank $n>1$, so the exceptional rank-$1$ condition is not needed. For completeness, Putman's argument is as follows.
+
+Subdivide so that $g$ is simplicial and flips no edge, and replace $g$ by a power of prime order $p$. First suppose that $g$ fixes no edge. Since $g_*=\operatorname{id}$ on $H_1(X;\QQ)$, Proposition 1.1 of Putman's note gives $\chi(X)=\chi(X/G)$, where $G=\langle g
+angle$. Let $v_0$ be the number of fixed vertices of $X$, and let $v$ and $e$ be the numbers of vertices and edges of $X/G$. All other vertex and edge orbits have size $p$. Hence $X$ has $p(v-v_0)+v_0$ vertices and $pe$ edges. Therefore
+$$
+v-e=\chi(X/G)=\chi(X)=p(v-v_0)+v_0-pe,
+$$
+so $(p-1)(v-e)=(p-1)v_0$ and $v-e=v_0$. But $\chi(X)=1-n<0$, hence $v-e<0\le v_0$, a contradiction.
+
+In the general case, let $X^{\mathrm{fix}}$ be the fixed subgraph. Collapse a maximal forest in $X^{\mathrm{fix}}$ to a point. The quotient is homotopy equivalent to $X$, and $g$ still acts simplicially of order $p$ without flipping an edge. Every fixed edge in this quotient is a loop. Delete those fixed loops. The induced homeomorphism on the resulting subgraph now has no fixed edge, so the preceding calculation applies and forces the identity. Therefore $g=\operatorname{id}_X$.
 :::
 
 :::
 
-::: {.pf-step #chains}
-For a homeomorphism $g$ of $X$, $H_1(X; R)$ is the group $Z_1$ of cellular $1$-cycles with coefficients in $R$, and $g_*$ is the restriction of $g_\#$, which sends each oriented edge $e$ to $\pm g(e)$, with sign $+$ exactly when $g$ carries the orientation of $e$ to that of $g(e)$.
+::: {.pf-step #modular}
+The homomorphism $G	o\operatorname{Aut}H_1(X;\ZZ_m)$ is injective for every $m>2$.
 
 ::: pf-proof
-Use the structure of step [](#graph){.pf-ref}.
-The cellular chain complex is $0 \to C_1 \to C_0 \to 0$ with no $2$-cells, so $H_1(X;R) = \ker \partial = Z_1$.
-By step [](#graph){.pf-ref}, $g$ is a cellular map carrying each closed edge homeomorphically onto a closed edge, so the cellular chain map has the stated form, and cellular homology computes $g_*$ by Theorem 2.35 (p. 139) with the naturality proved in Exercise 17 (p. 157).
-:::
-
-:::
-
-::: {.pf-step #circles}
-If $g_* = \id$ on $H_1(X;R)$, then $g$ maps every circle $C$ onto itself, preserving its orientation.
-
-::: pf-proof
-Orient $C$ and let $z_C \in Z_1$ be the sum of the edges of $C$, each with sign $\pm 1$ according to whether its orientation agrees with that of $C$.
-By step [](#chains){.pf-ref}, $g_\# z_C = \pm z_{g(C)}$, with sign $+$ exactly when $g \colon C \to g(C)$ preserves orientation.
-Since $g_\# z_C = z_C$ and the coefficients $\pm 1$ are nonzero in $R$, the supports agree, so $g(C) = C$.
-If $g$ reversed the orientation of $C$, then $z_C = -z_C$, so $2 z_C = 0$, which is false because $2 \neq 0$ in $R$.
-:::
-
-:::
-
-::: {.pf-step #tree}
-A finite connected graph with at least one edge, in which at most one vertex has valence at most $1$, contains a circle.
-
-::: pf-proof
-A loop is a circle, and two edges with the same endpoints form a circle.
-Otherwise a graph without circles is a tree, and a finite tree with at least one edge has at least two vertices of valence $1$.
-:::
-
-:::
-
-::: {.pf-step #bridges}
-If $g$ maps every circle onto itself, then $g$ maps every bridge $f$ onto itself and fixes both of its endpoints.
-
-::: pf-proof
-
-::: {.pf-step #bridge-sides}
-Each component of $X \setminus \operatorname{int} f$ contains a circle.
-
-::: pf-proof
-Let $K$ be a component and $w$ the endpoint of $f$ in $K$.
-Every vertex of $K$ other than $w$ has valence at least $3$ in $K$, and $w$ has valence at least $2$ in $K$ by step [](#graph){.pf-ref}; in particular $K$ has an edge.
-Step [](#tree){.pf-ref} gives a circle in $K$.
-:::
-
-:::
-
-::: {.pf-step #partition}
-Distinct bridges $f \neq f'$ induce distinct unordered partitions of the set of circles by the components of $X \setminus \operatorname{int} f$ and of $X \setminus \operatorname{int} f'$.
-
-::: pf-proof
-Let $K_1, K_2$ be the components of $X \setminus \operatorname{int} f$, with $f' \subset K_2$.
-Removing $\operatorname{int} f'$ splits $K_2$ into a part $M$ containing the endpoint $w_2$ of $f$ and a part $N$; the components of $X \setminus \operatorname{int} f'$ are $K_1 \cup f \cup M$ and $N$.
-The partitions are $\{\mathrm{Circ}(K_1), \mathrm{Circ}(M) \cup \mathrm{Circ}(N)\}$ and $\{\mathrm{Circ}(K_1) \cup \mathrm{Circ}(M), \mathrm{Circ}(N)\}$, where $\mathrm{Circ}$ is the set of circles in a subgraph.
-By step [](#bridge-sides){.pf-ref}, $\mathrm{Circ}(K_1)$ and $\mathrm{Circ}(N)$ are nonempty and disjoint, so the partitions agree only if $\mathrm{Circ}(M) = \emptyset$.
-But in $M$ every vertex has valence at least $3$, except the endpoints of $f$ and $f'$ lying in $M$, which lose one edge each.
-If these endpoints are distinct, $M$ has an edge and no vertex of valence at most $1$; if they coincide, at most one vertex has valence at most $1$, and $M$ has an edge since that vertex has valence at least $3$ in $X$.
-Step [](#tree){.pf-ref} gives a circle in $M$, so the partitions differ.
+Choose a basis of $H_1(X;\ZZ)\cong\ZZ^n$. If $g_*$ is the identity on $H_1(X;\ZZ_m)$, then the integral matrix $A$ of $g_*$ satisfies $A\equiv I\pmod m$. Serre's Lemma 1 in §1.2 says that the kernel of
+$$
+GL_n(\ZZ)\longrightarrow GL_n(\ZZ/m\ZZ)
+$$
+is torsion-free for $m\ge3$. Since $g$ has finite order, $A$ has finite order and therefore $A=I$. Step [](#integral){.pf-ref} gives $g=\operatorname{id}_X$.
 :::
 
 :::
 
 ::: pf-step
-$g(f) = f$, and $g$ fixes both endpoints of $f$.
+The homomorphism $G	o GL_n(\ZZ)$ is injective.
 
 ::: pf-proof
-The edge $g(f)$ is a bridge, and its partition of the circles is the image under $g$ of the partition of $f$.
-Since $g$ fixes every circle, the two partitions coincide, so $g(f) = f$ by step [](#partition){.pf-ref}.
-The homeomorphism $g$ permutes the components $K_1, K_2$ of $X \setminus \operatorname{int} f$; $K_1$ contains a circle by step [](#bridge-sides){.pf-ref}, which $g$ fixes, so $g(K_1) = K_1$ and $g$ fixes the endpoint of $f$ in $K_1$, and likewise the one in $K_2$.
+This is step [](#integral){.pf-ref} applied to each element of the finite group $G$.
 :::
 
 :::
 
-:::
-
-:::
-
-::: {.pf-step #circle-vertices}
-If $g$ maps every circle onto itself preserving its orientation, then $g$ fixes every vertex and every edge of every circle, preserving the orientation of each edge.
+::: {.pf-step #modtwo}
+For $m=2$, injectivity can fail because $-1=1$ in $\ZZ_2$.
 
 ::: pf-proof
-
-::: {.pf-step #fixed-vertex}
-Every circle $C$ contains a vertex fixed by $g$.
-
-::: pf-proof
-Choose a vertex $w$ of $C$; by step [](#graph){.pf-ref} it has valence at least $3$, so some edge $f$ at $w$ is not in $C$.
-If $f$ is a bridge, $g(w) = w$ by step [](#bridges){.pf-ref}.
-Otherwise $f$ lies on a circle $C''$: remove $\operatorname{int} f$, join the endpoints of $f$ by a path in the remaining connected graph, and add $f$.
-Traverse $C''$ from $w$ along $f$ until the first vertex $q$ of $C$.
-If $q = w$, then $C \cap C'' = \{w\}$; both circles are $g$-invariant, so $g(w) = w$.
-If $q \neq w$, the traversed path $P$ meets $C$ only in $w$ and $q$.
-Let $A$ be one of the two arcs of $C$ from $w$ to $q$; then $D = P \cup A$ is a circle with $C \cap D = A$.
-Both $C$ and $D$ are $g$-invariant, so $g(A) = A$.
-Since $g$ preserves the orientation of $C$, it maps the arc $A$ to itself preserving the orientation $A$ inherits from $C$, so it fixes the initial point $w$ of $A$.
-:::
-
-:::
-
-::: pf-step
-$g$ fixes every vertex and every edge of $C$, preserving edge orientations.
-
-::: pf-proof
-List the vertices of $C$ in cyclic order as $v_0, \dots, v_{L-1}$ with $v_0$ fixed by step [](#fixed-vertex){.pf-ref}.
-An orientation-preserving cellular homeomorphism of $C$ sends $v_i$ to $v_{i+k}$ (indices mod $L$) for a fixed $k$, and $g(v_0) = v_0$ forces $k = 0$.
-Each edge from $v_i$ to $v_{i+1}$ along the orientation therefore goes to itself, with orientation preserved.
+Let $X\subset\RR^2$ be the unit circle together with the chord $[-1,1]	imes\{0\}$. It is a theta graph with vertices $(\pm1,0)$ and three edges, so $n=3-2+1=2$, and no vertex has valence $1$. Let
+$$
+g(x,y)=(-x,y),\qquad G=\{\operatorname{id},g\}.
+$$
+Orient every edge from $(-1,0)$ to $(1,0)$. Then $g$ sends each oriented edge to itself with reversed orientation. Hence $g_\#=-\operatorname{id}$ on cellular $1$-chains, so $g_*=-\operatorname{id}$ on $H_1(X;\ZZ)$, but on $H_1(X;\ZZ_2)$,
+$$
+g_*=-\operatorname{id}=\operatorname{id},
+$$
+although $g\neq\operatorname{id}_X$. This is precisely the orientation-reversal possibility excluded in the modular step when $m>2$.
 :::
 
 :::
 
 :::
-
-:::
-
-::: {.pf-step #identity}
-If $g$ has finite order and $g_* = \id$ on $H_1(X; R)$, then $g = \id_X$.
-
-::: pf-proof
-
-::: pf-step
-$g$ fixes every vertex and maps every edge to itself preserving its orientation.
-
-::: pf-proof
-Every edge $e$ is a bridge or lies on a circle: if $e$ is not a bridge, a path joining its endpoints in $X \setminus \operatorname{int} e$ together with $e$ is a circle.
-Steps [](#circles){.pf-ref}, [](#bridges){.pf-ref} and [](#circle-vertices){.pf-ref} give the claim for the edges, and every vertex is an endpoint of an edge.
-:::
-
-:::
-
-::: pf-step
-$g = \id_X$.
-
-::: pf-proof
-Let $e$ be an edge with characteristic map $\varphi \colon [0,1] \to \overline{e}$, a homeomorphism from $(0,1)$ onto the open edge.
-Then $h = \varphi^{-1} g \varphi$ is a homeomorphism of $(0,1)$, increasing because $g$ preserves the orientation of $e$, and $h^k = \id$ where $k$ is the order of $g$.
-If $h(t) > t$ for some $t$, then applying the increasing map $h$ repeatedly gives $h^k(t) > \dots > h(t) > t$, a contradiction; likewise $h(t) < t$ is impossible.
-So $h = \id$, and $g$ is the identity on every edge and every vertex.
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-The homomorphisms $G \to GL_n(\ZZ)$ and $G \to \operatorname{Aut} H_1(X;\ZZ_m)$ for $m > 2$ are injective.
-
-::: pf-proof
-Every element of the finite group $G$ has finite order, so step [](#identity){.pf-ref} with $R = \ZZ$ and with $R = \ZZ_m$ shows that the kernel is trivial. The hypothesis $2\neq0$ in $R$ is the only place where $m>2$ is used, through step [](#circles){.pf-ref}.
-:::
-
-:::
-
-::: pf-step
-For $m = 2$ the homomorphism $G \to GL_n(\ZZ_2)$ can fail to be injective, because a homeomorphism can reverse the orientation of every circle it preserves and $-1 = 1$ in $\ZZ_2$, so step [](#circles){.pf-ref} fails.
-
-::: pf-proof
-Let $X \subset \RR^2$ be the unit circle together with the segment $[-1,1] \times \{0\}$: a theta graph with vertices $(\pm 1, 0)$ and three edges, so $n = 3 - 2 + 1 = 2$, and no vertex has valence $1$.
-Let $g(x,y) = (-x,y)$ and $G = \{\id, g\}$.
-Orient each edge from $(-1,0)$ to $(1,0)$; $g$ maps each edge to itself reversing its orientation, so $g_\# = -\id$ on $C_1$ and $g_* = -\id$ on $H_1(X;\ZZ) \cong \ZZ^2$.
-On $H_1(X;\ZZ_2) = Z_1(X;\ZZ_2)$, $g_* = -\id = \id$, although $g \neq \id$.
-:::
-
-:::
-
-:::
-
 :::
