@@ -81,11 +81,11 @@ The cellular chain complex of $T^2$ is
 $$
 0\to\ZZ\xrightarrow{0}\ZZ^2\xrightarrow{0}\ZZ\to0,
 $$
-so the unique $2$-cell represents a generator of $H_2(T^2)\cong\ZZ$. The quotient CW structure on $S^2$ has the same unique $2$-cell and no $1$-cells. The cellular map induced by $q$ is the identity on the top cellular chain group $\ZZ$, hence
+so the unique $2$-cell represents a generator of $H_2(T^2)\cong\ZZ$ by Theorem 2.35 (p. 139), the same theorem that gives $H_2(S^2)\cong\ZZ$ for the quotient structure, which has the same unique $2$-cell and no $1$-cells. The cellular map induced by $q$ is the identity on the top cellular chain group $\ZZ$, hence
 $$
 q_*:H_2(T^2)\xrightarrow{\cong}H_2(S^2).
 $$
-Therefore $q$ cannot be nullhomotopic.
+A nullhomotopic map induces the same homomorphism on homology as a constant map (Theorem 2.10, p. 111), which is not surjective onto $S^2$ and so is zero on $H_2$ by property (b) of degree (p. 134); hence $q$ is not nullhomotopic.
 
 :::
 
@@ -105,7 +105,7 @@ The universal covering map
 $$
 p:\RR^2\to T^2
 $$
-has contractible total space. Since $S^2$ is simply connected, the lifting criterion gives a lift
+has contractible total space, a contraction being $(x,t)\mapsto(1-t)x$. Since $S^2$ is simply connected by Proposition 1.14 (p. 35) and locally path-connected, the lifting criterion of Proposition 1.33 (p. 61) gives a lift
 $$
 \widetilde f:S^2\to\RR^2
 $$
