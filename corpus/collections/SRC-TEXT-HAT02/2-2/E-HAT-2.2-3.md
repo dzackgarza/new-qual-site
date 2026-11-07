@@ -29,6 +29,20 @@ audit:
     $(1-t)\norm{f(x)}=t\norm{x}$ forces $t=1/2$ and then $f(x)=x$; and the vector-field part
     normalizes $F$ on $D^n$, its boundary restriction is null-homotopic and so of degree zero on
     $S^{n-1}$, and the two halves give the outward and inward points.
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Read against Hatcher, §2.2 Exercise 3, printed p. 155: the printed statement matches the card
+    word for word, including "F(x) != 0 for all x" and both outward and inward points on the
+    boundary. Checked: the norm computation (1-t)norm(f(x)) = t norm(x) forces t = 1/2 and then
+    f(x) = x in the first half and f(y) = -y in the second, so both straight-line homotopies are
+    defined; degree is defined only for n > 0, so n >= 1 throughout, as the exercise's hypothesis
+    presupposes. The four degree properties cited are exactly (a), (b), (c) and (f) on printed
+    p. 134. The boundary map g = F-tilde restricted to the boundary is homotopic to a constant,
+    hence of degree zero for n >= 2, and the card's separate paragraph for n = 1 is correct: a
+    continuous nonvanishing F on an interval has one sign throughout, giving outward at one
+    endpoint and inward at the other, where no degree argument is available. No defect.
 ---
 
 ::: {.problem}
