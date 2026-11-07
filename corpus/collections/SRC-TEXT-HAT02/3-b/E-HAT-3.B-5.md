@@ -25,8 +25,18 @@ audit:
     Read both definitions and the four invariance checks: for the homology product a cocycle kills
     the $\partial e^j$ summand and a boundary in the first variable gives a boundary; for the
     cohomology product a cycle in the second variable makes the cochain a cocycle, a cocycle
-    $\\varphi$ and a singular boundary give a coboundary through the swap sign $(-1)^{n-j+1}$, and
-    $\\varphi=\\delta\\theta$ gives a coboundary.
+    $\varphi$ and a singular boundary give a coboundary through the swap sign $(-1)^{n-j+1}$, and
+    $\varphi=\delta\theta$ gives a coboundary.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Rendering repair only, with the mathematics rechecked: five occurrences of $\varphi$ and one of
+    $\varphi=\delta\theta$ were written with a doubled backslash, which renders as a literal
+    "\\varphi" and which the schema check does not catch; they are now single. The argument itself
+    is unchanged and checked against the two printed formulas of p.280 — for the first product the
+    slant product of a boundary is φ(e^j) times the boundary of e^i, so it is a chain map, and the
+    four invariance checks run through the swap sign (-1)^{n-j+1}.
 ---
 
 ::: {.problem}
@@ -68,7 +78,7 @@ The formula is bilinear and compatible with the boundary maps.
 
 ::: pf-proof
 
-$\partial(e^i \times e^j) = \partial e^i \times e^j + (-1)^i e^i \times \partial e^j$, and applying the slant product (with $\\varphi$ a cocycle, so $\varphi(\partial e^j) = 0$) gives $\varphi(e^j)\partial e^i$, which is the boundary of $\varphi(e^j) e^i$; hence the slant product is a chain map.
+$\partial(e^i \times e^j) = \partial e^i \times e^j + (-1)^i e^i \times \partial e^j$, and applying the slant product (with $\varphi$ a cocycle, so $\varphi(\partial e^j) = 0$) gives $\varphi(e^j)\partial e^i$, which is the boundary of $\varphi(e^j) e^i$; hence the slant product is a chain map.
 
 :::
 
@@ -114,7 +124,7 @@ The formula is bilinear and compatible with the coboundary maps.
 
 ::: pf-proof
 
-Extend the displayed formula linearly to a cellular cycle $d$ in $Y$. If $\\varphi$ is a cocycle, then the resulting cochain $c\mapsto\varphi(c\times d)$ is a cocycle: the product boundary formula and $\partial d=0$ give $\varphi(\partial c\times d)=\varphi(\partial(c\times d))=0$.
+Extend the displayed formula linearly to a cellular cycle $d$ in $Y$. If $\varphi$ is a cocycle, then the resulting cochain $c\mapsto\varphi(c\times d)$ is a cocycle: the product boundary formula and $\partial d=0$ give $\varphi(\partial c\times d)=\varphi(\partial(c\times d))=0$.
 
 :::
 
@@ -144,7 +154,7 @@ Steps [](#s2){.pf-ref} and [](#s4){.pf-ref}.
 
 :::
 
-The formulas also respect changes of representatives. For the first product, if $\varphi=\delta\psi$ and $z$ is a cellular cycle of total degree $n$, the product boundary formula gives $z/\varphi=(-1)^{n-j+1}\partial(z/\psi)$, so its homology class is zero. If $z=\partial w$ and $\\varphi$ is a cocycle, then $z/\varphi=\partial(w/\varphi)$. For the second product, if $d=\partial e$ and $\\varphi$ is a cocycle, then for a cell $c$ of degree $n-j$,
+The formulas also respect changes of representatives. For the first product, if $\varphi=\delta\psi$ and $z$ is a cellular cycle of total degree $n$, the product boundary formula gives $z/\varphi=(-1)^{n-j+1}\partial(z/\psi)$, so its homology class is zero. If $z=\partial w$ and $\varphi$ is a cocycle, then $z/\varphi=\partial(w/\varphi)$. For the second product, if $d=\partial e$ and $\varphi$ is a cocycle, then for a cell $c$ of degree $n-j$,
 $$
 \varphi(c\times\partial e)=(-1)^{n-j+1}\varphi(\partial c\times e),
 $$
