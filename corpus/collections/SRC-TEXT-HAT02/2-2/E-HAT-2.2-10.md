@@ -69,7 +69,7 @@ Write $X_n$ for the quotient of $S^n$ by the identification $x\sim -x$ on the eq
 
 ::: {.pf-step #s1}
 
-For $n=2$, the quotient has a CW structure with one $0$-cell, one $1$-cell $e$ (the quotient $\RP^1\cong S^1$ of the equator), and two $2$-cells $f_1,f_2$ (the two hemispheres). Since traveling once around $\RP^1$ means traveling twice around the equator before identification, each $2$-cell attaches by a degree-$2$ map. The cellular complex is therefore
+For $n=2$, the quotient has one $0$-cell, one quotient $1$-cell $e=\RP^1$ and two $2$-cells $f_1,f_2$, the hemispheres. A single attachment traversal of a hemisphere's boundary follows the equatorial $S^1$ once and is sent by the quotient to **two** traversals of $\RP^1$. Hence each $2$-cell has attaching degree $2$. This is the direction of the double cover used below. The cellular complex is therefore
 $$
 0\longrightarrow\ZZ^2\xrightarrow{\ \partial_2\ }\ZZ\xrightarrow{\ \partial_1=0\ }\ZZ\longrightarrow0,
 \qquad \partial_2(a,b)=2(a+b).
@@ -89,7 +89,7 @@ This is DeMason's computation for Hatcher 2.2.10, printed p. 76 of `tmp/sources/
 
 ::: {.pf-step #s2}
 
-For $n=3$, the quotient can be written as $\RP^2$ with two $3$-cells attached. With the usual cell decomposition and attaching maps, each $3$-cell traverses directions in opposite orientations, so $\partial_3=0$. The chain complex simplifies to
+For $n=3$, the quotient has the corresponding standard cellular structure, whose top attaching maps are those of $\RP^3$: two opposite orientation components cancel, with degree $1+(-1)^3=0$ by the cellular boundary computation of Theorem 2.35 (p. 139). Thus $\partial_3=0$. The chain complex simplifies to
 $$
 \ZZ^2\xrightarrow{\partial_3=0}\ZZ\xrightarrow{\ \partial_2=2\ }\ZZ\xrightarrow{\ \partial_1=0\ }\ZZ
 $$
