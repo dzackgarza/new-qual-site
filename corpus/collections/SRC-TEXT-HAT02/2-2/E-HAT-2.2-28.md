@@ -148,5 +148,7 @@ Thus $H_1(Z)\cong\ZZ_4$, and connectedness gives $H_0(Z)=\ZZ$.
 :::
 
 :::
+Both computations are in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.2.28, printed pp. 66--67. The boundary circle of the Möbius band is twice the core generator on $H_1$. For (a), $(a,c)$ maps to $(a,-2c)$, giving $H_2=\ZZ$ and cokernel $\ZZ^2$; for (b), $(u,c)$ maps to $(u,-2c)$ with $2u=0$, so $H_2=0$ and cokernel $\langle c\mid4c=0\rangle=\ZZ_4$.
+
 
 :::
