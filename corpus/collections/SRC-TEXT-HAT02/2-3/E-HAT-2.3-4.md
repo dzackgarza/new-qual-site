@@ -36,6 +36,16 @@ audit:
     identity on $Y$, so $Y\to X\vee Y\to Y$ is the identity and the second map is onto; and the
     retraction onto $Y$ supplies the section that splits the sequence. Finite wedges then follow by
     induction.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Statement matches Exercise 4 of §2.3 as printed on p. 165, and the fact is the one Hatcher
+    points out on p. 160. The binary argument is correct: (X vee Y)/X = Y, the retraction onto X
+    makes i_* split injective, and the inclusion of Y provides a section of the quotient-induced
+    map so that map is onto and the connecting homomorphism vanishes; the sequence splits by the
+    two retractions. The step now names both reasons instead of only the first, and the exactness
+    axiom is cited to p. 160. What is not covered: no certificate.
 ---
 
 ::: {.problem}
@@ -43,7 +53,7 @@ Show that the wedge axiom for homology theories follows from the other axioms in
 :::
 
 ::: {.solution}
-It suffices to prove the binary case and then induct.
+It suffices to prove the binary case and then induct. This is the deduction Hatcher points out on p. 160, where the third axiom is said to follow from the first two for finite wedge sums.
 
 Let $X\vee Y$ be the wedge at the common basepoint $*$. Regard $X$ as a subcomplex of $X\vee Y$. Then
 $$
@@ -63,8 +73,8 @@ $$
 
 ::: pf-proof
 
-The exactness axiom uses the quotient $(X\vee Y)/X\cong Y$ directly.
-The retraction $r:X\vee Y\to X$ collapsing $Y$ to the wedge point satisfies $r\circ i=\mathrm{id}_X$. Hence $i_*:\widetilde h_n(X)\to\widetilde h_n(X\vee Y)$ is split injective. Exactness then forces the connecting map from the relative group to $\widetilde h_{n-1}(X)$ to vanish, giving the displayed short exact sequence.
+The exactness axiom, axiom (2) of p. 160, uses the quotient $(X\vee Y)/X\cong Y$ directly.
+The retraction $r:X\vee Y\to X$ collapsing $Y$ to the wedge point satisfies $r\circ i=\mathrm{id}_X$. Hence $i_*:\widetilde h_n(X)\to\widetilde h_n(X\vee Y)$ is split injective. Also the inclusion $Y\subset X\vee Y$ is a section of the quotient-induced map $j_*$, so $j_*$ is surjective and the connecting map out of $\widetilde h_n(Y)$ is zero. These two facts cut the long exact sequence into the displayed short exact sequences.
 
 :::
 
