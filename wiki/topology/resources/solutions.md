@@ -43,6 +43,16 @@ Two defects found on checking it against Hatcher and recorded on the cards: the 
 $d=\pm p$ from local signs that are individually $\pm1$ without proving they agree, and the §3.3 Ex.6
 sheet reads the pair sequence only for $n\ge3$, where $H_{n-2}(S^{n-1})=0$.
 
+**Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, local file
+`tmp/sources/hatcher-solutions-guanyu-li.pdf`. Numbering is internal, so cite the parenthetical Hatcher
+exercise number as well as the internal one. Its §3.3 material (printed pp. 56–59) has solutions to
+Hatcher §3.3 Ex. 3 (pp. 56), 4 (p. 57), 8 (p. 59), 10 (p. 57), 11 (pp. 57–58), 17 (p. 58),
+18 (pp. 58–59) and 25 (p. 59). Hatcher §3.3 Ex. 1 and 2 are blank there; §3.3 Ex. 22 and 31 are not
+covered in this section. Checked defects recorded on the cards: the Ex. 10 argument omits infinite-sheeted
+covers, Ex. 18 leaves the subgroup-realization step terse, and Ex. 25 writes `Ext` where the universal
+coefficient sequence has `Hom`. Li's Ex. 11 contains an explicit quotient-cell construction at the top
+of p. 58; this is not a blanket endorsement of the other arguments or of complete chapter coverage.
+
 **Steven V. Sam, *Solutions to Algebraic Topology* (2008)**, `tmp/sources/hatcher-solutions-sam-2008.pdf`
 (30 pages; obtained from the UC Riverside Math 205B page, where the host warns that some solutions in it
 are poor — check every argument against the book). Its printed page numbers run one behind the PDF page
