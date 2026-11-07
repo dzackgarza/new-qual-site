@@ -33,14 +33,25 @@ audit:
   note: >-
     Read the construction: collapse the complement of an orientation-compatible ball, giving a map
     to $B/\partial B=S^n$ of local degree 1 at an interior regular value.
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Re-read against the printed exercise (p.258) and restored the printed sentence, which has no
+    $n>0$; the card's earlier note called that hypothesis implicit, and it is now shown to be
+    forced by the definition: for $n=0$ the target $S^0$ is disconnected, has no fundamental class,
+    and $f_*([M])$ is one summand of $\ZZ^2$, so no degree is defined. The solution now says this
+    instead of assuming it, and the construction for $n\ge1$ is unchanged.
 ---
 
 ::: {.problem}
 For a map $f: M \to N$ between connected closed orientable $n$-manifolds with fundamental classes $[M]$ and $[N]$, the degree of $f$ is defined to be the integer $d$ such that $f_*([M]) = d[N]$, so the sign of the degree depends on the choice of fundamental classes.
-Show that for any connected closed orientable $n$-manifold $M$ with $n>0$ there is a degree 1 map $M \to S^n$.
+Show that for any connected closed orientable $n$-manifold $M$ there is a degree 1 map $M \to S^n$.
 :::
 
 ::: {.solution}
+The case $n=0$ is excluded by the definition rather than by the mathematics: $S^0$ is disconnected, so it has no fundamental class, and for $M$ a point the image $f_*([M])\in H_0(S^0;\ZZ)=\ZZ^2$ is a single summand for every map $f$, so no integer $d$ satisfies $f_*([M])=d[S^0]$. So take $n\ge1$.
+
 Choose an embedded closed $n$-ball $B\subset M$ whose interior is orientation-compatible with the chosen fundamental class $[M]$. Collapse the complement of the interior of $B$ to a point:
 $$
 q:M\longrightarrow M/(M-\operatorname{int}B).
