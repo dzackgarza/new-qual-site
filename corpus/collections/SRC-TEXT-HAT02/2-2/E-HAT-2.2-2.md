@@ -30,6 +30,17 @@ audit:
     $\tilde g(x)=\pm x$ into a fixed class; and a real-eigenvector-free matrix is injective on
     lines, so it induces a fixed-point-free map of $\RP^{2n-1}$, with the block rotation having
     eigenvalues $\pm i$.
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Read again against Hatcher, §2.2 Exercise 2, printed p. 155: the printed statement matches the
+    card word for word, including the third part's "linear transformations R^{2n} -> R^{2n}
+    without eigenvectors". Checked on printed p. 134 the three degree properties the proof cites:
+    (f) the antipodal map has degree (-1)^{n+1}, (g) a fixed-point-free map has degree (-1)^{n+1},
+    and (d) multiplicativity, so deg(-f) = -deg f as used in the second part's contradiction. The
+    lift of g circ p through the quotient p exists because pi_1(S^{2n}) = 0, and the exhibited
+    block rotation has eigenvalues plus or minus i and so no real eigenvector. No defect.
 ---
 
 ::: {.problem}
