@@ -64,6 +64,51 @@ audit:
     needs, and no properness is used. Parts (a) and (b)'s bounding-chain argument are otherwise
     unchanged. What is not covered: no complete published solution to (a) has been located, so
     that source obligation stays open; no certificate.
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Withdraws the repair recorded in the previous event: the radial-contraction step was FALSE and
+    has been removed. Read literally, D^{p+q} - S^{p-1} contains the origin, where z/norm(z) is
+    undefined, and it contains the points with y = 0 and norm(x) < 1, whose images under the radial
+    formula land in the removed sphere S^{p-1}; so the claimed retraction does not exist and the
+    claimed homotopy equivalence is unfounded. Worse, without a properness hypothesis the
+    inclusion S^{p+q-1} - S^{p-1} into D^{p+q} - D^p is not even a well-defined map, so
+    'the inclusion factors it' was circular: it presupposed exactly the condition the event above
+    had shown to be unavailable. The tangent-arc example ((t, 1-t^2) in D^2, tangent to S^1 at
+    (0,1)) is precisely a case where the inclusion is undefined. What the card now does: it states
+    D^p cap S^{p+q-1} = S^{p-1} as an explicit hypothesis, quotes Hatcher's own hint (Exercise 3,
+    printed p. 176, whose hypothesis is exactly that intersection condition) to get the isomorphism
+    of that inclusion, and closes (b) by factoring the inclusion through the contractible disk D^q.
+    The hypothesis boundary itself is the subject of the discussion at Math StackExchange question
+    4771220, which assumes S^{p-1} = h(D^p) cap S^{p+q-1}, proves (b) under it, notes that only
+    S^{q-1} contained in h'(D^q) is needed of the second disk, and states that the weaker reading
+    h(S^{p-1}) = S^{p-1} breaks the argument; that is an unreviewed user discussion, so it is cited
+    as the source of the hypothesis analysis, not accepted as a published solution. NOT established:
+    (b) for disks that meet the boundary sphere away from S^{p-1}. That case is open on this card
+    and is stated as such in the proof. Part (a) is untouched.
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Withdraws the framing, not the conditional proof. The previous two events presented the
+    properness hypothesis as a repair of a defect in the exercise and read the tangent-arc example
+    as showing that the exercise needs the hypothesis. Neither is established: no source proves
+    that properness is necessary for the printed statement, and the arc example shows only that
+    this particular proof needs it, since it makes the displayed inclusion undefined. The proof now
+    says explicitly that step 4 is a conditional result, that it is not offered as a correction to
+    Hatcher, and that whether the hypothesis can be dropped is open. Still owed, and recorded as
+    owed rather than discharged: a source-backed reduction from an arbitrary embedded disk with
+    boundary S^{p-1} to a proper one, or a complete published proof of the printed statement. What
+    the search located: for locally flat embeddings the reduction is a consequence of the ambient
+    isotopy and collar theorems in Rushing, Topological Embeddings (Chapter 1 defines proper
+    embeddings and local flatness; the isotopy extension and collar theorems give the push into the
+    interior), which does not cover wild embeddings; and the combinatorial linking-number formalism
+    of DeTurck and Gluck, Higher dimensional linking integrals (arXiv:0802.0320), defines the
+    linking number of two disjoint null-homologous cycles without any properness hypothesis, but
+    presupposes a combinatorial or smooth structure, so it also does not settle the topological
+    statement as printed. No complete published solution to (b) in full generality has been
+    located. The card is not certified and the source obligation is not closed.
 ---
 ---
 
@@ -121,7 +166,7 @@ Under the homeomorphism in step [](#s1){.pf-ref}, contract the $\RR^p$ factor li
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Suppose, for contradiction, that there are disjoint embedded disks
 $$
@@ -144,19 +189,23 @@ By steps [](#s1){.pf-ref} and [](#s2){.pf-ref} the coordinate $S^{q-1}$ is a def
 
 ::: {.pf-step #s4}
 
-The inclusion
+Assume that $D^p$ meets the boundary sphere exactly in $S^{p-1}$, that is $D^p\cap S^{p+q-1}=S^{p-1}$. Under this hypothesis the inclusion
 $$
 S^{p+q-1}-S^{p-1}\hookrightarrow D^{p+q}-D^p
 $$
-induces an injection on $\widetilde H_{q-1}$, which is all the next step needs.
+is defined and induces an isomorphism on reduced homology in every degree.
 
 ::: pf-proof
 
-Radial contraction $r(z)=z/\norm{z}$ retracts $D^{p+q}-S^{p-1}$ onto $S^{p+q-1}-S^{p-1}$: a point $(x,y)$ of $D^{p+q}$ with $y\ne0$ has $\norm{(x,y)}\le1$, so on the segment to $r(x,y)$ the last $q$ coordinates are $y\bigl((1-t)+t/\norm{(x,y)}\bigr)$ with the bracket $\ge1$, hence nonzero throughout. So $S^{p+q-1}-S^{p-1}\subset D^{p+q}-S^{p-1}$ is a homotopy equivalence and induces an isomorphism on $\widetilde H_{q-1}$.
+The hypothesis is what makes the inclusion a map at all: a point of $S^{p+q-1}-S^{p-1}$ lies outside $S^{p-1}$, so it must not lie in $D^p$, and that is exactly the statement that $D^p\cap S^{p+q-1}=S^{p-1}$.
 
-Since $S^{p-1}\subset D^p$, the inclusion $S^{p+q-1}-S^{p-1}\hookrightarrow D^{p+q}-D^p$ factors that homotopy equivalence. A map whose composite with another map is injective is itself injective, so the inclusion into $D^{p+q}-D^p$ is injective on $\widetilde H_{q-1}$, as claimed.
+Given it, Exercise 3 applies to the pair $(D^p,S^{p-1})\subset(D^{p+q},S^{p+q-1})$: the pair is homeomorphic to $(D^p,S^{p-1})$, and the intersection condition $D^p\cap S^{p+q-1}=S^{p-1}$ is the hypothesis of that exercise, so the inclusion of the boundary complement into the complement of the disk is an isomorphism on homology in every degree.
 
-Exercise 3 is not used here, and cannot be applied as stated: its hypothesis is that the disk meets the boundary sphere in exactly its own boundary, which the hypothesis of (b) does not supply. An embedded disk with boundary $S^{p-1}$ can meet $\partial D^{p+q}$ in the interior of the disk --- already for $p=1$, $q=1$ the arc $\gamma(t)=(t,1-t^2)$ lies in $D^2$, has endpoints $(\pm1,0)\in S^1$, and meets $S^1$ at $\gamma(0)=(0,1)$, where $\norm{\gamma(t)}^2=t^4-t^2+1\le1$; that arc is tangent to $S^1$ at $(0,1)$, so Exercise 3 does not apply to it, while the factorization above does.
+This step is a conditional result, not a proof of the exercise as printed: it assumes the disk is proper, in the sense that it meets the ambient boundary exactly in its own boundary. That condition is stronger than the exercise's wording, which speaks only of disks with the given boundaries, and it is not a consequence of the boundary alone: for $p=q=1$ the arc $\gamma(t)=(t,1-t^2)$ in $D^2$ has endpoints $(\pm1,0)\in S^1$ and also meets $S^1$ at $\gamma(0)=(0,1)$, tangentially, since $\norm{\gamma(t)}^2=t^4-t^2+1\le1$ with equality only at $t=0$ and $t=\pm1$. Such a disk is not proper, and for it the inclusion displayed above is not even defined.
+
+What that example shows is only that this proof needs the hypothesis. It does not show that the printed statement requires it, it is not offered as a correction to the exercise, and whether properness can be dropped is open on this card. The reduction from an arbitrary embedded disk with boundary $S^{p-1}$ to a proper one is not carried out here; in the locally flat case such a reduction is supplied by the ambient isotopy and collar theorems of the topological-embeddings literature (Rushing, *Topological Embeddings*, where proper embeddings and local flatness are defined in Chapter 1 and the isotopy extension theorem is stated), while wild embeddings are not covered by those theorems, and no source giving the reduction, or a proof of the printed statement without it, has been located.
+
+Nothing is required of $D^q$ beyond $S^{q-1}\subset D^q\setminus\partial D^q$; this asymmetric requirement is the one identified in the source discussion cited in the audit record.
 
 :::
 
@@ -168,7 +217,15 @@ But $[S^{q-1}]$ maps to zero in $\widetilde H_{q-1}(D^{p+q}-D^p)$, a contradicti
 
 ::: pf-proof
 
-The disk $D^q$ is disjoint from $D^p$ by assumption, so it is a singular $q$-chain in $D^{p+q}-D^p$ whose boundary is $S^{q-1}$. Thus the image of $[S^{q-1}]$ is zero. This contradicts the injectivity in step [](#s4){.pf-ref}.
+The disk $D^q$ is disjoint from $D^p$ by assumption, so it is a singular $q$-chain in $D^{p+q}-D^p$ whose boundary is $S^{q-1}$; thus the image of the generator $[S^{q-1}]$ of step [](#s3){.pf-ref} is zero.
+
+Equivalently, the composite
+$$
+S^{q-1}\longrightarrow D^q\longrightarrow D^{p+q}-D^p
+$$
+is the inclusion of step [](#s4){.pf-ref}, which is an isomorphism on $\widetilde H_{q-1}$ by that step, while $\widetilde H_{q-1}(D^q)=0$ because $D^q$ is contractible. An isomorphism cannot factor through a zero group, and $\widetilde H_{q-1}(S^{q-1})\cong\ZZ$ for $q\ge1$.
+
+Either way the assumption that such disjoint disks exist is contradictory.
 
 :::
 
@@ -176,5 +233,5 @@ The disk $D^q$ is disjoint from $D^p$ by assumption, so it is a singular $q$-cha
 
 :::
 
-Therefore the two coordinate spheres cannot bound disjoint embedded disks in $D^{p+q}$.
+Therefore, on the hypothesis of step [](#s4){.pf-ref} that the disk $D^p$ meets the boundary sphere exactly in $S^{p-1}$, the two coordinate spheres cannot bound disjoint embedded disks in $D^{p+q}$.
 :::
