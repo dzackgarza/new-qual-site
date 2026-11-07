@@ -50,7 +50,7 @@ Every map $f: S^{2n} \to S^{2n}$ has $f(x) = x$ or $f(x) = -x$ for some $x$.
 If $f(x) \neq x$ for all $x$, then $f$ has no fixed point, so $\deg f = (-1)^{2n+1} = -1$.
 
 ::: pf-proof
-a fixed-point-free map of $S^m$ has degree $(-1)^{m+1}$ (the antipodal map $x \mapsto -x$ has degree $(-1)^{m+1}$, and any fixed-point-free map is homotopic to it).
+a fixed-point-free map of $S^m$ has degree $(-1)^{m+1}$: the antipodal map $x\mapsto -x$ has degree $(-1)^{m+1}$ by property (f) of degree (Hatcher, p. 134) and any fixed-point-free map is homotopic to it, as in property (g) on the same page.
 :::
 
 :::
@@ -68,7 +68,7 @@ $-f$ is fixed-point-free, so by step [](#s1-1){.pf-ref} its degree is $(-1)^{2n+
 But $\deg(-f) = (-1)^{2n+1}\deg f = -\deg f = -(-1) = 1$, contradiction.
 
 ::: pf-proof
-the antipodal map has degree $(-1)^{2n+1} = -1$, and $\deg(-f) = \deg(\text{antipodal} \circ f) = (-1)^{2n+1}\deg f = -\deg f$.
+$-f$ is the composite of the antipodal map with $f$, which has degree $(-1)^{2n+1}$ by property (f) of degree (Hatcher, p. 134), so $\deg(-f) = (-1)^{2n+1}\deg f = -\deg f$ by property (d) on the same page.
 :::
 
 :::
@@ -95,7 +95,7 @@ Every map $\RP^{2n} \to \RP^{2n}$ has a fixed point.
 For a map $g: \RP^{2n} \to \RP^{2n}$ there is a map $\tilde g: S^{2n} \to S^{2n}$ with $p \circ \tilde g = g \circ p$, where $p: S^{2n} \to \RP^{2n}$ is the quotient map.
 
 ::: pf-proof
-The map $g \circ p: S^{2n} \to \RP^{2n}$ lifts through the covering $p$ because $S^{2n}$ is simply connected for $n \ge 1$ and locally path-connected.
+The map $g \circ p: S^{2n} \to \RP^{2n}$ lifts through the covering $p$ by the lifting criterion (Hatcher, Proposition 1.33, p. 61), whose hypotheses hold because $S^{2n}$ is path connected and locally path connected and $\pi_1(S^{2n}) = 0$ for $2n\ge2$ (Proposition 1.14, p. 35).
 :::
 
 :::
