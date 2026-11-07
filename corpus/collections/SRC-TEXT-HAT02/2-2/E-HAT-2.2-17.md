@@ -33,6 +33,19 @@ audit:
     boundary, the connecting map and the inclusion-induced map, are natural. The closing step is
     read at the level of the claim it makes: it asserts, rather than diagram-chases, that the
     comparison maps $H_n^{CW}\cong H_n$ are natural.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Statement matches Exercise 17 as printed on p. 157. The naturality argument is correct and
+    now names its construction: the cellular boundary is d_n = j_{n-1} partial_n of the diagram
+    on p. 139; the two long exact sequences of pairs are Theorem 2.16 p. 117 with naturality as
+    stated on p. 127; functoriality of relative homology is p. 115. The third step was rewritten:
+    it had appealed to "long exact sequences of triples", which is not what Hatcher's proof of
+    Theorem 2.35 uses — that proof (pp. 139-140) identifies H_n(X) with H_n(X^n)/Im partial_{n+1}
+    via the pair (X^{n+1},X^n) and Lemma 2.34(c) p. 137, and H_n^CW with the same quotient through
+    the injective maps j_n and j_{n-1}. What is not covered: naturality is argued at the level of
+    the construction, as the book does; no certificate.
 ---
 
 ::: {.problem}
@@ -61,7 +74,7 @@ Cellularity says precisely that
 $$
 f:(X^n,X^{n-1})\longrightarrow(Y^n,Y^{n-1})
 $$
-is a map of pairs. Relative homology is functorial, so the displayed map is defined.
+is a map of pairs. A map of pairs induces a chain map of the relative chain groups, and hence a map on relative homology (p. 115); relative homology is functorial for this reason, so the displayed map is defined.
 
 :::
 
@@ -82,9 +95,9 @@ H_n(X^n,X^{n-1})
 \xrightarrow{\partial}
 H_{n-1}(X^{n-1})
 \longrightarrow
-H_{n-1}(X^{n-1},X^{n-2}).
+H_{n-1}(X^{n-1},X^{n-2}),
 $$
-Both arrows are natural with respect to maps of pairs: the first by naturality of the long exact sequence and the second by functoriality of relative homology. Therefore the square
+that is, $d_n=j_{n-1}\partial_n$ in the notation of p. 139, where the diagram defining the cellular complex is drawn. Both arrows are natural with respect to maps of pairs: the first by naturality of the long exact sequence of Theorem 2.16 (p. 117), as stated in the subsection on naturality (p. 127), and the second by functoriality of relative homology (p. 115). Therefore the square
 $$
 \begin{array}{ccc}
 C_n^{CW}(X)&\xrightarrow{d_n}&C_{n-1}^{CW}(X)\\
@@ -110,15 +123,13 @@ the homomorphism induced by the cellular chain map is the ordinary singular-homo
 
 ::: pf-proof
 
-The cellular-homology isomorphism is constructed from the long exact sequences of the skeletal pairs and triples
+The comparison is the one made in the proof of Theorem 2.35 (pp. 139–140). There $H_n(X)$ is identified with $H_n(X^n)/\operatorname{Im}\partial_{n+1}$, using the exact sequence of the pair $(X^{n+1},X^n)$ together with the isomorphism $H_n(X^{n+1})\cong H_n(X)$ of Lemma 2.34(c) (p. 137), and $H_n^{CW}(X)=\ker d_n/\operatorname{Im}d_{n+1}$ is identified with that quotient through the injective maps $j_n$ and $j_{n-1}$; the isomorphism is $H_n^{CW}(X)\cong H_n(X)$ of Theorem 2.35 (p. 139).
+
+Every object and every map in that computation is built from the long exact sequences of the three pairs
 $$
-(X^n,X^{n-1},X^{n-2}).
+(X^{n+1},X^n),\qquad (X^n,X^{n-1}),\qquad (X^{n-1},X^{n-2})
 $$
-Every map appearing in that construction is a connecting homomorphism, inclusion-induced map, or quotient arising from exactness. All of these are natural. Applying $f$ gives a morphism between the entire systems of exact sequences for $X$ and $Y$, and the comparison maps defining
-$$
-H_n^{CW}(-)\xrightarrow{\cong}H_n(-)
-$$
-commute with this morphism. Consequently the diagram
+by connecting homomorphisms, inclusion-induced maps, and the injective maps $j$ supplied by exactness. Each of these is natural: the long exact sequences by Theorem 2.16 (p. 117) and the subsection on naturality (p. 127), inclusions by functoriality (p. 115). A cellular $f$ maps each of the three sequences for $X$ to the corresponding one for $Y$, since $f(X^i)\subseteq Y^i$. Hence the comparison isomorphism commutes with the maps induced by $f$, and the diagram below commutes. Consequently the diagram
 $$
 \begin{array}{ccc}
 H_n^{CW}(X)&\xrightarrow{(f_\#)_*}&H_n^{CW}(Y)\\
