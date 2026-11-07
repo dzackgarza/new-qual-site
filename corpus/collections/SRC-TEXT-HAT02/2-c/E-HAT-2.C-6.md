@@ -36,6 +36,17 @@ audit:
     on H_2 = Z it is the antipodal map of S^2, of degree -1 (Proposition 2.30,
     p. 134). Then tau(f) = 1 - 0 - 1 = 0, as the fixed-point-free map requires. No
     defect.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Matched the full construction to Daniel Dugger, Involutions on Surfaces, not merely to a
+    citation about involutions. Section2.7 pp.11-12 defines the centered antipodal action
+    T_g^anti and computes its nonorientable quotient; Proposition2.8 p.12 splits the even-genus
+    action into the antipodal sphere and paired handles; Theorem4.1(a) p.18 states freeness in
+    even genus. Transcribed this as the card's map. The antipodal interchange of paired handles
+    gives the zero diagonal on H_1, and the nonorientable quotient confirms degree-1 on H_2.
+    Thus Lefschetz is 1-0-1=0, the complete published even-genus argument matching Hatcher p.184.
 ---
 ---
 
@@ -44,7 +55,7 @@ Do an even-genus analog of Example 2C.4 by replacing the central torus by a sphe
 :::
 
 ::: {.solution}
-Let the desired genus be $2m$. Realize the surface $M_{2m}$ as a central sphere with $m$ symmetric pairs of handles attached in antipodal pairs.
+Use the standard centered antipodal action $T_g^{\mathrm{anti}}$ published in **Daniel Dugger, *Involutions on Surfaces*, §2.7, printed pp. 11--12** (`tmp/sources/dugger-involutions-surfaces-2016.pdf`). His Proposition 2.8 gives $T_{2g}^{\mathrm{anti}}\cong S^2_a\mathbin{\#_\mathrm{eq}}T_g$, an antipodal sphere with paired handles, and Theorem 4.1(a), p. 18, identifies this as the free involution in even genus. This is exactly Hatcher's requested even-genus analog. Write $g=2m$, let $M_{2m}=T_{2m}^{\mathrm{anti}}$, and regard it as a central sphere with $m$ antipodal pairs of handles. Dugger also computes $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$, so the involution is orientation reversing.
 
 ::: pf
 
@@ -90,7 +101,7 @@ On $H_2(M_{2m};\ZZ)\cong\ZZ$, the map $f_*$ is multiplication by $-1$.
 
 ::: pf-proof
 
-On the central sphere $f$ restricts to the antipodal map of $S^2$, which has degree $(-1)^3=-1$. The extensions across paired handles preserve this local orientation-reversing character, so the homeomorphism is orientation reversing globally and has degree $-1$.
+On the central sphere $f$ restricts to the antipodal map of $S^2$, which has degree $(-1)^3=-1$. The extensions across paired handles preserve this local orientation-reversing character, so the homeomorphism is orientation reversing globally and has degree $-1$. Equivalently, Dugger's quotient $T_{2m}^{\mathrm{anti}}/C_2\cong N_{2m+1}$ is nonorientable, giving the same orientation reversal in the published construction.
 
 :::
 
