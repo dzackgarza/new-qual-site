@@ -82,12 +82,19 @@ $$
 
 ::: pf-proof
 
-Choose the unique vertex as base vertex and let $b$ be the stable letter corresponding to the loop edge.
-The HNN-extension presentation identifies the two images of the edge group by
+Choose the unique vertex as base vertex, let $b$ be the stable letter of the loop edge, and take
 $$
-b\iota_0(c)b^{-1}=\iota_1(c).
+\varphi=\iota_0=1,
+\qquad
+\psi=\iota_1\ \text{multiplication by }2.
 $$
-Substituting the two endpoint maps gives
+This is the one-vertex one-loop-edge graph of groups of Example 1B.13 (p. 93), whose $K_\Gamma$ is obtained from $K(A,1)$ by attaching $K(C,1)\times I$ along $K(C,1)\times\partial I$ by maps realizing $\varphi$ and $\psi$; with $K(C,1)$ having a single $0$-cell this is the one-vertex one-edge complex of Example 1B.13.
+The relation of that extension is stated there, at p. 93, as
+$$
+t\,\varphi(c)\,t^{-1}=\psi(c),
+$$
+and its proof is deferred to Exercise 4 of §1.B (p. 96), which is [[E-HAT-1.B-4|Exercise 1.B.4]].
+With $\varphi(c)=a$, $\psi(c)=a^2$ and the stable letter named $b$ it reads
 $$
 bab^{-1}=a^2,
 $$
@@ -107,12 +114,16 @@ The universal cover of the graph of spaces is a tree of spaces whose vertex spac
 ::: pf-proof
 
 The universal cover of the vertex circle $K(A,1)=S^1$ is $\RR$.
-The universal cover of the edge circle $K(C,1)=S^1$ is also $\RR$, so the lifted mapping cylinder for an edge is a strip
+Both edge homomorphisms are injective, so by Theorem 1B.11 (p. 92) $K_\Gamma$ is a $K(G,1)$ and the inclusion of the edge circle $K(C,1)=S^1$ induces an injection on $\pi_1$.
+The lifted edge space is therefore the universal cover $\RR$ of that circle, and the lifted mapping cylinder for an edge is a strip
 $$
 \RR\times I.
 $$
-The incidence graph of these lifted vertex and edge spaces is the Bass--Serre tree $T$ of the HNN extension.
-It is a tree because the full graph-of-spaces cover is simply connected and the usual normal-form theorem rules out cycles in the incidence graph.
+The incidence graph of these lifted vertex and edge spaces is the tree $T_\Gamma$ constructed on p. 95: it has one vertex for each lifted vertex space, two vertices being joined when the corresponding lines are joined by a lifted segment of an edge cylinder, and it is built there as a union
+$$
+T_1\subset T_2\subset\cdots
+$$
+of subtrees, each step attaching an asterisk at every outer vertex of the previous one. A union of an increasing chain of trees along single new vertices is a tree, and the action of $\pi_1(K_\Gamma)$ on it has orbit space the underlying graph $\Gamma$ (p. 95).
 
 :::
 
