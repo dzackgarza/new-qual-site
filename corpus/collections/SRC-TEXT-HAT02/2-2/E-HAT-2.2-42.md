@@ -34,6 +34,23 @@ audit:
     increasing self-map of each open edge forces the identity. The $\ZZ_2$ example is the theta
     graph, where the reflection reverses every edge and so acts as $-\mathrm{id}$, which is the
     identity on $H_1(\cdot;\ZZ_2)$ although $g$ is not the identity.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Statement matches Exercise 42 as printed on p. 159, all three parts. The strategy was checked
+    end to end: g_* = id over R with 2 nonzero forces every circle to be preserved with its
+    orientation, bridges to be preserved, and then every edge and vertex to be fixed, so a
+    finite-order g is the identity. Defect repaired: the graph-structure step claimed that each
+    component of X minus V has closure adding two vertices, which is false for a loop edge — the
+    wedge of two circles satisfies the hypotheses (n = 2, no valence-1 vertex) and has two loop
+    edges — and it now says one or two points, with the loop case named. Added: Theorem 2.35
+    p. 139 and Exercise 17 p. 157 for the naturality used when passing to the cellular chain map,
+    and a note that 2 nonzero in R is used only in the circle step, which is what distinguishes
+    m > 2 from m = 2. The m = 2 counterexample was checked: the circle with a chord is a theta
+    graph with n = 2, the reflection reverses each edge and acts as -1 = 1 on H_1 with Z_2
+    coefficients. What is not covered: the tree lemma and the partition argument are checked but
+    not formalized; no certificate.
 ---
 
 ::: {.problem}
@@ -59,8 +76,7 @@ In the given structure a point interior to an edge, or a vertex of valence $2$, 
 There are no vertices of valence $1$ by hypothesis, and none of valence $0$ because $X$ is connected with $n > 1$.
 So $V$ is the set of vertices of valence at least $3$.
 If $V$ were empty, $X$ would be a compact connected $1$-manifold, hence a circle, with $H_1 \cong \ZZ$, contradicting $n > 1$.
-Each component of $X \setminus V$ is a union of open edges and valence-$2$ vertices; it is not a circle, since a circle component would be both open and compact, hence a component of $X$, contradicting $V \ne \emptyset$.
-So each component of $X \setminus V$ is an open arc whose closure adds endpoints in $V$, and these arcs are the edges of a graph structure on $X$ with vertex set $V$.
+Each component of $X \setminus V$ is a union of open edges and valence-$2$ vertices; it is not a circle, since a circle component would be both open and compact, hence a component of $X$, contradicting $V \ne \emptyset$. It is a connected $1$-manifold without boundary, so it is an open arc, and as $X$ is compact its closure in $X$ adds one or two points of $V$: these closures are the edges of a graph structure on $X$ with vertex set $V$, an edge whose two ends are the same point of $V$ being a loop. In particular the wedge of two circles has the single vertex at the wedge point and two loop edges.
 A homeomorphism preserves $V$, because $V$ is defined topologically, and therefore permutes the components of $X \setminus V$, which are the edges.
 :::
 
@@ -72,7 +88,7 @@ For a homeomorphism $g$ of $X$, $H_1(X; R)$ is the group $Z_1$ of cellular $1$-c
 ::: pf-proof
 Use the structure of step [](#graph){.pf-ref}.
 The cellular chain complex is $0 \to C_1 \to C_0 \to 0$ with no $2$-cells, so $H_1(X;R) = \ker \partial = Z_1$.
-By step [](#graph){.pf-ref}, $g$ is a cellular map carrying each closed edge homeomorphically onto a closed edge, so the cellular chain map has the stated form, and cellular homology computes $g_*$ by naturality.
+By step [](#graph){.pf-ref}, $g$ is a cellular map carrying each closed edge homeomorphically onto a closed edge, so the cellular chain map has the stated form, and cellular homology computes $g_*$ by Theorem 2.35 (p. 139) with the naturality proved in Exercise 17 (p. 157).
 :::
 
 :::
@@ -217,7 +233,7 @@ So $h = \id$, and $g$ is the identity on every edge and every vertex.
 The homomorphisms $G \to GL_n(\ZZ)$ and $G \to \operatorname{Aut} H_1(X;\ZZ_m)$ for $m > 2$ are injective.
 
 ::: pf-proof
-Every element of the finite group $G$ has finite order, so step [](#identity){.pf-ref} with $R = \ZZ$ and with $R = \ZZ_m$ shows that the kernel is trivial.
+Every element of the finite group $G$ has finite order, so step [](#identity){.pf-ref} with $R = \ZZ$ and with $R = \ZZ_m$ shows that the kernel is trivial. The hypothesis $2\neq0$ in $R$ is the only place where $m>2$ is used, through step [](#circles){.pf-ref}.
 :::
 
 :::
