@@ -35,6 +35,14 @@ audit:
     $\varphi$ then $\psi$ truncates the simplex twice, which is the same as capping once with
     $\varphi\smile\psi$, and both sides are the product of the two evaluations on the doubly
     truncated simplex. The module statement follows from naturality of the boundary formula.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    One gap closed. The module conclusion listed associativity but not the unit, which the graded
+    ring needs; the solution now checks $\sigma\frown 1=\sigma$ on a simplex from the augmentation on
+    the front $0$-face. The chain-level identity and the descent to homology are as previously
+    checked. Not checked: the boundary formula for the cap product is cited from p.240.
 ---
 
 ::: {.problem}
@@ -93,5 +101,5 @@ $$
 ([\alpha]\frown[\varphi])\frown[\psi]
 =[\alpha]\frown([\varphi]\smile[\psi]),
 $$
-and the unit in $H^0(X;R)$ acts as the identity. Therefore $H_*(X;R)$ is a right module over the graded ring $H^*(X;R)$.
+and the unit in $H^0(X;R)$ acts as the identity: on a $k$-simplex $\sigma$, $\sigma\frown 1=\sigma$ because the augmentation on the front $0$-face is the identity, so $H_*(X;R)$ is a right module over the graded ring $H^*(X;R)$.
 :::
