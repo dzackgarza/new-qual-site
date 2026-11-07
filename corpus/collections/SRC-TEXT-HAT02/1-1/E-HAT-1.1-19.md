@@ -47,7 +47,7 @@ The image of $f$ is contained in a finite connected subcomplex $K\subseteq X$.
 ::: pf-proof
 
 The image $f(I)$ is compact.
-A compact subset of a CW complex is contained in a finite subcomplex.
+A compact subset of a CW complex is contained in a finite subcomplex (Proposition A.1, p. 520).
 Adjoin finitely many edge paths in $X$ joining the components of that finite subcomplex to $x_0$ if necessary; since $X$ is path connected and one-dimensional, these paths may be chosen in the $1$-skeleton and meet only finitely many cells.
 The resulting finite subcomplex $K$ is connected and contains both $f(I)$ and $x_0$.
 
