@@ -39,9 +39,10 @@ audit:
   note: >-
     Re-read against the printed exercise (p.258) and restored the printed sentence, which has no
     $n>0$; the card's earlier note called that hypothesis implicit, and it is now shown to be
-    forced by the definition: for $n=0$ the target $S^0$ is disconnected, has no fundamental class,
-    and $f_*([M])$ is one summand of $\ZZ^2$, so no degree is defined. The solution now says this
-    instead of assuming it, and the construction for $n\ge1$ is unchanged.
+    forced by the definition. (This note first gave the reason as "$S^0$ has no fundamental class";
+    that is false and is corrected by the first event above — $[S^0]=(1,1)$ does generate every
+    local group. What fails at $n=0$ is the connectedness the definition requires of the target, and
+    the equation $f_*([M])=d[S^0]$ has no solution even read naively.)
 - event: solution-written
   by: claude
   date: 2026-11-07
