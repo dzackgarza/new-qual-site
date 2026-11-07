@@ -30,6 +30,18 @@ audit:
     Read the reflection formula: $R_u=R_{-u}$, a continuous path of unit vectors from $u$ to
     $\pm v$ exists for $n\ge1$, and $x-2\langle x,u_t\rangle u_t$ depends continuously on $(x,t)$,
     lands in $S^n$, and is a reflection for each $t$; $n=0$ has only the single hyperplane.
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Read against Hatcher, §2.2 Exercise 5, printed p. 155: the printed statement, including its
+    bracketed hint "The linear algebra formula for a reflection in terms of inner products may be
+    helpful", is reproduced in the card. Checked: R_u(x) = x - 2<x,u>u is the reflection across
+    u-perp for unit u, it fixes u-perp cap S^n pointwise and sends u to -u, so it is a reflection
+    in the sense of property (e) on printed p. 134 and has degree -1; R_u = R_{-u}; S^n is path
+    connected for n >= 1, so a path of unit vectors from u to v exists, and the resulting family
+    is orthogonal at each t, hence a homotopy through reflections. For n = 0 there is a single
+    hyperplane, so the assertion is vacuous, as the card says. No defect.
 ---
 
 ::: {.problem}
