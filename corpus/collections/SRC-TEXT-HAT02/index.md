@@ -491,6 +491,8 @@ source:
       comment: 3.2.15
     - id: E-HAT-3.2-16
       comment: 3.2.16
+    - id: E-HAT-3.2-17
+      comment: 3.2.17
     - id: E-HAT-3.2-18
       comment: 3.2.18
   - name: '3.3'
