@@ -55,6 +55,17 @@ audit:
     are stated, and the source's splitting direction and rank are preserved. The blank following the
     final display is restored and the previous audit item is inside the YAML audit list.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Repaired the actual proof, not the source metadata. In the tree step, the leaf u and attachment
+    vertex v are distinguished: with A=S^n-e and B=S^n-T' one has A cap B = S^n-X and A union B =
+    S^n-v, exactly the cover in the published argument. For added loop edges, first barycentrically
+    subdivide to make endpoints distinct rather than treating the loop's complement as that of a
+    disk. The full applicable sequence has left term H_{n-1}(S^{n-1})=Z, not homology of a point,
+    and splits to give Z^r. Both statements match pp.70-71 of DeMason.
+
 ---
 
 ::: {.problem}
@@ -73,7 +84,7 @@ If $T\subset S^n$ is an embedded tree with $k$ vertices, then $\widetilde H_i(S^
 
 ::: pf-proof
 
-Induct on $k$. For $k=1$, the complement is $\RR^n$ and is contractible. For $k=2$, it is asin~$D^1$ and Proposition 2B.1(a) applies. To delete a leaf edge $e$ with terminal vertex $v$, let $T'$ be the other $k-1$ vertices and their edge set, and take $A=S^n-e$ and $B=S^n-T'$. Their union is $S^n-v\simeq\RR^n$, while their intersection is $S^n-T$. The reduced Mayer--Vietoris sequence and the induction hypothesis give $\widetilde H_i(S^n-T)=0$.
+Induct on $k$. For $k=1$, remove a point, complementing it in $S^n$; it is homeomorphic to $\RR^n$, hence contractible. For $k=2$, Proposition 2B.1(a) gives vanishing. For the induction, let $T'$ be the tree obtained by collapsing a leaf edge $e$ and let $A=S^n-e$, $B=S^n-T'$. If $u$ is the leaf and $v$ is its attachment vertex, then $e\cap T'=\{v\}$, and $X=e\cup T'$ is the whole embedded tree. Hence $A\cup B=S^n-v\simeq\RR^n$ and $A\cap B=S^n-X$. This matches the source's cover and does not assert a deformation retraction of the whole ambient sphere. Reduced Mayer--Vietoris and the induction hypothesis give $\widetilde H_i(S^n-X)=0$.
 :::
 
 :::
@@ -91,12 +102,14 @@ $$
 
 ::: pf-proof
 
-Induct on the number $r$ of edges outside a maximal subtree. Suppose $Y$ is obtained by removing one such edge from $X$. Then $Y$ has $r-1$ such edges already accounted for, and the induction hypothesis gives $\widetilde H_{n-2}(S^n-Y)\cong\ZZ^{r-1}$ and no other nonzero reduced group. Let the new edge have endpoints $w_0,w_1$ (allowed to coincide). As in the published solution, put $A=S^n-e$ and $B=S^n-Y$; their intersection is $S^n-X$ and their union is $S^n-\{w_0,w_1\}$ when the endpoints are distinct, or $S^n-w_0$ otherwise. Since $A$ is contractible in the reduced computations, reduced Mayer--Vietoris leaves
+Induct on the number $r$ of edges outside a maximal subtree. Suppose $Y$ is obtained by removing one such edge from $X$. Then $Y$ has $r-1$ such edges already accounted for, and the induction hypothesis gives $\widetilde H_{n-2}(S^n-Y)\cong\ZZ^{r-1}$ and no other nonzero reduced group. If an added edge is a loop, first barycentrically subdivide that edge once. This replaces its image by two intervals, preserves the same embedded subspace $X$ and its complement, and makes its endpoints distinct; then apply the source argument to the subdivided graph. For a non-loop or for one of these subdivided intervals, let the endpoints be the distinct points $w_0,w_1$. Put $A=S^n-e$ and $B=S^n-Y$. The complement of the closed edge has the reduced homology of $D^1$ inside a sphere by the starting case of the induction, so the appropriate terms from $A$ vanish, while the intersection is $S^n-X$ and the union is $S^n-\{w_0,w_1\}\simeq S^{n-1}$. Then the applicable exact terms are
 $$
-0\to\widetilde H_{n-1}(S^{n-1})=\ZZ\to\widetilde H_{n-2}(S^n-X)
-\to\widetilde H_{n-2}(S^n-Y)=\ZZ^{r-1}\to0
+0\to\widetilde H_{n-1}(S^{n-1})=\ZZ
+\to\widetilde H_{n-2}(S^n-X)
+\to\widetilde H_{n-2}(S^n-Y)=\ZZ^{r-1}
+\to\widetilde H_{n-2}(S^{n-1})=0.
 $$
-in degree $n-2$. Splitting gives $\widetilde H_{n-2}(S^n-X)\cong\ZZ^r$. Away from $n-1$ and $n-2$ the earlier induction statement already gives the same groups, while in degree $n-1$ exactness gives zero. If $w_0=w_1$, the endpoint set is a point, so $S^n-w_0\simeq\RR^n$ and the conclusion also holds.
+The left $\ZZ$ is $H_{n-1}(S^{n-1})$, not the reduced homology of a point. Splitting of $\ZZ^{r-1}$ gives the claimed rank $\widetilde H_{n-2}(S^n-X)\cong\ZZ^r$. Away from $n-1$ and $n-2$ the remainder of the same exact sequence already gives the induced groups, while in degree $n-1$ exactness gives zero.
 :::
 
 :::
