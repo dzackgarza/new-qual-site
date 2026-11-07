@@ -43,6 +43,15 @@ audit:
     thin here (its SS3.3 covers only Exercises 8, 17 and 32) and the file carries a cover sheet, so
     printed pages, not PDF pages, are cited. Sam's proof is corroborative only: it is not used to
     replace any step, and the local-degree step is checked against Hatcher p.135.
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Second published solution located for the same exercise: Math 538 homework solutions, HMW 4
+    handwritten pp.1-2 (PDF pages 17-18), which runs the identical diagram and excision argument and
+    reaches d = sum of the local signs. The card now cites both sets (Sam printed pp.14-15 and this
+    sheet) with their page locators.
+
 ---
 
 ::: {.problem}
@@ -83,5 +92,5 @@ $$
 \boxed{\deg(f)=\sum_i\varepsilon_i.}
 $$
 
-The argument agrees with the published solution of Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.3 Exercise 8, printed pp.14--15, which sets up the same diagram of local homology groups; that solution is cited as a check on the structure, and the cover-shifting page index of the file is not used as a citation.
+The argument agrees with the published solution of Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.3 Exercise 8, printed pp.14--15, which sets up the same diagram of local homology groups; that solution is cited as a check on the structure, and the cover-shifting page index of the file is not used as a citation. The same exercise is also solved in the Math 538 homework solutions, HMW 4, handwritten pages 1--2 (PDF pages 17 and 18 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`): the diagram $H_n(B_i,B_i-\{x_i\})\to H_n(B,B-\{x\})$, the excision $H_n(M,M-\{x_1,\dots,x_r\})\cong\bigoplus\ZZ$ with $p_ij([M])=\mu_{x_i}$ and $j([M])=\sum_i k_i(\mu_{x_i})$, and the conclusion $d=\sum_i f_*k_i(\mu_{x_i})$ with each sign $\epsilon_i$; the card's argument is that one, step for step.
 :::
