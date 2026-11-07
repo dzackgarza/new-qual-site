@@ -130,7 +130,7 @@ $$
 
 ::: pf-proof
 
-Apply the Borsuk--Ulam theorem to the continuous map
+Apply the Borsuk--Ulam theorem in dimension $n=3$ (Corollary 2B.7, p. 176; the dimension-two statement is Theorem 1.10, p. 32) to the continuous map
 $$
 F:S^3\to\RR^3.
 $$
