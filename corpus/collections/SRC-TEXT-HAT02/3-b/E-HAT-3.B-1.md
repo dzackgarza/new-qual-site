@@ -35,6 +35,16 @@ audit:
     the torsion count by one through $\operatorname{Ext}(\ZZ_2,\ZZ)=\ZZ_2$ and
     $\operatorname{Hom}(\ZZ_2,\ZZ)=0$, and over $\ZZ_2$ every differential vanishes so both
     theories are $(\ZZ_2)^{N_i}$ with $N_i$ the number of product cells of total dimension $i$.
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Checked with Stanford Math 215C Solution Set 2, Hatcher 3.B.1, printed pp.3-4 (the p.5 text is
+    about 3.B.3). Its even-parity chain complex decomposes into an edge column/row plus independent
+    squares, and odd parity adds a column or row; the mod-2 cell count agrees with N_i here. It
+    explicitly skips cohomology details, and the card's Z-cohomology formula is derived separately
+    by universal coefficients rather than attributed to the set.
+
 ---
 
 ::: {.problem}
@@ -105,6 +115,7 @@ where
 $$
 N_i=\#\{(p,q):0\le p\le m,\ 0\le q\le n,\ p+q=i\}.
 $$
+The cellular-tensor computation is in **Stanford Math 215C, Solution Set 2**, Hatcher 3.B.1, printed pp. 3--4, held at `tmp/sources/stanford-math215c-spring2009-solution2.pdf` ([course PDF](https://math.stanford.edu/~ralph/math215c/solution2.pdf)). It decomposes the even case into a leftmost column, a bottom row, and independent $2\times2$ square complexes, with additional rows/columns for odd $m$ or $n$; its mod-2 count is exactly the cell count $N_i$ above. The set says it skips cohomology details, so the $\ZZ$-cohomology formula here is checked separately using the universal coefficient sequence and $\operatorname{Ext}(\ZZ_2,\ZZ)=\ZZ_2$.
 Equivalently,
 $$
 N_i=\max\bigl(0,\min(m,i)-\max(0,i-n)+1\bigr).
