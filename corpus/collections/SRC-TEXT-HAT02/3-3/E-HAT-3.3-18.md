@@ -35,6 +35,15 @@ audit:
     torsion-freeness kills it; and a finitely generated subgroup is presented by a finitely
     generated relation lattice, each of whose generators vanishes at some stage, with directedness
     producing a single stage where all of them vanish.
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Checked the proof against Guanyu Li, Hatcher.pdf, Exercise 3.3.8 (Hatcher 3.3 #18), printed
+    pp.58-59, which passes to one later stage containing all generators and their relations. Li
+    leaves the realization step terse; the card's relation lattice argument closes it: K is
+    finitely generated because it is a subgroup of Z^r, and one stage kills all generators of K.
+
 ---
 
 ::: {.problem}
@@ -63,4 +72,6 @@ $$
 H_\beta\cong\ZZ^r/K\cong H.
 $$
 Thus every finitely generated subgroup of the direct limit is realized as a subgroup of some stage $G_\beta$.
+
+Compare Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf), Exercise 3.3.8 (Hatcher §3.3 #18), printed pp. 58--59 (local file `tmp/sources/hatcher-solutions-guanyu-li.pdf`), which uses the same passage to a later stage for generators and for relations. The finitely generated relation lattice $K$ above makes explicit why all finitely generated subgroups are isomorphic already at that stage, rather than merely checking that one generator retains its order.
 :::
