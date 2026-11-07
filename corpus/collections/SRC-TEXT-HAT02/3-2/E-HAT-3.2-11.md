@@ -49,5 +49,7 @@ $$
 \langle a\smile b,f_*[S^{k+\ell}]\rangle
 =\langle f^*(a\smile b),[S^{k+\ell}]\rangle=0.
 $$
-The top homology of $S^k\times S^\ell$ is infinite cyclic, and the pairing of the generator $a\smile b$ with its generator is $\pm1$ by Theorem 3.15 (p.216), the top group being $H^k\otimes H^\ell$; the pairing is natural in the sense used above, since it is evaluation of a cohomology class on a homology class (the identification of Theorem 3.2, p.195, in the top degree). Hence $f_*[S^{k+\ell}]=0$, proving that the induced top-homology map is zero.
+The top homology of $S^k\times S^\ell$ is infinite cyclic, and the pairing of the generator $a\smile b$ with its generator is $\pm1$ by Theorem 3.15 (p.216), the top group being $H^k\otimes H^\ell$; the pairing is natural in the sense used above, since it is evaluation of a cohomology class on a homology class (the identification of Theorem 3.2, p.195, in the top degree). Hence $f_*[S^{k+\ell}]=0$, proving that the induced top-homology map is zero.The argument in Sam's §3.2 Exercise 11, printed p. 14, is the same: both $f^*a$ and $f^*b$ vanish since $H^k(S^{k+\ell})=H^\ell(S^{k+\ell})=0$, hence $f^*(a⌣b)=0$, and the evaluation pairing against the fundamental class identifies the source's zero homomorphism on top homology. The book's cross-product structure identifies $a⌣b$ with a generator (Theorem 3.15 p. 216), including the case $k=\ell$.
+
+
 :::
