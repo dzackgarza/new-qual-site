@@ -27,19 +27,31 @@ audit:
     Read both directions: a degree 1 map makes $f^*$ injective on $H^1$ because the pairing on
     $M_h$ is nondegenerate and $f^*\mu_h=\mu_g\ne0$, giving $2h\le2g$; conversely the pinch map
     collapsing one connected-summand of $M_g=M_h\#M_{g-h}$ has degree 1.
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    The card stated "iff", but p.258 prints "degree 1 maps $M_g\to M_h$ exist if $g\ge h$"; the
+    card's own note had called the stored statement a match. The printed sentence is restored, and
+    the converse is kept and labelled as an addition, since Exercises 12 and 13 need the
+    impossibility for $j<k$ and the print does not ask for it. Both arguments rechecked: $f^*\mu_h
+    =\mu_g$ from $\deg f=1$ by evaluation on the fundamental class, nondegeneracy of the cup product
+    pairing on $H^1$ of a closed orientable surface, and the pinch map on $M_h\#M_{g-h}$ which is a
+    local orientation-preserving homeomorphism off the collapsed point.
 ---
 
 ::: {.problem}
-If $M_g$ denotes the closed orientable surface of genus $g$, show that degree 1 maps $M_g \to M_h$ exist iff $g \geq h$.
+If $M_g$ denotes the closed orientable surface of genus $g$, show that degree 1 maps $M_g \to M_h$ exist if $g \geq h$.
 :::
 
 ::: {.solution}
+The printed exercise asks for the direction $g\ge h$; step [](#s1){.pf-ref} proves in addition the converse, that a degree 1 map $M_g\to M_h$ forces $g\ge h$, because Exercises 12 and 13 use that direction and it is not printed there.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-Forward direction ($f: M_g \to M_h$ of degree $1 \implies g \ge h$):
+Converse, proved here although the print does not ask for it, and used by Exercises 12 and 13 ($f: M_g \to M_h$ of degree $1 \implies g \ge h$):
 
 ::: pf-proof
 
@@ -112,7 +124,7 @@ $\dim H^1(M_k; \RR) = 2k$.
 
 ::: {.pf-step #s2}
 
-Reverse direction ($g \ge h \implies$ existence of degree 1 map $M_g \to M_h$):
+Reverse direction, the one the exercise asks for ($g \ge h \implies$ existence of a degree 1 map $M_g \to M_h$):
 
 ::: pf-proof
 
