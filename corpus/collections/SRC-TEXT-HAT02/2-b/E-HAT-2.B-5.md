@@ -51,7 +51,11 @@ audit:
     definitions of D and D' prevent checking excision and generalized Schoenflies. The previous
     text also repeated the thread's h'(S^k) notation although h' has domain D^n. The earlier
     Alexander-intersection proof and k=n case are unchanged; #105's complete-solution obligation
-    for this card remains open.
+    for this card remains open. The excision condition is evaluated on closure_X(Z) and
+    interior_X(A), not on interior of A minus Z; no counterexample based on the latter is
+    asserted. Pairwise acyclicity of D and its ambient complement is not enough to deduce that
+    the relative group vanishes in every degree, so the relative degrees still require checking
+    before this source is accepted.
 ---
 
 ::: {.problem}
