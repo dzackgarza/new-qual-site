@@ -37,6 +37,16 @@ audit:
     connected sums of $S^1\times S^2$ with lens spaces, and of the twisted $S^2$-bundle over $S^1$
     (whose mapping torus computation gives $H_1=\ZZ$, $H_2=\ZZ_2$) with $S^1\times S^2$'s and lens
     spaces.
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Independently checked Stanford Math 215C Solution Set 4, Hatcher 3.3.24, printed p.2. Its rank
+    computation and examples agree with this card, including the r-1 copies of S^1 x S^2 in the
+    nonorientable example N. Its "dim H^1(M;Z)" means rank, not dimension of the abelian group.
+    The reflection computation gives H_1(N)=Z, H_2(N)=Z_2, H_3(N)=0, and there is only one
+    nonorientable summand in each example, so Exercise 6 applies directly.
+
 ---
 
 ::: {.problem}
@@ -103,5 +113,6 @@ H_1\cong\ZZ^r\oplus F,
 \qquad
 H_2\cong\ZZ^{r-1}\oplus\ZZ_2.
 $$
+The rank and torsion computation and the connected-sum examples appear in **Stanford Math 215C, Solution Set 4**, Hatcher 3.3.24, printed p. 2, [`solution4.pdf`](https://math.stanford.edu/~ralph/math215c/solution4.pdf). It uses odd-dimensional Euler characteristic zero and Corollary 3.28 for the torsion, as above. In its typography "dim $H^1(M;\ZZ)$" must be read as **rank**, not vector-space dimension: the finite summand $F$ contributes no rank. The mapping-torus sequence for the reflection $r$ has $r_*=-1$ on $H_2(S^2)$, so $H_2(N)\cong\operatorname{coker}(-2)=\ZZ_2$, $H_1(N)\cong\ZZ$, and $H_3(N)=0$. Since every example has exactly one nonorientable connected-sum factor, Exercise 6 requires no exceptional-case correction.
 Thus every group pattern allowed by the formulas occurs.
 :::
