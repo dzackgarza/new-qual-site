@@ -33,7 +33,6 @@ audit:
     t ↦ det L_{γ(t)} is a path in R − {0} from d to −d, which is impossible. This
     gives the theorem for the odd dimensions 3, 5, 7 in place of the division-algebra
     classification (Theorem 2B.5, p. 173). No defect.
----
 - event: source-checked
   by: claude
   date: 2026-11-07
@@ -129,7 +128,9 @@ A continuous nonzero real-valued function on the connected interval $[0,1]$ has 
 Hence
 $$
 \boxed{\RR^{2n+1}\text{ admits no real division-algebra structure for }n>0.}
-$$The continuous determinant path is printed in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.B.8, printed p. 71 of the local PDF `tmp/sources/demason-m382c-hatcher-20210404.pdf`. As in the source, step [](#s1){.pf-ref} makes every left multiplication by a nonzero element invertible by solvability of $ax=b$, step [](#s3){.pf-ref} gives the sign change $\det L_{-a}=-\det L_a$ in odd dimension, and step [](#s4){.pf-ref} obtains the contradiction in closed form. The optional degree-of-maps remark in the source is not needed and is not used here.
+$$
+
+The continuous determinant path is printed in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.B.8, printed p. 71 of the local PDF `tmp/sources/demason-m382c-hatcher-20210404.pdf`. As in the source, step [](#s1){.pf-ref} makes every left multiplication by a nonzero element invertible by solvability of $ax=b$, step [](#s3){.pf-ref} gives the sign change $\det L_{-a}=-\det L_a$ in odd dimension, and step [](#s4){.pf-ref} obtains the contradiction in closed form. The optional degree-of-maps remark in the source is not needed and is not used here.
 
 
 :::
