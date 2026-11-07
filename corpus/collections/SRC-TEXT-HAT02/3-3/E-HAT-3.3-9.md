@@ -33,6 +33,16 @@ audit:
   note: >-
     Read the argument: the local sign of a covering projection is a locally constant function on a
     connected manifold, hence constant, so Exercise 8's formula gives $\pm p$.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    The card used $p$ both for the covering map and for the number of sheets, so $p^{-1}(B)$ and
+    $\deg p$ were ambiguous; the map is now $q$, and the locally constant sign function $\epsilon$
+    is defined rather than named, with the trivializing ball as the neighbourhood on which it is
+    constant. The mathematics is the same as before: Exercise 8 applied to an evenly covered ball.
+    Not checked: Exercise 8 itself is cited, and the case of a non-connected total space is excluded
+    by the exercise's hypotheses.
 ---
 
 ::: {.problem}
@@ -40,20 +50,20 @@ Show that a $p$-sheeted covering space projection $M \to N$ has degree $\pm p$, 
 :::
 
 ::: {.solution}
-Let $p:M\to N$ be a $p$-sheeted covering between connected closed orientable $n$-manifolds. Choose an evenly covered ball $B\subset N$. Its inverse image is a disjoint union of $p$ balls
+Let $q:M\to N$ be a $p$-sheeted covering between connected closed orientable $n$-manifolds, so that the letter $p$ is free to count sheets. Choose an evenly covered ball $B\subset N$. Its inverse image is a disjoint union of $p$ balls
 $$
-p^{-1}(B)=B_1\amalg\cdots\amalg B_p,
+q^{-1}(B)=B_1\amalg\cdots\amalg B_p,
 $$
 each mapped homeomorphically to $B$.
 
-For each $i$, let $\varepsilon_i=\pm1$ be the local orientation sign of $p\restrict_{B_i}$. Since $M$ and $N$ are connected and a covering map is locally a homeomorphism, the local sign is locally constant on $M$ and therefore constant. Thus all $\varepsilon_i$ equal a common sign $\varepsilon$.
+For a point $x\in M$ put $\epsilon(x)=+1$ if the local orientation of $M$ at $x$ maps to the local orientation of $N$ at $q(x)$ under the isomorphism $H_n(M\mid x)\to H_n(N\mid q(x))$ induced by $q$, and $\epsilon(x)=-1$ otherwise; this is well defined because $q$ is a local homeomorphism. The map $\epsilon$ is locally constant: on a ball over which $q$ is trivial, both local orientation systems are constant, so $\epsilon$ is constant there. Since $M$ is connected, $\epsilon$ is constant, say with value $\epsilon$, and in particular all the signs $\epsilon_i=\epsilon(x_i)$ of the homeomorphisms $q\restrict_{B_i}$ coincide.
 
 By Exercise 8's local-degree formula,
 $$
-\deg p=\sum_{i=1}^p\varepsilon_i=p\varepsilon.
+\deg q=\sum_{i=1}^p\epsilon_i=p\epsilon.
 $$
 Hence
 $$
-\boxed{\deg p=\pm p.}
+\boxed{\deg q=\pm p.}
 $$
 :::
