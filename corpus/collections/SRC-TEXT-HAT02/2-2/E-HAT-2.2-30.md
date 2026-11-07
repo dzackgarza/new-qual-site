@@ -33,6 +33,17 @@ audit:
     $\ZZ_2$-cokernel on $H_2$, $\ZZ\oplus\ZZ_2$ in degree two. (d) $2I$ on $H_1$ and the identity
     on $H_2$ give $(\ZZ_2)^2\oplus\ZZ$, $\ZZ$ and $\ZZ$ in degrees $1,2,3$. (e) the matrix with
     Smith form $\mathrm{diag}(1,2)$ and determinant $1$ gives $\ZZ_2\oplus\ZZ$, $\ZZ$ and $\ZZ$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Statement matches Exercise 30 as printed on p. 158, all five parts. All five answers rechecked
+    from the exact sequence and the coker/ker formula: (a) Z, Z, Z_2, 0; (b) Z, Z, 0; (c) Z,
+    Z^2+Z_2, Z+Z_2, 0; (d) Z, Z+Z_2+Z_2, Z, Z; (e) Z, Z+Z_2, Z, Z, the last using det(I-A)=2
+    with Smith form diag(1,2) for A = [[0,-1],[1,0]]. The sequence is cited as Example 2.48 p. 151
+    rather than called the Wang sequence, H_*(S^2) is Corollary 2.14 p. 114 and H_*(T^2)
+    Example 2.36 p. 141, and the degree statements are tied to the definition on p. 134 with the
+    orientation reading of det on the torus. What is not covered: no certificate.
 ---
 
 ::: {.problem}
@@ -51,14 +62,14 @@ Use this to compute the homology of the mapping tori of the following maps:
 :::
 
 ::: {.solution}
-For the mapping torus $T_f$, the Wang sequence yields short exact sequences
+For the mapping torus $T_f$, the exact sequence of Example 2.48 (p. 151), applied with $g=\mathrm{id}$ and $f$ as the two maps, yields short exact sequences
 $$
 0\to\operatorname{coker}(1-f_*:H_n(X)\to H_n(X))
 \to H_n(T_f)
 \to\ker(1-f_*:H_{n-1}(X)\to H_{n-1}(X))
 \to0.
 $$
-In the cases below the kernel term is free, so each sequence splits as an abstract group.
+In the cases below the kernel term is free, so each sequence splits as an abstract group. The homology of the spaces that occur is $H_0(S^2)=\ZZ$, $H_2(S^2)=\ZZ$, $H_1(S^2)=0$ by Corollary 2.14 (p. 114), and $H_1(T^2)=\ZZ^2$, $H_2(T^2)=\ZZ$ by Example 2.36 (p. 141) with $g=1$. For $S^2$ the induced map on $H_2$ is multiplication by $\deg f$ by the definition of degree on p. 134, and for the torus it is multiplication by $+1$ or $-1$ according as the homeomorphism preserves or reverses orientation, that integer being the degree (properties (a) and (e) of degree, p. 134).
 
 ::: pf
 
@@ -123,7 +134,7 @@ On $H_1$, $f_*=\operatorname{diag}(1,-1)$, so
 $$
 1-f_*=\operatorname{diag}(0,2).
 $$
-Its kernel is $\ZZ$ and its cokernel is $\ZZ\oplus\ZZ_2$. On $H_2(T^2)=\ZZ$, $f_*$ is multiplication by the determinant $-1$, so $1-f_*=2$. Hence
+Its kernel is $\ZZ$ and its cokernel is $\ZZ\oplus\ZZ_2$. On $H_2(T^2)=\ZZ$, $f_*$ is multiplication by the determinant $-1$, a reflection of one factor reversing orientation, so $1-f_*=2$. Hence
 $$
 H_2(T_f)\cong\ZZ_2\oplus\ZZ,
 $$
