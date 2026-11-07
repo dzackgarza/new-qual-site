@@ -50,6 +50,20 @@ audit:
     `ker_ne_top_of_surjective_to_int`, that an augmentation onto $\ZZ$ has proper kernel, so the
     augmented degree-zero cycles are not the ordinary $Z_0=C_0$. The passage from the chain complex
     of the simplex to its homology remains Hatcher's computation and is not formalized.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Statement matches Exercise 16 as printed on p. 156, including the skeleton conclusion
+    rank C(n,k+1) in degree k. Rechecked the rank induction: rank C_i = C(n+1,i+1) and the
+    base case is rank B_{-1} = rank im(epsilon) = 1 in the augmented complex, so
+    rank Z_0 = (n+1)-1 = n = C(n,1); the step now says where the augmentation comes from
+    (p. 110). Exactness of the reduced complex is now cited as Proposition 2.8 p. 110 with
+    Corollary 2.11 p. 111 plus Theorem 2.27 p. 128, and the chain groups as p. 104. The
+    skeleton argument is checked: for i < k both partial boundaries are present, and in
+    degree k there are no (k+1)-chains so B_k = 0 while Z_k = Z_k(Delta^n).
+    What is not covered: no certificate for this card; the rank identities are verified by
+    hand only.
 ---
 
 ::: {.problem}
@@ -59,7 +73,7 @@ Compute the ranks of the simplicial (or cellular) chain groups $\Delta_i(\Delta^
 :::
 
 ::: {.solution}
-For the standard simplex $\Delta^n$, the group of $i$-chains is free on the $(i+1)$-element subsets of its $n+1$ vertices. Hence
+For the standard simplex $\Delta^n$, the group of $i$-chains is free on the $(i+1)$-element subsets of its $n+1$ vertices; this is the definition of the simplicial chain group, the free abelian group on the open $i$-simplices of a $\Delta$-complex (p. 104). Hence
 $$
 \operatorname{rank} C_i(\Delta^n)=\binom{n+1}{i+1}.
 $$
@@ -81,7 +95,7 @@ Here $\binom{n}{n+1}=0$.
 
 ::: pf-proof
 
-The simplex is contractible, so its reduced chain complex is exact. Thus
+The simplex is contractible, so its reduced singular homology vanishes: $H_n(\Delta^n)=0$ for $n>0$ and $\widetilde H_0(\Delta^n)=0$, by Proposition 2.8 (p. 110) for the one-point space together with Corollary 2.11 (p. 111), homotopy invariance. The simplicial chain complex computes the singular homology by Theorem 2.27 (p. 128), so the reduced simplicial chain complex is exact. Thus
 $$
 Z_i=B_i
 $$
@@ -99,7 +113,7 @@ Starting with
 $$
 \operatorname{rank}B_{-1}=1
 $$
-in the augmented complex and using Pascal's identity gives inductively
+in the augmented complex, where $\partial_0=\varepsilon:C_0\to\ZZ$ is the augmentation of p. 110 and $B_{-1}=\operatorname{im}\varepsilon=\ZZ$, and using Pascal's identity gives inductively
 $$
 \operatorname{rank}Z_i
 =
