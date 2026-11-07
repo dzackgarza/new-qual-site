@@ -35,6 +35,11 @@ audit:
     computation gives $d^{m+1}\beta_n^{m+1}=0$ in a torsion-free group, so $d=0$; the Borsuk-Ulam
     half handles $n=0$ and $n=1$ separately and otherwise uses the equivariant $g$, whose induced
     map on $\RP^n\to\RP^{n-1}$ is nontrivial on $H^1(\ZZ_2)$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Statement matches Exercise 3 (p.229) with both parts, including the printed display defining g and the inequality f(x) != f(-x). Rechecked (a): over Z_2 the ring is Z_2[alpha]/(alpha^{m+1}) by Theorem 3.19 p.220, so f^* alpha_m = alpha_n forces 0 = f^*(alpha_m^{m+1}) = alpha_n^{m+1} != 0 when m+1 <= n; over Z the ring is Z[beta]/(beta^{m+1}) by Example 3.12 p.213, so d^{m+1} beta_n^{m+1} = 0 in the torsion-free group H^{2m+2} forces d = 0. Rechecked (b): the antipodal-equivariant g descends to RP^n -> RP^{n-1}, and the loop joining antipodal points upstairs projects to the nontrivial loop, so (a) applies. Citations added for Proposition 3.10 p.210 (f^* a ring map), Theorem 3.19 p.220 and Example 3.12 p.213. Not covered: the n = 0 and n = 1 cases of (b) are argued separately, as the card states.
 ---
 
 ::: {.problem}
@@ -48,7 +53,7 @@ Show that part (a) applies to this map.
 :::
 
 ::: {.solution}
-With $\ZZ_2$ coefficients,
+With $\ZZ_2$ coefficients, Theorem 3.19 (p.220) gives
 $$
 H^*(\RP^r;\ZZ_2)\cong
 \ZZ_2[\alpha]/(\alpha^{r+1}),\qquad \gradeddegree{\alpha}=1.
@@ -57,13 +62,13 @@ Suppose $f:\RP^n\to\RP^m$ with $n>m$ induces a nonzero map on $H^1$. Since both 
 $$
 f^*(\alpha_m)=\alpha_n.
 $$
-Hence
+Since $f^*$ is a ring homomorphism (Proposition 3.10, p.210), $f^*(\alpha_m^{m+1})=(f^*\alpha_m)^{m+1}$, and $\alpha_m^{m+1}=0$ because $m+1>m$. Hence
 $$
 0=f^*(\alpha_m^{m+1})=\alpha_n^{m+1},
 $$
 contradicting $m+1\le n$, since $\alpha_n^{m+1}\ne0$. Thus every such map is zero on $H^1$.
 
-Similarly
+Similarly, by Example 3.12 (p.213),
 $$
 H^*(\CP^r;\ZZ)\cong
 \ZZ[\beta]/(\beta^{r+1}),\qquad \gradeddegree{\beta}=2.
