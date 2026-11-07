@@ -34,6 +34,11 @@ audit:
     cohomology vanishes, and $L(f)=1+d+\cdots+d^n$. For even $n$ this is $(r^{n+1}+1)/(r+1)>0$ when
     $d=-r<0$ and positive for $d\ge0$; for odd $n$ it factors as $(1-r)(1+r^2+\cdots+r^{n-1})$,
     vanishing exactly at $d=-1$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Statement matches Exercise 4 (p.229) including the bracketed pointer to Exercise 3 of §2.C. Rechecked the computation: f^*(alpha^j) = d^j alpha^j by Proposition 3.10 p.210 and Example 3.12 p.213, odd cohomology vanishes, so L(f) = 1+d+...+d^n; for even n and d = -r the sum is (r^{n+1}+1)/(r+1) > 0 and for d >= 0 positive, so L(f) != 0 and Theorem 2C.3 p.179 gives a fixed point; for odd n the sum vanishes only at d = -1. Not covered: the construction of an actual fixed-point-free map in the exceptional case, which the exercise refers to §2.C Ex.3 for.
 ---
 
 ::: {.problem}
@@ -43,7 +48,7 @@ When $n$ is odd show there is a fixed point unless $f^*(\alpha) = -\alpha$, for 
 :::
 
 ::: {.solution}
-Let $\alpha\in H^2(\CP^n;\ZZ)$ be the standard generator. Since $f^*$ is a ring map, there is an integer $d$ such that
+By Example 3.12 (p.213), $H^*(\CP^n;\ZZ)=\ZZ[\alpha]/(\alpha^{n+1})$ with $\alpha$ in degree $2$. Since $f^*$ is a ring homomorphism (Proposition 3.10, p.210), there is an integer $d$ such that
 $$
 f^*(\alpha)=d\alpha,
 \qquad
@@ -57,7 +62,7 @@ If $n$ is even, this integer is never zero. Indeed for $d\ge0$ it is positive; f
 $$
 1-r+r^2-\cdots+r^n=\frac{r^{n+1}+1}{r+1}>0.
 $$
-Thus $L(f)\ne0$, so the Lefschetz fixed point theorem gives a fixed point.
+Thus $L(f)\ne0$, so the Lefschetz fixed point theorem (Theorem 2C.3, p.179), which applies because $\CP^n$ is a finite CW complex, gives a fixed point.
 
 If $n$ is odd, then
 $$
