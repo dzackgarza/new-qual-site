@@ -75,5 +75,7 @@ $$
 which vanishes exactly when $r=1$. Therefore every map has a fixed point unless
 $$
 f^*(\alpha)=-\alpha.
-$$
+$$This is Sam's §3.2 Exercise 4 at pp. 13--14 of the same source. The generator of $H^2(\CP^n;\ZZ)$ goes to $d$ times itself, so $f^*$ sends $\alpha^j$ to $d^j\alpha^j$ and $L(f)=1+d+\cdots+d^n$. For even $n$ every such sum is positive. For odd $n$ it can vanish exactly at $d=-1$: for $d=-r$ with $r>0$, $(1-r)(1+r^2+\cdots+r^{n-1})$, and this product vanishes only for $r=1$ by the alternating control already recorded in the proof.
+
+
 :::
