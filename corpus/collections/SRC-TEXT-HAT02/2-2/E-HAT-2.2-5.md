@@ -42,7 +42,7 @@ A reflection of $S^n\subset\RR^{n+1}$ across the hyperplane perpendicular to a u
 $$
 R_u(x)=x-2\langle x,u\rangle u.
 $$
-Note that $R_u=R_{-u}$.
+Note that $R_u=R_{-u}$; each $R_u$ is an orthogonal transformation, fixing $u^\perp$ pointwise and sending $u$ to $-u$, so it fixes the subsphere $u^\perp\cap S^n$ and interchanges the two closed hemispheres, which is a reflection of $S^n$ in the sense of property (e) of degree (Hatcher p. 134), of degree $-1$.
 
 ::: pf
 
@@ -57,7 +57,7 @@ when $n\ge1$.
 
 ::: pf-proof
 
-The sphere $S^n$ is path connected for $n\ge1$. If necessary one may replace $v$ by $-v$, which defines the same reflection.
+Any two points $x,y\in S^n$ with $y\ne-x$ are joined by $t\mapsto (1-t)x+ty$, normalized, a path in $S^n$; antipodal points $x,-x$ are joined through any third point by two such paths, and $S^n$ has a third point for $n\ge1$. If necessary one may replace $v$ by $-v$, which defines the same reflection.
 
 :::
 
