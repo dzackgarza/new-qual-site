@@ -25,6 +25,23 @@ audit:
     coordinate disk, so the Alexander-duality coordinate of the image of [S^r] is
     ±1 and the inclusion is an isomorphism in degree r and hence in all degrees,
     with the r = 0 case read on reduced H_0. No defect.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Added the omitted case k = n. Then the embedded n-sphere is all of S^n by
+    invariance of domain, so S^{n-k-1} = S^{-1} and S^n - S are both empty and the
+    inclusion is an isomorphism on homology. Alexander duality for a proper subsphere
+    is now invoked only after reducing to k < n. The previous r = -1 calculation did
+    not cover this case.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Rechecked all cases against Hatcher p.176 and Corollary 2B.4: k = n holds
+    trivially, while for k < n the normal disk meets S in one transverse point, giving
+    Alexander-duality coordinate plus or minus one for the image of the normal-sphere
+    fundamental class. The r = 0 reduced-H_0 interpretation remains included.
 ---
 
 ::: {.problem}
@@ -34,7 +51,9 @@ Show that the inclusion $S^{n-k-1} \hookrightarrow S^n - S$ induces an isomorphi
 :::
 
 ::: {.solution}
-Put $r=n-k-1$. Alexander duality for the embedded sphere $S\cong S^k$ gives
+If $k=n$, then $S$ is an embedded $n$-sphere in $S^n$. By invariance of domain it is all of $S^n$. Hence both $S^{n-k-1}=S^{-1}$ and $S^n-S$ are empty, and the inclusion in the statement is an isomorphism on homology.
+
+Now suppose $k<n$ and put $r=n-k-1\ge0$. Alexander duality for the embedded proper subsphere $S\cong S^k$ gives
 $$
 \widetilde H_i(S^n\setminus S)\cong\widetilde H^{\,n-i-1}(S)
 \cong
