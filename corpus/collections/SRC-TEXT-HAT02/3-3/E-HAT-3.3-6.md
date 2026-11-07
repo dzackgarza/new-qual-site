@@ -116,7 +116,7 @@ The three cases also settle orientability, since $H_n(M)=\ker\psi$. The map $\ps
 
 For $n=2$ the same three cases apply with the sequence read in reduced homology, where $\widetilde H_0(S^1)=0$ replaces the copy of $\ZZ$ that appears at $i=0$ in the unreduced sequence; the conclusions, and the torsion statement of Corollary 3.28, are unchanged.
 
-For (b), compute the Euler characteristic degree by degree, as the handout does. Since $H_i(M)\cong H_i(M_1)\oplus H_i(M_2)$ for $1\le i\le n-2$, and $H_n(M)$ is $\ZZ$ or $0$ according to the three cases, while $\rk H_{n-1}(M)=\rk H_{n-1}(M_1)+\rk H_{n-1}(M_2)$ in the first two cases and that rank plus one in the third,
+For (b), compute the Euler characteristic degree by degree, as the handout does. Since $H_i(M)\cong H_i(M_1)\oplus H_i(M_2)$ for $1\le i\le n-2$, and $H_n(M)$ is $\ZZ$ or $0$ according to the three cases, while $\operatorname{rank} H_{n-1}(M)=\operatorname{rank} H_{n-1}(M_1)+\operatorname{rank} H_{n-1}(M_2)$ in the first two cases and that rank plus one in the third,
 $$
 \chi(M)=\chi(M_1)+\chi(M_2)+(-1)+(-1)^{n+1}=\chi(M_1)+\chi(M_2)-\bigl(1+(-1)^n\bigr)=\chi(M_1)+\chi(M_2)-\chi(S^n),
 $$
