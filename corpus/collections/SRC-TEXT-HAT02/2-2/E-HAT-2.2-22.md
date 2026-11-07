@@ -30,6 +30,17 @@ audit:
     Read the lifted structure: the restriction of an $n$-sheeted covering over a contractible open
     cell is a trivial covering, so each open cell has exactly $n$ lifts, and the lifted
     characteristic maps give a CW structure with $c_k(\tilde X)=n\,c_k(X)$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Statement matches Exercise 22 as printed on p. 157. The pulled-back cell structure is correct
+    and now cites its results: triviality of the covering over an open cell, by the covering
+    homotopy property of Proposition 1.30 p. 60 and the lifting criterion Proposition 1.33 p. 61
+    (the cell is contractible, so its image subgroup is trivial), and lifting of the
+    characteristic maps by Proposition 1.30 again; chi is the alternating sum of cell counts,
+    p. 146. What is not covered: the point-set verification that the lifted cells give a CW
+    topology (closure finiteness, weak topology) is not written out.
 ---
 
 ::: {.problem}
@@ -50,7 +61,7 @@ Every open $k$-cell of $X$ has exactly $n$ lifts, each an open $k$-cell of $\wid
 
 ::: pf-proof
 
-An open cell is contractible and hence simply connected. The restriction of the covering over the cell is therefore a disjoint union of homeomorphic copies of the cell. Since each point has exactly $n$ preimages, there are exactly $n$ such copies. The lifted characteristic maps provide a CW structure on $\widetilde X$.
+An open cell is contractible and hence simply connected. The restriction of the covering over the cell is therefore a disjoint union of homeomorphic copies of the cell: by the covering homotopy property, Proposition 1.30 (p. 60), the identity map of the open cell lifts to each sheet, starting from any chosen point of that sheet, and by Proposition 1.33 (p. 61) applied to the identity, whose image lies in the image subgroup, such a lift exists over the simply connected cell. Each lift is a homeomorphism from the cell onto a sheet, and the sheets meet no cell in more than one copy. Since each point has exactly $n$ preimages, there are exactly $n$ such copies. The characteristic maps of $X$ lift to $\widetilde X$ by Proposition 1.30 (p. 60), applied to the contractible disk $D^k$ mapping to the $k$-skeleton, and the lifted characteristic maps provide a CW structure on $\widetilde X$.
 
 :::
 
@@ -62,7 +73,7 @@ If $c_k(X)$ denotes the number of $k$-cells, then
 $$
 c_k(\widetilde X)=n\,c_k(X).
 $$
-Therefore
+Therefore, with $\chi$ the alternating sum of the numbers of cells of a finite CW complex (p. 146),
 $$
 \begin{aligned}
 \chi(\widetilde X)
@@ -71,4 +82,5 @@ $$
 &=\boxed{n\chi(X)}.
 \end{aligned}
 $$
+The sums are finite because $X$ has finitely many cells.
 :::
