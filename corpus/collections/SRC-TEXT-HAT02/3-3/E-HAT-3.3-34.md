@@ -36,6 +36,17 @@ audit:
     $\partial(c\frown\varphi)=(\partial c)\frown\varphi\pm c\frown\delta\varphi$ together with
     $\partial[M,\partial M]=[\partial M]$, the sign being left to the conventions as the exercise
     allows.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    The card left the signs to "the chosen cap and connecting-map conventions", which is exactly the
+    part of the exercise that has content. The two outer squares are now computed from Hatcher's
+    chain identity p.240 in the form $\partial(c\frown\varphi)=(-1)^\ell(\partial c\frown\varphi
+    -c\frown\delta\varphi)$: the third square commutes up to $(-1)^k$, and the first exactly, once a
+    cochain on the boundary is extended through the collar. The middle square is now justified by
+    both sides being the same chain-level product rather than by the word "naturality". Not verified:
+    the sign of the relative cap product forms, which is taken from p.240 and not recomputed.
 ---
 
 ::: {.problem}
@@ -61,16 +72,18 @@ $$
 H_{n-k}(\partial M;R)\to H_{n-k}(M;R)
 \to H_{n-k}(M,\partial M;R)\to H_{n-k-1}(\partial M;R).
 $$
-The middle square commutes by naturality of cap product under the map from relative to absolute cochains and from absolute to relative chains.
+The middle square commutes: both composites $\psi\mapsto j_*([M,\partial M]\frown\psi)$ and $\psi\mapsto[M,\partial M]\frown j^*\psi$ are computed from the same chain-level product, since $j^*$ does not change the values of a cochain on chains in $M$, so the square commutes exactly.
 
-For the outer squares, use the chain-level cap-product boundary identity
+For the outer squares, write out the sign. Let $c\in C_n(M;R)$ represent $[M,\partial M]$, so that $\partial c$ represents $[\partial M]$ by Exercise 31, and let Hatcher's chain identity (p.240) for $\sigma$ of degree $k$ and $\varphi$ of degree $\ell$ be used in the form
 $$
-\partial(c\frown\varphi)
-=(\partial c)\frown\varphi\ \pm\ c\frown\delta\varphi
+\partial(c\frown\varphi)=(-1)^{\ell}\bigl(\partial c\frown\varphi-c\frown\delta\varphi\bigr).
 $$
-together with Exercise 31,
+
+Third square: take $\varphi$ a cocycle on $M$ of degree $k$, so $\delta\varphi=0$. Then $\partial(c\frown\varphi)=(-1)^k\,\partial c\frown\varphi = (-1)^k\,\partial c\frown i^*\varphi$ (the values of $\varphi$ on faces of $\partial c$ are those of its restriction to $\partial M$), which is the statement that $[\partial M]\frown i^*\varphi=(-1)^k\partial([M,\partial M]\frown\varphi)$: the square commutes up to the sign $(-1)^k$.
+
+First square: take $\psi$ a cocycle on $\partial M$ of degree $k-1$ and extend it to a cochain $\Psi$ on $M$, which the collar allows by pulling back along a retraction $M\to\partial M$. Then $\delta\Psi$ vanishes on chains in $\partial M$, so it is a relative cocycle whose class is $\delta\psi$. The identity with $\ell=k-1$ gives
 $$
-\partial[M,\partial M]=[\partial M].
+\partial(c\frown\Psi)=(-1)^{k-1}\bigl(\partial c\frown\Psi-c\frown\delta\Psi\bigr),\qquad\text{so}\qquad c\frown\delta\Psi=\partial c\frown\Psi-(-1)^{k-1}\partial(c\frown\Psi).
 $$
-For an absolute cocycle $\varphi$, the identity says that the boundary of $[M,\partial M]\frown\varphi$ is $[\partial M]\frown(\varphi\restrict_{\partial M})$, proving the right square. For a cocycle on $\partial M$, extend it to a cochain on $M$; its coboundary represents the cohomology connecting class. The same identity, now applied to that extension, says that its cap product with $[M,\partial M]$ is the inclusion of the boundary cap product, proving the left square. The signs are those in the chosen cap and connecting-map conventions.
+In $H_{n-k}(M;R)$ the second term on the right is a boundary, and $\partial c\frown\Psi=\partial c\frown\psi$ because $\Psi$ extends $\psi$; hence $[M,\partial M]\frown\delta\psi=i_*([\partial M]\frown\psi)$, with no sign beyond the one convention chosen for the relative connecting map. So the first square commutes, and the third commutes up to $(-1)^k$.
 :::
