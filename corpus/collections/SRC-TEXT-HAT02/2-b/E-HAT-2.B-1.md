@@ -33,7 +33,6 @@ audit:
     k = ℓ) and H̃^0 = 0, giving Z in degrees n−k−1 and n−ℓ−1; for the disjoint union
     there is also H̃^0 = Z, giving one more Z in degree n−1. Degree shifts and the
     ordinary H_0 statement checked. No defect.
----
 - event: source-checked
   by: claude
   date: 2026-11-07
@@ -44,6 +43,19 @@ audit:
     indices n-k-1, n-l-1, n-1 must be summed. Explicitly, at n=1 and k=l=0, X has four points and
     the complement has H~_0=Z^3, so H_0=Z^4. This refines the existing correct formula without
     invoking an inappropriate connectedness assumption for S^0.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Replaced the unconditional H~^0(X)=Z in the disjoint case by the actual cases: Z for k,l >= 1,
+    Z^2 when exactly one index is 0, and Z^3 for k=l=0. S^0 itself has two points, so k=l=0 gives
+    four points and unreduced H_0=Z^4 when n=1. The proof now starts from DeMason's cover A,B of
+    S^n with intersection equivalent to S^n-X, and uses Proposition 2B.1(b) with relative
+    Mayer-Vietoris and explicitly summed coincident indices, rather than claiming the published
+    proof is merely equivalent to a different Alexander-duality argument. Also relocated the
+    inserted source-checked note inside audit, before the YAML separator, and separated the source
+    text from the closing display as required by the source renderer.
 
 ---
 
@@ -104,29 +116,33 @@ Apply Alexander duality to step [](#s1){.pf-ref}, replacing the cohomological de
 
 ::: pf-step
 
-If $X=S^k\amalg S^\ell$, then reduced cohomology has, in addition to the sphere factors, the summand
+If $X=S^k\amalg S^\ell$, following DeMason on pp. 68--70, separate the two sphere factors with open neighborhoods $A$ and $B$ which deformation retract onto $S^n-X_k$ and $S^n-X_\ell$, where $X_k\cong S^k$ and $X_\ell\cong S^\ell$. Their union is $S^n$, and a suitably smaller intersection deformation retracts to $S^n-X$. Proposition 2B.1(b) supplies the complement of each individual sphere, and reduced Mayer--Vietoris compares these groups with $S^n-X$ and $S^n$.
+
+For $k,\ell\ge1$ this gives copies of $\ZZ$ in the two dimensions $n-k-1$ and $n-\ell-1$, together with one additional copy in degree $n-1$. If two of these dimensions coincide, the corresponding contributions add rather than being counted as one group; in particular $k=\ell$ gives $\ZZ^2$ there.
+
+The zero-dimensional cases must be stated separately:
 $$
-\widetilde H^0(X)\cong\ZZ.
+\widetilde H^0(X)\cong
+\begin{cases}
+\ZZ,&k,\ell\ge1,\\
+\ZZ^2,&\text{exactly one of }k,\ell\text{ is }0,\\
+\ZZ^3,&k=\ell=0.
+\end{cases}
 $$
-For every $k$ and $\ell$ (including zero, where $S^0$ itself is disconnected), the value of Alexander duality is
-$$
-\widetilde H_i(S^n-X)
-\cong
-\widetilde H^{\,n-i-1}(S^k\amalg S^\ell).
-$$
-Hence extra copies of $\ZZ$ occur at the indices $n-k-1$, $n-\ell-1$ and $n-1$ when these are relevant; repeated indices are summed rather than counted separately or lost. In particular, when $n=1$ and $k=\ell=0$, the degree-$0$ reduced group is $\ZZ^3$, not merely $\ZZ$ from the displayed $\widetilde H^0(X)$.
+This is a statement about $\widetilde H^0$, not a blanket $\ZZ$ for every disjoint union. In particular, $S^0$ has two points, so the case $k=\ell=0$ has four points in $X$, not one or two. As DeMason explains there, at $n=1$ and $k=\ell=0$ this gives $\widetilde H_0(S^1-X)=\ZZ^3$ and hence $H_0(S^1-X)=\ZZ^4$. Otherwise the reduced component group is handled by the usual reduced-to-unreduced step, not counted twice among coinciding indices.
 
 ::: pf-proof
 
-A disjoint union of two connected spaces has reduced $H^0$ equal to $\ZZ$, while its positive-degree cohomology is the direct sum of that of its two components. Alexander duality gives the stated complement groups.
-
+These are exactly the sphere/complement computations on pp. 68--70, with the component-count correction for S^0 applied to the disjoint case.
 :::
 
 :::
 
 :::
 
-The unreduced group $H_0$ is obtained, as usual, by adjoining one copy of $\ZZ$ to $\widetilde H_0$.The two decompositions and their sphere-class computations are in **Kenneth DeMason, *M382C Full Credit HW Problems* (4 April 2021)**, Hatcher 2.B.1, printed pp. 68--70. The present proof collates those cases by Alexander duality, which applies here because a sphere is compact and locally contractible (Theorem 3.45, p. 254 of Hatcher). In the disjoint union case, as in the source, the extra reduced component class accompanies the sphere classes only once their indices are summed; the unreduced $H_0$ is obtained afterward.
+The unreduced group $H_0$ is obtained, as usual, by adjoining one copy of $\ZZ$ to $\widetilde H_0$.
+
+The two decompositions and their sphere-class computations are in **Kenneth DeMason, *M382C Full Credit HW Problems* (4 April 2021)**, Hatcher 2.B.1, printed pp. 68--70. The present proof collates those cases by Alexander duality, which applies here because a sphere is compact and locally contractible (Theorem 3.45, p. 254 of Hatcher). In the disjoint union case, as in the source, the extra reduced component class accompanies the sphere classes only once their indices are summed; the unreduced $H_0$ is obtained afterward.
 
 
 :::
