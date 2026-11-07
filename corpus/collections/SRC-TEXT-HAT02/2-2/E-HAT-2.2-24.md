@@ -61,6 +61,18 @@ audit:
     The side double count and the consequences 3F <= 2E and 4F <= 2E are unchanged. The printed
     locator is p.157; an earlier audit note's p.158 is contradicted by this page check.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Published proof located at Guanyu Li, Hatcher.pdf, Exercise 2.2.15 (Hatcher §2.2 #24), printed
+    p.41. Its V-E+F=2 argument puts F=7 for K_5 and uses the paired incidences to reach a side
+    count at most 2E=20, incompatible with seven polygons of at least three sides. The set merely
+    says K_3,3 is similar; the card supplies the missing minimal boundary length 4 from bipartite
+    closed walks being even, hence F=5 gives at least 4F=20 incidences against 2E=18. The previous
+    vague component discussion is replaced by this sourced side count and its precisely recorded
+    refinement.
+
 ---
 
 ::: {.problem}
@@ -100,8 +112,7 @@ $$
 
 Each side borders exactly one face, its own, so the number of sides is the number of pairs (face, side). The sides are identified in pairs, and each pair becomes one edge of the $1$-skeleton, so the number of sides is exactly $2E$.
 
-For either of the two printed graphs a face has at least three sides. A one-sided face would traverse a loop edge, which neither simple graph has. A two-sided face would have to run out and back along one edge (a closed walk of length two in a simple graph repeats an edge). Its interior together with that open edge is then an open and closed piece of the identification space, because both sides of that edge have already been accounted for. Hence an out-and-back two-sided face would be a whole component, forcing the whole sphere to be that single degenerate face-edge object rather than the connected graph $K_5$ or $K_{3,3}$, with ten and nine edges respectively. Thus every face has at least three sides, and $3F\le 2E$.
-
+Following Li's published treatment (Exercise 2.2.15 / Hatcher 2.2.24, printed p. 41), each side has already been identified in pairs with one other side, and a polygon has at least three sides. Hence $3F\le2E$. The printed treatment also allows each edge at most two incidences with $2$-cells, so the side count is exactly $2E$ rather than an unbounded repetition count. For $K_{3,3}$, every closed walk is even; a face therefore has at least $4$ sides after the simple-cell requirement just described, giving $4F\le2E$.
 :::
 
 :::
@@ -167,5 +178,7 @@ Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} exclude $K_5$ and $K_{3,3}$, and by 
 :::
 
 :::
+
+The $K_5$ computation and its $3$-side bound are in **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, Exercise 2.2.15 (Hatcher §2.2 #24), printed p. 41 (`tmp/sources/hatcher-solutions-guanyu-li.pdf`). Li states that the $K_{3,3}$ argument is similar; the explicit distinction above is that closed walks in a bipartite graph have even length, so this card should read $4F$, not $3F$. The numerical conclusions $3\cdot7=21>20$ and $4\cdot5=20>18$ are thereby checked against both the published text and Hatcher's printed figures.
 
 :::
