@@ -35,6 +35,23 @@ audit:
     symplectic correction $x'=x-B(x,f)e+B(x,e)f$ lies in $P^\perp$, which gives the orthogonal
     splitting $L=P\oplus P^\perp$ and lets the rank drop by two; replacing $f$ by $-f$ puts the
     block in the printed shape.
+- event: solution-written
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Filled two previously asserted steps in the integral normal-form proof. Nonsingularity and
+    primitivity of e make B(e,-) a primitive functional, hence B(e,f)=1 for some f. The displayed
+    correction gives both orthogonality equations, and the orthogonal splitting makes the
+    restriction to P-perp nonsingular, permitting induction. D.G. James, Witt's Theorem for
+    Symplectic Modular Forms, p.410, gives the same binary decomposition and confirms that a
+    primitive vector can begin a symplectic basis.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Recomputed B(x',e)=B(x',f)=0 explicitly and checked the P-perp adjoint by extending any
+    functional on P-perp by zero on P and using L=P plus P-perp. STYLE-08 conversion leaves the
+    mathematics and the printed block unchanged.
 ---
 
 ::: {.problem}
@@ -49,31 +66,64 @@ B:L\times L\to\ZZ.
 $$
 Nonsingularity over $\ZZ$ means the adjoint map $L\to L^*$ is an isomorphism.
 
-Choose a primitive element $e\in L$. Since the functional $B(e,-)$ is primitive in $L^*$, there exists $f\in L$ with
+The same binary decomposition appears in **D. G. James, *Witt's Theorem for Symplectic Modular Forms*, p. 410** (`tmp/sources/james-witt-symplectic-modular-forms-1967.pdf`), which also notes that a primitive vector may begin a symplectic basis.
+
+::: pf
+
+::: {.pf-step #primitive-pair}
+Every primitive $e\in L$ has a partner $f\in L$ with $B(e,f)=1$.
+
+::: pf-proof
+Let $B^\flat:L\to L^*$ be the adjoint isomorphism. If $B^\flat(e)=m\lambda$ for some $\lambda\in L^*$ and nonzero integer $m$, then $e$ is $m$ times an element of $L$, contradicting primitivity of $e$. Thus $B^\flat(e)$ is primitive in $L^*$. A primitive functional is not an integer multiple of another functional with larger content, so its values include $1$: some $f\in L$ has $B(e,f)=1$.
+:::
+
+:::
+
+::: {.pf-step #orthogonal-splitting}
+For $P=\ZZ e\oplus\ZZ f$ we have $L=P\oplus P^\perp$, and $B$ has matrix
 $$
-B(e,f)=1.
+\begin{pmatrix}0&1\\-1&0\end{pmatrix}
 $$
-Then the restriction of $B$ to $P=\ZZ e\oplus\ZZ f$ has matrix
-$$
-\begin{pmatrix}0&1\\-1&0\end{pmatrix}.
-$$
+on $P$.
+
+::: pf-proof
 For any $x\in L$, set
 $$
 x'=x-B(x,f)e+B(x,e)f.
 $$
-A direct calculation gives
+Then
 $$
-B(x',e)=B(x',f)=0.
+\begin{aligned}
+B(x',e)&=B(x,e)-B(x,f)B(e,e)+B(x,e)B(f,e)=0,\\
+B(x',f)&=B(x,f)-B(x,f)B(e,f)+B(x,e)B(f,f)=0.
+\end{aligned}
 $$
-Thus
-$$
-L=P\oplus P^\perp.
-$$
-The restriction of $B$ to $P^\perp$ is again integral, skew-symmetric, and nonsingular. Induction on the rank therefore splits $L$ as an orthogonal direct sum of such rank-two planes.
+Thus $x'\in P^\perp$, and the first two terms in the formula for $x$ give the component of $x$ in $P$. The matrix on $P$ has determinant $1$, so $P\cap P^\perp=0$. Hence $L=P\oplus P^\perp$.
+:::
 
-Replacing $f$ by $-f$ in each plane changes the displayed block to
+:::
+
+::: {.pf-step #restriction-nonsingular}
+The restriction of $B$ to $P^\perp$ is integral, skew-symmetric, and nonsingular.
+
+::: pf-proof
+It is integral and skew-symmetric by restriction. Given $\varphi\in(P^\perp)^*$, extend it by zero on $P$. Nonsingularity of $B$ on $L$ gives $y\in L$ with $B(y,x)=\varphi(x)$ for every $x\in P^\perp$. Writing $y=p+z$ with $p\in P$ and $z\in P^\perp$ from step [](#orthogonal-splitting){.pf-ref} shows that $B(z,x)=\varphi(x)$ for all $x\in P^\perp$, so the restriction's adjoint is surjective. It is injective since $z\in P^\perp\cap(P^\perp)^\perp$ forces $z=0$ using the same decomposition for the zero functional.
+:::
+
+:::
+
+::: pf-step
+Induction on rank now gives the required block-diagonal matrix.
+
+::: pf-proof
+Starting with a primitive $e$, steps [](#primitive-pair){.pf-ref}–[](#restriction-nonsingular){.pf-ref} split off a rank-two symplectic plane, and step [](#restriction-nonsingular){.pf-ref} permits repetition on $P^\perp$. Induction ends with an orthogonal direct sum of these planes. Replacing $f$ by $-f$ in each plane changes each block to
 $$
 \boxed{\begin{pmatrix}0&-1\\1&0\end{pmatrix}},
 $$
-so after a suitable integral change of basis the matrix is a block diagonal sum of these standard symplectic blocks.
+as required.
+:::
+
+:::
+
+:::
 :::
