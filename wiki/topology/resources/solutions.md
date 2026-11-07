@@ -43,6 +43,18 @@ Two defects found on checking it against Hatcher and recorded on the cards: the 
 $d=\pm p$ from local signs that are individually $\pm1$ without proving they agree, and the §3.3 Ex.6
 sheet reads the pair sequence only for $n\ge3$, where $H_{n-2}(S^{n-1})=0$.
 
+**Stanford Math 215C, Spring 2009, solution sets**, linked from
+[Ralph Cohen's Math 215C page](https://math.stanford.edu/~ralph/math215c/). Cite the individual set and printed page, not an
+inferred author:
+
+- [`solution3.pdf`](https://math.stanford.edu/~ralph/math215c/solution3.pdf): Hatcher §3.3 Ex. 9 and 10, p. 1; Ex. 11, pp. 1–2.
+- [`solution4.pdf`](https://math.stanford.edu/~ralph/math215c/solution4.pdf): Hatcher §3.3 Ex. 21, p. 1 (including the $\mathbb Z	imes\mathbb R$
+  counterexample); Ex. 22, pp. 1–2 (relative Mayer–Vietoris); Ex. 24, p. 2.
+- [`solution2.pdf`](https://math.stanford.edu/~ralph/math215c/solution2.pdf): Hatcher §3.B Ex. 1, pp. 3–4 (whose integral and mod-2 homology
+  computations are used here, but which explicitly skips cohomology); Ex. 3, p. 5 (the cellular Tor example and its non-natural splitting).
+
+Other coverage and checked corrections are recorded on the cards rather than inferred from these selections.
+
 **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, local file
 `tmp/sources/hatcher-solutions-guanyu-li.pdf`. Numbering is internal, so cite the parenthetical Hatcher
 exercise number as well as the internal one. Its §3.3 material (printed pp. 56–59) has solutions to
