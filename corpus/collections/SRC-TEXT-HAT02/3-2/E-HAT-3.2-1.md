@@ -76,4 +76,8 @@ $$
 \boxed{a_i\smile a_j=0,\qquad b_i\smile b_j=0}
 $$
 for all $i,j$. Since $H^k(M_g;\ZZ)=0$ for $k>2$, these relations, together with the unit in $H^0$, determine the whole ring.
+
+This is the proof he takes in Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.2 Exercise 1, printed p. 13, locally `tmp/sources/hatcher-solutions-sam-2008.pdf`: the quotient from $M_g$ to the wedge sends $a_i,x_i$ to $a_i,y_i$ and every orientation class $u_i$ to the orientation class $u$. Naturality then gives $a_i⌣b_i=u$, $b_i⌣a_i=-u$; the alternating squares of pullbacks from distinct wedge summands vanish by the relative cup product, while on each torus the same factors have square zero. This fixes the complete cohomology ring up to its unit class.
+
+
 :::
