@@ -53,19 +53,24 @@ Deduce that there are suspension isomorphisms $\tilde{h}_n(X) \approx \tilde{h}_
 :::
 
 ::: {.solution}
-Apply the exactness axiom, axiom (2) of p. 160, to the CW pair $(*,*)$. The inclusion $*\to *$ and the quotient map $*\to */*=*$ are both the identity. Thus the exact sequence contains
+Apply the exactness axiom to the pair $(X,X)$. The inclusion $i:X\to X$ is the identity, so $i_*$ is an isomorphism. Its quotient is a point. Hence the exact sequence contains
 $$
-\widetilde h_n(*)\xrightarrow{\mathrm{id}}\widetilde h_n(*)
-\xrightarrow{\mathrm{id}}\widetilde h_n(*).
+0\longrightarrow\widetilde h_n(X)\xrightarrow{\ i_*\ }
+\widetilde h_n(X)\longrightarrow\widetilde h_n(\mathrm{pt})\longrightarrow0,
 $$
-The image of the first map is the whole group, while the kernel of the second is zero. Exactness forces $\widetilde h_n(*)=0$ for every $n$.
+and $\widetilde h_n(\mathrm{pt})=0$ for every $n$.
 
-Let $CX$ be the cone on $X$. It is contractible, so homotopy invariance, axiom (1) of p. 160, gives $\widetilde h_k(CX)=\widetilde h_k(\mathrm{pt})=0$ for every $k$. The exact sequence of the CW pair $(CX,X)$ therefore contains
+Now write $SX$ as the union of the upper and lower cones $C^+X$ and $C^-X$. They are contractible and their intersection is $X$. Reduced Mayer--Vietoris therefore gives
 $$
-0=\widetilde h_{n+1}(CX)
-\longrightarrow\widetilde h_{n+1}(CX/X)
-\xrightarrow{\partial}\widetilde h_n(X)
-\longrightarrow\widetilde h_n(CX)=0.
+0=\widetilde h_{n+1}(C^+X)\oplus\widetilde h_{n+1}(C^-X)
+\longrightarrow\widetilde h_{n+1}(SX)
+\longrightarrow\widetilde h_n(X)
+\longrightarrow\widetilde h_n(C^+X)\oplus\widetilde h_n(C^-X)=0.
 $$
-Since $CX/X\cong SX$, the boundary map gives the required suspension isomorphism.
+Consequently,
+$$
+\boxed{\widetilde h_{n+1}(SX)\cong\widetilde h_n(X).}
+$$
+
+This is the argument in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.3.3, printed p. 83, held locally as `tmp/sources/demason-m382c-hatcher-20210404.pdf`: apply exactness to $(X,X)$, then apply Mayer--Vietoris to the two cones.
 :::
