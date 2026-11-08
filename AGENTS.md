@@ -712,11 +712,12 @@ statement are the opposite case: that is a duplicate, merged under `CARD-04`. Wh
 
 # Data issues
 
-Completion of all solutions is a very low priority concern and is NOT a data
-issue. Solutions are authored content that will be filled in over time, after
-`publication-milestone`. The order of work across copy, intake, mathematical
-repair and proof adjudication is the sibling order of the
-[issue tree](https://github.com/dzackgarza/new-qual-site/issues/83).
+The order of work across copy, intake, mathematical repair, proof writing and
+publication is the sibling order of the
+[issue tree](https://github.com/dzackgarza/new-qual-site/issues/83): complete
+source-faithful proofs come first, their certification second, and reader-facing
+publication after both. A solution is not deferred to publication; it is the
+content publication renders.
 
 Within data issues, in order of urgency:
 1. Incorrect data — problem statements, titles, or classifications that are
