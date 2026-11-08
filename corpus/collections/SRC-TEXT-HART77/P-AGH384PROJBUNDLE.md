@@ -41,8 +41,9 @@ $$
 ,$$
 cf. (II, 8.13), and conclude that the \dfn{relative canonical sheaf} $\omega_{X/Y} = \wedge^n \Omega_{X/Y}$ is isomorphic to $(\pi^* \wedge^{n+1} \mce)(-n-1)$. Show furthermore that there is a natural isomorphism $R^n \pi_*(\omega_{X/Y}) \cong \mco_Y$ (cf. (7.1.1)).
 
-(c) Now show, for any $l \in \ZZ$, that $$ R^n \pi_*(\mco(l)) \cong \dualof{(\pi_*\mco(-l-n-1))} \tensor \dualof{(\wedge^{n+1} \mce)}
-.$$
+(c) Now show, for any $l \in \ZZ$, that $$ R^n \pi_*(\mco(l)) \cong \dualof{(\pi_*\mco(-l-n-1))} \tensor \dualof{(\wedge^{n+1} \mce)},
+$$
+the second dual being forced by part (b): at $l=-n-1$ the formula must return $R^n\pi_*\mco(-n-1)\cong\dualof{(\wedge^{n+1}\mce)}$, because $\omega_{X/Y}\cong(\pi^*\wedge^{n+1}\mce)(-n-1)$ and $R^n\pi_*(\omega_{X/Y})\cong\mco_Y$, whereas the factor without the dual would give $\wedge^{n+1}\mce$.
 
 (d) Assume additionally that $Y$ is a nonsingular projective variety over an algebraically closed field $k$.
     Show that $p_a(X) = (-1)^n p_a(Y)$ (use (Ex.
