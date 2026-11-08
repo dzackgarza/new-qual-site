@@ -13,6 +13,21 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Read against Hartshorne II.5.2, printed page 124 (PDF page 139), and the
+    retained Cais solutions, printed page 17 (PDF page 17). Both parts and
+    the K-linearity of rho match. The proof was checked from the two-point
+    topology: X and D(pi) are the only nonempty opens; every cover of either
+    contains that whole open, so the section data satisfy sheaf gluing; pairs
+    (u,v) satisfying the commutative square are exactly the module morphisms;
+    and affine quasi-coherence at the closed point forces the neighborhood to
+    be all of X, making rho the composite of two isomorphisms. The zero module
+    and empty open pose no exception. No defect repaired; the retained
+    solution's sketch does not replace the explicit equivalence and converse
+    argument checked here.
+- event: source-checked
   by: chatgpt
   date: 2026-09-17
   note: Compared both parts with the retained MinerU transcription Hartshorne_Solutions_extracted.md, section 2.5, solution 5.2(a)-(b).
