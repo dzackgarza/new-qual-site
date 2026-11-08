@@ -37,6 +37,8 @@ Then show $M$ is a direct summand of a free $A$-module.
 :::
 
 ::: {.solution}
+Dongryul Kim's Ex. 6.6 (same revision) proves the vanishing by iterating the dimension shift, $\Ext^1(M,N)=\Ext^{n+1}(M,N^n)$, and then bounding by $\operatorname{pd}M\le\dim A$ from (III.6.11A). Step s1 below reaches the same conclusion by descending induction from degree $d=\dim A$, using $\Ext^i(M,A^{\oplus r})=\Ext^i(M,A)^{\oplus r}=0$ together with the shift in the second variable; the terminal vanishing at $i>d$ is (III.6.11A) in both accounts, and s2 is the converse with a finite free presentation.
+
 All Ext groups and projective dimensions are over $A$.
 The regular local ring $A$ is noetherian and has finite dimension $d$.
 The regular-local global-dimension theorem gives $\operatorname{pd}_A L\le d$ for every $A$-module $L$ [@Har77, Proposition III.6.11A].

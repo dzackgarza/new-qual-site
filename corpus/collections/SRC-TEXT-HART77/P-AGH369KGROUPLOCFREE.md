@@ -43,6 +43,8 @@ Show that $\delta(\mcf)$ is independent of the resolution chosen, that it define
 :::
 
 ::: {.solution}
+Dongryul Kim's Ex. 6.9 (same revision) follows the book's outline: a finite locally free resolution exists by Ex. 6.8, terminates by (6.11A) with Ex. 6.5, and $\delta(\mcf)=\sum(-1)^i\gamma(\mathcal E_i)$ is compared across two resolutions, while the two maps between $K$ and $K_1$ are shown inverse on generators. Steps s1–s3 below build and check that $\delta$, s4 checks its value on a short exact sequence, and s5–s6 verify $\delta\varepsilon$ and $\varepsilon\delta$ fix every generator, which is the resolution comparison in the form of a two-sided inverse.
+
 Write $[F]$ for the class of a coherent sheaf in $K(X)$ and $[E]_v$ for the class of a locally free coherent sheaf in the group $K_1(X)$ defined in the statement.
 The map $\varepsilon$ sends $[E]_v$ to $[E]$.
 For a bounded complex of locally free coherent sheaves, put $\chi_v(E_\bullet)=\sum_i(-1)^i[E_i]_v$.

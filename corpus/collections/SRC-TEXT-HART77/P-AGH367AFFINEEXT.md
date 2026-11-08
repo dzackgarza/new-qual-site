@@ -36,6 +36,8 @@ $$
 :::
 
 ::: {.solution}
+Dongryul Kim's Ex. 6.7 (same revision) takes a finite free resolution of $M$ and compares $\Ext_X^i(\widetilde M,\widetilde N)$ with $\Ext_A^i(M,N)$ term by term, using that $\Hom_X(\widetilde P_p,-)$ and $\Hom_A(P_p,-)$ agree on associated sheaves. Steps s1 and s2 below do the same through the double complex $C^{p,q}=\Hom_X(L_p,I^q)$, which gives the global comparison without choosing an injective resolution of $\widetilde N$ by hand, and s1 already isolates the sheaf-level statement $\mathcal{E}xt_X^i\cong\widetilde{\Ext_A^i}$ that the cohomological one is read off from.
+
 Take a finite-free $A$-module resolution $P_\bullet\to M$ and an injective resolution $\widetilde N\to I^\bullet$ in $\Mod(X)$.
 The first resolution exists because $M$ is finite and $A$ is noetherian, as in [[P-AGH363EXTCOHERENT]], step 1.
 The second exists by [@Har77, Proposition III.2.2].

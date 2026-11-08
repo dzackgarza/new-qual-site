@@ -38,6 +38,8 @@ Let $D=(f)_{\infty}$, and let $\mcl=\mcl(D)$, $s \in \Gamma(X, \mcl(D))$ corresp
 :::
 
 ::: {.solution}
+Dongryul Kim's Ex. 6.8 (same revision), following Borelli, proves first that the opens $X_s$ attached to sections of invertible sheaves form a base for the topology, using local factoriality to identify Cartier and Weil divisors (II, 6.11), and then applies (II, 5.14) to exhibit every coherent sheaf as a quotient of a direct sum of twists $\mathcal L_i^{n_i}$. Step s1 below supplies the point-separation lemma that argument uses, that $\OO_{X,x}\nsubseteq\OO_{X,z}$ whenever $x\notin\overline{\{z\}}$, and s2 builds the required effective Cartier divisor as the pole divisor of a rational function, which is the Cartier–Weil passage carried out explicitly rather than quoted.
+
 Write $K=K(X)$ and view every local ring of the integral scheme $X$ as a subring of $K$.
 For an invertible sheaf $L$ and section $s$, let $X_s$ be the open subset where $s$ is a local frame.
 Local factoriality implies normality and makes every Weil divisor Cartier, by the [[D-5PQ5W|Cartier--Weil comparison]].

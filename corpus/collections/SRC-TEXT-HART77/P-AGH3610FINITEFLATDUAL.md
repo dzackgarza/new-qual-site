@@ -47,6 +47,8 @@ Do the general case by induction on $i$, writing $\mcf$ as a quotient of a local
 :::
 
 ::: {.solution}
+Dongryul Kim's Ex. 6.10 (same revision) sets $f^!\mcg=\sheafhom_Y(f_*\OO_X,\mcg)$ as a sheaf of modules over the coherent $\OO_Y$-algebra $f_*\OO_X$ (II, 5.17(e)) for (a), reads (b) as the adjunction between $f_*$ and $f^!$ for modules over that algebra, and proves (d) by induction on $i$, presenting a coherent sheaf using enough locally frees and using that $f_*\OO_X$ locally free makes $f_*$ exact on the resolutions involved. Steps s1–s2 below prove (a)–(c) in that form with the module isomorphism written out on global sections, and s4–s6 run the induction of (d) with the two halves separated, s5 for injectivity and s6 for surjectivity.
+
 Put $\mathcal B=f_*\OO_X$.
 For a finite morphism, $f_*$ preserves coherence and is exact on quasi-coherent sheaves, by restriction of scalars on affine opens [@Har77, Proposition II.5.8 and Exercise II.5.5].
 All Ext groups below are computed in the categories of all module sheaves, not only the quasi-coherent subcategories.

@@ -36,6 +36,8 @@ For (b), consider surjections $\mcl\to\mcl\otimes k(x)\to0$ with $\mcl$ invertib
 :::
 
 ::: {.solution}
+The published argument is Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter III §6, Exercise 6.2, revision `6c627eed7b0226249df79b8777f5ac450f17885a`. For (a) he composes a projective $P\twoheadrightarrow\OO_X$ with the surjection onto the skyscraper $\OO_X|_x=i_{x,*}\OO_{X,x}$, lifts the composite through $i_{V,!}\OO_V\twoheadrightarrow\OO_X|_x$ for $V=X\setminus\{y\}$, and uses that $\Gamma(W,i_{V,!}\OO_V)=0$ whenever $y\in W$, so a germ equal to $1$ at $x$ is impossible. For (b) he replaces the skyscraper by $i_{x,\ast}k(x)$, propagates a local section to a global one by multiplying with a high power of a section cutting out $X\setminus U$ (II, 5.14), and lifts through $\OO_X(-1)\twoheadrightarrow i_{x,*}\OO_X(-1)(x)$, whose global sections vanish. Steps s2 and s3 above run the same two contradictions, with the extension-by-zero $j_!\OO_V\hookrightarrow\OO_X$ and the vanishing $\Hom_X(F,\OO_X(-m))=0$ in place of the twisting.
+
 For a closed point $x$, write $k(x)$ for the skyscraper $\OO_X$-module with fibre $\kappa(x)$.
 An object is projective when every morphism from it to the target of an epimorphism lifts through that epimorphism.
 Suppose, in each of the indicated categories, that $p:\mcp\twoheadrightarrow\OO_X$ is an epimorphism with $\mcp$ projective.

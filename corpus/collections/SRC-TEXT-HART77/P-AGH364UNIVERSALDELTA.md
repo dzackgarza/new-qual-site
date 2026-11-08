@@ -33,6 +33,8 @@ Show $\mathcal{E}xt^i(\wait, \mcg)$ is coeffaceable for $i>0$.
 :::
 
 ::: {.solution}
+The published proof of coefficient-universality is Dongryul Kim's Ex. 6.4 (same revision): for a locally free $\mathcal L\twoheadrightarrow F$ one has $\mathcal{E}xt^i(\mathcal L,\mcg)=0$ for $i>0$ because $\sheafhom(\mathcal L,-)=\mathcal L^\vee\otimes-$ is exact, and that vanishing is what makes $\mathcal{E}xt^i(F,\mcg)\to\mathcal{E}xt^i(\mathcal L,\mcg)$ zero, giving coeffaceability and hence universality. Step s2 below proves exactly that vanishing, locally in a frame, so the published two-line argument and the argument here are the same two facts.
+
 Fix $\mcg$ and put $T^i(F)=\mathcal{E}xt_X^i(F,\mcg)$ for $F\in\Coh(X)$.
 Regard this contravariant functor as a covariant functor on the abelian category $\Coh(X)^{\mathrm{op}}$.
 

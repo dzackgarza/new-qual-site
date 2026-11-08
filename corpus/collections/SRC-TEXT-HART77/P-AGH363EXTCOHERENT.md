@@ -31,6 +31,8 @@ Let $X$ be a noetherian scheme, and let $\mcf, \mcg \in \Mod(X)$.
 :::
 
 ::: {.solution}
+Dongryul Kim's Ex. 6.3 (same revision) reduces to $X$ affine by locality of sheaf Ext (III.6.2), invokes Ex. 6.7 for the comparison with module Ext, and derives finite generation from a finite free resolution; for (b) his text says only that the associated sheaf of a module is quasi-coherent. What the published sketch leaves implicit is supplied below: the finite free resolution is constructed in step s1, and step s2 proves the comparison $\mathcal{E}xt^i_U(\widetilde M,\widetilde N)\cong\widetilde{\Ext_A^i(M,N)}$ by identifying the whole complexes through the basis isomorphism $\Hom_A(P_j,N)^{\sim}\cong\sheafhom_U(\widetilde P_j,\widetilde N)$, which is what makes the positive-degree statement follow rather than being assumed.
+
 Sheaf Ext restricts to open subsets:
 $$
 \mathcal{E}xt_X^i(\mcf,\mcg)\restrict_U

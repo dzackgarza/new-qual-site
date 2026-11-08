@@ -35,6 +35,8 @@ Show:
 :::
 
 ::: {.solution}
+Dongryul Kim's Ex. 6.5 (same revision) proves (a) by splitting $0\to\mcg\to E\to\mcf\to0$, since $\mathcal{E}xt^1(\mcf,\mcg)=0$ makes $\mcf$ a direct summand of a locally free sheaf; (b) in one direction by computing sheaf Ext from a locally free resolution (III.6.5) and in the other by iterating the dimension shift (III.6.4) so that $\mathcal{E}xt^1(\mathcal A,\mcg)$ equals $\mathcal{E}xt^{n+1}(\mcf,\mcg)$; (c) by comparing $\mathrm{hd}$ with $\sup_x\operatorname{pd}_{\OO_x}\mcf_x$ through (III.6.8). Step s1 below is that splitting read through the lifting of the identity morphism of $\mcf$ through a finite locally free epimorphism, and s2 supplies the resolution chain the two directions of (b) run on.
+
 Lengths and projective dimensions take values in $\NN\cup\{+\infty\}$, with the zero sheaf or module assigned dimension zero.
 For an empty $X$, take the supremum in this ordered set to be zero; all assertions are then immediate.
 The hypothesis of [[P-AGH364UNIVERSALDELTA|enough locally free sheaves]] supplies finite-rank locally free epimorphisms onto every coherent sheaf.
