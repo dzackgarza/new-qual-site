@@ -231,3 +231,7 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), steps [](#s3){.pf-ref}, [
 Over a finite field with $s$ elements, each ruling has only $s+1$ $k$-rational fibres, so arbitrarily many distinct lines isomorphic over $k$ to $\PP_k^1$ cannot be chosen in that ruling.
 The split-quadric cohomology formulas hold over every field; the field-extension comparison in step [](#s1){.pf-ref} makes the disjoint-line model a valid computation of their numerical values in all cases.
 :::
+
+::: {.remark title="Published proofs"}
+Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, III.5.6, pp. 20–23, proves the exercise in the order the book sets it: the vanishing statements of (a) from the sequences $0\to\OO_Q(-p,0)\to\OO_Q\to\OO_Y\to0$ attached to ruling-line divisors together with Serre duality on $\PP^1$ and $K_Q=\OO_Q(-2,-2)$; (b)(1) from that sequence with $a,b>0$; (b)(2) from very ampleness of $\OO_Q(a,b)$ and Bertini; (b)(3) from the vanishing criterion for projective normality, with $n=b$ giving a nonzero $H^1$ when $a\ge b+2$; and (c) by Riemann–Roch on $Q$ with $c_1(N_{Y/Q})=2ab$ and $c_1(T_Q|_Y)=2(a+b)$, giving $2-2g=2(a+b)-2ab$. A. Egbert's III.5.6, pp. 173–174, and the Stein notes treat the same exercise. The computation above obtains $h^1$ from Künneth on $\PP^1\times\PP^1$ and $p_a$ from the Euler characteristic of $\OO_Y(n)$, so it uses neither Serre duality nor Chern classes; the ruling-line calculation is retained as the check in step s1.
+:::

@@ -222,3 +222,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove (a)--(c), an
 :::
 
 :::
+
+::: {.remark title="Published proofs"}
+The Saglam–Chris solutions prove (a) and (b) on pp. 137–138: (a) by the projection formula and closed direct image, (b) by the filtration of a coherent sheaf by powers of the nilradical, with the $H^1$ terms descending to zero. A. Egbert's III.5.7, p. 175, proves the forward direction of (d) by finite pushforward, and (c) by the sequence $0\to I\mcf\to\mcf\to\mcf/I\mcf\to0$ with the two outer terms supported on the two halves of the reduced scheme. For the converse of (d) that text appeals to Nakai–Moishezon and the projection formula for Chern classes, which are not available at this point of the book; the converse above is instead the descent through Chevalley's map $\beta:f_*\mcg\to\mcf^{\oplus r}$ followed by noetherian induction, using only (III.5.3) and (III.4.2).
+:::

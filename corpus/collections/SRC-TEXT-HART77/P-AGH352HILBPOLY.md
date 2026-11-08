@@ -201,3 +201,7 @@ A finitely generated graded module over $k[x_0,x_1]$ is bounded below, since fin
 The full section module in this example is therefore not finite.
 Step [](#s5){.pf-ref} provides the finite truncation needed for applying the finite-module Hilbert-polynomial theorem without changing the eventual function in (b).
 :::
+
+::: {.remark title="Published proofs"}
+Part (b) is proved in the Saglam–Chris solutions, III.5.2, p. 135: for $n\gg0$ Serre vanishing gives $\chi(\mcf(n))=\dim_kH^0(X,\mcf(n))=M_n$, and two polynomials agreeing on infinitely many integers coincide. Part (a) is proved in full in A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), III.5.2, p. 169: reduce to $X=\PP^r$ by closed direct image, pass to an infinite field by flat base change, then induct on $\dim\operatorname{Supp}\mcf$, choosing $x\in\Gamma(X,\OO(1))$ that avoids the finitely many associated primes of the module on each affine chart, so that $\mcf(-1)\xrightarrow{x}\mcf$ is injective; additivity of $\chi$ gives $\chi(\mcf(m))=\chi(\mathcal G(m))+\chi(\mcf(m-1))$ with $\dim\operatorname{Supp}\mathcal G=\dim\operatorname{Supp}\mcf-1$ by the Hauptidealsatz. Above, the same induction is run with the kernel kept rather than forced to vanish, so no associated-prime theory is needed, and the passage to an infinite field is an explicit Čech base-extension comparison rather than flat base change; the case of support dimension zero there is stated as $\chi(\mcf(n))=\chi(\mcf)$, not as $P=0$.
+:::

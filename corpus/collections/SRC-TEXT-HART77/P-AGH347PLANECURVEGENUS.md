@@ -167,3 +167,7 @@ The condition $d\ge1$ is the plane-curve range of this calculation.
 A nonzero constant equation instead defines the empty subscheme, which also avoids $[1:0:0]$ but has zero global-section group.
 Thus the stated $H^0$ formula requires the positive-degree hypothesis.
 :::
+
+::: {.remark title="Published proofs"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), III.4.7, pp. 165–166, carries the same two-chart Čech computation to the end: the complex on $D_+(x_1),D_+(x_2)$ with $(g,h)\mapsto g(xy^{-1},y^{-1})-h(x,y)$, the kernel reduced to the constants $g=h$, the cokernel cut down to the monomials $x^iy^j$ with $1\le i<d$ and $-i<j<0$, and the equality direction argued by observing that a monomial of that shape cannot lie in $(f(x,y,1))=(x^d+\tilde f(x,y,1))$ without some $i\ge d$. The Saglam–Chris solutions reach the same point on pp. 129–130 but stop at "Clearly, they are not in the image of the boundary map, by the argument" without that last step, so the completion above is Egbert's. The Wikibooks *Solutions to Hartshorne's Algebraic Geometry*, III.4.7, obtains the same two dimensions by the different route $0\to\OO(-d)\to\OO\to\OO_X\to0$ with Serre duality, a route that does not use the hypothesis on $(1,0,0)$.
+:::

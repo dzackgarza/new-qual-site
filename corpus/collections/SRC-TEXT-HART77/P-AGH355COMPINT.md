@@ -167,3 +167,7 @@ Step [](#s2){.pf-ref} proves (a) and (c), step [](#s3){.pf-ref} proves (b), and 
 :::
 
 :::
+
+::: {.remark title="Published proof"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), III.5.5, pp. 171–172, proves all four parts by induction on the codimension: write $Y=Z\cap H_d$ with $Z=H_1\cap\dots\cap H_{r-1}$, use $0\to\OO_Z(n-d)\to\OO_Z(n)\to\OO_Y(n)\to0$, and take cohomology. There (a) is deduced from the vanishing of (c), which that text proves separately and earlier in the induction, while (d) is the alternating sum with $h^0=1$ and $h^i=0$ for $0<i<q$. Above, the surjectivity of (a) and the vanishing of (c) are proved in one induction, and step s1 exhibits the regular sequence on the cone at the vertex before any $Y_j$ is used, so no step appeals to a later part of the same exercise.
+:::

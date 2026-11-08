@@ -127,3 +127,7 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove exactness of the sheaf sequenc
 :::
 
 :::
+
+::: {.remark title="Published proof"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), III.4.6, p. 165, proves it in the same two moves: exactness of $0\to\mci\to\OO_X^*\to\OO_{X_0}^*\to0$ is checked on stalks, and the conclusion is then read off the long exact sequence using (III.4.5). Steps s1 and s2 above carry out that stalk check, including the inverse $c(1-a)$ of a lifted unit $b$ across $B\to B/J$ with $J^2=0$.
+:::

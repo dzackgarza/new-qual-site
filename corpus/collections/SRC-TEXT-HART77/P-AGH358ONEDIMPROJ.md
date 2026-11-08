@@ -201,3 +201,7 @@ Step [](#s1){.pf-ref} proves (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} pr
 :::
 
 :::
+
+::: {.remark title="Published proof of parts (a)–(c)"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), III.5.8, p. 176, proves (a) from completeness and (II, 6.7), (b) from normal $\Rightarrow$ regular in codimension one together with finiteness of the normalization and a hyperplane section chosen off the finite singular locus, and the two-component case of (c) from the unit sequence $1\to\OO_X^*\to\OO_{X_1}^*\times\OO_{X_2}^*\to\OO_{X_1\cap X_2}^*\to1$ with the cohomological dimension of the skyscraper intersection equal to zero; it extends (c) to $r$ components by induction. Above, that unit sequence is obtained from the fibre-product identity $\OO_X\cong\OO_Z\times_{\OO_T}\OO_W$, which supplies its exactness including the nonreduced $T$, and (d) is proved by the nilpotent filtration through (III.4.6).
+:::

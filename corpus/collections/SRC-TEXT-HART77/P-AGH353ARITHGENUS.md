@@ -179,3 +179,7 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), step [](#s3){.pf-ref} pro
 :::
 
 :::
+
+::: {.remark title="Published proofs"}
+The Saglam–Chris solutions prove (a) on p. 135 by first noting that an integral projective scheme is a variety and quoting (I, 3.4) for $H^0=k$. Parts (b) and (c) are in A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), III.5.3, p. 170: (b) compares $(-1)^r(\chi(\OO_X)-1)$ with $(-1)^r(P_Y(0)-1)$ using that the Hilbert polynomial evaluates the Euler characteristic at every integer, which is the same comparison as step s3; (c) uses that a birational map of projective curves is defined everywhere and hence an isomorphism, then the plane-curve genus $\frac12(d-1)(d-2)>0$ for $d\ge3$ against $g(\PP^1)=0$. The nonrationality above is obtained without that genus formula, from the Čech cohomology of the plane curve together with $p_a=h^1$, so the two arguments are independent at that point.
+:::
