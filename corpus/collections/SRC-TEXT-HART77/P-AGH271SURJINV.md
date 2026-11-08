@@ -13,6 +13,20 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Read against Hartshorne II.7.1, printed page 169 (PDF page 184), the
+    retained Cais solutions, printed page 20, and the retained Saglam-Chris
+    solutions, section II.7 printed page 1 (PDF page 92). The statement and
+    stalkwise hint match. The proof was checked: surjectivity gives ba=1 in
+    each local ring, so the rank-one stalk map has an inverse; stalkwise
+    injectivity makes the local lifts agree on overlaps and sheaf gluing gives
+    the inverse on every open, including empty and zero-ring cases. No
+    mathematical defect found. The published stalk calculation is a sketch;
+    the card separately supplies the gluing argument, which is not claimed to
+    be in either published solution.
+- event: source-checked
   by: chatgpt
   date: 2026-09-17
   note: Compared the statement and stalkwise hint with the retained Hartshorne II.7.1 transcription. The proof identifies each stalk map with multiplication by a unit and glues the unique local inverse images of sections.
