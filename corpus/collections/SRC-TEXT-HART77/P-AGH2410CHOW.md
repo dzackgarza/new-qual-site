@@ -20,6 +20,22 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-17
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Repaired the proof that h is a closed immersion. The former step claimed
+    that being an immersion is local on the source, which is false (the fold
+    map from two disjoint points to one point restricts to isomorphisms on
+    both source components). The replacement follows the published proof,
+    EGA II, Théorème 5.6.1, étape D) (Grothendieck, Éléments de géométrie
+    algébrique II, Publ. Math. IHÉS 8 (1961), pp. 108-109), verified against
+    the Numdam scan: the graph of u_i : G_i -> X is closed because X is
+    separated over S, and the full inverse image h^{-1}(G_i) is a closed
+    subscheme of that graph, so h^{-1}(G_i) -> G_i is a closed immersion;
+    the G_i cover h(X'), and closed immersions are local on the target.
+    Steps s1-s11 and s14-s20 were re-read and left unchanged; the
+    scheme-theoretic image argument of steps s16-s19 is untouched.
 ---
 
 ::: {.problem}
@@ -441,23 +457,35 @@ This factor is again a closed immersion.
 
 ::: {.pf-step #s12}
 
-The restriction
+For each $i$, let
 $$
-h\restrict_{X_i'}:X_i'\longrightarrow P
+u_i:G_i\xrightarrow{\pi_i}j_i(U_i)\xrightarrow{j_i^{-1}}U_i\hookrightarrow X
 $$
-is an immersion for every $i$.
+be the composite, where $G_i\to j_i(U_i)$ is the projection $\pi_i$ restricted to its image.
+The graph
+$$
+\Gamma_{u_i}\subseteq X\times_SG_i
+$$
+is a closed subscheme, and the projection of $\Gamma_{u_i}$ onto $G_i$ is an isomorphism.
 
 ::: pf-proof
 
-By step [](#s11){.pf-ref},
+Because $X$ is proper over $S$, it is separated over $S$, so the diagonal $\Delta_{X/S}:X\to X\times_SX$ is a closed immersion.
+In the Cartesian square
 $$
-X_i'\hookrightarrow G_i
+\begin{array}{ccc}
+\Gamma_{u_i}&\longrightarrow&X\times_SG_i\\
+\downarrow&&\downarrow{\scriptstyle(x,p)\mapsto(x,u_i(p))}\\
+X&\xrightarrow{\Delta_{X/S}}&X\times_SX,
+\end{array}
 $$
-is a closed immersion, and by step [](#s9){.pf-ref},
-$$
-G_i\hookrightarrow P
-$$
-is an open immersion.  Their composition is therefore an immersion.
+the upper left corner is the graph of $u_i$:  the fibre product consists of the pairs $(x,p)$ with $x=u_i(p)$.
+Closed immersions are stable under base change, so $\Gamma_{u_i}$ is a closed subscheme of $X\times_SG_i$.
+The inverse of the projection is $p\mapsto(u_i(p),p)$, and both composites are the identity.
+
+This graph, and the use made of it in the next two steps, is step D) of the published proof of Chow's lemma in EGA II (Grothendieck, Éléments de géométrie algébrique II, Publications Mathématiques de l'IHÉS, Tome 8 (1961), Théorème 5.6.1, pp. 108–109).
+That proof constructs the same scheme-theoretic image $X'$ of the graph morphism $U\to X\times_SP$;  EGA's $g$, $W_k$, $V'_k$, $u_k$ and $T_k$ are this proof's $h$, $G_i$, $h^{-1}(G_i)$, $u_i$ and $\Gamma_{u_i}$.
+EGA works with separated $S$-schemes of finite type (in the 1961 edition of EGA a schéma is by definition separated);  here $X$ is separated over $S$ because it is proper over $S$.
 
 :::
 
@@ -465,15 +493,59 @@ is an open immersion.  Their composition is therefore an immersion.
 
 ::: {.pf-step #s13}
 
+For every $i$, the restriction of $h$ to the full inverse image,
+$$
+\boxed{h^{-1}(G_i)\longrightarrow G_i,}
+$$
+is a closed immersion.
+
+::: pf-proof
+
+The preimage of the open $G_i\subseteq P$ under the projection $Q\to P$ is the open $X\times_SG_i\subseteq Q$, and it contains $f(U)$ because $j(U)\subseteq G_i$.
+As in step [](#s11){.pf-ref}, the restriction of the scheme-theoretic image to this open is the scheme-theoretic image of the restricted morphism, so
+$$
+h^{-1}(G_i)=X'\cap(X\times_SG_i)
+$$
+is the scheme-theoretic image of $f:U\to X\times_SG_i$.
+
+For $x\in U$ the two composites
+$$
+p_1\circ f,\qquad u_i\circ p_2\circ f:U\longrightarrow X
+$$
+are equal:  both send $x$ to $x$, the second because $j_i^{-1}(\pi_i(j(x)))=x$.
+Hence $f$ factors through the closed subscheme $\Gamma_{u_i}\subseteq X\times_SG_i$.
+Minimality of the scheme-theoretic image gives a factorization
+$$
+h^{-1}(G_i)\hookrightarrow\Gamma_{u_i},
+$$
+and this factor is again a closed immersion.
+
+On $h^{-1}(G_i)$ the morphism $h$ is the second projection of $X\times_SG_i$ composed with this closed immersion.
+Composing instead with the isomorphism $\Gamma_{u_i}\cong G_i$ of step [](#s12){.pf-ref} therefore exhibits $h^{-1}(G_i)\to G_i$ as a closed immersion.
+
+:::
+
+:::
+
+::: {.pf-step #s13b}
+
 The morphism
 $$
-h:X'\to P
+\boxed{h:X'\longrightarrow P}
 $$
 is an immersion.
 
 ::: pf-proof
 
-Being an immersion is local on the source.  The open subsets $X_i'$ cover $X'$ by step [](#s8){.pf-ref}, and the restriction of $h$ to each is an immersion by step [](#s12){.pf-ref}.  Hence $h$ is an immersion.
+Put $G=G_1\cup\cdots\cup G_n$, an open subset of $P$.
+By step [](#s8){.pf-ref} the opens $X_i'$ cover $X'$, and by step [](#s11){.pf-ref} each $X_i'$ is a closed subscheme of $G_i$.
+The composite $X_i'\hookrightarrow G_i\hookrightarrow P$, the second arrow being the open immersion of step [](#s9){.pf-ref}, agrees with $h\restrict_{X_i'}$:  every map involved is one of the evident inclusions into $Q$ or projections of $Q$, and $h$ is the second projection of $Q$.
+Hence $h(X')\subseteq G$, and $h$ factors through the open immersion $G\hookrightarrow P$.
+
+The opens $G_i$ cover $G$, and by step [](#s13){.pf-ref} each restriction $h^{-1}(G_i)\to G_i$ is a closed immersion.
+Being a closed immersion is local on the target:  affine-locally it is the surjectivity of a ring homomorphism, which can be checked after localizing at finitely many elements generating the unit ideal, and the condition on underlying topological spaces is local as well.
+Hence $h:X'\to G$ is a closed immersion, and composing with the open immersion $G\hookrightarrow P$ shows that $h$ is an immersion.
+This is the target-open assembly of EGA II, Théorème 5.6.1, step D) (pp. 108–109), where the opens $W_k$ cover the image $g(X')$ in place of the whole target.
 
 :::
 
@@ -620,7 +692,7 @@ This proves Chow's lemma.
 
 ::: pf-proof
 
-In the irreducible case, steps [](#s3){.pf-ref} and [](#s4){.pf-ref} produce the finite quasi-projective cover and dense open $U$ requested in part (b). Steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref}, [](#s13){.pf-ref}, [](#s14){.pf-ref} and [](#s15){.pf-ref} construct the projective scheme $X'$ and prove part (c). Steps [](#s16){.pf-ref}, [](#s17){.pf-ref}, [](#s18){.pf-ref} and [](#s19){.pf-ref} prove part (d).
+In the irreducible case, steps [](#s3){.pf-ref} and [](#s4){.pf-ref} produce the finite quasi-projective cover and dense open $U$ requested in part (b). Steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref}, [](#s13){.pf-ref}, [](#s13b){.pf-ref}, [](#s14){.pf-ref} and [](#s15){.pf-ref} construct the projective scheme $X'$ and prove part (c). Steps [](#s16){.pf-ref}, [](#s17){.pf-ref}, [](#s18){.pf-ref} and [](#s19){.pf-ref} prove part (d).
 
 Finally step [](#s1){.pf-ref} reduces the general noetherian proper scheme to this irreducible case.  Hence there exist a projective $S$-scheme $X'$ and a morphism
 $$
