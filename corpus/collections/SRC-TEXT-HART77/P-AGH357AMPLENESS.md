@@ -152,13 +152,20 @@ Then $L$ is ample on $Y$.
 ::: pf-proof
 
 The published proof of this direction is A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, III.5.7, p. 175, and it runs as follows for $f:X\to Y$ finite surjective between integral proper schemes of the same dimension over a field.
-For an invertible sheaf $M$ on $Y$ the projection formula for a finite morphism gives $f_*f^*c_1(M)^{\dim Y}=\deg(X\to Y)\,c_1(M)^{\dim Y}$ in the Chow group of $Y$, and pushing forward to a point turns this into the intersection-number identity
+For an invertible sheaf $M$ on $Y$ the projection formula for the finite morphism $f$ gives, in the Chow group of $Y$ with $d=\dim X=\dim Y$,
+$$
+f_*\bigl(c_1(f^*M)^{d}\cap[X]\bigr)=\deg(f)\,c_1(M)^{d}\cap[Y],
+$$
+where $f_*$ exists because $f$ is finite, hence proper, and $f^*$ is applied only to the Cartier class $c_1(M)$, where $f^*c_1(M)=c_1(f^*M)$; this is the sense in which the formula is typed, since $f^*$ on homological Chow groups is not defined for a general finite map.
+Pushing forward to a point turns this into the intersection-number identity
 $$
 \int_X c_1(f^*M)^{\dim X}=\deg(X\to Y)\int_Y c_1(M)^{\dim Y},
 $$
 in which both sides are integers, so the equality is between numbers on the two spaces and not between classes.
 Now let $f^*L$ be ample and let $Z\subseteq Y$ be a closed integral subscheme. Because $f$ is finite and surjective some irreducible component $W$ of $f^{-1}(Z)$ maps onto $Z$, and $W\to Z$ is finite surjective of degree $\deg(W\to Z)$; the restriction of $f^*L$ to $W$ is ample by part (a), and the identity above with $M=L|_Z$ gives $\int_Zc_1(L)^{\dim Z}=\deg(W\to Z)^{-1}\int_Wc_1(f^*L)^{\dim W}>0$.
-The ampleness criterion applied here is Nakai–Moishezon in the form available in the book as Theorem V.1.10, which is stated for divisors on a surface, together with Kleiman's general form for a proper scheme over a field; its hypotheses are a field base, properness, and positivity of the top self-intersection on every closed integral subscheme.
+The criterion applied is the Nakai–Moishezon–Kleiman criterion, in full: for $X$ proper over a field and $L$ an invertible sheaf on $X$, $L$ is ample if and only if $\int_Yc_1(L)^{\dim Y}>0$ for every closed integral subscheme $Y\subseteq X$.
+The book proves this for divisors on a surface as Theorem V.1.10, where the statement is "$D$ is ample if and only if $D^2>0$ and $D\cdot C>0$ for all irreducible curves $C$ in $X$"; the general form in arbitrary dimension is Kleiman's (*Toward a numerical theory of ampleness*, Ann. of Math. 84 (1966)), and it is the "if" direction with positivity on every closed integral subscheme that the argument above uses.
+Its hypotheses are a field base and properness of $X$, both of which hold for the one-dimensional proper scheme over the algebraically closed field that III.5.8(d) needs.
 Those hypotheses hold for the one-dimensional proper scheme over the algebraically closed field that III.5.8(d) needs, so the published argument settles that case.
 The exercise is stated over a noetherian ring $A$ rather than a field, and the descent below is kept for that generality; the two arguments are complementary, not alternatives.
 
