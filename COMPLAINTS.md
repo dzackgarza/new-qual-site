@@ -475,3 +475,21 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 **Uncertainty.** Searched: the ten retained sets and Kim's authored source; the release PDF for each exercise head. Found: (a) and (c) only. Conclusion: no complete published solution for (b) and (d) among them. Confidence: high for these sets. Gaps: a published argument may exist outside them; it has not been located.
 
 **Repair.** A source supplying (b) and (d) checked against the book, or the owner's direction to accept the agent-authored derivation for these parts.
+
+### IV.1.8(c) — no complete published solution in the supplied collection
+
+**Object and need.** `P-AGH418ARITHGENUSSINGULAR` (Hartshorne IV, Ex. 1.8, part (c), starred): δ_P depends only on the analytic isomorphism class of the singularity, with δ_P = 1 for an ordinary cusp and for a node.
+
+**Observed evidence.** The card's own proof is complete: completion commutes with normalization for an excellent reduced 1-dimensional local ring, giving δ_P = length_Â((Â̄/Â)), and the explicit computations k[[t]]/k[[t²,t³]] ≅ k·t and (k[[x]]×k[[y]])/Â for the node. What is missing is a published proof to check it against.
+
+- A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, IV.1.8 pp. 208–209, proves only the genus formula of (a) and the nonsingularity of (b); he does not supply (c). His stated practice is to skip starred questions, and his Table of Contents carries no entry for the starred part of 1.8.
+- Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, Chapter IV Section 1, p. 1, contains only IV.1.1–IV.1.3 and passes directly to Chapter V.
+- Lomont, *Solutions to Hartshorne's Algebraic Geometry*, Chapter IV Section 1, likewise covers 1.1–1.5 only, not the starred 1.8(c).
+- Kim covers Chapters I–III only and has no Chapter IV section.
+- The other retained sets (Saglam–Chris, Cais, Sam, Cutrone–Marshburn, Borcherds, Stein) do not reach IV.1.8(c).
+
+**Impact and owner.** IV.1.1–IV.1.10 have complete published solutions in the retained sets (Park and Lomont for 1.1–1.3, Egbert elsewhere, including the singular-curve Riemann–Roch of IV.1.9). Only IV.1.8(c) lacks one. It remains an open obligation under #102, together with III.7.4(b),(d).
+
+**Uncertainty.** Searched: all ten retained solution sets plus Kim. Found: nothing for IV.1.8(c). Conclusion: no published coverage among them. Confidence: high. Gaps: a published treatment may exist outside these sets; it has not been located.
+
+**Repair.** A published proof of Hartshorne IV, Ex. 1.8(c), checked against the card's analysis.
