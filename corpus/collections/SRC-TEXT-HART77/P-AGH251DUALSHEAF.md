@@ -14,6 +14,21 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Read against Hartshorne, Algebraic Geometry (1977), Chapter II, section 5,
+    exercise 5.1, printed pages 123-124 (PDF pages 138-139 of the retained
+    book), and the retained Cais solutions, printed page 16 (PDF page 16).
+    All four parts match, including the sheaf-Hom/global-Hom distinction and
+    the finite-rank locally free hypothesis in the projection formula. The
+    proof was checked step by step: dual frames give both displayed inverses in
+    (a) and (b); currying and uncurrying are inverse on the sheaf tensor
+    product in (c); and the projection map is the identity in finite frames on
+    a cover of Y in (d). Naturality and empty/rank-zero frames are covered by
+    the formulas. No mathematical defect found; no claim is made that the
+    Cais solution covers the card's explicit frame and gluing details.
+- event: source-checked
   by: chatgpt
   date: 2026-09-17
   note: Compared the four parts with the retained MinerU transcription Hartshorne_Solutions_extracted.md, section 2.5, solution 5.1(a)-(d). Restored the missing dual-tensor identity and the quantifier for G, and distinguished global Hom from sheaf Hom.
