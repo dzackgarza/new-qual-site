@@ -14,6 +14,22 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-08
+  note: >-
+    Read against Hartshorne II.7.2, printed page 169 (PDF page 184), and the
+    retained Saglam-Chris solutions, section II.7 printed page 1 (PDF page
+    92). The two generating lists, common span V, n<=m and center dimension
+    m-n-1 all match. The proof was checked without assuming either list is
+    independent: complementary summands give an injective J with TJ=S; its
+    matrix has full row rank and its kernel projectivizes to the stated
+    center; and the equality of coordinate ratios on the cover X_{s_i} proves
+    phi=p_A psi as scheme morphisms. The m=n and empty-source cases are
+    included. The published footnote supplies a special matrix construction,
+    while its main displayed composition interchanges the morphism names;
+    the card's factorization was therefore verified independently. No
+    mathematical defect found in the card.
+- event: source-checked
   by: chatgpt
   date: 2026-09-17
   note: Compared the statement with the retained Hartshorne II.7.2 transcription. The proof keeps both possibly dependent generating lists, constructs a full-row-rank coefficient matrix, and checks equality on affine coordinate ratios rather than only on points.
