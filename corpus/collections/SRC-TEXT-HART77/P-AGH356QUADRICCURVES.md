@@ -134,7 +134,7 @@ For $p,q>0$ twist the same divisor sequence by $\OO_Q(p,q)$: the long exact sequ
 $$
 H^1(Q,\OO_Q(0,q))\longrightarrow H^1(Q,\OO_Q(p,q))\longrightarrow\bigoplus_p H^1(\PP^1,\OO_{\PP^1}(q)),
 $$
-the left term vanishes by the previous paragraph and the right one by $h^1(\PP^1,\OO(q))=0$ for $q\ge-1$ [@Har77, Theorem III.5.1], so induction on $p$ gives $H^1(Q,\OO_Q(p,q))=0$ for all $p,q\ge0$; that is the case $a,b\ge0$ of (a)(i) and it uses no duality.
+the left term vanishes by the previous paragraph and the right one by $h^1(\PP^1,\OO(q))=0$ for $q\ge-1$ [@Har77, Theorem III.5.1], so $H^1(Q,\OO_Q(p,q))=0$ for every pair with $p,q\ge0$ at once, with no induction; that is the case $a,b\ge0$ of (a)(i) and it uses no duality.
 For the remaining pairs with $|a-b|\le1$ the published text pairs this with Serre duality on $Q$ and $K_Q=\OO_Q(-2,-2)$ (III.7, and the canonical bundle of (V, 1.4.4)), neither of which is available in this section; the closed formula of step [](#s1){.pf-ref} covers those pairs instead, so no later theorem is imported.
 The case $a\le-2$ of (a)(iii) is the ruling-line computation already carried out in step [](#s1){.pf-ref}, where $h^1=-a-1$.
 :::

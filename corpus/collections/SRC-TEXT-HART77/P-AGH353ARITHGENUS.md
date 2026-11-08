@@ -164,7 +164,9 @@ In particular the curve is connected, since a nontrivial open-and-closed decompo
 Its regular local rings are domains [@Har77, Remark II.6.11.1A], so its irreducible components are disjoint and reduced; connectedness therefore makes it integral.
 Step [](#s2){.pf-ref} identifies its arithmetic genus with this positive $h^1$.
 
-The published argument reaches nonrationality by a different last step, and that step is not imported here: A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, III.5.3, p. 170, concludes from the plane-curve genus $g=\tfrac12(d-1)(d-2)>0$ for $d\ge3$, which is (II, 8.20.3) and was itself proved from the geometric genus; quoting it would reprove nothing, since the point of the exercise is to obtain this conclusion from the arithmetic genus. The computation above supplies $h^1>0$ directly, by the Čech complex of the plane curve in [[P-AGH347PLANECURVEGENUS]].
+The birational step of step [](#s4){.pf-ref} is the published one: A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, III.5.3, p. 170, extends a birational map of projective curves to a morphism by the valuative criterion and concludes that such a map is an isomorphism, so $p_a$ is a birational invariant, exactly as above.
+For the last sentence of (c) that text quotes the plane-curve genus $g=\tfrac12(d-1)(d-2)>0$ for $d\ge3$, that is (II, 8.20.3); the printed exercise asks for something else there, saying "(This gives another proof of (II, 8.20.3) where we used the geometric genus.)", so its instruction is to reach nonrationality from the arithmetic genus without quoting that formula.
+The computation above follows that instruction, giving $h^1>0$ from the Čech complex of the plane curve in [[P-AGH347PLANECURVEGENUS]]; the genus formula is the published argument's last step and is not used here, on the exercise's own instruction.
 On the other hand, $h^1(\PP_k^1,\OO)=0$ by [[P-AGH322FLASQUERESPONE]], so $p_a(\PP_k^1)=0$.
 If $C$ were rational, it would be birational to $\PP_k^1$, contradicting step [](#s4){.pf-ref}.
 

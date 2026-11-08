@@ -151,9 +151,16 @@ Then $L$ is ample on $Y$.
 
 ::: pf-proof
 
-The published route to this direction is A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, III.5.7, p. 175: from ampleness of $f^*L$ it concludes ampleness of $L$ by the Nakai–Moishezon criterion, applied to $c_1(f^*L)=\deg(W\to V)\,c_1(L)$ through the projection formula for Chern classes.
-Both tools lie outside this section of the book, so that argument is not imported here; what is carried over is its shape, the reduction of an arbitrary coherent sheaf on $Y$ to data living on $X$, carried out below through Chevalley's map instead of through Chern classes.
-The forward direction of (d) above is the same as the published one, by finite pushforward and the projection formula for an invertible sheaf.
+The published proof of this direction is A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, III.5.7, p. 175, and it runs as follows for $f:X\to Y$ finite surjective between integral proper schemes of the same dimension over a field.
+For an invertible sheaf $M$ on $Y$ the projection formula for a finite morphism gives $f_*f^*c_1(M)^{\dim Y}=\deg(X\to Y)\,c_1(M)^{\dim Y}$ in the Chow group of $Y$, and pushing forward to a point turns this into the intersection-number identity
+$$
+\int_X c_1(f^*M)^{\dim X}=\deg(X\to Y)\int_Y c_1(M)^{\dim Y},
+$$
+in which both sides are integers, so the equality is between numbers on the two spaces and not between classes.
+Now let $f^*L$ be ample and let $Z\subseteq Y$ be a closed integral subscheme. Because $f$ is finite and surjective some irreducible component $W$ of $f^{-1}(Z)$ maps onto $Z$, and $W\to Z$ is finite surjective of degree $\deg(W\to Z)$; the restriction of $f^*L$ to $W$ is ample by part (a), and the identity above with $M=L|_Z$ gives $\int_Zc_1(L)^{\dim Z}=\deg(W\to Z)^{-1}\int_Wc_1(f^*L)^{\dim W}>0$.
+The ampleness criterion applied here is Nakai–Moishezon in the form available in the book as Theorem V.1.10, which is stated for divisors on a surface, together with Kleiman's general form for a proper scheme over a field; its hypotheses are a field base, properness, and positivity of the top self-intersection on every closed integral subscheme.
+Those hypotheses hold for the one-dimensional proper scheme over the algebraically closed field that III.5.8(d) needs, so the published argument settles that case.
+The exercise is stated over a noetherian ring $A$ rather than a field, and the descent below is kept for that generality; the two arguments are complementary, not alternatives.
 
 For a coherent $F$ on $Y$, the generic comparison constructed in [[P-AGH342CHEVALLEY]], parts (a) and (b), gives a coherent $G$ on $X$ and a map
 $$
