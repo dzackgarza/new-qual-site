@@ -131,9 +131,18 @@ Dividing the last expression by $g_{12}=v/u$ gives $\eta/(uv)$, proving the clai
 The construction used here is the published one: MathOverflow answer `/a/96274` to question 96177 reproduces McKernan's argument, namely local triviality of the extension on each $U_{ij}$, the derivation $D_{ij}(a)=da\wedge\xi_{ij}$, the lift of the transition unit, and the multiplicative defect read in $\check{C}^2(U,\omega)$.
 Two features of that text were checked here rather than taken on trust.
 Its lift is labelled $\beta=(\beta_2,\beta_0,\beta_1)$ against $\alpha=(x_1/x_0,x_2/x_1,x_0/x_2)$ on $U_{01},U_{12},U_{20}$, and its nilpotent term carries $\eta_{12}$ on the chart written for $\beta_0$; that is a relabelling and not an error, since its index satisfies $\beta_k\leftrightarrow\alpha_{k+1,k+2}$ cyclically, so $\beta_0$ is the lift of the $(1,2)$ transition and $\eta_{12}$ is the generator of $\omega$ on exactly that chart.
-Its displayed coefficient $(x_0/x_1)d(x_2/x_0)\wedge d(x_1/x_0)$ equals $-\eta/u$, while the defect computed above is $\eta/(uv)$; the two differ by the unit $-x_2/x_0$, so the printed coefficient needs the further factor $x_0/x_2$.
-That the printed expression really is not the class can be seen without conventions: in the standard frame $\eta\mapsto x_0^{-3}$ it is the degree-$(-3)$ monomial $-x_0^{-2}x_1^{-1}$, whose $x_2$-exponent is nonnegative, so it lies in the image of $\check{C}^1(U,\omega)$ and is a coboundary, whereas the class is nonzero.
-With that one correction the published construction proves the claim, and it agrees with the computation in this step.
+Its final two-cochain is the product of the three lifted units, not the lift of a single one:
+$$
+\frac{x_1}{x_0}\Bigl(\frac{x_2}{x_1}+\eta_{12}\frac{x_0}{x_1}d\Bigl(\frac{x_2}{x_0}\Bigr)\wedge d\Bigl(\frac{x_1}{x_0}\Bigr)\Bigr)\frac{x_0}{x_2}
+=1+\eta_{12}\frac{x_0}{x_2}d\Bigl(\frac{x_2}{x_0}\Bigr)\wedge d\Bigl(\frac{x_1}{x_0}\Bigr),
+$$
+so the class it records is $\frac{x_0}{x_2}d(\frac{x_2}{x_0})\wedge d(\frac{x_1}{x_0})$, which in the notation of this step is $-\eta/v$, whereas the connecting cocycle computed above is $+\eta/(uv)$.
+The ratio of the answer's final expression to the cocycle above is the unit $-u=-x_1/x_0$; the factor $x_0/x_2$ is visible only in the intermediate additive term of the lift, and dropping the surrounding multiplications by $x_1/x_0$ and $x_0/x_2$ is what makes an apparent $x_0/x_2$ discrepancy.
+The inner term $(x_0/x_1)d(x_2/x_0)\wedge d(x_1/x_0)$ is $-\eta/u$ as a section of $\omega$, with its minus sign, and it is not the cocycle.
+That the answer's final expression is not the class is visible without choosing frames: $-\eta/v$ extends over $U_{02}=D_+(x_0x_2)$, where $v=x_2/x_0$ is invertible, so it lies in the image of $\check{C}^1(U,\omega)$ and is a coboundary, while $\eta/(uv)$ needs both $u$ and $v$ inverted, is in no one of $\omega(U_{01})$, $\omega(U_{02})$, $\omega(U_{12})$, and represents the nonzero class.
+Nor does reading $\eta_{12}$ as the generator of $\omega$ on $U_{12}$ repair the display, since the form it multiplies is written in the coordinates of $U_0$; no single identification of the formal generator with a local frame turns that product into the connecting class.
+What the answer supplies, and what is cited here, is the construction: local triviality of the extension on each $U_{ij}$, the derivation $D_{ij}(a)=da\wedge\xi_{ij}$ attached to $\xi$, the lift of the transition units, and the defect taken in $\check{C}^2(U,\omega)$.
+Its last coefficient is not correct as printed, and the correct coefficient is the one computed in this step.
 
 The defect of a general triple needs no separate treatment here: the cover has the single triple $U_{012}$, and $\OO_{X'}$ is a sheaf, so the product $g_{ij}g_{jh}g_{ih}^{-1}$ of the chosen lifts is computed in the global sections and the three ways of writing it — in the splitting of chart $0$, $1$ or $2$ — agree, the computation above using chart $0$.
 In invariant form that entry is $d\log g_{jh}\wedge\xi_{ij}$, the cup product of the transition cocycle of $\OO(1)$ with the extension cocycle $\xi$, which is why it is a cocycle at all: it is the image of a cocycle under the connecting map of the exponential sequence, and its nonvanishing is the nonvanishing of $c_1(\OO(1))^2$.
