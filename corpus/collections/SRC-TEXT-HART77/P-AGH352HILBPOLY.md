@@ -95,6 +95,12 @@ Use the projective embedding for $L$ to choose a hyperplane not containing any i
 Such a hyperplane exists over an infinite field: the linear forms vanishing on a fixed component constitute a proper linear subspace, and a finite-dimensional vector space over an infinite field is not a finite union of proper linear subspaces.
 For the latter assertion, choose a nonzero linear functional vanishing on each proper subspace; their product is a nonzero polynomial, and a nonzero polynomial over an infinite field does not vanish at every vector, by induction on the number of variables.
 
+Sharpen the choice along the published line (A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, III.5.2, p. 169): take a finite affine cover $\Spec A_\alpha$ of $X$, let $M_\alpha$ be the finitely generated module of $\mcf$ there, and let $h$ avoid every associated prime of every $M_\alpha$ as well as every component of the support.
+The linear forms lying in some associated prime again form a finite union of proper linear subspaces, so such an $h$ exists over an infinite field by the argument just given.
+Avoiding the associated primes is what makes $h$ a nonzerodivisor on $\mcf$, and then Krull's Hauptidealsatz [@Har77, Theorem I.1.11A] gives $\dim(\operatorname{Supp}\mcf\cap V(h))=\dim\operatorname{Supp}\mcf-1$; the theorem needs exactly the nonzerodivisor hypothesis that this choice supplies.
+With such an $h$ the kernel $\mathcal R$ is zero and the cokernel $\mathcal Q=\mcf/h\mcf(-1)$ has support of dimension $d-1$.
+The induction below is written for the weaker choice that only misses the components of $\operatorname{Supp}\mcf$, for which both $\mathcal R$ and $\mathcal Q$ merely have support of dimension at most $d-1$; that is all the difference argument needs.
+
 Let $h$ be the resulting section of $L$ and use multiplication by $h$ to form
 $$
 0\longrightarrow\mathcal R\longrightarrow\mcf(-1)

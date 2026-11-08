@@ -151,6 +151,10 @@ Then $L$ is ample on $Y$.
 
 ::: pf-proof
 
+The published route to this direction is A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, III.5.7, p. 175: from ampleness of $f^*L$ it concludes ampleness of $L$ by the Nakai–Moishezon criterion, applied to $c_1(f^*L)=\deg(W\to V)\,c_1(L)$ through the projection formula for Chern classes.
+Both tools lie outside this section of the book, so that argument is not imported here; what is carried over is its shape, the reduction of an arbitrary coherent sheaf on $Y$ to data living on $X$, carried out below through Chevalley's map instead of through Chern classes.
+The forward direction of (d) above is the same as the published one, by finite pushforward and the projection formula for an invertible sheaf.
+
 For a coherent $F$ on $Y$, the generic comparison constructed in [[P-AGH342CHEVALLEY]], parts (a) and (b), gives a coherent $G$ on $X$ and a map
 $$
 \beta:f_*G\longrightarrow F^{\oplus r},\qquad r=[K(X):K(Y)]>0,

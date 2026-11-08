@@ -122,6 +122,21 @@ This follows because $w(t)>0$ exactly for $t\le-2$ and $v(t)>0$ exactly for $t\g
 Such indices differ by at least two, proving (a)(i).
 When both indices are negative, both $v$ terms vanish, proving (a)(ii).
 For $a\le-2$ and $b=0$, the formula is $h^1=-a-1>0$, proving (a)(iii).
+
+The published derivation of the same vanishings from ruling-line divisors is Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, III.5.6, pp. 20–21, and it is recorded here; where that text appeals to Serre duality on $\PP^1$, (III.5.1) gives the numbers directly, so no result later than this section enters.
+For $p>0$ let $D$ be the union of $p$ fibres of the first ruling, so that $0\to\OO_Q(-p,0)\to\OO_Q\to\OO_D\to0$ and $\OO_D(p,0)=\bigoplus_p\OO_{\PP^1}$.
+Twisting by $\OO_Q(p,0)$ and taking cohomology,
+$$
+0=H^1(Q,\OO_Q)\longrightarrow H^1(Q,\OO_Q(p,0))\longrightarrow\bigoplus_p H^1(\PP^1,\OO_{\PP^1})=0,
+$$
+so $H^1(Q,\OO_Q(p,0))=0$, and symmetrically $H^1(Q,\OO_Q(0,q))=0$ for $q>0$.
+For $p,q>0$ twist the same divisor sequence by $\OO_Q(p,q)$: the long exact sequence gives
+$$
+H^1(Q,\OO_Q(0,q))\longrightarrow H^1(Q,\OO_Q(p,q))\longrightarrow\bigoplus_p H^1(\PP^1,\OO_{\PP^1}(q)),
+$$
+the left term vanishes by the previous paragraph and the right one by $h^1(\PP^1,\OO(q))=0$ for $q\ge-1$ [@Har77, Theorem III.5.1], so induction on $p$ gives $H^1(Q,\OO_Q(p,q))=0$ for all $p,q\ge0$; that is the case $a,b\ge0$ of (a)(i) and it uses no duality.
+For the remaining pairs with $|a-b|\le1$ the published text pairs this with Serre duality on $Q$ and $K_Q=\OO_Q(-2,-2)$ (III.7, and the canonical bundle of (V, 1.4.4)), neither of which is available in this section; the closed formula of step [](#s1){.pf-ref} covers those pairs instead, so no later theorem is imported.
+The case $a\le-2$ of (a)(iii) is the ruling-line computation already carried out in step [](#s1){.pf-ref}, where $h^1=-a-1$.
 :::
 
 :::

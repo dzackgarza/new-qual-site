@@ -163,6 +163,8 @@ $$
 In particular the curve is connected, since a nontrivial open-and-closed decomposition would give a nontrivial idempotent global function.
 Its regular local rings are domains [@Har77, Remark II.6.11.1A], so its irreducible components are disjoint and reduced; connectedness therefore makes it integral.
 Step [](#s2){.pf-ref} identifies its arithmetic genus with this positive $h^1$.
+
+The published argument reaches nonrationality by a different last step, and that step is not imported here: A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, III.5.3, p. 170, concludes from the plane-curve genus $g=\tfrac12(d-1)(d-2)>0$ for $d\ge3$, which is (II, 8.20.3) and was itself proved from the geometric genus; quoting it would reprove nothing, since the point of the exercise is to obtain this conclusion from the arithmetic genus. The computation above supplies $h^1>0$ directly, by the Čech complex of the plane curve in [[P-AGH347PLANECURVEGENUS]].
 On the other hand, $h^1(\PP_k^1,\OO)=0$ by [[P-AGH322FLASQUERESPONE]], so $p_a(\PP_k^1)=0$.
 If $C$ were rational, it would be birational to $\PP_k^1$, contradicting step [](#s4){.pf-ref}.
 
