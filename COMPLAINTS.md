@@ -521,3 +521,19 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 **Uncertainty.** Searched: Egbert, Park, Lomont, Saglam–Chris, Cais, Sam, Cutrone–Marshburn, Borcherds, Stein, Kim (Chapters I–III only). Found: the Shafarevich citation, and Egbert's full treatment of (b). Conclusion: no complete published proof of (a) among them. Confidence: high. Gaps: Shafarevich's Theorem 9 itself was not consulted; it is a reference in another book, not an exercise solution.
 
 **Repair.** A complete published solution of IV.3.11(a), or the owner's direction to accept the card's derivation for that part.
+
+### Chapter V: four exercises whose Egbert entry is a citation or a stub
+
+**Object and need.** Cards of V.4 and V.5 whose cited published solution does not contain a complete argument: V.4.3 ordinary singularities, V.4.4(b) the group law, V.4.8 (starred) irreducible classes, V.5.8(c) the eight-blow-up resolution.
+
+**Observed evidence.** A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013):
+- V.4.3, printed **p. 286**, is the whole entry "See Algebraic Curves over Finite Fields by Hirschfeld, Theorem 3.27" — a citation in another book, not an exercise solution.
+- V.4.4, printed **pp. 286–287**: part (a) is argued through Cayley–Bacharach, but the entry `5.4.5 b.` for the group law is "See Tate, Silverman: Rational Points. It's in the first chapter" — again a citation.
+- V.4.8, printed **p. 290**: the entry consists of the two bullets "Existence" and nothing further, so the starred exercise has no written argument there.
+- V.5.8, printed **p. 300**: entries for parts (a) and (b) only. The printed part about resolving the singularity by eight successive blowings-up with the stated dual graph has no entry.
+
+**Impact and owner.** Our cards carry their own complete proofs of all four (V.4.3 by repeated quadratic transformation creating only ordinary singularities; V.4.4 by Cayley–Bacharach with the reduced, multiplicity and specialization cases separated; V.4.8 by the blow-up model; V.5.8(c) by the eight blowings-up). Those derivations are not published solutions, so the published-solution obligation stays open under #116 for these four, and no card's proof is being represented as a transcription of Egbert.
+
+**Uncertainty.** Searched: all ten retained sets (Park and Lomont stop at IV.1; Saglam–Chris, Cais, Sam, Cutrone–Marshburn, Borcherds, Stein contain no Chapter V exercise; Kim stops at Chapter III) and Egbert's pages above. Found: the citations and the stub. Conclusion: no complete published solution for these four among the retained sets. Confidence: high for these sets. Gaps: Hirschfeld Theorem 3.27 and Silverman–Tate were not consulted; they are references in other books, not exercise solutions.
+
+**Repair.** A complete published solution of each, or the owner's direction to accept the card's derivation.
