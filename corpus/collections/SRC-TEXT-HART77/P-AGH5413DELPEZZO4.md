@@ -158,7 +158,51 @@ so they are distinct. Hence $X$ contains
 $$
 \boxed{5+10+1=16}
 $$
-lines. This proves part (a).
+lines, and by step [](#no-other-lines){.pf-ref} no further one. This proves part (a).
+:::
+
+:::
+
+::: {.pf-step #no-other-lines}
+Every line of $X$ is one of the $16$ listed in step [](#sixteen-lines-total){.pf-ref}.
+
+::: pf-proof
+A line $C\subseteq X$ satisfies $H\cdot C=1$ and $p_a(C)=0$, so adjunction
+with $K_X=-H$ gives
+$$
+-2=C\cdot(C+K_X)=C^2-H\cdot C=C^2-1,
+\qquad\text{hence}\qquad
+C^2=-1 .
+$$
+Write $C\sim aL-\sum_ib_ie_i$. If $C$ is one of the exceptional curves then
+$C\sim E_i$. Otherwise $C$ is the strict transform of an irreducible plane
+curve of degree $a>0$ with multiplicity $b_i\ge0$ at $P_i$, so
+$$
+3a-\sum_i b_i=H\cdot C=1,
+\qquad
+a^2-\sum_i b_i^2=C^2=-1 .
+$$
+Cauchy--Schwarz for the five numbers $b_1,\ldots,b_5$ gives
+$$
+(3a-1)^2=\Bigl(\sum_i b_i\Bigr)^2\le5\sum_i b_i^2=5(a^2+1),
+$$
+that is $4a^2-6a-4\le0$, so $a\in\{1,2\}$ because $a>0$ is an integer.
+
+If $a=1$, then $\sum b_i=2$ and $\sum b_i^2=2$, so exactly two of the $b_i$
+equal $1$ and the rest vanish; then $C\sim L-E_i-E_j=L_{ij}$.
+
+If $a=2$, then $\sum b_i=5$ and $\sum b_i^2=5$, whence
+$$
+\sum_i b_i(b_i-1)=\sum_i b_i^2-\sum_i b_i=0 .
+$$
+Each $b_i\ge0$ is an integer, so $b_i(b_i-1)\ge0$ with equality only for
+$b_i\in\{0,1\}$; thus all five multiplicities equal $1$ and
+$C\sim 2L-\sum_ie_i=\widetilde Q$.
+
+Finally, two distinct irreducible curves never have equal class on a smooth
+surface, because their intersection number would then be the negative number
+$C^2=-1$. So each of these $16$ classes carries exactly one line, and there
+are no others.
 :::
 
 :::
@@ -287,12 +331,12 @@ $\PP^4$, proving part (b).
 :::
 
 ::: pf-qed
-Step [](#sixteen-lines-total){.pf-ref} proves part (a), and steps [](#h0-two-h-thirteen){.pf-ref}, [](#two-quadrics-contain-x){.pf-ref}, [](#quadrics-no-common-component){.pf-ref} and [](#x-is-complete-intersection){.pf-ref} prove part (b).
+Steps [](#sixteen-lines-total){.pf-ref} and [](#no-other-lines){.pf-ref} prove part (a), and steps [](#h0-two-h-thirteen){.pf-ref}, [](#two-quadrics-contain-x){.pf-ref}, [](#quadrics-no-common-component){.pf-ref} and [](#x-is-complete-intersection){.pf-ref} prove part (b).
 :::
 
 :::
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.13, printed p. 292 ("16 lines": the lines meeting four given lines, and the count).
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.13, printed pp. 292--293 (part (a) at p. 292: the blowup intersection table, the 16 listed classes, and the Schwarz count $4a^2-6a-4\le0$; part (b) at p. 293: $h^0(\OO_X(2H))=13$ against $h^0(\OO_{\PP^4}(2))=15$).
 :::

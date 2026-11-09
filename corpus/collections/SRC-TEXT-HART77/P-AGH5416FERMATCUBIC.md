@@ -582,34 +582,37 @@ $$
 \boxed{
 \Aut(S)
 \cong
-U_4(2)/\mu_3,
+GU_4(2)/\FF_4^\times
+=
+PGU_4(2),
 }
 $$
 where
 $$
-U_4(2)
+GU_4(2)
 =
-\{A\in\GL_4(\FF_4):A^{(2)T}A=I\}.
+\{A\in\GL_4(\FF_4):A^{(2)T}A=I\}
 $$
+is the general unitary group of the Hermitian form $v^{(2)T}w$, and where the
+quotient is the simple group of order $25920$ usually written $U_4(2)$.
 Moreover
 $$
 \boxed{\cardinality{\Aut(S)}=25920.}
 $$
 
 ::: pf-proof
-Step [](#char-two-unitary-condition){.pf-ref} identifies the normalized linear stabilizer of $F$ with the
-finite unitary group $U_4(2)$. Two normalized matrices define the same
-projective transformation exactly when they differ by a scalar
+Step [](#char-two-unitary-condition){.pf-ref} identifies the normalized linear stabilizer of $F$ with
+$GU_4(2)$. Two normalized matrices define the same projective transformation
+exactly when they differ by a scalar
 $$
-\lambda I
+\lambda I,
 $$
-with
-$$
-\lambda^3=1.
-$$
-These form the central subgroup $\mu_3$, proving the group identification.
+and both are normalized exactly when $\lambda^3=1$, that is, when
+$\lambda\in\FF_4^\times$. These scalars form a central subgroup of order $3$,
+which proves the group identification. Here $\gcd(4,3)=1$, so this quotient is
+also $PSU_4(2)=U_4(2)$.
 
-It remains to count $U_4(2)$. For the standard Hermitian form
+It remains to count $GU_4(2)$. For the standard Hermitian form
 $$
 \langle v,w\rangle=v^{(2)T}w
 $$
@@ -629,10 +632,10 @@ N_4&=\binom41 3+\binom43 3^3=120.
 \end{aligned}
 $$
 
-Hermitian Gram--Schmidt shows that $U_n(2)$ acts transitively on unit
-vectors, with stabilizer $U_{n-1}(2)$ on the orthogonal complement. Hence
+Hermitian Gram--Schmidt shows that $GU_n(2)$ acts transitively on unit
+vectors, with stabilizer $GU_{n-1}(2)$ on the orthogonal complement. Hence
 $$
-\cardinality{U_4(2)}
+\cardinality{GU_4(2)}
 =
 N_4N_3N_2N_1
 =

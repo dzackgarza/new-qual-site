@@ -22,8 +22,10 @@ audit:
     lemma. A positive-genus smooth curve is in case (c) of V.4.8. Contracting
     any line of intersection zero preserves its degree, self-intersection,
     and genus. If one stops on X_r with r>=3 and all line intersections
-    positive, writing D=-K+N with N globally generated gives the stronger
-    estimate D^2>=2d-6. If the contraction reaches
+    positive, writing N=D+K shows N is effective by Riemann-Roch with
+    chi(N)=g>0, and that N is nef because a component C of N with N.C<0
+    would satisfy C^2=-1 and C.A=1 by adjunction, contradicting line
+    positivity; hence N^2>=0 and D^2>=2d-6. If the contraction reaches
     X_2=Bl_{P_1,P_2} P^2, write
     D=c h+b_1(h-e_1)+b_2(h-e_2); then d=3c+2(b_1+b_2) and adjunction gives an
     explicit genus formula. Its parity cases yield the stated lower bounds,
@@ -144,15 +146,27 @@ $$
 for every $(-1)$-curve $E$.
 
 ::: pf-proof
-Each contraction lowers the Picard number by one, so after at most four
-contractions either the degree-seven del Pezzo $X_2$ is reached or there is
-no line of intersection zero. The preceding step shows that the numerical
-quantities $d,D^2,g$ are unchanged throughout.
+Each contraction lowers the Picard number by one, so the process stops after
+finitely many steps, on some $X_s$ with $0\le s\le6$. If $s\le2$, then $X_2$
+occurs among the surfaces $X_6,X_5,\ldots,X_s$ of the process; if $s\ge3$ the
+process stops on some $X_r$ with $r\ge3$. So exactly one of the two
+alternatives of the step holds. Step
+[](#contraction-preserves-invariants){.pf-ref} shows that $d,D^2,g$ are unchanged
+throughout.
 
-The argument in V.4.8 also shows that after each contraction the descended
-class remains nonnegative on every $(-1)$-curve of the new del Pezzo
-surface. Hence, if the process stops before $X_2$, all these intersections
-are positive integers.
+It remains to check that the descended class keeps nonnegative intersection
+with every line. Let $\sigma:X_r\to X_{r-1}$ contract the zero-intersection
+line $E$, let $D=\sigma^*D'$, let $F'\subseteq X_{r-1}$ be a line and let
+$F\subseteq X_r$ be its strict transform. Then
+$$\sigma^*F'=F+mE$$
+where $m\ge0$ is the multiplicity of $F'$ at the contracted point, hence
+$$D'\cdot F'=\sigma^*D'\cdot\sigma^*F'=D\cdot F+m\,(D\cdot E)=D\cdot F,$$
+because $D\cdot E=0$. So the intersection numbers of the descended class with
+the lines of the new surface are the same as those of $D$ with the
+corresponding strict transforms. Since $D\cdot L\ge0$ for all $27$ lines of
+$X_6$ by step [](#case-c-applies){.pf-ref}, induction gives $D\cdot L\ge0$ for
+every line $L$ of the surface on which the process stops. There no line has
+intersection zero, so all these intersections are positive.
 :::
 
 :::
@@ -168,21 +182,65 @@ Put
 $$
 A=-K_{X_r},
 \qquad
-A^2=9-r\le6.
+A^2=9-r\le6,
+\qquad
+N=D-A=D+K_{X_r}.
 $$
-All intersections $D\cdot E$ with $(-1)$-curves are positive, so
+Step [](#contraction-preserves-invariants){.pf-ref} identifies $A$ with the pullback of the
+hyperplane class of the cubic surface, so $d=A\cdot D$ and $A\cdot N=d-A^2$.
+
+*$N$ is effective.* Since $A$ is ample on $X_r$ and $d=A\cdot D>0$, no
+effective divisor is linearly equivalent to $-D$, so
 $$
-N=D-A
+h^2\bigl(X_r,\OO_{X_r}(N)\bigr)
+=
+h^0\bigl(X_r,\OO_{X_r}(K_{X_r}-N)\bigr)
+=
+h^0\bigl(X_r,\OO_{X_r}(-D)\bigr)
+=
+0 .
 $$
-is nonnegative on every $(-1)$-curve. By the global-generation lemma proved
-in [[P-AGH548IRREDCLASSES]], $N$ is globally generated. In particular it is
-nef, so
+The surface $X_r$ is rational, so Riemann--Roch gives
 $$
-N^2\ge0.
+\chi\bigl(\OO_{X_r}(N)\bigr)
+=
+1+\frac{N\cdot(N-K_{X_r})}{2}
+=
+1+\frac{N\cdot D}{2}
+=
+1+\frac{D^2-d}{2}
+=
+g>0,
 $$
-Indeed, if $N\not\sim0$, choose two general effective members of $\linearsystem{N}$ with
-no common irreducible component; their intersection number is $N^2\ge0$.
-If $N\sim0$, the same inequality is immediate.
+hence $h^0(N)\ge\chi(N)-h^2(N)=g>0$: the class $N$ is effective.
+
+*$N$ is nef.* Let $C\subseteq X_r$ be an irreducible curve with
+$N\cdot C<0$. Since $N$ is effective and $C$ is irreducible, $C$ is then a
+component of $N$: a curve outside $\operatorname{Supp}N$ meets every
+component of $N$ nonnegatively, hence meets $N$ nonnegatively. Writing
+$N=aC+N'$ with $a\ge1$ and $N'$ effective and supported away from $C$, we get
+$N\cdot C=aC^2+N'\cdot C$ with $N'\cdot C\ge0$, hence $C^2<0$. Adjunction and
+ampleness of $A$ give
+$$
+2p_a(C)-2=C^2+C\cdot K_{X_r}=C^2-C\cdot A\ge-2,
+\qquad
+C\cdot A\ge1,
+$$
+so $C^2\ge C\cdot A-2\ge-1$, and $C^2<0$ forces $C^2=-1$ and $C\cdot A=1$.
+Then $p_a(C)=1+\frac12(C^2-C\cdot A)=0$, so $C$ is a $(-1)$-curve, and
+$$
+N\cdot C=D\cdot C-A\cdot C=D\cdot C-1\ge0
+$$
+by the positivity proved in step [](#repeat-contraction-until-x2-or-positive){.pf-ref},
+contradicting $N\cdot C<0$. Hence $N\cdot C\ge0$ for every irreducible curve
+$C$, that is, $N$ is nef.
+
+*A nef class has nonnegative self-intersection.* For an ample class $L$ and
+$\epsilon>0$ the class $N+\epsilon L$ is ample while $N\cdot L\ge0$, so
+$$
+0<(N+\epsilon L)^2=N^2+2\epsilon\,N\cdot L+\epsilon^2L^2
+$$
+for every $\epsilon>0$; letting $\epsilon\to0$ gives $N^2\ge0$.
 
 Since
 $$
@@ -247,7 +305,7 @@ with
 $$
 c,b_1,b_2\ge0,
 $$
-as in V.4.8. Put
+Put
 $$
 s=b_1+b_2,
 \qquad
@@ -262,6 +320,11 @@ D^2=c^2+2cs+2p.}
 $$
 
 ::: pf-proof
+On $X_2$ the classes $h$, $h-e_1$, $h-e_2$ form a basis of $\Pic X_2$, and
+$$c=D\cdot(h-e_1-e_2)=D\cdot F_{12},\qquad b_i=D\cdot E_i$$
+for $i=1,2$, so $c,b_1,b_2\ge0$ because $D$ meets every line nonnegatively
+(step [](#repeat-contraction-until-x2-or-positive){.pf-ref}).
+
 The anticanonical class of $X_2$ is
 $$
 A_2=3h-e_1-e_2.
@@ -691,12 +754,17 @@ irreducible and can be chosen to avoid the four contraction points of
 step [](#contraction-pullback-preserves-invariants){.pf-ref}. Its pullback to $S$ attains the even minimum.
 
 ::: pf-proof
-The class $M_{\mathrm{ev}}$ is nonnegative on the three $(-1)$-curves of
-$X_2$ and has positive square. By the lemma of V.4.8, a general member is
-nonsingular and irreducible. The same lemma makes the system globally
-generated, so requiring a member to pass through any one prescribed point is
-a proper hyperplane condition. Hence a general smooth member avoids the four
-contraction points.
+Write
+$$M_{\mathrm{ev}}=2(h-e_1)+(s-2)(h-e_2):$$
+a nonnegative integral combination of $h-e_1$ and $h-e_2$, and each of
+these is the class of a base-point-free pencil on $X_2$, namely the strict
+transforms of the lines through $P_1$ and through $P_2$. The lemma of V.4.8
+is proved for $X_2$ precisely by exhibiting classes in this form, so a
+general member of $\linearsystem{M_{\mathrm{ev}}}$ is nonsingular and
+irreducible, and the system is globally generated. Requiring a member to pass
+through a prescribed point is then a proper hyperplane condition, so a
+general smooth member avoids the four contraction points.
+
 
 Step [](#contraction-pullback-preserves-invariants){.pf-ref} then pulls it back to a nonsingular irreducible curve on the cubic
 surface of degree $d$ and genus
@@ -765,16 +833,11 @@ irreducible and can be chosen away from the four contraction points. Its
 pullback to $S$ attains the odd minimum.
 
 ::: pf-proof
-Again the coefficients
-$$
-c=1,
-\qquad
-b_1=1,
-\qquad
-b_2=s-1
-$$
-are nonnegative, so the class is nonnegative on every $(-1)$-curve of
-$X_2$. Its square is positive by step [](#odd-equality-class){.pf-ref}. V.4.8 therefore gives a general
+Again
+$$M_{\mathrm{odd}}=h+(h-e_1)+(s-1)(h-e_2)$$
+is a nonnegative integral combination of $h,h-e_1,h-e_2$, the three
+base-point-free classes for which the $X_2$ lemma of V.4.8 is proved, and its
+square is positive by step [](#odd-equality-class){.pf-ref}. V.4.8 therefore gives a general
 nonsingular irreducible member and global generation. Choose such a member
 outside the four hyperplanes corresponding to the contraction points, and
 apply step [](#contraction-pullback-preserves-invariants){.pf-ref}.

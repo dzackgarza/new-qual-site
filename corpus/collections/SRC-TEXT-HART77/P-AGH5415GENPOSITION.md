@@ -419,6 +419,12 @@ with these largest multiplicities. Step [](#quadratic-transform-basis-change){.p
 $$
 a'=2a-b_1-b_2-b_3<a.
 $$
+Its multiplicities in the new basis are $a-b_j-b_k\ge0$ for the three
+centers and $b_i\ge0$ for the others, because two multiplicities of an
+irreducible plane curve of degree $a$ always satisfy $b_i+b_j\le a$ (the line
+through the two points meets the curve with multiplicity at least
+$b_i+b_j$). So the transformed class again has nonnegative multiplicities and
+the argument can be repeated.
 The marked blowup itself is unchanged up to isomorphism, so the transformed
 curve remains irreducible and has the same negative self-intersection.
 Step [](#general-position-preserved-under-sequence){.pf-ref} says the new point configuration is again in general position.
