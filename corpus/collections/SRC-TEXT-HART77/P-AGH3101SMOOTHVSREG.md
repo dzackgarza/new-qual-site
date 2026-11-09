@@ -209,3 +209,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove that every l
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §10, Exercise 10.1, PDF pp. 192--194, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he shows regularity by computing $\mathfrak m/(\mathfrak m^2+(y^2-x^p+t))$ at a closed point in the two cases $k(\alpha)\subsetneq l$ and $k(\alpha)=l$, and non-smoothness by exhibiting torsion in $\Omega_{X/k}$ at the point $(y,x^p+t)$, with the extension to $k(t^{1/p})$ as an alternative. The conclusion and both directions agree. The proof above reaches regularity without a case analysis, by identifying the coordinate ring as the localization of $k_0[x,y]$ at the powers of $x^p-y^2$ (step s2), and does non-smoothness by the base change to $k(\alpha)$ with $\alpha^p=t$ (steps s4--s5), which is Kim's alternative argument.
+:::

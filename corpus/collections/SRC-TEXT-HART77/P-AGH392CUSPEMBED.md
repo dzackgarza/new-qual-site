@@ -265,3 +265,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §9, Exercise 9.2, PDF pp. 175--176, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he computes the ideal $(xz-ay^2,\ a^2yw-z^2,\ axw-yz)$ of the scaled twisted cubic, intersects it with $k[a,x,y,z,w]$ to obtain the flat closure, with the fourth generator $x^2w-y^3$, remarks that this "requires some checking", and reads off the special fibre $(xz,z^2,yz,x^2w-y^3)=(z,x^2-y^3)\cap(x,y,z^2)$ as the plane cuspidal cubic with an embedded point at the cusp. The proof above works with the same four generators in the affine chart $w=1$, proves $J=\ker\Phi$ instead of asserting it (step s3), and identifies the embedded point as an associated prime (step s7); the ideal and the conclusion agree.
+:::

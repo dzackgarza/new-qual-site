@@ -304,3 +304,7 @@ completed isomorphism and descend them to the original local rings.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §10, Exercise 10.4, PDF pp. 196--198, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: from the completed isomorphism he derives $\widehat{\mathfrak m}_y\widehat\OO_x=\widehat{\mathfrak m}_x$ and hence, by Nakayama, $\mathfrak m_y\OO_x=\mathfrak m_x$; he gets flatness by writing $\widehat\OO_x=\OO_x\otimes_{\OO_y}\widehat\OO_y$ and using that $\OO_x\to\widehat\OO_x$ is faithfully flat; conversely he compares $(\OO_y/\mathfrak m_y^n)\otimes_{k(y)}k(x)\to\OO_x/\mathfrak m_x^n$ term by term, using finite freeness and a determinant argument. The two directions agree with the proof above, which compares associated graded rings in the forward direction (steps s2--s3) and uses faithful flatness in the converse (step s5). Kim also notes, as the statement requires, that the fields of representatives need the hypothesis that the local rings are equicharacteristic complete.
+:::

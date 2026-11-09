@@ -326,3 +326,7 @@ Step [](#s1){.pf-ref} proves part (a), steps [](#s2){.pf-ref} and [](#s3){.pf-re
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §9, Exercise 9.3, PDF pp. 175--177, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: part (a) he derives from miracle flatness (Exercise 3.10.9), saying he knows no better way; parts (b) and (c) he does by computing $\Tor_1$ from explicit resolutions, $\ker(M\xrightarrow{(y,-x)}M^{\oplus2})$ for (b) and $\ker(M\xrightarrow{(0,x,-y)}M^{\oplus3})$ for (c), remarking that the fibre lengths are $2$ generically and $3$ at the origin. The conclusions agree. The proof above reaches (a) without Exercise 3.10.9, by the Koszul resolution of the residue field plus Nakayama (step s1), and does (b) and (c) by exhibiting $R\cong A\oplus\mathfrak m$ with $\mathfrak m$ not flat; the fibre-length count is Kim's alternative route and is not used here.
+:::

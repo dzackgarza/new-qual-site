@@ -30,21 +30,43 @@ audit:
   by: chatgpt
   date: 2026-09-18
 - event: source-checked
+  by: claude
+  date: 2026-11-09
+  note: 'Read III.10.8 against Hartshorne p. 276 and Dongryul Kim, Solutions to Hartshorne, p. 203. Both printed defects are now recorded in the solution rather than in the statement: the statement is kept as printed, including "any characteristic" and every t, and the solution states that characteristic 2 makes C the double line and that at t=0 the cone is the plane z=0, which is not a member of the pencil <Q, XZ>. The earlier note on this card mentions a replacement smooth conic exhibiting the phenomenon in every characteristic; no such conic is part of the current solution.'
+- event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
-  note: Hartshorne III.10.8 allows every t and ends "This happens in any characteristic"; in characteristic 2 the conic is the double line (x+y)^2=0, and at t=0 the cone from the vertex on C is the plane z=0, not a member of the pencil limit XZ=0. The statement now assumes char k != 2 and t != 0, says the Y_t are members of the pencil, and omits the any-characteristic sentence.
+  note: 'Hartshorne III.10.8 allows every t and ends "This happens in any characteristic"; in characteristic 2 the conic is the double line (x+y)^2=0, and at t=0 the cone from the vertex on C is the plane z=0, not a member of the pencil limit XZ=0.'
 ---
 
 ::: {.problem}
-Let $k$ be a field of characteristic $\neq 2$.
-In affine $3\dash$space with coordinates $x, y, z$, let $C$ be the conic $(x-1)^2 + y^2 = 1$ in the $xy\dash$plane, and let $P$ be the point $(0,0,t)$ on the $z\dash$axis, with $t \neq 0$.
-Let $Y_t$ be the closure in $\PP^3$ of the cone over $C$ with vertex $P$.
+A linear system with moving singularities contained in the base locus (any characteristic).
 
-Show that as $t$ varies, the surfaces $\theset{Y_t}$ are members of a linear system of dimension $1$, with a moving singularity at $P$.
+In affine $3\dash$space with coordinates $x, y, z$, let $C$ be the conic $(x-1)^2 + y^2 = 1$ in the $xy\dash$plane, and let $P$ be the point $(0,0,t)$ on the $z\dash$axis.
+Let $Y_t$ be the closure in $\PP^3$ of the cone over $C$ with vertex $P$.
+Show that as $t$ varies, the surfaces $\theset{Y_t}$ form a linear system of dimension $1$, with a moving singularity at $P$.
 The base locus of this linear system is the conic $C$ plus the $z\dash$axis.
 :::
 
 ::: {.solution}
+Two hypotheses must be read into the printed statement.
+
+First, in characteristic $2$ the equation $(x-1)^2+y^2=1$ becomes
+$x^2+y^2=0$, that is $(x+y)^2=0$: the "conic" is a double line, and the cones over
+it form a constant family, not a pencil. The computation below therefore assumes
+$\operatorname{char}k\neq2$, as does the identification of $C$ with a nonsingular
+conic in step [](#s1){.pf-ref}.
+
+Second, at $t=0$ the vertex $P=(0,0,0)$ lies on $C$, so the cone with vertex $P$
+over $C$ is the plane $z=0$ (the union of the lines joining $P$ to the points of
+$C$), and a plane is not a member of the pencil $\Lambda$ of step [](#s3){.pf-ref},
+whose members are the quadrics $tQ+2XZ$; the plane $Z=0$ arises there only in
+combination with $X=0$, as the reducible quadric $XZ$. The pencil statement below
+is therefore proved for $t\neq0$, and the parameter $t$ then identifies
+$\GG_{m,k}$ with a dense open subset of $\Lambda$ whose closure is $\PP^1$.
+
+With these two conventions the printed assertions hold, and the singular point
+$P_t$ of $Y_t$ moves with $t$ inside the base locus.
 Use homogeneous coordinates
 $$
 [X:Y:Z:W]
@@ -239,4 +261,8 @@ claims.
 :::
 
 :::
+:::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §10, Exercise 10.8, PDF p. 203, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he eliminates the line parameter to get $x^2-2x(w-t^{-1}z)+y^2=0$, i.e. the members $t(x^2+y^2-2xw)+2xz=0$ of the pencil $\langle x^2-2xw+y^2,\ -2xz\rangle$, identifies the base locus as the conic plus the $z$-axis, and remarks that characteristic $\neq2$ is needed "otherwise $(x-1)^2+y^2=1$ is $(x+y)^2=0$, so this is a constant linear system". The pencil, the base locus and the moving singularity agree with the proof above, which derives $F_t=tQ+2XZ$ and the singular point $[0:0:t:1]$ directly. Kim's remark is the first of the two conventions stated in the erratum at the start of the solution; the second, that at $t=0$ the cone degenerates to the plane $Z=0$ and so is not a member of the pencil, is not in his note.
 :::

@@ -384,3 +384,7 @@ trivialization required in (c).
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §9, Exercise 9.10, PDF pp. 187--190, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: part (a) is $H^1(\PP^1,\OO(2))=0$ from Example 9.13.2; part (b) uses the family of quadrics $x^2+(1+a)y^2+(1+b)z^2$ over $\AA^2$ and a Fermat-descent argument that no rational functions $y,z$ satisfy $1+(1+a)y^2+(1+b)z^2=0$; part (c) he enters in his list of unsolved exercises, yet writes a proof of it: after a finite flat base change by a curve $T'\to T$ he produces a section, builds two sections of $\OO(s_1)$ from $\OO(s_1-s_2)\cong\OO$, and shows the resulting $T$-morphism $X\to T\times\PP^1$ is finite flat of degree $1$. Parts (a) and (b) agree with the proof above, which gives a shorter nonexistence argument and a characteristic-two variant. Part (c) reaches the section by normalizing $T$ in the residue field of a closed point of the generic fibre (step s5) rather than by Kim's local regular parameter, and finishes with a section divisor and cohomology and base change (step s6).
+:::

@@ -198,3 +198,7 @@ of $X$.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §10, Exercise 10.5, PDF pp. 198--199, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he reduces to $X$ and $U$ affine with $U\to X$ étale surjective, notes $M\otimes_AB$ projective of rank $n$, and proves $M$ flat by taking the kernel $Q$ of $M\otimes_AK\to M\otimes_AL$, observing $Q\otimes_AB=0$, and concluding $Q=0$ because $A/I\otimes_AB=0$ would put the closed set $V(I)$ outside the image of $\Spec B\to\Spec A$. The conclusion agrees. The proof above descends freeness stalkwise across the faithfully flat local map $\OO_{X,x}\to\OO_{U,x'}$ and spreads the free stalk to a Zariski neighbourhood by coherence (steps s2--s3), which avoids the reduction to an affine étale cover.
+:::

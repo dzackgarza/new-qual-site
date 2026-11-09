@@ -272,3 +272,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §9, Exercise 9.7, PDF pp. 183--184, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: for $X=\Spec A$ affine he writes the deformation ideal as $I'=\{a+(f(a)+b)t\}$ with $f:I\to A$ satisfying $a_1f(a_2)-f(a_1a_2)\in I$, notes that this makes $f$ an $A/I$-linear map $I/I^2\to A/I$, and glues the affine classification to $H^0(Y,\mathcal N_{Y/X})$. The two agree line for line; the proof above adds the flatness criterion $J\cap\epsilon A=\epsilon I$ (step s1) that Kim takes for granted, and proves that the two constructions are inverse (steps s2--s4).
+:::

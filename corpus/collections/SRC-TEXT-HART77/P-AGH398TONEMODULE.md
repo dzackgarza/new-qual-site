@@ -26,6 +26,10 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-09
+  note: 'Read III.9.8 against Hartshorne p. 267 and Dongryul Kim, Solutions to Hartshorne, pp. 184-186. Repaired step s4: for j + epsilon*p in ker q1-prime one has q2-prime(j + epsilon*p) = epsilon*delta(j), not epsilon*(delta(j) + q(p)), because q1-prime(j) = -epsilon*q(p); the conclusion phi_2 = phi_1 - delta is unchanged. Checked the lifting used in step s1 against II.8.6(b), which is exactly the polynomial-ring lifting, and replaced the unverified Stacks Project lemma numbers by the tag only.'
 ---
 
 ::: {.problem}
@@ -215,8 +219,12 @@ $$
 Then
 $$
 q'_2(j+\epsilon p)
-=\epsilon\bigl(\delta(j)+q(p)\bigr).
+=\epsilon\,\delta(j),
 $$
+because $q'_1(j+\epsilon p)=0$ forces $q'_1(j)=-\epsilon q(p)=-\epsilon q'_1(p)$, and
+$\epsilon^2=0$.
+So the element $j+\epsilon\bigl(p-\delta(j)\bigr)$ lies in $\ker q'_2$, and
+$p-\delta(j)\bmod J=\phi_{q'_1}(j)-\delta(j)$.
 Thus replacing the lift $q'_1$ by $q'_2$ changes the homomorphism
 $J/J^2\to A$ by minus the restriction of the derivation $\delta$, namely by the
 negative of the image of $\theta_\delta$ under
@@ -353,7 +361,7 @@ same kernel, and the flatness criterion of [[P-AGH397INFDEFSUB]], step
 These constructions are inverse.
 
 The [square-zero extension classification](https://stacks.math.columbia.edu/tag/08S3)
-(Lemma 91.2.3 and Remark 91.2.4) identifies these extensions, as an
+(the Stacks Project's classification of square-zero extensions by $\Ext^1$ of the naive cotangent complex) identifies these extensions, as an
 $A$-module, with
 $$
 \Ext_A^1(NL_{A/k},A),
@@ -390,4 +398,8 @@ independence of the polynomial presentation.
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §9, Exercise 9.8, PDF pp. 184--186, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he identifies closed subschemes of $\Spec(P\otimes D)$ over $\Spec D$ with the ideals $I=\{j_1+(f(j_1)+j_2)t\}$, shows that changing $f$ by $\sum a_i\partial/\partial x_i$ amounts to the algebra isomorphism $\alpha+\beta t\mapsto\alpha+(\beta+\sum a_i\partial\alpha/\partial x_i)t$, proves the converse by reading the induced isomorphism on the $x_i$, and realizes every abstract deformation by lifting generators. The classification, the cokernel and the independence of the presentation agree. The proof above follows Kim's steps s1--s3 and s5--s6; step s4 as it now stands corrects the printed coefficient of $\epsilon$ in $q'_2(j+\epsilon p)$, which is $\delta(j)$ and not $\delta(j)+q(p)$. Step s8 supplies the presentation-independence, which Kim disposes of in one sentence.
 :::

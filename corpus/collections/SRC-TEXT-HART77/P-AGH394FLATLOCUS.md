@@ -165,3 +165,7 @@ Step [](#s4){.pf-ref} proves that the set of points where $f$ is flat is open.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §9, Exercise 9.4, PDF pp. 177--178, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he re-derives the affine theorem following Matsumura, *Commutative Ring Theory*, Theorem 24.3, verifying generization stability and that $V(\mathfrak p)$ has a nonempty open subset in the flat locus, the second step resting on the local criterion for flatness (Matsumura, Theorem 22.3) and on generic freeness, which he proves. The proof above performs the same reduction to the affine statement and then quotes that statement in the form the exercise itself cites, EGA $\mathrm{IV}_3$, 11.1.1; it does not reproduce Kim's re-derivation of it. No step of the reduction differs between the two.
+:::

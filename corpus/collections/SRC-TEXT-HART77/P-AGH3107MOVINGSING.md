@@ -30,9 +30,13 @@ audit:
   by: chatgpt
   date: 2026-09-18
 - event: source-checked
+  by: claude
+  date: 2026-11-09
+  note: 'Read III.10.7 against Hartshorne p. 276 and Dongryul Kim, Solutions to Hartshorne, pp. 200-203. The printed statement is now kept in the problem (as printed, part (b) gives a two-case dichotomy), and the missing case is named and proved in the solution: the member z(x(x+z)+lambda y(y+z)) with lambda not in F_2 is the line z=0 plus the smooth conic x(x+z)+lambda y(y+z) tangent to it at [sqrt(lambda):1:0]. Kim lists the same correction. Repaired the assertion that an irreducible conic over an algebraically closed field is smooth, which fails in characteristic 2, by deriving smoothness from the order at the double point.'
+- event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
-  note: 'Hartshorne III.10.7(b) prints two cases, three concurrent lines or an irreducible cuspidal cubic, omitting the member z(x(x+z)+λy(y+z)), λ not in F_2, a line plus a tangent conic; part (b) now states the three-case classification.'
+  note: 'Hartshorne III.10.7(b) prints two cases, three concurrent lines or an irreducible cuspidal cubic, omitting the member z(x(x+z)+λy(y+z)), λ not in F_2, a line plus a tangent conic.'
 ---
 
 ::: {.problem}
@@ -40,14 +44,43 @@ Let $k$ be an algebraically closed field of characteristic $2$. Let $P_1, \ldots
 
 (a) Show that $D$ is a linear system of dimension $2$ with base points $P_1, \ldots, P_7$, which determines an inseparable morphism of degree $2$ from $X - \theset{P_i}$ to $\PP^2$.
 
-(b) Show that every curve $C \in D$ is singular.
+(b) Every curve $C \in D$ is singular.
 
-    More precisely, $C$ has a unique singular point $P$, and exactly one of the following holds: $P$ is one of the $P_i$ and $C$ consists of the $3$ lines through $P$ defined over $\FF_2$; $P$ lies on one of the seven lines defined over $\FF_2$ but is not one of the $P_i$, and $C$ is that line together with a smooth conic tangent to it at $P$; or $P$ lies on none of these lines and $C$ is an irreducible cuspidal cubic with cusp $P$.
+    More precisely, either $C$ consists of $3$ lines all passing through one of the $P_i$, or $C$ is an irreducible cuspidal cubic with cusp $P$ not equal to any $P_i$.
 
-Furthermore, the correspondence sending $C$ to the singular point of $C$ is a bijection between $D$ and $\PP^2$. Thus the singular points of elements of $D$ move all over.
+Furthermore, the correspondence $C \mapsto$ the singular point of $C$ is a $1$-$1$ correspondence between $D$ and $\PP^2$. Thus the singular points of elements of $D$ move all over.
 :::
 
 ::: {.solution}
+Part (b) is false as printed. Every member of $D$ is the cubic
+$G_{a,b,c}=aF_0+bF_1+cF_2$ with $F_0=xy(x+y)$, $F_1=xz(x+z)$, $F_2=yz(y+z)$, and for
+$\lambda\in k\setminus\FF_2$ the member
+$$
+G=0\cdot F_0+1\cdot F_1+\lambda F_2
+=z\bigl(x(x+z)+\lambda y(y+z)\bigr)
+$$
+is a reducible cubic of a third type. Its factors are the $\FF_2$-line $L=V(z)$
+and the conic $Q=x(x+z)+\lambda y(y+z)$. The conic $Q$ is irreducible for
+$\lambda\notin\FF_2$: a factorization into linear forms would force, in the
+notation of the computation below, $\sqrt\lambda=\lambda$. It is smooth, since its
+partial derivatives $z$, $\lambda z$, $x+\lambda y$ have the common zero
+$[\lambda:1:0]$, where $Q$ takes the nonzero value $\lambda^2+\lambda$. Finally
+$Q$ meets $L$ only at $P=[\sqrt\lambda:1:0]$ and is tangent to $L$ there, because
+$\partial_zQ=\sqrt\lambda+\lambda\neq0$ at $P$. This member is neither three
+concurrent lines nor an irreducible cuspidal cubic, so the printed dichotomy
+fails.
+
+The correct statement, proved below, is: every $C\in D$ has a unique singular
+point $P$, and exactly one of the following holds.
+(i) $P$ is one of the seven points of $\PP^2(\FF_2)$, and $C$ is the union of the
+three $\FF_2$-lines through $P$.
+(ii) $P$ lies on exactly one $\FF_2$-line $L$ and is not an $\FF_2$-point, and $C$
+is $L$ together with a smooth conic tangent to $L$ at $P$; the member displayed
+above is such a curve.
+(iii) $P$ lies on no $\FF_2$-line, and $C$ is an irreducible cuspidal cubic with
+cusp $P$.
+The correspondence $C\mapsto P$ is a bijection $D(k)\to\PP^2(k)$ in all three
+cases.
 Put
 $$
 F_0=xy(x+y),
@@ -385,8 +418,20 @@ $$
 $$
 of the seven base points, contradiction.
 
-Hence $Q$ is irreducible. An irreducible conic over an algebraically closed
-field is smooth. The line $L$ and conic $Q$ can meet only at singular points
+Hence $Q$ is irreducible. It is also smooth. An irreducible conic over an
+algebraically closed field of characteristic $2$ need not be smooth
+($x^2+yz$ is a counterexample), so this needs an argument in the present
+situation. By step [](#s6){.pf-ref} the union $C=L\cup Q$ has the unique singular
+point $P$, so the multiplicity of $C$ at $P$ is at least two; it is not three,
+because a plane cubic of multiplicity three at a point is a product of three
+lines through that point, which would make $Q$ reducible. So $P$ is a double
+point of $C$. The order of the defining equation at
+$P$ is additive, and $L$ is smooth at $P$ with $\operatorname{ord}_P(L)=1$. If
+$P\notin Q$ then $\operatorname{ord}_P(Q)=0$ and $C$ would be smooth at $P$, so
+$P\in Q$ and $\operatorname{ord}_P(Q)=1$: the conic is smooth at $P$. A singular
+point of $Q$ away from $L$ would also be a singular point of $C$ (the local
+equation of $C$ is that of $Q$ times the unit $L$ there), so $Q$ is smooth. The
+line $L$ and conic $Q$ can meet only at singular points
 of their union, and step [](#s6){.pf-ref} says there is only $P$. Bézout's theorem gives
 $$
 I_P(L,Q)=2,
@@ -481,11 +526,17 @@ $C_{a,b,c}$ is an irreducible cuspidal cubic with cusp $P$.
 
 Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (a). Step [](#s6){.pf-ref} proves that every member is
 singular and that the singular-point correspondence is a bijection with
-$\PP^2(k)$. Steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref} and [](#s11){.pf-ref} prove the three-case classification of part (b), and in particular show that the singular points
-move over all of $\PP^2$.
+$\PP^2(k)$. Steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref} and [](#s11){.pf-ref} prove the corrected three-case classification of part (b) used in the erratum at the start of this solution, and in particular show that the singular points
+move over all of $\PP^2$. The part of (b) that the erratum denies is only the
+dichotomy: the uniqueness of the singular point and the bijection onto
+$\PP^2(k)$ hold as printed.
 
 :::
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §10, Exercise 10.7, PDF pp. 200--203, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he computes the three-dimensional space $\langle x^2y+xy^2,\ y^2z+yz^2,\ x^2z+xz^2\rangle$ of cubics through the seven points, computes the degree-two purely inseparable function field extension from $z^2/y^2$, finds the unique singular point $[\alpha:\beta:\gamma]$ from the three partial derivatives, and classifies the reducible members. His list of corrections to the text records exactly the defect treated here: "Exercise 3.10.7: the curve $C$ can be a quadric with a tangent line", and he adds the case of a smooth quadric together with a tangent line to the printed two-case classification. The computations and the correction agree with the proof above, which keeps the printed statement in the problem and proves the three-case classification in the erratum and steps s7--s11. One sentence of Kim's account is not usable in characteristic two and is not used: an irreducible conic over an algebraically closed field can be singular there ($x^2+yz$), so step s9 proves the smoothness of the conic from the additivity of the order at the double point instead.
 :::

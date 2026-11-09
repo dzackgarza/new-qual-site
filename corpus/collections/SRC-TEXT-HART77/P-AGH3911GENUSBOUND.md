@@ -269,3 +269,7 @@ gives the upper bound.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §9, Exercise 9.11, PDF pp. 190--192, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he takes the flat limit of $Y$ under a projection $\PP^n\setminus H\to\PP^2$ birational on $Y$, observes that the special fibre is supported on the plane curve $Y'$ with nilradical supported on finitely many points, so that $p_a(Y)\le p_a(Y')$, computes $p_a$ of a plane curve of degree $d$ as $\frac12(d-1)(d-2)$, and proves a suitable centre exists by a dimension count on the Grassmannian with Chevalley's theorem. The proof above makes the same degeneration and the same comparison of arithmetic genera, but derives the zero-dimensionality of the nilradical from the equality of the two Hilbert polynomials (step s4) and takes the birational projection as given (step s2); the genus bound and its computation agree.
+:::

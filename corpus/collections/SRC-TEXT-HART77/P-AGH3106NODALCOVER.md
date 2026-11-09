@@ -299,3 +299,7 @@ component isomorphic to the normalization of $Y$.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §10, Exercise 10.6, PDF pp. 199--200, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he glues two copies of the normalization $t\mapsto(t^2-1,t(t^2-1))$ crosswise over the node, checks unramifiedness at the node by showing $\mathfrak m_AB=\mathfrak m_B$ (via $x+y$ and $y-x$ generating the maximal ideal, then Nakayama), and flatness by proving $\widehat A\to\widehat B$ an isomorphism after completion, comparing $A/\mathfrak m_A^n\to B/\mathfrak m_B^n$ by a minimal-degree argument. The construction and both checks agree with the proof above, which proves étaleness at the two nodes through the completed-local-ring criterion of Exercise III.10.4 (step s6) rather than by Nakayama and a separate flatness argument, and which records that the curvature hypothesis "nodal" forces $\operatorname{char}k\neq2$.
+:::

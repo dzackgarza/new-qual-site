@@ -248,3 +248,7 @@ $$
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §10, Exercise 10.9, PDF pp. 203--204, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he passes to the local rings, uses $\OO_x\otimes_{\OO_y}k(y)=\OO_{X_y,x}$ and the dimension formula to reduce to the statement that a local homomorphism $A\to B$ with $A$ regular, $B$ Cohen--Macaulay and $\dim B/\mathfrak m_AB=\dim B-\dim A$ is flat, proves $a_1,\dots,a_n$ is a $B$-regular sequence by Theorem 2.8.21A(c), and concludes by the local criterion of flatness (Lemma 3.10.3A) with induction on $\dim A$. The proof above proves the same regular-sequence claim and reaches flatness through the Koszul complex, $\Tor_1^A(\kappa(y),B)=0$, and the local criterion in the form of Matsumura, Theorem 22.3, without the induction on $\dim A$; the two agree.
+:::

@@ -180,3 +180,7 @@ Step [](#s5){.pf-ref} proves the required openness for every open subset of $X$.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §9, Exercise 9.1, PDF pp. 174--175, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he reduces to $Y$ affine and $X=U$ affine, quotes constructibility (II, Ex. 3.19) and generization stability (II, Ex. 3.18(c)), and proves the generization step by base-changing to a local domain $A_{\mathfrak p}/\mathfrak qA_{\mathfrak p}$ and using that a flat algebra over a domain is torsion-free. The proof above proves the same two properties, and the generization step by faithful flatness of the flat local homomorphism $\OO_{Y,y}\to\OO_{X,x}$ (step s2--s3); it is the same argument without the base change.
+:::

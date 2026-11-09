@@ -24,6 +24,10 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-09
+  note: 'Read III.10.3 against Hartshorne p. 275 and Dongryul Kim, Solutions to Hartshorne, pp. 195-196. Repaired the converse of the differential criterion: the card asserted a zero-dimensional unramified criterion without proof. Step s1b now proves it, by the vanishing of Omega_{kappa(x)/kappa(y)} (II.8.6A for separability), by dim O_{X_y,x} = trdeg = 0, and by the square-zero thickening argument of Kim, which forces the local ring of the fibre to be a field. Also removed a pf-step block whose opening line carried no label and whose content duplicated the closing step.'
 ---
 
 ::: {.problem}
@@ -47,11 +51,9 @@ of finite presentation.
 
 ::: {.pf-step #s1}
 
-For a morphism locally of finite type,
+For a morphism locally of finite type, unramifiedness at $x$ implies
 $$
-f\text{ is unramified}
-\quad\Longleftrightarrow\quad
-\Omega_{X/Y}=0.
+(\Omega_{X/Y})_x=0.
 $$
 
 ::: pf-proof
@@ -77,7 +79,7 @@ $$
 (\Omega_{X/Y})_x\tensor_B R.
 $$
 
-Suppose first that $f$ is unramified at $x$. Then
+Suppose that $f$ is unramified at $x$. Then
 $$
 \mfm_yB=\mfm_x,
 $$
@@ -92,33 +94,56 @@ $$
 (\Omega_{X/Y})_x=0.
 $$
 
-Conversely, suppose $(\Omega_{X/Y})_x=0$. Then
-$$
-\Omega_{R/\kappa}=0.
-$$
-For a local algebra essentially of finite type over a field, vanishing of
-the module of differentials is the zero-dimensional unramified criterion:
-the local ring is its residue field and that residue field is finite separable
-over the base field. Thus
-$$
-R=K,
-\qquad
-K/\kappa\text{ finite separable}.
-$$
-The equality $R=K$ means that the maximal ideal of $R$ is zero, i.e.
-$$
-\mfm_x/\mfm_yB=0.
-$$
-Hence
-$$
-\mfm_yB=\mfm_x,
-$$
-which is exactly Hartshorne's local definition of unramifiedness at $x$.
+:::
 
-Since this holds at every point,
+:::
+
+::: {.pf-step #s1b}
+
+Conversely, $(\Omega_{X/Y})_x=0$ implies that $f$ is unramified at $x$; hence,
+for a morphism locally of finite type, unramifiedness is equivalent to the
+vanishing of $\Omega_{X/Y}$.
+
+::: pf-proof
+
+Keep the notation of step [](#s1){.pf-ref}, and assume $(\Omega_{X/Y})_x=0$. Then
+$\Omega_{R/\kappa}=0$. Applying II.8.4A to the maximal ideal $\mfm_R$ of $R$
+gives a surjection $\Omega_{R/\kappa}\tensor_R\kappa(x)\to\Omega_{\kappa(x)/\kappa}\to0$,
+so $\Omega_{\kappa(x)/\kappa}=0$. The point $x$ lies on the fibre $X_y$, which is
+of finite type over $\kappa(y)$, so $\kappa(x)$ is a finitely generated field
+extension of $\kappa$; by Theorem II.8.6A, $\Omega_{\kappa(x)/\kappa}=0$ forces
+$\kappa(x)/\kappa$ to be algebraic, hence finite and separable.
+Since $\dim\OO_{X_y,x}=\operatorname{tr\,deg}_{\kappa}\kappa(x)=0$ for a scheme
+of finite type over a field, the fibre $X_y$ is zero-dimensional at $x$.
+
+It remains to see that $R$ is a field. Base change to an algebraic closure of
+$\kappa$ does not change $\Omega$ (Proposition II.8.10), so we may assume that
+$\kappa$ is algebraically closed. Then $R$ is a zero-dimensional local ring
+essentially of finite type over $\kappa$. Put $\mfm=\mfm_R$ and apply II.8.4A to
+the ideal $\mfm^2$: the exact sequence
 $$
-\boxed{f\text{ unramified}\iff\Omega_{X/Y}=0}.
+\mfm^2/\mfm^4
+\longrightarrow
+\Omega_{R/\kappa}\tensor_R(R/\mfm^2)
+\longrightarrow
+\Omega_{(R/\mfm^2)/\kappa}
+\longrightarrow 0
 $$
+has vanishing middle term, so $\Omega_{(R/\mfm^2)/\kappa}=0$. But
+$R/\mfm^2\cong\kappa[\epsilon_1,\ldots,\epsilon_m]/(\epsilon_1,\ldots,\epsilon_m)^2$
+with $m=\dim_\kappa\mfm/\mfm^2$, and for that ring
+$$
+\Omega\tensor\kappa\cong\kappa^{\oplus m},
+\qquad
+d\epsilon_i\longmapsto e_i,
+$$
+so $m=0$. Thus $\mfm=\mfm^2$, and Nakayama's lemma gives $\mfm=0$: $R$ is a
+field, so $R$ equals its residue field $\kappa(x)$.
+Undoing the field extension, $R$ is a field whose residue field is separable
+over $\kappa$, and $R=\kappa(x)$ says exactly that $\mfm_x=\mfm_yB$, which is
+Hartshorne's local definition of unramifiedness.
+Since $x$ was arbitrary, $f$ is unramified.
+
 This is the differential characterization recorded in [[D-MORUNR]].
 
 :::
@@ -131,8 +156,8 @@ Conditions (ii) and (iii) are equivalent.
 
 ::: pf-proof
 
-Both conditions require $f$ to be flat. By step [](#s1){.pf-ref}, their remaining
-conditions
+Both conditions require $f$ to be flat. By steps [](#s1){.pf-ref} and [](#s1b){.pf-ref},
+their remaining conditions
 $$
 \Omega_{X/Y}=0
 \qquad\text{and}\qquad
@@ -224,25 +249,13 @@ $$
 
 :::
 
-::: pf-step
+::: pf-qed
 
-The three conditions are equivalent.
-
-::: pf-proof
-
-Step [](#s3){.pf-ref} gives
-$$
-\text{(i)}\Longrightarrow\text{(ii)},
-$$
-step [](#s2){.pf-ref} gives
-$$
-\text{(ii)}\Longleftrightarrow\text{(iii)},
-$$
-and step [](#s5){.pf-ref} gives
-$$
-\text{(iii)}\Longrightarrow\text{(i)}.
-$$
-Therefore
+Steps [](#s1){.pf-ref} and [](#s1b){.pf-ref} identify vanishing relative differentials with Hartshorne's
+unramified condition, so with the flatness hypothesis shared by (ii) and (iii)
+they give (ii) $\Longleftrightarrow$ (iii). Step [](#s3){.pf-ref} gives
+(i) $\Longrightarrow$ (ii), and steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give
+(iii) $\Longrightarrow$ (i). Hence the three conditions are equivalent:
 $$
 \boxed{\text{(i)}\iff\text{(ii)}\iff\text{(iii)}}.
 $$
@@ -251,14 +264,8 @@ $$
 
 :::
 
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} identify vanishing relative differentials with Hartshorne's
-unramified condition, and steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} identify flat unramified morphisms
-with smooth morphisms of relative dimension zero.
-
 :::
 
-:::
-
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §10, Exercise 10.3, PDF pp. 195--196, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: for (ii) implies (iii) he shows $\Omega_{X_y/\kappa(y)}=0$, hence $\Omega_{\kappa(x)/\kappa(y)}=0$ and a finite separable residue extension, and then proves the fibre reduced by the square-zero thickening: $\mathfrak m^2/\mathfrak m^4\to\Omega\otimes(A/\mathfrak m^2)\to\Omega_{(A/\mathfrak m^2)/k}\to0$ with $\Omega_{(k[\epsilon]/\epsilon^2)/k}\otimes k\cong k^{\oplus m}$ forcing $m=0$; (iii) implies (i) is then Theorem 3.10.2. The proof above now contains exactly that reducedness argument as step s1b, in place of the assertion of a "zero-dimensional unramified criterion" that it made before; (i) implies (ii) and (iii) implies (i) agree with Kim's steps.
 :::
