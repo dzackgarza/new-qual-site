@@ -385,5 +385,5 @@ Step [](#g-birational-resolves-f){.pf-ref} verifies that the composite modificat
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.1, printed p. 297 (resolving the singularities of a surface by monoidal transformations).
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.1, printed p. 297 (embedded resolution of the divisor of $f$ followed by further point blowups separating zeros from poles).
 :::

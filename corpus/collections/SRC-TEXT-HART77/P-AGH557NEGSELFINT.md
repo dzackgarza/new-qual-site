@@ -46,11 +46,11 @@ audit:
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
-  note: 'Source did not require f surjective, and C x P^1 -> C -> C x P^1 contracts a fibre Y with Y^2 = 0; the statement now takes f surjective, and the solution proves that statement.'
+  note: 'As printed the statement fails: X = C x P^1 mapped to an embedded C in a projective surface has f^-1(P) equal to a ruling fibre Y with Y^2 = 0. The card keeps the printed statement and proves it under the dominance hypothesis, naming that counterexample in the solution.'
 ---
 
 ::: {.problem}
-Let $Y$ be an irreducible curve on a surface $X$, and suppose there is a surjective morphism $f: X \rightarrow X_0$ to a projective variety $X_0$ of dimension 2, such that $f(Y)$ is a point $P$ and $f^{-1}(P)=Y$.
+Let $Y$ be an irreducible curve on a surface $X$, and suppose there is a morphism $f: X \rightarrow X_0$ to a projective variety $X_0$ of dimension 2, such that $f(Y)$ is a point $P$ and $f^{-1}(P)=Y$.
 Then show that $Y^2<0$.
 
 Hint: Let $\linearsystem{H}$ be a very ample (Cartier) divisor class on $X_0$, let $H_0 \in\linearsystem{H}$ be a divisor containing $P$, and let $H_1 \in\linearsystem{H}$ be a divisor not containing $P$.
@@ -58,13 +58,24 @@ Then consider $f^* H_0, f^* H_1$ and $\tilde{H}_0=f^*\left(H_0-P\right)^{-}$.
 :::
 
 ::: {.solution}
+As printed, the statement is false. Take a curve $C$ embedded in a projective
+surface $X_0$, the product $X=C\times\PP^1$, the morphism
+$f:X\to C\hookrightarrow X_0$, and the fibre $Y=\{c\}\times\PP^1$ of the ruling.
+Then $f(Y)$ is the point $P$ which is the image of $c$, the set-theoretic fibre
+$f^{-1}(P)$ is exactly $Y$, and $Y^2=0$ as the fibre class of a product of
+curves. So the exercise needs the hypothesis that $f$ be dominant, equivalently
+that $\dim f(X)=2$; it holds automatically when $f$ is surjective, and in the
+contraction setting where the exercise is used. Under that hypothesis the
+following argument proves $Y^2<0$.
+
 ::: pf
 
 ::: {.pf-step #generically-finite}
 $f$ is dominant and generically finite.
 
 ::: pf-proof
-$f$ is surjective onto the irreducible surface $X_0$, so it is dominant, and $\dim X = \dim X_0 = 2$ makes the generic fibre finite.
+Dominance is the hypothesis added at the start of the solution. Since
+$\dim X=\dim X_0=2$ and the target is integral, the generic fibre is finite.
 :::
 
 :::
