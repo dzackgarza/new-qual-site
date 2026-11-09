@@ -493,3 +493,19 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 **Uncertainty.** Searched: all ten retained solution sets plus Kim. Found: nothing for IV.1.8(c). Conclusion: no published coverage among them. Confidence: high. Gaps: a published treatment may exist outside these sets; it has not been located.
 
 **Repair.** A published proof of Hartshorne IV, Ex. 1.8(c), checked against the card's analysis.
+
+### IV.4.22 and IV.6.9 — no complete published solution in the supplied sets
+
+**Object and need.** `P-AGH4422FAMILYOVERAFFINELINE` (Hartshorne IV, Ex. 4.22, printed as `\*4.22`, starred) and `P-AGH469NONSINGULARSURFACECONTAININGACURVE` (IV, Ex. 6.9, printed as `\*6.9`, starred).
+
+**Observed evidence.**
+- A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, IV.6.9: the entry on doc p. 253 consists of the heading followed by the single word `skip.`, so there is no argument at all.
+- For IV.4.22 Egbert has entries `4.4.22 b.` and `4.4.23 c.` (doc p. 237) which consist of citations — "by Silverman, thm 6.2, (page 52??)" and "This is theorem VI.5.5 Silverman since integral means a finitely generated module contained in Q(τ)" — not the triviality argument the exercise asks for. The printed hint's route (2-torsion points forming an étale cover of $\AA^1_\CC$, hence trivial as $\AA^1_\CC$ is simply connected, so $\lambda$ is defined and the map to $\AA^1\setminus\{0,1\}$ is constant) is not carried out there.
+- The other sets give no coverage: park, lomont, sam, cais, stein, borcherds, saglam-chris and cutrone-marshburn contain no treatment of either exercise (keyword searches for the degree-$m$ surface and the family triviality return only unrelated Chapter II/V material).
+- Kim's source stops with Chapter III and covers no Chapter IV exercise.
+
+**Impact and owner.** Both cards carry complete multi-step proofs of their own (IV.4.22 in 7 steps following the printed hint, IV.6.9 in 8 steps via the blow-up of $X$ in $\PP^3$ and a general hyperplane containing no exceptional fibre). What is missing is a published argument to check against, so these are open published-solution obligations under #102 alongside III.7.4(b),(d) and IV.1.8(c). The remaining Chapter IV exercises do have published treatments in Egbert (ss. 4.1–4.21, 5.1–5.7, 6.1–6.8) and Park/Lomont for the earlier sections.
+
+**Uncertainty.** Searched: all ten retained solution sets plus Kim's chapter sources. Found: nothing beyond the citations noted for IV.4.22, and an explicit `skip.` for IV.6.9. Conclusion: no complete published solution among them. Confidence: high for these sets. Gaps: a published treatment may exist outside them; it has not been located.
+
+**Repair.** A complete published solution of IV.4.22 following the printed hint, and of IV.6.9, checked against the cards.
