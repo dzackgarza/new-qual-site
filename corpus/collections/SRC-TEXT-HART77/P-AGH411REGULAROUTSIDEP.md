@@ -74,3 +74,7 @@ Fix $n$ as in step [](#s2){.pf-ref}. The constants form a one-dimensional subspa
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, Chapter IV §1, Exercise 1, PDF p. 30, takes $Q\neq P$ and $n>\max\{2g-2,g,1\}$ so that $\ell(n(2P-Q))>1$, giving an effective $D\in|n(2P-Q)|$ whose principal divisor forces a pole only at $P$; the same argument is in Lomont, *Solutions to Hartshorne's Algebraic Geometry*, Chapter IV §1, Exercise 1.1, PDF p. 4.
+:::

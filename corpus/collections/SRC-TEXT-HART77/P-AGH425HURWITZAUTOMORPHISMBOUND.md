@@ -376,3 +376,7 @@ minimum in part (b), and step [](#s7){.pf-ref} gives the required automorphism b
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.5, printed p. 215 (entry 4.2.16), argues that the points of $X$ over a branch point $y$ form an orbit of $\operatorname{Aut}(X)$ with conjugate stabilizers, so that the number of them is $|G|/r$ when the ramification index at $x$ is $r$; summing over branch points bounds the order of $G$ in terms of $g$.
+:::

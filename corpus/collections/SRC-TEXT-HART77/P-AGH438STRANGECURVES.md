@@ -352,3 +352,7 @@ curve is a line, proving (b).
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.8, printed p. 222 (entry 4.3.16 for the characteristic-$p$ example and 4.3.17 for the characteristic-zero conclusion), computes the parametrized curve $(t,t^p,t^{2p})$ with its unique point at infinity through which every tangent passes, and in characteristic zero argues that a strange point gives an inseparable projection, impossible for separable maps.
+:::

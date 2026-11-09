@@ -192,3 +192,7 @@ Step [](#s5){.pf-ref} is exactly the required conclusion.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, Chapter IV §1, Exercise 3, PDF p. 30, closes $X$ to a projective nonsingular $\bar X$ with finite complement, uses Exercise 2 to find $f$ with poles exactly at the complementary points, and concludes that $f^{-1}(\AA^1)=X$ is affine because $f$ is finite by (II, 6.8); his second proof embeds $\bar X$ by a very ample divisor supported on the complement. Lomont, Chapter IV §1, Exercise 1.3, PDF p. 4, gives the first route.
+:::

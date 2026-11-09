@@ -409,3 +409,7 @@ their $(n-2)$-plane contains no further point of $X$.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.10, printed p. 223 (entry 4.3.19), uses the trisecant lemma together with a general hyperplane section: the $d$ points of the section span the hyperplane, so $n-1$ of them cannot lie in a smaller linear space for general choices.
+:::

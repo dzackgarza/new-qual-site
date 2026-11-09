@@ -206,3 +206,7 @@ Step [](#s7){.pf-ref} is the required conclusion.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.4, printed p. 207, reduces by (III.3.1) to reduced schemes and by (III.3.2) to irreducible components, notes the normalization is not proper since the image of a proper scheme is proper, gets $\tilde X$ affine from IV.1.3, and descends affineness by Chevalley (III.4.2) along the finite surjection $\tilde X\to X$.
+:::

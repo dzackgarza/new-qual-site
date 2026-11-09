@@ -306,3 +306,7 @@ Step [](#s7){.pf-ref} is the required one-to-one correspondence with $\Pic^0X$.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.10, printed pp. 209–210 (entry 4.1.14), takes $\deg K_X=p_a-1$ from IV.1.9(d), so a divisor of degree zero has $K_X-D-P_0$ of degree $-1$ and hence no sections, and concludes that $\dim|D+P_0|=\deg D=0$; the resulting assignment of degree-one divisors to points of $\Pic^0 X$ is the bijection with which the card identifies $\Pic^0 X$ for $p_a=1$.
+:::

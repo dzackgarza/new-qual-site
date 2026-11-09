@@ -219,3 +219,7 @@ Step [](#s3){.pf-ref} proves part (a), and steps [](#s4){.pf-ref} and [](#s5){.p
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.7, printed pp. 207–208, obtains hyperellipticity from $\dim|K_X|=g-1$ and $\deg K_X=2g-2$, so that for $g=2$ the canonical system is a base-point-free $g^1_2$ giving a degree-two morphism to $\PP^1$ by (II, 7.8.1).
+:::

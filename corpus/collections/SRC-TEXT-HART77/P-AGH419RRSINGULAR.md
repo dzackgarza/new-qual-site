@@ -346,3 +346,7 @@ part (c), and steps [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} prov
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.9, printed p. 209 (entries 4.1.11–4.1.13), proves that every invertible sheaf on the singular curve is $\mathcal L(D)$ for a divisor supported in $X_{\mathrm{reg}}$ by cutting a very ample hyperplane section off the singular locus, identifies the dualizing sheaf for a local complete intersection via (III.7.6), and derives Riemann–Roch $h^0(D)-h^1(D)=\deg D+1-p_a$ from Serre duality $H^1(X,\mathcal L(D))^\vee\cong H^0(X,\omega_X\otimes\mathcal L(-D))$.
+:::

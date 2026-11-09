@@ -315,3 +315,7 @@ the assertion about $X_0$.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.5, printed p. 220 (entry 4.3.10), shows that a nondegenerate $X\subseteq\PP^3$ projecting from a point of itself gives a singular plane image, since otherwise the projection would be an isomorphism onto a nonsingular plane curve and the degree and genus would have to agree; the flat limit of the projection family is then a nonreduced special fibre.
+:::

@@ -138,3 +138,7 @@ Step [](#s3){.pf-ref} gives the required finite morphism.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.6, printed p. 207, produces the finite morphism to $\PP^1$ from the linear system $|K|$; the degree count and finiteness use (II, 6.8).
+:::

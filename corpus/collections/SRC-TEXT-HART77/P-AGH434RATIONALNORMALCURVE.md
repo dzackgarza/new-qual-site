@@ -463,3 +463,7 @@ and [](#s10){.pf-ref} prove its degree-$2$ and degree-$3$ assertions.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.4, printed p. 219, checks that the restriction $H^0(\PP^d,\OO(m))\to H^0(\PP^1,\OO(dm))$ is surjective for every $m$, so the $d$-uple embedding is projectively normal, identifies the quadrics $Q_{ij}$ as generators of the ideal, and concludes the classification of low-degree curves from the degree bound.
+:::

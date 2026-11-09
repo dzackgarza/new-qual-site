@@ -252,3 +252,7 @@ Step [](#s8){.pf-ref} is exactly the required equivalence.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.1, printed p. 218, uses (3.1) with $\deg D\ge2g+1$ for very ampleness and then rules out $\deg D\le4$ on a genus-2 curve by the dimension of $|D|$ and by the $g^1_2$ it would produce.
+:::

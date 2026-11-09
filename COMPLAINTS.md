@@ -509,3 +509,15 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 **Uncertainty.** Searched: all ten retained solution sets plus Kim's chapter sources. Found: nothing beyond the citations noted for IV.4.22, and an explicit `skip.` for IV.6.9. Conclusion: no complete published solution among them. Confidence: high for these sets. Gaps: a published treatment may exist outside them; it has not been located.
 
 **Repair.** A complete published solution of IV.4.22 following the printed hint, and of IV.6.9, checked against the cards.
+
+### IV.3.11(a) — published sources cite Shafarevich instead of proving it
+
+**Object and need.** `P-AGH4311PROJECTIONCLOSEDIMMERSION`, Hartshorne IV Ex. 3.11(a): for a nonsingular variety $X\subseteq\PP^n$ of dimension $r$ with $n>2r+1$, exhibit $O\notin X$ whose projection induces a closed immersion into $\PP^{n-1}$.
+
+**Observed evidence.** A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.11, printed p. 223 (entry 4.3.20), gives the whole of part (a) as "This is Shafarevich Algebraic Geometry 1, theorem 9, page 136" — a citation, not an argument. His entry 4.3.21 then proves part (b), the Veronese secant-variety computation, in full. Park and Lomont do not reach IV.3; the remaining retained sets contain no IV.3 exercise.
+
+**Impact and owner.** The card's own proof of (a) is complete: separate points and tangent vectors by a projection center outside the corresponding proper closed loci, the dimension count $n>2r+1$ guaranteeing the center exists, then (II, 7.3) for the closed immersion. That derivation is not a published solution, so the obligation stays open under #102 alongside III.7.4(b),(d), IV.1.8(c), IV.4.22 and IV.6.9.
+
+**Uncertainty.** Searched: Egbert, Park, Lomont, Saglam–Chris, Cais, Sam, Cutrone–Marshburn, Borcherds, Stein, Kim (Chapters I–III only). Found: the Shafarevich citation, and Egbert's full treatment of (b). Conclusion: no complete published proof of (a) among them. Confidence: high. Gaps: Shafarevich's Theorem 9 itself was not consulted; it is a reference in another book, not an exercise solution.
+
+**Repair.** A complete published solution of IV.3.11(a), or the owner's direction to accept the card's derivation for that part.

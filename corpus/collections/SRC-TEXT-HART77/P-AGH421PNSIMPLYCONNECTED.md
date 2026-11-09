@@ -218,3 +218,7 @@ Step [](#s7){.pf-ref} is exactly the required conclusion.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.1, printed p. 210, retypes the $\PP^1$ case ($2g(X)-2=n(-2)$ with $g\ge0$ forces $g=0$, $n=1$) and then inducts: pulling back an étale cover of $\PP^n$ to a hyperplane gives a connected cover by ampleness and (III.7.9), so the cover has degree one.
+:::

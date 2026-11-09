@@ -352,3 +352,7 @@ asserted Bertini lemma.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.9, printed p. 222 (entry 4.3.18), records that the tangent variety has dimension at most two as a subvariety of $(\PP^{3})^\vee\times X$ and that the trisecant locus has dimension at most one by the trisecant lemma, so their union is a proper closed subset of the dual space; a hyperplane outside it meets $X$ in distinct points, no three collinear and none on a tangent.
+:::

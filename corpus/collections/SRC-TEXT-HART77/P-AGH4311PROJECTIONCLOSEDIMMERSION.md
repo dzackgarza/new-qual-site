@@ -520,3 +520,8 @@ $\PP^4$ required in (b).
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.11, printed p. 223, attributes part (a) to Shafarevich, *Basic Algebraic Geometry* 1, Theorem 9, p. 136 — a citation rather than an argument — and proves part (b) himself (entry 4.3.21): a general point of a secant line to the Veronese surface lies on a one-parameter family of secant lines coming from the conics in the plane through that point, so the secant variety has dimension at most four, while it visibly has dimension at least four.
+Part (a) has no complete published solution in the retained sets; the sets searched are recorded in `COMPLAINTS.md`.
+:::

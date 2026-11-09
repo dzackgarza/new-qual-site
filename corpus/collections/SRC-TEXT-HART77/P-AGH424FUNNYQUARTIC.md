@@ -313,3 +313,7 @@ inflection point, steps [](#s4){.pf-ref} and [](#s5){.pf-ref} identify the dual 
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.4, printed p. 215, applies the Jacobian criterion to $F=x^3y+y^3z+z^3x$ in characteristic $3$: the partials are $F_x=z^3$, $F_y=x^3$, $F_z=y^3$, never simultaneously zero, so $X$ is nonsingular; the Hessian vanishes identically, so every point is an inflection point; the Gauss map is the Frobenius, purely inseparable, and $X\cong X^*$.
+:::

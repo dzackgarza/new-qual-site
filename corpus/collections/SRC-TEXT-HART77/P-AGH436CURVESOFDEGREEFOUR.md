@@ -419,3 +419,7 @@ Step [](#s5){.pf-ref} proves (a), and step [](#s11){.pf-ref} proves (b).
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.6, printed pp. 221–222 (entry 4.3.13), runs the degree-4 alternatives from (2.2) and (2.3), and for $g=1$ observes that $\dim H^0(\PP^3,\mathcal I_X(2))\ge2$ so that $X$ lies on two linearly independent quadrics, whose intersection is the complete intersection containing it.
+:::

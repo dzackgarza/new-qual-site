@@ -400,3 +400,7 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), steps [](#s3){.pf-re
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.7, printed p. 217 (entry 4.2.22), builds the quadratic étale cover from a $2$-torsion invertible sheaf $\mathcal L$ by the $\OO_Y\oplus\mathcal L$-algebra with multiplication twisted by a trivialization of $\mathcal L^{\otimes2}$, and shows that the two constructions are inverse on both sides.
+:::

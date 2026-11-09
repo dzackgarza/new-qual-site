@@ -301,3 +301,7 @@ Step [](#s5){.pf-ref} handles $d=2$.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.12, printed p. 224 (entry 4.3.22, "just explain the advanced method"), reaches nodal degree-$d$ plane curves with $\widetilde X$ of genus zero by smoothing nodes inside the complete linear system, and lists explicit nodal quartics such as $xyz+x^4+y^4=0$ for characteristic $\neq2$ and $xyz+x^2z+y^4=0$ for characteristic $2$, checking the nodes by the Hessian.
+:::
