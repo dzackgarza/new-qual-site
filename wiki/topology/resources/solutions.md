@@ -98,6 +98,6 @@ and a source still to be acquired. Coverage of the Riemannian Hunger set listed 
 For the algebraic correction on §3.3 Ex. 21, use **Martin Frankland, *Cohomology of the Hawaiian
 Earring* (2017)**, `tmp/sources/frankland-hawaiian-earring-2017.pdf` ([PDF](https://uregina.ca/~franklam/Frankland_HawaiianEarring_20170222.pdf)).
 Theorem 1.2 (p. 2) is Specker's theorem: $\operatorname{Hom}(\prod_{\mathbb N}\mathbb Z,\mathbb Z)$ is the countable
-free group on the coordinate projections. Theorem 1.3 (p. 2) gives $H^1(E;\mathbb Z)\congigoplus_{\mathbb N}\mathbb Z$,
+free group on the coordinate projections. Theorem 1.3 (p. 2) gives $H^1(E;\mathbb Z)\cong\oplus_{\mathbb N}\mathbb Z$,
 and Theorem 1.4 (p. 3) the induced dual isomorphism. The cardinality argument cannot answer the
 bracketed one-point-compactification question either way.

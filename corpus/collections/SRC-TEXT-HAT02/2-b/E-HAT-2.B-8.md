@@ -111,7 +111,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 This is impossible.
 
