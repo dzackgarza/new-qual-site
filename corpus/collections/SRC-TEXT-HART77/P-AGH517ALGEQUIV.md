@@ -326,3 +326,7 @@ prove part (c).
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.7, printed p. 257 (algebraic equivalence of divisors).
+:::

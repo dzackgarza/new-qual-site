@@ -373,3 +373,7 @@ isomorphic, proving that the converse fails.
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.3.6, printed p. 279 (analytically equivalent singularities and their resolution).
+:::

@@ -164,3 +164,7 @@ Step [](#s2){.pf-ref} proves the forward implication, and step [](#s3){.pf-ref} 
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.2, printed p. 261 (decomposability and sections, from (2.12)).
+:::

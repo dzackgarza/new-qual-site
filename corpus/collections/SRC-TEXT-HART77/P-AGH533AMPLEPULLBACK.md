@@ -247,3 +247,7 @@ step [](#nakai-moishezon-ample){.pf-ref} gives the required ampleness.
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.3.3, printed p. 274 (ampleness pulls back under a birational morphism of surfaces).
+:::

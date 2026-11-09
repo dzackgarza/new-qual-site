@@ -385,3 +385,7 @@ invariant, step [](#normalization-genus){.pf-ref} computes the genus of the norm
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.3.5, printed p. 278 (hyperelliptic curves of every genus, by blowing up double points).
+:::

@@ -253,3 +253,7 @@ formula for every curve $C\subseteq X$.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.2, printed p. 254 (degree via a hypersurface, and the Hilbert polynomial).
+:::

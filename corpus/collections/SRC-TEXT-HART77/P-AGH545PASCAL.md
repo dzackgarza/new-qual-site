@@ -232,3 +232,7 @@ specializations.
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.5, printed p. 287 (Pascal's theorem from the cubic-surface count).
+:::

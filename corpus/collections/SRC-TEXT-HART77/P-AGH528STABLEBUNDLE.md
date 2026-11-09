@@ -562,3 +562,7 @@ Step [](#s2){.pf-ref} proves part (a), steps [](#s3){.pf-ref}, [](#s4){.pf-ref},
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.8, printed p. 265 (a decomposable bundle is never stable, part (a)).
+:::

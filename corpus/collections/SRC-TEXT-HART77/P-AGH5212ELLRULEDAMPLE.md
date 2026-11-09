@@ -475,3 +475,7 @@ Step [](#s6){.pf-ref} proves part (a), and steps [](#s7){.pf-ref}, [](#s8){.pf-r
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.12, printed p. 268 (ampleness on an elliptic ruled surface).
+:::

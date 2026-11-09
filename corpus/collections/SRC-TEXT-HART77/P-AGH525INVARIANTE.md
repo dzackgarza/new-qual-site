@@ -572,3 +572,7 @@ Nagata bound explicitly cited by the exercise.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.5, printed p. 263 (values of the invariant $e$, including high $e$ realised by indecomposables).
+:::

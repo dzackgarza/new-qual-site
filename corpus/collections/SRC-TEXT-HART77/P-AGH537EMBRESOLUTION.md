@@ -538,3 +538,7 @@ equivalence classification for every singularity in the exercise.
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.3.7, printed p. 279 (embedded resolution of a curve singularity by monoidal transformations).
+:::

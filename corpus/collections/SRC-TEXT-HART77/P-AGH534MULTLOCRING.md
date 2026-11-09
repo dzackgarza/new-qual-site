@@ -446,3 +446,7 @@ steps [](#cone-graded-ring-is-coord-ring){.pf-ref} and [](#cone-vertex-multiplic
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.3.4, printed p. 274 (multiplicity of the local ring).
+:::

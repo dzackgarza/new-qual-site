@@ -394,3 +394,7 @@ members are linearly equivalent.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.7, printed p. 265 (sections of an elliptic ruled surface).
+:::

@@ -285,3 +285,7 @@ the stated example on $\PP^2$.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.3, printed p. 262 (successive extensions and their effect on the invariant $e$).
+:::

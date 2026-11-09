@@ -790,3 +790,7 @@ for every odd $d\ge13$.
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.9, printed p. 290 (the minimum genus of a curve in a given class on the cubic surface).
+:::

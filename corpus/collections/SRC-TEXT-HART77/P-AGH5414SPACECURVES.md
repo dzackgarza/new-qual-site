@@ -242,3 +242,7 @@ existence criterion, and step [](#nonsingular-irreducible-member){.pf-ref} suppl
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.14, printed p. 294 (space curves on the cubic surface and the degree-genus count).
+:::

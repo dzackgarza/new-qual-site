@@ -295,3 +295,7 @@ Step [](#degree-formula){.pf-ref} proves the degree formula, steps [](#multiplic
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.2, printed p. 286 (the quadratic transformation and its effect on the cubic surface).
+:::

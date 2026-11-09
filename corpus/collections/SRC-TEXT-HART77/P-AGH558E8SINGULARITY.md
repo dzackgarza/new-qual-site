@@ -656,3 +656,7 @@ exceptional incidence graph required in part (b).
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.8, printed p. 300 (the $E_8$ surface singularity, parts (a) and (b)).
+:::

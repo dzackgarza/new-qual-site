@@ -226,3 +226,7 @@ part (b).
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.6, printed p. 256 (the diagonal class on $X\times X$ via the blow-up of the diagonal).
+:::

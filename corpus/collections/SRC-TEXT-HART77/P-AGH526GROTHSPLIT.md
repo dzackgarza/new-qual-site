@@ -223,3 +223,7 @@ $\PP^1$ is a direct sum of invertible sheaves.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.6, printed p. 264 (Grothendieck's splitting theorem for vector bundles on $\PP^1$).
+:::

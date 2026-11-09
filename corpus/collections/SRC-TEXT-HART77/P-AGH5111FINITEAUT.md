@@ -396,3 +396,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.11, printed p. 260 (finiteness of $\operatorname{Aut}$ and the numerical invariants of a surface).
+:::

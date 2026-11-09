@@ -665,3 +665,7 @@ apply.
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.16, printed p. 296 (the Fermat cubic surface and its 27 lines).
+:::

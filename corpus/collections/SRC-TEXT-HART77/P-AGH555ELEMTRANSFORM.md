@@ -475,3 +475,7 @@ line-bundle twist.
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.5, printed p. 299 (elementary transformations of ruled surfaces).
+:::

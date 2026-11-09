@@ -299,3 +299,7 @@ general type.
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.1, printed p. 303 (complete-intersection surfaces in $\PP^n$ and their Chern numbers).
+:::

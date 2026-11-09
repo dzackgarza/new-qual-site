@@ -406,3 +406,7 @@ genus-$g$ curve carrying a $g^1_3$.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.10, printed p. 267 (the canonical scroll, and the lift of a hyperplane section).
+:::

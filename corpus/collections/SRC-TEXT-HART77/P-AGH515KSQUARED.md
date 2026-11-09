@@ -195,3 +195,7 @@ Step [](#s2){.pf-ref} proves part (a), and steps [](#s3){.pf-ref}, [](#s4){.pf-r
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.5, printed p. 256 (the canonical class of a surface in $\PP^3$ and $K^2$).
+:::

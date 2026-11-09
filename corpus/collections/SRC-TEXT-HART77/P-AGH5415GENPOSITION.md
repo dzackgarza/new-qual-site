@@ -779,3 +779,7 @@ starred $r=9$ assertion (e).
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.15, printed p. 294 (admissible transformations and general position).
+:::

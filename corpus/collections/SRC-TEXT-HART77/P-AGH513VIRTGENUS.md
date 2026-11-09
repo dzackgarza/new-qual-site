@@ -288,3 +288,7 @@ prove both identities in part (c).
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.3, printed p. 255 (adjunction, both the computational formula and its use).
+:::

@@ -252,3 +252,7 @@ and step [](#h1-negative-d-vanishes){.pf-ref} gives the required vanishing.
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.12, printed p. 292 (Kodaira vanishing on the cubic surface).
+:::

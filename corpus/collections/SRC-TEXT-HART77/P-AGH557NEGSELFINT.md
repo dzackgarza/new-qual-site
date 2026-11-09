@@ -276,3 +276,7 @@ $Y^2<0$, and step [](#hint-divisors-reconciled){.pf-ref} reconciles the proof wi
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.7, printed p. 300 (curves of negative self-intersection).
+:::

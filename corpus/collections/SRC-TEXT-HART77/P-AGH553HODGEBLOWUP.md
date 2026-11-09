@@ -423,3 +423,7 @@ Step [](#direct-sum-splitting){.pf-ref} gives the required direct sum.
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.3, printed p. 298 (Hodge numbers under a monoidal transformation).
+:::

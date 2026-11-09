@@ -825,3 +825,7 @@ steps [](#seventy-two-roots){.pf-ref}, [](#weyl-transitive-on-roots){.pf-ref}, [
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.11, printed p. 291 (the Weyl group $W(E_6)$ and its action on the 27 lines).
+:::

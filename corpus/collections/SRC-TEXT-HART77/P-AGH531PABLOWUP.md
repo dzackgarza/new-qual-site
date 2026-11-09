@@ -138,3 +138,7 @@ blowing up a nonsingular centre.
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.3.1, printed p. 273 ($\PP^2$ blown up at one and two points).
+:::

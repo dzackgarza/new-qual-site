@@ -347,3 +347,7 @@ Steps [](#conics-through-two-points-basis){.pf-ref}, [](#rational-map-base-locus
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.1, printed p. 285 (conics on the quadric surface).
+:::

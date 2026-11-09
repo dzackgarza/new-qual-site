@@ -385,3 +385,7 @@ complement to the whole exceptional fibre and prove part (b).
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.4, printed p. 298 (a corollary of the Hodge index theorem for contracted curves).
+:::

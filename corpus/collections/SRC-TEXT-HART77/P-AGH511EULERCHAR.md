@@ -284,3 +284,7 @@ which is exactly the desired formula.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.1, printed p. 254 (intersection via the Euler characteristic).
+:::

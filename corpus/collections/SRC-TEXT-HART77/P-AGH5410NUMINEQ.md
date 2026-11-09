@@ -387,3 +387,7 @@ apply it directly to the hypotheses of the problem.
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.10, printed p. 291 (the numerical inequality for classes on the cubic surface).
+:::

@@ -425,3 +425,7 @@ Step [](#s7){.pf-ref} proves the required classification.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.9, printed p. 266 (curves on a quadric cone).
+:::

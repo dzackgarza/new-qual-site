@@ -305,3 +305,7 @@ invariant of (a); steps [](#b-first-blowup-transform){.pf-ref}, [](#b-infinitely
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.3.8, printed p. 284 (inequivalent singularities with the same invariants).
+:::

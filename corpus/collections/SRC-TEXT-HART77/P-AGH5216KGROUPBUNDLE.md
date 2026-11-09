@@ -270,3 +270,7 @@ step [](#s6){.pf-ref} proves that it fails for projective curves.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.16, printed p. 273 (the Grothendieck group of bundles on a ruled surface).
+:::

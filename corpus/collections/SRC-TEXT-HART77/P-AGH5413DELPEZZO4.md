@@ -292,3 +292,7 @@ Step [](#sixteen-lines-total){.pf-ref} proves part (a), and steps [](#h0-two-h-t
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.13, printed p. 292 ("16 lines": the lines meeting four given lines, and the count).
+:::

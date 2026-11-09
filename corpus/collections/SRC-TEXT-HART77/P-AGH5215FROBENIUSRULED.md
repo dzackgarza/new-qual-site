@@ -617,3 +617,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), st
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.15, printed p. 271 (the Frobenius-ruled surface and the characteristic-$p$ pathology).
+:::

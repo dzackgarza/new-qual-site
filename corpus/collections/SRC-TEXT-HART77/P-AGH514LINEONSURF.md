@@ -198,3 +198,7 @@ nonsingular degree-$d$ surface containing the line $x=y=0$, proving part (b).
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.4, printed p. 255 (self-intersection of a rational curve on a surface).
+:::

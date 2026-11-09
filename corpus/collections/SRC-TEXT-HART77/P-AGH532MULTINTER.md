@@ -226,3 +226,7 @@ iterated intersection-multiplicity formula.
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.3.2, printed p. 274 (intersection multiplicities under a monoidal transformation).
+:::

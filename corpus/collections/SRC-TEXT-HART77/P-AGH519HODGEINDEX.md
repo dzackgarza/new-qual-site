@@ -255,3 +255,7 @@ the equality criterion.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.9, printed p. 259 (the Hodge index inequality).
+:::

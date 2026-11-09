@@ -312,3 +312,7 @@ the required failure of numerical invariance for very ampleness.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.12, printed p. 261 (very ample but not numerically equivalent, the separation example).
+:::

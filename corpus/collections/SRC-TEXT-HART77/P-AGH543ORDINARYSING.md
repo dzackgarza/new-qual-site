@@ -297,3 +297,7 @@ inseparable positive-characteristic case from the source cited for V.4.3.
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.3, printed p. 286 (ordinary singularities and the lines through them).
+:::

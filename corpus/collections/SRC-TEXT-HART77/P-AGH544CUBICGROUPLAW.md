@@ -445,3 +445,7 @@ that lemma to prove associativity of the chord-and-tangent law.
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.4, printed p. 286 (the group law on the cubic surface).
+:::

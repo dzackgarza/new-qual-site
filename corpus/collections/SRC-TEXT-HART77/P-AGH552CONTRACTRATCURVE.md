@@ -457,3 +457,7 @@ the image as the required projective surface $X_0$.
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.2, printed p. 297 (a Castelnuovo-type contraction criterion).
+:::

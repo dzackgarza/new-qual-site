@@ -307,3 +307,7 @@ $n\ge e+3$, and step [](#s8){.pf-ref} gives the stated degree-five example.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.13, printed p. 269 (elliptic scrolls).
+:::
