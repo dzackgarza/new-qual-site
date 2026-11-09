@@ -206,3 +206,7 @@ Step [](#s4){.pf-ref} is the required upper semicontinuity.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §12, Exercise 12.1, PDF p. 214, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he identifies $\mathfrak m_y/\mathfrak m_y^2=\Omega_{Y/k}\otimes k(y)$ for a closed point through Proposition II.8.2A and Exercise II.8.1, so that $\varphi$ is the fibre dimension of the coherent sheaf $\Omega_{Y/k}$, upper semicontinuous by Example 12.7.2. The proof above proves the same semicontinuity by the Jacobian criterion, $\varphi(z)=N-\operatorname{rank}J(z)$ on an affine chart, and closedness of the rank strata through the vanishing of maximal minors; the two agree on the conclusion and on the identification of $\mathfrak m/\mathfrak m^2$ with the cotangent fibre.
+:::

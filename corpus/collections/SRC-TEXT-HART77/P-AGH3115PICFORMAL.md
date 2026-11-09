@@ -255,3 +255,7 @@ $$
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §11, Exercise 11.5, PDF pp. 209--210, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he writes $\Pic\hat X=\varprojlim\Pic Y_n$ by Exercise II.9.6, identifies the square-zero kernel between successive neighbourhoods as $\OO_Y(-dn)$, writes the Picard exact sequence of Exercise III.4.6, and kills the outer groups with the vanishing of $H^1$ and $H^2$ of $\OO_Y(m)$ for a complete intersection, so every transition map is an isomorphism. The proof above is the same proof, with the vanishing cited from Exercise III.5.5(c) for $\dim Y=N-1\ge3$; the two agree step by step, including the use of $N\ge4$ only through that dimension bound.
+:::

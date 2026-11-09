@@ -209,3 +209,7 @@ $R^if_*\mcf$.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §11, Exercise 11.8, PDF pp. 213--214, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he computes the completed stalk through the theorem on formal functions, tensors the exact sequence $0\to\mathfrak m_y^{n-1}/\mathfrak m_y^n\to\OO_y/\mathfrak m_y^n\to\OO_y/\mathfrak m_y^{n-1}\to0$ with the flat pullback $\scr F_n$ to get $\scr F_y^{\oplus\dim}$, concludes $H^i(X_n,\scr F_n)=0$ for all $n$ by induction, and finishes with Nakayama for the coherent sheaf $R^if_*\scr F$. The proof above is the same induction, with the finite-dimensionality of $\mathfrak m^n/\mathfrak m^{n+1}$ making the first term a finite direct sum of copies of $\scr F_y$; Kim's and the card's steps correspond one to one.
+:::

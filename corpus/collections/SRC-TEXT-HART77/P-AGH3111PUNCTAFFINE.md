@@ -250,3 +250,7 @@ projective hypothesis in (11.2) cannot be omitted.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §11, Exercise 11.1, PDF p. 204, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he notes that $R^{n-1}f_*\OO_U$ reduces to $H^{n-1}(U,\OO_U)$ because $X$ is affine, computes it by the Čech complex of the cover $D(x_1),\dots,D(x_n)$ as the quotient $k[x_1^{\pm1},\dots,x_n^{\pm1}]$ by the sum of the localizations in one variable, and reads off the nonzero class of $x_1^{-1}\cdots x_n^{-1}$. The proof above is the same computation with the Laurent-monomial argument for nonvanishing made explicit (step s6), and it also records that the source statement tested is Corollary 11.2, the vanishing of $R^i$ above the fibre dimension.
+:::

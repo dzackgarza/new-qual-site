@@ -283,3 +283,7 @@ $\mathcal D$ is connected.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §11, Exercise 11.3, PDF pp. 205--206, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he applies the Stein factorization to the morphism determined by the linear system, shows the Stein factor is again a normal variety of dimension at least $2$ with an ample pullback of $\OO(1)$ (Exercise III.5.7), and concludes with the connectedness theorem Corollary III.7.9. The proof above is the same argument with two details made explicit: normality of the Stein factor $Y$ is verified through the identification $\Gamma(V,\OO_Y)=\Gamma(h^{-1}(V),\OO_X)$, and the topological step that a closed surjection with connected fibres pulls connected closed subsets back to connected closed subsets is proved rather than assumed.
+:::

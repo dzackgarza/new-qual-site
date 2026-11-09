@@ -403,3 +403,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), an
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §12, Exercise 12.6, PDF pp. 216--217, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: for (a) he twists so that $\scr L_t=\OO_X$, applies Theorem 3.12.11 in degrees one and zero to get $R^1q_*\scr L$ locally zero and $q_*\scr L$ invertible near $t$, and uses a section nonvanishing on the fibre together with properness to trivialize on a neighbourhood; for (b) he obtains surjectivity from Exercise 3.12.4 and injectivity by restricting to $\{x\}\times T$ and $X\times\{t\}$. The proofs agree in substance. Two points differ: the proof above proves the local triviality lemma directly by Theorem 12.11, with the evaluation map and the closedness of its cokernel's support, rather than by quoting 12.4, which needs an integral base, so the nonreduced $T$ of the exercise is covered without extra care; and the injectivity step is done with a section $s_x$ of $q$ obtained from a $k$-rational point of $X$.
+:::

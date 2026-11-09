@@ -30,6 +30,10 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-09
+  note: 'Read III.11.7 against Hartshorne p. 281 and Dongryul Kim, Solutions to Hartshorne, p. 213. Steps s1-s5, s7 and s8 check out. Repaired step s6: its positive-characteristic argument claimed that the first nonzero Cech term of the transition function of L^p must be a coboundary, which does not exclude the cross terms of the formal units. Step s6 now compares coefficients in the two formal charts Spf k[t][[s]] and Spf k[t^{-1}][[s/t]] and shows that no power u^m of u = 1 + z^2/(xy) is a coboundary, so the class of L has infinite order in the kernel. Against Kim: his 11.7(a) asserts without proof that the kernel is a k-vector space and computes only H^2 vanishing and surjectivity; his remark that the k-vector-space structure is the inverse limit of k-vector spaces is the assertion under discussion.'
 ---
 
 ::: {.problem}
@@ -363,52 +367,65 @@ In characteristic $p>0$, the assertion that $K$ itself is a $k$-vector space is 
 ::: pf-proof
 Take
 $$
-Y=\{z=0\}\subseteq\PP_k^2.
+Y=\{z=0\}\subseteq\PP_k^2,
 $$
-Thus $Y\cong\PP_k^1$.
-Cover $Y$ by the standard opens where $x\ne0$ and $y\ne0$, and take the corresponding formal opens in $\hat X$.
-On their intersection,
+so that $Y\cong\PP_k^1$, and let
 $$
-u
-=
-1+\frac{z^2}{xy}
+U_x=\operatorname{Spf} k[t][[s]],\qquad t=y/x,\ s=z/x,
+\qquad
+U_y=\operatorname{Spf} k[t^{-1}][[s']],\qquad s'=z/y=s/t
 $$
-is a formal unit congruent to $1$ modulo the ideal of $Y$.
-With two opens there is no triple-overlap condition, so $u$ is a Cech transition function for an invertible sheaf $\mathfrak L$ on $\hat X$ whose restriction to $Y$ is trivial.
+be the two formal opens over $x\ne0$ and $y\ne0$. On their intersection
+$$
+\frac{z^2}{xy}=\frac{s^2}{t}=\frac{s'^2}{t^{-1}},
+$$
+so
+$$
+u=1+\frac{z^2}{xy}
+$$
+is a unit of $\OO(U_x\cap U_y)$ congruent to $1$ modulo the ideal of $Y$.
+The formal scheme $\hat X$ is covered by the two opens $U_x,U_y$, which have no
+triple intersection; by the Čech description of invertible sheaves on a formal
+scheme, $u$ is therefore the transition function of an invertible sheaf
+$\mathfrak L$ on $\hat X$ with $\mathfrak L|_Y\cong\OO_Y$.
 
-Its leading term
+What has to be shown is that no positive power $u^m$ is a Čech coboundary, that
+is, is not of the form $A/B$ with
 $$
-\frac{z^2}{xy}
+A=\sum_{i\ge0}a_i(t)s^i\in k[t][[s]],\qquad
+B=\sum_{j\ge0}b_j(t^{-1})s'^j\in k[t^{-1}][[s/t]]
 $$
-represents the standard nonzero Cech class
+units of the respective rings. Suppose $A/B=1+s^{2m}/t^m$, so that
 $$
-x^{-1}y^{-1}
-\in
-H^1(\PP^1,\mco_{\PP^1}(-2)),
+A=B\Bigl(1+\frac{s^{2m}}{t^m}\Bigr).
 $$
-so $\mathfrak L$ is nontrivial.
-In characteristic $p$,
+Comparing coefficients of $s^i$, the constant-in-$s$ coefficients satisfy
+$a_0=b_0$, and $a_0\in k[t]\cap k[t^{-1}]=k$, so after rescaling we may take
+$a_0=b_0=1$. For $1\le i<2m$ the comparison reads
 $$
-u^p
-=
-1+\frac{z^{2p}}{x^py^p}.
+a_i(t)=b_i(t^{-1})\,t^{-i},
 $$
-If $\mathfrak L^{\otimes p}$ were trivial, its first nonzero term would be a Cech coboundary in
+an identity between a polynomial in $t$ and an element of $t^{-i}k[t^{-1}]$;
+hence $a_i=b_i=0$. At $i=2m$ the comparison reads
 $$
-H^1(\PP^1,\mco_{\PP^1}(-2p)).
+a_{2m}(t)=b_{2m}(t^{-1})t^{-2m}+\frac{1}{t^{m}},
 $$
-But that term is
+that is
 $$
-x^{-p}y^{-p},
+a_{2m}(t)-\frac{1}{t^m}\in t^{-2m}k[t^{-1}].
 $$
-which is one of the standard nonzero basis monomials in $H^1(\PP^1,\mco(-2p))$ by [[T-IJW1K]]. Therefore
-$$
-\mathfrak L^{\otimes p}\not\cong\mco_{\hat X}.
-$$
+The left-hand side is a polynomial plus $-t^{-m}$, so its Laurent expansion
+contains the monomial $t^{-m}$ with coefficient $-1$, while every element of
+$t^{-2m}k[t^{-1}]$ is a $k$-linear combination of $t^{-k}$ with $k\ge2m$. This
+is impossible. Hence $u^m$ is not a coboundary for any $m\ge1$. In particular
+$\mathfrak L$ is nontrivial and has infinite order in $K$.
 
-The additive group of a $k$-vector space in characteristic $p$ is killed by $p$.
-Since $K$ contains the class of $\mathfrak L$ and that class is not killed by $p$, the Picard-group law on $K$ cannot make it a $k$-vector space.
-The correct characteristic-free statement is the filtered statement of steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref}.
+The additive group of a $k$-vector space is killed by its prime $p$, so a group
+containing an element of infinite order is not a $k$-vector space. Since the
+group law of $K=\ker(\Pic\hat X\to\Pic Y)$ is the multiplicative structure of
+$\Pic$, the kernel in part (a) is not a $k$-vector space in characteristic $p$.
+The correct characteristic-free statement is the filtered statement of steps
+[](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}.
 :::
 
 :::
@@ -526,4 +543,8 @@ Step [](#s7){.pf-ref} proves (b), and step [](#s8){.pf-ref} proves (c).
 :::
 
 :::
+:::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §11, Exercise 11.7, PDF p. 213, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he writes $\Pic\hat X=\varprojlim\Pic Y_n$, uses the exact sequence of Exercise III.4.6 with $H^2=0$ and $H^1(\OO_Y(-dn))$ growing, concludes that $\Pic\hat X\to\Pic Y$ is surjective with an infinite-dimensional kernel, and remarks that the kernel of $\Pic Y_n\to\Pic Y_1$ is a $k$-vector space. That last remark is the point the proof above corrects: it holds in characteristic zero (step s5, by the $I$-adic logarithm) but fails in characteristic $p$, where step s6 exhibits a line bundle of infinite order in the kernel on the line $z=0$. Kim's parts (b) and (c) agree with steps s7 and s8.
 :::

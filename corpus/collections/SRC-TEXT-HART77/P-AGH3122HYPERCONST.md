@@ -244,3 +244,7 @@ Step [](#s5){.pf-ref} is the required conclusion.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §12, Exercise 12.2, PDF p. 214, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`, is the same computation as here: he writes $0\to\OO_{\PP^n}(-d)\to\OO_{\PP^n}\to\OO_{X_t}\to0$, uses the vanishing of the higher cohomology of $\OO_{\PP^n}$ to get $0\to k(t)\to H^0(X_t,\OO)\to H^1(\PP^n,\OO(-d))\to0$ and $H^i(X_t,\OO)\cong H^{i+1}(\PP^n,\OO(-d))$, and concludes constancy. The two agree; the proof above also treats $n=1$, where the fibre is a zero-dimensional hypersurface and $h^0=d$, and $n=0$.
+:::

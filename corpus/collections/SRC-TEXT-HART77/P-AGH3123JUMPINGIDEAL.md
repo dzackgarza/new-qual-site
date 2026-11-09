@@ -24,9 +24,13 @@ audit:
   by: chatgpt
   date: 2026-09-18
 - event: source-checked
+  by: claude
+  date: 2026-11-09
+  note: 'Read III.12.3 against Hartshorne pp. 291-292 and Dongryul Kim, Solutions to Hartshorne, p. 215, whose errata list notes that the printed statement seems false. Verified the printed claim: for every t one has h^0(I_t) = 1 - h^0(O_{X_t}) = 0 and H^1(I_t) = 0, since H^1(P^4,O) = 0, so there is no jump. The statement is now kept as printed and the erratum at the start of the solution proves the jump for I(1), where the values are 0 and 1 as displayed. Kims solution stops after the exact sequence and does not treat the cohomology, so the twisted computation here is not taken from him.'
+- event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
-  note: Hartshorne III.12.3 prints the jumps for h^0(t, I) and h^1(t, I), which vanish for every t. The statement now asks for the jumps of h^0(t, I(1)) and h^1(t, I(1)).
+  note: Hartshorne III.12.3 prints the jumps for h^0(t, I) and h^1(t, I), which vanish for every t.
 ---
 
 ::: {.problem}
@@ -36,13 +40,13 @@ Use (9.8.3) to construct a flat family $\theset{X_t}$ of curves in $\PP^4$, para
 
 Let $\mci \subseteq \mco_{\PP^4 \times T}$ be the ideal sheaf of the total family $X \subseteq \PP^4 \times T$. Show that $\mci$ is flat over $T$. Then show that
 $$
-h^0(t, \mci(1)) =
+h^0(t, \mci) =
 \begin{cases}
 0 & t \neq 0 \\
 1 & t = 0
 \end{cases}
 \qquad
-h^1(t, \mci(1)) =
+h^1(t, \mci) =
 \begin{cases}
 0 & t \neq 0 \\
 1 & t = 0
@@ -53,6 +57,31 @@ This gives another example of cohomology groups jumping at a special point.
 :::
 
 ::: {.solution}
+The cohomology claim printed in the exercise is false as stated: for every $t$,
+$$
+h^0(t,\mci_t)=0,
+\qquad
+h^1(t,\mci_t)=0 .
+$$
+Indeed $0\to\mci_t\to\OO_{\PP^4}\to\OO_{X_t}\to0$ gives
+$\dim H^0(\mci_t)=h^0(\OO)-h^0(\OO_{X_t})=1-1=0$ because $X_t$ is a connected
+projective curve, and then
+$H^1(\mci_t)\hookrightarrow H^1(\PP^4,\OO)=0$. So there is no jump in the
+untwisted ideal sheaf, and none can be produced from it by semicontinuity.
+
+The jump the exercise is after appears after twisting by $\OO_{\PP^4}(1)$: the
+statements proved below are
+$$
+h^0(\PP^4,\mci_t(1))=
+\begin{cases}0,&t\ne0,\\ 1,&t=0,\end{cases}
+\qquad
+h^1(\PP^4,\mci_t(1))=
+\begin{cases}0,&t\ne0,\\ 1,&t=0.\end{cases}
+$$
+The flat family and the flatness of $\mci$ are as printed, and are proved first
+(steps s1 and s2); the erratum concerns only the two displayed cohomology
+statements.
+
 Use homogeneous coordinates
 $$
 [x_0:x_1:x_2:x_3:x_4]
@@ -153,7 +182,7 @@ flat modules is flat. Therefore $\mci$ is flat over $T$.
 
 :::
 
-::: {.pf-step #s4}
+::: {.pf-step #s3}
 
 After twisting by $\mco_{\PP^4}(1)$, for every $a\ne0$ one has
 $$
@@ -196,7 +225,7 @@ the claimed vanishing.
 
 :::
 
-::: {.pf-step #s5}
+::: {.pf-step #s4}
 
 For the special fibre,
 $$
@@ -256,7 +285,7 @@ with that cokernel. Both have dimension one.
 
 :::
 
-::: {.pf-step #s6}
+::: {.pf-step #s5}
 
 Therefore
 $$
@@ -272,7 +301,7 @@ $$
 
 ::: pf-proof
 
-Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give the displayed values.
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give the displayed values.
 
 :::
 
@@ -281,11 +310,15 @@ Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give the displayed values.
 ::: pf-qed
 
 Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} construct the required flat family and prove flatness of
-its ideal sheaf, and steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove the
+its ideal sheaf, and steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove the
 cohomology jump.
 
 :::
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §12, Exercise 12.3, PDF p. 215, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: his solution checks that the flat limit at $t=0$ is the reduced quartic $X_0$ inside $V(x_2)\cong\PP^3$ and that $\mci$ is flat over $T$ from the exact sequence $0\to\mci\to\OO_{\PP^4\times T}\to\OO_X\to0$, and then stops: it does not compute the two cohomology functions, and his list of corrections records the doubt "Exercise 3.12.3: the statement seems to be false?". The printed claim is indeed false, and the erratum and steps s3--s5 above supply the computation the source omits, for $\mci(1)$.
 :::

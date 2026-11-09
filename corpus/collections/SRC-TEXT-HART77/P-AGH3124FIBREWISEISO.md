@@ -241,3 +241,7 @@ Step [](#s5){.pf-ref} is the required conclusion.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §12, Exercise 12.4, PDF pp. 215--216, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he reduces to $\scr L\otimes\scr M^{-1}$ with fibrewise trivial fibres, applies Corollary 12.9 to get $f_*\scr L$ locally free of rank one, twists so that $f_*\scr L=\OO_Y$, and concludes through the adjunction map $\OO_X\to\scr L$ and the nonvanishing of the corresponding section on each fibre. The proof above is the same chain of steps; it adds the verification that $h^0(X_y,\scr L_y)=1$ for non-closed $y$ as well, by upper semicontinuity and the Jacobson property of a finite-type $k$-scheme, and it obtains the isomorphism $f^*f_*\scr F\to\scr F$ by Nakayama on the cokernel rather than by a nonvanishing-section argument.
+:::

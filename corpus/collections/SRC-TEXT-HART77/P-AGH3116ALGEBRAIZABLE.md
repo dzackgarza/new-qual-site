@@ -485,3 +485,7 @@ This proves (c).
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §11, Exercise 11.6, PDF pp. 210--213, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: for (a) he uses $0\to\scr F(-dn)\to\scr F\to\scr F|_{Y_n}\to0$ with $H^0$ and $H^1$ of $\scr F(-dn)$ vanishing for large $n$; for (b) he shows the kernel of a surjection of locally free formal sheaves is locally free, lifts the map of presentations through part (a), and takes the cokernel, using exactness of completion; for (c) he shows the algebraized coherent sheaf is invertible near $Y$ by a Nakayama argument on $\varprojlim A/f^nA$, then extends it off the finitely many remaining points. The proofs agree. The proof above states the last step as a reflexive-hull argument (a rank-one reflexive sheaf on the locally factorial $\PP^N$ is invertible, and it agrees with the algebraized sheaf near $Y$) instead of an extension over finitely many points, and proves the local freeness near $Y$ by faithful flatness of $A\to\hat A$ together with descent of finite projectivity.
+:::

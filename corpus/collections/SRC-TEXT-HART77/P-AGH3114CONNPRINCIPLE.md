@@ -229,3 +229,7 @@ every fibre has exactly one connected component.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §11, Exercise 11.4, PDF pp. 206--209, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he regularizes and normalizes $T$, applies the Stein factorization to reduce to a finite flat map of curves $S\to T$ with singleton fibres over a dense open, then proves by hand that such a map is bijective, passing to separable function field extensions, using that purely inseparable extensions of curves induce homeomorphisms, and finally producing infinitely many points of $\PP^1$ with sections by a Euclid-style argument. His main work is thus a self-contained proof of the lower semicontinuity of the number of geometric connected components. The proof above quotes that lower semicontinuity (Stacks Project tag 0BUI, whose statement is exactly this semicontinuity for flat proper finite presentation morphisms) and reproduces its Stein-factorization proof; the two agree on the argument, not on the amount that is reproved.
+:::
