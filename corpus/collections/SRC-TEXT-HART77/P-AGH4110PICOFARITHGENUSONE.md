@@ -27,7 +27,7 @@ audit:
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
-  note: Hartshorne IV Ex. 1.10 printed the target group as Pic X; the statement and title now read Pic^0 X.
+  note: 'Hartshorne IV Ex. 1.10, printed p. 299 (PDF p. 314), reads "the elements of the group Pic^0 X", so the statement and title that name Pic^0 X are the printed ones; the printed page was re-read in the retained PDF for this check.'
 ---
 
 ::: {.problem}
