@@ -11,9 +11,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §28 Exercise 2, printed p. 181; the stored
+    statement is the printed sentence.
 - event: solution-written
-  by: Codex 5.3 Spark Extra High
-  date: 2026-08-30
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 28.2, PDF p. 18. The increasing sequence 1 - 1/n
+    has no limit point in [0,1] as a subspace of R_l, half-open intervals isolating each of
+    its points. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -22,78 +33,12 @@ Show that $[0, 1]$ is not limit point compact as a subspace of $\RR_\ell$.
 :::
 
 ::: {.solution}
-::: pf
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.2, PDF p. 18** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the infinite subset and both cases are theirs.
 
-::: pf-step
-Definition of limit point compactness:
+Let $A=\{1-1/n\mid n\in\ZZ_{+}\}\subset[0,1]$, an infinite set. In the subspace $[0,1]$ of $\RR_{\ell}$ no point is a limit point of $A$:
 
-::: pf-proof
+- if $x\in[0,1)$ and $1-1/n\le x<1-1/(n+1)$, then $[x,1-1/(n+1))$ is a basis element of $\RR_{\ell}$ intersected with $[0,1]$ that contains $x$ and meets $A$ at most in $x$ itself;
+- $x=1$ has the neighbourhood $[1,2)\cap[0,1]=\{1\}$, which meets $A$ only in $1$ when $1\in A$.
 
-::: pf-step
-A topological space $X$ is limit point compact (also called countably compact for $T_1$ spaces) if every infinite subset of $X$ has at least one limit point in $X$.
-:::
-
-::: pf-step
-A point $x \in X$ is a limit point of $A \subseteq X$ if every open neighborhood $U$ of $x$ contains a point of $A$ distinct from $x$ (i.e. $(U \setminus \{x\}) \cap A \neq \emptyset$).
-:::
-
-:::
-
-:::
-
-::: pf-step
-Construction of an infinite subset $A \subset [0, 1]$:
-
-::: pf-proof
-
-::: pf-step
-Define
-$$A = \left\{ 1 - \frac{1}{n} : n \in \NN, \; n \ge 2 \right\} = \left\{ \frac{1}{2}, \frac{2}{3}, \frac{3}{4}, \frac{4}{5}, \dots \right\} \subset [0, 1].$$
-:::
-
-::: pf-step
-Since the sequence $x_n = 1 - 1/n$ is strictly increasing, $A$ is an infinite subset of $[0, 1]$.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Verification that $A$ has no limit points in $[0, 1]_{\RR_\ell}$:
-
-::: pf-proof
-We show that for every $x \in [0, 1]$, there exists an open neighborhood $U_x$ of $x$ in $[0, 1]_{\RR_\ell}$ such that $(U_x \setminus \{x\}) \cap A = \emptyset$.
-
-::: pf-step
-Case $x \in [0, 1/2)$: The set $U_x = [x, 1/2) \cap [0, 1]$ is open in $[0, 1]_{\RR_\ell}$, contains $x$, and satisfies $U_x \cap A = \emptyset$ because every element of $A$ is $\ge 1/2$.
-:::
-
-::: pf-step
-Case $x = 1 - 1/n \in A$ for some $n \ge 2$: The set $U_x = [1 - 1/n, 1 - 1/(n+1)) \cap [0, 1]$ is open in the lower limit subspace topology, contains $x$, and contains no other element of $A$, so $(U_x \setminus \{x\}) \cap A = \emptyset$.
-:::
-
-::: pf-step
-Case $x \in (1 - 1/n, 1 - 1/(n+1))$ for some $n \ge 2$: The set $U_x = [x, 1 - 1/(n+1)) \cap [0, 1]$ is open, contains $x$, and satisfies $U_x \cap A = \emptyset$.
-:::
-
-::: pf-step
-Case $x = 1$: The set $U_1 = [1, 2) \cap [0, 1] = \{1\}$ is open in $[0, 1]_{\RR_\ell}$ and contains no point of $A$, so $(U_1 \setminus \{1\}) \cap A = \emptyset$.
-:::
-
-:::
-
-:::
-
-::: pf-step
-$[0, 1]$ is not limit point compact as a subspace of $\RR_\ell$.
-
-::: pf-proof
-The infinite subset $A \subset [0, 1]$ has no limit point in $[0, 1]_{\RR_\ell}$.
-:::
-
-:::
-
-:::
-
+So $A$ is an infinite subset of $[0,1]$ with no limit point in $[0,1]$, and $[0,1]$ is not limit point compact as a subspace of $\RR_{\ell}$.
 :::
