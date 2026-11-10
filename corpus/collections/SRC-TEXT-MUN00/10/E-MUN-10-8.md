@@ -11,12 +11,28 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §10 Exercise 8, printed p. 67; (a) and (b) are
+    stored as printed.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-30
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise 10.8, printed pp.
+    112-113. (a) is his, including the two cases for the smallest element of a subset of the
+    union; (b) is his generalisation to a family indexed by a well-ordered set, with the
+    least index occurring and the least element of its fibre. Whitman skips the check that
+    the defined relation is an order on the union, which well-ordering presupposes under the
+    definition of §10; the card supplies that check for both parts, together with his
+    closing remark that (a) is the addition of ordinal numbers.
 ---
 
 ::: {.exercise}
+
 (a) Let $A_{1}$ and $A_{2}$ be disjoint sets, well-ordered by $<_{1}$ and $<_{2}$, respectively.
 Define an order relation on $A_{1} \cup A_{2}$ by letting $a < b$ either if $a, b \in A_{1}$ and $a <_{1} b$, or if $a, b \in A_{2}$ and $a <_{2} b$, or if $a \in A_{1}$ and $b \in A_{2}$. Show that this is a **well-ordering**.
 
@@ -24,61 +40,25 @@ Define an order relation on $A_{1} \cup A_{2}$ by letting $a < b$ either if $a, 
 :::
 
 ::: {.solution}
-Let $(J,<_J)$ be a well-ordered set, and for each $\alpha\in J$ let $(A_\alpha,<_\alpha)$ be a well-ordered set, with $A_\alpha\cap A_\beta=\varnothing$ for $\alpha\ne\beta$.
-Put $A=\bigcup_{\alpha\in J}A_\alpha$.
-For $a\in A$ let $\iota(a)\in J$ be the unique index with $a\in A_{\iota(a)}$, and define a relation $<$ on $A$ by
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 10.8, printed pp. 112--113** (`tmp/sources/munkres-solutions-whitman.pdf`). Whitman omits the verification that the relation is an order on the union, which well-ordering presupposes by the definition of §10; that verification is supplied here, and the rest is his.
+
+(a) Let $A=A_{1}\cup A_{2}$ and define $a<b$ iff $a,b\in A_{1}$ and $a<_{1}b$, or $a,b\in A_{2}$ and $a<_{2}b$, or $a\in A_{1}$ and $b\in A_{2}$.
+
+*The relation is a simple order.* Only comparability and transitivity need checking, since no clause allows $a=b$ for $a,b$ in the same part (the orders $<_{1},<_{2}$ are strict) and no clause allows $a\in A_{2}$, $b\in A_{1}$.
+
+For comparability, let $a\ne b$ in $A$. If $a,b\in A_{1}$ then $a<_{1}b$ or $b<_{1}a$; if $a,b\in A_{2}$ then $a<_{2}b$ or $b<_{2}a$; if $a\in A_{1}$, $b\in A_{2}$ then $a<b$; and if $b\in A_{1}$, $a\in A_{2}$ then $b<a$. So $a$ and $b$ are comparable.
+
+For transitivity, let $a<b$ and $b<c$. If $a,b\in A_{1}$ then either $c\in A_{1}$ with $b<_{1}c$, and $a<_{1}c$ gives $a<c$, or $c\in A_{2}$, and $a\in A_{1},c\in A_{2}$ gives $a<c$. If $a\in A_{1}$ and $b\in A_{2}$, then $b<c$ forces $b,c\in A_{2}$ with $b<_{2}c$, so $a\in A_{1}$ and $c\in A_{2}$, giving $a<c$. There is no case $a,b\in A_{2}$ and $c\in A_{1}$, since the definition has no clause with $b\in A_{2}$ and $c\in A_{1}$. So $a<c$ in every case.
+
+*The order is a well-ordering.* Let $B\subset A$ be nonempty. If $B\cap A_{1}\ne\varnothing$, then $B\cap A_{1}$ is a nonempty subset of $A_{1}$ and has a smallest element $a$ in $<_{1}$. For any $x\in B$: if $x\in A_{1}$ then $a\le_{1}x$ because $x\in B\cap A_{1}$, so $a\le x$; if $x\in A_{2}$ then $a<x$ by the third clause. If $B\cap A_{1}=\varnothing$, then $B\subset A_{2}$ is nonempty and has a smallest element $a$ in $<_{2}$, which is the smallest element of $B$. In either case $B$ has a smallest element.
+
+(b) Let $J$ be well ordered by $<_{J}$ and let $\{A_{\alpha}\}_{\alpha\in J}$ be a family of pairwise disjoint sets, $A_{\alpha}$ well ordered by $<_{\alpha}$. Put $A=\bigcup_{\alpha\in J}A_{\alpha}$; each $x\in A$ lies in a unique $A_{\alpha}$. Define $x<y$ iff ($x,y\in A_{\alpha}$ and $x<_{\alpha}y$ for some $\alpha$) or ($x\in A_{\alpha}$, $y\in A_{\beta}$ and $\alpha<_{J}\beta$).
+
+*The relation is a simple order.* Comparability: for $x\ne y$ with $x\in A_{\alpha}$, $y\in A_{\beta}$, either $\alpha=\beta$ and $x<_{\alpha}y$ or $y<_{\alpha}x$, or $\alpha\ne\beta$ and $\alpha<_{J}\beta$ or $\beta<_{J}\alpha$. Transitivity: if $x\in A_{\alpha}$, $y\in A_{\beta}$, $z\in A_{\gamma}$ with $x<y$ and $y<z$, then $\alpha\le_{J}\beta\le_{J}\gamma$; if $\alpha=\gamma$ then $\alpha=\beta$ and $x<_{\alpha}y<_{\alpha}z$ gives $x<z$, and otherwise $\alpha<_{J}\gamma$ gives $x<z$. No element is below itself, since $x<y$ always forces $x\ne y$.
+
+*The order is a well-ordering.* Let $B\subset A$ be nonempty and let
 $$
-a<b \iff \iota(a)<_J\iota(b)\quad\text{or}\quad\bigl(\iota(a)=\iota(b)\text{ and }a<_{\iota(a)}b\bigr).
+I=\{\alpha\in J\mid B\cap A_{\alpha}\ne\varnothing\}.
 $$
-The generalization asked for in (b) is: $(A,<)$ is well-ordered.
-Part (a) is the case $J=\{1,2\}$ with $1<_J2$, where the relation above is the order defined in (a).
-
-::: pf
-
-::: {.pf-step #s1}
-
-The relation $<$ is a simple order on $A$.
-
-::: pf-proof
-
-Let $a,b\in A$ with $\alpha=\iota(a)$ and $\beta=\iota(b)$.
-If $\alpha\ne\beta$, exactly one of $\alpha<_J\beta$ and $\beta<_J\alpha$ holds, so exactly one of $a<b$ and $b<a$ holds, and $a\ne b$.
-If $\alpha=\beta$, exactly one of $a<_\alpha b$, $b<_\alpha a$, $a=b$ holds, and these are exactly $a<b$, $b<a$, $a=b$.
-So $<$ is comparable and nonreflexive.
-
-For transitivity let $a<b$ and $b<c$ with $\gamma=\iota(c)$.
-Then $\alpha\le_J\beta\le_J\gamma$.
-If $\alpha<_J\gamma$, then $a<c$.
-Otherwise $\alpha=\beta=\gamma$, so $a<_\alpha b<_\alpha c$, hence $a<_\alpha c$ and $a<c$.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Every nonempty subset $S\subseteq A$ has a smallest element.
-
-::: pf-proof
-
-The set $J_0=\{\alpha\in J : S\cap A_\alpha\ne\varnothing\}$ is nonempty because $S$ is, so it has a least element $\alpha_0$.
-The nonempty subset $S\cap A_{\alpha_0}$ of the well-ordered set $A_{\alpha_0}$ has a least element $m_0$.
-Let $s\in S$ and $\beta=\iota(s)$.
-Then $\beta\in J_0$, so $\alpha_0\le_J\beta$.
-If $\alpha_0<_J\beta$, then $m_0<s$.
-If $\alpha_0=\beta$, then $s\in S\cap A_{\alpha_0}$, so $m_0\le_{\alpha_0}s$ and $m_0\le s$.
-Hence $m_0$ is the smallest element of $S$.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show that $(A,<)$ is well-ordered, which is (b); taking $J=\{1,2\}$ gives (a).
-
-:::
-
-:::
-
+Then $I\ne\varnothing$ because $B\ne\varnothing$, so $I$ has a smallest element $\alpha$ in $<_{J}$. Choose $w\in B\cap A_{\alpha}$; then $B\cap A_{\alpha}$ is a nonempty subset of $A_{\alpha}$ and has a smallest element $a$ in $<_{\alpha}$. For any $x\in B$ with $x\in A_{\beta}$: if $\beta=\alpha$ then $a\le_{\alpha}x$, so $a\le x$; if $\beta\ne\alpha$ then $\beta\in I$ and $\alpha<_{J}\beta$ by minimality of $\alpha$, so $a<x$. Hence $a$ is the smallest element of $B$, and $A$ is well ordered.
 :::
