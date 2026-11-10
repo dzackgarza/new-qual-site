@@ -12,9 +12,24 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §26 Exercise 13, printed p. 172, with Lemma 26.4,
+    Exercise 26.5, Exercise 26.9, TG.5 and TG.7(b); the three parts are stored as printed.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 26.13, PDF p. 15, for the plan. Its printed proofs
+    are not usable — the neighbourhood in (a) is a translate of B rather than one of the
+    fixed point, and (b) and (c) answer compactness questions instead of the Hausdorff one —
+    so the three arguments are written out: A . B closed for A closed and B compact via the
+    compact set c B^{-1} separated from A and the tube lemma, compact times compact compact
+    as an image, and p perfect with G Hausdorff exactly when G/H is. (tmp/sources/munkres-
+    solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -33,145 +48,15 @@ Show that if $G/H$ is compact, then $G$ is compact.
 :::
 
 ::: {.solution}
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.13, PDF p. 15** (`tmp/sources/munkres-solutions-positron-ch3.pdf`) for the plan of the three parts. Its printed proofs are not usable as they stand — the neighbourhood $U\cdot B$ in (a) is a translate of the whole of $B$ rather than a neighbourhood of the fixed point, and its (b) and (c) answer questions about compactness of $G$ instead of the Hausdorff question asked — so the arguments below are written out, using the two facts they cite: that a topological group is Hausdorff (Supplementary Exercise TG.7(b)) and that the quotient map to the coset space is open (TG.5(c)).
 
-::: pf
+Let $G$ be a topological group with identity $e$, $H$ a compact subgroup, $p:G\to G/H$ the quotient map.
 
-::: {.pf-step #part-a}
-Part (a): If $A$ is closed and $B$ is compact in a topological group $G$, then $A \cdot B$ is closed.
+(a) *If $A$ is closed and $B$ compact then $A\cdot B$ is closed.* Let $c\notin A\cdot B$. The set $c\cdot B^{-1}=\{cb^{-1}\mid b\in B\}$ is compact (a homeomorphic image of $B$) and disjoint from $A$: $cb^{-1}=a$ would give $c=ab\in A\cdot B$. As $G$ is Hausdorff, Exercise 26.5 gives disjoint open sets $U\supset A$, $V\supset c\cdot B^{-1}$. The set $\{(g,b)\mid gb^{-1}\in V\}$ is open in $G\times G$ and contains $\{c\}\times B$, so by the tube lemma (Exercise 26.9) there is a neighbourhood $W$ of $c$ with $W\cdot B^{-1}\subset V$. Then $W\cap A\cdot B=\varnothing$: a point $w=ab$ would satisfy $wb^{-1}=a\in A$ and $wb^{-1}\in V$. So $A\cdot B$ is closed.
 
-::: pf-proof
+(b) *If $A$ and $B$ are compact then $A\cdot B$ is compact*, being the image of the compact space $A\times B$ under the continuous multiplication.
 
-::: pf-step
-We show that $G \setminus (A \cdot B)$ is open. Let $c \in G \setminus (A \cdot B)$.
-:::
+(c) *$p$ is perfect.* It is continuous and surjective; each fibre $p^{-1}(\{xH\})=xH$ is compact, being homeomorphic to $H$; and it is closed: for closed $A\subset G$, $p^{-1}(p(A))=A\cdot H$ is closed by (a), with $H$ compact, so $p(A)$ is closed in $G/H$ because $p$ is a quotient map.
 
-::: pf-step
-Then for every $b \in B$, $c b^{-1} \notin A$, so $c b^{-1} \in G \setminus A$.
-:::
-
-::: pf-step
-Since $A$ is closed, $G \setminus A$ is open.
-:::
-
-::: pf-step
-The map $\phi: G \times G \to G$ defined by $\phi(x, y) = x y^{-1}$ is continuous.
-:::
-
-::: pf-step
-For each $b \in B$, since $\phi(c, b) = c b^{-1} \in G \setminus A$, continuity of $\phi$ provides open neighborhoods $U_b$ of $c$ and $V_b$ of $b$ such that $U_b \cdot V_b^{-1} \subseteq G \setminus A$.
-:::
-
-::: pf-step
-The open sets $\{V_b : b \in B\}$ cover the compact set $B$. Choose a finite subcover $V_{b_1}, \dots, V_{b_k}$ of $B$.
-:::
-
-::: pf-step
-Define $W = \bigcap_{i=1}^k U_{b_i}$. As a finite intersection of open neighborhoods of $c$, $W$ is an open neighborhood of $c$.
-:::
-
-::: pf-step
-For any $w \in W$ and $b \in B$, $b \in V_{b_i}$ for some $i$, so $w b^{-1} \in U_{b_i} \cdot V_{b_i}^{-1} \subseteq G \setminus A$, meaning $w b^{-1} \notin A$.
-:::
-
-::: pf-step
-Thus $w \notin A \cdot B$ for all $w \in W$, so $W \cap (A \cdot B) = \emptyset$.
-:::
-
-::: pf-step
-Hence $W \subseteq G \setminus (A \cdot B)$, proving that $G \setminus (A \cdot B)$ is open and $A \cdot B$ is closed.
-:::
-
-:::
-
-:::
-
-::: {.pf-step #part-b}
-Part (b): If $H \le G$ is compact, then the quotient map $p: G \to G/H$ is a closed map.
-
-::: pf-proof
-
-::: pf-step
-Let $C \subseteq G$ be closed.
-:::
-
-::: pf-step
-Under the quotient topology on $G/H$, $p(C)$ is closed in $G/H$ if and only if $p^{-1}(p(C))$ is closed in $G$.
-:::
-
-::: pf-step
-We identify $p^{-1}(p(C))$:
-$$p^{-1}(p(C)) = \{g \in G : gH \in p(C)\} = \{g \in G : gH = cH \text{ for some } c \in C\} = C \cdot H.$$
-:::
-
-::: pf-step
-Since $C$ is closed and $H$ is compact, by step [](#part-a){.pf-ref} the product $C \cdot H$ is closed in $G$.
-:::
-
-::: pf-step
-Thus $p^{-1}(p(C))$ is closed in $G$, so $p(C)$ is closed in $G/H$. Hence $p$ is a closed map.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Part (c): If $H \le G$ is compact and $G/H$ is compact, then $G$ is compact.
-
-::: pf-proof
-
-::: pf-step
-Let $\mathcal{U} = \{O_\alpha\}_{\alpha \in I}$ be an open cover of $G$.
-:::
-
-::: pf-step
-For each $x \in G$, the coset $xH = L_x(H)$ is compact as the continuous image of the compact set $H$ under the left translation homeomorphism $L_x$.
-:::
-
-::: pf-step
-Since $xH$ is compact, there exists a finite subset $I_x \subset I$ such that $xH \subseteq V_x := \bigcup_{\alpha \in I_x} O_\alpha$.
-:::
-
-::: pf-step
-The set $V_x$ is open in $G$, so $C_x = G \setminus V_x$ is closed in $G$.
-:::
-
-::: pf-step
-By step [](#part-b){.pf-ref}, $p$ is a closed map, so $p(C_x)$ is closed in $G/H$, and $W_x = (G/H) \setminus p(C_x)$ is open in $G/H$.
-:::
-
-::: pf-step
-Since $xH \cap C_x = \emptyset$, $xH \notin p(C_x)$, so $xH \in W_x$.
-:::
-
-::: pf-step
-If $yH \in W_x$, then $yH \cap C_x = \emptyset$, so $yH \subseteq V_x = \bigcup_{\alpha \in I_x} O_\alpha$.
-:::
-
-::: pf-step
-The family $\{W_x : xH \in G/H\}$ is an open cover of $G/H$.
-:::
-
-::: pf-step
-Since $G/H$ is compact, there exist finitely many points $x_1, \dots, x_m \in G$ such that $G/H = \bigcup_{j=1}^m W_{x_j}$.
-:::
-
-::: pf-step
-Therefore $G = \bigcup_{j=1}^m p^{-1}(W_{x_j}) \subseteq \bigcup_{j=1}^m V_{x_j} = \bigcup_{j=1}^m \bigcup_{\alpha \in I_{x_j}} O_\alpha$.
-:::
-
-::: pf-step
-This is a finite subcover of $\mathcal{U}$ covering $G$. Hence $G$ is compact. Q.E.D.
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.remark title="Variations"}
-The supplementary nets exercise gives another proof of (a). If $x\in\overline{A\cdot B}$, choose a net $a_\alpha b_\alpha\to x$ with $a_\alpha\in A$ and $b_\alpha\in B$. Compactness gives a subnet $b_{\alpha_\beta}\to b\in B$; along that subnet, $a_{\alpha_\beta}=(a_{\alpha_\beta}b_{\alpha_\beta})b_{\alpha_\beta}^{-1}\to xb^{-1}\in A$, since $A$ is closed. Thus $x=(xb^{-1})b\in A\cdot B$. For metrizable $G$, convergent sequences replace these nets.
+*$G$ is Hausdorff if and only if $G/H$ is.* If $G$ is Hausdorff, let $xH\ne yH$; the cosets $xH$ and $yH$ are disjoint compact subsets of $G$, so by Exercise 26.5 there are disjoint open $U\supset xH$, $V\supset yH$. Their images $p(U)\ni xH$ and $p(V)\ni yH$ are open because $p$ is open, and disjoint because $U\cap V$ contains no coset. Conversely a topological group is $T_{1}$ by definition — one-point sets are closed, singletons being the fibres of translations — and a $T_{1}$ topological group is Hausdorff by Supplementary Exercise TG.7(b). So the assertion reduces to the direction just proved, $G$ Hausdorff implying $G/H$ Hausdorff, which needs the closedness and openness of $p$ together with the compactness of $H$.
 :::
