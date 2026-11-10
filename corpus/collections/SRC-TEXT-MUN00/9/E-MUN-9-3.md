@@ -21,6 +21,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §9 Exercise 3, printed p. 61; the stored statement matches, including the second question about avoiding the choice axiom.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 9.3, printed pp. 102-103 (tmp/sources/munkres-solutions-whitman.pdf). He defines an injection recursively, choosing at each stage the least index whose value is new, which is the same device the card uses; the card takes an explicit enumeration of the pairs (n,k) instead of his recursion on sections, so no principle of recursive definition is invoked.
 ---
 
 ::: {.exercise}
@@ -36,6 +46,8 @@ Can you define an injective function $f: \ZZ_+ \to A$ without using the choice a
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.3, printed pp. 102--103** (`tmp/sources/munkres-solutions-whitman.pdf`); the device of always taking a least index, which is what avoids the choice axiom, is his, applied here to an explicit enumeration of the pairs $(n,k)$.
+
 For each $n$, the injection
 $$
 f_n:\{1,\ldots,n\}\to A

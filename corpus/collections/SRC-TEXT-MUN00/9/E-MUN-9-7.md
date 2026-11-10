@@ -21,6 +21,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §9 Exercise 7, printed p. 61; the four parts are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 9.7, printed p. 106 (tmp/sources/munkres-solutions-whitman.pdf). His answers are the card's: (a) from Theorem 9.1; (b) by composing injections and contradicting the assumed absence of an injection A -> B; (c) by iterating the power set; (d) by the union of the A_n, whose injection into some A_n would restrict to one from A_{n+1} into A_n. No defect found.
 ---
 
 ::: {.exercise}
@@ -38,6 +48,8 @@ If there is an injection of $B$ into $A$, but no injection of $A$ into $B$, we s
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.7, printed p. 106** (`tmp/sources/munkres-solutions-whitman.pdf`); the four arguments below are his.
+
 (a) Let $A$ be uncountable. Since $A$ is infinite, Theorem 9.1 gives an injection
 $$
 \ZZ_+\hookrightarrow A.

@@ -21,6 +21,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §9 Exercise 6, printed p. 61; both parts are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 9.6, printed pp. 105-106 (tmp/sources/munkres-solutions-whitman.pdf). Part (a) is his: every subset of the supposed set of all sets is a set, hence an element of it, so the power set injects into it, which Cantor forbids. Part (b) is his Russell set. Added one sentence to (a): the diagonal set D = {a : a not in psi(a)} shows directly that no map psi : A -> P(A) is surjective, which is the form of Cantor's theorem being used.
 ---
 
 ::: {.exercise}
@@ -41,6 +51,8 @@ $$
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.6, printed pp. 105--106** (`tmp/sources/munkres-solutions-whitman.pdf`); the two contradictions below are his, with the diagonal set stated explicitly in (a).
+
 (a) Suppose $\mathcal A$ were the set of all sets. Every subset of $\mathcal A$ is itself a set, hence by the defining property of $\mathcal A$ it is an element of $\mathcal A$. Therefore
 $$
 \mathcal P(\mathcal A)\subset\mathcal A.
@@ -49,7 +61,7 @@ The inclusion map would be an injection
 $$
 \mathcal P(\mathcal A)\hookrightarrow\mathcal A,
 $$
-contradicting Cantor's theorem, which says there is no injection from the power set of a set into the set itself. Hence a set of all sets cannot exist.
+contradicting Cantor's theorem, which says there is no injection from the power set of a set into the set itself. That theorem in the form used here is the diagonal argument: for any map $\psi:A\to\mathcal P(A)$ the set $D=\{a\in A:a\notin\psi(a)\}$ satisfies $D\ne\psi(a)$ for every $a$, since $a\in D$ exactly when $a\notin\psi(a)$; so no such $\psi$ is surjective, and an injection $\mathcal P(\mathcal A)\hookrightarrow\mathcal A$ would have a surjective left inverse $\mathcal A\to\mathcal P(\mathcal A)$. Hence a set of all sets cannot exist.
 
 (b) Define
 $$

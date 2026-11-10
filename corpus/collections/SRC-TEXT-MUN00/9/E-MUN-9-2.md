@@ -14,6 +14,16 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §9 Exercise 2, printed p. 61; the four collections (a)-(d) are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 9.2, printed pp. 101-102 (tmp/sources/munkres-solutions-whitman.pdf). His lemma gives a choice function for the nonempty subsets of any countable set by pulling back the least element of the image, which yields (a), (b) and (c); for (d) he argues that a choice function on the nonempty subsets of X^omega would well-order [0,1], which nobody has produced, and concludes that no explicit one is at hand. The card's (b) writes the listing 0,1,-1,2,-2,... rather than quoting countability of Z.
 ---
 
 ::: {.exercise}
@@ -30,6 +40,8 @@ Find if possible a choice function for each of the following collections, withou
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.2, printed pp. 101--102** (`tmp/sources/munkres-solutions-whitman.pdf`); the choice function of his lemma, which pulls back the least element of the image in $\ZZ_+$, is the one used in (a)--(c), and his reading of (d) is the one stated.
+
 
 (a) Every nonempty $A\subseteq\ZZ_+$ has a least element. Thus
 $c(A)=\min A$ is a choice function for $\mathcal A$.

@@ -21,6 +21,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §9 Exercise 5, printed p. 61; both parts are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 9.5, printed pp. 104-105 (tmp/sources/munkres-solutions-whitman.pdf). Part (a) is his: choose from the family of nonempty fibres. Part (b) is his too, and so is the answer that no choice is needed there, since only one element of A is chosen and the rest of the left inverse is forced by injectivity. No defect found.
 ---
 
 ::: {.exercise}
@@ -32,6 +42,8 @@ Is the axiom of choice needed?
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.5, printed pp. 104--105** (`tmp/sources/munkres-solutions-whitman.pdf`); the choice from the fibres in (a) and the forced left inverse in (b) are his.
+
 (a) Since $f:A\to B$ is surjective, every fiber
 $$
 f^{-1}(\{b\})\qquad(b\in B)

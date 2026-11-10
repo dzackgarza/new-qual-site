@@ -15,6 +15,16 @@ audit:
   by: codex
   date: 2026-10-31
   note: Checked the statement and hint against Munkres, Topology, second edition, Section 9, Exercise 8.
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §9 Exercise 8, printed p. 61, with the decimal-expansion hint printed there; the card states the exercise and the hint.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 9.8, printed pp. 106-107 (tmp/sources/munkres-solutions-whitman.pdf). He injects R into P(Z_+) through the Dedekind cut x -> {q in Q : q < x} and P(Z_+) into R through binary expansions, and concludes by Schroeder-Bernstein; the card instead injects P(Z_+) into R by the Cantor-set map S -> sum over S of 2/3^n, whose injectivity it checks by comparing the m-th term with the tail, and R into {0,1}^omega by four-bit blocks of decimal digits, then quotes E-MUN-7-3.
 ---
 
 ::: {.problem}
@@ -25,6 +35,8 @@ ending in an infinite string of nines are excluded.
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.8, printed pp. 106--107** (`tmp/sources/munkres-solutions-whitman.pdf`), which uses the Dedekind cuts $x\mapsto\{q\in\QQ:q<x\}$ and binary expansions; the card's two injections are different ones and it checks them directly.
+
 For $S\subseteq\ZZ_+$, put
 $$
 u(S)=\sum_{n\in S}\frac{2}{3^n}\in\RR.

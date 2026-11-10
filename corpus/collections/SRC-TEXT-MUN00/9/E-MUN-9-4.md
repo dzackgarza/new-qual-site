@@ -14,6 +14,16 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §9 Exercise 4, printed p. 61; the stored statement matches.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 9.4, printed pp. 103-104 (tmp/sources/munkres-solutions-whitman.pdf). The theorem is Theorem 7.5, a countable union of countable sets is countable, and the choice step is the selection of one surjection Z_+ -> A_n for each n, exactly as the card states; his proof composes with a surjection Z_+ -> J where the card uses the countable set I x Z_+ directly.
 ---
 
 ::: {.exercise}
@@ -25,6 +35,8 @@ Rewrite the proof so as to make explicit the use of the choice axiom.
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.4, printed pp. 103--104** (`tmp/sources/munkres-solutions-whitman.pdf`); the identification of Theorem 7.5 as the theorem in question, and the selection of one surjection for each member of the family as the choice step, are his.
+
 
 The theorem is Theorem 7.5: a countable union of countable sets is
 countable. Let $\{A_n\}_{n\in\ZZ_+}$ be a family of countable sets, and put
