@@ -21,6 +21,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §4 Exercise 4, printed p. 34; both parts are
+    stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 4.4,
+    printed p. 50 (tmp/sources/munkres-solutions-whitman.pdf). The induction is his: a
+    nonempty subset of {1, ..., n+1} either contains n+1, which is then its largest
+    element, or lies in {1, ..., n}. Part (b) is his remark that the induction is about
+    one fixed initial segment and gives no bound for an arbitrary subset of Z_+, with
+    Z_+ itself as the example of a subset with no largest element.
 ---
 
 ::: {.exercise}
@@ -31,6 +48,8 @@ audit:
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.4, printed p. 50** (`tmp/sources/munkres-solutions-whitman.pdf`); the induction and the answer to (b) below are his.
+
 (a) Let $P(n)$ be the assertion that every nonempty subset of $\{1,\dots,n\}$ has a largest element.
 
 For $n=1$, the only nonempty subset is $\{1\}$, whose largest element is $1$.

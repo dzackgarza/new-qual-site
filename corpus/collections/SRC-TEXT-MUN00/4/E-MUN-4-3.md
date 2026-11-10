@@ -18,9 +18,24 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §4 Exercise 3, printed p. 34; (a) is the
+    intersection of a collection of inductive sets and (b) asks for the basic
+    properties (1) and (2) of Z_+, which are the statements proved below: Z_+ is
+    inductive, and an inductive subset of Z_+ equals Z_+.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 4.3,
+    printed p. 50 (tmp/sources/munkres-solutions-whitman.pdf). His argument for (a) is
+    the card's; for (b) the card reads property (1) off the definition of Z_+ as the
+    intersection of all inductive subsets of R together with (a), and property (2) as
+    the resulting principle of induction, which is his.
 ---
 
 ::: {.exercise}
@@ -31,6 +46,8 @@ audit:
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.3, printed p. 50** (`tmp/sources/munkres-solutions-whitman.pdf`); the intersection argument for (a) is his, and (b) is read off the definition of $\ZZ_+$ as the intersection of all inductive subsets of $\RR$.
+
 (a) Let $\mathcal A$ be a collection of inductive subsets of $\RR$, and put
 $$
 I=\bigcap_{A\in\mathcal A}A.

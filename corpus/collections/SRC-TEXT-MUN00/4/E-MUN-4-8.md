@@ -21,6 +21,24 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §4 Exercise 8, printed p. 34; the three parts
+    and the hint h = (1-a)/a with (1+h)^n >= 1+nh are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 4.8,
+    printed pp. 59-60 (tmp/sources/munkres-solutions-whitman.pdf). His (a) turns -A into
+    a set bounded above and reflects its supremum; (b) and (c) use the Archimedean
+    property against an arbitrary positive lower bound, in (c) through Bernoulli's
+    inequality for (1+h)^n as the hint directs. The card's arguments are these, and the
+    case split on a < 1 versus a >= 1 that he needs in (c) is avoided by bounding B by
+    1 + a throughout.
 ---
 
 ::: {.exercise}
@@ -33,6 +51,8 @@ audit:
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.8, printed pp. 59--60** (`tmp/sources/munkres-solutions-whitman.pdf`); (a) is his reflection of a bounded-above set through $-A$, and (b) and (c) are his Archimedean arguments, (c) through Bernoulli's inequality as the hint directs.
+
 (a) Let $A\subset\RR$ be nonempty and bounded below. Then
 $$
 -A=\{-a:a\in A\}

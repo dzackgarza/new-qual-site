@@ -21,6 +21,22 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §4 Exercise 6, printed p. 34; the inductive
+    definition, the three laws and the bracketed hint (fix n, induct on m) are stored as
+    printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 4.6,
+    printed pp. 53-54 (tmp/sources/munkres-solutions-whitman.pdf), which proves the
+    three laws by exactly the book's hint and annotates each line with the axiom used.
+    The card's three inductions are his; no defect found.
 ---
 
 ::: {.exercise}
@@ -43,6 +59,8 @@ These are called the laws of exponents.
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.6, printed pp. 53--54** (`tmp/sources/munkres-solutions-whitman.pdf`), which proves the three laws by the book's hint — fix $n$ and induct on $m$ — and annotates each line with the axiom it uses. The three inductions below are his.
+
 We prove the three identities by induction.
 
 First fix $n\in\ZZ_+$. For $m=1$,

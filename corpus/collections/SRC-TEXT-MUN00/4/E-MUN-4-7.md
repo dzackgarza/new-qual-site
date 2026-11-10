@@ -21,6 +21,25 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §4 Exercise 7, printed p. 34; the definition
+    a^0 = 1, a^{-n} = 1/a^n and the request to extend all three laws to integer
+    exponents are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 4.7,
+    printed pp. 54-58 (tmp/sources/munkres-solutions-whitman.pdf). He separates the sign
+    cases for the addition law and uses the identity 1/a^n = (1/a)^n, which he proves
+    first; the card takes the shorter route through the same identity, writing
+    a^r a^{-q} = a^r/a^q and splitting on r >= q, and it derives the reciprocal laws it
+    needs from Exercise 4.1(m). The case coverage is the same: both signs, zero, and
+    each composite case.
 ---
 
 ::: {.exercise}
@@ -29,6 +48,8 @@ Let $a \in \RR$ and $a \neq 0$ . Define $a^0 = 1$, and for $n \in \ZZ_+$, $a^{-n
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.7, printed pp. 54--58** (`tmp/sources/munkres-solutions-whitman.pdf`), which runs the three laws through every sign case; the card reaches the same cases by the shorter route of comparing $r$ with $q$ in $a^r/a^q$.
+
 Let $a,b\ne0$, with $a^0=1$ and $a^{-n}=1/a^n$ for $n>0$.
 
 We first extend

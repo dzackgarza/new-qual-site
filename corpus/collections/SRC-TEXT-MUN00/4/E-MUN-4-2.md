@@ -21,6 +21,22 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §4 Exercise 2, printed p. 34; the eleven parts
+    (a)-(k) are stored as printed, using axioms (1)-(6) and the results of Exercise 1.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 4.2,
+    printed pp. 45-49 (tmp/sources/munkres-solutions-whitman.pdf). His arguments are the
+    card's: (e) multiplies x - y > 0 by -z > 0 to get yz > xz, (h) separates the two
+    same-sign cases and uses (e) for the mixed one, and (i) rules out 1/x < 0 by
+    multiplying x > 0. No defect found.
 ---
 
 ::: {.exercise}
@@ -51,6 +67,8 @@ Prove the following "laws of inequalities" for $\RR$, using axioms (1)-(6) along
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.2, printed pp. 45--49** (`tmp/sources/munkres-solutions-whitman.pdf`); the eleven arguments below, each written in terms of $x>y \iff x-y>0$ and closures (6), are his.
+
 Recall that $x>y$ means $x-y>0$, and that positive real numbers are closed under addition and multiplication.
 
 (a) Since $x-y>0$ and $w-z>0$,

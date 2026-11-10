@@ -21,6 +21,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §4 Exercise 1, printed p. 34; the twenty
+    parts (a)-(t) are stored as printed, including the hint to compute (x+0)x in (b) and
+    the axiom range (1)-(5).
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 4.1,
+    printed pp. 38-44 (tmp/sources/munkres-solutions-whitman.pdf), which does all twenty
+    parts from the axioms in order and cites earlier parts as it goes. His (b) uses the
+    book's hint exactly as the card does: (x+0)x = x^2 + 0x while x+0 = x, so (a) gives
+    0x = 0. No defect found.
 ---
 
 ::: {.exercise}
@@ -69,6 +86,8 @@ Prove the following "laws of algebra" for $\RR$, using only axioms (1)-(5):
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.1, printed pp. 38--44** (`tmp/sources/munkres-solutions-whitman.pdf`), which proves the twenty parts in order from axioms (1)--(5) alone, citing the earlier parts as they are established. The proof below is his.
+
 We use only the field axioms, together with earlier parts as they are proved.
 
 (a) From $x+y=x=x+0$, add $-x$ to both sides to obtain $y=0$.

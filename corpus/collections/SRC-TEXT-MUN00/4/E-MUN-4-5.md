@@ -21,6 +21,25 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §4 Exercise 5, printed p. 34; the five parts
+    and all three bracketed hints are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 4.5,
+    printed pp. 51-52 (tmp/sources/munkres-solutions-whitman.pdf). Repaired (d), which
+    had argued by "repeatedly adding or subtracting 1" and induction on |d| without
+    saying what the induction is over; the card now carries an inductive set
+    X_c = {x : c+x and c-x are integers}, whose inductive character is the induction
+    step, together with the three-case verification that 1 is in it. That is Whitman's
+    argument and it also discharges the book's hint "prove it first for d = 1". Parts
+    (a), (b), (c), (e) are his, with (a) and (c) following the hints verbatim.
 ---
 
 ::: {.exercise}
@@ -39,6 +58,8 @@ Prove the following properties of $\ZZ$ and $\ZZ_{+}$ :
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.5, printed pp. 51--52** (`tmp/sources/munkres-solutions-whitman.pdf`); (a) and (c) follow the book's hints as he does, and (d) is his inductive set $X_c$ below.
+
 (a) Fix $a\in\ZZ_+$, and define
 $$
 X=\{x\in\RR:a+x\in\ZZ_+\}.
@@ -80,16 +101,31 @@ a-1\in\ZZ_+\cup\{0\}
 \qquad(a\in\ZZ_+).
 $$
 
-(d) First note that adding or subtracting $1$ preserves $\ZZ$. For positive integers this follows from inductivity and part (c); for $0$ it is immediate; for a negative integer $-a$,
+(d) First, adding or subtracting $1$ preserves $\ZZ$: if $m\in\ZZ_{+}$ then $m+1\in\ZZ_{+}$ because $\ZZ_{+}$ is inductive and $m-1\in\ZZ_{+}\cup\{0\}$ by part (c); the two neighbours of $0$ are $1\in\ZZ_{+}$ and $-1$; and for $a\in\ZZ_{+}$,
 $$
--a+1=-(a-1),\qquad -a-1=-(a+1),
+-a+1=-(a-1)\in\ZZ,
+\qquad
+-a-1=-(a+1)\in\ZZ,
 $$
-and parts (a),(c) show these are integers. Every $d\in\ZZ$ is $0$, a positive integer, or the negative of one. Repeatedly adding or subtracting $1$, and using induction on the positive integer $\abs{d}$, therefore gives
+because $a-1\in\ZZ_{+}\cup\{0\}$ by part (c) and $a+1\in\ZZ_{+}$.
+
+Now fix $c\in\ZZ$ and put
+$$
+X_c=\{x\in\RR:c+x\in\ZZ\ \text{and}\ c-x\in\ZZ\}.
+$$
+Then $1\in X_c$, since $c+1$ and $c-1$ are integers by the previous paragraph. If $x\in X_c$, then $c+x$ and $c-x$ are integers, so
+$$
+c+(x+1)=(c+x)+1\in\ZZ,
+\qquad
+c-(x+1)=(c-x)-1\in\ZZ
+$$
+again by the previous paragraph, hence $x+1\in X_c$. Thus $X_c$ is inductive and therefore $\ZZ_{+}\subset X_c$, so that $c+d$ and $c-d$ are integers for every $d\in\ZZ_{+}$. For $d=0$ both equal $c\in\ZZ$; for $d=-a$ with $a\in\ZZ_{+}$ they are $c+a$ and $c-a$, which are integers by what was just shown. Hence
 $$
 c+d\in\ZZ,
 \qquad
-c-d\in\ZZ.
+c-d\in\ZZ
 $$
+for all $c,d\in\ZZ$.
 
 (e) If either factor is zero, the product is zero. Otherwise write
 $$

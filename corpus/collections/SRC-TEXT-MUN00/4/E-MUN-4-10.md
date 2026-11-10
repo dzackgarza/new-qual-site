@@ -14,6 +14,25 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §4 Exercise 10, printed p. 34; the four parts
+    are stored as printed. The card strengthens the hypothesis of (b)'s second half to
+    0 < h < x, which is not a weakening and is what part (c) needs.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 4.10,
+    printed pp. 63-65 (tmp/sources/munkres-solutions-whitman.pdf). He states explicitly
+    that part (b)'s second half must be read with 0 < h < x, otherwise any large h works
+    but nothing follows for (c); the card makes that hypothesis part of its statement.
+    His (c) bounds B by 1 when a < 1 and by a otherwise and runs the two
+    contradictions with sup B; the card's single bound 1 + a and its step separating
+    x <= 0 from x > 0 are the same two contradictions. No defect found.
 ---
 
 ::: {.exercise}
@@ -39,6 +58,7 @@ Let $b = \sup B$; show that $b^2 = a$.
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.10, printed pp. 63--65** (`tmp/sources/munkres-solutions-whitman.pdf`), whose steps are the card's: the two quadratic estimates, the choice of $h$ in (b), the supremum in (c) and the factorisation in (d). He also says, and the card states, that (b)'s second half must be read with $0<h<x$.
 
 ::: pf
 

@@ -21,6 +21,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §4 Exercise 9, printed p. 34; the four parts
+    are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 4.9,
+    printed pp. 60-62 (tmp/sources/munkres-solutions-whitman.pdf). Both arguments reduce
+    (a) to the well-ordering of Z_+; the card shifts A by the Archimedean property
+    instead of by a chosen element as he does, then gets (b) from (a), (c) from (b), and
+    (d) by scaling x - y above 1 and applying (c). Uniqueness in (b) is his: two such
+    integers differ by an integer strictly between 0 and 1, which he shows impossible.
 ---
 
 ::: {.exercise}
@@ -35,6 +52,8 @@ audit:
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.9, printed pp. 60--62** (`tmp/sources/munkres-solutions-whitman.pdf`); (a) is his reduction of a set of integers bounded above to the well-ordering of $\ZZ_+$, and (b)-(d) are built from it in the order the book asks.
+
 (a) Let $A\subset\ZZ$ be nonempty and bounded above. By the Archimedean property choose $N\in\ZZ_+$ larger than an upper bound for $A$. Then
 $$
 B=\{N-a:a\in A\}
