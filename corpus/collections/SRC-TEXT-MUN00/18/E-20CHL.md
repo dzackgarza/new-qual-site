@@ -12,9 +12,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §18 Exercise 11, printed p. 112; the definition
+    of continuity in each variable separately is stored as printed.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 18.11, PDF p. 13. Each slice map is the composite
+    of F with an imbedding x -> x x y_0 (Exercise 18.4), hence continuous.
+    (tmp/sources/munkres-solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -25,25 +36,11 @@ Show that if $F$ is continuous, then $F$ is continuous in each variable separate
 :::
 
 ::: {.solution}
-For $y_0\in Y$ let $i_{y_0}\colon X\to X\times Y$, $i_{y_0}(x)=(x,y_0)$, and for $x_0\in X$ let $j_{x_0}\colon Y\to X\times Y$, $j_{x_0}(y)=(x_0,y)$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.11, PDF p. 13** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the composition argument is theirs. Whitman, printed p. 188, proves the same by chasing a neighbourhood through a product basis element.
 
-::: pf
+Fix $y_{0}\in Y$. By Exercise 18.4 the map $j:X\to X\times Y$, $j(x)=x\times y_{0}$, is an imbedding, in particular continuous. The map $h:X\to Z$ of the exercise is $h=F\circ j$, a composite of continuous maps, hence continuous. So $F$ is continuous in its first variable.
 
-::: {.pf-step #inclusions-continuous}
-The maps $i_{y_0}$ and $j_{x_0}$ are continuous.
+Fix $x_{0}\in X$. The same argument with $k(y)=F(x_{0}\times y)=F\circ j'$ for the imbedding $j'(y)=x_{0}\times y$ shows that $F$ is continuous in its second variable.
 
-::: pf-proof
-A map into $X\times Y$ is continuous if and only if its compositions with the projections $\pi_X$ and $\pi_Y$ are continuous.
-Here $\pi_X\circ i_{y_0}=\operatorname{id}_X$ and $\pi_Y\circ i_{y_0}$ is the constant map at $y_0$; likewise $\pi_X\circ j_{x_0}$ is constant at $x_0$ and $\pi_Y\circ j_{x_0}=\operatorname{id}_Y$.
-Identity and constant maps are continuous.
-:::
-
-:::
-
-::: pf-qed
-The maps of the problem are $h=F\circ i_{y_0}$ and $k=F\circ j_{x_0}$, composites of continuous maps by step [](#inclusions-continuous){.pf-ref} and the hypothesis on $F$.
-:::
-
-:::
-
+Hence a continuous $F$ is continuous in each variable separately; the converse fails, by Exercise 18.12.
 :::
