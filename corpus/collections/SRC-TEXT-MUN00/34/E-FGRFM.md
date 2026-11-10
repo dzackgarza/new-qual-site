@@ -21,7 +21,7 @@ audit:
     (tmp/sources/munkres-solutions-poulsen-S34.pdf, Internet Archive snapshot 20180827202044), and
     "Doug's World", "Munkres - Topology - Chapter 4 Solutions", Problem 34.5 with Propositions 5 and
     6, printed pp. 10-11 (tmp/sources/munkres-solutions-dougsworld-ch4.pdf); checked against
-    Munkres, Topology (2000), Section 34 Exercise 5, printed p. 218, Theorem 29.1, Theorem 29.3 and
+    Munkres, Topology (2000), Section 34 Exercise 5, printed p. 218, Theorem 29.1, Theorem 29.2 and
     Exercise 30.4. Both implications are true, and the card's proof is Moller's: for a countable
     basis B, the neighbourhoods of infinity in the one-point compactification are the complements of
     compact sets, a countable basis of open sets with compact closures gives a countable increasing
@@ -29,7 +29,8 @@ audit:
     Y is compact Hausdorff, so Theorem 34.3 applies. Conversely a compact metrizable Y is second
     countable and X is an open subspace. What was corrected: Moller writes "For each point x in C
     there is a basis neighborhood Ux in B such that U is compact [Thm 29.3]", leaving the letter U
-    undefined; the card states the cover by relatively compact basis elements, which is Exercise
+    undefined, and his 29.3 is a mis-citation -- Corollary 29.3 is about closed and open subspaces
+    of a locally compact space, and the statement used is Theorem 29.2; the card states the cover by relatively compact basis elements, which is Exercise
     30.4's argument applied pointwise.
 ---
 
