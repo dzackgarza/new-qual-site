@@ -13,14 +13,19 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §25 Exercise 9, printed p. 162, with
+    Supplementary Exercise TG.4 and the hint; the stored statement is the printed one.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 25.9, PDF p. 10. Translations are homeomorphisms,
+    so xC and Cx are both the component of x and hence equal, which is normality.
+    (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -31,21 +36,7 @@ Show that $C$ is a normal subgroup of $G$.
 :::
 
 ::: {.solution}
-For each $g\in G$, left translation
-$$
-L_g:G\to G,\qquad L_g(x)=gx,
-$$
-is a homeomorphism. Therefore it sends components to components. Since $L_g(C)=gC$ contains $g$, it is exactly the component containing $g$. Similarly, right translation gives that $Cg$ is the component containing $g$. Hence
-$$
-gC=Cg
-$$
-for every $g\in G$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 25.9, PDF p. 10** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
 
-First, $C$ is a subgroup. If $x,y\in C$, then $xC=C$, because both are components containing $x$ and $e\in C$ implies $x\in xC$. Thus $xy\in C$. Also inversion is a homeomorphism fixing $e$, so it sends the component $C$ of $e$ to itself; hence $x^{-1}\in C$.
-
-Finally $gC=Cg$ for every $g$ implies
-$$
-gCg^{-1}=C.
-$$
-Thus $C$ is a normal subgroup of $G$.
+Let $G$ be a topological group, $e$ its identity and $C$ the component of $e$. For $x\in G$ the left translation $y\mapsto xy$ is a homeomorphism (Exercise TG.4), so $xC$ is the component of $x$; likewise $Cx$ is the component of $x$. Hence $xC=Cx$ for every $x$, that is, $C$ is normal. (It is a subgroup by Exercise TG.3 and contains $e$.)
 :::
