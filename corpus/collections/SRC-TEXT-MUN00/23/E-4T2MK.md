@@ -12,9 +12,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §23 Exercise 11, printed p. 152, with Lemma 23.2
+    and Theorem 23.3; the stored statement is the printed one.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 23.11, PDF p. 3. A connected fibre meeting one
+    side of a would-be separation of X lies in it, so the sides are saturated, and being
+    open and saturated they have open images that would separate Y. (tmp/sources/munkres-
+    solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -24,36 +36,11 @@ Show that if each set $p^{-1}(\theset{y})$ is connected, and if $Y$ is connected
 :::
 
 ::: {.solution}
-Suppose $X=U\cup V$ with $U,V$ disjoint, nonempty, and open; we derive a separation of $Y$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.11, PDF p. 3** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the saturation argument is theirs.
 
-::: pf
+Let $p:X\to Y$ be a quotient map with every fibre $p^{-1}(\{y\})$ connected and $Y$ connected. Suppose $X=U\cup V$ is a separation.
 
-::: {.pf-step #u-v-saturated}
-$U$ and $V$ are saturated: $p^{-1}(p(U))=U$ and $p^{-1}(p(V))=V$.
+For $y\in p(U)$ pick $x\in U$ with $p(x)=y$. The fibre $p^{-1}(\{y\})$ is connected and meets $U$ (in $x$), so by Lemma 23.2 the whole fibre lies in $U$. Hence $p^{-1}(p(U))\subset U$, and the reverse inclusion always holds, so $U=p^{-1}(p(U))$ is saturated; likewise $V$.
 
-::: pf-proof
-For $y\in Y$, the fiber $F_y=p^{-1}(\{y\})$ is the disjoint union of the relatively open sets $F_y\cap U$ and $F_y\cap V$.
-Since $F_y$ is connected, $F_y\subseteq U$ or $F_y\subseteq V$.
-So a fiber that meets $U$ lies in $U$, and likewise for $V$.
-:::
-
-:::
-
-::: {.pf-step #images-separate-y}
-$p(U)$ and $p(V)$ form a separation of $Y$.
-
-::: pf-proof
-They are nonempty because $U$ and $V$ are, and their union is $p(X)=Y$ because $p$ is surjective.
-By step [](#u-v-saturated){.pf-ref}, a point of $p(U)\cap p(V)$ would have its fiber in both $U$ and $V$, so they are disjoint.
-By step [](#u-v-saturated){.pf-ref}, $p^{-1}(p(U))=U$ and $p^{-1}(p(V))=V$ are open, so $p(U)$ and $p(V)$ are open in the quotient topology.
-:::
-
-:::
-
-::: pf-qed
-Step [](#images-separate-y){.pf-ref} contradicts the connectedness of $Y$, so $X$ has no separation.
-:::
-
-:::
-
+Since $p$ is a quotient map and $U$, $V$ are open and saturated, $p(U)$ and $p(V)$ are open in $Y$; they are disjoint (a common point would give a point of $U\cap V$), they are nonempty ($p$ is surjective and $U,V\ne\varnothing$), and $p(U)\cup p(V)=Y$. So $p(U),p(V)$ separate $Y$, contradicting the connectedness of $Y$. Hence $X$ is connected.
 :::
