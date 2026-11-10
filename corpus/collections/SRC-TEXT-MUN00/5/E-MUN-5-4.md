@@ -21,6 +21,29 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-corrected
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Part (f) did not say what the retained printing says. Munkres, Topology (2000), §5
+    Exercise 4(f), printed p. 39, reads "If A is a subset of B, find an injective map
+    m : (A^omega)^n -> B^omega", read on the page image as well as in the text layer.
+    The card stated instead "m : X^A -> X^B", and its earlier note called that the
+    printed map. Dan Whitman's manual (printed p. 71) records why both readings exist:
+    the older printings say X^A -> X^B, which the text never defines, and the printing
+    retained here was changed. The statement now follows the retained printing; the
+    older reading is recorded here rather than silently dropped.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 5.4,
+    printed pp. 71-73 (tmp/sources/munkres-solutions-whitman.pdf). Parts (a)-(e) are his.
+    Part (f) now proves the map the retained printing asks for: interleave the n
+    sequences x_1, ..., x_n by the bijection k = (j-1)n + i between Z_+ and
+    Z_+ x {1, ..., n}; injectivity is that bijection's uniqueness. The previous proof of
+    the X^A -> X^B reading, which padded with a chosen point, is superseded.
 ---
 
 ::: {.exercise}
@@ -37,10 +60,12 @@ Let $m, n \in \ZZ_{+}$ . Let $X \neq \varnothing$ .
 
 (e) Find a bijective map $l: X^{\omega} \times X^{\omega} \to X^{\omega}$ .
 
-(f) If $A \subset B$, find an injective map $m: X^A \to X^B$ .
+(f) If $A \subset B$, find an injective map $m: (A^{\omega})^{n} \to B^{\omega}$ .
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 5.4, printed pp. 71--73** (`tmp/sources/munkres-solutions-whitman.pdf`); the six constructions below are his, part (f) being the interleaving he writes with the division algorithm.
+
 Choose once and for all a point $x_0\in X$.
 
 (a) If $m\le n$, define
@@ -81,17 +106,18 @@ l((x_1,x_2,\dots),(y_1,y_2,\dots))
 $$
 Taking odd and even coordinates gives the inverse, hence $l$ is bijective.
 
-(f) Let $A\subset B$. For $u\in X^A$, define $m(u)\in X^B$ by
+(f) Let $A\subset B$. Given
 $$
-m(u)(b)=
-\begin{cases}
-u(b),&b\in A,\\
-x_0,&b\in B-A.
-\end{cases}
+x=(x_1,\dots,x_n)\in (A^{\omega})^{n},
 $$
-If $u\ne v$, they differ at some $a\in A$, and then $m(u)(a)\ne m(v)(a)$. Thus
+with each $x_i=(x_i(1),x_i(2),\dots)$ a sequence in $A$, define $m(x)=y\in B^{\omega}$ by
 $$
-m:X^A\hookrightarrow X^B
+y_k=x_i(j),
+\qquad\text{where } k=(j-1)n+i,\quad i\in\{1,\dots,n\},\ j\in\ZZ_+ .
+$$
+Every $k\in\ZZ_+$ has exactly one such expression, because division of $k-1$ by $n$ gives a unique quotient $j-1$ and remainder $i-1$ with $0\le i-1<n$; and $y_k\in A\subset B$, so $y\in B^{\omega}$. If $x\ne x'$, then $x_i\ne x'_i$ for some $i$, hence $x_i(j)\ne x'_i(j)$ for some $j$, and at $k=(j-1)n+i$ the two images differ. Thus
+$$
+m:(A^{\omega})^{n}\hookrightarrow B^{\omega}
 $$
 is injective.
 :::

@@ -21,6 +21,25 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §5 Exercise 2, printed pp. 38-39; both parts
+    are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 5.2,
+    printed pp. 68-69 (tmp/sources/munkres-solutions-whitman.pdf). His (a) splits at the
+    last coordinate and his (b) is the pairing map (a_1,a_2,a_3,...) -> ((a_1,a_2),
+    (a_3,a_4), ...); the card gives the same two maps with the inverse written directly,
+    which is what proves bijectivity, rather than his coordinate-by-coordinate injectivity
+    and surjectivity checks. His parity lemma (that i/2 or (i+1)/2 is a positive integer
+    according as i is even or odd) is what the card's appeal to the displayed inverse
+    replaces.
 ---
 
 ::: {.exercise}
@@ -34,6 +53,8 @@ $$
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 5.2, printed pp. 68--69** (`tmp/sources/munkres-solutions-whitman.pdf`); the two bijections are his, and where he checks injectivity and surjectivity coordinate by coordinate the card exhibits the two-sided inverse.
+
 (a) Define
 $$
 \Phi:A_1\times\cdots\times A_n

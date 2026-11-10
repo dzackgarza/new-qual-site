@@ -21,6 +21,28 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §5 Exercise 3, printed p. 39; the four parts
+    are stored as printed, including the parenthetical about changing a function's range
+    in (a) and the cross-reference to the exercises of §19 in (c).
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 5.3,
+    printed pp. 69-70 (tmp/sources/munkres-solutions-whitman.pdf). His (b) replaces one
+    coordinate of a chosen element of B, as the card does; his (d) has A union B
+    contained in the product of the unions, with a counterexample to the converse, and
+    the intersection equal to the product of the intersections. The card's (d) states
+    the same inclusion and equality but does not write his counterexample; the strictness
+    it asserts, that coordinates may come from different sides, is his reason. Its
+    remark in (c), that for a countable family the converse is the countable axiom of
+    choice and is not provable in ZF, is stronger than the manual's "this requires the
+    Axiom of Choice" and is true; the book defers the point to the exercises of §19.
 ---
 
 ::: {.exercise}
@@ -39,6 +61,8 @@ Does the converse hold?
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 5.3, printed pp. 69--70** (`tmp/sources/munkres-solutions-whitman.pdf`); the four parts below are his, and so is the reading of (c)'s converse as a use of the axiom of choice.
+
 Write
 $$
 A=\prod_{i\ge1}A_i,

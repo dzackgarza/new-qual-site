@@ -21,6 +21,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §5 Exercise 5, printed p. 39; the four
+    subsets of R^omega are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 5.5,
+    printed pp. 74-75 (tmp/sources/munkres-solutions-whitman.pdf). His answers are the
+    card's: (a), (b) and (c) are the products of Z, of [i, infinity) and of R up to the
+    99th coordinate and Z after it; (d) fails, his witness being that two sequences in
+    the set with different constant values force every factor to contain both values.
+    No defect found.
 ---
 
 ::: {.exercise}
@@ -37,6 +54,8 @@ Which of the following subsets of $\RR^{\omega}$ can be expressed as the cartesi
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 5.5, printed pp. 74--75** (`tmp/sources/munkres-solutions-whitman.pdf`), with the same four answers; the card replaces his two constant sequences in (d) by the equivalent argument that both values must lie in every factor.
+
 (a) Yes. The set is
 $$
 \prod_{i=1}^{\infty}\ZZ.
