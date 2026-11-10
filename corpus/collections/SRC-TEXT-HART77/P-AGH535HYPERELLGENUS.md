@@ -41,7 +41,7 @@ audit:
 ---
 
 ::: {.problem}
-Assume $\operatorname{char}k\ne2$. Let $a_1, \ldots, a_r$, $r \geqslant 5$, be distinct elements of $k$, and let $Y$ be the curve in $\PP^2$ given by the (affine) equation $y^2=\prod_{i=1}^r\left(x-a_i\right)$.
+Let $a_1, \ldots, a_r$, $r \geqslant 5$, be distinct elements of $k$, and let $Y$ be the curve in $\PP^2$ given by the (affine) equation $y^2=\prod_{i=1}^r\left(x-a_i\right)$.
 Show that the point $P$ at infinity on the $y$-axis is a singular point.
 Compute $\delta_P$ and $g(\tilde{Y})$, where $\tilde{Y}$ is the normalization of $Y$.
 Show in this way that one obtains hyperelliptic curves of every genus $g \geqslant 2$.
@@ -61,6 +61,8 @@ y^2z^{r-2}
 \prod_{i=1}^r(x-a_i z)
 =0.
 $$
+
+The exercise is printed with no hypothesis on $\operatorname{char}k$, and its last two requests need $\operatorname{char}k\ne2$, which enters twice below: step [](#affine-part-nonsingular){.pf-ref} divides by $2$ to get $y=0$, and step [](#infinitely-near-A-singularity){.pf-ref} takes a square root in $k[[v]]$ of the unit $\prod_i(1-a_iv)$. In characteristic $2$ the equation $y^2=f(x)$ with $f$ squarefree defines a purely inseparable double cover, so $k(Y)=k(x)(\sqrt f)=k(x)^{1/2}$, the normalization is $\PP^1$ with $g=0$ for every $r$, and there is no degree-two morphism at all; the construction then gives no hyperelliptic curve. Those two steps carry the hypothesis; the singular point at infinity and step [](#point-at-infinity-singular){.pf-ref} do not need it.
 
 ::: pf
 
@@ -387,5 +389,5 @@ invariant, step [](#normalization-genus){.pf-ref} computes the genus of the norm
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.3.5, printed p. 278 (hyperelliptic curves of every genus, by blowing up double points).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.5, PDF p. 278: he computes the projective closure $z^{r-2}y^2=\prod(x-a_iz)$, checks the Jacobian at $\infty=(0:1:0)$ and finds it zero, notes that after setting $y=1$ the lowest order term is $z^{r-2}$ so the point has multiplicity $r-2$, and then argues that projecting to the $x$-coordinate gives a degree-two cover of $\PP^1$ whose Riemann--Hurwitz count has $2g+2$ branch points, so $n=2g+2$ realizes every genus. He never computes $\delta_P$, which the exercise asks for; steps [](#multiplicity-at-infinity){.pf-ref} to [](#delta-invariant-piecewise){.pf-ref} supply it as $\binom{r-2}{2}+\lfloor(r-2)/2\rfloor$, from the strict transform $v^{r-2}=u^2\prod_i(1-a_iv)$ and the $A_{r-3}$ singularity that its unit factor reduces to. His genus count is step [](#normalization-genus){.pf-ref} by a different route, $p_a(Y)-\delta_P$. Recorded in COMPLAINTS for $\delta_P$.
 :::

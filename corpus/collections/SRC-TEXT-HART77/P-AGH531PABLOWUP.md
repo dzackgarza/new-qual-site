@@ -140,5 +140,5 @@ blowing up a nonsingular centre.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.3.1, printed p. 273 ($\PP^2$ blown up at one and two points).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.1, PDF p. 273: the whole of his solution is "This follows from 3.4, which says that $H^i(\widetilde X)\approx H^i(X)$ and the fact that $p_a$ is calculated from the Euler characteristic". Result (3.4) and its corollary (3.5) are the monoidal case, where the centre is a point; the exercise blows up a nonsingular subvariety of any codimension, and the invariance of $H^i(X,\OO_X)$ is then the vanishing of the higher direct images of $\OO_{\widetilde X}$ under a projective birational morphism of regular schemes, proved by Chatzistamatiou and Rülling, *Vanishing of the higher direct images of the structure sheaf*, Compositio Math. 151 (2015) 2131--2144, Theorem 1.1. Steps [](#cohomology-invariance){.pf-ref} to [](#arithmetic-genus-equal){.pf-ref} are that reduction, with $p_a(Z)=(-1)^n(\chi(Z,\OO_Z)-1)$.
 :::

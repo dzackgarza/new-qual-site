@@ -540,5 +540,5 @@ equivalence classification for every singularity in the exercise.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.3.7, printed p. 279 (embedded resolution of a curve singularity by monoidal transformations).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.7, PDF pp. 279--284: the entry is a Singular session, not an argument. He runs `resolve` on each germ, prints the resulting chart tree, records for each of (a)--(e) which exceptional divisor appears in which chart, and concludes "this would seem to say that (a), (b), (d) are equivalent and (c), (e) are not equivalent to any others. However, we should check the multiplicities of the exceptionals (a), (b), (d) to make sure they are actually equivalent resolutions", ending with the commands `displayMultsequence` and "This last set of commands should show that (d) is not equivalent". No $\delta_P$ is computed and the check is left open. The incidence lists he prints give (a), (b) and (d) the same seven charts and (c) a different entry, which is the classification of step [](#summary-table){.pf-ref}; his own command for $C_d$ is run on the germ of (d) as $x^4+y^5+y^6$, one degree higher than the exercise. Recorded in COMPLAINTS.
 :::

@@ -37,7 +37,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove or disprove: the following two singularities have the same multiplicity, and the same configuration of infinitely near singular points with the same multiplicities, hence the same $\delta_P$, but are not equivalent.
+Show that the following two singularities have the same multiplicity, and the same configuration of infinitely near singular points with the same multiplicities, hence the same $\delta_P$, but are not equivalent.
 
 (a) $x^4-x y^4=0$.
 
@@ -53,6 +53,13 @@ and
 $$
 C_b:\quad g=x^4-x^2y^3-x^2y^5+y^8=0.
 $$
+
+The assertion of the exercise fails, and what is proved below is its failure. Both germs have multiplicity $4$ at the origin, but their first infinitely near points have different multiplicities: the strict transform of $C_a$ in the chart $x=uv$, $y=v$ is $u^4-uv=u(u^3-v)$, of order $2$, while that of $C_b$ is $u^4-u^2v-u^2v^3+v^4$, whose lowest term is $u^2v$, of order $3$. The two therefore do not have the same configuration of infinitely near singular points with the same multiplicities, and their delta invariants are
+$$
+\delta_0(C_a)=\binom42+\binom22=7,\qquad
+\delta_0(C_b)=\binom42+\binom32=9.
+$$
+The part of the assertion that does hold is that the two germs are not equivalent, which is step [](#claim-false){.pf-ref}; Egbert's chart count of the two embedded resolutions differs as well, and his transcript reaches the same conclusion.
 
 ::: pf
 
@@ -307,5 +314,5 @@ invariant of (a); steps [](#b-first-blowup-transform){.pf-ref}, [](#b-infinitely
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.3.8, printed p. 284 (inequivalent singularities with the same invariants).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.8, PDF p. 284: "Clearly these two singularities have the same multiplicity by looking at the lowest term (it's 4). The configuration of infinitely near singular points can be seen as in 3.7 ... To see they are not equivalent, note to compute the multiplicity sequence, we use the list `L=resolve(I,1)` command as in 3.7 which gives 3 charts for (a) yet (4) for (b)." He asserts the equality of configurations without computing the sequences, and his chart count is the only part of the argument. The sequences are computed here: $4,2$ for (a) and $4,3$ for (b), with $\delta_0=7$ and $9$, which is why the printed assertion is corrected at the head of the solution.
 :::

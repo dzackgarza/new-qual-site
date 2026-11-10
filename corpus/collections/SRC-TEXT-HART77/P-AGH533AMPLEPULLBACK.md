@@ -249,5 +249,9 @@ step [](#nakai-moishezon-ample){.pf-ref} gives the required ampleness.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.3.3, printed p. 274 (ampleness pulls back under a birational morphism of surfaces).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.3, PDF p. 274: he recalls I Ex. 7.5, that an irreducible plane curve of degree $d>1$ has no point of multiplicity $\ge d$, and generalizes it to $\PP^n$; then, since $D$ is very ample, $D\cdot C$ is $\deg C$, any class on $\widetilde X$ is $\pi^*C-rE$, and
+$$
+(2\pi^*D-E)\cdot(\pi^*C-rE)=2\deg C-r>0,\qquad (2\pi^*D-E)^2=4D^2+E^2>0 .
+$$
+Step [](#multiplicity-degree-bound){.pf-ref} is his generalization of I Ex. 7.5, obtained by intersecting the embedded curve with a general hyperplane through the image of $P$; steps [](#ample-meets-exceptional){.pf-ref}, [](#positive-on-other-curves){.pf-ref} and [](#positive-self-intersection){.pf-ref} are his two positivity computations, and they are applied through Nakai--Moishezon rather than to the single curve he checks. Matches.
 :::

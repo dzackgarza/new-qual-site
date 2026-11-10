@@ -228,5 +228,9 @@ iterated intersection-multiplicity formula.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.3.2, printed p. 274 (intersection multiplicities under a monoidal transformation).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.2, PDF p. 274: $\pi^*D\cdot\pi^*C=C\cdot D$, $E\cdot\pi^*C=0$, $E^2=-1$, then $\pi^*C=\widetilde C+rE$ from (3.6) and
+$$
+\widetilde C\cdot\widetilde D=(\pi^*C-rE)\cdot(\pi^*D-r'E)=C\cdot D-rr',
+$$
+"so that's the first part. The second part follows trivially." Steps [](#total-transform-formula){.pf-ref} and [](#blowup-intersection-identities){.pf-ref} supply the three identities he quotes, and steps [](#finite-resolution-disjoint){.pf-ref} to [](#sum-over-common-points){.pf-ref} are the telescoping sum he leaves at "trivially", which needs a resolution of $C\cup D$ and an extra blowup at each remaining transverse intersection. Matches.
 :::
