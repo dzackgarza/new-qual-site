@@ -10,6 +10,22 @@ classification:
   - Continuous Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Jesper Michael Moller, "Solutions to exercises
+    in Munkres", file S35.pdf, Exercise 35.7, page 2 of the file
+    (tmp/sources/munkres-solutions-poulsen-S35.pdf, Internet Archive snapshot 20220130234235),
+    checked against Munkres, Topology (2000), Section 35 Exercise 7, printed p. 224, Theorem 35.1 and
+    Exercise 35.6. Its (a) gives the explicit retraction of the plane onto the logarithmic spiral --
+    in polar form, send the point of modulus rho to the spiral point of parameter log rho, and fix
+    the origin -- and the card writes the same map in Cartesian coordinates; its (b) is the
+    Tietze-plus-absolute-retract argument, since the knotted x-axis is a closed subspace of R^3
+    homeomorphic to the line. What was corrected: Moller writes of (b) "I can't find an explicit
+    retraction R^3 -> K, though", which is honest but leaves the reader to check that the composite
+    h^{-1} . H is a retraction; the card writes the composite and verifies it fixes K pointwise.
 ---
 
 ::: {.exercise}

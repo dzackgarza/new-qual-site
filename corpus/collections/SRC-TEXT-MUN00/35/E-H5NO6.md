@@ -10,6 +10,23 @@ classification:
   - Continuous Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Jesper Michael Moller, "Solutions to exercises
+    in Munkres", file S35.pdf, Exercise 35.4, page 1 of the file
+    (tmp/sources/munkres-solutions-poulsen-S35.pdf, Internet Archive snapshot 20220130234235),
+    checked against Munkres, Topology (2000), Section 35 Exercise 4, printed p. 223, Exercise 31.5 and
+    Theorem 23.5. Its three parts are the card's: Y is the equalizer of the retraction and the
+    identity, hence closed in a Hausdorff Z; a retract of the connected plane is connected while a
+    two-point set is not; and x -> x/|x| retracts the punctured plane onto the circle. What was
+    corrected: "Doug's World", "Munkres - Topology - Chapter 4 Solutions", Problem 35.4, printed
+    p. 13, argues (b) by "since A is Hausdorff as a subspace of R^2, there are disjoint open sets
+    for each of the points in A, which form a separation of A", which is not valid as stated -- every
+    Hausdorff space would be disconnected by that reasoning; the card uses connectedness of the
+    plane, which is Moller's argument.
 ---
 
 ::: {.exercise}

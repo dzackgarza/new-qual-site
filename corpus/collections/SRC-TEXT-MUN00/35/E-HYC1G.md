@@ -14,6 +14,25 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: dbFin, "Section 35: Problem 9 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-35-the-tietze-extension-theorem/problem-9-solution/
+    (read 2026-11-10; kept at
+    tmp/sources/dbfin/section-35-the-tietze-extension-theorem/problem-9-solution.txt), checked
+    against Munkres, Topology (2000), Section 35 Exercise 9, printed p. 224, and its printed hint,
+    with Theorem 18.3, Theorem 33.1 and Theorem 35.1. Its three parts are the card's: the topology
+    axioms and the identification of each X_i with a closed subspace (the source builds, for an open
+    set of X_i, the union of a chain of extensions to the X_{i+k}); continuity from the restrictions,
+    which is immediate from the definition; and normality from the printable induction in which the
+    pasting lemma gives a function on (A cup B cup X_n) inside X_{n+1} which Tietze extends. What was
+    corrected: the source's (b) digresses at length about when a gluing lemma applies ("if we knew
+    that X_1 is contained in U ... However, it might be that every neighborhood of some point in X_1
+    intersects all spaces X_n") before giving the one-line argument, which is the definition of the
+    coherent topology; the card states the one line. The card also shows the one-point sets closed,
+    which the source omits and which normality requires.
 ---
 
 ::: {.exercise}

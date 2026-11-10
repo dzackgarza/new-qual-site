@@ -10,6 +10,22 @@ classification:
   - Normal Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Jesper Michael Moller, "Solutions to exercises
+    in Munkres", file S35.pdf, Exercise 35.6, page 2 of the file
+    (tmp/sources/munkres-solutions-poulsen-S35.pdf, Internet Archive snapshot 20220130234235),
+    checked against Munkres, Topology (2000), Section 35 Exercise 6, printed p. 223, its hint, Theorem
+    34.2, Theorem 37.3 and Theorem 35.1. Part (a) is the card's: a homeomorphism from the closed copy
+    Y_0 extends to Z and postcomposition with its inverse retracts Z onto Y_0. Part (b) is Moller's:
+    a compact Hausdorff space imbeds as a closed subspace of the cube [0,1]^J, the cube has the
+    universal extension property with the Tychonoff theorem assumed, and by (a) and Exercise 35.5(b)
+    a retract of it does too. What was corrected: Moller writes that the space "is a retract of the
+    UEP space [0,1]^J, hence is itself a UEP space [Ex 31.5.(b)]", citing Exercise 31.5, which is
+    about the equalizer of two maps; the retract argument is Exercise 35.5(b), and the card cites it.
 ---
 
 ::: {.exercise}

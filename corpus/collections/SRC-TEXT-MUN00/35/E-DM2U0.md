@@ -10,6 +10,23 @@ classification:
   - Normal Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: dbFin, "Section 35: Problem 2 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-35-the-tietze-extension-theorem/problem-2-solution/
+    (read 2026-11-10; kept at
+    tmp/sources/dbfin/section-35-the-tietze-extension-theorem/problem-2-solution.txt), checked
+    against Munkres, Topology (2000), Section 35 Exercise 2, printed p. 223, and Step 1 of the proof
+    of Theorem 35.1. Its estimate is the card's: the approximating function g satisfies
+    |f - g| <= r max{2a, 1-a} = rb, and the iteration converges exactly when b < 1, which for
+    0 < a < 1 is equivalent to 0 < a < 1/2. What was corrected: the source leaves the convergence
+    conditions as the broken displays "we need to ensure that sum_{k>=0} r a b^k ... or b. This
+    means 0 < b < 1 ... or b", so the value of b is never stated as a condition; the card states
+    q = max{1-a, 2a} < 1 and reads off the interval. The source's remark that a = 1/3 minimizes b is
+    kept in spirit: at a = 1/3, b = 2/3.
 ---
 
 ::: {.exercise}

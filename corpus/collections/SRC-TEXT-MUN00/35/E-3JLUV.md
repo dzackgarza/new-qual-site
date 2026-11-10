@@ -15,6 +15,21 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Jesper Michael Moller, "Solutions to exercises
+    in Munkres", file S35.pdf, Exercise 35.3, page 1 of the file
+    (tmp/sources/munkres-solutions-poulsen-S35.pdf, Internet Archive snapshot 20220130234235 of
+    web.math.ku.dk/~moller/e02/3gt/opg/S35.pdf), checked against Munkres, Topology (2000), Section 35
+    Exercise 3, printed p. 223, Theorem 35.1, Theorem 28.2 and Exercise 20.3. The three implications
+    are the card's: for (i) implies (ii) Moller takes d(x,y) + |phi(x) - phi(y)|, which induces the
+    same topology because the identity is a uniform-equivalence between d and d, and is unbounded;
+    for (ii) implies (iii) he extends a surjection of a closed discrete infinite subset onto Z_+ by
+    Tietze; for (iii) implies (i) he uses that limit point compact metrizable spaces are compact and
+    that a metric on a compact space is bounded. The card writes the same three steps with the
+    imbedding x -> (x, phi(x)) named. No correction to the mathematics was needed.
 ---
 
 ::: {.exercise}

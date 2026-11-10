@@ -14,6 +14,20 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solutions: Jesper Michael Moller, "Solutions to exercises
+    in Munkres", file S35.pdf, Exercise 35.5, pages 1-2 of the file
+    (tmp/sources/munkres-solutions-poulsen-S35.pdf, Internet Archive snapshot 20220130234235), and
+    "Doug's World", "Munkres - Topology - Chapter 4 Solutions", Problem 35.5, printed p. 13
+    (tmp/sources/munkres-solutions-dougsworld-ch4.pdf); checked against Munkres, Topology (2000),
+    Section 35 Exercise 5, printed p. 223, Theorem 35.1 and Theorem 19.6. Both parts are the card's:
+    extend the coordinates one at a time by Tietze and reassemble by the universal property of the
+    product; then extend into a retract of R^J and postcompose with the retraction. No correction to
+    the mathematics was needed; Moller states (a) through the universal property of products, which
+    is the step the card writes as Theorem 19.6.
 ---
 
 ::: {.exercise}
