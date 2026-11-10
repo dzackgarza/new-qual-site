@@ -12,9 +12,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §21 Exercise 12, printed p. 135, with Lemma 21.4;
+    the four parts and the three hints are stored as printed.
 - event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-30
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 21.12, PDF pp. 26-27. Delta = epsilon over two for
+    addition, the three-term expansion for multiplication, the five cases of the preimage of
+    an interval under the reciprocal, and subtraction and quotient as composites with
+    negation and the reciprocal. (tmp/sources/munkres-solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -53,60 +65,27 @@ $$
 :::
 
 ::: {.solution}
-Throughout, $\rho((x,y),(x_0,y_0))<\delta$ means $\abs{x-x_0}<\delta$ and $\abs{y-y_0}<\delta$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.12, PDF pp. 26--27** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the four parts are theirs, following the book's hints. Whitman's printed pp. 249--250 gives the same four.
 
-::: pf
+Throughout $d(a,b)=\abs{a-b}$ on $\RR$ and $\rho((x,y),(x_{0},y_{0}))=\max\{\abs{x-x_{0}},\abs{y-y_{0}}\}$ on $\RR^{2}$, which induces the product topology (Exercise 21.3(a)).
 
-::: {.pf-step #part-a}
-(a) Addition is continuous.
-
-::: pf-proof
-Given $\varepsilon>0$, let $\delta=\varepsilon/2$.
-If $\rho((x,y),(x_0,y_0))<\delta$, then $\abs{(x+y)-(x_0+y_0)}\le\abs{x-x_0}+\abs{y-y_0}<2\delta=\varepsilon$.
-:::
-
-:::
-
-::: {.pf-step #part-b}
-(b) Multiplication is continuous.
-
-::: pf-proof
-Given $(x_0,y_0)$ and $0<\varepsilon<1$, let $\delta=\varepsilon/\bigl(3(\abs{x_0}+\abs{y_0}+1)\bigr)$, so $\delta<1$.
-Since $xy-x_0y_0=x_0(y-y_0)+y_0(x-x_0)+(x-x_0)(y-y_0)$, if $\rho((x,y),(x_0,y_0))<\delta$ then
+(a) *Addition.* Let $(x_{0},y_{0})\in\RR^{2}$ and $\varepsilon>0$; take $\delta=\varepsilon/2$. If $\rho((x,y),(x_{0},y_{0}))<\delta$ then
 $$
-\abs{xy-x_0y_0}<\abs{x_0}\delta+\abs{y_0}\delta+\delta^2<(\abs{x_0}+\abs{y_0}+1)\delta=\varepsilon/3<\varepsilon.
+d(x+y,x_{0}+y_{0})\le\abs{x-x_{0}}+\abs{y-y_{0}}\le2\rho((x,y),(x_{0},y_{0}))<2\delta=\varepsilon .
 $$
-:::
 
-:::
-
-::: {.pf-step #part-c}
-(c) The reciprocal $r(x)=1/x$ is continuous on $\RR-\{0\}$.
-
-::: pf-proof
-Let $x_0\ne0$ and $\varepsilon>0$, and put $\delta=\min\{\abs{x_0}/2,\ \varepsilon\abs{x_0}^2/2\}$.
-If $\abs{x-x_0}<\delta$, then $\abs x>\abs{x_0}/2$, so
+(b) *Multiplication.* Let $(x_{0},y_{0})\in\RR^{2}$ and $\varepsilon>0$; choose $0<\delta<\min\{\varepsilon/(\abs{x_{0}}+\abs{y_{0}}+1),1\}$. If $\rho((x,y),(x_{0},y_{0}))<\delta$ then
 $$
-\abs{\frac1x-\frac1{x_0}}=\frac{\abs{x-x_0}}{\abs x\abs{x_0}}<\frac{2\delta}{\abs{x_0}^2}\le\varepsilon.
+d(xy,x_{0}y_{0})\le\abs{x_{0}}\abs{y-y_{0}}+\abs{y_{0}}\abs{x-x_{0}}+\abs{x-x_{0}}\abs{y-y_{0}}
+<\delta\big(\abs{x_{0}}+\abs{y_{0}}+\delta\big)<\frac{\varepsilon}{\abs{x_{0}}+\abs{y_{0}}+1}\big(\abs{x_{0}}+\abs{y_{0}}+1\big)=\varepsilon,
 $$
-:::
+using $\delta<1$.
 
-:::
+(c) *Reciprocals.* Let $f(x)=1/x$ on $\RR-\{0\}$. For an interval $(a,b)$,
+$$
+f^{-1}\big((a,b)\big)=\begin{cases}(1/b,\,1/a),&0<a<b,\\ (1/b,\,1/a),&a<b<0,\\ (-\infty,\,1/a)\cup(1/b,\,+\infty),&a<0<b,\\ (1/b,\,+\infty)=f^{-1}((a,b)),&a=0<b,\\ (-\infty,\,1/a),&a<b=0,\end{cases}
+$$
+that is, in every case an open subset of $\RR-\{0\}$ (the five cases being exactly those the hint lists). Since the open intervals form a basis of $\RR$, $f$ is continuous.
 
-::: {.pf-step #part-d}
-(d) Subtraction and the quotient $(x,y)\mapsto x/y$ on $\RR\times(\RR-\{0\})$ are continuous.
-
-::: pf-proof
-Negation $y\mapsto-y$ is continuous, since $\abs{(-y)-(-y_0)}=\abs{y-y_0}$.
-Subtraction is addition composed with $\operatorname{id}\times(-)$, and the quotient is multiplication composed with $\operatorname{id}\times r$; a product of continuous maps is continuous by [[E-G4SRA]], and steps [](#part-a){.pf-ref}, [](#part-b){.pf-ref}, [](#part-c){.pf-ref} give the remaining factors.
-:::
-
-:::
-
-::: pf-qed
-Steps [](#part-a){.pf-ref} through [](#part-d){.pf-ref} prove (a) through (d).
-:::
-
-:::
-
+(d) *Subtraction and quotient.* The map $g(x)=-x$ and the identity are continuous on $\RR$, so $(x,y)\mapsto x\times(-y)$ is continuous by Exercise 18.10, and the subtraction $x-y$ is the composite of it with addition, hence continuous. Similarly $x/y$ on $\RR\times(\RR-\{0\})$ is the composite of $(x,y)\mapsto x\times(1/y)$, which is continuous by (c) with Exercise 18.10, and multiplication, hence continuous.
 :::
