@@ -25,7 +25,7 @@ audit:
   by: claude
   date: 2026-11-10
   note: >-
-    Read against Munkres, Topology (2000), §4 Exercise 7, printed p. 34; the definition
+    Read against Munkres, Topology (2000), §4 Exercise 7, printed p. 35; the definition
     a^0 = 1, a^{-n} = 1/a^n and the request to extend all three laws to integer
     exponents are stored as printed.
 - event: solution-written

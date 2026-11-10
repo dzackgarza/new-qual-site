@@ -25,7 +25,7 @@ audit:
   by: claude
   date: 2026-11-10
   note: >-
-    Read against Munkres, Topology (2000), §4 Exercise 9, printed p. 34; the four parts
+    Read against Munkres, Topology (2000), §4 Exercise 9, printed p. 35; the four parts
     are stored as printed.
 - event: solution-written
   by: claude

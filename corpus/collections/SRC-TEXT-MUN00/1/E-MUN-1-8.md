@@ -25,7 +25,7 @@ audit:
   by: claude
   date: 2026-11-10
   note: >-
-    Read against Munkres, Topology (2000), §1 Exercise 8, printed p. 14; the four
+    Read against Munkres, Topology (2000), §1 Exercise 8, printed p. 15; the four
     questions are stored as printed, including the last one asking why P(A) is called
     the power set.
 - event: solution-written

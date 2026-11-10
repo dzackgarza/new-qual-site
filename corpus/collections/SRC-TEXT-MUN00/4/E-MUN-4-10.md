@@ -18,7 +18,7 @@ audit:
   by: claude
   date: 2026-11-10
   note: >-
-    Read against Munkres, Topology (2000), §4 Exercise 10, printed p. 34; the four parts
+    Read against Munkres, Topology (2000), §4 Exercise 10, printed pp. 35-36; the four parts
     are stored as printed. The card strengthens the hypothesis of (b)'s second half to
     0 < h < x, which is not a weakening and is what part (c) needs.
 - event: solution-written

@@ -25,7 +25,7 @@ audit:
   by: claude
   date: 2026-11-10
   note: >-
-    Read against Munkres, Topology (2000), §4 Exercise 8, printed p. 34; the three parts
+    Read against Munkres, Topology (2000), §4 Exercise 8, printed p. 35; the three parts
     and the hint h = (1-a)/a with (1+h)^n >= 1+nh are stored as printed.
 - event: solution-written
   by: claude

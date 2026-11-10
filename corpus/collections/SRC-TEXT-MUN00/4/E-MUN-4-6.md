@@ -25,7 +25,7 @@ audit:
   by: claude
   date: 2026-11-10
   note: >-
-    Read against Munkres, Topology (2000), §4 Exercise 6, printed p. 34; the inductive
+    Read against Munkres, Topology (2000), §4 Exercise 6, printed p. 35; the inductive
     definition, the three laws and the bracketed hint (fix n, induct on m) are stored as
     printed.
 - event: solution-written

@@ -25,7 +25,7 @@ audit:
   by: claude
   date: 2026-11-10
   note: >-
-    Read against Munkres, Topology (2000), §5 Exercise 2, printed pp. 38-39; both parts
+    Read against Munkres, Topology (2000), §5 Exercise 2, printed p. 38; both parts
     are stored as printed.
 - event: solution-written
   by: claude

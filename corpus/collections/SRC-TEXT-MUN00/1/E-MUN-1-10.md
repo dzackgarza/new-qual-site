@@ -25,7 +25,7 @@ audit:
   by: claude
   date: 2026-11-10
   note: >-
-    Read against Munkres, Topology (2000), §1 Exercise 10, printed p. 14; the five
+    Read against Munkres, Topology (2000), §1 Exercise 10, printed p. 15; the five
     subsets (a)-(e) are stored as printed.
 - event: solution-written
   by: claude

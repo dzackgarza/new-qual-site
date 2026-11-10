@@ -503,7 +503,19 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 
    *Still without a located complete published solution, nineteen cards.* `E-HAT-2.B-3`, `E-HAT-2.B-4`, `E-HAT-2.B-5`, `E-HAT-2.B-7`, `E-HAT-2.B-9`, `E-HAT-2.C-1`, `E-HAT-2.C-6`, `E-HAT-3.3-21`, `E-HAT-3.A-1`, `E-HAT-3.A-2`, `E-HAT-3.A-4`, `E-HAT-3.B-2`, `E-HAT-3.B-4`, `E-HAT-4.1-1`, `E-HAT-4.1-4`, `E-HAT-4.1-6`, `E-HAT-4.1-7`, `E-HAT-4.1-9`, `E-HAT-4.A-1`. Each card carries a checked proof and says what it rests on: `E-HAT-2.B-5` on Putman's generalized Schoenflies theorem with the MSE 4773641 construction verified step by step; `E-HAT-2.C-6` on Dugger's antipodal involution with the trace computed on the card; `E-HAT-3.3-21` on Eda–Kawamura and Wiegold for the degree-two counterexample to the bracketed question, with Stanford's flawed $\ZZ\times\RR$ paragraph rejected; `E-HAT-2.B-3`, `-4` and `-7` on Hatcher's own indicated arguments, checked. A published exercise solution for any of the nineteen, or an owner decision that the card's checked proof suffices, would close it.
 
-### III.7.4(b), (d) have no complete published solution in the sets inspected
+### `SRC-TEXT-MUN00`: the published sets, and §3, §8 and §11 print exercises with no card
+
+**Object and need.** Every Munkres card is to carry a proof transcribed from a published solution with the set and its printed page on the card, or a checked proof plus this entry listing every source searched ([#106](https://github.com/dzackgarza/new-qual-site/issues/106)). The first batch — §1, §2, §4, §5, 32 cards — is discharged: every card of those four sections carries **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019)**, its exercise number and printed page, and none needed to fall back on this entry. The sets, their page offsets and the sections each covers are tabulated in [the topology solutions page](wiki/topology/resources/solutions.md); the two cross-checks are `shenapse`, *Exercise-Munkres* (Chapter 1, §1–§11) and `9beach`, *A solutions manual for Topology by James Munkres* (§1–§4 only).
+
+**Observed evidence — the missing sections.** The collection card `SRC-TEXT-MUN00` carries `completion: complete` and its `source.sections` list runs 1, 2, 4, 5, …, 85. Three sections of the book that print exercises have no card at all and no entry in that list: **§3 Relations** (exercises printed on p. 28), **§8 The Principle of Recursive Definition** (printed pp. 55–56) and **§11 The Maximum Principle** (printed pp. 70–71). `corpus/collections/SRC-TEXT-MUN00/` holds no directory 3, 8 or 11, and the repository contains no `E-MUN-3-` id.
+
+**Impact and owner.** The stated completion is false for the exercises of those three sections, so a reader who trusts the flag will not learn that 31 printed exercises (§3: 15, §8: 8, §11: 8) are uncarded. The 584 existing cards are unaffected; what is wrong is the collection's claim about itself.
+
+**Uncertainty.** Searched: the collection directory, its `index.md` section list, the repository for `E-MUN-3-`, and the extraction `tmp/sources/munkres-2000-topology.md`, where each of the three sections has an `Exercises` block. Found: none of the three sections is carded. Conclusion: the exercises are absent from the corpus, not merely mis-filed. Confidence: high. Gaps: whether cards were deliberately omitted or lost in intake is not recoverable from the repository.
+
+**Repair.** Not done in this batch, which was the §1–§5 proof pass. The repair is to card the three sections' exercises in book order and, in the same commit, to stop the collection claiming completion for them. Recorded here rather than dropped.
+
+
 
 **Object and need.** `P-AGH374COHOMCLASS` (Hartshorne III, Ex. 7.4, printed pp. 249–250, starred) needs a published proof of (b) $\eta(Y)=(\deg Y)\cdot1$ for $X=\PP^n$ and of (d) $\eta(Y)=c(\mathcal L(Y))$ for $p=1$, to meet the standing published-solution requirement independently of the card's own derivation.
 

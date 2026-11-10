@@ -25,7 +25,7 @@ audit:
   by: claude
   date: 2026-11-10
   note: >-
-    Read against Munkres, Topology (2000), §1 Exercise 7, printed p. 14; D, E and F are
+    Read against Munkres, Topology (2000), §1 Exercise 7, printed p. 15; D, E and F are
     stored exactly as the book writes them, including the implication in F rather than a
     set difference.
 - event: solution-written

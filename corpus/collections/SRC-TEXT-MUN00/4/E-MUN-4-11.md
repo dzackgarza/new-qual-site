@@ -18,7 +18,7 @@ audit:
   by: claude
   date: 2026-11-10
   note: >-
-    Read against Munkres, Topology (2000), §4 Exercise 11, printed p. 34; parts (a)-(d)
+    Read against Munkres, Topology (2000), §4 Exercise 11, printed p. 36; parts (a)-(d)
     and both hints are stored as printed.
 - event: solution-written
   by: claude
