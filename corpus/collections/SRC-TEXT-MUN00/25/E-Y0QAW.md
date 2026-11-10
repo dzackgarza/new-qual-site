@@ -13,14 +13,19 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §25 Exercise 8, printed p. 162, with Theorem 25.3
+    and the hint; the stored statement is the printed one.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 25.8, PDF p. 10. The preimage of a component of an
+    open set is a union of components of the preimage of the open set, hence open, hence the
+    component is open in the quotient. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -31,19 +36,9 @@ Show that if $X$ is locally connected, then $Y$ is locally connected.
 :::
 
 ::: {.solution}
-We use the characterization that a space is locally connected iff components of open sets are open.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 25.8, PDF p. 10** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument follows the hint.
 
-Let $U\subseteq Y$ be open and let $C$ be a component of $U$. Since $p$ is quotient,
-$$
-p^{-1}(U)
-$$
-is open in $X$. Because $X$ is locally connected, every component of $p^{-1}(U)$ is open.
+Let $p:X\to Y$ be a quotient map with $X$ locally connected, let $U$ be open in $Y$ and $C$ a component of $U$. We show $C$ is open, which gives the result by Theorem 25.3.
 
-We claim that $p^{-1}(C)$ is a union of components of $p^{-1}(U)$. Let $D$ be a component of $p^{-1}(U)$ meeting $p^{-1}(C)$. Then $p(D)$ is connected, lies in $U$, and meets $C$. By maximality of the component $C$ in $U$,
-$$
-p(D)\subseteq C,
-$$
-so $D\subseteq p^{-1}(C)$. This proves the claim.
-
-Hence $p^{-1}(C)$ is open in $X$. It is also saturated, and $p$ is a quotient map, so $C$ is open in $Y$. Thus every component of every open subset of $Y$ is open, and $Y$ is locally connected.
+If $D$ is a component of $p^{-1}(U)$ meeting $p^{-1}(C)$, then $p(D)$ is connected and meets $C$, so $p(D)\subset C$ and $D\subset p^{-1}(C)$. Thus $p^{-1}(C)$ is a union of components of the open set $p^{-1}(U)$; since $X$ is locally connected those components are open in $X$ (Theorem 25.3), so $p^{-1}(C)$ is open in $X$. As $p$ is a quotient map, $C$ is open in $Y$.
 :::
