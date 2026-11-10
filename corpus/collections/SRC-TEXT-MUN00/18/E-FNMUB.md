@@ -12,9 +12,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §18 Exercise 13, printed p. 112; the stored
+    statement is the printed one, an extension to the closure of A being meant.
 - event: solution-written
-  by: muse-spark-1.2
-  date: 2026-08-30
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 18.13, PDF p. 13. Two presumed extensions
+    differing at a point of the closure are separated by disjoint open sets in Y, and the
+    intersection of their preimages is a neighbourhood of that point meeting A, where the
+    two must agree. (tmp/sources/munkres-solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -24,27 +36,17 @@ Show that if $f$ may be extended to a continuous function $g: \overline{A} \to Y
 :::
 
 ::: {.solution}
-Let $g_1,g_2\colon\overline A\to Y$ be continuous with $g_1\restrict_A=g_2\restrict_A=f$, and put $E=\{x\in\overline A:g_1(x)=g_2(x)\}$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.13, PDF p. 13** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the argument is theirs. Whitman, printed p. 189, gives the same proof.
 
-::: pf
+Let $g_{1},g_{2}:\overline{A}\to Y$ be continuous and both extend $f$, so $g_{1}(x)=g_{2}(x)=f(x)$ for $x\in A$. Suppose $g_{1}(x_{0})\ne g_{2}(x_{0})$ for some $x_{0}\in\overline{A}$.
 
-::: {.pf-step #e-closed-contains-a}
-$E$ is closed in $\overline A$ and contains $A$.
+Since $Y$ is Hausdorff there are disjoint open sets $U\ni g_{1}(x_{0})$ and $V\ni g_{2}(x_{0})$. By continuity $g_{1}^{-1}(U)$ and $g_{2}^{-1}(V)$ are open in $\overline{A}$, so
+$$
+W=g_{1}^{-1}(U)\cap g_{2}^{-1}(V)
+$$
+is an open neighbourhood of $x_{0}$ in $\overline{A}$. Write $W=\overline{A}\cap O$ with $O$ open in $X$. Since $x_{0}\in\overline{A}$ and $O$ is a neighbourhood of $x_{0}$ in $X$, there is a point $y\in O\cap A$; then $y\in A\subset\overline{A}$ gives $y\in W$.
 
-::: pf-proof
-The map $h\colon\overline A\to Y\times Y$, $h(x)=(g_1(x),g_2(x))$, is continuous because its coordinates are.
-Since $Y$ is Hausdorff, the diagonal $\Delta\subseteq Y\times Y$ is closed by [[E-6A0RO]], so $E=h^{-1}(\Delta)$ is closed in $\overline A$.
-For $a\in A$, $g_1(a)=f(a)=g_2(a)$, so $A\subseteq E$.
-:::
+But $y\in A$, so $g_{1}(y)=g_{2}(y)=f(y)$; and $y\in g_{1}^{-1}(U)$ gives $f(y)\in U$, while $y\in g_{2}^{-1}(V)$ gives $f(y)\in V$. Thus $f(y)\in U\cap V=\varnothing$, a contradiction.
 
-:::
-
-::: pf-qed
-The closure of $A$ in the subspace $\overline A$ is $\overline A\cap\overline A=\overline A$.
-By step [](#e-closed-contains-a){.pf-ref}, $E$ is a closed subset of $\overline A$ containing $A$, so $\overline A\subseteq E$.
-Hence $g_1=g_2$ on $\overline A$.
-:::
-
-:::
-
+Hence $g_{1}=g_{2}$: the continuous extension of $f$ to $\overline{A}$ is unique when it exists.
 :::
