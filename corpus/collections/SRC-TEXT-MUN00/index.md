@@ -159,6 +159,24 @@ source:
       comment: Munkres §7.8
     - id: E-MUN-7-9
       comment: Munkres §7.9
+  - name: '8'
+    problems:
+    - id: E-MUN-8-1
+      comment: Munkres §8.1
+    - id: E-MUN-8-2
+      comment: Munkres §8.2
+    - id: E-MUN-8-3
+      comment: Munkres §8.3
+    - id: E-MUN-8-4
+      comment: Munkres §8.4
+    - id: E-MUN-8-5
+      comment: Munkres §8.5
+    - id: E-MUN-8-6
+      comment: Munkres §8.6
+    - id: E-MUN-8-7
+      comment: Munkres §8.7
+    - id: E-MUN-8-8
+      comment: Munkres §8.8
   - name: '9'
     problems:
     - id: E-MUN-9-1
@@ -201,6 +219,24 @@ source:
       comment: Munkres §10.10
     - id: E-MUN-10-11
       comment: Munkres §10.11
+  - name: '11'
+    problems:
+    - id: E-MUN-11-1
+      comment: Munkres §11.1
+    - id: E-MUN-11-2
+      comment: Munkres §11.2
+    - id: E-MUN-11-3
+      comment: Munkres §11.3
+    - id: E-MUN-11-4
+      comment: Munkres §11.4
+    - id: E-MUN-11-5
+      comment: Munkres §11.5
+    - id: E-MUN-11-6
+      comment: Munkres §11.6
+    - id: E-MUN-11-7
+      comment: Munkres §11.7
+    - id: E-MUN-11-8
+      comment: Munkres §11.8
   - name: '13'
     problems:
     - id: E-KTHV8
