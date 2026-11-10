@@ -12,9 +12,22 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §23 Exercise 6, printed p. 152, with the
+    definition of boundary in Exercise 17.19 and Lemma 23.1; the stored statement is the
+    printed sentence.
 - event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-30
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 23.6, PDF p. 2. If a connected set meeting both A
+    and its complement missed the boundary, its two traces would be a separation, since
+    neither would contain a limit point of the other. (tmp/sources/munkres-solutions-
+    positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -24,25 +37,9 @@ Show that if $C$ is a connected subspace of $X$ that intersects both $A$ and $X 
 :::
 
 ::: {.solution}
-::: pf
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.6, PDF p. 2** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
 
-::: {.pf-step #complement-of-boundary}
-$X-\operatorname{Bd}A=\operatorname{Int}A\cup\operatorname{Int}(X-A)$, a union of disjoint open sets.
+Let $C$ be connected and let $A\subset X$ be such that $C\cap A\ne\varnothing\ne C\cap(X-A)$; put $P=C\cap A$ and $Q=C\cap(X-A)$, two nonempty disjoint sets with union $C$. Suppose $C\cap\operatorname{Bd}A=\varnothing$. Since $\operatorname{Bd}A=\overline{A}\cap\overline{X-A}$, this says no point of $C$ lies in both closures.
 
-::: pf-proof
-A point outside $\operatorname{Bd}A=\overline A\cap\overline{X-A}$ lies outside $\overline{X-A}=X-\operatorname{Int}A$ or outside $\overline A=X-\operatorname{Int}(X-A)$.
-Conversely $\operatorname{Int}A$ misses $\overline{X-A}$ and $\operatorname{Int}(X-A)$ misses $\overline A$.
-The two interiors lie in the disjoint sets $A$ and $X-A$.
-:::
-
-:::
-
-::: pf-qed
-Suppose $C\cap\operatorname{Bd}A=\varnothing$.
-By step [](#complement-of-boundary){.pf-ref}, $C$ is the union of the disjoint relatively open sets $C\cap\operatorname{Int}A$ and $C\cap\operatorname{Int}(X-A)$, so one of them is empty because $C$ is connected.
-If $C\cap\operatorname{Int}A=\varnothing$, then $C\subseteq X-A$, contradicting $C\cap A\ne\varnothing$; if $C\cap\operatorname{Int}(X-A)=\varnothing$, then $C\subseteq A$, contradicting $C\cap(X-A)\ne\varnothing$.
-:::
-
-:::
-
+Then neither $P$ nor $Q$ contains a limit point of the other: a point $x\in Q$ that is a limit point of $P$ lies in $C$, in $\overline{A}$ (as a limit point of $P\subset A$) and in $Q\subset X-A\subset\overline{X-A}$, hence in $C\cap\operatorname{Bd}A$, contrary to the supposition; symmetrically for $Q$'s limit points in $P$. By Lemma 23.1 the pair $P,Q$ is then a separation of $C$, contradicting the connectedness of $C$. Hence $C\cap\operatorname{Bd}A\ne\varnothing$.
 :::
