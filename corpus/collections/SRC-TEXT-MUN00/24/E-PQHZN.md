@@ -13,14 +13,23 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §24 Exercise 12, printed p. 158, with Theorem
+    24.1, Theorem 24.3 and Exercise 24.7; the six parts and the theorem are stored as
+    printed.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 24.12, PDF pp. 6-7. All six parts are theirs: the
+    splitting and gluing of intervals of the order type of [0,1), the sequence form, the
+    transfinite induction over S_Omega, path connectedness of L through the successor of the
+    least element, the local homeomorphism at each point, and the failure of second
+    countability, which is stated on the card as the counting lemma about disjoint open sets
+    in a space with a countable basis. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -52,42 +61,19 @@ For each element $a$ of $S_\Omega$ different from $a_0$, show that the interval 
 :::
 
 ::: {.solution}
-Let $a_0$ be the least element of $S_\Omega$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.12, PDF pp. 6--7** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all six parts are theirs. Part (f) is stated on the card through the counting lemma behind the second countability of subspaces of $\RR^{n}$, which is the book's hint, rather than through Theorem 30.3, which comes later in the book.
 
-(a) Suppose first that $[a,c)$ has order type $[0,1)$, and let $t\in(0,1)$ be the image of $b$. Then $[a,b)$ and $[b,c)$ correspond to $[0,t)$ and $[t,1)$, each order-isomorphic to $[0,1)$ by affine rescaling. Conversely, if both pieces have order type $[0,1)$, map them respectively onto
-$$
-[0,1/2)\qquad\text{and}\qquad[1/2,1)
-$$
-by order isomorphisms. Their union gives an order isomorphism $[a,c)\cong[0,1)$.
+Let $S_{\Omega}$ be the minimal uncountable well-ordered set, $a_{0}$ its least element, and $L$ the long line, that is, $S_{\Omega}\times[0,1)$ in the dictionary order with its least element $a_{0}\times0$ removed.
 
-(b) If $[x_0,b)\cong[0,1)$, the images $t_i$ of $x_i$ increase to $1$ because $b=\sup x_i$. Hence each $[x_i,x_{i+1})$ corresponds to $[t_i,t_{i+1})$, which has order type $[0,1)$. Conversely, if every $[x_i,x_{i+1})$ has order type $[0,1)$, map the $i$th piece order-isomorphically onto
-$$
-[1-2^{-i},\,1-2^{-(i+1)})\qquad(i\ge0).
-$$
-These maps concatenate to an order isomorphism $[x_0,b)\cong[0,1)$.
+(a) If $[a,c)$ has the order type of $[0,1)$ via an order-preserving bijection $f$, then $f$ restricts to order-preserving bijections $[a,b)\to[0,f(b))$ and $[b,c)\to[f(b),1)$, and $[0,t)$ has the order type of $[0,1)$ for every $t\in(0,1)$ (via $s\mapsto s/t$). Conversely, order-preserving bijections $[a,b)\to[0,1/2)$ and $[b,c)\to[1/2,1)$ glue to an order-preserving bijection $[a,c)\to[0,1)$.
 
-(c) Proceed by transfinite induction on $a\in S_\Omega-\{a_0\}$. If $a$ has immediate predecessor $b$, then
-$$
-[a_0\times0,a\times0)
-=[a_0\times0,b\times0)\cup[b\times0,a\times0),
-$$
-and the second piece is exactly the fiber $\{b\}\times[0,1)$. If $b=a_0$, this is the whole interval and proves the claim. Otherwise part (a) and the induction hypothesis apply.
+(b) If $[x_{0},b)$ has the order type of $[0,1)$, then by (a) applied repeatedly each $[x_{i},x_{i+1})$ does. Conversely, if each $[x_{i},x_{i+1})$ has the order type of $[0,1)$, choose order-preserving bijections $f_{i}:[x_{i},x_{i+1})\to[1-2^{-i},\,1-2^{-i-1})$; they agree on the overlaps (each $x_{i}$ is the last point of nothing and the first point of $[x_{i},\dots)$), and together they give an order-preserving bijection $[x_{0},b)\to[0,1)$ because $\sup_{i}x_{i}=b$ corresponds to $\sup_{i}(1-2^{-i})=1$.
 
-If $a$ has no immediate predecessor, its section $S_a$ is countable by minimality of $S_\Omega$ and has no largest element. Enumerate $S_a=\{e_0,e_1,\ldots\}$, put $c_0=a_0$, and choose $c_{i+1}\in S_a$ with $c_{i+1}>\max\{c_i,e_i\}$. Then $c_0<c_1<\cdots$ and $\sup_i(c_i\times0)=a\times0$. By the induction hypothesis $[a_0\times0,c_{i+1}\times0)$ has order type $[0,1)$, so by part (a) each interval
-$$
-[c_i\times0,c_{i+1}\times0)
-$$
-has order type $[0,1)$, and part (b) yields the result for $a$.
+(c) By transfinite induction on $a\ne a_{0}$ in $S_{\Omega}$, one shows that $[a_{0}\times0,\ a\times0)$ has the order type of $[0,1)$. If $a$ is the successor of an element $b$ (with $b\ge a_{0}$), then $[a_{0}\times0,b\times0)$ has the order type of $[0,1)$ by induction, and so does $[b\times0,a\times0)=\{b\}\times[0,1)$, which is order isomorphic to $[0,1)$; by (a) the same holds for $[a_{0}\times0,a\times0)$. If $a$ is not a successor, there is a strictly increasing sequence $a_{i}$ in $S_{\Omega}$ with $a=\sup_{i}a_{i}$; each $[a_{0}\times0,a_{i}\times0)$ has the order type of $[0,1)$ by induction, and by (b) so does $[a_{0}\times0,a\times0)$.
 
-(d) Let $p=(a,s)<q=(b,t)$. If $a=b$, then $[p,q)$ has the order type of $[s,t)$, hence of $[0,1)$. If $a<b$, split $[p,q)$ at $(a+1,0)$ and, when $a+1<b$, at $(b,0)$. The first piece is the remainder $[s,1)$ of the $a$-fiber. The middle piece has order type $[0,1)$ by (c) and (a), and the final piece, when $t>0$, is $[0,t)$. By repeated use of (a), $[p,q)$ has order type $[0,1)$. Sending $q$ to $1$ extends this order isomorphism to $[p,q]\cong[0,1]$. Thus $[p,q]$ is homeomorphic to $[0,1]$ and supplies a path from $p$ to $q$. Hence $L$ is path connected.
+(d) *$L$ is path connected.* Let $a_{1}$ be the successor of $a_{0}$. Every point of $[a_{0}\times0,a_{1}\times0)$ can be joined to $a_{1}\times0$ by a path, since that interval has the order type of $[0,1)$ (part (c)) and the order topology on it is the usual one (Theorem 24.1 and Exercise 24.7(a)). For $b\ge a_{1}$ and $t\in[0,1)$, the point $b\times t$ can be joined to $b\times0$ within $\{b\}\times[0,1)$, and $b\times0$ can be joined to $a_{1}\times0$ by (a) and (b), since $[a_{1}\times0,b\times0)$ is a union of intervals each of the order type of $[0,1)$ (part (c)); the union of those two paths joins $b\times t$ to $a_{1}\times0$. So every point of $L$ is joined to $a_{1}\times0$.
 
-(e) For any $x\in L$, choose $p<x<q$. By (d), $[p,q]$ is order-isomorphic to $[0,1]$, so $(p,q)$ is homeomorphic to $(0,1)$. Thus every point has a neighborhood homeomorphic to an open real interval.
+(e) Every point of $L$ has a neighbourhood homeomorphic with an open interval of $\RR$. For $a_{0}\times t$ with $t\in(0,1)$ the interval $\{a_{0}\}\times(0,1)$ is such a neighbourhood, and so is $[a_{0}\times0,a_{1}\times0)$ (which is open in $L$ because $a_{0}\times0$ has been deleted and contained in the interval that has the order type of $[0,1)$). For $b>a_{0}$ and $t\in[0,1)$ the interval $(a_{0}\times0,\ b'\times0)$ with $b'$ the successor of $b$ is homeomorphic with $(0,1)$ by part (c) and Exercise 24.7(a), and it contains $b\times t$; so does the smaller open interval $(a_{0}\times0,\ b\times t)$ when $t>0$.
 
-(f) The long line is not second countable. For each $a\in S_\Omega$, the vertical interval
-$$
-\{a\}\times(1/3,2/3)
-$$
-is a nonempty open subset of $L$, and these sets are pairwise disjoint. A second-countable space can have only countably many pairwise disjoint nonempty open sets, since each contains a distinct element of a fixed countable basis. Therefore $L$ is not second countable.
-
-Every subspace of $\RR^n$ is second countable, because $\RR^n$ has a countable basis and intersections with the subspace form a countable basis. Hence $L$ cannot be embedded in $\RR^n$ for any finite $n$, in particular not in $\RR$.
+(f) *$L$ cannot be imbedded in $\RR^{n}$.* Any subspace of $\RR^{n}$ has a countable basis for its topology (the balls with rational centre and rational radius), and in a space with a countable basis every family of pairwise disjoint nonempty open sets is countable: each member contains a basis element, and distinct members contain distinct basis elements. But the sets $\{b\}\times(0,1)$, for $b$ ranging over the uncountably many elements of $S_{\Omega}$ other than $a_{0}$, are pairwise disjoint nonempty open subsets of $L$. So $L$ has no countable basis and cannot be a subspace of $\RR^{n}$.
 :::
