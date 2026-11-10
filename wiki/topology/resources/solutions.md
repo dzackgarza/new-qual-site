@@ -209,11 +209,14 @@ above. Every page carries its own "Page $n$" in the footer, so cite that page, n
 | §36 Imbeddings of Manifolds | 13–14 | 1, 3 |
 
 Two of its numbers are not the book's: the item headed "Problem 30.12" is printed Exercise 30.13, and the
-first item headed "Problem 32.6" is printed Exercise 32.5 (the second one is 32.6). Of its §30--§32 answers,
-§31.3 has an undefined set and assumes the point has neighbours on both sides, §31.5 closes the diagonal of a
-subspace rather than that of $Y\times Y$, §32.4 states the method of Theorem 32.1 in one sentence, and §32.7
-answers part (e) "No, but I haven't been able to find a counterexample I understand". Those defects are recorded
-on the cards, not repaired here; §33--§36 of this set have not been read line by line.
+first item headed "Problem 32.6" is printed Exercise 32.5 (the second one is 32.6). Every card of §33--§36 has
+now been read against it, and its defects are recorded on the cards rather than repaired here: §31.3 has an
+undefined set and assumes the point has neighbours on both sides; §31.5 closes the diagonal of a subspace rather
+than that of $Y\times Y$; §32.4 states the method of Theorem 32.1 in one sentence; §32.7 answers part (e) "No,
+but I haven't been able to find a counterexample I understand"; §33.2's (a) is garbled and its (b) is a sketch;
+§34.1 offers the ordered square as a second-countable example, which it is not; §35.4(b) argues from
+Hausdorffness, which would disconnect every Hausdorff space; §36.2 writes the imbedding with an $f_i$ that is
+defined only on $U_i$. Its §33.1, §33.3, §33.4, §33.6 and §33.7 are complete and are transcribed on the cards.
 
 **Amit Rajaraman, *Munkres Solutions* (MA 406 course notes, last updated 31 March 2021)**,
 `tmp/sources/munkres-solutions-amitrajaraman-ma406.pdf` (13 pages, [PDF](https://amitrajaraman.github.io/notes/ma-406/main.pdf)).
@@ -221,18 +224,30 @@ Its own page numbers run 1–13 in the running head. Chapters 2 and 3 are select
 1, 2, 3, 4, 5, 9 and 10 on printed pp. 12–13**, after which the file ends. Short and compact, but complete where
 it treats an exercise.
 
-Nothing located covers Chapters 4–14 complete: Chapter 4 is reached by Orellana (a selection), by "Doug's World"
-(a selection, but the only set that reaches §35 and §36) and by Amit Rajaraman (§30 only), and §37 by Orellana
-alone. §38–§64 and §66–§85 have no located set with printed pagination. The `dbFin` pages, the Riemannian
-Hunger blog and the commercial manuals are HTML or paywalled, print no pagination, and are not cited here.
+**Jesper Michael Moller, *Solutions to exercises in Munkres***, `tmp/sources/munkres-solutions-poulsen-S31.pdf`
+and the S33, S34, S35 and S38 files beside it, one per section, taken from the Internet Archive snapshots of
+[web.math.ku.dk/~moller/e02/3gt/opg/](https://web.archive.org/web/20191101081351/https://web.math.ku.dk/~moller/e02/3gt/opg/)
+(20191101081351 for S31, 20200331153844 for S33, 20180827202044 for S34, 20220130234235 for S35, 20181222125939
+for S38). The author is in the PDF metadata; the title is "Solutions to exercises in Munkres", and each file is
+dated on its first line. The archive holds **no S30, S32 or S36**. Each file is short — three pages for S31 and
+S35, two for S33, one for S34 — and cites the book's own theorem and exercise numbers throughout, sometimes with
+an Engelking or Spanier reference. Covered: **§31 Exercises 1, 2, 3, 5, 6, 7 (all parts) and 8** on pages 1–3 of
+S31; **§33 Exercises 1, 4, 5, 7 and 8** on pages 1–2 of S33; **§34 Exercises 1–5** on page 1 of S34; **§35
+Exercises 3–8** on pages 1–3 of S35. Cite the file, the exercise and the page of the file.
 
-One further set exists and could not be retrieved: **Morten Poulsen, *Solutions to exercises in Munkres***,
-`web.math.ku.dk/~moller/e02/3gt/opg/S30.pdf` … `S36.pdf`, a per-section set whose §31 covers Exercises 1–8.
-That host refused every connection from the machine these cards were written on (IPv4 and web, four attempts),
-so the files were never downloaded, no printed page could be established, and nothing is cited from them. It is
-the likeliest place to close the §31 exercises that have no located solution.
+**dbFin, *Munkres (2000) Topology with Solutions***, chapter 4,
+`https://dbfin.com/topology/munkres/chapter-4/<section>/problem-<n>-solution/` (read 2026-11-10; copies under
+`tmp/sources/dbfin/`). It has a page for **every numbered exercise of §30–§36**, no page for any of the
+Supplementary Exercises "Review of the Basics", and no solution for Exercise 30.18. A web page has no printed
+page: cite it by its URL and the date read, as the cards of this chapter now do. Its depth varies widely — some
+pages are complete arguments (§30.1, §32.7, §32.9, §33.3, §34.6, §35.2, §35.9, §36.5), others are one sentence
+(§32.4) or a restatement of the exercise (§30.18). It has no pages at all for the supplementary exercises.
 
-No set was found for Munkres §12, §14, §15 or §65, and none in this repository before this search; the
-`dbFin` pages and the commercial solution manuals are HTML or paywalled and print no pagination, so neither is
-cited here.
+Nothing located covers Chapters 4–14 complete: Chapter 4 is reached by "Doug's World" (the whole chapter, as a
+selection), by Moller (§31 and §33–§35), by dbFin (every numbered exercise), by Amit Rajaraman (§30 only) and by
+Orellana (a selection of §30–§34); §37 by Orellana alone. §38–§64 and §66–§85 have no located set with printed
+pagination, apart from Moller's S38. The Riemannian Hunger blog and the commercial manuals are HTML or
+paywalled and print no pagination, and are not cited here.
+
+No set was found for Munkres §12, §14, §15 or §65.
 
