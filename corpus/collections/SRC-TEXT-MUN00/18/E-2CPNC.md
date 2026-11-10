@@ -11,9 +11,26 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §18 Exercise 9, printed p. 112, with Theorem 18.1
+    and Exercise 17.2; the three parts and the definition of locally finite are stored as
+    printed.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise 18.9, printed pp.
+    186-187. His are the countable closed cover of R by (-infinity,0], [1,infinity) and the
+    intervals [1/(n-1),1/(n-2)], on each of which the step function is constant while the
+    function is discontinuous at 0; and the locally finite argument, which restricts to the
+    closed union of the finitely many sets meeting a neighbourhood of the point and then
+    applies the finite case. (a) is proved through the closed-cover identity f^{-1}(C) =
+    union of the preimages in the pieces instead of by his induction. (tmp/sources/munkres-
+    solutions-whitman.pdf).
 ---
 
 ::: {.exercise}
@@ -30,65 +47,29 @@ Show that if the family $\theset{A_\alpha}$ is locally finite and each $A_\alpha
 :::
 
 ::: {.solution}
-For a closed set $C\subseteq Y$ put $F_\alpha=(f\restrict_{A_\alpha})^{-1}(C)=f^{-1}(C)\cap A_\alpha$, so that $f^{-1}(C)=\bigcup_\alpha F_\alpha$ because the $A_\alpha$ cover $X$.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 18.9, printed pp. 186--187** (`tmp/sources/munkres-solutions-whitman.pdf`); (b) and (c) are his, and (a) is proved below in the standard closed-cover form rather than by his induction on the number of sets.
 
-::: pf
+(a) Let $C\subset Y$ be closed. For each $\alpha$, continuity of $f\restrict_{A_{\alpha}}$ makes $(f\restrict_{A_{\alpha}})^{-1}(C)$ closed in the subspace $A_{\alpha}$, so it is $A_{\alpha}\cap F_{\alpha}$ for some closed $F_{\alpha}\subset X$; since $A_{\alpha}$ is closed in $X$, the set $(f\restrict_{A_{\alpha}})^{-1}(C)$ is closed in $X$. Now $x\in f^{-1}(C)$ if and only if $f(x)\in C$, if and only if $x\in A_{\alpha}$ and $f\restrict_{A_{\alpha}}(x)\in C$ for the (or any) $\alpha$ with $x\in A_{\alpha}$; hence
+$$
+f^{-1}(C)=\bigcup_{\alpha}\big(f\restrict_{A_{\alpha}}\big)^{-1}(C),
+$$
+a finite union of closed sets, so closed in $X$. By Theorem 18.1(3) $f$ is continuous.
 
-::: {.pf-step #restriction-preimage-closed}
-If $A_\alpha$ is closed in $X$, then $F_\alpha$ is closed in $X$ and $F_\alpha\subseteq A_\alpha$.
+(b) Let $A_{1}=(-\infty,0]$, $A_{2}=[1,\infty)$ and $A_{n}=[1/(n-1),1/(n-2)]$ for $n\ge3$. Each $A_{n}$ is closed in $\RR$ and
+$$
+\bigcup_{n\in\ZZ_{+}}A_{n}=(-\infty,0]\cup[1,\infty)\cup(0,1]=\RR
+$$
+because the intervals $[1/(n-1),1/(n-2)]$ for $n\ge3$ fill $(0,1]$. Let
+$$
+f:\RR\to\RR,\qquad f(x)=\begin{cases}1,&x\le0,\\ 0,&x>0.\end{cases}
+$$
+Then $f\restrict_{A_{n}}$ is constant, hence continuous, for every $n$: on $A_{1}$ it is $1$, and on $A_{n}$ for $n\ge2$ every point satisfies $x\ge1/(n-1)>0$, so it is $0$. But $f$ is not continuous: the open set $(-\tfrac12,\tfrac12)$ around $f(0)=1$ contains no $f(x)$ for $x>0$, so $f^{-1}\big((-\tfrac12,\tfrac12)\big)=(-\infty,0]$ is not open in $\RR$.
 
-::: pf-proof
-Since $f\restrict_{A_\alpha}$ is continuous, $F_\alpha$ is closed in the subspace $A_\alpha$, and a closed subset of a closed subspace is closed in $X$.
-:::
+(c) Let $\{A_{\alpha}\}$ be locally finite with every $A_{\alpha}$ closed. Let $x\in X$ and let $U$ be a neighbourhood of $x$ meeting only the finitely many members $A_{\alpha}$ with $\alpha\in I(x)$. Put $A=\bigcup_{\alpha\in I(x)}A_{\alpha}$, closed as a finite union of closed sets. Each $y\in U$ lies in no $A_{\alpha}$ with $\alpha\notin I(x)$, hence $y\in A$; so $U\subset A$, and $U$ is a neighbourhood of $x$ in the subspace $A$. The family $\{A_{\alpha}\}_{\alpha\in I(x)}$ is a finite closed cover of $A$ and $f\restrict_{A_{\alpha}}$ is continuous for each of its members, so $f\restrict_{A}$ is continuous by (a). Let $V$ be a neighbourhood of $f(x)$; continuity of $f\restrict_{A}$ gives a neighbourhood $W$ of $x$ in $A$ with $(f\restrict_{A})(W)\subset V$, and $W=A\cap O$ for some open $O\subset X$. Then $U\cap O$ is a neighbourhood of $x$ in $X$, and
+$$
+f(U\cap O)\subset f(A\cap O)=(f\restrict_{A})(W)\subset V .
+$$
+So $f$ is continuous at each $x\in X$.
 
-:::
-
-::: {.pf-step #part-a}
-(a) If the $A_\alpha$ are finitely many closed sets, $f$ is continuous.
-
-::: pf-proof
-By step [](#restriction-preimage-closed){.pf-ref}, $f^{-1}(C)$ is a finite union of closed sets for every closed $C\subseteq Y$.
-:::
-
-:::
-
-::: {.pf-step #part-b}
-(b) For the closed sets $A_0=(-\infty,0]$ and $A_n=[\frac1n,\infty)$, $n\in\ZZ_+$, covering $\RR$, the function $f\colon\RR\to\RR$ with $f(x)=0$ for $x\le0$ and $f(x)=1$ for $x>0$ is continuous on each $A_n$ but not continuous.
-
-::: pf-proof
-The sets cover $\RR$, since every $x>0$ exceeds some $\frac1n$.
-The restriction of $f$ to $A_0$ is constant $0$ and to each $A_n$, $n\ge1$, is constant $1$.
-The set $f^{-1}(\{0\})=(-\infty,0]$ is closed, but $f^{-1}(\{1\})=(0,\infty)$ is not closed, although $\{1\}$ is closed.
-:::
-
-:::
-
-::: {.pf-step #locally-finite-union-closed}
-The union of a locally finite family $\{F_\alpha\}$ of closed sets is closed.
-
-::: pf-proof
-Let $F=\bigcup_\alpha F_\alpha$ and $x\in\overline F$.
-Choose an open $U\ni x$ meeting only $F_{\alpha_1},\ldots,F_{\alpha_k}$.
-Then $U\cap F\subseteq F_{\alpha_1}\cup\cdots\cup F_{\alpha_k}$, and $x\in\overline{U\cap F}$ because $U$ is an open neighborhood of $x$.
-Hence $x\in\overline{F_{\alpha_1}\cup\cdots\cup F_{\alpha_k}}=F_{\alpha_1}\cup\cdots\cup F_{\alpha_k}\subseteq F$.
-:::
-
-:::
-
-::: {.pf-step #part-c}
-(c) If $\{A_\alpha\}$ is locally finite and each $A_\alpha$ is closed, $f$ is continuous.
-
-::: pf-proof
-By step [](#restriction-preimage-closed){.pf-ref}, each $F_\alpha$ is closed and $F_\alpha\subseteq A_\alpha$, so $\{F_\alpha\}$ is locally finite.
-By step [](#locally-finite-union-closed){.pf-ref}, $f^{-1}(C)=\bigcup_\alpha F_\alpha$ is closed for every closed $C\subseteq Y$.
-:::
-
-:::
-
-::: pf-qed
-Steps [](#part-a){.pf-ref}, [](#part-b){.pf-ref}, and [](#part-c){.pf-ref} answer (a), (b), and (c).
-:::
-
-:::
-
+Whitman notes that the example of (b) is not locally finite: every neighbourhood of $0$ meets infinitely many $A_{n}$.
 :::
