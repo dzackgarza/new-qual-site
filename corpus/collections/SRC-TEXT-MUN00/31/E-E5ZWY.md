@@ -27,6 +27,23 @@ audit:
     [u,v] <= B, and applies Lemma 31.1(a). The previous version said "choose an interior cut
     strictly between that endpoint and x when such a point exists" without saying what happens when
     it does not.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution now that it is available: Jesper Michael Moller,
+    "Solutions to exercises in Munkres", file S31.pdf, Exercise 31.3, page 1 of the file
+    (tmp/sources/munkres-solutions-poulsen-S31.pdf, Internet Archive snapshot 20191101081351 of
+    web.math.ku.dk/~moller/e02/3gt/opg/S31.pdf), and checked against Munkres, Topology (2000),
+    Section 31 Exercise 3, printed p. 199, and Lemma 31.1(a). Moller proves the same four-case
+    statement by the criterion of Lemma 31.1(b): with U = (a,b) and A = (a,x), B = (x,b) he treats
+    u in A with v in B, then A = B = empty (when {x} = (a,b) is open and closed), then A empty with
+    v in B, then u in A with B empty. The card's proof is that argument with the cases named by the
+    position of x in the order; the least-element case here splits into Moller's two cases (2) and
+    (3) according as a point lies between x and b. Moller's case (1) is printed with the chain
+    "x in (u,v) subset (u,v) subset [u,v] subset (a,b)", in which the middle inclusion should be the
+    closure of (u,v) inside [u,v]; the card writes the closure inclusion. This supersedes the
+    previous note, which recorded that no complete published proof had been found.
 ---
 
 ::: {.exercise}

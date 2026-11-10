@@ -28,6 +28,26 @@ audit:
     and that the finite set C_i may be absorbed into B_i because J is uncountable and only finitely
     many alpha_j have been used; (d) the compatibility of the two coordinate prescriptions on
     B cap B_{i+1}, for which x_{i+1}(alpha_j) = j = y(alpha_j) on B_i.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: dbFin, "Section 32: Problem 9 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-32-normal-spaces/problem-9-solution/ (read
+    2026-11-10; kept at tmp/sources/dbfin/section-32-normal-spaces/problem-9-solution.txt), checked
+    against Munkres, Topology (2000), Section 32 Exercise 9, printed pp. 206-207, whose parts (a)-(d)
+    are the skeleton A. H. Stone's proof leaves to the reader. Its (a) refines the basis U(x,B) to
+    the cylinders of a finite set of coordinates; its (b) shows P_n closed by exhibiting the
+    cylinder U(y,{j,k}) at a repetition with value other than n, and P_1 cap P_2 empty because a
+    point of P_n is constant equal to n on an uncountable set of coordinates and so cannot lie in
+    any P_m for m different from n; its (c) is the printed recursion, with B_n enlarged so that
+    U(x^n,B_n) is inside U; its (d) builds z explicitly, equal to j on B_i, 1 on B_{i+1} - B_i and
+    2 elsewhere, and checks both coordinate conditions. Corrections: the source's (b) writes the
+    definition of P_n as "x_j != n != x_k implies x_j != x_k", which is a garbled form of
+    "injective off x^{-1}(n)"; the card keeps the printed definition. The source's (d) writes z_j =
+    1 on B_{i+1} - B_i, which is right, but states the conclusion as z in U(y,B) cap U; the card
+    states both memberships. This supersedes the previous note, which recorded that only the book's
+    outline had been found.
 ---
 
 ::: {.exercise}

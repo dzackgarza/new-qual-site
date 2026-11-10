@@ -30,6 +30,19 @@ audit:
     lies in closure U_m, which the definition of U_m excludes, when m <= n, and in closure V_n,
     which the definition of V_n excludes, when n <= m. The search is recorded in the
     COMPLAINTS.md entry for this batch.
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Rechecked against the located published solution: dbFin, "Section 32: Problem 4 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-32-normal-spaces/problem-4-solution/ (read
+    2026-11-10; kept at tmp/sources/dbfin/section-32-normal-spaces/problem-4-solution.txt), and
+    against Munkres, Topology (2000), Section 32 Exercise 4, printed p. 205, and Theorem 32.1. The
+    dbFin page is the one sentence "The only difference from the proof of the Theorem 32.1 is that
+    we construct a countable covering using the Lindelof property of the space instead of its
+    countable basis", the same position as Doug's World, printed p. 6; the card's proof is that
+    sentence carried out, with the A <= U and B <= V checks. This exercise stays in the
+    COMPLAINTS.md entry.
 ---
 
 ::: {.exercise}

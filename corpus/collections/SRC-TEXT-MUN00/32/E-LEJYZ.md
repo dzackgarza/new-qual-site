@@ -31,6 +31,24 @@ audit:
     lie one in A and one in B", and now proves it by the type function on the interval (a,s), where s
     is the first point of B above a, which is locally constant except at the left end of such a
     component. The printed set X - A cup B in part (b) is read as X - (A cup B).
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked against the located published solution: dbFin, "Section 32: Problem 8 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-32-normal-spaces/problem-8-solution/ (read
+    2026-11-10; kept at tmp/sources/dbfin/section-32-normal-spaces/problem-8-solution.txt), and
+    against Munkres, Topology (2000), Section 32 Exercise 8, printed p. 206, Theorem 27.1 and
+    Theorem 24.1. Its (a) is complete and agrees with the card: a component of X - C is an interval
+    whose ends, if present, lie in C, the smallest upper bound of C lying in C because C is closed.
+    Its (c) agrees in substance with the card's type argument: it takes b' the least upper bound of
+    B in [a,b] and a' the least upper bound of A in [a,b'], and observes that (a',b') is a bridge
+    component of X - (A cup B), so it contains a point of C. Its (b) is not a proof: the point x is
+    assumed to have infinitely many points of C near it, "suppose a and b are such points", and the
+    conclusion "therefore x is a limit point of B" is asserted about symbols a, b, c that the
+    printed text leaves undefined, so the finiteness of the bridge components near a point of A,
+    which is the substance of (b), is not established there. The card keeps its proof of (b), and
+    this exercise stays in the COMPLAINTS.md entry for part (b).
 ---
 
 ::: {.exercise}

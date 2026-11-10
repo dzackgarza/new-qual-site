@@ -29,6 +29,26 @@ audit:
     which prints no pagination and is therefore not cited from a card; Orellana's Section 31 stops
     at Exercise 6, "Doug's World" at Problem 31.7, and no other retained set reaches Chapter 4. The
     search is recorded in the COMPLAINTS.md entry for this batch.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: dbFin, "Section 31: Problem 9 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-31-the-separation-axioms/problem-9-solution/
+    (read 2026-11-10; the text is kept at
+    tmp/sources/dbfin/section-31-the-separation-axioms/problem-9-solution.txt), checked against
+    Munkres, Topology (2000), Section 31 Exercise 9, printed p. 200, and Exercise 5 of Section 27,
+    printed p. 178. Its four parts are the card's: (a) each irrational point of [0,1] lies in some
+    K_n because V is open, the rational points being countably many singletons; (b) the Baire
+    exercise applied to the closed sets cl(K_n) and the singletons; (c) interpolating between a
+    point of K_n just below x and (x,-x+eps); (d) every basis element about (q,-q) contains such a
+    point. What was corrected: in (c) the source writes "for each x in A and 0 < delta < 1/n there
+    is a point z in (x - delta, x) cap K_n", using delta for the epsilon of the statement, and it
+    replaces the printed parallelogram (a,b) x (0,1/n) by the smaller (a+eps, b-eps); the card keeps
+    the printed parallelogram and the symbol eps throughout. The source's (b) writes the union of
+    the cl(K_n) and the single rational points as having non-empty interior, which is the
+    contrapositive of the printed exercise; the card states it that way. This supersedes the
+    previous note, which recorded that no published solution had been found.
 ---
 
 ::: {.exercise}

@@ -32,6 +32,24 @@ audit:
     prove the negation; "Doug's World", "Munkres - Topology - Chapter 4 Solutions", printed
     p. 1, answers "I'm not sure what the answer here is" and offers only a guess. See the
     COMPLAINTS.md entry for this batch.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Rebuilt onto the located published solution: dbFin, "Section 30: Problem 1 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-30-the-countability-axioms/problem-1-solution/
+    (read 2026-11-10; kept at tmp/sources/dbfin/section-30-the-countability-axioms/problem-1-solution.txt),
+    checked against Munkres, Topology (2000), Section 30 Exercise 1, printed p. 194. Its (a) is the
+    card's: the intersection of a countable local basis at x is {x} because a T1 space separates x
+    from each other point. Its (b) is the card's space for the card's reason -- one-point sets are
+    G_delta in any first-countable T1 space, hence in the metric R^omega, and remain G_delta in any
+    finer topology, while the box topology is not first countable, "take a countable collection U_n
+    of neighborhoods of a point and construct a neighborhood by taking the product of open proper
+    subsets of U_nn". What was corrected: the source writes "it seems not to satisfy the
+    first-countability axiom" and offers no verification, and its alternative "any countable T1
+    space which is not first-countable" is not shown to be such; the card states the diagonal
+    argument in full, with the m-th coordinate of P_m the interval that W halves. This supersedes
+    the previous note, which recorded part (b) as having no complete published proof.
 ---
 
 ::: {.exercise}

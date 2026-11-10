@@ -26,6 +26,24 @@ audit:
     Exercise 14; Rajaraman's notes stop at Exercise 4.30.10; positron0802, Whitman, shenapse and
     9beach do not reach Chapter 4. The search is recorded in the COMPLAINTS.md entry for this
     batch.
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Rechecked against the located published solution: dbFin, "Section 30: Problem 16 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-30-the-countability-axioms/problem-16-solution/
+    (read 2026-11-10; kept at tmp/sources/dbfin/section-30-the-countability-axioms/problem-16-solution.txt),
+    and against Munkres, Topology (2000), Section 30 Exercise 16, printed p. 195. The source does not
+    give a complete solution of either part. Its (a) reads "we can always separate the indexes of
+    these spaces by some rational points ... take all finite subsets of rationals in [0,1] containing
+    0 and 1 ... each such a subset generates a finite number of half-open intervals of the form [),
+    and then take products of rational points such that they are the same across each interval",
+    which describes a family of step functions without saying which one meets a prescribed basis
+    element, and does not treat coordinates outside [0,1]. Its (b) is the printed hint's injection
+    with the two intervals, but writes pi_alpha^{-1}((a,b)) cap pi_beta^{-1}((b,+infinity)), which
+    is not disjoint from (a,b), and then concludes "therefore f is an injection and |J| <= |2^D|"
+    without the cardinal step. The card keeps its own proof of (a) and (b) and this exercise stays
+    in the COMPLAINTS.md entry.
 ---
 
 ::: {.exercise}

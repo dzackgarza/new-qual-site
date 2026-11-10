@@ -28,6 +28,27 @@ audit:
     Rajaraman has no Section 32, and the sets that stop before Chapter 4 are Whitman,
     positron0802, shenapse, 9beach and kyp44. The search is recorded in the COMPLAINTS.md entry for
     this batch.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked against the located published solution: dbFin, "Section 32: Problem 2 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-32-normal-spaces/problem-2-solution/ (read
+    2026-11-10; kept at tmp/sources/dbfin/section-32-normal-spaces/problem-2-solution.txt), and
+    against Munkres, Topology (2000), Section 32 Exercise 2, printed p. 205, Theorem 31.2 and
+    Exercise 32.1. What the source proves, and the card's argument agrees with, is the Hausdorff and
+    regular cases: a basis element U of the product containing the point p_x with all other
+    coordinates fixed at chosen base points has its projection pi_alpha(U) open, and two such basis
+    elements are disjoint only if their projections are, since p_z lies in a basis element exactly
+    when z lies in its alpha-th coordinate set. The source then says that the T1 requirement "I
+    leave this as a very easy exercise" and that "being a normal space is not a hereditary
+    property, so we still need to show that each X_alpha is normal". Its own normal step -- that
+    disjoint basis neighbourhoods of p_A and p_B "projections into X_alpha separate A and B" --
+    does not go through for the arbitrary open sets that normality supplies, and in general
+    projections of two disjoint open sets of a product can meet. The card therefore keeps the
+    closed-slice argument for the normal case (the product is T1, so the slice is an intersection of
+    preimages of closed points, hence closed, and a closed subspace of a normal space is normal), and
+    this exercise stays in the COMPLAINTS.md entry for the normal case.
 ---
 
 ::: {.exercise}

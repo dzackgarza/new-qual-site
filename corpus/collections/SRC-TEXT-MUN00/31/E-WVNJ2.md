@@ -29,6 +29,22 @@ audit:
     "Solutions to exercises in Munkres", Section 31, at web.math.ku.dk/~moller/e02/3gt/opg/S31.pdf,
     but that host refused every connection from this machine, so it could not be downloaded,
     paginated or cited. The search is recorded in the COMPLAINTS.md entry for this batch.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Jesper Michael Moller, "Solutions to exercises
+    in Munkres", file S31.pdf, Exercise 31.8, page 3 of the file
+    (tmp/sources/munkres-solutions-poulsen-S31.pdf, Internet Archive snapshot 20191101081351 of
+    web.math.ku.dk/~moller/e02/3gt/opg/S31.pdf), checked against Munkres, Topology (2000), Section
+    31 Exercise 8, printed p. 200, Theorem 26.5 and Exercise 26.13. Moller's route is the one on the
+    card: the orbit map is perfect, which he proves by showing that the saturation GA of a closed A
+    is closed -- for y outside GA and each g in G there are open U_g containing g and V_g containing
+    y with U_g^{-1}V_g inside X - A, finitely many U_g cover the compact G, and the intersection of
+    the corresponding V_g is a neighbourhood of y inside X - GA -- and that the orbits are compact
+    images of G. The five properties then follow from Exercises 31.6 and 31.7, which the card
+    repeats for normality because that exercise does not include it. This supersedes the previous
+    note, which recorded that no published solution had been found.
 ---
 
 ::: {.exercise}

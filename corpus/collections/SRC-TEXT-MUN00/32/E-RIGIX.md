@@ -32,6 +32,31 @@ audit:
     topology is completely normal!" and "No, but I haven't been able to find a counterexample I
     understand", so no complete published argument exists for those two parts; the search is
     recorded in the COMPLAINTS.md entry for this batch.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Rebuilt on the located published solution for all seven parts: dbFin, "Section 32: Problem 7
+    Solution", https://dbfin.com/topology/munkres/chapter-4/section-32-normal-spaces/problem-7-solution/
+    (read 2026-11-10; kept at
+    tmp/sources/dbfin/section-32-normal-spaces/problem-7-solution.txt), together with "Doug's World",
+    "Munkres - Topology - Chapter 4 Solutions", Problem 32.7, printed p. 7, for the seven answers,
+    which agree (Yes, No, Yes, Yes, No, Yes, Yes). Checked against Munkres, Topology (2000), Section
+    32 Exercise 7, printed pp. 205-206, Theorem 32.4 (printed p. 202), Example 2 of Section 32
+    (printed p. 203), Theorems 26.7 (p. 167), 19.4 (p. 116) and 32.3 (p. 202). What was changed:
+    (c) is now dbFin's argument -- every interval (a,b] is open in a well-ordered set, as in the
+    proof of Theorem 32.4, and the sets {(x,a]} and {(y,b]} chosen to miss the other of a separated
+    pair are automatically disjoint, by the ordering, which the source asserts ("Moreover, the
+    neighbourhoods belonging to one set do not intersect the neighbourhoods belonging to the other")
+    and the card now proves -- instead of the previous reduction to Theorem 32.4 through the induced
+    order on a subspace. (g) is the same argument with the basis [x,x+eps) of R_l, which dbFin
+    gives; the previous proof of (g) by hereditary Lindelofness is superseded. (c) and (g) are
+    applied through the characterization of Exercise 32.6, which is on E-TZ1IN. (b) and (e) are
+    dbFin's answers -- R_l is completely normal while R_l^2 is not, and "No. See Example 2" for the
+    compact Hausdorff space -- and the card keeps the book's own witness S_Omega x S_bar_Omega,
+    whose non-normality is Example 2 and whose compact Hausdorff container S_bar_Omega^2 needs only
+    Theorem 26.7, not Tychonoff. This supersedes the previous note, which recorded (c) and (e) as
+    having no complete published argument.
 ---
 
 ::: {.exercise}
@@ -57,9 +82,9 @@ Justify your answers.
 ::: {.solution}
 (a) Yes. Every subspace of a subspace of a completely normal space is a subspace of the original space, hence normal.
 
-(b) No. A well-ordered set in the order topology is normal by Theorem 32.4, and every subspace of a well-ordered set is again a well-ordered set in its order topology, as part (c) below spells out, so $S_\Omega$ and $\overline{S}_\Omega$ are completely normal; but their product $S_\Omega\times\overline{S}_\Omega$ is not normal, as Example 2 of §32 shows. The same example shows that the product of two normal spaces need not be normal.
+(b) No. The well-ordered sets $S_\Omega$ and $\overline{S}_\Omega$ are completely normal by part (c) below, and by Theorem 32.4; but their product $S_\Omega\times\overline{S}_\Omega$ is not normal, as Example 2 of §32 shows. The same example shows that the product of two normal spaces need not be normal.
 
-(c) Yes. Let $W$ be a well-ordered set and $A\subseteq W$ a subspace with the induced order. The order topology of $A$ coincides with the subspace topology: a ray of $A$ is the trace of a ray of $W$, an interval of $A$ is the trace of an interval of $W$, and conversely a basis element of $W$ meets $A$ in a ray or an interval of $A$. So $A$ is a well-ordered set in the order topology and is normal by Theorem 32.4. Hence every subspace of $W$ is normal.
+(c) Yes. Let $W$ be well-ordered in the order topology. Every interval $(x,y]$ of $W$ is open, by the argument of the proof of Theorem 32.4: if $y$ is the largest element of $W$ then $(x,y]$ is a basis element, and otherwise $(x,y]=(x,y')$ for the immediate successor $y'$ of $y$. By Exercise 32.6 it is enough to separate a pair $A,B$ of separated subsets of $W$ by disjoint open sets. For $a\in A$ the point $a$ is not in $\overline{B}$, so there is a neighbourhood $N_a$ of $a$ disjoint from $B$, taken of the form $(x_a,a]$ when $a$ is not the least element of $W$ and equal to $\{a\}=[a,b)$ when it is; in either case $N_a\subseteq\{z:z\le a\}$. For $b\in B$ choose $M_b$ likewise, with $M_b\subseteq\{z:z\le b\}$ and $M_b\cap A=\varnothing$. Then $U=\bigcup_{a\in A}N_a$ and $V=\bigcup_{b\in B}M_b$ are open and contain $A$ and $B$. They are disjoint: if $z\in N_a\cap M_b$ with $a\le b$, then $z\le a\le b$ and $z\in M_b$ force $a\in M_b$ (if $z=a$, or if $M_b=(y_b,b]$ and $z>y_b$, then $y_b<z\le a\le b$), contradicting $M_b\cap A=\varnothing$. Hence every pair of separated sets in $W$ has disjoint neighbourhoods, and by Exercise 32.6 the well-ordered set is completely normal.
 
 (d) Yes. Every subspace of a metrizable space is metrizable, hence normal.
 
@@ -67,11 +92,6 @@ Justify your answers.
 
 (f) Yes. Every subspace of a regular second-countable space is regular and second countable. Second-countable spaces are Lindelöf, so every subspace is regular Lindelöf and hence normal by the preceding exercise. Thus the original space is completely normal.
 
-(g) Yes. First, every subspace $A\subset\RR_\ell$ is Lindelöf. Given an open cover of $A$, refine it so that for each $x\in A$ one chosen member contains a basic interval $[x,b_x)\cap A$. The ordinary open intervals $(x,b_x)$ have union $O\subset\RR$. Since the usual real line is second countable, $O$ is Lindelöf, so countably many of these ordinary intervals cover $O$. The exceptional set
-$$
-D=A\setminus O
-$$
-is countable: if $d<d'$ are in $D$, then $d'\notin(d,b_d)$, hence $d'\ge b_d$; therefore the intervals $(d,b_d)$, $d\in D$, are pairwise disjoint, and assigning a rational point to each gives an injection $D\hookrightarrow\QQ$. Adding one chosen cover member for each point of the countable set $D$ gives a countable subcover of $A$.
+(g) Yes. In $\RR_\ell$ the sets $[x,x+\epsilon)$ form a basis at $x$. Let $A,B$ be separated subsets and for $a\in A$ choose $\epsilon_a>0$ with $[a,a+\epsilon_a)$ disjoint from $B$, and for $b\in B$ choose $\delta_b>0$ with $[b,b+\delta_b)$ disjoint from $A$; these exist because $a\notin\overline B$ and $b\notin\overline A$. Then $U=\bigcup_{a\in A}[a,a+\epsilon_a)$ and $V=\bigcup_{b\in B}[b,b+\delta_b)$ are open and contain $A$ and $B$. If $z$ lay in $[a,a+\epsilon_a)\cap[b,b+\delta_b)$ with $a\le b$, then $b\le z<a+\epsilon_a$, so $b\in[a,a+\epsilon_a)$, contradicting that this interval misses $B$. Hence the sets are disjoint, and by Exercise 32.6 the Sorgenfrey line is completely normal.
 
-The Sorgenfrey line is regular, and regularity is hereditary to subspaces. Hence every subspace is regular Lindelöf and therefore normal by the preceding exercise. Thus $\RR_\ell$ is completely normal.
 :::

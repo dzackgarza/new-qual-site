@@ -30,6 +30,20 @@ audit:
     value, which keeps it in the subspace. No
     published solution was located in any of the sets searched, which are listed in the
     COMPLAINTS.md entry for this batch; "Doug's World" and Orellana stop before Exercise 17.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: dbFin, "Section 30: Problem 17 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-30-the-countability-axioms/problem-17-solution/
+    (read 2026-11-10; kept at
+    tmp/sources/dbfin/section-30-the-countability-axioms/problem-17-solution.txt), checked against
+    Munkres, Topology (2000), Section 30 Exercise 17, printed p. 195, and Theorem 19.2. Its answer is
+    the card's: Q^infinity is not first countable "for the reason exactly the same as in Exercise
+    1(b)", hence not second countable, and being countable it is separable and Lindelof. The card
+    supplies the diagonal neighbourhood prod(-eps_{n,n}/2, eps_{n,n}/2) that the cross-reference
+    leaves implicit, taken in the subspace. This supersedes the previous note, which recorded that
+    no published solution had been found.
 ---
 
 ::: {.exercise}
