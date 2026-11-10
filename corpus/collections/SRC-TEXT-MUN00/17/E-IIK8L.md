@@ -12,12 +12,28 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §17 Exercise 18, printed p. 102, the ordered
+    square being the dictionary order square of §16; the five sets are stored as printed.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-30
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise 17.18, printed pp.
+    171-172. The five answers are his, and positron0802 PDF p. 9 gives the same five. His
+    reduction to the limit points of a horizontal slice is stated with the two exceptional
+    heights 0 and 1 separated, since that is where the dictionary order differs from a
+    product: at height 0 no basis element containing a point is confined to its fibre from
+    below, and at height 1 none is confined from above. (tmp/sources/munkres-solutions-
+    whitman.pdf).
 ---
 
 ::: {.exercise}
+
 Determine the **closures** of the following subsets of the **ordered square** $I_o^2 = [0, 1] \times [0, 1]$ equipped with the dictionary order topology:
 
 $$
@@ -42,93 +58,43 @@ $$
 :::
 
 ::: {.solution}
-Write $(x,y)$ for $x\times y$.
-The basis of the order topology on $I_o^2$ consists of the open intervals $(p,q)$, the intervals $[(0,0),q)$, and the intervals $(p,(1,1)]$.
-Each closure below is found by showing that the listed added points are limit points and that the complement of the listed set is a union of basis elements.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.18, printed pp. 171--172** (`tmp/sources/munkres-solutions-whitman.pdf`); the five answers are his, and "positron0802", *Solutions to Topology, Chapter 2*, Exercise 17.18, PDF p. 9, gives the same five. His reduction to the limit points of a horizontal slice is stated below in a form that separates the two exceptional heights $0$ and $1$, which is where the dictionary order behaves differently from a product.
 
-::: pf
-
-::: {.pf-step #neighborhood-basis-near-boundary}
-For $0<x\le1$, every neighborhood of $(x,0)$ contains $(a,x)\times[0,1]$ for some $a<x$; for $0\le x<1$, every neighborhood of $(x,1)$ contains $(x,c)\times[0,1]$ for some $c>x$.
-
-::: pf-proof
-A basis element containing $(x,0)$ with $x>0$ either is $[(0,0),q)$ with $q>(x,0)$, which contains $[0,x)\times[0,1]$, or has a lower endpoint $(a,b)<(x,0)$.
-In the second case $a<x$, because no point has second coordinate below $0$, and the element contains every point with first coordinate in $(a,x)$.
-The statement for $(x,1)$ follows in the same way from the upper endpoints, since no point has second coordinate above $1$.
-:::
-
-:::
-
-::: {.pf-step #closure-of-a}
-$\overline A=\boxed{A\cup\{(0,1)\}}$.
-
-::: pf-proof
-By step [](#neighborhood-basis-near-boundary){.pf-ref}, every neighborhood of $(0,1)$ contains $(1/n,0)$ for all large $n$.
-The complement of $A\cup\{(0,1)\}$ is
+The answers, in the ordered square $I_{o}^{2}=[0,1]\times[0,1]$ with the dictionary order,
 $$
-[(0,0),(0,1))\;\cup\;\bigcup_{n\ge1}\bigl((\tfrac1{n+1},0),(\tfrac1n,0)\bigr)\;\cup\;((1,0),(1,1)],
+\overline{A}=A\cup\{(0,1)\},\qquad \overline{B}=B\cup\{(1,0)\},
 $$
-a union of basis elements.
-:::
-
-:::
-
-::: {.pf-step #closure-of-b}
-$\overline B=\boxed{B\cup\{(1,0)\}}$.
-
-::: pf-proof
-By step [](#neighborhood-basis-near-boundary){.pf-ref}, every neighborhood of $(1,0)$ contains $(1-\frac1n,\frac12)$ for all large $n$.
-The complement of $B\cup\{(1,0)\}$ is
 $$
-[(0,0),(0,\tfrac12))\;\cup\;\bigcup_{n\ge1}\bigl((1-\tfrac1n,\tfrac12),(1-\tfrac1{n+1},\tfrac12)\bigr)\;\cup\;((1,0),(1,1)],
+\overline{C}=C\cup\{(1,0)\}\cup\big(\{x\}\times\{1\}:0\le x<1\big),\qquad
+\overline{D}=D\cup\big(\{x\}\times\{0\}:0<x\le1\big)\cup\big(\{x\}\times\{1\}:0\le x<1\big),
 $$
-a union of basis elements.
-:::
-
-:::
-
-::: {.pf-step #closure-of-c}
-$\overline C=\boxed{((0,1]\times\{0\})\cup([0,1)\times\{1\})}$.
-
-::: pf-proof
-By step [](#neighborhood-basis-near-boundary){.pf-ref}, every neighborhood of $(1,0)$, and of $(x,1)$ for $0\le x<1$, contains points $(t,0)$ with $0<t<1$.
-The complement of the listed set is
 $$
-[(0,0),(0,1))\;\cup\;\bigcup_{0<x<1}((x,0),(x,1))\;\cup\;((1,0),(1,1)],
+\overline{E}=\{\tfrac12\}\times[0,1].
 $$
-a union of basis elements.
-:::
 
-:::
+**Lemma.** Let $A\subset[0,1]$, $b\in[0,1]$ and $B=\{x\times b\mid x\in A\}$. Then $x\times y$ is a limit point of $B$ if and only if either $y=1$ and $x$ is a limit point of $A$ from above, or $y=0$ and $x$ is a limit point of $A$ from below.
 
-::: {.pf-step #closure-of-d}
-$\overline D=\boxed{D\cup((0,1]\times\{0\})\cup([0,1)\times\{1\})}$.
+*Proof.* In the dictionary order on $I_{o}^{2}$ the interval with endpoints $x\times c$ and $x\times d$ is contained in the fibre $\{x\}\times[0,1]$. Consequently:
 
-::: pf-proof
-By step [](#neighborhood-basis-near-boundary){.pf-ref}, every neighborhood of $(x,0)$ for $0<x\le1$, and of $(x,1)$ for $0\le x<1$, contains points $(t,\frac12)$ with $0<t<1$.
-The complement of the listed set is
+If $0<y<1$ and $y\ne b$, the fibre interval between $x\times y$ and $x\times b$ has an endpoint at distance $\abs{y-b}$ from $y$, and the fibre interval $(x\times(y-\varepsilon),x\times(y+\varepsilon))$ with $\varepsilon<\min(y,1-y,\abs{y-b})$ is a basis element containing $x\times y$ and no point of $B$. If $y=b$ with $0<b<1$, the same fibre interval with $\varepsilon<\min(b,1-b)$ contains $x\times y$ and meets $B$ only possibly at $x\times y$ itself, so $x\times y$ is not a limit point. If $y<b$ (respectively $y>b$) the fibre interval $(x\times(y-\varepsilon),x\times(y+\varepsilon))$ with $\varepsilon<\abs{y-b}$ and $\varepsilon<\min(y,1-y)$ avoids $B$ unless $y\in\{0,1\}$, because at $y=0$ no basis element containing $x\times0$ is contained in the fibre: its lower endpoint would have to be strictly below $x\times 0$, so its first coordinate is $<x$, and the interval then contains every point with first coordinate strictly between that and $x$. Symmetrically, at $y=1$ every basis element containing $x\times1$ has upper endpoint with first coordinate $>x$ and so contains every point whose first coordinate lies strictly between $x$ and that endpoint.
+
+So a limit point must have $y=0$ or $y=1$. For $y=0$: a basis element containing $x\times0$ contains some set $\{x'\}\times[0,1)$ with $c<x'\le x$ (take the upper endpoint at first coordinate $x$), and it meets $B$ in a point other than $x\times0$ exactly when $A$ has a point with first coordinate in $(c,x)$. Hence $x\times0$ is a limit point of $B$ exactly when every $c<x$ admits such a point, that is, when $x$ is a limit point of $A$ from below. For $y=1$ the same reasoning with the roles of above and below exchanged gives: $x\times1$ is a limit point exactly when every $d>x$ admits a point of $A$ with first coordinate in $(x,d)$, that is, when $x$ is a limit point of $A$ from above. $\square$
+
+Now the five sets, in each case as $S\cup(\text{limit points of }S)$:
+
+*$A=\{1/n\}\times\{0\}$.* Here $A$ is the slice over $\{1/n\mid n\in\ZZ_{+}\}$ at height $0$; its only limit point is $0$, and only from above, so the only limit point of $A$ in the square is $0\times1$, by the lemma. Hence $\overline{A}=A\cup\{(0,1)\}$.
+
+*$B=\{(1-1/n)\times\tfrac12\}$.* The slice is over $\{1-1/n\}$ at height $\tfrac12$; its only limit point is $1$, from below, so by the lemma the only limit point of $B$ is $1\times0$ and $\overline{B}=B\cup\{(1,0)\}$.
+
+*$C=\{x\times0\mid0<x<1\}$.* The slice is over $(0,1)$ at height $0$. Every $x\in(0,1)$ is a limit point of $(0,1)$ from below, $0$ is a limit point from above, and $1$ is a limit point from below. By the lemma the limit points of $C$ are $\{x\times0\mid0<x\le1\}\cup\{x\times1\mid0\le x<1\}$, and since $C$ already contains $\{x\times0\mid0<x<1\}$,
 $$
-[(0,0),(0,1))\;\cup\;\bigcup_{0<x<1}\Bigl(((x,0),(x,\tfrac12))\cup((x,\tfrac12),(x,1))\Bigr)\;\cup\;((1,0),(1,1)],
+\overline{C}=C\cup\{(1,0)\}\cup\{x\times1\mid0\le x<1\}.
 $$
-a union of basis elements.
-:::
 
-:::
+*$D=\{x\times\tfrac12\mid0<x<1\}$.* The slice is over $(0,1)$ at height $\tfrac12$, so by the lemma the limit points are $\{x\times0\mid0<x\le1\}\cup\{x\times1\mid0\le x<1\}$, and
+$$
+\overline{D}=D\cup\{x\times0\mid0<x\le1\}\cup\{x\times1\mid0\le x<1\}.
+$$
 
-::: {.pf-step #closure-of-e}
-$\overline E=\boxed{\{\frac12\}\times[0,1]}$.
-
-::: pf-proof
-A basis element containing $(\frac12,0)$ contains $\{\frac12\}\times[0,d)$ for some $d>0$, hence points of $E$; likewise a basis element containing $(\frac12,1)$ contains $\{\frac12\}\times(b,1]$ for some $b<1$.
-The complement of $\{\frac12\}\times[0,1]$ is $[(0,0),(\frac12,0))\cup((\frac12,1),(1,1)]$.
-:::
-
-:::
-
-::: pf-qed
-Steps [](#closure-of-a){.pf-ref} through [](#closure-of-e){.pf-ref} give the five closures.
-:::
-
-:::
-
+*$E=\{\tfrac12\}\times(0,1)$.* Here $E$ is a vertical fibre, not a horizontal slice. A point $x\times y$ with $x\ne\tfrac12$ has a neighbourhood avoiding $E$: if $x<\tfrac12$ the basis element $[0\times0,\tfrac12\times0)$ contains it and no point of $E$, and if $x>\tfrac12$ the basis element $(\tfrac12\times1,1\times1]$ does. So all limit points have $x=\tfrac12$. Points $\tfrac12\times y$ with $0<y<1$ lie in $E$. For $y=0$: a basis element containing $\tfrac12\times0$ contains $\{\tfrac12\}\times[0,\varepsilon)$ for some $\varepsilon>0$, which meets $E$ in a point other than $\tfrac12\times0$. For $y=1$: a basis element containing $\tfrac12\times1$ contains $\{\tfrac12\}\times(\varepsilon,1]$ for some $\varepsilon<1$, which meets $E$ in a point other than $\tfrac12\times1$. Hence $\overline{E}=\{\tfrac12\}\times[0,1]$.
 :::
