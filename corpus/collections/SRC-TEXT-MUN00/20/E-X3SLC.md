@@ -11,9 +11,22 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §20 Exercise 11, printed p. 128, with its
+    bracketed hint; the stored statement is the printed one.
 - event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise 20.11, printed p. 231.
+    The answer is his. The subadditivity of t/(1+t), which replaces the book's mean-value-
+    theorem hint and yields the same estimate, is proved by clearing denominators, and the
+    identity d'(x,y) < u iff d(x,y) < u/(1-u) for u < 1 shows that the balls of the two
+    metrics agree. (tmp/sources/munkres-solutions-whitman.pdf).
 ---
 
 ::: {.exercise}
@@ -29,48 +42,22 @@ is a bounded metric that gives the topology of $X$.
 :::
 
 ::: {.solution}
-Let $f(t)=t/(1+t)=1-1/(1+t)$ for $t\ge0$, so that $d'=f\circ d$; $f$ is increasing, $f(0)=0$, and $0\le f<1$.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 20.11, printed p. 231** (`tmp/sources/munkres-solutions-whitman.pdf`); the answer is his. The subadditivity used below replaces the book's mean-value-theorem hint and gives the same estimate.
 
-::: pf
+Let $d$ be a metric for $X$ and $d'(x,y)=d(x,y)/(1+d(x,y))$; then $0\le d'<1$, so $d'$ is bounded.
 
-::: {.pf-step #f-subadditive}
-$f(a+b)\le f(a)+f(b)$ for $a,b\ge0$.
-
-::: pf-proof
+*$d'$ is a metric.* It is nonnegative, vanishes exactly when $d(x,y)=0$, and is symmetric. Let $f(t)=t/(1+t)$ for $t\ge0$, so that $d'=f\circ d$. For $s,t\ge0$,
 $$
-f(a+b)=\frac a{1+a+b}+\frac b{1+a+b}\le\frac a{1+a}+\frac b{1+b}.
+f(s+t)=\frac{s+t}{1+s+t}\le\frac{s}{1+s}+\frac{t}{1+t}=f(s)+f(t),
 $$
-:::
-
-:::
-
-::: {.pf-step #d-prime-is-metric}
-$d'$ is a metric bounded by $1$.
-
-::: pf-proof
-$d'\ge0$, with $d'(x,y)=0$ if and only if $d(x,y)=0$, that is, $x=y$; $d'$ is symmetric because $d$ is; and $d'<1$ because $f<1$.
-Since $f$ is increasing, step [](#f-subadditive){.pf-ref} gives
+because after multiplying by $(1+s)(1+t)(1+s+t)>0$ the inequality becomes $(s+t)(1+s)(1+t)\le s(1+t)(1+s+t)+t(1+s)(1+s+t)$, that is $s^{2}t+st^{2}\ge0$. Hence, with $a=d(x,z)$, $b=d(z,y)$, $c=d(x,y)\le a+b$ and $f$ increasing on $[0,\infty)$,
 $$
-d'(x,z)=f(d(x,z))\le f(d(x,y)+d(y,z))\le d'(x,y)+d'(y,z).
+d'(x,y)=f(c)\le f(a+b)\le f(a)+f(b)=d'(x,z)+d'(z,y).
 $$
-:::
 
-:::
-
-::: {.pf-step #ball-comparison}
-For $0<r\le\frac12$ and every $x$, $B_d(x,r)\subseteq B_{d'}(x,r)$ and $B_{d'}(x,r)\subseteq B_d(x,2r)$.
-
-::: pf-proof
-$d'\le d$ gives the first inclusion.
-If $d'(x,y)<r\le\frac12$, then $d(x,y)=d'(x,y)/(1-d'(x,y))<r/(1-r)\le2r$.
-:::
-
-:::
-
-::: pf-qed
-By step [](#ball-comparison){.pf-ref}, every ball of either metric about a point contains a ball of the other metric about that point, so $d$ and $d'$ have the same open sets; step [](#d-prime-is-metric){.pf-ref} shows that $d'$ is a bounded metric.
-:::
-
-:::
-
+*$d'$ induces the topology of $d$.* For $u\in[0,1)$ one has $d'(x,y)<u\iff d(x,y)<u/(1-u)$, since $t\mapsto t/(1+t)$ is strictly increasing with inverse $u\mapsto u/(1-u)$. Hence for every $x$ and every $u\in(0,1)$,
+$$
+B_{d'}(x,u)=B_{d}\big(x,u/(1-u)\big),
+$$
+and every $d$-ball of radius $r>0$ contains the $d'$-ball of radius $u=r/(1+r)\in(0,1)$ around the same point. So each topology is finer than the other: they coincide.
 :::
