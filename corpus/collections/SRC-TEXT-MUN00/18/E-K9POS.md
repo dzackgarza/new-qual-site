@@ -12,9 +12,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §18 Exercise 2, printed p. 111, with the
+    definitions of limit point and of continuity in §17 and §18; the stored statement is the
+    printed question.
 - event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 18.2, PDF p. 11. The counterexample is a constant
+    map on X = R, continuous by Theorem 18.2, whose image has one point and so has no limit
+    points. (tmp/sources/munkres-solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -24,35 +36,9 @@ If $x$ is a limit point of the subset $A$ of $X$, is it necessarily true that $f
 :::
 
 ::: {.solution}
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.2, PDF p. 11** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the counterexample is theirs. Whitman, printed p. 179, gives the same one.
 
-::: pf
+**No.** Let $X=\RR$ with the usual topology, $Y$ any space with a point $y_{0}$, and $f:X\to Y$ the constant map $f(x)=y_{0}$; $f$ is continuous (Munkres, Theorem 18.2(a)). Take $A=X$, so that every real number is a limit point of $A$. But $f(A)=\{y_{0}\}$, and a neighbourhood of $f(x)=y_{0}$ meets $f(A)$ only in $y_{0}$ itself; so $f(x)$ is not a limit point of $f(A)$.
 
-::: {.pf-step #counterexample}
-No: for the constant map $f\equiv0\colon\RR\to\RR$ and $A=\theset{1/n : n\in\ZZ_+}$, the point $0$ is a limit point of $A$, but $f(0)$ is not a limit point of $f(A)$.
-
-::: pf-proof
-A constant map is continuous.
-Every interval about $0$ contains $1/n\ne0$ for large $n$, so $0$ is a limit point of $A$.
-But $f(A)=\theset{0}$, and a limit point of $\theset{0}$ would need neighborhoods meeting $\theset{0}$ in a point other than itself, which is impossible for $f(0)=0$.
-:::
-
-:::
-
-::: pf-step
-For continuous $f$ and a limit point $x$ of $A$, $f(x)\in\overline{f(A)}$; if moreover $f(x)\notin f(A)$, then $f(x)$ is a limit point of $f(A)$.
-
-::: pf-proof
-Let $V$ be a neighborhood of $f(x)$.
-Then $f^{-1}(V)$ is a neighborhood of $x$, so it contains a point $a\in A$ with $a\ne x$, and $f(a)\in V\cap f(A)$.
-If $f(x)\notin f(A)$, the point $f(a)$ differs from $f(x)$.
-:::
-
-:::
-
-::: pf-qed
-Step [](#counterexample){.pf-ref} answers the question.
-:::
-
-:::
-
+Continuity preserves the property of being in the closure (Theorem 18.1: $f(\overline{A})\subset\overline{f(A)}$) but not the property of being a limit point.
 :::
