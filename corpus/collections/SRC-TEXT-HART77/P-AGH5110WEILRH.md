@@ -374,5 +374,5 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.10, printed p. 260 (the Weil Riemann hypothesis for curves, from the intersection-theoretic form).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.10, PDF p. 260: $\Gamma$ is the inverse image of $\Delta$ under $(f,1)$, "thus $\Gamma^2=\Delta^2\deg(f)=(2-2g)q$"; $\Gamma\cdot\Delta=N$ "clearly gives the number of fixed points"; $\Gamma$ meets $l$ in $f^{-1}(\mathrm{pt})$ and $m$ in one point, so $\Gamma$ has type $(q,1)$ and $\Delta$ type $(1,1)$; then $D=r\Gamma+s\Delta$ has $D^2=rq(2-2g)+s(2-2g)+2rsN$ and V.1.9 gives $N\le1+q+g(qr/s+s/r)$, maximised at $x=\pm1/\sqrt q$. Step [](#s4){.pf-ref} is the step he leaves implicit, that the intersection at a fixed point is transverse because the differential of Frobenius vanishes, so that $\Gamma\cdot\Delta$ is the number of fixed points rather than a length. Matches.
 :::

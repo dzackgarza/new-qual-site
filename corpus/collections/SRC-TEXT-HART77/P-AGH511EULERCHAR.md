@@ -286,5 +286,5 @@ which is exactly the desired formula.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.1, printed p. 254 (intersection via the Euler characteristic).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.1, PDF p. 254: two proofs, both for curves meeting transversally — the first from $0\to\OO_X(-C)\to\OO_X\to\OO_C\to0$ and $0\to\OO_C(-D)\to\OO_C\to\OO_{C\cap D}\to0$ with additivity of $\chi$, concluding $\chi(\OO_X)-\chi(\OO_X(-D))-\chi(\OO_X(-C))+\chi(\OO_X(-C-D))=h^0(C\cap D)$; the second from the four-term sequence $0\to\OO_X(-C-D)\to\OO_X(-C)\oplus\OO_X(-D)\to\OO_X\to\OO_{C\cap D}\to0$, exactness being checked at the stalks, where "$\OO_x$ is a UFD, since $c,d$ are relatively prime" states the regularity of the pair. Neither proof covers divisors that are not differences of transverse nonsingular curves. Step [](#s1){.pf-ref} supplies the additivity in an effective divisor and step [](#s2){.pf-ref} the reduction $C\sim P-Q$ with $P,Q$ nonsingular very ample members, so the formula holds for arbitrary divisors. Matches on the transverse case; the general case is supplied here.
 :::

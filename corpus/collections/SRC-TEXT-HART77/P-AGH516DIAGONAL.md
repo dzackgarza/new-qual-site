@@ -228,5 +228,5 @@ part (b).
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.6, printed p. 256 (the diagonal class on $X\times X$ via the blow-up of the diagonal).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.6, PDF pp. 256--257: (a) "$\deg K_\Delta=(K_X+\Delta)\cdot\Delta$ by adjunction ... $=(2g-2)+(2g-2)+\Delta^2$, and $\Delta\simeq C$ gives $\deg K_\Delta=2g-2$; now solve for $\Delta^2$" — an adjunction computation, not the conormal-sheaf computation the printed hint asks for; (b) $l^2=l\cdot m=m^2=0$, $l\cdot\Delta=m\cdot\Delta=1$, then the three equations $b+c=0$, $a+c=0$, $a+b+c(2g-2)=0$ and "thus $a=b=c=0$ by solving the system", which needs $g\ne0$. Step [](#s1){.pf-ref} and step [](#s2){.pf-ref} give the hint's route through $\Omega_{C/k}$, and step [](#s4){.pf-ref} records $g\ge1$ as the hypothesis it uses. Matches.
 :::

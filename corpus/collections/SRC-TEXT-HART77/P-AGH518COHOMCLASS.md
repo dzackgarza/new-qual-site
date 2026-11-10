@@ -295,5 +295,5 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.8, printed p. 258 (the cohomology class of a divisor, and the trace normalisation).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.8, PDF pp. 258--259: (a) the commutative square from $\Pic X\to H^1(X,\Omega_X)$ to $\Pic D\to H^1(D,\Omega_D)\cong k$, whose bottom map is the degree, so that going one way gives $\OO(E)\mapsto\OO(E)\otimes\OO_D\mapsto\deg_D\OO(E)\otimes\OO_D=D\cdot E$ and the other gives $f(c(D))=D\cdot E$; that is step [](#s1){.pf-ref} and step [](#s2){.pf-ref}, and his "by Bertini, write $D$ as a difference of very ample divisors" is step [](#s3){.pf-ref}. (b) "via the exponential sequence, $D$ determines $c_1(\OO_X(D))\in H^2(X,\ZZ)$, which is finitely generated since it sits between $H^1(X,\OO_X)$ and $H^2(X,\OO_X)$". Step [](#s7){.pf-ref} instead embeds $\Num X$ in $\ZZ^r$ through the nondegenerate trace pairing, which is the argument the exercise asks for and does not pass through the exponential sequence. Matches.
 :::

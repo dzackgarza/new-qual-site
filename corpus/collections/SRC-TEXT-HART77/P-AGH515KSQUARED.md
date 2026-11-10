@@ -197,5 +197,5 @@ Step [](#s2){.pf-ref} proves part (a), and steps [](#s3){.pf-ref}, [](#s4){.pf-r
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.5, printed p. 256 (the canonical class of a surface in $\PP^3$ and $K^2$).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.5, PDF p. 256: (a) $K_X=(d-4)H$ by adjunction since the canonical class of $\PP^3$ is $-4H$, and $H^2=d$ by the previous exercise, so $K_X^2=(d-4)^2d$; (b) $K_X=p_1^*K_C+p_2^*K_{C'}$ from II.8.3, so $K_X^2=(p_1^*K_C)^2+2p_1^*K_C\cdot p_2^*K_{C'}+(p_2^*K_{C'})^2$, "the middle term is $2(2g-2)(2g'-2)$ and the outer terms disappear". Steps [](#s3){.pf-ref} to [](#s5){.pf-ref} are this computation, with the vanishing of the outer terms proved in step [](#s4){.pf-ref} rather than asserted. Matches.
 :::

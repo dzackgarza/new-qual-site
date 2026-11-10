@@ -200,5 +200,5 @@ nonsingular degree-$d$ surface containing the line $x=y=0$, proving part (b).
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.4, printed p. 255 (self-intersection of a rational curve on a surface).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.4, PDF pp. 255--256: (a) $K_X=(K_{\PP^3}+dH)\restrict_X=(-4+d)H$ by adjunction, then $C\cdot(C+K_X)=2g-2=-2$ with $C\cdot H=1$ gives $C^2=2-d$, as step [](#s2){.pf-ref}. For (b) he writes "the Fermat hypersurface $x^d+y^d+z^d+w^d=0$ contains the line $x-n^{\cdots}$", whose text layer breaks off there; on the Fermat hypersurface the lines $x+y=z+w=0$ lie on it only when $d$ is odd, since $x^d+(-x)^d=2x^d$ for even $d$, so his example does not give part (b) in every degree. Step [](#s3){.pf-ref} uses $xz^{d-1}+yw^{d-1}+x^d+y^d$ instead and step [](#s4){.pf-ref} checks its partial derivatives, which works for every $d\ge1$. Matches on (a); (b) is supplied here and recorded in COMPLAINTS.md.
 :::

@@ -398,5 +398,5 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.11, printed p. 260 (finiteness of $\operatorname{Aut}$ and the numerical invariants of a surface).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.11, PDF pp. 260--261: (b) is the printed hint — "doing the hint by contrapositive, theorem V.1.4 gives $\Gamma\ne\Delta$ which implies $\Gamma\cdot\Delta\ge0$; then $\Gamma^2<0$ implies $\Gamma\cdot\Delta\ne\Delta^2$ and thus $\Gamma\not\equiv\Delta$", then $H=l+m$ and part (a). Part (a) is a sketch: "WLOG assume $H$ is very ample of degree 1; for $D\cdot H=0$ this follows from Nakai--Moishezon; any such $D$ can only have finitely many components not intersecting $H$ since if $P_i\cdot H=0$, then $P_i\cdot P_j<0$ and with each additional such component, the genus ... will decrease; thus we are choosing $D$ from a finite set of a finite number of components." That bounds neither the components meeting $H$ nor the coefficients, and the negativity of $P_i\cdot P_j$ is asserted. Steps [](#s1){.pf-ref} to [](#s5){.pf-ref} supply part (a) from adjunction and the discreteness of the lattice $\Num X$ in $\Num X\otimes\RR$. Recorded in COMPLAINTS.md.
 :::

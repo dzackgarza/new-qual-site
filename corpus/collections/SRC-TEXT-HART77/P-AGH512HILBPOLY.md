@@ -255,5 +255,5 @@ formula for every curve $C\subseteq X$.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.2, printed p. 254 (degree via a hypersurface, and the Hilbert polynomial).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.2, PDF p. 254: by surface Riemann--Roch, $\chi(nH)=\frac12(nH)\cdot(nH-K_X)+1+p_a$, so $a=H^2$ and $c=1+p_a$; adjunction on a nonsingular member of $\abs{H}$ gives $H\cdot K_X=2\pi-2-H^2$, which is the linear coefficient; "by I.7, the degree is $\dim(X)!$ times the first coefficient, so it's $H^2$". For the degree of a curve he plugs the two exact sequences $0\to\OO_X(-C)\to\OO_X\to\OO_C\to0$ and $0\to\OO_X(-C-H)\to\OO_X(-H)\to\OO_C(-H\restrict_C)\to0$ back into exercise V.1.2 itself, so that paragraph argues in a circle. Step [](#s6){.pf-ref} obtains $\deg C=C\cdot H$ from $\OO_C(1)\cong\OO_X(H)\restrict_C$. Matches on the two coefficients and the degree of $X$; the degree formula is supplied here.
 :::

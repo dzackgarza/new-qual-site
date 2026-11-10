@@ -314,5 +314,5 @@ the required failure of numerical invariance for very ampleness.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.12, printed p. 261 (very ample but not numerically equivalent, the separation example).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.12, PDF p. 261: for a curve of genus $g$, a divisor $D$ of degree $2g$ is very ample if and only if $h^0(D-P-Q)=h^0(D)-2$ by IV.3.4, and Riemann--Roch gives this exactly when $K_C-D+P+Q$ has nonpositive degree, so the very ample classes of degree $2g$ are those outside a two-dimensional family; he then takes $H=\abs{C_0+bf}$ on a decomposable ruled surface and quotes "Fuentes-Pedreira thm 3.9" for the very-ampleness criterion on it, a source that is not among the retained sets. Step [](#s3){.pf-ref} proves the curve statement as a separation statement, and steps [](#s5){.pf-ref} to [](#s8){.pf-ref} replace his surface example by $C\times\PP^1$ with $M=p_1^*L\otimes p_2^*\OO(1)$ and $M'=p_1^*L'\otimes p_2^*\OO(1)$, resting only on Riemann--Roch and a degree-zero pullback. Matches on the curve computation; the surface example is supplied here and recorded in COMPLAINTS.md.
 :::

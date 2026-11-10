@@ -290,5 +290,5 @@ prove both identities in part (c).
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.3, printed p. 255 (adjunction, both the computational formula and its use).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.3, PDF p. 255: Riemann--Roch for $-D$ together with $0\to\OO_X(-D)\to\OO_X\to\OO_D\to0$ gives $\chi(\OO_D)$ ("note the last term cancels out"), (b) is "by part (a)", and (c) is the two expansions $\frac12(-D)\cdot(-D+K)$ and $\frac12(C+D)\cdot(C+D+K)$ that step [](#s5){.pf-ref} and step [](#s6){.pf-ref} carry out. His first display prints $\chi(\OO_D)$ with the sign of the last term reversed; the card's step [](#s1){.pf-ref} keeps it, and the identity $2p_a-2=D\cdot(D+K)$ follows from it. Matches.
 :::

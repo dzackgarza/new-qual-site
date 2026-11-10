@@ -257,5 +257,5 @@ the equality criterion.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.9, printed p. 259 (the Hodge index inequality).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.9, PDF p. 259: (a) $D'=H^2D-(H\cdot D)H$ has $D'\cdot H=0$, so the Hodge index theorem gives $D'^2\le0$, and expanding $H^4D^2-2H^2(H\cdot D)^2+(H\cdot D)^2H^2\le0$ gives $D^2H^2\le(H\cdot D)^2$; (b) the printed hint's $H=l+m$, $E=l-m$ with $E^2=-2$, $H^2=2$, $E\cdot H=0$, and $D'=-4D+2(a+b)H-2(a-b)E$, so that $0>D'^2=16(D^2-2ab)$ unless $D'\equiv0$, in which case $D\equiv bl+am$. Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} are (a), and steps [](#s4){.pf-ref} to [](#s7){.pf-ref} are (b) with $F=D-bl-am$ in place of his $D'$, which avoids the rescaling. Matches.
 :::

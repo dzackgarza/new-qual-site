@@ -328,5 +328,5 @@ prove part (c).
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.1.7, printed p. 257 (algebraic equivalence of divisors).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.7, PDF p. 257: (a) closure under inverses by negating a chain and under sums by concatenating a chain from $0$ to $D$ with its translate by $D$; (b) "since the difference of linearly equivalent divisors is principal, we just need to show $(f)\equiv0$ ... $(tf-u)$ restricts to $(f)$ over $(1,0)$ and to $0$ over $(0,1)$; thus $(f)=0$", printing equality where prealgebraic equivalence is meant; (c) "by Bertini we can consider differences of very ample divisors", then equality of the degrees in $\PP^n$ of the two fibres of a flat family by III.9.9, and $D\cdot H$ is that degree. Step [](#s3){.pf-ref} writes (b) as the pencil $ts_0+us_1$ on $X\times\PP^1$, which is the printed hint, and step [](#s4){.pf-ref} and step [](#s5){.pf-ref} are his (c). Matches.
 :::
