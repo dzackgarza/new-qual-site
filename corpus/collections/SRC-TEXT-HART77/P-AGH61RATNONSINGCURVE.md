@@ -125,3 +125,11 @@ Steps [](#y-open-in-projective-model){.pf-ref} and [](#y-contained-in-affine-lin
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 6.1, PDF p. 8: (a) by (6.7), $Y$ is isomorphic to an open subset of some projective space, hence to a proper open subset of $\PP^1$, hence to an open subset of $\AA^1$; (b) after an identification $Y=\AA^1\setminus\{a_1,\ldots,a_n\}$, the affine model displayed is a principal open subset of $\AA^2$ — as printed it reads $y(x-a_1)\cdots(x-a_n)=0$, a union of $n+1$ lines and points, where the argument needs $y(x-a_1)\cdots(x-a_n)=1$; (c) every element of $A(Y)$ is $a(x-b_1)^{c_1}\cdots(x-b_n)^{c_n}$ with $c_i\in\ZZ$, positive when $b_i\notin\{a_1,\ldots,a_n\}$, so $A(Y)$ is a unique factorization domain with primes $x-b_i$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), stops at §I.5 on PDF p. 16 and gives no solution to 6.1.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.6.1, PDF p. 52: (a) "$Y$ is isomorphic to an open subset of projective space, then it is isomorphic to a proper open subset of $\PP^1$", the identification of the projective model being left implicit; (b) "$Y=\AA^1$ minus a finite number of points, $Y=V(y(x-P_1)\cdots(x-P_n))$"; (c) "$A(Y)=\OO(Y)=k[y]$ localized at $(t-P_1),(t-P_2),\ldots$, which is the localization of a UFD".
+Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.6.1, PDF pp. 23--24: (a) by (6.7), $Y$ is an open subset of the complete abstract curve $Z$ of its function field, $Z$ is birational to $\PP^1$ and hence equal to it, and $Y\subset\PP^1$ is not complete, so it lies in an $\AA^1$; (b) $Y$ is then a principal open subset of $\AA^1$, hence affine; (c) $A(Y)=k[t,(t-\alpha_1)^{-1},\ldots,(t-\alpha_n)^{-1}]$, a localization of a unique factorization domain.
+All three carry the same three steps. Step [](#y-open-in-projective-model){.pf-ref} supplies the gluing of the local identifications of (6.7) over an affine cover in place of the wholesale citation, and part (b) is written as the principal open subset $D(q)$, which is what Borcherds' displayed subset is missing. Matches.
+:::

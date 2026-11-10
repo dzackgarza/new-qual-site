@@ -54,7 +54,8 @@ The morphism $\varphi_U$ extends uniquely to a morphism $\varphi:Y\to\PP^1$.
 ::: pf-proof
 The complement $Y\setminus U$ is a proper closed subset of the noetherian irreducible curve $Y$, hence is finite.
 Write it as $\{P_1,\ldots,P_m\}$.
-Proposition I.6.8 says that a morphism from a nonsingular curve with one point removed to a projective variety extends uniquely over that point.
+Proposition I.6.8 says that for an abstract nonsingular curve $X$, a point $P\in X$ and a projective variety $Z$, a morphism $X\setminus\{P\}\to Z$ extends uniquely over $P$.
+A nonsingular quasi-projective curve is isomorphic to an abstract nonsingular curve by Proposition I.6.7, so the proposition applies to the curves below.
 
 Starting with $U_0=U$, put $U_i=U\cup\{P_1,\ldots,P_i\}$.
 The open subset $U_i$ of the nonsingular curve $Y$ is itself a nonsingular curve, and
@@ -116,4 +117,12 @@ Steps [](#morphism-on-open-subset){.pf-ref} and [](#morphism-extends-to-y){.pf-r
 :::
 
 :::
+:::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 6.4, PDF p. 8: a nonconstant rational map $Y\to\PP^1$ induces an injection $k(x)\to k(Y)$, "then every valuation ring of $k(x)$ can be extended to one of $k(Y)$, so every point of $\PP^1$ is the image of a point of $Y$"; and $\varphi^{-1}(P)$ is closed, while an infinite closed subset of the curve $Y$ is all of $Y$, which a nonconstant map does not have as a fibre. Surjectivity here rests on the extension of valuation rings, quoted and not proved.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), stops at §I.5 and gives no solution to 6.4.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.6.4, PDF p. 54: "$f$ induces a map $Y\to\AA^1$ by $x\mapsto f(x)$ and therefore $\varphi:Y\to\PP^1$; as $f$ is nonconstant and $Y$ irreducible, $\mathrm{im}(\varphi)=\PP^1$ and $\varphi$ is dominant, so induces $k(Y)\hookrightarrow k(\PP^1)$. If $P\in\PP^1$, then $\varphi^{-1}(P)$ is closed by continuity and finite since it's a proper subset of $Y$ with closure not $Y$ as $\varphi$ is nonconstant." The field map runs the wrong way round, and closedness plus properness of a subset is not finiteness.
+Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.6.4, PDF pp. 24--25: the same construction, "since $Y$ is projective, the image must be closed in $\PP^1$; since $f$ is nonconstant and $Y$ irreducible, the image must be all of $\PP^1$", then finiteness through a finite module $k[V]$ over $k[\varphi(V)]$ from the theorem of finiteness of integral closure (I.3.9), with the two coordinate rings notated identically.
+Steps [](#morphism-extends-to-y){.pf-ref} and [](#morphism-nonconstant-surjective){.pf-ref} obtain surjectivity from completeness, as Cutrone--Marshburn do, and finiteness from a proper closed subset of the curve rather than from a finiteness-of-integral-closure argument. Step [](#morphism-extends-to-y){.pf-ref} also names Proposition I.6.7, without which I.6.8 cannot be applied to a morphism on an open subset of a projective curve: I.6.8 is stated for abstract nonsingular curves. Matches.
 :::

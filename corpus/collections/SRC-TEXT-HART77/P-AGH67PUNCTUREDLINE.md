@@ -123,7 +123,7 @@ of $\PP^1$ are carried to one another by a fractional linear transformation.
 
 ::: pf-proof
 Let $\phi:U\to V$ be an isomorphism.
-Both $U$ and $V$ are nonsingular curves and $\PP^1$ is projective.
+Both $U$ and $V$ are nonsingular quasi-projective curves, hence abstract nonsingular curves by Proposition I.6.7, and $\PP^1$ is projective, so Proposition I.6.8, which is stated for abstract nonsingular curves, applies to them.
 Apply Proposition I.6.8 successively at the finitely many omitted points to extend the composite
 $$
 U\xrightarrow{\phi}V\hookrightarrow\PP^1
@@ -177,4 +177,12 @@ Step [](#r-equals-s){.pf-ref} proves the required invariant, while steps [](#iso
 :::
 
 :::
+:::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 6.7, PDF p. 8: "any map from one curve to the other can be extended to a map from $\PP^1$ to $\PP^1$, so the points $P_i$ must be mapped to the points $Q_j$, so $r=s$"; and "the converse is true if and only if $r\le3$, because any set of at most $3$ distinct points in $\PP^1$ can be mapped to any other set of the same size under $\operatorname{Aut}(\PP^1)$, but this is not true for sets of $4$ or more points".
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), stops at §I.5 and gives no solution to 6.7.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.6.7, PDF p. 55: "we can extend any map between the two curves to a map $\PP^1\to\PP^1$; since $P_i$ must map to $Q_j$ thus $r=s$. The converse is only true for $r\le3$ by virtue of the fact that mobius transformations can take at most $3$ distinct points in $\PP^1$ to any other $3$ distinct points."
+Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.6.7, PDF p. 25: the same extension argument giving the equality of the two numbers of punctures; "the converse is not true for $r>3$ since any set of at most $3$ points in $\PP^1$ can be mapped to any other set of the same size under $\operatorname{Aut}\PP^1$; any isomorphism between $\PP^1$ and $\PP^1$ fixes at most $2$ points, so if $r>3$, the map must be the identity isomorphism".
+All three sets answer $r=s$ as step [](#r-equals-s){.pf-ref} does. All three then state the threshold for the converse as $r\le3$, which is one too high: the automorphism of $\PP^1$ produced in step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref} carries $\infty$ to $\infty$, so the finite subset it moves has $r+1$ elements, four of them as soon as $r=3$, and the cross ratio obstructs the converse already there. Cutrone--Marshburn's sentence that an isomorphism of $\PP^1$ "fixes at most $2$ points" is false, since $x\mapsto2x$ fixes two points and $x\mapsto x+1$ fixes none. Step [](#converse-fails){.pf-ref} is the counterexample the sets lack. Recorded in COMPLAINTS.md for the converse half.
 :::

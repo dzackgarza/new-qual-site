@@ -39,7 +39,8 @@ This exercise shows that $Y$ is not a rational curve, and hence that $K(Y)$ is n
 (d) Using the norm, show that the units in $A$ are precisely the nonzero elements of $k$.
    Show that $x$ and $y$ are irreducible elements of $A$, and that $A$ is not a unique factorization domain.
 
-(e) Prove that $Y$ is not a rational curve.
+(e) Prove that $Y$ is not a rational curve (Ex. 6.1).
+   See (II, 8.20.3) and (III, Ex. 5.3) for other proofs of this important result.
 :::
 
 ::: {.solution}
@@ -221,4 +222,12 @@ Step [](#y-nonsingular-a-integrally-closed){.pf-ref} proves part (a), steps [](#
 :::
 
 :::
+:::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 6.2, PDF p. 8: (a) the singular points would satisfy $y^2-x^3+x=0$, $2y=0$ and $-3x^2+1=0$, so $y=0$ and $x=\pm1$ in characteristic not $2$, which contradicts $-3x^2+1=0$; $y^2-x^3+x$ is irreducible because two factors would meet in a point of the union that is singular, while all points of the curve were just shown to be nonsingular; normality then gives that $A$ is integrally closed; (b) $y^2\in k[x]$, so $y$ is integral over $k[x]$ and $A$ is integrally closed; (c) $N(yf+g)=g^2-f^2(x^3-x)$ and the remaining properties are immediate; (d) the unit calculation compares the even degree of $g^2$ with the odd degree of $f^2(x^3-x)$, and then $x\mid y^2$ with $y$ not an associate of $x$; (e) $Y$ is neither $\PP^1$ nor $\AA^1$ minus finitely many points, so by 6.1(c) it is not rational.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), stops at §I.5 and gives no solution to 6.2.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.6.2, PDF p. 53: (a) "a nonsingular curve is normal, thus by the jacobian criterion, $A$ is integrally closed"; (b) "as $y^2\in k[x]$, thus $y$ satisfies $z^2-y^2$" — the relation is $y^2-x^3+x=0$ — "thus $y\in k[x]$, and $A\subseteq k[x]$; on the other hand $k[x]\subseteq A$"; (c) and (d) as above, with $N(x)=x^2$ and the observation that no element has a norm of degree one; (e) "since nontrivial and not UFD, then by 6.1, $Y$ is not rational".
+Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.6.2, PDF p. 24: (a) the partial derivatives vanish only at $(\pm1/\sqrt3,0)$, which does not lie on the curve, so $Y$ is nonsingular and $A$ is integrally closed; (b) $y^2\in k[x]$ gives $A=k[x]$; (c) the norm formula; (d) units and the irreducibility of $x$ and $y$ by comparing norms; (e) $A$ is neither a field nor a unique factorization domain, so $Y$ is not rational by 6.1.
+All three agree on the five parts. Step [](#y-nonsingular-a-integrally-closed){.pf-ref} replaces Borcherds' factor-intersection argument for the irreducibility of $y^2-x^3+x$ by the degree-in-$y$ argument, whose obstruction is that $x^3-x=x(x-1)(x+1)$ is not a square because its three roots are distinct, and Borcherds' aside that the points at infinity of the projective closure need a separate check is unnecessary, the exercise being about the affine curve. Step [](#x-y-irreducible){.pf-ref} adds the irreducibility of $x-1$ and $x+1$, which the factorisations $y\cdot y=x(x-1)(x+1)$ of step [](#a-not-ufd){.pf-ref} needs. Matches.
 :::

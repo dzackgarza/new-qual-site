@@ -173,3 +173,11 @@ Step [](#matrix-gives-automorphism){.pf-ref} proves part (a), step [](#aut-p1-is
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 6.6, PDF p. 8: (a) the inverse of $x\mapsto(ax+b)/(cx+d)$ is $x\mapsto(dx-b)/(a-cx)$ when $ad-bc\ne0$; (b) "follows from corollary 6.12 (i) and (iii)"; (c) "any automorphism of $k(x)$ maps $x$ to $f(x)/g(x)$ for coprime polynomials $f$ and $g$ ... therefore $f(x)/g(x)$ is not equal to $f(y)/g(y)$ if $x\ne y$. But if $f$ or $g$ have degree greater than $1$ then $g(y)a=f(y)$ will usually have more than one solution for $y$. Hence $f$ and $g$ have degrees at most $1$." The middle sentence is not an argument; the equation printed there mixes the two coprime polynomials.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), stops at §I.5 and gives no solution to 6.6.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.6.6, PDF pp. 54--55: (a) invertibility of the matrix; (b) "$(\phi\in\operatorname{Aut}\PP^1$ gives $f\mapsto f\circ\phi\in\operatorname{Aut}k(x)$; if $\varphi\in\operatorname{Aut}k(x)$, $\varphi$ induces an auto-birational map of $\PP^1$, a nonsingular curve" — the parenthetical question in the original is his; (c) "$\phi$ maps $x\mapsto f(x)/g(x)$ for coprime $f,g$; injectivity of $\varphi$ implies $f,g$ are linear", the implication being asserted.
+Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.6.6, PDF p. 25: (a) the inverse formula; (b) an automorphism of $k(x)$ induces a birational map of $\PP^1$, and a birational map of nonsingular projective curves is an isomorphism; (c) "if $\deg g,\deg f>1$, the map won't be injective, so both $f$ and $g$ are linear", the same assertion.
+Parts (a) and (b) agree across the three sets. Every set asserts that a nonconstant rational function of degree greater than one is not injective and none proves it; parts (c) of all three therefore rest on an unproved step. Step [](#fixing-infinity-is-affine){.pf-ref} replaces it by the degree computation $\deg x=\deg(q\circ p)=\deg q\cdot\deg p$ in $k[x]$, which is the only place the conclusion uses more than coprime linear forms. Recorded in COMPLAINTS.md as a card with no complete published solution for part (c).
+:::

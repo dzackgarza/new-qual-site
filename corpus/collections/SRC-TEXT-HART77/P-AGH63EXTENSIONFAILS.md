@@ -110,3 +110,11 @@ Step [](#dimension-two-counterexample){.pf-ref} proves failure when the source h
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 6.3, PDF p. 8: (a) "map $\AA^2\setminus(0,0)$ to $\PP^1$ by $(x,y)\mapsto(x:y)$"; (b) "map $\PP^1\setminus\infty$ to $\AA^1$ in the obvious way". The map of (b), read as it is printed, is $x\mapsto x$, which is regular at $\infty$ in the target $\AA^1$ once the source is read as $\AA^1$: the displayed answer therefore does not exhibit a failure of extension.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), stops at §I.5 and gives no solution to 6.3.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.6.3, PDF p. 54: the same two answers, the second being "map $\PP^1\setminus\infty$ to $\AA^1$ by $(x:y)\mapsto x/y$", which is again the identity and extends.
+Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.6.3, PDF p. 24: (a) the same map, with the observation that it is not regular at the origin; (b) "let $Y=\AA^1$, then $\varphi:\PP^1\setminus\AA^1$ defined by $(x:y)\mapsto x/y$; if $\varphi$ had an extension, then the identity map and $\varphi$ would agree on some dense open set, and thus be equal, which is a contradiction". The domain is misstated — $\PP^1\setminus\AA^1$ is the single point at infinity — but the argument is correct for the identity on $\AA^1$: a morphism $\PP^1\to\AA^1$ extending it would agree with the identity on a dense open subset and hence equal it, and its image would not lie in $\AA^1$.
+Step [](#dimension-two-counterexample){.pf-ref} follows (a) in all three sets and closes the separatedness argument they leave at "this map is not regular at the origin". Step [](#nonprojective-target-counterexample){.pf-ref} replaces (b) by $\AA^1\dashrightarrow\AA^1$, $t\mapsto t^{-1}$, which is the same non-extension stated on an affine source: no published set states a counterexample for (b) whose map fails to extend.
+:::
