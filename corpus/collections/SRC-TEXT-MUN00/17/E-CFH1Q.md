@@ -12,14 +12,21 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §17 Exercise 1, printed p. 100; the stored
+    statement is the printed sentence.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise 17.1, printed p. 158.
+    The content is his: X minus a union is the intersection of the complements and X minus a
+    finite intersection is the finite union of the complements, so the three axioms transfer
+    to T from the union and intersection axioms of C. (tmp/sources/munkres-solutions-
+    whitman.pdf).
 ---
 
 ::: {.exercise}
@@ -36,22 +43,21 @@ is a topology on $X$.
 :::
 
 ::: {.solution}
-We verify the topology axioms for
-$$
-\mathcal T=\{X-C:C\in\mathcal C\}.
-$$
-Since $X,\varnothing\in\mathcal C$, their complements show that $\varnothing,X\in\mathcal T$.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.1, printed p. 158** (`tmp/sources/munkres-solutions-whitman.pdf`); the argument is his, in the book's notation.
 
-If $U_\alpha=X-C_\alpha\in\mathcal T$, then by De Morgan,
-$$
-\bigcup_\alpha U_\alpha
-=X-\bigcap_\alpha C_\alpha.
-$$
-The arbitrary intersection $\bigcap_\alpha C_\alpha$ belongs to $\mathcal C$, so the union belongs to $\mathcal T$.
+Let $\mathcal{T}=\{X-C\mid C\in\mathcal{C}\}$. Since $\varnothing=X-X$ and $X=X-\varnothing$ with $X,\varnothing\in\mathcal{C}$, both $\varnothing$ and $X$ lie in $\mathcal{T}$.
 
-For finitely many $U_i=X-C_i$,
+Let $\mathcal{A}\subset\mathcal{T}$ be arbitrary. For each $A\in\mathcal{A}$ choose $B_{A}\in\mathcal{C}$ with $A=X-B_{A}$, and put $\mathcal{B}=\{B_{A}\mid A\in\mathcal{A}\}\subset\mathcal{C}$. Then by De Morgan's law
 $$
-\bigcap_{i=1}^nU_i=X-\bigcup_{i=1}^nC_i,
+\bigcup_{A\in\mathcal{A}}A=\bigcup_{B\in\mathcal{B}}(X-B)=X-\bigcap_{B\in\mathcal{B}}B,
 $$
-and the finite union on the right belongs to $\mathcal C$. Hence $\mathcal T$ is a topology.
+and $\bigcap_{B\in\mathcal{B}}B\in\mathcal{C}$ because $\mathcal{C}$ is closed under arbitrary intersections; so the union lies in $\mathcal{T}$.
+
+Let $A_{1},\dots,A_{n}\in\mathcal{T}$, say $A_{k}=X-B_{k}$ with $B_{k}\in\mathcal{C}$. Then
+$$
+\bigcap_{k=1}^{n}A_{k}=\bigcap_{k=1}^{n}(X-B_{k})=X-\bigcup_{k=1}^{n}B_{k},
+$$
+and $\bigcup_{k=1}^{n}B_{k}\in\mathcal{C}$ because $\mathcal{C}$ is closed under finite unions; so the finite intersection lies in $\mathcal{T}$.
+
+Hence $\mathcal{T}$ satisfies the three defining properties of a topology on $X$.
 :::
