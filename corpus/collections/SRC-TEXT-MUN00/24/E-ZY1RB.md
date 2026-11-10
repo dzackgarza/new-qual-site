@@ -13,14 +13,22 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §24 Exercise 4, printed p. 158, with the
+    definition of linear continuum and the order topology of §14; the stored statement is
+    the printed one.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 24.4, PDF p. 4. A nonempty bounded set without a
+    least upper bound gives a separation of X into the union of the open rays below its
+    members and the union of the open rays above its upper bounds, and a gap between two
+    points gives a separation into two open rays. (tmp/sources/munkres-solutions-positron-
+    ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -30,15 +38,17 @@ Show that if $X$ is connected, then $X$ is a linear continuum.
 :::
 
 ::: {.solution}
-Let $X$ be connected in its order topology.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.4, PDF p. 4** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the two steps are theirs.
 
-First, the order must be dense. If $x<y$ and no point lies strictly between them, then
+Let $X$ be an ordered set, with more than one element, in the order topology, and suppose $X$ connected.
+
+*$X$ has the least upper bound property.* Let $A$ be a nonempty subset bounded above, and let $B$ be the set of its upper bounds, which is nonempty. Suppose $A$ has no least upper bound, that is, $B$ has no smallest element. Put
 $$
-(-\infty,y)\qquad\text{and}\qquad(x,\infty)
+C=\bigcup_{a\in A}(-\infty,a),\qquad D=\bigcup_{b\in B}(b,+\infty),
 $$
-are disjoint nonempty open sets whose union is $X$, a separation. Thus for every $x<y$ there is $z$ with $x<z<y$.
+unions of open rays, hence open in $X$. They are disjoint: if $x\in C\cap D$ then $x<a$ for some $a\in A$ and $x>b$ for some $b\in B$, so $b<x<a$ with $b$ an upper bound of $A$ — impossible. They cover $X$: if $x\in B$ then, $B$ having no smallest element, there is $b\in B$ with $b<x$, so $x\in(b,+\infty)\subset D$; if $x\notin B$ then $x$ is not an upper bound of $A$, so $x<a$ for some $a\in A$ and $x\in C$. Finally $C$ and $D$ are nonempty: $D\ne\varnothing$ because $B\ne\varnothing$, and $C\ne\varnothing$ because $A\ne\varnothing$ and $A$ has an upper bound. So $C,D$ separate $X$, contradiction. Hence $A$ has a least upper bound.
 
-Now let $A\subseteq X$ be nonempty and bounded above, and let $B$ be the set of upper bounds of $A$. If $B$ had no least element, then both $B$ and $X-B$ would be nonempty open sets. Indeed, if $b\in B$, choose a smaller upper bound $b'<b$; then $(b',\infty)$ is a neighborhood of $b$ contained in $B$. If $x\notin B$, choose $a\in A$ with $x<a$; then $(-\infty,a)$ is a neighborhood of $x$ contained in $X-B$. These two sets would separate $X$, contradiction.
+*$X$ is densely ordered.* If $x<y$ with no element between them, then $(-\infty,y)$ and $(x,+\infty)$ are disjoint nonempty open sets whose union is $X$, a separation.
 
-Therefore $B$ has a least element, which is exactly $\sup A$. Hence $X$ has the least-upper-bound property and a dense order, so it is a linear continuum.
+So $X$ is a linear continuum.
 :::
