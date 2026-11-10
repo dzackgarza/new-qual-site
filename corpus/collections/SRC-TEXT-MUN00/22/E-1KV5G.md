@@ -12,9 +12,22 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §22 Supplementary Exercise 4, printed p. 146; the
+    stored statement is the printed one, including the definition of homogeneous.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise TG.4, printed pp.
+    265-266. Translations are bijections with the translation by the inverse as inverse, and
+    they are continuous because multiplication is continuous in each variable separately
+    (Exercise 18.11); homogeneity by the translation carrying x to y, namely alpha = y
+    x^{-1}. (tmp/sources/munkres-solutions-whitman.pdf).
 ---
 
 ::: {.exercise}
@@ -32,35 +45,26 @@ Conclude that $G$ is a homogeneous space.
 :::
 
 ::: {.solution}
-Let $m\colon G\times G\to G$ be the continuous multiplication.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise TG.4, printed pp. 265--266** (`tmp/sources/munkres-solutions-whitman.pdf`); the argument is his.
 
-::: pf
+Let $G$ be a topological group with identity $e$ and let $\alpha\in G$. Put $f_{\alpha}(x)=\alpha\cdot x$ and $g_{\alpha}(x)=x\cdot\alpha$. We treat $f_{\alpha}$; the case of $g_{\alpha}$ is the same with the factors exchanged.
 
-::: {.pf-step #translations-continuous}
-$f_\alpha$ and $g_\alpha$ are continuous for every $\alpha\in G$.
+*$f_{\alpha}$ is a bijection with inverse $f_{\alpha^{-1}}$.* For every $x$,
+$$
+f_{\alpha^{-1}}\big(f_{\alpha}(x)\big)=\alpha^{-1}\cdot(\alpha\cdot x)=(\alpha^{-1}\alpha)\cdot x=x,
+\qquad
+f_{\alpha}\big(f_{\alpha^{-1}}(x)\big)=\alpha\cdot(\alpha^{-1}\cdot x)=x .
+$$
 
-::: pf-proof
-The maps $x\mapsto(\alpha,x)$ and $x\mapsto(x,\alpha)$ from $G$ to $G\times G$ are continuous, since their coordinates are constant or the identity.
-Composing with $m$ gives $f_\alpha$ and $g_\alpha$.
-:::
+*$f_{\alpha}$ and its inverse are continuous.* The multiplication $m:G\times G\to G$ is continuous, hence continuous in each variable separately (Exercise 18.11). Now
+$$
+f_{\alpha}(x)=m(\alpha,x)=\big(m\circ j\big)(x),\qquad j(x)=\alpha\times x,
+$$
+where $j$ is continuous (the components are constant and identity, Theorem 18.4); so $f_{\alpha}$ is continuous. The same argument with $\alpha^{-1}$ gives $f_{\alpha}^{-1}=f_{\alpha^{-1}}$ continuous. So $f_{\alpha}$ is a homeomorphism, and likewise $g_{\alpha}$.
 
-:::
-
-::: {.pf-step #translations-homeomorphisms}
-$f_\alpha$ and $g_\alpha$ are homeomorphisms.
-
-::: pf-proof
-$f_{\alpha^{-1}}\circ f_\alpha=f_\alpha\circ f_{\alpha^{-1}}=\operatorname{id}_G$ and $g_{\alpha^{-1}}\circ g_\alpha=g_\alpha\circ g_{\alpha^{-1}}=\operatorname{id}_G$ by associativity, and the inverses are continuous by step [](#translations-continuous){.pf-ref}.
-:::
-
-:::
-
-::: pf-qed
-Given $x,y\in G$, put $\alpha=yx^{-1}$.
-By step [](#translations-homeomorphisms){.pf-ref}, $f_\alpha$ is a homeomorphism of $G$ onto itself, and $f_\alpha(x)=yx^{-1}x=y$.
-So $G$ is homogeneous.
-:::
-
-:::
-
+*$G$ is homogeneous.* Given $x,y\in G$, put $\alpha=y\cdot x^{-1}$. Then $\alpha^{-1}=x\cdot y^{-1}$ and
+$$
+f_{\alpha}(x)=(y\cdot x^{-1})\cdot x=y\cdot(x^{-1}x)=y,
+$$
+so the homeomorphism $f_{\alpha}$ carries $x$ to $y$.
 :::
