@@ -13,14 +13,20 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §22 Exercise 4, printed p. 145, with Corollary
+    22.3; the two equivalence relations are stored as printed.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 22.4, PDF pp. 27-28. In each part a continuous
+    surjection whose fibres are the classes has a continuous right inverse, hence is a
+    quotient map, and Corollary 22.3 makes the induced bijection a homeomorphism: the
+    quotient is R in (a) and R_+ in (b). (tmp/sources/munkres-solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -43,34 +49,9 @@ $$
 :::
 
 ::: {.solution}
-(a) Define
-$$
-g:\RR^2\to\RR,\qquad g(x,y)=x+y^2.
-$$
-Its fibers are exactly the equivalence classes. The map
-$$
-H:\RR^2\to\RR^2,\qquad H(x,y)=(x+y^2,y)
-$$
-is a homeomorphism with inverse $H^{-1}(u,v)=(u-v^2,v)$, and
-$$
-g=\pi_1\circ H.
-$$
-Since the projection $\pi_1$ is an open quotient map, so is $g$. Therefore the induced bijection
-$$
-\bar g:X^*\to\RR
-$$
-is a homeomorphism. Thus $X^*\cong\RR$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 22.4, PDF pp. 27--28** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both parts are theirs, with the second written out with the right inverse $t\mapsto(\sqrt t,0)$.
 
-(b) Now let
-$$
-h(x,y)=x^2+y^2.
-$$
-Its fibers are the circles centered at the origin, with the origin as the radius-zero fiber, so the equivalence classes are exactly its fibers. The norm map
-$$
-r(x,y)=\sqrt{x^2+y^2}:\RR^2\to[0,\infty)
-$$
-is continuous, surjective, and open onto $[0,\infty)$: for $z$ with $\abs z=r_0$, the disk $B_\varepsilon(z)$ contains the points $z+tu$ with $\abs t<\varepsilon$, where $u=z/r_0$ if $r_0>0$ and $u$ is any unit vector if $r_0=0$, and their norms $\abs{r_0+t}$ cover $(r_0-\varepsilon,r_0+\varepsilon)\cap[0,\infty)$. Hence $r$ is quotient. Squaring is a homeomorphism $[0,\infty)\to[0,\infty)$, so $h=r^2$ is quotient. Consequently the induced map identifies the quotient with
-$$
-[0,\infty).
-$$
+(a) Let $X=\RR^{2}$ with $x_{0}\times y_{0}\sim x_{1}\times y_{1}$ iff $x_{0}+y_{0}^{2}=x_{1}+y_{1}^{2}$, and let $g(x,y)=x+y^{2}$, a continuous surjection $\RR^{2}\to\RR$ whose fibres are exactly the classes, so that $X^{*}=\{g^{-1}(\{t\})\mid t\in\RR\}$. The map $h(t)=t\times0$ is continuous and $g(h(t))=t$, so $h$ is a right inverse of $g$ and $g$ is a quotient map by Exercise 22.2(a). By Corollary 22.3 (printed p. 142) the induced bijection $f:X^{*}\to\RR$ is continuous, and it is a homeomorphism because $g$ is a quotient map. So $X^{*}$ is homeomorphic with $\RR$.
+
+(b) With $x_{0}\times y_{0}\sim x_{1}\times y_{1}$ iff $x_{0}^{2}+y_{0}^{2}=x_{1}^{2}+y_{1}^{2}$, take $g(x,y)=x^{2}+y^{2}$, a continuous surjection $\RR^{2}\to\RR_{+}$ whose fibres are the classes. The map $h(t)=\sqrt t\times0$ is continuous with $g(h(t))=t$, so $g$ is a quotient map by Exercise 22.2(a), and Corollary 22.3 gives that $X^{*}$ is homeomorphic with $\RR_{+}$.
 :::
