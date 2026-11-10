@@ -183,3 +183,11 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} compute the strict
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 4.10, PDF p. 6: if $(x,y,w:z)\in\AA^2\times\PP^1$ lies in the inverse image of $Y$ off the exceptional curve then $y^2=x^3$ and $xz=yw$, hence $x^2(z^2-xw^2)=0$ and $z^2=xw^2$; the only point on the exceptional curve $x=y=0$ is $(0,0,1:0)$, and since $w=0$ would force $x=0$ one may define $f(x,y,w:z)=z/w$ on $\widetilde Y$, whose inverse is $t\mapsto(t^2,t^3,1:t)$; hence $\widetilde Y\cong\AA^1$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 4.10.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.4.10, PDF p. 42: he identifies the blowup as $\mathrm{rank}\binom{x_1\cdots x_n}{y_1\cdots y_n}\le2$ in $\AA^n\times\PP^{n-1}$, observes that the exceptional divisor meets $\widetilde Y$ at the points corresponding to singularities of $Y$, and then concludes "since the cusp is not isomorphic to $\AA^1$, $\widetilde Y\not\cong\AA^1$", which is the negation of what the exercise asks to prove.
+The proof above computes both affine charts: $y=xt$ with strict transform $x=t^2$ in the chart $u\ne0$, and $x=ys$, $1=ys^3$ in the chart $v\ne0$, the second containing no point off the overlap; it then reads off $E\cap\widetilde Y=\{(0,0),[1:0]\}$, the parametrization $t\mapsto(t^2,t^3)$ and the finiteness of $k[t]$ over $k[t^2,t^3]$ that makes the bijection closed and the two curves homeomorphic but not isomorphic. Borcherds' chart computation agrees with the first of the two and with the conclusion.
+Agree with Borcherds; Egbert's conclusion is false.
+:::

@@ -266,3 +266,11 @@ Step [](#s5){.pf-ref} is precisely the required neighborhood isomorphism.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 4.7, PDF p. 6: assume $X$ and $Y$ are closed in affine space with $P=Q=0$; from a homomorphism $f:\mco_{Q,Y}\to\mco_{P,X}$ define $g(x_1,\ldots,x_n)=(f(y_1)(x),\ldots)$ on the open set where all the $f(y_i)$ are defined, construct the analogous map the other way, and note that the two compositions are the identity wherever defined, giving an isomorphism of open subsets carrying $P$ to $Q$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 4.7.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.4.7, PDF p. 41: "the isomorphism of local rings induces an isomorphism of $k(X)\cong k(Y)$, via I.3.2 we have a birational map on neighborhoods of $P,Q$", a route through the birational correspondence of Exercise I.3.2 rather than through the local rings themselves.
+The proof above is Borcherds' construction with the three points he leaves implicit: that the images of the coordinate generators satisfy the equations of $X$ after shrinking, that the isomorphism of local rings carries the maximal ideal to the maximal ideal so that $f(Q)=P$, and that the two morphisms are mutually inverse after a simultaneous shrinking.
+Agree with Borcherds.
+:::

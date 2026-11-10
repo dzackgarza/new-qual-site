@@ -212,3 +212,11 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a) and (b), while steps [](#s
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 4.6, PDF p. 6: for (a) and (b) he puts $U=V=\{[x:y:z]:xyz\ne0\}$, notes that $\phi$ maps $U$ to $V$ and that $\phi^2(x:y:z)=(xyz\,x:xyz\,y:xyz\,z)=(x:y:z)$, so $\phi^2$ is the identity; for (c) "$\phi=\phi^{-1}$ is defined everywhere on $\PP^2$ except at the points $(1:0:0)$, $(0:1:0)$, $(0:0:1)$", and he remarks that quadratic transformations generate the group of birational transformations of $\PP^2$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 4.6.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.4.6, PDF p. 41: (a) and (b) with $U=V=\{xyz\ne0\}$ and $\phi^2=(xzyx,yzxy,yzxz)=(x,y,z)$ on $U$; (c) "from V.4.2.3 we see they are defined on the complement of $(1,0,0),(0,1,0),(0,0,1)$", again a forward reference.
+The proof above agrees with both on (a) and (b) and proves the maximality in (c) instead of citing the surface chapter: if an extension existed at $[1:0:0]$, its restrictions to the two coordinate lines through that point would be the constant maps to $[0:1:0]$ and to $[0:0:1]$, and density would force both values at the point.
+Agree with Borcherds; (c) is asserted there and in Egbert and proved here.
+:::

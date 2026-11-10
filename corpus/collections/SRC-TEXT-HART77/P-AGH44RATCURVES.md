@@ -220,3 +220,11 @@ If $\operatorname{char}k\ne2$, these are two distinct tangent lines, so $P$ is a
 If $\operatorname{char}k=2$, the tangent cone is $(y-x)^2$, so the singularity is not an ordinary node.
 The birational calculation above does not divide by $2$ and remains valid in either characteristic.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 4.4, PDF p. 6: (a) by Exercise 3.1(c); (b) "the maps taking $t\in\AA^1$ to $(t^3,t^2)$ and $(x,y)$ to $y/x$ (for $x\ne0$) are inverse birational isomorphisms from the cuspidal curve to $\AA^1$"; (c) the projection $(x:y:z)\mapsto(x:y)$ off $(0:0:1)$, with inverse $(x:y)\mapsto((y^2-x^2)x:(y^2-x^2)y:x^3)$ for $(x:y)\ne(1:\pm1)$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 4.4, PDF pp. 15--16: (a) from every conic being isomorphic to $\PP^1$; (b) by $Z(y^2-x^3)\setminus\{(0,0)\}\to\PP^1$, $(x,y)\mapsto[x:y]$, with inverse $[x:y]\mapsto((y/x)^2,(y/x)^3)$; (c) begins "This map can be given explicitly. If $[P_0:P_1:P_2]\in Y$ then its image is" and the entry ends there, so his (c) is unfinished.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.4.4, PDF p. 40: (a) by I.3.1(b); (b) $t\mapsto(t^2,t^3)$ with inverse $(x,y)\mapsto x/y$; (c) the projection $(x:y:z)\mapsto(x:y)$ with inverse $(x:y)\mapsto((y^2-x^2)x:(y^2-x^2)y:x^3)$, checked by substituting $y^2z-zx^2=z(y^2-x^2)=x^3$ on the curve.
+Borcherds' (b) writes the parametrization as $(t^3,t^2)$, whose points satisfy $y^3=x^2$ rather than the curve's $y^2=x^3$; the inverse $y/x$ is the one belonging to the correct parametrization $(t^2,t^3)$, which is what Egbert writes. The proof above uses $(t^2,t^3)$ and, for (c), proves the birationality on the chart $x\ne0$ with the inverse written out and checked in both directions, which neither set does for both directions.
+Agree with Egbert; Borcherds' (b) is a misprint of the parametrization and his (c) inverse is the same as the card's.
+:::

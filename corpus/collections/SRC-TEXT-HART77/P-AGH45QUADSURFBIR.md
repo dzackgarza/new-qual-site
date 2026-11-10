@@ -163,3 +163,11 @@ Step [](#s2){.pf-ref} proves birationality, and step [](#s4){.pf-ref} proves non
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 4.5, PDF p. 6: the open subset $w\ne0$ of $Q$ is isomorphic to $\AA^2$ by $(w:x:y:z)\mapsto(x/w,y/w)$ with inverse $(x,y)\mapsto(1:x:y:xy)$, so $Q$ is birational to $\AA^2$ and hence to $\PP^2$; and $Q\cong\PP^1\times\PP^1$ contains two disjoint one-dimensional closed subvarieties, which $\PP^2$ does not.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 4.5.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.4.5, PDF p. 40: "see V.4.1 to see birational, and compute the canonicals to see they are not isomorphic", a forward reference to Chapter V rather than an argument within Chapter I.
+The proof above follows Borcherds: the affine chart $w\ne0$ for birationality and, for nonisomorphism, the two disjoint ruling lines with Exercise I.3.7; Egbert's route needs the canonical class of Chapter V.
+Agree with Borcherds.
+:::

@@ -205,3 +205,11 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 4.8, PDF p. 6: $\abs{\PP^n}\le(n+1)\abs{k}^n=\abs{k}$; for the other inequality he assumes $X\subseteq\AA^n$, observes that if every coordinate takes finitely many values on $X$ then $X$ is finite, and otherwise uses elimination theory to see that the possible values of one coordinate are all of $k$ up to a finite set; (b) "any two curves have the same cardinality and the finite complement topology, and so are homeomorphic".
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 4.8.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.4.8, PDF pp. 41--42: "any curve $X$ is birational to a plane curve so $\abs{X}\le\abs{\PP^2}=\abs{k}$" and "picking a point not on $X$ and projecting to $\PP^1$ gives a surjective morphism from $X$ to $\PP^1$ so $\abs{X}\ge\abs{\PP^1}=k$", then an inductive step embedding $X$ in $\PP^{n+1}$ by the primitive element theorem.
+Egbert's upper bound does not follow from birationality, which gives no injection of point sets; the bound comes from $X$ being a subset of projective space, as the proof above takes it. His surjectivity claim for the projection and his induction are the content of the printed hint, which the proof above replaces by the finite Noether-normalization morphism of an affine chart.
+Agree with Borcherds; Egbert's base case does not close.
+:::

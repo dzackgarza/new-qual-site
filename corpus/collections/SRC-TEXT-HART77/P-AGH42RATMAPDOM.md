@@ -136,3 +136,11 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} construct the maxi
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 4.2, PDF p. 6: "A map is regular if and only if it is regular in a neighborhood of each point, so the conclusion follows as in 4.1."
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 4.2, PDF p. 15: he first proves the gluing statement for morphisms $U_1,U_2\to Y$ agreeing on $U_1\cap U_2$, by pulling back regular functions and gluing them with the previous exercise, then applies it to representatives of two rational maps.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.4.2, PDF p. 39: "see 4.1".
+The proof above states the gluing of two morphisms with continuity and the pullback of regular functions as separate verifications and then takes the union over every representing morphism, which is Troiani's route with the maximality step written out; Borcherds and Egbert leave it to 4.1.
+Agree.
+:::

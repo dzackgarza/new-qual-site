@@ -227,3 +227,11 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove (a), and ste
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 4.3, PDF p. 6: (a) "$f=x_1/x_0$ is defined in the set where $x_0\ne0$. This set is isomorphic to $\AA^2$, and $f$ is just projection to the first coordinate"; (b) "$\phi$ is defined everywhere except the point $(1:0:0)$". His (b) names the wrong point: $[x_0:x_1]$ is undefined exactly where $x_0=x_1=0$, which is $[0:0:1]$, and at $[1:0:0]$ the value is $[1:0]$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 4.3, PDF p. 15: both parts as above, with (b) as the extension $\PP^2\setminus\{[0:0:1]\}\to\PP^1$, $[P_0:P_1:P_2]\mapsto[P_0:P_1]$, which "cannot be extended further lest $[0:0:1]\mapsto[0:0]$".
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.4.3, PDF pp. 39--40: (a) as above; (b) the projection $(x_0,x_1,x_2)\mapsto(x_0,x_1)$, "not defined at $(0,0,1)$ since $[0,0]\notin\PP^1$".
+The proof above agrees with Troiani and Egbert; it also proves that $x_1/x_0$ is not regular at any point of $x_0=0$ and that the induced map cannot be extended across $[0:0:1]$, which those two sets assert.
+Agree with Troiani and Egbert; Borcherds' (b) has the wrong point.
+:::

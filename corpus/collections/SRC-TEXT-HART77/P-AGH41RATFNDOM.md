@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ and $g$ be regular functions on open subsets $U$ and $V$ of $X$, and suppose $f = g$ on $U \intersect V$.
+Let $X$ be a variety, and let $f$ and $g$ be regular functions on open subsets $U$ and $V$ of $X$, and suppose $f = g$ on $U \intersect V$.
 Show that the function which equals $f$ on $U$ and $g$ on $V$ is a regular function on $U \union V$.
 Conclude that if $f$ is a rational function on $X$, then there is a largest open subset $U \subseteq X$ on which $f$ is represented by a regular function.
 One says that $f$ is defined at the points of $U$.
@@ -122,4 +122,12 @@ Step [](#s1){.pf-ref} proves the gluing assertion, and steps [](#s2){.pf-ref}, [
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 4.1, PDF p. 6: "If $f=g$ on $U\cap V$, then the function which is $f$ on $U$ and $g$ on $V$ is clearly regular. Therefore the union of all open sets on which $f$ is represented by a regular function is the largest open set on which $f$ is regular."
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 4.1, PDF p. 15: at a point $P$ of $U\cup V$, the neighbourhood of $P$ inside $U$ or $V$ on which $f$ or $g$ is a quotient of regular functions shows that the glued function is regular at $P$.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.4.1, PDF p. 39: define the new function on $U$ and on $V$ and "continue in this manner until you have defined on all such sets", that is, glue over an arbitrary family rather than over two sets.
+The problem block now names $X$ as a variety, which the printed sentence does and the card had left implicit. The proof above glues over the whole family of representatives of a rational function and proves that the resulting function represents the same class, which is the step Borcherds and Troiani give in one sentence for a single pair of open sets.
+Agree.
 :::
