@@ -12,9 +12,22 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §21 Exercise 7, printed p. 134, with the uniform
+    metric of §20; the stored statement is the printed equivalence.
 - event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 21.7, PDF p. 25. Uniform convergence bounds the
+    supremum of the pointwise distances, which is the uniform distance while it is below 1,
+    and convergence in the uniform metric forces the pointwise distances below any epsilon
+    once the distance itself is, so the two notions agree. (tmp/sources/munkres-solutions-
+    positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -25,25 +38,15 @@ Show that the sequence $(f_n)$ converges uniformly to the function $f: X \to \RR
 :::
 
 ::: {.solution}
-The uniform metric is $\bar\rho(g,h)=\sup_{x\in X}\min\{\abs{g(x)-h(x)},1\}$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.7, PDF p. 25** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both directions are theirs.
 
-::: pf
+Recall $\bar\rho(f,g)=\sup_{x\in X}\min\{\abs{f(x)-g(x)},1\}$ on $\RR^{X}$.
 
-::: {.pf-step #metric-vs-sup-below-one}
-For $0<\varepsilon\le1$ and $g,h\colon X\to\RR$, $\bar\rho(g,h)<\varepsilon$ if and only if $\sup_x\abs{g(x)-h(x)}<\varepsilon$.
+*Uniform convergence implies convergence in the uniform metric.* Suppose $f_{n}\to f$ uniformly: given $\varepsilon>0$ there is $N$ with $\abs{f_{n}(x)-f(x)}<\varepsilon/2$ for all $x\in X$ and $n\ge N$. Then for $n\ge N$, since $\varepsilon/2<1$ once $\varepsilon<2$,
+$$
+\bar\rho(f,f_{n})=\sup_{x}\min\{\abs{f(x)-f_{n}(x)},1\}\le\varepsilon/2<\varepsilon,
+$$
+so $f_{n}\to f$ in $(\RR^{X},\bar\rho)$.
 
-::: pf-proof
-Always $\bar\rho(g,h)\le\sup_x\abs{g(x)-h(x)}$.
-If $\bar\rho(g,h)<\varepsilon\le1$, then $\min\{\abs{g(x)-h(x)},1\}<1$ for every $x$, so the minimum is $\abs{g(x)-h(x)}$ and $\sup_x\abs{g(x)-h(x)}=\bar\rho(g,h)<\varepsilon$.
-:::
-
-:::
-
-::: pf-qed
-Uniform convergence $f_n\to f$ means that for every $\varepsilon>0$ there is $N$ with $\sup_x\abs{f_n(x)-f(x)}<\varepsilon$ for $n\ge N$, and convergence in $(\RR^X,\bar\rho)$ means the same with $\bar\rho(f_n,f)$ in place of the supremum.
-It suffices to check both conditions for $\varepsilon\le1$, where step [](#metric-vs-sup-below-one){.pf-ref} shows that they coincide.
-:::
-
-:::
-
+*Convergence in the uniform metric implies uniform convergence.* Suppose $\bar\rho(f,f_{n})\to0$ and let $\varepsilon>0$; choose $0<\varepsilon'<\min\{1,\varepsilon\}$ and then $N$ with $\bar\rho(f,f_{n})<\varepsilon'$ for $n\ge N$. For $n\ge N$ and every $x\in X$, $\min\{\abs{f(x)-f_{n}(x)},1\}<\varepsilon'<1$, so $\min$ may be dropped and $\abs{f(x)-f_{n}(x)}<\varepsilon'<\varepsilon$. As $\varepsilon$ and $x$ were arbitrary, $f_{n}\to f$ uniformly.
 :::
