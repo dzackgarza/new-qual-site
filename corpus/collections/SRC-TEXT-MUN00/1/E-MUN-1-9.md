@@ -21,6 +21,22 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §1 Exercise 9, printed p. 14; the stored
+    statement matches.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 1.9,
+    printed pp. 9-10 (tmp/sources/munkres-solutions-whitman.pdf). Both laws are his,
+    including the step that turns "not (x in B for every B)" into "x not in B for at
+    least one B", which is where the argument uses that the collection is nonempty; the
+    card states the family as {A_i} indexed by I and his as a collection B.
 ---
 
 ::: {.exercise}
@@ -29,6 +45,8 @@ Formulate and prove DeMorgan's laws for arbitrary unions and intersections.
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.9, printed pp. 9--10** (`tmp/sources/munkres-solutions-whitman.pdf`); the two identities and their chains of equivalences below are his.
+
 Fix a set $X$ and a family $\{A_i\}_{i\in I}$ of subsets of $X$. The arbitrary DeMorgan laws are
 $$
 X-\bigcup_{i\in I}A_i

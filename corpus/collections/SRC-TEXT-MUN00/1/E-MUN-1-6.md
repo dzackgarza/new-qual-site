@@ -21,6 +21,22 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §1 Exercise 6, printed p. 14; the stored
+    statement matches, and the reference to Exercise 5 is to the four statements stored
+    on E-MUN-1-5.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 1.6,
+    printed p. 8 (tmp/sources/munkres-solutions-whitman.pdf). His four contrapositives
+    agree with the card's, and the observation that a statement and its contrapositive
+    have the same truth value, used to read the truth values off Exercise 5, is his.
 ---
 
 ::: {.exercise}
@@ -29,6 +45,8 @@ Write the contrapositive of each of the statements of Exercise 5.
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.6, printed p. 8** (`tmp/sources/munkres-solutions-whitman.pdf`); the four contrapositives below are his.
+
 The contrapositive of an implication $P\Rightarrow Q$ is $\neg Q\Rightarrow\neg P$. Applying this to the statements of [[E-MUN-1-5]] gives:
 
 (a)

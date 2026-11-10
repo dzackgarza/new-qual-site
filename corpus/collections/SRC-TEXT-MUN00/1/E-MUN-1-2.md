@@ -21,6 +21,24 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §1 Exercise 2, printed p. 14: all seventeen
+    parts (a)-(q) are stated as the book prints them, including (k) and (l) as "the
+    converse of (j)" and (l) with the hypothesis that A and B are nonempty.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 1.2,
+    printed pp. 2-5 (tmp/sources/munkres-solutions-whitman.pdf), part by part. Repaired
+    the one place where the card did not answer the printed question as asked: part (q)
+    asserted that (A x B) - (C x D) contains (A - C) x (B meet D) without giving sets,
+    so "equality need not hold" did not follow from a counterexample; the card now
+    carries Whitman's explicit sets (printed p. 5) with both sides computed.
 ---
 
 ::: {.exercise}
@@ -64,6 +82,8 @@ If an equality fails, determine whether the statement becomes true if the “equ
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.2, printed pp. 2--5** (`tmp/sources/munkres-solutions-whitman.pdf`), which decides each of the seventeen parts and, where a double implication fails, gives the direction that holds and an example killing the other. The answers below are his, with the counterexamples written out.
+
 (a) False as an equivalence.
 The forward implication holds:
 $$
@@ -163,6 +183,17 @@ One always has
 $$
 (A-C)\times(B-D)\subset (A\times B)-(C\times D),
 $$
-but equality need not hold.
-For example, $(A\times B)-(C\times D)$ contains $(A-C)\times(B\cap D)$, which is disjoint from $(A-C)\times(B-D)$.
+since $x\in A-C$ and $y\in B-D$ give $x\in A$, $y\in B$, $x\notin C$, and therefore $(x,y)\notin C\times D$.
+Equality need not hold: with
+$$
+A=\{1,2\},\quad B=\{a,b\},\quad C=\{2,3\},\quad D=\{b,c\}
+$$
+one computes
+$$
+(A\times B)-(C\times D)=\{(1,a),(1,b),(2,a)\},
+\qquad
+(A-C)\times(B-D)=\{(1,a)\},
+$$
+so $(1,b)$ lies on the left and not on the right.
+More generally $(A\times B)-(C\times D)$ contains $(A-C)\times(B\cap D)$, which is disjoint from $(A-C)\times(B-D)$ whenever $B\cap D\ne(B-D)$.
 :::

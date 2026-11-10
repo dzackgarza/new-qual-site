@@ -14,6 +14,24 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §1 Exercise 5, printed p. 14: the four
+    statements (a)-(d) and their converses, for a nonempty collection of sets, are
+    stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 1.5,
+    printed pp. 7-8 (tmp/sources/munkres-solutions-whitman.pdf). His verdicts are the
+    card's - (a) and (d) true with their converses, (b) false with a true converse, (c)
+    true with a false converse - and the nonemptiness of the collection is used exactly
+    where he uses it, in the two converses that go from "x in A for every A" to the
+    union and from the intersection to a member.
 ---
 
 ::: {.exercise}
@@ -31,6 +49,8 @@ Determine the truth of each of the following statements and of their converses:
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.5, printed pp. 7--8** (`tmp/sources/munkres-solutions-whitman.pdf`), which decides each implication and each converse; the verdicts below are his.
+
 The counterexamples take $\mathcal A=\{\{1\},\{2\}\}$ and $x=1$, so that $\bigcup_{A\in\mathcal A}A=\{1,2\}$ and $\bigcap_{A\in\mathcal A}A=\varnothing$.
 
 ::: pf

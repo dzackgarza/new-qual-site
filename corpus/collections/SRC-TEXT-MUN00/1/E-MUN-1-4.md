@@ -21,6 +21,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §1 Exercise 4, printed p. 14; the four
+    statements (a)-(d) are stored as printed, including (d)'s quantifier over real
+    numbers a not in A.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 1.4,
+    printed pp. 6-7 (tmp/sources/munkres-solutions-whitman.pdf). His four negations are
+    the card's four; the sentence naming the rule (a universal quantifier becomes an
+    existential one and conversely) is his remark that these are the basic logical
+    negations. No defect found.
 ---
 
 ::: {.exercise}
@@ -38,6 +55,8 @@ Write the negation of each of the following statements:
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.4, printed pp. 6--7** (`tmp/sources/munkres-solutions-whitman.pdf`); the four negations are his, and his remark that these are the basic logical negations using existential quantifiers is the rule stated first below.
+
 Negating a universal quantifier produces an existential quantifier and vice versa, while negating membership changes $\in$ to $\notin$.
 
 (a) The negation is:

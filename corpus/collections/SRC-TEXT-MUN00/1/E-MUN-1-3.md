@@ -21,6 +21,22 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §1 Exercise 3, printed p. 14, both parts as
+    printed; the stored statement matches.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 1.3,
+    printed p. 6 (tmp/sources/munkres-solutions-whitman.pdf). His truth values are the
+    card's: (a) the statement and its contrapositive are true and the converse fails at
+    x = 2; (b) all three fail, at x = 1/2 for the statement and its contrapositive and at
+    x = -1 for the converse. No defect found.
 ---
 
 ::: {.exercise}
@@ -31,6 +47,8 @@ audit:
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.3, printed p. 6** (`tmp/sources/munkres-solutions-whitman.pdf`); the contrapositives, the converses and the three truth values below are his, with the arithmetic shown.
+
 (a) The original statement is
 $$
 x<0\Longrightarrow x^2-x>0.

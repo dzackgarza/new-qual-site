@@ -21,6 +21,22 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §1 Exercise 10, printed p. 14; the five
+    subsets (a)-(e) are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 1.10,
+    printed p. 10 (tmp/sources/munkres-solutions-whitman.pdf). His verdicts are the
+    card's, and so are the witnesses: for (c) the points (0,1) and (1,2) forcing
+    1 to lie in both factors; for (e) the two axis points (0.9,0) and (0,0.9) forcing
+    (0.9,0.9) into the product while it lies outside the disc.
 ---
 
 ::: {.exercise}
@@ -40,6 +56,8 @@ For each of the following subsets of $\RR \times \RR$, determine whether it is e
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.10, printed p. 10** (`tmp/sources/munkres-solutions-whitman.pdf`); the five verdicts and the witnesses for (c) and (e) below are his.
+
 (a) Yes. The set is
 $$
 \ZZ\times\RR.

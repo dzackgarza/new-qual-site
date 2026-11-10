@@ -21,6 +21,25 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §1 Exercise 1, printed p. 14: "Check the
+    distributive laws for the union and intersection and DeMorgan's laws." The stored
+    statement matches; the exercise asks for no more than that.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 1.1,
+    printed pp. 1-2 of that manual (tmp/sources/munkres-solutions-whitman.pdf), which
+    proves all four laws by chains of membership equivalences. The card's argument is
+    that one, expanded: each distributive law and each DeMorgan law is derived from the
+    propositional equivalence distributing "and" over "or" and from the definition of
+    set difference, and the universe-relative form is stated at the end. Nothing was
+    weakened; no defect found.
 ---
 
 ::: {.exercise}
@@ -29,6 +48,8 @@ Check the distributive laws for $\cup$ and $\cap$ and DeMorgan's laws.
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.1, printed pp. 1--2** (`tmp/sources/munkres-solutions-whitman.pdf`), which derives all four laws as chains of logical equivalences between membership statements. The argument below is his, expanded so that each step names the equivalence it uses.
+
 For any element $x$, membership in a union corresponds to logical "or" and membership in an intersection corresponds to logical "and". Hence
 $$
 \begin{aligned}
