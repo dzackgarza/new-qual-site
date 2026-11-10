@@ -12,9 +12,23 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §28 Exercise 7, printed p. 181, with Theorem
+    26.9, Theorem 27.4 and Theorem 28.2; the four parts and the two hints are stored as
+    printed.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 28.7, PDF pp. 20-21. (b) the intersection of the
+    iterated images is a single fixed point, by the extreme value theorem on the diameter;
+    (c) x - x^2/2 on [0,1] is shrinking but not a contraction; (d) (x + sqrt(x^2+1))/2 on R
+    is shrinking with no fixed point, its difference quotient being 1/2 plus a term of
+    modulus below 1/2. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -50,134 +64,23 @@ Show that $f(x) = x - x^2/2$ maps $X$ into $X$ and is a shrinking map that is no
 :::
 
 ::: {.solution}
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.7, PDF pp. 20--21** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); parts (b), (c) and (d) are theirs.
 
-The nonempty hypothesis is needed for the fixed-point claims in (a) and (b).
+(b) *A shrinking map of a compact metric space has a unique fixed point.* Let $f:X\to X$ satisfy $d(f(x),f(y))<d(x,y)$ for $x\ne y$, and put $A_{n}=f^{n}(X)$, $A=\bigcap_{n}A_{n}$. Each $A_{n}$ is compact, hence closed, and $A_{n+1}\subset A_{n}$, so $A\ne\varnothing$ (Theorem 26.9).
 
-::: pf
+$f(A)\subset A$: if $y=f(x)$ with $x\in A$, then $x\in A_{n}$ gives $y\in A_{n+1}\subset A_{n}$ for every $n$, so $y\in A$. $A\subset f(A)$: if $x\in A$, choose $x_{n}$ with $f^{n+1}(x_{n})=x$ and put $y_{n}=f^{n}(x_{n})\in A$; by sequential compactness a subsequence $y_{n_{k}}\to a\in A$, and $f(y_{n})=x$ for all $n$, so continuity gives $f(a)=x$.
 
-::: pf-step
-Part (a): Contractions on compact metric spaces have a unique fixed point.
+$A$ is a single point: otherwise the continuous function $(x,y)\mapsto d(x,y)$ attains a maximum at some $x_{0}\ne y_{0}$ in $A$ (Theorem 27.4), and writing $x_{0}=f(a)$, $y_{0}=f(b)$ with $a,b\in A$ gives $d(x_{0},y_{0})=d(f(a),f(b))<d(a,b)\le d(x_{0},y_{0})$, a contradiction. So $A=\{p\}$ with $f(p)=p$, and a second fixed point $q\ne p$ would give $d(p,q)=d(f(p),f(q))<d(p,q)$.
 
-::: pf-proof
+(c) On $X=[0,1]$, $f(x)=x-x^{2}/2$ satisfies $\abs{f(x)-f(y)}=\abs{x-y}\abs{1-(x+y)/2}<\abs{x-y}$ for $x\ne y$, so it is shrinking; but $\abs{f(x)-f(0)}/\abs{x-0}=1-x/2\to1$ as $x\to0$, so no $\alpha<1$ works: $f$ is not a contraction. (Its fixed point is $0$.)
 
-::: pf-step
-Define $A_n = f^n(X)$ for each $n \ge 1$. Since $X$ is compact and $f$ is continuous, each $A_n$ is a non-empty compact set, and $A_{n+1} = f(A_n) \subseteq A_n$.
-:::
-
-::: pf-step
-The intersection $A = \bigcap_{n=1}^\infty A_n$ is non-empty by the finite intersection property of compact spaces.
-:::
-
-::: pf-step
-For any $n \ge 1$, the contraction bound gives $\operatorname{diam}(A_n) \le \alpha^n \operatorname{diam}(X)$. Since $\alpha < 1$, $\operatorname{diam}(A_n) \to 0$ as $n \to \infty$.
-:::
-
-::: pf-step
-Hence $\operatorname{diam}(A) = 0$, so $A = \{x_0\}$ is a singleton.
-:::
-
-::: pf-step
-Since $f(A) \subseteq \bigcap_{n=1}^\infty f(A_n) = \bigcap_{n=1}^\infty A_{n+1} = A$, $f(x_0) \in A$, which forces $f(x_0) = x_0$.
-:::
-
-::: pf-step
-If $x \neq y$ were two distinct fixed points, $d(x, y) = d(f(x), f(y)) \le \alpha d(x, y) < d(x, y)$, a contradiction. Thus the fixed point is unique.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Part (b): Shrinking maps on compact metric spaces have a unique fixed point (Edelstein's Theorem).
-
-::: pf-proof
-
-::: pf-step
-Consider the function $g: X \to \RR$ defined by $g(x) = d(x, f(x))$.
-:::
-
-::: pf-step
-Since $f$ is continuous and the metric $d$ is continuous, $g$ is continuous.
-:::
-
-::: pf-step
-Because $X$ is compact, by the Extreme Value Theorem there exists a point $x_0 \in X$ at which $g$ attains its absolute minimum: $g(x_0) \le g(x)$ for all $x \in X$.
-:::
-
-::: pf-step
-Suppose for contradiction that $x_0 \neq f(x_0)$. Let $y_0 = f(x_0)$.
-:::
-
-::: pf-step
-Because $f$ is a shrinking map and $x_0 \neq y_0$:
-$$g(y_0) = d(y_0, f(y_0)) = d(f(x_0), f(y_0)) < d(x_0, y_0) = d(x_0, f(x_0)) = g(x_0).$$
-:::
-
-::: pf-step
-This contradicts the minimality of $g(x_0)$, so $x_0 = f(x_0)$.
-:::
-
-::: pf-step
-Uniqueness follows because if $x \neq y$ were two fixed points, $d(x, y) = d(f(x), f(y)) < d(x, y)$, impossible.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Part (c): $f(x) = x - x^2/2$ on $[0, 1]$ is a shrinking map but not a contraction.
-
-::: pf-proof
-
-::: pf-step
-The derivative is $f'(x) = 1 - x$. For $x \in [0, 1]$, $0 \le f'(x) \le 1$, and $f(0) = 0, f(1) = 1/2$, so $f([0, 1]) = [0, 1/2] \subseteq [0, 1]$.
-:::
-
-::: pf-step
-For distinct $x, y \in [0, 1]$ with $x < y$, the Mean Value Theorem gives:
-$$\abs{f(y) - f(x)} = f'(c)\abs{y - x} = (1 - c)\abs{y - x}$$
-for some $c \in (x, y)$. Since $c > x \ge 0$, $1 - c < 1$, so $\abs{f(y) - f(x)} < \abs{y - x}$. Thus $f$ is a shrinking map.
-:::
-
-::: pf-step
-Since $\lim_{x \to 0^+} \frac{f(x) - f(0)}{x - 0} = f'(0) = 1$, $\sup_{x \neq y} \frac{\abs{f(x) - f(y)}}{\abs{x - y}} = 1$, so no constant $\alpha < 1$ exists. Thus $f$ is not a contraction.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Part (d): $f(x) = \frac{x + \sqrt{x^2+1}}{2}$ on $\RR$ is a shrinking map without fixed points.
-
-::: pf-proof
-
-::: pf-step
-The derivative is $f'(x) = \frac{1}{2}\left(1 + \frac{x}{\sqrt{x^2+1}}\right)$.
-:::
-
-::: pf-step
-Since $\abs{x} < \sqrt{x^2+1}$, we have $-1 < \frac{x}{\sqrt{x^2+1}} < 1$, which implies $0 < f'(x) < 1$ for all $x \in \RR$.
-:::
-
-::: pf-step
-By the Mean Value Theorem, $\abs{f(x) - f(y)} = f'(c)\abs{x - y} < \abs{x - y}$ for all $x \neq y$, so $f$ is a shrinking map.
-:::
-
-::: pf-step
-Since $\lim_{x \to \infty} f'(x) = 1$, $f$ is not a contraction.
-:::
-
-::: pf-step
-Setting $f(x) = x$ gives $\frac{x + \sqrt{x^2+1}}{2} = x \iff \sqrt{x^2+1} = x$, which has no real solutions (since $x^2 + 1 > x^2 \ge 0$). Thus $f$ has no fixed point. Q.E.D.
-:::
-
-:::
-
-:::
-
-:::
-
+(d) On $X=\RR$ let $f(x)=\big(x+(x^{2}+1)^{1/2}\big)/2$. For $x\ne y$,
+$$
+\frac{f(x)-f(y)}{x-y}=\frac12+\frac{x+y}{2\big((x^{2}+1)^{1/2}+(y^{2}+1)^{1/2}\big)},
+$$
+because $(x^{2}+1)^{1/2}-(y^{2}+1)^{1/2}=(x^{2}-y^{2})/\big((x^{2}+1)^{1/2}+(y^{2}+1)^{1/2}\big)$. Since $\abs{x}<(x^{2}+1)^{1/2}$ and $\abs{y}<(y^{2}+1)^{1/2}$,
+$$
+\abs{x+y}\le\abs{x}+\abs{y}<(x^{2}+1)^{1/2}+(y^{2}+1)^{1/2},
+$$
+so the second term has absolute value $<\tfrac12$ and the ratio is $<1$ in absolute value: $f$ is shrinking. It is not a contraction, since the ratio tends to $1$ as $x,y\to+\infty$ with $x\ne y$. And $f$ has no fixed point: $f(x)=x$ forces $(x^{2}+1)^{1/2}=x$, whose square reads $x^{2}+1=x^{2}$.
 :::
