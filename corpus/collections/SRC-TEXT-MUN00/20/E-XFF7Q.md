@@ -12,14 +12,21 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §20 Exercise 6, printed p. 127; the three parts
+    are stored as printed.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 20.6, PDF p. 19. (a) The point with n-th
+    coordinate x_n + epsilon_n, where epsilon_n increases to epsilon, lies in the product of
+    intervals but at uniform distance epsilon. (b) Every ball around that point leaves the
+    product of intervals. (c) The uniform ball is the union of the products of intervals of
+    smaller radius. (tmp/sources/munkres-solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -43,46 +50,16 @@ $$
 :::
 
 ::: {.solution}
-The uniform metric is
-$$
-\bar\rho(\mathbf x,\mathbf y)=\sup_i\min\{\abs{x_i-y_i},1\},
-$$
-and throughout $0<\varepsilon<1$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.6, PDF p. 19** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the three parts are theirs.
 
-(a) Define
-$$
-y_i=x_i+\varepsilon\left(1-\frac1{i+1}\right).
-$$
-Then $\abs{y_i-x_i}<\varepsilon$ for every $i$, so $\mathbf y\in U(\mathbf x,\varepsilon)$. But
-$$
-\bar\rho(\mathbf x,\mathbf y)=\sup_i\abs{x_i-y_i}=\varepsilon,
-$$
-so $\mathbf y\notin B_{\bar\rho}(\mathbf x,\varepsilon)$. Thus the two sets are not equal.
+Fix $\mathbf{x}\in\RR^{\omega}$ and $0<\varepsilon<1$, and let $U(\mathbf{x},\varepsilon)=\prod_{n}(x_{n}-\varepsilon,x_{n}+\varepsilon)$.
 
-(b) Use the same $\mathbf y\in U(\mathbf x,\varepsilon)$. Given any $r>0$, choose $i$ so large that
-$$
-\varepsilon-\abs{y_i-x_i}<r/2.
-$$
-Alter only the $i$th coordinate, increasing it by some $s<r$ large enough that the new coordinate lies outside $(x_i-\varepsilon,x_i+\varepsilon)$. The resulting point $\mathbf z$ satisfies
-$$
-\bar\rho(\mathbf y,\mathbf z)<r
-$$
-but $\mathbf z\notin U(\mathbf x,\varepsilon)$. Hence no uniform ball about $\mathbf y$ lies inside $U(\mathbf x,\varepsilon)$, so this set is not uniform-open.
+(a) Choose positive numbers $\varepsilon_{n}\to\varepsilon$ with $\varepsilon_{n}<\varepsilon$ for all $n$ and put $\mathbf{y}=(x_{n}+\varepsilon_{n})_{n}$. Then $y_{n}\in(x_{n}-\varepsilon,x_{n}+\varepsilon)$ for every $n$, so $\mathbf{y}\in U(\mathbf{x},\varepsilon)$; but $\bar\rho(\mathbf{x},\mathbf{y})=\sup_{n}\min\{\varepsilon_{n},1\}=\varepsilon$ since $\varepsilon<1$ and $\varepsilon_{n}\to\varepsilon$, so $\mathbf{y}\notin B_{\bar\rho}(\mathbf{x},\varepsilon)$. Hence the two sets differ.
 
-(c) If $\mathbf y\in U(\mathbf x,\delta)$ for some $\delta<\varepsilon$, then
+(b) With the same $\mathbf{y}$, we show no ball around $\mathbf{y}$ lies in $U(\mathbf{x},\varepsilon)$. Let $\delta>0$ and choose $N$ with $\abs{\varepsilon-\varepsilon_{n}}<\delta$ for $n\ge N$; define $\mathbf{z}$ by $z_{n}=y_{n}$ for $n<N$ and $z_{n}=x_{n}+\varepsilon$ for $n\ge N$. Then $\bar\rho(\mathbf{y},\mathbf{z})=\sup_{n\ge N}\min\{\abs{\varepsilon-\varepsilon_{n}},1\}<\delta$, so $\mathbf{z}\in B_{\bar\rho}(\mathbf{y},\delta)$; but $z_{n}=x_{n}+\varepsilon\notin(x_{n}-\varepsilon,x_{n}+\varepsilon)$ for $n\ge N$, so $\mathbf{z}\notin U(\mathbf{x},\varepsilon)$. Hence $U(\mathbf{x},\varepsilon)$ is not open in the uniform topology.
+
+(c) If $\mathbf{y}\in B_{\bar\rho}(\mathbf{x},\varepsilon)$ then $r=\bar\rho(\mathbf{x},\mathbf{y})<\varepsilon$, and every $\delta$ with $r<\delta<\varepsilon$ gives $\mathbf{y}\in U(\mathbf{x},\delta)$. Conversely, if $\mathbf{y}\in U(\mathbf{x},\delta)$ for some $\delta<\varepsilon$, then $\bar\rho(\mathbf{x},\mathbf{y})\le\delta<\varepsilon$ and $\mathbf{y}\in B_{\bar\rho}(\mathbf{x},\varepsilon)$. Hence
 $$
-\bar\rho(\mathbf x,\mathbf y)\le\delta<\varepsilon,
-$$
-so $\mathbf y$ lies in the $\varepsilon$-ball. Conversely, if
-$$
-s=\bar\rho(\mathbf x,\mathbf y)<\varepsilon,
-$$
-choose $\delta$ with $s<\delta<\varepsilon$. Since $\delta<1$, the inequality defining $s$ implies
-$$
-\abs{x_i-y_i}<\delta
-$$
-for every $i$. Thus $\mathbf y\in U(\mathbf x,\delta)$. Therefore
-$$
-B_{\bar\rho}(\mathbf x,\varepsilon)=\bigcup_{\delta<\varepsilon}U(\mathbf x,\delta).
+B_{\bar\rho}(\mathbf{x},\varepsilon)=\bigcup_{\delta<\varepsilon}U(\mathbf{x},\delta).
 $$
 :::
