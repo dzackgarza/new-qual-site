@@ -10,6 +10,22 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §26 Exercise 1, printed p. 170, with Theorem 26.2
+    and Theorem 26.3; both parts are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 26.1, PDF p. 12. Compactness passes from a finer
+    to a coarser topology; conversely two comparable compact Hausdorff topologies coincide,
+    since a set closed in the finer one is compact and hence closed in the coarser.
+    (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -21,11 +37,9 @@ What does compactness of $X$ under one of these topologies imply about compactne
 :::
 
 ::: {.solution}
-(a) If $\mathcal T'\supset\mathcal T$, every $\mathcal T$-open cover is also a $\mathcal T'$-open cover. Hence compactness for the finer topology $\mathcal T'$ implies compactness for the coarser topology $\mathcal T$. The converse need not hold; for example, an infinite set with the indiscrete topology is compact, while the discrete topology is not compact.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.1, PDF p. 12** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both parts are theirs.
 
-(b) Suppose both topologies are compact Hausdorff and are comparable, say $\mathcal T'\supset\mathcal T$. The identity map
-$$
-\operatorname{id}:(X,\mathcal T')\longrightarrow (X,\mathcal T)
-$$
-is continuous and bijective. A continuous bijection from a compact space to a Hausdorff space is a homeomorphism, so $\mathcal T'=\mathcal T$. Therefore, if the two compact Hausdorff topologies are distinct, they cannot be comparable.
+(a) If $\mathcal{T}\subset\mathcal{T}'$ and $(X,\mathcal{T}')$ is compact, then every open cover of $X$ by sets of $\mathcal{T}'$ has a finite subcover; in particular every $\mathcal{T}$-cover, since $\mathcal{T}$-open sets are $\mathcal{T}'$-open. So $(X,\mathcal{T})$ is compact. The converse fails: the two-point set is compact with the indiscrete topology and not with the discrete one.
+
+(b) Suppose $\mathcal{T}\subset\mathcal{T}'$ and both are compact Hausdorff topologies. Let $A\in\mathcal{T}'$; then $X-A$ is closed in $(X,\mathcal{T}')$, hence compact by Theorem 26.2, hence compact as a subset of $(X,\mathcal{T})$ by (a), hence closed in $(X,\mathcal{T})$ by Theorem 26.3, so $A$ is $\mathcal{T}$-open. Thus $\mathcal{T}'\subset\mathcal{T}$ and the topologies are equal.
 :::
