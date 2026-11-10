@@ -12,9 +12,24 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §20 Exercise 8, printed p. 127, with the uniform
+    metric and the definition of the Hilbert cube printed there; the three parts are stored
+    as printed.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 20.8, PDF pp. 20-22. The inclusions box contains
+    l2 contains uniform are shown by comparing the metrics and by fitting an l2 ball into a
+    box product of shrinking intervals; the four topologies on R^infinity are separated by
+    one witness each, and on the Hilbert cube the product, uniform and l2 topologies
+    coincide, the box topology being strictly finer. (tmp/sources/munkres-solutions-
+    positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -50,62 +65,44 @@ Compare the four topologies that $H$ inherits as a subspace of $X$.
 :::
 
 ::: {.solution}
-Write $\mathcal T_{\mathrm{box}}$, $\mathcal T_d$, $\mathcal T_{\bar\rho}$, and $\mathcal T_{\mathrm{prod}}$ for the box, $\ell^2$, uniform, and product topologies on $X$ and on its subspaces.
-On $\RR^\omega$, $\mathcal T_{\mathrm{prod}}\subseteq\mathcal T_{\bar\rho}\subseteq\mathcal T_{\mathrm{box}}$, and these inclusions pass to subspaces.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.8, PDF pp. 20--22** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); all three parts are theirs.
 
-::: pf
+Write $d_{\ell^{2}}(\mathbf{x},\mathbf{y})=\big(\sum_{i}(x_{i}-y_{i})^{2}\big)^{1/2}$ on $X$, and recall $\bar\rho(\mathbf{x},\mathbf{y})=\sup_{i}\min\{\abs{x_{i}-y_{i}},1\}$.
 
-::: {.pf-step #uniform-subset-l2}
-On $X$, $\mathcal T_{\bar\rho}\subseteq\mathcal T_d$.
+(a) *Uniform $\subset\ell^{2}$.* For every $i$, $\abs{x_{i}-y_{i}}\le d_{\ell^{2}}(\mathbf{x},\mathbf{y})$, and if $d_{\ell^{2}}(\mathbf{x},\mathbf{y})\le1$ then $\bar\rho(\mathbf{x},\mathbf{y})\le d_{\ell^{2}}(\mathbf{x},\mathbf{y})$; so $B_{\ell^{2}}(\mathbf{x},\varepsilon)\subset B_{\bar\rho}(\mathbf{x},\varepsilon)$ for $\varepsilon\le1$, and the $\ell^{2}$-topology contains the uniform one.
 
-::: pf-proof
-For $\mathbf x,\mathbf y\in X$, $\bar\rho(\mathbf x,\mathbf y)\le\sup_i\abs{x_i-y_i}\le d(\mathbf x,\mathbf y)$, so $B_d(\mathbf x,\varepsilon)\subseteq B_{\bar\rho}(\mathbf x,\varepsilon)$.
-:::
-
-:::
-
-::: {.pf-step #l2-subset-box}
-On $X$, $\mathcal T_d\subseteq\mathcal T_{\mathrm{box}}$.
-
-::: pf-proof
-Given $\mathbf x\in X$ and $\varepsilon>0$, put $\varepsilon_i=\varepsilon\,2^{-(i+1)/2}$, so $\sum_i\varepsilon_i^2=\varepsilon^2/2$.
-For $\mathbf y$ in the box neighborhood $U=X\cap\prod_i(x_i-\varepsilon_i,x_i+\varepsilon_i)$, $d(\mathbf x,\mathbf y)^2\le\sum_i\varepsilon_i^2<\varepsilon^2$, so $U\subseteq B_d(\mathbf x,\varepsilon)$.
-:::
-
-:::
-
-::: {.pf-step #part-b}
-On $\RR^\infty$, $\mathcal T_{\mathrm{prod}}\subsetneq\mathcal T_{\bar\rho}\subsetneq\mathcal T_d\subsetneq\mathcal T_{\mathrm{box}}$.
-
-::: pf-proof
-The inclusions hold by steps [](#uniform-subset-l2){.pf-ref} and [](#l2-subset-box){.pf-ref}. Each is strict because a sequence in $\RR^\infty$ converges to $\mathbf 0$ in the coarser topology but not in the finer one; $\mathbf e_n$ denotes the sequence with $1$ in place $n$ and $0$ elsewhere.
-The sequence $\mathbf e_n$ converges to $\mathbf 0$ coordinatewise, but $\bar\rho(\mathbf e_n,\mathbf 0)=1$.
-The sequence $\mathbf y_n$ with its first $n$ coordinates $1/\sqrt n$ and the rest $0$ has $\bar\rho(\mathbf y_n,\mathbf 0)=1/\sqrt n\to0$, but $d(\mathbf y_n,\mathbf 0)=1$.
-The sequence $\mathbf w_n=\frac1n\mathbf e_n$ has $d(\mathbf w_n,\mathbf 0)=\frac1n\to0$, but $\mathbf w_n$ lies outside the box neighborhood $\prod_i(-\frac1{i^2},\frac1{i^2})$ for every $n\ge2$, since $\frac1n\ge\frac1{n^2}$.
-:::
-
-:::
-
-::: {.pf-step #part-c}
-On $H$, $\mathcal T_{\mathrm{prod}}=\mathcal T_{\bar\rho}=\mathcal T_d\subsetneq\mathcal T_{\mathrm{box}}$.
-
-::: pf-proof
-Let $\mathbf x\in H$ and $\varepsilon>0$.
-Choose $N$ with $\sum_{i>N}1/i^2<\varepsilon^2/2$, and let $W$ be the set of $\mathbf y\in H$ with $\abs{y_i-x_i}<\varepsilon/\sqrt{2N}$ for $i\le N$, a basic product neighborhood of $\mathbf x$ in $H$.
-For $\mathbf y\in W$, $\abs{x_i-y_i}\le1/i$ for all $i$ because $x_i,y_i\in[0,1/i]$, so
+*$\ell^{2}\subset$ box.* Let $B_{\ell^{2}}(\mathbf{x},\varepsilon)$ be a ball and $\mathbf{y}\in B_{\ell^{2}}(\mathbf{x},\varepsilon)$; put $r=\varepsilon-d_{\ell^{2}}(\mathbf{x},\mathbf{y})>0$ and
 $$
-d(\mathbf x,\mathbf y)^2<N\cdot\frac{\varepsilon^2}{2N}+\sum_{i>N}\frac1{i^2}<\varepsilon^2.
+U=\prod_{n}\Big(y_{n}-\frac{r}{2^{(n+1)/2}},\ y_{n}+\frac{r}{2^{(n+1)/2}}\Big),
 $$
-Hence $\mathcal T_d\subseteq\mathcal T_{\mathrm{prod}}$ on $H$, and with step [](#uniform-subset-l2){.pf-ref} the first three topologies agree.
-The set $H\cap\prod_n[0,\frac1{n^2})$ is box-open in $H$ and contains $\mathbf 0$, but every basic product neighborhood of $\mathbf 0$ in $H$ leaves some coordinate $n\ge2$ unrestricted and so contains the point $\frac1n\mathbf e_n\notin\prod_n[0,\frac1{n^2})$.
-:::
+which is open in the box topology and contains $\mathbf{y}$. For $\mathbf{z}\in U$,
+$$
+d_{\ell^{2}}(\mathbf{y},\mathbf{z})^{2}=\sum_{n}(y_{n}-z_{n})^{2}<\sum_{n}\frac{r^{2}}{2^{n+1}}=r^{2},
+$$
+so $d_{\ell^{2}}(\mathbf{x},\mathbf{z})\le d_{\ell^{2}}(\mathbf{x},\mathbf{y})+d_{\ell^{2}}(\mathbf{y},\mathbf{z})<\varepsilon$ and $\mathbf{z}\in B_{\ell^{2}}(\mathbf{x},\varepsilon)$. So the ball is box-open and the $\ell^{2}$-topology is contained in the box topology.
 
-:::
+(b) The four topologies on $\RR^{\infty}$ are distinct, and it suffices to exhibit, in each of the three finer ones, an open set that is not open in the next coarser one.
 
-::: pf-qed
-Steps [](#uniform-subset-l2){.pf-ref} and [](#l2-subset-box){.pf-ref} prove (a), step [](#part-b){.pf-ref} proves (b), and step [](#part-c){.pf-ref} answers (c).
-:::
+*Uniform not product.* $B_{\bar\rho}(\mathbf{0},\varepsilon)\cap\RR^{\infty}$ with $0<\varepsilon<1$ is uniform-open and nonempty; no product-basic set containing a point $\mathbf{y}$ of it is contained in it, because a product-basic set restricts only finitely many coordinates and so contains points with an arbitrarily large coordinate in some unrestricted place, hence of uniform distance $1$ from $\mathbf{y}$.
 
-:::
+*$\ell^{2}$ not uniform.* $B_{\ell^{2}}(\mathbf{0},2\varepsilon)\cap\RR^{\infty}$ with $0<\varepsilon<1$ is $\ell^{2}$-open and contains $(\varepsilon,0,0,\dots)$. Any uniform ball $B_{\bar\rho}((\varepsilon,0,\dots),r)\cap\RR^{\infty}$ with $r\le1$ contains, for $t<r$ and $N$ with $Nt^{2}+\varepsilon^{2}>4\varepsilon^{2}$, the point $(s,t,\dots,t,0,\dots)$ with $\varepsilon-r<s<\varepsilon$ and $N$ entries equal to $t$, whose squared norm exceeds $4\varepsilon^{2}$; so no uniform ball at that point is contained in the $\ell^{2}$-ball.
 
+*Box not $\ell^{2}$.* $D=\prod_{n}(-1/n,1/n)\cap\RR^{\infty}$ is box-open and contains $\mathbf{0}$; but for every $r>0$ the point with a single nonzero entry $1/N$ in position $N$, where $1/N<r$, lies in $B_{\ell^{2}}(\mathbf{0},r)$ and not in $D$.
+
+So $\text{product}\subsetneq\text{uniform}\subsetneq\ell^{2}\subsetneq\text{box}$ on $\RR^{\infty}$.
+
+(c) On the Hilbert cube $H=\prod_{n}[0,1/n]$ the topologies are: $\text{product}=\text{uniform}=\ell^{2}\subsetneq\text{box}$.
+
+The box topology is strictly finer: the set $\prod_{n}(-1/n,1/n)\cap H$ is box-open and contains $\mathbf{0}$, but for each $r>0$ the point of $H$ with a single nonzero entry $1/N$ in position $N$ and $1/N<r$ lies in the $\ell^{2}$-ball of radius $r$ around $\mathbf{0}$ and outside that box-open set.
+
+That the product topology is finer than the $\ell^{2}$-topology on $H$: let $B_{\ell^{2}}(\mathbf{x},\varepsilon)\cap H$ be a ball. Choose $N$ with $\sum_{i>N}1/i^{2}<\varepsilon^{2}/2$ and put
+$$
+U=H\cap\prod_{n}U_{n},\qquad
+U_{n}=\Big(x_{n}-\frac{\varepsilon}{2^{(n+1)/2}},\ x_{n}+\frac{\varepsilon}{2^{(n+1)/2}}\Big)\ (n<N),\quad U_{n}=\RR\ (n\ge N).
+$$
+Then $U$ is a product neighbourhood of $\mathbf{x}$. For $\mathbf{y}\in U$,
+$$
+\sum_{n}(x_{n}-y_{n})^{2}<\sum_{n<N}\frac{\varepsilon^{2}}{2^{n+1}}+\sum_{n\ge N}\frac{1}{n^{2}}<\frac{\varepsilon^{2}}{2}+\frac{\varepsilon^{2}}{2}=\varepsilon^{2},
+$$
+using $\abs{x_{n}-y_{n}}\le1/n$ on $H$ for $n\ge N$. So $U\subset B_{\ell^{2}}(\mathbf{x},\varepsilon)\cap H$, the product topology contains the $\ell^{2}$-topology, and with (a) the three coincide.
 :::
