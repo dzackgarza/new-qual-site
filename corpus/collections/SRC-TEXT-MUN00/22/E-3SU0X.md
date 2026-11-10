@@ -11,9 +11,22 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §22 Exercise 1, printed p. 144, with Example 3 of
+    §22 and its Figure 22.3; the stored statement is the printed one.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 22.1, PDF p. 27. The six preimages are computed
+    and the three that are open in R give the topology {empty, A, {a}, {b}, {a,b}}, which is
+    the one in Figure 22.3. The published list of proper subsets of A is printed with {a,b}
+    replaced by {a,c} twice; the card lists all six. (tmp/sources/munkres-solutions-
+    positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -33,25 +46,18 @@ determine the quotient topology on $A$ induced by $p$.
 :::
 
 ::: {.solution}
-::: pf
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 22.1, PDF p. 27** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the computation of the six preimages is theirs, with the list of subsets of $A$ corrected.
 
-::: {.pf-step #preimages-classified}
-The preimages of the subsets of $A$ are $p^{-1}(\varnothing)=\varnothing$, $p^{-1}(\{a\})=(0,\infty)$, $p^{-1}(\{b\})=(-\infty,0)$, $p^{-1}(\{a,b\})=\RR-\{0\}$, $p^{-1}(A)=\RR$, which are open, and $p^{-1}(\{c\})=\{0\}$, $p^{-1}(\{a,c\})=[0,\infty)$, $p^{-1}(\{b,c\})=(-\infty,0]$, which are not open.
-
-::: pf-proof
-The preimages follow from the definition of $p$.
-The last three each contain $0$ but no open interval about $0$.
-:::
-
-:::
-
-::: pf-qed
-A subset $U\subseteq A$ is open in the quotient topology if and only if $p^{-1}(U)$ is open, so by step [](#preimages-classified){.pf-ref} the quotient topology is
+Let $p:\RR\to A=\{a,b,c\}$ be $p(x)=a$ for $x>0$, $p(x)=b$ for $x<0$ and $p(0)=c$. A subset $U\subset A$ is open in the quotient topology exactly when $p^{-1}(U)$ is open in $\RR$. The six proper nonempty subsets of $A$ give
 $$
-\boxed{\bigl\{\varnothing,\{a\},\{b\},\{a,b\},A\bigr\}}.
+p^{-1}(\{a\})=(0,\infty),\quad p^{-1}(\{b\})=(-\infty,0),\quad p^{-1}(\{a,b\})=\RR-\{0\},
 $$
-:::
-
-:::
-
+$$
+p^{-1}(\{c\})=\{0\},\quad p^{-1}(\{a,c\})=[0,\infty),\quad p^{-1}(\{b,c\})=(-\infty,0].
+$$
+The first three are open in $\RR$ and the last three are not. Adding $\varnothing$ and $A$, whose preimages are $\varnothing$ and $\RR$, the quotient topology is
+$$
+\mathcal{T}=\big\{\varnothing,\ A,\ \{a\},\ \{b\},\ \{a,b\}\big\},
+$$
+which is the topology drawn in Figure 22.3 of §22.
 :::
