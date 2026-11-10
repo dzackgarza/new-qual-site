@@ -300,7 +300,7 @@ the integral closure $\widetilde A$ of $A$ in $K(X)$ is a finite $A$-module.
 
 ::: pf-proof
 
-The ring $A$ is a finitely generated integral $k$-algebra.  The finiteness theorem for integral closure, Hartshorne I.3.9A, says that the integral closure of such a domain in a finite extension of its fraction field is finite as an $A$-module.  Apply it to the trivial finite extension
+The ring $A$ is a finitely generated integral $k$-algebra, by Hartshorne II.3.3(c) applied to the finite type morphism $X\to\Spec k$.  The finiteness theorem for integral closure, Hartshorne I.3.9A, says that the integral closure of such a domain in a finite extension of its fraction field is finite as an $A$-module.  Apply it to the trivial finite extension
 $$
 K(X)/\Frac(A)=K(X)/K(X).
 $$
@@ -337,4 +337,10 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.8, PDF p. 22--23, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim's gluing input is the sheaf property in the form $\widetilde U_f$ equal to the normalization of $U_f$ and the equalizer sequence over a finite cover, with uniqueness of the factorization on affines coming from $\Gamma(X,\OO_X)\hookrightarrow\Gamma(Z,\OO_Z)$; finiteness over a field he proves by Noether normalization together with the Galois and purely inseparable cases and the trace pairing.
+The proof above proves the localization statement, glues through 2.12 with the cocycle condition, obtains uniqueness from writing $x=a/s$ with $a,s\in A$, and for finiteness invokes the book's Theorem I.3.9A instead of Kim's trace argument.
+Agree on the universal property.
 :::

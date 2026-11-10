@@ -43,12 +43,12 @@ Give examples of integral schemes which are neither geometrically irreducible no
 :::
 
 ::: {.solution}
-We use two standard field-extension facts for finite-type schemes:
+Two standard results on base change for algebras of finite type over a field are used.
 
-1. geometric irreducibility can be tested after base change to a separable algebraic closure;
-2. geometric reducedness can be tested after base change to the perfect closure.
+1. For a field $k$ and a $k$-algebra $R$, the following are equivalent: $\Spec(R\otimes_k K)$ is irreducible for every field extension $K/k$; $\Spec(R\otimes_k k_s)$ is irreducible; $\Spec(R\otimes_k \bar k)$ is irreducible. This is the Stacks Project, Lemma 10.47.3 (Tag 037K).
+2. Let $S$ be a reduced $k$-algebra and $K/k$ a separable field extension. Then $K\otimes_k S$ is reduced. This is the Stacks Project, Lemma 10.43.6 (Tag 030U); over a perfect field every field extension is separable.
 
-These are the scheme forms of Stacks Project, Lemmas 33.8.9 and 33.6.4, respectively.
+The step below records the two reductions that the proof of (1) uses, and the last step records that irreducibility of $R\otimes_k K$ cannot be tested by asking for $R\otimes_k K$ to be a domain.
 
 ::: pf
 
@@ -75,21 +75,13 @@ The continuous image of an irreducible topological space is irreducible.  Hence 
 If $X_{k_s}$ is irreducible, then $X_K$ is irreducible for every extension field $K/k$.
 
 ::: pf-proof
-This is the standard separable-closure criterion for geometric irreducibility.  The algebraic content is the following pair of facts.
+Two inputs, both used on affine charts.
 
-First, over a separably closed field, an irreducible scheme remains irreducible after every field extension: affinely, tensoring a ring with a unique minimal prime over a separably closed field with a field extension again has a unique minimal prime.
+First, let $k''/k'$ be an algebraic purely inseparable extension.  Then $\Spec k''\to\Spec k'$ is surjective, integral and radical, hence a universal homeomorphism, so base change along it is a homeomorphism; in particular $X_{k''}\to X_{k'}$ is a homeomorphism.  Since every element of $\bar k$ separable over $k_s$ lies in $k_s$, the extension $\bar k/k_s$ is purely inseparable, so $X_{\bar k}\to X_{k_s}$ is a homeomorphism.
 
-Second, given $K/k$ there is a common overfield $\Omega$ containing both $K$ and $k_s$ over $k$.  The first fact gives that
-$$
-X_\Omega=(X_{k_s})_\Omega
-$$
-is irreducible.  The projection
-$$
-X_\Omega\longrightarrow X_K
-$$
-is surjective, so $X_K$ is irreducible.
+Second, let $k'$ be algebraically closed and let $Y$ be an irreducible scheme of finite type over $k'$.  Then $Y_\Omega$ is irreducible for every field extension $\Omega/k'$: on an affine chart $\Spec R$ of $Y$ the ring $R$ has a unique minimal prime, and extension of scalars over an algebraically closed field preserves the set of minimal primes (Stacks Project, Lemma 10.47.2).
 
-This is precisely the implication in the separable-closure test for geometric irreducibility.
+Now let $K/k$ be arbitrary and choose a field $\Omega$ containing both $K$ and $\bar k$ over $k$.  By the hypothesis and the first input, $X_{\bar k}$ is irreducible; by the second input applied over the algebraically closed field $\bar k$, $X_\Omega=(X_{\bar k})_\Omega$ is irreducible.  The projection $X_\Omega\to X_K$ is surjective, because $\Spec\Omega\to\Spec K$ is faithfully flat, and the image of an irreducible space is irreducible.  Hence $X_K$ is irreducible.
 :::
 
 :::
@@ -128,7 +120,7 @@ If $A\otimes_k k_p$ had a nonzero nilpotent, its image would be a nonzero nilpot
 If $X_{k_p}$ is reduced, then $X_K$ is reduced for every extension field $K/k$.
 
 ::: pf-proof
-The field $k_p$ is perfect.  A reduced finite-type scheme over a perfect field is geometrically reduced: affinely, a reduced finitely generated algebra over a perfect field remains reduced after every field extension.
+The field $k_p$ is perfect, so every field extension of $k_p$ is separable.  By the second result of the preamble, applied over the perfect field $k_p$, a reduced algebra of finite type over $k_p$ stays reduced after every field extension: affinely, a reduced finitely generated algebra over a perfect field remains reduced after every field extension.  So $X_{k_p}$ reduced implies $(X_{k_p})_\Omega$ reduced for every extension $\Omega/k_p$.
 
 Choose a common overfield $\Omega$ of $K$ and $k_p$.  The preceding fact gives that
 $$
@@ -278,4 +270,23 @@ Step [](#irreducibility-tfae){.pf-ref} proves part (a), step [](#reducedness-tfa
 
 :::
 
+:::
+
+::: {.remark}
+Irreducibility of $X_K$ is weaker than reducedness, or domain-ness, of the corresponding ring.  Let $k$ be algebraically closed of characteristic $p>0$ and let
+$$
+A=k[x,y]/(y^p-x^p-x).
+$$
+Because $k$ is perfect, $k(x)^p=k(x^p)$, and $x^p+x\notin k(x^p)$ by comparing degrees in $x$; hence $y^p-x^p-x\in k(x)[y]$ is irreducible and $A$ is a domain.  Put $K=\Frac(A)=k(s)$ with $s^p=x^p+x$.  In $K[x,y]$ one has $y^p-x^p-x=(y-s)^p$, so
+$$
+A\otimes_k K\cong K[x,y]/((y-s)^p),
+$$
+in which $y-s$ is a nonzero nilpotent.  So a domain of finite type over an algebraically closed field can acquire nilpotents after a field extension, and irreducibility of $A\otimes_k K$ can be neither proved nor refuted by asking whether that ring is a domain.  What does survive is the number of minimal primes of $A\otimes_k K$, which is one here.
+:::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.15, PDF p. 26--27, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: For (a) Kim reduces a reducible $X_K$ to an affine chart with $A\otimes_kK$ reducible, extracts non-nilpotent $f_1,f_2$ with $f_1f_2=0$, and then asserts that the resulting finitely many polynomial conditions, which have a solution over the algebraically closed field $K$, have one over a finite extension of $k$; a finite purely inseparable base change of a separably closed $k$ is a homeomorphism, which would finish the argument.
+That descent is asserted rather than proved, and it fails on the natural reading: a purely inseparable extension of a separably closed but non-perfect $k$ need not have a $k$-point, so a solution over $K$ does not specialize to one over $k$.
+The proof above replaces it by the cited Lemma 10.47.3 and keeps Kim's two reductions, that purely inseparable base change is a homeomorphism and that extension of scalars over an algebraically closed field preserves the set of minimal primes.
+Agree on the reduction, not on the descent step.  For (b) Kim uses the trace form of a Galois extension; the proof above uses the cited Lemma 10.43.6 over the perfect closure.
 :::

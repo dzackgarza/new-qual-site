@@ -202,3 +202,9 @@ Step [](#disproves-3-20a){.pf-ref} disproves II.3.20(a), step [](#disproves-3-20
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.21, PDF p. 32--33, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim classifies the primes of $R[t]$ into $(0)$, the contractions of the irreducible elements of $K[t]$, $\pi R[t]$, and $\bar f(t)+\pi R[t]$; he takes $(\pi t-1)$, notes that its residue field is $K$ and that a one-dimensional point sits in a two-dimensional scheme, and for (e) takes $D(\pi)=\Spec K[t]$ of dimension $1$.
+The proof above proves maximality and height one of $(\pi t-1)$ by Krull's principal ideal theorem, and computes $\dim R[t]=2$ and $\dim D(\pi)=1$ directly, without the classification of primes.
+Agree.
+:::

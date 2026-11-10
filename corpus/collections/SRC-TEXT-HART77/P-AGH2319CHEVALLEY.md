@@ -505,3 +505,9 @@ Step [](#reduction-for-part-a){.pf-ref} proves part (a), step [](#part-b-proof){
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.19, PDF p. 29--31, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim's (b) proves the algebra lemma for $B=A[x]$ by writing $F=\prod(x-\alpha_j)$ and $h=\prod q(\alpha_j)$ over the algebraic closure of $\Frac(A)$, clearing denominators, and reading off a root of $\phi(F)$; he then inducts on the number of generators and applies the lemma with $b=1$ to get a dense open inside $f(X)$.  For (c) he runs noetherian induction with $f(X)=U\cup\bigl(f(X)\cap(Y-U)\bigr)$.
+The proof above is the same, with the well-definedness of $x\mapsto\lambda$ checked from the Bézout identity and with the reductions of (a) written out, including that a locally closed subscheme of a noetherian scheme is of finite type over it.
+Agree.
+:::

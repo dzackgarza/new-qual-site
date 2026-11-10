@@ -131,3 +131,9 @@ Step [](#closed-points-dense){.pf-ref} proves density for finite-type schemes ov
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.14, PDF p. 26, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim takes a nonempty open, produces a closed point inside an affine chart by Zariski's lemma, remarks that such a point need not be closed in $X$, and repairs this with the formula expressing $X-\{x\}$ as a union of open charts minus $x$; his counterexample is $\Spec k[x]_{(x)}$.
+The proof above isolates the two lemmas behind that argument, that a point with residue field finite over $k$ is closed in $X$ and that every nonempty open contains such a point, and takes the same discrete valuation ring.
+Agree.
+:::

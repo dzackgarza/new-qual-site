@@ -595,3 +595,39 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 **Uncertainty.** Searched: all twelve retained Hartshorne solution files in `tmp/sources` (Borcherds, Cais, Cutrone--Marshburn, Egbert, Kim, Lomont, Okamoto, Park, Saglam--Chris, Sam, Stein, Troiani) by full-text extraction. Found: the two sketches quoted above and nothing else; Borcherds and Troiani stop at Chapter I, Stein begins at II.2.14 and does not treat 2.15, Cutrone--Marshburn covers only 2.1--2.9, Sam covers II.1.1--II.1.8, Lomont only II.1.16(b), and Okamoto only II.9. Conclusion: no complete published solution of 2.15(c) among them. Confidence: high for these sets. Gaps: a published treatment may exist outside them; it has not been located.
 
 **Repair.** A published proof of Hartshorne II, Ex. 2.15(c), checked against the card, or the owner's direction to accept the card's derivation.
+
+### II.3.15 has no complete published solution in the sets inspected
+
+**Object and need.** `P-AGH2315GEOMIRRED` (Hartshorne II, Ex. 3.15(a) and (b), printed p. 93) needs a proof that irreducibility of $X$ is equivalent to irreducibility of $X_{k_s}$ and of $X_K$ for every extension $K/k$, and that reducedness of $X_{k_p}$ is equivalent to geometric reducedness. The hard implication in (a) is (ii) $\Rightarrow$ (iii).
+
+**Observed evidence.** Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §3, Exercise 3.15, PDF pp. 26--27, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`, reduces a reducible $X_K$ to an affine chart with $A\otimes_kK$ reducible and then writes: "Now if we look at the conditions on the coefficients of $f_1, f_2, h_j$ and entries of $a_1, a_2$, it is a polynomial condition. By Nullstellensatz, this has closed points over $K$ if and only if the corresponding variety is nonempty, and this can be tested on any algebraically closed field. So it will have a closed point over $k$ as well. Since we need only a finite number of coefficients, we may even assume that $K$ is a finite extension of $k$." That last passage does not follow: $k$ is separably closed, not algebraically closed, and a finite purely inseparable extension $L/k$ of a separably closed but non-perfect $k$ need not have a $k$-point — $\Spec k[x]/(x^p-u)$ has none when $u\notin k^p$, although it has one over $k(u^{1/p})$. Cais, Exercise 3.15(a), proves "(i) $\Rightarrow$ (iii)" by arguing that a zero divisor in $A\otimes_kK$ is a system of equations with coefficients in $k$ having a solution over $K$, and that the Nullstellensatz then gives one over $k$; that would show that $A\otimes_kK$ is a domain whenever $A$ is, which fails in characteristic $p$: for algebraically closed $k$ of characteristic $p$, $A=k[x,y]/(y^p-x^p-x)$ is a domain (since $x^p+x\notin k(x^p)=k(x)^p$) and $A\otimes_k\Frac(A)\cong K[x,y]/((y-s)^p)$ with $s^p=x^p+x$ has the nonzero nilpotent $y-s$. Saglam--Chris print (a) and (b) as "To be done"; Egbert's entry `2.3.31` reads "See Liu, section 3.2.2", and Cutrone--Marshburn's II.3 exercise 15 reads "See 'Algebraic Geometry and Arithmetic Curves' by Qing Liu section 3.2.2 pg 89". Park covers Chapters I and IV, Stein's homework covers II.2, Cais stops at 3.15, and Okamoto covers II.9.
+
+**Impact and owner.** The card proves the two reductions itself: an algebraic purely inseparable base change is a universal homeomorphism, so (ii) $\Leftrightarrow$ (i); and extension of scalars over an algebraically closed field preserves the set of minimal primes, so (i) $\Rightarrow$ (iii). The equivalence of the four conditions is the Stacks Project, Lemma 10.47.3 (Tag 037K), and the second reduction is Lemma 10.47.2; the card cites both by tag and records the characteristic-$p$ example showing why irreducibility cannot be tested through domain-ness. What is missing is a published argument to check those steps against, so II.3 is not source-complete on 3.15.
+
+**Uncertainty.** Searched: all twelve retained Hartshorne solution files in `tmp/sources` (Borcherds, Cais, Cutrone--Marshburn, Egbert, Kim, Lomont, Okamoto, Park, Saglam--Chris, Sam, Stein, Troiani) by full-text extraction. Found: the passages quoted above and nothing else. Conclusion: no complete published solution of 3.15(a) or (b) among them. Confidence: high for these sets. Gaps: Liu, *Algebraic Geometry and Arithmetic Curves*, §3.2.2 p. 89 is cited by Egbert and by Cutrone--Marshburn as the place where 3.15 is done, and is not among the retained files; it was not consulted.
+
+**Repair.** A published proof of 3.15(a) and (b), checked against the card, or the owner's direction to accept the Stacks citation as the proof of the implication (ii) $\Rightarrow$ (iii).
+
+### II.3.10(b) is false as printed in characteristic 2, and the retained solutions repeat it
+
+**Object and need.** `P-AGH2310FIBRES` (Hartshorne II, Ex. 3.10(b), printed p. 92): for $X=\Spec k[s,t]/(s-t^2)$, $Y=\Spec k[s]$ and $a\neq0$, "show that the fibre $X_y$ consists of two points, with residue field $k$", under the sole hypothesis that $k$ is algebraically closed.
+
+**Observed evidence.** In characteristic $2$ the Frobenius map of $k$ is bijective, so $a=r^2$ for some $r\neq0$ and $t^2-a=(t-r)^2$; the fibre is $\Spec k[t]/((t-r)^2)$, one nonreduced point with residue field $k$. The printed claim is false there. The retained sets repeat it without the hypothesis: Kim, PDF p. 23, writes "If $a\ne0$ then this is isomorphic to $k\times k$"; Cais, 3.10(b), writes that the fibre over $y=(s-a)$ consists of the two points $(s-a,t-\sqrt a)$ and $(s-a,t+\sqrt a)$; both need $\operatorname{char}k\neq2$.
+
+**Impact and owner.** The card keeps the printed statement, computes the characteristic-two fibre as a step, and proves the two-point assertion with the added hypothesis $\operatorname{char}k\neq 2$; the other two assertions of (b), the fibre over $0$ and the generic fibre, hold in every characteristic.
+
+**Uncertainty.** The counterexample is verified directly from the printed hypotheses; the printed page and the two published steps are quoted above. Confidence: high. Gaps: no erratum for this exercise was located.
+
+**Repair.** An erratum for Hartshorne II.3.10(b), or the owner's direction to keep the card as it stands.
+
+### II.3.20(c)--(d) are stated for the empty closed subset
+
+**Object and need.** `P-AGH2320DIMENSION` (Hartshorne II, Ex. 3.20, printed pp. 94--95) states (c) and (d) for an arbitrary closed subset $Y\subseteq X$, with no nonemptiness hypothesis.
+
+**Observed evidence.** For $Y=\emptyset$ the right-hand side of (c) is an infimum over the empty family of irreducible closed subsets of $Y$; with the usual conventions $\codim(\emptyset,X)=+\infty$ and $\krulldim\emptyset=-1$ the identity in (d) fails. Both statements are therefore meaningful only for nonempty $Y$.
+
+**Impact and owner.** The card keeps the printed statement and proves it for nonempty $Y$, with a remark recording why the empty case has no content.
+
+**Uncertainty.** A reading of the book's conventions, not a counterexample to a true statement. Confidence: high. Gaps: Hartshorne does not define $\codim$ for $\emptyset$.
+
+**Repair.** An erratum adding the nonemptiness hypothesis, or the owner's direction to keep the card as it stands.

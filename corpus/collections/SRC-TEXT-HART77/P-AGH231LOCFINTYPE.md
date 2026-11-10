@@ -184,3 +184,9 @@ Step [](#two-conditions-equivalent){.pf-ref} is the claimed equivalence.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.1, PDF p. 19, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim carries out the two reductions of the definition in turn: a chart $\Spec A$ over $\Spec B_i$ localizes to a chart over $\Spec B_{i,f}$ for a distinguished open, so that a cover of $\Spec B$ by distinguished opens with finitely generated charts over the localizations gives a cover of $\Spec B$ itself by finitely generated $B$-algebras.
+The proof above instead shrinks pointwise at $x\in f^{-1}(V)$: a witnessing chart $\Spec A$ over $\Spec B_i$, then a distinguished $D(g)\subseteq V\cap V_i$ and a distinguished $D(a)\subseteq\Spec A\cap f^{-1}(D(g))$, so that $A_a$ is a finitely generated $B_g$-algebra and hence a finitely generated $B$-algebra.
+Agree.
+:::

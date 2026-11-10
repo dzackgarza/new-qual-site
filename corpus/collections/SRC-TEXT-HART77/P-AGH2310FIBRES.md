@@ -23,7 +23,7 @@ audit:
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
-  note: Hartshorne II.3.10(b) assumes only that k is algebraically closed, and in characteristic 2 the fibre over a != 0 is one nonreduced point. The statement now assumes k algebraically closed of characteristic different from 2.
+  note: Hartshorne II.3.10(b) assumes only that k is algebraically closed, and in characteristic 2 the fibre over a != 0 is one nonreduced point, so the printed two-point assertion is false there. The card keeps the printed hypothesis and proves the two-point assertion under char k != 2, with the characteristic-2 fibre computed as a counterexample.
 ---
 
 ::: {.problem}
@@ -37,7 +37,7 @@ audit:
 
    - If $\eta$ is the generic point of $Y$, show that $X_\eta$ is a one-point scheme whose residue field is an extension of degree two of the residue field of $\eta$.
 
-   (Assume $k$ algebraically closed of characteristic different from $2$.)
+   (Assume $k$ algebraically closed.)
 :::
 
 ::: {.solution}
@@ -201,6 +201,21 @@ $$
 
 :::
 
+::: {.pf-step #char-two-fibre-not-two-points}
+If $\operatorname{char} k = 2$ and $a \neq 0$, then $X_y$ is a single nonreduced point of residue field $k$, so the assertion of the exercise as printed fails in this case.
+
+::: pf-proof
+In characteristic two the Frobenius map of the algebraically closed field $k$ is bijective, so $a=r^2$ for a unique $r\in k$; and $r\ne0$ because $a\ne0$.
+
+By step [](#closed-fibre-formula){.pf-ref},
+$$
+X_y\cong\Spec k[t]/(t^2-a)=\Spec k[t]/\bigl((t-r)^2\bigr).
+$$
+The quotient $k[t]/((t-r)^2)$ has the unique prime ideal $(t-r)$, so $X_y$ is a one-point scheme, and $t-r$ is a nonzero nilpotent, so $X_y$ is not reduced.
+:::
+
+:::
+
 ::: {.pf-step #fibre-two-points-char-neq-2}
 Assume $a\ne0$ and $\operatorname{char}k\ne2$.  Then $X_y$ consists of two reduced points, each with residue field $k$.
 
@@ -308,7 +323,7 @@ The spectrum of a field is one point.
 :::
 
 ::: pf-qed
-Steps [](#reduce-fibre-topology-to-affine){.pf-ref}, [](#fibre-ring-tensor-localization){.pf-ref}, [](#uy-points-correspond-to-primes){.pf-ref}, [](#uy-homeomorphism-onto-fiber){.pf-ref} and [](#xy-homeomorphism-global){.pf-ref} prove part (a).  Steps [](#coordinate-ring-of-x-is-kt){.pf-ref}, [](#closed-fibre-formula){.pf-ref}, [](#fibre-two-points-char-neq-2){.pf-ref} and [](#fibre-nonreduced-a-zero){.pf-ref} prove the closed-fibre statements, and steps [](#generic-fibre-ring){.pf-ref}, [](#t2-s-irreducible){.pf-ref} and [](#generic-fibre-degree-two){.pf-ref} prove the generic-fibre statement.
+Steps [](#reduce-fibre-topology-to-affine){.pf-ref}, [](#fibre-ring-tensor-localization){.pf-ref}, [](#uy-points-correspond-to-primes){.pf-ref}, [](#uy-homeomorphism-onto-fiber){.pf-ref} and [](#xy-homeomorphism-global){.pf-ref} prove part (a).  Steps [](#coordinate-ring-of-x-is-kt){.pf-ref}, [](#closed-fibre-formula){.pf-ref}, [](#char-two-fibre-not-two-points){.pf-ref}, [](#fibre-two-points-char-neq-2){.pf-ref} and [](#fibre-nonreduced-a-zero){.pf-ref} prove the closed-fibre statements, and steps [](#generic-fibre-ring){.pf-ref}, [](#t2-s-irreducible){.pf-ref} and [](#generic-fibre-degree-two){.pf-ref} prove the generic-fibre statement.
 :::
 
 :::
@@ -316,5 +331,11 @@ Steps [](#reduce-fibre-topology-to-affine){.pf-ref}, [](#fibre-ring-tensor-local
 :::
 
 ::: {.remark}
-The two-point assertion for $a \neq 0$ needs $\operatorname{char} k \neq 2$.  In characteristic $2$, $t^2-a=(t-\sqrt{a})^2$, so the fibre over $a$ is a nonreduced one-point scheme.  The solution assumes $\operatorname{char} k \neq 2$ for that assertion only.
+The exercise states (b) with no hypothesis on $k$ beyond algebraic closedness, and the two-point assertion for $a\neq0$ is false in characteristic $2$: there the Frobenius map of $k$ is bijective, so $t^2-a=(t-r)^2$ with $r^2=a$, and the fibre is the one-point nonreduced scheme $\Spec k[t]/((t-r)^2)$ (step [](#char-two-fibre-not-two-points){.pf-ref}).  The printed statement is kept above; the corrected statement, proved in step [](#fibre-two-points-char-neq-2){.pf-ref}, adds $\operatorname{char} k\neq2$, and in every characteristic the fibre over $a\neq0$ is $\Spec k[t]/(t^2-a)$ (step [](#closed-fibre-formula){.pf-ref}).  The remaining two assertions of (b), $a=0$ and the generic fibre, hold in every characteristic.
+:::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.10, PDF p. 23, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim's (a) reduces to $\Spec(B\otimes_A\kappa(\mathfrak p))$, decomposes $B\to B/\mathfrak pB\to(A-\mathfrak p)^{-1}(B/\mathfrak pB)$ and compares topologies after reducing to the case of a domain base and the generic point; (b) computes $k[t]/(t^2-a)$ and reads off $k\times k$ for $a\neq0$ and $k(s)[t]/(t^2-s)$ for the generic fibre.
+The proof above is the same computation with the homeomorphism proved on closed subsets and on overlaps, and it separates the characteristic two case, where $a$ is a square and the fibre over $a\neq0$ is the one-point scheme $\Spec k[t]/((t-r)^2)$; Kim's step $k[t]/(t^2-a)\cong k\times k$ needs $\operatorname{char}k\neq2$.
+Agree on (a), on $a=0$ and on the generic fibre.
 :::

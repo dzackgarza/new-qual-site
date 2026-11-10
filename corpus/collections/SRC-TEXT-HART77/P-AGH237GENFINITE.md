@@ -330,3 +330,9 @@ Step [](#s9){.pf-ref} is the required dense-open finiteness statement.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.7, PDF p. 21--22, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim's main step is that $X_{K(Y)}$ is of finite type over $K(Y)$ with finitely many points, hence finite and affine, so that $K(X)/K(Y)$ is finite; he then reduces to the affine case and clears denominators so that the finitely many generators of $B$ over $A$ become integral after inverting one element.
+The proof above proves finiteness of $L/K$ by Noether normalization together with lying over on $S^{-1}A_i$, clears denominators for a single $d\in B$, and instead of reducing to $X$ affine confines $f^{-1}(D(b))$ to one chart, using that $D(b)$ is cut out by elements of the ideals $J_i$ with $U_i\setminus W=V(J_i)$.
+Agree in substance.
+:::
