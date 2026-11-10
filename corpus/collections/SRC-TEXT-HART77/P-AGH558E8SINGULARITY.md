@@ -658,5 +658,5 @@ exceptional incidence graph required in part (b).
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.8, printed p. 300 (the $E_8$ surface singularity, parts (a) and (b)).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.5.8, PDF pp. 300--302. Part (a) is complete: $z$ is irreducible because $A/(z)=k[x,y]/(x^2+y^3)$ is a domain, $t=-(u^2+v^3)\in k[u,v]$ from $u^2+v^3=t^6(x^2+y^3)=-t$, $A[z^{-1}]=k[u,v,t^{-1}]$, and $A$ is a UFD because the localization is one and an irreducible of $A$ not in $(z)$ stays irreducible and hence prime there. Steps [](#z-is-prime){.pf-ref}, [](#coordinate-change-ufd){.pf-ref} and [](#a-is-ufd){.pf-ref} are that argument. Part (b) he does not prove: his solution is "Step 1: Start your computer. Step 2: Enter the following commands into Singular", followed by a manual computation of the first two or three blowups, which reaches the local equation $X^2+zY(Y+z)=0$ and then stops at "etc, etc." Steps [](#third-blowup-two-points){.pf-ref} to [](#eight-blowups-e8-diagram){.pf-ref} carry the sequence to the eighth blowup and record the $E_8$ incidences. Recorded in COMPLAINTS for (b).
 :::

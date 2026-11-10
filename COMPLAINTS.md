@@ -739,3 +739,15 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 **Uncertainty.** Searched: all twelve retained Hartshorne solution files in `tmp/sources` by `pdftotext -layout` extraction, plus `assets/attachments/Hartshorne_Solutions.pdf` (the Cais notes). Chapter V occurs only in Egbert (V.1--V.6) and in Park (§V.5 alone). Conclusion: no complete published solution for the two requests above. Confidence: high for these sets. Gaps: a published treatment may exist outside them.
 
 **Repair.** A published proof of each, checked against the card, or the owner's direction to accept the cards' own derivations.
+
+### V.5.8(b) of `SRC-TEXT-HART77` has no complete published solution
+
+**Object and need.** `P-AGH558E8SINGULARITY`, printed p. 420, asks for the resolution of $x^2+y^3+z^5=0$ at the origin by eight successive blowings-up and for the $E_8$ Dynkin diagram of the eight exceptional lines. Part (a), the unique factorisation property of the affine ring, is answered in the retained sets; part (b) is not.
+
+**Observed evidence.** Two retained sets reach the section. Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), PDF pp. 300--302, gives part (a) in full; for part (b) he writes "Step 1: Start your computer. Step 2: Enter the following commands into Singular", records a `resolve` call, then follows two or three blowups by hand, arriving at the local equation $X^2+zY(Y+z)=0$ on the second strict transform, and ends "etc, etc." Jinhyun Park, *Algebraic Geometry by Robin Hartshorne, Exercises solutions*, gives part (a) in full as a UFD proof with the same claims ($z$ irreducible, $t=-u^2-v^3$, $A[z^{-1}]=k[u,v,t^{-1}]$, then UFD by the two lemmas on irreducibles and the localization) and stops there; his section is followed immediately by Appendix C.
+
+**Impact and owner.** The card keeps the computation: the strict transforms after the first three blowups are $x_1^2+zy_1^3+z^3=0$, $x_2^2+y^2z_2+yz_2^3=0$ and the two germs $X^2+yZ+y^2Z^3=0$ (an ordinary double point, resolved by one blowup, giving $E_4$) and $X^2+zY(Y+z)=0$; the blowup of the second carries three ordinary double points, at $Z=0$, $Z=-1$ and $V=0$, which are resolved by the remaining three blowups. The incidence chain is $E_1-E_4-E_3-E_7-E_5-E_6-E_2$ with $E_8$ meeting $E_5$, which is $E_8$; the count of eight is consistent with the Milnor number $(2-1)(3-1)(5-1)=8$ of a weighted-homogeneous isolated surface singularity.
+
+**Uncertainty.** Searched: all twelve retained Hartshorne solution files in `tmp/sources` by `pdftotext -layout` extraction, plus `assets/attachments/Hartshorne_Solutions.pdf` (the Cais notes). Chapter V occurs only in Egbert (V.1--V.6) and in Park (§V.5 alone, and in §V.5 only V.5.8, whose part (b) is missing). Conclusion: no complete published solution for part (b). Confidence: high for these sets. Gaps: a published treatment may exist outside them.
+
+**Repair.** A published proof of part (b), checked against the card, or the owner's direction to accept the card's own computation.
