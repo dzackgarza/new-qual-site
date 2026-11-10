@@ -12,9 +12,23 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §20 Exercise 4, printed p. 127; the three maps,
+    the four sequences and both questions are stored as printed.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 20.4, PDF pp. 18-19. The three maps are continuous
+    in the product topology by Theorem 19.6 and discontinuous in the box topology, where a
+    box of shrinking intervals has preimage the single point 0; in the uniform topology f
+    fails and g and h are continuous. The sequences are decided as recorded: w only in the
+    product topology, x and y in the product and uniform topologies, z in all three.
+    (tmp/sources/munkres-solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -59,70 +73,25 @@ $$
 :::
 
 ::: {.solution}
-The uniform topology is given by $\bar\rho(\mathbf a,\mathbf b)=\sup_k\min\{\abs{a_k-b_k},1\}$, and $\mathcal T_{\mathrm{prod}}\subseteq\mathcal T_{\bar\rho}\subseteq\mathcal T_{\mathrm{box}}$.
-A map into $\RR^\omega$ is product-continuous exactly when its coordinates are continuous, and a sequence converges in the product topology exactly when it converges coordinatewise.
-Continuity or convergence in a finer topology implies it in a coarser one.
-Let $U=\prod_k(-\frac1{k^2},\frac1{k^2})$, a box neighborhood of $\mathbf 0$.
-In (b), $\mathbf w_n$ and $\mathbf x_n$ have $n-1$ leading zeros followed by the constant $n$, respectively $\frac1n$; $\mathbf y_n$ has $n$ entries $\frac1n$ followed by zeros; $\mathbf z_n$ has two entries $\frac1n$ followed by zeros.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.4, PDF pp. 18--19** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both parts and all four sequences are theirs.
 
-::: pf
+(a) In the product topology $f,g,h$ are continuous, since each coordinate function ($t\mapsto it$, $t\mapsto t$, $t\mapsto t/i$) is continuous and Theorem 19.6 applies. In the box topology none of the three is continuous: the set
+$$
+B=(-1,1)\times\big(-\tfrac1{2^{2}},\tfrac1{2^{2}}\big)\times\cdots\times\big(-\tfrac1{n^{2}},\tfrac1{n^{2}}\big)\times\cdots
+$$
+is box-open and contains $\mathbf{0}$, and for each of the three maps the condition $f(t)\in B$ reads $\abs{it}<1/i^{2}$, $\abs{t}<1/i^{2}$, $\abs{t/i}<1/i^{2}$ for all $i$, that is $\abs{t}<1/i^{3}$, $\abs{t}<1/i^{2}$, $\abs{t}<1/i$ for all $i$: in every case only $t=0$. So the preimage is $\{0\}$, not open in $\RR$.
 
-::: {.pf-step #f-continuity}
-$f$ is continuous $\boxed{\text{in the product topology only}}$.
+For the uniform topology: $f$ is not continuous, since $\bar\rho(f(t),\mathbf{0})=\sup_{i}\min\{\abs{it},1\}=1$ for every $t\ne0$, so $f^{-1}(B_{\bar\rho}(\mathbf{0},1))=\{0\}$. But $g$ and $h$ are continuous: for $s,t\in\RR$ with $\abs{s-t}<1$,
+$$
+\bar\rho(g(s),g(t))=\min\{\abs{s-t},1\}=\bar\rho(h(s),h(t)),
+$$
+because the $i$-th coordinate difference of $h(s),h(t)$ is $\abs{s-t}/i\le\abs{s-t}$, with equality at $i=1$; so given a ball of radius $\varepsilon$ around $g(t)$ or $h(t)$ the interval $(t-r,t+r)$ with $r=\min\{\varepsilon,1\}$ is mapped into it.
 
-::: pf-proof
-Its coordinates $t\mapsto kt$ are continuous.
-For $t\ne0$, $\bar\rho(f(t),f(0))=\sup_k\min\{k\abs t,1\}=1$, so $f$ is not continuous at $0$ in the uniform topology, hence not box-continuous.
-:::
+(b) The answers are: $\mathbf{w}_{i}$ converges in the product topology only; $\mathbf{x}_{i}$ and $\mathbf{y}_{i}$ converge in the product and uniform topologies but not in the box topology; $\mathbf{z}_{i}$ converges in all three.
 
-:::
+*Product.* Each of the four sequences has, in each fixed coordinate, either the constant value $0$ for large $i$ or a value tending to $0$; so each converges to $\mathbf{0}$ coordinatewise, hence in the product topology (Exercise 19.6). Since the other two topologies are finer and Hausdorff, a limit there would also be $\mathbf{0}$.
 
-::: {.pf-step #g-h-continuity}
-$g$ and $h$ are continuous $\boxed{\text{in the product and uniform topologies, not in the box topology}}$.
+*Uniform.* $\bar\rho(\mathbf{x}_{i},\mathbf{0})=\bar\rho(\mathbf{y}_{i},\mathbf{0})=\bar\rho(\mathbf{z}_{i},\mathbf{0})=1/i\to0$, so those three converge uniformly; but $\bar\rho(\mathbf{w}_{i},\mathbf{0})=\sup_{j}\min\{j,1\}=1$ for $i\ge2$ (the $i$-th coordinate of $\mathbf{w}_{i}$ is $i$), so $\mathbf{w}_{i}$ does not converge in the uniform topology.
 
-::: pf-proof
-Their coordinates $t\mapsto t$ and $t\mapsto t/k$ are continuous.
-$\bar\rho(g(t),g(s))=\min\{\abs{t-s},1\}$ and $\bar\rho(h(t),h(s))=\min\{\sup_k\abs{t-s}/k,1\}=\min\{\abs{t-s},1\}$.
-In the box topology, $g^{-1}\bigl(\prod_k(-\frac1k,\frac1k)\bigr)=\{0\}$ and $h^{-1}(U)=\{t:\abs t<\frac1k\text{ for all }k\}=\{0\}$, which are not open.
-:::
-
-:::
-
-::: {.pf-step #w-sequence-convergence}
-$(\mathbf w_n)$ converges to $\mathbf 0$ $\boxed{\text{in the product topology only}}$.
-
-::: pf-proof
-For each $k$, the $k$-th coordinate of $\mathbf w_n$ is $0$ once $n>k$.
-But $\bar\rho(\mathbf w_n,\mathbf 0)=1$ for every $n$, and the product limit $\mathbf 0$ is the only possible limit in the finer Hausdorff topologies.
-:::
-
-:::
-
-::: {.pf-step #x-y-sequence-convergence}
-$(\mathbf x_n)$ and $(\mathbf y_n)$ converge to $\mathbf 0$ $\boxed{\text{in the product and uniform topologies, not in the box topology}}$.
-
-::: pf-proof
-$\bar\rho(\mathbf x_n,\mathbf 0)=\bar\rho(\mathbf y_n,\mathbf 0)=\frac1n\to0$.
-The $n$-th coordinate of both $\mathbf x_n$ and $\mathbf y_n$ is $\frac1n\ge\frac1{n^2}$, so neither sequence ever enters $U$.
-:::
-
-:::
-
-::: {.pf-step #z-sequence-convergence}
-$(\mathbf z_n)$ converges to $\mathbf 0$ $\boxed{\text{in all three topologies}}$.
-
-::: pf-proof
-Let $\prod_k(-a_k,a_k)$ be a box neighborhood of $\mathbf 0$.
-The coordinates of $\mathbf z_n$ beyond the second are $0$, so $\mathbf z_n$ lies in it once $\frac1n<\min\{a_1,a_2\}$.
-Every box neighborhood of $\mathbf 0$ contains one of this form.
-:::
-
-:::
-
-::: pf-qed
-Steps [](#f-continuity){.pf-ref} and [](#g-h-continuity){.pf-ref} answer (a), and steps [](#w-sequence-convergence){.pf-ref}, [](#x-y-sequence-convergence){.pf-ref}, and [](#z-sequence-convergence){.pf-ref} answer (b).
-:::
-
-:::
-
+*Box.* $\mathbf{z}_{i}=(1/i,1/i,0,0,\dots)$ converges to $\mathbf{0}$: for a box neighbourhood $\prod(-\varepsilon_{n},\varepsilon_{n})$ of $\mathbf{0}$ one has $1/i<\min\{\varepsilon_{1},\varepsilon_{2}\}$ for large $i$. But $\mathbf{w}_{i}\notin\prod(-1,1)$ for every $i$, and for $\mathbf{x}_{i}$ and $\mathbf{y}_{i}$ the box neighbourhood $\prod(-1/n^{2},1/n^{2})$ is not entered eventually: $\mathbf{x}_{i}$ has $i$-th coordinate $1/i\notin(-1/i^{2},1/i^{2})$, and $\mathbf{y}_{i}$ has $i$-th coordinate $1/i\notin(-1/i^{2},1/i^{2})$. So none of the other three converges in the box topology.
 :::
