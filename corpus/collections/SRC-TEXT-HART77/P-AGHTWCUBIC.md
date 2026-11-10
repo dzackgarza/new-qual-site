@@ -56,3 +56,9 @@ $$
 **That $Y$ is a variety of dimension $1$.** The set $Y = Z(y - x^2,\ z - x^3)$ is closed, and $I(Y)$ is prime because $A(Y) \cong k[t]$ is a domain, so $Y$ is irreducible.
 Finally $\dim Y = \krulldim A(Y) = \krulldim k[t] = 1$.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.2, PDF p. 1, and Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.2, PDF p. 2, and William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 1.2, PDF p. 2: all three compute $k[x,y,z]/(y-x^2,z-x^3)\cong k[x]$, conclude that $(y-x^2,z-x^3)$ is radical because $k[x]$ is a domain, and read off $I(Y)$, $A(Y)\cong k[x]$ and $\dim Y=1$; Borcherds states the two results in one line and omits the dimension count.
+The proof above takes the steps in the opposite order: it proves $I(Y)=(y-x^2,z-x^3)$ first, by reducing modulo that ideal and using that a polynomial vanishing at every $t\in k$ is zero, and then gets $A(Y)\cong k[t]$ and the dimension from the resulting presentation.
+The same reduction is the main step in both, and both identify the quotient with $k[t]$; agree.
+:::

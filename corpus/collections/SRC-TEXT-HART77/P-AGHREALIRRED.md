@@ -96,3 +96,11 @@ It strictly contains $(f)$: the element $x$ belongs to the former and not the la
 By contrast, $(f)$ is a prime ideal because $\RR[x,y]$ is a UFD and $f$ is irreducible, so $\Spec(\RR[x,y]/(f))$ is integral and irreducible.
 The example concerns the real point set, not a failure of irreducibility for that scheme; the [[T-JRTS2|algebraically closed-field hypothesis in the Nullstellensatz]] is what distinguishes the two ideal computations [@Har77, Chapter I, §1].
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.12, PDF p. 1, gives $f=y^4+y^2+x^2(x-1)^2$, a sum of squares whose real zero set is $\{(0,0),(1,0)\}$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 1.12, PDF p. 3, gives $x^2+y^2+1$, whose real zero set is empty and so reducible by the convention that the empty set is not irreducible.
+Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.12, PDF p. 5, gives $(x^2-1)^2+y^2$, proves it irreducible over $\RR$ by comparing the factorization over $\CC$ with the factorization in $\RR[x,y]$, and reads the two-point zero set off the sum of squares.
+The proof above uses $f=x^2+(y^2-1)^2$ and proves irreducibility by the monicity in $x$, which forces two linear-in-$x$ factors and then $-a(y)^2=(y^2-1)^2$, impossible at $y=0$; that is Park's sum-of-squares example with the factorization argument done in $\RR[y][x]$ instead of through $\CC[x,y]$.
+Agree in method with all three, and the card's example is a fourth member of the same family.
+:::

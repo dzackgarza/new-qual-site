@@ -64,7 +64,18 @@ Put $W_i = V_1 \union \cdots \union V_i$.
 Since the $U_i$ increase, $W_i \intersect Y = U_i$.
 The chain $W_1 \subseteq W_2 \subseteq \cdots$ stabilises by (iii), so the chain $U_i$ stabilises.
 
-**(d)** By (ii), $X$ is a finite union $X = \Union_{i \leq n} C_i$ of irreducible closed subsets.
+**(d)** Suppose some closed subset of $X$ is not a finite union of irreducible closed subsets, and take a minimal one $C$ among them by (ii).
+Then $C$ is not irreducible, so $C = C_1 \union C_2$ with $C_1, C_2$ proper closed subsets of $C$.
+By minimality each $C_i$ is a finite union of irreducible closed subsets; those sets are closed in $C$ and hence in $X$, so $C$ is such a union, a contradiction.
+Hence $X$ is a finite union $X = \Union_{i \leq n} C_i$ of irreducible closed subsets.
 An irreducible Hausdorff space is a point: if $x \neq y$ in $C_i$ had disjoint open neighbourhoods $U \ni x$, $V \ni y$ in $C_i$, then $U$ would be a nonempty open subset that is not dense, contradicting Ex. 1.6.
 So $X$ is finite, and a finite Hausdorff space is discrete, because each point is closed and so every subset is closed.
+:::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.7, PDF p. 1: for (a) he pairs (i) with (iii) by complements and (ii) with (iv), and derives (ii) from (i) by choosing a descending chain with Zorn's lemma; for (b) he applies (a)(iv) to the finite unions of the cover; for (c) he says it follows from (a)(iv) without an argument; for (d) he compresses the conclusion into one sentence.
+Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.7, PDF pp. 3--4: he runs the four equivalences directly, builds the strictly descending chain in (b), passes (c) through $Y_i=F_i\cap Y$, and in (d) writes $X$ as a finite union of irreducible closed subsets with no argument for why that is possible.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 1.7, PDF p. 2: (a) is "routine", (b) and (c) are one line each, and (d) decomposes $X$ into finitely many irreducible components.
+The proof above gives (b) and (c) explicitly and supplies the step all three leave implicit: applying (ii) to the closed subsets that are not finite unions of irreducible closed subsets gives a minimal one, which splits into two strictly smaller members of the same family.
+Agree, and the minimal-counterexample step in (d) is the argument the published sets omit.
 :::

@@ -48,3 +48,10 @@ Over an infinite field pick $z$ distinct from every $p_i$ and $q_j$; then $(z,z)
 Erratum: an alternative argument sometimes given uses the hyperbola $V(xy-1)$, whose projection $\pi_x(V(xy-1)) = \AA^1 \sm \theset{0}$ is not closed, and claims that projections would be closed maps if $\AA^2$ had the product topology.
 Projections from a product topology are open maps but need not be closed, so that argument does not work.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.4, PDF p. 1, and Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.4, PDF p. 2: both take the diagonal $Z(x-y)$, closed in $\AA^2$ and not closed in the product, Park by listing the closed sets of the product as finite unions of sets of the form $V_1\times V_2$ with each $V_i$ empty, finite or everything.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 1.4, PDF p. 2, argues that every closed set of $\AA^1\times\AA^1$ is finite, which is false — $\AA^1\times\{b\}$ is an infinite closed set of the product — and then uses that $Z(y-x)$ is infinite.
+The proof above uses the diagonal as all three do, and instead of comparing against a list of closed sets it intersects a basic open box around a point off the diagonal with the diagonal, which is the missing argument in the argument Borcherds and Troiani leave at one sentence.
+Agree with Borcherds and Park, and agree with Troiani's example and conclusion but not with its reason.
+:::

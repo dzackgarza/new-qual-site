@@ -54,7 +54,8 @@ Since $k$ is algebraically closed, $q$ is a product of two linear forms.
 
 *Case 1: $q$ is a product of two non-proportional linear forms.* After a linear change of coordinates $q = xy$, so $f = xy + ax + by + c = (x+b)(y+a) + (c - ab)$.
 Translating, $f = xy + c'$, and $c' \neq 0$ because $f$ is irreducible.
-Rescaling $x$ gives $f = xy - 1$, so $A(W) \cong A(Z)$.
+Since $k$ is algebraically closed there is $\lambda \neq 0$ with $\lambda^2 = -c'$, and substituting $x \mapsto \lambda x$, $y \mapsto \lambda y$ turns $f$ into $\lambda^2 xy + c' = c'(1 - xy)$.
+As $c' \neq 0$ that polynomial generates the same ideal as $xy - 1$, so $A(W) \cong k[x,y]/\generators{xy-1} = A(Z)$.
 
 *Case 2: $q$ is the square of a linear form.* After a linear change of coordinates $q = x^2$, so $f = x^2 + ax + by + c$.
 If $b = 0$, then $f \in k[x]$ factors into linear factors, so $b \neq 0$.
@@ -65,4 +66,12 @@ So $A(W) \cong A(Y)$ exactly when the quadratic part of $f$ is a square, that is
 
 ::: {.remark}
 Part (c) is starred in the source.
+:::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.1, PDF p. 1: he sends any nonsingular conic to $xy+yz+zx=0$ by choosing three of its points and normalizing coordinates, reads regular functions on the conic as regular functions on $\PP^1$ minus one or two points, and reports the criterion $b^2=4ac$ for $A(W)\cong A(Y)$.
+Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.1, PDF pp. 1--2: he takes the discriminant $D(f)=b^2-ac$ of the quadratic part, shows $D$ vanishes or not independently of multiplying $f$ by a unit, translating and applying a linear change of coordinates, and carries $D=0$ to $y-x^2$ and $D\neq 0$ to $xy-1$ while checking the coordinate ring only changes up to isomorphism.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 1.1, PDF pp. 1--2: he factors the quadratic part into two linear forms over $\overline k=k$ and takes the cases of dependent factors, giving $y-x^2$, and independent factors, giving $xy-1$.
+The proof above splits on whether the quadratic part is a square, which is Park's $D(f)=0$ and the dependent-factor case of Troiani, and normalizes both cases by an affine change of coordinates as Borcherds does projectively.
+Agree.
 :::

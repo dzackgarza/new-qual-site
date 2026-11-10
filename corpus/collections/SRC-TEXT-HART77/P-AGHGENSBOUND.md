@@ -37,11 +37,18 @@ Show that every irreducible component of $Z(\mfa)$ has dimension at least $n - r
 Let $\mfa = \generators{f_1,\ldots,f_r}$, put $Y_j = Z(f_1,\ldots,f_j)$, so $Y_0 = \AA^n$ and $Y_j = Y_{j-1} \intersect Z(f_j)$.
 We prove by induction on $j$ that every irreducible component of $Y_j$ has dimension at least $n - j$.
 The case $j = 0$ is clear.
-
-Let $C$ be an irreducible component of $Y_j$.
+If $Y_j = \emptyset$ there is no component to consider, so suppose $C$ is an irreducible component of $Y_j$.
 Since $Y_j = \Union_D (D \intersect Z(f_j))$, where $D$ runs over the irreducible components of $Y_{j-1}$, the irreducible set $C$ lies in some $D \intersect Z(f_j)$, and by maximality $C$ is an irreducible component of $D \intersect Z(f_j)$.
 If $D \subseteq Z(f_j)$, then $C = D$ and $\dim C \geq n - j + 1$.
 Otherwise Ex. 1.8 applies to $D$ and $Z(f_j)$ and gives
 $\dim C = \dim D - 1 \geq n - j$.
 At $j = r$ this is the claim.
+:::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.9, PDF p. 1: the dimension of a component is the transcendence degree of its function field, which contains $x_1,\ldots,x_n$ and in which the algebraic relations are consequences of the $r$ generators of $\mathfrak a$, so the dimension is at least $n-r$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 1.9, PDF p. 2: for a prime minimal over $\mathfrak a$ he uses $\operatorname{ht}\mathfrak p\leq r$, which he attributes to Krull's principal ideal theorem — it is Krull's height theorem, the principal ideal theorem being the case $r=1$ — and concludes $\dim Y=n-\operatorname{ht}\mathfrak p\geq n-r$.
+Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.9, PDF p. 4: he adds the generators one at a time and shows at each step that the dimension drops by $0$ or $1$, so that $r$ generators lower it by at most $r$.
+The proof above is Park's induction, made explicit over the irreducible components of $Y_{j-1}$ and using Exercise 1.8 for the single step; the published sets take the single step from the height of a minimal prime, and both routes give the same bound.
+Agree in substance; the induction is the form Park uses and the form that keeps Exercise 1.8 as the only input.
 :::

@@ -54,3 +54,11 @@ Then $\cl_X(Y) \subseteq \cl_X(A) = A$, so the decomposition was trivial and $\c
 Irreducible is strictly stronger than connected: connected forbids a decomposition into two proper *disjoint* closed sets, irreducible forbids it without disjointness.
 $V(xy)$ is connected and reducible.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.6, PDF p. 1: for density he writes $X=(X\sm U)\cup\bar U$ and concludes $\bar U=X$; for irreducibility of $U$ he uses that a decomposition $U\subseteq C_1\cup C_2$ gives $X=\bar C_1\cup\bar C_2$; for the closure he uses $X=\bar C_1\cup\bar C_2$ on a decomposition of $\bar Y$.
+Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.6, PDF p. 3, proves the same two claims, with a lemma that a space is irreducible when every nonempty open set is dense.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 1.6, PDF p. 2, answers only "See [3]" and gives no proof.
+The proof above runs Borcherds' density and closure arguments and replaces his closure step by the finite-union form of irreducibility, $X=A\cup B\cup(X\sm U)$.
+Agree with Borcherds and Park; Troiani contains no solution to compare.
+:::

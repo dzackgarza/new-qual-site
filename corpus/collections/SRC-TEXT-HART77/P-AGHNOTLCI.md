@@ -149,3 +149,11 @@ Its codimension there is two, so this also proves failure of the local complete-
 ::: {.remark}
 This exercise is starred in the source.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.11, PDF p. 1: $t\mapsto(t^3,t^4,t^5)$ is a homeomorphism onto $Y$, so $\dim Y=1$ and $P=I(Y)$ has height $2$; no element of $P$ has components of degree $0$ or $1$ and the degree-two components span a three-dimensional space, so $P$ needs at least three generators; he names $x^2y-z^2$, $zx-y^2$, $x^3-zy$ as generators.
+Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.11, PDF p. 5: he runs the degree count up to degree $11$, lists $xz-y^2$, $x^3-yz$, $x^2y-z^2$, shows three are needed because a two-element set would have to consist of degree-two elements, and remarks that he does not prove that the three generate $I(Y)$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), PDF p. 3, skips from 1.10 to 1.12 and gives no solution to 1.11.
+The proof above proves the generation that Park leaves open — the three displayed polynomials already give $S/J\hookrightarrow k[t]$ spanned by the residue classes of $x^a$, $x^ay$, $x^az$, whose images have exponents in three distinct classes modulo $3$ — and then makes the three-generator count in $I(Y)/\mathfrak m I(Y)$, which is Borcherds' degree-two count in the form that also covers generation.
+Agree with Borcherds and Park on the count, and the card supplies the generation step that neither of them takes.
+:::

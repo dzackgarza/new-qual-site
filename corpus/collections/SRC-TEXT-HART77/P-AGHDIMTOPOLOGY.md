@@ -68,3 +68,11 @@ Every closed set other than $\emptyset$ is irreducible, because the closed sets 
 The chain $\theset{1} \subsetneq \theset{1,2} \subsetneq \cdots$ gives chains of every length, so $\dim X = \infty$.
 A strictly descending chain of closed sets has at most one member equal to $X$, and below that its members are $\theset{1,\ldots,i}$ with decreasing $i$, so it is finite and $X$ is Noetherian.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.10, PDF p. 1: (a) takes closures of a chain in $Y$; (b) selects a cover member meeting the bottom of a chain in $X$, intersects the chain with it and uses Exercise 1.6; (c) is the two-point space with one open point; (d) appends $X$ to a chain of maximal length in $Y$; (e) is the positive integers with the initial segments as proper closed sets.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 1.10, PDF p. 3: (a) and (b) are "solved in [3]"; (c) is the Sierpiński space; (d) is one sentence; (e) is $\NN$ with initial segments.
+Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.10, PDF pp. 4--5: (a), (b), (c), (d) as above, and for (e) the localization of a polynomial ring in infinitely many variables at the complement of the union of the ideals $(x_{m_i+1},\ldots,x_{m_{i+1}})$, whose quotients have unbounded height.
+The proof above is Borcherds' argument part for part, with the strictness of the chains in (a) and (b) checked through $\bar Z_i\cap Y=Z_i$ and through densities in the irreducible $C_j$, and with the topology in (e) verified to be closed under finite unions and arbitrary intersections as well as Noetherian.
+Agree; the only difference is that Borcherds' (e) and Park's (e) are different examples, and the card keeps Borcherds'.
+:::

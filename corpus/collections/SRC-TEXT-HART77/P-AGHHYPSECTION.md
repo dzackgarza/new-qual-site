@@ -51,3 +51,10 @@ $$
 \dim C_i = \dim A(Y) - 1 = r - 1 .
 $$
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.8, PDF p. 1: since $f$ is neither a unit nor a zero divisor in $A(Y)$, every minimal prime containing it has height one by (1.11A), and the component's coordinate ring is $B/P$ with $\dim(B/P)=r-1$ by (1.8A).
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 1.8, PDF p. 2, and Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.8, PDF p. 4, run the same argument, Park through a primary decomposition of $(f)$ in $A(Y)$ and its minimal primes.
+The proof above names the correspondence between components of $Y\cap H$ and minimal primes of $A(Y)$ over $(f)$ — which all three use and none states — and then applies Krull's principal ideal theorem and the dimension formula exactly as they do.
+Agree.
+:::

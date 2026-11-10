@@ -57,3 +57,10 @@ two lines and a parabola.
 Each is irreducible because its ideal is prime: the quotients are $k[z]$, $k[y]$ and $k[x]$ respectively, all domains.
 None contains another, so these are the irreducible components.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.3, PDF p. 1: from $xz=x$ he splits into $x=0$ and $z=1$, takes $x=0$ with $x^2=yz$ to $y=0$ or $z=0$, and lists the prime ideals as $(x,y)$, $(x,z)$ and $(z-1,x^2-y)$.
+Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.3, PDF p. 2: the same two-case split as the proof above, with the three coordinate rings computed as $k[x]$, $k[z]$ and $k[y]$ to prove each component irreducible.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 1.3, PDF p. 2, prints $Y=Z(y)\cup Z(x)\cup Z(x^2-y)$ with ideals $(y)$, $(x)$, $(x^2-y)$, which is not the set $Y$: the three sets only contain $Y$, and $(1,1,0)$ lies in $Z(x^2-y)$ but not in $Y$ since $x^2=1$ while $yz=0$, so the printed union is strictly larger than $Y$ and its members are a plane, a plane and a quadric surface rather than the two lines and the parabola.
+The proof above runs Park's split and reads the components off the prime quotients, so agree with Borcherds and Park; Troiani's answer is not correct as printed.
+:::
