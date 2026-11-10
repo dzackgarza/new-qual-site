@@ -12,14 +12,21 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §24 Exercise 5, printed p. 158; the four sets are
+    stored as printed.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 24.5, PDF pp. 4-5. Z+ x [0,1) and [0,1) x [0,1]
+    are linear continua, with the least upper bound read off the first coordinate and then
+    the fibre; [0,1) x Z+ fails density between 0 x 1 and 0 x 2, and [0,1] x [0,1) fails the
+    least upper bound property on the fibre at 1. (tmp/sources/munkres-solutions-positron-
+    ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -37,21 +44,13 @@ Which are linear continua?
 :::
 
 ::: {.solution}
-The linear continua are exactly (a) and (c).
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.5, PDF pp. 4--5** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all four answers and their justifications are theirs.
 
-(a) $\ZZ_+$ is well ordered, so by [[E-U00IE]], $\ZZ_+\times[0,1)$ is a linear continuum.
+(a) $\ZZ_{+}\times[0,1)$ **is** a linear continuum. Between $x\times y<z\times w$: if $x=z$ put $(x+y)/2$ in the second coordinate; if $x<z$ take $(x+1)\times0$ if $z=x+1$, and otherwise $(x+1)\times0$ lies strictly between. For the least upper bound property: let $S\ne\varnothing$ be bounded above and put $x=\max\pi_{1}(S)$ (the set of first coordinates is a nonempty subset of the well-ordered $\ZZ_{+}$) and $y=\sup\pi_{2}(S\cap(\{x\}\times[0,1)))$, which exists in $[0,1]$; then $x\times y$ is the least upper bound of $S$ if $y<1$, and $(x+1)\times0$ is if $y=1$.
 
-(b) The subset
-$$
-\{0\}\times\ZZ_+
-$$
-of $[0,1)\times\ZZ_+$ is bounded above, for example by $(1/2,1)$. It has no least upper bound: any upper bound must have positive first coordinate, and there is no least positive element of $[0,1)$. Hence the least-upper-bound property fails.
+(b) $[0,1)\times\ZZ_{+}$ **is not**: $0\times1<0\times2$ but there is no element strictly between them, since the first coordinates coincide and no integer lies strictly between $1$ and $2$.
 
-(c) The order is dense. For the least-upper-bound property, let $A$ be nonempty and bounded above. Let $s$ be the supremum of the first coordinates of points of $A$. If $s$ occurs as a first coordinate in $A$, take the supremum of the corresponding second coordinates in the complete interval $[0,1]$; this gives the least upper bound. If $s$ does not occur, then $(s,0)$ is the least upper bound; it lies in $[0,1)\times[0,1]$ because $A$ has an upper bound with first coordinate $b<1$, so $s\le b<1$. Thus $[0,1)\times[0,1]$ is a linear continuum.
+(c) $[0,1)\times[0,1]$ **is** a linear continuum. Density as in (a). For the least upper bound property let $S\ne\varnothing$ be bounded above, put $x=\sup\pi_{1}(S)\le1$; if $x\in\pi_{1}(S)$ then $x\times\sup\pi_{2}(S\cap(\{x\}\times[0,1]))$ is the least upper bound, and if $x\notin\pi_{1}(S)$ then $x\times 0$ is.
 
-(d) The subset
-$$
-\{0\}\times[0,1)
-$$
-of $[0,1]\times[0,1)$ is bounded above, for instance by $(1/2,0)$, but has no least upper bound: an upper bound must have first coordinate $>0$, and there is no least positive real number. Thus (d) is not a linear continuum.
+(d) $[0,1]\times[0,1)$ **is not**: its element $x\times y$ is not the least upper bound of the fibre $\{x\}\times[0,1)$ relative to the order on the set, since that fibre is bounded above (by $x'\times0$ for $x'>x$) and has no least upper bound in $[0,1]\times[0,1)$.
 :::
