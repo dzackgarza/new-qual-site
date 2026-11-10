@@ -10,6 +10,21 @@ classification:
   - Metrizability
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Jesper Michael Moller, "Solutions to exercises
+    in Munkres", file S34.pdf, Exercise 34.2, page 1 of the file
+    (tmp/sources/munkres-solutions-poulsen-S34.pdf, Internet Archive snapshot 20180827202044),
+    checked against Munkres, Topology (2000), Section 34 Exercise 2, printed p. 218, Example 3 of
+    Section 30 (printed p. 192) and Exercise 30.6. Its example is the Sorgenfrey line, and its
+    list of properties is the card's: completely normal, first countable, Lindelof, separable, and
+    not metrizable. What was corrected: Moller gives "completely normal [Ex 32.4]", and Exercise
+    32.4 is the normality of regular Lindelof spaces; the complete normality of R_l is Exercise
+    32.7(g), and the card now cites it, having previously justified it by a hereditary-Lindelof
+    argument that is no longer on E-RIGIX.
 ---
 
 ::: {.exercise}
@@ -20,7 +35,7 @@ Give an example showing that a space can be completely normal, and satisfy the f
 ::: {.solution}
 The Sorgenfrey line $\RR_\ell$ is such an example.
 
-- It is completely normal: as proved in §32, every subspace of $\RR_\ell$ is regular and Lindelöf, hence normal.
+- It is completely normal, by Exercise 32.7(g): every pair of separated subsets has disjoint neighbourhoods, built from the basis of half-open intervals.
 - It is first countable: the intervals
 $$
 [x,x+1/n),\qquad n\ge1,

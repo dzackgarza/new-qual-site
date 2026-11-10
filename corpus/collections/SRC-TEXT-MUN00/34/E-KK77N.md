@@ -11,6 +11,25 @@ classification:
   - Countability
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "Doug's World", "Munkres - Topology - Chapter 4
+    Solutions" (30 August 2017), Problem 34.8, printed p. 12
+    (tmp/sources/munkres-solutions-dougsworld-ch4.pdf), and dbFin, "Section 34: Problem 8 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-34-the-urysohn-metrization-theorem/problem-8-solution/
+    (read 2026-11-10; kept at
+    tmp/sources/dbfin/section-34-the-urysohn-metrization-theorem/problem-8-solution.txt); checked
+    against Munkres, Topology (2000), Section 34 Exercise 8, printed p. 218, Exercise 30.9 and
+    Exercise 30.5(b). The argument is the card's, and it answers the printed question about where
+    regularity is used: to shrink a metrizable neighbourhood to one whose closure is closed in the
+    Lindelof space, hence Lindelof and metrizable, hence second countable. What was corrected: the
+    source writes "Since a closed subspace of a Lindeof space is Lindeof, cl(V_x) is Lindeof" and
+    then "Since V_x is a subspace of U_x, it is metrizable. By exercise 30.5(b), cl(V_x) is second
+    countable", applying 30.5(b) to the open subspace V_x where the argument gives it for the closed
+    one, and then citing Theorem 30.2 for the passage to V_x; the card keeps the two steps separate.
 ---
 
 ::: {.exercise}

@@ -11,6 +11,21 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solutions: Jesper Michael Moller, "Solutions to exercises
+    in Munkres", file S34.pdf, Exercise 34.3 (Theorem 1), page 1 of the file
+    (tmp/sources/munkres-solutions-poulsen-S34.pdf, Internet Archive snapshot 20180827202044), and
+    "Doug's World", "Munkres - Topology - Chapter 4 Solutions", Problem 34.3, printed p. 10
+    (tmp/sources/munkres-solutions-dougsworld-ch4.pdf); checked against Munkres, Topology (2000),
+    Section 34 Exercise 3, printed p. 218, Theorem 32.3, Exercise 30.4 and Theorem 34.1. Its two
+    directions are the card's: a second-countable compact Hausdorff space is regular, hence
+    metrizable by Theorem 34.1; a compact metrizable space is second countable, and the card writes
+    the finite 1/n-nets and the rational balls about their union. No correction to the mathematics
+    was needed.
 ---
 
 ::: {.exercise}

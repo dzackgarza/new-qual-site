@@ -20,6 +20,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: dbFin, "Section 34: Problem 6 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-34-the-urysohn-metrization-theorem/problem-6-solution/
+    (read 2026-11-10; kept at
+    tmp/sources/dbfin/section-34-the-urysohn-metrization-theorem/problem-6-solution.txt), checked
+    against Munkres, Topology (2000), Section 34 Exercise 6, printed p. 218, and Theorem 34.2 with
+    its proof on the preceding pages. The three details are the card's: F is continuous because the
+    preimage of a subbasic set is f_n^{-1}(U); F is injective because the family separates points
+    from closed sets and one-point sets are closed; and F carries open sets to open sets of the
+    image because a function f_n with f_n(x) outside the closure of f_n(X - U) gives a product-open
+    set about F(x) whose preimage lies in U. The card writes the last step for an arbitrary closed
+    C = X - U and an interval V about f_n(x) disjoint from f_n(C). No correction to the mathematics
+    was needed; the source's own version writes the special case f_alpha(x) different from
+    0 = f_alpha(X - U).
 ---
 
 ::: {.exercise}

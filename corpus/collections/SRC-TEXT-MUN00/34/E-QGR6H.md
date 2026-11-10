@@ -11,6 +11,25 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solutions: "Doug's World", "Munkres - Topology - Chapter
+    4 Solutions" (30 August 2017), Problem 34.9 with its Proposition 7, printed pp. 11-12
+    (tmp/sources/munkres-solutions-dougsworld-ch4.pdf), and dbFin, "Section 34: Problem 9 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-34-the-urysohn-metrization-theorem/problem-9-solution/
+    (read 2026-11-10; kept at
+    tmp/sources/dbfin/section-34-the-urysohn-metrization-theorem/problem-9-solution.txt); checked
+    against Munkres, Topology (2000), Section 34 Exercise 9, printed p. 218, and its printed hint,
+    with Exercise 30.4. The card builds the countable family of the hint -- lifts of the bases of the
+    two closed subspaces together with X - X_1 and X - X_2 -- and checks that its finite
+    intersections form a basis, by taking for each i either the lifted basis element through x or the
+    complement of X_i. What was corrected: Doug's World writes the cover at the end as B = B_1 cup B_2
+    cup (X_1 - X_2) cup (X_2 - X_1) and then proves separateness in two cases, introducing a
+    "B = B_1 cap B_2" that its own definition does not contain; the card takes the whole family of
+    finite intersections, which is the hint's construction.
 ---
 
 ::: {.exercise}

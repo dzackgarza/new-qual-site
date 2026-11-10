@@ -11,6 +11,24 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solutions: "Doug's World", "Munkres - Topology - Chapter
+    4 Solutions" (30 August 2017), Problem 34.7, printed p. 11
+    (tmp/sources/munkres-solutions-dougsworld-ch4.pdf), and dbFin, "Section 34: Problem 7 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-34-the-urysohn-metrization-theorem/problem-7-solution/
+    (read 2026-11-10; kept at
+    tmp/sources/dbfin/section-34-the-urysohn-metrization-theorem/problem-7-solution.txt); checked
+    against Munkres, Topology (2000), Section 34 Exercise 7, printed p. 218, and its printed hint,
+    with Lemma 31.1(a), Exercise 30.4 and Theorem 34.1. The proof is the card's: shrink each
+    metrizable neighbourhood N_x to V_x with closure inside an open U_x inside N_x, note that the
+    closure is compact metrizable hence second countable and so V_x has a countable basis, cover X
+    by finitely many of them, and take the union of the countable bases. What was corrected: the
+    source writes "By exercise 31.4, cl(V_x) has a countable basis", and Exercise 31.4 is about
+    comparable topologies; the compact-matrizable criterion is Exercise 30.4, and the card cites it.
 ---
 
 ::: {.exercise}
