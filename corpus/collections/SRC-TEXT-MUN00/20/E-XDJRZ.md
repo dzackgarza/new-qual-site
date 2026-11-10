@@ -12,14 +12,21 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §20 Exercise 10, printed p. 128; the three parts
+    are stored as printed.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 20.10, PDF p. 22. The Cauchy-Schwarz bound on the
+    partial sums gives absolute convergence of the series of products, the two-square
+    inequality gives closure under sums and scalar multiples, and the metric axioms follow
+    from the same bound, which makes the triangle inequality the one in the Cauchy-Schwarz
+    form. (tmp/sources/munkres-solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -44,47 +51,24 @@ is a well-defined metric on $X$.
 :::
 
 ::: {.solution}
-Let
-$$
-X=\left\{\mathbf x=(x_i):\sum_i x_i^2<\infty\right\}.
-$$
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.10, PDF p. 22** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); all three parts are theirs.
 
-(a) For each $n$, the finite-dimensional Cauchy--Schwarz inequality of [[E-UDRRC]](b) gives
+(a) Let $\mathbf{x},\mathbf{y}\in X$, so $\sum x_{i}^{2}$ and $\sum y_{i}^{2}$ converge. For $n\in\ZZ_{+}$ let $\mathbf{x}_{n}=(x_{1},\dots,x_{n})$ and $\mathbf{y}_{n}=(y_{1},\dots,y_{n})$. By the Cauchy--Schwarz inequality in $\RR^{n}$ (Exercise 20.9(b)),
 $$
-\sum_{i=1}^n\abs{x_iy_i}
-\le\left(\sum_{i=1}^n x_i^2\right)^{1/2}
-   \left(\sum_{i=1}^n y_i^2\right)^{1/2}
-\le \norm{\mathbf x}_2\norm{\mathbf y}_2.
+\sum_{i=1}^{n}\abs{x_{i}y_{i}}=\abs{\mathbf{x}_{n}\cdot\mathbf{y}_{n}}\le\norm{\mathbf{x}_{n}}\norm{\mathbf{y}_{n}}\le\Big(\sum_{i\ge1}x_{i}^{2}\Big)^{1/2}\Big(\sum_{i\ge1}y_{i}^{2}\Big)^{1/2}.
 $$
-The partial sums on the left are increasing and bounded, hence converge. Thus $\sum\abs{x_iy_i}$ converges.
+The partial sums of $\sum\abs{x_{i}y_{i}}$ are increasing and bounded, so the series converges.
 
-(b) For scalars $c$,
-$$
-\sum_i(cx_i)^2=c^2\sum_i x_i^2<\infty.
-$$
-Also
-$$
-(x_i+y_i)^2\le2x_i^2+2y_i^2,
-$$
-so
-$$
-\sum_i(x_i+y_i)^2\le2\sum_i x_i^2+2\sum_i y_i^2<\infty.
-$$
-Hence $X$ is closed under scalar multiplication and addition.
+(b) For every $n$, $\sum_{i=1}^{n}(x_{i}+y_{i})^{2}\le2\sum_{i=1}^{n}x_{i}^{2}+2\sum_{i=1}^{n}y_{i}^{2}\le2\sum_{i\ge1}x_{i}^{2}+2\sum_{i\ge1}y_{i}^{2}$, since $(a+b)^{2}\le2a^{2}+2b^{2}$; so the partial sums of $\sum(x_{i}+y_{i})^{2}$ are bounded and the series converges: $\mathbf{x}+\mathbf{y}\in X$. Similarly $\sum(cx_{i})^{2}=c^{2}\sum x_{i}^{2}$ converges, so $c\mathbf{x}\in X$.
 
-(c) Part (b) shows $\mathbf x-\mathbf y\in X$, so
+(c) For $\mathbf{x},\mathbf{y}\in X$, part (b) gives $\mathbf{x}-\mathbf{y}\in X$, so the series $\sum(x_{i}-y_{i})^{2}$ converges and $d(\mathbf{x},\mathbf{y})=\big(\sum_{i}(x_{i}-y_{i})^{2}\big)^{1/2}$ is a well-defined nonnegative real number, vanishing exactly when $x_{i}=y_{i}$ for all $i$. Symmetry is clear. For the triangle inequality put $\mathbf{a}=\mathbf{x}-\mathbf{z}$ and $\mathbf{b}=\mathbf{z}-\mathbf{y}$, which lie in $X$ by (b). By (a) applied to $\mathbf{a},\mathbf{b}$ and the Cauchy--Schwarz inequality of Exercise 20.9(b),
 $$
-d(\mathbf x,\mathbf y)=\left(\sum_i(x_i-y_i)^2\right)^{1/2}
+\abs{\sum_{i}a_{i}b_{i}}\le\sum_{i}\abs{a_{i}b_{i}}\le\Big(\sum_{i}a_{i}^{2}\Big)^{1/2}\Big(\sum_{i}b_{i}^{2}\Big)^{1/2}.
 $$
-is finite. Nonnegativity, symmetry, and definiteness are immediate. For the triangle inequality, part (a) gives the infinite Cauchy--Schwarz inequality, so for $u,v\in X$,
+Since $\mathbf{a}+\mathbf{b}=\mathbf{x}-\mathbf{y}$,
 $$
-\norm{u+v}_2^2
-=\norm{u}_2^2+2\sum_i u_iv_i+\norm{v}_2^2
-\le(\norm{u}_2+\norm{v}_2)^2.
+d(\mathbf{x},\mathbf{y})^{2}=\sum_{i}(a_{i}+b_{i})^{2}=\sum_{i}a_{i}^{2}+2\sum_{i}a_{i}b_{i}+\sum_{i}b_{i}^{2}
+\le\norm{\mathbf{a}}^{2}+2\norm{\mathbf{a}}\norm{\mathbf{b}}+\norm{\mathbf{b}}^{2}=\big(d(\mathbf{x},\mathbf{z})+d(\mathbf{z},\mathbf{y})\big)^{2},
 $$
-Thus $\norm{u+v}_2\le\norm{u}_2+\norm{v}_2$. Applying this to
-$$
-u=\mathbf x-\mathbf y,\qquad v=\mathbf y-\mathbf z
-$$
-gives the triangle inequality for $d$. Hence $d$ is a metric on $X$.
+where $\norm{\mathbf{a}}=d(\mathbf{0},\mathbf{a})$; taking square roots gives the triangle inequality, so $d$ is a metric on $X$.
 :::
