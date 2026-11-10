@@ -11,6 +11,25 @@ classification:
   - Countability
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 32 Exercise 4, printed p. 205,
+    and against the proof of Theorem 32.1 (printed p. 200), whose indexing the card copies with a
+    countable subcover in place of a countable basis, and Exercise 30.9 (a closed subspace of a
+    Lindelof space is Lindelof, printed p. 194). No complete published proof was located, and the
+    two sets that reach the exercise state the method without proving it: Ana Emilia de Orellana,
+    printed p. 33, writes "it is very similar to the theorem, regular and second countable imply
+    normal, so we just need to know that it has a countable basis, for this consider a cover a in
+    B_n inside U_n and use the Lindelof condition"; "Doug's World", printed p. 6, writes "follow the
+    same line of argument as with Theorem 32.1 but rely on a countable subcovering of the space in
+    lieu of a countable basis". The card's proof is the argument both describe, with the
+    checklists A <= U and B <= V carried out: this is the collision check: a point of U_m cap V_n
+    lies in closure U_m, which the definition of U_m excludes, when m <= n, and in closure V_n,
+    which the definition of V_n excludes, when n <= m. The search is recorded in the
+    COMPLAINTS.md entry for this batch.
 ---
 
 ::: {.exercise}

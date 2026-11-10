@@ -11,6 +11,23 @@ classification:
   - Product Topology
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 32 Exercise 2, printed p. 205,
+    and against Theorem 31.2 (subspaces and finite products of Hausdorff and of regular spaces
+    inherit the property) and Exercise 32.1. The argument is the standard one: a slice with all
+    other coordinates fixed at chosen base points is a homeomorphic copy of X_alpha; for the
+    Hausdorff and regular cases the slice is a subspace of the product; for the normal case the
+    product is T1, so the slice, being an intersection of preimages of closed points under the
+    continuous projections, is closed, and a closed subspace of a normal space is normal. No
+    published solution was located: Orellana's Section 32 covers Exercises 1, 4 and 5 only
+    (printed p. 33), "Doug's World" (printed pp. 6-7) covers 32.1, 32.3, 32.4, 32.5, 32.6 and 32.7,
+    Rajaraman has no Section 32, and the sets that stop before Chapter 4 are Whitman,
+    positron0802, shenapse, 9beach and kyp44. The search is recorded in the COMPLAINTS.md entry for
+    this batch.
 ---
 
 ::: {.exercise}

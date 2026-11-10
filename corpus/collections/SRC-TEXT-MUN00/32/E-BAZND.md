@@ -11,6 +11,23 @@ classification:
   - Product Topology
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 32 Exercise 9, printed pp. 206-207,
+    whose parts (a)-(d) are the skeleton the card fills in; the proof is A. H. Stone's, as the
+    printed statement says. No published solution of it was located, and the book's own printed
+    outline is the only published source: Orellana's Section 32 stops at Exercise 5, "Doug's World"
+    stops at Problem 32.7, and the sets that do not reach Chapter 4 are those listed in the
+    COMPLAINTS.md entry for this batch. What is supplied beyond the printed outline: (b) the
+    description of X - P_n as the union of the cylinders fixing two distinct coordinates at one
+    value m other than n, and the argument that P_1 cap P_2 is empty because a point of it would be
+    an injection of the uncountable J into Z_+; (c) the recursion, including that x_i lies in P_1
+    and that the finite set C_i may be absorbed into B_i because J is uncountable and only finitely
+    many alpha_j have been used; (d) the compatibility of the two coordinate prescriptions on
+    B cap B_{i+1}, for which x_{i+1}(alpha_j) = j = y(alpha_j) on B_i.
 ---
 
 ::: {.exercise}

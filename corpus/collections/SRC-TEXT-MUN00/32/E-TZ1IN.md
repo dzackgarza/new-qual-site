@@ -10,6 +10,21 @@ classification:
   - Separation Axioms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "Doug's World", "Munkres - Topology -
+    Chapter 4 Solutions" (30 August 2017; the file names no author), the second item printed there
+    under the heading "Problem 32.6", printed pp. 6-7
+    (tmp/sources/munkres-solutions-dougsworld-ch4.pdf); checked against Munkres, Topology (2000),
+    Section 32 Exercise 6, printed p. 205, Theorem 17.2 (closed sets in subspaces) and the printed
+    hint. What was corrected: the source calls the ambient set S = X - (closure A cap closure B)
+    and then asserts "the sets A' = A cap S and B' = B cap S are closed in S" and "Then V_A and V_B
+    are open in X because S is open", which needs the two facts the card supplies: A is contained
+    in closure A, hence in S by separatedness, so A' = S cap closure A is the trace of a closed set
+    of X, and likewise for B. The converse direction is the source's.
 ---
 
 ::: {.exercise}

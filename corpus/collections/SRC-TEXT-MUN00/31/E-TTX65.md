@@ -23,7 +23,7 @@ audit:
     (tmp/sources/munkres-solutions-anadeore.pdf), and "Doug's World", "Munkres - Topology -
     Chapter 4 Solutions" (30 August 2017), Problem 31.2, printed p. 4
     (tmp/sources/munkres-solutions-dougsworld-ch4.pdf); checked against Munkres, Topology (2000),
-    Section 31 Exercise 2, printed p. 199, and Lemma 31.1(b), printed p. 197. What was corrected:
+    Section 31 Exercise 2, printed p. 199, and Lemma 31.1(b), printed p. 196. What was corrected:
     Doug's World's argument stops at "Therefore T and W" with no conclusion; the card applies
     Lemma 31.1(b) to the closed set A inside the open set U and to B inside V, which is exactly the
     step the source leaves unfinished, and then concludes of the closures.

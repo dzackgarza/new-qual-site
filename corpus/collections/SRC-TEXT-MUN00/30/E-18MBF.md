@@ -23,7 +23,7 @@ audit:
     Transcribed from the located published solution: Ana Emilia Orellana, "Solutions - Topology
     Munkres", Section 30 Exercise 14, printed p. 31
     (tmp/sources/munkres-solutions-anadeore.pdf), checked against Munkres, Topology (2000),
-    Section 30 Exercise 14, printed p. 194, and the tube lemma (Lemma 26.8, printed p. 167). Her
+    Section 30 Exercise 14, printed p. 194, and the tube lemma (Lemma 26.8, printed p. 168). Her
     argument: each slice {x} x Y is compact, a finite subcollection covers it, the intersection of
     the finitely many X-coordinates is a neighbourhood U_x of x with U_x x Y covered, and
     Lindelofness of X gives countably many such x. What was corrected: the source then writes the

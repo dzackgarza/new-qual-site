@@ -22,7 +22,7 @@ audit:
     Chapter 4 Solutions" (30 August 2017), Problem 31.5, printed p. 5
     (tmp/sources/munkres-solutions-dougsworld-ch4.pdf); checked against Munkres, Topology (2000),
     Section 31 Exercise 5, printed p. 199, Exercise 17.13 (X is Hausdorff iff the diagonal is
-    closed, printed p. 100) and Theorem 18.4 (continuity of a map into a product). What was
+    closed, printed p. 101) and Theorem 18.4 (continuity of a map into a product). What was
     corrected: Doug's World proves that the diagonal of the SUBSPACE h(D) is closed, which is
     automatic and does not give the conclusion; the card uses that the diagonal of Y x Y is closed
     in Y x Y and that E is the preimage of it under the continuous map x -> (f(x), g(x)), which is

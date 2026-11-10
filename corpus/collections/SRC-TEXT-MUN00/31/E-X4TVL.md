@@ -17,7 +17,7 @@ audit:
   note: >-
     Checked line by line against Munkres, Topology (2000), Section 31 Exercise 9, printed p. 200,
     and against Exercise 5 of Section 27 (a compact Hausdorff space is not the union of countably
-    many closed sets with empty interior, printed p. 176) and Lemma 13.2. The four parts run as the
+    many closed sets with empty interior, printed p. 178) and Lemma 13.2. The four parts run as the
     book indicates: (a) each irrational point of [0,1] is in some K_n because V is open, the
     rational points are countably many singletons; (b) the contrapositive of the Baire exercise
     applied to the closed sets cl(K_n) and the singletons; (c) the interpolation between a point

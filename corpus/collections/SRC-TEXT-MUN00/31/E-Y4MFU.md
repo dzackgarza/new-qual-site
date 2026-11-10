@@ -20,7 +20,7 @@ audit:
     Chapter 4 Solutions" (30 August 2017; the file names no author), Problem 31.7, printed
     pp. 5-6 (tmp/sources/munkres-solutions-dougsworld-ch4.pdf), which answers all four parts;
     checked against Munkres, Topology (2000), Section 31 Exercise 7, printed pp. 199-200, Theorem
-    26.7, Lemma 26.4 (printed pp. 167-168), Exercise 26.5 and Theorem 29.2. What was corrected: in
+    26.7, Lemma 26.4 (printed p. 166), Exercise 26.5 and Theorem 29.2. What was corrected: in
     part (b) the source begins "Given y in X and neighborhood U of y" and separates the compact
     fibre from p^{-1}(Y - U) without first noting that regularity of X makes X Hausdorff, so that
     part (a) applies and Y is T1; without that, regularity of Y is not defined. The card states it.
