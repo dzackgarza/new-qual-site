@@ -11,9 +11,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §24 Exercise 8, printed p. 158, with Theorem 19.6
+    and Example 7; the four questions are stored as printed.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 24.8, PDF pp. 5-6. Products, images and unions
+    with a common point are path connected; the closure of a path-connected set need not be,
+    the topologist's sine curve being the example from Example 7. (tmp/sources/munkres-
+    solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -28,56 +40,13 @@ audit:
 :::
 
 ::: {.solution}
-::: pf
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.8, PDF pp. 5--6** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all four parts are theirs.
 
-::: {.pf-step #part-a}
-(a) $\boxed{\text{Yes}}$: a product $\prod_{\alpha\in J}X_\alpha$ of path-connected spaces is path connected.
+(a) **Yes.** If $\mathbf{x},\mathbf{y}\in\prod X_{\alpha}$ and $X_{\alpha}$ is path connected, choose paths $\gamma_{\alpha}:[0,1]\to X_{\alpha}$ from $x_{\alpha}$ to $y_{\alpha}$; then $\gamma(t)=(\gamma_{\alpha}(t))_{\alpha}$ is continuous into the product (Theorem 19.6: its coordinate functions are continuous) and joins $\mathbf{x}$ to $\mathbf{y}$.
 
-::: pf-proof
-Given $\mathbf x,\mathbf y$ in the product, choose paths $\gamma_\alpha\colon[0,1]\to X_\alpha$ from $x_\alpha$ to $y_\alpha$.
-The map $\gamma(t)=(\gamma_\alpha(t))_\alpha$ is continuous because its coordinates are, and it is a path from $\mathbf x$ to $\mathbf y$.
-:::
+(b) **No.** $A=\{x\times\sin(1/x)\mid 0<x\le1\}\subset\RR^{2}$ is path connected, being the continuous image of $(0,1]$; its closure, the topologist's sine curve, is not path connected (Example 7 of §24).
 
-:::
+(c) **Yes.** If $x,y\in f(X)$ pick $p,q\in X$ with $f(p)=x,f(q)=y$ and a path $\gamma$ from $p$ to $q$; then $f\circ\gamma$ is a path from $x$ to $y$ in $f(X)$.
 
-::: {.pf-step #part-b}
-(b) $\boxed{\text{No}}$: the closure of a path-connected set need not be path connected.
-
-::: pf-proof
-The set $A=\{(x,\sin(1/x)):0<x\le1\}\subseteq\RR^2$ is the image of $(0,1]$ under a continuous map, hence path connected.
-Its closure is $\overline A=A\cup(\{0\}\times[-1,1])$.
-Suppose a path $\gamma(t)=(u(t),v(t))$ joined $(0,0)$ to a point of $A$, and let $t_0=\inf\{t:u(t)>0\}$.
-Then $u(t_0)=0$, and there are times $s_n\downarrow t_0$ with $u(s_n)>0$.
-Between $t_0$ and $s_n$, the intermediate value theorem gives points where $u$ equals arbitrarily small positive numbers of the forms $1/(2\pi k+\pi/2)$ and $1/(2\pi k+3\pi/2)$.
-At those points $v=1$ and $v=-1$, respectively.
-Both sets of times approach $t_0$, contradicting continuity of $v$.
-Thus $\overline A$ is not path connected.
-:::
-
-:::
-
-::: {.pf-step #part-c}
-(c) $\boxed{\text{Yes}}$: if $f\colon X\to Y$ is continuous and $X$ is path connected, $f(X)$ is path connected.
-
-::: pf-proof
-For $f(x_1),f(x_2)\in f(X)$, choose a path $\gamma$ in $X$ from $x_1$ to $x_2$; then $f\circ\gamma$ is a path in $f(X)$ from $f(x_1)$ to $f(x_2)$.
-:::
-
-:::
-
-::: {.pf-step #part-d}
-(d) $\boxed{\text{Yes}}$: if the $A_\alpha$ are path connected and $p\in\bigcap_\alpha A_\alpha$, then $\bigcup_\alpha A_\alpha$ is path connected.
-
-::: pf-proof
-For $x\in A_\beta$ and $y\in A_\delta$, choose a path in $A_\beta$ from $x$ to $p$ and a path in $A_\delta$ from $p$ to $y$; their concatenation is a path in $\bigcup_\alpha A_\alpha$ from $x$ to $y$.
-:::
-
-:::
-
-::: pf-qed
-Steps [](#part-a){.pf-ref} through [](#part-d){.pf-ref} answer (a) through (d).
-:::
-
-:::
-
+(d) **Yes.** Let $z\in\bigcap_{\alpha}A_{\alpha}$ and let $x,y\in\bigcup_{\alpha}A_{\alpha}$, say $x\in A_{\beta}$, $y\in A_{\gamma}$. Each $A_{\alpha}$ is path connected, so there are paths in $A_{\beta}$ from $x$ to $z$ and in $A_{\gamma}$ from $z$ to $y$; their concatenation is a path in the union from $x$ to $y$.
 :::
