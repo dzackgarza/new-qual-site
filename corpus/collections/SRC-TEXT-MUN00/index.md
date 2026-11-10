@@ -55,6 +55,38 @@ source:
       comment: Munkres §2.5
     - id: E-MUN-2-6
       comment: Munkres §2.6
+  - name: '3'
+    problems:
+    - id: E-MUN-3-1
+      comment: Munkres §3.1
+    - id: E-MUN-3-2
+      comment: Munkres §3.2
+    - id: E-MUN-3-3
+      comment: Munkres §3.3
+    - id: E-MUN-3-4
+      comment: Munkres §3.4
+    - id: E-MUN-3-5
+      comment: Munkres §3.5
+    - id: E-MUN-3-6
+      comment: Munkres §3.6
+    - id: E-MUN-3-7
+      comment: Munkres §3.7
+    - id: E-MUN-3-8
+      comment: Munkres §3.8
+    - id: E-MUN-3-9
+      comment: Munkres §3.9
+    - id: E-MUN-3-10
+      comment: Munkres §3.10
+    - id: E-MUN-3-11
+      comment: Munkres §3.11
+    - id: E-MUN-3-12
+      comment: Munkres §3.12
+    - id: E-MUN-3-13
+      comment: Munkres §3.13
+    - id: E-MUN-3-14
+      comment: Munkres §3.14
+    - id: E-MUN-3-15
+      comment: Munkres §3.15
   - name: '4'
     problems:
     - id: E-MUN-4-1
