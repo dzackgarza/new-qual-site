@@ -142,3 +142,11 @@ Step [](#generic-open-set){.pf-ref} constructs the required nonempty open subset
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 7.4, PDF p. 9: "by Ex.\ 5.4, any line not tangent to $Y$ and not passing through a singular point meets $Y$ in exactly $d$ distinct points. As $Y$ has only a finite number of singular points, the lines intersection at least one of these form a proper closed subset of $\PP^{2*}$ (in fact a union of lines). By 7.3 the lines tangent to $Y$ are also contained in a proper closed subset of $\PP^{2*}$, so there is a nonempty open subset $U$ of lines in $\PP^{2*}$ intersecting $Y$ in exactly $d$ points."
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), stops at §I.5 and gives no solution to 7.4.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.7.4, PDF p. 57: "using bezout, lines which meet $Y$ transversely at smooth points meet in degree $Y=d$ points; by noetherianness, the singular locus is a finite set of points on $Y$; the lines meeting one of these are a proper closed subset of $\PP^{2*}$; by 7.3, the tangent lines are contained in a proper closed subset of $\PP^{2*}$".
+Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.7.4, PDF p. 26: "by Bezout's Theorem, any line not tangent to $Y$ and not passing through a singular point meets $Y$ in exactly $d$ distinct points. Since $\operatorname{Sing}Y$ is closed and proper, the lines intersecting with $\operatorname{Sing}Y$ are closed in $(\PP^2)^*$. By ex 3, the tangent lines to $Y$ are contained in proper closed subsets of $(\PP^2)^*$, so there exists $U\ne\emptyset$ open in $(\PP^2)^*$ intersecting $Y$ in $d$ points."
+All three are the printed hint. Step [](#singular-lines-proper-closed){.pf-ref} supplies what they assert without argument, that the union of the dual lines is proper because it has dimension at most one in the dual plane; step [](#generic-line-meets-d-points){.pf-ref} supplies the inequality $(L.Y)_P\ge1$ with equality off the tangent, which turns the total multiplicity $d$ of I.5.4(c) into a count of distinct points; and the case $d=1$, where $Y$ itself is the one line to be excluded, is treated before the proof. Matches.
+:::

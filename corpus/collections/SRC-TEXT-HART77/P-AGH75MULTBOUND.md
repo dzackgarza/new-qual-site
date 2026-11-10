@@ -156,3 +156,11 @@ Steps [](#multiplicity-at-most-d){.pf-ref} and [](#multiplicity-d-reducible){.pf
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 7.5, PDF p. 9: (a) "we can assume that any point $P$ of multiplicity at least $d$ is $(0,0)$. But then the equation $f(x,y)$ defining $Y$ has all terms of degree exactly $d$, so it is a product of linear factors, which is not possible if $Y$ is irreducible of degree greater than $1$"; (b) "the equation defining $Y$ is of the form $f(x,y)+g(x,y)=0$ where $f$ is homogeneous of degree $d-1$ and $g$ is homogeneous of degree $d$. If we make the substitution $t=y/x$ we find that $y=-f(t,1)/g(t,1)$, $x=yt$ gives an inverse rational map so that $Y$ is birational to $\AA^1$."
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), stops at §I.5 and gives no solution to 7.5.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.7.5, PDF pp. 57--58: (a) "the degree can be read off the lowest term in the equation if the point is at $(0,0)$. If all terms have degree $d$, then it can't be irreducible of degree $>1$"; (b) "assume $Y$ is defined by $f(x,y)+g(x,y)=0$, with $\deg f=d-1$, $\deg g=d$; if $t=y/x$, then $(x,y)\mapsto\left(yt,-f(t,1)/g(t,1)\right)$ which is projection from a point gives an inverse rational map to $\AA^1$".
+Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.7.5, PDF p. 26: (a) is proved differently — "pick any line through the singular point $P$ of multiplicity $\ge d$ and any other point $Q$. Then $(C.L)=(C.L)_P+(C.L)_Q>d$, which contradicts Bezout's Theorem"; (b) the same substitution, "this is just the projection from a point and gives a birational map to $\AA^1$".
+(a) agrees in all three sets and with the card. For (b) the three display the inverse as the pair $(yt,-f(t,1)/g(t,1))$, a ratio in which the two coordinates are not homogeneous of the same degree, and none checks that the parametrized point lies on $Y$. Step [](#projection-birational){.pf-ref} writes it homogeneously as $[u f_{d-1}(u,v):v f_{d-1}(u,v):-f_d(u,v)]$ and verifies $F=0$ by substitution, which is the step the printed answers leave out. Matches.
+:::

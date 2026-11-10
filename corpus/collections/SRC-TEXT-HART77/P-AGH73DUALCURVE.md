@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $Y \subseteq \PP^2$ be a curve of degree greater than one.
+Let $Y \subseteq \PP^2$ be a curve.
 Regard the set of lines in $\PP^2$ as another projective space $\dualof{(\PP^2)}$, taking $(a_0, a_1, a_2)$ as homogeneous coordinates of the line
 $$
 L: a_0 x_0 + a_1 x_1 + a_2 x_2 = 0.
@@ -143,7 +143,16 @@ Step [](#dual-curve-closure){.pf-ref} identifies its closure with the dual curve
 :::
 
 ::: {.remark title="The line case"}
-Exercise I.7.3 is stated for an arbitrary plane curve, but its reference to the intersection multiplicity of Exercise I.5.4 requires the two curves to be distinct.
-If $Y$ is a line, its tangent line at every point is $Y$ itself, so $(Y.Y)_P$ is not defined by I.5.4. The gradient formula in step [](#gauss-map-morphism){.pf-ref} still defines the constant tangent map, whose image is the single point of $\dualof{(\PP^2)}$ representing $Y$.
-The degree-greater-than-one hypothesis above is therefore exactly what is needed for the exercise's literal intersection-multiplicity formulation.
+The exercise is printed for an arbitrary plane curve, and Exercise I.5.4 defines the intersection multiplicity $(Y\cdot Z)_P$ only for two distinct curves.
+If $Y$ is a line, then $F_0,F_1,F_2$ are constants, not all zero, and the line of step [](#tangent-line-formula){.pf-ref} is $Y$ itself at every $P\in Y$.
+The phrase "unique line whose intersection multiplicity with $Y$ at $P$ is $>1$" then has to be read against the lines $L\ne Y$: each of those meets $Y$ in the single point $P$, with multiplicity one, so the only line through $P$ whose intersection with $Y$ is not a single transverse point is $Y$ itself.
+The morphism of step [](#gauss-map-morphism){.pf-ref} is in that case the constant map to the point of $\dualof{(\PP^2)}$ representing $Y$, and the dual curve is that point.
+:::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 7.3, PDF p. 9: after reducing to $P=(0,0)$ and an equation $f(x,y)=y+(\text{terms of degree}\ge2)$, "by Ex.\ 5.4 the only line whose intersection multiplicity with $Y$ at $P$ is the line $y=0$"; in general the mapping takes $P$ to $(f_0(P):f_1(P):f_2(P))$ with $f_i=\partial f/\partial x_i$, "which is well defined as long as one of the $3$ numbers $f_i(P)$ is nonzero, i.e., the point $P$ is nonsingular".
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), stops at §I.5 and gives no solution to 7.3.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.7.3, PDF p. 57: the tangent line at $P=(a_0,a_1,a_2)$ as $\sum_i(\partial f/\partial x_i)(x_i-a_i)=0$, "if $P$ is nonsingular, then at least one partial is nonzero so it's well-defined hence unique"; then the linear term read off after translating $P$ to the origin, and "the only line with higher intersection multiplicity at $P$ is the $x$-axis, which incidentally is the linear part".
+Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.7.3, PDF p. 26: the same gradient line, "unique since $P$ is a nonsingular point"; the multiplicity as the highest power of $t$ in $F(t\alpha_1,t\alpha_2,t\alpha_3)$, and the mapping sending $P$ to the gradient of $f$ at $P$, well defined because $P$ is nonsingular.
+All three give the gradient formula and check that it is defined exactly on $\Reg Y$; none observes that I.5.4 is stated for two distinct curves, so for $Y$ a line the printed phrase about the intersection multiplicity of $Y$ with itself has no referent, and none discusses the line case. The card states the exercise as printed and carries that case in its remark. The uniqueness claim itself is proved in step [](#line-multiplicity-tangent-iff){.pf-ref} from the order of vanishing of the restricted equation, which the three sets assert from 5.4. Matches.
 :::
