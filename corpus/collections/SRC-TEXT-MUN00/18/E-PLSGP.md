@@ -12,14 +12,21 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §18 Exercise 1, printed p. 111, with the open set
+    definition of continuity on printed p. 102; the stored statement is the printed one. Its
+    epsilon glyph is lost in the text extraction, which the card records.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 18.1, PDF p. 11. The content is theirs: an
+    epsilon-ball round f(x_0) inside the open set V, and the delta-ball round x_0 that the
+    epsilon-delta condition supplies, which lies in the preimage. (tmp/sources/munkres-
+    solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -28,19 +35,17 @@ Prove that for functions $f: \RR \to \RR$, the $\epsilon$-$\delta$ definition of
 :::
 
 ::: {.solution}
-Assume the epsilon-delta definition. Let $V\subseteq\RR$ be open. We show $f^{-1}(V)$ is open.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.1, PDF p. 11** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the argument is theirs, and Whitman's printed p. 179 is the same proof phrased through Theorem 18.1(4). (The symbol for $\varepsilon$ in the stored statement of the exercise is a lost glyph in the extraction; it is $\varepsilon$.)
 
-Take $x\in f^{-1}(V)$. Since $f(x)\in V$ and $V$ is open, choose $\varepsilon>0$ with
+Let $f:\RR\to\RR$ be continuous in the $\varepsilon$-$\delta$ sense, that is: for every $x_{0}$ and every $\varepsilon>0$ there is $\delta>0$ such that $\abs{x-x_{0}}<\delta$ implies $\abs{f(x)-f(x_{0})}<\varepsilon$.
+
+Let $V\subset\RR$ be open. If $f^{-1}(V)=\varnothing$ it is open; otherwise let $x_{0}\in f^{-1}(V)$, so $f(x_{0})\in V$. Since $V$ is open there is $\varepsilon>0$ with
 $$
-(f(x)-\varepsilon,f(x)+\varepsilon)\subseteq V.
+(f(x_{0})-\varepsilon,\ f(x_{0})+\varepsilon)\subset V .
 $$
-By epsilon-delta continuity at $x$, there is $\delta>0$ such that
+Choose $\delta>0$ as above for this $\varepsilon$. Then for every $x\in(x_{0}-\delta,x_{0}+\delta)$ we have $\abs{f(x)-f(x_{0})}<\varepsilon$, that is $f(x)\in V$, so
 $$
-\abs{t-x}<\delta\implies \abs{f(t)-f(x)}<\varepsilon.
+x_{0}\in(x_{0}-\delta,x_{0}+\delta)\subset f^{-1}(V).
 $$
-Thus
-$$
-(x-\delta,x+\delta)\subseteq f^{-1}(V).
-$$
-Every point of $f^{-1}(V)$ therefore has an open interval contained in $f^{-1}(V)$, so $f^{-1}(V)$ is open. Hence $f$ is continuous in the open-set sense.
+Hence every point of $f^{-1}(V)$ is an interior point and $f^{-1}(V)$ is open. As $V$ was an arbitrary open set, $f$ is continuous in the open set definition.
 :::
