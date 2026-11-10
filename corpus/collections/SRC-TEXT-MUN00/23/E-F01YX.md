@@ -13,14 +13,21 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §23 Exercise 10, printed p. 152, with Theorem
+    23.3, Theorem 23.4 and Theorem 23.6; the three parts are stored as printed.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 23.10, PDF p. 3. The subspace of points fixed off
+    a finite set of coordinates is homeomorphic to a finite product, hence connected; their
+    union is connected since they share the base point; and the union is dense because a
+    product basis element constrains only finitely many coordinates, so Theorem 23.4
+    applies. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -42,22 +49,13 @@ Show that $X_K$ is connected.
 :::
 
 ::: {.solution}
-(a) For finite $K\subseteq J$, the space $X_K$ is naturally homeomorphic to
-$$
-\prod_{\alpha\in K}X_\alpha
-$$
-by forgetting the fixed coordinates. A finite product of connected spaces is connected, so $X_K$ is connected.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.10, PDF p. 3** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all three parts are theirs.
 
-(b) Every $X_K$ contains the fixed point $\mathbf a$. Hence the union
-$$
-Y=\bigcup_{K\subseteq J,\ K\text{ finite}}X_K
-$$
-is a union of connected sets with a common point, and is therefore connected.
+Let $X=\prod_{\alpha\in J}X_{\alpha}$ with each $X_{\alpha}$ connected, fix $\mathbf{a}\in X$, and for finite $K\subset J$ let $X_{K}=\{\mathbf{x}\mid x_{\alpha}=a_{\alpha}\ \text{for}\ \alpha\notin K\}$.
 
-(c) Let $U$ be a nonempty basic open set of the product $X$. It restricts only finitely many coordinates, say those in $K$. Choose $x\in U$ and define $y$ by
-$$
-y_\alpha=x_\alpha\quad(\alpha\in K),\qquad
- y_\alpha=a_\alpha\quad(\alpha\notin K).
-$$
-Then $y\in U\cap X_K\subseteq U\cap Y$. Thus every nonempty basic open set meets $Y$, so $\overline Y=X$. The closure of a connected set is connected, hence $X$ is connected.
+(a) If $K=\{\alpha_{1},\dots,\alpha_{n}\}$, the map $X_{K}\to X_{\alpha_{1}}\times\cdots\times X_{\alpha_{n}}$, $\mathbf{x}\mapsto(x_{\alpha_{1}},\dots,x_{\alpha_{n}})$, is a homeomorphism (it is a bijective continuous map with continuous inverse given by inserting the $a_{\alpha}$). The finite product is connected by Theorem 23.6, hence so is $X_{K}$.
+
+(b) All the $X_{K}$ contain $\mathbf{a}$, so their union $Y$ is connected by Theorem 23.3.
+
+(c) Let $\mathbf{x}\in X$ and let $U=\prod U_{\alpha}$ be a product basis element containing $\mathbf{x}$, with $U_{\alpha}=X_{\alpha}$ except for $\alpha\in K$, $K$ finite. Define $\mathbf{y}$ by $y_{\alpha}=x_{\alpha}$ for $\alpha\in K$ and $y_{\alpha}=a_{\alpha}$ otherwise; then $\mathbf{y}\in X_{K}\subset Y$, and $\mathbf{y}\in U$ because $y_{\alpha}=x_{\alpha}\in U_{\alpha}$ on $K$ and $y_{\alpha}=a_{\alpha}\in U_{\alpha}=X_{\alpha}$ off $K$. So every neighbourhood of $\mathbf{x}$ meets $Y$ and $\mathbf{x}\in\overline Y$. Hence $X=\overline Y$, and by Theorem 23.4 (with $Y\subset X\subset\overline Y$) $X$ is connected.
 :::
