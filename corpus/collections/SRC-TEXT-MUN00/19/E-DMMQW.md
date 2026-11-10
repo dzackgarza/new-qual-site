@@ -13,14 +13,23 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §19 Exercise 1, printed p. 118, whose content is
+    Theorem 19.2 on printed p. 115, with Theorem 19.1 and Lemma 13.2; the stored statement
+    is the printed request and states the theorem.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise 19.1, printed p. 189.
+    The content is his: the products of basis elements are open in the box and product
+    topologies, and through every point of an open set one can shrink a basis element of the
+    space into the given basis element in each coordinate, so Lemma 13.2 applies.
+    positron0802 PDF p. 14 checks the two basis conditions directly instead.
+    (tmp/sources/munkres-solutions-whitman.pdf).
 ---
 
 ::: {.exercise}
@@ -30,24 +39,23 @@ The collection of all sets of the form $\prod_{\alpha \in J} B_\alpha$, where $B
 :::
 
 ::: {.solution}
-For the box topology, let
-$$
-\mathcal B=\left\{\prod_{\alpha\in J}B_\alpha:B_\alpha\in\mathcal B_\alpha\right\}.
-$$
-It covers the product because each $\mathcal B_\alpha$ covers $X_\alpha$. If
-$$
-x\in\prod B_\alpha\cap\prod C_\alpha,
-$$
-then for every $\alpha$, because $\mathcal B_\alpha$ is a basis, there is $D_\alpha\in\mathcal B_\alpha$ such that
-$$
-x_\alpha\in D_\alpha\subseteq B_\alpha\cap C_\alpha.
-$$
-Hence
-$$
-x\in\prod D_\alpha\subseteq\left(\prod B_\alpha\right)\cap\left(\prod C_\alpha\right),
-$$
-so $\mathcal B$ is a basis.
-Each member of $\mathcal B$ is a product of open sets, hence box-open. Conversely, if $x\in\prod U_\alpha$ with each $U_\alpha$ open, choose $B_\alpha\in\mathcal B_\alpha$ with $x_\alpha\in B_\alpha\subseteq U_\alpha$; then $x\in\prod B_\alpha\subseteq\prod U_\alpha$. So every box-open set is a union of members of $\mathcal B$, and $\mathcal B$ generates the box topology.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.1, printed p. 189** (`tmp/sources/munkres-solutions-whitman.pdf`); the argument is his. "positron0802", *Solutions to Topology, Chapter 2*, Exercise 19.1, PDF p. 14, checks the two basis conditions directly instead.
 
-For the product topology, let $\mathcal B'$ consist of the products $\prod B_\alpha$ with $B_\alpha\in\mathcal B_\alpha$ for $\alpha$ in a finite set $F$ and $B_\alpha=X_\alpha$ for $\alpha\notin F$. It covers the product. If $x\in\prod B_\alpha\cap\prod C_\alpha$ with finite index sets $F$ and $G$, choose $D_\alpha\in\mathcal B_\alpha$ with $x_\alpha\in D_\alpha\subseteq B_\alpha\cap C_\alpha$ for $\alpha\in F\cup G$, and put $D_\alpha=X_\alpha$ otherwise; then $\prod D_\alpha\in\mathcal B'$ and $x\in\prod D_\alpha\subseteq\prod B_\alpha\cap\prod C_\alpha$. So $\mathcal B'$ is a basis. Its members are basic product-open sets. If $x\in\prod U_\alpha$ with $U_\alpha$ open and $U_\alpha=X_\alpha$ outside a finite set $F$, choose $B_\alpha\in\mathcal B_\alpha$ with $x_\alpha\in B_\alpha\subseteq U_\alpha$ for $\alpha\in F$ and $B_\alpha=X_\alpha$ otherwise; then $x\in\prod B_\alpha\subseteq\prod U_\alpha$. Hence $\mathcal B'$ generates the product topology.
+Let $\mathcal{B}_{\alpha}$ be a basis for the topology of $X_{\alpha}$, and let
+$$
+\mathcal{C}=\Big\{\textstyle\prod_{\alpha\in J}B_{\alpha}\ \mid\ B_{\alpha}\in\mathcal{B}_{\alpha}\Big\},
+$$
+with the extra requirement $B_{\alpha}=X_{\alpha}$ for all but finitely many $\alpha$ in the case of the product topology.
+
+*$\mathcal{C}$ consists of open sets.* Each $B_{\alpha}$ is open in $X_{\alpha}$, so $\prod B_{\alpha}$ is a basis element of the box topology by definition, and in the product case it is a basis element of the product topology because $B_{\alpha}=X_{\alpha}$ for all but finitely many $\alpha$ (Theorem 19.1, printed p. 114). So every member of $\mathcal{C}$ is open.
+
+*$\mathcal{C}$ is a basis for the topology.* Let $U$ be open in the box (respectively product) topology and let $x\in U$; we find $C\in\mathcal{C}$ with $x\in C\subset U$. By the definition of the box (respectively product) topology there is a basis element $\prod U_{\alpha}$ with
+$$
+x\in\prod U_{\alpha}\subset U,
+$$
+where each $U_{\alpha}$ is open in $X_{\alpha}$ and, in the product case, $U_{\alpha}=X_{\alpha}$ for all but finitely many $\alpha$. Since $\mathcal{B}_{\alpha}$ is a basis, for each $\alpha$ there is $B_{\alpha}\in\mathcal{B}_{\alpha}$ with $x_{\alpha}\in B_{\alpha}\subset U_{\alpha}$; when $U_{\alpha}=X_{\alpha}$ take $B_{\alpha}=X_{\alpha}$. Then $C=\prod B_{\alpha}$ lies in $\mathcal{C}$ (in the product case $B_{\alpha}=X_{\alpha}$ wherever $U_{\alpha}=X_{\alpha}$, hence for all but finitely many $\alpha$), and
+$$
+x\in C=\prod B_{\alpha}\subset\prod U_{\alpha}\subset U .
+$$
+By Lemma 13.2 (printed p. 80) a collection of open sets through which every neighbourhood of every point can be shrunk is a basis for the topology. Hence $\mathcal{C}$ is a basis for the box topology, respectively for the product topology.
 :::
