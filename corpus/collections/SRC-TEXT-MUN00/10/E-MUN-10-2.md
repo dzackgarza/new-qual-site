@@ -12,15 +12,21 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
-  note: Checked against Munkres, Topology, 2nd ed., Chapter 1, Section 10, Exercise 2; the stored statement matches.
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §10 Exercise 2, printed p. 67; both parts are
+    stored as printed.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise 10.2, printed p. 108.
+    (a) is his: the set of elements above a is nonempty because a is not the largest, and
+    its smallest element has nothing strictly between it and a. (b) is his example Z with
+    the usual order, in which n+1 is an immediate successor of n, while the negative
+    integers have no smallest element.
 ---
 
 ::: {.exercise}
@@ -31,15 +37,13 @@ audit:
 :::
 
 ::: {.solution}
-(a) Let $a$ be an element of the well-ordered set $A$ that is not largest. Then
-$$
-B=\{x\in A:a<x\}
-$$
-is nonempty. Let $s$ be its smallest element. Then $a<s$, and there is no $x$ with
-$$
-a<x<s,
-$$
-for such an $x$ would belong to $B$ and be smaller than $s$. Hence $s$ is the immediate successor of $a$.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 10.2, printed p. 108** (`tmp/sources/munkres-solutions-whitman.pdf`); both parts are his.
 
-(b) The integers $\ZZ$ with their usual order are not well-ordered, since $\ZZ$ itself has no smallest element. Nevertheless every $n\in\ZZ$ has the immediate successor $n+1$.
+(a) Let $A$ be well ordered by $<$ and let $a\in A$ be an element that is not the largest. Then some $x\in A$ satisfies $a<x$, so
+$$
+X=\{y\in A\mid a<y\}
+$$
+is a nonempty subset of $A$ and has a smallest element $b$. Since $b\in X$ we have $a<b$. If $z\in A$ satisfied $a<z<b$, then $z\in X$ and $z<b$, contradicting the minimality of $b$ in $X$. Hence there is no element of $A$ strictly between $a$ and $b$: the element $b$ is an immediate successor of $a$.
+
+(b) Take $A=\ZZ$ with the usual order. For every $n\in\ZZ$ the integer $n+1$ satisfies $n<n+1$, and there is no integer strictly between $n$ and $n+1$, so $n+1$ is an immediate successor of $n$; thus every element of $\ZZ$ has an immediate successor. But $\ZZ$ is not well ordered: the set $\ZZ_{-}$ of negative integers is a nonempty subset of $\ZZ$ with no smallest element.
 :::
