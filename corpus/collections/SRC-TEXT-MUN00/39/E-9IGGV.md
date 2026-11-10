@@ -15,6 +15,17 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    No complete published solution was located for this exercise, so the proof is checked line by line
+    against the book and the search is recorded in the COMPLAINTS.md entry for §39--§42 of SRC-TEXT-MUN00.
+    Searched: the sets listed in that entry --- Aleksey Zinger's MAT 530 sheets, the *Praying For Stockholm*
+    posts, Moller's S38, the Riverside Math 205A solutions, Orellana, Doug's World, Whitman,
+    "positron0802", "shenapse", "9beach", "kyp44", the seven further GitHub manuals, dbfin and Gardner's
+    ETSU notes --- none of which solves this exercise.
+    Checked against Munkres, Topology (2000), Section 39 Exercise 3, printed p. 247, with Lemma 39.1(b) (the closures of a locally finite family are locally finite) and its converse, which is what the exercise tests. No correction was needed; the example is the card's own, a family of sets with a single point removed from a common open interval, whose closures all coincide.
 ---
 
 ::: {.exercise}

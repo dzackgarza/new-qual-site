@@ -21,6 +21,24 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "Feryll", *Praying For Stockholm*, "Countable Local
+    Finiteness (6.39.5-6)" (26 December 2014),
+    http://feryll.blogspot.com/2014/12/countable-local-finiteness-6395-6.html, read 2026-11-10; cited by
+    URL and date read, since a web page has no printed page, and attributed to the handle the post
+    carries. Checked against Munkres, Topology (2000), Section 39 Exercise 6, printed p. 247, and §20's
+    uniform metric. The post's argument is the card's: two distinct members of the family of sets with a
+    prescribed binary tail differ in some coordinate above the n-th, hence are at distance 1 in the
+    uniform metric, so a small ball meets at most one of them; the family is uncountable because the
+    binary tails are, and it is not locally finite at 0 because the sets R^n x prod_{i>n}{0} all contain
+    0. What was corrected: the post uses the 1/2-neighbourhood and states the separation in the words
+    "the 1/2-neighborhood of any element intersects at most one element", which does not follow from
+    distance 1 without the triangle inequality; the card uses the ball of radius 1/3 and derives the
+    uniqueness of the member met from the coordinates. The post's non-local-finiteness witness is the
+    point 1^omega; the card uses 0, which is the same argument.
 ---
 
 ::: {.exercise}
