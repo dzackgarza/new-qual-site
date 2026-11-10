@@ -12,9 +12,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §26 Exercise 7, printed p. 171, with the tube
+    lemma; the stored statement is the printed sentence.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 26.7, PDF p. 13. A point outside the image gives a
+    slice disjoint from the closed set, and the tube lemma produces a neighbourhood of it
+    disjoint from the image. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -23,86 +34,7 @@ Show that if $Y$ is compact, then the projection $\pi_1: X \times Y \to X$ is a 
 :::
 
 ::: {.solution}
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.7, PDF p. 13** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the tube-lemma argument is theirs.
 
-::: pf
-
-::: pf-step
-Setting and reduction to complement:
-Let $C \subseteq X \times Y$ be a closed set.
-We must show that $\pi_1(C)$ is closed in $X$, or equivalently, that $X \setminus \pi_1(C)$ is open in $X$.
-:::
-
-::: {.pf-step #tube-lemma-application}
-Application of the Tube Lemma:
-Let $x_0 \in X \setminus \pi_1(C)$.
-Then the entire slice $\{x_0\} \times Y$ is contained in the open set $W = (X \times Y) \setminus C$.
-There exists an open neighborhood $U \subseteq X$ of $x_0$ such that $U \times Y \subseteq W$.
-
-::: pf-proof
-
-::: pf-step
-For each $y \in Y$, $(x_0, y) \in W$.
-:::
-
-::: pf-step
-By definition of the product topology, there exist open sets $U_y \subseteq X$ and $V_y \subseteq Y$ such that $(x_0, y) \in U_y \times V_y \subseteq W$.
-:::
-
-::: pf-step
-The family $\{V_y\}_{y \in Y}$ is an open cover of the compact space $Y$.
-:::
-
-::: pf-step
-Hence there exists a finite subcover $\{V_{y_1}, \dots, V_{y_k}\}$ of $Y$.
-:::
-
-::: pf-step
-Define $U = \bigcap_{i=1}^k U_{y_i}$. As a finite intersection of open neighborhoods of $x_0$, $U$ is an open neighborhood of $x_0$ in $X$.
-:::
-
-::: pf-step
-For each $i \in \{1, \dots, k\}$, $U \times V_{y_i} \subseteq U_{y_i} \times V_{y_i} \subseteq W$.
-:::
-
-::: pf-step
-Taking the union over $i = 1, \dots, k$:
-$$U \times Y = U \times \left( \bigcup_{i=1}^k V_{y_i} \right) = \bigcup_{i=1}^k (U \times V_{y_i}) \subseteq W.$$
-:::
-
-:::
-
-:::
-
-::: pf-step
-Openness of the complement:
-
-::: pf-proof
-
-::: pf-step
-By step [](#tube-lemma-application){.pf-ref}, $(U \times Y) \cap C = \varnothing$.
-:::
-
-::: pf-step
-Projecting to $X$, no point of $U$ can be the first coordinate of any point in $C$, so $U \cap \pi_1(C) = \varnothing$.
-:::
-
-::: pf-step
-Thus $x_0 \in U \subseteq X \setminus \pi_1(C)$.
-:::
-
-::: pf-step
-Since $x_0$ was an arbitrary point of $X \setminus \pi_1(C)$, the set $X \setminus \pi_1(C)$ is open in $X$.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Conclusion:
-$\pi_1(C)$ is closed in $X$, so $\pi_1$ is a closed map. Q.E.D.
-:::
-
-:::
-
+Let $Y$ be compact, $C\subset X\times Y$ closed, and $x_{0}\notin\pi_{1}(C)$. The slice $x_{0}\times Y$ is compact (it is homeomorphic with $Y$) and lies in the open set $(X\times Y)-C$, so by the tube lemma it has a tube $W\times Y\subset(X\times Y)-C$ with $W$ a neighbourhood of $x_{0}$. Then $W\cap\pi_{1}(C)=\varnothing$, so $\pi_{1}(C)$ is closed. Hence $\pi_{1}$ is a closed map.
 :::
