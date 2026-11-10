@@ -15,6 +15,26 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    No complete published solution was located for this exercise, so the proof has been checked line by
+    line against the book and the search is recorded in the COMPLAINTS.md entry for §37--§42 of
+    SRC-TEXT-MUN00. Searched: Aleksey Zinger, "MAT 530" Problem Sets 2-9 (Chapter 5 and 6 items: p235 #1,
+    p236 #5, p260 #2, p260 #7 only); "Solutions to exercises in Munkres", file S38.pdf (Exercise 38.4
+    onwards, so nothing in §37); "Solutions to exercises for Mathematics 205A" (UC Riverside, Fall 2014),
+    section VI.4; Orellana (§37 selection), Doug's World (Chapter 4), Whitman (to §22), "positron0802"
+    (Chapters 2 and 3), "shenapse" (§1--§11), "9beach" (§1--§4), "kyp44" (§1--§22); and the dbFin pages,
+    which have no chapter-5 or chapter-6 section; Engelking's General Topology, which proves the theorem,
+    is not among the retained files. Checked against Munkres, Topology (2000), Section 37 Exercise 4 and
+    its printed Theorem, printed p. 236, with Theorem 26.2 (a closed subspace of a compact space is
+    compact), the finite intersection property of closed subsets of a compact space (Theorem 26.9), and
+    Theorem 32.3 or Theorem 26.3 (compact Hausdorff spaces are normal). The steps that carry the argument
+    are: (a) normality separates the two closed pieces of a putative separation of the intersection, and
+    compactness makes one chain member miss their union; (c) the smaller closed set inherits the
+    quasicomponent relation because a separation of it would combine with the discarded piece to separate
+    x from y in D. No correction was needed.
 ---
 
 ::: {.exercise}

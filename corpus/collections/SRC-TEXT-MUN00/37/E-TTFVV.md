@@ -11,6 +11,25 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    No complete published solution was located for this exercise, so the proof has been checked line by
+    line against the book and the search is recorded in the COMPLAINTS.md entry for §37--§42 of
+    SRC-TEXT-MUN00. Searched: Aleksey Zinger, "MAT 530" Problem Sets 2-9 (the only problems of Chapter 5
+    or 6 among them are Munkres p235 #1, p236 #5, p260 #2 and p260 #7); "Solutions to exercises in
+    Munkres", file S38.pdf (Exercise 38.4 onwards); "Solutions to exercises for Mathematics 205A" (UC
+    Riverside, Fall 2014), section VI.4 (§38 Exercises 2 and 3); Orellana (whose §37 selection does not
+    include this exercise), Doug's World (Chapter 4), Whitman (to §22), "positron0802" (Chapters 2 and 3),
+    "shenapse" (§1--§11), "9beach" (§1--§4), "kyp44" (§1--§22); and the dbFin pages, which have no
+    chapter-5 or chapter-6 section. Checked against Munkres, Topology (2000), Section 37 Exercise 2,
+    printed p. 235, Definition of Lindelof and De Morgan's laws: from a countable subcover of the
+    complements of the closures one gets a countable subfamily with empty intersection, and conversely an
+    open cover with no countable subcover gives a family of closed sets with the countable intersection
+    property and empty intersection. No correction was needed; the proof uses closedness only in the
+    converse direction, where the exercise's arbitrary subsets are replaced by their closures.
 ---
 
 ::: {.exercise}

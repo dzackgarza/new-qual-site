@@ -15,6 +15,26 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    No complete published solution was located for this exercise, so the proof has been checked line by
+    line against the book and the search is recorded in the COMPLAINTS.md entry for §37--§42 of
+    SRC-TEXT-MUN00. Searched: Aleksey Zinger, "MAT 530" Problem Sets 2-9 (Chapter 5 and 6 items: p235 #1,
+    p236 #5, p260 #2, p260 #7 only); "Solutions to exercises in Munkres", file S38.pdf (Exercise 38.4
+    onwards); "Solutions to exercises for Mathematics 205A" (UC Riverside, Fall 2014), section VI.4;
+    Orellana (§37 selection), Doug's World (Chapter 4), Whitman (to §22), "positron0802" (Chapters 2 and
+    3), "shenapse" (§1--§11), "9beach" (§1--§4), "kyp44" (§1--§22); and the dbFin pages, which have no
+    chapter-5 or chapter-6 section. Checked against Munkres, Topology (2000), Section 37 Exercise 3,
+    printed p. 235, with Lemma 37.2 for the finite case, Exercise 37.2 for the passage from the countable
+    intersection property of the projections to a point of their closures' intersection, and Exercise 30.9
+    (a closed subspace of a Lindelof space is Lindelof) for the failure of (iii) at the Sorgenfrey plane,
+    whose antidiagonal is an uncountable closed discrete subspace. What was corrected: part (c) said that
+    the products' failure is "for the Sorgenfrey plane" without saying why the plane is not Lindelof; the
+    card now names the antidiagonal. No other correction was needed; the Zorn step's failure is the
+    sheet-free argument on the card, namely that a countable intersection in the union of a chain may use
+    one element from each member of the chain.
 ---
 
 ::: {.exercise}
@@ -190,7 +210,7 @@ a countable intersection of elements of the union may involve one element from e
 :::
 
 ::: {.pf-step #i-fails}
-Hence this Zorn argument cannot establish (i). Since (ii) holds but (iii) fails for the Sorgenfrey plane, part (a) also proves that (i) itself is false.
+Hence this Zorn argument cannot establish (i). Now (iii) fails: the Sorgenfrey line is Lindelöf, while its square is not, because its antidiagonal is an uncountable closed discrete subspace and a closed subspace of a Lindelöf space is Lindelöf (Exercise 30.9) whereas an uncountable discrete space is not. Since (ii) holds, part (a) then proves that (i) itself is false.
 
 ::: pf-proof
 Step [](#breakdown-in-zorn-step){.pf-ref}, together with parts (a) and (b) and the non-Lindelöf Sorgenfrey plane.

@@ -19,6 +19,24 @@ audit:
   by: gpt-6.1-sol
   date: 2026-10-31
   note: 'Part (a) requires a predecessor index, so the least index is excluded. The empty product case is treated separately.'
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Aleksey Zinger, "MAT 530: Topology & Geometry, I",
+    Fall 2005, Problem Set 4, "Solution to Problem p236, #5", PDF pp. 2-3
+    (tmp/sources/munkres-solutions-zinger-mat530-ps4.pdf, downloaded from
+    https://www.math.stonybrook.edu/~azinger/mat530/ps4sol.pdf; the sheet carries no printed page
+    numbers, so the PDF page is the locator). Checked against Munkres, Topology (2000), Section 37
+    Exercise 5, printed pp. 236-237, together with Theorem 26.7 (a product with a compact factor) and the
+    tube lemma of §26, whose slice form the exercise prints. The sheet proves the printed Lemma, part (a)
+    by the finite set of coordinates $\bigcup_{A\in\mathcal A_0}J_A$ and part (b) by transfinite induction
+    on the well-ordered index set, the maximal index giving the single point $Y_\Omega$ that one element
+    of $\mathcal A$ must cover. The card's proof is the sheet's; what was corrected is the case in which
+    $\bigcup J_A$ is empty, where the sheet splits off the case that $\beta$ has an immediate predecessor
+    and the card takes $\alpha$ to be any index below $\beta$. The card's proof of the printed Lemma also
+    records that compactness of $Y$ is not used. Not checked here: the sheet's account of the transfinite
+    recursion leaves the induction step to the reader, as the exercise does.
 ---
 
 ::: {.exercise}
