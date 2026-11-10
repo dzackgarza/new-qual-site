@@ -12,14 +12,19 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §24 Exercise 3, printed p. 158, with Theorem
+    24.3; both the fixed point request and the question are stored as printed.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 24.3, PDF p. 4. f(x) - x changes sign on [0,1]
+    unless an endpoint is fixed, and the halving maps on (0,1) and on [0,1) have no fixed
+    point. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -31,19 +36,9 @@ What happens if $X$ equals $[0, 1)$ or $(0, 1)$?
 :::
 
 ::: {.solution}
-For $X=[0,1]$, define
-$$
-g(x)=f(x)-x.
-$$
-This is continuous. Since $f(0)\in[0,1]$ and $f(1)\in[0,1]$,
-$$
-g(0)=f(0)\ge0,\qquad g(1)=f(1)-1\le0.
-$$
-By the intermediate value theorem, $g(c)=0$ for some $c\in[0,1]$, hence $f(c)=c$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.3, PDF p. 4** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the fixed-point argument and both counterexamples are theirs, with the second counterexample written with its formula.
 
-The conclusion fails for $[0,1)$ and $(0,1)$. In either case the map
-$$
-f(x)=\frac{x+1}{2}
-$$
-maps the space into itself and satisfies $f(x)>x$ for every $x<1$, so it has no fixed point.
+Let $f:[0,1]\to[0,1]$ be continuous and put $g(x)=f(x)-x$. Then $g$ is continuous; if $f(0)=0$ or $f(1)=1$ we are done, and otherwise $f(0)>0$ and $f(1)<1$, so $g(0)>0>g(1)$. By the intermediate value theorem on the connected space $[0,1]$ there is $x\in(0,1)$ with $g(x)=0$, that is $f(x)=x$.
+
+The hypothesis that the interval is closed is needed. On $(0,1)$ the map $x\mapsto x/2$ is continuous into $(0,1)$ with no fixed point: $x/2=x$ forces $x=0\notin(0,1)$. On $[0,1)$ the map $x\mapsto x/2+1/2$ is continuous into $[0,1)$ and has no fixed point: $x/2+1/2=x$ forces $x=1\notin[0,1)$.
 :::
