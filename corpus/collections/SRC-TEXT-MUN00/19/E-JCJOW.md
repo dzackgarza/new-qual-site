@@ -12,14 +12,21 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §19 Exercise 9, printed p. 118, with the choice
+    axiom and Lemma 9.2 in §9; the stored statement is the printed equivalence.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise 19.9, printed p. 197.
+    Both directions are his: a choice function evaluated at the members of the family is an
+    element of the product, and from an element of the product of a disjoint family the set
+    of its coordinates meets each member in exactly one point. (tmp/sources/munkres-
+    solutions-whitman.pdf).
 ---
 
 ::: {.exercise}
@@ -34,15 +41,9 @@ is not empty.
 :::
 
 ::: {.solution}
-Assume the axiom of choice. Given a family $\{A_\alpha\}_{\alpha\in J}$ of nonempty sets, choice supplies a function $c:J\to\bigcup_\alpha A_\alpha$ with
-$$
-c(\alpha)\in A_\alpha
-$$
-for every $\alpha$. This is exactly an element $(c(\alpha))_{\alpha\in J}$ of the Cartesian product, so the product is nonempty.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.9, printed p. 197** (`tmp/sources/munkres-solutions-whitman.pdf`); both directions are his.
 
-Conversely, assume every product of a family of nonempty sets is nonempty. Given any family $\{A_\alpha\}_{\alpha\in J}$ of nonempty sets, choose an element
-$$
-(a_\alpha)_{\alpha\in J}\in\prod_{\alpha\in J}A_\alpha.
-$$
-Then $c(\alpha)=a_\alpha$ is a choice function. Hence the product-nonemptiness statement is equivalent to the axiom of choice.
+**Choice axiom implies nonempty products.** Let $\{A_{\alpha}\}_{\alpha\in J}$ be an indexed family of nonempty sets with $J\ne\varnothing$. By the choice axiom in the form of Lemma 9.2 (printed p. 60) there is a choice function $c$ on the collection $\mathcal{A}=\{A_{\alpha}\mid\alpha\in J\}$ with $c(A)\in A$ for every $A\in\mathcal{A}$. Put $x_{\alpha}=c(A_{\alpha})$; then $x_{\alpha}\in A_{\alpha}$ for every $\alpha$, so $\mathbf{x}=(x_{\alpha})_{\alpha\in J}$ is an element of $\prod_{\alpha\in J}A_{\alpha}$.
+
+**Nonempty products imply the choice axiom.** Let $\mathcal{A}$ be a collection of pairwise disjoint nonempty sets with $\mathcal{A}\ne\varnothing$. The family $\{A\}_{A\in\mathcal{A}}$ indexed by $\mathcal{A}$ consists of nonempty sets and its index set is nonempty, so by hypothesis $\prod_{A\in\mathcal{A}}A\ne\varnothing$: there is $(x_{A})_{A\in\mathcal{A}}$ with $x_{A}\in A$ for each $A$. Let $C=\{x_{A}\mid A\in\mathcal{A}\}\subset\bigcup_{A\in\mathcal{A}}A$. For $A\in\mathcal{A}$ we have $x_{A}\in C\cap A$, so $C\cap A\ne\varnothing$; and if $y\in C\cap A$ then $y=x_{B}$ for some $B\in\mathcal{A}$, so $x_{B}\in A$; but $x_{B}\in B$ and, if $B\ne A$, the disjointness of distinct members would be contradicted. Hence $B=A$ and $y=x_{A}$. So $C\cap A=\{x_{A}\}$ for every $A\in\mathcal{A}$: $C$ consists of exactly one element from each member of $\mathcal{A}$, which is the choice axiom.
 :::
