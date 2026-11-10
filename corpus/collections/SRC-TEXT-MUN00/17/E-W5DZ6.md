@@ -13,14 +13,20 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §17 Exercise 9, printed p. 101, with Theorem 17.5
+    and the product topology of §15; the stored statement is the printed equation.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise 17.9, printed p. 164.
+    Both inclusions are his and are proved with product basis elements, which is what the
+    product topology requires in place of neighbourhood bases. (tmp/sources/munkres-
+    solutions-whitman.pdf).
 ---
 
 ::: {.exercise}
@@ -34,20 +40,9 @@ $$
 :::
 
 ::: {.solution}
-First, $A\times B\subseteq\overline A\times\overline B$, and the latter set is closed by [[E-PBT3I]]. Hence
-$$
-\overline{A\times B}\subseteq\overline A\times\overline B.
-$$
-For the reverse inclusion, let $(x,y)\in\overline A\times\overline B$. A basic neighborhood of $(x,y)$ has the form $U\times V$ with $x\in U$, $y\in V$. Since $x\in\overline A$ and $y\in\overline B$,
-$$
-U\cap A\neq\varnothing,\qquad V\cap B\neq\varnothing.
-$$
-Choose $a\in U\cap A$ and $b\in V\cap B$. Then $(a,b)\in(U\times V)\cap(A\times B)$. Thus every basic neighborhood of $(x,y)$ meets $A\times B$, so
-$$
-(x,y)\in\overline{A\times B}.
-$$
-Therefore
-$$
-\boxed{\overline{A\times B}=\overline A\times\overline B}.
-$$
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.9, printed p. 164** (`tmp/sources/munkres-solutions-whitman.pdf`); both inclusions are his.
+
+*$\overline{A\times B}\subset\overline{A}\times\overline{B}$.* Let $(x,y)\in\overline{A\times B}$ and let $U$, $V$ be open in $X$, $Y$ with $x\in U$, $y\in V$. The set $U\times V$ is a basis element of $X\times Y$ containing $(x,y)$, so it meets $A\times B$: there are $w\in A$, $z\in B$ with $(w,z)\in U\times V$. Then $w\in U\cap A$ and $z\in V\cap B$; as $U$ and $V$ were arbitrary, $x\in\overline{A}$ and $y\in\overline{B}$.
+
+*$\overline{A}\times\overline{B}\subset\overline{A\times B}$.* Let $x\in\overline{A}$, $y\in\overline{B}$, and let $U\times V$ be a basis element of $X\times Y$ containing $(x,y)$, with $U$ open in $X$ and $V$ open in $Y$. Since $x\in\overline{A}$, there is $w\in U\cap A$, and since $y\in\overline{B}$, there is $z\in V\cap B$. Then $(w,z)\in(U\times V)\cap(A\times B)$, so every basis element at $(x,y)$ meets $A\times B$ and $(x,y)\in\overline{A\times B}$.
 :::
