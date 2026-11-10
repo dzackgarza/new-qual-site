@@ -41,7 +41,7 @@ audit:
 
 ::: {.problem}
 Let $\varphi$ be the quadratic transformation of $(4.2.3)$, centered at $P_1, P_2, P_3$.
-If $C$ is an irreducible curve of degree $d$ in $\PP^2$, distinct from the three lines joining pairs of $P_1,P_2,P_3$, and with points of multiplicity $r_1, r_2, r_3$ at $P_1, P_2, P_3$, then the strict transform $C^{\prime}$ of $C$ by $\varphi$ has degree
+If $C$ is an irreducible curve of degree $d$ in $\PP^2$, with points of multiplicity $r_1, r_2, r_3$ at $P_1, P_2, P_3$, then the strict transform $C^{\prime}$ of $C$ by $\varphi$ has degree
 $$
 d^{\prime}=2 d-r_1-r_2-r_3
 $$
@@ -66,6 +66,8 @@ p:S=\operatorname{Bl}_{P_1,P_2,P_3}\PP^2\longrightarrow\PP^2
 $$
 be the blowup of the three base points.
 Write $H$ for the pullback of a line and $E_i$ for the exceptional curve over $P_i$.
+
+The exercise is printed without excluding the three lines joining pairs of the $P_i$, and those are the one case where its conclusion does not name a curve: for $C=P_jP_k$ one has $d=1$ and $r_j=r_k=1$, the other multiplicity $0$, so $d'=2-1-1=0$, and indeed the strict transform of $C$ on $S$ is the contracted curve $L_{jk}$, whose image is the point $Q_i$. The formula is then an intersection number with no curve $C'$ behind it. Step [](#contracted-lines-blowup-identification){.pf-ref} identifies those three curves, and step [](#degree-formula){.pf-ref} measures the degree of the image curve for every other $C$.
 
 ::: pf
 
@@ -297,5 +299,5 @@ Step [](#degree-formula){.pf-ref} proves the degree formula, steps [](#multiplic
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.2, printed p. 286 (the quadratic transformation and its effect on the cubic surface).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.4.2, PDF p. 286: he puts $P_1=(0,0,1)$, $P_2=(0,1,0)$, $P_3=(1,0,0)$ and takes $(x,y,z)\mapsto(yz,xz,xy)$; writing $f=\sum_i f_i(x,y)z^{d-i}$ where $f_{r_1}$ is the lowest part in $x,y$, he divides $f(yz,xz,xy)$ by $x^{r_1}y^{r_2}z^{r_3}$ and reads off the degree $2d-r_1-r_2-r_3$ and, after the substitution $(0,0,1)$, the multiplicity $d-r_2-r_3$ at $Q_1$. Steps [](#morphism-from-linear-system){.pf-ref} and [](#contracted-lines-blowup-identification){.pf-ref} reach the same statement through the resolved transformation as the blowup at three points followed by three contractions, and steps [](#degree-formula){.pf-ref} to [](#multiplicities-at-q2-q3){.pf-ref} compute the degree and the three multiplicities as intersection numbers with $H'$ and $L_{jk}$, which is the printed hint (Ex. 3.2). Matches.
 :::

@@ -447,5 +447,5 @@ that lemma to prove associativity of the chord-and-tangent law.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.4, printed p. 286 (the group law on the cubic surface).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.4.4, PDF pp. 286--287. For (a) he has the argument: the cubic $PP'\cup QQ'\cup RR'$ meets $C$ in the nine points, the cubic $L\cup L'\cup P''Q''$ contains eight of them, so "by Cayley--Bacharach, as in 4.4.a" the ninth $R''$ lies on $P''Q''$. Steps [](#nine-point-divisor){.pf-ref}, [](#eight-points-on-reducible-cubic){.pf-ref} and [](#cayley-bacharach-collinear-reduced){.pf-ref} are that argument, and steps [](#collinear-with-multiplicity){.pf-ref} and [](#singular-intersections-by-specialization){.pf-ref} add the cases of tangent lines and coincident points, which he does not treat. For (b), the associativity, his whole solution is "See Tate, Silverman: Rational Points. It's in the first chapter. They even give nice pictures": a citation, with no argument; steps [](#group-law-via-star-and-iota){.pf-ref} to [](#associativity){.pf-ref} derive it from part (a) by the usual two-collinear-triples configuration. Recorded in COMPLAINTS for (b).
 :::

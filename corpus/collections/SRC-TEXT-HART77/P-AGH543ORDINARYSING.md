@@ -299,5 +299,5 @@ inseparable positive-characteristic case from the source cited for V.4.3.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.3, printed p. 286 (ordinary singularities and the lines through them).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.4.3, PDF p. 286: the whole of his solution is "See Algebraic Curves over Finite Fields by Hirschfeld, Theorem 3.27", which is not among the retained files, so there is no argument to check. The reduction above is that of the standard proof: (3.8) resolves $C$ by point blowups, and one point blowup at a bad point $P$ is realized by a quadratic transformation whose two other centres are chosen so that the joining lines meet $C$ at $P$ in exactly $\mu_P(C)$ and elsewhere transversely, which makes the three contracted lines ordinary multiple points and leaves every other germ unchanged; the only case it does not cover is an inseparable projection, steps [](#choose-auxiliary-points){.pf-ref} to [](#separable-case-induction){.pf-ref} being the separable one and [](#inseparable-case){.pf-ref} the citation he gives. Recorded in COMPLAINTS.
 :::

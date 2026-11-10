@@ -234,5 +234,5 @@ specializations.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.5, printed p. 287 (Pascal's theorem from the cubic-surface count).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.4.5, PDF pp. 287--288: with the cubics $X=AB'\cup BC'\cup CA'$ and $Y=AC'\cup BA'\cup CB'$ meeting in nine points, six on the conic and $P,Q,R$, he takes $E=K\cup PQ$ and concludes by Cayley--Bacharach that $R\in PQ$. Steps [](#nine-intersection-points){.pf-ref}, [](#eight-points-on-conic-union-line){.pf-ref}, [](#r-lies-on-z){.pf-ref}, [](#r-not-on-conic){.pf-ref} and [](#pqr-collinear-nondegenerate){.pf-ref} are that argument with the two cubics relabelled (the three components of each are the same three lines, paired the other way), and step [](#extends-to-degenerate-case){.pf-ref} adds the specializations he does not discuss. Matches.
 :::

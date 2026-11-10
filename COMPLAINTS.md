@@ -727,3 +727,15 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 **Uncertainty.** Searched: all twelve retained Hartshorne solution files in `tmp/sources` by `pdftotext -layout` extraction, plus `assets/attachments/Hartshorne_Solutions.pdf` (the Cais notes). Chapter V occurs only in Egbert (V.1--V.6) and in Park (§V.5 alone). Conclusion: no complete published solution for the six requests above. Confidence: high for these sets. Gaps: a published treatment may exist outside them.
 
 **Repair.** A published proof of each, checked against the card, or the owner's direction to accept the cards' own derivations.
+
+### V.4.3 and V.4.4(b) of `SRC-TEXT-HART77` have no complete published solution
+
+**Object and need.** Two requests in `SRC-TEXT-HART77` §V.4 are proved on their cards without a published argument to check them against: `P-AGH543ORDINARYSING` (V.4.3, printed p. 407, quadratic transformations producing only ordinary singularities) and `P-AGH544CUBICGROUPLAW` in its part (b) (V.4.4(b), printed p. 407, associativity of the chord-and-tangent law).
+
+**Observed evidence.** Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), PDF pp. 285--288 for §V.4, is again the only retained set that reaches the section. V.4.3 is the whole line "See Algebraic Curves over Finite Fields by Hirschfeld, Theorem 3.27", and Hirschfeld's book is not among the retained files. V.4.4(a) he proves by Cayley--Bacharach on $PP'\cup QQ'\cup RR'$ and $L\cup L'\cup P''Q''$, but V.4.4(b) is "See Tate, Silverman: Rational Points. It's in the first chapter. They even give nice pictures", with no argument. His V.4.1 states $\pi\circ\psi=\mathrm{id}_{\PP^2}$ and $\psi\circ\pi=\mathrm{id}_Q$, which are false as written, though the identification it is used for is right.
+
+**Impact and owner.** Both cards keep complete proofs. V.4.3 replaces the resolution blowups of (3.8) by quadratic transformations with two auxiliary centres chosen so that the joining lines meet $C$ at the bad point with exactly $\mu_P(C)$ and elsewhere transversely; the three contracted fundamental lines then give ordinary multiple points and every other germ is carried isomorphically. The card records that the case of an inseparable projection is the one it takes from Hirschfeld's theorem, and says so on the step. V.4.4(b) is derived from part (a) by the configuration $A=P*Q$, $B=Q*R$, $V=P*T$, where part (a) applied to the triples $(P,Q,A)$ and $(T,B,P_0)$ gives $V,R,S$ collinear, so that $(P+Q)+R=\iota(V)=P+(Q+R)$.
+
+**Uncertainty.** Searched: all twelve retained Hartshorne solution files in `tmp/sources` by `pdftotext -layout` extraction, plus `assets/attachments/Hartshorne_Solutions.pdf` (the Cais notes). Chapter V occurs only in Egbert (V.1--V.6) and in Park (§V.5 alone). Conclusion: no complete published solution for the two requests above. Confidence: high for these sets. Gaps: a published treatment may exist outside them.
+
+**Repair.** A published proof of each, checked against the card, or the owner's direction to accept the cards' own derivations.
