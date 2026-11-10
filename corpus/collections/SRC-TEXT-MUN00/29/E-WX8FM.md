@@ -11,6 +11,22 @@ classification:
   - Homeomorphisms
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §29 Exercise 5, printed p. 186; the stored
+    statement is the printed one.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 29.5, PDF p. 22. Extending f by sending the point
+    at infinity to the point at infinity gives a bijection which is open, the image of the
+    complement of a compact set being the complement of a compact set, and symmetrically.
+    (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -19,19 +35,13 @@ If $f: X_1 \to X_2$ is a homeomorphism of locally compact Hausdorff spaces, show
 :::
 
 ::: {.solution}
-Let $X_i^*=X_i\cup\{\infty_i\}$ be the one-point compactifications. Define
-$$
-f^*:X_1^*\to X_2^*,\qquad f^*(x)=f(x)\ (x\in X_1),\quad f^*(\infty_1)=\infty_2.
-$$
-This is bijective, with inverse extending $f^{-1}$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.5, PDF p. 22** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the extension map and the openness argument are theirs.
 
-Continuity at ordinary points follows from continuity of $f$. Let $U$ be a neighborhood of $\infty_2$. Then
+Let $X_{1}^{+}=X_{1}\cup\{\infty_{1}\}$ and $X_{2}^{+}=X_{2}\cup\{\infty_{2}\}$ be the one-point compactifications and define $g:X_{1}^{+}\to X_{2}^{+}$ by $g\restrict X_{1}=f$ and $g(\infty_{1})=\infty_{2}$; it is a bijection.
+
+$g$ is open. Let $U\subset X_{1}^{+}$ be open. If $U\subset X_{1}$ then $U$ is open in $X_{1}$ and $g(U)=f(U)$ is open in $X_{2}$ (a homeomorphism is open), hence open in $X_{2}^{+}$. Otherwise $\infty_{1}\in U$, so $X_{1}^{+}-U$ is a compact subset $C$ of $X_{1}$ and $U=X_{1}^{+}-C$; then
 $$
-X_2^*\setminus U=K
+g(U)=X_{2}^{+}-g(C)=X_{2}^{+}-f(C),
 $$
-is a compact subset of $X_2$. Since $f^{-1}(K)$ is compact in $X_1$,
-$$
-(f^*)^{-1}(U)=X_1^*\setminus f^{-1}(K)
-$$
-is a neighborhood of $\infty_1$. Hence $f^*$ is continuous at $\infty_1$. The same argument applies to the inverse, so $f^*$ is a homeomorphism.
+and $f(C)$ is compact, hence closed in the Hausdorff space $X_{2}^{+}$: so $g(U)$ is open. By symmetry (apply the same argument to $g^{-1}$) $g$ is a homeomorphism.
 :::
