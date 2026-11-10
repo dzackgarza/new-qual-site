@@ -12,9 +12,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §26 Exercise 6, printed p. 171, with Theorem
+    26.2, Theorem 26.3 and Theorem 26.5; the stored statement is the printed one.
 - event: solution-written
-  by: muse-spark-1.2
-  date: 2026-08-30
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 26.6, PDF p. 13. A closed subset of a compact
+    space is compact, its image is compact, and a compact subset of a Hausdorff space is
+    closed. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -23,7 +34,7 @@ Show that if $f: X \to Y$ is continuous, where $X$ is compact and $Y$ is Hausdor
 :::
 
 ::: {.solution}
-Let $C$ be closed in $X$. Every open cover of $C$, together with the open set $X\setminus C$, covers compact $X$; hence $C$ is compact. Since $f$ is continuous, $f(C)$ is compact: an open cover of $f(C)$ pulls back to one of $C$, and a finite subcover pushes forward.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.6, PDF p. 13** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
 
-A compact subset of a Hausdorff space is closed. Indeed, for $y\notin f(C)$, separate $y$ from each point of $f(C)$ by disjoint open neighborhoods; compactness gives finitely many neighborhoods covering $f(C)$, and the intersection of the corresponding neighborhoods of $y$ misses $f(C)$. Thus $f(C)$ is closed in $Y$. Since $C$ was arbitrary, $f$ is a closed map.
+Let $f:X\to Y$ be continuous with $X$ compact and $Y$ Hausdorff, and let $C\subset X$ be closed. Then $C$ is compact (Theorem 26.2), so $f(C)$ is compact (Theorem 26.5), and a compact subspace of a Hausdorff space is closed (Theorem 26.3). So $f(C)$ is closed for every closed $C$: $f$ is a closed map.
 :::
