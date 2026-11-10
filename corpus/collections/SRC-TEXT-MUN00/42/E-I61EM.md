@@ -43,6 +43,13 @@ audit:
     compact space is compact) and the cover $\{[0,\alpha)\mid\alpha<\Omega\}$, which has no finite subcover,
     the contradiction is the one the exercise asks for. Checked against Theorem 42.1 (Smirnov), Theorem 28.2
     and the countability of the ordinals below $\Omega$.
+- event: source-corrected
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Part (a) said that an ordered space is regular without a reference; the section $S_x$ is a well-ordered
+    set in the order topology, hence normal by Theorem 32.4 and regular, which is the hypothesis the Urysohn
+    metrization theorem (Theorem 34.1) needs, its countable basis being the countability of $S_x$.
 ---
 
 ::: {.exercise}
@@ -57,7 +64,7 @@ audit:
 $$
 S_x=\{y:y<x\}
 $$
-is countable, since every element of $S_\Omega$ is a countable ordinal. The order topology on $S_x$ has a basis consisting of open intervals and end intervals with endpoints in $S_x$. Since $S_x$ is countable, this basis is countable. An ordered space is regular, so the Urysohn metrization theorem implies that $S_x$ is metrizable.
+is countable, since every element of $S_\Omega$ is a countable ordinal. The order topology on $S_x$ has a basis consisting of open intervals and end intervals with endpoints in $S_x$. Since $S_x$ is countable, this basis is countable. The order topology on the well-ordered set $S_x$ makes it normal (Theorem 32.4), hence regular, so the Urysohn metrization theorem (Theorem 34.1) implies that $S_x$ is metrizable.
 
 In particular, $S_\Omega$ is locally metrizable: for each $x<\Omega$, the open initial segment
 $$
