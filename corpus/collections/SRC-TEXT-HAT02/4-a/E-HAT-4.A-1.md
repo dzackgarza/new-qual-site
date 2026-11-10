@@ -14,6 +14,20 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-07
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.A Exercise 1, printed p. 426; the statement
+    matches the print. The proof is correct and complete as it stands and needed no repair:
+    $F(z,t)=H(z,t)\gamma(t)^{-1}$ with $\gamma(t)=H(z_0,t)$ is continuous because multiplication and
+    inversion in a topological group are, has $F(z,0)=f(z)x_0^{-1}=f(z)$ and
+    $F(z,1)=g(z)x_0^{-1}=g(z)$, and is basepoint-preserving because
+    $F(z_0,t)=\gamma(t)\gamma(t)^{-1}=x_0$. The $L_\gamma R_{\gamma^{-1}}$ normalisation used here is
+    the same device Hatcher uses in Example 4A.3 (p. 421) to show that an H-space has trivial action
+    of $\pi_1$; the group case does not need the H-space machinery since inverses are available. No
+    published solution of this exercise is in the retained sets — none of them covers §4.A at all —
+    recorded in COMPLAINTS.md.
 ---
 
 ::: {.problem}
