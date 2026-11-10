@@ -13,14 +13,19 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §21 Exercise 10, printed p. 134, with the closed
+    set formulation of continuity and Theorem 21.5; the three sets are stored as printed.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 21.10, PDF p. 26. Each set is the preimage of a
+    closed subset of R under a continuous polynomial map of R^2: xy = 1, x^2 + y^2 = 1, and
+    x^2 + y^2 in [0,1]. (tmp/sources/munkres-solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -43,23 +48,13 @@ The set $B^2$ is called the (closed) unit ball in $\RR^2$.
 :::
 
 ::: {.solution}
-The coordinate projections $p_1,p_2:\RR^2\to\RR$ are continuous. Hence so are
-$$
-F(x,y)=xy=p_1p_2,
-\qquad
-G(x,y)=x^2+y^2=p_1^2+p_2^2.
-$$
-Since singletons are closed in $\RR$,
-$$
-A=F^{-1}(\{1\})
-$$
-is closed. Likewise
-$$
-S^1=G^{-1}(\{1\})
-$$
-is closed. Finally $(-\infty,1]$ is closed in $\RR$, so
-$$
-B^2=G^{-1}(( -\infty,1])
-$$
-is closed. This proves all three claims directly from the closed-set formulation of continuity.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.10, PDF p. 26** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the argument is theirs.
+
+By the closed set formulation of continuity (Theorem 18.1(3), printed p. 107), the preimage of a closed set under a continuous map is closed, and by Theorem 21.5 (printed p. 129) sums and products of continuous real-valued functions are continuous; in particular the polynomial maps below are continuous on $\RR^{2}$.
+
+$A=\{(x,y)\mid xy=1\}$ is the preimage of the closed set $\{1\}\subset\RR$ under the continuous map $f(x,y)=xy$, hence closed.
+
+$S^{1}=\{(x,y)\mid x^{2}+y^{2}=1\}$ is the preimage of the closed set $\{1\}$ under the continuous map $g(x,y)=x^{2}+y^{2}$, hence closed.
+
+$B^{2}=\{(x,y)\mid x^{2}+y^{2}\le1\}$ is the preimage of the closed set $[0,1]$ under the same $g$, hence closed.
 :::
