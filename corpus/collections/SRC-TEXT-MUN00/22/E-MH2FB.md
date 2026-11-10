@@ -11,9 +11,23 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §22 Supplementary Exercise 1, printed p. 145,
+    with the definition of topological group printed there; the stored statement is the
+    printed equivalence.
 - event: solution-written
-  by: Codex 5.3 Spark Extra High
-  date: 2026-08-30
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise TG.1, printed p. 259.
+    Both directions are his: from the group axioms the map x y -> x y^{-1} is a composite of
+    multiplication with the continuous map (x,y) -> (x, y^{-1}), and conversely separate
+    continuity of that map gives inversion (fixing the first variable at the identity) and
+    then multiplication. (tmp/sources/munkres-solutions-whitman.pdf).
 ---
 
 ::: {.exercise}
@@ -23,33 +37,19 @@ Show that $H$ is a topological group if and only if the map of $H \times H$ into
 :::
 
 ::: {.solution}
-Let $\mu(x,y)=xy$, $\iota(x)=x^{-1}$, and $\phi(x,y)=xy^{-1}$. A $T_1$ group $H$ is a topological group when $\mu\colon H\times H\to H$ and $\iota\colon H\to H$ are continuous. A map into $H\times H$ is continuous if and only if its two coordinates are.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise TG.1, printed p. 259** (`tmp/sources/munkres-solutions-whitman.pdf`); both directions are his, and "positron0802", *Solutions to Topology, Chapter 2*, Supplementary Exercise 1, gives the same.
 
-::: pf
+Let $H$ be a group and a $T_{1}$ space, and let $h:H\times H\to H$, $h(x,y)=x\cdot y^{-1}$.
 
-::: {.pf-step #forward-implication}
-If $\mu$ and $\iota$ are continuous, then $\phi$ is continuous.
+*If $H$ is a topological group then $h$ is continuous.* The multiplication $m:H\times H\to H$ and the inversion $\iota:H\to H$ are continuous, so $i_{H}\times\iota:H\times H\to H\times H$ is continuous (Exercise 18.10), and $h=m\circ(i_{H}\times\iota)$ is a composite of continuous maps.
 
-::: pf-proof
-$\phi=\mu\circ(\operatorname{id}_H\times\iota)$, and $\operatorname{id}_H\times\iota\colon(x,y)\mapsto(x,y^{-1})$ is continuous because its coordinates $\pi_1$ and $\iota\circ\pi_2$ are.
-:::
-
-:::
-
-::: {.pf-step #reverse-implication}
-If $\phi$ is continuous, then $\iota$ and $\mu$ are continuous.
-
-::: pf-proof
-The map $j(x)=(e,x)$ is continuous, with a constant and an identity coordinate, and $\iota=\phi\circ j$ since $\phi(e,x)=x^{-1}$.
-Then $\operatorname{id}_H\times\iota$ is continuous, and $\mu=\phi\circ(\operatorname{id}_H\times\iota)$ since $\phi(x,y^{-1})=xy$.
-:::
-
-:::
-
-::: pf-qed
-Steps [](#forward-implication){.pf-ref} and [](#reverse-implication){.pf-ref} give the two implications.
-:::
-
-:::
-
+*If $h$ is continuous then $H$ is a topological group.* Since $h$ is continuous it is continuous in each variable separately (Exercise 18.11). Fixing the first variable at the identity $e$,
+$$
+x\longmapsto h(e,x)=e\cdot x^{-1}=x^{-1}
+$$
+is continuous, so inversion is continuous. Using this, the map
+$$
+(x,y)\longmapsto h\big(x,\,y^{-1}\big)=x\cdot\big(y^{-1}\big)^{-1}=x\cdot y
+$$
+is a composite of continuous maps ($(x,y)\mapsto(x,y^{-1})$ is continuous because inversion is, by Exercise 18.10), so multiplication is continuous. Hence $H$ is a topological group.
 :::
