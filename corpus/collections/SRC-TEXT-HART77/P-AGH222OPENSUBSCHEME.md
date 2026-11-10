@@ -155,3 +155,9 @@ Step [](#u-is-scheme){.pf-ref} proves that every open subset of a scheme carries
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.2, PDF p. 12, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he takes an affine neighbourhood $V=\Spec A$ of a point $P\in U$, replaces it by a basic open $\Spec A_f$ inside $V\cap U$, and reads off that $(\Spec A_f,(\OO_X|_U)|_{\Spec A_f})\cong\Spec A_f$, writing $\Spec A_f\subseteq V\cap U$ where the basic open is $D(f)$.
+The proof above is the same reduction, with the restricted structure sheaf on a distinguished open identified through Exercise 2.1, and with the stalk computation that makes $(U,\OO_X|_U)$ a locally ringed space written out separately.
+Agree.
+:::

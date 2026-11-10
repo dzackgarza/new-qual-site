@@ -489,3 +489,9 @@ Steps [](#x-x-f-criterion-pointwise){.pf-ref} and [](#u-cap-xf-equals-dfbar){.pf
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.16, PDF pp. 17--18, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (a) "This is quite obvious since $f_x=\bar f_x$"; (b) on a finite affine cover, $a|_{X_f}=0$ means $a=0$ in $(B_i)_{f_i}$, so $f_i^{n_i}a=0$ there, and the largest exponent works; (c) on each $U_i$ the section $b$ is $a_i/f^{n}$, the differences $a_i-a_j$ vanish on $U_i\cap U_j\cap X_f$, and since the double intersections are quasi-compact (b) clears denominators so that the $a_i$ glue; (d) injective by (b) and surjective by (c).
+The proof above is the same five steps, with (a) proved as $\mfm_x=\mathfrak pB_{\mathfrak p}$ and $\bar f/1\in\mathfrak p B_{\mathfrak p}\iff\bar f\in\mathfrak p$, and with the uniform exponent in (c), the application of (b) to the quasi-compact $U_{ij}$, and the gluing written out.
+Agree.
+:::

@@ -644,3 +644,9 @@ Steps [](#nilpotent-implies-proj-empty){.pf-ref}, [](#proj-empty-implies-homog-n
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.14, PDF p. 16, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (a) if $f\in S_+$ is not nilpotent he passes to "its minimal graded nonzero piece $f_n\in S_n$" and produces a prime of $(S_f)_0$; (b) $U$ is the union of the opens $D_+(\phi(s))$ and $\mathfrak p\mapsto\phi^{-1}(\mathfrak p)$ is realized on $D_+(\phi(s))$ by $(S_s)_0\to(T_{\phi(s)})_0$; (c) a point outside $U$ would contain $\phi(S_d)=T_d$ for all $d\ge d_0$ and hence $T_+$, and $(S_s)_0\to(T_{\phi(s)})_0$ is an isomorphism because both sides are filtered colimits of the same shape; (d) $(S_{x_i})_0$ is the coordinate ring of $V\cap\AA^n$ and the charts cover.
+The proof above is that chain, and in (a) it proves the reduction Kim's sentence assumes: a homogeneous ideal maximal among those avoiding the powers of a non-nilpotent homogeneous $f$ is prime, and a finite sum of nilpotent homogeneous components is nilpotent, which is what the printed "every element of $S_+$" needs. In (c) the degree bookkeeping for $d_0$ and for $\deg s\ge d_0$ is carried out.
+Agree.
+:::

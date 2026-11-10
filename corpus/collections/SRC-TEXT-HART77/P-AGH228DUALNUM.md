@@ -343,3 +343,9 @@ Step [](#constructions-inverse){.pf-ref} is the equivalence requested by the exe
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.8, PDF p. 14, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he notes that $\Spec k[\varepsilon]/\varepsilon^2$ is a point, so a $k$-morphism gives a rational point $x$ and a local $k$-algebra map $\OO_x\to k[\varepsilon]$; locality puts $\mfm_x$ into $(\varepsilon)$ and hence gives a $k$-linear map $\mfm_x/\mfm_x^2\to k$, and conversely $\OO_x\cong\mfm_x\oplus k$ gives $\phi(a+b)=a+\psi(b)\varepsilon$.
+The proof above is the same chain, with that last display written as $\phi(a)=\bar a+D(a)\varepsilon$, the Leibniz rule for $D$ verified from $\varepsilon^2=0$, $D$ shown to kill $\mfm_x^2$, and the reconstruction of the morphism made explicit.
+Agree.
+:::

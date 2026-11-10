@@ -243,3 +243,9 @@ Steps [](#points-of-specfpx){.pf-ref}, [](#generic-point-residue-field){.pf-ref}
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.11, PDF p. 15, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he lists the generic point and one point per monic irreducible, identifies the residue field at $(f)$ with $\FF_{p^{\deg f}}$, and then writes only that "there is a formula for counting how many irreducible monic polynomials with degree $d$ there are over $\FF_p$", without giving it.
+The proof above is that description together with the count Kim omits: $p^n=\sum_{d\mid n}dN_d$ from the roots of $T^{p^n}-T$, and $N_d=\frac1d\sum_{e\mid d}\mu(e)p^{d/e}$ by Möbius inversion.
+Agree, and the card supplies the missing formula.
+:::

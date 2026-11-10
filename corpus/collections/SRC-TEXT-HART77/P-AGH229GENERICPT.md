@@ -268,3 +268,9 @@ Step [](#unique-generic-point-statement){.pf-ref} is the assertion of the exerci
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.9, PDF p. 14, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he takes an affine open $U$ meeting $Z$, writes $Z\cap U=\Spec A/I$ with $I=\sqrt I$ prime by irreducibility so that $I$ is the unique generic point of $Z\cap U$, and shows that the generic points obtained from different affine opens agree because $U\cap U'\cap Z$ is nonempty.
+The proof above is the same, with the passage from the closure inside $U$ to the closure inside $X$, using $U\cap\overline{\{\zeta\}}^X=\overline{\{\zeta\}}^U$ and the density of $Z\cap U$ in $Z$, and with the uniqueness argument written out.
+Agree.
+:::

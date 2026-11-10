@@ -292,3 +292,9 @@ Step [](#hom-speck-x-bijection){.pf-ref} is the equivalence requested in the exe
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.7, PDF p. 14, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he fixes the image point $x$, reduces the sheaf morphism to a local homomorphism $\OO_x\to K$ because the source is a one-point space, and uses locality to see that the inverse image of $(0)$ is $\mfm_x$, which gives $k(x)\hookrightarrow K$.
+The proof above is that argument in both directions, with the sheaf morphism written down on every open set and the two composites checked to recover the morphism and the pair.
+Agree.
+:::

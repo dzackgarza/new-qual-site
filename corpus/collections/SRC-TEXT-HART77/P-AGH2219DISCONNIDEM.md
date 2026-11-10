@@ -186,3 +186,9 @@ Step [](#three-conditions-equivalent){.pf-ref} is the required equivalence.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.19, PDF p. 19, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (i)$\Rightarrow$(ii) by gluing the sections $1$ and $0$ over the two disjoint open pieces, "all sheaf-theoretically"; (ii)$\Rightarrow$(iii) through $A\to(e_1)\times(e_2)$, $a\mapsto(e_1a,e_2a)$; (iii)$\Rightarrow$(i) because $\Spec(A_1\times A_2)=\Spec A_1\sqcup\Spec A_2$.
+The proof above is the same three steps, with (i)$\Rightarrow$(ii) written as $A=\Gamma(U,\OO)\times\Gamma(V,\OO)$ and both factors nonzero, and (iii)$\Rightarrow$(i) through $D(e_1)=V(e_2)$ so that the two pieces are also closed.
+Agree.
+:::

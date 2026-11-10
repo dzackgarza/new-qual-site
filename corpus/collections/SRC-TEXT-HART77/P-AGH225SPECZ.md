@@ -193,3 +193,9 @@ Steps [](#prime-ideals-of-z){.pf-ref}, [](#specz-points-generic-closed){.pf-ref}
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.5, PDF p. 13, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he lists the generic point $(0)$ and the closed points $(p)$, says the open sets are $\varnothing$ and the cofinite sets containing $(0)$, and concludes from $\Hom_{\Sch}(X,\Spec\ZZ)\cong\Hom_{\Ring}(\ZZ,\Gamma(X,\OO_X))$ that there is a single morphism.
+The proof above adds what that description leaves implicit: $V(n)=\{(p):p\mid n\}$, so that the proper closed subsets are exactly the finite sets of closed points, the local rings $\QQ$ and $\ZZ_{(p)}$, and the uniqueness of the unital homomorphism out of $\ZZ$.
+Agree.
+:::

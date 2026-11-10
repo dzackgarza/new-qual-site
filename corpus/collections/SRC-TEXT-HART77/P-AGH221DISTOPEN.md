@@ -232,3 +232,9 @@ Step [](#df-locally-ringed-space-iso){.pf-ref} is the assertion of the exercise.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.1, PDF p. 11, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: at the level of points he uses that prime ideals of $A_f$ are the primes of $A$ not containing $f$; at the level of spaces, that the opens $\Spec A_g$ form a basis of $\Spec A$ and that $\Spec A_{fg}=\Spec A_f\cap\Spec A_g$; at the level of sheaves, that the stalks are identified, after which "we only need to check that the local compatibility conditions are equivalent".
+The proof above is the same three layers, and it discharges Kim's last sentence by computing both sheaves on the basis $D_A(af)=D_A(a)\cap D_A(f)$ and identifying $(A_f)_{a/1}$ with $A_{af}$ compatibly with restriction.
+Agree.
+:::

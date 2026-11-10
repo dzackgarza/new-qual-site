@@ -164,3 +164,9 @@ Steps [](#zero-ring-no-primes){.pf-ref}, [](#specz-ero-empty){.pf-ref} and [](#s
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.6, PDF pp. 13--14, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he observes that $\Spec 0$ is the empty space with the trivial sheaf, so a map $(\varnothing,0)\to(X,\OO_X)$ corresponds to the unique map $0\to0$ of sheaves, and notes that $X$ need not even be a scheme for the argument.
+The proof above is the same, adding that $\OO(\varnothing)=0$ is forced by the sheaf axiom on the empty cover and that the locality condition is vacuous because the source has no points.
+Agree.
+:::

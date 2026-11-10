@@ -446,3 +446,9 @@ Steps [](#point-corresponds-to-subvariety){.pf-ref}, [](#closed-point-residue-fi
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.15, PDF pp. 16--17, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (a) a closed point of $t(V)$ is a maximal ideal and the Nullstellensatz gives residue field $k$; (b) the residue-field maps form the tower $k\to k(f(P))\to k(P)=k$; (c) $f$ sends closed points to closed points, and then: "This is indeed a map of varieties, if we look at the corresponding affine charts. Now we want to show that $f$ is the same as the map induced from $f_c$. Basically we need to show that if two maps of schemes $\Spec A\to\Spec B$ agree on closed points, then they induce the same maps at the level of schemes ... This follows from the fact that there is a functorial embedding $A\hookrightarrow\prod_{\operatorname{maxSpec}A}k$".
+The proof above is the same route with the chart step carried out rather than asserted: for each $P$ it produces affine neighbourhoods with $f(V_0)\subseteq W_0$, shows that $F$ is there the affine-variety morphism of the $k$-algebra map $B\to A$, obtains continuity and regularity, and concludes $t(f)=F$; in (a) it also proves the converse direction through $\dim Z=\trdeg_k k(Z)$. Part (c), the surjectivity, has no complete published solution in the retained sets; the sets searched are recorded in `COMPLAINTS.md`.
+Agree on (a) and (b); (c) is the card's own proof.
+:::

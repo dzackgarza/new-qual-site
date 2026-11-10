@@ -263,3 +263,9 @@ Step [](#alpha-bijective){.pf-ref} is exactly the bijectivity of $\alpha$ requir
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.4, PDF p. 13, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he proves the affine case first, then observes that both sides are sheaves on the big Zariski site: over an affine cover $X=\bigcup\Spec A_i$ the left side is the equalizer of $\prod_i\Hom(\Spec A_i,\Spec A)\rightrightarrows\prod_{i,j,k}\Hom(\Spec A_{ijk},\Spec A)$, hence of $\prod_i\Hom(A,A_i)\rightrightarrows\prod_{i,j,k}\Hom(A,A_{ijk})$, and $\Gamma(X,\OO_X)$ is the equalizer of the same diagram.
+The proof above is that equalizer argument written out as gluing without the site language: the restrictions $\varphi_i$ give $f_i$ by the affine anti-equivalence, the $f_i$ agree on overlaps because both are induced by restriction of the same global sections, they glue, and $\alpha$ is then shown to be bijective by comparing restrictions to an affine cover.
+Agree in substance.
+:::

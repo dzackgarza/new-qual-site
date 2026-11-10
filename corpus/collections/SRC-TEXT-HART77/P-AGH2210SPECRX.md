@@ -291,3 +291,9 @@ Steps [](#points-of-x){.pf-ref}, [](#residue-fields-at-closed-points){.pf-ref}, 
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.10, PDF pp. 14--15, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he uses that $\RR[x]$ is a PID, lists $(0)$ and the primes $(x-a)$ and $(x-z)(x-\bar z)$ for $z\in\CC\sm\RR$, and concludes that there is one generic point and $\CC/(z\sim\bar z)$ with a cofinite topology.
+The proof above is that classification, with the residue fields $\RR$ and $\CC$, the statement that every proper closed subset is a finite set of closed points, and the finite integral extension $\RR[x]\hookrightarrow\CC[x]$ with its closed surjection added.
+Agree.
+:::

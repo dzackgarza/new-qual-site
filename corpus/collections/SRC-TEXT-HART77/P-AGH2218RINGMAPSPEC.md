@@ -240,3 +240,9 @@ Step [](#df-empty-iff-nilpotent){.pf-ref} proves part (a), steps [](#phi-injecti
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.18, PDF pp. 18--19, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (a) $D(f)=\Spec A_f$, which is empty exactly when $A_f=0$, that is, when $f$ is nilpotent; (b) injectivity is checked on basic opens through $A_f\to B_{\phi(f)}$, and dominance because an $a$ vanishing on $\overline{f(Y)}$ makes $\phi(a)$ lie in every prime, hence nilpotent; (c) $\phi$ factors through $A/I$ and the stalks of $f_*\OO_Y$ reduce the claim to exactness of localization; (d) factor $A\twoheadrightarrow A/\ker\phi\hookrightarrow B$, use (b) to make $\Spec B\to\Spec(A/\ker\phi)$ dominant and then a homeomorphism, compare the two surjections, and conclude $B\cong A/\ker\phi$.
+The proof above is the same four parts, with (d) argued by showing $g$ is a homeomorphism and $g^{\sharp}$ an isomorphism on stalks, and with the dominance in (b) obtained from the distinguished-open criterion instead of the nilpotent argument.
+Agree.
+:::

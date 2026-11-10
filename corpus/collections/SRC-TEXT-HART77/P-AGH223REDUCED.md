@@ -523,3 +523,9 @@ Steps [](#sections-reduced-implies-stalks-reduced){.pf-ref}, [](#stalks-reduced-
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.3, PDF pp. 12--13, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (a) on an affine open, $(f/g)^n=0$ forces $f^nh=0$ and hence $f/g=0$, and conversely a nilpotent section dies at every stalk; (b) reduces to $X=\Spec A$, notes that $\Spec A$ and $\Spec A_{\mathrm{red}}$ have the same points, computes the stalk as $\varinjlim(A_f)_{\mathrm{red}}=(A_{\mathrm{red}})_{\mathrm p}$, and gets the morphism from $A\to A_{\mathrm{red}}$; (c) on affine opens the factorization $\OO_Y(U)\to(\OO_Y)_{\mathrm{red}}(U)\to f_*\OO_X(U)$ is forced because $f_*\OO_X(U)$ is reduced, and locality follows at the stalks.
+The proof above is the same in all three parts, with the sheafification in (b) justified by agreement on the distinguished basis and the locality of $g$ in (c) checked on maximal ideals.
+Agree.
+:::

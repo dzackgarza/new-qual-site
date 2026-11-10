@@ -238,3 +238,9 @@ Steps [](#local-inverses-glue-to-g){.pf-ref} and [](#g-inverse-to-f-isomorphism)
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.17, PDF p. 18, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (a) $f$ is a bijection, a homeomorphism because openness can be tested on the cover, and $\OO_Y\to f_*\OO_X$ is locally an isomorphism; (b) the canonical $X\to\Spec A$ of Exercise 2.4, with $X_{f_i}\to D(f_i)=\Spec A_{f_i}$ an isomorphism because $\Gamma(X_{f_i},\OO_X)\cong A_{f_i}$ by Exercise 2.16(d), after which (a) applies.
+The proof above is the same, gluing the local inverses and checking $g\circ f$ and $f\circ g$, and verifying the hypothesis of Exercise 2.16(c): $X_{f_i}\cap X_{f_j}=X_{f_if_j}$ is affine, and $\eta^{-1}(D(f_i))=X_{f_i}$.
+Agree.
+:::
