@@ -11,9 +11,23 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §22 Exercise 3, printed p. 145, with Example 1 of
+    §22 for the retraction argument; the subspace A and the two claims are stored as
+    printed.
 - event: solution-written
-  by: muse-spark-1.2
-  date: 2026-08-30
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 22.3, PDF p. 27. The restricted projection is a
+    composite of a retraction and a homeomorphism, hence a quotient map; the open half-plane
+    in A maps to (0,infinity) and the closed set cut out by the tangent graph maps to an
+    open interval, so it is neither open nor closed. (tmp/sources/munkres-solutions-
+    positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -24,53 +38,13 @@ Show that $q$ is a quotient map that is neither open nor closed.
 :::
 
 ::: {.solution}
-::: pf
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 22.3, PDF p. 27** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the whole construction with both witnesses is theirs.
 
-::: {.pf-step #q-continuous-surjective}
-$q$ is continuous and surjective.
+Let $A=\{(x,y)\mid x\ge0 \text{ or } y=0\}\subset\RR^{2}$ and let $q=\pi_{1}\restrict_{A}:A\to\RR$.
 
-::: pf-proof
-$q$ is the restriction of the continuous projection $\pi_1$, and $q(x,0)=x$ with $(x,0)\in A$ for every $x\in\RR$.
-:::
+*$q$ is a quotient map.* The retraction $r:A\to\RR\times\{0\}$, $r(x,y)=x\times0$, is continuous (it is the restriction of the continuous map $(x,y)\mapsto x\times0$ of $\RR^{2}$) and fixes $\RR\times\{0\}$; by Exercise 22.2(b) it is a quotient map. The map $h:\RR\times\{0\}\to\RR$, $h(x\times0)=x$, is a homeomorphism, hence a quotient map. So $q=h\circ r$ is a quotient map, as a composite of quotient maps.
 
-:::
+*$q$ is not open.* The set $(\RR\times(0,\infty))\cap A$ is open in $A$, but its image under $q$ is $(0,\infty)$, which is not open in $\RR$.
 
-::: {.pf-step #q-quotient-map}
-$q$ is a quotient map.
-
-::: pf-proof
-By step [](#q-continuous-surjective){.pf-ref} it suffices to show that $U\subseteq\RR$ is open whenever $q^{-1}(U)$ is open in $A$.
-Let $x_0\in U$.
-Then $(x_0,0)\in q^{-1}(U)$, so there is an open box $B=(a,b)\times(-\varepsilon,\varepsilon)$ containing $(x_0,0)$ with $B\cap A\subseteq q^{-1}(U)$.
-For $t\in(a,b)$, the point $(t,0)$ lies in $B\cap A$, so $t=q(t,0)\in U$.
-Hence $x_0\in(a,b)\subseteq U$.
-:::
-
-:::
-
-::: {.pf-step #q-not-open}
-$q$ is not open.
-
-::: pf-proof
-The set $[0,\infty)\times(0,\infty)=A\cap(\RR\times(0,\infty))$ is open in $A$, and its image $[0,\infty)$ is not open in $\RR$.
-:::
-
-:::
-
-::: {.pf-step #q-not-closed}
-$q$ is not closed.
-
-::: pf-proof
-The set $C=\{(x,y):x>0,\ xy=1\}$ equals $\{(x,y):x\ge0,\ xy=1\}$, which is closed in $\RR^2$; it lies in $A$, so it is closed in $A$.
-Its image $q(C)=(0,\infty)$ is not closed in $\RR$, since $0$ is a limit point of it.
-:::
-
-:::
-
-::: pf-qed
-Steps [](#q-quotient-map){.pf-ref}, [](#q-not-open){.pf-ref}, and [](#q-not-closed){.pf-ref}.
-:::
-
-:::
-
+*$q$ is not closed.* Let $C=\{x\times\tan x\mid \pi/2<x<3\pi/2\}$, which is the intersection of the graph of $\tan$ with the strip $\pi/2<x<3\pi/2$; the graph is closed in $\RR^{2}$ and the strip is closed, so $C$ is closed in $\RR^{2}$, hence $C\cap A$ is closed in $A$. But $q(C\cap A)=(\pi/2,3\pi/2)$ is not closed in $\RR$.
 :::
