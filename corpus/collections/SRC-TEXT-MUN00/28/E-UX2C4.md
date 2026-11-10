@@ -10,6 +10,22 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §28 Exercise 3, printed p. 181, with Examples 1
+    and 2 of §28; the three questions are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 28.3, PDF pp. 18-19. Continuous images need not be
+    limit point compact (Example 1), closed subspaces are, and limit point compact subspaces
+    need not be closed (S_Omega in its compactification). (tmp/sources/munkres-solutions-
+    positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -28,21 +44,11 @@ See [S-S], Example 112.
 :::
 
 ::: {.solution}
-(a) Yes. Let $B\subset f(X)$ be infinite. For each $b\in B$, choose one point $x_b\in X$ with $f(x_b)=b$. Then
-$$
-A=\{x_b:b\in B\}
-$$
-is infinite, so it has a limit point $x\in X$. We claim $f(x)$ is a limit point of $B$. Let $V$ be a neighborhood of $f(x)$. Then $f^{-1}(V)$ is a neighborhood of $x$, so it contains some $x_b\in A$ distinct from $x$. Since the points of $A$ were chosen with distinct images, we may choose such a point with $b\ne f(x)$. Thus $V$ contains a point of $B\setminus\{f(x)\}$. Therefore $f(X)$ is limit point compact.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.3, PDF pp. 18--19** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all three answers are theirs.
 
-(b) Yes. Let $A\subset X$ be closed, and let $B\subset A$ be infinite. Since $X$ is limit point compact, $B$ has a limit point $x\in X$. Every limit point of $B\subset A$ lies in $\overline A=A$, so $x\in A$. Hence $A$ is limit point compact.
+(a) **No.** Let $X=\ZZ_{+}\cup Y$ be the space of Example 1 of §28 (two points of $Y$ with the indiscrete topology); $X$ is limit point compact, the projection $\pi_{1}:X\to\ZZ_{+}$ is continuous, and $\pi_{1}(X)=\ZZ_{+}$ is not limit point compact.
 
-(c) No. Let
-$$
-X=[0,\omega_1)
-$$
-with the order topology, regarded as a subspace of the Hausdorff compact ordinal space
-$$
-Z=[0,\omega_1].
-$$
-The space $X$ is limit point compact. Every infinite subset $A\subseteq X$ has an increasing sequence $a_1<a_2<\cdots$ of its first countably many points. Its supremum $s$ is a countable limit ordinal, so $s<\omega_1$; every order neighborhood of $s$ contains some $a_n\ne s$. Thus $s$ is a limit point of $A$ in $X$. But $X$ is not closed in $Z$, since its closure contains the missing endpoint $\omega_1$. Thus a limit point compact subspace of a Hausdorff space need not be closed.
+(b) **Yes.** If $A\subset X$ is closed and $B\subset A$ is infinite, then $B$ has a limit point $x\in X$; $x$ is a limit point of $A$, so $x\in\overline A=A$. Hence every infinite subset of $A$ has a limit point in $A$.
+
+(c) **No.** $S_{\Omega}$ in the order topology is limit point compact (Example 2 of §28), but as a subspace of $\overline{S}_{\Omega}$ it is not closed: it does not contain its limit point $\Omega$. (It is Hausdorff by Exercise 17.10, so this is not a failure of the separation axioms.)
 :::
