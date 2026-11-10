@@ -12,14 +12,20 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §23 Exercise 1, printed p. 152; the stored
+    statement is the printed question.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 23.1, PDF p. 1. A separation in the coarser
+    topology is one in the finer, so connectedness in the finer topology gives it in the
+    coarser; the two-point set with the indiscrete and the discrete topology shows the
+    converse fails. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -29,11 +35,9 @@ If $\mathcal{T}' \supset \mathcal{T}$, what does connectedness of $X$ in one top
 :::
 
 ::: {.solution}
-Assume $\mathcal T\subseteq\mathcal T'$, so $\mathcal T'$ is finer.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.1, PDF p. 1** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both halves are theirs.
 
-If $X$ is connected in the finer topology $\mathcal T'$, then it is connected in the coarser topology $\mathcal T$: any separation by $\mathcal T$-open sets would also be a separation by $\mathcal T'$-open sets.
+If $\mathcal{T}'\supset\mathcal{T}$ and $(X,\mathcal{T}')$ is connected, then $(X,\mathcal{T})$ is connected: a separation of $(X,\mathcal{T})$ would consist of sets open in $\mathcal{T}$, hence open in $\mathcal{T}'$, and would separate $(X,\mathcal{T}')$.
 
-Equivalently, if $X$ is disconnected in the coarser topology, it remains disconnected in every finer topology.
-
-The converse implications fail. For example, $\RR$ with its standard topology is connected, while the finer lower-limit topology $\RR_\ell$ is disconnected. Thus connectedness can be destroyed by refinement, but cannot be created by refinement.
+The converse fails: if $(X,\mathcal{T})$ is connected, $(X,\mathcal{T}')$ need not be. For $X=\{a,b\}$ take $\mathcal{T}=\{\varnothing,X\}$ and $\mathcal{T}'=\mathcal{P}(X)$; the first space is connected, the second is separated by $\{a\}$ and $\{b\}$.
 :::
