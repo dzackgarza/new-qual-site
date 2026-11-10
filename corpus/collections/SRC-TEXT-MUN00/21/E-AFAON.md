@@ -11,9 +11,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §21 Exercise 5, printed p. 134, with Lemma 21.4,
+    Theorem 21.3 and Exercise 19.6; the four conclusions and the hint are stored as printed.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 21.5, PDF p. 25. The sequence (x_n, y_n) converges
+    in the product, so its image under the continuous addition, subtraction (via negation)
+    and multiplication converges, and the quotient follows from the continuity of the
+    reciprocal on R - {0}. (tmp/sources/munkres-solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -40,42 +52,14 @@ $$
 :::
 
 ::: {.solution}
-If $F\colon X\to Y$ is continuous and $z_n\to z$ in $X$, then $F(z_n)\to F(z)$ in $Y$: a neighborhood $V$ of $F(z)$ has open preimage containing $z$, which contains $z_n$ for all large $n$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.5, PDF p. 25** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the argument is theirs, following the book's hint.
 
-::: pf
-
-::: {.pf-step #pair-converges}
-$(x_n,y_n)\to(x,y)$ in $\RR\times\RR$.
-
-::: pf-proof
-A sequence in a product converges if and only if each coordinate sequence converges, by [[E-AH7RC]].
-:::
-
-:::
-
-::: {.pf-step #arithmetic-maps-continuous}
-The maps $S(u,v)=u+v$, $D(u,v)=u-v$, and $M(u,v)=uv$ from $\RR\times\RR$ to $\RR$, and $Q(u,v)=u/v$ from $\RR\times(\RR-\{0\})$ to $\RR$, are continuous.
-
-::: pf-proof
-For $(u,v)$ near $(a,b)$,
+By Exercise 19.6, $x_{n}\to x$ and $y_{n}\to y$ in $\RR$ give $(x_{n},y_{n})\to(x,y)$ in $\RR\times\RR$. By Lemma 21.4 (printed p. 130) the maps $+:*\RR\times\RR\to\RR$ and $\cdot:\RR\times\RR\to\RR$ are continuous, and by Theorem 21.3 (sequences are preserved by continuous maps into a metric space) applied to the sequence $(x_{n},y_{n})$ of $\RR^{2}$,
 $$
-\abs{(u\pm v)-(a\pm b)}\le\abs{u-a}+\abs{v-b},\qquad \abs{uv-ab}\le\abs u\abs{v-b}+\abs b\abs{u-a},
+x_{n}+y_{n}=+\big((x_{n},y_{n})\big)\longrightarrow +\big((x,y)\big)=x+y,\qquad
+x_{n}y_{n}=\cdot\big((x_{n},y_{n})\big)\longrightarrow xy .
 $$
-and the right sides tend to $0$ as $(u,v)\to(a,b)$.
-For $b\ne0$ and $\abs{v-b}<\abs b/2$,
-$$
-\abs{\frac uv-\frac ab}=\frac{\abs{bu-av}}{\abs{vb}}\le\frac{2\bigl(\abs b\abs{u-a}+\abs a\abs{v-b}\bigr)}{b^2},
-$$
-which also tends to $0$.
-:::
+For the difference, $y\mapsto-y$ is continuous, so $(-y_{n})\to-y$ and $x_{n}-y_{n}=x_{n}+(-y_{n})\to x-y$ by the addition case.
 
-:::
-
-::: pf-qed
-By steps [](#pair-converges){.pf-ref} and [](#arithmetic-maps-continuous){.pf-ref} and the sequence property of continuous maps, $S(x_n,y_n)\to S(x,y)$, $D(x_n,y_n)\to D(x,y)$, and $M(x_n,y_n)\to M(x,y)$.
-When every $y_n\ne0$ and $y\ne0$, the sequence $(x_n,y_n)$ lies in $\RR\times(\RR-\{0\})$ and converges there to $(x,y)$, so $Q(x_n,y_n)\to Q(x,y)$.
-:::
-
-:::
-
+For the quotient, suppose $y_{n}\ne0$ for all $n$ and $y\ne0$. The map $t\mapsto1/t$ is continuous on $\RR-\{0\}$ (Exercise 21.12(c), or Lemma 21.4 if quoted in that form), so $1/y_{n}\to1/y$; then $x_{n}\cdot(1/y_{n})\to x\cdot(1/y)$ by the product case, that is $x_{n}/y_{n}\to x/y$.
 :::
