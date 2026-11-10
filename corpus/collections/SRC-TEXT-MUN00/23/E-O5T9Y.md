@@ -12,14 +12,19 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §23 Exercise 7, printed p. 152, with the lower
+    limit topology of §13; the stored statement is the printed question.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 23.7, PDF p. 2. The ray (-infinity,0) and the ray
+    [0,infinity) are disjoint nonempty open sets of R_l whose union is the space.
+    (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -29,13 +34,7 @@ Justify your answer.
 :::
 
 ::: {.solution}
-No. In the lower-limit topology,
-$$
-(-\infty,0)=\bigcup_{n\ge1}[-n,0)
-$$
-and
-$$
-[0,\infty)=\bigcup_{n\ge1}[0,n)
-$$
-are both open. They are nonempty, disjoint, and their union is $\RR$. Hence they form a separation of $\RR_\ell$, so $\RR_\ell$ is disconnected.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.7, PDF p. 2** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the witness pair is theirs.
+
+$\RR_{\ell}$ is **not** connected. The sets $(-\infty,0)$ and $[0,\infty)$ are disjoint, nonempty, and both open in $\RR_{\ell}$ — the first is a union of basis elements $(a,b)$, the second is the basis element $[0,1)$ together with $\bigcup_{n\ge1}[n,n+1)$ — and their union is $\RR$. So they form a separation.
 :::
