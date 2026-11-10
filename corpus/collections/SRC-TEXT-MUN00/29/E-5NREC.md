@@ -12,9 +12,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §29 Exercise 3, printed p. 186; the two questions
+    are stored as printed.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 29.3, PDF p. 22. The identity from the discrete
+    rationals to the usual rationals is continuous with image not locally compact; a
+    continuous open map does carry local compactness, images of compact neighbourhoods being
+    compact neighbourhoods. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -26,79 +38,9 @@ Justify your answer.
 :::
 
 ::: {.solution}
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.3, PDF p. 22** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both halves and the counterexample are theirs.
 
-::: pf
+*Continuous alone is not enough.* Let $\QQ_{d}$ be the rationals with the discrete topology, $\QQ$ the rationals usual; the identity $i:\QQ_{d}\to\QQ$ is continuous. The discrete $\QQ_{d}$ is locally compact ($\{x\}$ is an open compact neighbourhood of $x$), but $i(\QQ_{d})=\QQ$ is not locally compact (Exercise 29.1).
 
-::: pf-step
-Question 1: Continuous images of locally compact spaces need NOT be locally compact.
-
-::: pf-proof
-
-::: pf-step
-Let $X = \RR$ with the discrete topology.
-:::
-
-::: pf-step
-Since every singleton in $X$ is an open and compact neighborhood of itself, $X$ is locally compact.
-:::
-
-::: pf-step
-Let $Y = \QQ$ with the standard subspace topology inherited from $\RR$.
-:::
-
-::: pf-step
-Let $f: X \to Y$ be any surjective function (for example, mapping $\RR \setminus \QQ$ onto $0$ and acting as the identity on $\QQ$).
-:::
-
-::: pf-step
-Since $X$ has the discrete topology, $f$ is continuous, and $f(X) = \QQ$.
-:::
-
-::: pf-step
-The rational numbers $\QQ$ are not locally compact by [[E-GO24I]].
-:::
-
-::: pf-step
-Thus the continuous image $f(X)$ is not locally compact.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Question 2: If $f$ is continuous and open, then $f(X)$ IS locally compact.
-
-::: pf-proof
-
-::: pf-step
-Let $y \in f(X)$. Since $f: X \to f(X)$ is surjective, choose $x \in X$ such that $f(x) = y$.
-:::
-
-::: pf-step
-Because $X$ is locally compact, there exists a compact subspace $C \subseteq X$ containing an open neighborhood $U \subseteq X$ of $x$, so $x \in U \subseteq C$.
-:::
-
-::: pf-step
-Since $f$ is continuous, the image $f(C)$ is a compact subset of $f(X)$.
-:::
-
-::: pf-step
-Since $f: X \to f(X)$ is an open map, $f(U)$ is an open subset of $f(X)$.
-:::
-
-::: pf-step
-We have $y = f(x) \in f(U) \subseteq f(C)$, which exhibits $f(C)$ as a compact neighborhood of $y$ in $f(X)$.
-:::
-
-::: pf-step
-Since $y \in f(X)$ was arbitrary, $f(X)$ is locally compact. Q.E.D.
-:::
-
-:::
-
-:::
-
-:::
-
+*Continuous and open suffices.* Let $y=f(x)\in f(X)$; choose a compact $C\subset X$ containing a neighbourhood $U$ of $x$. Then $f(C)$ is compact (continuity of $f$) and contains the neighbourhood $f(U)$ of $y$ (openness of $f$). So $f(X)$ is locally compact.
 :::
