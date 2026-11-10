@@ -12,14 +12,19 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §22 Exercise 5, printed p. 145; the stored
+    statement is the printed sentence.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 22.5, PDF p. 28. An open set U of the open
+    subspace A is open in X, so p(U) is open in Y and its trace on p(A) is open there, which
+    is q(U). (tmp/sources/munkres-solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -29,13 +34,11 @@ Show that if $A$ is open in $X$, then the map $q: A \to p(A)$ obtained by restri
 :::
 
 ::: {.solution}
-Let $U\subseteq A$ be open in the subspace $A$. Since $A$ itself is open in $X$, every subspace-open set $U$ is actually open in $X$. Because $p$ is an open map, $p(U)$ is open in $Y$. Therefore
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 22.5, PDF p. 28** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the argument is theirs.
+
+Let $p:X\to Y$ be an open map and let $A\subset X$ be open; put $q=p\restrict_{A}:A\to p(A)$. For $U$ open in $A$, the set $U$ is open in $X$ because $A$ is open in $X$, so $p(U)$ is open in $Y$ since $p$ is an open map. And
 $$
-p(U)\cap p(A)=p(U)
+q(U)=p(U)=p(U)\cap p(A)
 $$
-is open in the subspace $p(A)$. Hence the restriction
-$$
-q=p\restrict_A:A\to p(A)
-$$
-is open.
+is the trace on $p(A)$ of an open set of $Y$, hence open in the subspace $p(A)$. So $q$ is an open map.
 :::
