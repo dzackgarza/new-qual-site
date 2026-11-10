@@ -10,6 +10,22 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §27 Exercise 6, printed p. 178, with Theorem 26.2
+    and Theorem 27.7; the construction and all five parts are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 27.6, PDF pp. 17-18. The Cantor set is totally
+    disconnected, closed and compact, contains the endpoints of all the deleted intervals,
+    has no isolated points, and so is uncountable by Theorem 27.7. (tmp/sources/munkres-
+    solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -43,23 +59,17 @@ is called the Cantor set; it is a subspace of $[0, 1]$.
 :::
 
 ::: {.solution}
-Write $C$ for the Cantor set.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 27.6, PDF pp. 17--18** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all five parts are theirs.
 
-(a) Let $x<y$ be distinct points of $C$. Choose $n$ so large that $3^{-n}<y-x$. The components of $A_n$ are pairwise disjoint closed intervals of length $3^{-n}$, so $x$ and $y$ cannot lie in the same component interval. Hence some deleted middle-third interval separates them. Therefore $C$ admits a separation with $x$ and $y$ in different sides. Thus no connected subset of $C$ contains two points, so $C$ is totally disconnected.
+The Cantor set is $C=\bigcap_{n}A_{n}$, where $A_{0}=[0,1]$ and $A_{n+1}$ is obtained from $A_{n}$ by deleting the open middle third of each of its closed intervals.
 
-(b) Each $A_n$ is closed in compact $[0,1]$, hence compact, and
-$$
-C=\bigcap_{n\ge1}A_n
-$$
-is closed in $[0,1]$. Therefore $C$ is compact.
+(a) $C$ is totally disconnected. If $B\subset C$ is connected and contains $x\ne y$, choose $n$ with $3^{-n}<\abs{x-y}$; then $x$ and $y$ lie in different closed intervals of $A_{n}$, and $B\cap I$, $B\cap(C-I)$ separate $B$ for the interval $I$ of $A_{n}$ containing $x$ — a contradiction.
 
-(c) Inductively, $A_0=[0,1]$. At stage $n$, each component interval of $A_{n-1}$, of length $3^{-(n-1)}$, has its open middle third deleted, leaving two disjoint closed intervals of length $3^{-n}$. Hence $A_n$ is the union of $2^n$ pairwise disjoint closed intervals of length $3^{-n}$. Endpoints are never deleted at later stages, so every endpoint belongs to every subsequent $A_m$, hence lies in $C$.
+(b) Each $A_{n}$ is a finite union of closed intervals, hence closed, so $C$ is closed; being a closed subspace of the compact space $[0,1]$, $C$ is compact (Theorem 26.2).
 
-(d) Fix $x\in C$ and $\varepsilon>0$. Choose $n$ with $3^{-n}<\varepsilon$, and let $I_n$ be the component interval of $A_n$ containing $x$. One endpoint $e_n$ of $I_n$ is distinct from $x$ unless $x$ itself is that endpoint; in that case take the other endpoint. By (c), $e_n\in C$, and
-$$
-0<\abs{e_n-x}\le 3^{-n}<\varepsilon.
-$$
-Thus every neighborhood of $x$ contains another point of $C$, so $C$ has no isolated points.
+(c) At each step each closed interval of $A_{n}$ is replaced by two closed intervals, the middle third's interior being removed; so only interiors of intervals are deleted, and the endpoints of every interval of every $A_{n}$ survive in $C$.
 
-(e) For each binary sequence $\epsilon=(\epsilon_1,\epsilon_2,\dots)\in\{0,1\}^{\omega}$, choose recursively the left subinterval at stage $n$ if $\epsilon_n=0$ and the right subinterval if $\epsilon_n=1$. This gives nested closed intervals $I_n(\epsilon)\subset A_n$ with lengths $3^{-n}$. Their intersection consists of exactly one point $x_\epsilon\in C$. If $\epsilon\ne\epsilon'$, at the first differing index the corresponding stage intervals are disjoint, so $x_\epsilon\ne x_{\epsilon'}$. Hence $\{0,1\}^{\omega}$ injects into $C$. Since $\{0,1\}^{\omega}$ is uncountable, $C$ is uncountable.
+(d) If $x\in C$ and $n\in\ZZ_{+}$, the interval $I_{n}$ of $A_{n}$ containing $x$ has length $3^{-n}$ and an endpoint $x_{n}\ne x$, which lies in $C$ by (c) and satisfies $\abs{x_{n}-x}\le3^{-n}$. So $x$ is a limit of points of $C$ and $C$ has no isolated points.
+
+(e) $C$ is nonempty (it contains the endpoints of all the intervals), compact, Hausdorff and has no isolated points, so it is uncountable by Theorem 27.7.
 :::
