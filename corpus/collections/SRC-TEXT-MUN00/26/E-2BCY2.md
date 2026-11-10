@@ -12,9 +12,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §26 Exercise 11, printed p. 171, with Theorem
+    26.9 and Exercise 26.5; the stored theorem is printed there.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 26.11, PDF pp. 13-15. The intersection of a chain
+    of closed connected sets is connected: a separation would be separated by disjoint open
+    sets, and the chain members minus their union have the finite intersection property, so
+    a point avoids both. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -39,136 +51,17 @@ is not empty.]
 :::
 
 ::: {.solution}
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.11, PDF pp. 13--15** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the finite-intersection argument is theirs.
 
-If $\varnothing\in\mathcal A$, then $Y=\varnothing$ is connected. Assume every member of $\mathcal A$ is nonempty.
+**Theorem.** Let $X$ be compact Hausdorff and $\mathcal{A}$ a nonempty collection of closed connected subsets of $X$ simply ordered by proper inclusion. Then $Y=\bigcap_{A\in\mathcal{A}}A$ is connected.
 
-::: pf
+*Proof.* Each $A$ is closed, so $Y$ is closed. Suppose $Y=C\cup D$ is a separation, with $C,D$ disjoint nonempty closed in $Y$ and hence in $X$; being closed subsets of the compact space $X$, they are compact, so by Exercise 26.5 there are disjoint open $U\supset C$, $V\supset D$ in $X$.
 
-::: pf-step
-$Y$ is non-empty and compact:
+We show the family $\{A-(U\cup V)\}_{A\in\mathcal{A}}$ has the finite intersection property. For $A_{1}\subset\cdots\subset A_{n}$ in $\mathcal{A}$,
+$$
+\bigcap_{i\le n}\big(A_{i}-(U\cup V)\big)=A_{1}-(U\cup V),
+$$
+and this is nonempty: otherwise $A_{1}\subset U\cup V$, and since $A_{1}$ is connected and $U\cap V=\varnothing$ it lies in $U$ or in $V$; if $A_{1}\subset U$ then $Y\subset A_{1}\subset U$ and $D=Y\cap D\subset U\cap V=\varnothing$, a contradiction, and similarly for $V$.
 
-::: pf-proof
-
-::: pf-step
-Each $A \in \mathcal{A}$ is closed in $X$, hence compact.
-:::
-
-::: pf-step
-Since $\mathcal{A}$ is simply ordered by inclusion, any finite subcollection $\{A_1, \dots, A_k\} \subset \mathcal{A}$ has a minimal element $A_0 = \min_i A_i \in \mathcal{A}$, so $\bigcap_{i=1}^k A_i = A_0 \neq \emptyset$.
-:::
-
-::: pf-step
-Thus $\mathcal{A}$ satisfies the finite intersection property.
-:::
-
-::: pf-step
-By compactness of $X$, $Y = \bigcap_{A \in \mathcal{A}} A$ is non-empty, closed, and compact.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Separation assumption and neighborhood separation:
-Suppose for contradiction that $Y$ is not connected.
-
-::: pf-proof
-
-::: pf-step
-There exists a separation $Y = C \cup D$ into disjoint, non-empty closed subsets $C, D \subset Y$.
-:::
-
-::: pf-step
-Since $Y$ is closed in $X$, $C$ and $D$ are disjoint closed subsets of the compact Hausdorff space $X$.
-:::
-
-::: pf-step
-Every compact Hausdorff space is normal ($T_4$).
-:::
-
-::: pf-step
-By normality of $X$, there exist disjoint open sets $U, V \subset X$ such that $C \subset U$ and $D \subset V$.
-:::
-
-::: pf-step
-Then $Y = C \cup D \subset U \cup V$ and $U \cap V = \emptyset$.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Finiteness reduction on $A \setminus (U \cup V)$:
-There exists a member $A_0 \in \mathcal{A}$ such that $A_0 \subset U \cup V$.
-
-::: pf-proof
-
-::: pf-step
-For each $A \in \mathcal{A}$, define $F_A = A \setminus (U \cup V) = A \cap (X \setminus (U \cup V))$.
-:::
-
-::: pf-step
-Since $X \setminus (U \cup V)$ is closed in $X$, each $F_A$ is a closed (hence compact) subset of $X$.
-:::
-
-::: pf-step
-The total intersection is:
-$$\bigcap_{A \in \mathcal{A}} F_A = \left(\bigcap_{A \in \mathcal{A}} A\right) \setminus (U \cup V) = Y \setminus (U \cup V) = \emptyset.$$
-:::
-
-::: pf-step
-By compactness of $X$, the family of closed sets $\{F_A\}_{A \in \mathcal{A}}$ cannot satisfy the finite intersection property, so there exists a finite subfamily $\{A_1, \dots, A_k\} \subset \mathcal{A}$ with $\bigcap_{i=1}^k F_{A_i} = \emptyset$.
-:::
-
-::: pf-step
-Since $\mathcal{A}$ is totally ordered by inclusion, choose $A_0 = \min\{A_1, \dots, A_k\} \in \mathcal{A}$.
-:::
-
-::: pf-step
-Then $F_{A_0} = \bigcap_{i=1}^k F_{A_i} = \emptyset$, which means $A_0 \setminus (U \cup V) = \emptyset$, i.e., $A_0 \subset U \cup V$.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Derivation of contradiction:
-
-::: pf-proof
-
-::: pf-step
-Since $A_0 \subset U \cup V$ and $U \cap V = \emptyset$, we can write $A_0 = (A_0 \cap U) \cup (A_0 \cap V)$ as a union of disjoint open sets in the subspace topology of $A_0$.
-:::
-
-::: pf-step
-Furthermore:
-$$A_0 \cap U \supseteq Y \cap U \supseteq C \neq \emptyset \quad \text{and} \quad A_0 \cap V \supseteq Y \cap V \supseteq D \neq \emptyset.$$
-:::
-
-::: pf-step
-Thus $A_0 = (A_0 \cap U) \cup (A_0 \cap V)$ constitutes a separation of $A_0$ into two non-empty disjoint open sets.
-:::
-
-::: pf-step
-This strictly contradicts the hypothesis that $A_0 \in \mathcal{A}$ is connected.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Conclusion:
-No separation of $Y$ can exist, so $Y = \bigcap_{A \in \mathcal{A}} A$ is connected. Q.E.D.
-:::
-
-:::
-
-:::
-
-::: {.remark}
-The family must be nonempty. For the empty family, its intersection is $X$, which need not be connected.
+The sets $A-(U\cup V)$ are closed in the compact $X$, so by Theorem 26.9 their total intersection in nonempty: there is $y\in Y$ with $y\notin U\cup V\supset C\cup D=Y$, a contradiction. Hence $Y$ is connected.
 :::
