@@ -21,6 +21,24 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §7 Exercise 5, printed p. 51; all ten parts
+    (a)-(j) are stored as printed, including the definitions of eventually zero and
+    eventually constant.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 7.5,
+    printed pp. 85-89 (tmp/sources/munkres-solutions-whitman.pdf). His verdicts are the
+    card's - (a), (b), (c), (f), (g), (h), (i), (j) countable and (d), (e) uncountable -
+    and each answer is obtained the same way: a finite or countable product for the
+    countable cases, and for (d) the injection of {0,1}^omega by adding 1 to each
+    coordinate. No defect found.
 ---
 
 ::: {.exercise}
@@ -51,6 +69,8 @@ Justify your answers.
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.5, printed pp. 85--89** (`tmp/sources/munkres-solutions-whitman.pdf`); the ten verdicts and their justifications below are his.
+
 (a) $A$ is countable: a function $\{0,1\}\to\ZZ_+$ is determined by the pair $(f(0),f(1))\in\ZZ_+^2$, and $\ZZ_+^2$ is countable.
 
 (b) Each $B_n$ is countable because

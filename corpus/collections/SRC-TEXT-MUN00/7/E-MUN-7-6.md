@@ -21,6 +21,24 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §7 Exercise 6, printed pp. 51-52; both parts
+    are stored as printed, with the book's own hint for (a) reproduced.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 7.6,
+    printed pp. 89-90 (tmp/sources/munkres-solutions-whitman.pdf). The chain A_1 sup
+    B_1 sup A_2 sup ... and the rule h = f on the union of the differences A_n - B_n and
+    h = identity elsewhere are the book's hint and his proof; the card proves the three
+    things the hint leaves implicit - h maps into B, f carries A_n - B_n bijectively onto
+    A_{n+1} - B_{n+1}, and the two pieces of the image are disjoint with union B. Part
+    (b) is his reduction to (a) through B = g(C). No defect found.
 ---
 
 ::: {.exercise}
@@ -44,6 +62,8 @@ If there are injections $f \colon A \to C$ and $g \colon C \to A$, then $A$ and 
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.6, printed pp. 89--90** (`tmp/sources/munkres-solutions-whitman.pdf`); the sets $A_n$, $B_n$, the union of the differences and the piecewise map $h$ are the book's hint, and the verification that $h$ is a bijection is his; the card states the three points the hint leaves implicit.
+
 (a) Put
 $$
 A_1=A,\qquad B_1=B,

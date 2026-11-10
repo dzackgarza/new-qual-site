@@ -21,6 +21,24 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §7 Exercise 4, printed p. 51; both parts are
+    stored as printed, including the hypothesis that each polynomial equation has
+    finitely many roots and that the reals are uncountable.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 7.4,
+    printed pp. 84-85 (tmp/sources/munkres-solutions-whitman.pdf). The count is his:
+    the degree-n polynomials with rational coefficients form a countable set, their
+    union over n is countable, each has finitely many real roots, and the algebraic
+    numbers are the countable union of those finite root sets; (b) then removes a
+    countable set from an uncountable one. No defect found.
 ---
 
 ::: {.exercise}
@@ -39,6 +57,8 @@ Assuming the reals are uncountable, show that the transcendental numbers are unc
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.4, printed pp. 84--85** (`tmp/sources/munkres-solutions-whitman.pdf`); the countable union over degrees and over root sets, and the removal of a countable set from $\RR$, are his.
+
 (a) For each $n\ge1$, let $P_n$ be the set of monic degree-$n$ polynomials with rational coefficients. The coefficient map gives a bijection
 $$
 P_n\cong\QQ^n.

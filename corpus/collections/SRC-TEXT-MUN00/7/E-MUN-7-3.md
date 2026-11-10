@@ -21,6 +21,21 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §7 Exercise 3, printed p. 51; the stored
+    statement matches.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 7.3,
+    printed p. 84 (tmp/sources/munkres-solutions-whitman.pdf): the bijection sends a
+    subset to its characteristic function and a binary sequence to the set of indices
+    where it is 1. No defect found.
 ---
 
 ::: {.exercise}
@@ -29,6 +44,8 @@ Let $X$ be the two-element set $\{0,1\}$ . Show there is a bijective corresponde
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.3, printed p. 84** (`tmp/sources/munkres-solutions-whitman.pdf`); the characteristic-function bijection is his.
+
 For $S\subset\ZZ_+$, define its characteristic function
 $$
 \chi_S\in X^\omega,

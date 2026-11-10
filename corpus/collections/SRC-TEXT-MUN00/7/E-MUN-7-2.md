@@ -21,6 +21,24 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §7 Exercise 2 and Examples 1 and 2 of §7,
+    printed pp. 44-46; the card states the book's two formulas, f(n) = 2n for n > 0 and
+    -2n+1 for n <= 0, and f(x,y) = (x+y-1,y) into A = {y <= x} composed with
+    g(x,y) = x(x-1)/2 + y, exactly as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 7.2,
+    printed pp. 81-84 (tmp/sources/munkres-solutions-whitman.pdf). He checks each of the
+    three maps separately; the card writes the explicit inverses f^{-1} and F^{-1} and
+    the consecutive-block count for g, which is his argument that the blocks
+    x(x-1)/2 + 1, ..., x(x+1)/2 partition Z_+. No defect found.
 ---
 
 ::: {.exercise}
@@ -29,6 +47,8 @@ Show that the maps $f$ and $g$ of Examples 1 and 2 are bijections.
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.2, printed pp. 81--84** (`tmp/sources/munkres-solutions-whitman.pdf`); the three maps checked are the book's Examples 1 and 2, and the inverse formulas and the block count for $g$ are his argument written out.
+
 For Example 1, the map $f:\ZZ\to\ZZ_+$ is
 $$
 f(n)=

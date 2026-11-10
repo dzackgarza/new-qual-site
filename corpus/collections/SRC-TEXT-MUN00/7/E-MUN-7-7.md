@@ -21,6 +21,22 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §7 Exercise 7, printed p. 52; the reference is
+    to the D and E of Exercise 5, which are stored on E-MUN-7-5.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 7.7,
+    printed p. 90 (tmp/sources/munkres-solutions-whitman.pdf). The two injections and the
+    appeal to Schroeder-Bernstein are his; the card's encoding of a positive-integer
+    sequence as blocks of 1s separated by 0s is the injection D -> E, and the recovery of
+    the block lengths is what makes it injective. No defect found.
 ---
 
 ::: {.exercise}
@@ -29,6 +45,8 @@ Show that the sets D and E of Exercise 5 have the same cardinality.
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.7, printed p. 90** (`tmp/sources/munkres-solutions-whitman.pdf`); the two injections and the appeal to Schroeder--Bernstein are his.
+
 Recall
 $$
 D=(\ZZ_+)^\omega,

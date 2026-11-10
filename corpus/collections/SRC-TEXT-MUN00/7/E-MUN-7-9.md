@@ -21,6 +21,34 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §7 Exercise 9, printed pp. 52-53; the three
+    parts and both hints are stored as printed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Part (b)'s printed hint does not produce a solution. If f agrees with h off 3 and
+    f(3) = -h(3), then the equation (*) at n = 3 reads f(3) = [f(4)]^2 - [f(2)]^2 =
+    [h(4)]^2 - [h(2)]^2 = h(3), so f(3) = h(3); and h(3)^2 = 3 by (*) at n = 2, so
+    h(3) = +-sqrt3 is nonzero and the negated value fails the equation. Dan Whitman's
+    manual reaches the same conclusion on its printed p. 92 ("the hint as given does not
+    exactly work") and then repairs it by defining f(3) = -sqrt3 and propagating the
+    recursion. The card states the obstruction and carries that repaired construction;
+    what is corrected is the hint, not the statement of the exercise.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 7.9,
+    printed pp. 92-93 (tmp/sources/munkres-solutions-whitman.pdf). Part (a) is his
+    reformulation h(n+1) = sqrt(h(n) + h(n-1)^2) with positivity, (b) his f with
+    f(3) = -sqrt3 and the recursion for n > 3, and (c) the two contradictory values of
+    h(3).
 ---
 
 ::: {.exercise}
@@ -53,6 +81,8 @@ $$
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.9, printed pp. 92--93** (`tmp/sources/munkres-solutions-whitman.pdf`); (a) is his reformulation with positivity, (b) his repaired construction, and (c) the two values of $h(3)$. He also records that the printed hint for (b) fails, which the card now shows explicitly.
+
 (a) Rewrite the recurrence as
 $$
 [h(n+1)]^2=h(n)+[h(n-1)]^2.
@@ -70,7 +100,11 @@ h(n)=[h(n+1)]^2-[h(n-1)]^2
 $$
 for every $n\ge2$. Hence a solution exists.
 
-(b) The printed hint suggesting that one merely negate $h(3)$ and leave all later values unchanged is not correct: the equation for $n=3$ would then fail. Instead define a second solution $f$ by
+(b) The printed hint, that one merely negate $h(3)$ and leave every later value unchanged, does not work: the equation for $n=3$ would fail. Indeed, if $f(i)=h(i)$ for $i\ne3$ and $f(3)=-h(3)$, then
+$$
+[f(4)]^2-[f(2)]^2=[h(4)]^2-[h(2)]^2=h(3)\ne-h(3)=f(3),
+$$
+because $h$ satisfies $(*)$ at $n=3$ and $h(3)^2=3$, so $h(3)=\pm\sqrt3\ne0$. The sign at $3$ has to be propagated, which is what the second solution below does. Define $f$ by
 $$
 f(1)=1,\qquad f(2)=2,\qquad f(3)=-\sqrt3,
 $$
