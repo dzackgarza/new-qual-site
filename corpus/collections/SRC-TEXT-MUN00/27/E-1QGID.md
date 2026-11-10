@@ -12,9 +12,22 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §27 Exercise 3, printed p. 178, with Exercise
+    26.1(b) and Theorem 23.3; the three parts are stored as printed.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 27.3, PDF pp. 16-17. [0,1] is compact in the
+    coarser usual topology; if it were compact in the K-topology the two would coincide by
+    Exercise 26.1(b), which they do not. R_K minus 0 is two rays with the usual topology, so
+    R_K is connected; and a path from 0 to 1 would make [0,1] compact in R_K.
+    (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -30,125 +43,11 @@ Recall that $\RR_K$ denotes $\RR$ in the $K$-topology.
 :::
 
 ::: {.solution}
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 27.3, PDF pp. 16--17** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the three parts are theirs, with the citation in (b) repaired: $\overline K$ there means the closure of $K$ in the usual topology.
 
-::: pf
+(a) $[0,1]$ is compact in the usual topology, hence in the coarser of the two topologies; if it were compact in the strictly finer $K$-topology, then by Exercise 26.1(b) the two topologies on $[0,1]$ would coincide, which they do not (the set $[0,1]-K$ is open in the $K$-topology and not in the usual one). So $[0,1]$ is not compact as a subspace of $\RR_{K}$.
 
-::: {.pf-step #part-a}
-Part (a): $[0, 1]$ is not compact in $\RR_K$.
+(b) $\RR_{K}-\{0\}=(-\infty,0)\cup(0,\infty)$. The first piece inherits the usual topology. For the second, a $K$-basis element intersected with $(0,\infty)$ is $(a,b)\cap(0,\infty)$ or $((a,b)-K)\cap(0,\infty)=(a,b)\cap(0,\infty)-K$, a set open in the usual topology of $(0,\infty)$ (here $K\subset(0,\infty)$ and $K$ is closed in the usual topology). So $(0,\infty)$ inherits the usual topology, hence is connected; so are its closure $[0,\infty)$ and $(-\infty,0]$, and these two meet at $0$, so $\RR_{K}$ is connected by Theorem 23.3.
 
-::: pf-proof
-
-::: pf-step
-The basis for $\RR_K$ includes sets of the form $(a, b) \setminus K$, where $K = \{\frac{1}{n} : n \in \ZZ_+\}$.
-:::
-
-::: pf-step
-Define the open cover $\mathcal{U}$ of $[0, 1]$ by:
-$$\mathcal{U} = \{(-1, 1) \setminus K\} \cup \left\{\left(\frac{1}{n+1}, \frac{1}{n-1}\right) : n \ge 2\right\} \cup \left\{\left(\frac{1}{2}, 2\right)\right\}.$$
-:::
-
-::: pf-step
-$\mathcal{U}$ is an open cover: $(-1, 1) \setminus K$ contains $0$ and all points of $[0, 1] \setminus K$; each point $\frac{1}{n} \in K$ with $n \ge 2$ belongs to $(\frac{1}{n+1}, \frac{1}{n-1})$; and $1 \in (\frac{1}{2}, 2)$.
-:::
-
-::: pf-step
-Any subcover must contain $(-1, 1) \setminus K$ to cover $0$.
-:::
-
-::: pf-step
-Since $(-1, 1) \setminus K$ contains no point of $K$, and each interval $(\frac{1}{n+1}, \frac{1}{n-1})$ contains only the single point $\frac{1}{n} \in K$, any subcover must contain every interval $(\frac{1}{n+1}, \frac{1}{n-1})$ for all $n \ge 2$.
-:::
-
-::: pf-step
-Thus no finite subcover exists, so $[0, 1]$ is not compact in $\RR_K$.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Part (b): $\RR_K$ is connected.
-
-::: pf-proof
-
-::: pf-step
-The subspace topology on $(-\infty, 0)$ is the standard Euclidean topology since $(-\infty, 0) \cap K = \emptyset$, so $(-\infty, 0)$ is connected.
-:::
-
-::: pf-step
-The subspace topology on $(0, \infty)$ is also the standard Euclidean topology because $K$ has no limit points in $(0, \infty)$, so $(0, \infty)$ is connected.
-:::
-
-::: pf-step
-Suppose $\RR_K = U \cup V$ is a separation of $\RR_K$ into disjoint open sets. Without loss of generality, let $0 \in U$.
-:::
-
-::: pf-step
-Since $0 \in U$ and $U$ is open, $U$ contains a basic neighborhood $(-\varepsilon, \varepsilon) \setminus K$ for some $\varepsilon > 0$.
-:::
-
-::: pf-step
-Then $U \cap (-\infty, 0) \supseteq (-\varepsilon, 0) \neq \emptyset$. Since $(-\infty, 0)$ is connected, $(-\infty, 0) \subseteq U$.
-:::
-
-::: pf-step
-Similarly, $U \cap (0, \infty) \supseteq ((0, \varepsilon) \setminus K) \neq \emptyset$. Since $(0, \infty)$ is connected, $(0, \infty) \subseteq U$.
-:::
-
-::: pf-step
-Thus $\RR = (-\infty, 0) \cup \{0\} \cup (0, \infty) \subseteq U$, so $V = \emptyset$.
-:::
-
-::: pf-step
-Hence no separation exists, so $\RR_K$ is connected.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Part (c): $\RR_K$ is not path connected.
-
-::: pf-proof
-
-::: pf-step
-Suppose there exists a continuous path $\gamma: [0, 1] \to \RR_K$ with $\gamma(0) = 0$ and $\gamma(1) = 1$.
-:::
-
-::: pf-step
-Since the topology of $\RR_K$ is strictly finer than the standard topology on $\RR$, $\gamma$ is also continuous as a map into the standard Euclidean space $\RR$.
-:::
-
-::: pf-step
-By the Intermediate Value Theorem, the image $\gamma([0, 1])$ is a connected subset of standard $\RR$ containing $0$ and $1$, so $[0, 1] \subseteq \gamma([0, 1])$.
-:::
-
-::: pf-step
-Since $[0, 1]$ is compact in standard $\RR$ and $\gamma: [0, 1] \to \RR_K$ is continuous, the image $\gamma([0, 1])$ is compact in $\RR_K$.
-:::
-
-::: pf-step
-The interval $[0, 1]$ is closed in $\RR_K$ because $\RR_K \setminus [0, 1] = (-\infty, 0) \cup (1, \infty)$ is open in $\RR_K$.
-:::
-
-::: pf-step
-As a closed subset of the compact space $\gamma([0, 1])$, $[0, 1]$ must be compact in $\RR_K$.
-:::
-
-::: pf-step
-This directly contradicts step [](#part-a){.pf-ref}.
-:::
-
-::: pf-step
-Thus no continuous path connects $0$ to $1$, so $\RR_K$ is not path connected. Q.E.D.
-:::
-
-:::
-
-:::
-
-:::
-
+(c) If there were a path $f:[0,1]\to\RR_{K}$ from $0$ to $1$, then $f$ would be continuous as a map into $\RR$ (the usual topology being coarser), so by the intermediate value theorem $[0,1]\subset f([0,1])$; as $f([0,1])$ is compact in $\RR_{K}$ (continuous image of a compact space) and $[0,1]$ is closed in it, $[0,1]$ would be compact in $\RR_{K}$, contradicting (a). So $\RR_{K}$ is connected but not path connected.
 :::
