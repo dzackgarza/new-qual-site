@@ -12,14 +12,19 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §23 Exercise 4, printed p. 152, with the finite
+    complement topology of Example 3 in §12; the stored statement is the printed sentence.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 23.4, PDF p. 2. In a separation of an infinite set
+    with the finite complement topology both sides would be infinite and both complements
+    finite, which is impossible. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -28,15 +33,7 @@ Show that if $X$ is an infinite set, it is connected in the finite complement to
 :::
 
 ::: {.solution}
-In the finite-complement topology on an infinite set $X$, every nonempty open set has finite complement.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.4, PDF p. 2** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs, with the cardinal count made explicit.
 
-Suppose $U,V$ were disjoint nonempty open sets. Then
-$$
-U\subseteq X-V,
-$$
-so $U$ is finite because $X-V$ is finite. But $U$ is nonempty open, so $X-U$ is also finite. Therefore
-$$
-X=U\cup(X-U)
-$$
-would be finite, a contradiction. Thus no separation exists, and $X$ is connected.
+Let $X$ be infinite with the finite complement topology and suppose $X=A\cup B$ is a separation, so $A$ and $B$ are disjoint nonempty open sets. Being open and nonempty, $X-A$ is finite and $A\ne X$; since $X$ is infinite, $A$ is infinite, and likewise $B$ is infinite. But $B\subset X-A$, which is finite: a contradiction. So $X$ is connected.
 :::
