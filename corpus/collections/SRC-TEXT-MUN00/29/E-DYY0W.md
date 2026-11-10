@@ -12,9 +12,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §29 Exercise 9, printed p. 186, with
+    Supplementary Exercise TG.5(c) and Exercise 29.3; the stored statement is the printed
+    sentence.
 - event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-30
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 29.9, PDF p. 23. The quotient map to the coset
+    space is continuous and open, so the image of the locally compact group is locally
+    compact. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -23,49 +35,7 @@ Show that if $G$ is a locally compact topological group and $H$ is a subgroup, t
 :::
 
 ::: {.solution}
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.9, PDF p. 23** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the one-line argument is theirs.
 
-::: pf
-
-::: {.pf-step #pi-definition}
-Let $\pi : G \to G/H$ be the quotient map, and let $gH \in G/H$ be an arbitrary coset.
-
-::: pf-proof
-fix a point of $G/H$.
-:::
-
-:::
-
-::: pf-step
-Since $G$ is locally compact, there is a compact neighborhood $K$ of $g$ in $G$.
-
-::: pf-proof
-definition of local compactness.
-:::
-
-:::
-
-::: {.pf-step #pi-k-compact-neighborhood}
-$\pi(K)$ is a compact neighborhood of $gH$ in $G/H$.
-
-::: pf-proof
-$\pi$ is continuous and surjective, so $\pi(K)$ is compact; and $\pi$ is an open map (the quotient map of a topological group by a subgroup is open), so $\pi(K)$ is a neighborhood of $\pi(g) = gH$.
-:::
-
-:::
-
-::: {.pf-step #every-point-has-compact-neighborhood}
-Hence every point of $G/H$ has a compact neighborhood, so $G/H$ is locally compact.
-
-::: pf-proof
-Steps [](#pi-definition){.pf-ref} and [](#pi-k-compact-neighborhood){.pf-ref}.
-:::
-
-:::
-
-::: pf-qed
-Step [](#every-point-has-compact-neighborhood){.pf-ref}.
-:::
-
-:::
-
+Let $p:G\to G/H$ be the quotient map. It is continuous and surjective, and it is open by Supplementary Exercise TG.5(c); since $G$ is locally compact, $p(G)=G/H$ is locally compact by Exercise 29.3.
 :::
