@@ -12,14 +12,20 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §21 Exercise 8, printed p. 134, with Theorem
+    21.6; the stored statement is the printed one.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 21.8, PDF p. 25. The three-epsilon argument:
+    uniform convergence bounds the distance from f_n(x_n) to f(x_n), continuity of the limit
+    bounds the distance from f(x_n) to f(x), and the triangle inequality finishes.
+    (tmp/sources/munkres-solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -31,17 +37,19 @@ Show that if the sequence $(f_n)$ converges uniformly to $f$, then $(f_n(x_n))$ 
 :::
 
 ::: {.solution}
-Uniform convergence of continuous maps into a metric space implies that the limit map $f$ is continuous. Let $d$ be the metric on $Y$. Then
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.8, PDF p. 25** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the three-epsilon argument is theirs.
+
+Let $f_{n}\to f$ uniformly, each $f_{n}$ continuous, $x_{n}\to x$, and let $d$ be the metric of $Y$. We show $f_{n}(x_{n})\to f(x)$.
+
+Let $V$ be a neighbourhood of $f(x)$ and choose $\varepsilon>0$ with $B_{d}(f(x),\varepsilon)\subset V$.
+
+By uniform convergence there is $N_{1}$ with $d(f_{n}(t),f(t))<\varepsilon/2$ for all $t\in X$ and all $n\ge N_{1}$; in particular $d(f_{n}(x_{n}),f(x_{n}))<\varepsilon/2$ for $n\ge N_{1}$.
+
+The limit $f$ is continuous (Theorem 21.6), or here simply: since the $f_{n}$ are continuous and the convergence is uniform, $f$ is continuous, so there is $N_{2}$ with $d(f(x_{n}),f(x))<\varepsilon/2$ for $n\ge N_{2}$.
+
+For $n\ge N=\max\{N_{1},N_{2}\}$,
 $$
-d(f_n(x_n),f(x))
-\le d(f_n(x_n),f(x_n))+d(f(x_n),f(x)).
+d(f_{n}(x_{n}),f(x))\le d(f_{n}(x_{n}),f(x_{n}))+d(f(x_{n}),f(x))<\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon,
 $$
-The first term tends to $0$ because
-$$
-\sup_{z\in X}d(f_n(z),f(z))\to0.
-$$
-The second tends to $0$ because $x_n\to x$ and $f$ is continuous. Hence
-$$
-f_n(x_n)\longrightarrow f(x).
-$$
+so $f_{n}(x_{n})\in B_{d}(f(x),\varepsilon)\subset V$. Hence $f_{n}(x_{n})\to f(x)$.
 :::
