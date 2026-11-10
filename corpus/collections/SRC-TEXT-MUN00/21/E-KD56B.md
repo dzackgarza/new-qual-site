@@ -12,14 +12,21 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §21 Exercise 4, printed p. 134, with the lower
+    limit topology of §13 and the ordered square of §16; the stored statement is the printed
+    one.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 21.4, PDF p. 24. Explicit countable bases are
+    given at every point: half-open intervals of decreasing length in R_l, and in the
+    ordered square at the two corners, at points of the interior fibres, and at the two
+    kinds of boundary point of a fibre. (tmp/sources/munkres-solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -29,29 +36,17 @@ Show that $\RR_\ell$ and the ordered square satisfy the first countability axiom
 :::
 
 ::: {.solution}
-For the lower-limit line, the family
-$$
-\mathcal B_x=\{[x,x+1/n):n\in\ZZ_+\}
-$$
-is a countable neighborhood basis at $x$. Indeed every basic neighborhood $[x,b)$ contains one of these for sufficiently large $n$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.4, PDF p. 24** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the countable bases at each kind of point are theirs.
 
-Now let $I_o^2=I\times I$ with dictionary order. We give countable local bases.
+**$\RR_{\ell}$.** For $x\in\RR_{\ell}$ the countable collection $\{U_{n}\}_{n\in\ZZ_{+}}$ with $U_{n}=[x,x+1/n)$ is a basis at $x$: if $V$ is a neighbourhood of $x$ there is a basis element $[a,b)$ with $x\in[a,b)\subset V$, and then $1/n<b-x$ gives $U_{n}=[x,x+1/n)\subset[a,b)\subset V$.
 
-If $0<y<1$, then
-$$
-\left\{\{x\}\times(y-1/n,y+1/n)\cap I^2:n\ge1\right\}
-$$
-forms a local basis at $(x,y)$ after discarding the finitely many terms that leave $I$.
+**The ordered square $I_{o}^{2}$.** At $0\times0$ the sets $U_{n}=[0\times0,\,0\times1/n)$ for $n\in\ZZ_{+}$ form a countable basis; at $1\times1$ the sets $V_{n}=(1\times(1-1/n),\,1\times1]$ do.
 
-At a lower endpoint $(x,0)$ with $x>0$, use intervals
-$$
-\big((x-1/n,1),(x,1/n)\big)
-$$
-for large $n$ with $x-1/n\ge0$. At an upper endpoint $(x,1)$ with $x<1$, use
-$$
-\big((x,1-1/n),(x+1/n,0)\big).
-$$
-Every order interval about the relevant point contains one of these once $n$ is large enough. At the minimum $(0,0)$ use the countable initial rays ending at $(0,1/n)$, and at the maximum $(1,1)$ use the corresponding final rays beginning at $(1,1-1/n)$.
+For $a\times b$ different from $0\times0$ and $1\times1$:
 
-Thus every point of the ordered square has a countable local basis, so it is first countable.
+- if $0<b<1$, put $\delta=\min\{b,1-b\}$; then the sets $\big(a\times(b-\delta/n),\,a\times(b+\delta/n)\big)$ for $n\in\ZZ_{+}$ are a countable basis at $a\times b$;
+- if $b=0$ (so $a>0$), the sets $\big((a-a/n)\times0,\ a\times1/n\big)$ for $n\in\ZZ_{+}$ are a countable basis at $a\times0$;
+- if $b=1$ (so $a<1$), the sets $\big(a\times(1-1/n),\ ((a+(1-a)/n)\times1\big)$ for $n\in\ZZ_{+}$ are a countable basis at $a\times1$.
+
+In each case the sets are open intervals or half-open intervals of the order topology containing the point, and any basis element $((a',b'),(a'',b''))$ containing it contains one of them: in the first case because the point is not on the boundary fibre and the interval has positive room in both coordinates; in the second because the lower end can be pushed down in the first coordinate and the upper end kept at first coordinate $a$ with a small positive second coordinate; in the third symmetrically.
 :::
