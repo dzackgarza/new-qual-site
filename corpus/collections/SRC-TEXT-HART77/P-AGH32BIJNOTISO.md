@@ -166,3 +166,11 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), an
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 3.2, PDF p. 4: (a) an inverse would give a polynomial $f$ with $f(t^2,t^3)=t$, which is impossible; (b) injectivity from $(x-y)^p=x^p-y^p=0$ in characteristic $p$, and noninvertibility because there is no polynomial $f$ with $f(t^p)=t$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.2, PDF pp. 9--10: (a) bijectivity and then bicontinuity, by showing that every proper closed subset of the cuspidal cubic is finite so that the inverse carries closed sets to closed sets; (b) bijective and bicontinuous, with $t\mapsto t^{1/p}$ not a polynomial.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.2, PDF p. 31: the same two examples, with surjectivity of the Frobenius morphism read off from $k$ being perfect, as it is when algebraically closed.
+The three sets argue nonisomorphism on coordinate rings or on the failure of a polynomial inverse; the proof above takes the second route and states the closed-set argument for bicontinuity in both parts, and it uses algebraic closedness of $k$ only for the surjectivity of $t\mapsto t^p$.
+Agree.
+:::

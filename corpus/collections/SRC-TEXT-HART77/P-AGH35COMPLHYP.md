@@ -110,3 +110,11 @@ Hence $\PP^n\setminus H$ is affine.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 3.5, PDF p. 4: he identifies $\PP^n$ with its image under the $d$-uple embedding, so that $H$ is the intersection of that image with a hyperplane in $\PP^N$, and reads $\PP^n\setminus H$ as a closed subset of $\PP^N$ minus a hyperplane, which is an affine space.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.5, PDF p. 11: from his solution to Exercise I.2.12(c), $\rho_d^{-1}(Z(f))=Z(\theta^{-1}(f))\cap Z(\ker\theta)$ is cut out by the linear polynomial $\sum_j\alpha_jy_j$, and a rotation matrix carries that hyperplane to a coordinate hyperplane.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.5, PDF p. 32: the same identification, $\PP^N$ minus a hyperplane being affine and $\PP^n\setminus H$ its closed subset.
+The three sets use the printed hint in the same way; the proof above writes the linear form $L=\sum_i c_iy_i$ as the hyperplane section of the degree-$d$ equation and checks $L\circ\rho_d=f$ on every point, which is the substitution both Borcherds and Egbert leave to the reader.
+Agree.
+:::

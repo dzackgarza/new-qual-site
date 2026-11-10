@@ -210,3 +210,15 @@ Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove (a)--(c), re
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 3.16.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.16, PDF p. 14: for (a) and (b) he writes $X=Z(\mathfrak a)$, $Y=Z(\mathfrak b)$ and forms, for $f_1\in\mathfrak a$ and $f_2\in\mathfrak b$, the polynomial $g(\{z_{ij}\})=\sum_{i,j}\alpha_{ij}z_{ij}$ from the expansion of $f_1(x)f_2(y)$, so that $f_1(P_1)f_2(P_2)=0$ exactly when $g(\psi(P_1,P_2))=0$; he does not treat (c).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.16, PDF p. 36: $X\times Y=(X\times\PP^m)\cap(\PP^n\times Y)=\pi_m^{-1}(X)\cap\pi_n^{-1}(Y)$, and (b) "similar", with no (c).
+The proof above constructs the two ambient projections on the Segre charts first, then gets (a) as local closedness together with irreducibility chart by chart, (b) as closedness in the projective variety $S$, and (c) as the affine universal property transported along those charts; the published sets reach (a) and (b) only, and neither writes the projections as morphisms.
+Agree on (a) and (b); (c) is supplied here.
+:::
+
+::: {.remark}
+Part (c) is starred in the source.
+:::

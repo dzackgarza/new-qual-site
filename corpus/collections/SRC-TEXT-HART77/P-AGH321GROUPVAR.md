@@ -239,3 +239,11 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 3.21.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.21, PDF p. 15: (a) and (b) by checking that $f_1(-x)/f_2(-x)$ and $f_1(x^{-1})/f_2(x^{-1})$ are quotients of polynomials; (c) $\phi_1\cdot\phi_2$ acting by $\phi_1(x)\phi_2(x)$; (d) $\Hom(X,\AA^1)\cong\Hom(k[x],\mco(X))\cong\mco(X)$ with the group law checked; (e) "similar to (d)".
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.21, PDF p. 38: (a) $\AA^1$ is a group under addition with inverse $y\mapsto-y$, and (b) "clear"; he does not treat (c), (d) or (e).
+The proof above states the group axioms on $\Hom(X,G)$ pointwise with the identity and inverse morphisms, and derives (d) and (e) as ring identifications through the coordinate function; Troiani's (e) is a one-word reference to (d), and Egbert stops after (b).
+Agree with Troiani's (a)--(d); (e) is supplied here.
+:::

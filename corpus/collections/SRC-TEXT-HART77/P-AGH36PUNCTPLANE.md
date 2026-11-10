@@ -109,3 +109,11 @@ Step [](#s2){.pf-ref} proves the required nonaffineness; step [](#s1){.pf-ref} s
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 3.6, PDF p. 4: a regular function on $X$ is $f/g$ with $f$ and $g$ coprime, the curves $f=0$ and $g=0$ meet in finitely many points, and $g$ can vanish only at $(0,0)$ or where $f$ vanishes, so $g$ is constant and $\mco(X)=k[x,y]$; the map $X\to\AA^2$ is then an isomorphism of coordinate rings but not surjective on points.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.6, PDF p. 11: the same computation of $\mco(X)=k[x,y]$, by Bézout's theorem, and then the equivalence $\Hom(\AA^2,X)\cong\Hom(k[x,y],k[x,y])$ of Proposition I.3.5, whose identity map corresponds to the non-isomorphism $X\hookrightarrow\AA^2$.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.6, PDF p. 32: an affine variety has $\mco(X)$ equal to its coordinate ring, and $f/g$ with $(f)+(g)=1$ has $g$ vanishing in only finitely many points, so $g$ is constant.
+All three use the printed hint; the proof above reads $\mco(X)$ off the two charts $D(x)$ and $D(y)$ by a divisibility count in the UFD $k[x,y]$, which avoids the Bézout and coprimality arguments, and it is Proposition I.3.5, not Exercise 3.5, that the hint's "(3.5)" must mean, as all three sets read it.
+Agree.
+:::

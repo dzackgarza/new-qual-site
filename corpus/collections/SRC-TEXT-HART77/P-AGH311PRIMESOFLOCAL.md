@@ -127,3 +127,11 @@ and every closed subvariety of $X$ through $P$ arises uniquely in this way.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 3.11, PDF p. 4: reduce to $X$ affine, where the irreducible varieties containing $P$ correspond to the prime ideals of $A(X)$ contained in the maximal ideal $M$ of $P$, that is, to the prime ideals of the localization $\mco_P$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.11, PDF pp. 12--13: the map $X'\mapsto\mathfrak p_{X'}$, with a lemma that intersecting with an open subset $U$ and taking the closure in $X$ are inverse bijections between the irreducible closed subsets of $U$ and those of $X$ not contained in $X\setminus U$, which is then applied chart by chart.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.11, PDF p. 33: "this follows from properties of localization of the coordinate ring".
+The proof above isolates the passage from $X$ to an affine neighborhood and from that neighborhood to the localization, which is the bijection Troiani states as a lemma and Egbert leaves to the reader.
+Agree.
+:::

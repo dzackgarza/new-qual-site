@@ -258,3 +258,11 @@ Step [](#s2){.pf-ref} proves (a), steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 3.18.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 3.18.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.18, PDF p. 37: (a) the localization of an integrally closed domain is integrally closed, so each local ring of $Y$ is; (b) through the criterion $H^1(\PP^3,\mathcal I_Y)=0$ for projective normality, with $h^0(\PP^3,\OO(1))=4<5=h^0(\PP^1,\OO_{\PP^1}(4))=h^0(Y,\OO_Y(1))$, and $Y$ normal as the image of $\PP^1$; (c) $Y$ is the image of $v_4:\PP^1\to\PP^3$ and $h^1(\PP^1,\OO(1))=0$.
+The proof above keeps the elementary route: (a) passes from $S(Y)$ to the degree-zero graded pieces $(S_{x_i})_0$ and uses the affine chart description of Exercise I.2.6, and (b) exhibits $t^2u^2=yw/z$ as an integral element outside $S(Y)$ rather than invoking the cohomological criterion of Chapter III, which Egbert's (b) and (c) use.
+Agree with Egbert; (b) is proved here without cohomology.
+:::

@@ -99,3 +99,11 @@ Step [](#s1){.pf-ref} proves (b), and step [](#s2){.pf-ref} proves (a).
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 3.7, PDF p. 4: only (b), where $Y\cap H=\varnothing$ makes $Y$ a closed subset of the affine variety $\PP^n\setminus H$ and therefore a finite set of points, contradicting $\dim Y\ge1$; his (a) is the special case recorded under 3.1(d).
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.7, PDF p. 11: (b), which implies (a), by a lemma that an irreducible subset of an irreducible space stays irreducible as a subset, so $Y$ is a closed irreducible subset of the affine variety $\PP^n\setminus H$ and hence a point.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.7, PDF p. 32: (a) and (b) both from the projective dimension theorem.
+The proof above takes the affine/projective contradiction of Borcherds and Troiani for (b) and reduces (a) to it through Exercise I.2.8, which is the step Troiani and Egbert obtain from dimension theory instead.
+Agree.
+:::

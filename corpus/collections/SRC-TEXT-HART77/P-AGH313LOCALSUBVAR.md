@@ -169,3 +169,11 @@ Step [](#s3){.pf-ref} proves that $\mco_{Y,X}$ is local with residue field $K(Y)
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 3.13, PDF pp. 4--5: $\mco_{Y,X}$ is a ring, the classes of functions vanishing on $Y$ form the unique maximal ideal because a class outside it has the inverse $\generators{W,1/g}$ with $W=V\cap\{g\ne0\}$ meeting $Y$, the residue field is $K(Y)$, and with $X$ affine, $B=A(X)$ and $\mathfrak p$ the functions vanishing on $Y$, Theorem I.1.8A gives $\operatorname{ht}\mathfrak p+\dim(B/\mathfrak p)=\dim B$, which is $\dim\mco_{Y,X}+\dim Y=\dim X$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.13, PDF p. 13: the same maximal ideal $\mathfrak m_Y$, the residue field through the surjection $\mco_{Y,X}\to K(Y)$ with kernel $\mathfrak m_Y$, and the dimension through $\operatorname{ht}\mathfrak m_Y+\dim A(X)/\mathfrak m_Y=\dim A(X)$ after reducing to $X$ affine and $Y$ closed by Proposition I.1.10.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.13, PDF p. 34: the same three steps in the same order.
+The proof above isolates the shrinking step — replacing $(X,Y)$ by $(W,Y\cap W)$ with $W$ affine and $Y\cap W$ closed — and proves that it changes neither the ring nor either dimension, which all three sets perform silently; the ring identification $\mco_{Y,X}\cong A_{\mathfrak p}$ is then proved with its three verifications rather than asserted.
+Agree.
+:::

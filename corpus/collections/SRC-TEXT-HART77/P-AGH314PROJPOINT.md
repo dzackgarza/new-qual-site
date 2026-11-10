@@ -193,3 +193,11 @@ $$
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 3.14, PDF p. 5: (a) takes $\PP^n$ to be the hyperplane $x_0\ne0$ with $P=(1:0:\cdots:0)$, so that the line through $P$ and $x$ meets it at $(0:x_1:\cdots:x_n)$, a morphism on the neighborhood $x_i\ne0$; (b) the projection of $(t^3,t^2u,tu^2,u^3)$ is $(t^3,t^2u,u^3)$, whose image is the whole of $x_1^3=x_2x_0^2$, a curve with a cusp at $(0,0,1)$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 3.14.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.14, PDF pp. 34--35: (a) as Borcherds; (b) $\pi(t^3,t^2u,tu^2,u^3)=(t^3,t^2u,u^3)$, and substituting gives $t^6u^3-t^6u^3=0$, so the image lies on the cuspidal cubic $x^3z-y^3$ in his plane coordinates.
+The card's equation $y^3=x^2w$ is Borcherds' $x_1^3=x_2x_0^2$ and Egbert's $x^3z-y^3$ in the plane coordinates $[x:y:w]$; where both sets show containment of the image and identify the cusp, the proof above also proves the reverse inclusion on the two charts of the cubic and checks that the singular point is unique, which the published solutions assert.
+Agree with Borcherds.
+:::

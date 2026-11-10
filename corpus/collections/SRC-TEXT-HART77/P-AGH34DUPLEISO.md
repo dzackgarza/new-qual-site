@@ -116,3 +116,11 @@ Step [](#s3){.pf-ref} exhibits a morphism inverse to $\rho_d$, so the $d$-uple e
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 3.4, PDF p. 4: it suffices to show that $\phi^{-1}$ is regular near $\phi(1:x_1:\cdots:x_n)$, where it sends $(m_0:\cdots:m_N)$ to the coordinates $(m_{i0}:\cdots:m_{in})$ of the monomials $x_i^{d-1}x_j$, and that is a regular map.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.4, PDF p. 10: the image of $d$-uple embedding is a homeomorphism by Exercise I.2.12, so by Exercise 3.3 it remains to show that $\rho_d^*$ is an isomorphism of local rings, which he checks on the degree-zero parts of the localizations at the maximal ideals and then on the maps between affine charts.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.4, PDF p. 32: the inverse $v_d^{-1}:(x_0:\cdots:x_n)\mapsto(x_0^{d-1}x_0:\cdots:x_0^{d-1}x_n)$ on the chart where $x_0\ne0$.
+The proof above writes the inverse on every chart $D_+(y_{ii})$, not only the first, and checks both inverse identities, which is the chart-cover step Borcherds and Egbert take for granted; Troiani reaches the same conclusion through the local-ring criterion of Exercise 3.3.
+Agree.
+:::

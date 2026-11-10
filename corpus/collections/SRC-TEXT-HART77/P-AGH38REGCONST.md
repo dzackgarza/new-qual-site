@@ -108,3 +108,11 @@ Step [](#s2){.pf-ref} applies to every regular function on $\PP^n\setminus(H_i\c
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 3.8, PDF p. 4: a regular function on $\PP^n\setminus H_i$ is $f_i/x_i^{d_i}$ with $f_i$ homogeneous of degree $d_i$, so a function regular off $H_i\cup H_j$ satisfies $f_ix_j^{d_j}=f_jx_i^{d_i}$, which forces $f_i=x_i^{d_i}$ up to a constant and the function to be constant.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.8, PDF pp. 11--12: he proves the stronger statement that a regular function on an open subset of $\PP^n$ is constant, writing it as $f_1/f_2$ with $f_1,f_2$ homogeneous of equal degree and using that $f_2$ has only finitely many zeros and $k$ is infinite.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.8, PDF p. 33: $f=f_i/x_i^{\deg f_i}=f_j/x_j^{\deg f_j}$, so $f_ix_j^{\deg f_j}=f_jx_i^{\deg f_i}$, and since $x_i$ and $x_j$ are coprime the numerator $f_i$ is a power of $x_i$ and the function is constant.
+Borcherds and Egbert both write the exceptional set as $H_i\cup H_j$, where the assertion is false: $\PP^n\setminus(H_i\cup H_j)$ is the open set $x_ix_j\ne0$, on which $x_j/x_i$ is a regular nonconstant function. The printed exercise has $H_i\cap H_j$, and the proof above proves that statement, using $\PP^n\setminus(H_i\cap H_j)=D_+(x_i)\cup D_+(x_j)$.
+Agree.
+:::

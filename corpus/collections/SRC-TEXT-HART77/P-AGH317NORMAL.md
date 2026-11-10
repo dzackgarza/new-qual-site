@@ -353,3 +353,11 @@ Step [](#s3){.pf-ref} proves (a), steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 3.17.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.17, PDF pp. 14--15: (a) reduces to $\PP^1$ by Exercise 3.1(c) and uses that $k[x_0,x_1]$ is a UFD; (b) is marked "Incomplete" after clearing denominators in a monic equation over $S(Q_1)$ and showing $g_2(P)=0\Rightarrow g_1(P)=0$; (c) takes $a=y/x$ over $A=k[t^2,t^3]$ and the monic polynomial $X^2-x^2$, writing $f(a)=a^2-x^2=y^2/x^2-x^2=(y^2-x^3)/x$; the substitution is wrong as printed, since $a^2=y^2/x^2=x^3/x^2=x$, so $a^2-x^2=x-x^2$ and the last expression equals $y^2/x-x^2$, not $a^2-x^2$; the monic relation that does hold is $a^2-x=0$.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.17, PDF pp. 36--37: (a) from conics being isomorphic to $\PP^1$; (b) $Q_1$ by the Jacobian criterion and $Q_2$ by the normality of $k[x,y,z]/(z^2-xy)$ through (II, Ex. 6.4); (c) "for curves, normal and nonsingular are equivalent"; (d) since a localization of an integrally closed domain is integrally closed (Atiyah--Macdonald 5.12); (e) $\widetilde Y$ with $k[\widetilde Y]$ the normalization of $k[Y]$, finite by Theorem I.3.9A.
+The proof above proves (b) without reference to (II, Ex. 6.4) or to the Jacobian criterion, by showing $k[s^2,st,t^2]=k[s,t]\cap K$ is integrally closed in $K$ in every characteristic; that replaces a common argument for $Q_2$ which divides by $2$, and it covers $Q_1$ by its four affine charts. Its (c) proves the integral element $t$ and its nonmembership in $k[t^2,t^3]$ instead of citing the curve equivalence, and (e) proves the universal property rather than only the existence of the normalization.
+Agree with Egbert on (a), (d), (e) and with the conclusion of Troiani's (c), whose displayed computation does not check out as printed; (b) is the part all three leave to a citation or to a characteristic-two caveat.
+:::

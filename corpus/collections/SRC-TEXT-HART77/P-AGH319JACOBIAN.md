@@ -111,3 +111,10 @@ Hartshorne's sentence in part (b) records the status when the book was written.
 As of 2026-09-17, the characteristic-zero two-variable case remains open.
 The unrestricted higher-dimensional conjecture is no longer open: a counterexample in dimension three was announced in July 2026, and counterexamples in every dimension greater than two are described in Shuhong Gao, *Counterexamples to the Jacobian conjecture in dimensions greater than two*, arXiv:2608.00222.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 3.19.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 3.19.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.19, PDF p. 38: if any $f_i\in k$ then $\phi$ would not be surjective, and the derivative of a linear nonconstant polynomial is a unit, so the Jacobian is a unit; he marks the converse "SKIP".
+The proof above differentiates $\psi\circ\phi=\mathrm{id}$ and takes determinants, which gives the unit $J_\psi\circ\phi$ directly, and then uses that the units of a polynomial ring are the nonzero constants; it does not argue that the $f_i$ are linear, which is false in general.
+:::

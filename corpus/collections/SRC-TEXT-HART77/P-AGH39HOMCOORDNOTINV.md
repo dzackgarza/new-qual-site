@@ -132,3 +132,11 @@ $$
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 3.9, PDF p. 4: $S(X)=k[X_0,X_1]$, while $S(Y)$ is the subring $k[X_0^2,X_0X_1,X_1^2]$ of $k[X_0,X_1,X_2]$, "which is not a graded polynomial ring in $2$ variables (as the space of elements of the smallest nonzero degree is $3$ dimensional)".
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.9, PDF p. 12: $S(X)\cong S^1$ and $S(Y)\cong S^2/(x_0x_1-x_2^2)$, and the first is a UFD while the second is not, since $x_2^2=x_0x_1$.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.9, PDF p. 33: $S(X)=k[x,y]$ and $S(Y)=k[x,y,z]/(xy-z^2)$, whose maximal ideal $\mathfrak m=(x,y,z)$ at the vertex has $\dim_k\mathfrak m/\mathfrak m^2=3$, which no $k[s,t]$ has.
+Borcherds' conclusion is about graded polynomial rings, and a ring isomorphism $S(X)\cong S(Y)$ need not preserve the grading, so his sentence as printed does not close; the two invariants that do are the ones in the other sets, unique factorization (Troiani, and the proof above) and the embedding dimension $\dim_k\mathfrak m/\mathfrak m^2$ (Egbert).
+Agree with Troiani and Egbert.
+:::

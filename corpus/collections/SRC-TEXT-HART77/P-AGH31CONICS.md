@@ -177,3 +177,11 @@ Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 3.1, PDF p. 4: (a) and (b) by comparing coordinate rings as in Exercise 1.1, a proper open subset of $\AA^1$ having a unit outside $k$; (c) by moving three points of a nonsingular conic to the coordinate points, which puts every nonsingular conic in the form $xy+yz+zx=0$, and identifying that one conic with the $2$-uple embedding of $\PP^1$; (d) by Exercise 3.7(a), that two one-dimensional closed subsets of $\PP^2$ meet, which fails for the two parallel lines of $\AA^2$; (e) by Theorem I.3.4, the global regular functions on a projective variety being constant.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.1, PDF p. 9: (a) and (b) as above; (c) by writing the conic as $x^tMx$ with $M$ symmetric and diagonalizing $M$ by an orthogonal change of coordinates; (e) from Theorems I.3.2 and I.3.4. He gives no (d).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.1, PDF pp. 30--31: the same arguments, with (c) by the genus-degree formula and the embedding criterion of Chapter IV and (d) as the assertion that two lines meet in $\PP^2$ and not in $\AA^2$.
+Troiani's (c) covers only $\operatorname{char}k\ne2$: in characteristic two the cross terms of $x^tMx$ vanish, and an alternating symmetric matrix cannot be diagonalized, whereas the normal form $x^2-yz$ above is reached by invertible linear changes in every characteristic. Part (d) is asserted and not proved in all three sets, and the proof above supplies the disjoint lines and the intersection theorem it needs.
+Agree.
+:::

@@ -105,3 +105,11 @@ Step [](#s3){.pf-ref} is the required equality.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 3.12, PDF p. 4: by Exercise 2.6 there is an affine neighborhood $Y$ of $P$ with $\dim Y=\dim X$, and $\mco_{P,X}=\mco_{P,Y}$, so $\dim X=\dim Y=\dim\mco_{P,Y}$ by Theorem I.3.2(c).
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.12, PDF p. 13: three cases, quasi-affine through Proposition I.1.10 and Theorem I.3.2(c), projective through the affine charts $X_i$ of Exercise I.2.6, quasi-projective through Exercise I.2.7(b), with the observation that stalks can be computed locally.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.12, PDF p. 34: $\dim X=\dim A=\dim A/\mathfrak p+\operatorname{ht}\mathfrak p=0+\operatorname{ht}\mathfrak p=\dim\mco_P$.
+The proof above follows the printed hint and Borcherds' one-line reduction, replacing his citation of Exercise 2.6 by the equality of function fields of a variety and a nonempty open subset, and it records the equality $\dim U=\dim X$ as its own step.
+Agree.
+:::

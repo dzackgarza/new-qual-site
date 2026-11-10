@@ -197,3 +197,10 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 3.20.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 3.20.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.20, PDF p. 38, writes "Since projective space is proper this works" for (a) and "Consider a single variable complex function with a pole" for (b); neither is an argument for the statement.
+No retained set contains a proof of this exercise. The proof above reduces to the local ring $\mco_{P,Y}$, shows the rational function lies in every height-one localization by finding a closed point of $V(\mathfrak p)$ other than $P$, and applies the height-one intersection theorem for Noetherian normal domains, with the punctured line $1/x\in\mco(\AA^1\setminus\{0\})\setminus\mco_0$ for (b).
+:::
