@@ -10,6 +10,19 @@ classification:
   - Urysohn Lemma
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Jesper Michael Moller, "Solutions to exercises
+    in Munkres", file S33.pdf, Exercise 33.5 (Theorem 3), page 2 of the file
+    (tmp/sources/munkres-solutions-poulsen-S33.pdf, Internet Archive snapshot 20200331153844),
+    checked against Munkres, Topology (2000), Section 33 Exercise 5, printed p. 213, and Exercise
+    33.4. Moller proves both directions: the forward one by applying Exercise 33.4 to A and f and to
+    B and 1 - f, the converse by taking f = g/(g+h) from the two functions vanishing precisely on A
+    and B. The card's proof is that argument with the weighted series written out. No correction to
+    the mathematics was needed.
 ---
 
 ::: {.exercise}

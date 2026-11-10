@@ -14,6 +14,19 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Jesper Michael Moller, "Solutions to exercises
+    in Munkres", file S33.pdf, Exercise 33.4 (Theorem 2), pages 1-2 of the file
+    (tmp/sources/munkres-solutions-poulsen-S33.pdf, Internet Archive snapshot 20200331153844),
+    checked against Munkres, Topology (2000), Section 33 Exercise 4, printed p. 213, and Theorem 21.6
+    (the uniform limit of continuous functions is continuous). The two implications are the card's:
+    a zero set is the intersection of the preimages of [0, 1/n); and for a closed G_delta A = cap U_n
+    Urysohn's lemma gives f_n vanishing on A and equal to 1 off U_n, whose weighted sum vanishes
+    exactly on A. The card writes the weights 2^{-n} and applies the Weierstrass M-test where Moller
+    writes 2^{-i} and cites Theorem 21.6. No correction to the mathematics was needed.
 ---
 
 ::: {.exercise}

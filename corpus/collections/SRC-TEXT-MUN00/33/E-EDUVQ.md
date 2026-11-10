@@ -11,6 +11,25 @@ classification:
   - Product Topology
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: dbFin, "Section 33: Problem 9 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-33-the-urysohn-lemma/problem-9-solution/
+    (read 2026-11-10; kept at
+    tmp/sources/dbfin/section-33-the-urysohn-lemma/problem-9-solution.txt), checked against
+    Munkres, Topology (2000), Section 33 Exercise 9, printed p. 213, and its printed hint, together
+    with Exercise 18.8 and the fact that the box topology is finer than the uniform topology. Its
+    route is the card's: a box neighbourhood of x is sent to (-1,1)^J by a coordinatewise affine map,
+    the uniform distance g(y) = sup min(|y_alpha|,1) vanishes only at the origin and equals 1 off
+    (-1,1)^J, and a function continuous for the uniform topology is continuous for the finer box
+    topology. What was corrected: the source writes "It seems a more general result is true: a
+    product of continuous functions is continuous (so, that the product of homeomorphisms is a
+    homeomorphism)" and leaves that unproved, which is what the affine change of coordinates needs;
+    the card states the coordinatewise affine map and notes that it carries boxes to boxes, so that
+    it is a box-topology homeomorphism.
 ---
 
 ::: {.exercise}

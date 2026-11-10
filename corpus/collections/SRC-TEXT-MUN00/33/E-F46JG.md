@@ -15,6 +15,23 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 33 Exercise 10, printed p. 213,
+    whose printed construction -- V_{n+1}^2 inside V_n, the dyadic sets U(k/2^n) with
+    U((2k+1)/2^{n+1}) = V_{n+1} U(k/2^n), the inclusion V_n U(k/2^n) inside U((k+1)/2^n), and "proceed
+    as in the Urysohn lemma" -- is the skeleton the card fills in. No published solution was located:
+    dbFin, "Section 33: Problem 10 Solution", https://dbfin.com/topology/munkres/chapter-4/section-33-the-urysohn-lemma/problem-10-solution/
+    (read 2026-11-10; kept at tmp/sources/dbfin/section-33-the-urysohn-lemma/problem-10-solution.txt)
+    runs the same construction in prose but its displayed identities are corrupted where it matters
+    ("U(0) = {e} ... after that we assume U(0) = emptyset", and a final line that breaks off inside
+    V_n <= U(k/2^n)), so it is not a checkable proof; Moller's S33 has no Exercise 10, Doug's World
+    stops at 33.8 in this section, and Orellana's Section 33 has Exercises 1 and 3. The card's own
+    proof checks the inclusion in the three cases k = 0, k odd, k even, derives the nesting and the
+    closure inclusion cl(U(p)) inside U(q) for p < q from symmetry of V_n, and concludes with the
+    two open sets {f < t} and {f > t}. This exercise is in the COMPLAINTS.md entry.
 ---
 
 ::: {.exercise}

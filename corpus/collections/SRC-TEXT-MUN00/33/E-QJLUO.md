@@ -16,6 +16,19 @@ audit:
   by: gpt-6.1-sol
   date: 2026-10-31
   note: 'The source states f(A)={0} and f(B)={1}. For an empty set, its image is empty; the intended assertion is pointwise separation.'
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Jesper Michael Moller, "Solutions to exercises
+    in Munkres", file S33.pdf, Exercise 33.8, page 2 of the file
+    (tmp/sources/munkres-solutions-poulsen-S33.pdf, Internet Archive snapshot 20200331153844),
+    checked against Munkres, Topology (2000), Section 33 Exercise 8, printed p. 213, Exercise 18.8
+    (the maximum of finitely many continuous real-valued functions is continuous) and Theorem 33.1.
+    Moller's construction is the card's: finitely many functions g_i with A inside the union of the
+    sets {g_i < 1/2} and g_i equal to 1 on B, then g the sum (the card takes the maximum), then
+    f = 2 max{0, g - 1/2}. No correction to the mathematics was needed; the maximum is used in place
+    of the sum because it keeps the values in [0,1] without dividing by the number of terms.
 ---
 
 ::: {.exercise}

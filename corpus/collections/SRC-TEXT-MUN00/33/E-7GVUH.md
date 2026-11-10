@@ -14,6 +14,20 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solutions: Jesper Michael Moller, "Solutions to exercises
+    in Munkres", file S33.pdf, Exercise 33.1, page 1 of the file (tmp/sources/munkres-solutions-poulsen-S33.pdf,
+    Internet Archive snapshot 20200331153844 of web.math.ku.dk/~moller/e02/3gt/opg/S33.pdf), and
+    "Doug's World", "Munkres - Topology - Chapter 4 Solutions", Problem 33.1, printed pp. 7-9
+    (tmp/sources/munkres-solutions-dougsworld-ch4.pdf); checked against Munkres, Topology (2000),
+    Section 33 Exercise 1, printed p. 212, and the proof of Theorem 33.1. Both sources prove the two
+    inclusions by the criterion x in U_p for all p > r versus x in U_q for some q < r. What was
+    corrected: Moller separates r = 0 and r = 1 and assumes r in (0,1) otherwise, and Doug's World
+    introduces the symbol "Us" for U_p; the card treats all r uniformly through the two
+    characterisations f(x) <= r iff x in the intersection and f(x) < r iff x in the union.
 ---
 
 ::: {.exercise}

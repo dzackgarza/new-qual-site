@@ -10,6 +10,25 @@ classification:
   - Separation Axioms
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 33 Exercise 11, printed p. 214,
+    and repaired. No complete published solution was located: dbFin, "Section 33: Problem 11
+    Solution", https://dbfin.com/topology/munkres/chapter-4/section-33-the-urysohn-lemma/problem-11-solution/
+    (read 2026-11-10; kept at tmp/sources/dbfin/section-33-the-urysohn-lemma/problem-11-solution.txt)
+    answers (a) by a table of the ten intersections among the four basis types, which is a genuine
+    check, but its (b) and (c) are too compressed to follow (the countability of S_{n,k} is asserted
+    without the G_delta step, and the limit f((n-1) x d) = lim f(p_{n,k}) is not derived); Moller's
+    S33 stops at Exercise 8 in this section, Doug's World at Problem 33.8, and Orellana has
+    Exercises 1 and 3 only. What was repaired: part (c) now shows first that one-point sets are
+    closed, which Munkres's regularity and complete regularity both require and which the card had
+    omitted, and then shrinks basis neighbourhoods of the four types; part (b) derives the
+    countability of S_{n,k} from the G_delta property of the level set and the finiteness of the
+    deleted sets, which is the step the printed text leaves to the reader. This exercise is in the
+    COMPLAINTS.md entry.
 ---
 
 ::: {.exercise}
@@ -96,7 +115,9 @@ $$
 f(a)=c_0=f(b).
 $$
 
-(c) We prove regularity by shrinking basis neighborhoods.
+(c) First, one-point sets are closed, so $X$ is $T_1$: given distinct points $y\ne z$, a short horizontal segment through $z$ avoiding both $y$ and the points $p_{n,k}$ is a type-(i) neighbourhood of $z$ missing $y$ when $z$ is an ordinary point, a type-(ii) neighbourhood with $F$ enlarged by $y$ does the same when $z=p_{n,k}$, and the type-(iii) sets $B_m$ with $m$ large contain $z$ but not $y$ while the type-(iv) sets with $m$ small do the same for $z=b$.
+
+We prove regularity by shrinking basis neighborhoods.
 
 - For a type-(i) horizontal segment $B$ containing $x$, choose a shorter horizontal segment $B'\ni x$ whose horizontal closure is still contained in $B$ and avoids all top points. Then $\overline{B'}\subset B$.
 - If $x=p_{n,k}$ and $B=C_{n,k}\setminus F$ is type (ii), then $p_{n,k}\notin F$. Every point of $F$ is an ordinary point of $C_{n,k}$ and is isolated in $C_{n,k}$ by a sufficiently short horizontal type-(i) neighborhood. Hence $F$ is open in the subspace $C_{n,k}$, while $C_{n,k}$ is closed in $X$. Therefore $B=C_{n,k}\setminus F$ is closed in $X$, so it already has closure contained in itself.
