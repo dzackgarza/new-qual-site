@@ -13,9 +13,25 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §17 Exercise 19, printed p. 102, with the
+    definition of boundary printed there and of interior in §17; parts (a) to (d) are stored
+    as printed.
 - event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise 17.19, printed pp.
+    173-175. His are (a) that the interior and the boundary are disjoint and fill the
+    closure, (b) that an empty boundary is the same as being both open and closed, and (c)
+    that for open U the boundary is the closure minus U, with the converse. For (d) the
+    counterexample used is positron0802's on PDF p. 9, R - {0} in the usual topology, his
+    own on printed p. 174 being the same set in the finite complement topology.
+    (tmp/sources/munkres-solutions-whitman.pdf).
 ---
 
 ::: {.exercise}
@@ -37,75 +53,24 @@ Justify your answer.
 :::
 
 ::: {.solution}
-Throughout, $\overline{X-A}=X-\operatorname{Int}A$, since $\operatorname{Int}A$ is the largest open set contained in $A$ and $\overline{X-A}$ is the smallest closed set containing $X-A$.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.19, printed pp. 173--175** (`tmp/sources/munkres-solutions-whitman.pdf`); (a), (b) and (c) are his. "positron0802", *Solutions to Topology, Chapter 2*, Exercise 17.19, PDF p. 9, gives the same three and a simpler counterexample for (d), which is the one used below; Whitman's printed p. 174 uses $\RR-\{0\}$ in the finite complement topology instead.
 
-::: pf
+Throughout, $\operatorname{Bd}A=\overline{A}\cap\overline{(X-A)}$ and $\operatorname{Int}A$ is the union of the open subsets of $A$, which is open and is the set of points having a neighbourhood contained in $A$.
 
-::: {.pf-step #s1}
+(a) *$\operatorname{Int}A$ and $\operatorname{Bd}A$ are disjoint.* If $x\in\operatorname{Int}A$ there is a neighbourhood $U$ of $x$ with $U\subset A$, so $U\cap(X-A)=\varnothing$ and $x\notin\overline{X-A}$; hence $x\notin\operatorname{Bd}A$.
 
-(a) $\operatorname{Int}A\cap\operatorname{Bd}A=\varnothing$ and $\overline A=\operatorname{Int}A\cup\operatorname{Bd}A$.
+*$\overline{A}=\operatorname{Int}A\cup\operatorname{Bd}A$.* Both $\operatorname{Int}A$ and $\operatorname{Bd}A$ are contained in $\overline{A}$, so one inclusion is clear. Conversely let $x\in\overline{A}$. If $x\in\operatorname{Int}A$ there is nothing to prove; if not, then no neighbourhood of $x$ is contained in $A$, so every neighbourhood of $x$ meets $X-A$, which gives $x\in\overline{X-A}$ and hence $x\in\operatorname{Bd}A$.
 
-::: pf-proof
+(b) *If $\operatorname{Bd}A=\varnothing$ then $A$ is open and closed.* By (a), $\overline{A}=\operatorname{Int}A$, and $\operatorname{Int}A\subset A\subset\overline{A}$, so $A=\operatorname{Int}A=\overline{A}$; the first equality says $A$ is open, the second that $A$ is closed.
 
-$\operatorname{Bd}A\subseteq\overline{X-A}=X-\operatorname{Int}A$, so $\operatorname{Bd}A$ misses $\operatorname{Int}A$.
-Since $\operatorname{Int}A\subseteq\overline A$,
+*If $A$ is open and closed then $\operatorname{Bd}A=\varnothing$.* Here $\overline{X-A}=X-A$ (as $A$ is open) and $\overline{A}=A$, so $\operatorname{Bd}A=A\cap(X-A)=\varnothing$.
+
+(c) *If $U$ is open then $\operatorname{Bd}U=\overline{U}-U$.* Since $U$ is open, $\overline{X-U}=X-U$, so
 $$
-\overline A=\operatorname{Int}A\cup\bigl(\overline A\cap(X-\operatorname{Int}A)\bigr)=\operatorname{Int}A\cup\bigl(\overline A\cap\overline{X-A}\bigr)=\operatorname{Int}A\cup\operatorname{Bd}A.
+\operatorname{Bd}U=\overline{U}\cap\overline{(X-U)}=\overline{U}\cap(X-U)=\overline{U}-U .
 $$
 
-:::
+*If $\operatorname{Bd}U=\overline{U}-U$ then $U$ is open.* Let $x\in U$. Since $x\in\overline{U}$ and $x\notin\overline{U}-U=\operatorname{Bd}U$, we have $x\notin\overline{X-U}$; so some neighbourhood $V$ of $x$ misses $X-U$, that is $V\subset U$. Hence every point of $U$ is an interior point and $U=\operatorname{Int}U$ is open.
 
-:::
-
-::: {.pf-step #s2}
-
-(b) $\operatorname{Bd}A=\varnothing$ if and only if $A$ is both open and closed.
-
-::: pf-proof
-
-If $\operatorname{Bd}A=\varnothing$, step [](#s1){.pf-ref} gives $\overline A=\operatorname{Int}A$, so $A\subseteq\overline A=\operatorname{Int}A\subseteq A$.
-Hence $A=\operatorname{Int}A$ is open and $A=\overline A$ is closed.
-Conversely, if $A$ is open and closed, then $\overline A=A$ and $\overline{X-A}=X-A$, so $\operatorname{Bd}A=A\cap(X-A)=\varnothing$.
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-(c) $U$ is open if and only if $\operatorname{Bd}U=\overline U-U$.
-
-::: pf-proof
-
-Since $\overline{X-U}\supseteq X-U$ and $\overline U\cap(X-U)=\overline U-U$,
-$$
-\operatorname{Bd}U=(\overline U-U)\cup\bigl(\overline U\cap(\overline{X-U}-(X-U))\bigr).
-$$
-The set $\overline{X-U}-(X-U)$ is contained in $U\subseteq\overline U$, so the second term equals $\overline{X-U}-(X-U)$, which is disjoint from $\overline U-U$.
-Hence $\operatorname{Bd}U=\overline U-U$ if and only if $\overline{X-U}=X-U$, that is, if and only if $X-U$ is closed, that is, if and only if $U$ is open.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-(d) An open set $U$ need not equal $\operatorname{Int}(\overline U)$.
-
-::: pf-proof
-
-In $\RR$, the open set $U=\RR-\{0\}$ has $\overline U=\RR$, so $\operatorname{Int}(\overline U)=\RR\ne U$.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} answer (a), (b), (c), and (d).
-
-:::
-
-:::
-
+(d) **No.** In $\RR$ with the usual topology let $U=\RR-\{0\}$, which is open. Then $\overline{U}=\RR$ and $\operatorname{Int}\overline{U}=\RR$, while $U\ne\RR$ (the point $0$ is in the first set and not the second). So $U\subsetneq\operatorname{Int}\overline{U}$; the reverse inclusion, by contrast, does hold for every open $U$.
 :::
