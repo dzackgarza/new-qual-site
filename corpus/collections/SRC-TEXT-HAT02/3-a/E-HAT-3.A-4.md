@@ -27,12 +27,20 @@ audit:
   note: Statement compared with Hatcher, Algebraic Topology, Section 3.A, Exercise 4; it matches the printed text.
 - event: solution-reviewed
   by: claude
-  date: 2026-10-31
+  date: 2026-11-07
   note: >-
-    Read the argument: $\otimes$ commutes with colimits as a left adjoint, and $\operatorname{Tor}$
-    is computed from the functorial free presentation, whose filtered colimit is again torsion-free
-    and hence flat, so the tensorized sequence stays exact and the colimits interchange. The proof
-    leans on torsion-free groups being flat, which is the standard Baer criterion.
+    Read against Hatcher, Algebraic Topology (2002), §3.A Exercise 4, printed p. 267; the statement
+    matches the print. The proof was rewritten because both halves rested on machinery outside the
+    book: "$\otimes B$ is a left adjoint and therefore preserves colimits", and the claim that the
+    colimit of the functorial free presentation is a flat resolution, so that Tor may be computed
+    from it — the earlier note here already recorded that the argument leans on torsionfree groups
+    being flat. The book defines Tor only through free resolutions (Lemmas 3A.1-3A.2, pp. 262-263)
+    and never states that flat resolutions compute it. The replacement proves the tensor half by
+    exhibiting the two mutually inverse maps, and the Tor half from a free resolution of the second
+    variable and the symmetry of Tor (Proposition 3A.5(1), p. 265), using only that a free group
+    tensored with $M$ is a direct sum of copies of $M$ and that filtered colimits of abelian groups
+    are exact, which is verified in the proof. No published solution of this exercise is in the
+    retained sets; recorded in COMPLAINTS.md.
 ---
 
 ::: {.problem}
@@ -40,37 +48,32 @@ Show that $\otimes$ and Tor commute with direct limits: $(\varinjlim_\alpha A_\a
 :::
 
 ::: {.solution}
-Let $(A_\alpha)$ be a directed system of abelian groups.
+Let $(A_\alpha)_{\alpha\in\Lambda}$ be a directed system of abelian groups over a directed index set $\Lambda$, with colimit $A=\varinjlim_\alpha A_\alpha$ and structure maps $i_\alpha:A_\alpha\to A$.
 
-For tensor products, the universal property immediately gives
+*Tensor products.* The maps $i_\alpha\otimes\id_B$ are compatible, so they induce $u:\varinjlim_\alpha(A_\alpha\otimes B)\to A\otimes B$. In the other direction, define a map $v:A\otimes B\to\varinjlim_\alpha(A_\alpha\otimes B)$ by the universal property of $\otimes$, from the bilinear map $(a,b)\mapsto[a_\alpha\otimes b]$, where $a_\alpha\in A_\alpha$ is any element with $i_\alpha(a_\alpha)=a$: two such choices $a_\alpha,a_{\alpha'}$ both map to a common later stage $A_\gamma$, because $\Lambda$ is directed, so the classes $[a_\alpha\otimes b]$ and $[a_{\alpha'}\otimes b]$ agree; the map is additive in each variable because the colimit is an abelian group and $i_\alpha$ is a homomorphism. On simple tensors $u v(a\otimes b)=i_\alpha(a_\alpha)\otimes b=a\otimes b$ and $vu[a_\alpha\otimes b]=[a_\alpha\otimes b]$, and simple tensors generate, so $u$ and $v$ are mutually inverse:
 $$
-\left(\varinjlim_\alpha A_\alpha\right)\otimes B
-\cong \varinjlim_\alpha(A_\alpha\otimes B),
+\left(\varinjlim_\alpha A_\alpha\right)\otimes B\cong\varinjlim_\alpha(A_\alpha\otimes B).
 $$
-since $-\otimes B$ is a left adjoint and therefore preserves colimits.
 
-For $\operatorname{Tor}$, use a functorial free presentation. Let $F(A)$ be the free abelian group on the underlying set of $A$, with its natural surjection $F(A)\to A$, and let $K(A)$ be the kernel. Thus
+*Tor.* It is enough to prove that for a fixed abelian group $B$ the functor $M\mapsto\operatorname{Tor}(B,M)$ commutes with this colimit, since $\operatorname{Tor}(A,B)\cong\operatorname{Tor}(B,A)$ by Proposition 3A.5(1) (p. 265). Choose a free resolution $0\to G_1\xrightarrow{\varphi}G_0\to B\to0$; by the definition of Tor through a free resolution (Lemma 3A.2, p. 263, makes the choice immaterial)
 $$
-0\to K(A)\to F(A)\to A\to0
+\operatorname{Tor}(B,M)=\ker\bigl(G_1\otimes M\xrightarrow{\varphi\otimes\id}G_0\otimes M\bigr).
 $$
-is functorial in $A$. Applying this to the directed system and taking direct limits gives an exact sequence
-$$
-0\to \varinjlim K(A_\alpha)
-\to \varinjlim F(A_\alpha)
-\to \varinjlim A_\alpha\to0,
-$$
-because filtered colimits are exact in the category of abelian groups. Both $K(A_\alpha)$ and $F(A_\alpha)$ are free abelian: $K(A_\alpha)$ is a subgroup of a free abelian group. Their filtered colimits are torsionfree, hence flat over $\ZZ$. Thus this exact sequence is a flat resolution of $\varinjlim A_\alpha$ and computes $\operatorname{Tor}_1$ after tensoring.
+Two facts about the colimit are used.
 
-Tensor the presentations with $B$. Since tensor product commutes with direct limits and filtered colimits preserve kernels of maps occurring in these exact sequences,
+(i) For a free abelian group $G$ with basis $J$ one has $G\otimes M\cong\bigoplus_J M$, and a filtered colimit of $J$-indexed direct sums is the direct sum of the colimits, because a sum has finite support and the support of an element does not change as the stage grows. Hence $G_i\otimes A\cong\varinjlim_\alpha(G_i\otimes A_\alpha)$ for $i=0,1$.
+
+(ii) Filtered colimits in the category of abelian groups are exact. Indeed, given a directed system of exact sequences $0\to K_\alpha\to M_\alpha\to N_\alpha\to0$, an element of $\varinjlim K_\alpha$ maps to $0$ in $\varinjlim M_\alpha$ only if it is killed already at some stage, and an element of $\varinjlim M_\alpha$ with zero image in $\varinjlim N_\alpha$ is killed at some stage, hence lifts there from that stage of $K$. Applying this to the images of the exact sequences $0\to\ker(\varphi\otimes\id)\to G_1\otimes A_\alpha\to G_0\otimes A_\alpha$ gives
 $$
-\begin{aligned}
-\operatorname{Tor}(\varinjlim A_\alpha,B)
-&=\ker\!\left((\varinjlim K(A_\alpha))\otimes B
-\to(\varinjlim F(A_\alpha))\otimes B\right)\\
-&\cong \varinjlim\ker\!\left(K(A_\alpha)\otimes B
-\to F(A_\alpha)\otimes B\right)\\
-&=\varinjlim\operatorname{Tor}(A_\alpha,B).
-\end{aligned}
+\ker\left(\varinjlim_\alpha (G_1\otimes A_\alpha)\to\varinjlim_\alpha (G_0\otimes A_\alpha)\right)
+\cong\varinjlim_\alpha\ker\bigl(G_1\otimes A_\alpha\to G_0\otimes A_\alpha\bigr).
 $$
-Thus both $\otimes$ and $\operatorname{Tor}$ commute with directed limits.
+Combining with (i) and with the definition of Tor in each stage,
+$$
+\operatorname{Tor}(B,A)
+=\ker\bigl(G_1\otimes A\to G_0\otimes A\bigr)
+\cong\varinjlim_\alpha\operatorname{Tor}(B,A_\alpha)
+\cong\varinjlim_\alpha\operatorname{Tor}(A_\alpha,B).
+$$
+Symmetry of Tor turns this into the asserted $\operatorname{Tor}(\varinjlim_\alpha A_\alpha,B)\cong\varinjlim_\alpha\operatorname{Tor}(A_\alpha,B)$.
 :::

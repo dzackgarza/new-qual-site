@@ -27,11 +27,16 @@ audit:
   note: Statement compared with Hatcher, Algebraic Topology, Section 3.A, Exercise 5; it matches the printed text.
 - event: solution-reviewed
   by: claude
-  date: 2026-10-31
+  date: 2026-11-07
   note: >-
-    Read the argument: a torsion-free group is the direct limit of its finitely generated
-    subgroups, each free, and the direct-limit formula of the preceding exercise turns vanishing at
-    every stage into vanishing at the limit.
+    Read against Hatcher, Algebraic Topology (2002), §3.A Exercise 5, printed p. 267. The statement
+    matches the print, including its instruction to use "the previous problem" — Exercise 4, which
+    is cited. The proof's one unstated step, that a finitely generated torsionfree abelian group is
+    free, is now given; the vanishing of Tor on free first arguments is Proposition 3A.5(3)
+    (p. 265). The card also records that the conclusion is the torsionfree half of that same
+    proposition, which Hatcher proves on pp. 265-266 by the finitely-generated-subgroup argument in
+    the second variable rather than by Exercise 4. No published solution of this exercise is in the
+    retained sets; recorded in COMPLAINTS.md.
 ---
 
 ::: {.problem}
@@ -39,15 +44,17 @@ From the fact that $\operatorname{Tor}(A, B) = 0$ if $A$ is free, deduce that $\
 :::
 
 ::: {.solution}
-Write a torsionfree abelian group $A$ as the directed union of its finitely generated subgroups:
+Write the torsionfree abelian group $A$ as the directed union of its finitely generated subgroups:
 $$
-A=\varinjlim_\alpha A_\alpha.
+A=\varinjlim_\alpha A_\alpha,
 $$
-Each $A_\alpha$ is finitely generated and torsionfree, hence is a free abelian group. Therefore
+the index set being the finitely generated subgroups with inclusions, which is directed because two finitely generated subgroups lie in their sum.
+
+Each $A_\alpha$ is finitely generated and torsionfree, hence free abelian: a finitely generated abelian group is a direct sum of copies of $\ZZ$ and of finite cyclic groups, and finite summands would be torsion. Therefore
 $$
 \operatorname{Tor}(A_\alpha,B)=0
 $$
-for every $\alpha$.
+for every $\alpha$, by the hypothesis that Tor vanishes on free first arguments (Proposition 3A.5(3), p. 265).
 
 By Exercise 4, $\operatorname{Tor}$ commutes with direct limits in the first variable, so
 $$
@@ -55,4 +62,5 @@ $$
 \cong \varinjlim_\alpha\operatorname{Tor}(A_\alpha,B)
 =0.
 $$
+The conclusion is the torsionfree case of Proposition 3A.5(3), whose proof on pp. 265--266 reaches it by applying the free case to a finitely generated subgroup of the *second* variable instead; the route taken here is the one the exercise asks for.
 :::

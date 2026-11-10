@@ -27,13 +27,19 @@ audit:
   note: Statement compared with Hatcher, Algebraic Topology, Section 3.A, Exercise 1; it matches the printed text.
 - event: solution-reviewed
   by: claude
-  date: 2026-10-31
+  date: 2026-11-07
   note: >-
-    Read the argument: over a field of characteristic zero the Tor term of the universal
-    coefficient sequence vanishes and the dimensions are the free ranks; over a field of
-    characteristic $p$ they are $r_n+t_n+t_{n-1}$ with
-    $t_n=\dim_{\FF_p}(T_n/pT_n)=\dim_{\FF_p}T_n[p]$, and the two torsion sums cancel in the
-    alternating sum.
+    Read against Hatcher, Algebraic Topology (2002), §3.A Exercise 1, printed p. 267. The statement
+    matches the print word for word, including the hypothesis that $H_*(X;\ZZ)$ be finitely generated
+    and the phrase "for any coefficient field $F$". Repaired in three places where the proof was
+    incomplete rather than false: the finiteness of the two alternating sums is now stated rather
+    than assumed; the characteristic-$p$ case runs Theorem 3A.3 over $F$ directly through
+    Proposition 3A.5(2), (4) and (5), instead of asserting that it suffices to compute over $\FF_p$
+    and extend scalars; and Theorem 3A.3 (p. 264) and Proposition 3A.5(3) (p. 265) are cited where
+    the proof had said only "the universal coefficient theorem". Checked against Hatcher's
+    definitions on pp. 261-266: $C_*(X;G)=C_*(X)\otimes G$, $\operatorname{Tor}_n=0$ for $n>1$, and
+    Tor as defined from a free resolution. No published solution of this exercise is in the
+    retained sets; recorded in COMPLAINTS.md.
 ---
 
 ::: {.problem}
@@ -41,35 +47,37 @@ Use the universal coefficient theorem to show that if $H_*(X; \ZZ)$ is finitely 
 :::
 
 ::: {.solution}
-Write each finitely generated integral homology group as
+That $\chi(X)$ is defined says that each $H_n(X;\ZZ)$ is finitely generated and that $H_n(X;\ZZ)=0$ for all but finitely many $n$. Write
 $$
-H_n(X;\ZZ)\cong \ZZ^{r_n}\oplus T_n,
+H_n(X;\ZZ)\cong \ZZ^{r_n}\oplus T_n
 $$
-with $T_n$ finite. We compare the alternating sum of the dimensions of homology over a field $F$ with $\sum(-1)^nr_n$.
+with $T_n$ finite, and $r_n=0=T_n$ for $n\gg0$. For a field $F$ the dimensions $\dim_FH_n(X;F)$ are computed by the universal coefficient theorem, Theorem 3A.3 (p. 264):
+$$
+0\longrightarrow H_n(X;\ZZ)\otimes F
+\longrightarrow H_n(X;F)
+\longrightarrow \operatorname{Tor}(H_{n-1}(X;\ZZ),F)\longrightarrow 0 .
+$$
+The sequence is exact, so the middle dimension is the sum of the two outer ones.
 
-If $\operatorname{char}F=0$, then $F$ is torsionfree as a $\ZZ$-module, so the homology universal coefficient theorem gives
-$$
-H_n(X;F)\cong H_n(X;\ZZ)\otimes F\cong F^{r_n}.
-$$
-Thus $\dim_FH_n(X;F)=r_n$ in every degree.
+*Characteristic zero.* If $\operatorname{char}F=0$ then $F$ is torsionfree as a $\ZZ$-module, so $\operatorname{Tor}(H_{n-1}(X;\ZZ),F)=0$ by Proposition 3A.5(3) (p. 265), while $T_n\otimes F=0$ because every element of the finite group $T_n$ is killed by an integer that acts invertibly on $F$. Hence $H_n(X;F)\cong \ZZ^{r_n}\otimes F\cong F^{r_n}$, with $\dim_FH_n(X;F)=r_n$.
 
-Now suppose $\operatorname{char}F=p$. Since $F$ is a vector space over $\FF_p$, it is enough to compute with $\FF_p$ and then extend scalars. Let
+*Characteristic $p$.* Let $\operatorname{char}F=p$. By the structure theorem for finite abelian groups, $T_n\cong\bigoplus_j\ZZ/p_j^{k_j}$ is a direct sum of cyclic groups of prime-power order, and
 $$
-t_n=\dim_{\FF_p}(T_n/pT_n).
+\ZZ/m\otimes F\cong F/mF=
+\begin{cases}F,&p\mid m,\\ 0,&p\nmid m,\end{cases}
 $$
-For a finite abelian group the $p$-torsion subgroup $T_n[p]$ has the same $\FF_p$-dimension $t_n$. The universal coefficient short exact sequence gives
+so $\dim_F(T_n\otimes F)$ is the number $t_n$ of $p$-power cyclic summands of $T_n$; this number is also $\dim_{\FF_p}(T_n/pT_n)=\dim_{\FF_p}T_n[p]$ and is zero for $n\gg0$. Proposition 3A.5(4) (p. 265) replaces $H_{n-1}(X;\ZZ)$ by its torsion subgroup, Proposition 3A.5(5) gives $\operatorname{Tor}(\ZZ/m,F)\cong\ker(F\xrightarrow{m}F)$, which is $F$ for $p\mid m$ and $0$ otherwise, and additivity in the first variable, Proposition 3A.5(2), gives
 $$
-0\to H_n(X;\ZZ)\otimes\FF_p
-\to H_n(X;\FF_p)
-\to \operatorname{Tor}(H_{n-1}(X;\ZZ),\FF_p)\to0.
+\operatorname{Tor}(H_{n-1}(X;\ZZ),F)\cong\operatorname{Tor}(T_{n-1},F)\cong T_{n-1}\otimes F,
+\qquad \dim_F\operatorname{Tor}(H_{n-1}(X;\ZZ),F)=t_{n-1}.
 $$
 Hence
 $$
-\dim_{\FF_p}H_n(X;\FF_p)=r_n+t_n+t_{n-1}.
+\dim_FH_n(X;F)=r_n+t_n+t_{n-1},
 $$
-Taking the alternating sum, the two torsion contributions cancel:
+and the alternating sum of the torsion terms telescopes over the finitely many nonzero $t_n$:
 $$
-\sum_n(-1)^n(t_n+t_{n-1})=0.
+\sum_n(-1)^n(t_n+t_{n-1})=\sum_n(-1)^nt_n-\sum_n(-1)^nt_n=0.
 $$
 Therefore
 $$
