@@ -12,14 +12,19 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §13 Exercise 1, printed p. 83; the stored
+    statement is the printed sentence.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise 13.1, printed p. 141.
+    The content is his: the chosen open sets U_x cover A, so A is a union of open sets and
+    therefore open. Nothing else is used. (tmp/sources/munkres-solutions-whitman.pdf).
 ---
 
 ::: {.exercise}
@@ -30,11 +35,11 @@ Show that $A$ is open in $X$.
 :::
 
 ::: {.solution}
-Let $\mathcal U$ be the collection of all open subsets of $X$ contained in
-$A$. The hypothesis says that every $x\in A$ lies in some member of
-$\mathcal U$. Therefore
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 13.1, printed p. 141** (`tmp/sources/munkres-solutions-whitman.pdf`); the proof is his.
+
+For each $x\in A$ choose an open set $U_{x}$ of $X$ with $x\in U_{x}$ and $U_{x}\subset A$, as the hypothesis allows. We claim
 $$
-A=\bigcup_{U\in\mathcal U}U.
+\bigcup_{x\in A}U_{x}=A .
 $$
-Since arbitrary unions of open sets are open, $A$ is open.
+If $y\in\bigcup_{x\in A}U_{x}$ then $y\in U_{x}$ for some $x\in A$, and $U_{x}\subset A$, so $y\in A$. Conversely, if $y\in A$ then $y\in U_{y}$, so $y$ lies in the union. Hence $A$ is a union of open sets of $X$, and therefore $A$ is open in $X$, since a topology is closed under arbitrary unions.
 :::
