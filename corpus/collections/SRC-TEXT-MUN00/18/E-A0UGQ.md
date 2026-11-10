@@ -11,9 +11,24 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §18 Exercise 6, printed p. 111; the stored
+    statement is the printed request and the card answers it with one function and the proof
+    that its set of continuity is a single point.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise 18.6, printed p. 181.
+    The function, zero on the rationals and the identity on the irrationals, is his, as is
+    the epsilon-delta verification: continuous at 0 with delta = epsilon, and at x != 0 the
+    point y chosen rational or irrational within delta of x forces |f(y)-f(x)| > |x|/2. The
+    epsilon-delta definition is admissible here because it implies the open set definition
+    by Exercise 18.1. (tmp/sources/munkres-solutions-whitman.pdf).
 ---
 
 ::: {.exercise}
@@ -22,35 +37,24 @@ Find a function $f: \RR \to \RR$ that is continuous at precisely one point.
 :::
 
 ::: {.solution}
-Define $f\colon\RR\to\RR$ by $f(x)=x$ for $x\in\QQ$ and $f(x)=0$ for $x\notin\QQ$.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 18.6, printed p. 181** (`tmp/sources/munkres-solutions-whitman.pdf`); the function and the proof are his.
 
-::: pf
+Let
+$$
+f:\RR\longrightarrow\RR,\qquad
+f(x)=\begin{cases}0,& x\in\QQ,\\ x,& x\notin\QQ.\end{cases}
+$$
+Then $f$ is continuous at $0$ and at no other point.
 
-::: {.pf-step #continuous-at-zero}
-$f$ is continuous at $0$.
+We use the $\varepsilon$-$\delta$ definition, which implies the open set definition by Exercise 18.1. Note $f(0)=0$.
 
-::: pf-proof
-For every $x$, $\abs{f(x)-f(0)}=\abs{f(x)}\le\abs x$.
-Given $\varepsilon>0$, take $\delta=\varepsilon$: if $\abs x<\delta$, then $\abs{f(x)-f(0)}<\varepsilon$.
-:::
+*At $0$.* Given $\varepsilon>0$ take $\delta=\varepsilon$. If $\abs{y}<\delta$ and $y\in\QQ$ then $f(y)=0=f(0)$; if $y\notin\QQ$ then $\abs{f(y)-f(0)}=\abs{y}<\delta=\varepsilon$. So $f$ is continuous at $0$.
 
-:::
+*At $x\ne0$.* Put $\varepsilon=\abs{x}/2>0$, and let $\delta>0$ be arbitrary. If $x\in\QQ$ choose $y\notin\QQ$ with $\abs{y-x}<\min(\varepsilon,\delta)$; then $f(x)=0$ and $f(y)=y$, and
+$$
+\abs{x}=\abs{x-y+y}\le\abs{x-y}+\abs{y}<\varepsilon+\abs{y}\quad\text{so}\quad \abs{f(y)-f(x)}=\abs{y}>\abs{x}-\varepsilon=\varepsilon .
+$$
+If $x\notin\QQ$ choose $y\in\QQ$ with $\abs{y-x}<\delta$; then $f(y)=0$ and $\abs{f(y)-f(x)}=\abs{x}=2\varepsilon>\varepsilon$. So for every $\delta>0$ there is $y$ with $\abs{y-x}<\delta$ and $\abs{f(y)-f(x)}>\varepsilon$, and $f$ is not continuous at $x$.
 
-::: {.pf-step #discontinuous-elsewhere}
-$f$ is not continuous at any $x_0\ne0$.
-
-::: pf-proof
-If $x_0\in\QQ$, choose irrationals $y_n\to x_0$; then $f(y_n)=0\not\to x_0=f(x_0)$.
-If $x_0\notin\QQ$, choose rationals $q_n\to x_0$; then $f(q_n)=q_n\to x_0\ne0=f(x_0)$.
-In both cases a sequence converging to $x_0$ has images not converging to $f(x_0)$.
-:::
-
-:::
-
-::: pf-qed
-By steps [](#continuous-at-zero){.pf-ref} and [](#discontinuous-elsewhere){.pf-ref}, $f$ is continuous at $0$ and at no other point.
-:::
-
-:::
-
+So $0$ is the one point of continuity. (The same answer is recorded by "positron0802", *Solutions to Topology, Chapter 2*, Exercise 18.6, PDF p. 11.)
 :::
