@@ -209,10 +209,11 @@ above. Every page carries its own "Page $n$" in the footer, so cite that page, n
 | §36 Imbeddings of Manifolds | 13–14 | 1, 3 |
 
 Two of its numbers are not the book's: the item headed "Problem 30.12" is printed Exercise 30.13, and the
-first item headed "Problem 32.6" is printed Exercise 32.5 (the second one is 32.6). Its §31.3 has an undefined
-set, its §31.5 closes the diagonal of a subspace rather than of $Y\times Y$, its §32.7 answers "I haven't been
-able to find a counterexample I understand" for part (e), and its §33.1 is quoted from a source with the union
-and intersection interchanged in the display. Those defects are recorded on the cards, not repaired here.
+first item headed "Problem 32.6" is printed Exercise 32.5 (the second one is 32.6). Of its §30--§32 answers,
+§31.3 has an undefined set and assumes the point has neighbours on both sides, §31.5 closes the diagonal of a
+subspace rather than that of $Y\times Y$, §32.4 states the method of Theorem 32.1 in one sentence, and §32.7
+answers part (e) "No, but I haven't been able to find a counterexample I understand". Those defects are recorded
+on the cards, not repaired here; §33--§36 of this set have not been read line by line.
 
 **Amit Rajaraman, *Munkres Solutions* (MA 406 course notes, last updated 31 March 2021)**,
 `tmp/sources/munkres-solutions-amitrajaraman-ma406.pdf` (13 pages, [PDF](https://amitrajaraman.github.io/notes/ma-406/main.pdf)).
