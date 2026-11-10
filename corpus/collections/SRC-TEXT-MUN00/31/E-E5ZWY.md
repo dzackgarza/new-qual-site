@@ -47,7 +47,7 @@ If $X = \{x\}$ take $V = X = U$. Otherwise let $B$ be a basis element with $x \i
 
 If $X$ has a point below $x$ and a point above $x$, then $B$ contains points $u < x < v$, and convexity gives $[u, v] \subset B \subset U$; then $V = (u, v)$ is open, contains $x$, and $\overline{V} \subset [u, v] \subset U$.
 
-If $x$ is the least element of $X$, then $X$ has a point above $x$ and $B$ contains an interval $[x, b)$ with $b > x$; choose $v$ with $x < v < b$, so that $V = [x, v)$ is open, contains $x$, and $\overline{V} \subset [x, v] \subset [x, b) \subset U$.
+If $x$ is the least element of $X$, then $X$ has a point above $x$ and $B$ contains an interval $[x, b)$ with $b > x$. If there is a point $v$ with $x < v < b$, then $V = [x, v)$ is open, contains $x$, and $\overline{V} \subset [x, v] \subset [x, b) \subset U$; if there is none, then $[x, b) = \{x\}$ is an open neighbourhood of $x$ with $\overline{\{x\}} = \{x\} \subset U$.
 
 If $x$ is the greatest element of $X$, the preceding paragraph applies to the reverse order: $B$ contains an interval $(b, x]$, and with $b < v < x$ the set $V = (v, x]$ is open, contains $x$, and $\overline{V} \subset [v, x] \subset (b, x] \subset U$.
 

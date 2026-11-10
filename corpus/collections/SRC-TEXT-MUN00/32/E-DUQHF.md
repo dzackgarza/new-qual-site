@@ -20,14 +20,13 @@ audit:
   note: >-
     Transcribed from the located published solutions: Ana Emilia de Orellana, "Solutions -
     Topology Munkres", Section 32 Exercise 1, printed p. 33
-    (tmp/sources/munkres-solutions-anadeore.pdf), and "Doug's World", "Munkres - Topology -
-    Chapter 4 Solutions" (30 August 2017; the file names no author), Problem 32.1, printed p. 6
-    (tmp/sources/munkres-solutions-dougsworld-ch4.pdf); checked against Munkres, Topology (2000),
+    (tmp/sources/munkres-solutions-anadeore.pdf), checked against Munkres, Topology (2000),
     Section 32 Exercise 1, printed p. 205, and Theorem 17.3 (a set closed in a closed subspace is
-    closed in the space). What was corrected: Orellana writes "A = Ã cap Y and B = B̃ cap Y with Ã,
+    closed in the space). "Doug's World", "Munkres - Topology - Chapter 4 Solutions" (30 August
+    2017), does not treat this exercise: its Section 32 begins at printed p. 6 with Problem 32.3. What was corrected: Orellana writes "A = Ã cap Y and B = B̃ cap Y with Ã,
     B̃ closed sets in X" and then jumps to the disjoint open sets of X, omitting the observation that
     Ã and B̃ may be taken to be A and B themselves because Y is closed; the card makes that step.
-    Doug's World's response is a single sentence.
+    Orellana's is the only located proof of the exercise.
 ---
 
 ::: {.exercise}

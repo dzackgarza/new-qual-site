@@ -191,9 +191,45 @@ contain errors.
 `sec_22_TG.tex`). Chapters 1 and 2 only, stopping at §22 and the topological-groups supplement; it too has no
 §12, §14 or §15 file. Work in progress, no chapter 3 or beyond.
 
-Nothing located covers Chapters 4–14 complete: §30–§34 and §37 have only Orellana's selection, and §35, §36,
-§38–§64, §66–§85 have no located set with printed pagination. The `dbFin` pages, the Riemannian Hunger blog
-and the commercial manuals are HTML or paywalled, print no pagination, and are not cited here.
+**"Doug's World", *Munkres - Topology - Chapter 4 Solutions* (30 August 2017)**,
+`tmp/sources/munkres-solutions-dougsworld-ch4.pdf` (14 pages;
+[dougsworldsite](https://dougsworldsite.files.wordpress.com/2017/08/munkres-topology-ch-4.pdf)).
+The file names no author, so the site's handle is the attribution, as with `shenapse` and `positron0802`
+above. Every page carries its own "Page $n$" in the footer, so cite that page, not the PDF index. It is a
+**selection over the whole chapter**, and the first set located that reaches §35 and §36:
+
+| section | printed pages | exercises |
+| --- | --- | --- |
+| §30 The Countability Axioms | 1–4 | 1, 3, 4, 5, 7, 9, 11, 12, 13, 15; 30.10 and 30.16 are left empty |
+| §31 The Separation Axioms | 4–6 | 1–7, all four parts of 7 |
+| §32 Normal Spaces | 6–7 | 3, 4, 5, 6, 7 |
+| §33 The Urysohn Lemma | 7–10 | 1, 2, 3, 4, 6, 7, 8 |
+| §34 The Urysohn Metrization Theorem | 10–12 | 1, 2, 3, 4, 5, 7, 8, 9 |
+| §35 The Tietze Extension Theorem | 12–13 | 1, 4, 5 |
+| §36 Imbeddings of Manifolds | 13–14 | 1, 3 |
+
+Two of its numbers are not the book's: the item headed "Problem 30.12" is printed Exercise 30.13, and the
+first item headed "Problem 32.6" is printed Exercise 32.5 (the second one is 32.6). Its §31.3 has an undefined
+set, its §31.5 closes the diagonal of a subspace rather than of $Y\times Y$, its §32.7 answers "I haven't been
+able to find a counterexample I understand" for part (e), and its §33.1 is quoted from a source with the union
+and intersection interchanged in the display. Those defects are recorded on the cards, not repaired here.
+
+**Amit Rajaraman, *Munkres Solutions* (MA 406 course notes, last updated 31 March 2021)**,
+`tmp/sources/munkres-solutions-amitrajaraman-ma406.pdf` (13 pages, [PDF](https://amitrajaraman.github.io/notes/ma-406/main.pdf)).
+Its own page numbers run 1–13 in the running head. Chapters 2 and 3 are selections; Chapter 4 is **§30 Exercises
+1, 2, 3, 4, 5, 9 and 10 on printed pp. 12–13**, after which the file ends. Short and compact, but complete where
+it treats an exercise.
+
+Nothing located covers Chapters 4–14 complete: Chapter 4 is reached by Orellana (a selection), by "Doug's World"
+(a selection, but the only set that reaches §35 and §36) and by Amit Rajaraman (§30 only), and §37 by Orellana
+alone. §38–§64 and §66–§85 have no located set with printed pagination. The `dbFin` pages, the Riemannian
+Hunger blog and the commercial manuals are HTML or paywalled, print no pagination, and are not cited here.
+
+One further set exists and could not be retrieved: **Morten Poulsen, *Solutions to exercises in Munkres***,
+`web.math.ku.dk/~moller/e02/3gt/opg/S30.pdf` … `S36.pdf`, a per-section set whose §31 covers Exercises 1–8.
+That host refused every connection from the machine these cards were written on (IPv4 and web, four attempts),
+so the files were never downloaded, no printed page could be established, and nothing is cited from them. It is
+the likeliest place to close the §31 exercises that have no located solution.
 
 No set was found for Munkres §12, §14, §15 or §65, and none in this repository before this search; the
 `dbFin` pages and the commercial solution manuals are HTML or paywalled and print no pagination, so neither is
