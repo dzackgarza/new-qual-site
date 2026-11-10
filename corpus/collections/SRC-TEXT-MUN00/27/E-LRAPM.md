@@ -11,6 +11,21 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §27 Exercise 1, printed p. 177, with Theorem 27.4
+    and Theorem 26.2; the stored statement is the printed sentence.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 27.1, PDF pp. 15-16. The closure of a bounded set
+    is compact, the identity attains a maximum there, and that maximum is the least upper
+    bound. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -19,25 +34,9 @@ Prove that if $X$ is an ordered set in which every closed interval is compact, t
 :::
 
 ::: {.solution}
-Let $A\subset X$ be nonempty and bounded above. Choose $a_0\in A$ and an upper bound $b$ of $A$. For each $a\in A$, consider the closed subset
-$$
-F_a=[a,b]\cap[a_0,b]=[\max\{a,a_0\},b]\subseteq[a_0,b].
-$$
-The family $\{F_a:a\in A\}$ has the finite intersection property: for finitely many $a_1,\dots,a_n\in A$, one of them is largest, say $a_j$, and then
-$$
-F_{a_1}\cap\cdots\cap F_{a_n}=[\max\{a_0,a_j\},b]\ne\varnothing.
-$$
-Since the closed interval $[a_0,b]$ is compact by hypothesis,
-$$
-F=\bigcap_{a\in A}F_a\ne\varnothing.
-$$
-The set $F$ is exactly the set of upper bounds of $A$ that lie in $[a_0,b]$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 27.1, PDF pp. 15--16** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
 
-It remains to show that the nonempty compact ordered subspace $F$ has a least element. Suppose it had none. For each $x\in F$, choose $y_x\in F$ with $y_x<x$. Then the sets
-$$
-(y_x,\infty)\cap F
-$$
-form an open cover of $F$: given $z\in F$, choose $x\in F$ with $x<z$, and then $z\in(y_x,\infty)\cap F$ since $y_x<x<z$. By compactness, finitely many suffice. Let $y$ be the least of the finitely many left endpoints $y_{x_1},\dots,y_{x_n}$. Then $y\in F$, but $y$ belongs to none of the sets $(y_{x_i},\infty)\cap F$, contradiction. Thus $F$ has a least element.
+Let $X$ be an ordered set in which every closed interval is compact, and let $A\subset X$ be nonempty and bounded above. Then $\overline A$ is closed, and it is contained in the closed interval $[\inf,\sup]$ spanned by $A$ and an upper bound, hence compact (closed in a compact space). Applying Theorem 27.4 (the extreme value theorem) to the inclusion $\overline A\to X$, the function $x\mapsto x$ attains a maximum at some $b\in\overline A$: $a\le b$ for all $a\in A$.
 
-That least element is the least upper bound of $A$. Therefore $X$ has the least upper bound property.
+We show $b$ is the least upper bound of $A$. Suppose $c<b$ and $a\le c$ for all $a\in A$. Then $c\in\overline A$: if a neighbourhood $(c-\varepsilon,c+\varepsilon)$ missed $A$, then $(b-c-\varepsilon,b+\varepsilon)$ would be a neighbourhood of $b$ missing $A$, contrary to $b\in\overline A$. Since $b$ is an upper bound of $\overline A$, $c\le b$, contradicting $c<b$. So $b$ is the least upper bound of $A$.
 :::
