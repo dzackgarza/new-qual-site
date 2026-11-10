@@ -12,9 +12,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §23 Exercise 8, printed p. 152, with the uniform
+    metric of §20; the stored statement is the printed question.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 23.8, PDF p. 2. The bounded and the unbounded
+    sequences are disjoint nonempty sets, each a union of uniform balls, hence a separation
+    of R^omega in the uniform topology. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -23,33 +34,15 @@ Determine whether or not $\RR^\omega$ is connected in the uniform topology.
 :::
 
 ::: {.solution}
-The uniform metric is $\bar\rho(\mathbf x,\mathbf y)=\sup_n\min\{\abs{x_n-y_n},1\}$. Let $\mathcal B$ be the set of bounded sequences.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.8, PDF p. 2** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the separation is theirs.
 
-::: pf
-
-::: {.pf-step #boundedness-locally-constant}
-If $\bar\rho(\mathbf x,\mathbf y)<\frac12$, then $\mathbf x$ is bounded if and only if $\mathbf y$ is bounded.
-
-::: pf-proof
-$\bar\rho(\mathbf x,\mathbf y)<\frac12$ forces $\abs{x_n-y_n}<\frac12$ for every $n$, so $\sup_n\abs{y_n}\le\sup_n\abs{x_n}+\frac12$ and symmetrically.
-:::
-
-:::
-
-::: {.pf-step #b-clopen-proper}
-$\mathcal B$ is open and closed in the uniform topology, and $\mathcal B\ne\varnothing,\RR^\omega$.
-
-::: pf-proof
-By step [](#boundedness-locally-constant){.pf-ref}, the ball $B_{\bar\rho}(\mathbf x,\frac12)$ lies in $\mathcal B$ when $\mathbf x\in\mathcal B$ and in $\RR^\omega-\mathcal B$ when $\mathbf x\notin\mathcal B$, so both sets are open.
-$\mathbf 0\in\mathcal B$ and $(1,2,3,\ldots)\notin\mathcal B$.
-:::
-
-:::
-
-::: pf-qed
-By step [](#b-clopen-proper){.pf-ref}, $\mathcal B$ and its complement separate $\RR^\omega$, so $\RR^\omega$ is $\boxed{\text{not connected}}$ in the uniform topology.
-:::
-
-:::
-
+$\RR^{\omega}$ is **not** connected in the uniform topology. Let
+$$
+A=\{\mathbf{x}\mid \mathbf{x}\ \text{is bounded}\},\qquad B=\{\mathbf{x}\mid \mathbf{x}\ \text{is unbounded}\},
+$$
+so that $A\cup B=\RR^{\omega}$ and $A\cap B=\varnothing$, both nonempty. For $\mathbf{a}\in\RR^{\omega}$ and $0<\varepsilon<1$ put
+$$
+U(\mathbf{a},\varepsilon)=\prod_{n}(a_{n}-\varepsilon,a_{n}+\varepsilon),
+$$
+a basis element of the box topology containing $\mathbf{a}$; it contains the uniform ball $B_{\bar\rho}(\mathbf{a},\varepsilon)$ because $\bar\rho(\mathbf{a},\mathbf{x})<\varepsilon$ forces $\abs{a_{n}-x_{n}}<\varepsilon$ for every $n$. If $\mathbf{a}\in A$ then $U(\mathbf{a},\varepsilon)\subset A$: the coordinates of a point of $U$ differ from the bounded sequence $\mathbf{a}$ by less than $\varepsilon$, so it is bounded. If $\mathbf{a}\in B$ then $U(\mathbf{a},\varepsilon)\subset B$ similarly. So each of $A$ and $B$ is a union of balls, hence open in the uniform topology, and they separate it.
 :::
