@@ -20,6 +20,24 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "Solutions to exercises for Mathematics 205A"
+    (University of California, Riverside, Fall 2014; the file names no author), file solutions5a.pdf,
+    section VI.4 "Local compactness and compactifications", "Problems from Munkres, §38, pp. 241-242",
+    Exercise 2, printed p. 9 of that file (tmp/sources/munkres-solutions-ucr-math205A-solutions5a.pdf;
+    the same section is collected at pp. 7-8 of its running numbering in
+    tmp/sources/munkres-solutions-ucr-math205-gentop.pdf). Checked against Munkres, Topology (2000),
+    Section 38 Exercise 2, printed p. 241, and Example 3 of §38 (printed p. 238). The set's
+    non-extendability argument is the card's: the points (1/k pi, sin k pi) lie in the Example 3
+    compactification and converge to (0,0), while cos(1/x) takes the values (-1)^k there, so no continuous
+    extension to the compactification exists. What was corrected: the set imbeds (0,1) into [-1,1]^3 by
+    h(x) = (x, sin(1/x), cos(1/x)), while the exercise prints the target [0,1]^3; the card rescales the
+    second and third coordinates affinely to (1 + sin(1/x))/2 and (1 + cos(1/x))/2, and the extending
+    functions are the two rescaled coordinate projections. The set's argument is otherwise unchanged. Not
+    checked here: the set says nothing about the first coordinate's extension, which is the identity.
 ---
 
 ::: {.exercise}

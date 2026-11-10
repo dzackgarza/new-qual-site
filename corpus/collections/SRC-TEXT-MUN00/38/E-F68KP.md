@@ -15,6 +15,26 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Jesper Michael Møller, "Solutions to exercises in Munkres", file S38.pdf,
+    Exercise 38.9, pages 2-3 of the file (tmp/sources/munkres-solutions-poulsen-S38.pdf; the sheet is
+    dated 2 April 2005 and its section-38 items name no author; Internet Archive snapshot 20181222125939
+    of web.math.ku.dk/~moller/e02/3gt/opg/S38.pdf). Checked against Munkres, Topology (2000), Section 38
+    Exercise 9, printed p. 242, the sequence lemma (Theorem 21.3, or Lemma 30.2 for first countability),
+    Theorem 32.2 (metrizable implies normal) and Urysohn's lemma (Theorem 33.1). The sheet's part (a):
+    a sequence in X converging to y in beta(X) - X has no repetitions after passing to a subsequence, so
+    its set S has no limit point in X, the two sets of even and odd terms are therefore closed in X,
+    Urysohn separates them by f, and the extension of f to beta(X) would take the two subsequences to 0
+    and to 1 while both converge to y. Part (b): if beta(X) were metrizable, the sequence lemma would
+    produce a sequence in X converging to a point of beta(X) - X, contradicting (a). What was corrected:
+    the card's step that S has no accumulation point in X said only that an accumulation point "is a
+    cluster point of the sequence", which needs the observation that every neighbourhood of such a point
+    meets S in infinitely many terms because the terms are distinct; the card states that reason now.
+    The card's (a) also dropped the sheet's ordering of the parity, which is irrelevant, so the two
+    functions' values are 0 and 1 as above.
 ---
 
 ::: {.exercise}

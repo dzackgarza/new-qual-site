@@ -21,6 +21,24 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "Solutions to exercises for Mathematics 205A"
+    (University of California, Riverside, Fall 2014; the file names no author), file solutions5a.pdf,
+    section VI.4 "Local compactness and compactifications", "Problems from Munkres, §38, pp. 241-242",
+    Exercise 3, printed p. 9 of that file (tmp/sources/munkres-solutions-ucr-math205A-solutions5a.pdf).
+    Checked against Munkres, Topology (2000), Section 38 Exercise 3, printed p. 241, Theorem 34.1 (the
+    Urysohn imbedding theorem), Exercise 21.3(b) (a countable product of metrizable spaces is metrizable
+    by the metric there) and Tychonoff's theorem (Theorem 37.3). The set's necessity is the card's: a
+    dense subspace of a compact metrizable space is second countable, since compact metrizable spaces
+    are second countable and a subspace of a second countable space is second countable. What was
+    corrected: the sheet prints the exercise with the course's annotation "[Just give a necessary
+    condition on the topology of the space.]" and says the sufficiency "was not assigned", giving it in
+    a single sentence that leans on a compact metrizable ambient space; the card proves both directions,
+    imbedding X in [0,1]^{Z_+} by Theorem 34.1, which is compact by Tychonoff and metrizable by Exercise
+    21.3(b), and taking the closure of the image.
 ---
 
 ::: {.exercise}

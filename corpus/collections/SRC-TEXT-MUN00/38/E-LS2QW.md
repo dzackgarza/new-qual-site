@@ -20,6 +20,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    No complete published solution was located for this exercise, so the proof is checked line by line
+    against the book and the search is recorded in the COMPLAINTS.md entry for §37--§42 of SRC-TEXT-MUN00.
+    Searched: "Solutions to exercises in Munkres", file S38.pdf, whose section 38 ends at Exercise 38.9;
+    "Solutions to exercises for Mathematics 205A" (University of California, Riverside, Fall 2014), file
+    solutions5a.pdf, whose section VI.4 answers §38 Exercises 2 and 3 only; Orellana, "Solutions ---
+    Topology Munkres" (§34 and §37 only); Doug's World (Chapter 4), Whitman (to §22), "positron0802"
+    (Chapters 2 and 3), "shenapse" (§1--§11), "9beach" (§1--§4), "kyp44" (§1--§22); and the dbFin pages,
+    which have no chapter-5 or chapter-6 section. Checked against Munkres, Topology (2000), Section 38
+    Exercise 10, printed p. 242, with Theorem 38.4 (the extension property), Lemma 38.3 (uniqueness of
+    extensions into a Hausdorff space, which is what makes beta(f) well defined and what both parts use)
+    and Theorem 18.3 or the closed-set criterion of continuity. No correction was needed. Not checked
+    here: nothing in the exercise is left out; the card proves both functor laws and does not verify the
+    book's remark that the two displayed properties are exactly functoriality, which is a definition.
 ---
 
 ::: {.exercise}

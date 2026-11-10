@@ -20,6 +20,22 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Jesper Michael Møller, "Solutions to exercises in Munkres", file S38.pdf,
+    Exercise 38.7, pages 1-2 of the file (tmp/sources/munkres-solutions-poulsen-S38.pdf; the sheet is
+    dated 2 April 2005 and its section-38 items name no author; Internet Archive snapshot 20181222125939
+    of web.math.ku.dk/~moller/e02/3gt/opg/S38.pdf). Checked against Munkres, Topology (2000), Section 38
+    Exercise 7, printed p. 242, Theorem 38.4, Exercise 17.8 and Theorem 17.6. The sheet's argument is the
+    card's: (a) is the extension to beta(X) of the characteristic function of A, whose two level sets are
+    disjoint closed sets; (b) shows U and U cap X have the same closure, by density of X, and concludes
+    from (a) that this closure is the complement of a closed set; (c) separates two distinct points of
+    beta(X) by a clopen set, which is the sheet's explicit statement that beta(X) is extremally
+    disconnected and hence totally disconnected. No correction was needed. Not checked here: the sheet
+    states the extremally-disconnected conclusion in prose between its parts (b) and (c); the card puts
+    it inside (b), where the proof of it is.
 ---
 
 ::: {.exercise}

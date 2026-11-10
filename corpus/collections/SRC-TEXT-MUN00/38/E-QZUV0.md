@@ -14,6 +14,20 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Jesper Michael Møller, "Solutions to exercises in Munkres", file S38.pdf,
+    Exercise 38.4, page 1 of the file (tmp/sources/munkres-solutions-poulsen-S38.pdf; the PDF metadata names
+    Jesper Michael Møller and the sheet is dated 2 April 2005, and its section-38 items carry no
+    per-exercise attribution; Internet Archive snapshot 20181222125939 of web.math.ku.dk/~moller/e02/3gt/opg/S38.pdf).
+    Checked against Munkres, Topology (2000), Section 38 Exercise 4, printed p. 241. The sheet's argument
+    is the one on this card: the inclusion X -> Y is a continuous map into the compact Hausdorff space Y,
+    so by Theorem 38.4 it has a unique continuous extension g (Lemma 38.3 is uniqueness); a continuous map
+    of the compact space beta(X) into a Hausdorff space is closed (Theorems 26.5 and 17.11); the image
+    contains X, which is dense in Y, so g is onto. No correction was needed. Not checked here: nothing in
+    the exercise is left out; the exercise's bracketed remark is the printed one.
 ---
 
 ::: {.exercise}
