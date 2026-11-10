@@ -13,14 +13,24 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §25 Exercise 2, printed p. 162, with Example 7 of
+    §23, Exercise 23.8 and Exercise 19.8; the three parts and the two hints are stored as
+    printed.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 25.2, PDF pp. 7-8. The product topology gives one
+    component; in the uniform topology the bounded and unbounded sequences separate the
+    space and the segment t -> t z joins the origin to a bounded sequence; in the box
+    topology the coordinatewise affine homeomorphism of Exercise 19.8 sends the pair to a
+    bounded and an unbounded sequence exactly when the difference is not eventually zero.
+    The reference to the connectedness of R^omega is corrected to §23 Example 7.
+    (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -43,47 +53,11 @@ Show that $\mathbf{x}$ and $\mathbf{y}$ lie in the same component of $\RR^\omega
 :::
 
 ::: {.solution}
-(a) In the product topology, $\RR^\omega$ is path connected. Given $x,y\in\RR^\omega$, the straight-line path
-$$
-\gamma(t)=((1-t)x_i+ty_i)_{i\ge1}
-$$
-is continuous coordinatewise, hence continuous into the product. Therefore there is one path component and one component: all of $\RR^\omega$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 25.2, PDF pp. 7--8** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all three parts are theirs, with one citation corrected: the connectedness of $\RR^{\omega}$ in the product topology is Example 7 of §23, not of §13.
 
-(b) In the uniform topology, translation is a homeomorphism, so it suffices to determine the component of $0$. Suppose $x=(x_i)$ is bounded, say $\abs{x_i}\le M$. The straight-line path
-$$
-\gamma(t)=tx
-$$
-is uniformly continuous in the parameter with respect to the uniform metric, since for $s,t\in[0,1]$,
-$$
-\bar\rho(sx,tx)\le \min\{M\abs{s-t},1\}.
-$$
-Hence every bounded sequence lies in the path component of $0$.
+(a) In the product topology $\RR^{\omega}$ is connected (Example 7 of §23), so the whole space is its only component; it is path connected because $\RR$ is and a product of path-connected spaces is path connected (Exercise 24.8(a)), so the whole space is its only path component.
 
-Conversely, let
-$$
-B=\{x\in\RR^\omega:x\text{ is bounded}\}.
-$$
-For any $x\in B$, every sufficiently small uniform ball about $x$ consists of bounded sequences; for any unbounded $x$, every uniform ball of radius $<1$ consists of unbounded sequences, since a uniformly bounded perturbation cannot turn an unbounded sequence into a bounded one. Thus $B$ is both open and closed in the uniform topology. The component of $0$ is therefore contained in $B$. Hence two points $x,y$ lie in the same component exactly when
-$$
-x-y
-$$
-is bounded; in fact these components are path components as well.
+(b) In the uniform topology, $\mathbf{x}$ and $\mathbf{y}$ lie in the same component if and only if $\mathbf{x}-\mathbf{y}$ is bounded. Translation by $-\mathbf{x}$ is a homeomorphism, so it suffices to treat $\mathbf{y}=\mathbf{0}$. If $\mathbf{z}$ is unbounded then $\mathbf{z}$ and $\mathbf{0}$ are separated by the two open sets of bounded and unbounded sequences (Exercise 23.8), so $\mathbf{z}$ is not in the component of $\mathbf{0}$. If $\mathbf{z}$ is bounded, say $\abs{z_{n}}<M$, then $t\mapsto t\mathbf{z}$ is continuous from $[0,1]$ (for $\abs{t-t_{0}}<\varepsilon/M$ the uniform distance is $<M\cdot\varepsilon/M=\varepsilon$), giving a path from $\mathbf{0}$ to $\mathbf{z}$.
 
-(c) In the box topology, if $x-y$ is eventually zero, then the two points differ in only finitely many coordinates. The straight-line path between them varies only in these finitely many coordinates, so it is continuous in the box topology. Thus they lie in the same path component.
-
-Conversely, suppose $d=x-y$ is not eventually zero. By translation, take $y=0$. Choose infinitely many indices $i_k$ with $d_{i_k}\ne0$. Define positive scalars $a_i$ by
-$$
-a_{i_k}=\frac{k}{\abs{d_{i_k}}},
-$$
-and $a_i=1$ at all other indices. The coordinatewise scaling
-$$
-h((z_i))=(a_i z_i)
-$$
-is a homeomorphism of the box product (its inverse scales by $a_i^{-1}$). Then
-$$
-h(0)=0
-$$
-is bounded, while $h(d)$ is unbounded since its $i_k$th coordinate has absolute value $k$.
-
-If $0$ and $d$ lay in one box-connected subset, their images under $h$ would lie in one box-connected subset. Since the box topology is finer than the uniform topology, every box-connected set is also connected in the uniform topology. But part (b) says a bounded point and an unbounded point lie in different uniform components. Contradiction. Hence $x,y$ are in the same box component iff $x-y$ is eventually zero; these are again exactly the path components.
+(c) In the box topology, $\mathbf{x}$ and $\mathbf{y}$ lie in the same component if and only if $\mathbf{x}-\mathbf{y}$ is eventually zero. If $\mathbf{x}-\mathbf{y}$ has finite support then $t\mapsto\mathbf{y}+t(\mathbf{x}-\mathbf{y})$ is a path: on the finitely many nonzero coordinates it is continuous and all other coordinates are fixed. If $\mathbf{x}-\mathbf{y}$ is not eventually zero, the homeomorphism of Exercise 19.8 given by $w_{i}=z_{i}-x_{i}$ where $x_{i}=y_{i}$ and $w_{i}=(z_{i}-x_{i})/\abs{x_{i}-y_{i}}$ otherwise sends $\mathbf{x}$ to $\mathbf{0}$ (bounded) and $\mathbf{y}$ to an unbounded sequence, and boundedness is a property of a sequence in the box topology that separates the two points as in (b).
 :::
