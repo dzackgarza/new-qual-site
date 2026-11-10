@@ -32,10 +32,24 @@ audit:
     two loops give the same relative class exactly when `[alpha'][alpha]^{-1} in H`, i.e. exactly when
     the left cosets agree. The bijection is with the *left* cosets `H \ pi_1(X,x_0)`, the side the card
     displays, and it is natural in the pair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-07
+  note: >-
+    The problem block had replaced the print's "the set of cosets $\alpha H$" by "$H\alpha$". The
+    printed wording is restored, and the solution now says which family of cosets the relative classes
+    actually give and why: replacing the path $v$ replaces $[vu]$ by the left multiple
+    $[v'v^{-1}][vu]$, so the invariant is $\{h\alpha\}$ with $H$ on the left. Since
+    $H=i_*\pi_1(A,x_0)$ need not be normal, $\{h\alpha\}$ and $\{\alpha h\}$ are different families,
+    and the print's $\alpha H$ has to be read as $\{h\alpha\}$ here; the card states this instead of
+    silently changing the book's notation. Read against Hatcher, Algebraic Topology (2002), §4.1
+    Exercise 5, printed p. 358, with the definition of $\pi_1(X,A,x_0)$ on p. 344. Sam's solution of
+    this exercise (printed pp. 17-18) reaches the same identification and also writes $\alpha H$; his
+    proof is the second construction on the card.
 ---
 
 ::: {.problem}
-For a pair $(X, A)$ of path-connected spaces, show that $\pi_1(X, A, x_0)$ can be identified in a natural way with the set of cosets $H\alpha$ of the subgroup $H \subset \pi_1(X, x_0)$ represented by loops in $A$ at $x_0$.
+For a pair $(X, A)$ of path-connected spaces, show that $\pi_1(X, A, x_0)$ can be identified in a natural way with the set of cosets $\alpha H$ of the subgroup $H \subset \pi_1(X, x_0)$ represented by loops in $A$ at $x_0$.
 :::
 
 ::: {.solution}
@@ -73,4 +87,6 @@ Thus the two constructions are inverse natural bijections of pointed sets:
 $$
 \boxed{\pi_1(X,A,x_0)\cong H\backslash\pi_1(X,x_0).}
 $$
+
+*Which family of cosets, and the print's notation.* The bijection produces the family $\{h\alpha\}_{h\in H}$, with $H$ multiplying on the left, and the side is forced by the computation above: replacing the path $v$ by $v'$ replaces $[vu]$ by the left multiple $[v'v^{-1}][vu]$, and nothing in the construction lets one move $H$ to the right of the class. The printed exercise writes the cosets as $\alpha H$; since $H\subset\pi_1(X,x_0)$ is the image of $\pi_1(A,x_0)$ and need not be normal, the families $\{h\alpha\}$ and $\{\alpha h\}$ are in general different, and the one arising here is $\{h\alpha\}$. The conclusion is therefore the identification of $\pi_1(X,A,x_0)$ with the set of cosets written $\alpha H$ in the print, read as the set $\{h\alpha:h\in H\}$ with $H$ on the left. Naturality is with respect to maps of triples $(X,A,x_0)\to(Y,B,y_0)$, which carry paths from $A$ to $x_0$ into paths from $B$ to $y_0$ and commute with the passage to cosets because they are homomorphisms on $\pi_1$.
 :::
