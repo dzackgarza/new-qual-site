@@ -21,6 +21,22 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §6 Exercise 2, printed p. 44; the stored
+    statement matches.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 6.2,
+    printed p. 76 (tmp/sources/munkres-solutions-whitman.pdf). He splits B = A from B a
+    proper subset, using Theorem 6.2 for the proper case; the card instead proves
+    directly that every subset of a section {1,...,n} is finite, which reaches the same
+    conclusion without quoting 6.2. No defect found.
 ---
 
 ::: {.exercise}
@@ -29,6 +45,8 @@ Show that if $B$ is not finite and $B \subset A$, then $A$ is not finite.
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.2, printed p. 76** (`tmp/sources/munkres-solutions-whitman.pdf`), which argues through the book's Theorem 6.2 that a proper subset of a finite set is finite; the card proves that input directly instead.
+
 Suppose, toward a contradiction, that $A$ were finite. We first prove by
 induction on $n$ that every subset of $\{1,\dots,n\}$ is finite. For $n=0$,
 the only subset is empty. Assume the claim for $n$ and let

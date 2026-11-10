@@ -21,6 +21,22 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §6 Exercise 4, printed p. 44; both parts are
+    stored as printed, including the hint to induct on the cardinality.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 6.4,
+    printed pp. 76-78 (tmp/sources/munkres-solutions-whitman.pdf), both inductions on the
+    cardinality: removing one element, applying the hypothesis, and comparing that
+    element with the largest element of the rest. The card's (b) extends the order
+    isomorphism of A' by the largest element, which is his construction. No defect found.
 ---
 
 ::: {.exercise}
@@ -34,6 +50,8 @@ Let $A$ be a nonempty finite simply ordered set.
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.4, printed pp. 76--78** (`tmp/sources/munkres-solutions-whitman.pdf`); both inductions on $\cardinality{A}$ are his, as is the extension of the order isomorphism of $A-\{M\}$ by the largest element.
+
 (a) We induct on $\cardinality{A}$. If $\cardinality{A}=1$, the unique element is the largest element.
 
 Assume every nonempty simply ordered set of cardinality $n$ has a largest element, and let $\cardinality{A}=n+1$. Choose $a\in A$. Then $A-\{a\}$ has cardinality $n$, so by induction it has a largest element $m$. Since the order is simple, either $a<m$ or $m<a$. In the first case $m$ is largest in all of $A$; in the second case $a$ is largest. Thus every nonempty finite simply ordered set has a largest element.

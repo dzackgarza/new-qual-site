@@ -14,6 +14,23 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §6 Exercise 6, printed p. 44; both parts are
+    stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 6.6,
+    printed pp. 78-79 (tmp/sources/munkres-solutions-whitman.pdf). He sends a subset to
+    its indicator n-tuple and inverts by collecting the positions of the 1s; the card
+    writes the same two maps, as characteristic functions. Part (b) transfers the
+    bijection along a bijection of A with a section and quotes the finiteness of a
+    finite product, which is his use of Corollary 6.8. No defect found.
 ---
 
 ::: {.exercise}
@@ -24,6 +41,7 @@ audit:
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.6, printed pp. 78--79** (`tmp/sources/munkres-solutions-whitman.pdf`); the indicator-tuple bijection and the transfer along a bijection with a section are his.
 
 (a) For $S\subseteq A$, let $\chi_S(i)=1$ if $i\in S$, and let
 $\chi_S(i)=0$ otherwise. The map

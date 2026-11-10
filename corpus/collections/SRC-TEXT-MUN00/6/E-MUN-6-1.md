@@ -21,6 +21,22 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §6 Exercise 1, printed p. 44; both parts are
+    stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 6.1,
+    printed p. 75 (tmp/sources/munkres-solutions-whitman.pdf). He counts the injections
+    from {1,...,m} to {1,...,n} as n!/(n-m)! by induction and then lists all 24 of the
+    case at hand; the card lists the same 24 triples and counts them as 4*3*2, and gives
+    10!/2! = 1814400 for part (b) as he does. No defect found.
 ---
 
 ::: {.exercise}
@@ -45,6 +61,8 @@ are there?
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.1, printed p. 75** (`tmp/sources/munkres-solutions-whitman.pdf`); his count of the injections as $n!/(n-m)!$ is the one used here, and his list of the 24 triples is the list below.
+
 (a) An injective map is determined by the ordered triple
 $$
 (f(1),f(2),f(3)),
