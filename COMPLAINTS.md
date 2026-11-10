@@ -515,6 +515,10 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 
 **Repair.** Not done in this batch, which was the §1–§5 proof pass. The repair is to card the three sections' exercises in book order and, in the same commit, to stop the collection claiming completion for them. Recorded here rather than dropped.
 
+**Update, same session.** §3 is now carded: fifteen new cards `E-MUN-3-1` … `E-MUN-3-15` and section 3 in the collection index (`f3408b3f4d91`). §8 and §11 remain uncarded, and the completion flag is still wrong for them.
+
+**Munkres §7 Exercise 9(b): the printed hint produces no solution.** `E-MUN-7-9` (b) asks for a second solution of $h(1)=1$, $h(2)=2$, $h(n)=[h(n+1)]^2-[h(n-1)]^2$ for $n\ge2$, and the book's printed hint (p. 53) is "If $h$ is a positive function satisfying $(*)$, let $f(i)=h(i)$ for $i\ne3$, and let $f(3)=-h(3)$". That $f$ is not a solution: the equation at $n=3$ reads $f(3)=[f(4)]^2-[f(2)]^2=[h(4)]^2-[h(2)]^2=h(3)$, while $h(3)^2=3$ by the equation at $n=2$, so $h(3)=\pm\sqrt3$ and $f(3)=-h(3)\ne h(3)$. **Searched:** the book's own text (printed pp. 52–53) and every retained set. **Found:** Dan Whitman's manual states the same failure on its printed p. 92 ("the hint as given does not exactly work") and repairs it by taking $f(3)=-\sqrt3$ and propagating the recursion, which is the construction now on the card; the other retained sets do not reach §7.9. **Conclusion:** the hint is defective, verified by the computation above and independently by a published set. **Confidence:** high. **Gaps:** no published errata for Munkres's 2nd edition was found in this repository, so whether the defect is acknowledged upstream is unknown. **Repair:** done on the card, whose audit note records the corrected hint; the statement of the exercise is untouched.
+
 
 
 **Object and need.** `P-AGH374COHOMCLASS` (Hartshorne III, Ex. 7.4, printed pp. 249–250, starred) needs a published proof of (b) $\eta(Y)=(\deg Y)\cdot1$ for $X=\PP^n$ and of (d) $\eta(Y)=c(\mathcal L(Y))$ for $p=1$, to meet the standing published-solution requirement independently of the card's own derivation.

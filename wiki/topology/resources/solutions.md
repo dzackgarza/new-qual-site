@@ -159,6 +159,43 @@ so cite it as such.
 `chap-04`, so it covers **§1–§4 only**, and not every exercise of those; it was used as a third check on §1
 and §2. Same attribution problem as shenapse: a handle and no name.
 
+**"positron0802", *Solutions to Topology, Chapter 2* and *Chapter 3*** (1 January 2021),
+`tmp/sources/munkres-solutions-positron-ch2.pdf` and `munkres-solutions-positron-ch3.pdf` (31 and 26 pages;
+[Chapter 2](https://positron0802.wordpress.com/wp-content/uploads/2021/01/topology-2-munkres.pdf),
+[Chapter 3](https://positron0802.wordpress.com/wp-content/uploads/2021/01/topology-3-munkres.pdf);
+the author's name is not in the files, so the handle is the attribution). Numbering is Munkres's own,
+"Exercise 12.1" through "Exercise 29.x", and the exercises are numbered consecutively within each PDF, so
+cite the book's exercise number and the set's PDF page. It contains **every exercise of Chapter 2 from §13 on
+and of Chapter 3**, which is what the corpus still needs after Whitman:
+
+| section | in the set | Munkres prints |
+| --- | --- | --- |
+| §12 Topological Spaces | — | **no exercises** (printed pp. 75–78) |
+| §13, §16–§22 | all exercises | pp. 83, 91–144 |
+| §23–§29 | all exercises | pp. 148–186 |
+
+So the sections Whitman lacks are not a gap in any set: **§12, §14 and §15 print no exercises at all**, which
+the set states in the text ("No Exercises.") and which the retained book confirms — the `Exercises` headings
+of Chapter 2 fall on printed pp. 83 (§13), 91 (§16) and onward, never inside §12, §14 or §15. The same is true
+of §65, whose exercises do not exist in the printing.
+
+**Ana Emilia de Orellana, *Solutions — Topology Munkres***, `tmp/sources/munkres-solutions-anadeore.pdf`
+(36 pages; [Solutions.pdf](https://github.com/AnadeOre/munkres-topology-solutions/blob/master/Solutions.pdf)).
+A **selection**, not a complete set: §13, §16–§21, §23–§28, §30–§34 and §37, with each section's own page
+range in its contents. It is the only located set with printed pagination that reaches Chapter 4 (§30–§34)
+and §37 at all, and it solves a subset of the exercises in each. The author warns that the solutions may
+contain errors.
+
+**"kyp44", *A solutions manual for Topology by James Munkres (2nd Edition)***, sources at
+[kyp44/Topology](https://github.com/kyp44/Topology) (`solutions.tex` and `sections/sec_01.tex` …
+`sec_22_TG.tex`). Chapters 1 and 2 only, stopping at §22 and the topological-groups supplement; it too has no
+§12, §14 or §15 file. Work in progress, no chapter 3 or beyond.
+
+Nothing located covers Chapters 4–14 complete: §30–§34 and §37 have only Orellana's selection, and §35, §36,
+§38–§64, §66–§85 have no located set with printed pagination. The `dbFin` pages, the Riemannian Hunger blog
+and the commercial manuals are HTML or paywalled, print no pagination, and are not cited here.
+
 No set was found for Munkres §12, §14, §15 or §65, and none in this repository before this search; the
 `dbFin` pages and the commercial solution manuals are HTML or paywalled and print no pagination, so neither is
 cited here.
+
