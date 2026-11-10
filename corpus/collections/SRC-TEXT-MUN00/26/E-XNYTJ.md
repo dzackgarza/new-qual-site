@@ -11,6 +11,23 @@ classification:
   - Uniform Convergence
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §26 Exercise 10, printed p. 171, with Exercise
+    21.9; the theorem and both counterexample requests are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 26.10, PDF p. 13. Monotone pointwise convergence
+    plus continuity of the terms and the limit gives uniform convergence by a finite
+    subcover of the neighbourhoods on which the first N_x terms are within epsilon; the two
+    examples show monotonicity and compactness are both needed. (tmp/sources/munkres-
+    solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -27,33 +44,11 @@ If $f$ is continuous, and if the sequence $f_n$ is monotone increasing, and if $
 :::
 
 ::: {.solution}
-(a) This is Dini's theorem. Fix $\varepsilon>0$. Since $f_n\uparrow f$, define
-$$
-U_n=\{x\in X:f(x)-f_n(x)<\varepsilon\}.
-$$
-Because $f-f_n$ is continuous, $U_n$ is open. The sets are increasing, since $f_n\le f_{n+1}$, and pointwise convergence implies $\bigcup_nU_n=X$. Compactness gives a finite subcover; since the family is increasing, there is some $N$ with $U_N=X$. Thus for all $x\in X$,
-$$
-0\le f(x)-f_N(x)<\varepsilon.
-$$
-For every $n\ge N$, monotonicity gives
-$$
-0\le f(x)-f_n(x)\le f(x)-f_N(x)<\varepsilon,
-$$
-uniformly in $x$. Hence $f_n\to f$ uniformly.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.10, PDF p. 13** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both parts are theirs.
 
-(b) Compactness is necessary. On $X=\RR$, let
-$$
-f_n(x)=\frac{n}{n+\abs{x}}.
-$$
-Each $f_n$ is continuous, $f_n(x)\uparrow 1$ for each fixed $x$, but
-$$
-\sup_x \abs{1-f_n(x)}=1,
-$$
-so convergence is not uniform.
+(a) Suppose $f_{n}\to f$ pointwise with $f_{n}\le f$ for all $n$ (monotone increasing), $f$ and each $f_{n}$ continuous, and $X$ compact.
 
-Monotonicity is also necessary even on a compact domain. On $[0,1]$, set $g_1=0$. For each $n\ge2$, let $g_n$ be the continuous triangular function that is zero outside
-$$
-\left(\frac1{n+1},\frac1{n-1}\right),
-$$
-equals $1$ at $1/n$, and is linear on each side of that point. Every fixed $x>0$ belongs to only finitely many of these intervals, and $g_n(0)=0$, so $g_n(x)\to0$ for every $x\in[0,1]$. But $\sup_x g_n(x)=1$ for every $n\ge2$, so the convergence is not uniform.
+Let $\varepsilon>0$. For $x\in X$ choose $N_{x}$ with $f(x)-f_{n}(x)<\varepsilon$ for $n\ge N_{x}$; by continuity of $f-f_{N_{x}}$ there is a neighbourhood $U_{x}$ of $x$ with $f(z)-f_{N_{x}}(z)<\varepsilon$ for all $z\in U_{x}$. The $U_{x}$ cover the compact $X$, so $U_{x_{1}},\dots,U_{x_{k}}$ do; let $N=\max\{N_{x_{1}},\dots,N_{x_{k}}\}$. Given $z$ and $n\ge N$, choose $i$ with $z\in U_{x_{i}}$; then $f(z)-f_{n}(z)\le f(z)-f_{N}(z)\le f(z)-f_{N_{x_{i}}}(z)<\varepsilon$. So $0\le f-f_{n}<\varepsilon$ everywhere for $n\ge N$: the convergence is uniform.
+
+(b) Neither hypothesis can be dropped. *Monotonicity:* the functions $f_{n}(x)=1/(n^{3}[x-1/n]^{2}+1)$ restricted to the compact interval $[0,1]$ converge pointwise to $0$ without converging uniformly (Exercise 21.9). *Compactness:* $f_{n}(x)=\arctan(x+n)$ on $\RR$ converges pointwise, monotonically, to the constant $\pi/2$, but $f_{n}(-n)=0$ for every $n$, so the convergence is not uniform.
 :::
