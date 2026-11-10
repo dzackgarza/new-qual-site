@@ -12,15 +12,19 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
-  note: Checked against Munkres, Topology, 2nd ed., Chapter 1, Section 10, Exercise 7; the stored statement matches.
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §10 Exercise 7, printed pp. 67-68; the stored
+    statement is the printed definition of inductive and the printed theorem.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise 10.7, printed p. 112.
+    The proof is his: the least element of J - J_0 has all its predecessors in J_0, so
+    inductivity puts it in J_0, a contradiction.
 ---
 
 ::: {.exercise}
@@ -37,12 +41,9 @@ If $J$ is a well-ordered set and $J_0$ is an inductive subset of $J$, then $J_0 
 :::
 
 ::: {.solution}
-Suppose $J_0\ne J$. Since $J$ is well-ordered, the nonempty set $J-J_0$ has a smallest element; call it $\alpha$. Every $x<\alpha$ lies in $J_0$ by minimality of $\alpha$. Hence
-$$
-S_\alpha\subset J_0.
-$$
-Since $J_0$ is inductive, this implies $\alpha\in J_0$, contradicting $\alpha\in J-J_0$. Therefore
-$$
-\boxed{J_0=J}.
-$$
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 10.7, printed p. 112** (`tmp/sources/munkres-solutions-whitman.pdf`); the proof is his.
+
+Let $J$ be well ordered and let $J_{0}\subset J$ be inductive: for every $\alpha\in J$, if $S_{\alpha}\subset J_{0}$ then $\alpha\in J_{0}$. Suppose $J_{0}\ne J$. Then $J-J_{0}$ is a nonempty subset of the well-ordered set $J$, so it has a smallest element $\alpha$.
+
+Let $y\in S_{\alpha}$, so $y<\alpha$. Since $\alpha$ is the smallest element of $J-J_{0}$, the element $y$ does not lie in $J-J_{0}$; as $y\in J$, this means $y\in J_{0}$. Hence $S_{\alpha}\subset J_{0}$, and since $J_{0}$ is inductive, $\alpha\in J_{0}$. This contradicts $\alpha\in J-J_{0}$. So $J_{0}=J$.
 :::
