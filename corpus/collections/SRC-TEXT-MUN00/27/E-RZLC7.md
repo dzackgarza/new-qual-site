@@ -11,6 +11,21 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §27 Exercise 4, printed p. 178, with Exercise
+    20.3(a); the stored statement is the printed sentence.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 27.4, PDF p. 17. The continuous function z -> d(x,
+    z) has connected image in R containing 0 and a positive value, hence uncountably many
+    values. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -19,13 +34,7 @@ Show that a connected metric space having more than one point is uncountable.
 :::
 
 ::: {.solution}
-Let $X$ be connected and let $a\ne b$ in $X$. Put $r=d(a,b)>0$. The function
-$$
-f:X\to\RR,\qquad f(x)=d(a,x)
-$$
-is continuous. Since $X$ is connected, $f(X)$ is connected in $\RR$, hence an interval. It contains $0=f(a)$ and $r=f(b)$, so
-$$
-[0,r]\subset f(X).
-$$
-Thus there is a surjection from $X$ onto the uncountable set $[0,r]$. A countable set cannot surject onto an uncountable set. Therefore $X$ is uncountable.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 27.4, PDF p. 17** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
+
+Let $X$ be a connected metric space with at least two points $x\ne y$. The distance function $d:X\times X\to\RR$ is continuous (Exercise 20.3(a)), so $d_{x}(z)=d(x,z)$ is continuous on $X$; the image $d_{x}(X)$ is a connected subspace of $\RR$ containing $0$ and $\delta=d(x,y)>0$, hence contains $[0,\delta]$, which is uncountable. Since $d_{x}$ is a function onto a set with uncountably many values, $X$ is uncountable.
 :::
