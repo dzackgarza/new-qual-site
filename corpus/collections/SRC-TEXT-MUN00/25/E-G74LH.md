@@ -12,14 +12,19 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §25 Exercise 4, printed p. 162, with Theorem 25.3
+    and Theorem 25.4; the stored statement is the printed sentence.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 25.4, PDF p. 9. Path components of the open set
+    are open by Theorem 25.4 and closed, so each connected open set is one path component.
+    (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -29,9 +34,7 @@ Show that every connected open set in $X$ is path connected.
 :::
 
 ::: {.solution}
-Let $U\subseteq X$ be open and connected. Since $X$ is locally path connected, the subspace $U$ is locally path connected: if $x\in U$, choose a path-connected open neighborhood $V$ of $x$ contained in $U$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 25.4, PDF p. 9** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the three-line argument is theirs.
 
-In a locally path-connected space, path components are open. Indeed, if $P$ is a path component and $x\in P$, choose a path-connected open neighborhood $V$ of $x$; then every point of $V$ is path connected to $x$, so $V\subseteq P$. Thus each path component of $U$ is open in $U$.
-
-Distinct path components are disjoint, and their union is $U$. If there were more than one, one path component and the union of all the others would give a separation of connected $U$. Hence $U$ has only one path component and is path connected.
+Let $X$ be locally path connected and let $U$ be a connected open subset. By Theorem 25.4 each path component of the open set $U$ is open in $X$, hence open in $U$; being a path component it is also closed in $U$. So each path component of $U$ is a nonempty set both open and closed in the connected space $U$, and therefore equals $U$. Hence $U$ is path connected.
 :::
