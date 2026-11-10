@@ -68,7 +68,7 @@ inferred author:
 
 - [`solution3.pdf`](https://math.stanford.edu/~ralph/math215c/solution3.pdf): Hatcher §3.3 Ex. 9 and 10, p. 1; Ex. 11, pp. 1–2.
 - [`solution4.pdf`](https://math.stanford.edu/~ralph/math215c/solution4.pdf): Hatcher §3.3 Ex. 21, p. 1 (its proposed
-  $\mathbb Z	imes\mathbb R$ counterexample is **not** accepted: it gives an injection on Hom groups, not an uncountability argument);
+  $\ZZ\times\RR$ counterexample is **not** accepted: it gives an injection on Hom groups, not an uncountability argument);
   Ex. 22, pp. 1–2 (relative Mayer–Vietoris); Ex. 24, p. 2.
 - [`solution2.pdf`](https://math.stanford.edu/~ralph/math215c/solution2.pdf): Hatcher §3.B Ex. 1, pp. 3–4 (whose integral and mod-2 homology
   computations are used here, but which explicitly skips cohomology); Ex. 3, p. 5 (the cellular Tor example and its non-natural splitting).
@@ -108,7 +108,57 @@ and a source still to be acquired. Coverage of the Riemannian Hunger set listed 
 
 For the algebraic correction on §3.3 Ex. 21, use **Martin Frankland, *Cohomology of the Hawaiian
 Earring* (2017)**, `tmp/sources/frankland-hawaiian-earring-2017.pdf` ([PDF](https://uregina.ca/~franklam/Frankland_HawaiianEarring_20170222.pdf)).
-Theorem 1.2 (p. 2) is Specker's theorem: $\operatorname{Hom}(\prod_{\mathbb N}\mathbb Z,\mathbb Z)$ is the countable
-free group on the coordinate projections. Theorem 1.3 (p. 2) gives $H^1(E;\mathbb Z)\cong\oplus_{\mathbb N}\mathbb Z$,
+Theorem 1.2 (p. 2) is Specker's theorem: $\operatorname{Hom}(\prod_{\NN}\ZZ,\ZZ)$ is the countable
+free group on the coordinate projections. Theorem 1.3 (p. 2) gives $H^1(E;\ZZ)\cong\oplus_{\NN}\ZZ$,
 and Theorem 1.4 (p. 3) the induced dual isomorphism. The cardinality argument cannot answer the
 bracketed one-point-compactification question either way.
+
+## Solutions to Munkres's *Topology*
+
+Four published sets were located for the exercises of Munkres, *Topology*, 2nd ed. (2000). Cite the set, the
+exercise and the set's **own** printed page, not Munkres's: the manual's page numbers are the ones a reader
+follows in the PDF.
+
+**Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019)**,
+`tmp/sources/munkres-solutions-whitman.pdf` (277 pages, 1,454,860 bytes;
+[PDF](https://math-study.net/wp-content/TopologySolutions.pdf)). Every page carries its own "Page $n$" in the
+footer, three less than the PDF page index, so cite the footer. This is the complete set for Chapter 1 and the
+one the cards of §1, §2, §4 and §5 are transcribed from:
+
+| section | printed pages | exercises |
+| --- | --- | --- |
+| §1 Fundamental Concepts | 1–10 | 1.1–1.10, all |
+| §2 Functions | 11–19 | 2.1–2.6, all |
+| §3 Relations | 20–37 | 3.1–3.15, all |
+| §4 The Integers and the Real Numbers | 38–66 | 4.1–4.11, all |
+| §5 Cartesian Products | 67–74 | 5.1–5.5, all |
+| §6 Finite Sets | 75–80 | 6.1–6.7, all |
+| §7 Countable and Uncountable Sets | 81–93 | 7.1–7.9, all |
+| §8 The Principle of Recursive Definition | 94–100 | 8.1–8.8, all |
+| §9 Infinite Sets and the Axiom of Choice | 101–107 | 9.1–9.8, all |
+| §10 Well-Ordered Sets | 108–118 | 10.1–10.11, all |
+| §11 The Maximum Principle | 119–127, 128 | 11.1–11.8 and the well-ordering supplement |
+| §13, §16–§22 | 141–258 | every exercise of those sections, and the topological-groups supplement |
+
+It has **no §12, §14 or §15**: its chapter two begins at §13 on printed p. 141. Its proofs are numbered by
+lemmas of its own (Lemma 4.5.1, 4.9.2, …) and cite Munkres's own earlier exercises; those lemma numbers are
+Whitman's, not the book's. Its §5 Exercise 4(f) carries a NOTE that older printings of Munkres read
+"$m:X^A\to X^B$" and the retained printing reads $m:(A^\omega)^n\to B^\omega$; the card follows the
+retained printing and records the variant.
+
+**"shenapse", *Exercise-Munkres***, `tmp/sources/munkres-solutions-shenapse.pdf` (93 pages; the GitHub
+repository [shenapse/Exercise-Munkres](https://github.com/shenapse/Exercise-Munkres) holds the TeX and this
+PDF; solutions written around 2010, and its README states outright that they "have not undergone reliable
+review"). Its footer runs four behind the PDF page index. It covers **Chapter 1, §1–§11** and was used as an
+independent check on §1, §4 and §5. The author's name is not in the file: the handle is the only attribution,
+so cite it as such.
+
+**"9beach", *A solutions manual for Topology by James Munkres***,
+`tmp/sources/munkres-solutions-9beach.pdf` ([release PDF](https://github.com/9beach/munkres-topology-solutions/releases/download/v0.1.1/munkres-topology-solutions.pdf),
+14 pages; [HTML](https://9beach.github.io/math/munkres-topology-solutions/)). Its sources are `chap-01` to
+`chap-04`, so it covers **§1–§4 only**, and not every exercise of those; it was used as a third check on §1
+and §2. Same attribution problem as shenapse: a handle and no name.
+
+No set was found for Munkres §12, §14, §15 or §65, and none in this repository before this search; the
+`dbFin` pages and the commercial solution manuals are HTML or paywalled and print no pagination, so neither is
+cited here.
