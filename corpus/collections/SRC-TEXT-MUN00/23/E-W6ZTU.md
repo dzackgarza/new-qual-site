@@ -11,9 +11,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology, §23 Exercise 5, printed p. 152, with Example 4 for the
+    rationals; both questions are stored as printed.
 - event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 23.5, PDF p. 2. In a discrete space a subspace
+    with two points is separated by a singleton and its complement; the converse fails, the
+    rationals being totally disconnected and not discrete. (tmp/sources/munkres-solutions-
+    positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -24,33 +36,9 @@ Does the converse hold?
 :::
 
 ::: {.solution}
-::: pf
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.5, PDF p. 2** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both halves are theirs.
 
-::: {.pf-step #discrete-totally-disconnected}
-A discrete space $X$ is totally disconnected.
+Let $X$ be discrete and let $Y\subset X$ contain two distinct points $p\ne q$. Then $\{p\}$ and $Y-\{p\}$ are nonempty, disjoint, and open in $Y$ (traces of the open sets $\{p\}$ and $X-\{p\}$), and their union is $Y$: a separation. So the only connected subspaces of a discrete space are one-point sets, that is, $X$ is totally disconnected.
 
-::: pf-proof
-Let $C\subseteq X$ contain distinct points $x$ and $y$.
-Every subset of $C$ is open in $C$, so $\theset{x}$ and $C\sm\theset{x}$ are disjoint nonempty open subsets of $C$ with union $C$, and $C$ is not connected.
-:::
-
-:::
-
-::: {.pf-step #converse-fails}
-The converse is false: $\QQ$ with the subspace topology from $\RR$ is totally disconnected but not discrete.
-
-::: pf-proof
-Let $C\subseteq\QQ$ contain rationals $p<q$, and choose an irrational $r$ with $p<r<q$.
-Then $C\cap(-\infty,r)$ and $C\cap(r,\infty)$ are disjoint nonempty open subsets of $C$ with union $C$, so $C$ is not connected.
-No singleton $\theset{q}$ is open in $\QQ$, since every open interval about $q$ contains other rationals.
-:::
-
-:::
-
-::: pf-qed
-Step [](#discrete-totally-disconnected){.pf-ref} proves the statement, and step [](#converse-fails){.pf-ref} answers the question about the converse.
-:::
-
-:::
-
+The converse fails: $\QQ$ with the usual topology is totally disconnected — for any two distinct $p,q\in\QQ$ choose an irrational $a$ between them, and $\QQ\cap(-\infty,a)$, $\QQ\cap(a,\infty)$ separate the subspace $\{p,q\}$; any subspace with two points is separated the same way — yet $\QQ$ is not discrete, since one-point sets are not open.
 :::
