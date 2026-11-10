@@ -10,6 +10,25 @@ classification:
   - Separation Axioms
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 31 Exercise 9, printed p. 200,
+    and against Exercise 5 of Section 27 (a compact Hausdorff space is not the union of countably
+    many closed sets with empty interior, printed p. 176) and Lemma 13.2. The four parts run as the
+    book indicates: (a) each irrational point of [0,1] is in some K_n because V is open, the
+    rational points are countably many singletons; (b) the contrapositive of the Baire exercise
+    applied to the closed sets cl(K_n) and the singletons; (c) the interpolation between a point
+    t of K_n just below x and the point (x, -x + eps), which needs t in the interval
+    (max{a, x - eps}, x), nonempty because K_n is dense in (a,b); (d) every basis element about
+    (q,-q) is [c,d) x [e,f) with c <= q < d and e <= -q < f, and it contains (q,-q+eps) for small
+    eps. No published solution was located: the only treatment found is the HTML page
+    dbfin.com/topology/munkres/chapter-4/section-31-the-separation-axioms/problem-9-solution/,
+    which prints no pagination and is therefore not cited from a card; Orellana's Section 31 stops
+    at Exercise 6, "Doug's World" at Problem 31.7, and no other retained set reaches Chapter 4. The
+    search is recorded in the COMPLAINTS.md entry for this batch.
 ---
 
 ::: {.exercise}

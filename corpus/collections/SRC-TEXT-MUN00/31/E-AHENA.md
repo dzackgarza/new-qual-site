@@ -14,6 +14,21 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solutions: Ana Emilia de Orellana, "Solutions -
+    Topology Munkres", Section 31 Exercise 6, printed p. 32
+    (tmp/sources/munkres-solutions-anadeore.pdf), and "Doug's World", "Munkres - Topology -
+    Chapter 4 Solutions" (30 August 2017), Problem 31.6, printed p. 5
+    (tmp/sources/munkres-solutions-dougsworld-ch4.pdf), whose auxiliary Theorems 1-3 are the
+    saturation lemma used here; checked against Munkres, Topology (2000), Section 31 Exercise 6,
+    printed p. 199, and its printed hint. What was corrected: Orellana's proof writes
+    P(W) <= Y - p(X - W) for a set she calls "P" and never defines, and then displays
+    "Z = p(W) = p(W) <= p(U) = V", using p(U) where U is her open set and not the neighbourhood V;
+    the card states the one identity that does the work, y in Y - p(X - U) iff p^{-1}(y) <= U,
+    proves it, and derives closedness, containment and disjointness from it.
 ---
 
 ::: {.exercise}

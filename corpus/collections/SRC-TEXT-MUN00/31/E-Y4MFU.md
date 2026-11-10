@@ -11,6 +11,23 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "Doug's World", "Munkres - Topology -
+    Chapter 4 Solutions" (30 August 2017; the file names no author), Problem 31.7, printed
+    pp. 5-6 (tmp/sources/munkres-solutions-dougsworld-ch4.pdf), which answers all four parts;
+    checked against Munkres, Topology (2000), Section 31 Exercise 7, printed pp. 199-200, Theorem
+    26.7, Lemma 26.4 (printed pp. 167-168), Exercise 26.5 and Theorem 29.2. What was corrected: in
+    part (b) the source begins "Given y in X and neighborhood U of y" and separates the compact
+    fibre from p^{-1}(Y - U) without first noting that regularity of X makes X Hausdorff, so that
+    part (a) applies and Y is T1; without that, regularity of Y is not defined. The card states it.
+    In part (d) the source writes "the collection of S_J = p(U_J) (which is open since it is the
+    union of open sets W)" and "it follows that S_J is contained in V"; the card writes the
+    saturation identity p^{-1}(y) <= U_J and the two inclusions y in p(U_J) and p(U_J) <= W
+    explicitly, which is what those sentences are compressing.
 ---
 
 ::: {.exercise}
@@ -37,7 +54,7 @@ is an open neighborhood of $y$ and $p^{-1}(W)\subset U$.
 
 (a) Let $y_1\ne y_2$. The compact fibers $F_i=p^{-1}(y_i)$ are disjoint compact subsets of Hausdorff $X$, so they have disjoint open neighborhoods $U_1,U_2$. Applying the lemma gives neighborhoods $W_i\ni y_i$ with $p^{-1}(W_i)\subset U_i$. Then $W_1\cap W_2=\varnothing$. Hence $Y$ is Hausdorff.
 
-(b) Let $C\subset Y$ be closed and $y\notin C$. The compact fiber $F=p^{-1}(y)$ is disjoint from the closed set $A=p^{-1}(C)$. Since $X$ is regular, each point of $F$ has an open neighborhood disjoint from an open neighborhood of $A$; compactness of $F$ and a finite intersection argument give disjoint open sets $U,V\subset X$ with $F\subset U$ and $A\subset V$. The lemma gives an open $W\ni y$ with $p^{-1}(W)\subset U$. For each $c\in C$, apply the lemma to the fiber $p^{-1}(c)\subset V$, and take the union of the resulting neighborhoods to obtain an open $O\supset C$ with $p^{-1}(O)\subset V$. Then $W\cap O=\varnothing$. Thus $Y$ is regular.
+(b) A regular space is Hausdorff, so part (a) gives that $Y$ is Hausdorff and hence $T_1$. Now let $C\subset Y$ be closed and $y\notin C$. The compact fiber $F=p^{-1}(y)$ is disjoint from the closed set $A=p^{-1}(C)$. Since $X$ is regular, each point of $F$ has an open neighborhood disjoint from an open neighborhood of $A$; compactness of $F$ and a finite intersection argument give disjoint open sets $U,V\subset X$ with $F\subset U$ and $A\subset V$. The lemma gives an open $W\ni y$ with $p^{-1}(W)\subset U$. For each $c\in C$, apply the lemma to the fiber $p^{-1}(c)\subset V$, and take the union of the resulting neighborhoods to obtain an open $O\supset C$ with $p^{-1}(O)\subset V$. Then $W\cap O=\varnothing$. Thus $Y$ is regular.
 
 (c) Let $y\in Y$. Compactness of $F=p^{-1}(y)$ and local compactness of $X$ give finitely many neighborhoods $U_1,\dots,U_n$ of points of $F$, each contained in a compact subspace $K_i\subset X$, with $F\subset U=\bigcup_iU_i$. Then $K=K_1\cup\cdots\cup K_n$ is compact and contains $U$. By the lemma there is a neighborhood $W\ni y$ with $p^{-1}(W)\subset U\subset K$. Hence
 $$

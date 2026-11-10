@@ -14,6 +14,20 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solutions: Ana Emilia de Orellana, "Solutions -
+    Topology Munkres", Section 31 Exercise 1, printed p. 32
+    (tmp/sources/munkres-solutions-anadeore.pdf), and "Doug's World", "Munkres - Topology -
+    Chapter 4 Solutions" (30 August 2017; the file names no author), Problem 31.1, printed p. 4
+    (tmp/sources/munkres-solutions-dougsworld-ch4.pdf); checked against Munkres, Topology (2000),
+    Section 31 Exercise 1, printed p. 199, and Lemma 31.1(a), printed p. 196. What was corrected:
+    Doug's World writes that the two shrunken neighbourhoods V_x and V_y "are disjoint", whereas
+    what its own construction gives is that their closures lie in the disjoint open sets U_x and
+    U_y, which is the disjointness of the closures that the exercise asks for; the card states the
+    conclusion at the level of closures.
 ---
 
 ::: {.exercise}

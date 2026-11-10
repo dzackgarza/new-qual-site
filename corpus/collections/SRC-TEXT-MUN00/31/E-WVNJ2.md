@@ -11,6 +11,24 @@ classification:
   - Quotient Topology
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 31 Exercise 8, printed p. 200,
+    and its hint to Exercise 13 of Section 26, together with Theorem 26.6 (if Y is compact the
+    projection X x Y -> X is closed) and Theorem 18.4. The proof is the standard reduction of the
+    orbit map to a perfect map: x -> g.x is a homeomorphism, so p is open; (g,x) -> (g, g.x) is a
+    homeomorphism and G x C is compact, so p is closed; the fibres are orbits, continuous images
+    of the compact G. Normality is then the closed-image argument of Exercise 31.6, which the
+    card repeats because the perfect-map exercise does not include it. No published solution was
+    located: "Doug's World" (printed pp. 4-6) ends at Problem 31.7, Orellana's Section 31 stops at
+    Exercise 6, Rajaraman's notes have no Section 31, and Whitman, positron0802, shenapse and
+    9beach stop before Chapter 4. A set covering it exists in the course notes of Morten Poulsen,
+    "Solutions to exercises in Munkres", Section 31, at web.math.ku.dk/~moller/e02/3gt/opg/S31.pdf,
+    but that host refused every connection from this machine, so it could not be downloaded,
+    paginated or cited. The search is recorded in the COMPLAINTS.md entry for this batch.
 ---
 
 ::: {.exercise}

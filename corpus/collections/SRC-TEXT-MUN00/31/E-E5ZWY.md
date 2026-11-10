@@ -11,6 +11,22 @@ classification:
   - Order Topology
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked against Munkres, Topology (2000), Section 31 Exercise 3, printed p. 199, and rewritten.
+    The located sets both fall short here, which is why the proof is the card's own and the search
+    is recorded in the COMPLAINTS.md entry for this batch: Ana Emilia de Orellana, printed p. 32,
+    argues only for a point x lying between two other points (her "there exists (a,b) containing x
+    with (a,b) cap A empty" fails when x is the least or the greatest element, where the basis
+    element about x is a half-open interval), and "Doug's World", printed p. 4, contains an
+    undefined set W and undefined symbols a and b and likewise assumes both sides exist. The card
+    now separates the four positions of x in the order, uses convexity of a basis element for
+    [u,v] <= B, and applies Lemma 31.1(a). The previous version said "choose an interior cut
+    strictly between that endpoint and x when such a point exists" without saying what happens when
+    it does not.
 ---
 
 ::: {.exercise}
@@ -19,17 +35,35 @@ Show that every order topology is regular.
 :::
 
 ::: {.solution}
-An ordered space in the order topology is Hausdorff: if $x<y$, then either there is $z$ with $x<z<y$, in which case the rays $(-\infty,z)$ and $(z,\infty)$ separate $x$ and $y$, or there is no point between them, in which case $(-\infty,y)$ and $(x,\infty)$ do so.
+In an ordered set $X$ with the order topology the rays $(-\infty, y)$ and $(x, \infty)$ are open, and for $x < y$ they are disjoint neighbourhoods of $x$ and $y$; hence $X$ is Hausdorff and one-point sets are closed. By Lemma 31.1(a) it is enough to show that each point has arbitrarily small neighbourhoods whose closures lie inside a prescribed neighbourhood.
 
-We prove regularity. Let $x\in U$ with $U$ open. Choose a convex basic open set $B$ with
-$$
-x\in B\subset U.
-$$
-We claim there is a convex open neighborhood $V$ of $x$ with
-$$
-\overline V\subset B.
-$$
-For each finite endpoint of $B$, choose an interior cut strictly between that endpoint and $x$ when such a point exists. If no such point exists, then $x$ is the immediate successor (or predecessor) of that endpoint, so the corresponding one-sided ray beginning at $x$ is already open. Doing this independently on the left and right gives a convex basic neighborhood $V$ whose possible closure endpoints still lie inside $B$. Thus $\overline V\subset B\subset U$.
+::: pf
 
-Equivalently, if $A=X\setminus U$ is closed and $x\notin A$, then $V$ and $X\setminus\overline V$ are disjoint open neighborhoods of $x$ and $A$, respectively. Hence every order topology is regular.
+::: pf-step
+For $x \in X$ and an open neighbourhood $U$ of $x$ there is an open neighbourhood $V$ of $x$ with $\overline{V} \subset U$.
+
+::: pf-proof
+If $X = \{x\}$ take $V = X = U$. Otherwise let $B$ be a basis element with $x \in B \subset U$. A basis element of the order topology is convex, and we distinguish the position of $x$ in the order.
+
+If $X$ has a point below $x$ and a point above $x$, then $B$ contains points $u < x < v$, and convexity gives $[u, v] \subset B \subset U$; then $V = (u, v)$ is open, contains $x$, and $\overline{V} \subset [u, v] \subset U$.
+
+If $x$ is the least element of $X$, then $X$ has a point above $x$ and $B$ contains an interval $[x, b)$ with $b > x$; choose $v$ with $x < v < b$, so that $V = [x, v)$ is open, contains $x$, and $\overline{V} \subset [x, v] \subset [x, b) \subset U$.
+
+If $x$ is the greatest element of $X$, the preceding paragraph applies to the reverse order: $B$ contains an interval $(b, x]$, and with $b < v < x$ the set $V = (v, x]$ is open, contains $x$, and $\overline{V} \subset [v, x] \subset (b, x] \subset U$.
+
+Every point of a nonempty ordered set is its least element, its greatest element, or has points on both sides, so one of these cases applies.
+:::
+
+:::
+
+::: pf-step
+$X$ is regular.
+
+::: pf-proof
+One-point sets are closed in $X$, and the preceding step is the criterion of Lemma 31.1(a).
+:::
+
+:::
+
+:::
 :::

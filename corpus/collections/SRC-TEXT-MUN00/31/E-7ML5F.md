@@ -14,6 +14,24 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solutions: Ana Emilia de Orellana, "Solutions -
+    Topology Munkres", Section 31 Exercise 4, printed p. 32
+    (tmp/sources/munkres-solutions-anadeore.pdf), and "Doug's World", "Munkres - Topology -
+    Chapter 4 Solutions" (30 August 2017), Problem 31.4, printed pp. 4-5
+    (tmp/sources/munkres-solutions-dougsworld-ch4.pdf); checked against Munkres, Topology (2000),
+    Section 31 Exercise 4, printed p. 199, Example 31.1 (printed p. 197: R_K is Hausdorff and not
+    regular) and Example 31.2 (printed p. 198: R_l is normal). The six answers are those of the two
+    sets: a finer topology inherits Hausdorffness from a coarser one and nothing else transfers in
+    either direction. What was corrected: Orellana's R_K example for the failure of normality under
+    passing to a finer topology reads "the K-topology is neither regular nor normal", which is
+    correct but is asserted without the implication normal => regular that makes R_K a witness;
+    the card states that implication (a normal space is regular because its one-point sets are
+    closed). Doug's World's normal case is stated for R rather than argued; the card keeps the
+    example and the reason.
 ---
 
 ::: {.exercise}
