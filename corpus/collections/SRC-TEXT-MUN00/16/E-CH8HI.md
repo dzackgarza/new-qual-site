@@ -12,14 +12,24 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §16 Exercise 5, printed p. 92; both parts and the
+    hypothesis that the sets are nonempty are stored as printed.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 16.5, PDF p. 5. Part (a) is his: every basis
+    element of the coarser product topology is a basis element of the finer one. Part (b) is
+    his too: the converse does hold, because from U x Y open in the finer product and a
+    point (x,y) one gets U' open in X' with x in U' contained in U, so every open U lies in
+    the finer topology. The card records that Whitman answers (b) in the negative, and why
+    his counterexample fails: it passes to subspace topologies on a two-point set which
+    coincide, so the hypothesis that T' is not finer than T is not satisfied.
+    (tmp/sources/munkres-solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -34,15 +44,17 @@ Justify your answer.
 :::
 
 ::: {.solution}
-(a) A basis for the product topology on $X\times Y$ consists of $U\times V$ with $U\in\mathcal T$ and $V\in\mathcal U$. Since $\mathcal T\subseteq\mathcal T'$ and $\mathcal U\subseteq\mathcal U'$, every such rectangle is open in the product topology on $X'\times Y'$. Hence the latter topology is finer.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 16.5, PDF p. 5** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); part (a) and the answer to (b) are his. Part (b) is answered **no** by Whitman on his printed p. 152, and that answer is not usable: his counterexample passes to the subspace topologies on the two-point set in each factor, which coincide, so the hypothesis of the converse ($\mathcal{T}'\not\supset\mathcal{T}$) is not met; the defect is recorded on this card rather than followed.
 
-(b) The converse does hold when both underlying sets are nonempty. Suppose the product topology from $(\mathcal T',\mathcal U')$ is finer than that from $(\mathcal T,\mathcal U)$. Let $U\in\mathcal T$ and choose $y_0\in Y$. Then $U\times Y$ is open in the coarser product topology and therefore in the finer one. For each $x\in U$, choose a basic finer-product neighborhood
+(a) Let $W$ be a basis element of the product topology on $X\times Y$, so $W=U\times V$ with $U\in\mathcal{T}$ and $V\in\mathcal{U}$. Then $U\in\mathcal{T}'$ and $V\in\mathcal{U}'$, so $W$ is also a basis element of the product topology on $X'\times Y'$; every open set of $X\times Y$ is a union of such $W$, hence open in $X'\times Y'$. So the product topology on $X'\times Y'$ is finer than the product topology on $X\times Y$.
+
+(b) **The converse holds**: if the product topology on $X'\times Y'$ is finer than the product topology on $X\times Y$, and $X\times Y\ne\varnothing$, then $\mathcal{T}'\supset\mathcal{T}$ and $\mathcal{U}'\supset\mathcal{U}$.
+
+Let $U\in\mathcal{T}$ be nonempty and let $x\in U$; since $Y\ne\varnothing$ choose $y\in Y$. The set $U\times Y$ is a basis element of the product topology on $X\times Y$, hence open in $X'\times Y'$, so by the definition of the product topology there are $U'\in\mathcal{T}'$ and $V'\in\mathcal{U}'$ with
 $$
-x\in U'_x,\qquad y_0\in V'_x,\qquad U'_x\times V'_x\subseteq U\times Y.
+(x,y)\in U'\times V'\subset U\times Y .
 $$
-Then $U'_x\subseteq U$, so
-$$
-U=\bigcup_{x\in U}U'_x\in\mathcal T'.
-$$
-Thus $\mathcal T\subseteq\mathcal T'$. The same argument using a fixed $x_0\in X$ gives $\mathcal U\subseteq\mathcal U'$.
+Then $x\in U'\subset U$, so $x$ is an interior point of $U$ for the topology $\mathcal{T}'$. As $x\in U$ was arbitrary, $U\in\mathcal{T}'$; and $\varnothing\in\mathcal{T}'$ as well. So $\mathcal{T}\subset\mathcal{T}'$, and the same argument with the roles of the factors exchanged, using $X\ne\varnothing$, gives $\mathcal{U}\subset\mathcal{U}'$.
+
+The hypothesis that the two sets are nonempty is what the argument uses; if a factor is empty then $X\times Y=\varnothing$ and both product topologies are trivial, so the converse fails.
 :::
