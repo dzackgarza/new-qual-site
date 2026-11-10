@@ -13,14 +13,22 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §24 Exercise 7, printed p. 158, with Theorem
+    24.1; the three parts are stored as printed.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 24.7, PDF p. 5. An order-preserving surjection is
+    injective and carries open rays to open rays both ways, hence is a continuous open
+    bijection; x -> x^n on R_+ is order preserving and onto, so its inverse is continuous;
+    and the example of (c) is order preserving and onto but not a homeomorphism, because its
+    domain's subspace topology is not its order topology. (tmp/sources/munkres-solutions-
+    positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -39,27 +47,19 @@ Compare with (a).
 :::
 
 ::: {.solution}
-(a) An order-preserving map in the strict sense satisfies
-$$
-x<x'\implies f(x)<f(x'),
-$$
-so it is injective. Together with surjectivity, $f$ is bijective and its inverse is also order preserving. Order isomorphisms carry open intervals and open rays to open intervals and open rays. Hence both $f$ and $f^{-1}$ are continuous in the order topologies, so $f$ is a homeomorphism.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.7, PDF p. 5** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all three parts are theirs.
 
-(b) On $\RR_+=(0,\infty)$, the map
+(a) Let $X,Y$ be ordered sets in the order topology and let $f:X\to Y$ be order preserving and surjective; it is then injective, hence a bijection. For $b\in Y$ write $x=f^{-1}(b)$; the open rays satisfy
 $$
-f(x)=x^n
+f^{-1}\big((b,+\infty)\big)=(x,+\infty),\qquad f^{-1}\big((-\infty,b)\big)=(-\infty,x),
 $$
-is strictly increasing and maps onto $(0,\infty)$. By part (a) it is a homeomorphism. Therefore its inverse
+because $f$ is order preserving and surjective (a point maps above $b$ exactly when it lies above $x$). Open rays form a subbasis for the order topology, so $f$ is continuous. Likewise
 $$
-x\mapsto x^{1/n}
+f\big((c,+\infty)\big)=\big(f(c),+\infty\big),\qquad f\big((-\infty,d)\big)=\big(-\infty,f(d)\big)
 $$
-is continuous.
+are open in $Y$, so $f$ carries a subbasis of $X$ to open sets and is an open map. Hence $f$ is a homeomorphism.
 
-(c) The displayed map
-$$
-f(x)=\begin{cases}x+1,&x<-1,\\x,&x\ge0\end{cases}
-$$
-is strictly order preserving and maps $(-\infty,-1)$ onto $(-\infty,0)$ and $[0,\infty)$ onto $[0,\infty)$, so it is surjective. But it is not a homeomorphism for the given subspace topology on $X$. Indeed $[0,\varepsilon)$ is open in $X$ for every $\varepsilon>0$, while its image $[0,\varepsilon)$ is not open in $\RR$. Thus $f^{-1}$ is not continuous.
+(b) Let $X=Y=\RR_{+}$ and $f(x)=x^{n}$ for a fixed positive integer $n$. It is surjective: given $y>0$, the set $\{t\ge0\mid t^{n}<y\}$ is nonempty and bounded above, so its supremum $s$ satisfies $s^{n}=y$ by completeness, and $f(s)=y$. It is order preserving: if $0<x<y$ then $x^{2}<xy<y^{2}$ and inductively $x^{k}<y^{k}$. By (a), $f$ is a homeomorphism, so its inverse, the $n$-th root, is continuous.
 
-There is no contradiction with (a): the topology on $X$ in part (c) is the subspace topology inherited from $\RR$, not the order topology of the ordered set $X$.
+(c) Let $X=(-\infty,-1)\cup[0,\infty)\subset\RR$ and $f(x)=x+1$ for $x<-1$, $f(x)=x$ for $x\ge0$. It is surjective: for $y<0$, $f(y-1)=y$; for $y\ge0$, $f(y)=y$. It is order preserving (it is strictly increasing on each piece, and every point of the first piece is below every point of the second, as is every image). But $f$ is not a homeomorphism: $\RR$ is connected while $X$ is separated by $(-\infty,-1)$ and $[0,\infty)$. The hypothesis of (a) is not met, because $X$ is given the subspace topology of $\RR$, not the order topology of $X$ — and the two differ here, since $[0,\infty)$ is open in the subspace topology but not in the order topology of $X$.
 :::
