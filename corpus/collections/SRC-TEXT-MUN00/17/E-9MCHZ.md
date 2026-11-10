@@ -12,9 +12,24 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §17 Exercise 16, printed pp. 101-102, with the
+    five topologies of Exercise 13.7 and Theorem 17.8; the stored statement is the printed
+    one and the card states the ten answers as a table.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise 17.16, printed pp.
+    167-169. His are the table, the lemma that a finer topology inherits T1 and Hausdorff,
+    all five closures - K, K, R, K and [0,infinity) in the five topologies - and the
+    separation facts, including that the finite complement topology is T1 but not Hausdorff
+    and the ray topology neither. positron0802 PDF p. 8 agrees on all ten entries.
+    (tmp/sources/munkres-solutions-whitman.pdf).
 ---
 
 ::: {.exercise}
@@ -28,120 +43,37 @@ the $T_1$ axiom?
 :::
 
 ::: {.solution}
-The five topologies of [[E-ALTNF]] are: $\mathcal T_1$ the standard topology; $\mathcal T_2$ the topology of $\RR_K$, with basis the intervals $(a,b)$ and the sets $(a,b)-K$; $\mathcal T_3$ the finite complement topology; $\mathcal T_4$ the upper limit topology, with basis the intervals $(a,b]$; and $\mathcal T_5$ the topology with basis the rays $(-\infty,a)$.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.16, printed pp. 167--169** (`tmp/sources/munkres-solutions-whitman.pdf`); the table, the closure computations of (a) and the separation arguments of (b) are his, with "positron0802", *Solutions to Topology, Chapter 2*, Exercise 17.16, PDF p. 8, agreeing on all ten entries.
 
-::: pf
+The answer is
 
-::: {.pf-step #s1}
+| topology | $\overline{K}$ | Hausdorff | $T_{1}$ |
+| --- | --- | --- | --- |
+| $\mathcal{T}_{1}$ standard | $K\cup\{0\}$ | yes | yes |
+| $\mathcal{T}_{2}$ of $\RR_{K}$ | $K$ | yes | yes |
+| $\mathcal{T}_{3}$ finite complement | $\RR$ | no | yes |
+| $\mathcal{T}_{4}$ upper limit | $K$ | yes | yes |
+| $\mathcal{T}_{5}$ rays $(-\infty,a)$ | $[0,\infty)$ | no | no |
 
-In $\mathcal T_1$, $\overline K=\boxed{K\cup\{0\}}$.
+**Lemma.** If $\mathcal{T}\subset\mathcal{T}'$ are topologies on $X$ and $\mathcal{T}$ is $T_{1}$, respectively Hausdorff, then so is $\mathcal{T}'$. Indeed a finite set closed in $\mathcal{T}$ has open complement in $\mathcal{T}$, hence in $\mathcal{T}'$; and disjoint $\mathcal{T}$-neighbourhoods of two points remain $\mathcal{T}'$-neighbourhoods.
 
-::: pf-proof
+(a) *Standard topology: $\overline{K}=K\cup\{0\}$.* The point $0$ is a limit point of $K$: a basis element $(a,b)$ with $0\in(a,b)$ has $b>0$, so $1/n\in(a,b)$ for all $n>1/b$. Every $x\notin K\cup\{0\}$ has a neighbourhood meeting $K$ in nothing: if $x<0$ then $(x-1,0)$ contains no element of $K$; if $x>1$ then $(1,x+1)$ contains none; and if $0<x\notin K$ then, choosing $n$ with $n<1/x<n+1$ (Exercise 4.9(b)), we get $1/(n+1)<x<1/n$ and the interval $(1/(n+1),1/n)$ contains $x$ and no element of $K$. So the only limit point of $K$ is $0$ and $\overline{K}=K\cup\{0\}$.
 
-Every interval about $0$ contains $1/n$ for large $n$, so $0\in\overline K$.
-A point $x\notin K\cup\{0\}$ has an interval about it missing $K$: take $(-\infty,0)$ if $x<0$, $(1,\infty)$ if $x>1$, and $(\frac1{n+1},\frac1n)$ if $\frac1{n+1}<x<\frac1n$.
+*$\RR_{K}$: $\overline{K}=K$.* The complement is open in $\RR_{K}$:
+$$
+\RR-K=(-\infty,0)\cup\bigcup_{n\in\ZZ_{+}}\Big(\tfrac1{n+1},\tfrac1n\Big)\cup(1,\infty),
+$$
+a union of basis elements. So $K$ is closed and $\overline{K}=K$. (Whitman argues the same pointwise: for $x\notin K$ the basis element $(x-1,x+1)-K$ contains $x$ and misses $K$.)
 
-:::
+*Finite complement topology: $\overline{K}=\RR$.* A nonempty open set $U$ has finite complement, so $U\cap K$ is infinite, in particular it contains points other than any prescribed $x\in\RR$. Hence every point of $\RR$ is a limit point of $K$ and $\overline{K}=\RR$.
 
-:::
+*Upper limit topology: $\overline{K}=K$.* Every $x\notin K$ has a basis element $(a,b]$ containing $x$ and meeting $K$ in nothing: if $x\le0$ take $(x-1,x]$; if $x>1$ take $(1,x]$; if $0<x\notin K$ choose $n$ with $1/(n+1)<x<1/n$ and take $(1/(n+1),x]$, whose points $y$ satisfy $1/(n+1)<y\le x<1/n$ and so are in no $\{1/m\}$. Hence no point outside $K$ is a limit point and $\overline{K}=K$.
 
-::: {.pf-step #s2}
+*Rays: $\overline{K}=[0,\infty)$.* If $x\ge0$ and $(-\infty,a)$ is a basis element containing $x$, then $a>x\ge0$ and $1/n\in(-\infty,a)$ for $n>1/a$, so $x$ is a limit point of $K$; the point $0$ is included here. If $x<0$ then $(-\infty,0)$ is a neighbourhood of $x$ meeting $K$ in nothing. Hence $\overline{K}=[0,\infty)$.
 
-In $\mathcal T_2$, $\overline K=\boxed{K}$.
+(b) $\mathcal{T}_{1}$ is Hausdorff (it is induced by the metric of $\RR$), hence $T_{1}$. By Exercise 13.7, $\mathcal{T}_{1}\subset\mathcal{T}_{2}\subset\mathcal{T}_{4}$, so by the lemma $\mathcal{T}_{2}$ and $\mathcal{T}_{4}$ are Hausdorff and $T_{1}$.
 
-::: pf-proof
+$\mathcal{T}_{3}$ is $T_{1}$: a finite set $F$ has complement $\RR-F$, which is open in $\mathcal{T}_{3}$ because its own complement is $F$, finite; so every finite set, in particular every one-point set, is closed. It is not Hausdorff: if $U\ni0$ and $V\ni1$ are open, then $\RR-U$ and $\RR-V$ are finite (neither is all of $\RR$, since $U$ and $V$ are nonempty), so $\RR-(U\cap V)=(\RR-U)\cup(\RR-V)$ is finite and $U\cap V\ne\varnothing$.
 
-The basic set $(-1,1)-K$ contains $0$ and misses $K$.
-Every other point outside $K$ has a standard open interval missing $K$, by the proof of step [](#s1){.pf-ref}.
-So $\RR-K$ is open.
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-In $\mathcal T_3$, $\overline K=\boxed{\RR}$.
-
-::: pf-proof
-
-The closed sets are $\RR$ and the finite sets, and $K$ is infinite.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-In $\mathcal T_4$, $\overline K=\boxed{K}$.
-
-::: pf-proof
-
-The basic set $(-1,0]$ contains $0$ and misses $K$.
-For $x<0$, $x>1$, and $\frac1{n+1}<x<\frac1n$, the basic sets $(x-1,x]$, $(1,x]$, and $(\frac1{n+1},x]$ contain $x$ and miss $K$.
-So $\RR-K$ is open.
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-In $\mathcal T_5$, $\overline K=\boxed{[0,\infty)}$.
-
-::: pf-proof
-
-A union of rays $(-\infty,a)$ is $\varnothing$, $\RR$, or a ray $(-\infty,c)$, so the closed sets are $\varnothing$, $\RR$, and the rays $[c,\infty)$.
-A ray $[c,\infty)$ contains $K$ if and only if $c\le\frac1n$ for every $n$, that is, $c\le0$; the smallest is $[0,\infty)$.
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-$\mathcal T_1$, $\mathcal T_2$, and $\mathcal T_4$ are Hausdorff, hence $T_1$.
-
-::: pf-proof
-
-$\mathcal T_1$ is the metric topology of $\RR$, and $\mathcal T_2$ and $\mathcal T_4$ are finer than $\mathcal T_1$ by [[E-ALTNF]]; disjoint $\mathcal T_1$-open neighborhoods remain open in a finer topology.
-
-:::
-
-:::
-
-::: {.pf-step #s7}
-
-$\mathcal T_3$ is $T_1$ but not Hausdorff.
-
-::: pf-proof
-
-Singletons are finite, hence closed.
-Two nonempty open sets have finite complements, so their intersection has finite complement in the infinite set $\RR$ and is nonempty.
-
-:::
-
-:::
-
-::: {.pf-step #s8}
-
-$\mathcal T_5$ is neither $T_1$ nor Hausdorff.
-
-::: pf-proof
-
-By the description of closed sets in step [](#s5){.pf-ref}, the closure of $\{x\}$ is $[x,\infty)\ne\{x\}$.
-A Hausdorff space is $T_1$.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} answer (a), and steps [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} answer (b).
-
-:::
-
-:::
-
+$\mathcal{T}_{5}$ is not $T_{1}$: for $x<y$ every basis element $(-\infty,a)$ containing $y$ has $a>y>x$, so it contains $x$, and $y$ has no neighbourhood omitting $x$; by Exercise 17.15 the $T_{1}$ axiom fails. Hence $\mathcal{T}_{5}$ is not Hausdorff either (Theorem 17.8).
 :::
