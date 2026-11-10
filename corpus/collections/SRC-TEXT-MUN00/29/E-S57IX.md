@@ -11,6 +11,22 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §29 supplementary exercise on nets, printed p.
+    188, with the tube lemma and Exercise 29.10; the stored lemma is the printed one.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 29.11, PDF p. 23 — its numbering continues into
+    the net exercises. The strategy is theirs; the saturation argument is written out: the
+    set of points whose whole compact slice lies in the preimage is open by the tube lemma
+    and saturated, so its image is open. (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -34,26 +50,25 @@ If $B$ and $C$ are locally compact Hausdorff spaces, then $p \times q: A \times 
 :::
 
 ::: {.solution}
-(a) Let $\pi=p\times i_Z$, and suppose $A\subset Y\times Z$ is such that $\pi^{-1}(A)$ is open. Fix $(y,z)\in A$ and choose $x\in p^{-1}(y)$. Choose open sets $O\ni x$ and $W\ni z$ with $O\times W\subseteq\pi^{-1}(A)$. By local compactness and [[E-B3UKB]], choose an open neighborhood $V$ of $z$ with compact closure $\overline V\subseteq W$. Set $U_1=O$; then
-$$
-U_1\times\overline V\subset\pi^{-1}(A).
-$$
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.11, PDF p. 23** (`tmp/sources/munkres-solutions-positron-ch3.pdf`) — its numbering runs past the ten exercises of §29 into the supplementary exercises on nets, where this is the last of them. The strategy is theirs; the argument below is written out because their paragraph only asserts the last step.
 
-Inductively, assume $U_i\times\overline V\subset\pi^{-1}(A)$. For each $x'\in p^{-1}(p(U_i))$, the compact slice $\{x'\}\times\overline V$ lies in the open set $\pi^{-1}(A)$. By the tube lemma there is an open neighborhood $W_{x'}$ of $x'$ with
-$$
-W_{x'}\times\overline V\subset\pi^{-1}(A).
-$$
-Let $U_{i+1}=\bigcup_{x'}W_{x'}$. Then $U_{i+1}$ is open, contains $p^{-1}(p(U_i))$, and still satisfies the product inclusion.
+**Lemma.** If $p:X\to Y$ is a quotient map and $Z$ is locally compact Hausdorff, then $\pi=p\times i_{Z}:X\times Z\to Y\times Z$ is a quotient map.
 
-Set $U=\bigcup_iU_i$. Then $U$ is open and saturated: if $u\in U_i$, the whole fiber $p^{-1}(p(u))\subset U_{i+1}\subset U$. Hence $p(U)$ is open in $Y$, because $p$ is quotient and $U=p^{-1}(p(U))$. Also
-$$
-p(U)\times V\subset A.
-$$
-Thus every point of $A$ has an open neighborhood contained in $A$, so $A$ is open. Therefore $\pi$ is quotient.
+*Proof.* $\pi$ is continuous and surjective. Let $A\subset Y\times Z$ with $\pi^{-1}(A)$ open in $X\times Z$; we show $A$ open.
 
-(b) Factor
+Let $y\times z\in A$ and $x\in p^{-1}(y)$; since $Z$ is locally compact Hausdorff there is a compact neighbourhood $C$ of $z$ (Exercise 29.10). Put
 $$
-p\times q=(i_B\times q)\circ(p\times i_C).
+B=\big\{x'\in X\ \mid\ \{x'\}\times C\subset\pi^{-1}(A)\big\},
 $$
-Since $C$ is locally compact Hausdorff, part (a) shows $p\times i_C:A\times C\to B\times C$ is quotient. Since $B$ is locally compact Hausdorff, applying part (a) to $q:C\to D$ gives $i_B\times q:B\times C\to B\times D$ quotient. A composition of quotient maps is quotient, so $p\times q$ is quotient.
+so $x\in B$ because $\pi(x,c)=y\times c\in A$ for every $c\in C$.
+
+$B$ is open: if $x'\in B$ then $\{x'\}\times C\subset\pi^{-1}(A)$, and by the tube lemma applied in $X\times C$ (with $C$ compact) there is a neighbourhood $U$ of $x'$ with $U\times C\subset\pi^{-1}(A)$, i.e. $U\subset B$.
+
+$B$ is saturated: if $x'\in B$ and $p(x'')=p(x')$, then for $c\in C$ one has $\pi(x'',c)=p(x'')\times c=p(x')\times c=\pi(x',c)\in A$, so $x''\in B$.
+
+So $p(B)$ is open in $Y$, because $p$ is a quotient map and $B$ is open and saturated. And
+$$
+(y,z)\in p(B)\times\operatorname{int}C\subset A,
+$$
+since $y'=p(x')\in p(B)$ and $z'\in C$ give $y'\times z'=\pi(x',z')\in A$. Hence every point of $A$ has an open neighbourhood inside $A$, and $A$ is open. $\square$
 :::
