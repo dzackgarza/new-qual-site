@@ -47,9 +47,9 @@ X\text{ paracompact Hausdorff and locally metrizable}.
 $$
 Both criteria of §34 follow from it, because each hypothesis implies paracompactness.
 
-In [[E-MQTBP]], $X$ is compact Hausdorff and locally metrizable. Every compact Hausdorff space is paracompact, so the Smirnov theorem gives metrizability.
+In [[E-MQTBP]], $X$ is compact Hausdorff and locally metrizable. Every compact space is paracompact (§41, the remark following the definition), so the Smirnov theorem gives metrizability.
 
-In [[E-KK77N]], $X$ is regular, Lindelöf, and locally metrizable. Every regular Lindelöf space is paracompact: the construction in [[E-KVFCT]](a) gives a locally finite open refinement of every open cover. So the Smirnov theorem gives metrizability.
+In [[E-KK77N]], $X$ is regular, Lindelöf, and locally metrizable. Every regular Lindelöf space is paracompact (Theorem 41.5; the construction on the card of [[E-KVFCT]](a) gives a locally finite open refinement of every open cover), so the Smirnov theorem gives metrizability.
 
 Conversely, compactness with the Hausdorff property and regularity with the Lindelöf property are two sufficient conditions for the paracompactness hypothesis of the Smirnov theorem.
 :::

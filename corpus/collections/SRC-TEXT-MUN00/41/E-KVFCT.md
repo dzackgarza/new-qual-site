@@ -32,6 +32,16 @@ audit:
     "positron0802", "shenapse", "9beach", "kyp44", the seven further GitHub manuals, dbfin and Gardner's
     ETSU notes --- none of which solves this exercise.
     Checked against Munkres, Topology (2000), Section 41 Exercise 6, printed p. 260, with Theorem 41.5 (every regular Lindelof space is paracompact), which part (a) reproves from the shrinking $V_n\subset\overline{V_n}\subset U_n$, and the box topology of §20 for part (b). What was corrected: part (b) concluded the regularity of $\RR^\infty$ from the complete regularity of the box product $\RR^\omega$, which the card did not justify; it now proves regularity of $\RR^\infty$ directly, from boxes whose closures lie in a given box.
+- event: source-corrected
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Part (b) asserted that $K_{n,m}$ is compact without the two steps it needs; the card now describes the
+    subspace topology: a basis element of the box topology meets $K_{n,m}$ in the product of its traces on
+    the first $n$ coordinates, because the remaining coordinates of $K_{n,m}$ are fixed at $0$, so $K_{n,m}$
+    is a finite product of compact intervals, compact by Theorem 27.1 and Theorem 26.7. The earlier repair
+    of the regularity of $\RR^\infty$ stands. Checked against Theorem 27.1, Theorem 26.7 and the definition
+    of the box topology of §19.
 ---
 
 ::: {.exercise}
@@ -63,7 +73,7 @@ Each $W_n$ is open and refines $\mathcal U$. The family covers $X$: for $x$, cho
 $$
 K_{n,m}=[-m,m]^n\times\{0\}\times\{0\}\times\cdots.
 $$
-On $K_{n,m}$, the box-subspace topology is just the usual finite product topology, so $K_{n,m}$ is compact. Moreover
+On $K_{n,m}$, the box-subspace topology is just the finite product topology: a basis element of the box topology that meets $K_{n,m}$ meets it in the product of its traces on the first $n$ coordinates, the remaining coordinates of $K_{n,m}$ being fixed at $0$. So $K_{n,m}$ is a finite product of compact intervals, hence compact (Theorem 27.1 and Theorem 26.7). Moreover
 $$
 \RR^\infty=\bigcup_{n,m\ge1}K_{n,m}.
 $$

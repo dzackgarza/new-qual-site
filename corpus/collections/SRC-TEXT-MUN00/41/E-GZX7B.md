@@ -30,6 +30,25 @@ audit:
     "positron0802", "shenapse", "9beach", "kyp44", the seven further GitHub manuals, dbfin and Gardner's
     ETSU notes --- none of which solves this exercise.
     Checked against Munkres, Topology (2000), Section 41 Exercise 10, printed p. 261, with the printed proof skeleton, Lemma 39.1, Theorem 41.1 and the order topology of $\overline S_\Omega$. What was corrected: the printed conclusion, that each component has a countable basis, is false, and the card records the counterexample (the disjoint union of two copies of $\overline S_\Omega$, locally compact Hausdorff and paracompact, whose components have no countable basis). An earlier audit note on this card had offered an uncountable product of compact intervals as the counterexample, which is not locally compact. The card proves the corrected statement, that each component is a countable union of compact subspaces, which is what the printed proof establishes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-10
+  note: >-
+    The counterexample on this card was wrong and the one it rejected was right. Two copies of
+    $\overline S_\Omega$ do not refute the printed statement: $\overline S_\Omega$ is totally disconnected,
+    since for $\alpha<\beta$ the set $[0,\alpha]=[0,\alpha+1)$ is a basis element of the order topology whose
+    complement $(\alpha,\Omega]$ is another, so distinct points lie in different clopen sets and every
+    component is a point, which has a countable basis. The counterexample is $[0,1]^J$ for uncountable $J$:
+    it is compact (Theorem 37.3), Hausdorff (Theorem 19.4), hence locally compact (§29: a compact space is
+    automatically locally compact) and paracompact (§41: every compact space is paracompact, as the
+    section's opening remark states), connected because path connected --- the coordinatewise linear path is
+    continuous by Theorem 19.6 and a path connected space is connected (§24) --- so it is its own component,
+    and it has no countable basis: a compact Hausdorff space with a countable basis is regular (Theorem
+    32.3) and metrizable by the Urysohn metrization theorem (Theorem 34.1), while the sequence lemma fails
+    for $X$ exactly as in Example 2 of §21 (Lemma 21.2). A previous note on this card had rejected
+    $[0,1]^J$ on the ground that it is not locally compact; that is withdrawn. The $\sigma$-compact part of
+    the proof below is unchanged and is what the printed skeleton yields. Not checked here: nothing beyond
+    the printed exercise's own proof outline is claimed.
 ---
 
 ::: {.exercise}
@@ -45,7 +64,10 @@ Show that $\overline{U}_n$ is compact, and the sets $U_n$ cover $X_0$.
 :::
 
 ::: {.solution}
-The printed conclusion is false: let $X$ be the disjoint union of two copies of $\overline{S}_\Omega=[0,\Omega]$. Each summand is compact, so $X$ is locally compact and Hausdorff, and it is paracompact, a finite open cover of $X$ being refined by the two summands and their intersections with a locally finite open refinement on each summand; the components of $X$ are its two summands, and $\overline{S}_\Omega$ has no countable basis, since every neighbourhood of $\Omega$ contains a tail $(\alpha,\Omega]$ and the tails are cofinal in $\Omega$ (the supremum of a countable set of countable ordinals is a countable ordinal). What the printed proof establishes, and what is proved below, is the corrected statement: each component of $X$ is a countable union of compact subspaces. Closures are taken in $X_0$.
+The printed conclusion is false. Let $J$ be an uncountable set and let $X=[0,1]^J$ carry the product topology. Then $X$ is compact by the Tychonoff theorem (Theorem 37.3) and Hausdorff, being a product of Hausdorff spaces (Theorem 19.4); hence $X$ is locally compact, since a compact space is automatically locally compact (§29, the remark following the definition), and paracompact, since a finite open covering is a locally finite one and a compact space is therefore paracompact (§41, the definition and the remark after it). $X$ is connected: for $x,y\in X$ the map $\gamma:[0,1]\to X$ whose $\alpha$-th coordinate is $(1-t)x_\alpha+ty_\alpha$ is a path from $x$ to $y$, since each of its coordinate functions is continuous and $X$ carries the product topology (Theorem 19.6), and a path connected space is connected (§24). So $X$ is a component of itself, and it has no countable basis: a compact Hausdorff space with a countable basis is regular (Theorem 32.3) and hence metrizable by the Urysohn metrization theorem (Theorem 34.1), while $X$ is not metrizable, because it fails the sequence lemma (Lemma 21.2) --- the set $A$ of points of $X$ that are $1$ in all but finitely many coordinates has $0$ in its closure, and a sequence in $A$ is $1$ in some coordinate outside the countable set of coordinates in which its terms differ from $1$, so it does not converge to $0$; this is the argument of Example 2 of §21.
+
+So the hypothesis holds and the conclusion fails. What the printed proof establishes, and what is proved below, is the corrected statement: each component of $X$ is a countable union of compact subspaces. Closures are taken in $X_0$.
+
 
 ::: pf
 

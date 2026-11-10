@@ -32,6 +32,16 @@ audit:
     "positron0802", "shenapse", "9beach", "kyp44", the seven further GitHub manuals, dbfin and Gardner's
     ETSU notes --- none of which solves this exercise.
     Checked against Munkres, Topology (2000), Section 41 Exercise 9, printed p. 261, with the supplementary exercises of §22 on topological groups, Exercise 41.6(a) as proved on the card of E-KVFCT, and the fact that an open subgroup is closed. No correction was needed; the card takes a symmetric open neighbourhood $U$ of $e$ with $K=\overline U$ compact and shows $G=\bigcup_nK^n$.
+- event: source-corrected
+  by: claude
+  date: 2026-11-10
+  note: >-
+    The card asserted that Hausdorff topological groups are regular; the book proves it, as Exercise 7(c) of
+    the supplementary exercises on topological groups in §22, together with 7(a) (a symmetric neighbourhood)
+    and 7(b) (Hausdorff), so the card now cites it there rather than asserting it. Everything else in the
+    proof is unchanged: $K=\overline U$ compact, $K^n$ compact by Theorem 26.5 and Theorem 26.7, $H=\bigcup
+    K^n$ an open subgroup and therefore closed, connectedness forcing $H=G$, and Exercise 41.6(a) giving
+    paracompactness from $\sigma$-compactness.
 ---
 
 ::: {.exercise}
@@ -60,5 +70,5 @@ Thus
 $$
 G=\bigcup_{n\ge1}K^n
 $$
-is $\sigma$-compact. Hausdorff topological groups are regular, and every regular $\sigma$-compact space is paracompact by [[E-KVFCT]]. Hence $G$ is paracompact.
+is $\sigma$-compact. A topological group satisfies the regularity axiom (Exercise 7(c) of the supplementary exercises on topological groups in §22; Exercises 7(a) and 7(b) there give the symmetric neighbourhood and the Hausdorff property), and every regular $\sigma$-compact space is paracompact by [[E-KVFCT]](a). Hence $G$ is paracompact.
 :::
