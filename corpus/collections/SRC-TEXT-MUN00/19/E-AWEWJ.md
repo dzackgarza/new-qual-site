@@ -13,14 +13,24 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §19 Exercise 8, printed p. 118, with Theorem 19.6
+    and Theorem 18.2; the stored statement is the printed one, including the question about
+    the box topology.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise 19.8, printed pp.
+    195-196. In the product topology his argument is used: the coordinate functions of h are
+    continuous and Theorem 19.6 applies, and the inverse is the coordinatewise map with
+    g_i(t) = (t-b_i)/a_i. The answer for the box topology is his too: h is still a
+    homeomorphism, by his lemma that a coordinatewise product of continuous maps is
+    continuous for the box topology, since the preimage of a box is the box of the
+    preimages. (tmp/sources/munkres-solutions-whitman.pdf).
 ---
 
 ::: {.exercise}
@@ -36,29 +46,19 @@ What happens if $\RR^\omega$ is given the box topology?
 :::
 
 ::: {.solution}
-For each $i$, let
-$$
-h_i:\RR\to\RR,\qquad h_i(x)=a_ix+b_i.
-$$
-Since $a_i>0$, $h_i$ is a homeomorphism with inverse
-$$
-h_i^{-1}(y)=\frac{y-b_i}{a_i}.
-$$
-The map $h$ is the product map $\prod_i h_i$.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.8, printed pp. 195--196** (`tmp/sources/munkres-solutions-whitman.pdf`); the lemma, the product-topology proof and the box-topology answer are his.
 
-For the product topology, the inverse image of a basic set
-$$
-\prod_iU_i,
-$$
-with $U_i=\RR$ except for finitely many $i$, is
-$$
-\prod_i h_i^{-1}(U_i),
-$$
-which is again basic product-open. The same statement holds for $h^{-1}$, so $h$ is a homeomorphism.
+Throughout $\mathbf{x}=(x_{1},x_{2},\dots)$, $f_{i}(t)=a_{i}t+b_{i}$ with $a_{i}>0$, and $h(\mathbf{x})=(f_{1}(x_{1}),f_{2}(x_{2}),\dots)$; the coordinate maps of $h$ are $h_{i}=f_{i}\circ\pi_{i}$.
 
-Exactly the same proof works for the box topology: now every coordinate may be restricted, but
+**In the product topology $h$ is a homeomorphism.** Each $\pi_{i}$ is continuous and each $f_{i}$ is continuous (an affine map of $\RR$), so each $h_{i}$ is continuous; by Theorem 19.6 (printed p. 117) $h$ is continuous, since a map into a product with continuous coordinate functions is continuous.
+
+Let $g_{i}(t)=(t-b_{i})/a_{i}$, which is defined because $a_{i}>0$, and $k(\mathbf{x})=(g_{1}(x_{1}),g_{2}(x_{2}),\dots)$; by the same argument $k$ is continuous. For every $i$,
 $$
-h^{-1}\left(\prod_iU_i\right)=\prod_i h_i^{-1}(U_i)
+k_{i}(h(\mathbf{x}))=g_{i}(f_{i}(x_{i}))=\frac{(a_{i}x_{i}+b_{i})-b_{i}}{a_{i}}=x_{i},
+\qquad
+h_{i}(k(\mathbf{x}))=f_{i}(g_{i}(x_{i}))=a_{i}\frac{x_{i}-b_{i}}{a_{i}}+b_{i}=x_{i},
 $$
-is a basic box-open set, and likewise for the inverse map. Thus $h$ is a homeomorphism for both the product and box topologies.
+so $k\circ h$ and $h\circ k$ are both the identity. Hence $h$ is a bijection with inverse $k$, and both are continuous: $h$ is a homeomorphism.
+
+**In the box topology $h$ is also a homeomorphism.** We use the lemma that if $f=\prod_{\alpha}f_{\alpha}:\prod X_{\alpha}\to\prod Y_{\alpha}$ acts coordinatewise, $f((x_{\alpha}))=(f_{\alpha}(x_{\alpha}))$, and each $f_{\alpha}$ is continuous, then $f$ is continuous for the box topologies: for a box basis element $\prod V_{\alpha}$ and a point $x$, $f(x)\in\prod V_{\alpha}$ if and only if $f_{\alpha}(x_{\alpha})\in V_{\alpha}$ for every $\alpha$, that is $x\in\prod f_{\alpha}^{-1}(V_{\alpha})$, which is again a box basis element because each $f_{\alpha}^{-1}(V_{\alpha})$ is open. Applying the lemma to $h=\prod f_{i}$ and to $k=\prod g_{i}$, both continuous, gives that $h$ and its inverse are continuous in the box topology as well. So on $\RR^{\omega}$ with the box topology $h$ is a homeomorphism too.
 :::
