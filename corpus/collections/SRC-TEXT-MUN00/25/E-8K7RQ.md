@@ -11,9 +11,22 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §25 Exercise 1, printed p. 162, with the lower
+    limit topology of §13 and Exercise 18.7(b); the stored statement is the printed
+    question.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 25.1, PDF p. 7. The ray above a point of a
+    connected subspace of R_l is open and closed in it, so the subspace is a single point;
+    the continuous maps into R_l are then the constant maps. (tmp/sources/munkres-solutions-
+    positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -23,33 +36,11 @@ What are the continuous maps $f: \RR \to \RR_\ell$?
 :::
 
 ::: {.solution}
-::: pf
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 25.1, PDF p. 7** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
 
-::: {.pf-step #components-are-points}
-The components and path components of $\RR_\ell$ are the one-point sets.
+Let $A$ be a nonempty connected subspace of $\RR_{\ell}$ and $a\in A$. The set $[a,\infty)\cap A$ is open in $A$ (trace of the open set $[a,\infty)=\bigcup_{n}[a+n,a+n+1)$) and closed in $A$ (trace of the closed set $(-\infty,a)$, closed since $\RR_{\ell}$ is Hausdorff), and it is nonempty; since $A$ is connected it equals $A$. So every $b\in A$ satisfies $b\ge a$, whence $A=\{a\}$. Thus the components of $\RR_{\ell}$ are the singletons.
 
-::: pf-proof
-For $a\in\RR$, the rays $(-\infty,a)=\bigcup_{n\ge1}[a-n,a)$ and $[a,\infty)=\bigcup_{n\ge0}[a+n,a+n+1)$ are open in $\RR_\ell$, disjoint, and cover $\RR$.
-If $x<y$, choosing $a$ with $x<a\le y$ gives a separation of $\RR_\ell$ with $x$ and $y$ on different sides, so no connected set contains both.
-Hence the components are points, and so are the path components, each of which lies in a component.
-:::
+Every path component lies in a component, so the path components are the singletons too.
 
-:::
-
-::: {.pf-step #maps-are-constant}
-The continuous maps $f\colon\RR\to\RR_\ell$ are exactly the constant maps.
-
-::: pf-proof
-Constant maps are continuous.
-If $f$ is continuous, $f(\RR)$ is connected because $\RR$ is, so by step [](#components-are-points){.pf-ref} it is a single point.
-:::
-
-:::
-
-::: pf-qed
-Steps [](#components-are-points){.pf-ref} and [](#maps-are-constant){.pf-ref} answer the two questions.
-:::
-
-:::
-
+If $f:\RR\to\RR_{\ell}$ is continuous then $f(\RR)$ is connected in $\RR_{\ell}$, hence a single point: the continuous maps $\RR\to\RR_{\ell}$ are exactly the constant maps (compare Exercise 18.7(b)).
 :::
