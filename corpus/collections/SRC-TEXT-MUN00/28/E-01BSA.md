@@ -12,9 +12,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §28 Exercise 6, printed p. 181, with Exercise
+    21.2, Theorem 27.4 and Theorem 28.2; the stored statement is the printed one.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 28.6, PDF p. 19. An isometry of a compact metric
+    space is an imbedding; if it missed a point, iterating it would give a sequence with all
+    mutual distances bounded below, contradicting sequential compactness.
+    (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -32,103 +44,13 @@ Show that if $f$ is an isometry and $X$ is compact, then $f$ is bijective and he
 :::
 
 ::: {.solution}
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.6, PDF p. 19** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument follows the hint as they use it.
 
-::: pf
+Let $(X,d)$ be compact and $f:X\to X$ satisfy $d(f(x),f(y))=d(x,y)$. By Exercise 21.2 $f$ is an imbedding; suppose it is not surjective and pick $a\in X-f(X)$. Since $f(X)$ is compact, hence closed, there is $\varepsilon>0$ with $B_{d}(a,\varepsilon)\cap f(X)=\varnothing$.
 
-::: {.pf-step #f-injective-continuous}
-$f$ is injective and continuous:
-
-::: pf-proof
-
-::: pf-step
-If $f(x) = f(y)$, then $d(x, y) = d(f(x), f(y)) = 0$, which implies $x = y$. Thus $f$ is injective.
-:::
-
-::: pf-step
-For any $\varepsilon > 0$, setting $\delta = \varepsilon$ ensures $d(x, y) < \delta \implies d(f(x), f(y)) = d(x, y) < \varepsilon$. Thus $f$ is uniformly continuous.
-:::
-
-:::
-
-:::
-
-::: pf-step
-The image $f(X)$ is compact and closed in $X$:
-
-::: pf-proof
-Since $X$ is compact and $f$ is continuous (step [](#f-injective-continuous){.pf-ref}), $f(X)$ is a compact subset of the metric space $X$, hence $f(X)$ is closed in $X$.
-:::
-
-:::
-
-::: {.pf-step #f-surjective}
-$f$ is surjective ($f(X) = X$):
-
-::: pf-proof
-By contradiction.
-
-::: pf-step
-Suppose $f(X) \neq X$, so there exists a point $a \in X \setminus f(X)$.
-:::
-
-::: pf-step
-Since $f(X)$ is closed and $a \notin f(X)$, the distance $\varepsilon = d(a, f(X)) = \inf_{y \in f(X)} d(a, y)$ is strictly positive: $\varepsilon > 0$.
-:::
-
-::: pf-step
-Define a sequence $(x_n)_{n=1}^\infty$ in $X$ inductively by $x_1 = a$ and $x_{n+1} = f(x_n) = f^n(a)$ for all $n \ge 1$.
-:::
-
-::: pf-step
-For any positive integers $n > m \ge 1$, since $f^{m-1}$ is an isometry:
-$$d(x_n, x_m) = d(f^{m-1}(x_{n-m+1}), f^{m-1}(x_1)) = d(x_{n-m+1}, x_1) = d(x_{n-m+1}, a).$$
-:::
-
-::: pf-step
-Since $n > m$, $n - m + 1 \ge 2$, so $x_{n-m+1} = f(x_{n-m}) \in f(X)$.
-:::
-
-::: pf-step
-By definition of $\varepsilon$, $d(x_{n-m+1}, a) \ge \varepsilon > 0$.
-:::
-
-::: pf-step
-Thus $d(x_n, x_m) \ge \varepsilon > 0$ for all $n \neq m$.
-:::
-
-::: pf-step
-The sequence $(x_n)$ contains no Cauchy subsequence, so it has no convergent subsequence.
-:::
-
-::: pf-step
-This contradicts the sequential compactness of the compact metric space $X$.
-:::
-
-::: pf-step
-Therefore $f(X) = X$, so $f$ is surjective.
-:::
-
-:::
-
-:::
-
-::: pf-step
-$f$ is a homeomorphism:
-
-::: pf-proof
-
-::: pf-step
-By steps [](#f-injective-continuous){.pf-ref} and [](#f-surjective){.pf-ref}, $f$ is a continuous bijection.
-:::
-
-::: pf-step
-A continuous bijection from a compact space to a Hausdorff space is a closed map, hence a homeomorphism (its inverse $f^{-1}$ is continuous and is an isometry as well). Q.E.D.
-:::
-
-:::
-
-:::
-
-:::
-
+Put $x_{1}=a$ and $x_{n+1}=f(x_{n})$. For $n<m$,
+$$
+d(x_{n},x_{m})=d(f(x_{n-1}),f(x_{m-1}))=d(x_{n-1},x_{m-1})=\cdots=d(a,\,x_{m-n}),
+$$
+and $x_{m-n}=f(x_{m-n-1})\in f(X)$ when $m-n>1$, while $x_{1}=a$; in either case $d(x_{n},x_{m})\ge\varepsilon$ for $n\ne m$. So $(x_{n})$ has no convergent subsequence, and $X$ is not sequentially compact — contradicting Theorem 28.2, since compact metric spaces are sequentially compact. Hence $f$ is surjective and therefore a homeomorphism.
 :::
