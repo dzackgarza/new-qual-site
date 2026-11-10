@@ -20,9 +20,11 @@ audit:
   note: >-
     Checked line by line against Munkres, Topology (2000), Supplementary Exercises: Review of the
     Basics, Exercise 7, printed p. 229, and its instruction to answer for properties (18) paracompact
-    and (19) topologically complete, with Theorem 41.1 (paracompactness of metric spaces), Theorem
-    42.1, Theorem 41.5 (a countably compact paracompact Hausdorff space is compact), Theorem 32.3,
-    Exercise 30.9 and the remark attached to Exercise 32.5 (the box-product normality question is
+    and (19) topologically complete, with Theorem 41.1 (a paracompact Hausdorff space is normal), Theorem
+    41.4 (every metrizable space is paracompact), Theorem 41.5 (every regular Lindelof space is
+    paracompact), Theorem 42.1 (Smirnov), Theorem 32.3, Exercise 30.9, Exercise 6 of §43 for the
+    definition of topological completeness and its behaviour under closed, open and countable
+    products, and the remark attached to Exercise 32.5 (the box-product normality question is
     open). No published solution was located (search recorded on E-PWXIV and in the COMPLAINTS.md
     entry). The two tables were re-derived: compact Hausdorff and metrizable spaces are paracompact,
     the non-normal spaces (c), (f) and (j) and the non-regular R_K are not, S_Omega is countably
@@ -65,7 +67,7 @@ The earlier supplementary exercises classify properties (1)–(17). The entries 
 | (j) $\RR^{[0,1]}$, product | No | No |
 | (k) $\RR_K$ | No | No |
 
-Every compact Hausdorff space and every metrizable space is paracompact. The product and uniform topologies in (g) and (h) admit complete metrics: use a weighted sum of bounded complete coordinate metrics for (g), and the bounded uniform metric for (h). A compact Hausdorff space is topologically complete exactly when it is metrizable. The ordinal spaces and ordered square in the table fail metrizability. The Sorgenfrey line is regular Lindelöf, hence paracompact, but is not metrizable. The spaces in (c), (f), and (j) are not normal; $\RR_K$ is not regular. Each therefore fails paracompactness. The space $S_\Omega$ is countably compact but noncompact; a countably compact paracompact Hausdorff space is compact, so it is not paracompact. The box-product paracompactness question is the unresolved entry identified by the source.
+Every compact Hausdorff space and every metrizable space is paracompact. The product and uniform topologies in (g) and (h) admit complete metrics: use a weighted sum of bounded complete coordinate metrics for (g), and the bounded uniform metric for (h). A compact Hausdorff space is topologically complete exactly when it is metrizable. The ordinal spaces and ordered square in the table fail metrizability. The Sorgenfrey line is regular Lindelöf, hence paracompact, but is not metrizable. The spaces in (c), (f), and (j) are not normal; $\RR_K$ is not regular. Each therefore fails paracompactness. The space $S_\Omega$ is countably compact but noncompact, and a countably compact paracompact space is compact: a locally finite family of nonempty open sets in a countably compact space is finite, since choosing $x_n$ in $V_{s_n}$ outside $V_{s_1}\cup\dots\cup V_{s_{n-1}}$ would produce an infinite set with no limit point, so a locally finite open refinement of an open cover is already a finite subcover. Hence $S_\Omega$ is not paracompact. The box-product paracompactness question is the unresolved entry identified by the source.
 
 For Exercises 2–6, the preservation answers are:
 
