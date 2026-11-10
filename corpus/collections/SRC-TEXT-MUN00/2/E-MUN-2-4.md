@@ -21,6 +21,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §2 Exercise 4, printed p. 21; parts (a)-(f)
+    are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 2.4,
+    printed pp. 15-16 (tmp/sources/munkres-solutions-whitman.pdf). His conclusions in
+    (c) and (e) are the card's - injectivity of the composite forces the first map
+    injective only, surjectivity forces the second surjective only - and his Theorem
+    2.4.1 is the summary (f). The card's two counterexamples use {0} into {0,1} where he
+    uses {1,2} into {1,2,3}; both are correct, and the card's is the smaller.
 ---
 
 ::: {.exercise}
@@ -41,6 +58,8 @@ Let $f: A \to B$ and $g: B \to C$ .
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.4, printed pp. 15--16** (`tmp/sources/munkres-solutions-whitman.pdf`); his summary of (b)-(e) is his Theorem 2.4.1, reproduced as (f) below, and his examples for (c) and (e) are replaced by the smaller ones on the card.
+
 (a) For $a\in A$,
 $$
 a\in(g\circ f)^{-1}(C_0)

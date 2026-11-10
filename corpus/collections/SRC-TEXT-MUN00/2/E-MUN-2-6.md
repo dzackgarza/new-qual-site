@@ -14,6 +14,23 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §2 Exercise 6, printed p. 21; the stored
+    statement matches, including "there are several possible choices for g".
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 2.6,
+    printed pp. 18-19 (tmp/sources/munkres-solutions-whitman.pdf). He restricts to the
+    branch [1, infinity) with range [0, infinity) and shows the range is attained before
+    proving injectivity and surjectivity; the card keeps the sharper branch at the
+    critical point x = 1/sqrt 3, whose image is [-2/(3 sqrt 3), infinity), and so has the
+    same three steps with the exact image. Both are choices the exercise allows.
 ---
 
 ::: {.exercise}
@@ -22,6 +39,8 @@ Let $f: \RR \to \RR$ be the function $f(x) = x^3 - x$ . By restricting the domai
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.6, printed pp. 18--19** (`tmp/sources/munkres-solutions-whitman.pdf`), which takes the branch $[1,\infty)\to[0,\infty)$; the card takes the branch beginning at the critical point, whose image is exactly the closed ray below.
+
 Put $c=1/\sqrt3$, so that $f(c)=c^3-c=\frac1{3\sqrt3}-\frac1{\sqrt3}=-\frac2{3\sqrt3}$.
 
 ::: pf

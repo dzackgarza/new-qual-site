@@ -21,6 +21,21 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §2 Exercise 5, printed p. 21; the statement
+    of left and right inverse and the five parts are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 2.5,
+    printed pp. 16-17 (tmp/sources/munkres-solutions-whitman.pdf). He notes there that
+    (e) is Lemma 2.1 of the text, which Munkres leaves to the exercises; the card's
+    chain g = g o i_B = g o (f o h) = (g o f) o h = i_A o h = h is that proof.
 ---
 
 ::: {.exercise}
@@ -40,6 +55,8 @@ More than one right inverse?
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.5, printed pp. 16--17** (`tmp/sources/munkres-solutions-whitman.pdf`), all five parts; part (e) is Lemma 2.1 of Munkres, which the book leaves to the exercises.
+
 (a) Suppose $g\circ f=i_A$. If $f(a_1)=f(a_2)$, then
 $$
 a_1=g(f(a_1))=g(f(a_2))=a_2,

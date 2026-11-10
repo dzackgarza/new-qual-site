@@ -21,6 +21,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §2 Exercise 3, printed p. 21; the stored
+    statement matches: (b), (c), (f) and (g) of Exercise 2 for arbitrary unions and
+    intersections.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 2.3,
+    printed pp. 13-14 (tmp/sources/munkres-solutions-whitman.pdf). His four parts are
+    the card's; the injective case of (g) is his argument that the points x_0 witnessing
+    y in each f(A_0) agree, and it is where the nonemptiness of the index collection is
+    used.
 ---
 
 ::: {.exercise}
@@ -29,6 +46,8 @@ Show that (b), (c), (f), and (g) of Exercise 2 hold for arbitrary unions and int
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.3, printed pp. 13--14** (`tmp/sources/munkres-solutions-whitman.pdf`); the four parts below are his, with the index set written as $I$ rather than as a collection $\mathcal A$.
+
 Let $\{B_i\}_{i\in I}$ be subsets of $B$ and $\{A_i\}_{i\in I}$ subsets of $A$.
 
 Preimages commute with arbitrary unions:

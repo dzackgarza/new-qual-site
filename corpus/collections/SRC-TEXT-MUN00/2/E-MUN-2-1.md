@@ -21,6 +21,20 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §2 Exercise 1, printed p. 20; the two parts
+    are stored as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second
+    Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 2.1,
+    printed p. 11 (tmp/sources/munkres-solutions-whitman.pdf), whose two arguments are
+    the card's. No defect found.
 ---
 
 ::: {.exercise}
@@ -33,6 +47,8 @@ Let $f: A \to B$ . Let $A_0 \subset A$ and $B_0 \subset B$ .
 :::
 
 ::: {.solution}
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.1, printed p. 11** (`tmp/sources/munkres-solutions-whitman.pdf`); the two arguments below, each proving one inclusion outright and the other under injectivity or surjectivity, are his.
+
 (a) If $a\in A_0$, then $f(a)\in f(A_0)$, hence
 $$
 a\in f^{-1}(f(A_0)).
