@@ -12,9 +12,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §29 Exercise 7, printed p. 186, with Theorem 27.1
+    and Exercise 29.5; the stored statement is the printed sentence.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 3" (1 January 2021), Exercise 29.7, PDF p. 23. S_Omega with its largest point
+    added is compact Hausdorff: an open set containing the largest point contains a final
+    interval, and the initial closed interval is compact by Theorem 27.1.
+    (tmp/sources/munkres-solutions-positron-ch3.pdf).
 ---
 
 ::: {.exercise}
@@ -23,78 +35,7 @@ Show that the one-point compactification of $S_\Omega$ is homeomorphic with $\ov
 :::
 
 ::: {.solution}
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.7, PDF p. 23** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs, with the notation corrected: it shows that $\overline{S}_{\Omega}=S_{\Omega}\cup\{\Omega\}$ is compact Hausdorff.
 
-Write $S_\Omega = [0, \Omega)$, write $S_\Omega^* = S_\Omega \cup \{\infty\}$ for its one-point compactification, and give $\overline{S}_\Omega = [0, \Omega]$ the order topology.
-
-::: pf
-
-::: pf-step
-Properties of $\overline{S}_\Omega$: 1. $\overline{S}_\Omega = [0, \Omega]$ in the order topology is compact and Hausdorff.
-2. The subspace topology on $S_\Omega = [0, \Omega) \subset \overline{S}_\Omega$ is identical to the intrinsic order topology on $S_\Omega$.
-3. The remainder $\overline{S}_\Omega \setminus S_\Omega = \{\Omega\}$ is a single point.
-
-::: pf-proof
-
-::: pf-step
-Every well-ordered set with a largest element is compact in the order topology (Munkres Theorem 27.1), and every order topology is Hausdorff.
-Thus $\overline{S}_\Omega$ is compact Hausdorff.
-:::
-
-::: pf-step
-Since $S_\Omega$ is an initial segment (convex set) in $\overline{S}_\Omega$, the subspace topology and the order topology on $S_\Omega$ coincide.
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-Compact subsets of $S_\Omega$: A closed subset $C \subseteq S_\Omega$ is compact in $S_\Omega$ if and only if $C$ is bounded above by some $\alpha < \Omega$.
-
-::: pf-proof
-
-::: pf-step
-($\impliedby$) If $C$ is closed and bounded by $\alpha < \Omega$, then $C$ is a closed subset of the compact interval $[0, \alpha]$, hence $C$ is compact.
-:::
-
-::: pf-step
-($\implies$) If $C$ is unbounded in $S_\Omega$, the collection of open rays $\{[0, \beta) : \beta \in S_\Omega\}$ forms an open cover of $C$ with no finite subcover (since the supremum of any finite set of elements in $S_\Omega$ is strictly less than $\Omega$). Thus $C$ cannot be compact.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Construction of the bijection $f: S_\Omega^* \to \overline{S}_\Omega$: Define $f: S_\Omega^* \to \overline{S}_\Omega$ by: $$f(x) = x \quad \text{for } x \in S_\Omega, \qquad f(\infty) = \Omega.$$ This is a bijection: it is injective because the restriction to $S_\Omega$ is the identity (so distinct points of $S_\Omega$ have distinct images) and $\Omega$ is not in $S_\Omega$ (so $\infty$ is the only point mapping to $\Omega$); it is surjective because every point of $\overline{S}_\Omega = S_\Omega \cup \{\Omega\}$ is hit, the points of $S_\Omega$ by themselves and $\Omega$ by $\infty$.
-:::
-
-::: pf-step
-$f$ is a homeomorphism:
-
-::: pf-proof
-
-::: pf-step
-For $x \in S_\Omega$, the intrinsic order intervals, or initial rays when $x=0$, form a local neighborhood basis in $S_\Omega^*$.
-The same intervals and initial rays, with upper endpoint below $\Omega$, form a local neighborhood basis at $x$ in $\overline{S}_\Omega$.
-:::
-
-::: pf-step
-A neighborhood basis of $\infty$ in $S_\Omega^*$ consists of sets of the form $(S_\Omega \setminus [0, \alpha]) \cup \{\infty\} = (\alpha, \Omega) \cup \{\infty\}$ for $\alpha < \Omega$ (by step [](#s2){.pf-ref}).
-:::
-
-::: pf-step
-Under $f$, the image of $(\alpha, \Omega) \cup \{\infty\}$ is $(\alpha, \Omega) \cup \{\Omega\} = (\alpha, \Omega]$, which is precisely the standard basic open neighborhood of $\Omega$ in $\overline{S}_\Omega$.
-:::
-
-::: pf-step
-Therefore $f$ is an open continuous bijection, so $f$ is a homeomorphism.
-:::
-
-:::
-
-:::
-
-:::
-
+Since one-point compactifications are unique up to homeomorphism (Exercise 29.5), it suffices to show that $\overline S_{\Omega}$ is compact and Hausdorff. It is Hausdorff, having the order topology (Exercise 17.10). Let $\mathcal{A}$ be an open cover and let $A\in\mathcal{A}$ contain $\Omega$; by the definition of the order topology $A$ contains an interval $(a,\Omega]$. If $a_{0}$ is the least element of $S_{\Omega}$, the interval $[a_{0},a]$ is compact (Theorem 27.1, closed intervals of $S_{\Omega}$ being compact), so finitely many members of $\mathcal{A}$ cover it, and together with $A$ they cover $\overline S_{\Omega}$. Hence $\overline S_{\Omega}$ is compact, and the one-point compactification of $S_{\Omega}$ is homeomorphic with $\overline S_{\Omega}$.
 :::
