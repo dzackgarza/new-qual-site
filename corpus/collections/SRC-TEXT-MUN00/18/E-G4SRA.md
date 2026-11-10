@@ -13,14 +13,19 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §18 Exercise 10, printed p. 112, with Theorem
+    18.1 and the product topology of §15; the stored statement is the printed one.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 18.10, PDF p. 13. The content is theirs: the
+    inverse image of a product basis element U x V is f^{-1}(U) x g^{-1}(V), open in A x C.
+    (tmp/sources/munkres-solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -36,9 +41,17 @@ Show that $f \times g$ is continuous.
 :::
 
 ::: {.solution}
-A basis for $B\times D$ consists of sets $U\times V$ with $U\subseteq B$ open and $V\subseteq D$ open. For such a basic set,
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.10, PDF p. 13** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the computation of the inverse image is theirs. Whitman, printed p. 187, proves the same by checking Theorem 18.1 at each point and neighbourhood.
+
+Let $U\subset B$ and $V\subset D$ be open, so that $U\times V$ is a basis element of $B\times D$. For $a\in A$, $c\in C$,
 $$
-(f\times g)^{-1}(U\times V)=f^{-1}(U)\times g^{-1}(V).
+(f\times g)(a\times c)\in U\times V
+\iff f(a)\in U \text{ and } g(c)\in V
+\iff a\in f^{-1}(U) \text{ and } c\in g^{-1}(V),
 $$
-Since $f$ and $g$ are continuous, the two factors on the right are open in $A$ and $C$, so their product is open in $A\times C$. Thus inverse images of basis elements are open, hence $f\times g$ is continuous.
+hence
+$$
+(f\times g)^{-1}(U\times V)=f^{-1}(U)\times g^{-1}(V),
+$$
+which is open in $A\times C$ because $f$ and $g$ are continuous. Since the inverse images of a basis of $B\times D$ are open, $f\times g$ is continuous (Theorem 18.1 and the definition of a basis for a topology).
 :::
