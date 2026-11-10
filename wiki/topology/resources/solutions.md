@@ -233,7 +233,8 @@ dated on its first line. The archive holds **no S30, S32 or S36**. Each file is 
 S35, two for S33, one for S34 — and cites the book's own theorem and exercise numbers throughout, sometimes with
 an Engelking or Spanier reference. Covered: **§31 Exercises 1, 2, 3, 5, 6, 7 (all parts) and 8** on pages 1–3 of
 S31; **§33 Exercises 1, 4, 5, 7 and 8** on pages 1–2 of S33; **§34 Exercises 1–5** on page 1 of S34; **§35
-Exercises 3–8** on pages 1–3 of S35. Cite the file, the exercise and the page of the file.
+Exercises 3–8** on pages 1–3 of S35; **§38 Exercises 4, 5, 6, 7, 8 and 9** on pages 1–3 of S38, which has no
+Exercise 1, 2, 3 or 10. Cite the file, the exercise and the page of the file.
 
 **dbFin, *Munkres (2000) Topology with Solutions***, chapter 4,
 `https://dbfin.com/topology/munkres/chapter-4/<section>/problem-<n>-solution/` (read 2026-11-10; copies under
@@ -243,11 +244,36 @@ page: cite it by its URL and the date read, as the cards of this chapter now do.
 pages are complete arguments (§30.1, §32.7, §32.9, §33.3, §34.6, §35.2, §35.9, §36.5), others are one sentence
 (§32.4) or a restatement of the exercise (§30.18). It has no pages at all for the supplementary exercises.
 
+**Aleksey Zinger, *MAT 530: Topology & Geometry, I*, Fall 2005, problem-set solutions**,
+`tmp/sources/munkres-solutions-zinger-mat530-ps2.pdf` … `-ps9.pdf` ([course page](https://www.math.stonybrook.edu/~azinger/mat530/),
+files `ps2sol.pdf` … `ps9sol.pdf`). Twelve numbered problem sets, three to six pages each; the pages carry no
+printed page numbers, so cite the PDF page and the sheet's own heading, which is of the form "Solution to
+Problem p235, #1" — the book's page and the book's exercise number. The chapter-4 to chapter-6 items are
+§37 Exercise 1 (sheet 4, PDF pp. 1–2, with the counterexample showing that the printed $T_1$ hypothesis of part
+(c) does not suffice and the remark that the first edition printed Hausdorff), §37 Exercise 5 (sheet 4, PDF
+pp. 2–3), and §41 Exercises 2 and 7 (sheet 6, PDF pp. 1 and 2–3). Sheet 4 also solves §1 Exercise 7 of the
+book's p. 67 (transfinite induction); the remaining sheets are §17, §26, §27, §30, §31, §33 and Chapter 7.
+
+**"Solutions to exercises for Mathematics 205A"**, University of California, Riverside, Fall 2014,
+`tmp/sources/munkres-solutions-ucr-math205A-solutions5a.pdf` (21 pages, the file notes of a course whose
+directory is `math.ucr.edu/~res/math205A/fall05/`; the file names no author, so the course and the file are the
+attribution), collected together with the rest of the course's sets in
+`tmp/sources/munkres-solutions-ucr-math205-gentop.pdf` (107 pages, where each set keeps its own footer
+numbering). Section "VI.4: Local compactness and compactifications — Problems from Munkres, §38, pp. 241–242"
+answers **§38 Exercise 2 and Exercise 3 on printed p. 9** of `solutions5a.pdf`. Two things are recorded on the
+cards rather than here: the sheet prints Exercise 3 with the course's annotation "[Just give a necessary
+condition on the topology of the space.]" and states the sufficiency in one sentence, and its imbedding for
+Exercise 2 goes into $[-1,1]^3$ where the book prints $[0,1]^3$.
+
 Nothing located covers Chapters 4–14 complete: Chapter 4 is reached by "Doug's World" (the whole chapter, as a
 selection), by Moller (§31 and §33–§35), by dbFin (every numbered exercise), by Amit Rajaraman (§30 only) and by
-Orellana (a selection of §30–§34); §37 by Orellana alone. §38–§64 and §66–§85 have no located set with printed
-pagination, apart from Moller's S38. The Riemannian Hunger blog and the commercial manuals are HTML or
-paywalled and print no pagination, and are not cited here.
+Orellana (a selection of §30–§34); §37 by Orellana (a selection) and by Zinger (Exercises 1 and 5 only); §38 by
+Moller's S38 (Exercises 4–9) and by the Riverside set (Exercises 2 and 3); §41 by Zinger (Exercises 2 and 7) and
+by the *Praying For Stockholm* posts (Exercises 2(a), 7 and 8). §39, §40, §42 and §39–§49 other than the above,
+and §50–§64 and §66–§85, have no located set with printed pagination. The Riemannian Hunger blog and the
+commercial manuals are HTML or paywalled and print no pagination, and are not cited here; the dbFin pages have no
+Chapter 5 or Chapter 6 section at all (`chapter-5/` and `chapter-6/` under `dbfin.com/topology/munkres/` are 404,
+and the site's index lists Chapters 1–4, 9 and 11 only).
 
 No set was found for Munkres §12, §14, §15 or §65.
 
