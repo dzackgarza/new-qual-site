@@ -20,6 +20,24 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "Feryll", *Praying For Stockholm*,
+    "Paracompactness and Perfect Maps (6.41.8)" (31 December 2014),
+    http://feryll.blogspot.com/2014/12/paracompactness-and-perfect-maps-6418.html, read 2026-11-10; cited
+    by URL and date read, attributed to the handle the post carries. Checked against Munkres, Topology
+    (2000), Section 41 Exercise 8, printed pp. 260-261, with Exercise 7 of §31 (perfect map), Lemma 41.3,
+    Theorem 41.1 and Theorem 26.4. Part (a) is the post's: a finite subcover of each compact fibre, the
+    open saturated set V_y = Y - p(X - O_y), a locally finite open refinement of {V_y}, and the family
+    p^{-1}(W) cap U. What was corrected: for part (b) the post takes a locally finite open refinement A of
+    the pulled-back cover and sets C = {p(A)}, which is not open because a perfect map is closed and not
+    open; the card takes the closed refinement that the book's hint uses, notes that p(F) is closed and
+    that {p(F)} covers Y, and proves p(F) locally finite at y by covering the compact fibre with finitely
+    many neighbourhoods and passing to the saturated neighbourhood N = Y - p(X - O). The card also
+    records the Hausdorffness of Y, which the post leaves unstated and which the statement "so is Y"
+    requires.
 ---
 
 ::: {.exercise}
@@ -52,7 +70,7 @@ $$
 $$
 This is an open refinement of $\mathcal U$ and covers $X$. It is locally finite: if a neighborhood $N$ of $p(x)$ meets only finitely many $W$'s, then $p^{-1}(N)$ meets only the finitely many corresponding finite families in $\mathcal R$. Hence $X$ is paracompact.
 
-(b) Assume $X$ is paracompact Hausdorff. A paracompact Hausdorff space is regular, and a perfect map carries regularity of $X$ to $Y$ by [[E-Y4MFU]], so $Y$ is regular. Let $\mathcal U$ be an open cover of $Y$. The pullback cover $\{p^{-1}(U):U\in\mathcal U\}$ of $X$ has a locally finite closed refinement $\mathcal F$ covering $X$ (the closed-refinement form of paracompactness).
+(b) Assume $X$ is paracompact Hausdorff. Then $X$ is normal (Theorem 41.1), and $Y$ is Hausdorff: distinct points $y_1\ne y_2$ of $Y$ have disjoint compact fibres $p^{-1}(y_1)$, $p^{-1}(y_2)$ in the Hausdorff space $X$, which normality separates by disjoint open sets $O_1$, $O_2$, and then $Y-p(X-O_1)$ and $Y-p(X-O_2)$ are disjoint open neighbourhoods of $y_1$ and $y_2$. A perfect map carries regularity of $X$ to $Y$ by [[E-Y4MFU]], so $Y$ is regular. Let $\mathcal U$ be an open cover of $Y$. The pullback cover $\{p^{-1}(U):U\in\mathcal U\}$ of $X$ has a locally finite closed refinement $\mathcal F$ covering $X$ (the closed-refinement form of paracompactness).
 
 For each $F\in\mathcal F$, choose $U(F)\in\mathcal U$ with
 $$

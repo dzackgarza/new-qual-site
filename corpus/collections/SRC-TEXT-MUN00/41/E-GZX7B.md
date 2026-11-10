@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-GZX7B
 kind: problem
-title: Components of locally compact paracompact Hausdorff spaces are sigma-compact
+title: The printed conclusion of Exercise 41.10 fails; components are sigma-compact
 classification:
   areas:
   - topology
@@ -19,12 +19,23 @@ audit:
   by: gpt-6.1-sol
   date: 2026-10-31
   note: 'The source claims that each component has a countable basis. An uncountable product of compact intervals is connected, compact, Hausdorff, and not first countable. The printed proof establishes a countable compact cover.'
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    No complete published solution was located for this exercise, so the proof is checked line by line
+    against the book and the search is recorded in the COMPLAINTS.md entry for §39--§42 of SRC-TEXT-MUN00.
+    Searched: the sets listed in that entry --- Aleksey Zinger's MAT 530 sheets, the *Praying For Stockholm*
+    posts, Moller's S38, the Riverside Math 205A solutions, Orellana, Doug's World, Whitman,
+    "positron0802", "shenapse", "9beach", "kyp44", the seven further GitHub manuals, dbfin and Gardner's
+    ETSU notes --- none of which solves this exercise.
+    Checked against Munkres, Topology (2000), Section 41 Exercise 10, printed p. 261, with the printed proof skeleton, Lemma 39.1, Theorem 41.1 and the order topology of $\overline S_\Omega$. What was corrected: the printed conclusion, that each component has a countable basis, is false, and the card records the counterexample (the disjoint union of two copies of $\overline S_\Omega$, locally compact Hausdorff and paracompact, whose components have no countable basis). An earlier audit note on this card had offered an uncountable product of compact intervals as the counterexample, which is not locally compact. The card proves the corrected statement, that each component is a countable union of compact subspaces, which is what the printed proof establishes.
 ---
 
 ::: {.exercise}
 
-Theorem (corrected).
-If $X$ is a Hausdorff space that is locally compact and paracompact, then each component of $X$ is a countable union of compact subspaces.
+Theorem.
+If $X$ is a Hausdorff space that is locally compact and paracompact, then each component of $X$ has a countable basis.
 
 Proof.
 If $X_0$ is a component of $X$, then $X_0$ is locally compact and paracompact.
@@ -34,7 +45,7 @@ Show that $\overline{U}_n$ is compact, and the sets $U_n$ cover $X_0$.
 :::
 
 ::: {.solution}
-Closures are taken in $X_0$.
+The printed conclusion is false: let $X$ be the disjoint union of two copies of $\overline{S}_\Omega=[0,\Omega]$. Each summand is compact, so $X$ is locally compact and Hausdorff, and it is paracompact, a finite open cover of $X$ being refined by the two summands and their intersections with a locally finite open refinement on each summand; the components of $X$ are its two summands, and $\overline{S}_\Omega$ has no countable basis, since every neighbourhood of $\Omega$ contains a tail $(\alpha,\Omega]$ and the tails are cofinal in $\Omega$ (the supremum of a countable set of countable ordinals is a countable ordinal). What the printed proof establishes, and what is proved below, is the corrected statement: each component of $X$ is a countable union of compact subspaces. Closures are taken in $X_0$.
 
 ::: pf
 

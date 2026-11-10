@@ -14,6 +14,17 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    No complete published solution was located for this exercise, so the proof is checked line by line
+    against the book and the search is recorded in the COMPLAINTS.md entry for §39--§42 of SRC-TEXT-MUN00.
+    Searched: the sets listed in that entry --- Aleksey Zinger's MAT 530 sheets, the *Praying For Stockholm*
+    posts, Moller's S38, the Riverside Math 205A solutions, Orellana, Doug's World, Whitman,
+    "positron0802", "shenapse", "9beach", "kyp44", the seven further GitHub manuals, dbfin and Gardner's
+    ETSU notes --- none of which solves this exercise.
+    Checked against Munkres, Topology (2000), Section 41 Exercise 4, printed p. 260, with the discrete topology, the definition of paracompactness, and part (b) of Exercise 41.2 (card E-94C75) for the failure of paracompactness in the image. What was corrected: part (b) deduced the non-paracompactness of $S_\Omega=[0,\omega_1)$ from the general assertion that a paracompact countably compact Hausdorff space is compact, which the book does not prove and the card did not; the card now cites part (b) of Exercise 41.2, where the non-paracompactness of $S_\Omega$ is proved.
 ---
 
 ::: {.exercise}
@@ -70,15 +81,11 @@ Part (b): Continuous images of paracompact spaces need not be paracompact.
 ::: pf-proof
 
 ::: pf-step
-Let $Y = [0, \omega_1)$ be the space of countable ordinals equipped with the order topology.
+Let $Y = S_\Omega = [0, \Omega)$ be the space of countable ordinals with the order topology.
 :::
 
 ::: pf-step
-The space $Y$ is Hausdorff and countably compact, but not compact (the open cover $\{[0, \alpha)\}_{\alpha < \omega_1}$ has no finite subcover).
-:::
-
-::: pf-step
-Since every paracompact and countably compact Hausdorff space is compact, $Y$ is not paracompact.
+$Y$ is not paracompact: this is part (b) of Exercise 41.2, proved on the card of [[E-94C75]], where $S_\Omega$ is shown not to be paracompact by exhibiting $S_\Omega \times \overline{S}_\Omega$ as a non-normal product of a paracompact space with a compact one.
 :::
 
 ::: pf-step
