@@ -13,14 +13,21 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §21 Exercise 1, printed p. 133, with the subspace
+    topology and the definition of a metric for a topology; the stored statement is the
+    printed sentence.
 - event: solution-written
-  by: gpt-5.6-sol
-  date: 2026-09-09
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-09
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: "positron0802", "Solutions to Topology,
+    Chapter 2" (1 January 2021), Exercise 21.1, PDF p. 23. The subspace topology and the
+    metric topology of the restricted metric contain each other: a metric ball of a subspace
+    point inside a trace is a restricted ball, and every restricted ball is a trace of a
+    ball of the big space. (tmp/sources/munkres-solutions-positron-ch2.pdf).
 ---
 
 ::: {.exercise}
@@ -30,17 +37,21 @@ If $d$ is a metric for the topology of $X$, show that $d \mid A \times A$ is a m
 :::
 
 ::: {.solution}
-The restriction $d_A=d\restrict_{A\times A}$ is a metric on $A$, since the metric axioms for $d$ hold in particular for points of $A$. For $a\in A$ and $r>0$, its open ball is
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.1, PDF p. 23** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the argument is theirs.
+
+Let $A\subset X$ and $d'=d\restrict_{A\times A}$, clearly a metric on $A$. Write $A_{s}$ for $A$ with the subspace topology and $A_{d'}$ for $A$ with the metric topology of $d'$.
+
+$A_{d'}$ is finer than $A_{s}$: a subspace basis element is $U=B_{d}(x,\varepsilon)\cap A$ with $a\in U$; then $\delta=\varepsilon-d(x,a)>0$ and
 $$
-B_{d_A}(a,r)=\{x\in A:d(a,x)<r\}=A\cap B_d(a,r).
+a\in B_{d'}(a,\delta)=\{b\in A\mid d(a,b)<\varepsilon\}\subset U,
 $$
-Thus every $d_A$-ball is open in the subspace topology. Conversely, if $U=A\cap V$ is subspace-open and $a\in U$, choose $r>0$ with
+because $d(a,b)<\delta$ gives $d(x,b)\le d(x,a)+d(a,b)<\varepsilon$.
+
+$A_{s}$ is finer than $A_{d'}$: a metric basis element of $A_{d'}$ is
 $$
-B_d(a,r)\subseteq V.
+B_{d'}(a,\varepsilon)=\{b\in A\mid d(a,b)<\varepsilon\}=B_{d}(a,\varepsilon)\cap A,
 $$
-Then
-$$
-B_{d_A}(a,r)=A\cap B_d(a,r)\subseteq U.
-$$
-Hence the metric topology of $d_A$ is exactly the subspace topology.
+the trace on $A$ of an open ball of $X$, hence open in the subspace topology.
+
+So the two topologies coincide: $d\restrict_{A\times A}$ is a metric for the subspace topology.
 :::
