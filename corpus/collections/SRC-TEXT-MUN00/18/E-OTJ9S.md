@@ -11,9 +11,23 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §18 Exercise 4, printed p. 111, with Theorem
+    18.2, Theorem 18.4 and the definition of imbedding on printed pp. 105-110; the stored
+    statement is the printed one.
 - event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-30
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise 18.4, printed p. 180.
+    His proof for f, which is the same for g: injective, continuous because both components
+    are (identity and constant), and an imbedding because on its image it is inverse to the
+    projection pi_1, which is continuous by Theorem 18.4. (tmp/sources/munkres-solutions-
+    whitman.pdf).
 ---
 
 ::: {.exercise}
@@ -28,42 +42,13 @@ are imbeddings.
 :::
 
 ::: {.solution}
-An imbedding is a map that is a homeomorphism onto its image.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 18.4, printed p. 180** (`tmp/sources/munkres-solutions-whitman.pdf`); the proof for $f$ is his, and $g$ is the same argument. "positron0802", *Solutions to Topology, Chapter 2*, Exercise 18.4, PDF p. 11, states the same in one line.
 
-::: pf
+We show that $f:X\to X\times Y$, $f(x)=x\times y_{0}$, is an imbedding; the argument for $g$ is the same with the factors exchanged.
 
-::: {.pf-step #f-continuous-injective}
-$f$ is continuous and injective.
+*$f$ is injective*: $f(x)=f(x')$ forces $x=x'$ in the first coordinate.
 
-::: pf-proof
-Its coordinates are $\pi_1\circ f=\operatorname{id}_X$ and the constant map $\pi_2\circ f\equiv y_0$, both continuous, and a map into a product is continuous if and only if its coordinates are.
-If $f(x_1)=f(x_2)$, then $(x_1,y_0)=(x_2,y_0)$, so $x_1=x_2$.
-:::
+*$f$ is continuous*: its components are the identity $x\mapsto x$ and the constant map $x\mapsto y_{0}$, both continuous (Theorem 18.2), so $f$ is continuous by Theorem 18.4 (maps into products, printed p. 110).
 
-:::
-
-::: {.pf-step #f-homeomorphism-onto-image}
-$f$ is a homeomorphism onto $X\times\{y_0\}$.
-
-::: pf-proof
-The inverse of $f\colon X\to X\times\{y_0\}$ is the restriction of $\pi_1$ to $X\times\{y_0\}$, which is continuous.
-:::
-
-:::
-
-::: {.pf-step #g-imbedding}
-$g$ is an imbedding.
-
-::: pf-proof
-Exchange the roles of the factors in steps [](#f-continuous-injective){.pf-ref} and [](#f-homeomorphism-onto-image){.pf-ref}: $g$ has coordinates the constant map at $x_0$ and $\operatorname{id}_Y$, and its inverse on $\{x_0\}\times Y$ is the restriction of $\pi_2$.
-:::
-
-:::
-
-::: pf-qed
-Steps [](#f-continuous-injective){.pf-ref} and [](#f-homeomorphism-onto-image){.pf-ref} show that $f$ is an imbedding, and step [](#g-imbedding){.pf-ref} treats $g$.
-:::
-
-:::
-
+*$f$ is an imbedding*: let $f':X\to f(X)$ be $f$ with its range restricted. It is a bijection, it is continuous because $f$ is (Theorem 18.2(e)), and its inverse is the restriction to $f(X)$ of the projection $\pi_{1}:X\times Y\to X$, which is continuous (Theorem 18.4); hence $f'$ is a homeomorphism and $f$ is an imbedding.
 :::
