@@ -15,6 +15,21 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Amit Rajaraman, "Munkres Solutions" (MA 406
+    course notes, last updated 31 March 2021), Exercise 4.30.3, printed p. 12
+    (tmp/sources/munkres-solutions-amitrajaraman-ma406.pdf), and independently checked against
+    "Doug's World", "Munkres - Topology - Chapter 4 Solutions" (30 August 2017; the file names no
+    author), Problem 30.3, printed p. 1 (tmp/sources/munkres-solutions-dougsworld-ch4.pdf); the
+    exercise is printed on p. 194 of Munkres, Topology (2000). Corrections: Rajaraman ends "since
+    A - A' is countable, this contradicts the second countability of X", which is not the
+    contradiction -- the injection x -> B(x) of the non-limit points into a countable basis shows
+    that A - A' is countable, and that together with the countability of A cap A' makes the
+    uncountable A countable. The card states that conclusion, which is Doug's World's argument at
+    printed p. 1.
 ---
 
 ::: {.exercise}

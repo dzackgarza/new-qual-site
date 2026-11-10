@@ -15,6 +15,17 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Amit Rajaraman, "Munkres Solutions" (MA 406
+    course notes, last updated 31 March 2021), Exercise 4.30.2, printed p. 12
+    (tmp/sources/munkres-solutions-amitrajaraman-ma406.pdf), checked against Munkres, Topology
+    (2000), Section 30 Exercise 2, printed p. 194, and Lemma 13.2. Rajaraman's selection of the
+    countable subcollection of C is indexed by the pairs (n, m) for which a member of C lies
+    between B_n and B_m, exactly as the card writes it; no correction to the mathematics was
+    needed, and the printed hint is followed literally.
 ---
 
 ::: {.exercise}

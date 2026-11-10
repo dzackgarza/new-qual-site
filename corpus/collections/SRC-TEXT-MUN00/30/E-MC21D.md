@@ -11,6 +11,21 @@ classification:
   - Product Topology
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 30 Exercise 16, printed p. 195,
+    and Theorem 19.6: part (a) needs a separable product of continuum many factors, and its
+    functions d_{F,phi} are constant on the traces iota(t) cap F, which separates any prescribed
+    finite set of coordinates; part (b) is the printed hint's function alpha -> D cap
+    pi_alpha^{-1}((a,b)) made injective by the second interval (2,3). No complete published
+    solution was located: "Doug's World", "Munkres - Topology - Chapter 4 Solutions", printed p. 4,
+    prints "Problem 30.16. Solution:" and then nothing; Orellana's contents stop at Section 30
+    Exercise 14; Rajaraman's notes stop at Exercise 4.30.10; positron0802, Whitman, shenapse and
+    9beach do not reach Chapter 4. The search is recorded in the COMPLAINTS.md entry for this
+    batch.
 ---
 
 ::: {.exercise}

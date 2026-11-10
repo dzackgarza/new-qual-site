@@ -15,6 +15,20 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Ana Emilia de Orellana, "Solutions -
+    Topology Munkres", Section 30 Exercise 8, printed p. 31
+    (tmp/sources/munkres-solutions-anadeore.pdf), checked against Munkres, Topology (2000),
+    Section 30 Exercise 8, printed p. 194, Example 2 (printed p. 191: R^omega in the uniform
+    topology is first-countable and not second-countable) and Theorem 30.3. Orellana argues
+    indirectly -- the uniform topology is metrizable, so Exercise 30.5(b) rules out the Lindelof
+    property and Exercise 30.5(a) rules out a countable dense subset, and Example 2 rules out a
+    countable basis. The card proves the same four answers directly from the uncountable discrete
+    subspace {0,1}^omega of distance 1, which is the argument the book uses for Example 2. No
+    correction to the mathematics was needed; the added explicitness is the only change.
 ---
 
 ::: {.exercise}

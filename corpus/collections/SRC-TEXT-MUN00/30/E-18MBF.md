@@ -16,6 +16,20 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Ana Emilia Orellana, "Solutions - Topology
+    Munkres", Section 30 Exercise 14, printed p. 31
+    (tmp/sources/munkres-solutions-anadeore.pdf), checked against Munkres, Topology (2000),
+    Section 30 Exercise 14, printed p. 194, and the tube lemma (Lemma 26.8, printed p. 167). Her
+    argument: each slice {x} x Y is compact, a finite subcollection covers it, the intersection of
+    the finitely many X-coordinates is a neighbourhood U_x of x with U_x x Y covered, and
+    Lindelofness of X gives countably many such x. What was corrected: the source then writes the
+    countable subcover as the family indexed by those x alone, "U_{x_i n} x V_{x_i n}", which is
+    one set per x; the card takes the union of the finitely many members chosen for each x, which
+    is what the tube-lemma step produces. The card also settles the empty case X = empty.
 ---
 
 ::: {.exercise}

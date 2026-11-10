@@ -14,6 +14,22 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 30 Exercise 17, printed p. 195,
+    and against the box topology of Section 19 (Theorem 19.2 gives the basis of boxes): the
+    countability of Q^infinity, its density in itself, the countable-subcover argument for
+    Lindelofness and the diagonal neighbourhood W = prod (-eps_{n,n}/2, eps_{n,n}/2), which
+    excludes every member of a supposed countable local basis at the origin, are all correct, and
+    the four answers -- separable and Lindelof, not first- and not second-countable -- are the
+    standard ones. The diagonal argument is made in the subspace, so each basic
+    neighbourhood is the trace on Q^infinity of a box, and the point y^(k) that
+    witnesses failure of inclusion is chosen in the k-th coordinate with rational
+    value, which keeps it in the subspace. No
+    published solution was located in any of the sets searched, which are listed in the
+    COMPLAINTS.md entry for this batch; "Doug's World" and Orellana stop before Exercise 17.
 ---
 
 ::: {.exercise}

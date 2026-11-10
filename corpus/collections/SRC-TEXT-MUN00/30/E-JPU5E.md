@@ -11,6 +11,22 @@ classification:
   - Continuous Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Ana Emilia de Orellana, "Solutions -
+    Topology Munkres", Section 30 Exercise 11, printed p. 31
+    (tmp/sources/munkres-solutions-anadeore.pdf), checked against Munkres, Topology (2000),
+    Section 30 Exercise 11, printed p. 194, and Theorem 18.1 for the preimage form of continuity.
+    Doug's World, "Munkres - Topology - Chapter 4 Solutions", Problem 30.11, printed p. 3, proves
+    the same two implications. Corrections: Orellana closes the separable half with the garbled
+    display "f(D) = f(D) == f(X)", which asserts the conclusion rather than deriving it; the card
+    derives it from an arbitrary nonempty open W of f(X), whose preimage is nonempty open in X and
+    therefore meets D. Her Lindelof half also passes through a cover of f(X) by sets "open in X";
+    the card uses a cover of f(X) by sets open in f(X) and their preimages under f, which are open
+    in X, and then uses surjectivity of f onto f(X).
 ---
 
 ::: {.exercise}

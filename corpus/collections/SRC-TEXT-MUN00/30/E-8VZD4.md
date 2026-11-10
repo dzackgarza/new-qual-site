@@ -14,6 +14,24 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Part (a) transcribed from the located published solution: Ana Emilia de Orellana,
+    "Solutions - Topology Munkres", Section 30 Exercise 1(a), printed p. 30
+    (tmp/sources/munkres-solutions-anadeore.pdf), checked against Munkres, Topology (2000),
+    Section 30, printed p. 194, and Theorem 30.3's definition of a countable basis at a point.
+    Corrections on this card: the earlier solution presented the diagonal argument of part (b)
+    as "shown in Section 30 Example 2", which is false -- Example 2 of Section 30 (printed
+    p. 191) shows that R^omega in the UNIFORM topology is first-countable and not
+    second-countable, and says nothing about the box topology; the citation is removed and
+    the argument is now given in full. Part (b) has no complete published proof in any located
+    set: Orellana, printed p. 30, asserts that the box topology on R^omega is not
+    first-countable but her display only produces local bases of the coordinates and does not
+    prove the negation; "Doug's World", "Munkres - Topology - Chapter 4 Solutions", printed
+    p. 1, answers "I'm not sure what the answer here is" and offers only a guess. See the
+    COMPLAINTS.md entry for this batch.
 ---
 
 ::: {.exercise}
@@ -86,7 +104,7 @@ Thus every one-point set in $\RR^\omega_{\text{box}}$ is a $G_\delta$ set.
 
 ::: pf-step
 **Failure of first countability:**
-As shown in §30 Example 2, the origin $\mathbf{0} \in \RR^\omega$ has no countable local neighborhood basis in the box topology. Indeed, if $\{B_m\}_{m=1}^\infty$ were such a basis, choose for each $m$ a basic box $P_m=\prod_{n=1}^\infty(-\varepsilon_{m,n},\varepsilon_{m,n})\subseteq B_m$ about $\mathbf0$. Then $\{P_m\}$ would also be a local basis. But the box-open neighborhood $W=\prod_{n=1}^\infty(-\varepsilon_{n,n}/2,\varepsilon_{n,n}/2)$ contains no $P_m$, a contradiction.
+The origin $\mathbf{0} \in \RR^\omega$ has no countable local neighborhood basis in the box topology. Indeed, if $\{B_m\}_{m=1}^\infty$ were such a basis, choose for each $m$ a basic box $P_m=\prod_{n=1}^\infty(-\varepsilon_{m,n},\varepsilon_{m,n})\subseteq B_m$ about $\mathbf{0}$ with every $\varepsilon_{m,n}>0$; then $\{P_m\}$ would also be a local basis. But the box-open neighborhood $W=\prod_{n=1}^\infty(-\varepsilon_{n,n}/2,\varepsilon_{n,n}/2)$ of $\mathbf{0}$ contains no $P_m$: the $m$-th coordinate of $P_m$ is $(-\varepsilon_{m,m},\varepsilon_{m,m})$, which is not contained in $(-\varepsilon_{m,m}/2,\varepsilon_{m,m}/2)$. This contradicts the defining property of a local basis.
 :::
 
 ::: pf-step
