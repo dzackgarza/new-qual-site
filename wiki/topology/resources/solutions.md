@@ -265,15 +265,25 @@ cards rather than here: the sheet prints Exercise 3 with the course's annotation
 condition on the topology of the space.]" and states the sufficiency in one sentence, and its imbedding for
 Exercise 2 goes into $[-1,1]^3$ where the book prints $[0,1]^3$.
 
+**"Feryll", *Praying For Stockholm***, four posts on Munkres of 25--31 December 2014. A web page has no printed
+page, so cite the post by its URL and the date read, and use the handle the post carries as the attribution:
+- [Stone-Cech Compactification of Discrete Spaces (5.38.7-8)](http://feryll.blogspot.com/2014/12/stone-cech-compactification-of-discrete.html), 25 December 2014: §38 Exercises 7 and 8. Read as an independent check on Moller's S38, which is the source the cards cite.
+- [Countable Local Finiteness (6.39.5-6)](http://feryll.blogspot.com/2014/12/countable-local-finiteness-6395-6.html), 26 December 2014: §39 Exercises 5 and 6, the source of both cards.
+- [Product of a Compact and Paracompact Space (6.41.2a)](http://feryll.blogspot.com/2014/12/product-of-compact-and-paracompact.html), 30 December 2014, and [Unions of Paracompact Spaces (6.41.7)](http://feryll.blogspot.com/2014/12/unions-of-paracompact-spaces-6417.html), 30 December 2014: read, and **not** cited as the source of §41 Exercises 2 and 7, because the first takes the intersection of the first coordinates of a finite subcover, which need not lie inside its union, and concludes part (b) from the false statement that $S_\Omega$ is compact, and the second refines inside the closed subspaces and calls the union a locally finite open refinement of $X$.
+- [Paracompactness and Perfect Maps (6.41.8)](http://feryll.blogspot.com/2014/12/paracompactness-and-perfect-maps-6418.html), 31 December 2014: §41 Exercise 8, the source of that card; its part (b) takes $\{p(A)\}$ from an open refinement, which is not open because a perfect map is closed rather than open, and the card replaces it by the closed refinement of the book's hint.
+
 Nothing located covers Chapters 4–14 complete: Chapter 4 is reached by "Doug's World" (the whole chapter, as a
 selection), by Moller (§31 and §33–§35), by dbFin (every numbered exercise), by Amit Rajaraman (§30 only) and by
 Orellana (a selection of §30–§34); §37 by Orellana (a selection) and by Zinger (Exercises 1 and 5 only); §38 by
 Moller's S38 (Exercises 4–9) and by the Riverside set (Exercises 2 and 3); §41 by Zinger (Exercises 2 and 7) and
-by the *Praying For Stockholm* posts (Exercises 2(a), 7 and 8). §39, §40, §42 and §39–§49 other than the above,
-and §50–§64 and §66–§85, have no located set with printed pagination. The Riemannian Hunger blog and the
-commercial manuals are HTML or paywalled and print no pagination, and are not cited here; the dbFin pages have no
-Chapter 5 or Chapter 6 section at all (`chapter-5/` and `chapter-6/` under `dbfin.com/topology/munkres/` are 404,
-and the site's index lists Chapters 1–4, 9 and 11 only).
+by the *Praying For Stockholm* posts (Exercises 2(a), 7 and 8); §39 by the posts of 26 December 2014 (Exercises 5
+and 6). §39 Exercises 1–4, all of §40, §41 Exercises 1, 3–6, 9, 10 and both exercises of §42 have no located
+solution, and §43–§64 and §66–§85 have no located set with printed pagination. The commercial manuals are
+paywalled and print no pagination, and are not cited here; the dbFin pages have no Chapter 5 or Chapter 6 section
+at all (`chapter-5/` and `chapter-6/` under `dbfin.com/topology/munkres/` are 404, and the site's index lists
+Chapters 1–4, 9 and 11 only). The AoPS blog "shooting star", *Topology by Munkres* (Days 14–15), appears to solve
+Chapter 5 and part of Chapter 6, but it renders its mathematics client-side and its text could not be extracted,
+so nothing is cited from it.
 
 No set was found for Munkres §12, §14, §15 or §65.
 
