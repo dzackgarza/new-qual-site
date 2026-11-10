@@ -440,3 +440,9 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.18, PDF pp. 7--8, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he writes the counit and the unit for the presheaf $f^{*}$ and verifies the two triangle identities by tracing elements through the colimits, which yields the bijection formally; he also remarks that $\Hom_X(\inverseof f\mcg,\mcf)$ can be described directly as compatible families $\mcg(V)\to\mcf(U)$ over $V\supseteq f(U)$.
+The proof above uses the same two triangle identities and the induced maps $\Phi$ and $\Psi$, checking the identities on local representatives instead of on elements of the colimits, and it does not use the alternative direct description.
+Agree.
+:::

@@ -61,7 +61,9 @@ Since the germ of $t$ at $P$ vanishes, there is an open $V$ with $P \in V \subse
 Because $\phi$ is a morphism of sheaves the restriction squares commute, so $\phi(V)(\restrictionof{s}{V}) = \restrictionof{t}{V} = 0$, which says $\restrictionof{s}{V} \in (\ker \phi)(V)$.
 Taking germs at $P$ exhibits $s_P = \qty{\restrictionof{s}{V}}_P$ as an element of $(\ker \phi)_P$.
 
-The diagram chase for images is the same argument run in the other direction.
+The two inclusions for the image are the same computation performed on the image presheaf, whose stalk at $P$ is $(\im \phi)_P$ because sheafification does not change stalks.
+$(\im \phi)_P \subseteq \im(\phi_P)$: an element of $(\im \phi)_P$ is the germ at $P$ of a section of the presheaf image over some neighbourhood $U$ of $P$, that is, of $\phi(U)(s)$ for some $s \in \mcf(U)$; it is therefore $\phi_P(s_P)$.
+$\im(\phi_P) \subseteq (\im \phi)_P$: for $s_P \in \mcf_P$ represented by $s \in \mcf(U)$, the section $\phi(U)(s)$ lies in the presheaf image over $U$, so its germ $\phi_P(s_P)$ lies in $(\im \phi)_P$.
 
 **Part (b).** *Injectivity.* ($\Rightarrow$) If $\phi$ is injective then $\ker \phi = 0$ as a sheaf, so by part (a) we get $\ker(\phi_P) = (\ker \phi)_P = 0$ for every $P$, and $\phi_P$ is injective.
 
@@ -71,7 +73,7 @@ Given a section $s \in K(U)$, each $P \in U$ has a neighbourhood $U_P \subseteq 
 The sets $\theset{U_P \st P \in U}$ cover $U$, and $K$ is a sheaf, so the identity axiom forces $s = 0$.
 Hence $K = 0$ and $\phi$ is injective.
 
-*Surjectivity.* The same argument applied to $\coker \phi$, whose stalks are the cokernels of the $\phi_P$ by part (a), shows $\coker \phi = 0$ if and only if every $\phi_P$ is surjective.
+*Surjectivity.* The same argument applied to $\coker \phi$, whose stalk at $P$ is $\mcg_P/(\im \phi)_P = \coker(\phi_P)$ by part (a), shows $\coker \phi = 0$ if and only if every $\phi_P$ is surjective.
 
 **Part (c).** Exactness of the sequence of sheaves means $\ker \phi^i = \im \phi^{i-1}$ as subsheaves of $\mcf^i$.
 
@@ -90,4 +92,10 @@ $$
 \iff (\ker \phi^i)_P = (\im \phi^{i-1})_P \ \forall P
 \iff \ker(\phi^i_P) = \im(\phi^{i-1}_P) \ \forall P.
 $$
+:::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.2, PDF pp. 2--3, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he reduces both identities of (a) to two facts, that sheafification does not change stalks and that kernels and images of abelian-group maps commute with the directed colimits which compute stalks, then reads (b) off as $\ker\phi=0$ and $\coker\phi=0$ and (c) off as $\ker\phi^{i}=\im\phi^{i-1}$ checked on stalks.
+The proof above uses the same commutation for the kernels, but carries (a) out as an explicit chase on representatives, and the paragraph above carries the image out the same way; (b) and (c) are the same.
+Agree.
 :::

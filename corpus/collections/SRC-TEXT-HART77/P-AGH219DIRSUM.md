@@ -158,3 +158,8 @@ Step [](#direct-sum-presheaf-is-sheaf){.pf-ref} proves that the sectionwise dire
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.9, PDF p. 4, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he notes that products and equalizers commute with the sheaf condition, that the sectionwise sum is both a sum and a product of presheaves, and that an object which is already a sheaf and is a (co)product of presheaves is one in the full subcategory of sheaves.
+The proof above checks the two sheaf axioms on a cover directly and then proves both universal properties section by section; it agrees on the conclusion and does by hand what Kim obtains from the commutation of limits.
+:::

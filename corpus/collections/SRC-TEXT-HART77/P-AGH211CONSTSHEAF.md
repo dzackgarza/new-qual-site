@@ -63,3 +63,9 @@ A morphism of presheaves which is an isomorphism on all stalks induces an isomor
 By the universal property of sheafification, $F$ factors through $(\tilde\mca)^+$, and the induced map $(\tilde\mca)^+ \to \mca$ is an isomorphism on stalks between two sheaves, hence an isomorphism.
 So $\mca$ is the sheafification of the constant presheaf.
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.1, PDF p. 2, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he maps the constant presheaf into the constant sheaf of the text by sending $a$ to the constant function with value $a$, notes that the induced map is an isomorphism on every stalk, and concludes from the universal property of sheafification that $(\tilde\mca)^{+}\to\mca$ is an isomorphism.
+The proof above is the same argument with the two points Kim leaves implicit supplied: constant maps into the discrete group $A$ are continuous, so the presheaf map lands in $\mca(U)$, and a continuous map from a neighbourhood of a point into a discrete group is constant near that point, which is what gives $\tilde\mca_P=\mca_P=A$.
+Agree.
+:::

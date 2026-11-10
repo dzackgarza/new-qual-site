@@ -170,3 +170,9 @@ Step [](#s4){.pf-ref} is exactly the pair of assertions requested.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.14, PDF p. 6, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: a vanishing germ vanishes on a neighbourhood, so the complement of the support of a section is open; for the second assertion he takes a direct sum of skyscraper sheaves over a set of points which is not closed.
+The proof above is the same, with the example written out on $\AA^1_\CC$ over the closed points $n\ge1$ and the reason its support fails to be closed made explicit.
+Agree.
+:::

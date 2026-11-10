@@ -331,3 +331,9 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.20, PDF pp. 9--10, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (a) glue inside the sheaf $\mcf$ and check that the glued section has zero germs off $Z$; (b) $j_*(\mcf|_U)(V)=\mcf(V\cap U)$, so the kernel is the group of sections vanishing on $V\cap U$, and flasque-ness makes the restriction $\mcf(V)\to\mcf(V\cap U)$ surjective on every open.
+The proof above is the same, with the support condition and the flasque case separated.
+Agree.
+:::

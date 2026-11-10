@@ -123,3 +123,9 @@ Step [](#exact-sequence){.pf-ref} is the required left-exact sequence.
 ::: {.remark}
 The functor $\Gamma(U, \wait)$ is not exact in general; Hartshorne II.1.21 supplies a counterexample on $\PP^1$.
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.8, PDF p. 4, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he observes that the kernel sheaf of $\mcf\to\mcf''$ is the kernel presheaf, so its sections over $U$ are exactly the kernel of $\Gamma(U,\mcf)\to\Gamma(U,\mcf'')$, and left exactness follows.
+The proof above is that identity, together with the injectivity of $\Gamma(U,\mcf')\to\Gamma(U,\mcf)$ taken from the definition of injectivity for a morphism of sheaves (Hartshorne's Caution 1.2.1).
+Agree.
+:::

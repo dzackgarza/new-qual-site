@@ -665,3 +665,9 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), steps [](#s3){.pf-ref}, [
 ::: {.remark}
 Part (e) is an analogue of the first Cousin problem in several complex variables; see Gunning and Rossi.
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.21, PDF pp. 10--11, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (a) the sheaf axiom for $\mci_Y$ inside $\OO_X$; (b) exactness of $0\to\mci_Y(U)\to\OO_X(U)\to\OO_Y(Y\cap U)\to0$ on the affine opens, which form a base, hence exactness on stalks; (c) $\Gamma(\PP^1,\OO_X)=k$ against $\Gamma(\PP^1,\mcf)=k\oplus k$; (d) $\mck/\OO_X$ as principal parts with the quotient stalk computed; (e) for each point $P$ a rational function regular away from $P$ with the prescribed principal part there, obtained from the division $f/g=q+r/g$ with $\deg r<\deg g$.
+The proof above agrees on (a)--(d); in (e) it builds a single rational function carrying all prescribed polar parts at once, the sum of the local polar parts together with the polynomial part at infinity, which is the same content without the passage through the one-point case.
+Agree.
+:::

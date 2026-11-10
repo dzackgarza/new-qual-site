@@ -287,3 +287,9 @@ Step [](#s5){.pf-ref} gives the stalk calculation, and step [](#s7){.pf-ref} giv
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.17, PDF p. 7, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he computes the stalk as the colimit over the neighbourhoods of the point, so it is $A$ exactly when every neighbourhood of $Q$ contains $P$, and identifies $i_P(A)$ with $i_*$ of the constant sheaf on the closure, the constant sheaf being the constant presheaf there because the closure is irreducible.
+The proof above separates the same steps and verifies the description on every open set rather than only on stalks.
+Agree.
+:::

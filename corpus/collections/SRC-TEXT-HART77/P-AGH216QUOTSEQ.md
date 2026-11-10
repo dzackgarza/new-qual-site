@@ -163,3 +163,9 @@ Steps [](#stalk-of-quotient-sheaf){.pf-ref} and [](#q-surjective-kernel-fprime){
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.6, PDF pp. 3--4, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he computes on stalks, using $(\mcf/\mcf')_P=\mcf_P/\mcf'_P$ for (a) and, for (b), a morphism from the presheaf quotient $\mcf/\mcf'$ to $\mcf''$ induced by the exact sequence and checked to be an isomorphism on stalks.
+The proof above is the same in four labelled steps, and it states the commutation of filtered colimits with cokernels which gives the stalk formula for a quotient sheaf.
+Agree.
+:::

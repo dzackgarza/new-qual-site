@@ -247,3 +247,10 @@ Step [](#s5){.pf-ref} proves that the sectionwise direct limit is already a shea
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.11, PDF p. 5, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he replaces the cover by a finite subcover, using the noetherian hypothesis, and uses that filtered colimits commute with the finite limit which expresses the sheaf axiom, checking existence for the finite subfamily and deducing the remaining sections from uniqueness.
+The proof above is the same, with the quasi-compactness of open subsets proved in step [](#s1){.pf-ref} and uniqueness and gluing separated.
+Kim raises in a footnote the question whether the index set must be directed; the proof above states that hypothesis, and it is not removable: the sectionwise colimit of the two-term system $\OO_{\PP^1}(-1)\hookrightarrow\OO_{\PP^1}$ over the non-filtered index category $\bullet\to\bullet$ is the presheaf cokernel, whose global sections are $\Gamma(\OO_{\PP^1})/\Gamma(\OO_{\PP^1}(-1))=k$, while its sheafification $\OO_{\PP^1}(1)$ has $\Gamma=k^{2}$, so that presheaf is not a sheaf.
+Agree on the directed statement.
+:::

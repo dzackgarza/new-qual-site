@@ -269,3 +269,9 @@ Step [](#s3){.pf-ref} proves the sectionwise construction is a sheaf, and step [
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.12, PDF p. 5, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he notes that the sheaf axiom is a limit condition, that limits commute with limits, and that a sectionwise inverse limit which is already a sheaf is the inverse limit of sheaves.
+The proof above verifies the two sheaf axioms component by component and constructs the universal morphism together with its uniqueness, so it proves in full what Kim obtains from the commutation of limits.
+Agree.
+:::

@@ -134,3 +134,9 @@ Steps [](#varphi-factors-through-quotient){.pf-ref} and [](#quotient-iso-image){
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.7, PDF p. 4, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he compares the presheaf image with the presheaf quotient $\mcf/\ker\phi$ and sheafifies, and derives (b) from the zero composite $\mcf\to\mcg\to\mcg/\im\phi$ together with a stalk check.
+The proof above is the same, with the cokernel of $\phi$ first identified with the cokernel of the injection $\im\phi\hookrightarrow\mcg$ so that Exercise 1.6 applies to the two quotients.
+Agree.
+:::

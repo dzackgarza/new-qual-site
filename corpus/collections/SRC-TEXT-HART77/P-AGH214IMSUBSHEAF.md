@@ -54,3 +54,9 @@ Each $\psi(U)$ is injective, so by part (a) the induced map on associated sheave
 Since $\mcg$ is already a sheaf, the target of the sheafified map is $\mcg$ itself, and the source is $\im \phi$ by definition.
 The restriction maps of $\im \phi$ are those induced from $\mcg$, so $\im \phi$ is identified with a subsheaf of $\mcg$.
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.4, PDF p. 3, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he passes to stalks, where the map is a filtered colimit of the injective section maps and hence injective, and then uses that sheafification preserves stalks; (b) is the injection of the presheaf image into $\mcg$ taken after sheafification.
+The proof above is that argument, with the filtered-colimit statement named rather than proved.
+Agree.
+:::

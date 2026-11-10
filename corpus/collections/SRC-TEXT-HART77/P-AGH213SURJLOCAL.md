@@ -65,3 +65,10 @@ Nevertheless $\exp$ is surjective as a morphism of sheaves.
 For any $P \in \CC$, a germ of $\units{\OO_\CC}$ at $P$ is represented by a nowhere-vanishing holomorphic function on some open disc $V \ni P$.
 A disc is simply connected, so that function has a holomorphic logarithm on $V$, and $\exp$ is surjective on the stalk at $P$.
 :::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.3, PDF p. 3, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: for (a) he lifts the germ $s_P$ to an element $t_P$, shrinks to a neighbourhood on which the lift is a lift of the section, and lets those neighbourhoods range over $U$; the converse takes an index $i$ with $P\in U_i$.
+For (b) he uses $U=\CC\sm\{0\}$ and the exponential map of the sheaf of holomorphic functions with the section $z$.
+The proof above is the same in (a), and (b) is the same exponential sequence written for $\OO_\CC$ on $\CC^{\times}$, with simple connectedness of a disc in place of Kim's local logarithm.
+Agree.
+:::
