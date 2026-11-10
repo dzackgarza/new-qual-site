@@ -257,3 +257,11 @@ Under only the source's assumption $\operatorname{char}k\ne2$, the cusp quartic 
 Blowing up the origin is an isomorphism near those points, so it cannot make the entire strict transform nonsingular in those characteristics.
 The chart computation in step [](#cusp-quartic-blowup-nonsingular){.pf-ref} proves that the singularity over the origin itself is resolved in every characteristic different from $2$; the global nonsingularity assertion requires excluding $7$ and $13$ as well.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 5.6; his Chapter 1.5 answers stop at 5.5.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.6.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.6, PDF p. 46: (a) the cusp $y^2-x^3+x^4+y^4$ blown up as $ys-xt$, with the strict transforms $1-yt+y^2t^2+y^3$ on $t=1$ and $x^2(t^2-x^2+t^2x^2)$ on $s=1$, both checked by the Jacobian criterion; (c) the tacnode $x^2=x^4+y^4$ with strict transform $t^2-y^2-y^2t^4$ on $s=1$, "the lowest degree terms $t^2-y^2$ of the strict transform factor linearly, so we get a node"; (d) $y^3=x^5$ giving $x^3(x^2-u^3)=0$ after one blowup, "which gives a cusp", and one more blowup resolving. His (b) is a paragraph about the blow-up surface and tangent directions rather than a proof of the two-point statement, and it does not show that the two points above the node are nonsingular.
+The chart computations of the card agree with Egbert's on (a), (c) and (d), including the characteristic-7 and 13 caveat for the cusp quartic. Its (b) is proved by the general node calculation $f=xy+f_3+\cdots$ on both charts, where each of the two exceptional points is nonsingular because the derivative in the chart coordinate is $1$; that part has no published solution among the retained sets, and it is recorded in COMPLAINTS.md.
+Agree with Egbert on (a), (c), (d); (b) is supplied here.
+:::

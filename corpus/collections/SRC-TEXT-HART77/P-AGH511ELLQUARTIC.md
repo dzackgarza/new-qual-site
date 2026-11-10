@@ -308,3 +308,11 @@ $$
 lies on $Y$, so the fibre over $Q$ is a whole line rather than being empty.
 Thus the projection isomorphism and the irreducible elliptic-quartic conclusion require $\operatorname{char}k\ne2$ for these equations.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 5.11.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.11.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.11, PDF pp. 48--49: he computes $H=y^2z-x^3+xz^2$ modulo the two quadrics, obtaining $H\equiv y(yz-xw-zw)+(-x-z)(x^2-xz-yw)$, so that the projection lands in $Z(H)$; solves the two equations for $w$ as $w=x(x-z)/y$ and $w=yz/(x+z)$; and defines the inverse $\varphi^{-1}(x,y,z)=(x,y,z,\cdot)$ on each of the two charts, noting that it is undefined at $(1,0,-1)$.
+The card's step 1 is the same identity in the other order, and its steps 2 and 3 make the two charts into a single argument: the two equations for $w$ have compatibility determinant $H$, the coefficients $y$ and $x+z$ are never both zero on $C$ except at $Q$, and at $Q$ the first equation reads $2=0$. Neither set excludes characteristic two, where the conclusion fails; the card states $\operatorname{char}k\ne2$ and records the failure in a remark, and it proves the irreducibility and nonsingularity of $Y$ that the exercise asserts after the projection part.
+Agree with Egbert; the characteristic hypothesis and the nonsingularity of $Y$ are added here.
+:::

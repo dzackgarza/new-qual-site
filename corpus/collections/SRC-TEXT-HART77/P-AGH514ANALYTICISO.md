@@ -345,3 +345,15 @@ Step [](#s1){.pf-ref} proves part (a), steps [](#s2){.pf-ref} and [](#s3){.pf-re
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 5.14.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.14.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.14, PDF pp. 50--51: (a) "the isomorphism between local rings must map linear terms to linear terms plus higher order terms"; (b) "construct $g,h$ following Hartshorne's example: $f_{r+1}=h_tg_{s+1}+g_sh_{t+1}$ since $s+t=r$ and $g_s,h_t$ generate the maximal ideal of $k[[x,y]]$"; (c) $r=2$ and $r=3$ through the interchangeability of three points of $\PP^1$ by a linear transformation, "but not for $4$ pairs"; (d) the Weierstrass reduction of a double point to $y'^2+b(x)=0$ and then, writing $b$ to order $k$ as a power of a series of order one, to $y^2=x^r$, following Wall, *Plane Curve Singularities*, Chapter 2.
+Part (b) of Egbert refers to the step in the text's example and leaves the divisibility condition — that every form of degree at least $s+t-1$ lies in $g_sk[x,y]_{d-s}+h_tk[x,y]_{d-t}$ — unproved, and his (d) does not show that $r$ is determined by the singularity. The proof above proves the degree count from the Koszul syzygy of $(g_s,h_t)$, and proves uniqueness of $r$ from the number of minimal primes for even $r$ and from the value semigroup of the normalization for odd $r$; the one-parameter family of ordinary quadruple points in (c) is the cross-ratio orbit count.
+Agree with Egbert on (a), (b) and (d); (c) and the uniqueness in (d) are supplied here.
+:::
+
+::: {.remark}
+Part (d) is starred in the source.
+:::

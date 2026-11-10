@@ -194,3 +194,11 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), step [](#s3){.pf-ref
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 5.10.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.10.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.10, PDF p. 48: (a) "this is clear geometrically, since the number of independent directions you can go in on the manifold corresponds to the number of tangent directions"; (b) "since the tangent space at $P$ is just the dual of $\mathfrak m_P/\mathfrak m_P^2$ we can just take the dual of the natural map $\mathfrak m_{\varphi(P)}/\mathfrak m_{\varphi(P)}^2\to\mathfrak m_P/\mathfrak m_P^2$"; (c) "on the parabola, $x\in\mathfrak m_{(x)}^2$".
+The card keeps Egbert's (b) and (c) and replaces the geometric reading of (a) by the chain $\dim A\le\dim_k\mathfrak m/\mathfrak m^2$ from Krull's height theorem, with equality exactly for the regular local rings, which is $\mco_{X,P}$ regular exactly when $P$ is nonsingular by Theorem I.5.1. That is the only route among the retained sets.
+Agree with Egbert on (b) and (c).
+:::

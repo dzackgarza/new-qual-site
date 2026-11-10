@@ -134,3 +134,11 @@ The source states the exercise for an arbitrary homogeneous polynomial.
 If $f\in k^\times$ is a nonzero constant, then $Z(f)=\varnothing$, so the derivative hypothesis holds vacuously, while a unit is not an irreducible polynomial.
 Thus positive degree, equivalently nonemptiness in the intended hypersurface situation, is necessary for the stated conclusion.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 5.9.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 5.9, PDF p. 16: write $Z(f)=Z(f_1)\cup\cdots\cup Z(f_r)$ with $r>1$ using Exercise 2.5(b), take $P\in Z(f_1)\cap Z(f_2)$ by Exercise 3.7, and observe that the product rule makes all three partials of $f$ vanish at $P$, contradicting the hypothesis.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.9, PDF p. 47: if $f(P)=g(P)h(P)=0$ then the product rule makes all three partials vanish, contradiction.
+The proof above follows Troiani's route and adds the two things the printed exercise leaves implicit: that a reducible homogeneous $f$ in three variables factors into homogeneous factors of positive degree, and that the positive-degree form is needed, since a nonzero constant has empty zero set, satisfies the derivative hypothesis vacuously, and is not irreducible. That exception is recorded in a remark on the card.
+Agree with Troiani.
+:::

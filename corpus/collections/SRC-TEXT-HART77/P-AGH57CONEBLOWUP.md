@@ -193,3 +193,11 @@ Steps [](#vertex-singular){.pf-ref} and [](#nonzero-points-nonsingular){.pf-ref}
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 5.7.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.7.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.7, PDF p. 47: (a) "we can just use the jacobian criterion"; (b) the blow-up hypersurface in $\AA^3\times\PP^2$ defined by $x_1u_2=x_2u_1$, $x_1u_3=x_3u_1$, $x_2u_3=x_3u_2$, with the strict transform on $u_2=1$ given by $x_2^{d}f(u_1,1,u_3)$ and Jacobian $\left(\partial f/\partial u_1,\ 0,\ \partial f/\partial u_3\right)$ of rank one, and the same check begun on the other charts; (c) the fibre read off the three chart equations $f(1,u_2,u_3)$, $f(u_1,1,u_3)$, $f(u_1,u_2,1)$.
+The card's charts agree with Egbert's. It completes what he leaves at "On $u_1=1$... On $u_3=0$...": the strict transform on each of the three charts is $\AA^1\times(Y\cap D_+(x_i))$ by homogeneity, so nonsingularity reduces to the two derivatives of $f(1,u,v)$, which cannot both vanish because Euler's identity would then force $f_x=0$ at a nonsingular point of $Y$.
+Agree with Egbert; the charts are completed here.
+:::

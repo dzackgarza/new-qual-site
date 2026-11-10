@@ -221,3 +221,11 @@ Steps [](#finite-length){.pf-ref} and [](#intersection-mult-bound){.pf-ref} prov
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 5.4, PDF p. 7: (a) $f$ and $g$ vanish together at only finitely many points, so some $h(y)$ vanishes wherever they do and $h^n\in(f,g)$; then $k[x,y]/(f,g)$ is finite dimensional over $k$, with the length of $\mco_P/(f,g)$ at most its dimension, and the bound $\mu_P(Y)\mu_P(Z)$ follows by comparing with Bézout; (b) for a line $L$ not in the tangent cone, $\mco_P/(f,g)=\mco_Q/(x^m+\cdots)$ has length $m=\mu_P(Y)$; (c) with $L$ the line $y=0$ and the curve written $f(x)+y(\ast)=0$, the intersection multiplicities along $L$ add to the degree $n$ of $f$ plus $d-n$ at the point at infinity.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.4.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.4, PDF p. 45: (a) the Nullstellensatz gives $\mathfrak m_P^r\subseteq(f,g)$, so $\mco_P/\mathfrak m_P^r$ has finite length and $(Y\cdot Z)_P$ is finite; the bound is "comparing with Bezout's theorem"; (b) "Bezout, since the general element of a linear system of lines through $P$ is going to meet $Y$ transversely"; (c) "see b".
+The bound $(Y\cdot Z)_P\ge\mu_P(Y)\mu_P(Z)$ is the part all three sets leave to a comparison with Bézout. The proof above computes it: Weierstrass preparation in $k[[x,y]]$, the resultant over $k[[x]]$, and the scaling law $\operatorname{Res}_y(F,G)=x^{rs}\operatorname{Res}_z(\widetilde F,\widetilde G)$ for the homogenized $\widetilde F,\widetilde G$ give $\operatorname{ord}_x\operatorname{Res}_y(F,G)\ge rs$, and Smith normal form turns that order into the length. Parts (b) and (c) are proved by the same order-of-vanishing count rather than by appeal to Bézout.
+Agree with Borcherds on (b) and (c); (a)'s bound is proved here.
+:::

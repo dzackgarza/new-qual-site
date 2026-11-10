@@ -170,3 +170,11 @@ Steps [](#surface-one-singular-line){.pf-ref}, [](#surface-two-conical-point){.p
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 5.2, PDF p. 7: (a) the pinch point, singular along the line $y=z=0$; (b) the conical double point, singular only at $(0,0,0)$; (c) the double line, singular along $x=y=0$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.2.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.2, PDF p. 44: (a) the jacobian gives singular points along the $x$-axis, so the pinch point; (b) the jacobian gives the origin; (c) the jacobian gives the $z$-axis, so the double line.
+The three sets agree on the singular loci and on the figure. The proof above also identifies the transverse local model away from the origin of the singular lines — two smooth sheets for (a) at $x=a\ne0$ and for (c) the product of the nodal plane curve $xy+x^3+y^3=0$ with the $z$-axis — and checks for (c) that the plane curve has no singular point except the origin, which is the step a one-line "the jacobian gives the $z$-axis" leaves out.
+Agree.
+:::

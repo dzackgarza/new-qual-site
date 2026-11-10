@@ -224,3 +224,11 @@ The source assumes only $\operatorname{char}k\ne2$.
 That hypothesis is sufficient for parts (a), (b), and (d), but part (c) acquires the two additional singular points displayed in step [](#s3){.pf-ref} when $\operatorname{char}k=7$ or $13$.
 Thus the four-singularity picture is literally correct, without further points, for characteristic zero and for $\operatorname{char}k\notin\{2,7,13\}$.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 5.1, PDF p. 7: (a) tacnode, singular point $(0,0)$ from $x^2=x^4+y^4$, $2x=4x^3$, $4y^3=0$; (b) node, singular point $(0,0)$; (c) cusp, singular point $(0,0)$; (d) triple point, singular point $(0,0)$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.1.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.1, PDF p. 43: (a) "the jacobian is $0$ at the origin, graphing gives tacnode"; (b) the jacobian vanishes only at the origin and the lowest terms are $xy$, so a node; (c) the lowest terms are $y^2-x^3$, so a cusp; (d) restricting to $(t,mt)$ factors out a line of multiplicity three, so a triple point.
+Neither set solves the singular-point equations away from the origin. The proof above computes them in all four parts — which for (c) produces the two further singular points $\left(\tfrac34,\pm\sqrt{-\tfrac12}\right)$ in characteristics $7$ and $13$, under the source's standing assumption $\operatorname{char}k\ne2$ alone — and identifies the four plane singularities by tangent cone and branch count rather than by graphing.
+Agree with Borcherds on the four identifications; the characteristic exceptions are added here.
+:::

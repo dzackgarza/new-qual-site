@@ -129,3 +129,11 @@ Step [](#geometrically-irreducible){.pf-ref} verifies that the resulting smooth 
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 5.5, PDF p. 7: "If the characteristic $p$ does not divide $d$ we can use $x^d+y^d+z^d=0$. Otherwise we can use $xy^{d-1}+yz^{d-1}+zx^{d-1}=0$."
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.5.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.5, PDF p. 45: the same two equations as Borcherds.
+The second equation of the published answers is singular whenever $3=0$ in $k$: at $(1:1:1)$ its value is $3$ and each of its three partial derivatives is $d$, so for $p=3$ and $3\mid d$ the point $(1:1:1)$ lies on the curve and is singular. The proof above uses $x^{d-1}y+y^{d-1}z+z^d$ in that case instead, whose partials are $(d-1)x^{d-2}y$, $x^{d-1}+(d-1)y^{d-2}z$ and $y^{d-1}$, and which is nonsingular in every characteristic dividing $d$, the case $d=p=2$ included.
+Agree with Borcherds where $p\nmid d$; the divisibility case is repaired here.
+:::

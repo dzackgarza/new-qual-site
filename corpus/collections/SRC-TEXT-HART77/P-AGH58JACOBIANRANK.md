@@ -162,3 +162,10 @@ Steps [](#affine-chart-equations){.pf-ref}, [](#affine-jacobian-is-submatrix){.p
 
 :::
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 5.8.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.8.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.8, PDF p. 47: "The hint is the answer", with no argument.
+No retained set proves this exercise, so the card's proof is the only one available; it is recorded in COMPLAINTS.md as a card with no complete published solution. Its three steps are exactly the printed hint: row scalings by $\lambda^{d_i-1}$ show the rank is independent of the representative, dehomogenizing on $D_+(x_\ell)$ gives the affine Jacobian as the columns other than $\ell$, and Euler's identity evaluated at a point of $Y$ writes column $\ell$ as $-\sum_{j\ne\ell}a_jC_j$, so nothing is lost by deleting it.
+:::

@@ -253,3 +253,12 @@ The source states part (a) for an arbitrary homogeneous quadratic while requirin
 The zero polynomial has rank zero and would correspond to an empty sum of squares, i.e. formally to $r=-1$.
 Thus the stated range implicitly excludes $f=0$; the card makes that hypothesis explicit.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 5.12.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.12.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.12, PDF pp. 49--50: (a) write the conic as $x^tMx$ with $M$ symmetric and diagonalize $M$ by a linear change; (b) "if $r=1$ it is clear since sum of squares; on the other hand, for larger $r$, any factors must be linear, but then multiplying the two factors together will create terms of higher than degree $2$"; (c) the singular locus is where the partials vanish, so it has the dimension $n-r-1$ of $k[x_0,\ldots,x_n]/(x_0,\ldots,x_r)$ minus one; (d) the cone description, worked out in $\PP^2$ and then in general.
+Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.5.12, PDF p. 22: (a) diagonalize the symmetric matrix, with $r$ the rank; (b) if $f$ factors then $x_{r+1},\ldots,x_n$ do not appear, so it suffices to test irreducibility in $k[x_0,\ldots,x_r]$, and there $f$ "defines a nonsingular, hence irreducible, hypersurface", which is the assertion being proved; (c) and (d) as above.
+Egbert's (b) is not a valid argument: a product of two linear forms has degree exactly two and produces no terms of higher degree, and irreducibility for $r\ge2$ needs the rank count. The proof above uses the rank of the symmetric matrix of $\ell m$, which is at most two, against the rank $r+1\ge3$ of the sum of $r+1$ squares. Its (a) also records that $f\ne0$ is needed for the displayed range $0\le r\le n$, which the source leaves implicit.
+Agree with Egbert on (a), (c) and (d); (b) is proved here.
+:::

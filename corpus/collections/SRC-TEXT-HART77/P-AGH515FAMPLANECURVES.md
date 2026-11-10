@@ -178,3 +178,11 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove the coefficient-space correspo
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 5.15; his Chapter 1.5 answers stop at 5.5.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.15.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.15, PDF p. 52: (a) the monomials $x^ay^bz^c$ with $a+b+c=d$ number $\binom{d+2}{2}$, "so we have a clear correspondence"; (b) "if $f$ has no multiple factors, this is clear. If $f$ is reducible, by elimination theory, points in $\PP^N$ with $f\ne0$ and partials nonzero are in $1$-$1$ correspondence with the nonzero locus of a finite set of polynomials defining an open set in $\PP^N$".
+The card's steps agree with Egbert's and supply what his one-line (b) leaves: that the four polynomials $F_A,\partial F_A/\partial x,\partial F_A/\partial y,\partial F_A/\partial z$ must all be included because in characteristic dividing $d$ Euler's relation does not recover $F_A(P)=0$ from the partials alone; that the open set is nonempty because Exercise I.5.5 exhibits a nonsingular form of every degree in every characteristic, rather than because a general member is nonsingular; and that on the open set irreducibility follows from I.3.7 rather than being part of the definition of the discriminant.
+Agree with Egbert.
+:::

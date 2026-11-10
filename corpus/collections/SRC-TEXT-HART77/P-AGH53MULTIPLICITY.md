@@ -141,3 +141,11 @@ Steps [](#linear-part-formula){.pf-ref} and [](#multiplicity-one-criterion){.pf-
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 5.3, PDF p. 7: (a) $P$ nonsingular means one of $\partial f/\partial x,\partial f/\partial y$ is nonzero at $P$, which says that $f$ has a term of degree one in $x,y$, which is $\mu_P(Y)=1$; (b) the singularities of 5.1(a), (b), (c) have multiplicity $2$ and that of (d) has multiplicity $3$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.3.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.3, PDF pp. 44--45: (a) as above; (b) "the multiplicity at the origin is the smallest degree term that appears", with the factor-out-a-linear-term remark.
+All three agree on the four multiplicities. The proof above derives the linear part $f_x(P)x+f_y(P)y$ from the translated equation, so that the equivalence in (a) is an identity of polynomials rather than a reading of coefficients, and it computes the multiplicity $2$ at the two further singular points of 5.1(c) in characteristics $7$ and $13$ from the nonvanishing second derivatives there, which no published set does.
+Agree.
+:::
