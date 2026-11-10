@@ -11,9 +11,22 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Read against Munkres, Topology (2000), §22 Supplementary Exercise 3, printed p. 146,
+    with Exercise 17.9 and Theorem 18.1; the stored statement is the printed sentence.
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition
+    by James Munkres: Solutions Manual" (30 November 2019), Exercise TG.3, printed p. 264.
+    His argument: the closure of a subgroup is a subgroup, because f(H x H) lies in H for
+    the continuous f(x,y) = x y^{-1} and f(closure H x closure H) lies in the closure of f(H
+    x H); both H and its closure are subspaces of a T1 space and the operations are
+    restrictions of continuous ones. (tmp/sources/munkres-solutions-whitman.pdf).
 ---
 
 ::: {.exercise}
@@ -23,46 +36,15 @@ Show that if $H$ is also a subgroup of $G$, then both $H$ and $\overline{H}$ are
 :::
 
 ::: {.solution}
-Let $m\colon G\times G\to G$ and $i\colon G\to G$ be multiplication and inversion, which are continuous.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise TG.3, printed p. 264** (`tmp/sources/munkres-solutions-whitman.pdf`); the argument is his.
 
-::: pf
+Let $H$ be a subspace of the topological group $G$ and a subgroup. Both $H$ and $\overline H$ are $T_{1}$, being subspaces of the $T_{1}$ space $G$.
 
-::: {.pf-step #subgroup-is-topological-group}
-If $K\subseteq G$ is a subgroup, then $K$ with the subspace topology is a topological group.
+*$\overline{H}$ is a subgroup.* By the criterion: $\overline H$ is a subgroup of $G$ if $x\cdot y^{-1}\in\overline H$ whenever $x,y\in\overline H$. Let $f:G\times G\to G$, $f(x,y)=x\cdot y^{-1}$, which is continuous (Exercise TG.1). Then
+$$
+f\big(\overline{H}\times\overline{H}\big)\subset\overline{f(H\times H)}\subset\overline{H},
+$$
+the first inclusion because $f$ is continuous and $\overline{A\times B}=\overline A\times\overline B$ (Exercise 17.9) with $\overline{H\times H}=\overline H\times\overline H$, the second because $H$ is a subgroup so $f(H\times H)\subset H$. Hence $\overline H$ is a subgroup.
 
-::: pf-proof
-By [[E-R3NOE]], the product topology on $K\times K$ is the subspace topology from $G\times G$.
-The maps $m\restrict_{K\times K}$ and $i\restrict_K$ are restrictions of continuous maps to subspaces, and they take values in the subspace $K$ because $K$ is a subgroup; a continuous map with image in a subspace is continuous into that subspace.
-:::
-
-:::
-
-::: {.pf-step #closure-closed-under-inversion}
-$\overline H$ is closed under inversion.
-
-::: pf-proof
-$i$ is continuous and $i\circ i=\operatorname{id}_G$, so $i$ is a homeomorphism and $i(\overline H)=\overline{i(H)}=\overline H$.
-:::
-
-:::
-
-::: {.pf-step #closure-closed-under-multiplication}
-$\overline H$ is closed under multiplication.
-
-::: pf-proof
-Let $x,y\in\overline H$ and let $W$ be an open neighborhood of $xy$.
-By continuity of $m$ at $(x,y)$ there are open $U\ni x$ and $V\ni y$ with $UV\subseteq W$.
-Choose $h_1\in U\cap H$ and $h_2\in V\cap H$; then $h_1h_2\in W\cap H$.
-Hence every neighborhood of $xy$ meets $H$, and $xy\in\overline H$.
-:::
-
-:::
-
-::: pf-qed
-Step [](#subgroup-is-topological-group){.pf-ref} applies to $H$.
-The identity lies in $H\subseteq\overline H$, so by steps [](#closure-closed-under-inversion){.pf-ref} and [](#closure-closed-under-multiplication){.pf-ref} $\overline H$ is a subgroup, and step [](#subgroup-is-topological-group){.pf-ref} applies to $\overline H$.
-:::
-
-:::
-
+*$H$ is a subgroup* by hypothesis, and $\overline H$ is one by the above. The multiplication of $H$ (respectively $\overline H$) is the restriction of the continuous multiplication of $G$ to $H\times H$ (respectively $\overline H\times\overline H$), hence continuous by Theorem 18.2(d); similarly the inversion is the restriction of the continuous inversion of $G$. So both are topological groups.
 :::
