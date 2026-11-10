@@ -136,3 +136,11 @@ Step [](#s1){.pf-ref} proves (a), while steps [](#s2){.pf-ref} and [](#s3){.pf-r
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.5, PDF p. 2: (a) is that $\PP^n$ is covered by $n+1$ copies of $\AA^n$, which is noetherian; (b) is the citation "See proposition 1.5 and part (a) of this question".
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.5, PDF p. 4: (a) by corresponding a descending chain of algebraic sets to an ascending chain of ideals of $k[x_0,\ldots,x_n]$, (b) by the citation to Proposition 1.5.
+The citation is to Hartshorne's own Proposition I.1.5, which is exactly existence and uniqueness of the finite irredundant decomposition in a noetherian space, so both published answers to (b) are complete modulo that proposition.
+The proof above takes Borcherds' route for (a) through the ideal correspondence instead of the affine cover, and proves existence by a minimal counterexample and uniqueness by the standard two-decomposition argument rather than citing I.1.5.
+Agree on both parts, by a different route for (b).
+:::

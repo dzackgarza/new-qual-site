@@ -153,3 +153,11 @@ Step [](#s1){.pf-ref} proves (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} pr
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.4, PDF p. 2: part (a) follows for him from 2.3(d), 2.3(e) and 2.2; part (b) turns a decomposition $Y=Y_1\cup Y_2$ into the prime ideal $I(Y)=I(Y_1)\cap I(Y_2)\supseteq I(Y_1)I(Y_2)$ for one direction and a product $ab\in I(Y)$ into $Y=(Y\cap Z(a))\cup(Y\cap Z(b))$ for the other; part (c) is that $I(\PP^n)=(0)$ is prime.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.4, PDF p. 4: (a) from the previous exercise, (b) "immediate from the fact that the bijection is order reversing", (c) $I(\PP^n)=(0)$.
+Both published sets print the unnumbered sentence that follows Exercise 2.4 in the book — "Show that $\PP^n$ itself is irreducible" — as part (c) of 2.4, which is why this card carries it as (c) and the card for 2.5 does not claim it.
+The proof above writes out what Borcherds leaves implicit in the two directions of (b): the passage from the homogeneous test — a product of two nonzero homogeneous elements of $S/I(Y)$ is nonzero — to ordinary primality, through highest-degree components, and the choice of homogeneous elements of $I(Y_i)$ outside $I(Y)$, which uses that all these ideals are homogeneous.
+Agree.
+:::

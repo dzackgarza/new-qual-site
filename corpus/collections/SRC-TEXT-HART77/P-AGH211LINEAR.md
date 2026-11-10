@@ -172,3 +172,10 @@ Step [](#s2){.pf-ref} proves (a), step [](#s3){.pf-ref} proves the minimal-gener
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.11, PDF pp. 2--3: (a) is one line in each direction; (b) counts dimensions down a chain of hyperplanes, an $r$-dimensional linear variety being the intersection of $n-r$ hyperplanes and not of $n-r-1$; (c) writes $Y\cap Z$ as the intersection of the $(n-r)+(n-s)$ hyperplanes cutting out $Y$ and $Z$ and bounds its dimension by $n$ minus that number, which is $r+s-n$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.11, PDF pp. 5--6: (a) as above; (b) through a lemma that $m$ independent linear forms cut down a polynomial ring by $m$, then $\dim S(Y)=r+1$ gives $m=n-r$; (c) through a lemma identifying a linear variety in $\PP^n$ with the projectivization of a subspace of $k^{n+1}$ of dimension one more, after which the statement is linear algebra.
+The proof above runs the linear algebra version of all three, with $\PP(W)$ and its annihilator, and it proves the lower bound in (b) through $I(Y)/\mathfrak m I(Y)=W^\perp$ rather than by counting equations, so that the minimality counts generators and not hypersurfaces.
+Agree.
+:::

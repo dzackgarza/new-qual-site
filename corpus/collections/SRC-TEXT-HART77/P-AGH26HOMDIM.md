@@ -74,3 +74,9 @@ By Ex. I.1.10(b), $\dim Y = \sup_i \dim Y_i$, the supremum over the $i$ with $Y_
 Every such $Y_i$ has $\dim Y_i = \dim S(Y) - 1$ by the previous paragraph.
 So $\dim Y = \dim S(Y) - 1$, and $\dim Y_i = \dim Y$ whenever $Y_i$ is nonempty.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.6, PDF p. 2, and William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.6, PDF p. 4: both identify the degree-zero part of $S(Y)_{x_i}$ with $A(Y_i)$, obtain $S(Y)_{x_i}\cong A(Y_i)[x_i,x_i^{-1}]$, and conclude through transcendence degrees that $\dim S(Y)=1+\dim Y_i$, then use that the $Y_i$ cover $Y$ to get $\dim S(Y)=1+\dim Y$; Troiani isolates the two ring facts as lemmas, one of them a criterion for a polynomial extension to be injective.
+The proof above writes the two isomorphisms through the substitutions $y_j\mapsto x_j/x_i$, checks that $\bar x_i$ is transcendental over the degree-zero part by the degree of $c_j\bar x_i^j$, and takes the cover step from Exercise I.1.10(b).
+Agree.
+:::

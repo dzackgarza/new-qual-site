@@ -104,3 +104,10 @@ Thus neither condition holds in that case, consistent with the equivalence.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.8, PDF p. 2: for one direction he uses that a homogeneous polynomial of positive degree has zero set of dimension $n-1$ because it has that dimension on an affine chart and is a proper closed subset, and that an irreducible $f$ generates a prime ideal in a unique factorization domain; for the other he takes a homogeneous polynomial vanishing on $Y$, replaces it by an irreducible factor vanishing on $Y$, and concludes that the hypersurface it defines contains $Y$ and has the same dimension, hence equals $Y$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), passes from 2.7 to 2.9 and gives no solution to 2.8.
+The proof above does both directions through heights: $\dim Y=n-1$ gives $\dim S(Y)=n$ and $\operatorname{ht}I(Y)=1$, the unique factorization domain makes an irreducible factor of any element of $I(Y)$ generate a prime inside $I(Y)$, and the generator is shown homogeneous by the least-and-greatest-degree argument; the converse is the principal ideal theorem and the cone dimension formula.
+Agree with Borcherds; the height computation replaces his dimension comparison.
+:::

@@ -160,3 +160,10 @@ For $\mfa=S_+=(x_0,\ldots,x_n)$, the projective zero set is empty.
 Thus $I(Z(\mfa))=I(\varnothing)=S$, whereas $\sqrt{\mfa}=S_+$, since $S/S_+=k$ is a field.
 This shows why (d) excludes the empty projective zero set; its possible radicals are computed in [[P-AGH22IRRELEVANT]].
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.3, PDF p. 2, and William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.3, PDF p. 3: both call (a), (b), (c) trivial, and for (d) they note that the empty projective zero set is excluded because $I(\varnothing)=S$ while $\sqrt{\mathfrak a}$ may be $S_+$, then compare homogeneous elements and invoke the homogeneous Nullstellensatz of 2.1; for (e) both show that every closed $W\supseteq Y$ has $I(Y)\supseteq I(W)\supseteq\mathfrak a$ with $W=Z(\mathfrak a)$ and hence $Z(I(Y))\subseteq W$.
+Troiani's (e) reaches this through (d), which he has just restricted to a nonempty zero set, so the case $W=\PP^n$ with $\mathfrak a=S_+$ is left uncovered there.
+The proof above proves separately that the radical of a homogeneous ideal is homogeneous, which both published arguments use implicitly when they say it suffices to compare homogeneous elements, and it handles $Y=\varnothing$ in (e) as its own sentence.
+Agree.
+:::

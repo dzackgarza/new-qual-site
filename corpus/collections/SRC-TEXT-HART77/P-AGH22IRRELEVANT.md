@@ -112,3 +112,10 @@ These implications establish all three equivalences, including the unit ideal.
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.2, PDF p. 2: he takes (i) to (ii) through the affine zero set being empty or the origin and the Nullstellensatz, and (ii) to (iii) by choosing one exponent $m$ with $x_i^m\in\mathfrak a$ for every $i$ and observing that every monomial of degree $m(n+1)$ has some $x_i^m$ as a factor.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.2, PDF p. 3, runs the same three implications, but in (ii) to (iii) it takes exponents $d_i$ with $x_i^{d_i}\in\sqrt{\mathfrak a}$, sets $d=\max_i d_i$, and concludes "$x_i^d\in\mathfrak a$ for all $i$, as these generate $S_d$ we have $S_d\subseteq\mathfrak a$": a power of an element of $\sqrt{\mathfrak a}$ need not lie in $\mathfrak a$ without raising it further, and the pure powers $x_i^d$ do not span $S_d$ — $x_1x_2$ is a monomial of degree $2$ outside $(x_0^2,\ldots,x_n^2)$, so the step as printed does not close.
+The proof above takes Borcherds' form of (ii) to (iii), with the exponent $D=1+\sum_i(N_i-1)$ and the pigeonhole count that makes every monomial of degree $D$ divisible by one of the powers $x_i^{N_i}$, and it separates the unit ideal from the case $\sqrt{\mathfrak a}=S_+$.
+Agree with Borcherds; Troiani's (ii) to (iii) is the step the displayed count supplies.
+:::

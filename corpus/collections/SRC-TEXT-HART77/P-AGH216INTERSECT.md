@@ -127,3 +127,10 @@ Steps [](#two-components-of-intersection){.pf-ref} and [](#quadrics-irreducible-
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.16, PDF p. 3: for (a) he derives $y^2w=xzw$ from $x^2=yw$ and $xy=zw$, splits on $w=0$, and identifies the two pieces as the line $w=x=0$ and the twisted cubic cut out by the three quadrics; for (b) he reads off $P=(0:0:1)$ and $I(L)+I(C)=(x^2,y)\neq(x,y)$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.16, PDF p. 8, splits (a) on $x=0$ into subcases whose intermediate conclusions ("either $z=0$ or $w=0$ with the other arbitrary") describe points off $Q_1\cap Q_2$, and identifies the remaining curve only by appeal to the solution of 2.9(b), which he had there stated as a guess; his (b) is complete.
+The proof above parametrizes the twisted cubic component and the line $Z(x,w)$ directly, checks both directions of $Q_1\cap Q_2=T\cup R$ on the charts $w\neq0$ and $w=0$, and proves the two quadrics irreducible by Gauss's lemma so that the two components are nonempty closed subsets of a reducible union; for (b) it computes $I(C)+I(L)=(x^2,y)$ and shows $x$ is outside it.
+Agree with Borcherds on both parts; Troiani's (a) does not close.
+:::

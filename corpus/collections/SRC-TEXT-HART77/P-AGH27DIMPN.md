@@ -45,10 +45,6 @@ Let $k$ be algebraically closed and let $n\ge0$.
 Use Ex. 2.6 to reduce to (1.10).
 :::
 
-::: {.hint}
-For (b), use Exercise I.2.6 to reduce to Proposition I.1.10.
-:::
-
 ::: {.solution}
 Use [[D-5LJUX|dimension]] defined by lengths of strict chains of nonempty irreducible closed subsets.
 Let $U_i=D_+(x_i)\subseteq\PP_k^n$ be the standard affine opens.
@@ -129,4 +125,11 @@ Step [](#s2){.pf-ref} proves (a), and step [](#s3){.pf-ref} proves (b).
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.7, PDF p. 2: (a) is that $\PP^n$ is covered by $n+1$ open copies of $\AA^n$; (b) intersects $\bar Y$ with the standard affine charts and compares the dimension of $Y\cap A_i$ with that of its closure in $A_i$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.7, PDF pp. 4--5: (a) by the open cover and Exercise 1.10, (b) through a lemma on a homeomorphism of open subsets carrying closures to closures, which shows $(\bar Y)_i=\overline{(Y_i)}$ and reduces to Proposition 1.10 for quasi-affine varieties.
+The proof above proves the open-cover identity for dimensions as a step, then takes (a) from the charts $D_+(x_i)$ with Proposition I.1.9 and (b) by reducing each chart of $\bar Y$ to Proposition I.1.10, the affine closure result, which is where Borcherds' one-line comparison and Troiani's lemma both land.
+Agree.
 :::

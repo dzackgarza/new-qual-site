@@ -175,3 +175,10 @@ Step [](#rho-d-well-defined-mfa-prime){.pf-ref} proves (a), steps [](#charts-cov
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.12, PDF p. 3: (a) by degree bookkeeping in $\theta$, (b) by choosing a nonzero pure power among the coordinates of a point of $Z(\mathfrak a)$ and reconstructing the source point from the coordinates $y_\alpha$ with $\alpha_i=d-1$, (c) by continuity of the inverse constructed in (b), (d) that the $3$-uple embedding of $\PP^1$ is $[u^3:u^2v:uv^2:v^3]$, the twisted cubic.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.12, PDF pp. 6--7: (a) as above; (b) through equations $y_0^{j_0}\cdots y_n^{j_n}=y_{m(j)}^d$ and an even/odd-$d$ argument about signs, writing the source point with $d$th roots; (c) continuity and closedness of $\rho_d$; (d) "This amounts to calculating the kernel in this specific case which should be what is written in red in 2.9b", which is not an answer.
+The proof above replaces Borcherds' reconstruction and Troiani's $d$th roots by the binomial relations $y_\alpha y_{de_i}^{d-1}=\prod_j y_{(d-1)e_i+e_j}^{\alpha_j}$, which hold in $\mathfrak a$ for every $\alpha$ and give the inverse coordinates $y_{(d-1)e_i+e_j}/y_{de_i}$ on the chart $y_{de_i}\neq0$ without choosing a root and in every characteristic.
+Agree with Borcherds, whose (b) is the same reconstruction with the calculation left to the reader.
+:::

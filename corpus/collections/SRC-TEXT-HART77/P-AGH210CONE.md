@@ -69,3 +69,10 @@ From the definition, $C(Y) = C(Y_1) \union \cdots \union C(Y_m)$, a finite union
 The top member of a chain of irreducible closed subsets of a finite union of closed sets lies in one of them, so the dimension of the union is the maximum of the dimensions.
 Hence $\dim C(Y) = \max_j (\dim Y_j + 1) = \dim Y + 1$.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.10, PDF p. 3: (a) identifies $C(Y)$ with the affine zero set of the same ideal and reads off $I(C(Y))=I(Y)$; (b) sends irreducibility to primality of $I(Y)$ and back; (c) computes $\dim C(Y)=\dim S(Y)=\dim Y+1$ in the irreducible case and refers to Exercise 2.7 for the general one.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.10, PDF p. 5: the same three arguments, with the general case of (c) also deferred to 2.7.
+The proof above keeps Borcherds' steps and separates the two membership tests in (a) — the vertex belongs to the affine zero set because $J\subseteq S_+$, and a nonzero point lies in it exactly when its image under $\theta$ lies in $Z(J)$ — and it takes the reducible case of (c) through the components $C(Y_j)$ instead of citing 2.7.
+Agree.
+:::

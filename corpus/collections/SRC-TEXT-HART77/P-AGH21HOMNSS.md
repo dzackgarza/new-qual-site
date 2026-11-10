@@ -99,3 +99,9 @@ For $\mfa=(x_0,\ldots,x_n)$, the projective zero set is empty, so the constant p
 No power of $1$ belongs to this proper ideal.
 Thus the positive-degree hypothesis cannot be dropped; in the affine argument it supplies vanishing at the cone vertex.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.1, PDF p. 2, and William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.1, PDF p. 3: both read the projective statement in the affine cone, note that a positive-degree homogeneous $f$ vanishes at the cone vertex as well, and apply the affine Nullstellensatz to the affine zero set.
+The proof above separates the two cases of the affine zero set — a nonzero point and the vertex — as a step, which is the step both published arguments take in one sentence, and it records that the vertex case is vacuous when the projective zero set is empty.
+Agree.
+:::

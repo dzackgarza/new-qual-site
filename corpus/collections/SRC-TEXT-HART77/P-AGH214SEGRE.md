@@ -112,3 +112,9 @@ Steps [](#psi-well-defined-image-in-za){.pf-ref} and [](#za-equals-image-of-psi)
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.14, PDF p. 3, and William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.14, PDF pp. 7--8: both prove that the image is $Z(\mathfrak a)$ by writing $z_{ij}=z_{ib}z_{aj}/z_{ab}$ at a point with $z_{ab}\neq0$ and reading off the two factors, Borcherds in one paragraph and Troiani through the rectangular range of indices and a longer injectivity argument for the pair of factors.
+The proof above adds the two facts the published arguments use silently: that the kernel is homogeneous, by comparing degrees $d$ and $2d$, and that it contains all the two-by-two minors $z_{ij}z_{ab}-z_{ib}z_{aj}$ with image $x_ix_ay_jy_b$, which is what makes the reconstruction a consequence of the equations rather than of a choice of chart in the source.
+Agree.
+:::

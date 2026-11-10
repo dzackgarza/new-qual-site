@@ -153,3 +153,10 @@ Step [](#image-of-psi-is-q){.pf-ref} proves (a), step [](#ruling-lines-construct
 :::
 
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.15, PDF p. 3: (a) the image of $(a_0:a_1)\times(b_0:b_1)$ satisfies $xt-zw=0$ and is all of it as in 2.14; (b) the two families are point$\times$line and line$\times$point, with the line through a fixed $(a_0:a_1)$ described as the intersection of the two hyperplanes $a_1w=a_0y$ and $a_1x=a_0z$; (c) "The closed subset $x=y$ of $Q$ is not one of these lines", with no argument.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.15, PDF p. 8, proves only (a), that the kernel of the substitution is $(z_{00}z_{11}-z_{01}z_{10})$.
+The proof above gives both rulings as explicit parametrized spans with the independence of the two spanning vectors checked, and for (c) it proves that $Q\cap Z(z-w)$, the image of the diagonal of $\PP^1\times\PP^1$, contains three points whose representatives are linearly independent and so cannot be a line, then shows the diagonal is dense but not closed in the product topology while its image is Zariski closed.
+Agree with Borcherds; (c) is the part the published argument states without proof.
+:::

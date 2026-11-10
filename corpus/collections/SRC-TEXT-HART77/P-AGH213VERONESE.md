@@ -136,3 +136,9 @@ The equality in this exercise is an equality of algebraic sets.
 When the plane curve $C$ has odd degree $e$, the constructed hypersurface pulls back to the equation $f^2$ and therefore cuts out the double divisor $2C$ scheme-theoretically.
 When $e$ is even, its pullback is $f$ and the scheme-theoretic intersection is reduced.
 :::
+
+::: {.remark title="Published solution"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.13, PDF p. 3: he writes the curve in $\PP^2$ as $Z(f)$ for homogeneous $f$, uses the square $f^2=g(x_0^2,x_1^2,x_2^2,x_0x_1,x_1x_2,x_2x_0)$, and takes a factor of $g$ to define the hypersurface; that is the same device as the proof above, which takes $f$ for even degree and $f^2$ for odd degree, and shows the lifted $F$ is itself irreducible so that $Z(F)$ is a hypersurface in Hartshorne's sense, then checks $V\cap Y=Z$ rather than containment.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.13, PDF p. 7, assumes the curve in $\PP^2$ is $Z(f)$ for an irreducible $f$ of degree $2$, so it treats only curves whose inverse image under the Veronese map is a conic, and its identity $Z(g)\cap Y=\rho_2(Z(f))$ is proved only for that case.
+Agree with Borcherds; the irreducibility of the lifted polynomial and the equality $V\cap Y=Z$ are the two points the published arguments leave at a factor and at "containing".
+:::
