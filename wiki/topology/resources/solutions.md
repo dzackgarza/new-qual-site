@@ -51,6 +51,17 @@ chapter-two items are indexed there. The Ex. 42 section explicitly says the proo
 out, leaves faithfulness as an intuition, and gives only a rank-$1$ mod-2 example, so it is **not**
 accepted as a complete published proof of that exercise.
 
+**Morten Poulsen, *Allen Hatcher: Algebraic Topology* (3 November 2006)**,
+`tmp/sources/poulsen-at-ex.pdf` (33 pages, `441762` bytes). Numbering is Hatcher's own. The set stops inside
+chapter two, so it holds no exercise from §2.3, §2.B except exercise 10, or any chapter-three or chapter-four
+section. Its chapter-two coverage is §2.1 exercises 1, 4, 9, 11, 16, 18, 29, 30; §2.2 exercises 2, 4, 7, 9,
+13, 17, 20, 21, 22, 23, 32, 36; §2.B.10; §2.C exercises 2, 8 and 9. An appendix proves that a covering map is
+open and that a covering space of a CW complex is a CW complex with the induced skeleton filtration. Two
+slips found on checking exercise 2.C.8 (printed p. 30): the homotopy inverse is given the wrong codomain, and
+the countable bound's factor, the set of vertex functions, is left unexplained. A second file formerly
+listed here under the same author, `hatcher-solutions-morten-poulsen.pdf`, was a corrupt copy of this one and
+has been deleted.
+
 **Stanford Math 215C, Spring 2009, solution sets**, linked from
 [Ralph Cohen's Math 215C page](https://math.stanford.edu/~ralph/math215c/). Cite the individual set and printed page, not an
 inferred author:

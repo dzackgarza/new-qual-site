@@ -37,6 +37,16 @@ audit:
     proposition, which Hatcher proves on pp. 265-266 by the finitely-generated-subgroup argument in
     the second variable rather than by Exercise 4. No published solution of this exercise is in the
     retained sets; recorded in COMPLAINTS.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    The card now states that Hatcher's printed proof of Proposition 3A.5(3) (pp. 265--266) is itself
+    a complete published proof of this exercise's conclusion, by the finitely generated subgroup of
+    the second variable; the direct-limit argument the exercise asks for is kept and reaches the same
+    statement. Re-read the printed proof: an element of $\ker(\varphi\otimes\mathrm{id})$ involves
+    finitely many elements of $B$, they lie in a finitely generated torsionfree hence free subgroup
+    $B_0$, and $\operatorname{Tor}(A,B_0)=0$ by the free case.
 ---
 
 ::: {.problem}
@@ -62,5 +72,5 @@ $$
 \cong \varinjlim_\alpha\operatorname{Tor}(A_\alpha,B)
 =0.
 $$
-The conclusion is the torsionfree case of Proposition 3A.5(3), whose proof on pp. 265--266 reaches it by applying the free case to a finitely generated subgroup of the *second* variable instead; the route taken here is the one the exercise asks for.
+The conclusion is exactly the torsionfree case of Proposition 3A.5(3), and Hatcher prints a complete proof of it on pp. 265--266: for a free resolution $0\to F_1\xrightarrow{\varphi}F_0\to A\to0$ and a torsionfree $B$, an element of $\ker(\varphi\otimes\id)$ involves only finitely many elements of $B$, which lie in a finitely generated torsionfree hence free subgroup $B_0$, and $\operatorname{Tor}(A,B_0)=0$ by the free case, so $\varphi\otimes\id$ is injective. That printed argument is a complete published proof of this exercise's conclusion; the direct-limit route above is the one the exercise asks for, and it reaches the same statement.
 :::

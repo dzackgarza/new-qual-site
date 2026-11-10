@@ -40,6 +40,16 @@ audit:
     $F$ — $\operatorname{Ext}(\ZZ_p,\FF_p)\cong\FF_p$ — so the first step uses the $F$-dual of the
     complex $C_*(X;F)$ of vector spaces instead, which is where the vanishing of the $\operatorname{Ext}$
     term on p. 197 really applies.
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    The coverage claim is now stated where the proof begins: the exercise is Hatcher's Corollary
+    3A.7(a) word for word and the book prints its complete proof on pp. 266--267, so the card's
+    proof is a published argument rather than an assembly. Re-read the printed proof against the
+    card; every step of the card corresponds to a printed sentence, and the two steps the card
+    derives that the print compresses ($A_n[p]=0$ from the degree-$(n+1)$ sequence, and the $F$-dual
+    form of the coefficient-field isomorphism) are expansions, not substitutions.
 ---
 
 ::: {.problem}
@@ -47,7 +57,7 @@ Show that if $\tilde{H}^n(X; \QQ)$ and $\tilde{H}^n(X; \ZZ_p)$ are zero for all 
 :::
 
 ::: {.solution}
-The exercise is Hatcher's Corollary 3A.7(a); the argument below carries out the proof printed with it on pp. 266--267.
+The exercise is Hatcher's Corollary 3A.7(a) verbatim, and the book prints a complete proof of that corollary on pp. 266--267; the argument below is that proof, with each step's reference supplied. This is the complete published argument the card relies on, not an independently assembled proof.
 
 *Step 1: field coefficients simplify.* For a field $F$,
 $$

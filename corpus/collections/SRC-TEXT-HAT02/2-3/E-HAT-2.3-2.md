@@ -85,6 +85,17 @@ audit:
     have equal induced maps on every reduced homology group, hence equal induced maps on
     product, sum and quotient. Suspension reindexes H_i(Sigma X) as H_{i-1}(X), giving the
     published A_i ≅ B_i quotient argument. Preserved Casassas's exactness and wedge steps.
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Re-read Casassas §2.1 against his text (PDF pp. 15--16 = printed pp. 7--8, with Proposition
+    2.1.2 on printed pp. 8--9). $JW_k(X)$ is defined as $\prod_{i\ge0}\widetilde H_i(X)$ modulo
+    $\bigoplus_{i\ge0}\widetilde H_i(X)$, which is Hatcher's candidate of §2.3 Exercise 2 with the
+    index range changed from $i\in\ZZ$ to $i\ge0$; the card now records that the two agree because
+    reduced homology vanishes in negative degrees. Homotopy invariance, the $A_i\cong B_i$ suspension
+    step, exactness via Proposition 2.1.2 and the $\bigvee_jS^j$ failure of the wedge axiom are all
+    printed there, so the exercise's statement and proof are both published.
 ---
 
 ::: {.problem}
@@ -101,6 +112,7 @@ $$
 Q(X)=JW_k(X)=\prod_{i\in\ZZ}\widetilde H_i(X)\big/\bigoplus_{i\in\ZZ}\widetilde H_i(X),
 \qquad \widetilde h_n(X)=Q(X).
 $$
+Casassas indexes his product over $i\ge0$ and Hatcher over $i\in\ZZ$; the two agree because reduced homology vanishes in negative degrees, $\widetilde H_i(X)=0$ for $i<0$, so the extra factors of Hatcher's product are trivial. The factor in degree zero is the same in both, both authors using reduced groups.
 
 ::: pf
 
