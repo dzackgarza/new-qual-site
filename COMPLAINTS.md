@@ -749,6 +749,23 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 
 **Repair.** A published proof of each, checked against the card, or the owner's direction to accept the cards' own derivations.
 
+### `SRC-TEXT-MUN00`: eleven net exercises of §29 have no located published solution
+
+**Object and need.** Every Munkres card is to carry a proof transcribed from a published solution, or a checked proof plus this entry listing every source searched ([#106](https://github.com/dzackgarza/new-qual-site/issues/106)). All sections with a located set are now carded and transcribed. The exception is the supplementary exercise set *Nets* at the end of §29 (printed pp. 187--188), of whose twelve exercises only the last is covered by a retained set. Those eleven cards keep the proofs they carry, each with this search recorded on it.
+
+**Observed evidence.** Searched, by text extraction, all nine Munkres files in `tmp/sources` and the extracted attachments:
+- "positron0802", *Solutions to Topology, Chapter 3* (26 pages): its exercise numbering continues past the ten exercises of §29 into the net exercises as 29.11 and stops there --- 29.11 is the product-of-a-quotient-map-with-a-locally-compact-factor lemma, which is carded and transcribed. No further net exercise appears in the set.
+- "positron0802", *Solutions to Topology, Chapter 2*: no net content (0 hits for "directed set", "net in X", "subnet").
+- Dan Whitman, *Solutions Manual*: stops at §22 and the topological-groups supplement; no net content (0 hits).
+- "shenapse", *Exercise-Munkres*: Chapter 1 only, §1--§11.
+- "9beach", *A solutions manual for Topology by James Munkres*: §1--§4 only.
+- Ana Emilia de Orellana, *Solutions --- Topology Munkres*: its contents run §13, §16--§21, §23--§28, §30--§34 and §37; 0 hits for net terminology.
+- `assets/attachments` and its `extracted/` text: the only Munkres-bearing files are course problem sets and general topology lecture notes (Auroux, *Math 131*), with 0 hits for "directed set", "net in X" or "subnet".
+
+**Conclusion.** No retained source proves any of the eleven exercises: cofinal subsets and directed sets without antisymmetry; nets in a space and subnets of convergent nets; uniqueness of limits in a Hausdorff space; accumulation points; closure points and continuity characterised by nets; coordinatewise convergence in products; compactness by subnets. **Confidence:** high for these sets. **Gaps:** a published set covering the net exercises may exist outside them; none was found.
+
+**Repair.** A published solution of each, checked against the card, or the owner's direction to accept the cards' own proofs.
+
 ### V.1.4(b), V.1.11(a) and the surface example of V.1.12 have no complete published solution
 
 **Object and need.** Three requests in `SRC-TEXT-HART77` §V.1 are proved on their cards without a published argument to check against, and are the only retained sets' treatments of Chapter V: `P-AGH514LINEONSURF` (V.1.4(b), printed p. 382, a nonsingular degree-$d$ surface through a given line, every $d\ge1$), `P-AGH5111FINITEAUT` (V.1.11(a), printed p. 383, finiteness of the numerical classes of effective divisors with $D\cdot H=d$) and `P-AGH5112NUMAMPLE` (V.1.12, printed p. 383, a very ample $D$ numerically equivalent to a non-very-ample $D'$).

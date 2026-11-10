@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    No published set for this exercise was located. The sources searched, the pages they
+    cover and the conclusion are recorded in COMPLAINTS.md under the entry for the net
+    exercises of §29; the card's own proof is kept. The statement was read against Munkres,
+    Topology (2000), §29 supplementary exercises on nets, printed pp. 187-188.
 ---
 
 ::: {.exercise}
