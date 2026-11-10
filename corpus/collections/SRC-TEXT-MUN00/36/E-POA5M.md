@@ -10,6 +10,25 @@ classification:
   - Manifolds
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: dbFin, "Section 36: Problem 2 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-36-imbeddings-of-manifolds/problem-2-solution/
+    (read 2026-11-10; kept at
+    tmp/sources/dbfin/section-36-imbeddings-of-manifolds/problem-2-solution.txt), checked against
+    Munkres, Topology (2000), Section 36 Exercise 2, printed p. 227, Theorem 36.1 and Theorem 26.7.
+    Its route is the card's in substance -- a finite subcover by chartable open sets, functions
+    supported inside them, and the map whose coordinates are the support functions and their
+    products with the chart maps; the source reaches the support functions through the partition of
+    unity of Theorem 36.1, and the card builds them by Urysohn's lemma from the double shrinking
+    x in V_i inside cl(V_i) inside W_i inside cl(W_i) inside U_i. What was corrected: the source's
+    display "F = (g_1, ..., g_n, f_1 . g_1, ..., f_n . g_n): X -> R^{n + k_1 + ... + k_n}" omits that
+    each product f_i . g_i takes values in R^{k_i} and that f_i is only defined on U_i, so that the
+    product must be read as zero off W_i; the card defines F_i piecewise and checks continuity at
+    the boundary of U_i.
 ---
 
 ::: {.exercise}

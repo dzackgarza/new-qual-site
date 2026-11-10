@@ -10,6 +10,25 @@ classification:
   - Topological Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Supplementary Exercises: Review of the
+    Basics, Exercise 4, printed p. 229, with Theorem 30.2, Theorem 31.2, Exercise 30.9 (closed
+    subspaces of Lindelof spaces), Example 5 of §30 (the open subspace I x (0,1) of the compact
+    ordered square is not Lindelof), Exercise 32.1 and Example 2 of §32 (the open subspace
+    S_Omega x S_bar_Omega of the compact S_bar_Omega^2 is not normal). No published solution was
+    located (search recorded on E-PWXIV and in the COMPLAINTS.md entry). All 51 entries of the table
+    were re-derived: the hereditary ones are Hausdorff, regular, completely regular, first and second
+    countable, locally metrizable and metrizable; compactness, limit point compactness, Lindelofness
+    and normality pass to closed subspaces and fail for open ones (normality by Example 2 of §32);
+    local compact Hausdorffness passes to open and to closed subspaces but not to arbitrary ones;
+    local connectedness and local path connectedness pass to open subspaces only; separability passes
+    to open subspaces because D cap U is dense in U, and fails even for closed subspaces, the
+    anti-diagonal of the Sorgenfrey plane being an uncountable closed discrete subspace of a separable
+    space; connectedness and path connectedness fail in all three columns.
 ---
 
 ::: {.exercise}

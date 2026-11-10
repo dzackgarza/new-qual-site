@@ -10,6 +10,37 @@ classification:
   - Topological Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Supplementary Exercises: Review of the
+    Basics, Exercise 1, printed pp. 228-229. No published solution was located: dbFin's chapter-4
+    supplementary page (https://dbfin.com/topology/munkres/chapter-4/supplementary-exercises-review-of-the-basics/,
+    read 2026-11-10) carries the title and no solution, and none of its problem subpages exists;
+    "Doug's World" covers the numbered exercises of §30-§36 only, Moller's files are S31, S33, S34,
+    S35 and S38, and Orellana's contents run §13-§34 and §37. This exercise is in the COMPLAINTS.md
+    entry. What the check confirmed against the book: S_Omega is limit point compact and not compact
+    (Example 2 of §28, printed p. 181), not first- or second-countable, not separable, locally compact
+    Hausdorff and hereditarily normal (Theorem 32.4), and locally metrizable because each initial
+    segment [0, alpha+1) is countable; S_bar_Omega is compact (Exercise 29.7) hence Lindelof, and not
+    first countable, separable, second countable or metrizable (Example 3 of §28); the product
+    S_Omega x S_bar_Omega is countably compact and not normal (Example 2 of §32) and not first
+    countable; the ordered square is a compact linear continuum, first countable (Exercise 21.4),
+    connected and locally connected, not path connected and not separable, hence not metrizable,
+    Lindelof or locally metrizable; R_l is Lindelof, separable, first countable, completely normal and
+    neither second countable nor locally compact nor locally metrizable; R_l^2 is separable, first
+    countable and not normal, not Lindelof; R^omega in the product topology has all the metric
+    properties and none of compactness, limit point compactness or local compactness; in the uniform
+    topology it is metrizable and locally path connected, balls of radius below 1 being convex,
+    while it is disconnected -- the bounded and the unbounded sequences are disjoint open sets --
+    and neither separable nor Lindelof (Example 2 of §30); in the box topology it is completely regular (Exercise 33.9) and nothing
+    else among the countability properties, with box normality left undecided by the book (Exercise
+    32.5); R^I for I = [0,1] is connected, has a countable dense subset (Exercise 30.16), is not
+    first countable, and is not normal by Exercise 32.9; and R_K is connected but not path connected
+    (§27), Hausdorff and second countable, and not regular (Example 31.1). The table's "?" in the box
+    column is the book's own open question, so it is not a gap in the proof.
 ---
 
 ::: {.exercise}

@@ -14,6 +14,27 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Supplementary Exercises: Review of the
+    Basics, Exercise 7, printed p. 229, and its instruction to answer for properties (18) paracompact
+    and (19) topologically complete, with Theorem 41.1 (paracompactness of metric spaces), Theorem
+    42.1, Theorem 41.5 (a countably compact paracompact Hausdorff space is compact), Theorem 32.3,
+    Exercise 30.9 and the remark attached to Exercise 32.5 (the box-product normality question is
+    open). No published solution was located (search recorded on E-PWXIV and in the COMPLAINTS.md
+    entry). The two tables were re-derived: compact Hausdorff and metrizable spaces are paracompact,
+    the non-normal spaces (c), (f) and (j) and the non-regular R_K are not, S_Omega is countably
+    compact and not compact and so is not paracompact, and R_l is regular Lindelof hence paracompact;
+    topologically complete means admitting a complete metric, so it forces metrizability, which
+    excludes the ordinal spaces, the ordered square, R_l, R_l^2, the box topology on R^omega, R^[0,1]
+    and R_K, while the product and uniform topologies on R^omega admit complete metrics. In the
+    second table the closed-subspace and open-subspace columns, the finite and countable product
+    columns, the negative arbitrary-product and continuous-image entries and the two "every" rows are
+    the ones recorded, with Q as the arbitrary subspace of a completely metrizable space that is not
+    topologically complete and the open subspace S_Omega of the compact S_bar_Omega as the witness
+    for paracompactness failing for open subspaces.
 ---
 
 ::: {.exercise}

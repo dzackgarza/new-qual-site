@@ -14,6 +14,23 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solution: dbFin, "Section 36: Problem 4 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-36-imbeddings-of-manifolds/problem-4-solution/
+    (read 2026-11-10; kept at
+    tmp/sources/dbfin/section-36-imbeddings-of-manifolds/problem-4-solution.txt), checked against
+    Munkres, Topology (2000), Section 36 Exercise 4, printed p. 227, and Theorem 36.1, whose first step
+    the exercise asks to isolate. The construction is the card's: at stage k take the closed set
+    A_k = X - (V_1 cup ... cup V_{k-1} cup U_{k+1} cup U_{k+2} cup ...), which lies in U_k by the
+    induction hypothesis, and apply normality; then point-finiteness gives, for x with largest index m
+    with x in U_m, that x lies in V_1 cup ... cup V_m. What was corrected: the source's exposition
+    writes its inclusions as "X - cup_{j != i} V_j <= V_i <= cl(V_i) <= U_i" and never states A_k,
+    and its explanation of the role of point-finiteness is interrupted mid-sentence ("To construct a
+    counterexample we would need a space such that it is a) normal, b) there is"); the card gives the
+    closed set and the covering argument in full.
 ---
 
 ::: {.exercise}

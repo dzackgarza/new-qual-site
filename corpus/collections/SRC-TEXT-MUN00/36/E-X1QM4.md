@@ -10,6 +10,24 @@ classification:
   - Manifolds
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Transcribed from the located published solutions: "Doug's World", "Munkres - Topology - Chapter
+    4 Solutions" (30 August 2017), Problem 36.3 with Proposition 8, printed pp. 13-14
+    (tmp/sources/munkres-solutions-dougsworld-ch4.pdf), and dbFin, "Section 36: Problem 3 Solution",
+    https://dbfin.com/topology/munkres/chapter-4/section-36-imbeddings-of-manifolds/problem-3-solution/
+    (read 2026-11-10; kept at
+    tmp/sources/dbfin/section-36-imbeddings-of-manifolds/problem-3-solution.txt); checked against
+    Munkres, Topology (2000), Section 36 Exercise 3, printed p. 227, Exercise 30.4 and Theorem 30.2.
+    The card's proof is the direct one: each point has an open neighbourhood that is an open subspace
+    of a Euclidean open set, hence second countable, and compactness gives finitely many of them whose
+    countable bases together form a countable basis. The sources reach the same conclusion differently
+    -- dbFin through Exercise 2 and second countability of a subspace of a Euclidean space, Doug's
+    World by showing X is a finite union of closed metrizable subspaces, hence metrizable, and then
+    citing Exercise 30.4; no correction to the mathematics was needed.
 ---
 
 ::: {.exercise}

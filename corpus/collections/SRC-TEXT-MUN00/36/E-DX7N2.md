@@ -10,6 +10,23 @@ classification:
   - Continuous Functions
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Supplementary Exercises: Review of the
+    Basics, Exercise 6, printed p. 229, with Theorem 23.5, Theorem 26.5, Exercise 28.3 and Exercise
+    30.11. No published solution was located (search recorded on E-PWXIV and in the COMPLAINTS.md
+    entry). The six preserved properties are connected, path connected, compact, limit point compact,
+    Lindelof and separable, each by the direct argument on the card; the eleven that are not preserved
+    are excluded by quotient maps and by the identity map on a set carrying two topologies, the card's
+    two witnesses being the discrete topology on the underlying set of the sine curve mapping onto the
+    sine curve (local connectedness and local path connectedness) and a discrete set mapping onto the
+    rationals (local compact Hausdorffness). What was added on checking: the counterexample for the
+    countability axioms and for metrizability is the quotient of the disjoint union of countably many
+    circles onto the Hawaiian earring, which is second countable at the source and not first countable
+    at the common point.
 ---
 
 ::: {.exercise}

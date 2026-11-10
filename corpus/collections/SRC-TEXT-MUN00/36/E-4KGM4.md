@@ -14,6 +14,21 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-10
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Supplementary Exercises: Review of the
+    Basics, Exercise 3, printed p. 229, with Theorem 26.2, Theorem 32.3 and Theorem 33.1. No
+    published solution was located (search recorded on E-PWXIV and in the COMPLAINTS.md entry). The
+    eight guaranteed properties are compact, limit point compact, locally compact Hausdorff,
+    Hausdorff, regular, completely regular, normal and Lindelof, which are the book's Theorem 32.3
+    (compact Hausdorff is normal), Theorem 33.1 applied to that normality, and Theorem 26.2 for the
+    Lindelof condition; the nine that are not guaranteed are excluded by the Cantor set, which is
+    compact Hausdorff with no connected neighbourhood, for connected, path connected, locally
+    connected and locally path connected, and by the ordinal interval [0, omega_1], which is compact
+    Hausdorff and not first countable at omega_1, not separable, and hence neither second countable
+    nor metrizable, and not locally metrizable at omega_1, for the remaining five.
 ---
 
 ::: {.exercise}
