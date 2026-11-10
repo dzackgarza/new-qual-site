@@ -482,7 +482,7 @@ Step [](#dim-op-equals-dimx-closed-point){.pf-ref} proves part (a), step [](#dim
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.20, PDF p. 31--32, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim computes dimensions through Noether normalization and going up, observes that the local rings at all closed points have the same dimension, and for (f) first reduces to algebraic base extensions and then to algebraically closed $k$ and $k'$ by comparing $X_{k'}$ with the two closures.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.20, PDF pp. 31--32, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim computes dimensions through Noether normalization and going up, observes that the local rings at all closed points have the same dimension, and for (f) first reduces to algebraic base extensions and then to algebraically closed $k$ and $k'$ by comparing $X_{k'}$ with the two closures.
 The proof above uses the dimension formula $\dim A_{\mathfrak p}+\operatorname{trdeg}_k\kappa(\mathfrak p)=\operatorname{trdeg}_kK$ for a finitely generated algebra over a field, derives (b) from the affine case together with a chain argument, and for (f) tensors a Noether normalization of an affine chart with $k'$ and reads the dimension of each component off the normalization.
 Agree.
 :::

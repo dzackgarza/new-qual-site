@@ -386,7 +386,7 @@ Steps [](#noetherian-scheme-space-is-zariski){.pf-ref}, [](#minimal-closed-subse
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.17, PDF p. 28--29, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim takes (a) from 2.9, (b) as $C=\overline{\{p\}}$ for any $p\in C$, (c) from uniqueness of generic points, (d) because a proper closed subset cannot contain the generic point, (e) by identifying the order with inclusion of closures, and (f) by lifting a descending chain of closed subsets of $t(X)$ to one of $X$.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.17, PDF pp. 28--29, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim takes (a) from 2.9, (b) as $C=\overline{\{p\}}$ for any $p\in C$, (c) from uniqueness of generic points, (d) because a proper closed subset cannot contain the generic point, (e) by identifying the order with inclusion of closures, and (f) by lifting a descending chain of closed subsets of $t(X)$ to one of $X$.
 The proof above adds the two points that Kim's (f) does not spell out, that the subsets $t(Y)$ for closed $Y$ are the closed sets of a topology on $t(X)$ (using that $t$ preserves finite unions), and that a nonempty irreducible closed subset of $t(X)$ has a unique generic point; it also proves both directions of the criterion for $\alpha$ to be a homeomorphism.
 Agree.
 :::

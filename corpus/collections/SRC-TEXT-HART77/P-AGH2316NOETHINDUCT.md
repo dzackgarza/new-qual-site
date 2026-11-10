@@ -117,7 +117,7 @@ Step [](#p-holds-for-x){.pf-ref} is the desired conclusion.
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.16, PDF p. 27--28, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim argues by contradiction: a closed subset failing the property has a proper closed subset failing it, and iterating produces an infinite strictly descending chain.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.16, PDF pp. 27--28, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim argues by contradiction: a closed subset failing the property has a proper closed subset failing it, and iterating produces an infinite strictly descending chain.
 The proof above records first that every nonempty family of closed subsets of a noetherian space has a minimal member, then takes a minimal counterexample and applies the induction hypothesis to it.
 Agree.
 :::

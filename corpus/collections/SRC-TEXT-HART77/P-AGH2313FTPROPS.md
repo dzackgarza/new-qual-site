@@ -344,7 +344,7 @@ Steps [](#closed-immersion-finite-type){.pf-ref}, [](#qc-open-immersion-finite-t
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.13, PDF p. 25--26, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim gives one line per part: $\Spec A/\mathfrak a$ for a closed immersion, a finite union of $\Spec A_{f_i}$ for a quasi-compact open immersion, generators $b_i\otimes1$ for base change, the chain $A\to B\to C$ for (f), and Hilbert's basis theorem for (g).
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.13, PDF pp. 25--26, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim gives one line per part: $\Spec A/\mathfrak a$ for a closed immersion, a finite union of $\Spec A_{f_i}$ for a quasi-compact open immersion, generators $b_i\otimes1$ for base change, the chain $A\to B\to C$ for (f), and Hilbert's basis theorem for (g).
 The proof above keeps those arguments and supplies what the one-line versions leave to the reader: quasi-compactness of a composition and of a base change, and the affine-chart reduction in (f) at a point $x$ together with an affine neighbourhood of $f(x)$ inside the same chart of $Z$.
 Agree.
 :::

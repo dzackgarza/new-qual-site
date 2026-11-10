@@ -149,7 +149,7 @@ Step [](#two-formulations-equivalent){.pf-ref} is the required equivalence.
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.2, PDF p. 19--20, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim's step is that $f^{-1}(\Spec B_i[b^{-1}])$ is the union of the quasi-compact opens $\Spec A_{ij}[b^{-1}]$, after which an arbitrary affine $V$ is written as a finite union of basic opens of the $V_i$, each with quasi-compact preimage.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.2, PDF pp. 19--20, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim's step is that $f^{-1}(\Spec B_i[b^{-1}])$ is the union of the quasi-compact opens $\Spec A_{ij}[b^{-1}]$, after which an arbitrary affine $V$ is written as a finite union of basic opens of the $V_i$, each with quasi-compact preimage.
 The proof above makes the same two moves with a finite affine cover of $f^{-1}(V_i)$ and its distinguished restrictions inside $f^{-1}(D(g_y))$.
 Agree.
 :::
