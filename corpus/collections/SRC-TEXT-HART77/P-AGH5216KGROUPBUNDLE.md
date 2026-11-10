@@ -272,5 +272,5 @@ step [](#s6){.pf-ref} proves that it fails for projective curves.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.16, printed p. 273 (the Grothendieck group of bundles on a ruled surface).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.16, PDF p. 273: he identifies the sheaves with finitely generated projective modules over the affine ring, uses that a Dedekind domain is a "$?$-category" so that equal Grothendieck classes give $A\oplus D\cong B\oplus D$ (his Rotman 7.77), and then that stably isomorphic projective modules over a Dedekind domain are isomorphic (Rotman 11.118). Step [](#s3){.pf-ref} recovers the determinant from the Grothendieck class as he does, and step [](#s4){.pf-ref} is Steinitz's theorem $P\cong A^{r-1}\oplus\det P$, which replaces his two citations by the classical statement; step [](#s6){.pf-ref} is the projective counterexample, which he does not give. Matches.
 :::

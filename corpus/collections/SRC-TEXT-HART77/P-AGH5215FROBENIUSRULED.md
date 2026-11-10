@@ -56,7 +56,7 @@ Let $C$ be the plane curve $x^3 y+y^3 z+z^3 x=0$ over a field $k$ of characteris
 $$
 0 \rightarrow \OO_C \rightarrow \mathcal{E} \rightarrow \mathcal{L}(P) \rightarrow 0,
 $$
-and let $X$ be the corresponding ruled surface over $C$. Show that $X$ contains an integral curve $Y \equiv 3 C_0-3 f$ with normalization $C$, such that $\pi: Y \rightarrow C$ is purely inseparable.
+and let $X$ be the corresponding ruled surface over $C$. Show that $X$ contains a nonsingular curve $Y \equiv 3 C_0-3 f$, such that $\pi: Y \rightarrow C$ is purely inseparable.
 
     Show that the divisor $D=2 C_0$ satisfies the hypotheses of (2.21.b), but is not ample.
 :::
@@ -77,6 +77,25 @@ $$
 C=V(F)\subseteq\PP^2
 $$
 is nonsingular; hence it has genus $3$.
+
+The curve the exercise calls nonsingular cannot be. For any integral curve
+$Y$ on the nonsingular surface $X$ in the class $3C_0-3f$, adjunction gives
+$$
+p_a(Y)=1+\frac12\qty(Y^2+Y\cdot K_X),
+$$
+and with $C_0^2=-e=1$ and $K_X\equiv-2C_0+(2g-2-e)f=-2C_0+5f$ this is
+$$
+1+\frac12\qty(-9+15)=4 .
+$$
+On the other hand $Y\cdot f=3$, so $\pi\restrict_Y$ has degree $3$, and a
+purely inseparable morphism of degree $3=p$ embeds the function fields as
+$K(C)\subset K(Y)\subset K(C)^{1/3}$ with both degrees equal to $3$; hence
+$K(Y)=K(C)^{1/3}$ and $Y$ is birational to the Frobenius twist $C^{(3)}$ of
+$C$, which is the same plane quartic and has genus $3$. So the normalization
+of $Y$ has genus $3$ while $p_a(Y)=4$: such a $Y$ has a singular point with
+$\delta=1$ and is not nonsingular. What the construction below gives is an
+integral $Y\equiv3C_0-3f$ whose normalization is $C$, and that is what steps
+[](#s9){.pf-ref} and [](#s10){.pf-ref} prove.
 
 ::: pf
 
@@ -619,5 +638,5 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), st
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.15, printed p. 271 (the Frobenius-ruled surface and the characteristic-$p$ pathology).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.15, PDF pp. 271--273. For (a) he identifies $H^1(C,\OO_C)$ with $H^2(\PP^2,\OO(-4))$, carries the Frobenius through the thickening by $F^3$ so that the map is $\alpha\mapsto F^2\alpha^3$, and multiplies $F^2$ by each basis element $(x^2yz)^{-1},(xy^2z)^{-1},(xyz^2)^{-1}$, checking that every monomial acquires a nonnegative exponent; steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} are that computation. For (b) he works with $f^2\xi$ in $H^1(C,\OO_C(-1))$ and the explicit polynomial $f^2$; steps [](#s4){.pf-ref} and [](#s5){.pf-ref} instead show the source and target are both three-dimensional and the composite to $H^1(C,\OO_C)$ is zero. For (c) he writes "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2", a source not retained, and concludes that $Y$ is one curve on the surface up to isomorphism; the construction of $Y$ from the splitting of $f^*\mathcal E$ is steps [](#s6){.pf-ref} to [](#s10){.pf-ref} here, and the defect in the printed word "nonsingular" is worked out at the head of the solution. His treatment of $D=2C_0$ is the computation of step [](#s12){.pf-ref}.
 :::

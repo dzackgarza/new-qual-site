@@ -52,7 +52,7 @@ Replacing $>$ by $\geqslant$ defines **semistable**.
 
 (b) If $\mathcal{E}$ has rank 2 and is normalized, then $\mathcal{E}$ is stable (respectively, semistable) if and only if $\deg \mathcal{E}>0$ (respectively, $\geqslant 0$).
 
-(c) Show that the indecomposable locally free sheaves $\mathcal{E}$ of rank 2 that are not semistable are classified, up to tensoring with an invertible sheaf, by giving
+(c) Show that the indecomposable locally free sheaves $\mathcal{E}$ of rank 2 that are not semistable are classified, up to isomorphism, by giving
 
    (1) an integer $0<e \leqslant 2 g-2$,
 
@@ -66,6 +66,14 @@ For a nonzero locally free sheaf $\mathcal F$ on $C$, write
 $$
 \mu(\mathcal F)=\frac{\deg\mathcal F}{\rank\mathcal F}.
 $$
+
+Read as printed, the clause "up to isomorphism" in part (c) cannot hold, and what steps [](#s9){.pf-ref} to [](#s13){.pf-ref} classify is the same data up to tensoring by an invertible sheaf. Let $\mathcal E_0$ be normalized, not semistable, with data $(e,\mathcal L,\xi)$, and let $\mathcal A$ be a line bundle of degree $m\ne0$. Tensoring by $\mathcal A$ shifts every slope by $m$, so the maximal-degree line subbundle of $\mathcal E_0\tensor\mathcal A$ is $\OO_C\tensor\mathcal A$, and the invariant data read off from it are
+$$
+\det(\mathcal E_0\tensor\mathcal A)\tensor(\OO_C\tensor\mathcal A)^{-2}
+\cong\det\mathcal E_0,\qquad
+(\mathcal E_0\tensor\mathcal A)\tensor(\OO_C\tensor\mathcal A)^{-1}\cong\mathcal E_0,
+$$
+so $e$, $\mathcal L$ and $\xi$ are unchanged, while $\deg(\mathcal E_0\tensor\mathcal A)=2m-e\ne-e=\deg\mathcal E_0$. Thus two non-isomorphic bundles carry the same triple, and the classification is up to tensor equivalence.
 
 ::: pf
 
@@ -564,5 +572,5 @@ Step [](#s2){.pf-ref} proves part (a), steps [](#s3){.pf-ref}, [](#s4){.pf-ref},
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.8, printed p. 265 (a decomposable bundle is never stable, part (a)).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.8, PDF pp. 265--266. Part (a) he proves through "$\mathcal E$ stable $\Rightarrow$ every nonzero morphism $\mathcal E\to\mathcal E$ is an isomorphism", which fails for the endomorphism $\id\oplus0$ of a decomposable bundle. Part (b) he proves in both directions: a (semi)stable bundle of (negative) non-positive degree has no sections, so normalized forces degree $\ge0$, and conversely a line subbundle of degree $>\frac12\deg\mathcal E$ would give a section of $\mathcal E\tensor\mathcal F^\vee$ of negative degree. Part (c) he derives from a Harder--Narasimhan filtration, citing Potier for its uniqueness, concludes "Since the filtration was unique we have this up to isomorphism", and does not address the tensor twist: his $\mathcal L$ is the quotient $\mathcal E/F_1$ rather than the normalized determinant, and the subbundle $F_1$ is not among the data, so his last inference does not follow. The defect in the printed statement is worked out at the head of the solution above.
 :::

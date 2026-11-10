@@ -219,5 +219,5 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.1, printed p. 261 (uniqueness of the base section of a ruled surface).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.1, PDF p. 261: "Suppose that $C_0\times\PP^1\cong X\cong C_1\times\PP^1$. But two curves which are birational are isomorphic (since any isomorphism of open sets extends to an isomorphism of the whole curve by the valuative criterions)." The second sentence is the uniqueness of the smooth projective model, which the argument needs; the step before it, that $C_0$ and $C_1$ are birational, is asserted and not proved, and it is the content of the exercise. Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} supply it: a rational map $\PP^1\dashrightarrow B$ to a nonrational curve is constant, so $p'\circ\Phi$ factors through the base and a birational map of the products gives inverse birational maps of the bases; step [](#s4){.pf-ref} is the rational case, which his argument does not separate. Matches in conclusion.
 :::

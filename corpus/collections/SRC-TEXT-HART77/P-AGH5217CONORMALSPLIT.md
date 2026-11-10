@@ -432,5 +432,5 @@ Step [](#s5){.pf-ref} proves part (a), and step [](#s6){.pf-ref} proves part (b)
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.17, printed p. 273, marked "(starred)": the conormal bundle splits.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.17, PDF p. 273: the starred exercise is entered and the entry reads only "starred", so there is no argument to check. The card's computation is checked against the book's own bracket: $E_n=\varphi_n^*(\mathcal I/\mathcal I^2)$ sits in $0\to\OO(-2n-2)\to E_n\to\OO(-2n)\to0$ with class $(n-1)\eta$, which is nonzero for $n=2$ and gives $l=m=-5$ for the twisted cubic, and for $n=3$ gives $l=m=-7$ when $\operatorname{char}k\ne2$ and $\OO(-6)\oplus\OO(-8)$ when $\operatorname{char}k=2$, exactly the answer printed for part (b).
 :::

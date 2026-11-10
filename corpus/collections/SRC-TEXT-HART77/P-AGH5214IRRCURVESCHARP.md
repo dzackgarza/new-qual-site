@@ -513,5 +513,5 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, []
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.14, printed p. 269 (irreducible curves over a nonperfect field).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.14, PDF pp. 269--271: the same proof as here. He normalizes $Y$, composes with $\pi$, writes the degree as a product of a separable degree $\alpha$ and a power of $p$, applies Riemann--Hurwitz to the separable part, uses $p_a(Y)\ge g(\widetilde Y)$, and expands by adjunction into $a e(1-a)+2b(a-1)\ge(\alpha-a)(2g-2)$; then $\alpha=a$ for $2\le a\le p-1$ and $\alpha\ge1$ for $a\ge p$ give the two bounds, with $a=1$ handled separately. Steps [](#s3){.pf-ref} to [](#s6){.pf-ref} are that argument, with the expansion written as $(a-1)(2b-ae)\ge-2(a-s)(g-1)$. His part (b) is the three-case intersection count of steps [](#s7){.pf-ref} to [](#s10){.pf-ref}. Matches.
 :::

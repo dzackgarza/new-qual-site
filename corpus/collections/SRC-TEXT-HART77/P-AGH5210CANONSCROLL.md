@@ -408,5 +408,5 @@ genus-$g$ curve carrying a $g^1_3$.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.10, printed p. 267 (the canonical scroll, and the lift of a hyperplane section).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.10, PDF p. 267: the whole of his solution is "See example 2.10 in Kollar's Complex Algebraic Geometry", and Kollár's book is not among the retained files, so there is no argument to check. Steps [](#s1){.pf-ref} to [](#s6){.pf-ref} here run the construction: $D=H-K_X\sim3C_0+(n+e+2)f$ with $n\ge2e-2$ is base-point-free, its general member is nonsingular and connected, $K_Y=\OO_Y(H)$ by adjunction, $2g-2=H\cdot D=2d+2$, and $h^0(\OO_X(H))=d+2$ so the embedding of $Y$ is the complete canonical one. Steps [](#s7){.pf-ref} and [](#s8){.pf-ref} finish the conclusion $g\ge4$ and the $g^1_3$.
 :::

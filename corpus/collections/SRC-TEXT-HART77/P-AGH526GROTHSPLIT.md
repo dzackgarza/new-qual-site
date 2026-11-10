@@ -225,5 +225,5 @@ $\PP^1$ is a direct sum of invertible sheaves.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.6, printed p. 264 (Grothendieck's splitting theorem for vector bundles on $\PP^1$).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.6, PDF pp. 264--265: after Potier, he takes $i$ largest with $H^0(\mathcal E(-i))\neq0$, splits off $\OO(i)$ using $0\to\OO(i)\to\mathcal E\to\mathcal F\to0$ with $\mathcal F$ locally free, splits $\mathcal F$ by induction, has $j\le i$ for every summand because otherwise $\mathcal E(-i-1)$ would have a section, and splits the sequence because $H^1(X,\mathcal H om(\mathcal F,\OO(i)))=0$. That is steps [](#s1){.pf-ref} to [](#s5){.pf-ref}, with the saturation of the section's image and the Ext computation written out and Hartshorne III.5.1 in place of his Weibel 10.1 and III Ex. 6.1. Matches.
 :::

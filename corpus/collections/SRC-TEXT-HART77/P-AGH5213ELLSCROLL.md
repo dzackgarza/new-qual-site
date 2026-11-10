@@ -309,5 +309,9 @@ $n\ge e+3$, and step [](#s8){.pf-ref} gives the stated degree-five example.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.13, printed p. 269 (elliptic scrolls).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.13, PDF p. 269: he takes $D=C_0+nf$, cites (2.20b) and (2.21b) for ampleness, computes $D\cdot f=1$ and $D^2=2n-e$, and then needs $h^0$. His count is
+$$
+h^0(\OO_X(\mathcal L(D)))=h^0(\OO_C(n)\oplus\OO_C(n-e))=2n-1=d-1,
+$$
+which drops $e$: on an elliptic curve $h^0(\OO_C(n))=n$ and $h^0(\OO_C(n-e))=n-e$, so the sum is $2n-e=d$ and the scroll lies in $\PP^{d-1}$, as the exercise states. Step [](#s6){.pf-ref} gives $2n-e$ and step [](#s7){.pf-ref} the resulting $\PP^{d-1}$. Otherwise his plan is the one followed here: existence of the surface for each $e\ge-1$ in step [](#s1){.pf-ref}, very ampleness from V.2.12(b) in step [](#s3){.pf-ref}, degree $D^2$ in step [](#s5){.pf-ref}.
 :::

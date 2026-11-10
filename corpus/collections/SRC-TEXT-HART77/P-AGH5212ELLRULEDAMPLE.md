@@ -477,5 +477,5 @@ Step [](#s6){.pf-ref} proves part (a), and steps [](#s7){.pf-ref}, [](#s8){.pf-r
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.12, printed p. 268 (ampleness on an elliptic ruled surface).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.12, PDF pp. 268--269: part (a) is the single line "This is Fuentes, Pedreira Prop 1.3" and part (b) the single line "Fuentes, Predeira prop 1.4", so neither is argued in a retained file. The card proves both: step [](#s2){.pf-ref} covers $e\ge0$ from V.2.11(a) with $\deg\mathfrak b\ge2$ and $\deg(\mathfrak b+\mathfrak e)\ge2$ base-point-free on an elliptic curve, step [](#s5){.pf-ref} covers the exceptional value $e=-1$ through the stability of a normalized bundle of degree $1$ and $H^1(C,\mathcal E(\mathfrak b)(-P))=0$, steps [](#s7){.pf-ref} to [](#s9){.pf-ref} give very ampleness for $e\ge0$ and $e=-1$ respectively, and step [](#s10){.pf-ref} is the necessity, that $\OO_C(\mathfrak b+\mathfrak e)$ of degree $\deg\mathfrak b-e$ is very ample on an elliptic curve and so has degree at least $3$.
 :::

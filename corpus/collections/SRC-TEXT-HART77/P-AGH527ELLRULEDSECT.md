@@ -396,5 +396,5 @@ members are linearly equivalent.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.7, printed p. 265 (sections of an elliptic ruled surface).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.7, PDF p. 265: from (2.11.6) he has $e=-1$, hence $\mathcal E$ indecomposable of degree $1$ by (2.12a), and he uses the classification of indecomposable rank-two bundles of degree one on an elliptic curve, whose isomorphism classes correspond to the points of $C$ (his "2.16"), to get one section per point; two of them are linearly inequivalent because $\mathcal L(P)\cong\mathcal L(Q)$ would force $P=Q$ on an elliptic curve. The card reaches the same conclusion without the classification: step [](#s2){.pf-ref} computes $\dim\Hom(\mathcal E,\OO_C(P))=1$ for every $P$ by Riemann--Roch and normalizedness, step [](#s5){.pf-ref} gives $D^2=2\deg\mathcal L-\deg\mathcal E$ for the section belonging to a quotient $\mathcal L$, and step [](#s6){.pf-ref} shows $D^2=1$ forces $\mathcal L\cong\OO_C(P)$. Matches.
 :::

@@ -405,5 +405,5 @@ part (b).
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.4, printed p. 262 (self-intersection of a section, part (a)).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.4, PDF pp. 262--263. For (a), on PDF p. 262 he computes $D^2$ for $D\sim C_0+(d-e)f$ by adjunction with $K\equiv-2C_0+(2g-2-e)f$, and specializes to $C\times\PP^1$ with $e=0$, getting $D^2=2d$; the intermediate line $-2C_0^2=-2e$ silently uses $C_0^2=e$, whereas (2.9) gives $C_0^2=-e$, so his displayed $D^2=2d+e$ is wrong for $e\neq0$; on $C\times\PP^1$, where $e=0$, the conclusion $D^2=2d$ is right. For (b), on PDF p. 263 he argues that a hyperelliptic curve has a $g^1_2$ and so a degree-two map, that the nonhyperelliptic genus-three curve has a $g^1_3$ obtained by projecting its degree-four plane model from a point, and that $r=1$ is impossible because a degree-one map to $\PP^1$ would be an isomorphism with different genera. Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} replace the adjunction count by $D^2=\deg u^*T_{\PP^1}=2\deg u$, which needs no sign convention; steps [](#s9){.pf-ref} and [](#s11){.pf-ref} prove the two nonexistence statements he asserts. Matches.
 :::

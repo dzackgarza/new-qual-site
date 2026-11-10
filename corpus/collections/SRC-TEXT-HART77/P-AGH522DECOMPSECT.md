@@ -166,5 +166,5 @@ Step [](#s2){.pf-ref} proves the forward implication, and step [](#s3){.pf-ref} 
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.2, printed p. 261 (decomposability and sections, from (2.12)).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.2, PDF p. 261: the whole of his solution to the exercise is the citation "Marumaye, Remark 1.20"; Maruyama's notes are not among the retained files, so there is no argument to check. The two directions are steps [](#s2){.pf-ref} and [](#s3){.pf-ref} here: two sections of $\PP(\mathcal E)$ are disjoint exactly when their kernel line bundles differ in every fibre, which step [](#s1){.pf-ref} reads off from Hartshorne's quotient convention, and distinct one-dimensional subspaces of a two-dimensional space span it.
 :::

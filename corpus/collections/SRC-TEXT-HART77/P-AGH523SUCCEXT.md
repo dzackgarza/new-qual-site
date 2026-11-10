@@ -287,5 +287,5 @@ the stated example on $\PP^2$.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.2.3, printed p. 262 (successive extensions and their effect on the invariant $e$).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.3, PDF p. 262: part (a) is again only a citation, "Miyanishi, Algebraic Geometry Lemma 12.1", and Miyanishi's book is not among the retained files. The adjacent note 5.2.4 on the same page does carry a Chern-class computation, but for the tangent bundle: from $0\to\OO\to\OO(1)^{\oplus3}\to T_{\PP^2}\to0$ he gets $c(T)=(1+d_1H)(1+d_2H)=1+3H+3H^2$, so $d_1+d_2=3$ and $d_1d_2=3$, which has no integral solution since $9-12=-3$. The exercise asks for the sheaf of differentials, and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} carry out the same computation for it, $c(\Omega)=(1-H)^3=1-3H+3H^2$, i.e. $a+b=-3$ and $ab=3$. The general-dimension statement (b) is not in his notes.
 :::
