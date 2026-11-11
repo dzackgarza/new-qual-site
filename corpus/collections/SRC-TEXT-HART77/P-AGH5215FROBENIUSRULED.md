@@ -43,6 +43,30 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: Hartshorne V.2.15(c) asks for a nonsingular curve Y = 3C_0-3f; adjunction gives p_a(Y)=4 while its normalization C has genus 3. The statement now asks for an integral curve of that class with normalization C.
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read the printed exercise at Hartshorne, Algebraic Geometry (1977), V.2,
+    exercise 2.15, printed page 385. Rechecked the adjunction count recorded in
+    the erratum: with e = -1 from deg det E = deg P = 1 and K = -2C_0+5f on a
+    ruled surface over a genus-three curve, Y = 3C_0-3f has Y^2 = -9 and
+    Y.K = 15, so p_a(Y) = 4, while the normalization is C of genus 3, so no
+    nonsingular Y of that class exists and the printed adjective cannot hold.
+    Checked the Cech computation of s3: H^2(P^2,O(-4)) has the three monomials
+    x^{-2}y^{-1}z^{-1}, x^{-1}y^{-2}z^{-1}, x^{-1}y^{-1}z^{-2} as a basis, and
+    all six monomials of F^2 = (x^3y+y^3z+z^3x)^2 give a nonnegative exponent
+    after multiplication by the cube of the first. Checked the dimension count
+    of s4 and s5, the normalization of E in s6 including the case
+    M = O_C(-P), the splitting of s7, and the class computation of s9 which
+    leaves (m,a,b) = (1,3,-3) or (3,1,-1) and excludes the second because a
+    section of class C_0-f would have b = -1 < 0. Searched outside the twelve
+    retained sets: NTU 2020 has no entry for Exercise 15 of section 2; Yang
+    Pi-Yeh, Hartshorne Solutions, printed pp. 105-106
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), has the (a) computation and
+    garbled (b) and (c). Egbert, PDF pp. 271-273, cites Miyanishi for (c). Not
+    checked: whether Y as constructed is singular with delta = 1; the card
+    asserts it from p_a(Y) - p_a(C) = 1 and does not compute the singularity.
 ---
 
 ::: {.problem}
@@ -639,4 +663,8 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), st
 
 ::: {.remark title="Published solution"}
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.15, PDF pp. 271--273. For (a) he identifies $H^1(C,\OO_C)$ with $H^2(\PP^2,\OO(-4))$, carries the Frobenius through the thickening by $F^3$ so that the map is $\alpha\mapsto F^2\alpha^3$, and multiplies $F^2$ by each basis element $(x^2yz)^{-1},(xy^2z)^{-1},(xyz^2)^{-1}$, checking that every monomial acquires a nonnegative exponent; steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} are that computation. For (b) he works with $f^2\xi$ in $H^1(C,\OO_C(-1))$ and the explicit polynomial $f^2$; steps [](#s4){.pf-ref} and [](#s5){.pf-ref} instead show the source and target are both three-dimensional and the composite to $H^1(C,\OO_C)$ is zero. For (c) he writes "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2", a source not retained, and concludes that $Y$ is one curve on the surface up to isomorphism; the construction of $Y$ from the splitting of $f^*\mathcal E$ is steps [](#s6){.pf-ref} to [](#s10){.pf-ref} here, and the defect in the printed word "nonsingular" is worked out at the head of the solution. His treatment of $D=2C_0$ is the computation of step [](#s12){.pf-ref}.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.15, printed pp. 105--106, reproduces the computation of (a): the thickening by $f^3$, the basis $x^{-2}y^{-1}z^{-1}$, $x^{-1}y^{-2}z^{-1}$, $x^{-1}y^{-1}z^{-2}$ of $H^2(\PP^2,\OO(-4))$, and the check that $f^2$ times each cube has a nonnegative exponent. Its (b) is garbled: it writes "$\xi$ has the form $(ax+by+c)^{-1}\sum a_{ij}x^iy^j$ on $U_z$, hence $(ax+by+c)^{-1}\sum a_{ij}x^iy^j$ has nonnegative exponent for some suitable $a_{ij}$", which is not an argument that some nonzero $\xi$ is killed. Its (c) asserts "$\pi$ is not separable with inseparable degree $3$, hence purely inseparable ... $Y$ is a set-theoretic section lying on the surface", and then computes $C_0\cdot D=6-6=0$ using the class $3C_0-3f$ that it never derives for $Y$. Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} replace its (b) by the dimensions $h^1(\OO_C(-P))=h^1(\OO_C)=3$, the kernel of $H^1(\OO_C(-3P))\to H^1(\OO_C)$ being two-dimensional, and the vanishing of Frobenius on $H^1(\OO_C)$; steps [](#s7){.pf-ref} to [](#s10){.pf-ref} derive the class of $Y$ from $3=ma$ and $C_0\cdot Y=0$.
+
+Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, has no entry for Exercise 15 of §2.
 :::
