@@ -119,5 +119,74 @@ noncomputable def torOneIsoTensorSplice :
 
 end TensorSplice
 
+section DimensionShift
+
+variable {A P : ModuleCat ℤ} (f : P ⟶ A) [Epi f] [Projective P] (B : ModuleCat ℤ)
+
+/-- **The dictionary**: the underlying linear map of a morphism tensored by `B` on the left is
+`lTensor`. -/
+theorem hom_lTensor {X Y : ModuleCat ℤ} (g : X ⟶ Y) :
+    ((tensorLeft B).map g).hom = LinearMap.lTensor ↥B g.hom := rfl
+
+/-- The tensored first differential of the splice is the tensor of the kernel cover followed by
+the tensor of the kernel inclusion. -/
+theorem tensorSplice_d_1_0 :
+    (tensorSplice f B).d 1 0 =
+      (tensorLeft B).map (Projective.π (Limits.kernel f)) ≫
+        (tensorLeft B).map (Limits.kernel.ι f) := by
+  show (tensorLeft B).map (Projective.d f) = _
+  show (tensorLeft B).map (Projective.π (Limits.kernel f) ≫ Limits.kernel.ι f) = _
+  rw [Functor.map_comp]
+
+end DimensionShift
+
+section ThirdIso
+
+variable {A P : ModuleCat ℤ} (f : P ⟶ A) [Epi f] [Projective P] (B : ModuleCat ℤ)
+
+/-- The surjectivity input: tensoring the projective cover of the kernel stays surjective. -/
+theorem kerCov_lTensor_surjective :
+    Function.Surjective (LinearMap.lTensor ↥B (Projective.π (Limits.kernel f)).hom) :=
+  LinearMap.lTensor_surjective ↥B
+    ((ModuleCat.epi_iff_surjective (Projective.π (Limits.kernel f))).mp inferInstance)
+
+/-- The kernel of the first differential of the splice is the kernel of the kernel cover, because
+the kernel inclusion is injective. -/
+theorem ker_dOne_eq_kerCov :
+    LinearMap.ker ((HomologicalComplex.sc' (presComplex f) 2 1 0).g).hom =
+      LinearMap.ker (Projective.π (Limits.kernel f)).hom := by
+  have hinj : Function.Injective (Limits.kernel.ι f).hom :=
+    (ModuleCat.mono_iff_injective (Limits.kernel.ι f)).mp inferInstance
+  show LinearMap.ker ((Limits.kernel.ι f).hom.comp (Projective.π (Limits.kernel f)).hom) = _
+  rw [LinearMap.ker_comp,
+    show LinearMap.ker (Limits.kernel.ι f).hom = ⊥ from LinearMap.ker_eq_bot.mpr hinj,
+    Submodule.comap_bot]
+
+/-- The untensored second differential and the kernel cover form an exact pair. -/
+theorem exact_dTwo_kerCov :
+    Function.Exact ((HomologicalComplex.sc' (presComplex f) 2 1 0).f).hom
+      (Projective.π (Limits.kernel f)).hom :=
+  LinearMap.exact_iff.mpr (by
+    have h1 := (HomologicalComplex.exactAt_iff' (presComplex f) 2 1 0 (by simp) (by simp)).mp
+      (presComplex_exactAt_succ f 0)
+    have h2 := h1.moduleCat_range_eq_ker
+    exact (ker_dOne_eq_kerCov f).symm.trans h2.symm)
+
+/-- **The tensored exactness, in dictionary form.** -/
+theorem exact_tensored :
+    Function.Exact (((tensorLeft B).map ((presComplex f).d 2 1)).hom)
+      (((tensorLeft B).map (Projective.π (Limits.kernel f))).hom) := by
+  have hsurj : Function.Surjective (Projective.π (Limits.kernel f)).hom :=
+    (ModuleCat.epi_iff_surjective (Projective.π (Limits.kernel f))).mp inferInstance
+  exact lTensor_exact ↥B (exact_dTwo_kerCov f) hsurj
+
+/-- **The boundaries of the tensored splice are the kernel of the tensored kernel cover.** -/
+theorem range_dTwoT_eq :
+    LinearMap.range (((tensorSplice f B).sc' 2 1 0).f.hom) =
+      LinearMap.ker (((tensorLeft B).map (Projective.π (Limits.kernel f))).hom) :=
+  (LinearMap.exact_iff.mp (exact_tensored f B)).symm
+
+end ThirdIso
+
 end TorArbitrary
 
