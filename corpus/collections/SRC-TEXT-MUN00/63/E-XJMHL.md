@@ -20,6 +20,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Munkres §63 Exercise 3, printed p. 393. No complete published solution located; the searches are listed in
+    the COMPLAINTS.md entry for §61--§73 of SRC-TEXT-MUN00. Part (b) is now routed through Theorem 63.5
+    (printed p. 392) applied to the two closed connected pieces of the closed sine curve, which is shorter than
+    the previous argument and is the route the book's own Theorem 63.5 exists for; the previous paragraph
+    asserted the arc-attachment count and is replaced. Part (a) follows the exercise's hint and Theorem 63.3
+    (printed p. 390); its step bounding the auxiliary parameter c is the one place the card argues from
+    compactness rather than from a theorem, and it is checked there line by line. Checked against Theorem 63.2
+    (printed p. 389) for the arcs used.
 ---
 
 ::: {.exercise}
@@ -62,11 +74,7 @@ Let $h:A\to C$ be the given homeomorphism and put
 $$
 D=h(\overline S),\qquad Q=h(P).
 $$
-By part (a), $D$ is closed and connected and $S^2-D$ has one component. The arc-attachment result proved earlier in this section says that adjoining an arc whose intersection with a closed connected set consists exactly of the two endpoints increases the number of complementary components by one. Hence
-$$
-S^2-C=S^2-(D\cup Q)
-$$
-has exactly two components; call them $U$ and $V$.
+The set $D=h(\overline S)$ is closed and connected and, by part (a), does not separate $S^2$; the set $Q=h(P)$ is an arc in $S^2$, hence closed and connected, and by Theorem 63.2 (printed p. 389) it does not separate $S^2$. Their intersection is $D\cap Q=h(\overline S\cap P)=h(\{(0,-1),(1,\sin 1)\})$, two points. Theorem 63.5 (printed p. 392) then says that $D\cup Q=C$ separates $S^2$ into precisely two components; call them $U$ and $V$.
 
 It remains to prove that $C$ is the boundary of both. Let
 $$

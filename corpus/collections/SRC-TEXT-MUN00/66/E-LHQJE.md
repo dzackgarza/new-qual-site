@@ -14,6 +14,15 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Munkres §66 Exercise 1, printed p. 406. No complete published solution located; the searches are listed in
+    the COMPLAINTS.md entry for §61--§73 of SRC-TEXT-MUN00. Checked against the definition of the winding number
+    on printed p. 403 and the degree of a circle map in Exercise 2 of §57 (printed p. 358), which is the
+    definition the exercise compares with; the comparison is made through the lifting correspondence of Theorem
+    54.3 (printed p. 343) and the standard covering map p: R -> S^1 of Theorem 53.1 (printed p. 335).
 ---
 
 ::: {.exercise}

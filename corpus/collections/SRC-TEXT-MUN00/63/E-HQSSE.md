@@ -20,6 +20,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Munkres §63 Exercise 1, printed p. 393. No complete published solution located; the searches are listed in
+    the COMPLAINTS.md entry for §61--§73 of SRC-TEXT-MUN00, which also records what is wrong with the proof now
+    on the card. The card as it stands invokes the Jordan-Schoenflies theorem to conclude that the closures of
+    the two discarded components are disjoint closed disks; that theorem is not in this book and is not proved
+    on the card, so the proof is not closed against the book. What is checked here: Theorem 63.4 (printed
+    p. 390) supplies the two components of S^2 - C_i with boundary C_i, and Theorem 63.3 (printed p. 390) is the
+    tool the exercise's hint points at. The repair is open work, not a completed check.
 ---
 
 ::: {.exercise}
