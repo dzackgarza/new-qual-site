@@ -31,6 +31,28 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read the printed exercise at Hartshorne, Algebraic Geometry (1977), V.2,
+    exercise 2.1, printed page 383 (PDF page 398 of the extraction), and the
+    chapter's definition of birationally ruled in Remark 2.2.1, printed page
+    370. Checked the card's steps: a rational map from a nonsingular curve
+    extends to a morphism (I.6.8) and a birational map of nonsingular projective
+    curves is an isomorphism (I.6.12), both printed page 45; Luroth is what makes
+    a rational map P^1 to a nonrational curve constant. Searched outside the
+    twelve retained sets and read two further published treatments. Algebraic
+    Geometry II, National Taiwan University, 2020 Spring, Chapter V homework,
+    Exercise 1 of section 2, PDF p. 5 (tmp/sources/ntu-ag2-chapter5.pdf): the
+    argument is the card's, except that its last case reads "if C = P^1 then
+    f-tilde is a constant, which means f is a constant, a contradiction", and
+    f-tilde is dominant by construction; step s4 states the unirationality that
+    case needs. Yang Pi-Yeh, Hartshorne Solutions, exercise 5.2.1, printed p.
+    102 (tmp/sources/lfwin-hartshorne-solutions.pdf), passes from K(X) = L(x) to
+    "the unique curve C with K(C) = L", which assumes that L is determined by
+    K(X), the content of the exercise. Not checked: the argument was not
+    re-examined over a non-algebraically-closed base field.
 ---
 
 ::: {.problem}
@@ -219,5 +241,9 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.1, PDF p. 261: "Suppose that $C_0\times\PP^1\cong X\cong C_1\times\PP^1$. But two curves which are birational are isomorphic (since any isomorphism of open sets extends to an isomorphism of the whole curve by the valuative criterions)." The second sentence is the uniqueness of the smooth projective model, which the argument needs; the step before it, that $C_0$ and $C_1$ are birational, is asserted and not proved, and it is the content of the exercise. Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} supply it: a rational map $\PP^1\dashrightarrow B$ to a nonrational curve is constant, so $p'\circ\Phi$ factors through the base and a birational map of the products gives inverse birational maps of the bases; step [](#s4){.pf-ref} is the rational case, which his argument does not separate. Matches in conclusion.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 1 of §2 (solution by Shuang-Yen Lee), PDF p. 5, argues as steps [](#s2){.pf-ref} to [](#s4){.pf-ref}: assume $C'\not\cong\PP^1$, restrict the birational map to $\{x\}\times\PP^1$ and extend to a morphism $\PP^1\to C'$, which is constant because $C'\not\cong\PP^1$; the constants assemble into a morphism $C\to C'$; then "$C\not\cong\PP^1$, similarly we have a map $\widetilde g:C'\to C$", and with $f,g$ inverse so are $\widetilde f,\widetilde g$. Its last case reads "if $C=\PP^1$, then $\widetilde f$ is a constant, which means $f$ is a constant, a contradiction", which is not what the construction gives: $\widetilde f$ is dominant, being induced by a dominant map. What the case needs is that a dominant rational map $\PP^1\dashrightarrow C'$ makes $C'$ unirational, hence isomorphic to $\PP^1$; that is step [](#s4){.pf-ref}.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.1, printed p. 102, writes "$K(X)=L\otimes_kk(x)=L(x)$; then by corollary 6.12 in chapter I there exists a unique smooth projective curve $C$ such that $K(C)=L$, i.e. $C$ is unique one such that $X$ is birationally equivalent to $C\times\PP^1$". The uniqueness of the smooth projective model with a *given* function field is I.6.12, but the identity "$K(C)=L$" is not determined by $K(X)$ alone: that $L$ and $L'$ with $L(x)\cong L'(x)$ satisfy $L\cong L'$ is exactly what the exercise asks, so the argument assumes its conclusion.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.1, PDF p. 261: "Suppose that $C_0\times\PP^1\cong X\cong C_1\times\PP^1$. But two curves which are birational are isomorphic." That is the last sentence of step [](#s5){.pf-ref}; the birationality of $C_0$ and $C_1$ is asserted and not proved, and it is the content of the exercise.
 :::
