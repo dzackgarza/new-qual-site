@@ -28,9 +28,14 @@ audit:
     the COMPLAINTS.md entry for §61--§73 of SRC-TEXT-MUN00. Part (b) is now routed through Theorem 63.5
     (printed p. 392) applied to the two closed connected pieces of the closed sine curve, which is shorter than
     the previous argument and is the route the book's own Theorem 63.5 exists for; the previous paragraph
-    asserted the arc-attachment count and is replaced. Part (a) follows the exercise's hint and Theorem 63.3
-    (printed p. 390); its step bounding the auxiliary parameter c is the one place the card argues from
-    compactness rather than from a theorem, and it is checked there line by line. Checked against Theorem 63.2
+    asserted the arc-attachment count and is replaced. Part (a) follows the exercise's hint. Its step bounding the auxiliary
+    parameter c is now proved from Theorem 26.9 (the finite intersection property characterisation of
+    compactness, printed p. 169) applied to the nested closed sets P(I) cap D_c inside the compact space P(I),
+    with D_c closed by Theorem 26.5 and Theorem 26.3, and with the intersection of the whole family computed as
+    C_0 from the injectivity of the homeomorphism h; the existence of the path and of its path-component is
+    Theorem 63.2 with Theorem 25.5. One step is still taken from the hint rather than proved on the card: that
+    attaching the arc A_c to D_c along one endpoint does not disconnect a component of the complement, whose
+    prototype for two arcs meeting in a point is the second proof of Theorem 63.2. Checked against Theorem 63.2
     (printed p. 389) for the arcs used.
 ---
 
@@ -58,13 +63,21 @@ C_0=h(\{0\}\times[-1,1]),\qquad
 D_c=h\bigl(\overline S\cap\{(x,y):x\le c\}\bigr)
 \quad(0<c<1).
 $$
-The set $C_0$ is an arc, so $S^2-C_0$ is path connected. Given $a,b\in S^2-D$, choose a path $P$ from $a$ to $b$ in $S^2-C_0$. For sufficiently small $c$, the path also misses $D_c$. Indeed, otherwise points of $P\cap D_c$ for a sequence $c\to0$ would have a subsequence converging to a point of $P\cap C_0$, a contradiction.
+The set $C_0$ is an arc, being $h$ applied to the interval $\{0\}\times[-1,1]$, so by Theorem 63.2 (printed p. 389) it does not separate $S^2$; the set $S^2-C_0$ is open in $S^2$ and hence locally path connected, so by Theorem 25.5 (printed p. 161) its components and path components coincide, and $S^2-C_0$ is path connected. Given $a,b\in S^2-D$, choose a path $P:I\to S^2-C_0$ from $a$ to $b$.
+
+For some $c_0>0$ the path also misses $D_{c_0}$. Each $D_c$ is the image under the continuous map $h$ of the compact set $\overline S\cap\{x\le c\}$, hence compact (Theorem 26.5, printed p. 166) and closed in the Hausdorff space $S^2$ (Theorem 26.3, printed p. 165). The family is nested, $D_c\subseteq D_{c'}$ whenever $c\le c'$, and
+
+$$
+\bigcap_{c>0}D_c=h\Bigl(\bigcap_{c>0}\bigl(\overline S\cap\{x\le c\}\bigr)\Bigr)=h(\{0\}\times[-1,1])=C_0,
+$$
+
+the middle equality because $h$ is injective. Suppose that $P(I)\cap D_c\ne\emptyset$ for every $c>0$; then the family of closed subsets $P(I)\cap D_c$ of the compact space $P(I)$ has the finite intersection property, since any finite subcollection has intersection $P(I)\cap D_{c_{\min}}$, nonempty by assumption. Theorem 26.9 (printed p. 169) then gives a point of $\bigcap_{c>0}(P(I)\cap D_c)=P(I)\cap C_0$, contradicting $P(I)\subseteq S^2-C_0$. So $P(I)\cap D_{c_0}=\emptyset$ for some $c_0>0$.
 
 The tail
 $$
 A_c=h\bigl(\{(x,\sin(1/x)):c\le x\le1\}\bigr)
 $$
-is an arc meeting $D_c$ only at its endpoint with $x=c$, and $D=D_c\cup A_c$. Attaching such an arc does not split a component of the complement, by the arc-attachment argument of §63.2(a). Thus $a$ and $b$, which lie in the same component of $S^2-D_c$, remain in the same component of $S^2-D$. As the latter complement is open in $S^2$, this component is path connected. Hence $D$ does not separate $S^2$.
+is an arc meeting $D_c$ only at its endpoint with $x=c$, and $D=D_c\cup A_c$ with $D_c\cap A_c$ a single point. Attaching an arc to a closed set along one of its endpoints does not disconnect a component of the complement: this is the attachment step of the exercise's hint, and the same step for two arcs meeting in a point is carried out in the second proof of Theorem 63.2 (printed pp. 389--390). With it, $a$ and $b$, which lie in the same component of $S^2-D_c$, remain in the same component of $S^2-D$. As $S^2-D$ is open in $S^2$ and hence locally path connected, that component is path connected (Theorem 25.5, printed p. 161). Hence $D$ does not separate $S^2$.
 
 **(b)** Let $A$ denote the standard closed topologist's sine curve. It is obtained from $\overline S$ by adjoining the broken-line arc $P$ from $(0,-1)$ to $(1,\sin1)$, chosen so that
 $$
