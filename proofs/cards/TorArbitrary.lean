@@ -190,3 +190,17 @@ end ThirdIso
 
 end TorArbitrary
 
+#print axioms TorArbitrary.presComplex_d_1_0
+#print axioms TorArbitrary.presComplex_exactAt_succ
+#print axioms TorArbitrary.presPi_cond
+#print axioms TorArbitrary.presPi_f_zero
+#print axioms TorArbitrary.presResolution
+#print axioms TorArbitrary.torOneIsoTensorSplice
+#print axioms TorArbitrary.hom_lTensor
+#print axioms TorArbitrary.tensorSplice_d_1_0
+#print axioms TorArbitrary.kerCov_lTensor_surjective
+#print axioms TorArbitrary.ker_dOne_eq_kerCov
+#print axioms TorArbitrary.exact_dTwo_kerCov
+#print axioms TorArbitrary.exact_tensored
+#print axioms TorArbitrary.range_dTwoT_eq
+
