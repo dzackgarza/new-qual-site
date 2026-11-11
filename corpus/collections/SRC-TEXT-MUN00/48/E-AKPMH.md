@@ -14,6 +14,19 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §48 Exercise 6 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book: the irrationals
+    are the intersection of the countably many open dense sets R - {q_n}, and the criterion of Lemma 48.1 is
+    applied in R, which is a Baire space by Theorem 48.2, to the countable family consisting of the dense open
+    sets W_k of the subspace and the sets R - {q_n}. What was corrected: the card asserted that an open set of R
+    whose trace on the irrationals is dense there must be dense in R, which is true but is a step of the
+    argument, and it is now proved: an open interval missed by W_k would give a nonempty relatively open piece of
+    the irrationals disjoint from V_k. The final step, that a set dense in R and contained in the irrationals is
+    dense in the irrationals, is the definition of the subspace topology.
 ---
 
 ::: {.exercise}
@@ -62,7 +75,7 @@ Since each $V_k$ is open in $\irrationals$, there exists an open set $W_k \subse
 :::
 
 ::: pf-step
-Because $V_k$ is dense in $\irrationals$ and $\irrationals$ is dense in $\RR$, the open set $W_k$ is dense in $\RR$ for each $k \ge 1$.
+The open set $W_k$ is dense in $\RR$: if it missed a nonempty open interval $I$, then $I\cap\irrationals$ would be a nonempty relatively open subset of $\irrationals$ disjoint from $V_k=W_k\cap\irrationals$, contradicting density of $V_k$ in $\irrationals$ (which is dense in $\RR$).
 :::
 
 ::: pf-step

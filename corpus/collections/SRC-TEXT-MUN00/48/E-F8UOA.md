@@ -14,6 +14,18 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §48 Exercise 7 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book, following the
+    exercise's two hints: the continuity set of an arbitrary f: R -> R is C = intersection of U_n, where U_n is
+    the union of the open sets whose image has diameter less than 1/n, with both inclusions proved from the
+    epsilon-delta definition of continuity; and a countable dense D cannot be a G_delta, since if D = intersection
+    of open W_n then each W_n and each R - {d_k} is dense open, and Theorem 48.2 applied to the complete metric
+    space R makes their countable intersection dense, while it equals D intersected with its complement. The
+    conclusion combines the two parts. Nothing needed correction.
 ---
 
 ::: {.exercise}

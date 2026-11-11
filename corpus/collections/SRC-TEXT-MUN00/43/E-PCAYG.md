@@ -24,6 +24,22 @@ audit:
   by: gpt-6.1-sol
   date: 2026-10-31
   note: 'The printed fixed-point claim needs X nonempty; the empty metric space is complete and has no fixed point.'
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §43 Exercise 5 was located in any set searched; the search
+    is recorded in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00, and the proof on the card is
+    checked line by line against the book. Checked against Munkres, Topology (2000), §43 Exercise 5,
+    printed p. 270, with the definition of a contraction stated in the exercise, the definition of
+    completeness in §43, the triangle inequality, and the convergence of the geometric series in R
+    (Theorem 43.2 for the completeness of R). The steps are the standard ones: d(x_{n+1},x_n) <=
+    alpha^n d(x_1,x_0) by induction on the contraction inequality, the triangle inequality bounds
+    d(x_m,x_n) for m > n by c alpha^n/(1-alpha), completeness gives the limit x, continuity of the
+    Lipschitz map f gives f(x) = x, and uniqueness follows from d(x,y) <= alpha d(x,y) with alpha < 1.
+    The hypothesis "nonempty" retained in the statement is the repair recorded in the source-corrected
+    event above: without it the theorem is false at the empty metric space, which is complete and
+    carries the unique map, and that map has no fixed point.
 ---
 
 ::: {.exercise}

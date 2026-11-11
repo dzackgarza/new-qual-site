@@ -14,6 +14,22 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution was located; the sets searched are listed in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00.
+    Checked line by line against Munkres, Topology (2000), supplementary Exercise 6 of §50, printed pp. 317-318,
+    with Example 3 of §31 for the pattern of the non-normality argument (a closed discrete subspace of size
+    continuum with a countable set dense in a way that separates its subsets) and Theorem 18.3 for continuity on
+    the two closed halves of the plane. Points checked: the three types of basic sets do give a basis, the
+    intersections of two type (iii) sets with the same index c being again of type (iii) and those with distinct
+    indices meeting only in A; the map f_c is a bijection whose inverse is continuous on each half and which
+    carries a product neighbourhood of a point with x = 0 onto a type (iii) set; A cup B_c is open, so X is
+    2-euclidean; the Hausdorff property at two points of distinct sheets reduces to the inequality
+    c_1 + b_1 x < c_2 + a_2 x for small x > 0; and the non-normality is the cardinality argument from the
+    closed discrete set L, each of whose points has a neighbourhood meeting A in a nonempty open set and hence
+    meeting the countable set D of points with rational coordinates. Nothing needed correction.
 ---
 
 ::: {.exercise}

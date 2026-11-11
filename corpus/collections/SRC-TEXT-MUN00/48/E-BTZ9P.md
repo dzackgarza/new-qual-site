@@ -14,6 +14,18 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §48 Exercise 8 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book: the sets
+    A_N(eps) are closed and their union is R because a convergent sequence is Cauchy; U(eps) is dense because in
+    the complete space closure of an interval the closed sets A_N cap closure V cover, so one has interior in
+    that closure by Theorem 48.2, and a nonempty open subset of a closure meets the interval itself; at a point
+    of the intersection of the U(1/k) the three-term estimate with f_N is the argument of Theorem 48.5; and the
+    set C is uncountable because otherwise the dense open sets U(1/k) together with the complements of the
+    points of C would have empty intersection, contradicting Theorem 48.2. Nothing needed correction.
 ---
 
 ::: {.exercise}

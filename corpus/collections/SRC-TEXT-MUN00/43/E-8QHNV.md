@@ -15,6 +15,26 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Transcribed from the located published solution: "Tze Heng", *Munkres' Topology: Self-study Notes
+    and Exercises Attempts*, "Chapter 7", "Exercises Attempts", item under "Exercise after §43" numbered
+    2 (URL https://blog.ttheng.com/docs/mathematics/munkres-topology-self-study/chapt-7/exercises/, read
+    2026-11-11; a web page has no printed page, so it is cited by URL and date read). Checked against
+    Munkres, Topology (2000), §43 Exercise 2, printed p. 270, with the Sequence Lemma (Lemma 21.2), the
+    definition of uniform continuity and the fact that a uniformly continuous map takes Cauchy sequences
+    to Cauchy sequences. The blog's argument is the one on the card: the extension is defined by
+    g(a) = lim f(a_n) along sequences a_n -> a in A, well defined because two such sequences have
+    d_X(a_n, b_n) -> 0, completeness of Y supplies the limits, uniform continuity of g follows with the
+    factor three bookkeeping on delta/3, and uniqueness because two continuous maps into a Hausdorff
+    space that agree on a dense subspace agree. What was corrected: the blog closes the uniform
+    continuity with "taking limits over n we have d_Y(g(x), g(y)) < eps", which needs the limit to be
+    taken after the delta/3 comparison of d_X(x_n,y_n) is made for all large n; the card writes the
+    three-term triangle inequalities explicitly in both X and Y. The card's earlier dangling step
+    references, to labels that no step carried, are replaced by the prose sentence that closes the
+    solution.
 ---
 
 ::: {.exercise}
@@ -167,5 +187,5 @@ Any two continuous functions on $\overline{A}$ that agree on the dense subset $A
 
 :::
 
-    Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} give existence, uniform continuity, and uniqueness of the extension $g$.
+Steps above give existence of the extension $g$, its uniform continuity, and its uniqueness among continuous extensions. For uniqueness: $Y$ is a metric space, hence Hausdorff, so the diagonal $\Delta$ is closed in $Y \times Y$ (Exercise 17.13); the set on which two continuous maps $g, h: \overline{A} \to Y$ agree is $(g \times h)^{-1}(\Delta)$, closed by the closed-set formulation of continuity (Theorem 18.1), and it contains the dense subset $A$, so it is all of $\overline{A}$.
 :::

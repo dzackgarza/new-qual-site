@@ -14,6 +14,18 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §46 Exercise 7 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against Theorem 46.10 (the compact-open topology
+    is admissible for locally compact Hausdorff Y) and the definition of the compact-open subbasis in §46. The
+    proof is the exercise's hint, made explicit: since g^{-1}(U) is an open set containing the compact set
+    f(C), and Y is locally compact Hausdorff (hence regular), each point of f(C) has an open neighbourhood with
+    compact closure inside g^{-1}(U), finitely many of which cover f(C); their union V has compact closure in
+    g^{-1}(U), so S(C,V) x S(closure V, U) is a neighbourhood of (f,g) mapped into S(C,U) by composition.
+    Nothing needed correction.
 ---
 
 ::: {.exercise}

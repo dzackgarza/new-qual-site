@@ -14,6 +14,29 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Parts (a) and (c) are transcribed from the located published solution: "Solutions to exercises for
+    Mathematics 205A" (University of California, Riverside, Fall 2014), Part 3, section "III.2: Complete
+    metric spaces", answers to Munkres §43 Exercise 6(a) and 6(c) on the set's own printed p. 5 (in
+    tmp/sources/munkres-solutions-ucr-math205-gentop.pdf, PDF p. 46; the file names no author, so the
+    course and the file are the attribution). Part (a) is the set's: a Cauchy sequence of a closed
+    subspace is Cauchy in the complete space and its limit lies in the closed subspace. Part (c) is the
+    set's strategy from the book's hint: imbed U homeomorphically as the graph of phi(x) = 1/d(x, X - U)
+    in X x R, which is complete, and show the graph closed by separating the three cases t < 0, t = 0 and
+    t > 0 for a point (x,t) of its closure with x on the boundary of U; the card instead proves the graph
+    closed by the single observation that d(x_k, F) -> 0 would force phi(x_k) -> infinity, which is the
+    same three cases in one stroke. Parts (b) and (d) are the card's own, checked against the book: (b)
+    with the metric sum 2^{-n} d-bar_n on the product, which induces the product topology by Theorem 20.5,
+    coordinates of a Cauchy sequence being Cauchy and the product convergence following; (d) with the
+    diagonal imbedding of A into the product of the open sets U_n, whose image is closed because it is the
+    intersection of the closed conditions u_n = u_{n+1}, the space X being Hausdorff. Checked against
+    Munkres, Topology (2000), §43 Exercise 6, printed p. 270, with Theorem 20.5, Theorem 43.5, Theorem
+    43.2 and Exercise 17.13 (X Hausdorff iff the diagonal is closed), and the conclusion that the
+    irrationals are topologically complete from the expression of the irrationals as a countable
+    intersection of open sets.
 ---
 
 ::: {.exercise}

@@ -14,6 +14,21 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §47 Exercise 3 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against Theorem 47.1 (the general Ascoli
+    theorem as the book states it, printed p. 290), Theorem 45.4 (the classical version), Theorem 46.7 (compact
+    convergence equals uniform convergence on a compact space) and Theorem 27.3 plus Theorem 26.3. The argument
+    is: on a compact space the two topologies agree and the space of functions is metrizable, hence Hausdorff;
+    in R^n a set has compact closure iff it is bounded; so pointwise boundedness of F is pointwise relative
+    compactness of the closures F_a, and part (a) of Theorem 47.1 puts F inside a compact subspace, which is
+    closed in the Hausdorff function space, so the closure of F is compact; conversely if the closure of F is
+    compact then F is contained in a compact subspace and part (b) of Theorem 47.1, whose hypothesis of local
+    compactness holds for the compact Hausdorff X, gives equicontinuity and compact closures of the F_a. Nothing
+    needed correction.
 ---
 
 ::: {.exercise}

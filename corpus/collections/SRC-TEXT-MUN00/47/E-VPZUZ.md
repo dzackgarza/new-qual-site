@@ -11,6 +11,19 @@ classification:
   - Function Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §47 Exercise 5 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the definitions of
+    pointwise convergence (§46, Theorem 46.1) and compact convergence (§46, Theorem 46.2). Continuity of the
+    limit: at x, equicontinuity gives a neighbourhood U on which every f_n moves each point by less than
+    eps/3, and passing to the limit in n gives the same bound for f, so f is continuous at x. Uniform
+    convergence on a compact set: the Lebesgue-number-free finite subcover of the equicontinuity
+    neighbourhoods, the three-term triangle inequality, and finiteness of the cover to choose N. Nothing needed
+    correction.
 ---
 
 ::: {.exercise}

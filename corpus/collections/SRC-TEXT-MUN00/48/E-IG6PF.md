@@ -10,6 +10,20 @@ classification:
   - Baire Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §48 Exercise 12 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book: in the product
+    topology the standard nested-basic-open construction works because a basic open set restricts finitely many
+    coordinates, each coordinate sequence of closed intervals is nested and eventually constant, and the point
+    assembled coordinatewise lies in every closure, hence in every G_n; in the box topology the same
+    construction shrinks every coordinate with diameter below 1/n, so each coordinate intersection is a single
+    point and the point lies in every closure; in the uniform topology R^J is complete in the uniform metric by
+    Theorem 43.5 and so Baire by Theorem 48.2, which is the exercise's point that the box and product topologies
+    need a different argument. Nothing needed correction.
 ---
 
 ::: {.exercise}

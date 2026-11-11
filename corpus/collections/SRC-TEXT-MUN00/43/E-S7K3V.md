@@ -20,6 +20,24 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Transcribed from the located published solution: "Solutions to exercises for Mathematics 205A"
+    (University of California, Riverside, Fall 2014), Part 3, the section "III.2: Complete metric
+    spaces", answers to Munkres §43, on the set's own printed pp. 4-5 (in
+    tmp/sources/munkres-solutions-ucr-math205-gentop.pdf, PDF pp. 45-46; the file names no author, so the
+    course and the file are the attribution). Checked against Munkres, Topology (2000), §43 Exercise 1,
+    printed p. 270, with the definition of completeness and Theorem 28.2 (a subspace of a metric space is
+    compact iff it is sequentially compact). Part (a) is the set's argument: choose N so that the tail
+    from x_N lies in the ball B(x_N, eps), whose closure is compact, take a convergent subsequence of the
+    tail, and use the Cauchy condition to show the whole sequence converges to that limit. Part (b) is the
+    card's own example, (0,1) with the usual metric, where for each x the ball of radius r < min{x,1-x}
+    has closure [x-r,x+r] inside X and hence compact, while the sequence 1/(n+1) is Cauchy with no limit
+    in X; the set's example, the open region {xy < 1} of R^2, which is open, has the same local property
+    and is not complete because it is not closed in R^2, is recorded here and not used, the card's being
+    shorter for the same point.
 ---
 
 ::: {.exercise}

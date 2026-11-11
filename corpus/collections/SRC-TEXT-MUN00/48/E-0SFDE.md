@@ -14,6 +14,23 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    The located published solution is "Solutions to exercises for Mathematics 205A" (University of California,
+    Riverside, Fall 2014), Part 3, section "III.3: Implications of completeness", answer to Munkres §48
+    Exercise 2 on the set's own printed pp. 6-7 (in tmp/sources/munkres-solutions-ucr-math205-gentop.pdf, PDF
+    pp. 47-48). Its argument is not cited as the proof: it takes a Q-basis of R, the Q-subspace W spanned by
+    all basis vectors but 1, and the countable family of cosets c + W, and then states that each coset "has a
+    nonempty interior" and argues that it does not, so its conclusion contradicts its own claim; what the
+    argument actually shows is that each coset meets Q in exactly one point and therefore has empty interior,
+    and the cosets are not closed, being dense, so the family is a counterexample. The card keeps its own
+    counterexample instead, which is shorter and complete: R is the union of the irrationals and the countably
+    many rational singletons, each has empty interior, and the irrationals are not closed. Checked against
+    Munkres, Topology (2000), §48 Exercise 2, printed p. 299, with Theorem 48.2 and the density of Q and of the
+    irrationals in R; the card's closing references to four step labels that no step carried are replaced by
+    the prose sentence that closes the argument.
 ---
 
 ::: {.exercise}
@@ -59,5 +76,5 @@ $A_0$ is not closed in $\RR$:
 
 :::
 
-    By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, $\RR = \bigcup_{n=0}^\infty A_n$ is a countable union of subsets with empty interior, and by step [](#s4){.pf-ref} the set $A_0$ is not closed.
+So $\RR$ is the countable union of the sets $A_0, A_1, A_2, \ldots$, each of which has empty interior, and the first of them is not closed: the failure of the Baire category theorem here is exactly the loss of the closedness hypothesis, the other summands being closed singletons.
 :::

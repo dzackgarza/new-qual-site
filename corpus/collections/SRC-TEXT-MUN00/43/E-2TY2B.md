@@ -14,6 +14,20 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §43 Exercise 9 was located in any set searched; the search
+    is recorded in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00, and the proof on the card is
+    checked line by line against the book. Checked against Munkres, Topology (2000), §43 Exercise 9,
+    printed p. 271, with the definition of Cauchy sequence and the triangle inequality: part (a) the
+    three axioms of an equivalence relation and the independence of the limit of d(x_n,y_n) from the
+    representatives, using |d(x_n,y_n) - d(x'_n,y'_n)| <= d(x_n,x'_n) + d(y_n,y'_n); part (b) D(h(x),h(y))
+    = d(x,y) for constant sequences; part (c) D(h(x_k), [x]) = lim_n d(x_k,x_n) <= eps for k >= N, which
+    is the exercise's own assertion; part (d) the standard dense-subset criterion, with the interleaved
+    approximation 1/k; part (e) every Cauchy sequence of the dense subspace h(X) converges in Y by part
+    (c), so part (d) applies to the complete space Y itself. Nothing on the card needed correction.
 ---
 
 ::: {.exercise}

@@ -15,6 +15,20 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §48 Exercise 9 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book: continuity at an
+    irrational x_0 takes the finitely many rationals x_1,...,x_N with 1/n >= eps and a radius avoiding them;
+    discontinuity at the rational x_m = f^{-1}(1/m) uses the density of the irrationals, where f vanishes, at
+    distance 1/m from f(x_m). The second question is answered yes, with an explicit sequence of continuous
+    functions: at stage k one places a tent of height 1/n on a small interval about each of x_1,...,x_k, with
+    pairwise disjoint supports of width less than 1/k; then f_k(x_m) = 1/m for k >= m while f_k(x) is eventually
+    at most 1/n for each fixed n at an irrational x, because the supports of the first N tents are eventually
+    avoided there. The supports are disjoint so at most one tent contributes at an irrational point. Nothing
+    needed correction.
 ---
 
 ::: {.exercise}

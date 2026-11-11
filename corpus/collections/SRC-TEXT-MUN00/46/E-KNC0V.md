@@ -10,6 +10,21 @@ classification:
   - Function Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §46 Exercise 6 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against the book's definition of the compact-open
+    topology in §46 and the exercise's own hint. Hausdorff: for f(x) != g(x) take disjoint open U, V about the
+    two values, and the subbasic sets S({x},U) and S({x},V) are disjoint. Regular: given a basic neighbourhood
+    N = intersection of S(C_i, V_i) of f, regularity of Y applied to the point f(c) inside the open V_i gives
+    for each c in C_i an open U with f(c) in U and closure(U) in V_i, and compactness of f(C_i) reduces to
+    finitely many, so f lies in M = intersection of S(C_i, U_i) with closure(M) inside N. The hinted inclusion
+    closure(S(C,U)) in S(C,V) for closure(U) in V is proved: if h(x) is outside V for some x in C, then h(x) is
+    outside the closed set closure(U), and regularity of Y gives an open W about h(x) missing U, so S({x},W) is
+    a neighbourhood of h disjoint from S(C,U). Nothing needed correction.
 ---
 
 ::: {.exercise}

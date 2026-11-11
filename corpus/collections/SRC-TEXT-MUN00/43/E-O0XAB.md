@@ -14,10 +14,28 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No located published solution covers Munkres §43 Exercise 4 (printed p. 270); this card is listed in
+    COMPLAINTS.md with the sources searched. The printed statement is restored: the card had added "(and
+    in fact consists of a unique point)" to the exercise, and now states the exercise as printed, the
+    uniqueness being proved inside the solution (two points of the intersection lie in every A_n, so their
+    distance is at most diam A_n -> 0). Checked line by line against the book: the forward direction
+    chooses x_n in A_n, shows the sequence is Cauchy using nesting and diam A_n -> 0, uses completeness,
+    and puts the limit in each closed A_k; the converse takes the closures of the tails of a Cauchy
+    sequence, which are closed, nested, nonempty, of diameter tending to 0 because the tail diameters do,
+    and a point of the intersection is the limit of the sequence. The diameter of a closure equals the
+    diameter of the set, used in the converse, is the one fact not stated in the book's §43; it is proved
+    from the definition of diameter and the continuity of the distance function. The card's closing
+    references to two step labels that no step carried are replaced by the prose sentence that closes the
+    solution.
 ---
 
 ::: {.exercise}
-Show that a metric space $(X, d)$ is **complete** if and only if for every nested sequence $A_1 \supset A_2 \supset A_3 \supset \cdots$ of non-empty closed subsets of $X$ such that $\lim_{n \to \infty} \operatorname{diam}(A_n) = 0$, the intersection $\bigcap_{n=1}^\infty A_n$ is **non-empty** (and in fact consists of a unique point).
+
+Show that the metric space $(X, d)$ is complete if and only if for every nested sequence $A_1 \supset A_2 \supset A_3 \supset \cdots$ of nonempty closed sets of $X$ such that $\operatorname{diam} A_n \to 0$, the intersection of the sets $A_n$ is nonempty.
 :::
 
 ::: {.solution}
@@ -125,7 +143,7 @@ Each $A_n$ is a closed nonempty subset of $X$, and $T_{n+1} \subseteq T_n$ gives
 ::: pf-step
 
 We show that $\operatorname{diam}(A_n) \to 0$:
-        - For any set $S \subseteq X$, its closure has the same diameter: $\operatorname{diam}(\overline{S}) = \operatorname{diam}(S)$.
+        - For any set $S \subseteq X$, its closure has the same diameter: $\operatorname{diam}(S) \le \operatorname{diam}(\overline{S})$ is clear, and for $x, y \in \overline{S}$ and any $\eta > 0$ choose $x', y' \in S$ with $d(x,x') < \eta$ and $d(y,y') < \eta$; then $d(x,y) \le d(x,x') + d(x',y') + d(y',y) < \operatorname{diam}(S) + 2\eta$ by the triangle inequality, so $d(x,y) \le \operatorname{diam}(S)$.
         - Thus $\operatorname{diam}(A_n) = \operatorname{diam}(T_n) = \sup_{j, k \ge n} d(x_j, x_k)$.
         - Since $\{x_n\}$ is Cauchy, for any $\varepsilon > 0$ there exists $N$ such that $d(x_j, x_k) < \varepsilon$ for all $j, k \ge N$, so $\operatorname{diam}(A_N) \le \varepsilon$.
         - Therefore, $\lim_{n \to \infty} \operatorname{diam}(A_n) = 0$.
@@ -167,5 +185,5 @@ Thus every Cauchy sequence converges in $X$, which proves that $(X, d)$ is compl
 
 :::
 
-    Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give the two implications.
+The two directions above prove the equivalence: completeness gives nonempty intersection, and a nonempty intersection in every nested sequence of closed sets of vanishing diameter gives completeness. In the forward direction the argument also shows the intersection is a single point, which the steps record.
 :::

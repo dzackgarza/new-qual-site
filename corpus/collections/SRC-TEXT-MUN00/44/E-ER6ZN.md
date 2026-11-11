@@ -21,6 +21,27 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §44 Exercise 3 was located; the sets searched are listed in
+    the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book, with
+    Theorem 26.5 (the continuous image of a compact space is compact) and Theorem 21.3 / the definition of
+    separability for the countability argument. Part (a) is the exercise's hint: R is sigma-compact as the
+    union of the intervals [-n,n], so every continuous image of R is a countable union of compact
+    subspaces, while R^omega in the product topology is not, because the n-th coordinate projection of
+    the n-th compact set is compact and bounded and one chooses a point outside all of them. Part (b) is
+    yes: the cubes [-m,m]^m x {0} x ... exhaust R^infty and each is a continuous image of I, so the
+    piecewise pasted map is a continuous surjection. Part (c): R^omega in the uniform and the box
+    topologies contains the uncountable subset {0,1}^omega whose points are pairwise at distance 1, so it
+    is not separable and admits no continuous surjection from the separable space R; for R^infty the
+    construction of (b) is continuous in both finer topologies, because the trace of a basic open set on
+    a finite-stage cube restricts only its finitely many nonzero coordinates. What was corrected: part
+    (b) cited the card of §44 Exercise 2 for the reparametrization that makes each piece start and end at
+    the origin, which this batch's transcription of that card no longer carries; the reparametrization is
+    now written out, and the pasting cites Exercise 18.9(c), the locally finite closed cover form of the
+    pasting lemma, which the card had invoked without a reference.
 ---
 
 ::: {.exercise}
@@ -50,7 +71,7 @@ with each $K_n$ compact. The coordinate projection $\pi_n(K_n)\subset\RR$ is com
 $$
 K_m=[-m,m]^m\times\{0\}\times\{0\}\times\cdots.
 $$
-The $K_m$'s exhaust $\RR^\infty$. For each $m$, choose a continuous surjection $q_m:I\to K_m$ with $q_m(0)=q_m(1)=0$, as in [[E-WVVWW]]. Map the interval $[m-1,m]$ onto $K_m$ via $q_m$. Since adjacent pieces agree at the origin, the pasted map $[0,\infty)\to\RR^\infty$ is continuous and surjective; compose with $t\mapsto\abs{t}$ to obtain a continuous surjection from $\RR$.
+The $K_m$'s exhaust $\RR^\infty$. By [[E-SADP0]] there is, for each $m$, a continuous surjection $q:I\to K_m$; reparametrize it so that it starts and ends at the origin, using the first third of $I$ for a straight path from $0$ to $q(0)$, the middle third for $q$, and the last third for a straight path from $q(1)$ back to $0$. The result, still written $q_m:I\to K_m$, is a continuous surjection with $q_m(0)=q_m(1)=0$. Map the interval $[m-1,m]$ onto $K_m$ via $q_m$. Adjacent pieces agree at the origin, and the cover of $[0,\infty)$ by the intervals $[m-1,m]$ is a locally finite closed cover, so the pasted map $F:[0,\infty)\to\RR^\infty$ is continuous (Exercise 18.9(c)) and surjective; compose with $t\mapsto\abs{t}$ to obtain a continuous surjection from $\RR$.
 
 (c) In both the uniform and box topologies, $\RR^\omega$ is nonseparable. The subset
 $$

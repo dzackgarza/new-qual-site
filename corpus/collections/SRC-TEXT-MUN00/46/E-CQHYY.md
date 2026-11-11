@@ -14,6 +14,18 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §46 Exercise 3 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against the definitions of the uniform topology
+    and the topology of compact convergence in §46 and Theorem 43.6. Closedness in the uniform topology is
+    tested by sequences, legitimate because that topology is metrizable: a uniform limit of functions bounded
+    by M_N is bounded by M_N + 1. Not closed in the topology of compact convergence: the functions f_n equal
+    to x on [-n,n] and 0 elsewhere are bounded, hence in B(R,R), and they converge to the unbounded function x
+    uniformly on every compact set, so x lies in the closure of B(R,R) and not in it. Note that these f_n need
+    not be continuous, and are not required to be: B(R,R) is a subspace of R^R. Nothing needed correction.
 ---
 
 ::: {.exercise}

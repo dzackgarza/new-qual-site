@@ -14,6 +14,20 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §46 Exercise 5 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against the book's topology of compact
+    convergence (§46) and uniform metric (§20, §43). Part (a): the pointwise limit is x/(1-x)^2 by term by term
+    differentiation of the geometric series on the interval of convergence; on a compact K inside (-1,1) the
+    number r = max over K of |x| is less than 1, so the tail is bounded by the tail of the convergent series of
+    k r^k, and the limit is continuous there being a uniform limit of continuous functions; every point of
+    (-1,1) has a compact neighbourhood, so the limit is continuous on the whole interval (the conclusion the
+    exercise asks for). Part (b): a uniform limit would be the pointwise limit, but for fixed n the difference
+    f - f_n is unbounded above as x -> 1-, so the sup is infinite and the uniform distance is 1 for every n.
+    Nothing needed correction.
 ---
 
 ::: {.exercise}

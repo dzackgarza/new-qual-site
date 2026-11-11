@@ -15,6 +15,21 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §48 Exercise 3 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. (The Toronto MAT327 set proves the Baire category
+    theorem for locally compact Hausdorff spaces as a course problem, in its assignment 6 solutions Question 1,
+    but the statement there is the theorem itself, with the course's own definition of nowhere dense, and is not
+    this exercise.) Checked line by line against the book: the criterion of Lemma 48.1 (a space is Baire iff a
+    countable intersection of dense open sets is dense); Theorem 29.2 for the shrinking of a neighbourhood to
+    one whose closure is compact and inside a given open set; and Theorem 26.9 for the finite intersection
+    property, applied to the nested closed sets inside the compact set closure of V_1. What the card uses
+    without saying so is that W cap U_1 is nonempty, which holds because U_1 is dense and W is a nonempty open
+    set; the induction is sound and the intersection point lies in W and in every U_n. Nothing needed
+    correction.
 ---
 
 ::: {.exercise}

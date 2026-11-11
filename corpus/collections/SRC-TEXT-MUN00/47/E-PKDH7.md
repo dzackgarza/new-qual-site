@@ -10,6 +10,19 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §47 Exercise 1 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the definitions of
+    pointwise boundedness and equicontinuity in §45 and §47. (a) is pointwise bounded by |x| + 1 and fails
+    equicontinuity at 0, taking x = pi/(2n): then f_n(x) - f_n(0) = pi/(2n) + 1. (b) is nowhere pointwise
+    bounded, since g_n(x) = n + sin x is unbounded in n, and is equicontinuous since |sin x - sin y| <= |x - y|
+    for all n. (c) is pointwise bounded, lying between 0 and max{1,|x|}, and fails equicontinuity at 0: for any
+    delta take 0 < x < min{delta,1} and then n with x^{1/n} > 1/2. (d) is pointwise bounded by |x| and
+    equicontinuous since n|sin(x/n) - sin(y/n)| <= |x - y|. Nothing needed correction.
 ---
 
 ::: {.exercise}

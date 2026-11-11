@@ -14,6 +14,18 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §46 Exercise 2 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. The card proves Theorem 46.7 as the exercise asks.
+    Checked against the book's statement of Theorem 46.7 and its proof (printed pp. 283-286), with the
+    uniform metric of §20 and §43 and the subbasis of the compact-open topology in §46: a singleton is
+    compact, so the pointwise subbasis element B_{x}(f, eps) is a compact-convergence basis element; a uniform
+    ball of radius eps <= 1 lies in every B_C(f, eps) because the bounded metric agrees with d there; if X is
+    compact then C = X gives equality; and if X is discrete then a compact set is finite, so B_C(f, eps) is the
+    finite intersection of pointwise elements. Nothing needed correction.
 ---
 
 ::: {.exercise}

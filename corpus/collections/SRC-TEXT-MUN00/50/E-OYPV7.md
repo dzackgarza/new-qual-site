@@ -20,6 +20,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution was located; the sets searched are listed in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00.
+    Checked against Munkres, Topology (2000), supplementary Exercise 2 of §50, printed p. 317, with Theorem 34.1
+    (Urysohn metrization), Theorem 32.2 (metrizable spaces are normal) and Theorem 30.2. The chain: a compact
+    Hausdorff locally euclidean space is covered by finitely many coordinate neighbourhoods, each second
+    countable, so it is second countable and hence a manifold; a manifold is locally compact Hausdorff, hence
+    regular, and with a countable basis metrizable by Theorem 34.1; a metrizable space is normal; a normal space
+    is T1 and separates points from closed sets, so it is Hausdorff. Nothing needed correction.
 ---
 
 ::: {.exercise}

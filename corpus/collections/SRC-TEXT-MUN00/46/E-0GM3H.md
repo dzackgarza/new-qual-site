@@ -14,6 +14,21 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §46 Exercise 11 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against the definition of the fine topology in
+    the exercise and the uniform metric of §20 and §43. Part (a): the sets B(f, delta) cover, since delta = 1
+    works, and at each point of an intersection the function delta_3 = min{delta_1 - d(f_1,g), delta_2 -
+    d(f_2,g)} is continuous and strictly positive, because x -> d(f_i(x), g(x)) is continuous as a composite of
+    continuous maps into Y x Y followed by the metric; the triangle inequality then puts B(g, delta_3) inside
+    both. Part (b): a uniform ball of radius eps <= 1 is fine-open, taking delta constant equal to
+    (eps - r)/2 where r is the uniform distance from f to g. Part (c): for compact X a positive continuous
+    delta attains a positive minimum (Theorem 27.4, the extreme value theorem), which turns a fine ball into a
+    uniform ball. Part (d): for discrete X every function and every positive function is continuous, and the
+    fine balls are exactly the boxes. Nothing needed correction.
 ---
 
 ::: {.exercise}

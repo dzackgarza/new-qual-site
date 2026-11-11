@@ -10,6 +10,21 @@ classification:
   - Baire Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Transcribed from the located published solution: "Solutions to exercises for Mathematics 205A" (University
+    of California, Riverside, Fall 2014), Part 3, section "III.3: Implications of completeness", answer to
+    Munkres §48 Exercise 1 on the set's own printed p. 6 (in tmp/sources/munkres-solutions-ucr-math205-gentop.pdf,
+    PDF p. 47; the file names no author, so the course and the file are the attribution). Checked against
+    Munkres, Topology (2000), §48 Exercise 1, printed p. 298, with the definition of a Baire space and of a
+    nowhere dense set in §48: the answer is the set's one sentence, that if the interior of the closure of each
+    B_n were empty then each B_n would be nowhere dense and X would be of the first category. The card writes
+    the same argument, adding the observation that the union of the closures is X because the B_n cover X, and
+    the nonemptiness of X is what makes the open set X itself the witness required by the definition. Nothing
+    needed correction.
 ---
 
 ::: {.exercise}

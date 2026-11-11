@@ -14,6 +14,20 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §46 Exercise 8 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against the definition of the compact-open
+    subbasis in §46 and the Tube Lemma (Lemma 26.8), which reads: if N is an open set of X x Y containing
+    the slice x_0 x Y and Y is compact, then W x Y is contained in N for some neighbourhood W of x_0. The
+    card applies it with the factors interchanged, the compact set C playing the role of the compact factor
+    and f_0 the role of the point: the open set N' = (C x C'(X,Y)) cap e^{-1}(U) of the space C x C'(X,Y)
+    contains the slice {f_0} x C, so N' contains W x C for a neighbourhood W of f_0, that is, C x W is
+    contained in e^{-1}(U); the card's text now says which role each factor plays. Then W lies
+    in S(C,U) since for f in W and x in C the pair (x,f) lies in e^{-1}(U). The card's closing references to
+    three step labels that no step carried are replaced by the prose sentence that closes the argument.
 ---
 
 ::: {.exercise}
@@ -74,7 +88,7 @@ $e^{-1}(U)$ is an open subset of the product space $X \times \mathcal{C}'(X, Y)$
 
 ::: pf-step
 
-By the Tube Lemma, there exists an open set $W \subseteq \mathcal{C}'(X, Y)$ (with $W \in \mathcal{T}$) such that $f_0 \in W$ and $C \times W \subseteq e^{-1}(U)$.
+By the Tube Lemma (Lemma 26.8) applied with the compact set $C$ in the role of the compact factor and $f_0$ in the role of the point, there exists an open set $W \subseteq \mathcal{C}'(X, Y)$ (with $W \in \mathcal{T}$) such that $f_0 \in W$ and $C \times W \subseteq e^{-1}(U)$.
 
 :::
 
@@ -120,5 +134,5 @@ Thus $f_0 \in W \subseteq S(C, U)$.
 
 :::
 
-    By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, every point $f_0 \in S(C, U)$ has an open neighborhood $W \in \mathcal{T}$ contained in $S(C, U)$, so $S(C, U)$ is open in $\mathcal{T}$. By step [](#s1){.pf-ref}, $\mathcal{T}$ contains the compact-open topology $\mathcal{T}_{\text{co}}$.
+Every point $f_0$ of a subbasic set $S(C,U)$ therefore has a neighbourhood $W \in \mathcal{T}$ with $f_0 \in W \subseteq S(C,U)$, so $S(C,U)$ is open in $\mathcal{T}$. Every subbasis element of the compact-open topology is thus open in $\mathcal{T}$, and a topology containing a subbasis contains the topology it generates, so $\mathcal{T}$ contains the compact-open topology.
 :::

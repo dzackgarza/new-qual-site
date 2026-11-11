@@ -10,6 +10,23 @@ classification:
   - Baire Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §49 Exercise 1 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against Example 1 of §49, printed
+    p. 301, and the definition of Delta f(x,h) and of U_n on the preceding page. The three computations were
+    verified: for f(x) = 4 alpha x(1-x) with h = 1/4 the two one-sided quotients are alpha(3 - 8x) and
+    alpha(5 - 8x), whose difference is 2 alpha, so the larger is at least alpha in absolute value, and at an
+    endpoint the single defined quotient has absolute value at least alpha; for the tent g and for the two-tooth
+    sawtooth k every linear piece has slope of absolute value alpha, and an interval of length at most half the
+    vertex spacing lies in a single piece. What was corrected: the card had restricted the conclusions to
+    n >= 4 for g and n >= 8 for k, because it took h = 1/n and needed h <= 1/4 and h <= 1/8; the book asserts
+    both for every n with alpha > n, and the card now takes h = min{1/n, 1/4} and h = min{1/n, 1/8}. The
+    argument that one of the two intervals has no vertex in its interior is now given, in place of the bare
+    statement that the vertices are spaced further apart than the step.
 ---
 
 ::: {.exercise}
@@ -52,19 +69,19 @@ Every linear piece has slope of absolute value $\alpha$.  Fix $0<h\le1/4$ and $x
 $$
 \Delta g(x,h)\ge\alpha
 $$
-for every $x$ and every $0<h\le1/4$.  Thus, if $\alpha>n$ and $1/n\le1/4$, choosing any $0<h\le1/n$ gives $g\in U_n$.
+for every $x$ and every $0<h\le1/4$.  So for $\alpha>n$ and any $n$, the step $h=\min\{1/n,1/4\}$ satisfies $h\le1/n$ and $h\le1/4$, hence $\Delta_h g\ge\alpha>n$ and $g\in U_n$.
 
 The function $k$ is the two-tooth sawtooth obtained by joining successively
 $$
 (0,0),\quad (1/4,\alpha/4),\quad(1/2,0),\quad
 (3/4,\alpha/4),\quad(1,0).
 $$
-Again every linear piece has slope $\pm\alpha$.  If $0<h\le1/8$, then for every $x\in I$, at least one of the two intervals $[x-h,x]$ or $[x,x+h]$ that is defined is contained in one of the four linear pieces: the vertices are spaced by $1/4$, while $h\le1/8$.  Along that interval the corresponding secant quotient has absolute value $\alpha$.  Hence
+Again every linear piece has slope $\pm\alpha$.  Let $0<h\le1/8$ and $x\in I$. If both intervals $[x-h,x]$ and $[x,x+h]$ had a vertex in the interior, say $t<x<t'$, then $t'-t<2h\le1/4$, which is impossible because distinct vertices are at distance exactly $1/4$. So one of the two intervals has no vertex in its interior and is therefore contained in one of the four linear pieces.  Along that interval the corresponding secant quotient has absolute value $\alpha$.  Hence
 $$
 \Delta k(x,h)\ge\alpha
 \qquad(0<h\le1/8).
 $$
-Consequently $k\in U_n$ whenever $\alpha>n$ and $n\ge8$ (take, for example, $h=1/n$).
+Consequently, for $\alpha>n$ and any $n$, the step $h=\min\{1/n,1/8\}$ gives $\Delta_h k\ge\alpha>n$, so $k\in U_n$.
 
 These are exactly the properties asserted for $f,g,k$ in Example 1.
 :::

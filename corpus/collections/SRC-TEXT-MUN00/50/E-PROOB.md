@@ -21,6 +21,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution was located; the sets searched are listed in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00.
+    Checked against Munkres, Topology (2000), §50 Exercise 9, printed p. 317, with Theorem 50.6 (compact
+    subspaces of R^N have dimension at most N), Theorem 50.1 and Corollary 50.3 for the finite union of the
+    pieces of a compact set, and the preceding exercise (the card of Exercise 50.8) for the passage from the
+    compact subspaces to the manifold, which is sigma-compact because it is locally compact and second
+    countable. Nothing needed correction.
 ---
 
 ::: {.exercise}

@@ -21,6 +21,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution was located; the sets searched are listed in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00.
+    Checked against Munkres, Topology (2000), supplementary Exercise 5 of §50, printed p. 317, with the
+    construction of the long line in the exercises of §24 and Theorem 32.4's method for the normality of an
+    ordered space. Locally 1-euclidean: each point of the long line has a neighbourhood order-isomorphic to an
+    open interval of R. Normal: the long line is a linear continuum, and a linear continuum in its order
+    topology is normal. Not metrizable: a metrizable, connected, locally euclidean space has each component an
+    m-manifold and so a countable basis, by the last supplementary exercise, while the long line has no
+    countable basis. Nothing needed correction.
 ---
 
 ::: {.exercise}

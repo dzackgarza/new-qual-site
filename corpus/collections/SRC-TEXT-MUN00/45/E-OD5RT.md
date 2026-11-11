@@ -11,8 +11,23 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §45 Exercise 1 was located; the sets searched are listed in
+    the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book, with
+    Exercise 20.3(b) for the metric D on the product, Theorem 45.1 (compact iff complete and totally
+    bounded), Theorem 28.2 for sequential compactness and the definition of total boundedness in §45. The
+    argument: for eps > 0 take N with 1/(N+1) < eps, choose finite eps*i-nets in the first N factors and
+    arbitrary basepoints beyond, and the resulting finite set is an eps-net for D, because a coordinate
+    beyond N contributes at most 1/i <= 1/(N+1) and a coordinate up to N contributes less than eps;
+    then a D-Cauchy sequence is Cauchy in each coordinate, converges coordinatewise by compactness of the
+    factors, and converges in D since all but finitely many coordinates contribute less than eps uniformly;
+    so the product is complete and totally bounded, hence compact. The card's opening sentence covers the
+    case of an empty factor, which makes the product empty and both claims vacuous.
 ---
-
 ::: {.exercise}
 
 If $X_n$ is metrizable with metric $d_n$, then

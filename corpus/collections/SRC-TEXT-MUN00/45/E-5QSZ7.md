@@ -14,6 +14,20 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §45 Exercise 2 was located; the sets searched are listed in
+    the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book's
+    definition of equicontinuity in §45 (equicontinuous at x_0 if for every eps there is a neighbourhood U
+    of x_0 with d(f(x), f(x_0)) < eps for all x in U and all f in the family). Part (a) is the finite
+    intersection of the finitely many neighbourhoods given by continuity. Part (b) is the standard eps/3
+    argument: the uniform limit f is continuous by Theorem 21.6, the finitely many functions with index
+    below N are handled by continuity at x_0 and the rest by the triangle inequality through f. Part (c)
+    is the mean value theorem, a calculus fact the book does not number, applied on the interval between
+    x and x_0 inside the neighbourhood on which the derivatives are bounded. What was corrected: part (c) divided by the
+    bound M, which may be 0 when every function of the family is constant; the card now uses max{M,1}.
 ---
 
 ::: {.exercise}
@@ -148,7 +162,7 @@ By hypothesis, there exists an open neighborhood $U_0 \ni x_0$ and a constant $M
 
 ::: pf-step
 
-Choose $\delta > 0$ such that the interval $U = (x_0 - \delta, x_0 + \delta) \subseteq U_0$ and $\delta < \frac{\varepsilon}{M}$.
+Replacing $M$ by $\max\{M,1\}$, which is still a bound for the derivatives on $U_0$ and is positive, choose $\delta > 0$ such that the interval $U = (x_0 - \delta, x_0 + \delta) \subseteq U_0$ and $\delta < \frac{\varepsilon}{M}$.
 
 :::
 

@@ -20,6 +20,27 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Transcribed from two located published solutions, one per part. Part (a) from "Tze Heng", *Munkres'
+    Topology: Self-study Notes and Exercises Attempts*, Chapter 7, "Exercises Attempts", the item numbered
+    3(a) under "Exercise after §43" (URL
+    https://blog.ttheng.com/docs/mathematics/munkres-topology-self-study/chapt-7/exercises/, read
+    2026-11-11): the identity is uniformly continuous both ways because d-bar <= d, and conversely
+    d-bar(x,y) < min{eps,1} forces d(x,y) = d-bar(x,y). Part (b) from "Solutions to exercises for
+    Mathematics 205A" (University of California, Riverside, Fall 2014), Part 3, section "III.2: Complete
+    metric spaces", answer to §43 Exercise 3(b) on the set's own printed p. 4 (in
+    tmp/sources/munkres-solutions-ucr-math205-gentop.pdf, PDF p. 45): uniform continuity carries Cauchy
+    sequences both ways, completeness under d gives the limit, and continuity of the identity gives
+    convergence under d-prime. Checked against Munkres, Topology (2000), §43 Exercise 3, printed p. 270,
+    with the definition of metric equivalence, the standard bounded metric of §20, and the fact that a
+    uniformly continuous map carries Cauchy sequences to Cauchy sequences. What was corrected: the blog's
+    part (b) is a single paragraph that reuses "delta = eps" from part (a) and never records that the
+    limit found under d must be the same point as the d-prime limit; the card's part (b) is the
+    Riverside argument, with the identity's continuity supplying the last step. The card also has the
+    printed statement's part (a), which the Riverside set does not answer.
 ---
 
 ::: {.exercise}

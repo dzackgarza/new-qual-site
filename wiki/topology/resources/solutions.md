@@ -244,6 +244,45 @@ page: cite it by its URL and the date read, as the cards of this chapter now do.
 pages are complete arguments (§30.1, §32.7, §32.9, §33.3, §34.6, §35.2, §35.9, §36.5), others are one sentence
 (§32.4) or a restatement of the exercise (§30.18). It has no pages at all for the supplementary exercises.
 
+**"Solutions to exercises for Mathematics 205A", University of California, Riverside, Part 3 (Fall 2014)**,
+`tmp/sources/munkres-solutions-ucr-math205-gentop.pdf`, PDF pp. 42--50, where each set keeps its own printed
+page numbers; only the compilation holds Part 3, not the separate `solutions5a.pdf`, which is Part 5 of Fall
+2003. The file names no author, so the course and the file are the attribution. Its Chapter 7--8 material is
+section "III.2: Complete metric spaces", answers to **§43 Exercises 1(a), 1(b), 3(b), 6(a), 6(c) on printed
+pp. 4--5**, together with its Additional exercise 2 (printed p. 5, stated on p. 8 of
+`tmp/sources/munkres-ucr-math205B-exercises-gentop-problems.pdf`), which asks verbatim for the completeness of
+$\ell^2$ and is §43 Exercise 7; and section "III.3: Implications of completeness", answers to **§48 Exercises
+1, 2 and 4 on printed pp. 6--7**. Its answer to §48 Exercise 2 is defective and is corrected on the card: it
+takes the cosets of a $\QQ$-subspace and says each "has a nonempty interior" and then argues that it
+does not, so the conclusion contradicts its own claim; what the argument shows is that the cosets have empty
+interior and are dense, hence not closed.
+
+**"Tze Heng", *Munkres' Topology: Self-study Notes and Exercises Attempts***, Chapter 7 "Exercises Attempts",
+`https://blog.ttheng.com/docs/mathematics/munkres-topology-self-study/chapt-7/exercises/` (read 2026-11-11).
+A web page has no printed page, so cite it by URL and the date read, and use the handle the page carries. It
+states every exercise of §43--§47 and writes answers to three of them: **§43 Exercises 1, 2 and 3**. Its §43
+Exercise 2 and 3 answers are complete and are the source of those cards. Its §43 Exercise 1(b) is wrong ---
+it offers $\QQ$ as a space in which every point has a ball with compact closure, which is false, a
+closed interval of $\QQ$ not being compact --- and its §43 Exercise 3(b) never records that the two
+completions give the same limit, so those two cards cite the Riverside set instead. There is no Chapter 8 page.
+
+**"Topology I and II Notes"**, `https://locallyringed.space/Topology%20Notes.pdf` (2,094,576 bytes,
+compiled 16 November 2017; the file names no author). Lecture notes organized by Munkres section, with
+numbered results of their own ("Lemma 1.43.3", "Theorem 1.44.1", …). They cover §43--§46 only and prove the
+sections' **theorems**, not their exercises, so nothing is transcribed from them; they were read as a second
+check on the statements of Theorems 43.1--43.7, 44.1 and 45.1--45.4 that the cards of §43--§45 cite. Copy at
+`tmp/sources/munkres-notes-locallyringed.pdf`, text at `.txt` beside it.
+
+**MAT 327 (University of Toronto, 2023), problem sets 1--6 with solutions**,
+`https://www.math.toronto.edu/laithy/3272023/` (`327ps1sol.pdf` … `327ps6sol.pdf`, retrieved into
+`tmp/sources/munkres-solutions-mat327-ps*sol.pdf`). The sheets are the course's own problems, not the book's,
+and the numbering is the course's, so an exercise number of Munkres must be matched by statement. The author
+of the first three is named on the sheet (Jiawei Chen), the last (Arthur Lei Qiu); the file `327ps6sol.pdf` is
+headed "Problem Set 4 Solutions" internally, so cite the file, the Question and the PDF page, not the sheet's
+title. Its one contribution here is **Question 1, Problem 1(b) of `327ps6sol.pdf`, PDF p. 1**, which proves
+the uniform boundedness principle for a complete metric space (and for a locally compact Hausdorff space) and
+is therefore a solution of §48 Exercise 10.
+
 **Aleksey Zinger, *MAT 530: Topology & Geometry, I*, Fall 2005, problem-set solutions**,
 `tmp/sources/munkres-solutions-zinger-mat530-ps2.pdf` … `-ps9.pdf` ([course page](https://www.math.stonybrook.edu/~azinger/mat530/),
 files `ps2sol.pdf` … `ps9sol.pdf`). Twelve numbered problem sets, three to six pages each; the pages carry no
@@ -278,7 +317,15 @@ Orellana (a selection of §30–§34); §37 by Orellana (a selection) and by Zin
 Moller's S38 (Exercises 4–9) and by the Riverside set (Exercises 2 and 3); §41 by Zinger (Exercises 2 and 7) and
 by the *Praying For Stockholm* posts (Exercises 2(a), 7 and 8); §39 by the posts of 26 December 2014 (Exercises 5
 and 6). §39 Exercises 1–4, all of §40, §41 Exercises 1, 3–6, 9, 10 and both exercises of §42 have no located
-solution, and §43–§64 and §66–§85 have no located set with printed pagination. The commercial manuals are
+solution, and §43–§64 and §66–§85 have no located set with printed pagination. For §43–§50 (Chapters 7 and 8)
+exactly eleven cards cite a located published solution --- ten supplying the argument proved on the card and
+one supplying a defective argument that the card corrects --- and the other sixty-two are listed in
+`COMPLAINTS.md`; the Zinger sheet gives §43 Exercise 10 and §44 Exercise 2, the
+Riverside Part 3 set gives §43 Exercises 1, 3(b), 6(a), 6(c), 7 and §48 Exercises 1, 2, 4, the Tze Heng page
+gives §43 Exercises 2 and 3, and the Toronto set gives §48 Exercise 10. No located set solves an exercise of
+§45, §46, §47 or §49, or more than a few of §50, and the countable closed-sum theorem needed by §50 Exercise 3
+is in Hurewicz and Wallman and in Engelking, neither of which could be read here (the archive.org copies of
+the former are access-restricted). The commercial manuals are
 paywalled and print no pagination, and are not cited here; the dbFin pages have no Chapter 5 or Chapter 6 section
 at all (`chapter-5/` and `chapter-6/` under `dbfin.com/topology/munkres/` are 404, and the site's index lists
 Chapters 1–4, 9 and 11 only). The AoPS blog "shooting star", *Topology by Munkres* (Days 14–15), appears to solve

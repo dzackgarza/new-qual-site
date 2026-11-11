@@ -20,6 +20,21 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution was located; the sets searched are listed in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00.
+    Checked line by line against Munkres, Topology (2000), §50 Exercise 8, printed pp. 316-317, following the
+    exercise's own outline. Points checked in (b): the integer r chosen least with x in the interior of X_r
+    exists, x lies outside X_{r-2} because X_{r-2} is contained in the interior of X_{r-1}, and X_{r-2} is closed
+    because compact in the Hausdorff space; then a member of B_0 meeting X_n has n at least r-1 and so lies in
+    X_{n+1}. In (c) the covering C is built from a refinement of the trace on X_{n+1}, which exists because
+    dim X_{n+1} is at most m, together with the pieces B - X_{n+1}; the order bound on X_{n+1} is the case split
+    between points of X_n, where members of B_{n+1} lie in distinct members of B_n, and points of X_{n+1} - X_n,
+    where no retained member can occur because it would have to lie in X_n. In (d) the cover consists of the sets
+    that are eventually retained, and a member through a point of X_n must appear by stage n+1, so the order
+    bound passes to the limit. Nothing needed correction.
 ---
 
 ::: {.exercise}

@@ -20,6 +20,24 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Transcribed from the located published solution: Aleksey Zinger, "MAT 530: Topology & Geometry, I",
+    Fall 2005, Problem Set 7, "Solution to Problem p271, #10", PDF pp. 1-2
+    (tmp/sources/munkres-solutions-zinger-mat530-ps7.pdf, from
+    https://www.math.stonybrook.edu/~azinger/mat530/ps7sol.pdf; the sheet prints no page numbers, so the
+    PDF page is the locator). Checked against Munkres, Topology (2000), §43 Exercise 10, printed p. 271,
+    with the definition of completion after Theorem 43.7 and Lemma 43.1. What was adapted: Zinger states
+    the theorem for the special case in which Y and Y' are the completions of X, i.e. h and h' are the
+    inclusions and X is dense in both, and he proves it by sending y to the limit in Y' of a sequence
+    from X converging to y; the card states the printed general form with two isometric imbeddings h, h',
+    so T_0 = h' h^{-1} plays the role of Zinger's identity on X and the isometry constructed is between
+    the closures h(X)-bar and h'(X)-bar. The well-definedness argument is Zinger's: two sequences from X
+    with the same limit y are at distance tending to 0, and D' of their images equals D of the originals.
+    The card supplies Zinger's interleaving argument in the shorter form, and proves surjectivity by
+    running the construction backwards, which Zinger does in his last paragraph.
 ---
 
 ::: {.exercise}

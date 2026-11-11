@@ -18,6 +18,22 @@ audit:
   by: gpt-6.1-sol
   date: 2026-10-31
   note: 'The source writes f(x)>n for a vector-valued map. Escape to infinity means the norm of f(x) exceeds n outside a compact set.'
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution was located; the sets searched are listed in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00.
+    Checked line by line against Munkres, Topology (2000), §50 Exercise 6, printed pp. 315-316, with Urysohn's
+    lemma (Theorem 33.1), the Tietze extension theorem (Theorem 35.1), Theorem 48.2 and Lemma 48.4 for the Baire
+    arguments, Theorem 26.5 and Theorem 26.6 for the passage to one-point compactifications, and the density step
+    of the proof of Theorem 50.5 for part (d). Each part is correct as written: (a) a perturbation of size less
+    than 1 preserves going to infinity; (b) the extension to one-point compactifications is continuous at
+    infinity by the very definition, and an injective continuous map of a compact Hausdorff space into a
+    Hausdorff space is an imbedding whose image is closed; (c) the set of pairs at distance at least eps is
+    compact, and simple convergence controls the distance between two images; (d) is the Tietze device of the
+    exercise's hint; (e) needs a locally finite sum of the functions 1 - phi_n, which the card obtains from the
+    nesting C_n inside the interior of C_{n+1}; (f) closes with Baire and the observation that two distinct
+    points lie in some C_n at distance at least 1/n. Nothing needed correction.
 ---
 
 ::: {.exercise}

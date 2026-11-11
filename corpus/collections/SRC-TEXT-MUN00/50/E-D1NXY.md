@@ -20,6 +20,15 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution was located; the sets searched are listed in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00.
+    Checked against Munkres, Topology (2000), supplementary Exercise 3 of §50, printed p. 317, together with the
+    card of supplementary Exercise 2 for the labels of the conditions: R is locally 1-euclidean, Hausdorff and
+    second countable (the intervals with rational endpoints), so it satisfies (ii); the cover by the intervals
+    (-n,n) has no finite subcover, so it fails (i). Nothing needed correction.
 ---
 
 ::: {.exercise}

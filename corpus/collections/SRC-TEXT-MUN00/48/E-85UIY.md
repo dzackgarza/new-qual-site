@@ -15,6 +15,20 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §48 Exercise 13 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. (A question on Mathematics StackExchange, 3919410,
+    carries answers to this exercise, read 2026-11-11; a question-and-answer page is not a published solution
+    and is not cited.) The card's proof is the book's hint carried out, checked against Lemma 48.1 and
+    Theorem 43.6 (completeness of the uniform function space over a complete target).
+    What the argument needs and the card supplies: a basis element B(f, delta) is nonempty because it contains
+    f; shrinking delta to min{delta, delta_n/3} keeps a basis element; the geometric bound sum of delta_k/3 over
+    k >= n is at most delta_n/2, which makes every sequence of values Cauchy; the limit function is continuous
+    by the eps/6, eps/3, eps/6 estimate at a point of continuity of f_N; and the limit lies in every
+    B(f_n, delta_n), hence in the given open set and in every dense open set. Nothing needed correction.
 ---
 
 ::: {.exercise}

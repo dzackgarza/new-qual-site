@@ -21,6 +21,15 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution was located; the sets searched are listed in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00.
+    Checked against Munkres, Topology (2000), §50 Exercise 2, printed p. 315, with the definition of dimension by
+    order of refinements and the $T_1$ axiom. The argument: for distinct a, b the two open sets X - {a} and
+    X - {b} cover X; a refinement of order 1 has pairwise disjoint members, none of them all of X, so splitting
+    it at one member separates X, contradicting connectedness. Nothing needed correction.
 ---
 
 ::: {.exercise}

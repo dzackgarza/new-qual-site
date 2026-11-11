@@ -20,6 +20,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution was located; the sets searched are listed in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00.
+    Checked against Munkres, Topology (2000), §50 Exercise 4, printed p. 315, with the definition of general
+    position in R^N on printed p. 313 (every subset of N+1 or fewer points is geometrically independent) and
+    Example 7 for the linear imbedding of a finite graph. The five four-point subsets are checked by
+    determinants: {0, e_1, e_2, e_3} has determinant 1, the three sets containing 0, (1,1,1) and two of the
+    e_i have determinant 1, and {e_1, e_2, e_3, (1,1,1)} gives the matrix with rows (-1,1,0), (-1,0,1), (0,1,1)
+    of determinant 2; three collinear points are excluded by the same determinants. Nothing needed correction,
+    except that the card now states the book's definition of general position instead of a paraphrase of it.
 ---
 
 ::: {.exercise}

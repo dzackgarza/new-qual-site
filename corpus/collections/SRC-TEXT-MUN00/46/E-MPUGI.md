@@ -10,6 +10,22 @@ classification:
   - Quotient Topology
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §46 Exercise 9 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against Theorem 46.11 (the adjunction between
+    maps X x Z -> Y and maps Z -> C(X,Y) for the compact-open topology), which the exercise says the proof
+    uses, and against the defining property of a quotient map (§22: a map out of the quotient is continuous iff
+    its composite with the quotient map is). Part (a): i_X x p is constant on the fibres of q, so it factors
+    through the quotient Y as a bijection f with f o q = i_X x p, and f is continuous by the quotient property.
+    Part (b): with G(b)(x) = g(x,b) and Q(a)(x) = q(x,a), the identity q = g o (i_X x p) gives Q = G o p
+    pointwise. Part (c): q is continuous, so its adjoint Q is continuous by Theorem 46.11; p is quotient and
+    Q = G o p, so G is continuous; applying Theorem 46.11 to G gives that g is continuous; hence f is a
+    continuous bijection with continuous inverse, so i_X x p = f o q is a quotient map. Nothing needed
+    correction.
 ---
 
 ::: {.exercise}

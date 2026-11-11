@@ -20,6 +20,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §44 Exercise 1 was located; the sets searched are listed in
+    the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00, and Robert Gardner's ETSU notes on §44
+    (faculty.etsu.edu/gardnerr/5357/notes/Munkres-44.pdf) prove only Theorem 44.1, which is the input
+    here. The card follows the exercise's own hint. Checked line by line against the book: Theorem 44.1
+    gives a continuous surjection p: I -> I^2; if q_k: I -> I^{2^k} is a continuous surjection then
+    q_k x q_k: I x I -> I^{2^{k+1}} is one (Theorem 18.4 for continuity of a map into a product, and
+    surjectivity coordinatewise), so q_{k+1} = (q_k x q_k) o p is a continuous surjection I -> I^{2^{k+1}},
+    beginning at q_0 = id_I; for arbitrary n choose k with n <= 2^k and project onto the first n
+    coordinates, which is continuous and surjective. Nothing on the card needed correction.
 ---
 
 ::: {.exercise}

@@ -14,6 +14,17 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution was located; the sets searched are listed in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00.
+    Checked against Munkres, Topology (2000), supplementary Exercise 1 of §50, printed p. 317, with the
+    definition of local m-euclidean given there, Theorem 26.5 for the compactness of a closed ball and the fact
+    that a subspace of a metrizable space is metrizable (Theorem 20.1 and Theorem 30.2 for the countable basis).
+    Local compactness at x: inside a chart phi: U -> V with V open in R^m, a closed ball about phi(x) lies in V,
+    and its preimage is a compact neighbourhood of x inside U. Local metrizability: U is homeomorphic to an open
+    subset of R^m, hence metrizable. Nothing needed correction.
 ---
 
 ::: {.exercise}

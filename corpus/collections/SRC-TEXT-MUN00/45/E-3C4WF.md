@@ -15,6 +15,24 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §45 Exercise 7 was located; the sets searched are listed in
+    the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book, which
+    states the exercise with its own hints on printed pp. 280-281. Part (a): D is finite because A and B
+    are bounded; D(A,B) = 0 iff A and B are contained in each other's eps-neighbourhoods for every eps,
+    which is A contained in the closure of B and conversely, and B and A are closed; symmetry is
+    immediate; the triangle inequality follows from U(B, eps_1) inside U(U(C, eps_2), eps_1) contained in
+    U(C, eps_1 + eps_2). Part (b) follows the exercise's hint: after passing to a subsequence with
+    D(A_n, A_{n+1}) < 2^{-n}, the set A of limits of sequences x_n with x_n in A_n and d(x_n, x_{n+1}) <
+    2^{-n} is nonempty, bounded and its closure is the limit; both inclusions A inside U(A_n, 2^{-(n-2)})
+    and A_n inside U(A, 2^{-(n-1)}) are obtained from the same telescoping bound, and a Cauchy sequence
+    with a convergent subsequence converges. Part (c) is the hint's finite net S with delta < eps and the
+    assignment of the nonempty subset of S of points whose delta-balls meet A. Part (d) is Theorem 45.1
+    applied to (b) and (c). Nothing on the card needed correction; the card's step references all point
+    at steps it labels.
 ---
 
 ::: {.exercise}

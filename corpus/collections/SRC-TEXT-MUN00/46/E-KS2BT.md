@@ -11,6 +11,23 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution of Munkres §46 Exercise 10 was located; the sets searched are listed in the
+    COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against the definition of sigma-compactness
+    given in the exercise, Theorem 43.5 and Theorem 43.6 (completeness of the uniform function space over a
+    complete target), the metric for a countable product of metric spaces (§20, Exercise 20.3) and the
+    description of compact convergence by Theorem 46.2. Part (a) is the standard countability argument: each
+    point has a basis element inside an open set with compact closure, and only countably many basis elements
+    occur. Part (b) is the exercise's hint carried out: take compact A_i with interiors covering X and closed
+    under finite unions so that they increase; the sum of the bounded uniform metrics on the Y^{A_i}, weighted
+    by 2^{-i}, induces compact convergence because every compact subset of X lies in some A_i (its interiors
+    form a cover) and each A_i is compact; the restriction map is an isometry onto the closed compatibility
+    subspace of the product, each factor is complete when Y is, the product metric is complete, and a closed
+    subspace of a complete space is complete. Nothing needed correction.
 ---
 
 ::: {.exercise}

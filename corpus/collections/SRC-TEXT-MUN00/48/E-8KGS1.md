@@ -14,6 +14,23 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Transcribed from the located published solution: "Solutions to exercises for Mathematics 205A" (University
+    of California, Riverside, Fall 2014), Part 3, section "III.3: Implications of completeness", answer to
+    Munkres §48 Exercise 4 on the set's own printed p. 6 (in tmp/sources/munkres-solutions-ucr-math205-gentop.pdf,
+    PDF p. 47). Checked against Munkres, Topology (2000), §48 Exercise 4, printed p. 299, with Lemma 48.1 (the
+    open-set formulation) and Lemma 48.4 (an open subspace of a Baire space is a Baire space). What was
+    corrected: the card's first step had said that a point with a Baire neighbourhood N has "an open
+    neighbourhood U_x contained in N" and then treated U_x as an open subspace of N and of X at once; it now
+    takes an open set O of X with x in O contained in N, notes that O is open in N and hence Baire by Lemma
+    48.4, and so obtains an open cover of X by Baire subspaces, which is what the argument uses. The rest is the
+    set's: inside a cover member U, the traces of the closed nowhere dense sets of X are closed nowhere dense in
+    U, and the Baire property of U produces a point of W cap U outside all of them. The card's closing
+    references to two step labels that no step carried are replaced by the prose sentence that closes the
+    argument.
 ---
 
 ::: {.exercise}
@@ -35,13 +52,13 @@ Reduction to an open cover by Baire open sets:
 
 ::: pf-step
 
-If a point $x \in X$ has a neighborhood $N$ that is a Baire space, there exists an open neighborhood $U_x \subseteq N$ containing $x$.
+If a point $x \in X$ has a neighborhood $N$ that is a Baire space, there is an open set $O$ of $X$ with $x\in O\subseteq N$; then $O=O\cap N$ is open in the subspace $N$, so $O$ is an open subspace of the Baire space $N$ and is itself Baire.
 
 :::
 
 ::: pf-step
 
-Since every open subspace of a Baire space is a Baire space, $U_x$ is an open subspace of $X$ that is a Baire space.
+So each point of $X$ has an open neighbourhood (in $X$) that is a Baire space in the subspace topology, by Lemma 48.4 (an open subspace of a Baire space is a Baire space).
 
 :::
 
@@ -146,5 +163,5 @@ Since $y \in V \subseteq W$, we have $y \in W \setminus \bigcup_{n=1}^\infty A_n
 
 :::
 
-    By step [](#s3){.pf-ref}, $W \not\subseteq \bigcup_{n=1}^\infty A_n$ for every nonempty open $W$, so $X$ is a Baire space by step [](#s2){.pf-ref}.
+Thus $W \setminus \bigcup_n A_n$ is nonempty for every nonempty open $W\subseteq X$, which is the open-set formulation of the Baire condition; so $X$ is a Baire space.
 :::

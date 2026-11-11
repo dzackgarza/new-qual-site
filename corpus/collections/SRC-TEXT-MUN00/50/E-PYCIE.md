@@ -14,6 +14,17 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    No complete published solution was located; the sets searched are listed in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00.
+    Checked against Munkres, Topology (2000), §50 Exercise 10, printed p. 317, with Theorem 50.6 and the
+    argument of Theorem 50.1. What was corrected: the first step said only that R^N "has covering dimension N"
+    and called this a standard computation, without a proof and with an equality the book never proves; it now
+    says what is true and available, that the construction in the proof of Theorem 50.6 gives, for every delta,
+    an open cover of R^N of order N+1 by sets of diameter less than delta, whence dimension at most N. The
+    second step is the closed-subspace argument of Theorem 50.1 and is now labelled as such.
 ---
 
 ::: {.exercise}
@@ -28,11 +39,11 @@ Every closed subspace of $\RR^N$ has topological dimension at most $N$.
 
 ::: {.pf-step #s1}
 
-$\RR^N$ has covering dimension $N$.
+$\RR^N$ has covering dimension at most $N$.
 
 ::: pf-proof
 
-This is the standard computation of the Lebesgue covering dimension of $\RR^N$.
+This is Theorem 50.6's construction, which is Example 3 generalized: for each $\delta>0$ the proof exhibits an open cover of $\RR^N$ of order $N+1$ whose elements have diameter less than $\delta$, by scaling the cover built from the unit cubes, their faces and the balls about the lattice points. Since any open cover of $\RR^N$ has a Lebesgue number, such covers refine it, so $\dim\RR^N\le N$.
 
 :::
 
@@ -52,7 +63,7 @@ Let $\mathcal{U}$ be an open cover of $A$. Each $U \in \mathcal{U}$ is $A \cap U
 
 ::: pf-qed
 
-Apply step [](#s2){.pf-ref} to $X = \RR^N$, using step [](#s1){.pf-ref}.
+Apply step [](#s2){.pf-ref} to $X = \RR^N$, using step [](#s1){.pf-ref}; step [](#s2){.pf-ref} is the argument of Theorem 50.1.
 
 :::
 
