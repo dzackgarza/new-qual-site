@@ -31,6 +31,28 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Step-by-step pass against the book. Printed exercise and hint on p. 355.
+    s1: corrected the citation of the blowup theorem from Exercise II.8.5 to
+    Theorem II.8.24 printed p. 186, whose (a),(b),(c) give Xtilde
+    nonsingular, E = P(I/I^2) and N = O(-1), hence O(-E) restricted to a
+    fibre is O(1). s2: Exercise II.7.14 printed pp. 171-172 gives very
+    ampleness of O(1) tensor pi^*O(m), with O(-E) = pi^{-1}I.O by II.7.13(a)
+    printed p. 164. s3: degree 1 on each fibre, so each fibre is embedded as
+    a line. s4: hyperplanes through a line form a P^{N-2}, so the bad set
+    has dimension N-1. s5: Bertini for hyperplane sections, II.8.18 printed
+    p. 179, stated over any algebraically closed field (the corpus card
+    T-BERTINI records that), so no characteristic hypothesis is imported.
+    s6: the identity pi_* O(-E) = I_X is now justified from the degree-one
+    piece of the Rees algebra (II.7.13), which is what gives H^0(Xtilde,L_m)
+    = H^0(P^3,I_X(m)) and hence X in F; this is the step the MSE 4430830
+    attempt could not supply. s7 and s8: nonsingularity away from X and
+    along X, the latter by df(P) = a(P)dx + b(P)dy from I_{X,P} = (x,y).
+    Expanded one inference: a component of Ftilde inside E would contain
+    fibres over an open set of X, which s5 excludes.
 ---
 
 ::: {.problem}
@@ -72,16 +94,17 @@ $$
 ::: pf-proof
 
 The center $X$ is nonsingular of codimension $2$ in the nonsingular threefold $\PP^3$.
-The blowup theorem for a nonsingular center, used in [[P-AGH285BLOWUPCANON|Exercise II.8.5]], gives
+The blowup theorem for a nonsingular center, Theorem II.8.24 (printed p. 186), gives
 $$
 \widetilde{\PP^3}\text{ nonsingular},
 \qquad
 E\cong\PP_X(\mci_X/\mci_X^2),
 $$
-and
+which is (a) and (b) of that theorem, and in (c) it identifies the normal sheaf $\mathcal N_{E/\widetilde{\PP^3}}=\OO_{\widetilde{\PP^3}}(E)\restrict_E$ with $\OO_{\PP(\mci_X/\mci_X^2)}(-1)$. Hence
 $$
 \OO_{\widetilde{\PP^3}}(-E)\restrict_E\cong\OO_E(1).
 $$
+Here $E$ is the subscheme $Y'$ of the theorem: by II.7.13(a) (printed p. 164) the inverse image ideal $\pi^{-1}\mci_X\cdot\OO$ is invertible, and it is $\OO_{\widetilde{\PP^3}}(-E)$, so $E$ is the subscheme that ideal defines.
 Since the conormal bundle $\mci_X/\mci_X^2$ has rank $2$, every fibre of $E\to X$ is $\PP^1$, and restriction of the last identity gives the claimed $\OO_{\PP^1}(1)$.
 
 :::
@@ -116,14 +139,15 @@ $$
 \cong
 \OO_{\widetilde{\PP^3}}(-E).
 $$
-Apply [[P-AGH2714PROJVERYAMPLE|Exercise II.7.14(b)]] to this relative $\Proj$, with the ample sheaf $\OO_{\PP^3}(1)$ on the base.
-It says that
+The identification $\OO_{\widetilde{\PP^3}}(1)=\OO_{\widetilde{\PP^3}}(-E)$ is Proposition II.7.13(a) with its proof (printed p. 164), where the twisting sheaf of the blowup is computed to be the inverse image ideal $\pi^{-1}\mci_X\cdot\OO$.
+Apply Exercise II.7.14 (printed pp. 171--172) to this relative $\Proj$, with the ample sheaf $\OO_{\PP^3}(1)$ on the base and $\mathcal L=\OO_{\PP^3}(1)$.
+Its last part says that
 $$
 \OO_{\widetilde{\PP^3}}(1)
 \tensor
 \pi^*\OO_{\PP^3}(m)
 $$
-is very ample for every $m\gg0$.
+is very ample on $\widetilde{\PP^3}$ relative to $\Spec k$ for every $m\gg0$, the base being a point, that is, very ample.
 This is exactly $L_m$.
 
 :::
@@ -238,10 +262,11 @@ L_m
 \tensor
 \pi^*\OO_{\PP^3}(m).
 $$
-For a blowup, one has
+For a blowup the degree-one piece of the Rees algebra gives
 $$
-\pi_*\OO_{\widetilde{\PP^3}}(-E)=\mci_X.
+\pi_*\OO_{\widetilde{\PP^3}}(-E)=\mci_X,
 $$
+because $\widetilde{\PP^3}=\Proj\bigoplus_{q\ge0}\mci_X^q$ and $\OO(-E)=\OO(1)$ is the sheaf whose pushforward is the degree-one piece $\mci_X$ of that graded algebra (the computation is the one in the proof of II.7.13(a), printed p. 164).
 The projection formula therefore identifies
 $$
 H^0(\widetilde{\PP^3},L_m)
@@ -255,7 +280,7 @@ $$
 X\subseteq F,
 $$
 and away from $E$ the blowup is an isomorphism.
-Step [](#s5){.pf-ref} says that $\widetilde F$ contains no exceptional fibre, so in particular it has no component contained in $E$.
+Step [](#s5){.pf-ref} says that $\widetilde F$ contains no exceptional fibre. A component of $\widetilde F$ contained in $E$ would be a divisor in $E=\PP(\mci_X/\mci_X^2)$, and such a divisor meets the fibre $E_P$ over every $P$ in a nonempty open subset of $X$, so $\widetilde F$ would contain those fibres. Hence $\widetilde F$ has no component contained in $E$ either.
 It is therefore the closure of
 $$
 \pi^{-1}(F\setminus X).

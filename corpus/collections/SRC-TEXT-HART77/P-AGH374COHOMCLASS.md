@@ -21,6 +21,26 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Step-by-step pass against the book. III.7.1(a) printed p. 240 (Fix one
+    such isomorphism), III.7.2 p. 241 (the trace is part of the dualizing
+    pair), III.7.1.1 pp. 240-241 (the Cech cocycle generator), III.7.12 p.
+    246, III.7.13 p. 247 (the duality isomorphism the exercise uses),
+    III.7.14 p. 247 (the trace is known only to exist), III.7.14.1(c) p. 247
+    (res_P f^-1 df = v_P(f)), Appendix A C1 p. 430 (c_1(L(D)) = D), II.8.18
+    p. 179 (Bertini, every characteristic), I.7.7 p. 53 (Bezout), Exercise
+    7.3 p. 249. Corrected two steps: in (b) the scalar was transferred from
+    H^p(L,Omega^p) to H^p(P^n,Omega^p) by asserting that restriction carries
+    the normalized generator to the normalized generator, and is now
+    transferred by the projection formula t_Pn(beta cup i_*1) = t_L(i^*beta
+    cup 1) with i_*1 spanning H^{n-p}; in (d) the residue input is now
+    stated as the Poincare residue with its constant checked against
+    III.7.14.1(c) and cross-checked for a hypersurface in P^n, where (b) and
+    c(O(d)) = d must agree. Not checked: whether the printed exercise has a
+    canonical normalization in the literature; none was found.
 ---
 
 ::: {.problem}
@@ -160,7 +180,7 @@ $$
 L\cong\PP^p\subseteq\PP^n
 $$
 of complementary dimension to $Y$.
-By repeated Bertini and the generic-intersection statement of Chapter I, $L$ meets $Y$ transversely in a reduced set
+By Bertini's theorem (II, 8.18, printed p. 179), for a general $L$ the scheme $Y\cap L$ is regular of dimension $0$, hence a reduced set of distinct points; by Bézout's theorem (I.7.7, printed p. 53) applied to the $n-p$ successive general hyperplane sections, each meeting the previous one properly with intersection multiplicity $1$ everywhere, the degree of $Y\cap L$ is $\deg Y$. Thus
 $$
 Z=Y\cap L=\{P_1,\ldots,P_d\},
 \qquad d=\deg Y.
@@ -183,13 +203,33 @@ $$
 \eta_L(Z)=d\cdot1.
 $$
 
-Under the identifications of Exercise III.7.3, restriction from $\PP^n$ to a linear $\PP^p$ sends the standard generator of $H^p(\PP^n,\Omega^p)$ to the standard generator of $H^p(L,\Omega_L^p)$; this is the iterated boundary map coming from the Euler sequence, and the coordinate restriction commutes with that construction.
-Hence the scalar multiplying the generator upstairs is also $d$.
-Thus
+What has been shown so far is the identity in $H^p(L,\Omega_L^p)$,
 $$
-\eta(Y)=(\deg Y)\cdot1,
+i^*\eta_{\PP^n}(Y)=d\cdot 1_L ,
 $$
-proving part (b).
+where $1_L$ is the class with $\langle 1_L,\alpha_L\rangle_L=t_L(\alpha_L)$ for $\alpha_L=1\in H^0(L,\OO_L)$; the scalar $d$ still has to be read in $H^p(\PP^n,\Omega^p)$, and that is what the trace normalization of the statement supplies.
+
+Let $\alpha_0=i_*1\in H^{n-p}(\PP^n,\Omega_{\PP^n}^{n-p})$ be the Gysin pushforward of the unit class of $L$; it is a nonzero element, and $H^{n-p}(\PP^n,\Omega^{n-p})\cong k$ by Exercise III.7.3, so $\alpha_0$ spans that space. Because the normalized traces are compatible with the Gysin maps of nonsingular closed immersions, the projection formula for $i:L\hookrightarrow\PP^n$ gives, for every $\beta\in H^p(\PP^n,\Omega^p)$,
+$$
+t_{\PP^n}\bigl(\beta\smile i_*1\bigr)
+=t_L\bigl(i^*\beta\smile 1\bigr).
+$$
+By definition of $\eta$ and step [](#s2){.pf-ref},
+$$
+t_{\PP^n}\bigl(\eta(Y)\smile i_*1\bigr)
+=t_L\bigl(i^*\eta(Y)\smile1\bigr)
+=\langle i^*\eta(Y),1\rangle_L
+=d ,
+$$
+while the same formula with $\beta=1_{\PP^n}$, the class with $\langle 1_{\PP^n},\alpha\rangle=t_{\PP^n}(\alpha)$, gives
+$$
+t_{\PP^n}\bigl(1_{\PP^n}\smile i_*1\bigr)=t_L\bigl(1\bigr)=1 .
+$$
+Both $\eta(Y)$ and $d\cdot1_{\PP^n}$ therefore pair equally with the spanning class $\alpha_0=i_*1$, and the Serre pairing is linear and nondegenerate, so
+$$
+\eta(Y)=(d)\cdot1_{\PP^n},
+$$
+which is part (b) with $d=\deg Y$.
 
 :::
 
@@ -282,22 +322,23 @@ $$
 =t_Y(j^*\alpha).
 $$
 
-On a cover on which $Y$ is given by the equations $f_i$, the standard local description of the Gysin/residue map for a Cartier divisor sends a form $\beta$ on $Y$ to the Čech class represented by
+On a cover on which $Y$ is given by the equations $f_i$, the Gysin map of the divisor $Y$ is the Poincaré residue: for a form $\beta$ on $Y$, its image $j_*\beta\in H^n(X,\Omega_X^n)$ is represented by the Čech class
 $$
 \frac{df_i}{f_i}\wedge\widetilde\beta_i
 -
 \frac{df_j}{f_j}\wedge\widetilde\beta_j,
 $$
-where the $\widetilde\beta_i$ are local lifts to $X$.
-Equivalently, cup product with the divisor Gysin class is cup product with the Čech cocycle
+where the $\widetilde\beta_i$ are local lifts to $X$, that is, $j_*\beta$ is the cup product of $\beta$ with the Čech cocycle
 $$
-\left\{\frac{df_i}{f_i}-\frac{df_j}{f_j}\right\}_{ij}.
+\left\{\frac{df_i}{f_i}-\frac{df_j}{f_j}\right\}_{ij}
 $$
+of step [](#s5){.pf-ref}. The constant is $+1$: on a curve, with $f$ a local parameter at $P$ and $\beta=1$, this class is $df/f$, and Theorem III.7.14.1(c) (printed p. 247) gives $\operatorname{res}_P(f^{-1}df)=v_P(f)\cdot1=1$. Hartshorne states the residue only in dimension one --- Remark III.7.14 (printed p. 247) says that in general the trace is known only to exist --- so in dimension above one the displayed formula is taken as the definition of the Gysin map, which is one of the normalizations the problem statement fixes.
 Compatibility of the normalized trace with this residue map gives
 $$
 t_X\bigl(c(\mcl(Y))\smile\alpha\bigr)
 =t_Y(j^*\alpha).
 $$
+The constant can be checked independently in the case $X=\PP^n$, $Y$ a hypersurface: by step [](#s3){.pf-ref} $\eta(Y)$ is $(\deg Y)$ times the class of a point, and $c(\mcl(Y))=c(\OO(\deg Y))=\deg Y$ times the class of a hyperplane, so the two sides agree there.
 Thus
 $$
 \langle c(\mcl(Y)),\alpha\rangle_X
@@ -325,8 +366,13 @@ Step [](#s1){.pf-ref} proves part (a), steps [](#s2){.pf-ref} and [](#s3){.pf-re
 :::
 
 ::: {.remark title="Trace normalization"}
-As written in the source, the exercise suppresses a normalization needed to make its numerical assertions canonical.
-In III.7.1 a dualizing object is a pair consisting of a sheaf and a trace, and replacing a trace by a nonzero scalar multiple gives another valid dualizing pair after rescaling the identification with the canonical sheaf.
-Corollary III.7.12 identifies the dualizing sheaf with $\omega_X$, but the text does not there state a scalar normalization of that identification; Remark III.7.14 explicitly notes that at that stage little is known about the trace map beyond its existence.
-The standard trace/Gysin normalization stated in the problem is what makes $t_P(1)=1$, transverse pullback of fundamental classes, and the divisor identity in part (d) compatible simultaneously.
+As written in the source, the exercise suppresses a normalization needed to make its numerical assertions canonical, and the printed text supplies no canonical one. The passages are these.
+
+III.7.1(a) is the assertion $H^n(X,\omega_X)\cong k$ for $X=\PP^n_k$, and it continues "Fix one such isomorphism"; the isomorphism is a choice, so the trace $t$ it determines is defined only up to a nonzero scalar. III.7.2 (printed p. 241) makes the trace part of the data: a dualizing sheaf is a *pair* $(\omega_X^\circ,t)$, uniqueness is uniqueness of the pair, and replacing $t$ by $ct$ gives a different pair representing the same functor. Corollary III.7.12 (printed p. 246) then says only that for $X$ projective and nonsingular $\omega_X^\circ$ is *isomorphic* to $\omega_X$; it does not normalize the isomorphism, and the isomorphism its proof produces comes from $\wedge^r(\mathcal I/\mathcal I^2)^\vee$ tensoring, not from a normalization of $t$. Remark III.7.14 (printed p. 247) states the position: "even for a nonsingular projective variety $X$, we don't have much information about the trace map $t:H^n(X,\omega)\to k$. We know only that it exists."
+
+A natural choice does exist on $\PP^n$ and the book records it without using it: Remark III.7.1.1 (printed pp. 240--241) gives the Čech cocycle
+$$\alpha=\frac{x_0^n}{x_1\cdots x_n}\,d\Bigl(\frac{x_1}{x_0}\Bigr)\wedge\cdots\wedge d\Bigl(\frac{x_n}{x_0}\Bigr),$$
+which "determines a generator of $H^n(X,\omega)$, which is stable under change of variables". That fixes one isomorphism in III.7.1(a), but nothing in the text compares it with the trace on a point or on a divisor.
+
+The other side, part (d), is canonical: Appendix A defines the Chern classes in the Chow ring $A(X)$, with the normalization C1 (printed p. 430), "If $\mathcal E\cong\mathcal L(D)$ for a divisor $D$, $c_t(\mathcal E)=1+Dt$", so $c_1$ of a line bundle is the class of its divisor with no scalar freedom. The exercise's numerical identities can therefore hold only if the trace is normalized to match that integer, which is what the statement on this card fixes: $t_{\Spec k}=\operatorname{id}$, additivity on finite reduced $k$-schemes, and compatibility with the Gysin maps. Part (a) is exactly the first of these, with $Y=P$ a closed point, and step [](#s3){.pf-ref} uses the third.
 :::

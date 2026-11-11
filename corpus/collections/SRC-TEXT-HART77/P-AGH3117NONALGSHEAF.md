@@ -34,6 +34,24 @@ audit:
   by: claude
   date: 2026-11-09
   note: 'Read III.11.7 against Hartshorne p. 281 and Dongryul Kim, Solutions to Hartshorne, p. 213. Steps s1-s5, s7 and s8 check out. Repaired step s6: its positive-characteristic argument claimed that the first nonzero Cech term of the transition function of L^p must be a coboundary, which does not exclude the cross terms of the formal units. Step s6 now compares coefficients in the two formal charts Spf k[t][[s]] and Spf k[t^{-1}][[s/t]] and shows that no power u^m of u = 1 + z^2/(xy) is a coboundary, so the class of L has infinite order in the kernel. Against Kim: his 11.7(a) asserts without proof that the kernel is a k-vector space and computes only H^2 vanishing and surjectivity; his remark that the k-vector-space structure is the inverse limit of k-vector spaces is the assertion under discussion.'
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Second step-by-step pass. Checked s1 (H^0(X_r)=k), s2 (the square-zero
+    Picard sequence and H^2(O_Y(-rd))=0), s3 (Pic Xhat = lim Pic X_r and
+    K_r/K_{r+1} = V_r, the transition maps being surjective), s4 (dim V_r =
+    r d^2 + d(d-3)/2 from the hypersurface sequence and h^2(P^2,O(-m)) =
+    C(m-1,2)), s5 (char 0: log and exp identify 1+Ihat with Ihat, so K is a
+    k-vector space with the infinite descending chain of subspaces K_r), and
+    s7. Corrected s6: its coefficient comparison was written for 1 +
+    s^{2m}/t^m, which equals u^m only for m a power of p; the step now
+    reduces to m = p^a first (if u^M = A/B then u^{p^a M} = A^{p^a}/B^{p^a})
+    and then runs the same comparison, and the sentence after it was
+    adjusted to say so. The characteristic-p conclusion is unchanged and is
+    the one recorded: the kernel is a filtered formal group with infinite-
+    dimensional successive quotients, and it is not a k-vector space when
+    char k = p.
 ---
 
 ::: {.problem}
@@ -395,7 +413,11 @@ $$
 A=\sum_{i\ge0}a_i(t)s^i\in k[t][[s]],\qquad
 B=\sum_{j\ge0}b_j(t^{-1})s'^j\in k[t^{-1}][[s/t]]
 $$
-units of the respective rings. Suppose $A/B=1+s^{2m}/t^m$, so that
+units of the respective rings. It is enough to exclude the powers $m=p^a$: if $u^M=A/B$ were a coboundary, then the freshman's dream in characteristic $p$ gives $u^{p^aM}=A^{p^a}/B^{p^a}$, again a quotient of a unit of $k[t][[s]]$ by one of $k[t^{-1}][[s/t]]$. So let $m=p^a$. Then the freshman's dream gives
+$$
+u^m=\Bigl(1+\frac{s^2}{t}\Bigr)^{m}=1+\frac{s^{2m}}{t^{m}},
+$$
+and it is this element that is excluded. Suppose $A/B=1+s^{2m}/t^m$, so that
 $$
 A=B\Bigl(1+\frac{s^{2m}}{t^m}\Bigr).
 $$
@@ -417,8 +439,9 @@ $$
 The left-hand side is a polynomial plus $-t^{-m}$, so its Laurent expansion
 contains the monomial $t^{-m}$ with coefficient $-1$, while every element of
 $t^{-2m}k[t^{-1}]$ is a $k$-linear combination of $t^{-k}$ with $k\ge2m$. This
-is impossible. Hence $u^m$ is not a coboundary for any $m\ge1$. In particular
-$\mathfrak L$ is nontrivial and has infinite order in $K$.
+is impossible. Hence $u^m$ is not a coboundary for $m=p^a$, and by the reduction
+above for no positive $m$ at all. In particular $\mathfrak L$ is nontrivial and
+has infinite order in $K$.
 
 The additive group of a $k$-vector space is killed by its prime $p$, so a group
 containing an element of infinite order is not a $k$-vector space. Since the
