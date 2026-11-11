@@ -2,18 +2,25 @@
 schema: qual/card@1
 id: E-A7HJX
 kind: problem
-title: Kernels under surjective composites of homomorphisms
+title: Kernels under a surjection and a quotient
 classification:
   areas:
   - topology
   topics:
-  - Fundamental Group
+  - Free Groups
 relations: []
 review: draft
 audit:
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Munkres §73 Exercise 3, printed p. 445, the lemma the proof of Exercise 2 uses for its induction. No
+    complete published solution located; the searches are listed in the COMPLAINTS.md entry for §61--§73 of
+    SRC-TEXT-MUN00, and Murayama's set skips it. The two steps the printed proof asks for are steps 1 and 2
+    below; the reverse inclusion N contained in ker(g o f) is step 1's second half, which the printed outline
+    leaves implicit. Checked against the definition of the least normal subgroup (printed p. 418) and Lemma
+    68.9 (printed p. 420).
 ---
 
 ::: {.exercise}
@@ -27,143 +34,40 @@ Show that $f(N)$ is normal; conclude that $\ker(g \circ f) = f^{-1}(\ker g) \sub
 :::
 
 ::: {.solution}
+
 ::: pf
 
-::: {.pf-step #n-in-kernel}
+::: pf-step
 
-$N \subseteq \ker(g \circ f)$.
+$f(N)$ is normal in $H$.
 
 ::: pf-proof
 
-::: pf-step
-
-$\ker(g \circ f) = \{x \in G \mid g(f(x)) = 1_K\} = f^{-1}(\ker g)$.
+For $n\in N$ and $h\in H$ write $h=f(\tilde h)$, possible since $f$ is onto. Then $h f(n)h^{-1}=f(\tilde h n \tilde h^{-1})\in f(N)$ because $N$ is normal in $G$. So $f(N)$ is a normal subgroup of $H$.
 
 :::
-
-::: pf-step
-
-For any $k \in \ker f$, $(g \circ f)(k) = g(f(k)) = g(1_H) = 1_K$, so $\ker f \subseteq \ker(g \circ f)$.
 
 :::
 
 ::: pf-step
 
-For $x_0$, $(g \circ f)(x_0) = g(f(x_0)) = 1_K$ because $f(x_0) \in \ker g$, so $x_0 \in \ker(g \circ f)$.
-
-:::
-
-::: pf-step
-
-Because $\ker(g \circ f)$ is the kernel of a homomorphism, it is a normal subgroup of $G$.
-
-:::
-
-::: pf-step
-
-Since $N$ is defined as the least normal subgroup of $G$ containing $\ker f$ and $x_0$, we have $N \subseteq \ker(g \circ f)$.
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #fn-normal}
-
-The image $f(N)$ is a normal subgroup of $H$.
+$N\subseteq\ker(g\circ f)$.
 
 ::: pf-proof
 
-::: pf-step
-
-Let $h \in H$ and $y \in f(N)$.
+Both $\ker f\subseteq\ker(gf)$ (as $f$ kills it) and $x_0\in\ker(gf)$, because $f(x_0)\in\ker g$ by hypothesis. Since $\ker(gf)$ is a normal subgroup of $G$ containing those two, it contains the least such group $N$.
 
 :::
-
-::: pf-step
-
-Since $f$ is surjective, choose $a \in G$ such that $f(a) = h$.
 
 :::
 
 ::: pf-step
 
-Choose $n \in N$ such that $f(n) = y$.
-
-:::
-
-::: pf-step
-
-Then $h y h^{-1} = f(a) f(n) f(a)^{-1} = f(a n a^{-1})$.
-
-:::
-
-::: pf-step
-
-Because $N \trianglelefteq G$, $a n a^{-1} \in N$, so $f(a n a^{-1}) \in f(N)$.
-
-:::
-
-::: pf-step
-
-Thus $f(N)$ is a normal subgroup of $H$.
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #kerg-in-fn}
-
-$\ker g \subseteq f(N)$.
+$\ker(g\circ f)=N$.
 
 ::: pf-proof
 
-::: pf-step
-
-Since $x_0 \in N$, $f(x_0) \in f(N)$.
-
-:::
-
-::: pf-step
-
-By hypothesis, $\ker g$ is the least normal subgroup of $H$ containing $f(x_0)$.
-
-:::
-
-::: pf-step
-
-Since $f(N)$ is a normal subgroup of $H$ (step [](#fn-normal){.pf-ref}) containing $f(x_0)$, it follows that $\ker g \subseteq f(N)$.
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-$\ker(g \circ f) \subseteq N$, and hence $\ker(g \circ f) = N$.
-
-::: pf-proof
-
-::: {.pf-step #preimage-bound}
-
-Taking preimages under $f$ of the inclusion in step [](#kerg-in-fn){.pf-ref} gives:
-$$\ker(g \circ f) = f^{-1}(\ker g) \subseteq f^{-1}(f(N)).$$
-
-:::
-
-::: {.pf-step #preimage-image}
-
-$f^{-1}(f(N)) = N$.
-
-::: pf-proof
-
-Clearly $N \subseteq f^{-1}(f(N))$.
-Conversely, if $x \in f^{-1}(f(N))$, then $f(x) = f(n)$ for some $n \in N$, so $f(x n^{-1}) = 1_H$ and $x n^{-1} \in \ker f \subseteq N$; hence $x = (x n^{-1}) n \in N$.
+$\ker(gf)=f^{-1}(\ker g)$. Since $\ker g$ is the least normal subgroup of $H$ containing $f(x_0)$, it is contained in every normal subgroup of $H$ containing $f(x_0)$; by step 1, $f(N)$ is normal and contains $f(x_0)$, so $\ker g\subseteq f(N)$. Hence $\ker(gf)\subseteq f^{-1}f(N)=\theset{g'\in G: f(g')\in f(N)}=N\cdot\ker f\subseteq N$, the last inclusion because $\ker f\subseteq N$. With step 2, $\ker(gf)=N$.
 
 :::
 
@@ -171,14 +75,9 @@ Conversely, if $x \in f^{-1}(f(N))$, then $f(x) = f(n)$ for some $n \in N$, so $
 
 ::: pf-qed
 
-Steps [](#preimage-bound){.pf-ref} and [](#preimage-image){.pf-ref} give $\ker(g \circ f) \subseteq N$, and step [](#n-in-kernel){.pf-ref} gives the reverse inclusion.
+$\ker(g\circ f)$ is the least normal subgroup of $G$ containing $\ker f$ and $x_0$.
 
 :::
 
 :::
-
-:::
-
-:::
-
 :::

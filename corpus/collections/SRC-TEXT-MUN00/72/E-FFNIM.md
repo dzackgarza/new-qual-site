@@ -12,8 +12,16 @@ relations: []
 review: draft
 audit:
 - event: solution-written
-  by: muse-spark-1.2
-  date: 2026-08-30
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Munkres §72 Exercise 1, printed p. 441. No complete published solution located; the searches are listed in
+    the COMPLAINTS.md entry for §61--§73 of SRC-TEXT-MUN00. The proof is the proof of Theorem 72.1 (printed
+    pp. 439--440) with the disk B^2 replaced by B^n and the circle S^1 by S^{n-1}: steps 1 and 2 below are that
+    proof, read on its page, with the two homotopy types it uses (B^2 - 0 onto S^1) replaced by the
+    corresponding ones in dimension n. The theorem itself does not apply, since it is stated for a two-cell,
+    so the argument is carried over and the place where n > 2 enters is the simple connectivity of S^{n-1},
+    Theorem 59.3 (printed p. 369). Corollary 70.4 (printed p. 432) is used as in the book's step 2.
 ---
 
 ::: {.exercise}
@@ -26,47 +34,17 @@ If $n > 2$, what can you say about the homomorphism of $\pi_1(A, a)$ into $\pi_1
 
 ::: {.solution}
 
+For $n>2$ the homomorphism induced by inclusion is an isomorphism: adjoining a cell of dimension at least three changes no fundamental group.
+
 ::: pf
 
 ::: pf-step
 
-Cell attachment description:
+$A$ is a deformation retract of the open set $U=X-h(\mathbf{0})$.
 
 ::: pf-proof
 
-::: pf-step
-
-The space $X$ is homeomorphic to the adjunction space $A \cup_\phi B^n$ formed by attaching an $n$-cell $B^n$ to $A$ along the attaching map $\phi = h\restrict_{S^{n-1}}: S^{n-1} \to A$.
-
-::: pf-proof
-
-definition of cell attachment quotient topology.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Open cover for Seifert–van Kampen Theorem:
-
-::: pf-proof
-
-::: pf-step
-
-Let $p = h(0) \in X \setminus A$ be the center of the attached cell.
-Define the open subsets:
-$$
-U = X \setminus \{p\}, \qquad V = h\big(\{x \in B^n \mid \norm{x} < 3/4\}\big).
-$$
-
-::: pf-proof
-
-openness in the quotient topology.
+This is step 1 of the proof of Theorem 72.1 (printed pp. 439--440), which uses only that $\pi:B^n\to h(B^n)$, the restriction of $h$ to its image, is a quotient map, that $(B^n-\mathbf{0})\times I$ is saturated and open in $B^n\times I$, and that $B^n-\mathbf{0}$ deformation retracts onto $S^{n-1}$; the last holds for every $n\ge2$. Hence the deformation retraction descends to $h(B^n)-h(\mathbf{0})$, and is extended by the identity on $A$.
 
 :::
 
@@ -74,17 +52,11 @@ openness in the quotient topology.
 
 ::: pf-step
 
-**Retraction of $U$ onto $A$:**
-The punctured ball $B^n \setminus \{0\}$ deformation retracts radially onto the boundary $S^{n-1}$.
-This radial deformation extends continuously to $X \setminus \{p\}$ by fixing $A$ pointwise, so $A$ is a deformation retract of $U$.
-Thus the inclusion $A \hookrightarrow U$ induces an isomorphism:
-$$
-\pi_1(A, a) \cong \pi_1(U, a).
-$$
+$V=X-A$ is simply connected and $U\cap V$ is simply connected, since $n>2$.
 
 ::: pf-proof
 
-homotopy invariance of fundamental group.
+By the book's step 2 (printed p. 440), $\pi$ restricts to a homeomorphism of $\operatorname{Int}B^n$ onto $V=X-A$, so $V$ is homeomorphic to an open ball, which is convex and hence contractible. Similarly $U\cap V=V-h(\mathbf{0})$ is homeomorphic to $\operatorname{Int}B^n-\mathbf{0}$, which deformation retracts onto $S^{n-1}$; and $S^{n-1}$ is simply connected for $n-1\ge2$ by Theorem 59.3 (printed p. 369). So $\pi_1(U\cap V)=0$.
 
 :::
 
@@ -92,13 +64,11 @@ homotopy invariance of fundamental group.
 
 ::: pf-step
 
-**Contractibility of $V$:**
-$V \cong \operatorname{Int}(B^n)$ is homeomorphic to the open Euclidean ball, which is convex and contractible.
-Thus $\pi_1(V) = 0$.
+The inclusion $U\hookrightarrow X$ induces an epimorphism $\pi_1(U,a)\to\pi_1(X,a)$ with kernel the least normal subgroup containing the image of $\pi_1(U\cap V,a)$.
 
 ::: pf-proof
 
-contractibility of open Euclidean balls.
+$U$ and $V$ are open in $X$ and $X=U\cup V$; $U$ is path connected because $A$ is a deformation retract of it, $V$ is contractible, and $U\cap V$ is path connected, being homeomorphic to $\operatorname{Int}B^n-\mathbf{0}$ for $n\ge2$. Corollary 70.4 (printed p. 432) applies, $V$ being simply connected.
 
 :::
 
@@ -106,75 +76,21 @@ contractibility of open Euclidean balls.
 
 ::: pf-step
 
-**Simply-connectedness of $U \cap V$ for $n > 2$:**
-The intersection $U \cap V = h(\{x \in B^n \mid 0 < \norm{x} < 3/4\})$ is homeomorphic to the punctured Euclidean ball $\RR^n \setminus \{0\}$, which deformation retracts onto the sphere $S^{n-1}$.
-Since $n > 2$, the dimension $n - 1 \ge 2$, so $S^{n-1}$ is simply connected:
-$$
-\pi_1(U \cap V) \cong \pi_1(S^{n-1}) = 0.
-$$
+$\pi_1(A,a)\to\pi_1(X,a)$ is an isomorphism.
 
 ::: pf-proof
 
-$\pi_1(S^k) = 0$ for all $k \ge 2$.
+By step 3 the kernel of $\pi_1(U,a)\to\pi_1(X,a)$ is the least normal subgroup containing the image of the trivial group $\pi_1(U\cap V,a)$, hence is trivial; so $\pi_1(U,a)\to\pi_1(X,a)$ is an isomorphism. By step 1 the inclusion $A\hookrightarrow U$ induces an isomorphism $\pi_1(A,a)\to\pi_1(U,a)$. The composite of the two is induced by inclusion $A\hookrightarrow X$, so it is an isomorphism.
 
 :::
 
 :::
 
-:::
+::: pf-qed
 
-:::
-
-::: {.pf-step #s3}
-
-Seifert–van Kampen Theorem:
-
-::: pf-proof
-
-::: pf-step
-
-Choose $b\in U\cap V$ and a path in $U$ from $a$ to $b$. The intersection is path connected, and changing the basepoint along this path identifies the fundamental group of $U$ at $b$ with $\pi_1(U,a)$. By the Seifert–van Kampen Theorem at $b$:
-$$
-\pi_1(X, a) \cong \pi_1(U, a) *_{\pi_1(U \cap V)} \pi_1(V) \cong \pi_1(A, a) *_0 0 \cong \pi_1(A, a).
-$$
-
-::: pf-proof
-
-Seifert–van Kampen Theorem with trivial amalgamating subgroup.
+For $n>2$ the inclusion induces an isomorphism $\pi_1(A,a)\cong\pi_1(X,a)$; equivalently, the attaching map of the $n$-cell kills no element of $\pi_1(A,a)$, because $\pi_1(S^{n-1})=0$.
 
 :::
 
 :::
-
-::: pf-step
-
-Transporting back along the chosen path gives the isomorphism $\pi_1(A, a) \xrightarrow{\sim} \pi_1(X, a)$ induced by the inclusion map $i: A \hookrightarrow X$.
-
-::: pf-proof
-
-inclusion factorization $A \hookrightarrow U \hookrightarrow X$.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-Conclusion:
-For $n > 2$, the inclusion-induced map $i_*: \pi_1(A, a) \to \pi_1(X, a)$ is an isomorphism. Q.E.D.
-
-::: pf-proof
-
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
-
-:::
-
-:::
-
-:::
-
 :::
