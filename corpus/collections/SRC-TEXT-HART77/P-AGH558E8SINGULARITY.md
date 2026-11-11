@@ -42,6 +42,32 @@ audit:
     double points, each resolved by one further blowup. Thus the count is
     3+1+1+3=8. Tracking the strict transforms gives final edges
     E1-E4-E3-E7-E5-E6-E2 and E5-E8, the displayed E8 diagram.
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read the printed exercise at Hartshorne, Algebraic Geometry (1977), V.5,
+    exercise 5.8, printed page 420. Checked part (a) as the card records it and
+    part (b) step by step: the first three blowups x^2+y^3+z^5, then
+    x_1^2+zy_1^3+z^3, then the two germs X^2+yZ+y^2Z^3 and X^2+zY(Y+z), the
+    last of which has ordinary double points at Z = 0, Z = -1 and V = 0, and
+    the incidence chain E_1-E_4-E_3-E_7-E_5-E_6-E_2 with E_8 meeting E_5, which
+    is the E_8 diagram; the count of eight is consistent with the Milnor number
+    (2-1)(3-1)(5-1) = 8. Searched outside the twelve retained sets and found a
+    complete published computation of the eight blowups: Algebraic Geometry II,
+    National Taiwan University, 2020 Spring, Chapter V homework, Exercise 8 of
+    section 5 (solution by Yi-Heng), PDF p. 21
+    (tmp/sources/ntu-ag2-chapter5.pdf), lists the strict transforms of the first,
+    second and third blowups, the two charts of the third, the fourth blowup of
+    both germs, the fifth and sixth, and ends "the inverse image of P is a union
+    of eight projective lines corresponding to E8". Its four intermediate
+    equations agree with the card's. Miles Reid, Chapters on Algebraic Surfaces
+    (arXiv alg-geom/9602006), Chapter 4 section 4.2, printed p. 82, proves the
+    D_4 case with the divisor computation in full and lists E_8: x^2+y^3+z^5=0
+    with "the resolution is a bunch of -2-curves whose configuration is given by
+    the corresponding Dynkin diagram", which states the result without the eight
+    blowups. Not checked: whether the blowups the card writes are minimal, and
+    Park's part (a), which the card already records as stopping there.
 ---
 
 ::: {.problem}
@@ -659,4 +685,10 @@ exceptional incidence graph required in part (b).
 
 ::: {.remark title="Published solution"}
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.5.8, PDF pp. 300--302. Part (a) is complete: $z$ is irreducible because $A/(z)=k[x,y]/(x^2+y^3)$ is a domain, $t=-(u^2+v^3)\in k[u,v]$ from $u^2+v^3=t^6(x^2+y^3)=-t$, $A[z^{-1}]=k[u,v,t^{-1}]$, and $A$ is a UFD because the localization is one and an irreducible of $A$ not in $(z)$ stays irreducible and hence prime there. Steps [](#z-is-prime){.pf-ref}, [](#coordinate-change-ufd){.pf-ref} and [](#a-is-ufd){.pf-ref} are that argument. Part (b) he does not prove: his solution is "Step 1: Start your computer. Step 2: Enter the following commands into Singular", followed by a manual computation of the first two or three blowups, which reaches the local equation $X^2+zY(Y+z)=0$ and then stops at "etc, etc." Steps [](#third-blowup-two-points){.pf-ref} to [](#eight-blowups-e8-diagram){.pf-ref} carry the sequence to the eighth blowup and record the $E_8$ incidences. Recorded in COMPLAINTS for (b).
+:::
+
+::: {.remark title="Published solution"}
+A complete published computation of part (b) exists. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 8 of §5 (solution by Yi-Heng), PDF p. 21, records the successive strict transforms chart by chart: (i) $x^2+y^3+z^5$ becomes $x_1^2+zy_1^3+z^3$ in the chart $z_1=1$; (ii) that becomes $x_2^2+z_2y_1^2+y_1z^3$ in the chart $y_2=1$; (iii) that becomes $x_3^2+z_3y_1+y_1^2z_3^3$ in the chart $y_3=1$ and $x_3^2+z_2y_3^2+y_3z_2^2$ in the chart $z_3=1$; (iv) the first is resolved by one further blowup; (v) the second acquires the three germs $x_4^2+z_4y_3+y_3z_4^2$, $x_4^2+z_2y_4^2+y_4z_2$ and $x_4^2+z_4y_3+y_3z_4^2$ at $z_4=-1$; (vi) and (vii)--(viii) resolve those, and "the inverse image of $P$ is a union of eight projective lines corresponding to $E_8$". The intermediate equations are the card's, and that last sentence is the second request of part (b).
+
+Miles Reid, *Chapters on Algebraic Surfaces* (arXiv alg-geom/9602006), Chapter 4, §4.2, printed p. 82, carries out the $D_4$ resolution in full, including the divisor computation $2\Gamma_0^2+4=0$ that gives $\Gamma_0^2=-2$, and lists the equations $A_n:x^2+y^2+z^{n+1}$, $D_n:x^2+y^2z+z^{n-1}$, $E_6:x^2+y^3+z^4$, $E_7:x^2+y^3+yz^3$, $E_8:x^2+y^3+z^5$, with "the resolution is a bunch of $-2$-curves whose configuration is given by the corresponding Dynkin diagram"; that is the result of part (b) without the eight blowups.
 :::
