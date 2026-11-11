@@ -20,6 +20,18 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read Block, Nonsingular Varieties (Columbia, 25 July 2017), Lemma 18 and
+    Proposition 17 with its proof, printed p. 4, which proves the projective
+    Jacobian criterion exactly as the card states it. Checked the card
+    against it: row scaling by lambda^{d_i-1}, the affine Jacobian as the
+    deleted-column submatrix, and Euler's identity at a point of Y writing
+    the deleted column as a combination of the others in every
+    characteristic. Confirmed that the card's chart D_+(x_l) is arbitrary
+    where Block takes U_0, which changes nothing.
 ---
 
 ::: {.problem}
@@ -164,8 +176,10 @@ Steps [](#affine-chart-equations){.pf-ref}, [](#affine-jacobian-is-submatrix){.p
 :::
 
 ::: {.remark title="Published solution"}
+The complete published argument is Adam B. Block, *Nonsingular Varieties* (Columbia, 25 July 2017), Proposition 17 with Lemma 18 and the proof following it, printed p. 4. Lemma 18 is Euler's identity $\sum_{i=0}^n x_i\,\partial f/\partial x_i=df$ proved on monomials. Proposition 17 states the criterion in the same form as the card, "Then $Y$ is nonsingular at $P$ if and only if $\operatorname{rk}J_P=n-r$", and its proof is the card's three steps: the rows of $J_{P'}$ are the rows of $J_P$ scaled by the constants $\lambda^{d_i-1}$ for $P'=\lambda P$; the affine Jacobian on $U_0$ is the submatrix of $J_P$ with the column $\partial f_i/\partial x_0$ deleted; and Euler's identity, evaluated where $f_i(P)=0$, writes that column as $-\sum_{j\ge1}y_j\,\partial f_i/\partial y_j$ with $y_j=x_j/x_0$, so the rank is unchanged. Block restricts to the chart $U_0$, which the card replaces by an arbitrary chart $D_+(x_\ell)$; the argument is the same.
+
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 5.8.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.8.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.8, PDF p. 47: "The hint is the answer", with no argument.
-No retained set proves this exercise, so the card's proof is the only one available; it is recorded in COMPLAINTS.md as a card with no complete published solution. Its three steps are exactly the printed hint: row scalings by $\lambda^{d_i-1}$ show the rank is independent of the representative, dehomogenizing on $D_+(x_\ell)$ gives the affine Jacobian as the columns other than $\ell$, and Euler's identity evaluated at a point of $Y$ writes column $\ell$ as $-\sum_{j\ne\ell}a_jC_j$, so nothing is lost by deleting it.
+No retained set proves this exercise; the argument of Block's Proposition 17 is the published one, and it is the printed hint: row scalings by $\lambda^{d_i-1}$ show the rank is independent of the representative, dehomogenizing on $D_+(x_\ell)$ gives the affine Jacobian as the columns other than $\ell$, and Euler's identity evaluated at a point of $Y$ writes column $\ell$ as $-\sum_{j\ne\ell}a_jC_j$, so nothing is lost by deleting it.
 :::
