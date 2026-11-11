@@ -40,6 +40,36 @@ audit:
     blowup geometry and ordinary-singularity calculation against V.4.2; the
     inseparable case is attributed only to the Hirschfeld theorem explicitly
     cited by the retained source, rather than extrapolated from Bertini.
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read the printed exercise at Hartshorne, Algebraic Geometry (1977), V.4,
+    exercise 4.3, printed page 407. Checked the multiplicity accounting of steps
+    s1 to s6 against V.4.2, printed page 406: for a quadratic transformation
+    centred at P, A, B with multiplicities m, 0, 0 the strict transform has
+    degree 2d-m and the multiplicities at the three points corresponding to the
+    fundamental lines PA, PB, AB are d-m, d-m and d, so the three contraction
+    points are ordinary d-fold and (d-m)-fold points formed from the d and d-m
+    transverse intersection points of those lines with C. Checked that the
+    auxiliary choice in step choose-auxiliary-points is made with lines outside
+    the tangent cone at P, which is what makes i_P(C,PA) = mu_P(C), and that
+    separability of the projection is carried as a hypothesis on that step.
+    Searched outside the twelve retained sets: Egbert, PDF p. 286, is the single
+    line "See Algebraic Curves over Finite Fields by Hirschfeld, Theorem 3.27",
+    and Hirschfeld's book is not in tmp/sources; Algebraic Geometry II,
+    National Taiwan University, 2020 Spring, Chapter V homework, Exercise 3 of
+    section 4, PDF p. 15 (tmp/sources/ntu-ag2-chapter5.pdf), replaces the
+    resolution blowups by quadratic transformations with two auxiliary centres
+    and then analyses the multiplicity at P in a single chart, ending "so
+    induction on this then we are done" without the case where every tangent
+    direction must be separated; Yang Pi-Yeh, Hartshorne Solutions, exercise
+    5.4.3, printed p. 109 (tmp/sources/lfwin-hartshorne-solutions.pdf), chooses
+    the two points so that P1Pi meets C transversally at P1, notes
+    mu(R_i) < mu(P_1), and concludes that the process stops with only ordinary
+    singularities, but does not show that the contracted points are ordinary.
+    Not checked: Hirschfeld's Theorem 3.27, which the card takes as its source
+    for the inseparable case and which is not available here.
 ---
 
 ::: {.problem}
@@ -300,4 +330,10 @@ inseparable positive-characteristic case from the source cited for V.4.3.
 
 ::: {.remark title="Published solution"}
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.4.3, PDF p. 286: the whole of his solution is "See Algebraic Curves over Finite Fields by Hirschfeld, Theorem 3.27", which is not among the retained files, so there is no argument to check. The reduction above is that of the standard proof: (3.8) resolves $C$ by point blowups, and one point blowup at a bad point $P$ is realized by a quadratic transformation whose two other centres are chosen so that the joining lines meet $C$ at $P$ in exactly $\mu_P(C)$ and elsewhere transversely, which makes the three contracted lines ordinary multiple points and leaves every other germ unchanged; the only case it does not cover is an inseparable projection, steps [](#choose-auxiliary-points){.pf-ref} to [](#separable-case-induction){.pf-ref} being the separable one and [](#inseparable-case){.pf-ref} the citation he gives. Recorded in COMPLAINTS.
+:::
+
+::: {.remark title="Published solutions searched"}
+The published treatments of this exercise are incomplete, so the card's own proof is what was checked against the book. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 3 of §4 (solution by Shuang-Yen Lee), PDF p. 15, does choose two auxiliary centres through the bad point and analyse the chart $x=(t+\mu)y$, and its intent is the argument of steps [](#quadratic-transform-realizes-blowup){.pf-ref} to [](#one-blowup-replaced-safely){.pf-ref}; but its case analysis of the multiplicity at the image point ends "if there's a $k$ such that $e'_k+k=e$ since we can factor into linear equations such that every direction has multiplicity less than $e$ $…$ induction on this then we are done", and it never shows that the three contracted points are ordinary, which is the content of step [](#contraction-points-ordinary){.pf-ref}.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.4.3, printed p. 109, states the criterion correctly: choose $P_2,P_3$ so that $P_1P_i$ meets $C$ transversally at $P_1$, then $R_i$ is on neither fundamental line and $\mu(R_i)<\mu(P_1)$, so the process terminates. It does not show that the images of $R_i$ at the three contraction points are ordinary, and it does not separate the inseparable projection case.
 :::
