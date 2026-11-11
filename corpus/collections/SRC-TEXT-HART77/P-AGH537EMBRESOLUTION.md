@@ -31,6 +31,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-19
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read the printed exercise at Hartshorne, Algebraic Geometry (1977), V.3,
+    exercise 3.7, printed page 395, with Remark 3.9.4 on printed page 408 for
+    the meaning of equivalence, and the delta formula of Example 3.9.3,
+    printed page 408. Rechecked the first blowups and the multiplicities: for
+    (a), x = uv, y = v gives v^3(u^3+v^2); for (e), x^3+xy^3+y^5 gives
+    v^3(u^3+uv+v^2), whose tangent cone is v^2 and which is smooth at the
+    origin, so delta = 3 + 1 = 4 as the card says. Searched outside the twelve
+    retained sets: NTU 2020, Exercise 7 of section 3, PDF pp. 12-13
+    (tmp/sources/ntu-ag2-chapter5.pdf), has resolutions, the same five delta
+    values 4,4,3,4,4 and the same equivalence classes; Yang Pi-Yeh,
+    Hartshorne Solutions, printed pp. 108-109
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), writes the transforms
+    without delta or equivalence. Not checked: whether a general ground field
+    lacks the square root of -1 used in the chart of (e); the book assumes k
+    algebraically closed, and over such a field the three points on the
+    exceptional curve exist.
 ---
 
 ::: {.problem}
@@ -540,5 +560,9 @@ equivalence classification for every singularity in the exercise.
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.7, PDF pp. 279--284: the entry is a Singular session, not an argument. He runs `resolve` on each germ, prints the resulting chart tree, records for each of (a)--(e) which exceptional divisor appears in which chart, and concludes "this would seem to say that (a), (b), (d) are equivalent and (c), (e) are not equivalent to any others. However, we should check the multiplicities of the exceptionals (a), (b), (d) to make sure they are actually equivalent resolutions", ending with the commands `displayMultsequence` and "This last set of commands should show that (d) is not equivalent". No $\delta_P$ is computed and the check is left open. The incidence lists he prints give (a), (b) and (d) the same seven charts and (c) a different entry, which is the classification of step [](#summary-table){.pf-ref}; his own command for $C_d$ is run on the germ of (d) as $x^4+y^5+y^6$, one degree higher than the exercise. Recorded in COMPLAINTS.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 7 of §3 (solution by Ping-Hsun Chuang), PDF pp. 12--13, gives an embedded resolution for each of (a)--(e) with the first two blowups written out in coordinates, reads $\delta_P$ off as $\frac12\cdot3\cdot2+\frac12\cdot2\cdot1=4$ for (a), (b), (d) and $\frac12\cdot3\cdot2=3$ for (c), and $4$ for (e), and concludes from the resolution graphs that the singularities of (a), (b), (d) are equivalent while (c) and (e) are different from the others. The five values are the ones in the table of step [](#summary-table){.pf-ref}, and the equivalence classes are the ones of steps [](#abd-equivalent){.pf-ref}, [](#c-not-equivalent){.pf-ref} and [](#e-not-equivalent){.pf-ref}.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.3.7, printed pp. 108--109, writes the successive strict transforms for the same five germs and, in the case of (b), records the tangent line of the second point, but does not compute $\delta_P$ or decide the equivalence question for any of them.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.7, PDF pp. 279--282, is a Singular session: it prints the chart trees from `resolve`, has no $\delta_P$, and ends "these commands should show that (d) is not equivalent". Steps [](#a-first-blowup){.pf-ref} to [](#e-not-equivalent){.pf-ref} carry out the resolutions and the comparisons by hand.
 :::
