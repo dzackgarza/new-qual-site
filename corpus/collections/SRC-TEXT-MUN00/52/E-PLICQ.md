@@ -20,6 +20,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 52: Problem 3 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-52-the-fundamental-group/problem-3-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-52-the-fundamental-group/problem-3-solution.txt), and against Munkres, Topology (2000), Section 52
+    Exercise 3, printed p. 335. dbFin proves both directions by multiplying on the left and right by the classes of alpha and beta; the card routes the same proof through the inner automorphism beta-hat inverse times alpha-hat, which is correct under Munkres's convention that alpha-hat maps the group at x_0 to the group at x_1 by f goes to alpha-bar star f star alpha. Nothing needed repair.
 ---
 
 ::: {.exercise}

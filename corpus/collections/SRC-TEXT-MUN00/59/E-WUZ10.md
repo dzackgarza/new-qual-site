@@ -14,6 +14,12 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 59 Exercise 1, printed p. 370,
+    with Theorem 59.1 or Corollary 59.2. The card cuts the wedge of two spheres along a point of each sphere, checks that the two open pieces and their intersection are simply connected and the intersection path connected, and concludes $\pi_1=1$. No complete published solution was located for this exercise: dbFin's Chapter 9 pages run from Section 51 to Section 56 only, and every set searched is listed in the COMPLAINTS.md entry for Sections 57 to 60. The proof is the card's own and every step was checked against the book.
 ---
 
 ::: {.exercise}

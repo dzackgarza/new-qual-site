@@ -20,6 +20,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 52: Problem 2 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-52-the-fundamental-group/problem-2-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-52-the-fundamental-group/problem-2-solution.txt), and against Munkres, Topology (2000), Section 52
+    Exercise 2, printed p. 334. dbFin's is the same chain of path-homotopy classes; the card writes the associativity step out. Nothing needed repair.
 ---
 
 ::: {.exercise}

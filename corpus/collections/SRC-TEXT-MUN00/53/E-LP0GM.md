@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 53: Problem 2 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-53-covering-spaces/problem-2-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-53-covering-spaces/problem-2-solution.txt), and against Munkres, Topology (2000), Section 53
+    Exercise 2, printed p. 341, with the definition of a covering map on printed p. 336. dbFin's argument takes two partitions, picks a slice of one different from every slice of the other and derives a proper clopen subset of $U$; the card's is the same conclusion by a shorter route, that when $U$ is connected each slice is a connected clopen subset of $p^{-1}(U)$ and therefore a component, so the partition is the partition into components. Both are correct; nothing needed repair.
 ---
 
 ::: {.exercise}

@@ -20,6 +20,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 56: Problem 1 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-56-the-fundamental-theorem-of-algebra/problem-1-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-56-the-fundamental-theorem-of-algebra/problem-1-solution.txt), and against Munkres,
+    Topology (2000), Section 56 Exercise 1, printed p. 356. dbFin divides out the zero roots and, with $g(w)=1+a_{n-1}w+\cdots+a_0w^n$, uses $|g(w)|\ge1-\sum|a_i|>0$ on the closed disc; the card's is the same estimate written directly for a root $z$ with $|z|\ge1$, dividing the equation by $z^n$. Nothing needed repair.
 ---
 
 ::: {.exercise}

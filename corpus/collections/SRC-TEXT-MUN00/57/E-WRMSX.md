@@ -20,6 +20,12 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 57 Exercise 2, printed p. 359,
+    with Theorem 57.3 and the book's hint that $S^2-p$ is homeomorphic to $\RR^2$. The card composes $g$ with a homeomorphism $S^2-p\to\RR^2$ off a point missed by $g$ and applies Borsuk-Ulam, so the injectivity of that homeomorphism gives $g(x)=g(-x)$. No complete published solution was located for this exercise: dbFin's Chapter 9 pages run from Section 51 to Section 56 only, and every set searched is listed in the COMPLAINTS.md entry for Sections 57 to 60. The proof is the card's own and every step was checked against the book.
 ---
 
 ::: {.exercise}

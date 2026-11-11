@@ -14,6 +14,12 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 59 Exercise 2, printed p. 370,
+    with Theorem 57.3 and Theorem 59.3. The card names the flaw, that the flawed proof chooses a point of $S^2$ off the image of a loop, which a continuous loop need not miss; it justifies that with a space-filling curve and repairs the argument in the two ways available after this chapter. No complete published solution was located for this exercise: dbFin's Chapter 9 pages run from Section 51 to Section 56 only, and every set searched is listed in the COMPLAINTS.md entry for Sections 57 to 60. The proof is the card's own and every step was checked against the book.
 ---
 
 ::: {.exercise}

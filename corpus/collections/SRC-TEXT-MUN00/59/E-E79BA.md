@@ -14,6 +14,12 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 59 Exercise 3, printed p. 370,
+    with the invariance of connectedness and of the fundamental group under homeomorphism, with Theorem 58.2 and Theorem 59.3. Part (a) removes a point; part (b) compares $\pi_1(\RR^2-0)=\ZZ$ with $\pi_1(\RR^n-0)=0$ for $n>2$. No complete published solution was located for this exercise: dbFin's Chapter 9 pages run from Section 51 to Section 56 only, and every set searched is listed in the COMPLAINTS.md entry for Sections 57 to 60. The proof is the card's own and every step was checked against the book.
 ---
 
 ::: {.exercise}

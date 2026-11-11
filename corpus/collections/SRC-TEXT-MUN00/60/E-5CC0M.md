@@ -14,6 +14,12 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 60 Exercise 3, printed p. 375,
+    with the definition of an evenly covered neighbourhood and Lemma 60.5's construction. At a point $(n,0)$ with $n\ne0$ of the restricted fibre a small neighbourhood of $E'$ is an interval whose image lies in the circle $A$, so no neighbourhood of the basepoint is evenly covered; at the origin the cross has four branches and the map is not a local homeomorphism. No complete published solution was located for this exercise: dbFin's Chapter 9 pages run from Section 51 to Section 56 only, and every set searched is listed in the COMPLAINTS.md entry for Sections 57 to 60. The proof is the card's own and every step was checked against the book.
 ---
 
 ::: {.exercise}

@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 55: Problem 2 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-55-retractions-and-fixed-points/problem-2-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-55-retractions-and-fixed-points/problem-2-solution.txt), and against Munkres,
+    Topology (2000), Section 55 Exercise 2, printed p. 353. dbFin uses Lemma 55.3 and Theorem 55.6: a nullhomotopic $h$ extends over $B^2$, the extension composed with the inclusion has a fixed point $x$ in $S^1$, which is a fixed point of $h$, and composing with the half-turn gives the antipodal point. The card instead argues with the winding number: if $h$ has no fixed point the straight-line homotopy makes $h$ homotopic to the antipodal map, and if it misses the antipodes it makes $h$ homotopic to the identity, either of which contradicts $\deg h=0$ for a nullhomotopic map, the degree being the class in $\pi_1(S^1)$ under Theorem 54.5. Both proofs are correct; the card's uses the degree, which is the class in $\pi_1(S^1)$ and so is available after Section 54.
 ---
 
 ::: {.exercise}

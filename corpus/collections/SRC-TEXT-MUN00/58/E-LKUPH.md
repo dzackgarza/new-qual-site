@@ -20,6 +20,12 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 58 Exercise 1, printed p. 366,
+    with the definition of a deformation retraction and the pasting lemma (Theorem 18.3). The card pastes $H$ on the first half of the interval to $K\circ(H(\cdot,1))$ on the second and checks the three defining properties. No complete published solution was located for this exercise: dbFin's Chapter 9 pages run from Section 51 to Section 56 only, and every set searched is listed in the COMPLAINTS.md entry for Sections 57 to 60. The proof is the card's own and every step was checked against the book.
 ---
 
 ::: {.exercise}

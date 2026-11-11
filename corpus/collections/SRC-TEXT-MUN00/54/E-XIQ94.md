@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 54: Problem 2 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-54-the-fundamental-group-of-the-circle/problem-2-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-54-the-fundamental-group-of-the-circle/problem-2-solution.txt), and against Munkres,
+    Topology (2000), Section 54 Exercise 2, printed p. 347. dbFin says only that, whatever the order, the lifting must already be known on a non-empty connected subset of each rectangle. The card states the reason the order matters, that the lexicographic order makes the known part the left and bottom edges, which is connected, and that a disconnected known part could put its pieces in different slices. Both are correct; nothing needed repair.
 ---
 
 ::: {.exercise}

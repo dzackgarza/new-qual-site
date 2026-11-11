@@ -20,6 +20,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 52: Problem 6 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-52-the-fundamental-group/problem-6-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-52-the-fundamental-group/problem-6-solution.txt), and against Munkres, Topology (2000), Section 52
+    Exercise 6, printed p. 335. dbFin evaluates both sides at a class and uses h of alpha-bar equals beta-bar; the card is the same computation. Nothing needed repair.
 ---
 
 ::: {.exercise}

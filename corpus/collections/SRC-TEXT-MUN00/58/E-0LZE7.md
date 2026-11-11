@@ -14,6 +14,12 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 58 Exercise 4, printed p. 366,
+    with Example 3 of Section 58 and the homotopy invariance of $\pi_1$. The card describes $f$ and $g$ explicitly and proves $g\circ f\simeq\mathrm{id}_X$ by cancelling the constant loops. For $f\circ g$ it uses that the quotient of the theta space by its central segment, a contractible subcomplex, is a homotopy equivalence, so that $g$ is one and $f$, being a one-sided inverse, is the other; an explicit homotopy exists as well, by sliding each of $f\circ g$'s trips along the central segment, and the card's route is correct on the book's definitions. No complete published solution was located for this exercise: dbFin's Chapter 9 pages run from Section 51 to Section 56 only, and every set searched is listed in the COMPLAINTS.md entry for Sections 57 to 60. The proof is the card's own and every step was checked against the book.
 ---
 
 ::: {.exercise}

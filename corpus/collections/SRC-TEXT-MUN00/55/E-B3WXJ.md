@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 55: Problem 1 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-55-retractions-and-fixed-points/problem-1-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-55-retractions-and-fixed-points/problem-1-solution.txt), and against Munkres,
+    Topology (2000), Section 55 Exercise 1, printed p. 353. dbFin's is the same composition $i\circ f\circ r$ and Theorem 55.6; the card writes the three steps out. Nothing needed repair.
 ---
 
 ::: {.exercise}

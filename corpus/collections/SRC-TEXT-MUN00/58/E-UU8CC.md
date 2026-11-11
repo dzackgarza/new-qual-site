@@ -20,6 +20,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: Aleksey Zinger, MAT 530: Topology & Geometry I,
+    Fall 2005, Problem Set 9, "Solution to Problem p366, #9", PDF pp. 3-6 of the sheet
+    (tmp/sources/munkres-solutions-zinger-mat530-ps9.pdf), and against Munkres, Topology (2000),
+    Section 58 Exercise 9, printed p. 366. Zinger defines $\deg h$ by $h_*=(\deg h)\hat\alpha$ and
+    proves the five parts: independence of the path and the base point, invariance under homotopy,
+    multiplicativity, the degrees of the constant map, the identity, the reflection and $z\mapsto z^n$,
+    and that equal degree implies homotopic. The card proves the same five using the naturality of the
+    change-of-basepoint isomorphism and the preferred generators, and its (c) is the same computation
+    as Zinger's. Nothing needed repair.
 ---
 
 ::: {.exercise}

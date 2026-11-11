@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 54: Problem 4 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-54-the-fundamental-group-of-the-circle/problem-4-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-54-the-fundamental-group-of-the-circle/problem-4-solution.txt), and against Munkres,
+    Topology (2000), Section 54 Exercise 4, printed p. 348. dbFin gives the three lifts in closed form, $\tilde f=(z,2-t)$, $\tilde g=(t+z,1+t)$ and $\tilde h=(\max(0,2t-1)+z,\,1+|1-2t|)$, and a figure; the card computes the same three and identifies the initial points in the fibre. Nothing needed repair.
 ---
 
 ::: {.exercise}

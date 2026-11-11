@@ -20,6 +20,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 54: Problem 7 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-54-the-fundamental-group-of-the-circle/problem-7-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-54-the-fundamental-group-of-the-circle/problem-7-solution.txt), and against Munkres,
+    Topology (2000), Section 54 Exercise 7, printed p. 348. dbFin gives the correspondence $\phi$ and says the product of two loops lifts to a path ending at the sum; the card writes out that $\phi$ is a well defined homomorphism, surjective (by the paths $(mt,nt)$) and injective (a lift that is a loop in the simply connected plane is nullhomotopic). Nothing needed repair.
 ---
 
 ::: {.exercise}

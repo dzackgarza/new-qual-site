@@ -20,6 +20,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 53: Problem 6 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-53-covering-spaces/problem-6-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-53-covering-spaces/problem-6-solution.txt), and against Munkres, Topology (2000), Section 53
+    Exercise 6, printed p. 341, with the definition of a covering map on printed p. 336. dbFin's (a) runs the four separation properties together and its (b) is a sketch whose displayed symbols are corrupted; the card's proof is written out, and it uses the book's own hint, which is correct: for $C$ closed in $B$ with $C\subseteq U$, a limit point of $p^{-1}(C)\cap V_\alpha$ lies in $p^{-1}(C)\subseteq p^{-1}(U)$, hence in some slice, and cannot lie in a different slice because the slices are disjoint open sets, so it lies in $V_\alpha$. The four parts of (a) and the compactness argument in (b) were checked against that hint and against Lemma 31.1(a), Theorem 29.2 and Theorem 26.2; nothing needed repair.
 ---
 
 ::: {.exercise}

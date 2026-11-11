@@ -20,6 +20,12 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 57 Exercise 3, printed p. 359,
+    with Theorem 57.1 and the lifting theory of Section 54. The card lifts $h$ to $H:\RR\to\RR$ with $H(0)=0$; antipode preservation gives $H(t+\frac12)-H(t)\in\frac12+\ZZ$, which is constant by continuity, so $H(t+1)=H(t)+2m+1$ and the degree is odd. No complete published solution was located for this exercise: dbFin's Chapter 9 pages run from Section 51 to Section 56 only, and every set searched is listed in the COMPLAINTS.md entry for Sections 57 to 60. The proof is the card's own and every step was checked against the book.
 ---
 
 ::: {.exercise}

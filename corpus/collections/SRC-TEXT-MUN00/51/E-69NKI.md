@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 51: Problem 1 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-51-homotopy-of-paths/problem-1-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-51-homotopy-of-paths/problem-1-solution.txt),
+    and against Munkres, Topology (2000), Section 51 Exercise 1, printed p. 330. dbFin's construction is the card's: the two homotopies F and K give F(x,t) = K(H(x,t),t), composed with the continuous map x times t goes to (H(x,t),t). Nothing needed repair.
 ---
 
 ::: {.exercise}

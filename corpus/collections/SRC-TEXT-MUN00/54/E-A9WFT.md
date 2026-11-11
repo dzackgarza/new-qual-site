@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 54: Problem 6 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-54-the-fundamental-group-of-the-circle/problem-6-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-54-the-fundamental-group-of-the-circle/problem-6-solution.txt), and against Munkres,
+    Topology (2000), Section 54 Exercise 6, printed p. 348. dbFin's is the same computation of the two induced homomorphisms as multiplication by $n$ and by $-n$; the card does it through the lifts $s\mapsto ns$ and $s\mapsto -ns$. Nothing needed repair.
 ---
 
 ::: {.exercise}

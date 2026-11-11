@@ -21,6 +21,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 52: Problem 7 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-52-the-fundamental-group/problem-7-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-52-the-fundamental-group/problem-7-solution.txt), and against Munkres, Topology (2000), Section 52
+    Exercise 7, printed p. 335. dbFin answers all four parts. What was corrected: in part (c) dbFin's displayed computation of (f star e) tensor (e star g) reads f(s) on [0,1/2] and g(s) on [1/2,1], which forgets the reparametrisation; the correct values are f(2s) and g(2s-1), and the card has them. Part (d) is dbFin's argument by the interchange law, written out.
 ---
 
 ::: {.exercise}

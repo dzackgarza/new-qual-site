@@ -21,6 +21,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 54: Problem 8 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-54-the-fundamental-group-of-the-circle/problem-8-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-54-the-fundamental-group-of-the-circle/problem-8-solution.txt), and against Munkres,
+    Topology (2000), Section 54 Exercise 8, printed p. 348. dbFin's route is Theorem 54.4, whose lifting correspondence is surjective onto the fibre because $E$ is path connected, so the fibre over $b$ has one point; the card's route is the homotopy lifting theorem directly: a path in $E$ from $e_0$ to another point of the fibre projects to a loop that is nullhomotopic, and the nullhomotopy lifts with the constant loop at $e_0$ on the other side. Both are correct. Nothing needed repair.
 ---
 
 ::: {.exercise}

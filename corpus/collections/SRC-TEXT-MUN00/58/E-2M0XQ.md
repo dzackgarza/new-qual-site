@@ -14,6 +14,12 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 58 Exercise 2, printed p. 366,
+    with Theorem 58.7, that a homotopy equivalence induces an isomorphism on fundamental groups, and Theorem 59.3. Each of the twelve answers is a deformation retraction onto a circle, a point, or a wedge of two circles, or a homeomorphism onto one of those. What was corrected: the reason given for (j), $S^1\cup(\RR_+\times\RR)$, was a radial formula that is undefined at the origin and on the part of the $y$-axis outside the circle. The half-plane part is contractible, its intersection with the circle is the right semicircle, an arc, and collapsing that arc turns the union into a wedge of $S^1$ with a contractible space; the answer $\ZZ$ is unchanged and the card now gives that reason. No complete published solution was located for this exercise: dbFin's Chapter 9 pages run from Section 51 to Section 56 only, and every set searched is listed in the COMPLAINTS.md entry for Sections 57 to 60. The proof is the card's own and every step was checked against the book.
 ---
 
 ::: {.exercise}
@@ -97,7 +103,7 @@ Spaces with fundamental group $\pi_1 \cong \ZZ$ (infinite cyclic):
 
 ::: pf-step
 
-**(j) $S^1 \cup (\RR_+ \times \RR)$:** On the open right half-plane, move each point $z$ linearly to $z/\norm z$; the straight segment stays in the right half-plane because its first coordinate remains positive. Keep every point of $S^1$ fixed. These formulas agree and are continuous at the boundary points $(0,\pm1)$ of the right semicircle, so they give a deformation retraction onto $S^1$. Hence $\pi_1\cong\ZZ$.
+**(j) $S^1\cup(\RR_+\times\RR)$:** the closed right half-plane $H$ is contractible and $S^1\cap H$ is the right semicircle, an arc, so $S^1\cup H$ is homotopy equivalent to $S^1$: collapsing that arc in $H$ leaves a contractible space, and collapsing it in $S^1$ leaves a circle, so the union is homotopy equivalent to the wedge of a circle with a contractible space, which is a circle. Hence $\pi_1\cong\ZZ$. (A radial formula does not give the deformation retraction here: a point on the $y$-axis away from $(0,\pm1)$ has no image under $z\mapsto z/\norm z$, and the map is undefined at the origin.)
 
 :::
 

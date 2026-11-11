@@ -20,6 +20,12 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 58 Exercise 10, printed p. 367,
+    with the degree axioms stated in the exercise. The card derives each of the four parts from the axioms: no retraction from (a), the degree of a map with no fixed point and of one that never maps a point to its antipode, and the parity conclusion for a nonvanishing tangent field, all by the straight-line homotopies to the antipodal map or the identity. No complete published solution was located for this exercise: dbFin's Chapter 9 pages run from Section 51 to Section 56 only, and every set searched is listed in the COMPLAINTS.md entry for Sections 57 to 60. The proof is the card's own and every step was checked against the book.
 ---
 
 ::: {.exercise}

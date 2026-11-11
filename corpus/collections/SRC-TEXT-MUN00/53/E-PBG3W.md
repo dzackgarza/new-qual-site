@@ -20,6 +20,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 53: Problem 4 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-53-covering-spaces/problem-4-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-53-covering-spaces/problem-4-solution.txt), and against Munkres, Topology (2000), Section 53
+    Exercise 4, printed p. 341, with the definition of a covering map on printed p. 336. dbFin's argument shrinks the evenly covered neighbourhood of $z$ to a finite intersection of images of evenly covered neighbourhoods upstairs; the card does the same. One step is implicit in both and is now stated on the card: with $W_i$ evenly covered by $q$ and $W_i\subseteq V_i$, the slice $W_i'=W_i\cap r^{-1}(U')$ equals $V_i\cap r^{-1}(U')$, because $r$ restricted to $V_i$ is injective, so the slices over $U'$ really are the sets $W_i'$. Nothing else needed repair.
 ---
 
 ::: {.exercise}

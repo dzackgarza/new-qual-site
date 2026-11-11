@@ -20,6 +20,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against the located published solution: dbFin, "Section 52: Problem 1 Solution",
+    https://dbfin.com/topology/munkres/chapter-9/section-52-the-fundamental-group/problem-1-solution/
+    (read 2026-11-11; kept at tmp/sources/dbfin/section-52-the-fundamental-group/problem-1-solution.txt), and against Munkres, Topology (2000), Section 52
+    Exercise 1, printed p. 334. dbFin proves (b) by the straight-line contraction to the star centre and refers to a figure for (a); the card supplies an explicit set in place of the figure, the cone over [-1,1] on [0,1] with the interval [1,2] attached, which is star convex at the origin and not convex because the midpoint of (1,1) and (2,0) is outside it. The rest of the card is dbFin's argument. Nothing needed repair.
 ---
 
 ::: {.exercise}

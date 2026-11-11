@@ -14,6 +14,12 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 58 Exercise 5, printed p. 366,
+    with the definition of contractibility and of homotopy equivalence. Both directions: a contraction is a homotopy from the identity to a constant, which is the composite through the one-point space, and conversely a homotopy inverse to the collapse to a point makes the identity nullhomotopic. No complete published solution was located for this exercise: dbFin's Chapter 9 pages run from Section 51 to Section 56 only, and every set searched is listed in the COMPLAINTS.md entry for Sections 57 to 60. The proof is the card's own and every step was checked against the book.
 ---
 
 ::: {.exercise}

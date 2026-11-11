@@ -20,6 +20,12 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 60 Exercise 2, printed p. 375,
+    with Theorem 60.3 and the definition of $P^2$ as $S^2$ modulo antipodes. The upper hemisphere is homeomorphic to $B^2$ by dropping the third coordinate, and every antipodal pair meets it in exactly one point unless the pair lies on the equator, where the two representatives are antipodal boundary points; so both quotients identify the same pairs, and the compact-to-Hausdorff argument makes the induced bijection a homeomorphism. No complete published solution was located for this exercise: dbFin's Chapter 9 pages run from Section 51 to Section 56 only, and every set searched is listed in the COMPLAINTS.md entry for Sections 57 to 60. The proof is the card's own and every step was checked against the book.
 ---
 
 ::: {.exercise}

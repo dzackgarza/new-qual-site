@@ -20,6 +20,12 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked line by line against Munkres, Topology (2000), Section 60 Exercise 4, printed p. 375,
+    with Theorem 60.3 and the compact-to-Hausdorff argument of Theorem 26.6. $P^1=S^1/(x\sim-x)$ and $z\mapsto z^2$ factors through a continuous bijection from the compact quotient onto the Hausdorff circle, hence a homeomorphism; the standard covering is exactly $z\mapsto z^2$. No complete published solution was located for this exercise: dbFin's Chapter 9 pages run from Section 51 to Section 56 only, and every set searched is listed in the COMPLAINTS.md entry for Sections 57 to 60. The proof is the card's own and every step was checked against the book.
 ---
 
 ::: {.exercise}
