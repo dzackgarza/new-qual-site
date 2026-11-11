@@ -323,9 +323,12 @@ one supplying a defective argument that the card corrects --- and the other sixt
 `COMPLAINTS.md`; the Zinger sheet gives §43 Exercise 10 and §44 Exercise 2, the
 Riverside Part 3 set gives §43 Exercises 1, 3(b), 6(a), 6(c), 7 and §48 Exercises 1, 2, 4, the Tze Heng page
 gives §43 Exercises 2 and 3, and the Toronto set gives §48 Exercise 10. No located set solves an exercise of
-§45, §46, §47 or §49, or more than a few of §50, and the countable closed-sum theorem needed by §50 Exercise 3
-is in Hurewicz and Wallman and in Engelking, neither of which could be read here (the archive.org copies of
-the former are access-restricted). The commercial manuals are
+§45, §46, §47 or §49, or more than a few of §50. §50 Exercise 3 (the topologist's sine curve) needs no
+external theorem: the card proves $\dim\le1$ from the book's own tools, the Lebesgue number lemma (Lemma
+27.5) applied to the compact space (Theorem 27.3) and an order-two refinement built near the segment from a
+cover of $[-1,1]$ by intervals of multiplicity two, and on the spiral by slabs in $x$ of small height; the
+countable closed-sum theorem of Hurewicz and Wallman and of Engelking, previously cited by number only, is no
+longer used, neither book being readable here (the archive.org copies of the first are access-restricted). The commercial manuals are
 paywalled and print no pagination, and are not cited here; the dbFin pages have no Chapter 5 or Chapter 6 section
 at all (`chapter-5/` and `chapter-6/` under `dbfin.com/topology/munkres/` are 404, and the site's index lists
 Chapters 1–4, 9 and 11 only). The AoPS blog "shooting star", *Topology by Munkres* (Days 14–15), appears to solve
