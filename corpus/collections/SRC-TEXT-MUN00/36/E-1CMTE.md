@@ -16,27 +16,26 @@ audit:
   date: 2026-08-29
 - event: source-checked
   by: claude
-  date: 2026-11-10
+  date: 2026-11-11
   note: >-
     Checked line by line against Munkres, Topology (2000), Supplementary Exercises: Review of the
-    Basics, Exercise 7, printed p. 229, and its instruction to answer for properties (18) paracompact
-    and (19) topologically complete, with Theorem 41.1 (a paracompact Hausdorff space is normal), Theorem
-    41.4 (every metrizable space is paracompact), Theorem 41.5 (every regular Lindelof space is
-    paracompact), Theorem 42.1 (Smirnov), Theorem 32.3, Exercise 30.9, Exercise 6 of §43 for the
-    definition of topological completeness and its behaviour under closed, open and countable
-    products, and the remark attached to Exercise 32.5 (the box-product normality question is
-    open). No published solution was located (search recorded on E-PWXIV and in the COMPLAINTS.md
-    entry). The two tables were re-derived: compact Hausdorff and metrizable spaces are paracompact,
-    the non-normal spaces (c), (f) and (j) and the non-regular R_K are not, S_Omega is countably
-    compact and not compact and so is not paracompact, and R_l is regular Lindelof hence paracompact;
-    topologically complete means admitting a complete metric, so it forces metrizability, which
-    excludes the ordinal spaces, the ordered square, R_l, R_l^2, the box topology on R^omega, R^[0,1]
-    and R_K, while the product and uniform topologies on R^omega admit complete metrics. In the
-    second table the closed-subspace and open-subspace columns, the finite and countable product
-    columns, the negative arbitrary-product and continuous-image entries and the two "every" rows are
-    the ones recorded, with Q as the arbitrary subspace of a completely metrizable space that is not
-    topologically complete and the open subspace S_Omega of the compact S_bar_Omega as the witness
-    for paracompactness failing for open subspaces.
+    Basics, Exercise 7, printed p. 229, which asks for properties (18) paracompact and (19)
+    topologically complete in Exercises 1-6, with Theorem 41.1, Theorem 41.4, Theorem 41.5, Example 4,
+    Example 5 and Example 6 of Section 41, Exercises 41.2 and 41.4, Theorem 42.1, Exercises 43.6,
+    Theorem 20.5, Example 2 of Section 21 and Example 3 of Section 28. No published solution was
+    located (search recorded on E-PWXIV and in the COMPLAINTS.md entry). Both tables were re-derived
+    and every entry now names its deciding result: compact spaces and metrizable spaces are
+    paracompact, regular Lindelof spaces are paracompact (so the Sorgenfrey line is and its square is
+    not), paracompact Hausdorff spaces are normal (which removes the three nonnormal spaces and the
+    nonregular R_K), S_Omega is not paracompact by Exercise 41.2 or by the countably-compact argument,
+    and the box entry is the book's open question; topological completeness forces metrizability, so
+    it excludes the nine nonmetrizable spaces, and the two positive entries are Exercise 43.6(b) and
+    the completeness of the uniform metric. What was corrected: the identity "topologically complete
+    means admitting a complete metric, so it forces metrizability" was on the card already, but the
+    per-space table gave no reason for any entry and the second table no reason for six of its nine
+    rows; the reason "the spaces in (c), (f) and (j) are not normal; R_K is not regular, therefore
+    they fail paracompactness" was correct and is now tied to Theorem 41.1. The entries themselves are
+    unchanged.
 ---
 
 ::: {.exercise}
@@ -51,7 +50,7 @@ You should be able to answer all but one of the 340 questions involved in Exerci
 :::
 
 ::: {.solution}
-The earlier supplementary exercises classify properties (1)–(17). The entries below supply properties (18) and (19) in the same order. Here “topologically complete” means that the topology admits a complete metric.
+Exercises 1–6 classified properties (1)–(17). The tables below supply properties (18) paracompact and (19) topologically complete in the same order, and name for each entry the result that decides it. “Topologically complete” means that some metric for the topology makes the space complete, §43 Exercise 6; such a metric is a metric for the topology, so a topologically complete space is metrizable.
 
 | Space in Exercise 1 | Paracompact (18) | Topologically complete (19) |
 | --- | :---: | :---: |
@@ -67,9 +66,11 @@ The earlier supplementary exercises classify properties (1)–(17). The entries 
 | (j) $\RR^{[0,1]}$, product | No | No |
 | (k) $\RR_K$ | No | No |
 
-Every compact Hausdorff space and every metrizable space is paracompact. The product and uniform topologies in (g) and (h) admit complete metrics: use a weighted sum of bounded complete coordinate metrics for (g), and the bounded uniform metric for (h). A compact Hausdorff space is topologically complete exactly when it is metrizable. The ordinal spaces and ordered square in the table fail metrizability. The Sorgenfrey line is regular Lindelöf, hence paracompact, but is not metrizable. The spaces in (c), (f), and (j) are not normal; $\RR_K$ is not regular. Each therefore fails paracompactness. The space $S_\Omega$ is countably compact but noncompact, and a countably compact paracompact space is compact: a locally finite family of nonempty open sets in a countably compact space is finite, since choosing $x_n$ in $V_{s_n}$ outside $V_{s_1}\cup\dots\cup V_{s_{n-1}}$ would produce an infinite set with no limit point, so a locally finite open refinement of an open cover is already a finite subcover. Hence $S_\Omega$ is not paracompact. The box-product paracompactness question is the unresolved entry identified by the source.
+**Paracompactness, column one.** Every compact space is paracompact, so (b) and (d) are paracompact, the ordered square being compact by Theorem 27.1. Every metrizable space is paracompact, Theorem 41.4, so (g) and (h) are, by Theorem 20.5 and by the uniform metric. Every regular Lindelöf space is paracompact, Theorem 41.5, so (e) is, by Example 3 of §30 and Example 2 of §31. A paracompact Hausdorff space is normal, Theorem 41.1, so the three spaces already known to be nonnormal are not paracompact: (c) by Example 2 of §32, (f) by Example 3 of §31, and (j), since an uncountable product of copies of $\RR$ is not normal, Exercise 32.9. The space $\RR_K$ is Hausdorff but not regular, Example 1 of §31, so it is not paracompact by the same theorem, which is (k). That leaves (a): $S_\Omega$ is not paracompact, and there are two routes in the book. The product of a paracompact space with the compact $\overline S_\Omega$ would be paracompact, Exercise 41.2(a), but it is not, Exercise 41.2(b), the space $S_\Omega\times\overline S_\Omega$ being nonnormal. Alternatively $S_\Omega$ is countably compact and not compact, and a countably compact paracompact space is compact: a locally finite family of nonempty open sets in a countably compact space is finite, so a locally finite open refinement of an open cover is already a finite subcover. The box entry is the open question recorded in Example 5 of §41, that is, the same one as the normality entry of Exercise 1(i).
 
-For Exercises 2–6, the preservation answers are:
+**Topological completeness, column two.** A topologically complete space is metrizable, so every space known not to be metrizable is out: (a) and (b) by Example 3 of §28, (c) because it contains the closed subspace $S_\Omega\times\{\Omega\}$ and metrizability passes to subspaces, Exercise 21.1, (d) and (e) by Exercise 30.6, (f) because it contains the closed subspace $\RR_\ell\times\{0\}$, (i) because the box topology on $\RR^\omega$ is not first countable, (j) by Example 2 of §21, and (k) because a metrizable space is regular, Theorem 32.2, while $\RR_K$ is not. That leaves (g) and (h), which are the two positive entries. For (g): $\RR$ is topologically complete, and a countable product of topologically complete spaces is topologically complete in the product topology, Exercise 43.6(b). For (h): the uniform metric $\bar\rho$ is complete on $\RR^\omega$, a $\bar\rho$-Cauchy sequence being uniformly Cauchy in every coordinate and hence convergent coordinatewise, and uniformly so.
+
+**Exercises 2–6 for the two properties.** The answers are these, and each is decided by the same results.
 
 | Operation or class | Paracompact (18) | Topologically complete (19) |
 | --- | --- | --- |
@@ -83,5 +84,7 @@ For Exercises 2–6, the preservation answers are:
 | Every metric space | Yes | No |
 | Every compact Hausdorff space | Yes | No |
 
-Closed subspaces of paracompact Hausdorff spaces are paracompact, whereas the open subspace $S_\Omega$ of compact $\overline S_\Omega$ is not. The Sorgenfrey plane shows that even a finite product of paracompact spaces can fail to be paracompact. Closed and open subspaces of a completely metrizable space are completely metrizable; $\QQ\subset\RR$ is an arbitrary subspace that is not. Finite and countable products of completely metrizable spaces admit complete product metrics. An uncountable product of nontrivial metric spaces need not be first countable. A discrete topology on the underlying set of any nonparacompact or non-completely-metrizable space gives a continuous surjection from a space with both properties, so neither property is preserved by continuous images. The metric space $\QQ$ is not topologically complete, while compact Hausdorff spaces that are not metrizable, such as $[0,\omega_1]$, are not topologically complete.
+Paracompactness is not hereditary: $S_\Omega$ is a subspace of the compact, hence paracompact, $\overline S_\Omega$ and is not paracompact. It passes to closed subspaces (§41) and not to open ones, $S_\Omega$ again being open in $\overline S_\Omega$. It is not preserved by finite products, $\RR_\ell\times\RR_\ell$ being paracompact in each factor, Example 4 of §41, and not paracompact; padding a finite counterexample with one-point factors gives the countable and arbitrary columns, and the uncountable product $\RR^J$ is not paracompact for a second reason, being Hausdorff and nonnormal, Example 6 of §41. Continuous images fail by Exercise 41.4(b). Every metrizable space is paracompact, Theorem 41.4, and every compact space is paracompact, so the last two rows are Yes.
+
+Topological completeness passes to closed subspaces, Exercise 43.6(a), to open subspaces, Exercise 43.6(c), and to countable products in the product topology, Exercise 43.6(b), which also covers finite products after padding with one-point spaces. It does not pass to arbitrary subspaces: $\QQ$ is a subspace of the complete space $\RR$ and is not topologically complete, since a topologically complete space is a Baire space (the remark at the start of §48) and $\QQ$ is a countable union of nowhere dense singletons. It does not pass to arbitrary products, since $\RR^J$ is not even metrizable for uncountable $J$, Example 2 of §21; and it is not preserved by continuous images, since the identity from a set with the discrete topology onto a non-metrizable space of the same cardinality is continuous, while a discrete space is complete in the discrete metric. The last two rows are No: $\QQ$ is a metric space that is not topologically complete, and $\overline S_\Omega$ is a compact Hausdorff space that is not, being nonmetrizable.
 :::

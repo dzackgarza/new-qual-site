@@ -12,38 +12,40 @@ classification:
 relations: []
 review: draft
 audit:
-- event: source-checked
+- event: solution-written
   by: claude
-  date: 2026-11-10
+  date: 2026-11-11
   note: >-
-    Checked line by line against Munkres, Topology (2000), Section 30 Exercise 16, printed p. 195,
-    and Theorem 19.6: part (a) needs a separable product of continuum many factors, and its
-    functions d_{F,phi} are constant on the traces iota(t) cap F, which separates any prescribed
-    finite set of coordinates; part (b) is the printed hint's function alpha -> D cap
-    pi_alpha^{-1}((a,b)) made injective by the second interval (2,3). No complete published
-    solution was located: "Doug's World", "Munkres - Topology - Chapter 4 Solutions", printed p. 4,
-    prints "Problem 30.16. Solution:" and then nothing; Orellana's contents stop at Section 30
-    Exercise 14; Rajaraman's notes stop at Exercise 4.30.10; positron0802, Whitman, shenapse and
-    9beach do not reach Chapter 4. The search is recorded in the COMPLAINTS.md entry for this
-    batch.
-- event: source-checked
-  by: claude
-  date: 2026-11-10
-  note: >-
-    Rechecked against the located published solution: dbFin, "Section 30: Problem 16 Solution",
+    Part (b) transcribed from the located published solution: dbFin, "Section 30: Problem 16
+    Solution",
     https://dbfin.com/topology/munkres/chapter-4/section-30-the-countability-axioms/problem-16-solution/
-    (read 2026-11-10; kept at tmp/sources/dbfin/section-30-the-countability-axioms/problem-16-solution.txt),
-    and against Munkres, Topology (2000), Section 30 Exercise 16, printed p. 195. The source does not
-    give a complete solution of either part. Its (a) reads "we can always separate the indexes of
-    these spaces by some rational points ... take all finite subsets of rationals in [0,1] containing
-    0 and 1 ... each such a subset generates a finite number of half-open intervals of the form [),
-    and then take products of rational points such that they are the same across each interval",
-    which describes a family of step functions without saying which one meets a prescribed basis
-    element, and does not treat coordinates outside [0,1]. Its (b) is the printed hint's injection
-    with the two intervals, but writes pi_alpha^{-1}((a,b)) cap pi_beta^{-1}((b,+infinity)), which
-    is not disjoint from (a,b), and then concludes "therefore f is an injection and |J| <= |2^D|"
-    without the cardinal step. The card keeps its own proof of (a) and (b) and this exercise stays
-    in the COMPLAINTS.md entry.
+    (read 2026-11-11; kept at
+    tmp/sources/dbfin/section-30-the-countability-axioms/problem-16-solution.txt), whose (b) is the
+    printed hint's injection and is complete: for alpha different from beta the two constraints
+    alpha in (a,b) and beta in (b,+infinity) are disjoint, so a dense point satisfying both lies in
+    F(alpha) and not in F(beta), and |J| at most |2^D| at most |P(Z_+)| follows. The card uses the
+    printed hint's own pair, with (2,3) in place of (b,+infinity), which is the same two lines.
+    Part (a) keeps a proof of the card's own: no located solution of it is complete. dbFin's (a) is
+    the sentence "we can always separate the indexes of these spaces by some rational points ... take
+    all finite subsets of rationals in [0,1] containing 0 and 1 ... then products of rational points
+    such that they are the same across each interval", which describes a family of step functions
+    without saying which member meets a prescribed basic open set and does not treat coordinates
+    outside [0,1]. "Doug's World"'s item labelled "Problem 30.15" ("Munkres - Topology - Chapter 4
+    Solutions", 30 August 2017, file pages 3-4) solves printed Exercise 30.15, not this one: it
+    approximates a *continuous* f by piecewise linear rational functions in the uniform metric, which
+    is Exercise 30.15's statement, and its last clause wrongly says "R^I has a countable dense
+    subset. By exercise 5(a), R^I has a countable basis", where R^I is not metrizable. Its item
+    labelled "Problem 30.16" is empty.
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Rechecked against Munkres, Topology (2000), Section 30 Exercise 16, printed p. 195, and the
+    located published solutions. What was corrected: the earlier record said that dbFin's (b) writes
+    an interval "(b,+infinity) which is not disjoint from (a,b)" and asserts the cardinal conclusion
+    without the cardinal step. Both objections are wrong: (b,+infinity) is disjoint from (a,b), which
+    is exactly what the injection needs, and "|J| <= |2^D|" is the cardinal step, D being countable.
+    The exercise stays on the COMPLAINTS.md list only because of part (a).
 ---
 
 ::: {.exercise}
