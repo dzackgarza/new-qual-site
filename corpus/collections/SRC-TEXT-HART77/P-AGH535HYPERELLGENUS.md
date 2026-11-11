@@ -38,6 +38,28 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: The statement named the curve C and its normalization the normalization of Y. The curve is now named Y throughout.
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read the printed exercise at Hartshorne, Algebraic Geometry (1977), V.3,
+    exercise 3.5, printed page 394. Rechecked the arithmetic: delta_P =
+    C(r-2,2) + floor((r-2)/2) and g = p_a(Y) - delta_P = floor((r-1)/2), against
+    r = 5, 6, 7 giving delta 4, 8, 12 and genus 2, 2, 3. Checked that the
+    hypothesis char k != 2 is needed exactly where the card says: in
+    characteristic 2 the equation y^2 = f(x) with f squarefree has
+    k(Y) = k(x)^{1/2}, so the normalization is P^1 and no degree-two morphism
+    exists, while the singularity at infinity and the multiplicities do not use
+    the hypothesis. Searched outside the twelve retained sets: Algebraic
+    Geometry II, National Taiwan University, 2020 Spring, Chapter V homework,
+    Exercise 5 of section 3, PDF p. 11 (tmp/sources/ntu-ag2-chapter5.pdf),
+    states characteristic different from 2 and obtains the same delta and genus;
+    Yang Pi-Yeh, Hartshorne Solutions, exercise 5.3.5, printed p. 108
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), takes
+    delta = (r-2)(r-3)/2, dropping the residual term. Not checked: whether the
+    printed exercise intends the affine model over a field of characteristic 2
+    at all; the card keeps the printed statement and states where the
+    hypothesis enters.
 ---
 
 ::: {.problem}
@@ -389,5 +411,11 @@ invariant, step [](#normalization-genus){.pf-ref} computes the genus of the norm
 :::
 
 ::: {.remark title="Published solution"}
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 5 of §3 (solution by Shuang-Yen Lee), PDF p. 11, works in $\operatorname{char}k\ne2$, which it states, and computes at infinity: the projective model is $z^{r-2}y^2=\prod_i(x-a_iz)$, the multiplicity at $P$ is $r-2$, the first blowup gives $w^{r-2}=\prod_i(1-a_iw)x^2$, and the remaining singularities are $\lfloor(r-2)/2\rfloor$ double points; hence
+$$\delta_P=\frac12(r-2)(r-3)+\frac12\cdot2\cdot1\cdot\left\lfloor\frac{r-2}{2}\right\rfloor,$$
+the same formula as steps [](#delta-invariant-formula){.pf-ref} and [](#delta-invariant-piecewise){.pf-ref}, and then $p_a(\widetilde Y)=\frac12(r-1)(r-2)-\delta_P=\lfloor(r-1)/2\rfloor$, which is step [](#normalization-genus){.pf-ref}.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.3.5, printed p. 108, computes $\delta_\infty=\frac12r_\infty(r_\infty-1)=\frac12(r-2)(r-3)$ from the multiplicity $r_\infty=r-2$ alone, which omits the $\lfloor(r-2)/2\rfloor$ from the residual singularity after the first blowup: for $r=5$ it gives $3$ where $\delta_P=4$. Its genus is computed separately by Hurwitz and agrees with step [](#normalization-genus){.pf-ref}, but the two do not then satisfy $p_a(Y)=\delta_P+g$ for $p_a(Y)=\frac12(r-1)(r-2)$.
+
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.5, PDF p. 278: he computes the projective closure $z^{r-2}y^2=\prod(x-a_iz)$, checks the Jacobian at $\infty=(0:1:0)$ and finds it zero, notes that after setting $y=1$ the lowest order term is $z^{r-2}$ so the point has multiplicity $r-2$, and then argues that projecting to the $x$-coordinate gives a degree-two cover of $\PP^1$ whose Riemann--Hurwitz count has $2g+2$ branch points, so $n=2g+2$ realizes every genus. He never computes $\delta_P$, which the exercise asks for; steps [](#multiplicity-at-infinity){.pf-ref} to [](#delta-invariant-piecewise){.pf-ref} supply it as $\binom{r-2}{2}+\lfloor(r-2)/2\rfloor$, from the strict transform $v^{r-2}=u^2\prod_i(1-a_iv)$ and the $A_{r-3}$ singularity that its unit factor reduces to. His genus count is step [](#normalization-genus){.pf-ref} by a different route, $p_a(Y)-\delta_P$. Recorded in COMPLAINTS for $\delta_P$.
 :::
