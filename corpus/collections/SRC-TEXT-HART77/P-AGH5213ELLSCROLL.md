@@ -30,6 +30,25 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-19
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read the printed exercise at Hartshorne, Algebraic Geometry (1977), V.2,
+    exercise 2.13, printed page 385. Rechecked the dimension count that Egbert
+    gets wrong: on an elliptic curve Riemann-Roch gives h^0(O_C(k)) = k for
+    k > 0, so h^0(X, O(C_0+bf)) = h^0(b) + h^0(b+e) = n + (n-e) = 2n-e = d,
+    and the scroll lies in P^{d-1}, not in P^{d+1} as the rational scroll of
+    Corollary 2.19 does. Checked the applications: V.2.12(b) for very ampleness
+    at n >= e+3, V.2.5(a) and (c) for the existence of the surface at e = 0 and
+    e = -1, and the split normalized bundle O_C + O_C(-e) for e > 0, whose
+    negative twists have no sections. Searched outside the twelve retained sets:
+    Yang Pi-Yeh, Hartshorne Solutions, exercise 5.2.13, printed p. 105
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), gives the argument from
+    V.2.12(b) and the same 2n-e count; Algebraic Geometry II, National Taiwan
+    University, 2020 Spring, has no entry for Exercise 13 of section 2. Not
+    checked: whether an elliptic scroll so defined is required to be minimal or
+    normalised; the exercise does not ask and the card does not claim.
 ---
 
 ::: {.problem}
@@ -309,6 +328,8 @@ $n\ge e+3$, and step [](#s8){.pf-ref} gives the stated degree-five example.
 :::
 
 ::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.13, printed p. 105, argues exactly as steps [](#s3){.pf-ref} to [](#s7){.pf-ref}: by V.2.12(b), if $n\ge e+3$ then any $D\sim C_0+nf$ is very ample, and since $D\cdot f=1$ and $D^2=2n-e$ the embedding is an elliptic scroll of degree $d=2n-e$; then "$h^0(\mathcal L_X(D))=h^0(\pi_*\mathcal L_X(D))=h^0(\OO_C(n)+\OO_C(n-e))=2n-e$, so the embedding is in $\PP^{d-1}$", and it takes $e=-1$, $n=2$ for the degree-five example in $\PP^4$. Its $h^0$ uses $h^0(\OO_C(k))=k$ on an elliptic curve, which is the computation of step [](#s6){.pf-ref}. It does not construct the ruled surface of invariant $e$ for each $e\ge-1$, which is step [](#s1){.pf-ref}.
+
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.13, PDF p. 269: he takes $D=C_0+nf$, cites (2.20b) and (2.21b) for ampleness, computes $D\cdot f=1$ and $D^2=2n-e$, and then needs $h^0$. His count is
 $$
 h^0(\OO_X(\mathcal L(D)))=h^0(\OO_C(n)\oplus\OO_C(n-e))=2n-1=d-1,
