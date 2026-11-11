@@ -14,6 +14,16 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against Munkres, Topology (2000), Section 74 Exercise 1, printed p. 453. The presentation from Theorem 74.2 and Theorem 70.1 at the common boundary circle. What was corrected: the closing paragraph derived P^2#T = 3P^2 from "Dyck's Theorem", which is not the source of that statement; it is Theorem 77.5 together with chi(P^2#T) = -1, and the card now says so. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against Munkres, Topology (2000), Section 74 Exercise 1, printed p. 453. The presentation from Theorem 74.2 and Theorem 70.1 at the common boundary circle. What was corrected: the closing paragraph derived P^2#T = 3P^2 from "Dyck's Theorem", which is not the source of that statement; it is Theorem 77.5 together with chi(P^2#T) = -1, and the card now says so. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
 ---
 
 ::: {.exercise}
@@ -88,8 +98,8 @@ $$\pi_1(P^2 \# T) \cong \pi_1(U) *_{\pi_1(U \cap V)} \pi_1(V) \cong \langle a, b
 :::
 
 ::: pf-step
-Equivalent presentation via Dyck's Theorem:
-By Dyck's Theorem, $P^2 \# T \cong \#^3 \RP^2$ (the non-orientable surface of genus 3), which has the equivalent standard presentation:
+Equivalent presentation from the classification theorem:
+$P^2\#T$ is non-orientable, and $\chi(P^2\#T)=\chi(P^2)+\chi(T)-2=1+0-2=-1$; since the non-orientable closed surface with $\chi=2-k$ equal to $-1$ has $k=3$, the classification theorem, Theorem 77.5, gives $P^2\#T\cong P^2\#P^2\#P^2$. That surface has the presentation:
 $$\pi_1(P^2 \# T) \cong \langle x, y, z \mid x^2 y^2 z^2 = 1 \rangle.$$
 :::
 

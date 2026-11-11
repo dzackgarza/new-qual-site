@@ -14,6 +14,11 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against Munkres, Topology (2000), Section 78 Exercise 1, printed p. 476. Part (a) is the Klein bottle: two vertex classes, chi = 0, non-orientable. What was corrected: part (b) answered S^2 disjoint union P^2, but the pair def, dfe^{-1} gives all six vertices one class, so chi = 1 - 3 + 2 = 0, and H_1 = <d,e,f | def, dfe^{-1}> = Z + Z/2, which is the Klein bottle; the glued square is efe^{-1}f. The answer is now S^2 disjoint union K, with that computation. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
 ---
 
 ::: {.exercise}
@@ -80,7 +85,7 @@ Part (a): Scheme $abc, dae, bef, cdf$.
 ::: pf-step
 
 Part (b): Scheme $abc, cba, def, dfe^{-1}$.
-    The space is the disjoint union of the **2-sphere** and the **real projective plane**: $S^2 \sqcup \RP^2$.
+    The space is the disjoint union of the **2-sphere** and the **Klein bottle**: $S^2 \sqcup K$.
     *Proof:*
 
 ::: pf-proof
@@ -101,15 +106,9 @@ Part (b): Scheme $abc, cba, def, dfe^{-1}$.
 
 ::: pf-step
 
-**Component $X_2 = T_3 \cup T_4$:**
-        - Gluing $T_3(def)$ and $T_4(dfe^{-1})$ along the shared edges $d$ and $f$ produces a 2-gon with remaining boundary edges identified as $e e$ (or $e \sim e^{-1}$).
-        - A 2-gon with boundary scheme $e^2$ is the standard polygonal presentation of the real projective plane $\RP^2$.
+**Component $X_2 = T_3 \cup T_4$:** Glue $T_3$ to $T_4$ first along the edges labelled $d$; the result is a square whose boundary scheme is $efe^{-1}f$, read from the free edges: $e$ on $T_3$, then $f$ on $T_3$, then the edge of $T_4$ labelled $e^{-1}$, then $f$ on $T_4$. Pasting the two $f$-edges leaves the Klein bottle, whose standard scheme is $aba^{-1}b$. The counts agree with this: the identifications $d$ give $p_1\sim q_1$, $p_2\sim q_2$; $f$ gives $p_3\sim q_2$, $p_1\sim q_3$; and $e$ gives $p_2\sim q_1$, $p_3\sim q_3$, so all six vertices of the two triangles are one class, and $\chi=V-E+F=1-3+2=0$, with $H_1=\langle d,e,f\mid def,\ dfe^{-1}\rangle\cong\ZZ\oplus\ZZ/2$ — the Klein bottle, not $P^2$, whose Euler characteristic is $1$. The reason the boundary of the quad does not reduce to a single pair $e,e$ is that the two $e$-edges are glued in opposite senses, so that after the $f$-pasting the scheme $efe^{-1}f$ stands.
 
-:::
-
-::: pf-step
-
-**Conclusion:** $X \cong S^2 \sqcup \RP^2$. Q.E.D.
+**Conclusion:** $X \cong S^2 \sqcup K$. Q.E.D.
 
 :::
 

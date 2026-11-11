@@ -10,6 +10,12 @@ classification:
   - Classification of Surfaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against Munkres, Topology (2000), Section 78 Exercise 3, printed p. 476. Charts inside the disc and the explicit half-plane chart (theta, 1 - r) at a boundary point. Checked against the definition of a 2-manifold with boundary printed in the same exercise. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
 ---
 
 ::: {.exercise}

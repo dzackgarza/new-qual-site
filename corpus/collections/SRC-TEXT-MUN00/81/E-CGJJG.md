@@ -10,6 +10,12 @@ classification:
   - Covering Transformations
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against Munkres, Topology (2000), Section 81 Exercise 1, printed p. 492. The two order-two actions on the torus, one yielding T and one the Klein bottle, as quotients by fixed-point-free involutions. Checked against Theorem 81.5 (quotient of a properly discontinuous action is a covering) and §60 for the identifications. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
 ---
 
 ::: {.exercise}

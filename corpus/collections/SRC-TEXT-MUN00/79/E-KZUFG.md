@@ -11,6 +11,12 @@ classification:
   - Topological Groups
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against Munkres, Topology (2000), Section 79 Exercise 6, printed p. 484. The lifted multiplication, identity and inverse by uniqueness of based lifts, then associativity, then uniqueness of the group structure. Checked part by part against the printed parts (a) to (e), with the lifting criterion of Theorem 79.1. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
 ---
 
 ::: {.exercise}

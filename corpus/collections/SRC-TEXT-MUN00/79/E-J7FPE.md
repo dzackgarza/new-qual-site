@@ -10,6 +10,12 @@ classification:
   - Covering Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against Munkres, Topology (2000), Section 79 Exercise 5, printed p. 484. Part (a): every element of GL_2(Z) is induced by the torus homeomorphism of the linear map. Part (b): the three possible subgroups of Z^2 up to basis change, and the three standard coverings, so E is R^2, S^1 x R or T. Checked against Theorem 79.4 and the algebraic fact quoted in the printed hint. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
 ---
 
 ::: {.exercise}

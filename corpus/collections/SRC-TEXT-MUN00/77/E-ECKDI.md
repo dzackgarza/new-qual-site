@@ -10,6 +10,12 @@ classification:
   - Classification of Surfaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against Munkres, Topology (2000), Section 77 Exercise 1, printed p. 470. Both lists are rewritings of Theorem 77.5's standard list using T_g#P^2 = P_{2g+1} and T_g#K = P_{2g+2}, which is Lemma 77.4, and the members are distinguished by orientability and Euler characteristic. Checked against Lemma 77.4 and Theorem 77.5. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
 ---
 
 ::: {.exercise}

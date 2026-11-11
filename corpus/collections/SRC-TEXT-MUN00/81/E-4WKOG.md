@@ -14,6 +14,11 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against Munkres, Topology (2000), Section 81 Exercise 6, printed p. 494. The theorem that a fixed-point-free action whose elements move each compact set off all but finitely many of its images is properly discontinuous, proved by a compactness argument. Checked against the definition of proper discontinuity, printed p. 488. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
 ---
 
 ::: {.exercise}

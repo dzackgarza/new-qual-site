@@ -15,6 +15,11 @@ audit:
   by: Codex
   date: 2026-10-31
   note: The printed homeomorphism criterion omits orientation reversal. Complex conjugation in the second coordinate gives L(n,k) homeomorphic to L(n,-k), so both congruences require a possible minus sign.
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked against Munkres, Topology (2000), Section 81 Exercise 5, printed p. 493. The lens space L(n,k) as the quotient of S^3 by the cyclic action, regular with group Z/n, and its fundamental group. Checked against Theorem 81.5 and the definition of a free action. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
 ---
 
 ::: {.exercise}
