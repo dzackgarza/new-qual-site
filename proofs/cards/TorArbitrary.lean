@@ -188,6 +188,75 @@ theorem range_dTwoT_eq :
 
 end ThirdIso
 
+
+/-! ## The third isomorphism and the dimension-shift bridge
+
+The third isomorphism for a surjective `q` and any `g` reads `ker (g ∘ q) ⧸ ker q ≅ ker g`,
+realised by the ψ-map `x ↦ q x`. At the tensored splice the rôle of `q` is played by the
+tensored kernel cover — surjective by `kerCov_lTensor_surjective` — and the rôle of `g` by the
+tensored kernel inclusion, so the homology of the tensored splice, whose boundaries are `ker q`
+by `range_dTwoT_eq`, is the kernel of the tensored kernel inclusion: the dimension-shift
+statement `Tor₁(A,B) ≅ ker(B ⊗ ker f → B ⊗ P)` of Weibel, Exercise 2.4.3, for **any**
+epimorphism `f : P ⟶ A` from a projective and for every abelian group `A`, not only finitely
+generated `A`.
+
+The route is the submodule level, so that no linear map is built between the two subtype
+carriers by hand — the carrier-level attempt could not elaborate (the instance diamond
+`addCommGroup.toIntModule` against `Submodule.module` on the `presComplex` carriers, recorded
+in the issue). The equality of this section, `mapCycles_eq_kerIncl`, is the surjectivity half
+of the ψ-map at the submodule level: the image of the cycles under the tensored kernel cover
+is the kernel of the tensored kernel inclusion, proved by rewriting the cycles as the comap of
+the cover (`LinearMap.ker_comp` on `d 1 0 = q ≫ g'`, i.e. the cycle condition read through
+the composite) and then `Submodule.map_comap_eq_self`, whose hypothesis is the surjectivity of
+the cover — the lifts of the zeros of the inclusion through cycles.
+
+What is **not** yet discharged is the packaging of the isomorphism: the kernel and the range
+of the ψ-map as a linear map on the subtype carriers — `ker ψ = range moduleCatToCycles` and
+`range ψ = ⊤`, from `range_dTwoT_eq` and the cycle check — and the composition of
+`LinearMap.quotKerEquivRange` with those two equalities and the top equivalence. Every spelling
+of the ψ-map tried so far (the six variants of the previous chat and the composite, the
+restriction and the corestriction of this one) meets the same instance diamond on the cycles'
+carrier, which is the blocker the issue records for the carrier level.
+-/
+
+section ThirdIsoSubmodule
+
+variable {A P : ModuleCat ℤ} (f : P ⟶ A) [Epi f] [Projective P] (B : ModuleCat ℤ)
+
+/-- The cycles of the tensored splice in degree one: the kernel of its first differential. -/
+noncomputable abbrev spliceCycles : Submodule ℤ ↥((tensorSplice f B).X 1) :=
+  LinearMap.ker (((tensorSplice f B).sc' 2 1 0).g).hom
+
+/-- The kernel of the tensored kernel inclusion: the target of the dimension shift. -/
+noncomputable abbrev kerIncl : Submodule ℤ ↥((tensorLeft B).obj (Limits.kernel f)) :=
+  LinearMap.ker ((tensorLeft B).map (Limits.kernel.ι f)).hom
+
+/-- **The image of the cycles under the tensored kernel cover is the kernel of the tensored
+kernel inclusion**: the surjectivity half of the ψ-map, at the submodule level. The left side
+rewrites the cycles as the comap of the cover — `LinearMap.ker_comp` on `d 1 0 = q ≫ g'`, the
+cycle condition — and the right side is `Submodule.map_comap_eq_self`, whose hypothesis is the
+surjectivity of the cover. -/
+theorem mapCycles_eq_kerIncl :
+    Submodule.map ((tensorLeft B).map (Projective.π (Limits.kernel f))).hom
+      (spliceCycles f B) = kerIncl f B := by
+  have hsurj : Function.Surjective
+      ((tensorLeft B).map (Projective.π (Limits.kernel f))).hom := by
+    have h := kerCov_lTensor_surjective f B
+    rw [← hom_lTensor (B := B) (Projective.π (Limits.kernel f))] at h
+    exact h
+  have hker : spliceCycles f B = Submodule.comap
+      ((tensorLeft B).map (Projective.π (Limits.kernel f))).hom (kerIncl f B) := by
+    simp only [spliceCycles, kerIncl]
+    rw [show ((tensorSplice f B).sc' 2 1 0).g = (tensorSplice f B).d 1 0 from rfl,
+      tensorSplice_d_1_0 f B]
+    exact LinearMap.ker_comp _ _
+  rw [hker]
+  refine Submodule.map_comap_eq_self fun y _ =>
+    LinearMap.mem_range.mpr (hsurj y)
+
+end ThirdIsoSubmodule
+
+
 end TorArbitrary
 
 #print axioms TorArbitrary.presComplex_d_1_0
@@ -203,4 +272,6 @@ end TorArbitrary
 #print axioms TorArbitrary.exact_dTwo_kerCov
 #print axioms TorArbitrary.exact_tensored
 #print axioms TorArbitrary.range_dTwoT_eq
-
+#print axioms TorArbitrary.spliceCycles
+#print axioms TorArbitrary.kerIncl
+#print axioms TorArbitrary.mapCycles_eq_kerIncl
