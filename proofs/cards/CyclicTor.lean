@@ -141,7 +141,6 @@ theorem tensor_d_two_one_eq_zero {A B : ModuleCat ℤ} (P : ProjectiveResolution
     (h2 : IsZero ((P.complex).X 2)) : (resolutionTensor B P).d 2 1 = 0 := by
   have hd : (P.complex).d 2 1 = 0 := IsZero.eq_of_src h2 _ _
   rw [resolutionTensor_d, hd, Functor.map_zero]
-  rfl
 
 /-- **The two-term bridge.** For a projective resolution of `A` that is two-term
 (`IsZero (P.complex.X 2)`), `Tor₁(A,B)` is the kernel of the tensored degree-`1` differential
@@ -667,8 +666,7 @@ noncomputable def torOneIsoKernel {A B : ModuleCat ℤ} (P : ProjectiveResolutio
     homologyOneIsoKernelOfD (K := resolutionTensor B P) (by
       have hd : (P.complex).d 2 1 = 0 := IsZero.eq_of_src h2 _ _
       rw [show (resolutionTensor B P).d 2 1 =
-        (tensorLeft B).map ((P.complex).d 2 1) from rfl, hd, Functor.map_zero]
-      rfl)
+        (tensorLeft B).map ((P.complex).d 2 1) from rfl, hd, Functor.map_zero])
 
 /-- **`Tor₁(A,B)` is the kernel of `K ⊗ B → F ⊗ B`** for a surjective finite free presentation of
 `A`: the free-resolution instantiation that §5b records as missing. It is `torOneIsoKernel` applied
