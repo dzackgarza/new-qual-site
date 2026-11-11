@@ -1454,7 +1454,9 @@ descending flags of `π`, the barycentre of the whole simplex first.
 
 The maps here are self-maps of the *ambient* space `Fin (n+1) → ℝ`; `affineMap_mem` shows they land in
 `stdSimplex`, which is the standard simplex, and `TopCat.toSSetObjEquiv` identifies the resulting maps
-with the singular `n`-simplices of that space (`(toSSet.obj X).obj n ≃ C(stdSimplex ℝ (Fin (n+1)), X)`).
+with the singular `n`-simplices of that space (`(toSSet.obj X).obj n ≃ C(StdSimplex ℝ (Fin (n+1)), X)`,
+with `Convexity.StdSimplex` Mathlib's topological standard simplex and `mkStdSimplex` the bridge
+from the weight vectors this file computes with).
 No subdivision operator is assumed on the chain complex: `S` *is* the transport of the proved recursion.
 -/
 
@@ -1508,13 +1510,46 @@ states that singular `M`-simplices *are* continuous maps out of the standard `M`
 -/
 
 /-- The standard `n`-simplex as a topological space. -/
-abbrev stdSimplexTop (n : ℕ) : TopCat := TopCat.of ↥(stdSimplex ℝ (Fin (n+1)))
+noncomputable abbrev stdSimplexTop (n : ℕ) : TopCat := TopCat.of (Convexity.StdSimplex ℝ (Fin (n+1)))
 
-/-- `Δ̄_π` as a continuous self-map of the standard simplex (not merely of the ambient space). -/
+/-- The point of the standard simplex carried by a weight vector with nonnegative coordinates
+summing to one. Mathlib's topological standard simplex is `Convexity.StdSimplex ℝ ι`, the finitely
+supported weight vectors, and `TopCat.toSSetObjEquiv` is stated through it; this constructor moves
+between the weight vectors this file computes with and that structure. -/
+noncomputable def mkStdSimplex {ι : Type*} [Fintype ι] (f : ι → ℝ)
+    (h1 : ∀ i, 0 ≤ f i) (h2 : ∑ i, f i = 1) : Convexity.StdSimplex ℝ ι where
+  weights := Finsupp.equivFunOnFinite.symm f
+  nonneg := fun i => h1 i
+  total := by rw [Finsupp.equivFunOnFinite_symm_sum]; exact h2
+
+@[simp] theorem mkStdSimplex_apply {ι : Type*} [Fintype ι] (f : ι → ℝ) (h1 h2) (i : ι) :
+    (mkStdSimplex f h1 h2).weights i = f i := by
+  simp [mkStdSimplex]
+
+@[simp] theorem mkStdSimplex_coe {ι : Type*} [Fintype ι] (f : ι → ℝ) (h1 h2) :
+    (⇑(mkStdSimplex f h1 h2).weights : ι → ℝ) = f := by
+  funext i
+  simp [mkStdSimplex]
+
+/-- The weight vector of a point of the standard simplex is a point of the standard simplex. -/
+theorem weights_mem_stdSimplex {ι : Type*} [Fintype ι] (x : Convexity.StdSimplex ℝ ι) :
+    (⇑x.weights : ι → ℝ) ∈ stdSimplex ℝ ι :=
+  ⟨fun i => x.nonneg i, x.total_of_fintype⟩
+
+/-- **`Δ̄_π` as a continuous self-map of the standard simplex**: the affine map on the descending
+barycentric vertex list of `π`, corestricted to the simplex by `affineMap_mem`. -/
 noncomputable def barySimplexOn {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
-    C(↥(stdSimplex ℝ (Fin (M+1))), ↥(stdSimplex ℝ (Fin (M+1)))) where
-  toFun x := ⟨affineMap M (fun k => descVertex π k) x.1, affineMap_mem (descVertex_mem π) x.2⟩
-  continuous_toFun := Continuous.subtype_mk ((continuous_affineMap _).comp continuous_subtype_val) _
+    C(Convexity.StdSimplex ℝ (Fin (M+1)), Convexity.StdSimplex ℝ (Fin (M+1))) where
+  toFun x := mkStdSimplex (affineMap M (fun k => descVertex π k) ⇑x.weights)
+    (affineMap_mem (descVertex_mem π) (weights_mem_stdSimplex x)).1
+    (affineMap_mem (descVertex_mem π) (weights_mem_stdSimplex x)).2
+  continuous_toFun := by
+    rw [(Convexity.StdSimplex.isEmbedding_toFun_comp_weights ℝ (Fin (M+1))).continuous_iff]
+    have h : Continuous fun t : Convexity.StdSimplex ℝ (Fin (M+1)) =>
+        affineMap M (fun k => descVertex π k) ⇑t.weights :=
+      (continuous_affineMap (fun k => descVertex π k)).comp
+        (Convexity.StdSimplex.isEmbedding_toFun_comp_weights ℝ (Fin (M+1))).continuous
+    exact h
 
 /-- **The π-summand as a singular `M`-simplex** of the standard simplex: an element of degree `M` of
 its singular set. -/
@@ -1525,11 +1560,11 @@ noncomputable def barySimplexSingular {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
 /-- The packaging is faithful: read back through `TopCat.toSSetObjEquiv`, the singular simplex is the
 affine barycentric map `Δ̄_π` on the standard simplex. -/
 theorem toSSetObjEquiv_barySimplexSingular {M : ℕ} (π : Equiv.Perm (Fin (M+1)))
-    (x : ↥(stdSimplex ℝ (Fin (M+1)))) :
+    (x : Convexity.StdSimplex ℝ (Fin (M+1))) :
     (TopCat.toSSetObjEquiv (stdSimplexTop M) (Opposite.op (SimplexCategory.mk M)))
         (barySimplexSingular π) x
-      = ⟨affineMap M (fun k => descVertex π k) x.1, affineMap_mem (descVertex_mem π) x.2⟩ := by
-  simp [barySimplexSingular, barySimplexOn]
+      = barySimplexOn π x := by
+  simp [barySimplexSingular]
 
 /-! ## 15. Into degree `n` of the maintained singular chain complex
 
@@ -1545,15 +1580,17 @@ the standard simplex, and `affineMap_mem` records that on the standard simplex t
 noncomputable def chainSingular {M : ℕ} (c : List (Finset (Fin (M+1)))) :
     (TopCat.toSSet.obj (TopCat.of (Fin (M+1) → ℝ))).obj (Opposite.op (SimplexCategory.mk M)) :=
   (TopCat.toSSetObjEquiv (TopCat.of (Fin (M+1) → ℝ)) (Opposite.op (SimplexCategory.mk M))).symm
-    ⟨fun x => affineMap M (fun k => baryWeight (c.getD k.val ∅)) x.1,
-      (continuous_affineMap _).comp continuous_subtype_val⟩
+    ⟨fun x => affineMap M (fun k => baryWeight (c.getD k.val ∅)) ⇑x.weights,
+      (continuous_affineMap _).comp
+        (Convexity.StdSimplex.isEmbedding_toFun_comp_weights ℝ (Fin (M+1))).continuous⟩
 
 /-- `Δ̄_π` as a singular `M`-simplex of the ambient space. -/
 noncomputable def barySingular {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
     (TopCat.toSSet.obj (TopCat.of (Fin (M+1) → ℝ))).obj (Opposite.op (SimplexCategory.mk M)) :=
   (TopCat.toSSetObjEquiv (TopCat.of (Fin (M+1) → ℝ)) (Opposite.op (SimplexCategory.mk M))).symm
-    ⟨fun x => affineMap M (fun k => descVertex π k) x.1,
-      (continuous_affineMap _).comp continuous_subtype_val⟩
+    ⟨fun x => affineMap M (fun k => descVertex π k) ⇑x.weights,
+      (continuous_affineMap _).comp
+        (Convexity.StdSimplex.isEmbedding_toFun_comp_weights ℝ (Fin (M+1))).continuous⟩
 
 /-- The chain of `π`, packaged as a singular simplex, is `Δ̄_π`. -/
 theorem chainSingular_chainOf_peel {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
@@ -1614,9 +1651,17 @@ theorem chainVertex_mem {M : ℕ} (c : List (Finset (Fin (M+1)))) (k : Fin (M+1)
 
 /-- **The chain's affine map, corestricted to the standard simplex.** -/
 noncomputable def chainAffineOn {M : ℕ} (c : List (Finset (Fin (M+1)))) :
-    C(↥(stdSimplex ℝ (Fin (M+1))), ↥(stdSimplex ℝ (Fin (M+1)))) where
-  toFun x := ⟨affineMap M (chainVertex c) x.1, affineMap_mem (fun k => chainVertex_mem c k) x.2⟩
-  continuous_toFun := Continuous.subtype_mk ((continuous_affineMap _).comp continuous_subtype_val) _
+    C(Convexity.StdSimplex ℝ (Fin (M+1)), Convexity.StdSimplex ℝ (Fin (M+1))) where
+  toFun x := mkStdSimplex (affineMap M (chainVertex c) ⇑x.weights)
+    (affineMap_mem (fun k => chainVertex_mem c k) (weights_mem_stdSimplex x)).1
+    (affineMap_mem (fun k => chainVertex_mem c k) (weights_mem_stdSimplex x)).2
+  continuous_toFun := by
+    rw [(Convexity.StdSimplex.isEmbedding_toFun_comp_weights ℝ (Fin (M+1))).continuous_iff]
+    have h : Continuous fun t : Convexity.StdSimplex ℝ (Fin (M+1)) =>
+        affineMap M (chainVertex c) ⇑t.weights :=
+      (continuous_affineMap (chainVertex c)).comp
+        (Convexity.StdSimplex.isEmbedding_toFun_comp_weights ℝ (Fin (M+1))).continuous
+    exact h
 
 /-- On the recursion's chains the corestricted map is the barycentric affine simplex. -/
 theorem chainAffineOn_chainOf_peel {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
@@ -1633,37 +1678,37 @@ theorem chainAffineOn_chainOf_peel {M : ℕ} (π : Equiv.Perm (Fin (M+1))) :
     rw [chainVertex, hface k, if_pos (descFace_nonempty π k)]
     rfl
   refine ContinuousMap.ext fun x => ?_
-  simp only [chainAffineOn, barySimplexOn, hvert]
+  simp only [chainAffineOn, barySimplexOn, ContinuousMap.coe_mk, hvert]
 
 /-- The π-summand of the transported recursion, as a singular `M`-simplex of `X`: `σ ∘ Δ̄_π`. -/
 noncomputable def barySigma {M : ℕ} {X : Type} [TopologicalSpace X]
-    (σ : C(↥(stdSimplex ℝ (Fin (M+1))), X)) (π : Equiv.Perm (Fin (M+1))) :
+    (σ : C(Convexity.StdSimplex ℝ (Fin (M+1)), X)) (π : Equiv.Perm (Fin (M+1))) :
     (TopCat.toSSet.obj (TopCat.of X)).obj (Opposite.op (SimplexCategory.mk M)) :=
   (TopCat.toSSetObjEquiv (TopCat.of X) (Opposite.op (SimplexCategory.mk M))).symm
     (σ.comp (barySimplexOn π))
 
 /-- The `c`-summand of the transported recursion, as a singular `M`-simplex of `X`. -/
 noncomputable def chainSigma {M : ℕ} {X : Type} [TopologicalSpace X]
-    (σ : C(↥(stdSimplex ℝ (Fin (M+1))), X)) (c : List (Finset (Fin (M+1)))) :
+    (σ : C(Convexity.StdSimplex ℝ (Fin (M+1)), X)) (c : List (Finset (Fin (M+1)))) :
     (TopCat.toSSet.obj (TopCat.of X)).obj (Opposite.op (SimplexCategory.mk M)) :=
   (TopCat.toSSetObjEquiv (TopCat.of X) (Opposite.op (SimplexCategory.mk M))).symm
     (σ.comp (chainAffineOn c))
 
 theorem chainSigma_chainOf_peel {M : ℕ} {X : Type} [TopologicalSpace X]
-    (σ : C(↥(stdSimplex ℝ (Fin (M+1))), X)) (π : Equiv.Perm (Fin (M+1))) :
+    (σ : C(Convexity.StdSimplex ℝ (Fin (M+1)), X)) (π : Equiv.Perm (Fin (M+1))) :
     chainSigma σ (chainOf (Finset.univ : Finset (Fin (M+1))) (peel π)) = barySigma σ π := by
   simp only [chainSigma, barySigma, chainAffineOn_chainOf_peel]
 
 /-- Read back, the `π`-summand is `σ ∘ Δ̄_π`. -/
 theorem toSSetObjEquiv_barySigma {M : ℕ} {X : Type} [TopologicalSpace X]
-    (σ : C(↥(stdSimplex ℝ (Fin (M+1))), X)) (π : Equiv.Perm (Fin (M+1))) :
+    (σ : C(Convexity.StdSimplex ℝ (Fin (M+1)), X)) (π : Equiv.Perm (Fin (M+1))) :
     (TopCat.toSSetObjEquiv (TopCat.of X) (Opposite.op (SimplexCategory.mk M))) (barySigma σ π)
       = σ.comp (barySimplexOn π) :=
   Equiv.apply_symm_apply _ _
 
 /-- Read back, the `c`-summand is `σ` composed with the affine map of that chain of faces. -/
 theorem toSSetObjEquiv_chainSigma {M : ℕ} {X : Type} [TopologicalSpace X]
-    (σ : C(↥(stdSimplex ℝ (Fin (M+1))), X)) (c : List (Finset (Fin (M+1)))) :
+    (σ : C(Convexity.StdSimplex ℝ (Fin (M+1)), X)) (c : List (Finset (Fin (M+1)))) :
     (TopCat.toSSetObjEquiv (TopCat.of X) (Opposite.op (SimplexCategory.mk M))) (chainSigma σ c)
       = σ.comp (chainAffineOn c) :=
   Equiv.apply_symm_apply _ _
@@ -1673,7 +1718,7 @@ the recursion `S λ = b_λ (S ∂λ)` transported: each chain of faces is read a
 to the standard simplex, composed with `σ`, and coprojected into the maintained singular chain complex.
 The right side is the displayed closed formula, one summand per permutation. -/
 theorem hatcher_formula_arbitrary {M : ℕ} {X : Type} [TopologicalSpace X]
-    (σ : C(↥(stdSimplex ℝ (Fin (M+1))), X)) :
+    (σ : C(Convexity.StdSimplex ℝ (Fin (M+1)), X)) :
     FreeAbelianGroup.lift (fun c : List (Finset (Fin (M+1))) =>
         singularChainIota (TopCat.toSSet.obj (TopCat.of X)) M (chainSigma σ c))
         (subdiv (Finset.univ : Finset (Fin (M+1))))
