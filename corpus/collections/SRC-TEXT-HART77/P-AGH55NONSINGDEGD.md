@@ -20,6 +20,21 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read the Stacks Project, Algebraic Curves, Section 53.9 (tag 0BYA), the
+    only published treatment found of the case p | d: it proves the p-nmid-d
+    and p|d, p != 3 cases and leaves characteristic 3 to the reader, so the
+    equation of step characteristic-p-nonsingular is not taken from any
+    source. Recomputed its three partials: y^{d-1}=0 forces y=0, then x=0,
+    then z=0, so the curve is nonsingular in every characteristic dividing
+    d, d=p=2 included; rechecked the three partials of the published
+    equation xy^{d-1}+yz^{d-1}+zx^{d-1} at (1:1:1), each equal to d, so it
+    is singular exactly when 3=0. Not checked: the geometric-irreducibility
+    step beyond the product rule and I.7.2, and no other field than a
+    general one.
 ---
 
 ::: {.problem}
@@ -131,9 +146,15 @@ Step [](#geometrically-irreducible){.pf-ref} verifies that the resulting smooth 
 :::
 
 ::: {.remark title="Published solution"}
+The Stacks Project, *Algebraic Curves*, Section 53.9 (Plane curves), tag 0BYA, is the only published treatment found that writes out the case $p \mid d$ with its derivative check. It gives $F=T_0^d+T_1^d+T_2^d$ when $p\nmid d$, and $F=T_0^{d-1}T_1+T_1^{d-1}T_2+T_2^{d-1}T_0$ when $p\mid d$ and $p\neq3$, with the two partial derivatives $1-x^{d-2}y$ and $x^{d-1}-y^{d-2}$ on the affine piece $D_+(T_2)$, and it states that their common zero set together with the equation is empty; it then writes "We leave it to the reader to make examples in characteristic $3$".
+
+That last clause is correct and is where the published argument stops: on that affine piece $x=y^{d-1}$ makes both partials vanish for every $d-1\not\equiv0$, and the equation there reads
+$$x+x^{d-1}y+y^{d-1}=2x+y^{d-1}=2y^{d-1}+y^{d-1}=3y^{d-1},$$
+so a singular point of the curve exists over $k$ exactly when $3=0$ in $k$. Hence no published set covers $p=3$ with $3\mid d$, and the equation of step [](#characteristic-p-nonsingular){.pf-ref} is not in the literature found.
+
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 5.5, PDF p. 7: "If the characteristic $p$ does not divide $d$ we can use $x^d+y^d+z^d=0$. Otherwise we can use $xy^{d-1}+yz^{d-1}+zx^{d-1}=0$."
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.5.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.5, PDF p. 45: the same two equations as Borcherds.
 The second equation of the published answers is singular whenever $3=0$ in $k$: at $(1:1:1)$ its value is $3$ and each of its three partial derivatives is $d$, so for $p=3$ and $3\mid d$ the point $(1:1:1)$ lies on the curve and is singular. The proof above uses $x^{d-1}y+y^{d-1}z+z^d$ in that case instead, whose partials are $(d-1)x^{d-2}y$, $x^{d-1}+(d-1)y^{d-2}z$ and $y^{d-1}$, and which is nonsingular in every characteristic dividing $d$, the case $d=p=2$ included.
-Agree with Borcherds where $p\nmid d$; the divisibility case is repaired here.
+Agree with Borcherds and Stacks where $p\nmid d$, and with Stacks where $p\mid d$ and $p\neq3$; the residual case $p=3$, $3\mid d$ is supplied here, and Stacks records it as left to the reader.
 :::
