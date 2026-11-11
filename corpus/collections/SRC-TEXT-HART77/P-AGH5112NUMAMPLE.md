@@ -31,6 +31,29 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read the printed exercise at Hartshorne, Algebraic Geometry (1977), V.1,
+    exercise 1.12, printed page 368 (PDF page 383 of the extraction). Checked
+    every step against the book: ampleness by Nakai-Moishezon; the closed
+    immersion criterion for a complete linear system in IV.3, printed pages
+    307-308, which needs h^0(L(-Z)) = h^0(L)-2 for every length-two scheme Z,
+    reduced or not, which is what step s3 checks; Riemann-Roch IV.1.3, printed
+    page 295; numerical equivalence as equality of intersection numbers with
+    every curve, V.1, printed page 357. Searched for a published solution
+    outside the twelve retained sets and found two, both defective: Algebraic
+    Geometry II, National Taiwan University, 2020 Spring, Chapter V homework,
+    Exercise 12, PDF p. 5 (tmp/sources/ntu-ag2-chapter5.pdf), and Yang Pi-Yeh,
+    Hartshorne Solutions, exercise 5.1.12, printed p. 102
+    (tmp/sources/lfwin-hartshorne-solutions.pdf). Both take D x P^1 as the
+    very ample member, and D x P^1 is p_1^*D, of degree 0 on every fibre, so it
+    is not ample; the card's step s5 to s8 tensor the degree-one class of P^1
+    on instead. Egbert, PDF p. 261, quotes Fuentes-Pedreira for the surface
+    criterion and proves only the curve comparison. Not checked: whether
+    Fuentes-Pedreira's criterion could have been used, since that paper is not
+    in tmp/sources.
 ---
 
 ::: {.problem}
@@ -314,5 +337,7 @@ the required failure of numerical invariance for very ampleness.
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.12, PDF p. 261: for a curve of genus $g$, a divisor $D$ of degree $2g$ is very ample if and only if $h^0(D-P-Q)=h^0(D)-2$ by IV.3.4, and Riemann--Roch gives this exactly when $K_C-D+P+Q$ has nonpositive degree, so the very ample classes of degree $2g$ are those outside a two-dimensional family; he then takes $H=\abs{C_0+bf}$ on a decomposable ruled surface and quotes "Fuentes-Pedreira thm 3.9" for the very-ampleness criterion on it, a source that is not among the retained sets. Step [](#s3){.pf-ref} proves the curve statement as a separation statement, and steps [](#s5){.pf-ref} to [](#s8){.pf-ref} replace his surface example by $C\times\PP^1$ with $M=p_1^*L\otimes p_2^*\OO(1)$ and $M'=p_1^*L'\otimes p_2^*\OO(1)$, resting only on Riemann--Roch and a degree-zero pullback. Matches on the curve computation; the surface example is supplied here and recorded in COMPLAINTS.md.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.12, PDF p. 261: for a curve of genus $g$, a divisor $D$ of degree $2g$ is very ample if and only if $h^0(D-P-Q)=h^0(D)-2$ by IV.3.4, and Riemann--Roch gives this exactly when $K_C-D+P+Q$ has nonpositive degree, so the very ample classes of degree $2g$ are those outside a two-dimensional family; he then takes $H=\abs{C_0+bf}$ on a decomposable ruled surface and quotes "Fuentes-Pedreira thm 3.9" for the very-ampleness criterion on it, a source that is not among the retained sets. Step [](#s3){.pf-ref} proves the curve statement as a separation statement, and steps [](#s5){.pf-ref} to [](#s8){.pf-ref} replace his surface example by $C\times\PP^1$ with $M=p_1^*L\otimes p_2^*\OO(1)$ and $M'=p_1^*L'\otimes p_2^*\OO(1)$, resting only on Riemann--Roch and a degree-zero pullback.
+
+Two published sets give a surface example, and both are wrong at the same place. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 12, PDF p. 5, ends "let $X=C\times\PP^1$, $\widetilde D=D\times\PP^1$ and $\widetilde D_0=D_0\times\PP^1$; then $\widetilde D\equiv\widetilde D_0$ but $\widetilde D_0$ is very ample, and $\widetilde D$ is not". Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.1.12, printed p. 102, ends "the divisor $D\times\PP^1$ and $D_0\times\PP^1$ are numerically equivalent, and the first is very ample but second is just ample". An external product $D\times\PP^1$ is the pullback $p_1^*D$, which has degree $D\cdot(C\times\{t\})=0$ on every fibre of $p_1$; a very ample divisor meets every curve positively, since a positive multiple of it is a hyperplane section, so $p_1^*D$ is not even ample, let alone very ample, and the construction exhibits nothing. Adding the degree-one class of $\PP^1$, as in $M$ and $M'$ of step [](#s5){.pf-ref}, is what makes the fibre degree one and leaves the failure of very ampleness in the curve factor, where step [](#s7){.pf-ref} reads it off a fibre.
 :::
