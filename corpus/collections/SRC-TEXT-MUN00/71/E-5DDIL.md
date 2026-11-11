@@ -18,7 +18,7 @@ audit:
   note: >-
     Munkres §71 Exercise 1 of the section's list, printed p. 438 (the book numbers it Exercise 1). Proof
     transcribed from Takumi Murayama, Selected Solutions to Munkres's Topology, 2nd Ed. (MAT365, Princeton,
-    Fall 2012), §71 (printed there as Exercise 71.2, one more than the book's number), which takes
+    Fall 2012), §71 Exercise 2, which takes
     U = X_1 cup W_2 and V = X_2 cup W_1 and applies Corollary 70.3, and which reduces first to the path
     component of p in each X_i. Two gaps are filled: Murayama does not check that U and V are open in X, which
     the card does through the closedness of X_i minus W_i in X; and the n-fold case is by induction on n with

@@ -17,9 +17,7 @@ audit:
   date: 2026-11-11
   note: >-
     Munkres §73 Exercise 1, printed p. 445. Proof transcribed from Takumi Murayama, Selected Solutions to
-    Munkres's Topology, 2nd Ed. (MAT365, Princeton, Fall 2012), the section on the torus and the dunce cap
-    (printed there as §72 because his section counter is one behind at that point, and numbered Exercise 73.1
-    by the content), which uses Theorem 60.1 for products and the wedge formula for free products. Checked
+    Munkres's Topology, 2nd Ed. (MAT365, Princeton, Fall 2012), §73 Exercise 1, which uses Theorem 60.1 for products and the wedge formula for free products. Checked
     against Theorem 73.4 (printed p. 444, the fundamental group of the n-fold dunce cap is cyclic of order n),
     Theorem 60.1 (printed p. 371, $\pi_1$ of a product) and Exercise 1 of §71 (printed p. 438), whose
     hypotheses are checked in step 1.
