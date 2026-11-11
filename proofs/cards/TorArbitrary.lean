@@ -257,6 +257,58 @@ theorem mapCycles_eq_kerIncl :
 end ThirdIsoSubmodule
 
 
+
+/-! ## The ψ-map of the third isomorphism, at the level of additive groups
+
+An `AddMonoidHom` between the two subtype carriers mentions no `Module ℤ` instance, so the
+instance diamond of the linear spellings (`addCommGroup.toIntModule` against
+`Submodule.module`) does not arise. The homomorphism is the tensored kernel cover on the
+cycles, corestricted to the kernel of the tensored kernel inclusion; it is surjective by the
+containment `≥` of `mapCycles_eq_kerIncl`, and the additive-group kernel is the additive-group
+view of the boundaries of the tensored splice (the preimage of zero is the preimage under the
+cover of the zero of the inclusion, which is `range d 2 1` by `range_dTwoT_eq`), so that —
+since `Submodule.Quotient` is `Quotient (leftRel p.toAddSubgroup)` — the additive-group
+quotient of the cycles by the kernel of ψ is the submodule quotient of the cycles by the
+boundaries, which is the target of `ShortComplex.moduleCatHomologyIso`. -/
+
+section PsiGroup
+
+variable {A P : ModuleCat ℤ} (f : P ⟶ A) [Epi f] [Projective P] (B : ModuleCat ℤ)
+
+/-- The membership half of the image equality: the image of a cycle under the tensored kernel
+cover lies in the kernel of the tensored kernel inclusion. -/
+theorem mem_kerIncl_of_mem_cycles (x : ↥(spliceCycles f B)) :
+    ((tensorLeft B).map (Projective.π (Limits.kernel f))).hom x.1 ∈ kerIncl f B := by
+  have h : ((tensorLeft B).map (Projective.π (Limits.kernel f))).hom x.1 ∈
+      Submodule.map ((tensorLeft B).map (Projective.π (Limits.kernel f))).hom
+        (spliceCycles f B) :=
+    Submodule.mem_map.mpr ⟨x.1, x.2, rfl⟩
+  rw [mapCycles_eq_kerIncl f B] at h
+  exact h
+
+/-- **The ψ-map of the third isomorphism, as a homomorphism of additive groups**: the tensored
+kernel cover on the cycles, corestricted to the kernel of the tensored kernel inclusion. Not a
+linear map: an `AddMonoidHom` mentions no `Module ℤ` instance, so the instance diamond of the
+nine linear spellings does not arise. -/
+noncomputable def psiAdd : ↥(spliceCycles f B) →+ ↥(kerIncl f B) where
+  toFun x := ⟨((tensorLeft B).map (Projective.π (Limits.kernel f))).hom x.1,
+    mem_kerIncl_of_mem_cycles f B x⟩
+  map_zero' := Subtype.ext (LinearMap.map_zero _)
+  map_add' x y := Subtype.ext (LinearMap.map_add _ _ _)
+
+/-- ψ is surjective: every element of the kernel of the tensored kernel inclusion is the image
+of a cycle, the containment `≥` of `mapCycles_eq_kerIncl`. -/
+theorem psiAdd_surjective : Function.Surjective (psiAdd f B) := by
+  rintro ⟨y, hy⟩
+  rw [← mapCycles_eq_kerIncl f B] at hy
+  obtain ⟨x, hx, hq⟩ := Submodule.mem_map.mp hy
+  exact ⟨⟨x, hx⟩, Subtype.ext hq⟩
+
+end PsiGroup
+
+
+
+
 end TorArbitrary
 
 #print axioms TorArbitrary.presComplex_d_1_0
@@ -275,3 +327,6 @@ end TorArbitrary
 #print axioms TorArbitrary.spliceCycles
 #print axioms TorArbitrary.kerIncl
 #print axioms TorArbitrary.mapCycles_eq_kerIncl
+#print axioms TorArbitrary.mem_kerIncl_of_mem_cycles
+#print axioms TorArbitrary.psiAdd
+#print axioms TorArbitrary.psiAdd_surjective
