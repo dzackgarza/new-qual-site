@@ -33,6 +33,24 @@ audit:
     V.3.4 concerns Hilbert-Samuel multiplicity, not blowup cohomology.
     Replaced the false cross-reference with the projective birational
     vanishing theorem of Chatzistamatiou and Rulling, Theorem 1.1.
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read the printed exercise at Hartshorne, Algebraic Geometry (1977), V.3,
+    exercise 3.1, printed page 394. Checked the reduction: R^j pi_* O = 0 for
+    j > 0 and pi_* O = O give H^i(X-tilde, O) = H^i(X, O) by the Leray spectral
+    sequence, hence equality of the Euler characteristics and of
+    p_a(Z) = (-1)^n (chi(Z,O_Z) - 1), the definition of III.5/IV.1. Searched
+    outside the twelve retained sets: Algebraic Geometry II, National Taiwan
+    University, 2020 Spring, Chapter V homework, Exercise 1 of section 3, PDF
+    p. 9 (tmp/sources/ntu-ag2-chapter5.pdf), proves the vanishing for a centre
+    of any codimension by the formal functions theorem over E = P^{r-1};
+    Yang Pi-Yeh, Hartshorne Solutions, exercise 5.3.1, printed p. 107
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), assumes codimension one and
+    is not a proof of the exercise. Not checked: Chatzistamatiou-Rulling
+    Theorem 1.1 itself, which is cited and not in tmp/sources; the card's own
+    argument needs only that statement.
 ---
 
 ::: {.problem}
@@ -140,5 +158,9 @@ blowing up a nonsingular centre.
 :::
 
 ::: {.remark title="Published solution"}
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 1 of §3 (solution by Shuang-Yen Lee), PDF p. 9, proves the vanishing for a blowup of a nonsingular subvariety of any codimension: by Exercise III.8.1 it suffices to have $\pi_*\OO_{\widetilde X}=\OO_X$, which is the proof of III.11.4, and $R^i\pi_*\OO_{\widetilde X}=0$ for $i>0$. Outside the centre $\pi$ is an isomorphism; at a point of $Y$ the formal functions theorem identifies the stalk of $R^i\pi_*\OO_{\widetilde X}$ with $\varprojlim H^i(E_n,\OO_{E_n})$, where $E$ is the exceptional divisor and $I^ n/I^{n+1}\cong\operatorname{Sym}^n(I/I^2)\cong\OO_E(n)$ with $E\cong\PP^{r-1}$, $r=\operatorname{codim}(Y,X)$; induction on $n$ from $H^i(\PP^{r-1},\OO(n))=0$ for $i>0$ gives the vanishing, hence $p_a(\widetilde X)=p_a(X)$. Steps [](#cohomology-invariance){.pf-ref} to [](#arithmetic-genus-equal){.pf-ref} reach the same conclusion through $R^j\pi_*\OO_{\widetilde X}=0$ for $j>0$ in all dimensions at once, which is Chatzistamatiou--Rülling's theorem.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.3.1, printed p. 107, writes "since $\operatorname{codim}(Y,X)=1$, $\mathcal I/\mathcal I^2$ is an invertible sheaf on $Y$" and then covers $E$ by $\PP^1_A$'s; the exercise has $Y$ of any codimension, and a codimension-one blowup is an isomorphism, so the argument does not cover the case it is aimed at.
+
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.1, PDF p. 273: the whole of his solution is "This follows from 3.4, which says that $H^i(\widetilde X)\approx H^i(X)$ and the fact that $p_a$ is calculated from the Euler characteristic". Result (3.4) and its corollary (3.5) are the monoidal case, where the centre is a point; the exercise blows up a nonsingular subvariety of any codimension, and the invariance of $H^i(X,\OO_X)$ is then the vanishing of the higher direct images of $\OO_{\widetilde X}$ under a projective birational morphism of regular schemes, proved by Chatzistamatiou and Rülling, *Vanishing of the higher direct images of the structure sheaf*, Compositio Math. 151 (2015) 2131--2144, Theorem 1.1. Steps [](#cohomology-invariance){.pf-ref} to [](#arithmetic-genus-equal){.pf-ref} are that reduction, with $p_a(Z)=(-1)^n(\chi(Z,\OO_Z)-1)$.
 :::
