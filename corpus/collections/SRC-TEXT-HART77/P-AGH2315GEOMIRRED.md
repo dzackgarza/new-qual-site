@@ -20,6 +20,21 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-17
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read the Stacks Project Lemma 33.8.9 (tag 038I) and Lemma 33.6.4 (tag
+    035U) in full: the first lists geometric irreducibility, irreducibility
+    after every finite separable extension, and irreducibility of X over a
+    separable algebraic closure as equivalent; the second lists geometric
+    reducedness, reducedness after every field extension, after every finite
+    purely inseparable extension, after k^{1/p}, after k^{perf} and after
+    the algebraic closure. Those are exactly the three conditions of each
+    part with k_s and k_p in place. Rechecked the card's own steps: the
+    purely inseparable base change being a homeomorphism, Lemma 10.47.2 for
+    the minimal prime over an algebraically closed field, and injectivity of
+    A tensor k_p to A tensor kbar.
 ---
 
 ::: {.problem}
@@ -285,6 +300,8 @@ in which $y-s$ is a nonzero nilpotent.  So a domain of finite type over an algeb
 :::
 
 ::: {.remark title="Published solution"}
+Both parts are proved in full in the Stacks Project, with the same closures Hartshorne's list uses. Part (a) is Lemma 33.8.9 (tag 038I), which lists as equivalent: "$X$ is geometrically irreducible over $k$"; "for every finite separable field extension $k'/k$ the scheme $X_{k'}$ is irreducible"; and "$X_{\bar k}$ is irreducible, where $k\subset\bar k$ is a separable algebraic closure of $k$"; part (1) of that list is the assertion for every field extension $k'/k$, so the lemma gives the equivalence of all three of Hartshorne's conditions. Part (b) is Lemma 33.6.4 (tag 035U), which lists as equivalent: $X$ geometrically reduced; $X_{k'}$ reduced for every field extension $k'/k$; $X_{k'}$ reduced for every finite purely inseparable $k'/k$; $X_{k^{1/p}}$ reduced; $X_{k^{perf}}$ reduced; and $X_{\bar k}$ reduced. The $k_p$ of the exercise is $k^{perf}$, so items (2), (5) and (6) are exactly the three conditions of part (b). The proofs there run through Algebra, Lemmas 10.44.4 and 10.47.3, which is the descent the retained sets assert.
+
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.15, PDF pp. 26--27, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: for (a) Kim reduces a reducible $X_K$ to an affine chart with $A\otimes_kK$ reducible, extracts non-nilpotent $f_1,f_2$ with $f_1f_2=0$, and then asserts that the resulting finitely many polynomial conditions, which have a solution over the algebraically closed field $K$, have one over a finite extension of $k$; a finite purely inseparable base change of a separably closed $k$ is a homeomorphism, which would finish the argument.
 That descent is asserted rather than proved, and it fails on the natural reading: a purely inseparable extension of a separably closed but non-perfect $k$ need not have a $k$-point, so a solution over $K$ does not specialize to one over $k$.
 The proof above replaces it by the cited Lemma 10.47.3 and keeps Kim's two reductions, that purely inseparable base change is a homeomorphism and that extension of scalars over an algebraically closed field preserves the set of minimal primes.
