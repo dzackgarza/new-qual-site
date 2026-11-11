@@ -28,6 +28,19 @@ audit:
   by: chatgpt
   date: 2026-09-17
   note: 'Checked the reduction to the normal local ring at P, the membership in every height-one localization, and the punctured affine-line counterexample against Matsumura, Commutative Ring Theory, Theorem 11.5, and independent Hartshorne solution notes.'
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read Vakil, The Rising Sea, 2 September 2011 draft, Section
+    12.3.9-12.3.11, printed pp. 267-268: the Algebraic Hartogs' Lemma and
+    its proof by the ideal of denominators, which is the height-one
+    intersection step the card cites to Matsumura Theorem 11.5. Matsumura's
+    book is not on this machine, so that numbering is repeated from the card
+    and not verified here. Checked the reduction of step s2: a height-one
+    prime of O_{P,Y} pulls back to a prime p strictly inside m because dim R
+    >= 2, V(p) has dimension at least one so carries a closed point Q other
+    than P, and regularity of f at Q puts f in A_p.
 ---
 
 ::: {.problem}
@@ -199,8 +212,10 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 :::
 
 ::: {.remark title="Published solution"}
+The height-one intersection theorem that step [](#s3){.pf-ref} applies is proved in full as Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry* (Math 216 blog, September 2, 2011 draft), Section 12.3.9--12.3.11, printed pp. 267--268, under the name "Algebraic Hartogs' Lemma": "Suppose $A$ is a Noetherian normal integral domain. Then $A=\cap_{\mathfrak p\text{ codimension }1}A_{\mathfrak p}$." The printed proof is the ideal of denominators $I=\theset{r\in A\st rx\in A}$: a minimal prime $\mathfrak q$ over $I$ has codimension at least two because the statement is vacuous in dimension one, so after localizing at $\mathfrak q$ one has $I=\sqrt{\mathfrak q}$ and finds $z\notin A$ with $\mathfrak qz\subseteq A$; then either $\mathfrak qz\subseteq\mathfrak q$, which makes $z$ integral over the integrally closed $A$, or $\mathfrak qz=A$, which makes $\mathfrak q$ principal of codimension at most one by Nakayama. In the case at hand $A=R=\mco_{P,Y}$ is a Noetherian normal domain of dimension at least two by step [](#s1){.pf-ref}, so the theorem applies verbatim. The same statement is on the card as Matsumura, *Commutative Ring Theory*, Theorem 11.5, which is the form the working notes of this exercise use; Vakil's pages were read for it and Matsumura's book was not on this machine.
+
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 3.20.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 3.20.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.20, PDF p. 38, writes "Since projective space is proper this works" for (a) and "Consider a single variable complex function with a pole" for (b); neither is an argument for the statement.
-No retained set contains a proof of this exercise. The proof above reduces to the local ring $\mco_{P,Y}$, shows the rational function lies in every height-one localization by finding a closed point of $V(\mathfrak p)$ other than $P$, and applies the height-one intersection theorem for Noetherian normal domains, with the punctured line $1/x\in\mco(\AA^1\setminus\{0\})\setminus\mco_0$ for (b).
+No Hartshorne solution set contains a proof of this exercise, and Vakil's book proves the algebra lemma rather than the exercise. The proof above reduces to the local ring $\mco_{P,Y}$, shows the rational function lies in every height-one localization by finding a closed point of $V(\mathfrak p)$ other than $P$, and cites the lemma for the intersection; the punctured line $1/x\in\mco(\AA^1\setminus\theset{0})\setminus\mco_0$ is (b).
 :::

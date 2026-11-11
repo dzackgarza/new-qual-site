@@ -24,6 +24,20 @@ audit:
   by: chatgpt
   date: 2026-09-17
   note: 'Checked part (a) directly by differentiating a polynomial inverse and taking determinants. This avoids the incorrect claim in some solution notes that every coordinate of a polynomial automorphism must be linear.'
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read Garland, An Introduction to the Jacobian Conjecture (UChicago REU
+    2018), Proposition 2.9, printed p. 3, which proves part (a) over C by
+    the chain rule and the degree of a product; the card now quotes it.
+    Checked that the identity is formal in the partial derivatives so that
+    it holds over an arbitrary field, which is what the card needs. Verified
+    the status claim in the card's remark against the arXiv record of Gao,
+    Counterexamples to the Jacobian conjecture in dimensions greater than
+    two, arXiv:2608.00222v1 (31 July 2026), which records Alpoge's three-
+    dimensional counterexample of 19 July 2026 and leaves dimension two
+    open. Not checked: any line of that preprint.
 ---
 
 ::: {.problem}
@@ -117,4 +131,6 @@ Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), give
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 3.19.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.19, PDF p. 38: if any $f_i\in k$ then $\phi$ would not be surjective, and the derivative of a linear nonconstant polynomial is a unit, so the Jacobian is a unit; he marks the converse "SKIP".
 The proof above differentiates $\psi\circ\phi=\mathrm{id}$ and takes determinants, which gives the unit $J_\psi\circ\phi$ directly, and then uses that the units of a polynomial ring are the nonzero constants; it does not argue that the $f_i$ are linear, which is false in general.
+
+The complete published argument for (a) is William Garland, *An Introduction to the Jacobian Conjecture* (University of Chicago REU 2018), Proposition 2.9, printed p. 3: "Since $F$ is a polynomial automorphism, we know there exists a polynomial mapping $G:\CC^n\to\CC^n$ which satisfies $G\circ F=\mathrm{Id}_{\CC^n}$. Therefore, note $1=J(\mathrm{Id}_{\CC^n})(z)=J(G\circ F)(z)=J(G)(F(z))\cdot J(F)(z)$ by the Chain Rule. Therefore, $J(F)$ is given by a polynomial which has a multiplicative inverse. Therefore, the degree of $J(F)$ must be $0$, so $J(F)$ must be a constant nonzero polynomial." Garland states the conjecture over $\CC$; the chain-rule identity he uses is formal in the partial derivatives and so holds over any field, which is the form step [](#s1){.pf-ref} states it in.
 :::
