@@ -12,6 +12,7 @@ from pathlib import Path
 
 import yaml
 
+from . import certificates as certificate
 from .diagnostics import Diagnostic, DiagnosticCode
 from .model import (
     AcademicTerm,
@@ -21,6 +22,7 @@ from .model import (
     ExamSource,
     HomeworkSource,
     ParsedCard,
+    ProblemCard,
     ProblemEntry,
     TermOnly,
     TextbookSource,
@@ -36,11 +38,18 @@ create table cards (
   title text not null,
   slogan text,
   prompts text not null,         -- JSON list of review questions; '[]' when the card has none
-  review text not null,
+  review text not null,          -- the authored field: draft | reviewed | verified
+  status text not null,          -- derived from `review` and `proofs/README.md`: certified | reviewed | draft
   source_path text not null,   -- diagnostics and edit links only, never identity
   ast text not null,           -- pandoc JSON of the card body
   route text not null          -- the directory the card's page is written under
 );
+-- The certificate files `proofs/README.md` lists for a card, in that file's
+-- order. Derived at build time from the README, never authored on the card.
+create table card_certificates (card_id text not null, ordinal integer not null, file text not null, tool text not null);
+-- A problem's audit events, in the order authored. Dates are ISO strings so a
+-- page can print one without guessing its type.
+create table card_audit (card_id text not null, ordinal integer not null, event text not null, actor text not null, date text not null, note text);
 create table classifications (card_id text not null, axis text not null, term text not null);
 create table relations (source_id text not null, kind text not null, target_id text not null);
 -- `sources` holds what every source kind has. The kind-specific columns live in
@@ -126,7 +135,19 @@ def load_vocabularies(root: Path, wiki_root: Path) -> dict[str, set[str]]:
     return vocab
 
 
-def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagnostic]:
+def validate(
+    parsed: list[ParsedCard],
+    vocab: dict[str, set[str]],
+    certificates: dict[str, tuple[certificate.Certificate, ...]] | None = None,
+    root: Path | None = None,
+) -> list[Diagnostic]:
+    """Card, relation and registry checks; the certificate tables are one of them.
+
+    The certificate tables are the only source of a card's certified status, so
+    a row naming a card that does not exist certifies nothing and a row naming a
+    file that is not there prints a link that goes nowhere. Both are reported
+    here rather than at emit time.
+    """
     errors: list[Diagnostic] = []
     by_id: dict[str, ParsedCard] = {}
     for p in parsed:
@@ -139,6 +160,25 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
                 )
             )
         by_id[p.card.id] = p
+
+    for card_id, entries in sorted((certificates or {}).items()):
+        if card_id not in by_id:
+            errors.append(
+                Diagnostic(
+                    DiagnosticCode.CERTIFICATE_CARD_UNKNOWN,
+                    "proofs/README.md",
+                    f"lists a certificate for {card_id}, which no card carries",
+                )
+            )
+        for entry in entries:
+            if root is not None and not (root / entry.file).is_file():
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.CERTIFICATE_FILE_MISSING,
+                        "proofs/README.md",
+                        f"names {entry.file} for {card_id}, and it does not exist",
+                    )
+                )
 
     for p in parsed:
         where = f"{p.source_path} ({p.card.id})"
@@ -230,7 +270,12 @@ def load_institution_names(vocabulary_root: Path) -> dict[str, str]:
     return {entry["id"]: entry["name"] for entry in yaml.safe_load((vocabulary_root / "institutions.yaml").read_text())}
 
 
-def build(parsed: list[ParsedCard], db_path: Path, institution_names: dict[str, str]) -> None:
+def build(
+    parsed: list[ParsedCard],
+    db_path: Path,
+    institution_names: dict[str, str],
+    certificates: dict[str, tuple[certificate.Certificate, ...]],
+) -> None:
     db_path.parent.mkdir(parents=True, exist_ok=True)
     db_path.unlink(missing_ok=True)
     con = sqlite3.connect(db_path)
@@ -238,8 +283,9 @@ def build(parsed: list[ParsedCard], db_path: Path, institution_names: dict[str, 
 
     for p in parsed:
         c = p.card
+        certified = certificates.get(c.id, ())
         con.execute(
-            "insert into cards values (?,?,?,?,?,?,?,?,?)",
+            "insert into cards values (?,?,?,?,?,?,?,?,?,?)",
             # ponytail: JSON in one column, not a side table like `classifications`.
             # Prompts are only ever read back whole and in order, and the side
             # tables carry no position column -- ordering them would mean adding
@@ -251,11 +297,26 @@ def build(parsed: list[ParsedCard], db_path: Path, institution_names: dict[str, 
                 getattr(c, "slogan", None),
                 json.dumps([typeset_dashes(prompt) for prompt in c.prompts]),
                 c.review,
+                # The reader-facing status. Derived here once so the page, the
+                # listing counts and the crawler read the same word.
+                certificate.status(c.review, certified),
                 p.source_path,
                 p.ast,
                 card_route(c),
             ),
         )
+        con.executemany(
+            "insert into card_certificates values (?,?,?,?)",
+            [(c.id, ordinal, entry.file, entry.tool) for ordinal, entry in enumerate(certified)],
+        )
+        if isinstance(c, ProblemCard):
+            con.executemany(
+                "insert into card_audit values (?,?,?,?,?,?)",
+                [
+                    (c.id, ordinal, event.event, event.by, event.date.isoformat(), event.note)
+                    for ordinal, event in enumerate(c.audit)
+                ],
+            )
         for axis, terms in (
             ("area", c.classification.areas),
             ("topic", c.classification.topics),

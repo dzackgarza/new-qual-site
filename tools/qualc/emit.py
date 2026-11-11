@@ -31,6 +31,7 @@ from urllib.parse import quote, unquote, urlencode, urlsplit
 import panflute as pf
 import yaml
 
+from .certificates import STATUSES
 from .index import load_areas
 from .lamport import LamportError, apply_lamport
 from .model import (
@@ -718,7 +719,8 @@ def _transcluded_listing(con: sqlite3.Connection, card: sqlite3.Row, inline_cach
     if card["kind"] != "collection":
         return []
     problems, _solved = _collection_counts(con).get(card["id"], (0, 0))
-    return _collection_listing(card["id"], _collection_rows(con, card["id"]), problems, inline_cache, base="")
+    status_counts = _collection_status_counts(con).get(card["id"], {})
+    return _collection_listing(card["id"], _collection_rows(con, card["id"]), problems, inline_cache, status_counts, base="")
 
 
 def _transclude(card: sqlite3.Row, counts: Counter[str], listing: list[pf.Block]) -> pf.Div:
@@ -853,6 +855,8 @@ class CardPageData:
     dependencies: dict[str, list[sqlite3.Row]]
     backlinks: dict[str, list[sqlite3.Row]]
     solved: frozenset[str]
+    certificates: dict[str, list[sqlite3.Row]]
+    audit: dict[str, list[sqlite3.Row]]
 
 
 def load_card_page_data(con: sqlite3.Connection) -> CardPageData:
@@ -923,12 +927,20 @@ def load_card_page_data(con: sqlite3.Connection) -> CardPageData:
             "select distinct card_id from sections where section_kind='solution'",
         )
     )
+    certificates: dict[str, list[sqlite3.Row]] = {}
+    for row in _rows(con, "select card_id, file, tool from card_certificates order by card_id, ordinal"):
+        certificates.setdefault(row["card_id"], []).append(row)
+    audit: dict[str, list[sqlite3.Row]] = {}
+    for row in _rows(con, "select card_id, event, actor, date, note from card_audit order by card_id, ordinal"):
+        audit.setdefault(row["card_id"], []).append(row)
     return CardPageData(
         terms=terms,
         facets=facets,
         dependencies=dependencies,
         backlinks=backlinks,
         solved=solved,
+        certificates=certificates,
+        audit=audit,
     )
 
 
@@ -1202,7 +1214,69 @@ def _asked_meta(data: CardPageData, card: sqlite3.Row, area_names: dict[str, str
     years = sorted({str(f["exam_year"]) for f in facets if f["exam_year"] is not None})
     areas = _page_terms(data, card["id"], "area")
     topics = _page_terms(data, card["id"], "topic")
-    return _card_meta(card, area_names, areas, topics, institutions, years)
+    meta = _card_meta(card, area_names, areas, topics, institutions, years)
+    # A problem page states its proof status and the audit trail behind it. Both
+    # are read off the catalog, which derived them from the card's `review:`
+    # field and the certificate tables of `proofs/README.md`; neither is
+    # authored a second time here.
+    meta["proof_status"] = card["status"]
+    certificates = _page_rows(data.certificates, card["id"])
+    if certificates:
+        meta["certificates"] = [{"file": row["file"], "tool": row["tool"]} for row in certificates]
+    audit = _page_rows(data.audit, card["id"])
+    if audit:
+        meta["audit"] = [{"date": row["date"], "event": row["event"], "by": row["actor"], "note": row["note"]} for row in audit]
+    return meta
+
+
+_MONTHS = (
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+)
+
+
+def _human_date(iso: str) -> str:
+    """`2026-02-11` as `11 February 2026`; anything else stays as written."""
+    parts = iso.split("-")
+    if len(parts) != 3 or not all(part.isdigit() for part in parts):
+        return iso
+    year, month, day = (int(part) for part in parts)
+    if not 1 <= month <= 12:
+        return iso
+    return f"{day} {_MONTHS[month - 1]} {year}"
+
+
+def _audit_json(rows: list[sqlite3.Row]) -> list[dict]:
+    """The card's dated audit events, at the foot of its page.
+
+    The list is what the audit trail is for: who did what to this card, and
+    when. It sits after the mathematics rather than in the header band because
+    the notes are paragraphs, and a reader who came for the problem should reach
+    it last.
+    """
+    if not rows:
+        return []
+    items = []
+    for row in rows:
+        note = f'<span class="audit-note">{html.escape(row["note"])}</span>' if row["note"] else ""
+        items.append(
+            f'<li><time datetime="{html.escape(row["date"], quote=True)}">{html.escape(_human_date(row["date"]))}</time> '
+            f'<span class="audit-event">{html.escape(row["event"])}</span> '
+            f'<span class="audit-by">{html.escape(row["actor"])}</span>'
+            f"{note}</li>"
+        )
+    block = f'<section class="audit-events"><h2>Audit trail</h2><ol>{"".join(items)}</ol></section>'
+    return [{"t": "RawBlock", "c": ["html", block]}]
 
 
 def asked_json(
@@ -1231,6 +1305,7 @@ def asked_json(
             wiki_mentions.get(card["id"], []),
         )
     )
+    body.extend(_audit_json(_page_rows(data.audit, card["id"])))
     return _asked_meta(data, card, area_names), body
 
 
@@ -1540,6 +1615,33 @@ def _collection_counts(con: sqlite3.Connection) -> dict[str, tuple[int, int]]:
     }
 
 
+def _collection_status_counts(con: sqlite3.Connection) -> dict[str, dict[str, int]]:
+    """How many of each collection's problems are certified, reviewed and draft.
+
+    The same recursive reach `_collection_counts` uses: a compilation listing a
+    child collection owns that collection's problems, and a problem reached
+    twice counts once. A status a collection has none of is still a count, so
+    every collection reports all three.
+    """
+    counts: dict[str, dict[str, int]] = {}
+    for row in _rows(
+        con,
+        """
+        with recursive reach(collection_id, member) as (
+          select collection_id, problem_id from collection_problems
+          union
+          select reach.collection_id, cp.problem_id
+          from reach join collection_problems cp on cp.collection_id=reach.member
+        )
+        select reach.collection_id, listed.status, count(*) as problems
+        from reach join cards listed on listed.id=reach.member and listed.kind='problem'
+        group by reach.collection_id, listed.status
+        """,
+    ):
+        counts.setdefault(row["collection_id"], {})[row["status"]] = row["problems"]
+    return counts
+
+
 def _collection_rows(con: sqlite3.Connection, collection_id: str) -> list[sqlite3.Row]:
     """The cards a collection lists, in source order."""
     return _rows(
@@ -1563,6 +1665,7 @@ def collection_page(
     repo_root: Path,
     area_names: dict[str, str],
     problem_count: int,
+    status_counts: dict[str, int],
 ) -> Page:
     listed = _collection_rows(con, src["id"])
     provenance = [
@@ -1584,6 +1687,7 @@ def collection_page(
         listed,
         problem_count,
         inline_cache,
+        status_counts,
     )
 
 
@@ -1652,6 +1756,7 @@ def _collection_listing(
     listed: list[sqlite3.Row],
     problem_count: int,
     inline_cache: dict[str, list[pf.Inline]],
+    status_counts: dict[str, int],
     base: str = "../",
 ) -> list[pf.Block]:
     """Render the collection's authored source-order contents.
@@ -1694,6 +1799,20 @@ def _collection_listing(
             attributes={"data-pagefind-ignore": ""},
         )
     )
+    # What a reader choosing a collection wants next: how much of it is
+    # checked. The counts are the same derived status its problem pages state,
+    # so a collection cannot advertise a certified problem whose page says draft.
+    if problem_count:
+        chips = "".join(
+            f'<span class="status-count" data-status="{status}">{status_counts.get(status, 0)} {status}</span>'
+            for status in STATUSES
+        )
+        blocks.append(
+            pf.RawBlock(
+                f'<div class="status-counts" data-pagefind-ignore>{chips}</div>',
+                format="html",
+            )
+        )
     if listed:
         by_section: list[tuple[str | None, list[sqlite3.Row]]] = []
         for row in listed:
@@ -1986,11 +2105,19 @@ def index_page(
              and id in (select card_id from sections where section_kind = 'solution')) as solved
         """,
     )[0]
+    # The three proof statuses, counted the way every problem page states them.
+    by_status = {
+        row["status"]: row["problems"]
+        for row in _rows(con, "select status, count(*) as problems from cards where kind='problem' group by status")
+    }
     intro = (
         f"Past qualifying-exam problems, with the sources and notes to work them. "
         f"{scale['asked']:,} problems, from {scale['sittings']:,} exam sittings "
         f"at {scale['institutions']} institutions and from textbooks, homework sets and compiled scans. "
         f"{scale['solved']:,} carry a written solution.\n\n"
+        f"Of them, {by_status.get('certified', 0):,} are certified by a file under `proofs/` "
+        f"(elaborated in Lean, or an exact Sage or GAP computation), "
+        f"{by_status.get('reviewed', 0):,} are reviewed, and {by_status.get('draft', 0):,} are drafts.\n\n"
     )
     links = (
         "[Problems](problems.html)\n"
@@ -2670,6 +2797,7 @@ def project(
     # How much of a collection is worked is what a reader picking one is after,
     # and the index cannot count it: it is carried as page metadata.
     counts = _collection_counts(con)
+    status_counts = _collection_status_counts(con)
 
     def worked_fact(collection_id: str) -> str:
         problems, solved = counts.get(collection_id, (0, 0))
@@ -2703,6 +2831,7 @@ def project(
                     site.parent,
                     area_names,
                     counts.get(src["id"], (0, 0))[0],
+                    status_counts.get(src["id"], {}),
                 ),
                 out / src["route"] / f"{src['id']}.qmd",
                 StandardPage(

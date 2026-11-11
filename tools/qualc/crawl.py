@@ -14,6 +14,13 @@ not exceptions to reachability, so this crawler follows them explicitly. It also
 validates the JSON-backed URLs as internal links; otherwise a broken browser row
 could pass ``--links-only`` merely because JavaScript creates its anchor later.
 
+It also holds the one thing every problem page owes a reader: a status line.
+Issue #113 found that nearly every card is a draft and the handful certified
+under `proofs/` say nothing about it on their pages, so a problem page without
+a status line is a crawl failure rather than a cosmetic gap. Which pages are
+problem pages is `problems.json` -- the browser's own index of the problem
+cards -- so the check does not need the catalog and cannot drift from it.
+
 Run it after `just build`:
 
     uv run python tools/crawl.py
@@ -53,12 +60,19 @@ CATALOG_DATA = TypeAdapter(CatalogData)
 COLLECTION_DATA = TypeAdapter(dict[str, CollectionData])
 
 
+# The status line `static_site._proof_status` writes on a problem page. The
+# crawler matches the marker rather than the wording, because the wording is
+# presentation.
+STATUS_LINE = re.compile(r'class="page-fact page-status" data-status="(?:certified|reviewed|draft)"')
+
+
 @dataclass(frozen=True)
 class CrawlResult:
     pages: frozenset[pathlib.Path]
     seen: frozenset[pathlib.Path]
     broken: tuple[tuple[str, str], ...]
     orphans: tuple[str, ...]
+    missing_status: tuple[str, ...]
 
 
 def _target(raw: str, base: pathlib.Path, site: pathlib.Path) -> pathlib.Path | None:
@@ -124,6 +138,16 @@ def data_urls(site: pathlib.Path = SITE) -> list[tuple[str, pathlib.Path]]:
     return out
 
 
+def problem_pages(site: pathlib.Path = SITE) -> list[pathlib.Path]:
+    """The pages `problems.json` says are problem cards."""
+    site = site.resolve()
+    return [
+        target
+        for row in _catalog(site / "problems.json")["rows"]
+        if (target := _target(row["url"], site, site)) is not None
+    ]
+
+
 def crawl(site: pathlib.Path = SITE) -> CrawlResult:
     site = site.resolve()
     pages = frozenset(p.resolve() for p in site.rglob("*.html"))
@@ -158,6 +182,16 @@ def crawl(site: pathlib.Path = SITE) -> CrawlResult:
                     else str(target),
                 )
             )
+
+    # Every problem page states its proof status, and a page that does not is
+    # the defect a reader cannot see for themselves.
+    missing_status = tuple(
+        sorted(
+            str(page.relative_to(site))
+            for page in problem_pages(site)
+            if page.is_file() and not STATUS_LINE.search(page.read_text())
+        )
+    )
 
     indexed = frozenset(
         page for page in pages if "data-pagefind-body" in page.read_text()
@@ -194,6 +228,7 @@ def crawl(site: pathlib.Path = SITE) -> CrawlResult:
         seen=frozenset(seen),
         broken=tuple(broken),
         orphans=orphans,
+        missing_status=missing_status,
     )
 
 
@@ -202,20 +237,29 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--links-only",
         action="store_true",
-        help="fail only on broken internal links/assets; do not fail on orphan pages",
+        help="fail only on broken internal links/assets and problem pages with no status line; do not fail on orphan pages",
+    )
+    parser.add_argument(
+        "--site",
+        type=pathlib.Path,
+        default=SITE,
+        help="the built site to crawl; defaults to build/quarto/_site",
     )
     args = parser.parse_args(argv)
 
-    result = crawl()
+    result = crawl(args.site)
     print(
         f"{len(result.pages)} pages, {len(result.seen & result.pages)} reachable from the home page"
     )
     for source, target_name in result.broken:
         print(f"  broken: {source} -> {target_name}")
+    for page in result.missing_status:
+        print(f"  no proof status: {page}")
     if not args.links_only:
         for orphan in result.orphans:
             print(f"  nothing links {orphan}")
-    return 1 if result.broken or (result.orphans and not args.links_only) else 0
+    failed = result.broken or result.missing_status or (result.orphans and not args.links_only)
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":

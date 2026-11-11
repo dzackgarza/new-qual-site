@@ -10,6 +10,7 @@ from pathlib import Path
 
 import panflute as pf
 
+from . import certificates as certificate
 from . import emit, index
 from .diagnostics import Diagnostic, DiagnosticCode
 from .lamport import LamportError, apply_lamport
@@ -32,7 +33,8 @@ def load(
         pandoc,
         discover(root / "corpus"),
     )
-    errors.extend(index.validate(parsed, index.load_vocabularies(root / "vocabularies", root / "wiki")))
+    certificates = certificate.load(root / "proofs")
+    errors.extend(index.validate(parsed, index.load_vocabularies(root / "vocabularies", root / "wiki"), certificates, root))
     wiki_pages, wiki_errors = parse_pages(pandoc, root / "wiki", load_citations(root / "vocabularies"))
     errors.extend(wiki_errors)
     card_routes = {}
@@ -95,7 +97,12 @@ def build_search_index(site: Path) -> None:
 
 def build_catalog(root: Path, parsed: list[ParsedCard]) -> Path:
     db = root / "build" / "catalog.sqlite"
-    index.build(parsed, db, index.load_institution_names(root / "vocabularies"))
+    index.build(
+        parsed,
+        db,
+        index.load_institution_names(root / "vocabularies"),
+        certificate.load(root / "proofs"),
+    )
     return db
 
 

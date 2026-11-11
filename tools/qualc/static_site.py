@@ -16,8 +16,16 @@ from urllib.parse import quote, unquote, urlsplit
 
 @dataclass(frozen=True)
 class AssetCatalog:
+    """Every file the build may have to publish beside a page.
+
+    `root` is the `assets/` tree, which authored `assets/...` links resolve
+    against. `repo_root` is the repository itself, for the one other kind of
+    local file a page links: the certificates under `proofs/`.
+    """
+
     root: Path
     by_name: dict[str, tuple[Path, ...]]
+    repo_root: Path = Path(".")
 
 
 @dataclass(frozen=True)
@@ -276,6 +284,7 @@ def build_asset_catalog(root: Path) -> AssetCatalog:
     return AssetCatalog(
         root=root,
         by_name={name: tuple(paths) for name, paths in by_name.items()},
+        repo_root=root.parent,
     )
 
 
@@ -328,6 +337,39 @@ def _source_links(meta: dict[str, object], relative_path: Path) -> str:
     return '<div class="page-source-links">' + "".join(links) + "</div>"
 
 
+# The three words a problem page may state, capitalised for the sentence.
+STATUS_LABELS = {"certified": "Certified", "reviewed": "Reviewed", "draft": "Draft"}
+
+
+def _proof_status(meta: dict[str, object], relative_path: Path) -> str:
+    """The one line that says what this problem's proof is.
+
+    Three states, and the page says which one without a reader having to
+    compare the card's `review:` field against a table in `proofs/README.md`:
+    certified, with the certificate files linked and the checking tool named;
+    reviewed; or draft. `meta["proof_status"]` is the catalog's derived word, so
+    the page cannot disagree with the crawl that checks it is there.
+    """
+    status = meta.get("proof_status")
+    if not isinstance(status, str) or status not in STATUS_LABELS:
+        return ""
+    parts = [STATUS_LABELS[status]]
+    raw = meta.get("certificates")
+    links = []
+    for item in raw if isinstance(raw, list) else ():
+        if not isinstance(item, dict):
+            continue
+        file = item.get("file")
+        tool = item.get("tool")
+        if not isinstance(file, str) or not isinstance(tool, str):
+            continue
+        href = escape(_relative_url(relative_path, Path(file)), quote=True)
+        links.append(f'{escape(tool)} <a href="{href}"><code>{escape(file)}</code></a>')
+    if links:
+        parts.append(" — " + ", ".join(links))
+    return f'<div class="page-fact page-status" data-status="{escape(status, quote=True)}"><dt>Status</dt><dd>{"".join(parts)}</dd></div>'
+
+
 def _metadata(meta: dict[str, object], relative_path: Path) -> str:
     labels = {
         "area": "Area",
@@ -337,10 +379,17 @@ def _metadata(meta: dict[str, object], relative_path: Path) -> str:
         "review": "Status",
     }
     rows = []
+    # A problem page states its derived status instead of echoing the authored
+    # `review:` field: two statuses on one page is the confusion this avoids.
+    status = _proof_status(meta, relative_path)
     for key, label in labels.items():
         value = meta.get(key)
+        if status and key == "review":
+            continue
         if isinstance(value, str) and value:
             rows.append(f'<div class="page-fact"><dt>{escape(label)}</dt><dd>{escape(value)}</dd></div>')
+    if status:
+        rows.append(status)
     links = _source_links(meta, relative_path)
     if links:
         rows.append(f'<div class="page-fact"><dt>Source</dt><dd>{links}</dd></div>')
@@ -651,18 +700,33 @@ def _publish_metadata_assets(
     Header metadata is rendered after body-link rewriting, so its asset links
     need the same publication step explicitly. External URLs are already
     deployable and require no local copy.
+
+    A certificate under `proofs/` is one of those resources: the status line
+    links the file that checks the card, and a link to a file the site does not
+    publish is a link the crawler would report broken -- correctly.
     """
+    hrefs = []
     source_links = meta.get("source_links")
-    if not isinstance(source_links, list):
-        return
-    for item in source_links:
-        if not isinstance(item, dict):
-            continue
-        href = item.get("href")
+    if isinstance(source_links, list):
+        hrefs.extend(item.get("href") for item in source_links if isinstance(item, dict))
+    certificates = meta.get("certificates")
+    if isinstance(certificates, list):
+        hrefs.extend(item.get("file") for item in certificates if isinstance(item, dict))
+    for href in hrefs:
         if not isinstance(href, str) or not href:
             continue
         parsed = urlsplit(href)
         if parsed.scheme or parsed.netloc:
+            continue
+        path = Path(unquote(parsed.path))
+        if path.parts and path.parts[0] == "proofs":
+            source = catalog.repo_root / path
+            if not source.is_file():
+                raise ValueError(f"referenced certificate does not exist: {href}")
+            destination = site_root / path
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            if not destination.exists():
+                os.link(source, destination)
             continue
         _publish_asset(site_root, _asset_source(href, catalog), catalog)
 

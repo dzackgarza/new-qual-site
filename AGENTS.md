@@ -936,3 +936,27 @@ solution, write a complete Lamport-style structured proof in a `solution` sectio
 card in the layout `STYLE-08` fixes, and commit it before selecting the next card.
 `just sample-unsolved COLLECTION [n] [section]` samples unsolved card IDs from one collection in
 source order.
+
+# Proof status: the three words a problem page states
+
+Solution status says whether a solution is written. Proof status says what
+backs it, and every rendered problem page states one of three:
+
+- **certified** — `proofs/README.md` lists a certificate file for the card, in
+  section 1 (Lean) or section 2 (exact finite computations: Sage, GAP).
+- **reviewed** — no certificate, and the card's `review:` field is `reviewed`.
+- **draft** — neither.
+
+The status is derived at build time and stored nowhere. The two authored
+sources are the card's `review:` field and the certificate tables of
+`proofs/README.md`, so adding a certificate means adding its row to one of
+those tables and nothing on the card. A second `certificate:` field on the card
+would drift from the file; `qualc check` reads the tables instead, and fails on
+a row naming a card no card carries or a file that is not there. The
+certificate file is published beside the pages and linked from the status line,
+which names the tool that checks it.
+
+Nothing in the tables outside sections 1 and 2 certifies a card: section 6's
+repairs table names certificate files while saying no certificate exists for
+what it lists. A card's audit events (`audit:`) render on its page with their
+dates, at the foot, under `Audit trail`.
