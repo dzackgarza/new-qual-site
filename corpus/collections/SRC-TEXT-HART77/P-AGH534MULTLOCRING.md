@@ -30,6 +30,27 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-19
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read the printed exercise at Hartshorne, Algebraic Geometry (1977), V.3,
+    exercise 3.4, printed page 394, with its hint to I.7.5 for (a) and its
+    printed reference to Nagata and Zariski-Samuel. Checked each step: the
+    associated graded ring is finitely generated in degree one, so I.7.5
+    applies; length is additive over the filtration of A/m^l; partial sums of
+    a degree n-1 polynomial have degree n; for (d) the graded ring of the curve
+    is k[u,v]/(f_r) and the length formula rl - r(r-1)/2 was recomputed, and
+    checked against the node at r = 2, l = 2, where O/m^2 has length 3; for (e)
+    the vertex local ring has associated graded ring the homogeneous coordinate
+    ring of Y, so mu = (s+1)! d/(s+1)! = d. Searched outside the twelve
+    retained sets: NTU 2020, Exercise 4 of section 3, PDF pp. 10-11
+    (tmp/sources/ntu-ag2-chapter5.pdf), is a complete published proof of all
+    five parts; Yang Pi-Yeh, Hartshorne Solutions, printed pp. 107-108
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), has a false identification of
+    gr_m A with a polynomial ring in (b) and a wrong length formula in (d).
+    Not checked: Nagata and Zariski-Samuel, neither in tmp/sources; the card
+    does not rely on them.
 ---
 
 ::: {.problem}
@@ -448,5 +469,9 @@ steps [](#cone-graded-ring-is-coord-ring){.pf-ref} and [](#cone-vertex-multiplic
 :::
 
 ::: {.remark title="Published solution"}
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 4 of §3 (solution by Yu-Chi Hou), PDF pp. 10--11, proves all of (a)--(e): the graded ring $\mathrm{gr}_{\mathfrak m}A$ is finitely generated over $k$ and Hilbert--Serre gives $P_A$; $\deg P_A=\dim A$ by Atiyah--Macdonald 11.4; the definition of $\mu$ is recorded; for (d) the exact sequence $0\to\OO_{X,P}/\mathfrak m_X^{n-r}\to\OO_{X,P}/\mathfrak m_X^n\to\OO_{C,P}/\mathfrak m_{C,P}^n\to0$ gives $\length(A/\mathfrak m^n)-\length(A/\mathfrak m^{n-r})=nr-\frac{r(r-1)}2$, hence $\mu_P(C)=r$; for (e) the associated graded ring at the vertex is the homogeneous coordinate ring of $Y$, so the Hilbert--Samuel function is the Hilbert function of $Y$ and $\mu_V=d$. Those are steps [](#hilbert-samuel-polynomial-exists){.pf-ref}, [](#degree-of-hilbert-samuel){.pf-ref}, [](#curve-length-formula){.pf-ref} and [](#cone-vertex-multiplicity){.pf-ref}.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.3.4, printed pp. 107--108, has two defects. In (b) it asserts $\mathrm{gr}_{\mathfrak m}A\cong(A/\mathfrak m)[x_1,\ldots,x_n]$ for a system of parameters, which holds only for a regular local ring, and then reads the degree off as $\dim\mathbf P^n$. In (d) it assumes a local equation with a pure power $x^r$ among its terms and concludes "dim$(A/(f))^{(l)}=lr-\frac{r^2}2+\frac{3r}2$"; for a node, $r=2$ and $l=2$, that gives $5$, whereas $\OO_{C,P}/\mathfrak m_C^2=k[x,y]/(x^2,xy,y^2)$ has length $3$, which is $2l-\frac{2\cdot1}2$ from step [](#curve-length-formula){.pf-ref}.
+
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.4, PDF pp. 274--278. Part (a) he argues by identifying $\psi(l)=\length(A/\mathfrak m^l)$ with $\sum_{q<l}\dim(m^q/m^{q+1})$ and applying Hartshorne I.7.5, but on the way he asserts $\operatorname{gr}_{\mathfrak m}A\cong (A/\mathfrak m)[X_1,\ldots,X_n]$, which holds only when $A$ is regular; step [](#assoc-graded-gen-degree-one){.pf-ref} needs only that $\operatorname{gr}_{\mathfrak m}A$ is finitely generated in degree one, which is what Hilbert--Serre requires. Part (b) he gives as "given in Zariski-Samuel vol 2, ch VIII, §10", then offers an alternative through the dimension of the zero set of the annihilator. Part (c) he declines: "he is not actually asking any question here". Part (d) is an unfinished computation of $\length(\OO_{C,P}/\mathfrak m^l)$ with a worked example $k[x,y]/(y^7-x^9)$ and no general argument; steps [](#curve-graded-ring-quotient){.pf-ref} and [](#curve-length-formula){.pf-ref} give the general formula $rl-r(r-1)/2$. Part (e) is the citation "See Mumford, Algebraic Geometry 1, Proposition 5.11", a source not retained. Recorded in COMPLAINTS.
 :::
