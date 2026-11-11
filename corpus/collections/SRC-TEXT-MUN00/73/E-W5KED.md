@@ -17,7 +17,11 @@ audit:
   date: 2026-11-11
   note: >-
     Munkres §73 Exercise 1, printed p. 445. Proof transcribed from Takumi Murayama, Selected Solutions to
-    Munkres's Topology, 2nd Ed. (MAT365, Princeton, Fall 2012), §73 Exercise 1, which uses Theorem 60.1 for products and the wedge formula for free products. Checked
+    Munkres's Topology, 2nd Ed. (20 December 2014), §73 Exercise 1, read in the LaTeX source of that edition
+    (`tmp/sources/munkres-solutions-murayama-mat365.tex`); the paginated PDF of the 2014 edition could not be obtained
+    from this machine, so no printed page of it is claimed, and the hosts tried are recorded in the COMPLAINTS.md entry
+    for Sections 74 to 85. Murayama's solution uses Theorem 60.1 for products and the wedge formula of §71 Exercise 2
+    for free products, and induces to the n-fold cases. Checked
     against Theorem 73.4 (printed p. 444, the fundamental group of the n-fold dunce cap is cyclic of order n),
     Theorem 60.1 (printed p. 371, $\pi_1$ of a product) and Exercise 1 of §71 (printed p. 438), whose
     hypotheses are checked in step 1.
