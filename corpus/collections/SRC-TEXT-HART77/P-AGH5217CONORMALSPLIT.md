@@ -30,6 +30,31 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-19
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read the printed starred exercise at Hartshorne, Algebraic Geometry (1977),
+    V.2, exercise 2.17, printed pages 385-386, with its printed answer for part
+    (b). Rechecked the determinant of the conormal sheaf from the conormal
+    sequence of C in P^3: deg = -4(n+1)-(-2) = -4n-2, the sum of the two ranks
+    in the card's extension, so -10 for the twisted cubic and -14 for the
+    quartic, matching -5,-5 and both -7,-7 and -6,-8. Rechecked the two-chart
+    Cech computation of s3 including the binomial coefficients: the numerator of
+    h' is (n-1)a^{n(n-1)}h + (n-1)a^{n(n-1)-1}q - n a^{n(n-1)}h + ..., giving
+    -a^{n(n-1)}h + (n-1)a^{n(n-1)-1}q and the off-diagonal (n-1)s^{-1} in every
+    characteristic; for n = 3 the term n a^{n(n-1)}h vanishes identically in
+    characteristic 3 but the resulting coefficient of h is 2 = -1, so the class
+    is still 2 eta. Searched outside the twelve retained sets: Yang Pi-Yeh,
+    Hartshorne Solutions, exercise 5.2.17, printed pp. 106-107
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), computes both parts by the
+    Jacobian presentation and adds characteristic 3 to the split case, which
+    contradicts its own 2 eta; Algebraic Geometry II, National Taiwan
+    University, 2020 Spring, has no entry for Exercise 17 of section 2. Egbert,
+    PDF p. 273, enters the starred exercise with no argument. Not checked:
+    whether the charts x_1 = 0 or x_2 = 0 add a generator of the ideal of C_n;
+    the two charts used suffice because the transition matrix between them
+    determines the Cech class.
 ---
 
 ::: {.problem}
@@ -432,5 +457,7 @@ Step [](#s5){.pf-ref} proves part (a), and step [](#s6){.pf-ref} proves part (b)
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.17, PDF p. 273: the starred exercise is entered and the entry reads only "starred", so there is no argument to check. The card's computation is checked against the book's own bracket: $E_n=\varphi_n^*(\mathcal I/\mathcal I^2)$ sits in $0\to\OO(-2n-2)\to E_n\to\OO(-2n)\to0$ with class $(n-1)\eta$, which is nonzero for $n=2$ and gives $l=m=-5$ for the twisted cubic, and for $n=3$ gives $l=m=-7$ when $\operatorname{char}k\ne2$ and $\OO(-6)\oplus\OO(-8)$ when $\operatorname{char}k=2$, exactly the answer printed for part (b).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.17, PDF p. 273: the starred exercise is entered and the entry reads only "starred", so there is no argument to check. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.17, printed pp. 106--107, computes the conormal sheaf as the kernel of the map of graded modules given by the Jacobian of the parametrization: for the twisted cubic the presentation $R(-4)^{\oplus3}\to R(-2)^{\oplus4}$ has kernel $R(-5)^{\oplus2}$, so $\varphi^*(\mathcal I/\mathcal I^2)=\OO(-5)^{\oplus2}$; for the quartic the kernel is $R(-7)^{\oplus2}$ when $6\ne0$, and it writes "if $\operatorname{char}(k)=2,3$, $F(\varphi)$ is given by $(t^3,u^3,0)$, so $\ker F(\varphi)=R(-8)\oplus R(-6)$". The extra characteristic is wrong: in step [](#s3){.pf-ref} the extension class is $(n-1)\eta=2\eta$ for $n=3$, which vanishes exactly when $2=0$, and the printed answer for part (b) accordingly says $\operatorname{char}k=2$ and not $2$ or $3$. In characteristic $3$ the binomial coefficient $3$ vanishes in $(a^3+h)^3$, but the class $2\eta$ does not, so the splitting type is $\OO(-7)^{\oplus2}$ there as well.
+
+The card's computation is checked against the book's own bracket: $E_n=\varphi_n^*(\mathcal I/\mathcal I^2)$ sits in $0\to\OO(-2n-2)\to E_n\to\OO(-2n)\to0$ with class $(n-1)\eta$, which is nonzero for $n=2$ and gives $l=m=-5$ for the twisted cubic, and for $n=3$ gives $l=m=-7$ when $\operatorname{char}k\ne2$ and $\OO(-6)\oplus\OO(-8)$ when $\operatorname{char}k=2$, exactly the answer printed for part (b).
 :::
