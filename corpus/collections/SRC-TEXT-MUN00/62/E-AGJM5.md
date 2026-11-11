@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AGJM5
 kind: problem
-title: Extension of homotopic maps into open euclidean sets
+title: Homotopic maps into a euclidean open set and their extensions
 classification:
   areas:
   - topology
@@ -12,8 +12,16 @@ relations: []
 review: draft
 audit:
 - event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Munkres §62 Exercise 3, printed p. 384, which is Lemma 62.1 (the homotopy extension lemma, printed p. 381)
+    with "nullhomotopic" replaced by "homotopic to a map that extends": take the codomain Y, the closed
+    subspace A of X, and apply the lemma to X x I, A x I and the map F defined below. The card's earlier proof
+    had the right construction but buried the steps in nested headings, some of them empty, and it asserted
+    that Urysohn's lemma may be applied to X without noting that X is normal as a closed subspace of the normal
+    space X x I; both are repaired. Checked against Lemma 62.1 (printed p. 381), Theorem 33.1 (Urysohn's lemma,
+    printed p. 207), Theorem 32.3 and Lemma 26.8 (the tube lemma, printed pp. 202, 167).
 ---
 
 ::: {.exercise}
@@ -24,120 +32,64 @@ If $f$ is homotopic to a map that is extendable to a continuous map $h: X \to Y$
 :::
 
 ::: {.solution}
+
+Let $H:A\times I\to Y$ be a homotopy from $f$ to $h|_A$: $H(a,0)=f(a)$ and $H(a,1)=h(a)$.
+
 ::: pf
 
 ::: pf-step
-Setup of the cylinder extension problem:
+
+The map $F:T\to Y$ on the closed subspace $T=(X\times\theset{1})\cup(A\times I)$ of $X\times I$, given by $F(x,1)=h(x)$ and $F(a,t)=H(a,t)$, is well defined and continuous.
 
 ::: pf-proof
 
-::: pf-step
-Let $H: A \times I \to Y$ be a homotopy with $H(a, 0) = f(a)$ and $H(a, 1) = h(a)$ for all $a \in A$.
-:::
-
-::: pf-step
-Define the closed subspace $T \subset X \times I$:
-$$T = (X \times \{1\}) \cup (A \times I).$$
-:::
-
-::: pf-step
-Define $F: T \to Y \subseteq \RR^n$ by:
-$$F(x, 1) = h(x) \quad \text{for } x \in X,$$
-$$F(a, t) = H(a, t) \quad \text{for } (a, t) \in A \times I.$$
-:::
-
-::: pf-step
-On the intersection $(X \times \{1\}) \cap (A \times I) = A \times \{1\}$, $F(a, 1) = h(a) = H(a, 1)$, so $F$ is well-defined and continuous by the Pasting Lemma.
-:::
+On the intersection $A\times\theset{1}$ the two formulas agree, $h(a)=H(a,1)$. The sets $X\times\theset{1}$ and $A\times I$ are closed in $X\times I$ because $A$ is closed in $X$, and $F$ is continuous on each, so the pasting lemma applies.
 
 :::
 
 :::
 
 ::: pf-step
-Extension into $\RR^n$ via Tietze Extension Theorem:
+
+$F$ extends to a continuous $\widetilde F:X\times I\to\RR^n$.
 
 ::: pf-proof
 
-::: pf-step
-Since $X \times I$ is normal, $T$ is closed in $X \times I$, and each coordinate map of $F$ maps into $\RR$, by the Tietze Extension Theorem there exists a continuous extension:
-$$\widetilde{F}: X \times I \to \RR^n \quad \text{such that } \widetilde{F}\restrict_T = F.$$
-:::
+$X$ is homeomorphic to the closed subspace $X\times\theset{0}$ of the normal space $X\times I$, so $X$ is normal; $T$ is closed in $X\times I$. By the Tietze extension theorem, Theorem 35.1 (printed p. 219), applied to the $n$ coordinate functions, each a continuous real-valued function on $T$, there is a continuous extension $\widetilde F$ to $X\times I$.
 
 :::
 
 :::
 
 ::: pf-step
-Deformation into the open subset $Y$:
+
+$U=\widetilde F^{-1}(Y)$ is an open subset of $X\times I$ containing $T$, and therefore contains a set of the form $\theset{(x,t):t\ge\mu(x)}$ for a continuous $\mu:X\to[0,1]$ with $\mu=0$ on $A$.
 
 ::: pf-proof
 
-::: pf-step
-Since $Y$ is open in $\RR^n$, the preimage $U = \widetilde{F}^{-1}(Y)$ is an open subset of $X \times I$ containing $T$.
-:::
-
-::: pf-step
-Since $U$ contains $A\times I$ and $I$ is compact, the tube lemma gives an open neighborhood $W$ of $A$ in $X$ such that $W\times I\subset U$.
-:::
-
-::: pf-step
-The space $X$ is normal as a closed subspace of $X\times I$. By Urysohn's lemma, choose a continuous $\mu:X\to[0,1]$ with $\mu=0$ on $A$ and $\mu=1$ on $X\setminus W$. If $x\in W$, every $(x,t)$ lies in $U$; if $x\notin W$, then $\mu(x)=1$ and $(x,\mu(x))\in X\times\{1\}\subset U$. Hence $\{(x,t):t\ge\mu(x)\}\subset U$.
-:::
-
-::: pf-step
-Define $K: X \times I \to Y$ by:
-$$K(x, t) = \widetilde{F}(x, \, (1-t)\mu(x) + t).$$
-:::
-
-::: pf-step
-For every $(x, t) \in X \times I$, $(1-t)\mu(x) + t \ge \mu(x)$, so $(x, (1-t)\mu(x) + t) \in U$, meaning $K(x, t) \in Y$.
-:::
-
-::: pf-step
-Thus $K: X \times I \to Y$ is continuous.
-:::
+$U$ is open since $Y$ is open and $\widetilde F$ is continuous, and $T\subseteq U$ since $\widetilde F|_T=F$ takes values in $Y$. As $A\times I\subseteq U$ and $I$ is compact, the tube lemma (Lemma 26.8, printed p. 167) gives an open neighbourhood $W$ of $A$ in $X$ with $W\times I\subseteq U$. The sets $A$ and $X\setminus W$ are disjoint closed sets in the normal space $X$, so Urysohn's lemma (Theorem 33.1, printed p. 207) gives a continuous $\mu:X\to[0,1]$ equal to $0$ on $A$ and to $1$ on $X\setminus W$. If $x\in W$ then all $(x,t)\in U$; if $x\notin W$ then $\mu(x)=1$ and $(x,1)\in X\times\theset{1}\subseteq U$. Hence $(x,t)\in U$ whenever $t\ge\mu(x)$.
 
 :::
 
 :::
 
 ::: pf-step
-Verification of boundary values and extension:
+
+$K:X\times I\to Y$, $K(x,t)=\widetilde F(x,(1-t)\mu(x)+t)$, is continuous with values in $Y$; putting $g(x)=K(x,0)$ gives an extension of $f$ with $g\simeq h$.
 
 ::: pf-proof
 
-::: pf-step
-For $a \in A$, $\mu(a) = 0$, so $K(a, t) = \widetilde{F}(a, t) = H(a, t)$.
-:::
-
-::: pf-step
-In particular, for $t = 0$ and $a \in A$:
-$$K(a, 0) = H(a, 0) = f(a).$$
-:::
-
-::: pf-step
-For $t = 1$ and all $x \in X$:
-$$K(x, 1) = \widetilde{F}(x, 1) = h(x).$$
-:::
-
-::: pf-step
-Define $g: X \to Y$ by $g(x) = K(x, 0)$.
-:::
-
-::: pf-step
-Then $g$ is continuous, $g\restrict_A = f$, and $K$ is a homotopy from $g$ to $h$ in $Y$.
-:::
+$(1-t)\mu(x)+t\ge\mu(x)$ for $t\in[0,1]$ and $\mu(x)\in[0,1]$, so by step 3 the second argument is the affine interpolation between $\mu(x)$ and $1$, and $K$ takes values in $Y$. Continuity is that of $\widetilde F$ composed with a continuous map. For $a\in A$, $\mu(a)=0$, so $K(a,t)=\widetilde F(a,t)=H(a,t)$, in particular $K(a,0)=f(a)=g(a)$ and $K(a,1)=h(a)$. For any $x\in X$, $K(x,1)=\widetilde F(x,1)=h(x)$. So $g$ extends $f$ and $K$ is a homotopy from $g$ to $h$, both with values in $Y$.
 
 :::
 
 :::
 
-::: pf-step
-Conclusion:
-$f$ extends to a continuous map $g: X \to Y$ such that $g \simeq h$.
-:::
+::: pf-qed
+
+$f$ extends to $g:X\to Y$ with $g\simeq h$.
 
 :::
 
+:::
 :::

@@ -45,7 +45,7 @@ Munkres's general separation theorem, Theorem 61.4, states that the union of two
 
 ::: pf-proof
 
-Theorem 61.4.
+Theorem 61.4 (printed p. 380) reads: if $A_1$ and $A_2$ are closed connected subsets of $S^2$ whose intersection consists of precisely two points $a$ and $b$, then $A_1\cup A_2$ separates $S^2$.
 
 :::
 

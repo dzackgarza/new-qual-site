@@ -14,6 +14,18 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Munkres §62 Exercise 1, printed p. 384. No complete published solution located; the searches are listed in
+    the COMPLAINTS.md entry for §61--§73 of SRC-TEXT-MUN00. The earlier counterexample was wrong and is
+    replaced: it took A = [0,1] and f(t) = (cos 2 pi t, sin 2 pi t) with a = 0, b = infinity, and claimed that
+    f was nullhomotopic because A is contractible. A nullhomotopy of f has to lie in the target S^2 - a - b,
+    where that loop winds once about a and is not nullhomotopic, so the example does not satisfy the
+    hypothesis of the lemma, and it proved nothing. The replacement folds the circle once around and back, which
+    is nullhomotopic by an explicit homotopy in the image. Checked against Lemma 62.2 (printed p. 382), whose
+    statement is restated on the card, and Theorem 61.3 (printed p. 379).
 ---
 
 ::: {.exercise}
@@ -23,52 +35,17 @@ Give an example to show that the conclusion of the Borsuk lemma need not hold if
 
 ::: {.solution}
 
+The Borsuk lemma is Lemma 62.2 (printed p. 382): if $a,b$ are points of $S^2$, $A$ is compact, and $f:A\to S^2-\theset{a,b}$ is a continuous injective nullhomotopic map, then $a$ and $b$ lie in the same component of $S^2-f(A)$. The example keeps every hypothesis but injectivity.
+
 ::: pf
 
 ::: pf-step
 
-Statement of the Borsuk lemma:
-    Munkres Lemma 62.2 says that if $a,b\in S^2$, $A$ is compact, and $f:A\to S^2\setminus\{a,b\}$ is continuous, injective, and nullhomotopic, then $a$ and $b$ lie in the same component of $S^2\setminus f(A)$.
-
-:::
-
-::: pf-step
-
-Construction of non-injective counterexample:
-    *Proof:*
+Take $C$ to be a round circle in $S^2$ bounding a disk $D$ that contains $a$ and not $b$, and let $g:S^1\to C$ be a homeomorphism.
 
 ::: pf-proof
 
-::: pf-step
-
-Identify $S^2$ with $\RR^2\cup\{\infty\}$, and take $a=(0,0)$, $b=\infty$, and $A=[0,1]$.
-
-:::
-
-::: pf-step
-
-$A$ is compact and contractible.
-
-:::
-
-::: pf-step
-
-Every map from $A$ into a path-connected space is nullhomotopic.
-
-:::
-
-::: pf-step
-
-Define the continuous map $f:A\to S^2\setminus\{a,b\}$ by
-        $$f(t)=(\cos2\pi t,\sin2\pi t).$$
-
-:::
-
-::: pf-step
-
-The map is nullhomotopic because $A$ is contractible, but it is not injective since $f(0)=f(1)=(1,0)$.
-
-:::
+A small circle about $a$ in a coordinate chart is such a $C$: the closed disk it bounds lies in the chart, so after possibly shrinking it, $b\notin D$. The circle is compact and $S^2$ Hausdorff, so $g$ has continuous inverse and is a homeomorphism onto $C$.
 
 :::
 
@@ -76,28 +53,11 @@ The map is nullhomotopic because $A$ is contractible, but it is not injective si
 
 ::: pf-step
 
-Failure of the Borsuk conclusion for the image:
-    *Proof:*
+Define $f:S^1\to S^2-\theset{a,b}$ by running once around $C$ and back, and note that it is continuous, non-injective, and has image $C$.
 
 ::: pf-proof
 
-::: pf-step
-
-The image $f(A)$ is the unit circle $S^1 = \{(x, y) \in \RR^2 \mid x^2 + y^2 = 1\}$.
-
-:::
-
-::: pf-step
-
-The circle separates $a=(0,0)$ from $b=\infty$ in $S^2$. They lie in different components of $S^2\setminus f(A)$.
-
-:::
-
-::: pf-step
-
-Thus the conclusion of Lemma 62.2 fails for this continuous nullhomotopic map when injectivity is removed.
-
-:::
+Let $\varphi:[0,2\pi]\to[0,2\pi]$ be $\varphi(\theta)=\theta$ for $0\le\theta\le\pi$ and $\varphi(\theta)=2\pi-\theta$ for $\pi\le\theta\le2\pi$, and set $f(\theta)=g(e^{i\varphi(\theta)})$. It is continuous by the pasting lemma, and its image is $C\subseteq S^2-\theset{a,b}$ because $C$ avoids $a$ and $b$. It is not injective: $f(\theta)=f(2\pi-\theta)$ for $0<\theta<\pi$, so the two points $\theta$ and $2\pi-\theta$ of $S^1$ have the same image.
 
 :::
 
@@ -105,11 +65,33 @@ Thus the conclusion of Lemma 62.2 fails for this continuous nullhomotopic map wh
 
 ::: pf-step
 
-Conclusion:
+$f$ is nullhomotopic.
+
+::: pf-proof
+
+Define $H:S^1\times I\to C$ by $H(\theta,s)=g\bigl(e^{i(1-s)\varphi(\theta)}\bigr)$. It is continuous, $H(\theta,0)=f(\theta)$, and $H(\theta,1)=g(1)$ is constant. So $f$ is homotopic, within $S^2-\theset{a,b}$, to a constant map.
 
 :::
 
 :::
 
-    The conclusion of the Borsuk lemma fails without the hypothesis of injectivity. Q.E.D.
+::: pf-step
+
+$a$ and $b$ lie in different components of $S^2-f(A)$.
+
+::: pf-proof
+
+$f(A)=C$ bounds the disk $D$ with $a\in D$ and $b\notin D$. By Theorem 61.3 (printed p. 379) the simple closed curve $C$ separates $S^2$; its complement is $\operatorname{Int}D\cup(S^2-D)$, two disjoint nonempty open sets, and $a$ lies in the first while $b$ lies in the second (both being nonempty open connected sets, they are the components). So $a$ and $b$ are in different components.
+
+:::
+
+:::
+
+::: pf-qed
+
+$f$ is continuous, has compact domain and image in $S^2-\theset{a,b}$, and is nullhomotopic, but is not injective and its image separates $a$ from $b$; so the Borsuk lemma needs the injectivity hypothesis.
+
+:::
+
+:::
 :::

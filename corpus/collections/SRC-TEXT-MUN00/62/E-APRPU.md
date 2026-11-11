@@ -20,6 +20,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Munkres §62 Exercise 6, printed p. 385. No complete published solution located; the searches are listed in
+    the COMPLAINTS.md entry for §61--§73 of SRC-TEXT-MUN00. Checked against Lemma 62.1 (printed p. 381) for the
+    extension step, Lemma 62.2 (printed p. 382) for the shape of the Borsuk argument and Theorem 62.3 (printed
+    p. 383) for what part (c) must prove. One gap was repaired: the ball B in part (a) must contain the compact
+    set A as well as the bounded component C, otherwise the identity on the boundary of B is not available and
+    r o G restricted to B is not a retraction. Nothing else needed correction.
 ---
 
 ::: {.exercise}
@@ -80,7 +90,7 @@ g(x),&x\in C\cup A,\\
 x,&x\in D
 \end{cases}
 $$
-is a continuous map $G:\RR^n\to\RR^n-\{0\}$. Since $C$ is bounded, choose a closed ball $B$ centered at $0$ containing $C$ in its interior. On $\partial B$ we have $G=\operatorname{id}$. Composing $G\restrict_B$ with radial projection
+is a continuous map $G:\RR^n\to\RR^n-\{0\}$. Since $C$ is bounded and $A$ is compact, choose a closed ball $B$ centered at $0$ containing $C\cup A$ in its interior; then $\partial B$ is disjoint from $C\cup A$, so $\partial B\subseteq D$ and $G$ is the identity on $\partial B$. On $\partial B$ we have $G=\operatorname{id}$. Composing $G\restrict_B$ with radial projection
 $$
 r:\RR^n-\{0\}\longrightarrow\partial B
 $$
