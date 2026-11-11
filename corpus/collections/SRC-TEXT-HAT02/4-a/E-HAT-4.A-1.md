@@ -28,6 +28,19 @@ audit:
     of $\pi_1$; the group case does not need the H-space machinery since inverses are available. No
     published solution of this exercise is in the retained sets — none of them covers §4.A at all —
     recorded in COMPLAINTS.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Page correction to the note above: Example 4A.3 is printed on p. 422, not p. 421. Checked in
+    `tmp/sources/hatcher-2002-algebraic-topology.pdf`, where printed p. 421 (PDF p. 430) carries the
+    §4.A heading and the display before Example 4A.1, and printed p. 422 (PDF p. 431) carries
+    Example 4A.3; the exercise is Exercise 1 of the §4.A exercise list on printed p. 426 (PDF p. 435),
+    which is where its statement was re-read. The solution now carries those two citations in its own
+    text, so the proof rests on a numbered, paged reference rather than on the audit record. Searched
+    for a published solution outside the retained sets — Proudfoot's Math 634 sets, MA3403 (NTNU, 2018)
+    exercise sheets with solutions, Hutchings' Math 215a sets, Riemannian Hunger, hat-sols.com — none
+    covers §4.A; COMPLAINTS.md records the search.
 ---
 
 ::: {.problem}
@@ -35,6 +48,8 @@ Show directly that if $X$ is a topological group with identity element $x_0$, th
 :::
 
 ::: {.solution}
+The exercise is §4.A Exercise 1, printed p. 426. The device is Hatcher's: on printed p. 422, Example 4A.3 normalises a homotopy $H$ by the track $\gamma(t)=H(x_0,t)$ of the basepoint to produce a basepoint-preserving homotopy, in the H-space case, where the normalisation is by the translations $L_\gamma$ and $R_{\gamma^{-1}}$ rather than by an inverse. Here the space is a group, so the normalisation is $H(z,t)\gamma(t)^{-1}$, and continuity of $F$ is continuity of the multiplication and of inversion, which are part of the definition of a topological group Hatcher works with in §4.A.
+
 ::: pf
 
 ::: pf-step

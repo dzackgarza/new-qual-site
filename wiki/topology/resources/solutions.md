@@ -106,6 +106,38 @@ and a source still to be acquired. Coverage of the Riemannian Hunger set listed 
 §2.1, so it does not help for chapter 3 either.
 
 
+**Sources outside the sets above, located for the Hatcher sections they do not reach.** Each was
+downloaded and read; the reading copies are under `tmp/sources/`. A web page has no printed page, so
+cite it by URL and the date read.
+
+- **Nicholas Proudfoot, *Math 634: Algebraic Topology I*, University of Oregon, Fall 2015, homework
+  solutions**, `https://pages.uoregon.edu/njp/hw1solutions.pdf` … `hw7solutions.pdf` (there is no
+  `hw8`). An instructor's own solutions to Hatcher's numbered exercises: Chapter 0 Ex. 2, 3, 9, 10;
+  §1.1 Ex. 2, 3, 6, 12, 16, 20; §1.2 Ex. 4, 7, 8, 9, 14, 15, 21; §1.3 Ex. 4, 9, 10, 14, 15 and
+  12, 18, 20, 23, 26; **§4.1 Ex. 4, 11, 12, 14, 15**; §4.2 Ex. 1, 2, 30, 31, 32, 39. §4.1 Exercise 4 is
+  the source of `E-HAT-4.1-4`, printed p. 1 of that sheet.
+- **MA3403 Algebraic Topology, NTNU, autumn 2018 (Gereon Quick)**,
+  `https://gereonq.folk.ntnu.no/MA3403H2018/`: ten exercise sheets, each with a solution sheet. The
+  problems are the course's own, not Hatcher's numbered exercises, so none of them is cited as an
+  exercise solution; the course's week-9 sheet (Drew Heard,
+  `https://wiki.math.ntnu.no/_media/ma3403/week9-sols.pdf`) proves $\operatorname{Tor}(A,\QQ/\ZZ)$ is
+  the torsion subgroup of $A$, the statement of `E-HAT-3.A-2`.
+- **Michael Hutchings, Math 215a (Berkeley, Fall 2005), homework solutions**,
+  `hw1-soln.pdf`–`hw6-soln.pdf`, read from the Internet Archive snapshots of
+  `math.berkeley.edu/~hutching/teach/215a-2005/`, whose live directory answers 403. His own problems,
+  not Hatcher's.
+- **`https://hat-sols.com`** (repository `c-2quared/hat-sols`): Chapter 0 Ex. 1, 2 and §1.1 Ex. 1, 2,
+  12 only. **`https://github.com/coycatrett/hatcher-sols`**: §2.1 only.
+- **The homological-algebra statements behind §3.A** are cited to a book, since the exercise's content
+  there is a standard theorem: S. Weibel, *An Introduction to Homological
+  Algebra*, Cambridge Studies in Advanced Mathematics 38 (1994), Corollary 2.6.16 and Corollary 2.6.17
+  with Theorem 2.7.2 (printed p. 58) for `E-HAT-3.A-4`, and Proposition 3.1.3 with the Remark after
+  Proposition 3.1.4 and Corollary 3.1.5 (printed pp. 66–67) for `E-HAT-3.A-2`. The Stacks Project
+  proves the same two colimit statements (Tag 00DD and Tag 00M7) and is the independent check.
+
+For the remaining exercise cards of Chapter 2.B, 2.C, 3.A, 3.B, 4.1 and 4.A no complete published
+solution was located; `COMPLAINTS.md` lists every source searched.
+
 For the algebraic correction on §3.3 Ex. 21, use **Martin Frankland, *Cohomology of the Hawaiian
 Earring* (2017)**, `tmp/sources/frankland-hawaiian-earring-2017.pdf` ([PDF](https://uregina.ca/~franklam/Frankland_HawaiianEarring_20170222.pdf)).
 Theorem 1.2 (p. 2) is Specker's theorem: $\operatorname{Hom}(\prod_{\NN}\ZZ,\ZZ)$ is the countable

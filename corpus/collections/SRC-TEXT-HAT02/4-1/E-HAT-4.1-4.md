@@ -39,8 +39,7 @@ audit:
     Read against Hatcher, Algebraic Topology (2002), §4.1 Exercise 4, printed p. 358, together with
     the definition of the action on p. 342 ($\gamma\cdot\alpha=\beta_\gamma(\alpha)$, with
     $\beta_\eta([f])=[\eta f]$ given by shrinking the cube and inserting the path on the radial shell)
-    and the classification of covering spaces for the identification $\gamma\mapsto T_\gamma$. The
-    step the card asserted — "the defining construction of the $\pi_1(X)$-action gives the commutative
+    and the classification of covering spaces for the identification $\gamma\mapsto T_\gamma$. The    step the card asserted — "the defining construction of the $\pi_1(X)$-action gives the commutative
     formula" — is now derived: naturality $\varphi_*\beta_\eta=\beta_{\varphi\eta}\varphi_*$ of the
     construction, proved in one line from $\varphi(\eta f)=(\varphi\eta)(\varphi f)$, applied to
     $\varphi=p$ and $\eta=\tilde\gamma$, together with $pT_\gamma=p$, which makes
@@ -48,6 +47,22 @@ audit:
     $\tilde\gamma$ cannot be dropped: $T_\gamma$ moves $\tilde x_0$ whenever $\gamma\neq1$. No
     published solution of this exercise is in the retained sets — Sam's §4.1 covers 2, 3, 5, 10-15 and
     19, DeMason's covers 2, 8 and 11 — recorded in COMPLAINTS.md.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-11
+  note: >-
+    The complete published solution is Nicholas Proudfoot, *Math 634: Algebraic Topology I*
+    (University of Oregon, Fall 2015), Solutions to Homework #6, §4.1 Exercise 4, printed p. 1,
+    `https://pages.uoregon.edu/njp/hw6solutions.pdf`, read 2026-11-11; it was found by searching
+    outside the retained sets, as recorded in COMPLAINTS.md. Its argument is the one on this card:
+    naturality $f_*\beta_h=\beta_{fh}f_*$ of the change-of-basepoint maps, applied to
+    $f=p$, $h=\tilde\gamma$ and $\delta=(T_\gamma)_*\alpha$, with $p\circ T_\gamma=p$. Checked against
+    Hatcher (2002) p. 342 for the definition of $\beta_\eta$ and the action, Proposition 4.1 (p. 342)
+    for $p_*$ being an isomorphism, and printed p. 358 for the exercise. The published solution
+    writes the naturality input in one line; the card proves it, and it says why the factor
+    $\beta_{\tilde\gamma}$ cannot be dropped. Not checked: nothing in the source is left unread, but
+    the source's page numbering is its own (the sheet is one page) and the file carries no date
+    beyond the sheet's own heading.
 ---
 
 ::: {.problem}
@@ -62,6 +77,8 @@ $$
 \tilde\gamma:I\to\widetilde X,\qquad \tilde\gamma(0)=\tilde x_0,
 $$
 whose endpoint is $\tilde\gamma(1)=T_\gamma(\tilde x_0)$, where $T_\gamma$ is the deck transformation of the universal cover corresponding to $\gamma$. By the classification of covering spaces the deck transformation group of the universal cover is $\pi_1(X,x_0)$, so $\gamma\mapsto T_\gamma$ is well defined.
+
+This is the published solution of Nicholas Proudfoot, *Math 634: Algebraic Topology I* (University of Oregon, Fall 2015), Solutions to Homework #6, §4.1 Exercise 4, printed p. 1, which obtains the formula in two lines from the naturality of the change-of-basepoint maps; the naturality step and the basepoint bookkeeping are written out below.
 
 Hatcher's definition of the action (p. 342) is this. For a path $\eta$ from $x_0$ to $x_1$ and a map $f:(I^n,\partial I^n)\to(X,x_1)$, the map $\eta f$ is obtained by shrinking the domain of $f$ to a concentric cube and inserting $\eta$ on each radial segment of the shell; then $\beta_\eta([f])=[\eta f]$ defines $\beta_\eta:\pi_n(X,x_1)\to\pi_n(X,x_0)$, and for loops at $x_0$ the association $[\gamma]\mapsto\beta_\gamma$ is the action $\gamma\cdot\alpha=\beta_\gamma(\alpha)$ of $\pi_1(X,x_0)$ on $\pi_n(X,x_0)$.
 

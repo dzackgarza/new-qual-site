@@ -41,6 +41,23 @@ audit:
     tensored with $M$ is a direct sum of copies of $M$ and that filtered colimits of abelian groups
     are exact, which is verified in the proof. No published solution of this exercise is in the
     retained sets; recorded in COMPLAINTS.md.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Both identities are published: Weibel, *An Introduction to Homological Algebra* (Cambridge
+    Studies in Advanced Mathematics 38, 1994), Corollary 2.6.16 (left adjoints commute with filtered
+    colimits, hence $-\otimes_\ZZ B$ does), Corollary 2.6.17 ($\operatorname{Tor}$ commutes with
+    filtered colimits in the second variable) and Theorem 2.7.2 (balancing, hence symmetry of
+    $\operatorname{Tor}$), all printed on p. 58 of the reading copy
+    `tmp/sources/weibel-02-derived-functors.pdf`; read there on 2026-11-11 after searching outside the
+    retained sets, as COMPLAINTS.md records. The card now names those three results with their pages
+    and proves both identities directly for $\ZZ$-modules, so nothing rests on the general derived
+    functor theory of a left adjoint; the two facts Weibel's argument uses are proved in the card.
+    Checked against Hatcher (2002), §3.A Exercise 4 (printed p. 267) for the statement, Proposition
+    3A.5(1) (p. 265) for the symmetry step and Lemmas 3A.1-3A.2 (pp. 262-263) for
+    $\operatorname{Tor}$ being computed from a free resolution. Not claimed: that the card reproduces
+    Weibel's derivation line for line — his is the categorical one, and the card says so.
 ---
 
 ::: {.problem}
@@ -48,6 +65,8 @@ Show that $\otimes$ and Tor commute with direct limits: $(\varinjlim_\alpha A_\a
 :::
 
 ::: {.solution}
+Both identities are published as corollaries of the exactness of filtered colimits of modules in Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §2.6 and §2.7, printed p. 58. There, Corollary 2.6.16 states that for an abelian category with enough projectives satisfying (AB5) and a left adjoint $F$ the derived functors satisfy $L_*F(\varinjlim A_\alpha)\cong\varinjlim L_*F(A_\alpha)$ over a filtered index category; applied to the left adjoint $-\otimes_\ZZ B$, whose $L_0$ is itself, this is the first identity. Corollary 2.6.17 states $\operatorname{Tor}_*^R(A,\varinjlim B_\alpha)\cong\varinjlim\operatorname{Tor}_*^R(A,B_\alpha)$, and Theorem 2.7.2, balancing the two derived functors of the tensor product, states $\operatorname{Tor}_n^R(A,B)\cong\operatorname{Tor}_n^R(B,A)$; together they give the second identity. The argument below verifies both identities directly for $\ZZ$-modules, which is what the exercise asks for, with the two inputs Weibel uses — that a filtered colimit of abelian groups is exact, and that a free group tensored with $M$ is a direct sum of copies of $M$ — proved rather than cited.
+
 Let $(A_\alpha)_{\alpha\in\Lambda}$ be a directed system of abelian groups over a directed index set $\Lambda$, with colimit $A=\varinjlim_\alpha A_\alpha$ and structure maps $i_\alpha:A_\alpha\to A$.
 
 *Tensor products.* The maps $i_\alpha\otimes\id_B$ are compatible, so they induce $u:\varinjlim_\alpha(A_\alpha\otimes B)\to A\otimes B$. In the other direction, define a map $v:A\otimes B\to\varinjlim_\alpha(A_\alpha\otimes B)$ by the universal property of $\otimes$, from the bilinear map $(a,b)\mapsto[a_\alpha\otimes b]$, where $a_\alpha\in A_\alpha$ is any element with $i_\alpha(a_\alpha)=a$: two such choices $a_\alpha,a_{\alpha'}$ both map to a common later stage $A_\gamma$, because $\Lambda$ is directed, so the classes $[a_\alpha\otimes b]$ and $[a_{\alpha'}\otimes b]$ agree; the map is additive in each variable because the colimit is an abelian group and $i_\alpha$ is a homomorphism. On simple tensors $u v(a\otimes b)=i_\alpha(a_\alpha)\otimes b=a\otimes b$ and $vu[a_\alpha\otimes b]=[a_\alpha\otimes b]$, and simple tensors generate, so $u$ and $v$ are mutually inverse:

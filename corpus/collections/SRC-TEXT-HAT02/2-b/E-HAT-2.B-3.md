@@ -44,6 +44,8 @@ Show the inclusion $S^{n-1} - S \hookrightarrow D^n - D$ induces an isomorphism 
 :::
 
 ::: {.solution}
+The two results the argument uses are the Mayer--Vietoris sequence of §2.2, printed pp. 149--150 (Hatcher leaves it unnumbered; the reduced form is the display on p. 150), and Alexander duality, Theorem 3.44 (p. 254), applied with $K$ a sphere: for a compact locally contractible $K\subset S^n$ it gives $\widetilde H_j(S^n-K)\cong\widetilde H^{n-j-1}(K)$, and here $K$ is $S\subset S^{n-1}$, a sphere of dimension $k-1$, or $S^k\subset S^n$. The case $k=n$ also uses Invariance of Domain, Theorem 2B.3 (p. 172).
+
 If $k=0<n$, then $D$ is one interior point of $D^n$, and radial projection from that point retracts $D^n\setminus D$ onto $S^{n-1}$. Hence the inclusion induces an isomorphism.
 
 Now suppose $0<k<n$ and put $d=n-k-1\ge0$. Write

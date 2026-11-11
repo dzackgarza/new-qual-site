@@ -40,6 +40,22 @@ audit:
     resolutions (Lemma 3A.2, p. 263) and against the statement of Proposition 3A.5(3) that
     torsionfree coefficient groups kill Tor. No published solution of this exercise is in the
     retained sets; recorded in COMPLAINTS.md.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-11
+  note: >-
+    The statement is published with a complete proof as Weibel, *An Introduction to Homological
+    Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §3.1, Proposition 3.1.3 and the
+    Remark following Proposition 3.1.4, printed p. 67, with Corollary 3.1.5 on the same page for the
+    deduction and Calculation 3.1.1 on p. 66 for $\operatorname{Tor}(\ZZ/n,B)\cong B[n]$; the reading
+    copy is `tmp/sources/weibel-03-tor-and-ext.pdf` and the colimit corollary it invokes is
+    `tmp/sources/weibel-02-derived-functors.pdf`, printed p. 58. Read there, not from a snippet, on
+    2026-11-11, after searching outside the retained sets; COMPLAINTS.md records the search. The
+    published proof is the colimit route and is now stated on the card in its own paragraph; the
+    card's argument is the exact-sequence route with the same two conclusions, checked step by step
+    against Hatcher's Proposition 3A.5(3) and (6) (p. 265) and his definition of $\operatorname{Tor}$
+    through free resolutions (Lemma 3A.2, p. 263). Not claimed: that the two proofs are written out
+    identically — they are two proofs of the same two statements, and the card says which is which.
 ---
 
 ::: {.problem}
@@ -48,6 +64,8 @@ Deduce that $A$ is torsionfree iff $\operatorname{Tor}(A, B) = 0$ for all $B$.
 :::
 
 ::: {.solution}
+This is the statement of Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §3.1, Proposition 3.1.3 and the Remark following Proposition 3.1.4, printed p. 67, where $\operatorname{Tor}_1^\ZZ(\QQ/\ZZ,B)$ is identified with the torsion subgroup of $B$ and balancing of $\operatorname{Tor}$ gives $\operatorname{Tor}_1^\ZZ(A,\QQ/\ZZ)$ as the torsion subgroup of $A$; Corollary 3.1.5 on the same page is the deduction. Weibel's proof is the colimit one: $\QQ/\ZZ$ is the direct limit of its finite subgroups $\ZZ/n$, the groups $\operatorname{Tor}(\ZZ/n,B)\cong B[n]$ are computed from the resolution $0\to\ZZ\xrightarrow{n}\ZZ\to\ZZ/n\to0$ (Calculation 3.1.1, p. 66), and $\operatorname{Tor}$ carries that direct limit to $\varinjlim_n B[n]$, which is the torsion subgroup of $B$ (Corollary 2.6.17, p. 58). The argument below is the exact-sequence route to the same two statements, using the book's own Proposition 3A.5 in place of the colimit formula.
+
 Apply the six-term exact sequence of Proposition 3A.5(6) (p. 265) to the short exact sequence
 $$
 0\longrightarrow\ZZ\longrightarrow\QQ
