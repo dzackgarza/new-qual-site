@@ -42,13 +42,29 @@ mathematics steps go: mapping the kernel by `σ ⊗ id_B` recovers `ker ((n · i
 statement that this kernel, carried by `TensorProduct.lid`, is `Submodule.torsionBy ℤ ↥B n` — is the
 final `Tor₁(ℤ/n, B) ≅ B[n]` sentence, and `map_comp_map` proves the composition step it needs.
 
-**What is not written** is that one composition, and the obstruction is ascription, not mathematics:
-writing `Submodule.map (((TensorProduct.lid ℤ ↥B).toLinearMap).comp (σ ⊗ id_B)) (ker ∂⊗B) = torsionBy`
+**What used not to be written** is that one composition, and the obstruction was ascription, not
+mathematics: writing `Submodule.map (((TensorProduct.lid ℤ ↥B).toLinearMap).comp (σ ⊗ id_B)) (ker ∂⊗B) = torsionBy`
 and rewriting with `map_comp_map` fails to unify the two `Submodule` types, whose implicit instance
 arguments are the `TensorProduct.instModule` path here and the `Int.instCommSemiring` path there.
-Ascription at that boundary — the same fix this repository has used for the other diamonds — is the
-next step; until it is written, `Tor₁(ℤ/n, B) ≅ B[n]` is not a named theorem, though both halves and
-the composition lemma now are.
+
+**The composition is now written, and the repair was at the instance.** The original
+`map_torKernel_mulByInt` is stated over `{B : Type*} [AddCommGroup B]`, so its tensor products
+carry `AddCommGroup.toIntModule`, the instance found from `[AddCommGroup B]` alone, while this
+file's `Transport` section carries `B : ModuleCat ℤ` and therefore the carrier instance
+`ModuleCat.isModule`, whose priority (1100) beats `AddCommGroup.toIntModule` — two `Submodule`
+types that are the same structure on paper and different terms in the elaborator, so the
+composition cannot cite the lemma directly. Restating it with an explicit `[Module ℤ B]` binder
+next to `[AddCommGroup B]` fails in the elaborator: with two `Module ℤ B` instances in scope, the
+`SMulCommClass ℤ ℤ B` that `DistribSMul.toLinearMap` demands cannot be synthesized. The working
+repair is the pinned-instance pattern of `cards/TorBridge.lean` realised the other way round: the
+lemma is restated in the carrier-instance section itself (`lid_rTensor_mulByInt_carrier`,
+`map_torKernel_mulByInt_carrier`), where `ModuleCat.isModule` is the only candidate, with the
+multiplication by `n` written as `lid (n ⊗ₜ b)` so that the `SMul`-instance diamond never enters
+a statement. On top of the composition
+`map_ker_d_rTensor_lid_eq_torsionBy`, the file proves `Tor₁(ℤ/n, B) ≅ B[n]` as a named isomorphism:
+`torOne_cyclicIso_torsionBy`, the packaged bridge at the cyclic resolution composed with
+`ModuleCat.kernelIsoKer` and with `kerEquivTorsionBy` — the restriction of the injective transport
+map `cycTransport` to the kernel, which the composition theorem identifies with `B[n]`.
 -/
 
 
@@ -1186,6 +1202,255 @@ theorem map_comp_map (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0)
   · rintro ⟨w, ⟨x, hx, rfl⟩, rfl⟩
     exact ⟨x, hx, rfl⟩
 
+/-! ### The composition: `Tor₁(ℤ/n, B) ≅ B[n]`
+
+The two halves proved above compose, and their composite carrier is injective, so it restricts to
+an isomorphism of the cyclic stage's kernel onto `B[n]`. The isomorphism is then packaged through
+the bridge `torOneIsoTorKernel` at the cyclic resolution and the categorical-to-linear kernel
+identification `ModuleCat.kernelIsoKer`, which is the `Tor₁(ℤ/n, B) ≅ B[n]` sentence.
+
+Two elaboration facts are forced on the spelling, and the file records them.
+
+* The cyclic kernel is spelled through `(LinearMap.ker (cyclicPresentation n)).subtype` — which
+  *is* the first differential by `twoTermComplex_d_one_zero` — rather than through the complex's
+  `.d 1 0` and its `.hom`. The two spellings name the same submodule (the `hsub` step of
+  `map_ker_d_rTensor_eq` is an `rfl`), but the `.hom` spelling's ambient tensor product is
+  `↥((twoTermComplex …).X 1) ⊗ ↥B` while the transport map's domain is `↥(ker …) ⊗ ↥B`, and a
+  `Submodule.map` that mixes the two is not type-correct at `implicit` transparency, which is what
+  `rewrite` needs. Spelling the kernel through the subtype keeps kernel, map and image in the one
+  instance world the `rTensor` signatures build.
+
+* The last step is a restatement of `map_torKernel_mulByInt` in this section's instance world
+  (`lid_rTensor_mulByInt_carrier`, `map_torKernel_mulByInt_carrier`). The original is stated over
+  `{B : Type*} [AddCommGroup B]`, so its tensor products carry `AddCommGroup.toIntModule`, while
+  here `B : ModuleCat ℤ` and `↥B` carries the carrier instance `ModuleCat.isModule` — two
+  `Submodule` types that are the same structure on paper and different terms in the elaborator, so
+  the composition cannot cite the lemma directly. Restating the lemma with an explicit
+  `[Module ℤ B]` binder next to `[AddCommGroup B]` does not work either: with two `Module ℤ B`
+  instances in scope the elaborator cannot synthesize the `SMulCommClass ℤ ℤ B` that
+  `DistribSMul.toLinearMap` demands, and in the carrier world alone the same demand fails because
+  the `SMul ℤ ↥B` of the carrier module and the `ZSMul.toSMul` of its additive group are not
+  definitionally equal. The carrier-instance section, with the multiplication-by-`n` written as
+  `lid (n ⊗ₜ b)` — equal to `n • b` by `TensorProduct.lid_tmul`, which is `rfl` — is the
+  pinned-instance repair that works. -/
+
+/-- **The image form of the cyclic transport, at the `.subtype` spelling.** The kernel of the
+tensored differential is carried by `syzygyEquiv ⊗ id_B` onto the kernel of
+`(n · id) ⊗ id_B`. -/
+theorem map_ker_subtype_rTensor_eq (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0) :
+    (LinearMap.ker (((LinearMap.ker (cyclicPresentation n)).subtype).rTensor ↥B)).map
+        ((syzygyEquiv n hn).toLinearMap.rTensor ↥B)
+      = LinearMap.ker ((mulByInt (n : ℤ)).rTensor ↥B) := by
+  have hcyc : ∀ x : ↥(LinearMap.ker (cyclicPresentation n)),
+      (LinearMap.ker (cyclicPresentation n)).subtype x
+        = constOne ((n : ℤ) * (syzygyEquiv n hn x)) := by
+    intro x
+    show x.1 = constOne ((n : ℤ) * (syzygyEquiv n hn x))
+    funext i
+    fin_cases i
+    show x.1 0 = (n : ℤ) * (x.1 0 / (n : ℤ))
+    exact (Int.mul_ediv_cancel' (cyclicPresentation_ker_dvd n x.2)).symm
+  have h1 : ∀ y : TensorProduct ℤ ℤ ↥B,
+      ((syzygyEquiv n hn).toLinearMap.rTensor ↥B)
+        (((syzygyEquiv n hn).symm.toLinearMap.rTensor ↥B) y) = y := by
+    intro y
+    induction y using TensorProduct.induction_on with
+    | zero => simp
+    | add a b ha hb => simp [map_add, ha, hb]
+    | tmul a b =>
+      rw [LinearMap.rTensor_tmul, LinearMap.rTensor_tmul]
+      congr 1
+      exact (syzygyEquiv n hn).apply_symm_apply a
+  rw [ker_subtype_rTensor_eq (B := B) (n := n) (cyclicPresentation n) (syzygyEquiv n hn) hcyc]
+  exact Submodule.map_comap_eq_self fun y _ =>
+    LinearMap.mem_range.mpr ⟨((syzygyEquiv n hn).symm.toLinearMap.rTensor ↥B) y, h1 y⟩
+
+/-- The transport map of the cyclic stage: `syzygyEquiv ⊗ id_B` followed by `ℤ ⊗ B ≅ B`. The
+type is left to inference, which is the `rTensor` instance world. -/
+noncomputable def cycTransport (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0) :=
+  ((TensorProduct.lid ℤ ↥B).toLinearMap).comp ((syzygyEquiv n hn).toLinearMap.rTensor ↥B)
+
+/-- Tensoring the syzygy equivalence with `id_B` is retracted by tensoring its inverse with
+`id_B`. -/
+theorem rTensor_syzygy_symm_apply_apply (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0)
+    (x : TensorProduct ℤ ↥(LinearMap.ker (cyclicPresentation n)) ↥B) :
+    ((syzygyEquiv n hn).symm.toLinearMap.rTensor ↥B)
+      (((syzygyEquiv n hn).toLinearMap.rTensor ↥B) x) = x := by
+  induction x using TensorProduct.induction_on with
+  | zero => simp
+  | add a b ha hb => simp [map_add, ha, hb]
+  | tmul a b =>
+    rw [LinearMap.rTensor_tmul, LinearMap.rTensor_tmul]
+    exact congrArg (fun c => c ⊗ₜ[ℤ] b) ((syzygyEquiv n hn).symm_apply_apply a)
+
+/-- The transport map is injective: `ℤ ⊗ B ≅ B` is an equivalence and `syzygyEquiv ⊗ id_B` is
+retracted by `syzygyEquiv⁻¹ ⊗ id_B`. -/
+theorem cycTransport_injective (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0) :
+    Function.Injective (cycTransport B n hn) := by
+  have h2 : Function.Injective ((syzygyEquiv n hn).toLinearMap.rTensor ↥B) := by
+    intro x y h
+    rw [← rTensor_syzygy_symm_apply_apply B n hn x, ← rTensor_syzygy_symm_apply_apply B n hn y, h]
+  intro x y h
+  apply h2
+  apply (TensorProduct.lid ℤ ↥B).injective
+  exact h
+
+/-- `lid_rTensor_mulByInt` restated in the `ModuleCat`-carrier instance world: under
+`ℤ ⊗ B ≅ B`, tensoring `n · id` with `id_B` is multiplication by `n` on `B`. The multiplication
+is written `lid (n ⊗ₜ b)`, which equals `n • b` by `TensorProduct.lid_tmul` — an `rfl` — because
+the bare `n • b` elaborates with the additive group's `ZSMul.toSMul` while the torsion
+submodule's membership uses the carrier module's `SMul`, and the two are not definitionally
+equal. -/
+theorem lid_rTensor_mulByInt_carrier (B : ModuleCat ℤ) (n : ℤ)
+    (x : TensorProduct ℤ ℤ ↥B) :
+    (TensorProduct.lid ℤ ↥B) ((mulByInt n).rTensor ↥B x) =
+      (TensorProduct.lid ℤ ↥B) ((n : ℤ) ⊗ₜ[ℤ] ((TensorProduct.lid ℤ ↥B) x)) := by
+  induction x using TensorProduct.induction_on with
+  | zero => simp
+  | add a b ha hb => simp [map_add, ha, hb]
+  | tmul r b =>
+    simp only [LinearMap.rTensor_tmul, mulByInt_apply, TensorProduct.lid_tmul]
+    module
+
+/-- **`map_torKernel_mulByInt` restated in the `ModuleCat`-carrier instance world**: the kernel
+of `(n · id) ⊗ id_B` inside `ℤ ⊗ B` is carried by `ℤ ⊗ B ≅ B` onto the `n`-torsion of `B`. -/
+theorem map_torKernel_mulByInt_carrier (B : ModuleCat ℤ) (n : ℤ) :
+    (LinearMap.ker ((mulByInt n).rTensor ↥B)).map (TensorProduct.lid ℤ ↥B).toLinearMap =
+      Submodule.torsionBy ℤ ↥B n := by
+  ext b
+  constructor
+  · rintro ⟨x, hx, rfl⟩
+    have hx' : (mulByInt n).rTensor ↥B x = 0 := hx
+    have h := lid_rTensor_mulByInt_carrier B n x
+    rw [hx', map_zero] at h
+    refine (Submodule.mem_torsionBy_iff n _).mpr ?_
+    show (TensorProduct.lid ℤ ↥B) ((n : ℤ) ⊗ₜ[ℤ] ((TensorProduct.lid ℤ ↥B) x)) = 0
+    exact h.symm
+  · intro hb
+    have hb' : (TensorProduct.lid ℤ ↥B) ((n : ℤ) ⊗ₜ[ℤ] (b : ↥B)) = 0 :=
+      (Submodule.mem_torsionBy_iff n b).mp hb
+    refine ⟨(TensorProduct.lid ℤ ↥B).symm b, ?_, ?_⟩
+    · have h1 : (TensorProduct.lid ℤ ↥B)
+          ((mulByInt n).rTensor ↥B ((TensorProduct.lid ℤ ↥B).symm b)) = 0 := by
+        rw [lid_rTensor_mulByInt_carrier, LinearEquiv.apply_symm_apply]
+        exact hb'
+      exact (TensorProduct.lid ℤ ↥B).injective (by rw [h1, map_zero])
+    · exact LinearEquiv.apply_symm_apply (TensorProduct.lid ℤ ↥B) b
+
+/-- **The cyclic stage's kernel is carried into `B[n]`.** An element of the kernel is carried by
+the transport map into the `n`-torsion of `B`: its image under `syzygyEquiv ⊗ id_B` lies in the
+kernel of `(n · id) ⊗ id_B` by the transport theorem, and `ℤ ⊗ B ≅ B` carries that kernel onto
+`B[n]`. -/
+theorem mem_torsionBy_of_mem_ker (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0)
+    (x : ↥(LinearMap.ker (((LinearMap.ker (cyclicPresentation n)).subtype).rTensor ↥B))) :
+    cycTransport B n hn x ∈ Submodule.torsionBy ℤ ↥B (n : ℤ) := by
+  have hker : ((syzygyEquiv n hn).toLinearMap.rTensor ↥B) x.val
+      ∈ LinearMap.ker ((mulByInt (n : ℤ)).rTensor ↥B) := by
+    have hmap : ((syzygyEquiv n hn).toLinearMap.rTensor ↥B) x.val ∈ (LinearMap.ker
+        (((LinearMap.ker (cyclicPresentation n)).subtype).rTensor ↥B)).map
+        ((syzygyEquiv n hn).toLinearMap.rTensor ↥B) :=
+      Submodule.mem_map.mpr ⟨x.val, x.2, rfl⟩
+    rwa [map_ker_subtype_rTensor_eq B n hn] at hmap
+  have h := lid_rTensor_mulByInt_carrier B (n : ℤ)
+    (((syzygyEquiv n hn).toLinearMap.rTensor ↥B) x.val)
+  rw [show ((mulByInt (n : ℤ)).rTensor ↥B)
+      (((syzygyEquiv n hn).toLinearMap.rTensor ↥B) x.val) = 0 from LinearMap.mem_ker.mp hker,
+    map_zero] at h
+  refine (Submodule.mem_torsionBy_iff (n : ℤ) _).mpr ?_
+  show (TensorProduct.lid ℤ ↥B) ((n : ℤ) ⊗ₜ[ℤ]
+      ((TensorProduct.lid ℤ ↥B) (((syzygyEquiv n hn).toLinearMap.rTensor ↥B) x.val))) = 0
+  exact h.symm
+
+/-- Every element of `B[n]` is the image under the transport map of an element of the kernel:
+`ℤ ⊗ B ≅ B` lifts it into the kernel of `(n · id) ⊗ id_B`, and the transport theorem maps the
+cyclic kernel onto that kernel. -/
+theorem exists_mem_ker_of_mem_torsionBy (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0)
+    (y : ↥(Submodule.torsionBy ℤ ↥B (n : ℤ))) :
+    ∃ x : ↥(LinearMap.ker (((LinearMap.ker (cyclicPresentation n)).subtype).rTensor ↥B)),
+      cycTransport B n hn x = (y : ↥B) := by
+  have h0 : (TensorProduct.lid ℤ ↥B) ((n : ℤ) ⊗ₜ[ℤ] (y : ↥B)) = 0 :=
+    (Submodule.mem_torsionBy_iff (n : ℤ) (y : ↥B)).mp y.2
+  have h := lid_rTensor_mulByInt_carrier B (n : ℤ)
+    ((TensorProduct.lid ℤ ↥B).symm (y : ↥B))
+  rw [LinearEquiv.apply_symm_apply] at h
+  have hz : (TensorProduct.lid ℤ ↥B)
+      ((mulByInt (n : ℤ)).rTensor ↥B ((TensorProduct.lid ℤ ↥B).symm (y : ↥B))) = 0 := by
+    rw [h]
+    exact h0
+  have hmem : ((mulByInt (n : ℤ)).rTensor ↥B)
+      ((TensorProduct.lid ℤ ↥B).symm (y : ↥B)) = 0 :=
+    (TensorProduct.lid ℤ ↥B).injective (by rw [hz, map_zero])
+  have himg : (TensorProduct.lid ℤ ↥B).symm (y : ↥B)
+      ∈ LinearMap.ker ((mulByInt (n : ℤ)).rTensor ↥B) := LinearMap.mem_ker.mpr hmem
+  rw [← map_ker_subtype_rTensor_eq B n hn] at himg
+  obtain ⟨a, ha, hfa⟩ := Submodule.mem_map.mp himg
+  refine ⟨⟨a, ha⟩, ?_⟩
+  show (TensorProduct.lid ℤ ↥B) (((syzygyEquiv n hn).toLinearMap.rTensor ↥B) a) = (y : ↥B)
+  rw [hfa, LinearEquiv.apply_symm_apply]
+
+/-- **The composition.** The kernel of the cyclic resolution's tensored first differential,
+carried by `syzygyEquiv ⊗ id_B` and then by `ℤ ⊗ B ≅ B`, is exactly the `n`-torsion of `B`. The
+membership lemmas on either side of the inclusion are the two halves, so the equality needs no
+rewrite. -/
+theorem map_ker_d_rTensor_lid_eq_torsionBy (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0) :
+    Submodule.map (((TensorProduct.lid ℤ ↥B).toLinearMap).comp
+        ((syzygyEquiv n hn).toLinearMap.rTensor ↥B))
+        (LinearMap.ker (((LinearMap.ker (cyclicPresentation n)).subtype).rTensor ↥B))
+      = Submodule.torsionBy ℤ ↥B (n : ℤ) := by
+  ext b
+  constructor
+  · rintro ⟨x, hx, rfl⟩
+    exact mem_torsionBy_of_mem_ker B n hn ⟨x, hx⟩
+  · intro hb
+    obtain ⟨x, hx⟩ := exists_mem_ker_of_mem_torsionBy B n hn ⟨b, hb⟩
+    exact ⟨x, x.2, hx⟩
+
+/-- The transport map restricted to the cyclic stage's kernel, corestricted to `B[n]`. -/
+noncomputable def kerMapTorsionBy (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0) :
+    ↥(LinearMap.ker (((LinearMap.ker (cyclicPresentation n)).subtype).rTensor ↥B)) →ₗ[ℤ]
+      ↥(Submodule.torsionBy ℤ ↥B (n : ℤ)) :=
+  ((cycTransport B n hn).comp (LinearMap.ker
+    (((LinearMap.ker (cyclicPresentation n)).subtype).rTensor ↥B)).subtype).codRestrict _
+    (fun x => mem_torsionBy_of_mem_ker B n hn x)
+
+/-- The corestricted transport map is injective, because the transport map is. -/
+theorem kerMapTorsionBy_injective (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0) :
+    Function.Injective (kerMapTorsionBy B n hn) := by
+  intro x y h
+  exact Subtype.ext (cycTransport_injective B n hn (congrArg Subtype.val h))
+
+/-- The corestricted transport map is surjective, because every element of `B[n]` is the image
+of an element of the kernel. -/
+theorem kerMapTorsionBy_surjective (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0) :
+    Function.Surjective (kerMapTorsionBy B n hn) := by
+  intro y
+  obtain ⟨x, hx⟩ := exists_mem_ker_of_mem_torsionBy B n hn y
+  exact ⟨x, Subtype.ext hx⟩
+
+/-- **The cyclic stage's kernel is the `n`-torsion of `B`.** Restricting the transport map to
+the kernel of the tensored first differential gives a linear equivalence onto `B[n]`: the image
+lies in `B[n]` and every element of `B[n]` is hit, and the restriction is injective because the
+transport map is. -/
+noncomputable def kerEquivTorsionBy (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0) :
+    ↥(LinearMap.ker (((LinearMap.ker (cyclicPresentation n)).subtype).rTensor ↥B)) ≃ₗ[ℤ]
+      ↥(Submodule.torsionBy ℤ ↥B (n : ℤ)) :=
+  LinearEquiv.ofBijective (kerMapTorsionBy B n hn)
+    ⟨kerMapTorsionBy_injective B n hn, kerMapTorsionBy_surjective B n hn⟩
+
+/-- **`Tor₁(ℤ/n, B) ≅ B[n]`.** For every abelian group `B`, as an object of `ModuleCat ℤ`, and
+every `n ≥ 1`: the first left derived functor of `tensorLeft B` at `ℤ/n` is isomorphic to the
+`n`-torsion submodule of `B`. The isomorphism composes the packaged bridge `torOneIsoTorKernel`
+at the cyclic resolution, the categorical-to-linear kernel identification
+`ModuleCat.kernelIsoKer`, and the restriction `kerEquivTorsionBy` of the transport map to the
+kernel. -/
+noncomputable def torOne_cyclicIso_torsionBy (B : ModuleCat ℤ) (n : ℕ) (hn : n ≠ 0) :
+    CyclicTransport.torOne (ModuleCat.of ℤ (ZMod n)) B ≅
+      ModuleCat.of ℤ ↥(Submodule.torsionBy ℤ ↥B (n : ℤ)) :=
+  (torOneIsoTorKernel (B := B) (P := cyclicResolution n)
+      (twoTermComplex_isZero_X_two 1 (cyclicPresentation n))).trans
+    ((ModuleCat.kernelIsoKer (diffRight (B := B) (cyclicResolution n))).trans
+      (kerEquivTorsionBy B n hn).toModuleIso)
+
 end Transport
 
 end CyclicTransport
@@ -1197,3 +1462,17 @@ end CyclicTransport
 #print axioms CyclicTransport.ker_subtype_rTensor_eq
 #print axioms CyclicTransport.ker_d_rTensor_eq
 #print axioms CyclicTransport.map_ker_d_rTensor_eq
+#print axioms CyclicTransport.map_ker_subtype_rTensor_eq
+#print axioms CyclicTransport.cycTransport
+#print axioms CyclicTransport.rTensor_syzygy_symm_apply_apply
+#print axioms CyclicTransport.cycTransport_injective
+#print axioms CyclicTransport.lid_rTensor_mulByInt_carrier
+#print axioms CyclicTransport.map_torKernel_mulByInt_carrier
+#print axioms CyclicTransport.map_ker_d_rTensor_lid_eq_torsionBy
+#print axioms CyclicTransport.mem_torsionBy_of_mem_ker
+#print axioms CyclicTransport.exists_mem_ker_of_mem_torsionBy
+#print axioms CyclicTransport.kerMapTorsionBy
+#print axioms CyclicTransport.kerMapTorsionBy_injective
+#print axioms CyclicTransport.kerMapTorsionBy_surjective
+#print axioms CyclicTransport.kerEquivTorsionBy
+#print axioms CyclicTransport.torOne_cyclicIso_torsionBy
