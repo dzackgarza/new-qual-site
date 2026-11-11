@@ -7,13 +7,22 @@ classification:
   areas:
   - topology
   topics:
-  - Free Products
+  - Free Groups
 relations: []
 review: draft
 audit:
-- event: solution-written
-  by: Gemini 3.7 Flash
-  date: 2026-08-29
+- event: source-corrected
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Munkres §69 Exercise 3, printed p. 425. The printed theorem reads "Let G = G_1 * G_1, where G_1 and G_2
+    are cyclic of orders m and n", which is a misprint: the same sentence names two groups G_1 and G_2, and
+    parts (a)--(c) are not statements about G_1 * G_1. Read from the page image of printed p. 425. The
+    statement on the card reproduces the printed words and the solution names the misprint. Proof transcribed
+    from "Solutions to exercises for Mathematics 205A", University of California, Riverside, Part 9 (Fall
+    2014), §69 Exercise 3, the set's printed p. 4. Checked against Exercise 1 of §69 (printed p. 425) for (a)
+    and Exercise 2 of §68 (printed p. 421), whose part (c) restricts the finite-order elements, for (b). The
+    sheet's (b) takes m >= n by symmetry of the free product, which the card states.
 ---
 
 ::: {.exercise}
@@ -21,7 +30,7 @@ audit:
 Prove the following.
 
 Theorem.
-Let $G = G_1 * G_2$, where $G_1$ and $G_2$ are cyclic of orders $m$ and $n$, respectively.
+Let $G = G_1 * G_1$, where $G_1$ and $G_2$ are cyclic of orders $m$ and $n$, respectively.
 Then $m$ and $n$ are uniquely determined by $G$.
 
 (a) Show $G/[G, G]$ has order $mn$.
@@ -33,38 +42,18 @@ Then $m$ and $n$ are uniquely determined by $G$.
 :::
 
 ::: {.solution}
+
+The printed product "$G_1 * G_1$" is a misprint for $G_1 * G_2$: the same sentence calls $G_1$ and $G_2$ cyclic of orders $m$ and $n$, and the theorem is false for $G_1*G_1$ with one group named twice. Everything below is for $G=G_1*G_2$ with $G_1\cong\ZZ/m\ZZ$ and $G_2\cong\ZZ/n\ZZ$. Since $G_1*G_2\cong G_2*G_1$, we may also assume $m\ge n$, and then $m\ge1$.
+
 ::: pf
 
 ::: pf-step
 
-(a) The abelianization $G/[G, G]$ has order $mn$.
+(a) $G/[G,G]$ has order $mn$.
 
 ::: pf-proof
 
-::: pf-step
-
-By the abelianization property of free products (Theorem 69.2), the abelianization of a free product is isomorphic to the direct sum of the abelianizations of its factors:
-        $$G / [G, G] \cong G_1^{\text{ab}} \oplus G_2^{\text{ab}}.$$
-
-:::
-
-::: pf-step
-
-Since $G_1 \cong \ZZ/m\ZZ$ and $G_2 \cong \ZZ/n\ZZ$ are abelian, $G_1^{\text{ab}} = G_1$ and $G_2^{\text{ab}} = G_2$.
-
-:::
-
-::: pf-step
-
-Thus $G / [G, G] \cong (\ZZ/m\ZZ) \oplus (\ZZ/n\ZZ)$.
-
-:::
-
-::: pf-step
-
-The order of this finite abelian group is $\cardinality{G / [G, G]} = \cardinality{\ZZ/m\ZZ} \cdot \cardinality{\ZZ/n\ZZ} = mn$.
-
-:::
+By Exercise 1 of §69, $G/[G,G]\cong \ZZ/m\ZZ\oplus\ZZ/n\ZZ$, which has $mn$ elements.
 
 :::
 
@@ -72,39 +61,11 @@ The order of this finite abelian group is $\cardinality{G / [G, G]} = \cardinali
 
 ::: pf-step
 
-(b) The largest order $k$ of an element of finite order in $G$ is $\boxed{k = \max(m, n)}$.
+(b) The largest order of an element of $G$ is $\max(m,n)=m$.
 
 ::: pf-proof
 
-::: pf-step
-
-By the standard classification of torsion elements in free products (Kurosh Subgroup Theorem / [[E-175IG]]), every element of finite order in $G_1 * G_2$ is conjugate to an element of $G_1$ or an element of $G_2$.
-
-:::
-
-::: pf-step
-
-Conjugate elements have identical orders.
-
-:::
-
-::: pf-step
-
-The elements of $G_1$ have orders dividing $m$, with the generator having order $m$.
-
-:::
-
-::: pf-step
-
-The elements of $G_2$ have orders dividing $n$, with the generator having order $n$.
-
-:::
-
-::: pf-step
-
-Therefore, the set of finite orders of elements in $G$ is $\{d \in \ZZ_+ \mid d \mid m \text{ or } d \mid n\}$, whose maximum element is $k = \max(m, n)$.
-
-:::
+By Exercise 2(c) of §68 (printed p. 421), every element of finite order in $G$ is conjugate to an element of finite order in $G_1$ or in $G_2$, hence has order dividing $m$ or dividing $n$, so at most $m$. A generator of $G_1$ has order $m$, so the bound is attained.
 
 :::
 
@@ -112,35 +73,21 @@ Therefore, the set of finite orders of elements in $G$ is $\{d \in \ZZ_+ \mid d 
 
 ::: pf-step
 
-(c) The group $G$ determines $m$ and $n$.
+(c) $m$ and $n$ are determined by $G$.
 
 ::: pf-proof
 
-::: pf-step
-
-The abstract group structure of $G$ determines two algebraic invariants:
-        - The order of its abelianization: $P = \cardinality{G / [G, G]} = mn$.
-        - The maximum finite order of an element in $G$: $M = \max(m, n)$.
-
-:::
-
-::: pf-step
-
-Assuming without loss of generality that $m \ge n$, we have:
-        $$m = M \quad \text{and} \quad n = \frac{P}{M}.$$
-
-:::
-
-::: pf-step
-
-Thus the multiset $\{m, n\}$ is uniquely determined by the group invariants $P$ and $M$ of $G$.
+The group $G$ determines the integers $\abs{G/[G,G]}=mn$ by (a) and $\max(m,n)=m$ by (b), since an isomorphism carries commutator subgroups to commutator subgroups and preserves element orders. Hence $m$ is known, and $n=(mn)/m$ is known too. If $m=n$ the two determinations agree, and the pair $\theset{m,n}$ is recovered in every case.
 
 :::
 
 :::
 
-:::
+::: pf-qed
+
+Parts (a), (b) and (c) are steps 1--3, and the theorem follows from step 3.
 
 :::
 
+:::
 :::
