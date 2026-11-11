@@ -43,6 +43,27 @@ audit:
     this exercise (Egbert's set, the only one that mentions scrolls, does not
     treat it), so the proof is derived and says so; the hyperplane class and
     K_X are taken from [[FE-TORHIRZ]].
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Rechecked against the printed exercise, printed page 385, and against two
+    published treatments outside the twelve retained sets. Algebraic Geometry
+    II, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 10
+    of section 2, PDF p. 8 (tmp/sources/ntu-ag2-chapter5.pdf), carries the same
+    construction and cites Corollary 2.18, printed page 380, for the nonsingular
+    member; it does not prove that the embedding of Y is complete, which is step
+    s6 here and needs H^0(O_X(H)) = H^0(Y,K_Y) together with
+    h^0(O_X(H)) = 2n-e+2. Yang Pi-Yeh, Hartshorne Solutions, exercise 5.2.10,
+    printed p. 104 (tmp/sources/lfwin-hartshorne-solutions.pdf), computes the
+    genus and the g_3^1 and never shows the member nonsingular or K_Y the
+    restricted hyperplane class. All eight steps were re-read: the pushforward
+    pi_*O(aC_0+bf) as the sum of O(b-ie) with b-3e = n-2e+2 >= 0 for
+    base-point freeness, D.C_0 = 0 in the q = 0 branch, H^i(X,O(-D)) = 0 from
+    H^i(X,O(H)) with R^1 pi_*O(H) = 0, H.D = 4n-2e+2, and
+    h^0(O_X(H)) = 2n-e+2 = d+2. Not checked: whether Corollary 2.18's criterion
+    covers the e = 0 case of the q = 0 branch exactly as used; the card proves
+    that branch separately.
 ---
 
 ::: {.problem}
@@ -408,5 +429,9 @@ genus-$g$ curve carrying a $g^1_3$.
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.10, PDF p. 267: the whole of his solution is "See example 2.10 in Kollar's Complex Algebraic Geometry", and Kollár's book is not among the retained files, so there is no argument to check. Steps [](#s1){.pf-ref} to [](#s6){.pf-ref} here run the construction: $D=H-K_X\sim3C_0+(n+e+2)f$ with $n\ge2e-2$ is base-point-free, its general member is nonsingular and connected, $K_Y=\OO_Y(H)$ by adjunction, $2g-2=H\cdot D=2d+2$, and $h^0(\OO_X(H))=d+2$ so the embedding of $Y$ is the complete canonical one. Steps [](#s7){.pf-ref} and [](#s8){.pf-ref} finish the conclusion $g\ge4$ and the $g^1_3$.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 10 of §2 (solution by Chi-Kang), PDF p. 8, runs the same construction: with $D=C_0+nf$ the very ample class of the embedding, it takes $Y\in\abs{D-K_X}=\abs{3C_0+(n+e+2)f}$, which by Corollary 2.18 (printed page 380) has a nonsingular member under $e\ge0$ and $n+e+2\ge3e$, the hypothesis $n\ge2e-2$; adjunction gives $K_Y=D\restriction_Y$, then $\deg K_Y=D\cdot Y=4n-2e+2=2d+2$, so $g(Y)=d+2$, and $f\cdot Y=3$ gives a $g^1_3$. That is steps [](#s1){.pf-ref} to [](#s5){.pf-ref} and step [](#s8){.pf-ref}. It does not check that the embedding of $Y$ is the complete canonical one, which needs $H^0(\OO_X(H))\cong H^0(Y,K_Y)$; step [](#s6){.pf-ref} supplies that, and it is what makes the conclusion a canonical curve rather than a curve whose canonical class happens to be the restriction.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.10, printed p. 104, argues that "$3C_0+af$ can be written as a curve iff $C\cdot C_0\ge0$, i.e. $a\ge3e$", computes $2g-2=C\cdot(C+K)=4n-2e+2$ and reads off $g=2n-e+2$ and $C\cdot f=3$; it does not show the member nonsingular, and it never identifies $K_Y$ with the restricted hyperplane class.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.10, PDF p. 267: the whole of his solution is "See example 2.10 in Kollar's Complex Algebraic Geometry", and Kollár's book is not in `tmp/sources`, so there is no argument to read.
 :::
