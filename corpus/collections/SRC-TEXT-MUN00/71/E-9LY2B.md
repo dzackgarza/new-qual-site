@@ -15,6 +15,19 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-corrected
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Munkres §71 Exercise 4, printed p. 438. A published solution is Takumi Murayama, Selected Solutions to
+    Munkres's Topology, 2nd Ed. (MAT365, Princeton, Fall 2012), §71 (printed there as Exercise 71.4), and it is
+    defective: it replaces a countable base at p by one it assumes strictly nested, which a countable base
+    need not admit, and its closing comparison "U_i cap S_j is contained in V cap S_j = U_j, contradicting
+    U_i > U_j" produces no point of U_i outside V. What is correct in it is kept: V is built by choosing one
+    point on each circle, and V is open by the coherence definition (printed p. 435). The card's proof
+    replaces the nesting step by the diagonal choice of the points, which needs no nesting. Checked against the
+    definition of coherent topology (printed p. 435) and the definition of the infinitely generated wedge
+    (printed p. 435).
 ---
 
 ::: {.exercise}
@@ -23,21 +36,18 @@ Show that if $X$ is an infinite wedge of circles, then $X$ does not satisfy the 
 :::
 
 ::: {.solution}
-Write $X = \bigvee_{\alpha \in J} S_\alpha^1$ with $J$ infinite, and let $p$ be the common point of the circles. We show that $p$ has no countable neighborhood basis.
+
+Write $X = \bigvee_{\alpha \in J} S_\alpha$ with $J$ infinite and $p$ the common point; here $X$ is the union of the circles $S_\alpha$ with the topology coherent with them (printed p. 435).
 
 ::: pf
 
-::: {.pf-step #s1}
+::: pf-step
 
-A subset $U \subseteq X$ is open if and only if each $U \cap S_\alpha^1$ is open in $S_\alpha^1$.
+A set $U\subseteq X$ containing $p$ is open in $X$ if and only if $U\cap S_\alpha$ is open in $S_\alpha$ for every $\alpha$.
 
 ::: pf-proof
 
-::: pf-step
-
-By definition of the wedge sum $X = (\coprod_{\alpha \in J} S_\alpha^1) / \{p_\alpha\}$, a subset $U \subseteq X$ containing the basepoint $p$ is open in $X$ if and only if for every $\alpha \in J$, the intersection $U \cap S_\alpha^1$ is open in $S_\alpha^1$.
-
-:::
+That is the coherence definition of the wedge of circles (printed p. 435), in its open-set form.
 
 :::
 
@@ -45,102 +55,27 @@ By definition of the wedge sum $X = (\coprod_{\alpha \in J} S_\alpha^1) / \{p_\a
 
 ::: pf-step
 
-Suppose, for contradiction, that $p$ has a countable neighborhood basis.
+$p$ has no countable neighbourhood basis.
 
 ::: pf-proof
 
-::: pf-step
+Suppose $\theset{U_n}_{n\ge1}$ were a countable basis of neighbourhoods of $p$, each open in $X$. Choose distinct indices $\alpha_n$ for $n\ge1$, possible since $J$ is infinite. Since $U_n\cap S_{\alpha_n}$ is an open neighbourhood of $p$ in the circle $S_{\alpha_n}$, which has no isolated points, pick $x_n\in (U_n\cap S_{\alpha_n})\setminus\theset{p}$. Define
 
-Suppose for contradiction that $p$ has a countable local neighborhood basis $\{U_n\}_{n=1}^\infty$ of open sets in $X$.
+$$
+V\cap S_\alpha=\begin{cases}S_\alpha\setminus\theset{x_n},&\alpha=\alpha_n\ \text{for some }n,\\ S_\alpha,&\text{otherwise.}\end{cases}
+$$
 
-:::
-
-::: pf-step
-
-Since $J$ is infinite, choose a countably infinite subset of distinct indices $\{\alpha_n\}_{n=1}^\infty \subseteq J$.
+Each $V\cap S_\alpha$ is open in $S_\alpha$ and contains $p$ (as $x_n\neq p$), so $V$ is an open neighbourhood of $p$ by step 1. But $x_k\in U_k$ and $x_k\notin V$, so no $U_k$ is contained in $V$; hence $\theset{U_n}$ is not a basis at $p$.
 
 :::
 
 :::
 
-:::
+::: pf-qed
 
-::: pf-step
-
-There is an open neighborhood $V$ of $p$ and points $x_n \in U_n \setminus V$ for every $n$.
-
-::: pf-proof
-
-::: pf-step
-
-For each $n \ge 1$, $U_n \cap S_{\alpha_n}^1$ is an open neighborhood of $p$ in $S_{\alpha_n}^1$.
-
-:::
-
-::: pf-step
-
-Since $S_{\alpha_n}^1 \cong S^1$ has no isolated points, choose a point $x_n \in (U_n \cap S_{\alpha_n}^1) \setminus \{p\}$.
-
-:::
-
-::: pf-step
-
-Define $V \subseteq X$ by setting its intersection with each circle:
-        $$V \cap S_{\alpha_n}^1 = S_{\alpha_n}^1 \setminus \{x_n\} \quad \text{for all } n \ge 1,$$
-        $$V \cap S_\beta^1 = S_\beta^1 \quad \text{for all } \beta \in J \setminus \{\alpha_n \mid n \ge 1\}.$$
-
-:::
-
-::: pf-step
-
-For every $\alpha \in J$, $V \cap S_\alpha^1$ is open in $S_\alpha^1$ and contains $p$ (since $x_n \neq p$).
-
-:::
-
-::: pf-step
-
-By the definition of the quotient topology in step [](#s1){.pf-ref}, $V$ is an open neighborhood of $p$ in $X$.
+$X$ is not first countable at $p$.
 
 :::
 
 :::
-
-:::
-
-::: pf-step
-
-$X$ has no countable neighborhood basis at $p$, so $X$ is not first-countable.
-
-::: pf-proof
-
-::: pf-step
-
-If $\{U_n\}_{n=1}^\infty$ were a local neighborhood basis at $p$, there would exist an index $k \ge 1$ such that $U_k \subseteq V$.
-
-:::
-
-::: pf-step
-
-By construction, $x_k \in U_k$.
-
-:::
-
-::: pf-step
-
-However, $x_k \notin S_{\alpha_k}^1 \setminus \{x_k\} = V \cap S_{\alpha_k}^1$, so $x_k \notin V$.
-
-:::
-
-::: pf-step
-
-This contradicts $U_k \subseteq V$.
-
-:::
-
-:::
-
-:::
-
-:::
-
 :::
