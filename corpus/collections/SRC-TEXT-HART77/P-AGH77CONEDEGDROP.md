@@ -20,6 +20,20 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Checked the card against the book: I.7.6(b),(c) for the degree of a
+    union of lines, I.7.6(d), II.7.13 and II.7.17.3 for the blowup, the base
+    ideal being the maximal ideal of the nonsingular point, J = O(-E) from
+    the chart equation t_1 = 0, E^r = (-1)^{r-1} from N_{E/Ytilde} = O(-1),
+    and (beta^*H - E)^r = d - 1. Found one gap: the blowup step needs r >= 1
+    and the case dim Y = 0 was absent; added step zero-dimensional-case,
+    where X is a union of at most d-1 lines through P meeting pairwise only
+    in P and I.7.6(b) gives deg X <= d-1. Not checked: the published
+    induction in Borcherds, Egbert or Cutrone-Marshburn, none of which
+    proves the degree identity under a hyperplane section.
 ---
 
 ::: {.problem}
@@ -99,6 +113,19 @@ If equality held, irreducibility of both $Y$ and $X$ and the inclusion $Y\subset
 Step [](#join-equals-y-forces-linear){.pf-ref} would then make $Y$ linear, hence of degree one by [[P-AGH76DEGONELINEAR|Exercise I.7.6]], contradicting $d>1$.
 Therefore $\dim X>r$.
 Together with step [](#join-irreducible-dim-bound){.pf-ref} this gives $\dim X=r+1$, proving part (a).
+:::
+
+:::
+
+::: {.pf-step #zero-dimensional-case}
+If $r=0$, then $\deg X<d$.
+
+::: pf-proof
+In that case $Y=\theset{Q_1,\ldots,Q_d}$ is a set of $d$ distinct points and $P$ is one of them.
+The join $X$ is the union of the lines $\overline{PQ}$ with $Q\in Y\sm\theset{P}$, of which there are at most $d-1$ and each of which has degree $1$ by I.7.6(c).
+Two distinct such lines meet only in $P$, a set of dimension $0<1$, so I.7.6(b) applied to the components one at a time gives
+$$\deg X=\sum_{Q\neq P}\deg\overline{PQ}\le d-1<d.$$
+Hence in steps [](#cone-degree-equals-projection-degree){.pf-ref} to [](#degree-drop-conclusion){.pf-ref} we may assume $r\ge1$, which is what makes the exceptional divisor of the blowup of the nonsingular point $P$ isomorphic to $\PP^{r-1}$.
 :::
 
 :::
@@ -216,7 +243,7 @@ The top self-intersection of $H$ on the projective variety $Y$ is its degree:
 $$
 H^r=d.
 $$
-Because $P$ is nonsingular of dimension $r$, the exceptional divisor is
+Because $P$ is nonsingular of dimension $r\ge1$, the exceptional divisor is
 $$
 E\cong\PP^{r-1},
 $$
@@ -285,7 +312,7 @@ proving part (b).
 :::
 
 ::: pf-qed
-Steps [](#join-irreducible-dim-bound){.pf-ref}, [](#join-equals-y-forces-linear){.pf-ref} and [](#join-dimension-r-plus-one){.pf-ref} prove part (a), and steps [](#cone-degree-equals-projection-degree){.pf-ref}, [](#blowup-resolves-projection){.pf-ref}, [](#exceptional-self-intersection){.pf-ref}, [](#projection-degree-formula){.pf-ref} and [](#degree-drop-conclusion){.pf-ref} prove part (b).
+Steps [](#join-irreducible-dim-bound){.pf-ref}, [](#join-equals-y-forces-linear){.pf-ref} and [](#join-dimension-r-plus-one){.pf-ref} prove part (a); step [](#zero-dimensional-case){.pf-ref} disposes of $r=0$, and steps [](#cone-degree-equals-projection-degree){.pf-ref}, [](#blowup-resolves-projection){.pf-ref}, [](#exceptional-self-intersection){.pf-ref}, [](#projection-degree-formula){.pf-ref} and [](#degree-drop-conclusion){.pf-ref} prove part (b) for $r\ge1$.
 :::
 
 :::
@@ -296,5 +323,5 @@ Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exer
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), stops at §I.5 and gives no solution to 7.7.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.7.7, PDF p. 58: (a) the cone over $Y$ with a rational inverse, "note that the cone has dimension $r+1$"; (b) "if $\dim Y=0$, then $Y$ has $d$ points and $X$ has $d-1$ lines. If $\dim Y=r$ and $H$ is a hyperplane containing $P$ but not $Y$, then by Thm 7.7, 7.6b, $\deg X\cap H=\deg X$. By induction $\deg X\cap H\le\deg Y\cap H\le\deg Y=d$."
 Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.7.7, PDF p. 27: (a) "fix $P$ and consider the projection map to $\PP^1$. $X$ is parameterized by the fibers of this map, of which are same dimension and irreducible, so $X$ is a variety of $\dim r+1$"; (b) "for $\dim Y=0$, $Y$ consists of $d$ points, so $X$ is $d-1$ lines. Now suppose $\dim Y=r$. Choose a hyperplane $H$ through $P$ not containing $Y$ so that the intersection multiplicity along any component of $X\cap H$ is $1$. Then by Thm 7.7 and 7.6(b), $\deg X\cap H=\deg X$, and $\deg Y\cap H\le\deg Y=d$. $X\cap H$ is the cone over $Y\cap H$ so by induction, $\deg X\cap H\le\deg Y\cap H=d$. So $\deg X<d$."
-All three take the induction on $\dim Y$ that the printed hint asks for. Egbert and Cutrone--Marshburn assert $\deg X\cap H=\deg X$ and $\deg X\cap H\le\deg Y\cap H$; Borcherds names the genericity these need, which is Bertini's theorem together with (III, 7.9.1 after II, 8.18) applied to $X$, and his argument also identifies $X\cap H$ with the join of $P$ and $H\cap Y$, which is what makes the induction hypothesis applicable to that section and is not proved either; his conclusion "less than that of $Y$" passes through that identification as well. No set proves the degree identity under a hyperplane section of $X$, which the induction requires. Part (b) is therefore recorded in COMPLAINTS.md as having no complete published solution. Steps [](#blowup-resolves-projection){.pf-ref} to [](#degree-drop-conclusion){.pf-ref} replace the induction by the blowup of $P$ and the resolved projection $\widetilde\rho:\widetilde Y\to Z$, whose degree $\delta$ satisfies $\delta\deg Z=(\beta^*H-E)^r=d-1$; part (a) is proved from the incidence variety and, for the inequality $\dim X>r$, from step [](#join-equals-y-forces-linear){.pf-ref} with I.7.6.
+All three take the induction on $\dim Y$ that the printed hint asks for. Egbert and Cutrone--Marshburn assert $\deg X\cap H=\deg X$ and $\deg X\cap H\le\deg Y\cap H$; Borcherds names the genericity these need, which is Bertini's theorem together with (III, 7.9.1 after II, 8.18) applied to $X$, and his argument also identifies $X\cap H$ with the join of $P$ and $H\cap Y$, which is what makes the induction hypothesis applicable to that section and is not proved either; his conclusion "less than that of $Y$" passes through that identification as well. No set proves the degree identity under a hyperplane section of $X$, which the induction requires. Part (b) is therefore recorded in COMPLAINTS.md as having no complete published solution. The card's own blowup proof needs $r\ge1$ for $E\cong\PP^{r-1}$ and the case $r=0$ was missing; step [](#zero-dimensional-case){.pf-ref} now supplies it ($X$ is a union of at most $d-1$ lines through $P$ meeting pairwise only in $P$, so $\deg X\le d-1$ by I.7.6(b),(c)). Steps [](#blowup-resolves-projection){.pf-ref} to [](#degree-drop-conclusion){.pf-ref} replace the induction by the blowup of $P$ and the resolved projection $\widetilde\rho:\widetilde Y\to Z$, whose degree $\delta$ satisfies $\delta\deg Z=(\beta^*H-E)^r=d-1$; part (a) is proved from the incidence variety and, for the inequality $\dim X>r$, from step [](#join-equals-y-forces-linear){.pf-ref} with I.7.6.
 :::
