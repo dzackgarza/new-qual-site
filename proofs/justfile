@@ -25,4 +25,5 @@ check:
     @lake env lean cards/TorTorsionClass.lean
     @lake env lean cards/TorArbitrary.lean
     @lake env lean cards/CyclicTor.lean
+    @lake env lean cards/DeltaSimplexChains.lean
 
