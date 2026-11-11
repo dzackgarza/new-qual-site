@@ -1,3 +1,28 @@
-# Type-check every proof artifact
+# Type-check every proof artifact through the lake project (Mathlib master head).
+# Run from this directory: the project pins the toolchain (lean-toolchain) and the
+# Mathlib revision (lake-manifest.json). `lake update mathlib && lake exe cache get`
+# moves to the current master head and fetches its oleans.
 check:
-    @for f in $(find . -name '*.lean'); do echo "lean $f"; lean "$$f"; done
+    @lake env lean cards/FieldHomework1.lean
+    @lake env lean cards/SubgroupFiniteness.lean
+    @lake env lean cards/NormExtension.lean
+    @lake env lean cards/Tamuras15_10.lean
+    @lake env lean cards/MooreSpaceExactness.lean
+    @lake env lean cards/TorTorsion.lean
+    @lake env lean cards/FamilyQuotient.lean
+    @lake env lean cards/LensDegree.lean
+    @lake env lean cards/BarySign.lean
+    @lake env lean cards/BarySubdiv.lean
+    @lake env lean cards/CH8DirectProduct.lean
+    @lake env lean cards/SimplexChains.lean
+    @lake env lean cards/ChainLevelSteps.lean
+    @lake env lean cards/SkeletonHomology.lean
+    @lake env lean cards/ColimitTensor.lean
+    @lake env lean cards/TorReductions.lean
+    @lake env lean cards/TorStages.lean
+    @lake env lean cards/TorBridge.lean
+    @lake env lean cards/TorFreeResolution.lean
+    @lake env lean cards/TorTorsionClass.lean
+    @lake env lean cards/TorArbitrary.lean
+    @lake env lean cards/CyclicTor.lean
+

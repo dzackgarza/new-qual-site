@@ -63,6 +63,7 @@ state, after `cards/BarySubdiv.lean`, is the following.
 
 | `cards/TorBridge.lean` | `E-HAT-3.A-6`, `E-HAT-3.A-2` | **`Tor₁` is the homology of the tensored projective resolution**, proved: `torOneIsoHomology` gives `((tensorLeft B).leftDerived 1).obj A ≅ H₁(P.complex ⊗ B)` for every projective resolution `P` of `A`, by `ProjectiveResolution.isoLeftDerivedObj` at degree one, with the tensored complex and its degree-1 differential named (`resolutionTensor`, `tensorDiffOne`). Axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`. **Also proved:** the two-term step, `homologyIsoKernelOfZero`, `homologyOneIsoKernelOfD`, `homologyOneIsoKernel` and `tensor_d_two_one_eq_zero`, giving `torOneIsoKernel`: for a projective resolution with `IsZero (P.complex.X 2)`, `Tor₁(A,B) ≅ kernel((resolutionTensor B P).d 1 0)`, plus `torOneIsoKerLinear` composed with `ModuleCat.kernelIsoKer`. The map-level content is `resolutionTensor_d` (the tensored differential is the tensor of the resolution's differential). **Also proved:** the orientation `ker_rTensor_eq_comap_ker_lTensor` (`ker (f.rTensor N)` is the `comm`-preimage of `ker (f.lTensor N)`, by `LinearMap.lTensor_comm`), the pinned kernel module `kerModule` with `kernelIsoKerModule` (the `ℤ`-module instance diamond resolved at that boundary), and `tensor_d_hom_eq_lTensor` (the tensored differential is the resolution differential with `B` on the left). **Open:** the single packaging step that composes the two-term bridge with the `comm`-transport into one isomorphism naming `kerModule` of `f.hom.rTensor ↥B`. See section 5b. |
 | `cards/CyclicTor.lean` | `E-HAT-3.A-6` | **The cyclic stage's index transport.** `ker_d_rTensor_eq`: the kernel of the cyclic resolution's tensored first differential is the preimage, under `syzygyEquiv ⊗ id_B`, of the kernel of `(n · id) ⊗ id_B` — that is, of the presentation-level `torKernel` whose image under `TensorProduct.lid` is `B[n]` (`TorReductions.map_torKernel_mulByInt`). Supporting facts, all proved in the file: `d_apply` (the resolution's first differential is `constOne ∘ (n · id) ∘ syzygyEquiv`, pointwise), `projZero_comp_constOne` (the zeroth coordinate retracts `constOne`), `constOne_tmul_eq_zero`, `ker_constOne_rTensor_eq_bot` (`constOne ⊗ id_B` is injective), and the generic `ker_subtype_rTensor_eq`. Axioms `propext, Classical.choice, Quot.sound`, no `sorryAx`. Two elaboration facts worth keeping: the transport is stated for `(LinearMap.ker f).subtype`, because `↑((twoTermComplex 1 (cyclicPresentation n)).X 1)` and `↥(LinearMap.ker …)` are not interchangeable in `⊗ₜ` although `twoTermComplex_X_one` is `rfl`; and the factorisation is stated through `ModuleCat.ofHom` composites so that `ModuleCat.isModule` is on both sides, a plain `LinearMap.comp` composite being headed by `Int.instRing.toSemiring`. **The hop is closed**: `map_ker_d_rTensor_eq` maps the preimage back to `ker ((n · id) ⊗ id_B)` by `σ ⊗ id_B`, using `Submodule.map_comap_eq_self` and invertibility of the tensored `σ` (`TensorProduct.induction_on` on a pure tensor), and `map_comp_map` is the composition step. **Not yet written**: the final composition with `TorReductions.map_torKernel_mulByInt` into `Submodule.torsionBy ℤ ↥B (n:ℤ)`, blocked by instance ascription on the two `Submodule` types (`TensorProduct.instModule` on one side, `Int.instCommSemiring` on the other). |
+| `cards/TorArbitrary.lean` | `E-HAT-3.A-6`, `E-HAT-3.A-2` | **The dimension-shift platform for an arbitrary abelian group.** `presComplex f`: a projective resolution of `A` over *any* epimorphism `f : P ⟶ A` from a projective — `P` in degree zero, then Mathlib's `Projective.syzygies`/`Projective.d` for the kernel, its kernel, and so on, built with `ChainComplex.mk'` (for `f = Projective.π A` this is Mathlib's own `ProjectiveResolution.of`). `presComplex_exactAt_succ` (exactness in positive degrees), degreewise projectivity, the augmentation `presPi` and its quasi-isomorphism (degree zero through `ModuleCat.isColimitCokernelCofork`, as in `cards/TorFreeResolution.lean`) — so `presResolution f` is a genuine `ProjectiveResolution A` with a *prescribed first presentation*, which is what an arbitrary `A` needs: no hypothesis on the kernel of `f`, hence no "every subgroup of a free abelian group is free". `torOneIsoTensorSplice` bridges `Tor₁(A,B)` to `H₁` of the tensored splice. `hom_lTensor` is the dictionary between the `ModuleCat`-monoidal tensor maps and `LinearMap.lTensor`. `ker_dOne_eq_kerCov` (the kernel of the first differential is the kernel of the kernel cover, by injectivity of the kernel inclusion), `exact_dTwo_kerCov` (the untensored second differential and the kernel cover are an exact pair), and **`range_dTwoT_eq`: the boundaries of the tensored splice are the kernel of the tensored kernel cover** — the right-exactness input of dimension shifting, from Mathlib's `lTensor_exact`, stated through the dictionary form so the two tensor-module instance worlds never meet in a statement (`exact_tensored` bridges by defeq). Axioms `propext, Classical.choice, Quot.sound`, no `sorryAx`. |
 | `cards/TorFreeResolution.lean` | `E-HAT-3.A-6`, `E-HAT-3.A-2` | **The two-term free resolution, and `Tor₁` as the kernel of its tensored differential.** The syzygy of a finite free presentation is finitely generated, torsion-free, free and projective (`syzygy_finite`, `syzygy_torsionFree`, `syzygy_free`, `syzygy_projective`); the complex `0 → K → ℤⁿ → 0` is `twoTermComplex` (`twoTermComplex_isZero_X` for every degree `≥ 2`, `twoTermComplex_projective` degreewise), its augmentation onto `single₀ A` is `twoTermPi`, and that augmentation is a quasi-isomorphism — degree zero by `ShortComplex.quasiIso_iff_of_zeros'` from `ModuleCat.isColimitCokernelCofork` (`quasiIsoAt_twoTermPi_zero`, resting on `coker_subtype_iso`), every positive degree by `quasiIsoAt_twoTermPi_of_pos` — so `twoTermProjectiveResolution` is a genuine `ProjectiveResolution`, and `torOne_iso_kernel` gives `Tor₁(A,B) ≅ kernel ((tensorLeft B).map (d 1 0))`. Above that, `isZero_torOne_of_projective` holds that `Tor₁` of a projective module vanishes, hence `isZero_torOne_of_finite_torsionFree`: the finitely generated case of "torsion-free implies `Tor₁(A,B) = 0`", at the derived functor, for every `B` at once. The cyclic stage's syzygy is identified with `ℤ` (`cyclicPresentation`, `syzygyEquiv`); its transport to `B[n]` is **not** proved, and the section docstring records the coercion-shape reason. Axioms `propext, Classical.choice, Quot.sound`, no `sorryAx`. |
 | `cards/ColimitTensor.lean` | `E-HAT-3.A-6`, `E-HAT-3.A-2` | Exercise 4 of §3.A, the `⊗` half, completely: `tensorLeft_preserves_colimits` (for `B : ModuleCat ℤ`, `tensorLeft B` preserves colimits, Mathlib's instance `instPreservesColimitsTensorLeft`) and `tensorLeft_colim_iso`, the comparison `B ⊗ colim F ≅ colim (B ⊗ F ·)` for any `F : J ⥤ ModuleCat ℤ` with `HasColimitsOfShape J (ModuleCat ℤ)`, built from `PreservesColimit.preserves` (which yields `Nonempty (IsColimit _)`, extracted with `Classical.choice`) and `IsColimit.coconePointUniqueUpToIso`. Axioms: propext, Classical.choice, Quot.sound. **Not** certified: the `Tor` half. |
 | `cards/TorTorsionClass.lean` | `E-HAT-3.A-6` | **`Tor` of a torsion module is torsion, by the torsion-class route instead of a free resolution.** `prop_homology` (a property closed under subobjects and quotients passes from a complex term to its homology in the same degree) and `prop_leftDerived_obj` (if an additive functor sends projectives into such a class, every left derived functor does) are proved for a general abelian setting; `AddCommGrpCat.isTorsion` is the class of torsion abelian groups with its `IsClosedUnderSubobjects` and `IsClosedUnderQuotients` instances; `isAddTorsion_tensorProduct_left` (tensoring a torsion monoid is torsion, no flatness, no finite generation); and `isAddTorsion_Tor_left`: for `M`, `N` in `ModuleCat R` over **any** commutative ring, `IsAddTorsion M → IsAddTorsion (((Tor (ModuleCat R) n).obj M).obj N)`, with the `ℤ` form `isAddTorsion_tor_int`. Axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`; `exit 0`. **Provenance:** this is a **port**, not new mathematics — the four lemmas are copied from the Tau Ceti project at commit `67e852853c5192ec69775bb7ef417fc199e4190e` (Apache-2.0), see section 7. **No node obligation attaches to this file**: `Tor(A,B)` is torsion is not a corrected claim, so `certify-card-corrections` does not reach it, and the card is discharged by citing the upstream theorem with its hypotheses (§7c). It is kept as a supplement, not as a card requirement. **What it does not cover:** the card's statement is about **all** `A`, and this file proves the case where `A` is torsion — the reduction `Tor(A,B) ≅ Tor(T(A),B)` is §7b's named residual; the second half of the card (an element of order `n` in `Tor(A,B)` iff in both `A` and `B`), which no located formalization proves; and it says nothing about `Tor'`, the other orientation. It does not need — and does not supply — Hatcher's Lemma 3A.2 or a finite-stage witness, because the left-derived-functor definition of `Tor` is already resolution-independent. |
@@ -523,6 +524,11 @@ requires a construction, not a citation.
 
 ### Provider requests, stated so that they can be accepted or refused
 
+*(Re-verified against the master head `c9f80237` on 2026-11-11, by reading the named files:
+all three still-wanted items below are still absent there. Item 1 is no longer needed by the
+dimension-shift route of `cards/TorArbitrary.lean`, which prescribes the first presentation
+of the resolution and therefore never asks for a projective kernel.)*
+
 Four statements were wanted from the pinned library rather than from this directory; three are still
 wanted, and the fourth is withdrawn below because the work was done without it. None is a request to
 relax anything above: where a proof needed one of them, the claim was restricted to the case that
@@ -707,27 +713,58 @@ special case of it.
 
 ## Checking
 
-Lean 4.33.1 with the Mathlib on `LEAN_PATH`, and Sage for the integer linear algebra:
-
-On the canonical baseline (the shared research image, section "Toolchain" below) every file
-in `proofs/cards/` is elaborated by
+Lean 4 with the Mathlib master head, through this directory's own lake project
+(`lakefile.toml` requires `mathlib` at `master`; `lake-manifest.json` pins the master head the
+tree was last moved to; `lean-toolchain` is master's own pin). Every file in `proofs/cards/` is
+elaborated by
 
 ```sh
-ROOT=$HOME/sage-image/rootfs; REPO=$PWD
-for f in proofs/cards/*.lean; do
-  $HOME/.udocker/bin/proot-x86_64 -R $ROOT -b /proc -b /dev -b $REPO:/work \
-    -w /repos/lean-categories /bin/sh -c "lake env lean /work/$f"
-done
+cd proofs
+lake env lean cards/<file>.lean
 ```
 
-The Sage check is run inside the same image as recorded in section 2; its entry point is the
-image's own (the image has no `sage` on `PATH`, so the command used is the one recorded
-there, not a path invented here).
+after `lake update mathlib && lake exe cache get` has fetched the oleans for the pinned
+revision (the official Mathlib cache; no local Mathlib build). The old shared-image proot
+runner recorded in the Toolchain section is superseded: the certificates of this directory
+are accepted on the `proofs/` lake project's baseline, currently Mathlib master
+`c9f80237cb8abbd41e5443d1ab83ec88d2a5f9ce` on `leanprover/lean4:v4.36.0-rc2`, and the shared
+research image is no longer on the elaboration path.
+
+The Sage check is unchanged; its entry point is the image's own (the image has no `sage` on
+`PATH`, so the command used is the one recorded in section 2, not a path invented here).
 
 `#print axioms` at the end of each file must show only `propext`, `Classical.choice` and
 `Quot.sound`; any appearance of `sorryAx` means the certificate is not a proof.
 
 ## Toolchain: what these certificates were elaborated with, and the shared-image block
+
+### Current baseline (2026-11-11): the `proofs/` lake project at the Mathlib master head
+
+Standing rule for this repository's Lean artifacts: the lakefile requires `mathlib` at `master`
+and the manifest pins the master head the tree was last moved to. `proofs/lakefile.toml`,
+`proofs/lean-toolchain` (`leanprover/lean4:v4.36.0-rc2`, master's own pin at the time of the
+move) and `proofs/lake-manifest.json` (Mathlib `c9f80237cb8abbd41e5443d1ab83ec88d2a5f9ce`)
+implement it; `lake exe cache get` fetches the official oleans, so no Mathlib is built locally
+and the shared research image is not on the elaboration path. A Mathlib change that breaks a
+file is repaired in that file; the repairs of the move to `c9f80237` are recorded in the
+commit history (trailing `rfl`s after `Functor.map_zero`-rewrites; `coordSpan`
+noncomputable; `BarySubdiv`'s singular packaging migrated to `Convexity.StdSimplex`, the
+structure that master's `TopCat.toSSetObjEquiv` is stated through).
+
+Re-verified absences at the master head `c9f80237` (by reading the named files, not by name
+search alone): `CategoryTheory/Monoidal/Tor.lean` still carries no filtered-colimit comparison
+and no balancing (its own docstring: "For now we have almost nothing to say about it");
+`AlgebraicTopology/SimplicialSet/Subdivision.lean` still carries `SSet.B` and `sd ⟶ B` as its
+own TODO; `Module.Free R ↥N` for a submodule of an arbitrary-rank free module is still absent
+(`LinearAlgebra/FreeModule/PID.lean` requires a finite index) — and the dimension-shift route
+of `cards/TorArbitrary.lean` is built so that it does not need that fact. What master *did*
+add since the old pin, and what these certificates now use: functorial projective
+resolutions (`ProjectiveResolution.of`, `Projective.syzygies`/`Projective.d`), the
+`ChainComplex.mk'` constructor with its exactness lemmas, `Mathlib/LinearAlgebra/TensorProduct/
+RightExactness.lean` (`lTensor_exact`, `lTensor_surjective`), and the `Convexity.StdSimplex`
+refactor of the topological simplices.
+
+### The shared research image: provisioned, and the baseline for the certificates before the move
 
 ### The shared research image: provisioned, and the baseline for these certificates
 
