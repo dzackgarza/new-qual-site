@@ -30,6 +30,28 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read the printed exercise at Hartshorne, Algebraic Geometry (1977), V.1,
+    exercise 1.4, printed page 367 (PDF page 382 of the checked-in extraction).
+    Located a complete published solution outside the twelve retained sets:
+    Algebraic Geometry II, National Taiwan University, 2020 Spring (course of
+    Chin-Lung Wang), Chapter V Surfaces homework, Exercise 4 (Yi-Tsung Wang),
+    PDF p. 2, downloaded to tmp/sources/ntu-ag2-chapter5.pdf. Its (a) is the
+    card's step s1 and s2; its (b) is the card's step s3 and s4 with the surface
+    x^{d-1}z + xz^{d-1} + y^{d-1}w + yw^{d-1} in place of
+    xz^{d-1} + yw^{d-1} + x^d + y^d. Both surfaces are checked against the
+    printed hypotheses: every monomial has degree d, the line x = y = 0 lies on
+    the surface, and the four partial derivatives have no common projective
+    zero in characteristic 0. The hypersurface adjunction K_X = (K_{P^3}+X)|_X
+    is Hartshorne II.8.20 and the surface adjunction C.(C+K_X) = 2p_a(C)-2 is
+    V.1.3, both on printed page 361. Yang Pi-Yeh, Hartshorne Solutions,
+    exercise 5.1.4, printed p. 100, is not a solution of (b): it states the
+    surface and asserts nonsingularity. Not checked: whether the exercise is
+    meant for a singular X; under the standing convention opening V.1, printed
+    page 357, a surface is nonsingular, which is what makes C^2 and K_X defined.
 ---
 
 ::: {.problem}
@@ -200,5 +222,11 @@ nonsingular degree-$d$ surface containing the line $x=y=0$, proving part (b).
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.4, PDF pp. 255--256: (a) $K_X=(K_{\PP^3}+dH)\restrict_X=(-4+d)H$ by adjunction, then $C\cdot(C+K_X)=2g-2=-2$ with $C\cdot H=1$ gives $C^2=2-d$, as step [](#s2){.pf-ref}. For (b) he writes "the Fermat hypersurface $x^d+y^d+z^d+w^d=0$ contains the line $x-n^{\cdots}$", whose text layer breaks off there; on the Fermat hypersurface the lines $x+y=z+w=0$ lie on it only when $d$ is odd, since $x^d+(-x)^d=2x^d$ for even $d$, so his example does not give part (b) in every degree. Step [](#s3){.pf-ref} uses $xz^{d-1}+yw^{d-1}+x^d+y^d$ instead and step [](#s4){.pf-ref} checks its partial derivatives, which works for every $d\ge1$. Matches on (a); (b) is supplied here and recorded in COMPLAINTS.md.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 4 (solution by Yi-Tsung Wang), PDF p. 2: for (a), $\omega_X\cong\OO_X(d-4)$, so $K\sim(d-4)H$ and $C\cdot H=\deg C=1$, and adjunction $C^2=2g(C)-2-C\cdot K=2-d$; for (b), $X:x+y=0$ for $d=1$ and $X:x^{d-1}z+xz^{d-1}+y^{d-1}w+yw^{d-1}=0$ for $d\ge2$. That degree-$d$ surface contains $x=y=0$, and the four equations
+$$
+(d-1)x^{d-2}z+z^{d-1}=0,\quad x^{d-1}+(d-1)xz^{d-2}=0,\quad (d-1)y^{d-2}w+w^{d-1}=0,\quad y^{d-1}+(d-1)yw^{d-2}=0
+$$
+have only the solution $(0,0,0,0)\notin\PP^3$. Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are that argument of (a). Step [](#s3){.pf-ref} replaces their surface by $xz^{d-1}+yw^{d-1}+x^d+y^d$, and step [](#s4){.pf-ref} is their argument of (b).
+
+Yang Pi-Yeh, *Hartshorne Solutions*, Exercise 5.1.4, printed p. 100, states the same surface as the National Taiwan University set for (b) and writes "Then $X$ is nonsingular" without checking the partial derivatives, so it does not supply part (b). Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.4, PDF pp. 255--256, gives (a) as step [](#s2){.pf-ref} does and for (b) writes "the Fermat hypersurface $x^d+y^d+z^d+w^d=0$ contains the line $x-n^{\cdots}$", where the text layer breaks off: on that hypersurface $x+y=z+w=0$ lies on it only for odd $d$, because $x^d+(-x)^d=2x^d$ in even degree.
 :::
