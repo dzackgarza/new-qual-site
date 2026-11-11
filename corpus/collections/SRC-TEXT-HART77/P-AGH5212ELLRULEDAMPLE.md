@@ -31,6 +31,28 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-19
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read the printed exercise at Hartshorne, Algebraic Geometry (1977), V.2,
+    exercise 2.12, printed page 385, with its Note on e = -1. Checked the card
+    against the book: V.2.11 as printed on page 385 for the two applications in
+    steps s2 and s7, V.2.8(b) proved on the card P-AGH528STABLEBUNDLE for
+    stability of a normalized bundle of degree 1, IV.1.3 and IV.3.1 for the
+    degree thresholds on an elliptic curve, V.2.5 and V.2.15 for the bound
+    e >= -1 in step s6, and the divisor formula of V.2.9, printed page 373, for
+    O_X(C_0) = O_X(1) and L restricted to C_0. All eleven steps were re-read;
+    the only imported facts are V.2.11, V.2.8 and the invariant bound, and each
+    is applied with its hypotheses verified (degrees at least 2 for base-point
+    freeness and at least 3 for very ampleness, positive degrees after
+    subtracting a point for nonspeciality in the elliptic case). Searched
+    outside the twelve retained sets: NTU 2020 has no entry for Exercise 12 of
+    section 2; Yang Pi-Yeh, Hartshorne Solutions, printed pp. 104-105
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), disposes of e >= 0 as trivial
+    and its e = -1 computation is garbled. Egbert, PDF pp. 268-269, cites
+    Fuentes-Pedreira 1.3 and 1.4 alone. Not checked: Fuentes-Pedreira, which is
+    not in tmp/sources, so its criterion is neither used nor verified here.
 ---
 
 ::: {.problem}
@@ -478,4 +500,6 @@ Step [](#s6){.pf-ref} proves part (a), and steps [](#s7){.pf-ref}, [](#s8){.pf-r
 
 ::: {.remark title="Published solution"}
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.12, PDF pp. 268--269: part (a) is the single line "This is Fuentes, Pedreira Prop 1.3" and part (b) the single line "Fuentes, Predeira prop 1.4", so neither is argued in a retained file. The card proves both: step [](#s2){.pf-ref} covers $e\ge0$ from V.2.11(a) with $\deg\mathfrak b\ge2$ and $\deg(\mathfrak b+\mathfrak e)\ge2$ base-point-free on an elliptic curve, step [](#s5){.pf-ref} covers the exceptional value $e=-1$ through the stability of a normalized bundle of degree $1$ and $H^1(C,\mathcal E(\mathfrak b)(-P))=0$, steps [](#s7){.pf-ref} to [](#s9){.pf-ref} give very ampleness for $e\ge0$ and $e=-1$ respectively, and step [](#s10){.pf-ref} is the necessity, that $\OO_C(\mathfrak b+\mathfrak e)$ of degree $\deg\mathfrak b-e$ is very ample on an elliptic curve and so has degree at least $3$.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.12, printed pp. 104--105, treats $e\ge0$ as "trivial by corollary 3.2 in chapter IV and 5.2.11" without checking that $|\mathfrak b|$ and $|\mathfrak b+\mathfrak e|$ are base-point-free and that $\mathfrak b$ is nonspecial, which on an elliptic curve is the content of step [](#s1){.pf-ref}; for $e=-1$ its computation is garbled, "$h^0(L_X(C_0+\mathfrak b f-Pf))=h^0(L_C(\mathfrak E+\mathfrak B-P))-h^1(L_X(\mathfrak b f-Pf))=1-1=0$" both in the subtraction of an $h^1$ that vanishes and in the resulting value. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, has no entry for Exercise 12 of §2.
 :::
