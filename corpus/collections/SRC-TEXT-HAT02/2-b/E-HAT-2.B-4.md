@@ -109,6 +109,33 @@ audit:
     presupposes a combinatorial or smooth structure, so it also does not settle the topological
     statement as printed. No complete published solution to (b) in full generality has been
     located. The card is not certified and the source obligation is not closed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Part (b) is now proved as printed, on p. 176, with no hypothesis on the disks beyond the
+    statement: the reduction to the proper case is by a collar. Each step checked against Hatcher
+    (2002). Step #collar: with $D_2$ the radius-2 ball, the extension $F$ is $f(2x)$ on $\norm x\le
+    1/2$ and $2\norm x\,f(x/\norm x)$ on $1/2\le\norm x\le 1$; the pieces agree at $\norm x=1/2$
+    because $2x=x/\norm x$ there; continuity is the pasting lemma on two closed halves; injectivity
+    holds because the second piece has $\norm{F(x)}=2\norm x$ (as $f$ of the unit sphere has norm
+    one) so radii and then directions are recovered, and a common point of the two images has norm
+    exactly one, forcing the same preimage; a continuous injection from the compact $D^p$ into the
+    Hausdorff $D_2$ is an embedding. $\norm{F(x)}=2$ holds exactly for $\norm x=1$, so
+    $F(D^p)\cap\partial D_2=2S^{p-1}$. Step #collar-disjoint: inner pieces disjoint by hypothesis,
+    outer pieces are the cones on $S^{p-1}$ and $S^{q-1}$ over $1\le t\le2$ and are disjoint because
+    those spheres are, and an inner point of norm one lying in the other cone lies on
+    $S^{q-1}=g(\partial D^q)$, contradicting disjointness. Step #collar-rescale: scaling by $1/2$
+    maps $D_2$ onto $D^n$ and preserves all the properties, giving proper disks in $(D^n,S^{n-1})$.
+    Step #proper-case: Exercise 3 (printed p. 176) applied to the proper disk, with the class
+    $[S^{q-1}]$ a generator by step #s3, against the null-homology supplied by the other disk. One
+    reading the argument needs is recorded in the solution: $p,q\ge1$, since at $p=0$ the sphere
+    $S^{-1}$ is empty and a point of $D^q$ avoids a concentric smaller disk. The earlier audit note
+    recording (b) as proved only under a properness hypothesis is superseded on that point; the
+    source obligation is unchanged, no published solution of the exercise having been located.
+    Not checked: nothing in the argument is left to the reader, but the proper-case computation
+    itself rests on Exercise 3, whose own card carries the Mayer--Vietoris and Alexander duality
+    details.
 ---
 ---
 
@@ -122,12 +149,15 @@ In the unit sphere $S^{p+q-1} \subset \RR^{p+q}$ let $S^{p-1}$ and $S^{q-1}$ be 
 :::
 
 ::: {.solution}
-Write points of $S^{p+q-1}$ as $(x,y)\in\RR^p\oplus\RR^q$. Then
+Write points of $S^{p+q-1}$ as $(x,y)\in\RR^p\oplus\RR^q$ and put $n=p+q$. Then
 $$
 S^{p-1}=\{(x,0):\norm{x}=1\},
 \qquad
-S^{q-1}=\{(0,y):\norm{y}=1\}.
+S^{q-1}=\{(0,y):\norm{y}=1\},
 $$
+so $S^{p-1}\cap S^{q-1}=\emptyset$ and both are contained in $S^{n-1}$.
+
+The exercise is read for $p,q\ge1$, which part (b) needs: for $p=0$ the sphere $S^{-1}$ is empty and a disk $D^0$ is a point, and a point of $D^{q}$ avoids a concentric smaller disk $D^{q}$ whose boundary is $S^{q-1}$, so a disjoint pair exists. Under $p,q\ge1$ the only result of the book used is Exercise 3 of §2.B, printed p. 176: for a pair of subspaces $(D,S)\subset(D^n,S^{n-1})$ homeomorphic to $(D^k,S^{k-1})$ with $D\cap S^{n-1}=S$, the inclusion $S^{n-1}-S\hookrightarrow D^n-D$ induces an isomorphism on homology. Part (a) is steps [](#s1){.pf-ref} and [](#s2){.pf-ref}; part (b) is the rest.
 
 ::: pf
 
@@ -168,44 +198,93 @@ Under the homeomorphism in step [](#s1){.pf-ref}, contract the $\RR^p$ factor li
 
 ::: {.pf-step #s3}
 
-Suppose, for contradiction, that there are disjoint embedded disks
+The class
 $$
-D^p,D^q\subset D^{p+q}
-$$
-with boundaries the two coordinate spheres $S^{p-1}$ and $S^{q-1}$.
-Then the class
-$$
-[S^{q-1}]\in \widetilde H_{q-1}(S^{p+q-1}-S^{p-1})\cong\ZZ
+[S^{q-1}]\in \widetilde H_{q-1}(S^{n-1}-S^{p-1})\cong\ZZ
 $$
 is a generator.
 
 ::: pf-proof
 
-By steps [](#s1){.pf-ref} and [](#s2){.pf-ref} the coordinate $S^{q-1}$ is a deformation retract of the complement, so its fundamental reduced homology class generates $\widetilde H_{q-1}$. For $q=1$ this class is the difference of the two points of $S^0$.
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref} the coordinate sphere $S^{q-1}$ is a deformation retract of $S^{n-1}-S^{p-1}$, so its fundamental reduced homology class generates $\widetilde H_{q-1}$ there. For $q=1$ this class is the difference of the two points of $S^0$.
 
 :::
 
 :::
 
-::: {.pf-step #s4}
+::: {.pf-step #collar}
 
-Assume that $D^p$ meets the boundary sphere exactly in $S^{p-1}$, that is $D^p\cap S^{p+q-1}=S^{p-1}$. Under this hypothesis the inclusion
-$$
-S^{p+q-1}-S^{p-1}\hookrightarrow D^{p+q}-D^p
-$$
-is defined and induces an isomorphism on reduced homology in every degree.
+Let $f:D^p\to D^n$ and $g:D^q\to D^n$ be disjoint embeddings with $f(\partial D^p)=S^{p-1}$ and $g(\partial D^q)=S^{q-1}$. Then $D^n$ contains disjoint embedded disks $\widehat D^p$ and $\widehat D^q$ with $\partial\widehat D^p=S^{p-1}$ and $\partial\widehat D^q=S^{q-1}$ which are proper, that is $\widehat D^p\cap S^{n-1}=S^{p-1}$ and $\widehat D^q\cap S^{n-1}=S^{q-1}$.
 
 ::: pf-proof
 
-The hypothesis is what makes the inclusion a map at all: a point of $S^{p+q-1}-S^{p-1}$ lies outside $S^{p-1}$, so it must not lie in $D^p$, and that is exactly the statement that $D^p\cap S^{p+q-1}=S^{p-1}$.
+Let $D_2$ be the closed ball of radius $2$ about the origin, so $D^n\subset D_2$. A point of $D^n$ has norm at most $1$, so an embedding whose boundary is $S^{p-1}$ extends to a proper disk in $D_2$.
 
-Given it, Exercise 3 applies to the pair $(D^p,S^{p-1})\subset(D^{p+q},S^{p+q-1})$: the pair is homeomorphic to $(D^p,S^{p-1})$, and the intersection condition $D^p\cap S^{p+q-1}=S^{p-1}$ is the hypothesis of that exercise, so the inclusion of the boundary complement into the complement of the disk is an isomorphism on homology in every degree.
+::: {.pf-step #collar-extension}
 
-This step is a conditional result, not a proof of the exercise as printed: it assumes the disk is proper, in the sense that it meets the ambient boundary exactly in its own boundary. That condition is stronger than the exercise's wording, which speaks only of disks with the given boundaries, and it is not a consequence of the boundary alone: for $p=q=1$ the arc $\gamma(t)=(t,1-t^2)$ in $D^2$ has endpoints $(\pm1,0)\in S^1$ and also meets $S^1$ at $\gamma(0)=(0,1)$, tangentially, since $\norm{\gamma(t)}^2=t^4-t^2+1\le1$ with equality only at $t=0$ and $t=\pm1$. Such a disk is not proper, and for it the inclusion displayed above is not even defined.
+The formula
+$$
+F(x)=\begin{cases} f(2x), & \norm x\le\tfrac12,\\[2pt] 2\norm x\, f\bigl(x/\norm x\bigr), & \tfrac12\le\norm x\le 1,\end{cases}
+$$
+defines an embedding $F:D^p\to D_2$ with $F(\partial D^p)=2S^{p-1}$ and $F(D^p)\cap\partial D_2=2S^{p-1}$.
 
-What that example shows is only that this proof needs the hypothesis. It does not show that the printed statement requires it, it is not offered as a correction to the exercise, and whether properness can be dropped is open on this card. The reduction from an arbitrary embedded disk with boundary $S^{p-1}$ to a proper one is not carried out here; in the locally flat case such a reduction is supplied by the ambient isotopy and collar theorems of the topological-embeddings literature (Rushing, *Topological Embeddings*, where proper embeddings and local flatness are defined in Chapter 1 and the isotopy extension theorem is stated), while wild embeddings are not covered by those theorems, and no source giving the reduction, or a proof of the printed statement without it, has been located.
+::: pf-proof
 
-Nothing is required of $D^q$ beyond $S^{q-1}\subset D^q\setminus\partial D^q$; this asymmetric requirement is the one identified in the source discussion cited in the audit record.
+*Well defined.* For $\norm x\le\tfrac12$ the point $2x$ lies in $D^p$, so $F(x)\in f(D^p)\subset D^n$. For $\tfrac12\le\norm x\le1$ one has $x/\norm x\in\partial D^p$, so $f(x/\norm x)\in S^{p-1}$ has norm one and $\norm{F(x)}=2\norm x\in[1,2]$. At $\norm x=\tfrac12$ the two formulas coincide, since then $2x=x/\norm x$ and $2\norm x=1$. Both pieces are continuous and their domains are closed and cover $D^p$, so $F$ is continuous by the pasting lemma.
+
+*Injective.* On the first piece $F=f\circ(2\,\cdot\,)$ is injective. On the second write $x=ru$ with $u\in\partial D^p$ and $\tfrac12\le r\le1$, so that $F(x)=2r\,f(u)$ and $\norm{F(x)}=2r$ because $\norm{f(u)}=1$; then $2r\,f(u)=2r'f(u')$ gives $r=r'$ and, by injectivity of $f$, $u=u'$. If $x$ is in the first piece and $x'$ in the second with $F(x)=F(x')$, then $\norm{F(x)}\le1$ and $\norm{F(x')}=2\norm{x'}\ge1$, so both equal $1$; hence $\norm{x'}=\tfrac12$ and $F(x')=f(x'/\norm{x'})=f(2x')$, while $F(x)=f(2x)$, and injectivity of $f$ gives $2x=2x'$, that is $x=x'$. So the two pieces agree on their overlap and nowhere else.
+
+Since $D^p$ is compact and $D_2$ is Hausdorff, $F$ is an embedding. For $\norm x=1$ the second formula gives $F(x)=2f(x)$, so $F(\partial D^p)=2f(\partial D^p)=2S^{p-1}\subset\partial D_2$, and conversely an $F(x)$ of norm $2$ is either of norm at most $1$ from the first piece or has $\norm x=1$. The same construction applied to $g$, whose boundary is $S^{q-1}$, gives an embedding $G:D^q\to D_2$ with $G(\partial D^q)=2S^{q-1}$ and $G(D^q)\cap\partial D_2=2S^{q-1}$.
+
+:::
+
+:::
+
+::: {.pf-step #collar-disjoint}
+
+$F(D^p)\cap G(D^q)=\emptyset$.
+
+::: pf-proof
+
+The inner pieces are $f(D^p)$ and $g(D^q)$, disjoint by hypothesis. The outer pieces are the cones
+$$
+\{ts: s\in S^{p-1},\ 1\le t\le2\},
+\qquad
+\{ts: s\in S^{q-1},\ 1\le t\le2\},
+$$
+which are disjoint because $S^{p-1}\cap S^{q-1}=\emptyset$. For an inner and an outer piece: a point of $f(D^p)$ lies in $D^n$ and so has norm at most $1$, while a point of the cone on $S^{q-1}$ has norm at least $1$; a common point therefore has norm exactly $1$, lies on $S^{n-1}$ and, being in the cone on $S^{q-1}$, lies on $S^{q-1}=g(\partial D^q)\subset g(D^q)$, contradicting the disjointness of $f(D^p)$ and $g(D^q)$. The same argument exchanges the roles of $F$ and $G$.
+
+:::
+
+:::
+
+::: {.pf-step #collar-rescale}
+
+After the scaling $y\mapsto y/2$, the disks $F(D^p)/2$ and $G(D^q)/2$ lie in $D^n$, are disjoint, have boundaries $S^{p-1}$ and $S^{q-1}$, and are proper.
+
+::: pf-proof
+
+Dividing by $2$ maps $D_2$ onto $D^n$ and $\partial D_2$ onto $S^{n-1}$, and is a homeomorphism, so it preserves embedded disks and disjointness. By step [](#collar-extension){.pf-ref}, $F(D^p)\cap\partial D_2=2S^{p-1}$, so
+$$
+\bigl(F(D^p)/2\bigr)\cap S^{n-1}=S^{p-1}=\partial\bigl(F(D^p)/2\bigr),
+$$
+and likewise for $G(D^q)/2$ and $S^{q-1}$.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #proper-case}
+
+There are no disjoint embeddings $f:D^p\to D^n$, $g:D^q\to D^n$ with $f(\partial D^p)=S^{p-1}$, $g(\partial D^q)=S^{q-1}$ and $f(D^p)\cap S^{n-1}=S^{p-1}$, $g(D^q)\cap S^{n-1}=S^{q-1}$.
+
+::: pf-proof
+
+Put $D=f(D^p)$ and $E=g(D^q)$. Exercise 3 of §2.B applies to the pair $(D,S^{p-1})\subset(D^n,S^{n-1})$, whose hypothesis $D\cap S^{n-1}=S^{p-1}$ holds by assumption, and says that $S^{n-1}-S^{p-1}\hookrightarrow D^n-D$ induces an isomorphism on homology. By step [](#s3){.pf-ref} the class $[S^{q-1}]$ generates the left-hand group in degree $q-1$, so its image generates $\widetilde H_{q-1}(D^n-D)$ and is nonzero. But $E\subset D^n-D$ is a compact $q$-manifold with boundary whose fundamental chain has boundary the fundamental cycle of $\partial E=S^{q-1}$, so $[S^{q-1}]=0$ in $\widetilde H_{q-1}(D^n-D)$. This contradicts the nonvanishing, so no such pair exists.
 
 :::
 
@@ -213,19 +292,11 @@ Nothing is required of $D^q$ beyond $S^{q-1}\subset D^q\setminus\partial D^q$; t
 
 ::: pf-step
 
-But $[S^{q-1}]$ maps to zero in $\widetilde H_{q-1}(D^{p+q}-D^p)$, a contradiction.
+Part (b) holds: no disjoint embeddings as in the exercise exist.
 
 ::: pf-proof
 
-The disk $D^q$ is disjoint from $D^p$ by assumption, so it is a singular $q$-chain in $D^{p+q}-D^p$ whose boundary is $S^{q-1}$; thus the image of the generator $[S^{q-1}]$ of step [](#s3){.pf-ref} is zero.
-
-Equivalently, the composite
-$$
-S^{q-1}\longrightarrow D^q\longrightarrow D^{p+q}-D^p
-$$
-is the inclusion of step [](#s4){.pf-ref}, which is an isomorphism on $\widetilde H_{q-1}$ by that step, while $\widetilde H_{q-1}(D^q)=0$ because $D^q$ is contractible. An isomorphism cannot factor through a zero group, and $\widetilde H_{q-1}(S^{q-1})\cong\ZZ$ for $q\ge1$.
-
-Either way the assumption that such disjoint disks exist is contradictory.
+Suppose $f,g$ are as in the exercise. By step [](#collar){.pf-ref} there are then disjoint disks $\widehat D^p,\widehat D^q\subset D^n$ with the same boundaries which are proper, and step [](#proper-case){.pf-ref} says no such pair of disks exists. So the assumption fails.
 
 :::
 
@@ -233,5 +304,4 @@ Either way the assumption that such disjoint disks exist is contradictory.
 
 :::
 
-Therefore, on the hypothesis of step [](#s4){.pf-ref} that the disk $D^p$ meets the boundary sphere exactly in $S^{p-1}$, the two coordinate spheres cannot bound disjoint embedded disks in $D^{p+q}$.
 :::
