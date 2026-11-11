@@ -19,6 +19,11 @@ audit:
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 81 Exercise 4, printed p. 493. A finite fixed-point-free action of a Hausdorff space is properly discontinuous, by separating each point from its finitely many images. Checked against the definition of properly discontinuous, printed p. 488. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Step-by-step check against the printed pages, and the repair. Corrected: the definition of a properly discontinuous action is on printed p. 490, not p. 488 as the previous note said. Corrected: the old solution was not a Lamport proof at all -- its steps carried indented prose labelled "Proof:" instead of pf-proof blocks, the last top-level step had no proof, and a literal "Q.E.D." was typed into the text, which the filter writes itself. The proof is now a proper pf block: one step separating the point from each of its finitely many images, one step taking the finite intersection, and the conclusion as the final step. Every step cites Munkres by number and page: the definition of a proper discontinuity (printed p. 490), the Hausdorff condition (printed p. 98), the closedness of the topology under finite intersections (printed p. 76), and the continuity of each element of $G$, which is a homeomorphism (printed p. 105). What the certificate does not cover: nothing in the exercise needs X to be path connected, and the proof does not use it.
 ---
 
 ::: {.exercise}
@@ -26,67 +31,52 @@ audit:
 Let $G$ be a group of homeomorphisms of $X$.
 The action of $G$ on $X$ is said to be fixed-point free if no element of $G$ other than the identity $e$ has a fixed point.
 Show that if $X$ is Hausdorff, and if $G$ is a finite group of homeomorphisms of $X$ whose action is fixed-point free, then the action of $G$ is properly discontinuous.
+
 :::
 
 ::: {.solution}
 
+The action of $G$ on $X$ is properly discontinuous if for each $x \in X$ there is a neighbourhood $U$ of $x$ with $g(U) \cap U = \varnothing$ for every $g \ne e$ (printed p. 490).
+
 ::: pf
 
-::: pf-step
+::: {.pf-step #single}
 
-Definition of proper discontinuity:
-    The action of $G$ on $X$ is properly discontinuous if for every point $x \in X$, there exists an open neighborhood $U \subseteq X$ of $x$ such that:
-    $$g(U) \cap U = \varnothing \quad \text{for all } g \in G \setminus \{e\}.$$
-
-:::
-
-::: pf-step
-
-Separation for individual group elements:
-    For each $g \in G \setminus \{e\}$, there exists an open neighborhood $U_g \subseteq X$ of $x$ such that $g(U_g) \cap U_g = \varnothing$.
-    *Proof:*
+For each $g \in G$ with $g \neq e$ there is an open neighbourhood $U_g$ of $x$ with $g(U_g) \cap U_g = \varnothing$.
 
 ::: pf-proof
 
-::: pf-step
+::: {.pf-step}
 
-Because the action is fixed-point free, $g(x) \neq x$.
+$g(x) \neq x$.
 
-:::
+::: {.pf-proof}
 
-::: pf-step
-
-Since $X$ is Hausdorff, there exist disjoint open sets $V_g, W_g \subseteq X$ such that $x \in V_g$, $g(x) \in W_g$, and $V_g \cap W_g = \varnothing$.
+The action is fixed-point free, so no element of $G$ other than $e$ has a fixed point; a fixed point of $g$ is a point $y$ with $g(y) = y$.
 
 :::
 
-::: pf-step
+:::
 
-Since $g: X \to X$ is continuous and $g(x) \in W_g$, the preimage $g^{-1}(W_g)$ is an open neighborhood of $x$.
+::: {.pf-step}
+
+There are disjoint open sets $V_g$ and $W_g$ with $x \in V_g$ and $g(x) \in W_g$.
+
+::: {.pf-proof}
+
+$X$ is Hausdorff, that is, distinct points have disjoint open neighbourhoods (Definition, printed p. 98), and $g(x) \ne x$.
 
 :::
 
-::: pf-step
-
-Define $U_g = V_g \cap g^{-1}(W_g)$. Then $U_g$ is an open neighborhood of $x$.
-
 :::
 
-::: pf-step
+::: {.pf-step}
 
-If $y \in U_g$, then $y \in V_g$ and $g(y) \in W_g$.
+$U_g = V_g \cap g^{-1}(W_g)$ is an open neighbourhood of $x$, and $g(U_g) \cap U_g = \varnothing$.
 
-:::
+::: {.pf-proof}
 
-::: pf-step
-
-Since $V_g \cap W_g = \varnothing$, $g(y) \notin V_g$, which implies $g(y) \notin U_g$.
-
-:::
-
-::: pf-step
-
-Thus $g(U_g) \cap U_g = \varnothing$.
+$g$ is a homeomorphism, hence continuous, so $g^{-1}(W_g)$ is open; it contains $x$ because $g(x) \in W_g$. An intersection of two open sets is open (Definition of a topology, printed p. 76), so $U_g$ is an open neighbourhood of $x$. For $y \in U_g$ one has $y \in V_g$ and $g(y) \in W_g$, so $g(y) \notin V_g$, and since $U_g \subseteq V_g$, also $g(y) \notin U_g$; hence $g(U_g) \cap U_g = \varnothing$.
 
 :::
 
@@ -94,41 +84,35 @@ Thus $g(U_g) \cap U_g = \varnothing$.
 
 :::
 
-::: pf-step
+:::
 
-Construction of the simultaneous neighborhood:
-    *Proof:*
+::: {.pf-step}
 
-::: pf-proof
+$g(U) \cap U = \varnothing$ for every $g \ne e$, where $U$ is the intersection of the sets $U_g$ over the finitely many $g \ne e$.
 
-::: pf-step
+::: {.pf-proof}
 
-Write $G \setminus \{e\} = \{g_1, \dots, g_n\}$. Since $G$ is finite, this is a finite set of elements.
+Write $G \setminus \{e\} = \{g_1, \dots, g_n\}$; this is a finite set because $G$ is finite. Let
+$$
+U = \bigcap_{i=1}^n U_{g_i}.
+$$
+A finite intersection of open sets is open (printed p. 76) and it contains $x$, so $U$ is a neighbourhood of $x$. For each $g_k \ne e$ one has $U \subseteq U_{g_k}$, hence
+$$
+g_k(U) \cap U \subseteq g_k(U_{g_k}) \cap U_{g_k} = \varnothing
+$$
+by step [](#single){.pf-ref}.
 
 :::
 
-::: pf-step
-
-Define $U = \bigcap_{i=1}^n U_{g_i}$.
-
 :::
 
-::: pf-step
+::: {.pf-step}
 
-As a finite intersection of open neighborhoods containing $x$, $U$ is an open neighborhood of $x$ in $X$.
+The action of $G$ on $X$ is properly discontinuous.
 
-:::
+::: {.pf-proof}
 
-::: pf-step
-
-For every $g_k \in G \setminus \{e\}$, since $U \subseteq U_{g_k}$:
-        $$g_k(U) \cap U \subseteq g_k(U_{g_k}) \cap U_{g_k} = \varnothing.$$
-
-:::
-
-::: pf-step
-
-Therefore, $g(U) \cap U = \varnothing$ for all $g \neq e$.
+For each $x \in X$ the neighbourhood $U$ just constructed satisfies $g(U) \cap U = \varnothing$ for every $g \neq e$, which is the definition of a properly discontinuous action (printed p. 490).
 
 :::
 
@@ -136,13 +120,4 @@ Therefore, $g(U) \cap U = \varnothing$ for all $g \neq e$.
 
 :::
 
-::: pf-step
-
-Conclusion:
-
-:::
-
-:::
-
-    The action of $G$ on $X$ is properly discontinuous. Q.E.D.
 :::
