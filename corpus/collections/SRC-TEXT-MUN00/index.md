@@ -1380,15 +1380,15 @@ source:
     - id: E-I9R8B
       comment: Munkres §82.2
     - id: E-8Q9TN
-      comment: Munkres §82 Supplementary
+      comment: Munkres §82 Supplementary Ex. 1, p. 499
     - id: E-QVJ8J
-      comment: Munkres §82 Supplementary
+      comment: Munkres §82 Supplementary Ex. 2, p. 499
     - id: E-SF828
-      comment: Munkres §82 Supplementary
+      comment: Munkres §82 Supplementary Ex. 3, p. 500
     - id: E-74C1G
-      comment: Munkres §82 Supplementary
+      comment: Munkres §82 Supplementary Ex. 4, p. 500
     - id: E-VLQ5H
-      comment: Munkres §82 Supplementary
+      comment: Munkres §82 Supplementary Ex. 5, p. 500
   - name: '83'
     problems:
     - id: E-NKQPS
