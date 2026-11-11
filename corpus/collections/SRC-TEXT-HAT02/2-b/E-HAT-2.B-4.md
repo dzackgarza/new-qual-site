@@ -128,14 +128,30 @@ audit:
     $S^{q-1}=g(\partial D^q)$, contradicting disjointness. Step #collar-rescale: scaling by $1/2$
     maps $D_2$ onto $D^n$ and preserves all the properties, giving proper disks in $(D^n,S^{n-1})$.
     Step #proper-case: Exercise 3 (printed p. 176) applied to the proper disk, with the class
-    $[S^{q-1}]$ a generator by step #s3, against the null-homology supplied by the other disk. One
-    reading the argument needs is recorded in the solution: $p,q\ge1$, since at $p=0$ the sphere
-    $S^{-1}$ is empty and a point of $D^q$ avoids a concentric smaller disk. The earlier audit note
-    recording (b) as proved only under a properness hypothesis is superseded on that point; the
-    source obligation is unchanged, no published solution of the exercise having been located.
-    Not checked: nothing in the argument is left to the reader, but the proper-case computation
-    itself rests on Exercise 3, whose own card carries the Mayer--Vietoris and Alexander duality
-    details.
+    $[S^{q-1}]$ a generator by step #s3, against the null-homology supplied by the other disk. The
+    earlier audit note recording (b) as proved only under a properness hypothesis is superseded on
+    that point; the source obligation is unchanged, no published solution of the exercise having been
+    located.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Correction, and the degenerate cases added. The previous note on this card claimed the argument
+    needs $p,q\ge1$ and offered a counterexample at $p=0$; that sentence was false and is removed. A
+    concentric smaller disk of $D^q$ has a smaller sphere as its boundary, not $S^{q-1}$, so it is not
+    a candidate for the disk whose boundary $S^{q-1}$ is. At $p=0$ one has $n=q$ and the ambient ball
+    is $D^q$ itself, and statement (b) holds: an embedding $g:D^q\to D^q$ with $g(\partial D^q)=
+    S^{q-1}$ is onto, by Invariance of Domain, Theorem 2B.3 (p. 172), applied to the interior, together
+    with the compactness of $g(D^q)$ and the connectedness of $\operatorname{int}D^q$. That argument is
+    now step #degenerate, with $q=0$ by symmetry and $p=q=0$ noted as the single-point ambient ball, and
+    the exercise is read as printed, for all $p,q\ge0$. Steps #s3 and later are scoped to $p,q\ge1$,
+    where they are used, and the closing step dispatches the degenerate cases through #degenerate.
+    Checked: $g(\operatorname{int}D^q)=g(D^q)\cap\operatorname{int}D^q$ from injectivity of $g$ and
+    $g(\partial D^q)=\partial D^q$; openness is Theorem 2B.3 applied to the injective map of the open
+    set $\operatorname{int}D^q\cong\RR^q$ into $\RR^q$; closedness is compactness of $g(D^q)$ in the
+    Hausdorff $D^q$; nonemptiness and connectedness of $\operatorname{int}D^q$ finish it. Not checked:
+    the removal of the earlier claim leaves the collar argument of #collar untouched, which the note
+    below records; the source obligation is unchanged, no published solution having been located.
 ---
 ---
 
@@ -157,7 +173,7 @@ S^{q-1}=\{(0,y):\norm{y}=1\},
 $$
 so $S^{p-1}\cap S^{q-1}=\emptyset$ and both are contained in $S^{n-1}$.
 
-The exercise is read for $p,q\ge1$, which part (b) needs: for $p=0$ the sphere $S^{-1}$ is empty and a disk $D^0$ is a point, and a point of $D^{q}$ avoids a concentric smaller disk $D^{q}$ whose boundary is $S^{q-1}$, so a disjoint pair exists. Under $p,q\ge1$ the only result of the book used is Exercise 3 of §2.B, printed p. 176: for a pair of subspaces $(D,S)\subset(D^n,S^{n-1})$ homeomorphic to $(D^k,S^{k-1})$ with $D\cap S^{n-1}=S$, the inclusion $S^{n-1}-S\hookrightarrow D^n-D$ induces an isomorphism on homology. Part (a) is steps [](#s1){.pf-ref} and [](#s2){.pf-ref}; part (b) is the rest.
+The exercise is read as printed, for all $p,q\ge0$: at $p=0$ the sphere $S^{p-1}$ is the empty sphere $S^{-1}$ and $\partial D^0=\emptyset$, and at $q=0$ likewise, and step [](#degenerate){.pf-ref} settles those two cases. The rest of the argument assumes $p,q\ge1$, where $S^{p-1}$ and $S^{q-1}$ are nonempty spheres in $S^{n-1}$. The results of the book used are Exercise 3 of §2.B, printed p. 176 — for a pair of subspaces $(D,S)\subset(D^n,S^{n-1})$ homeomorphic to $(D^k,S^{k-1})$ with $D\cap S^{n-1}=S$, the inclusion $S^{n-1}-S\hookrightarrow D^n-D$ induces an isomorphism on homology — and Invariance of Domain, Theorem 2B.3 (p. 172), in the two degenerate cases. Part (a) is steps [](#s1){.pf-ref} and [](#s2){.pf-ref}; part (b) is the rest.
 
 ::: pf
 
@@ -196,9 +212,32 @@ Under the homeomorphism in step [](#s1){.pf-ref}, contract the $\RR^p$ factor li
 
 :::
 
+::: {.pf-step #degenerate}
+
+If $p=0$ or $q=0$, part (b) holds.
+
+::: pf-proof
+
+Suppose first that $p=0$ and $q\ge1$, so that $n=q$ and the ambient ball is $D^q$ itself, $S^{p-1}=S^{-1}=\emptyset$ and $\partial D^0=\emptyset$. Let $g:D^q\to D^q$ be an embedding with $g(\partial D^q)=S^{q-1}$. Since $g$ is injective with $g(\partial D^q)=\partial D^q$, it carries the interior onto the complement of the boundary of its image,
+$$
+g(\operatorname{int}D^q)=g(D^q)-g(\partial D^q)=g(D^q)-S^{q-1}=g(D^q)\cap\operatorname{int}D^q .
+$$
+
+*That set is open in $\operatorname{int}D^q$.* The interior $\operatorname{int}D^q$ is homeomorphic to $\RR^q$, and $g$ restricts to an injective continuous map of it into $\RR^q$; by Invariance of Domain, Theorem 2B.3 (p. 172), its image is open.
+
+*It is closed in $\operatorname{int}D^q$.* The set $g(D^q)$ is compact, hence closed in the Hausdorff space $D^q$, so $g(D^q)\cap\operatorname{int}D^q$ is closed in the open subspace $\operatorname{int}D^q$.
+
+*It is nonempty and $\operatorname{int}D^q$ is connected*, so the clopen nonempty subset $g(\operatorname{int}D^q)$ is all of $\operatorname{int}D^q$. Hence $g(D^q)=g(\operatorname{int}D^q)\cup g(\partial D^q)=\operatorname{int}D^q\cup S^{q-1}=D^q$. A disk $D^0$ is a single point of $D^q$, so it lies in $g(D^q)$ and the two disks are not disjoint.
+
+For $q=0$ the same argument applies with $p$ in place of $q$: an embedding $f:D^p\to D^p$ with $f(\partial D^p)=S^{p-1}$ has open image by Theorem 2B.3 and compact hence closed image, so it is onto, and the point $D^0$ lies in $f(D^p)$. At $p=q=0$ the ambient ball is a single point, both disks are that point, and they meet.
+
+:::
+
+:::
+
 ::: {.pf-step #s3}
 
-The class
+Assume $p,q\ge1$. Then the class
 $$
 [S^{q-1}]\in \widetilde H_{q-1}(S^{n-1}-S^{p-1})\cong\ZZ
 $$
@@ -296,7 +335,7 @@ Part (b) holds: no disjoint embeddings as in the exercise exist.
 
 ::: pf-proof
 
-Suppose $f,g$ are as in the exercise. By step [](#collar){.pf-ref} there are then disjoint disks $\widehat D^p,\widehat D^q\subset D^n$ with the same boundaries which are proper, and step [](#proper-case){.pf-ref} says no such pair of disks exists. So the assumption fails.
+Suppose $f,g$ are as in the exercise. If $p=0$ or $q=0$ the claim is step [](#degenerate){.pf-ref}. Otherwise $p,q\ge1$, and by step [](#collar){.pf-ref} there are then disjoint disks $\widehat D^p,\widehat D^q\subset D^n$ with the same boundaries which are proper, while step [](#proper-case){.pf-ref} says no such pair of disks exists. So the assumption fails.
 
 :::
 
