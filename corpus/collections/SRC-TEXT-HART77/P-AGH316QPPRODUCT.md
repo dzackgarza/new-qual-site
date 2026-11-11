@@ -28,6 +28,19 @@ audit:
   by: chatgpt
   date: 2026-09-17
   note: 'Checked the Segre chart formulas, locally-closed/projective claims, and local-to-global universal morphism against the source and published discussions of I.3.16.'
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read Bertram, Algebraic Geometry (Math 6130, Utah), Section 4,
+    Proposition 4.3 with the paragraphs following, printed pp. 5-6, which
+    proves the product of projective spaces is the product in the category
+    of prevarieties via the Segre image and the local product-of-rational-
+    functions formula, and derives Y x Z closed and U x V open. That closes
+    part (c), which the retained sets omit. Checked the card's own steps
+    against it: the two projections, local closedness, closedness, and the
+    universal property on affine charts. Not checked: Bertram's graded-ring
+    remark.
 ---
 
 ::: {.problem}
@@ -212,11 +225,13 @@ Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove (a)--(c), re
 :::
 
 ::: {.remark title="Published solution"}
+The complete published argument for (a)--(c) is Aaron Bertram, *Algebraic Geometry* (Math 6130, University of Utah), Section 4, Proposition 4.3 and the paragraphs following it, printed pp. 5--6: the Segre map "exhibits the product of projective spaces as a projective variety", the image is $V(\langle x_{ij}x_{kl}-x_{il}x_{jk}\rangle)$ with the two projections given by $\pi_1(\ldots:a_ib_j:\ldots)=(a_0b_0:\cdots:a_mb_0)$ and $\pi_2(\ldots:a_ib_j:\ldots)=(a_0b_0:\cdots:a_0b_n)$, and universality is proved by taking an open affine $U\subseteq W$ with $p_1(x)=(\varphi_0(x):\cdots:\varphi_m(x))$ and $p_2(x)=(\psi_0(x):\cdots:\psi_n(x))$ in $k(U)$, whereupon the unique set map is $f(x)=(\ldots:\varphi_i(x)\psi_j(x):\ldots)$, a morphism. For closed $Y=V(F_1,\ldots,F_a)$ and $Z=V(G_1,\ldots,G_b)$ it gives $Y\times Z=V(\langle F_i(x_{00},\ldots,x_{m0}),\ G_j(x_{00},\ldots,x_{0n})\rangle)$, and for open $U\subseteq Y$, $V\subseteq Z$ it gives $U\times V=Y\times Z-\pi_2^{-1}(Z-V)-\pi_1^{-1}(Y-U)$, which is parts (b) and (a). That is exactly the content of steps [](#s1){.pf-ref}--[](#s4){.pf-ref}: the two projections as morphisms, local closedness, closedness for projective factors, and the universal property read on affine charts.
+
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 3.16.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.16, PDF p. 14: for (a) and (b) he writes $X=Z(\mathfrak a)$, $Y=Z(\mathfrak b)$ and forms, for $f_1\in\mathfrak a$ and $f_2\in\mathfrak b$, the polynomial $g(\{z_{ij}\})=\sum_{i,j}\alpha_{ij}z_{ij}$ from the expansion of $f_1(x)f_2(y)$, so that $f_1(P_1)f_2(P_2)=0$ exactly when $g(\psi(P_1,P_2))=0$; he does not treat (c).
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.16, PDF p. 36: $X\times Y=(X\times\PP^m)\cap(\PP^n\times Y)=\pi_m^{-1}(X)\cap\pi_n^{-1}(Y)$, and (b) "similar", with no (c).
 The proof above constructs the two ambient projections on the Segre charts first, then gets (a) as local closedness together with irreducibility chart by chart, (b) as closedness in the projective variety $S$, and (c) as the affine universal property transported along those charts; the published sets reach (a) and (b) only, and neither writes the projections as morphisms.
-Agree on (a) and (b); (c) is supplied here.
+Bertram's Proposition 4.3 proves (c) as well, so (c) is no longer only supplied here.
 :::
 
 ::: {.remark}
