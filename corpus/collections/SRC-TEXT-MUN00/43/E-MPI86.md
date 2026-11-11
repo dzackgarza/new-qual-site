@@ -31,7 +31,7 @@ audit:
     2026-11-11): the identity is uniformly continuous both ways because d-bar <= d, and conversely
     d-bar(x,y) < min{eps,1} forces d(x,y) = d-bar(x,y). Part (b) from "Solutions to exercises for
     Mathematics 205A" (University of California, Riverside, Fall 2014), Part 3, section "III.2: Complete
-    metric spaces", answer to §43 Exercise 3(b) on the set's own printed p. 4 (in
+    metric spaces", answer to §43 Exercise 3 (printed p. 270)(b) on the set's own printed p. 4 (in
     tmp/sources/munkres-solutions-ucr-math205-gentop.pdf, PDF p. 45): uniform continuity carries Cauchy
     sequences both ways, completeness under d gives the limit, and continuity of the identity gives
     convergence under d-prime. Checked against Munkres, Topology (2000), §43 Exercise 3, printed p. 270,

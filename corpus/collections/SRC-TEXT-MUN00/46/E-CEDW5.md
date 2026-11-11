@@ -18,7 +18,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §46 Exercise 5 was located; the sets searched are listed in the
+    No complete published solution of Munkres §46 Exercise 5 (printed p. 288) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against the book's topology of compact
     convergence (§46) and uniform metric (§20, §43). Part (a): the pointwise limit is x/(1-x)^2 by term by term
     differentiation of the geometric series on the interval of convergence; on a compact K inside (-1,1) the

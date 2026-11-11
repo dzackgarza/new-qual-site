@@ -18,7 +18,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §46 Exercise 8 was located; the sets searched are listed in the
+    No complete published solution of Munkres §46 Exercise 8 (printed p. 289) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against the definition of the compact-open
     subbasis in §46 and the Tube Lemma (Lemma 26.8), which reads: if N is an open set of X x Y containing
     the slice x_0 x Y and Y is compact, then W x Y is contained in N for some neighbourhood W of x_0. The

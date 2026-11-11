@@ -15,7 +15,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §47 Exercise 2 was located; the sets searched are listed in the
+    No complete published solution of Munkres §47 Exercise 2 (printed p. 293) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against the book's Theorem 46.7, Theorem 29.2,
     Lemma 45.2, Theorem 45.4, Theorem 37.3 and Lemma 46.4. What was corrected: the "only if" direction had
     proved equicontinuity with nets, a technique the book does not use and does not define; it now restricts

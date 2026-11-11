@@ -18,7 +18,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §46 Exercise 7 was located; the sets searched are listed in the
+    No complete published solution of Munkres §46 Exercise 7 (printed p. 289) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against Theorem 46.10 (the compact-open topology
     is admissible for locally compact Hausdorff Y) and the definition of the compact-open subbasis in §46. The
     proof is the exercise's hint, made explicit: since g^{-1}(U) is an open set containing the compact set

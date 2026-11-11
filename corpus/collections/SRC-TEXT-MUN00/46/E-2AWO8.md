@@ -18,7 +18,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §46 Exercise 2 was located; the sets searched are listed in the
+    No complete published solution of Munkres §46 Exercise 2 (printed p. 288) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. The card proves Theorem 46.7 as the exercise asks.
     Checked against the book's statement of Theorem 46.7 and its proof (printed pp. 283-286), with the
     uniform metric of §20 and §43 and the subbasis of the compact-open topology in §46: a singleton is

@@ -18,7 +18,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §45 Exercise 2 was located; the sets searched are listed in
+    No complete published solution of Munkres §45 Exercise 2 (printed p. 280) was located; the sets searched are listed in
     the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book's
     definition of equicontinuity in §45 (equicontinuous at x_0 if for every eps there is a neighbourhood U
     of x_0 with d(f(x), f(x_0)) < eps for all x in U and all f in the family). Part (a) is the finite

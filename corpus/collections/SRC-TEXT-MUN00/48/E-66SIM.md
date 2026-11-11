@@ -19,7 +19,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §48 Exercise 3 was located; the sets searched are listed in the
+    No complete published solution of Munkres §48 Exercise 3 (printed p. 299) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. (The Toronto MAT327 set proves the Baire category
     theorem for locally compact Hausdorff spaces as a course problem, in its assignment 6 solutions Question 1,
     but the statement there is the theorem itself, with the course's own definition of nowhere dense, and is not

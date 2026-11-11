@@ -28,7 +28,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §43 Exercise 5 was located in any set searched; the search
+    No complete published solution of Munkres §43 Exercise 5 (printed p. 270) was located in any set searched; the search
     is recorded in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00, and the proof on the card is
     checked line by line against the book. Checked against Munkres, Topology (2000), §43 Exercise 5,
     printed p. 270, with the definition of a contraction stated in the exercise, the definition of

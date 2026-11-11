@@ -20,7 +20,7 @@ audit:
   note: >-
     Parts (a) and (c) are transcribed from the located published solution: "Solutions to exercises for
     Mathematics 205A" (University of California, Riverside, Fall 2014), Part 3, section "III.2: Complete
-    metric spaces", answers to Munkres §43 Exercise 6(a) and 6(c) on the set's own printed p. 5 (in
+    metric spaces", answers to Munkres §43 Exercise 6 (printed p. 270)(a) and 6(c) on the set's own printed p. 5 (in
     tmp/sources/munkres-solutions-ucr-math205-gentop.pdf, PDF p. 46; the file names no author, so the
     course and the file are the attribution). Part (a) is the set's: a Cauchy sequence of a closed
     subspace is Cauchy in the complete space and its limit lies in the closed subspace. Part (c) is the

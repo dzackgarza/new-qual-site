@@ -15,7 +15,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §45 Exercise 4 was located; the sets searched are listed in
+    No complete published solution of Munkres §45 Exercise 4 (printed p. 280) was located; the sets searched are listed in
     the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against Munkres, Topology (2000), §45
     Exercise 4, printed p. 280, and Exercise 9 of §21, printed p. 134, whose functions are exactly
     1/(n^3[x - 1/n]^2 + 1). Part (a): equicontinuity at every x_0 < 1 is shown by splitting the indices at

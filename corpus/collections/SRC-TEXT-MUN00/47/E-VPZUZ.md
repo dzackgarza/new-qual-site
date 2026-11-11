@@ -16,7 +16,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §47 Exercise 5 was located; the sets searched are listed in the
+    No complete published solution of Munkres §47 Exercise 5 (printed p. 293) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the definitions of
     pointwise convergence (§46, Theorem 46.1) and compact convergence (§46, Theorem 46.2). Continuity of the
     limit: at x, equicontinuity gives a neighbourhood U on which every f_n moves each point by less than

@@ -15,7 +15,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §48 Exercise 5 was located; the sets searched are listed in the
+    No complete published solution of Munkres §48 Exercise 5 (printed p. 299) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book, following the
     exercise's hint, and with Theorem 48.2 (compact Hausdorff and complete metric spaces are Baire), Theorem
     26.9 (finite intersection property) and Lemma 48.3 for the nested closed sets of the metric case. What was

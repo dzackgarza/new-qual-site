@@ -25,7 +25,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §44 Exercise 4 was located; the sets searched are listed in
+    No complete published solution of Munkres §44 Exercise 4 (printed p. 275) was located; the sets searched are listed in
     the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book, part
     (a) following the exercise's hint. Compactness and connectedness of X = f(I) are Theorem 26.5 and
     Theorem 23.5. The hint is discharged: a closed subset of the compact space I has compact image, closed

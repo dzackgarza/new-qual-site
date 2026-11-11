@@ -18,7 +18,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §48 Exercise 6 was located; the sets searched are listed in the
+    No complete published solution of Munkres §48 Exercise 6 (printed p. 299) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book: the irrationals
     are the intersection of the countably many open dense sets R - {q_n}, and the criterion of Lemma 48.1 is
     applied in R, which is a Baire space by Theorem 48.2, to the countable family consisting of the dense open

@@ -18,7 +18,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §46 Exercise 3 was located; the sets searched are listed in the
+    No complete published solution of Munkres §46 Exercise 3 (printed p. 288) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against the definitions of the uniform topology
     and the topology of compact convergence in §46 and Theorem 43.6. Closedness in the uniform topology is
     tested by sequences, legitimate because that topology is metrizable: a uniform limit of functions bounded

@@ -17,7 +17,7 @@ audit:
   note: >-
     Transcribed from the located published solution: "Solutions to exercises for Mathematics 205A" (University
     of California, Riverside, Fall 2014), Part 3, section "III.3: Implications of completeness", answer to
-    Munkres §48 Exercise 1 on the set's own printed p. 6 (in tmp/sources/munkres-solutions-ucr-math205-gentop.pdf,
+    Munkres §48 Exercise 1 (printed p. 298) on the set's own printed p. 6 (in tmp/sources/munkres-solutions-ucr-math205-gentop.pdf,
     PDF p. 47; the file names no author, so the course and the file are the attribution). Checked against
     Munkres, Topology (2000), §48 Exercise 1, printed p. 298, with the definition of a Baire space and of a
     nowhere dense set in §48: the answer is the set's one sentence, that if the interior of the closure of each

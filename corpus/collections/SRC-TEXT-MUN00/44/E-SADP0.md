@@ -24,7 +24,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §44 Exercise 1 was located; the sets searched are listed in
+    No complete published solution of Munkres §44 Exercise 1 (printed p. 274) was located; the sets searched are listed in
     the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00, and Robert Gardner's ETSU notes on §44
     (faculty.etsu.edu/gardnerr/5357/notes/Munkres-44.pdf) prove only Theorem 44.1, which is the input
     here. The card follows the exercise's own hint. Checked line by line against the book: Theorem 44.1

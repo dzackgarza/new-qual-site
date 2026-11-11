@@ -15,7 +15,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §47 Exercise 4 was located; the sets searched are listed in the
+    No complete published solution of Munkres §47 Exercise 4 (printed p. 293) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book, following the
     exercise's hint: the compact sets A_j with interiors covering X exist by the definition of sigma-compactness
     plus taking finite unions, the weighted sum of the bounded uniform metrics on the A_j gives a metric for

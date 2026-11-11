@@ -28,7 +28,7 @@ audit:
     (University of California, Riverside, Fall 2014), Part 3, the section "III.2: Complete metric
     spaces", answers to Munkres §43, on the set's own printed pp. 4-5 (in
     tmp/sources/munkres-solutions-ucr-math205-gentop.pdf, PDF pp. 45-46; the file names no author, so the
-    course and the file are the attribution). Checked against Munkres, Topology (2000), §43 Exercise 1,
+    course and the file are the attribution). Checked against Munkres, Topology (2000), §43 Exercise 1 (printed p. 270),
     printed p. 270, with the definition of completeness and Theorem 28.2 (a subspace of a metric space is
     compact iff it is sequentially compact). Part (a) is the set's argument: choose N so that the tail
     from x_N lies in the ball B(x_N, eps), whose closure is compact, take a convergent subsequence of the

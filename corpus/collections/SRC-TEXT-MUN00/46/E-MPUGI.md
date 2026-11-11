@@ -15,7 +15,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §46 Exercise 9 was located; the sets searched are listed in the
+    No complete published solution of Munkres §46 Exercise 9 (printed p. 289) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against Theorem 46.11 (the adjunction between
     maps X x Z -> Y and maps Z -> C(X,Y) for the compact-open topology), which the exercise says the proof
     uses, and against the defining property of a quotient map (§22: a map out of the quotient is continuous iff

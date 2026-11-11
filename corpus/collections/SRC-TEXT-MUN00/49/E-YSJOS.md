@@ -15,9 +15,9 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §49 Exercise 1 was located; the sets searched are listed in the
+    No complete published solution of Munkres §49 Exercise 1 (printed p. 304) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against Example 1 of §49, printed
-    p. 301, and the definition of Delta f(x,h) and of U_n on the preceding page. The three computations were
+    p. 301, and the definition of Delta f(x,h) and of U_n on the same page. The three computations were
     verified: for f(x) = 4 alpha x(1-x) with h = 1/4 the two one-sided quotients are alpha(3 - 8x) and
     alpha(5 - 8x), whose difference is 2 alpha, so the larger is at least alpha in absolute value, and at an
     endpoint the single defined quotient has absolute value at least alpha; for the tent g and for the two-tooth

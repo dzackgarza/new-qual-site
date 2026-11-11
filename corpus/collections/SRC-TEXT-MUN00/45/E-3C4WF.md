@@ -19,7 +19,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §45 Exercise 7 was located; the sets searched are listed in
+    No complete published solution of Munkres §45 Exercise 7 (printed pp. 280-281) was located; the sets searched are listed in
     the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book, which
     states the exercise with its own hints on printed pp. 280-281. Part (a): D is finite because A and B
     are bounded; D(A,B) = 0 iff A and B are contained in each other's eps-neighbourhoods for every eps,

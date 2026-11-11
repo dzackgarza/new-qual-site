@@ -19,7 +19,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §48 Exercise 9 was located; the sets searched are listed in the
+    No complete published solution of Munkres §48 Exercise 9 (printed p. 299) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book: continuity at an
     irrational x_0 takes the finitely many rationals x_1,...,x_N with 1/n >= eps and a radius avoiding them;
     discontinuity at the rational x_m = f^{-1}(1/m) uses the density of the irrationals, where f vanishes, at

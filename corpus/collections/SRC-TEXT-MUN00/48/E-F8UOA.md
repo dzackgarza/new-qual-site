@@ -18,7 +18,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §48 Exercise 7 was located; the sets searched are listed in the
+    No complete published solution of Munkres §48 Exercise 7 (printed p. 299) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book, following the
     exercise's two hints: the continuity set of an arbitrary f: R -> R is C = intersection of U_n, where U_n is
     the union of the open sets whose image has diameter less than 1/n, with both inclusions proved from the

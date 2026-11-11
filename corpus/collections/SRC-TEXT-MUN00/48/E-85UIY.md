@@ -19,7 +19,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §48 Exercise 13 was located; the sets searched are listed in the
+    No complete published solution of Munkres §48 Exercise 13 (printed p. 300) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. (A question on Mathematics StackExchange, 3919410,
     carries answers to this exercise, read 2026-11-11; a question-and-answer page is not a published solution
     and is not cited.) The card's proof is the book's hint carried out, checked against Lemma 48.1 and

@@ -15,7 +15,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §48 Exercise 12 was located; the sets searched are listed in the
+    No complete published solution of Munkres §48 Exercise 12 (printed p. 300) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book: in the product
     topology the standard nested-basic-open construction works because a basic open set restricts finitely many
     coordinates, each coordinate sequence of closed intervals is nested and eventually constant, and the point

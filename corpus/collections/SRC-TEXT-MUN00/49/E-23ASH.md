@@ -18,7 +18,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §49 Exercise 2 was located; the sets searched are listed in the
+    No complete published solution of Munkres §49 Exercise 2 (printed p. 304) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. The exercise has to be read with the book's own set U_n,
     defined on printed p. 301: for n >= 2, f lies in U_n iff for some h with 0 < h <= 1/n one has Delta_h f > n,
     where Delta_h f is the infimum over x of the larger of the two step-h difference quotients. What was

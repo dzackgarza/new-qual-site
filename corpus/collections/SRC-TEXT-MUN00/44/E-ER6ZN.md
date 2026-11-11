@@ -25,7 +25,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §44 Exercise 3 was located; the sets searched are listed in
+    No complete published solution of Munkres §44 Exercise 3 (printed p. 275) was located; the sets searched are listed in
     the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book, with
     Theorem 26.5 (the continuous image of a compact space is compact) and Theorem 21.3 / the definition of
     separability for the countability argument. Part (a) is the exercise's hint: R is sigma-compact as the

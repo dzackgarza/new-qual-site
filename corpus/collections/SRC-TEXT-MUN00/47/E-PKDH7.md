@@ -15,7 +15,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §47 Exercise 1 was located; the sets searched are listed in the
+    No complete published solution of Munkres §47 Exercise 1 (printed p. 292) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the definitions of
     pointwise boundedness and equicontinuity in §45 and §47. (a) is pointwise bounded by |x| + 1 and fails
     equicontinuity at 0, taking x = pi/(2n): then f_n(x) - f_n(0) = pi/(2n) + 1. (b) is nowhere pointwise

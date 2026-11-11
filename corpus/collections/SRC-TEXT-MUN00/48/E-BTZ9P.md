@@ -18,7 +18,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §48 Exercise 8 was located; the sets searched are listed in the
+    No complete published solution of Munkres §48 Exercise 8 (printed p. 299) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book: the sets
     A_N(eps) are closed and their union is R because a convergent sequence is Cauchy; U(eps) is dense because in
     the complete space closure of an interval the closed sets A_N cap closure V cover, so one has interior in

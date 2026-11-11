@@ -16,7 +16,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §45 Exercise 1 was located; the sets searched are listed in
+    No complete published solution of Munkres §45 Exercise 1 (printed p. 280) was located; the sets searched are listed in
     the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book, with
     Exercise 20.3(b) for the metric D on the product, Theorem 45.1 (compact iff complete and totally
     bounded), Theorem 28.2 for sequential compactness and the definition of total boundedness in §45. The

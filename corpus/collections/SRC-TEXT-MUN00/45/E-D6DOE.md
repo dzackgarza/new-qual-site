@@ -15,7 +15,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §45 Exercise 6 was located; the sets searched are listed in
+    No complete published solution of Munkres §45 Exercise 6 (printed p. 280) was located; the sets searched are listed in
     the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book's proof
     of Theorem 45.4 (printed pp. 277-279) and of Lemma 45.3, whose steps the card now follows one by one,
     with Theorem 45.1, Lemma 45.2, Theorem 43.6 (completeness of C(X,Y) for complete Y) and Theorem 27.3.

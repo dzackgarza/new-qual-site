@@ -18,7 +18,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §43 Exercise 9 was located in any set searched; the search
+    No complete published solution of Munkres §43 Exercise 9 (printed p. 271) was located in any set searched; the search
     is recorded in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00, and the proof on the card is
     checked line by line against the book. Checked against Munkres, Topology (2000), §43 Exercise 9,
     printed p. 271, with the definition of Cauchy sequence and the triangle inequality: part (a) the

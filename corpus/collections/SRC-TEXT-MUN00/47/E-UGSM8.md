@@ -18,7 +18,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §47 Exercise 3 was located; the sets searched are listed in the
+    No complete published solution of Munkres §47 Exercise 3 (printed p. 293) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against Theorem 47.1 (the general Ascoli
     theorem as the book states it, printed p. 290), Theorem 45.4 (the classical version), Theorem 46.7 (compact
     convergence equals uniform convergence on a compact space) and Theorem 27.3 plus Theorem 26.3. The argument

@@ -16,7 +16,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §46 Exercise 10 was located; the sets searched are listed in the
+    No complete published solution of Munkres §46 Exercise 10 (printed p. 289) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against the definition of sigma-compactness
     given in the exercise, Theorem 43.5 and Theorem 43.6 (completeness of the uniform function space over a
     complete target), the metric for a countable product of metric spaces (§20, Exercise 20.3) and the

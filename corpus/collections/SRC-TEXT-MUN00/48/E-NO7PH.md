@@ -18,7 +18,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §48 Exercise 11 was located; the sets searched are listed in the
+    No complete published solution of Munkres §48 Exercise 11 (printed p. 300) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book: the half-open
     intervals [a,b) form a basis of the lower limit topology (Lemma 13.4 and the definition of R_l in §13); the
     dense open sets G_{n+1} meet each nonempty basic open set [a_n, b_n), so a basis element [a_{n+1}, b') lies

@@ -19,7 +19,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §45 Exercise 8 was located; the sets searched are listed in
+    No complete published solution of Munkres §45 Exercise 8 (printed p. 281) was located; the sets searched are listed in
     the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. The defect recorded in the source-corrected
     event above is real, and the printed statement is now restored on the card (the earlier repair had
     replaced the exercise by a restatement for bounded functions on a bounded domain, which is not the

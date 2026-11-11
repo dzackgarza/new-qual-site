@@ -18,7 +18,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §46 Exercise 11 was located; the sets searched are listed in the
+    No complete published solution of Munkres §46 Exercise 11 (printed p. 289) was located; the sets searched are listed in the
     COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked against the definition of the fine topology in
     the exercise and the uniform metric of §20 and §43. Part (a): the sets B(f, delta) cover, since delta = 1
     works, and at each point of an intersection the function delta_3 = min{delta_1 - d(f_1,g), delta_2 -

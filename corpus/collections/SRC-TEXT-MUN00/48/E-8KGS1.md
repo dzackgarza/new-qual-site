@@ -20,7 +20,7 @@ audit:
   note: >-
     Transcribed from the located published solution: "Solutions to exercises for Mathematics 205A" (University
     of California, Riverside, Fall 2014), Part 3, section "III.3: Implications of completeness", answer to
-    Munkres §48 Exercise 4 on the set's own printed p. 6 (in tmp/sources/munkres-solutions-ucr-math205-gentop.pdf,
+    Munkres §48 Exercise 4 (printed p. 299) on the set's own printed p. 6 (in tmp/sources/munkres-solutions-ucr-math205-gentop.pdf,
     PDF p. 47). Checked against Munkres, Topology (2000), §48 Exercise 4, printed p. 299, with Lemma 48.1 (the
     open-set formulation) and Lemma 48.4 (an open subspace of a Baire space is a Baire space). What was
     corrected: the card's first step had said that a point with a Baire neighbourhood N has "an open
