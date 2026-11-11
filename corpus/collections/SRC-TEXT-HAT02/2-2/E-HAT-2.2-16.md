@@ -64,6 +64,25 @@ audit:
     degree k there are no (k+1)-chains so B_k = 0 while Z_k = Z_k(Delta^n).
     What is not covered: no certificate for this card; the rank identities are verified by
     hand only.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Certificate for the card's own model. `proofs/cards/DeltaSimplexChains.lean` builds the
+    Δ-complex chain complex of Δ^n on the (i+1)-element vertex subsets and proves the boxed
+    claim in it: `finrank_chains` (rank C_i = C(n+1,i+1)), `aug_comp_boundary` and
+    `boundary_comp_boundary` (the augmented complex is a complex), `homotopy_succ`,
+    `homotopy_zero`, `aug_h_minus` (the cone contraction) with `exact_zero`, `exact_succ`,
+    `cycles_aug_eq_boundaries` (exactness), `finrank_boundaries`, `finrank_cycles_aug` (the
+    rank induction rank Z_i = rank B_i = C(n,i+1)), and the skeleton section:
+    `sk_cycles_aug_eq_sk_boundaries` and `subsingleton_sk_homology` give
+    H̃_i((Δ^n)^k) = 0 for i < k (below degree k the skeleton's cycles and boundaries are
+    the simplex's and the simplex's augmented complex is exact), and
+    `sk_homology_top_basis` gives H̃_k((Δ^n)^k) free of rank C(n,k+1) (the top homology is
+    the simplex's k-cycles). Axioms propext, Classical.choice, Quot.sound, no sorryAx.
+    What the certificate does not cover: the passage from the chain model to the homology
+    of the space (Δ^n)^k, which is the card's citation of Theorem 2.27 p. 128 and stays a
+    citation.
 ---
 
 ::: {.problem}

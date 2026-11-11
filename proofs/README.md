@@ -68,6 +68,8 @@ state, after `cards/BarySubdiv.lean`, is the following.
 | `cards/ColimitTensor.lean` | `E-HAT-3.A-6`, `E-HAT-3.A-2` | Exercise 4 of §3.A, the `⊗` half, completely: `tensorLeft_preserves_colimits` (for `B : ModuleCat ℤ`, `tensorLeft B` preserves colimits, Mathlib's instance `instPreservesColimitsTensorLeft`) and `tensorLeft_colim_iso`, the comparison `B ⊗ colim F ≅ colim (B ⊗ F ·)` for any `F : J ⥤ ModuleCat ℤ` with `HasColimitsOfShape J (ModuleCat ℤ)`, built from `PreservesColimit.preserves` (which yields `Nonempty (IsColimit _)`, extracted with `Classical.choice`) and `IsColimit.coconePointUniqueUpToIso`. Axioms: propext, Classical.choice, Quot.sound. **Not** certified: the `Tor` half. |
 | `cards/TorTorsionClass.lean` | `E-HAT-3.A-6` | **`Tor` of a torsion module is torsion, by the torsion-class route instead of a free resolution.** `prop_homology` (a property closed under subobjects and quotients passes from a complex term to its homology in the same degree) and `prop_leftDerived_obj` (if an additive functor sends projectives into such a class, every left derived functor does) are proved for a general abelian setting; `AddCommGrpCat.isTorsion` is the class of torsion abelian groups with its `IsClosedUnderSubobjects` and `IsClosedUnderQuotients` instances; `isAddTorsion_tensorProduct_left` (tensoring a torsion monoid is torsion, no flatness, no finite generation); and `isAddTorsion_Tor_left`: for `M`, `N` in `ModuleCat R` over **any** commutative ring, `IsAddTorsion M → IsAddTorsion (((Tor (ModuleCat R) n).obj M).obj N)`, with the `ℤ` form `isAddTorsion_tor_int`. Axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`; `exit 0`. **Provenance:** this is a **port**, not new mathematics — the four lemmas are copied from the Tau Ceti project at commit `67e852853c5192ec69775bb7ef417fc199e4190e` (Apache-2.0), see section 7. **No node obligation attaches to this file**: `Tor(A,B)` is torsion is not a corrected claim, so `certify-card-corrections` does not reach it, and the card is discharged by citing the upstream theorem with its hypotheses (§7c). It is kept as a supplement, not as a card requirement. **What it does not cover:** the card's statement is about **all** `A`, and this file proves the case where `A` is torsion — the reduction `Tor(A,B) ≅ Tor(T(A),B)` is §7b's named residual; the second half of the card (an element of order `n` in `Tor(A,B)` iff in both `A` and `B`), which no located formalization proves; and it says nothing about `Tor'`, the other orientation. It does not need — and does not supply — Hatcher's Lemma 3A.2 or a finite-stage witness, because the left-derived-functor definition of `Tor` is already resolution-independent. |
 
+| `cards/DeltaSimplexChains.lean` | `E-HAT-2.2-16` | **The card's own Δ-complex chain model of `Δ^n`, certified end to end, including the boxed skeleton claim.** The `i`-chains are the free abelian group on the `(i+1)`-element vertex subsets (`Simplices`, `chains`, `gen_c`), the boundary is the alternating sum over ordered deletions (`boundary`, with `pos_of` the deletion position), the augmentation reads off the coefficient sum (`aug`), and the file proves: `finrank_chains` ($\operatorname{rank} C_i = \binom{n+1}{i+1}$, the count of $(i+1)$-element subsets); `aug_comp_boundary` and `boundary_comp_boundary` ($\varepsilon\partial_1 = 0$, $\partial_i\partial_{i+1} = 0$, so the augmented complex is a complex); the cone contraction $h_i(s) = (-1)^i \cdot (0$ if $n \in s$, else $s \cup \{n\})$ — `homotopy_succ`, `homotopy_zero`, `aug_h_minus` give $(\partial h + h\partial)(x) = -x$ degree by degree — and hence the exactness of the augmented complex `exact_zero`, `exact_succ`, `cycles_aug_eq_boundaries`; and the rank induction $\operatorname{rank} B_i = \operatorname{rank} Z_i = \binom{n}{i+1}$ by rank-nullity over $\ZZ$ with Pascal's identity `finrank_boundaries`, `finrank_cycles_aug` (the base case is the augmentation's range $\ZZ$, `aug_surjective` and `finrank_range_add_finrank_ker`; the step is the kernel of `boundary` read through `exact_succ`). **The skeleton section is the card's boxed claim, and it uses the agreement, not a second complex:** the skeleton is the truncation of the model — its chain groups are the simplex's in degrees `i ≤ k` and trivial above (`skCycles`, `skBoundaries`) — so `skCycles_eq` and `skBoundaries_eq` record the agreement with the simplex's groups, `sk_cycles_aug_eq_sk_boundaries` and `subsingleton_sk_homology` give $\widetilde H_i((\Delta^n)^k) = 0$ for `i < k` (below degree `k` the skeleton's cycles and boundaries are the simplex's, and the simplex's augmented complex is exact), and `skBoundaries_top`, `skCycles_top`, `skHomologyTopIso` and `sk_homology_top_basis` give $\widetilde H_k((\Delta^n)^k)$ free of rank $\binom{n}{k+1}$: there are no `(k+1)`-chains in the skeleton, so the top homology *is* the simplex's `k`-cycles, a subgroup of the free abelian group on the `k`-simplices, free over $\ZZ$ by `Submodule.basisOfPid` (the structure theorem for submodules of a finite free module over a PID) with rank `finrank_cycles_aug`. Axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`. **What it does not cover:** the passage from the chain model to the homology of the *space* $(\Delta^n)^k$ — that is the card's citation of Hatcher's Theorem 2.27 (p. 128), a category-3 identification, and stays a citation. The three files `cards/SimplexChains.lean`, `cards/ChainLevelSteps.lean` and `cards/SkeletonHomology.lean` certify the same homological statements in Mathlib's alternating-face-map model; this file is the certificate of the model the card itself writes down. |
+
 ## 2. Exact finite computations: Sage chain complexes, GAP groups
 
 `cards/CH8DirectProduct.g`, run with GAP 4.14.0 (`gap -q proofs/cards/CH8DirectProduct.g`,
@@ -208,79 +210,6 @@ Repairs made to a stored proof whose mathematical content no file here certifies
 claim of the form "this argument proves the stored statement", and none may be reported as
 settled until a file here covers it:
 
-- `E-HAT-2.2-16`, third step: the repaired argument needs three things, and **all three are now
-  certified**. `cards/SimplexChains.lean` proves the augmented exactness for the standard simplex:
-  `H̃_i(Δ^m) = 0` for `i ≠ 0` (`isZero_homology`) and `H_0` equal to the augmentation's target
-  (`homologyZeroIso`, the form `ker ε = im ∂_1` takes), by transporting the standard simplex's
-  extra degeneracy along the free `ℤ`-module functor and applying
-  `ExtraDegeneracy.homotopyEquiv` — axioms `propext, Classical.choice, Quot.sound`, no `sorryAx`.
-  The same file also settles the **normalized versus unnormalized** point: Mathlib carries the
-  Dold--Kan comparison `DoldKan.homotopyEquivNormalizedMooreComplexAlternatingFaceMapComplex` for
-  *any* simplicial object in an abelian category, and `normalizedChainsHomotopyEquiv` uses it, so
-  the normalized Moore complex of the simplex's chains is homotopy equivalent to the same
-  degree-zero complex and `isZero_normalizedHomology` gives `H̃_i(Δ^m) = 0` for `i ≠ 0` in that model
-  too. The choice of model therefore does not affect this step.
-  The remaining two pieces, with the source checked at the pin rather than assumed absent, since both
-  are **in-repo work** rather than upstream gaps. (a) *Barycentric chains.* `SSet.sd`, `SSet.ex` and
-  `sdExAdjunction` do exist (`AlgebraicTopology/SimplicialSet/Subdivision.lean:33-56`), so the
-  subdivision functor is available; what is missing is stated by that file's own TODO (lines 19-23):
-  `SSet.B`, the nerve of the partially ordered type of nondegenerate simplices, and the natural
-  transformation `sd ⟶ B`. No barycentric chain map exists under any name searched — the string
-  "barycentric" over the whole tree reaches only affine-geometry and Lagrange-interpolation files,
-  never a simplicial-set subdivision. (b) *The $k$-skeleton.* `SSet.sk n` exists
-  (`AlgebraicTopology/SimplicialSet/Basic.lean:135`) with `skAdj : Truncated.sk n ⊣ truncation n`, and
-  `IsIso ((skAdj n).unit)` (`Basic.lean:157`) is the statement that truncating the skeleton returns
-  the truncation, i.e. the low-degree simplices *are* those of `X`. **The simplex-level half and its
-  face-map naturality are now proved**: `cards/ChainLevelSteps.lean`'s `skSimplexEquiv` gives
-  `X _⦋i⦌ ≃ (SSet.sk k X) _⦋i⦌` for every `i ≤ k`, from that unit at the truncated object `⟨⦋i⦌, ·⟩`,
-  and `skSimplexEquiv_δ` shows it intertwines `δ_i` on `X` with `δ_i` on the skeleton whenever
-  `j + 1 ≤ k` — `NatTrans.naturality_apply` at the truncated face map. Axioms
-  `propext, Classical.choice, Quot.sound`, no `sorryAx`. **The chain groups are now compared too**:
-  `skChainsIso` gives an isomorphism of the alternating face map complexes' degree-`i` objects for
-  `i ≤ k` — that complex has the free abelian group on the `i`-simplices in degree `i`, so it is
-  `(ModuleCat.free ℤ).mapIso` of the equivalence (`rfl`-checked shape). **The differentials are now
-  compared too, and the comparison is the square, not a transport.** `skChainsIso_δ` shows the
-  degree-wise isomorphism commutes with each face map: on the generators `freeMk x` of the free
-  abelian group the statement is exactly `skSimplexEquiv_δ`, which is why no element of
-  `X _⦋i⦌` has to be coerced across the tensor-style wrappers that stop `↥((…) .X i)` from being
-  the tensor. `skChainsIso_d` sums that over `Fin (i + 2)` with
-  `AlternatingFaceMapComplex.obj_d_eq` (`(obj X).d (n+1) n = ∑ i, (-1)^i • X.δ i`) and
-  `Preadditive.comp_sum`/`sum_comp`/`comp_zsmul`/`zsmul_comp`, giving
-  `skChainsIso (i+1) ≫ d_sk = d_X ≫ skChainsIso i` for `i + 1 ≤ k` — the low-degree part of a chain
-  map, i.e. the `k`-skeleton's differentials agree with the simplex's in degrees at most `k`, which
-  is the second of §5's three named pieces. Axioms `propext, Classical.choice, Quot.sound`, no
-  `sorryAx`. For the record, the reason this is a direct proof and not a `skAdj` map: no truncation
-  of a chain complex at this pin kills degrees above `k` (`ChainComplex.truncate`,
-  `Algebra/Homology/Augment.lean:31`, deletes degree `0` and shifts down; `natTrunc`/`truncLE` occur
-  only in the triangulated `TStructure` files), and `sk_k X ⟶ X` is not a simplicial map in general —
-  the unit of `skAdj` lives in the truncated category, so it exists only degree by degree.
-  **The transport itself is now proved: `skChains_exact`.** Exactness at a degree,
-  `ker ∂_{j+1} = im ∂_{j+2}`, passes to the `k`-skeleton whenever `j + 2 ≤ k`, by
-  `ker_eq_range_of_comm_iso` fed the degree-wise `ModuleCat` isomorphisms as `LinearEquiv`s
-  (`CategoryTheory.Iso.toLinearEquiv`), the two squares of `skChainsIso_d`, and
-  `comp_inv_of_inv_comp`, which turns the square `d' ∘ e₁ = e₀ ∘ d` into the orientation that lemma
-  asks for. Axioms `propext, Classical.choice, Quot.sound`, no `sorryAx`. One change was needed in
-  the transport lemma this file already carried: `ker_eq_range_of_comm_iso` was stated over
-  `[AddCommGroup _]` alone, so its bundled maps carried `AddCommGroup.toIntModule` while the
-  `ModuleCat` differentials carry `ModuleCat.isModule` — the same structure on paper, not
-  definitionally, which is the diamond §5b records elsewhere. The binders are now explicit
-  `[Module ℤ _]`: a sharper statement of the same transport, and every existing use is intact.
-  **The card's sentence is now discharged: `cards/SkeletonHomology.lean`'s `isZero_skHomology`.** It
-  gives $\widetilde H_i((\Delta^m)^k)=0$ for `i < k` — `j + 2 ≤ k` with `i = j + 1` — by composing the
-  two halves, and it does so without the `ker = range` transport: `ExactAt` is already exactness of
-  the three-term complex, `exactAt_iff'` identifies `K.ExactAt (j+1)` with `(K.sc' (j+2) (j+1) j).Exact`,
-  and `scIso` (three chain-group isomorphisms plus the two squares) carries `Exact` across by
-  `ShortComplex.exact_of_iso`. The simplex's side is `isZero_homology` read through
-  `exactAt_iff_isZero_homology` (`exactAt_simplex`). **What is still open is the barycentric chain
-  model**, and it is upstream: the pin has no `SSet.B` and no `sd ⟶ B`
-  (`AlgebraicTopology/SimplicialSet/Subdivision.lean:19-23`). The three-things sentence below is the original statement of the obligation, kept for its
-  wording: the augmented exactness $\ker\varepsilon=\operatorname{im}\partial_1$, the
-  agreement of the $k$-skeleton's differentials with the simplex's in degrees at most $k$,
-  and hence $\widetilde H_i=0$ for $i<k$. Of the three, the first is certified in
-  `cards/SimplexChains.lean` and the second in `cards/ChainLevelSteps.lean` (`skChainsIso_δ`,
-  `skChainsIso_d`); the third, the homology statement, is `cards/SkeletonHomology.lean`'s
-  `isZero_skHomology`. All three of the things this bullet names are therefore certified; what keeps
-  `E-HAT-2.2-16` open is the barycentric chain model alone (§5b).
 - `E-HAT-3.A-6` and `E-HAT-3.A-2`, the filtered-colimit passage (Exercise 4 of §3.A). The
   `⊗` half is closed: `ColimitTensor.tensorLeft_colim_iso` gives `B ⊗ colim F ≅ colim (B ⊗ F ·)`,
   built from `PreservesColimit.preserves` with `PreservesColimits (tensorLeft B)` obtained
@@ -511,26 +440,27 @@ requires a construction, not a citation.
   owner, not something this file decides. The obligation below is restated in those terms rather
   than deleted.
 
-- the simplex chain-model comparison for `E-HAT-2.2-16`: identifying the chains the card writes down
-  with the barycentric ones. Both halves it was waiting on are now in place — the acyclicity in both
-  models (`cards/SimplexChains.lean`, the normalized one via the Dold--Kan comparison) and the
-  skeleton maps with the composition that discharges $\widetilde H_i((\Delta^m)^k)=0$ for `i < k`
-  (`cards/SkeletonHomology.lean`, which no longer goes through `ker_eq_range_of_comm_iso` at all).
-  What remains is the barycentric chain model itself, and it is upstream work, not in-repo: the pin
-  has no `SSet.B` (the nerve of the poset of nondegenerate simplices) and no natural transformation
-  `SSet.sd ⟶ SSet.B`. The place they would live is
+- ~~the simplex chain-model comparison for `E-HAT-2.2-16`: identifying the chains the card writes down
+  with the barycentric ones~~ — **withdrawn: the obligation it named is discharged.**
+  `cards/DeltaSimplexChains.lean` certifies the chains the card writes down — free abelian groups on
+  the `(i+1)`-element vertex subsets — in their own model, end to end: acyclicity, the ranks, the
+  vanishing below `k` and the top homology's rank (§1's row). No identification with the barycentric
+  ones is needed for that card. The upstream facts recorded here remain true, and remain Mathlib's
+  own TODO: the pin has no `SSet.B` (the nerve of the poset of nondegenerate simplices) and no
+  natural transformation `SSet.sd ⟶ SSet.B`; the place they would live is
   `Mathlib/AlgebraicTopology/SimplicialSet/Subdivision.lean`, whose own TODO at lines 19--23 names
   exactly these two declarations.
 
 ### Provider requests, stated so that they can be accepted or refused
 
 *(Re-verified against the master head `c9f80237` on 2026-11-11, by reading the named files:
-all three still-wanted items below are still absent there. Item 1 is no longer needed by the
+both still-wanted items below are still absent there. Item 1 is no longer needed by the
 dimension-shift route of `cards/TorArbitrary.lean`, which prescribes the first presentation
-of the resolution and therefore never asks for a projective kernel.)*
+of the resolution and therefore never asks for a projective kernel; items 3 and 4 are
+withdrawn because the work was done without them.)*
 
-Four statements were wanted from the pinned library rather than from this directory; three are still
-wanted, and the fourth is withdrawn below because the work was done without it. None is a request to
+Four statements were wanted from the pinned library rather than from this directory; two are still
+wanted, and the third and fourth are withdrawn below because the work was done without them. None is a request to
 relax anything above: where a proof needed one of them, the claim was restricted to the case that
 could be certified, and the restricted case is what is proved. Each absence was re-checked against
 `db584cd6` in the pass that wrote this paragraph, by reading the named file rather than by searching
@@ -551,12 +481,13 @@ for a name.
    `CategoryTheory/Monoidal/Tor.lean` supplies no comparison. *Needed by:* `E-HAT-3.A-6` and
    `E-HAT-3.A-2` for arbitrary `A` — the only step of either that `isZero_torOne_of_finite_torsionFree`
    and the stage lemmas do not reach.
-3. **`SSet.B`**, the functor sending `X` to the nerve of its partially ordered type of nondegenerate
-   simplices, **together with a natural transformation `sd ⟶ B`**. This is Mathlib's own TODO at
-   `AlgebraicTopology/SimplicialSet/Subdivision.lean:19-21`, in exactly those words. *Needed by:* the
-   barycentric chain model of `E-HAT-2.2-16` — not its third step, which is now fully certified
-   (`cards/SkeletonHomology.lean`), but the identification of the chains the card writes down with
-   the barycentric ones.
+3. ~~**`SSet.B`**, the functor sending `X` to the nerve of its partially ordered type of nondegenerate
+   simplices, **together with a natural transformation `sd ⟶ B`**~~ — **withdrawn.** The
+   `E-HAT-2.2-16` identification it was wanted for is no longer an obligation:
+   `cards/DeltaSimplexChains.lean` certifies the card's own chain model directly, so no barycentric
+   chain model is needed for that card. The absence is still true and still Mathlib's own TODO at
+   `AlgebraicTopology/SimplicialSet/Subdivision.lean:19-21`, in exactly those words; it is simply no
+   longer in the way.
 4. ~~**Truncation of a chain complex above a degree**, `truncLE k`~~ — **withdrawn.** The skeleton
    comparison of `E-HAT-2.2-16` needed no truncation functor: `K.exactAt_iff'` already states
    exactness at a degree as exactness of the three-term complex `K.sc' (j+2) (j+1) j`, so comparing
@@ -838,8 +769,9 @@ carry over without a check on the target baseline.
 These give the contraction of the *alternating face map* complex of the standard simplex,
 which is not yet the card's chain model: `E-HAT-2.2-16` needs the barycentric/simplicial
 chain complex of $\Delta^n$ and the skeleton maps that commute with the differentials, so
-`ker_eq_range_of_comm_iso` still has no instantiation. That identification is the open part
-of the $2.2$-$16$ obligation recorded above.
+`ker_eq_range_of_comm_iso` still has no instantiation. *(That gap is historical: the
+card's own model is now certified directly by `cards/DeltaSimplexChains.lean`, which does
+not go through the alternating face map complex at all.)*
 
 ### Simplex chain model (for `E-HAT-2.2-16`): route fixed against the pinned API
 
@@ -864,4 +796,7 @@ neither is a formality:
    degrees at most `k`, which is the hypothesis of `ker_eq_range_of_comm_iso`.
 
 Until both exist, `ker_eq_range_of_comm_iso` still has no instantiation and the card's
-vanishing statement stays uncertified.
+vanishing statement stays uncertified. *(Historical note, superseded: the normalisation
+comparison and the skeleton transport are both proved in `cards/SimplexChains.lean`,
+`cards/ChainLevelSteps.lean` and `cards/SkeletonHomology.lean` in the alternating-face-map
+model, and the card's own model is certified outright by `cards/DeltaSimplexChains.lean`.)
