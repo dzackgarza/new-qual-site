@@ -35,6 +35,32 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-11
+  note: >-
+    Read the printed exercise at Hartshorne, Algebraic Geometry (1977), V.2,
+    exercise 2.8, printed page 384. Checked every step: the slope
+    rearrangement of s1, with the saturation case added because a line
+    subbundle whose quotient has torsion is not one of the quotients the
+    printed definition tests; the boundedness of degrees of line subbundles in
+    s7 via E-dual(n) globally generated; the uniqueness of the maximal-degree
+    subbundle in s8 from the nonzero map A tensor B -> det E; the Ext
+    identification of s10; and the Serre-duality bound e <= 2g-2 of s11.
+    Confirmed the printed defect independently: tensoring by a line bundle of
+    degree m preserves indecomposability, non-semistability and the normalized
+    data (e, L, xi) while changing the degree from -e to 2m-e, so the printed
+    "up to isomorphism" cannot hold and the classification is up to tensor
+    equivalence. Searched outside the twelve retained sets: Algebraic Geometry
+    II, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 8
+    of section 2, PDF p. 8 (tmp/sources/ntu-ag2-chapter5.pdf), whose (c) is the
+    sentence "This is just the proof of Theorem 2.12, combined with (b)"; Yang
+    Pi-Yeh, Hartshorne Solutions, exercise 5.2.8, printed pp. 103-104
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), which repeats "up to
+    isomorphism"; and Egbert, PDF pp. 265-266. None repairs the printed clause.
+    Not checked: whether Hartshorne intended the clause to classify the
+    normalized models only; the card states the printed wording and proves the
+    tensor-equivalence reading.
 ---
 
 ::: {.problem}
@@ -106,7 +132,7 @@ is equivalent to
 $$
 \deg\mathcal A<\frac12\deg\mathcal E.
 $$
-The same rearrangement with weak inequalities proves the semistable statement.
+A line subbundle that is not saturated is contained in its saturation, whose quotient is torsion-free and hence locally free on a curve and whose degree is at least as large; the inequalities for locally free quotients therefore imply them for every line subbundle. The same rearrangement with weak inequalities proves the semistable statement.
 
 :::
 
@@ -572,5 +598,9 @@ Step [](#s2){.pf-ref} proves part (a), steps [](#s3){.pf-ref}, [](#s4){.pf-ref},
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.8, PDF pp. 265--266. Part (a) he proves through "$\mathcal E$ stable $\Rightarrow$ every nonzero morphism $\mathcal E\to\mathcal E$ is an isomorphism", which fails for the endomorphism $\id\oplus0$ of a decomposable bundle. Part (b) he proves in both directions: a (semi)stable bundle of (negative) non-positive degree has no sections, so normalized forces degree $\ge0$, and conversely a line subbundle of degree $>\frac12\deg\mathcal E$ would give a section of $\mathcal E\tensor\mathcal F^\vee$ of negative degree. Part (c) he derives from a Harder--Narasimhan filtration, citing Potier for its uniqueness, concludes "Since the filtration was unique we have this up to isomorphism", and does not address the tensor twist: his $\mathcal L$ is the quotient $\mathcal E/F_1$ rather than the normalized determinant, and the subbundle $F_1$ is not among the data, so his last inference does not follow. The defect in the printed statement is worked out at the head of the solution above.
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.8, printed pp. 103--104, proves (a) and (b) by the slope inequalities, the same route as steps [](#s1){.pf-ref} to [](#s6){.pf-ref}, and concludes (c) with "all indecomposable locally free sheaves $\mathcal E$ of rank 2 that are not semistable are classified, up to isomorphism, by these three conditions" — the printed clause, with no tensor twist considered, so it carries the defect recorded at the head of this solution rather than repairing it.
+
+Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, Exercise 8 of §2 (solution by Tzu-Yang Chou), PDF p. 8, proves (a) by exhibiting both summand quotients and (b) in both directions, "if $\mathcal E$ is unstable, say $\exists F\subseteq\mathcal E$ invertible with $\deg F\ge\frac12\deg\mathcal E>0$, then $0\to\OO\to\mathcal E\tensor F^{-1}$ but $H^0(\mathcal E\tensor F^{-1})=0$ by the normalized assumption". Its (c) is the single sentence "This is just the proof of Theorem 2.12, combined with (b)", so it gives no argument for (c) and does not treat the twist either.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.8, PDF pp. 265--266. Part (a) he proves through "$\mathcal E$ stable $\Rightarrow$ every nonzero morphism $\mathcal E\to\mathcal E$ is an isomorphism", which fails for the endomorphism $\id\oplus0$ of a decomposable bundle. Part (b) he proves in both directions: a (semi)stable bundle of (negative) non-positive degree has no sections, so normalized forces degree $\ge0$, and conversely a line subbundle of degree $>\frac12\deg\mathcal E$ would give a section of $\mathcal E\tensor\mathcal F^\vee$ of negative degree. Part (c) he derives from a Harder--Narasimhan filtration, citing Potier for its uniqueness, concludes "Since the filtration was unique we have this up to isomorphism", and does not address the tensor twist: his $\mathcal L$ is the quotient $\mathcal E/F_1$ rather than the normalized determinant, and the subbundle $F_1$ is not among the data, so his last inference does not follow.
 :::
