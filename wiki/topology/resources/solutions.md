@@ -337,3 +337,57 @@ so nothing is cited from it.
 
 No set was found for Munkres §12, §14, §15 or §65.
 
+
+## Solutions to Chapters 10 and 11 of Munkres (§61--§73)
+
+Three further sets reach these sections; the cards of `SRC-TEXT-MUN00` for §61--§73 cite them where they apply,
+and the rest are listed in `COMPLAINTS.md`.
+
+**dbFin, *Munkres (2000) Topology with Solutions*, Chapter 11**,
+`https://dbfin.com/topology/munkres/chapter-11/section-67-direct-sums-of-abelian-groups/` (read 2026-11-11; copies
+under `tmp/sources/dbfin/section-67-direct-sums-of-abelian-groups/`). Its index lists Chapters 1--4, 9 and 11, and
+Chapter 11 only as §67 — there is no `chapter-10/`, no §68--§73 page. Six pages, one per exercise of §67, each
+a short argument; cite the URL and the date read, as for the Chapter 4 pages above. Its §67 Problem 3 is the one
+place where it states that the printed exercise is a misprint: Munkres prints $\{2x+3y, x-y\}$, whose coordinate
+matrix has determinant $-5$, and the page proves that the pair generates a proper subgroup and offers $x+y$ as
+the repair. The card of §67.3 states the exercise as printed and proves both the failure and the repairs.
+
+**"Solutions to exercises for Mathematics 205A", University of California, Riverside, Part 9 (Fall 2014)**,
+`tmp/sources/munkres-ucr-math205Asolutions09.pdf` (11 pages, from
+https://math.ucr.edu/~res/math205A-2014/, where each set keeps its own printed page numbers; the file names no
+author, so the course and the file are the attribution). Unit IX, "Computing fundamental groups": its section IX.1
+answers additional exercises on free groups, and then comes
+
+| section | printed pages | exercises |
+| --- | --- | --- |
+| §68 Free Products of Groups | 2–3 | 2 and 3 |
+| §69 Free Groups | 4 | 1, 3 and 4 |
+| §70 The Seifert–van Kampen Theorem | 6–7 | 1 and 3 |
+
+Its §68 Exercise 2 explicitly records that the printed odd-length clause is indispensable at length one, which is
+the defect the card of §68.2 states; its §70 Exercise 3 handles the finite-presentation claim through the
+pushout form. Nothing in the set reaches §61--§67 or §71--§73.
+
+**Takumi Murayama, *Selected Solutions to Munkres's Topology, 2nd Ed.*** (MAT365, Princeton, Fall 2012),
+`tmp/sources/munkres-solutions-murayama-mat365.tex` (TeX source,
+https://github.com/awasthi/math-solutions/blob/master/Munkres/Munkres%20Solutions.tex; the repository compiles it
+with `solutions.tex`). It is a selection, not a manual: there is **no Chapter 10 at all**, and of Chapter 11 it
+treats §67 Exercises 2 and 4, §68 Exercise 2, §71 Exercises 2, 4 and 5, and §73 Exercise 1. Its exercise numbers
+are the book's. Two of its arguments are defective and are corrected on the cards: §71 Exercise 4 replaces a
+countable base at the wedge point by one it assumes strictly nested, which a countable base need not admit, and
+its closing comparison produces no point outside the diagonal neighbourhood; §71 Exercise 5 concludes from the
+boundedness of the image of a loop that it meets only finitely many circles, which is false because every circle
+of the family passes through the base point. Its §71 Exercise 2 leaves the openness of $X_1\cup W_2$ unchecked,
+and its §68 Exercise 2 amends the printed statement to odd length at least three without saying so.
+
+**Checked and not used.** Harvard Math 131 (2000--01) posts solution sets beside its reading schedule
+(`https://people.math.harvard.edu/~ctm/home/text/class/harvard/131/01/html/home/solns/soln<n>.pdf`): the sets held
+are `soln9`--`soln11`, covering the Chapter 7 and Chapter 9 homework, and the Chapter 11 set was never posted
+(`soln12.pdf` answers 404). They are typeset in a Type 3 font whose text does not extract, so they were read as
+page images. Robert Gardner's ETSU MATH 4357/5357 notes prove the **theorems** of §61--§73 and give no solutions
+of their exercises. solverer advertises §67.4, §68.2 and §71.5 but keeps them behind a subscription, so nothing is
+cited from it: a paywalled page has no printed page.
+
+**Coverage.** Of the 43 cards of §61--§73, 17 cite a located published solution and 26 keep a proof checked
+against the book, each with the searches named in `COMPLAINTS.md`. Chapter 10 (§61--§66) has no located solution
+set at all.
