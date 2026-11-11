@@ -341,8 +341,7 @@ noncomputable def torOneIsoKernel {A B : ModuleCat ℤ} (P : ProjectiveResolutio
     homologyOneIsoKernelOfD (K := resolutionTensor B P) (by
       have hd : (P.complex).d 2 1 = 0 := IsZero.eq_of_src h2 _ _
       rw [show (resolutionTensor B P).d 2 1 =
-        (tensorLeft B).map ((P.complex).d 2 1) from rfl, hd, Functor.map_zero]
-      rfl)
+        (tensorLeft B).map ((P.complex).d 2 1) from rfl, hd, Functor.map_zero])
 
 /-- **`Tor₁(A,B)` is the kernel of `K ⊗ B → F ⊗ B`** for a surjective finite free presentation of
 `A`: the free-resolution instantiation that §5b records as missing. It is `torOneIsoKernel` applied

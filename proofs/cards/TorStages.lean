@@ -279,7 +279,7 @@ theorem coordProj_apply (b : Module.Basis ι ℤ F) (t : Finset ι) (x : F) :
   simp [coordProj]
 
 /-- The span of the basis vectors indexed by the finite set `t`. -/
-abbrev coordSpan (b : Module.Basis ι ℤ F) (t : Finset ι) : Submodule ℤ F :=
+noncomputable abbrev coordSpan (b : Module.Basis ι ℤ F) (t : Finset ι) : Submodule ℤ F :=
   Submodule.span ℤ (b '' (t : Set ι))
 
 /-- A combination of the basis vectors in `t` uses only coordinates in `t`. -/
