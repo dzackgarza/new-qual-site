@@ -306,8 +306,68 @@ theorem psiAdd_surjective : Function.Surjective (psiAdd f B) := by
 
 end PsiGroup
 
+/-! ## The kernel of the ψ-map and the third isomorphism
+
+The kernel of the ψ-map — the preimage of zero — is the additive-group view of the boundaries of
+the tensored splice: the range of the second differential corestricted to the cycles, stated as
+an `AddSubgroup` directly by `AddMonoidHom.range` of the underlying additive map, so that no
+`Submodule.toAddSubgroup` transport and no `Module ℤ` instance on the carrier is needed. The
+additive quotient of the cycles by the kernel of ψ is identified with the additive quotient by
+the boundaries along that equation by `QuotientAddGroup.quotientAddEquivOfEq`, and the ψ-map is
+surjective, so `QuotientAddGroup.quotientKerEquivOfSurjective` identifies the latter with the
+kernel of the tensored kernel inclusion; the homology identifications come through
+`LinearEquiv.toAddEquiv`, and the composite is promoted to a ℤ-linear equivalence by extending
+the `AddEquiv` with a `map_smul'` proof, which `int_smul_eq_zsmul` and `map_zsmul` supply for
+every `Module ℤ` instance, so the diamond of the two ℤ-module structures on the carrier does
+not arise. -/
+
+section PsiQuotient
+
+variable {A P : ModuleCat ℤ} (f : P ⟶ A) [Epi f] [Projective P] (B : ModuleCat ℤ)
+
+/-- **The kernel of ψ is the boundaries of the tensored splice.** The kernel of the ψ-map, as a
+subgroup of the cycles, is the range of the second differential corestricted to the cycles: a
+cycle dies under ψ exactly when the tensored kernel cover kills its underlying vector, which is
+membership in the kernel of the cover, the range of the second differential by
+`range_dTwoT_eq`. -/
+theorem psiAdd_ker :
+    AddMonoidHom.ker (psiAdd f B) =
+      AddMonoidHom.range ((tensorSplice f B).sc' 2 1 0).moduleCatToCycles.toAddMonoidHom := by
+  ext x
+  rw [AddMonoidHom.mem_ker, AddMonoidHom.mem_range]
+  constructor
+  · intro h
+    have hx : ((tensorLeft B).map (Projective.π (Limits.kernel f))).hom x.1 = 0 :=
+      congrArg Subtype.val h
+    obtain ⟨y, hy⟩ := (exact_tensored f B x.1).mp hx
+    exact ⟨y, Subtype.ext hy⟩
+  · rintro ⟨y, hy⟩
+    have hdy : ((tensorSplice f B).sc' 2 1 0).f.hom y = x.1 := congrArg Subtype.val hy
+    have h0 : ((tensorLeft B).map (Projective.π (Limits.kernel f))).hom x.1 = 0 := by
+      have hq : ((tensorLeft B).map (Projective.π (Limits.kernel f))).hom
+          (((tensorSplice f B).sc' 2 1 0).f.hom y) = 0 :=
+        (exact_tensored f B _).mpr (Set.mem_range_self y)
+      rw [← hdy]
+      exact hq
+    exact Subtype.ext h0
+
+/-- **The third isomorphism, additive form**: the additive quotient of the cycles by the kernel
+of ψ is the kernel of the tensored kernel inclusion. -/
+noncomputable def psiAddQuotientEquiv :
+    ↥(spliceCycles f B) ⧸ AddMonoidHom.ker (psiAdd f B) ≃+ ↥(kerIncl f B) :=
+  QuotientAddGroup.quotientKerEquivOfSurjective (psiAdd f B) (psiAdd_surjective f B)
+
+/-- **The third isomorphism on the boundaries quotient**: transporting
+`psiAddQuotientEquiv` along `psiAdd_ker` with `quotientAddEquivOfEq`. -/
+noncomputable def boundariesQuotientEquiv :
+    ↥(spliceCycles f B) ⧸
+      AddMonoidHom.range ((tensorSplice f B).sc' 2 1 0).moduleCatToCycles.toAddMonoidHom ≃+
+      ↥(kerIncl f B) :=
+  (QuotientAddGroup.quotientAddEquivOfEq (psiAdd_ker f B)).symm.trans
+    (psiAddQuotientEquiv f B)
 
 
+end PsiQuotient
 
 end TorArbitrary
 
@@ -330,3 +390,6 @@ end TorArbitrary
 #print axioms TorArbitrary.mem_kerIncl_of_mem_cycles
 #print axioms TorArbitrary.psiAdd
 #print axioms TorArbitrary.psiAdd_surjective
+#print axioms TorArbitrary.psiAdd_ker
+#print axioms TorArbitrary.psiAddQuotientEquiv
+#print axioms TorArbitrary.boundariesQuotientEquiv
