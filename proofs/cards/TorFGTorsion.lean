@@ -7,7 +7,7 @@ The structure theorem of finitely generated abelian groups
 (`AddCommGroup.equiv_free_prod_directSum_zmod`) splits a finitely generated `A` into a free part
 and a finite direct sum of cyclic prime-power groups.  This file proves that `Tor₁(A, B)` is a
 torsion group for every `B`, from the free case (vanishing on projectives), the cyclic case
-(the Serre-class route of `cards/TorTorsionClass.lean`), and the additivity of `Tor₁` in its
+(the Serre-Class route of `cards/TorTorsionClass.lean`), and the additivity of `Tor₁` in its
 first argument, which is carried through the dimension-shift bridge
 (`cards/TorArbitrary.lean`'s `torOneIsoKerIncl`) and the presentation-level kernel computation
 (`cards/TorReductions.lean`'s `map_prodLeft_torKernel`).
@@ -15,7 +15,8 @@ first argument, which is carried through the dimension-shift bridge
 
 namespace TorFGTorsion
 
-open CategoryTheory Limits MonoidalCategory DirectSum
+open CategoryTheory Limits MonoidalCategory
+open scoped TensorProduct
 
 /-! ## The torsion closure properties -/
 
@@ -72,6 +73,26 @@ theorem isAddTorsion_dfinsupp_zmod {ι : Type*} [Fintype ι] [DecidableEq ι] (p
     exact ZMod.fintype (p i ^ e i)
   exact isAddTorsion_dfinsupp_fintype
 
+/-! ## The transport along a linear equivalence, and the tensor distributivity -/
+
+/-- `IsAddTorsion` transports backwards along a `ℤ`-linear equivalence: if the target is torsion,
+so is the source. This is the direction the card statements need, since the bridge
+(`TorArbitrary.torOneIsoKerIncl`) presents `Tor₁` as a kernel submodule. -/
+theorem isAddTorsion_of_linearEquiv {M N : Type*} [AddCommGroup M] [AddCommGroup N]
+    (e : M ≃ₗ[ℤ] N) (hN : IsAddTorsion N) : IsAddTorsion M := by
+  intro x
+  obtain ⟨n, hn, hne⟩ := isOfFinAddOrder_iff_nsmul_eq_zero.mp (hN (e x))
+  refine isOfFinAddOrder_iff_nsmul_eq_zero.mpr ⟨n, hn, ?_⟩
+  refine e.injective ?_
+  rw [map_nsmul, hne]
+  exact (map_zero e).symm
+
+/-- The left-tensor distributivity over a binary product, in the `prodRight` form the
+`tensorLeft B` bridge of `cards/TorArbitrary.lean` consumes. -/
+noncomputable def prodRight_int {B M N : Type*} [AddCommGroup B] [AddCommGroup M]
+    [AddCommGroup N] : B ⊗[ℤ] (M × N) ≃ₗ[ℤ] (B ⊗[ℤ] M) × (B ⊗[ℤ] N) :=
+  TensorProduct.prodRight ℤ ℤ B M N
+
 end TorFGTorsion
 
 #print axioms TorFGTorsion.isAddTorsion_prod
@@ -79,3 +100,5 @@ end TorFGTorsion
 #print axioms TorFGTorsion.zmod_nsmul_eq_zero
 #print axioms TorFGTorsion.isAddTorsion_dfinsupp_fintype
 #print axioms TorFGTorsion.isAddTorsion_dfinsupp_zmod
+#print axioms TorFGTorsion.isAddTorsion_of_linearEquiv
+#print axioms TorFGTorsion.prodRight_int
