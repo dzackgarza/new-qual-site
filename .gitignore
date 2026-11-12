@@ -15,6 +15,3 @@ tmp/
 
 # Scratch space used while probing the toolchain.
 .scratch/
-
-# Lake build artifacts for the proofs/ Lean project. Never part of the repo.
-.lake/
