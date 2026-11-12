@@ -3,8 +3,10 @@
 Machine-checked certificates for mathematical corrections made to corpus cards, kept in
 three separate categories. They are not interchangeable.
 
-1. **Group lemmas proved in Lean** — statements about groups, linear maps and tensor
-   products, proved here with no `sorryAx`.
+1. **Lean declarations on lean-categories main** — statements about groups, linear maps
+   and tensor products, proved with no `sorryAx` in
+   [lean-categories](https://github.com/dzackgarza/lean-categories), the one home of Lean
+   formalization. This repository holds no Lean declaration.
 2. **Chain-level checks in Sage** — exact computations with Sage's `ChainComplex` on the
    chain complexes a card displays, for the listed values of the parameters. These are
    finite samples of a chain-level statement.
@@ -20,7 +22,7 @@ A source transcription check proves what the source prints; it does not prove th
 source's theorem. A counterexample refutes the printed claim but does not establish the
 replacement. A correction is marked settled on its card only when a file here certifies it.
 
-## 1. Group lemmas proved in Lean
+## 1. Lean declarations on lean-categories main
 
 | File | Card | What it proves |
 | --- | --- | --- |

@@ -12,6 +12,11 @@ Apply `QUAL-05` when a problem is encountered, including outside the selected ca
 Record the evidence before leaving that work; logging does not complete a repair.
 These documents apply to every stream working in the clone.
 
+Lean formalization lives only in [lean-categories](https://github.com/dzackgarza/lean-categories).
+This repository holds no Lean declaration. A Lean certificate of a card is a declaration on
+lean-categories main, written there by a lean-categories issue under its rules (its LC-09
+search of Mathlib and the formalization corpus first), and the card links it.
+
 <!-- agent-memory:start -->
 # Agent memory
 
@@ -942,8 +947,9 @@ source order.
 Solution status says whether a solution is written. Proof status says what
 backs it, and every rendered problem page states one of three:
 
-- **certified** — `proofs/README.md` lists a certificate file for the card, in
-  section 1 (Lean) or section 2 (exact finite computations: Sage, GAP).
+- **certified** — `proofs/README.md` lists a certificate for the card, in
+  section 1 (a Lean declaration on lean-categories main) or section 2 (an exact
+  finite computation in this repository: Sage, GAP).
 - **reviewed** — no certificate, and the card's `review:` field is `reviewed`.
 - **draft** — neither.
 
