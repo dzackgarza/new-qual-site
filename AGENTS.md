@@ -16,6 +16,9 @@ Lean formalization lives only in [lean-categories](https://github.com/dzackgarza
 This repository holds no Lean declaration. A Lean certificate of a card is a declaration on
 lean-categories main, written there by a lean-categories issue under its rules (its LC-09
 search of Mathlib and the formalization corpus first), and the card links it.
+A Lean certificate settles a contested proof: when agents dispute a card's proof, the
+dispute stops and one solution is formalized there instead of argued in prose. An
+uncontested proof is not formalized.
 
 <!-- agent-memory:start -->
 # Agent memory
