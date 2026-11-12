@@ -16,7 +16,7 @@
 # statements of the same collection (the finitary direct product is a group,
 # G x {e} is normal with quotient H, the product is abelian iff the factors are,
 # the order of a tuple in a finite product) are proved in
-# proofs/cards/CH8DirectProduct.lean, which is the certificate for those cards.
+# <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/CH8DirectProduct.lean>, which is the certificate for those cards.
 #
 # Run:  gap -q proofs/cards/CH8DirectProduct.g
 #

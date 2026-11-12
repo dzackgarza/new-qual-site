@@ -51,7 +51,7 @@ audit:
     $\operatorname{Tor}(A,B)\cong\operatorname{Tor}(T(A),B)$ because $A/T(A)$ is torsion-free hence
     flat, $\operatorname{Tor}$ commutes with direct sums, and
     $\operatorname{Tor}(A_p,B)\cong\operatorname{Tor}(A_p,B_p)$ because $B/B_p$ has no $p$-torsion.
-    proofs/cards/TorTorsion.lean certifies the group-theoretic core: `ratchet_le` ($m\le k$),
+    <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorTorsion.lean> certifies the group-theoretic core: `ratchet_le` ($m\le k$),
     `exact_order_smul`, `exists_coord`, the refutation `zmod_two_no_exact_order_eight`, and
     `zmod_eight_order_four`; the Tor-theoretic reductions themselves are cited, not formalized.
 - event: solution-reviewed
@@ -64,7 +64,7 @@ audit:
     components, (6) applied to $0\to B_p\to B\to B/B_p\to0$ with (3) gives
     $\operatorname{Tor}(A_p,B)\cong\operatorname{Tor}(A_p,B_p)$, and (2) with (5) gives
     $\operatorname{Tor}(\ZZ_{p^{k_j}},B_p)\cong B_p[p^{k_j}]$; commutation with the direct limit is
-    Exercise 4 of the same section. proofs/cards/TorReductions.lean formalizes the parts of (3),
+    Exercise 4 of the same section. <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorReductions.lean> formalizes the parts of (3),
     (5) and (6) that are statements about torsion, flatness and tensor products, reusing Mathlib's
     torsion-free-is-flat instance and its flatness form of tensor exactness; the comparison theorem
     (Lemma 3A.2), additivity (2), the torsion reduction (4) and the direct-limit statement are
@@ -79,7 +79,7 @@ audit:
     $B=\ZZ/2\oplus\ZZ/3$ the quotient is $\ZZ/3$. The step now uses rule (5), which gives
     $\operatorname{Tor}(\ZZ_{p^k},B/B_p)\cong(B/B_p)[p^k]=0$ because $B/B_p$ has no $p$-torsion,
     with rule (2) for finite direct sums and Exercise 4 for the passage to an arbitrary $p$-primary
-    group. proofs/cards/TorReductions.lean certifies the pieces that are formalizable:
+    group. <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorReductions.lean> certifies the pieces that are formalizable:
     `map_torKernel_mulByInt` (the kernel of $(n\cdot\mathrm{id})\otimes\mathrm{id}_B$ inside
     $\ZZ\otimes B$ is carried onto $B[n]$ by $\ZZ\otimes B\cong B$, that is
     $\operatorname{Tor}(\ZZ/n,B)\cong B[n]$ for this resolution),
@@ -102,7 +102,7 @@ audit:
     `TauCeti/AlgebraicTopology/SerreClass/TensorTor.lean`) proves that `Tor_n(M,N)` is torsion
     whenever `M` is, for arbitrary `N` and over any commutative ring, via `ObjectProperty.prop_leftDerived_obj`
     (a class closed under subobjects and quotients is closed under left derived functors whose
-    projective values lie in it). `proofs/cards/TorTorsionClass.lean` ports that argument and its
+    projective values lie in it). <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorTorsionClass.lean> ports that argument and its
     three dependencies and compiles on the canonical baseline with no `sorryAx`, axioms only
     `propext`, `Classical.choice`, `Quot.sound`. What this does **not** do, stated so it is not read
     as the card: the card says `Tor(A,B)` is torsion for all `A`, and the file proves the case where
@@ -123,11 +123,11 @@ audit:
     *corrected* claim is settled only with a certificate of that claim. The claims corrected on this
     card were the restored printed `iff` and the replacement of the false `B/B_p` torsion-free premise
     by the absence of `p`-torsion; those are settled by the source text and by
-    `proofs/cards/TorReductions.lean` (`torsionBy_pow_eq_bot_of_no_p_torsion`,
+    <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorReductions.lean> (`torsionBy_pow_eq_bot_of_no_p_torsion`,
     `mem_of_p_smul_mem_of_pPrimary`, `map_torKernel_mulByInt`), with the converse's group-theoretic
-    core in `proofs/cards/TorTorsion.lean`. That "$\operatorname{Tor}(A,B)$ is a torsion group" was
+    core in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorTorsion.lean>. That "$\operatorname{Tor}(A,B)$ is a torsion group" was
     *not* a corrected claim, so no node requires a local formalization of it, and
-    `proofs/cards/TorTorsionClass.lean` is recorded in proofs/README.md §1 and §7c as a supplement
+    <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorTorsionClass.lean> is recorded in proofs/README.md §1 and §7c as a supplement
     with no obligation attached rather than as progress on one. The card's requirement — a correct,
     sourced solution — is met by citation, and the citation is
     `TauCeti.isAddTorsion_Tor_left` at

@@ -38,7 +38,7 @@ audit:
     quotient"), and three closing steps plus the qed only named earlier steps.
     Every step now carries a complete-sentence argument, and the closing step
     says why the count for F bounds the count for G. The finiteness claim the proof
-    rests on is certified in Lean in proofs/cards/SubgroupFiniteness.lean:
+    rests on is certified in Lean in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/SubgroupFiniteness.lean>:
     a group with a finite generating family has only finitely many subgroups of a
     given nonzero index, via finiteness of homomorphisms into Equiv.Perm (Fin m) and
     the coset action on G/H.

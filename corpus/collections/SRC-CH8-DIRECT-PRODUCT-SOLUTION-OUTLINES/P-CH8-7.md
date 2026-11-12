@@ -29,7 +29,7 @@ In general, $G _ { 1 } \oplus G _ { 2 } \oplus \cdots \oplus G _ { n } \approx G
 :::
 
 ::: {.remark}
-Certificate. `proofs/cards/CH8DirectProduct.lean` proves both halves:
+Certificate. <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/CH8DirectProduct.lean> proves both halves:
 `prod_comm_mulEquiv` is the isomorphism $G_{1}\oplus G_{2}\cong
 G_{2}\oplus G_{1}$, and `pi_perm_mulEquiv` the general case, that permuting the
 index set of a direct product of a family of groups gives an isomorphic group.

@@ -64,7 +64,7 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   A reader who insists the sheet means "nonzero" by implication is reading in a hypothesis the page does not print.
 
 - **Repair:** the card now requires $L\ne0$, with a `source-corrected` audit note pointing here; the solution proves both directions of the corrected statement.
-  The correction is certified: `proofs/cards/FieldHomework1.lean` proves that `L = ⊥` satisfies the printed hypothesis for every $\alpha$, and proves both directions of the corrected statement, with `#print axioms` showing no `sorryAx`.
+  The correction is certified: <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FieldHomework1.lean> proves that `L = ⊥` satisfies the printed hypothesis for every $\alpha$, and proves both directions of the corrected statement, with `#print axioms` showing no `sorryAx`.
 
 ### TAMU Spring 2015 problem 10 states (i) without the closedness of $Y$
 

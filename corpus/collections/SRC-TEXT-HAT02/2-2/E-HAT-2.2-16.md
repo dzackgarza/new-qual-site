@@ -44,7 +44,7 @@ audit:
   by: claude
   date: 2026-10-31
   note: >-
-    Certificate for the repaired degree-zero step. proofs/cards/ChainLevelSteps.lean proves the two
+    Certificate for the repaired degree-zero step. <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/ChainLevelSteps.lean> proves the two
     ingredients: `choose_rank_step`, Pascal's identity
     $\binom{n+1}{i+1}-\binom{n}{i}=\binom{n}{i+1}$ in the form the rank induction uses, and
     `ker_ne_top_of_surjective_to_int`, that an augmentation onto $\ZZ$ has proper kernel, so the
@@ -68,7 +68,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    Certificate for the card's own model. `proofs/cards/DeltaSimplexChains.lean` builds the
+    Certificate for the card's own model. <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/DeltaSimplexChains.lean> builds the
     Δ-complex chain complex of Δ^n on the (i+1)-element vertex subsets and proves the boxed
     claim in it: `finrank_chains` (rank C_i = C(n+1,i+1)), `aug_comp_boundary` and
     `boundary_comp_boundary` (the augmented complex is a complex), `homotopy_succ`,

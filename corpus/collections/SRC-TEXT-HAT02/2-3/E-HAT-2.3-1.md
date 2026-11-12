@@ -42,7 +42,7 @@ audit:
   date: 2026-10-31
   note: >-
     Certificates for the rewritten proof, which the earlier note left as an obligation.
-    proofs/cards/MooreSpaceExactness.lean certifies the group theory: $\ZZ/m$ is nontrivial for
+    <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/MooreSpaceExactness.lean> certifies the group theory: $\ZZ/m$ is nontrivial for
     $m\ge2$ (`nontrivial_zmod`) and torsion (`nsmul_eq_zero_zmod`), a sequence with trivial ends
     cannot be exact at $\ZZ/m$ (`subsingleton_of_kernel_eq_range`, applied in `torsion_not_exact`),
     and multiplication by $m\ge2$ on $\ZZ$ is injective (`mul_eq_zero_int`) but not surjective

@@ -38,7 +38,7 @@ audit:
     $\CC^\times$ with local degree $+1$ for every $k\ne0$, and it is a different map when $k<0$. What is **not**
     certified, and is a named input from the section: that $\widetilde f$ has this derivative and this local degree
     at all, and the degree formula $\deg\widetilde f=\prod_j k_j$ itself, which is the standard computation for
-    self-maps of $S^{2n-1}$. `proofs/cards/LensDegree.lean` certifies only the arithmetic:
+    self-maps of $S^{2n-1}$. <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/LensDegree.lean> certifies only the arithmetic:
     $\det\operatorname{diag}(1,k)=k$, the orientation criterion read off it, and $|k|\operatorname{sgn}(k)=k$ with the
     product over the coordinates, and nothing about the geometric map. The degree of $f$ comes from the covering
     square $p'\circ\widetilde f=f\circ p$ with both coverings of degree $m$, giving $\deg f=\deg\widetilde f$; the
@@ -132,7 +132,7 @@ For a regular value with every coordinate nonzero, the $j$th angular coordinate 
 $$
 \deg\widetilde f=k_1\cdots k_n.
 $$
-The bookkeeping deserves one clause, and it is about the *angular* extension $(r,\theta)\mapsto(r,k_j\theta)$, not about the holomorphic power $z\mapsto z^{k_j}$: in the oriented frame $(\partial_r,r^{-1}\partial_\theta)$ of the punctured plane the derivative is $\operatorname{diag}(1,k_j)$, with determinant $k_j$, so the $j$th coordinate map has local degree $\operatorname{sgn}(k_j)$ at each of its preimages, and there are $|k_j|$ of them, giving $|k_j|\operatorname{sgn}(k_j)=k_j$. The holomorphic power is a *different* map when $k_j<0$ — it also changes the radius, and its local degree is $+1$ everywhere, because $z\mapsto z^{k_j}$ is conformal on $\CC^\times$ — so it cannot be used here; only the product of the $n$ signs and the $n$ preimage counts gives $k_1\cdots k_n$. The determinant computation behind the sign, $\det\operatorname{diag}(1,k)=k$ together with $|k|\operatorname{sgn}(k)=k$, is certified in `proofs/cards/LensDegree.lean`.
+The bookkeeping deserves one clause, and it is about the *angular* extension $(r,\theta)\mapsto(r,k_j\theta)$, not about the holomorphic power $z\mapsto z^{k_j}$: in the oriented frame $(\partial_r,r^{-1}\partial_\theta)$ of the punctured plane the derivative is $\operatorname{diag}(1,k_j)$, with determinant $k_j$, so the $j$th coordinate map has local degree $\operatorname{sgn}(k_j)$ at each of its preimages, and there are $|k_j|$ of them, giving $|k_j|\operatorname{sgn}(k_j)=k_j$. The holomorphic power is a *different* map when $k_j<0$ — it also changes the radius, and its local degree is $+1$ everywhere, because $z\mapsto z^{k_j}$ is conformal on $\CC^\times$ — so it cannot be used here; only the product of the $n$ signs and the $n$ preimage counts gives $k_1\cdots k_n$. The determinant computation behind the sign, $\det\operatorname{diag}(1,k)=k$ together with $|k|\operatorname{sgn}(k)=k$, is certified in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/LensDegree.lean>.
 
 Let the generator of the $\ZZ_m$ action defining $L$ multiply the $j$th coordinate by
 $$

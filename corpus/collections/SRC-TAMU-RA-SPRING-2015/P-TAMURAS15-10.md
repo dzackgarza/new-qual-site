@@ -31,7 +31,7 @@ audit:
     uses. That replacement was at the time of writing a proposed correction,
     the counterexample refuting the printed claim without establishing the
     corrected one; it is now certified, see the solution-reviewed event below
-    and proofs/cards/Tamuras15_10.lean.
+    and <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/Tamuras15_10.lean>.
 - event: solution-written
   by: claude
   date: 2026-10-31
@@ -39,9 +39,9 @@ audit:
   by: claude
   date: 2026-10-31
   note: >-
-    Certified. proofs/cards/NormExtension.lean proves that for a closed subspace Y and
+    Certified. <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/NormExtension.lean> proves that for a closed subspace Y and
     x not in Y a functional of norm at most one vanishes on Y and not at x;
-    proofs/cards/Tamuras15_10.lean proves the corrected statement in full: for a second
+    <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/Tamuras15_10.lean> proves the corrected statement in full: for a second
     norm n on Y with n y <= K ‖y‖ and ‖y‖ <= K n y, the supremum of |phi x| over the
     set S of the problem is nonnegative, vanishes only at 0, is homogeneous and
     subadditive, agrees with n on Y, and satisfies K^-1 ‖x‖ <= sup <= K ‖x‖. No sorryAx.
@@ -54,7 +54,7 @@ audit:
     source-corrected event said that no machine-checked certificate of the
     corrected statement exists, and the closing remark said the closedness
     replacement was proposed and not certified; both were true when written and
-    are false now. proofs/cards/Tamuras15_10.lean was elaborated in this project
+    are false now. <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/Tamuras15_10.lean> was elaborated in this project
     on 2026-11-06 and proves corrected_statement, with #print axioms reporting
     only propext, Classical.choice and Quot.sound for it and for the lemmas it
     depends on. Both stale sentences now point at that file and its theorem
@@ -157,5 +157,5 @@ for every $x\in X$.
 ::: {.remark}
 The paper prints problem 10 with a subspace $Y$ and no closedness hypothesis.
 As printed, statement (i) fails: for $X=C[0,1]$ with the sup norm, $Y$ the polynomials and $\norm y_1=2\norm y$, every $\varphi\in S$ is bounded and vanishes on a dense subspace, so $S=\{0\}$ and $\norm x_2=0$ for every $x$.
-The statement above adds closedness, and that replacement is certified: `proofs/cards/Tamuras15_10.lean` proves `corrected_statement`, which says that for `Y` closed the supremum norm of the problem is a norm on `X`, agrees with the given norm on `Y`, and satisfies `K^-1 * ||x|| <= ||x||_2 <= K * ||x||`, and its `#print axioms` lines report only `propext`, `Classical.choice` and `Quot.sound`, with no `sorryAx`.
+The statement above adds closedness, and that replacement is certified: <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/Tamuras15_10.lean> proves `corrected_statement`, which says that for `Y` closed the supremum norm of the problem is a norm on `X`, agrees with the given norm on `Y`, and satisfies `K^-1 * ||x|| <= ||x||_2 <= K * ||x||`, and its `#print axioms` lines report only `propext`, `Classical.choice` and `Quot.sound`, with no `sorryAx`.
 :::

@@ -54,7 +54,7 @@ audit:
   by: claude
   date: 2026-11-01
   note: >-
-    Certificate scope recorded after `proofs/cards/BarySubdiv.lean`. Now formalized, with no `sorryAx`
+    Certificate scope recorded after <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/BarySubdiv.lean>. Now formalized, with no `sorryAx`
     and axioms only `propext`, `Classical.choice`, `Quot.sound`: (i) the recursion
     $S\lambda=b_\lambda(S\partial\lambda)$ itself, in the free abelian group on ordered chains of faces of
     $\Delta^n$, with **every** coefficient of it computed (`coeff_subdiv`) and the coefficient of the chain of
@@ -74,7 +74,7 @@ audit:
   note: >-
     Supersedes the scope clause of the previous event, which said the reindexing and the coefficient
     $(-1)^{n(n+1)/2}\operatorname{sgn}(\pi)$ were not formalized. They now are, for every $n$ and every
-    $\pi$, in `proofs/cards/BarySubdiv.lean`: `pairCount_ofFn` (a list count over `List.ofFn g` is the
+    $\pi$, in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/BarySubdiv.lean>: `pairCount_ofFn` (a list count over `List.ofFn g` is the
     `Fin`-indexed count of the pairs $i<j$ with $g j<g i$), `pairCount_peel_eq_delSum` (the peeling order
     $\pi(N-1),\dots,\pi 0$ has deletion-position count exactly $\sum_j\#\{i\le j:\pi i<\pi j\}$), the sign
     algebra restated there and applied, and `coeff_subdiv_peel_sign`: the recursion's coefficient of the
@@ -88,7 +88,7 @@ audit:
   date: 2026-11-01
   note: >-
     Whole-chain stage. Supersedes the "not formalized" clauses of both previous events for the support
-    question: `proofs/cards/BarySubdiv.lean` now proves, in the free abelian group on ordered chains of
+    question: <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/BarySubdiv.lean> now proves, in the free abelian group on ordered chains of
     faces of the standard simplex, `subdiv_univ_eq_sum_perm`, i.e.
     $S = \sum_{\pi\in S_N}(-1)^{N(N-1)/2}\operatorname{sgn}(\pi)\,[\text{chain of }\pi]$, with one
     summand per permutation and nothing else in the support — by `chainCoeff_exists_chainOf` (support
@@ -125,7 +125,7 @@ audit:
   by: claude
   date: 2026-11-01
   note: >-
-    Hatcher's operator formula, as a theorem. `proofs/cards/BarySubdiv.lean` proves
+    Hatcher's operator formula, as a theorem. <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/BarySubdiv.lean> proves
     `hatcher_formula`: for every `M` and every continuous `sigma` out of the standard `M`-simplex,
     `map (c => sigma.comp (chainAffineMap c)) (subdiv univ) = sum_pi ((-1)^(M(M+1)/2) sgn pi) •
     of (sigma.comp (barySimplex pi))`, where `subdiv` is the proved recursion
@@ -166,7 +166,7 @@ audit:
   by: claude
   date: 2026-11-01
   note: >-
-    The exercise's formula, closed for an arbitrary singular simplex. `proofs/cards/BarySubdiv.lean` proves
+    The exercise's formula, closed for an arbitrary singular simplex. <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/BarySubdiv.lean> proves
     `hatcher_formula_arbitrary`: for every `n = M` and every `σ : Δⁿ → X` (a continuous map out of the
     standard-simplex subtype), `lift (c ↦ ι (chainSigma σ c)) (subdiv univ) = Σ_π
     (−1)^{n(n+1)/2} sgn(π) • ι (barySigma σ π)` in degree `n` of `X.chainComplex (ModuleCat.of ℤ ℤ)`.
@@ -205,7 +205,7 @@ audit:
     `CHAIN_BOUNDARY_SINGULAR_SUBDIVISION` l.2293, `CHAIN_HOMOTOPIC_SINGULAR_SUBDIVISION` l.2598), the
     last with hypotheses checked at the source: `singular_chain (p,s) c ⟹
     chain_boundary p (singular_subdivision p c) = singular_subdivision (p-1) (chain_boundary p c)`.
-    Consequence recorded rather than silently absorbed: `proofs/cards/BarySubdiv.lean` is an
+    Consequence recorded rather than silently absorbed: <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/BarySubdiv.lean> is an
     independent re-derivation in an explicit coefficient model, not the first formalization of this
     formula, and the card's notes and proofs/README.md §7a now say so. The decision not to develop
     `∂S = S∂` locally is corroborated by this lookup — that identity is proved in Lean 4 in both
@@ -288,7 +288,7 @@ so the recursion's sign for the $\pi$-summand is $(-1)^{d_0+\dots+d_{n-1}}$. The
 $$d_0+\dots+d_{n-1}=\#\{(i,j): i<j,\ \pi i<\pi j\},$$
 the number of *noninversions* of $\pi$; and inversions plus noninversions count all pairs, $n(n+1)/2$ of them. Hence
 $$(-1)^{d_0+\dots+d_{n-1}}=(-1)^{n(n+1)/2}(-1)^{\operatorname{inv}(\pi)}=(-1)^{n(n+1)/2}\operatorname{sgn}(\pi),$$
-which is the displayed factor. The pair counts, the inversion/noninversion partition and $\operatorname{sgn}(\pi)=(-1)^{\operatorname{inv}(\pi)}$ are proved in `proofs/cards/BarySign.lean` (`card_pairSet`, `noninv_add_inv`, `sign_eq_neg_one_pow_inv`). Everything else in this step, and the formula itself, is machine-checked for every $n$ in `proofs/cards/BarySubdiv.lean`. There, $S\lambda=b_\lambda(S\partial\lambda)$ is modelled in the free abelian group on ordered chains of faces with **every** coefficient computed (`coeff_subdiv`); the deletion positions are exactly the recursion's signs (`stepSign`, `coeff_subdiv_chainOf`); they aggregate to a pair count (`stepExp_eq_pairCount`) which reindexes to the permutation-indexed sum `pairCount_peel_eq_delSum`, giving the coefficient $(-1)^{n(n+1)/2}\operatorname{sgn}(\pi)$ at every $\pi$ (`coeff_subdiv_peel_sign`); and the support of the recursion is exhausted and nonduplicated (`chainCoeff_exists_chainOf`, `chainOf_injective`), so the recursion **equals** the signed sum with one summand per permutation and nothing else (`subdiv_univ_eq_sum_perm`). Geometrically, the chain of $\pi$ is the list of prefix faces (`chainOf_peel_eq_ofFn_descFace`), each face read as its barycentre gives the descending vertex list (`map_baryWeight_chainOf_peel`), and the affine simplex those vertices span is continuous and has exactly them as vertices (`affineMap_mem`, `affineMap_single`, `continuous_affineMap`), with the prepended apex entering through its own barycentric coordinate (`affineMap_cons_apply`). The resulting theorem is `hatcher_formula_arbitrary`: for an **arbitrary** singular simplex $\sigma:\Delta^n\to X$, the recursion — corestricted to the standard simplex (`chainAffineOn`), composed with $\sigma$ (`chainSigma`) and coprojected into degree $n$ of the singular chain complex — equals the displayed signed sum, each summand read back as $\sigma\circ\bar\Delta_\pi$ (`barySigma`, `toSSetObjEquiv_barySigma`). The only thing not claimed is that $S$ is a chain map, $\partial S=S\partial$: the exercise asks for the formula.
+which is the displayed factor. The pair counts, the inversion/noninversion partition and $\operatorname{sgn}(\pi)=(-1)^{\operatorname{inv}(\pi)}$ are proved in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/BarySign.lean> (`card_pairSet`, `noninv_add_inv`, `sign_eq_neg_one_pow_inv`). Everything else in this step, and the formula itself, is machine-checked for every $n$ in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/BarySubdiv.lean>. There, $S\lambda=b_\lambda(S\partial\lambda)$ is modelled in the free abelian group on ordered chains of faces with **every** coefficient computed (`coeff_subdiv`); the deletion positions are exactly the recursion's signs (`stepSign`, `coeff_subdiv_chainOf`); they aggregate to a pair count (`stepExp_eq_pairCount`) which reindexes to the permutation-indexed sum `pairCount_peel_eq_delSum`, giving the coefficient $(-1)^{n(n+1)/2}\operatorname{sgn}(\pi)$ at every $\pi$ (`coeff_subdiv_peel_sign`); and the support of the recursion is exhausted and nonduplicated (`chainCoeff_exists_chainOf`, `chainOf_injective`), so the recursion **equals** the signed sum with one summand per permutation and nothing else (`subdiv_univ_eq_sum_perm`). Geometrically, the chain of $\pi$ is the list of prefix faces (`chainOf_peel_eq_ofFn_descFace`), each face read as its barycentre gives the descending vertex list (`map_baryWeight_chainOf_peel`), and the affine simplex those vertices span is continuous and has exactly them as vertices (`affineMap_mem`, `affineMap_single`, `continuous_affineMap`), with the prepended apex entering through its own barycentric coordinate (`affineMap_cons_apply`). The resulting theorem is `hatcher_formula_arbitrary`: for an **arbitrary** singular simplex $\sigma:\Delta^n\to X$, the recursion — corestricted to the standard simplex (`chainAffineOn`), composed with $\sigma$ (`chainSigma`) and coprojected into degree $n$ of the singular chain complex — equals the displayed signed sum, each summand read back as $\sigma\circ\bar\Delta_\pi$ (`barySigma`, `toSSetObjEquiv_barySigma`). The only thing not claimed is that $S$ is a chain map, $\partial S=S\partial$: the exercise asks for the formula.
 
 :::
 
@@ -300,7 +300,7 @@ Chain-level regression
 
 ::: pf-proof
 
-The general argument is an induction on `n` whose bookkeeping is a stated combinatorial identity; that identity, and with it the formula, is proved for every `n` in `proofs/cards/BarySubdiv.lean` as the previous step records, and the regression below is a bounded cross-check of the resulting chains. Write `S(lambda) = b_lambda(S partial lambda)` with `partial lambda = sum_k (-1)^k partial_k lambda`. By induction the closed form is known on each `(n-1)`-simplex `partial_k lambda`, with global sign `(-1)^{(n-1)n/2}`; coning with `b_lambda` prepends the apex and keeps the coefficient of the corresponding permutation, while the factor `(-1)^k` from the boundary and the fact that coning reverses the effective vertex order contribute exactly `(-1)^n` per summand, i.e. an extra `(-1)^n` overall. Since `(n-1)n/2 + n = n(n+1)/2`, the two global signs multiply to `(-1)^{n(n+1)/2}`, which is the stated factor. Equivalently, and this is the form proved outright: along the descending chain indexed by $\pi$, the sum of the deletion positions equals the number of noninversions of $\pi$, namely $n(n+1)/2-\operatorname{inv}(\pi)$, so the recursion's sign `(-1)^{\text{sum}}` equals $(-1)^{n(n+1)/2}\operatorname{sgn}(\pi)$ because $\operatorname{sgn}(\pi)=(-1)^{\operatorname{inv}(\pi)}$. That is `stepExp_eq_pairCount` together with `pairCount_peel_eq_delSum` and `pow_delSum_eq_global_mul_sign`, and it gives the coefficient of every summand (`coeff_subdiv_peel_sign`); the whole identity follows from the exhaustion and nonduplication of the support (`chainCoeff_exists_chainOf`, `chainOf_injective`, `subdiv_univ_eq_sum_perm`). The same induction shows the *ascending* formula cannot be right: coning prepends the apex, so the sub-simplices begin at `b_{Delta^n}` and their vertex lists descend.
+The general argument is an induction on `n` whose bookkeeping is a stated combinatorial identity; that identity, and with it the formula, is proved for every `n` in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/BarySubdiv.lean> as the previous step records, and the regression below is a bounded cross-check of the resulting chains. Write `S(lambda) = b_lambda(S partial lambda)` with `partial lambda = sum_k (-1)^k partial_k lambda`. By induction the closed form is known on each `(n-1)`-simplex `partial_k lambda`, with global sign `(-1)^{(n-1)n/2}`; coning with `b_lambda` prepends the apex and keeps the coefficient of the corresponding permutation, while the factor `(-1)^k` from the boundary and the fact that coning reverses the effective vertex order contribute exactly `(-1)^n` per summand, i.e. an extra `(-1)^n` overall. Since `(n-1)n/2 + n = n(n+1)/2`, the two global signs multiply to `(-1)^{n(n+1)/2}`, which is the stated factor. Equivalently, and this is the form proved outright: along the descending chain indexed by $\pi$, the sum of the deletion positions equals the number of noninversions of $\pi$, namely $n(n+1)/2-\operatorname{inv}(\pi)$, so the recursion's sign `(-1)^{\text{sum}}` equals $(-1)^{n(n+1)/2}\operatorname{sgn}(\pi)$ because $\operatorname{sgn}(\pi)=(-1)^{\operatorname{inv}(\pi)}$. That is `stepExp_eq_pairCount` together with `pairCount_peel_eq_delSum` and `pow_delSum_eq_global_mul_sign`, and it gives the coefficient of every summand (`coeff_subdiv_peel_sign`); the whole identity follows from the exhaustion and nonduplication of the support (`chainCoeff_exists_chainOf`, `chainOf_injective`, `subdiv_univ_eq_sum_perm`). The same induction shows the *ascending* formula cannot be right: coning prepends the apex, so the sub-simplices begin at `b_{Delta^n}` and their vertex lists descend.
 
 `proofs/cards/bary_regression.py` is a **bounded regression**, not a proof of the identity: it computes for `n = 1, 2, 3` only, in the free abelian group on vertex tuples, both the recursive operator and the two closed formulas, and confirms the identity there as well as refuting the old ascending formula — in dimension `1`, `S[v_0,v_1] = [b,v_1] - [b,v_0]`, whose summands are `[b,v_1]` and `[b,v_0]`, whereas the ascending formula gives `[v_0,b] - [v_1,b]`, different generators of `C_1`. It says nothing about `n >= 4`; those are covered by the induction above, which the Lean development proves for all $n$.
 

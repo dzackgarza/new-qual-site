@@ -93,7 +93,7 @@ direct products with external ones.
 :::
 
 ::: {.remark}
-Certificate. `proofs/cards/CH8DirectProduct.lean` proves the three assertions of
+Certificate. <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/CH8DirectProduct.lean> proves the three assertions of
 this exercise: `prod_bot_eq_ker_snd` identifies $G\times\{e\}$ with the kernel of
 the second projection, `prod_bot_normal` and `bot_prod_normal` give normality of
 $G\times\{e\}$ and $\{e\}\times H$, `quotient_prod_bot_mulEquiv` and

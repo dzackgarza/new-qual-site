@@ -132,7 +132,7 @@ for m in range(0, 5):
 # --- Exercise 2.3-1, the Moore pair (X, A) = (S^1 ∪_m e^2, S^1).  The cellular
 # complex of X has one cell in dimensions 0, 1, 2 with d_1 = 0 and d_2 = m, so
 # H_0 = Z, H_1 = Z/m and H_2 = 0.  This is the group data on which the exactness
-# failures certified in proofs/cards/MooreSpaceExactness.lean turn: T_1(X) = Z/m
+# failures certified in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/MooreSpaceExactness.lean> turn: T_1(X) = Z/m
 # is nontrivial while T_1(A) and T_1(X,A) = coker(Z --m--> Z) restricted to the
 # torsion of Z vanish, and MT_1(A) = Z is not hit by multiplication by m.
 for m in [2, 3, 4, 5, 6, 12]:

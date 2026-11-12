@@ -41,7 +41,7 @@ audit:
   date: 2026-10-31
   note: >-
     The dimension step's mechanism is now certified in the form the card uses, with the finiteness
-    hypothesis explicit: proofs/cards/FamilyQuotient.lean proves that when the family $(f_i)$ is
+    hypothesis explicit: <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FamilyQuotient.lean> proves that when the family $(f_i)$ is
     carried by a finite set of indices, the canonical map $\bigoplus_i f_i\to\prod_i f_i$ is
     surjective (`directSumToPi_surjective_of_finite_support`), so the quotient
     $\prod_i f_i\big/\bigoplus_i f_i$ is trivial (`quotient_subsingleton_of_finite_support`), with
@@ -61,7 +61,7 @@ audit:
     the quotient sequence for the three terms, products and direct sums of exact sequences being
     exact. The exactness axiom is now cited to p. 160. The S^0 step was reworded: what the
     dimension step needs is the finite-support surjectivity of oplus -> prod, which is what
-    proofs/cards/FamilyQuotient.lean certifies (quotient_subsingleton_of_finite_support); the
+    <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FamilyQuotient.lean> certifies (quotient_subsingleton_of_finite_support); the
     earlier sentence invoking an isomorphism of sum and product blurred that. What is not
     covered: the identification of the f_i with reduced homology groups is not formalized, as the
     README for that certificate says.
@@ -178,7 +178,7 @@ The dimension axiom holds.
 
 ::: pf-proof
 
-A point has every reduced homology group zero, so $Q(\mathrm{pt})=0$ and $\widetilde h_n(\mathrm{pt})=0$ for all $n$. The reduced homology of $S^0$ is zero in every degree except $0$, where it is $\ZZ$. There the family has finite support, so the direct sum already fills the product and the quotient $Q(S^0)$ is trivial; this finite-support implication, that the canonical map $\bigoplus_i f_i\to\prod_i f_i$ is surjective when all but finitely many $f_i$ vanish, is what `proofs/cards/FamilyQuotient.lean` certifies, and it is exactly what the vanishing of the quotient needs. That file does not assert that the sum and the product are isomorphic for a family with infinite support, and there the quotient need not vanish — which is the failure exhibited in the next step.
+A point has every reduced homology group zero, so $Q(\mathrm{pt})=0$ and $\widetilde h_n(\mathrm{pt})=0$ for all $n$. The reduced homology of $S^0$ is zero in every degree except $0$, where it is $\ZZ$. There the family has finite support, so the direct sum already fills the product and the quotient $Q(S^0)$ is trivial; this finite-support implication, that the canonical map $\bigoplus_i f_i\to\prod_i f_i$ is surjective when all but finitely many $f_i$ vanish, is what <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FamilyQuotient.lean> certifies, and it is exactly what the vanishing of the quotient needs. That file does not assert that the sum and the product are isomorphic for a family with infinite support, and there the quotient need not vanish — which is the failure exhibited in the next step.
 
 :::
 

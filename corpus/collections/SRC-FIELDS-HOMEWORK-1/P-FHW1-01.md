@@ -23,7 +23,7 @@ audit:
     the sheet writes it (for F = K(t) and alpha = t no nonzero such L exists).
     The statement now requires L to be nonzero. Both directions of the corrected
     statement, and the fact that the printed hypothesis holds for L = 0, are
-    certified in Lean in proofs/cards/FieldHomework1.lean; COMPLAINTS.md records
+    certified in Lean in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FieldHomework1.lean>; COMPLAINTS.md records
     the source defect and the certificate.
 - event: solution-written
   by: claude
@@ -78,5 +78,5 @@ Both are monic, so they are equal.
 ::: {.remark}
 The sheet prints problem 1(a) with no nonvanishing condition on $L$, and with $L=\{0\}$ the printed hypothesis holds for every $\alpha\in F$, so the printed statement is false.
 The statement above adds $L\ne0$.
-The refutation of the printed form and both directions of the corrected form are checked in Lean in `proofs/cards/FieldHomework1.lean`.
+The refutation of the printed form and both directions of the corrected form are checked in Lean in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FieldHomework1.lean>.
 :::
