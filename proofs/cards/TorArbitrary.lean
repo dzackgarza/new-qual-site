@@ -369,6 +369,67 @@ noncomputable def boundariesQuotientEquiv :
 
 end PsiQuotient
 
+
+/-! ## #138 — the two ℤ-linear equivalences and the dimension-shift bridge
+
+An `AddEquiv` between two carriers with `Module ℤ` structures is a `LinearEquiv` for **any**
+choice of the two structures: every `Module ℤ` structure agrees with `zsmul` (`int_smul_eq_zsmul`)
+and an additive homomorphism preserves `zsmul` (`AddMonoidHom.map_zsmul`). The two `Module ℤ`
+instances are the lemma's explicit instance arguments, so that no instance is synthesized on the
+carrier at the application site. -/
+
+section IntLinearEquiv
+
+variable {M N : Type*} [AddCommGroup M] [AddCommGroup N]
+
+/-- **#138.** An additive equivalence `e : M ≃+ N` is a ℤ-linear equivalence `M ≃ₗ[ℤ] N`, for
+any two `Module ℤ` instances on the carriers. -/
+noncomputable def addEquiv_intLinearEquiv (e : M ≃+ N)
+    [_i : Module ℤ M] [_j : Module ℤ N] : M ≃ₗ[ℤ] N := by
+  refine e.toLinearEquiv fun c a ↦ ?_
+  convert! e.toAddMonoidHom.map_zsmul c a using 1
+  · exact congr(e $(int_smul_eq_zsmul _i c a))
+  · exact int_smul_eq_zsmul _j c (e a)
+
+end IntLinearEquiv
+
+
+/-! ## #139 — the dimension-shift bridge, assembled
+
+The homology of the tensored splice is the kernel of the tensored kernel inclusion, and `Tor₁`
+is that homology: the composite of the committed `torOneIsoTensorSplice`, the Mathlib
+`homologyIsoSc'`, `moduleCatHomologyIso` and the ℤ-linear homology equivalence above, packaged
+as an isomorphism in `ModuleCat ℤ` by `LinearEquiv.toModuleIso`. -/
+
+section Bridge
+
+variable {A P : ModuleCat ℤ} (f : P ⟶ A) [Epi f] [Projective P] (B : ModuleCat ℤ)
+
+/-- **#138, the homology equivalence.** The carrier of the homology of the tensored splice is
+the kernel of the tensored kernel inclusion, as a ℤ-linear equivalence — the promotion of the
+additive composite `boundariesQuotientEquiv` under the instance `H.isModule` on the left
+carrier, the instance `Submodule.module` on the right. -/
+noncomputable def homologyEquiv :
+    ↥((tensorSplice f B).sc' 2 1 0).moduleCatLeftHomologyData.H ≃ₗ[ℤ] ↥(kerIncl f B) :=
+  addEquiv_intLinearEquiv (boundariesQuotientEquiv f B)
+    (_i := ((tensorSplice f B).sc' 2 1 0).moduleCatLeftHomologyData.H.isModule)
+    (_j := AddCommGroup.toIntModule (↥(kerIncl f B)))
+
+/-- **#139.** `Tor₁(A, B) ≅ ker(ι ⊗ B)`: the composite of the committed
+`torOneIsoTensorSplice`, Mathlib's `homologyIsoSc'`, `moduleCatHomologyIso`, and the ℤ-linear
+homology equivalence above, as an isomorphism in `ModuleCat ℤ`. -/
+noncomputable def torOneIsoKerIncl :
+    torOne A B ≅ ModuleCat.of ℤ ↥(kerIncl f B) :=
+  (torOneIsoTensorSplice f B) ≪≫
+    ((tensorSplice f B).homologyIsoSc' 2 1 0
+      (ComplexShape.prev_eq' (c := ComplexShape.down ℕ) (by simp))
+      (ComplexShape.next_eq' (c := ComplexShape.down ℕ) (by simp))) ≪≫
+    (((tensorSplice f B).sc' 2 1 0).moduleCatHomologyIso) ≪≫
+    (homologyEquiv f B).toModuleIso
+
+end Bridge
+
+
 end TorArbitrary
 
 #print axioms TorArbitrary.presComplex_d_1_0
@@ -393,3 +454,6 @@ end TorArbitrary
 #print axioms TorArbitrary.psiAdd_ker
 #print axioms TorArbitrary.psiAddQuotientEquiv
 #print axioms TorArbitrary.boundariesQuotientEquiv
+#print axioms TorArbitrary.addEquiv_intLinearEquiv
+#print axioms TorArbitrary.homologyEquiv
+#print axioms TorArbitrary.torOneIsoKerIncl
