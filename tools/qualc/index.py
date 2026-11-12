@@ -171,12 +171,12 @@ def validate(
                 )
             )
         for entry in entries:
-            if root is not None and not (root / entry.file).is_file():
+            if root is not None and not certificate.exists(root, entry.file):
                 errors.append(
                     Diagnostic(
                         DiagnosticCode.CERTIFICATE_FILE_MISSING,
                         "proofs/README.md",
-                        f"names {entry.file} for {card_id}, and it does not exist",
+                        f"links {entry.file} for {card_id}, and its target does not exist",
                     )
                 )
 

@@ -346,7 +346,7 @@ def _proof_status(meta: dict[str, object], relative_path: Path) -> str:
 
     Three states, and the page says which one without a reader having to
     compare the card's `review:` field against a table in `proofs/README.md`:
-    certified, with the certificate files linked and the checking tool named;
+    certified, with the certificates linked and the checking tool named;
     reviewed; or draft. `meta["proof_status"]` is the catalog's derived word, so
     the page cannot disagree with the crawl that checks it is there.
     """
@@ -363,7 +363,13 @@ def _proof_status(meta: dict[str, object], relative_path: Path) -> str:
         tool = item.get("tool")
         if not isinstance(file, str) or not isinstance(tool, str):
             continue
-        href = escape(_relative_url(relative_path, Path(file)), quote=True)
+        # A Lean certificate is a link off-site now (issue #141): the file at
+        # a named commit of this repository, or a declaration on lean-category
+        # main. Only the Sage and GAP certificates are local files.
+        if file.startswith("https://"):
+            href = escape(file, quote=True)
+        else:
+            href = escape(_relative_url(relative_path, Path(file)), quote=True)
         links.append(f'{escape(tool)} <a href="{href}"><code>{escape(file)}</code></a>')
     if links:
         parts.append(" — " + ", ".join(links))

@@ -17,12 +17,15 @@ from __future__ import annotations
 import re
 import shutil
 import sqlite3
+import urllib.error
+import urllib.request
 from pathlib import Path
 
 import pytest
-from conftest import diagnostic_codes, fixture_repo, run_qualc
+from conftest import ROOT, diagnostic_codes, fixture_repo, run_qualc
 from qualc import certificates
 from qualc import crawl as crawl_module
+from qualc import static_site
 from qualc.crawl import crawl
 from qualc.diagnostics import DiagnosticCode
 
@@ -325,3 +328,116 @@ def test_the_crawl_passes_the_built_site(built: Path) -> None:
 
     assert result.missing_status == ()
     assert (built / "tag" / "P-CERTIFIED-ONE.html").resolve() in result.seen
+
+
+LINK_README = """# Proof artifacts
+
+## 1. Group lemmas proved in Lean
+
+| File | Card | What it proves |
+| --- | --- | --- |
+| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/One.lean> | `P-ONE` | one card, its file at a named commit of this repository |
+"""
+
+
+def test_the_registry_reads_a_link_row(tmp_path: Path) -> None:
+    """A section 1 row may be a link: the file at a named commit of this repository.
+
+    The `.lean` files left the repository (issue #141), so a Lean certificate is
+    a link rather than a working-tree path; the registry reads it as one and
+    keeps the Sage and GAP rows as the paths they still are.
+    """
+    (tmp_path / "README.md").write_text(LINK_README)
+
+    registry = certificates.load(tmp_path)
+
+    assert registry == {
+        "P-ONE": (
+            certificates.Certificate(
+                "https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/One.lean",
+                "Lean",
+            ),
+        )
+    }
+
+
+def test_one_real_row_of_section_one_links_its_file_at_the_named_commit() -> None:
+    """The check reads one real row: `P-FHW1-01`'s, the registry's own first.
+
+    The row is the one at the head of section 1, and its link names the file at
+    commit `16c09abaa4` — the commit the migration into lean-categories reads
+    and the one this repository keeps the certificates readable at. The target
+    exists in this clone's own history, so the check passes on it here and in
+    any checkout that carries the history.
+    """
+    registry = certificates.load(ROOT / "proofs")
+    entry = registry["P-FHW1-01"][0]
+
+    assert entry.file == "https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FieldHomework1.lean"
+    assert certificates.exists(ROOT, entry.file)
+
+
+def test_a_row_linking_a_file_the_named_commit_does_not_carry_is_an_error() -> None:
+    """A link to a file at a named commit that is not there fails the check.
+
+    The commit is real and the directory is right; only the file is wrong, which
+    is the shape a typo in a row produces.
+    """
+    assert not certificates.exists(
+        ROOT,
+        "https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/Nope.lean",
+    )
+
+
+def test_a_declaration_on_lean_category_main_is_checked_over_http(monkeypatch: pytest.MonkeyPatch) -> None:
+    """The lean-categories form is checked by asking its main.
+
+    A declaration on `dzackgarza/lean-categories` main lives in another
+    repository, so the check follows the link over HTTP: the target answers 200
+    when it exists and 404 when it does not. Both answers are stubbed here, so
+    the test says what the check does with each and nothing about today's
+    network.
+    """
+
+    class Response:
+        status = 200
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_):
+            return False
+
+    def reachable(url, **_):
+        return Response()
+
+    monkeypatch.setattr(urllib.request, "urlopen", reachable)
+    assert certificates.exists(
+        ROOT,
+        "https://github.com/dzackgarza/lean-categories/blob/main/LeanCategories/Algebra/AssociatedGraded.lean",
+    )
+
+    def missing(url, **_):
+        raise urllib.error.HTTPError(url, 404, "Not Found", None, None)
+
+    monkeypatch.setattr(urllib.request, "urlopen", missing)
+    assert not certificates.exists(
+        ROOT,
+        "https://github.com/dzackgarza/lean-categories/blob/main/LeanCategories/Algebra/Nope.lean",
+    )
+
+
+def test_the_status_line_links_a_certificate_url() -> None:
+    """A Lean certificate that is a link is linked as one, not as a local file.
+
+    The relative-URL form the status line builds for the Sage and GAP files
+    would mangle a `https://` certificate into a broken relative path, so a link
+    certificate is emitted as the URL it is.
+    """
+    url = "https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/One.lean"
+    meta = {"proof_status": "certified", "certificates": [{"file": url, "tool": "Lean"}]}
+
+    line = static_site._proof_status(meta, Path("tag/P-ONE.html"))
+
+    assert f'<a href="{url}"><code>{url}</code></a>' in line
+    assert "../../../" not in line
