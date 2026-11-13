@@ -50,6 +50,24 @@ audit:
   date: 2026-11-13
   note: >-
     The exercise is on printed p. 358, and it is exactly the statement of Hatcher's Proposition 4.1, printed p. 342, whose proof the book prints there: a covering space $p:(\tilde X,\tilde A,\tilde x_0)\to(X,A,x_0)$ with $\tilde A=p^{-1}(A)$ induces an isomorphism on $\pi_n$ for $n\ge2$, first for $\tilde X\to X$ by lifting a homotopy of maps of $S^n$ through the covering homotopy property, then for the pair by applying the five-lemma to the long exact sequences of the two pairs. The card's proof is that proof, with the lifting criterion of Proposition 1.33 (printed p. 61) named where the book names it. Checked against the book: the printed statement of Proposition 4.1 including the hypothesis $\tilde A=p^{-1}(A)$ and the path-connectedness of $\tilde X$, and the long exact sequence of Theorem 4.3 on p. 344 that the five-lemma step uses.
+- event: source-corrected
+  by: claude
+  date: 2026-11-13
+  note: >-
+    The preceding note's claim that Exercise 6 "is exactly the statement of Hatcher's Proposition
+    4.1" is false and is withdrawn. Proposition 4.1, printed p. 342, is the absolute statement
+    $p_*:\pi_n(\tilde X,\tilde x_0)\to\pi_n(X,x_0)$, with proof by the lifting criterion and the
+    covering homotopy property. The exercise, printed p. 358, is the relative statement
+    $p_*:\pi_n(\tilde X,\tilde A,\tilde x_0)\to\pi_n(X,A,x_0)$ for the pair with
+    $\tilde A=p^{-1}(A)$, which the book does not print. The card's remark now says what is printed
+    where, and records why the relative case is not Proposition 4.1 plus the five-lemma: in the
+    ladder of Theorem 4.3 the map $p_*:\pi_1(\tilde A)\to\pi_1(A)$ is injective and not in general
+    surjective, so at $\pi_2$ the five-lemma gives injectivity only. The proof itself is unchanged
+    and is the book's lifting argument for triples $(D^n,S^{n-1},s_0)$. Not established here: a
+    published proof of the relative statement. Searched for one without result in the retained
+    sets (Sam, Li, DeMason, Poulsen, Stanford Math 215C Solution Sets 1--5, the UCR Math 205B help
+    file, May's *Concise Course* §4, Bredon Chapters III and VII, Maxim's Math 752 notes) and in
+    Hatcher's printed text and its errata.
 ---
 
 ::: {.problem}
@@ -85,6 +103,6 @@ $$
 $$
 :::
 
-::: {.remark title="Published solution"}
-Hatcher, *Algebraic Topology* (2002), Proposition 4.1 and its printed proof, p. 342, which states exactly this exercise (a covering of pairs with $\tilde A=p^{-1}(A)$ induces an isomorphism on $\pi_n$ for $n\ge2$) and proves it by lifting and the five-lemma. The exercise is Exercise 6 of §4.1, printed p. 358.
+::: {.remark title="Source"}
+The exercise is Exercise 6 of §4.1, printed p. 358. Hatcher's Proposition 4.1, printed p. 342 with its proof there, is the absolute statement only: for a covering space projection $p:(\tilde X,\tilde x_0)\to(X,x_0)$, the map $p_*:\pi_n(\tilde X,\tilde x_0)\to\pi_n(X,x_0)$ is an isomorphism for all $n\ge2$, by the lifting criterion of Proposition 1.33 (printed p. 61) for surjectivity and the covering homotopy property for injectivity. The relative statement for a pair, with $\tilde A=p^{-1}(A)$, is not printed in the book, and it does not follow from Proposition 4.1 by the five-lemma: in the ladder of the two long exact sequences of Theorem 4.3 (printed p. 344) the map at $\pi_1$ is only injective, so at $\pi_2$ the five-lemma yields injectivity of $p_*:\pi_2(\tilde X,\tilde A)\to\pi_2(X,A)$ and not surjectivity. The proof above is the book's argument carried out directly for triples $(D^n,S^{n-1},s_0)$ instead of $S^n$: $D^n$ and $D^n\times I$ are simply connected, so Proposition 1.33 lifts the disk and the relative homotopy, whose boundary then lands in $p^{-1}(A)=\tilde A$.
 :::
