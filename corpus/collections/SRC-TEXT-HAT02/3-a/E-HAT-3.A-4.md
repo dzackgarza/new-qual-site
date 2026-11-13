@@ -58,6 +58,11 @@ audit:
     3A.5(1) (p. 265) for the symmetry step and Lemmas 3A.1-3A.2 (pp. 262-263) for
     $\operatorname{Tor}$ being computed from a free resolution. Not claimed: that the card reproduces
     Weibel's derivation line for line — his is the categorical one, and the card says so.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-13
+  note: >-
+    Re-read for the published-solution obligation. Both identities are published as corollaries of the exactness of filtered colimits of modules in Weibel, *An Introduction to Homological Algebra*, Corollary 2.6.17 with the surrounding section, printed p. 58, cited on the card with the two facts the derivation uses. Checked against the book: the exercise's printed statement on p. 267, Hatcher's definition of Tor by free resolutions (Lemma 3A.2, p. 263) and Proposition 3A.5(1) on the symmetry of Tor (p. 265). Not claimed: that a published solution set contains this exercise; the card says the source is the printed colimit corollary and derives the Tor statement from it.
 ---
 
 ::: {.problem}
