@@ -40,6 +40,11 @@ audit:
     coordinate is justified by permuting coordinates. No published solution of this exercise is in
     the retained sets — Sam's §4.1 covers 2, 3, 5, 10-15 and 19, DeMason's covers 2, 8 and 11, and
     Li's §4.1 Exercise 4.1.1 is blank — recorded in COMPLAINTS.md.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-13
+  note: >-
+    The exercise is on printed p. 358. The published argument is Hatcher's printed treatment of the sum in $\pi_n$, pp. 340--341: the sum uses only the first coordinate, and the homotopy $f+g\simeq g+f$ is obtained by shrinking the two domains to disjoint subcubes of $I^n$, sliding them past each other using the remaining coordinates, and enlarging them again. The card's proof is that argument written with the coordinate bookkeeping made explicit: the same sliding homotopy with the pair of coordinates $(s_1,s_2)$ gives the interchange law $(f+g)+'(h+k)=(f+'h)+(g+'k)$, and specialising it ($h$ and $g$ constant) gives $f+'k\simeq f+k$ and $g+'h\simeq h+g$. Checked against the book: the printed definition of $+$ on p. 340, the printed commutativity homotopy and its remark that only $s_1$ and $s_2$ are needed, and the converse conventions for the relative groups on p. 343. Not claimed: that the book prints this exercise; it prints the homotopy the exercise asks to verify.
 review: draft
 ---
 
@@ -79,4 +84,8 @@ $$
 (0+g)+'(h+0)=(0+'h)+(g+'0).
 $$
 The left side is homotopic to $g+'h$ and the right side to $h+g$. Since the two sums agree on homotopy classes, $[g]+[h]=[g+'h]=[h+g]=[h]+[g]$ in $\pi_n(X,x_0)$, which is therefore abelian for $n\ge2$.
+:::
+
+::: {.remark title="Published solution"}
+Hatcher, *Algebraic Topology* (2002), the printed construction of the sum in $\pi_n$ and the commutativity homotopy, pp. 340--341 (the subcubes are slid past each other using the coordinates other than the one the sum uses), with the relative conventions on p. 343. The exercise is Exercise 1 of §4.1, printed p. 358.
 :::
