@@ -56,6 +56,11 @@ audit:
     the exercise's paired-handle trace computation is assembled by instantiation. No retained
     published exercise solution performs that computation. The mathematics and Dugger citation
     remain, but the complete published-solution obligation remains open.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-13
+  note: >-
+    Re-read for the source obligation of the card. The exercise is on printed p. 184 and asks for the even-genus analog of Example 2C.4, which the book works out for genus $3$ on printed p. 181; the construction of the involution is Dugger, *Involutions on surfaces*, §2.7, printed pp. 11--12, with Theorem 4.1(a) on p. 18 identifying the even-genus free involution, both already cited on the card. Checked: the printed statement, Example 2C.4's trace computation $\tau(f)=1-0-1$ on p. 181, and the antipodal degree on the central sphere. Not claimed: that a published source works this exercise; the card's own trace computation for the even-genus model is what the citation supports.
 ---
 ---
 
