@@ -63,6 +63,11 @@ audit:
     $\beta_{\tilde\gamma}$ cannot be dropped. Not checked: nothing in the source is left unread, but
     the source's page numbering is its own (the sheet is one page) and the file carries no date
     beyond the sheet's own heading.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-13
+  note: >-
+    Re-read for the published-solution obligation. The complete published solution is Nicholas Proudfoot, *Math 634: Algebraic Topology I* (University of Oregon, Fall 2015), Solutions to Homework #6, Hatcher §4.1 Exercise 4, printed p. 1: the two-line naturality computation $p_*\beta_{\tilde\gamma}\gamma_*(\alpha)=\beta_\gamma p_*\gamma_*(\alpha)=\beta_\gamma p_*(\alpha)$, with $p\gamma=p$ used for the second equality. Checked against the book: the printed exercise on p. 358, the definition of the action on p. 342 and the formulas (1)--(3) on p. 341. The card writes out the naturality step and the basepoint bookkeeping that the published solution compresses.
 ---
 
 ::: {.problem}
