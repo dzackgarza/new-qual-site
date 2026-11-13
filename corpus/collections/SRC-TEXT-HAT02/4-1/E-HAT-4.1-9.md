@@ -52,6 +52,25 @@ audit:
     $\pi_0(X,A,x_0)$ from those at $\pi_0(A,x_0)$ and $\pi_0(X,x_0)$, and the surjectivity at
     $\pi_0(A,x_0)$ for the components of $B$ lying in the component of $y_0$ in $Y$. Part (b) is
     correct as printed and its example is checked point by point.
+- event: source-checked
+  by: claude
+  date: 2026-11-13
+  note: >-
+    Read Hatcher's published errata list for *Algebraic Topology*
+    (pi.math.cornell.edu/~hatcher/AT/ATerrata.pdf) for this exercise, as #123 asks. The only entry
+    bearing on it is "§4.1, page 358, Exercise 9, first line. To avoid an abuse of notation, replace
+    $\pi_0(A,x_0)$ by $i_*(\pi_0(A,x_0))$. (The previous version of this correction mistakenly said
+    $i^*$ instead of the correct $i_*$.)" That is a notational correction of the displayed term and
+    changes no hypothesis. The current online text of the book (AT.pdf, printed p. 358) carries it
+    and is otherwise identical to the 2002 printing: part (a) still concludes that one of the maps
+    is a bijection "if the four surrounding maps are bijections for all choices of $x_0$". So the
+    errata supplies no corrected statement and does not repair the failure at the $\pi_0(A,x_0)$
+    term; the counterexample on this card survives the corrected notation, since
+    $i_*\pi_0(A,x_0)$ is the whole of $\pi_0(X,x_0)$ in it. The repaired statement proved above
+    therefore stands as the card's own. Not established here: a published proof of that repaired
+    statement. Searched without result in the retained sets (Sam, Li, DeMason, Poulsen, Stanford
+    Math 215C Solution Sets 1--5, the UCR Math 205B help file, May's *Concise Course* §4, Maxim's
+    Math 752 notes) and in Hatcher's text and errata.
 ---
 
 ::: {.problem}
