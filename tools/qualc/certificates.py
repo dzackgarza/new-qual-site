@@ -5,11 +5,10 @@ two authored sources decide it:
 
 - **certified** — `proofs/README.md` lists a certificate for the card, in
   one of the two sections that hold them (Lean lemmas, exact finite
-  computations). The Lean certificates are links — the file at a named commit
-  of this repository, or a declaration on lean-category main — because the
-  `.lean` files left the repository (issue #141). The Sage and GAP
-  certificates are files that remain. What is named on the page decides the
-  tool: `.lean` is Lean, `.sage` exact Sage, `.g` exact GAP.
+  computations). A Lean certificate is a link to a file at a named commit
+  of this repository or to a declaration on lean-categories main. The Sage
+  and GAP certificates are files that remain. What is named on the page
+  decides the tool: `.lean` is Lean, `.sage` exact Sage, `.g` exact GAP.
 - **reviewed** — no certificate, and the card's `review:` field says a review
   has happened (`reviewed`, or the reserved `verified`).
 - **draft** — neither.
@@ -30,7 +29,7 @@ would certify cards on the strength of a sentence that says the opposite.
 Within a certificate table a row's file is the cell that is nothing but one
 backticked `cards/...` path, or one `<https://github.com/dzackgarza/...>` link
 naming a file at a commit of this repository or a declaration on
-lean-category main. The two section-2 tables differ: one carries its
+lean-categories main. The two section-2 tables differ: one carries its
 file in a third column, the other carries it in the paragraph above the table,
 so a row with no file cell inherits the last path or link named before it.
 `bary_regression.py` is not a certificate -- its own row says so -- so only the
@@ -57,12 +56,12 @@ CERTIFICATE_SECTIONS = (1, 2)
 # is elaborated, a `.sage` file is an exact finite computation in Sage.
 TOOLS = {".lean": "Lean", ".sage": "exact Sage", ".g": "exact GAP"}
 
-# A Lean certificate is a link, since the `.lean` files left the repository
-# (issue #141): the file at a named commit of this repository, or a
-# declaration on lean-category main. Both are GitHub blob URLs.
+# A Lean certificate is a link to a file at a named commit of this
+# repository, or a declaration on lean-categories main. Both are GitHub
+# blob URLs.
 GITHUB = "https://github.com/dzackgarza/"
 THIS_REPOSITORY = GITHUB + "new-qual-site/blob/"
-LEAN_CATEGORY = GITHUB + "lean-categories/blob/"
+LEAN_CATEGORIES = GITHUB + "lean-categories/blob/"
 
 _SECTION = re.compile(r"^## (\d+)\.")
 _SUBSECTION = re.compile(r"^## ")
@@ -70,7 +69,7 @@ _INLINE = re.compile(r"`([^`]+)`")
 _CARD_ID = re.compile(r"[PE]-[A-Z0-9]+(?:[.\-][A-Z0-9]+)*")
 _CARD_REF = re.compile(r"-[A-Z0-9]+(?:\.[A-Z0-9]+)*")
 _FILE = re.compile(
-    rf"(?:{re.escape(THIS_REPOSITORY)}|{re.escape(LEAN_CATEGORY)})"
+    rf"(?:{re.escape(THIS_REPOSITORY)}|{re.escape(LEAN_CATEGORIES)})"
     rf"[^\s<>`]+|cards/[^`\s]+\.(?:lean|sage|g)"
 )
 
@@ -81,7 +80,7 @@ class Certificate:
 
     # Either a link to the artifact — the file at a named commit of this
     # repository (`https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/
-    # proofs/cards/BarySign.lean`) or a declaration on lean-category main —
+    # proofs/cards/BarySign.lean`) or a declaration on lean-categories main —
     # or a repository-relative path with the `proofs/` prefix, for the Sage
     # and GAP certificates that still live here.
     file: str
@@ -131,14 +130,14 @@ def exists(root: Path, file: str) -> bool:
     """Whether the link's target exists.
 
     A section 1 row links a file at a named commit of this repository or a
-    declaration on lean-category main: the file is looked up in this clone's
+    declaration on lean-categories main: the file is looked up in this clone's
     own history, and the declaration over HTTP against its main. A section 2
     row names a file of the working tree.
     """
     if file.startswith(THIS_REPOSITORY):
         ref, _, path = file[len(THIS_REPOSITORY) :].partition("/")
         return _commit_has(root, ref, urlsplit(path).path)
-    if file.startswith(LEAN_CATEGORY):
+    if file.startswith(LEAN_CATEGORIES):
         return _reachable(file)
     return (root / file).is_file()
 

@@ -343,9 +343,10 @@ LINK_README = """# Proof artifacts
 def test_the_registry_reads_a_link_row(tmp_path: Path) -> None:
     """A section 1 row may be a link: the file at a named commit of this repository.
 
-    The `.lean` files left the repository (issue #141), so a Lean certificate is
-    a link rather than a working-tree path; the registry reads it as one and
-    keeps the Sage and GAP rows as the paths they still are.
+    A Lean certificate is a link to a file at a named commit of this
+    repository or to a declaration on lean-categories main; the registry
+    reads it as one and keeps the Sage and GAP rows as the paths they
+    still are.
     """
     (tmp_path / "README.md").write_text(LINK_README)
 

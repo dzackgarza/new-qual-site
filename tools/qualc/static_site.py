@@ -363,9 +363,9 @@ def _proof_status(meta: dict[str, object], relative_path: Path) -> str:
         tool = item.get("tool")
         if not isinstance(file, str) or not isinstance(tool, str):
             continue
-        # A Lean certificate is a link off-site now (issue #141): the file at
-        # a named commit of this repository, or a declaration on lean-category
-        # main. Only the Sage and GAP certificates are local files.
+        # A Lean certificate is a link to a file at a named commit of this
+        # repository, or a declaration on lean-categories main. Only the
+        # Sage and GAP certificates are local files.
         if file.startswith("https://"):
             href = escape(file, quote=True)
         else:
