@@ -39,6 +39,21 @@ audit:
   date: 2026-11-13
   note: >-
     The exercise is on printed p. 176, one line asking what happens to the basic building block when the number of handles is doubled. The construction transcribed here is Hatcher's printed construction of the Alexander horned sphere in Example 2B.2, printed pp. 170--172: the decreasing compact sets $X_0\supset X_1\supset\cdots$, balls $B_n$ with $2^n$ handles, the uniformly convergent homeomorphisms $h_n$ whose limit is a homeomorphism onto a ball $B$ with wild boundary, and the van Kampen computation of $\pi_1(\RR^3-B)$ as the ascending union of the $\pi_1(Y_n)$, each stage adding free generators with the attaching loop a commutator. The doubled case repeats that computation with four horns per handle, so the rank doubles at each stage instead of growing by $2^n$. Checked against the book: the construction, the uniform-convergence and injectivity arguments, the identification $\RR^3-B=\bigcup Y_n$, and the van Kampen input that the attaching loop represents the commutator $[\alpha_1,\alpha_2]$. Not claimed: a published analysis of the doubled block specifically; the transcription is of Hatcher's own construction for the undoubled one and the computation is carried out for the doubled one.
+- event: source-corrected
+  by: claude
+  date: 2026-11-13
+  note: >-
+    The exercise is on printed p. 177, not p. 176: the §2.B exercise list begins on p. 176 and runs
+    over the page break, and Ex. 7 with the figure of the doubled building block stands at the head
+    of p. 177. Read in Hatcher, *Algebraic Topology* (2002), p. 177 and in the current online text,
+    which prints the same statement and the same figure. The card's remark now gives p. 177. The
+    model of the doubled block used above --- each old handle replaced by four smaller ones in two
+    linked pairs, so the old meridian goes to $[a_1,a_2][a_3,a_4]$ --- is the standard analysis of
+    this exercise. Not established here: a published analysis of the doubled block. Searched
+    without result in the retained sets (Sam, Li, DeMason, Poulsen, Stanford Math 215C Solution
+    Sets 1--5, the UCR Math 205B help file, May, Bredon, Maxim) and in Hatcher's text and errata;
+    the retained papers on the horned sphere (Alexander 1924, Bing 1953) treat the undoubled
+    construction.
 ---
 ---
 
@@ -146,6 +161,6 @@ Thus every $H_1(Y_n)$ class dies at the next stage, so the direct-limit $H_1$ is
 The limiting compact set is still a topological $3$-ball: the same shrinking-horn homeomorphisms used in Hatcher's construction converge uniformly, now with four horns per old handle instead of two. Thus the doubled construction again produces a wild $2$-sphere, but with the faster-growing system of free groups described above.
 :::
 
-::: {.remark title="Published solution"}
-Hatcher, *Algebraic Topology* (2002), Example 2B.2 and its printed construction, pp. 170--172: the decreasing sequence $X_n$, the balls $B_n$ with $2^n$ handles, the limit homeomorphism, and the van Kampen computation of $\pi_1(\RR^3-B)$ as the ascending union of the $\pi_1(Y_n)$ with the attaching loop a commutator. The exercise is Exercise 7 of §2.B, printed p. 176; the doubled-handle case is that computation with four horns per handle.
+::: {.remark title="Source"}
+Hatcher, *Algebraic Topology* (2002), Example 2B.2 and its printed construction, pp. 170--172: the decreasing sequence $X_n$, the balls $B_n$ with $2^n$ handles, the limit homeomorphism, and the van Kampen computation of $\pi_1(\RR^3-B)$ as the ascending union of the $\pi_1(Y_n)$ with the attaching loop a commutator. The exercise is Exercise 7 of §2.B, printed p. 177, with the figure of the doubled building block beside it; the doubled-handle case is that computation with four horns per handle.
 :::
