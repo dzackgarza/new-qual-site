@@ -20,6 +20,22 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-17
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-13
+  note: >-
+    The "Published solution" remark was read against its sources. Its closing sentence
+    called the index category $\bullet\to\bullet$ non-filtered and gave the sheafification
+    of the cokernel of $\OO_{\PP^1}(-1)\to\OO_{\PP^1}$ as $\OO_{\PP^1}(1)$; both claims
+    are struck as false. That category has a terminal object, so it is filtered (Mac Lane,
+    Categories for the Working Mathematician, 2nd ed., section IX.1), and a colimit over a
+    category with a terminal object is the value at that object, so the sectionwise colimit
+    of that two-term system is $\OO_{\PP^1}$ itself, a sheaf. The cokernel of the map is a
+    colimit over the parallel pair of arrows, which is not filtered, and the remark now
+    asserts nothing about it. In place of the struck sentence the remark states where the
+    directedness hypothesis is spent, in steps s2 and s3, and cites Hartshorne II.1.10 for
+    the sheafification definition. Not checked: the substance of Kim's solution beyond the
+    structure the remark already recorded. No step of the proof was changed.
 ---
 
 ::: {.problem}
@@ -251,6 +267,9 @@ Step [](#s5){.pf-ref} proves that the sectionwise direct limit is already a shea
 ::: {.remark title="Published solution"}
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.11, PDF p. 5, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he replaces the cover by a finite subcover, using the noetherian hypothesis, and uses that filtered colimits commute with the finite limit which expresses the sheaf axiom, checking existence for the finite subfamily and deducing the remaining sections from uniqueness.
 The proof above is the same, with the quasi-compactness of open subsets proved in step [](#s1){.pf-ref} and uniqueness and gluing separated.
-Kim raises in a footnote the question whether the index set must be directed; the proof above states that hypothesis, and it is not removable: the sectionwise colimit of the two-term system $\OO_{\PP^1}(-1)\hookrightarrow\OO_{\PP^1}$ over the non-filtered index category $\bullet\to\bullet$ is the presheaf cokernel, whose global sections are $\Gamma(\OO_{\PP^1})/\Gamma(\OO_{\PP^1}(-1))=k$, while its sheafification $\OO_{\PP^1}(1)$ has $\Gamma=k^{2}$, so that presheaf is not a sheaf.
+Kim raises in a footnote the question whether the index set must be directed. The proof above states that hypothesis, and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} are where it is spent: finitely many conditions, each of which holds at some stage of the system, hold together at one later stage.
+The hypothesis is the one Hartshorne II.1.10 uses, where the direct limit of a system of sheaves is defined as the sheafification of the sectionwise presheaf; what the exercise adds is that on a noetherian space that sheafification is the identity (step [](#s5){.pf-ref}).
+A two-term system does not show the hypothesis to be removable, because it does not leave the filtered case: the index category $\bullet\to\bullet$ has a terminal object and is therefore filtered (Mac Lane, *Categories for the Working Mathematician*, 2nd ed., §IX.1), and a colimit over a category with a terminal object is the value at that object, since the map a cocone assigns to it determines all the others.
+So the sectionwise colimit of $\OO_{\PP^1}(-1)\to\OO_{\PP^1}$ over $\bullet\to\bullet$ is $\OO_{\PP^1}$ itself, a sheaf, and the cokernel of that map is not a colimit over $\bullet\to\bullet$ at all: a cokernel is a colimit over the parallel pair $\bullet\rightrightarrows\bullet$, which has no terminal object and is not filtered.
 Agree on the directed statement.
 :::
