@@ -52,6 +52,11 @@ audit:
     with $c_u=\varepsilon(1-u/2)$, $d_u=(1-u\varepsilon)/2$, whose ends are $\gamma(f+g)$ and
     $\gamma f+\gamma g$, and $\partial\beta_\gamma=\beta_\gamma\partial$. No published solution of
     this exercise is in the retained sets; Sam's §4.1 covers 2, 3, 5, 10-15 and 19.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-13
+  note: >-
+    The exercise is on printed p. 358 and asks for the change-of-basepoint properties of Hatcher p. 345 to be extended to relative homotopy groups. The published complete treatment is May, *A Concise Course in Algebraic Topology*, §5 "Change of basepoint", printed pp. 68--69: $\pi_n(X,A,a)$ is identified with $\pi_0$ of a fibre, a path class $[\alpha]$ in $A$ from $a$ to $a'$ induces an isomorphism $\tau[\alpha]$, and the printed Theorem on p. 69 gives both naturality squares $f_*\tau[\alpha]=\tau[f\circ\alpha]f_*$ and $\tau[h(a)]f_*=f'_*$ for a homotopy $h$. The card's proof is that construction written in Hatcher's cubical model, with the rescaling of the smaller cube and the compatibility with the boundary map. Checked against the book: Hatcher's own description of the relative $\beta_\gamma$ on p. 345, the formulas (1)--(3) on p. 341, and the long exact sequence of Theorem 4.3 on p. 344. Not claimed: that Hatcher prints the exercise; May prints the theorem for the relative groups.
 ---
 
 ::: {.problem}
@@ -97,4 +102,8 @@ $$
 so that $(c_0,d_0)=(\varepsilon,\tfrac12)$ and $(c_1,d_1)=(\tfrac{\varepsilon}{2},\tfrac{1-\varepsilon}{2})$, and let the moving boxes be $[c_u,d_u]\times[\varepsilon,1-\varepsilon]^{n-2}\times[0,1-\varepsilon]$ and its mirror image $[1-d_u,1-c_u]\times\cdots$, carrying $f$ and $g$ with first argument the affine map of the box onto $[0,1]$ and the shell carrying $\gamma$ composed with the corresponding distance function. Every stage is a map of triples, because the boundary of each moving box carries $x_1$ on the $f$- and $g$-side (the first argument is then $0$ or $1$) and $\gamma(1)=x_1$ on the shell side; and $u=0$ gives $\gamma(f+g)$ while $u=1$ gives $\gamma f+\gamma g$. Hence $\beta_\gamma(f+g)\simeq\beta_\gamma f+\beta_\gamma g$ and $\beta_\gamma$ is a homomorphism for $n\ge2$.
 
 *Compatibility with the exact sequence.* The boundary map $\partial:\pi_n(X,A,x_1)\to\pi_{n-1}(A,x_1)$ restricts a representative to the face $s_n=0$. Under the construction, the restriction of $\gamma f$ to that face is the same construction applied to the restriction of $f$, with the same shell; so $\partial\beta_\gamma=\beta_\gamma\partial$ for the absolute change-of-basepoint maps on $\pi_{n-1}(A,x_1)$. Together with naturality, this says the action of $\pi_1(A,x_0)$ on the relative groups by $[\gamma]\mapsto\beta_\gamma$ commutes with every map of the long exact sequence of the pair, as Hatcher states on p. 345, and that $\pi_n(X,A,x_0)$ is independent of the basepoint in $A$ when $A$ is path-connected.
+:::
+
+::: {.remark title="Published solution"}
+Michael May, *A Concise Course in Algebraic Topology*, §5 "Change of basepoint", printed pp. 68--69: the relative change-of-basepoint isomorphisms $\tau[\alpha]$ and the Theorem on p. 69 with the naturality and homotopy squares. The exercise is Exercise 7 of §4.1, printed p. 358; Hatcher describes the relative $\beta_\gamma$ on p. 345 and leaves these properties to the exercise.
 :::
