@@ -41,6 +41,11 @@ audit:
     for a published solution outside the retained sets — Proudfoot's Math 634 sets, MA3403 (NTNU, 2018)
     exercise sheets with solutions, Hutchings' Math 215a sets, Riemannian Hunger, hat-sols.com — none
     covers §4.A; COMPLAINTS.md records the search.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-13
+  note: >-
+    The exercise is on printed p. 426. The published argument is Hatcher's Example 4A.3, printed p. 422: for an H-space $X$ with identity $x_0$ the action of $\pi_1(X,x_0)$ on $\pi_n(X,x_0)$ is trivial, because the multiplication moves the basepoint along $x_0\cdot\gamma$ while leaving the map $f$ fixed. A topological group is an H-space with a two-sided identity and an inverse, so the same homotopy applies; the card's proof is that argument with the multiplication and the inverse written out, converting the unbased homotopy $f\simeq g$ into the based one through $f\cdot(g^{-1})$ evaluated at the moving basepoint. Checked against the book: the printed statement of Example 4A.3, the definition of the action in Proposition 4A.1 on p. 422, and the printed exercise on p. 426 which asks exactly for the basepoint-preserving conclusion. Not claimed: that Hatcher prints the exercise.
 ---
 
 ::: {.problem}
@@ -120,4 +125,8 @@ $F: (Z \times I, \{z_0\} \times I) \to (X, x_0)$ is a pointed homotopy between $
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Hatcher, *Algebraic Topology* (2002), Example 4A.3, printed p. 422 (an H-space acts trivially on its homotopy groups), with the action defined in Proposition 4A.1 on the same page. The exercise is Exercise 1 of §4.A, printed p. 426, and a topological group is an H-space in the sense of the example.
 :::
