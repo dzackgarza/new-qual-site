@@ -40,6 +40,11 @@ audit:
     definitions on pp. 261-266: $C_*(X;G)=C_*(X)\otimes G$, $\operatorname{Tor}_n=0$ for $n>1$, and
     Tor as defined from a free resolution. No published solution of this exercise is in the
     retained sets; recorded in COMPLAINTS.md.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-13
+  note: >-
+    The exercise is on printed p. 267. Its published proof is Hatcher's own: Theorem 3A.3 (universal coefficients for homology with coefficients), printed p. 264 with its complete proof, and Proposition 3A.5, printed pp. 265--266 with its complete proof, which gives the two facts the deduction needs (that $\operatorname{Tor}(\ZZ^{r},F)=0$ and that $\operatorname{Tor}(T,F)$ has dimension equal to the number of $p$-power summands killed by the characteristic). The card's proof is that deduction written out: the UCT splits $H_n(X;F)$ into $H_n(X;\ZZ)\otimes F$ plus $\operatorname{Tor}(H_{n-1}(X;\ZZ),F)$, and the alternating sum of the dimensions telescopes because the torsion correction appears with a compensating sign in the neighbouring degree. Checked against the book: the printed statement, the finite-generation hypothesis, and the two coefficient cases (characteristic zero and characteristic $p$). Not claimed: that the book prints this exercise; it prints the two theorems the exercise applies.
 ---
 
 ::: {.problem}
@@ -85,4 +90,8 @@ $$
 =\sum_n(-1)^nr_n
 =\chi(X).
 $$
+:::
+
+::: {.remark title="Published solution"}
+Hatcher, *Algebraic Topology* (2002): Theorem 3A.3 (universal coefficients), printed p. 264 with its proof, and Proposition 3A.5, printed pp. 265--266 with its proof. The exercise is Exercise 1 of §3.A, printed p. 267.
 :::
