@@ -61,6 +61,18 @@ audit:
   date: 2026-11-13
   note: >-
     Re-read for the source obligation of the card. The exercise is on printed p. 184 and asks for the even-genus analog of Example 2C.4, which the book works out for genus $3$ on printed p. 181; the construction of the involution is Dugger, *Involutions on surfaces*, §2.7, printed pp. 11--12, with Theorem 4.1(a) on p. 18 identifying the even-genus free involution, both already cited on the card. Checked: the printed statement, Example 2C.4's trace computation $\tau(f)=1-0-1$ on p. 181, and the antipodal degree on the central sphere. Not claimed: that a published source works this exercise; the card's own trace computation for the even-genus model is what the citation supports.
+- event: source-checked
+  by: claude
+  date: 2026-11-13
+  note: >-
+    Re-read the printed statement for #123: the exercise is Exercise 6 of §2.C on printed p. 184,
+    identical in the current online text ("Do an even-genus analog of Example 2C.4 by replacing the
+    central torus by a sphere letting $f$ be a homeomorphism that restricts to the antipodal map on
+    this sphere"), and the card states it word for word. The obligation that #123 records is
+    unchanged and stays open: Dugger supplies the involution and its quotient, not a solution of
+    this exercise, and no published solution of the exercise was located. Searched without result in
+    the retained sets (Sam, Li, DeMason, Poulsen, Stanford Math 215C Solution Sets 1--5, the UCR
+    Math 205B help file, May, Bredon, Maxim's Math 752 notes) and in Hatcher's text and errata.
 ---
 ---
 
