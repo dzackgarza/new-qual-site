@@ -33,6 +33,17 @@ audit:
     published solution of this exercise is in the retained sets — Sam has no §3.B at all, Stanford
     215C solution2 covers only §3.B exercises 1 and 3, Li's contents stop at §3.3, and DeMason's
     chapter-three appendix appears nowhere in his table of contents — recorded in COMPLAINTS.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-13
+  note: >-
+    Re-read the printed statement for #123: the exercise is Exercise 2 of §3.B on printed p. 280,
+    identical in the current online text, and the card states it word for word, including the
+    bracketed hint $h(c)=f(e\otimes c)$. The obligation that #123 records is unchanged and stays
+    open: no published solution of this exercise was located. Searched without result in the
+    retained sets (Sam, Li, DeMason, Poulsen, Stanford Math 215C Solution Sets 1--5, the UCR Math
+    205B help file, May, Bredon, Weibel's chapters 2--3 extracts, Maxim's Math 752 notes) and in
+    Hatcher's text and errata.
 ---
 
 ::: {.problem}
