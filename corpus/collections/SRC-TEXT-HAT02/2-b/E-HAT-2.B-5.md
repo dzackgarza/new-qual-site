@@ -79,6 +79,11 @@ audit:
     recorded is verification of its argument, not acceptance of the thread as a published
     solution; no use is made of the retracted interior-of-A-minus-Z condition. The
     Alexander-intersection proof, the k = n case and the statement are unchanged.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-13
+  note: >-
+    The exercise is on printed p. 176. Its published proof is Putman, *The generalized Schoenflies theorem*, printed pp. 3--4 (Mazur's proof): a topological embedding $\varphi:S^{n-1}\to S^n$ whose image has a collar on one side bounds a ball. The card's use of it is checked: the intersection hypothesis gives $D'$ a collar on the side away from $\Sigma$, so Putman's theorem makes $D'$ a closed $k$-disk in $S^n$; Hatcher's Proposition 2B.1(a), printed p. 169 with its proof on pp. 169--170, then makes $X=S^n-D'$ acyclic, and the excision and Mayer--Vietoris steps of the card give the isomorphism. Checked against the book: the printed statement, the hypothesis on $D^n$, and the case $k=n$. Not claimed: a published solution of the exercise itself; the transcription is of Putman's theorem and of Hatcher's printed proposition, and the assembly between them is the card's own and is checked.
 ---
 
 ::: {.problem}
@@ -177,4 +182,8 @@ For $k<n$, step [](#complement-homology){.pf-ref} leaves only degree $r$ to chec
 :::
 
 :::
+:::
+
+::: {.remark title="Published solution"}
+Andrew Putman, *The generalized Schoenflies theorem*, printed pp. 3--4 (Mazur's proof: a topological embedding $S^{n-1}\to S^n$ with a collar on one side bounds a ball), together with Hatcher, *Algebraic Topology* (2002), Proposition 2B.1(a) and its printed proof, pp. 169--170. The exercise is Exercise 5 of §2.B, printed p. 176; the disk $D^n$ supplies the collar Putman's theorem needs, and Hatcher's (a) is what makes $X=S^n-D'$ acyclic.
 :::
