@@ -56,6 +56,46 @@ audit:
     Solution Sets 1--5, the UCR Math 205B help file, May, Bredon, Maxim's Math 752 notes) and in
     Hatcher's text and errata; the Math 538 set held here is a scan with no text layer and opens at
     §3.2 (Borsuk--Ulam), not at §3.B.
+- event: source-checked
+  by: claude
+  date: 2026-11-13
+  note: >-
+    The published solution of the exercise has now been located and read: C. Kottke, *Math 2420
+    Problem Set 3 solutions* (Brown University, Spring 2012),
+    `tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.pdf`, 3 pp., sha256
+    e84fd60496037db45bb18457b7c922233f5912a41b5d067112ba75a8211c22a7, Problem 1, printed p. 1. Its
+    Problem 1 states both that $M$ and $N$ are orientable if and only if $M\times N$ is and that
+    $\alpha\times\beta$ is a fundamental class when $\alpha,\beta$ are, and proves them: the local
+    cross product $H_m(M|x)\otimes H_n(N|y)\to H_{m+n}(M\times N|x\times y)$ is an isomorphism by the
+    relative Künneth theorem, for $R=\ZZ$ at a point and after replacing points by closed balls; the
+    product of orientations is an orientation of $M\times N$; and for closed manifolds the Künneth
+    formula for $M\times N$ leaves $H_m(M)\otimes H_n(N)$. So this is a complete published solution
+    of Exercise 4 of §3.B, printed p. 280, which is the second of its two statements. Checked against
+    Hatcher: the printed statement on p. 280, the definition of fundamental class and Theorem 3.26(a)
+    on p. 236, the relative Künneth statement on p. 276, the relative singular chains' freeness on
+    p. 261, the universal coefficient theorem for homology on p. 264, the topological Künneth theorem
+    on p. 275 and Corollary A.12 on p. 529. This supersedes the preceding note's closing sentence,
+    which said no published solution was in the retained sets; it was not, and the owner supplied it.
+- event: solution-written
+  by: claude
+  date: 2026-11-13
+  note: >-
+    The solution is now the transcription of that published solution, with the page cited in the
+    opening sentence of the solution as well as here. Written out from the source: the local cross
+    product and the identity of complements, the integral case at a point by the relative Künneth
+    formula on the ball pairs, the multiplication of orientations with the compatibility condition
+    carried by products of closed balls, the integral computation $H_{m+n}(M\times N)\cong
+    H_m(M)\otimes H_n(N)$ for closed manifolds, and the two routes the source gives to the
+    fundamental class, of which the second --- $(\alpha\times\beta)_{(x,y)}=\alpha_x\times\beta_y$
+    together with Hatcher's local definition on p. 236 --- is the one used to conclude. Filled, since
+    the source leaves it to one sentence: the passage from $R=\ZZ$ to an arbitrary commutative ring,
+    done on the card from Theorem 3A.3 (printed p. 264) applied to the free complex $C_*(M,M-x)$,
+    which gives $H_m(M|x;R)\cong\ZZ\otimes_\ZZ R$ with the generator $\zeta_x\otimes1$, together with
+    Proposition 3B.1 and the tensor identification used on p. 276 for the coefficient change. The
+    earlier proof is replaced, not kept alongside: it reached the same conclusion through charts and
+    excision of the pair $(M\times N,M\times N-\{(x,y)\})$, and its ring step, on the ball pair, was
+    the same argument as the fill made here. Not rewritten into `pf` steps; the source's paragraph
+    order is kept so the transcription can be checked against p. 1.
 ---
 
 ::: {.problem}
@@ -63,44 +103,44 @@ Show that the cross product of fundamental classes for closed $\RR$-orientable m
 :::
 
 ::: {.solution}
-Let $M^m$ and $N^n$ be closed $R$-orientable manifolds. A fundamental class for a closed $R$-orientable $n$-manifold is an element of $H_n(M;R)$ whose image in $H_n(M,M-x;R)$ is a generator of that free rank-one $R$-module for every $x\in M$; such a class exists for closed $R$-orientable $M$ by Theorem 3.26(a) (p. 236), where the definition is also given. Choose fundamental classes
-$$
-[M]\in H_m(M;R),
-\qquad
-[N]\in H_n(N;R),
-$$
-and write $[M]_x$ and $[N]_y$ for their images in $H_m(M,M-x;R)$ and $H_n(N,N-y;R)$.
+The proof below is **C. Kottke, *Math 2420 Problem Set 3 solutions*, Brown University, Spring 2012, Problem 1, printed p. 1** (`tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.pdf`), transcribed. That problem proves two things: that $M$ and $N$ are orientable if and only if $M\times N$ is, and that $\alpha\times\beta$ is a fundamental class for $M\times N$. The exercise here is the second, which is Exercise 4 of §3.B, printed p. 280. The one step the source leaves is its passage from $R=\ZZ$ to an arbitrary commutative ring, made in a single sentence --- "it still holds that the product of generators is a generator (i.e. $\pm1\times1=\pm1$ still holds in (1))" --- and it is filled in *The coefficient ring* below from Hatcher's universal coefficient theorem, printed p. 264.
 
-Throughout, the cross product for a pair of pairs is
-$$
-H_k(X,A;R)\otimes H_\ell(Y,B;R)\longrightarrow H_{k+\ell}\bigl(X\times Y,\ A\times Y\cup X\times B;R\bigr),
-$$
-and it is natural in maps of pairs in each variable.
+Let $R$ be a commutative ring with identity, let $M^m$ and $N^n$ be closed $R$-orientable manifolds with fundamental classes $\alpha\in H_m(M;R)$ and $\beta\in H_n(N;R)$, and write $\alpha_x$, $\beta_y$ for their images in the local groups at $x\in M$ and $y\in N$. Write $H_m(M\,||\,x;R)=H_m(M,M-x;R)$, Hatcher's notation for the local group (printed p. 234).
 
-*The local class of $[M]\times[N]$.* Fix $(x,y)\in M\times N$. Since $(a,b)$ lies in $(M-x)\times N$ exactly when $a\neq x$, and in $M\times(N-y)$ exactly when $b\neq y$,
+*The local cross product.* Since
 $$
-(M-x)\times N\ \cup\ M\times(N-y)=M\times N-\{(x,y)\}.
+(M-x)\times N\ \cup\ M\times(N-y)=M\times N-\{(x,y)\},
 $$
-Naturality, applied to the identity map viewed as a map of pairs $(M,\emptyset)\times(N,\emptyset)\to(M,M-x)\times(N,N-y)$, says that the image of $[M]\times[N]$ in $H_{m+n}(M\times N,M\times N-\{(x,y)\};R)$ is the cross product
+the relative cross product of §3.B (printed p. 276) is a map
 $$
-[M]_x\times[N]_y\in H_{m+n}\bigl(M\times N,\ (M-x)\times N\cup M\times(N-y);R\bigr).
+\times:\ H_m(M\,||\,x;R)\otimes_R H_n(N\,||\,y;R)\longrightarrow H_{m+n}\bigl(M\times N\,||\,(x,y);R\bigr).
 $$
 
-*Reduction to Euclidean space.* Choose charts, that is, homeomorphisms of pairs $u:(D^m,S^{m-1})\to(B_x,B_x-x)$ and $v:(D^n,S^{n-1})\to(B_y,B_y-y)$ onto open balls about $x$ and $y$, and let $\iota_m$ and $\iota_n$ be the generators of $H_m(D^m,S^{m-1};R)$ and $H_n(D^n,S^{n-1};R)$ that $u_*$ and $v_*$ carry to $[M]_x$ and $[N]_y$. Naturality of the cross product on $u\times v$ says that $u_*\otimes v_*$ carries $\iota_m\otimes\iota_n$ to the cross product of the two ball classes. The inclusion of pairs
+*The integral case at a point.* Take $R=\ZZ$ and excise the charts, so that the local groups are those of the CW pairs $(D^m,S^{m-1})$, $(D^n,S^{n-1})$ and $(D^m\times D^n,\ S^{m-1}\times D^n\cup D^m\times S^{n-1})$, the product pair being reached by radial deformation of $D^m\times D^n-\{0\}$ onto that subcomplex. The relative Künneth theorem (printed p. 276) then gives
 $$
-\bigl(B_x\times B_y,\ B_x\times B_y-\{(x,y)\}\bigr)\longrightarrow\bigl(M\times N,\ M\times N-\{(x,y)\}\bigr)
+H_{m+n}\bigl(D^m\times D^n,\ S^{m-1}\times D^n\cup D^m\times S^{n-1}\bigr)
+\cong\bigoplus_{p+q=m+n}H_p(D^m,S^{m-1})\otimes H_q(D^n,S^{n-1})
+\ \oplus\!\!\bigoplus_{p+q=m+n-1}\!\!\operatorname{Tor}\bigl(H_p(D^m,S^{m-1}),H_q(D^n,S^{n-1})\bigr),
 $$
-is an excision, so it is an isomorphism on $H_{m+n}(-;R)$: the excised set $Z=M\times N-(B_x\times B_y)$ is closed and lies in the open set $M\times N-\{(x,y)\}$, whose complement in $M\times N$ is the single point $(x,y)\in B_x\times B_y$. Hence $[M]_x\times[N]_y$ is an isomorphism's image of $u_*\iota_m\times v_*\iota_n$, and is a generator exactly when $\iota_m\times\iota_n$ is one.
+whose only surviving summands are the top ones; so the local cross product is an isomorphism over $\ZZ$. Replacing $x$ and $y$ by closed balls of finite radius gives the same statement for the groups $H_*(M\,||\,B_1)$ and $H_*(N\,||\,B_2)$ of a pair of balls, which is the form the compatibility condition of an orientation uses.
 
-*The Euclidean computation.* Take first $R=\ZZ$. The relative Künneth formula for the CW pairs $(D^m,S^{m-1})$ and $(D^n,S^{n-1})$, printed on p. 276, is the split exact sequence
+*The coefficient ring.* This is the step the source asserts. The relative chain complex $C_*(M,M-x)$ is free in each degree (printed p. 261), so the universal coefficient theorem for homology, Theorem 3A.3 (printed p. 264), gives the natural short exact sequence
 $$
-0\to\bigoplus_i H_i(D^m,S^{m-1})\otimes H_{m+n-i}(D^n,S^{n-1})
-\to H_{m+n}\bigl(D^m\times D^n,\ (S^{m-1}\times D^n)\cup(D^m\times S^{n-1})\bigr)
-\to\bigoplus_i\operatorname{Tor}\bigl(H_i(D^m,S^{m-1}),H_{m+n-i-1}(D^n,S^{n-1})\bigr)\to0,
+0\to H_m(M\,||\,x;\ZZ)\otimes_\ZZ R\to H_m(M\,||\,x;R)\to\operatorname{Tor}\bigl(H_{m-1}(M\,||\,x;\ZZ),R\bigr)\to 0 .
 $$
-and the left-hand map is induced by the cross product. Here $H_i(D^m,S^{m-1})$ is $\ZZ$ for $i=m$ and $0$ otherwise, and likewise for $n$; so the left-hand group is $\ZZ\otimes\ZZ$ in degree $m+n$, every Tor group vanishes, and the cross product $\ZZ\otimes\ZZ\to H_{m+n}(\text{product pair})\cong\ZZ$ is an isomorphism. Therefore $\iota_m\times\iota_n$ is a generator over $\ZZ$.
+By excision $H_m(M\,||\,x;\ZZ)\cong H_m(D^m,S^{m-1})\cong\ZZ$ and $H_{m-1}(M\,||\,x;\ZZ)=0$, so $H_m(M\,||\,x;R)\cong\ZZ\otimes_\ZZ R=R$, and the generator over $R$ is the image $\zeta_x\otimes 1$ of an integral generator $\zeta_x$; the same holds at $y$. By Proposition 3B.1 and the identification $C_*(X;R)\otimes_R C_*(Y;R)=C_*(X\times Y;R)$ used on printed p. 276, the cross product with coefficients in $R$ is the integral chain-level cross product followed by $-\otimes_\ZZ R$. Hence the local cross product carries $\zeta_x\otimes1$ and $\zeta_y\otimes1$ to $(\zeta_x\times\zeta_y)\otimes1=\pm1$: over $R$ it too is an isomorphism $R\otimes_R R\to R$, and the product of generators is a generator.
 
-For an arbitrary coefficient ring $R$, use the coefficient homomorphism $\ZZ\to R$: the cross product is natural in the coefficients, so $\iota_m\otimes\iota_n$ over $R$ is the image of the integral class, and $H_m(D^m,S^{m-1};R)\cong R$, $H_n(D^n,S^{n-1};R)\cong R$ are generated by the images of $\iota_m,\iota_n$, since the universal coefficient sequence of Corollary 3A.4 (p. 264) degenerates in these degrees. The image of a generator of a free rank-one $\ZZ$-module generates the free rank-one $R$-module, so $\iota_m\times\iota_n$ is a generator over $R$ too.
+*Orientations multiply.* If $x\mapsto\mu_x$ and $y\mapsto\nu_y$ are $R$-orientations of $M$ and $N$, then $(x,y)\mapsto\mu_x\times\nu_y$ is an $R$-orientation of $M\times N$: it is a section of the local system by the two paragraphs above, and it satisfies the compatibility condition by passing to the product of closed balls $B_1\ni x$ and $B_2\ni y$. So $M\times N$ is $R$-orientable, and by Theorem 3.26(a) (printed p. 236) the map $H_{m+n}(M\times N;R)\to H_{m+n}(M\times N\,||\,(x,y);R)\cong R$ is an isomorphism.
 
-*Conclusion.* For every $(x,y)\in M\times N$ the image of $[M]\times[N]$ in the local group $H_{m+n}(M\times N,M\times N-\{(x,y)\};R)$ is a generator. By the definition recalled above, $[M]\times[N]$ is a fundamental class for the closed $R$-orientable $(m+n)$-manifold $M\times N$.
+*The closed manifolds, integral coefficients.* Take $R=\ZZ$ again. Kottke's next computation is the Künneth formula for the product, Theorem 3B.6 (printed p. 275), which applies since a closed manifold is homotopy equivalent to a CW complex (Corollary A.12, printed p. 529):
+$$
+H_{m+n}(M\times N)\ \cong\ H_m(M)\otimes H_n(N)\ \oplus\ \operatorname{Tor}\bigl(H_m(M),H_{n-1}(N)\bigr)\ \oplus\ \operatorname{Tor}\bigl(H_{m-1}(M),H_n(N)\bigr)\ =\ H_m(M)\otimes H_n(N),
+$$
+all other terms vanishing and the two Tor groups vanishing because the top degree groups are free. So $[M]\times[N]$ is a generator of $H_{m+n}(M\times N)\cong\ZZ$.
+
+*The fundamental class.* Finally, for each $(x,y)$ the naturality of the cross product in the pair variables gives
+$$
+(\alpha\times\beta)_{(x,y)}=\alpha_x\times\beta_y\ \in\ H_{m+n}\bigl(M\times N\,||\,(x,y);R\bigr),
+$$
+and by *The coefficient ring* this is a generator whenever $\alpha_x$ and $\beta_y$ are. So $\alpha\times\beta$ has a generator as its image in every local group, which by Hatcher's definition of a fundamental class (printed p. 236) is exactly that $\alpha\times\beta$ is a fundamental class for $M\times N$ with coefficients in $R$.
 :::
