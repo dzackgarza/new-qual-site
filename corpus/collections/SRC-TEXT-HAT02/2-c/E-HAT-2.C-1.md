@@ -53,6 +53,18 @@ audit:
     Read the published answer and checked it against Hatcher p.184. Each simplicial edge is sent
     to a vertex or homeomorphically to an edge, so signed coefficient n on a target edge requires
     at least |n| domain edges. Period three wraps the triangle |n| times with the required sign.
+- event: source-checked
+  by: claude
+  date: 2026-11-13
+  note: >-
+    Re-read the printed statement for #123: the exercise is Exercise 1 of §2.C on printed p. 184,
+    identical in the current online text, and the card states it word for word. The obligation that
+    #123 records is unchanged and stays open: the retained solution sets do not solve this exercise,
+    and none was located elsewhere. The card's citation is the final answer to MSE question 3590105,
+    which is not a published solution set; the argument transcribed from it is checked on the card.
+    Searched without result in the retained sets (Sam, Li, DeMason, Poulsen, Stanford Math 215C
+    Solution Sets 1--5, the UCR Math 205B help file, May, Bredon, Maxim's Math 752 notes) and in
+    Hatcher's text and errata.
 ---
 ---
 
