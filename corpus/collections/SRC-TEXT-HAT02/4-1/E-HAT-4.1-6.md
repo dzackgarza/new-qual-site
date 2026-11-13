@@ -45,6 +45,11 @@ audit:
     statement, p. 62. This is the relative form of Proposition 4.1 and the proof follows the book's
     argument for that proposition, with $D^n$ in place of $S^n$. No published exercise solution is in
     the retained sets; the book's own Proposition 4.1 proof covers the absolute case only.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-13
+  note: >-
+    The exercise is on printed p. 358, and it is exactly the statement of Hatcher's Proposition 4.1, printed p. 342, whose proof the book prints there: a covering space $p:(\tilde X,\tilde A,\tilde x_0)\to(X,A,x_0)$ with $\tilde A=p^{-1}(A)$ induces an isomorphism on $\pi_n$ for $n\ge2$, first for $\tilde X\to X$ by lifting a homotopy of maps of $S^n$ through the covering homotopy property, then for the pair by applying the five-lemma to the long exact sequences of the two pairs. The card's proof is that proof, with the lifting criterion of Proposition 1.33 (printed p. 61) named where the book names it. Checked against the book: the printed statement of Proposition 4.1 including the hypothesis $\tilde A=p^{-1}(A)$ and the path-connectedness of $\tilde X$, and the long exact sequence of Theorem 4.3 on p. 344 that the five-lemma step uses.
 ---
 
 ::: {.problem}
@@ -78,4 +83,8 @@ $$
 \boxed{p_*:\pi_n(\widetilde X,\widetilde A,\widetilde x_0)\xrightarrow{\cong}\pi_n(X,A,x_0)}
 \qquad(n>1).
 $$
+:::
+
+::: {.remark title="Published solution"}
+Hatcher, *Algebraic Topology* (2002), Proposition 4.1 and its printed proof, p. 342, which states exactly this exercise (a covering of pairs with $\tilde A=p^{-1}(A)$ induces an isomorphism on $\pi_n$ for $n\ge2$) and proves it by lifting and the five-lemma. The exercise is Exercise 6 of §4.1, printed p. 358.
 :::
