@@ -56,6 +56,11 @@ audit:
     against Hatcher's Proposition 3A.5(3) and (6) (p. 265) and his definition of $\operatorname{Tor}$
     through free resolutions (Lemma 3A.2, p. 263). Not claimed: that the two proofs are written out
     identically — they are two proofs of the same two statements, and the card says which is which.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-13
+  note: >-
+    Re-read for the published-solution obligation. The published complete proof is Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §3.1: Proposition 3.1.3 and the Remark after Proposition 3.1.4, printed p. 67, identify $\operatorname{Tor}_1^\ZZ(\QQ/\ZZ,B)$ with the torsion subgroup, balancing gives $\operatorname{Tor}(A,\QQ/\ZZ)=T(A)$, Corollary 3.1.5 on the same page is the deduction, and Calculation 3.1.1 on p. 66 computes $\operatorname{Tor}(\ZZ/n,B)\cong B[n]$; the direct-limit corollary Weibel invokes is Corollary 2.6.17, printed p. 58. Checked against the book: Hatcher's Exercise 2 of §3.A on printed p. 267, its `iff', and Proposition 3A.5(3) and (6) on p. 265 which the card's second route uses. Not claimed: that the card's two routes are written the same way; the card states which is Weibel's colimit route and which is its own exact-sequence route, and both conclusions are the same two statements.
 ---
 
 ::: {.problem}
