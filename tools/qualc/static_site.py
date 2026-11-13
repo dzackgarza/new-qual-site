@@ -349,6 +349,11 @@ def _proof_status(meta: dict[str, object], relative_path: Path) -> str:
     certified, with the certificates linked and the checking tool named;
     reviewed; or draft. `meta["proof_status"]` is the catalog's derived word, so
     the page cannot disagree with the crawl that checks it is there.
+
+    A card is certified only when a certificate row proves its whole statement,
+    so a card that is not certified may still have rows, and those rows prove a
+    part of it. The line says so instead of listing them under the bare status
+    word, which would read as a claim about the whole statement.
     """
     status = meta.get("proof_status")
     if not isinstance(status, str) or status not in STATUS_LABELS:
@@ -372,7 +377,10 @@ def _proof_status(meta: dict[str, object], relative_path: Path) -> str:
             href = escape(_relative_url(relative_path, Path(file)), quote=True)
         links.append(f'{escape(tool)} <a href="{href}"><code>{escape(file)}</code></a>')
     if links:
-        parts.append(" — " + ", ".join(links))
+        if status == "certified":
+            parts.append(" — " + ", ".join(links))
+        else:
+            parts.append(" — certificates cover part of this statement only: " + ", ".join(links))
     return f'<div class="page-fact page-status" data-status="{escape(status, quote=True)}"><dt>Status</dt><dd>{"".join(parts)}</dd></div>'
 
 

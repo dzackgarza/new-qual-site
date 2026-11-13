@@ -3,15 +3,26 @@
 A card's proof status is derived and stored nowhere. It is one of three, and
 two authored sources decide it:
 
-- **certified** — `proofs/README.md` lists a certificate for the card, in
+- **certified** — `proofs/README.md` lists a certificate row for the card, in
   one of the two sections that hold them (Lean lemmas, exact finite
-  computations). A Lean certificate is a link to a file at a named commit
-  of this repository or to a declaration on lean-categories main. The Sage
-  and GAP certificates are files that remain. What is named on the page
-  decides the tool: `.lean` is Lean, `.sage` exact Sage, `.g` exact GAP.
-- **reviewed** — no certificate, and the card's `review:` field says a review
-  has happened (`reviewed`, or the reserved `verified`).
+  computations), and that row says it covers the card's **whole statement**. A
+  Lean certificate is a link to a file at a named commit of this repository or
+  to a declaration on lean-categories main. The Sage and GAP certificates are
+  files that remain. What is named on the page decides the tool: `.lean` is
+  Lean, `.sage` exact Sage, `.g` exact GAP.
+- **reviewed** — no certificate covering the whole statement, and the card's
+  `review:` field says a review has happened (`reviewed`, or the reserved
+  `verified`).
 - **draft** — neither.
+
+A certificate that proves one claim of a card whose statement has several does
+not make the card certified. `E-HAT-3.A-6` asks that `Tor(A,B)` be a torsion
+group and that it have an element of order `n` when both arguments do; its rows
+compute `Tor` of a presented stage, of a cyclic stage and of a two-term free
+resolution, and they say in their own text that the passage to an arbitrary
+abelian group is not proved. `E-HAT-3.A-2` has the same shape. Which of the two
+things a row proves is authored on the row, not guessed here: see `COVERS`
+below.
 
 `proofs/README.md` is the registry because it is where the certificates are
 described and where an author already writes the certificate-to-card mapping
@@ -35,6 +46,10 @@ so a row with no file cell inherits the last path or link named before it.
 `bary_regression.py` is not a certificate -- its own row says so -- so only the
 three machine-checked extensions are read, and a row naming no certificate of
 its own inherits the one named above it.
+
+The last cell of every certificate row is its `Covers` entry, and a row without
+one is a corpus error rather than a certification: a certificate that proves
+part of a statement has to say so on the page the reader is looking at.
 """
 
 from __future__ import annotations
@@ -51,6 +66,15 @@ from urllib.parse import urlsplit
 STATUSES = ("certified", "reviewed", "draft")
 
 CERTIFICATE_SECTIONS = (1, 2)
+
+# What a row's last cell says it proves. `THE_STATEMENT` is the card's whole
+# statement, and it is the only thing that makes a card certified; `PART` is
+# one claim of a statement that has several, which the row's `What it proves`
+# cell names. Nothing here decides which a row is -- the author of the table
+# does, having read the certificate.
+THE_STATEMENT = "the statement"
+PART = "part"
+COVERS = (THE_STATEMENT, PART)
 
 # What a certificate file is. The extension is the whole claim: a `.lean` file
 # is elaborated, a `.sage` file is an exact finite computation in Sage.
@@ -76,7 +100,7 @@ _FILE = re.compile(
 
 @dataclass(frozen=True)
 class Certificate:
-    """One machine-checked artifact and the tool that checks it."""
+    """One machine-checked artifact, the tool that checks it, and what it proves."""
 
     # Either a link to the artifact — the file at a named commit of this
     # repository (`https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/
@@ -86,6 +110,10 @@ class Certificate:
     file: str
     # `Lean`, `exact Sage` or `exact GAP`.
     tool: str
+    # Which claim of the card this artifact proves: `the statement` for the
+    # card's whole statement, `part` for one claim of a statement that has
+    # several. The row's `What it proves` cell names the part.
+    covers: str
 
 
 def tool_of(file: str) -> str | None:
@@ -95,10 +123,17 @@ def tool_of(file: str) -> str | None:
 def status(review: str, certificates: tuple[Certificate, ...]) -> str:
     """The three-way status a page states, from the card's own two sources.
 
+    A row proving part of the card's statement does not make the card
+    certified: certification is a claim about the whole statement, and a card
+    whose proof is split across rows that each prove a part stays `draft` (or
+    `reviewed`) until one row records the whole statement. That is the
+    conservative direction, and the tables are authored, so the author is who
+    supplies the missing row.
+
     `review: verified` is reserved and currently unpopulated; it is a level of
     review above draft, so it reads as `reviewed` rather than disappearing.
     """
-    if certificates:
+    if any(entry.covers == THE_STATEMENT for entry in certificates):
         return "certified"
     return "draft" if review == "draft" else "reviewed"
 
@@ -113,13 +148,13 @@ def load(proofs: Path) -> dict[str, tuple[Certificate, ...]]:
     if not readme.is_file():
         return {}
     rows: dict[str, list[Certificate]] = {}
-    for card_id, file in _rows(readme.read_text().splitlines()):
+    for card_id, file, covers in _rows(readme.read_text().splitlines()):
         tool = tool_of(file)
         if tool is None:
             continue
         # A link names its own home; a path is repository-relative.
         where = file if file.startswith("https://") else f"proofs/{file}"
-        certificate = Certificate(file=where, tool=tool)
+        certificate = Certificate(file=where, tool=tool, covers=covers)
         entries = rows.setdefault(card_id, [])
         if certificate not in entries:
             entries.append(certificate)
@@ -164,9 +199,15 @@ def _reachable(url: str) -> bool:
         return False
 
 
-def _rows(lines: list[str]) -> list[tuple[str, str]]:
-    """Every (card id, `cards/...` path) pair the certificate tables state."""
-    out: list[tuple[str, str]] = []
+def _rows(lines: list[str]) -> list[tuple[str, str, str]]:
+    """Every (card id, `cards/...` path, coverage) triple the certificate tables state.
+
+    The coverage is the row's `Covers` cell, normalised to one of `COVERS`, or
+    the empty string when the row carries no such cell. It is the last cell of
+    the row in all three table shapes, which is why the file cell is looked for
+    over the whole row rather than in a fixed column.
+    """
+    out: list[tuple[str, str, str]] = []
     section: int | None = None
     # The artifact a file-less table is about, named in the prose above it.
     standing: str | None = None
@@ -195,8 +236,17 @@ def _rows(lines: list[str]) -> list[tuple[str, str]]:
         file = exact[0].strip("`<>") if exact else standing
         if file is None:
             continue
-        out.extend((card_id, file) for card_id in card_ids)
+        covers = _covers(cells)
+        out.extend((card_id, file, covers) for card_id in card_ids)
     return out
+
+
+def _covers(cells: list[str]) -> str:
+    """The row's `Covers` cell, as one of `COVERS`, or `""` when it has none."""
+    if not cells:
+        return ""
+    last = cells[-1].strip("`*_ ~").lower()
+    return last if last in COVERS else ""
 
 
 def _table_row(line: str) -> bool:

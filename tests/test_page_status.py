@@ -6,10 +6,17 @@ each page against the certificate tables of `proofs/README.md`. The status is de
 authored sources -- the card's `review:` field and those tables -- and stated on
 the page; the counts follow on the collection and index pages.
 
-The three pages this module builds and reads are `tag/P-DRAFT-ONE.html`,
-`tag/P-REVIEWED-ONE.html` and `tag/P-CERTIFIED-ONE.html`, one per status. They
-are fixture cards rather than corpus cards so the test does not have to build
-14,000 pages to say what a status line is.
+Issue #142: a certificate row proves a claim, not necessarily the whole claim of
+the card it names. Each row's `Covers` cell says which, and a card is certified
+only when a row says it covers the card's statement. `E-HAT-3.A-2` and
+`E-HAT-3.A-6` were certified by rows whose own text says that the case of an
+arbitrary abelian group is not proved.
+
+The pages this module builds and reads are `tag/P-DRAFT-ONE.html`,
+`tag/P-REVIEWED-ONE.html`, `tag/P-PART-ONE.html` and
+`tag/P-CERTIFIED-ONE.html`, one per status (and one for a card whose rows
+prove a part of it). They are fixture cards rather than corpus cards so the test
+does not have to build 14,000 pages to say what a status line is.
 """
 
 from __future__ import annotations
@@ -89,17 +96,50 @@ Three problems, one per proof status.
 :::
 """
 
+# The card whose only certificate proves a part of its statement: the row says
+# so, so the card is not certified. Its own sheet keeps the counts of the first
+# collection unchanged.
+PART_COLLECTION = """---
+schema: qual/card@1
+id: SRC-STATUS-PART
+kind: collection
+title: A sheet with one problem whose certificate proves a part of it
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+source:
+  source_kind: homework
+  area: algebra
+  date:
+    kind: academic-term
+    year: 2020
+    term: spring
+  problems:
+  - P-PART-ONE
+---
+
+::: remark
+One problem, whose certificate row names the claim it proves rather than the
+whole statement.
+:::
+"""
+
 # Section 1's table is the certificate registry, and this row is what certifies
 # P-CERTIFIED-ONE. Nothing on the card says so. Section 6's table mentions the
 # same file while stating that no certificate exists for what it lists, which is
-# why it must not certify P-REVIEWED-ONE.
+# why it must not certify P-REVIEWED-ONE. The `Covers` cell of P-PART-ONE's row
+# is what keeps that card a draft.
 CERTIFICATE_README = """# Proof artifacts
 
 ## 1. Group lemmas proved in Lean
 
-| File | Card | What it proves |
-| --- | --- | --- |
-| `cards/CertifiedOne.lean` | `P-CERTIFIED-ONE` | The fixture statement about groups of order $p^2$. |
+| File | Card | What it proves | Covers |
+| --- | --- | --- | --- |
+| `cards/CertifiedOne.lean` | `P-CERTIFIED-ONE` | The fixture statement about groups of order $p^2$. | the statement |
+| `cards/PartOne.lean` | `P-PART-ONE` | That the centre of a group of order $p^2$ is nontrivial, which is one step of the fixture statement. | part |
 
 ## 6. Chapter 1 step repairs: expository, with the backing theorem checked
 
@@ -114,7 +154,9 @@ CARDS = {
     "P-DRAFT-ONE.md": PROBLEM.format(id="P-DRAFT-ONE", title="A group of order $p^2$ is abelian", review="draft"),
     "P-REVIEWED-ONE.md": PROBLEM.format(id="P-REVIEWED-ONE", title="A group of order $p^2$ is abelian, reviewed", review="reviewed"),
     "P-CERTIFIED-ONE.md": PROBLEM.format(id="P-CERTIFIED-ONE", title="A group of order $p^2$ is abelian, certified", review="draft"),
+    "P-PART-ONE.md": PROBLEM.format(id="P-PART-ONE", title="A group of order $p^2$ is abelian, part certified", review="draft"),
     "SRC-STATUS-SHEET.md": COLLECTION,
+    "SRC-STATUS-PART.md": PART_COLLECTION,
 }
 
 
@@ -127,6 +169,9 @@ def _repo(tmp_path: Path) -> Path:
     (work / "proofs" / "cards").mkdir(parents=True)
     (work / "proofs" / "README.md").write_text(CERTIFICATE_README)
     (work / "proofs" / "cards" / "CertifiedOne.lean").write_text("-- the fixture certificate\ntheorem fixture : True := trivial\n")
+    (work / "proofs" / "cards" / "PartOne.lean").write_text(
+        "-- the fixture certificate for one step\ntheorem centre_nontrivial : True := trivial\n"
+    )
     return work
 
 
@@ -190,6 +235,75 @@ def test_a_page_without_a_certificate_links_none(built: Path) -> None:
         assert "proofs/cards/" not in page(built, name)
 
 
+def test_a_row_that_proves_part_of_the_statement_leaves_the_card_a_draft(built: Path) -> None:
+    """Issue #142: a certificate for one claim does not certify the statement.
+
+    The fixture row says `part`, so the card stays a draft and the page says what
+    the row proves instead of claiming the statement. Both are read through the
+    build -- the page, and the catalog column it was rendered from.
+    """
+    text = page(built, "tag/P-PART-ONE.html")
+
+    assert 'class="page-fact page-status" data-status="draft"' in text
+    assert "<dd>Draft" in text
+    assert "certificates cover part of this statement only" in text
+    assert 'href="../proofs/cards/PartOne.lean"' in text
+
+    con = sqlite3.connect(built.parents[1] / "catalog.sqlite")
+    status = con.execute("select status from cards where id = 'P-PART-ONE'").fetchone()[0]
+    con.close()
+
+    assert status == "draft"
+
+
+def test_a_certificate_row_that_does_not_say_what_it_proves_is_a_corpus_error(tmp_path: Path) -> None:
+    """A row without a `Covers` cell names no claim, so it certifies nothing."""
+    work = _repo(tmp_path)
+    readme = work / "proofs" / "README.md"
+    readme.write_text(readme.read_text().replace("$p^2$. | the statement |", "$p^2$. |"))
+
+    assert DiagnosticCode.CERTIFICATE_COVERAGE_MISSING in diagnostic_codes(work)
+
+
+TOR_CARDS = ("E-HAT-3.A-2", "E-HAT-3.A-6")
+
+
+def test_the_two_tor_cards_are_not_certified_by_their_part_rows() -> None:
+    """Issue #142's two cards, declared on the site's own path.
+
+    Every row naming them proves a claim of the card and says so; the rows
+    themselves record that the case of an arbitrary abelian group is not proved.
+    `certificates.status` is the call the catalog's `status` column is built
+    from, so this is the answer the page states.
+    """
+    registry = certificates.load(ROOT / "proofs")
+
+    for card_id in TOR_CARDS:
+        entries = registry[card_id]
+        assert entries
+        assert all(entry.covers == certificates.PART for entry in entries), card_id
+        assert certificates.status("draft", entries) == "draft", card_id
+
+
+def test_every_certificate_row_of_the_registry_says_what_it_proves() -> None:
+    """The rows the site reads are the rows that name their claim.
+
+    `qualc check` fails on an unnamed row; this reads the same registry without
+    the corpus, so a row that stopped naming its claim says so here first.
+    """
+    registry = certificates.load(ROOT / "proofs")
+
+    assert registry
+    unnamed = {
+        (card_id, entry.file)
+        for card_id, entries in registry.items()
+        for entry in entries
+        if entry.covers not in certificates.COVERS
+    }
+
+    assert unnamed == set()
+
+
 def test_the_audit_events_are_listed_with_their_dates(built: Path) -> None:
     text = page(built, "tag/P-CERTIFIED-ONE.html")
 
@@ -244,18 +358,18 @@ REGISTRY_README = """# Proof artifacts
 
 ## 1. Group lemmas proved in Lean
 
-| File | Card | What it proves |
-| --- | --- | --- |
-| `cards/One.lean` | `P-ONE`, `-TWO` | two cards of one source |
-| `cards/Three.lean` | `E-ONE` | one more |
+| File | Card | What it proves | Covers |
+| --- | --- | --- | --- |
+| `cards/One.lean` | `P-ONE`, `-TWO` | two cards of one source | the statement |
+| `cards/Three.lean` | `E-ONE` | one more | part |
 
 ## 2. Exact finite computations: Sage chain complexes, GAP groups
 
 `cards/Four.sage`, run on the Sage development image:
 
-| Card | Chain complex checked | Parameter range |
-| --- | --- | --- |
-| `E-THREE` | the displayed complex | $n\\le6$ |
+| Card | Chain complex checked | Parameter range | Covers |
+| --- | --- | --- | --- |
+| `E-THREE` | the displayed complex | $n\\le6$ | part |
 
 ## 6. Expository repairs with no certificate
 
@@ -271,7 +385,9 @@ def test_the_registry_reads_the_two_certificate_sections_and_nothing_else(tmp_pa
     Section 2's second table carries no file column: the file is the one its
     paragraph names. Section 6's table names a certificate file while saying no
     certificate exists for its cards, so reading it would certify a card on the
-    strength of a sentence saying the opposite.
+    strength of a sentence saying the opposite. The `Covers` cell is read with
+    the row, and the two cards of `P-ONE`'s row are certified while `E-ONE` is
+    not.
     """
     (tmp_path / "cards").mkdir()
     (tmp_path / "README.md").write_text(REGISTRY_README)
@@ -279,18 +395,29 @@ def test_the_registry_reads_the_two_certificate_sections_and_nothing_else(tmp_pa
     registry = certificates.load(tmp_path)
 
     assert registry == {
-        "P-ONE": (certificates.Certificate("proofs/cards/One.lean", "Lean"),),
-        "P-TWO": (certificates.Certificate("proofs/cards/One.lean", "Lean"),),
-        "E-ONE": (certificates.Certificate("proofs/cards/Three.lean", "Lean"),),
-        "E-THREE": (certificates.Certificate("proofs/cards/Four.sage", "exact Sage"),),
+        "P-ONE": (certificates.Certificate("proofs/cards/One.lean", "Lean", certificates.THE_STATEMENT),),
+        "P-TWO": (certificates.Certificate("proofs/cards/One.lean", "Lean", certificates.THE_STATEMENT),),
+        "E-ONE": (certificates.Certificate("proofs/cards/Three.lean", "Lean", certificates.PART),),
+        "E-THREE": (certificates.Certificate("proofs/cards/Four.sage", "exact Sage", certificates.PART),),
     }
+    assert certificates.status("draft", registry["P-ONE"]) == "certified"
+    assert certificates.status("draft", registry["E-ONE"]) == "draft"
 
 
 def test_a_repository_without_a_proofs_directory_certifies_nothing(tmp_path: Path) -> None:
     assert certificates.load(tmp_path) == {}
     assert certificates.status("draft", ()) == "draft"
     assert certificates.status("reviewed", ()) == "reviewed"
-    assert certificates.status("draft", (certificates.Certificate("proofs/cards/One.lean", "Lean"),)) == "certified"
+
+
+def test_only_a_row_that_covers_the_statement_certifies(tmp_path: Path) -> None:
+    """The one rule #142 added: part rows and whole rows are read differently."""
+    part = (certificates.Certificate("proofs/cards/One.lean", "Lean", certificates.PART),)
+    whole = (certificates.Certificate("proofs/cards/One.lean", "Lean", certificates.THE_STATEMENT),)
+
+    assert certificates.status("draft", part) == "draft"
+    assert certificates.status("reviewed", part) == "reviewed"
+    assert certificates.status("draft", part + whole) == "certified"
 
 
 def test_the_crawl_fails_on_a_problem_page_with_no_status_line(built: Path, tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> None:
@@ -334,9 +461,9 @@ LINK_README = """# Proof artifacts
 
 ## 1. Group lemmas proved in Lean
 
-| File | Card | What it proves |
-| --- | --- | --- |
-| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/One.lean> | `P-ONE` | one card, its file at a named commit of this repository |
+| File | Card | What it proves | Covers |
+| --- | --- | --- | --- |
+| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/One.lean> | `P-ONE` | one card, its file at a named commit of this repository | the statement |
 """
 
 
@@ -357,6 +484,7 @@ def test_the_registry_reads_a_link_row(tmp_path: Path) -> None:
             certificates.Certificate(
                 "https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/One.lean",
                 "Lean",
+                certificates.THE_STATEMENT,
             ),
         )
     }
@@ -442,3 +570,21 @@ def test_the_status_line_links_a_certificate_url() -> None:
 
     assert f'<a href="{url}"><code>{url}</code></a>' in line
     assert "../../../" not in line
+
+
+def test_the_status_line_says_when_the_certificates_prove_a_part() -> None:
+    """A draft with certificates is not certified, and the line says why.
+
+    Listing the files under the word `Draft` alone would read as though they had
+    settled the card; the line says that they cover part of the statement.
+    """
+    meta = {
+        "proof_status": "draft",
+        "certificates": [{"file": "proofs/cards/One.lean", "tool": "Lean", "covers": "part"}],
+    }
+
+    line = static_site._proof_status(meta, Path("tag/P-ONE.html"))
+
+    assert 'data-status="draft"' in line
+    assert "certificates cover part of this statement only" in line
+    assert 'href="../proofs/cards/One.lean"' in line

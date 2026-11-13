@@ -928,7 +928,7 @@ def load_card_page_data(con: sqlite3.Connection) -> CardPageData:
         )
     )
     certificates: dict[str, list[sqlite3.Row]] = {}
-    for row in _rows(con, "select card_id, file, tool from card_certificates order by card_id, ordinal"):
+    for row in _rows(con, "select card_id, file, tool, covers from card_certificates order by card_id, ordinal"):
         certificates.setdefault(row["card_id"], []).append(row)
     audit: dict[str, list[sqlite3.Row]] = {}
     for row in _rows(con, "select card_id, event, actor, date, note from card_audit order by card_id, ordinal"):
@@ -1222,7 +1222,9 @@ def _asked_meta(data: CardPageData, card: sqlite3.Row, area_names: dict[str, str
     meta["proof_status"] = card["status"]
     certificates = _page_rows(data.certificates, card["id"])
     if certificates:
-        meta["certificates"] = [{"file": row["file"], "tool": row["tool"]} for row in certificates]
+        meta["certificates"] = [
+            {"file": row["file"], "tool": row["tool"], "covers": row["covers"]} for row in certificates
+        ]
     audit = _page_rows(data.audit, card["id"])
     if audit:
         meta["audit"] = [{"date": row["date"], "event": row["event"], "by": row["actor"], "note": row["note"]} for row in audit]

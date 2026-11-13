@@ -33,6 +33,7 @@ class DiagnosticCode(Enum):
     PUBLICATION_REFERENCE_MISSING = "publication-reference-missing"
     CERTIFICATE_CARD_UNKNOWN = "certificate-card-unknown"
     CERTIFICATE_FILE_MISSING = "certificate-file-missing"
+    CERTIFICATE_COVERAGE_MISSING = "certificate-coverage-missing"
     PAGE_REFERENCE_AMBIGUOUS = "page-reference-ambiguous"
     PAGE_MISSING_ORDER = "page-missing-order"
     PAGE_TOPICS_INVALID = "page-topics-invalid"

@@ -46,7 +46,8 @@ create table cards (
 );
 -- The certificate files `proofs/README.md` lists for a card, in that file's
 -- order. Derived at build time from the README, never authored on the card.
-create table card_certificates (card_id text not null, ordinal integer not null, file text not null, tool text not null);
+-- `covers` is the row's own word for what it proves: `the statement` or `part`.
+create table card_certificates (card_id text not null, ordinal integer not null, file text not null, tool text not null, covers text not null);
 -- A problem's audit events, in the order authored. Dates are ISO strings so a
 -- page can print one without guessing its type.
 create table card_audit (card_id text not null, ordinal integer not null, event text not null, actor text not null, date text not null, note text);
@@ -144,9 +145,11 @@ def validate(
     """Card, relation and registry checks; the certificate tables are one of them.
 
     The certificate tables are the only source of a card's certified status, so
-    a row naming a card that does not exist certifies nothing and a row naming a
-    file that is not there prints a link that goes nowhere. Both are reported
-    here rather than at emit time.
+    a row naming a card that does not exist certifies nothing, a row naming a
+    file that is not there prints a link that goes nowhere, and a row that does
+    not say whether it proves the card's whole statement or a part of it tells
+    the reader nothing about what the card's proof status is. All three are
+    reported here rather than at emit time.
     """
     errors: list[Diagnostic] = []
     by_id: dict[str, ParsedCard] = {}
@@ -177,6 +180,15 @@ def validate(
                         DiagnosticCode.CERTIFICATE_FILE_MISSING,
                         "proofs/README.md",
                         f"links {entry.file} for {card_id}, and its target does not exist",
+                    )
+                )
+            if entry.covers not in certificate.COVERS:
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.CERTIFICATE_COVERAGE_MISSING,
+                        "proofs/README.md",
+                        f"lists {entry.file} for {card_id} without saying what it proves: the row's "
+                        f"last cell must be `{certificate.THE_STATEMENT}` or `{certificate.PART}`",
                     )
                 )
 
@@ -306,8 +318,8 @@ def build(
             ),
         )
         con.executemany(
-            "insert into card_certificates values (?,?,?,?)",
-            [(c.id, ordinal, entry.file, entry.tool) for ordinal, entry in enumerate(certified)],
+            "insert into card_certificates values (?,?,?,?,?)",
+            [(c.id, ordinal, entry.file, entry.tool, entry.covers) for ordinal, entry in enumerate(certified)],
         )
         if isinstance(c, ProblemCard):
             con.executemany(
