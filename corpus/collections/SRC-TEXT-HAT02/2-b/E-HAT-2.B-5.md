@@ -84,6 +84,17 @@ audit:
   date: 2026-11-13
   note: >-
     The exercise is on printed p. 176. Its published proof is Putman, *The generalized Schoenflies theorem*, printed pp. 3--4 (Mazur's proof): a topological embedding $\varphi:S^{n-1}\to S^n$ whose image has a collar on one side bounds a ball. The card's use of it is checked: the intersection hypothesis gives $D'$ a collar on the side away from $\Sigma$, so Putman's theorem makes $D'$ a closed $k$-disk in $S^n$; Hatcher's Proposition 2B.1(a), printed p. 169 with its proof on pp. 169--170, then makes $X=S^n-D'$ acyclic, and the excision and Mayer--Vietoris steps of the card give the isomorphism. Checked against the book: the printed statement, the hypothesis on $D^n$, and the case $k=n$. Not claimed: a published solution of the exercise itself; the transcription is of Putman's theorem and of Hatcher's printed proposition, and the assembly between them is the card's own and is checked.
+- event: source-checked
+  by: claude
+  date: 2026-11-13
+  note: >-
+    Re-read the printed statement for #123: the exercise is Exercise 5 of §2.B on printed p. 176,
+    identical in the current online text, and the card states it word for word. The obligation that
+    #123 records is unchanged and stays open: no published solution of this exercise was located.
+    Putman is a published proof of the Schoenflies theorem used in the second proof, not of the
+    exercise. Searched without result for the exercise itself in the retained sets (Sam, Li,
+    DeMason, Poulsen, Stanford Math 215C Solution Sets 1--5, the UCR Math 205B help file, May,
+    Bredon, Maxim's Math 752 notes) and in Hatcher's text and errata.
 ---
 
 ::: {.problem}
@@ -184,6 +195,6 @@ For $k<n$, step [](#complement-homology){.pf-ref} leaves only degree $r$ to chec
 :::
 :::
 
-::: {.remark title="Published solution"}
+::: {.remark title="Source"}
 Andrew Putman, *The generalized Schoenflies theorem*, printed pp. 3--4 (Mazur's proof: a topological embedding $S^{n-1}\to S^n$ with a collar on one side bounds a ball), together with Hatcher, *Algebraic Topology* (2002), Proposition 2B.1(a) and its printed proof, pp. 169--170. The exercise is Exercise 5 of §2.B, printed p. 176; the disk $D^n$ supplies the collar Putman's theorem needs, and Hatcher's (a) is what makes $X=S^n-D'$ acyclic.
 :::
