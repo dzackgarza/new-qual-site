@@ -34,6 +34,11 @@ audit:
     one old meridian a bounds a punctured genus-two surface, giving
     a ↦ [a_1,a_2][a_3,a_4] in place of the single commutator of Example 2B.2 (p. 170).
     No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-13
+  note: >-
+    The exercise is on printed p. 176, one line asking what happens to the basic building block when the number of handles is doubled. The construction transcribed here is Hatcher's printed construction of the Alexander horned sphere in Example 2B.2, printed pp. 170--172: the decreasing compact sets $X_0\supset X_1\supset\cdots$, balls $B_n$ with $2^n$ handles, the uniformly convergent homeomorphisms $h_n$ whose limit is a homeomorphism onto a ball $B$ with wild boundary, and the van Kampen computation of $\pi_1(\RR^3-B)$ as the ascending union of the $\pi_1(Y_n)$, each stage adding free generators with the attaching loop a commutator. The doubled case repeats that computation with four horns per handle, so the rank doubles at each stage instead of growing by $2^n$. Checked against the book: the construction, the uniform-convergence and injectivity arguments, the identification $\RR^3-B=\bigcup Y_n$, and the van Kampen input that the attaching loop represents the commutator $[\alpha_1,\alpha_2]$. Not claimed: a published analysis of the doubled block specifically; the transcription is of Hatcher's own construction for the undoubled one and the computation is carried out for the doubled one.
 ---
 ---
 
@@ -139,4 +144,8 @@ Thus every $H_1(Y_n)$ class dies at the next stage, so the direct-limit $H_1$ is
 :::
 
 The limiting compact set is still a topological $3$-ball: the same shrinking-horn homeomorphisms used in Hatcher's construction converge uniformly, now with four horns per old handle instead of two. Thus the doubled construction again produces a wild $2$-sphere, but with the faster-growing system of free groups described above.
+:::
+
+::: {.remark title="Published solution"}
+Hatcher, *Algebraic Topology* (2002), Example 2B.2 and its printed construction, pp. 170--172: the decreasing sequence $X_n$, the balls $B_n$ with $2^n$ handles, the limit homeomorphism, and the van Kampen computation of $\pi_1(\RR^3-B)$ as the ascending union of the $\pi_1(Y_n)$ with the attaching loop a commutator. The exercise is Exercise 7 of §2.B, printed p. 176; the doubled-handle case is that computation with four horns per handle.
 :::
