@@ -152,6 +152,11 @@ audit:
     Hausdorff $D^q$; nonemptiness and connectedness of $\operatorname{int}D^q$ finish it. Not checked:
     the removal of the earlier claim leaves the collar argument of #collar untouched, which the note
     below records; the source obligation is unchanged, no published solution having been located.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-13
+  note: >-
+    The exercise is on printed p. 176 in two parts. (a) is the computed homeomorphism $\Phi(x,y)=(y/\abs{y}, x/\abs{y})$ onto $S^{q-1}\times\RR^p$ together with the straight-line deformation retraction onto $S^{q-1}$, and the homology statement behind it is part (b) of Hatcher's Proposition 2B.1, printed p. 169 with its proof on pp. 169--170. (b) is the contradiction obtained from §2.B Exercise 3, printed p. 176, applied to the collared disks; its degenerate cases $p=0$ and $q=0$ are settled by Invariance of Domain, Theorem 2B.3, printed p. 172, and Corollary 2B.4, printed p. 172. Checked against the book: the printed statement has no hypothesis on the disks, and the collaring step now runs for $p,q\ge1$ with the two degenerate cases separate, so the card reads the exercise as printed. The earlier claim that (b) fails at $p=0$ is withdrawn and the reason is recorded in the audit trail.
 ---
 ---
 
@@ -343,4 +348,8 @@ Suppose $f,g$ are as in the exercise. If $p=0$ or $q=0$ the claim is step [](#de
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Hatcher, *Algebraic Topology* (2002): the statement is Exercise 4 of §2.B, printed p. 176. Part (a)'s homology content is Proposition 2B.1(b) with its printed proof, pp. 169--170; part (b) is §2.B Exercise 3 (printed p. 176) applied to the collared disks, with the cases $p=0$ and $q=0$ settled by Invariance of Domain, Theorem 2B.3, and Corollary 2B.4, both printed p. 172.
 :::
