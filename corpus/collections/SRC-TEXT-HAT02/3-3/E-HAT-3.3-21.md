@@ -118,6 +118,11 @@ audit:
     the countable direct sum by Specker's theorem. The bracketed question therefore still rests on
     the assembled degree-two counterexample from Eda-Kawamura and Wiegold, not on a published
     complete exercise solution, and that narrower obligation stays open.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-13
+  note: >-
+    Re-read for the published-solution obligation. The card's first part is the complete published solution of Stanford Math 215C, Spring 2009, Solution Set 4, Hatcher §3.3 Exercise 21, printed p. 1: excision to move $H^n(X^+,X^+-K;G)$ to $H^n(X,X-K;G)$, cone-shaped neighbourhoods of $\infty$ as a cofinal system of compact sets, the exact sequence of the pair forcing $\tilde H^m(U_K;G)=0$, and the direct limit over the cofinal system. Checked against the book: the exercise's printed statement on p. 262 with its cone hypothesis, and the definition of compactly supported cohomology. Not claimed: the set's own paragraph on $X=\ZZ\times\RR$ is rejected on the card and the card's counterexample there stands; the citation covers the first part only.
 ---
 
 ::: {.problem}
