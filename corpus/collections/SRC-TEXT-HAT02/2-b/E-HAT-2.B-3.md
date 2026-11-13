@@ -34,6 +34,11 @@ audit:
     d = n−k−1, so reduced Mayer–Vietoris forces H̃_d(B)² to be an extension of Z by
     Z, free of rank 2, with i_* = diag(m,−m) whose cokernel Z ⊕ Z_m must be Z, hence
     m = 1; k = n gives A and B empty. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-13
+  note: >-
+    The exercise is on printed p. 176 and its printed hint is to glue two copies of $(D^n,D)$ to the ends of $(S^{n-1}\times I, S\times I)$ and apply Mayer--Vietoris to the complement of the resulting $k$-sphere. The proof transcribed here is the printed proof of Hatcher's Proposition 2B.1, printed pp. 169--170: the induction on $k$ that splits the complement of a cube into the complements of its two halves and applies the Mayer--Vietoris sequence, with the nested-interval argument that keeps a cycle from becoming a boundary. The identification of the general pair with the standard one is the printed reduction on p. 169 to the locally flat case, where Hatcher cites Brown 1960 for the collar theorem. Checked against the book: the statement on p. 176 with its intersection hypothesis $D\cap S^{n-1}=S$, the two displayed reduced homology computations, and the $k=n$ case, in which $S=S^{n-1}$ and the complement of $S$ is empty. Not claimed: nothing about the exercise beyond its printed statement; no retyping of Brown's proof, which stays a citation.
 ---
 ---
 
@@ -72,4 +77,8 @@ $$
 The middle group is free of rank two because this sequence splits as a sequence of abelian groups. Hence $\widetilde H_d(B)\cong\ZZ$. After choosing orientations, $i_*$ is multiplication by a positive integer $m$. The cokernel of the diagonal map $(m,-m):\ZZ\to\ZZ^2$ is $\ZZ\oplus\ZZ_m$, while the displayed exact sequence says it is $\ZZ$. Therefore $m=1$, and $i_*$ is an isomorphism. The reduced result gives the ordinary $H_0$ result as well, since both spaces are nonempty.
 
 If $k=n$, then $S=S^{n-1}$ and $A$ is empty. The embedded $D^n$ has its boundary on $\partial D^n$. Invariance of domain makes its interior image open in $\operatorname{int}D^n$; it is also closed there, since the image of the whole disk is compact and its boundary image lies on $\partial D^n$. Hence $D=D^n$, so $B$ is empty too.
+:::
+
+::: {.remark title="Published solution"}
+Hatcher, *Algebraic Topology* (2002), Proposition 2B.1 and its printed proof, pp. 169--170, which is the argument the exercise's printed hint (p. 176) names: induction on $k$, the complement of the cube $I^k$ split into the complements of $I^{k-1}\times[0,\tfrac12]$ and $I^{k-1}\times[\tfrac12,1]$, the Mayer--Vietoris sequence of pp. 149--150, and the nested intervals $I_1\supset I_2\supset\cdots$ that stop a cycle from bounding. The statement is Exercise 3 of §2.B, printed p. 176; the reduction of a locally flat pair to the standard one is the printed remark on p. 169 citing Brown (1960), and the case $k=n$ uses Invariance of Domain, Theorem 2B.3, printed p. 172.
 :::
