@@ -123,6 +123,22 @@ audit:
   date: 2026-11-13
   note: >-
     Re-read for the published-solution obligation. The card's first part is the complete published solution of Stanford Math 215C, Spring 2009, Solution Set 4, Hatcher §3.3 Exercise 21, printed p. 1: excision to move $H^n(X^+,X^+-K;G)$ to $H^n(X,X-K;G)$, cone-shaped neighbourhoods of $\infty$ as a cofinal system of compact sets, the exact sequence of the pair forcing $\tilde H^m(U_K;G)=0$, and the direct limit over the cofinal system. Checked against the book: the exercise's printed statement on p. 262 with its cone hypothesis, and the definition of compactly supported cohomology. Not claimed: the set's own paragraph on $X=\ZZ\times\RR$ is rejected on the card and the card's counterexample there stands; the citation covers the first part only.
+- event: source-corrected
+  by: claude
+  date: 2026-11-13
+  note: >-
+    The page in the preceding note is wrong and is corrected here: the exercise is on printed p. 259,
+    the last page of §3.3, not p. 262, which is in §3.A. Read again in Hatcher, *Algebraic Topology*
+    (2002), printed p. 259 and in the current online text at the same page: the statement there is
+    "For a space $X$, let $X^+$ be the one-point compactification. If the added point, denoted
+    $\infty$, has a neighborhood in $X^+$ that is a cone with $\infty$ the cone point, show that the
+    evident map $H_c^n(X;G)\to H^n(X^+,\infty;G)$ is an isomorphism for all $n$. [Question: Does this
+    result hold when $X=\ZZ\times\RR$?]", matching the card. The bracketed part remains as recorded:
+    no published solution of it was located, in the retained sets or elsewhere, and the card answers
+    it with its own degree-two counterexample. Searched without result for the bracketed part in the
+    retained sets (Sam, Li, DeMason, Poulsen, Stanford Math 215C Solution Sets 1--5, the UCR Math
+    205B help file, May's *Concise Course*, Bredon, Maxim's Math 752 notes) and in Hatcher's text and
+    errata; Hatcher's errata has no entry for §3.3 near this page.
 ---
 
 ::: {.problem}
