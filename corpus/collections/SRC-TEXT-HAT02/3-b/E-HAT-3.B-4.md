@@ -45,6 +45,17 @@ audit:
     correspond to $[M]_x\otimes[N]_y$. No published solution of this exercise is in the retained
     sets — Sam has no §3.B, Stanford 215C solution2 covers §3.B exercises 1 and 3 only, Li stops at
     §3.3, the Math 538 sheets are §3.3 only — recorded in COMPLAINTS.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-13
+  note: >-
+    Re-read the printed statement for #123: the exercise is Exercise 4 of §3.B on printed p. 280,
+    identical in the current online text, and the card states it word for word. The obligation that
+    #123 records is unchanged and stays open: no published solution of this exercise was located.
+    Searched without result in the retained sets (Sam, Li, DeMason, Poulsen, Stanford Math 215C
+    Solution Sets 1--5, the UCR Math 205B help file, May, Bredon, Maxim's Math 752 notes) and in
+    Hatcher's text and errata; the Math 538 set held here is a scan with no text layer and opens at
+    §3.2 (Borsuk--Ulam), not at §3.B.
 ---
 
 ::: {.problem}
