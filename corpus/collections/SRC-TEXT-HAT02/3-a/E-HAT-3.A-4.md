@@ -70,34 +70,37 @@ Show that $\otimes$ and Tor commute with direct limits: $(\varinjlim_\alpha A_\a
 :::
 
 ::: {.solution}
-Both identities are published as corollaries of the exactness of filtered colimits of modules in Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §2.6 and §2.7, printed p. 58. There, Corollary 2.6.16 states that for an abelian category with enough projectives satisfying (AB5) and a left adjoint $F$ the derived functors satisfy $L_*F(\varinjlim A_\alpha)\cong\varinjlim L_*F(A_\alpha)$ over a filtered index category; applied to the left adjoint $-\otimes_\ZZ B$, whose $L_0$ is itself, this is the first identity. Corollary 2.6.17 states $\operatorname{Tor}_*^R(A,\varinjlim B_\alpha)\cong\varinjlim\operatorname{Tor}_*^R(A,B_\alpha)$, and Theorem 2.7.2, balancing the two derived functors of the tensor product, states $\operatorname{Tor}_n^R(A,B)\cong\operatorname{Tor}_n^R(B,A)$; together they give the second identity. The argument below verifies both identities directly for $\ZZ$-modules, which is what the exercise asks for, with the two inputs Weibel uses — that a filtered colimit of abelian groups is exact, and that a free group tensored with $M$ is a direct sum of copies of $M$ — proved rather than cited.
+Both identities are instances of the filtered-colimit theorems of Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §2.6--2.7, printed p. 58, applied to the left adjoint $-\otimes_\ZZ B$ of $\ZZ$-mod. Let $\Lambda$ be a directed index set, $(A_\alpha)_{\alpha\in\Lambda}$ a directed system of abelian groups with colimit $A=\varinjlim_\alpha A_\alpha$ and structure maps $i_\alpha:A_\alpha\to A$. A directed set is a filtered index category, so the theorems of §2.6 apply.
 
-Let $(A_\alpha)_{\alpha\in\Lambda}$ be a directed system of abelian groups over a directed index set $\Lambda$, with colimit $A=\varinjlim_\alpha A_\alpha$ and structure maps $i_\alpha:A_\alpha\to A$.
+*The results used, with their printed statements.*
 
-*Tensor products.* The maps $i_\alpha\otimes\id_B$ are compatible, so they induce $u:\varinjlim_\alpha(A_\alpha\otimes B)\to A\otimes B$. In the other direction, define a map $v:A\otimes B\to\varinjlim_\alpha(A_\alpha\otimes B)$ by the universal property of $\otimes$, from the bilinear map $(a,b)\mapsto[a_\alpha\otimes b]$, where $a_\alpha\in A_\alpha$ is any element with $i_\alpha(a_\alpha)=a$: two such choices $a_\alpha,a_{\alpha'}$ both map to a common later stage $A_\gamma$, because $\Lambda$ is directed, so the classes $[a_\alpha\otimes b]$ and $[a_{\alpha'}\otimes b]$ agree; the map is additive in each variable because the colimit is an abelian group and $i_\alpha$ is a homomorphism. On simple tensors $u v(a\otimes b)=i_\alpha(a_\alpha)\otimes b=a\otimes b$ and $vu[a_\alpha\otimes b]=[a_\alpha\otimes b]$, and simple tensors generate, so $u$ and $v$ are mutually inverse:
+(i) Theorem 2.6.15, printed p. 57: filtered colimits of $R$-modules are exact, considered as functors from $(\text{mod-}R)^I$ to $\text{mod-}R$. Weibel calls a cocomplete abelian category in which filtered colimits are exact a category satisfying (AB5) (Exercise 2.6.5, printed p. 57), and the theorem says $\text{mod-}R$ and $R\text{-mod}$ do; $\ZZ$-mod has enough projectives as well, free abelian groups being projective.
+
+(ii) Corollary 2.6.16, printed p. 58: if $\mathcal A=\text{mod-}R$, or $\mathcal A$ is any abelian category with enough projectives satisfying (AB5), and $F:\mathcal A\to\mathcal B$ is a left adjoint, then for every $A:I\to\mathcal A$ with $I$ filtered,
 $$
-\left(\varinjlim_\alpha A_\alpha\right)\otimes B\cong\varinjlim_\alpha(A_\alpha\otimes B).
+L_*F\bigl(\varinjlim A_i\bigr)\cong\varinjlim L_*F(A_i).
 $$
 
-*Tor.* It is enough to prove that for a fixed abelian group $B$ the functor $M\mapsto\operatorname{Tor}(B,M)$ commutes with this colimit, since $\operatorname{Tor}(A,B)\cong\operatorname{Tor}(B,A)$ by Proposition 3A.5(1) (p. 265). Choose a free resolution $0\to G_1\xrightarrow{\varphi}G_0\to B\to0$; by the definition of Tor through a free resolution (Lemma 3A.2, p. 263, makes the choice immaterial)
-$$
-\operatorname{Tor}(B,M)=\ker\bigl(G_1\otimes M\xrightarrow{\varphi\otimes\id}G_0\otimes M\bigr).
-$$
-Two facts about the colimit are used.
+(iii) Theorem 2.7.2, printed p. 58: $L_n(A\otimes_R-)(B)\cong L_n(-\otimes_RB)(A)=\operatorname{Tor}_n^R(A,B)$, the balancing of the two left derived functors of the tensor product.
 
-(i) For a free abelian group $G$ with basis $J$ one has $G\otimes M\cong\bigoplus_J M$, and a filtered colimit of $J$-indexed direct sums is the direct sum of the colimits, because a sum has finite support and the support of an element does not change as the stage grows. Hence $G_i\otimes A\cong\varinjlim_\alpha(G_i\otimes A_\alpha)$ for $i=0,1$.
+Weibel prints the same colimit theorem for $\operatorname{Tor}$ in the second variable as Corollary 2.6.17, printed p. 58: $\operatorname{Tor}_*^R(A,\varinjlim B_i)\cong\varinjlim\operatorname{Tor}_*^R(A,B_i)$. It is not the step the exercise needs, and the text below says why.
 
-(ii) Filtered colimits in the category of abelian groups are exact. Indeed, given a directed system of exact sequences $0\to K_\alpha\to M_\alpha\to N_\alpha\to0$, an element of $\varinjlim K_\alpha$ maps to $0$ in $\varinjlim M_\alpha$ only if it is killed already at some stage, and an element of $\varinjlim M_\alpha$ with zero image in $\varinjlim N_\alpha$ is killed at some stage, hence lifts there from that stage of $K$. Applying this to the images of the exact sequences $0\to\ker(\varphi\otimes\id)\to G_1\otimes A_\alpha\to G_0\otimes A_\alpha$ gives
+*Tensor products.* Take $F=-\otimes_\ZZ B:\ZZ\text{-}\mathbf{mod}\to\ZZ\text{-}\mathbf{mod}$, a left adjoint with right adjoint $\operatorname{Hom}_\ZZ(B,-)$. Its zeroth left derived functor is $F$ itself, because the tensor product is right exact. Corollary 2.6.16 in degree zero then reads
 $$
-\ker\left(\varinjlim_\alpha (G_1\otimes A_\alpha)\to\varinjlim_\alpha (G_0\otimes A_\alpha)\right)
-\cong\varinjlim_\alpha\ker\bigl(G_1\otimes A_\alpha\to G_0\otimes A_\alpha\bigr).
+\Bigl(\varinjlim_\alpha A_\alpha\Bigr)\otimes_\ZZ B\cong\varinjlim_\alpha(A_\alpha\otimes_\ZZ B),
 $$
-Combining with (i) and with the definition of Tor in each stage,
+which is the exercise's first identity.
+
+*Tor.* Apply the same corollary to the same functor in degree $n$ and use (iii) at each argument:
 $$
-\operatorname{Tor}(B,A)
-=\ker\bigl(G_1\otimes A\to G_0\otimes A\bigr)
-\cong\varinjlim_\alpha\operatorname{Tor}(B,A_\alpha)
-\cong\varinjlim_\alpha\operatorname{Tor}(A_\alpha,B).
+\operatorname{Tor}_n^{\ZZ}\Bigl(\varinjlim_\alpha A_\alpha,B\Bigr)
+=L_n(-\otimes_\ZZ B)\Bigl(\varinjlim_\alpha A_\alpha\Bigr)
+\cong\varinjlim_\alpha L_n(-\otimes_\ZZ B)(A_\alpha)
+\cong\varinjlim_\alpha\operatorname{Tor}_n^{\ZZ}(A_\alpha,B).
 $$
-Symmetry of Tor turns this into the asserted $\operatorname{Tor}(\varinjlim_\alpha A_\alpha,B)\cong\varinjlim_\alpha\operatorname{Tor}(A_\alpha,B)$.
+The outer equalities are the balancing isomorphism of Theorem 2.7.2, the middle one is Corollary 2.6.16. The exercise's second identity is the case $n=1$, which is $\operatorname{Tor}$ for abelian groups; $\operatorname{Tor}_n^{\ZZ}=0$ for $n>1$ because every abelian group has a free resolution of length one (Hatcher, printed p. 263).
+
+*The symmetry of $\operatorname{Tor}$ is not passed through the colimit.* Both identities of the exercise are stated with the colimit in the first variable, and the derivation above keeps that variable fixed: Corollary 2.6.16 is a statement about the one functor $F=-\otimes_\ZZ B$, and Theorem 2.7.2 is a natural isomorphism of functors in the module variable, so it applies at the colimit and at every stage simultaneously. Nothing of the form $\operatorname{Tor}(B,A_\alpha)\cong\operatorname{Tor}(A_\alpha,B)$ occurs, and no compatibility of such a stagewise isomorphism with the structure maps $A_\alpha\to A_\beta$ has to be checked. For a colimit in the second variable the same argument runs with the other adjunction $A\otimes_R-\dashv\operatorname{Hom}_R(A,-)$, which is how the book obtains Corollary 2.6.17; the two variables agree for $\ZZ$-mod by Theorem 2.7.2, and that theorem is where the symmetry of $\operatorname{Tor}$ enters, once, as a natural isomorphism.
+
+Checked against Hatcher, *Algebraic Topology* (2002), §3.A Exercise 4, printed p. 267: "Show that $\otimes$ and $\operatorname{Tor}$ commute with direct limits: $(\varinjlim_\alpha A_\alpha)\otimes B=\varinjlim(A_\alpha\otimes B)$ and $\operatorname{Tor}(\varinjlim A_\alpha,B)=\varinjlim\operatorname{Tor}(A_\alpha,B)$", with Hatcher's $\operatorname{Tor}=\operatorname{Tor}_1^{\ZZ}$ as on printed p. 263. Weibel's derivation gives both identities in every degree and asks nothing of the directed system beyond filteredness.
 :::
