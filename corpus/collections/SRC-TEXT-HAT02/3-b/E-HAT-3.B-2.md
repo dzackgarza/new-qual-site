@@ -44,6 +44,44 @@ audit:
     retained sets (Sam, Li, DeMason, Poulsen, Stanford Math 215C Solution Sets 1--5, the UCR Math
     205B help file, May, Bredon, Weibel's chapters 2--3 extracts, Maxim's Math 752 notes) and in
     Hatcher's text and errata.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    The exercise now has a published proof, supplied by the owner for #123 and read in the text
+    version: J. P. May, *A Concise Course in Algebraic Topology*, Chicago Lectures in Mathematics,
+    University of Chicago Press 1999, Chapter 12 §3, the Lemma "A chain homotopy $s:f\simeq g$
+    between chain maps $f,g:X\to X'$ determines and is determined by a chain map $h:X\otimes I\to
+    X'$ such that $h(x,[0])=f(x)$ and $h(x,[1])=g(x)$", with its proof, on p. 92 of the revised PDF
+    (page headed *A little homological algebra*, followed by p. 93, which opens §4). The solution is
+    that lemma and proof transcribed in May's own convention $X\otimes I$ with $d[I]=[0]-[1]$ and
+    the signed correspondence $(-1)^i s(x)=h(x\otimes[I])$, then transported to the exercise's
+    convention $I\otimes C$ with $\partial e=v_1-v_0$ and the unsigned hint $h(c)=f(e\otimes c)$.
+    The translation is stated on the card and proved there: the two copies of $I$ are the same
+    complex under $[0]\mapsto v_1$, $[1]\mapsto v_0$, $[I]\mapsto e$, and May's $(-1)^i$ is the
+    Koszul sign of the graded commutativity isomorphism $C\otimes I\to I\otimes C$, which cancels
+    against it; consequently May's $f$ and $g$ are the exercise's $f_1$ and $f_0$. That is May's own
+    closing sentence, "The sign in the correspondence would disappear if we replaced $X\otimes I$ by
+    $I\otimes X$", on the same page. Not claimed: that May states or solves Hatcher's exercise; he
+    states and proves the general lemma the exercise asks to be checked in one convention.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Read the transcription against the source line by line. May's proof is one sentence — "the
+    relation $d'_{i+1}(s_i(x))=f_i(x)-g_i(x)-s_{i-1}(d_i(x))$ corresponds to the relation $d'h=hd$
+    by the definition of our differential on $I$" — and the card writes out both halves of that
+    correspondence on the two kinds of generators, in May's convention: the degree-zero generators,
+    where $d(x\otimes[j])=dx\otimes[j]$ and the chain-map property of $f$ and $g$ answers, and the
+    degree-one generator, where $d(x\otimes[I])=dx\otimes[I]+(-1)^i x\otimes([0]-[1])$ and the
+    identity $hd=d'h$ on it is exactly $d'_{i+1}s_i+s_{i-1}d_i=f_i-g_i$. Checked the converse
+    direction and the mutual inverseness, which May states by the word "determines". Checked the
+    translation by computing $F=h\circ\tau$ on each family: $\tau(e\otimes c)=(-1)^i c\otimes[I]$,
+    so $F(e\otimes c)=(-1)^i(-1)^i s(c)=s(c)$, and $\tau(v_j\otimes c)=c\otimes v_j$ gives
+    $F(v_1\otimes c)=f(c)$, $F(v_0\otimes c)=g(c)$. Checked the exercise's printed statement on
+    Hatcher's p. 280, including the bracketed hint, which the boxed correspondence of the last step
+    reproduces. Not verified: the pagination of the 1999 bound volume, which this machine does not
+    hold; the page cited is the revised PDF's own printed page 92, as the card states.
 ---
 
 ::: {.problem}
@@ -53,93 +91,87 @@ Let $C$ and $C'$ be chain complexes, and let $I$ be the chain complex consisting
 
 ::: {.solution}
 
+Throughout, chain complexes are of $\ZZ$-modules and their tensor product is graded with
+
+$$
+(C\otimes C')_n=\bigoplus_{i+j=n}C_i\otimes C'_j,
+\qquad
+d(x\otimes y)=dx\otimes y+(-1)^{i}x\otimes dy\quad (x\in C_i),
+$$
+
+the Koszul rule, which both sources use. Two copies of the two-term complex occur below. May's copy has generators $[0],[1]$ in degree $0$ and $[I]$ in degree $1$ with $d[I]=[0]-[1]$; the exercise's has generators $v_0,v_1$ in degree $0$ and $e$ in degree $1$ with $\partial e=v_1-v_0$. The assignment $\iota:[0]\mapsto v_1$, $[1]\mapsto v_0$, $[I]\mapsto e$ is an isomorphism of chain complexes, because it carries $d[I]=[0]-[1]$ to $v_1-v_0=\partial e$. May writes the tensor product $C\otimes I$ with his complex on the right, the exercise writes $I\otimes C$ with its complex on the left, and
+
+$$
+\tau:C\otimes I\longrightarrow I\otimes C,\qquad \tau(x\otimes y)=(-1)^{\gradeddegree{x}\gradeddegree{y}}y\otimes x,
+$$
+
+is an isomorphism of chain complexes, the sign being exactly what the Koszul differentials require.
+
 ::: pf
 
-::: pf-step
+::: {.pf-step #may-degree}
 
-$I \otimes C$ has, in degree $n$, the group $(I_0 \otimes C_n) \oplus (I_1 \otimes C_{n-1}) = (v_0 \otimes C_n) \oplus (v_1 \otimes C_n) \oplus (e \otimes C_{n-1})$.
-
-::: pf-proof
-
-$I_0 = \ZZ v_0 \oplus \ZZ v_1$ and $I_1 = \ZZ e$, so $I \otimes C$ in degree $n$ is $(I_0 \otimes C_n) \oplus (I_1 \otimes C_{n-1})$.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-The boundary of $I \otimes C$ is $\partial(v_i \otimes c) = v_i \otimes \partial c$ and $\partial(e \otimes c) = (v_1 - v_0) \otimes c - e \otimes \partial c$.
+In May's convention, $C\otimes I$ has $(C\otimes I)_n=(C_n\otimes[0])\oplus(C_n\otimes[1])\oplus(C_{n-1}\otimes[I])$, and an additive map out of it is determined by its values on the three families $c\otimes[0]$, $c\otimes[1]$, $c\otimes[I]$.
 
 ::: pf-proof
 
-$\partial(e) = v_1 - v_0$, and the boundary of a tensor product is $\partial(a \otimes c) = \partial a \otimes c + (-1)^{\gradeddegree{a}} a \otimes \partial c$.
+$I_0=\ZZ[0]\oplus\ZZ[1]$ and $I_1=\ZZ[I]$, so $(C\otimes I)_n=(C_n\otimes I_0)\oplus(C_{n-1}\otimes I_1)$ is the direct sum displayed, and these summands are generated by the three families as $c$ ranges over a generating set of $C_n$, respectively $C_{n-1}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #may-sign}
 
-A chain map $f: I \otimes C \to C'$ is determined by its values on $v_0 \otimes c$, $v_1 \otimes c$, and $e \otimes c$.
+In May's convention, the correspondence $s\leftrightarrow h$ given by $(-1)^{i}s(c)=h(c\otimes[I])$ for $c\in C_i$, together with $h(c\otimes[0])=f(c)$ and $h(c\otimes[1])=g(c)$, is a bijection between the chain homotopies $s:f\simeq g$ and the chain maps $h:C\otimes I\to C'$ with those two values.
 
 ::: pf-proof
 
-The three families $v_0\otimes c$, $v_1\otimes c$ and $e\otimes c$ for $c\in C$ generate $I\otimes C$ as an abelian group, and a homomorphism is determined by its values on generators.
+Let $h$ be a chain map with the prescribed values on $c\otimes[0]$ and $c\otimes[1]$, and define $s$ by the displayed formula. On the degree-$0$ generators the chain-map condition is automatic: for $c\in C_i$ one has $d(c\otimes[j])=dc\otimes[j]$, since $d[j]=0$, so $hd(c\otimes[j])=f(dc)$ respectively $g(dc)$, while $d'h(c\otimes[j])=d'f(c)$ respectively $d'g(c)$, and the two agree because $f$ and $g$ are chain maps. On the degree-$1$ generator, $d(c\otimes[I])=dc\otimes[I]+(-1)^{i}c\otimes([0]-[1])$, so
+
+$$
+hd(c\otimes[I])=(-1)^{i-1}s(dc)+(-1)^{i}\bigl(f(c)-g(c)\bigr),
+\qquad
+d'h(c\otimes[I])=(-1)^{i}d's(c),
+$$
+
+and these are equal for every $c$ exactly when $d'_{i+1}s_i+s_{i-1}d_i=f_i-g_i$ for every $i$, which is the chain-homotopy relation. Conversely, given chain maps $f,g$ and a degree-one homomorphism $s$ satisfying that relation, the three formulas define an additive map $h$, and the same two computations, read backwards, show that $h$ is a chain map with the required values; step [](#may-degree){.pf-ref} says nothing further has to be checked. The two passages are inverse to each other.
 
 :::
 
 :::
 
-::: {.pf-step #s4}
+::: {.pf-step #twist}
 
-Define $f_i(c) = f(v_i \otimes c)$ for $i = 0, 1$, and $h(c) = f(e \otimes c)$.
+Transport by $\tau$ converts May's correspondence into the exercise's: if $h:C\otimes I\to C'$ is a chain map, then $F=h\circ\tau:I\otimes C\to C'$ is a chain map with $F(v_1\otimes c)=f(c)$, $F(v_0\otimes c)=g(c)$ and $F(e\otimes c)=s(c)$.
 
 ::: pf-proof
 
-The two maps $f_i:C\to C'$ are the maps $c\mapsto f(v_i\otimes c)$, included in $C'$ in degree $\deg c$; the map $h$ sends $c$ to $f(e\otimes c)\in C'_{\deg c+1}$, so $h$ raises degree by one.
+$\tau$ is an isomorphism of chain complexes, so $F=h\circ\tau$ is a chain map. On generators, $\tau(v_j\otimes c)=c\otimes v_j$, which is $c\otimes[0]$ for $j=1$ and $c\otimes[1]$ for $j=0$ under the identification $\iota$; hence $F(v_1\otimes c)=h(c\otimes[0])=f(c)$ and $F(v_0\otimes c)=h(c\otimes[1])=g(c)$. Since $e$ has degree $1$ and $c$ degree $i$, $\tau(e\otimes c)=(-1)^{i}c\otimes e=(-1)^{i}c\otimes[I]$, so $F(e\otimes c)=(-1)^{i}h(c\otimes[I])=(-1)^{i}(-1)^{i}s(c)=s(c)$: the two signs cancel, which is May's remark that the sign in his correspondence disappears when the tensor product is written with $I$ on the left.
 
 :::
 
 :::
 
-::: {.pf-step #s5}
+::: {.pf-step #forward}
 
-The chain map condition on $e \otimes c$ gives $f_1 - f_0 = \partial h + h \partial$.
+Conversely, let $F:I\otimes C\to C'$ be a chain map and put $F_i(c)=F(v_i\otimes c)$ and $H(c)=F(e\otimes c)$; then $F_0,F_1$ are chain maps and $H$ is a chain homotopy $F_1\simeq F_0$, that is $\partial H+H\partial=F_1-F_0$.
 
 ::: pf-proof
 
-::: {.pf-step #s5-1}
+In the exercise's convention $(I\otimes C)_n=(v_0\otimes C_n)\oplus(v_1\otimes C_n)\oplus(e\otimes C_{n-1})$, with $\partial(v_i\otimes c)=v_i\otimes\partial c$ and $\partial(e\otimes c)=(v_1-v_0)\otimes c-e\otimes\partial c$. On $v_i\otimes c$ the chain-map condition reads $F_i(\partial c)=F(v_i\otimes\partial c)=F\partial(v_i\otimes c)=\partial F(v_i\otimes c)=\partial F_i(c)$. On $e\otimes c$, $F\partial(e\otimes c)=F_1(c)-F_0(c)-H(\partial c)$ and $\partial F(e\otimes c)=\partial H(c)$, so the chain-map condition is $\partial H+H\partial=F_1-F_0$. $H$ raises degree by one because $e$ does.
 
-$f(\partial(e \otimes c)) = \partial f(e \otimes c)$.
+:::
+
+:::
+
+::: {.pf-step #inverse}
+
+The two passages are mutually inverse, so chain maps $I\otimes C\to C'$ correspond bijectively to chain homotopies between chain maps $C\to C'$.
 
 ::: pf-proof
 
-$f$ is a chain map.
-
-:::
-
-:::
-
-::: {.pf-step #s5-2}
-
-$f(\partial(e \otimes c)) = f((v_1 - v_0) \otimes c - e \otimes \partial c) = f_1(c) - f_0(c) - h(\partial c)$.
-
-::: pf-proof
-
-Steps [](#s2){.pf-ref} and [](#s4){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s5-3}
-
-$\partial f(e \otimes c) = \partial h(c)$.
-
-::: pf-proof
-
-Step [](#s4){.pf-ref}.
+Starting from $F$, take $(F_0,F_1,H)$ as in step [](#forward){.pf-ref}, then let $g=F_1$, $f=F_0$, $s=H$ and apply the construction of step [](#may-sign){.pf-ref}: the resulting chain map agrees with $F$ on $v_i\otimes c$ and on $e\otimes c$, hence is $F$ by step [](#may-degree){.pf-ref} applied through $\tau$. Starting from $(f,g,s)$ the two steps produce the same values, so the composite is the identity. Step [](#twist){.pf-ref} is the dictionary between the two conventions, and it is a bijection on chain maps.
 
 :::
 
@@ -147,64 +179,28 @@ Step [](#s4){.pf-ref}.
 
 ::: pf-step
 
-Hence $f_1(c) - f_0(c) - h(\partial c) = \partial h(c)$, i.e. $f_1 - f_0 = \partial h + h \partial$.
+A chain map $f:I\otimes C\to C'$ is precisely the same as a chain homotopy between the two chain maps $f_i:C\to C'$, $c\mapsto f(v_i\otimes c)$; the chain homotopy is $h(c)=f(e\otimes c)$, and this is May's lemma in the exercise's convention.
 
 ::: pf-proof
 
-Steps [](#s5-1){.pf-ref}, [](#s5-2){.pf-ref} and [](#s5-3){.pf-ref}.
+Steps [](#may-sign){.pf-ref}, [](#twist){.pf-ref}, [](#forward){.pf-ref} and [](#inverse){.pf-ref} give the bijection, in the two conventions, with the correspondence $h(c)=f(e\otimes c)$ of the exercise's hint, and
 
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-The chain map condition on $v_i \otimes c$ gives that $f_i$ is a chain map.
-
-::: pf-proof
-
-$f(\partial(v_i \otimes c)) = f(v_i \otimes \partial c) = f_i(\partial c)$ equals $\partial f(v_i \otimes c) = \partial f_i(c)$, so $f_i \partial = \partial f_i$.
-
-:::
-
-:::
-
-::: {.pf-step #s7}
-
-Hence $f$ determines a chain homotopy $h$ between the chain maps $f_0$ and $f_1$.
-
-::: pf-proof
-
-Steps [](#s5){.pf-ref} and [](#s6){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s7){.pf-ref}.
-
-:::
-
-:::
-
-Conversely, given chain maps $f_0,f_1:C\to C'$ and a homomorphism $h:C\to C'$ of degree one with $f_1-f_0=\partial h+h\partial$, define $f$ on the generators of Step [](#s4){.pf-ref} by $f(v_i\otimes c)=f_i(c)$ and $f(e\otimes c)=h(c)$, extended linearly. It is a chain map, and only the two kinds of generators need checking.
-
-On $v_i\otimes c$ the boundary is $\partial(v_i\otimes c)=v_i\otimes\partial c$ by the formula of Step [](#s2){.pf-ref}, so
 $$
-f\partial(v_i\otimes c)=f_i(\partial c)=\partial f_i(c)=\partial f(v_i\otimes c),
+\boxed{\{\text{chain maps }I\otimes C\to C'\}\ \cong\ \{\text{chain homotopies } f_0\simeq f_1\ \text{between chain maps } C\to C'\}.}
 $$
-using that $f_i$ is a chain map.
 
-On $e\otimes c$ the boundary is $\partial(e\otimes c)=(v_1-v_0)\otimes c-e\otimes\partial c$, so
-$$
-f\partial(e\otimes c)=f_1(c)-f_0(c)-h(\partial c)=\partial h(c)=\partial f(e\otimes c),
-$$
-using the homotopy relation. These two computations are exactly the inverse of the constructions taking a chain map to $(f_0,f_1,h)$: the $v_i$-values recover $f_i$, the $e$-values recover $h$, and the two computations above are the two halves of the chain map condition for $f$, which is what Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} extract from it. So the two constructions undo each other, and chain maps $I\otimes C\to C'$ correspond bijectively to chain homotopies between chain maps $C\to C'$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.remark title="Source"}
+
+The exercise is Exercise 2 of §3.B, printed p. 280. The proof above is transcribed from **J. P. May, *A Concise Course in Algebraic Topology*, Chicago Lectures in Mathematics, University of Chicago Press 1999**, Chapter 12 §3 ("Tensor products of chain complexes"), the Lemma stating that a chain homotopy $s:f\simeq g$ determines and is determined by a chain map $h:X\otimes I\to X'$ with $h(x\otimes[0])=f(x)$ and $h(x\otimes[1])=g(x)$, with its proof, on **p. 92 of the revised PDF**, the page headed *A little homological algebra* and followed by p. 93, which opens §4. The differential $d(x\otimes y)=d(x)\otimes y+(-1)^{i}x\otimes d(y)$ and the complex $I$ with $d[I]=[0]-[1]$ are displayed immediately above the Lemma on the same page; the proof's closing sentence, that the sign in the correspondence disappears if $X\otimes I$ is replaced by $I\otimes X$, is on that page and is the translation step [](#twist){.pf-ref}. Pagination is that of the revised PDF's own printed numbers, not of the 1999 bound volume.
+
+The translation, stated: May's $I$ and the exercise's $I$ are the same two-term complex under $[0]\mapsto v_1$, $[1]\mapsto v_0$, $[I]\mapsto e$, which reverses the labels because May's differential is $[0]-[1]$ and the exercise's is $v_1-v_0$; and May's correspondence carries the factor $(-1)^{i}$ while the exercise's hint $h(c)=f(e\otimes c)$ carries none, because May places $I$ on the right of the tensor product and the graded commutativity isomorphism $\tau$ contributes $(-1)^{i}$ in moving the degree-one generator to the other side. Step [](#twist){.pf-ref} computes that the two signs cancel, so the exercise's correspondence is May's, with the two chain maps read in the opposite order: May's $f$ is the exercise's $f_1$ and May's $g$ is the exercise's $f_0$. Nothing in the proof depends on which of the two chain maps is called $f$ and which $g$, which is why the exercise can name them by the index $i$ alone.
 
 :::
