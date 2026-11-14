@@ -100,6 +100,24 @@ audit:
     published treatment of the exercise in Hatcher's homology form; the retained sets contain
     neither. Checked against Hatcher (2002), §2.B Exercise 9 on printed p. 177, whose statement is
     unchanged by this addition.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    One sentence of the cohomological paragraph described its input wrongly and is corrected. It said
+    that Hausmann's proof "dualises the chain-level sequence of the two-sheet coordinates"; those
+    coordinates exist only for the trivial covering, whereas Proposition 4.3.9 is stated for an
+    arbitrary 2-fold covering $p:\tilde X\to X$ over a CW complex, and Hausmann's §4.3.3 builds the
+    transfer of a general $p$ by the rule of Hatcher's printed pp. 174--175: to each singular simplex
+    of $X$, the sum of its two lifts into $\tilde X$, extended linearly, which is a chain map. The
+    card now says that the dualised sequence is the chain-level sequence of an arbitrary 2-fold
+    covering, and keeps the two-sheet computation where it belongs, as the specialisation to the
+    trivial covering that the exercise asks for. Checked in the text version
+    `tmp/sources/hausmann-mod-two-homology-cohomology.md`: the opening of §4.3.3 defines $tr_*$ for a
+    general 2-fold covering $p$ by the sum of the two liftings, and Proposition 4.3.9 displays the
+    cochain sequence (4.3.9) $0\to C^*(X)\xrightarrow{C^*p}C^*(\tilde X)\xrightarrow{tr^*}C^*(X)\to0$;
+    and against Hatcher (2002), §2.B Exercise 9 on printed p. 177 and the transfer of printed
+    pp. 174--175.
 ---
 
 ::: {.problem}
@@ -164,7 +182,7 @@ By step [](#chain-section){.pf-ref}, the long exact sequence associated to a spl
 $$
 \cdots\to H^m(X;\ZZ_2)\xrightarrow{H^*p}H^m(\tilde X;\ZZ_2)\xrightarrow{\tau^*}H^m(X;\ZZ_2)\xrightarrow{w(p)\smile-}H^{m+1}(X;\ZZ_2)\xrightarrow{H^*p}\cdots,
 $$
-exact and functorial for induced coverings, where $w(p)\in H^1(X;\ZZ_2)$ is the characteristic class of $p$. The proof dualises the chain-level sequence of the two-sheet coordinates: that sequence is exact over $\ZZ_2$ and functorial for induced coverings, Kronecker duality gives from it the short exact sequence of cochain complexes $0\to C^*(X;\ZZ_2)\xrightarrow{C^*p}C^*(\tilde X;\ZZ_2)\xrightarrow{\tau^*}C^*(X;\ZZ_2)\to0$, whose long exact sequence is Hausmann's Proposition 2.6.2, printed p. 34; the connecting homomorphism is then identified with the cup product by $w(p)$, which is where the characteristic class enters.
+exact and functorial for induced coverings, where $w(p)\in H^1(X;\ZZ_2)$ is the characteristic class of $p$. The proof dualises the chain-level sequence of an arbitrary 2-fold covering — the sequence of Hatcher's printed pp. 174--175, $0\to C_*(X;\ZZ_2)\xrightarrow{\tau}C_*(\tilde X;\ZZ_2)\xrightarrow{p_\sharp}C_*(X;\ZZ_2)\to0$ with $\tau$ the sum of the two lifts, which Hausmann's own §4.3.3 builds by the same rule for a general $p$ — and that sequence is exact over $\ZZ_2$ and functorial for induced coverings. Kronecker duality gives from it the short exact sequence of cochain complexes $0\to C^*(X;\ZZ_2)\xrightarrow{C^*p}C^*(\tilde X;\ZZ_2)\xrightarrow{\tau^*}C^*(X;\ZZ_2)\to0$, whose long exact sequence is Hausmann's Proposition 2.6.2, printed p. 34; the connecting homomorphism is then identified with the cup product by $w(p)$, which is where the characteristic class enters.
 
 For the trivial covering $\tilde X=X\times S^0$ the characteristic class vanishes: Hausmann's Lemma 4.3.6(3), printed p. 120, states that over a CW complex a 2-fold covering is trivial if and only if its characteristic class is zero. The connecting homomorphism is therefore zero, and exactness makes the cohomological transfer sequence the short exact sequence
 $$
