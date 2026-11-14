@@ -287,7 +287,6 @@
   "\\octonions": "{\\mathbb{O}}",
   "\\one": "{\\unicode{x1D7D9}}",
   "\\opcat": "{ {#1}^{\\operatorname{op}} }",
-  "\\openball": "{\\mathbb{B}}",
   "\\operatorabs": "{\\left\\lvert {#1} \\right\\rvert}",
   "\\order": "{\\operatorname{Ord}}",
   "\\p": "\\prime",
