@@ -107,6 +107,18 @@ audit:
     $B_0=A$, $E_0=p^{-1}(B_0)$, and the identification of models in (6.1.4), printed p. 125. Not
     verified: the Ranicki translation against tom Dieck's original German edition, which this
     machine does not hold; the proof is read in the translation.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    The remark's description of the reading copy is removed. It said that in
+    `tmp/sources/tomdieck-algebraic-topology-ranicki.md` the colon of a map $p:E\to B$ is transcribed
+    as `W` and the arrow as `!`, which described the earlier text version of the file; the reading
+    copy now held there renders maps with `\colon` and `\to`. The sentence now names the reading copy
+    and nothing more, which is all the citation needs. Nothing in the proof or in the source
+    references changes. Checked against tom Dieck, *Algebraic Topology* (EMS Textbooks in
+    Mathematics, 2008), Theorem (6.3.1) on printed pp. 129--130, and against Hatcher (2002), §4.1
+    Exercise 6 on printed p. 358.
 ---
 
 ::: {.problem}
@@ -205,7 +217,7 @@ In the notation of the exercise, $E=\tilde X$, $E_0=\tilde A=p^{-1}(A)$, $\epsil
 
 ::: {.remark title="Source"}
 
-The exercise is Exercise 6 of §4.1, printed p. 358. The proof above is transcribed from **Tammo tom Dieck, *Algebraic Topology*, EMS Textbooks in Mathematics, European Mathematical Society 2008**: Theorem (6.3.1), stated on printed p. 129 and proved on printed p. 130, with the input that a covering is a fibration from Theorem (3.2.2), printed p. 66, the lifting lemma Proposition (3.2.4), printed p. 67, the definition of a Serre fibration in §5.5, printed p. 115, and the identification of the cube model with the disk model in Remark (6.1.4), printed p. 125. The reading copy is the text of the Ranicki translation held as `tmp/sources/tomdieck-algebraic-topology-ranicki.md`, in which the colon of a map $p:E\to B$ is transcribed as `W` and the arrow as `!`. The theorem is stronger than the exercise in one direction and more general in another: it holds for $n\ge1$ rather than $n>1$, and it takes an arbitrary subspace $B_0\subset B$ with $E_0=p^{-1}(B_0)$, the exercise being the case $B_0=A$.
+The exercise is Exercise 6 of §4.1, printed p. 358. The proof above is transcribed from **Tammo tom Dieck, *Algebraic Topology*, EMS Textbooks in Mathematics, European Mathematical Society 2008**: Theorem (6.3.1), stated on printed p. 129 and proved on printed p. 130, with the input that a covering is a fibration from Theorem (3.2.2), printed p. 66, the lifting lemma Proposition (3.2.4), printed p. 67, the definition of a Serre fibration in §5.5, printed p. 115, and the identification of the cube model with the disk model in Remark (6.1.4), printed p. 125. The reading copy is the text of the Ranicki translation held as `tmp/sources/tomdieck-algebraic-topology-ranicki.md`. The theorem is stronger than the exercise in one direction and more general in another: it holds for $n\ge1$ rather than $n>1$, and it takes an arbitrary subspace $B_0\subset B$ with $E_0=p^{-1}(B_0)$, the exercise being the case $B_0=A$.
 
 Hatcher's Proposition 4.1, printed p. 342 with its proof there, is the absolute statement only: for a covering space projection $p:(\tilde X,\tilde x_0)\to(X,x_0)$, the map $p_*:\pi_n(\tilde X,\tilde x_0)\to\pi_n(X,x_0)$ is an isomorphism for all $n\ge2$. The relative statement is not a proposition of the book, and it does not follow from Proposition 4.1 by the five-lemma on the ladder of Theorem 4.3 (printed p. 344): the map $p_*:\pi_1(\tilde A,\tilde x_0)\to\pi_1(A,x_0)$ is injective and in general not surjective, so at $\pi_2$ the five-lemma gives injectivity and not surjectivity. The source's proof avoids the ladder: it lifts the cube and the relative homotopy themselves, which is what replaces the simply connected $D^n$ of Proposition 4.1's argument by the lifting lemma (3.2.4) for the pair of subspaces $J^n\subset I^{n+1}$.
 
