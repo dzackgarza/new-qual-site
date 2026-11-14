@@ -112,6 +112,42 @@ audit:
     §4.1 Exercise 7 on printed p. 358, the three formulas of p. 341 and the relative $\beta_\gamma$ of
     p. 345. Not claimed: that the source states Hatcher's exercise, or that it prints the relative
     proof it asserts.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Two passages of the solution were wrong and are repaired. (1) The additivity paragraph is
+    replaced. Its claims about the moving boxes fail as written: with $c_u=\varepsilon(1-u/2)$ and
+    $d_u=(1-u\varepsilon)/2$ one has $d_u>(1-\varepsilon)/2$ for $u<1$, so the boxes are not inside
+    $[\varepsilon/2,(1-\varepsilon)/2]$ and its mirror image, and at $u=0$ the boxes $[\varepsilon,
+    \tfrac12]$ and $[\tfrac12,1-\varepsilon]$ share the face $s_1=\tfrac12$ rather than avoiding one
+    another. Worse, no family of that shape ends where the paragraph said it does: the shell function
+    is forced to be $1$ on the walls of the boxes, in order to join $f$ and $g$ to $\gamma(1)=x_1$
+    there, whereas the value of $\gamma f+\gamma g$ on the wall $s_1=\tfrac12$ is $\gamma(0)=x_0$,
+    since $2s_1=1$ for $\gamma f$ and $2s_1-1=0$ for $\gamma g$ land on the faces $x_1=1$ and $x_1=0$
+    of the inner cube, where $\delta=0$. The shell function of the family and its continuity at
+    $u=0$ were also left undescribed, so the endpoint $\gamma f+\gamma g$ was not established. The
+    homomorphism property is now proved in the source's own language instead, where it is short: with
+    $V^f_t$ and $V^g_t$ the transport homotopies for $f$ and for $g$, the map $W_t$ that applies
+    $V^f_t$ on the left half and $V^g_t$ on the right half in the first coordinate is well defined,
+    because on the wall $s_1=\tfrac12$ both clauses take the value $v(t)$ — the faces $s_1=0$ and
+    $s_1=1$ lie in $J^{n-1}$ — and it is a homotopy through maps of triples with
+    $W_t(J^{n-1})=\{v(t)\}$, $W_0=f+g$, $W_1=V^f_1+V^g_1$. That the sum lives in the first coordinate
+    is what makes this work, and it is why the relative case is not Hatcher's slab deformation.
+    (2) The identification of $\gamma f$ with the transport along $\bar\gamma$ claimed that for $t>0$
+    "the boundary $\partial I^n$ lies in the shell" and that "$V_t(J^{n-1})=\gamma(1-t)$ since
+    $\rho_t$ vanishes on $\partial I^n$". Both are false: $Q_t$ meets $\partial I^n$ exactly in its
+    bottom face $B_t$, which lies in the free face and is therefore not in the shell, and $\rho_t$ is
+    $1$, not $0$, on $\partial B_t$ and runs from $0$ to $1$ on $\Sigma_t$. The card now states what
+    holds and is used: $Q_t$ meets $J^{n-1}$ in nothing for $t>0$, so $J^{n-1}$ lies in the shell and
+    $\rho_t=0$ there, giving $V_t(J^{n-1})=\gamma(1-t)=v(t)$; $V_t(\partial I^n)\subseteq A$ because
+    $B_t$ is carried into $A$ by $f$ and the rest of $\partial I^n$ by $\gamma$; and the rise of
+    $\rho_t$ on $\Sigma_t$ is exactly what carries the values of $f$ on $B_t$ to $\gamma(1)=x_1$
+    across the edge $\partial B_t$. Checked against Hatcher (2002), §4.1 Exercise 7 on printed p. 358,
+    formula (1) of p. 341, and the definition of the sum in $\pi_n(X,A,x_0)$ on printed p. 343, whose
+    special coordinate is $s_n$; and against tom Dieck (6.2.2) on printed p. 127, whose transport is a
+    homotopy of the constant map $J^{n-1}\to\{a_0\}$ and so does require the values on $J^{n-1}$ to
+    track the path.
 ---
 
 ::: {.problem}
@@ -154,7 +190,7 @@ $$
 Q_t=[t\varepsilon,1-t\varepsilon]^{n-1}\times[0,1-t\varepsilon],\qquad
 V_t(s)=\begin{cases}f(\varphi_t(s)),&s\in Q_t,\\ \gamma\bigl(1-t+t\rho_t(s)\bigr),&s\notin\operatorname{int}Q_t,\end{cases}
 $$
-where $\varphi_t:Q_t\to I^n$ is the rescaling of the construction above and $\rho_t$ is the corresponding $\delta$. Then $Q_0=I^n$ and $V_0=f$; $Q_1=Q$ and $V_1=\gamma f$; $V_t$ is a map of pairs for every $t$, since for $t>0$ the boundary $\partial I^n$ lies in the shell and its image is $\gamma(1-t+t\rho_t)\in A$; and $V_t(J^{n-1})=\gamma(1-t)=v(t)$, since $\rho_t$ vanishes on $\partial I^n$. The family is continuous at $t=0$ as well: as $t\to0$ the annulus $\Sigma_t$ shrinks onto the edge $\partial I^{n-1}$, where $f$ and $\gamma$ agree at the value $x_1$. So $V_t$ is the homotopy the source constructs for the path $\bar\gamma$, and therefore
+where $\varphi_t:Q_t\to I^n$ is the rescaling of the construction above and $\rho_t$ is the corresponding $\delta$. Then $Q_0=I^n$ and $V_0=f$; $Q_1=Q$ and $V_1=\gamma f$. For $t>0$ the cube $Q_t$ meets the non-free faces $J^{n-1}$ in nothing, its coordinates lying in $[t\varepsilon,1-t\varepsilon]$ with $s_n\le 1-t\varepsilon<1$, so $J^{n-1}$ lies in the shell, where $\rho_t=0$; hence $V_t(J^{n-1})=\gamma(1-t)=v(t)$, which is the homotopy of the constant map $J^{n-1}\to\{x_1\}$ that the source prescribes. Each $V_t$ is a map of pairs, but not because $\partial I^n$ lies in the shell: $Q_t$ meets $\partial I^n$ exactly in its bottom face $B_t=Q_t\cap I^{n-1}$, which the first formula carries into $A$ because $f$ maps the free face into $A$, while the rest of $\partial I^n$, the annulus $\Sigma_t=I^{n-1}-\operatorname{int}B_t$ together with $J^{n-1}$, lies in the shell and is carried by the second formula into $A$ because $\gamma$ is a path in $A$. Nor does $\rho_t$ vanish on $\partial I^n$: on $\Sigma_t$ it runs from $0$ at $\partial I^{n-1}$ to $1$ at $\partial B_t$, and it is exactly that rise which carries the values of $f$ on $B_t$ to $x_1=\gamma(1)$ across the edge $\partial B_t$. The family is continuous at $t=0$: for $s\in\operatorname{int}I^{n-1}$ one has $s\in\operatorname{int}B_t$ once $t$ is small, so $V_t(s)=f(\varphi_t(s))\to f(s)$; for $s\in J^{n-1}$ one has $V_t(s)=\gamma(1-t)\to x_1=f(s)$; and for $s\in\Sigma_t$ the value $\gamma(1-t+t\rho_t(s))$ tends to $x_1$ as $t\to0$, which is $f$ on the edge $\partial I^{n-1}$. So $V_t$ is the homotopy the source constructs for the path $\bar\gamma$, and therefore
 $$
 [\gamma f]=(\bar\gamma)_\#([f]),\qquad\text{that is}\qquad \beta_\gamma=(\bar\gamma)_\# ,
 $$
@@ -166,12 +202,19 @@ $$
 $$
 Bijectivity: $\beta_{\bar\gamma}\beta_\gamma=\beta_{\bar\gamma\gamma}=\mathrm{id}$ on $\pi_n(X,A,x_1)$ and $\beta_\gamma\beta_{\bar\gamma}=\beta_{\gamma\bar\gamma}=\mathrm{id}$ on $\pi_n(X,A,x_0)$, since each of $\bar\gamma\gamma$ and $\gamma\bar\gamma$ is homotopic rel endpoints to the constant path at its basepoint, where the transport is the identity. The two composites are endomorphisms of groups at different basepoints, which is why the concatenations are written in that order: by the rule $\beta_{\gamma\eta}=\beta_\gamma\beta_\eta$ the path $\gamma$ is traversed first.
 
-*Additivity.* (6.2.2) asserts that $v_\#$ is a homomorphism for $n\ge2$ without printing the argument, which in the relative case is not the absolute one. For $n\ge2$ the group structure on $\pi_n(X,A,x_1)$ comes from the first coordinate, which is not the special coordinate $s_n$, and $\beta_\gamma([f]+[g])=\beta_\gamma[f]+\beta_\gamma[g]$ is the relative form of Hatcher's formula (1) on p. 341. On the inner cube $Q$ the map $\gamma(f+g)$ is $f$ on the half with the rescaled first coordinate in $[0,\tfrac12]$ and $g$ on the other half. On the other hand $\gamma f+\gamma g$ is $f$ and $g$ on the two boxes
+*Additivity.* (6.2.2) asserts that $v_\#$ is a homomorphism for $n\ge2$ without printing the argument, and in the relative case the argument is not the absolute one: Hatcher's formula (1) on p. 341 is proved there by deforming the two summands until their images are slabs of the cube, and in the relative case the free face has to stay inside $A$ throughout, which the construction in the source's own language does directly. For $n\ge2$ the group structure on $\pi_n(X,A,a_0)$ comes from the first coordinate, which is not the special coordinate $s_n$ (printed p. 343), so that
 $$
-Q_1=\bigl[\tfrac{\varepsilon}{2},\tfrac{1-\varepsilon}{2}\bigr]\times[\varepsilon,1-\varepsilon]^{n-2}\times[0,1-\varepsilon],\qquad
-Q_2=\bigl[\tfrac{1+\varepsilon}{2},1-\tfrac{\varepsilon}{2}\bigr]\times[\varepsilon,1-\varepsilon]^{n-2}\times[0,1-\varepsilon],
+(f+g)(s_1,\dots,s_n)=\begin{cases}f(2s_1,s_2,\dots,s_n),&s_1\le\tfrac12,\\ g(2s_1-1,s_2,\dots,s_n),&s_1\ge\tfrac12,\end{cases}
 $$
-mapped through $\varphi$ composed with the doubling of the first coordinate, and $\gamma(\delta)$ elsewhere. Both maps are assembled from the same three ingredients — $f$ on a box, $g$ on a box, and $\gamma$ on the complement — and differ only in the position of the two boxes. For $u\in[0,1]$ put $c_u=\varepsilon(1-\tfrac u2)$ and $d_u=\tfrac12(1-u\varepsilon)$, so that $(c_0,d_0)=(\varepsilon,\tfrac12)$ and $(c_1,d_1)=(\tfrac{\varepsilon}{2},\tfrac{1-\varepsilon}{2})$, and move the two boxes to $[c_u,d_u]\times[\varepsilon,1-\varepsilon]^{n-2}\times[0,1-\varepsilon]$ and its mirror image $[1-d_u,1-c_u]\times\cdots$, carrying $f$ and $g$ with the first argument the affine map of the box onto $[0,1]$ and the shell carrying $\gamma$ composed with the corresponding distance function. Every stage is a map of triples: the boundary of each moving box carries $x_1$ on the $f$- and $g$-side, where the first argument is $0$ or $1$, and $\gamma(1)=x_1$ on the shell side; the boxes stay inside $[\tfrac{\varepsilon}{2},\tfrac{1-\varepsilon}{2}]$ and its mirror image, so they never meet. At $u=0$ this is $\gamma(f+g)$ and at $u=1$ it is $\gamma f+\gamma g$, so $\beta_\gamma(f+g)\simeq\beta_\gamma f+\beta_\gamma g$ and $\beta_\gamma$ is a homomorphism for $n\ge2$.
+and $f+g$ is again a map of triples: a point of $\partial I^n$ has a coordinate $0$ or $1$ other than through $s_n=0$ and lands in $J^{n-1}$, where $f$ and $g$ take the value $a_0$, or has $s_n=0$ and lands on the free face, which $f$ and $g$ carry into $A$. Now let $v:I\to A$ be a path from $a_0$ to $a_1$, and for $i=f,g$ let $V^i_t$ be a homotopy of the source's construction: $V^i_0=i$, $V^i_t(\partial I^n)\subseteq A$ and $V^i_t(J^{n-1})=\{v(t)\}$ for all $t$. Define
+$$
+W_t(s_1,\dots,s_n)=\begin{cases}V^f_t(2s_1,s_2,\dots,s_n),&s_1\le\tfrac12,\\[2pt] V^g_t(2s_1-1,s_2,\dots,s_n),&s_1\ge\tfrac12.\end{cases}
+$$
+This is well defined and continuous. On the wall $s_1=\tfrac12$ the two clauses are $V^f_t(1,s_2,\dots,s_n)$ and $V^g_t(0,s_2,\dots,s_n)$, and both are $v(t)$, since the faces $s_1=0$ and $s_1=1$ lie in $J^{n-1}$ and both homotopies carry $J^{n-1}$ to $v(t)$; that is the whole point of keeping the sum in the first coordinate, which is not the coordinate that distinguishes $I^{n-1}$ from $J^{n-1}$. Each $W_t$ is a map of triples: a point of $\partial I^n$ keeps a coordinate in $\{0,1\}$ after $s_1\mapsto2s_1$ or $s_1\mapsto2s_1-1$ — if that coordinate is another one it is unchanged, and if it is $s_1$ then the substitution carries $0$ to $0$ and $1$ to $1$ — so the argument of $V^f_t$ or of $V^g_t$ lies in $\partial I^n$ and its image in $A$; and $W_t(J^{n-1})=\{v(t)\}$ for the same reason, the substitution being in the first coordinate alone. At the ends, $W_0=f+g$ and $W_1=V^f_1+V^g_1$. So $W$ is an admissible homotopy for the class $[f+g]$, and the definition of $v_\#$ gives
+$$
+v_\#\bigl([f]+[g]\bigr)=[W_1]=[V^f_1]+[V^g_1]=v_\#\bigl([f]\bigr)+v_\#\bigl([g]\bigr),
+$$
+which is the assertion of (6.2.2) for $n\ge2$. Taking $v=\bar\gamma$ and using $\beta_\gamma=(\bar\gamma)_\#$ from the previous paragraph, $\beta_\gamma(f+g)=\beta_\gamma f+\beta_\gamma g$, and $\beta_\gamma$ is a homomorphism for $n\ge2$.
 
 *Compatibility with the exact sequence.* This is Proposition (6.2.3) of the source. In the cubical model the boundary map $\partial:\pi_n(X,A,x_1)\to\pi_{n-1}(A,x_1)$ restricts a representative to the face $s_n=0$, and the restriction of $\gamma f$ to that face is the copy $f\circ\varphi$ on $B$, which is the restriction of $f$ to the free face, together with $\gamma(\delta)$ on the annulus $\Sigma$; that is exactly the absolute $\gamma\restrictionof{f}{I^{n-1}}$ of p. 341, whose shell is $\Sigma$ and whose inner cube is $B$. So $\partial\beta_\gamma=\beta_\gamma\partial$ for the absolute change-of-basepoint maps on $\pi_{n-1}(A,x_1)$, and with naturality this says that the action of $\pi_1(A,x_0)$ on the relative groups by $[\gamma]\mapsto\beta_\gamma$ commutes with every map of the long exact sequence of the pair, as Hatcher states on p. 345, and that $\pi_n(X,A,x_0)$ is independent of the basepoint in $A$ when $A$ is path-connected.
 
