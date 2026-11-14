@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-UMMOE
 kind: problem
-title: A two-fold covering detecting nonabelian fundamental group
+title: A three-sheeted covering of the figure eight detecting two noncommuting loops
 classification:
   areas:
   - topology
@@ -52,6 +52,29 @@ audit:
   note: >-
     The solution was rewritten as above, in Lamport form, with the sourced argument, the part with
     no transcribable source, and the book's pages named in its own text.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Rewritten to use the covering space the exercise names. The previous solution argued that no
+    incidence of four edges over three points makes $p$ a covering at the vertices, and so replaced
+    the exercise's covering by the one of Lemma 60.5; the first of those claims is false. Three
+    points over $x_0$ and the four edges $A_0,A_1,B_0,B_1$ do admit an incidence, the one drawn in
+    Figure 60.3: $A_1$ passes through $e_0$ and $e_2$, $B_1$ through $e_0$ and $e_1$, $A_0$ is
+    attached to $B_1$ at $e_1$ and $B_0$ to $A_1$ at $e_2$; each of the three points then has four
+    ends, two over $A$ and two over $B$, because the attached circles contribute both their ends at
+    the single vertex where they hang. With that incidence $p$ is a three-sheeted covering, the
+    lift of the $A$-loop from $e_0$ ends at $e_2$, the lift of the $B$-loop from $e_0$ ends at
+    $e_1$, and the products' lifts inherit those endpoints, which is Pearse's argument as written.
+    The title changed from "two-fold" to "three-sheeted", the cover having three points over $x_0$;
+    the Lemma 60.5 route is now only mentioned as the second proof it is. Checked against the book:
+    the exercise and Figure 60.3 on printed p. 375, Lemma 60.5 and the description of its covering
+    on printed pp. 373-374, Lemma 54.1 on printed p. 342 and Theorem 54.3 on printed p. 344.
+    Correction to the source-checked note of 2026-11-14 above: the claim there that the incidence
+    cannot be reconstructed is withdrawn, and the degrees of the edges together with the drawn
+    incidence do determine the covering; not claimed: that either text writes the incidence in
+    words -- the book's exercise states the degrees only, and Pearse reads the lifts off its own
+    figure.
 ---
 
 ::: {.exercise}
@@ -63,71 +86,65 @@ Use this covering space to show that the fundamental group of the figure eight i
 
 ::: {.solution}
 The exercise is §60 Exercise 5, printed p. 375, and the answer is that the
-fundamental group of the figure eight is not abelian. The argument is the one
-Pearse gives, *Topology (2nd ed.) — James R. Munkres*, solutions, Cornell 2005,
+fundamental group of the figure eight is not abelian. The proof is transcribed
+from Pearse, *Topology (2nd ed.) — James R. Munkres*, solutions, Cornell 2005,
 §60 Exercise 5, his pp. 27--28, read in
-`tmp/sources/cornell-erin-munkres.md`: exhibit a covering of the figure eight,
-lift the loops $f*g$ and $g*f$ from the same point, and find that the two lifts
-end at different points, so by Theorem 54.3 (printed p. 344) the loops are not
-path homotopic.
+`tmp/sources/cornell-erin-munkres.md`: take two loops, lift them from one point of
+the covering space the exercise names, and find that the two lifts of the two
+products end at different points, so by Theorem 54.3 (printed p. 344) the products
+are not path homotopic.
 
-The covering space the exercise names cannot be used for that as the text stands.
-The book's exercise states only the degrees of its four edges — $p$ wraps $A_1$
-around $A$ twice, $B_1$ around $B$ twice, and maps $A_0$ and $B_0$
-homeomorphically — and its Figure 60.3 is a picture; Pearse's text names the same
-four edges and reads the two liftings off its own Figure 8, without stating which
-vertices the edges join. Which points of the cover the two lifts end at is
-therefore not in either text, and a graph with three points over $x_0$ and four
-edges has no consistent incidence that makes its covering map a covering at the
-vertices, so the picture cannot be reconstructed from the text either. So this
-part of the exercise has no transcribable published proof, and the card carries
-out the same argument with the covering of Lemma 60.5, whose construction the book
-states in words on printed pp. 373--374; the conclusion is Lemma 60.5 itself,
-that the figure-eight group is not abelian.
+*The covering space.* Let $X=A\cup B$ be the figure eight, two circles meeting in
+the single point $x_0$. The covering space of Figure 60.3 (printed p. 375) has
+three points over $x_0$, written $e_0,e_1,e_2$, and four circles: the circle $A_1$
+passes through $e_0$ and $e_2$, the circle $B_1$ passes through $e_0$ and $e_1$,
+the circle $A_0$ is attached to $B_1$ at $e_1$, and the circle $B_0$ is attached
+to $A_1$ at $e_2$. The map $p$ wraps each of the two arcs of $A_1$ once around
+$A$, wraps each of the two arcs of $B_1$ once around $B$, and maps $A_0$
+homeomorphically onto $A$ and $B_0$ homeomorphically onto $B$.
 
-Take $X=A\cup B$ the union of two circles in $\RR^2$ meeting in the single point
-$x_0$, and let $E$ be the subspace of the plane consisting of the $x$-axis, the
-$y$-axis, and one small circle tangent to the $x$-axis at each nonzero integer
-point and one small circle tangent to the $y$-axis at each nonzero integer point.
-Let $p:E\to X$ wrap the $x$-axis around $A$ and the $y$-axis around $B$, carrying
-each integer point of either axis to $x_0$, carry each circle tangent to the
-$x$-axis homeomorphically onto $B$, and carry each circle tangent to the
-$y$-axis homeomorphically onto $A$; the book's proof of Lemma 60.5 asserts, and
-asks the reader to check, that $p$ is a covering map.
+The exercise states only the degrees of its four edges, which points of the cover
+they join being what its figure shows; the incidence above is the one drawn there,
+and it is consistent. At $e_0$ the four ends are the two arcs of $A_1$ and the
+two arcs of $B_1$; at $e_1$ they are the two arcs of $B_1$ together with the two
+ends of the circle $A_0$ attached there; at $e_2$ they are the two arcs of $A_1$
+together with the two ends of $B_0$. At each of the three points the four ends
+map one-to-one onto the four half-arcs of $A$ and $B$ at $x_0$, so a small
+neighbourhood of each is carried homeomorphically onto a neighbourhood of $x_0$,
+and over a point of $A-\theset{x_0}$ and of $B-\theset{x_0}$ there are three
+points of the cover. So $p$ is a covering map with three sheets. The two attached
+circles each have both their ends at the one vertex they hang from, and that is
+what the count requires: the named circles form a graph with six edges — $A_1$ and
+$B_1$ each cut by its two vertices into two arcs, and $A_0$, $B_0$ being loops —
+so twelve edge-ends in all, four at each of the three points.
 
 ::: pf
 
-::: {.pf-step #loops}
-$f=p\circ\tilde f$ and $g=p\circ\tilde g$ are loops in $X$ at $x_0$ going once
-around $A$ and once around $B$, where $\tilde f(s)=(s,0)$ and $\tilde g(s)=(0,s)$
-for $s\in I$.
-
-::: pf-proof
-$\tilde f$ runs along the $x$-axis from the origin to $(1,0)$, and $p$ wraps the
-$x$-axis once around $A$ carrying both endpoints to $x_0$; so $f$ is a loop at
-$x_0$ going once around $A$. Likewise $\tilde g$ runs along the $y$-axis from the
-origin to $(0,1)$, which $p$ wraps once around $B$.
-:::
-
-:::
-
 ::: {.pf-step #lifts}
-The lift of $f*g$ beginning at the origin ends at $(1,0)$, and the lift of $g*f$
-beginning at the origin ends at $(0,1)$.
+The lift of $f$ from $e_0$ ends at $e_2$ and the lift of $g$ from $e_0$ ends at
+$e_1$, where $f$ and $g$ are the loops at $x_0$ going once around $A$ and once
+around $B$. Hence the lift of $f*g$ from $e_0$ ends at $e_2$ and the lift of $g*f$
+from $e_0$ ends at $e_1$.
 
 ::: pf-proof
-Consider the path in $E$ that runs along the $x$-axis from the origin to $(1,0)$
-and then once around the circle $C_1$ tangent to the $x$-axis at $(1,0)$. It is
-continuous, it begins at the origin, and it projects under $p$ to $f$ followed by
-a loop based at $x_0$ traversing $B$ once, because $p$ carries $C_1$
-homeomorphically onto $B$ and carries the tangency point to $x_0$; that composite
-is $f*g$. Since the lift of a path from a given point is unique (Lemma 54.1,
-printed p. 342), this is the lift of $f*g$ from the origin, and it ends at
-$(1,0)$, which lies in $p^{-1}(x_0)$.
+Away from $x_0$ the loop $f$ lies in $A-\theset{x_0}$, and the points of the
+cover over $A-\theset{x_0}$ are the interiors of the two arcs of $A_1$ and the
+interior of the circle $A_0$. The ends at $e_0$ that lie over $A$ are therefore
+the two arcs of $A_1$, the circle $A_0$ being attached at $e_1$. So a lift of $f$
+from $e_0$ starts along one of those arcs and, $p$ being injective on the arc,
+runs along it until $f$ returns to $x_0$, that is, to its other endpoint $e_2$.
+Such a lift exists and is unique from the given point (Lemma 54.1, printed
+p. 342), so the lift of $f$ from $e_0$ ends at $e_2$.
 
-Likewise the path along the $y$-axis from the origin to $(0,1)$ followed by once
-around the circle tangent there projects to $g*f$, since that circle maps
-homeomorphically onto $A$; so the lift of $g*f$ ends at $(0,1)$.
+For the product $f*g$ the lift continues from $e_2$ with the lift of $g$. At
+$e_2$ the ends over $B$ are the two ends of the circle $B_0$, since $B_1$ does
+not pass through $e_2$; so the lift of $g$ from $e_2$ runs once around $B_0$ and
+returns to $e_2$. Hence the lift of $f*g$ from $e_0$ ends at $e_2$.
+
+The same argument with $A$ and $B$ exchanged and $e_1$ in place of $e_2$ gives
+that the lift of $g$ from $e_0$ runs along an arc of $B_1$ to $e_1$, and that the
+lift of $f$ from $e_1$ runs once around $A_0$ and returns to $e_1$; so the lift
+of $g*f$ from $e_0$ ends at $e_1$.
 :::
 
 :::
@@ -136,12 +153,13 @@ homeomorphically onto $A$; so the lift of $g*f$ ends at $(0,1)$.
 $\boxed{\pi_1(X,x_0)\ \text{is not abelian}}$.
 
 ::: pf-proof
-The points $(1,0)$ and $(0,1)$ are distinct, so the lifts of $f*g$ and of $g*f$
-starting at the origin do not end at the same point. By Theorem 54.3 (printed
-p. 344) two paths from $x_0$ to $x_0$ that are path homotopic have lifts from a
-given point ending at the same point; hence $f*g$ and $g*f$ are not path
-homotopic, that is, $[f]*[g]\ne[g]*[f]$ in $\pi_1(X,x_0)$, and the group is not
-abelian. That is Lemma 60.5, printed p. 373.
+The points $e_1$ and $e_2$ are distinct. If $f*g$ and $g*f$ were path homotopic,
+their lifts from the same point $e_0$ would end at the same point of the cover
+(Theorem 54.3, printed p. 344); by step [](#lifts){.pf-ref} those endpoints are
+$e_1$ and $e_2$. Hence $[f]*[g]\ne[g]*[f]$ in $\pi_1(X,x_0)$, that is, the
+fundamental group of the figure eight is not abelian. The covering gives another
+proof of Lemma 60.5 (printed p. 373), whose own covering the book describes in
+words on printed pp. 373--374 and leaves to the reader to check.
 :::
 
 :::
