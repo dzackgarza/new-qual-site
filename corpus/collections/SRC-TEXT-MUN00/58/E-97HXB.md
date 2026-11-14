@@ -42,6 +42,22 @@ audit:
   note: >-
     The solution was rewritten as the transcription above, in Lamport form, with the source and
     the book's pages named in its own text.
+- event: source-checked
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Correction to the note of 2026-11-14 above: that note said the UCR sheet "also notes that $A$
+    must be nonempty for $a\in A$ to be chosen". It does not. Its solution of §58 Exercise 6, the
+    sheet's p. 5, reads "The first thing to notice is that the arcwise connectedness of X implies
+    that all constant maps into X are homotopic, and consequently if the identity on X is homotopic
+    to a constant map, it is also homotopic to a constant map whose value lies in the subspace A",
+    and continues with the composite $h'(a,t)=r\circ H(a,t)$; it never mentions nonemptiness, and
+    its argument is stated for $a\in A$ without saying why such an $a$ exists. The nonemptiness
+    used on the card is the card's own: a contractible space is nonempty, since the constant map it
+    is homotopic to needs a point, and a retraction $X\to\emptyset$ exists only for $X=\emptyset$.
+    The rest of that note stands: the sheet's step is the replacement of the constant value by one
+    in $A$ through the arcwise connectedness of $X$. Checked against the book: the exercise on
+    printed p. 367 and the definition of contractible in §51 Exercise 3 on printed p. 330.
 ---
 
 ::: {.exercise}
