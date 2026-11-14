@@ -50,6 +50,25 @@ audit:
   note: >-
     The solution was rewritten as the transcription above, in Lamport form, with the source and
     the book's numbers named in its own text.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    The computation of $U\cap X$ was wrong and is repaired. The disc of radius $1/2$ about $(0,1)$
+    meets the tooth $\{1/n\}\times I$ in $\{1/n\}\times(a_n,1]$ with
+    $a_n=1-\sqrt{1/4-1/n^2}$, which for every $n\ge3$ is strictly below $1/2$ and tends to $1/2$
+    from above; the card wrote $(1/2,1]$ and called every piece of $U\cap X$ clopen, but the piece
+    $\{0\}\times(1/2,1]$ is closed and not open in $U\cap X$, the teeth accumulating on it. The
+    step now computes $U\cap X$, proves each tooth $T_n$ clopen -- closed as
+    $U\cap X\cap(\{1/n\}\times I)$, open because a small disc about a point of $T_n$ meets $X$ only
+    in that vertical line -- records that the axis piece is not open, and justifies the last step
+    by the clopenness of $T_n$ alone: a path in $U$ from $(1/n,1)$ to $x_0$ has connected image, so
+    its inverse image of the clopen set $T_n$ is a nonempty open-and-closed subset of $I$, hence all
+    of $I$, while $x_0\notin T_n$. The source states this last step in one sentence, "there clearly
+    isn't such a path since these two points are in different path components", and does not
+    compute the intersection, so the repair is the card's own and the source's claim stands.
+    Checked against the book: the exercise and its hint on printed p. 367, the definition of
+    deformation retract on printed p. 360, and the tube lemma, Lemma 26.8, on printed p. 168.
 ---
 
 ::: {.exercise}
@@ -103,14 +122,25 @@ $\theset{x_0}$ is not a deformation retract of $X$.
 ::: pf-proof
 Suppose it is, and let $F:X\times I\to X$ satisfy $F(x,0)=x$, $F(x,1)=x_0$ for all
 $x\in X$, and $F(x_0,t)=x_0$ for all $t\in I$. Let $U$ be the open disc of radius
-$\tfrac12$ about $x_0$ in $\RR^2$, so that
+$\tfrac12$ about $x_0=(0,1)$ in $\RR^2$. A point of $X$ is $(0,y)$ or $(1/n,y)$
+with $0\le y\le1$, and its distance to $x_0$ is the square root of
+$t^2+(y-1)^2$, where $t$ is its first coordinate; so
 $$
-U\cap X=\bigl(\theset 0\times(\tfrac12,1]\bigr)\cup\bigcup_{n\ge3}
-\bigl(\theset{1/n}\times(\tfrac12,1]\bigr),
+U\cap X=\bigl(\theset 0\times(\tfrac12,1]\bigr)\ \cup\!\!\bigcup_{n\ge3}
+\bigl(\theset{1/n}\times(a_n,1]\bigr),\qquad
+a_n=1-\sqrt{\tfrac14-\tfrac1{n^2}},
 $$
-a disjoint union of closed vertical segments, each of them both open and closed
-in $U\cap X$; so two points of $U\cap X$ lie in the same path component of
-$U\cap X$ only if they lie in the same segment.
+the terms $n=1,2$ being empty because $1/n\ge\tfrac12$ there.
+
+For $n\ge3$ the tooth $T_n=\theset{1/n}\times(a_n,1]$ is both closed and open in
+$U\cap X$. It is closed, being $U\cap X\cap\bigl(\theset{1/n}\times I\bigr)$; and
+it is open, because a disc about a point of $T_n$ of radius smaller than the
+distance from $\theset{1/n}$ to the other vertical lines of $X$ meets $X$ only in
+$\theset{1/n}\times I$, whose points in $U$ are exactly those of $T_n$. The
+remaining piece $\theset 0\times(\tfrac12,1]$ is closed in $U\cap X$, being
+$U\cap X\cap\bigl(\theset 0\times I\bigr)$, but it is not open: $a_n\to\tfrac12$
+from above, so for $y\in(\tfrac12,1]$ the points $(1/n,y)$ lie in $U\cap X$ for
+every large $n$ and tend to $(0,y)$.
 
 The set $F^{-1}(U)$ is open in $X\times I$ and contains $x_0\times I$, because
 $F(x_0,t)=x_0\in U$. Since $I$ is compact, Lemma 26.8, the tube lemma (printed
@@ -120,9 +150,10 @@ in $X$ with $W\times I\subseteq F^{-1}(U)$.
 Since $1/n\to0$, the set $W$ contains a point $(1/n,1)$ for some $n\ge3$. Then
 $t\mapsto F((1/n,1),t)$ is a path in $X$ whose image lies in $U$, because
 $W\times I\subseteq F^{-1}(U)$, and it runs from $F((1/n,1),0)=(1/n,1)$ to
-$F((1/n,1),1)=x_0$. Those two points lie in different path components of
-$U\cap X$, namely in the segments $\theset{1/n}\times(\tfrac12,1]$ and
-$\theset 0\times(\tfrac12,1]$, and a path in $U\cap X$ cannot join them.
+$F((1/n,1),1)=x_0$. Its image is connected, so it stays in the tooth that
+contains its first point: the inverse image of the clopen set $T_n$ is a
+nonempty subset of $I$ that is open and closed, hence all of $I$, and
+$(1/n,1)\in T_n$. But $x_0=(0,1)\notin T_n$, and the path ends at $x_0$.
 Contradiction.
 :::
 
