@@ -42,6 +42,18 @@ audit:
   note: >-
     The solution was rewritten as the transcription above, in Lamport form, with the source and the
     book's pages named in its own text.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Part (b) corrected: it called $u\mapsto u+q$ a homeomorphism of $\RR^n-\theset q$ onto
+    $\RR^n_0$, but translation by $q$ carries $\RR^n-\theset q$ onto $\RR^n-\theset{2q}$; the map
+    that removes $q$ is $u\mapsto u-q$, and that is what the card now uses, so the composite $g$ is
+    $u\mapsto h(u)-q$ as intended. The same map appears in part (a) in the other direction, from
+    $\RR^n_0$ onto $\RR^n-\theset q$, where $u\mapsto u+q$ is correct; that clause now says which
+    translation it is, carrying $\mathbf 0$ to $q$, so the two directions are not confused. Nothing
+    else on the card changed. Checked against the book: the exercise on printed p. 370, Theorem
+    58.3 on printed p. 361, Theorem 58.7 on printed p. 364 and Theorem 59.3 on printed p. 369.
 ---
 
 ::: {.exercise}
@@ -92,8 +104,9 @@ $\restrictionof{h^{-1}}{\RR^n-\theset q}$.
 
 Now $\RR^1-\theset 0=(-\infty,0)\cup(0,\infty)$ is a separation: both parts are
 nonempty, open in $\RR^1-\theset 0$, and disjoint. And $\RR^n-\theset q$ is
-connected: the map $u\mapsto u+q$ is a homeomorphism of $\RR^n$ carrying
-$\RR^n_0$ onto $\RR^n-\theset q$, and $\RR^n_0$ is connected by step
+connected: the map $u\mapsto u+q$, translation carrying $\mathbf 0$ to $q$, is a
+homeomorphism of $\RR^n$ carrying $\RR^n_0$ onto $\RR^n-\theset q$, and
+$\RR^n_0$ is connected by step
 [](#punctured-connected){.pf-ref}. A homeomorphism carries a separation of one
 space to a separation of the other, so $\RR^n-\theset q$ is connected; equally, by
 Theorem 23.5 (printed p. 150) a continuous image of a connected space is
@@ -118,7 +131,7 @@ connected by Theorem 59.3 (printed p. 369), and $\pi_1(\RR^n_0)$ is trivial.
 
 Suppose $n>2$ and $h:\RR^2\to\RR^n$ were a homeomorphism, and let $q=h(0)$. The
 restriction of $h$ is a homeomorphism of $\RR^2-\theset 0$ onto
-$\RR^n-\theset q$, and $u\mapsto u+q$ is a homeomorphism of $\RR^n-\theset q$
+$\RR^n-\theset q$, and $u\mapsto u-q$ is a homeomorphism of $\RR^n-\theset q$
 onto $\RR^n_0$; their composite is a homeomorphism $g:\RR^2_0\to\RR^n_0$, which
 therefore induces an isomorphism $g_*:\pi_1(\RR^2_0, x_0)\to
 \pi_1(\RR^n_0,g(x_0))$ by Theorem 58.7 (printed p. 364). But
