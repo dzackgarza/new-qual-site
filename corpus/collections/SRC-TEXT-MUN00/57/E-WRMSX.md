@@ -138,9 +138,9 @@ By step [](#borsuk-ulam){.pf-ref} there is $x$ with
 $\varphi(g(x))=\varphi(g(-x))$, and $\varphi$ is injective by step
 [](#stereographic){.pf-ref}, so $g(x)=g(-x)$.
 
-That first clause is a statement about a $g$ that is *not* surjective, since
-step [](#not-surjective){.pf-ref} is what supplied the point $p$ off the image
-that makes $\varphi\circ g$ defined. So what the three steps prove is the
+The first clause was derived for a $g$ that is *not* surjective: step
+[](#not-surjective){.pf-ref} is what supplied the point $p$ off the image, and
+$p$ is what makes $\varphi\circ g$ defined. So what the three steps prove is the
 implication "if $g$ is not surjective then $g(x)=g(-x)$ for some $x$", whose
 contrapositive is the assertion of the exercise: a continuous $g:S^2\to S^2$
 with $g(x)\ne g(-x)$ for every $x$ is surjective.
