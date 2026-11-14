@@ -66,6 +66,27 @@ audit:
     of §11.7 on p. 289 — and (12.4.1) is on p. 309, with (12.4.2)--(12.4.4) on p. 310. Checked
     against Hatcher (2002), §3.A Exercise 1, printed p. 267, quoted on the card. Not claimed: that
     tom Dieck states Hatcher's exercise or names the universal coefficient theorem.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Two steps of the transcription of tom Dieck (11.6.4) were asserted and are now proved, and one of
+    them was stated as if it followed from the vanishing of the homology. (1) "hence $F_n=0$", which
+    the card gave as a consequence of $H_n(X;\ZZ)=0$, is a choice: $F_n$ is chosen among the finitely
+    generated submodules of $Z_n$ mapping onto $H_n$, and the card now says that it is chosen $0$ where
+    $H_n=0$, the zero submodule mapping onto the zero group. The vanishing of $D_n$ also needs
+    $F_{n-1}=0$, since $D_n=F_n\oplus G_{n-1}$ and $G_{n-1}=\ker(F_{n-1}\to H_{n-1})$; with both
+    chosen $0$ one gets $G_n=0$ and $D_n=0$, which is what the card now says. (2) The isomorphism
+    $H_n(D)\cong H_n(C)$ induced by $\psi$ was asserted. Both halves are now computed:
+    $\ker d_n=F_n\oplus0$ and $\operatorname{im}d_{n+1}=G_n\oplus0$, so $H_n(D)=F_n/G_n=H_n(C)$; and
+    under that identification $\psi_*$ is $[x]\mapsto[x]$, which is an isomorphism by the choice of
+    $F_n$ and $G_n$. The chain-map computation was already on the card and is unchanged in substance,
+    with the term $c_n(x)=0$ now written out. These are the two places the source covers with "one
+    verifies that $\psi$ is a chain map which induces an isomorphism of homology groups", and with
+    them written the card's earlier note that both verifications are present is true. Checked against
+    tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), Proposition (11.6.4) with
+    its proof on printed p. 289 and Theorem (11.6.3) on printed p. 288, and against Hatcher (2002),
+    §3.A Exercise 1 on printed p. 267.
 ---
 
 ::: {.problem}
@@ -75,17 +96,17 @@ Use the universal coefficient theorem to show that if $H_*(X; \ZZ)$ is finitely 
 ::: {.solution}
 Hatcher's hypothesis is the source's. tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), calls a pair $(X,A)$ of finite $R$-type, for $R$ a principal ideal domain, if the $R$-modules $H_i(X,A;R)$ are finitely generated and only finitely many of them are nonzero, and puts $\chi(X,A;R)=\sum_i(-1)^i\operatorname{rank}_RH_i(X,A;R)$ (printed p. 310); with $A=\emptyset$ and $R=\ZZ$ that is the exercise's hypothesis that $\chi(X)$ is defined. The source's proof, Proposition (12.4.4) on printed p. 310, does not use the universal coefficient theorem: it replaces $S_*(X)$ by a finite free chain complex and compares ranks along the alternating sum. It proves the statement for every principal ideal domain $R$, and the exercise's coefficient field $F$ is that case.
 
-*The finite free model.* (Proposition (11.6.4), printed p. 289.) Let $R$ be a principal ideal domain and $C=(C_n)$ a chain complex of free $R$-modules with finitely generated homology. For each $n$ let $F_n$ be a finitely generated submodule of $Z_n(C)$ which the quotient map $Z_n(C)\to H_n(C)$ carries onto $H_n(C)$, and let $G_n$ be the kernel of $F_n\to H_n(C)$. Put
+*The finite free model.* (Proposition (11.6.4), printed p. 289.) Let $R$ be a principal ideal domain and $C=(C_n)$ a chain complex of free $R$-modules with finitely generated homology. For each $n$ choose a finitely generated submodule $F_n$ of $Z_n(C)$ which the quotient map $Z_n(C)\to H_n(C)$ carries onto $H_n(C)$, and take $F_n=0$ where $H_n(C)=0$; let $G_n$ be the kernel of $F_n\to H_n(C)$. Put
 $$
 D_n=F_n\oplus G_{n-1},\qquad d_n(x,y)=(y,0).
 $$
-Then $D=(D_n,d_n)$ is a free chain complex of finite type with $H_n(D)=F_n/G_n\cong H_n(C)$. Since $G_n$ is a free submodule of $B_n(C)$, a submodule of a free module over a principal ideal domain being free, there are homomorphisms $\varphi_n:G_n\to C_{n+1}$ with $c_{n+1}\varphi_n(y)=y$ for $y\in G_n$. The degreewise maps
+Then $D=(D_n,d_n)$ is a free chain complex of finite type, and $\ker d_n=\{(x,y):y=0\}=F_n\oplus0$ while $\operatorname{im}d_{n+1}=G_n\oplus0$, so $H_n(D)=F_n/G_n$, which is $H_n(C)$ because $F_n$ was chosen to map onto $H_n(C)$ with kernel $G_n$. Since $G_n$ is a free submodule of $B_n(C)$, a submodule of a free module over a principal ideal domain being free, there are homomorphisms $\varphi_n:G_n\to C_{n+1}$ with $c_{n+1}\varphi_n(y)=y$ for $y\in G_n$. The degreewise maps
 $$
 \psi_n:D_n=F_n\oplus G_{n-1}\longrightarrow C_n,\qquad (x,y)\longmapsto x+\varphi_{n-1}(y)
 $$
-form a chain map, because $x\in Z_n(C)$ gives $c_n\psi_n(x,y)=c_n\varphi_{n-1}(y)=y=\psi_{n-1}(y,0)=\psi_{n-1}d_n(x,y)$; and $\psi$ induces an isomorphism on homology, so by Theorem (11.6.3) (printed p. 288) it is a chain equivalence.
+form a chain map, because $x\in Z_n(C)$ gives $c_n\psi_n(x,y)=c_n(x)+c_n\varphi_{n-1}(y)=0+y=\psi_{n-1}(y,0)=\psi_{n-1}d_n(x,y)$; and $\psi$ induces an isomorphism on homology, since under the identification $H_n(D)=F_n/G_n$ just made the induced map is $[x]\mapsto[x]$, an isomorphism of $F_n/G_n$ onto $H_n(C)$. By Theorem (11.6.3) (printed p. 288), $\psi$ is a chain equivalence.
 
-Applied to $C=S_*(X)$, which is a complex of free $\ZZ$-modules with finitely generated homology, this gives a chain complex $D$ of finitely generated free abelian groups, chain equivalent to $S_*(X)$, and $D_n=0$ for $n\gg0$ because then $H_n(X;\ZZ)=0$ and hence $F_n=0$. That is the reduction the source uses: "the singular complex $S_*(X)$ is chain equivalent to a chain complex $D_*$ of finitely generated free abelian groups with only finitely many of the $D_n$ non-zero".
+Applied to $C=S_*(X)$, which is a complex of free $\ZZ$-modules with finitely generated homology, this gives a chain complex $D$ of finitely generated free abelian groups, chain equivalent to $S_*(X)$. Here $D_n=0$ for $n\gg0$: for such $n$ and for $n-1$ one has $H_n(X;\ZZ)=H_{n-1}(X;\ZZ)=0$, so $F_n$ and $F_{n-1}$ were chosen $0$ — the zero submodule maps onto the zero group — and then $G_n=\ker(F_n\to H_n)=0$ and $D_n=F_n\oplus G_{n-1}=0$. It is the choice of the $F_n$ that makes the model finite, not a consequence of the vanishing of the homology alone. That is the reduction the source uses: "the singular complex $S_*(X)$ is chain equivalent to a chain complex $D_*$ of finitely generated free abelian groups with only finitely many of the $D_n$ non-zero".
 
 *The Euler computation.* (Proposition (12.4.4), printed p. 310.) For a principal ideal domain $R$, $D\otimes R$ is a free chain complex of finite type over $R$, and $\psi\otimes\id_R$ is a chain equivalence, so $H_n(D\otimes R)\cong H_n(X;R)$; in particular $X$ is of finite $R$-type. The rank function is additive in the sense of the source's definition on printed p. 309: for an exact sequence $0\to M'\to M\to M''\to0$ of finitely generated $R$-modules, tensoring with the fraction field $K$ of $R$ is exact and gives $\dim_KM\otimes K=\dim_KM'\otimes K+\dim_KM''\otimes K$. Proposition (12.4.1), printed p. 309 and proved there by induction on the length of the complex, therefore gives
 $$
