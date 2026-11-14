@@ -68,6 +68,18 @@ audit:
   date: 2026-11-13
   note: >-
     Re-read for the published-solution obligation. The complete published solution is Nicholas Proudfoot, *Math 634: Algebraic Topology I* (University of Oregon, Fall 2015), Solutions to Homework #6, Hatcher §4.1 Exercise 4, printed p. 1: the two-line naturality computation $p_*\beta_{\tilde\gamma}\gamma_*(\alpha)=\beta_\gamma p_*\gamma_*(\alpha)=\beta_\gamma p_*(\alpha)$, with $p\gamma=p$ used for the second equality. Checked against the book: the printed exercise on p. 358, the definition of the action on p. 342 and the formulas (1)--(3) on p. 341. The card writes out the naturality step and the basepoint bookkeeping that the published solution compresses.
+- event: source-corrected
+  by: claude
+  date: 2026-11-14
+  note: >-
+    The sheet's title is its own, and the card now gives it: read from the text layer of
+    `tmp/sources/uoregon-proudfoot-634-hw6.pdf`, printed p. 1, the heading is "Math 634: Algebraic
+    Topology I, Fall 2015" over "Partial Solutions to Homework #6", followed by the coverage line
+    "Exercises from Hatcher: 4.1, Problems 4, 11, 12, 14, 15". The earlier events on this card call
+    it "Solutions to Homework #6", which drops the sheet's own word "Partial" and overstates what it
+    is; the citation in the solution is corrected and the coverage line is now quoted there, which
+    also confirms that §4.1 Exercise 4 is on the sheet. The mathematics of the card is unchanged by
+    this event.
 ---
 
 ::: {.problem}
@@ -83,7 +95,7 @@ $$
 $$
 whose endpoint is $\tilde\gamma(1)=T_\gamma(\tilde x_0)$, where $T_\gamma$ is the deck transformation of the universal cover corresponding to $\gamma$. By the classification of covering spaces the deck transformation group of the universal cover is $\pi_1(X,x_0)$, so $\gamma\mapsto T_\gamma$ is well defined.
 
-This is the published solution of Nicholas Proudfoot, *Math 634: Algebraic Topology I* (University of Oregon, Fall 2015), Solutions to Homework #6, §4.1 Exercise 4, printed p. 1, which obtains the formula in two lines from the naturality of the change-of-basepoint maps; the naturality step and the basepoint bookkeeping are written out below.
+This is the published solution of Nicholas Proudfoot, *Math 634: Algebraic Topology I* (University of Oregon, Fall 2015), "Partial Solutions to Homework #6", §4.1 Exercise 4, printed p. 1: the sheet's heading is "Math 634: Algebraic Topology I, Fall 2015" over "Partial Solutions to Homework #6", and its coverage line reads "Exercises from Hatcher: 4.1, Problems 4, 11, 12, 14, 15". It obtains the formula in two lines from the naturality of the change-of-basepoint maps; the naturality step and the basepoint bookkeeping are written out below.
 
 Hatcher's definition of the action (p. 342) is this. For a path $\eta$ from $x_0$ to $x_1$ and a map $f:(I^n,\partial I^n)\to(X,x_1)$, the map $\eta f$ is obtained by shrinking the domain of $f$ to a concentric cube and inserting $\eta$ on each radial segment of the shell; then $\beta_\eta([f])=[\eta f]$ defines $\beta_\eta:\pi_n(X,x_1)\to\pi_n(X,x_0)$, and for loops at $x_0$ the association $[\gamma]\mapsto\beta_\gamma$ is the action $\gamma\cdot\alpha=\beta_\gamma(\alpha)$ of $\pi_1(X,x_0)$ on $\pi_n(X,x_0)$.
 
