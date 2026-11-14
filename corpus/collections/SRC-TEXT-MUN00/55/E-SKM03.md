@@ -54,6 +54,23 @@ audit:
     its pages named in its own text. The earlier proof on this card (a fixed point of
     $x\mapsto Ax/\sum_i(Ax)_i$ on the simplex) was correct and was removed only because the card
     is to carry the published proof.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Step 1 justified. It concluded that $\Delta^2$ is homeomorphic to $B^2$ "by convexity of
+    $\Delta^2$ and its compactness", which is not an argument: the third hypothesis is needed, that
+    the set has nonempty interior in its own plane. The step now proves the general statement for a
+    compact convex $K\subseteq\RR^2$ with nonempty interior, through the radial map $\Phi$ from the
+    disc built on the function $\rho$ that measures how far each ray from an interior point $c$
+    travels inside $K$: $\rho$ is continuous because the pairs $(u,\rho(u))$ form a compact set
+    projecting bijectively onto $S^1$ under the homeomorphism $(u,t)\mapsto c+tu$, $\Phi$ is
+    continuous, injective and surjective, and Theorem 26.6 (printed p. 167) makes it a
+    homeomorphism; and it records that $\Delta^2$, in its plane, meets the hypotheses. The book
+    states this fact for the octant and the triangle $T$ without proof on printed p. 352, which the
+    card now cites as well. Nothing else on the card changed. Checked against the book: the
+    exercise on printed p. 353, Theorem 55.6 on printed p. 351, Corollary 55.7 on printed
+    pp. 351-352, Theorem 55.8 on printed p. 352, and Theorem 26.6 on printed p. 167.
 ---
 
 ::: {.exercise}
@@ -103,10 +120,45 @@ is defined and continuous, because $\norm y\ge 1/\sqrt3>0$ for $y\in\Delta^2$.
 For $x\in B$ we have $\norm{\varphi(x)}=1/\sigma(x)$ and hence
 $\psi(\varphi(x))=x$; for $y\in\Delta^2$ we have $\sigma(y)=1$ and hence
 $\varphi(\psi(y))=y$. Thus $\varphi$ is a homeomorphism with inverse $\psi$, and
-$B$ is homeomorphic to $\Delta^2$, which is homeomorphic to $B^2$ by convexity
-of $\Delta^2$ and its compactness. Theorem 55.6 asserts the fixed-point
-property for continuous maps of $B^2$ into itself; a homeomorphism carries that
-property to $B$.
+$B$ is homeomorphic to $\Delta^2$.
+
+It remains to see that $\Delta^2$ is homeomorphic to $B^2$; compactness and
+convexity alone do not give that, and what is used is that $\Delta^2$ has
+nonempty interior in its plane.
+
+A compact convex set $K\subseteq\RR^2$ with nonempty interior is homeomorphic to
+$B^2$. Choose $c\in\operatorname{int}K$. For $u\in S^1$ the ray $c+tu$, $t\ge0$,
+meets $K$ in a segment $c+[0,\rho(u)]\,u$ with $0<\rho(u)<\infty$, and meets
+$\partial K$ in the single point $c+\rho(u)u$: no point past that one lies in $K$,
+and a point $(1-s)c+sq$ with $q\in K$ and $0\le s<1$ is interior to $K$, since a
+ball $A$ about $c$ inside $K$ gives a ball $(1-s)A+sq$ about it inside $K$ by
+convexity. Under the homeomorphism $S^1\times(0,\infty)\to\RR^2-\theset c$,
+$(u,t)\mapsto c+tu$, the set of pairs $(u,\rho(u))$ is the inverse image of the
+compact set $\partial K$, so it is compact, and it projects bijectively onto
+$S^1$; that projection is therefore a homeomorphism and $\rho$ is continuous.
+Then
+$$
+\Phi:B^2\to K,\qquad
+\Phi(\mathbf 0)=c,\quad
+\Phi(x)=c+\abs x\,\rho\Bigl(\frac{x}{\abs x}\Bigr)\frac{x}{\abs x}
+\ \ (x\ne\mathbf 0),
+$$
+is continuous — near $\mathbf 0$ because $0<\rho\le\operatorname{diam}K$ — and it
+is injective, since on each ray $c+tu$ the parameter $\abs x\,\rho(x/\abs x)$
+increases strictly with $t$, and it is surjective, since a point $c+tu$ of $K$
+with $t>0$ is $\Phi\bigl((t/\rho(u))u\bigr)$ and $t/\rho(u)\le1$. A continuous
+bijection of the compact space $B^2$ onto the Hausdorff space $K$ is a
+homeomorphism (Theorem 26.6, printed p. 167).
+
+The simplex $\Delta^2$ lies in the plane $x_1+x_2+x_3=1$, which a linear isometry
+carries onto $\RR^2$, and in that plane $\Delta^2$ is compact, convex, and has
+nonempty interior, since the open triangle of points with all coordinates positive
+about its barycentre $(1/3,1/3,1/3)$ lies in it. So $\Delta^2$ is homeomorphic to
+$B^2$ by the paragraph above, and $B$ is homeomorphic to $B^2$ through $\varphi$.
+The book states the same fact for the octant $B$ and for the triangle
+$T=\{(x,y):x,y\ge0,\ x+y\le1\}$, and calls it easy, on printed p. 352.
+Theorem 55.6 asserts the fixed-point property for continuous maps of $B^2$ into
+itself; a homeomorphism carries that property to $B$.
 :::
 
 :::
