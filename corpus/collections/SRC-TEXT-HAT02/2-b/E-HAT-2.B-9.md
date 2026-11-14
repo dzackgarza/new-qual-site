@@ -81,6 +81,25 @@ audit:
     for $\tau$, $p_\sharp$, the short exact sequence of chain complexes and the long exact sequence
     called the transfer sequence, and printed p. 177 for the exercise. Not claimed: a published
     solution of the exercise; none is in the retained sets.
+- event: source-checked
+  by: claude
+  date: 2026-11-14
+  note: >-
+    The cohomological form of the transfer sequence is now on the card from Hausmann, *Mod Two
+    Homology and Cohomology* (Springer, 2014): Proposition 4.3.9, "Transfer exact sequence", printed
+    p. 123, the exact sequence $\cdots\to H^m(X)\to H^m(\tilde X)\to H^m(X)\xrightarrow{w(p)\smile-}
+    H^{m+1}(X)\to\cdots$ for a 2-fold covering over a CW complex, functorial for induced coverings,
+    proved by Kronecker duality from the chain-level sequence together with Proposition 2.6.2
+    (printed p. 34) and the identification of the connecting map with the cup product by the
+    characteristic class; Lemma 4.3.6(3), printed p. 120, that the covering is trivial if and only
+    if $w(p)=0$; and Exercise 4.4 of Chapter 4, printed p. 166, which asks for the transfer exact
+    sequence of a trivial 2-fold covering and is printed without a solution. For the trivial
+    covering the card now writes the two-sheet cochain coordinates — $C^*p$ the diagonal and
+    $\tau^*$ the sum, dual to the chain-level diagonal and sum — hence the short exact sequence of
+    each degree and its splitting. Not claimed: a printed solution of Hausmann's Exercise 4.4, or a
+    published treatment of the exercise in Hatcher's homology form; the retained sets contain
+    neither. Checked against Hatcher (2002), §2.B Exercise 9 on printed p. 177, whose statement is
+    unchanged by this addition.
 ---
 
 ::: {.problem}
@@ -141,6 +160,18 @@ By step [](#chain-section){.pf-ref}, the long exact sequence associated to a spl
 :::
 :::
 
+*The cohomological form.* The transfer sequence has a cohomological form, and it is proved in full by Hausmann, *Mod Two Homology and Cohomology* (Springer, 2014), Proposition 4.3.9, "Transfer exact sequence", printed p. 123, for a 2-fold covering $p:\tilde X\to X$ over a CW complex. The transfer there is the dual $\tau^*:C^*(\tilde X;\ZZ_2)\to C^*(X;\ZZ_2)$ of the chain-level map $\tau$, and the sequence is
+$$
+\cdots\to H^m(X;\ZZ_2)\xrightarrow{H^*p}H^m(\tilde X;\ZZ_2)\xrightarrow{\tau^*}H^m(X;\ZZ_2)\xrightarrow{w(p)\smile-}H^{m+1}(X;\ZZ_2)\xrightarrow{H^*p}\cdots,
+$$
+exact and functorial for induced coverings, where $w(p)\in H^1(X;\ZZ_2)$ is the characteristic class of $p$. The proof dualises the chain-level sequence of the two-sheet coordinates: that sequence is exact over $\ZZ_2$ and functorial for induced coverings, Kronecker duality gives from it the short exact sequence of cochain complexes $0\to C^*(X;\ZZ_2)\xrightarrow{C^*p}C^*(\tilde X;\ZZ_2)\xrightarrow{\tau^*}C^*(X;\ZZ_2)\to0$, whose long exact sequence is Hausmann's Proposition 2.6.2, printed p. 34; the connecting homomorphism is then identified with the cup product by $w(p)$, which is where the characteristic class enters.
+
+For the trivial covering $\tilde X=X\times S^0$ the characteristic class vanishes: Hausmann's Lemma 4.3.6(3), printed p. 120, states that over a CW complex a 2-fold covering is trivial if and only if its characteristic class is zero. The connecting homomorphism is therefore zero, and exactness makes the cohomological transfer sequence the short exact sequence
+$$
+0\to H^m(X;\ZZ_2)\xrightarrow{a\mapsto(a,a)}H^m(\tilde X;\ZZ_2)\xrightarrow{(\alpha,\beta)\mapsto\alpha+\beta}H^m(X;\ZZ_2)\to0
+$$
+in each degree, which is the same two-sheet computation at the cochain level: over $\ZZ_2$ the cochain complex of $\tilde X$ is $C^*(X;\ZZ_2)\oplus C^*(X;\ZZ_2)$, and $C^*p$ is the diagonal while $\tau^*$ is addition, because $C_*p(a,b)=a+b$ is addition and $\tau(c)=(c,c)$ is the diagonal. The sequence splits by $\alpha\mapsto(\alpha,0)$, so $H^m(\tilde X;\ZZ_2)\cong H^m(X;\ZZ_2)^{\oplus2}$ for every $m$. Hausmann asks for exactly this computation as Exercise 4.4 of Chapter 4, printed p. 166, "Write the transfer exact sequence for a trivial 2-fold covering", and prints no solution to it; the two-sheet coordinates supplied here are the cohomological counterpart of those of the exercise as Hatcher states it.
+
 ::: {.remark title="Published solution"}
-Hatcher, *Algebraic Topology* (2002), the transfer for a two-sheeted covering, printed pp. 174--175: $\tau$ the sum of the two lifts, the short exact sequence of chain complexes $0\to C_n(X;\ZZ_2)\xrightarrow{\tau}C_n(\tilde X;\ZZ_2)\xrightarrow{p_\sharp}C_n(X;\ZZ_2)\to0$, and the long exact sequence it yields. Hatcher neither calls that sequence split nor proves it split, and it is not split as chain complexes in general; for the trivial covering it is, by the two-sheet coordinates, which is what the exercise asks for. The exercise is Exercise 9 of §2.B, printed p. 177, and the trivial covering is that construction with $\tilde X=X\times S^0$.
+Hausmann, *Mod Two Homology and Cohomology* (Springer, 2014), Proposition 4.3.9, printed p. 123, proves the transfer exact sequence in cohomology, over a CW complex, with the characteristic class $w(p)$ as the connecting map, and his Lemma 4.3.6(3), printed p. 120, identifies $w(p)=0$ with triviality of the covering; the corresponding computation for the trivial 2-fold covering is asked for as Exercise 4.4 of Chapter 4, printed p. 166. Neither prints the two-sheet cochain coordinates for it. Hatcher, *Algebraic Topology* (2002), the transfer for a two-sheeted covering, printed pp. 174--175: $\tau$ the sum of the two lifts, the short exact sequence of chain complexes $0\to C_n(X;\ZZ_2)\xrightarrow{\tau}C_n(\tilde X;\ZZ_2)\xrightarrow{p_\sharp}C_n(X;\ZZ_2)\to0$, and the long exact sequence it yields. Hatcher neither calls that sequence split nor proves it split, and it is not split as chain complexes in general; for the trivial covering it is, by the two-sheet coordinates, which is what the exercise asks for. The exercise is Exercise 9 of §2.B, printed p. 177, and the trivial covering is that construction with $\tilde X=X\times S^0$.
 :::
