@@ -43,6 +43,22 @@ audit:
   note: >-
     The solution was rewritten as the criticism above, in Lamport form, with the source and the
     book's pages named in its own text.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    The construction of the surjective loop rested on the sentence "$B^2/\partial B^2$ obtained by
+    collapsing the boundary circle to a point is two closed discs glued along their boundary
+    circles, which is a sphere", which is not a proof and describes the wrong space: the quotient is
+    a single disc with its boundary collapsed, and gluing two discs along their boundary circles
+    gives a sphere but is not that quotient. The step now proves $B^2/\partial B^2\cong S^2$ by an
+    explicit map $g:B^2\to S^2$ with third coordinate $-\cos\pi\abs x$ and horizontal part
+    $(\sin\pi\abs x/\abs x)\,x$, which is continuous, constant exactly on $\partial B^2$ with value
+    $(0,0,1)$, and injective off $\partial B^2$, so that it induces a continuous bijection from the
+    compact quotient onto the Hausdorff sphere, hence a homeomorphism by Theorem 26.6; the book
+    pictures the same quotient in Figure 22.2 (printed p. 136). The rest of the step is unchanged.
+    Checked against the book: the exercise on printed p. 370, Theorem 44.1 on printed p. 272,
+    Theorem 26.6 on printed p. 167 and Figure 22.2 on printed p. 136.
 ---
 
 ::: {.exercise}
@@ -79,11 +95,28 @@ There is a loop in $S^2$ whose image is all of $S^2$.
 
 ::: pf-proof
 Let $\pi:I\to I^2$ be the continuous surjection of Theorem 44.1 (printed p. 272),
-the Peano curve. The boundary circle of $B^2$ is a circle, so the quotient
-$B^2/\partial B^2$ obtained by collapsing it to a point is two closed discs glued
-along their boundary circles, which is a sphere; let $q:B^2\to S^2$ be that
-quotient map, and let $h:I^2\to S^2$ be $q$ composed with a homeomorphism
-$I^2\to B^2$. Then $h$ is continuous and surjective, and
+the Peano curve. Let $q:B^2\to B^2/\partial B^2$ be the map collapsing the
+boundary circle to a point, and let $g:B^2\to S^2$ be
+$$
+g(x)=\Bigl(\frac{\sin\pi\abs x}{\abs x}\,x_1,\
+\frac{\sin\pi\abs x}{\abs x}\,x_2,\ -\cos\pi\abs x\Bigr)\quad (x\ne\mathbf 0),
+\qquad g(\mathbf 0)=(0,0,-1),
+$$
+where $S^2$ is the unit sphere of $\RR^3$. The map $g$ is continuous: the factor
+$\sin\pi\abs x/\abs x$ tends to $\pi$ as $x\to\mathbf 0$, and the third coordinate
+is continuous. It is constant on $\partial B^2$, where $\abs x=1$, with value
+$(0,0,1)$, and its fibre over $(0,0,1)$ is $\partial B^2$. It is injective off
+$\partial B^2$: a point $(u,z)$ of $S^2$ with $z\ne1$ determines $\abs x$ by
+$z=-\cos\pi\abs x$, which is $0$ only for $z=-1$, then $\sin\pi\abs x$ as the
+positive square root of $1-z^2$, and hence $x=u\,\abs x/\sin\pi\abs x$ when
+$z\ne-1$, while $z=-1$ forces $x=\mathbf 0$. Hence
+$g$ induces a continuous bijection $\bar g:B^2/\partial B^2\to S^2$, which is a
+homeomorphism because $B^2/\partial B^2$ is compact and $S^2$ is Hausdorff
+(Theorem 26.6, printed p. 167); the construction is the one pictured in Figure
+22.2 of the book (printed p. 136).
+
+Let $e:I^2\to B^2$ be the linear homeomorphism and put
+$h=\bar g\circ q\circ e:I^2\to S^2$. Then $h$ is continuous and surjective, and
 $f=h\circ\pi:I\to S^2$ is a continuous map of $I$ into $S^2$ whose image is
 $h(I^2)=S^2$. To make it a loop, take a path $\gamma:I\to S^2$ from $f(1)$ to
 $f(0)$, which exists because $S^2$ is path connected, and put $F(s)=f(2s)$ for
