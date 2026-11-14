@@ -20,6 +20,26 @@ audit:
   note: >-
     Checked line by line against Munkres, Topology (2000), Section 59 Exercise 1, printed p. 370,
     with Theorem 59.1 or Corollary 59.2. The card cuts the wedge of two spheres along a point of each sphere, checks that the two open pieces and their intersection are simply connected and the intersection path connected, and concludes $\pi_1=1$. No complete published solution was located for this exercise: dbFin's Chapter 9 pages run from Section 51 to Section 56 only, and every set searched is listed in the COMPLAINTS.md entry for Sections 57 to 60. The proof is the card's own and every step was checked against the book.
+- event: source-checked
+  by: claude
+  date: 2026-11-14
+  note: >-
+    A published proof has now been located: Pearse, *Topology (2nd ed.) — James R. Munkres*,
+    solutions, Cornell 2005, §59 Exercise 1, his p. 24, read in the MinerU extraction
+    tmp/sources/cornell-erin-munkres.md. The solution is that proof transcribed: the two open
+    pieces cut off by the planes $x=-1$ and $x=1$, each deformation retracting onto the sphere it
+    keeps, and Corollary 59.2 applied to their intersection. The source is correct and needed no
+    repair. Checked against the book: the exercise and its bracket on printed p. 370, Theorem 59.1
+    and Corollary 59.2 on printed p. 369, and Theorem 59.3 on printed p. 369 for the simple
+    connectedness of $S^2$. The card states what the source leaves to the reader, that the
+    intersection is path connected, by joining each of its points to the common point inside its own
+    sphere. Not claimed: that the source proves the deformation retraction by an explicit formula
+    -- it describes the collapse along the meridians, and the card does the same.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    The solution was rewritten as the transcription above, in Lamport form.
 ---
 
 ::: {.exercise}
@@ -31,146 +51,75 @@ Prove that your answer is correct.
 :::
 
 ::: {.solution}
+The exercise is §59 Exercise 1, printed p. 370, with the warning in its bracket
+that a union of two simply connected spaces with a point in common need not be
+simply connected. The proof is transcribed from Pearse, *Topology (2nd ed.) —
+James R. Munkres*, solutions, Cornell 2005, §59 Exercise 1, his p. 24, read in
+`tmp/sources/cornell-erin-munkres.md`: it exhibits $X$ as the union of two open
+subspaces with simply connected parts and path connected intersection, so that
+Corollary 59.2 (printed p. 369) applies. The bracket's warning is answered by the
+openness and by the intersection being contractible, not merely a point.
+
+Place the two spheres in $\RR^3$ as the spheres of radius $1$ about $(-1,0,0)$
+and $(1,0,0)$, so that they meet in the single point $\mathbf 0$ and
+$X\subseteq[-2,2]\times\RR^2$; put $x_0=\mathbf 0$ and
+$$
+U=X\cap\bigl((-1,\infty)\times\RR^2\bigr),\qquad
+V=X\cap\bigl((-\infty,1)\times\RR^2\bigr).
+$$
 
 ::: pf
 
-::: {.pf-step #s1}
-
-Open cover construction:
-
-::: pf-proof
-
-::: pf-step
-
-Let $X = S_1 \cup S_2$ with $S_1 \cap S_2 = \{p\}$, where each $S_i \cong S^2$.
-Choose points $q_1 \in S_1 \setminus \{p\}$ and $q_2 \in S_2 \setminus \{p\}$ (e.g. the antipodal points to $p$ on each sphere).
+::: {.pf-step #cover}
+$U$ and $V$ are open in $X$, $U\cup V=X$, and $U\cap V$ is path connected and
+contains $x_0=\mathbf 0$.
 
 ::: pf-proof
+Each of $(-1,\infty)\times\RR^2$ and $(-\infty,1)\times\RR^2$ is open in
+$\RR^3$, so $U$ and $V$ are open in $X$. Every point of $X$ has first coordinate
+in $[-2,2]$, and for such a coordinate at least one of $x>-1$ and $x<1$ holds, so
+$U\cup V=X$.
 
-each $S_i \setminus \{p\}$ contains points distinct from $p$.
-
+The points of $U\cap V$ are the points of $X$ with $-1<x<1$. On the first sphere
+those are its open right hemisphere together with $\mathbf 0$, a path connected
+set: the open hemisphere is path connected, and each of its meridian arcs from
+$\mathbf 0$ to the circle $\theset{x=-1}$ has $\mathbf 0$ as an endpoint, so
+$\mathbf 0$ can be joined to any of its points inside that set. On the second
+sphere the points with $-1<x<1$ are its open left hemisphere together with
+$\mathbf 0$, path connected for the same reason. The two sets meet in
+$\mathbf 0$, so their union $U\cap V$ is path connected, and it contains $x_0$.
 :::
 
 :::
 
-::: pf-step
-
-Define the open sets in $X$:
-$$
-U = X \setminus \{q_1\} = (S_1 \setminus \{q_1\}) \cup S_2, \qquad V = X \setminus \{q_2\} = S_1 \cup (S_2 \setminus \{q_2\}).
-$$
-Since $\{q_1\}$ and $\{q_2\}$ are closed singletons in Hausdorff spaces, $U$ and $V$ are open in $X$, and $U \cup V = X \setminus \emptyset = X$.
+::: {.pf-step #parts}
+$U$ and $V$ are simply connected.
 
 ::: pf-proof
-
-complements of closed points in $X$ are open.
-
+Consider $U$. The part of the first sphere in $U$ is its closed right hemisphere
+$H_+=\{x\ge-1\}\cap S^2_{-}$, and the meridians of $S^2_{-}$ from $\mathbf 0$ to
+$(-2,0,0)$ sweep it; sliding each point of $H_+$ along its meridian towards
+$\mathbf 0$ gives a deformation retraction of $U$ onto the second sphere
+$S^2_+$, which is fixed throughout. So $\pi_1(U)\cong\pi_1(S^2_+)$, which is
+trivial by Theorem 59.3 (printed p. 369) with $n=2$. The same argument with the
+roles exchanged gives that $V$ deformation retracts onto $S^2_{-}$ and
+$\pi_1(V)$ is trivial.
 :::
 
 :::
 
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Fundamental groups of $U, V$, and $U \cap V$:
+::: {.pf-step}
+$\boxed{\pi_1(X,x_0)\ \text{is trivial}}$.
 
 ::: pf-proof
-
-::: {.pf-step #s2-1}
-
-**Fundamental group of $U$:**
-$S_1 \setminus \{q_1\}$ is homeomorphic to $\RR^2$, which deformation retracts onto the point $p$.
-This radial deformation retraction extends to $U$ by fixing $S_2$ pointwise.
-Thus $S_2$ is a deformation retract of $U$, so:
-$$
-\pi_1(U, p) \cong \pi_1(S_2, p) \cong \pi_1(S^2) = 0.
-$$
-
-::: pf-proof
-
-$\pi_1(S^2) = 0$ and homotopy invariance.
-
-:::
-
-:::
-
-::: pf-step
-
-**Fundamental group of $V$:**
-Symmetrically, $V$ deformation retracts onto $S_1$, so:
-$$
-\pi_1(V, p) \cong \pi_1(S_1, p) \cong \pi_1(S^2) = 0.
-$$
-
-::: pf-proof
-
-symmetry with step [](#s2-1){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-step
-
-**Fundamental group of $U \cap V$:**
-The intersection is $U \cap V = (S_1 \setminus \{q_1\}) \cup (S_2 \setminus \{q_2\})$.
-Both pieces are homeomorphic to $\RR^2$ and share the common point $p$.
-The simultaneous radial retraction onto $p$ on each piece shows that $U \cap V$ deformation retracts to the point $\{p\}$.
-Thus $U \cap V$ is contractible, hence path-connected with $\pi_1(U \cap V, p) = 0$.
-
-::: pf-proof
-
-union of two contractible open sets sharing a point.
-
+By steps [](#cover){.pf-ref} and [](#parts){.pf-ref} the space $X$ is the union
+of the open sets $U$ and $V$, which are simply connected, and $U\cap V$ is
+nonempty and path connected, so Corollary 59.2 (printed p. 369) says that $X$ is
+simply connected. Hence the fundamental group of $X$ is trivial, and since it is
+trivial it is the same at every base point.
 :::
 
 :::
 
 :::
-
-:::
-
-::: {.pf-step #s3}
-
-Seifert–van Kampen Theorem:
-
-::: pf-proof
-
-::: pf-step
-
-Since $U$ and $V$ are open, $U \cup V = X$, and $U \cap V$ is path-connected, the Seifert–van Kampen Theorem gives:
-$$
-\pi_1(X, p) \cong \pi_1(U, p) *_{\pi_1(U \cap V, p)} \pi_1(V, p) \cong 0 *_0 0 = 0.
-$$
-
-::: pf-proof
-
-Seifert–van Kampen Theorem for an open cover.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-Conclusion:
-The fundamental group of the wedge sum of two 2-spheres is the trivial group: $\pi_1(X) \cong 0$. Q.E.D.
-
-::: pf-proof
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
-
-:::
-
-:::
-
-:::
-
 :::
