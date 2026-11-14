@@ -46,6 +46,22 @@ audit:
   date: 2026-11-13
   note: >-
     The exercise is on printed p. 426. The published argument is Hatcher's Example 4A.3, printed p. 422: for an H-space $X$ with identity $x_0$ the action of $\pi_1(X,x_0)$ on $\pi_n(X,x_0)$ is trivial, because the multiplication moves the basepoint along $x_0\cdot\gamma$ while leaving the map $f$ fixed. A topological group is an H-space with a two-sided identity and an inverse, so the same homotopy applies; the card's proof is that argument with the multiplication and the inverse written out, converting the unbased homotopy $f\simeq g$ into the based one through $f\cdot(g^{-1})$ evaluated at the moving basepoint. Checked against the book: the printed statement of Example 4A.3, the definition of the action in Proposition 4A.1 on p. 422, and the printed exercise on p. 426 which asks exactly for the basepoint-preserving conclusion. Not claimed: that Hatcher prints the exercise.
+- event: source-checked
+  by: claude
+  date: 2026-11-14
+  note: >-
+    The published instance of this card's argument is now on the card: tom Dieck, *Algebraic
+    Topology* (EMS Textbooks in Mathematics, 2008), Lemma (2.7.4) with its proof, printed **p. 49**,
+    which for $Z=X=S^1$ (the unit circle as a group) proves the normalisation
+    $(x,t)\mapsto H(x,t)\cdot H(1,t)^{-1}$ of a homotopy between pointed maps into a pointed homotopy
+    between the same maps, and whose surjectivity half uses a path from $1$ to $f(1)^{-1}$. The
+    source's case is stated on the card, and the card states what is not sourced: the lemma treats
+    $Z=X=S^1$, while the exercise asks for an arbitrary topological group $X$ and an arbitrary
+    pointed space $(Z,z_0)$, and no published source for that generality has been located; the
+    derivation for it is the card's, the loop $\gamma(t)=H(z_0,t)$ replacing $H(1,t)$. The proof
+    already on the card needed no repair and its `pf` block is unchanged. Checked against Hatcher
+    (2002), §4.A Exercise 1 on printed p. 426 and Example 4A.3 on printed p. 422. Not claimed: that
+    tom Dieck states the general form, or that Hatcher prints the exercise.
 ---
 
 ::: {.problem}
@@ -127,6 +143,8 @@ $F: (Z \times I, \{z_0\} \times I) \to (X, x_0)$ is a pointed homotopy between $
 
 :::
 
+*The published instance of this argument.* (tom Dieck, Lemma (2.7.4), printed p. 49.) The source proves exactly this normalisation, for $Z=X=S^1$ with the multiplication of the unit circle: "Let $H:S^1\times I\to S^1$ be a homotopy between pointed maps; then $(x,t)\mapsto H(x,t)\cdot H(1,t)^{-1}$ is a pointed homotopy between the same maps", which is the injectivity half of the statement that the map $[S^1,S^1]_0\to[S^1,S^1]$ forgetting the base point is a bijection. The surjectivity half of the same lemma is the other half of the construction here: a path $w$ from $1$ to $f(1)^{-1}$ gives the homotopy $(x,t)\mapsto f(x)w(t)$ from $f$ to a pointed map. The derivation above is that computation with an arbitrary topological group $X$ in place of the unit circle and an arbitrary pointed space $(Z,z_0)$ in place of the circle, the loop $\gamma(t)=H(z_0,t)$ playing the role of $H(1,t)$. The source proves the case $Z=X=S^1$ only; the statement for arbitrary $Z$ and $X$ has no located published source, and on this card it rests on the derivation above together with Hatcher's H-space form of the same normalisation in Example 4A.3.
+
 ::: {.remark title="Published solution"}
-Hatcher, *Algebraic Topology* (2002), Example 4A.3, printed p. 422 (an H-space acts trivially on its homotopy groups), with the action defined in Proposition 4A.1 on the same page. The exercise is Exercise 1 of §4.A, printed p. 426, and a topological group is an H-space in the sense of the example.
+tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), Lemma (2.7.4) with its proof, printed p. 49, for $Z=X=S^1$: the normalisation $(x,t)\mapsto H(x,t)\cdot H(1,t)^{-1}$ of a homotopy between pointed maps, and the path from $1$ to $f(1)^{-1}$ that makes the forgetful map $[S^1,S^1]_0\to[S^1,S^1]$ surjective as well as injective. Hatcher, *Algebraic Topology* (2002), Example 4A.3, printed p. 422, is the H-space form of the same normalisation, with the action defined in Proposition 4A.1 on the same page. The exercise is Exercise 1 of §4.A, printed p. 426, and a topological group is an H-space in the sense of the example.
 :::
