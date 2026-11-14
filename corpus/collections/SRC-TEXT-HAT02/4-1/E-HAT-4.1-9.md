@@ -71,6 +71,60 @@ audit:
     statement. Searched without result in the retained sets (Sam, Li, DeMason, Poulsen, Stanford
     Math 215C Solution Sets 1--5, the UCR Math 205B help file, May's *Concise Course* §4, Maxim's
     Math 752 notes) and in Hatcher's text and errata.
+- event: source-corrected
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Withdraws the counterexample recorded on 2026-11-07, which does not satisfy the hypothesis it is
+    offered against. That hypothesis is that the four surrounding maps are bijections for every
+    choice of basepoint, and the basepoints admissible for the pair $(X,A,x_0)$ are the points of
+    $A$. In the withdrawn example $X=\{x_0\}\sqcup\{a\}$ is discrete with $A=X$, while
+    $Y=\{y_0\}\sqcup[0,1]$ and $B=\{y_0,0,1\}$; at the basepoint $a\in A$ the vertical map at
+    $\pi_1(X,A,a)$ is one point into two, since the only path from $A$ to $a$ in the discrete $X$ is
+    the constant one, while $\pi_1(Y,B,\varphi(a))=\pi_1(Y,B,0)$ contains the classes of the constant
+    path at $0$ and of a path from $1$ to $0$, both starting in $B$. The example therefore fails the
+    hypothesis at a basepoint in $A$, exactly as the brief for #123 asked to be checked, and it is
+    withdrawn. It is replaced by two examples that do satisfy the hypothesis at every basepoint: for
+    the term $\pi_1(X,A,x_0)$, $X=\RR\sqcup\RR$ with $A=\{1\}\cup\{2\}$ one point in each copy,
+    $Y=\RR$ with $B=\{0,3\}$, and $\varphi$ equal to $0$ on the first copy and $3$ on the second; and
+    for the term $\pi_0(A,x_0)$, $X=Y=\RR$ with $A=(-1,0]\cup(2,3)$, $B=(-1,1)$ and the piecewise map
+    that is the identity on $(-\infty,0]$, $0$ on $[0,2]$ and $t-2$ on $[2,\infty)$. In each case the
+    four surrounding maps are computed on the card, at every basepoint, and the conclusion fails.
+- event: source-corrected
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Corrects the claim, carried since 2026-11-07, that the printed five-lemma holds "at every term in
+    degrees $\ge1$". The group chase on the card is a chase of five group terms, and in the pair
+    sequence the windows of five group terms are exactly those centered at a term of degree $\ge2$;
+    the window centered at the pointed set $\pi_1(X,A,x_0)$ is not one of them, and the first new
+    example shows that the printed claim is false there too. So the printed (a) fails at two terms,
+    $\pi_1(X,A,x_0)$ and $\pi_0(A,x_0)$, and the card now says so. What survives is stated as Claim 1
+    ($\pi_0(X,A,x_0)$ from $\pi_0(A,x_0)$ and $\pi_0(X,x_0)$), Claim 2 (unchanged), and a new Claim 3:
+    surjectivity at $\pi_0(A,x_0)$ is forced by the hypothesis, using $\pi_1(X,A,x)$ onto at the
+    relevant basepoints and $\pi_0(X,A,x_0)$ injective, so the failure at $\pi_0(A,x_0)$ is
+    injectivity only and not, as the withdrawn example suggested, surjectivity. The windows centered
+    at $\pi_1(A,x_0)$ and $\pi_1(X,x_0)$ are recorded on the card as not settled there. Part (b) is
+    unchanged and still checked as printed.
+- event: source-checked
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Read Brown, *Fibrations of groupoids*, Journal of Algebra 15 (1970) 103--132, in the text
+    version `tmp/sources/brown-1970-fibrations-of-groupoids.md`, for the $\pi_0$ five-lemma the #123
+    brief names: Theorem 4.9 on printed p. 121, whose (a) gives surjectivity of $f:\pi_0F\to\pi_0F'$
+    from surjectivity of $h:H(v)\to H'(v')$ and of $g:\pi_0G\to\pi_0G'$ together with injectivity of
+    $h:\pi_0H\to\pi_0H'$, and whose (b) gives injectivity of $f$ on $\ker(\pi_0F\to\pi_0G)$; and
+    Corollary 4.11 on printed pp. 122--123, that equivalences $h:H\to H'$ and $g:G\to G'$ force
+    $f:F\to F'$ to be an equivalence, hence $f:\pi_0F\to\pi_0F'$ bijective, by 4.9 followed by the
+    ordinary five-lemma for groups on diagram 4.8. Cited on the card in a remark for exactly that,
+    and not used in the argument: Brown's hypotheses are those of a fibration of groupoids with
+    equivalences of the total groupoids and bases, which is stronger than the exercise's "for all
+    choices of $x_0$", and the map of pairs $(X,A)\to(Y,B)$ is not a fibration of groupoids. No
+    claim is made that Brown's theorem settles Hatcher's exercise. The extracted text of the paper
+    writes some symbols as glyph substitutions (it is a scan of the 1970 print); the statements
+    above were read against the displayed formulas of 4.9, 4.10 and 4.11, not from the running text
+    alone.
 ---
 
 ::: {.problem}
@@ -96,7 +150,7 @@ Throughout, a map of pairs $\varphi:(X,A,x_0)\to(Y,B,y_0)$ induces a ladder betw
 
 ### (a) The five-lemma
 
-*Degrees $\ge1$: the group case.* The standard five-lemma argument applies verbatim, since every term there is a group and every map a homomorphism. Write the ladder as
+*Terms of degree $\ge2$: the group case.* The standard five-lemma argument applies verbatim in a window of five group terms, since every map there is a homomorphism. Write the ladder as
 $$
 A\xrightarrow{f}B\xrightarrow{g}C\xrightarrow{h}D\xrightarrow{k}E
 \quad\text{over}\quad
@@ -107,15 +161,50 @@ with all four squares commutative and both rows exact.
 - *Injectivity of $\gamma:C\to C'$*, given $\alpha$ onto and $\beta,\delta$ one-to-one: if $\gamma(c)=1$ then $\delta h(c)=h'\gamma(c)=1$, so $h(c)=1$ and $c=g(b)$ for some $b$. Then $g'\beta(b)=\gamma g(b)=1$, so $\beta(b)=f'(a')$ for some $a'$, and $a'=\alpha(a)$ because $\alpha$ is onto. Hence $\beta(b)=\beta f(a)$, so $b=f(a)$ by injectivity of $\beta$, and $c=g(b)=gf(a)=1$.
 - *Surjectivity of $\gamma$*, given $\beta$ and $\delta$ onto and $\varepsilon$ one-to-one: for $c'\in C'$ put $d'=h'(c')$ and choose $d\in D$ with $\delta(d)=d'$. Then $\varepsilon k(d)=k'\delta(d)=k'h'(c')=1$, so $k(d)=1$ because $\varepsilon$ is injective, and hence $d=h(c)$ for some $c\in C$. Now $h'(\gamma(c))=\delta h(c)=d'=h'(c')$, so $h'(\gamma(c)^{-1}c')=1$ and therefore $\gamma(c)^{-1}c'=g'(b')$ for some $b'\in B'$; choose $b\in B$ with $\beta(b)=b'$ and put $c''=c\,g(b)$. Then $\gamma(c'')=\gamma(c)g'(b')=c'$.
 
-So every interior vertical map of a window of five consecutive terms all of which are groups is a bijection when its four neighbours are. In the pair sequence these windows are those lying in degrees $\ge2$, together with the window $\pi_2(X,A)\to\pi_1(A)\to\pi_1(X)\to\pi_1(X,A)$ read only up to its middle term; the window whose middle term is the pointed set $\pi_1(X,A,x_0)$ and the windows in degrees $0$ are treated next.
+*Which windows these are.* The four terms of degree one or zero in the extended sequence are the pointed sets $\pi_1(X,A,x_0)$, $\pi_0(A,x_0)$, $\pi_0(X,x_0)$ and $\pi_0(X,A,x_0)$, and they occur in the order
 
-*The low-degree tail.* The three last terms are the pointed sets $\pi_0(A,x_0)$, $\pi_0(X,x_0)$, $\pi_0(X,A,x_0)$, and here multiplication is not available, so the argument above does not apply. What does hold, and what the exercise's clause "for all choices of $x_0$" is for, is the following.
+$$
+\cdots\to\pi_{n+1}(X)\to\pi_{n+1}(X,A)\to\pi_n(A)\to\pi_n(X)\to\pi_n(X,A)\to\pi_{n-1}(A)\to\cdots,
+$$
+
+so a window of five consecutive terms all of which are groups is exactly one centered at a term of degree $\ge2$. The windows centered at $\pi_1(A,x_0)$, $\pi_1(X,x_0)$, $\pi_1(X,A,x_0)$ and in degree $0$ contain a pointed set, and the group chase says nothing about them. Two of them fail, and the rest of this section settles what does hold.
+
+*The term $\pi_1(X,A,x_0)$: the printed form is false.* Take $X=\RR\sqcup\RR$, with $A=\{1\}\cup\{2\}$ where $1$ lies in the first copy of $\RR$ and $2$ in the second; take $Y=\RR$ and $B=\{0,3\}$; let $\varphi$ be $0$ on the first copy of $X$ and $3$ on the second. The admissible basepoints are the points of $A$.
+
+- The vertical map at $\pi_0(A,x_0)$ is the bijection $\{1\}\mapsto\{0\}$, $\{2\}\mapsto\{3\}$.
+- $\pi_1(A,x_0)$ and $\pi_1(B,y_0)$ are one-point sets, $A$ and $B$ being discrete, and $\pi_1(X,x_0)=1=\pi_1(Y,y_0)$.
+- $\pi_2(X,A,x_0)=0=\pi_2(Y,B,y_0)$: in each case $\pi_2$ of the total space vanishes, each component of $X$ and $Y$ being contractible, so exactness at $\pi_2$ of the pair makes $\pi_2(\cdot,\cdot,x_0)\to\pi_1(\cdot,x_0)$ injective, and the subgroup is one-point.
+
+So all four surrounding maps are bijections, at either basepoint. But $\pi_1(X,A,1)$ is a one-point set: a path ending at $1$ stays in the first copy of $\RR$ and starts in $A\cap$ that copy $=\{1\}$, so the only such class is the constant one. And $\pi_1(Y,B,0)$ has two elements, the classes of the constant path at $0$ and of a path from $3$ to $0$, since $0$ and $3$ are distinct points of $Y$. The vertical map at $\pi_1(X,A,x_0)$ is therefore not a bijection.
+
+*The term $\pi_0(A,x_0)$: the printed form is false.* Take $X=Y=\RR$, with $A=(-1,0]\cup(2,3)$ and $B=(-1,1)$, and let
+
+$$
+\varphi(t)=\begin{cases}t,&t\le0,\\0,&0\le t\le2,\\t-2,&t\ge2.\end{cases}
+$$
+
+Then $\varphi$ is continuous, $\varphi(A)=(-1,0]\cup(0,1)=B$, and $\varphi$ restricted to $A$ is injective, because the two pieces of $A$ map onto $(-1,0]$ and $(0,1)$ respectively. Take $x_0=0\in A$, so $y_0=0\in B$; the same computation runs at every basepoint of $A$.
+
+- $\pi_0(X,x_0)$ and $\pi_0(Y,y_0)$ are one-point sets, $X$ and $Y$ being connected, and the vertical map between them is a bijection.
+- $\pi_0(X,A,x_0)$ and $\pi_0(Y,B,y_0)$ are one-point sets: $A$ meets the only component of $X$ and $B$ meets the only component of $Y$, so $i_*\pi_0$ is everything on each side.
+- $\pi_1(X,x_0)$ and $\pi_1(Y,y_0)$ are trivial, $\RR$ being contractible.
+- $\pi_1(X,A,x_0)$ is in bijection with $A$ and $\pi_1(Y,B,y_0)$ with $B$: $\RR$ is convex, so for each $a\in A$ there is exactly one class of paths from $a$ to $x_0$, and likewise on the other side. Under that identification the vertical map is $\varphi|_A$, which is a bijection.
+
+So all four surrounding maps are bijections. And $\pi_0(A,x_0)$ has two elements, the components $(-1,0]$ and $(2,3)$, while $\pi_0(B,y_0)$ is a one-point set because $B$ is an interval; the vertical map is therefore not injective.
+
+*The example this card gave before 2026-11-14 does not satisfy the hypothesis.* It took $X=\{x_0\}\sqcup\{a\}$ with $A=X$, $Y=\{y_0\}\sqcup[0,1]$ with $B=\{y_0,0,1\}$, $\varphi(x_0)=y_0$ and $\varphi(a)=0$. At the basepoint $x_0$ its four surrounding maps are bijections and $\pi_0(A,x_0)\to\pi_0(B,y_0)$ is not onto, but the hypothesis is that the four surrounding maps are bijections for all choices of basepoint, and at the basepoint $a\in A$ the vertical map at $\pi_1(X,A,a)$ fails to be a bijection: $X$ is discrete and the only path from $A$ to $a$ is the constant one, so $\pi_1(X,A,a)$ is one point, while $\pi_1(Y,B,\varphi(a))=\pi_1(Y,B,0)$ has two elements, the classes of the constant path at $0$ and of a path from $1$ to $0$, both of which start in $B$. That example is withdrawn; the two examples above replace it, and they do satisfy the hypothesis at every basepoint.
+
+*What does hold in degree zero.* The last three terms are pointed sets, where the group chase gives nothing. Three statements are available.
 
 *Claim 1.* If the vertical maps at $\pi_0(A,x_0)$ and at $\pi_0(X,x_0)$ are bijections, then so is the vertical map at $\pi_0(X,A,x_0)$. Indeed that map is induced by a bijection $\pi_0(X,x_0)\to\pi_0(Y,y_0)$ which carries the subset $i_*\pi_0(A,x_0)$ bijectively onto $i_*\pi_0(B,y_0)$, and a bijection of sets carrying one subset onto another induces a bijection of the quotients.
 
-*Claim 2.* Let the vertical map at $\pi_1(X,A,x_0)$ be onto and the vertical map at $\pi_0(X,x_0)$ be a bijection. Then every component of $B$ that lies in the component of $y_0$ in $Y$ is the image of a component of $A$: such a component is $\partial'\xi$ for some $\xi\in\pi_1(Y,B,y_0)$, because exactness at $\pi_0(B,y_0)$ says the image of $\partial'$ is the fiber of $\pi_0(B,y_0)\to\pi_0(Y,y_0)$ over the distinguished element; lift $\xi$ to $\eta$, and then $\varphi(\partial\eta)=\partial'(\varphi_*\eta)=\partial'\xi$ by naturality of $\partial$.
+*Claim 2.* If the vertical map at $\pi_1(X,A,x_0)$ is onto, then every component of $B$ that lies in the component of $y_0$ in $Y$ is the image of a component of $A$: such a component is $\partial'\xi$ for some $\xi\in\pi_1(Y,B,y_0)$, because exactness at $\pi_0(B,y_0)$ says the image of $\partial'$ is the fiber of $\pi_0(B,y_0)\to\pi_0(Y,y_0)$ over the distinguished element; lift $\xi$ to $\eta$, and then $\varphi(\partial\eta)=\partial'(\varphi_*\eta)=\partial'\xi$ by naturality of $\partial$.
 
-*The printed statement fails at $\pi_0(A,x_0)$ without a further hypothesis.* Take $X$ the disjoint union of a point $x_0$ and a point $a$, and $A=\{x_0,a\}$; take $Y$ the disjoint union of a point $y_0$ and the interval $[0,1]$, and $B=\{y_0,0,1\}$; let $\varphi$ send $x_0\mapsto y_0$ and $a\mapsto 0$. Then $\pi_0(X,x_0)\to\pi_0(Y,y_0)$ is a bijection of two-element sets, $\pi_0(X,A,x_0)$ and $\pi_0(Y,B,y_0)$ are both one-point sets (in each case $i_*\pi_0$ is everything), $\pi_1(X,A,x_0)$ and $\pi_1(Y,B,y_0)$ are both one-point sets (no path in $Y$ joins $[0,1]$ to $y_0$), and $\pi_1(X)\to\pi_1(Y)$ is a bijection of one-point sets. So all four surrounding maps are bijections, yet $\pi_0(A,x_0)\to\pi_0(B,y_0)$ is the inclusion of a two-element set into a three-element set and is not onto: the component $\{1\}$ of $B$ is not hit. The conclusion of the exercise therefore holds at every term in degrees $\ge1$ and at the last term $\pi_0(X,A,x_0)$, and at $\pi_0(A,x_0)$ it holds for the components of $B$ that lie in the component of $y_0$ in $Y$ (Claim 2), which is the sense in which the five-lemma is available in the low degrees.
+*Claim 3.* If the vertical maps at $\pi_1(X,A,x)$ are onto for every $x\in A$, and those at $\pi_0(X,x_0)$ and $\pi_0(X,A,x_0)$ are bijections, then the vertical map at $\pi_0(A,x_0)$ is onto. For let $\beta$ be a component of $B$ and $C$ the component of $Y$ containing it. Since the map at $\pi_0(X,x_0)$ is onto, $C=\varphi(D)$ for a component $D$ of $X$. If $D$ meets $A$, take $a\in D\cap A$; the point $\varphi(a)$ lies in $C\cap B$, hence in a component $\beta'$ of $B$ inside $C$, and Claim 2 applied at the basepoint $a$ gives that $\beta$ is the image of a component of $A$, which is what was to be shown if $\beta'\ne\beta$, while $\beta'=\beta$ is the same conclusion directly. If $D$ does not meet $A$, then $D$ is not in $i_*\pi_0(A,x_0)$, so the class of $D$ in $\pi_0(X,A,x_0)$ is not the distinguished element, and injectivity of the map at $\pi_0(X,A,x_0)$ makes the class of $C=\varphi(D)$ in $\pi_0(Y,B,y_0)$ non-distinguished, that is, $C$ meets no point of $B$ — but $\beta\subset B\cap C$. So the second case cannot occur.
+
+Thus in degree zero the printed statement fails at $\pi_0(A,x_0)$ by injectivity alone, and not, as the withdrawn example suggested, by surjectivity.
+
+*Not settled on this card.* The windows centered at $\pi_1(A,x_0)$ and at $\pi_1(X,x_0)$ have the pointed set $\pi_1(X,A,x_0)$ among their surrounding terms, so the group chase does not reach them, and this card neither proves them nor gives an example against them. Injectivity of the vertical map at $\pi_1(X,x_0)$ does follow from injectivity at $\pi_1(X,A,x_0)$, since a loop at $x_0$ is a path from $A$ to $x_0$ and the classes agree; surjectivity does not follow by that argument, because a path from $A$ to $x_0$ whose image is a given loop need not itself be a loop.
 
 ### (b) The triple sequence
 
@@ -126,4 +215,12 @@ $$
 and it cannot in general be continued by $\pi_0(X,B,x_0)$. Take $X$ the disjoint union of a point $b_0$ and an interval, $x_0=b_0$, and $B=\{b_0,b_1\}$ with $b_1$ a point of the interval; let $A=\{b_0,b_1,a_1\}$ with $a_1\neq b_1$ a further point of the interval, so that $b_1$ and $a_1$ lie in different components of the subspace $A$ while lying in the same component of $X$. Then the class of $a_1$ in $\pi_0(A,B,x_0)=\pi_0(A,x_0)/i_*\pi_0(B,x_0)$ is not the distinguished element, because its component of $A$ does not meet $B$; but its image in $\pi_0(X,B,x_0)$ is distinguished, because every component of $X$ that meets $B$ is collapsed and $a_1$ lies in the component of $b_1$. On the other hand the class of $a_1$ is not in the image of $\partial:\pi_1(X,A,x_0)\to\pi_0(A,B,x_0)$, since a path in $X$ starting in $A$ and ending at $x_0=b_0$ stays in the component $\{b_0\}$ of $X$, so its starting point lies in the component $\{b_0\}$ of $A$, which is collapsed. Hence appending $\pi_0(X,B,x_0)$ would destroy exactness at $\pi_0(A,B,x_0)$.
 
 With the sequence ending at $\pi_0(A,B,x_0)$, the five-lemma holds for the ladder of triple sequences up to that terminal term, with the same qualifications as in (a): the windows of group terms are covered by the group case, and the terminal term is a quotient of pointed sets, where the analogue of Claim 2 applies with $B$ in the role of the subgroup and $A$ in the role of the pair.
+:::
+
+::: {.remark title="Sources"}
+
+The exercise is Exercise 9 of §4.1, printed p. 358, stated with the errata's $i_*$ in place of $i^*$. What this card proves is the group chase at every term of degree $\ge2$, Claim 1 and Claim 3 in degree zero, and the two counterexamples; what it records as failing is the printed claim at the terms $\pi_1(X,A,x_0)$ and $\pi_0(A,x_0)$; and what it does not settle is named in the last paragraph of (a). The counterexamples are the card's own; no published treatment of this exercise was located, in the retained sets or in the sources searched for it.
+
+A related published statement, cited for exactly what it proves: **R. Brown, *Fibrations of groupoids*, Journal of Algebra 15 (1970), 103--132**, Theorem 4.9 on printed p. 121 and Corollary 4.11 on printed pp. 122--123 (reading copy `tmp/sources/brown-1970-fibrations-of-groupoids.md`). For a fibration of groupoids $p:G\to H$ with fibre $F$ over an object $v$, Brown's 4.9(a) concludes that $f:\pi_0F\to\pi_0F'$ is surjective if the maps of vertex groups $h:H(v)\to H'(v')$ and of components $g:\pi_0G\to\pi_0G'$ are surjective and $h:\pi_0H\to\pi_0H'$ is injective, and 4.9(b) concludes that $f$ is injective on $\ker(i:\pi_0F\to\pi_0G)$ if $h:H(v)\to H'(v')$ is injective and $g:G(x)\to G'(x')$ is surjective; Corollary 4.11 concludes that $h:H\to H'$ and $g:G\to G'$ being equivalences of groupoids forces $f:F\to F'$ to be an equivalence, in particular $f:\pi_0F\to\pi_0F'$ to be a bijection, the proof applying 4.9 and then the ordinary five-lemma for groups to Brown's diagram 4.8. That is a five-lemma at the $\pi_0$ term, and its hypotheses are stronger than the exercise's: an equivalence of groupoids is a bijection on hom-sets at every object and on components, which is the exercise's "for all choices of $x_0$" in a setting where a fibration supplies the exact sequence. It is a statement about fibrations of groupoids, and the map of pairs $(X,A)\to(Y,B)$ is not one, so nothing above rests on it, and it neither asserts nor denies the failures this card records.
+
 :::
