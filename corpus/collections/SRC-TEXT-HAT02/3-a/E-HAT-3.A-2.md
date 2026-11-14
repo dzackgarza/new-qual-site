@@ -82,6 +82,18 @@ audit:
     withdrawn with this rewrite; it reached the same two conclusions. Checked against Hatcher (2002),
     §3.A Exercise 2, printed p. 267, whose Tor is $\operatorname{Tor}_1^{\ZZ}$ by Lemma 3A.2, p. 263.
     Not claimed: that Weibel states Hatcher's exercise, or that a retained solution set contains it.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    The display of Calculation 3.1.1 used the letter $n$ for the degree and for the modulus of the
+    cyclic group at once, in $\operatorname{Tor}_n^{\ZZ}(\ZZ/n,B)=0\ (n\ge2)$, where the intended
+    meaning is that all higher Tor vanish. The degree index is now $i$, so the three values read
+    $\operatorname{Tor}_0^{\ZZ}(\ZZ/n,B)=B/nB$, $\operatorname{Tor}_1^{\ZZ}(\ZZ/n,B)=B[n]$ and
+    $\operatorname{Tor}_i^{\ZZ}(\ZZ/n,B)=0$ for $i\ge2$. Nothing else changes. Checked against
+    Weibel, *An Introduction to Homological Algebra*, Calculation 3.1.1 on printed p. 66, and against
+    Hatcher (2002), §3.A Exercise 2 on printed p. 267 with the remark on printed p. 263 that
+    $\operatorname{Tor}_n=0$ for $n>1$.
 ---
 
 ::: {.problem}
@@ -96,7 +108,7 @@ Write $\operatorname{Tor}=\operatorname{Tor}_1^{\ZZ}$; Hatcher notes on printed 
 $$
 \operatorname{Tor}_0^{\ZZ}(\ZZ/n,B)=B/nB,\qquad
 \operatorname{Tor}_1^{\ZZ}(\ZZ/n,B)=B[n]:=\{b\in B: nb=0\},\qquad
-\operatorname{Tor}_n^{\ZZ}(\ZZ/n,B)=0\ \ (n\ge2).
+\operatorname{Tor}_i^{\ZZ}(\ZZ/n,B)=0\ \ (i\ge2).
 $$
 
 *The torsion subgroup in the second variable.* (Proposition 3.1.3, printed p. 67.) $\QQ/\ZZ$ is the direct limit of its finite subgroups, each isomorphic to some $\ZZ/n$, and $\operatorname{Tor}$ commutes with direct limits, so
