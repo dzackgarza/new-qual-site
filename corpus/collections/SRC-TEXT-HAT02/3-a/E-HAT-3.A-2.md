@@ -61,6 +61,27 @@ audit:
   date: 2026-11-13
   note: >-
     Re-read for the published-solution obligation. The published complete proof is Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §3.1: Proposition 3.1.3 and the Remark after Proposition 3.1.4, printed p. 67, identify $\operatorname{Tor}_1^\ZZ(\QQ/\ZZ,B)$ with the torsion subgroup, balancing gives $\operatorname{Tor}(A,\QQ/\ZZ)=T(A)$, Corollary 3.1.5 on the same page is the deduction, and Calculation 3.1.1 on p. 66 computes $\operatorname{Tor}(\ZZ/n,B)\cong B[n]$; the direct-limit corollary Weibel invokes is Corollary 2.6.17, printed p. 58. Checked against the book: Hatcher's Exercise 2 of §3.A on printed p. 267, its `iff', and Proposition 3A.5(3) and (6) on p. 265 which the card's second route uses. Not claimed: that the card's two routes are written the same way; the card states which is Weibel's colimit route and which is its own exact-sequence route, and both conclusions are the same two statements.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    The proof is now the transcription of Weibel, *An Introduction to Homological Algebra* (Cambridge
+    Studies in Advanced Mathematics 38, 1994), §3.1, printed pp. 66--67: Calculation 3.1.1 on p. 66
+    for $\operatorname{Tor}_*^{\ZZ}(\ZZ/n,B)$ from the resolution $0\to\ZZ\to\ZZ\to\ZZ/n\to0$,
+    Proposition 3.1.3 on p. 67 with its colimit computation, the Remark (Balancing Tor) on p. 67,
+    Proposition 3.1.4 and Corollary 3.1.5 on p. 67. Two points checked against the book and stated on
+    the card: the union in Weibel's proof of Proposition 3.1.3 runs over all $n$, not only over the
+    primes, since over the primes alone it would be the elements of prime order; and the colimit
+    corollary he invokes is printed as Corollary 2.6.17, p. 58, in the *second* variable, while the
+    use is the first-variable form, which is Corollary 2.6.16 on the same page applied to
+    $-\otimes_\ZZ B$ (whose derived functors are $\operatorname{Tor}_*^{\ZZ}(-,B)$ by Theorem 2.7.2,
+    p. 58); Weibel cites 2.6.17 for the same first-variable statement in the proof of Proposition
+    3.1.2, p. 66. Corollary 3.1.5 is printed with no proof of its own, so the two implications the
+    exercise asks for are written out on the card and marked as that derivation. The card's former
+    proof by the six-term sequence of Hatcher's Proposition 3A.5 and the localisation $S^{-1}A$ is
+    withdrawn with this rewrite; it reached the same two conclusions. Checked against Hatcher (2002),
+    §3.A Exercise 2, printed p. 267, whose Tor is $\operatorname{Tor}_1^{\ZZ}$ by Lemma 3A.2, p. 263.
+    Not claimed: that Weibel states Hatcher's exercise, or that a retained solution set contains it.
 ---
 
 ::: {.problem}
@@ -69,27 +90,38 @@ Deduce that $A$ is torsionfree iff $\operatorname{Tor}(A, B) = 0$ for all $B$.
 :::
 
 ::: {.solution}
-This is the statement of Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §3.1, Proposition 3.1.3 and the Remark following Proposition 3.1.4, printed p. 67, where $\operatorname{Tor}_1^\ZZ(\QQ/\ZZ,B)$ is identified with the torsion subgroup of $B$ and balancing of $\operatorname{Tor}$ gives $\operatorname{Tor}_1^\ZZ(A,\QQ/\ZZ)$ as the torsion subgroup of $A$; Corollary 3.1.5 on the same page is the deduction. Weibel's proof is the colimit one: $\QQ/\ZZ$ is the direct limit of its finite subgroups $\ZZ/n$, the groups $\operatorname{Tor}(\ZZ/n,B)\cong B[n]$ are computed from the resolution $0\to\ZZ\xrightarrow{n}\ZZ\to\ZZ/n\to0$ (Calculation 3.1.1, p. 66), and $\operatorname{Tor}$ carries that direct limit to $\varinjlim_n B[n]$, which is the torsion subgroup of $B$ (Corollary 2.6.17, p. 58). The argument below is the exact-sequence route to the same two statements, using the book's own Proposition 3A.5 in place of the colimit formula.
+Write $\operatorname{Tor}=\operatorname{Tor}_1^{\ZZ}$; Hatcher notes on printed p. 263, immediately after Lemma 3A.2, that $\operatorname{Tor}_n^{\ZZ}(H,G)=0$ for $n>1$ because a free resolution $0\to F_1\to F_0\to H\to0$ always exists, and that $\operatorname{Tor}_1$ is written $\operatorname{Tor}$. So the two groups below are $\operatorname{Tor}_1^{\ZZ}(A,\QQ/\ZZ)$ and $\operatorname{Tor}_1^{\ZZ}(A,B)$. The proof is Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §3.1, printed pp. 66--67, in the book's own steps.
 
-Apply the six-term exact sequence of Proposition 3A.5(6) (p. 265) to the short exact sequence
+*Cyclic groups.* (Calculation 3.1.1, printed p. 66.) The free resolution $0\to\ZZ\xrightarrow{n}\ZZ\to\ZZ/n\to0$ computes $\operatorname{Tor}_*^{\ZZ}(\ZZ/n,B)$ as the homology of the complex $0\to B\xrightarrow{n}B\to0$, so
 $$
-0\longrightarrow\ZZ\longrightarrow\QQ
-\longrightarrow\QQ/\ZZ\longrightarrow0 .
-$$
-Both end terms of the resulting sequence's left end vanish, since $\operatorname{Tor}(A,\ZZ)=0$ because $\ZZ$ is free and $\operatorname{Tor}(A,\QQ)=0$ because $\QQ$ is torsionfree, by Proposition 3A.5(3) (p. 265). The sequence therefore begins
-$$
-0\longrightarrow \operatorname{Tor}(A,\QQ/\ZZ)
-\longrightarrow A\otimes\ZZ
-\longrightarrow A\otimes\QQ .
-$$
-Under the identification $A\otimes\ZZ\cong A$ the second map is $a\mapsto a\otimes1$. Identify $A\otimes\QQ$ with the localisation $S^{-1}A$ of $A$ at the multiplicative set $S=\ZZ\setminus\{0\}$, by $a\otimes(r/s)\mapsto ra/s$, with inverse $a/s\mapsto a\otimes(1/s)$; under this identification $a\otimes1$ becomes $a/1$. In a localisation $a/1=0$ if and only if $sa=0$ for some $s\in S$, by the defining equivalence of fractions. Hence
-$$
-\ker\bigl(A\to A\otimes\QQ\bigr)=\{a\in A: sa=0 \text{ for some } s\neq0\}=T(A),
-$$
-the torsion subgroup, and exactness gives
-$$
-\boxed{\operatorname{Tor}(A,\QQ/\ZZ)\cong T(A)}.
+\operatorname{Tor}_0^{\ZZ}(\ZZ/n,B)=B/nB,\qquad
+\operatorname{Tor}_1^{\ZZ}(\ZZ/n,B)=B[n]:=\{b\in B: nb=0\},\qquad
+\operatorname{Tor}_n^{\ZZ}(\ZZ/n,B)=0\ \ (n\ge2).
 $$
 
-For the deduction, if $\operatorname{Tor}(A,B)=0$ for every abelian group $B$ then in particular $\operatorname{Tor}(A,\QQ/\ZZ)=0$, so $T(A)=0$ and $A$ is torsionfree. Conversely, if $A$ is torsionfree then $\operatorname{Tor}(A,B)=0$ for every $B$ by Proposition 3A.5(3) (p. 265); Exercise 5 re-derives this same vanishing from Exercise 4 and the free case. So $A$ is torsionfree if and only if $\operatorname{Tor}(A,B)=0$ for all $B$.
+*The torsion subgroup in the second variable.* (Proposition 3.1.3, printed p. 67.) $\QQ/\ZZ$ is the direct limit of its finite subgroups, each isomorphic to some $\ZZ/n$, and $\operatorname{Tor}$ commutes with direct limits, so
+$$
+\operatorname{Tor}_1^{\ZZ}(\QQ/\ZZ,B)\cong\varinjlim_n\operatorname{Tor}_1^{\ZZ}(\ZZ/n,B)\cong\varinjlim_n B[n]=\bigcup_n B[n],
+$$
+which is the torsion subgroup $T(B)$ of $B$. The union is over all $n\ge1$ and not over the primes only: $B[n]$ is the set of elements whose order divides $n$, so every element of finite order lies in some $B[n]$, whereas over the primes alone the union would be only the elements of prime order. The index set is the finite cyclic subgroups of $\QQ/\ZZ$ ordered by divisibility, which is directed.
+
+The colimit corollary Weibel invokes is printed as Corollary 2.6.17, p. 58, in the second variable, $\operatorname{Tor}_*^R(A,\varinjlim B_\alpha)\cong\varinjlim\operatorname{Tor}_*^R(A,B_\alpha)$. The form used here has the colimit in the first variable, which is Corollary 2.6.16 on the same page applied to the left adjoint $-\otimes_\ZZ B$ over $\ZZ$-mod, an abelian category with enough projectives in which filtered colimits are exact (Theorem 2.6.15, p. 57), and whose left derived functors are $\operatorname{Tor}_*^{\ZZ}(-,B)$ (Theorem 2.7.2, the balancing of the two derived functors of the tensor product, p. 58). Weibel cites 2.6.17 for that same first-variable statement in the proof of Proposition 3.1.2, p. 66.
+
+*The first sentence of the exercise.* (Remark (Balancing Tor), printed p. 67.) For a commutative ring $R$, $\operatorname{Tor}_1^R(A,B)\cong\operatorname{Tor}_1^R(B,A)$, because for fixed $B$ both are universal $\delta$-functors over $F(A)=A\otimes_RB=B\otimes_RA$. For $R=\ZZ$ this gives
+$$
+\operatorname{Tor}_1^{\ZZ}(A,\QQ/\ZZ)\cong\operatorname{Tor}_1^{\ZZ}(\QQ/\ZZ,A)\cong T(A),
+$$
+the second isomorphism being the Proposition above with $B$ replaced by $A$. The book draws the same conclusion in one sentence in the Remark. This is the exercise's first sentence: $\operatorname{Tor}(A,\QQ/\ZZ)\cong T(A)$. Balancing is the step that matters for it, since the Proposition computes $\operatorname{Tor}$ with $\QQ/\ZZ$ in the first slot and the exercise asks for it in the second.
+
+*The second sentence of the exercise.* (Proposition 3.1.4 and Corollary 3.1.5, printed p. 67.) If $A$ is torsionfree then $A$ is the direct limit of its finitely generated subgroups, each isomorphic to some $\ZZ^m$, so by the same colimit formula
+$$
+\operatorname{Tor}_n^{\ZZ}(A,B)\cong\varinjlim_m\operatorname{Tor}_n^{\ZZ}(\ZZ^m,B)=0\qquad(n\neq0,\ \text{all } B),
+$$
+because $\ZZ^m$ is free and hence projective. The book then prints, for every abelian group $A$,
+$$
+\operatorname{Tor}_1^{\ZZ}(A,-)=0\iff A\text{ is torsionfree}\iff\operatorname{Tor}_1^{\ZZ}(-,A)=0
+$$
+as Corollary 3.1.5, without a separate proof, and obtains it from Proposition 3.1.4 and the Remark. The two implications the exercise asks for are these: if $A$ is torsionfree then $\operatorname{Tor}(A,B)=0$ for every $B$, which is Proposition 3.1.4 in degree $1$; and if $\operatorname{Tor}(A,B)=0$ for every $B$ then taking $B=\QQ/\ZZ$ gives $T(A)\cong\operatorname{Tor}(A,\QQ/\ZZ)=0$, so $A$ is torsionfree.
+
+Checked against Hatcher, *Algebraic Topology* (2002), §3.A Exercise 2, printed p. 267: "Show that $\operatorname{Tor}(A,\QQ/\ZZ)$ is isomorphic to the torsion subgroup of $A$. Deduce that $A$ is torsionfree iff $\operatorname{Tor}(A,B)=0$ for all $B$." Hatcher's $\operatorname{Tor}$ is $\operatorname{Tor}_1^{\ZZ}$ (printed p. 263, where $\operatorname{Tor}_n=0$ for $n>1$ is noted), and the symmetry that the Remark supplies is his Proposition 3A.5(1), printed p. 265.
 :::
