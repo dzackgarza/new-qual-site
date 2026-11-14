@@ -49,6 +49,18 @@ audit:
     pages named in its own text and the stereographic formula and its injectivity supplied. The
     earlier proof was the same argument in one paragraph and was removed because the card is to
     carry the published one.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    The heading of the last step, "$g(x)=g(-x)$ for some $x\in S^2$, so $g$ is surjective", garbled
+    the logic: no single coincidence of values gives surjectivity, and the clause $p\notin g(S^2)$
+    under which that coincidence was derived is the negation of the hypothesis whose consequence is
+    wanted. The step now states the two things it proves, first that $g(x)=g(-x)$ for some $x$ for
+    a $g$ that misses a point, then that the contrapositive is the assertion of the exercise, and
+    its proof says which earlier step supplied the missing point. No estimate or homotopy on the
+    card changed. Checked against the book: the exercise and its hint on printed p. 359 and
+    Theorem 57.3 on printed p. 358.
 ---
 
 ::: {.exercise}
@@ -118,14 +130,20 @@ continuous map of $S^2$ into $\RR^2$ and gives such a point $x$.
 :::
 
 ::: {.pf-step}
-$g(x)=g(-x)$ for some $x\in S^2$, so $g$ is surjective.
+$g(x)=g(-x)$ for some $x\in S^2$; consequently a continuous $g$ with
+$g(x)\ne g(-x)$ for every $x$ is surjective.
 
 ::: pf-proof
 By step [](#borsuk-ulam){.pf-ref} there is $x$ with
 $\varphi(g(x))=\varphi(g(-x))$, and $\varphi$ is injective by step
-[](#stereographic){.pf-ref}, so $g(x)=g(-x)$. Thus a continuous
-$g:S^2\to S^2$ that satisfies $g(x)\ne g(-x)$ for every $x$ cannot fail to be
-surjective, which is the assertion of the exercise.
+[](#stereographic){.pf-ref}, so $g(x)=g(-x)$.
+
+That first clause is a statement about a $g$ that is *not* surjective, since
+step [](#not-surjective){.pf-ref} is what supplied the point $p$ off the image
+that makes $\varphi\circ g$ defined. So what the three steps prove is the
+implication "if $g$ is not surjective then $g(x)=g(-x)$ for some $x$", whose
+contrapositive is the assertion of the exercise: a continuous $g:S^2\to S^2$
+with $g(x)\ne g(-x)$ for every $x$ is surjective.
 :::
 
 :::
