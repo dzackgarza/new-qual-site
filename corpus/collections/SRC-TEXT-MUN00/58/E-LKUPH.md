@@ -52,6 +52,17 @@ audit:
     in its own text. The earlier proof wrote Pearse's two-stage formula directly and checked its
     three defining properties; it was a correct proof and was replaced because the card is to
     carry the published arguments and the reason the composition works.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Step 3 corrected: it read "$G(x,t)=x$ whenever $r(x)\in B$", which is false — $G$ is
+    $e\bigl(K(r(x),t)\bigr)$, and since $K$ fixes $B$ pointwise the value is $r(x)$, not $x$,
+    whenever $r(x)\in B$. The sentence now states $G(x,t)=r(x)$ there and singles out the case the
+    conclusion uses, $x\in B$, where $r(x)=x$ and so $G(x,t)=x$. The conclusion is unchanged and
+    did not depend on the false general clause. Checked against the book: the exercise on printed
+    p. 366 and the definition of deformation retract on printed p. 360; the two-stage formula of
+    step 4 was re-read and is unaffected.
 ---
 
 ::: {.exercise}
@@ -113,9 +124,10 @@ $$
 G:X\times I\to X,\qquad G(x,t)=e\bigl(K(r(x),t)\bigr),
 $$
 is continuous, and it is a homotopy from $e\circ s\circ r=e\circ\rho$ to
-$e\circ\operatorname{id}_A\circ r=e\circ r$; moreover $G(x,t)=x$ whenever
-$r(x)\in B$, which is the case for every $x\in B$ because $\restrictionof{r}{A}$ is the identity
-and $B\subseteq A$.
+$e\circ\operatorname{id}_A\circ r=e\circ r$; moreover $G(x,t)=r(x)$ whenever
+$r(x)\in B$, because $K$ fixes the points of $B$. In particular $G(x,t)=x$ for
+every $x\in B$: there $r(x)=x$ because $\restrictionof{r}{A}$ is the identity and
+$B\subseteq A$, so $r(x)\in B$ and $G(x,t)=r(x)=x$.
 
 Second, $H$ is a homotopy from $\operatorname{id}_X$ to $r$ and it fixes $A$,
 hence fixes $B$.
