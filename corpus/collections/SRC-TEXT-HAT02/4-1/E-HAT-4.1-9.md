@@ -166,6 +166,38 @@ audit:
     p. 358, the errata's $i_*$ correction, and the definition of $\pi_n(X,A,x_0)$ on printed p. 343.
     Not claimed: that the printed (a) holds at $\pi_1(A,x_0)$ or at $\pi_1(X,x_0)$, or that a
     published treatment of the exercise exists.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Three statements were wrong and are repaired. (1) The remark cited Brown's Corollary 4.11 on
+    "printed pp. 122--123"; it is printed on p. 123 only. In the text version
+    `tmp/sources/brown-1970-fibrations-of-groupoids.md` the page marker `<!-- PDF pages 21-30 -->`
+    stands immediately before it, so 4.11 opens the run of pages beginning at PDF page 21, printed
+    p. 123 of Journal of Algebra 15 (1970) 103--132; Theorem 4.9, which the card also cites, precedes
+    that marker, on printed p. 121. (2) The last paragraph of part (b) invoked "the analogue of
+    Claim 2", a claim the card no longer has — Claims 2 and 3 were dropped in the 2026-11-14 rewrite
+    that kept Claim 1 only — and it asserted rather than proved a five-lemma for the ladder of triple
+    sequences. It is replaced by what the card establishes and by a statement of what it does not:
+    the windows of five group terms (degrees $\ge2$) are the chase of part (a), applied to the triple
+    ladder, which is exact by Theorem 4.3 (p. 344) and commutative by naturality (p. 345); no window
+    of five group terms is centred at $\pi_1(A,B,x_0)$, $\pi_1(X,B,x_0)$, $\pi_1(X,A,x_0)$ or
+    $\pi_0(A,B,x_0)$, the first three being pointed sets and the last the terminal term, at which
+    there is no map out and hence no exactness obligation; and a set-valued five-lemma for the triple
+    is not proved on this card, its two set-valued statements being the pair sequence's. What is
+    proved about the terminal term is the quotient statement Claim 1 rests on, that a bijection
+    $\pi_0(A,x_0)\to\pi_0(C,y_0)$ carrying $i_*\pi_0(B,x_0)$ onto $i'_*\pi_0(D,y_0)$ induces a
+    bijection $\pi_0(A,B,x_0)\to\pi_0(C,D,y_0)$, since the two are $\pi_0(A,x_0)/i_*\pi_0(B,x_0)$ and
+    its image. (3) The paragraph on which windows are group windows now names the pointed sets in
+    them, rather than leaving the count implicit. Checked, against a reader's claim that the windows
+    centred at $\pi_1(A,x_0)$ and at $\pi_1(X,x_0)$ are windows of groups: they are not. The sequence
+    in degrees $1$ and $0$ reads
+    $\pi_2(X,A)\to\pi_1(A)\to\pi_1(X)\to\pi_1(X,A)\to\pi_0(A)\to\pi_0(X)\to\pi_0(X,A)\to0$, so the
+    window centred at $\pi_1(A,x_0)$ contains $\pi_1(X,A,x_0)$ and $\pi_0(A,x_0)$ and the one centred
+    at $\pi_1(X,x_0)$ contains those two and $\pi_0(X,x_0)$; Hatcher defines $\pi_1(X,A,x_0)$ as a set
+    of path classes and states on printed p. 343 that it is in general not a group in any natural way,
+    so the group five-lemma does not apply to either window and the card's statement that they are not
+    treated stands. Not claimed: a five-lemma at those two windows, in either direction.
 ---
 
 ::: {.problem}
@@ -208,7 +240,7 @@ $$
 \cdots\to\pi_{n+1}(X)\to\pi_{n+1}(X,A)\to\pi_n(A)\to\pi_n(X)\to\pi_n(X,A)\to\pi_{n-1}(A)\to\cdots,
 $$
 
-so a window of five consecutive terms all of which are groups is exactly one centered at a term of degree $\ge2$. The windows centered at $\pi_1(A,x_0)$, $\pi_1(X,x_0)$, $\pi_1(X,A,x_0)$ and in degree $0$ contain a pointed set, and the group chase says nothing about them. The windows centered at $\pi_1(X,A,x_0)$ and at $\pi_0(A,x_0)$ are proved below, and the one centered at $\pi_0(X,x_0)$ follows from the second of them by Claim 1; the two at $\pi_1(A,x_0)$ and $\pi_1(X,x_0)$ are not proved, as recorded at the end of this part.
+so a window of five consecutive terms all of which are groups is exactly one centered at a term of degree $\ge2$. The windows centered at $\pi_1(A,x_0)$, $\pi_1(X,x_0)$, $\pi_1(X,A,x_0)$ and in degree $0$ contain a pointed set, and the group chase says nothing about them: the window centered at $\pi_1(A,x_0)$ reads $\pi_2(X,A)\to\pi_1(A)\to\pi_1(X)\to\pi_1(X,A)\to\pi_0(A)$, whose last two terms are $\pi_1(X,A,x_0)$ — Hatcher's set of path classes in $X$ from a varying point of $A$ to $x_0$, which he notes on printed p. 343 is in general not a group in any natural way — and the pointed set $\pi_0(A,x_0)$; the window centered at $\pi_1(X,x_0)$ contains those same two together with $\pi_0(X,x_0)$. The windows centered at $\pi_1(X,A,x_0)$ and at $\pi_0(A,x_0)$ are proved below, and the one centered at $\pi_0(X,x_0)$ follows from the second of them by Claim 1; the two at $\pi_1(A,x_0)$ and $\pi_1(X,x_0)$ are not proved, as recorded at the end of this part.
 
 *The term $\pi_1(X,A,x_0)$, and which set that is.* Hatcher defines $\pi_n(X,A,x_0)$ as the homotopy classes of maps of triples $(I^n,\partial I^n,J^{n-1})\to(X,A,x_0)$ (printed p. 343); for $n=1$ the $0$-end of $I$ is constrained only to lie in $A$, so $\pi_1(X,A,x_0)$ is the set of path classes from a point of $A$ to $x_0$, modulo homotopies through such paths, in which the start point moves inside $A$ and two classes with different start points may agree. With that reading the four surrounding maps of the term are
 $$
@@ -242,13 +274,13 @@ $$
 $$
 and it cannot in general be continued by $\pi_0(X,B,x_0)$. Take $X$ the disjoint union of a point $b_0$ and an interval, $x_0=b_0$, and $B=\{b_0,b_1\}$ with $b_1$ a point of the interval; let $A=\{b_0,b_1,a_1\}$ with $a_1\neq b_1$ a further point of the interval, so that $b_1$ and $a_1$ lie in different components of the subspace $A$ while lying in the same component of $X$. Then the class of $a_1$ in $\pi_0(A,B,x_0)=\pi_0(A,x_0)/i_*\pi_0(B,x_0)$ is not the distinguished element, because its component of $A$ does not meet $B$; but its image in $\pi_0(X,B,x_0)$ is distinguished, because every component of $X$ that meets $B$ is collapsed and $a_1$ lies in the component of $b_1$. On the other hand the class of $a_1$ is not in the image of $\partial:\pi_1(X,A,x_0)\to\pi_0(A,B,x_0)$, since a path in $X$ starting in $A$ and ending at $x_0=b_0$ stays in the component $\{b_0\}$ of $X$, so its starting point lies in the component $\{b_0\}$ of $A$, which is collapsed. Hence appending $\pi_0(X,B,x_0)$ would destroy exactness at $\pi_0(A,B,x_0)$.
 
-With the sequence ending at $\pi_0(A,B,x_0)$, the five-lemma holds for the ladder of triple sequences up to that terminal term, with the same qualifications as in (a): the windows of group terms are covered by the group case, and the terminal term is a quotient of pointed sets, where the analogue of Claim 2 applies with $B$ in the role of the subgroup and $A$ in the role of the pair.
+With the sequence ending at $\pi_0(A,B,x_0)$, the five-lemma holds for the ladder of triple sequences at every window that exists and consists of groups, and that is all the card proves. *The group windows.* The terms of the triple sequence in degree $\ge2$ are groups and every map between them is a homomorphism, so a window of five consecutive terms which all lie in degree $\ge2$ is a window of five group terms, and the chase of part (a) applies to it verbatim; exactness of the triple sequence is Theorem 4.3 (p. 344) and the ladder commutes by naturality (p. 345). *The last four terms.* The terms $\pi_1(A,B,x_0)$, $\pi_1(X,B,x_0)$ and $\pi_1(X,A,x_0)$ are pointed sets, and $\pi_0(A,B,x_0)$ is the last term of the sequence, so no window of five group terms is centred at any of them; the sequence also carries no exactness assertion at $\pi_0(A,B,x_0)$, there being no map out of it. The card does not prove a set-valued five-lemma for the triple sequence: the two set-valued statements it proves in part (a) use the group structure of $\pi_1$ at a point and the injectivity of the vertical at $\pi_0(X,x_0)$, and their certificate is the pair sequence's, not the triple's. What it does prove about the terminal term is the quotient statement on which Claim 1 rests: $\pi_0(A,B,x_0)=\pi_0(A,x_0)/i_*\pi_0(B,x_0)$, and a bijection $\pi_0(A,x_0)\to\pi_0(C,y_0)$ which carries $i_*\pi_0(B,x_0)$ onto $i'_*\pi_0(D,y_0)$ induces a bijection $\pi_0(A,B,x_0)\to\pi_0(C,D,y_0)$; so bijectivity of the vertical maps at $\pi_0(A,x_0)$ and at $\pi_0(B,x_0)$ forces bijectivity at $\pi_0(A,B,x_0)$.
 :::
 
 ::: {.remark title="Sources"}
 
 The exercise is Exercise 9 of §4.1, printed p. 358, stated with the errata's $i_*$ in place of $i^*$. The printed claim (a) is proved on this card at every term of degree $\ge2$, by the group chase, and at both set-valued terms, $\pi_1(X,A,x_0)$ and $\pi_0(A,x_0)$, where it is carried by the declarations `relativePiOne_map_bijective` and `zerothHomotopySubtypeMap_bijective` of [`LeanCategories/Topology/PairHomotopySequence.lean`](https://github.com/dzackgarza/lean-categories/blob/9b8b85840c2b5cef55942b971c65e3b4bfc0d252/LeanCategories/Topology/PairHomotopySequence.lean) on `lean-categories` main, with $\pi_1(X,A,x_0)$ read as Hatcher's quotient in which the start point moves inside $A$ (printed p. 343). The two windows centered at $\pi_1(A,x_0)$ and at $\pi_1(X,x_0)$ are not treated on this card. No published treatment of this exercise was located, in the retained sets or in the sources searched for it.
 
-A related published statement, cited for exactly what it proves: **R. Brown, *Fibrations of groupoids*, Journal of Algebra 15 (1970), 103--132**, Theorem 4.9 on printed p. 121 and Corollary 4.11 on printed pp. 122--123 (reading copy `tmp/sources/brown-1970-fibrations-of-groupoids.md`). For a fibration of groupoids $p:G\to H$ with fibre $F$ over an object $v$, Brown's 4.9(a) concludes that $f:\pi_0F\to\pi_0F'$ is surjective if the maps of vertex groups $h:H(v)\to H'(v')$ and of components $g:\pi_0G\to\pi_0G'$ are surjective and $h:\pi_0H\to\pi_0H'$ is injective, and 4.9(b) concludes that $f$ is injective on $\ker(i:\pi_0F\to\pi_0G)$ if $h:H(v)\to H'(v')$ is injective and $g:G(x)\to G'(x')$ is surjective; Corollary 4.11 concludes that $h:H\to H'$ and $g:G\to G'$ being equivalences of groupoids forces $f:F\to F'$ to be an equivalence, in particular $f:\pi_0F\to\pi_0F'$ to be a bijection, the proof applying 4.9 and then the ordinary five-lemma for groups to Brown's diagram 4.8. That is a five-lemma at the $\pi_0$ term, and its hypotheses are stronger than the exercise's: an equivalence of groupoids is a bijection on hom-sets at every object and on components, which is the exercise's "for all choices of $x_0$" in a setting where a fibration supplies the exact sequence. It is a statement about fibrations of groupoids, and the map of pairs $(X,A)\to(Y,B)$ is not one, so nothing on this card rests on it: it is the related statement, for groupoids, of the five-lemma at the $\pi_0$ term that the two declarations above prove for the pair sequence.
+A related published statement, cited for exactly what it proves: **R. Brown, *Fibrations of groupoids*, Journal of Algebra 15 (1970), 103--132**, Theorem 4.9 on printed p. 121 and Corollary 4.11 on printed p. 123 (reading copy `tmp/sources/brown-1970-fibrations-of-groupoids.md`). For a fibration of groupoids $p:G\to H$ with fibre $F$ over an object $v$, Brown's 4.9(a) concludes that $f:\pi_0F\to\pi_0F'$ is surjective if the maps of vertex groups $h:H(v)\to H'(v')$ and of components $g:\pi_0G\to\pi_0G'$ are surjective and $h:\pi_0H\to\pi_0H'$ is injective, and 4.9(b) concludes that $f$ is injective on $\ker(i:\pi_0F\to\pi_0G)$ if $h:H(v)\to H'(v')$ is injective and $g:G(x)\to G'(x')$ is surjective; Corollary 4.11 concludes that $h:H\to H'$ and $g:G\to G'$ being equivalences of groupoids forces $f:F\to F'$ to be an equivalence, in particular $f:\pi_0F\to\pi_0F'$ to be a bijection, the proof applying 4.9 and then the ordinary five-lemma for groups to Brown's diagram 4.8. That is a five-lemma at the $\pi_0$ term, and its hypotheses are stronger than the exercise's: an equivalence of groupoids is a bijection on hom-sets at every object and on components, which is the exercise's "for all choices of $x_0$" in a setting where a fibration supplies the exact sequence. It is a statement about fibrations of groupoids, and the map of pairs $(X,A)\to(Y,B)$ is not one, so nothing on this card rests on it: it is the related statement, for groupoids, of the five-lemma at the $\pi_0$ term that the two declarations above prove for the pair sequence.
 
 :::
