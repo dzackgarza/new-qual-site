@@ -77,9 +77,11 @@ The exercise is §58 Exercise 4, printed p. 367, and it asks for a description o
 the two maps. The description is transcribed from Pearse, *Topology (2nd ed.) —
 James R. Munkres*, solutions, Cornell 2005, §58 Exercise 4, his pp. 22--23, read
 in `tmp/sources/cornell-erin-munkres.md`: the source maps the figure eight into
-the theta space by collapsing the region it encloses to the vertical bar of the
-theta, and the theta space into the figure eight by collapsing the vertical bar
-to the point where the two loops of the figure eight meet. Neither map is
+the theta space by collapsing the points of the figure eight that lie inside its
+dotted line — the lens between the two crossing points of its loops, not the
+interior of either loop — to the vertical bar of the theta, and the theta space
+into the figure eight by collapsing the vertical bar to the point where the two
+loops of the figure eight meet. Neither map is
 injective, so neither has an inverse, and the source then asserts that the two
 composites are homotopic to the identities and describes those homotopies only in
 words, with its Figure 7: the composite on the figure eight "scrunchens all the
@@ -90,10 +92,10 @@ bar". The source gives no formulas for the two homotopies.
 
 What the source leaves in words is settled here from the book. Both spaces are
 deformation retracts of the doubly punctured plane $\RR^2-p-q$: the figure eight
-by Example 2 and the theta space by Example 3, both printed p. 362. That gives
-maps that are homotopy inverse by three steps of the book's own results, and they
-are the description above: a map into the plane followed by a retraction collapses
-a region to a graph.
+by Example 2 and the theta space by Example 3, both printed p. 362. That gives a
+pair of maps that are homotopy inverse by three steps of the book's own results,
+and the closing step says how they answer the description the source gives in
+pictures.
 
 Write $P=\RR^2-p-q$, let $i_X:X\to P$ and $i_Y:Y\to P$ be the inclusions and
 $r_X:P\to X$, $r_Y:P\to Y$ the retractions, so that $r_X\circ i_X=
