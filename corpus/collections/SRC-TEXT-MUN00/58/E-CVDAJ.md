@@ -53,6 +53,21 @@ audit:
     and with the split between sourced parts (b),(d) and unsourced parts (a),(c) stated. The
     earlier proof covered the same four parts by the same homotopies and was a correct proof of the
     exercise; it was replaced because the card is to carry the published arguments.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Part (a) rewritten: it applied the degree to the inclusion $i:S^n\to B^{n+1}$ and the
+    retraction $r:B^{n+1}\to S^n$, and the three axioms printed on p. 367 assign a degree only to
+    a map $S^n\to S^n$, so neither $\deg i$ nor $\deg r$ is defined and the chain
+    $1=\deg(r\circ i)=\deg r\deg i=0$ does not follow from them. The proof now takes the constant
+    map $c:S^n\to B^{n+1}$ at $\mathbf 0$, uses convexity of the ball for $i\simeq c$, composes with
+    $r$ to get $\operatorname{id}_{S^n}=r\circ i\simeq r\circ c$ with $r\circ c$ the constant map
+    at $r(\mathbf 0)$, and reads off $1=0$ from axioms (i) and (iii) on those two self-maps. Part
+    (c) is unaffected and was re-read: it maps $h$ to the identity through the straight line in
+    $S^n$ when $h$ misses the antipodes, so it uses the axioms only on self-maps. Checked against
+    the book: the exercise and its three axioms on printed p. 367; not claimed: a published source
+    for (a) or (c), which none of the sets searched contains.
 ---
 
 ::: {.exercise}
@@ -123,14 +138,20 @@ by axiom (ii).
 
 ::: pf-proof
 Suppose $r$ is a retraction and $i:S^n\to B^{n+1}$ the inclusion, so that
-$r\circ i=\operatorname{id}_{S^n}$ by the definition of a retraction. The ball is
-convex, so the straight-line homotopy $(x,t)\mapsto(1-t)x+t\mathbf 0$ makes $i$
-nullhomotopic, hence constant-up-to-homotopy; by axioms (i) and (iii) applied to
-that constant map, $\deg i=0$. Then axiom (ii) and axiom (iii) give
-$$
-1=\deg(\operatorname{id}_{S^n})=\deg(r\circ i)=\deg(r)\deg(i)=0,
-$$
-a contradiction.
+$r\circ i=\operatorname{id}_{S^n}$ by the definition of a retraction, and let
+$c:S^n\to B^{n+1}$ be the constant map at $\mathbf 0$. The ball is convex, so
+$(x,t)\mapsto(1-t)x$ is a homotopy from $i$ to $c$; composing it with $r$ gives a
+homotopy from $r\circ i=\operatorname{id}_{S^n}$ to $r\circ c$. The map $r\circ c$
+is the constant map of $S^n$ at the point $r(\mathbf 0)$. Both maps in that
+homotopy are self-maps of $S^n$, so the degree axioms apply to them: axiom (i)
+gives $\deg(\operatorname{id}_{S^n})=\deg(r\circ c)$, while axiom (iii) gives
+$\deg(\operatorname{id}_{S^n})=1$ and $\deg(r\circ c)=0$. Hence $1=0$, and no
+retraction exists.
+
+The axioms assign a degree only to a map $S^n\to S^n$, so the argument never
+mentions $\deg i$ or $\deg r$, which are not defined for the inclusion
+$i:S^n\to B^{n+1}$ or the retraction $r:B^{n+1}\to S^n$; it composes with $r$
+first, which is what brings the homotopy back to self-maps of $S^n$.
 :::
 
 :::
