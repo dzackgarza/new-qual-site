@@ -169,6 +169,20 @@ audit:
     Math 215C Solution Set 4) and which is not (the bracketed question, whose answer here is assembled
     from Eda--Kawamura, Wiegold and Frankland). Not claimed: a published solution of the bracketed
     question; none was located, and the earlier events recording that stand.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    One step of the degree-one comparison was reasoned wrongly and is corrected. It derived the
+    isomorphism $H^1(E,\infty;\ZZ)\cong H^1(E;\ZZ)$ from the vanishing of $H^0(E,\infty;\ZZ)$ alone,
+    which gives injectivity only; surjectivity of $H^1(E,\infty;\ZZ)\to H^1(E;\ZZ)$ comes from
+    $H^1(\{\infty\};\ZZ)=0$, since exactness at $H^1(E;\ZZ)$ identifies the image with the kernel of
+    $H^1(E;\ZZ)\to H^1(\{\infty\};\ZZ)$, which is everything. The card now gives both reasons and
+    states the resulting short exact sequence $0\to H^1(E,\infty;\ZZ)\to H^1(E;\ZZ)\to0$. The
+    conclusion of the step is unchanged. Checked against Hatcher (2002), §3.3 Exercise 21 on printed
+    p. 259 and the long exact sequence of a pair in cohomology, and against Frankland's Theorem 1.3
+    with the sentence after it on printed p. 2, which supplies the value $H^1(E;\ZZ)\cong
+    \bigoplus_{\NN}\ZZ$ used by the step.
 ---
 
 ::: {.problem}
@@ -253,7 +267,7 @@ $$
 H^1(E;\ZZ)\cong\bigoplus_{n\in\NN}\ZZ,
 $$
 
-"a free abelian group on countably many generators": the map $H^1(E;\ZZ)\to\operatorname{Hom}_{\ZZ}(\bigoplus_{\NN}\ZZ,\ZZ)$ induced by $H_1(\iota)$ is injective with image $\bigoplus_{\NN}\ZZ$, and $H^1(E;\ZZ)\cong\operatorname{Hom}_{\ZZ}(H_1(E;\ZZ),\ZZ)$ because $H_0(E;\ZZ)$ is free. The exact sequence of the pair $(E,\infty)$ then gives $H^1(E,\infty;\ZZ)\cong H^1(E;\ZZ)$, because $H^0(E;\ZZ)=\ZZ\to H^0(\{\infty\};\ZZ)=\ZZ$ is an isomorphism, so that $H^0(E,\infty;\ZZ)=0$ and the map $H^1(E,\infty;\ZZ)\to H^1(E;\ZZ)$ has cokernel $0$. Both groups are thus free abelian on countably many generators, and no argument in degree one can decide the bracketed question.
+"a free abelian group on countably many generators": the map $H^1(E;\ZZ)\to\operatorname{Hom}_{\ZZ}(\bigoplus_{\NN}\ZZ,\ZZ)$ induced by $H_1(\iota)$ is injective with image $\bigoplus_{\NN}\ZZ$, and $H^1(E;\ZZ)\cong\operatorname{Hom}_{\ZZ}(H_1(E;\ZZ),\ZZ)$ because $H_0(E;\ZZ)$ is free. The exact sequence of the pair $(E,\infty)$ then gives $H^1(E,\infty;\ZZ)\cong H^1(E;\ZZ)$: the map $H^0(E;\ZZ)=\ZZ\to H^0(\{\infty\};\ZZ)=\ZZ$ is onto, so $H^0(E,\infty;\ZZ)=0$ and the map $H^1(E,\infty;\ZZ)\to H^1(E;\ZZ)$ is injective, while $H^1(\{\infty\};\ZZ)=0$ makes it surjective. The tail of that sequence is thus the short exact sequence $0\to H^1(E,\infty;\ZZ)\to H^1(E;\ZZ)\to0$. Both groups are thus free abelian on countably many generators, and no argument in degree one can decide the bracketed question.
 
 :::
 
