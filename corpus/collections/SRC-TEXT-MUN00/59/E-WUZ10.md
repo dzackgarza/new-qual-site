@@ -40,6 +40,19 @@ audit:
   date: 2026-11-14
   note: >-
     The solution was rewritten as the transcription above, in Lamport form.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Step 2 corrected: it called the part of the first sphere in $U$ the *closed* right hemisphere
+    $\{x\ge-1\}\cap S^2_-$, but $U=X\cap\{x>-1\}$, so the great circle $x=-1$ is not in $U$ and the
+    part is the open hemisphere $\{x>-1\}\cap S^2_-$; the same card says so one step earlier, where
+    $U\cap V$ is described as the open hemisphere together with $\mathbf 0$. With the open
+    hemisphere the sliding is also justified: the segment from a point of the open hemisphere to
+    $\mathbf 0$ stays in $x>-1$ and avoids the centre of $S^2_-$, so its projection to the sphere is
+    a path in the hemisphere, continuous in the pair and collapsing to $\mathbf 0$ at the end. The
+    conclusion is unchanged. Checked against the book: the exercise on printed p. 370, Corollary
+    59.2 and Theorem 59.3 on printed p. 369.
 ---
 
 ::: {.exercise}
@@ -96,11 +109,17 @@ $\mathbf 0$, so their union $U\cap V$ is path connected, and it contains $x_0$.
 $U$ and $V$ are simply connected.
 
 ::: pf-proof
-Consider $U$. The part of the first sphere in $U$ is its closed right hemisphere
-$H_+=\{x\ge-1\}\cap S^2_{-}$, and the meridians of $S^2_{-}$ from $\mathbf 0$ to
-$(-2,0,0)$ sweep it; sliding each point of $H_+$ along its meridian towards
-$\mathbf 0$ gives a deformation retraction of $U$ onto the second sphere
-$S^2_+$, which is fixed throughout. So $\pi_1(U)\cong\pi_1(S^2_+)$, which is
+Consider $U$. The part of the first sphere in $U$ is its open right hemisphere
+$H_+=\{x>-1\}\cap S^2_{-}$, the part cut off by the plane $x=-1$: the great
+circle $x=-1$ of $S^2_{-}$ is not in $U$, because $U$ is defined by $x>-1$. The
+meridians of $S^2_{-}$ from $\mathbf 0$ to $(-2,0,0)$ sweep out $H_+$, and
+sliding each point of $H_+$ along its meridian towards $\mathbf 0$ gives a
+deformation retraction of $U$ onto the second sphere
+$S^2_+$, which is fixed throughout: for $p\in H_+$ the straight segment from $p$
+to $\mathbf 0$ lies in the half space $x>-1$ and misses the centre
+$c_-=(-1,0,0)$ of $S^2_-$, so projecting that segment to $S^2_-$ from $c_-$
+gives a path in $H_+$ from $p$ to $\mathbf 0$, continuous in $(p,t)$ and equal to
+$\mathbf 0$ for $t=1$. So $\pi_1(U)\cong\pi_1(S^2_+)$, which is
 trivial by Theorem 59.3 (printed p. 369) with $n=2$. The same argument with the
 roles exchanged gives that $V$ deformation retracts onto $S^2_{-}$ and
 $\pi_1(V)$ is trivial.
