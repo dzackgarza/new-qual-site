@@ -82,6 +82,28 @@ audit:
     Hatcher's p. 280, including the bracketed hint, which the boxed correspondence of the last step
     reproduces. Not verified: the pagination of the 1999 bound volume, which this machine does not
     hold; the page cited is the revised PDF's own printed page 92, as the card states.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Two errors in the transport between the two conventions are repaired. (1) The graded
+    commutativity isomorphism was defined as $\tau:C\otimes I\to I\otimes C$ with
+    $\tau(x\otimes y)=(-1)^{\deg x\deg y}y\otimes x$ and then applied in step 3 to elements $y\otimes x$
+    of $I\otimes C$, where its inverse would be needed; it is now defined in that direction,
+    $\tau:I\otimes C\to C\otimes I$ with $\tau(y\otimes x)=(-1)^{\deg x\deg y}x\otimes y$, so that
+    $F=h\circ\tau$ is what step 3 forms. The values used there, $\tau(v_j\otimes c)=c\otimes v_j$ and
+    $\tau(e\otimes c)=(-1)^i c\otimes[I]$, are unchanged. (2) The last step set $g=F_1$ and $f=F_0$
+    before applying May's correspondence, which contradicts both the twist step — $F(v_1\otimes c)=f(c)$
+    and $F(v_0\otimes c)=g(c)$ — and May's relation $\partial s+s\partial=f-g$ against the computed
+    $\partial H+H\partial=F_1-F_0$; it now sets $f=F_1$, $g=F_0$, $s=H$, which is what the remark's
+    "May's $f$ is the exercise's $f_1$" already said. The boxed correspondence no longer writes a
+    direction $f_0\simeq f_1$ that the construction does not give, and states the two chain maps
+    instead, as May's lemma does. Checked against May, *A Concise Course in Algebraic Topology*,
+    Chapter 12 §3, the Lemma and its proof on printed p. 92 of the revised PDF: the correspondence
+    $(-1)^i s(x)=h(x\otimes[I])$ with $h(x\otimes[0])=f(x)$, $h(x\otimes[1])=g(x)$, and the closing
+    sentence that the sign disappears if $X\otimes I$ is replaced by $I\otimes X$. Checked the
+    exercise's printed statement and bracketed hint on Hatcher (2002), §3.B Exercise 2, printed
+    p. 280. Not claimed: a published solution of Hatcher's exercise as such.
 ---
 
 ::: {.problem}
@@ -102,10 +124,10 @@ $$
 the Koszul rule, which both sources use. Two copies of the two-term complex occur below. May's copy has generators $[0],[1]$ in degree $0$ and $[I]$ in degree $1$ with $d[I]=[0]-[1]$; the exercise's has generators $v_0,v_1$ in degree $0$ and $e$ in degree $1$ with $\partial e=v_1-v_0$. The assignment $\iota:[0]\mapsto v_1$, $[1]\mapsto v_0$, $[I]\mapsto e$ is an isomorphism of chain complexes, because it carries $d[I]=[0]-[1]$ to $v_1-v_0=\partial e$. May writes the tensor product $C\otimes I$ with his complex on the right, the exercise writes $I\otimes C$ with its complex on the left, and
 
 $$
-\tau:C\otimes I\longrightarrow I\otimes C,\qquad \tau(x\otimes y)=(-1)^{\gradeddegree{x}\gradeddegree{y}}y\otimes x,
+\tau:I\otimes C\longrightarrow C\otimes I,\qquad \tau(y\otimes x)=(-1)^{\gradeddegree{x}\gradeddegree{y}}x\otimes y,
 $$
 
-is an isomorphism of chain complexes, the sign being exactly what the Koszul differentials require.
+is the graded commutativity isomorphism, an isomorphism of chain complexes by the Koszul rule, and it runs from the exercise's convention into May's, which is the direction in which step [](#twist){.pf-ref} composes it with a chain map $C\otimes I\to C'$.
 
 ::: pf
 
@@ -171,7 +193,7 @@ The two passages are mutually inverse, so chain maps $I\otimes C\to C'$ correspo
 
 ::: pf-proof
 
-Starting from $F$, take $(F_0,F_1,H)$ as in step [](#forward){.pf-ref}, then let $g=F_1$, $f=F_0$, $s=H$ and apply the construction of step [](#may-sign){.pf-ref}: the resulting chain map agrees with $F$ on $v_i\otimes c$ and on $e\otimes c$, hence is $F$ by step [](#may-degree){.pf-ref} applied through $\tau$. Starting from $(f,g,s)$ the two steps produce the same values, so the composite is the identity. Step [](#twist){.pf-ref} is the dictionary between the two conventions, and it is a bijection on chain maps.
+Starting from $F$, take $(F_0,F_1,H)$ as in step [](#forward){.pf-ref}, then let $f=F_1$, $g=F_0$ and $s=H$ and apply the construction of step [](#may-sign){.pf-ref}: this is the reading that matches the two conventions, since May's relation $\partial s+s\partial=f-g$ is $\partial H+H\partial=F_1-F_0$ here, and step [](#twist){.pf-ref} gives $F(v_1\otimes c)=f(c)$ and $F(v_0\otimes c)=g(c)$, so the resulting chain map agrees with $F$ on $v_i\otimes c$ and on $e\otimes c$, hence is $F$ by step [](#may-degree){.pf-ref} applied through $\tau$. Starting from $(f,g,s)$ the two steps produce the same values, so the composite is the identity. Step [](#twist){.pf-ref} is the dictionary between the two conventions, and it is a bijection on chain maps.
 
 :::
 
@@ -186,7 +208,7 @@ A chain map $f:I\otimes C\to C'$ is precisely the same as a chain homotopy betwe
 Steps [](#may-sign){.pf-ref}, [](#twist){.pf-ref}, [](#forward){.pf-ref} and [](#inverse){.pf-ref} give the bijection, in the two conventions, with the correspondence $h(c)=f(e\otimes c)$ of the exercise's hint, and
 
 $$
-\boxed{\{\text{chain maps }I\otimes C\to C'\}\ \cong\ \{\text{chain homotopies } f_0\simeq f_1\ \text{between chain maps } C\to C'\}.}
+\boxed{\{\text{chain maps }I\otimes C\to C'\}\ \cong\ \{\text{chain homotopies between the chain maps } f_0,f_1:C\to C'\}.}
 $$
 
 :::
