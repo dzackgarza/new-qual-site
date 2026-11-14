@@ -206,7 +206,7 @@ Bijectivity: $\beta_{\bar\gamma}\beta_\gamma=\beta_{\bar\gamma\gamma}=\mathrm{id
 $$
 (f+g)(s_1,\dots,s_n)=\begin{cases}f(2s_1,s_2,\dots,s_n),&s_1\le\tfrac12,\\ g(2s_1-1,s_2,\dots,s_n),&s_1\ge\tfrac12,\end{cases}
 $$
-and $f+g$ is again a map of triples: a point of $\partial I^n$ has a coordinate $0$ or $1$ other than through $s_n=0$ and lands in $J^{n-1}$, where $f$ and $g$ take the value $a_0$, or has $s_n=0$ and lands on the free face, which $f$ and $g$ carry into $A$. Now let $v:I\to A$ be a path from $a_0$ to $a_1$, and for $i=f,g$ let $V^i_t$ be a homotopy of the source's construction: $V^i_0=i$, $V^i_t(\partial I^n)\subseteq A$ and $V^i_t(J^{n-1})=\{v(t)\}$ for all $t$. Define
+and $f+g$ is again a map of triples: a point of $\partial I^n$ with a coordinate $0$ or $1$ other than $s_n$ has an argument in $J^{n-1}$, where $f$ and $g$ take the value $a_0$, and a point with $s_n=0$ has an argument on the free face, which $f$ and $g$ carry into $A$. Now let $v:I\to A$ be a path from $a_0$ to $a_1$, and for $i=f,g$ let $V^i_t$ be a homotopy of the source's construction: $V^i_0=i$, $V^i_t(\partial I^n)\subseteq A$ and $V^i_t(J^{n-1})=\{v(t)\}$ for all $t$. Define
 $$
 W_t(s_1,\dots,s_n)=\begin{cases}V^f_t(2s_1,s_2,\dots,s_n),&s_1\le\tfrac12,\\[2pt] V^g_t(2s_1-1,s_2,\dots,s_n),&s_1\ge\tfrac12.\end{cases}
 $$
