@@ -27,6 +27,28 @@ audit:
     The printed statement, printed p. 375, writes the restriction of $p$ to $E'$ with the bar of
     restriction, and the stored statement wrote it with a relation bar; the statement now uses the
     restriction macro. No mathematics changed.
+- event: source-checked
+  by: claude
+  date: 2026-11-14
+  note: >-
+    A published proof has now been located: Pearse, *Topology (2nd ed.) — James R. Munkres*,
+    solutions, Cornell 2005, §60 Exercise 3, his p. 27, read in the MinerU extraction
+    tmp/sources/cornell-erin-munkres.md. The solution is that argument transcribed: the preimage of
+    a small neighbourhood of $x_0$ inside $E'$ is one small cross at the origin together with open
+    intervals about the nonzero integer points, and no interval maps onto the cross. The source is
+    correct and needed no repair; the card makes it exact by choosing the neighbourhood inside the
+    disc of radius $1/2$, so that the interval through $(1,0)$ maps into $A$ alone while the
+    neighbourhood meets $B$ away from $x_0$. Checked against the book: the exercise on printed
+    p. 375, the construction and description of $p$ in the proof of Lemma 60.5 on printed pp.
+    373-374, and the definition of a covering map in §53. Not claimed: that the source computes
+    the preimage exactly -- it describes it, and the card's computation of the distance $2|\sin\pi
+    t|$ makes the description checkable.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    The solution was rewritten as the transcription above, in Lamport form, with the source and the
+    book's pages named in its own text.
 ---
 
 ::: {.exercise}
@@ -36,129 +58,62 @@ Show that $\restrictionof{p}{E'}$ is not a covering map.
 :::
 
 ::: {.solution}
+The exercise is §60 Exercise 3, printed p. 375, about the covering map
+$p:E\to X$ constructed in the proof of Lemma 60.5 (printed pp. 373--374): $X$ is
+the union of two circles $A$ and $B$ meeting in the single point $x_0$, and $E$ is
+the union of the $x$-axis, the $y$-axis, and a small circle tangent to each
+nonzero integer point of either axis, with $p$ wrapping the $x$-axis around $A$,
+the $y$-axis around $B$, and each tangent circle homeomorphically onto the other
+circle; the integer points of both axes map to $x_0$.
 
-Write $q = p\restrict_{E'}: E' \to X$, where $E' = (\RR \times \{0\}) \cup (\{0\} \times \RR)$.
+The proof is transcribed from Pearse, *Topology (2nd ed.) — James R. Munkres*,
+solutions, Cornell 2005, §60 Exercise 3, his p. 27, read in
+`tmp/sources/cornell-erin-munkres.md`. The source's point is that the preimage of
+a small neighbourhood of $x_0$ inside $E'$ consists of one small cross at the
+origin and of open intervals around the nonzero integer points, and that no
+interval is homeomorphic to the cross in the base; the card states the same thing
+by choosing the neighbourhood small enough that the interval through $(1,0)$ maps
+into the wrong circle.
 
 ::: pf
 
-::: pf-step
-
-Setting and structure of the map $p$:
-    *Proof:*
-
-::: pf-proof
-
-::: pf-step
-
-The total space $E = (\RR \times \ZZ) \cup (\ZZ \times \RR) \subset \RR^2$ is the infinite grid in the plane.
-
-:::
-
-::: pf-step
-
-The base space $X = A \vee B$ is the wedge of two circles $A$ and $B$ intersecting at a basepoint $x_0$.
-
-:::
-
-::: pf-step
-
-The covering map $p: E \to X$ wraps each horizontal grid line $\RR \times \{n\}$ around circle $A$ and each vertical grid line $\{m\} \times \RR$ around circle $B$, sending all integer lattice points $\ZZ \times \ZZ$ to $x_0$.
-
-:::
-
-::: pf-step
-
-The subspace $E' = (\RR \times \{0\}) \cup (\{0\} \times \RR)$ is the cross formed by the $x$-axis and $y$-axis.
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-Preimage of the basepoint in $E'$:
-    *Proof:*
+::: {.pf-step #component}
+Let $p'=\restrictionof{p}{E'}$ and let $U$ be a neighbourhood of $x_0$ in $X$
+contained in the open disc of radius $\tfrac12$ about $x_0$. Then the component
+of $p'^{-1}(U)$ containing $(1,0)$ is an interval of the $x$-axis, and its image
+under $p'$ is contained in $A$.
 
 ::: pf-proof
-
-::: pf-step
-
-The preimage $q^{-1}(x_0) = E' \cap (\ZZ \times \ZZ) = (\ZZ \times \{0\}) \cup (\{0\} \times \ZZ)$.
-
-:::
-
-::: pf-step
-
-At the origin $(0, 0) \in E'$, both the horizontal and vertical axes meet, forming a 4-branch cross.
-
-:::
-
-::: pf-step
-
-For any non-zero point $(n, 0) \in E'$ ($n \in \ZZ \setminus \{0\}$), $E'$ consists purely of the horizontal segment $(n - \varepsilon, n + \varepsilon) \times \{0\}$, which has 2 branches (homeomorphic to an open interval).
-
+$p'$ wraps the $x$-axis once around $A$ with $(n,0)\mapsto x_0$ for every integer
+$n$, so $p'(t,0)$ is the point of $A$ at distance $2|\sin\pi t|$ from $x_0$.
+Because $U$ is contained in the disc of radius $\tfrac12$, a point $(t,0)$ lies
+in $p'^{-1}(U)$ exactly when $2|\sin\pi t|<\tfrac12$, that is, when $t$ is within
+$\delta$ of an integer for some $\delta\in(0,\tfrac12)$ with $2\sin(\pi\delta)
+<\tfrac12$. The points of the $x$-axis in $p'^{-1}(U)$ are therefore the union of
+the disjoint open intervals $(n-\delta,n+\delta)\times 0$, and the component
+containing $(1,0)$ is $(1-\delta,1+\delta)\times 0$, which lies in the $x$-axis
+and does not meet the $y$-axis. Hence its image under $p'$ lies in $A$, since the
+$x$-axis is carried into $A$.
 :::
 
 :::
 
-:::
-
-::: pf-step
-
-Failure of local homeomorphy and even covering:
-    *Proof:*
+::: {.pf-step}
+$\boxed{p'\ \text{is not a covering map}}$.
 
 ::: pf-proof
-
-::: pf-step
-
-Let $n \in \ZZ \setminus \{0\}$ and consider $e = (n, 0) \in q^{-1}(x_0)$.
-
-:::
-
-::: pf-step
-
-Any sufficiently small open neighborhood $V$ of $e$ in $E'$ is a 1-dimensional open interval $(n - \varepsilon, n + \varepsilon) \times \{0\}$ along the $x$-axis.
-
-:::
-
-::: pf-step
-
-Under $q$, the image $q(V)$ lies entirely within the circle $A$, so $q(V) \cap (B \setminus \{x_0\}) = \varnothing$.
-
-:::
-
-::: pf-step
-
-However, every open neighborhood $U$ of $x_0$ in the wedge space $X = A \vee B$ contains points of both $A \setminus \{x_0\}$ and $B \setminus \{x_0\}$.
-
-:::
-
-::: pf-step
-
-Therefore, $q(V)$ cannot contain any open neighborhood of $x_0$ in $X$, so $q$ is not an open map and fails to be a local homeomorphism at $(n, 0)$.
-
-:::
-
-::: pf-step
-
-Consequently, no open neighborhood of $x_0$ in $X$ is evenly covered by $q$.
-
+Suppose $p'$ were a covering map. Then for the neighbourhood $U$ of $x_0$ in step
+[](#component){.pf-ref} — or any smaller one — every component of $p'^{-1}(U)$
+would map homeomorphically onto $U$. Let $V$ be the component containing
+$(1,0)$; by step [](#component){.pf-ref} its image is contained in $A$, and
+$A\cap X$ does not contain any point of $B-\theset{x_0}$. But $U$ is a
+neighbourhood of $x_0$ in $X=A\cup B$, so it contains the points of $B$ within
+distance $\tfrac12$ of $x_0$, which are points of $B-\theset{x_0}$; these are not
+in $A$, so $p'(V)\ne U$. That contradicts the covering condition at the point
+$x_0\in U$.
 :::
 
 :::
 
 :::
-
-::: pf-step
-
-Conclusion:
-
-:::
-
-:::
-
-    $q = p\restrict_{E'}$ is not a covering map. Q.E.D.
 :::
