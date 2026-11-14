@@ -188,7 +188,7 @@ Then $\varphi$ is continuous, $\varphi(A)=(-1,0]\cup(0,1)=B$, and $\varphi$ rest
 - $\pi_0(X,x_0)$ and $\pi_0(Y,y_0)$ are one-point sets, $X$ and $Y$ being connected, and the vertical map between them is a bijection.
 - $\pi_0(X,A,x_0)$ and $\pi_0(Y,B,y_0)$ are one-point sets: $A$ meets the only component of $X$ and $B$ meets the only component of $Y$, so $i_*\pi_0$ is everything on each side.
 - $\pi_1(X,x_0)$ and $\pi_1(Y,y_0)$ are trivial, $\RR$ being contractible.
-- $\pi_1(X,A,x_0)$ is in bijection with $A$ and $\pi_1(Y,B,y_0)$ with $B$: $\RR$ is convex, so for each $a\in A$ there is exactly one class of paths from $a$ to $x_0$, and likewise on the other side. Under that identification the vertical map is $\varphi|_A$, which is a bijection.
+- $\pi_1(X,A,x_0)$ is in bijection with $A$ and $\pi_1(Y,B,y_0)$ with $B$: $\RR$ is convex, so for each $a\in A$ there is exactly one class of paths from $a$ to $x_0$, and likewise on the other side. Under that identification the vertical map is $\restrictionof{\varphi}{A}$, which is a bijection.
 
 So all four surrounding maps are bijections. And $\pi_0(A,x_0)$ has two elements, the components $(-1,0]$ and $(2,3)$, while $\pi_0(B,y_0)$ is a one-point set because $B$ is an interval; the vertical map is therefore not injective.
 

@@ -141,11 +141,11 @@ By (3.2.2), printed p. 66, a covering $p:E\to B$ has the homotopy lifting proper
 
 ::: {.pf-step #cube-lift}
 
-Every map of triples $h:(I^n,\partial I^n,J^{n-1})\to(B,B_0,b)$, $n\ge1$, lifts to a map $H:I^n\to E$ with $pH=h$ and $H|_{J^{n-1}}$ the constant map at $\epsilon$.
+Every map of triples $h:(I^n,\partial I^n,J^{n-1})\to(B,B_0,b)$, $n\ge1$, lifts to a map $H:I^n\to E$ with $pH=h$ and $\restrictionof{H}{J^{n-1}}$ the constant map at $\epsilon$.
 
 ::: pf-proof
 
-Read $h$ as a homotopy $I^{n-1}\times I\to B$ in the last coordinate, and read $J^{n-1}=I^{n-1}\times\{0\}\cup\partial I^{n-1}\times I$ as a subspace of $I^{n-1}\times I=I^n$. Proposition (3.2.4), printed p. 67, lifts such a homotopy once one is given a map $a:J^{n-1}\to E$ over $h|_{J^{n-1}}$; since $h(J^{n-1})=\{b\}$, the constant map $a=\mathrm{const}_\epsilon$ is such a lift, and step [](#serre){.pf-ref} supplies the homotopy lifting property for the cube $I^{n-1}$ that the proposition assumes. The conclusion is a map $H:I^{n-1}\times I\to E$ with $H|_{J^{n-1}}=a$ and $pH=h$.
+Read $h$ as a homotopy $I^{n-1}\times I\to B$ in the last coordinate, and read $J^{n-1}=I^{n-1}\times\{0\}\cup\partial I^{n-1}\times I$ as a subspace of $I^{n-1}\times I=I^n$. Proposition (3.2.4), printed p. 67, lifts such a homotopy once one is given a map $a:J^{n-1}\to E$ over $\restrictionof{h}{J^{n-1}}$; since $h(J^{n-1})=\{b\}$, the constant map $a=\mathrm{const}_\epsilon$ is such a lift, and step [](#serre){.pf-ref} supplies the homotopy lifting property for the cube $I^{n-1}$ that the proposition assumes. The conclusion is a map $H:I^{n-1}\times I\to E$ with $\restrictionof{H}{J^{n-1}}=a$ and $pH=h$.
 
 :::
 
@@ -175,7 +175,7 @@ $$
 \varphi:\bigl(I^n\times I,\ \partial I^n\times I,\ J^{n-1}\times I\bigr)\longrightarrow(B,B_0,b)
 $$
 
-be a homotopy from $pf_0$ to $pf_1$ through maps of triples. Put $T=I^n\times\partial I\cup J^{n-1}\times I\subset\partial(I^n\times I)$ and define $G:T\to E$ by $G(u,t)=f_t(u)$ for $u\in I^n$ and $t\in\{0,1\}$, and $G(u,t)=\epsilon$ for $u\in J^{n-1}$ and $t\in I$. The two clauses agree on $J^{n-1}\times\partial I$, where $f_t(J^{n-1})=\{\epsilon\}$, so $G$ is a well-defined continuous map with $pG=\varphi|_T$. Transposing the last two coordinates carries $T$ to $J^n=\partial I^n\times I\cup I^n\times\{0\}$, the subspace of $\partial I^{n+1}$ to which (3.2.4), printed p. 67, applies, so that proposition gives $H:I^n\times I\to E$ with $H|_T=G$ and $pH=\varphi$. For each $t$ the map $H(-,t)$ satisfies $H(\partial I^n\times\{t\})\subset p^{-1}(B_0)=E_0$, because $\varphi(\partial I^n\times I)\subset B_0$, and $H(J^{n-1}\times\{t\})=\{\epsilon\}$; and $H(-,0)=f_0$, $H(-,1)=f_1$. So $H$ is a homotopy of maps of triples from $f_0$ to $f_1$.
+be a homotopy from $pf_0$ to $pf_1$ through maps of triples. Put $T=I^n\times\partial I\cup J^{n-1}\times I\subset\partial(I^n\times I)$ and define $G:T\to E$ by $G(u,t)=f_t(u)$ for $u\in I^n$ and $t\in\{0,1\}$, and $G(u,t)=\epsilon$ for $u\in J^{n-1}$ and $t\in I$. The two clauses agree on $J^{n-1}\times\partial I$, where $f_t(J^{n-1})=\{\epsilon\}$, so $G$ is a well-defined continuous map with $pG=\restrictionof{\varphi}{T}$. Transposing the last two coordinates carries $T$ to $J^n=\partial I^n\times I\cup I^n\times\{0\}$, the subspace of $\partial I^{n+1}$ to which (3.2.4), printed p. 67, applies, so that proposition gives $H:I^n\times I\to E$ with $\restrictionof{H}{T}=G$ and $pH=\varphi$. For each $t$ the map $H(-,t)$ satisfies $H(\partial I^n\times\{t\})\subset p^{-1}(B_0)=E_0$, because $\varphi(\partial I^n\times I)\subset B_0$, and $H(J^{n-1}\times\{t\})=\{\epsilon\}$; and $H(-,0)=f_0$, $H(-,1)=f_1$. So $H$ is a homotopy of maps of triples from $f_0$ to $f_1$.
 
 :::
 
