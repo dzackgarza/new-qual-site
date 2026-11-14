@@ -68,6 +68,45 @@ audit:
     sets (Sam, Li, DeMason, Poulsen, Stanford Math 215C Solution Sets 1--5, the UCR Math 205B help
     file, May's *Concise Course* §4, Bredon Chapters III and VII, Maxim's Math 752 notes) and in
     Hatcher's printed text and its errata.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    The relative statement now has a published proof, supplied by the owner for #123 and read in
+    the text version: Tammo tom Dieck, *Algebraic Topology*, EMS Textbooks in Mathematics, European
+    Mathematical Society 2008, translation of the Ranicki text
+    `tmp/sources/tomdieck-algebraic-topology-ranicki.md` (read as text; the PDF was not opened).
+    Theorem (6.3.1), statement on printed p. 129 and proof on printed p. 130, is exactly this
+    statement: for a Serre fibration $p:E\to B$, $B_0\subset B$, $E_0=p^{-1}B_0$, and basepoints
+    $\epsilon\in E_0$, $b=p(\epsilon)\in B_0$, the map $p_*:\pi_n(E,E_0,\epsilon)\to\pi_n(B,B_0,b)$
+    is a bijection for $n\ge1$. The hypothesis that a covering is a Serre fibration is Theorem
+    (3.2.2) on printed p. 66, with the definition of Serre fibration in §5.5 on printed p. 115, and
+    the lifting lemma used twice is Proposition (3.2.4) on printed p. 67. The solution is that proof
+    transcribed, in tom Dieck's cube model, which his Remark (6.1.4) on printed p. 125 identifies
+    with the disk model $(D^n,S^{n-1})$ that the exercise uses. What the source gives is stronger
+    than the exercise asks: $n\ge1$ rather than $n>1$. Checked against the exercise as printed on
+    Hatcher's p. 358, whose hypothesis $\tilde A=p^{-1}(A)$ is the source's $E_0=p^{-1}B_0$ with
+    $B_0=A$; the exercise is not Hatcher's Proposition 4.1 (printed p. 342), which is the absolute
+    statement, and the relative case is not obtained from it by the five-lemma (the earlier note of
+    2026-11-13 records why). Not claimed: that tom Dieck states the exercise; he states and proves
+    the theorem the exercise asks for.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Read the transcribed proof line by line against the source text: the lifting of the cube in
+    (6.3.1)'s surjectivity half is Proposition (3.2.4) with the cube $I^{n-1}$ and the initial
+    condition the constant map at $\epsilon$, legitimate because the representative $h$ carries
+    $J^{n-1}$ to the basepoint; the injectivity half is (6.3.1)'s own subspace
+    $T=I^n\times\partial I\cup J^{n-1}\times I$, whose image under the transposition of the last two
+    coordinates is $J^n$ and to which (3.2.4) therefore applies, and the two ends of the resulting
+    $H$ are the prescribed lifts. Checked that $H(\partial I^n\times\{t\})\subset E_0$ for every $t$
+    follows from $pH=\varphi$ and $\varphi(\partial I^n\times I)\subset B_0$, which is what makes
+    $H$ a homotopy of maps of triples rather than only of maps of pairs. Checked the exercise's
+    printed statement on Hatcher's p. 358 against the source's hypothesis, the correspondence
+    $B_0=A$, $E_0=p^{-1}(B_0)$, and the identification of models in (6.1.4), printed p. 125. Not
+    verified: the Ranicki translation against tom Dieck's original German edition, which this
+    machine does not hold; the proof is read in the translation.
 ---
 
 ::: {.problem}
@@ -75,34 +114,99 @@ If $p: (\tilde{X}, \tilde{A}, \tilde{x}_0) \to (X, A, x_0)$ is a covering space 
 :::
 
 ::: {.solution}
-Represent an element of $\pi_n(X,A,x_0)$, $n>1$, by a map of triples
-$$
-f:(D^n,S^{n-1},s_0)\longrightarrow(X,A,x_0).
-$$
-Since $n>1$, the disk $D^n$ is simply connected, so the lifting criterion of Proposition 1.33 (p. 61) applies: a map from a simply connected space into $X$ lifts to $\widetilde X$ once the image of one point is chosen, because the image of its fundamental group is trivial and hence contained in $p_*\pi_1(\widetilde X,\widetilde x_0)$. Taking the value $\widetilde x_0$ at $s_0$, $f$ has a unique lift
-$$
-\widetilde f:(D^n,s_0)\longrightarrow(\widetilde X,\widetilde x_0),
-$$
-unique by the uniqueness of lifts of a connected space with a prescribed value at one point (p. 62).
-Because $f(S^{n-1})\subset A$, we have
-$$
-\widetilde f(S^{n-1})\subset p^{-1}(A)=\widetilde A.
-$$
-Thus $\widetilde f$ represents a class in $\pi_n(\widetilde X,\widetilde A,\widetilde x_0)$, proving surjectivity of $p_*$.
 
-If two lifted maps become relatively homotopic after applying $p$, there is a relative homotopy
-$$
-F:(D^n\times I,S^{n-1}\times I,\{s_0\}\times I)\to(X,A,x_0).
-$$
-The space $D^n\times I$ is contractible, hence simply connected, so Proposition 1.33 lifts $F$ to $\widetilde F:D^n\times I\to\widetilde X$ with $\widetilde F(s_0,0)=\widetilde x_0$; then $\widetilde F(S^{n-1}\times I)\subset p^{-1}(A)=\widetilde A$ and $\widetilde F(\{s_0\}\times I)=\widetilde x_0$. By uniqueness of lifts with a prescribed value, the two ends $\widetilde F(-,0)$ and $\widetilde F(-,1)$ are the prescribed lifted maps. So the two lifted maps were already relatively homotopic, which is injectivity.
+Throughout, $\pi_n$ of a pointed pair is taken in tom Dieck's cube model
 
-Therefore
 $$
-\boxed{p_*:\pi_n(\widetilde X,\widetilde A,\widetilde x_0)\xrightarrow{\cong}\pi_n(X,A,x_0)}
-\qquad(n>1).
+\pi_n(X,A,x_0)=\bigl[(I^n,\partial I^n,J^{n-1}),(X,A,x_0)\bigr],
+\qquad
+J^{n-1}=\partial I^{n-1}\times I\cup I^{n-1}\times\{0\}\subset\partial I^n,
 $$
+
+and Remark (6.1.4), printed p. 125 of tom Dieck, identifies this set with the homotopy classes of pointed maps $(D^n,S^{n-1})\to(X,A)$, which is the model the exercise uses. Put $B_0=A$ and $E_0=p^{-1}(A)=\tilde A$, and let $\epsilon\in E_0$ be a point over $b=p(\epsilon)\in B_0$; in the exercise's notation $\epsilon=\tilde x_0$ and $b=x_0$.
+
+::: pf
+
+::: {.pf-step #serre}
+
+$p$ is a Serre fibration.
+
+::: pf-proof
+
+By (3.2.2), printed p. 66, a covering $p:E\to B$ has the homotopy lifting property for every space, and by the definition in §5.5, printed p. 115, a map with the homotopy lifting property for every space has it for every cube $I^n$, which is what a Serre fibration is.
+
+:::
+
+:::
+
+::: {.pf-step #cube-lift}
+
+Every map of triples $h:(I^n,\partial I^n,J^{n-1})\to(B,B_0,b)$, $n\ge1$, lifts to a map $H:I^n\to E$ with $pH=h$ and $H|_{J^{n-1}}$ the constant map at $\epsilon$.
+
+::: pf-proof
+
+Read $h$ as a homotopy $I^{n-1}\times I\to B$ in the last coordinate, and read $J^{n-1}=I^{n-1}\times\{0\}\cup\partial I^{n-1}\times I$ as a subspace of $I^{n-1}\times I=I^n$. Proposition (3.2.4), printed p. 67, lifts such a homotopy once one is given a map $a:J^{n-1}\to E$ over $h|_{J^{n-1}}$; since $h(J^{n-1})=\{b\}$, the constant map $a=\mathrm{const}_\epsilon$ is such a lift, and step [](#serre){.pf-ref} supplies the homotopy lifting property for the cube $I^{n-1}$ that the proposition assumes. The conclusion is a map $H:I^{n-1}\times I\to E$ with $H|_{J^{n-1}}=a$ and $pH=h$.
+
+:::
+
+:::
+
+::: {.pf-step #surjective}
+
+$p_*:\pi_n(E,E_0,\epsilon)\to\pi_n(B,B_0,b)$ is surjective for $n\ge1$.
+
+::: pf-proof
+
+Let $x\in\pi_n(B,B_0,b)$ be represented by $h$. The lift $H$ of step [](#cube-lift){.pf-ref} has $pH=h$ and $H(J^{n-1})=\{\epsilon\}$, and $H(\partial I^n)\subset p^{-1}(B_0)=E_0$ because $h(\partial I^n)\subset B_0$. So $H$ is a map of triples $(I^n,\partial I^n,J^{n-1})\to(E,E_0,\epsilon)$ and $p_*[H]=[pH]=[h]$.
+
+:::
+
+:::
+
+::: {.pf-step #injective}
+
+$p_*$ is injective for $n\ge1$.
+
+::: pf-proof
+
+Let $f_0,f_1:(I^n,\partial I^n,J^{n-1})\to(E,E_0,\epsilon)$ be maps of triples with $p_*[f_0]=p_*[f_1]$, and let
+
+$$
+\varphi:\bigl(I^n\times I,\ \partial I^n\times I,\ J^{n-1}\times I\bigr)\longrightarrow(B,B_0,b)
+$$
+
+be a homotopy from $pf_0$ to $pf_1$ through maps of triples. Put $T=I^n\times\partial I\cup J^{n-1}\times I\subset\partial(I^n\times I)$ and define $G:T\to E$ by $G(u,t)=f_t(u)$ for $u\in I^n$ and $t\in\{0,1\}$, and $G(u,t)=\epsilon$ for $u\in J^{n-1}$ and $t\in I$. The two clauses agree on $J^{n-1}\times\partial I$, where $f_t(J^{n-1})=\{\epsilon\}$, so $G$ is a well-defined continuous map with $pG=\varphi|_T$. Transposing the last two coordinates carries $T$ to $J^n=\partial I^n\times I\cup I^n\times\{0\}$, the subspace of $\partial I^{n+1}$ to which (3.2.4), printed p. 67, applies, so that proposition gives $H:I^n\times I\to E$ with $H|_T=G$ and $pH=\varphi$. For each $t$ the map $H(-,t)$ satisfies $H(\partial I^n\times\{t\})\subset p^{-1}(B_0)=E_0$, because $\varphi(\partial I^n\times I)\subset B_0$, and $H(J^{n-1}\times\{t\})=\{\epsilon\}$; and $H(-,0)=f_0$, $H(-,1)=f_1$. So $H$ is a homotopy of maps of triples from $f_0$ to $f_1$.
+
+:::
+
+:::
+
+::: pf-step
+
+$$
+p_*:\pi_n(E,E_0,\epsilon)\xrightarrow{\ \cong\ }\pi_n(B,B_0,b)\quad\text{for all }n\ge1,
+\qquad
+\boxed{p_*:\pi_n(\tilde X,\tilde A,\tilde x_0)\xrightarrow{\ \cong\ }\pi_n(X,A,x_0)\ \text{ for all }n>1.}
+$$
+
+::: pf-proof
+
+Steps [](#surjective){.pf-ref} and [](#injective){.pf-ref} give a bijection for every $n\ge1$, and $n>1$ is a case of $n\ge1$.
+
+:::
+
+:::
+
+:::
+
+In the notation of the exercise, $E=\tilde X$, $E_0=\tilde A=p^{-1}(A)$, $\epsilon=\tilde x_0$ and $b=x_0$, so the bijection just proved is the one the exercise asks for.
+
 :::
 
 ::: {.remark title="Source"}
-The exercise is Exercise 6 of §4.1, printed p. 358. Hatcher's Proposition 4.1, printed p. 342 with its proof there, is the absolute statement only: for a covering space projection $p:(\tilde X,\tilde x_0)\to(X,x_0)$, the map $p_*:\pi_n(\tilde X,\tilde x_0)\to\pi_n(X,x_0)$ is an isomorphism for all $n\ge2$, by the lifting criterion of Proposition 1.33 (printed p. 61) for surjectivity and the covering homotopy property for injectivity. The relative statement for a pair, with $\tilde A=p^{-1}(A)$, is not printed in the book, and it does not follow from Proposition 4.1 by the five-lemma: in the ladder of the two long exact sequences of Theorem 4.3 (printed p. 344) the map at $\pi_1$ is only injective, so at $\pi_2$ the five-lemma yields injectivity of $p_*:\pi_2(\tilde X,\tilde A)\to\pi_2(X,A)$ and not surjectivity. The proof above is the book's argument carried out directly for triples $(D^n,S^{n-1},s_0)$ instead of $S^n$: $D^n$ and $D^n\times I$ are simply connected, so Proposition 1.33 lifts the disk and the relative homotopy, whose boundary then lands in $p^{-1}(A)=\tilde A$.
+
+The exercise is Exercise 6 of §4.1, printed p. 358. The proof above is transcribed from **Tammo tom Dieck, *Algebraic Topology*, EMS Textbooks in Mathematics, European Mathematical Society 2008**: Theorem (6.3.1), stated on printed p. 129 and proved on printed p. 130, with the input that a covering is a fibration from Theorem (3.2.2), printed p. 66, the lifting lemma Proposition (3.2.4), printed p. 67, the definition of a Serre fibration in §5.5, printed p. 115, and the identification of the cube model with the disk model in Remark (6.1.4), printed p. 125. The reading copy is the text of the Ranicki translation held as `tmp/sources/tomdieck-algebraic-topology-ranicki.md`, in which the colon of a map $p:E\to B$ is transcribed as `W` and the arrow as `!`. The theorem is stronger than the exercise in one direction and more general in another: it holds for $n\ge1$ rather than $n>1$, and it takes an arbitrary subspace $B_0\subset B$ with $E_0=p^{-1}(B_0)$, the exercise being the case $B_0=A$.
+
+Hatcher's Proposition 4.1, printed p. 342 with its proof there, is the absolute statement only: for a covering space projection $p:(\tilde X,\tilde x_0)\to(X,x_0)$, the map $p_*:\pi_n(\tilde X,\tilde x_0)\to\pi_n(X,x_0)$ is an isomorphism for all $n\ge2$. The relative statement is not a proposition of the book, and it does not follow from Proposition 4.1 by the five-lemma on the ladder of Theorem 4.3 (printed p. 344): the map $p_*:\pi_1(\tilde A,\tilde x_0)\to\pi_1(A,x_0)$ is injective and in general not surjective, so at $\pi_2$ the five-lemma gives injectivity and not surjectivity. The source's proof avoids the ladder: it lifts the cube and the relative homotopy themselves, which is what replaces the simply connected $D^n$ of Proposition 4.1's argument by the lifting lemma (3.2.4) for the pair of subspaces $J^n\subset I^{n+1}$.
+
 :::
