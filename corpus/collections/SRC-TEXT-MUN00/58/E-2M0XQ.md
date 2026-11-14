@@ -52,6 +52,25 @@ audit:
   note: >-
     The solution was rewritten as the transcription above, one step per part, with the sources,
     the corrections and the book's numbers named in its own text.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Two repairs. (b): the card said $H$ "induces a continuous $\bar H$" without naming a quotient
+    map or showing that one is a quotient map; the step now names $q_0\times\operatorname{id}_I$ on
+    $(I^2-\theset c)\times I$, shows $q_0=\restrictionof{q}{I^2-\theset c}$ is a quotient map by
+    Theorem 22.1 (the deleted point is interior, so $I^2-\theset c$ is open and saturated), shows
+    that its product with the identity of $I$ is a quotient map because $I$ is compact Hausdorff by
+    the lemma of §29 Exercise *11(a), and then gets $\bar H$ from Theorem 22.2. (e): the card
+    projected stereographically from a point of $S^2$ *outside* $\theset{e_1,e_2,e_3}$, which is
+    undefined on part of $Z$ and carries the three deleted points to three points of $\RR^2$, so
+    that $Z$ would be $\RR^2$ minus three points, not the doubly punctured plane Example 2
+    applies to; the projection is now from $e_1$, so the two remaining punctures are $e_2$ and
+    $e_3$. The answers are unchanged, and the desk-checked corrections of the earlier note to (i),
+    (j) and (e)'s answer stand. Checked against the book: the exercise on printed pp. 366-367,
+    Theorem 58.3 on printed p. 361, Examples 2 and 3 on printed p. 362, Theorem 58.7 on printed
+    p. 364, Theorem 22.1 on printed p. 140, Theorem 22.2 on printed p. 142, and §29 Exercise *11 on
+    printed p. 186.
 ---
 
 ::: {.exercise}
@@ -146,10 +165,22 @@ pointwise because $\pi$ does.
 
 Two points of $I^2-\theset c$ that $q$ identifies lie on $\partial I^2$, so $H$
 carries them to themselves at every $t$; hence $H$ is constant on the fibres of
-the quotient map $q\times\operatorname{id}$, and therefore induces a continuous
-$\bar H:(T-\theset{q(c)})\times I\to T-\theset{q(c)}$. It satisfies
-$\bar H(y,0)=y$, $\bar H(y,1)\in q(\partial I^2)$ and $\bar H(y,t)=y$ for
-$y\in q(\partial I^2)$.
+$$
+q_0\times\operatorname{id}_I:\ (I^2-\theset c)\times I\longrightarrow
+(T-\theset{q(c)})\times I,
+$$
+where $q_0=\restrictionof{q}{I^2-\theset c}$. That map is a quotient map, so by
+Theorem 22.2 (printed p. 142) there is a continuous
+$\bar H:(T-\theset{q(c)})\times I\to T-\theset{q(c)}$ with
+$\bar H\circ(q_0\times\operatorname{id}_I)=H$. It is a quotient map for two
+reasons: $I^2-\theset c$ is open in $I^2$ and saturated for $q$, because
+$q^{-1}(q(c))=\theset c$, so $q_0$ is a quotient map onto $T-\theset{q(c)}$ by
+Theorem 22.1 (printed p. 140); and $I$ is compact Hausdorff, hence locally compact
+Hausdorff, so a quotient map times $\operatorname{id}_I$ is a quotient map by the
+lemma in §29 Exercise *11(a) (printed p. 186).
+
+It satisfies $\bar H(y,0)=y$, $\bar H(y,1)\in q(\partial I^2)$ and
+$\bar H(y,t)=y$ for $y\in q(\partial I^2)$.
 
 The set $q(\partial I^2)$ is the union of the two circles $q(I\times
 \theset 0)$ and $q(\theset 0\times I)$, which meet in the single point
@@ -198,12 +229,18 @@ multiple lies on $R_i$ only if the point does. So $H$ maps $X\times I$ into $X$,
 it fixes $Z$ pointwise, and $H(x,1)=x/\norm x\in Z$; so $Z$ is a deformation
 retract of $X$ and $\pi_1(X)\cong\pi_1(Z)$ by Theorem 58.3.
 
-Stereographic projection from a point of $S^2$ outside $\theset{e_1,e_2,e_3}$
-is a homeomorphism of $S^2$ minus that point onto $\RR^2$, so $Z$ is
-homeomorphic to $\RR^2$ with two points deleted, and $\pi_1(Z)\cong\pi_1(Z')$
-for that space $Z'$ by Theorem 58.7. By Example 2, printed p. 362, the figure
+Stereographic projection from $e_1$ is a homeomorphism of $S^2-\theset{e_1}$
+onto $\RR^2$, and it carries the other two deleted points $e_2,e_3$ to two points
+of $\RR^2$; restricted to the subspace $Z=S^2-\theset{e_1,e_2,e_3}$ it is
+therefore a homeomorphism onto $\RR^2$ with those two points deleted — the doubly
+punctured plane, which is the space $Z'$ of Example 2. So
+$\pi_1(Z)\cong\pi_1(Z')$ by Theorem 58.7. By Example 2, printed p. 362, the figure
 eight is a deformation retract of the doubly punctured plane $Z'$, so
 $\pi_1(Z')$ is the fundamental group of the figure eight by Theorem 58.3.
+
+Projection from a point of $S^2$ outside $\theset{e_1,e_2,e_3}$ would not do
+here: it is undefined at that point, which is in $Z$, and it would carry the three
+deleted points to three points of $\RR^2$.
 :::
 
 :::
