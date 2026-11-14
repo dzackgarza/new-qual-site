@@ -48,6 +48,26 @@ audit:
   note: >-
     The solution was rewritten as the transcription above, in Lamport form, with the source and the
     book's pages named in its own text.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    The first step was replaced. It had computed the points of the $x$-axis in $p'^{-1}(U)$ from the
+    formula $2\abs{\sin\pi t}$ for the distance of $p'(t,0)$ from $x_0$, which presumes a choice of
+    $A$ as the unit circle wrapped uniformly, a choice the book's construction of $p$ does not make;
+    and its "exactly when" holds only for $U$ whose intersection with $A$ is all of the disc's,
+    whereas a smaller evenly covered $U$ gives smaller intervals. The card now argues without
+    coordinates: at $y=(1,0)$ the space $E'$ is locally an interval of the $x$-axis, which $p$
+    carries into $A$, while every neighbourhood of $x_0$ in $X$ contains points of
+    $B-\theset{x_0}$. So if $p'$ were a covering, the sheet $V$ at $y$ — homeomorphic to a connected
+    evenly covered $U$ — would contain a point $z$ mapping to $B-\theset{x_0}$, hence on the $y$-axis
+    by the first step, hence, $V$ being connected and meeting both axes away from the origin, would
+    contain the origin; and then $p'$ would take the distinct points $y$ and the origin to $x_0$,
+    contradicting injectivity on the sheet. Checked against the book: the exercise on printed
+    p. 375, the construction of $p$ in the proof of Lemma 60.5 on printed pp. 373-374, and the
+    definition of a covering map in §53. Correction to the note of 2026-11-14 above: the card no
+    longer computes $2\abs{\sin\pi t}$, so the clause there about that computation describes text
+    that is no longer on the card; the statement repair recorded there stands.
 ---
 
 ::: {.exercise}
@@ -69,47 +89,56 @@ The proof is transcribed from Pearse, *Topology (2nd ed.) — James R. Munkres*,
 solutions, Cornell 2005, §60 Exercise 3, his p. 27, read in
 `tmp/sources/cornell-erin-munkres.md`. The source's point is that the preimage of
 a small neighbourhood of $x_0$ inside $E'$ consists of one small cross at the
-origin and of open intervals around the nonzero integer points, and that no
-interval is homeomorphic to the cross in the base; the card states the same thing
-by choosing the neighbourhood small enough that the interval through $(1,0)$ maps
-into the wrong circle.
+origin together with open intervals about the nonzero integer points, and that no
+interval is homeomorphic to the cross in the base. The card proves the failure at
+the point $y=(1,0)$, where $E'$ is locally an interval of the $x$-axis, using only
+that $p$ carries the $x$-axis into $A$ and does not carry it into $B$.
 
 ::: pf
 
-::: {.pf-step #component}
-Let $p'=\restrictionof{p}{E'}$ and let $U$ be a neighbourhood of $x_0$ in $X$
-contained in the open disc of radius $\tfrac12$ about $x_0$. Then the component
-of $p'^{-1}(U)$ containing $(1,0)$ is an interval of the $x$-axis, and its image
-under $p'$ is contained in $A$.
+::: {.pf-step #local}
+Near $y=(1,0)$ the space $E'$ is an interval of the $x$-axis, and $p$ carries it
+into $A$; while every neighbourhood of $x_0$ in $X$ contains points of
+$B-\theset{x_0}$.
 
 ::: pf-proof
-$p'$ wraps the $x$-axis once around $A$ with $(n,0)\mapsto x_0$ for every integer
-$n$, so $p'(t,0)$ is the point of $A$ at distance $2\abs{\sin\pi t}$ from $x_0$.
-Because $U$ is contained in the disc of radius $\tfrac12$, a point $(t,0)$ lies
-in $p'^{-1}(U)$ exactly when $2\abs{\sin\pi t}<\tfrac12$, that is, when $t$ is within
-$\delta$ of an integer for some $\delta\in(0,\tfrac12)$ with $2\sin(\pi\delta)
-<\tfrac12$. The points of the $x$-axis in $p'^{-1}(U)$ are therefore the union of
-the disjoint open intervals $(n-\delta,n+\delta)\times 0$, and the component
-containing $(1,0)$ is $(1-\delta,1+\delta)\times 0$, which lies in the $x$-axis
-and does not meet the $y$-axis. Hence its image under $p'$ lies in $A$, since the
-$x$-axis is carried into $A$.
+The point $y=(1,0)$ lies on the $x$-axis and not on the $y$-axis, which is at
+distance $1$ from it, so the disc of radius $\tfrac12$ about $y$ meets $E'$ in an
+interval of the $x$-axis. The whole $x$-axis is carried by $p$ into $A$, by the
+construction of $p$; so every neighbourhood of $y$ in $E'$ contains points, other
+than $y$ itself, whose images lie in $A$.
+
+On the other side, $B$ is a circle through $x_0$ and has no isolated points, so
+for any neighbourhood $U$ of $x_0$ in $X$ the set $U\cap B$ is a neighbourhood of
+$x_0$ in $B$ and contains points of $B-\theset{x_0}$. Those points lie in no
+subset of $A$, since $A\cap B=\theset{x_0}$.
 :::
 
 :::
 
 ::: {.pf-step}
-$\boxed{p'\ \text{is not a covering map}}$.
+$\boxed{p'=\restrictionof{p}{E'}\ \text{is not a covering map}}$.
 
 ::: pf-proof
-Suppose $p'$ were a covering map. Then for the neighbourhood $U$ of $x_0$ in step
-[](#component){.pf-ref} — or any smaller one — every component of $p'^{-1}(U)$
-would map homeomorphically onto $U$. Let $V$ be the component containing
-$(1,0)$; by step [](#component){.pf-ref} its image is contained in $A$, and
-$A\cap X$ does not contain any point of $B-\theset{x_0}$. But $U$ is a
-neighbourhood of $x_0$ in $X=A\cup B$, so it contains the points of $B$ within
-distance $\tfrac12$ of $x_0$, which are points of $B-\theset{x_0}$; these are not
-in $A$, so $p'(V)\ne U$. That contradicts the covering condition at the point
-$x_0\in U$.
+Suppose it were. Then $x_0$ has an evenly covered neighbourhood, and we may take
+it of the form $U=D\cap X$ for an open disc $D$ about $x_0$ so small that $D\cap X$
+lies in an evenly covered set: such a $U$ is evenly covered, a neighbourhood
+contained in an evenly covered set being evenly covered by restriction of the
+sheets, and it is connected, being the union of an arc of $A$ through $x_0$ and an
+arc of $B$ through $x_0$. The point $y$ lies in a sheet $V$ of $p'^{-1}(U)$, that
+is, a neighbourhood of $y$ in $E'$ that $p'$ maps homeomorphically onto $U$; so
+$V$ is homeomorphic to $U$ and hence connected. Choose
+$b\in U\cap(B-\theset{x_0})$, which is nonempty by step [](#local){.pf-ref}, and
+then $z\in V$ with $p'(z)=b$.
+
+The point $z$ is not on the $x$-axis, since $p$ carries the $x$-axis into $A$ and
+$b\notin A$; so $z$ lies on the $y$-axis. Thus $V$ meets the $x$-axis at
+$y\ne(0,0)$ and meets the $y$-axis at $z$. A subset of $E'$ meeting both axes
+outside the origin contains the origin: without it, its intersections with the two
+axes would be two disjoint nonempty sets, each open and closed in the subset, so
+the subset would be disconnected. Hence $(0,0)\in V$. But
+$p'(0,0)=x_0=p'(1,0)=p'(y)$ with $(0,0)\ne y$, so $p'$ is not injective on $V$,
+contradicting that it maps $V$ homeomorphically onto $U$.
 :::
 
 :::
