@@ -46,6 +46,24 @@ audit:
   date: 2026-11-14
   note: >-
     The solution was rewritten as the description plus the check above, in Lamport form.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    The closing step claimed that $f=r_Y\circ i_X$ and $g=r_X\circ i_Y$ *are* the maps the source
+    describes, "a map into the plane followed by a retraction collapses a region to a graph", and
+    called what is collapsed "the region the figure eight encloses". Both are unsupported: the
+    retractions of Examples 2 and 3 are given by a picture and by "we leave it to you to sketch the
+    maps involved", so no text fixes where a point of the figure eight goes, and the source's own
+    words collapse the points of the figure eight that lie inside its dotted line, the lens between
+    the two crossing points, not the interior of either loop. The step now states the description
+    of the two composites, records the source's picture-level description with that correction, and
+    says plainly that the agreement of the composites with the drawn maps is not something either
+    text settles; what is proved, and all the exercise asks, is that the composites are homotopy
+    inverse. The two homotopies and the argument from Examples 2 and 3 are unchanged. Checked
+    against the book: the exercise on printed p. 367, the definition of homotopy inverse on printed
+    p. 363, and Examples 2 and 3 on printed p. 362; read in Pearse's extraction with his Figure 7 on
+    his p. 23.
 ---
 
 ::: {.exercise}
@@ -114,13 +132,27 @@ $\boxed{\text{The figure eight and the theta space are homotopy equivalent}}$,
 with $f$ and $g$ as above homotopy inverse to each other.
 
 ::: pf-proof
-Steps [](#gf){.pf-ref} and [](#fg){.pf-ref} are exactly the two requirements of
-the definition on printed p. 363, so $f$ is a homotopy equivalence with homotopy
-inverse $g$. The description of the two maps is the source's: $f$ carries the
-figure eight into the plane and retracts it onto the theta, which collapses the
-region the figure eight encloses onto the vertical bar of the theta, and $g$
-carries the theta into the plane and retracts it onto the figure eight, which
-collapses the vertical bar to the point where the two loops meet.
+Step [](#gf){.pf-ref} and step [](#fg){.pf-ref} are exactly the two requirements
+of the definition on printed p. 363, so $f$ is a homotopy equivalence with
+homotopy inverse $g$: $f$ carries the figure eight into the doubly punctured plane
+and retracts that plane onto the theta space, and $g$ carries the theta space into
+that plane and retracts it onto the figure eight. That is the description of the
+two maps the exercise asks for, with the retractions of Examples 2 and 3 in the
+places where the source puts a drawn collapse.
+
+The source's own words describe its maps in pictures. In its Figure 7 the figure
+eight is drawn as two circles crossing in two points with a dotted line around the
+lens between the crossing points, and $f$ is said to carry the points of the
+figure eight inside that line to the vertical bar of the theta, not the interior
+of either loop; $g$ is said to carry the vertical bar to the point where the two
+loops of the figure eight meet. Neither text gives a formula for either map — the
+book draws the retraction of Example 2, and of Example 3 it says "we leave it to
+you to sketch the maps involved", and the source draws both maps and both
+homotopies without formulas — so which point of the figure eight a deformation
+retraction of the punctured plane sends where is not fixed by either text, and the
+agreement of the composites above with the drawn maps is not something the two
+texts settle. What is proved here is that the composites are homotopy inverse,
+which is the property the exercise asks the two maps to have.
 :::
 
 :::
