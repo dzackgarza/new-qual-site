@@ -62,6 +62,20 @@ audit:
     already on the card needed no repair and its `pf` block is unchanged. Checked against Hatcher
     (2002), §4.A Exercise 1 on printed p. 426 and Example 4A.3 on printed p. 422. Not claimed: that
     tom Dieck states the general form, or that Hatcher prints the exercise.
+- event: source-corrected
+  by: claude
+  date: 2026-11-14
+  note: >-
+    One sentence of the paragraph on tom Dieck's Lemma (2.7.4) was wrong and is corrected. It called
+    "the surjectivity half of the same lemma ... the other half of the construction here", but this
+    card's construction is the injectivity half only: it normalises a given homotopy between pointed
+    maps and produces nothing else. The lemma's other half is the different statement that every
+    unbased homotopy class of maps $S^1\to S^1$ contains a pointed map, proved by the path $w$ from
+    $1$ to $f(1)^{-1}$ and the homotopy $(x,t)\mapsto f(x)w(t)$; the exercise asks only for the
+    injectivity half, and the card now says that the other half is a different statement which it
+    does not use. Checked in the text version
+    `tmp/sources/tomdieck-algebraic-topology-ranicki.md`, Lemma (2.7.4) with its proof, and against
+    Hatcher (2002), §4.A Exercise 1 on printed p. 426 and Example 4A.3 on printed p. 422.
 ---
 
 ::: {.problem}
@@ -143,7 +157,7 @@ $F: (Z \times I, \{z_0\} \times I) \to (X, x_0)$ is a pointed homotopy between $
 
 :::
 
-*The published instance of this argument.* (tom Dieck, Lemma (2.7.4), printed p. 49.) The source proves exactly this normalisation, for $Z=X=S^1$ with the multiplication of the unit circle: "Let $H:S^1\times I\to S^1$ be a homotopy between pointed maps; then $(x,t)\mapsto H(x,t)\cdot H(1,t)^{-1}$ is a pointed homotopy between the same maps", which is the injectivity half of the statement that the map $[S^1,S^1]_0\to[S^1,S^1]$ forgetting the base point is a bijection. The surjectivity half of the same lemma is the other half of the construction here: a path $w$ from $1$ to $f(1)^{-1}$ gives the homotopy $(x,t)\mapsto f(x)w(t)$ from $f$ to a pointed map. The derivation above is that computation with an arbitrary topological group $X$ in place of the unit circle and an arbitrary pointed space $(Z,z_0)$ in place of the circle, the loop $\gamma(t)=H(z_0,t)$ playing the role of $H(1,t)$. The source proves the case $Z=X=S^1$ only; the statement for arbitrary $Z$ and $X$ has no located published source, and on this card it rests on the derivation above together with Hatcher's H-space form of the same normalisation in Example 4A.3.
+*The published instance of this argument.* (tom Dieck, Lemma (2.7.4), printed p. 49.) The source proves exactly this normalisation, for $Z=X=S^1$ with the multiplication of the unit circle: "Let $H:S^1\times I\to S^1$ be a homotopy between pointed maps; then $(x,t)\mapsto H(x,t)\cdot H(1,t)^{-1}$ is a pointed homotopy between the same maps", which is the injectivity half of the statement that the map $[S^1,S^1]_0\to[S^1,S^1]$ forgetting the base point is a bijection. The lemma's surjectivity half — that every unbased homotopy class of maps $S^1\to S^1$ contains a pointed map — is a different statement, which the exercise does not ask for: a path $w$ from $1$ to $f(1)^{-1}$ gives the homotopy $(x,t)\mapsto f(x)w(t)$ from $f$ to the pointed map $x\mapsto f(x)f(1)^{-1}$. The derivation above is that computation with an arbitrary topological group $X$ in place of the unit circle and an arbitrary pointed space $(Z,z_0)$ in place of the circle, the loop $\gamma(t)=H(z_0,t)$ playing the role of $H(1,t)$. The source proves the case $Z=X=S^1$ only; the statement for arbitrary $Z$ and $X$ has no located published source, and on this card it rests on the derivation above together with Hatcher's H-space form of the same normalisation in Example 4A.3.
 
 ::: {.remark title="Published solution"}
 tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), Lemma (2.7.4) with its proof, printed p. 49, for $Z=X=S^1$: the normalisation $(x,t)\mapsto H(x,t)\cdot H(1,t)^{-1}$ of a homotopy between pointed maps, and the path from $1$ to $f(1)^{-1}$ that makes the forgetful map $[S^1,S^1]_0\to[S^1,S^1]$ surjective as well as injective. Hatcher, *Algebraic Topology* (2002), Example 4A.3, printed p. 422, is the H-space form of the same normalisation, with the action defined in Proposition 4A.1 on the same page. The exercise is Exercise 1 of §4.A, printed p. 426, and a topological group is an H-space in the sense of the example.
