@@ -139,6 +139,36 @@ audit:
     retained sets (Sam, Li, DeMason, Poulsen, Stanford Math 215C Solution Sets 1--5, the UCR Math
     205B help file, May's *Concise Course*, Bredon, Maxim's Math 752 notes) and in Hatcher's text and
     errata; Hatcher's errata has no entry for §3.3 near this page.
+- event: source-checked
+  by: claude
+  date: 2026-11-14
+  note: >-
+    The degree-one cohomology of the compactification, which the card had only asserted to be
+    uncountable-then-countable in a rejected argument, is now cited from a published source, supplied
+    by the owner for #123 and read in the text version: Martin Frankland, *Cohomology of the Hawaiian
+    Earring* (dated February 22, 2017), Theorem 1.3 and the sentence immediately after it, both on
+    printed p. 2 of the note. Theorem 1.3 states that the map $H^1(E;\ZZ)\to\operatorname{Hom}_{\ZZ}
+    (\bigoplus_\NN\ZZ,\ZZ)$ dual to $H_1(\iota)$ is injective with image $\bigoplus_\NN\ZZ$, and the
+    sentence after it draws the conclusion $H^1(E)\cong\bigoplus_{n\in\NN}\ZZ$, "a free abelian group
+    on countably many generators". Read only in degree one and only with integer coefficients, which
+    is the part the note proves; the card does not cite it for any other degree. The reading copy is
+    `tmp/sources/frankland-2017-cohomology-hawaiian-earring.md`; the PDF already held as
+    `tmp/sources/frankland-hawaiian-earring-2017.pdf` is the same note, and Theorem 2.1 of it was
+    already cited on this card for the $\QQ$ summand.
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Added step "degree-one" to the solution: $H_c^1(\ZZ\times\RR;\ZZ)$ from the card's own cofinal
+    rectangle computation, and $H^1((\ZZ\times\RR)^+,\infty;\ZZ)$ from Frankland's Theorem 1.3,
+    printed p. 2, together with the exact sequence of the pair $(E,\infty)$. The step's point is
+    negative and is what the rejected Stanford paragraph got wrong: both sides in degree one are free
+    abelian on countably many generators, so no countability argument in degree one can decide the
+    bracketed question, and the card's counterexample has to be, and is, in degree two. The card's
+    closing paragraph now also says which part of the exercise is published (the first part, Stanford
+    Math 215C Solution Set 4) and which is not (the bracketed question, whose answer here is assembled
+    from Eda--Kawamura, Wiegold and Frankland). Not claimed: a published solution of the bracketed
+    question; none was located, and the earlier events recording that stand.
 ---
 
 ::: {.problem}
@@ -211,6 +241,24 @@ By **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Th
 
 :::
 
+::: {.pf-step #degree-one}
+
+For $X=\ZZ\times\RR$ and integer coefficients, $H_c^1(X;\ZZ)$ and $H^1(X^+,\infty;\ZZ)$ are both free abelian on countably many generators, so degree one does not separate the two sides.
+
+::: pf-proof
+
+Step [](#compact-degree-two){.pf-ref} computes $H^q(X,X\setminus K_N;\ZZ)=\ZZ^{2N+1}$ for $q=1$ and $0$ otherwise, and the family $\{K_N\}$ is cofinal, so the direct limit of step [](#excision-limit){.pf-ref} in degree one is the free abelian group on countably many generators. For the right-hand side, step [](#earring-degree-two){.pf-ref} identifies $X^+$ with the Hawaiian earring $E$, and **Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 1.3 with the sentence following it, printed p. 2**, gives
+
+$$
+H^1(E;\ZZ)\cong\bigoplus_{n\in\NN}\ZZ,
+$$
+
+"a free abelian group on countably many generators": the map $H^1(E;\ZZ)\to\operatorname{Hom}_{\ZZ}(\bigoplus_{\NN}\ZZ,\ZZ)$ induced by $H_1(\iota)$ is injective with image $\bigoplus_{\NN}\ZZ$, and $H^1(E;\ZZ)\cong\operatorname{Hom}_{\ZZ}(H_1(E;\ZZ),\ZZ)$ because $H_0(E;\ZZ)$ is free. The exact sequence of the pair $(E,\infty)$ then gives $H^1(E,\infty;\ZZ)\cong H^1(E;\ZZ)$, because $H^0(E;\ZZ)=\ZZ\to H^0(\{\infty\};\ZZ)=\ZZ$ is an isomorphism, so that $H^0(E,\infty;\ZZ)=0$ and the map $H^1(E,\infty;\ZZ)\to H^1(E;\ZZ)$ has cokernel $0$. Both groups are thus free abelian on countably many generators, and no argument in degree one can decide the bracketed question.
+
+:::
+
+:::
+
 ::: pf-step
 The answer to the bracketed question is no, already for $G=\ZZ$ and $n=2$.
 
@@ -229,4 +277,7 @@ so the evident map cannot be an isomorphism. Consequently the cone-neighborhood 
 The first part is the complete published solution of **Stanford Math 215C, Solution Set 4, Hatcher 3.3.21, printed p. 1**, [`solution4.pdf`](http://math.stanford.edu/~ralph/math215c/solution4.pdf), held locally as `tmp/sources/stanford-math215c-spring2009-solution4.pdf` (59584 bytes, sha256 `b4c348109162ed7e97309e15f1b153efa363cd0338800e8d251f64f335eef470`, matching the served file). Its argument is the one transcribed in steps [](#excision-limit){.pf-ref} and [](#cone-case){.pf-ref}: for compact $K\subset X$ the point $\infty$ is excised, giving $H^n(X^+,X^+\setminus K;G)\cong H^n(X,X\setminus K;G)$; the exact sequence of the pair $(X^+,U_K)$ with $U_K=X^+\setminus K$ has $\widetilde H^m(U_K;G)=0$ for all $m$ when $K$ is the complement of a cone-shaped neighbourhood of $\infty$, so $H^n(X,X\setminus K;G)\cong\widetilde H^n(X^+;G)=H^n(X^+,\infty;G)$; these $K$ are cofinal among compact subsets because cone-shaped neighbourhoods can be shrunk inside any neighbourhood of $\infty$, and the isomorphism passes to the direct limit $H_c^n(X;G)$.
 
 The closing paragraph of that solution, on $X=\ZZ\times\RR$, is **not** used and must not be: it concludes that $H^1$ of the compactification is uncountable from a surjection $H_1\twoheadrightarrow\prod_\NN\ZZ$, whereas dualizing a surjection gives an injection, and $\operatorname{Hom}(\prod_\NN\ZZ,\ZZ)\cong\bigoplus_\NN\ZZ$ is countable by Specker's theorem. The bracketed question is answered above, in degree two with $G=\ZZ$, by the assembled counterexample.
+
+Which part is published and which is not: the first part of the exercise is the complete published solution cited above; the degree-one cohomology of the compactification is published in Frankland's Theorem 1.3, printed p. 2, as step [](#degree-one){.pf-ref} records; and the bracketed question itself has no published solution. The answer given to it on this card is assembled from three published theorems — Eda–Kawamura for the $\QQ$ summand of $H_1(E;\ZZ)$, Wiegold for $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\ne0$, and Frankland for the degree-one value — and is not a transcription of any published treatment of the question.
+
 :::
