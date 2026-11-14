@@ -39,7 +39,28 @@ audit:
   date: 2026-11-13
   note: >-
     The exercise is on printed p. 176 and its printed hint is to glue two copies of $(D^n,D)$ to the ends of $(S^{n-1}\times I, S\times I)$ and apply Mayer--Vietoris to the complement of the resulting $k$-sphere. The proof transcribed here is the printed proof of Hatcher's Proposition 2B.1, printed pp. 169--170: the induction on $k$ that splits the complement of a cube into the complements of its two halves and applies the Mayer--Vietoris sequence, with the nested-interval argument that keeps a cycle from becoming a boundary. The identification of the general pair with the standard one is the printed reduction on p. 169 to the locally flat case, where Hatcher cites Brown 1960 for the collar theorem. Checked against the book: the statement on p. 176 with its intersection hypothesis $D\cap S^{n-1}=S$, the two displayed reduced homology computations, and the $k=n$ case, in which $S=S^{n-1}$ and the complement of $S$ is empty. Not claimed: nothing about the exercise beyond its printed statement; no retyping of Brown's proof, which stays a citation.
----
+- event: solution-written
+  by: claude
+  date: 2026-11-14
+  note: >-
+    Two defects repaired. (1) The open cover of $W$ was described as two slight enlargements of the
+    copies of $B=D^n-D$ into the cylinder; those two sets leave the band
+    $(S^{n-1}-S)\times[\eta,1-\eta]$ uncovered, so they are not a cover unless they overlap across
+    the cylinder. The card now takes $U_1=B_1\cup(S^{n-1}-S)\times[0,\tfrac23)$ and
+    $U_2=B_2\cup(S^{n-1}-S)\times(\tfrac13,1]$, whose union is $W$ and whose intersection is
+    $(S^{n-1}-S)\times(\tfrac13,\tfrac23)$, a deformation retract of $A$. (2) The preceding event and
+    the remark claimed that the proof transcribed Hatcher's Proposition 2B.1 (printed pp. 169--170)
+    and its induction, with the nested-interval argument. That is not what the proof on this card is,
+    and the claim is withdrawn: the proof is the exercise's printed hint of p. 176 (glue two copies
+    of $(D^n,D)$ to the ends of $(S^{n-1}\times I,S\times I)$, giving an embedded $S^k$ and hence
+    $W$), reduced Mayer--Vietoris on the complement, and two complement-of-an-embedded-sphere
+    computations, from Alexander duality (Theorem 3.44, printed p. 254) or equivalently from
+    Proposition 2B.1(b), printed p. 169. The remark is retitled and now states this. Also removed: a
+    second `---` line after the front matter, which the card parser leaves at the head of the body
+    and Pandoc renders as a horizontal rule. Checked against the book: the statement on p. 176 with
+    its hypothesis $D\cap S^{n-1}=S$, the printed hint, the two displayed reduced homology values and
+    the $k=n$ case. Not claimed: a published solution of the exercise; the sources searched for one
+    are recorded in COMPLAINTS.md item 11.
 ---
 
 ::: {.problem}
@@ -57,7 +78,11 @@ Now suppose $0<k<n$ and put $d=n-k-1\ge0$. Write
 $$
 A=S^{n-1}\setminus S,\qquad B=D^n\setminus D.
 $$
-Glue two copies of $(D^n,D)$ to the ends of $(S^{n-1}\times I,S\times I)$. Their ambient union is $S^n$, and the two copies of $D^k$, joined by $S^{k-1}\times I$, form an embedded $S^k$. Let $W$ be its complement. Enlarging the two copies of $B$ slightly into the cylinder gives an open cover of $W$. Its intersection retracts onto $A$, and both inclusion maps from $A$ to the two copies of $B$ induce the map $i_*$ in the statement. Reduced Mayer--Vietoris therefore contains
+Glue two copies of $(D^n,D)$ to the ends of $(S^{n-1}\times I,S\times I)$. Their ambient union is $S^n$, and the two copies of $D^k$, joined by $S^{k-1}\times I$, form an embedded $S^k$. Let $W$ be its complement. In $W$ the two ends $B_1,B_2$, each a copy of $B$, are joined by the cylinder $A\times I$, and the two open sets that cover $W$ have to overlap across that cylinder: enlargements of $B_1$ and $B_2$ that stop short of each other leave the band $A\times[\eta,1-\eta]$ uncovered. Take instead
+$$
+U_1=B_1\cup A\times[0,\tfrac23),\qquad U_2=B_2\cup A\times(\tfrac13,1],
+$$
+open in $W$. Then $U_1\cup U_2=W$, because $\tfrac13<\tfrac23$, and $U_1\cap U_2=A\times(\tfrac13,\tfrac23)$ deformation retracts onto $A=A\times\{\tfrac12\}$. Each $U_i$ deformation retracts onto its copy $B_i$, and the composite $A\hookrightarrow U_i\to B_i$ is homotopic to the inclusion $A=S^{n-1}-S\hookrightarrow D^n-D=B$, because $A$ is the part of $\partial B$ to which the cylinder is attached and the two sets meet along $A\times\{0\}$. So both inclusions induce the map $i_*$ of the statement, and the sign in the Mayer--Vietoris map below is the standard one. Reduced Mayer--Vietoris therefore contains
 $$
 \cdots\longrightarrow\widetilde H_j(A)
 \xrightarrow{(i_*,-i_*)}\widetilde H_j(B)^2
@@ -79,6 +104,6 @@ The middle group is free of rank two because this sequence splits as a sequence 
 If $k=n$, then $S=S^{n-1}$ and $A$ is empty. The embedded $D^n$ has its boundary on $\partial D^n$. Invariance of domain makes its interior image open in $\operatorname{int}D^n$; it is also closed there, since the image of the whole disk is compact and its boundary image lies on $\partial D^n$. Hence $D=D^n$, so $B$ is empty too.
 :::
 
-::: {.remark title="Published solution"}
-Hatcher, *Algebraic Topology* (2002), Proposition 2B.1 and its printed proof, pp. 169--170, which is the argument the exercise's printed hint (p. 176) names: induction on $k$, the complement of the cube $I^k$ split into the complements of $I^{k-1}\times[0,\tfrac12]$ and $I^{k-1}\times[\tfrac12,1]$, the Mayer--Vietoris sequence of pp. 149--150, and the nested intervals $I_1\supset I_2\supset\cdots$ that stop a cycle from bounding. The statement is Exercise 3 of §2.B, printed p. 176; the reduction of a locally flat pair to the standard one is the printed remark on p. 169 citing Brown (1960), and the case $k=n$ uses Invariance of Domain, Theorem 2B.3, printed p. 172.
+::: {.remark title="What the proof is"}
+The proof is the route the exercise's printed hint names (p. 176) and not the induction of Proposition 2B.1. Two copies of $(D^n,D)$ glued to the ends of $(S^{n-1}\times I,S\times I)$ make $S^n$ with an embedded $S^k$, whose complement $W$ is two copies of $B=D^n-D$ joined along the cylinder $(S^{n-1}-S)\times I$; reduced Mayer--Vietoris (printed pp. 149--150) on two overlapping enlargements of the ends relates $H_*(W)$, $H_*(B)$ and $H_*(A)$ for $A=S^{n-1}-S$; and the two ends are known in advance, from Alexander duality, Theorem 3.44 (printed p. 254), applied to the embedded spheres $S^k\subset S^n$ and $S^{k-1}\subset S^{n-1}$. Both values are also what Proposition 2B.1(b) (printed p. 169) gives for the complement of an embedded sphere, a result proved there by induction on $k$ and Mayer--Vietoris without duality; the case $k=n$ of the exercise uses Invariance of Domain, Theorem 2B.3 (printed p. 172).
 :::
