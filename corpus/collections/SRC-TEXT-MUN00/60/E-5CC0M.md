@@ -41,8 +41,7 @@ audit:
     neighbourhood meets $B$ away from $x_0$. Checked against the book: the exercise on printed
     p. 375, the construction and description of $p$ in the proof of Lemma 60.5 on printed pp.
     373-374, and the definition of a covering map in §53. Not claimed: that the source computes
-    the preimage exactly -- it describes it, and the card's computation of the distance $2|\sin\pi
-    t|$ makes the description checkable.
+    the preimage exactly -- it describes it, and the card's computation of the distance $2\abs{\sin\pi t}$ makes the description checkable.
 - event: solution-written
   by: claude
   date: 2026-11-14
@@ -85,9 +84,9 @@ under $p'$ is contained in $A$.
 
 ::: pf-proof
 $p'$ wraps the $x$-axis once around $A$ with $(n,0)\mapsto x_0$ for every integer
-$n$, so $p'(t,0)$ is the point of $A$ at distance $2|\sin\pi t|$ from $x_0$.
+$n$, so $p'(t,0)$ is the point of $A$ at distance $2\abs{\sin\pi t}$ from $x_0$.
 Because $U$ is contained in the disc of radius $\tfrac12$, a point $(t,0)$ lies
-in $p'^{-1}(U)$ exactly when $2|\sin\pi t|<\tfrac12$, that is, when $t$ is within
+in $p'^{-1}(U)$ exactly when $2\abs{\sin\pi t}<\tfrac12$, that is, when $t$ is within
 $\delta$ of an integer for some $\delta\in(0,\tfrac12)$ with $2\sin(\pi\delta)
 <\tfrac12$. The points of the $x$-axis in $p'^{-1}(U)$ are therefore the union of
 the disjoint open intervals $(n-\delta,n+\delta)\times 0$, and the component
