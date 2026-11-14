@@ -56,7 +56,7 @@ audit:
   note: >-
     The computation of $U\cap X$ was wrong and is repaired. The disc of radius $1/2$ about $(0,1)$
     meets the tooth $\{1/n\}\times I$ in $\{1/n\}\times(a_n,1]$ with
-    $a_n=1-\sqrt{1/4-1/n^2}$, which for every $n\ge3$ is strictly below $1/2$ and tends to $1/2$
+    $a_n=1-\sqrt{1/4-1/n^2}$, which for every $n\ge3$ is strictly above $1/2$ and tends to $1/2$
     from above; the card wrote $(1/2,1]$ and called every piece of $U\cap X$ clopen, but the piece
     $\{0\}\times(1/2,1]$ is closed and not open in $U\cap X$, the teeth accumulating on it. The
     step now computes $U\cap X$, proves each tooth $T_n$ clopen -- closed as
