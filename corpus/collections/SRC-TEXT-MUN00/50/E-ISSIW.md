@@ -33,6 +33,19 @@ audit:
     only countably many pairwise disjoint nonempty open sets, since each contains a point of a fixed countable
     basis. Metrizability is cited from the card of §24 Exercise 6, where the dictionary order plane is shown to
     be metrizable (the space is the topological sum of continuum many copies of R). Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Nothing located treats supplementary Exercise 4 of §50 (printed
+    pp. 316--317). Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, the ten GitHub
+    repositories of Munkres solutions listed in COMPLAINTS.md stop before §36, and the AoPS post *Topology by
+    Munkres Chapter 8 | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630) answers §50 with
+    its formulas lost. The Stack Exchange query "dictionary order plane not second countable" returned nothing.
+    The card's two claims are its own: the interval $((a,b-1),(a,b+1))$ of the dictionary order is the vertical
+    segment $\theset{a}\times(b-1,b+1)$, which makes the space locally $1$-euclidean, and the uncountably many
+    pairwise disjoint open sets $\theset{a}\times(0,1)$ defeat second countability, which is what condition
+    (ii) of Exercise 2 requires. Nothing needed correction.
 ---
 
 ::: {.exercise}
