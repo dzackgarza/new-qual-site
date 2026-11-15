@@ -38,17 +38,31 @@ audit:
     both the product and the box topology. That is a correct proof, but it rests on two theorems of a paper the
     card does not cite, so it is not transcribed. The other answer, by Petra Axolotl (2023-11-02), says that the
     proof of Theorem 48.2 "simply goes through" and that it needs regularity and the non-emptiness of a nested
-    sequence of closures of basis elements $\prod_\alpha(a_\alpha,b_\alpha)$; that is true for the box topology,
-    where a nested sequence of boxes lies in the compact box $\prod_\alpha[a_\alpha,b_\alpha]$ of Theorem 37.3,
-    and for the uniform topology by Theorem 43.5, but in the product topology the closure of a basic open set is
-    $\RR$ in all but finitely many coordinates and is not compact, so the one-line claim does not close that
-    case. The card's coordinatewise construction is what supplies it: the coordinates are restricted one finite
+    sequence of closures of basis elements $\prod_\alpha(a_\alpha,b_\alpha)$; that is true, and near the end of
+    this pass the claim was misread as failing in the product topology, so that the sentence recorded it as
+    failing; the event of the same date below corrects that reading. The card's coordinatewise construction is
+    what supplies the non-emptiness: the coordinates are restricted one finite
     set at a time, so each coordinate is either never restricted, where any value lies in every projection, or
     restricted from some stage on, where the closed bounded intervals are nested from then on, and in both cases
     the assembled point lies in every closure. The post by Yougi, *Munkres Topology Solution: Chapter 8*
     (2025-07-10, https://hexo.yougi.top/2025/07/10/Munkres-Topology-Solution-Chapter-8/), answers the exercise
     at its Ex. 48.12 with one line for the uniform topology and "the same applies to box topology" for the
     other two, which is a gap.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Re-read on issue #144. The note above had said that Petra Axolotl's claim that the proof of Theorem 48.2
+    "simply goes through" fails in the product topology, because there the closure of a basic open set is
+    $\RR$ in all but finitely many coordinates and so is not compact. That objection is wrong: what the
+    argument needs of a nested family of closures of basic open sets is a common point, not compactness, and in
+    the product topology the family has one, because a coordinate once restricted stays restricted — a basic
+    open set is a bounded open interval in finitely many coordinates and $\RR$ in the others, and
+    $U_n\subseteq U_{n-1}$ forces the projection at a coordinate already restricted to lie inside the interval
+    chosen there — so at such a coordinate the closed bounded intervals are nested and meet, while a coordinate
+    never restricted admits every value. The product case of the solution now states the restricted-coordinate
+    fact it uses. Nothing else on the card changed, and the other answer's Frolik-based proof still is not
+    transcribed.
 ---
 
 ::: {.exercise}
@@ -61,7 +75,7 @@ For the product topology, let $G_1, G_2, \ldots$ be dense open sets and $U_0$ a 
 $$
 \overline{U_n}\subset U_{n-1}\cap G_n,
 $$
-changing only finitely many coordinates at stage $n$ and choosing closed bounded coordinate intervals there. In a coordinate that is ever restricted, the first closed bounded interval there is compact, and all later closed intervals are nested inside it, so their intersection is nonempty. Choose any real number in every coordinate never restricted. The resulting point lies in $U_0\cap\bigcap G_n$.
+changing only finitely many coordinates at stage $n$ and choosing closed bounded coordinate intervals there. A coordinate once restricted stays restricted from then on: $U_n$ is contained in $U_{n-1}$, so at a coordinate where $U_{n-1}$ is a bounded interval the projection of $U_n$ lies inside that interval. In a coordinate that is ever restricted, the closure of the first interval chosen there is compact, and all later closed intervals are nested inside it, so their intersection is nonempty. Choose any real number in every coordinate never restricted. The resulting point lies in $U_0\cap\bigcap G_n$.
 
 For the box topology, perform the same construction coordinatewise, now shrinking every coordinate interval at stage $n$ and arranging diameter $<1/n$. Completeness of $\RR$ gives a point in every coordinate intersection, hence a point of $U_0\cap\bigcap G_n$.
 
