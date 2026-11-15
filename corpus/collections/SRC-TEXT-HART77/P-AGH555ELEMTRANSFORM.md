@@ -49,6 +49,23 @@ audit:
     are torsion-free rank-two sheaves and hence locally free on the smooth
     curve. Thus every step is an elementary transformation and twisting the
     final bundle does not change its projectivization.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The published-solution remark now says what the two located entries contain.
+    Egbert's V.5.5 is one sentence, a cross-reference to his V.2.5(a), on printed
+    p. 299 of tmp/sources/hartshorne-solutions-egbert.pdf. Yang Pi-Yeh's Solution
+    5.5.5 is on printed p. 113, not p. 114, of
+    tmp/sources/lfwin-hartshorne-solutions.pdf (p. 114 carries 5.5.6, which is
+    Hartshorne V.5.6); its outline is right and three steps are missing or
+    wrong: the sign of the elementary transform under Hartshorne's e = -deg
+    fraktur-e of (2.8.1), the effect of elm_P on the normalized bundle, which he
+    asserts "by definition", and the implicit choice of the points whose classes
+    must be matched, which needs Riemann-Roch. There is no complete published
+    proof of V.5.5 among the retained sets, so the card's own proof carries it
+    and the entry in COMPLAINTS.md now says so.
+
 ---
 
 ::: {.problem}
@@ -476,6 +493,47 @@ line-bundle twist.
 :::
 :::
 
-::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.5, printed p. 299 (elementary transformations of ruled surfaces).
+::: {.remark title="Published solutions"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.5, printed p. 299 of
+`tmp/sources/hartshorne-solutions-egbert.pdf` --- his numbering is one ahead, so his "5.5.6" is this
+exercise --- says only "Consequence of my proof of exc V.2.5.a". That is a cross-reference, not a proof.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.5.5, printed p. 113 of
+`tmp/sources/lfwin-hartshorne-solutions.pdf`, read in `tmp/sources/lfwin-hartshorne-solutions.md`, is the
+nearest published argument, and its outline is the right one. He writes the printed hint's formula
+$C'\cdot D'=C\cdot D+ac-a\,\mu_P(D)-c\,\mu_P(C)$ for $C\sim aC_0+bf$ and $D\sim cC_0+df$, which gives
+$C'\cdot D'=C\cdot D-1$ when $a=c=1$ and $P\in C\cap D$; hence $\operatorname{elm}_P X$ at $P\in C_0$ has invariant
+$e+1$, and finitely many such transformations make $e,e'>2g-2$. There (2.12)(b) makes both bundles
+decomposable, $\mathcal E=\OO_C\oplus\mathcal L$ and $\mathcal E'=\OO_C\oplus\mathcal L'$, and further
+transformations at points of $C_0$ change the divisor class $\mathfrak e$ of $\mathcal L$ by the class of
+the underlying point of $C$; since those points range over $C$, the classes $\mathfrak e$ and
+$\mathfrak e'$ can be made equal, after which $\mathcal E\cong\mathcal E'$ and $X\cong X'$. As printed the
+entry has three gaps, and they are the three points a reader of it would have to supply.
+
+First, the sign. Notation (2.8.1) sets $e=-\deg\mathfrak e$, where $\mathfrak e$ is the divisor class with
+$\mathcal L(\mathfrak e)\cong\bigwedge^2\mathcal E$; the elementary transform replaces $\mathcal E$ by the
+kernel of $\mathcal E\to k(P)$, whose determinant is $(\bigwedge^2\mathcal E)(-P)$, so
+$$\mathfrak e\longmapsto\mathfrak e-P,$$
+not $\mathfrak e+P$ as he writes. With the sign of (2.8.1) that gives $e\mapsto e+1$, the drop the hint
+shows, while his $+P$ would give $e-1$.
+
+Second, his step "for any $P\in C_0$, by definition, $\operatorname{elm}_P X$ has
+$\tilde{\mathfrak e}=\mathfrak e+P$" asserts the effect on the normalized bundle instead of proving it. The
+computation is the card's step [](#elementary-transform-as-kernel){.pf-ref}: with $P\in C_0$ lying over
+$q\in C$, the kernel of $\mathcal E\to k(P)$ is $\OO_C\oplus\mathcal L(-q)$, so the splitting survives the
+transformation and only the class of the second summand drops by $q$; the new section, the transform of
+$C_0$, is the image of $\mathcal L(-q)$ and has normal bundle $\mathcal L(-q)$, of degree $-e-1$, which is
+the self-intersection calculation of step [](#section-self-intersection-drops){.pf-ref}.
+
+Third, the choice of divisors is implicit. "We may blow up $X$ and $X'$ more and assume $e=e'$" is not
+enough: what must be made equal are the classes, and a transformation at $P$ over $q$ subtracts the class
+of $q$, so after $m$ of them at points over $q_1,\dots,q_m$ the class is $\mathfrak e-A$ with
+$A=q_1+\dots+q_m$ effective, and likewise $\mathfrak e'-A'$. The classes agree exactly when
+$A-A'=\mathfrak e-\mathfrak e'$, which is solvable because the degree of $A$ may be chosen freely and every
+class of degree $\ge2g-1$ on a curve of genus $g$ is effective, by Riemann--Roch; Yang states neither the
+equation nor the effectivity. With those three steps supplied his argument is complete, and none of them
+is in his text, so this card's obligation under issue #121 is not discharged by it. The proof above is
+independent of his: it works at the level of the bundles, from a generic isomorphism to a composition
+series of the cokernel, and takes from the printed hints only the self-intersection drop
+(step [](#section-self-intersection-drops){.pf-ref}) and the reduction to a finite sequence at the end.
 :::

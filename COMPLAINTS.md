@@ -1930,7 +1930,7 @@ cards that quote one say which build's page it is.
 twelve tags had been read against the claim made of them --- 0CCS, 0C6T, 01PW, 02JN, 01XD and 0BYA in the
 paragraph below, and 0C3S, 0C3T, 0C3V, 0C3W, 0C1T and 0C1R in the audit note of
 `P-AGH418ARITHGENUSSINGULAR` --- while the other citations had only been given a file each. That check has now
-been run over the whole collection. The `SRC-TEXT-HART77` cards cite **70 distinct tags on 44 cards**; every
+been run over the whole collection. The `SRC-TEXT-HART77` cards cite **70 distinct tags on 45 cards**; every
 one of the 70 has its file in `tmp/sources/stacks-tags/`, and every file's statement was read against what
 the card attributes to it, both the number the card gives it and the content it describes. **One citation was
 wrong**: Lemma 33.6.4 had been cited as tag 035U, which is Section 33.6, where the lemma sits; the lemma is
@@ -1939,7 +1939,7 @@ mentioned, is now listed with the rest. Nothing else needed changing: each of th
 result the card names for it. That accounts for all 79 files in the directory: the 70 tags cited on cards, the
 section tag 035U named in the corrected audit note, and eight that this file cites and no card does
 (0C2I--0C2M, 0C5X, 0C6Z, 0C73). The count of 70 in the sources list above is a count of citations, not a
-check, and is correct as a count.
+check, and is correct as a count, on a recount of 2026-11-15 that is recorded in the last section of this file.
 
 **The six tags whose old files had lost text, checked against the new ones.** 0CCS, 0C6T, 01PW, 02JN, 01XD
 and 0BYA are cited on seven cards. Each was read in its new file and compared with the claim the card
@@ -1973,8 +1973,16 @@ $\#g^{-1}(P)=1$ for the finite part of the Stein factorization, not $\deg g=1$, 
 birational --- $\operatorname{Bl}_O\PP^2\to\PP^2\to\PP^2/\sigma$ with $\sigma(x:y:z)=(-x:-y:z)$ has fibre $E$ over the
 image of $O$ and degree $2$. What Reid's theorem is applied to is the Stein factor $h:X\to X'$, which is a
 projective birational morphism of the nonsingular surface $X$ --- birational because $h_*\OO_X=\OO_{X'}$ has
-rank one --- and contracts $Y$ to a point; so $Y^2<0$ follows with no claim on $\deg f$, and the card is
-closed on Reid with that correction in it. Its two other
+rank one --- and contracts $Y$ to a point; so $Y^2<0$ follows with no claim on $\deg f$. Which part of that is
+published is Reid's, and which is not: Reid proves the theorem for a projective birational morphism, and the
+passage from the exercise's dominant generically finite $f$ to its Stein factor $h$ is the card's own
+argument, on neither his printed pages nor anyone else's that this file has located. The card is therefore
+closed on Reid for the birational case and on its own Stein-factorization step for the exercise's
+generality, and the entry, the card's remark and its solution body now say so; a reader of issue #121 also
+caught that the remark's $\sigma$ does not have $O$ as its only fixed point (the line $z=0$ is fixed
+pointwise, and what the counterexample uses is that $O$ is fixed) and that its "replace $X'$ by its
+normalization" was redundant, $X'$ being normal because $h$ is dominant, $X$ is normal and
+$h_*\OO_X=\OO_{X'}$ force the normalization of $X'$ to be an isomorphism. Its two other
 candidates do not prove it: Egbert's V.5.7 (printed p. 300) is a cross-reference to his defective V.5.4
 entry, and the NTU set's Exercise 5.7 (printed p. 21) concludes $Y^2=0$ from $0\ge mY^2$.
 
@@ -2013,21 +2021,32 @@ operation on vector bundles (printed p. 43, not V.5.5's), and it has no Chern--G
 there states
 V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, V.4.7--V.4.16, V.5.5, V.6.1 or V.6.2.
 
-**V.5.5 on Yang's 5.5.5, read this pass.** His entry is the nearest thing to a published proof of V.5.5 and it
-does not close it. Its first half is the printed hint's first part, the drop $D^2\mapsto D^2-1$ for a section
-under $\operatorname{elm}_P$, with the general formula $C'\cdot D'=C\cdot D+ac-a\,\mu_P(D)-c\,\mu_P(C)$ for
-$C\sim aC_0+bf$ and $D\sim cC_0+df$; its step from $e>2g-2$ to a decomposable $\mathcal E$ is the
-contrapositive of Hartshorne's Theorem V.2.12(b), $-2g\le e\le 2g-2$ for an indecomposable normalized
-$\mathcal E$. Its last step fails: from $e=e'$ it concludes $X\cong X'$, and $e$ is not a complete invariant.
-With $e>0$ fixed, $X=\mathbf P(\mathcal O_C\oplus L)$ and $X'=\mathbf P(\mathcal O_C\oplus L')$ with
-$\deg L=\deg L'=-e$ are isomorphic only if $L\cong L'$: $\mathbf P(\mathcal E)\cong\mathbf P(\mathcal E')$
-forces $\mathcal E'\cong\mathcal E\otimes M$ for some line bundle $M$, and
-$M\oplus L'\otimes M\cong\mathcal O_C\oplus L$ gives, by Krull--Schmidt, either $M\cong\mathcal O_C$ and
-$L\cong L'$, or $M\cong L$ and $L'\cong L^{-1}$, which is excluded by $\deg L^{-1}=e\ne-e$. The degree-zero
-part of the normalized bundle must be matched as well, and his entry never matches it; already for $e=0$ and
-$C$ of genus $\ge1$, $\mathbf P(\mathcal O_C\oplus\mathcal O_C)$ and $\mathbf P(\mathcal O_C\oplus L')$ with
-$L'\not\cong\mathcal O_C$ of degree $0$ have the same $e$ and are not isomorphic. What reaches an arbitrary
-$L'$ is applying elementary transformations at points of the positive section as well as at $C_0$, which
-tensors $L$ by $\mathcal O_C(\pm P)$ and so reaches every divisor class; his entry does not give that step,
-and the card's own proof works at the level of the bundles, where the modification changes the class and not
-only its degree. V.5.5 stays open on this file's list.
+**V.5.5 on Yang's 5.5.5, re-read; the reason given here before was a misreading.** His entry (Solution
+5.5.5, printed p. 113 of `tmp/sources/lfwin-hartshorne-solutions.pdf` --- p. 114 carries his 5.5.6, which is
+Hartshorne V.5.6) is the nearest thing to a published proof of V.5.5 and it does not close it, but not for
+the reason this file gave. His first half is the printed hint's first part and is right: the formula
+$C'\cdot D'=C\cdot D+ac-a\,\mu_P(D)-c\,\mu_P(C)$ for $C\sim aC_0+bf$ and $D\sim cC_0+df$, the drop
+$D^2\mapsto D^2-1$ for a section through the centre, and $e\mapsto e+1$ for $\elm_P$ at $P\in C_0$; and his
+step from $e>2g-2$ to decomposable bundles is the contrapositive of Hartshorne's Theorem V.2.12(b),
+$-2g\le e\le 2g-2$ for an indecomposable normalized $\mathcal E$. What this file misread is his symbol
+$\mathfrak e$: it is not the integer $e$ but the divisor class with
+$\mathcal L(\mathfrak e)\cong\bigwedge^2\mathcal E$, the object of Hartshorne's (2.8.1), normalized there by
+$e=-\deg\mathfrak e$. Read that way his last step is not "same $e$, hence isomorphic": elementary
+transformations at points of $C_0$ subtract point classes from $\mathfrak e$ and from $\mathfrak e'$, and
+since those points range over $C$ the two classes can be made equal, after which
+$\mathcal E=\OO_C\oplus\mathcal L$ and $\mathcal E'=\OO_C\oplus\mathcal L'$ with
+$\mathcal L\cong\mathcal L'$ are isomorphic and $X\cong X'$. So "from $e=e'$" and "the degree-zero part is
+never matched" are not his argument, and the Krull--Schmidt and $e=0$ paragraph that stood here is
+irrelevant to it. His real gaps are three. First, the sign: by (2.8.1) $e=-\deg\mathfrak e$, and the
+elementary transform replaces $\mathcal E$ by the kernel of $\mathcal E\to k(P)$, whose determinant is
+$(\bigwedge^2\mathcal E)(-P)$, so the class becomes $\mathfrak e-P$ and not $\mathfrak e+P$ as he writes;
+with his $+P$, $e=-\deg\mathfrak e$ would move $e$ to $e-1$ and contradict his own $e+1$. Second, the effect
+of $\elm_P$ on the normalized bundle is asserted --- "by definition", he writes --- and not proved: it needs
+the computation that for $P$ lying over $q$ the kernel is $\OO_C\oplus\mathcal L(-q)$, so that the splitting
+survives and the transform of $C_0$ has normal bundle $\mathcal L(-q)$ of degree $-e-1$. Third, the choice
+of the divisors is implicit: what has to be matched are the classes $\mathfrak e-A$ and
+$\mathfrak e'-A'$ for effective $A,A'$, so the equation $A-A'=\mathfrak e-\mathfrak e'$ has to be solved,
+and its solution needs Riemann--Roch, every class of degree $\ge2g-1$ on a curve of genus $g$ being
+effective; he states neither the equation nor the effectivity. The card's published-solution remark now
+records all three and its own proof supplies the second. As printed his entry is an outline, not a complete
+published solution, so V.5.5 stays open on this file's list and the card's own proof carries it.
