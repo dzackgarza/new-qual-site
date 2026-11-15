@@ -11,6 +11,24 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Corrected part (b)'s two covering-space steps and one slip of Yang's. First, the subgroup of the covering
+    S^1 x R -> T, (z,t) |-> (z^m, e^{2 pi i t}), is now given as mZ x 0, the product of the subgroup mZ of the
+    covering z |-> z^m with the subgroup 0 of R -> S^1, and derived from Theorem 60.1 (printed p. 371), instead
+    of from a sentence about where a generator of pi_1(S^1) lifts, which named an endpoint (zeta_m, 1) without
+    saying which path it was the endpoint of. Second, "f_A o p is again a covering map" now has its citation:
+    f_A is a homeomorphism, hence a one-sheeted covering map (Example 1 of §53, printed p. 337), and a composite
+    of covering maps whose second has finite fibres is a covering map, which is Exercise 4 of §53 (printed
+    p. 341). That exercise is not Theorem 53.3: Theorem 53.3 (printed p. 339) is the statement that a product
+    of two covering maps is a covering map, and it is cited where it is used, for the products S^1 x R -> T and
+    T -> T, and nowhere else. Yang's own footnote calls the composition exercise "Exercise 54.4"; the exercise
+    with that statement is Exercise 4 of §53, and the card now says so. Checked on the page images: Theorems
+    53.1, 53.3 and 60.1 and Exercise 4 of §53 at the pages cited, and that part (a) is untouched. Not covered:
+    Theorem 60.1 gives the isomorphism of fundamental groups of a product and the card uses its naturality for
+    the product map without proving it separately.
 - event: source-checked
   by: claude
   date: 2026-11-15
@@ -60,7 +78,7 @@ If $E$ is a covering space of $T$, then $E$ is homeomorphic either to $\RR^2$, o
 :::
 
 ::: {.solution}
-Both parts are taken from published solutions. Part (a)'s construction is Sammy Black's, answer 971387 (https://math.stackexchange.com/a/971387), posted 2014-10-13 to Math Stack Exchange question 971171, "Automorphism of fundamental group of torus" (https://math.stackexchange.com/questions/971171, asked by ChesterX on the same day): a matrix $A\in GL_2(\ZZ)$ lifts to the linear map $\tilde\varphi_A$ of $\RR^2$, which carries $\ZZ^2$ into itself and so descends to $T$, giving $(\varphi_A)_* = A$. That answer asserts the last equation without computing it, and the computation on the two factor circles below is this card's. Part (b) is David Yang's, *MATH104: Topology, Fall 2023*, Homework 11, in `HW/hw11.tex` lines 35--77 of `dyang5/MATH104-Topology` at commit 12686a815d58f29aeaadb90a30449ae85c0a613f (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw11.tex#L35-L77: the normal form of the printed hint, part (a) to put the subgroup into it, the three product coverings, and the equivalence theorem. The wording below is his argument with the book's results cited where he cites his own: he names Theorem 79.2 (printed p. 482) for the equivalence, Theorem 53.3 for products of coverings and Exercise 54.4 for the composition, and the card cites Theorem 53.3 (printed p. 339) and Theorem 79.4 (printed p. 482) for the same two steps.
+Both parts are taken from published solutions. Part (a)'s construction is Sammy Black's, answer 971387 (https://math.stackexchange.com/a/971387), posted 2014-10-13 to Math Stack Exchange question 971171, "Automorphism of fundamental group of torus" (https://math.stackexchange.com/questions/971171, asked by ChesterX on the same day): a matrix $A\in GL_2(\ZZ)$ lifts to the linear map $\tilde\varphi_A$ of $\RR^2$, which carries $\ZZ^2$ into itself and so descends to $T$, giving $(\varphi_A)_* = A$. That answer asserts the last equation without computing it, and the computation on the two factor circles below is this card's. Part (b) is David Yang's, *MATH104: Topology, Fall 2023*, Homework 11, in `HW/hw11.tex` lines 35--77 of `dyang5/MATH104-Topology` at commit 12686a815d58f29aeaadb90a30449ae85c0a613f (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw11.tex#L35-L77: the normal form of the printed hint, part (a) to put the subgroup into it, the three product coverings, and the equivalence theorem. The wording below is his argument with the book's results cited where he cites his own: he names Theorem 79.2 (printed p. 482) for the equivalence, Theorem 53.3 for products of coverings, and "Exercise 54.4" for the composition of two covering maps with finite fibres, which is Exercise 4 of §53 (printed p. 341) — the number is his slip — and the card cites Theorem 53.3 (printed p. 339), Exercise 4 of §53 (printed p. 341) and Theorem 79.4 (printed p. 482) for the same steps.
 
 Write $p: \RR^2 \to T = \RR^2/\ZZ^2$ for the standard covering map of Theorem 53.1 (printed p. 337); it is the universal covering, since $\RR^2$ is convex and a loop $f$ in $\RR^2$ is path homotopic to the constant loop at $f(0)$ by $H(s,t) = (1-t)f(s)$.
 
@@ -82,13 +100,13 @@ On fundamental groups, $(f_A)_*$ carries the class of the loop $t \mapsto [te_i]
 $$
 H=p_*\pi_1(E,e_0)\le\pi_1(T,x_0)\cong\ZZ^2 .
 $$
-The subgroup $H$ is nonzero or zero. If $H \ne 0$, the algebra result quoted in the printed hint of the exercise (printed p. 484), applied to the free abelian group $F=\ZZ^2$ of rank $2$ and to the subgroup $H$, gives a basis $a_1,a_2$ of $\ZZ^2$ in which either $H=\langle m a_1\rangle$ or $H=\langle m a_1, n a_2\rangle$, with $m,n>0$. A basis change is an element $A \in GL_2(\ZZ)$, and by part (a) it is realised by the homeomorphism $f_A$ of $T$ fixing $x_0$. The map $f_A \circ p: E \to T$ is again a covering map with the same total space, and its subgroup is $A(H)$, so it is enough to treat the three normal forms $H=0$, $H=\langle m e_1\rangle$, $H=\langle m e_1, n e_2\rangle$.
+The subgroup $H$ is nonzero or zero. If $H \ne 0$, the algebra result quoted in the printed hint of the exercise (printed p. 484), applied to the free abelian group $F=\ZZ^2$ of rank $2$ and to the subgroup $H$, gives a basis $a_1,a_2$ of $\ZZ^2$ in which either $H=\langle m a_1\rangle$ or $H=\langle m a_1, n a_2\rangle$, with $m,n>0$. A basis change is an element $A \in GL_2(\ZZ)$, and by part (a) it is realised by the homeomorphism $f_A$ of $T$ fixing $x_0$. The map $f_A \circ p: E \to T$ is again a covering map with the same total space — the map $f_A$ is a homeomorphism, hence a covering map with one point in each fibre (Example 1 of §53, printed p. 337), and a composite of covering maps whose second has finite fibres is a covering map (Exercise 4 of §53, printed p. 341) — and its subgroup is $A(H)$, so it is enough to treat the three normal forms $H=0$, $H=\langle m e_1\rangle$, $H=\langle m e_1, n e_2\rangle$.
 
 The coverings of $T$ whose subgroups are these are the three displayed in [[E-XFMJA]] (Exercise 4 of §79, printed p. 483): the universal covering $p:\RR^2\to T$ with subgroup $0$; the covering
 $$
 S^1\times\RR\longrightarrow T,\qquad (z,t)\longmapsto (z^m,e^{2\pi i t}),
 $$
-which is the product of the covering $z\mapsto z^m$ of $S^1$ (Example 3 of §53, printed p. 338) with the covering $\RR\to S^1$ of Theorem 53.1 (printed p. 337), hence a covering map by Theorem 53.3 (printed p. 339), and which corresponds to the subgroup $\langle m e_1\rangle$ because a generator of $\pi_1(S^1)$ lifts to a path in $S^1\times\RR$ from $(1,0)$ to $(\zeta_m,1)$ exactly when its degree is divisible by $m$; and the covering
+which is the product of the covering $z\mapsto z^m$ of $S^1$ (Example 3 of §53, printed p. 338) with the covering $\RR\to S^1$ of Theorem 53.1 (printed p. 337), hence a covering map by Theorem 53.3 (printed p. 339), and whose subgroup is $m\ZZ\times 0=\langle m e_1\rangle$: by Theorem 60.1 (printed p. 371) the fundamental group of a product is the product of the fundamental groups of the factors, and a product map induces the product of the homomorphisms induced by its factors, so this subgroup is the product of the subgroup $m\ZZ$ of $\pi_1(S^1)$ of the covering $z\mapsto z^m$ with the subgroup $0$ of the covering $\RR\to S^1$; and the covering
 $$
 T\longrightarrow T,\qquad (z,w)\longmapsto(z^m,w^n),
 $$

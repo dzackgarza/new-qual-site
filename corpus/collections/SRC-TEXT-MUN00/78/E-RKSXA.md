@@ -11,6 +11,22 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Part (a) was proved by local homology, H_2 of the pair (H^2, H^2 - q) against H_2 of (R^2, R^2 - z), and
+    this book never develops homology: the same objection that replaced the simplicial computation on E-II4JY.
+    Part (a) is now proved by the book's means alone. The half-disc D about q is star convex after q is
+    removed, hence simply connected (Exercise 1 of §52, printed p. 334). A punctured open set W - z of R^2 is
+    not: the radial projection onto a small circle S about z inside W is a retraction of W - z onto S, so by
+    Lemma 55.1 (printed p. 348) the inclusion of S induces an injection of pi_1(S) = Z (Theorem 54.5, printed
+    p. 345, with Corollary 52.5 for the circle of radius delta). A chart carries D - q homeomorphically onto
+    the punctured open set h(D) - h(q), and Corollary 52.5 (printed p. 334) makes their fundamental groups
+    isomorphic, so the two paragraphs contradict each other. Checked on the page images: Lemma 55.1 (printed
+    p. 348), Theorem 54.5 (printed p. 345), Corollary 52.5 and Exercise 1 of §52 (printed p. 334); and parts
+    (b) and (c), which cite part (a) and not its proof, are unchanged. Not covered: Lemma 55.1 and Exercise 1
+    of §52 are cited, not reproved, and nothing is claimed about higher homology of a manifold with boundary.
 - event: source-checked
   by: claude
   date: 2026-11-15
@@ -25,9 +41,11 @@ audit:
     from an open set U' of R^2 gives us a space which has fundamental group Z", which is false for an
     annulus; the argument removes the point from a neighbourhood whose simple connectivity it has not
     established, so it assumes what it has to prove. Its (b) is a sketch in one direction and takes the
-    statement of (a) as given. Nothing of it is transcribed, and the card's (a) stands: the local homology
-    H_2 of the pair, 0 for the half-disk and Z for the plane. The card's (b) and (c) are its own. Rejected in
-    the search: mse 5039847, which has no answer.
+    statement of (a) as given. Nothing of it is transcribed, and the card's (a) is now proved by the book's
+    own means — star convexity, the retraction of a punctured plane onto a circle, the injection that gives,
+    and invariance of the fundamental group — rather than by local homology, which the book does not develop;
+    see the source-corrected event that now heads this list. The card's (b) and (c) are its own. Rejected in the
+    search: mse 5039847, which has no answer.
 - event: source-checked
   by: claude
   date: 2026-11-11
@@ -49,20 +67,24 @@ The boundary of $X$ (denoted $\partial X$) consists of those points $x$ such tha
 :::
 
 ::: {.solution}
-(a) Let $q=(q_1,0)\in\partial H^2$. We use local homology. For a sufficiently small open half-disk $D_+$ about $q$, both $D_+$ and $D_+-\{q\}$ are contractible: the latter is star-shaped about any point directly above $q$ sufficiently close to it. Hence the long exact sequence of the pair gives
+(a) Let $q=(q_1,0)\in H^2$ and suppose that some neighbourhood of $q$ in $H^2$ were homeomorphic with an open set of $\RR^2$; we derive a contradiction. Take a homeomorphism $h:U\to V$ of such a neighbourhood onto an open set $V$ of $\RR^2$ and shrink it to a half-disc: for $\varepsilon>0$ small enough the set
 $$
-H_2(D_+,D_+-\{q\})=0.
+D=\{p\in H^2:\norm{p-q}<\varepsilon\}
 $$
-By excision this is the local group
+is a neighbourhood of $q$ in $H^2$ contained in $U$, and $h$ carries $D$ homeomorphically onto $h(D)$, which is open in $\RR^2$ because it is open in $V$. Hence
 $$
-H_2(H^2,H^2-\{q\})=0.
+D-\{q\}\cong h(D)-\{h(q)\} .
 $$
 
-By contrast, if $z$ lies in an open subset $V\subset\RR^2$, excision to a small disk about $z$ gives
+The punctured half-disc $D-\{q\}$ is star convex. The point $a_0=(q_1,\varepsilon/2)$ lies in it, and for $p\in D-\{q\}$ the segment joining $a_0$ to $p$ lies in $D$, since $D$ is convex, and meets $q$ in no point: every point of that segment other than $p$ has positive second coordinate, while the second coordinate of $q$ is $0$. So $D-\{q\}$ is simply connected (Exercise 1 of §52, printed p. 334).
+
+No punctured open set of $\RR^2$ is simply connected. Let $W\subseteq\RR^2$ be open and let $z\in W$; choose $\delta>0$ so that the circle $S=\{y:\norm{y-z}=\delta\}$ is contained in $W$, and let
 $$
-H_2(V,V-\{z\})\cong H_2(D^2,D^2-\{0\})\cong\ZZ.
+\rho:W-\{z\}\longrightarrow S,\qquad \rho(y)=z+\delta\,\frac{y-z}{\norm{y-z}},
 $$
-Local homology is preserved by homeomorphisms. Therefore no neighborhood of $q$ in $H^2$ can be homeomorphic to an open subset of $\RR^2$.
+be the radial projection. It is continuous and it fixes every point of $S$, so $S$ is a retract of $W-\{z\}$, and by Lemma 55.1 (printed p. 348) the homomorphism induced by the inclusion $S\to W-\{z\}$ is injective. Since $S$ is a circle, $\pi_1(S)\cong\pi_1(S^1)\cong\ZZ$ (Corollary 52.5, printed p. 334, and Theorem 54.5, printed p. 345), so $\pi_1(W-\{z\})$ is not trivial and $W-\{z\}$ is not simply connected.
+
+Finally $h$ restricts to a homeomorphism of $D-\{q\}$ with $h(D)-\{h(q)\}$, so by Corollary 52.5 (printed p. 334) these two spaces have isomorphic fundamental groups; but $h(D)-\{h(q)\}$ is a punctured open set of $\RR^2$, which the previous paragraph shows cannot be simply connected. Hence no neighbourhood of $q$ in $H^2$ is homeomorphic with an open set of $\RR^2$.
 
 (b) Suppose first that a chart
 $$
