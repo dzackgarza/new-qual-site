@@ -2202,7 +2202,17 @@ requirement for the reason given. No card is closed on this reading.
 - **V.4.14** (`P-AGH5414SPACECURVES`), Yang printed p. 112. A nine-row table covers exactly the nine printed
   $(d,g)$ pairs, and every row carries its printed $d$ and $p_a$ (checked row by row here); what is absent is
   the word "nonsingular": no member of any of the nine classes is shown to be nonsingular, and the table
-  carries no argument at all. Open.
+  carries no argument at all. **Closed on 2026-11-15** by a source outside the retained sets: Algebraic
+  Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces*
+  homework, Exercise 14 of §4 (by Ping-Hsun Chuang), PDF p. 18 of `tmp/sources/ntu-ag2-chapter5.pdf`. It
+  quotes Corollary 4.13 for the very-ampleness criterion and for the nonsingular member, and exhibits one class
+  per printed pair; the rows are $(8,6)$ $a=8$, $b=(4,3,3,2,2,2)$; $(8,7)$ $a=8$, $b=(3,3,3,3,2,2)$; $(9,7)$
+  $a=9$, $b=(4,4,4,2,2,2)$; $(9,8)$ $a=9$, $b=(4,4,3,3,2,2)$; $(9,9)$ $a=9$, $b=(4,3,3,3,3,2)$; $(10,8)$
+  $a=10$, $b=(6,3,3,3,3,2)$; $(10,9)$ $a=12$, $b=(5,5,5,5,3,3)$; $(10,10)$ $a=11$, $b=(5,5,4,3,3,3)$;
+  $(10,11)$ $a=10$, $b=(5,3,3,3,3,3)$. Recomputed here, every row has the printed degree and $p_a$, and satisfies
+  $b_i>0$, $a>b_i+b_j$ and $2a>\sum_{j\ne i}b_j$, so each class is very ample and contains an irreducible
+  nonsingular curve. The set's two slips are a $b_i$ for $b_j$ inside the third condition and "the theorem
+  V.4.13" for the corollary. The card keeps its own proof and now cites this one.
 - **V.4.15** (`P-AGH5415GENPOSITION`), Yang printed p. 112. (a) and (c) are argued; (d) enumerates the 56 and
   240 classes but does not show that no other irreducible curve has negative self-intersection, which is half
   of what (d) asks. His (e) is not a restatement of the hint but an argument: for $C=al-\sum b_ie_i$ a line and
@@ -2215,7 +2225,21 @@ requirement for the reason given. No card is closed on this reading.
 - **V.4.16** (`P-AGH5416FERMATCUBIC`), Yang printed p. 112. He gives the equations of the 27 lines on the
   Fermat cubic as the three families $x_0+x_3\omega^k=x_1+x_2\omega^j=0$ and its two variants, which is the
   exercise's first request, but no incidence relations and nothing about the automorphism group; the entry
-  also asserts rather than checks that these are all the lines. Open.
+  also asserts rather than checks that these are all the lines. The nearest published attempt found since is
+  outside the retained sets: Algebraic Geometry II, National Taiwan University, 2020 Spring (course of
+  Chin-Lung Wang), *Chapter V Surfaces* homework, Exercise 16 of §4 (by Po-Sheng Wu), PDF p. 18 of
+  `tmp/sources/ntu-ag2-chapter5.pdf`. It gives the $27$ lines as $x_0+\omega^ix_1=x_2+\omega^jx_3=0$ over the
+  three coordinate pairings, which is the card's first step, and describes the automorphism group as
+  $\operatorname{diag}(1,\omega^i,\omega^j,\omega^k)$ composed with a coordinate permutation, which is the
+  card's group. It does not close the exercise: its displayed identity equates the two products
+  $(x_0+x_1)(x_0+\omega x_1)(x_0+\omega^2x_1)$ and $(x_2+x_3)(x_2+\omega x_3)(x_2+\omega^2x_3)$ where the Fermat
+  cubic is their sum; it assumes $\operatorname{char}k\ne2$ where the lines need $\operatorname{char}k\ne3$;
+  its incidence count $18\times3+27\times3=27\times10\div2$ is wrong, the configuration having $18$ points on
+  three lines and $81$ on two ($18\cdot3+81\cdot1=135$, recomputed here over $\QQ(\omega)$: $135$ intersecting
+  pairs, $18$ points of multiplicity three and $81$ of multiplicity two, those $81$ being the points whose four
+  coordinates are all of the form $\pm\omega^r$ with an even number of minus signs,
+  $\binom42\cdot3^4/6=81$); and it computes the group only among the automorphisms induced by
+  $\operatorname{Aut}(\PP^3)$, with no order. Open.
 - **V.4.3** (`P-AGH543ORDINARYSING`), Yang printed p. 109. The quadratic-transformation loop is there, but the
   multiplicity drop $\mu(R_i)<\mu(P_1)$ is asserted and the termination at ordinary singularities is inferred
   from it without the intersection-number computation that produces it, so the entry does not prove the
@@ -2257,3 +2281,27 @@ requirement for the reason given. No card is closed on this reading.
 
 **No closure.** The three reader items of the pass are in $d387252b70$; the cards above keep their own proofs
 and the obligation recorded in their sections.
+
+## `SRC-TEXT-HART77` #121: the third pass of 2026-11-15, four repairs and the next two cards
+
+**The four repairs.** Egbert's MinerU text version now exists and is cited on the cards that read him
+(`tmp/sources/hartshorne-solutions-egbert.md`, 304 PDF pages, markers every twenty; its line 12563 reads
+"Now use ?." where p. 294 prints the star, so symbols come off the page image). V.5.5 now quotes his paragraph
+verbatim, "So we may blow-up $X$ and $X'$ more and assume $\mathfrak e=\mathfrak e'$". V.4.12 records Yang's
+false $h^0$ at printed p. 111 and its source, the $k\to k$ of his sequence, and the V.4.12 entry above is
+corrected on two points: Egbert's page is p. 292 alone, and his closing step is not a misuse of (4.11) --- the
+number is carried both by the Weyl-groups exercise and by **Theorem 4.11** of the text, whose (iii) with the
+equivalence makes an ample $D$ very ample and hence positive on every curve. V.2.13 records the two wrong
+values in its input 5.2.12 (p. 104: $2$ against the true $3$; p. 105: $4$ against $5$, and $0$ against $1$),
+which cancel in the two drops he tests.
+
+**V.4.14 is closed** on a source outside the retained sets, the National Taiwan University Chapter V homework,
+Exercise 14 (PDF p. 18): nine classes, one per printed pair, each verified against Corollary 4.13. **V.4.16 is
+not closed**: the same set's Exercise 16 gives the 27 lines and the shape of the group but with a sign slip, the
+wrong characteristic hypothesis, an incidence count of 27 double points where there are 81, and the group only
+among the automorphisms induced by $\operatorname{Aut}(\PP^3)$.
+
+**What remains on this list.** V.4.7, V.4.9, V.4.10, V.4.15, V.4.16, V.4.3, I.2.9(b), and the earlier entries of
+this file's Chapter V, II.2.15, II.3.15, I.3.16, I.5, I.6, I.7 and III.7.4(b),(d) sections. The next card to
+read is **V.4.15** (the 56 and 240 negative curves and the admissible-transformation argument), then V.4.3, then
+I.2.9(b).
