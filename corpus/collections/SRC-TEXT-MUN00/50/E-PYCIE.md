@@ -25,6 +25,19 @@ audit:
     says what is true and available, that the construction in the proof of Theorem 50.6 gives, for every delta,
     an open cover of R^N of order N+1 by sets of diameter less than delta, whence dimension at most N. The
     second step is the closed-subspace argument of Theorem 50.1 and is now labelled as such.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Nothing located proves Munkres §50 Exercise 10 (printed p.
+    318). Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, the ten GitHub repositories of
+    Munkres solutions listed in COMPLAINTS.md stop before §36, and the AoPS post *Topology by Munkres Chapter 8
+    | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630) answers §50 with its formulas lost.
+    The two steps the card proves are the ones the corollary needs and the book does not state separately: that
+    $\RR^N$ has covering dimension at most $N$, obtained by scaling the order-$(N+1)$ covers of the proof of
+    Theorem 50.6 to diameters below a Lebesgue number, and that a closed subspace inherits the bound, by
+    adjoining $X\setminus A$ to a cover of $A$ and intersecting a refinement with $A$. Nothing needed
+    correction.
 ---
 
 ::: {.exercise}
