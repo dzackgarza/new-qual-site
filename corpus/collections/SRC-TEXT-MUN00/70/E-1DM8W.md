@@ -37,9 +37,21 @@ audit:
     Lemma 68.3 (printed p. 418) and §59, and follows the exercise's hint: q = phi_1, phi_2 defined through the
     isomorphism pi_1(U cap V)/ker i_2 = pi_1(V), and Phi built by Theorem 70.1 as a left inverse of h. Nothing
     changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Two defects reported by a reader of this card, checked against §70 (exercises printed p. 433). (a) The
+    exercise stands under the section's printed sentence "In the following exercises, assume the hypotheses of
+    the Seifert-van Kampen theorem", which the card's statement omitted; the statement now opens with it. (b)
+    Part (a)'s printed hint "[Hint: Show j_1 is surjective.]" was missing from the statement, which carried
+    part (b)'s hint only; it is restored. The proof was re-read and kept: it uses that j_1 is onto in step 1,
+    and nothing in it depended on the hint's absence.
 ---
 
 ::: {.exercise}
+
+Assume the hypotheses of the Seifert–van Kampen theorem (Theorem 70.1, printed p. 426).
 
 Suppose that $i_2$ is surjective.
 
@@ -50,6 +62,7 @@ h: \pi_1(U, x_0)/M \to \pi_1(X, x_0),
 $$
 
 where $M$ is the least normal subgroup of $\pi_1(U, x_0)$ containing $i_1(\ker i_2)$.
+[Hint: Show $j_1$ is surjective.]
 
 (b) Show that $h$ is an isomorphism.
 [Hint: Let $H = \pi_1(U, x_0)/M$. Let $\phi_1: \pi_1(U, x_0) \to H$ be the projection. Use the fact that $\pi_1(U \cap V, x_0)/\ker i_2$ is isomorphic to $\pi_1(V, x_0)$ to define a homomorphism $\phi_2: \pi_1(V, x_0) \to H$. Use Theorem 70.1 to define a left inverse for $h$.]
