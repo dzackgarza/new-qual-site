@@ -60,10 +60,10 @@ Reflexivity and symmetry are immediate, and transitivity follows from transitivi
 :::
 
 ::: pf-step
-Every net indexed by a set directed in the wider sense has a subnet indexed by a partially ordered directed set, with the same limits and the same sets of indices that are frequently in a given neighborhood.
+Every net indexed by a set directed in the wider sense has a subnet indexed by a partially ordered directed set, with the same limits; and a point is an accumulation point of the net if and only if it is one of that subnet.
 
 ::: pf-proof
-Choose $f([\alpha]) \in [\alpha]$ for each class. If $[\alpha] \preceq [\beta]$, then $f([\alpha]) \sim \alpha \preceq \beta \sim f([\beta])$, so $f$ is order preserving, and $f(\bar J)$ is cofinal in $J$ because $\alpha \preceq f([\alpha])$. Hence $(x_{f([\alpha])})_{[\alpha] \in \bar J}$ is a subnet of $(x_\alpha)_{\alpha \in J}$, and by the preceding exercise it converges to every limit of $(x_\alpha)$. Moreover, if $U \subset X$ and $\alpha_0 \in J$, then $x_{f([\alpha])} \in U$ with $f([\alpha]) \succeq \alpha_0$ exactly when some index of $J$ above $\alpha_0$ lies in the corresponding set, because $f([\alpha]) \sim \alpha$; so a subnet of this kind finds the same frequent indices.
+Choose $f([\alpha]) \in [\alpha]$ for each class. If $[\alpha] \preceq [\beta]$, then $f([\alpha]) \sim \alpha \preceq \beta \sim f([\beta])$, so $f$ is order preserving, and $f(\bar J)$ is cofinal in $J$ because $\alpha \preceq f([\alpha])$. Hence $(x_{f([\alpha])})_{[\alpha] \in \bar J}$ is a subnet of $(x_\alpha)_{\alpha \in J}$, and by the preceding exercise it converges to every limit of $(x_\alpha)$. Moreover a subnet of this subnet is again a subnet of $(x_\alpha)_{\alpha \in J}$, a composite of two order preserving maps with cofinal image being order preserving with cofinal image, and by the preceding exercise a point to which some subnet converges is an accumulation point of $(x_\alpha)$. So the existence of a convergent subnet, and by that exercise the existence of an accumulation point, transfers between $(x_\alpha)$ and its subnet on $\bar J$.
 :::
 
 :::
