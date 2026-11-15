@@ -45,6 +45,19 @@ audit:
     and $k$ as a two-tooth sawtooth of height $\alpha/4$ with teeth at $1/4$ and $3/4$, which is what the card
     computes with, and the thresholds $h\le1/4$ for $g$ and $h\le1/8$ for $k$ are the ones the book states.
     Nothing needed correction.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Re-read on issue #144. The argument for $k$ said that one of the two intervals of length $h$ has no vertex
+    in its interior and is therefore contained in one linear piece; at $x=0$ the backward interval leaves
+    $[0,1]$ and at $x=1$ the forward one does, so there is no such interval there to be contained in a piece.
+    The endpoint cases are now separate: at $x=0$ the interval $[0,h]\subseteq[0,1/4]$, and at $x=1$ the
+    interval $[1-h,1]\subseteq[3/4,1]$, since $h\le1/8$ is below the vertex spacing $1/4$. For $0<x<1$ the
+    two-interval argument stands, and the passage from "no vertex in the interior" to "inside one linear piece"
+    is now drawn from the interior lying in one component of $I$ minus the vertices. The parts for $f$ and $g$
+    are unchanged: $f$'s quotients are covered by the endpoint cases already on the card, and $g$'s split
+    $x\le1/2$, $x\ge1/2$ keeps both intervals inside $I$ because $h\le1/4$.
 ---
 
 ::: {.exercise}
@@ -94,7 +107,7 @@ $$
 (0,0),\quad (1/4,\alpha/4),\quad(1/2,0),\quad
 (3/4,\alpha/4),\quad(1,0).
 $$
-Again every linear piece has slope $\pm\alpha$.  Let $0<h\le1/8$ and $x\in I$. If both intervals $[x-h,x]$ and $[x,x+h]$ had a vertex in the interior, say $t<x<t'$, then $t'-t<2h\le1/4$, which is impossible because distinct vertices are at distance exactly $1/4$. So one of the two intervals has no vertex in its interior and is therefore contained in one of the four linear pieces.  Along that interval the corresponding secant quotient has absolute value $\alpha$.  Hence
+Again every linear piece has slope $\pm\alpha$.  Let $0<h\le1/8$ and $x\in I$.  At $x=0$ the forward interval $[0,h]$ is contained in $[0,1/4]$, and at $x=1$ the backward interval $[1-h,1]$ is contained in $[3/4,1]$, one linear piece in each case, so the corresponding quotient has absolute value $\alpha$.  For $0<x<1$ both intervals lie in $I$.  If both had a vertex in the interior, say $t<x<t'$, then $t'-t<2h\le1/4$, which is impossible because distinct vertices are at distance exactly $1/4$. So one of the two intervals has no vertex in its interior; its interior lies in one of the four open subintervals cut out by the vertices, so the interval lies in the closure of that piece, which is one of the four linear pieces.  Along it the corresponding secant quotient has absolute value $\alpha$.  Hence
 $$
 \Delta k(x,h)\ge\alpha
 \qquad(0<h\le1/8).
