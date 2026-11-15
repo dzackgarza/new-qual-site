@@ -27,6 +27,24 @@ audit:
     both for every n with alpha > n, and the card now takes h = min{1/n, 1/4} and h = min{1/n, 1/8}. The
     argument that one of the two intervals has no vertex in its interior is now given, in place of the bare
     statement that the vertices are spaced further apart than the step.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). The only located treatment of Munkres §49 Exercise 1 (printed
+    p. 304) is the AoPS post *Topology by Munkres Chapter 8 | Day 18*
+    (https://artofproblemsolving.com/community/c3401823h3647630), whose answer to §49 Exercise 1 survives in the
+    extraction only as the connectives between its formulas ("Observe that for and , For and , either or , so
+    ."), so nothing of it can be read or transcribed, and the site answers an automated request with a human
+    check, which was not worked around. Murayama's selection has no Chapter 8, dbFin has no chapter-7 or
+    chapter-8 page, the ten GitHub repositories of Munkres solutions listed in COMPLAINTS.md stop before §36,
+    and the Stack Exchange queries "nowhere differentiable U_n Munkres" and "continuous function arbitrary small
+    nowhere differentiable dense" returned nothing on the section. The card's reading of the two figures was
+    checked against the page image: Figure 49.1 on printed p. 301 (PDF p. 316 of
+    tmp/sources/munkres-2000-topology.pdf) shows $g$ as a tent of height $\alpha/2$ with its vertex at $1/2$,
+    and $k$ as a two-tooth sawtooth of height $\alpha/4$ with teeth at $1/4$ and $3/4$, which is what the card
+    computes with, and the thresholds $h\le1/4$ for $g$ and $h\le1/8$ for $k$ are the ones the book states.
+    Nothing needed correction.
 ---
 
 ::: {.exercise}
