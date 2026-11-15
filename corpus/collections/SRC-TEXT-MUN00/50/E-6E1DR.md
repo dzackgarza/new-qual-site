@@ -26,6 +26,19 @@ audit:
     countable and have dimension at most N, and the converse needs the compact subspaces of X to have dimension
     at most dim X, which is Theorem 50.1 because a compact subspace of a Hausdorff space is closed. Nothing
     needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Nothing located proves Munkres §50 Exercise 11 (printed p.
+    318). Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, the ten GitHub repositories of
+    Munkres solutions listed in COMPLAINTS.md stop before §36, and the AoPS post *Topology by Munkres Chapter 8
+    | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630) answers §50 with its formulas lost.
+    The converse is the exercise's content and is assembled from three earlier results, which the card names:
+    the imbedding theorem of Exercise 6 in the direction that a space of finite dimension with a countable
+    basis and locally compact Hausdorff imbeds as a closed subspace, the dimension bound of Exercise 10 for
+    closed subspaces of $\RR^N$, and the local compactness and second countability of a closed subspace of
+    $\RR^N$ for the forward direction. Nothing needed correction.
 ---
 
 ::: {.exercise}
