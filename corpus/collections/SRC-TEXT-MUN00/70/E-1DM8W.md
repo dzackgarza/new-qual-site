@@ -24,6 +24,19 @@ audit:
     quotient of a free product, and against §59 for the generation of pi_1(X) by the two images. The point the
     hint leaves implicit is that phi_2 is well defined only because ker i_2 is the subgroup identified with the
     kernel of the projection, which is step 2.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144) for §70 Exercise 2 (printed p. 433); queries and sets are in the
+    COMPLAINTS.md entry for §66--§73 of SRC-TEXT-MUN00. Query used: "Seifert-van Kampen i_2 is surjective
+    exercise solution least normal subgroup Munkres 70.2 isomorphism". Located, not readable: Math StackExchange
+    2504181, on this exercise, and 3842197, "Munkres van Kampen's theorem", on the definition of phi_2; both
+    bodies are behind the API throttle for this address and the site's human check, and neither has a Wayback
+    snapshot. Nothing was transcribed. The card's own proof was re-read against Theorem 70.1 (printed p. 426),
+    Lemma 68.3 (printed p. 418) and §59, and follows the exercise's hint: q = phi_1, phi_2 defined through the
+    isomorphism pi_1(U cap V)/ker i_2 = pi_1(V), and Phi built by Theorem 70.1 as a left inverse of h. Nothing
+    changed.
 ---
 
 ::: {.exercise}
