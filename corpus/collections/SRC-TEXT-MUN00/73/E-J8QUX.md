@@ -52,6 +52,24 @@ audit:
     members are open because q is closed. (c) Step 2 asserted that A is a compact subspace of R^2 without a
     reference; the remark on printed p. 434 that the wedge of n circles imbeds in the plane as a union of n
     circles is now cited, and that union is compact. Step 3 was re-read and kept.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    A reader's defect in step 1, checked against the book and repaired. The saturation written there was
+    indexed by the restrictions of the attaching map to one boundary circle at a time, so it omitted a point
+    of one boundary circle whose image in A is also the image of a point of a boundary circle of another
+    cell: with C = {x'} and x' in Bd B_1, a y in Bd B_2 with f(y) = f(x') has q(y) = q(x'), so y lies in the
+    saturation and in no displayed piece. That cannot happen in the one-cell case, and Exercise 2 attaches m
+    cells by one map f defined on the union of the boundary circles (printed p. 445), so step 1 now treats f
+    as that single map, on D = the disjoint union of the Bd B_i: the saturation is
+    C union K union f^{-1}(K union (C cap A)) with K = f(C cap D). K is compact, hence closed in the
+    Hausdorff A (Theorems 26.5 and 26.3, printed pp. 166 and 165), which is what makes the union closed; the
+    enumeration of the three kinds of point now separates f(x) = f(c) for c in C cap D, the cross-cell case
+    the old formula lost, from f(x) in C cap A. The card also concluded q(C) is closed with no reason given;
+    the quotient property of X is now stated. The unused metric on E introduced in the preamble is dropped:
+    no step uses it, and step 2 needs only second countability. Steps 2 and 3 are unchanged, and the printed
+    statement (Exercise 4, printed p. 445) is untouched.
 ---
 
 ::: {.exercise}
@@ -62,7 +80,7 @@ Show that the space constructed in [[E-VYYH3]] is in fact metrizable.
 
 ::: {.solution}
 
-Let $E=A\sqcup B_1\sqcup\cdots\sqcup B_m$ and $q:E\to X$ be as in the construction of Exercise 2, and let $d$ be a metric for $E$, which is compact metrizable.
+Let $E=A\sqcup B_1\sqcup\cdots\sqcup B_m$ and $q:E\to X$ be as in the construction of Exercise 2, with attaching map $f:\bigsqcup_{i=1}^m\operatorname{Bd}B_i\to A$, a single map defined on the union of the boundary circles (Exercises 2 and 4 of §73, printed p. 445).
 
 ::: pf
 
@@ -72,11 +90,13 @@ $q$ is a closed map with compact fibres.
 
 ::: pf-proof
 
-For closedness, let $C\subseteq E$ be closed and let $f_i$ be the restriction of the attaching map to $\operatorname{Bd}B_i$. The saturation of $C$ is
+Write $D=\bigsqcup_{i=1}^m\operatorname{Bd}B_i$, and for closed $C\subseteq E$ put $K=f(C\cap D)$. The saturation of $C$ is
 $$
-q^{-1}q(C)=C\cup\bigcup_{i=1}^m\Bigl(f_i(C\cap\operatorname{Bd}B_i)\cup f_i^{-1}\bigl(f_i(C\cap\operatorname{Bd}B_i)\bigr)\cup f_i^{-1}(C\cap A)\Bigr):
+q^{-1}q(C)=C\cup K\cup f^{-1}\bigl(K\cup(C\cap A)\bigr).
 $$
-a point of $A$ lies in it when it lies in $C$ or is $f_i(x)$ for some $x\in C\cap\operatorname{Bd}B_i$; a point $x$ of $\operatorname{Bd}B_i$ lies in it when $x\in C$, when $f_i(x)\in C\cap A$, or when $f_i(x)=f_i(x')$ for some $x'\in C\cap\operatorname{Bd}B_i$; and a point of $\operatorname{Int}B_i$ lies in it only when it lies in $C$. Each piece is closed: $C$ by hypothesis; $f_i(C\cap\operatorname{Bd}B_i)$, because $C\cap\operatorname{Bd}B_i$ is compact and its image is compact (Theorem 26.5, printed p. 166), hence closed in the Hausdorff space $A$ (Theorem 26.3, printed p. 165); and the two preimages, because $f_i$ is continuous and the sets they come from are closed in $A$. A finite union of closed sets is closed, so $q(C)$ is closed and $q$ is a closed map. The fibre $q^{-1}(x)$ is a closed subset of the compact space $E$, hence compact (Theorem 26.2, printed p. 165). So $q$ is perfect.
+The map $q$ sends $x\in D$ to $f(x)$ and is injective on $A$ and on each $\operatorname{Int}B_i$. So $a\in A$ satisfies $q(a)\in q(C)$ exactly when $a\in C$ or $a=f(x)$ for some $x\in C\cap D$, that is $a\in C\cup K$; a point $x\in D$ satisfies $q(x)\in q(C)$ exactly when $x\in C$, or $f(x)=f(c)$ for some $c\in C\cap D$, or $f(x)\in C\cap A$, the last two being $x\in f^{-1}(K)$ and $x\in f^{-1}(C\cap A)$; and a point of $\operatorname{Int}B_i$ satisfies it exactly when it lies in $C$. The second of those cases is the one the single map $f$ contributes: boundary points of two different cells with the same image in $A$ are one point of $X$, so each lies in the saturation of the other, whichever cell $C$ meets.
+
+Each piece is closed: $C$ by hypothesis; $C\cap D$ is closed in the compact space $D$, hence compact, so $K=f(C\cap D)$ is compact (Theorem 26.5, printed p. 166) and therefore closed in the Hausdorff space $A$ (Theorem 26.3, printed p. 165); $C\cap A$ is closed in $A$, so $K\cup(C\cap A)$ is closed in $A$ and its preimage is closed in $D$, hence in $E$. A finite union of closed sets is closed, so $q^{-1}q(C)$ is closed; $X$ carries the quotient topology, so a subset of $X$ is closed exactly when its preimage is, and $q(C)$ is closed. The fibre $q^{-1}(x)$ is a closed subset of the compact space $E$, hence compact (Theorem 26.2, printed p. 165). So $q$ is perfect.
 
 :::
 
