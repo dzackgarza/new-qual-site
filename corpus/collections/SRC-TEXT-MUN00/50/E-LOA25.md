@@ -26,6 +26,18 @@ audit:
     Lemma 39.2 and Theorem 40.3, and the other half being exactly the statement that a paracompact Hausdorff space
     that is locally metrizable is metrizable. The local metrizability is supplied by the first supplementary
     exercise. Nothing else needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Nothing located treats supplementary Exercise 8 of §50 (printed
+    p. 318) as an exercise; the statement is the Smirnov metrization theorem, Theorem 42.1 of the book, and the
+    card derives both directions from that theorem rather than from a located proof. Murayama's selection has
+    no Chapter 8, dbFin has no chapter-8 page, the ten GitHub repositories of Munkres solutions listed in
+    COMPLAINTS.md stop before §36, and the AoPS post *Topology by Munkres Chapter 8 | Day 18*
+    (https://artofproblemsolving.com/community/c3401823h3647630) answers §50 with its formulas lost. The Stack
+    Exchange queries of this pass are listed in the COMPLAINTS.md entry for §43--§50. Nothing needed
+    correction.
 ---
 
 ::: {.exercise}
