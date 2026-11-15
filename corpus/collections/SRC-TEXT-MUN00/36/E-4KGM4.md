@@ -48,6 +48,17 @@ audit:
     with a Cloudflare human check, which is not worked around. The card's table is its own work,
     re-derived against Munkres' theorems as its earlier note records, and this pass did not re-read
     it; the search is recorded in the COMPLAINTS.md entry for §30--§36 with every query.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Compared with the published answer key by cinnamon_e, "Topology by Munkres Chapter 4 | Day 13"
+    (AoPS blog shooting star, 2025-09-05,
+    https://artofproblemsolving.com/community/c3401823h3644066, text at
+    tmp/sources/aops-shooting-star-munkres-ch4-day13.md), whose answer to Exercise 3 is that a
+    compact Hausdorff space satisfies 5-11 and 14. The card's eight properties are 5, 6, 7, 8, 9,
+    10, 11 and 14, and it excludes the same nine as the key; the card and the key agree, and the
+    key is now cited on the card.
 
 ---
 
