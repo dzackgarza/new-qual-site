@@ -33,8 +33,11 @@ audit:
     tmp/sources/mse-3743525-munkres-29-net-5c.md: disjoint neighborhoods of two supposed limits,
     the two indices given by convergence, a third dominating both, and a point of the empty
     intersection. The accepted answer 3743601 by Mittens on the same page makes the same argument
-    in its second paragraph. dbFin's solution to this exercise makes it too, with its running
-    indices written U and V where the net's index is meant; that slip is not carried over. This
+    in its second paragraph. dbFin's solution to this exercise makes the same argument; what is
+    wrong with its writing is the separation, which reads "two non-intersecting neighborhoods x in X
+    and y in Y", using the letter X, the space, for a neighborhood of x where U containing x and V
+    containing y are meant. Its index variables are j, k and gamma and are not confused with
+    neighborhoods, so the slip is one of naming and not the one recorded here before. This
     supersedes the 2026-11-10 note above.
 ---
 
