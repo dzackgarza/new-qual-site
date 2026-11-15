@@ -50,6 +50,27 @@ audit:
     with a Cloudflare human check, which is not worked around. The card's table is its own work,
     re-derived against Munkres' theorems as its earlier note records, and this pass did not re-read
     it; the search is recorded in the COMPLAINTS.md entry for §30--§36 with every query.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Compared with the published answer key by cinnamon_e, "Topology by Munkres Chapter 4 | Day 13"
+    (AoPS blog shooting star, 2025-09-05,
+    https://artofproblemsolving.com/community/c3401823h3644066, text at
+    tmp/sources/aops-shooting-star-munkres-ch4-day13.md), which answers Exercise 6 with the
+    properties 1-2, 5 and 14-15. The card listed property 6, limit point compactness, as preserved
+    as well, citing Exercise 28.3(a); that exercise asks whether a continuous image of a limit
+    point compact space is limit point compact, and the answer is no, so the key is right and the
+    card is corrected: the preserved properties are 1, 2, 5, 14 and 15, and the twelve others have
+    witnesses. The proof the card carried for property 6 chose one point of each fibre over a
+    countably infinite subset and took a limit point x of them, concluding that f(x) is a limit
+    point of the image; that does not follow, the value f(x) itself possibly being one of the
+    chosen points. The witness now given for 6 is Example 1 of §28, the product of the positive
+    integers with the two-point space whose only open sets are itself and the empty set, which is
+    limit point compact, together with the projection onto the discrete positive integers, which is
+    continuous and surjective onto a space with no limit points at all. The other eleven negative
+    entries stand as the earlier note records them, and the key agrees with all of them and with
+    properties 1, 2, 5, 14 and 15 among the positives.
 
 ---
 
@@ -61,21 +82,22 @@ Which of these properties are preserved by continuous maps?
 :::
 
 ::: {.solution}
-Exactly the following six properties of the list are preserved by continuous maps:
+Exactly the following five properties of the list are preserved by continuous maps:
 $$
-\boxed{(1),\ (2),\ (5),\ (6),\ (14),\ (15).}
+\boxed{(1),\ (2),\ (5),\ (14),\ (15).}
 $$
-That is: connectedness, path connectedness, compactness, limit point compactness, Lindelöfness, and the existence of a countable dense subset. None of the other eleven is preserved, and a witness is given for each below.
+That is: connectedness, path connectedness, compactness, Lindelöfness, and the existence of a countable dense subset. None of the other twelve is preserved, and a witness is given for each below, limit point compactness among them.
 
-**The six positive entries.**
+**The five positive entries.**
 (1) The continuous image of a connected space is connected, Theorem 23.5.
 (2) The continuous image of a path connected space is path connected: if $g: X \to Y$ is continuous and $f: [0,1] \to X$ is a path from $x$ to $x'$, then $g \circ f$ is a path from $g(x)$ to $g(x')$. This is the remark after Example 5 of §24.
 (5) The continuous image of a compact space is compact, Theorem 26.5.
-(6) The continuous image of a limit point compact space is limit point compact, Exercise 28.3(a): if $A \subseteq f(X)$ is infinite, choose a countably infinite $B \subseteq A$ and one point $x_b$ of each nonempty fibre $f^{-1}(b)$ over $B$; the set of the $x_b$ is infinite, so it has a limit point $x$ by hypothesis, and $f(x)$ is then a limit point of $f(\theset{x_b}) = B$, hence of $A$.
 (14) If $f: X \to Y$ is continuous and $X$ is Lindelöf, pull an open cover of $f(X)$ back to $X$, take a countable subcover, and push it forward: $f(X)$ is Lindelöf.
 (15) If $D \subseteq X$ is a countable dense subset then $f(D)$ is a countable dense subset of $f(X)$, since $f(\bar D) \subseteq \overline{f(D)}$.
 
-**The eleven negative entries.** Each witness is a continuous surjection whose domain has the property and whose image does not. In every case the domain is a discrete space, which is the finest topology on its underlying set, so the identity map out of it is continuous; discreteness gives Hausdorffness, regularity, normality, first countability, local compactness, local connectedness, local path connectedness and local metrizability, so the domain is never the obstruction. The targets are spaces of this chapter.
+**The twelve negative entries.** Each witness is a continuous surjection whose domain has the property and whose image does not. Except in entry (6) the domain is a discrete space, which is the finest topology on its underlying set, so the identity map out of it is continuous; discreteness gives Hausdorffness, regularity, normality, first countability, local compactness, local connectedness, local path connectedness and local metrizability, so the domain is never the obstruction. The targets are spaces of this chapter.
+
+- (6) Limit point compact: the projection $\ZZ_+ \times Y \to \ZZ_+$, $(n, y) \mapsto n$, where $Y$ is the two-point space whose only open sets are $Y$ and $\varnothing$. That product with the product topology is limit point compact and not compact, Example 1 of §28, and every nonempty subset of it has a limit point. The map is continuous, the preimage of $\{n\}$ being the open set $\{n\} \times Y$, and it is onto; the target is $\ZZ_+$ with the discrete topology, which is not limit point compact, its infinite subsets having no limit point, every singleton being open. Munkres' Exercise 28.3(a) asks whether a continuous image of a limit point compact space is limit point compact, and this is a negative answer to it.
 
 - (3) Locally connected: the identity from $\NN$ with the discrete topology onto $\QQ$ with the usual topology. The rationals are neither connected nor locally connected, Example 3 of §25. The same map refutes (4) local path connectedness, a path connected neighbourhood being connected.
 - (7) Locally compact Hausdorff: the identity from $\NN$ with the discrete topology onto $\QQ$. The rationals are not locally compact, Example 1 of §29, though $\QQ$ is Hausdorff.
@@ -88,5 +110,5 @@ That is: connectedness, path connectedness, compactness, limit point compactness
 - (16) Locally metrizable: the identity from $\RR$ with the discrete topology onto $\RR_\ell$. The Sorgenfrey line is regular and Lindelöf, Examples 2 of §31 and 3 of §30, so by Exercise 34.8 it would be metrizable if it were locally metrizable, and it is not metrizable, Exercise 30.6.
 - (17) Metrizable: the same map onto $\RR_\ell$, which is not metrizable, Exercise 30.6.
 
-A remark on the device. A finer topology inherits from a coarser one its closed sets, hence Hausdorffness, regularity and normality; that is why the domain of a witness above can be taken discrete, which is the finest topology on a set. It inherits neither countability axiom, nor compactness, nor local compactness, and the targets of the entries (12) and (13) are deliberately coarser than the usual topology of $\RR$ rather than finer.
+A remark on the device. A finer topology inherits from a coarser one its closed sets, hence Hausdorffness, regularity and normality; that is why the domain of all the witnesses above but the one for (6) can be taken discrete, which is the finest topology on a set. It inherits neither countability axiom, nor compactness, nor local compactness, and the targets of the entries (12) and (13) are deliberately coarser than the usual topology of $\RR$ rather than finer.
 :::
