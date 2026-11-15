@@ -11,6 +11,22 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §75 Exercise 1, printed p. 457. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md and the saved thread is tmp/sources/mse-358724-E-MYMF4.md, read whole.
+    Math StackExchange 358724, "connected sum of torus with projective plane" (asked by harlekin 2013-04-11),
+    has two answers, neither a proof of this exercise. 358728 by xyzzyz (2013-04-11) is two sentences: it says
+    to calculate the Euler characteristic, that the surface is non-orientable, and that the two together are
+    a complete set of invariants; it computes no characteristic, exhibits no cell structure, and names no
+    classification theorem. 568338 by Fang Hung-chien (2013-11-15) is a figure of the cut-and-paste, whose
+    source is a handout by Emina Alibegovic, and it computes nothing. Neither proves H_1(P^2#T), which is the
+    first half of the exercise, and neither proves the second half beyond naming its route. Both are recorded
+    as sources searched, and the card keeps its own proof: the one-vertex cell structure of the 6-gon scheme
+    aabc b^{-1}c^{-1} giving H_1 = Z^2 + Z/2, then chi = -1 with non-orientability in Theorem 77.5.
+    Rejected in the search: mse 100825, a link only.
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
