@@ -100,6 +100,21 @@ audit:
     elm_P X has e-tilde = e + 1", is the integer invariant. The remark now quotes
     the fraktur in both places, and its third gap --- that the classes, not the
     integer, are what must be matched --- is the reading the print supports.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The third gap's quotation made verbatim, on a reader's report of issue #121.
+    The remark had paraphrased the sentence as "We may blow up X and X' more and
+    assume fraktur-e = fraktur-e'"; the print reads "So we may blow-up X and X'
+    more and assume fraktur-e = fraktur-e'", with the hyphen in "blow-up", the
+    sentence opening with "So", and the fraktur class. Read in
+    tmp/sources/lfwin-hartshorne-solutions.md, the sentence is the eighth of
+    Solution 5.5.5 and reads "So we may blow-up X and X0 more and assume e = e'",
+    the MinerU text version writing the prime of X' as a zero and the fraktur as
+    a plain e; the page image of p. 114 has X' and the fraktur. The card now
+    quotes the printed reading and records the text version's two renderings. No
+    claim of the card changes.
 
 ---
 
@@ -564,7 +579,9 @@ transformation and only the class of the second summand drops by $q$; the new se
 $C_0$, is the image of $\mathcal L(-q)$ and has normal bundle $\mathcal L(-q)$, of degree $-e-1$, which is
 the self-intersection calculation of step [](#section-self-intersection-drops){.pf-ref}.
 
-Third, the choice of divisors is implicit. "We may blow up $X$ and $X'$ more and assume $\mathfrak e=\mathfrak e'$" is not
+Third, the choice of divisors is implicit. His sentence is, verbatim, "So we may blow-up $X$ and $X'$ more and
+assume $\mathfrak e=\mathfrak e'$" (printed p. 114; the MinerU text version writes the second surface as
+"X0", its rendering of the prime), and it is not
 enough: what must be made equal are the classes, and a transformation at $P$ over $q$ subtracts the class
 of $q$, so after $m$ of them at points over $q_1,\dots,q_m$ the class is $\mathfrak e-A$ with
 $A=q_1+\dots+q_m$ effective, and likewise $\mathfrak e'-A'$. The classes agree exactly when
