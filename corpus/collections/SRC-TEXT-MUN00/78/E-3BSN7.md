@@ -11,6 +11,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §78 Exercise 1, printed p. 476. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md. No source was saved. The queries were the Stack Exchange advanced
+    search "four triangular regions labelling schemes" (no hits) and the similar-question search from "What
+    surface is given by labelling scheme of four triangles" (15 items), none of which treats four triangles
+    in this form; the GitHub code search "munkres labelling scheme" returned no solutions file. The card
+    keeps its own proof. Its answer to (b) was corrected in the pass of #129: the triangles def and dfe^{-1}
+    give one vertex class, chi = 0 and H_1 = Z + Z/2, so the second component is the Klein bottle and the
+    answer S^2 sqcup K; that correction stands.
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29

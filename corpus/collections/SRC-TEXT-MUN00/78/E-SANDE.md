@@ -13,6 +13,18 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §78 Exercise 5, printed p. 476. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md. No source was saved. The queries were the Stack Exchange advanced
+    searches "compact connected triangulable 2-manifold with boundary k holes" and "X-with-k-holes Munkres"
+    (neither with hits) and the similar-question search from "Classification of compact surfaces with
+    boundary" (15 items), whose threads state the classification without proof; the GitHub code search
+    "munkres "Section 78"" returned no solutions file, and no course page found treats the section. The card
+    keeps its own proof, which is the capping argument of the exercise's hint: each boundary circle is
+    capped by a disk and Theorem 77.5 applied to the closed surface, the capping disks then removed.
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 78 Exercise 5, printed pp. 476-477. Capping the k boundary circles by discs gives a closed surface X, classified by Theorem 77.5; removing the interiors of the caps returns Y as X-with-k-holes. Checked against the printed hint that each boundary component is a circle, which the preceding exercise supplies. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.

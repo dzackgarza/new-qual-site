@@ -13,6 +13,23 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §78 Exercise 2(a)-(c), printed p. 476. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md and the saved source is
+    tmp/sources/gh-dyang5-MATH104-Topology-E-RKSXA.md, read whole. David Yang, MATH104: Topology, Fall 2023,
+    Homework 10, treats (a) and (b) only, in HW/hw10.tex lines 122-158 of dyang5/MATH104-Topology at commit
+    12686a815d58f29aeaadb90a30449ae85c0a613f. Its (a) is wrong as written: line 23 of the saved file reads
+    "Removing the point y from U preserves the simply-connectedness nature of U", which is exactly what does
+    not hold (a disk is simply connected and its punctured form is not), and line 24 reads "removing a point
+    from an open set U' of R^2 gives us a space which has fundamental group Z", which is false for an
+    annulus; the argument removes the point from a neighbourhood whose simple connectivity it has not
+    established, so it assumes what it has to prove. Its (b) is a sketch in one direction and takes the
+    statement of (a) as given. Nothing of it is transcribed, and the card's (a) stands: the local homology
+    H_2 of the pair, 0 for the half-disk and Z for the plane. The card's (b) and (c) are its own. Rejected in
+    the search: mse 5039847, which has no answer.
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 78 Exercise 2, printed p. 476. Part (a) by local homology: H_2 of the half-plane at a boundary point is 0 and H_2 of the plane at a point is Z, with excision. Parts (b) and (c) transport the chart to the boundary line and exhibit an interval chart on the boundary. Checked against the printed parts (a), (b), (c) of the exercise. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.

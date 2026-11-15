@@ -13,6 +13,17 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §78 Exercise 4, printed p. 476. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md. No source was saved. The queries were the Stack Exchange advanced
+    search "X-with-k-holes" (15 items) and the similar-question search from "Removing k open discs from a
+    surface gives a manifold with boundary with k boundary components" (15 items); the threads they return
+    state the result for a surface minus discs and prove none of the three parts, and the GitHub code search
+    "munkres "Section 78"" returned no solutions file. The card keeps its own proof, which exhibits the
+    half-plane charts on the boundary spheres and shows the boundary to be the disjoint union of k circles.
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 78 Exercise 4, printed p. 476. The punctured surface Y with annular collars, the boundary identified intrinsically with the k circles, which are disjoint because the U_i are. Uses the boundary criterion of the preceding card. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
