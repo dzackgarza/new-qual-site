@@ -64,12 +64,22 @@ audit:
   note: >-
     Part (b) took the map onto the cube [-m,m]^m from the card of §44 Exercise 1, which gives a
     continuous surjection of I onto I^m only; the step now writes the affine homeomorphism of I^m
-    onto [-m,m]^m, the coordinate x going to 2mx - 1, the inclusion of [-m,m]^m in R^omega, whose
+    onto [-m,m]^m, the coordinate x going to 2mx - m, the inclusion of [-m,m]^m in R^omega, whose
     coordinate functions are coordinates of the point or the constant 0, and the composite of the
     three. The 2026-11-15 note above also says it corrects the exercise number from 2 to 3; it
     corrects nothing, since the note of 2026-11-11 already numbers this as Exercise 3, printed
     p. 275, and its "§44 Exercise 2" is the card of the map from R onto R^n, cited there as the
     earlier source of the reparametrization.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The affine map named in the 2026-11-15 note above was written x |-> 2mx - 1, which is not the map
+    the card uses and not a homeomorphism onto [-m,m]^m: it sends 0 to -1 and 1 to 2m - 1, so its
+    image is [-1, 2m-1]. A reader of this card reported it. The body of the solution has
+    x |-> (2m x_i - m)_i, which sends 0 to (-m,...,-m) and 1 to (m,...,m), and therefore maps I^m
+    onto [-m,m]^m; the note now gives 2mx - m. Nothing in the proof changed, and the rest of the card
+    was not re-read in this pass.
 
 ---
 
