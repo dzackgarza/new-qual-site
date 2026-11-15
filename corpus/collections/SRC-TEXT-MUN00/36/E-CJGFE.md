@@ -67,12 +67,22 @@ audit:
     not a subset of (0,1); a reader of this card reported it. It is now {1/n : n >= 2}, whose only
     limit point in R is 0, and the step now says that compactness would supply a limit point by
     Theorem 28.1. The other 49 entries of the table are unchanged and were not re-read in this pass.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    A reader of this card reported that the statement says the seventeen properties are "listed in
+    Exercise 1"; Munkres prints the list at the head of the Supplementary Exercises, before Exercise 1,
+    on printed p. 228, where Exercises 1 to 5 also stand. The statement now says so. Only that
+    reference changed: the table's 51 entries and their arguments were not re-read in this pass, the
+    mathematics having been re-derived and compared with the published key in the two passes recorded
+    above.
 
 ---
 
 ::: {.exercise}
 
-Consider the seventeen properties listed in Exercise 1 of the Supplementary Exercises (Review of the Basics).
+Consider the seventeen properties listed at the head of the Supplementary Exercises (Review of the Basics), printed p. 228.
 
 Which of these properties are preserved when one passes to a subspace?
 To a closed subspace?
