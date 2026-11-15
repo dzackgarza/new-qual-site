@@ -26,15 +26,21 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Searched outside the checkout (issue #144) for §72 Exercise 1 (printed p. 441); queries and sets are in the
-    COMPLAINTS.md entry for §66--§73 of SRC-TEXT-MUN00. Query used: "Munkres exercise if n > 2 homomorphism
-    fundamental group B^n Int B^n bijectively onto X - A induced by inclusion trivial". Nothing located: the
-    search returned the book's own page and course notes on §58, no treatment of this exercise; dbFin has no
-    §72 page, Murayama's selection does not reach §72, the fourteen repositories stop at Chapter 3. Nothing was
-    transcribed. The card's own proof was re-read against Corollary 70.4 (printed p. 432), Theorem 59.3 (printed
-    p. 369) and step 1 of the proof of Theorem 72.1 (printed pp. 439--440), and answers the exercise: for n > 2
-    the inclusion A -> X induces an isomorphism on fundamental groups, and it is n > 2 that makes U cap V and V
-    simply connected. Nothing changed.
+    Munkres §72 Exercise 1, printed p. 441. Searched outside the checkout for issue #144; the threads the throttled
+    address could not open were read from the orchestrator's machine, recorded in tmp/sources/mse-searches-144.md.
+    The exercise is Hatcher's Exercise 1.2.18 in the setting of Munkres: for n > 2, is the homomorphism induced by
+    the inclusion of A into X an isomorphism? Math StackExchange 589134, "Fundamental group obtained by attaching a
+    n-cell with n >= 2" (asked 2013-12-02), answers Hatcher's problem, whose conclusion is surjectivity for n >= 2:
+    answer 1758675 by Szmagpie (2016-04-25), text at tmp/sources/mse-589134-E-FFNIM.md, applies Hatcher's Lemma 1.15
+    to the open sets e^n - x and X and concludes that every loop in X is a product of loops lying in A. Two
+    differences are recorded on the card rather than silently imported: Hatcher's statement is surjectivity, not the
+    isomorphism of Munkres' n > 2, and the answer's claim that e^n - x deformation retracts onto S^k with k >= 2
+    fails at n = 2, where the retract is S^1, which is why the general-position step has to be made for n >= 2
+    separately. The second thread, 2366023, "Change in Fundamental Group by attaching n Cell" (asked 2017-07-21),
+    answer 2366402 by Daron (2017-07-21) is a sketch for n >= 3 with the cell attached at a point, setting exercises
+    for the reader, and is not a proof. Nothing is transcribed; the card keeps its proof of the isomorphism. The
+    proof was re-read against Corollary 70.4 (printed p. 432), Theorem 59.3 (printed p. 369) and step 1 of the proof
+    of Theorem 72.1 (printed pp. 439--440).
 - event: source-corrected
   by: claude
   date: 2026-11-15
