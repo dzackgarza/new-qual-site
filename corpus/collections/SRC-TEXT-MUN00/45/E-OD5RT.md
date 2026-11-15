@@ -27,6 +27,24 @@ audit:
     factors, and converges in D since all but finitely many coordinates contribute less than eps uniformly;
     so the product is complete and totally bounded, hence compact. The card's opening sentence covers the
     case of an empty factor, which makes the product empty and both claims vacuous.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Math StackExchange 1287635, "countable product of
+    totally bounded space is totally bounded" (2015-05-18), has Brian M. Scott's answer 1288761
+    proving the first part of this exercise for the metric d(x,y) = sum_k 2^{-k} \bar d_k(x_k,y_k)
+    rather than the D = sup_i \bar d_i(x_i,y_i)/i that Munkres uses here: the first finitely many
+    coordinates are covered by finite eps/2-nets and the tail is pinned at one point, which in
+    Munkres' D needs the factor 1/i and the choice of m with 1/m < eps/2 in place of Scott's
+    choice of m with 2^{-m} < eps/4. The answer says nothing of the exercise's second part, the
+    compactness of a countable product of compact metrizable spaces; so the page is a model for
+    the first part and not a solution of the exercise, and it is not transcribed. dbFin has no
+    chapter-7 page (404, checked 2026-11-15), and no GitHub Munkres repository named in the
+    COMPLAINTS.md entry for §30--§36 reaches Chapter 7. The card keeps its own proof, which this
+    pass did not re-read; the search is recorded in the COMPLAINTS.md entry for §43--§50 with
+    every query.
+
 ---
 ::: {.exercise}
 
