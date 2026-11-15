@@ -32,9 +32,9 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Transcribed from Jesus R. S., answer 1133343 (2015-02-04) to Math StackExchange 1130245, "G_delta sets in
-    locally compact Hausdorff or complete metric space are Baire spaces"
-    (https://math.stackexchange.com/questions/1130245), text at tmp/sources/mse-1130245-munkres-48-5.md, and
+    Transcribed from Jesus RS, answer 1133343 (2015-02-04) to Math StackExchange 1130245, "G_delta sets in
+    locally compact Hausdorff or complete metric space are Baire spaces", at
+    https://math.stackexchange.com/a/1133343, text at tmp/sources/mse-1130245-munkres-48-5.md, and
     checked against the book. That question states the claim for a locally compact Hausdorff or complete
     metric X, which contains Munkres' hypotheses: a compact Hausdorff space is locally compact Hausdorff, and
     by §48 Exercise 3, or by the answer's own use of Theorem 48.2 in the closed subspace, is Baire. The
@@ -51,6 +51,17 @@ audit:
     the V_n are then dense in X, and it writes the conclusion as "we know that the intersection of the V_n is
     dense" before the Baire theorem has been applied to the U_n and W_n; the card's route supplies exactly
     those two steps.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Re-read on issue #144. Steps #inter and #main used W_n' with no step defining it; #closed now puts
+    W_n' = W_n cap Z, notes that it is open in Z, and records why Y = cap_n W_n' (each W_n contains Y, and
+    Y lies in Z). Those are the only two properties the later steps use: W_n' contains the dense set Y, and
+    the intersection of the W_n' is Y. The attribution above is corrected to the account's own name,
+    Jesus RS, with the answer's URL, https://math.stackexchange.com/a/1133343; the byline is read from the
+    stored copy of the thread at tmp/sources/mse-1130245-munkres-48-5.md, not from the site, which answered
+    an automated request with a human check and whose API reported its quota used up for this address.
 ---
 
 ::: {.exercise}
@@ -79,7 +90,7 @@ Write $Y=\bigcap_n W_n$ with each $W_n$ open in $X$.
 $X$ may be replaced by a closed subspace in which $Y$ is dense, and that subspace is again compact Hausdorff or complete metric.
 
 ::: pf-proof
-Let $Z=\overline Y$ be the closure of $Y$ in $X$, with the subspace topology. A closed subspace of a compact Hausdorff space is compact Hausdorff, and a closed subspace of a complete metric space is complete in the restricted metric: a Cauchy sequence in $Z$ converges in $X$, and its limit lies in $\overline Z=Z$. The set $Y$ is a $G_\delta$ set of $Z$, since $Y=\bigcap_n (W_n\cap Z)$ and each $W_n\cap Z$ is open in $Z$, and $Y$ is dense in $Z$ by the definition of closure. Baireness of $Y$ depends on the topology of $Y$ alone, so it suffices to prove the claim for a dense $G_\delta$ set $Y$ of a space $Z$ that is Baire.
+Let $Z=\overline Y$ be the closure of $Y$ in $X$, with the subspace topology. A closed subspace of a compact Hausdorff space is compact Hausdorff, and a closed subspace of a complete metric space is complete in the restricted metric: a Cauchy sequence in $Z$ converges in $X$, and its limit lies in $\overline Z=Z$. Put $W_n'=W_n\cap Z$; each $W_n'$ is open in $Z$, and $Y=\bigcap_n W_n'$ because $Y\subseteq W_n$ for every $n$ and $Y\subseteq Z$. So $Y$ is a $G_\delta$ set of $Z$, and it is dense in $Z$ by the definition of closure. Baireness of $Y$ depends on the topology of $Y$ alone, so it suffices to prove the claim for a dense $G_\delta$ set $Y$ of a space $Z$ that is Baire.
 :::
 
 :::
