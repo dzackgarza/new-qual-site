@@ -29,6 +29,24 @@ audit:
     to open subspaces because D cap U is dense in U, and fails even for closed subspaces, the
     anti-diagonal of the Sorgenfrey plane being an uncountable closed discrete subspace of a separable
     space; connectedness and path connectedness fail in all three columns.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout for a published answer key to the Review of the Basics and found
+    none (issue #144). This exercise was searched for under its own content: Math StackExchange,
+    site math, `/search/excerpts` with "hereditary property subspace", "which properties are
+    preserved by continuous maps", "review of the basics Munkres supplementary exercises" and
+    "seventeen properties", and `/search/advanced` with title "Munkres" over the tag
+    general-topology, whose 623 questions include none on the three columns of this exercise.
+    dbFin's chapter-4 supplementary page links to no problem page; the twelve GitHub repositories
+    named in the COMPLAINTS.md entry for §30--§36 hold no Chapter 4 supplementary content; the web
+    searches for the table answers returned nothing. The AoPS blog that holds an answer key was not
+    read: it answers an automated request with a Cloudflare human check, which is not worked
+    around. The card's table is its own work, re-derived against Munkres' theorems as its earlier
+    note records, and this pass did not re-read it; the search is recorded in the COMPLAINTS.md
+    entry for §30--§36 with every query.
+
 ---
 
 ::: {.exercise}
