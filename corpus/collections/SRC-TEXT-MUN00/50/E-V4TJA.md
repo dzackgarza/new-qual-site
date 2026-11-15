@@ -32,6 +32,18 @@ audit:
     e_i have determinant 1, and {e_1, e_2, e_3, (1,1,1)} gives the matrix with rows (-1,1,0), (-1,0,1), (0,1,1)
     of determinant 2; three collinear points are excluded by the same determinants. Nothing needed correction,
     except that the card now states the book's definition of general position instead of a paraphrase of it.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Nothing located proves Munkres §50 Exercise 4 (printed p. 305),
+    and the second half of it, the sketch of the linear imbedding of $K_5$, is a figure in the book that no
+    written source reproduces. Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, the ten
+    GitHub repositories of Munkres solutions listed in COMPLAINTS.md stop before §36, and the AoPS post
+    *Topology by Munkres Chapter 8 | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630)
+    answers §50 with its formulas lost. The card's determinant checks of the five four-point subsets are its
+    own; the Stack Exchange queries of this pass, listed in the COMPLAINTS.md entry for §43--§50, returned no
+    question on the exercise. Nothing needed correction.
 ---
 
 ::: {.exercise}
