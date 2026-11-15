@@ -635,7 +635,7 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 
 **Uncertainty.** Searched: all ten retained solution sets plus Kim. Found: nothing for IV.1.8(c) among them. Conclusion: no published coverage in those sets, which is not the same as none at all (see the next paragraph). Confidence: high. Gaps: the proof is spread over four Stacks results and one item; it says nothing about analytic isomorphism as such, and the card supplies that identification.
 
-**Sourced outside the retained sets, IV.1.8(c) (2026-11-15).** The Stacks Project, version ed88ff78, compiled 14 July 2026 (`tmp/sources/stacks-project-book.pdf`, read in the `.md` text version), Chapter 33, Sections 33.39 and 33.41, proves the decisive step. Lemma 33.39.2 (tag 0C3S) with Definition 33.39.3 (tag 0C3T), printed p. 2899, make $\delta=\length_A(A'/A)$ for a reduced Nagata one-dimensional local ring; Lemma 33.39.5 (tag 0C3V), printed p. 2900, identifies $A'\otimes_A A^h$, $A'\otimes_A A^{sh}$ and $A'\otimes_A A^\wedge$ with the integral closures of those rings; Lemma 33.39.6 (tag 0C3W), printed pp. 2900–2901, shows $\delta$ unchanged by henselization, strict henselization and completion; Definition 33.39.7 (tag 0C1T), printed p. 2901, concludes that $\delta$ is an invariant of the complete local ring, which is the exercise's "$\delta_P$ depends only on the analytic isomorphism class", two points over an algebraically closed field being analytically isomorphic exactly when their completed local rings are. Lemma 33.41.2 item (9) (tag 0C1R), printed p. 2904, is $A'/A\cong(A')^\wedge/A^\wedge$, the identification step `s6` uses. Step `s6` transcribes this and the card now carries the version and pages. The card's own and not in Stacks: the two computations $\delta_P=1$ at the ordinary cusp and at the node.
+**Sourced outside the retained sets, IV.1.8(c) (2026-11-15).** The Stacks Project, Chapter 33, Sections 33.39 and 33.41, tag by tag in `tmp/sources/stacks-tags/<TAG>.md` (the site's build from stacks-project commit a04446e5, 28 July 2026; the printed pages below are those of the retained compiled book of version ed88ff78, compiled 14 July 2026, `tmp/sources/stacks-project-book.pdf`), proves the decisive step. Lemma 33.39.2 (tag 0C3S) with Definition 33.39.3 (tag 0C3T), printed p. 2899, make $\delta=\length_A(A'/A)$ for a reduced Nagata one-dimensional local ring; Lemma 33.39.5 (tag 0C3V), printed p. 2900, identifies $A'\otimes_A A^h$, $A'\otimes_A A^{sh}$ and $A'\otimes_A A^\wedge$ with the integral closures of those rings; Lemma 33.39.6 (tag 0C3W), printed pp. 2900–2901, shows $\delta$ unchanged by henselization, strict henselization and completion; Definition 33.39.7 (tag 0C1T), printed p. 2901, attaches that $\delta$ to a point through its local ring, and the two together give the exercise's "$\delta_P$ depends only on the analytic isomorphism class", two points over an algebraically closed field being analytically isomorphic exactly when their completed local rings are. Lemma 33.41.2 item (9) (tag 0C1R), printed p. 2904, is $A'/A\cong(A')^\wedge/A^\wedge$, the identification step `s6` uses. Step `s6` transcribes this and the card now carries the version and pages. The card's own and not in Stacks: the two computations $\delta_P=1$ at the ordinary cusp and at the node.
 
 ### IV.1–IV.3 — the parts whose retained entries assert the decisive step
 
@@ -1674,7 +1674,7 @@ nearest located text does and what it does not do. None of them is closed, and n
   theorem of Reid's *Chapters on Algebraic Surfaces* (Theorem A.7(1), statement on printed p. 29 and proof on
   pp. 30--31), located after this
   pass, and nothing located states
-  V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, V.4.7--V.4.15, V.5.5, V.5.6, V.6.1 or V.6.2.
+  V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, V.4.7--V.4.15, V.5.5, V.6.1 or V.6.2.
 
 **Still open, and why.** The cards above that this pass did not close keep their own proofs and the
 obligation recorded in their sections. Two have come off this list since: IV.1.8(c), whose decisive step is
@@ -1688,9 +1688,9 @@ Landesman's and Kim's notes state it), `P-AGH55NONSINGDEGD` (now only $p=3$ with
 being covered by Stacks tag 0BYA and by Shichijo's elimination read in $k$),
 `P-AGH67PUNCTUREDLINE`'s converse, `P-AGH77CONEDEGDROP`, `P-AGH374COHOMCLASS` (III.7.4(b),(d)),
 `P-AGH3117NONALGSHEAF`, `P-AGH3123JUMPINGIDEAL`, IV.2.3(h), IV.3.4(a), IV.3.11(a),
-IV.3.12, IV.4.22, IV.6.9, and the twenty-one Chapter V cards that the section entries still record as
+IV.3.12, IV.4.22, IV.6.9, and the twenty Chapter V cards that the section entries still record as
 uncovered --- V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, the ten of V.4.7--V.4.16,
-V.5.5, V.5.6, and V.6.1, V.6.2. V.5.4 has come off that list, and V.5.1 and V.5.7 with it (below).
+V.5.5, and V.6.1, V.6.2. V.5.4 has come off that list, and V.5.1, V.5.6 and V.5.7 with it (below).
 Of the two sources this paragraph used to dispose of, one was misdescribed: the NTU set does **not** stop at
 V.4.4(b). Read in its MinerU extraction `tmp/sources/ntu-ag2-chapter5.md` it has section 4 exercises
 1--5, 7, 10--12, 14 and 16, section 5 exercises 1--4, 7 and 8, and a heading for section 6 with nothing
@@ -1703,9 +1703,9 @@ Algebraic Geometry* download is a six-page title stub, not the book. V.5.4's par
 A.7, whose statement is on printed p. 29 and whose proof is on pp. 30--31, while his Castelnuovo criterion,
 printed p. 10, covers part (a)'s $Y\cong\PP^1$ for the single contracted curve.
 
-**Repair.** Recorded for the next pass, not done here: a source for the thirty-five Chapter V cards that
-remain (V.5.4's part (b), V.5.1 and V.5.7 having been closed since, by Reid's Theorem A.7(1) and by the NTU
-set's Exercise 5.1), for
+**Repair.** Recorded for the next pass, not done here: a source for the thirty-four Chapter V cards that
+remain (V.5.4's part (b), V.5.1, V.5.6 and V.5.7 having been closed since, by Reid's Theorem A.7(1), by the
+NTU set's Exercise 5.1 and by Yang Pi-Yeh's 5.5.6), for
 the two Chapter III cards whose printed statements are false, and the Stack Exchange search once the
 throttle expires.
 
@@ -1899,7 +1899,7 @@ about 2026-11-16 03:00Z, and this pass ended before it. The other Chapter V card
 III.11.7(a), III.12.3, I.2.9(b), IV.3.4(a), IV.3.12, IV.4.22 and IV.6.9 still have no located published
 proof, and the entries above say what the nearest located text does and does not do.
 
-## `SRC-TEXT-HART77` #121: the text versions replaced, the tag audit, and the two cards that closed
+## `SRC-TEXT-HART77` #121: the text versions replaced, the tag audit, and the three cards that closed
 
 **The text versions were replaced in `tmp/sources/`, and every reference now names a file that exists.** The
 superseded files were deleted: the `pdftotext` outputs `reid-chapters.txt`,
@@ -1943,7 +1943,7 @@ did come out of the check, not from missing text but from a misattribution: on
 33.39.7 (tag 0C1T), which only defines $\delta$ of $X$ at $x$, and the item (9) the step uses had been
 called $0C1T(9)$ where it is Lemma 33.41.2 (tag 0C1R), item (9). Both are corrected there.
 
-**Two cards closed, and what closed them.** `P-AGH551RESOLVERATFN` (V.5.1) is *Algebraic Geometry II*,
+**Three cards closed, and what closed them.** `P-AGH551RESOLVERATFN` (V.5.1) is *Algebraic Geometry II*,
 National Taiwan University, 2020 Spring, Chapter V homework, Exercise 1 (Po-Sheng Wu), printed p. 19: blow up
 a zero--pole intersection and the intersection number $(\pi^*f)_0\cdot(\pi^*f)_\infty$ drops by
 $\mu_P((f)_\infty)^2$, so the blowups terminate and the zeros and poles become disjoint. The card transcribes
@@ -1954,6 +1954,13 @@ theorem's single-curve case, and the remark records the Stein-factorisation argu
 hypothesis makes $f$ birational, which is what Reid's "projective birational morphism" asks. Its two other
 candidates do not prove it: Egbert's V.5.7 (printed p. 300) is a cross-reference to his defective V.5.4
 entry, and the NTU set's Exercise 5.7 (printed p. 21) concludes $Y^2=0$ from $0\ge mY^2$.
+`P-AGH556VALUATIONRINGS` (V.5.6) is Yang Pi-Yeh's exercise 5.5.6, printed p. 114 of
+`tmp/sources/lfwin-hartshorne-solutions.pdf`: the valuation criterion puts the centre at a point and the
+centre's dimension decides between kind (1) and the closed case, where each blowup either lands the next
+centre on the exceptional curve (kind 2) or repeats, the infinite alternative giving
+$R=\varprojlim\OO_{P_i,X_i}=\bigcup_i\OO_{P_i,X_i}$ (kind 3). That union identification is the step
+Exercise II.4.12 leaves open and the only one Egbert's entry, printed p. 299, does not prove; the card's steps
+are the source's cases written out.
 
 **What the remaining Chapter V cards' nearest sources now do, read in the new extractions.** Yang Pi-Yeh's
 Chapter V solutions begin at printed p. 100 of `tmp/sources/lfwin-hartshorne-solutions.md` and were
@@ -1962,8 +1969,8 @@ called empty are arguments. His 5.5.1 is a version of V.5.1; his 5.5.2 is a vers
 repeats the false ampleness claim of Egbert's entry ("$f^*H$ is ample on $X$"), and 5.5.4(b) argues negative
 definiteness by the two-hyperplane route; his 5.5.7 aims at V.5.7 through $mY=\tilde H_1-\tilde H_0$ and
 needs $\tilde H_0\cdot Y>0$ for the strict inequality, which it does not establish; his 5.5.8 carries out the
-eight blowups of V.5.8; and his 5.6.1 and 5.6.2 are the sketches this file already described. None of the
-Chapter V cards left open is closed on him. The NTU set reaches further than
+eight blowups of V.5.8; his 5.5.6 closes V.5.6 above; and his 5.6.1 and 5.6.2 are the sketches this file
+already described. None of the Chapter V cards still listed as open is closed on him. The NTU set reaches further than
 this file said (section 4 exercises 1--5, 7, 10--12, 14, 16 and section 5 exercises 1--4, 7, 8) and is
 defective on V.4.7 ($d=4$ left open), V.4.11(c) (empty) and V.5.7 (the wrong conclusion above). Reid's
 Chapters on Algebraic Surfaces were searched again in the whole-paper extraction for V.2, V.3, V.4 and V.6:
@@ -1972,4 +1979,4 @@ discusses its singular fibres (printed pp. 51--52), it has no treatment of the i
 the elliptic ruled surfaces of V.2.12--V.2.13, its one mention of an elementary transformation is an
 operation on vector bundles (printed p. 43, not V.5.5's), and it has no Chern--Griffiths bound. Nothing
 there states
-V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, V.4.7--V.4.16, V.5.5, V.5.6, V.6.1 or V.6.2.
+V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, V.4.7--V.4.16, V.5.5, V.6.1 or V.6.2.
