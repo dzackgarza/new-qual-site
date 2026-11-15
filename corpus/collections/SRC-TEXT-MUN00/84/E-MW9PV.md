@@ -13,6 +13,20 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §84 Exercise 2, printed p. 513. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md and the saved thread is tmp/sources/mse-64192-E-MW9PV.md, read whole.
+    Math StackExchange 64192 (asked 2011-09-13) computes the utilities graph: its question gets 4 generators
+    from the formula 1 - chi of May's corollary, and answer 64200 by Jason DeVito confirms the count and
+    shows that the number of free generators of an embedded graph has no bearing on the surface; answer
+    64204 by Rando-Man observes that the induced map on pi_1 of the embedding is not injective. The complete
+    graph is not computed in the thread, and the 1 - chi formula is quoted there rather than proved. The card
+    therefore keeps its own counts for both graphs and now records the thread with its URLs and what it does
+    not supply; the formula is Lemma 85.2 (printed p. 514) in this book. Rejected in the search: nothing else
+    was returned for this exercise.
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 84 Exercise 2, printed p. 513. The ranks (n-1)(n-2)/2 for the complete graph on n vertices and 4 for the utilities graph K_{3,3}, from rank = 1 - chi. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
@@ -32,6 +46,9 @@ of the utilities graph?
 :::
 
 ::: {.solution}
+
+The count for the utilities graph is the one in Jason DeVito's answer 64200 (https://math.stackexchange.com/a/64200), posted 2011-09-13 to Math Stack Exchange question 64192, "The fundamental group of $K_{3,3}$" (https://math.stackexchange.com/questions/64192, asked by William on the same day). The question quotes the corollary of May's *A Concise Course in Algebraic Topology* that a finite connected graph has $\pi_1$ free on $1-\chi(X)$ generators, and computes $4$ for $K_{3,3}$; the answer's point is that the number of generators of $\pi_1$ of an embedded graph has no relation to the surface it is embedded in, and it shows that every surface carries graphs free on $n$ generators for every $n$. Rando-Man's answer 64204 in the same thread adds that the map on $\pi_1$ induced by an embedding of the utility graph in the torus is not injective. Neither answer computes the complete graph, and neither proves the count it uses: the $1-\chi$ formula is proved in the book as Lemma 85.2 (printed p. 514) and its rank statement as Theorem 69.4 and Corollary 69.5 (printed p. 423). The card's counts for both graphs are therefore its own, with the formula cited.
+
 
 Let $X$ be a finite connected graph with $V$ vertices and $E$ edges. By Theorem 84.4 (printed p. 509) a maximal tree $T$ in $X$ contains all $V$ vertices, and a tree with $V$ vertices has $V-1$ edges; by Theorem 84.7 (printed p. 511) the group $\pi_1(X)$ is free, with a system of free generators in bijective correspondence with the edges of $X$ not in $T$. Hence
 $$

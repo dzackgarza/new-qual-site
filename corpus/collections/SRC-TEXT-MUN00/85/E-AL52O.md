@@ -11,6 +11,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §85 Exercise 1, printed p. 515. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md and the saved sources are
+    tmp/sources/gh-dyang5-MATH104-Topology-E-AL52O.md and tmp/sources/mse-3142177-E-AL52O.md, both read whole.
+    David Yang, MATH104 Fall 2023 Homework 12, HW/hw12.tex lines 33-59 at commit 12686a815d, proves the
+    exercise: connected case by Lemma 85.2 (cited there as Theorem 85.2) and the rank from abelianizations,
+    then the sum over components. That proof is transcribed on the card with its commit, and the card's own
+    proof is the same argument with the book's numbers. The Stack Exchange thread 3142177 has one answer,
+    3142282 by user6, which argues through homology: "Any connected graph is homotopy equivalent to wedge of
+    S^1's", chi is homotopy invariant, H_1 of the wedge is Z^n. The homology of a graph is not developed in
+    this book and the answer asserts both steps, so it is a source searched and not used.
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
@@ -34,6 +48,9 @@ Show that the Euler number of a finite linear graph $X$ is a topological invaria
 :::
 
 ::: {.solution}
+
+The proof is David Yang's, *MATH104: Topology, Fall 2023*, Homework 12, in `HW/hw12.tex` lines 33--59 of `dyang5/MATH104-Topology` at commit 12686a815d58f29aeaadb90a30449ae85c0a613f (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw12.tex#L33-L59. For connected $G$ and $G'$: a homeomorphism induces an isomorphism of fundamental groups; each is free with $1-\chi$ generators (his "Theorem 85.2", which is Lemma 85.2 in the book, printed p. 514); two free groups of finite rank are isomorphic only if their ranks agree, which he reads off their abelianizations as $\ZZ^m$ and $\ZZ^n$ (Theorem 69.4 (printed p. 423) and Corollary 69.5); hence $1-\chi(G)=1-\chi(G')$. For the general case he observes that a homeomorphism carries components to components, applies the connected case to each pair, and adds. The proof below is that argument with the book's numbered results cited at each step.
+
 
 For a finite linear graph with $V$ vertices and $E$ edges, the Euler number is $\chi(X)=V-E$ (Definition, printed p. 514). A homeomorphism $h:X\to Y$ of finite linear graphs induces an isomorphism $h_*$ of fundamental groups at corresponding base points (Corollary 52.5, printed p. 334).
 

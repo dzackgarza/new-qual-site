@@ -13,6 +13,17 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §83 Exercise 2, printed p. 506. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md. No source was saved. The queries were the Stack Exchange advanced search
+    "Euler number covering space graph n-fold" (no hits) and the similar-question search from "Euler
+    characteristic of a finite covering space of a graph" (15 items). Both threads that came back were read
+    and rejected: 369456 computes chi(Y) = n chi(X) for CW complexes through spectral sequences, which is not
+    the graph count this exercise asks for, and 1499238 is about Stallings folds and proves nothing here. The
+    card keeps its own proof, which counts vertices and edges of the covering graph over a maximal tree.
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 83 Exercise 2, printed p. 506. Euler numbers of an arc, a circle, a wedge and the complete graph, and the multiplicativity of the Euler number under an n-fold covering. Checked against the definition of the Euler number, printed p. 505, and Theorem 85.1. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.

@@ -11,11 +11,29 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The locator in this card's earlier audit note was wrong and is corrected in place: it read "Section 84
+    Exercise 3", and this card's statement -- an example showing the second part of Lemma 84.2 fails for an
+    infinite tree -- is printed Exercise 1 of §84, printed p. 513. E-44O6O carries the reciprocal error and is
+    corrected with it.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §84 Exercise 1, printed p. 513 (locator corrected above). Searched outside the checkout for issue
+    #146; the record is tmp/sources/mse-searches-146.md. No source was saved. The queries were the Stack
+    Exchange advanced search "Munkres Lemma 84.2" (no hits) and the similar-question search from "Infinite
+    tree, reduced edge path between vertices unique, Munkres Lemma 84.2" (15 items); the threads returned
+    concern the finite form of the lemma and give no counterexample for an infinite tree. The card keeps its
+    own proof, which exhibits the infinite tree and a vertex joined to the base by no reduced edge path.
 - event: source-checked
   by: claude
   date: 2026-11-11
   note: >-
-    Checked against Munkres, Topology (2000), Section 84 Exercise 3, printed p. 513. An infinite maximal tree in a non-locally-finite graph for which the second part of Lemma 84.2 fails. Checked against Lemma 84.2 and the definition of a linear graph, printed p. 501. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
+    Checked against Munkres, Topology (2000), Section 84 Exercise 1, printed p. 513. An infinite maximal tree in a non-locally-finite graph for which the second part of Lemma 84.2 fails. Checked against Lemma 84.2 and the definition of a linear graph, printed p. 501. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
 - event: source-checked
   by: claude
   date: 2026-11-11

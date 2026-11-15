@@ -11,6 +11,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §85 Exercise 3, printed p. 515. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md. No source was saved, and the three threads the searches returned were
+    not read in full: the advanced search "(b_0 x S^1) union (S^1 x b_0) free generators" had no hits and the
+    similar-question search from "Free generators for subgroup corresponding to covering of wedge of two
+    circles by grid in the plane" returned 15 items, among them the threads 4530653, 1155032 and 23032, which
+    treat other coverings of the wedge of two circles. Since none of the three was read whole, none is
+    recorded as a source proving any part of this exercise; the card keeps its own proof, whose maximal-tree
+    citation was corrected in the pass of #130 from Theorem 84.1 to Theorem 84.7.
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
