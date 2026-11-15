@@ -28,16 +28,19 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Searched outside the checkout (issue #144) for §70 Exercise 1 (printed p. 433); queries and sets are in the
-    COMPLAINTS.md entry for §66--§73 of SRC-TEXT-MUN00. Query used: "Munkres exercise 70.1 trivial i_* free
-    product quotient groups isomorphism pushout solution". Located, not readable: Math StackExchange 2546862,
-    "Munkres Exercise 70.1", whose answer's pushout argument the search excerpt shows and whose body could not be
-    read (API throttle for this address, Cloudflare human check, no Wayback snapshot). It adds nothing the card
-    lacks: the card's route is the exercise's own hint, Theorem 70.1 used to build a left inverse of h, and the
-    sheet it already cites (Riverside Part 9, printed p. 6) is the same pushout statement. dbFin has no §70 page,
-    Murayama's selection none, the fourteen repositories stop at Chapter 3. Nothing was transcribed and nothing
-    on the card changed: it was re-read against Theorem 70.1 (printed p. 426) and the extension condition for
-    free products (Lemma 68.3, printed p. 418).
+    Munkres §70 Exercise 1, printed p. 433. Searched outside the checkout for issue #144; the questions the
+    throttled address could not open were read from the orchestrator's machine, recorded in
+    tmp/sources/mse-searches-144.md, thread tmp/sources/mse-2546862-E-0EZ4U.md. Math StackExchange 2546862, "Munkres
+    Exercise 70.1" (asked 2017-12-02), answer 4686314 by user497021 (2023-04-25), read whole, proves both parts:
+    pi_1(U cup V) is the pushout of pi_1(V) <- pi_1(U cap V) -> pi_1(U), which is Theorem 70.1 in its pushout form,
+    and the pushout of the two composites through the quotients is the free product, both composites being trivial.
+    Its five diagrams are lost (the answer links images it could not embed), two displayed arrows read q_2 i_2 where
+    q_1 i_1 is meant, and the closing step, that a pushout over trivial maps is the free product, is stated without
+    proof. What it proves is the statement of the published solution the card already cites, the Riverside Part 9
+    sheet's §70 Exercise 1 at its printed p. 6, so nothing is transcribed from it and the card keeps the proof in
+    the exercise's own hint form. dbFin has no §70 page, Murayama's selection none, the fourteen repositories stop
+    at Chapter 3. The card was re-read against Theorem 70.1 (printed p. 426) and the extension condition for free
+    products (Lemma 68.3, printed p. 418).
 - event: source-corrected
   by: claude
   date: 2026-11-15
