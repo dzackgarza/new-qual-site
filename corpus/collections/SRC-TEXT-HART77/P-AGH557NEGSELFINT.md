@@ -67,6 +67,24 @@ audit:
     that, and records that Egbert's p. 300 entry is a cross-reference and that
     the NTU set's Exercise 7 (printed p. 21) ends by concluding Y^2 = 0, which
     does not follow from its own inequality.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Correction, on a reader's report of issue #121: the argument the event
+    above attributes to the Stein factorization is false. A connected fibre
+    f^-1(P) = Y forces #g^-1(P) = 1, not deg g = 1, and hence says nothing
+    about deg f; the counterexample is now in the remark, sigma(x:y:z) =
+    (-x:-y:z) on P^2 with f: Bl_O P^2 -> P^2 -> P^2/sigma, where the fibre
+    over the image of O is exactly the exceptional curve E while deg f = 2.
+    What the remark now argues instead is that Reid's Theorem A.7(1) applies
+    to the Stein factor h: X -> X', which is a projective birational morphism
+    of the nonsingular X contracting Y to a point: h contracts Y because a
+    curve image would be contracted by the finite g to a point, and h is
+    birational because h_*O_X = O_X' has rank one at the generic point. So
+    Y^2 < 0 follows with no claim on the degree, and Reid's theorem is the
+    published proof; the card's statement that the exercise needs f dominant
+    is unchanged, and so are the Hodge-index steps.
 ---
 
 ::: {.problem}
@@ -89,9 +107,9 @@ contraction setting where the exercise is used. Under that hypothesis the
 following argument proves $Y^2<0$. The published proof is M. Reid's Theorem
 A.7(1), *Chapters on Algebraic Surfaces*, arXiv:alg-geom/9602006v1, statement on
 printed p. 29 and proof on printed pp. 30--31, applied to the single curve $Y$
-once $f$ is seen to be birational; the steps below are the card's Hodge-index
-route to the same inequality, and the closing remark records why $f$ is
-birational and what the other two sets do.
+once the Stein factor of $f$ is in hand; the steps below are the card's
+Hodge-index route to the same inequality, and the closing remark records why
+Reid's hypotheses hold for that factor and what the other two sets do.
 
 ::: pf
 
@@ -314,7 +332,7 @@ $Y^2<0$, and step [](#hint-divisors-reconciled){.pf-ref} reconciles the proof wi
 :::
 
 ::: {.remark title="Published solution"}
-M. Reid, *Chapters on Algebraic Surfaces*, arXiv:alg-geom/9602006v1 (6 February 1996), a draft of the notes submitted to the 1993 volume of the IAS/AMS Park City lecture notes series, Appendix A.7, Theorem (Negativity of exceptional locus), part (1), statement on printed p. 29 and proof on printed pp. 30--31, is a published proof of the corrected statement. It says that for a bunch of curves on a nonsingular surface contracted to points by a projective birational morphism to a surface, the matrix $(\Gamma_i\Gamma_j)$ is negative definite; with the bunch a single curve $Y$ that is $Y^2<0$, negative definiteness of a $1\times1$ matrix being its negativity. Under the hypothesis added above, $f$ is birational, so the theorem applies: factor $f$ as a birational morphism $h:X\to X'$ with connected fibres followed by a finite morphism $g:X'\to X_0$ of degree $d$ (Stein factorization). The only fibre of $h$ of positive dimension is $h(Y)$, a point $Q$, and $f^{-1}(P)=h^{-1}(g^{-1}(P))$ contains $Y$ only when $Q\in g^{-1}(P)$, and then it contains $Y$ together with the $d-1$ points of $h^{-1}(g^{-1}(P)\setminus\{Q\})$; since the hypothesis is that the fibre over $P$ is $Y$ and nothing else, that forces both $h^{-1}(Q)=Y$ and $d=1$. So $f$ is birational, as claimed, and Reid's theorem gives $Y^2<0$. Read in `tmp/sources/reid-chapters.md` (the whole paper) and checked on printed pp. 29--31 of `tmp/sources/reid-chapters-algebraic-surfaces.pdf`, whose folios are its PDF pages. His proof is written, "for simplicity", for a bunch with connected union contracted to a single point with the morphism an isomorphism outside it (printed p. 30); the steps above reach the same conclusion by Hodge index and need neither the connectedness nor the single-point hypothesis.
+M. Reid, *Chapters on Algebraic Surfaces*, arXiv:alg-geom/9602006v1 (6 February 1996), a draft of the notes submitted to the 1993 volume of the IAS/AMS Park City lecture notes series, Appendix A.7, Theorem (Negativity of exceptional locus), part (1), statement on printed p. 29 and proof on printed pp. 30--31, is a published proof of the corrected statement. It says that for a bunch of curves on a nonsingular surface contracted to points by a projective birational morphism to a surface, the matrix $(\Gamma_i\Gamma_j)$ is negative definite; with the bunch a single curve $Y$ that is $Y^2<0$, negative definiteness of a $1\times1$ matrix being its negativity. Under the hypothesis added above, $f$ is dominant and generically finite, so it has a Stein factorization $f=g\circ h$: a projective morphism $h:X\to X'$ with connected fibres, where $X'=\Spec_{X_0}(f_*\OO_X)$ and $h_*\OO_X=\OO_{X'}$, followed by a finite morphism $g:X'\to X_0$. Then $h$ is a projective birational morphism of the nonsingular surface $X$ which contracts $Y$ to a point, so Reid's theorem applies to the single curve $Y$ and gives $Y^2<0$. Two points are needed for that. First, $h(Y)$ is a point: $h(Y)$ is the image of an irreducible curve, so it is a point or a curve, and if it were a curve $C$ then $C$ would lie in the fibre $g^{-1}(P)$, which is finite. Second, $h$ is birational: its degree is the rank of $h_*\OO_X$ at the generic point of $X'$, and $h_*\OO_X=\OO_{X'}$ has rank one, so $[K(X):K(X')]=1$. Replacing $X'$ by its normalization leaves both properties intact and makes the target normal, which is the setting Reid's proof works in. Nothing here needs $\deg f$ to be one, and it need not be. What the fibre condition $f^{-1}(P)=Y$ gives is $\#g^{-1}(P)=1$ --- $g^{-1}(P)$ contains $h(Y)$, and a second point $Q$ of it would put the whole nonempty fibre $h^{-1}(Q)$ into $f^{-1}(P)$ --- and one point over one point of the target of a finite morphism says nothing about its degree. An earlier version of this remark read $\#g^{-1}(P)=1$ as $\deg g=1$ and with it $\deg f=1$; that inference is false, and here is a counterexample to it. Let $\sigma:\PP^2\to\PP^2$ be $\sigma(x:y:z)=(-x:-y:z)$, whose only fixed point is $O=(0:0:1)$, let $X=\Bl_O\PP^2$ with exceptional curve $E$, and let $f$ be $X\to\PP^2\to\PP^2/\sigma$. The fibre of $\PP^2\to\PP^2/\sigma$ over the image of $O$ is $\{O\}$, so $f^{-1}(P)=E$ exactly, while $\deg f=2$ and $f$ is not birational. Reid's theorem applied to the Stein factor of that $f$, which is $X\to\PP^2$, still gives $E^2=-1<0$. Read in `tmp/sources/reid-chapters.md` (the whole paper) and checked on printed pp. 29--31 of `tmp/sources/reid-chapters-algebraic-surfaces.pdf`, whose folios are its PDF pages. His proof is written, "for simplicity", for a bunch with connected union contracted to a single point with the morphism an isomorphism outside it (printed p. 30); the steps above reach the same conclusion by Hodge index and need neither the connectedness nor the single-point hypothesis.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.7, printed p. 300, has one sentence: the answer follows from V.5.4 since $X$ is assumed nonsingular and $X_0$ need not be. That is a cross-reference to a defective entry, not a proof. *Algebraic Geometry II*, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 7, printed p. 21, aims at the same estimate but ends "$0=\dots\ge mY^2\Rightarrow Y^2=0$", which does not follow and is false for a contracted curve; nothing in it is used here.
 :::

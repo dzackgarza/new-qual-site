@@ -71,8 +71,9 @@ audit:
     that is Castelnuovo's criterion, printed p. 10, an equivalence for a single
     contracted curve with the morphism an isomorphism outside it, and his route
     from Y^2 < 0 to Y^2 = -1 at a nonsingular image point is the Contraction
-    Theorem (Artin), stated on printed p. 93, with Theorem 4.17, whose section
-    begins on printed p. 95.
+    Theorem (Artin), stated on printed p. 93, with his Theorem (Artin) in
+    Section 4.17, whose section and statement begin on printed p. 94 and whose
+    proof is on printed p. 95.
     So part (b) now has a published proof and part (a) one published half; the
     other half is the card's step contracted-curve-is-p1, as the body now says.
     Reid's proof is stated "for simplicity" under the connected-union,
@@ -91,12 +92,24 @@ audit:
     and the arXiv record's comment field says "To appear in 1993 volume of the
     IAS/AMS Park City lecture notes series". Theorem A.7's statement is on printed
     p. 29 and its proof on printed pp. 30--31, not "p. 29 with proof pp. 29--31";
-    the Contraction Theorem (Artin) is stated on printed p. 93 and Theorem 4.17
-    begins on printed p. 95, not pp. 92--94 and 94--95; Ex. A.16 is on printed
-    p. 36. Section A.7's statement of the theorem is for a bunch of curves, and
+    the Contraction Theorem (Artin) is stated on printed p. 93, not pp. 92--94,
+    while Section 4.17 and its Theorem (Artin) begin on printed p. 94 and the
+    proof is on printed p. 95, so the entry's pp. 94--95 for Theorem 4.17 was
+    right; Ex. A.16 is on printed p. 36. Section A.7's statement of the theorem is for a bunch of curves, and
     part (a) for a curve among several components of a fibre follows from it by
     restricting to the one-by-one principal submatrix, which the two step remarks
     and the published-solution remark now say.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Page correction, on a reader's report of issue #121: the event above said
+    Reid's Theorem 4.17 begins on printed p. 95. Read again in
+    tmp/sources/reid-chapters.md and located on the printed folios of
+    tmp/sources/reid-chapters-algebraic-surfaces.pdf with pdftotext as a page
+    locator: printed p. 93 carries the Contraction Theorem (Artin) of 4.16,
+    Section 4.17 and its Theorem (Artin) begin on printed p. 94, and the proof
+    of Theorem 4.17 (1) is on printed p. 95. Corrected here and in the remark.
 ---
 
 ::: {.problem}
@@ -444,6 +457,6 @@ complement to the whole exceptional fibre and prove part (b).
 :::
 
 ::: {.remark title="Published solution"}
-M. Reid, *Chapters on Algebraic Surfaces*, arXiv:alg-geom/9602006v1 (6 February 1996), a draft of the notes submitted to the 1993 volume of the IAS/AMS Park City lecture notes series, Theorem A.7(1), statement on printed p. 29 and proof on printed pp. 30--31, states part (b) as a theorem --- the intersection matrix of a bunch of curves contracted to points by a projective birational morphism of a nonsingular surface is negative definite --- and proves it; with $k=1$ it gives $Y^2<0$ in part (a), and by restriction to a principal submatrix the same for a curve among several components of a fibre, and his Castelnuovo criterion, printed p. 10, gives $Y\cong\PP^1$ with $Y^2=-1$ when the contraction has no other exceptional curve. The identity of the image point as a nonsingular one, which is what turns $Y^2<0$ into $Y^2=-1$ there, is his Contraction Theorem (Artin), stated on printed p. 93, with Theorem 4.17, whose section begins on printed p. 95. The steps above are not a transcription of Reid: they reach both parts through the factorization into point blowups and Hodge index, the second of which he records as Ex. A.16, and they cover a contracted curve inside a larger exceptional locus, which his criterion does not.
+M. Reid, *Chapters on Algebraic Surfaces*, arXiv:alg-geom/9602006v1 (6 February 1996), a draft of the notes submitted to the 1993 volume of the IAS/AMS Park City lecture notes series, Theorem A.7(1), statement on printed p. 29 and proof on printed pp. 30--31, states part (b) as a theorem --- the intersection matrix of a bunch of curves contracted to points by a projective birational morphism of a nonsingular surface is negative definite --- and proves it; with $k=1$ it gives $Y^2<0$ in part (a), and by restriction to a principal submatrix the same for a curve among several components of a fibre, and his Castelnuovo criterion, printed p. 10, gives $Y\cong\PP^1$ with $Y^2=-1$ when the contraction has no other exceptional curve. The identity of the image point as a nonsingular one, which is what turns $Y^2<0$ into $Y^2=-1$ there, is his Contraction Theorem (Artin), stated on printed p. 93, with his Theorem (Artin) in Section 4.17, whose section and statement begin on printed p. 94 and whose proof is on printed p. 95. The steps above are not a transcription of Reid: they reach both parts through the factorization into point blowups and Hodge index, the second of which he records as Ex. A.16, and they cover a contracted curve inside a larger exceptional locus, which his criterion does not.
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.4, printed p. 298, is a corollary of the Hodge index theorem for contracted curves; its part (a) proves only $Y^2\le0$, from the false statement that the pullback of an ample divisor is ample, and says nothing about $Y\cong\PP^1$.
 :::

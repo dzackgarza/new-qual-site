@@ -65,6 +65,28 @@ audit:
     argument and says which of this card's steps is which. Checked against
     Hartshorne V.5.6, printed p. 299, and against the three kinds as printed in
     Exercise II.4.12.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Correction, on a reader's report of issue #121: the event above is wrong
+    where it says Yang's entry "proves all three kinds" and where it maps his
+    union to step union-contained-in-r. Re-read in
+    tmp/sources/lfwin-hartshorne-solutions.md, Solution 5.5.6 is Egbert's
+    V.5.6 entry (printed p. 299) plus one sentence, and that sentence is the
+    bare assertion R = lim O_{P_i,X_i} = union O_{P_i,X_i} with no argument;
+    his entry does not use the hint, Exercise V.5.1, at all. It therefore
+    proves kind (3) no more than Egbert does, and the exercise is proved by
+    this card's own steps element-eventually-regular (Exercise V.5.1 places
+    each f in R in some A_i) and r-equals-union-type-three (both
+    inclusions); step union-contained-in-r proves only R_0 contained in R.
+    Two errors in his sentence are now flagged on the remark: the union along
+    the inclusions is a direct limit, not the inverse limit his display
+    writes first; and his reading of tr.d._k(R/m_R) as the dimension of the
+    centre does not separate kind (1) from kind (2), since in kind (2) the
+    DVR at the generic point of the exceptional curve has residue
+    transcendence degree 1 over k while its centre on X is a closed point.
+    V.5.6 is not closed by a published proof.
 ---
 
 ::: {.problem}
@@ -460,7 +482,11 @@ excluded exactly as in Exercise II.4.12.
 :::
 
 ::: {.remark title="Published solution"}
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.5.6, printed p. 114 (`tmp/sources/lfwin-hartshorne-solutions.pdf`, whose folios are its PDF pages; read in `tmp/sources/lfwin-hartshorne-solutions.md`), proves the exercise, and its argument is the one this card's steps carry out. Its course is this: the valuation criterion, $X$ being projective and therefore proper, gives $\varphi:\Spec R\to X$ whose closed-point image is the center $P$ of $\nu$, and $R$ dominates $\OO_P$; the dimension of the center is $\operatorname{tr.d.}_k(R/\mathfrak m_R)$, so it is $1$ or $0$. If it is $1$, both $R$ and $\OO_P$ are discrete valuation rings and $R=\OO_P$, which is kind (1). If it is $0$, blow up $P$: the center on $X'$ is either the exceptional curve, which is kind (2), or a point of it, and one repeats; if a divisor is reached after finitely many blowups the ring is kind (2), and if not, the chain is infinite and $R=\varprojlim\OO_{P_i,X_i}=\bigcup_i\OO_{P_i,X_i}$, which is kind (3). That last identification --- the union being all of $R$, the point Exercise II.4.12 leaves open and Egbert's V.5.6 entry, printed p. 299, does not prove --- is step [](#union-contained-in-r){.pf-ref} below, and the card's other steps are the source's cases (1) and (2) with the domination argument written out.
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.5.6, printed p. 114 (`tmp/sources/lfwin-hartshorne-solutions.pdf`, whose folios are its PDF pages; read in `tmp/sources/lfwin-hartshorne-solutions.md`), **does not prove the exercise**, and no step of this card is a transcription of it. What he writes is Egbert's V.5.6 entry, printed p. 299, with one sentence added. The valuation criterion, $X$ being projective and therefore proper, gives $\varphi:\Spec R\to X$ whose closed-point image is the centre $P$ of $\nu$, and $R$ dominates $\OO_P$; when the centre is a curve both rings are discrete valuation rings and $R=\OO_P$, which is kind (1); when it is a closed point he blows $P$ up and says the centre on $X'$ is either the exceptional curve, which is kind (2), or a point of it, and that one repeats. The added sentence is his kind (3), and it is an assertion, not an argument:
+$$R=\varprojlim\OO_{P_i,X_i}=\bigcup_i\OO_{P_i,X_i}.$$
+Two things in it are wrong. The union of the local rings is a direct limit, $\bigcup_i\OO_{P_i,X_i}=\varinjlim_i\OO_{P_i,X_i}$, its transition maps being the inclusions $\OO_{P_i,X_i}\into\OO_{P_{i+1},X_{i+1}}$; an inverse limit needs maps in the opposite direction, which this chain of rings does not carry, so neither identity in the display is established. And his numerical test does not sort the three kinds: he reads $\operatorname{tr.d.}_k(R/\mathfrak m_R)$ as the dimension of the centre and takes the value $1$ to mean kind (1), but in kind (2) the ring $R=\OO_{X_n,x_n}$ at the generic point of the exceptional curve has $\operatorname{tr.d.}_k(R/\mathfrak m_R)=1$ as well, its centre on $X$ being a closed point; the kinds are separated by where the centre sits, not by that number. His entry does not use the hint, Exercise V.5.1, at all, and it is that exercise which supplies the missing inclusion.
+
+The proof of the exercise is therefore this card's own. Its decisive steps are [](#element-eventually-regular){.pf-ref}, which resolves $[f:1]$ by point blowups and compares centres to place each $f\in R$ in some $A_i$, and [](#r-equals-union-type-three){.pf-ref}, which assembles $R_0\subseteq R$ with $R\subseteq R_0$; step [](#union-contained-in-r){.pf-ref} proves only the inclusion $R_0\subseteq R$.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.6, printed p. 299, states the trichotomy, identifies kinds (1) and (2) through the centre and its successive blowups, and for kind (3) says only that one "repeats and gets a type (3)", citing another book for the value-group claim.
 :::

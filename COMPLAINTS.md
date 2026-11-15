@@ -732,7 +732,7 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 
 **Repair.** A published proof of Hartshorne II, Ex. 2.15(c), checked against the card, or the owner's direction to accept the card's derivation.
 
-**Searched outside the retained sets (issue #131, 2026-11-11).** Closed for both parts: the Stacks Project Lemma 33.8.9 (tag 038I) lists geometric irreducibility, irreducibility after every finite separable extension, and irreducibility of $X$ over a separable algebraic closure as equivalent, and its item (1) is the assertion for every field extension $k'/k$; Lemma 33.6.4 (tag 035U) lists geometric reducedness, reducedness after every field extension, after every finite purely inseparable extension, after $k^{1/p}$, after $k^{perf}$ and after $\bar k$. Those are parts (a) and (b) with $k_s$ and $k_p$ in place. Liu, *Algebraic Geometry and Arithmetic Curves*, Section 3.2.2 p. 89, cited by Egbert and by Cutrone--Marshburn, is still not on this machine and was not consulted.
+**Searched outside the retained sets (issue #131, 2026-11-11).** Closed for both parts: the Stacks Project Lemma 33.8.9 (tag 038I) lists geometric irreducibility, irreducibility after every finite separable extension, and irreducibility of $X$ over a separable algebraic closure as equivalent, and its item (1) is the assertion for every field extension $k'/k$; Lemma 33.6.4 (tag 035X, the lemma of Section 33.6, which is tag 035U) lists geometric reducedness, reducedness after every field extension, after every finite purely inseparable extension, after $k^{1/p}$, after $k^{perf}$ and after $\bar k$, and, as item (7), geometric reducedness of the rings $\OO_X(U)$ on affine opens. Those are parts (a) and (b) with $k_s$ and $k_p$ in place. Liu, *Algebraic Geometry and Arithmetic Curves*, Section 3.2.2 p. 89, cited by Egbert and by Cutrone--Marshburn, is still not on this machine and was not consulted.
 
 ### II.3.15 has no complete published solution in the sets inspected
 
@@ -1396,9 +1396,8 @@ and his 2011 draft):
   852 pages, whose printed folios are its PDF page numbers. Read in `tmp/sources/vakil-rising-sea-2025-10-21.md`,
   one MinerU Flash extraction of the whole book with its mathematics in LaTeX; the extraction marks blocks of
   twenty PDF pages rather than single folios, so a printed page is named from the book's own numbering. The
-  earlier page-range files `tmp/sources/vakil-rising-sea-2025-10-21-mineru-pNNNN-NNNN.md` (pp. 260--262
-  §9.3, 382--385 §13.5, 445--447 §15.5, 534--537 §19.1, 544--550 §§19.5--19.6, 554--557 §19.9, 757--768 §27
-  and 780--786 §28.6) are superseded by it and deleted. Sections used: 9.3, 13.5, 15.5, 19.1, 19.5, 19.6,
+  earlier page-range files of the same stem, one per section read, are superseded by it; the list of files
+  deleted in this replacement is in the `#121` section below. Sections used: 9.3, 13.5, 15.5, 19.1, 19.5, 19.6,
   19.9, 27, 28.6.
 - **The Stacks Project**, built from stacks-project commit
   `a04446e57ec1fbc252a871afcec7752fb2807b14` (28 July 2026, "A couple of compatibilities for relative
@@ -1430,12 +1429,8 @@ and his 2011 draft):
   Yang Pi-Yeh's set as `tmp/sources/lfwin-hartshorne-solutions.md`; the NTU *Algebraic Geometry II* Chapter V
   homework as `tmp/sources/ntu-ag2-chapter5.md`; and Davis--Sobieska as
   `tmp/sources/davis-sobieska-rational-normal-curves-weighted.md`. Each of those replaced a `pdftotext`
-  output of the same stem with suffix `.txt` (`reid-chapters.txt`, `lfwin.txt`, `ntu-ag2-chapter5.txt`,
-  `davis-sobieska-rational-normal-curves-weighted.txt`), which are deleted, as are the four Stacks text files
-  taken from the old build (`stacks-project-book.md`, `stacks-project-53.9-plane-curves-tag0BYA.txt`,
-  `stacks-project-lemma-33.8.9-tag038I.txt`, `stacks-project-section-33.6-tag035U.txt`), the Reid page-range
-  extractions `reid-chapters-algebraic-surfaces-mineru-p{0010,0029-0031,0092-0095}.md`, and the two probes
-  `.tag-probe.html` and `mineru-probe.md`. What remains on the old
+  output of the same stem with suffix `.txt`, and the superseded files of every kind are listed once, in the
+  `#121` section below. What remains on the old
   footing is the page referencing of the retained solution sets (Egbert, Lomont, Cais,
   Cutrone--Marshburn, Park, Kim): those pages were read in `pdftotext -layout` renders of the PDFs,
   used as locators for the printed page, and no extraction of those PDFs is retained --- a gap recorded
@@ -1483,8 +1478,10 @@ solution body, not only in the audit trail.
   $2bdv-(ad+bc)$, which at $v=0$ is $-(ad+bc)$ and at a point of $E$ with $v=0$, where $(a-bv)(c-dv)$
   vanishes, is $-bc\ne0$ or $-ad\ne0$ --- and its minor in the last two columns, $-v(2bdv-(ad+bc))$,
   vanishes with it; the
-  points with $v=0$ are $P_1$ when $a=0$ and $P_2$ when $c=0$, and both for the node $xy$, which
-  $f_2=(ax-by)(cx-dy)$ represents with $(a,b,c,d)=(0,1,-1,0)$. The printed rank-two claim therefore needs
+  points with $v=0$ are $P_1$ when $a=0$ and $P_2$ when $c=0$, and never both, since $a=c=0$ makes
+  $P_1=(b:0)$ and $P_2=(d:0)$ coincide; for the node $xy$, which
+  $f_2=(ax-by)(cx-dy)$ represents with $(a,b,c,d)=(0,1,-1,0)$, $P_1=(1:0)$ is the point at $v=0$ and
+  $P_2=(0:1)$ is at $v=\infty$. The printed rank-two claim therefore needs
   the missing $1$ alone; the printed $0$ in place of $-x$ is the value $x=0$ on $E$. An earlier version of
   this entry said the difference "does not affect the conclusion"
   and that the deciding minor is nonzero as printed; both sentences were false, a later one said "rank at
@@ -1690,7 +1687,8 @@ being covered by Stacks tag 0BYA and by Shichijo's elimination read in $k$),
 `P-AGH3117NONALGSHEAF`, `P-AGH3123JUMPINGIDEAL`, IV.2.3(h), IV.3.4(a), IV.3.11(a),
 IV.3.12, IV.4.22, IV.6.9, and the twenty Chapter V cards that the section entries still record as
 uncovered --- V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, the ten of V.4.7--V.4.16,
-V.5.5, and V.6.1, V.6.2. V.5.4 has come off that list, and V.5.1, V.5.6 and V.5.7 with it (below).
+V.5.5, and V.6.1, V.6.2. V.5.4 has come off that list, and V.5.1 and V.5.7 with it (below); V.5.6 has
+not, its one candidate source asserting the decisive step rather than proving it.
 Of the two sources this paragraph used to dispose of, one was misdescribed: the NTU set does **not** stop at
 V.4.4(b). Read in its MinerU extraction `tmp/sources/ntu-ag2-chapter5.md` it has section 4 exercises
 1--5, 7, 10--12, 14 and 16, section 5 exercises 1--4, 7 and 8, and a heading for section 6 with nothing
@@ -1703,9 +1701,10 @@ Algebraic Geometry* download is a six-page title stub, not the book. V.5.4's par
 A.7, whose statement is on printed p. 29 and whose proof is on pp. 30--31, while his Castelnuovo criterion,
 printed p. 10, covers part (a)'s $Y\cong\PP^1$ for the single contracted curve.
 
-**Repair.** Recorded for the next pass, not done here: a source for the thirty-four Chapter V cards that
-remain (V.5.4's part (b), V.5.1, V.5.6 and V.5.7 having been closed since, by Reid's Theorem A.7(1), by the
-NTU set's Exercise 5.1 and by Yang Pi-Yeh's 5.5.6), for
+**Repair.** Recorded for the next pass, not done here: a source for the Chapter V cards that
+remain (V.5.4's part (b), V.5.1 and V.5.7 having been closed since, by Reid's Theorem A.7(1) and by the
+NTU set's Exercise 5.1; V.5.6 is open, since Yang Pi-Yeh's 5.5.6 asserts the decisive union instead of
+proving it), for
 the two Chapter III cards whose printed statements are false, and the Stack Exchange search once the
 throttle expires.
 
@@ -1754,7 +1753,8 @@ mathematics the cards prove: most are misdescriptions of a source, or of a card'
   card's step wrote the computed matrix without saying so, and now says so. **Its claim that the rank
   conclusion is unaffected was wrong**, and is corrected in this pass: at $v=0$ the printed row is zero, so
   the printed matrix has rank at most one at the point $v=0$ of $E\cap\tilde Y$, which is $P_1$ when $a=0$ and
-  $P_2$ when $c=0$ --- both for the node $xy$. The printed rank-two claim needs the missing $1$, which the
+  $P_2$ when $c=0$, never both: for the node $xy$, written $(a,b,c,d)=(0,1,-1,0)$, $P_1$ is at $v=0$ and
+  $P_2$ is at $v=\infty$. The printed rank-two claim needs the missing $1$, which the
   computed matrix has. The same
   step said the $V_1$ chart has "coordinates $(y,u)$" while its Jacobian is $2\times3$ in $(x,y,u)$; the
   columns are now named.
@@ -1846,19 +1846,21 @@ mathematics a card proves.
   page with its LaTeX (the entry above names them), and Vakil's *Rising Sea* as one MinerU Flash extraction
   of the whole book. `pdftotext -layout` keeps only the page-locator role it always had.
 - **The Japanese character counts were not character counts, and were given twice.** The two paragraphs on
-  the Shichijo extraction gave 2 080--5 352 kana and kanji per file as 6 570--17 222, 16 862 for Chapter 1
-  section 5 as 5 348, and `なので` 4--22 times as 4--21, and one line said the `--language en` file held "no
-  Japanese character" where the later paragraph said 135. Measured again on the six retained files, the two
-  values that appeared for the same measure were the same count under two conventions: 2 080--5 352
-  excluding the iteration mark 々 and 2 083--5 353 including it. They are now stated once, in the paragraph
+  the Shichijo extraction carried two different sets of numbers for the same measure, one of them wrong, and
+  one line said the `--language en` file held "no Japanese character" where the later paragraph gave a count
+  for it. Measured again on the six retained files, the two values that had appeared were the same count
+  under two conventions, one excluding and one including the iteration mark 々. The figures are now stated
+  once, in the paragraph
   that measures them, with the character classes named and 々 named separately, and the unretained
   `--language en` file's count is not restated.
 - **I.5.6(b), "does not affect the conclusion" is false at $v=0$.** The source orders its columns $(y,x,v)$
   and prints the chart-equation row as $(0,-v,0)$ where the derivatives are $(1,-v,-x)$; at $v=0$ that row
   is zero, so the printed $J_0$ has rank exactly one there --- the second row keeps $2bdv-(ad+bc)$, which at
   the points of $E$ with $v=0$ is $-bc$ or $-ad$, nonzero --- and its last-two-columns minor
-  $-v(2bdv-(ad+bc))$ vanishes with the row. Those points are $P_1$ when $a=0$ and $P_2$ when $c=0$, both for the node
-  $xy$, so the printed rank-two claim needs the missing $1$ and only the $1$, the printed $0$ being $-x$
+  $-v(2bdv-(ad+bc))$ vanishes with the row. Those points are $P_1$ when $a=0$ and $P_2$ when $c=0$, and
+  never both, since $a=c=0$ makes $P_1=(b:0)$ and $P_2=(d:0)$ coincide; for the node $xy$, which
+  $f_2=(ax-by)(cx-dy)$ represents with $(a,b,c,d)=(0,1,-1,0)$, the point at $v=0$ is $P_1=(1:0)$ and the other,
+  $P_2=(0:1)$, is at $v=\infty$. So the printed rank-two claim needs the missing $1$ and only the $1$, the printed $0$ being $-x$
   on $E$; the card's step now says so instead of saying
   the rank conclusion is unaffected, and records the source's second row $(0,\sum,B)$, which is the
   computed one.
@@ -1892,14 +1894,14 @@ cites all three in the body, says which half each covers, and keeps its own Hodg
 alternative Reid names in Ex. A.16, printed p. 36, and which reaches the general case his proof simplifies
 away. Read in `tmp/sources/reid-chapters.md` (the whole paper; its folios are the PDF pages of
 `tmp/sources/reid-chapters-algebraic-surfaces.pdf`, whose Artin contraction theorem is stated on printed
-p. 93 and whose Theorem 4.17 begins on printed p. 95, not the pages an earlier version of this entry gave).
+p. 93 and whose Section 4.17 and Theorem (Artin) begin on printed p. 94 with the proof on printed p. 95).
 
 **What was not done.** Math Stack Exchange remains unsearched: the throttle in the §60--§73 entry runs to
 about 2026-11-16 03:00Z, and this pass ended before it. The other Chapter V cards, III.7.4(b),(d),
 III.11.7(a), III.12.3, I.2.9(b), IV.3.4(a), IV.3.12, IV.4.22 and IV.6.9 still have no located published
 proof, and the entries above say what the nearest located text does and does not do.
 
-## `SRC-TEXT-HART77` #121: the text versions replaced, the tag audit, and the three cards that closed
+## `SRC-TEXT-HART77` #121: the text versions replaced, the tag audit, and the two cards that closed
 
 **The text versions were replaced in `tmp/sources/`, and every reference now names a file that exists.** The
 superseded files were deleted: the `pdftotext` outputs `reid-chapters.txt`,
@@ -1924,6 +1926,21 @@ gives. The retained compiled book, `stacks-project-book.pdf`, is a different and
 ed88ff78 compiled 14 July 2026, and it is the only place a printed page for a tag can come from; the two
 cards that quote one say which build's page it is.
 
+**The tag audit, stated as it is.** This section was headed a tag audit when the check behind it was not one:
+twelve tags had been read against the claim made of them --- 0CCS, 0C6T, 01PW, 02JN, 01XD and 0BYA in the
+paragraph below, and 0C3S, 0C3T, 0C3V, 0C3W, 0C1T and 0C1R in the audit note of
+`P-AGH418ARITHGENUSSINGULAR` --- while the other citations had only been given a file each. That check has now
+been run over the whole collection. The `SRC-TEXT-HART77` cards cite **70 distinct tags on 44 cards**; every
+one of the 70 has its file in `tmp/sources/stacks-tags/`, and every file's statement was read against what
+the card attributes to it, both the number the card gives it and the content it describes. **One citation was
+wrong**: Lemma 33.6.4 had been cited as tag 035U, which is Section 33.6, where the lemma sits; the lemma is
+tag 035X. The card and the II.2.15(c) entry above now carry 035X, and the lemma's item (7), which neither had
+mentioned, is now listed with the rest. Nothing else needed changing: each of the other 69 files states the
+result the card names for it. That accounts for all 79 files in the directory: the 70 tags cited on cards, the
+section tag 035U named in the corrected audit note, and eight that this file cites and no card does
+(0C2I--0C2M, 0C5X, 0C6Z, 0C73). The count of 70 in the sources list above is a count of citations, not a
+check, and is correct as a count.
+
 **The six tags whose old files had lost text, checked against the new ones.** 0CCS, 0C6T, 01PW, 02JN, 01XD
 and 0BYA are cited on seven cards. Each was read in its new file and compared with the claim the card
 makes of it, and no claim rested on text the old files lacked: 0CCS and 0C6T (`P-AGH415DIMLEQDEG`) are the
@@ -1943,24 +1960,37 @@ did come out of the check, not from missing text but from a misattribution: on
 33.39.7 (tag 0C1T), which only defines $\delta$ of $X$ at $x$, and the item (9) the step uses had been
 called $0C1T(9)$ where it is Lemma 33.41.2 (tag 0C1R), item (9). Both are corrected there.
 
-**Three cards closed, and what closed them.** `P-AGH551RESOLVERATFN` (V.5.1) is *Algebraic Geometry II*,
+**Two cards closed, and one taken back off the list.** `P-AGH551RESOLVERATFN` (V.5.1) is *Algebraic Geometry II*,
 National Taiwan University, 2020 Spring, Chapter V homework, Exercise 1 (Po-Sheng Wu), printed p. 19: blow up
 a zero--pole intersection and the intersection number $(\pi^*f)_0\cdot(\pi^*f)_\infty$ drops by
 $\mu_P((f)_\infty)^2$, so the blowups terminate and the zeros and poles become disjoint. The card transcribes
 it in step `zero-pole-disjoint`, supplies the two estimates its display omits, and keeps its own local
 Euclidean-measure proof of the same decrease. `P-AGH557NEGSELFINT` (V.5.7) is Reid's Theorem A.7(1) at
 $k=1$: the card's corrected statement (the printed one needs $f$ dominant, which the card proves) is that
-theorem's single-curve case, and the remark records the Stein-factorisation argument that the printed
-hypothesis makes $f$ birational, which is what Reid's "projective birational morphism" asks. Its two other
+theorem's single-curve case. The remark's first version of the passage from the exercise's hypotheses to
+Reid's was wrong, and a reader of this file caught it: the fibre condition $f^{-1}(P)=Y$ forces
+$\#g^{-1}(P)=1$ for the finite part of the Stein factorization, not $\deg g=1$, so it does not make $f$
+birational --- $\operatorname{Bl}_O\PP^2\to\PP^2\to\PP^2/\sigma$ with $\sigma(x:y:z)=(-x:-y:z)$ has fibre $E$ over the
+image of $O$ and degree $2$. What Reid's theorem is applied to is the Stein factor $h:X\to X'$, which is a
+projective birational morphism of the nonsingular surface $X$ --- birational because $h_*\OO_X=\OO_{X'}$ has
+rank one --- and contracts $Y$ to a point; so $Y^2<0$ follows with no claim on $\deg f$, and the card is
+closed on Reid with that correction in it. Its two other
 candidates do not prove it: Egbert's V.5.7 (printed p. 300) is a cross-reference to his defective V.5.4
 entry, and the NTU set's Exercise 5.7 (printed p. 21) concludes $Y^2=0$ from $0\ge mY^2$.
-`P-AGH556VALUATIONRINGS` (V.5.6) is Yang Pi-Yeh's exercise 5.5.6, printed p. 114 of
-`tmp/sources/lfwin-hartshorne-solutions.pdf`: the valuation criterion puts the centre at a point and the
-centre's dimension decides between kind (1) and the closed case, where each blowup either lands the next
-centre on the exceptional curve (kind 2) or repeats, the infinite alternative giving
-$R=\varprojlim\OO_{P_i,X_i}=\bigcup_i\OO_{P_i,X_i}$ (kind 3). That union identification is the step
-Exercise II.4.12 leaves open and the only one Egbert's entry, printed p. 299, does not prove; the card's steps
-are the source's cases written out.
+
+`P-AGH556VALUATIONRINGS` (V.5.6) is **not** closed, and the entry that said it was is corrected here. Yang
+Pi-Yeh's exercise 5.5.6, printed p. 114 of `tmp/sources/lfwin-hartshorne-solutions.pdf`, is Egbert's V.5.6
+entry (printed p. 299) plus one sentence, and that sentence is the bare assertion
+$R=\varprojlim\OO_{P_i,X_i}=\bigcup_i\OO_{P_i,X_i}$: it gives no argument for either identity, it does not
+use the hint (Exercise V.5.1), and nothing in it establishes $R\subseteq R_0$, which is the whole difficulty
+of case (3). Two things in it are also wrong: the union along the inclusions is a direct limit, not the
+inverse limit the display writes first, and the residue transcendence degree $\operatorname{tr.d.}_k(R/\mathfrak m_R)$
+does not sort the kinds, since the DVR at the generic point of the exceptional curve has value $1$ there too
+while its centre on $X$ is a closed point. V.5.6 is proved by the card's own steps
+`element-eventually-regular` and `r-equals-union-type-three`, as its remark now says, and no published proof
+of that inclusion was located: a search on 2026-11-15 returned the exercise's own text, which stops at
+"$R_0$ is a local ring, so it is dominated by $R$", and two discussion threads (MathOverflow 12717, MSE
+1125594) that describe the trichotomy without proving $R\subseteq R_0$.
 
 **What the remaining Chapter V cards' nearest sources now do, read in the new extractions.** Yang Pi-Yeh's
 Chapter V solutions begin at printed p. 100 of `tmp/sources/lfwin-hartshorne-solutions.md` and were
@@ -1969,7 +1999,8 @@ called empty are arguments. His 5.5.1 is a version of V.5.1; his 5.5.2 is a vers
 repeats the false ampleness claim of Egbert's entry ("$f^*H$ is ample on $X$"), and 5.5.4(b) argues negative
 definiteness by the two-hyperplane route; his 5.5.7 aims at V.5.7 through $mY=\tilde H_1-\tilde H_0$ and
 needs $\tilde H_0\cdot Y>0$ for the strict inequality, which it does not establish; his 5.5.8 carries out the
-eight blowups of V.5.8; his 5.5.6 closes V.5.6 above; and his 5.6.1 and 5.6.2 are the sketches this file
+eight blowups of V.5.8; his 5.5.6 states the union of case (3) without proving it and so does not close
+V.5.6 above; and his 5.6.1 and 5.6.2 are the sketches this file
 already described. None of the Chapter V cards still listed as open is closed on him. The NTU set reaches further than
 this file said (section 4 exercises 1--5, 7, 10--12, 14, 16 and section 5 exercises 1--4, 7, 8) and is
 defective on V.4.7 ($d=4$ left open), V.4.11(c) (empty) and V.5.7 (the wrong conclusion above). Reid's

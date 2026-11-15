@@ -78,6 +78,20 @@ audit:
     gave 19.5.2 as pp. 546--548 and said the count was "restated as 19.6.2 ... who
     reads it off from omega_X"; both are corrected in the body, which now says
     which proposition is which.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Attribution and page correction, on a reader's report of issue #121: the
+    published-solution remark still carried the form the events above correct.
+    It gave Proposition 19.5.2 as printed pp. 546--548, and it called the count
+    g = r/2 - 1 "his 19.5.4 statement". Read on the printed folios of
+    tmp/sources/vakil-rising-sea-2025-10-21.pdf, which are its PDF pages:
+    Theorem 19.5.1 is stated on printed p. 546, Proposition 19.5.2 runs over
+    printed pp. 546--547, and 19.5.4, printed pp. 547--548, is the paragraph in
+    which that theorem is proved and the genus computed. The remark now gives
+    19.5.2 as pp. 546--547, names the count as Theorem 19.5.1, and says that
+    19.5.4 is where it is proved.
 review: draft
 
 ---
@@ -596,7 +610,7 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), steps [](#s3){.pf-re
 :::
 
 ::: {.remark title="Published solution"}
-R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5--19.6], printed pp. 546--550, proves (a) and (b): Proposition 19.5.2 (pp. 546--548) gives the unique double cover branched at a prescribed even set of points, as $y^2=f(x)$ normalized; 19.5.4 (pp. 547--548) computes its genus as $r/2-1=2$, by a Čech computation on the two affine charts of the cover; Proposition 19.5.7 (pp. 548--549) shows there is at most one double cover of $\PP^1$ on a curve of genus at least $2$, which makes the double cover the canonical one. Steps [](#s1){.pf-ref} to [](#s5){.pf-ref} prove the same assertions by other means --- Riemann--Hurwitz for the branch count and for $g(X)=2$, Riemann--Roch for the uniqueness of the degree-two map --- and cite his propositions for the statement rather than reproducing his computation; steps [](#s1){.pf-ref} and [](#s4){.pf-ref} say where the page is and that the count they give is his 19.5.4 statement. Part (c) has no published proof here: three-transitivity of $\Aut\PP^1$, which the exercise asks to deduce from (I, Ex. 6.6), is Exercise 15.5.B in Vakil, and step [](#s6){.pf-ref} is the card's own.
+R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5--19.6], printed pp. 546--550, proves (a) and (b): Proposition 19.5.2 (pp. 546--547) gives the unique double cover branched at a prescribed even set of points, as $y^2=f(x)$ normalized; the count $r/2-1=2$ is Theorem 19.5.1 (printed p. 546), whose proof computes the genus in 19.5.4 (pp. 547--548) by a Čech computation on the two affine charts of the cover; Proposition 19.5.7 (pp. 548--549) shows there is at most one double cover of $\PP^1$ on a curve of genus at least $2$, which makes the double cover the canonical one. Steps [](#s1){.pf-ref} to [](#s5){.pf-ref} prove the same assertions by other means --- Riemann--Hurwitz for the branch count and for $g(X)=2$, Riemann--Roch for the uniqueness of the degree-two map --- and cite his propositions for the statement rather than reproducing his computation; steps [](#s1){.pf-ref} and [](#s4){.pf-ref} say where the page is and that the count they give is his Theorem 19.5.1. Part (c) has no published proof here: three-transitivity of $\Aut\PP^1$, which the exercise asks to deduce from (I, Ex. 6.6), is Exercise 15.5.B in Vakil, and step [](#s6){.pf-ref} is the card's own.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.2, printed p. 210, classifies genus-2 curves by the six branch points of the canonical double cover, with Hurwitz $2g-2=2(-2)+6$ fixing the count.
 :::

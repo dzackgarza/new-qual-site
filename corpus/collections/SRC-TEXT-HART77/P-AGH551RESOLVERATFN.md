@@ -61,6 +61,17 @@ audit:
     exercise statement was checked against Hartshorne V.5.1, printed p. 299, and
     the choice mu_P((f)_0) >= mu_P((f)_infty) is the source's "wlog", justified
     by applying it to 1/f.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Text repair, on a reader's report of issue #121: step zero-pole-disjoint
+    began the transcription of the source's argument with the sentence "Blow
+    it up: pi: X-tilde -> X at P" repeated as "Blow P up: pi: X-tilde -> X",
+    and it used (f-tilde)_0 and (f-tilde)_infty before saying what they are.
+    The duplication is gone and the step now names E and defines
+    (f-tilde)_0, (f-tilde)_infty as the strict transforms of (f)_0,
+    (f)_infty under pi. No mathematical claim is changed.
 ---
 
 ::: {.problem}
@@ -225,7 +236,7 @@ $$
 $$
 
 ::: pf-proof
-The published argument is a global count. This is *Algebraic Geometry II*, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 1 (Po-Sheng Wu), section 5, printed p. 19 (PDF p. 19 of `tmp/sources/ntu-ag2-chapter5.pdf`, where the set's own folios are its PDF pages), transcribed with the two estimates its display leaves to the reader. Write $(f)=(f)_0-(f)_\infty$ for the effective zero and pole divisors and let $P$ be a point where they meet on the current surface, of multiplicities $a=\mu_P((f)_0)$ and $b=\mu_P((f)_\infty)$. Blow it up: $\pi:\widetilde X\to X$ at $P$. By symmetry in $f\leftrightarrow 1/f$ assume $a\ge b>0$. Blow $P$ up: $\pi:\widetilde X\to X$. Then $\pi^*(f)_0=(\tilde f)_0+aE$ and $\pi^*(f)_\infty=(\tilde f)_\infty+bE$, so
+The published argument is a global count. This is *Algebraic Geometry II*, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 1 (Po-Sheng Wu), section 5, printed p. 19 (PDF p. 19 of `tmp/sources/ntu-ag2-chapter5.pdf`, where the set's own folios are its PDF pages), transcribed with the two estimates its display leaves to the reader. Write $(f)=(f)_0-(f)_\infty$ for the effective zero and pole divisors and let $P$ be a point where they meet on the current surface, of multiplicities $a=\mu_P((f)_0)$ and $b=\mu_P((f)_\infty)$. By symmetry in $f\leftrightarrow 1/f$ assume $a\ge b>0$. Blow $P$ up, $\pi:\widetilde X\to X$, and let $E$ be the exceptional curve and $(\tilde f)_0$, $(\tilde f)_\infty$ the strict transforms of $(f)_0$, $(f)_\infty$ under $\pi$. Then $\pi^*(f)_0=(\tilde f)_0+aE$ and $\pi^*(f)_\infty=(\tilde f)_\infty+bE$, so
 $$
 (\pi^*f)_0=(\tilde f)_0+(a-b)E,
 \qquad
