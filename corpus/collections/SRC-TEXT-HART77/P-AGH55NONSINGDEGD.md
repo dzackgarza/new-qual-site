@@ -54,10 +54,28 @@ audit:
     2/2 = 1, and the point (x_0:x_1:x_2) = (4:2:1) is on the curve and singular
     over F_7: on the chart x_0 = 1 it is (a,b) = (4,2), and
     a^3+ab^3+b = 64+32+2 = 98 = 0, 3a^2+b^3 = 48+8 = 56 = 0 and
-    3ab^2+1 = 48+1 = 49 = 0 modulo 7. So the source does not settle p = 3, and its
-    elimination does not settle any prime either; the card's own equation
+    3ab^2+1 = 48+1 = 49 = 0 modulo 7. So the source does not settle p = 7 with
+    d = 4, and its conclusion fails there; read in k, however, its elimination
+    settles every prime dividing d except p = 3, since d^2-3d+3 = 0 with p | d
+    reads 3 = 0. The card's own equation
     x^{d-1}y+y^{d-1}z+z^d stands, with the Stacks tag 0BYA citation for
     p nmid d and p | d, p != 3. The cancellation is on printed p. 4.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The event above was corrected in place, and the remark with it. It had said
+    that Shichijo settles no prime; that is false. Its elimination is
+    (d-1)^2 = d-2, i.e. d^2-3d+3 = 0, and the step it takes wrongly is only the
+    substitution of integers for the elements of k. Read in k the identity gives
+    p = 3 when p | d, so the source's argument does settle p | d with p != 3;
+    what stays open is p = 3 with 3 | d, which is the case the card's own
+    equation covers. The p = 7, d = 4 counterexample above is not a
+    counterexample to that: 7 does not divide 4, so it shows only that the
+    source's equation can be singular when p nmid d, where the source's integer
+    step was the error in a second way. Verified by the two substitutions: with
+    p | d one has d = 0, so d^2-3d+3 = 3 in k; with p = 7 and d = 4 the same
+    expression is 16-12+3 = 7 = 0 in F_7.
 ---
 
 ::: {.problem}
@@ -169,7 +187,7 @@ Step [](#geometrically-irreducible){.pf-ref} verifies that the resulting smooth 
 :::
 
 ::: {.remark title="Published solution"}
-A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.5, printed pp. 3--4, takes the equation $x_0x_1^{d-1}+x_1x_2^{d-1}+x_2x_0^{d-1}$ and eliminates the two chart coordinates to reach $(d-1)^2/(d-2)=1$, which it then solves over $\ZZ$. That last step is where its argument fails: the identity is one in $k$, and in characteristic $7$ with $d=4$ it holds, the point $(4:2:1)$ being a singular point of that curve over $\FF_7$, as the three reduced equations $a^3+ab^3+b=98$, $3a^2+b^3=56$ and $3ab^2+1=49$ at $(a,b)=(4,2)$ show. So the source proves nothing for $p\mid d$, characteristic $3$ included.
+A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.5, printed pp. 3--4, takes the equation $x_0x_1^{d-1}+x_1x_2^{d-1}+x_2x_0^{d-1}$ and eliminates the two chart coordinates to reach $(d-1)^2/(d-2)=1$, that is $d^2-3d+3=0$, which it then solves over $\ZZ$: no integer satisfies it, and it concludes that the curve is nonsingular. The identity is one in $k$, so that step has to be replaced; when it is, the source's argument settles the case $p\mid d$, $p\ne3$. Indeed a singular point gives $(d-1)^2=(d-2)$ in $k$, and for $p\mid d$ the identity $d^2-3d+3=0$ reads $3=0$, so $p=3$. Two cases are left: $p=3$, which the replaced step does not reach, and $p\nmid d$, where the identity can hold and the source's conclusion can fail --- for $p=7$, $d=4$ it does, the point $(4:2:1)$ being a singular point of that curve over $\FF_7$, as the three reduced equations $a^3+ab^3+b=98$, $3a^2+b^3=56$ and $3ab^2+1=49$ at $(a,b)=(4,2)$ show.
 
 The Stacks Project, *Algebraic Curves*, Section 53.9 (Plane curves), tag 0BYA, is the only published treatment found that writes out the case $p \mid d$ with its derivative check. It gives $F=T_0^d+T_1^d+T_2^d$ when $p\nmid d$, and $F=T_0^{d-1}T_1+T_1^{d-1}T_2+T_2^{d-1}T_0$ when $p\mid d$ and $p\neq3$, with the two partial derivatives $1-x^{d-2}y$ and $x^{d-1}-y^{d-2}$ on the affine piece $D_+(T_2)$, and it states that their common zero set together with the equation is empty; it then writes "We leave it to the reader to make examples in characteristic $3$".
 
@@ -181,5 +199,5 @@ Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exer
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.5.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.5, PDF p. 45: the same two equations as Borcherds.
 The second equation of the published answers is singular whenever $3=0$ in $k$: at $(1:1:1)$ its value is $3$ and each of its three partial derivatives is $d$, so for $p=3$ and $3\mid d$ the point $(1:1:1)$ lies on the curve and is singular. The proof above uses $x^{d-1}y+y^{d-1}z+z^d$ in that case instead, whose partials are $(d-1)x^{d-2}y$, $x^{d-1}+(d-1)y^{d-2}z$ and $y^{d-1}$, and which is nonsingular in every characteristic dividing $d$, the case $d=p=2$ included.
-Agree with Borcherds and Stacks where $p\nmid d$, and with Stacks where $p\mid d$ and $p\neq3$; the residual case $p=3$, $3\mid d$ is supplied here, and Stacks records it as left to the reader.
+Agree with Borcherds and Stacks where $p\nmid d$; Stacks and Shichijo cover $p\mid d$ with $p\ne3$, the latter once its integer step is read in $k$ as above; the residual case $p=3$, $3\mid d$ is supplied here, and Stacks records it as left to the reader.
 :::

@@ -48,6 +48,20 @@ audit:
     in Vakil either: he states the bijection between curves and six-point sets
     modulo PGL_2 and stops short of the action
     argument.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Wording corrected in the body and the published-solution remark: (a) and (b)
+    were described as "following" Vakil with the steps giving "those arguments in
+    Hartshorne's terms", which reads as a transcription. Steps s1, s2 and s4 are
+    the card's own -- Riemann--Hurwitz for the six branch points and for g(X)=2,
+    Riemann--Roch for the uniqueness of the degree-two map -- and Vakil's 19.5.4
+    computes the same genus by a Cech computation on the two affine charts of the
+    cover, which the body now says. His propositions are cited for the statements
+    the two proofs share, and nothing in steps s1--s5 reproduces his text.
+    Unchanged: parts (c), (d) and (e) have no published proof in Vakil, (c) being
+    his Exercise 15.5.B.
 review: draft
 
 ---
@@ -78,7 +92,7 @@ Then the last three are the new $\beta_1', \beta_2', \beta_3'$.
 :::
 
 ::: {.solution}
-Parts (a) and (b) follow R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5, 19.6], printed pp. 546--550. Proposition 19.5.2, printed pp. 546--548, constructs the double cover branched at a prescribed even set of points by writing it as $y^2=f(x)$ and normalizing; 19.5.4, printed pp. 547--548, computes its genus as $r/2-1$ from the Čech complex of the two affine charts; Proposition 19.5.7, printed pp. 548--549, proves that a curve of genus at least $2$ admits at most one double cover of $\PP^1$, through the canonical map; and 19.6.2, printed p. 550, assembles these into the bijection between genus-$2$ curves and double covers branched at six points. The steps below give those arguments in Hartshorne's terms. Part (c) is not in Vakil: three-transitivity of $\Aut\PP^1$ is Exercise 15.5.B there, so step [](#s6){.pf-ref} is this card's own.
+The assertions of parts (a) and (b) are the ones R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5, 19.6], printed pp. 546--550, proves: Proposition 19.5.2, printed pp. 546--548, constructs the double cover branched at a prescribed even set of points by writing it as $y^2=f(x)$ and normalizing; 19.5.4, printed pp. 547--548, computes its genus as $r/2-1$ from the Čech complex of the two affine charts; Proposition 19.5.7, printed pp. 548--549, proves that a curve of genus at least $2$ admits at most one double cover of $\PP^1$, through the canonical map; and 19.6.2, printed p. 550, assembles these into the bijection between genus-$2$ curves and double covers branched at six points. The steps below are not a transcription of Vakil's: they prove (a) and (b) in Hartshorne's terms, by Riemann--Hurwitz for the six branch points and for $g(X)=2$, and by Riemann--Roch for the uniqueness of the degree-two morphism, and each step says which of his propositions states the same thing. Part (c) is not in Vakil: three-transitivity of $\Aut\PP^1$ is Exercise 15.5.B there, so step [](#s6){.pf-ref} is this card's own.
 
 ::: pf
 
@@ -560,7 +574,7 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), steps [](#s3){.pf-re
 :::
 
 ::: {.remark title="Published solution"}
-R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5--19.6], printed pp. 546--550, proves (a) and (b): Proposition 19.5.2 (pp. 546--548) gives the unique double cover branched at a prescribed even set of points, as $y^2=f(x)$ normalized; 19.5.4 (pp. 547--548) computes its genus as $r/2-1=2$; Proposition 19.5.7 (pp. 548--549) shows there is at most one double cover of $\PP^1$ on a curve of genus at least $2$, which makes the double cover the canonical one. Steps [](#s1){.pf-ref} to [](#s5){.pf-ref} are those arguments in Hartshorne's language, and steps [](#s1){.pf-ref} and [](#s4){.pf-ref} say where the page is. Part (c) has no published proof here: three-transitivity of $\Aut\PP^1$, which the exercise asks to deduce from (I, Ex. 6.6), is Exercise 15.5.B in Vakil, and step [](#s6){.pf-ref} is the card's own.
+R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5--19.6], printed pp. 546--550, proves (a) and (b): Proposition 19.5.2 (pp. 546--548) gives the unique double cover branched at a prescribed even set of points, as $y^2=f(x)$ normalized; 19.5.4 (pp. 547--548) computes its genus as $r/2-1=2$, by a Čech computation on the two affine charts of the cover; Proposition 19.5.7 (pp. 548--549) shows there is at most one double cover of $\PP^1$ on a curve of genus at least $2$, which makes the double cover the canonical one. Steps [](#s1){.pf-ref} to [](#s5){.pf-ref} prove the same assertions by other means --- Riemann--Hurwitz for the branch count and for $g(X)=2$, Riemann--Roch for the uniqueness of the degree-two map --- and cite his propositions for the statement rather than reproducing his computation; steps [](#s1){.pf-ref} and [](#s4){.pf-ref} say where the page is and that the count they give is his 19.5.4 statement. Part (c) has no published proof here: three-transitivity of $\Aut\PP^1$, which the exercise asks to deduce from (I, Ex. 6.6), is Exercise 15.5.B in Vakil, and step [](#s6){.pf-ref} is the card's own.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.2, printed p. 210, classifies genus-2 curves by the six branch points of the canonical double cover, with Hurwitz $2g-2=2(-2)+6$ fixing the count.
 :::

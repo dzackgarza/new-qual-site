@@ -31,6 +31,7 @@ audit:
     Printed exercise read: Hartshorne, Algebraic Geometry (1977), IV.1.8(c),
     printed p. 299. Published proof of the decisive step located: the Stacks
     Project, Chapter 33, Section 33.39 (The delta invariant) and Section 33.41,
+    version ed88ff78, compiled 14 July 2026 (tmp/sources/stacks-project-book.pdf),
     read in tmp/sources/stacks-project-book.md. Definition 33.39.3 (tag 0C3T),
     printed p. 2899, sets delta = length_A(A'/A) for a reduced Nagata
     one-dimensional local ring, after Lemma 33.39.2 (tag 0C3S) makes A'/A of
@@ -49,6 +50,18 @@ audit:
     0C1T(9); the two computations at the cusp and the node (steps s7, s8) are the
     card's own and are not in that section. Nothing was checked in Stacks about
     analytic isomorphism as such; the identification used is the card's.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The Stacks citations now carry the copy's version and compilation date,
+    version ed88ff78, compiled 14 July 2026 (the retained
+    tmp/sources/stacks-project-book.pdf, whose title page prints both). The page
+    numbers in the body and in the event above are those of that copy:
+    tag 0C3S/0C3T on printed p. 2899, 0C3V/0C3W on pp. 2900--2901, 0C1T on
+    p. 2901, and 0C1R item (9) on p. 2904. Re-checked in the text layer by tag
+    search that each of those tags carries the statement attributed to it; the
+    step s6 transcription is unchanged.
 ---
 
 ::: {.problem}
@@ -297,7 +310,7 @@ The number $\delta_P$ depends only on the analytic isomorphism class of the sing
 
 ::: pf-proof
 
-This is the Stacks Project's argument, Chapter 33, Section 33.39, printed pp. 2899--2901, transcribed: Definition 33.39.3 (tag 0C3T) sets $\delta$ to be a length, and Lemma 33.39.6 (tag 0C3W) proves that this length does not change under henselization, strict henselization or completion, so $\delta$ is an invariant of the complete local ring (Definition 33.39.7, tag 0C1T). In detail, with the notation below:
+This is the Stacks Project's argument, Chapter 33, Section 33.39, printed pp. 2899--2901, transcribed: Definition 33.39.3 (tag 0C3T) sets $\delta$ to be a length, and Lemma 33.39.6 (tag 0C3W) proves that this length does not change under henselization, strict henselization or completion, so $\delta$ is an invariant of the complete local ring (Definition 33.39.7, tag 0C1T). The pages are those of version ed88ff78, compiled 14 July 2026, the copy read here. In detail, with the notation below:
 
 Put
 $$
@@ -448,6 +461,6 @@ steps [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (c).
 
 ::: {.remark title="Published solution"}
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.8, printed pp. 208–209, proves (a) by the short exact sequence $0\to\widetilde\OO_P/\OO_P\to H^0(X,\OO_X)\to H^0(\tilde X,\OO_{\tilde X})\to0$ obtained from (III.4.1) and the flasqueness of the skyscraper summand, so that $p_a(X)=p_a(\tilde X)+\sum_P\delta_P$, and (b) by observing that $p_a=0$ forces $\delta_P=0$ for every $P$, making all local rings normal and hence regular in dimension one.
-For part (c), the invariance of $\delta_P$ under analytic isomorphism is the Stacks Project's, Chapter 33, Section 33.39: Definition 33.39.3 (tag 0C3T) with Lemma 33.39.6 (tag 0C3W) on printed pp. 2899--2901 shows that $\delta$ is unchanged by henselization, strict henselization and completion, hence is an invariant of the complete local ring, and Definition 33.39.7 (tag 0C1T) says so in those words; step [](#s6){.pf-ref} transcribes it. The two values $\delta_P=1$ at an ordinary cusp and at a node (steps [](#s7){.pf-ref} and [](#s8){.pf-ref}) are computed here: $k[[t]]/k[[t^2,t^3]]\cong k\cdot t$ and $(k[[x]]\times k[[y]])/k[[x,y]]/(xy)\cong k$.
+For part (c), the invariance of $\delta_P$ under analytic isomorphism is the Stacks Project's, Chapter 33, Section 33.39, version ed88ff78 compiled 14 July 2026: Definition 33.39.3 (tag 0C3T) with Lemma 33.39.6 (tag 0C3W) on printed pp. 2899--2901 shows that $\delta$ is unchanged by henselization, strict henselization and completion, hence is an invariant of the complete local ring, and Definition 33.39.7 (tag 0C1T) says so in those words; step [](#s6){.pf-ref} transcribes it. The two values $\delta_P=1$ at an ordinary cusp and at a node (steps [](#s7){.pf-ref} and [](#s8){.pf-ref}) are computed here: $k[[t]]/k[[t^2,t^3]]\cong k\cdot t$ and $(k[[x]]\times k[[y]])/k[[x,y]]/(xy)\cong k$.
 
 :::

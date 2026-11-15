@@ -36,10 +36,12 @@ audit:
     U = {P : {g_i} subset O_{P,Y}} = {P : A-bar subset O_{P,Y}}
       = intersection over i of Z_a(s_i)^c, where s_i is called the denominator
     of g_i; the three displays are said to be equivalent and U nonempty open
-    ("明らか" / obvious). The third display is not well defined, a denominator of
-    g_i in K being determined only up to a unit of A, and the openness of U is
-    the closedness the exercise asks for, so that step is the assertion, the same
-    gap the card's remark records in Egbert. What the source does prove is the
+    ("明らか" / obvious). The third display is not established by the first two:
+    with one chosen denominator s_i per generator it presents an open subset of
+    U, not U, since s_i can vanish at a point where g_i is still regular. The
+    openness of U is the closedness the exercise asks for, so that step is the
+    assertion, the same gap the card's remark records in Egbert. What the source
+    does prove is the
     identity Nor(Y) = U: U contained in Nor(Y) because localizing
     A subset A-bar subset O_{P,Y} at m_P gives O_{P,Y} = (A-bar)_{m_P}, which is
     integrally closed by Atiyah--Macdonald 5.12, and the reverse inclusion
@@ -49,6 +51,26 @@ audit:
     module A-bar/A, is its own and is not in the source. Checked against the
     book: neither the source nor the card uses Theorem I.5.3, and both use only
     Theorem I.3.9A and the irreducibility of Y for nonemptiness.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Correction of the reason given in the event above. That event said the
+    source's third display is not well defined because "a denominator of g_i in K
+    is determined only up to a unit of A". That is false: in
+    A = k[x,y,z]/(xy - z^2), a graded domain with A_0 = k, the units are the
+    nonzero constants, and z/x = y/z in K = Frac A, so the same element of K has
+    the two denominators x and z, which are not associates. The actual defect is
+    different and is what the card now states: one chosen denominator s_i can
+    vanish at a point where g_i is still regular, so the intersection of the
+    complements Z(s_i)^c over one denominator per generator is only an open
+    subset of the normal locus, not the locus. The locus is open because it is
+    the intersection over i of U - V(A :_A g_i), the union of D(s) over all
+    denominators s of g_i; that is now in step s3, with the source's two
+    inclusions retained as the identification of the locus, not as a proof of its
+    openness. Read in the Japanese extraction of printed pp. 11--12
+    (tmp/sources/shitijyou-ch1-section5.md): the source writes all three displays
+    and calls their equivalence "明らか" (obvious).
 ---
 
 ::: {.problem}
@@ -135,7 +157,11 @@ Indeed, if generators $m_1,\ldots,m_s$ of $M$ all vanish after localization at $
 The converse is immediate.
 So $P$ is nonnormal exactly when $\Ann_A M\subseteq\mfm_P$, that is, when $P\in Z(\Ann_A M)$.
 
-The same set is described in A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.13, printed pp. 11--12, as $U=\theset{P\in Y \st \overline A\subseteq\mco_{P,Y}}$, and his two inclusions there prove that $U$ is the normal locus. His openness of $U$, an intersection of the complements of the zero sets of "the denominators $s_i$" of generators of $\overline A$, is asserted and the denominators are not well defined, so it is not a proof of closedness; the annihilator argument above is what makes the set closed.
+The same set is described in A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.13, printed pp. 11--12, as the locus $W=\theset{P\in U \st \overline A\subseteq\mco_{P}}$ of step [](#s2){.pf-ref}, and his two inclusions there prove that $W$ is the normal locus. His openness of $W$ is asserted rather than proved: he writes it as $\bigcap_i Z_a(s_i)^c$ with one chosen denominator $s_i$ of each generator $g_i$ of $\overline A$, and that intersection is in general only an open subset of $W$, because $s_i$ may vanish at a point at which $g_i$ is regular. The description that does make $W$ open is
+$$
+W=\bigcap_i\bigl(U\sm V(A:_Ag_i)\bigr)=\bigcap_i\bigcup_{s\in(A:_Ag_i)}D(s),
+$$
+the union being over all denominators of $g_i$: an element $g\in K$ lies in $\mco_P=A_{\mfm_P}$ exactly when some $s\in A\sm\mfm_P$ has $sg\in A$, that is, exactly when $(A:_Ag)\not\subseteq\mfm_P$. The annihilator argument above is a different and shorter route to the closedness of $W$; the ideal $(A:_Ag_i)$ is the route the source's third display was reaching for.
 
 :::
 
@@ -186,5 +212,5 @@ William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no soluti
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.13, PDF p. 50: assume $X$ affine; the integral closure is finitely generated by $f_1,\ldots,f_n$; "$\mco_x$ is integrally closed iff the image of $f_i$ is in $\mco_x$ for all $i$"; "a finite intersection of nonempty opens is nonempty open, and rational functions are defined on such", so the normal locus is nonempty open.
 Egbert's sketch asserts what the exercise asks for: that the condition "$f_i\in\mco_x$ for all $i$" cuts out an open set, and that the intersection over $i$ is nonempty, are both steps. The proof above supplies them: on an affine chart the nonnormal locus is the support $Z(\operatorname{Ann}_AM)$ of the finite module $M=\overline A/A$, which is closed because $M_{\mathfrak m}=0$ exactly when $\operatorname{Ann}_AM\not\subseteq\mathfrak m$, and proper because $M_{(0)}=0$ makes $\operatorname{Ann}_AM$ nonzero.
 
-A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.13, printed pp. 11--12, proves that the normal locus is $U=\theset{P \st \overline A\subseteq\mco_{P,Y}}$, by the two inclusions step [](#s3){.pf-ref} names, and then treats the openness of $U$ as obvious, writing it as an intersection of complements of zero sets of "the denominators" of generators of $\overline A$. That is the step at issue: a denominator in $K$ is defined only up to a unit of $A$, and the openness of $U$ is the closedness of the nonnormal locus. The source is therefore cited here for the identification of the normal locus and not for its closedness, which is proved on this card.
+A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.13, printed pp. 11--12, proves that the normal locus is $\theset{P \st \overline A\subseteq\mco_{P}}$, by the two inclusions step [](#s3){.pf-ref} names, and then treats its openness as obvious, writing it as $\bigcap_i Z_a(s_i)^c$ for one chosen denominator $s_i$ of each generator $g_i$ of $\overline A$. That is the step at issue, and its defect is not that a denominator is ambiguous: one chosen denominator can vanish where its $g_i$ is regular, so the intersection he displays is an open subset of the normal locus rather than the locus itself, and the openness of the locus is the closedness of the nonnormal one. The display that works is $\bigcap_i\bigl(U\sm V(A:_Ag_i)\bigr)$, the union of $D(s)$ over all denominators $s$ of $g_i$, which step [](#s3){.pf-ref} gives; and denominators are not unique up to units --- in $k[x,y,z]/(xy-z^2)$ the element $z/x=y/z$ has the two non-associate denominators $x$ and $z$. The source is therefore cited here for the identification of the normal locus and not for its closedness, which is proved on this card.
 :::

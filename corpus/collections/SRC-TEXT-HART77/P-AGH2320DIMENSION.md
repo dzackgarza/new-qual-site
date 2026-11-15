@@ -44,6 +44,21 @@ audit:
     the printed exercise and does not supply the missing convention; the card's
     own proof, which treats the nonempty case and records the empty one, stands.
     The source is cited in the body for the nonempty case only.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    One misprint of the source is now recorded on the card, in step
+    codim-y-equals-inf-dim-op, and the earlier note's wording is corrected with
+    it. Shichijo derives, for irreducible closed Z with generic point zeta_Z,
+    codim(Z,X) = dim O_{X,zeta_Z} -- the length of the maximal chain of primes he
+    localizes at p_Y -- but prints dim Z = dim O_{X,zeta_Z}, and his next display
+    then reads codim(Y,X) = inf{dim Z : Z inside Y} = inf{dim O_{X,zeta_Z} : Z
+    inside Y}. Both are misprints of dim Z for codim(Z,X): inf{dim Z} over the
+    irreducible Z inside Y is 0 whenever Y contains a closed point. Read with
+    codim(Z,X) in place of dim Z, the two displays prove (c) exactly as the card
+    states it, so the source's argument stands and only its typography is
+    recorded. The empty case and (e) are as the earlier note says.
 ---
 
 ::: {.problem}
@@ -260,7 +275,11 @@ $$
 $$
 
 ::: pf-proof
-For nonempty $Y$ this is A. Shichijo's argument, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 2 section 3, Exercise 3.20(c), printed p. 18: he proves it for $Y$ irreducible closed by reading a maximal chain of primes in an affine chart and localizing at the generic point, which gives $\dim Z=\dim\mathcal O_{X,\zeta_Z}$, and then takes the infimum over the irreducible $Z\subseteq Y$; that last step is over an empty family when $Y=\emptyset$, which is why the hypothesis $Y\ne\emptyset$ is kept here.
+For nonempty $Y$ this is A. Shichijo's argument, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 2 section 3, Exercise 3.20(c), printed p. 18: he proves it for $Y$ irreducible closed by reading a maximal chain of primes in an affine chart and localizing it at the generic point, which counts the height of the prime $\mathfrak p_Y$ of $Y$, that is
+$$
+\codim(Z,X)=\dim\mathcal O_{X,\zeta_Z};
+$$
+his display prints $\dim Z$ on the left where the codimension belongs, and that is a misprint: the length of the chain he has just localized at $\mathfrak p_Y$ is the codimension of $Z$ in $X$, not its dimension, and the two differ --- a point of a surface has $\dim 0$ and $\codim 2$. The display that follows carries the same misprint, $\codim(Y,X)=\inf\theset{\dim Z \st Z\subseteq Y}=\inf\theset{\dim\mathcal O_{X,\zeta_Z} \st Z\subseteq Y}$, where the first infimum is over $\codim(Z,X)$: the infimum of $\dim Z$ over the irreducible $Z\subseteq Y$ is $0$ as soon as $Y$ contains a closed point, and not $\codim(Y,X)$. He then takes the infimum over the irreducible $Z\subseteq Y$; that last step is over an empty family when $Y=\emptyset$, which is why the hypothesis $Y\ne\emptyset$ is kept here.
 
 By definition,
 $$

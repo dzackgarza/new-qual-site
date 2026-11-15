@@ -35,10 +35,16 @@ audit:
   note: >-
     Printed exercise read: Hartshorne, Algebraic Geometry (1977), IV.3.11(a),
     printed p. 309. The closed-embedding criterion the last step invokes is
-    proved in R. Vakil, The Rising Sea: Foundations of Algebraic Geometry,
-    21 October 2025 version, Theorem 19.1.1 with the reduction at 19.1.3--19.1.4
-    and the proof of the finite case at 19.1.4, printed pp. 535--537, and step s6
-    now cites it in the body. What is not in Vakil is the existence of the centre:
+    stated in R. Vakil, The Rising Sea: Foundations of Algebraic Geometry,
+    21 October 2025 version, as Theorem 19.1.1, printed p. 536, with the
+    hypotheses "injective on closed points" and "injective on tangent vectors at
+    closed points" and no other; he reduces it at 19.1.3, printed p. 537, to
+    Theorem 19.1.2 and proves that at 19.1.4, but the reduction's last step is
+    Exercise 19.1.D, "Show that the degree of pi is at most 1 at all closed
+    points of Y", left to the reader and the only place where the tangent-vector
+    hypothesis enters. Step s6 cites Vakil with that limit recorded and rests on
+    Hartshorne II.7.3 (T-DIVMAPPN), which is the same statement. What is not in
+    Vakil is the existence of the centre:
     the secant and tangent loci are closed of dimension at most 2r+1, so a point O
     outside them exists when n > 2r+1, and that count is the card's own. Egbert's
     entry for (a) is a citation to Shafarevich, and Shafarevich was not consulted.
@@ -262,7 +268,7 @@ therefore gives
 $$
 \boxed{\pi_O\text{ is a closed immersion}.}
 $$
-The criterion itself is proved, for a projective morphism of varieties over an algebraically closed field, as Theorem 19.1.1 of R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §19.1], printed pp. 535--537: an injective map on points, an injection on tangent spaces and a fibre of at most one point give a closed embedding, reduced in 19.1.3--19.1.4 to the finite case. The same statement is [[T-DIVMAPPN|Hartshorne II.7.3]], which is what the card cites. What Vakil does not contain is the dimension count that produces $O$: the loci of points on secants and on tangent lines are closed of dimension at most $2r+1$, so for $n>2r+1$ a centre exists outside them, and that count is the card's steps above.
+The criterion itself is stated, for a projective morphism of varieties over an algebraically closed field, as Theorem 19.1.1 of R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §19.1], printed p. 536: a projective morphism of finite type over an algebraically closed field that is injective on closed points and injective on tangent vectors at closed points is a closed embedding. Vakil reduces the theorem at 19.1.3, printed p. 537, to his Theorem 19.1.2, that a finite morphism whose degree at every point is $0$ or $1$ is a closed embedding, which he proves at 19.1.4. The reduction is not complete as printed: its last step is Exercise 19.1.D of the same page, "Show that the degree of $\pi$ is at most 1 at all closed points of $Y$", which is left to the reader --- and is the only place where injectivity on tangent vectors enters --- so the published argument stops one exercise short of the theorem. The same statement is [[T-DIVMAPPN|Hartshorne II.7.3]], which is what the card cites. What Vakil does not contain is the dimension count that produces $O$: the loci of points on secants and on tangent lines are closed of dimension at most $2r+1$, so for $n>2r+1$ a centre exists outside them, and that count is the card's steps above.
 This proves (a).
 
 :::

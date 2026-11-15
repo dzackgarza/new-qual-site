@@ -57,6 +57,23 @@ audit:
     identities go and with the missing infinity written in; the card's proof is
     unchanged, no step is transcribed from the source, and the converse keeps the
     card's cross-ratio obstruction because the source's version is an assertion.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The closing paragraph of the published-solution remark was wrong about the
+    extension automorphism and is corrected. It said that the automorphism of P^1
+    produced in the step carries infinity to infinity, and inferred that the
+    finite set it moves has r+1 elements. What the step proves is that the
+    automorphism carries the (r+1)-point set {infinity} union P bijectively onto
+    {infinity} union Q; it need not fix infinity, and the statement of the step
+    (printed as the two (r+1)-point subsets) already says so. The conclusion is
+    unchanged and now rests on the right statement: an isomorphism of the
+    punctured lines requires those two (r+1)-point subsets to be in one
+    PGL(2)-orbit, and for r = 3 they are four-point sets, where step
+    converse-fails' cross ratio separates them. Checked against Borcherds p. 8,
+    Egbert p. 55 and Cutrone--Marshburn p. 25: all three state the threshold
+    r <= 3, which is what makes the count matter.
 ---
 
 ::: {.problem}
@@ -229,5 +246,5 @@ Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.6.7, PDF p. 25: the same extension argument giving the equality of the two numbers of punctures; "the converse is not true for $r>3$ since any set of at most $3$ points in $\PP^1$ can be mapped to any other set of the same size under $\operatorname{Aut}\PP^1$; any isomorphism between $\PP^1$ and $\PP^1$ fixes at most $2$ points, so if $r>3$, the map must be the identity isomorphism".
 A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 6, Exercise 6.7, printed pp. 5--6, answers $r=s$ by extending the birational map $\PP^1\dashrightarrow\PP^1$ to an automorphism, referred to his own Exercise 6.3 block and Corollary I.6.12 rather than to Exercise I.6.8; his displayed exchange of the omitted sets leaves out $\infty$, as step [](#r-equals-s){.pf-ref} records. For the converse he argues that an element of $\operatorname{PGL}(1)$ is determined by the images of three points and that, $\AA^1$ being infinite, one may choose the two finite sets outside the reach of any one element, which is the assertion and not a proof; the footnote replaces it by a configuration in $\AA^3$.
 
-All three retained sets answer $r=s$ as step [](#r-equals-s){.pf-ref} does. All three then state the threshold for the converse as $r\le3$, which is one too high: the automorphism of $\PP^1$ produced in step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref} carries $\infty$ to $\infty$, so the finite subset it moves has $r+1$ elements, four of them as soon as $r=3$, and the cross ratio obstructs the converse already there. Cutrone--Marshburn's premise, that a non-identity automorphism of $\PP^1$ fixes at most two points, is true; the inference drawn from it is not, since an isomorphism carrying $\{\infty\}\cup P$ to $\{\infty\}\cup Q$ need not fix either set pointwise, and on four points it acts by a permutation of them. Step [](#converse-fails){.pf-ref} is the counterexample the sets lack. Recorded in COMPLAINTS.md for the converse half.
+All three retained sets answer $r=s$ as step [](#r-equals-s){.pf-ref} does. All three then state the threshold for the converse as $r\le3$, which is one too high: the automorphism of $\PP^1$ produced in step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref} carries the $(r+1)$-point set $\{\infty\}\cup P$ onto $\{\infty\}\cup Q$ as a set --- it carries $\infty$ to whatever point of $\{\infty\}\cup Q$ is the image of $\infty$, and need not fix it --- so what the isomorphism of punctured lines requires is that these two $(r+1)$-point subsets of $\PP^1$ be carried to one another by a fractional linear transformation. For $r=3$ they are four-point sets, and the cross ratio obstructs the converse already there. Cutrone--Marshburn's premise, that a non-identity automorphism of $\PP^1$ fixes at most two points, is true; the inference drawn from it is not, since an isomorphism carrying $\{\infty\}\cup P$ to $\{\infty\}\cup Q$ need not fix either set pointwise, and on four points it acts by a permutation of them. Step [](#converse-fails){.pf-ref} is the counterexample the sets lack. Recorded in COMPLAINTS.md for the converse half.
 :::

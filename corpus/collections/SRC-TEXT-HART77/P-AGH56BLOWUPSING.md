@@ -70,6 +70,25 @@ audit:
     which the source omits and which is needed when b = 0 or d = 0, is supplied
     there and marked as the card's. Steps for parts (a), (c) and (d) keep the
     card's chart computations, which agree with the same page.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Two statements of the event above were incomplete and are corrected here.
+    (1) The card's step writes the Jacobian of Y-tilde cap V_0 as computed, with
+    the row (-v, 1, -x) for the chart equation y - vx, while the source prints
+    the row (0, -v, 0) there -- the partial derivative in y is printed as 0. The
+    step now says so, and says why the rank conclusion is unaffected: on E the
+    entry -x is 0, the source's sum restricted to i+j=3 is the first column at
+    x=0, and the deciding minor is the one in the last two columns, which is
+    -v(2bdv-(ad+bc)) from the printed matrix and -(2bdv-(ad+bc)) from the
+    computed one, both nonzero at the two points. (2) The V_1 chart is not
+    coordinatized by (y, u) alone: x = uy there, and the Jacobian is 2x3 in the
+    ambient coordinates (x, y, u) of the blown-up surface, as on V_0 the columns
+    are (x, y, v). The step said "with coordinates (y,u)" and now names the
+    columns. Both readings were checked against printed p. 5 in
+    pdftotext -layout -f 5 -l 5 of tmp/sources/shitijyou-ch1-section5.pdf, which
+    prints the matrix and both strict transforms.
 ---
 
 ::: {.problem}
@@ -201,6 +220,8 @@ $$
 \end{pmatrix},
 $$
 whose second row is nonzero on $E$ and whose first row contributes the entry $2bdv-(ad+bc)$ there.
+
+The source prints this matrix with the row $(0,-v,0)$ for the chart equation $y-vx$, whose partial derivatives in $(x,y,v)$ are $(-v,1,-x)$; the $1$ is missing there. The matrix above is the computed one, and the difference does not affect the conclusion: on $E$ the entry $-x$ is $0$, the source's restricted sum $\sum_{i+j=3}(i+j-2)c_{ij}v^j$ is what the first column becomes at $x=0$, and the minor that decides the rank is the one in the last two columns, which is $-v\bigl(2bdv-(ad+bc)\bigr)$ as the source prints the matrix and $-\bigl(2bdv-(ad+bc)\bigr)$ for the computed one.
 The strict transform meets $E$ where $(a-bv)(c-dv)=0$, that is at the points
 $$
 P_1=(0,0)\times(b:a),\qquad P_2=(0,0)\times(d:c)
@@ -212,7 +233,7 @@ $$
 $$
 So the Jacobian has rank two at both points, and $\tilde Y\cap V_0$ is nonsingular at $P_1$ and $P_2$.
 
-The source remarks that the computation on $V_1$ is similar and omits it; that chart is needed, because $P_1$ and $P_2$ have $v=a/b$ and $v=c/d$ and so are not points of $V_0$ when $b=0$ or $d=0$. The computation is the card's, and it is the same one: on $V_1$, with coordinates $(y,u)$, the exceptional divisor is $y=0$, the strict transform meets it where $(au-b)(cu-d)=0$, and the Jacobian
+The source remarks that the computation on $V_1$ is similar and omits it; that chart is needed, because $P_1$ and $P_2$ have $v=a/b$ and $v=c/d$ and so are not points of $V_0$ when $b=0$ or $d=0$. The computation is the card's, and it is the same one: on $V_1$, where $x=uy$, the exceptional divisor is $y=0$ and the Jacobian is taken in the three ambient coordinates $(x,y,u)$ of the blown-up $\AA^2\times\PP^1$; the strict transform meets $y=0$ where $(au-b)(cu-d)=0$, and the Jacobian
 $$
 \begin{pmatrix}
 0 & \sum_{i+j>2}(i+j-2)c_{ij}u^iy^{i+j-3} & 2acu-(ad+bc)\\

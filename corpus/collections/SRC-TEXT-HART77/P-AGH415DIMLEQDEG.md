@@ -20,6 +20,29 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Printed exercise read: Hartshorne, Algebraic Geometry (1977), IV.1.5, printed
+    p. 298 (PDF p. 313 of tmp/sources/hartshorne-1977-algebraic-geometry.pdf).
+    Published proof located: the Stacks Project, Chapter 53, Section 53.3
+    and Section 53.10, version ed88ff78 compiled 14 July 2026, read in
+    tmp/sources/stacks-project-book.md. Lemma 53.3.5 (tag 0CCS), printed
+    pp. 4436--4437, states exactly the exercise's first claim and half of its
+    second: for a proper curve with H^0(O_X) = k, having a g^r_d forces r <= d,
+    and equality forces H^1(X, O_X) = 0, i.e. genus 0. Its proof is the divisor
+    sequence 0 -> O_X -> L -> L|D -> 0 with dim H^0(D, L|D) = deg D, which is
+    step s2 here; for the equality case it doubles the line bundle and then
+    passes to a large even power with vanishing H^1, where the card uses
+    Riemann--Roch and l(P) = 2 instead (steps s5--s7). The converse, g = 0 giving
+    equality, is Lemma 53.10.2(1) (tag 0C6T), printed p. 4450: dim H^0 = d+1 for
+    d > 0. The earlier note's claim of a cross-check against these two tags is
+    what this entry turns into a citation in the body; the tags are the right
+    ones. Checked: that Hartshorne's "curve" (nonsingular projective over an
+    algebraically closed field) satisfies the lemma's hypotheses, H^0(X, O_X) = k
+    holding because X is connected, proper and reduced. Not checked: nothing in
+    Stacks was needed for the case D = 0, which is trivial.
 ---
 
 ::: {.problem}
@@ -28,6 +51,7 @@ Furthermore, equality holds if and only if $D=0$ or $g=0$.
 :::
 
 ::: {.solution}
+This is the Stacks Project, Chapter 53 (Curves), Lemma 53.3.5 (tag 0CCS), printed pp. 4436--4437, version ed88ff78 compiled 14 July 2026: if a proper curve $X$ with $H^0(X,\OO_X)=k$ has a $g^r_d$ then $r\le d$, and if equality holds then $H^1(X,\OO_X)=0$, that is $g=0$. A $g^r_d$ is exactly a linear system $\abs{D}$ of degree $d$ and dimension $r$, so the lemma is the inequality and one half of the equality case. The other half, $g=0$ giving equality for every effective $D$, is Lemma 53.10.2(1) of the same chapter (tag 0C6T), printed p. 4450: for $X$ of genus $0$ and $\deg L=d>0$, $\dim_k H^0(X,L)=d+1$. Steps [](#s2){.pf-ref} and [](#s5){.pf-ref}--[](#s7){.pf-ref} prove the lemma's two halves from the divisor sequence and Riemann--Roch rather than by its route through a large power with vanishing $H^1$; step [](#s4){.pf-ref} is 0C6T(1) in Riemann--Roch form.
 Write
 $$
 d=\deg D,

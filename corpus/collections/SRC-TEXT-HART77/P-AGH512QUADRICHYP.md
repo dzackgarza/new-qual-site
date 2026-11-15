@@ -55,6 +55,18 @@ audit:
     source's, and the one inference the source leaves implicit, that r+1 is the
     rank, is supplied from step s1. Steps s1, s3 and s4 keep the card's proofs,
     which agree with the source on pp. 10--11 and are not transcriptions of it.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    s2 repaired: the step to y_0 y_1 needs the two linear factors of f to be
+    linearly independent, and the source takes that step without separating the
+    case f = c l^2 of proportional factors, where no linear change produces
+    y_0 y_1. The step now treats the proportional case separately: l -> x_0 by a
+    linear change and x_0 -> c^{-1/2} x_0 give f = x_0^2, the normal form with
+    r = 0, so r < 2 holds there too. Nothing else in s2 changed; the citation
+    and printed page on the step are unaffected. The two inferences now recorded
+    as supplied by this card are the rank statement from s1 and this case.
 ---
 
 ::: {.problem}
@@ -146,11 +158,17 @@ x_0^2+x_1^2=(x_0+ix_1)(x_0-ix_1)
 $$
 for an $i\in k$ with $i^2=-1$, the two factors being distinct because $\operatorname{char}k\ne2$.
 
-Conversely suppose that $f$ is not irreducible. Since $\deg f=2$, it is a product of two linear homogeneous forms (the source refers to the footnote of its Exercise 5.9 for the factorization of a homogeneous polynomial into homogeneous factors). A linear change of variables, again invertible, therefore brings $f$ into the form $y_0y_1$, and the further change $y_0=z_0+iz_1$, $y_1=z_0-iz_1$, whose matrix has determinant $2i\ne0$, brings it into the form
+Conversely suppose that $f$ is not irreducible. Since $\deg f=2$, it is a product of two linear homogeneous forms (the source refers to the footnote of its Exercise 5.9 for the factorization of a homogeneous polynomial into homogeneous factors); write $f=\ell_1\ell_2$.
+
+If $\ell_1$ and $\ell_2$ are linearly independent, a linear change of variables, again invertible, brings them into the form $y_0y_1$, and the further change $y_0=z_0+iz_1$, $y_1=z_0-iz_1$, whose matrix has determinant $2i\ne0$, brings it into the form
 $$
 z_0^2+z_1^2=x_0^2+x_1^2,
 $$
-that is, into the normal form of step [](#s1){.pf-ref} with $r=1$. The source concludes $r<2$ at this point; the inference uses that $r+1$ is the rank of the symmetric matrix of $f$, which a linear change of variables preserves, and step [](#s1){.pf-ref} supplies it.
+that is, into the normal form of step [](#s1){.pf-ref} with $r=1$.
+
+If on the other hand $\ell_1$ and $\ell_2$ are linearly dependent, then $f=c\ell^2$ with $c\ne0$ and $\ell=\ell_2$; a linear change of variables sends $\ell$ to $x_0$, and rescaling $x_0$ by a square root of $c$, which exists because $k$ is algebraically closed, gives $f=x_0^2$, the normal form of step [](#s1){.pf-ref} with $r=0$. This is the case the source passes over when it goes from "a product of two linear forms" straight to $y_0y_1$, and it is not empty: $c\ell^2$ is a reducible quadratic of rank one. In it the conclusion $r<2$ is immediate.
+
+In both cases the normal form has $r<2$. The source concludes $r<2$ at this point; the inference uses that $r+1$ is the rank of the symmetric matrix of $f$, which a linear change of variables preserves, and step [](#s1){.pf-ref} supplies it.
 
 The two implications together prove part (b).
 
@@ -288,5 +306,5 @@ Part (b) is transcribed in step [](#s2){.pf-ref} from A. Shichijo, *R.Hartshorne
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.12, PDF pp. 49--50, argues (a), (c) and (d) as here, and gives (b) as "for larger $r$, any factors must be linear, but then multiplying the two factors together will create terms of higher than degree $2$", which is false of a product of two linear forms. Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.5.12, PDF p. 22, argue (b) by saying that in $k[x_0,\ldots,x_r]$ the form $x_0^2+\cdots+x_r^2$ "defines a nonsingular, hence irreducible, hypersurface", which is the assertion being proved.
 
-The one inference Shichijo's (b) leaves implicit is that $r+1$ is the rank of the symmetric matrix, which is what makes the normal form $z_0^2+z_1^2$ give $r=1<2$; step [](#s1){.pf-ref} proves it, and the source asserts the irreducibility of $x_0^2+\cdots+x_r^2$ for $r\ge2$ at the opening of its part (c).
+The two inferences Shichijo's (b) leaves implicit are that $r+1$ is the rank of the symmetric matrix, which is what makes the normal form $z_0^2+z_1^2$ give $r=1<2$, and the case $f=c\ell^2$ of proportional factors, in which his step to $y_0y_1$ is not available; step [](#s1){.pf-ref} proves the first, and step [](#s2){.pf-ref} supplies the second. The source asserts the irreducibility of $x_0^2+\cdots+x_r^2$ for $r\ge2$ at the opening of its part (c).
 :::
