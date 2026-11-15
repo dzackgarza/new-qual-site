@@ -32,7 +32,10 @@ audit:
     are the site's build from stacks-project commit
     a04446e57ec1fbc252a871afcec7752fb2807b14 (28 July 2026); the printed pages
     below are those of the retained compiled book of version ed88ff78, compiled
-    14 July 2026, tmp/sources/stacks-project-book.pdf. Lemma 53.3.5 (tag 0CCS), printed
+    14 July 2026 (tmp/sources/stacks-project-book.pdf), and are cited as that
+    book's folios, not as a text read: the whole compiled book has no text
+    version, so every quotation here is from
+    tmp/sources/stacks-tags/0CCS.md and its companions. Lemma 53.3.5 (tag 0CCS), printed
     pp. 4436--4437, states exactly the exercise's first claim and half of its
     second: for a proper curve with H^0(O_X) = k, having a g^r_d forces r <= d,
     and equality forces H^1(X, O_X) = 0, i.e. genus 0. Its proof is the divisor

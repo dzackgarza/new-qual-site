@@ -35,7 +35,10 @@ audit:
     named below, which are the site's build from stacks-project commit
     a04446e57ec1fbc252a871afcec7752fb2807b14 (28 July 2026); the printed pages
     quoted here and below are those of the retained compiled book of version
-    ed88ff78, compiled 14 July 2026 (tmp/sources/stacks-project-book.pdf).
+    ed88ff78, compiled 14 July 2026 (tmp/sources/stacks-project-book.pdf), cited
+    as that book's folios and not as a
+    text read: the whole compiled book has no text version, and every
+    quotation in this note is from the tag file.
     Definition 33.39.3 (tag 0C3T),
     printed p. 2899, sets delta = length_A(A'/A) for a reduced Nagata
     one-dimensional local ring, after Lemma 33.39.2 (tag 0C3S) makes A'/A of
@@ -62,8 +65,10 @@ audit:
   date: 2026-11-15
   note: >-
     The Stacks citations now carry the copy's version and compilation date,
-    version ed88ff78, compiled 14 July 2026 (the retained
-    tmp/sources/stacks-project-book.pdf, whose title page prints both). The page
+    version ed88ff78, compiled 14 July 2026 (the retained compiled
+    tmp/sources/stacks-project-book.pdf, whose title page prints both; the book
+    is a folio reference only, since it has no text version, the quotations
+    being those of the tag files). The page
     numbers in the body and in the event above are those of that copy:
     tag 0C3S/0C3T on printed p. 2899, 0C3V/0C3W on pp. 2900--2901, 0C1T on
     p. 2901, and 0C1R item (9) on p. 2904. Re-checked in the text layer by tag
