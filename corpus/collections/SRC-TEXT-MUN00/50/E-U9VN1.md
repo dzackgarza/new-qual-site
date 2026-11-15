@@ -31,6 +31,18 @@ audit:
     manifold. A manifold is locally compact Hausdorff and second countable by definition, so the imbedding
     theorem of Exercise 50.6 applies once its compact subspaces are known to have dimension at most m, which is
     what Exercise 50.9 supplies. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Nothing located proves Munkres §50 Exercise 7 (printed p. 316);
+    it is a corollary of the theorem of Exercise 6 and of the dimension bound of Exercise 9, both of which the
+    card cites as [[E-26ELV]] and [[E-PROOB]]. Murayama's selection has no Chapter 8, dbFin has no chapter-8
+    page, the ten GitHub repositories of Munkres solutions listed in COMPLAINTS.md stop before §36, and the AoPS
+    post *Topology by Munkres Chapter 8 | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630)
+    answers §50 with its formulas lost. The Stack Exchange question 3082048 on imbedding theorems for
+    non-second-countable manifolds, returned by the query "Prüfer manifold", is about a different question and
+    does not treat this corollary. Nothing needed correction.
 ---
 
 ::: {.exercise}
