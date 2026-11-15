@@ -49,6 +49,30 @@ audit:
     University, 2020 Spring, has no entry for Exercise 13 of section 2. Not
     checked: whether an elliptic scroll so defined is required to be minimal or
     normalised; the exercise does not ask and the card does not claim.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The input this card's very-ampleness step imports, Yang's 5.2.12, recorded
+    with its two wrong values, on a reader's report of issue #121. Read in
+    tmp/sources/lfwin-hartshorne-solutions.md (block "PDF pages 101-119") at
+    Solution 5.2.12 and against the folios of the PDF: on printed p. 104 he
+    writes h^0(L_X(C_0+Bf)) = h^0(L_C(fraktur-e+B)) = 2 at e = -1, and on p. 105
+    h^0(C_0+(A+B)f) = h^0(C_0+Bf) + 2 = 4 and h^0(C_0+(A+B-P-Q)f) = 0. The true
+    values are 3, 5 and 1. With e = -1 the surface is P(E) for the unique
+    nontrivial extension 0 -> O_C -> E -> L(P) -> 0 of (2.11.6), so
+    deg E = -deg fraktur-e = 1 by Theorem 2.15; pi_*O(C_0+bf) = E tensor O(b) is
+    indecomposable of degree 1 + 2 deg b, and Riemann-Roch with h^1 = 0 above
+    degree 2g-1 gives h^0 = 2 deg b + 1, i.e. 3, 5, 1 at deg b = 1, 2, 0. His own
+    5.2.13 count 2n-e gives the same 3 at n = 1, so his two entries disagree.
+    Both tests he then applies are drops, h^0(D-Pf) = h^0(D)-2 and
+    h^0(D-Pf-Qf) = h^0(D)-4, and they hold with the true values too, so his
+    conclusions survive while the absolute values do not. The cause is his p. 104
+    display, which keeps only the h^0(b+fraktur-e) summand of the decomposable
+    splitting of 5.2.11 and then subtracts an unrelated h^1; the two-term split
+    value coincides with the truth for deg b >= 1 and differs at deg b = 0, so the
+    splitting's validity at e = -1 is not what the numbers turn on. The card's own
+    steps use none of his numbers and are unchanged.
 ---
 
 ::: {.problem}
@@ -329,6 +353,24 @@ $n\ge e+3$, and step [](#s8){.pf-ref} gives the stated degree-five example.
 
 ::: {.remark title="Published solution"}
 Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.13, printed p. 105, argues exactly as steps [](#s3){.pf-ref} to [](#s7){.pf-ref}: by V.2.12(b), if $n\ge e+3$ then any $D\sim C_0+nf$ is very ample, and since $D\cdot f=1$ and $D^2=2n-e$ the embedding is an elliptic scroll of degree $d=2n-e$; then "$h^0(\mathcal L_X(D))=h^0(\pi_*\mathcal L_X(D))=h^0(\OO_C(n)+\OO_C(n-e))=2n-e$, so the embedding is in $\PP^{d-1}$", and it takes $e=-1$, $n=2$ for the degree-five example in $\PP^4$. Its $h^0$ uses $h^0(\OO_C(k))=k$ on an elliptic curve, which is the computation of step [](#s6){.pf-ref}. It does not construct the ruled surface of invariant $e$ for each $e\ge-1$, which is step [](#s1){.pf-ref}.
+
+The very-ampleness step it imports is its own 5.2.12(b), and the two absolute values there are wrong by the
+same amount, so the step survives while its arithmetic does not. On printed p. 104 it writes
+$h^0(\mathcal L_X(C_0+Bf))=h^0(\mathcal L_C(\mathfrak e+B))=2$ at $e=-1$, $B$ of degree $1$; the true value is
+$3$, because the surface is $\mathbf P(\mathcal E)$ for the unique nontrivial extension
+$0\to\OO_C\to\mathcal E\to\mathcal L(P)\to0$ of (2.11.6), hence $\deg\mathcal E=-e=1$ (Theorem 2.15),
+$\pi_*\OO(C_0+Bf)=\mathcal E\otimes\OO(B)$ is indecomposable of degree $3$, and Riemann--Roch with
+$h^1=0$ at degree $\ge1$ gives $h^0=3$ --- the value its own 5.2.13 formula $2n-e$ gives at $n=1$. On p. 105 it
+then writes $h^0(C_0+(A+B)f)=h^0(C_0+Bf)+2=4$, true $5$, and $h^0(C_0+(A+B-P-Q)f)=0$, true $1$. Both tests it
+applies are drops, $h^0(D-Pf)=h^0(D)-2$ and $h^0(D-Pf-Qf)=h^0(D)-4$, and those hold with the correct values
+too, so the conclusions are right. The cause is the shape of his display, which sits inside the splitting of
+5.2.11, $h^i(C_0+\mathfrak bf)=h^i(\mathfrak b)+h^i(\mathfrak b+\mathfrak e)$: that identity is derived in the
+decomposable case $\mathcal E\cong\OO\oplus\mathcal L$ with $e\ge0$ (Theorem 2.12(a)), while 5.2.12 is the
+case $e=-1$, where $\mathcal E$ is indecomposable, yet there the two-term value is right for
+$\deg\mathfrak b\ge1$ (both equal $2\deg\mathfrak b-e$). His p. 104 display keeps only the
+$h^0(\mathfrak b+\mathfrak e)$ summand and then subtracts $h^1(\mathcal L_X(Bf-Pf))$ to reach the $0$; at
+$\deg\mathfrak b=0$ the two-term value is $2$ against the true $1$. None of these numbers is used by the steps
+above.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.13, PDF p. 269: he takes $D=C_0+nf$, cites (2.20b) and (2.21b) for ampleness, computes $D\cdot f=1$ and $D^2=2n-e$, and then needs $h^0$. His count is
 $$
