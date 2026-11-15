@@ -11,6 +11,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §81 Exercise 2, printed p. 493. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md. No source was saved. The queries were the Stack Exchange advanced search
+    "Munkres Figure 81.4 regular covering" (no hits) and the similar-question search from "Group of covering
+    transformations of covering of wedge of two circles, is the covering regular" (15 items), none of which
+    treats the graph of Figure 81.6; the GitHub code searches "munkres "covering transformations"" returned
+    no solutions file. The card keeps its own proof, whose graph data were corrected in the pass of #130
+    against the page image of printed p. 493: the chain is u - m - e_0 - r with a = (u m)(e_0 r) and
+    b = (m e_0), and the answer is a group of order 2, not regular. That correction stands.
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
@@ -76,7 +88,7 @@ Conversely, a bijection $\phi$ of the vertices commuting with $a \cdot$ and $b \
 Since $p h = p$, $h$ preserves $p^{-1}(x_0)$, the set of vertices.
 If $\tilde\gamma$ is the lift of the loop $A$ starting at $v$, then $h \circ \tilde\gamma$ is a lift of $A$ starting at $h(v)$, so by uniqueness of path lifting (Lemma 54.1, printed p. 342) it ends at $a \cdot h(v)$; likewise for $b$, and $h$ of a loop at $v$ is a loop at $h(v)$.
 Two covering transformations that agree at $e_0$ are lifts of $p$ agreeing at a point of the path connected space $E$, hence equal by the uniqueness part of Lemma 79.1 (printed p. 478).
-For the converse, $\phi$ carries the $A$-edge from $v$ to $a \cdot v$ to the $A$-edge from $\phi(v)$ to $a \cdot \phi(v)$, and similarly for $B$; define $h$ on each closed edge $e$ as $(p|_{e'})^{-1} \circ p|_{e}$ on its interior, where $e'$ is the image edge, and as $\phi$ on vertices.
+For the converse, $\phi$ carries the $A$-edge from $v$ to $a \cdot v$ to the $A$-edge from $\phi(v)$ to $a \cdot \phi(v)$, and similarly for $B$; define $h$ on each closed edge $e$ as $(p\restrict_{e'})^{-1} \circ p\restrict_{e}$ on its interior, where $e'$ is the image edge, and as $\phi$ on vertices.
 Then $h$ is a homeomorphism with $p h = p$.
 
 :::

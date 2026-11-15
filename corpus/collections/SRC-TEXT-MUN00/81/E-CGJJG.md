@@ -13,6 +13,21 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §81 Exercise 1(a),(b), printed p. 492. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md and the saved thread is tmp/sources/mse-4999221-E-CGJJG.md, read whole.
+    Math StackExchange 4999221 has one answer, 4999568 by Lee Mosher (2024-11-17), which proves part (a):
+    the map f(z_1,z_2) = (z_1^2,z_2) is a degree-2 covering, hence a quotient map, with point preimages the
+    orbits of (-1,1), so it induces T/<tau> = T. That is the card's own argument with psi for f, and it is
+    now stated on the card with its URL. Part (b) is not in the thread; the record notes B. Conrad's Stanford
+    handout "Quotients by group actions", Example 2.14 and Remark 2.15, which identifies a torus quotient by a
+    half-turn with the rectangle model of the Klein bottle. That handout is not in tmp/sources and was not
+    read, so it is a source searched and not a source transcribed, and part (b) keeps the card's own
+    argument. Rejected in the search: mse 3510688 (a subgroup that is not a group of homeomorphisms) and
+    2950908 (a statement with no proof).
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 81 Exercise 1, printed p. 492. The two order-two actions on the torus, one yielding T and one the Klein bottle, as quotients by fixed-point-free involutions. Checked against Theorem 81.5 (quotient of a properly discontinuous action is a covering) and §60 for the identifications. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
@@ -45,6 +60,8 @@ which is the product of the covering $z\mapsto z^2$ of $S^1$ (Example 3 of §53,
 $$
 T/\langle\tau\rangle\cong T .
 $$
+
+This is Lee Mosher's answer 4999568 (https://math.stackexchange.com/a/4999568), posted 2024-11-17 to Math Stack Exchange question 4999221, "Visualizing the quotient space of a torus" (https://math.stackexchange.com/questions/4999221, asked by TripleM on 2024-11-16): his function $f(z_1,z_2)=(z_1^2,z_2)$ is the map $\psi$ above, its point preimages are the two-point orbits of $\tau$, and being a quotient map it induces the homeomorphism $T/\langle\tau\rangle\to T$. His answer also disposes of the question's premise, which hoped for the Klein bottle: the quotient by $(z_1,z_2)\mapsto(-z_1,z_2)$ is the torus. Part (b)'s group is not treated in the thread; the identification of that quotient with the rectangle model of the Klein bottle is made in B. Conrad, *Quotients by group actions* (Stanford Math 396 handout, `virtualmath1.stanford.edu/~conrad/diffgeomPage/handouts/qtmanifold.pdf`), Example 2.14 and Remark 2.15, which was located and not read here, so the reading of the square in part (b) is the card's own.
 
 (b) Let $\sigma[x,y]=[x+1/2,-y]$ and $G=\{1,\sigma\}$. Again $\sigma^2=1$. A fixed point would satisfy $x+1/2\equiv x \pmod 1$ and $-y\equiv y\pmod 1$, and the first congruence is impossible; so $\sigma$ is fixed-point free and $G$ has order $2$.
 

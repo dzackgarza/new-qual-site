@@ -11,6 +11,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §81 Exercise 5, printed p. 493. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md. No source was saved. The queries were the Stack Exchange advanced
+    searches "lens space L(n,k) homeomorphic n=n'" and, in the title, "lens space fundamental group" (neither
+    with hits) and the similar-question search from "Lens spaces L(n,k) homeomorphic implies n equal" (15
+    items); the threads returned prove that the fundamental group separates the n, and none treats the
+    classification within a fixed n. MathOverflow 156487 states the classification count of lens spaces
+    without proof. The card keeps its own proof: pi_1(L(n,k)) = Z/n by Theorem 81.5 (printed p. 490) after the
+    proper discontinuity of the action, so unequal n give non-homeomorphic spaces, and for n = n' the card's
+    k-invariant distinguishes them.
 - event: source-corrected
   by: Codex
   date: 2026-10-31

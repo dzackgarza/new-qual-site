@@ -11,6 +11,24 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §80 Exercise 1(a),(b), printed p. 487. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md and the saved sources are tmp/sources/mse-3372211-E-LV54B.md,
+    tmp/sources/mse-989083-E-LV54B.md and tmp/sources/gh-dyang5-MATH104-Topology-E-LV54B.md, all read whole.
+    Part (a) is proved by David Yang, MATH104 Fall 2023 Homework 11, HW/hw11.tex lines 79-100 at commit
+    12686a815d: the universal cover of Z, two applications of Theorem 80.3 (printed p. 486), and Lemma
+    80.2(b) (printed p. 485) applied to p o u = rho. That proof is now transcribed on the card with its
+    commit, and the card's own proof, which needs neither Theorem 80.3 nor Lemma 80.2 but derives the even
+    covering of p from the lifting criterion, is kept as a second proof and labelled as the card's. Answer
+    3374073 by Dongryul M. Kim to question 3372211 proves (a) in the same shape but with its lemma -- the two
+    implications of Lemma 80.2 -- stated and not proved, so it is a source searched and not used. Part (b) is
+    not in Yang's homework; in question 989083, answer 989179 by Pece describes the Hawaiian earring example
+    in three steps and says "I let you fill the details", and answer 990389 by Jeremy Brazas is a figure of it.
+    The card's (b), which writes the covering q and the failure of even covering at the double-covered circle,
+    is the card's own and stays.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
@@ -42,6 +60,12 @@ Compare [[E-PBG3W]].
 
 By the Convention of Chapter 13 (printed p. 477) all covering maps of this chapter have path connected and locally path connected total space and base, and $c_*$ is injective for a covering map $c$ (printed p. 477). Let $\rho: \widetilde Z \to Z$ be a universal covering of $Z$, that is, $\widetilde Z$ is simply connected.
 
+Part (a) is David Yang's proof, *MATH104: Topology, Fall 2023*, Homework 11, in `HW/hw11.tex` lines 79--100 of `dyang5/MATH104-Topology` at commit 12686a815d58f29aeaadb90a30449ae85c0a613f (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw11.tex#L79-L100. By Theorem 80.3 (printed p. 486), applied to the covering $\rho:\widetilde Z\to Z$ with $\widetilde Z$ simply connected and to $r:Y\to Z$, there is a covering map $t:\widetilde Z\to Y$ with $r\circ t=\rho$; applied again to $t$ and to $q:X\to Y$, there is a covering map $u:\widetilde Z\to X$ with $q\circ u=t$. Then
+$$
+p\circ u=r\circ q\circ u=r\circ t=\rho,
+$$
+and $u$ and $\rho$ are covering maps, so $p$ is a covering map by Lemma 80.2(b) (printed p. 485). The steps below give a second proof of (a), from the definition of a covering map and the lifting criterion alone, and they supply part (b), which the source does not treat.
+
 ::: pf
 
 ::: {.pf-step #lemma}
@@ -68,7 +92,7 @@ $s_e(U)$ is the path component of $c^{-1}(U)$ that contains $e$, and $c$ maps it
 
 ::: pf-proof
 
-$s_e(U)$ is the continuous image of the path connected space $U$, hence path connected: the composite of a path in $U$ with $s_e$ is a path in $E$. A path $\gamma$ in $c^{-1}(U)$ from $e$ is a lift of $c \circ \gamma$ starting at $e$, and so is $s_e \circ c \circ \gamma$; the two agree by the uniqueness of path liftings (Lemma 54.1, printed p. 342). Hence every such path stays in $s_e(U)$, and $s_e(U)$ is the path component of $e$ in $c^{-1}(U)$. Because $c \circ s_e = \id_U$, the restriction $c|_{s_e(U)}$ is a continuous bijection onto $U$ with continuous inverse $s_e$, so it is a homeomorphism.
+$s_e(U)$ is the continuous image of the path connected space $U$, hence path connected: the composite of a path in $U$ with $s_e$ is a path in $E$. A path $\gamma$ in $c^{-1}(U)$ from $e$ is a lift of $c \circ \gamma$ starting at $e$, and so is $s_e \circ c \circ \gamma$; the two agree by the uniqueness of path liftings (Lemma 54.1, printed p. 342). Hence every such path stays in $s_e(U)$, and $s_e(U)$ is the path component of $e$ in $c^{-1}(U)$. Because $c \circ s_e = \id_U$, the restriction $c\restrict_{s_e(U)}$ is a continuous bijection onto $U$ with continuous inverse $s_e$, so it is a homeomorphism.
 
 :::
 
@@ -126,7 +150,7 @@ $p^{-1}(U)$ is a disjoint union of open sets, each mapped homeomorphically onto 
 
 ::: pf-proof
 
-By step [](#lemma){.pf-ref} applied to $c = q$ and to the path-connected open set $V_\alpha$, each $q^{-1}(V_\alpha)$ is a disjoint union of open sets $W_{\alpha\beta}$ mapped homeomorphically onto $V_\alpha$. Then $p^{-1}(U) = q^{-1}(r^{-1}(U)) = \bigsqcup_{\alpha,\beta} W_{\alpha\beta}$, and $p|_{W_{\alpha\beta}} = r|_{V_\alpha} \circ q|_{W_{\alpha\beta}}$ is a homeomorphism onto $U$. Also $p$ is surjective, being a composite of surjective maps, which is required of a covering map by the definition (printed p. 336).
+By step [](#lemma){.pf-ref} applied to $c = q$ and to the path-connected open set $V_\alpha$, each $q^{-1}(V_\alpha)$ is a disjoint union of open sets $W_{\alpha\beta}$ mapped homeomorphically onto $V_\alpha$. Then $p^{-1}(U) = q^{-1}(r^{-1}(U)) = \bigsqcup_{\alpha,\beta} W_{\alpha\beta}$, and $p\restrict_{W_{\alpha\beta}} = r\restrict_{V_\alpha} \circ q\restrict_{W_{\alpha\beta}}$ is a homeomorphism onto $U$. Also $p$ is surjective, being a composite of surjective maps, which is required of a covering map by the definition (printed p. 336).
 
 :::
 

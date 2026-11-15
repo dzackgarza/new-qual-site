@@ -11,6 +11,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §81 Exercise 6(a)-(d), printed p. 494. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md and the saved thread is tmp/sources/mse-801446-E-4WKOG.md, read whole.
+    Math StackExchange 801446 is this exercise's part (a); its accepted answer 801561 by Daniel Fischer
+    (2014-05-19) states the proposition that a locally finite family's union of closures is the closure of the
+    union, in particular that a locally finite union of closed sets is closed, and says "Proof left as an
+    exercise", and it observes that the hint makes {g(C)} locally finite. That is part (a) in outline and
+    nothing more; parts (b), (c) and (d) are not in the thread. The card now names the answer as the route of
+    part (a) and keeps its own proofs of all four parts, including the proof of the locally finite union
+    proposition that the answer leaves out. Rejected in the search: nothing else was returned for this
+    exercise.
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
@@ -50,11 +64,14 @@ Then the action of $G$ is properly discontinuous, and $X/G$ is locally compact H
 
 Write $p:X\to X/G$ for the quotient map; a subset $O$ of $X/G$ is open exactly when $p^{-1}(O)$ is open in $X$ (Definition of the quotient topology, printed p. 137), and $p(W)=\{Gx\mid x\in W\}$.
 
+The argument of this part is the one Daniel Fischer's answer 801561 (https://math.stackexchange.com/a/801561), posted 2014-05-19 to Math Stack Exchange question 801446, which is this exercise (https://math.stackexchange.com/questions/801446, asked by Akt904 on the same day), points to: the family $\{g(C)\}_{g\in G}$ is locally finite by the exercise's hypothesis and the hint, and a locally finite union of closed sets is closed. That answer states that proposition and leaves its proof as an exercise, so what it supplies is the route; the proof of the proposition, and parts (b), (c) and (d), which the thread does not reach, are below.
+
 ::: pf
 
 ::: {.pf-step #closed}
 
 (a) For every compact subspace $C$ of $X$ the union $\bigcup_{g\in G}g(C)$ is closed in $X$.
+
 
 ::: pf-proof
 
