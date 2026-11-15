@@ -22,6 +22,20 @@ audit:
     cover and the conclusion are recorded in COMPLAINTS.md under the entry for the net
     exercises of §29; the card's own proof is kept. The statement was read against Munkres,
     Topology (2000), §29 supplementary exercises on nets, printed pp. 187-188.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Transcribed from dbFin, "Supplementary Exercises*: Nets: Problem 3 Solution",
+    https://dbfin.com/topology/munkres/chapter-3/supplementary-exercises-nets/problem-3-solution/,
+    read 2026-11-15, with the page text kept at
+    tmp/sources/dbfin/supplementary-exercises-nets/problem-3.md. That answer gives the reduction
+    itself: with J = Z_+ the net is the sequence (x_n) and convergence means that for each
+    neighborhood U of x there is N with n >= N implying x_n in U. It quotes Exercise 1 for the
+    directedness of Z_+ and says nothing about a net on Z_+ being a sequence, so the card proves
+    both (steps 1 and 2); nothing else is changed. This supersedes the 2026-11-10 note above that
+    no published set had been located: dbFin carries a page for each of the twelve exercises of
+    the Nets supplement, which the earlier search of the retained files had missed.
 ---
 
 ::: {.exercise}
@@ -42,75 +56,44 @@ Show that these definitions reduce to familiar ones when $J = \ZZ_+$.
 
 ::: {.solution}
 
+Write $(\ZZ_+, \le)$ for the positive integers with their usual order, and say that a sequence $(x_n)$ in $X$ converges to $x$ if for each neighborhood $U$ of $x$ there is $N \in \ZZ_+$ such that $x_n \in U$ whenever $n \ge N$.
+
 ::: pf
 
 ::: pf-step
-$\ZZ_+$ is a directed set under the standard ordering $\le$:
+$(\ZZ_+, \le)$ is a directed set.
 
 ::: pf-proof
-
-::: pf-step
-The standard relation $\le$ on $\ZZ_+$ is reflexive ($n \le n$) and transitive ($m \le n \land n \le k \implies m \le k$).
-:::
-
-::: pf-step
-For any two elements $m, n \in \ZZ_+$, choose $k = \max\{m, n\} \in \ZZ_+$. Then $m \le k$ and $n \le k$.
-:::
-
-::: pf-step
-Therefore $(\ZZ_+, \le)$ is a directed set.
-:::
-
+The relation $\le$ is reflexive and transitive, and $m \le n$ with $n \le m$ gives $m = n$; so it is a partial order, which is condition (1)--(3) of the definition. For $m, n \in \ZZ_+$ the integer $\max\{m, n\}$ lies in $\ZZ_+$ and satisfies $m \le \max\{m,n\}$ and $n \le \max\{m,n\}$, so each pair of elements has an upper bound in $\ZZ_+$.
 :::
 
 :::
 
 ::: pf-step
-A net indexed by $\ZZ_+$ is a sequence:
+A net with index set $\ZZ_+$ is the same object as a sequence in $X$.
 
 ::: pf-proof
-
-::: pf-step
-A net in $X$ indexed by $\ZZ_+$ is a function $f: \ZZ_+ \to X$.
-:::
-
-::: pf-step
-By standard definition, a sequence in $X$ is a function from $\ZZ_+$ into $X$, written as $(x_n)_{n \in \ZZ_+}$ where $x_n = f(n)$.
-:::
-
-::: pf-step
-Thus nets indexed by $\ZZ_+$ and sequences in $X$ are the exact same objects.
-:::
-
+A net is a function $f : \ZZ_+ \to X$, its value at $n$ being written $x_n$; a sequence in $X$ is a function from $\ZZ_+$ into $X$, written $(x_n)$. These are one notion under two names, and the notation for the values agrees.
 :::
 
 :::
 
 ::: pf-step
-Net convergence on $\ZZ_+$ is sequence convergence:
+For $J = \ZZ_+$ the net definition of convergence is the sequence definition of convergence.
 
 ::: pf-proof
-
-::: pf-step
-Under the net convergence definition with $(J, \preceq) = (\ZZ_+, \le)$, $(x_n) \to x$ if and only if for every neighborhood $U$ of $x$, there exists $N \in \ZZ_+$ such that:
-$$N \le n \implies x_n \in U.$$
-:::
-
-::: pf-step
-Under the classical definition of sequence convergence in a topological space, $(x_n) \to x$ if and only if for every neighborhood $U$ of $x$, there exists an integer $N$ such that $x_n \in U$ for all $n \ge N$.
-:::
-
-::: pf-step
-These two conditions are logically and syntactically identical.
-:::
-
+The net definition says: for each neighborhood $U$ of $x$ there is $\alpha \in \ZZ_+$ such that $\alpha \le \beta$ implies $x_\beta \in U$. The sequence definition says: for each neighborhood $U$ of $x$ there is $N \in \ZZ_+$ such that $N \le n$ implies $x_n \in U$. Each condition is obtained from the other by renaming the bound index and the running index, and the order relation $\preceq$ of the net definition is the relation $\le$ of $\ZZ_+$; hence the two conditions hold for exactly the same nets and the same points $x$.
 :::
 
 :::
 
 ::: pf-step
-Conclusion:
-The theory of nets on the directed set $(\ZZ_+, \le)$ reduces directly to the standard theory of sequences. Q.E.D.
+Consequently the net definitions reduce, at $J = \ZZ_+$, to the definitions of a sequence and of its convergence, and the theory of nets on $\ZZ_+$ is the theory of sequences in $X$. $\square$
+
+::: pf-proof
+A net on $\ZZ_+$ is a sequence by step 2, and its convergence is the convergence of that sequence by step 3; the directedness used is that of step 1, which is the familiar order on $\ZZ_+$.
+:::
+
 :::
 
 :::
