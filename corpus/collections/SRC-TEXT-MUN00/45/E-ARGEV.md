@@ -28,6 +28,22 @@ audit:
     many remaining indices. The earlier version's argument for x_0 < 1 in part (a) was a sketch (it spoke
     of "finitely many small n" being uniformly continuous without producing the neighbourhood); it is now
     the explicit estimate.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). For part (a), Math StackExchange 131107 asks this
+    exercise by name and has Davide Giraudo's answer 213873 (2012-10-14): the family is
+    equicontinuous at each point of (-1,1), by bounding |f_n'| by n|c|^{n-1} on a compact
+    subinterval, and it is not equicontinuous at 1, since otherwise some delta would give
+    x^n >= 1/2 for every n and every x within delta of 1; that agrees with the card's part (a) on
+    I = [0,1], where the only point at issue is 1. For part (b), the functions 1/(n^3[x-1/n]^2+1)
+    of Exercise 9 of §21, neither that page nor Math StackExchange 792534 and 4435817 gives a
+    published treatment, so part (b) remains the card's own. dbFin has no chapter-7 page (404,
+    checked 2026-11-15), and no GitHub Munkres repository named in the COMPLAINTS.md entry for
+    §30--§36 reaches Chapter 7. The card keeps its own proof, which this pass did not re-read; the
+    search is recorded in the COMPLAINTS.md entry for §43--§50 with every query.
+
 ---
 
 ::: {.exercise}
