@@ -25,6 +25,23 @@ audit:
     is for S^2 and so is not applied here, and against Theorem 17.2 and Theorem 18.1 (open maps, printed
     pp. 94, 104) for the two homeomorphisms used: S^1 - y_0 is homeomorphic to an open interval, and
     T^2 - C is the product of S^1 with that interval.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout for a published treatment of this exercise (issue #144). What was
+    located is Math StackExchange answer 1208062 by user98602 to question 1208036, "Is the Jordan
+    Curve Theorem True for Curves on a Toroid" (asked 2015-03-24, answer 2015-03-26), text at
+    tmp/sources/mse-1208036-munkres-61-1.md: it names the meridian and longitude curves as curves that
+    do not split the torus, states that a simple closed curve bounding an embedded disc separates the
+    torus into two components and that a curve not bounding a disc has complement homeomorphic to
+    S^1 x (-1,1). That is this exercise's answer, and it is the two examples the card gives. Its gap
+    is that it proves neither statement, deferring the proof to chapter 2 of Rolfsen, Knots and Links,
+    and to the Schoenflies theorem for the sphere, neither of which this book has at this point; the
+    card therefore keeps the proof it carried, which establishes the same two statements with
+    Theorem 17.2 and Theorem 18.1 (printed pp. 94, 104) and the product description of T^2 - C_1,
+    and the citation records the located statement. Nothing else on the card was re-read in this
+    pass.
 ---
 
 ::: {.exercise}
