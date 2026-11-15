@@ -13,6 +13,22 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §76 Exercise 1, printed p. 462. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md. No source was saved for this card. The queries were the Stack Exchange
+    advanced searches "acbc^{-1} cdba^{-1}d" and "Munkres pasting edges labelled 7-sided", both with no hits,
+    and the similar-question search from "Pasting two polygonal regions along an edge labelling scheme
+    Munkres" (15 items), whose threads describe the pasting operation in general and solve no exercise; the
+    GitHub code searches "munkres labelling scheme", "munkres "polygonal region"", "munkres "elementary
+    operations"" and "munkres "Section 76"" returned no file of solutions for this section, and the fourteen
+    solution repositories found by repository search stop before Chapter 12. The card keeps its own proof,
+    re-read here against the printed list of operations on p. 458: the two a-edges are the only a-edges and
+    the two b-edges the only b-edges of the total scheme, which is what makes those two pastings
+    elementary, and c occurs three times, which is what forbids the third. The three answers were re-derived
+    from the schemes and agree with the words on the card.
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 76 Exercise 1, printed p. 462. The three pastings, checked against operations (i) to (v) of the printed list on p. 458: along a (each a appears exactly twice) the scheme cbc^{-1}dcdb, along b after a flip c^{-1}acd^{-1}c^{-1}d^{-1}a, and along c impossible because c occurs three times in the total scheme. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.

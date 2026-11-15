@@ -11,6 +11,17 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §77 Exercise 4, printed p. 471. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md. No source was saved. The queries were the Stack Exchange advanced
+    search "10-sided polygonal region labelling scheme projective type" (no hits) and the similar-question
+    search from "Which surfaces can a labelling scheme of a 10-sided polygon represent" (15 items); no thread
+    addresses the length-ten case of the classification, and the GitHub code search "munkres "Classification
+    Theorem"" returned no solutions file. The card keeps its own proof, which is the length and
+    characteristic count of Theorem 77.5 applied to a proper scheme of length ten.
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29

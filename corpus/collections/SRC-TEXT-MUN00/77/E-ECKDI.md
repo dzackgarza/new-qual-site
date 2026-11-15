@@ -13,6 +13,19 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §77 Exercise 1, printed p. 470. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md. No source was saved, because none was found. The queries were the Stack
+    Exchange advanced search "Munkres T_n # K Klein bottle exactly one list" (no hits) and the
+    similar-question search from "Classification of surfaces list S^2, T_n, P^2, K_m, P^2 # K_m" (15 items).
+    The thread that is this exercise, 1333637, was read: its two answers, 1333690 and 1333687, list the
+    classification theorem and the invariants and both decline to solve the exercise, so the thread is a
+    source searched and not a proof. The GitHub code searches "munkres "Section 77"" and "munkres
+    "Classification Theorem"" returned no solutions file, and no course page found treats the section. The
+    card keeps its own proof.
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 77 Exercise 1, printed p. 470. Both lists are rewritings of Theorem 77.5's standard list using T_g#P^2 = P_{2g+1} and T_g#K = P_{2g+2}, which is Lemma 77.4, and the members are distinguished by orientability and Euler characteristic. Checked against Lemma 77.4 and Theorem 77.5. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.

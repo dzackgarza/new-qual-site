@@ -13,6 +13,18 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §77 Exercise 2, printed p. 470. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md. No source was saved. The queries were the Stack Exchange advanced
+    search "Munkres elementary operations Figures 77.1" (no hits) and the similar-question search from
+    "Elementary operations on labelling schemes in Munkres classification of surfaces" (15 items), whose
+    threads restate operations (i) to (v) of §76 and answer no part of this exercise; the figures themselves
+    are not in the checkout's extraction of the book, which drops them, so a source reproducing the figures
+    could not be checked against them in any case. The card keeps its own proof, which is the sequence of
+    operations for each figure.
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 77 Exercise 2, printed p. 470. The operation sequences for Figures 77.1 to 77.5, whose net effects are the equivalences (i) and (iii) that the book states for the same lemmas: Lemma 77.1 and the last display of Lemma 77.3, w ~ w_0aba^{-1}b^{-1}[y_1y_4y_3y_2y_5]. The card's final boxed word is exactly that. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.

@@ -13,6 +13,21 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §76 Exercise 2, printed p. 462. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md. No source was saved for this card. The queries were the Stack Exchange
+    advanced search "four-fold dunce cap abcc" (no hits) and the similar-question search from "Two sequences
+    of elementary operations give the dunce cap and the projective plane, which is correct" (15 items), no
+    thread of which treats this exercise; the GitHub code searches for "munkres "dunce cap"" and
+    "munkres "elementary operations"" returned nothing of this section. The card keeps its own proof, re-read
+    here: the first sequence's pasting along b is elementary because b occurs exactly twice in the total
+    scheme abcc, c^{-1}c^{-1}ab before it, and its cancellation is operation (vi) with the letter a occurring
+    twice and two letters on each side, while the second sequence pastes along a c-edge when c occurs four
+    times in the total scheme, so its first step is not the inverse of a cutting operation. The verdict --
+    the first argument correct, the space the four-fold dunce cap -- is unchanged.
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 76 Exercise 2, printed p. 462. The first sequence is valid: paste along b after permuting and flipping, then cancel aa^{-1} with y_0 = y_1 = cc of length two and a appearing nowhere else, as operation (vi) on p. 458 requires. The second is invalid at its first step, because c occurs four times in the total scheme. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.

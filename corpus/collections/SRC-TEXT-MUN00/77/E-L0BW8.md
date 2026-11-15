@@ -13,6 +13,22 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §77 Exercise 3, printed p. 471. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md and the saved thread is tmp/sources/mse-2880636-E-L0BW8.md, read whole.
+    Math Stack Exchange 2880636 asks about scheme (g) of this exercise, abcdabdc, and has one answer, 2880663
+    by Angina Seng (2018-08-12), which shows the eight vertices to fall into two classes, reads the boundary
+    in the generators c, d and e = ab as ecdedc, and abelianizes to Z^2 + Z/2. That is part of (g): the
+    vertex classes, pi_1(X) and H_1(X). It is now stated on the card with its URL. What it does not do: it
+    does not apply the algorithm of the exercise, and it names no standard form, so the reduction of (g) to
+    aabbcc and its identification as 3P^2 stay the card's own, as do schemes (a) to (f) and (h), which the
+    thread does not touch. The answer's H_1 agrees with the card's, whose aabbcc has the same group, which is
+    recorded in the solution. Rejected in the search: nothing in this thread; mse 652721, the linked
+    "Homology of connected sum of real projective spaces", states the group for the connected sum and not for
+    this scheme.
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 77 Exercise 3, printed p. 471. The eight reductions, checked against the four equivalences printed in the exercise: (a) aabbcc, (b) aabb, (c) aabbccdd, (d) two commutators, (e) one commutator, (f) aabbcc, (g) aabbcc, (h) abab. The Euler characteristics and orientability of the answers were recomputed independently from the vertex classes of each scheme and agree with the card's closing list -1, 0, -2, -2, 0, -1, -1, 1. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
@@ -174,6 +190,12 @@ $$
 \boxed{abab},
 $$
 which represents $P^2$.
+
+Scheme (g) is also computed, from the same octagon, by Angina Seng, answer 2880663 (https://math.stackexchange.com/a/2880663), posted 2018-08-12 to Math Stack Exchange question 2880636, "How to reconcile two different computed first homology groups for this space?" (https://math.stackexchange.com/questions/2880636, asked by the account posting as user323867 on 2018-08-12). Under the scheme $abcdabdc$ the eight vertices fall into two classes, so that $a$ and $b$ are not loops in the surface but the pair $ab$ is; replacing each of the two $ab$ pairs by a single edge $e$, the boundary reads $ecdedc$, so
+$$
+\pi_1(X)\cong\langle c,d,e\mid ecdedc=1\rangle,
+$$
+whose abelianization is $\ZZ^2\oplus\ZZ/2$, the relator becoming $2(c+d+e)$. The question's own computation, which assumes one vertex class and so presents $H_1$ as $\langle a,b,c,d\mid 2(a+b+c+d)\rangle=\ZZ^3\oplus\ZZ/2$, differs by exactly that class. The answer does not run the exercise's algorithm and does not name the standard form; the reduction above reaches $aabbcc$, whose $H_1$ is $\ZZ^2\oplus\ZZ/2$, so the two computations agree.
 
 As a check, the quotient cell structures have respectively Euler characteristics
 $$
