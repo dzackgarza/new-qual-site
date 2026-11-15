@@ -28,6 +28,20 @@ audit:
     contained in e^{-1}(U); the card's text now says which role each factor plays. Then W lies
     in S(C,U) since for f in W and x in C the pair (x,f) lies in e^{-1}(U). The card's closing references to
     three step labels that no step carried are replaced by the prose sentence that closes the argument.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). The AoPS blog post by cinnamon_e, "Topology by
+    Munkres Chapter 7 | Day 17" (2025-09-10,
+    https://artofproblemsolving.com/community/c3401823h3646977, text at
+    tmp/sources/aops-shooting-star-munkres-ch7-day17.md), answers this exercise at its item 8 of
+    §46, and the extraction dropped every inline formula, so the answer cannot be transcribed; the
+    site answers an automated request with a Cloudflare human check, which is not worked around.
+    Murayama's selection stops at Chapter 4, dbFin has no chapter-7 page, and the Math StackExchange
+    searches of this pass on the evaluation map in the compact-open topology, recorded in the
+    COMPLAINTS.md entry for §43--§50, returned pages on the admissibility of that topology rather
+    than on this exercise. The card keeps its own proof.
 ---
 
 ::: {.exercise}
