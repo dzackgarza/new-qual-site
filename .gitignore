@@ -15,3 +15,7 @@ tmp/
 
 # Scratch space used while probing the toolchain.
 .scratch/
+
+# The shared QC workflow's triage directory. It is scanner output and the
+# duration records of the run (issue #145), never authored content.
+.qc-triage/

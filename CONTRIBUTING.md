@@ -100,6 +100,19 @@ If a commit sweeps in a sibling's concurrent edit, that is a wrong commit messag
 No worktree from the previous rule remains.
 If one reappears, retire it under `QUAL-09`; see [AGENTS.md](AGENTS.md#one-checkout-one-branch) for what each reading establishes.
 
+## Run records
+
+Every run of the suite and every run of `qualc` leaves a record of its per-test and per-check
+durations: one file per run, named by the commit the run was against and the instant it started,
+in a directory outside the checkout and outside git, so no later run overwrites one and no run can
+commit one. Every CI workflow uploads that run's records as an artifact (`if: always()`, retention
+90 days).
+
+The store's path, the file naming, what each record keeps, and how to read one back are in
+[AGENTS.md](AGENTS.md#every-run-leaves-a-duration-record). A timing question — which test is slow,
+where a `qualc check` spends its time, whether this run got slower — is answered from a record,
+never from a second run of the work done to watch the total split.
+
 ## Repository structure
 
 - `corpus/` contains problems, sources, definitions, theorems, proofs, hints, and solutions.

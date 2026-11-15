@@ -194,9 +194,31 @@ test-push:
     @just _extraction-detector-push _macros-push
     @uv run --group dev pytest -q -n 0 tests/test_front_matter_keys.py tests/test_extraction_detector.py tests/test_card_git_validation.py tests/test_push_gate_dependencies.py
 
-# Run the CI acceptance gate
+# Read the duration records of past runs and of past `qualc` runs (issue #145)
+timings *args:
+    uv run python -m qualc.runrecord {{ args }}
+
+# Run the CI acceptance gate and hand this run's duration record to the QC artifact
 test-ci:
-    @PYTEST_ADDOPTS="" just -f ~/ai-review-ci/justfiles/python.just -d . test-ci
+    #!/usr/bin/env bash
+    set -euo pipefail
+    # The record of this run is the point of the run past the gate itself
+    # (issue #145); the tier below is unchanged.
+    records="$(uv run --frozen python -m qualc.runrecord --dir)"
+    before="$(ls -1 "$records" 2>/dev/null || true)"
+    status=0
+    PYTEST_ADDOPTS="" just -f ~/ai-review-ci/justfiles/python.just -d . test-ci || status=$?
+    # The test tier runs inside the shared QC workflow, and a workflow that
+    # calls another cannot add a step to it. `.qc-triage/` is the one directory
+    # that workflow uploads with `always()`, so the records of the run that just
+    # happened — the failing one included — ride out with it.
+    after="$(ls -1 "$records" 2>/dev/null || true)"
+    fresh="$(comm -13 <(printf '%s\n' "$before" | sort) <(printf '%s\n' "$after" | sort) | sed '/^$/d')"
+    if [[ -n "$fresh" ]]; then
+        mkdir -p .qc-triage/run-records
+        while IFS= read -r name; do cp "$records/$name" .qc-triage/run-records/; done <<< "$fresh"
+    fi
+    exit "$status"
 
 # Provision the mathematical document toolchain used by the hosted test suite
 [private]

@@ -902,6 +902,42 @@ root-cause and fix the gate, or report it as a blocker with a reproducer. Do not
 gate, and do not accumulate unpushed work around one. A gate that is red on two consecutive
 attempts is a defect to diagnose, not an environment condition to wait out.
 
+## Every run leaves a duration record
+
+A run of the suite and a run of `qualc` each write one record of what took the time — per test,
+per check — named by the commit the run was against and the UTC instant it started, so two runs
+are two files and no later run overwrites either. The directory is outside the checkout and
+outside git: `build/` is rewritten by every build and `tmp/` and `.scratch/` are scratch, so the
+records live in
+
+```
+$XDG_STATE_HOME/new-qual-site/run-records     # ~/.local/state/new-qual-site/run-records when unset
+```
+
+as `<commit12>-<YYYYMMDD>T<HHMMSS>.<mmm>Z-<tool>.json`. `QUALC_RUN_RECORD_DIR` moves the store,
+which is how CI puts a run's records where its upload step can reach them, and every CI workflow
+uploads that run's records as an artifact with `if: always()` and 90-day retention. A run whose
+root is not a git work tree has no commit to be named by and writes none.
+
+The durations are the ones the tool already reports, not a second measurement over it.
+`pytest` keeps every report's duration (`TestReport.duration`, the controller's when xdist is
+running) and keeps pytest's own `--junit-xml` report beside them; the hooks are in
+`tests/conftest.py`, the writer is `tools/qualc/runrecord.py`. `qualc` reports no duration of its
+own, so it times each check as it runs — `parse-cards`, `validate-index`, the wiki link passes,
+`lamport-proofs`, and a build's catalog, site and search-index steps — and records that check's
+wall time with the number of diagnostics it raised.
+
+Read a record; do not re-run the work to watch a total split:
+
+```sh
+just timings                                           # the ten most recent runs
+uv run python -m qualc.runrecord --tool qualc-check --latest
+uv run python -m qualc.runrecord --tool pytest --limit 3
+```
+
+A record is a measurement and nothing acts on it: it is not a gate, and `qualc check` does not
+fail because a check was slow.
+
 # Citations, collection references, and titles
 
 Citations follow `CITE-1` and `CITE-2`; a card does not list the collections it appears in

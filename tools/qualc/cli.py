@@ -6,12 +6,14 @@ import argparse
 import json
 import subprocess
 import sys
+import time
 from pathlib import Path
+from typing import Any
 
 import panflute as pf
 
 from . import certificates as certificate
-from . import emit, index
+from . import emit, index, runrecord
 from .diagnostics import Diagnostic, DiagnosticCode
 from .lamport import LamportError, apply_lamport
 from .model import ParsedCard, discover, load_citations, parse_cards_with, to_json, typeset_dashes
@@ -25,38 +27,58 @@ from .wiki import WikiPage, link_card_citations, link_citations, parse_pages, re
 def load(
     root: Path,
     pandoc: PandocServer,
+    checks: list[dict[str, Any]] | None = None,
 ) -> tuple[list[ParsedCard], list[WikiPage], list[Diagnostic]]:
     # Every stage runs whatever the stages before it found. Stopping at the first
     # failing stage hid every independent error behind whichever sorted first, so a
     # run with k errors cost k full passes (issue #89).
-    parsed, errors = parse_cards_with(
-        pandoc,
-        discover(root / "corpus"),
-    )
-    certificates = certificate.load(root / "proofs")
-    errors.extend(index.validate(parsed, index.load_vocabularies(root / "vocabularies", root / "wiki"), certificates, root))
-    wiki_pages, wiki_errors = parse_pages(pandoc, root / "wiki", load_citations(root / "vocabularies"))
-    errors.extend(wiki_errors)
-    card_routes = {}
-    card_titles = {}
-    for item in parsed:
-        card_titles[item.card.id] = typeset_dashes(item.card.title)
-        card_routes[item.card.id] = Path(index.card_route(item.card)) / f"{item.card.id}.html"
-    parsed = [item.model_copy(update={"ast": link_card_citations(title_card_links(item.ast, card_titles), card_routes)}) for item in parsed]
+    #
+    # Each check is timed as it runs, into `checks`, which is what the run's
+    # record keeps (issue #145). `qualc` reports no duration of its own, so this
+    # is the one place a clock is the right source rather than a second
+    # measurement beside the tool's own.
+    timed = [] if checks is None else checks
+    errors: list[Diagnostic] = []
+    with runrecord.check(timed, "parse-cards", errors):
+        parsed, card_errors = parse_cards_with(
+            pandoc,
+            discover(root / "corpus"),
+        )
+        errors.extend(card_errors)
+    with runrecord.check(timed, "load-certificates"):
+        certificates = certificate.load(root / "proofs")
+    with runrecord.check(timed, "validate-index", errors):
+        errors.extend(index.validate(parsed, index.load_vocabularies(root / "vocabularies", root / "wiki"), certificates, root))
+    with runrecord.check(timed, "parse-wiki-pages", errors):
+        wiki_pages, wiki_errors = parse_pages(pandoc, root / "wiki", load_citations(root / "vocabularies"))
+        errors.extend(wiki_errors)
+    with runrecord.check(timed, "link-card-citations"):
+        card_routes = {}
+        card_titles = {}
+        for item in parsed:
+            card_titles[item.card.id] = typeset_dashes(item.card.title)
+            card_routes[item.card.id] = Path(index.card_route(item.card)) / f"{item.card.id}.html"
+        parsed = [item.model_copy(update={"ast": link_card_citations(title_card_links(item.ast, card_titles), card_routes)}) for item in parsed]
     if wiki_pages:
-        assets = build_asset_catalog(root / "assets")
-        errors.extend(validate_wiki_tree(wiki_pages))
-        errors.extend(validate_wiki_sources(root / "wiki"))
-        errors.extend(resolve_links(wiki_pages, card_routes, card_titles, assets))
-        link_citations(wiki_pages, card_routes)
-    errors.extend(_publication_references(root, {item.card.id for item in parsed}))
-    preamble = json.loads((root / "vocabularies" / "macros.json").read_text())
-    documents = [(item.source_path, item.ast) for item in parsed]
-    documents.extend((str(page.source_path), to_json(pf.Doc(*page.blocks))) for page in wiki_pages)
-    errors.extend(unrenderable_tex(pandoc, documents, preamble))
-    for (where, _), result in zip(documents, apply_lamport([ast for _, ast in documents], "html"), strict=True):
-        if isinstance(result, LamportError):
-            errors.append(Diagnostic(DiagnosticCode.LAMPORT_PROOF_INVALID, where, result.message))
+        with runrecord.check(timed, "validate-wiki-tree", errors):
+            assets = build_asset_catalog(root / "assets")
+            errors.extend(validate_wiki_tree(wiki_pages))
+            errors.extend(validate_wiki_sources(root / "wiki"))
+        with runrecord.check(timed, "resolve-wiki-links", errors):
+            errors.extend(resolve_links(wiki_pages, card_routes, card_titles, assets))
+        with runrecord.check(timed, "link-citations"):
+            link_citations(wiki_pages, card_routes)
+    with runrecord.check(timed, "publication-references", errors):
+        errors.extend(_publication_references(root, {item.card.id for item in parsed}))
+    with runrecord.check(timed, "unrenderable-tex"):
+        preamble = json.loads((root / "vocabularies" / "macros.json").read_text())
+        documents = [(item.source_path, item.ast) for item in parsed]
+        documents.extend((str(page.source_path), to_json(pf.Doc(*page.blocks))) for page in wiki_pages)
+        errors.extend(unrenderable_tex(pandoc, documents, preamble))
+    with runrecord.check(timed, "lamport-proofs", errors):
+        for (where, _), result in zip(documents, apply_lamport([ast for _, ast in documents], "html"), strict=True):
+            if isinstance(result, LamportError):
+                errors.append(Diagnostic(DiagnosticCode.LAMPORT_PROOF_INVALID, where, result.message))
     return parsed, wiki_pages, errors
 
 
@@ -115,9 +137,40 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--json", action="store_true", help="emit diagnostics as JSON on stderr")
     args = ap.parse_args(argv)
 
+    # The run's record (issue #145): every check is timed into `checks` as it
+    # runs, and the record is written on both exits, so a failed run's timings
+    # are kept too. A checkout with no commit to name the run by writes none.
+    checks: list[dict[str, Any]] = []
+    run = runrecord.new_run(runrecord.QUALC_CHECK if args.command == "check" else runrecord.QUALC_BUILD, args.root)
+    clock = time.perf_counter()
+
+    def record(exit_status: int, parsed: int = 0, pages: int = 0, diagnostics: int = 0) -> None:
+        if run is None:
+            return
+        try:
+            printed = run.write(
+                exit_status=exit_status,
+                wall_seconds=time.perf_counter() - clock,
+                entries={
+                    "command": args.command,
+                    "cards": parsed,
+                    "wiki_pages": pages,
+                    "diagnostics": diagnostics,
+                    "checks": checks,
+                },
+            )
+        except OSError as error:
+            # The record is bookkeeping; a check that ran is not a failure
+            # because its record could not be written.
+            print(f"could not write the run record: {error}", file=sys.stderr)
+            return
+        print(f"record: {printed}")
+
     with PandocServer() as pandoc:
-        parsed, wiki_pages, errors = load(args.root, pandoc)
+        checks.append({"check": "pandoc-server", "seconds": round(time.perf_counter() - clock, 6), "errors": 0})
+        parsed_cards, wiki_pages, errors = load(args.root, pandoc, checks)
         if errors:
+            record(1, len(parsed_cards), len(wiki_pages), len(errors))
             if args.json:
                 print(json.dumps([error.as_dict() for error in errors]), file=sys.stderr)
             else:
@@ -125,20 +178,25 @@ def main(argv: list[str] | None = None) -> int:
                 for error in errors:
                     print(f"  {error}", file=sys.stderr)
             return 1
-        print(f"{len(parsed)} cards and {len(wiki_pages)} wiki pages OK")
+        print(f"{len(parsed_cards)} cards and {len(wiki_pages)} wiki pages OK")
         if args.command == "check":
+            record(0, len(parsed_cards), len(wiki_pages))
             return 0
 
-        db = build_catalog(args.root, parsed)
-        emit.project(
-            pandoc,
-            db,
-            args.root / "build" / "quarto",
-            args.root / "publications",
-            args.root / "site",
-            json.loads((args.root / "vocabularies" / "macros.json").read_text()),
-            wiki_pages,
-        )
-        build_search_index(args.root / "build" / "quarto" / "_site")
+        with runrecord.check(checks, "build-catalog"):
+            db = build_catalog(args.root, parsed_cards)
+        with runrecord.check(checks, "emit-site"):
+            emit.project(
+                pandoc,
+                db,
+                args.root / "build" / "quarto",
+                args.root / "publications",
+                args.root / "site",
+                json.loads((args.root / "vocabularies" / "macros.json").read_text()),
+                wiki_pages,
+            )
+        with runrecord.check(checks, "search-index"):
+            build_search_index(args.root / "build" / "quarto" / "_site")
+        record(0, len(parsed_cards), len(wiki_pages))
         print(f"wrote {db} and {args.root / 'build' / 'quarto'}")
         return 0

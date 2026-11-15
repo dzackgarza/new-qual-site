@@ -24,10 +24,26 @@ import sys
 from pathlib import Path
 
 import pytest
+from qualc import runrecord
 from qualc.diagnostics import DiagnosticCode
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURE_CORPUS = Path(__file__).resolve().parent / "fixtures" / "kinds"
+
+
+def pytest_configure(config: pytest.Config) -> None:
+    """Keep this run's own duration report, where the next run cannot overwrite it.
+
+    The work is in `qualc.runrecord`: the record directory, the file named by
+    commit and start time, and pytest's own `--junit-xml` beside it (issue #145).
+    """
+    runrecord.pytest_configure(config)
+
+
+@pytest.hookimpl(trylast=True)
+def pytest_sessionfinish(session: pytest.Session, exitstatus: int) -> None:
+    """Last, so pytest's JUnit report has been written before the record names it."""
+    runrecord.pytest_sessionfinish(session, exitstatus)
 
 
 SUBJECTS = (("Algebra", "Algebra"), ("Topology", "Topology"), ("Complex_Analysis", "Complex Analysis"), ("Real_Analysis", "Real Analysis"))
