@@ -1997,7 +1997,8 @@ Chapter V solutions begin at printed p. 100 of `tmp/sources/lfwin-hartshorne-sol
 previously read through a `pdftotext` render that lost their mathematics, so several entries that this file
 called empty are arguments. His 5.5.1 is a version of V.5.1; his 5.5.2 is a version of V.5.2; his 5.5.4(a)
 repeats the false ampleness claim of Egbert's entry ("$f^*H$ is ample on $X$"), and 5.5.4(b) argues negative
-definiteness by the two-hyperplane route; his 5.5.7 aims at V.5.7 through $mY=\tilde H_1-\tilde H_0$ and
+definiteness by the two-hyperplane route; his 5.5.5 is a version of V.5.5 that does **not** close it (below);
+his 5.5.7 aims at V.5.7 through $mY=\tilde H_1-\tilde H_0$ and
 needs $\tilde H_0\cdot Y>0$ for the strict inequality, which it does not establish; his 5.5.8 carries out the
 eight blowups of V.5.8; his 5.5.6 states the union of case (3) without proving it and so does not close
 V.5.6 above; and his 5.6.1 and 5.6.2 are the sketches this file
@@ -2011,3 +2012,22 @@ the elliptic ruled surfaces of V.2.12--V.2.13, its one mention of an elementary 
 operation on vector bundles (printed p. 43, not V.5.5's), and it has no Chern--Griffiths bound. Nothing
 there states
 V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, V.4.7--V.4.16, V.5.5, V.6.1 or V.6.2.
+
+**V.5.5 on Yang's 5.5.5, read this pass.** His entry is the nearest thing to a published proof of V.5.5 and it
+does not close it. Its first half is the printed hint's first part, the drop $D^2\mapsto D^2-1$ for a section
+under $\operatorname{elm}_P$, with the general formula $C'\cdot D'=C\cdot D+ac-a\,\mu_P(D)-c\,\mu_P(C)$ for
+$C\sim aC_0+bf$ and $D\sim cC_0+df$; its step from $e>2g-2$ to a decomposable $\mathcal E$ is the
+contrapositive of Hartshorne's Theorem V.2.12(b), $-2g\le e\le 2g-2$ for an indecomposable normalized
+$\mathcal E$. Its last step fails: from $e=e'$ it concludes $X\cong X'$, and $e$ is not a complete invariant.
+With $e>0$ fixed, $X=\mathbf P(\mathcal O_C\oplus L)$ and $X'=\mathbf P(\mathcal O_C\oplus L')$ with
+$\deg L=\deg L'=-e$ are isomorphic only if $L\cong L'$: $\mathbf P(\mathcal E)\cong\mathbf P(\mathcal E')$
+forces $\mathcal E'\cong\mathcal E\otimes M$ for some line bundle $M$, and
+$M\oplus L'\otimes M\cong\mathcal O_C\oplus L$ gives, by Krull--Schmidt, either $M\cong\mathcal O_C$ and
+$L\cong L'$, or $M\cong L$ and $L'\cong L^{-1}$, which is excluded by $\deg L^{-1}=e\ne-e$. The degree-zero
+part of the normalized bundle must be matched as well, and his entry never matches it; already for $e=0$ and
+$C$ of genus $\ge1$, $\mathbf P(\mathcal O_C\oplus\mathcal O_C)$ and $\mathbf P(\mathcal O_C\oplus L')$ with
+$L'\not\cong\mathcal O_C$ of degree $0$ have the same $e$ and are not isomorphic. What reaches an arbitrary
+$L'$ is applying elementary transformations at points of the positive section as well as at $C_0$, which
+tensors $L$ by $\mathcal O_C(\pm P)$ and so reaches every divisor class; his entry does not give that step,
+and the card's own proof works at the level of the bundles, where the modification changes the class and not
+only its degree. V.5.5 stays open on this file's list.
