@@ -26,6 +26,20 @@ audit:
     46.4 for the continuity of the compatible function, with every point of X having a compact neighbourhood by
     Theorem 29.2. The last sentence records that the square and euclidean metrics on R^n are uniformly
     equivalent, so neither boundedness nor equicontinuity depends on which is used.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). The AoPS blog post by cinnamon_e, "Topology by
+    Munkres Chapter 7 | Day 17" (2025-09-10,
+    https://artofproblemsolving.com/community/c3401823h3646977, text at
+    tmp/sources/aops-shooting-star-munkres-ch7-day17.md), answers this exercise at its item 2 of
+    §47, and the extraction dropped every inline formula, so the answer cannot be transcribed; the
+    site answers an automated request with a Cloudflare human check, which is not worked around.
+    Murayama's selection stops at Chapter 4, dbFin has no chapter-7 page, and the Math StackExchange
+    searches of this pass for compact closure under pointwise boundedness and equicontinuity,
+    recorded in the COMPLAINTS.md entry for §43--§50, returned nothing on the theorem. The card
+    keeps its own proof.
 ---
 
 ::: {.exercise}
