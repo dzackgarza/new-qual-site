@@ -26,6 +26,23 @@ audit:
     of open W_n then each W_n and each R - {d_k} is dense open, and Theorem 48.2 applied to the complete metric
     space R makes their countable intersection dense, while it equals D intersected with its complement. The
     conclusion combines the two parts. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Yougi, *Munkres Topology Solution: Chapter 8* (Nocturne blog,
+    2025-07-10, https://hexo.yougi.top/2025/07/10/Munkres-Topology-Solution-Chapter-8/, text at
+    tmp/sources/yougi-2025-munkres-chapter-8.md), proves both parts of Munkres §48 Exercise 7 (printed
+    p. 299) at its Ex. 48.7. Its part (a) is a formula different from the card's and equivalent to it,
+    $C=\bigcap_n\bigcup_m\{x : \forall s,t\in(x-1/m,x+1/m),\ \abs{f(s)-f(t)}<1/n\}$, which is a $G_\delta$
+    and holds exactly at the points of continuity; the card keeps the book's hint, the sets $U_n$ of open sets
+    of image diameter below $1/n$, and proves both inclusions. Its part (b) is the card's argument: $W_n$ and
+    $\RR\setminus\theset{d}$ are dense open, and the Baire theorem makes their intersection dense, whereas it
+    is empty. Nothing on the card needed correction, and the card's part (a) was not replaced by the post's
+    formula, which is a rewording rather than a repair. Math StackExchange 953676, "The set of rationals in
+    $(0,1)$ is not a $G_\delta$" (2014-10-01, text at tmp/sources/mse-953676-munkres-48-7b.md), concerns the
+    same part (b) but is a question about an interval-splitting proof and is not this exercise; the card uses
+    none of it.
 ---
 
 ::: {.exercise}
