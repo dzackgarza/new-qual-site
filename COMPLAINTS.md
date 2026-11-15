@@ -1463,3 +1463,27 @@ Algebraic Geometry* download is a six-page title stub, not the book.
 **Repair.** Recorded for the next pass, not done here: a source for the thirty-eight Chapter V cards, for
 the two Chapter III cards whose printed statements are false, and the Stack Exchange search once the
 throttle expires.
+
+**GitHub repositories of Hartshorne solutions, searched in this pass.** `GET
+https://api.github.com/search/repositories?q=hartshorne+algebraic+geometry+solutions` (2026-11-15) returns
+six repositories; each tree was read with `GET /repos/<owner>/<repo>/git/trees/HEAD?recursive=1` and the
+files fetched where the tree suggested coverage.
+
+- `lfwin/Hartshorne-Solutions`: the Yang Pi-Yeh set already retained as `tmp/sources/lfwin-hartshorne-solutions.pdf`.
+- `maths644311798/Hartshorne-Algebraic-Geometry-Solution`: the Cutrone--Marshburn set already retained.
+- `mikeleew/Hartshorne_solutions` (37 entries, `chapter1/ex/*.tex` and `chapter2/ex/*.tex`): Chapter 1
+  exercises 1.1, 1.3--1.5, 1.8, 2.1, 2.3, 2.4, 2.10, 2.12 and 3.20, Chapter 2 exercises 1.2 and 1.8. No
+  Chapter III, IV or V file; nothing for any card of this batch except I.3.20, which already cites Vakil.
+- `nilaykumar/hartshorne` (`hartshorne.tex`, 52 problem blocks): chapters I and II only.
+- `b-t-g/Hartshorne` (`hartshorne.org`, 18 KB) and `reiserb/HartshorneSolutions`
+  (`HartshorneSolutionsWeb.pdf`): short selections that do not reach Chapter III.
+
+So the repository search adds nothing beyond Chapters I--II, where the Shichijo set is the fuller source.
+
+**Books named in the brief that were not consulted.** Liu, *Algebraic Geometry and Arithmetic Curves*
+(the place Egbert and Cutrone--Marshburn send II.3.15, §3.2.2 p. 89), Görtz--Wedhorn, *Algebraic Geometry I*
+(whose Theorem 6.45 is the scheme form of I.3.20), and Eisenbud--Harris, *On varieties of minimal degree*
+(the degree-two case is the quadric hypersurface of its span) are not in `tmp/sources` and no accessible copy
+was obtained in this pass; Dolgachev's *Classical Algebraic Geometry* likewise, the only copy downloaded,
+`tmp/sources/dolgachev-topics-classical-ag.pdf` from `mathweb.ucsd.edu/~eizadi/207A-14/`, being a six-page
+title stub and not the book. None of these is cited on a card.
