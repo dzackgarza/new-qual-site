@@ -29,6 +29,22 @@ audit:
     at most 1/n for each fixed n at an irrational x, because the supports of the first N tents are eventually
     avoided there. The supports are disjoint so at most one tent contributes at an irrational point. Nothing
     needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Yougi, *Munkres Topology Solution: Chapter 8* (Nocturne blog,
+    2025-07-10, https://hexo.yougi.top/2025/07/10/Munkres-Topology-Solution-Chapter-8/, text at
+    tmp/sources/yougi-2025-munkres-chapter-8.md), answers Munkres §48 Exercise 9 (printed p. 299) at its Ex.
+    48.9 for the first question only, in one sentence ("a standard fact in analysis"), and says in the post
+    itself that it has neither proved nor disproved the existence of the sequence $f_n$: the second question
+    of the exercise is unanswered there. Math StackExchange 1114745, "Thomae function is continuous at
+    $x\notin\QQ$, discontinuous at $x\in\QQ$" (2015-03-23), is the first question and has no
+    answer, the text kept at tmp/sources/mse-1114745-munkres-48-9.md; the other Thomae questions returned by
+    the search are about integrability, limits or inverse images and not about this exercise. The card
+    therefore keeps both halves as its own: the $\varepsilon$-$\delta$ proof at an irrational and the density
+    argument at a rational, and the explicit sequence of tents with pairwise disjoint supports of width below
+    $1/k$, which answers the second question yes. Nothing needed correction.
 ---
 
 ::: {.exercise}
