@@ -1424,7 +1424,7 @@ and his 2011 draft):
   every other text version here was "made with `pdftotext -layout` and split into pages"; that is not a text
   version of a source under `AGENTS.md`'s extraction rule, and the sources the entries below rest on have
   their own extractions, named above and here: Reid, *Chapters on Algebraic Surfaces*, as
-  `tmp/sources/reid-chapters.md` (the whole paper, from `reid-chapters-algebraic-surfaces.pdf`, which is
+  `tmp/sources/reid-chapters-algebraic-surfaces.md` (the whole paper, from `reid-chapters-algebraic-surfaces.pdf`, which is
   arXiv:alg-geom/9602006v1 and whose folios are its PDF pages; the extraction marks blocks of twenty pages);
   Yang Pi-Yeh's set as `tmp/sources/lfwin-hartshorne-solutions.md`; the NTU *Algebraic Geometry II* Chapter V
   homework as `tmp/sources/ntu-ag2-chapter5.md`; and Davis--Sobieska as
@@ -1824,7 +1824,7 @@ search was over the retained 7655-page book (version ed88ff78), tag by tag and b
   arXiv record's comment field), Theorem A.7(1), statement on printed p. 29 and proof on printed pp. 30--31,
   negative definiteness of the
   intersection matrix of a bunch contracted by a projective birational morphism of a nonsingular surface,
-  read in `tmp/sources/reid-chapters.md`; with $k=1$ it gives $Y^2<0$, and by restriction to a principal
+  read in `tmp/sources/reid-chapters-algebraic-surfaces.md`; with $k=1$ it gives $Y^2<0$, and by restriction to a principal
   submatrix the same for one curve among several components of a fibre,
   and Reid's Castelnuovo criterion, printed p. 10, gives $Y\cong\PP^1$ with $Y^2=-1$ for a single contracted
   curve. See the entry in the Chapter V section above.
@@ -1900,7 +1900,7 @@ criterion,
 printed p. 10, gives $Y\cong\PP^1$ with $Y^2=-1$ for a single contracted curve. `P-AGH554CONTRACTEDCURVES`
 cites all three in the body, says which half each covers, and keeps its own Hodge-index proof, which is the
 alternative Reid names in Ex. A.16, printed p. 36, and which reaches the general case his proof simplifies
-away. Read in `tmp/sources/reid-chapters.md` (the whole paper; its folios are the PDF pages of
+away. Read in `tmp/sources/reid-chapters-algebraic-surfaces.md` (the whole paper; its folios are the PDF pages of
 `tmp/sources/reid-chapters-algebraic-surfaces.pdf`, whose Artin contraction theorem is stated on printed
 p. 93 and whose Section 4.17 and Theorem (Artin) begin on printed p. 94 with the proof on printed p. 95).
 
@@ -1919,14 +1919,35 @@ files of the old build `stacks-project-book.md`, `stacks-project-53.9-plane-curv
 page-range extractions `vakil-rising-sea-2025-10-21-mineru-pNNNN-NNNN.md`; the three Reid page-range
 extractions `reid-chapters-algebraic-surfaces-mineru-p{0010,0029-0031,0092-0095}.md`; and the two probes
 `.tag-probe.html` and `mineru-probe.md`. Their replacements are the whole-book and whole-paper extractions
-`reid-chapters.md`, `vakil-rising-sea-2025-10-21.md`, `lfwin-hartshorne-solutions.md`,
+`reid-chapters-algebraic-surfaces.md`, `vakil-rising-sea-2025-10-21.md`, `lfwin-hartshorne-solutions.md`,
 `ntu-ag2-chapter5.md`, `davis-sobieska-rational-normal-curves-weighted.md`, and the tag files
 `stacks-tags/<TAG>.md` with `stacks-tags/INDEX.md`. The cards that named a deleted file now name its
 replacement: `P-AGH415DIMLEQDEG` and `P-AGH418ARITHGENUSSINGULAR` the two tag files and the retained compiled
-book for their printed pages, and `P-AGH554CONTRACTEDCURVES` `tmp/sources/reid-chapters.md`. The two Vakil
+book for their printed pages, and `P-AGH554CONTRACTEDCURVES` `tmp/sources/reid-chapters-algebraic-surfaces.md`. The two Vakil
 cards the brief listed with them, `P-AGH4110PICOFARITHGENUSONE` and `P-AGH422GENUSTWOMODULI`, already named
 `tmp/sources/vakil-rising-sea-2025-10-21.md`, whose contents were replaced under the same name, so their
 citations needed no repointing; their pages were re-checked instead.
+
+**The MinerU text versions that now stand beside their PDFs, and what names them.** Seventeen files in
+`tmp/sources` now have a MinerU `.md` beside the `.pdf`, written on 2026-11-15 between 21:17 and 21:36:
+`reid-chapters-algebraic-surfaces`, `hartshorne-solutions-egbert`, `hartshorne-solutions-kim`,
+`dongryul-kim-hartshorne-solutions`, `hartshorne-solutions-saglam-chris`, `hartshorne-solutions-cutrone-marshburn`,
+`hartshorne-solutions-cais`, `hartshorne-solutions-park`, `hartshorne-solutions-troiani`,
+`hartshorne-solutions-borcherds`, `hartshorne-solutions-lomont`, `milne-fields-and-galois-theory`,
+`bosch-lutkebohmert-raynaud-neron-models-part4`, `haiman-varieties-as-schemes`, `bertram-utah-6130-varieties`,
+`block-nonsingular-varieties-notes`, `garland-introduction-jacobian-conjecture-reu2018`. Of these only Egbert and
+Reid are named by a `tmp/sources/...pdf` path anywhere in the tracked tree (`P-AGH5412KODAIRAVANISH`,
+`P-AGH5413DELPEZZO4`, `P-AGH555ELEMTRANSFORM` and this file for Egbert; the two Reid cards and this file for
+Reid); the other fifteen are cited by author, title and printed page with no path, so there was no PDF name to
+pair and nothing was repointed. The Reid extraction was also cited under the name `reid-chapters.md`, a
+byte-identical copy (md5 `78b2b6692c5b9d22c6ab793b0fe5132d`); every citation now names
+`reid-chapters-algebraic-surfaces.md`, the file that stands beside the PDF.
+
+**The compiled Stacks book is a folio reference, not a text.** `tmp/sources/stacks-project-book.pdf` (version
+ed88ff78, compiled 14 July 2026) has no text version of the whole book, so no card now attributes text to it:
+`P-AGH415DIMLEQDEG` and `P-AGH418ARITHGENUSSINGULAR` cite the compiled book only for printed page numbers and
+name `tmp/sources/stacks-tags/<TAG>.md` --- for Lemma 53.3.5 that is `stacks-tags/0CCS.md` --- as the file the
+statement and proof were read in.
 
 **The Stacks version.** The tag files are the site's build from stacks-project commit
 `a04446e57ec1fbc252a871afcec7752fb2807b14` (28 July 2026), and that is the version a tag citation now
@@ -2161,9 +2182,11 @@ Shichijo, Chapter 1 section 2, in `tmp/sources/shitijyou-ch1-section2.md` agains
 `tmp/sources/shitijyou-ch1-section2.pdf`; and Egbert's V.4.13 pages on the rendered page of
 `tmp/sources/hartshorne-solutions-egbert.pdf`, whose text version did not exist yet. It exists now:
 `tmp/sources/hartshorne-solutions-egbert.md` is a MinerU extraction of all 304 PDF pages, marked in blocks of
-twenty, and is cited on the cards that read Egbert from this pass on. It loses symbols the rendered page has —
-its line 12563 reads "Now use ?." where p. 294 prints the star — so where an entry turns on a symbol, that
-symbol is read off the page image. Nine of the open
+twenty, and is cited on the cards that read Egbert from this pass on. **Correction, same day:** the extraction
+was regenerated at 21:36 and now renders the star of pp. 293--294 as an asterisk, its line 12563 reading "Now
+use *."; the copy this paragraph was written against (13040 lines against 13038 now) read "Now use ?." there.
+So the file does carry the star today, and the earlier claim that it loses that symbol no longer holds. Where
+an entry turns on a symbol, the symbol is still checked on the page image. Nine of the open
 Chapter V cards and one Chapter I card were read in full this pass, and each stops short of the printed
 requirement for the reason given. No card is closed on this reading.
 
@@ -2285,8 +2308,9 @@ and the obligation recorded in their sections.
 ## `SRC-TEXT-HART77` #121: the third pass of 2026-11-15, four repairs and the next two cards
 
 **The four repairs.** Egbert's MinerU text version now exists and is cited on the cards that read him
-(`tmp/sources/hartshorne-solutions-egbert.md`, 304 PDF pages, markers every twenty; its line 12563 reads
-"Now use ?." where p. 294 prints the star, so symbols come off the page image). V.5.5 now quotes his paragraph
+(`tmp/sources/hartshorne-solutions-egbert.md`, 304 PDF pages, markers every twenty; the copy read here at
+21:30 rendered the star of pp. 293--294 as "?" at line 12563, and the regenerated copy of 21:36 renders it
+as "*", so the file carries it and a symbol is still confirmed on the page image). V.5.5 now quotes his paragraph
 verbatim, "So we may blow-up $X$ and $X'$ more and assume $\mathfrak e=\mathfrak e'$". V.4.12 records Yang's
 false $h^0$ at printed p. 111 and its source, the $k\to k$ of his sequence, and the V.4.12 entry above is
 corrected on two points: Egbert's page is p. 292 alone, and his closing step is not a misuse of (4.11) --- the
