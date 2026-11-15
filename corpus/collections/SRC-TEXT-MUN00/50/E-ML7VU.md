@@ -88,6 +88,17 @@ audit:
     $m\le\delta/16$, the length of $J_k$ as $m+\delta/64\le5\delta/64<\delta/8$, and the disjointness of
     $J_k$, $J_l$ for $\abs{k-l}\ge2$ is drawn from $m>\delta/64$, which holds only when $q\ge2$ and can fail at
     $q=1$, where no two such indices exist. Nothing else on the card changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    A reader of this card reported that the construction of the cover of [-1, 1] fails at L = 0, where
+    y_0 - 2 sigma = -1: the point -1 then lies outside I_0 = (y_0 - 2 sigma, y_0 + 2 sigma), which is open,
+    and no J_k is built, the card having branched on L > 0. Step 3 now writes L = y_0 - 2 sigma + 1,
+    observes that for L < 0 no point of [-1, 1] lies below y_0 - 2 sigma and -1 lies in I_0, and takes the
+    partition for L >= 0, with the single interval of the case L <= delta/16 degenerate at L = 0, where
+    b_0 = b_1 = -1 and J_1 contains -1. The upper side is covered "the same way", which now includes its
+    own degenerate case. Nothing else on the card changed.
 ---
 
 ::: {.exercise}
@@ -116,7 +127,7 @@ Note $\eta<\delta$, $2\nu\le\ell/2<\delta$, $2\sigma<\delta$, and $\ell/\eta^2<\
 - one of them, call it $I_0$, is $(y_0-2\sigma,\,y_0+2\sigma)$, and every other $I_i$ is contained either in $(-\infty,\,y_0-\sigma)$ or in $(y_0+\sigma,\,\infty)$, so that a point of $\bar S$ whose second coordinate satisfies $\abs{y-y_0}<\sigma$ lies in exactly one of the $I_i$;
 - $\abs{I_i}<\delta/2$ for every $i$.
 
-Such intervals exist. Suppose first that $L=y_0-2\sigma+1>0$, and take a partition $-1=b_0<b_1<\dots<b_q=y_0-2\sigma$ whose mesh $m$ satisfies $m\le\frac{\delta}{16}$: if $L>\frac{\delta}{16}$ take $q$ with $\frac{16L}{\delta}<q<\frac{32L}{\delta}$, which exists because that open interval of real numbers has length $\frac{16L}{\delta}>1$ and so contains an integer, and put $b_k=-1+k\frac{L}{q}$ so that $m=\frac{L}{q}\in(\frac{\delta}{32},\frac{\delta}{16})$; if $L\le\frac{\delta}{16}$ take $q=1$, so that $m=L\le\frac{\delta}{16}$ and there is only one interval. Put $J_k=(b_{k-1}-\frac{\delta}{128},\,b_k+\frac{\delta}{128})$. Then $J_k\cap J_l=\emptyset$ when $\abs{k-l}\ge2$: if $q\ge2$ the mesh satisfies $m>\frac{\delta}{64}=\frac{2\delta}{128}$, so $b_{k+1}-\frac{\delta}{128}>b_k+\frac{\delta}{128}$, and if $q=1$ there are no two such indices. Each $J_k$ has length $m+\frac{\delta}{64}\le\frac{5\delta}{64}<\frac{\delta}{8}$; and each $J_k$ is contained in $(-\infty,y_0-\sigma)$, because its right end is at most $(y_0-2\sigma)+\frac{\delta}{128}=y_0-2\sigma+\frac{\sigma}{2}<y_0-\sigma$. Cover $[y_0+2\sigma,1]$ the same way when that interval is nonempty, with the roles of $y_0-\sigma$ and $y_0+\sigma$ exchanged, and add $I_0$; the points of $[-1,1]$ outside $(y_0-2\sigma,y_0+2\sigma)$ are covered by the $J$'s.
+Such intervals exist. Write $L=y_0-2\sigma+1$, so that $y_0-2\sigma=-1+L$. If $L<0$ then no point of $[-1,1]$ lies below $y_0-2\sigma$, and $-1$ lies in $I_0$, so nothing is needed on that side. If $L\ge0$ take $b_0\le b_1\le\dots\le b_q$ with $b_0=-1$, $b_q=y_0-2\sigma$ and consecutive points at distance $m\le\frac{\delta}{16}$, equal only when $L=0$: if $L>\frac{\delta}{16}$ take $q$ with $\frac{16L}{\delta}<q<\frac{32L}{\delta}$, which exists because that open interval of real numbers has length $\frac{16L}{\delta}>1$ and so contains an integer, and put $b_k=-1+k\frac{L}{q}$ so that $m=\frac{L}{q}\in(\frac{\delta}{32},\frac{\delta}{16})$; if $0\le L\le\frac{\delta}{16}$ take $q=1$, so that $m=L\le\frac{\delta}{16}$ and there is only one interval, the degenerate one $-1=b_0=b_1=y_0-2\sigma$ when $L=0$. Put $J_k=(b_{k-1}-\frac{\delta}{128},\,b_k+\frac{\delta}{128})$, so that $J_1$ contains $-1$ and $y_0-2\sigma$. Then $J_k\cap J_l=\emptyset$ when $\abs{k-l}\ge2$: if $q\ge2$ the mesh satisfies $m>\frac{\delta}{64}=\frac{2\delta}{128}$, so $b_{k+1}-\frac{\delta}{128}>b_k+\frac{\delta}{128}$, and if $q=1$ there are no two such indices. Each $J_k$ has length $m+\frac{\delta}{64}\le\frac{5\delta}{64}<\frac{\delta}{8}$; and each $J_k$ is contained in $(-\infty,y_0-\sigma)$, because its right end is at most $(y_0-2\sigma)+\frac{\delta}{128}=y_0-2\sigma+\frac{\sigma}{2}<y_0-\sigma$. Cover $[y_0+2\sigma,1]$ the same way when that interval is nonempty, with the roles of $y_0-\sigma$ and $y_0+\sigma$ exchanged, and add $I_0$; the points of $[-1,1]$ outside $(y_0-2\sigma,y_0+2\sigma)$ are covered by the $J$'s.
 
 For each of these intervals let
 $$
