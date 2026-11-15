@@ -65,6 +65,28 @@ audit:
     was re-read and is unchanged. Checked against the book: the exercise on printed p. 370, Theorem
     59.1 on printed p. 368, Theorem 59.3 on printed p. 369, Theorem 58.3 on printed p. 361, Theorem
     58.7 on printed p. 364 and Theorem 54.5 on printed p. 345.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The path-connectedness of U cap V in part (b) is now proved, from a second
+    reader's report on this card. The step had said that any two points can be joined
+    by a polygonal path avoiding four points, "four points not separating the
+    sphere", which is two defects: a polygonal path is not defined on S^2, and that
+    the points do not separate the sphere is the very thing the sentence was being
+    used for, so it was an assumption and not an argument. The step now projects
+    stereographically from a_1, which carries U cap V onto the plane minus the three
+    points phi(a_2), phi(b_1), phi(b_2), and proves that the plane minus a finite set
+    is path connected: the segment from x to y, or, when it meets F, the two
+    segments through a point z chosen on a circle about x off the finitely many lines
+    through pairs of points of F together with x and y and off F itself. It also
+    names the point x_0 of U cap V that Theorem 59.1 asks for. Parts (a) and the
+    first half of (b) are unchanged. Checked against the book: the exercise on
+    printed p. 370, Theorem 59.1 on printed p. 368, Theorem 59.3 on printed p. 369,
+    Theorem 58.3 on printed p. 361, Theorem 58.7 on printed p. 364 and Theorem 54.5
+    on printed p. 345, and the segment argument of the same kind as the one on this
+    corpus's E-E79BA. Not claimed: that the source proves the path connectedness it
+    uses -- it takes it for granted, as the note of 2026-11-14 on this card records.
 ---
 
 ::: {.exercise}
@@ -144,10 +166,28 @@ with negative, respectively positive, $x$-coordinate.
 Let $a_1,a_2$ be distinct points of $S^2$ with negative $x$-coordinate and
 $b_1,b_2$ distinct points with positive $x$-coordinate, and put
 $U=S^2-\theset{a_1,a_2}$, $V=S^2-\theset{b_1,b_2}$, $X=S^2$. Then $U$ and $V$
-are open in $X$ and $U\cup V=X$. Also $U\cap V=S^2-\theset{a_1,a_2,b_1,b_2}$ is
-path connected: it is $S^2$ minus four points, and any two of its points can be
-joined by a polygonal path avoiding four points, four points not separating the
-sphere. So the hypotheses of Theorem 59.1 hold.
+are open in $X$ and $U\cup V=X$.
+
+Also $U\cap V=S^2-\theset{a_1,a_2,b_1,b_2}$ is path connected; fix any
+$x_0\in U\cap V$, which then satisfies the hypotheses of Theorem 59.1 with $U$ and
+$V$. To see that it is path connected, let $\varphi:S^2-\theset{a_1}\to\RR^2$ be
+stereographic projection from $a_1$, a homeomorphism carrying $U\cap V$ onto the
+plane with the three points $\varphi(a_2)$, $\varphi(b_1)$, $\varphi(b_2)$
+deleted; it is enough to join any two points of $\RR^2$ minus a finite set $F$ of
+three points.
+
+So let $F\subseteq\RR^2$ be finite and $x,y\in\RR^2-F$. If the segment from $x$ to
+$y$ misses $F$, it is a path from $x$ to $y$ in $\RR^2-F$. If not, choose $z$ on a
+circle of positive radius about $x$ that lies on none of the finitely many lines
+through two points of $F\cup\theset{x,y}$ and is not a point of $F$: each of those
+lines meets the circle in at most two points and $F$ is finite, while the circle is
+infinite, so such a $z$ exists. Then the segment from $x$ to $z$ misses $F$, since
+a point $w\in F$ on it would put $z$ on the line through $x$ and $w$, and the
+segment from $z$ to $y$ misses $F$, since a point $w\in F$ on it would put $z$ on
+the line through $w$ and $y$. The two
+segments together are a path from $x$ to $y$ in $\RR^2-F$. Nothing about points of
+the sphere failing to separate it is assumed here: the two segments exhibit the
+path.
 
 Each of $U$ and $V$ is homeomorphic to $\RR^2$ minus a point: stereographic
 projection from one of its two deleted points is a homeomorphism of the punctured
