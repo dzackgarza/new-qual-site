@@ -27,6 +27,22 @@ audit:
     argument, and it is now proved: an open interval missed by W_k would give a nonempty relatively open piece of
     the irrationals disjoint from V_k. The final step, that a set dense in R and contained in the irrationals is
     dense in the irrationals, is the definition of the subspace topology.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Yougi, *Munkres Topology Solution: Chapter 8* (Nocturne blog,
+    2025-07-10, https://hexo.yougi.top/2025/07/10/Munkres-Topology-Solution-Chapter-8/, text at
+    tmp/sources/yougi-2025-munkres-chapter-8.md), answers Munkres §48 Exercise 6 (printed p. 299) at its Ex.
+    48.6 with the single reduction "$\RR\setminus\QQ$ is a $G_\delta$ subset of $\RR$", which is the
+    exercise's content only after Ex. 48.5 is applied: the post does not write the countable family whose
+    intersection the irrationals are, and it does not say which theorem makes a $G_\delta$ set of a complete
+    metric space Baire. The card supplies both, enumerating the rationals and applying Lemma 48.1 in $\RR$
+    directly, so no part of the card depends on the post. Math StackExchange 3316496, "Yes/No : Is irrational
+    number $(\QQ^c)$ are baires space?" (2019-08-12), asks this exercise and has no answer at all, the text
+    kept at tmp/sources/mse-3316496-munkres-48-6.md. Murayama's selection stops at Chapter 4, dbFin has no
+    Chapter 8 page, and no course page or repository outside the checkout was found carrying this exercise;
+    the queries of this pass are in the COMPLAINTS.md entry for §43--§50.
 ---
 
 ::: {.exercise}
