@@ -59,6 +59,32 @@ audit:
     pictures the same quotient in Figure 22.2 (printed p. 136). The rest of the step is unchanged.
     Checked against the book: the exercise on printed p. 370, Theorem 44.1 on printed p. 272,
     Theorem 26.6 on printed p. 167 and Figure 22.2 on printed p. 136.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Two repairs, from a second reader's report on this card. (1) The step called the
+    map e : I^2 -> B^2 a linear homeomorphism; a linear map carries the square onto a
+    parallelogram, not onto the disc, and no such map exists. What the step needs is
+    a continuous surjection, and it now uses p(s,t) = (s cos 2 pi t, s sin 2 pi t),
+    onto because r(cos theta, sin theta) is p(r, theta/2 pi); h = gbar o q o p is
+    then continuous and surjective as a composite of surjections, which is all that
+    the construction of the surjective loop uses. (2) The argument that g induces a
+    homeomorphism B^2/partial B^2 -> S^2 said that g is constant on the boundary
+    circle, that its fibre over (0,0,1) is the boundary circle and that it is
+    injective off the boundary circle; that gives injectivity of the induced map and
+    the bijection also needs surjectivity, which was used but not stated. The step
+    now proves that g is onto: for (u,z) in S^2 with z not 1, r = arccos(-z)/pi
+    lies in [0,1) and gives cos pi r = -z and sin pi r = |u|, so x = u r/|u| (and
+    x = 0 when u = 0, where z = -1) maps to (u,z), while z = 1 is the value on the
+    boundary circle. It then states that the fibres of g are the fibres of q, which
+    is what makes the induced map a bijection. Checked against the book: the
+    exercise on printed p. 370, Theorem 44.1 on printed p. 272, Theorem 26.6 on
+    printed p. 167 and Figure 22.2 on printed p. 136; the arithmetic of the
+    inversion formula was worked through in both directions, and the surjectivity
+    computation checked at u = 0 and at z = 1. Not claimed: that the earlier note of
+    2026-11-14 on this card is wrong about anything except the surjectivity it left
+    implicit.
 ---
 
 ::: {.exercise}
@@ -105,18 +131,37 @@ $$
 where $S^2$ is the unit sphere of $\RR^3$. The map $g$ is continuous: the factor
 $\sin\pi\abs x/\abs x$ tends to $\pi$ as $x\to\mathbf 0$, and the third coordinate
 is continuous. It is constant on $\partial B^2$, where $\abs x=1$, with value
-$(0,0,1)$, and its fibre over $(0,0,1)$ is $\partial B^2$. It is injective off
-$\partial B^2$: a point $(u,z)$ of $S^2$ with $z\ne1$ determines $\abs x$ by
-$z=-\cos\pi\abs x$, which is $0$ only for $z=-1$, then $\sin\pi\abs x$ as the
-positive square root of $1-z^2$, and hence $x=u\,\abs x/\sin\pi\abs x$ when
-$z\ne-1$, while $z=-1$ forces $x=\mathbf 0$. Hence
-$g$ induces a continuous bijection $\bar g:B^2/\partial B^2\to S^2$, which is a
-homeomorphism because $B^2/\partial B^2$ is compact and $S^2$ is Hausdorff
-(Theorem 26.6, printed p. 167); the construction is the one pictured in Figure
-22.2 of the book (printed p. 136).
+$(0,0,1)$, and its fibre over $(0,0,1)$ is $\partial B^2$.
 
-Let $e:I^2\to B^2$ be the linear homeomorphism and put
-$h=\bar g\circ q\circ e:I^2\to S^2$. Then $h$ is continuous and surjective, and
+It is also onto. Let $(u,z)\in S^2$. If $z=1$ then $u=\mathbf 0$ and $(u,z)$ is the
+value of $g$ at every point of $\partial B^2$. If $z\ne1$, the number
+$r=(\arccos(-z))/\pi$ lies in $[0,1)$ and satisfies $\cos\pi r=-z$ and
+$\sin\pi r=\sqrt{1-z^2}=\abs u$. If $u\ne\mathbf 0$ then $r>0$, and the point
+$x=u\,r/\abs u$ has $\abs x=r$, so
+$$
+\frac{\sin\pi\abs x}{\abs x}\,x=\frac{\sin\pi r}{r}\cdot\frac{ur}{\abs u}
+=u\,\frac{\sin\pi r}{\abs u}=u,
+\qquad -\cos\pi\abs x=-\cos\pi r=z,
+$$
+that is, $g(x)=(u,z)$; and if $u=\mathbf 0$ then $\sin\pi r=0$, so $r=0$ and
+$z=-1$, which is $g(\mathbf 0)$. Hence every point of $S^2$ is a value of $g$.
+
+It is injective off $\partial B^2$: a point $(u,z)$ of $S^2$ with $z\ne1$
+determines $\abs x$ by the third coordinate, $z=-\cos\pi\abs x$, which is $0$ only
+for $z=-1$, then $\sin\pi\abs x$ as the positive square root of $1-z^2$, and hence
+$x=u\,\abs x/\sin\pi\abs x$ when $z\ne-1$, while $z=-1$ forces $x=\mathbf 0$. So
+the fibres of $g$ are the fibres of $q$, and $g$ induces a continuous bijection
+$\bar g:B^2/\partial B^2\to S^2$, which is a homeomorphism because
+$B^2/\partial B^2$ is compact and $S^2$ is Hausdorff (Theorem 26.6, printed
+p. 167); the construction is the one pictured in Figure 22.2 of the book (printed
+p. 136).
+
+The step needs a continuous surjection $I^2\to B^2$, and not a homeomorphism:
+take $p(s,t)=(s\cos2\pi t,\,s\sin2\pi t)$, which is continuous and onto, the point
+$r(\cos\theta,\sin\theta)$ of $B^2$ being $p(r,\theta/2\pi)$. A linear map of
+$I^2$ would not do, since it carries the square onto a parallelogram. Put
+$h=\bar g\circ q\circ p:I^2\to S^2$. Then $h$ is continuous and surjective, being
+a composite of surjections, and
 $f=h\circ\pi:I\to S^2$ is a continuous map of $I$ into $S^2$ whose image is
 $h(I^2)=S^2$. To make it a loop, take a path $\gamma:I\to S^2$ from $f(1)$ to
 $f(0)$, which exists because $S^2$ is path connected, and put $F(s)=f(2s)$ for
