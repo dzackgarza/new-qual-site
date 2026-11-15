@@ -76,6 +76,18 @@ audit:
     post *Topology by Munkres Chapter 8 | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630)
     answers §50 as well, with its formulas lost; Murayama, dbFin and the ten GitHub repositories listed in
     COMPLAINTS.md have no Chapter 8. Nothing on the card needed correction.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Re-read on issue #144. Step 3 branched on $L\ge\delta/16$ and asked for an integer $q$ strictly between
+    $16L/\delta$ and $32L/\delta$; at $L=\delta/16$ that is the interval $(1,2)$, which contains no integer,
+    and the justification offered, that the interval has length at least 1, is not enough for an open interval.
+    The branch is now taken only for $L>\delta/16$, where the interval has length greater than 1 and does
+    contain an integer, and the case $L\le\delta/16$ is the single interval $q=1$. The mesh bound is stated as
+    $m\le\delta/16$, the length of $J_k$ as $m+\delta/64\le5\delta/64<\delta/8$, and the disjointness of
+    $J_k$, $J_l$ for $\abs{k-l}\ge2$ is drawn from $m>\delta/64$, which holds only when $q\ge2$ and can fail at
+    $q=1$, where no two such indices exist. Nothing else on the card changed.
 ---
 
 ::: {.exercise}
@@ -104,7 +116,7 @@ Note $\eta<\delta$, $2\nu\le\ell/2<\delta$, $2\sigma<\delta$, and $\ell/\eta^2<\
 - one of them, call it $I_0$, is $(y_0-2\sigma,\,y_0+2\sigma)$, and every other $I_i$ is contained either in $(-\infty,\,y_0-\sigma)$ or in $(y_0+\sigma,\,\infty)$, so that a point of $\bar S$ whose second coordinate satisfies $\abs{y-y_0}<\sigma$ lies in exactly one of the $I_i$;
 - $\abs{I_i}<\delta/2$ for every $i$.
 
-Such intervals exist. Suppose first that $L=y_0-2\sigma+1>0$, and take a partition $-1=b_0<b_1<\dots<b_q=y_0-2\sigma$ whose mesh $m$ satisfies $\frac{\delta}{64}<m<\frac{\delta}{16}$: if $L\ge\frac{\delta}{16}$ take $q$ with $\frac{16L}{\delta}<q<\frac{32L}{\delta}$, which exists because that interval of integers has length $\frac{16L}{\delta}\ge1$, and put $b_k=-1+k\frac{L}{q}$ so that $m=\frac{L}{q}\in(\frac{\delta}{32},\frac{\delta}{16})$; if $L<\frac{\delta}{16}$ take $q=1$, so that $m=L<\frac{\delta}{16}$ and there is only one interval. Put $J_k=(b_{k-1}-\frac{\delta}{128},\,b_k+\frac{\delta}{128})$. Then $J_k\cap J_l=\emptyset$ when $\abs{k-l}\ge2$, because $b_{k+1}-b_k=m>\frac{\delta}{64}=\frac{2\delta}{128}$ forces $b_{k+1}-\frac{\delta}{128}>b_k+\frac{\delta}{128}$; each $J_k$ has length less than $\frac{\delta}{16}+\frac{\delta}{64}<\frac{\delta}{8}$; and each $J_k$ is contained in $(-\infty,y_0-\sigma)$, because its right end is at most $(y_0-2\sigma)+\frac{\delta}{128}=y_0-2\sigma+\frac{\sigma}{2}<y_0-\sigma$. Cover $[y_0+2\sigma,1]$ the same way when that interval is nonempty, with the roles of $y_0-\sigma$ and $y_0+\sigma$ exchanged, and add $I_0$; the points of $[-1,1]$ outside $(y_0-2\sigma,y_0+2\sigma)$ are covered by the $J$'s.
+Such intervals exist. Suppose first that $L=y_0-2\sigma+1>0$, and take a partition $-1=b_0<b_1<\dots<b_q=y_0-2\sigma$ whose mesh $m$ satisfies $m\le\frac{\delta}{16}$: if $L>\frac{\delta}{16}$ take $q$ with $\frac{16L}{\delta}<q<\frac{32L}{\delta}$, which exists because that open interval of real numbers has length $\frac{16L}{\delta}>1$ and so contains an integer, and put $b_k=-1+k\frac{L}{q}$ so that $m=\frac{L}{q}\in(\frac{\delta}{32},\frac{\delta}{16})$; if $L\le\frac{\delta}{16}$ take $q=1$, so that $m=L\le\frac{\delta}{16}$ and there is only one interval. Put $J_k=(b_{k-1}-\frac{\delta}{128},\,b_k+\frac{\delta}{128})$. Then $J_k\cap J_l=\emptyset$ when $\abs{k-l}\ge2$: if $q\ge2$ the mesh satisfies $m>\frac{\delta}{64}=\frac{2\delta}{128}$, so $b_{k+1}-\frac{\delta}{128}>b_k+\frac{\delta}{128}$, and if $q=1$ there are no two such indices. Each $J_k$ has length $m+\frac{\delta}{64}\le\frac{5\delta}{64}<\frac{\delta}{8}$; and each $J_k$ is contained in $(-\infty,y_0-\sigma)$, because its right end is at most $(y_0-2\sigma)+\frac{\delta}{128}=y_0-2\sigma+\frac{\sigma}{2}<y_0-\sigma$. Cover $[y_0+2\sigma,1]$ the same way when that interval is nonempty, with the roles of $y_0-\sigma$ and $y_0+\sigma$ exchanged, and add $I_0$; the points of $[-1,1]$ outside $(y_0-2\sigma,y_0+2\sigma)$ are covered by the $J$'s.
 
 For each of these intervals let
 $$
