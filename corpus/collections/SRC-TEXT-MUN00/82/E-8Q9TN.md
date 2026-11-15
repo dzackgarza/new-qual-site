@@ -11,6 +11,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §82 Supplementary Exercise 1(a),(b), printed p. 499. Searched outside the checkout for issue #146;
+    the record is tmp/sources/mse-searches-146.md and the saved thread is tmp/sources/mse-1169500-E-8Q9TN.md,
+    read whole. Part (b), compact Hausdorff, is proved by George Lowther's answer 1186182 (2015-03-12): the
+    refinement lemma, by induction on a finite subcover with normality. That proof is now stated on the card
+    with its URL. Part (a), metrizable, is not proved there: the answer says the Lebesgue number lemma gives
+    it "if X was a metric space", which is the compact metric case only, while the exercise asks for every
+    metrizable X; the printed hint's argument with B(x, 3 eps(x)) is the card's own. The second answer in the
+    thread, 1177304 by WMycroft, is a sketch whose author writes that it "should probably be checked". The
+    card's own proofs of (a) and (b) are unchanged.
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
@@ -46,6 +59,9 @@ $$
 :::
 
 ::: {.solution}
+
+Part (b) is proved by George Lowther, answer 1186182 (https://math.stackexchange.com/a/1186182), posted 2015-03-12 to Math Stack Exchange question 1169500, "The fundamental group of a compact, locally simply connected space is finitely generated" (https://math.stackexchange.com/questions/1169500, asked by user136725 on 2015-02-28), as a lemma stated there in the form needed: for an open cover $\mathcal{U}$ of a compact Hausdorff space there is an open cover $\mathcal{V}$ such that $V_1\cap V_2\ne\varnothing$ forces $V_1\cup V_2\subseteq U$ for some $U\in\mathcal{U}$. His proof is by induction on the number $n$ of members of a finite subcover: for $n>1$ put $\tilde U_2=U_2\cup\cdots\cup U_n$ and choose, by normality of a compact Hausdorff space, open $W_1,W_2$ with $X\setminus U_1\subseteq W_1\subseteq\overline{W}_1\subseteq W_2\subseteq\overline{W}_2\subseteq\tilde U_2$; by induction $\overline{W}_2$ carries an open cover satisfying the condition, and the sets $V\cap W_1$, $V\cap W_2\cap U_1$ for $V$ in that cover, together with $X\setminus\overline{W}_1$, form the required cover of $X$. Part (a) is not proved in that answer: it says only that for a metric space the Lebesgue number lemma gives the result "if $X$ was a metric space", which is the compact metric case, and the exercise asks for every metrizable space. The construction of (b) below is the one the printed hint prescribes, with the sets $B_J$, and the two cover (b).
+
 
 A family $\mathcal{B}$ of open sets is a refinement of $\mathcal{A}$ if each $B \in \mathcal{B}$ is contained in some element of $\mathcal{A}$ (definition of refinement, printed p. 245).
 

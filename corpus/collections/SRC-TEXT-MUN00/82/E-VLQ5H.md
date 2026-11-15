@@ -13,6 +13,21 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §82 Supplementary Exercise 5, printed p. 500. Searched outside the checkout for issue #146; the
+    record is tmp/sources/mse-searches-146.md and the saved threads are tmp/sources/mse-3925195-E-VLQ5H.md and
+    tmp/sources/mse-4917558-E-VLQ5H.md, both read whole. The uncountability is proved by Paul Frost: answer
+    3928674 (2020-11-30) constructs the loop with a prescribed sequence of winding numbers, shows it is
+    continuous because every neighbourhood of the base point contains almost all the circles, and recovers
+    the n-th winding number from the retraction r_n, so that Z^N embeds in pi_1; answer 4917615 (2024-05-16)
+    supplies the continuity at the base point and the homotopy (r_n o gamma) = gamma_n that the first leaves
+    implicit. That argument is now stated on the card with both URLs; the card's own proof is the same
+    injection with the printed hint's zeros and ones in place of the winding numbers. What neither answer
+    addresses is the exercise's other assertion, that the earring is compact, Hausdorff and second countable,
+    which the card proves. Rejected in the search: mse 667035, on the structure of the group.
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 82 Supplementary Exercise 5, printed p. 500. The infinite earring is compact Hausdorff and second countable, and its fundamental group is uncountable, by the retractions onto the circles and an uncountable family of loops. Checked against Example 1 of Section 80 and Corollary 58.6. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
@@ -31,6 +46,13 @@ Let $X$ be the infinite earring (see Example 1 of §80). Show that $X$ is a comp
 :::
 
 ::: {.solution}
+
+The injection argument is Paul Frost's, in his answer 3928674 (https://math.stackexchange.com/a/3928674), posted 2020-11-30 to Math Stack Exchange question 3925195, "Fundamental group of Hawaiian earring is uncountable" (https://math.stackexchange.com/questions/3925195, asked by Ken.Wong on 2020-11-27), and in his answer 4917615 (https://math.stackexchange.com/a/4917615), posted 2024-05-16 to question 4917558, which supplies the continuity check the first leaves to the reader. He writes the loop with winding numbers $(m_n)$ as
+$$
+\psi((m_n))(t)=l_n^{m_n}\bigl(n(n+1)t-n\bigr)\quad\text{for } t\in\Bigl[\tfrac{1}{n+1},\tfrac{1}{n}\Bigr],\qquad \psi((m_n))(0)=p,
+$$
+which is continuous at $p$ because every neighbourhood of $p$ contains all but finitely many of the circles, and he shows that $(r_n)_*[f]$ recovers $m_n$, so that $\psi$ induces an injection $\ZZ^{\NN}\hookrightarrow\pi_1(X,p)$; the second answer's homotopy $(r_n\circ\gamma)\simeq\gamma_n$ is the standard one through the constant path. The card's own proof is that injection with the two winding numbers replaced by the sequence of zeros and ones of the printed hint. Neither answer shows that $X$ is compact Hausdorff with a countable basis, which the exercise also asks for; that is part of the argument below.
+
 
 Let the infinite earring be
 $$

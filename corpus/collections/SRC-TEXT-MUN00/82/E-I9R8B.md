@@ -13,6 +13,18 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §82 Exercise 2, printed p. 499. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md and the saved thread is tmp/sources/mse-2364579-E-I9R8B.md, read whole.
+    Math StackExchange 2364579's answer 2365131 by Birch Bryant treats the cone's failure of local simple
+    connectedness at the image of the limit point by a deformation retraction onto a neighbourhood in the
+    earring, which it states and does not construct, and it takes simple connectedness of the cone from the
+    question; the cone is defined there as (X x I)/(X x 0) and never identified with the subspace of R^3 that
+    the exercise uses. It is a sketch, so nothing of it is transcribed and the card keeps both of its own
+    proofs. Rejected in the search: mse 4059890 and 1104275, which treat the earring itself and not its cone.
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 82 Exercise 2, printed p. 499. The cone on the infinite earring is simply connected but not locally simply connected at the origin. Checked against Example 1 of Section 80 and Theorem 59.3. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
@@ -33,6 +45,9 @@ Show that $C(X)$ is simply connected, but is not locally simply connected at the
 :::
 
 ::: {.solution}
+
+The same thread answers this exercise in part. Birch Bryant's answer 2365131 (https://math.stackexchange.com/a/2365131), posted 2017-07-20 to Math Stack Exchange question 2364579 (https://math.stackexchange.com/questions/2364579), argues that the cone on the earring is not locally simply connected at the image of the limit point: a small neighbourhood of that point "deformation retracts onto a neighbourhood of $x$ in $X$", which is not simply connected. The deformation retraction is asserted and not written, and the cone there is $(X\times I)/(X\times\{0\})$, identified with the subspace of $\RR^3$ that the exercise defines nowhere in the thread; simple connectedness is quoted from the question. The card keeps its own proofs of both halves.
+
 
 Let $X=\bigcup_{n\ge1}C_n$ be the earring of Example 1 of §80 (printed p. 487), the union of the circles $C_n$ of radius $1/n$ through the origin $o$. Let $q:X\times[0,1]\to\RR^3$ be the map $q(x,t)=(1-t)x+t\,p$; its image is $C(X)$ and $q(x,1)=p$ for every $x$.
 

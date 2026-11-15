@@ -13,6 +13,19 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §82 Supplementary Exercise 2, printed pp. 499--500. Searched outside the checkout for issue #146;
+    the record is tmp/sources/mse-searches-146.md. No source was saved. The queries were the Stack Exchange
+    advanced search "regular countable basis semilocally simply connected fundamental group countable" (no
+    hits) and the similar-question search from "Fundamental group of second countable semilocally simply
+    connected space is countable" (15 items). The thread 1169500, whose answer 1186182 proves the compact
+    finite-generation theorem, was read and rejected for this card: its hypothesis is compactness, not a
+    countable basis with regularity, and it concludes finite generation. Thread 4813468 treats the manifold
+    case and proves nothing. The card keeps its own proof, which is the printed outline with a countable
+    cover from the regular second-countable hypothesis.
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 82 Supplementary Exercise 2, printed pp. 499-500. Countability of pi_1 for a regular space with a countable basis, path connected, locally path connected and semilocally simply connected, by the cover-by-open-sets argument of the printed proof. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
