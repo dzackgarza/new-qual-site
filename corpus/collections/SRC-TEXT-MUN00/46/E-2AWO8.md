@@ -26,6 +26,20 @@ audit:
     ball of radius eps <= 1 lies in every B_C(f, eps) because the bounded metric agrees with d there; if X is
     compact then C = X gives equality; and if X is discrete then a compact set is finite, so B_C(f, eps) is the
     finite intersection of pointwise elements. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). The AoPS blog post by cinnamon_e, "Topology by
+    Munkres Chapter 7 | Day 17" (2025-09-10,
+    https://artofproblemsolving.com/community/c3401823h3646977, text at
+    tmp/sources/aops-shooting-star-munkres-ch7-day17.md), answers this exercise at its item 2 of
+    §46, and the extraction dropped every inline formula, so the answer cannot be transcribed; the
+    site answers an automated request with a Cloudflare human check, which is not worked around.
+    Murayama's selection stops at Chapter 4, dbFin has no chapter-7 page, and the Math StackExchange,
+    GitHub and web searches of this pass found no other treatment; they are recorded in the
+    COMPLAINTS.md entry for §43--§50. The card keeps its own proof, which is the proof of Theorem
+    46.7 carried out for the three topologies.
 ---
 
 ::: {.exercise}
