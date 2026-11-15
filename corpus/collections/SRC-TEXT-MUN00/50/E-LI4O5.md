@@ -32,6 +32,21 @@ audit:
     component is then locally m-euclidean and metrizable, hence Hausdorff, locally compact and paracompact; the
     countable cover by compact pieces yields a countable cover by second countable coordinate neighbourhoods,
     whose union of countable bases is a countable basis. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). The Stack Exchange query "locally m-euclidean" returned 3942394,
+    "Each component of metrizable locally euclidean space is a manifold", which is supplementary Exercise 9 of
+    §50 (printed p. 318) verbatim and has no answer, the text kept at tmp/sources/mse-3942394-munkres-50-supp-9.md;
+    the same query returned 4416020 and 2317193, on second countability and paracompactness, which are not this
+    exercise. Nothing located proves it. Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, the
+    ten GitHub repositories of Munkres solutions listed in COMPLAINTS.md stop before §36, and the AoPS post
+    *Topology by Munkres Chapter 8 | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630)
+    answers §50 with its formulas lost. The card's argument is its own: components of a locally euclidean space
+    are open because it is locally path connected; the component is then a connected, locally compact,
+    paracompact space, hence a countable union of compact pieces, which finitely many coordinate neighbourhoods
+    cover, giving a countable basis. Nothing needed correction.
 ---
 
 ::: {.exercise}
