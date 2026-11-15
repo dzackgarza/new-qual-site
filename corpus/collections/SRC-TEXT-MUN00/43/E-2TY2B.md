@@ -28,6 +28,21 @@ audit:
     is the exercise's own assertion; part (d) the standard dense-subset criterion, with the interleaved
     approximation 1/k; part (e) every Cauchy sequence of the dense subspace h(X) converges in Y by part
     (c), so part (d) applies to the complete space Y itself. Nothing on the card needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout for a published solution of this exercise and found none
+    (issue #144). Math StackExchange through the API, site math: the queries "completion metric
+    space Cauchy sequences equivalence classes", "isometric embedding complete metric space
+    Cauchy sequences", "equivalence classes of Cauchy sequences completion" and "completion of a
+    metric space construction" return questions 3254928, 4865381, 604070, 1053685, 2243047 and
+    2671069, and none of them works the five parts of the exercise, 604070 discussing the idea of
+    the construction only. dbFin has no chapter-7 page (404, checked 2026-11-15), and none of the
+    twelve GitHub Munkres repositories named in the COMPLAINTS.md entry for §30--§36 reaches
+    Chapter 7. The card keeps its own proof, which this pass did not re-read; the search is
+    recorded in the COMPLAINTS.md entry for §43--§50 with every query.
+
 ---
 
 ::: {.exercise}
