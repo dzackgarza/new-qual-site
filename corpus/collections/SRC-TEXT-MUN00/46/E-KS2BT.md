@@ -28,6 +28,26 @@ audit:
     form a cover) and each A_i is compact; the restriction map is an isometry onto the closed compatibility
     subspace of the product, each factor is complete when Y is, the product metric is complete, and a closed
     subspace of a complete space is complete. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Math StackExchange 431747, "Construct a metric for the
+    topology of compact convergence on Y^X so that Y^X is complete when (Y,d) is complete and X is
+    sigma-compact" (2013-06-28), is this exercise. Answer 432280 by Daniel Fischer builds the metric
+    sup_n eps_n min{1, sup_{K_n} d(f,g)} on an exhaustion of X by compact sets, proves that it
+    induces the topology of compact convergence in both directions and that its Cauchy sequences
+    converge compactly, and answer 3353044 by tadejsv shows that a space sigma-compact in Munkres'
+    sense is hemicompact, so that the exhaustion catches every compact set: with A_i the compact sets
+    of the definition, K_n the union of the first n, every compact subset of X lies in some K_n
+    because it is covered by finitely many interiors. The card's part (b) is the same construction by
+    the exercise's hint, the embedding into the closed compatibility subspace of the product of the
+    uniform spaces Y^{A_i}, and it uses that hemicompactness step; its part (a) is not in either
+    answer. Nothing needed correction. The AoPS blog post by cinnamon_e, "Topology by Munkres Chapter
+    7 | Day 17" (2025-09-10, https://artofproblemsolving.com/community/c3401823h3646977, text at
+    tmp/sources/aops-shooting-star-munkres-ch7-day17.md), also answers the exercise at its item 10 of
+    §46 with its formulas lost; the queries of this pass are in the COMPLAINTS.md entry for
+    §43--§50.
 ---
 
 ::: {.exercise}
