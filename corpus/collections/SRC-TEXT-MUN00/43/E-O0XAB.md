@@ -61,6 +61,19 @@ audit:
     the balls repaired as the note above records. Nothing of Pedro's answer 375690 is used at
     either step, and the note above that calls diam A = diam of its closure the fact the argument
     needs is wrong for this card, which uses closed balls and no closure of a diameter.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). The AoPS blog post by cinnamon_e, "Topology by
+    Munkres Chapter 6 + 7 | Day 15" (2025-09-08,
+    https://artofproblemsolving.com/community/c3401823h3645909, text at
+    tmp/sources/aops-shooting-star-munkres-ch6-7-day15.md), also answers this exercise, at its item
+    4 of §43. The text is held, but the formulas are not: the extraction drops every inline
+    formula, so the answer reads as the words between blanks and cannot be transcribed or checked,
+    and the card's proof rests on the sources recorded above. The post is recorded here and in the
+    COMPLAINTS.md entry for §43--§50 as located with its formulas unreadable, the site answering an
+    automated request with a Cloudflare human check, which is not worked around.
 ---
 
 ::: {.exercise}
