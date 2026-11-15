@@ -701,7 +701,7 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 - V.4.10, printed **p. 291**: the whole entry is "No algebraic geometry here. If your interested, see Nagata Rational Surfaces I, and proceed by cases" — a citation and no argument.
 - V.4.11, printed **pp. 291–292**: parts (a) and (b) have no entry at all, the page carries "I don't care about group theory", and the starred part (c) is the entry `5.4.12 b.` reading "see above".
 - V.4.12, printed **pp. 292–293**: the entry computes on $\PP^2$ ("Recall $X\approx\PP^2$ which has known cohomology", $H^2(X,\OO_X)=H^0(X,\OO_X(-3))=p_g$) although the cubic surface is $\PP^2$ with six points blown up, so the dimensions it lists are those of $\PP^2$ and the sequence is the wrong one; the closing step then invokes V.4.11 to exclude an effective $-D$, which is not what (4.11) says.
-- V.4.13, printed **pp. 292–294**: part (a) is complete modulo one step — the 16 classes and the Schwarz count $4a^2-6a-4\le0$ are there, but $C^2=-1$ is assumed for a degree-one curve and has to be derived by adjunction. Part (b) stops at "Now use ?.", which stands alone on p. 294 above his 5.4.15 (Hartshorne V.4.14), after the dimension count $15-13=2$ on p. 293; the degree comparison that identifies $X$ with the complete intersection is missing. **Part (b) stays open**: Dolgachev, *Topics in Classical Algebraic Geometry* (27 September 2010), Theorem 8.5.1, printed p. 291 with its proof on pp. 291--292, proves the projective normality (his 8.4.5, printed p. 280), the dimension count $h^0(\OO_X(2))=13$ (his 8.3.1, printed p. 272) and the diagonal form of the two quadrics, and then jumps from $15-13=2$ to "$X$ is the base locus of a pencil" without showing that the quadrics have no common component or that the degree-four complete intersection is $X$ --- the same gap as the entry above. His Lemma 8.3.1 invokes Ramanujam's vanishing theorem by name with no reference; the Lazarsfeld citation for it is in his Lemma 8.1.4's proof, printed p. 248. Part (a) is not in the book either (printed p. 293 uses "the 16 lines on $X$" without the count), while Egbert's part (a) does settle it modulo one step, the adjunction derivation of $C^2=-1$ for a line, and writes $\Pic X$ as $\ZZ^6$ with generators $l,e_1,\dots,e_6$ for a five-point blow-up. The card now says all of this.
+- V.4.13, printed **pp. 292–294**: part (a) is complete modulo one step — the 16 classes and the Schwarz count $4a^2-6a-4\le0$ are there, but $C^2=-1$ is assumed for a degree-one curve and has to be derived by adjunction. Part (b) is closed by Egbert only at "Now use $\star$.", the star attached on p. 293 to $\OO_X(-2K_X)\cong\OO_X(2)$: p. 294 opens "Note that by Ramanujam vanishing and Serre duality, $H^1(X,\OO_X(-2K_X))=0$" and completes the count $h^0=13$ with it, "$15-13=2$" is printed nowhere, and the conclusion is never drawn, so the degree comparison that identifies $X$ with the complete intersection is missing. His Ramanujam citation is bare, the same defect this entry charges to Dolgachev. **Part (b) stays open**: Dolgachev, *Topics in Classical Algebraic Geometry* (27 September 2010), Theorem 8.5.1, printed p. 291 with its proof on pp. 291--292, proves the projective normality (his 8.4.5, printed p. 280), the dimension count $h^0(\OO_X(2))=13$ (his 8.3.1, printed p. 272) and the diagonal form of the two quadrics, and then jumps from $15-13=2$ to "$X$ is the base locus of a pencil" without showing that the quadrics have no common component or that the degree-four complete intersection is $X$ --- the same gap as the entry above. His Lemma 8.3.1 invokes Ramanujam's vanishing theorem by name with no reference; the Lazarsfeld citation for it is in his Lemma 8.1.4's proof, printed p. 248. Part (a) is not in the book either (printed p. 293 uses "the 16 lines on $X$" without the count), while Egbert's part (a) does settle it modulo one step, the adjunction derivation of $C^2=-1$ for a line, and writes $\Pic X$ as $\ZZ^6$ with generators $l,e_1,\dots,e_6$ for a five-point blow-up. The card now says all of this.
 - V.4.14, printed **p. 294**: the entry lists which degree–genus pairs remain after V.4.7, then says "For these remaining rest, I use the method of exc V.4.9 (Read that exercise solution first or this will be nonsense!)", works one case ($d=8$, $g=6$) and ends "Solve for this using sum of 5 squares as in exc V.4.9 and the rest follow similarly". No class is exhibited for the other eight pairs, and the cited method is the V.4.9 entry above.
 - V.4.15, printed **pp. 294–295**: parts (a) and (b) have no entry; part (c) is argued (`5.4.18 c.`); part (d) is the sketch `5.4.19 d.` counting $14+42=56$ and listing eight families for $r=8$ without proving that no other negative curves exist; the starred part (e) is `5.4.17 b.`, "This is Nagata, Rational Surfaces II, corollary to proposition 9, and use (a) of this problem" — a citation.
 - V.4.16, printed **p. 296**: the entry records a parametrization and the blowup description of the 27 lines but no equations of the lines in the Fermat coordinates (the exercise asks for the equations and the incidence relations), and its answer to the automorphism question is "Automorphism group? $E_6$. A proof is in Hirschfeld Finite projective spaces in three dimensions 20.3.1" — the group of the 27-line configuration, not the surface's automorphism group, and a citation.
@@ -2031,8 +2031,9 @@ V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, V.4.7--V.4.16, V.5.5, V.
 
 **V.5.5 on Yang's 5.5.5, re-read; the reason given here before was a misreading.** His entry (Solution
 5.5.5, printed pp. 113--114 of `tmp/sources/lfwin-hartshorne-solutions.pdf`: it opens at the foot of p. 113,
-and the passage that decides it --- $\tilde{\mathfrak e}=\mathfrak e+P$ and "assume $e=e'$. Hence
-$X\cong X'$" --- stands at the head of p. 114, above his 5.5.6, which is Hartshorne V.5.6) is the nearest
+and the passage that decides it --- $\tilde{\mathfrak e}=\mathfrak e+P$ and "assume $\mathfrak e=\mathfrak e'$. Hence
+$X\cong X'$", the symbol being the fraktur divisor class of (2.8.1) and not the integer $e$ --- stands at the
+head of p. 114, above his 5.5.6, which is Hartshorne V.5.6) is the nearest
 thing to a published proof of V.5.5 and it does not close it, but not for
 the reason this file gave. His first half is the printed hint's first part and is right: the formula
 $C'\cdot D'=C\cdot D+ac-a\,\mu_P(D)-c\,\mu_P(C)$ for $C\sim aC_0+bf$ and $D\sim cC_0+df$, the drop
@@ -2133,14 +2134,19 @@ unnamed theorem of 4.18, that the graded ring $R(Z,L)$ is generated in degree 1,
 and its Q.E.D. is on p. 97, where 4.19's heading follows. Every mention in the card's events and remark, and
 in the entry above, now gives p. 95 and pp. 96--97.
 
-**V.5.5, Yang's page range.** His Solution 5.5.5 runs on printed pp. 113--114, not on p. 113 alone: the entry
-opens at the foot of p. 113, and the passage that decides the question --- "If $L=\mathcal L(\mathfrak e)$, for
-any $P\in C_0$, by definition, $\operatorname{elm}_P X$ has $\tilde{\mathfrak e}=\mathfrak e+P$. So we may
-blow-up $X$ and $X'$ more and assume $e=e'$. Hence $X\cong X'$." --- stands at the head of p. 114, above
-his 5.5.6, which is Hartshorne V.5.6, and one sentence follows it there: "So there is a finite sequence of
-elementary transformations which transform $X$ into $X'$." p. 114 therefore carries three sentences of his
-entry, not the two an earlier pass counted. The card's published-solution remark and the entry above now cite
-pp. 113--114 and name p. 114 as the page of the decisive passage.
+**V.5.5, Yang's page range and his typography.** His Solution 5.5.5 runs on printed pp. 113--114, not on
+p. 113 alone: the entry opens at the foot of p. 113, p. 114 opens with the tail of that page's last sentence
+("... we may assume $\mathcal E$ and $\mathcal E'$ are" / "decomposable with $\mathcal E=\OO_C\oplus\mathcal L$
+and $\mathcal E'=\OO_C\oplus\mathcal L'$"), and four whole sentences follow it above his 5.5.6, which is
+Hartshorne V.5.6: "If $L=\mathcal L(\mathfrak e)$, for any $P\in C_0$, by definition, $\operatorname{elm}_P X$
+has $\tilde{\mathfrak e}=\mathfrak e+P$." / "So we may blow-up $X$ and $X'$ more and assume
+$\mathfrak e=\mathfrak e'$." / "Hence $X\cong X'$." / "So there is a finite sequence of elementary
+transformations which transform $X$ into $X'$." Read on the rendered page, both symbols are the fraktur
+divisor class of (2.8.1), not the integer $e$: the line on p. 113 above them, "the new ruled surface
+$\operatorname{elm}_P X$ has $\tilde e=e+1$", is the integer, and p. 114 switches to the class. p. 114
+therefore carries five sentences of his entry, one of them begun on p. 113, and an earlier pass that counted
+two, and then three, undercounted it. The card's published-solution remark and the entry above now cite
+pp. 113--114, name p. 114 as the page of the decisive passage, and quote the fraktur.
 
 ## `SRC-TEXT-HART77` #121: the remaining cards against the MinerU text versions, second pass (2026-11-15)
 
@@ -2152,9 +2158,10 @@ gap in this pass, not a finding.
 `tmp/sources/lfwin-hartshorne-solutions.md` against the printed folios of
 `tmp/sources/lfwin-hartshorne-solutions.pdf` (printed page = PDF page: the footer of PDF p. 105 reads 105);
 Shichijo, Chapter 1 section 2, in `tmp/sources/shitijyou-ch1-section2.md` against the folios of
-`tmp/sources/shitijyou-ch1-section2.pdf`. Nine of the open Chapter V cards and one Chapter I card were read in
-full this pass, and each stops short of the printed requirement for the reason given. No card is closed on
-this reading.
+`tmp/sources/shitijyou-ch1-section2.pdf`; and Egbert's V.4.13 pages on the rendered page of
+`tmp/sources/hartshorne-solutions-egbert.pdf`, its text version not yet being in the tree. Nine of the open
+Chapter V cards and one Chapter I card were read in full this pass, and each stops short of the printed
+requirement for the reason given. No card is closed on this reading.
 
 - **V.4.7** (`P-AGH547GENUSBOUND`), Yang printed pp. 109--110. His upper bound is a complete argument: he
   rewrites $p_a$ in $d$ and $\Sigma b_i$, applies Schwarz as $(\Sigma b_i)^2\le6\Sigma b_i^2$ in the form
@@ -2177,17 +2184,24 @@ this reading.
 - **V.4.9** (`P-AGH549MINGENUS`), Yang printed pp. 110--111. The bound is called "a crazy IMO question" and
   then minimised over a free choice of $b$; neither printed bound is proved, and the passage from
   "$\sum b_i^2$ minimal" to a stated $g$ is not an argument. Open.
-- **V.4.12** (`P-AGH5412KODAIRAVANISH`), Yang printed p. 111. He writes "for any ample divisor $D$, it is very
-  ample by theorem 4.11", which is not what (4.11) says, and the exact sequence
-  $0\to\mathcal L(-D)\to\OO_X\to\mathcal L(D)\to0$, which is not the sequence belonging to a divisor. Open.
+- **V.4.12** (`P-AGH5412KODAIRAVANISH`), Yang printed p. 111. His very-ampleness citation is (4.11), the book's
+  own statement, so that step needs nothing; the defect is the sequence: he writes
+  $0\to\mathcal L(-D)\to\OO_X\to\mathcal L(D)\to0$, where the sequence belonging to a divisor is
+  $0\to\mathcal L(-D)\to\OO_X\to\OO_C\to0$ with $C\in\abs D$, and the cohomology he then computes is that of his
+  own display. Open.
 - **V.4.14** (`P-AGH5414SPACECURVES`), Yang printed p. 112. A nine-row table covers exactly the nine printed
   $(d,g)$ pairs, and every row carries its printed $d$ and $p_a$ (checked row by row here); what is absent is
   the word "nonsingular": no member of any of the nine classes is shown to be nonsingular, and the table
   carries no argument at all. Open.
 - **V.4.15** (`P-AGH5415GENPOSITION`), Yang printed p. 112. (a) and (c) are argued; (d) enumerates the 56 and
   240 classes but does not show that no other irreducible curve has negative self-intersection, which is half
-  of what (d) asks; (e) reads "In the case $r>9$, clearly $C=e_1$ is a line ... So there exists infinitely
-  many line $C$", which is the hint restated. Open.
+  of what (d) asks. His (e) is not a restatement of the hint but an argument: for $C=al-\sum b_ie_i$ a line and
+  $\sigma$ the admissible transformation about $P_1,P_2,P_3$, $\sigma(C)=(a+c)l-c(e_1+e_2+e_3)-\sum b_ie_i$
+  with $c=a-b_1-b_2-b_3$, and from $d=3a-\sum b_i\ge1$ and $\sum b_i\ge3(b_1+b_2+b_3)$ he gets
+  $a>b_1+b_2+b_3$, so $\sigma(C)\cdot l=a+c>a=C\cdot l$ and the degree climbs without bound. Two gaps remain:
+  he labels this "the case $r>9$" where the exercise asks for $r=9$ --- his $\sum b_i\ge3(b_1+b_2+b_3)$ needs
+  $r\ge9$, which $r=9$ satisfies --- and he never shows that $\sigma(C)$ is again an irreducible nonsingular
+  $(-1)$-curve on $X$. Open.
 - **V.4.16** (`P-AGH5416FERMATCUBIC`), Yang printed p. 112. He gives the equations of the 27 lines on the
   Fermat cubic as the three families $x_0+x_3\omega^k=x_1+x_2\omega^j=0$ and its two variants, which is the
   exercise's first request, but no incidence relations and nothing about the automorphism group; the entry
@@ -2198,8 +2212,12 @@ this reading.
   exercise. Open.
 - **V.2.13** (`P-AGH5213ELLSCROLL`), Yang printed p. 105. The count is right ($D\cdot f=1$, $D^2=2n-e$, and
   $h^0(\OO_C(n))+h^0(\OO_C(n-e))=2n-e$, so the image lies in $\PP^{d-1}$), but its very-ampleness step is his
-  own 5.2.12(b), and there the $e=-1$, $b=2$ case computes $h^0(C_0+Bf-Pf)$ as "$1-1=0$" where the sequence
-  gives $h^0(D)-1=1$; a class of degree one on every fibre cannot have $h^0=0$. Open.
+  own 5.2.12(b), and that rests on 5.2.12(a), the $b=1$ case printed on p. 104, where he computes
+  $h^0(C_0+Bf-Pf)$ as "$1-1=0$". The right computation is that
+  $\pi_*\OO(C_0+(B-P)f)$ is indecomposable of rank $2$ and degree $1$ on an elliptic curve, so its $h^0$ is $1$
+  --- Atiyah's classification of rank-two bundles on an elliptic curve --- and the system is base-point-free, as
+  his conclusion needs. (What does not work as a reason is that a class of degree one on every fibre has
+  $h^0>0$: $C_0-nf$ has degree $1$ on each fibre and $h^0=0$ for $n\gg0$.) Open.
 - **I.2.9(b)** (`P-AGH29PROJCLOSURE`), Shichijo Chapter 1 section 2, Exercise 2.9(b), printed p. 7. His (b) is
   the book's own counterexample: $xy-zw\in I_p(\bar T)$ but $xy-zw\notin\langle yw-x^2,zw^2-x^3\rangle$, the
   degree argument being that $a(yw-x^2)+b(zw^2-x^3)$ can only have $x$-degree $\le1$ at $a+bx=0$, which makes

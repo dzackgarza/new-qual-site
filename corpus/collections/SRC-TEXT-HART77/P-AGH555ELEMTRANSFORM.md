@@ -57,12 +57,14 @@ audit:
     Egbert's V.5.5 is one sentence, a cross-reference to his V.2.5(a), on printed
     p. 299 of tmp/sources/hartshorne-solutions-egbert.pdf. Yang Pi-Yeh's Solution
     5.5.5 runs on printed pp. 113--114 of
-    tmp/sources/lfwin-hartshorne-solutions.pdf: it opens at the foot of p. 113
-    and its last three sentences stand on p. 114 above 5.5.6, which is
-    Hartshorne V.5.6 --- the one asserting fraktur-e -> fraktur-e + P "by
-    definition", the one concluding X = X' from e = e', and one more that
-    restates the exercise's conclusion, "So there is a finite sequence of
-    elementary transformations which transform X into X'"; its outline is right and three steps
+    tmp/sources/lfwin-hartshorne-solutions.pdf: it opens at the foot of p. 113,
+    p. 114 opens with the tail of that page's last sentence ("... we may assume
+    E and E' are" / "decomposable with E = O_C + L and E' = O_C + L'"), and four
+    whole sentences follow it above 5.5.6, which is Hartshorne V.5.6 --- the one
+    asserting fraktur-e-tilde = fraktur-e + P "by definition", the one saying "we
+    may blow-up X and X' more and assume fraktur-e = fraktur-e'", the one
+    concluding X = X', and the last, "So there is a finite sequence of elementary
+    transformations which transform X into X'"; its outline is right and three steps
     are missing or
     wrong: the sign of the elementary transform under Hartshorne's e = -deg
     fraktur-e of (2.8.1), the effect of elm_P on the normalized bundle, which he
@@ -76,12 +78,28 @@ audit:
   note: >-
     One sentence of Yang Pi-Yeh's entry, on a reader's report of issue #121,
     re-read on the printed folio of tmp/sources/lfwin-hartshorne-solutions.pdf.
-    The event above called the two sentences at the head of p. 114 his last two;
-    a third follows them, "So there is a finite sequence of elementary
-    transformations which transform X into X'", which restates the exercise's
-    conclusion and is his entry's last sentence before 5.5.6. p. 114 therefore
-    carries three sentences of his entry, not two, and the page range pp. 113--114
-    is unchanged: the entry opens at the foot of p. 113.
+    The event above called the two sentences at the head of p. 114 his last two.
+    Read on the rendered page, p. 114 carries the tail of the sentence begun at
+    the foot of p. 113 ("... we may assume E and E' are" / "decomposable with
+    E = O_C + L and E' = O_C + L'") and then four whole sentences before 5.5.6:
+    the "by definition" sentence, "So we may blow-up X and X' more and assume
+    fraktur-e = fraktur-e'", "Hence X = X'", and "So there is a finite sequence
+    of elementary transformations which transform X into X'". The page range
+    pp. 113--114 is unchanged: the entry opens at the foot of p. 113.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The event above first read "p. 114 therefore carries three sentences of his
+    entry, not two", and that was still an undercount: p. 114 carries the tail of
+    the p. 113 sentence and four whole sentences. Read the same way, the symbols
+    he equates are the fraktur divisor class of Hartshorne (2.8.1) and not the
+    integer e: the print reads "If L = L(e), for any P in C_0, by definition,
+    elm_P X has e-tilde = e + P" and "assume e = e'", with the e's set in
+    fraktur, while the p. 113 line above them, "the new ruled surface
+    elm_P X has e-tilde = e + 1", is the integer invariant. The remark now quotes
+    the fraktur in both places, and its third gap --- that the classes, not the
+    integer, are what must be matched --- is the reading the print supports.
 
 ---
 
@@ -517,9 +535,10 @@ exercise --- says only "Consequence of my proof of exc V.2.5.a". That is a cross
 
 Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.5.5, printed pp. 113--114 of
 `tmp/sources/lfwin-hartshorne-solutions.pdf`, read in `tmp/sources/lfwin-hartshorne-solutions.md` --- the
-entry opens at the foot of p. 113 and its decisive passage, the display
-$\tilde{\mathfrak e}=\mathfrak e+P$ and the conclusion "assume $e=e'$. Hence $X\cong X'$", stands at the
-head of p. 114, followed by its final sentence "So there is a finite sequence of elementary transformations
+entry opens at the foot of p. 113; p. 114 opens with the tail of p. 113's last sentence and then
+carries the decisive passage, the display
+$\tilde{\mathfrak e}=\mathfrak e+P$ and the conclusion "assume $\mathfrak e=\mathfrak e'$. Hence $X\cong X'$",
+followed by its final sentence "So there is a finite sequence of elementary transformations
 which transform $X$ into $X'$" --- is the nearest published argument, and its outline is the right one. He writes the printed hint's formula
 $C'\cdot D'=C\cdot D+ac-a\,\mu_P(D)-c\,\mu_P(C)$ for $C\sim aC_0+bf$ and $D\sim cC_0+df$, which gives
 $C'\cdot D'=C\cdot D-1$ when $a=c=1$ and $P\in C\cap D$; hence $\operatorname{elm}_P X$ at $P\in C_0$ has invariant
@@ -545,7 +564,7 @@ transformation and only the class of the second summand drops by $q$; the new se
 $C_0$, is the image of $\mathcal L(-q)$ and has normal bundle $\mathcal L(-q)$, of degree $-e-1$, which is
 the self-intersection calculation of step [](#section-self-intersection-drops){.pf-ref}.
 
-Third, the choice of divisors is implicit. "We may blow up $X$ and $X'$ more and assume $e=e'$" is not
+Third, the choice of divisors is implicit. "We may blow up $X$ and $X'$ more and assume $\mathfrak e=\mathfrak e'$" is not
 enough: what must be made equal are the classes, and a transformation at $P$ over $q$ subtracts the class
 of $q$, so after $m$ of them at points over $q_1,\dots,q_m$ the class is $\mathfrak e-A$ with
 $A=q_1+\dots+q_m$ effective, and likewise $\mathfrak e'-A'$. The classes agree exactly when

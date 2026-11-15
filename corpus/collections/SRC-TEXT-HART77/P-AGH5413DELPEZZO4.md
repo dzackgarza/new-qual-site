@@ -77,21 +77,51 @@ audit:
     Three citation repairs on a second reader's report of issue #121, each
     re-read in the sources here. (i) The text version of Dolgachev now exists:
     tmp/sources/dolgachev-topics-classical-ag.md is a MinerU extraction of all
-    524 PDF pages, marked in blocks of twenty ("PDF pages 301-320" at the start
-    of printed p. 301), and it is cited beside the PDF here and in the remark.
+    524 PDF pages, marked in blocks of twenty ("PDF pages 301-320" opens at PDF
+    p. 301, which is printed p. 291, where Theorem 8.5.1 stands), and it is
+    cited beside the PDF here and in the remark.
     (ii) Egbert's V.4.13 entry is printed pp. 292--294, not pp. 292--293: his
     heading "V.4.13 16 Lines" and the intersection theory of the blow-up stand on
-    p. 292, the Schwarz count on p. 293, and the part (b) dimension count closes
-    on p. 293 with the single line "Now use ?." alone on p. 294 above his 5.4.15
-    (Hartshorne V.4.14). Located in the pdftotext page render of
+    p. 292, the Schwarz count on p. 293, and p. 293 ends with the dimension count
+    begun there; p. 294 opens "Note that by Ramanujam vanishing and Serre
+    duality, H^1(X, O_X(-2K_X)) = 0." and closes the entry with "Now use star.",
+    the star being the one attached on p. 293 to
+    "O_X(-2K_X) = O_X(2)  star by tensoring the same thing on both sides". So the
+    count 13 is completed on p. 294 by that identification and that vanishing,
+    "15 - 13 = 2" is printed nowhere, and the conclusion is never drawn. The
+    vanishing is Ramanujam's, named with no reference --- the defect this card's
+    remark charges to Dolgachev. Read on the rendered page of
     tmp/sources/hartshorne-solutions-egbert.pdf, whose printed folio is its PDF
-    page number.
+    page number: the text version tmp/sources/hartshorne-solutions-egbert.md was
+    not in the tree when this event was written.
     (iii) The event above said Egbert's part (a) runs "by Schwarz with
     sum b_i = sum b_i^2"; that equation is not his input. He derives
     sum b_i = 3a - 1 and sum b_i^2 = a^2 + 1 from degree and self-intersection,
     applies (sum b_i)^2 <= 5 sum b_i^2, and gets 4a^2 - 6a - 4 <= 0, whence
     a is 1 or 2; sum b_i = sum b_i^2 = 2 at a = 1 and = 5 at a = 2 are
     consequences used to pin the multiplicities. The event now says so.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Two readings corrected on a reader's report of issue #121, both re-read on
+    the rendered page of tmp/sources/hartshorne-solutions-egbert.pdf (its printed
+    folio is its PDF page number) and of
+    tmp/sources/dolgachev-topics-classical-ag.md. (i) The block marker "PDF pages
+    301-320" does not open printed p. 301: it opens PDF p. 301, which is printed
+    p. 291, and Theorem 8.5.1 stands at its head. (ii) Egbert's "Now use star."
+    is not a truncated dimension count. p. 293 carries, in order, the
+    identification "O_X(-2K_X) = O_X(2)  star by tensoring the same thing on both
+    sides", the sequence 0 -> H^0(I_X(2)) -> H^0(O(2)) -> H^0(O_X(2)) -> 0, the
+    count h^0(O(2)) = 15 and the Riemann-Roch count h^0(-2K_X) - h^1(-2K_X) = 13;
+    p. 294 opens "Note that by Ramanujam vanishing and Serre duality,
+    H^1(X,O_X(-2K_X)) = 0." and ends the entry "Now use star.", the star being
+    that identification. So the count closes on p. 294 through that vanishing, and
+    "15 - 13 = 2" appears nowhere: the entry never writes h^0(I_X(2)) = 2 nor draws
+    the conclusion. The vanishing is Ramanujam's, named without a reference, which
+    is exactly what this card's remark charges to Dolgachev's Lemma 8.3.1. The
+    remark and the entry in COMPLAINTS.md now say all of this; the card's own
+    steps, and part (b)'s opening on the card's own proof, are unchanged.
 ---
 
 ::: {.problem}
@@ -441,7 +471,14 @@ transform of the conic); that is the complete list. The one step missing is the 
 for a line it has to be derived, and by adjunction a curve of degree $1$ is rational, so
 $C^2+C\cdot K_X=-2$ with $C\cdot K_X=-\deg C=-1$ gives $C^2=-1$. His Picard group is also written $\ZZ^6$
 with generators $l,e_1,\dots,e_6$ for a blow-up of five points, which cannot be right: the rank is
-$1+5=6$ with $l,e_1,\dots,e_5$ as generators. Part (b) stops at the dimension count
-$h^0(\OO_X(2H))=13$ against $h^0(\OO_{\PP^4}(2))=15$, which stands on p. 293; p. 294 then reads only
-"Now use ?", so it does not reach the intersection either.
+$1+5=6$ with $l,e_1,\dots,e_5$ as generators. Part (b) is set up on p. 293 and
+closed on p. 294 only by "Now use $\star$.", the $\star$ being the one attached
+on p. 293 to $\OO_X(-2K_X)\cong\OO_X(2)$: the count $h^0(\OO_X(2H))=13$ is
+completed there from Ramanujam's vanishing theorem, which he names with no
+reference --- the very defect this entry charges to Dolgachev --- and
+"$15-13=2$" is printed nowhere, so he never states $h^0(\mathcal I_X(2))=2$ nor
+concludes that $X$ is a complete intersection. His surjectivity line, "This ends
+in 0 since $H^1(\PP^4,\OO_{\PP^4}(-2))=0$", cites the vanishing of a group the
+sequence does not need; what the surjectivity requires is
+$H^1(\PP^4,\mathcal I_X(2))=0$.
 :::
