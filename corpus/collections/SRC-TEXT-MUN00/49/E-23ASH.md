@@ -30,6 +30,24 @@ audit:
     step h = delta/2 = 1/(4k), at most one of the intervals [x-h,x] and [x,x+h] contains a vertex in its
     interior, so the other lies in a single linear piece of slope eps/delta, and choosing 2k eps > n and
     4k >= n gives Delta_h f > n with h <= 1/n, while 0 <= f <= eps.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). The only located treatment of Munkres §49 Exercise 2 (printed
+    p. 304) is the AoPS post *Topology by Munkres Chapter 8 | Day 18*
+    (https://artofproblemsolving.com/community/c3401823h3647630), whose answer survives in the extraction as
+    "We may let for if is even and for if is odd", that is, an alternating $\pm\varepsilon$ on a partition,
+    with every formula lost; the site answers an automated request with a human check, which was not worked
+    around, so nothing of it can be read or transcribed. Murayama's selection has no Chapter 8, dbFin has no
+    chapter-7 or chapter-8 page, the ten GitHub repositories of Munkres solutions listed in COMPLAINTS.md stop
+    before §36, and the Stack Exchange queries "nowhere differentiable U_n Munkres" and "continuous function
+    arbitrary small nowhere differentiable dense" returned nothing on the section. The alternating function
+    that post suggests is the card's sawtooth with values $0$ and $\varepsilon$ instead of
+    $\pm\varepsilon$; both need the same mesh condition, which the card writes out: with mesh $\delta$ and
+    step $h=\delta/2$ only one of $[x-h,x]$ and $[x,x+h]$ can contain a vertex, so that interval lies in one
+    linear piece of slope $\varepsilon/\delta$, and choosing $2k\varepsilon>n$ and $4k\ge n$ gives
+    $\Delta_h f>n$ with $h\le1/n$. Nothing needed correction.
 ---
 
 ::: {.exercise}
