@@ -30,6 +30,13 @@ audit:
     p. 383) for what part (c) must prove. One gap was repaired: the ball B in part (a) must contain the compact
     set A as well as the bounded component C, otherwise the identity on the boundary of B is not available and
     r o G restricted to B is not a retraction. Nothing else needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout for a published solution of this exercise (issue #144) and located
+    none; the queries and every source searched are in the COMPLAINTS.md entry for §61--§64. The
+    The card's proof is its own, checked on 2026-11-11 against Lemma 62.1, Lemma 62.2 and Theorem 62.3 as the note above records; it was not re-read in this pass. The printed page of the exercise is 385.
 ---
 
 ::: {.exercise}
