@@ -32,6 +32,19 @@ audit:
     is locally compact, being covered by the interiors of compact coordinate balls, so it imbeds in its
     compact Hausdorff one-point compactification, which is normal and hence completely regular by Theorem 33.1,
     and complete regularity passes to subspaces. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Nothing located proves supplementary Exercise 7 of §50 (printed
+    p. 318). Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, the ten GitHub repositories of
+    Munkres solutions listed in COMPLAINTS.md stop before §36, and the AoPS post *Topology by Munkres Chapter 8
+    | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630) answers §50 with its formulas lost.
+    The Stack Exchange queries of this pass, listed in the COMPLAINTS.md entry for §43--§50, returned no
+    question on the equivalence. The card's two steps are its own: complete regularity gives Hausdorff because
+    it includes $T_1$ and separates a point from a singleton, and conversely a locally $m$-euclidean Hausdorff
+    space is locally compact by a closed ball inside a chart, hence completely regular through its one-point
+    compactification. Nothing needed correction.
 ---
 
 ::: {.exercise}
