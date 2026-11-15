@@ -36,7 +36,20 @@ audit:
     differences are recorded on the card rather than silently imported: Hatcher's statement is surjectivity, not the
     isomorphism of Munkres' n > 2, and the answer's claim that e^n - x deformation retracts onto S^k with k >= 2
     fails at n = 2, where the retract is S^1, which is why the general-position step has to be made for n >= 2
-    separately. The second thread, 2366023, "Change in Fundamental Group by attaching n Cell" (asked 2017-07-21),
+    separately. The same answer carries a second section, "A similar result", recorded here and not
+    transcribed: it argues that a CW complex X and its two-skeleton X^2 have isomorphic fundamental groups, a
+    statement about a whole CW complex and not about one n-cell attached to the closed path-connected subspace A
+    of the exercise, so it does not yield the isomorphism pi_1(A, a) -> pi_1(X, a) even were its argument complete.
+    Its van Kampen step takes the two sets to be A_alpha = D^n - x and A_beta = X^{n-1}, and neither is open in
+    X^n: the preimage in X^{n-1} sqcup D^n of the image of D^n - x is (D^n - x) union phi(S^{n-1}), whose second
+    part is not open in X^{n-1}, and the preimage of X^{n-1} is X^{n-1} sqcup S^{n-1}, whose second part is not
+    open in D^n, while van Kampen (Theorem 70.1, printed p. 426) needs open sets with path connected intersection.
+    It writes the conclusion as the free product pi_1(A_alpha) * pi_1(A_beta) without the normal subgroup that
+    theorem produces, harmless only because pi_1(A_alpha cap A_beta) is trivial, and it quotes pi_1(S^{n-1}) = 0
+    for n >= 2, which holds only for n >= 3; its own case is n >= 3. The induction step it needs at each n >= 3,
+    that attaching an n-cell to X^{n-1} leaves pi_1 unchanged, is the exercise's own statement in the case of a
+    single cell, so the section does not prove the exercise independently of that statement.
+    The second thread, 2366023, "Change in Fundamental Group by attaching n Cell" (asked 2017-07-21),
     answer 2366402 by Daron (2017-07-21) is a sketch for n >= 3 with the cell attached at a point, setting exercises
     for the reader, and is not a proof. Nothing is transcribed; the card keeps its proof of the isomorphism. The
     proof was re-read against Corollary 70.4 (printed p. 432), Theorem 59.3 (printed p. 369) and step 1 of the proof

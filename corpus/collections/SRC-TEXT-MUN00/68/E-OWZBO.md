@@ -42,7 +42,10 @@ audit:
     4884807 by freakish (2024-03-21) argues that Lemma 68.5 should assume that the i_alpha(G_alpha) generate G, with
     the example G = Z x Z, J = {1}, G_1 = Z and i_1 the inclusion of the first factor; that example satisfies the
     existence half of the extension condition but not its uniqueness clause, since h(x,y) = h_1(x) and h'(x,y) =
-    h_1(x) phi(y) both extend h_1, so it is not a counterexample to Lemma 68.5 as printed, whose hypothesis includes
+    h_1(x) phi(y) both extend h_1 for any homomorphism phi: Z -> H with phi(1) non-trivial --- h' is a
+    homomorphism only when phi(y) commutes with h_1(x') for every x' and y, that is, when phi(Z) lies in the
+    centralizer of h_1(Z), which holds for instance when H is abelian, as for H = Z, h_1 = id and phi = id,
+    where h'(x,y) = x + y --- so it is not a counterexample to Lemma 68.5 as printed, whose hypothesis includes
     "Furthermore, h is unique"; what it points at is the defect Frost locates, the appeal to Theorem 68.4 without
     the generation hypothesis. The second thread, 2656140, "Uniqueness of free product" (asked 2018-02-18), answer
     2656257 by Berci (2018-02-19), sketches the same two-homomorphism argument and derives the lemma's uniqueness
