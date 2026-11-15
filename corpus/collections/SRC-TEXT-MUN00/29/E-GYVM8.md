@@ -40,6 +40,21 @@ audit:
     second direction ends at an accumulation point without saying that the lemma of Exercise 9
     turns one into a convergent subnet, which is how the card passes between the two forms. This
     supersedes the 2026-11-10 note above.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The second direction now orders its index set by inclusion, where the transcription had reverse
+    inclusion. The correction is mathematical, and it is dbFin's: under reverse inclusion two
+    disjoint singletons of members of a family with the finite intersection property have no upper
+    bound among the nonempty finite subsets, so the set so ordered is not directed, and the step
+    that follows the construction takes a set containing {A}, which is the inclusion order. The
+    inclusion order is what the argument uses and it is directed, the union of two nonempty finite
+    subsets being one. Munkres' printed hint takes the other route, the collection of all finite
+    intersections of members of the family ordered by reverse inclusion, which is directed by part
+    (c) of the first exercise; that route is available and is not the one on the card. The
+    2026-11-15 note above said that the three corrections it made to dbFin were "none of them
+    mathematical"; that claim was wrong for this one and is corrected here.
 ---
 
 ::: {.exercise}
@@ -67,7 +82,7 @@ Let $(x_\alpha)_{\alpha \in J}$ be a net. For $\alpha \in J$ put $B_\alpha = \th
 If every net in $X$ has an accumulation point, then $X$ is compact.
 
 ::: pf-proof
-Let $\mathcal{A}$ be a collection of closed subsets of $X$ with the finite intersection property; it suffices to show $\bigcap \mathcal{A} \ne \varnothing$. Let $K$ be the set of nonempty finite subsets of $\mathcal{A}$, ordered by reverse inclusion, a directed set because the union of two finite subsets is one. For $\alpha \in K$ the set $\bigcap_{A \in \alpha} A$ is a finite intersection of members of $\mathcal{A}$, hence nonempty; choose $x_\alpha$ in it. By hypothesis the net $(x_\alpha)$ has an accumulation point $x$. Let $A \in \mathcal{A}$ and let $U$ be a neighborhood of $x$. Since $x$ is an accumulation point and $\{A\} \in K$, there is $\alpha \in K$ with $\{A\} \subset \alpha$ and $x_\alpha \in U$. Then $x_\alpha \in \bigcap_{B \in \alpha} B \subset A$, so $U \cap A \ne \varnothing$. Thus $x$ lies in the closure of $A$, which is $A$; as $A$ was arbitrary, $x \in \bigcap \mathcal{A}$.
+Let $\mathcal{A}$ be a collection of closed subsets of $X$ with the finite intersection property; it suffices to show $\bigcap \mathcal{A} \ne \varnothing$. Let $K$ be the set of nonempty finite subsets of $\mathcal{A}$, ordered by inclusion, a directed set because the union of two finite subsets is a finite subset containing both. For $\alpha \in K$ the set $\bigcap_{A \in \alpha} A$ is a finite intersection of members of $\mathcal{A}$, hence nonempty; choose $x_\alpha$ in it. By hypothesis the net $(x_\alpha)$ has an accumulation point $x$. Let $A \in \mathcal{A}$ and let $U$ be a neighborhood of $x$. Since $x$ is an accumulation point and $\{A\} \in K$, there is $\alpha \in K$ with $\{A\} \subset \alpha$ and $x_\alpha \in U$. Then $x_\alpha \in \bigcap_{B \in \alpha} B \subset A$, so $U \cap A \ne \varnothing$. Thus $x$ lies in the closure of $A$, which is $A$; as $A$ was arbitrary, $x \in \bigcap \mathcal{A}$.
 :::
 
 :::
