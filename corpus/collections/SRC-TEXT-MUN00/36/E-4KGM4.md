@@ -69,12 +69,31 @@ audit:
     D that lie below omega_1, and exhibits the nonempty open interval (beta, omega_1), which misses D
     because omega_1 is not one of its points. The eight guaranteed properties and the other
     exclusions are unchanged, and were not re-read in this pass.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Three defects reported by a reader of this card, checked against the book before changing
+    anything. (a) The exclusion of properties 13 and 17 was drawn from Exercise 30.5(a), "every
+    metrizable space with a countable dense subset has a countable basis", whose hypothesis the
+    sentence before it has just denied: [0, omega_1] has no countable dense subset. The step now uses
+    only what is available without that hypothesis -- a metrizable space is first countable, the balls
+    B(x, 1/n) forming a countable basis at x (§21, printed p. 130), and a second countable space is
+    first countable, its basis elements containing a point forming a countable basis there (§30,
+    printed p. 190) -- so that failing first countability at omega_1 excludes 13 and 17. (b) The
+    argument that [0, omega_1] is not first countable at omega_1 went straight from the boundedness of
+    a countable set of ordinals to the local-base conclusion; it now says that every neighbourhood of
+    omega_1 contains a final segment and that the final segment above the supremum of countably many
+    such steps contains none of countably many neighbourhoods. (c) The statement said the properties
+    are "listed in Exercise 1"; Munkres prints the list at the head of the Supplementary Exercises,
+    before Exercise 1, on printed p. 228. The table, the Cantor set paragraph and the remaining
+    exclusions were re-read and kept.
 
 ---
 
 ::: {.exercise}
 
-Consider the seventeen properties listed in Exercise 1 of the Supplementary Exercises (Review of the Basics).
+Consider the seventeen properties listed at the head of the Supplementary Exercises (Review of the Basics), printed p. 228.
 
 Which of these properties does a compact Hausdorff space have?
 :::
@@ -97,5 +116,5 @@ The remaining nine properties are not guaranteed, and two spaces exclude all of 
 
 **The Cantor set** $C \subset [0,1]$, Exercise 27.6, is compact Hausdorff. It is totally disconnected, Exercise 27.6(a), and has no isolated points, Exercise 27.6(d), so no point of it has a connected neighbourhood: a connected neighbourhood of $x$ would be a connected set containing $x$, hence the point $x$ itself, and $\{x\}$ is not open. This excludes connectedness, path connectedness, local connectedness and local path connectedness — properties 1 to 4. A path connected space is connected and a locally path connected space is locally connected, so the two path entries follow as well.
 
-**The ordinal interval** $\overline S_\Omega = [0,\omega_1]$ is compact Hausdorff: it is the one-point compactification of $S_\Omega$, Exercise 29.7 with Theorem 29.1. It is not first countable at $\omega_1$, since the supremum of countably many ordinals below $\omega_1$ is again below $\omega_1$, so no countable family of neighbourhoods of $\omega_1$ is a local base. It is not separable: a countable set of ordinals below $\omega_1$ is bounded, so if $D$ is countable and $\beta$ bounds the ordinals of $D$ that lie below $\omega_1$, then $\beta < \omega_1$ and the nonempty open interval $(\beta, \omega_1)$ misses $D$, the point $\omega_1$ itself not lying in it; so $D$ is not dense. A space with a countable dense subset has a countable basis when it is metrizable, Exercise 30.5(a), and a space with a countable basis is first countable, so $\overline S_\Omega$ is neither second countable nor metrizable, which is properties 13 and 17. It is not locally metrizable either: a neighbourhood of $\omega_1$ contains a final segment $(\alpha,\omega_1]$, which is not first countable at $\omega_1$ and so is not metrizable, property 16. That leaves no unaccounted property, and the count is eight guaranteed and nine not.
+**The ordinal interval** $\overline S_\Omega = [0,\omega_1]$ is compact Hausdorff: it is the one-point compactification of $S_\Omega$, Exercise 29.7 with Theorem 29.1. It is not first countable at $\omega_1$: every neighbourhood of $\omega_1$ contains a final segment $(\alpha,\omega_1]$, the supremum of countably many ordinals below $\omega_1$ is again below $\omega_1$, and the final segment above that supremum contains none of countably many such neighbourhoods, so no countable family of them is a local base. It is not separable: a countable set of ordinals below $\omega_1$ is bounded, so if $D$ is countable and $\beta$ bounds the ordinals of $D$ that lie below $\omega_1$, then $\beta < \omega_1$ and the nonempty open interval $(\beta, \omega_1)$ misses $D$, the point $\omega_1$ itself not lying in it; so $D$ is not dense. A metrizable space is first countable, the balls $B(x,1/n)$ forming a countable basis at $x$ (§21), and a second countable space is first countable, its basis elements containing a point forming a countable basis there (§30). Since $\overline S_\Omega$ has no countable basis at $\omega_1$, it is neither second countable nor metrizable, which is properties 13 and 17. It is not locally metrizable either: a neighbourhood of $\omega_1$ contains a final segment $(\alpha,\omega_1]$, which is not first countable at $\omega_1$ and so is not metrizable, property 16. That leaves no unaccounted property, and the count is eight guaranteed and nine not.
 :::
