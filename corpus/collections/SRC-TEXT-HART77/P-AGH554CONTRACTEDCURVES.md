@@ -58,7 +58,7 @@ audit:
     greater generality: for a bunch of curves on a nonsingular surface contracted
     to points by a projective birational morphism f : Y -> X to any surface, the
     matrix (Gamma_i Gamma_j) is negative definite.
-    Read in tmp/sources/reid-chapters.md, the MinerU extraction of the whole
+    Read in tmp/sources/reid-chapters-algebraic-surfaces.md, the MinerU extraction of the whole
     paper, which marks blocks of twenty PDF pages; that paper's folios agree with
     its PDF pages, and the theorem was checked on pp. 29--31 of
     tmp/sources/reid-chapters-algebraic-surfaces.pdf, whose pdftotext render
@@ -86,7 +86,7 @@ audit:
   date: 2026-11-15
   note: >-
     Citation corrected on a reader's report, and re-checked in the replaced text
-    version (tmp/sources/reid-chapters.md, the whole paper, with its folios
+    version (tmp/sources/reid-chapters-algebraic-surfaces.md, the whole paper, with its folios
     checked against tmp/sources/reid-chapters-algebraic-surfaces.pdf). Reid is
     cited here as arXiv:alg-geom/9602006v1, a draft of the notes submitted to the
     1993 volume of the IAS/AMS Park City lecture notes series, and not as the MSJ
@@ -109,7 +109,7 @@ audit:
   note: >-
     Page correction, on a reader's report of issue #121: the event above said
     Reid's Theorem 4.17 begins on printed p. 95. Read again in
-    tmp/sources/reid-chapters.md and located on the printed folios of
+    tmp/sources/reid-chapters-algebraic-surfaces.md and located on the printed folios of
     tmp/sources/reid-chapters-algebraic-surfaces.pdf with pdftotext as a page
     locator: printed p. 93 carries the Contraction Theorem (Artin), which is the theorem of
     Section 4.15 and not of 4.16 (4.16 is headed "Proof of Theorem"), Section
@@ -129,7 +129,7 @@ audit:
     printed p. 94, the proof of part (1) lies wholly on printed p. 95 and ends
     "so mult(P in X) = -Z^2 follows" with no Q.E.D., and the proof of part (2)
     runs on printed pp. 96--97. Read in
-    tmp/sources/reid-chapters.md and located on the printed folios of
+    tmp/sources/reid-chapters-algebraic-surfaces.md and located on the printed folios of
     tmp/sources/reid-chapters-algebraic-surfaces.pdf with pdftotext as a page
     locator: p. 92 carries "4.15. Contractibility of a rational bunch of curves",
     p. 93 opens with the running head "4.16. Proof of Theorem" and carries the
@@ -161,7 +161,7 @@ audit:
   date: 2026-11-15
   note: >-
     One page fact of Reid's §4.17 and §4.18, on a third reader's report of issue
-    #121, re-read here in tmp/sources/reid-chapters.md and on the printed folios
+    #121, re-read here in tmp/sources/reid-chapters-algebraic-surfaces.md and on the printed folios
     of tmp/sources/reid-chapters-algebraic-surfaces.pdf. Printed p. 96 opens with
     the sentence "If V itself is a normal variety, this condition is called
     projective normality", which continues the paragraph of 4.18 begun on p. 95;
@@ -174,6 +174,16 @@ audit:
     p. 95, before "Proof of Theorem 4.17, (1)". Nothing else in the citation
     changes: part (1) is proved on p. 95 and part (2) on pp. 96--97, its Q.E.D. on
     p. 97 above the heading of 4.19.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Citation repointed. The whole-paper MinerU extraction now stands beside the
+    PDF under the PDF's own stem, tmp/sources/reid-chapters-algebraic-surfaces.md,
+    and every reference in this card's events and remark now names that file.
+    The earlier events were written against the byte-identical copy
+    tmp/sources/reid-chapters.md (md5 78b2b6692c5b9d22c6ab793b0fe5132d for both),
+    which is the name those readings were taken under; no reading changed.
 ---
 
 ::: {.problem}
