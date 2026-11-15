@@ -26,6 +26,22 @@ audit:
     compact closure inside g^{-1}(U), finitely many of which cover f(C); their union V has compact closure in
     g^{-1}(U), so S(C,V) x S(closure V, U) is a neighbourhood of (f,g) mapped into S(C,U) by composition.
     Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Math StackExchange 832519, "Munkres page 289 #7"
+    (2014-06-13), is this exercise, and its accepted answer 832867 by Daniel Fischer supplies the step
+    the hint leaves open: for the compact set K = f(C) inside the open set W = g^{-1}(U), each y in K
+    has a compact neighbourhood contained in W, since Y is locally compact Hausdorff; finitely many
+    interiors V_y cover K, and V their union has closure in W. That is step 1 of the card, and the
+    card's argument agrees with it, including the use of local compactness through the existence of a
+    compact neighbourhood inside a given open set. Nothing needed correction. The AoPS blog post by
+    cinnamon_e, "Topology by Munkres Chapter 7 | Day 17" (2025-09-10,
+    https://artofproblemsolving.com/community/c3401823h3646977, text at
+    tmp/sources/aops-shooting-star-munkres-ch7-day17.md), also answers the exercise at its item 7 of
+    §46 with its formulas lost; the queries of this pass are in the COMPLAINTS.md entry for
+    §43--§50.
 ---
 
 ::: {.exercise}
