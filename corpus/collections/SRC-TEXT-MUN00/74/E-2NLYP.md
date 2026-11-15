@@ -11,6 +11,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §74 Exercise 1, printed p. 453. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md. Nothing was saved for this card. The queries were the Stack Exchange
+    advanced search "Munkres presentation fundamental group projective plane torus connected sum" (no hits)
+    and the similar-question search from "Fundamental group of the connected sum of projective plane and
+    torus" (15 items); of the threads returned, 358724 asks only for the classification of P^2#T as 3P^2 and
+    1416513 is about pi_1(P^2#P^2) and answers with a hint, so neither carries a proof of this exercise. The
+    GitHub search "munkres topology solutions" and its variants returned fourteen repositories, none
+    reaching Chapter 12. The card keeps its own proof, re-read here: the word it presents,
+    a^2 b c b^{-1} c^{-1}, is the scheme aabc b^{-1}c^{-1} that the book itself gives for P^2#T on printed
+    p. 453, and the presentation is Theorem 74.2 (printed p. 451) with Theorem 70.1 at the common boundary
+    circle. What the search did not produce: a published proof of this exercise.
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29

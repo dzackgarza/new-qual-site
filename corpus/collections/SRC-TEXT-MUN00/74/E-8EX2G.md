@@ -11,6 +11,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §74 Exercise 5, printed p. 454. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md and the saved thread is tmp/sources/mse-1039819-E-8EX2G.md, read whole.
+    The only answer in it that addresses this identification is John Hughes' 1041446
+    (https://math.stackexchange.com/a/1041446), which shows P^2 minus a disc to be a Möbius band by a figure:
+    a disc removed from the square model of P^2 so that it meets both identified edges, the surviving part
+    bent and glued with a reversal. It writes no map and no fibre computation, so the card keeps the explicit
+    homeomorphism and fibre argument it had, and the figure is now recorded in the solution as the picture of
+    those steps. Rejected in the search: mse 1151501 (a tubular neighbourhood of P^1 in P^2, not the
+    complement of a disc) and mse 1876529 (a question about terminology).
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
@@ -85,6 +98,8 @@ Conversely, $\Phi(0, s) = \Phi(\pi, 2 - s)$ for every $s$, by the two formulas.
 ::: pf-qed
 By step [](#fibres){.pf-ref}, $\Phi$ identifies exactly the points $(0, s) \sim (\pi, 2 - s)$, so it induces a continuous bijection $M \to A/{\sim}$.
 $M$ is compact and $A/{\sim} \cong Y \subset P^2$ is Hausdorff by step [](#annulus){.pf-ref}, so this bijection is a homeomorphism, and $M \cong P^2 \setminus U$.
+
+The same identification is made, without a formula, in John Hughes' answer 1041446 (https://math.stackexchange.com/a/1041446) to Math StackExchange question 1039819: $P^2$ is drawn as a square with the antipodal identifications of its boundary, a disc is removed that "hangs over" the edge so that the removed boundary meets each of the two identified edges, and the surviving part of the square is bent and glued into a band whose two ends are joined with a reversal. That figure is the picture of the map $\Phi$ of step [](#map){.pf-ref} followed by the identification of $A/{\sim}$ with the band; the argument there locates the homeomorphism and does not produce one, which is what the steps above supply.
 :::
 
 :::
