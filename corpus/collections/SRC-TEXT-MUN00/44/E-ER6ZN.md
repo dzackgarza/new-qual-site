@@ -42,6 +42,23 @@ audit:
     the origin, which this batch's transcription of that card no longer carries; the reparametrization is
     now written out, and the pasting cites Exercise 18.9(c), the locally finite closed cover form of the
     pasting lemma, which the card had invoked without a reference.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Math StackExchange 74766, "Is [0,1]^\omega a
+    continuous image of [0,1]?" (2011-10-22), carries the proof of part (a) that the card states:
+    answer 74779 by user17182 writes R as the union of the intervals [-n,n], so that a continuous
+    surjection would write R^\omega as a union of compact subspaces f([-n,n]), and that is
+    impossible because the projection pi_n of the n-th compact piece is a bounded subset of R and
+    a point can be chosen outside each of them. The card's part (a) is this argument, and it is
+    now recorded as its source; parts (b) and (c) have no published treatment on that page or in
+    the other searches listed in the COMPLAINTS.md entry for §43--§50, and remain the card's own.
+    The exercise number is corrected here: this is §44 Exercise 3 in the book's numbering, not
+    Exercise 2 as the note above has it, Exercise 2 being the map R -> R^n. The printed page,
+    275, is right. Nothing else on the card was changed, and its parts (b) and (c) were not
+    re-read in this pass.
+
 ---
 
 ::: {.exercise}
