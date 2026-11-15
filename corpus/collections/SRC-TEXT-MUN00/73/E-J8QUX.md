@@ -23,6 +23,19 @@ audit:
     through the closed map. Metrizability then follows from Theorem 34.1 (printed p. 215), the space being
     compact Hausdorff hence regular. Checked against Exercise 2 of this section (printed p. 445) for
     compactness and Hausdorffness.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144) for §73 Exercise 4 (printed p. 445); queries and sets are in the
+    COMPLAINTS.md entry for §66--§73 of SRC-TEXT-MUN00. Query used: "two-dimensional CW complex metrizable
+    perfect map Munkres exercise 73.4 quotient space compact Hausdorff solution". Nothing located: Murayama's
+    selection answers §73 Exercise 1 and the Klein bottle exercise, not this one; dbFin has no §73 page, the
+    fourteen repositories stop at Chapter 3, and no course page found treats these sections. Nothing was
+    transcribed. The card's own proof was re-read against Theorem 26.2 (printed p. 165) for compact fibres and
+    Theorem 34.1 (printed p. 215) for the metrization: it proves second countability of X directly from a
+    countable base of E, which is the step the exercise's hint leaves to the reader, and then applies the
+    Urysohn metrization theorem to the compact Hausdorff space X. Nothing changed.
 ---
 
 ::: {.exercise}
