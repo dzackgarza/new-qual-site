@@ -22,6 +22,19 @@ audit:
     corresponding ones in dimension n. The theorem itself does not apply, since it is stated for a two-cell,
     so the argument is carried over and the place where n > 2 enters is the simple connectivity of S^{n-1},
     Theorem 59.3 (printed p. 369). Corollary 70.4 (printed p. 432) is used as in the book's step 2.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144) for §72 Exercise 1 (printed p. 441); queries and sets are in the
+    COMPLAINTS.md entry for §66--§73 of SRC-TEXT-MUN00. Query used: "Munkres exercise if n > 2 homomorphism
+    fundamental group B^n Int B^n bijectively onto X - A induced by inclusion trivial". Nothing located: the
+    search returned the book's own page and course notes on §58, no treatment of this exercise; dbFin has no
+    §72 page, Murayama's selection does not reach §72, the fourteen repositories stop at Chapter 3. Nothing was
+    transcribed. The card's own proof was re-read against Corollary 70.4 (printed p. 432), Theorem 59.3 (printed
+    p. 369) and step 1 of the proof of Theorem 72.1 (printed pp. 439--440), and answers the exercise: for n > 2
+    the inclusion A -> X induces an isomorphism on fundamental groups, and it is n > 2 that makes U cap V and V
+    simply connected. Nothing changed.
 ---
 
 ::: {.exercise}
