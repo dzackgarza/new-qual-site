@@ -32,6 +32,29 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-19
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Part (b) closed on a published proof, for issue #121. M. I. Dolgachev, Topics
+    in Classical Algebraic Geometry (27 September 2010), the complete 524-page
+    book in tmp/sources/dolgachev-topics-classical-ag.pdf with printed page =
+    PDF page minus ten, states and proves at Theorem 8.5.1, printed p. 291 with
+    the proof on pp. 291--292, that an anticanonical model of a weak Del Pezzo
+    surface of degree 4 is a complete intersection of two quadrics in P^4,
+    reducible to the diagonal pair sum t_i^2 = sum a_i t_i^2 with distinct a_i.
+    Read that proof: the projective normality is his Theorem 8.4.5, printed
+    p. 280, the dimension h^0(O_X(2)) = 13 his Lemma 8.3.1, printed p. 272, the
+    pencil then has five singular members by the discriminant count, and the
+    five singular points of those quadrics are the coordinate points. The
+    exercise's surface is that model, the blow-up of five points of P^2
+    anticanonically embedded in P^4 with K^2 = 4. His proof quotes Ramanujam's
+    vanishing theorem in Lemma 8.3.1 and cites it as Lazarsfeld, Positivity in
+    Algebraic Geometry I, Theorem 4.3.1; the card's own h^0 computation is
+    Riemann-Roch on the blow-up and does not need it, so the card's proof and
+    his agree. Part (a) is not covered: printed p. 293 uses "the 16 lines on X"
+    without proving the count, so the card's own count stands for (a). Egbert's
+    entry, cited before, stops in part (b) at the dimension count.
 ---
 
 ::: {.problem}
@@ -337,6 +360,30 @@ Steps [](#sixteen-lines-total){.pf-ref} and [](#no-other-lines){.pf-ref} prove p
 :::
 :::
 
-::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.13, printed pp. 292--293 (part (a) at p. 292: the blowup intersection table, the 16 listed classes, and the Schwarz count $4a^2-6a-4\le0$; part (b) at p. 293: $h^0(\OO_X(2H))=13$ against $h^0(\OO_{\PP^4}(2))=15$).
+::: {.remark title="Published solutions"}
+M. I. Dolgachev, *Topics in Classical Algebraic Geometry* (27 September 2010), read in
+`tmp/sources/dolgachev-topics-classical-ag.pdf`, whose printed page is its PDF page minus ten, §8.5.1,
+Theorem 8.5.1, printed p. 291 with its proof on pp. 291--292, is a published complete proof of part (b).
+The theorem: an anticanonical model $X$ of a weak Del Pezzo surface $S$ of degree $4$ is a complete
+intersection of two quadrics in $\PP^4$, projectively normal by his Theorem 8.4.5 (printed p. 280), its
+$h^0(\OO_X(2))=13$ by his Lemma 8.3.1 (printed p. 272), the pencil of quadrics through it having exactly
+five singular members by the discriminant count, after which coordinates with the five singular points of
+those quadrics as the coordinate points put the two equations in the diagonal form
+$$
+\sum_{i=0}^{4}t_i^2=\sum_{i=0}^{4}a_it_i^2=0,\qquad a_i\ne a_j\ (i\ne j).
+$$
+The surface of the exercise is that model: the blow-up of five points of $\PP^2$ embedded by
+$\abs{-K}$ in $\PP^4$, with $K^2=9-5=4$, so his hypotheses hold and the card is closed on it for part (b). His
+proof's one outside input is Ramanujam's vanishing theorem, quoted in the proof of Lemma 8.3.1 and cited
+there as Lazarsfeld, *Positivity in Algebraic Geometry* I, Theorem 4.3.1; the card's own step
+[](#h0-two-h-thirteen){.pf-ref} reaches the same $h^0=13$ by Riemann--Roch on the blow-up. Part (a), the
+sixteen lines, is not proved there: his §8.5.2 uses "the 16 lines on $X$" at printed p. 293 without an
+argument for the count, so part (a) rests on the card's steps
+[](#sixteen-lines-total){.pf-ref} and [](#no-other-lines){.pf-ref}.
+
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.13, printed pp. 292--293, is
+incomplete in both parts: part (a) at p. 292 lists the 16 classes and counts $4a^2-6a-4\le0$ but does not
+exclude a class with three distinct intersection patterns, and part (b) at p. 293 stops at the dimension
+count $h^0(\OO_X(2H))=13$ against $h^0(\OO_{\PP^4}(2))=15$ without the degree comparison that identifies
+$X$ with the intersection.
 :::

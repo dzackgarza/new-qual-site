@@ -701,7 +701,7 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 - V.4.10, printed **p. 291**: the whole entry is "No algebraic geometry here. If your interested, see Nagata Rational Surfaces I, and proceed by cases" — a citation and no argument.
 - V.4.11, printed **pp. 291–292**: parts (a) and (b) have no entry at all, the page carries "I don't care about group theory", and the starred part (c) is the entry `5.4.12 b.` reading "see above".
 - V.4.12, printed **pp. 292–293**: the entry computes on $\PP^2$ ("Recall $X\approx\PP^2$ which has known cohomology", $H^2(X,\OO_X)=H^0(X,\OO_X(-3))=p_g$) although the cubic surface is $\PP^2$ with six points blown up, so the dimensions it lists are those of $\PP^2$ and the sequence is the wrong one; the closing step then invokes V.4.11 to exclude an effective $-D$, which is not what (4.11) says.
-- V.4.13, printed **pp. 292–293**: part (a) is complete (the 16 classes and the Schwarz count $4a^2-6a-4\le0$). Part (b) stops at "Now use ?." after the dimension count $15-13=2$; the degree comparison that identifies $X$ with the complete intersection is missing.
+- V.4.13, printed **pp. 292–293**: part (a) is complete (the 16 classes and the Schwarz count $4a^2-6a-4\le0$). Part (b) stops at "Now use ?." after the dimension count $15-13=2$; the degree comparison that identifies $X$ with the complete intersection is missing. **Part (b) is since closed on a published proof**: Dolgachev, *Topics in Classical Algebraic Geometry* (27 September 2010), Theorem 8.5.1, printed p. 291 with its proof on pp. 291--292, is that degree comparison's theorem in full, and the card now cites it.
 - V.4.14, printed **p. 294**: the entry lists which degree–genus pairs remain after V.4.7, then says "For these remaining rest, I use the method of exc V.4.9 (Read that exercise solution first or this will be nonsense!)", works one case ($d=8$, $g=6$) and ends "Solve for this using sum of 5 squares as in exc V.4.9 and the rest follow similarly". No class is exhibited for the other eight pairs, and the cited method is the V.4.9 entry above.
 - V.4.15, printed **pp. 294–295**: parts (a) and (b) have no entry; part (c) is argued (`5.4.18 c.`); part (d) is the sketch `5.4.19 d.` counting $14+42=56$ and listing eight families for $r=8$ without proving that no other negative curves exist; the starred part (e) is `5.4.17 b.`, "This is Nagata, Rational Surfaces II, corollary to proposition 9, and use (a) of this problem" — a citation.
 - V.4.16, printed **p. 296**: the entry records a parametrization and the blowup description of the 27 lines but no equations of the lines in the Fermat coordinates (the exercise asks for the equations and the incidence relations), and its answer to the automorphism question is "Automorphism group? $E_6$. A proof is in Hirschfeld Finite projective spaces in three dimensions 20.3.1" — the group of the 27-line configuration, not the surface's automorphism group, and a citation.
@@ -1686,7 +1686,8 @@ being covered by Stacks tag 0BYA and by Shichijo's elimination read in $k$),
 `P-AGH67PUNCTUREDLINE`'s converse, `P-AGH77CONEDEGDROP`, `P-AGH374COHOMCLASS` (III.7.4(b),(d)),
 `P-AGH3117NONALGSHEAF`, `P-AGH3123JUMPINGIDEAL`, IV.2.3(h), IV.3.4(a), IV.3.11(a),
 IV.3.12, IV.4.22, IV.6.9, and the twenty Chapter V cards that the section entries still record as
-uncovered --- V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, the ten of V.4.7--V.4.16,
+uncovered --- V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, the ten of V.4.7--V.4.16 (of which
+V.4.13(b) has since closed on Dolgachev's Theorem 8.5.1),
 V.5.5, and V.6.1, V.6.2. V.5.4 has come off that list, and V.5.1 and V.5.7 with it (below); V.5.6 has
 not, its one candidate source asserting the decisive step rather than proving it.
 Of the two sources this paragraph used to dispose of, one was misdescribed: the NTU set does **not** stop at
@@ -1696,8 +1697,13 @@ under it; its V.4.7 says "for $d=4$, I don't know", its V.4.11 part (c) is empty
 for $d\\ge8$ only, and its V.5.7 ends by concluding $Y^2=0$ from $0\\ge mY^2$, so none of those is a complete
 solution. Yang Pi-Yeh's entries for V.4.7--V.6.2, read in `tmp/sources/lfwin-hartshorne-solutions.md`, are
 fuller than the earlier `pdftotext` render showed and are now the entries this file describes; his V.6.1 and
-V.6.2 remain sketches, and Dolgachev's *Topics in Classical
-Algebraic Geometry* download is a six-page title stub, not the book. V.5.4's part (b) is Reid's Appendix
+V.6.2 remain sketches. Dolgachev's *Topics in Classical Algebraic Geometry* download is **not** a six-page
+title stub, as this file said: `tmp/sources/dolgachev-topics-classical-ag.pdf` is the complete treatise of
+27 September 2010, 524 pages, whose printed page is its PDF page minus ten, with Chapter 8 on Del Pezzo
+surfaces (printed pp. 259--318) and Chapter 9 on cubic surfaces (printed pp. 319--395). Its Theorem 8.5.1
+closes V.4.13(b); its §8.5.2 uses the 16 lines of a quartic Del Pezzo surface without proving the count, so
+V.4.13(a) is untouched; its §9.5 collects $W(E_6)$ and the automorphisms of a cubic surface, and the next
+pass should read it against V.4.11(c) and V.4.16. V.5.4's part (b) is Reid's Appendix
 A.7, whose statement is on printed p. 29 and whose proof is on pp. 30--31, while his Castelnuovo criterion,
 printed p. 10, covers part (a)'s $Y\cong\PP^1$ for the single contracted curve.
 
