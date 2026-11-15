@@ -26,6 +26,22 @@ audit:
     Lemma 45.2 use no property of the target beyond the triangle inequality, and the proof of Lemma 45.3
     uses only compactness of the target. The card's earlier solution was a sketch that named the property
     without locating its two uses; it is now the four steps written out.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout for a published solution of this exercise and found none
+    (issue #144). Math StackExchange through the API, site math, with the queries "Ascoli theorem
+    metric space compact", "Ascoli theorem metric space", "Ascoli Arzela general metric space" and
+    "Arzela Ascoli theorem equicontinuous" returns 1492990, whose only answer is a link to
+    generalisations, 106138 and 1159772, which survey statements of the theorem for metric targets
+    rather than following Munkres' proof step by step. None of them shows that the proof goes
+    through when closed bounded subspaces of the target are compact, which is what the exercise
+    asks. dbFin has no chapter-7 page (404, checked 2026-11-15), and no GitHub Munkres repository
+    named in the COMPLAINTS.md entry for §30--§36 reaches Chapter 7. The card keeps its own proof,
+    which this pass did not re-read; the search is recorded in the COMPLAINTS.md entry for
+    §43--§50 with every query.
+
 ---
 
 ::: {.exercise}
