@@ -31,6 +31,21 @@ audit:
     countable, so it is second countable and hence a manifold; a manifold is locally compact Hausdorff, hence
     regular, and with a countable basis metrizable by Theorem 34.1; a metrizable space is normal; a normal space
     is T1 and separates points from closed sets, so it is Hausdorff. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Nothing located proves the chain of supplementary Exercise 2 of
+    §50 (printed p. 316). Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, the ten GitHub
+    repositories of Munkres solutions listed in COMPLAINTS.md stop before §36, and the AoPS post *Topology by
+    Munkres Chapter 8 | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630) answers §50 with
+    its formulas lost. The Stack Exchange query "locally m-euclidean" returned two neighbouring statements,
+    4416020 (Lindelof and locally euclidean imply second countable) and 2317193 (a Hausdorff locally euclidean
+    space that is not paracompact), neither of which proves any link of the chain. The link with content is
+    (i) implies (ii): compactness turns the euclidean neighbourhoods of the points into a finite family, and a
+    finite union of countable bases is countable, which is what the card proves; (ii) implies (iii) is the
+    Urysohn metrization theorem, (iii) implies (iv) the normality of a metric space, and (iv) implies (v) the
+    $T_1$ axiom, all of which the book has. Nothing needed correction.
 ---
 
 ::: {.exercise}
