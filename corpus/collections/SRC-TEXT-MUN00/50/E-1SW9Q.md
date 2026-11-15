@@ -30,6 +30,22 @@ audit:
     c_1 + b_1 x < c_2 + a_2 x for small x > 0; and the non-normality is the cardinality argument from the
     closed discrete set L, each of whose points has a neighbourhood meeting A in a nonempty open set and hence
     meeting the countable set D of points with rational coordinates. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Nothing located treats supplementary Exercise 6 of §50 (printed
+    pp. 317--318), the Prüfer manifold with its six parts. The Stack Exchange query "Prüfer manifold" returned
+    4566735, on connected locally euclidean Hausdorff topological groups, 3082048, on imbedding theorems for
+    non-second-countable manifolds, and 5022965, on four-manifolds, none of which is this example; a query for
+    the non-normality of a locally euclidean space returned nothing relevant. Murayama's selection has no
+    Chapter 8, dbFin has no chapter-8 page, the ten GitHub repositories of Munkres solutions listed in
+    COMPLAINTS.md stop before §36, and the AoPS post *Topology by Munkres Chapter 8 | Day 18*
+    (https://artofproblemsolving.com/community/c3401823h3647630) answers §50 with its formulas lost. The card
+    proves (a)--(f) itself; the two steps that carry the exercise are that the sets of types (i)--(iii) form a
+    basis, which is where the inequality $c_1+b_1x<c_2+a_2x$ for small $x>0$ is used, and the failure of
+    normality, which is the cardinality argument on the closed discrete set $L$ against the countable set of
+    points with rational coordinates. Nothing needed correction.
 ---
 
 ::: {.exercise}
