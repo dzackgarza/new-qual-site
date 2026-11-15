@@ -34,8 +34,10 @@ audit:
     indices alpha and beta, and directedness gives gamma dominating both; the one correction is
     that dbFin writes "Since J is a net" where the directedness of the index set J is meant. The
     argument also agrees, restricted to two factors and a common index set, with Henno Brandsma's
-    answer to Math StackExchange 3373343 (2019-09-28), whose point is that a common upper bound
-    replaces the maximum. This supersedes the 2026-11-10 note above.
+    answer 3373557 to Math StackExchange 3373343 (question of 2019-09-28), whose point is that a
+    common upper bound replaces the maximum: it writes that writing max is an error and that a
+    common upper bound of the finitely many indices is all that is available. This supersedes the
+    2026-11-10 note above.
 ---
 
 ::: {.exercise}
