@@ -46,6 +46,18 @@ audit:
     around. The card's table is its own work, re-derived against Munkres' theorems as its earlier
     note records, and this pass did not re-read it; the search is recorded in the COMPLAINTS.md
     entry for §30--§36 with every query.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Compared with the published answer key by cinnamon_e, "Topology by Munkres Chapter 4 | Day 13"
+    (AoPS blog shooting star, 2025-09-05,
+    https://artofproblemsolving.com/community/c3401823h3644066, text at
+    tmp/sources/aops-shooting-star-munkres-ch4-day13.md), whose answer to Exercise 4 is that
+    passing to a subspace preserves 8-10, 12-13 and 16-17, passing to a closed subspace preserves
+    5-14 and 16-17, and passing to an open subspace preserves 3-4, 7-10, 12-13 and 15-17. The
+    card's three columns are those three sets, entry by entry; the card and the key agree, and the
+    key is now cited on the card.
 
 ---
 
