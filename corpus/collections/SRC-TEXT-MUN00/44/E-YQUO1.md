@@ -44,6 +44,24 @@ audit:
     Theorem 23.3 for their union over a common point and Theorem 23.4 for the closure, an argument the
     card now writes out in place of the bare appeal it made before), and weak local connectedness from the
     basis of products of connected intervals, connected for the same reason.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). For part (a), Math StackExchange 2594189, "Peano
+    space is a continuous image of the unit interval I" (2018-01-06), has Henno Brandsma's answer
+    2594343 proving compactness, connectedness, local connectedness and metrizability of such an
+    image by citing Willard's Theorems 17.7, 26.3, 27.12 and Corollary 23.2, not by proving them
+    from a text at hand, so it is a pointer rather than a proof and is not transcribed. For part
+    (b), answer 74824 by GEdgar to Math StackExchange 74766 (2011-10-22) constructs a continuous
+    surjection I -> I^\omega from a continuous surjection onto I^2 by composing components, which
+    is what part (b) asks for once the Hahn--Mazurkiewicz theorem is assumed, and the card's own
+    part (b) neither cites nor is that construction. No published treatment of either part against
+    Munkres' numbering was located: dbFin has no chapter-7 or chapter-8 page here (404, checked
+    2026-11-15), and no GitHub Munkres repository named in the COMPLAINTS.md entry for §30--§36
+    reaches Chapter 7. The card keeps its own proof, which this pass did not re-read; the search is
+    recorded in the COMPLAINTS.md entry for §43--§50 with every query.
+
 ---
 
 ::: {.exercise}
