@@ -29,7 +29,25 @@ audit:
     property, applied to the nested closed sets inside the compact set closure of V_1. What the card uses
     without saying so is that W cap U_1 is nonempty, which holds because U_1 is dense and W is a nonempty open
     set; the induction is sound and the intersection point lies in W and in every U_n. Nothing needed
-    correction.
+    correction. The proof then on the card was written in the closed-set form and is replaced by the
+    transcription recorded in the event below.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Transcribed, with one correction, from Yougi, *Munkres Topology Solution: Chapter 8* (Nocturne blog,
+    https://hexo.yougi.top/2025/07/10/Munkres-Topology-Solution-Chapter-8/, posted 2025-07-10), Ex. 48.3,
+    text at tmp/sources/yougi-2025-munkres-chapter-8.md. The post proves the exercise directly, as the book
+    proves Theorem 48.2: given closed A_n with empty interior and an open U_0, choose x in U_0 outside A_1,
+    a neighbourhood U_1 of x with compact closure inside U_0, and recurse so that the closures are nested
+    inside U_{n-1} with compact closure; the closures are then nonempty closed subsets of the compact
+    closure of U_1, so they have a point in common, and that point lies in U_0 and outside every A_n.
+    The correction: the post records the recursion as "U_i not a subset of A_{i+1}", which gives no
+    separation of the limit point from A_i, and its indexing of the two inclusions is loose; the card asks
+    for closure U_n disjoint from A_n at stage n, which is what the choice of x outside A_n and the
+    closedness of A_n give, and this is the relation the book's own proof of Theorem 48.2 carries. The
+    post's alternative, "the one-point compactification of X is Baire while X is its open subspace", is
+    not used: it needs Lemma 48.4, which the book asterisks.
 ---
 
 ::: {.exercise}
@@ -38,107 +56,41 @@ Show that every locally compact Hausdorff space is a Baire space.
 :::
 
 ::: {.solution}
+Let $A_1, A_2, \ldots$ be closed subsets of $X$, each with empty interior, and let $U_0$ be a nonempty open set. It suffices to produce a point of $U_0$ that lies in no $A_n$.
 
 ::: pf
 
-::: pf-step
-
-Reduction:
-    Let $X$ be a locally compact Hausdorff space, and let $\{U_n\}_{n=1}^\infty$ be a countable collection of open dense subsets of $X$.
-    Let $W \subseteq X$ be an arbitrary non-empty open set.
-    It suffices to show that $W \cap \left( \bigcap_{n=1}^\infty U_n \right) \neq \varnothing$.
-
-:::
-
-::: {.pf-step #s2}
-
-Regularity and compact neighborhood property:
-    In a locally compact Hausdorff space, for every point $x$ and every open neighborhood $V$ of $x$, there exists an open neighborhood $U$ of $x$ such that $\overline{U}$ is compact and $\overline{U} \subseteq V$.
-
-:::
-
-::: pf-step
-
-Inductive construction of nested compact closures:
-    We inductively construct a sequence of non-empty open sets $\{V_n\}_{n=1}^\infty$ such that $\overline{V_1} \subseteq W \cap U_1$, and for each $k \ge 2$, $\overline{V_k}$ is compact with $\overline{V_k} \subseteq V_{k-1} \cap U_k$.
-    *Proof:*
+::: {.pf-step #shrink}
+For every $n \ge 1$ and every nonempty open set $V$ there is a nonempty open set $W$ with $\overline W \subseteq V$, $\overline W$ compact, and $\overline W \cap A_n = \varnothing$.
 
 ::: pf-proof
-
-::: pf-step
-
-**Base step ($k=1$):**
-        Since $U_1$ is dense in $X$, the open set $W \cap U_1$ is non-empty. Pick $x_1 \in W \cap U_1$. By step [](#s2){.pf-ref}, choose a non-empty open set $V_1$ such that $\overline{V_1}$ is compact and $\overline{V_1} \subseteq W \cap U_1$.
-
-:::
-
-::: pf-step
-
-**Inductive step ($k \ge 2$):**
-        Assume $V_{k-1}$ is a non-empty open set. Since $U_k$ is dense in $X$, $V_{k-1} \cap U_k$ is a non-empty open set. Pick $x_k \in V_{k-1} \cap U_k$. By step [](#s2){.pf-ref}, choose a non-empty open set $V_k$ such that $\overline{V_k}$ is compact and $\overline{V_k} \subseteq V_{k-1} \cap U_k$.
-
-:::
-
-::: pf-step
-
-In particular, $\overline{V_k} \subseteq V_{k-1} \subseteq \overline{V_{k-1}}$ for all $k \ge 2$.
-
+Since $A_n$ has empty interior, $V$ is not contained in $A_n$; choose $x \in V \setminus A_n$. The set $V \setminus A_n$ is a neighbourhood of $x$ because $A_n$ is closed, and $X$ is locally compact Hausdorff, so by Theorem 29.2 there is a neighbourhood $W$ of $x$ with $\overline W$ compact and $\overline W \subseteq V \setminus A_n$. Then $\overline W \cap A_n = \varnothing$.
 :::
 
 :::
 
-:::
-
-::: pf-step
-
-Non-empty intersection via compactness:
-    *Proof:*
+::: {.pf-step #chain}
+There are nonempty open sets $U_1, U_2, \ldots$ with $\overline U_n \subseteq U_{n-1}$, $\overline U_n$ compact, and $\overline U_n \cap A_n = \varnothing$ for every $n \ge 1$.
 
 ::: pf-proof
-
-::: pf-step
-
-The sequence $\{\overline{V_n}\}_{n=1}^\infty$ is a nested sequence of non-empty closed subsets of the compact space $\overline{V_1}$:
-        $$\overline{V_1} \supseteq \overline{V_2} \supseteq \overline{V_3} \supseteq \cdots$$
-
-:::
-
-::: pf-step
-
-By the finite intersection property of compact spaces, the total intersection is non-empty:
-        $$\bigcap_{n=1}^\infty \overline{V_n} \neq \varnothing.$$
-
-:::
-
-::: pf-step
-
-Choose an element $x \in \bigcap_{n=1}^\infty \overline{V_n}$.
-
-:::
-
-::: pf-step
-
-For every $n \ge 1$, $x \in \overline{V_n} \subseteq U_n$.
-
-:::
-
-::: pf-step
-
-Furthermore, $x \in \overline{V_1} \subseteq W$.
-
-:::
-
-::: pf-step
-
-Thus $x \in W \cap \left( \bigcap_{n=1}^\infty U_n \right)$.
-
+Recursion on $n$, applying step [](#shrink){.pf-ref} to $V = U_{n-1}$: the hypothesis of that step is only that $V$ is nonempty and open, which $U_0$ is by assumption and $U_{n-1}$ is by construction.
 :::
 
 :::
 
+::: {.pf-step #point}
+$\bigcap_{n \ge 1} \overline U_n \neq \varnothing$.
+
+::: pf-proof
+The sets $\overline U_1 \supseteq \overline U_2 \supseteq \cdots$ are closed and nonempty, and they lie in the compact space $\overline U_1$; so the family has the finite intersection property and Theorem 26.9 gives a point in the intersection.
 :::
 
 :::
 
-    By step [](#s4){.pf-ref}, $W \cap \left( \bigcap_{n=1}^\infty U_n \right)$ is non-empty for every non-empty open set $W$, so $\bigcap_{n=1}^\infty U_n$ is dense in $X$. Hence $X$ is a Baire space.
+::: pf-qed
+Choose $x \in \bigcap_{n \ge 1} \overline U_n$. Since $\overline U_n \subseteq U_{n-1}$ for $n \ge 1$, the point $x$ lies in $U_0$, and since $x \in \overline U_m$ and $\overline U_m \cap A_m = \varnothing$ for every $m \ge 1$, it lies in no $A_m$. Every nonempty open $U_0$ therefore meets the complement of $\bigcup_n A_n$, so that union has empty interior and $X$ is a Baire space.
+:::
+
+:::
+
 :::
