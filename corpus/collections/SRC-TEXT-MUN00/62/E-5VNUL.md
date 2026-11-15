@@ -28,6 +28,27 @@ audit:
     map below doubles the parameter on each half, so it runs once round all of C and back, and every step is
     checked: image C, continuity, f(0) = f(2 pi), non-injectivity, and the explicit homotopy. Checked against
     Lemma 62.2 (printed p. 382) and Theorem 61.3 (printed p. 379).
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout for a published solution of this exercise (issue #144), and two
+    were located, both giving the same construction. (1) Problem (6) of "MATH 4530 - Topology.
+    Practice Problems For Final solutions", the course solutions of Cornell's MATH 4530 (Fall 2010),
+    https://pi.math.cornell.edu/~matsumura/math4530/2010Fall4530PracticeForFinalSol.pdf, printed
+    p. 2 of the file, text at
+    tmp/sources/munkres-cornell-math4530-2010-practice-final-solutions.txt: a and b the north and
+    south poles, g on [0,2] running once round the equator each way with g(0) = g(1) = g(2) = (1,0,0),
+    nullhomotopic, and a and b in different components of S^2 - g([0,2]). (2) Math StackExchange
+    answer 1840946 by Jason DeVito to question 1840940, "Show that Borsuk lemma need not hold if f is
+    not injective" (2016-06-27), text at tmp/sources/mse-1840940-munkres-62-1.md, which uses a single
+    loop on [0,1]. The solution on the card is the Cornell argument transcribed: what the printed
+    text leaves implicit is written out, the explicit parametrization of g, continuity by the pasting
+    lemma, the nullhomotopy through a contraction of [0,2], and the two hemispheres as the components
+    of the complement of the equator. It replaces the card's earlier construction, which ran once
+    round a round circle and back and needed Theorem 61.3 to see that the circle separates; that
+    theorem is no longer used, and the example is the same one. Checked against Lemma 62.2 (printed
+    p. 382) and Theorem 18.3 (printed p. 108).
 ---
 
 ::: {.exercise}
@@ -37,75 +58,17 @@ Give an example to show that the conclusion of the Borsuk lemma need not hold if
 
 ::: {.solution}
 
-The Borsuk lemma is Lemma 62.2 (printed p. 382): if $a,b$ are points of $S^2$, $A$ is compact, and $f:A\to S^2-\theset{a,b}$ is a continuous injective nullhomotopic map, then $a$ and $b$ lie in the same component of $S^2-f(A)$. The example keeps every hypothesis but injectivity.
+The Borsuk lemma is Lemma 62.2 (printed p. 382): if $a$ and $b$ are points of $S^2$, $A$ is a compact space, and $f:A\to S^2-\theset{a,b}$ is continuous, injective and nullhomotopic, then $a$ and $b$ lie in the same component of $S^2-f(A)$. The example keeps every hypothesis but injectivity.
 
-::: pf
+Take $a$ and $b$ to be the north and south poles of $S^2$, its centre at the origin, and take $A=[0,2]$, which is compact. Define $g:[0,2]\to S^2$ by
+$$
+g(t)=\begin{cases}(\cos 2\pi t,\ \sin 2\pi t,\ 0), & 0\le t\le 1,\\ (\cos 2\pi(2-t),\ \sin 2\pi(2-t),\ 0), & 1\le t\le 2,\end{cases}
+$$
+so that $g(0)=g(1)=g(2)=(1,0,0)$ and $g$ runs once round the equator in one direction on $[0,1]$ and once round it in the other direction on $[1,2]$.
 
-::: pf-step
+The image of $g$ is the equator, which lies in $S^2-\theset{a,b}$. The two halves of the formula agree at $t=1$, so $g$ is continuous by the pasting lemma (Theorem 18.3, printed p. 108). And $g(0)=g(1)$ with $0\ne1$, so $g$ is not injective. And $g$ is nullhomotopic: $[0,2]$ is contractible, and $H(t,s)=g\bigl((1-s)t\bigr)$ is a homotopy from $g$ to the constant map at $g(0)$, whose values all lie in the image of $g$.
 
-Take $C$ to be a round circle in $S^2$ bounding a disk $D$ that contains $a$ and not $b$, and let $g:S^1\to C$ be a homeomorphism.
+Finally $S^2-g([0,2])$ is the complement of the equator, which is the union of the open northern and southern hemispheres; those are connected, disjoint and open, so they are its two components, and $a$ and $b$ lie in different ones.
 
-::: pf-proof
-
-A small circle about $a$ in a coordinate chart is such a $C$: the closed disk it bounds lies in the chart, so after possibly shrinking it, $b\notin D$. The circle is compact and $S^2$ is Hausdorff, so $g$ is a continuous bijection from a compact space onto a Hausdorff space, hence a homeomorphism onto $C$ (Theorem 26.6, printed p. 167).
-
-:::
-
-:::
-
-::: pf-step
-
-Define $f:S^1\to S^2-\theset{a,b}$ by running once round all of $C$ and back, and note that $f$ is continuous with image exactly $C$.
-
-::: pf-proof
-
-Let $\varphi:[0,2\pi]\to[0,2\pi]$ be $\varphi(\theta)=2\theta$ for $0\le\theta\le\pi$ and $\varphi(\theta)=2(2\pi-\theta)$ for $\pi\le\theta\le2\pi$, and set $f(\theta)=g(e^{i\varphi(\theta)})$. On $[0,\pi]$ the map $\varphi$ runs through $[0,2\pi]$ and on $[\pi,2\pi]$ it runs through $[2\pi,0]$, so $\varphi$ takes every value of $[0,2\pi]$ and $\operatorname{im}f=g(S^1)=C\subseteq S^2-\theset{a,b}$. Continuity: $\varphi$ is continuous on each closed half and the two formulas agree at $\theta=\pi$, where both give $2\pi$, so $\varphi$ is continuous by the pasting lemma, and $f$ is a composite of continuous maps.
-
-:::
-
-:::
-
-::: pf-step
-
-$f(0)=f(2\pi)$ and $f$ is not injective.
-
-::: pf-proof
-
-$\varphi(0)=0$ and $\varphi(2\pi)=0$, so $f(0)=g(1)=f(2\pi)$, as a map of the circle must satisfy. For $0<\theta<\pi$ we have $\varphi(\theta)=2\theta$ and $\varphi(2\pi-\theta)=2\theta$, so $f(\theta)=f(2\pi-\theta)$ while $\theta\ne2\pi-\theta$; hence $f$ is not injective.
-
-:::
-
-:::
-
-::: pf-step
-
-$f$ is nullhomotopic.
-
-::: pf-proof
-
-Define $H:S^1\times I\to C$ by $H(\theta,s)=g\bigl(e^{i(1-s)\varphi(\theta)}\bigr)$. It is continuous, $H(\theta,0)=f(\theta)$, and $H(\theta,1)=g(1)$ for every $\theta$, a constant. So $f$ is homotopic to a constant within $C\subseteq S^2-\theset{a,b}$.
-
-:::
-
-:::
-
-::: pf-step
-
-$a$ and $b$ lie in different components of $S^2-f(S^1)$.
-
-::: pf-proof
-
-$f(S^1)=C$ bounds the disk $D$ with $a\in D$ and $b\notin D$. By Theorem 61.3 (printed p. 379) the simple closed curve $C$ separates $S^2$, so $S^2-C$ has at least two components, and $\operatorname{Int}D$ and $S^2-D$ are disjoint nonempty open sets whose union is $S^2-C$; each is therefore a union of components, and $a\in\operatorname{Int}D$, $b\in S^2-D$. Hence $a$ and $b$ lie in different components.
-
-:::
-
-:::
-
-::: pf-qed
-
-$f$ is continuous with compact domain and image in $S^2-\theset{a,b}$ and is nullhomotopic, but is not injective and its image separates $a$ from $b$; the Borsuk lemma therefore needs injectivity.
-
-:::
-
-:::
+So $g$ has compact domain, is continuous, has image in $S^2-\theset{a,b}$, and is nullhomotopic, while $a$ and $b$ lie in different components of $S^2-g(A)$: the conclusion of the Borsuk lemma fails when $f$ is not injective.
 :::
