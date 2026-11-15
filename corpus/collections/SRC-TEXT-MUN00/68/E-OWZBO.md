@@ -58,7 +58,7 @@ If both $G$ and $G'$ have the extension property stated in Lemma 68.3, then ther
 
 ::: {.solution}
 
-The argument of steps 1--3 is the proof of Paul Frost, answer 4884904 to Math StackExchange question 4884788, "Munkres lemma 68.5" (2024-03-21), of the theorem in the generalized form he states: neither the monomorphisms nor the generation of $G$ and $G'$ by the images is used, only the uniqueness clause of the extension property, which Lemma 68.3 (printed p. 418) includes. Generation enters in step 3, for the uniqueness of $\phi$, and there the printed theorem states it.
+The argument of steps 1--3 is the proof of Paul Frost, answer 4884904 (https://math.stackexchange.com/a/4884904) to Math StackExchange question 4884788, "Munkres lemma 68.5" (2024-03-21), of the theorem in the generalized form he states: neither the monomorphisms nor the generation of $G$ and $G'$ by the images is used, only the uniqueness clause of the extension property, which Lemma 68.3 (printed p. 418) includes. Generation enters in step 3, for the uniqueness of $\phi$, and there the printed theorem states it.
 
 The extension property of Lemma 68.3 (printed p. 418) reads: given any group $H$ and any family of homomorphisms $h_\alpha:G_\alpha\to H$, there is a unique homomorphism $h:G\to H$ with $h\circ i_\alpha=h_\alpha$ for all $\alpha$.
 
