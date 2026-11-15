@@ -24,6 +24,31 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Printed exercise read: Hartshorne, Algebraic Geometry (1977), IV.1.8(c),
+    printed p. 299. Published proof of the decisive step located: the Stacks
+    Project, Chapter 33, Section 33.39 (The delta invariant) and Section 33.41,
+    read in tmp/sources/stacks-project-book.md. Definition 33.39.3 (tag 0C3T),
+    printed p. 2899, sets delta = length_A(A'/A) for a reduced Nagata
+    one-dimensional local ring, after Lemma 33.39.2 (tag 0C3S) makes A'/A of
+    finite length; Lemma 33.39.5 (tag 0C3V), printed p. 2900, shows A' tensor_A
+    A^h, A^sh and A^wedge are the integral closures of those rings; Lemma 33.39.6
+    (tag 0C3W), printed pp. 2900--2901, proves delta is unchanged by
+    henselization, strict henselization and completion; and Definition 33.39.7
+    (tag 0C1T), printed p. 2901, concludes that delta is an invariant of the
+    complete local ring. That is the exercise's hint "delta_P depends only on the
+    analytic isomorphism class", since two points of varieties over an
+    algebraically closed field are analytically isomorphic exactly when their
+    completed local rings are. Lemma 33.41.2 (tag 0C1R), printed p. 2904, gives
+    the exercise's exact sequence 0 -> O_X -> nu_*O_{X^nu} -> direct sum Q_x -> 0
+    with length Q_x = delta, and item (9) there is A'/A = (A')^wedge/A^wedge, the
+    isomorphism step s6 uses. Step s6 is now the transcription of 0C3V, 0C3W and
+    0C1T(9); the two computations at the cusp and the node (steps s7, s8) are the
+    card's own and are not in that section. Nothing was checked in Stacks about
+    analytic isomorphism as such; the identification used is the card's.
 ---
 
 ::: {.problem}
@@ -88,7 +113,7 @@ $$
 
 The normalization is an isomorphism over the regular locus of the
 one-dimensional scheme $X$. Hence $\mathcal Q$ is supported on the finite
-singular locus.
+singular locus. This is Lemma 33.41.2 (tag 0C1R) of the Stacks Project, printed p. 2904, which also gives the exact sequence $0\to\mco_X\to\nu_*\mco_{X^\nu}\to\bigoplus_x Q_x\to0$ with $\length Q_x$ the $\delta$-invariant of $X$ at $x$; that is the sequence the exercise states.
 
 At a closed point $P$, the residue field is $k$ because $k$ is
 algebraically closed. A finite-length $\mco_P$-module therefore has
@@ -272,6 +297,8 @@ The number $\delta_P$ depends only on the analytic isomorphism class of the sing
 
 ::: pf-proof
 
+This is the Stacks Project's argument, Chapter 33, Section 33.39, printed pp. 2899--2901, transcribed: Definition 33.39.3 (tag 0C3T) sets $\delta$ to be a length, and Lemma 33.39.6 (tag 0C3W) proves that this length does not change under henselization, strict henselization or completion, so $\delta$ is an invariant of the complete local ring (Definition 33.39.7, tag 0C1T). In detail, with the notation below:
+
 Put
 $$
 A=\mco_{X,P},
@@ -282,7 +309,7 @@ The quotient
 $$
 B/A
 $$
-has finite length. Completion is exact on finite $A$-modules, and a
+has finite length: $A$ is reduced and Nagata of dimension one, and $B$ is the integral closure in its total ring of fractions, which is Lemma 33.39.2 (tag 0C3S). Lemma 33.39.5 (tag 0C3V) shows that $B\otimes_A\widehat A$ is the integral closure of $\widehat A$ in its total ring of fractions. Then completion is exact on finite $A$-modules, and a
 finite-length module is unchanged by completion. Hence
 $$
 \length_A(B/A)
@@ -290,8 +317,9 @@ $$
 \length_{\widehat A}
 \left(
 (B\otimes_A\widehat A)/\widehat A
-\right).
+\right),
 $$
+which is Lemma 33.39.6 (tag 0C3W) with $B\otimes_A\widehat A=(A')^{\wedge}$; the same lemma and Lemma 33.41.2(9) (tag 0C1R), printed p. 2904, give it directly as $A'/A\cong(A')^{\wedge}/A^{\wedge}$.
 
 The local ring $A$ is essentially of finite type over a field, hence
 excellent. For such a one-dimensional reduced local ring, normalization
@@ -420,5 +448,6 @@ steps [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (c).
 
 ::: {.remark title="Published solution"}
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.8, printed pp. 208–209, proves (a) by the short exact sequence $0\to\widetilde\OO_P/\OO_P\to H^0(X,\OO_X)\to H^0(\tilde X,\OO_{\tilde X})\to0$ obtained from (III.4.1) and the flasqueness of the skyscraper summand, so that $p_a(X)=p_a(\tilde X)+\sum_P\delta_P$, and (b) by observing that $p_a=0$ forces $\delta_P=0$ for every $P$, making all local rings normal and hence regular in dimension one.
-Part (c), the invariance of $\delta_P$ under analytic isomorphism and the values at a cusp and a node, has no complete published solution in the retained sets; the record of the sets searched is in `COMPLAINTS.md`.
+For part (c), the invariance of $\delta_P$ under analytic isomorphism is the Stacks Project's, Chapter 33, Section 33.39: Definition 33.39.3 (tag 0C3T) with Lemma 33.39.6 (tag 0C3W) on printed pp. 2899--2901 shows that $\delta$ is unchanged by henselization, strict henselization and completion, hence is an invariant of the complete local ring, and Definition 33.39.7 (tag 0C1T) says so in those words; step [](#s6){.pf-ref} transcribes it. The two values $\delta_P=1$ at an ordinary cusp and at a node (steps [](#s7){.pf-ref} and [](#s8){.pf-ref}) are computed here: $k[[t]]/k[[t^2,t^3]]\cong k\cdot t$ and $(k[[x]]\times k[[y]])/k[[x,y]]/(xy)\cong k$.
+
 :::

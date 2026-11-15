@@ -41,6 +41,24 @@ audit:
     prime of O_{P,Y} pulls back to a prime p strictly inside m because dim R
     >= 2, V(p) has dimension at least one so carries a closed point Q other
     than P, and regularity of f at Q puts f in A_p.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Printed exercise read: Hartshorne, Algebraic Geometry (1977), I.3.20,
+    printed p. 23 (PDF p. 38 of the checked-in extraction, whose folio reads 23).
+    The input of part (a) is published with its proof in R. Vakil, The Rising
+    Sea: Foundations of Algebraic Geometry, 21 October 2025 version, Section
+    13.5: the Algebraic Hartogs' Lemma 13.5.19 on printed p. 383,
+    "A = intersection of A_p over the codimension 1 primes" for a Noetherian
+    integrally closed domain, with the full proof at 13.5.21--13.5.25 on printed
+    pp. 383--385 by the ideal of denominators, and 13.5.20 says in words that
+    Noetherian normal schemes have the Hartogs property. Step s3 now cites it in
+    the body, and the earlier reference to the 2011 draft, printed pp. 267--268,
+    is replaced by the 2025 pagination. Part (b) is not in that section: the
+    source's chapter has no example of a failure in dimension one, and step s5's
+    punctured line is the card's own.
+
 ---
 
 ::: {.problem}
@@ -139,8 +157,7 @@ For a Noetherian normal domain, the height-one intersection theorem states that,
 $$
 R=\bigcap_{\operatorname{ht}\mathfrak q=1}R_{\mathfrak q}.
 $$
-This is Matsumura, *Commutative Ring Theory*, Theorem 11.5.
-Step [](#s2){.pf-ref} places $f$ in every ring in this intersection, so $f\in R$.
+This is proved in full as the Algebraic Hartogs' Lemma of R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §13.5.19], printed p. 383, with the proof in 13.5.21--13.5.25 on printed pp. 383--385: the ideal of denominators $I=\theset{a\in R \st ar\in R}$, the module $M_{a/b}\subseteq R/(b)$, the lemma that $r\in R$ exactly when $r\in R_{\mathfrak p}$ for the associated primes of $R/(g)$, and then that those primes have height one because a Noetherian integrally closed domain is regular in codimension one. The same statement is Matsumura, *Commutative Ring Theory*, Theorem 11.5. Step [](#s2){.pf-ref} places $f$ in every ring in this intersection, so $f\in R$.
 
 :::
 
@@ -212,7 +229,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 :::
 
 ::: {.remark title="Published solution"}
-The height-one intersection theorem that step [](#s3){.pf-ref} applies is proved in full as Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry* (Math 216 blog, September 2, 2011 draft), Section 12.3.9--12.3.11, printed pp. 267--268, under the name "Algebraic Hartogs' Lemma": "Suppose $A$ is a Noetherian normal integral domain. Then $A=\cap_{\mathfrak p\text{ codimension }1}A_{\mathfrak p}$." The printed proof is the ideal of denominators $I=\theset{r\in A\st rx\in A}$: a minimal prime $\mathfrak q$ over $I$ has codimension at least two because the statement is vacuous in dimension one, so after localizing at $\mathfrak q$ one has $I=\sqrt{\mathfrak q}$ and finds $z\notin A$ with $\mathfrak qz\subseteq A$; then either $\mathfrak qz\subseteq\mathfrak q$, which makes $z$ integral over the integrally closed $A$, or $\mathfrak qz=A$, which makes $\mathfrak q$ principal of codimension at most one by Nakayama. In the case at hand $A=R=\mco_{P,Y}$ is a Noetherian normal domain of dimension at least two by step [](#s1){.pf-ref}, so the theorem applies verbatim. The same statement is on the card as Matsumura, *Commutative Ring Theory*, Theorem 11.5, which is the form the working notes of this exercise use; Vakil's pages were read for it and Matsumura's book was not on this machine.
+The height-one intersection theorem that step [](#s3){.pf-ref} applies is proved in full as Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §13.5], printed pp. 383--385, under the name "Algebraic Hartogs' Lemma" (13.5.19): "Suppose $A$ is an integrally closed Noetherian integral domain. Then $A=\cap_{\mathfrak p\text{ codimension }1}A_{\mathfrak p}$." The printed proof, 13.5.21--13.5.25, is the ideal of denominators $I=\theset{a\in A\st ar\in A}$ and the module $M_{a/b}\subseteq A/(b)$: for $r\notin A$ an associated prime of $M_{a/b}$ keeps $r$ out of $A_{\mathfrak p}$ (13.5.23), and for an integrally closed $A$ those primes have codimension one, since $A$ is regular in codimension one and $A/(b)$ has no embedded points (13.5.24), whence 13.5.25. In the case at hand $A=R=\mco_{P,Y}$ is a Noetherian normal domain of dimension at least two by step [](#s1){.pf-ref}, so the theorem applies verbatim. The same statement is on the card as Matsumura, *Commutative Ring Theory*, Theorem 11.5, which is the form the working notes of this exercise use; Matsumura's book is not on this machine. Part (b), the failure in dimension one, is not in the source, and step [](#s5){.pf-ref} is the card's.
 
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 3.20.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 3.20.
