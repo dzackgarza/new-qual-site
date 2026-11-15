@@ -31,6 +31,18 @@ audit:
     pieces of a compact set, and the preceding exercise (the card of Exercise 50.8) for the passage from the
     compact subspaces to the manifold, which is sigma-compact because it is locally compact and second
     countable. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Nothing located proves Munkres §50 Exercise 9 (printed p. 318).
+    Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, the ten GitHub repositories of Munkres
+    solutions listed in COMPLAINTS.md stop before §36, and the AoPS post *Topology by Munkres Chapter 8 | Day
+    18* (https://artofproblemsolving.com/community/c3401823h3647630) answers §50 with its formulas lost. The
+    card reduces the manifold to the sigma-compact theorem [[E-MVB8P]] through the dimension bound on its
+    compact subspaces, and that bound is the step the exercise is for: a compact set is covered by finitely
+    many coordinate patches, each piece is a closed subspace of $\RR^m$ under its chart, and the finite union
+    of closed pieces keeps the dimension. Nothing needed correction.
 ---
 
 ::: {.exercise}
