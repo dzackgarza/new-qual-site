@@ -24,6 +24,15 @@ audit:
     theorem, printed p. 390) for the two components and their common boundary, Theorem 59.3 (printed p. 369) for
     the simple connectivity of S^2, and the openness of the components of the complement of a compact set, as in
     the proof of Lemma 61.1 (printed p. 377).
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout for a published solution of this exercise (issue #144) and located
+    none; the queries and every source searched are in the COMPLAINTS.md entry for §61--§64. The
+    card's proof is its own, checked on 2026-11-11 against Theorem 63.3, Theorem 63.4, Theorem 59.3
+    and Lemma 61.1 as the note above records; it was not re-read in this pass. The printed page of the
+    exercise is 393.
 ---
 
 ::: {.exercise}
