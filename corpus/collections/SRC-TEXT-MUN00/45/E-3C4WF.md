@@ -33,6 +33,24 @@ audit:
     assignment of the nonempty subset of S of points whose delta-balls meet A. Part (d) is Theorem 45.1
     applied to (b) and (c). Nothing on the card needed correction; the card's step references all point
     at steps it labels.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Math StackExchange 1309827, "Completeness of the
+    Hausdorff distance" (2015-06-02), has orangeskid's answer 1322403, a hint in two steps, that
+    the unions of the tails may be assumed decreasing and that in the decreasing case every point
+    of A_{n_1} is within eps of a point of the limit; it gives no proof of part (a), the metric
+    axioms, none of part (c), and nothing of part (d). Math StackExchange 2909498 (2018-09-08)
+    is an attempt at part (b) whose own accepted answer 2913046 by hartkp corrects three steps:
+    that an arbitrary sequence with x_n in A_n need not be Cauchy and must be chosen with
+    d(x_n,x_{n+1}) < 2^{-n}, and that the two estimates are not yet independent of the point of
+    the closure. Neither page is a solution of the exercise, and neither is transcribed. dbFin has
+    no chapter-7 page (404, checked 2026-11-15), and no GitHub Munkres repository named in the
+    COMPLAINTS.md entry for §30--§36 reaches Chapter 7. The card keeps its own proof, which this
+    pass did not re-read; the search is recorded in the COMPLAINTS.md entry for §43--§50 with
+    every query.
+
 ---
 
 ::: {.exercise}
