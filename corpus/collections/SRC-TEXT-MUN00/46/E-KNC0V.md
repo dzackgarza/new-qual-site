@@ -25,6 +25,22 @@ audit:
     closure(S(C,U)) in S(C,V) for closure(U) in V is proved: if h(x) is outside V for some x in C, then h(x) is
     outside the closed set closure(U), and regularity of Y gives an open W about h(x) missing U, so S({x},W) is
     a neighbourhood of h disjoint from S(C,U). Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Math StackExchange 542926, "In compact-open topology,
+    C(X,Y) is Hausdorff if Y is Hausdorff" (2013-10-28), carries the Hausdorff half of this exercise:
+    the accepted answer 542943 by Brian M. Scott takes the singleton {x} as the compact set and
+    separates f from g by S({x},U_1) and S({x},U_2), which is the card's first paragraph. That answer
+    then sets up the exercise's hint for the regular half and stops, asking the reader what follows
+    from taking K = {x} and W = Y - closure(U); the card's second paragraph is that argument carried
+    out, with the hinted inclusion proved, and it remains the card's own. The AoPS blog post by
+    cinnamon_e, "Topology by Munkres Chapter 7 | Day 17" (2025-09-10,
+    https://artofproblemsolving.com/community/c3401823h3646977, text at
+    tmp/sources/aops-shooting-star-munkres-ch7-day17.md), also answers the exercise at its item 6 of
+    §46, with its formulas lost; the queries of this pass are in the COMPLAINTS.md entry for
+    §43--§50.
 ---
 
 ::: {.exercise}
