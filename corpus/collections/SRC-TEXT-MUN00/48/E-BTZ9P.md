@@ -26,6 +26,22 @@ audit:
     of the intersection of the U(1/k) the three-term estimate with f_N is the argument of Theorem 48.5; and the
     set C is uncountable because otherwise the dense open sets U(1/k) together with the complements of the
     points of C would have empty intersection, contradicting Theorem 48.2. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Yougi, *Munkres Topology Solution: Chapter 8* (Nocturne blog,
+    2025-07-10, https://hexo.yougi.top/2025/07/10/Munkres-Topology-Solution-Chapter-8/, text at
+    tmp/sources/yougi-2025-munkres-chapter-8.md), answers Munkres §48 Exercise 8 (printed p. 299) at its Ex.
+    48.8 in two steps: the set of points of continuity of $f$ is dense by Theorem 48.5, and it is not
+    countable by Ex. 48.7, since a countable dense set is not a $G_\delta$. Both steps are correct, and both
+    rest on results of the book that the exercise may use; the card gives the same argument written out: its
+    steps construct the sets $A_N(\varepsilon)$, prove $U(\varepsilon)$ dense by the Baire theorem in the
+    closure of an interval, obtain continuity on the intersection $C$ of the $U(1/k)$ by the three-term
+    estimate, and then apply the uncountability argument of Exercise 7 to $C$. Nothing needed correction. The
+    card's proof is not a transcription of the post's, which is a two-line reduction; it is the proof of
+    Theorem 48.5 specialized to $\RR$ with the uncountability step, and no part of it was changed by this
+    pass.
 ---
 
 ::: {.exercise}
