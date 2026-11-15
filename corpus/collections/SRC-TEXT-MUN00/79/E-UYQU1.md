@@ -12,6 +12,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §79 Exercise 7, printed p. 484. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md and the saved thread is tmp/sources/mse-1527760-E-UYQU1.md, read whole.
+    Math StackExchange 1527760, asked by Empiromancer on 2015-11-13, has one answer, 1527797 by Tsemo
+    Aristide (2015-11-13), which proves the exercise under the exercise's hypotheses: p(m(x,y)) = 1_G because
+    G is abelian, so the commutator map lands in the fibre of the identity, which is discrete, and the domain
+    is connected, so the map is constant at the identity. That proof is the card's, and the card now says so
+    with its URL; its steps add the path-connected version of the connectedness argument (the chapter's
+    convention, printed p. 477, gives path connectedness, which the answer does not use) and prove the
+    discreteness of the fibre and the multiplication's continuity from the book. Nothing in the answer is
+    wrong or assumes more than Munkres does.
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
@@ -36,6 +50,8 @@ Show that if $G$ is abelian, so is $\overline{G}$.
 :::
 
 ::: {.solution}
+
+The argument is that of Tsemo Aristide, answer 1527797 (https://math.stackexchange.com/a/1527797), posted 2015-11-13 to Math Stack Exchange question 1527760, "Covering space of an abelian topological group is abelian if the covering map is a homomorphism" (https://math.stackexchange.com/questions/1527760, asked by Empiromancer on the same day), in three sentences: the commutator map $m:\overline G\times\overline G\to\overline G$ has image in $p^{-1}(e)$, which is discrete, and since $\overline G$ is connected its image is connected, hence the identity. The steps below write that argument out, using the path connectedness that the chapter's convention gives (printed p. 477) in place of connectedness, so that the path argument replaces "the image of a connected set is connected"; the discreteness of the fibre, the identification of $p\circ\phi$ with the commutator in $G$, and the conclusion are the answer's.
 
 ::: pf
 
@@ -67,7 +83,7 @@ Every point of $p^{-1}(e)$ is isolated in $p^{-1}(e)$.
 
 ::: {.pf-proof}
 
-Since $p$ is a covering map, $e$ has an open neighbourhood $U$ evenly covered by $p$ (Definition of a covering map, printed p. 336): $p^{-1}(U)$ is the disjoint union of open slices $V_\alpha$, each mapped homeomorphically onto $U$ by $p$. A slice $V_\alpha$ meeting $p^{-1}(e)$ meets it in exactly one point, because $p|_{V_\alpha}$ is injective, so $V_\alpha$ is an open neighbourhood of that point in $\overline G$ meeting $p^{-1}(e)$ in that point alone.
+Since $p$ is a covering map, $e$ has an open neighbourhood $U$ evenly covered by $p$ (Definition of a covering map, printed p. 336): $p^{-1}(U)$ is the disjoint union of open slices $V_\alpha$, each mapped homeomorphically onto $U$ by $p$. A slice $V_\alpha$ meeting $p^{-1}(e)$ meets it in exactly one point, because $p\restrict_{V_\alpha}$ is injective, so $V_\alpha$ is an open neighbourhood of that point in $\overline G$ meeting $p^{-1}(e)$ in that point alone.
 
 :::
 

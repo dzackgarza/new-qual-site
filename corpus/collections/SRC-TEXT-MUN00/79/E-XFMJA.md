@@ -13,6 +13,20 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §79 Exercise 4, printed p. 483. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md and the saved thread is tmp/sources/mse-4590058-E-XFMJA.md, read whole.
+    Math StackExchange 4590058 has one answer, 4590100 by Paul Frost (2022-12-02), which states that e_n
+    corresponds to nZ, that e_infinity: R -> S^1 corresponds to the trivial subgroup, and hence that
+    e_2 x e_3 corresponds to 2Z + 3Z and e_infinity x e_infinity to the trivial subgroup: that is parts (b)
+    and (c), with m = 2 and n = 3. The answer verifies none of the three correspondences and does not treat
+    part (a). The card's solution computes the image of each induced homomorphism and supplies the covering
+    S^1 x R of part (a); the answer's statements are now recorded beside them with their URL, and the card
+    keeps the proofs. Rejected in the search: mse 3853372 (states the classification of the coverings of the
+    torus without proof) and 4924838 (the subgroup 2Z x 2Z only).
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 79 Exercise 4, printed p. 483. The three coverings S^1 x R, R^2 and T over T realizing <(m,0)>, the trivial subgroup, and <(m,0),(0,n)>. Checked against Theorem 79.4. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
@@ -66,4 +80,6 @@ $$
 \langle(m,0),(0,n)\rangle.
 $$
 Hence these three maps realize the required covering spaces.
+
+The three answers are stated, for the subgroups $2\ZZ\oplus3\ZZ$ and the trivial group, by Paul Frost, answer 4590100 (https://math.stackexchange.com/a/4590100), posted 2022-12-02 to Math Stack Exchange question 4590058, "About covering spaces of the torus" (https://math.stackexchange.com/questions/4590058, asked by Lam18373 on the same day): the maps $e_n:S^1\to S^1$, $e_n(z)=z^n$, correspond to the subgroups $n\ZZ$, the map $e_\infty:\RR\to S^1$ corresponds to the trivial subgroup, and therefore $e_2\times e_3$ corresponds to $2\ZZ\oplus3\ZZ$ and $e_\infty\times e_\infty$ to the trivial subgroup. Each of those correspondences is asserted there, not computed, and part (a)'s covering $S^1\times\RR$ is not given in the thread; the computations of the three images in $\pi_1(T)$, and the covering of part (a), are the card's.
 :::

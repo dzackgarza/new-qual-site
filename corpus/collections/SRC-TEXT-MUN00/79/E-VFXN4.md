@@ -11,6 +11,22 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §79 Exercise 2, printed p. 483. Searched outside the checkout for issue #146; the record is
+    tmp/sources/mse-searches-146.md and the saved threads are tmp/sources/mse-142987-E-VFXN4.md and
+    tmp/sources/mse-1831470-E-VFXN4.md, both read whole. Part (a) is proved in both: Math StackExchange
+    142987 has 143112 by Fredrik Meyer and 143123 by SL2 (both 2012-05-09), and 1831470 has 1840953 by Max
+    and 1841392 by user84976 (both 2016-06-27), the first of the four giving the same route, the second a
+    route through S^2 that avoids pi_1(P^2). Part (a) is now transcribed from 143112 and 143123 with their
+    URLs, and the S^2 route is recorded with the reason it is not used. Part (b) is answered nowhere in
+    either thread and stays the card's own: the projection of the torus onto a factor is not nullhomotopic
+    because it induces a surjection on pi_1. The card's former proof was a pf chain whose pf-proofs were
+    one-line citations ("the only homomorphism Z/2 -> Z is the zero map"); it is now written out, with
+    Corollary 60.4 (printed p. 373), Theorem 54.5 (printed p. 345), Theorem 54.6 (printed p. 346) and
+    Lemma 58.1 (printed p. 360) named.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
@@ -29,124 +45,20 @@ audit:
 :::
 
 ::: {.solution}
-::: pf
 
-::: {.pf-step #s1}
+(a) The proof is that of two answers to Math StackExchange question 142987, "Prove every map from the projective plane to the circle is nullhomotopic" (https://math.stackexchange.com/questions/142987, asked by Proton 2012-05-09): answer 143112 by Fredrik Meyer (https://math.stackexchange.com/a/143112), that every homomorphism $\ZZ/2\to\ZZ$ is zero, and answer 143123 by SL2 (https://math.stackexchange.com/a/143123), that a map whose induced homomorphism is zero lifts to the universal cover of $S^1$ and so is nullhomotopic. Both were posted 2012-05-09.
 
-(a) Every map $f: P^2 \to S^1$ is null-homotopic.
+Let $f:P^2\to S^1$. By Corollary 60.4 (printed p. 373) the group $\pi_1(P^2)$ has order $2$, and by Theorem 54.5 (printed p. 345) $\pi_1(S^1)\cong\ZZ$. A homomorphism $h:\ZZ/2\to\ZZ$ satisfies $2h(1)=h(0)=0$, and $\ZZ$ has no element of order $2$, so $h=0$; hence
+$$
+f_*\pi_1(P^2,x_0)=0 .
+$$
+Let $p:\RR\to S^1$ be the universal covering. The space $P^2$ is path connected and locally path connected, so the lifting criterion of Theorem 54.6 (printed p. 346) gives $\tilde f:P^2\to\RR$ with $p\circ\tilde f=f$. Since $\RR$ is contractible, $\tilde f$ is homotopic to a constant map, and composing with $p$ gives a nullhomotopy of $f$.
 
-::: pf-proof
+A third answer, 1841392 by user84976 (https://math.stackexchange.com/a/1841392, 2016-06-27) to question 1831470, reaches the same lift without computing $\pi_1(P^2)$: it lifts $f\circ q$ along the quotient $q:S^2\to P^2$, whose domain is simply connected, and shows that the two values of the lift at antipodal points agree, because $x\mapsto\tilde g(x)-\tilde g(-x)$ is continuous, integer valued on the connected space $S^2$, and odd. That route is longer and is not used here; the answer 1840953 in the same thread is the argument above.
 
-::: pf-step
-
-$f$ induces $f_*: \pi_1(P^2) = \ZZ/2 \to \pi_1(S^1) = \ZZ$.
-
-::: pf-proof
-
-$\pi_1(P^2) = \ZZ/2$ and $\pi_1(S^1) = \ZZ$.
-
-:::
-
-:::
-
-::: pf-step
-
-$f_* = 0$.
-
-::: pf-proof
-
-the only homomorphism $\ZZ/2 \to \ZZ$ is the zero map (there is no element of order $2$ in $\ZZ$).
-
-:::
-
-:::
-
-::: pf-step
-
-Hence $f$ lifts to the universal cover $\RR \to S^1$.
-
-::: pf-proof
-
-the lifting criterion: $f_*(\pi_1(P^2)) = 0 \subseteq \pi_1(\RR) = 0$, so $f$ lifts to $\tilde f: P^2 \to \RR$.
-
-:::
-
-:::
-
-::: pf-step
-
-$\tilde f$ is null-homotopic (since $\RR$ is contractible).
-
-::: pf-proof
-
-$\RR$ is contractible, so any map into it is null-homotopic.
-
-:::
-
-:::
-
-::: pf-step
-
-Hence $f = p \circ \tilde f$ is null-homotopic.
-
-::: pf-proof
-
-composing a null-homotopy of $\tilde f$ with the covering map $p$ gives a null-homotopy of $f$.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-(b) The projection $f: T^2 = S^1 \times S^1 \to S^1$, $f(x, y) = x$, is not null-homotopic.
-
-::: pf-proof
-
-::: pf-step
-
-Take the projection $f: T^2 = S^1 \times S^1 \to S^1$ onto the first factor.
-
-::: pf-proof
-
-$f(x, y) = x$.
-
-:::
-
-:::
-
-::: pf-step
-
-$f_*: \pi_1(T^2) = \ZZ \oplus \ZZ \to \pi_1(S^1) = \ZZ$ is the projection onto the first factor.
-
-::: pf-proof
-
-the induced map on $\pi_1$ of a product projection is the projection.
-
-:::
-
-:::
-
-::: pf-step
-
-$f_*$ is nonzero (it is surjective), so $f$ is not null-homotopic.
-
-::: pf-proof
-
-a null-homotopic map induces the zero map on $\pi_1$.
-
-:::
-
-:::
-
-:::
-
-:::
-
-:::
-
+(b) The first projection
+$$
+f:T^2=S^1\times S^1\longrightarrow S^1,\qquad f(x,y)=x,
+$$
+is not nullhomotopic. Under the isomorphism $\pi_1(T^2)\cong\ZZ\oplus\ZZ$ of Corollary 60.2 (printed p. 372), the induced homomorphism $f_*$ carries $(r,s)$ to $r$; it is onto, and a nullhomotopic map induces the zero homomorphism on fundamental groups (Lemma 58.1, printed p. 348, with the constant map). So $f$ is not nullhomotopic. This part is the card's own: no answer in either saved thread treats part (b).
 :::

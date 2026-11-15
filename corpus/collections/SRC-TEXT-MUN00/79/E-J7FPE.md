@@ -13,6 +13,23 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §79 Exercise 5(a),(b), printed pp. 483--484. Searched outside the checkout for issue #146; the
+    record is tmp/sources/mse-searches-146.md and the saved sources are tmp/sources/mse-971171-E-J7FPE.md and
+    tmp/sources/gh-dyang5-MATH104-Topology-E-J7FPE.md, both read whole. Part (a): Math StackExchange 971171
+    (asked by ChesterX 2014-10-13) has one answer, 971387 by Sammy Black, which constructs the homeomorphism
+    from a matrix in GL_2(Z) through the lift to R^2 and asserts (phi_A)_* = A; the card's proof is that
+    construction with the computation of the induced map added, and now says which is which. Part (b): David
+    Yang, MATH104 Fall 2023 Homework 11, HW/hw11.tex lines 35-77 at commit 12686a815d, proves it from the
+    printed hint, part (a), the three product coverings and the equivalence theorem, with one slip (it writes
+    that f, the homeomorphism of part (a), is "the composition of a covering map and a homeomorphism" where
+    the composite q = f o p is meant; the card's text has the composite). The card's proof is that argument
+    with the book's numbers in place of his references, and it is now recorded as his on the card with the
+    commit and line range. Neither source omits a hypothesis of the exercise. Rejected in the search:
+    mse 371075 (rank-2 subgroups only).
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 79 Exercise 5, printed pp. 483--484. Part (a): every element of GL_2(Z) is induced by the torus homeomorphism of the linear map. Part (b): the three possible subgroups of Z^2 up to basis change, and the three standard coverings, so E is R^2, S^1 x R or T. Checked against Theorem 79.4 and the algebraic fact quoted in the printed hint. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
@@ -43,6 +60,8 @@ If $E$ is a covering space of $T$, then $E$ is homeomorphic either to $\RR^2$, o
 :::
 
 ::: {.solution}
+Both parts are taken from published solutions. Part (a)'s construction is Sammy Black's, answer 971387 (https://math.stackexchange.com/a/971387), posted 2014-10-13 to Math Stack Exchange question 971171, "Automorphism of fundamental group of torus" (https://math.stackexchange.com/questions/971171, asked by ChesterX on the same day): a matrix $A\in GL_2(\ZZ)$ lifts to the linear map $\tilde\varphi_A$ of $\RR^2$, which carries $\ZZ^2$ into itself and so descends to $T$, giving $(\varphi_A)_* = A$. That answer asserts the last equation without computing it, and the computation on the two factor circles below is this card's. Part (b) is David Yang's, *MATH104: Topology, Fall 2023*, Homework 11, in `HW/hw11.tex` lines 35--77 of `dyang5/MATH104-Topology` at commit 12686a815d58f29aeaadb90a30449ae85c0a613f (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw11.tex#L35-L77: the normal form of the printed hint, part (a) to put the subgroup into it, the three product coverings, and the equivalence theorem. The wording below is his argument with the book's results cited where he cites his own: he names Theorem 79.2 (printed p. 482) for the equivalence, Theorem 53.3 for products of coverings and Exercise 54.4 for the composition, and the card cites Theorem 53.3 (printed p. 339) and Theorem 79.4 (printed p. 482) for the same two steps.
+
 Write $p: \RR^2 \to T = \RR^2/\ZZ^2$ for the standard covering map of Theorem 53.1 (printed p. 337); it is the universal covering, since $\RR^2$ is convex and a loop $f$ in $\RR^2$ is path homotopic to the constant loop at $f(0)$ by $H(s,t) = (1-t)f(s)$.
 
 (a) The torus is $S^1 \times S^1$, so by Exercise 4 of §79 (printed p. 483) the projections of $T$ onto its two factors induce an isomorphism

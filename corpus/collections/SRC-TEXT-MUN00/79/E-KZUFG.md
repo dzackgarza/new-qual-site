@@ -14,6 +14,21 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres §79 Exercise 6(a)-(e), printed pp. 483--484. Searched outside the checkout for issue #146; the
+    record is tmp/sources/mse-searches-146.md and the saved threads are tmp/sources/mse-5391-E-KZUFG.md and
+    tmp/sources/mse-3967945-E-KZUFG.md, both read whole. Two of the five parts have published proofs and both
+    are now named on the card: part (b), the two-sided identity, is Jack Lee's answer 5414 (2010-09-25) to
+    question 5391, by comparing the map x -> m(x, e) with the identity as two lifts of p that agree at the
+    identity; part (d), associativity, is Jose Carlos Santos' answer 3967971 (2020-12-31) to question 3967945,
+    by projecting the two triple products to G and evaluating both at the triple identity. Part (d) is also
+    answer 3967979 by Bananach Space in the same thread, phrased through a deck transformation. Parts (a), (c)
+    and (e) are in neither thread and stay the card's own. The card's own proofs of (b) and (d) were the same
+    arguments; the card now says whose they are and keeps them. Rejected in the search: mse 4879182, a
+    different construction of a universal cover that proves only continuity.
+- event: source-checked
+  by: claude
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 79 Exercise 6, printed pp. 483--484. The lifted multiplication, identity and inverse by uniqueness of based lifts, then associativity, then uniqueness of the group structure. Checked part by part against the printed parts (a) to (e), with the lifting criterion of Theorem 79.1. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
@@ -78,7 +93,7 @@ $$
 $$
 pL(\tilde g)=m(e,p\tilde g)=p\tilde g,\qquad pR(\tilde g)=m(p\tilde g,e)=p\tilde g,
 $$
-so $L$ and $R$ both lift $p$ and both send $\tilde e$ to $\overline m(\tilde e,\tilde e)=\tilde e$; the identity map of $\overline G$ is a third such lift. By the uniqueness part of Lemma 79.1 (printed p. 478), $L=R=1_{\overline G}$. So $\tilde e$ is a two-sided identity for $\overline m$.
+so $L$ and $R$ both lift $p$ and both send $\tilde e$ to $\overline m(\tilde e,\tilde e)=\tilde e$; the identity map of $\overline G$ is a third such lift. By the uniqueness part of Lemma 79.1 (printed p. 478), $L=R=1_{\overline G}$. So $\tilde e$ is a two-sided identity for $\overline m$. This argument is Jack Lee's, answer 5414 (https://math.stackexchange.com/a/5414), posted 2010-09-25 to Math Stack Exchange question 5391, "Covering of a topological group is a topological group" (https://math.stackexchange.com/questions/5391, asked by Down on 2010-09-24): the map $x\mapsto\overline m(x,\tilde e)$ is a lift of $p$ agreeing with the identity at $\tilde e$, so the two agree by uniqueness of lifts.
 
 (c) For $A(\tilde g)=\overline m(\tilde g,\overline I(\tilde g))$ and $B(\tilde g)=\overline m(\overline I(\tilde g),\tilde g)$,
 $$
@@ -95,7 +110,7 @@ Their projections to $G$ agree, by associativity of the multiplication in $G$:
 $$
 pF=p\tilde g\cdot(p\tilde g'\cdot p\tilde g'')=(p\tilde g\cdot p\tilde g')\cdot p\tilde g''=pF',
 $$
-and both send $(\tilde e,\tilde e,\tilde e)$ to $\tilde e$. So $F$ and $F'$ are two based lifts of the same map out of the path connected and locally path connected space $\overline G\times\overline G\times\overline G$, and Lemma 79.1 (printed p. 478) gives $F=F'$, that is, $\overline m$ is associative.
+and both send $(\tilde e,\tilde e,\tilde e)$ to $\tilde e$. So $F$ and $F'$ are two based lifts of the same map out of the path connected and locally path connected space $\overline G\times\overline G\times\overline G$, and Lemma 79.1 (printed p. 478) gives $F=F'$, that is, $\overline m$ is associative. The comparison is José Carlos Santos', answer 3967971 (https://math.stackexchange.com/a/3967971), posted 2020-12-31 to Math Stack Exchange question 3967945, "Covering space of a topological group is itself a topological group" (https://math.stackexchange.com/questions/3967945, asked by user674359 on the same day): two triple products that project to the same map and agree at $(\tilde e,\tilde e,\tilde e)$ are equal. The second answer there, 3967979 by Bananach Space, expresses the same comparison as agreement of two maps differing by a deck transformation.
 
 (e) Parts (b), (c) and (d) show that $\overline m$ is an associative multiplication on $\overline G$ with two-sided identity $\tilde e$ and two-sided inverses $\overline I$, that is, a group structure; $\overline m$ and $\overline I$ are continuous by construction, so $(\overline G,\overline m,\overline I,\tilde e)$ is a topological group. By construction,
 $$
