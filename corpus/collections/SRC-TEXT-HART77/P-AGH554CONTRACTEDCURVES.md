@@ -49,26 +49,54 @@ audit:
   date: 2026-11-15
   note: >-
     Published proof located for this exercise (issue #121). M. Reid, Chapters on
-    Algebraic Surfaces (Explicit Birational Geometry of 3-folds, MSJ Memoirs
-    2000), Appendix A.7 "Contracted divisors are negative", Theorem (Negativity
-    of exceptional locus), printed p. 29 with its proof on printed pp. 29--31, is
-    part (b) verbatim and in greater generality: for a bunch of curves on a
-    nonsingular surface contracted to points by a projective birational morphism
-    f : Y -> X to any surface, the matrix (Gamma_i Gamma_j) is negative definite.
-    Read in tmp/sources/reid-chapters-algebraic-surfaces-mineru-p0029-0031.md,
-    the MinerU extraction of those pages; pdftotext was used only to fix which
-    PDF page carries the theorem. With k = 1 it gives Y^2 < 0, the
-    negative-self-intersection half of part (a). What it does not give is
+    Algebraic Surfaces, arXiv:alg-geom/9602006v1 (6 February 1996), a draft of
+    the notes submitted to the 1993 volume of the IAS/AMS Park City lecture notes
+    series (so the draft's "Status of this draft", printed p. 2, and the arXiv
+    record's comment field), Appendix A.7 "Contracted divisors are negative",
+    Theorem (Negativity of exceptional locus), with its statement on printed
+    p. 29 and its proof on printed pp. 30--31, is part (b) verbatim and in
+    greater generality: for a bunch of curves on a nonsingular surface contracted
+    to points by a projective birational morphism f : Y -> X to any surface, the
+    matrix (Gamma_i Gamma_j) is negative definite.
+    Read in tmp/sources/reid-chapters.md, the MinerU extraction of the whole
+    paper, which marks blocks of twenty PDF pages; that paper's folios agree with
+    its PDF pages, and the theorem was checked on pp. 29--31 of
+    tmp/sources/reid-chapters-algebraic-surfaces.pdf, whose pdftotext render
+    fixes which page carries what. With k = 1 it gives Y^2 < 0, the
+    negative-self-intersection half of part (a), and because a principal
+    submatrix of a negative definite matrix is negative definite it gives the
+    same for one curve among several components of a larger contracted fibre.
+    What it does not give is
     Y = P^1 for a curve inside a larger exceptional locus: Reid's statement of
     that is Castelnuovo's criterion, printed p. 10, an equivalence for a single
     contracted curve with the morphism an isomorphism outside it, and his route
     from Y^2 < 0 to Y^2 = -1 at a nonsingular image point is the Contraction
-    Theorem (Artin), printed pp. 92--94, with Theorem 4.17, printed pp. 94--95.
+    Theorem (Artin), stated on printed p. 93, with Theorem 4.17, whose section
+    begins on printed p. 95.
     So part (b) now has a published proof and part (a) one published half; the
     other half is the card's step contracted-curve-is-p1, as the body now says.
     Reid's proof is stated "for simplicity" under the connected-union,
     single-point, isomorphism-outside hypothesis (printed p. 30), and the card's
-    Hodge-index proof is the alternative he names in Ex. A.16.
+    Hodge-index proof is the alternative he names in Ex. A.16, printed p. 36.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Citation corrected on a reader's report, and re-checked in the replaced text
+    version (tmp/sources/reid-chapters.md, the whole paper, with its folios
+    checked against tmp/sources/reid-chapters-algebraic-surfaces.pdf). Reid is
+    cited here as arXiv:alg-geom/9602006v1, a draft of the notes submitted to the
+    1993 volume of the IAS/AMS Park City lecture notes series, and not as the MSJ
+    Memoirs volume: the draft says so in "Status of this draft" on printed p. 2,
+    and the arXiv record's comment field says "To appear in 1993 volume of the
+    IAS/AMS Park City lecture notes series". Theorem A.7's statement is on printed
+    p. 29 and its proof on printed pp. 30--31, not "p. 29 with proof pp. 29--31";
+    the Contraction Theorem (Artin) is stated on printed p. 93 and Theorem 4.17
+    begins on printed p. 95, not pp. 92--94 and 94--95; Ex. A.16 is on printed
+    p. 36. Section A.7's statement of the theorem is for a bunch of curves, and
+    part (a) for a curve among several components of a fibre follows from it by
+    restricting to the one-by-one principal submatrix, which the two step remarks
+    and the published-solution remark now say.
 ---
 
 ::: {.problem}
@@ -332,7 +360,7 @@ Y^2<0.
 $$
 Together with step [](#contracted-curve-is-p1){.pf-ref} this proves part (a).
 
-The negative self-intersection is Theorem A.7(1) of R. Reid, *Chapters on Algebraic Surfaces*, printed p. 29 (in *Explicit Birational Geometry of 3-folds*, MSJ Memoirs 2000), taken with $k=1$: a curve contracted to a point by a projective birational morphism of a nonsingular surface has negative self-intersection, with no hypothesis on the image surface. Reid's route to $Y\cong\PP^1$ is his Castelnuovo criterion, printed p. 10, which is the equivalence "$C$ is contracted to a point of a nonsingular surface with the morphism an isomorphism outside $C$ if and only if $C\cong\PP^1$ and $C^2=-1$", so that half of (a) is his when $f$ contracts the single curve $Y$; the half needed here, for a curve inside a larger exceptional locus, is step [](#contracted-curve-is-p1){.pf-ref} above.
+The negative self-intersection is Theorem A.7(1) of M. Reid, *Chapters on Algebraic Surfaces*, arXiv:alg-geom/9602006v1, whose statement is on printed p. 29 and whose proof is on printed pp. 30--31, taken with $k=1$: a curve contracted to a point by a projective birational morphism of a nonsingular surface has negative self-intersection, with no hypothesis on the image surface. Applied to the whole bunch of components of a contracted fibre it gives negative definiteness of that matrix, and a principal submatrix of a negative definite matrix is negative definite, so a curve $Y$ among several components of a fibre has $Y^2<0$ as well; that is what part (a)'s inequality rests on when $f$ contracts more than $Y$. Reid's route to $Y\cong\PP^1$ is his Castelnuovo criterion, printed p. 10, which is the equivalence "$C$ is contracted to a point of a nonsingular surface with the morphism an isomorphism outside $C$ if and only if $C\cong\PP^1$ and $C^2=-1$", so that half of (a) is his when $f$ contracts the single curve $Y$; the half needed here, for a curve inside a larger exceptional locus, is step [](#contracted-curve-is-p1){.pf-ref} above.
 :::
 
 :::
@@ -399,7 +427,7 @@ $$
 By step [](#fibre-classes-negative-square){.pf-ref} this quantity is strictly negative for every nonzero $a$.
 This is exactly negative definiteness of $A$, proving part (b).
 
-Part (b) is also Theorem A.7(1) of R. Reid, *Chapters on Algebraic Surfaces*, printed p. 29, in greater generality: there $f:Y\to X$ is any projective birational morphism of a nonsingular surface, $X$ is an arbitrary surface, and the intersection matrix of any bunch of curves contracted to points is negative definite. His proof occupies printed pp. 29--31 and is stated there for a bunch with connected union contracted to a single point with the morphism an isomorphism outside it ("for simplicity", printed p. 30); the argument above is the Hodge-index route he records as the alternative in Ex. A.16 and carries no such restriction.
+Part (b) is also Theorem A.7(1) of M. Reid, *Chapters on Algebraic Surfaces*, arXiv:alg-geom/9602006v1, statement on printed p. 29, in greater generality: there $f:Y\to X$ is any projective birational morphism of a nonsingular surface, $X$ is an arbitrary surface, and the intersection matrix of any bunch of curves contracted to points is negative definite. His proof occupies printed pp. 30--31 and is stated there for a bunch with connected union contracted to a single point with the morphism an isomorphism outside it ("for simplicity", printed p. 30); the argument above is the Hodge-index route he records as the alternative in Ex. A.16 and carries no such restriction.
 :::
 
 :::
@@ -416,6 +444,6 @@ complement to the whole exceptional fibre and prove part (b).
 :::
 
 ::: {.remark title="Published solution"}
-M. Reid, *Chapters on Algebraic Surfaces* (in *Explicit Birational Geometry of 3-folds*, MSJ Memoirs 2000), Theorem A.7(1), printed pp. 29--31, states part (b) as a theorem --- the intersection matrix of a bunch of curves contracted to points by a projective birational morphism of a nonsingular surface is negative definite --- and proves it; with $k=1$ it gives $Y^2<0$ in part (a), and his Castelnuovo criterion, printed p. 10, gives $Y\cong\PP^1$ with $Y^2=-1$ when the contraction has no other exceptional curve. The identity of the image point as a nonsingular one, which is what turns $Y^2<0$ into $Y^2=-1$ there, is his Contraction Theorem (Artin), printed pp. 92--94, with Theorem 4.17, printed pp. 94--95. The steps above are not a transcription of Reid: they reach both parts through the factorization into point blowups and Hodge index, the second of which he records as Ex. A.16, and they cover a contracted curve inside a larger exceptional locus, which his criterion does not.
+M. Reid, *Chapters on Algebraic Surfaces*, arXiv:alg-geom/9602006v1 (6 February 1996), a draft of the notes submitted to the 1993 volume of the IAS/AMS Park City lecture notes series, Theorem A.7(1), statement on printed p. 29 and proof on printed pp. 30--31, states part (b) as a theorem --- the intersection matrix of a bunch of curves contracted to points by a projective birational morphism of a nonsingular surface is negative definite --- and proves it; with $k=1$ it gives $Y^2<0$ in part (a), and by restriction to a principal submatrix the same for a curve among several components of a fibre, and his Castelnuovo criterion, printed p. 10, gives $Y\cong\PP^1$ with $Y^2=-1$ when the contraction has no other exceptional curve. The identity of the image point as a nonsingular one, which is what turns $Y^2<0$ into $Y^2=-1$ there, is his Contraction Theorem (Artin), stated on printed p. 93, with Theorem 4.17, whose section begins on printed p. 95. The steps above are not a transcription of Reid: they reach both parts through the factorization into point blowups and Hodge index, the second of which he records as Ex. A.16, and they cover a contracted curve inside a larger exceptional locus, which his criterion does not.
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.4, printed p. 298, is a corollary of the Hodge index theorem for contracted curves; its part (a) proves only $Y^2\le0$, from the false statement that the pullback of an ample divisor is ample, and says nothing about $Y\cong\PP^1$.
 :::

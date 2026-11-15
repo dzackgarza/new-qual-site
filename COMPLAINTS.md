@@ -1393,19 +1393,27 @@ and his 2011 draft):
   `tmp/sources/shitijyou-ch2-section{3,6}.pdf`, with Markdown text versions beside them (`.md`).
 - **R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry***, 21 October 2025 version,
   `https://math.stanford.edu/~vakil/216blog/FOAGoct2125public.pdf`: `tmp/sources/vakil-rising-sea-2025-10-21.pdf`,
-  852 pages, whose printed folios are its PDF page numbers. Read in MinerU Flash extractions of the page
-  ranges the cards cite, one file per range,
-  `tmp/sources/vakil-rising-sea-2025-10-21-mineru-pNNNN-NNNN.md`: pp. 260--262 (§9.3), 382--385 (§13.5),
-  445--447 (§15.5), 534--537 (§19.1), 544--550 (§§19.5--19.6), 554--557 (§19.9), 757--768 (§27) and
-  780--786 (§28.6). Sections used: 9.3, 13.5, 15.5, 19.1, 19.5, 19.6, 19.9, 27, 28.6.
-- **The Stacks Project**, version ed88ff78, compiled 14 July 2026,
-  `https://stacks.math.columbia.edu/download/book.pdf` (38 MB, 7655 pages), retained as
-  `tmp/sources/stacks-project-book.pdf`. **Each cited tag is saved as Markdown from that tag's own page**,
-  `tmp/sources/stacks-tags/<TAG>.md`, fetched from `https://stacks.math.columbia.edu/tag/<TAG>` with the
-  page's LaTeX kept as the page prints it: the 47 tags the `SRC-TEXT-HART77` cards cite. A statement is
-  cited by its tag and that file is the text version; the compiled book was used only to locate tags by
-  phrase, and the printed page numbers below are the 7655-page book's, which locate a tag in it. Searched
-  for the twisted cubic, the normal locus, quadrics, dimension, Riemann--Roch and the cohomology of curves.
+  852 pages, whose printed folios are its PDF page numbers. Read in `tmp/sources/vakil-rising-sea-2025-10-21.md`,
+  one MinerU Flash extraction of the whole book with its mathematics in LaTeX; the extraction marks blocks of
+  twenty PDF pages rather than single folios, so a printed page is named from the book's own numbering. The
+  earlier page-range files `tmp/sources/vakil-rising-sea-2025-10-21-mineru-pNNNN-NNNN.md` (pp. 260--262
+  §9.3, 382--385 §13.5, 445--447 §15.5, 534--537 §19.1, 544--550 §§19.5--19.6, 554--557 §19.9, 757--768 §27
+  and 780--786 §28.6) are superseded by it and deleted. Sections used: 9.3, 13.5, 15.5, 19.1, 19.5, 19.6,
+  19.9, 27, 28.6.
+- **The Stacks Project**, built from stacks-project commit
+  `a04446e57ec1fbc252a871afcec7752fb2807b14` (28 July 2026, "A couple of compatibilities for relative
+  cycles"; the latest commit the site's home page lists), as served on 2026-11-15. **Each cited tag is saved
+  as Markdown from that tag's own page**, `tmp/sources/stacks-tags/<TAG>.md`, fetched from
+  `https://stacks.math.columbia.edu/tag/<TAG>` with the page's LaTeX kept as the page prints it, and
+  `tmp/sources/stacks-tags/INDEX.md` lists them: **all 70 tags the `SRC-TEXT-HART77` cards cite**, each file
+  holding the tag's complete statement, proof, footnotes and LaTeX source (for a section tag, the whole
+  section). A statement is cited by its tag and that file is the text version. The separate compiled book,
+  `https://stacks.math.columbia.edu/download/book.pdf` (38 MB, 7655 pages), is retained as
+  `tmp/sources/stacks-project-book.pdf` and is a different build --- version ed88ff78, compiled 14 July
+  2026 --- so where an entry below gives a printed page it is that copy's page, and the file it was read in
+  is the tag file of the new build. The book was used only to locate tags by phrase and to fix printed
+  pages. Searched for the twisted cubic, the normal locus, quadrics, dimension, Riemann--Roch and the
+  cohomology of curves.
 - Web pages were saved as `.md` where used. The six Shichijo PDFs were extracted with MinerU Flash and its
   Japanese model (`mineru-open-api flash-extract <pdf> --language japan`, CLI v0.5.9 via
   `npm install -g mineru-open-api`, run with the project's own Node under `tmp/node`), as the next paragraph
@@ -1415,10 +1423,21 @@ and his 2011 draft):
   PDF page carries a passage, and to confirm a formula set in type --- never as a transcription, and no
   quotation is attributed to a source on the strength of it. The earlier version of this paragraph said
   every other text version here was "made with `pdftotext -layout` and split into pages"; that is not a text
-  version of a source under `AGENTS.md`'s extraction rule, and the two sources the entries below rest on,
-  Vakil and the Stacks Project, now have their own extractions, named above. What remains on the old
+  version of a source under `AGENTS.md`'s extraction rule, and the sources the entries below rest on have
+  their own extractions, named above and here: Reid, *Chapters on Algebraic Surfaces*, as
+  `tmp/sources/reid-chapters.md` (the whole paper, from `reid-chapters-algebraic-surfaces.pdf`, which is
+  arXiv:alg-geom/9602006v1 and whose folios are its PDF pages; the extraction marks blocks of twenty pages);
+  Yang Pi-Yeh's set as `tmp/sources/lfwin-hartshorne-solutions.md`; the NTU *Algebraic Geometry II* Chapter V
+  homework as `tmp/sources/ntu-ag2-chapter5.md`; and Davis--Sobieska as
+  `tmp/sources/davis-sobieska-rational-normal-curves-weighted.md`. Each of those replaced a `pdftotext`
+  output of the same stem with suffix `.txt` (`reid-chapters.txt`, `lfwin.txt`, `ntu-ag2-chapter5.txt`,
+  `davis-sobieska-rational-normal-curves-weighted.txt`), which are deleted, as are the four Stacks text files
+  taken from the old build (`stacks-project-book.md`, `stacks-project-53.9-plane-curves-tag0BYA.txt`,
+  `stacks-project-lemma-33.8.9-tag038I.txt`, `stacks-project-section-33.6-tag035U.txt`), the Reid page-range
+  extractions `reid-chapters-algebraic-surfaces-mineru-p{0010,0029-0031,0092-0095}.md`, and the two probes
+  `.tag-probe.html` and `mineru-probe.md`. What remains on the old
   footing is the page referencing of the retained solution sets (Egbert, Lomont, Cais,
-  Cutrone--Marshburn, Park, Kim, Yang): those pages were read in `pdftotext -layout` renders of the PDFs,
+  Cutrone--Marshburn, Park, Kim): those pages were read in `pdftotext -layout` renders of the PDFs,
   used as locators for the printed page, and no extraction of those PDFs is retained --- a gap recorded
   here rather than closed. No Mistral OCR was used: `MISTRAL_API_KEY` is unset and `tools/mistral_ocr.py`
   needs the key.
@@ -1460,11 +1479,16 @@ solution body, not only in the audit trail.
   $(0,\sum_{i+j=3}(i+j-2)c_{ij}v^j,2bdv-(ad+bc))$ is the derivative of the strict transform, but his first
   row, for the chart equation $y-vx$, is $(0,-v,0)$ where the derivatives are $(1,-v,-x)$: the $-x$
   vanishes on $E$ and the $1$ does not. **At $v=0$ that printed row is zero**, so the printed matrix has
-  rank at most one there and its minor in the last two columns, $-v(2bdv-(ad+bc))$, vanishes too; the
+  rank exactly one there --- not two, and not zero either, since its second row keeps the entry
+  $2bdv-(ad+bc)$, which at $v=0$ is $-(ad+bc)$ and at a point of $E$ with $v=0$, where $(a-bv)(c-dv)$
+  vanishes, is $-bc\ne0$ or $-ad\ne0$ --- and its minor in the last two columns, $-v(2bdv-(ad+bc))$,
+  vanishes with it; the
   points with $v=0$ are $P_1$ when $a=0$ and $P_2$ when $c=0$, and both for the node $xy$, which
   $f_2=(ax-by)(cx-dy)$ represents with $(a,b,c,d)=(0,1,-1,0)$. The printed rank-two claim therefore needs
-  the missing $1$. An earlier version of this entry said the difference "does not affect the conclusion"
-  and that the deciding minor is nonzero as printed; both sentences were false and the card's step now
+  the missing $1$ alone; the printed $0$ in place of $-x$ is the value $x=0$ on $E$. An earlier version of
+  this entry said the difference "does not affect the conclusion"
+  and that the deciding minor is nonzero as printed; both sentences were false, a later one said "rank at
+  most one" where the printed rank is one, and the card's step now
   records the column order, the source's two rows, and takes the deciding minor from the computed matrix.
   The card supplies the $V_1$ chart and marks it as its own.
 - `P-AGH67PUNCTUREDLINE` (I.6.7): **searched for the $r=s$ direction, assertion for the converse.** The card
@@ -1499,10 +1523,13 @@ solution body, not only in the audit trail.
   its identification with $\Pic^0$. Vakil's hypothesis is a regular curve, so the singular-case argument of
   `s6` -- the length-one computation $\mco_{X,P}/(a)\cong k$ that puts $P$ in $X_{\reg}$ -- is the card's.
 - `P-AGH422GENUSTWOMODULI` (IV.2.2): **cited, not transcribed.** The assertions of (a) and (b) are Vakil's:
-  19.5.2 with its proof runs over printed pp. 546--548; 19.5.4, printed pp. 547--548, is the genus $r/2-1$,
-  computed from the Čech complex of the two affine charts; 19.5.6, printed p. 548, identifies
+  19.5.1, printed p. 546, is the count $2g+2$ of branch points, and it is *proved* in 19.5.2, printed
+  pp. 546--547, and 19.5.4, printed pp. 547--548, which is the genus $r/2-1$,
+  computed from the Čech complex of the two affine charts and ends "from which Theorem 19.5.1 follows";
+  19.5.6, printed p. 548, identifies
   the hyperelliptic cover with the canonical one, and 19.5.7's proof is on printed p. 549; 19.6.2, printed
-  p. 550, assembles the bijection. The card's steps `s1`, `s2` and `s4` are its own proofs of the same
+  p. 550, is where $\omega_C$, of degree $2$ with two sections, gives the double cover, and there the
+  count $2g+2=6$ is quoted from 19.5.1. The card's steps `s1`, `s2` and `s4` are its own proofs of the same
   statements --- Riemann--Hurwitz for the branch count and for $g(X)=2$, Riemann--Roch for the uniqueness of
   the degree-two morphism --- and the body and the remark now say so instead of claiming to give his
   arguments. Part (c) has **no** published proof here: three-transitivity of
@@ -1531,8 +1558,12 @@ against his choice of hyperplane in 7.7(b)) were nowhere in the text that was be
 therefore extracted again with MinerU Flash's Japanese model,
 `mineru-open-api flash-extract <pdf> --language japan` (CLI v0.5.9, `npm install -g mineru-open-api` under
 the project's own `tmp/node`), giving `tmp/sources/shitijyou-ch{1,2}-section{2,3,5,6,7}.md` beside the
-PDFs; the `.txt` files are gone. The six new files hold between 2 083 and 5 353 Japanese characters each
-(hiragana, katakana and CJK ideographs; 5 349 in Chapter 1 section 5) and contain
+PDFs; the `.txt` files are gone. The six new files hold between 2 080 and 5 352 characters of Japanese
+script each, counted as hiragana, katakana and CJK unified ideographs (U+3040--U+309F, U+30A0--U+30FF,
+U+4E00--U+9FFF; 5 348 in Chapter 1 section 5), and between 2 083 and 5 353 if the iteration mark 々
+(U+3005), which occurs 0 to 3 times in a file and is not one of those three classes, is counted too; both
+figures are given once, here, and the two values an earlier version of this file carried were those two
+conventions. They contain
 every passage quoted in this file: `なので` occurs 4 times in the file with the fewest (Chapter 2 section 6)
 and 22 in Chapter 1 section 5 and in Chapter 2 section 3, `と仮定し` in Chapter 1 sections 5,
 6 and 7 and in Chapter 2 section 3, and `(？)` once, against the author's choice of hyperplane in 7.7(b) of
@@ -1632,20 +1663,23 @@ nearest located text does and what it does not do. None of them is closed, and n
   and tangent loci by the count $n>2r+1$ is not in Vakil at all.
 - `P-AGH4312NODALCURVESEXIST` (IV.3.12), `P-AGH4422FAMILYOVERAFFINELINE` (IV.4.22),
   `P-AGH469NONSINGULARSURFACECONTAININGACURVE` (IV.6.9): no located source; the cards keep their proofs.
-- The twenty-four Chapter V cards: Vakil's Chapter 27, printed pp. 757--768, proves that every smooth cubic
+- The Chapter V cards: Vakil's Chapter 27, printed pp. 757--768, proves that every smooth cubic
   surface contains 27 lines and is $\PP^2$ blown up at six points, which is the first half of V.4.16 and not
   its equations or its automorphism group, and his 28.6, printed p. 785, is Castelnuovo's criterion, which
   contracts a $(-1)$-curve and so is the converse of V.5.4. The Stacks Project's §54.16 (tags 0C2I--0C2M,
-  printed pp. 4548--4552) is the same contraction theorem, and its §55.2--§55.3 (tags 0C5X, 0C6Z, 0C73) is
+  printed pp. 4548--4552 of the retained compiled book) is the same contraction theorem, and its
+  §55.2--§55.3 (tags 0C5X, 0C6Z, 0C73) is
   the negative-definiteness linear algebra for numerical types of regular models over a curve, not for the
   components of a fibre of a birational map of surfaces. Neither states V.5.4; that exercise's part (b) is a
-  theorem of Reid's *Chapters on Algebraic Surfaces* (Theorem A.7(1), printed pp. 29--31), located after this
+  theorem of Reid's *Chapters on Algebraic Surfaces* (Theorem A.7(1), statement on printed p. 29 and proof on
+  pp. 30--31), located after this
   pass, and nothing located states
-  V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, V.4.7--V.4.15, V.5.1, V.5.5--V.5.7, V.6.1 or V.6.2.
+  V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, V.4.7--V.4.15, V.5.5, V.5.6, V.6.1 or V.6.2.
 
 **Still open, and why.** The cards above that this pass did not close keep their own proofs and the
 obligation recorded in their sections. Two have come off this list since: IV.1.8(c), whose decisive step is
-the Stacks Project's, version ed88ff78, printed pp. 2899--2901 and 2904, now transcribed on the card, and
+the Stacks Project's, printed pp. 2899--2901 and 2904 of the retained compiled book and read in the tag
+files of the new build, now transcribed on the card, and
 IV.1.5, which is Stacks Lemma 53.3.5 (tag 0CCS), printed pp. 4436--4437, with Lemma 53.10.2(1) (tag 0C6T),
 printed p. 4450, for the converse. The ones where a
 further search is the next step are
@@ -1654,19 +1688,24 @@ Landesman's and Kim's notes state it), `P-AGH55NONSINGDEGD` (now only $p=3$ with
 being covered by Stacks tag 0BYA and by Shichijo's elimination read in $k$),
 `P-AGH67PUNCTUREDLINE`'s converse, `P-AGH77CONEDEGDROP`, `P-AGH374COHOMCLASS` (III.7.4(b),(d)),
 `P-AGH3117NONALGSHEAF`, `P-AGH3123JUMPINGIDEAL`, IV.2.3(h), IV.3.4(a), IV.3.11(a),
-IV.3.12, IV.4.22, IV.6.9, and the twenty-three Chapter V cards that the section entries still record as
-uncovered --- V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, the ten of V.4.7--V.4.16, V.5.1 and
-V.5.5--V.5.7, and V.6.1, V.6.2 --- whose published treatments would have to come from a source this pass
-did not locate: the NTU set stops at V.4.4(b), Yang Pi-Yeh's entries for V.4.7--V.6.2 are the ones this
-file already recorded as incomplete, and Dolgachev's *Topics in Classical
-Algebraic Geometry* download is a six-page title stub, not the book. V.5.4 has come off that list since:
-the earlier note that "Reid's Chapter 4 proves the contraction theorem of V.5.4 and does not state the
-exercise" looked only at Chapter 4, and Reid's Appendix A.7 (Theorem, printed pp. 29--31) states part (b)
-outright, while his Castelnuovo criterion, printed p. 10, covers part (a)'s $Y\cong\PP^1$ for the single
-contracted curve.
+IV.3.12, IV.4.22, IV.6.9, and the twenty-one Chapter V cards that the section entries still record as
+uncovered --- V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, the ten of V.4.7--V.4.16,
+V.5.5, V.5.6, and V.6.1, V.6.2. V.5.4 has come off that list, and V.5.1 and V.5.7 with it (below).
+Of the two sources this paragraph used to dispose of, one was misdescribed: the NTU set does **not** stop at
+V.4.4(b). Read in its MinerU extraction `tmp/sources/ntu-ag2-chapter5.md` it has section 4 exercises
+1--5, 7, 10--12, 14 and 16, section 5 exercises 1--4, 7 and 8, and a heading for section 6 with nothing
+under it; its V.4.7 says "for $d=4$, I don't know", its V.4.11 part (c) is empty, its V.4.14 gives a table
+for $d\\ge8$ only, and its V.5.7 ends by concluding $Y^2=0$ from $0\\ge mY^2$, so none of those is a complete
+solution. Yang Pi-Yeh's entries for V.4.7--V.6.2, read in `tmp/sources/lfwin-hartshorne-solutions.md`, are
+fuller than the earlier `pdftotext` render showed and are now the entries this file describes; his V.6.1 and
+V.6.2 remain sketches, and Dolgachev's *Topics in Classical
+Algebraic Geometry* download is a six-page title stub, not the book. V.5.4's part (b) is Reid's Appendix
+A.7, whose statement is on printed p. 29 and whose proof is on pp. 30--31, while his Castelnuovo criterion,
+printed p. 10, covers part (a)'s $Y\cong\PP^1$ for the single contracted curve.
 
-**Repair.** Recorded for the next pass, not done here: a source for the thirty-seven Chapter V cards that
-remain (V.5.4's part (b) having been closed by Reid's Theorem A.7(1)), for
+**Repair.** Recorded for the next pass, not done here: a source for the thirty-five Chapter V cards that
+remain (V.5.4's part (b), V.5.1 and V.5.7 having been closed since, by Reid's Theorem A.7(1) and by the NTU
+set's Exercise 5.1), for
 the two Chapter III cards whose printed statements are false, and the Stack Exchange search once the
 throttle expires.
 
@@ -1772,9 +1811,13 @@ search was over the retained 7655-page book (version ed88ff78), tag by tag and b
   $\PP^1$ with negative self-intersection) or (b) for the components of a fibre of a birational map of
   surfaces; the surface-theoretic input would have to come from the contraction theorem of §54.16, which is
   the converse direction. **Part (b) is however a published theorem elsewhere**: M. Reid, *Chapters on
-  Algebraic Surfaces* (MSJ Memoirs 2000), Theorem A.7(1), printed pp. 29--31, negative definiteness of the
+  Algebraic Surfaces*, arXiv:alg-geom/9602006v1 (6 February 1996), a draft of the notes submitted to the 1993
+  volume of the IAS/AMS Park City lecture notes series (its "Status of this draft", printed p. 2, and the
+  arXiv record's comment field), Theorem A.7(1), statement on printed p. 29 and proof on printed pp. 30--31,
+  negative definiteness of the
   intersection matrix of a bunch contracted by a projective birational morphism of a nonsingular surface,
-  read in `tmp/sources/reid-chapters-algebraic-surfaces-mineru-p0029-0031.md`; with $k=1$ it gives $Y^2<0$,
+  read in `tmp/sources/reid-chapters.md`; with $k=1$ it gives $Y^2<0$, and by restriction to a principal
+  submatrix the same for one curve among several components of a fibre,
   and Reid's Castelnuovo criterion, printed p. 10, gives $Y\cong\PP^1$ with $Y^2=-1$ for a single contracted
   curve. See the entry in the Chapter V section above.
 - **Not closed: I.2.9(b) and IV.3.4(a).** A phrase search of the book returns no occurrence of "Veronese",
@@ -1799,21 +1842,24 @@ mathematics a card proves.
 
 - **The text versions were `pdftotext` outputs.** The entry above said the Vakil and Stacks text versions were
   "made with `pdftotext -layout`". `pdftotext` is not a source's text version under `AGENTS.md`. Both sources
-  now have their own: the Stacks Project's 47 cited tags as one Markdown file each, saved from the tag's own
-  page with its LaTeX (the entry above names them), and Vakil's *Rising Sea* as MinerU Flash extractions of
-  the eight page ranges the cards cite. `pdftotext -layout` keeps only the page-locator role it always had.
-- **The Japanese character counts were not character counts.** The two paragraphs on the Shichijo extraction
-  gave 2 080--5 352 kana and kanji per file as 6 570--17 222, 16 862 for Chapter 1 section 5 as 5 348, and
-  `なので` 4--22 times as 4--21, and line 1406 said the `--language en` file held "no Japanese character"
-  where the later paragraph said 135. Measured on the six retained files the counts are 2 083--5 353
-  Japanese characters, 5 349 in Chapter 1 section 5, and `なので` 4 times in the file with the fewest and 22
-  in two; they are now stated once, in the paragraph that measures them, and the unretained `--language en`
-  file's count is not restated.
+  now have their own: the Stacks Project's cited tags as one Markdown file each, saved from the tag's own
+  page with its LaTeX (the entry above names them), and Vakil's *Rising Sea* as one MinerU Flash extraction
+  of the whole book. `pdftotext -layout` keeps only the page-locator role it always had.
+- **The Japanese character counts were not character counts, and were given twice.** The two paragraphs on
+  the Shichijo extraction gave 2 080--5 352 kana and kanji per file as 6 570--17 222, 16 862 for Chapter 1
+  section 5 as 5 348, and `なので` 4--22 times as 4--21, and one line said the `--language en` file held "no
+  Japanese character" where the later paragraph said 135. Measured again on the six retained files, the two
+  values that appeared for the same measure were the same count under two conventions: 2 080--5 352
+  excluding the iteration mark 々 and 2 083--5 353 including it. They are now stated once, in the paragraph
+  that measures them, with the character classes named and 々 named separately, and the unretained
+  `--language en` file's count is not restated.
 - **I.5.6(b), "does not affect the conclusion" is false at $v=0$.** The source orders its columns $(y,x,v)$
   and prints the chart-equation row as $(0,-v,0)$ where the derivatives are $(1,-v,-x)$; at $v=0$ that row
-  is zero, so the printed $J_0$ has rank at most one there and its last-two-columns minor
-  $-v(2bdv-(ad+bc))$ vanishes too. Those points are $P_1$ when $a=0$ and $P_2$ when $c=0$, both for the node
-  $xy$, so the printed rank-two claim needs the missing $1$; the card's step now says so instead of saying
+  is zero, so the printed $J_0$ has rank exactly one there --- the second row keeps $2bdv-(ad+bc)$, which at
+  the points of $E$ with $v=0$ is $-bc$ or $-ad$, nonzero --- and its last-two-columns minor
+  $-v(2bdv-(ad+bc))$ vanishes with the row. Those points are $P_1$ when $a=0$ and $P_2$ when $c=0$, both for the node
+  $xy$, so the printed rank-two claim needs the missing $1$ and only the $1$, the printed $0$ being $-x$
+  on $E$; the card's step now says so instead of saying
   the rank conclusion is unaffected, and records the source's second row $(0,\sum,B)$, which is the
   computed one.
 - **I.5.13 gave the wrong property to the annihilator argument.** It proves the openness of the normal locus
@@ -1834,15 +1880,96 @@ mathematics a card proves.
   same instead of calling the exercise closed outright.
 
 **V.5.4 is the one card closed in this pass, by a source the earlier passes had not opened.** M. Reid,
-*Chapters on Algebraic Surfaces* (in *Explicit Birational Geometry of 3-folds*, MSJ Memoirs 2000), Appendix
-A.7, Theorem (Negativity of exceptional locus), printed pp. 29--31, is part (b) of the exercise verbatim and
-in greater generality; taken with $k=1$ it gives $Y^2<0$ in part (a), and Reid's Castelnuovo criterion,
+*Chapters on Algebraic Surfaces*, arXiv:alg-geom/9602006v1 (6 February 1996), a draft of the notes submitted
+to the 1993 volume of the IAS/AMS Park City lecture notes series, Appendix
+A.7, Theorem (Negativity of exceptional locus), statement on printed p. 29 and proof on printed pp. 30--31,
+is part (b) of the exercise verbatim and
+in greater generality; taken with $k=1$ it gives $Y^2<0$ in part (a), the restriction to a principal
+submatrix giving the same for one curve among several components of a fibre, and Reid's Castelnuovo
+criterion,
 printed p. 10, gives $Y\cong\PP^1$ with $Y^2=-1$ for a single contracted curve. `P-AGH554CONTRACTEDCURVES`
 cites all three in the body, says which half each covers, and keeps its own Hodge-index proof, which is the
-alternative Reid names in Ex. A.16 and which reaches the general case his proof simplifies away. Read in
-`tmp/sources/reid-chapters-algebraic-surfaces-mineru-p{0010,0029-0031,0092-0095}.md`.
+alternative Reid names in Ex. A.16, printed p. 36, and which reaches the general case his proof simplifies
+away. Read in `tmp/sources/reid-chapters.md` (the whole paper; its folios are the PDF pages of
+`tmp/sources/reid-chapters-algebraic-surfaces.pdf`, whose Artin contraction theorem is stated on printed
+p. 93 and whose Theorem 4.17 begins on printed p. 95, not the pages an earlier version of this entry gave).
 
 **What was not done.** Math Stack Exchange remains unsearched: the throttle in the §60--§73 entry runs to
 about 2026-11-16 03:00Z, and this pass ended before it. The other Chapter V cards, III.7.4(b),(d),
 III.11.7(a), III.12.3, I.2.9(b), IV.3.4(a), IV.3.12, IV.4.22 and IV.6.9 still have no located published
 proof, and the entries above say what the nearest located text does and does not do.
+
+## `SRC-TEXT-HART77` #121: the text versions replaced, the tag audit, and the two cards that closed
+
+**The text versions were replaced in `tmp/sources/`, and every reference now names a file that exists.** The
+superseded files were deleted: the `pdftotext` outputs `reid-chapters.txt`,
+`davis-sobieska-rational-normal-curves-weighted.txt`, `lfwin.txt`, `ntu-ag2-chapter5.txt`; the four Stacks
+files of the old build `stacks-project-book.md`, `stacks-project-53.9-plane-curves-tag0BYA.txt`,
+`stacks-project-lemma-33.8.9-tag038I.txt`, `stacks-project-section-33.6-tag035U.txt`; the eight Vakil
+page-range extractions `vakil-rising-sea-2025-10-21-mineru-pNNNN-NNNN.md`; the three Reid page-range
+extractions `reid-chapters-algebraic-surfaces-mineru-p{0010,0029-0031,0092-0095}.md`; and the two probes
+`.tag-probe.html` and `mineru-probe.md`. Their replacements are the whole-book and whole-paper extractions
+`reid-chapters.md`, `vakil-rising-sea-2025-10-21.md`, `lfwin-hartshorne-solutions.md`,
+`ntu-ag2-chapter5.md`, `davis-sobieska-rational-normal-curves-weighted.md`, and the tag files
+`stacks-tags/<TAG>.md` with `stacks-tags/INDEX.md`. The cards that named a deleted file now name its
+replacement: `P-AGH415DIMLEQDEG` and `P-AGH418ARITHGENUSSINGULAR` the two tag files and the retained compiled
+book for their printed pages, and `P-AGH554CONTRACTEDCURVES` `tmp/sources/reid-chapters.md`. The two Vakil
+cards the brief listed with them, `P-AGH4110PICOFARITHGENUSONE` and `P-AGH422GENUSTWOMODULI`, already named
+`tmp/sources/vakil-rising-sea-2025-10-21.md`, whose contents were replaced under the same name, so their
+citations needed no repointing; their pages were re-checked instead.
+
+**The Stacks version.** The tag files are the site's build from stacks-project commit
+`a04446e57ec1fbc252a871afcec7752fb2807b14` (28 July 2026), and that is the version a tag citation now
+gives. The retained compiled book, `stacks-project-book.pdf`, is a different and older build, version
+ed88ff78 compiled 14 July 2026, and it is the only place a printed page for a tag can come from; the two
+cards that quote one say which build's page it is.
+
+**The six tags whose old files had lost text, checked against the new ones.** 0CCS, 0C6T, 01PW, 02JN, 01XD
+and 0BYA are cited on seven cards. Each was read in its new file and compared with the claim the card
+makes of it, and no claim rested on text the old files lacked: 0CCS and 0C6T (`P-AGH415DIMLEQDEG`) are the
+inequality and the genus-zero converse, 0CCS's printed statement still carrying no $d>0$ hypothesis and its
+equality proof still passing to a power of $L$ "since $\mathcal L$ is ample"; 01PW
+(`P-AGH2714PROJVERYAMPLE`, and the audit note of `P-AGH368KLEIMAN`) is the localization formula
+$\Gamma_*(X,\mathcal L)_{(s)}\cong\Gamma(X_s,\mathcal O_X)$ for $X$ quasi-compact and quasi-separated, which
+is what both cards use; 02JN (`P-AGH284COMPINT`, `P-AGH355COMPINT`) is the dimension criterion for a
+regular sequence in a Noetherian local **Cohen--Macaulay** ring, and both cards establish that the ring is
+Cohen--Macaulay before applying it; 01XD (`P-AGH3111PUNCTAFFINE`) is the Čech comparison for a covering whose
+finite intersections are affine, which is the hypothesis the card checks; and 0BYA
+(`P-AGH55NONSINGDEGD`) prints the Fermat equation for $p\nmid d$ and
+$T_0^{d-1}T_1+T_1^{d-1}T_2+T_2^{d-1}T_0$ for $p\mid d$, $p\ne3$, with the derivative check in its footnote
+and "we leave it to the reader" for characteristic $3$ --- exactly as the card describes it. One correction
+did come out of the check, not from missing text but from a misattribution: on
+`P-AGH418ARITHGENUSSINGULAR` the invariance of $\delta$ under completion had been credited to Definition
+33.39.7 (tag 0C1T), which only defines $\delta$ of $X$ at $x$, and the item (9) the step uses had been
+called $0C1T(9)$ where it is Lemma 33.41.2 (tag 0C1R), item (9). Both are corrected there.
+
+**Two cards closed, and what closed them.** `P-AGH551RESOLVERATFN` (V.5.1) is *Algebraic Geometry II*,
+National Taiwan University, 2020 Spring, Chapter V homework, Exercise 1 (Po-Sheng Wu), printed p. 19: blow up
+a zero--pole intersection and the intersection number $(\pi^*f)_0\cdot(\pi^*f)_\infty$ drops by
+$\mu_P((f)_\infty)^2$, so the blowups terminate and the zeros and poles become disjoint. The card transcribes
+it in step `zero-pole-disjoint`, supplies the two estimates its display omits, and keeps its own local
+Euclidean-measure proof of the same decrease. `P-AGH557NEGSELFINT` (V.5.7) is Reid's Theorem A.7(1) at
+$k=1$: the card's corrected statement (the printed one needs $f$ dominant, which the card proves) is that
+theorem's single-curve case, and the remark records the Stein-factorisation argument that the printed
+hypothesis makes $f$ birational, which is what Reid's "projective birational morphism" asks. Its two other
+candidates do not prove it: Egbert's V.5.7 (printed p. 300) is a cross-reference to his defective V.5.4
+entry, and the NTU set's Exercise 5.7 (printed p. 21) concludes $Y^2=0$ from $0\ge mY^2$.
+
+**What the remaining Chapter V cards' nearest sources now do, read in the new extractions.** Yang Pi-Yeh's
+Chapter V solutions begin at printed p. 100 of `tmp/sources/lfwin-hartshorne-solutions.md` and were
+previously read through a `pdftotext` render that lost their mathematics, so several entries that this file
+called empty are arguments. His 5.5.1 is a version of V.5.1; his 5.5.2 is a version of V.5.2; his 5.5.4(a)
+repeats the false ampleness claim of Egbert's entry ("$f^*H$ is ample on $X$"), and 5.5.4(b) argues negative
+definiteness by the two-hyperplane route; his 5.5.7 aims at V.5.7 through $mY=\tilde H_1-\tilde H_0$ and
+needs $\tilde H_0\cdot Y>0$ for the strict inequality, which it does not establish; his 5.5.8 carries out the
+eight blowups of V.5.8; and his 5.6.1 and 5.6.2 are the sketches this file already described. None of the
+Chapter V cards left open is closed on him. The NTU set reaches further than
+this file said (section 4 exercises 1--5, 7, 10--12, 14, 16 and section 5 exercises 1--4, 7, 8) and is
+defective on V.4.7 ($d=4$ left open), V.4.11(c) (empty) and V.5.7 (the wrong conclusion above). Reid's
+Chapters on Algebraic Surfaces were searched again in the whole-paper extraction for V.2, V.3, V.4 and V.6:
+Chapter 2 is rational scrolls (printed pp. 14--23) and the classification chapter defines a ruled surface and
+discusses its singular fibres (printed pp. 51--52), it has no treatment of the invariant $e$ of V.2.5 or of
+the elliptic ruled surfaces of V.2.12--V.2.13, its one mention of an elementary transformation is an
+operation on vector bundles (printed p. 43, not V.5.5's), and it has no Chern--Griffiths bound. Nothing
+there states
+V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, V.4.7--V.4.16, V.5.5, V.5.6, V.6.1 or V.6.2.

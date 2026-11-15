@@ -33,7 +33,7 @@ audit:
     Geometry, 21 October 2025 version, Sections 19.5--19.6, printed pp. 546--551,
     read in tmp/sources/vakil-rising-sea-2025-10-21.md. Theorem 19.5.1, printed
     p. 546, is the hyperelliptic Riemann--Hurwitz formula; Proposition 19.5.2 with
-    its proof runs over printed pp. 546--548 and constructs the double cover
+    its proof runs over printed pp. 546--547 and constructs the double cover
     branched at a prescribed even set of points as the normalization of
     y^2 = f(x), f the product of the linear factors; 19.5.4, printed pp. 547--548,
     computes its genus as r/2 - 1, which for r = 6 is 2; Proposition 19.5.6,
@@ -62,6 +62,22 @@ audit:
     the two proofs share, and nothing in steps s1--s5 reproduces his text.
     Unchanged: parts (c), (d) and (e) have no published proof in Vakil, (c) being
     his Exercise 15.5.B.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Attributed counts corrected on a reader's report of issue #121, and the page
+    ranges re-read in the whole-book extraction tmp/sources/vakil-rising-sea-2025-10-21.md
+    with the pages checked in tmp/sources/vakil-rising-sea-2025-10-21.pdf, whose
+    printed folios are its PDF pages. 19.5.1 is the theorem that a double cover
+    has 2g+2 branch points, printed p. 546; it is proved by 19.5.2 (printed
+    pp. 546--547) and 19.5.4 (printed pp. 547--548, ending "g = r/2 - 1, from
+    which Theorem 19.5.1 follows"), not read off from omega. It is 19.6.2,
+    printed p. 550, where omega_C of degree 2 with two sections gives the double
+    cover, and there the count 2g+2 = 6 is quoted from 19.5.1. The earlier events
+    gave 19.5.2 as pp. 546--548 and said the count was "restated as 19.6.2 ... who
+    reads it off from omega_X"; both are corrected in the body, which now says
+    which proposition is which.
 review: draft
 
 ---
@@ -92,7 +108,7 @@ Then the last three are the new $\beta_1', \beta_2', \beta_3'$.
 :::
 
 ::: {.solution}
-The assertions of parts (a) and (b) are the ones R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5, 19.6], printed pp. 546--550, proves: Proposition 19.5.2, printed pp. 546--548, constructs the double cover branched at a prescribed even set of points by writing it as $y^2=f(x)$ and normalizing; 19.5.4, printed pp. 547--548, computes its genus as $r/2-1$ from the Čech complex of the two affine charts; Proposition 19.5.7, printed pp. 548--549, proves that a curve of genus at least $2$ admits at most one double cover of $\PP^1$, through the canonical map; and 19.6.2, printed p. 550, assembles these into the bijection between genus-$2$ curves and double covers branched at six points. The steps below are not a transcription of Vakil's: they prove (a) and (b) in Hartshorne's terms, by Riemann--Hurwitz for the six branch points and for $g(X)=2$, and by Riemann--Roch for the uniqueness of the degree-two morphism, and each step says which of his propositions states the same thing. Part (c) is not in Vakil: three-transitivity of $\Aut\PP^1$ is Exercise 15.5.B there, so step [](#s6){.pf-ref} is this card's own.
+The assertions of parts (a) and (b) are the ones R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5, 19.6], printed pp. 546--550, proves: Theorem 19.5.1, printed p. 546, is the count $2g+2$ of branch points, proved in 19.5.2, printed pp. 546--547, which constructs the double cover branched at a prescribed even set of points by writing it as $y^2=f(x)$ and normalizing, and in 19.5.4, printed pp. 547--548, which computes its genus as $r/2-1$ from the Čech complex of the two affine charts; Proposition 19.5.7, printed pp. 548--549, proves that a curve of genus at least $2$ admits at most one double cover of $\PP^1$, through the canonical map; and 19.6.2, printed p. 550, is where $\omega_C$, of degree $2$ with two sections, gives the double cover and assembles the bijection between genus-$2$ curves and double covers branched at six points. The steps below are not a transcription of Vakil's: they prove (a) and (b) in Hartshorne's terms, by Riemann--Hurwitz for the six branch points and for $g(X)=2$, and by Riemann--Roch for the uniqueness of the degree-two morphism, and each step says which of his propositions states the same thing. Part (c) is not in Vakil: three-transitivity of $\Aut\PP^1$ is Exercise 15.5.B there, so step [](#s6){.pf-ref} is this card's own.
 
 ::: pf
 
@@ -139,7 +155,7 @@ Their images in $\PP^1$ are distinct: a ramification point already has
 multiplicity $2$ in its fibre, which exhausts the degree of $f$. Thus the
 map has exactly six branch points as well.
 
-The same count is R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §19.5.1], printed p. 546, restated as 19.6.2 on printed p. 550, who reads it off from $\omega_X$ having degree $2$ and two sections; the count above is Riemann--Hurwitz.
+The same count is R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, Theorem 19.5.1], printed p. 546, which states it as the hyperelliptic Riemann--Hurwitz formula: a double cover of $\PP^1$ by a projective regular irreducible curve of genus $g$ has $2g+2$ branch points. His proof is 19.5.2, printed pp. 546--547, which constructs the double cover branched at a prescribed set of points as the normalization of $y^2=f(x)$ and is unique, and 19.5.4, printed pp. 547--548, which computes its genus as $r/2-1$ from the Čech complex of the two affine charts and so completes the theorem; 19.6.2, printed p. 550, is where $\omega_X$, of degree $2g-2=2$ with two sections, is what gives the double cover $X\to\PP^1$, and it is there that the count $2g+2=6$ is quoted from 19.5.1. The count above is Riemann--Hurwitz.
 
 :::
 

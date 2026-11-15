@@ -31,23 +31,30 @@ audit:
     Printed exercise read: Hartshorne, Algebraic Geometry (1977), IV.1.8(c),
     printed p. 299. Published proof of the decisive step located: the Stacks
     Project, Chapter 33, Section 33.39 (The delta invariant) and Section 33.41,
-    version ed88ff78, compiled 14 July 2026 (tmp/sources/stacks-project-book.pdf),
-    read in tmp/sources/stacks-project-book.md. Definition 33.39.3 (tag 0C3T),
+    tag by tag, read in tmp/sources/stacks-tags/0C3T.md and the other tag files
+    named below, which are the site's build from stacks-project commit
+    a04446e57ec1fbc252a871afcec7752fb2807b14 (28 July 2026); the printed pages
+    quoted here and below are those of the retained compiled book of version
+    ed88ff78, compiled 14 July 2026 (tmp/sources/stacks-project-book.pdf).
+    Definition 33.39.3 (tag 0C3T),
     printed p. 2899, sets delta = length_A(A'/A) for a reduced Nagata
     one-dimensional local ring, after Lemma 33.39.2 (tag 0C3S) makes A'/A of
     finite length; Lemma 33.39.5 (tag 0C3V), printed p. 2900, shows A' tensor_A
     A^h, A^sh and A^wedge are the integral closures of those rings; Lemma 33.39.6
     (tag 0C3W), printed pp. 2900--2901, proves delta is unchanged by
-    henselization, strict henselization and completion; and Definition 33.39.7
-    (tag 0C1T), printed p. 2901, concludes that delta is an invariant of the
-    complete local ring. That is the exercise's hint "delta_P depends only on the
-    analytic isomorphism class", since two points of varieties over an
-    algebraically closed field are analytically isomorphic exactly when their
-    completed local rings are. Lemma 33.41.2 (tag 0C1R), printed p. 2904, gives
+    henselization, strict henselization and completion, and Definition 33.39.7
+    (tag 0C1T), printed p. 2901, attaches delta to a point x of a locally
+    algebraic k-scheme through the local ring O_{X,x}; with 0C3W that gives the
+    exercise's hint "delta_P depends only on the analytic isomorphism class",
+    since two points of varieties over an algebraically closed field are
+    analytically isomorphic exactly when their completed local rings are. (The
+    first version of this note made 0C1T itself the statement of invariance
+    under completion; the definition states no such thing, and the invariance is
+    0C3W's.) Lemma 33.41.2 (tag 0C1R), printed p. 2904, gives
     the exercise's exact sequence 0 -> O_X -> nu_*O_{X^nu} -> direct sum Q_x -> 0
     with length Q_x = delta, and item (9) there is A'/A = (A')^wedge/A^wedge, the
     isomorphism step s6 uses. Step s6 is now the transcription of 0C3V, 0C3W and
-    0C1T(9); the two computations at the cusp and the node (steps s7, s8) are the
+    0C1R(9); the two computations at the cusp and the node (steps s7, s8) are the
     card's own and are not in that section. Nothing was checked in Stacks about
     analytic isomorphism as such; the identification used is the card's.
 - event: source-checked
@@ -62,6 +69,24 @@ audit:
     p. 2901, and 0C1R item (9) on p. 2904. Re-checked in the text layer by tag
     search that each of those tags carries the statement attributed to it; the
     step s6 transcription is unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Re-read against the replaced text versions. Each tag cited on this card is
+    now a file of its own, tmp/sources/stacks-tags/<TAG>.md, holding the tag
+    page's statement and proof with its LaTeX, from the site's build of
+    stacks-project commit a04446e57ec1fbc252a871afcec7752fb2807b14 (28 July
+    2026); the earlier notes' single-file reference and their version are
+    replaced accordingly, and their printed pages are the retained compiled
+    book's and were re-checked there. Checked tag by tag that the file says what
+    this card attributes to it: 0C3S (A'/A has finite length), 0C3T (delta =
+    length_A(A'/A)), 0C3V (A' tensor A^h, A^sh, A^wedge are the integral
+    closures), 0C3W (delta unchanged by henselization, strict henselization and
+    completion), 0C1T (delta of X at x through O_{X,x}) and 0C1R (the exact
+    sequence, and item (9) A'/A = (A')^wedge/A^wedge). Two attributions were
+    wrong and are corrected above: the invariance under completion is 0C3W's,
+    not 0C1T's, and the item (9) that step s6 uses belongs to 0C1R.
 ---
 
 ::: {.problem}
@@ -310,7 +335,7 @@ The number $\delta_P$ depends only on the analytic isomorphism class of the sing
 
 ::: pf-proof
 
-This is the Stacks Project's argument, Chapter 33, Section 33.39, printed pp. 2899--2901, transcribed: Definition 33.39.3 (tag 0C3T) sets $\delta$ to be a length, and Lemma 33.39.6 (tag 0C3W) proves that this length does not change under henselization, strict henselization or completion, so $\delta$ is an invariant of the complete local ring (Definition 33.39.7, tag 0C1T). The pages are those of version ed88ff78, compiled 14 July 2026, the copy read here. In detail, with the notation below:
+This is the Stacks Project's argument, Chapter 33, Section 33.39, printed pp. 2899--2901, transcribed: Definition 33.39.3 (tag 0C3T) sets $\delta$ to be a length, and Lemma 33.39.6 (tag 0C3W) proves that this length does not change under henselization, strict henselization or completion, so $\delta$ is unchanged by completion; Definition 33.39.7 (tag 0C1T) attaches $\delta$ to a point $x$ through $\mathcal O_{X,x}$, and the two together make $\delta_P$ depend only on the completed local ring $\widehat{\mathcal O}_{X,P}$. Read tag by tag in `tmp/sources/stacks-tags/0C3T.md`, `0C3S.md`, `0C3V.md`, `0C3W.md` and `0C1T.md`, the site's build from stacks-project commit a04446e57ec1fbc252a871afcec7752fb2807b14 (28 July 2026); the page numbers are those of the retained compiled book of version ed88ff78, compiled 14 July 2026. In detail, with the notation below:
 
 Put
 $$
@@ -461,6 +486,6 @@ steps [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (c).
 
 ::: {.remark title="Published solution"}
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.8, printed pp. 208–209, proves (a) by the short exact sequence $0\to\widetilde\OO_P/\OO_P\to H^0(X,\OO_X)\to H^0(\tilde X,\OO_{\tilde X})\to0$ obtained from (III.4.1) and the flasqueness of the skyscraper summand, so that $p_a(X)=p_a(\tilde X)+\sum_P\delta_P$, and (b) by observing that $p_a=0$ forces $\delta_P=0$ for every $P$, making all local rings normal and hence regular in dimension one.
-For part (c), the invariance of $\delta_P$ under analytic isomorphism is the Stacks Project's, Chapter 33, Section 33.39, version ed88ff78 compiled 14 July 2026: Definition 33.39.3 (tag 0C3T) with Lemma 33.39.6 (tag 0C3W) on printed pp. 2899--2901 shows that $\delta$ is unchanged by henselization, strict henselization and completion, hence is an invariant of the complete local ring, and Definition 33.39.7 (tag 0C1T) says so in those words; step [](#s6){.pf-ref} transcribes it. The two values $\delta_P=1$ at an ordinary cusp and at a node (steps [](#s7){.pf-ref} and [](#s8){.pf-ref}) are computed here: $k[[t]]/k[[t^2,t^3]]\cong k\cdot t$ and $(k[[x]]\times k[[y]])/k[[x,y]]/(xy)\cong k$.
+For part (c), the invariance of $\delta_P$ under analytic isomorphism is the Stacks Project's, Chapter 33, Section 33.39, read in `tmp/sources/stacks-tags/0C3T.md` and `0C3W.md` (site built from stacks-project commit a04446e57ec1fbc252a871afcec7752fb2807b14, 28 July 2026): Definition 33.39.3 (tag 0C3T) with Lemma 33.39.6 (tag 0C3W), printed pp. 2899--2901 of the retained compiled book of version ed88ff78, shows that $\delta$ is unchanged by henselization, strict henselization and completion, hence depends only on the completed local ring, and Definition 33.39.7 (tag 0C1T) is the definition that attaches $\delta$ to the point $P$ through $\mathcal O_{X,P}$; step [](#s6){.pf-ref} transcribes it. The two values $\delta_P=1$ at an ordinary cusp and at a node (steps [](#s7){.pf-ref} and [](#s8){.pf-ref}) are computed here: $k[[t]]/k[[t^2,t^3]]\cong k\cdot t$ and $(k[[x]]\times k[[y]])/k[[x,y]]/(xy)\cong k$.
 
 :::

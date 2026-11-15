@@ -42,6 +42,25 @@ audit:
     termination, verified directly from div(f)=Z'-P' that f and 1 are
     sections of O(P') with disjoint zero divisors, hence a base-point-free
     pencil whose coordinate ratio is the original function f.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Published solution located for issue #121: Algebraic Geometry II, National
+    Taiwan University, 2020 Spring, Chapter V homework, Exercise 1 (Po-Sheng
+    Wu), section 5, printed p. 19 of tmp/sources/ntu-ag2-chapter5.pdf, read in
+    the MinerU extraction tmp/sources/ntu-ag2-chapter5.md; the set's folios are
+    its PDF pages, checked with pdftotext as a page locator. Its argument is the
+    termination the retained Egbert entry lacks: blow up a zero-pole
+    intersection, and the intersection number (f)_0.(f)_infty drops by
+    mu_P((f)_infty)^2. Transcribed on the card in step zero-pole-disjoint, with
+    the two estimates its display leaves out: E.(f-tilde)_infty = mu_P((f)_infty)
+    and (f)_0.(f)_infty = (f-tilde)_0.(f-tilde)_infty + ab, which together give
+    the drop. Its closing claim that the zeros of the pullback give a
+    base-point-free system is the card's pencil-base-point-free step. The exact
+    exercise statement was checked against Hartshorne V.5.1, printed p. 299, and
+    the choice mu_P((f)_0) >= mu_P((f)_infty) is the source's "wlog", justified
+    by applying it to 1/f.
 ---
 
 ::: {.problem}
@@ -206,6 +225,30 @@ $$
 $$
 
 ::: pf-proof
+The published argument is a global count. This is *Algebraic Geometry II*, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 1 (Po-Sheng Wu), section 5, printed p. 19 (PDF p. 19 of `tmp/sources/ntu-ag2-chapter5.pdf`, where the set's own folios are its PDF pages), transcribed with the two estimates its display leaves to the reader. Write $(f)=(f)_0-(f)_\infty$ for the effective zero and pole divisors and let $P$ be a point of $(\overline{f})_0\cap(\overline{f})_\infty$ on the current surface. Blow it up: $\pi:\widetilde X\to X$ at $P$. By symmetry in $f\leftrightarrow 1/f$ assume $a=\mu_P((f)_0)\ge b=\mu_P((f)_\infty)>0$. Then $\pi^*(f)_0=(\tilde f)_0+aE$ and $\pi^*(f)_\infty=(\tilde f)_\infty+bE$, so
+$$
+(\pi^*f)_0=(\tilde f)_0+(a-b)E,
+\qquad
+(\pi^*f)_\infty=(\tilde f)_\infty ,
+$$
+and, using $E\cdot(\tilde f)_\infty=E\cdot\pi^*(f)_\infty-bE^2=b$,
+$$
+(\pi^*f)_0\cdot(\pi^*f)_\infty
+=(\tilde f)_0\cdot(\tilde f)_\infty+(a-b)b .
+$$
+Because intersection numbers are preserved by pullback and $E^2=-1$,
+$$
+(f)_0\cdot(f)_\infty
+=(\tilde f)_0\cdot(\tilde f)_\infty+ab ,
+$$
+so the two displays give
+$$
+\boxed{(\pi^*f)_0\cdot(\pi^*f)_\infty=(f)_0\cdot(f)_\infty-b^2.}
+$$
+At an intersection point $b=\mu_P((f)_\infty)\ge1$, so the nonnegative integer $(f)_0\cdot(f)_\infty$ strictly decreases at every such blowup, and the process stops after finitely many of them. At that point the two effective divisors have no common point: they share no component, and two curves on a nonsingular surface with zero intersection number are disjoint. The same conclusion then follows for the composite $g$. That is the source's whole argument; its last step, that $(g^*f)_0$ is base-point free, is step [](#pencil-base-point-free){.pf-ref} below.
+
+The card's own proof reaches the same conclusion by a local measure instead of the global intersection number, and is the argument its later steps use.
+
 At every stage the support of $(f)$ remains simple normal crossings: blowing
 up a transverse crossing of two components replaces it by an exceptional
 curve meeting the two strict transforms transversely at distinct points.
@@ -385,5 +428,7 @@ Step [](#g-birational-resolves-f){.pf-ref} verifies that the composite modificat
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.1, printed p. 297 (embedded resolution of the divisor of $f$ followed by further point blowups separating zeros from poles).
+*Algebraic Geometry II*, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 1 (Po-Sheng Wu), section 5, printed p. 19 (`tmp/sources/ntu-ag2-chapter5.pdf`, whose folios are its PDF pages), is a complete published proof of the exercise: it blows up a zero--pole intersection, computes that the intersection number $(\pi^*f)_0\cdot(\pi^*f)_\infty$ has dropped by $\mu_P((f)_\infty)^2$, and concludes that finitely many blowups make the zeros and poles disjoint, after which the zeros give a base-point-free linear system and a morphism to $\PP^1$. Step [](#zero-pole-disjoint){.pf-ref} transcribes it, supplying the two estimates of its display, and then gives the card's own local-measure form of the same decrease.
+
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.1, printed p. 297, has the first step, embedded resolution of the divisor of $f$, and then asserts that the further blowups separate the zeros from the poles without showing that they terminate; nothing there is used above.
 :::

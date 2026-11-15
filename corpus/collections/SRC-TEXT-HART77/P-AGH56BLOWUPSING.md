@@ -107,6 +107,19 @@ audit:
     computed one, and takes the deciding minor from the computed matrix. Read in
     tmp/sources/shitijyou-ch1-section5.md at "Ex5.6 (b) Blowing Up at a Node",
     which prints J_0 as those two rows.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Correction on a reader's report of issue #121: at v = 0 the printed matrix
+    has rank exactly one, not "at most one". The printed row (0,-v,0) is zero
+    there, but the second row (0, sum_{i+j=3}(i+j-2)c_ij v^j, 2bdv-(ad+bc)) keeps
+    its last entry -(ad+bc) at v = 0, and the points of E with v = 0 are those
+    where (a-bv)(c-dv) vanishes, that is a = 0 or c = 0, where -(ad+bc) is -bc
+    resp. -ad and in either case nonzero because ad - bc != 0. So the printed
+    matrix has rank one and not the two the argument needs; what the printed row
+    omits is the entry 1 alone, the printed 0 in place of -x being the value
+    x = 0 on E. The step now says that instead of "rank at most one".
 ---
 
 ::: {.problem}
@@ -240,7 +253,7 @@ $$
 whose first row is the derivative of the strict-transform equation and takes the entry $2bdv-(ad+bc)$ on $E$, and whose second row is the derivative of the chart equation and is nonzero on $E$.
 
 The source prints this matrix in the column order $(y,x,v)$: its second row there is $(0,\sum_{i+j=3}(i+j-2)c_{ij}v^j,2bdv-(ad+bc))$, the derivative of the strict-transform equation read in that order, and its first row, for the chart equation $y-vx$, is $(0,-v,0)$ where the derivatives in that order are $(1,-v,-x)$ --- the $1$ and the $-x$ are missing.
-The missing $-x$ is $0$ on $E$, but the missing $1$ is not, and the rank-two claim needs it at the point where $v=0$: there the printed row $(0,-v,0)$ is the zero row, so the printed matrix has rank at most one, its minor in the last two columns $-v\bigl(2bdv-(ad+bc)\bigr)$ vanishing with it.
+The missing $-x$ is harmless, being $0$ on $E$; only the missing $1$ is not, and the rank-two claim needs it at the point where $v=0$: there the printed row $(0,-v,0)$ is the zero row, so the printed matrix has rank exactly one, and its minor in the last two columns $-v\bigl(2bdv-(ad+bc)\bigr)$ vanishes with it. It is exactly one and not zero because the second row keeps the entry $2bdv-(ad+bc)$, which at $v=0$ is $-(ad+bc)$: the strict transform meets $E$ at $v=0$ only where $(a-bv)(c-dv)=0$, that is where $a=0$ or $c=0$, and then $-(ad+bc)$ is $-bc\ne0$ or $-ad\ne0$ because $ad-bc\ne0$.
 That point is $P_1$ when $a=0$ and $P_2$ when $c=0$, and both happen for a node whose two tangent lines are the coordinate axes: $f_2=(ax-by)(cx-dy)$ is $xy$ at $(a,b,c,d)=(0,1,-1,0)$, where $v=a/b=0$ and the other point has $v=c/d=\infty$.
 With the $1$ restored, the minor in the last two columns is $-\bigl(2bdv-(ad+bc)\bigr)$, nonzero at $P_1$ and $P_2$ by the computation below, so the computed matrix has rank two at both points; the source's conclusion follows only with that entry supplied.
 The strict transform meets $E$ where $(a-bv)(c-dv)=0$, that is at the points
