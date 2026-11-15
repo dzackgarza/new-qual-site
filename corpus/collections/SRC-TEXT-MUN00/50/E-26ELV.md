@@ -81,6 +81,18 @@ audit:
     compact set {f(x) = f(y)} contained in C x C, which is where Delta(f|C), a supremum of fibre diameters
     (printed p. 311), is attained. What was not re-read: parts (a) and (d), whose arguments the earlier events
     checked, and the correctness of the density lemma of the imbedding theorem quoted in (d).
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Two defects reported by a reader of this card, checked against pp. 311--316 before changing anything.
+    (a) The definition in (a) asks for norm(f(x)) > n on X - C, and both places where the card applied
+    its own bound produced only >= n: step psi-bound gives psi(x) >= k - 1 for x outside C_k, and parts
+    (e) and (f) took C = C_{n+1}, which yields psi(x) >= n. Both now take C_{n+2}, which yields
+    psi(x) >= n + 1 > n. (b) Part (d) attributed the density of the maps with Delta < eps in
+    C(C, R^{2m+1}) to an unnamed "density lemma"; the density is part (2) of the proof of Theorem 50.5
+    (printed p. 312), and the step now names it there. Parts (a)--(c) and the rest of (d) were not
+    changed.
 ---
 
 ::: {.exercise}
@@ -236,7 +248,7 @@ Part (d): Density of $U_\varepsilon(C)$ for $N = 2m + 1$.
 ::: pf-proof
 
 ::: pf-step
-Since $C$ is compact metrizable with $\dim C \le m$, the maps with $\Delta < \varepsilon$ are dense in $\mathcal{C}(C, \RR^{2m+1})$; this is the density lemma in the proof of the imbedding theorem for compact metrizable spaces of dimension $m$.
+Since $C$ is compact metrizable with $\dim C \le m$, the maps with $\Delta < \varepsilon$ are dense in $\mathcal{C}(C, \RR^{2m+1})$: this is part (2) of the proof of Theorem 50.5 (printed p. 312), the imbedding theorem for a compact metrizable space of dimension at most $m$, applied to $C$.
 :::
 
 ::: pf-step
@@ -310,7 +322,7 @@ Let $n\le k-1$. Since $\operatorname{Int}C_{n+1}\subseteq C_{n+1}\subseteq C_k$,
 $\psi(x)\to\infty$ as $x\to\infty$.
 
 ::: pf-proof
-Given $n$, take the compact set $C=C_{n+1}$; for $x\in X\setminus C$ step [](#psi-bound){.pf-ref} gives $\psi(x)\ge n$, which is the definition of $\psi(x)\to\infty$. So $f_0=\psi$ is the map that (e) asks for.
+Given $n$, take the compact set $C=C_{n+2}$; for $x\in X\setminus C$ step [](#psi-bound){.pf-ref} gives $\psi(x)\ge n+1>n$, which is the definition of $\psi(x)\to\infty$. So $f_0=\psi$ is the map that (e) asks for.
 :::
 
 :::
@@ -332,7 +344,7 @@ Since $\RR^N$ is complete, $(\mathcal{C}(X, \RR^N), \bar{\rho})$ is a complete m
 The map $f_1(x)=(\psi(x),0,\ldots,0)$ lies in $\mathcal{C}(X,\RR^N)$ and $f_1(x)\to\infty$ as $x\to\infty$.
 
 ::: pf-proof
-Its first coordinate $\psi$ is continuous by step [](#s5){.pf-ref} and $\norm{f_1(x)}=\psi(x)\ge0$ because $\phi_n\le1$, so for $x$ outside $C_{n+1}$ one has $\norm{f_1(x)}=\psi(x)\ge n$.
+Its first coordinate $\psi$ is continuous by step [](#s5){.pf-ref} and $\norm{f_1(x)}=\psi(x)\ge0$ because $\phi_n\le1$, so for $x$ outside $C_{n+2}$ one has $\norm{f_1(x)}=\psi(x)\ge n+1>n$.
 :::
 
 :::
