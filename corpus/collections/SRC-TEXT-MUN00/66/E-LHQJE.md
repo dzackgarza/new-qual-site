@@ -27,13 +27,16 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Searched outside the checkout (issue #144) for §66 Exercise 1 (printed p. 406); the queries and sets are in
-    the COMPLAINTS.md entry for §66--§73 of SRC-TEXT-MUN00. Query used: "Munkres exercise n(f,a) equals degree
-    of h winding number 66.1 solution". Nothing usable located: the only question on the subject, Math
-    StackExchange 2425949, is about the winding number of a simple closed curve, not this exercise, and its
-    body could not be read (API throttle for this address, Cloudflare human check on the page); dbFin has no
-    §66 page, Murayama's selection no Chapter 10, the fourteen GitHub repositories stop at Chapter 3, and the
-    two course pages consulted post no solutions of these sections. Nothing was transcribed.
+    Munkres §66 Exercise 1, printed p. 406. Searched outside the checkout for issue #144 on the orchestrator's
+    machine, recorded in tmp/sources/mse-searches-144.md; no thread was saved because no question on the exercise
+    was found. The queries were "winding number equals degree Munkres", the title query "winding number degree",
+    "winding number degree loop", the title query "winding number", q="n(f,a)", and the /similar query "winding
+    number of loop equals degree of induced map of circle". Two questions were read and rejected as treating other
+    definitions of the winding number, 741880 and 458583; neither is a solution of this exercise and neither was
+    saved. Nothing is transcribed and the card keeps its proof, whose closing step identifies n(f,a) with deg h
+    through the isomorphism of Theorem 54.5 (printed p. 345). dbFin has no §66 page, Murayama's selection no Chapter
+    10, the fourteen GitHub repositories stop at Chapter 3, and the two course pages consulted post no solutions of
+    these sections.
 - event: solution-written
   by: claude
   date: 2026-11-15
