@@ -23,7 +23,8 @@ audit:
     §61--§73 of SRC-TEXT-MUN00. Checked line by line against the book: the order of P (six bijections), the
     order of G_1 and G_2 (each of order 2, since pi_i is its own inverse and is not the identity), the
     generation of P by G_1 and G_2 through pi_1 pi_2 = (0 1 2), and the failure of injectivity of the
-    extension of pi_1, pi_2 to G_1 * G_2 by the uniqueness of the reduced word (Theorem 68.2, printed p. 415)
+    extension of pi_1, pi_2 to G_1 * G_2 by the uniqueness of the reduced word that the definition of the
+    free product requires (printed p. 414)
     and the extension condition of Lemma 68.3 (printed p. 418). The two 3-letter words are computed on the
     card rather than asserted, which is what "Check the details" asks for.
 - event: source-checked
@@ -40,8 +41,21 @@ audit:
     Exercise 2 only, the fourteen repositories stop at Chapter 3, and no course page found treats these
     sections. The card's own proof was re-read against Example 1 (printed p. 414) and Theorem 68.2 (printed
     p. 415): the products pi_1 pi_2 = (0 1 2) and pi_1 pi_2 pi_1 = (0 2) were recomputed, so G_1 and G_2
-    generate P, and the two distinct reduced words are shown to have equal images, which is exactly what makes
-    P not their free product. Nothing changed.
+    generate P, and the two distinct reduced words are shown to represent the same element of P, which is
+    exactly what makes P not their free product. Nothing changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    A reader of this card reported that step 3 rested on two mistakes: it cited Theorem 68.2 (printed p. 415)
+    for uniqueness of reduced representatives, which that theorem does not state -- it constructs a group
+    having the free-product property -- and it concluded "phi is not injective, so P is not the free product",
+    which is not the book's criterion, since P being the free product of G_1 and G_2 is a statement about
+    reduced words in P and not about a map from the abstract free product. The step now argues from the
+    definition on printed p. 414: G_1 and G_2 generate P and meet in the identity, and the words (pi_1, pi_2,
+    pi_1) and (pi_2, pi_1, pi_2) are reduced -- no entry is the identity, and consecutive entries lie in
+    different subgroups -- distinct, and both equal (0 2), so one element of P has two reduced
+    representatives. The two products are computed on the card. Steps 1 and 2 were re-read and kept.
 ---
 
 ::: {.exercise}
@@ -86,13 +100,13 @@ $P$ is not the free product of $G_1$ and $G_2$.
 
 ::: pf-proof
 
-By the extension condition of Lemma 68.3 (printed p. 418) the assignments $\pi_i\mapsto\pi_i$ extend to a homomorphism $\phi:G_1*G_2\to P$. In the free product the words $(\pi_1,\pi_2,\pi_1)$ and $(\pi_2,\pi_1,\pi_2)$ are reduced and distinct, because by Theorem 68.2 (printed p. 415) each element of a free product has a unique reduced representative. But in $P$,
+By the definition on printed p. 414, $P$ is the free product of $G_1$ and $G_2$ when the two subgroups generate $P$ and meet in the identity alone, both of which hold by steps 1 and 2, and each element of $P$ is represented by exactly one reduced word in them. A word is reduced when no entry is the identity and consecutive entries lie in different subgroups; since $G_1\cap G_2=\{\operatorname{id}\}$, a nonidentity element lies in exactly one of the two. Hence $(\pi_1,\pi_2,\pi_1)$ and $(\pi_2,\pi_1,\pi_2)$ are two reduced words, and they are distinct. But in $P$,
 
 $$
 \pi_1\pi_2\pi_1=(0\,2)=\pi_2\pi_1\pi_2 ,
 $$
 
-the middle computation by $\pi_2\pi_1=(0\,2\,1)$ and $(0\,2\,1)(1\,2)=(0\,2)$. So $\phi$ is not injective, and $P$ is not the free product of $G_1$ and $G_2$.
+the first computation by $\pi_1\pi_2=(0\,1\,2)$ and $(0\,1\,2)(0\,1)=(0\,2)$, the second by $\pi_2\pi_1=(0\,2\,1)$ and $(0\,2\,1)(1\,2)=(0\,2)$. So one element of $P$ has two reduced representatives, and $P$ is not the free product of $G_1$ and $G_2$.
 
 :::
 
