@@ -34,6 +34,21 @@ audit:
     What was corrected: the stored statement had narrowed the exercise to nonempty discrete spaces; it now
     states the exercise as printed, and the solution says why the nonempty case is what the book's definition of
     order can speak about, the empty collection having no point to count.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Nothing located proves Munkres §50 Exercise 1 (printed p. 305).
+    Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, and the ten GitHub repositories of
+    Munkres solutions listed in COMPLAINTS.md reach no section past §36. The AoPS post *Topology by Munkres
+    Chapter 8 | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630) reaches §50 and its
+    formulas are lost in the extraction, as recorded for the earlier posts of that blog; the site answers an
+    automated request with a human check, which was not worked around. The Stack Exchange query "discrete
+    space dimension zero" returned 4259332, "Prove that every topological space equipped with the discrete
+    topology is zero-dimensional", which is about a base of clopen sets, the small inductive notion, and not
+    about the covering dimension of §50, so it does not refine an arbitrary open cover by a cover of order 1,
+    which is what the exercise asks and what the card constructs from the singletons. Nothing needed
+    correction.
 ---
 
 ::: {.exercise}
