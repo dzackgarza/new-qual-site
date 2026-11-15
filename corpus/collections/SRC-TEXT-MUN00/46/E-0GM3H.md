@@ -29,6 +29,20 @@ audit:
     delta attains a positive minimum (Theorem 27.4, the extreme value theorem), which turns a fine ball into a
     uniform ball. Part (d): for discrete X every function and every positive function is continuous, and the
     fine balls are exactly the boxes. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). The AoPS blog post by cinnamon_e, "Topology by
+    Munkres Chapter 7 | Day 17" (2025-09-10,
+    https://artofproblemsolving.com/community/c3401823h3646977, text at
+    tmp/sources/aops-shooting-star-munkres-ch7-day17.md), answers this exercise at its item 11 of
+    §46, and the extraction dropped every inline formula, so the answer cannot be transcribed; the
+    site answers an automated request with a Cloudflare human check, which is not worked around.
+    Murayama's selection stops at Chapter 4, dbFin has no chapter-7 page, and the Math StackExchange
+    search of this pass for the basis B(f, delta) of the fine topology, recorded in the COMPLAINTS.md
+    entry for §43--§50, returned only a question on the fine topology of the Baire theorem of §48
+    Exercise 13, which is a different statement. The card keeps its own proof.
 ---
 
 ::: {.exercise}
