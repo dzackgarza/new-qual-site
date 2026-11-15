@@ -71,6 +71,27 @@ audit:
     continuous and surjective onto a space with no limit points at all. The other eleven negative
     entries stand as the earlier note records them, and the key agrees with all of them and with
     properties 1, 2, 5, 14 and 15 among the positives.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Three defects of the witnesses, reported by a reader of this card and checked against the book
+    before changing anything. (a) Entries (12) and (13) used the co-countable topology on R as the
+    target, calling that topology coarser than the usual one, and so they used an identity map that is
+    not continuous: the set R - {1/n : n in Z_+} is co-countable, and it is not open in R, its
+    complement accumulating at 0. The target is now R with the finite complement topology, whose
+    closed sets are the finite ones and hence closed in R, so the identity from usual R is
+    continuous; the two negative entries are reproved there, and the closing remark now says why the
+    finite complement topology is the one that works and the co-countable one is not. (b) Entries
+    (3), (7) and (11) said "the identity from N (discrete) onto Q" and "from R (discrete) onto
+    R_l^2", which are not identity maps, the two sides being different sets; the maps are now named,
+    a bijection out of the discrete space, which exists because |N| = |Q| and |R| = |R_l^2| =
+    |R^2|, and out of a discrete space every map is continuous. (c) The paragraph introducing the
+    twelve negative entries said only that the identity out of a discrete domain is continuous, which
+    is false of a bijection between different sets as stated; it now says that every map out of a
+    discrete space is continuous and that the maps onto a different underlying set are bijections.
+    The five positive entries, the other eight negative ones and the answer to the exercise are
+    unchanged, and were not re-read in this pass.
 
 ---
 
@@ -95,20 +116,20 @@ That is: connectedness, path connectedness, compactness, Lindelöfness, and the 
 (14) If $f: X \to Y$ is continuous and $X$ is Lindelöf, pull an open cover of $f(X)$ back to $X$, take a countable subcover, and push it forward: $f(X)$ is Lindelöf.
 (15) If $D \subseteq X$ is a countable dense subset then $f(D)$ is a countable dense subset of $f(X)$, since $f(\bar D) \subseteq \overline{f(D)}$.
 
-**The twelve negative entries.** Each witness is a continuous surjection whose domain has the property and whose image does not. Except in entry (6) the domain is a discrete space, which is the finest topology on its underlying set, so the identity map out of it is continuous; discreteness gives Hausdorffness, regularity, normality, first countability, local compactness, local connectedness, local path connectedness and local metrizability, so the domain is never the obstruction. The targets are spaces of this chapter.
+**The twelve negative entries.** Each witness is a continuous surjection whose domain has the property and whose image does not. Except in entry (6) the domain is a discrete space, which is the finest topology on its underlying set, so every map out of it is continuous; where the target carries a different underlying set the map is a bijection, and one exists because the two sets have the same cardinality. Discreteness gives Hausdorffness, regularity, normality, first countability, local compactness, local connectedness, local path connectedness and local metrizability, so the domain is never the obstruction. The targets are spaces of this chapter.
 
 - (6) Limit point compact: the projection $\ZZ_+ \times Y \to \ZZ_+$, $(n, y) \mapsto n$, where $Y$ is the two-point space whose only open sets are $Y$ and $\varnothing$. That product with the product topology is limit point compact and not compact, Example 1 of §28, and every nonempty subset of it has a limit point. The map is continuous, the preimage of $\{n\}$ being the open set $\{n\} \times Y$, and it is onto; the target is $\ZZ_+$ with the discrete topology, which is not limit point compact, its infinite subsets having no limit point, every singleton being open. Munkres' Exercise 28.3(a) asks whether a continuous image of a limit point compact space is limit point compact, and this is a negative answer to it.
 
-- (3) Locally connected: the identity from $\NN$ with the discrete topology onto $\QQ$ with the usual topology. The rationals are neither connected nor locally connected, Example 3 of §25. The same map refutes (4) local path connectedness, a path connected neighbourhood being connected.
-- (7) Locally compact Hausdorff: the identity from $\NN$ with the discrete topology onto $\QQ$. The rationals are not locally compact, Example 1 of §29, though $\QQ$ is Hausdorff.
+- (3) Locally connected: a bijection from $\NN$ with the discrete topology onto $\QQ$ with its usual topology, which exists because $\NN$ and $\QQ$ are both countably infinite. The rationals are neither connected nor locally connected, Example 3 of §25. The same map refutes (4) local path connectedness, a path connected neighbourhood being connected.
+- (7) Locally compact Hausdorff: the same bijection onto $\QQ$. The rationals are not locally compact, Example 1 of §29, though $\QQ$ is Hausdorff.
 - (8) Hausdorff: the identity from $\NN$ with the discrete topology onto $\NN$ with the finite complement topology. Any two nonempty open sets of that topology meet, since their complements are finite, so the space is not Hausdorff.
 - (9) Regular: the identity from $\RR$ with the discrete topology onto $\RR_K$. The space $\RR_K$ is Hausdorff and not regular, Example 1 of §31.
 - (10) Completely regular: the same map onto $\RR_K$. A completely regular space is regular, since the preimages of $[0,\frac{1}{2})$ and $(\frac{1}{2},1]$ under a separating function are disjoint open sets, so $\RR_K$ is not completely regular either.
-- (11) Normal: the identity from $\RR$ with the discrete topology onto the Sorgenfrey plane $\RR_\ell^2$, which is not normal, Example 3 of §31.
-- (12) First countable: the identity from $\RR$ with its usual topology — first countable, and a finer topology is not needed here because the target is coarser — onto $\RR$ with the co-countable topology, in which the open sets are the sets with countable complement. That identity is continuous, the co-countable topology being contained in the usual one. The image is not first countable: given countably many co-countable neighbourhoods $U_n$ of a point $x$, choose $y_n \in U_n$ with $y_n \neq x$; then $\RR - \theset{y_n}$ is a co-countable neighbourhood of $x$ containing none of the $U_n$, so no countable family of neighbourhoods of $x$ is a local base.
-- (13) Second countable: the same map onto $\RR$ with the co-countable topology. That space has no countable basis: if $\mathcal{B} = \theset{B_n}$ were a countable basis, each $B_n$ is co-countable, and choosing $x_n \in B_n$ gives the open set $\RR - \theset{x_n}$, which must contain some $B_k$, whence $x_k \in B_k \subseteq \RR - \set{x_k}$, a contradiction.
+- (11) Normal: a bijection from $\RR$ with the discrete topology onto the Sorgenfrey plane $\RR_\ell^2$, which exists because both sets have the cardinality of the continuum, $\abs{\RR_\ell^2} = \abs{\RR^2} = \abs{\RR}$. The Sorgenfrey plane is not normal, Example 3 of §31.
+- (12) First countable: the identity from $\RR$ with its usual topology onto $\RR$ with the finite complement topology, in which the open sets are $\varnothing$ and the sets with finite complement. That identity is continuous, the closed sets of the target being finite and hence closed in the domain, and it is onto. The target is not first countable: given countably many neighbourhoods $U_n = \RR - F_n$ of a point $x$, the set $F = \bigcup_n F_n$ is countable, so there is a point $y \neq x$ outside $F$; then $\RR - \theset{y}$ is a neighbourhood of $x$, its complement being a singleton, and it contains none of the $U_n$, since $y \in U_n$ for every $n$ and $y \notin \RR - \theset{y}$. So no countable family of neighbourhoods of $x$ is a local base.
+- (13) Second countable: the same map onto $\RR$ with the finite complement topology. That space has no countable basis: were $\theset{B_n}$ one, each $B_n$ would have finite complement, so $\bigcup_n (\RR - B_n)$ would be countable and there would be a point $y$ outside it, that is, $y \in B_n$ for every $n$; then $\RR - \theset{y}$ is a nonempty open set containing no $B_n$, a contradiction. This also follows from (12), a second countable space being first countable.
 - (16) Locally metrizable: the identity from $\RR$ with the discrete topology onto $\RR_\ell$. The Sorgenfrey line is regular and Lindelöf, Examples 2 of §31 and 3 of §30, so by Exercise 34.8 it would be metrizable if it were locally metrizable, and it is not metrizable, Exercise 30.6.
 - (17) Metrizable: the same map onto $\RR_\ell$, which is not metrizable, Exercise 30.6.
 
-A remark on the device. A finer topology inherits from a coarser one its closed sets, hence Hausdorffness, regularity and normality; that is why the domain of all the witnesses above but the one for (6) can be taken discrete, which is the finest topology on a set. It inherits neither countability axiom, nor compactness, nor local compactness, and the targets of the entries (12) and (13) are deliberately coarser than the usual topology of $\RR$ rather than finer.
+A remark on the device. A finer topology inherits from a coarser one its closed sets, hence Hausdorffness, regularity and normality; that is why the domain of all the witnesses above but the one for (6) can be taken discrete, which is the finest topology on a set. It inherits neither countability axiom, nor compactness, nor local compactness, so a witness for one of those needs a target whose topology is contained in a topology the set is known to carry, which is what entries (8) to (13) use. For (12) and (13) that target cannot be the co-countable topology: $\RR - \theset{1/n \mid n \in \ZZ_+}$ is co-countable, and it is not open in $\RR$, its complement accumulating at $0$, so the identity from the usual topology onto the co-countable one is not continuous. The finite complement topology is contained in the usual one, its closed sets being finite, and it is the target used there.
 :::
