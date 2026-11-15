@@ -71,6 +71,26 @@ audit:
     Theorem 58.3 on printed p. 361, Examples 2 and 3 on printed p. 362, Theorem 58.7 on printed
     p. 364, Theorem 22.1 on printed p. 140, Theorem 22.2 on printed p. 142, and §29 Exercise *11 on
     printed p. 186.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Part (b) corrected, from a second reader's report on this card. The step said
+    that the homotopy H is constant on the fibres of q_0 x id_I; it is not. Two
+    points of the open square minus the centre that q identifies are boundary points,
+    H fixes the boundary pointwise, so H carries the two points to two distinct
+    points of the square; what is constant on those fibres is q_0 o H, and the
+    transgression (Theorem 22.2) therefore produces Hbar with
+    Hbar o (q_0 x id_I) = q_0 o H, which is the equation the step now records. The
+    step also now shows that H takes its values in the space it is a self-map of:
+    the projection has the form pi(x) = c + lambda (x - c) with lambda at least 1,
+    so H(x,t) - c = (1 + t(lambda - 1))(x - c) is a nonzero multiple of x - c and
+    H(x,t) is not the deleted centre. The twelve answers, the other eleven steps and
+    the two defective parts of the source are unchanged. Checked against the book:
+    the exercise on printed p. 366 -- the card had cited pp. 366-367, and §58
+    Exercise 2, parts (a) to (l), is on p. 366, read on the page image of the PDF --
+    Theorem 22.1 on printed p. 140, Theorem 22.2 on printed p. 142, §29 Exercise
+    *11(a) on printed p. 186 and Examples 2 and 3 on printed p. 362.
 ---
 
 ::: {.exercise}
@@ -106,8 +126,8 @@ The following subsets of $\RR^2$:
 :::
 
 ::: {.solution}
-The exercise is §58 Exercise 2, printed pp. 366--367, and its question is which
-of three alternatives holds for each of the twelve spaces. The proofs for (a),
+The exercise is §58 Exercise 2, printed p. 366, and its question is which of
+three alternatives holds for each of the twelve spaces. The proofs for (a),
 (b), (c), (d), (f), (g), (h), (k) and (l) are transcribed from Pearse,
 *Topology (2nd ed.) — James R. Munkres*, solutions, Cornell 2005, §58 Exercise 2,
 his pp. 20--22, read in `tmp/sources/cornell-erin-munkres.md`; each of them
@@ -163,8 +183,20 @@ $H(x,t)=(1-t)x+t\,\pi(x)$ on $(I^2-\theset c)\times I$. Then $H$ is continuous,
 $H(x,0)=x$, $H(x,1)=\pi(x)\in\partial I^2$, and $H$ fixes $\partial I^2$
 pointwise because $\pi$ does.
 
-Two points of $I^2-\theset c$ that $q$ identifies lie on $\partial I^2$, so $H$
-carries them to themselves at every $t$; hence $H$ is constant on the fibres of
+It also takes values in $I^2-\theset c$, so that it is a map of $I^2-\theset c$
+into itself: for $x\ne c$ the projection is $\pi(x)=c+\lambda(x-c)$ with
+$\lambda=1/(2\max(\abs{x_1-\tfrac12},\abs{x_2-\tfrac12}))$, and
+$$
+H(x,t)-c=\bigl((1-t)+t\lambda\bigr)(x-c)=\bigl(1+t(\lambda-1)\bigr)(x-c),
+$$
+where $\lambda\ge1$ because $x$ is in the square; the scalar is at least $1$, so
+$H(x,t)\ne c$, and it is at most $\lambda$, so $\abs{H(x,t)-c}_\infty\le
+\lambda\abs{x-c}_\infty=\tfrac12$ and $H(x,t)\in I^2$.
+
+Two points of $I^2-\theset c$ that $q$ identifies lie on $\partial I^2$, and $H$
+fixes $\partial I^2$ pointwise, so $q_0\bigl(H(x,t)\bigr)=q_0(x)$ there and is the
+same at both points: it is $q_0\circ H$, and not $H$ — which carries each of the
+two points to itself — that is constant on the fibres of
 $$
 q_0\times\operatorname{id}_I:\ (I^2-\theset c)\times I\longrightarrow
 (T-\theset{q(c)})\times I,
@@ -172,8 +204,8 @@ $$
 where $q_0=\restrictionof{q}{I^2-\theset c}$. That map is a quotient map, so by
 Theorem 22.2 (printed p. 142) there is a continuous
 $\bar H:(T-\theset{q(c)})\times I\to T-\theset{q(c)}$ with
-$\bar H\circ(q_0\times\operatorname{id}_I)=H$. It is a quotient map for two
-reasons: $I^2-\theset c$ is open in $I^2$ and saturated for $q$, because
+$\bar H\circ(q_0\times\operatorname{id}_I)=q_0\circ H$. It is a quotient map for
+two reasons: $I^2-\theset c$ is open in $I^2$ and saturated for $q$, because
 $q^{-1}(q(c))=\theset c$, so $q_0$ is a quotient map onto $T-\theset{q(c)}$ by
 Theorem 22.1 (printed p. 140); and $I$ is compact Hausdorff, hence locally compact
 Hausdorff, so a quotient map times $\operatorname{id}_I$ is a quotient map by the
