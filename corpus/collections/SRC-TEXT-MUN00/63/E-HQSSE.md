@@ -28,11 +28,14 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Searched outside the checkout for a published solution of this exercise (issue #144) and located
-    none; the queries and every source searched are in the COMPLAINTS.md entry for §61--§64. The
-    card's proof is its own, checked on 2026-11-11 against Theorem 63.3, Theorem 63.4, Theorem 59.3
-    and Lemma 61.1 as the note above records; it was not re-read in this pass. The printed page of the
-    exercise is 393.
+    Munkres §63 Exercise 1, printed p. 393. Searched outside the checkout for issue #144 on the orchestrator's
+    machine, recorded in tmp/sources/mse-searches-144.md; no thread was saved because no question on the exercise
+    was found. The queries were "two disjoint simple closed curves sphere three components", "disjoint simple closed
+    curves S^2 components", "complement of two disjoint circles", the title query "disjoint simple closed curves",
+    "precisely three components" and the /similar query of the exercise's statement; question 62308 was read and
+    rejected, its argument needing a collar that the book does not have at this point. Nothing is transcribed. The
+    card's proof is its own: the exercise's printed hint, checked on 2026-11-11 against Theorem 63.3, Theorem 63.4,
+    Theorem 59.3 and Lemma 61.1 as the note above records; it was not re-read in this pass.
 ---
 
 ::: {.exercise}
