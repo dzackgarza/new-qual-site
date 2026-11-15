@@ -18,19 +18,18 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Searched outside the checkout for a published solution of Munkres §61 Exercise 2 (printed p. 381)
-    and located none (issue #144; the queries and the sources are in the COMPLAINTS.md entry for
-    §61--§64). The proof is rewritten in prose because its step structure carried an authoring
-    defect: three of its five steps had a proof consisting only of a reference to an earlier step,
-    and their cross-references were written with empty link text, `[](#s1){.pf-ref}`. The mathematics
-    is the same and is checked against the book: $A_1$ is closed and connected because it is the
-    closure of the connected graph of $\sin(1/x)$ on $(0,1]$, $A_2$ is a compact connected broken
-    line, their intersection is exactly the two points $(0,-1)$ and $(1,\sin1)$, and Theorem 61.4
-    (printed p. 380) separates $S^2$ by the union of two closed connected sets meeting in exactly two
-    points; the homeomorphic image $C$ is separated because a homeomorphism carries compact sets to
-    compact sets, which are closed in $S^2$ by Theorem 26.3 (printed p. 165). The intersection of
-    $A_1$ and $A_2$ is now argued point by point rather than asserted. Nothing else on the card was
-    changed.
+    Munkres §61 Exercise 2, printed p. 381. Searched outside the checkout for issue #144; the thread the throttled
+    address could not open was read from the orchestrator's machine, recorded in tmp/sources/mse-searches-144.md,
+    thread tmp/sources/mse-1394696-E-LP6WS.md. Math StackExchange 1394696, "A generalization of Jordan curve theorem
+    involving Warsaw circle" (asked 2015-08-12), answer 1394737 by user98602 (2015-08-12) asserts a criterion: a
+    compact X in R^2 whose first Cech homology is Z has a complement with two components, one bounded, one
+    unbounded, and the Warsaw circle satisfies it. That is an assertion through Alexander duality, which the book
+    does not prove and which would need the Cech theory it does not have, and it concerns the Warsaw circle rather
+    than the closed topologist's sine curve. Nothing is transcribed, and the card keeps the proof rewritten in this
+    event. The mathematics is checked against the book: A_1 is closed and connected, being the closure of the graph
+    of sin(1/x) on (0,1], A_2 is a compact connected broken line, their intersection is exactly the two points
+    (0,-1) and (1, sin 1), and Theorem 61.4 (printed p. 380) separates S^2 by the union of two closed connected sets
+    meeting in exactly two points.
 - event: source-corrected
   by: claude
   date: 2026-11-15
