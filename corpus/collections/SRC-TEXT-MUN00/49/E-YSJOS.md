@@ -58,6 +58,16 @@ audit:
     is now drawn from the interior lying in one component of $I$ minus the vertices. The parts for $f$ and $g$
     are unchanged: $f$'s quotients are covered by the endpoint cases already on the card, and $g$'s split
     $x\le1/2$, $x\ge1/2$ keeps both intervals inside $I$ because $h\le1/4$.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    A reader of this card reported that the sentence "For 0 < x < 1 both intervals lie in I" is false at
+    x < h and at x > 1 - h, where the backward or the forward interval leaves I. The step now argues that
+    an interval leaving I has 0 or 1 in its interior, that 0 and 1 are vertices of k, and hence that the
+    interval which has no vertex in its interior lies in I, which is what the passage to "lies in one
+    linear piece" needs; it also corrects "distinct vertices are at distance exactly 1/4" to "at least
+    1/4", the vertices 0 and 1/2 being half an interval apart. Nothing else on the card changed.
 ---
 
 ::: {.exercise}
@@ -107,7 +117,7 @@ $$
 (0,0),\quad (1/4,\alpha/4),\quad(1/2,0),\quad
 (3/4,\alpha/4),\quad(1,0).
 $$
-Again every linear piece has slope $\pm\alpha$.  Let $0<h\le1/8$ and $x\in I$.  At $x=0$ the forward interval $[0,h]$ is contained in $[0,1/4]$, and at $x=1$ the backward interval $[1-h,1]$ is contained in $[3/4,1]$, one linear piece in each case, so the corresponding quotient has absolute value $\alpha$.  For $0<x<1$ both intervals lie in $I$.  If both had a vertex in the interior, say $t<x<t'$, then $t'-t<2h\le1/4$, which is impossible because distinct vertices are at distance exactly $1/4$. So one of the two intervals has no vertex in its interior; its interior lies in one of the four open subintervals cut out by the vertices, so the interval lies in the closure of that piece, which is one of the four linear pieces.  Along it the corresponding secant quotient has absolute value $\alpha$.  Hence
+Again every linear piece has slope $\pm\alpha$.  Let $0<h\le1/8$ and $x\in I$.  At $x=0$ the forward interval $[0,h]$ is contained in $[0,1/4]$, and at $x=1$ the backward interval $[1-h,1]$ is contained in $[3/4,1]$, one linear piece in each case, so the corresponding quotient has absolute value $\alpha$.  For $0<x<1$: the backward interval can leave $I$ only when $x<h$, and then $0$ lies in its interior; the forward one only when $x>1-h$, and then $1$ lies in its interior. Both $0$ and $1$ are vertices, so an interval with no vertex in its interior lies in $I$. If both intervals had a vertex in the interior, say $t<x<t'$, then $t'-t<2h\le1/4$, which is impossible because distinct vertices are at distance at least $1/4$. So one of the two intervals has no vertex in its interior; that interval lies in $I$, its interior lies in one of the four open subintervals cut out by the vertices, and it therefore lies in the closure of that piece, which is one of the four linear pieces.  Along it the corresponding secant quotient has absolute value $\alpha$.  Hence
 $$
 \Delta k(x,h)\ge\alpha
 \qquad(0<h\le1/8).
