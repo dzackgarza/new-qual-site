@@ -56,9 +56,12 @@ audit:
     The published-solution remark now says what the two located entries contain.
     Egbert's V.5.5 is one sentence, a cross-reference to his V.2.5(a), on printed
     p. 299 of tmp/sources/hartshorne-solutions-egbert.pdf. Yang Pi-Yeh's Solution
-    5.5.5 is on printed p. 113, not p. 114, of
-    tmp/sources/lfwin-hartshorne-solutions.pdf (p. 114 carries 5.5.6, which is
-    Hartshorne V.5.6); its outline is right and three steps are missing or
+    5.5.5 runs on printed pp. 113--114 of
+    tmp/sources/lfwin-hartshorne-solutions.pdf: it opens at the foot of p. 113
+    and its last two sentences, the one asserting fraktur-e -> fraktur-e + P
+    "by definition" and the one concluding X = X' from e = e', stand on p. 114
+    above 5.5.6, which is Hartshorne V.5.6; its outline is right and three steps
+    are missing or
     wrong: the sign of the elementary transform under Hartshorne's e = -deg
     fraktur-e of (2.8.1), the effect of elm_P on the normalized bundle, which he
     asserts "by definition", and the implicit choice of the points whose classes
@@ -498,9 +501,11 @@ A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.5, printed
 `tmp/sources/hartshorne-solutions-egbert.pdf` --- his numbering is one ahead, so his "5.5.6" is this
 exercise --- says only "Consequence of my proof of exc V.2.5.a". That is a cross-reference, not a proof.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.5.5, printed p. 113 of
-`tmp/sources/lfwin-hartshorne-solutions.pdf`, read in `tmp/sources/lfwin-hartshorne-solutions.md`, is the
-nearest published argument, and its outline is the right one. He writes the printed hint's formula
+Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.5.5, printed pp. 113--114 of
+`tmp/sources/lfwin-hartshorne-solutions.pdf`, read in `tmp/sources/lfwin-hartshorne-solutions.md` --- the
+entry opens at the foot of p. 113 and its decisive passage, the display
+$\tilde{\mathfrak e}=\mathfrak e+P$ and the conclusion "assume $e=e'$. Hence $X\cong X'$", stands at the
+head of p. 114 --- is the nearest published argument, and its outline is the right one. He writes the printed hint's formula
 $C'\cdot D'=C\cdot D+ac-a\,\mu_P(D)-c\,\mu_P(C)$ for $C\sim aC_0+bf$ and $D\sim cC_0+df$, which gives
 $C'\cdot D'=C\cdot D-1$ when $a=c=1$ and $P\in C\cap D$; hence $\operatorname{elm}_P X$ at $P\in C_0$ has invariant
 $e+1$, and finitely many such transformations make $e,e'>2g-2$. There (2.12)(b) makes both bundles

@@ -74,8 +74,8 @@ audit:
     Theorem (Artin), which is the theorem of his Section 4.15, stated on printed
     p. 93, Section 4.16 being its proof, together with his Theorem (Artin) of
     Section 4.17, whose section and statement begin on printed p. 94 and whose
-    proof of part (1) runs on printed pp. 95--96, its Q.E.D. on p. 96 and part
-    (2) beginning there.
+    proof of part (1) is on printed p. 95, where it ends "so mult(P in X) = -Z^2
+    follows" with no Q.E.D., and the proof of part (2) runs on printed pp. 96--97.
     So part (b) now has a published proof and part (a) one published half; the
     other half is the card's step contracted-curve-is-p1, as the body now says.
     Reid's proof is stated "for simplicity" under the connected-union,
@@ -97,8 +97,9 @@ audit:
     the Contraction Theorem (Artin) is stated on printed p. 93, not pp. 92--94,
     and it is Section 4.15's theorem, Section 4.16 being its proof, while
     Section 4.17 and its Theorem (Artin) begin on printed p. 94 and the proof of
-    part (1) runs on printed pp. 95--96, part (2) beginning on p. 96, so the
-    entry's pp. 94--95 for Theorem 4.17 covered the start of it; Ex. A.16 is on printed p. 36. Section A.7's statement of the theorem is for a bunch of curves, and
+    part (1) is on printed p. 95, part (2)'s proof running on pp. 96--97, so the
+    entry's pp. 94--95 for Theorem 4.17 covered its statement and the proof of
+    part (1); Ex. A.16 is on printed p. 36. Section A.7's statement of the theorem is for a bunch of curves, and
     part (a) for a curve among several components of a fibre follows from it by
     restricting to the one-by-one principal submatrix, which the two step remarks
     and the published-solution remark now say.
@@ -113,8 +114,9 @@ audit:
     locator: printed p. 93 carries the Contraction Theorem (Artin), which is the theorem of
     Section 4.15 and not of 4.16 (4.16 is headed "Proof of Theorem"), Section
     4.17 and its Theorem (Artin) begin on printed p. 94, the proof of Theorem
-    4.17 (1) runs on printed pp. 95--96 with its Q.E.D. on p. 96, and the proof
-    of part (2) begins on printed p. 96. Corrected here and in the remark.
+    4.17 (1) lies wholly on printed p. 95, where it ends "so mult(P in X) = -Z^2
+    follows" with no Q.E.D., and the proof of part (2) runs on printed pp. 96--97.
+    Corrected here and in the remark.
 - event: source-corrected
   by: claude
   date: 2026-11-15
@@ -124,16 +126,32 @@ audit:
     on printed p. 93; Section 4.16 is headed "Proof of Theorem" and is its proof.
     The events above called it 4.16 and attached a "Theorem (Artin)" to Section
     4.17 where the theorem proved is 4.17 itself. Theorem 4.17's statement is on
-    printed p. 94, the proof of part (1) runs on printed pp. 95--96 with its
-    Q.E.D. on p. 96, and the proof of part (2) begins on printed p. 96. Read in
+    printed p. 94, the proof of part (1) lies wholly on printed p. 95 and ends
+    "so mult(P in X) = -Z^2 follows" with no Q.E.D., and the proof of part (2)
+    runs on printed pp. 96--97. Read in
     tmp/sources/reid-chapters.md and located on the printed folios of
     tmp/sources/reid-chapters-algebraic-surfaces.pdf with pdftotext as a page
     locator: p. 92 carries "4.15. Contractibility of a rational bunch of curves",
     p. 93 opens with the running head "4.16. Proof of Theorem" and carries the
     Contraction Theorem statement, p. 94 opens 4.17 and its Theorem (Artin),
-    p. 95 carries "Proof of Theorem 4.17, (1)", p. 96 its Q.E.D. and
-    "Proof of Theorem 4.17, (2)". The remark and the two earlier events are
-    corrected to the same facts.
+    p. 95 carries "Proof of Theorem 4.17, (1)" and then the heading of 4.18, so
+    the proof of (1) is wholly there and ends with no Q.E.D., p. 96 opens
+    "Proof of Theorem 4.17, (2)" and p. 97 carries its Q.E.D. and the heading of
+    4.19. The remark and the two earlier events are corrected to the same facts.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Pages of Theorem 4.17 again, on a second reader's report of issue #121. The
+    event above said the proof of part (1) runs on printed pp. 95--96 with its
+    Q.E.D. on p. 96. It lies wholly on printed p. 95: "Proof of Theorem 4.17,
+    (1)" begins there after the Q.E.D. that closes the lemma of 4.17, and it ends
+    "so mult(P in X) = -Z^2 follows." with no Q.E.D., after which the heading
+    "4.18. Graded rings over divisors" stands on the same page. The Q.E.D. on
+    p. 96 that was read as part (1)'s belongs to the lemma preceding (2). The
+    proof of part (2) opens on p. 96 and its Q.E.D. is on p. 97, where 4.19's
+    heading follows. Every mention in this card's events and in its remark now
+    gives pp. 95 and 96--97.
 ---
 
 ::: {.problem}
@@ -481,6 +499,6 @@ complement to the whole exceptional fibre and prove part (b).
 :::
 
 ::: {.remark title="Published solution"}
-M. Reid, *Chapters on Algebraic Surfaces*, arXiv:alg-geom/9602006v1 (6 February 1996), a draft of the notes submitted to the 1993 volume of the IAS/AMS Park City lecture notes series, Theorem A.7(1), statement on printed p. 29 and proof on printed pp. 30--31, states part (b) as a theorem --- the intersection matrix of a bunch of curves contracted to points by a projective birational morphism of a nonsingular surface is negative definite --- and proves it; with $k=1$ it gives $Y^2<0$ in part (a), and by restriction to a principal submatrix the same for a curve among several components of a fibre, and his Castelnuovo criterion, printed p. 10, gives $Y\cong\PP^1$ with $Y^2=-1$ when the contraction has no other exceptional curve. The identity of the image point as a nonsingular one, which is what turns $Y^2<0$ into $Y^2=-1$ there, is his Contraction Theorem (Artin), the theorem of Section 4.15, stated on printed p. 93 and proved in Section 4.16, together with his Theorem (Artin) of Section 4.17, whose statement begins on printed p. 94 and whose proof of part (1) runs on printed pp. 95--96, part (2) beginning on p. 96. The steps above are not a transcription of Reid: they reach both parts through the factorization into point blowups and Hodge index, the second of which he records as Ex. A.16, and they cover a contracted curve inside a larger exceptional locus, which his criterion does not.
+M. Reid, *Chapters on Algebraic Surfaces*, arXiv:alg-geom/9602006v1 (6 February 1996), a draft of the notes submitted to the 1993 volume of the IAS/AMS Park City lecture notes series, Theorem A.7(1), statement on printed p. 29 and proof on printed pp. 30--31, states part (b) as a theorem --- the intersection matrix of a bunch of curves contracted to points by a projective birational morphism of a nonsingular surface is negative definite --- and proves it; with $k=1$ it gives $Y^2<0$ in part (a), and by restriction to a principal submatrix the same for a curve among several components of a fibre, and his Castelnuovo criterion, printed p. 10, gives $Y\cong\PP^1$ with $Y^2=-1$ when the contraction has no other exceptional curve. The identity of the image point as a nonsingular one, which is what turns $Y^2<0$ into $Y^2=-1$ there, is his Contraction Theorem (Artin), the theorem of Section 4.15, stated on printed p. 93 and proved in Section 4.16, together with his Theorem (Artin) of Section 4.17, whose statement begins on printed p. 94 and whose proof of part (1) lies wholly on printed p. 95, part (2)'s proof running on pp. 96--97. The steps above are not a transcription of Reid: they reach both parts through the factorization into point blowups and Hodge index, the second of which he records as Ex. A.16, and they cover a contracted curve inside a larger exceptional locus, which his criterion does not.
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.4, printed p. 298, is a corollary of the Hodge index theorem for contracted curves; its part (a) proves only $Y^2\le0$, from the false statement that the pullback of an ample divisor is ample, and says nothing about $Y\cong\PP^1$.
 :::

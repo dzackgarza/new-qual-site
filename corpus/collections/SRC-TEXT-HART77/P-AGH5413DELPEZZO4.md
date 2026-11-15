@@ -36,25 +36,38 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Part (b) closed on a published proof, for issue #121. M. I. Dolgachev, Topics
-    in Classical Algebraic Geometry (27 September 2010), the complete 524-page
-    book in tmp/sources/dolgachev-topics-classical-ag.pdf with printed page =
-    PDF page minus ten, states and proves at Theorem 8.5.1, printed p. 291 with
-    the proof on pp. 291--292, that an anticanonical model of a weak Del Pezzo
-    surface of degree 4 is a complete intersection of two quadrics in P^4,
-    reducible to the diagonal pair sum t_i^2 = sum a_i t_i^2 with distinct a_i.
-    Read that proof: the projective normality is his Theorem 8.4.5, printed
-    p. 280, the dimension h^0(O_X(2)) = 13 his Lemma 8.3.1, printed p. 272, the
-    pencil then has five singular members by the discriminant count, and the
-    five singular points of those quadrics are the coordinate points. The
-    exercise's surface is that model, the blow-up of five points of P^2
-    anticanonically embedded in P^4 with K^2 = 4. His proof quotes Ramanujam's
-    vanishing theorem in Lemma 8.3.1 and cites it as Lazarsfeld, Positivity in
-    Algebraic Geometry I, Theorem 4.3.1; the card's own h^0 computation is
-    Riemann-Roch on the blow-up and does not need it, so the card's proof and
-    his agree. Part (a) is not covered: printed p. 293 uses "the 16 lines on X"
-    without proving the count, so the card's own count stands for (a). Egbert's
-    entry, cited before, stops in part (b) at the dimension count.
+    Dolgachev read for issue #121, and part (b) left open. In M. I. Dolgachev,
+    Topics in Classical Algebraic Geometry (27 September 2010), the complete
+    524-page book in tmp/sources/dolgachev-topics-classical-ag.pdf with printed
+    page = PDF page minus ten, Theorem 8.5.1, printed p. 291 with the proof on
+    pp. 291--292, proves that an anticanonical model of a weak Del Pezzo surface
+    of degree 4 is projectively normal (his Theorem 8.4.5, printed p. 280), that
+    h^0(O_X(2)) = 13 (his Lemma 8.3.1, printed p. 272), and that the two
+    quadrics of the pencil can be put in the diagonal form sum t_i^2 =
+    sum a_i t_i^2 with distinct a_i. Read closely, the proof jumps from the
+    dimension count 15 - 13 = 2 to "X is the base locus of a pencil" and then
+    uses the base locus as X: it does not show that the two quadrics have no
+    common component, nor that the degree-4 complete intersection is X. That is
+    the same gap as Egbert's entry, so part (b) stays open on the card's own
+    steps quadrics-no-common-component and x-is-complete-intersection, and the
+    remark now cites Dolgachev for exactly what he proves. Part (a) is not in his
+    book: printed p. 293 uses "the 16 lines on X" without proving the count.
+    Egbert's V.4.13, printed pp. 292--293, does settle part (a) modulo one step,
+    the adjunction derivation of C^2 = -1 for a line; his other defect is Pic X
+    written Z^6 with generators l, e_1, ..., e_6 for a five-point blow-up.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Correction on a reader's report of issue #121: the event above first read
+    "Part (b) closed on a published proof", which was wrong, and it also
+    attributed the Lazarsfeld citation for Ramanujam's vanishing theorem to
+    Lemma 8.3.1, and claimed Egbert's part (a) does not exclude other classes.
+    Dolgachev's Lemma 8.3.1 invokes Ramanujam's vanishing theorem by name without
+    a reference; the reference to Lazarsfeld, Positivity in Algebraic Geometry I,
+    Theorem 4.3.1, is in the proof of his Lemma 8.1.4, printed p. 248. Egbert's
+    part (a) does reduce a line to the F_ij and the conic by Schwarz with
+    sum b_i = sum b_i^2, as the remark now says. Part (b) is reopened.
 ---
 
 ::: {.problem}
@@ -363,27 +376,46 @@ Steps [](#sixteen-lines-total){.pf-ref} and [](#no-other-lines){.pf-ref} prove p
 ::: {.remark title="Published solutions"}
 M. I. Dolgachev, *Topics in Classical Algebraic Geometry* (27 September 2010), read in
 `tmp/sources/dolgachev-topics-classical-ag.pdf`, whose printed page is its PDF page minus ten, §8.5.1,
-Theorem 8.5.1, printed p. 291 with its proof on pp. 291--292, is a published complete proof of part (b).
-The theorem: an anticanonical model $X$ of a weak Del Pezzo surface $S$ of degree $4$ is a complete
-intersection of two quadrics in $\PP^4$, projectively normal by his Theorem 8.4.5 (printed p. 280), its
-$h^0(\OO_X(2))=13$ by his Lemma 8.3.1 (printed p. 272), the pencil of quadrics through it having exactly
-five singular members by the discriminant count, after which coordinates with the five singular points of
-those quadrics as the coordinate points put the two equations in the diagonal form
+Theorem 8.5.1, printed p. 291 with its proof on pp. 291--292, proves part of part (b) and not all of it. What
+it proves: an anticanonical model $X$ of a weak Del Pezzo surface of degree $4$ is projectively normal (his
+Theorem 8.4.5, printed p. 280) and has $h^0(\OO_X(2))=13$ (his Lemma 8.3.1, printed p. 272), so that
+$h^0(\mathcal I_X(2))=15-13=2$ and $X$ lies in a pencil $t_0Q_0+t_1Q_1=0$ of quadrics; that pencil has exactly five
+singular members, by the discriminant count, and taking their singular points as coordinate points puts the
+two equations in the diagonal form
 $$
 \sum_{i=0}^{4}t_i^2=\sum_{i=0}^{4}a_it_i^2=0,\qquad a_i\ne a_j\ (i\ne j).
 $$
-The surface of the exercise is that model: the blow-up of five points of $\PP^2$ embedded by
-$\abs{-K}$ in $\PP^4$, with $K^2=9-5=4$, so his hypotheses hold and the card is closed on it for part (b). His
-proof's one outside input is Ramanujam's vanishing theorem, quoted in the proof of Lemma 8.3.1 and cited
-there as Lazarsfeld, *Positivity in Algebraic Geometry* I, Theorem 4.3.1; the card's own step
-[](#h0-two-h-thirteen){.pf-ref} reaches the same $h^0=13$ by Riemann--Roch on the blow-up. Part (a), the
-sixteen lines, is not proved there: his §8.5.2 uses "the 16 lines on $X$" at printed p. 293 without an
-argument for the count, so part (a) rests on the card's steps
-[](#sixteen-lines-total){.pf-ref} and [](#no-other-lines){.pf-ref}.
+What it does not prove is the step that identifies the surface with the complete intersection. From
+$h^0(\OO_{\PP^4}(2))=15$ and $h^0(\OO_X(2))=13$ it concludes "This implies that $X$ is the base locus of a
+pencil $t_0Q_0+t_1Q_1=0$ of quadrics", and the rest of the proof then uses the base locus as $X$; it never
+shows that the two quadrics have no common component, nor that their intersection, a scheme of degree
+$2\cdot2=4$, is $X$ itself rather than a scheme of degree $4$ containing it. That is the same gap the entry
+below leaves, and it is what steps [](#quadrics-no-common-component){.pf-ref} and
+[](#x-is-complete-intersection){.pf-ref} supply. **Part (b) is therefore not closed on Dolgachev**: his
+theorem is cited here for the projective normality, the dimension count, the existence of the pencil and the
+diagonal form, and the degree comparison that finishes part (b) is the card's own.
 
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.13, printed pp. 292--293, is
-incomplete in both parts: part (a) at p. 292 lists the 16 classes and counts $4a^2-6a-4\le0$ but does not
-exclude a class with three distinct intersection patterns, and part (b) at p. 293 stops at the dimension
-count $h^0(\OO_X(2H))=13$ against $h^0(\OO_{\PP^4}(2))=15$ without the degree comparison that identifies
-$X$ with the intersection.
+The hypotheses match, with the exercise's own convention: the five points are in general position
+(Hartshorne V.4.7), so $X$ is the degree-four Del Pezzo surface embedded by $\abs{-K}$ with $K^2=9-5=4$,
+which is precisely his anticanonical model. One correction to the citation: his Lemma 8.3.1 proves its
+dimension count by invoking Ramanujam's vanishing theorem by name, with no reference given, and the reference
+to Lazarsfeld, *Positivity in Algebraic Geometry* I, Theorem 4.3.1, stands in the proof of his Lemma 8.1.4,
+printed p. 248. The card's own step [](#h0-two-h-thirteen){.pf-ref} reaches the same $h^0=13$ by
+Riemann--Roch on the blow-up and needs neither. Part (a), the sixteen lines, is not proved there either: his
+§8.5.2 uses "the 16 lines on $X$" at printed p. 293 without an argument for the count, so part (a) rests on
+the card's steps [](#sixteen-lines-total){.pf-ref} and [](#no-other-lines){.pf-ref}.
+
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.13, printed pp. 292--293, settles part
+(a) once one step is added, and leaves part (b) where Dolgachev leaves it. At p. 292 he sets up the
+intersection theory of the blow-up; at p. 293 he takes a curve with $\deg C=1$ and $C^2=-1$, writes
+$C\sim al-\sum b_ie_i$ with $a>0$ and $b_i\ge0$, and applies the Schwarz inequality
+$(\sum b_i)^2\le5\sum b_i^2$ to $3a-\sum b_i=1$ and $a^2-\sum b_i^2=-1$, which gives $4a^2-6a-4\le0$, hence
+$a=1$ with two of the $b_i$ equal to $1$ (the curves $F_{ij}$) or $a=2$ with all five equal to $1$ (the
+transform of the conic); that is the complete list. The one step missing is the hypothesis $C^2=-1$ itself:
+for a line it has to be derived, and by adjunction a curve of degree $1$ is rational, so
+$C^2+C\cdot K_X=-2$ with $C\cdot K_X=-\deg C=-1$ gives $C^2=-1$. His Picard group is also written $\ZZ^6$
+with generators $l,e_1,\dots,e_6$ for a blow-up of five points, which cannot be right: the rank is
+$1+5=6$ with $l,e_1,\dots,e_5$ as generators. Part (b) at p. 293 stops at the dimension count
+$h^0(\OO_X(2H))=13$ against $h^0(\OO_{\PP^4}(2))=15$ and then reads "Now use ?", so it does not reach the
+intersection either.
 :::
