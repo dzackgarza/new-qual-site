@@ -68,6 +68,16 @@ audit:
     leaves the compactness of the convergence of a Cauchy sequence as an exercise. The text of his
     answer was read from the Stack Exchange API in this pass. Part (a) is unchanged and was not
     re-read.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    A reader of this card reported that "a ball of radius at least 1 is the whole space" is false at
+    radius 1: rho is a sum over i of 2^{-i} times a term of size at most 1, so rho(f, g) is at most 1,
+    and it is 1 whenever sup_{A_i} d(f, g) is at least 1 for every i, as for the functions 0 and 2 when
+    Y = X = R. The sentence now says that a ball of radius greater than 1 is the whole space, and that
+    the balls of radius at most 1 determine the neighbourhoods, which is what the two inclusions are
+    used for. Nothing else on the card was changed.
 ---
 
 ::: {.exercise}
@@ -101,7 +111,7 @@ Conversely, choose $N$ with $2^{-N}<\epsilon/2$ and suppose $\sup_{A_N}d(f,g)<\e
 $$
 \rho(f,g)\le\sum_{i=1}^{N}2^{-i}\frac{\epsilon}{2}+\sum_{i>N}2^{-i}<\frac{\epsilon}{2}+2^{-N}<\epsilon,
 $$
-that is $B_{A_N}(f,\epsilon/2)\subset B_\rho(f,\epsilon)$. A ball of radius at least $1$ is the whole space, so the two topologies have the same neighbourhoods of each point.
+that is $B_{A_N}(f,\epsilon/2)\subset B_\rho(f,\epsilon)$. Since $\rho(f,g)\le\sum_{i=1}^\infty2^{-i}=1$ for all $f$ and $g$, a ball of radius greater than $1$ is the whole space; the balls of radius at most $1$ thus determine the neighbourhoods of each point, and by the two inclusions above a ball of either family of radius at most $1$ contains a ball of the other, so the two topologies have the same neighbourhoods of each point.
 
 The restriction map
 $$
