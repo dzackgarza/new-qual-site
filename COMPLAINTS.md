@@ -706,7 +706,7 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 - V.4.15, printed **pp. 294–295**: parts (a) and (b) have no entry; part (c) is argued (`5.4.18 c.`); part (d) is the sketch `5.4.19 d.` counting $14+42=56$ and listing eight families for $r=8$ without proving that no other negative curves exist; the starred part (e) is `5.4.17 b.`, "This is Nagata, Rational Surfaces II, corollary to proposition 9, and use (a) of this problem" — a citation.
 - V.4.16, printed **p. 296**: the entry records a parametrization and the blowup description of the 27 lines but no equations of the lines in the Fermat coordinates (the exercise asks for the equations and the incidence relations), and its answer to the automorphism question is "Automorphism group? $E_6$. A proof is in Hirschfeld Finite projective spaces in three dimensions 20.3.1" — the group of the 27-line configuration, not the surface's automorphism group, and a citation.
 - V.5.1, printed **p. 297**: the entry applies (3.9) and then asserts the decisive step: "Now how will further blowing-up make the resulting curves disjoint? Ok, further blowing up will make the curves disjoint because you have simple normal crossings to start. Now the blowing-up surface separates tangent directions at the node." Nothing shows that the blowups terminate, which is the only content beyond the printed hint.
-- V.5.4, printed **p. 298**: for part (a) the entry proves only $Y^2\le0$, and does so by asserting that "pullback of ample is ample" together with $(f^*H)^2=0$; the pullback of an ample divisor under a birational morphism is nef and big but not ample (it meets every contracted curve in zero), and $(f^*H)^2=H^2>0$ because $f$ is birational, so the displayed vanishing is false. It says nothing about $Y\cong\PP^1$. For part (b) the printed text is a garbled string ("Then for each $j$, $\sum_i\langle m_iE_i, m_jE_j\rangle=-\langle H_1,m_jE_j\rangle\le0$ ... By Zariski's Main theorem, we can't split the $Y_i$'s into two groups ... Since we have already proved indefiniteness, these two facts give negative definite") that does not establish negative definiteness.
+- V.5.4, printed **p. 298**: for part (a) the entry proves only $Y^2\le0$, and does so by asserting that "pullback of ample is ample" together with $(f^*H)^2=0$; the pullback of an ample divisor under a birational morphism is nef and big but not ample (it meets every contracted curve in zero), and $(f^*H)^2=H^2>0$ because $f$ is birational, so the displayed vanishing is false. It says nothing about $Y\cong\PP^1$. For part (b) the printed text is a garbled string ("Then for each $j$, $\sum_i\langle m_iE_i, m_jE_j\rangle=-\langle H_1,m_jE_j\rangle\le0$ ... By Zariski's Main theorem, we can't split the $Y_i$'s into two groups ... Since we have already proved indefiniteness, these two facts give negative definite") that does not establish negative definiteness. **Part (b) has a published proof, outside this set**: M. Reid, *Chapters on Algebraic Surfaces*, Theorem A.7(1), printed pp. 29--31, is negative definiteness of the intersection matrix of a bunch of curves contracted by a projective birational morphism of a nonsingular surface; part (a)'s negative self-intersection is the same theorem at $k=1$, and $Y\cong\PP^1$ is Reid's Castelnuovo criterion, printed p. 10, for the single-curve case. `P-AGH554CONTRACTEDCURVES` cites all three in the body and says which half each covers.
 - V.5.5, printed **p. 299**: the whole entry is "Consequence of my proof of exc V.2.5.a" — a cross-reference to the author's own work, with none of the three steps of the printed hint carried out.
 - V.5.6, printed **p. 299**: the trichotomy is stated and types (1) and (2) are identified through the centre and its successive blowups, but the decisive assertion of case (3) — that every $f\in R$ lies in some $\OO_{X_i,x_i}$, so that the union $R_0$ is all of $R$ — is not proved; the entry says "in the later case we repeat and get a type (3) of exc II.4.12" and cites another book ("see Vaqiue Valuations and local uniformization, remark 1.14") for the value-group claim.
 - V.5.7, printed **p. 300**: the whole entry is "The answer from 5.4 applies since at beginning of surfaces chapter, we assume that X is nonsingular (maybe X0 isn't)" — a cross-reference to the V.5.4 entry above, with the printed hint not carried out.
@@ -1397,7 +1397,7 @@ and his 2011 draft):
   ranges the cards cite, one file per range,
   `tmp/sources/vakil-rising-sea-2025-10-21-mineru-pNNNN-NNNN.md`: pp. 260--262 (§9.3), 382--385 (§13.5),
   445--447 (§15.5), 534--537 (§19.1), 544--550 (§§19.5--19.6), 554--557 (§19.9), 757--768 (§27) and
-  780--786 (§28.6). Sections used: 15.5, 19.1, 19.5, 19.6, 19.9, 20.2, 27, 28.6.
+  780--786 (§28.6). Sections used: 9.3, 13.5, 15.5, 19.1, 19.5, 19.6, 19.9, 27, 28.6.
 - **The Stacks Project**, version ed88ff78, compiled 14 July 2026,
   `https://stacks.math.columbia.edu/download/book.pdf` (38 MB, 7655 pages), retained as
   `tmp/sources/stacks-project-book.pdf`. **Each cited tag is saved as Markdown from that tag's own page**,
@@ -1638,7 +1638,9 @@ nearest located text does and what it does not do. None of them is closed, and n
   contracts a $(-1)$-curve and so is the converse of V.5.4. The Stacks Project's §54.16 (tags 0C2I--0C2M,
   printed pp. 4548--4552) is the same contraction theorem, and its §55.2--§55.3 (tags 0C5X, 0C6Z, 0C73) is
   the negative-definiteness linear algebra for numerical types of regular models over a curve, not for the
-  components of a fibre of a birational map of surfaces. Neither states V.5.4, and nothing located states
+  components of a fibre of a birational map of surfaces. Neither states V.5.4; that exercise's part (b) is a
+  theorem of Reid's *Chapters on Algebraic Surfaces* (Theorem A.7(1), printed pp. 29--31), located after this
+  pass, and nothing located states
   V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, V.4.7--V.4.15, V.5.1, V.5.5--V.5.7, V.6.1 or V.6.2.
 
 **Still open, and why.** The cards above that this pass did not close keep their own proofs and the
@@ -1652,16 +1654,19 @@ Landesman's and Kim's notes state it), `P-AGH55NONSINGDEGD` (now only $p=3$ with
 being covered by Stacks tag 0BYA and by Shichijo's elimination read in $k$),
 `P-AGH67PUNCTUREDLINE`'s converse, `P-AGH77CONEDEGDROP`, `P-AGH374COHOMCLASS` (III.7.4(b),(d)),
 `P-AGH3117NONALGSHEAF`, `P-AGH3123JUMPINGIDEAL`, IV.2.3(h), IV.3.4(a), IV.3.11(a),
-IV.3.12, IV.4.22, IV.6.9, and the twenty-four Chapter V cards that the section entries still record as
+IV.3.12, IV.4.22, IV.6.9, and the twenty-three Chapter V cards that the section entries still record as
 uncovered --- V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, the ten of V.4.7--V.4.16, V.5.1 and
-V.5.4--V.5.7, and V.6.1, V.6.2 --- whose published treatments would have to come from a source this pass
+V.5.5--V.5.7, and V.6.1, V.6.2 --- whose published treatments would have to come from a source this pass
 did not locate: the NTU set stops at V.4.4(b), Yang Pi-Yeh's entries for V.4.7--V.6.2 are the ones this
-file already recorded as incomplete,
-Reid's Chapter 4 proves the contraction theorem of V.5.4 as a theorem of surface theory (Contraction
-Theorem of Artin, printed p. 93) and does not state the exercise, and Dolgachev's *Topics in Classical
-Algebraic Geometry* download is a six-page title stub, not the book.
+file already recorded as incomplete, and Dolgachev's *Topics in Classical
+Algebraic Geometry* download is a six-page title stub, not the book. V.5.4 has come off that list since:
+the earlier note that "Reid's Chapter 4 proves the contraction theorem of V.5.4 and does not state the
+exercise" looked only at Chapter 4, and Reid's Appendix A.7 (Theorem, printed pp. 29--31) states part (b)
+outright, while his Castelnuovo criterion, printed p. 10, covers part (a)'s $Y\cong\PP^1$ for the single
+contracted curve.
 
-**Repair.** Recorded for the next pass, not done here: a source for the thirty-eight Chapter V cards, for
+**Repair.** Recorded for the next pass, not done here: a source for the thirty-seven Chapter V cards that
+remain (V.5.4's part (b) having been closed by Reid's Theorem A.7(1)), for
 the two Chapter III cards whose printed statements are false, and the Stack Exchange search once the
 throttle expires.
 
@@ -1760,13 +1765,18 @@ search was over the retained 7655-page book (version ed88ff78), tag by tag and b
   $g=0$, and the step to a large power of $\mathcal L$ needs $\mathcal L$ ample, which $\OO_X$ is not. The
   card cites both for $D\ne0$, records the missing hypothesis, and proves $D=0$ itself in step `s3`; the
   entry above records it.
-- **Not closed: V.5.4.** §55.2 (tags 0C5X and the two lemmas around it) is the real linear algebra of a
+- **Sourced outside the book: V.5.4.** §55.2 (tags 0C5X and the two lemmas around it) is the real linear algebra of a
   semi-negative definite symmetric matrix with a positive kernel vector, and §55.3 (tags 0C6Z, 0C73) applies
   it to *numerical types*, that is to the dual graph of a fibre of a morphism from a surface to a curve.
   Neither states V.5.4(a) (a curve contracted by a birational morphism of nonsingular surfaces is
   $\PP^1$ with negative self-intersection) or (b) for the components of a fibre of a birational map of
   surfaces; the surface-theoretic input would have to come from the contraction theorem of §54.16, which is
-  the converse direction. Unchanged.
+  the converse direction. **Part (b) is however a published theorem elsewhere**: M. Reid, *Chapters on
+  Algebraic Surfaces* (MSJ Memoirs 2000), Theorem A.7(1), printed pp. 29--31, negative definiteness of the
+  intersection matrix of a bunch contracted by a projective birational morphism of a nonsingular surface,
+  read in `tmp/sources/reid-chapters-algebraic-surfaces-mineru-p0029-0031.md`; with $k=1$ it gives $Y^2<0$,
+  and Reid's Castelnuovo criterion, printed p. 10, gives $Y\cong\PP^1$ with $Y^2=-1$ for a single contracted
+  curve. See the entry in the Chapter V section above.
 - **Not closed: I.2.9(b) and IV.3.4(a).** A phrase search of the book returns no occurrence of "Veronese",
   "twisted cubic", "d-uple" or "projectively normal", so it does not prove that the $d$-uple embedding of
   $\PP^1$ is cut out by the $2\times2$ minors, nor that a $d$-uple embedding is projectively normal with
@@ -1780,3 +1790,59 @@ search was over the retained 7655-page book (version ed88ff78), tag by tag and b
   19.1.1 is incomplete at Exercise 19.1.D; the §19.5--19.6 record for IV.2.2 is the earlier pass's and was
   not re-read here. Nothing in Vakil was found today for the other cards on the list.
 - Math Stack Exchange was not searched: the throttle recorded below runs to about 2026-11-16 03:00Z.
+
+**The repair pass of 2026-11-15, third: a reader of `73272357f3` and `82b5bdb820`, and the sources it asked for.**
+A local reader checked eight items of the two commits --- I.5.12(b), I.6.7, I.7.8, II.3.20, I.5.5, IV.1.8(c),
+IV.3.11(a) and the I.5 "Impact" paragraph --- and found them correct, and found the Shichijo text versions to
+hold the passages quoted. It returned seven defects, all repaired here; none of them is a criticism of the
+mathematics a card proves.
+
+- **The text versions were `pdftotext` outputs.** The entry above said the Vakil and Stacks text versions were
+  "made with `pdftotext -layout`". `pdftotext` is not a source's text version under `AGENTS.md`. Both sources
+  now have their own: the Stacks Project's 47 cited tags as one Markdown file each, saved from the tag's own
+  page with its LaTeX (the entry above names them), and Vakil's *Rising Sea* as MinerU Flash extractions of
+  the eight page ranges the cards cite. `pdftotext -layout` keeps only the page-locator role it always had.
+- **The Japanese character counts were not character counts.** The two paragraphs on the Shichijo extraction
+  gave 2 080--5 352 kana and kanji per file as 6 570--17 222, 16 862 for Chapter 1 section 5 as 5 348, and
+  `なので` 4--22 times as 4--21, and line 1406 said the `--language en` file held "no Japanese character"
+  where the later paragraph said 135. Measured on the six retained files the counts are 2 083--5 353
+  Japanese characters, 5 349 in Chapter 1 section 5, and `なので` 4 times in the file with the fewest and 22
+  in two; they are now stated once, in the paragraph that measures them, and the unretained `--language en`
+  file's count is not restated.
+- **I.5.6(b), "does not affect the conclusion" is false at $v=0$.** The source orders its columns $(y,x,v)$
+  and prints the chart-equation row as $(0,-v,0)$ where the derivatives are $(1,-v,-x)$; at $v=0$ that row
+  is zero, so the printed $J_0$ has rank at most one there and its last-two-columns minor
+  $-v(2bdv-(ad+bc))$ vanishes too. Those points are $P_1$ when $a=0$ and $P_2$ when $c=0$, both for the node
+  $xy$, so the printed rank-two claim needs the missing $1$; the card's step now says so instead of saying
+  the rank conclusion is unaffected, and records the source's second row $(0,\sum,B)$, which is the
+  computed one.
+- **I.5.13 gave the wrong property to the annihilator argument.** It proves the openness of the normal locus
+  $W$ --- the closedness of its complement, which is what the exercise asks --- and the card said "the
+  closedness of $W$". Step `s2` also did not define $W$, which the step pointed at; $W$ is now defined where
+  it is used, and identified with the normal locus by `s2`.
+- **IV.2.2's steps opened with an attribution instead of the argument.** Steps `s1`, `s2` and `s4` began
+  "This is R. Vakil ... Written out:" and then gave the card's own Riemann--Hurwitz and Riemann--Roch
+  proofs. Each now gives its argument first and cites Vakil afterwards for the statement he proves.
+- **IV.1.8(c) was still listed under #102 after it closed.** The IV.3.11(a) entry named
+  IV.1.8(c) among the open obligations; it is off that line and off the matching one in the IV.4.22/IV.6.9
+  entry.
+- **IV.1.5: Stacks Lemma 0CCS as printed is false at $d=0$.** With no $d>0$ hypothesis its equality clause
+  fails: $(\OO_X,H^0(\OO_X))$ is a $g^0_0$ on every curve, so a curve of genus $g>0$ has $r=d=0$ without
+  $g=0$, and the printed proof's step to a large power with vanishing $H^1$ uses that $\mathcal L$ is ample,
+  which $\OO_X$ is not. The card cites 0CCS for $D\ne0$ only, names the missing hypothesis, and proves
+  $D=0$ itself in step `s3`; the entry, the "Impact and owner" line and the Stacks-search bullet say the
+  same instead of calling the exercise closed outright.
+
+**V.5.4 is the one card closed in this pass, by a source the earlier passes had not opened.** M. Reid,
+*Chapters on Algebraic Surfaces* (in *Explicit Birational Geometry of 3-folds*, MSJ Memoirs 2000), Appendix
+A.7, Theorem (Negativity of exceptional locus), printed pp. 29--31, is part (b) of the exercise verbatim and
+in greater generality; taken with $k=1$ it gives $Y^2<0$ in part (a), and Reid's Castelnuovo criterion,
+printed p. 10, gives $Y\cong\PP^1$ with $Y^2=-1$ for a single contracted curve. `P-AGH554CONTRACTEDCURVES`
+cites all three in the body, says which half each covers, and keeps its own Hodge-index proof, which is the
+alternative Reid names in Ex. A.16 and which reaches the general case his proof simplifies away. Read in
+`tmp/sources/reid-chapters-algebraic-surfaces-mineru-p{0010,0029-0031,0092-0095}.md`.
+
+**What was not done.** Math Stack Exchange remains unsearched: the throttle in the §60--§73 entry runs to
+about 2026-11-16 03:00Z, and this pass ended before it. The other Chapter V cards, III.7.4(b),(d),
+III.11.7(a), III.12.3, I.2.9(b), IV.3.4(a), IV.3.12, IV.4.22 and IV.6.9 still have no located published
+proof, and the entries above say what the nearest located text does and does not do.
