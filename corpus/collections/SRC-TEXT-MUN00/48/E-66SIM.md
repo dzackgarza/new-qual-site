@@ -35,9 +35,11 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Transcribed, with one correction, from Yougi, *Munkres Topology Solution: Chapter 8* (Nocturne blog,
-    https://hexo.yougi.top/2025/07/10/Munkres-Topology-Solution-Chapter-8/, posted 2025-07-10), Ex. 48.3,
-    text at tmp/sources/yougi-2025-munkres-chapter-8.md. The post proves the exercise directly, as the book
+    Transcribed, with one correction, from 杨荻 (whose account name is Yougi and whose blog is *Nocturne*),
+    *Munkres Topology Solution: Chapter 8*, https://hexo.yougi.top/2025/07/10/Munkres-Topology-Solution-Chapter-8/,
+    posted 2025-07-10, Ex. 48.3, text at tmp/sources/yougi-2025-munkres-chapter-8.md. The byline is the site's
+    own: the post's page carries "© 2026 杨荻" in its footer and the site's feed names the author 杨荻, so
+    "Yougi" is the blog and not the author's name. The post proves the exercise directly, as the book
     proves Theorem 48.2: given closed A_n with empty interior and an open U_0, choose x in U_0 outside A_1,
     a neighbourhood U_1 of x with compact closure inside U_0, and recurse so that the closures are nested
     inside U_{n-1} with compact closure; the closures are then nonempty closed subsets of the compact
@@ -48,6 +50,16 @@ audit:
     closedness of A_n give, and this is the relation the book's own proof of Theorem 48.2 carries. The
     post's alternative, "the one-point compactification of X is Baire while X is its open subspace", is
     not used: it needs Lemma 48.4, which the book asterisks.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Re-read on issue #144. The transcription above was credited to "Yougi"; the post's byline is 杨荻, and
+    "Yougi" is the name of the blog (the page title reads "Munkres Topology Solution: Chapter 8 · Yougi —
+    Nocturne" and the footer "© 2026 杨荻", with the site's feed naming 杨荻 as author). The credit now carries
+    it. Nothing of the proof changed: the recursion, the correction of the post's "U_i not a subset of
+    A_{i+1}", and the use of Theorem 26.9 for the nested closed sets inside the compact closure of U_1 stand as
+    the earlier event records them.
 ---
 
 ::: {.exercise}
