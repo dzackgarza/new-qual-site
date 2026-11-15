@@ -20,6 +20,30 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Printed exercise read: Hartshorne, Algebraic Geometry (1977), I.7.8, printed
+    p. 55. Published treatment located outside the twelve retained sets:
+    A. Shichijo, Solutions to Hartshorne's Algebraic Geometry, Chapter 1
+    section 7, Exercise 7.8, printed p. 9 of
+    tmp/sources/shitijyou-ch1-section7.pdf, which is Exercise 7.7 applied to
+    deg Y = 2 exactly as this card's steps join-degree-one and
+    join-is-linear-span do. Two limits of that source are recorded rather than
+    smoothed over: its Exercise 7.7(b) computes deg(X cap H) = deg X by choosing
+    a hyperplane H for which every component of X cap H has intersection
+    multiplicity one, and marks that choice with a literal "（？）" on the same
+    printed p. 9 of that file, so the degree drop it feeds into 7.8 is not complete
+    there; and it stops at the linear span, proving nothing about Y being a
+    quadric hypersurface inside it. The second half is this card's step
+    y-is-quadric-hypersurface, proved from the unique factorization of the
+    homogeneous coordinate ring of L and Proposition I.7.6(d), and it is the
+    card's own argument, not a transcription. So the span half of the exercise is
+    source-backed, the quadric half is not, and the degree drop rests on the
+    card's blow-up computation in P-AGH77CONEDEGDROP rather than on the source's
+    induction.
 ---
 
 ::: {.problem}

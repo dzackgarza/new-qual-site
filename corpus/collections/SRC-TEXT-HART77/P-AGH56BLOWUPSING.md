@@ -35,6 +35,31 @@ audit:
     Rechecked the characteristic 7 and 13 claim inherited from I.5.1(c):
     with f=x^3-y^2-x^4-y^4 the remaining singular point needs x=3/4,
     y^2=-1/2 and 91/256=0, and 91=7.13.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Printed exercise read: Hartshorne, Algebraic Geometry (1977), I.5.6(b),
+    printed p. 37. Complete published treatment of the node located outside the
+    twelve retained sets: A. Shichijo, Solutions to Hartshorne's Algebraic
+    Geometry, Chapter 1 section 5, Exercise 5.6(b), printed p. 4 of
+    tmp/sources/shitijyou-ch1-section5.pdf, which was not in the earlier search
+    of Vakil's Math 216 classes 49--50 (that source factors the strict transform
+    and leaves nonsingularity as an exercise). The source writes the node as
+    f_2 = (ax-by)(cx-dy) with ad-bc != 0, records the two points
+    P_1 = (0,0)x(b:a), P_2 = (0,0)x(d:c) above the origin, and computes the
+    Jacobian of the strict transform on the chart V_0; on the exceptional divisor
+    the surviving entry is 2bdv-(ad+bc), which at a-bv = c-dv = 0 equals
+    +-(ad-bc) and is therefore nonzero, so the strict transform is nonsingular at
+    both points. The card's step general-node-two-points is the same computation
+    after the linear change of coordinates that puts the tangent cone in the form
+    xy, where the derivative in the chart coordinate is 1; the source's
+    normalization keeps (a,b,c,d) general and its V_0 chart computation is written
+    for the points with b, c != 0, the remaining point being the stated "same
+    calculation" on V_1, which is what the card's two-chart step supplies.
+    Checked against the book: (b) asks only for the two nonsingular points above
+    the node, which is what is proved; no characteristic hypothesis enters.
 ---
 
 ::: {.problem}

@@ -20,6 +20,30 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Printed exercise read: Hartshorne, Algebraic Geometry (1977), I.6.7, printed
+    p. 47. Published treatment located outside the twelve retained sets:
+    A. Shichijo, Solutions to Hartshorne's Algebraic Geometry, Chapter 1
+    section 6, Exercise 6.7, printed pp. 5--6 of
+    tmp/sources/shitijyou-ch1-section6.pdf. For the r = s direction the source
+    embeds A^1 in P^1, extends the isomorphism to a birational map P^1 to P^1,
+    which is an automorphism by Exercise I.6.8, and concludes
+    phi-bar({P_i}) = P^1 - phi-bar(P^1 - {P_i}) = {Q_j}, so r = s; that is the
+    card's step r-equals-s by a different route, the card using the unit group
+    of the coordinate ring, which is also what the same file's Exercise 6.6(c)
+    computation of Aut k(x) = PGL(1) supplies. On the converse the source is not
+    a proof: it observes that an element of PGL(1) is determined by the images of
+    three points and then says that since A^1 is infinite one can choose
+    {P_i}, {Q_j} not carried to each other by any element, which is the claim at
+    issue and needs an invariant of four points; its footnote replaces the
+    argument by a configuration in A^3. The card's counterexample, the four-point
+    sets {inf,0,1,lambda} and {inf,0,1,mu} with mu outside the six cross-ratio
+    transforms of lambda, is therefore still the only complete argument the
+    search produced, and the converse half stays without a published proof.
 ---
 
 ::: {.problem}

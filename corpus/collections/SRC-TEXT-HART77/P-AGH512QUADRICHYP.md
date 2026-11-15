@@ -21,6 +21,26 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Printed exercise read: Hartshorne, Algebraic Geometry (1977), I.5.12,
+    printed p. 38 (PDF p. 53 of tmp/sources/hartshorne-1977-algebraic-geometry.md).
+    Complete published solution located outside the twelve retained sets:
+    A. Shichijo, Solutions to Hartshorne's Algebraic Geometry, Chapter 1
+    section 5, Exercise 5.12, printed pp. 10--11 of
+    tmp/sources/shitijyou-ch1-section5.pdf (section5_ex.pdf in the MathNotes
+    repository, dated 2020/March). Its (a), printed p. 10, is the diagonalization
+    of the symmetric form and the rescaling by square roots, which is this card's
+    step s1; its (b) is the card's step s2 with the same two implications
+    (r < 2 gives x_0^2 or (x_0+ix_1)(x_0-ix_1); reducibility gives a product of
+    two linear forms, hence rank at most two); (c) and (d), printed p. 11, read
+    the singular locus off the partials 2x_i and write Q as the cone over the
+    quadric in the first r+1 variables. Checked against the book: the hypothesis
+    char k != 2 is used exactly where the source uses it, in the polarization and
+    in the two distinct factors, and the iff of (b) is proved, not one direction.
 ---
 
 ::: {.problem}

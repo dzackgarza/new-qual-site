@@ -20,6 +20,28 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-17
+
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Printed exercise read: Hartshorne, Algebraic Geometry (1977), II.3.20,
+    printed pp. 94--95. Complete published solution located outside the twelve
+    retained sets: A. Shichijo, Solutions to Hartshorne's Algebraic Geometry,
+    Chapter 2 section 3, Exercise 3.20, printed pp. 17--18 of
+    tmp/sources/shitijyou-ch2-section3.pdf. It proves (a) through (d) from
+    Hartshorne I.1.8(a),(b) and I.3.6 alone: dim X = dim O_{X,P}
+    at a closed point, dim X = trdeg K(X)/k, and for a closed subset Y the
+    identity codim(Y,X) = inf{dim O_{X,P} : P in Y} by reading a maximal chain of
+    primes in A and localizing at the generic point of each irreducible Z
+    contained in Y, then dim Y + codim(Y,X) = dim X from I.1.8(b). Its (e) is left
+    unfinished in the file (the sentence ends at "thus by Lemma I");
+    (f) is proved. Checked against the book: the source states Y irreducible and
+    then passes to an arbitrary closed Y through the infimum over the irreducible
+    Z contained in Y, and at Y empty the infimum is over an empty family, which is
+    exactly the gap this card records; the source does not treat the empty case
+    either, so it confirms the card's reading instead of supplying the missing
+    convention.
 ---
 
 ::: {.problem}

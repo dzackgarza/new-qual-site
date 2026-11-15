@@ -20,6 +20,28 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Printed exercise read: Hartshorne, Algebraic Geometry (1977), I.5.13,
+    printed p. 38 (PDF p. 53 of the checked-in extraction). Complete published
+    solution located outside the twelve retained sets: A. Shichijo, Solutions to
+    Hartshorne's Algebraic Geometry, Chapter 1 section 5, Exercise 5.13, printed
+    p. 11 of tmp/sources/shitijyou-ch1-section5.pdf. The source localizes to an
+    affine variety Y with ring A and K = K(Y), takes the integral closure A-bar,
+    which is a finite A-module by Theorem I.3.9A, and sets
+    U = {P in Y : A-bar is contained in O_{P,Y}} = the intersection of the open
+    sets Z(s_i)^c over the denominators of a generating set of A-bar. That is
+    this card's step s1 (finiteness) followed by the identification of the
+    nonnormal locus with the support of the finite module A-bar/A; the source
+    proves U contained in Nor(Y) by O_{P,Y} = (A-bar)_{m_P}, integrally closed as
+    a localization of an integrally closed ring, and the reverse inclusion by the
+    integrality over O_{P,Y} of an element outside it, which is the card's step s2
+    localized. Checked against the book: the exercise forbids Theorem I.5.3, and
+    neither the source nor the card uses it; both use only Theorem I.3.9A and the
+    irreducibility of Y for nonemptiness.
 ---
 
 ::: {.problem}

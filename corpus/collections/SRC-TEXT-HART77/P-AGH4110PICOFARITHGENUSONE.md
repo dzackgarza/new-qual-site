@@ -28,6 +28,34 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: 'Hartshorne IV Ex. 1.10, printed p. 299 (PDF p. 314), reads "the elements of the group Pic^0 X", so the statement and title that name Pic^0 X are the printed ones; the printed page was re-read in the retained PDF for this check.'
+
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Printed exercise read: Hartshorne, Algebraic Geometry (1977), IV.1.10,
+    printed p. 299 (PDF p. 314 of the checked-in extraction). Published
+    treatment located outside the twelve retained sets:
+    R. Vakil, The Rising Sea: Foundations of Algebraic Geometry, 21 October 2025
+    version, Section 19.9, printed pp. 555--556 of
+    tmp/sources/vakil-rising-sea-2025-10-21.pdf. It proves the bijection in the
+    regular case and by the route the exercise asks for: (19.9.1) for a genus 1
+    curve deg omega_C = 0 and h^0(C, omega_C) = 1, so omega_C is the structure
+    sheaf, and for deg L > 0 Riemann--Roch with Serre duality gives
+    h^0(C, L) = deg L, which is the card's step s1 together with the vanishing of
+    step s2; (19.9.2) every degree 1 invertible sheaf has a section, so it is
+    O_C(q) for q the divisor of zeros, and distinct points give distinct sheaves
+    because a degree 1 sheaf has one section up to scalars, which is the card's
+    steps s3 and s4 for E supported at a regular point; (19.9.3) twisting by
+    O(-p) gives the bijection between Pic^0 and the degree 1 points, with the two
+    composites computed, which is the card's steps s5 and s6. What the source does
+    not cover is the singularity: Vakil works with a curve, i.e. a regular
+    projective integral scheme of dimension 1, while Hartshorne's X is only a
+    locally complete intersection with p_a = 1, and the exercise fixes P_0 in
+    X_reg and asks for a bijection onto X_reg. The card's step s3 settles the
+    singular case with the criterion that O_{X,P}/(a) = k, i.e. that a principal
+    maximal ideal makes P regular; that step is the card's own and the exercise's
+    printed hypothesis on X is what makes it necessary.
 ---
 
 ::: {.problem}

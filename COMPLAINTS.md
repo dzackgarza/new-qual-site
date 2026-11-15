@@ -1323,3 +1323,143 @@ A set not read before was located and is held: Yougi, *Munkres Topology Solution
 - `E-J8QUX`: `"two-dimensional CW complex" metrizable "perfect map" Munkres exercise 73.4 quotient space compact Hausdorff solution`.
 
 **Repair.** Two cards were corrected. `E-LHQJE` concluded $n(f,a)=\deg h$ by calling both sides "the change in the lift of $g$", which is the definition of $n(f,a)$ on printed p. 403 but not that of $\deg h$: §58 Exercise 9 defines the degree by $h_*(\gamma(x_0))=d\cdot\gamma(x_1)$, and the card now identifies the two through the isomorphism $[\delta]\mapsto\tilde\delta(1)-\tilde\delta(0)$ of Theorem 54.5 (printed p. 345). `E-2B91X` cited the closed-surjection normality statement as "Exercise 6 of §32, printed p. 199"; the exercise is Exercise 6 of **§31**, printed p. 199. The other nine keep the substance of the proofs their cards carried --- for §68.4 and §73.4 the argument of the published proof transcribed in this pass --- and those proofs were re-read against the book's numbered results: §66.2 against the definition of $n(f,a)$ (printed p. 403) and Green's theorem; §68.1 against Example 1 (printed p. 414); §68.4 against Lemma 68.3 and Theorem 68.4 (printed p. 418); §69.2 against Lemma 68.3 (printed p. 418) and Lemma 67.5 (printed p. 410); §70.1 against Theorem 70.1 (printed p. 426); §70.2 against Theorem 70.1 and §59; §72.1 against Corollary 70.4 (printed p. 432) and Theorem 59.3 (printed p. 369); §72.2 against Lemma 73.3 (printed p. 443); §72.3 against Theorem 72.1 (printed p. 439) and the definition of the fundamental group in §52 (printed p. 331); §73.4 against Theorem 34.1 (printed p. 215) and Theorem 26.2 (printed p. 165).
+
+## `SRC-TEXT-HART77`: the #121 pass of 2026-11-15, the cards listed, and what the sources outside the retained sets proved
+
+**Object and need.** [Issue #121](https://github.com/dzackgarza/new-qual-site/issues/121): every Hartshorne card whose
+entry here says it has no complete published solution is to carry a proof transcribed from a published
+solution set or a published complete argument, with the source and its printed page on the card and the
+proof checked against the book. The issue was reopened on 2026-11-13 on the ground that this file's
+lists of sources searched are not cited solutions. This entry does three things: it lists the cards the
+sections above name, it records what the search outside the twelve retained sets found, and it records
+where a located source does not hold what the entry that cites it says.
+
+**The cards, sixty-nine.** Grouped by chapter; each with its exercise and with the sources its own entry
+records as searched. Unless stated otherwise the search recorded above is "the twelve retained sets in
+`tmp/sources` by `pdftotext -layout` extraction" (Borcherds, Cais, Cutrone--Marshburn, Egbert, Kim,
+Lomont, Okamoto, Park, Saglam--Chris, Sam, Stein, Troiani), and the conclusion recorded is that no one of
+them proves the request.
+
+- Chapter I, thirteen. `P-AGH29PROJCLOSURE` (I.2.9(b), generators of $I(\bar Y)$; searched Borcherds, Troiani
+  and Park only, the three sets that reach Chapter I). `P-AGH316QPPRODUCT` (I.3.16(c)), `P-AGH319JACOBIAN`
+  (I.3.19(a)), `P-AGH320EXTENDREG` (I.3.20); searched Borcherds, Troiani, Egbert plus the file listings of the
+  other nine. `P-AGH55NONSINGDEGD` (I.5.5 in the case $p=3$, $3\mid d$), `P-AGH56BLOWUPSING` (I.5.6(b)),
+  `P-AGH58JACOBIANRANK` (I.5.8), `P-AGH512QUADRICHYP` (I.5.12(b)), `P-AGH513NONNORMALLOCUS` (I.5.13); all
+  twelve, with Chapter I section 5 material in Borcherds (5.1--5.5), Troiani (5.9) and Egbert (5.1--5.15) and
+  Cutrone--Marshburn's partial section. `P-AGH66AUTP1` (I.6.6(c)), `P-AGH67PUNCTUREDLINE` (I.6.7 and its
+  converse); all twelve plus `assets/attachments/Hartshorne_Solutions.pdf`. `P-AGH77CONEDEGDROP` (I.7.7(b)),
+  `P-AGH78DEGTWOSPAN` (I.7.8, the quadric half); all twelve, section 7 only in Borcherds, Egbert and
+  Cutrone--Marshburn.
+- Chapter II, four. `P-AGH2215VARTOSCH` (II.2.15(c)); all twelve. `P-AGH2315GEOMIRRED` (II.3.15(a),(b)); all
+  twelve. `P-AGH2310FIBRES` (II.3.10(b), the two-point fibre, false in characteristic 2 as printed); the
+  printed page and the two published steps. `P-AGH2320DIMENSION` (II.3.20(c),(d) for the empty closed
+  subset); a reading of the printed conventions.
+- Chapter III, three. `P-AGH374COHOMCLASS` (III.7.4(b),(d)); the ten retained sets and Kim's authored
+  source, release PDF and `src/03-07-the-Serre-duality-theorem.tex`. `P-AGH3117NONALGSHEAF` (III.11.7(a));
+  all twelve. `P-AGH3123JUMPINGIDEAL` (III.12.3, whose printed cohomology claim is false); all twelve.
+- Chapter IV, ten. `P-AGH418ARITHGENUSSINGULAR` (IV.1.8(c)); Egbert, Park, Lomont, Kim, Saglam--Chris, Sam,
+  Borcherds, Stein, Cais, Cutrone--Marshburn. `P-AGH415DIMLEQDEG` (IV.1.5), `P-AGH4110PICOFARITHGENUSONE`
+  (IV.1.10), `P-AGH422GENUSTWOMODULI` (IV.2.2), `P-AGH423DUALCURVE` (IV.2.3(h)), `P-AGH434RATIONALNORMALCURVE`
+  (IV.3.4(a)), `P-AGH4312NODALCURVESEXIST` (IV.3.12); Park, Lomont, Cais, Cutrone--Marshburn and Egbert, the
+  only sets that reach Chapter IV. `P-AGH4311PROJECTIONCLOSEDIMMERSION` (IV.3.11(a)); the same, found to be
+  a citation of Shafarevich in Egbert. `P-AGH4422FAMILYOVERAFFINELINE` (IV.4.22) and
+  `P-AGH469NONSINGULARSURFACECONTAININGACURVE` (IV.6.9); the ten retained sets plus Kim.
+- Chapter V, thirty-nine. `P-AGH514LINEONSURF` (V.1.4(b)), `P-AGH5111FINITEAUT` (V.1.11(a)),
+  `P-AGH5112NUMAMPLE` (V.1.12); Egbert only, Park for V.5 alone. `P-AGH521BASEUNIQUE` (V.2.1),
+  `P-AGH522DECOMPSECT` (V.2.2), `P-AGH523SUCCEXT` (V.2.3), `P-AGH525INVARIANTE` (V.2.5(a),(c)),
+  `P-AGH528STABLEBUNDLE` (V.2.8(c)), `P-AGH5210CANONSCROLL` (V.2.10), `P-AGH5212ELLRULEDAMPLE` (V.2.12),
+  `P-AGH5213ELLSCROLL` (V.2.13), `P-AGH5215FROBENIUSRULED` (V.2.15(c)), `P-AGH5217CONORMALSPLIT` (V.2.17);
+  Egbert for section 2 and Park for section 5. `P-AGH531PABLOWUP` (V.3.1), `P-AGH534MULTLOCRING` (V.3.4(d),(e)),
+  `P-AGH535HYPERELLGENUS` (V.3.5), `P-AGH536ANALYTICEQUIV` (V.3.6), `P-AGH537EMBRESOLUTION` (V.3.7),
+  `P-AGH538INEQUIVSING` (V.3.8); Egbert for section 3. `P-AGH543ORDINARYSING` (V.4.3),
+  `P-AGH544CUBICGROUPLAW` (V.4.4(b)); Egbert for section 4. `P-AGH547GENUSBOUND` (V.4.7),
+  `P-AGH548IRREDCLASSES` (V.4.8*), `P-AGH549MINGENUS` (V.4.9), `P-AGH5410NUMINEQ` (V.4.10),
+  `P-AGH5411WEYLGROUPS` (V.4.11), `P-AGH5412KODAIRAVANISH` (V.4.12), `P-AGH5413DELPEZZO4` (V.4.13(b)),
+  `P-AGH5414SPACECURVES` (V.4.14), `P-AGH5415GENPOSITION` (V.4.15), `P-AGH5416FERMATCUBIC` (V.4.16);
+  Egbert for section 4, whose entries for these ten are citations, stubs or unfinished computations, with no
+  retained set covering section 4 at all. `P-AGH551RESOLVERATFN` (V.5.1), `P-AGH554CONTRACTEDCURVES` (V.5.4),
+  `P-AGH555ELEMTRANSFORM` (V.5.5), `P-AGH556VALUATIONRINGS` (V.5.6), `P-AGH557NEGSELFINT` (V.5.7),
+  `P-AGH558E8SINGULARITY` (V.5.8(b)), `P-AGH561COMPLETEINT` (V.6.1), `P-AGH562CHERNGRIFFITHS` (V.6.2);
+  Egbert for sections 5 and 6, Park for V.5.8(a) only.
+
+**What was searched in this pass, and its text version.** Outside the twelve retained sets and outside the
+sources the entries above already name (NTU Algebraic Geometry II Chapter V homework, Yang Pi-Yeh, Reid's
+*Chapters on Algebraic Surfaces*, Bertram, Block, Garland, Milne, Haiman, Vakil's Math 216 classes 49--50
+and his 2011 draft):
+
+- **A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答*** (2020/March, CC BY 4.0),
+  `https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/`, PDFs under `Hartshorne_AG_Ch1`,
+  `Hartshorne_AG_Ch2` in the `shitijyou-a/MathNotes` repository: Chapter 1 sections 1--7 and Chapter 2
+  sections 1--8, about half the exercises, "written in detail".
+  Downloaded to `tmp/sources/shitijyou-ch1-section{2,5,6,7}.pdf` and
+  `tmp/sources/shitijyou-ch2-section{3,6}.pdf`, text versions beside them (`.txt`).
+- **R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry***, 21 October 2025 version,
+  `https://math.stanford.edu/~vakil/216blog/FOAGoct2125public.pdf`: `tmp/sources/vakil-rising-sea-2025-10-21.pdf`,
+  text version `.md` with `<!-- PDF page N -->` markers, 853 pages. Sections used: 15.5, 19.5, 19.6, 19.9,
+  19.10, 20.2, 27, 28.6.
+- **The Stacks Project**, `https://stacks.math.columbia.edu/download/book.pdf` (38 MB, 7655 pages),
+  `tmp/sources/stacks-project-book.pdf` with a `.md` text version carrying page markers and the tag of
+  every numbered result, so that a statement can be cited by tag. Searched for the twisted cubic, the
+  normal locus, quadrics, dimension, Riemann--Roch and the cohomology of curves.
+- Web pages were saved as `.md` where used. No MinerU and no Mistral OCR is available in this VM (no
+  `mineru`/`magic-pdf` binary, `MISTRAL_API_KEY` unset, and `tools/mistral_ocr.py` needs the key), so every
+  PDF text version here was made with `pdftotext -layout` and split into pages, which is the extractor used
+  by every earlier entry in this file.
+
+**Located, and transcribed onto the cards, nine cards.** `P-AGH512QUADRICHYP` (I.5.12(b)), `P-AGH513NONNORMALLOCUS`
+(I.5.13), `P-AGH56BLOWUPSING` (I.5.6(b)), `P-AGH78DEGTWOSPAN` (I.7.8, the span half), `P-AGH67PUNCTUREDLINE`
+(I.6.7, the $r=s$ direction), `P-AGH2320DIMENSION` (II.3.20(a)--(d)) from Shichijo, printed pages 10, 11, 4,
+9, 5--6 and 17--18; `P-AGH4110PICOFARITHGENUSONE` (IV.1.10) from Vakil 19.9.1--19.9.3, printed pp. 555--556;
+`P-AGH422GENUSTWOMODULI` (IV.2.2(a),(b)) from Vakil 19.5.1, 19.5.2, 19.5.6, 19.5.7 and 19.6.2, printed
+pp. 546--551; and `P-AGH2310FIBRES` (II.3.10(b)), where the located source repeats the defect instead of
+repairing it. Each card's audit trail now carries the source, its printed page, which of the source's
+paragraphs is which of the card's steps, and what the source does not cover.
+
+**Sources that do not hold what they were searched for.** Recorded rather than used, with the line.
+
+- Shichijo, Chapter 1 section 5, Exercise 5.5, printed p. 3: the example $x_0x_1^{d-1}+x_1x_2^{d-1}+x_2x_0^{d-1}$
+  is singular at $(1:1:1)$ whenever $\operatorname{char}k=3$ and $3\mid d$ (the value there is $3$ and every
+  partial derivative is $d$), and the proof's final step cancels to $(d-1)^2/(d-2)=1$, which over
+  characteristic $3$ with $d\equiv0$ reads $1=1$; so it does not close `P-AGH55NONSINGDEGD`.
+- Shichijo, section 6, Exercise 6.7, printed p. 6: the converse is asserted from "an element of $PGL(1)$ is
+  determined by the images of three points" plus "since $A^1$ is infinite one can choose the two sets not
+  carried to each other by any element", which is the claim, not a proof of it; nothing there is a
+  non-isomorphism invariant. `P-AGH67PUNCTUREDLINE`'s converse stays unsourced.
+- Shichijo, section 7, Exercise 7.7(b), printed p. 9: the choice of the hyperplane $H$ with every component
+  of $X\cap H$ of intersection multiplicity one is marked by the author with "（？）"; the degree drop of
+  `P-AGH77CONEDEGDROP` therefore rests on the card's blow-up computation, not on this source.
+- Shichijo, Chapter 2 section 3, Exercise 3.10(b), printed p. 7: writes $k[t]/(t^2-a)$ as
+  $k[t]/(t-\sqrt a)\times k[t]/(t+\sqrt a)$ by the Chinese remainder theorem, which needs the two roots
+  distinct. In characteristic $2$ the ring is $k[t]/((t-r)^2)$. `P-AGH2310FIBRES` keeps the printed
+  statement and its characteristic-two computation; the obligation is still an erratum.
+- Vakil 19.6.2 states the bijection between genus 2 curves and six-point sets modulo $PGL_2$ but does not
+  carry out the $\Sigma_6$ action of IV.2.2(d) or the correspondence of (e); 15.5.B, the strict
+  three-transitivity of $\operatorname{Aut}\PP^1$, is an exercise there.
+- Vakil 19.9 proves IV.1.10 for a regular genus 1 curve; Hartshorne's $X$ is only a locally complete
+  intersection with $p_a=1$, and the singular case remains the card's step s3.
+- Shichijo's Exercise 3.20 leaves (e) unfinished, and like the book it takes $Y$ irreducible before passing
+  to an infimum, so it does not supply the empty case that `P-AGH2320DIMENSION` records.
+
+**Math Stack Exchange was not searched.** This VM's address cannot reach the Stack Exchange API or the
+question pages until about 2026-11-16 03:00Z (the throttle in the §60--§73 entry above), so no query was run
+for any card of this batch and no thread is cited. That is a gap in this pass, not a conclusion that no
+answer exists.
+
+**Still open, and why.** The cards above that this pass did not close keep their own proofs and the
+obligation recorded in their sections. The ones where a further search is the next step are
+`P-AGH29PROJCLOSURE` (no located proof that the three quadrics generate $I(\bar Y)$: Wikipedia asserts it,
+Landesman's and Kim's notes state it), `P-AGH55NONSINGDEGD` and `P-AGH512QUADRICHYP`'s neighbours in I.5,
+`P-AGH67PUNCTUREDLINE`'s converse, `P-AGH77CONEDEGDROP`, `P-AGH374COHOMCLASS` (III.7.4(b),(d)),
+`P-AGH3117NONALGSHEAF`, `P-AGH3123JUMPINGIDEAL`, IV.1.8(c), IV.1.5, IV.2.3(h), IV.3.4(a), IV.3.11(a),
+IV.3.12, IV.4.22, IV.6.9, and the twenty-four Chapter V cards that the section entries still record as
+uncovered --- V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, the ten of V.4.7--V.4.16, V.5.1 and
+V.5.4--V.5.7, and V.6.1, V.6.2 --- whose published treatments would have to come from a source this pass
+did not locate: the NTU set stops at V.4.4(b), Yang Pi-Yeh's entries for V.4.7--V.6.2 are the ones this
+file already recorded as incomplete,
+Reid's Chapter 4 proves the contraction theorem of V.5.4 as a theorem of surface theory (Contraction
+Theorem of Artin, printed p. 93) and does not state the exercise, and Dolgachev's *Topics in Classical
+Algebraic Geometry* download is a six-page title stub, not the book.
+
+**Repair.** Recorded for the next pass, not done here: a source for the thirty-eight Chapter V cards, for
+the two Chapter III cards whose printed statements are false, and the Stack Exchange search once the
+throttle expires.

@@ -22,7 +22,35 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Printed exercise read: Hartshorne, Algebraic Geometry (1977), IV.2.2, printed
+    p. 304 (PDF p. 319 of the checked-in extraction). Published treatment
+    located outside the twelve retained sets:
+    R. Vakil, The Rising Sea: Foundations of Algebraic Geometry, 21 October 2025
+    version, Section 19.5 and 19.6, printed pp. 546--551 of
+    tmp/sources/vakil-rising-sea-2025-10-21.pdf. Its Theorem 19.5.1, printed
+    p. 546, is the hyperelliptic Riemann--Hurwitz formula, which for r = 6 gives
+    g = 2 with ramification index 2 at each of the six branch points; Proposition
+    19.5.2, printed p. 546, constructs C as the normalization of
+    y^2 = f(x) with f the product of the six linear factors and computes its
+    genus and its branching; Propositions 19.5.6 and 19.5.7, printed p. 548,
+    identify the hyperelliptic double cover with the map given by the canonical
+    sheaf for g >= 2 and prove it is unique, which is part (a)'s statement that
+    the canonical system determines f up to an automorphism of P^1; Section
+    19.6.2, printed p. 550, assembles the bijection between genus 2 curves and
+    double covers of P^1 branched at six points and calls it a three-dimensional
+    family. Part (c), the unique projectivity carrying three points to 0, 1,
+    infinity, is Vakil's Exercise 15.5.B, printed p. 447, stated there and proved
+    in this corpus as P-AGH66AUTP1 from Milne. Parts (d) and (e), the explicit
+    Sigma_6 action on triples and the resulting one-to-one correspondence, are
+    not in Vakil: he states the bijection between curves and six-point sets modulo
+    PGL_2 and stops short of the action, so those two parts remain the card's own
+    argument.
 review: draft
+
 ---
 
 ::: {.problem}

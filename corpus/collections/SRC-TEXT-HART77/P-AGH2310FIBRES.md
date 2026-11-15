@@ -24,6 +24,27 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: Hartshorne II.3.10(b) assumes only that k is algebraically closed, and in characteristic 2 the fibre over a != 0 is one nonreduced point, so the printed two-point assertion is false there. The card keeps the printed hypothesis and proves the two-point assertion under char k != 2, with the characteristic-2 fibre computed as a counterexample.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Printed exercise read: Hartshorne, Algebraic Geometry (1977), II.3.10(b),
+    printed p. 92. A further published solution was located outside the twelve
+    retained sets and it repeats the defect rather than repairing it:
+    A. Shichijo, Solutions to Hartshorne's Algebraic Geometry, Chapter 2
+    section 3, Exercise 3.10(b), printed p. 7 of
+    tmp/sources/shitijyou-ch2-section3.pdf, computes
+    k[s,t]/(s-t^2) tensor_{k[s]} k[s,u]/(s-a,u) = k[t]/(t^2-a) and then writes
+    that ring as k[t]/(t-sqrt a) x k[t]/(t+sqrt a) by the Chinese remainder
+    theorem. That factorization needs the two roots distinct, i.e. char k != 2;
+    in characteristic 2, a = r^2 and t^2-a = (t-r)^2, the ring is k[t]/((t-r)^2),
+    one nonreduced point with residue field k, exactly the counterexample this
+    card keeps as a step. The same slip is at Kim, PDF p. 23 and Cais, 3.10(b).
+    So no located source proves the printed two-point assertion in
+    characteristic 2, and none can: the printed statement is false there. The
+    card keeps its characteristic-two computation and the repair stays open on an
+    erratum or on the owner's acceptance.
 ---
 
 ::: {.problem}
