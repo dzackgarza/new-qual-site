@@ -45,6 +45,15 @@ audit:
     A_c a single point p with S^2 - p homeomorphic to R^2 (stereographic projection, printed p. 377) and
     contractible; a and b joined in S^2 - D_c by the path P; A_c an arc, hence nonseparating by Theorem 63.2. Checked against Theorem 63.2
     (printed p. 389) for the arcs used.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout for a published solution of this exercise (issue #144) and located
+    none; the queries and every source searched are in the COMPLAINTS.md entry for §61--§64. The
+    card's proof is its own, checked on 2026-11-11 against Theorem 63.2, Theorem 63.5, Theorem 63.1
+    and Theorem 26.9 as the note above records; it was not re-read in this pass. The printed page of
+    the exercise is 393.
 ---
 
 ::: {.exercise}
