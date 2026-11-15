@@ -24,6 +24,20 @@ audit:
     half of step 3 below. Checked against Theorem 70.1 (printed p. 426), the extension condition for free products (Lemma 68.3, printed p. 418) and §59 for the generation of pi_1(X) by the two images. Nothing on the sheet
     needed correction; its one gap is that it does not say why the free-product generators lie in the image of
     h, which step 2 records.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144) for §70 Exercise 1 (printed p. 433); queries and sets are in the
+    COMPLAINTS.md entry for §66--§73 of SRC-TEXT-MUN00. Query used: "Munkres exercise 70.1 trivial i_* free
+    product quotient groups isomorphism pushout solution". Located, not readable: Math StackExchange 2546862,
+    "Munkres Exercise 70.1", whose answer's pushout argument the search excerpt shows and whose body could not be
+    read (API throttle for this address, Cloudflare human check, no Wayback snapshot). It adds nothing the card
+    lacks: the card's route is the exercise's own hint, Theorem 70.1 used to build a left inverse of h, and the
+    sheet it already cites (Riverside Part 9, printed p. 6) is the same pushout statement. dbFin has no §70 page,
+    Murayama's selection none, the fourteen repositories stop at Chapter 3. Nothing was transcribed and nothing
+    on the card changed: it was re-read against Theorem 70.1 (printed p. 426) and the extension condition for
+    free products (Lemma 68.3, printed p. 418).
 ---
 
 ::: {.exercise}
