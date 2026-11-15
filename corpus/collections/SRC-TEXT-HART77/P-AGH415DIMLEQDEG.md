@@ -43,6 +43,23 @@ audit:
     algebraically closed field) satisfies the lemma's hypotheses, H^0(X, O_X) = k
     holding because X is connected, proper and reduced. Not checked: nothing in
     Stacks was needed for the case D = 0, which is trivial.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Correction, on a reader's report of issue #121. The event above states
+    0CCS's equality clause as the exercise's equality half without its missing
+    hypothesis. As printed (Stacks, Chapter 53, version ed88ff78, pp.
+    4436--4437) the lemma carries no d > 0 condition, and its equality clause is
+    then false at d = 0: (O_X, H^0(O_X)) is a g^0_0 on every curve, and r = d = 0
+    holds on a curve of genus g > 0 without g = 0. The printed proof needs the
+    hypothesis where it passes to a power of L with vanishing H^1, using that L
+    is ample; O_X is not ample. The card's body now cites 0CCS for D != 0 only,
+    names the missing hypothesis and why it is needed, and proves D = 0 in step
+    s3 (dim |0| = 0 = deg 0). The same reading was taken of 0C6T, Lemma
+    53.10.2(1) of the same chapter, printed p. 4450, which states dim H^0 = d + 1
+    for d > 0 and whose d = 0 case is again step s3. The inequality r <= d is
+    unaffected: it holds at d = 0 as well.
 ---
 
 ::: {.problem}
@@ -51,7 +68,7 @@ Furthermore, equality holds if and only if $D=0$ or $g=0$.
 :::
 
 ::: {.solution}
-This is the Stacks Project, Chapter 53 (Curves), Lemma 53.3.5 (tag 0CCS), printed pp. 4436--4437, version ed88ff78 compiled 14 July 2026: if a proper curve $X$ with $H^0(X,\OO_X)=k$ has a $g^r_d$ then $r\le d$, and if equality holds then $H^1(X,\OO_X)=0$, that is $g=0$. A $g^r_d$ is exactly a linear system $\abs{D}$ of degree $d$ and dimension $r$, so the lemma is the inequality and one half of the equality case. The other half, $g=0$ giving equality for every effective $D$, is Lemma 53.10.2(1) of the same chapter (tag 0C6T), printed p. 4450: for $X$ of genus $0$ and $\deg L=d>0$, $\dim_k H^0(X,L)=d+1$. Steps [](#s2){.pf-ref} and [](#s5){.pf-ref}--[](#s7){.pf-ref} prove the lemma's two halves from the divisor sequence and Riemann--Roch rather than by its route through a large power with vanishing $H^1$; step [](#s4){.pf-ref} is 0C6T(1) in Riemann--Roch form.
+The Stacks Project, Chapter 53 (Curves), Lemma 53.3.5 (tag 0CCS), printed pp. 4436--4437 of version ed88ff78 compiled 14 July 2026, is the inequality together with the equality case for $D\ne0$: if a proper curve $X$ with $H^0(X,\OO_X)=k$ has a $g^r_d$, then $r\le d$, and if equality holds with $d>0$ then $H^1(X,\OO_X)=0$, that is $g=0$. A $g^r_d$ is exactly a linear system $\abs{D}$ of degree $d$ and dimension $r$. The hypothesis $d>0$ is not in the printed statement and is needed for its equality clause: at $d=0$ the pair $(\OO_X,H^0(X,\OO_X))$ is a $g^0_0$ on every curve, and on a curve of genus $g>0$ it has $r=d=0$ without $g=0$; the proof's step to a large power with vanishing $H^1$ uses that $\mathcal L$ is ample, and $\OO_X$ is not. So the lemma is cited here for $D\ne0$, and the case $D=0$ is proved on this card in step [](#s3){.pf-ref}. The converse, $g=0$ giving equality for every effective $D$, is Lemma 53.10.2(1) of the same chapter (tag 0C6T), printed p. 4450: for $X$ of genus $0$ and $\deg L=d>0$, $\dim_k H^0(X,L)=d+1$, whose $D=0$ case is again step [](#s3){.pf-ref}. Steps [](#s2){.pf-ref} and [](#s5){.pf-ref}--[](#s7){.pf-ref} prove the two halves of 0CCS from the divisor sequence and Riemann--Roch rather than by its route through a large power with vanishing $H^1$; step [](#s4){.pf-ref} is 0C6T(1) in Riemann--Roch form.
 Write
 $$
 d=\deg D,

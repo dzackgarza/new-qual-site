@@ -89,6 +89,24 @@ audit:
     columns. Both readings were checked against printed p. 5 in
     pdftotext -layout -f 5 -l 5 of tmp/sources/shitijyou-ch1-section5.pdf, which
     prints the matrix and both strict transforms.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Correction, on a reader's report of issue #121: the event above said the
+    printed Jacobian's missing 1 "does not affect the rank conclusion", and that
+    the deciding minor is nonzero "from the printed matrix". Both are false at
+    v = 0. The source orders its columns (y, x, v) and prints the chart-equation
+    row of J_0 as (0, -v, 0), where the derivatives of y - vx in that order are
+    (1, -v, -x); at v = 0 the whole printed row is zero, so the printed matrix
+    has rank at most one there, and its minor in the last two columns,
+    -v(2bdv-(ad+bc)), vanishes with it. The point with v = 0 is P_1 when a = 0
+    and P_2 when c = 0, and both occur for the node xy, so the printed rank-two
+    claim needs the missing 1. The step now records the source's column order and
+    its second row (0, sum_{i+j=3}(i+j-2)c_ij v^j, 2bdv-(ad+bc)), which is the
+    computed one, and takes the deciding minor from the computed matrix. Read in
+    tmp/sources/shitijyou-ch1-section5.md at "Ex5.6 (b) Blowing Up at a Node",
+    which prints J_0 as those two rows.
 ---
 
 ::: {.problem}
@@ -219,9 +237,12 @@ $$
 -v & 1 & -x
 \end{pmatrix},
 $$
-whose second row is nonzero on $E$ and whose first row contributes the entry $2bdv-(ad+bc)$ there.
+whose first row is the derivative of the strict-transform equation and takes the entry $2bdv-(ad+bc)$ on $E$, and whose second row is the derivative of the chart equation and is nonzero on $E$.
 
-The source prints this matrix with the row $(0,-v,0)$ for the chart equation $y-vx$, whose partial derivatives in $(x,y,v)$ are $(-v,1,-x)$; the $1$ is missing there. The matrix above is the computed one, and the difference does not affect the conclusion: on $E$ the entry $-x$ is $0$, the source's restricted sum $\sum_{i+j=3}(i+j-2)c_{ij}v^j$ is what the first column becomes at $x=0$, and the minor that decides the rank is the one in the last two columns, which is $-v\bigl(2bdv-(ad+bc)\bigr)$ as the source prints the matrix and $-\bigl(2bdv-(ad+bc)\bigr)$ for the computed one.
+The source prints this matrix in the column order $(y,x,v)$: its second row there is $(0,\sum_{i+j=3}(i+j-2)c_{ij}v^j,2bdv-(ad+bc))$, the derivative of the strict-transform equation read in that order, and its first row, for the chart equation $y-vx$, is $(0,-v,0)$ where the derivatives in that order are $(1,-v,-x)$ --- the $1$ and the $-x$ are missing.
+The missing $-x$ is $0$ on $E$, but the missing $1$ is not, and the rank-two claim needs it at the point where $v=0$: there the printed row $(0,-v,0)$ is the zero row, so the printed matrix has rank at most one, its minor in the last two columns $-v\bigl(2bdv-(ad+bc)\bigr)$ vanishing with it.
+That point is $P_1$ when $a=0$ and $P_2$ when $c=0$, and both happen for a node whose two tangent lines are the coordinate axes: $f_2=(ax-by)(cx-dy)$ is $xy$ at $(a,b,c,d)=(0,1,-1,0)$, where $v=a/b=0$ and the other point has $v=c/d=\infty$.
+With the $1$ restored, the minor in the last two columns is $-\bigl(2bdv-(ad+bc)\bigr)$, nonzero at $P_1$ and $P_2$ by the computation below, so the computed matrix has rank two at both points; the source's conclusion follows only with that entry supplied.
 The strict transform meets $E$ where $(a-bv)(c-dv)=0$, that is at the points
 $$
 P_1=(0,0)\times(b:a),\qquad P_2=(0,0)\times(d:c)
@@ -359,7 +380,7 @@ The chart computation in step [](#cusp-quartic-blowup-nonsingular){.pf-ref} prov
 ::: {.remark title="Published solution"}
 The closest published argument for (b) is Ravi Vakil, *Foundations of Algebraic Geometry* (Math 216, Stanford; classes 49 and 50 notes), Section 5.2 "The proper transform of a nodal curve", printed p. 9: for $y^2=x^3+x^2$ in the patch $[X:Y]=[s:1]$, where $x=ys$, he gets $y^2-s^2y^2-s^3y^3=0$, "This factors: we get the exceptional divisor $y$ with multiplicity two, and the curve $1-s^2-y^3=0$. Easy exercise: check that the proper transform is nonsingular. Also, notice where the proper transform meets the exceptional divisor: at two points, $s=\pm1$." Two things are missing there and are supplied by step [](#general-node-two-points){.pf-ref}: the nonsingularity, which he leaves as an exercise and which is $\partial/\partial s=-2s\neq0$ at $s=\pm1$ together with the isomorphism away from the exceptional divisor, and the printed factor, which the substitution $x=ys$ gives as $1-s^2-ys^3$ rather than $1-s^2-y^3$. He also treats the one model $y^2=x^3+x^2$ rather than an arbitrary node.
 
-A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.6(b), printed p. 5, proves part (b) for a general node: he keeps the two tangent directions as $(ax-by)(cx-dy)$ with $ad-bc\ne0$, writes both strict transforms, finds the two points $P_1=(0,0)\times(b:a)$ and $P_2=(0,0)\times(d:c)$ of the exceptional divisor, and shows that the Jacobian has rank two at each. Step [](#general-node-two-points){.pf-ref} transcribes it, adds the $V_1$ chart, which he omits as "similar" and which carries one of the two points when $b=0$ or $d=0$, and records that his $V_0$ chart sees both points only when $b,d\ne0$.
+A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.6(b), printed p. 5, proves part (b) for a general node: he keeps the two tangent directions as $(ax-by)(cx-dy)$ with $ad-bc\ne0$, writes both strict transforms, finds the two points $P_1=(0,0)\times(b:a)$ and $P_2=(0,0)\times(d:c)$ of the exceptional divisor, and computes their Jacobian, whose rank-two claim needs the entry his display omits. Step [](#general-node-two-points){.pf-ref} transcribes it, adds the $V_1$ chart, which he omits as "similar" and which carries one of the two points when $b=0$ or $d=0$, and records that his $V_0$ chart sees both points only when $b,d\ne0$.
 
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 5.6; his Chapter 1.5 answers stop at 5.5.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.6.

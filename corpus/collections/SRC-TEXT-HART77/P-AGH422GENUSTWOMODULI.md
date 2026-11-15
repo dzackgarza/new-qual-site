@@ -103,7 +103,7 @@ exactly six points, each with ramification index $2$.
 
 ::: pf-proof
 
-This is the hyperelliptic Riemann--Hurwitz formula of R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §19.5.1], printed p. 546, restated as 19.6.2 on printed p. 550: a genus-$2$ curve has $\omega_X$ of degree $2$ with two sections, so it induces a double cover of $\PP^1$, and a double cover has $2g+2=6$ branch points.
+The branch count is Riemann--Hurwitz for the degree-two canonical map.
 
 By [[P-AGH417HYPERELLIPTIC|Exercise IV.1.7]], the canonical system gives
 a finite morphism
@@ -139,6 +139,8 @@ Their images in $\PP^1$ are distinct: a ramification point already has
 multiplicity $2$ in its fibre, which exhausts the degree of $f$. Thus the
 map has exactly six branch points as well.
 
+The same count is R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §19.5.1], printed p. 546, restated as 19.6.2 on printed p. 550, who reads it off from $\omega_X$ having degree $2$ and two sections; the count above is Riemann--Hurwitz.
+
 :::
 
 :::
@@ -154,7 +156,7 @@ automorphism of $\PP^1$.
 
 ::: pf-proof
 
-This is R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, Proposition 19.5.7], printed pp. 548--549, who recovers the double cover from the canonical map, and 19.6.2 on printed p. 550, where the degree-$2$ sheaf with two sections is identified with $\omega_X$ because it has degree $2g-2$ and $g$ sections. Written out:
+The uniqueness is Riemann--Roch, applied to the pullback of a point.
 
 Let
 $$
@@ -183,6 +185,8 @@ Moreover $\ell(D)=\ell(K)=2$, so the pencil defining $h$ is the complete
 canonical pencil. Choosing a different basis of its two-dimensional
 section space changes the target coordinates by an element of
 $\PGL_2(k)$. This proves the uniqueness assertion in part (a).
+
+The same statement is R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, Proposition 19.5.7], printed pp. 548--549, who recovers the double cover from the canonical map, and 19.6.2 on printed p. 550, where a degree-two invertible sheaf with two sections is identified with $\omega_X$ because it has degree $2g-2$ and $g$ sections.
 
 :::
 
@@ -262,7 +266,7 @@ The curve $X$ in step [](#s3){.pf-ref} has genus $2$.
 
 ::: pf-proof
 
-This is R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §19.5.4], printed pp. 547--548, which computes $g=r/2-1$ for the double cover branched at $r$ points from the Čech complex of its two affine charts; here $r=6$ gives $g=2$. The Riemann--Hurwitz count below is the same statement.
+The genus is Riemann--Hurwitz for this cover.
 
 The extension is separable because its degree is $2$ and
 $\characteristic k\ne2$. By step [](#s3){.pf-ref} there are exactly six tame
@@ -280,6 +284,8 @@ and therefore
 $$
 \boxed{g(X)=2}.
 $$
+
+R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §19.5.4], printed pp. 547--548, computes the same $g=r/2-1$ for the double cover branched at $r$ points, from the Čech complex of its two affine charts; here $r=6$ gives $g=2$.
 
 :::
 
