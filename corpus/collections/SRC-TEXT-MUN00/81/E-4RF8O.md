@@ -25,7 +25,9 @@ audit:
     records a typo in it: line 25 of the saved file reads "there are open neighbourhoods U_g of x, V_g of
     g-bar x such that U_g cap V_g neq empty", where Hausdorffness gives "= empty"; the intersection and the
     computation that follow in the same answer use the equality, so the inequality is a slip and the argument
-    is sound. The other two proofs are recorded beside it. The card's own proof is unchanged.
+    is sound. The other two proofs are recorded beside it. Yang's text writes g for g_i twice and
+    carries a stray restatement of U after the definition; neither touches the argument, which is the
+    same finite intersection. The card's own proof is unchanged.
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
