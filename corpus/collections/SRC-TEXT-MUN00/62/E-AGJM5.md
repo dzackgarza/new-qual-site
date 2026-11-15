@@ -22,6 +22,13 @@ audit:
     that Urysohn's lemma may be applied to X without noting that X is normal as a closed subspace of the normal
     space X x I; both are repaired. Checked against Lemma 62.1 (printed p. 381), Theorem 33.1 (Urysohn's lemma,
     printed p. 207), Theorem 32.3 and Lemma 26.8 (the tube lemma, printed pp. 202, 167).
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout for a published solution of this exercise (issue #144) and located
+    none; the queries and every source searched are in the COMPLAINTS.md entry for §61--§64. The
+    The card's proof is its own, checked on 2026-11-11 against Lemma 62.1 (printed p. 381), Theorem 32.3, Lemma 26.8 and Theorem 33.1 as the note above records; it was not re-read in this pass. The printed page of the exercise is 384.
 ---
 
 ::: {.exercise}
