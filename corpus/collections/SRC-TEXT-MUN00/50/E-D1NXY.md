@@ -29,6 +29,18 @@ audit:
     card of supplementary Exercise 2 for the labels of the conditions: R is locally 1-euclidean, Hausdorff and
     second countable (the intervals with rational endpoints), so it satisfies (ii); the cover by the intervals
     (-n,n) has no finite subcover, so it fails (i). Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Nothing located treats supplementary Exercise 3 of §50 (printed
+    p. 316); the example is a two-line matter of the countable basis of intervals with rational endpoints and
+    the cover by $(-n,n)$, and the card gives it. Murayama's selection has no Chapter 8, dbFin has no
+    chapter-8 page, the ten GitHub repositories of Munkres solutions listed in COMPLAINTS.md stop before §36,
+    and the AoPS post *Topology by Munkres Chapter 8 | Day 18*
+    (https://artofproblemsolving.com/community/c3401823h3647630) answers §50 with its formulas lost. The Stack
+    Exchange queries of this pass are listed in the COMPLAINTS.md entry for §43--§50. Nothing needed
+    correction.
 ---
 
 ::: {.exercise}
