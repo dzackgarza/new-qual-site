@@ -53,6 +53,17 @@ audit:
     half applies to Y, and that the shrinking property together with closedness of one-point sets is
     Lemma 31.1(a). The Hausdorff half, the hinted inclusion and the compact-open argument are
     unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    A reader of this card reported that the regular half asserted an open U_i with f(C_i) contained in
+    U_i and the closure of U_i contained in V_i from compactness of f(C_i) and regularity of Y, without
+    the finite-subcover step that supplies one set from the pointwise ones. The proof now applies
+    regularity at each point y of f(C_i) to the point and the closed set Y - V_i, which does not contain
+    it, obtaining an open W_y whose closure lies in V_i; the W_y cover the compact set f(C_i), so
+    finitely many do, and their union is the U_i wanted, the closure of a finite union being the union of
+    the closures. Nothing else on the card was changed.
 ---
 
 ::: {.exercise}
@@ -72,10 +83,15 @@ Now assume $Y$ regular. A regular space is Hausdorff, so the argument just given
 $$
 N=\bigcap_{i=1}^n S(C_i,V_i)
 $$
-of $f$. For each $i$, compactness of $f(C_i)$ and regularity of $Y$ give an open $U_i$ with
+of $f$. For each $i$ and each $y\in f(C_i)$, regularity of $Y$ applied to the point $y$ and the closed set $Y-V_i$, which does not contain it, gives an open $W_y$ with
 $$
-f(C_i)\subset U_i,\qquad \overline{U_i}\subset V_i.
+y\in W_y,\qquad \overline{W_y}\subset V_i.
 $$
+The sets $W_y$ over the points $y$ of $f(C_i)$ cover it, and $f(C_i)$ is compact, so finitely many of them, say for $y_1,\dots,y_m$, cover it; their union $U_i$ is open with
+$$
+f(C_i)\subset U_i,\qquad \overline{U_i}\subset V_i,
+$$
+the closure of a finite union being the union of the closures.
 Put $M=\bigcap_iS(C_i,U_i)$. Then $f\in M$. The hinted inclusion
 $$
 \overline{S(C,U)}\subset S(C,V)\quad(\overline U\subset V)
