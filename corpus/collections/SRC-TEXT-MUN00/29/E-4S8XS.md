@@ -23,6 +23,19 @@ audit:
     cover and the conclusion are recorded in COMPLAINTS.md under the entry for the net
     exercises of §29; the card's own proof is kept. The statement was read against Munkres,
     Topology (2000), §29 supplementary exercises on nets, printed pp. 187-188.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Transcribed from the answer by Antonio Maria Di Mauro to Math StackExchange 3743525,
+    "X is Hausdorff iff a net converges to at most one point" (2020-07-03, answer 3743595),
+    https://math.stackexchange.com/questions/3743525, text at
+    tmp/sources/mse-3743525-munkres-29-net-5c.md: disjoint neighborhoods of two supposed limits,
+    the two indices given by convergence, a third dominating both, and a point of the empty
+    intersection. The accepted answer 3743601 by Mittens on the same page makes the same argument
+    in its second paragraph. dbFin's solution to this exercise makes it too, with its running
+    indices written U and V where the net's index is meant; that slip is not carried over. This
+    supersedes the 2026-11-10 note above.
 ---
 
 ::: {.exercise}
@@ -35,72 +48,21 @@ Show that if $X$ is Hausdorff, a net in $X$ converges to at most one point.
 ::: pf
 
 ::: pf-step
-Setting and hypothesis:
-Let $(x_\alpha)_{\alpha \in J}$ be a net indexed by a directed set $(J, \succeq)$ in a Hausdorff space $X$.
-Suppose that $(x_\alpha) \to x$ and $(x_\alpha) \to y$ for points $x, y \in X$.
-We must show that $x = y$.
-:::
-
-::: pf-step
-Separation by disjoint open neighborhoods:
+Suppose the net $(x_\alpha)_{\alpha \in J}$ converges to both $x$ and $y$ in the Hausdorff space $X$. Then $x = y$.
 
 ::: pf-proof
+Assume $x \ne y$. By the Hausdorff condition there are disjoint neighborhoods $U$ of $x$ and $V$ of $y$. Since $x_\alpha \to x$ there is $\alpha_0 \in J$ with $x_\alpha \in U$ whenever $\alpha_0 \preceq \alpha$, and since $x_\alpha \to y$ there is $\beta_0 \in J$ with $x_\alpha \in V$ whenever $\beta_0 \preceq \alpha$. As $J$ is directed, choose $\gamma \in J$ with $\alpha_0 \preceq \gamma$ and $\beta_0 \preceq \gamma$. Then $x_\gamma \in U$ and $x_\gamma \in V$, so $x_\gamma \in U \cap V$, which is empty. This contradiction shows $x = y$.
+:::
+
+:::
 
 ::: pf-step
-Suppose for contradiction that $x \neq y$.
-:::
-
-::: pf-step
-Because $X$ is Hausdorff ($T_2$), there exist open sets $U, V \subseteq X$ such that $x \in U$, $y \in V$, and $U \cap V = \varnothing$.
-:::
-
-:::
-
-:::
-
-::: {.pf-step #eventual-containment}
-Eventual containment in both neighborhoods:
+A net in a Hausdorff space converges to at most one point. $\square$
 
 ::: pf-proof
-
-::: pf-step
-Since $(x_\alpha) \to x$ and $U$ is an open neighborhood of $x$, there exists $\alpha_1 \in J$ such that:
-$$\alpha \succeq \alpha_1 \implies x_\alpha \in U.$$
+Two limits of one net are equal by step 1, so the set of limits of the net is a single point, possibly absent.
 :::
 
-::: pf-step
-Since $(x_\alpha) \to y$ and $V$ is an open neighborhood of $y$, there exists $\alpha_2 \in J$ such that:
-$$\alpha \succeq \alpha_2 \implies x_\alpha \in V.$$
-:::
-
-:::
-
-:::
-
-::: pf-step
-Derivation of contradiction:
-
-::: pf-proof
-
-::: pf-step
-Because $(J, \succeq)$ is a directed set, there exists an upper bound $\alpha_0 \in J$ satisfying $\alpha_0 \succeq \alpha_1$ and $\alpha_0 \succeq \alpha_2$.
-:::
-
-::: pf-step
-By step [](#eventual-containment){.pf-ref}, $\alpha_0 \succeq \alpha_1$ implies $x_{\alpha_0} \in U$, and $\alpha_0 \succeq \alpha_2$ implies $x_{\alpha_0} \in V$.
-:::
-
-::: pf-step
-Therefore $x_{\alpha_0} \in U \cap V = \varnothing$, which is impossible.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Conclusion:
-The assumption $x \neq y$ is false, so $x = y$. Thus every net in $X$ has at most one limit. Q.E.D.
 :::
 
 :::
