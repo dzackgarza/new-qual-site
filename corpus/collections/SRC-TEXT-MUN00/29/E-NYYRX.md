@@ -32,9 +32,12 @@ audit:
     with U first where Munkres writes the index first; the card restates it in Munkres' order,
     proves the converse (a convergent subnet puts the net frequently in each neighborhood of its
     limit), and records that accumulation point as Munkres defines it means exactly Sleziak's
-    "frequently in U". dbFin's solution to this exercise reaches the same directed set, but its
-    account of the converse direction is not a proof; nothing of it is used. This supersedes the
-    2026-11-10 note above.
+    "frequently in U". dbFin's solution to this exercise reaches the same directed set, and its
+    argument for that converse, with the set L of values of the subnet at the indices above a fixed
+    one, which it shows to be cofinal in J, is valid: the set of indices at which the net lies in a
+    neighborhood of the limit contains L and is therefore cofinal. An earlier version of this note
+    recorded that argument as not a proof, which was wrong. This supersedes the 2026-11-10 note
+    above.
 ---
 
 ::: {.exercise}
