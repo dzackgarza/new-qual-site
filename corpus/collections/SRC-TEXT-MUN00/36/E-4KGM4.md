@@ -100,11 +100,19 @@ audit:
     omega_1 is a limit ordinal, and shows that the neighbourhood (gamma, omega_1] of omega_1 contains no
     U_n, since gamma lies in every U_n and not in (gamma, omega_1]. (b) The solution's opening line still
     called the properties those "numbered in Supplementary Exercise 1"; Munkres prints the list at the head
-    of the Supplementary Exercises, before Exercise 1, and Exercise 1 is the list of twelve spaces, so the
+    of the Supplementary Exercises, before Exercise 1, and Exercise 1 is the list of eleven spaces (a)--(k), so the
     line now names the head of the section. The eight guaranteed properties, the table, the Cantor set
     paragraph and the other exclusions are unchanged, as is the printed statement (Exercise 3, printed
     p. 228).
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    A reader's count error in the note of 2026-11-15, checked against the book. That note said Exercise 1 of the
+    Supplementary Exercises is "the list of twelve spaces"; the list printed on p. 228 runs (a) to (k), which is
+    eleven spaces, and the note now says so. The seventeen properties, the table, the two spaces that exclude the
+    nine unguaranteed properties and the printed statement (Exercise 3, printed p. 228) are untouched.
 ---
 
 ::: {.exercise}
