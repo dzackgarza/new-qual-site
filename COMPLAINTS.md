@@ -701,7 +701,7 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 - V.4.10, printed **p. 291**: the whole entry is "No algebraic geometry here. If your interested, see Nagata Rational Surfaces I, and proceed by cases" — a citation and no argument.
 - V.4.11, printed **pp. 291–292**: parts (a) and (b) have no entry at all, the page carries "I don't care about group theory", and the starred part (c) is the entry `5.4.12 b.` reading "see above".
 - V.4.12, printed **pp. 292–293**: the entry computes on $\PP^2$ ("Recall $X\approx\PP^2$ which has known cohomology", $H^2(X,\OO_X)=H^0(X,\OO_X(-3))=p_g$) although the cubic surface is $\PP^2$ with six points blown up, so the dimensions it lists are those of $\PP^2$ and the sequence is the wrong one; the closing step then invokes V.4.11 to exclude an effective $-D$, which is not what (4.11) says.
-- V.4.13, printed **pp. 292–293**: part (a) is complete (the 16 classes and the Schwarz count $4a^2-6a-4\le0$). Part (b) stops at "Now use ?." after the dimension count $15-13=2$; the degree comparison that identifies $X$ with the complete intersection is missing. **Part (b) stays open**: Dolgachev, *Topics in Classical Algebraic Geometry* (27 September 2010), Theorem 8.5.1, printed p. 291 with its proof on pp. 291--292, proves the projective normality (his 8.4.5, printed p. 280), the dimension count $h^0(\OO_X(2))=13$ (his 8.3.1, printed p. 272) and the diagonal form of the two quadrics, and then jumps from $15-13=2$ to "$X$ is the base locus of a pencil" without showing that the quadrics have no common component or that the degree-four complete intersection is $X$ --- the same gap as the entry above. His Lemma 8.3.1 invokes Ramanujam's vanishing theorem by name with no reference; the Lazarsfeld citation for it is in his Lemma 8.1.4's proof, printed p. 248. Part (a) is not in the book either (printed p. 293 uses "the 16 lines on $X$" without the count), while Egbert's part (a) does settle it modulo one step, the adjunction derivation of $C^2=-1$ for a line, and writes $\Pic X$ as $\ZZ^6$ with generators $l,e_1,\dots,e_6$ for a five-point blow-up. The card now says all of this.
+- V.4.13, printed **pp. 292–294**: part (a) is complete modulo one step — the 16 classes and the Schwarz count $4a^2-6a-4\le0$ are there, but $C^2=-1$ is assumed for a degree-one curve and has to be derived by adjunction. Part (b) stops at "Now use ?.", which stands alone on p. 294 above his 5.4.15 (Hartshorne V.4.14), after the dimension count $15-13=2$ on p. 293; the degree comparison that identifies $X$ with the complete intersection is missing. **Part (b) stays open**: Dolgachev, *Topics in Classical Algebraic Geometry* (27 September 2010), Theorem 8.5.1, printed p. 291 with its proof on pp. 291--292, proves the projective normality (his 8.4.5, printed p. 280), the dimension count $h^0(\OO_X(2))=13$ (his 8.3.1, printed p. 272) and the diagonal form of the two quadrics, and then jumps from $15-13=2$ to "$X$ is the base locus of a pencil" without showing that the quadrics have no common component or that the degree-four complete intersection is $X$ --- the same gap as the entry above. His Lemma 8.3.1 invokes Ramanujam's vanishing theorem by name with no reference; the Lazarsfeld citation for it is in his Lemma 8.1.4's proof, printed p. 248. Part (a) is not in the book either (printed p. 293 uses "the 16 lines on $X$" without the count), while Egbert's part (a) does settle it modulo one step, the adjunction derivation of $C^2=-1$ for a line, and writes $\Pic X$ as $\ZZ^6$ with generators $l,e_1,\dots,e_6$ for a five-point blow-up. The card now says all of this.
 - V.4.14, printed **p. 294**: the entry lists which degree–genus pairs remain after V.4.7, then says "For these remaining rest, I use the method of exc V.4.9 (Read that exercise solution first or this will be nonsense!)", works one case ($d=8$, $g=6$) and ends "Solve for this using sum of 5 squares as in exc V.4.9 and the rest follow similarly". No class is exhibited for the other eight pairs, and the cited method is the V.4.9 entry above.
 - V.4.15, printed **pp. 294–295**: parts (a) and (b) have no entry; part (c) is argued (`5.4.18 c.`); part (d) is the sketch `5.4.19 d.` counting $14+42=56$ and listing eight families for $r=8$ without proving that no other negative curves exist; the starred part (e) is `5.4.17 b.`, "This is Nagata, Rational Surfaces II, corollary to proposition 9, and use (a) of this problem" — a citation.
 - V.4.16, printed **p. 296**: the entry records a parametrization and the blowup description of the 27 lines but no equations of the lines in the Fermat coordinates (the exercise asks for the equations and the incidence relations), and its answer to the automorphism question is "Automorphism group? $E_6$. A proof is in Hirschfeld Finite projective spaces in three dimensions 20.3.1" — the group of the 27-line configuration, not the surface's automorphism group, and a citation.
@@ -2081,8 +2081,8 @@ here called it 4.16 and gave Section 4.17 a "Theorem (Artin)" where the theorem 
 proof of Theorem 4.17 (1) lies wholly on printed p. 95 --- it ends "so mult(P in X) = $-Z^2$ follows" with no
 Q.E.D., and the heading of 4.18 follows it on the same page --- and the proof of part (2) runs on printed
 pp. 96--97, its Q.E.D. on p. 97. The remark and both events are corrected, and a new event records the page
-facts; a later pass that said pp. 95--96 for part (1) was reading the Q.E.D. of the lemma that precedes
-part (2).
+facts; a later pass that said pp. 95--96 for part (1) was reading the Q.E.D. of the unnamed theorem of
+Section 4.18, that the graded ring $R(Z,L)$ is generated in degree 1.
 
 **V.5.5, `P-AGH555ELEMTRANSFORM`.** The paragraph that stood at the end of this file misread Yang Pi-Yeh: his
 $\mathfrak e$ is the divisor class of $\bigwedge^2\mathcal E$, not the integer $e$, so his last step matches
@@ -2119,21 +2119,25 @@ $3a-\sum b_i=1$ and $a^2-\sum b_i^2=-1$, which forces $a=1$ with two $b_i=1$ or 
 --- his real gaps are that $C^2=-1$ is assumed for a line instead of derived by adjunction, and that
 $\Pic X$ is written $\ZZ^6$ with generators $l,e_1,\dots,e_6$ for a five-point blow-up. The card's remark now
 says the five points are in general position, by Hartshorne V.4.7, which is what makes the hypotheses of
-Dolgachev's theorem apply. A text version of the book is being made at
-`tmp/sources/dolgachev-topics-classical-ag.md`; this entry cites the PDF, whose printed page is its PDF page
-minus ten, until that file exists.
+Dolgachev's theorem apply. The treatise is now also available as a MinerU text version,
+`tmp/sources/dolgachev-topics-classical-ag.md`, all 524 PDF pages in blocks of twenty marked `PDF pages N-M`;
+this entry and the card cite the PDF and that text together, its printed page being the PDF page minus ten
+either way.
 
 **V.5.4(b), `P-AGH554CONTRACTEDCURVES`, pages again.** The proof of Reid's Theorem 4.17 (1) lies wholly on
 printed p. 95: "Proof of Theorem 4.17, (1)" begins there after the Q.E.D. that closes the lemma of 4.17, and it
 ends "so $\operatorname{mult}(P\in X)=-Z^2$ follows." with no Q.E.D., the heading "4.18. Graded rings over
-divisors" following it on the same page. The Q.E.D. on p. 96 that the last pass read as part (1)'s belongs to
-the lemma preceding part (2). The proof of part (2) opens on p. 96 and its Q.E.D. is on p. 97, where 4.19's
-heading follows. Every mention in the card's events and remark, and in the entry above, now gives p. 95 and
-pp. 96--97.
+divisors" following it on the same page. The Q.E.D. on p. 96 that the last pass read as part (1)'s closes the
+unnamed theorem of 4.18, that the graded ring $R(Z,L)$ is generated in degree 1, and belongs to no lemma of
+4.17. Printed p. 96 opens "If V itself is a normal variety"; the proof of part (2) begins in its lower part
+and its Q.E.D. is on p. 97, where 4.19's heading follows. Every mention in the card's events and remark, and
+in the entry above, now gives p. 95 and pp. 96--97.
 
 **V.5.5, Yang's page range.** His Solution 5.5.5 runs on printed pp. 113--114, not on p. 113 alone: the entry
 opens at the foot of p. 113, and the passage that decides the question --- "If $L=\mathcal L(\mathfrak e)$, for
 any $P\in C_0$, by definition, $\operatorname{elm}_P X$ has $\tilde{\mathfrak e}=\mathfrak e+P$. So we may
-blow-up $X$ and $X'$ more and assume $e=e'$. Hence $X\cong X'$." --- stands at the head of p. 114, above his
-5.5.6, which is Hartshorne V.5.6. The card's published-solution remark and the entry above now cite
+blow-up $X$ and $X'$ more and assume $e=e'$. Hence $X\cong X'$." --- stands at the head of p. 114, above
+his 5.5.6, which is Hartshorne V.5.6, and one sentence follows it there: "So there is a finite sequence of
+elementary transformations which transform $X$ into $X'$." p. 114 therefore carries three sentences of his
+entry, not the two an earlier pass counted. The card's published-solution remark and the entry above now cite
 pp. 113--114 and name p. 114 as the page of the decisive passage.

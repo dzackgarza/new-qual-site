@@ -136,8 +136,10 @@ audit:
     Contraction Theorem statement, p. 94 opens 4.17 and its Theorem (Artin),
     p. 95 carries "Proof of Theorem 4.17, (1)" and then the heading of 4.18, so
     the proof of (1) is wholly there and ends with no Q.E.D., p. 96 opens
-    "Proof of Theorem 4.17, (2)" and p. 97 carries its Q.E.D. and the heading of
-    4.19. The remark and the two earlier events are corrected to the same facts.
+    "If V itself is a normal variety", carries the unnamed Theorem of 4.18 with
+    its proof, and then begins "Proof of Theorem 4.17, (2)", and p. 97 carries
+    that proof's Q.E.D. and the heading of 4.19. The remark and the two earlier
+    events are corrected to the same facts.
 - event: source-corrected
   by: claude
   date: 2026-11-15
@@ -148,10 +150,30 @@ audit:
     (1)" begins there after the Q.E.D. that closes the lemma of 4.17, and it ends
     "so mult(P in X) = -Z^2 follows." with no Q.E.D., after which the heading
     "4.18. Graded rings over divisors" stands on the same page. The Q.E.D. on
-    p. 96 that was read as part (1)'s belongs to the lemma preceding (2). The
-    proof of part (2) opens on p. 96 and its Q.E.D. is on p. 97, where 4.19's
-    heading follows. Every mention in this card's events and in its remark now
-    gives pp. 95 and 96--97.
+    p. 96 that was read as part (1)'s closes the unnamed Theorem of 4.18, that
+    the graded ring R(Z, L) of a numerically 1-connected divisor Z with
+    h^1(O_Z) = 0 is generated in degree 1; it belongs to no lemma of 4.17. The
+    proof of part (2) begins in the lower part of p. 96 and its Q.E.D. is on
+    p. 97, where 4.19's heading follows. Every mention in this card's events and
+    in its remark now gives pp. 95 and 96--97.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    One page fact of Reid's §4.17 and §4.18, on a third reader's report of issue
+    #121, re-read here in tmp/sources/reid-chapters.md and on the printed folios
+    of tmp/sources/reid-chapters-algebraic-surfaces.pdf. Printed p. 96 opens with
+    the sentence "If V itself is a normal variety, this condition is called
+    projective normality", which continues the paragraph of 4.18 begun on p. 95;
+    the unnamed Theorem of 4.18 (R(Z, L) generated in degree 1) is stated and
+    proved there, the proof ending "H^0(L^(x)(k-1)) into H^0(L^(x)k) onto H^0(O_A).
+    Q.E.D."; after one paragraph on what that proof says, "Proof of Theorem 4.17,
+    (2)" begins in the lower part of the same page, so the Q.E.D. on p. 96 closes
+    the theorem of 4.18 and not, as the event above said, "the lemma preceding
+    (2)". The lemma of 4.17 is on printed pp. 94--95 and its Q.E.D. closes on
+    p. 95, before "Proof of Theorem 4.17, (1)". Nothing else in the citation
+    changes: part (1) is proved on p. 95 and part (2) on pp. 96--97, its Q.E.D. on
+    p. 97 above the heading of 4.19.
 ---
 
 ::: {.problem}

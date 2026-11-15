@@ -38,7 +38,8 @@ audit:
   note: >-
     Dolgachev read for issue #121, and part (b) left open. In M. I. Dolgachev,
     Topics in Classical Algebraic Geometry (27 September 2010), the complete
-    524-page book in tmp/sources/dolgachev-topics-classical-ag.pdf with printed
+    524-page book in tmp/sources/dolgachev-topics-classical-ag.pdf and its MinerU
+    text version tmp/sources/dolgachev-topics-classical-ag.md, with printed
     page = PDF page minus ten, Theorem 8.5.1, printed p. 291 with the proof on
     pp. 291--292, proves that an anticanonical model of a weak Del Pezzo surface
     of degree 4 is projectively normal (his Theorem 8.4.5, printed p. 280), that
@@ -52,7 +53,7 @@ audit:
     steps quadrics-no-common-component and x-is-complete-intersection, and the
     remark now cites Dolgachev for exactly what he proves. Part (a) is not in his
     book: printed p. 293 uses "the 16 lines on X" without proving the count.
-    Egbert's V.4.13, printed pp. 292--293, does settle part (a) modulo one step,
+    Egbert's V.4.13, printed pp. 292--294, does settle part (a) modulo one step,
     the adjunction derivation of C^2 = -1 for a line; his other defect is Pic X
     written Z^6 with generators l, e_1, ..., e_6 for a five-point blow-up.
 - event: source-corrected
@@ -66,8 +67,31 @@ audit:
     Dolgachev's Lemma 8.3.1 invokes Ramanujam's vanishing theorem by name without
     a reference; the reference to Lazarsfeld, Positivity in Algebraic Geometry I,
     Theorem 4.3.1, is in the proof of his Lemma 8.1.4, printed p. 248. Egbert's
-    part (a) does reduce a line to the F_ij and the conic by Schwarz with
-    sum b_i = sum b_i^2, as the remark now says. Part (b) is reopened.
+    part (a) does reduce a line to the F_ij and the conic by Schwarz on
+    sum b_i = 3a - 1 and sum b_i^2 = a^2 + 1, as the remark now says. Part (b) is
+    reopened.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Three citation repairs on a second reader's report of issue #121, each
+    re-read in the sources here. (i) The text version of Dolgachev now exists:
+    tmp/sources/dolgachev-topics-classical-ag.md is a MinerU extraction of all
+    524 PDF pages, marked in blocks of twenty ("PDF pages 301-320" at the start
+    of printed p. 301), and it is cited beside the PDF here and in the remark.
+    (ii) Egbert's V.4.13 entry is printed pp. 292--294, not pp. 292--293: his
+    heading "V.4.13 16 Lines" and the intersection theory of the blow-up stand on
+    p. 292, the Schwarz count on p. 293, and the part (b) dimension count closes
+    on p. 293 with the single line "Now use ?." alone on p. 294 above his 5.4.15
+    (Hartshorne V.4.14). Located in the pdftotext page render of
+    tmp/sources/hartshorne-solutions-egbert.pdf, whose printed folio is its PDF
+    page number.
+    (iii) The event above said Egbert's part (a) runs "by Schwarz with
+    sum b_i = sum b_i^2"; that equation is not his input. He derives
+    sum b_i = 3a - 1 and sum b_i^2 = a^2 + 1 from degree and self-intersection,
+    applies (sum b_i)^2 <= 5 sum b_i^2, and gets 4a^2 - 6a - 4 <= 0, whence
+    a is 1 or 2; sum b_i = sum b_i^2 = 2 at a = 1 and = 5 at a = 2 are
+    consequences used to pin the multiplicities. The event now says so.
 ---
 
 ::: {.problem}
@@ -375,7 +399,9 @@ Steps [](#sixteen-lines-total){.pf-ref} and [](#no-other-lines){.pf-ref} prove p
 
 ::: {.remark title="Published solutions"}
 M. I. Dolgachev, *Topics in Classical Algebraic Geometry* (27 September 2010), read in
-`tmp/sources/dolgachev-topics-classical-ag.pdf`, whose printed page is its PDF page minus ten, §8.5.1,
+`tmp/sources/dolgachev-topics-classical-ag.pdf` and in its MinerU text version
+`tmp/sources/dolgachev-topics-classical-ag.md`, whose printed page is the PDF page minus ten (the text
+version marks the PDF pages in blocks of twenty, so a single printed page is located in the PDF), §8.5.1,
 Theorem 8.5.1, printed p. 291 with its proof on pp. 291--292, proves part of part (b) and not all of it. What
 it proves: an anticanonical model $X$ of a weak Del Pezzo surface of degree $4$ is projectively normal (his
 Theorem 8.4.5, printed p. 280) and has $h^0(\OO_X(2))=13$ (his Lemma 8.3.1, printed p. 272), so that
@@ -405,7 +431,7 @@ Riemann--Roch on the blow-up and needs neither. Part (a), the sixteen lines, is 
 §8.5.2 uses "the 16 lines on $X$" at printed p. 293 without an argument for the count, so part (a) rests on
 the card's steps [](#sixteen-lines-total){.pf-ref} and [](#no-other-lines){.pf-ref}.
 
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.13, printed pp. 292--293, settles part
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.13, printed pp. 292--294, settles part
 (a) once one step is added, and leaves part (b) where Dolgachev leaves it. At p. 292 he sets up the
 intersection theory of the blow-up; at p. 293 he takes a curve with $\deg C=1$ and $C^2=-1$, writes
 $C\sim al-\sum b_ie_i$ with $a>0$ and $b_i\ge0$, and applies the Schwarz inequality
@@ -415,7 +441,7 @@ transform of the conic); that is the complete list. The one step missing is the 
 for a line it has to be derived, and by adjunction a curve of degree $1$ is rational, so
 $C^2+C\cdot K_X=-2$ with $C\cdot K_X=-\deg C=-1$ gives $C^2=-1$. His Picard group is also written $\ZZ^6$
 with generators $l,e_1,\dots,e_6$ for a blow-up of five points, which cannot be right: the rank is
-$1+5=6$ with $l,e_1,\dots,e_5$ as generators. Part (b) at p. 293 stops at the dimension count
-$h^0(\OO_X(2H))=13$ against $h^0(\OO_{\PP^4}(2))=15$ and then reads "Now use ?", so it does not reach the
-intersection either.
+$1+5=6$ with $l,e_1,\dots,e_5$ as generators. Part (b) stops at the dimension count
+$h^0(\OO_X(2H))=13$ against $h^0(\OO_{\PP^4}(2))=15$, which stands on p. 293; p. 294 then reads only
+"Now use ?", so it does not reach the intersection either.
 :::
