@@ -58,6 +58,18 @@ audit:
     Exercise 2 as the note above has it, Exercise 2 being the map R -> R^n. The printed page,
     275, is right. Nothing else on the card was changed, and its parts (b) and (c) were not
     re-read in this pass.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Part (b) took the map onto the cube [-m,m]^m from the card of §44 Exercise 1, which gives a
+    continuous surjection of I onto I^m only; the step now writes the affine homeomorphism of I^m
+    onto [-m,m]^m, the coordinate x going to 2mx - 1, the inclusion of [-m,m]^m in R^omega, whose
+    coordinate functions are coordinates of the point or the constant 0, and the composite of the
+    three. The 2026-11-15 note above also says it corrects the exercise number from 2 to 3; it
+    corrects nothing, since the note of 2026-11-11 already numbers this as Exercise 3, printed
+    p. 275, and its "§44 Exercise 2" is the card of the map from R onto R^n, cited there as the
+    earlier source of the reparametrization.
 
 ---
 
@@ -88,7 +100,7 @@ with each $K_n$ compact. The coordinate projection $\pi_n(K_n)\subset\RR$ is com
 $$
 K_m=[-m,m]^m\times\{0\}\times\{0\}\times\cdots.
 $$
-The $K_m$'s exhaust $\RR^\infty$. By [[E-SADP0]] there is, for each $m$, a continuous surjection $q:I\to K_m$; reparametrize it so that it starts and ends at the origin, using the first third of $I$ for a straight path from $0$ to $q(0)$, the middle third for $q$, and the last third for a straight path from $q(1)$ back to $0$. The result, still written $q_m:I\to K_m$, is a continuous surjection with $q_m(0)=q_m(1)=0$. Map the interval $[m-1,m]$ onto $K_m$ via $q_m$. Adjacent pieces agree at the origin, and the cover of $[0,\infty)$ by the intervals $[m-1,m]$ is a locally finite closed cover, so the pasted map $F:[0,\infty)\to\RR^\infty$ is continuous (Exercise 18.9(c)) and surjective; compose with $t\mapsto\abs{t}$ to obtain a continuous surjection from $\RR$.
+The $K_m$'s exhaust $\RR^\infty$. By [[E-SADP0]] there is, for each $m$, a continuous surjection $h_m:I\to I^m$. The affine map $x\mapsto(2mx_i-m)_i$ carries $I^m$ homeomorphically onto $[-m,m]^m$, and the inclusion $y\mapsto(y,0,0,\dots)$ of $[-m,m]^m$ into $\RR^\omega$ is continuous, each of its coordinate functions being a coordinate of $y$ or the constant $0$; so $q_m:I\to K_m$, the composite of $h_m$ with these two maps, is a continuous surjection onto $K_m$. Reparametrize $q_m$ so that it starts and ends at the origin, using the first third of $I$ for a straight path from $0$ to $q_m(0)$, the middle third for $q_m$, and the last third for a straight path from $q_m(1)$ back to $0$. The result, still written $q_m:I\to K_m$, is a continuous surjection with $q_m(0)=q_m(1)=0$. Map the interval $[m-1,m]$ onto $K_m$ via $q_m$. Adjacent pieces agree at the origin, and the cover of $[0,\infty)$ by the intervals $[m-1,m]$ is a locally finite closed cover, so the pasted map $F:[0,\infty)\to\RR^\infty$ is continuous (Exercise 18.9(c)) and surjective; compose with $t\mapsto\abs{t}$ to obtain a continuous surjection from $\RR$.
 
 (c) In both the uniform and box topologies, $\RR^\omega$ is nonseparable. The subset
 $$
