@@ -35,6 +35,20 @@ audit:
     continuity; part (c)'s distance estimate, printed as "within 1/n^2", is now the exact value
     1/(k(k+1)) with the bound 1/((n+1)(n+2)), and the example's two functions are checked to be bounded
     with closed graphs, which is what membership in H requires.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout for a published solution of this exercise and found none
+    (issue #144). Math StackExchange through the API, site math, with the queries "graph of
+    continuous function Hausdorff distance", "Hausdorff distance complete", "hyperspace closed
+    bounded sets complete" and "evaluation map uniform topology function space" returns no page
+    on graphs of functions as points of a hyperspace; 1309827, 2909498 and 4552398 concern the
+    Hausdorff and Gromov--Hausdorff distances themselves. dbFin has no chapter-7 page (404,
+    checked 2026-11-15), and no GitHub Munkres repository named in the COMPLAINTS.md entry for
+    §30--§36 reaches Chapter 7. The card keeps its own proof, which this pass did not re-read; the
+    search is recorded in the COMPLAINTS.md entry for §43--§50 with every query.
+
 ---
 
 ::: {.exercise}
