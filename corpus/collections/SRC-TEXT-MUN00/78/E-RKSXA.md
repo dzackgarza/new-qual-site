@@ -18,15 +18,15 @@ audit:
     Part (a) was proved by local homology, H_2 of the pair (H^2, H^2 - q) against H_2 of (R^2, R^2 - z), and
     this book never develops homology: the same objection that replaced the simplicial computation on E-II4JY.
     Part (a) is now proved by the book's means alone. The half-disc D about q is star convex after q is
-    removed, hence simply connected (Exercise 1 of §52, printed p. 334). A punctured open set W - z of R^2 is
+    removed, hence simply connected by the straight-line homotopy to a_0. A punctured open set W - z of R^2 is
     not: the radial projection onto a small circle S about z inside W is a retraction of W - z onto S, so by
     Lemma 55.1 (printed p. 348) the inclusion of S induces an injection of pi_1(S) = Z (Theorem 54.5, printed
     p. 345, with Corollary 52.5 for the circle of radius delta). A chart carries D - q homeomorphically onto
     the punctured open set h(D) - h(q), and Corollary 52.5 (printed p. 334) makes their fundamental groups
     isomorphic, so the two paragraphs contradict each other. Checked on the page images: Lemma 55.1 (printed
-    p. 348), Theorem 54.5 (printed p. 345), Corollary 52.5 and Exercise 1 of §52 (printed p. 334); and parts
-    (b) and (c), which cite part (a) and not its proof, are unchanged. Not covered: Lemma 55.1 and Exercise 1
-    of §52 are cited, not reproved, and nothing is claimed about higher homology of a manifold with boundary.
+    p. 348), Theorem 54.5 (printed p. 345) and Corollary 52.5 (printed p. 334); and parts
+    (b) and (c), which cite part (a) and not its proof, are unchanged. Not covered: Lemma 55.1
+    is cited, not reproved, and nothing is claimed about higher homology of a manifold with boundary.
 - event: source-checked
   by: claude
   date: 2026-11-15
@@ -76,7 +76,7 @@ $$
 D-\{q\}\cong h(D)-\{h(q)\} .
 $$
 
-The punctured half-disc $D-\{q\}$ is star convex. The point $a_0=(q_1,\varepsilon/2)$ lies in it, and for $p\in D-\{q\}$ the segment joining $a_0$ to $p$ lies in $D$, since $D$ is convex, and meets $q$ in no point: every point of that segment other than $p$ has positive second coordinate, while the second coordinate of $q$ is $0$. So $D-\{q\}$ is simply connected (Exercise 1 of §52, printed p. 334).
+The punctured half-disc $D-\{q\}$ is star convex. The point $a_0=(q_1,\varepsilon/2)$ lies in it, and for $p\in D-\{q\}$ the segment joining $a_0$ to $p$ lies in $D$, since $D$ is convex, and meets $q$ in no point: every point of that segment other than $p$ has positive second coordinate, while the second coordinate of $q$ is $0$. It is therefore simply connected: for a loop $\gamma$ in $D-\{q\}$ the straight-line homotopy $H(s,t)=(1-t)\gamma(s)+t\,a_0$ takes each value on a segment joining $a_0$ to a point of $D-\{q\}$, hence lies in $D-\{q\}$, and it carries $s=0$ and $s=1$ to the same path, so $\gamma$ is path homotopic there to the constant loop at $a_0$; and $D-\{q\}$ is path connected, every point being joined to $a_0$.
 
 No punctured open set of $\RR^2$ is simply connected. Let $W\subseteq\RR^2$ be open and let $z\in W$; choose $\delta>0$ so that the circle $S=\{y:\norm{y-z}=\delta\}$ is contained in $W$, and let
 $$
