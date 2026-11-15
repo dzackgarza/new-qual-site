@@ -60,6 +60,22 @@ audit:
     Example 7 of §24. The construction was also checked numerically for several values of delta: the
     parameters used give no uncovered sampled point, maximum multiplicity 2, and a largest sampled
     coordinate spread below delta.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Math StackExchange 2480896, "Topological dimension of
+    topologist's sine curve and general question about topological dimension" (2017-10-20), is this exercise,
+    and its only answer, by Alex Ravsky (2017-10-31), kept at tmp/sources/mse-2480896-munkres-50-3.md, does not
+    give a proof at the level of the book: it points to the sum theorem for closed subspaces in Engelking's
+    *Dimension Theory* (1.5.3) as a way to get the dimension, and says of the asker's construction only that a
+    refinement problem can occur at points of the curve that lie in the closure of two squares of the cover of
+    the vertical segment. Engelking's theorem is not in Munkres, so nothing of that answer is transcribed; the
+    card's construction is its own, made from the Lebesgue number of the cover, a cover of the vertical segment
+    of order 2 and a mesh small enough that the curve crosses the vertical strip in disjoint pieces. The AoPS
+    post *Topology by Munkres Chapter 8 | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630)
+    answers §50 as well, with its formulas lost; Murayama, dbFin and the ten GitHub repositories listed in
+    COMPLAINTS.md have no Chapter 8. Nothing on the card needed correction.
 ---
 
 ::: {.exercise}
