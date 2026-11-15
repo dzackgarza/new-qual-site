@@ -2141,3 +2141,70 @@ his 5.5.6, which is Hartshorne V.5.6, and one sentence follows it there: "So the
 elementary transformations which transform $X$ into $X'$." p. 114 therefore carries three sentences of his
 entry, not the two an earlier pass counted. The card's published-solution remark and the entry above now cite
 pp. 113--114 and name p. 114 as the page of the decisive passage.
+
+## `SRC-TEXT-HART77` #121: the remaining cards against the MinerU text versions, second pass (2026-11-15)
+
+**Stack Exchange was not searchable.** The throttle on this VM's address runs to about 03:00Z on
+2026-11-16; this pass ran from 20:31Z on 2026-11-15, so no query was sent and no thread is cited. That is a
+gap in this pass, not a finding.
+
+**What was read.** Yang Pi-Yeh, *Hartshorne Solutions*, in the MinerU text version
+`tmp/sources/lfwin-hartshorne-solutions.md` against the printed folios of
+`tmp/sources/lfwin-hartshorne-solutions.pdf` (printed page = PDF page: the footer of PDF p. 105 reads 105);
+Shichijo, Chapter 1 section 2, in `tmp/sources/shitijyou-ch1-section2.md` against the folios of
+`tmp/sources/shitijyou-ch1-section2.pdf`. Nine of the open Chapter V cards and one Chapter I card were read in
+full this pass, and each stops short of the printed requirement for the reason given. No card is closed on
+this reading.
+
+- **V.4.7** (`P-AGH547GENUSBOUND`), Yang printed pp. 109--110. His upper bound is a complete argument: he
+  rewrites $p_a$ in $d$ and $\Sigma b_i$, applies Schwarz as $(\Sigma b_i)^2\le6\Sigma b_i^2$ in the form
+  $\frac1{18}(\Sigma b_i)^2-\frac12\Sigma b_i^2\le-(\frac16\Sigma b_i)^2$, completes the square
+  $(\frac16\Sigma b_i-\frac13d)^2\ge0$, and gets $\frac16(d-1)(d-2)+\frac23$, then the integrality step for
+  $d\equiv1,2\pmod 3$. His sharpness half gives one class per residue class --- $b_i=d/3$ for all six when
+  $d\equiv0$; $b=(k,k,k,k,k+1,k+1)$ with $d=3k+1$; $b=(k,k,k+1,k+1,k+1,k+1)$ with $d=3k+2$ --- and each
+  carries the printed $d$ and $p_a=\frac16(d-1)(d-2)$ or $+\frac23$ (checked here: $k(3k-1)/2$ and
+  $k(3k+1)/2$ in the last two cases). What he does not do is the printed sentence "achieved by some
+  irreducible nonsingular curve": he exhibits divisor classes and shows no member of any $|D|$ to be
+  irreducible or nonsingular. For $d\equiv0$ that costs nothing, the class being $\frac d3(-K)$ with $-K$
+  very ample, so Bertini gives it; for $d\equiv1,2$ he shows neither very ampleness nor base-point-freeness
+  nor irreducibility, and at $d=4$ the class is $H+L_{56}$, which meets $L_{56}$ in $0$, so no Bertini
+  statement in the class is immediate. The card's own proof does that half by the three equality families.
+  V.4.7 stays open.
+- **V.4.10** (`P-AGH5410NUMINEQ`), Yang printed p. 111. Case I ($b_1\ge b_2+b_5$) is complete. Case II's
+  first step, "In this case $a>b_1+b_2+b_3+b_4+b_5$", does not follow from the hypotheses: with
+  $b=(3,3,3,3,3,3)$ and $a=10$ we have $b_i>0$, $a-b_i-b_j=4>0$ and $2a-\sum_{i\ne j}b_i=5>0$ for every $j$,
+  while $a=10<15$. Nothing else in the entry closes the case, so V.4.10 stays open on his argument.
+- **V.4.9** (`P-AGH549MINGENUS`), Yang printed pp. 110--111. The bound is called "a crazy IMO question" and
+  then minimised over a free choice of $b$; neither printed bound is proved, and the passage from
+  "$\sum b_i^2$ minimal" to a stated $g$ is not an argument. Open.
+- **V.4.12** (`P-AGH5412KODAIRAVANISH`), Yang printed p. 111. He writes "for any ample divisor $D$, it is very
+  ample by theorem 4.11", which is not what (4.11) says, and the exact sequence
+  $0\to\mathcal L(-D)\to\OO_X\to\mathcal L(D)\to0$, which is not the sequence belonging to a divisor. Open.
+- **V.4.14** (`P-AGH5414SPACECURVES`), Yang printed p. 112. A nine-row table covers exactly the nine printed
+  $(d,g)$ pairs, and every row carries its printed $d$ and $p_a$ (checked row by row here); what is absent is
+  the word "nonsingular": no member of any of the nine classes is shown to be nonsingular, and the table
+  carries no argument at all. Open.
+- **V.4.15** (`P-AGH5415GENPOSITION`), Yang printed p. 112. (a) and (c) are argued; (d) enumerates the 56 and
+  240 classes but does not show that no other irreducible curve has negative self-intersection, which is half
+  of what (d) asks; (e) reads "In the case $r>9$, clearly $C=e_1$ is a line ... So there exists infinitely
+  many line $C$", which is the hint restated. Open.
+- **V.4.16** (`P-AGH5416FERMATCUBIC`), Yang printed p. 112. He gives the equations of the 27 lines on the
+  Fermat cubic as the three families $x_0+x_3\omega^k=x_1+x_2\omega^j=0$ and its two variants, which is the
+  exercise's first request, but no incidence relations and nothing about the automorphism group; the entry
+  also asserts rather than checks that these are all the lines. Open.
+- **V.4.3** (`P-AGH543ORDINARYSING`), Yang printed p. 109. The quadratic-transformation loop is there, but the
+  multiplicity drop $\mu(R_i)<\mu(P_1)$ is asserted and the termination at ordinary singularities is inferred
+  from it without the intersection-number computation that produces it, so the entry does not prove the
+  exercise. Open.
+- **V.2.13** (`P-AGH5213ELLSCROLL`), Yang printed p. 105. The count is right ($D\cdot f=1$, $D^2=2n-e$, and
+  $h^0(\OO_C(n))+h^0(\OO_C(n-e))=2n-e$, so the image lies in $\PP^{d-1}$), but its very-ampleness step is his
+  own 5.2.12(b), and there the $e=-1$, $b=2$ case computes $h^0(C_0+Bf-Pf)$ as "$1-1=0$" where the sequence
+  gives $h^0(D)-1=1$; a class of degree one on every fibre cannot have $h^0=0$. Open.
+- **I.2.9(b)** (`P-AGH29PROJCLOSURE`), Shichijo Chapter 1 section 2, Exercise 2.9(b), printed p. 7. His (b) is
+  the book's own counterexample: $xy-zw\in I_p(\bar T)$ but $xy-zw\notin\langle yw-x^2,zw^2-x^3\rangle$, the
+  degree argument being that $a(yw-x^2)+b(zw^2-x^3)$ can only have $x$-degree $\le1$ at $a+bx=0$, which makes
+  it $-bw(xy-zw)$. That refutes generation by the two homogenised generators; it does not show that the three
+  quadrics generate $I_p(\bar T)$, which is what the card's (b) needs. Open.
+
+**No closure.** The three reader items of the pass are in $d387252b70$; the cards above keep their own proofs
+and the obligation recorded in their sections.
