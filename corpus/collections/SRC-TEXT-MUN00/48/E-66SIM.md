@@ -35,11 +35,14 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Transcribed, with one correction, from 杨荻 (whose account name is Yougi and whose blog is *Nocturne*),
+    Transcribed, with one correction, from 杨荻 — the post's byline and the site's footer copyright name the
+    author — on the site *Yougi — Nocturne* (hexo.yougi.top, whose footer brand is *Nocturne* 夜曲 and whose
+    feed is *Yougi 的文字*),
     *Munkres Topology Solution: Chapter 8*, https://hexo.yougi.top/2025/07/10/Munkres-Topology-Solution-Chapter-8/,
     posted 2025-07-10, Ex. 48.3, text at tmp/sources/yougi-2025-munkres-chapter-8.md. The byline is the site's
     own: the post's page carries "© 2026 杨荻" in its footer and the site's feed names the author 杨荻, so
-    "Yougi" is the blog and not the author's name. The post proves the exercise directly, as the book
+    neither "Yougi" nor "Nocturne" is the author's name — "Yougi" is the site's handle and "Nocturne" its
+    brand. The post proves the exercise directly, as the book
     proves Theorem 48.2: given closed A_n with empty interior and an open U_0, choose x in U_0 outside A_1,
     a neighbourhood U_1 of x with compact closure inside U_0, and recurse so that the closures are nested
     inside U_{n-1} with compact closure; the closures are then nonempty closed subsets of the compact
@@ -54,12 +57,26 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Re-read on issue #144. The transcription above was credited to "Yougi"; the post's byline is 杨荻, and
-    "Yougi" is the name of the blog (the page title reads "Munkres Topology Solution: Chapter 8 · Yougi —
-    Nocturne" and the footer "© 2026 杨荻", with the site's feed naming 杨荻 as author). The credit now carries
+    Re-read on issue #144. The transcription above was credited to "Yougi"; the post's byline and the footer
+    both name 杨荻, and neither "Yougi" nor "Nocturne" is the author's: the page's og:site_name and title read
+    "Yougi — Nocturne", its feed is "Yougi 的文字", and its footer brand is "Nocturne 夜曲" over the theme
+    directory /nocturne, so "Yougi" is the site's handle and "Nocturne" its brand. The credit now carries
     it. Nothing of the proof changed: the recursion, the correction of the post's "U_i not a subset of
     A_{i+1}", and the use of Theorem 26.9 for the nested closed sets inside the compact closure of U_1 stand as
     the earlier event records them.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    A reader of this card reported that two events disagree about the site: one called "Yougi" the author's
+    account name and "Nocturne" the blog, the other called "Yougi" the name of the blog. Read again from the
+    page's own bytes in tmp/sources/yougi-2025-munkres-chapter-8.html, the author is 杨荻 -- the post-meta
+    byline is a span "杨荻" after the date, and the footer reads "© 2026 杨荻" -- while og:site_name and the
+    title read "Yougi — Nocturne", the feed is "Yougi 的文字", and the footer's brand link is "Nocturne夜曲"
+    over the theme directory /nocturne. So "Yougi" is the site's handle and "Nocturne" its brand, and neither
+    is the author's name; both events now say that. The header of the text extraction carries the same
+    correction. The mathematics was not re-read: the transcription, its correction of the post's "U_i not a
+    subset of A_{i+1}" and the nested-closed-set argument stand as recorded.
 ---
 
 ::: {.exercise}
