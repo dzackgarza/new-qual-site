@@ -37,6 +37,29 @@ audit:
     only row with d-a<0 is D_(8,7), where every multiplicity is at least 3,
     so the residual-conic line intersections remain positive. Thus every row
     satisfies the V.4.8 existence criterion.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    A complete published solution located, on a third pass over issue #121, and
+    the card's obligation under it discharged. Algebraic Geometry II, National
+    Taiwan University, 2020 Spring (course of Chin-Lung Wang), Chapter V
+    Surfaces homework, Exercise 14 of section 4 (by Ping-Hsun Chuang), PDF p. 18
+    of tmp/sources/ntu-ag2-chapter5.pdf, cites Corollary 4.13 for the
+    very-ampleness criterion and its nonsingular-member half and exhibits one
+    class for each of the nine printed pairs. Each row was recomputed here:
+    (8,6) a=8 b=(4,3,3,2,2,2); (8,7) a=8 b=(3,3,3,3,2,2); (9,7) a=9
+    b=(4,4,4,2,2,2); (9,8) a=9 b=(4,4,3,3,2,2); (9,9) a=9 b=(4,3,3,3,3,2);
+    (10,8) a=10 b=(6,3,3,3,3,2); (10,9) a=12 b=(5,5,5,5,3,3); (10,10) a=11
+    b=(5,5,4,3,3,3); (10,11) a=10 b=(5,3,3,3,3,3). For every row deg D = 3a - sum
+    b_i and p_a(D) = (a-1)(a-2)/2 - sum b_i(b_i-1)/2 give the printed pair, and
+    b_i > 0, a > b_i + b_j for every pair and 2a > sum_{j != i} b_j for every i
+    hold, so each class is very ample and by 4.13(b) contains an irreducible
+    nonsingular curve. The set's two slips are that the third condition is
+    printed with b_i inside the sum over j and that Corollary 4.13 is called the
+    theorem V.4.13; neither affects the argument. Yang Pi-Yeh, printed p. 112,
+    gives the same nine pairs without showing any member nonsingular, so it does
+    not close the exercise. The card's own proof is unchanged.
 ---
 
 ::: {.problem}
@@ -243,6 +266,36 @@ existence criterion, and step [](#nonsingular-irreducible-member){.pf-ref} suppl
 :::
 :::
 
-::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.14, printed p. 294 (space curves on the cubic surface and the degree-genus count).
+::: {.remark title="Published solutions"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.14, printed p. 294 (space curves on the
+cubic surface and the degree-genus count), works one case and defers the rest to his V.4.9.
+
+**The exercise is closed by a complete published solution**: Algebraic Geometry II, National Taiwan University,
+2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework, Exercise 14 of §4 (by Ping-Hsun Chuang),
+PDF p. 18 of `tmp/sources/ntu-ag2-chapter5.pdf` (the set carries no printed folio), with the argument on that
+page. It quotes Corollary 4.13 --- a class $D\sim a\ell-\sum_ib_ie_i$ is very ample if and only if $b_i>0$ for
+all $i$, $a>b_i+b_j$ for all $i,j$ and $2a>\sum_{j\ne i}b_j$ for all $j$, and a class satisfying these
+conditions contains an irreducible nonsingular curve, which is part (b) of the same corollary --- and then
+exhibits one class for each of the nine printed pairs, computing $\deg D=3a-\sum_ib_i$ and
+$p_a(D)=\frac12(a-1)(a-2)-\frac12\sum_ib_i(b_i-1)$:
+
+| $(d,g)$ | $a$ | $(b_1,\dots,b_6)$ | $\deg D=3a-\sum b_i$ | $p_a(D)$ |
+|---|---|---|---|---|
+| $(8,6)$ | $8$ | $(4,3,3,2,2,2)$ | $24-16=8$ | $21-15=6$ |
+| $(8,7)$ | $8$ | $(3,3,3,3,2,2)$ | $24-16=8$ | $21-14=7$ |
+| $(9,7)$ | $9$ | $(4,4,4,2,2,2)$ | $27-18=9$ | $28-21=7$ |
+| $(9,8)$ | $9$ | $(4,4,3,3,2,2)$ | $27-18=9$ | $28-20=8$ |
+| $(9,9)$ | $9$ | $(4,3,3,3,3,2)$ | $27-18=9$ | $28-19=9$ |
+| $(10,8)$ | $10$ | $(6,3,3,3,3,2)$ | $30-20=10$ | $36-28=8$ |
+| $(10,9)$ | $12$ | $(5,5,5,5,3,3)$ | $36-26=10$ | $55-46=9$ |
+| $(10,10)$ | $11$ | $(5,5,4,3,3,3)$ | $33-23=10$ | $45-35=10$ |
+| $(10,11)$ | $10$ | $(5,3,3,3,3,3)$ | $30-20=10$ | $36-25=11$ |
+
+Every row was checked here against the criterion: $\deg D$ and $p_a(D)$ reproduce the printed pair, $b_i>0$,
+$a>b_i+b_j$ for every pair and $2a>\sum_{j\ne i}b_j$ for every $i$; so each of the nine classes is very ample
+on the cubic surface and contains a nonsingular curve of the requested degree and genus. Its two slips are
+typographical: the third condition is printed with $b_i$ where the summand runs over $j$, and Corollary 4.13 is
+called "the theorem V.4.13". Yang Pi-Yeh gives the same nine pairs at printed p. 112 as a table of classes, and
+that entry does not close the exercise, since it shows no member of any class to be nonsingular; the
+National Taiwan University argument does, through 4.13(b).
 :::
