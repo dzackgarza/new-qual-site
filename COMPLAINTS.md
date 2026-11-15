@@ -2184,11 +2184,11 @@ requirement for the reason given. No card is closed on this reading.
 - **V.4.9** (`P-AGH549MINGENUS`), Yang printed pp. 110--111. The bound is called "a crazy IMO question" and
   then minimised over a free choice of $b$; neither printed bound is proved, and the passage from
   "$\sum b_i^2$ minimal" to a stated $g$ is not an argument. Open.
-- **V.4.12** (`P-AGH5412KODAIRAVANISH`), Yang printed p. 111. His very-ampleness citation is (4.11), the book's
-  own statement, so that step needs nothing; the defect is the sequence: he writes
-  $0\to\mathcal L(-D)\to\OO_X\to\mathcal L(D)\to0$, where the sequence belonging to a divisor is
-  $0\to\mathcal L(-D)\to\OO_X\to\OO_C\to0$ with $C\in\abs D$, and the cohomology he then computes is that of his
-  own display. Open.
+- **V.4.12** (`P-AGH5412KODAIRAVANISH`), Yang printed p. 111. His very-ampleness citation is Theorem 4.11
+  itself --- (i) very ample, (ii) ample, (iii), (iv) equivalent on the cubic surface --- so that step is the
+  book's; the defect is the sequence: he writes $0\to\mathcal L(-D)\to\OO_X\to\mathcal L(D)\to0$, where the
+  sequence belonging to a divisor is $0\to\mathcal L(-D)\to\OO_X\to\OO_C\to0$ with $C\in\abs D$, and the
+  cohomology he then computes is that of his own display. Open.
 - **V.4.14** (`P-AGH5414SPACECURVES`), Yang printed p. 112. A nine-row table covers exactly the nine printed
   $(d,g)$ pairs, and every row carries its printed $d$ and $p_a$ (checked row by row here); what is absent is
   the word "nonsingular": no member of any of the nine classes is shown to be nonsingular, and the table
