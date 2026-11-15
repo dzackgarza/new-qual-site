@@ -24,6 +24,13 @@ audit:
     (printed p. 382). The card's earlier version proved the first direction through a polygonal ray and invoked
     a straightening of the ray by a homeomorphism of the plane, which the book does not prove; that borrowed step
     is gone. The definition of "separates" is the one on printed p. 378.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout for a published solution of this exercise (issue #144) and located
+    none; the queries and every source searched are in the COMPLAINTS.md entry for §61--§64. The
+    The card's proof is its own, checked on 2026-11-11 against Lemma 61.2 (printed p. 377), the Borsuk lemma Lemma 62.2 (printed p. 382) and the definition of separation on printed p. 378, as the note above records; it was not re-read in this pass. The printed page of the exercise is 384.
 ---
 
 ::: {.exercise}
