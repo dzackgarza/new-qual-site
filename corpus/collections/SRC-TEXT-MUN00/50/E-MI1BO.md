@@ -25,6 +25,21 @@ audit:
     Local compactness at x: inside a chart phi: U -> V with V open in R^m, a closed ball about phi(x) lies in V,
     and its preimage is a compact neighbourhood of x inside U. Local metrizability: U is homeomorphic to an open
     subset of R^m, hence metrizable. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Math StackExchange 459890, "Showing that $X$ is locally compact
+    and locally metrizable" (2013-08-05), is supplementary Exercise 1 of §50, and the answer 459896 by Anthony
+    Carapetis (2013-08-05), kept at tmp/sources/mse-459890-munkres-50-supp-1.md, gives the proof in two
+    sentences: the two properties are local and are possessed by Euclidean space, so a Euclidean neighbourhood
+    $U\cong\RR^m$ of a point is metrizable and a Euclidean closed ball in it is a compact neighbourhood. That
+    is correct and is the card's argument; the card supplies the details the answer leaves implicit, that a
+    closed ball in $\RR^m$ is compact (Theorem 27.3), that a subspace of a metrizable space is metrizable
+    (Theorem 20.1 and its restriction to the subspace), and that the ball is a neighbourhood of the point
+    inside $U$. Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, and the AoPS post *Topology
+    by Munkres Chapter 8 | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630) answers §50
+    with its formulas lost. Nothing needed correction.
 ---
 
 ::: {.exercise}
