@@ -41,6 +41,18 @@ audit:
     tmp/sources/aops-shooting-star-munkres-ch7-day17.md), also answers the exercise at its item 6 of
     §46, with its formulas lost; the queries of this pass are in the COMPLAINTS.md entry for
     §43--§50.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Munkres' regular spaces have closed one-point sets by definition (Section 31, printed p. 195),
+    and the proof of the regular half argued only that every neighbourhood of a point of C(X,Y)
+    contains the closure of a neighbourhood, which is Lemma 31.1(a) and needs that closedness for the
+    other half of the definition. A reader of this card reported it. The proof now records that the
+    Hausdorff half gives closed one-point sets by Theorem 17.8, that a regular Y is Hausdorff so that
+    half applies to Y, and that the shrinking property together with closedness of one-point sets is
+    Lemma 31.1(a). The Hausdorff half, the hinted inclusion and the compact-open argument are
+    unchanged.
 ---
 
 ::: {.exercise}
@@ -54,9 +66,9 @@ Assume $Y$ Hausdorff. If $f\ne g$ in $C(X,Y)$, choose $x$ with $f(x)\ne g(x)$ an
 $$
 S(\{x\},U),\qquad S(\{x\},V)
 $$
-are disjoint neighborhoods of $f,g$. Hence $C(X,Y)$ is Hausdorff.
+are disjoint neighborhoods of $f,g$. Hence $C(X,Y)$ is Hausdorff, and by Theorem 17.8 its one-point sets are closed.
 
-Now assume $Y$ regular. It suffices to shrink a basic neighborhood
+Now assume $Y$ regular. A regular space is Hausdorff, so the argument just given applies with $Y$ regular, and $C(X,Y)$ has closed one-point sets; that is one of the two conditions Munkres' definition of regularity imposes, and it remains to shrink a basic neighborhood
 $$
 N=\bigcap_{i=1}^n S(C_i,V_i)
 $$
@@ -72,5 +84,5 @@ follows because if $h(C)$ is not contained in $V$, choose $x\in C$ with $h(x)\no
 $$
 \overline M\subset\bigcap_i\overline{S(C_i,U_i)}\subset N.
 $$
-So the function space is regular.
+So every neighborhood of a point $f$ contains the closure of a neighborhood of $f$, which with the closedness of one-point sets is Lemma 31.1(a); the function space is regular.
 :::
