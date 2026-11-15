@@ -27,15 +27,19 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Searched outside the checkout (issue #144) for §73 Exercise 4 (printed p. 445); queries and sets are in the
-    COMPLAINTS.md entry for §66--§73 of SRC-TEXT-MUN00. Query used: "two-dimensional CW complex metrizable
-    perfect map Munkres exercise 73.4 quotient space compact Hausdorff solution". Nothing located: Murayama's
-    selection answers §73 Exercise 1 and the Klein bottle exercise, not this one; dbFin has no §73 page, the
-    fourteen repositories stop at Chapter 3, and no course page found treats these sections. Nothing was
-    transcribed. The card's own proof was re-read against Theorem 26.2 (printed p. 165) for compact fibres and
-    Theorem 34.1 (printed p. 215) for the metrization: it proves second countability of X directly from a
-    countable base of E, which is the step the exercise's hint leaves to the reader, and then applies the
-    Urysohn metrization theorem to the compact Hausdorff space X. Nothing changed.
+    Munkres §73 Exercise 4, printed p. 445. Searched outside the checkout for issue #144; the thread the throttled
+    address could not open was read from the orchestrator's machine, recorded in tmp/sources/mse-searches-144.md,
+    thread tmp/sources/mse-1745722-E-J8QUX.md. Math StackExchange 1745722, "Quotient of compact metric space is
+    metrizable (when Hausdorff)?" (asked 2016-04-16), has two answers, both read whole, and both prove this exercise
+    in general form. Answer 1749351 by Brian M. Scott (2016-04-19) proves that a quotient of a compact metric space
+    onto a Hausdorff space has a countable base and so is metrizable, and answers the thread's second question in
+    the negative with X = [0,1], Q = [0,1] cap the rationals and Y = X/Q; it is transcribed on the card, whose steps
+    2 and 3 are that proof. Answer 1749361 by Eric Wofsey (2016-04-19) proves the same metrizability through the
+    separability of C(K) and the Stone-Weierstrass theorem, which the book does not have, and nothing of it is used.
+    That the E and X of this exercise satisfy the hypotheses is steps 1 and 3 of the card. Murayama's selection
+    answers §73 Exercise 1 and the Klein bottle exercise, not this one; dbFin has no §73 page, the fourteen
+    repositories stop at Chapter 3, and no course page found treats these sections. The card's proof was re-read
+    against Theorem 26.2 (printed p. 165), Theorem 30.2 (printed p. 191) and Theorem 34.1 (printed p. 215).
 - event: source-corrected
   by: claude
   date: 2026-11-15
@@ -70,6 +74,16 @@ audit:
     the quotient property of X is now stated. The unused metric on E introduced in the preamble is dropped:
     no step uses it, and step 2 needs only second countability. Steps 2 and 3 are unchanged, and the printed
     statement (Exercise 4, printed p. 445) is untouched.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    A reader's defect in step 3, checked against the book and repaired. The step concluded "X is compact Hausdorff
+    by Exercise 2(a)", and Exercise 2(a) (printed p. 445) asks only for Hausdorffness. Compactness is now derived: X
+    = q(E) with E the finite topological sum of the compact space A and the compact balls B_i, and q continuous, so
+    X is compact by Theorem 26.5 (printed p. 166); Hausdorffness is Exercise 2(a), and normality, regularity and
+    Theorem 34.1 (printed p. 215) follow as before. The rest of step 3 and steps 1 and 2 are unchanged, as is the
+    printed statement (Exercise 4, printed p. 445).
 ---
 
 ::: {.exercise}
@@ -79,6 +93,8 @@ Show that the space constructed in [[E-VYYH3]] is in fact metrizable.
 :::
 
 ::: {.solution}
+
+The theorem proved below is that of Brian M. Scott, answer 1749351 to Math StackExchange question 1745722, "Quotient of compact metric space is metrizable (when Hausdorff)?" (2016-04-19): a quotient of a compact metric space onto a Hausdorff space is metrizable, and the thread's second question is answered there in the negative, a quotient of a compact metric space need not be second countable. Steps 2 and 3 are his proof, written for this $E$ and $X$. Step 1 is this card's own verification that $q$ is the closed map with compact fibres that the exercise's hint names: Scott obtains closedness instead from compactness of $E$ and Hausdorffness of $X$, so what the argument uses is the property, and either derivation supplies it. The other answer, 1749361 by Eric Wofsey (2016-04-19), proves the same theorem through the separability of $C(K)$ and the Stone–Weierstrass theorem, which the book does not have, and nothing of it is used.
 
 Let $E=A\sqcup B_1\sqcup\cdots\sqcup B_m$ and $q:E\to X$ be as in the construction of Exercise 2, with attaching map $f:\bigsqcup_{i=1}^m\operatorname{Bd}B_i\to A$, a single map defined on the union of the boundary circles (Exercises 2 and 4 of §73, printed p. 445).
 
@@ -120,7 +136,7 @@ $X$ is metrizable.
 
 ::: pf-proof
 
-$X$ is compact Hausdorff by Exercise 2(a), hence normal (Theorem 32.3, printed p. 202) and so regular (the definition, printed p. 195, gives regularity from normality). With the countable base of step 2, Theorem 34.1 (printed p. 215) gives a metric for $X$.
+$X$ is compact, being $q(E)$ with $E$ compact — a finite topological sum of the compact space $A$ and the compact balls $B_i$ — and $q$ continuous, by Theorem 26.5 (printed p. 166); it is Hausdorff by Exercise 2(a) (printed p. 445). Hence it is normal (Theorem 32.3, printed p. 202) and so regular (the definition, printed p. 195, gives regularity from normality). With the countable base of step 2, Theorem 34.1 (printed p. 215) gives a metric for $X$.
 
 :::
 
