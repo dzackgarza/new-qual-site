@@ -23,6 +23,32 @@ audit:
     on printed p. 403 and the degree of a circle map in Exercise 2 of §57 (printed p. 358), which is the
     definition the exercise compares with; the comparison is made through the lifting correspondence of Theorem
     54.3 (printed p. 343) and the standard covering map p: R -> S^1 of Theorem 53.1 (printed p. 335).
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144) for §66 Exercise 1 (printed p. 406); the queries and sets are in
+    the COMPLAINTS.md entry for §66--§73 of SRC-TEXT-MUN00. Query used: "Munkres exercise n(f,a) equals degree
+    of h winding number 66.1 solution". Nothing usable located: the only question on the subject, Math
+    StackExchange 2425949, is about the winding number of a simple closed curve, not this exercise, and its
+    body could not be read (API throttle for this address, Cloudflare human check on the page); dbFin has no
+    §66 page, Murayama's selection no Chapter 10, the fourteen GitHub repositories stop at Chapter 3, and the
+    two course pages consulted post no solutions of these sections. Nothing was transcribed.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Re-read on issue #144. The closing step had called both sides "the change in the lift of g", which is the
+    book's definition of $n(f,a)$ (printed p. 403) but not of $\deg h$: Exercise 9 of §58 defines the degree by
+    $h_*(\gamma(x_0))=d\cdot\gamma(x_1)$. The step now applies the isomorphism
+    $[\delta]\mapsto\tilde\delta(1)-\tilde\delta(0)$ of Theorem 54.5 (printed p. 345) at $x_1=h(b_0)$, where it
+    carries $[g]=h_*(\gamma(x_0))$ to $\tilde g(1)-\tilde g(0)$ and the preferred generator to $1$, and reads
+    off $d$. Two citations of the 2026-11-11 note are corrected: the degree of a circle map is defined in
+    Exercise 9 of §58, printed p. 366, and not in "Exercise 2 of §57, printed p. 358", whose Exercise 2 is about
+    the surjectivity of maps $S^2\to S^2$; and the lifting correspondence used is Theorem 54.4 with Theorem
+    54.5 on printed p. 345, Theorem 54.3 being on printed p. 344 rather than p. 343; and the covering map of
+    Theorem 53.1 is on printed p. 337, not p. 335. Not re-read in this pass: the lemmas of §66 after its
+    definition.
 ---
 
 ::: {.exercise}
@@ -123,15 +149,15 @@ functoriality of the fundamental group.
 
 ::: pf-step
 
-Under the canonical isomorphism $\pi_1(S^1) \cong \ZZ$ that identifies a loop's homotopy class with the difference of the endpoints of its lift in $\RR$:
-The loop $g = h \circ \gamma$ lifts to $\tilde{g}$, so the degree of $h$ is:
+Under the isomorphism $\pi_1(S^1,x)\to\ZZ$ that sends the class of a loop $\delta$ at $x$ to $\tilde\delta(1)-\tilde\delta(0)$, the degree of $h$ is
 $$
 \deg(h) = \tilde{g}(1) - \tilde{g}(0).
 $$
 
 ::: pf-proof
 
-definition of the degree of a self-map of $S^1$ via lifting.
+Exercise 9 of §58 defines the degree as the integer $d$ with $h_*(\gamma(x_0))=d\cdot\gamma(x_1)$, where $\gamma(x)$ is the preferred generator at $x$. Take $x_0=b_0=p(0)$, so that $\gamma(x_0)=\gamma$ and $h_*(\gamma(x_0))=[h\circ\gamma]=[g]$, and put $x_1=h(b_0)$, so that $[g]=d\cdot\gamma(x_1)$. By Theorem 54.5 (printed p. 345) and change of basepoint, $[\delta]\mapsto\tilde\delta(1)-\tilde\delta(0)$ is an isomorphism $\pi_1(S^1,x)\to\ZZ$ for every $x$, and it carries the preferred generator $\gamma(x)$ to $1$, because $\gamma(x)$ is $\gamma$ transported along a path from $b_0$ to $x$ and the lift difference of $\gamma$ is $1$. Applying it at $x_1$ to $[g]=d\cdot\gamma(x_1)$ gives $\tilde{g}(1)-\tilde{g}(0)=d$. The difference $\tilde{g}(1)-\tilde{g}(0)$ is the same for every lift of $g$.
+
 
 :::
 
