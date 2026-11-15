@@ -58,6 +58,15 @@ audit:
     5-14 and 16-17, and passing to an open subspace preserves 3-4, 7-10, 12-13 and 15-17. The
     card's three columns are those three sets, entry by entry; the card and the key agree, and the
     key is now cited on the card.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    In the negative entries for compactness and limit point compactness the infinite subset of
+    (0,1) was written {1/n}, the index running over the positive integers, which contains 1 and so is
+    not a subset of (0,1); a reader of this card reported it. It is now {1/n : n >= 2}, whose only
+    limit point in R is 0, and the step now says that compactness would supply a limit point by
+    Theorem 28.1. The other 49 entries of the table are unchanged and were not re-read in this pass.
 
 ---
 
@@ -99,7 +108,7 @@ Each of the 51 entries is decided by a numbered result of the book or by an expl
 
 **3 Locally connected, 4 Locally path connected: yes for open subspaces, no for closed and arbitrary ones.** If $X$ is locally connected and $U\subseteq X$ is open, every open subset of $U$ is open in $X$, so by Theorem 25.3 each of its components is open in $U$ and $U$ is locally connected; Theorem 25.4 gives the same for local path connectedness. In the other direction the topologist's sine curve is closed in $\RR^2$, connected and not locally connected, Example 3 of §25, so closed subspaces and hence arbitrary subspaces fail; it is not locally path connected either, since a locally path connected space is locally connected.
 
-**5 Compact, 6 Limit point compact: yes for closed subspaces, no otherwise.** Theorem 26.2 for compactness and Exercise 28.3(b) for limit point compactness. The open subspace $(0,1)$ of $[0,1]$ is neither compact nor limit point compact, the set $\{1/n\}$ in it being infinite with no limit point in $(0,1)$.
+**5 Compact, 6 Limit point compact: yes for closed subspaces, no otherwise.** Theorem 26.2 for compactness and Exercise 28.3(b) for limit point compactness. The open subspace $(0,1)$ of $[0,1]$ is neither compact nor limit point compact, the set $\{1/n \mid n \ge 2\}$ in it being infinite with no limit point in $(0,1)$, its only limit point in $\RR$ being $0$; compactness would give a limit point, Theorem 28.1.
 
 **7 Locally compact Hausdorff: yes for closed and for open subspaces, no for arbitrary ones.** Corollary 29.3. $\QQ\subset\RR$ is neither closed nor open and is not locally compact, Example 1 of §29.
 
