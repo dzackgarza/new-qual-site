@@ -33,6 +33,21 @@ audit:
     topology is normal. Not metrizable: a metrizable, connected, locally euclidean space has each component an
     m-manifold and so a countable basis, by the last supplementary exercise, while the long line has no
     countable basis. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Math StackExchange 3460936, "Prove that the long line is
+    normal" (2019-10-13), proves the half of supplementary Exercise 5 of §50 (printed p. 317) that the card
+    cites from [[E-PQHZN]], namely that the long line satisfies condition (iv); the other half, that it is not
+    metrizable, is not the subject of any located page. Query 2341869, "Locally metrizable but not metrizable
+    space" (2017-03-21), is about the general phenomenon and gives the long line as an example without proving
+    the exercise. The card's non-metrizability argument is its own: if the long line were metrizable, then
+    [[E-LI4O5]], which needs only metrizability and local $1$-euclideanness, would make its single component a
+    $1$-manifold, hence second countable, contradicting the long line's lack of a countable basis established
+    on [[E-PQHZN]]. Murayama and dbFin have no Chapter 8, and the AoPS post *Topology by Munkres Chapter 8 | Day
+    18* (https://artofproblemsolving.com/community/c3401823h3647630) answers §50 with its formulas lost.
+    Nothing needed correction.
 ---
 
 ::: {.exercise}
