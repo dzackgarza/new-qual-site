@@ -28,6 +28,22 @@ audit:
     is the mean value theorem, a calculus fact the book does not number, applied on the interval between
     x and x_0 inside the neighbourhood on which the derivatives are bounded. What was corrected: part (c) divided by the
     bound M, which may be 0 when every function of the family is constant; the card now uses max{M,1}.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout for a published solution of this exercise and found none
+    (issue #144). Math StackExchange through the API, site math, with the queries "equicontinuous
+    uniformly convergent sequence", "uniform limit equicontinuous", "equicontinuity compactness
+    uniform convergence" and "Arzela Ascoli theorem equicontinuous" returns questions 792534,
+    1315747, 1293329 and 4435817; 792534 proves that a family that is not equicontinuous has a
+    sequence x_n -> x_0 and functions f_n with |f_n(x_n) - f_n(x_0)| bounded below, which is not
+    one of the three parts, and none of the others treats a finite family, a uniformly convergent
+    sequence, or derivatives bounded on a neighbourhood uniformly. dbFin has no chapter-7 page
+    (404, checked 2026-11-15), and no GitHub Munkres repository named in the COMPLAINTS.md entry
+    for §30--§36 reaches Chapter 7. The card keeps its own proof, which this pass did not re-read;
+    the search is recorded in the COMPLAINTS.md entry for §43--§50 with every query.
+
 ---
 
 ::: {.exercise}
