@@ -631,13 +631,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 - Kim covers Chapters I–III only and has no Chapter IV section.
 - The remaining retained sets: Saglam–Chris, Sam, Borcherds and Stein contain no Chapter IV exercise; Cais covers IV.1.1–1.7 and 1.10 and Cutrone–Marshburn covers IV.1.1–1.8(a),(b), so neither supplies 1.8(c).
 
-**Impact and owner.** The other IV.1 exercises have published arguments in the retained sets (Park and Lomont for 1.1–1.3, Egbert elsewhere, including the singular-curve Riemann–Roch of IV.1.9); IV.1.5 and IV.1.10 assert their decisive step, which is recorded in the IV.1–IV.3 entry below. IV.1.8(c) lacks any published proof. It remains an open obligation under #102, together with III.7.4(b),(d).
+**Impact and owner.** The other IV.1 exercises have published arguments in the retained sets (Park and Lomont for 1.1–1.3, Egbert elsewhere, including the singular-curve Riemann–Roch of IV.1.9); IV.1.5 and IV.1.10 assert their decisive step, which is recorded in the IV.1–IV.3 entry below. IV.1.8(c) had no published proof among the retained sets; the decisive step is proved in the Stacks Project and transcribed on the card, so this obligation is closed. III.7.4(b),(d) remain open.
 
-**Uncertainty.** Searched: all ten retained solution sets plus Kim. Found: nothing for IV.1.8(c). Conclusion: no published coverage among them. Confidence: high. Gaps: a published treatment may exist outside these sets; it has not been located.
+**Uncertainty.** Searched: all ten retained solution sets plus Kim. Found: nothing for IV.1.8(c) among them. Conclusion: no published coverage in those sets, which is not the same as none at all (see the next paragraph). Confidence: high. Gaps: the proof is spread over four Stacks results and one item; it says nothing about analytic isomorphism as such, and the card supplies that identification.
 
-**Repair.** A published proof of Hartshorne IV, Ex. 1.8(c), checked against the card's analysis.
-
-**Searched outside the retained sets, IV.1.8(c) (issue #131, 2026-11-11).** No published proof of (c) was located; the retained sets stop at (a) and (b). The card's own proof was read: completion is exact on the finite-length $\widetilde\OO_P/\OO_P$ and leaves $\delta_P=\length_{\widehat A}(\overline{\widehat A}/\widehat A)$, which is an analytic invariant; $k[[t]]/k[[t^2,t^3]]=k\cdot t$ for the cusp; and for the node, $k[[x,y]]/(xy)\to k[[x]]\times k[[y]]$ has image the pairs with equal constant terms, so the quotient is $k$. Both lengths are $1$.
+**Sourced outside the retained sets, IV.1.8(c) (2026-11-15).** The Stacks Project, version ed88ff78, compiled 14 July 2026 (`tmp/sources/stacks-project-book.pdf`, read in the `.md` text version), Chapter 33, Sections 33.39 and 33.41, proves the decisive step. Lemma 33.39.2 (tag 0C3S) with Definition 33.39.3 (tag 0C3T), printed p. 2899, make $\delta=\length_A(A'/A)$ for a reduced Nagata one-dimensional local ring; Lemma 33.39.5 (tag 0C3V), printed p. 2900, identifies $A'\otimes_A A^h$, $A'\otimes_A A^{sh}$ and $A'\otimes_A A^\wedge$ with the integral closures of those rings; Lemma 33.39.6 (tag 0C3W), printed pp. 2900–2901, shows $\delta$ unchanged by henselization, strict henselization and completion; Definition 33.39.7 (tag 0C1T), printed p. 2901, concludes that $\delta$ is an invariant of the complete local ring, which is the exercise's "$\delta_P$ depends only on the analytic isomorphism class", two points over an algebraically closed field being analytically isomorphic exactly when their completed local rings are. Lemma 33.41.2 item (9) (tag 0C1R), printed p. 2904, is $A'/A\cong(A')^\wedge/A^\wedge$, the identification step `s6` uses. Step `s6` transcribes this and the card now carries the version and pages. The card's own and not in Stacks: the two computations $\delta_P=1$ at the ordinary cusp and at the node.
 
 ### IV.1–IV.3 — the parts whose retained entries assert the decisive step
 
@@ -645,14 +643,14 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 
 **Observed evidence.** The retained sets covering Chapter IV are Park (Chapter IV §1 only, exercises 1.1–1.3), Lomont (Chapter IV §1, exercises 1.1–1.5), Cais (Chapter 4 §1, exercises 1.1–1.7 and 1.10), Cutrone–Marshburn (Chapter 4 §1, exercises 1.1–1.8) and Egbert; no retained set covers IV.2 or IV.3 except Egbert.
 
-- IV.1.5, Egbert printed **p. 207** and Lomont **p. 4**: "Note that equality holds when $h^0(K-D)=h^0(K)$ so when $D=0$ or $g=0$" — the characterization is asserted. Cutrone–Marshburn, Chapter 4 §1 exercise 5, argues "Conversely, suppose that $h^0(K-D)=h^0(K)=g$ and $g>0$. Then $h^0(K-D)=h^0(K)$ so $D\sim0$", which does not follow: equal dimensions give only $L(K-D)=L(K)$, and the standard consequence is $\ell(P)=2$ for $P\in\operatorname{Supp}D$, hence $X\cong\PP^1$. The card's steps 5–7 supply that argument.
+- IV.1.5, Egbert printed **p. 207** and Lomont **p. 4**: "Note that equality holds when $h^0(K-D)=h^0(K)$ so when $D=0$ or $g=0$" — the characterization is asserted. Cutrone–Marshburn, Chapter 4 §1 exercise 5, argues "Conversely, suppose that $h^0(K-D)=h^0(K)=g$ and $g>0$. Then $h^0(K-D)=h^0(K)$ so $D\sim0$", which does not follow: equal dimensions give only $L(K-D)=L(K)$, and the standard consequence is $\ell(P)=2$ for $P\in\operatorname{Supp}D$, hence $X\cong\PP^1$. The card's steps 5–7 supply that argument. **Closed 2026-11-15 by the Stacks Project**: Lemma 53.3.5 (tag 0CCS), printed pp. 4436–4437 of version ed88ff78, is the exercise — $r\le d$ for a $g^r_d$, and equality forces $H^1(\OO_X)=0$ — proved by the divisor sequence, with the equality case carried to a large power with vanishing $H^1$; Lemma 53.10.2(1) (tag 0C6T), printed p. 4450, gives the converse for $g=0$. The card now cites both in the body.
 - IV.1.10, Egbert printed **pp. 209–210** and Cais Chapter 4 §1: Egbert concludes "$\dim|D+P_0|=0$" and leaves the bijection at that; Cais (exercise 1.10) gets $(f)+D+P_0=P$ for some point and then says $P$ is "necessarily in $X_{\mathrm{reg}}$ as $D$ is supported in $X_{\mathrm{reg}}$", which is not argued (that $P$ is regular needs $\OO_{X,P}/(a)\cong k$, hence a principal maximal ideal). The card's step 6 supplies it.
 - IV.2.2, Egbert printed **p. 210** and pp. 211: parts (a) and (b) are argued, part (c) is "Each case is given in Rudin 14.3", part (d) is "nothing to do here. Are you trying to make me do group theory?" and part (e) is "Clear from parts a–d". The $\Sigma_6$-action of (d) and the bijection of (e), which are the exercise's conclusion, have no proof.
 - IV.2.3, Egbert printed **p. 212** and following: parts (a)–(g) are argued, part (d) as a printout of a symbolic root-finder, but part (h) — the quartic count with a four-fold contact tangent, the one case the printed statement singles out — has no entry.
 - IV.3.4, Egbert printed **p. 219**: part (a) is one line, "Since $\PP^1$ is projectively normal, then d-uple is projectively normal. If $\theta$ is the corresponding ring homomorphism, then the kernel is generated by quadrics"; projective normality of the $d$-uple embedding and quadratic generation of its ideal are what the exercise asks to be shown. Part (b) is argued.
 - IV.3.12, Egbert printed **p. 224**, headed "just explain the advanced method": a six-step recipe (write the singularity at $(0,0,1)$, expand in $z$, require $z^{d-2}f_2$ nonzero, check the discriminant, then "check for genus in Sage easily … c…"), with no curve built and no proof.
 
-**Impact and owner.** Every card listed has its own complete proof: IV.1.5 by the nested section spaces $L(K-D)\subseteq L(K-P)\subseteq L(K)$ and the resulting $\ell(P)=2$; IV.1.10 by the exact sequence with $\OO_Z(E)$ and the principal-maximal-ideal criterion for regularity; IV.2.2 by Hurwitz, by the uniqueness of the degree-two morphism, and by the explicit $\Sigma_6$-action on triples; IV.2.3 by the $E_6$ cusp computation $\delta=3$ at a hyperflex so that $b+h=28$; IV.3.4 by the monomial straightening and dimension count $\dim(R/J)_m=md+1$; IV.3.12 by the maximally nodal rational curve, $H^1(\mathcal I_N(d))=0$ and independent smoothing of nodes. The published-solution obligation stays open under #115 for these six, and no card's proof is a transcription of a published one.
+**Impact and owner.** Every card listed has its own complete proof: IV.1.5 by the nested section spaces $L(K-D)\subseteq L(K-P)\subseteq L(K)$ and the resulting $\ell(P)=2$; IV.1.10 by the exact sequence with $\OO_Z(E)$ and the principal-maximal-ideal criterion for regularity; IV.2.2 by Hurwitz, by the uniqueness of the degree-two morphism, and by the explicit $\Sigma_6$-action on triples; IV.2.3 by the $E_6$ cusp computation $\delta=3$ at a hyperflex so that $b+h=28$; IV.3.4 by the monomial straightening and dimension count $\dim(R/J)_m=md+1$; IV.3.12 by the maximally nodal rational curve, $H^1(\mathcal I_N(d))=0$ and independent smoothing of nodes. IV.1.5 is now sourced as well (the Stacks entry in its own bullet above), so the published-solution obligation stays open under #115 for **five** of the six, and no card's proof is a transcription of a published one.
 
 **Uncertainty.** Searched: all retained sets in `tmp/sources` that reach Chapter IV — Park, Lomont, Cais, Cutrone–Marshburn, Egbert (Dongryul Kim stops at Chapter III; Borcherds, Sam, Stein, Troiani, Saglam–Chris, Okamoto have no Chapter IV exercise). Found the passages quoted. Conclusion: no complete published solution of these parts among them. Confidence: high for these sets; the Egbert pages were read in the `pdftotext -layout` extraction, whose table of contents fixes the printed pages. Gaps: Chapter IV of the twenty-odd sets *not* retained was not searched; Rudin's *Real and Complex Analysis* 14.3 was not consulted.
 
@@ -808,7 +806,7 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 
 **Observed evidence.** Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Chapter 1.5, PDF p. 7, stops at 5.5 and has no 5.6--5.15. William Troiani, *Hartshorne Exercise Solutions* (October 2020), has only 5.9 (PDF p. 16) from this section. Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), covers I.5 on PDF pp. 43--52, and on these five requests gives: 5.5 as "otherwise we can use $xy^{d-1}+yz^{d-1}+zx^{d-1}=0$", which is singular at $(1:1:1)$ whenever $3=0$ in $k$ and $3\mid d$, since there the value is $3$ and every partial derivative is $d$; 5.6(b) as a paragraph about the blow-up surface and tangent directions, with no statement about the two points above the node being nonsingular; 5.8 as "The hint is the answer"; 5.12(b) as "for larger $r$, any factors must be linear, but then multiplying the two factors together will create terms of higher than degree $2$", which is false of a product of two linear forms; and 5.13 as a sketch — integral closure finitely generated by $f_1,\ldots,f_n$, "$\mco_x$ is integrally closed iff the image of $f_i$ is in $\mco_x$ for all $i$", and "a finite intersection of nonempty opens is nonempty open" — whose two assertions are the content of the exercise.
 
-**Impact and owner.** The cards keep complete proofs: 5.5 uses $x^{d-1}y+y^{d-1}z+z^d$ for $p\mid d$, whose partials $(d-1)x^{d-2}y$, $x^{d-1}+(d-1)y^{d-2}z$, $y^{d-1}$ force $y=x=z=0$; 5.6(b) writes a general node as $xy+f_3+\cdots$ and gets, on each chart, a strict transform whose derivative in the chart coordinate is $1$ at the unique exceptional point; 5.8 proves the three components of the printed hint; 5.12(b) counts the rank of the symmetric matrix of a product of two linear forms against $r+1\ge3$; 5.13 identifies the nonnormal locus with the support of the finite module $\overline A/A$. What is missing is a published argument to check each against.
+**Impact and owner.** The cards keep complete proofs: 5.5 uses $x^{d-1}y+y^{d-1}z+z^d$ for $p\mid d$, whose partials $(d-1)x^{d-2}y$, $x^{d-1}+(d-1)y^{d-2}z$, $y^{d-1}$ force $y=x=z=0$; 5.6(b) proves the general node statement in Shichijo's form, transcribing his two strict transforms on the charts $V_0=\theset{y=vx}$ and $V_1=\theset{x=uy}$, the two points $P_1=(0,0)\times(b:a)$ and $P_2=(0,0)\times(d:c)$ of the exceptional divisor and the rank-two Jacobian at each --- and supplying the $V_1$ chart that the source omits; 5.8 proves the three components of the printed hint; 5.12(b) proves the two implications through the normal form $x_0^2+\cdots+x_r^2$, from the reducibility of $x_0^2$ and $x_0^2+x_1^2$ for $r<2$ and, conversely, from the two cases of a product of two linear forms, which is $y_0y_1$ when they are independent and $c\ell^2$ when they are proportional, giving $z_0^2+z_1^2$ and $x_0^2$ respectively, that is $r=1$ and $r=0$; 5.13 identifies the nonnormal locus with the support of the finite module $\overline A/A$. What is missing is a published argument to check each against.
 
 **Uncertainty.** Searched: all twelve retained Hartshorne solution files in `tmp/sources` by `pdftotext -layout` extraction — Borcherds, Cais, Cutrone--Marshburn, Egbert, Kim, Lomont, Okamoto, Park, Saglam--Chris, Sam, Stein, Troiani. Found: Chapter I §5 material only in Borcherds (5.1--5.5, PDF p. 7), Troiani (5.9, PDF p. 16) and Egbert (5.1--5.15, PDF pp. 43--52); Sam's text layer is mirrored and was reversed before searching, and it carries no I.5 exercise; Cutrone--Marshburn cover §I.5 in part on PDF pp. 18--23 — 5.2, 5.5, 5.6, 5.11, 5.12, a 5.13 that breaks off mid-sentence ("Any rational function is defined on a nonempty"), 5.14 with (d) replaced by a recipe, and 5.15 — and have no 5.1, 5.3, 5.4, 5.7, 5.8, 5.9 or 5.10; their 5.12(b) argues that a nonsingular quadric hypersurface is irreducible, which is the assertion being proved. Conclusion: no complete published solution for the five requests above. Confidence: high for these sets. Gaps: a published treatment may exist outside them.
 
@@ -1392,19 +1390,23 @@ and his 2011 draft):
   `Hartshorne_AG_Ch2` in the `shitijyou-a/MathNotes` repository: Chapter 1 sections 1--7 and Chapter 2
   sections 1--8, about half the exercises, "written in detail".
   Downloaded to `tmp/sources/shitijyou-ch1-section{2,5,6,7}.pdf` and
-  `tmp/sources/shitijyou-ch2-section{3,6}.pdf`, text versions beside them (`.txt`).
+  `tmp/sources/shitijyou-ch2-section{3,6}.pdf`, with Markdown text versions beside them (`.md`).
 - **R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry***, 21 October 2025 version,
   `https://math.stanford.edu/~vakil/216blog/FOAGoct2125public.pdf`: `tmp/sources/vakil-rising-sea-2025-10-21.pdf`,
   text version `.md` with `<!-- PDF page N -->` markers, 853 pages. Sections used: 15.5, 19.5, 19.6, 19.9,
   19.10, 20.2, 27, 28.6.
 - **The Stacks Project**, `https://stacks.math.columbia.edu/download/book.pdf` (38 MB, 7655 pages),
-  `tmp/sources/stacks-project-book.pdf` with a `.md` text version carrying page markers and the tag of
-  every numbered result, so that a statement can be cited by tag. Searched for the twisted cubic, the
-  normal locus, quadrics, dimension, Riemann--Roch and the cohomology of curves.
-- Web pages were saved as `.md` where used. No MinerU and no Mistral OCR is available in this VM (no
-  `mineru`/`magic-pdf` binary, `MISTRAL_API_KEY` unset, and `tools/mistral_ocr.py` needs the key), so every
-  PDF text version here was made with `pdftotext -layout` and split into pages, which is the extractor used
-  by every earlier entry in this file.
+  version ed88ff78, compiled 14 July 2026, `tmp/sources/stacks-project-book.pdf` with a `.md` text version
+  carrying page markers and the tag of every numbered result, so that a statement can be cited by tag; the
+  page numbers below are that copy's. Searched for the twisted cubic, the normal locus, quadrics,
+  dimension, Riemann--Roch and the cohomology of curves.
+- Web pages were saved as `.md` where used. The text versions of the six Shichijo PDFs were made with
+  MinerU Flash and its Japanese model (`mineru-open-api flash-extract <pdf> --language japan`, CLI v0.5.9
+  via `npm install -g mineru-open-api`, run with the project's Node); an earlier attempt of 2026-11-15 used
+  `--language en` and produced a file with no Japanese character in it, which is why the six were extracted
+  again. Every other PDF text version here was made with `pdftotext -layout` and split into pages, the
+  extractor used by every earlier entry in this file. No Mistral OCR was used: `MISTRAL_API_KEY` is unset
+  and `tools/mistral_ocr.py` needs the key.
 
 **The nine cards whose notes 9bb4dbad80 added, corrected on 2026-11-15.** That commit added an audit event to
 each of nine cards and transcribed nothing into any solution body, while its message and this entry said it
@@ -1412,25 +1414,36 @@ had; the events also carried step mappings that the text does not support. The n
 in a machine extraction of the source (below) and changed as follows. In every case the citation is in the
 solution body, not only in the audit trail.
 
-- `P-AGH512QUADRICHYP` (I.5.12(b)): **transcribed.** Step `s2` is now Shichijo's proof (Chapter 1 section 5,
+- `P-AGH512QUADRICHYP` (I.5.12(b)): **transcribed, with one case the source omits.** Step `s2` is now Shichijo's proof (Chapter 1 section 5,
   printed p. 10): the linear change preserves irreducibility, $r<2$ gives $x_0^2$ or $x_0^2+x_1^2$, and a
   reducible quadratic is $y_0y_1$ after a linear change and $z_0^2+z_1^2$ after $y_0=z_0+iz_1$,
-  $y_1=z_0-iz_1$. The one inference he leaves implicit, that $r+1$ is the rank, is supplied from step `s1`
-  and said so. Steps `s1`, `s3`, `s4` keep the card's proofs. The public remark now says this, where it had
-  said "(b) is proved here".
+  $y_1=z_0-iz_1$. His step from "a product of two linear forms" to $y_0y_1$ needs the two factors to be
+  linearly independent; when they are proportional, $f=c\ell^2$, no linear change produces $y_0y_1$, and the
+  step now supplies that case --- $\ell\mapsto x_0$ and $x_0\mapsto c^{-1/2}x_0$ give $x_0^2$, the normal form
+  with $r=0$ --- so that the conclusion $r<2$ covers both. The one inference he leaves implicit, that $r+1$
+  is the rank, is supplied from step `s1` and said so. Steps `s1`, `s3`, `s4` keep the card's proofs. The
+  public remark now says this, where it had said "(b) is proved here".
 - `P-AGH513NONNORMALLOCUS` (I.5.13): **searched, not proved.** The source (printed pp. 11--12) proves
   $\Nor(Y)=U$ for $U=\theset{P \st \overline A\subseteq\mco_{P,Y}}$ by two valid inclusions, and then treats
-  the openness of $U$ as obvious, writing it as an intersection of complements of zero sets of "the
-  denominators" of generators of $\overline A$; a denominator in $K$ is defined only up to a unit of $A$, and
-  the openness of $U$ is the closedness the exercise asks for. That is the same gap the card faults in
+  the openness of $U$ as obvious, writing it as an intersection of complements of zero sets of one chosen
+  denominator $s_i$ of each generator of $\overline A$. One chosen denominator can vanish where its $g_i$ is
+  regular, so that intersection is only an open subset of $U$, and the openness of $U$ is the closedness the
+  exercise asks for. The earlier version of this entry said the denominators are "defined only up to a unit
+  of $A$", which is false: in $k[x,y,z]/(xy-z^2)$ the element $z/x=y/z$ has the two non-associate
+  denominators $x$ and $z$. The description that does make $U$ open is
+  $\bigcap_i\bigl(Y\sm V(A:_Ag_i)\bigr)$, the union of $D(s)$ over all denominators of $g_i$, and the card's
+  step `s3` now gives it beside the source's. That is the same gap the card faults in
   Egbert. The card keeps its own annihilator proof of closedness; the remark had said that no set proves the
   exercise, and now says exactly what the source proves and where it stops.
 - `P-AGH56BLOWUPSING` (I.5.6(b)): **transcribed.** Step `general-node-two-points` is Shichijo's proof
   (printed p. 5, not p. 4, which holds Exercise 5.5 and the start of 5.6), in his general form
   $f_2=(ax-by)(cx-dy)$ with $ad-bc\ne0$: both strict transforms, the two points
   $P_1=(0,0)\times(b:a)$, $P_2=(0,0)\times(d:c)$, and the Jacobian entry $2bdv-(ad+bc)$ taking the values
-  $\pm(ad-bc)$. Two limits are recorded on the step: his $V_0$ chart displays both points only when
-  $b,d\ne0$, and he omits the $V_1$ chart, which carries one of them when $b=0$ or $d=0$; the card supplies
+  $\pm(ad-bc)$. Three limits are recorded on the step: his $V_0$ chart displays both points only when
+  $b,d\ne0$; he omits the $V_1$ chart, which carries one of them when $b=0$ or $d=0$; and his printed
+  Jacobian has the row $(0,-v,0)$ for the chart equation $y-vx$, whose partial derivatives in $(x,y,v)$ are
+  $(-v,1,-x)$ --- the $1$ is missing, and the card writes the matrix as computed and says why the rank
+  conclusion is unaffected (the deciding minor is the one in the last two columns). The card supplies
   that chart and marks it as its own.
 - `P-AGH67PUNCTUREDLINE` (I.6.7): **searched for the $r=s$ direction, assertion for the converse.** The card
   keeps its unit-group proof and states the source's route beside it (printed pp. 5--6) with three defects:
@@ -1448,8 +1461,12 @@ solution body, not only in the audit trail.
 - `P-AGH2320DIMENSION` (II.3.20): **located for the nonempty case only, not counted as a solution.** The
   source (printed pp. 17--18) proves (a)--(d) for $Y$ irreducible closed and then passes to arbitrary closed
   $Y$ by an infimum over the irreducible $Z\subseteq Y$, which is empty at $Y=\emptyset$; it says nothing
-  about that case, which is the one this card's remark is about. The card's own proof stands and cites the
-  source in the body for the nonempty case.
+  about that case, which is the one this card's remark is about. It also misprints the key equality twice:
+  it prints $\dim Z=\dim\OO_{X,\zeta_Z}$, where the chain of primes it localizes at $\mathfrak p_Y$ gives
+  $\codim(Z,X)=\dim\OO_{X,\zeta_Z}$, and its next display reads $\codim(Y,X)=\inf\{\dim Z\}$ where
+  $\inf\{\codim(Z,X)\}$ is meant ($\inf\dim Z$ over the irreducible $Z\subseteq Y$ is $0$ once $Y$ contains a
+  closed point). The card's own proof stands, states the correct equality, and cites the source in the body
+  for the nonempty case with the misprint recorded.
 - `P-AGH2310FIBRES` (II.3.10(b)): **searched, defect repeated.** The source (printed p. 7) writes
   $k[t]/(t^2-a)$ as $k[t]/(t-\sqrt a)\times k[t]/(t+\sqrt a)$, which needs the roots distinct, so it
   repeats the characteristic-two defect the card keeps as a computation. No erratum located.
@@ -1459,28 +1476,46 @@ solution body, not only in the audit trail.
   points), not steps `s3` and `s4` as the previous note said; 19.9.3 (printed p. 556) is the map $\Phi$ and
   its identification with $\Pic^0$. Vakil's hypothesis is a regular curve, so the singular-case argument of
   `s6` -- the length-one computation $\mco_{X,P}/(a)\cong k$ that puts $P$ in $X_{\reg}$ -- is the card's.
-- `P-AGH422GENUSTWOMODULI` (IV.2.2): **transcribed for (a) and (b).** Vakil 19.5.2 with its proof runs over
-  printed pp. 546--548; 19.5.4, printed pp. 547--548, is the genus $r/2-1$; 19.5.6, printed p. 548, identifies
+- `P-AGH422GENUSTWOMODULI` (IV.2.2): **cited, not transcribed.** The assertions of (a) and (b) are Vakil's:
+  19.5.2 with its proof runs over printed pp. 546--548; 19.5.4, printed pp. 547--548, is the genus $r/2-1$,
+  computed from the Čech complex of the two affine charts; 19.5.6, printed p. 548, identifies
   the hyperelliptic cover with the canonical one, and 19.5.7's proof is on printed p. 549; 19.6.2, printed
-  p. 550, assembles the bijection. Part (c) has **no** published proof here: three-transitivity of
+  p. 550, assembles the bijection. The card's steps `s1`, `s2` and `s4` are its own proofs of the same
+  statements --- Riemann--Hurwitz for the branch count and for $g(X)=2$, Riemann--Roch for the uniqueness of
+  the degree-two morphism --- and the body and the remark now say so instead of claiming to give his
+  arguments. Part (c) has **no** published proof here: three-transitivity of
   $\Aut\PP^1$ is Exercise 15.5.B in Vakil, an exercise, so step `s6` is the card's own; (d) and (e) are not
   in Vakil at all.
 - `P-AGH55NONSINGDEGD` (I.5.5): **searched, defective.** Shichijo's Exercise 5.5 (printed pp. 3--4, the
-  cancellation on p. 4) takes the Borcherds/Stacks equation, eliminates to $(d-1)^2/(d-2)=1$, and solves
-  that **in the integers**; but the identity is one in $k$. For $p=7$, $d=4$ it holds, and $(4:2:1)$ is a
-  singular point of that curve over $\FF_7$: at $(a,b)=(4,2)$ on the chart $x_0=1$ the three reduced
-  equations are $98$, $56$ and $49$, all $0$ modulo $7$. So the source settles no prime, characteristic $3$
-  included, and the card keeps its own equation.
+  cancellation on p. 4) takes the Borcherds/Stacks equation, eliminates to $(d-1)^2/(d-2)=1$, that is to
+  $d^2-3d+3=0$ in $k$, and solves it **in the integers**; for $p=7$, $d=4$ it does hold in $k$, and
+  $(4:2:1)$ is a singular point of that curve over $\FF_7$: at $(a,b)=(4,2)$ on the chart $x_0=1$ the three
+  reduced equations are $98$, $56$ and $49$, all $0$ modulo $7$. Replacing the integer step by the correct
+  reading in $k$ does not sink the argument, and the earlier version of this entry was wrong to say that it
+  settles no prime: for $p\mid d$ the identity $d^2-3d+3=0$ reads $3=0$, so the source proves the case
+  $p\mid d$ with $p\ne3$. What it leaves is $p=3$, which its replaced step does not reach, and $p\nmid d$,
+  where the identity can hold and its conclusion can fail, as the $p=7$, $d=4$ example shows. The card keeps
+  its own equation, which covers $p=3$ with $3\mid d$.
 
-**The text versions, replaced.** The six Shichijo files were read in this pass through
-`pdftotext -layout`, whose formula rendering is broken (fractions and exponents flattened). They have been
-re-extracted with MinerU Flash (`mineru-open-api flash-extract <pdf> --language en`, CLI v0.2.1, downloaded
-from the `opendatalab/MinerU-Ecosystem` release `cli/v0.2.1` because this VM has no node, go, `mineru` or
-`MISTRAL_API_KEY`), giving `tmp/sources/shitijyou-ch{1,2}-section{2,3,5,6,7}.md` beside the PDFs, and the
-`.txt` files were removed. The prose is Japanese and the extraction is still imperfect where the scan is a
-hand-annotated working page; every statement quoted above was read in the Markdown extraction and, where a
-formula decides the point, checked on the page with `pdftotext -layout -f N -l N`, which is exact for
-formulas set in type. Card citations give the author, the original title
+**The text versions, replaced twice: the `--language en` extraction threw the Japanese away.** The six Shichijo
+files were first read through `pdftotext -layout`, whose formula rendering is broken (fractions and
+exponents flattened). They were then re-extracted with MinerU Flash at `--language en` (CLI v0.2.1), which
+was a mistake: the prose is Japanese, and the English model destroys it. Re-run on 2026-11-15 against
+`shitijyou-ch1-section5.pdf`, `--language en` yields a 43.9 KB file holding 135 Japanese characters in all,
+where the Japanese model yields 61.0 KB holding 16 862, and no occurrence of `なので` or `と仮定し`; the
+passage of 5.13 that this file and the card discuss read
+"#U The3.9 AK3A A#", so the quotations attributed to the source (なので, と仮定し, and the author's own (？)
+against his choice of hyperplane in 7.7(b)) were nowhere in the text that was being quoted. All six were
+therefore extracted again with MinerU Flash's Japanese model,
+`mineru-open-api flash-extract <pdf> --language japan` (CLI v0.5.9, `npm install -g mineru-open-api` under
+the project's own `tmp/node`), giving `tmp/sources/shitijyou-ch{1,2}-section{2,3,5,6,7}.md` beside the
+PDFs; the `.txt` files are gone. The six new files hold 6 570--17 222 Japanese characters each and contain
+every passage quoted in this file: `なので` occurs 4--21 times per file, `と仮定し` in Chapter 1 sections 5,
+6 and 7 and in Chapter 2 section 3, and `(？)` once, against the author's choice of hyperplane in 7.7(b) of
+section 7. The extraction is still imperfect where the scan is
+a hand-annotated working page, and every statement quoted above was re-read in the Japanese extraction and,
+where a formula decides the point, checked on the page with `pdftotext -layout -f N -l N`, which is exact
+for formulas set in type. Card citations give the author, the original title
 "R.Hartshorne "Algebraic Geometry" 演習問題への解答" with its English rendering, the version 2020/March, the
 URL and the printed page of the exercise as numbered in the source itself, whose folios run 1--12 in
 `shitijyou-ch1-section5.pdf` and match the PDF page numbers.
@@ -1492,7 +1527,9 @@ URL and the printed page of the exercise as numbered in the source itself, whose
   $3\mid d$ (the value there is $3$ and every partial derivative is $d$), and the proof's final step cancels
   to $(d-1)^2/(d-2)=1$, which it solves **in $\ZZ$**; in $k$ the identity can hold, and for $p=7$, $d=4$ it
   does, $(4:2:1)$ being a singular point of that curve over $\FF_7$ ($98$, $56$ and $49$ at $(a,b)=(4,2)$ on
-  the chart $x_0=1$). So it does not close `P-AGH55NONSINGDEGD` in any characteristic dividing $d$.
+  the chart $x_0=1$). So its conclusion fails when $p\nmid d$; but the same elimination read in $k$ does
+  close `P-AGH55NONSINGDEGD` for every $p\mid d$ with $p\ne3$, since then $d=0$ and the identity reads
+  $3=0$. The case it leaves is $p=3$, and the card's own equation covers it.
 - Shichijo, section 6, Exercise 6.7, printed p. 6: the converse is asserted from "an element of $PGL(1)$ is
   determined by the images of three points" plus "since $A^1$ is infinite one can choose the two sets not
   carried to each other by any element", which is the claim, not a proof of it; nothing there is a
@@ -1519,8 +1556,13 @@ URL and the printed page of the exercise as numbered in the source itself, whose
   to an infimum, so it does not supply the empty case that `P-AGH2320DIMENSION` records; that card therefore
   does not count the source as located.
 - Shichijo's Exercise 5.13, printed pp. 11--12, proves $\Nor(Y)=U$ for $U=\theset{P \st \overline A\subseteq
-  \mco_{P,Y}}$ and then calls $U$ open with denominators that are not well defined, which is the closedness
-  the exercise asks for; `P-AGH513NONNORMALLOCUS` records it as searched, not as a proof.
+  \mco_{P,Y}}$ and then calls $U$ open from one chosen denominator per generator, which gives only an open
+  subset of $U$; the openness of $U$ is the closedness the exercise asks for, and the display that gives it
+  is the union over all denominators, $\bigcap_i\bigl(Y\sm V(A:_Ag_i)\bigr)$.
+  `P-AGH513NONNORMALLOCUS` records it as searched, not as a proof, and now carries the corrected display.
+- Shichijo's Exercise 3.20(c), printed p. 18, prints $\dim Z=\dim\OO_{X,\zeta_Z}$ and
+  $\codim(Y,X)=\inf\{\dim Z\}$ where $\codim(Z,X)$ is meant in both; `P-AGH2320DIMENSION` records the misprint,
+  which does not affect the argument once read.
 
 **Math Stack Exchange was not searched.** This VM's address cannot reach the Stack Exchange API or the
 question pages until about 2026-11-16 03:00Z (the throttle in the §60--§73 entry above), so no query was run
@@ -1557,9 +1599,12 @@ nearest located text does and what it does not do. None of them is closed, and n
   formulas are stated in the literature without this case being separated.
 - `P-AGH434RATIONALNORMALCURVE` (IV.3.4(a)): same obstacle as I.2.9(b) for quadratic generation; projective
   normality is Vakil's Exercise 9.3.I again, not a proof.
-- `P-AGH4311PROJECTIONCLOSEDIMMERSION` (IV.3.11(a)): Vakil's Theorem 19.1.1 with its proof at 19.1.3--19.1.4,
-  printed pp. 535--537, is the closed-embedding criterion the last step needs, and it is now what the card
-  cites; the existence of a centre outside the secant and tangent loci by the count $n>2r+1$ is not in it.
+- `P-AGH4311PROJECTIONCLOSEDIMMERSION` (IV.3.11(a)): Vakil's Theorem 19.1.1, printed p. 536, is the
+  closed-embedding criterion the last step needs, and the card cites it; but Vakil's reduction of it at
+  19.1.3, printed p. 537, ends at his Exercise 19.1.D ("show that the degree of $\pi$ is at most 1 at all
+  closed points"), which is left to the reader, so the published proof is incomplete at that step --- the one
+  where injectivity on tangent vectors enters. The card says so. The existence of a centre outside the secant
+  and tangent loci by the count $n>2r+1$ is not in Vakil at all.
 - `P-AGH4312NODALCURVESEXIST` (IV.3.12), `P-AGH4422FAMILYOVERAFFINELINE` (IV.4.22),
   `P-AGH469NONSINGULARSURFACECONTAININGACURVE` (IV.6.9): no located source; the cards keep their proofs.
 - The twenty-four Chapter V cards: Vakil's Chapter 27, printed pp. 757--768, proves that every smooth cubic
@@ -1572,11 +1617,16 @@ nearest located text does and what it does not do. None of them is closed, and n
   V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, V.4.7--V.4.15, V.5.1, V.5.5--V.5.7, V.6.1 or V.6.2.
 
 **Still open, and why.** The cards above that this pass did not close keep their own proofs and the
-obligation recorded in their sections. The ones where a further search is the next step are
+obligation recorded in their sections. Two have come off this list since: IV.1.8(c), whose decisive step is
+the Stacks Project's, version ed88ff78, printed pp. 2899--2901 and 2904, now transcribed on the card, and
+IV.1.5, which is Stacks Lemma 53.3.5 (tag 0CCS), printed pp. 4436--4437, with Lemma 53.10.2(1) (tag 0C6T),
+printed p. 4450, for the converse. The ones where a
+further search is the next step are
 `P-AGH29PROJCLOSURE` (no located proof that the three quadrics generate $I(\bar Y)$: Wikipedia asserts it,
-Landesman's and Kim's notes state it), `P-AGH55NONSINGDEGD` and `P-AGH512QUADRICHYP`'s neighbours in I.5,
+Landesman's and Kim's notes state it), `P-AGH55NONSINGDEGD` (now only $p=3$ with $3\mid d$, its other cases
+being covered by Stacks tag 0BYA and by Shichijo's elimination read in $k$),
 `P-AGH67PUNCTUREDLINE`'s converse, `P-AGH77CONEDEGDROP`, `P-AGH374COHOMCLASS` (III.7.4(b),(d)),
-`P-AGH3117NONALGSHEAF`, `P-AGH3123JUMPINGIDEAL`, IV.1.8(c), IV.1.5, IV.2.3(h), IV.3.4(a), IV.3.11(a),
+`P-AGH3117NONALGSHEAF`, `P-AGH3123JUMPINGIDEAL`, IV.2.3(h), IV.3.4(a), IV.3.11(a),
 IV.3.12, IV.4.22, IV.6.9, and the twenty-four Chapter V cards that the section entries still record as
 uncovered --- V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, the ten of V.4.7--V.4.16, V.5.1 and
 V.5.4--V.5.7, and V.6.1, V.6.2 --- whose published treatments would have to come from a source this pass
@@ -1613,3 +1663,87 @@ So the repository search adds nothing beyond Chapters I--II, where the Shichijo 
 was obtained in this pass; Dolgachev's *Classical Algebraic Geometry* likewise, the only copy downloaded,
 `tmp/sources/dolgachev-topics-classical-ag.pdf` from `mathweb.ucsd.edu/~eizadi/207A-14/`, being a six-page
 title stub and not the book. None of these is cited on a card.
+
+**The repair pass of 2026-11-15, second: what a reader of the four commits above found, and what was changed.**
+A local reader read the four commits `96b162602a`, `0789776a64`, `9eadf0c884` and `dc360235e2` against the sources
+and against the book. Its twelve items are all repaired here, one at a time, with the card carrying the
+corrected statement; eleven are card repairs and the twelfth (the Shichijo text versions) is a defect in this
+file's own account of the extraction, repaired in the entry above. None of them is a criticism of the
+mathematics the cards prove: most are misdescriptions of a source, or of a card's relation to it.
+
+- **The Shichijo text versions held no Japanese.** The extraction of the six PDFs had been made with MinerU
+  Flash `--language en`, whose output for Japanese prose is unusable: `shitijyou-ch1-section5.md` read
+  "#U The3.9 AK3A A#" where the 5.13 passage stands. The quotations this file and five cards attribute to
+  the source were therefore not in the text being quoted. Re-extracted with `--language japan` and checked
+  passage by passage, as recorded above.
+- **I.5.12(b), the proportional factors.** The step to $y_0y_1$ needs the two linear factors of a reducible
+  quadratic to be independent. If they are proportional, $f=c\ell^2$, and no linear change gives $y_0y_1$;
+  the case is now in step `s2`, where $\ell\mapsto x_0$ and $x_0\mapsto c^{-1/2}x_0$ give $x_0^2$, that is
+  $r=0$. The source takes the independent case only.
+- **I.5.6(b), the source's Jacobian and the $V_1$ chart's coordinates.** Shichijo's printed $J_0$ has the row
+  $(0,-v,0)$ for the chart equation $y-vx$, whose partials are $(-v,1,-x)$; the card's step wrote the
+  computed matrix without saying so, and now says so, with why the rank conclusion is the same. The same
+  step said the $V_1$ chart has "coordinates $(y,u)$" while its Jacobian is $2\times3$ in $(x,y,u)$; the
+  columns are now named.
+- **I.5.13, the reason given for the source's gap.** This file and the card said the source's
+  $\bigcap_i Z_a(s_i)^c$ is not well defined because a denominator is determined only up to a unit of $A$.
+  That is false --- in $k[x,y,z]/(xy-z^2)$, $z/x=y/z$ with $x,z$ non-associate --- and the real defect is
+  that one chosen denominator can vanish where its $g_i$ is regular, so the intersection is only an open
+  subset of the normal locus. The union over all denominators, $\bigcap_i(Y\sm V(A:_Ag_i))$, is what makes
+  the locus open; the card's step and remark now give it.
+- **I.6.7, the extension automorphism.** The card said the automorphism carries $\infty$ to $\infty$; it
+  carries $\{\infty\}\cup P$ onto $\{\infty\}\cup Q$ as sets. The count of $r+1$ points is unaffected once
+  stated that way, and for $r=3$ the four-point cross ratio still obstructs the converse.
+- **I.7.8, the two halves.** The remark said "all three retained sets prove the first sentence" in the same
+  paragraph that said the published arguments for the degree drop are incomplete. What the three sets do is
+  reduce the first sentence to I.7.7 and stop; the card's own proof of the degree drop is used, and the
+  sentence now says that.
+- **II.3.20, the source's $\dim Z$ for $\codim(Z,X)$.** Shichijo prints $\dim Z=\dim\OO_{X,\zeta_Z}$ and
+  $\codim(Y,X)=\inf\{\dim Z\}$; the chain he localizes at $\mathfrak p_Y$ gives
+  $\codim(Z,X)=\dim\OO_{X,\zeta_Z}$, and $\inf\dim Z$ over the irreducible $Z\subseteq Y$ is $0$ once $Y$ has
+  a closed point. The card states the correct equality and records the misprint.
+- **I.5.5, "the source settles no prime".** Its elimination is $d^2-3d+3=0$, and the step it takes wrongly is
+  only the substitution of integers. Read in $k$, $p\mid d$ gives $3=0$, so the source's argument settles
+  $p\mid d$ with $p\ne3$; the case left open is $p=3$, and $p\nmid d$ is where its conclusion can fail
+  ($p=7$, $d=4$). The card's remark and this file now say that, not that it settles nothing.
+- **IV.2.2, cited rather than transcribed.** Steps `s1`, `s2`, `s4` are the card's own Riemann--Hurwitz and
+  Riemann--Roch arguments; Vakil's 19.5.4 computes the genus from a Čech complex. The body, the remark and
+  this file now say "cited", not "transcribed", and name what each side proves.
+- **IV.1.8(c), the Stacks version.** The card's citations now carry version ed88ff78, compiled 14 July 2026,
+  with the printed pages 2899--2901 and 2904, and this file's entry records that the decisive step is
+  sourced there, so the obligation is closed.
+- **IV.3.11(a), Vakil's incomplete reduction.** Theorem 19.1.1 has two hypotheses, injectivity on closed
+  points and injectivity on tangent vectors --- not a fibre condition --- and its reduction at 19.1.3 ends at
+  Exercise 19.1.D, left to the reader. The card no longer says the criterion "is proved" in Vakil, and the
+  gloss "and a fibre of at most one point" is gone.
+- **The I.5 "Impact" paragraph** described 5.6(b) and 5.12(b) by the steps the cards had before
+  `96b162602a`; it now describes the steps they have.
+
+**The Stacks Project, searched again for the cards left open (2026-11-15, after the repairs above).** The
+search was over the retained 7655-page book (version ed88ff78), tag by tag and by phrase.
+
+- **Closed: IV.1.5.** Lemma 53.3.5 (tag 0CCS), printed pp. 4436--4437, is the exercise's inequality $r\le d$
+  for a $g^r_d$ together with "equality forces genus $0$", proved by the divisor sequence and, for the
+  equality case, by doubling the bundle and passing to a large even power with vanishing $H^1$; Lemma
+  53.10.2(1) (tag 0C6T), printed p. 4450, is the converse for $g=0$. The card cites both in the body and the
+  entry above records it.
+- **Not closed: V.5.4.** §55.2 (tags 0C5X and the two lemmas around it) is the real linear algebra of a
+  semi-negative definite symmetric matrix with a positive kernel vector, and §55.3 (tags 0C6Z, 0C73) applies
+  it to *numerical types*, that is to the dual graph of a fibre of a morphism from a surface to a curve.
+  Neither states V.5.4(a) (a curve contracted by a birational morphism of nonsingular surfaces is
+  $\PP^1$ with negative self-intersection) or (b) for the components of a fibre of a birational map of
+  surfaces; the surface-theoretic input would have to come from the contraction theorem of §54.16, which is
+  the converse direction. Unchanged.
+- **Not closed: I.2.9(b) and IV.3.4(a).** A phrase search of the book returns no occurrence of "Veronese",
+  "twisted cubic", "d-uple" or "projectively normal", so it does not prove that the $d$-uple embedding of
+  $\PP^1$ is cut out by the $2\times2$ minors, nor that a $d$-uple embedding is projectively normal with
+  ideal generated by quadrics.
+- **Not closed: III.7.4(b),(d).** The book's Chapter 42 has a cycle-class formalism --- "cycle class" occurs
+  in Sections 42.12, 42.15, 42.29, 42.31, 42.38 and 42.49 --- but a phrase search found no statement pairing
+  the class of a smooth $Y\subseteq\PP^n$ with the trace to $\deg Y$, which is the normalisation the exercise
+  fixes; those sections were located by tag and phrase, not read in full, and this line records only that
+  the statement was not found.
+- Vakil's *Rising Sea* (the same 21 October 2025 copy) was re-read only at §19.1, for IV.3.11(a), where
+  19.1.1 is incomplete at Exercise 19.1.D; the §19.5--19.6 record for IV.2.2 is the earlier pass's and was
+  not re-read here. Nothing in Vakil was found today for the other cards on the list.
+- Math Stack Exchange was not searched: the throttle recorded below runs to about 2026-11-16 03:00Z.
