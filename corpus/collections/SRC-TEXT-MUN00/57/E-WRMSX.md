@@ -61,6 +61,27 @@ audit:
     its proof says which earlier step supplied the missing point. No estimate or homotopy on the
     card changed. Checked against the book: the exercise and its hint on printed p. 359 and
     Theorem 57.3 on printed p. 358.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The step headings now carry the hypothesis the argument runs under, from a
+    second reader's report on this card. The last step was headed "g(x) = g(-x) for
+    some x in S^2", which is false as a statement about a general continuous
+    self-map of the sphere -- the identity map has no such x -- and two of the steps
+    before it used that g is not surjective without saying so: step 1 supplies the
+    point p off the image, and p is what makes phi o g defined, so the stereographic
+    step and the Borsuk-Ulam step are both conditional on the supposition. The
+    solution now opens with it ("it is a proof by contraposition, so it opens by
+    supposing that g is not surjective"), the Borsuk-Ulam step is headed "under the
+    supposition", and the last step is headed "under the supposition g(x) = g(-x)
+    for some x; contrapositively ...", with a last sentence recording that the
+    identity map is not a counterexample to the implication, being surjective. No
+    estimate, map or homotopy on the card changed, and the stereographic formula and
+    its injectivity are untouched. Checked against the book: the exercise and its
+    hint on printed p. 359 and Theorem 57.3 on printed p. 358; the proof uses those
+    two and nothing else, and the only two uses of the supposition are the two
+    places now named.
 ---
 
 ::: {.exercise}
@@ -74,9 +95,10 @@ The exercise is §57 Exercise 2, printed p. 359, whose hint is that $S^2-p$ is
 homeomorphic to $\RR^2$. The proof is transcribed from a forum answer: Math
 StackExchange question 1250275, answer 1250354 by Michael Albanese (2015), held
 at `tmp/sources/mse-1250275.md`, and cited as a forum answer. It is a proof by
-contraposition, and it uses only the Borsuk--Ulam theorem (Theorem 57.3,
-printed p. 358) together with the injectivity of the homeomorphism the hint
-supplies. The answer also records a point about the theorem that a first
+contraposition, so it opens by supposing that $g$ is not surjective; every step
+below runs under that supposition, and the last one draws the contrapositive. It
+uses only the Borsuk--Ulam theorem (Theorem 57.3, printed p. 358) together with
+the injectivity of the homeomorphism the hint supplies. The answer also records a point about the theorem that a first
 reading gets wrong: $\varphi\circ g$ need not be surjective, and the
 Borsuk--Ulam theorem applies to every continuous map of $S^2$ into $\RR^2$,
 surjective or not.
@@ -84,7 +106,7 @@ surjective or not.
 ::: pf
 
 ::: {.pf-step #not-surjective}
-If $g$ is not surjective, then $g(S^2)\subseteq S^2-\theset{p}$ for some
+Suppose $g$ is not surjective. Then $g(S^2)\subseteq S^2-\theset{p}$ for some
 $p\in S^2$.
 
 ::: pf-proof
@@ -116,8 +138,8 @@ $\varphi(x)=\varphi(y)$ implies $x=y$.
 :::
 
 ::: {.pf-step #borsuk-ulam}
-$\varphi\circ g:S^2\to\RR^2$ is defined and continuous, so there is
-$x\in S^2$ with $(\varphi\circ g)(x)=(\varphi\circ g)(-x)$.
+Under the supposition, $\varphi\circ g:S^2\to\RR^2$ is defined and continuous, so
+there is $x\in S^2$ with $(\varphi\circ g)(x)=(\varphi\circ g)(-x)$.
 
 ::: pf-proof
 By step [](#not-surjective){.pf-ref} the image of $g$ is contained in
@@ -130,20 +152,22 @@ continuous map of $S^2$ into $\RR^2$ and gives such a point $x$.
 :::
 
 ::: {.pf-step}
-$g(x)=g(-x)$ for some $x\in S^2$; consequently a continuous $g$ with
-$g(x)\ne g(-x)$ for every $x$ is surjective.
+Under the supposition $g(x)=g(-x)$ for some $x\in S^2$; contrapositively, a
+continuous $g$ with $g(x)\ne g(-x)$ for every $x$ is surjective.
 
 ::: pf-proof
 By step [](#borsuk-ulam){.pf-ref} there is $x$ with
 $\varphi(g(x))=\varphi(g(-x))$, and $\varphi$ is injective by step
 [](#stereographic){.pf-ref}, so $g(x)=g(-x)$.
 
-The first clause was derived for a $g$ that is *not* surjective: step
-[](#not-surjective){.pf-ref} is what supplied the point $p$ off the image, and
-$p$ is what makes $\varphi\circ g$ defined. So what the three steps prove is the
+That coincidence was derived under the supposition that $g$ is not surjective:
+step [](#not-surjective){.pf-ref} is what supplies the point $p$ off the image, and
+$p$ is what makes $\varphi\circ g$ defined. So what the steps prove is the
 implication "if $g$ is not surjective then $g(x)=g(-x)$ for some $x$", whose
-contrapositive is the assertion of the exercise: a continuous $g:S^2\to S^2$
-with $g(x)\ne g(-x)$ for every $x$ is surjective.
+contrapositive is the assertion of the exercise: a continuous $g:S^2\to S^2$ with
+$g(x)\ne g(-x)$ for every $x$ is surjective. The identity map is not a
+counterexample to the implication, being surjective; it shows only that the
+coincidence needs the supposition.
 :::
 
 :::
