@@ -48,6 +48,19 @@ audit:
     answer writes the direction "complete implies the intersection is nonempty" that the exercise
     states; the card supplies it, choosing x_n in A_n and using diam A_n -> 0 for the Cauchy
     condition.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The attribution of the two directions is corrected, and the sentence above that names Pedro's
+    answer for the first direction is wrong. The direction from completeness, that the intersection
+    of the nested closed sets is nonempty, is Munkres' own proof of Lemma 48.3 in §48, whose proof
+    opens by recording that it was given as an exercise in §43; the card's step 1 is that proof,
+    choosing x_n in A_n, using diam A_n -> 0 for the Cauchy condition, and putting the limit in
+    each closed A_n. The direction to completeness is Karagila's answer 375696, with the nesting of
+    the balls repaired as the note above records. Nothing of Pedro's answer 375690 is used at
+    either step, and the note above that calls diam A = diam of its closure the fact the argument
+    needs is wrong for this card, which uses closed balls and no closure of a diameter.
 ---
 
 ::: {.exercise}
