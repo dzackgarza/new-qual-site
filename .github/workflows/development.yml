@@ -34,6 +34,10 @@ jobs:
       - name: Install Python and project deps
         run: uv sync --frozen
       - name: Build catalog and static site
+        # This run's duration record lands outside the checkout, so no build
+        # output can overwrite one and git never sees one (issue #145).
+        env:
+          QUALC_RUN_RECORD_DIR: ${{ runner.temp }}/run-records
         run: uv run qualc build
       - name: Crawl every reachable internal link
         run: uv run python tools/crawl.py --links-only
@@ -42,6 +46,17 @@ jobs:
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
         with:
           path: build/quarto/_site
+      # The build's own timing, whether it succeeded or failed: `always()` is
+      # the point of the record, since the run that dies is the one worth
+      # reading (issue #145).
+      - name: Upload this run's duration records
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: run-records-build-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/run-records
+          if-no-files-found: error
+          retention-days: 90
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -92,6 +107,31 @@ jobs:
 
             corpus-reports-revision.txt'
           if-no-files-found: error
+  run-records:
+    # The test tier runs inside the shared QC workflow, and a workflow that
+    # calls another cannot add a step to it. The `test-ci` recipe in this
+    # repository's justfile copies each run's record into `.qc-triage/`, which
+    # that workflow uploads with `always()`; this job republishes those records
+    # as their own artifact with 90-day retention (issue #145). No soft failure:
+    # the tier runs the suite, so the record is there or the run is broken.
+    needs: qc-ci
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Collect the QC tier's artifact
+        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0
+        with:
+          pattern: qc-triage-${{ github.run_id }}-*
+          path: qc-triage
+          merge-multiple: true
+      - name: Upload this run's duration records
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: run-records-tests-${{ github.run_id }}-${{ github.run_attempt }}
+          path: qc-triage/run-records
+          if-no-files-found: error
+          retention-days: 90
   qc-ci:
     uses: dzackgarza/ai-review-ci/.github/workflows/_qc.yml@main
     permissions:
