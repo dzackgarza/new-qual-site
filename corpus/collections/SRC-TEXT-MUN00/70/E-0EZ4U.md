@@ -38,9 +38,22 @@ audit:
     Murayama's selection none, the fourteen repositories stop at Chapter 3. Nothing was transcribed and nothing
     on the card changed: it was re-read against Theorem 70.1 (printed p. 426) and the extension condition for
     free products (Lemma 68.3, printed p. 418).
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Two defects reported by a reader of this card, checked against §70 (exercises printed p. 433) before
+    changing anything. (a) The exercise stands under the section's printed sentence "In the following
+    exercises, assume the hypotheses of the Seifert-van Kampen theorem", which the card's statement omitted;
+    the statement now opens with it. (b) Step 3 read "q_1 i_1(gamma) lies in N_1", which compares an element of
+    the quotient pi_1(U)/N_1 with a subgroup of pi_1(U); what the argument needs is that i_1(gamma) lies in N_1
+    for every gamma, by definition of N_1, so that q_1 i_1(gamma) is the identity of the quotient, and the step
+    now says that (and the same for q_2 i_2). The rest of the proof was re-read and kept.
 ---
 
 ::: {.exercise}
+
+Assume the hypotheses of the Seifert–van Kampen theorem (Theorem 70.1, printed p. 426).
 
 Suppose that the homomorphism $i_*$ induced by inclusion $i: U \cap V \to X$ is trivial.
 
@@ -92,7 +105,7 @@ $h$ has a left inverse $\Phi$.
 
 ::: pf-proof
 
-Take $H=\pi_1(U)/N_1 * \pi_1(V)/N_2$ and $\phi_i=J_i\circ q_i$ in Theorem 70.1. Their composites with $i_1,i_2$ agree because $i$ is trivial and $q_1 i_1$, $q_2 i_2$ both land in the identity: $q_1 i_1(\gamma)$ lies in $N_1$ by definition of $N_1$, and $q_2i_2(\gamma)$ lies in $N_2$. Theorem 70.1 then gives $\Phi:\pi_1(X,x_0)\to H$ with $\Phi\circ j_i=J_iq_i$.
+Take $H=\pi_1(U)/N_1 * \pi_1(V)/N_2$ and $\phi_i=J_i\circ q_i$ in Theorem 70.1. Their composites with $i_1,i_2$ agree because $i$ is trivial and $q_1 i_1$, $q_2 i_2$ both land in the identity: $i_1(\gamma)$ lies in $N_1$ for every $\gamma$, by definition of $N_1$, so $q_1i_1(\gamma)$ is the identity of $\pi_1(U)/N_1$, and likewise $q_2i_2(\gamma)$ is the identity of $\pi_1(V)/N_2$. Theorem 70.1 then gives $\Phi:\pi_1(X,x_0)\to H$ with $\Phi\circ j_i=J_iq_i$.
 
 :::
 
