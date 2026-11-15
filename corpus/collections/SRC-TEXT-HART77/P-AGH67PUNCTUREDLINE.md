@@ -26,24 +26,37 @@ audit:
   date: 2026-11-15
   note: >-
     Printed exercise read: Hartshorne, Algebraic Geometry (1977), I.6.7, printed
-    p. 47. Published treatment located outside the twelve retained sets:
-    A. Shichijo, Solutions to Hartshorne's Algebraic Geometry, Chapter 1
-    section 6, Exercise 6.7, printed pp. 5--6 of
-    tmp/sources/shitijyou-ch1-section6.pdf. For the r = s direction the source
-    embeds A^1 in P^1, extends the isomorphism to a birational map P^1 to P^1,
-    which is an automorphism by Exercise I.6.8, and concludes
-    phi-bar({P_i}) = P^1 - phi-bar(P^1 - {P_i}) = {Q_j}, so r = s; that is the
-    card's step r-equals-s by a different route, the card using the unit group
-    of the coordinate ring, which is also what the same file's Exercise 6.6(c)
-    computation of Aut k(x) = PGL(1) supplies. On the converse the source is not
-    a proof: it observes that an element of PGL(1) is determined by the images of
-    three points and then says that since A^1 is infinite one can choose
-    {P_i}, {Q_j} not carried to each other by any element, which is the claim at
-    issue and needs an invariant of four points; its footnote replaces the
-    argument by a configuration in A^3. The card's counterexample, the four-point
-    sets {inf,0,1,lambda} and {inf,0,1,mu} with mu outside the six cross-ratio
-    transforms of lambda, is therefore still the only complete argument the
-    search produced, and the converse half stays without a published proof.
+    p. 47 (PDF p. 62 of the checked-in extraction; Proposition 6.7 is the
+    different statement on printed p. 42). A. Shichijo, R.Hartshorne
+    "Algebraic Geometry" 演習問題への解答 (2020/March), Chapter 1 section 6,
+    Exercise 6.7, printed pp. 5--6, read in the MinerU extraction
+    tmp/sources/shitijyou-ch1-section6.md. Its r = s direction: A^1 - {P_i} is
+    P^1 - {P_i, infinity}, the isomorphism gives a birational map
+    phi': P^1 --> P^1, and phi' extends to an automorphism phi'-bar, whence
+    phi'-bar carries the omitted finite sets to one another and s = t. The card
+    keeps its own proof of r = s through the unit group and states the source's
+    route beside it, in step r-equals-s, with three defects recorded:
+    (1) the extension step is referred to the source's own Exercise 6.3 block,
+    whose footnote cites Corollary I.6.12, not Exercise I.6.8, which is a
+    different statement (that a nonsingular projective curve is determined by its
+    function field); (2) its displayed identity phi'-bar({P_n}) = P^1 -
+    phi'-bar(P^1 - {P_n}) = {Q_n} omits infinity, the omitted sets being
+    {P_n} union {infinity} and {Q_n} union {infinity}; (3) the converse is an
+    assertion: an element of PGL(1) is determined by the images of three points
+    and A^1 is infinite, "so one can choose {P_n}, {Q_n} not carried to each
+    other by any element" -- which is the claim at issue, with the footnote
+    replacing the argument by a configuration in A^3. The card's own proof of
+    r = s through the unit group, and its cross-ratio counterexample to the
+    converse, stand.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Step r-equals-s now carries the source's route as a paragraph after the
+    card's unit-group proof, in Shichijo's own words as far as the two set
+    identities go and with the missing infinity written in; the card's proof is
+    unchanged, no step is transcribed from the source, and the converse keeps the
+    card's cross-ratio obstruction because the source's version is an assertion.
 ---
 
 ::: {.problem}
@@ -132,6 +145,12 @@ Hence
 $$
 \boxed{r=s}.
 $$
+
+A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 6, Exercise 6.7, printed pp. 5--6, reaches the same conclusion by another route: $\AA^1\sm\theset{P_1,\ldots,P_r}=\PP^1\sm(\theset{P_1,\ldots,P_r}\union\theset{\infty})$, the isomorphism gives a birational map $\PP^1\dashrightarrow\PP^1$, and that map extends to an automorphism $\bar\phi'$, which then carries the omitted sets to one another. His extension step is referred to his own Exercise 6.3 block, which rests on Corollary I.6.12; it is not Exercise I.6.8, which says that a nonsingular projective curve is determined by its function field. His displayed identity
+$$
+\bar\phi'(\theset{P_n})=\PP^1-\bar\phi'(\PP^1-\theset{P_n})=\PP^1-(\PP^1-\theset{Q_n})=\theset{Q_n}
+$$
+omits $\infty$: the sets exchanged are $\theset{P_n}\union\theset{\infty}$ and $\theset{Q_n}\union\theset{\infty}$, as step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref} states them.
 :::
 
 :::
@@ -208,5 +227,7 @@ Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exer
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), stops at §I.5 and gives no solution to 6.7.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.6.7, PDF p. 55: "we can extend any map between the two curves to a map $\PP^1\to\PP^1$; since $P_i$ must map to $Q_j$ thus $r=s$. The converse is only true for $r\le3$ by virtue of the fact that mobius transformations can take at most $3$ distinct points in $\PP^1$ to any other $3$ distinct points."
 Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.6.7, PDF p. 25: the same extension argument giving the equality of the two numbers of punctures; "the converse is not true for $r>3$ since any set of at most $3$ points in $\PP^1$ can be mapped to any other set of the same size under $\operatorname{Aut}\PP^1$; any isomorphism between $\PP^1$ and $\PP^1$ fixes at most $2$ points, so if $r>3$, the map must be the identity isomorphism".
-All three sets answer $r=s$ as step [](#r-equals-s){.pf-ref} does. All three then state the threshold for the converse as $r\le3$, which is one too high: the automorphism of $\PP^1$ produced in step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref} carries $\infty$ to $\infty$, so the finite subset it moves has $r+1$ elements, four of them as soon as $r=3$, and the cross ratio obstructs the converse already there. Cutrone--Marshburn's premise, that a non-identity automorphism of $\PP^1$ fixes at most two points, is true; the inference drawn from it is not, since an isomorphism carrying $\{\infty\}\cup P$ to $\{\infty\}\cup Q$ need not fix either set pointwise, and on four points it acts by a permutation of them. Step [](#converse-fails){.pf-ref} is the counterexample the sets lack. Recorded in COMPLAINTS.md for the converse half.
+A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 6, Exercise 6.7, printed pp. 5--6, answers $r=s$ by extending the birational map $\PP^1\dashrightarrow\PP^1$ to an automorphism, referred to his own Exercise 6.3 block and Corollary I.6.12 rather than to Exercise I.6.8; his displayed exchange of the omitted sets leaves out $\infty$, as step [](#r-equals-s){.pf-ref} records. For the converse he argues that an element of $\operatorname{PGL}(1)$ is determined by the images of three points and that, $\AA^1$ being infinite, one may choose the two finite sets outside the reach of any one element, which is the assertion and not a proof; the footnote replaces it by a configuration in $\AA^3$.
+
+All three retained sets answer $r=s$ as step [](#r-equals-s){.pf-ref} does. All three then state the threshold for the converse as $r\le3$, which is one too high: the automorphism of $\PP^1$ produced in step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref} carries $\infty$ to $\infty$, so the finite subset it moves has $r+1$ elements, four of them as soon as $r=3$, and the cross ratio obstructs the converse already there. Cutrone--Marshburn's premise, that a non-identity automorphism of $\PP^1$ fixes at most two points, is true; the inference drawn from it is not, since an isomorphism carrying $\{\infty\}\cup P$ to $\{\infty\}\cup Q$ need not fix either set pointwise, and on four points it acts by a permutation of them. Step [](#converse-fails){.pf-ref} is the counterexample the sets lack. Recorded in COMPLAINTS.md for the converse half.
 :::

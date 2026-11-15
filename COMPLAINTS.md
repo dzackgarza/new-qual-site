@@ -1406,39 +1406,121 @@ and his 2011 draft):
   PDF text version here was made with `pdftotext -layout` and split into pages, which is the extractor used
   by every earlier entry in this file.
 
-**Located, and transcribed onto the cards, nine cards.** `P-AGH512QUADRICHYP` (I.5.12(b)), `P-AGH513NONNORMALLOCUS`
-(I.5.13), `P-AGH56BLOWUPSING` (I.5.6(b)), `P-AGH78DEGTWOSPAN` (I.7.8, the span half), `P-AGH67PUNCTUREDLINE`
-(I.6.7, the $r=s$ direction), `P-AGH2320DIMENSION` (II.3.20(a)--(d)) from Shichijo, printed pages 10, 11, 4,
-9, 5--6 and 17--18; `P-AGH4110PICOFARITHGENUSONE` (IV.1.10) from Vakil 19.9.1--19.9.3, printed pp. 555--556;
-`P-AGH422GENUSTWOMODULI` (IV.2.2(a),(b)) from Vakil 19.5.1, 19.5.2, 19.5.6, 19.5.7 and 19.6.2, printed
-pp. 546--551; and `P-AGH2310FIBRES` (II.3.10(b)), where the located source repeats the defect instead of
-repairing it. Each card's audit trail now carries the source, its printed page, which of the source's
-paragraphs is which of the card's steps, and what the source does not cover.
+**The nine cards whose notes 9bb4dbad80 added, corrected on 2026-11-15.** That commit added an audit event to
+each of nine cards and transcribed nothing into any solution body, while its message and this entry said it
+had; the events also carried step mappings that the text does not support. The nine have now been read again
+in a machine extraction of the source (below) and changed as follows. In every case the citation is in the
+solution body, not only in the audit trail.
+
+- `P-AGH512QUADRICHYP` (I.5.12(b)): **transcribed.** Step `s2` is now Shichijo's proof (Chapter 1 section 5,
+  printed p. 10): the linear change preserves irreducibility, $r<2$ gives $x_0^2$ or $x_0^2+x_1^2$, and a
+  reducible quadratic is $y_0y_1$ after a linear change and $z_0^2+z_1^2$ after $y_0=z_0+iz_1$,
+  $y_1=z_0-iz_1$. The one inference he leaves implicit, that $r+1$ is the rank, is supplied from step `s1`
+  and said so. Steps `s1`, `s3`, `s4` keep the card's proofs. The public remark now says this, where it had
+  said "(b) is proved here".
+- `P-AGH513NONNORMALLOCUS` (I.5.13): **searched, not proved.** The source (printed pp. 11--12) proves
+  $\Nor(Y)=U$ for $U=\theset{P \st \overline A\subseteq\mco_{P,Y}}$ by two valid inclusions, and then treats
+  the openness of $U$ as obvious, writing it as an intersection of complements of zero sets of "the
+  denominators" of generators of $\overline A$; a denominator in $K$ is defined only up to a unit of $A$, and
+  the openness of $U$ is the closedness the exercise asks for. That is the same gap the card faults in
+  Egbert. The card keeps its own annihilator proof of closedness; the remark had said that no set proves the
+  exercise, and now says exactly what the source proves and where it stops.
+- `P-AGH56BLOWUPSING` (I.5.6(b)): **transcribed.** Step `general-node-two-points` is Shichijo's proof
+  (printed p. 5, not p. 4, which holds Exercise 5.5 and the start of 5.6), in his general form
+  $f_2=(ax-by)(cx-dy)$ with $ad-bc\ne0$: both strict transforms, the two points
+  $P_1=(0,0)\times(b:a)$, $P_2=(0,0)\times(d:c)$, and the Jacobian entry $2bdv-(ad+bc)$ taking the values
+  $\pm(ad-bc)$. Two limits are recorded on the step: his $V_0$ chart displays both points only when
+  $b,d\ne0$, and he omits the $V_1$ chart, which carries one of them when $b=0$ or $d=0$; the card supplies
+  that chart and marks it as its own.
+- `P-AGH67PUNCTUREDLINE` (I.6.7): **searched for the $r=s$ direction, assertion for the converse.** The card
+  keeps its unit-group proof and states the source's route beside it (printed pp. 5--6) with three defects:
+  the extension step is referred to the source's own Exercise 6.3 block, which rests on Corollary I.6.12,
+  not on Exercise I.6.8 (a different statement); its displayed exchange of the omitted sets omits
+  $\infty$, the sets being $\theset{P_n}\cup\theset{\infty}$ and $\theset{Q_n}\cup\theset{\infty}$; and the
+  converse is the assertion that one can choose the two finite sets outside the reach of any element of
+  $\operatorname{PGL}(1)$, with a footnote replacing the argument by a configuration in $\AA^3$.
+- `P-AGH78DEGTWOSPAN` (I.7.8): **neither half source-backed.** The source's 7.8 (printed p. 9) is
+  $\deg X=\deg Y-1$ from 7.7(b), $\dim X=\dim Y+1$ from 7.7(a) and linearity from 7.6; but its 7.7(a)
+  proves $X$ irreducible by supposing $X=C\cup D$ and inferring a contradiction from $C'\cup D'=Y$ with
+  $C'=Y\cap C$, which permits $C'=Y$, and its 7.7(b) marks the hyperplane choice with the author's own
+  "（？）". The earlier note's claim that the span half is source-backed was wrong and is withdrawn; the card
+  keeps its own proof of both halves.
+- `P-AGH2320DIMENSION` (II.3.20): **located for the nonempty case only, not counted as a solution.** The
+  source (printed pp. 17--18) proves (a)--(d) for $Y$ irreducible closed and then passes to arbitrary closed
+  $Y$ by an infimum over the irreducible $Z\subseteq Y$, which is empty at $Y=\emptyset$; it says nothing
+  about that case, which is the one this card's remark is about. The card's own proof stands and cites the
+  source in the body for the nonempty case.
+- `P-AGH2310FIBRES` (II.3.10(b)): **searched, defect repeated.** The source (printed p. 7) writes
+  $k[t]/(t^2-a)$ as $k[t]/(t-\sqrt a)\times k[t]/(t+\sqrt a)$, which needs the roots distinct, so it
+  repeats the characteristic-two defect the card keeps as a computation. No erratum located.
+- `P-AGH4110PICOFARITHGENUSONE` (IV.1.10): **transcribed for the regular case.** Vakil 19.9.1 (printed
+  p. 555) is steps `s1` and `s2`; **19.9.2, same page, is step `s5` and the existence half of `s6`** (a
+  degree 1 bundle has a section, its divisor of zeros is a point, and one section up to scalars separates
+  points), not steps `s3` and `s4` as the previous note said; 19.9.3 (printed p. 556) is the map $\Phi$ and
+  its identification with $\Pic^0$. Vakil's hypothesis is a regular curve, so the singular-case argument of
+  `s6` -- the length-one computation $\mco_{X,P}/(a)\cong k$ that puts $P$ in $X_{\reg}$ -- is the card's.
+- `P-AGH422GENUSTWOMODULI` (IV.2.2): **transcribed for (a) and (b).** Vakil 19.5.2 with its proof runs over
+  printed pp. 546--548; 19.5.4, printed pp. 547--548, is the genus $r/2-1$; 19.5.6, printed p. 548, identifies
+  the hyperelliptic cover with the canonical one, and 19.5.7's proof is on printed p. 549; 19.6.2, printed
+  p. 550, assembles the bijection. Part (c) has **no** published proof here: three-transitivity of
+  $\Aut\PP^1$ is Exercise 15.5.B in Vakil, an exercise, so step `s6` is the card's own; (d) and (e) are not
+  in Vakil at all.
+- `P-AGH55NONSINGDEGD` (I.5.5): **searched, defective.** Shichijo's Exercise 5.5 (printed pp. 3--4, the
+  cancellation on p. 4) takes the Borcherds/Stacks equation, eliminates to $(d-1)^2/(d-2)=1$, and solves
+  that **in the integers**; but the identity is one in $k$. For $p=7$, $d=4$ it holds, and $(4:2:1)$ is a
+  singular point of that curve over $\FF_7$: at $(a,b)=(4,2)$ on the chart $x_0=1$ the three reduced
+  equations are $98$, $56$ and $49$, all $0$ modulo $7$. So the source settles no prime, characteristic $3$
+  included, and the card keeps its own equation.
+
+**The text versions, replaced.** The six Shichijo files were read in this pass through
+`pdftotext -layout`, whose formula rendering is broken (fractions and exponents flattened). They have been
+re-extracted with MinerU Flash (`mineru-open-api flash-extract <pdf> --language en`, CLI v0.2.1, downloaded
+from the `opendatalab/MinerU-Ecosystem` release `cli/v0.2.1` because this VM has no node, go, `mineru` or
+`MISTRAL_API_KEY`), giving `tmp/sources/shitijyou-ch{1,2}-section{2,3,5,6,7}.md` beside the PDFs, and the
+`.txt` files were removed. The prose is Japanese and the extraction is still imperfect where the scan is a
+hand-annotated working page; every statement quoted above was read in the Markdown extraction and, where a
+formula decides the point, checked on the page with `pdftotext -layout -f N -l N`, which is exact for
+formulas set in type. Card citations give the author, the original title
+"R.Hartshorne "Algebraic Geometry" 演習問題への解答" with its English rendering, the version 2020/March, the
+URL and the printed page of the exercise as numbered in the source itself, whose folios run 1--12 in
+`shitijyou-ch1-section5.pdf` and match the PDF page numbers.
 
 **Sources that do not hold what they were searched for.** Recorded rather than used, with the line.
 
-- Shichijo, Chapter 1 section 5, Exercise 5.5, printed p. 3: the example $x_0x_1^{d-1}+x_1x_2^{d-1}+x_2x_0^{d-1}$
-  is singular at $(1:1:1)$ whenever $\operatorname{char}k=3$ and $3\mid d$ (the value there is $3$ and every
-  partial derivative is $d$), and the proof's final step cancels to $(d-1)^2/(d-2)=1$, which over
-  characteristic $3$ with $d\equiv0$ reads $1=1$; so it does not close `P-AGH55NONSINGDEGD`.
+- Shichijo, Chapter 1 section 5, Exercise 5.5, printed pp. 3--4 (the cancellation on p. 4): the example
+  $x_0x_1^{d-1}+x_1x_2^{d-1}+x_2x_0^{d-1}$ is singular at $(1:1:1)$ whenever $\operatorname{char}k=3$ and
+  $3\mid d$ (the value there is $3$ and every partial derivative is $d$), and the proof's final step cancels
+  to $(d-1)^2/(d-2)=1$, which it solves **in $\ZZ$**; in $k$ the identity can hold, and for $p=7$, $d=4$ it
+  does, $(4:2:1)$ being a singular point of that curve over $\FF_7$ ($98$, $56$ and $49$ at $(a,b)=(4,2)$ on
+  the chart $x_0=1$). So it does not close `P-AGH55NONSINGDEGD` in any characteristic dividing $d$.
 - Shichijo, section 6, Exercise 6.7, printed p. 6: the converse is asserted from "an element of $PGL(1)$ is
   determined by the images of three points" plus "since $A^1$ is infinite one can choose the two sets not
   carried to each other by any element", which is the claim, not a proof of it; nothing there is a
   non-isomorphism invariant. `P-AGH67PUNCTUREDLINE`'s converse stays unsourced.
-- Shichijo, section 7, Exercise 7.7(b), printed p. 9: the choice of the hyperplane $H$ with every component
-  of $X\cap H$ of intersection multiplicity one is marked by the author with "（？）"; the degree drop of
-  `P-AGH77CONEDEGDROP` therefore rests on the card's blow-up computation, not on this source.
+- Shichijo, section 7, Exercise 7.7, printed pp. 8--9: 7.7(a), the irreducibility of the join, is argued by
+  supposing $X=C\cup D$ and inferring a contradiction from $C'\cup D'=Y$ with $C'=Y\cap C$, which permits
+  $C'=Y$ and so proves nothing; and 7.7(b) marks with the author's own "（？）" its choice of a hyperplane $H$
+  through $P$ with every component of $X\cap H$ of intersection multiplicity one. Since 7.8 on printed p. 9
+  is those two plus 7.6, neither half of `P-AGH78DEGTWOSPAN` is source-backed, and the degree drop of
+  `P-AGH77CONEDEGDROP` rests on the card's blow-up computation, not on this source.
 - Shichijo, Chapter 2 section 3, Exercise 3.10(b), printed p. 7: writes $k[t]/(t^2-a)$ as
   $k[t]/(t-\sqrt a)\times k[t]/(t+\sqrt a)$ by the Chinese remainder theorem, which needs the two roots
   distinct. In characteristic $2$ the ring is $k[t]/((t-r)^2)$. `P-AGH2310FIBRES` keeps the printed
   statement and its characteristic-two computation; the obligation is still an erratum.
 - Vakil 19.6.2 states the bijection between genus 2 curves and six-point sets modulo $PGL_2$ but does not
   carry out the $\Sigma_6$ action of IV.2.2(d) or the correspondence of (e); 15.5.B, the strict
-  three-transitivity of $\operatorname{Aut}\PP^1$, is an exercise there.
+  three-transitivity of $\operatorname{Aut}\PP^1$, is an exercise there, so IV.2.2(c) has no published proof
+  in it.
 - Vakil 19.9 proves IV.1.10 for a regular genus 1 curve; Hartshorne's $X$ is only a locally complete
-  intersection with $p_a=1$, and the singular case remains the card's step s3.
+  intersection with $p_a=1$, and the singular case is the card's step s6 (the length-one computation that
+  puts the point of the divisor in $X_{\reg}$). The 19.9.2 identification in the previous pass's note was
+  wrong and is corrected above.
 - Shichijo's Exercise 3.20 leaves (e) unfinished, and like the book it takes $Y$ irreducible before passing
-  to an infimum, so it does not supply the empty case that `P-AGH2320DIMENSION` records.
+  to an infimum, so it does not supply the empty case that `P-AGH2320DIMENSION` records; that card therefore
+  does not count the source as located.
+- Shichijo's Exercise 5.13, printed pp. 11--12, proves $\Nor(Y)=U$ for $U=\theset{P \st \overline A\subseteq
+  \mco_{P,Y}}$ and then calls $U$ open with denominators that are not well defined, which is the closedness
+  the exercise asks for; `P-AGH513NONNORMALLOCUS` records it as searched, not as a proof.
 
 **Math Stack Exchange was not searched.** This VM's address cannot reach the Stack Exchange API or the
 question pages until about 2026-11-16 03:00Z (the throttle in the §60--§73 entry above), so no query was run

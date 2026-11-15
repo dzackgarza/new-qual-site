@@ -41,25 +41,35 @@ audit:
   date: 2026-11-15
   note: >-
     Printed exercise read: Hartshorne, Algebraic Geometry (1977), I.5.6(b),
-    printed p. 37. Complete published treatment of the node located outside the
-    twelve retained sets: A. Shichijo, Solutions to Hartshorne's Algebraic
-    Geometry, Chapter 1 section 5, Exercise 5.6(b), printed p. 4 of
-    tmp/sources/shitijyou-ch1-section5.pdf, which was not in the earlier search
-    of Vakil's Math 216 classes 49--50 (that source factors the strict transform
-    and leaves nonsingularity as an exercise). The source writes the node as
-    f_2 = (ax-by)(cx-dy) with ad-bc != 0, records the two points
-    P_1 = (0,0)x(b:a), P_2 = (0,0)x(d:c) above the origin, and computes the
-    Jacobian of the strict transform on the chart V_0; on the exceptional divisor
-    the surviving entry is 2bdv-(ad+bc), which at a-bv = c-dv = 0 equals
-    +-(ad-bc) and is therefore nonzero, so the strict transform is nonsingular at
-    both points. The card's step general-node-two-points is the same computation
-    after the linear change of coordinates that puts the tangent cone in the form
-    xy, where the derivative in the chart coordinate is 1; the source's
-    normalization keeps (a,b,c,d) general and its V_0 chart computation is written
-    for the points with b, c != 0, the remaining point being the stated "same
-    calculation" on V_1, which is what the card's two-chart step supplies.
-    Checked against the book: (b) asks only for the two nonsingular points above
-    the node, which is what is proved; no characteristic hypothesis enters.
+    printed p. 37. Published treatment of the node located outside the twelve
+    retained sets: A. Shichijo, R.Hartshorne "Algebraic Geometry" 演習問題への
+    解答 (2020/March), Chapter 1 section 5, Exercise 5.6(b), printed p. 5 (not
+    p. 4, which holds Exercise 5.5 and the start of 5.6), read in the MinerU
+    extraction tmp/sources/shitijyou-ch1-section5.md. The source writes the node
+    as f_2 = (ax-by)(cx-dy) with ad-bc != 0, gives the strict transforms on both
+    charts V_0: y = vx and V_1: x = uy, records the two points
+    P_1 = (0,0)x(b:a), P_2 = (0,0)x(d:c) of the exceptional divisor, and computes
+    the Jacobian of Y-tilde cap V_0 at a point of E as a 2x3 matrix whose 2x2
+    minor is nonvanishing because the entry 2bdv-(ad+bc) takes the values ad-bc
+    and bc-ad at v = a/b and v = c/d. Two limits of that computation: the V_0
+    chart displays P_1 and P_2 only when b, d != 0, since their second
+    homogeneous coordinate is v = a/b resp. v = c/d, and the source omits the
+    V_1 chart computation as similar -- so one of the two points is unchecked
+    when b = 0 or d = 0. The card's step general-node-two-points transcribes the
+    source's V_0 computation and supplies V_1, where the corresponding entry is
+    2acu-(ad+bc). Checked against the book: (b) asks only for the two nonsingular
+    points above the node, which is what is proved; no characteristic hypothesis
+    enters, the two tangent directions being distinct by ad-bc != 0.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Step general-node-two-points is now the transcription of Shichijo's Exercise
+    5.6(b), printed p. 5, in his general form (a,b,c,d) instead of the card's
+    normalized form xy + f_3 + ..., with the citation on the step; the V_1 chart,
+    which the source omits and which is needed when b = 0 or d = 0, is supplied
+    there and marked as the card's. Steps for parts (a), (c) and (d) keep the
+    card's chart computations, which agree with the same page.
 ---
 
 ::: {.problem}
@@ -162,29 +172,56 @@ In characteristics $7$ and $13$, the two additional singular points found on tha
 More generally, blowing up any node produces two distinct nonsingular points above it.
 
 ::: pf-proof
-Translate the node to the origin.
-Its multiplicity is two and its tangent cone is the product of two distinct linear forms.
-After an invertible linear change of coordinates, write
-$$
-f(x,y)=xy+f_3(x,y)+f_4(x,y)+\cdots,
-$$
-where $f_j$ is homogeneous of degree $j$.
+This is A. Shichijo's argument, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.6(b), printed p. 5, transcribed, with the second chart supplied at the end.
 
-On the chart $y=xt$,
+Translate the node to the origin $O=(0,0)$.
+A node is a double point whose lowest homogeneous part is a product of two distinct linear forms, so
 $$
-f(x,xt)
-=x^2\left(t+x f_3(1,t)+x^2f_4(1,t)+\cdots\right).
+f_2=(ax-by)(cx-dy),\qquad \det\begin{pmatrix}a&b\\ c&d\end{pmatrix}=ad-bc\ne0,
 $$
-Thus the strict transform has equation
+the nonvanishing of the determinant being exactly the statement that the two lines are distinct; write
 $$
-t+x f_3(1,t)+x^2f_4(1,t)+\cdots=0.
+f=(ax-by)(cx-dy)+\sum_{i+j>2}c_{ij}x^iy^j .
 $$
-On $x=0$ it meets the exceptional divisor only at $t=0$, and the derivative with respect to $t$ equals $1$ there.
-Hence that point is nonsingular.
 
-On the chart $x=ys$, the identical argument gives one nonsingular exceptional point $s=0$.
-These are the two different points of $E\cong\PP^1$ determined by the two distinct tangent lines.
-There are no other points over the original node.
+On the chart $V_0=\theset{y=vx}$ of the blowup of $\AA^2$ at $O$ the strict transform is
+$$
+\tilde Y\cap V_0=Z_a\Big((a-bv)(c-dv)+\sum_{i+j>2}c_{ij}v^jx^{i+j-2},\ y-vx\Big),
+$$
+and on the chart $V_1=\theset{x=uy}$ it is
+$$
+\tilde Y\cap V_1=Z_a\Big((au-b)(cu-d)+\sum_{i+j>2}c_{ij}u^iy^{i+j-2},\ uy-x\Big).
+$$
+
+On $V_0$, with coordinates $(x,y,v)$, the exceptional divisor is $E=\theset{x=0}$ and the two defining equations have Jacobian
+$$
+\begin{pmatrix}
+\sum_{i+j>2}(i+j-2)c_{ij}v^jx^{i+j-3} & 0 & 2bdv-(ad+bc)\\
+-v & 1 & -x
+\end{pmatrix},
+$$
+whose second row is nonzero on $E$ and whose first row contributes the entry $2bdv-(ad+bc)$ there.
+The strict transform meets $E$ where $(a-bv)(c-dv)=0$, that is at the points
+$$
+P_1=(0,0)\times(b:a),\qquad P_2=(0,0)\times(d:c)
+$$
+of $E\cong\PP^1$, and at those points the entry takes the values
+$$
+2bd\cdot\tfrac ab-(ad+bc)=ad-bc\ne0,\qquad
+2bd\cdot\tfrac cd-(ad+bc)=-(ad-bc)\ne0 .
+$$
+So the Jacobian has rank two at both points, and $\tilde Y\cap V_0$ is nonsingular at $P_1$ and $P_2$.
+
+The source remarks that the computation on $V_1$ is similar and omits it; that chart is needed, because $P_1$ and $P_2$ have $v=a/b$ and $v=c/d$ and so are not points of $V_0$ when $b=0$ or $d=0$. The computation is the card's, and it is the same one: on $V_1$, with coordinates $(y,u)$, the exceptional divisor is $y=0$, the strict transform meets it where $(au-b)(cu-d)=0$, and the Jacobian
+$$
+\begin{pmatrix}
+0 & \sum_{i+j>2}(i+j-2)c_{ij}u^iy^{i+j-3} & 2acu-(ad+bc)\\
+-1 & u & y
+\end{pmatrix}
+$$
+has rank two there because $2acu-(ad+bc)$ takes the values $-(ad-bc)\ne0$ at $u=b/a$ and $ad-bc\ne0$ at $u=d/c$.
+
+These are the two different points of $E\cong\PP^1$ determined by the two distinct tangent lines, and there are no other points over $P$: away from $E$ the blowup is an isomorphism.
 Therefore
 $$
 \boxed{\varphi^{-1}(P)=\{P_1,P_2\}}
@@ -301,9 +338,11 @@ The chart computation in step [](#cusp-quartic-blowup-nonsingular){.pf-ref} prov
 ::: {.remark title="Published solution"}
 The closest published argument for (b) is Ravi Vakil, *Foundations of Algebraic Geometry* (Math 216, Stanford; classes 49 and 50 notes), Section 5.2 "The proper transform of a nodal curve", printed p. 9: for $y^2=x^3+x^2$ in the patch $[X:Y]=[s:1]$, where $x=ys$, he gets $y^2-s^2y^2-s^3y^3=0$, "This factors: we get the exceptional divisor $y$ with multiplicity two, and the curve $1-s^2-y^3=0$. Easy exercise: check that the proper transform is nonsingular. Also, notice where the proper transform meets the exceptional divisor: at two points, $s=\pm1$." Two things are missing there and are supplied by step [](#general-node-two-points){.pf-ref}: the nonsingularity, which he leaves as an exercise and which is $\partial/\partial s=-2s\neq0$ at $s=\pm1$ together with the isomorphism away from the exceptional divisor, and the printed factor, which the substitution $x=ys$ gives as $1-s^2-ys^3$ rather than $1-s^2-y^3$. He also treats the one model $y^2=x^3+x^2$ rather than an arbitrary node.
 
+A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.6(b), printed p. 5, proves part (b) for a general node: he keeps the two tangent directions as $(ax-by)(cx-dy)$ with $ad-bc\ne0$, writes both strict transforms, finds the two points $P_1=(0,0)\times(b:a)$ and $P_2=(0,0)\times(d:c)$ of the exceptional divisor, and shows that the Jacobian has rank two at each. Step [](#general-node-two-points){.pf-ref} transcribes it, adds the $V_1$ chart, which he omits as "similar" and which carries one of the two points when $b=0$ or $d=0$, and records that his $V_0$ chart sees both points only when $b,d\ne0$.
+
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 5.6; his Chapter 1.5 answers stop at 5.5.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.6.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.6, PDF p. 46: (a) the cusp $y^2-x^3+x^4+y^4$ blown up as $ys-xt$, with the strict transforms $1-yt+y^2t^2+y^3$ on $t=1$ and $x^2(t^2-x^2+t^2x^2)$ on $s=1$, both checked by the Jacobian criterion; (c) the tacnode $x^2=x^4+y^4$ with strict transform $t^2-y^2-y^2t^4$ on $s=1$, "the lowest degree terms $t^2-y^2$ of the strict transform factor linearly, so we get a node"; (d) $y^3=x^5$ giving $x^3(x^2-u^3)=0$ after one blowup, "which gives a cusp", and one more blowup resolving. His (b) is a paragraph about the blow-up surface and tangent directions rather than a proof of the two-point statement, and it does not show that the two points above the node are nonsingular.
-The chart computations of the card agree with Egbert's on (a), (c) and (d), including the characteristic-7 and 13 caveat for the cusp quartic. Its (b) is proved by the general node calculation $f=xy+f_3+\cdots$ on both charts, where each of the two exceptional points is nonsingular because the derivative in the chart coordinate is $1$; that part has no complete published solution in the retained sets, and the partial one above is recorded on the card and in COMPLAINTS.md.
-Agree with Egbert on (a), (c), (d); (b) is supplied here.
+
+The chart computations for (a), (c) and (d) agree with Egbert's, including the characteristic-7 and 13 caveat for the cusp quartic. Part (b) is Shichijo's, transcribed in step [](#general-node-two-points){.pf-ref}.
 :::

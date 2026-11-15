@@ -35,6 +35,29 @@ audit:
     is singular exactly when 3=0. Not checked: the geometric-irreducibility
     step beyond the product rule and I.7.2, and no other field than a
     general one.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    A. Shichijo, R.Hartshorne "Algebraic Geometry" 演習問題への解答
+    (2020/March), Chapter 1 section 5, Exercise 5.5, printed pp. 3--4, read in
+    the MinerU extraction tmp/sources/shitijyou-ch1-section5.md, is recorded as
+    a source searched and not as a proof. It takes the same equation as
+    Borcherds and the Stacks Project, F = x_0x_1^{d-1}+x_1x_2^{d-1}+x_2x_0^{d-1},
+    reduces nonvanishing of the Jacobian to the three equations
+    a^{d-1}+ab^{d-1}+b = 0, (d-1)a^{d-2}+b^{d-1} = 0, (d-1)ab^{d-2}+1 = 0 on the
+    chart x_0 = 1, and eliminates a, b to reach (d-1)^2/(d-2) = 1, which it then
+    solves in the integers: d^2-3d+3 = 0 has no integral root, so it concludes
+    that the equation is nonsingular. That last step is the defect. The equation
+    (d-1)^2/(d-2) = 1 is an identity in k, not in Z, and it holds in k whenever
+    its two sides agree there. For p = 7, d = 4 it reads 9/2 = 1, which in F_7 is
+    2/2 = 1, and the point (x_0:x_1:x_2) = (4:2:1) is on the curve and singular
+    over F_7: on the chart x_0 = 1 it is (a,b) = (4,2), and
+    a^3+ab^3+b = 64+32+2 = 98 = 0, 3a^2+b^3 = 48+8 = 56 = 0 and
+    3ab^2+1 = 48+1 = 49 = 0 modulo 7. So the source does not settle p = 3, and its
+    elimination does not settle any prime either; the card's own equation
+    x^{d-1}y+y^{d-1}z+z^d stands, with the Stacks tag 0BYA citation for
+    p nmid d and p | d, p != 3. The cancellation is on printed p. 4.
 ---
 
 ::: {.problem}
@@ -146,6 +169,8 @@ Step [](#geometrically-irreducible){.pf-ref} verifies that the resulting smooth 
 :::
 
 ::: {.remark title="Published solution"}
+A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.5, printed pp. 3--4, takes the equation $x_0x_1^{d-1}+x_1x_2^{d-1}+x_2x_0^{d-1}$ and eliminates the two chart coordinates to reach $(d-1)^2/(d-2)=1$, which it then solves over $\ZZ$. That last step is where its argument fails: the identity is one in $k$, and in characteristic $7$ with $d=4$ it holds, the point $(4:2:1)$ being a singular point of that curve over $\FF_7$, as the three reduced equations $a^3+ab^3+b=98$, $3a^2+b^3=56$ and $3ab^2+1=49$ at $(a,b)=(4,2)$ show. So the source proves nothing for $p\mid d$, characteristic $3$ included.
+
 The Stacks Project, *Algebraic Curves*, Section 53.9 (Plane curves), tag 0BYA, is the only published treatment found that writes out the case $p \mid d$ with its derivative check. It gives $F=T_0^d+T_1^d+T_2^d$ when $p\nmid d$, and $F=T_0^{d-1}T_1+T_1^{d-1}T_2+T_2^{d-1}T_0$ when $p\mid d$ and $p\neq3$, with the two partial derivatives $1-x^{d-2}y$ and $x^{d-1}-y^{d-2}$ on the affine piece $D_+(T_2)$, and it states that their common zero set together with the equation is empty; it then writes "We leave it to the reader to make examples in characteristic $3$".
 
 That last clause is correct and is where the published argument stops: on that affine piece $x=y^{d-1}$ makes both partials vanish for every $d-1\not\equiv0$, and the equation there reads

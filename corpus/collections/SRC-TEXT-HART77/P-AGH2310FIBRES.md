@@ -32,9 +32,10 @@ audit:
     Printed exercise read: Hartshorne, Algebraic Geometry (1977), II.3.10(b),
     printed p. 92. A further published solution was located outside the twelve
     retained sets and it repeats the defect rather than repairing it:
-    A. Shichijo, Solutions to Hartshorne's Algebraic Geometry, Chapter 2
-    section 3, Exercise 3.10(b), printed p. 7 of
-    tmp/sources/shitijyou-ch2-section3.pdf, computes
+    A. Shichijo, R.Hartshorne "Algebraic Geometry" 演習問題への解答
+    (2020/March), <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>,
+    Chapter 2 section 3, Exercise 3.10(b), printed p. 7, read in the MinerU
+    extraction tmp/sources/shitijyou-ch2-section3.md, computes
     k[s,t]/(s-t^2) tensor_{k[s]} k[s,u]/(s-a,u) = k[t]/(t^2-a) and then writes
     that ring as k[t]/(t-sqrt a) x k[t]/(t+sqrt a) by the Chinese remainder
     theorem. That factorization needs the two roots distinct, i.e. char k != 2;

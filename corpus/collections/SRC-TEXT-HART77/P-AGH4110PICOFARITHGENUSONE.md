@@ -34,28 +34,30 @@ audit:
   date: 2026-11-15
   note: >-
     Printed exercise read: Hartshorne, Algebraic Geometry (1977), IV.1.10,
-    printed p. 299 (PDF p. 314 of the checked-in extraction). Published
-    treatment located outside the twelve retained sets:
-    R. Vakil, The Rising Sea: Foundations of Algebraic Geometry, 21 October 2025
-    version, Section 19.9, printed pp. 555--556 of
-    tmp/sources/vakil-rising-sea-2025-10-21.pdf. It proves the bijection in the
-    regular case and by the route the exercise asks for: (19.9.1) for a genus 1
-    curve deg omega_C = 0 and h^0(C, omega_C) = 1, so omega_C is the structure
-    sheaf, and for deg L > 0 Riemann--Roch with Serre duality gives
+    printed p. 299 (PDF p. 314 of the checked-in extraction). Published treatment
+    located outside the twelve retained sets: R. Vakil, The Rising Sea:
+    Foundations of Algebraic Geometry, 21 October 2025 version, Section 19.9,
+    printed pp. 555--556, read in tmp/sources/vakil-rising-sea-2025-10-21.md.
+    Corrected step mapping, after re-reading the three numbered paragraphs:
+    (19.9.1), printed p. 555, gives deg omega_C = 0 and h^0(C, omega_C) = 1 so
+    omega_C = O_C, and for deg L > 0 Riemann--Roch with Serre duality gives
     h^0(C, L) = deg L, which is the card's step s1 together with the vanishing of
-    step s2; (19.9.2) every degree 1 invertible sheaf has a section, so it is
-    O_C(q) for q the divisor of zeros, and distinct points give distinct sheaves
-    because a degree 1 sheaf has one section up to scalars, which is the card's
-    steps s3 and s4 for E supported at a regular point; (19.9.3) twisting by
-    O(-p) gives the bijection between Pic^0 and the degree 1 points, with the two
-    composites computed, which is the card's steps s5 and s6. What the source does
-    not cover is the singularity: Vakil works with a curve, i.e. a regular
-    projective integral scheme of dimension 1, while Hartshorne's X is only a
-    locally complete intersection with p_a = 1, and the exercise fixes P_0 in
-    X_reg and asks for a bijection onto X_reg. The card's step s3 settles the
-    singular case with the criterion that O_{X,P}/(a) = k, i.e. that a principal
-    maximal ideal makes P regular; that step is the card's own and the exercise's
-    printed hypothesis on X is what makes it necessary.
+    step s2; (19.9.2), same page, says that each degree 1 point q gives O_C(q),
+    that distinct points give distinct bundles because a degree 1 bundle has one
+    section up to scalars, and that every degree 1 bundle is O_C(q) for q the
+    divisor of zeros of a section -- that is the card's step s5 (injectivity) and
+    the existence half of step s6, not steps s3 and s4 as the earlier version of
+    this note said; (19.9.3), printed p. 556, twists the degree 1 bundles by
+    O(-p) to get the bijection with Pic^0 and defines the group law, which is the
+    card's map Phi and its identification with Pic^0. Vakil's standing hypothesis
+    is a curve, i.e. a regular projective geometrically integral scheme of
+    dimension 1, while Hartshorne's X is only an integral projective
+    locally complete intersection of dimension 1 with p_a = 1 and may be
+    singular, and the exercise asks for a bijection onto X_reg. The singular case
+    is the card's step s6, whose length-one argument shows O_{X,P}/(a) = k, hence
+    a principal maximal ideal and P regular; Vakil supplies nothing for it. The
+    earlier version of this note recorded the step mapping wrongly in three places
+    and this substitutes for it.
 ---
 
 ::: {.problem}
@@ -201,6 +203,8 @@ The map $\Phi$ is injective.
 
 ::: pf-proof
 
+In the regular case this is R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §19.9.2], printed p. 555: distinct degree 1 points determine distinct degree 1 line bundles, "as a degree 1 line bundle has only one section, up to scalar multiples". The card's version of it, which needs no regularity hypothesis beyond $P,Q\in X_{\reg}$, runs as follows.
+
 Suppose
 $$
 \mcl(P-P_0)\cong\mcl(Q-P_0)
@@ -227,6 +231,8 @@ only the divisor $P$. Since $Q\in\abs{P}$, we obtain $Q=P$.
 The map $\Phi$ is surjective.
 
 ::: pf-proof
+
+R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §19.9.2], printed p. 555, disposes of the regular case: a degree 1 invertible sheaf has a section, and the divisor of zeros of one writes it as $\mco_C(q)$ for a degree 1 point $q$. Hartshorne's $X$ may be singular, so the divisor of zeros has to be shown to be a point of $X_{\reg}$; that is the length-one argument from "Taking Euler characteristics" below, and it is the card's own.
 
 Let $[\mcl]\in\Pic^0X$. By Exercise IV.1.9(c), choose a divisor $D$
 supported in $X_{\reg}$ such that
@@ -336,5 +342,7 @@ Step [](#s7){.pf-ref} is the required one-to-one correspondence with $\Pic^0X$.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.10, printed pp. 209–210 (entry 4.1.14), takes $\deg K_X=p_a-1$ from IV.1.9(d), so a divisor of degree zero has $K_X-D-P_0$ of degree $-1$ and hence no sections, and concludes that $\dim|D+P_0|=\deg D=0$; the resulting assignment of degree-one divisors to points of $\Pic^0 X$ is the bijection with which the card identifies $\Pic^0 X$ for $p_a=1$.
+R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §19.9], printed pp. 555--556, gives the bijection $\Pic^0 C\leftrightarrow$ degree 1 points for a regular curve $C$ of genus 1: (19.9.1) $\omega_C\cong\mco_C$ and $h^0(C,\mcl)=\deg\mcl$ for $\deg\mcl>0$; (19.9.2) every degree 1 bundle is the divisor of a point, and distinct points give distinct bundles because a degree 1 bundle has one section up to scalars; (19.9.3) twisting by $\mco(-p)$ gives the bijection. Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} transcribe that and add what the exercise's hypothesis on $X$ forces: here $X$ is only a locally complete intersection with $p_a=1$, so the divisor of zeros of a degree 1 section is shown to lie in $X_{\reg}$ by the length-one computation $\mco_{X,P}/(a)\cong k$, which makes the maximal ideal principal and $P$ regular. That step is the card's, and Vakil's regular curves do not require it.
+
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.10, printed pp. 209--210 (entry 4.1.14), takes $\deg K_X=p_a-1$ from IV.1.9(d), so a divisor of degree zero has $K_X-D-P_0$ of degree $-1$ and hence no sections, and concludes that $\dim|D+P_0|=\deg D=0$; the resulting assignment of degree-one divisors to points of $\Pic^0 X$ is the bijection with which the card identifies $\Pic^0 X$ for $p_a=1$.
 :::

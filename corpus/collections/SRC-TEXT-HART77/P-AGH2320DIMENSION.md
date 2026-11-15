@@ -26,22 +26,24 @@ audit:
   date: 2026-11-15
   note: >-
     Printed exercise read: Hartshorne, Algebraic Geometry (1977), II.3.20,
-    printed pp. 94--95. Complete published solution located outside the twelve
-    retained sets: A. Shichijo, Solutions to Hartshorne's Algebraic Geometry,
-    Chapter 2 section 3, Exercise 3.20, printed pp. 17--18 of
-    tmp/sources/shitijyou-ch2-section3.pdf. It proves (a) through (d) from
-    Hartshorne I.1.8(a),(b) and I.3.6 alone: dim X = dim O_{X,P}
+    printed pp. 94--95. A. Shichijo, R.Hartshorne "Algebraic Geometry" 演習問題
+    への解答 (2020/March), Chapter 2 section 3, Exercise 3.20, printed pp. 17--18,
+    read in the MinerU extraction tmp/sources/shitijyou-ch2-section3.md, proves
+    (a) through (d) from Hartshorne I.1.8(a),(b) and I.3.6: dim X = dim O_{X,P}
     at a closed point, dim X = trdeg K(X)/k, and for a closed subset Y the
     identity codim(Y,X) = inf{dim O_{X,P} : P in Y} by reading a maximal chain of
-    primes in A and localizing at the generic point of each irreducible Z
-    contained in Y, then dim Y + codim(Y,X) = dim X from I.1.8(b). Its (e) is left
-    unfinished in the file (the sentence ends at "thus by Lemma I");
-    (f) is proved. Checked against the book: the source states Y irreducible and
-    then passes to an arbitrary closed Y through the infimum over the irreducible
-    Z contained in Y, and at Y empty the infimum is over an empty family, which is
-    exactly the gap this card records; the source does not treat the empty case
-    either, so it confirms the card's reading instead of supplying the missing
-    convention.
+    primes of an affine chart and localizing at the generic point of each
+    irreducible Z contained in Y, then dim Y + codim(Y,X) = dim X from I.1.8(b).
+    Its (e) is left unfinished (the sentence ends at "thus by Lemma I"); (f) is
+    proved. It is not counted here as a located solution of the card's statement:
+    its (b), (c), (d) are proved first for Y irreducible closed ("Y ::
+    irreducible closed subset と仮定し") and then extended to a general closed Y
+    by the infimum over the irreducible Z contained in Y, so at Y empty the
+    infimum is over an empty family and nothing is said about it -- the case this
+    card's remark is about. The source therefore confirms the card's reading of
+    the printed exercise and does not supply the missing convention; the card's
+    own proof, which treats the nonempty case and records the empty one, stands.
+    The source is cited in the body for the nonempty case only.
 ---
 
 ::: {.problem}
@@ -72,7 +74,7 @@ $$
 :::
 
 ::: {.remark}
-Parts (c) and (d) are stated for an arbitrary closed subset $Y$, as in the book.  For $Y=\emptyset$ the right-hand side of (c) is an infimum over the empty family, and with the usual conventions $\codim(\emptyset,X)=+\infty$ and $\krulldim\emptyset=-1$ the identity of (d) fails, so the two assertions are meaningful only for nonempty $Y$; the proof below treats that case.
+Parts (c) and (d) are stated for an arbitrary closed subset $Y$, as in the book.  For $Y=\emptyset$ the right-hand side of (c) is an infimum over the empty family, and with the usual conventions $\codim(\emptyset,X)=+\infty$ and $\krulldim\emptyset=-1$ the identity of (d) fails, so the two assertions are meaningful only for nonempty $Y$; the proof below treats that case. A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (2020/March), Chapter 2 section 3, Exercise 3.20, printed pp. 17--18, proves (a)--(d) for irreducible $Y$ and then passes to an arbitrary closed $Y$ by the same infimum, so it does not treat $Y=\emptyset$ either.
 :::
 
 ::: {.solution}
@@ -258,6 +260,8 @@ $$
 $$
 
 ::: pf-proof
+For nonempty $Y$ this is A. Shichijo's argument, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 2 section 3, Exercise 3.20(c), printed p. 18: he proves it for $Y$ irreducible closed by reading a maximal chain of primes in an affine chart and localizing at the generic point, which gives $\dim Z=\dim\mathcal O_{X,\zeta_Z}$, and then takes the infimum over the irreducible $Z\subseteq Y$; that last step is over an empty family when $Y=\emptyset$, which is why the hypothesis $Y\ne\emptyset$ is kept here.
+
 By definition,
 $$
 \codim(Y,X)

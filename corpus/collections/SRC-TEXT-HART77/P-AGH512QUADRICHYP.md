@@ -28,19 +28,33 @@ audit:
   note: >-
     Printed exercise read: Hartshorne, Algebraic Geometry (1977), I.5.12,
     printed p. 38 (PDF p. 53 of tmp/sources/hartshorne-1977-algebraic-geometry.md).
-    Complete published solution located outside the twelve retained sets:
-    A. Shichijo, Solutions to Hartshorne's Algebraic Geometry, Chapter 1
-    section 5, Exercise 5.12, printed pp. 10--11 of
-    tmp/sources/shitijyou-ch1-section5.pdf (section5_ex.pdf in the MathNotes
-    repository, dated 2020/March). Its (a), printed p. 10, is the diagonalization
-    of the symmetric form and the rescaling by square roots, which is this card's
-    step s1; its (b) is the card's step s2 with the same two implications
-    (r < 2 gives x_0^2 or (x_0+ix_1)(x_0-ix_1); reducibility gives a product of
-    two linear forms, hence rank at most two); (c) and (d), printed p. 11, read
-    the singular locus off the partials 2x_i and write Q as the cone over the
-    quadric in the first r+1 variables. Checked against the book: the hypothesis
-    char k != 2 is used exactly where the source uses it, in the polarization and
-    in the two distinct factors, and the iff of (b) is proved, not one direction.
+    A. Shichijo, R.Hartshorne "Algebraic Geometry" 演習問題への解答 (2020/March),
+    Chapter 1 section 5, Exercise 5.12, printed pp. 10--11, read in the MinerU
+    extraction tmp/sources/shitijyou-ch1-section5.md. Its (a), printed p. 10, is
+    the diagonalization of the symmetric form and the rescaling x_i -> a_i^{-1/2}
+    x_i, which is this card's step s1. Its (b), same page, takes the route
+    r < 2 gives x_0^2 or x_0^2+x_1^2, visibly reducible, and reducible with
+    deg f = 2 gives two linear factors, a linear change to y_0 y_1 and then
+    z_0^2+z_1^2 through y_0 = z_0+iz_1, y_1 = z_0-iz_1, so r < 2; it is not the
+    card's rank count, and the earlier version of this note was wrong to say so.
+    That proof is transcribed in step s2. Its (c) and (d), printed p. 11, compute
+    Sing Q from the partials 2x_i and describe Q as the cone with axis Z over the
+    quadric in the first r+1 variables. Checked against the book: char k != 2 is
+    used where the source uses it, in the polarization of (a) and in the two
+    distinct factors z_0 +- i z_1; the source asserts the irreducibility of
+    x_0^2+...+x_r^2 for r >= 2 at the opening of (c) ("r >= 2 なので f は
+    irreducible") rather than at the end of (b), where it proves only that a
+    reducible form has r < 2.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Step s2 is now the transcription of Shichijo's Exercise 5.12(b), printed
+    p. 10, with the citation on the step; the card's own route there (the rank of
+    the symmetric matrix of a product of two linear forms) is replaced by the
+    source's, and the one inference the source leaves implicit, that r+1 is the
+    rank, is supplied from step s1. Steps s1, s3 and s4 keep the card's proofs,
+    which agree with the source on pp. 10--11 and are not transcriptions of it.
 ---
 
 ::: {.problem}
@@ -61,6 +75,8 @@ If $Y$ is a closed subset of $\PP^r$, and if $Z$ is a linear subspace of dimensi
 :::
 
 ::: {.solution}
+Part (b) below is transcribed from A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, printed p. 10, where the citation is placed; parts (a), (c) and (d) are this card's own proofs, which the same pages reach by the same means.
+
 Let $V=k^{n+1}$.
 Because $\operatorname{char}k\ne2$, the quadratic polynomial $f$ has an associated symmetric bilinear form
 $$
@@ -120,30 +136,23 @@ $$
 
 ::: pf-proof
 
-If $r=0$, then $f=x_0^2$ is reducible.
-If $r=1$, algebraic closedness gives an element $i\in k$ with $i^2=-1$, and
-$$
-x_0^2+x_1^2=(x_0+i x_1)(x_0-i x_1).
-$$
-The two factors are distinct because $\operatorname{char}k\ne2$.
+This is A. Shichijo's argument, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.12(b), printed p. 10, transcribed.
 
-Conversely, suppose $r\ge2$ and $f$ were reducible.
-As a homogeneous quadratic, it would factor as a product of two nonzero linear forms
+The linear change of variables of step [](#s1){.pf-ref} is invertible, so it does not change irreducibility, and it suffices to test the normal form $x_0^2+\cdots+x_r^2$.
+
+If $r<2$, then $f$ is $x_0^2$ or $x_0^2+x_1^2$, and both are reducible: $x_0^2=x_0\cdot x_0$, and
 $$
-f=\ell m.
+x_0^2+x_1^2=(x_0+ix_1)(x_0-ix_1)
 $$
-Write their coefficient column vectors as $a,b\in k^{n+1}$.
-The symmetric matrix of the quadratic form $\ell m$ is
+for an $i\in k$ with $i^2=-1$, the two factors being distinct because $\operatorname{char}k\ne2$.
+
+Conversely suppose that $f$ is not irreducible. Since $\deg f=2$, it is a product of two linear homogeneous forms (the source refers to the footnote of its Exercise 5.9 for the factorization of a homogeneous polynomial into homogeneous factors). A linear change of variables, again invertible, therefore brings $f$ into the form $y_0y_1$, and the further change $y_0=z_0+iz_1$, $y_1=z_0-iz_1$, whose matrix has determinant $2i\ne0$, brings it into the form
 $$
-\frac12(ab^t+ba^t),
+z_0^2+z_1^2=x_0^2+x_1^2,
 $$
-whose image is contained in the span of $a$ and $b$ and therefore has rank at most two.
-But the matrix of
-$$
-x_0^2+\cdots+x_r^2
-$$
-has rank $r+1\ge3$.
-This contradiction proves irreducibility for $r\ge2$, establishing part (b).
+that is, into the normal form of step [](#s1){.pf-ref} with $r=1$. The source concludes $r<2$ at this point; the inference uses that $r+1$ is the rank of the symmetric matrix of $f$, which a linear change of variables preserves, and step [](#s1){.pf-ref} supplies it.
+
+The two implications together prove part (b).
 
 :::
 
@@ -275,10 +284,9 @@ Thus the stated range implicitly excludes $f=0$; the card makes that hypothesis 
 :::
 
 ::: {.remark title="Published solution"}
-Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 5.12.
-William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.12.
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.12, PDF pp. 49--50: (a) write the conic as $x^tMx$ with $M$ symmetric and diagonalize $M$ by a linear change; (b) "if $r=1$ it is clear since sum of squares; on the other hand, for larger $r$, any factors must be linear, but then multiplying the two factors together will create terms of higher than degree $2$"; (c) the singular locus is where the partials vanish, so it has the dimension $n-r-1$ of $k[x_0,\ldots,x_n]/(x_0,\ldots,x_r)$ minus one; (d) the cone description, worked out in $\PP^2$ and then in general.
-Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.5.12, PDF p. 22: (a) diagonalize the symmetric matrix, with $r$ the rank; (b) if $f$ factors then $x_{r+1},\ldots,x_n$ do not appear, so it suffices to test irreducibility in $k[x_0,\ldots,x_r]$, and there $f$ "defines a nonsingular, hence irreducible, hypersurface", which is the assertion being proved; (c) and (d) as above.
-Egbert's (b) is not a valid argument: a product of two linear forms has degree exactly two and produces no terms of higher degree, and irreducibility for $r\ge2$ needs the rank count. The proof above uses the rank of the symmetric matrix of $\ell m$, which is at most two, against the rank $r+1\ge3$ of the sum of $r+1$ squares. Its (a) also records that $f\ne0$ is needed for the displayed range $0\le r\le n$, which the source leaves implicit.
-Agree with Egbert on (a), (c) and (d); (b) is proved here.
+Part (b) is transcribed in step [](#s2){.pf-ref} from A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.12, printed p. 10, which proves (a) and (b) there and (c) and (d) on printed p. 11. Parts (a), (c) and (d) here are the card's own proofs.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.12, PDF pp. 49--50, argues (a), (c) and (d) as here, and gives (b) as "for larger $r$, any factors must be linear, but then multiplying the two factors together will create terms of higher than degree $2$", which is false of a product of two linear forms. Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.5.12, PDF p. 22, argue (b) by saying that in $k[x_0,\ldots,x_r]$ the form $x_0^2+\cdots+x_r^2$ "defines a nonsingular, hence irreducible, hypersurface", which is the assertion being proved.
+
+The one inference Shichijo's (b) leaves implicit is that $r+1$ is the rank of the symmetric matrix, which is what makes the normal form $z_0^2+z_1^2$ give $r=1<2$; step [](#s1){.pf-ref} proves it, and the source asserts the irreducibility of $x_0^2+\cdots+x_r^2$ for $r\ge2$ at the opening of its part (c).
 :::
