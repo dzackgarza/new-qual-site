@@ -35,6 +35,18 @@ audit:
     p. 369) and step 1 of the proof of Theorem 72.1 (printed pp. 439--440), and answers the exercise: for n > 2
     the inclusion A -> X induces an isomorphism on fundamental groups, and it is n > 2 that makes U cap V and V
     simply connected. Nothing changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    A reader of this card reported that step 3 applied Corollary 70.4 (printed p. 432) at the point a, which
+    lies in A and hence outside V = X - A, while the corollary is stated for a base point in U cap V. Steps 3
+    and 4 are now the book's own Step 3 of the proof of Theorem 72.1 (printed p. 440): the corollary is applied
+    at a point b of U cap V, whose existence is recorded; the kernel of pi_1(U,b) -> pi_1(X,b) is the least
+    normal subgroup containing the trivial group pi_1(U cap V,b); a path delta in U from b to a, which exists
+    because U is path connected and contains A, gives isomorphisms delta-hat at b and at a which commute with
+    the maps induced by inclusion, so pi_1(U,a) -> pi_1(X,a) is an isomorphism as the conjugate of one; and
+    step 1 identifies pi_1(A,a) with pi_1(U,a). Steps 1 and 2 were re-read and kept.
 ---
 
 ::: {.exercise}
@@ -77,11 +89,11 @@ By the book's step 2 (printed p. 440), $\pi$ restricts to a homeomorphism of $\o
 
 ::: pf-step
 
-The inclusion $U\hookrightarrow X$ induces an epimorphism $\pi_1(U,a)\to\pi_1(X,a)$ with kernel the least normal subgroup containing the image of $\pi_1(U\cap V,a)$.
+For $b$ a point of $U\cap V$, the inclusion $U\hookrightarrow X$ induces an epimorphism $\pi_1(U,b)\to\pi_1(X,b)$ with kernel the least normal subgroup containing the image of $\pi_1(U\cap V,b)$.
 
 ::: pf-proof
 
-$U$ and $V$ are open in $X$ and $X=U\cup V$; $U$ is path connected because $A$ is a deformation retract of it, $V$ is contractible, and $U\cap V$ is path connected, being homeomorphic to $\operatorname{Int}B^n-\mathbf{0}$ for $n\ge2$. Corollary 70.4 (printed p. 432) applies, $V$ being simply connected.
+$U$ and $V$ are open in $X$ and $X=U\cup V$; $U$ is path connected because $A$ is a deformation retract of it, $V$ is contractible, and $U\cap V$ is path connected, being homeomorphic to $\operatorname{Int}B^n-\mathbf{0}$ for $n\ge2$; in particular $U\cap V$ is not empty, and its points are the base points at which Corollary 70.4 can be applied. Corollary 70.4 (printed p. 432) applies at a point $b\in U\cap V$, $V$ being simply connected.
 
 :::
 
@@ -93,7 +105,7 @@ $\pi_1(A,a)\to\pi_1(X,a)$ is an isomorphism.
 
 ::: pf-proof
 
-By step 3 the kernel of $\pi_1(U,a)\to\pi_1(X,a)$ is the least normal subgroup containing the image of the trivial group $\pi_1(U\cap V,a)$, hence is trivial; so $\pi_1(U,a)\to\pi_1(X,a)$ is an isomorphism. By step 1 the inclusion $A\hookrightarrow U$ induces an isomorphism $\pi_1(A,a)\to\pi_1(U,a)$. The composite of the two is induced by inclusion $A\hookrightarrow X$, so it is an isomorphism.
+By step 2 the group $\pi_1(U\cap V,b)$ is trivial, so by step 3 the kernel of $\pi_1(U,b)\to\pi_1(X,b)$ is trivial and that homomorphism is an isomorphism. Let $\delta$ be a path in $U$ from $b$ to $a$, which exists because $U$ is path connected and contains the point $a$ of $A$. The isomorphisms $\hat\delta:\pi_1(U,b)\to\pi_1(U,a)$ and $\hat\delta:\pi_1(X,b)\to\pi_1(X,a)$ induced by $\delta$ commute with the homomorphisms induced by inclusion, as in the diagram of Step 3 of the proof of Theorem 72.1 (printed p. 440), so $\pi_1(U,a)\to\pi_1(X,a)$ is an isomorphism, being the conjugate of an isomorphism by $\hat\delta$. By step 1 the inclusion $A\hookrightarrow U$ induces an isomorphism $\pi_1(A,a)\to\pi_1(U,a)$. The composite of the two is induced by inclusion $A\hookrightarrow X$, so it is an isomorphism.
 
 :::
 
