@@ -76,7 +76,7 @@ audit:
     2026-11-14 events recording that none was located among the sets searched then. Both are
     transcribed from Takumi Murayama, *Selected Solutions to Munkres's Topology, 2nd Ed.* (Princeton
     MAT365, Fall 2012), Exercise 58.10, read 2026-11-15 in the LaTeX source of that set kept at
-    tmp/sources/munkres-solutions-murayama-mat365.tex and published at
+    tmp/sources/munkres-solutions-murayama-mat365.tex and hosted, as a copy, at
     https://github.com/awasthi/math-solutions/blob/master/Munkres/Munkres%20Solutions.tex: the
     exercise at line 1631, the proof of (a) at lines 1646-1650 with the retraction supposed at line
     1648 and the homotopy at line 1649, and the proof of (c) at lines 1659-1667 with the straight
@@ -118,6 +118,20 @@ audit:
     the exercise and its axioms against printed p. 367. Checked that each transcribed step uses only
     the axioms the exercise supplies, and that no step applies a degree to a map that is not a
     self-map of S^n. Not checked: Murayama's and Feryll's own (b) and (d), which are not used.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Citation corrected on a reader's report. The solution named
+    https://github.com/awasthi/math-solutions/blob/master/Munkres/Munkres%20Solutions.tex as the place
+    the set is "published at", which reads the hosting repository as the work's publisher; that
+    repository is a user's hosting of the file, not its author. The card now gives the author, title
+    and course as the file's own lines 79-84 give them -- Takumi Murayama, *Selected Solutions to
+    Munkres's Topology, 2nd Ed.*, from taking MAT365 Topology in the Fall of 2012 at Princeton
+    University -- and calls the URL a copy of that source, with the line numbers belonging to the
+    kept file. The same wording stood in the 2026-11-15 source-checked event and was changed from
+    "published at" to "hosted, as a copy, at" there. No mathematical change: the transcribed parts
+    and their line references are unchanged, and both proofs were read again and stand.
 ---
 
 ::: {.exercise}
@@ -146,14 +160,17 @@ Suppose that to every map $h: S^n \to S^n$ we have assigned an integer, denoted 
 ::: {.solution}
 The exercise is §58 Exercise 10, printed p. 367, and its hypotheses are the
 three numbered axioms printed there. Parts (a) and (c) are transcribed from
-Takumi Murayama, *Selected Solutions to Munkres's Topology, 2nd Ed.* (Princeton
-MAT365, Fall 2012), Exercise 58.10, in the LaTeX source of that set kept at
-`tmp/sources/munkres-solutions-murayama-mat365.tex` and published at
-https://github.com/awasthi/math-solutions/blob/master/Munkres/Munkres%20Solutions.tex:
-the exercise at line 1631, the proof of (a) at lines 1646--1650 and the proof of
-(c) at lines 1659--1667. Murayama sets (a) up in polar coordinates, where the
-last coordinate of his homotopy is the radius $\rho=t$; the card states the same
-map in Cartesian coordinates, as $H(x,t)=r(tx)$. Parts (b) and (d) are
+Takumi Murayama's *Selected Solutions to Munkres's Topology, 2nd Ed.*, Exercise
+58.10; the title, author and course are those the file gives at its lines
+79--84, "taking MAT365 Topology in the Fall of 2012 at Princeton University". The
+LaTeX source is kept at `tmp/sources/munkres-solutions-murayama-mat365.tex`, a
+copy hosted at
+https://github.com/awasthi/math-solutions/blob/master/Munkres/Munkres%20Solutions.tex;
+the line numbers below are that file's, the exercise at line 1631, the proof of
+(a) at lines 1646--1650 and the proof of (c) at lines 1659--1667. Murayama sets
+(a) up in polar coordinates, where the last coordinate of his homotopy is the
+radius $\rho=t$; the card states the same map in Cartesian coordinates, as
+$H(x,t)=r(tx)$. Parts (b) and (d) are
 transcribed from Hatcher, *Algebraic Topology* (2002): (b) is property (g) of
 degree in §2.2 with its proof, printed p. 134, and (d) is the first half of the
 proof of Theorem 2.28, printed pp. 134--135; the preliminary degree of the
