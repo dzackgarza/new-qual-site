@@ -49,11 +49,15 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Searched outside the checkout for a published solution of this exercise (issue #144) and located
-    none; the queries and every source searched are in the COMPLAINTS.md entry for §61--§64. The
-    card's proof is its own, checked on 2026-11-11 against Theorem 63.2, Theorem 63.5, Theorem 63.1
-    and Theorem 26.9 as the note above records; it was not re-read in this pass. The printed page of
-    the exercise is 393.
+    Munkres §63 Exercise 3, printed p. 393. Searched outside the checkout for issue #144 on the orchestrator's
+    machine, recorded in tmp/sources/mse-searches-144.md; no thread on part (a) was saved because no question on it
+    was found. The queries were "topologist's sine curve does not separate", "topologist's sine curve sphere
+    complement", "topologist's sine curve complement connected", "does not separate S^2" and the /similar query of
+    the exercise's statement. For part (b) the record points to the thread of E-LP6WS,
+    tmp/sources/mse-1394696-E-LP6WS.md, whose single answer asserts the two-component conclusion for the Warsaw
+    circle through Alexander duality without proving it; that is a source searched, not a proof of part (b), and
+    nothing is transcribed. The card's proof is its own, checked on 2026-11-11 against Theorem 63.2, Theorem 63.5,
+    Theorem 63.1 and Theorem 26.9 as the note above records; it was not re-read in this pass.
 ---
 
 ::: {.exercise}
