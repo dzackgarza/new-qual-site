@@ -43,6 +43,19 @@ audit:
     checked 2026-11-15), and no GitHub Munkres repository named in the COMPLAINTS.md entry for
     §30--§36 reaches Chapter 7. The card keeps its own proof, which this pass did not re-read; the
     search is recorded in the COMPLAINTS.md entry for §43--§50 with every query.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The AoPS blog post by cinnamon_e, "Topology by Munkres Chapter 7 | Day 16" (2025-09-09, listed
+    on the blog's topology tag page
+    https://artofproblemsolving.com/community/c3401823t440f3401823_topology, text at
+    tmp/sources/aops-shooting-star-munkres-ch7-day16.md), also answers this exercise, at its item 4
+    of §45. The text is held, but the formulas are not: the extraction drops every inline formula,
+    so the answer reads as the words between blanks and cannot be transcribed or checked. It is
+    recorded here and in the COMPLAINTS.md entry for §43--§50 as located with its formulas
+    unreadable, the site answering an automated request with a Cloudflare human check, which is not
+    worked around.
 
 ---
 
