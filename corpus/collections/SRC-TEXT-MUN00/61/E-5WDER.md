@@ -29,19 +29,22 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Searched outside the checkout for a published treatment of this exercise (issue #144). What was
-    located is Math StackExchange answer 1208062 by user98602 to question 1208036, "Is the Jordan
-    Curve Theorem True for Curves on a Toroid" (asked 2015-03-24, answer 2015-03-26), text at
-    tmp/sources/mse-1208036-munkres-61-1.md: it names the meridian and longitude curves as curves that
-    do not split the torus, states that a simple closed curve bounding an embedded disc separates the
-    torus into two components and that a curve not bounding a disc has complement homeomorphic to
-    S^1 x (-1,1). That is this exercise's answer, and it is the two examples the card gives. Its gap
-    is that it proves neither statement, deferring the proof to chapter 2 of Rolfsen, Knots and Links,
-    and to the Schoenflies theorem for the sphere, neither of which this book has at this point; the
-    card therefore keeps the proof it carried, which establishes the same two statements with
-    Theorem 17.2 and Theorem 18.1 (printed pp. 94, 104) and the product description of T^2 - C_1,
-    and the citation records the located statement. Nothing else on the card was re-read in this
-    pass.
+    Searched outside the checkout for a published treatment of this exercise (issue #144), on this VM and, for the
+    threads its address could not open, on the orchestrator's machine; the record is recorded in
+    tmp/sources/mse-searches-144.md. What is located is Math StackExchange answer 1208062 by user98602 to question
+    1208036, "Is the Jordan Curve Theorem True for Curves on a Toroid" (asked 2015-03-24, answer 2015-03-26), text
+    at tmp/sources/mse-1208036-munkres-61-1.md: it names the meridian and longitude curves as curves that do not
+    split the torus, states that a simple closed curve bounding an embedded disc separates the torus into two
+    components and that a curve not bounding a disc has complement homeomorphic to S^1 x (-1,1). That is this
+    exercise's answer, and it is the two examples the card gives. Its gap is that it proves neither statement,
+    deferring the proof to chapter 2 of Rolfsen, Knots and Links, and to the Schoenflies theorem for the sphere,
+    neither of which this book has at this point. The second thread, 3946055, "Proving Jordan Curve theorem doesn't
+    hold for Torus and Real Projective plane." (asked 2020-12-12), answer 3946082 by Lee Mosher (2020-12-12), text
+    at tmp/sources/mse-3946055-E-5WDER.md, is a hint: it asks the asker to write down the homeomorphism h: S^1 x
+    (0,1) -> (S^1 x S^1) - f(S^1) and gives no formula. The card therefore keeps the proof it carried, which
+    establishes the same two statements with Theorem 17.2 and Theorem 18.1 (printed pp. 94, 104) and the product
+    description of T^2 - C_1, and the citation records the located statement. Nothing else on the card was re-read
+    in this pass.
 ---
 
 ::: {.exercise}
