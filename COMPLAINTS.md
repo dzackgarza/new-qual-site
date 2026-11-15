@@ -2050,3 +2050,41 @@ and its solution needs Riemann--Roch, every class of degree $\ge2g-1$ on a curve
 effective; he states neither the equation nor the effectivity. The card's published-solution remark now
 records all three and its own proof supplies the second. As printed his entry is an outline, not a complete
 published solution, so V.5.5 stays open on this file's list and the card's own proof carries it.
+
+## `SRC-TEXT-HART77` #121: the four repairs a reader of `a54c0ddf5b` and `3f197c8177` returned
+
+**V.5.7, `P-AGH557NEGSELFINT`.** The counterexample's $\sigma(x:y:z)=(-x:-y:z)$ was described as having $O$ as
+its only fixed point. Its fixed locus is $O$, isolated, together with the line $z=0$, which it fixes
+pointwise; what the counterexample uses is that $O$ is fixed, so that the fibre of $\PP^2\to\PP^2/\sigma$ over
+the image of $O$ is the single point $O$, while $\sigma\ne\id$ makes it generically two-to-one. And the
+remark's opening and the entry above called Reid's Theorem A.7(1) a published proof of the corrected
+statement: Reid proves it for a projective birational morphism, and the passage from the exercise's dominant
+generically finite $f$ to its Stein factor $h$ is the card's own argument. The remark and the solution body
+now say which part is published, and the sentence replacing $X'$ by its normalization is gone --- $X'$ is
+normal already, $h$ dominant and $X$ normal making the normalization of $X'$ factor $h$, after which
+$h_*\OO_X=\OO_{X'}$ forces it to be an isomorphism. The card's Hodge-index proof is unchanged, as the reader
+found it correct.
+
+**V.5.4(b), `P-AGH554CONTRACTEDCURVES`.** The Contraction Theorem (Artin) is Reid's Section 4.15, whose
+statement is on printed p. 93; Section 4.16 is headed "Proof of Theorem" and is its proof. Two audit events
+here called it 4.16 and gave Section 4.17 a "Theorem (Artin)" where the theorem proved is 4.17 itself. The
+proof of Theorem 4.17 (1) runs on printed pp. 95--96, with its Q.E.D. on p. 96, and the proof of part (2)
+begins on p. 96. The remark and both events are corrected, and a new event records the page facts.
+
+**V.5.5, `P-AGH555ELEMTRANSFORM`.** The paragraph that stood at the end of this file misread Yang Pi-Yeh: his
+$\mathfrak e$ is the divisor class of $\bigwedge^2\mathcal E$, not the integer $e$, so his last step matches
+classes rather than concluding from equal $e$, and the Krull--Schmidt and $e=0$ discussion had no bearing on
+it. It is replaced, in the form given under "V.5.5 on Yang's 5.5.5, re-read" above, and the card's
+published-solution remark now carries the three gaps and what supplies each.
+
+**The tag count.** The count of 70 distinct tags is right; the count of 44 cards was not. Recounted over the
+forty-six cards that contain a four-character hex token, 70 distinct tags are cited as sources, on **45
+cards**: every one of the 70 has its file in `tmp/sources/stacks-tags/`, and each citation was read where it
+stands. Two tokens in those cards are not tag citations and are excluded --- `0072`, inside a DOI on
+`P-AGH467MULTISECANTS`, and `035U`, which appears only in `P-AGH2315GEOMIRRED`'s correction note saying that
+the lemma is 035X and not 035U. The count of 66 comes from a scan that anchors the identifier to the words
+"tag"/"Tags" or to a `stacks.math.columbia.edu/tag/` URL: such a scan misses the five tags that occur only
+inside a comma list after the word "Tags" --- `01OF`, `02O3`, `02OE`, `0C45`, `0CCL` --- and it picks up
+`035U` from the correction note, which is 70 $-$ 5 $+$ 1 $=$ 66. The method that gives 70 is a scan of every
+four-character hex token in the collection, keeping those with a file in `tmp/sources/stacks-tags/` and
+reading each in place.
