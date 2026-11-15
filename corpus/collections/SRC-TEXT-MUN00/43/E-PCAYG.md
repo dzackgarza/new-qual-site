@@ -56,6 +56,19 @@ audit:
     own proof, which this pass did not re-read; the search is recorded in the COMPLAINTS.md entry
     for §43--§50 with every query.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). The AoPS blog post by cinnamon_e, "Topology by
+    Munkres Chapter 6 + 7 | Day 15" (2025-09-08,
+    https://artofproblemsolving.com/community/c3401823h3645909, text at
+    tmp/sources/aops-shooting-star-munkres-ch6-7-day15.md), answers this exercise, at its item 5 of
+    §43. The text is held, but the formulas are not: the extraction drops every inline formula, so
+    the answer reads as the words between blanks and cannot be transcribed or checked. It is
+    recorded here and in the COMPLAINTS.md entry for §43--§50 as located with its formulas
+    unreadable, the site answering an automated request with a Cloudflare human check, which is not
+    worked around. The card keeps its own proof.
 ---
 
 ::: {.exercise}
