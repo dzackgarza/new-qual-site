@@ -28,6 +28,29 @@ audit:
     are the hint's: nestedness with the diameter bound gives a Cauchy sequence whose limit lies in every
     closure, the compact case uses the finite intersection property instead, and the point found lies in Y, in
     U_0, and outside every B_n.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Transcribed from Jesus R. S., answer 1133343 (2015-02-04) to Math StackExchange 1130245, "G_delta sets in
+    locally compact Hausdorff or complete metric space are Baire spaces"
+    (https://math.stackexchange.com/questions/1130245), text at tmp/sources/mse-1130245-munkres-48-5.md, and
+    checked against the book. That question states the claim for a locally compact Hausdorff or complete
+    metric X, which contains Munkres' hypotheses: a compact Hausdorff space is locally compact Hausdorff, and
+    by §48 Exercise 3, or by the answer's own use of Theorem 48.2 in the closed subspace, is Baire. The
+    argument replaces X by the closure of Y, which is closed in X and so again compact Hausdorff or complete
+    metric, so that Y is dense and the sets W_n of its G_delta expression are dense; a countable family of
+    dense open subsets of Y is then a family of dense open subsets of X, whose intersection is dense in X by
+    Theorem 48.2 and, lying in Y, dense in Y. This is shorter than the nested-neighbourhood construction of
+    the exercise's hint, which the card carried before; that construction is the book's proof of Theorem 48.2
+    specialized to Y and is not needed on this route. The second answer in the thread, by Westlifer
+    (2024-12-11), adds that complete metrizability is G_delta-hereditary and cites Exercise 43.6; the card
+    does not use it. The post by Yougi, *Munkres Topology Solution: Chapter 8* (2025-07-10,
+    https://hexo.yougi.top/2025/07/10/Munkres-Topology-Solution-Chapter-8/), answers the exercise at its Ex.
+    48.5 along the same two lines but with a gap: it assumes without proof that Y may be taken dense and that
+    the V_n are then dense in X, and it writes the conclusion as "we know that the intersection of the V_n is
+    dense" before the Baire theorem has been applied to the U_n and W_n; the card's route supplies exactly
+    those two steps.
 ---
 
 ::: {.exercise}
@@ -48,14 +71,41 @@ $$
 :::
 
 ::: {.solution}
-Write $Y=\bigcap_{n\ge1}W_n$ with $W_n$ open in $X$. To prove $Y$ Baire, let $B_n$ be closed nowhere dense subsets of $Y$ and let $U_0$ be open in $X$ with $U_0\cap Y\ne\varnothing$. We construct nonempty open $U_n$ meeting $Y$ such that
-$$
-\overline U_n\subset U_{n-1}\cap W_n,\qquad
-\overline U_n\cap\overline{B_n}^{\,X}=\varnothing,
-$$
-and in the metric case also $\operatorname{diam}U_n<1/n$.
+Write $Y=\bigcap_n W_n$ with each $W_n$ open in $X$.
 
-Indeed, since $B_n$ has empty interior in $Y$, the nonempty relatively open set $U_{n-1}\cap W_n\cap Y$ contains a point $y$ outside $B_n$. Since $B_n$ is closed in $Y$, there is a closed $C\subset X$ with $B_n=C\cap Y$, and $y\notin C$; hence $X-C$ is an open neighbourhood of $y$ disjoint from $C\supset B_n$, so its closure avoids $\overline{B_n}^{\,X}\subset C$. Intersecting with the open set $U_{n-1}\cap W_n$, in which $y$ lies, gives an $X$-open neighbourhood of $y$ whose closure is contained in $U_{n-1}\cap W_n$ and avoids $\overline{B_n}^{\,X}$; in the metric case shrink it further to have diameter below $1/n$, possible because metric spaces are regular and have a base of balls. (In the compact-Hausdorff case regularity alone suffices.) Set $U_n$ to be that neighbourhood.
+::: pf
 
-If $X$ is compact Hausdorff, the nested compact sets $\overline U_n$ have nonempty intersection. If $X$ is complete metric, choose $x_n\in\overline U_n$; nestedness and the diameter bound make $(x_n)$ Cauchy, with limit in every $\overline U_n$. Thus choose $x\in\bigcap_n\overline U_n$. Since $\overline U_n\subset W_n$, $x\in Y$; since $\overline U_n$ avoids $B_n$, $x\notin\bigcup B_n$; and $x\in\overline U_1\subset U_0$. Since every nonempty relatively open $V\subset Y$ is $U_0\cap Y$ for some open $U_0\subset X$, this shows that no nonempty relatively open subset of $Y$ is covered by countably many closed subsets of $Y$ with empty interior in $Y$; so $Y$ is a Baire space.
+::: {.pf-step #closed}
+$X$ may be replaced by a closed subspace in which $Y$ is dense, and that subspace is again compact Hausdorff or complete metric.
+
+::: pf-proof
+Let $Z=\overline Y$ be the closure of $Y$ in $X$, with the subspace topology. A closed subspace of a compact Hausdorff space is compact Hausdorff, and a closed subspace of a complete metric space is complete in the restricted metric: a Cauchy sequence in $Z$ converges in $X$, and its limit lies in $\overline Z=Z$. The set $Y$ is a $G_\delta$ set of $Z$, since $Y=\bigcap_n (W_n\cap Z)$ and each $W_n\cap Z$ is open in $Z$, and $Y$ is dense in $Z$ by the definition of closure. Baireness of $Y$ depends on the topology of $Y$ alone, so it suffices to prove the claim for a dense $G_\delta$ set $Y$ of a space $Z$ that is Baire.
+:::
+
+:::
+
+::: {.pf-step #inter}
+$Z$ is a Baire space, and $\bigcap_n W_n'$ is dense in $Z$.
+
+::: pf-proof
+A compact Hausdorff space and a complete metric space are Baire by Theorem 48.2. Each $W_n'$ contains $Y$, which is dense in $Z$, so each $W_n'$ is dense in $Z$; a countable intersection of dense open sets of a Baire space is dense by Lemma 48.1, so $\bigcap_n W_n' = Y$ is dense in $Z$, as asserted.
+:::
+
+:::
+
+::: {.pf-step #main}
+The intersection of countably many dense open subsets of $Y$ is dense in $Y$.
+
+::: pf-proof
+Let $V_1,V_2,\ldots$ be dense open subsets of $Y$, and choose open $U_m\subseteq Z$ with $V_m=Y\cap U_m$. Since $V_m$ is dense in $Y$ and $Y$ is dense in $Z$, the set $U_m$ is dense in $Z$: a nonempty open $O\subseteq Z$ meets $Y$, and $O\cap Y$ is a nonempty relatively open subset of $Y$, so it meets $V_m\subseteq U_m$. The countable family consisting of the $W_n'$ and the $U_m$ is a family of dense open subsets of the Baire space $Z$, so by Lemma 48.1 its intersection $D$ is dense in $Z$. Every point of $D$ lies in $\bigcap_n W_n' = Y$, so $D\subseteq Y$, and a subset of $Y$ dense in $Z$ is dense in $Y$. Finally $D=\bigcap_m (Y\cap U_m)=\bigcap_m V_m$.
+:::
+
+:::
+
+::: pf-qed
+By step [](#main){.pf-ref}, every countable intersection of dense open subsets of $Y$ is dense in $Y$, so $Y$ is a Baire space by Lemma 48.1. The exercise's hint constructs such a family by nested neighbourhoods instead; that construction is the proof of Theorem 48.2 applied inside $Y$ and is not needed here.
+:::
+
+:::
+
 :::
