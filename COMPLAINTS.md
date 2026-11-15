@@ -1306,7 +1306,7 @@ A set not read before was located and is held: Yougi, *Munkres Topology Solution
 | `E-2B91X` | none: only askfilo.com, which reprints the exercise behind an answer page that was not read | — |
 | `E-8NCA4`, `E-5Y4F7`, `E-FFNIM`, `E-J8QUX` | none | — |
 
-The two questions on §70 name the exercise, and 4884788 proves the theorem of §68 Exercise 4; nothing here is a proof of an exercise that any card could transcribe, and no claim is made that these are the only questions on the exercises. **Gaps:** the Stack Exchange corpus could not be read at all in this pass, so the four rows marked "no" may hold a usable proof that this record does not know about.
+The questions located for §70 name the exercise, and 4884788 proves the theorem of §68 Exercise 4; nothing else here is a proof of an exercise that any card could transcribe, and no claim is made that these are the only questions on the exercises. **Gaps:** the Stack Exchange corpus could not be read at all in this pass, so the five rows marked "no" may hold a usable proof that this record does not know about.
 
 **The queries, card by card.** Besides the two that located the dbFin index and the GitHub search, each card was searched for as follows.
 
