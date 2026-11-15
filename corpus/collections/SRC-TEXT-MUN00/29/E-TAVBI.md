@@ -34,6 +34,13 @@ audit:
     which calls the continuous direction well known and proves only the converse; the card takes
     the continuous direction from dbFin, whose f^{-1}(V) is checked to be a neighborhood of x
     through its interior. This supersedes the 2026-11-10 note above.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The converse direction invoked "the closure theorem for nets" without naming it. It is the
+    theorem of the sixth exercise of the same supplement, "x lies in the closure of A if and only
+    if some net of points of A converges to x", and the step now cites it as that.
 ---
 
 ::: {.exercise}
@@ -60,7 +67,7 @@ Let $V$ be a neighborhood of $f(x)$, and let $V^\circ$ be its interior, an open 
 If $f$ carries every convergent net to a convergent net with the corresponding limit, then $f$ is continuous.
 
 ::: pf-proof
-Let $V \subset Y$ be open and put $U = f^{-1}(V)$. Let $x \in U$; it suffices to exhibit a neighborhood of $x$ contained in $U$. Suppose there is none. Then every neighborhood of $x$ meets $X - U$, so $x \in \overline{X - U}$, and by the closure theorem for nets there is a net $(x_\alpha)$ of points of $X - U$ converging to $x$. By hypothesis $f(x_\alpha) \to f(x)$. Each $f(x_\alpha)$ lies in $Y - V$, which is closed because $V$ is open, and a limit of a net of points of a closed set lies in that set; hence $f(x) \in Y - V$, contradicting $f(x) \in V$. So some neighborhood of $x$ lies in $U$, and $U$ is open.
+Let $V \subset Y$ be open and put $U = f^{-1}(V)$. Let $x \in U$; it suffices to exhibit a neighborhood of $x$ contained in $U$. Suppose there is none. Then every neighborhood of $x$ meets $X - U$, so $x \in \overline{X - U}$, and the theorem of the sixth exercise of this supplement, that a point lies in the closure of a set exactly when a net of points of that set converges to it, gives a net $(x_\alpha)$ of points of $X - U$ converging to $x$. By hypothesis $f(x_\alpha) \to f(x)$. Each $f(x_\alpha)$ lies in $Y - V$, which is closed because $V$ is open, and a limit of a net of points of a closed set lies in that set; hence $f(x) \in Y - V$, contradicting $f(x) \in V$. So some neighborhood of $x$ lies in $U$, and $U$ is open.
 :::
 
 :::
