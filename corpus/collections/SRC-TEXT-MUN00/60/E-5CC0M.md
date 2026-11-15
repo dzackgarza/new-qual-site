@@ -68,6 +68,27 @@ audit:
     definition of a covering map in §53. Correction to the note of 2026-11-14 above: the card no
     longer computes $2\abs{\sin\pi t}$, so the clause there about that computation describes text
     that is no longer on the card; the statement repair recorded there stands.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The attribution is corrected, from a second reader's report on this card. The
+    solution opened with "The proof is transcribed from Pearse", and that had stopped
+    being true when the argument was replaced: Pearse's proof of §60 Exercise 3 is
+    made at the basepoint x_0, by describing the preimage inside E' of a small cross
+    in X and remarking that an interval and a cross are not homeomorphic, while the
+    argument on the card works at y = (1,0), never computes that preimage, and uses
+    instead that p carries the x-axis into A, that every neighbourhood of x_0 meets
+    B minus x_0, and that a sheet is connected and carries p' homeomorphically. The
+    preamble now says which two sentences are the source's -- the description of the
+    preimage and the observation that no map of a cross onto an interval is injective
+    -- and says that the argument below is the card's own. The argument itself was
+    re-read and is unchanged: the sheet V through y is connected and homeomorphic to
+    U, it meets the x-axis at y and the y-axis at a point over b, so it contains the
+    origin, where p' takes the same value x_0 as at y. Checked against the book: the
+    exercise on printed p. 375 and the construction of p in the proof of Lemma 60.5
+    on printed pp. 373-374. Not claimed: that the source computes the preimage
+    exactly, which the note of 2026-11-14 already recorded.
 ---
 
 ::: {.exercise}
@@ -85,14 +106,19 @@ nonzero integer point of either axis, with $p$ wrapping the $x$-axis around $A$,
 the $y$-axis around $B$, and each tangent circle homeomorphically onto the other
 circle; the integer points of both axes map to $x_0$.
 
-The proof is transcribed from Pearse, *Topology (2nd ed.) — James R. Munkres*,
-solutions, Cornell 2005, §60 Exercise 3, his p. 27, read in
-`tmp/sources/cornell-erin-munkres.md`. The source's point is that the preimage of
-a small neighbourhood of $x_0$ inside $E'$ consists of one small cross at the
-origin together with open intervals about the nonzero integer points, and that no
-interval is homeomorphic to the cross in the base. The card proves the failure at
-the point $y=(1,0)$, where $E'$ is locally an interval of the $x$-axis, using only
-that $p$ carries the $x$-axis into $A$ and does not carry it into $B$.
+Pearse, *Topology (2nd ed.) — James R. Munkres*, solutions, Cornell 2005, §60
+Exercise 3, his p. 27, read in `tmp/sources/cornell-erin-munkres.md`, is the source
+of two things here. One is the description of the preimage, inside $E'$, of a small
+neighbourhood of $x_0$: a small cross at the origin together with an open interval
+about each nonzero integer point. The other is the observation that settles the
+exercise at the basepoint, that such an interval and the cross in $X$ are not
+homeomorphic, because no map of a cross onto an interval is injective.
+
+The argument below is the card's own and does not follow the source's: it finds the
+failure at the point $y=(1,0)$, where $E'$ is locally an interval of the $x$-axis,
+and it never computes that preimage. What it uses is that $p$ carries the $x$-axis
+into $A$, that every neighbourhood of $x_0$ in $X$ contains points of
+$B-\theset{x_0}$, and that a sheet is connected and mapped homeomorphically.
 
 ::: pf
 
