@@ -225,7 +225,7 @@ $$
 $$
 
 ::: pf-proof
-The published argument is a global count. This is *Algebraic Geometry II*, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 1 (Po-Sheng Wu), section 5, printed p. 19 (PDF p. 19 of `tmp/sources/ntu-ag2-chapter5.pdf`, where the set's own folios are its PDF pages), transcribed with the two estimates its display leaves to the reader. Write $(f)=(f)_0-(f)_\infty$ for the effective zero and pole divisors and let $P$ be a point of $(\overline{f})_0\cap(\overline{f})_\infty$ on the current surface. Blow it up: $\pi:\widetilde X\to X$ at $P$. By symmetry in $f\leftrightarrow 1/f$ assume $a=\mu_P((f)_0)\ge b=\mu_P((f)_\infty)>0$. Then $\pi^*(f)_0=(\tilde f)_0+aE$ and $\pi^*(f)_\infty=(\tilde f)_\infty+bE$, so
+The published argument is a global count. This is *Algebraic Geometry II*, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 1 (Po-Sheng Wu), section 5, printed p. 19 (PDF p. 19 of `tmp/sources/ntu-ag2-chapter5.pdf`, where the set's own folios are its PDF pages), transcribed with the two estimates its display leaves to the reader. Write $(f)=(f)_0-(f)_\infty$ for the effective zero and pole divisors and let $P$ be a point where they meet on the current surface, of multiplicities $a=\mu_P((f)_0)$ and $b=\mu_P((f)_\infty)$. Blow it up: $\pi:\widetilde X\to X$ at $P$. By symmetry in $f\leftrightarrow 1/f$ assume $a\ge b>0$. Blow $P$ up: $\pi:\widetilde X\to X$. Then $\pi^*(f)_0=(\tilde f)_0+aE$ and $\pi^*(f)_\infty=(\tilde f)_\infty+bE$, so
 $$
 (\pi^*f)_0=(\tilde f)_0+(a-b)E,
 \qquad
@@ -245,7 +245,7 @@ so the two displays give
 $$
 \boxed{(\pi^*f)_0\cdot(\pi^*f)_\infty=(f)_0\cdot(f)_\infty-b^2.}
 $$
-At an intersection point $b=\mu_P((f)_\infty)\ge1$, so the nonnegative integer $(f)_0\cdot(f)_\infty$ strictly decreases at every such blowup, and the process stops after finitely many of them. At that point the two effective divisors have no common point: they share no component, and two curves on a nonsingular surface with zero intersection number are disjoint. The same conclusion then follows for the composite $g$. That is the source's whole argument; its last step, that $(g^*f)_0$ is base-point free, is step [](#pencil-base-point-free){.pf-ref} below.
+At an intersection point $b\ge1$, so the nonnegative integer $(f)_0\cdot(f)_\infty$ strictly decreases at every such blowup, and the process stops after finitely many of them. At that point the two effective divisors have no common point: they share no component, and two curves on a nonsingular surface with zero intersection number are disjoint. The same conclusion then follows for the composite $g$. That is the source's whole argument; its last step, that $(g^*f)_0$ is base-point free, is step [](#pencil-base-point-free){.pf-ref} below.
 
 The card's own proof reaches the same conclusion by a local measure instead of the global intersection number, and is the argument its later steps use.
 

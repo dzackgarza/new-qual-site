@@ -46,6 +46,25 @@ audit:
     an extension Spec R -> A^1 whose uniqueness inside P^1 forces f to be
     regular at the resolved center. Thus f lies in every A_i for i
     sufficiently large, so R=union A_i.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Published solution located for issue #121: Yang Pi-Yeh, Hartshorne
+    Solutions, exercise 5.5.6, printed p. 114 of
+    tmp/sources/lfwin-hartshorne-solutions.pdf (folios = PDF pages; the printed
+    page was located with pdftotext as a locator), read in the MinerU extraction
+    tmp/sources/lfwin-hartshorne-solutions.md. It proves all three kinds: by the
+    valuation criterion the ring has a center P and dominates O_P; the center's
+    dimension is tr.d._k(R/m), so 1 gives a DVR equal to O_P (kind 1) and 0 gives
+    the closed-point case, where each blowup puts the next center either on the
+    exceptional curve (kind 2) or at a point of it, and the infinite alternative
+    gives R = lim O_{P_i} = union O_{P_i} (kind 3). That union identification is
+    the step Exercise II.4.12 leaves open and Egbert's entry does not prove; it
+    is this card's step union-contained-in-r. The remark now gives the source's
+    argument and says which of this card's steps is which. Checked against
+    Hartshorne V.5.6, printed p. 299, and against the three kinds as printed in
+    Exercise II.4.12.
 ---
 
 ::: {.problem}
@@ -441,5 +460,7 @@ excluded exactly as in Exercise II.4.12.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.6, printed p. 299 (valuation rings and the birational classification of surfaces).
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.5.6, printed p. 114 (`tmp/sources/lfwin-hartshorne-solutions.pdf`, whose folios are its PDF pages; read in `tmp/sources/lfwin-hartshorne-solutions.md`), proves the exercise, and its argument is the one this card's steps carry out. In its words: the valuation criterion, $X$ being projective and therefore proper, gives $\varphi:\Spec R\to X$ whose closed-point image is the center $P$ of $\nu$, and $R$ dominates $\OO_P$; the dimension of the center is $\operatorname{tr.d.}_k(R/\mathfrak m_R)$, so it is $1$ or $0$. If it is $1$, both $R$ and $\OO_P$ are discrete valuation rings and $R=\OO_P$, which is kind (1). If it is $0$, blow up $P$: the center on $X'$ is either the exceptional curve, which is kind (2), or a point of it, and one repeats; if a divisor is reached after finitely many blowups the ring is kind (2), and if not, the chain is infinite and $R=\varprojlim\OO_{P_i,X_i}=\bigcup_i\OO_{P_i,X_i}$, which is kind (3). That last identification --- the union being all of $R$, the point Exercise II.4.12 leaves open and Egbert's V.5.6 entry, printed p. 299, does not prove --- is step [](#union-contained-in-r){.pf-ref} below, and the card's other steps are the source's cases (1) and (2) with the domination argument written out.
+
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.6, printed p. 299, states the trichotomy, identifies kinds (1) and (2) through the centre and its successive blowups, and for kind (3) says only that one "repeats and gets a type (3)", citing another book for the value-group claim.
 :::
