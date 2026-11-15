@@ -54,6 +54,33 @@ audit:
     of the exercise's hint. Neither answer touches (a), (c), (e) or (f), which remain the card's. The AoPS
     post *Topology by Munkres Chapter 8 | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630)
     answers §50 with its formulas lost; Murayama and dbFin have no Chapter 8. Nothing needed correction.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Re-read on issue #144 against §50 Exercise 6 as printed on pp. 315--316. Part (e) prints "Show there exists
+    a map f: X -> R such that f(x) -> infinity as x -> infinity", in R and not in R^N, and the card stored R^N;
+    the printed target is restored. The consequence is carried into (f), whose Baire set is about maps into
+    R^N: the card now forms f_1(x) = (psi(x), 0, ..., 0) in C(X, R^N) from part (e)'s real-valued psi and runs
+    (a) on f_1, which is what the printed (f) does with the C_n of (e). What was not changed: the printed
+    sentence "f(x) > n" is about a vector-valued map and stays as norm(f(x)) > n, as the 2026-10-31 event
+    records.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Re-read on issue #144; four arguments that the card asserted were supplied. (1) Part (e) now proves the
+    exhaustion X = union C_n with C_n compact and C_n inside Int C_{n+1} that the hint asks for: the basis
+    elements with compact closure form a countable basis (Theorem 29.2, printed p. 185), and the compact C_n
+    are built from them by finite subcovers, a set once covered remaining covered. (2) psi = sum (1 - phi_n) is
+    shown continuous rather than assumed: the Int C_k cover X, and on Int C_k every summand with n >= k
+    vanishes, so psi is a finite sum there. (3) The bound psi(x) >= k-1 for x outside C_k is now derived rather
+    than asserted, from Int C_{n+1} contained in C_k for n <= k-1. (4) Part (b) now says of continuity at
+    points of X what it said only of infinity: X is open in X^*, and f^* agrees with f there. In part (c) the
+    equivalence defining membership in U_epsilon(C) is justified through the maximum of the distance on the
+    compact set {f(x) = f(y)} contained in C x C, which is where Delta(f|C), a supremum of fibre diameters
+    (printed p. 311), is attained. What was not re-read: parts (a) and (d), whose arguments the earlier events
+    checked, and the correctness of the density lemma of the imbedding theorem quoted in (d).
 ---
 
 ::: {.exercise}
@@ -83,7 +110,7 @@ Show that $U_\epsilon(C)$ is open in $\mathcal{C}(X, \RR^N)$.
 (d) Show that if $N = 2m + 1$, then $U_\epsilon(C)$ is dense in $\mathcal{C}(X, \RR^N)$.
 [Hint: Given $f$ and given $\epsilon, \delta > 0$, choose $g: C \to \RR^N$ so that $d(f(x), g(x)) < \delta$ for $x \in C$, and $\Delta(g) < \epsilon$. Extend $f - g$ to $h: X \to [-\delta, \delta]^N$ using the Tietze theorem.]
 
-(e) Show there exists a map $f: X \to \RR^N$ such that $f(x) \to \infty$ as $x \to \infty$.
+(e) Show there exists a map $f: X \to \RR$ such that $f(x) \to \infty$ as $x \to \infty$.
 [Hint: Write $X$ as the union of compact subspaces $C_n$ such that $C_n \subset \operatorname{Int} C_{n+1}$ for each $n$.]
 
 (f) Let $C_n$ be as in (e). Use the fact that $\bigcap U_{1/n}(C_n)$ is dense in $\mathcal{C}(X, \RR^N)$ to complete the proof.
@@ -134,9 +161,21 @@ Define $f^*: X^* \to (\RR^N)^*$ by $f^*(x) = f(x)$ for $x \in X$ and $f^*(\infty
 :::
 
 ::: pf-step
-For any neighborhood $V$ of $\infty$ in $(\RR^N)^*$, $V$ contains $(\RR^N \setminus \overline{B}_n) \cup \{\infty\}$.
-Since $f(x) \to \infty$, there is a compact $C \subset X$ with $f(X \setminus C) \subseteq \RR^N \setminus \overline{B}_n$, so $(f^*)^{-1}(V) \supseteq (X \setminus C) \cup \{\infty_X\}$, which is open in $X^*$.
-Thus $f^*$ is continuous.
+$f^*$ is continuous at every point of $X$.
+
+::: pf-proof
+$X$ is open in $X^*$, and on the open neighbourhood $X$ of a point $x$ the restriction $f^*\restrict_X$ is $f$, which is continuous. Continuity is a local property, so $f^*$ is continuous at $x$.
+:::
+
+:::
+
+::: pf-step
+$f^*$ is continuous at $\infty_X$.
+
+::: pf-proof
+Every neighbourhood $V$ of $\infty$ in $(\RR^N)^*$ contains $(\RR^N \setminus \overline{B}_n) \cup \{\infty\}$ for some $n$. Since $f(x) \to \infty$, there is a compact $C \subset X$ with $f(X \setminus C) \subseteq \RR^N \setminus \overline{B}_n$, so $(f^*)^{-1}(V) \supseteq (X \setminus C) \cup \{\infty_X\}$, which is open in $X^*$. Hence $f^*$ is continuous at $\infty_X$, and with the preceding step, continuous.
+:::
+
 :::
 
 ::: pf-step
@@ -162,6 +201,13 @@ Part (c): Openness of $U_\varepsilon(C)$.
 
 ::: pf-step
 The condition $\Delta(f\restrict_C) < \varepsilon$ is equivalent to saying that if $x_1, x_2 \in C$ with $d(x_1, x_2) \ge \varepsilon$, then $f(x_1) \neq f(x_2)$.
+
+::: pf-proof
+By the definition on printed p. 311,
+$$\Delta(f\restrict_C)=\sup\theset{\operatorname{diam}(f\restrict_C)^{-1}(\{z\}) \mid z\in f(C)} .$$
+The set $P=\theset{(x_1,x_2)\in C\times C : f(x_1)=f(x_2)}$ is the preimage of the diagonal of $\RR^N\times\RR^N$ under the continuous map $(f\restrict_C)\times(f\restrict_C)$, so it is closed in the compact space $C\times C$ and hence compact; $d$ is continuous there, so $D=\max_{(x_1,x_2)\in P}d(x_1,x_2)$ is attained, and $D=\Delta(f\restrict_C)$: two points with the same image lie in one fibre, and two points of one fibre are such a pair. So the supremum defining $\Delta(f\restrict_C)$ is a maximum, and $\Delta(f\restrict_C)<\varepsilon$ says exactly that no point of $P$ has $d(x_1,x_2)\ge\varepsilon$, which is the stated condition.
+:::
+
 :::
 
 ::: pf-step
@@ -210,26 +256,63 @@ Then $\bar{\rho}(f, g) \le \delta$ and $g\restrict_C = g_0 \in U_\varepsilon(C)$
 
 :::
 
-::: pf-step
-Part (e): Existence of a proper map $f_0: X \to \RR^N$.
+::: {.pf-step #s5}
+Part (e): there is a continuous map $f_0: X \to \RR$ with $f_0(x) \to \infty$ as $x \to \infty$.
 
 ::: pf-proof
 
 ::: pf-step
-Since $X$ is locally compact and second-countable, $X = \bigcup_{n=1}^\infty C_n$ where each $C_n$ is compact and $C_n \subset \operatorname{Int} C_{n+1}$.
+There is a countable basis $\theset{B_i}$ of $X$ consisting of open sets with compact closure.
+
+::: pf-proof
+Let $x\in X$ and let $O$ be an open set containing $x$. By Theorem 29.2 (printed p. 185) there is a neighbourhood $V$ of $x$ with $\overline V$ compact and $\overline V\subseteq O$, and the given countable basis has an element $B_i$ with $x\in B_i\subseteq V$; then $\overline{B_i}\subseteq\overline V$ is compact. So the basis elements with compact closure form a basis, and there are countably many of them.
+:::
+
 :::
 
 ::: pf-step
-By Urysohn's Lemma, choose continuous functions $\phi_n: X \to [0, 1]$ with $\phi_n(C_n) = \{1\}$ and $\phi_n(X \setminus \operatorname{Int} C_{n+1}) = \{0\}$.
+There are compact subspaces $C_1,C_2,\ldots$ with $C_n\subseteq\operatorname{Int}C_{n+1}$ for every $n$ and $X=\bigcup_n C_n$.
+
+::: pf-proof
+Put $C_1=\overline{B_1}$ and $k_1=1$. Suppose $C_n=\overline{B_1}\cup\cdots\cup\overline{B_{k_n}}$ has been chosen. The sets $B_i$ cover the compact space $C_n$, so finitely many of them, say $B_{i_1},\ldots,B_{i_r}$, cover it; put $k_{n+1}=\max\{n+1,k_n,i_1,\ldots,i_r\}$ and $C_{n+1}=\overline{B_1}\cup\cdots\cup\overline{B_{k_{n+1}}}$. Then $C_{n+1}$ is a finite union of compact sets and is compact, and $C_n\subseteq C_{n+1}$ because $k_{n+1}\ge k_n$. Moreover $C_n\subseteq B_1\cup\cdots\cup B_{k_{n+1}}$, a union of sets each contained in $C_{n+1}$, so $C_n$ lies in the open set $B_1\cup\cdots\cup B_{k_{n+1}}\subseteq C_{n+1}$ and hence in $\operatorname{Int}C_{n+1}$. Finally $B_1\cup\cdots\cup B_n\subseteq C_{n+1}$ because $k_{n+1}\ge n+1$, so $X=\bigcup_i B_i\subseteq\bigcup_n C_n$.
+:::
+
 :::
 
 ::: pf-step
-Define $\psi: X \to \RR$ by $\psi(x) = \sum_{n=1}^\infty (1 - \phi_n(x))$.
-For $x \in X \setminus C_k$, $\psi(x) \ge k - 1$.
+There are continuous functions $\phi_n: X \to [0,1]$ with $\phi_n(C_n)=\{1\}$ and $\phi_n(X\setminus\operatorname{Int}C_{n+1})=\{0\}$.
+
+::: pf-proof
+The metrizable space $X$ is normal; $C_n$ and $X\setminus\operatorname{Int}C_{n+1}$ are closed and disjoint, since $C_n\subseteq\operatorname{Int}C_{n+1}$. Urysohn's lemma (Theorem 33.1) applies to this pair and gives $\phi_n$.
+:::
+
 :::
 
 ::: pf-step
-The map $f_0(x) = (\psi(x), 0, \dots, 0) \in \RR^N$ is continuous and satisfies $f_0(x) \to \infty$ as $x \to \infty$.
+$\psi(x)=\sum_{n=1}^\infty(1-\phi_n(x))$ defines a continuous function $\psi: X \to \RR$.
+
+::: pf-proof
+Each summand lies in $[0,1]$ and is nonnegative. Given $x$, let $m$ be least with $x\in C_m$, which exists because $X=\bigcup_n C_n$; for $n\ge m$ one has $x\in C_n$, so $\phi_n(x)=1$ and the summand $1-\phi_n(x)$ vanishes, leaving the finite sum $\psi(x)=\sum_{n<m}(1-\phi_n(x))$. For continuity, the sets $\operatorname{Int}C_k$ cover $X$, because $C_k\subseteq\operatorname{Int}C_{k+1}$; and on $\operatorname{Int}C_k$ every summand with $n\ge k$ vanishes, because $\operatorname{Int}C_k\subseteq C_k\subseteq C_n$. So on $\operatorname{Int}C_k$ the function $\psi$ agrees with the finite sum $\sum_{n<k}(1-\phi_n)$, which is continuous there; continuity is a local property and the $\operatorname{Int}C_k$ cover $X$, so $\psi$ is continuous.
+:::
+
+:::
+
+::: {.pf-step #psi-bound}
+$\psi(x)\ge k-1$ for every $x\in X\setminus C_k$.
+
+::: pf-proof
+Let $n\le k-1$. Since $\operatorname{Int}C_{n+1}\subseteq C_{n+1}\subseteq C_k$, the point $x$ lies outside $\operatorname{Int}C_{n+1}$, so $\phi_n(x)=0$ and $1-\phi_n(x)=1$. Every summand of $\psi$ is nonnegative, so $\psi(x)\ge\sum_{n=1}^{k-1}1=k-1$.
+:::
+
+:::
+
+::: pf-step
+$\psi(x)\to\infty$ as $x\to\infty$.
+
+::: pf-proof
+Given $n$, take the compact set $C=C_{n+1}$; for $x\in X\setminus C$ step [](#psi-bound){.pf-ref} gives $\psi(x)\ge n$, which is the definition of $\psi(x)\to\infty$. So $f_0=\psi$ is the map that (e) asks for.
+:::
+
 :::
 
 :::
@@ -242,11 +325,20 @@ Part (f): an injective map $f$ with $f(x) \to \infty$ exists.
 ::: pf-proof
 
 ::: pf-step
-Since $\RR^N$ is complete, $(\mathcal{C}(X, \RR^N), \bar{\rho})$ is a complete metric space, hence a Baire space.
+Since $\RR^N$ is complete, $(\mathcal{C}(X, \RR^N), \bar{\rho})$ is a complete metric space (Theorem 43.5), hence a Baire space.
 :::
 
 ::: pf-step
-Let $B = \{g \in \mathcal{C}(X, \RR^N) : \bar{\rho}(f_0, g) < 1\}$.
+The map $f_1(x)=(\psi(x),0,\ldots,0)$ lies in $\mathcal{C}(X,\RR^N)$ and $f_1(x)\to\infty$ as $x\to\infty$.
+
+::: pf-proof
+Its first coordinate $\psi$ is continuous by step [](#s5){.pf-ref} and $\norm{f_1(x)}=\psi(x)\ge0$ because $\phi_n\le1$, so for $x$ outside $C_{n+1}$ one has $\norm{f_1(x)}=\psi(x)\ge n$.
+:::
+
+:::
+
+::: pf-step
+Let $B = \{g \in \mathcal{C}(X, \RR^N) : \bar{\rho}(f_1, g) < 1\}$.
 $B$ is a non-empty open subspace, hence a Baire space.
 :::
 
@@ -260,7 +352,7 @@ By the Baire category theorem, the intersection $G = \bigcap_{n=1}^\infty U_{1/n
 
 ::: pf-step
 Choose $f \in G$.
-Since $f \in B$, $f(x) \to \infty$ as $x \to \infty$ by step [](#s1){.pf-ref}.
+Since $f \in B$, $\bar\rho(f_1,f)<1$ and $f_1(x)\to\infty$, so $f(x) \to \infty$ as $x \to \infty$ by step [](#s1){.pf-ref}.
 :::
 
 ::: pf-step
