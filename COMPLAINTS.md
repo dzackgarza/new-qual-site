@@ -1527,6 +1527,50 @@ question pages until about 2026-11-16 03:00Z (the throttle in the §60--§73 ent
 for any card of this batch and no thread is cited. That is a gap in this pass, not a conclusion that no
 answer exists.
 
+**The cards that remain, and the obstacle on each (2026-11-15).** These were searched again this turn in
+the Stacks Project (the 7655-page book, tag by tag), in Vakil's *The Rising Sea* (21 October 2025), and on
+the web for the exercise number and statement with "Hartshorne" and "solution"; each line names what the
+nearest located text does and what it does not do. None of them is closed, and none of them is claimed.
+
+- `P-AGH29PROJCLOSURE` (I.2.9(b)): Vakil's Exercise 9.3.I, printed p. 262, states that the $d$-uple
+  embedding of $\PP^1$ is cut out by the $2\times2$ minors, as an exercise; C. M. Davis and A. Sobieska,
+  *Rational Normal Curves in Weighted Projective Space*, Bull. LMS (2025), arXiv:2410.04586, §3 says the
+  classical statement is "[Eis05, cf. Proposition 6.1] for a proof" and proves determinantal generation only
+  for its weighted family (Theorem 3.1, Theorem 4.1 with its Gröbner-basis proof). No located text proves
+  generation for the classical rational normal curve, so the card keeps its modulo-3 residue argument.
+- `P-AGH77CONEDEGDROP` (I.7.7(b)): the Shichijo argument is invalid (above), and nothing else located proves
+  the degree drop; the card keeps its blow-up computation.
+- `P-AGH67PUNCTUREDLINE`'s converse (I.6.7): all located sets state a threshold and the source asserts it;
+  the card's four-point cross-ratio obstruction stands.
+- `P-AGH374COHOMCLASS` (III.7.4(b),(d)): the Stacks Project's duality chapter gives the trace map and the
+  residue, and its Weil-cohomology chapter defines a cycle class, but neither states that the class of a
+  smooth $Y\subseteq\PP^n$ pairs with the trace to $\deg Y$, which is the normalisation the exercise fixes.
+  No located source proves it.
+- `P-AGH3117NONALGSHEAF` (III.11.7(a)): no located source treats $\ker(\Pic\hat X\to\Pic Y)$ in
+  characteristic $p$; the formal-functions material in Stacks is about algebraisation, not about this kernel.
+- `P-AGH3123JUMPINGIDEAL` (III.12.3): the printed claim is false (the card's computation), and no located
+  source computes the twisted cohomology of the degenerating quartic family.
+- `P-AGH415DIMLEQDEG` (IV.1.5): Vakil 19.2.6, printed p. 539, proves $h^0(C,\mcl)-h^0(C,\mcl(-p))\in
+  \theset{0,1}$ for degree-one $p$, which gives $\dim\abs{D}\le\deg D$ by induction, but neither he nor any
+  other located text proves the equality case $D=0$ or $g=0$; the card keeps its nested-section argument.
+- `P-AGH423DUALCURVE` (IV.2.3(h)): no located source counts the quartics with a hyperflex; the Plücker
+  formulas are stated in the literature without this case being separated.
+- `P-AGH434RATIONALNORMALCURVE` (IV.3.4(a)): same obstacle as I.2.9(b) for quadratic generation; projective
+  normality is Vakil's Exercise 9.3.I again, not a proof.
+- `P-AGH4311PROJECTIONCLOSEDIMMERSION` (IV.3.11(a)): Vakil's Theorem 19.1.1 with its proof at 19.1.3--19.1.4,
+  printed pp. 535--537, is the closed-embedding criterion the last step needs, and it is now what the card
+  cites; the existence of a centre outside the secant and tangent loci by the count $n>2r+1$ is not in it.
+- `P-AGH4312NODALCURVESEXIST` (IV.3.12), `P-AGH4422FAMILYOVERAFFINELINE` (IV.4.22),
+  `P-AGH469NONSINGULARSURFACECONTAININGACURVE` (IV.6.9): no located source; the cards keep their proofs.
+- The twenty-four Chapter V cards: Vakil's Chapter 27, printed pp. 757--768, proves that every smooth cubic
+  surface contains 27 lines and is $\PP^2$ blown up at six points, which is the first half of V.4.16 and not
+  its equations or its automorphism group, and his 28.6, printed p. 785, is Castelnuovo's criterion, which
+  contracts a $(-1)$-curve and so is the converse of V.5.4. The Stacks Project's §54.16 (tags 0C2I--0C2M,
+  printed pp. 4548--4552) is the same contraction theorem, and its §55.2--§55.3 (tags 0C5X, 0C6Z, 0C73) is
+  the negative-definiteness linear algebra for numerical types of regular models over a curve, not for the
+  components of a fibre of a birational map of surfaces. Neither states V.5.4, and nothing located states
+  V.2.5, V.2.12, V.2.13, V.2.15(c), V.2.17, V.3.6, V.4.3, V.4.7--V.4.15, V.5.1, V.5.5--V.5.7, V.6.1 or V.6.2.
+
 **Still open, and why.** The cards above that this pass did not close keep their own proofs and the
 obligation recorded in their sections. The ones where a further search is the next step are
 `P-AGH29PROJCLOSURE` (no located proof that the three quadrics generate $I(\bar Y)$: Wikipedia asserts it,

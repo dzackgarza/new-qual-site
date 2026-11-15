@@ -29,6 +29,20 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Printed exercise read: Hartshorne, Algebraic Geometry (1977), IV.3.11(a),
+    printed p. 309. The closed-embedding criterion the last step invokes is
+    proved in R. Vakil, The Rising Sea: Foundations of Algebraic Geometry,
+    21 October 2025 version, Theorem 19.1.1 with the reduction at 19.1.3--19.1.4
+    and the proof of the finite case at 19.1.4, printed pp. 535--537, and step s6
+    now cites it in the body. What is not in Vakil is the existence of the centre:
+    the secant and tangent loci are closed of dimension at most 2r+1, so a point O
+    outside them exists when n > 2r+1, and that count is the card's own. Egbert's
+    entry for (a) is a citation to Shafarevich, and Shafarevich was not consulted.
+
 ---
 
 ::: {.problem}
@@ -248,6 +262,7 @@ therefore gives
 $$
 \boxed{\pi_O\text{ is a closed immersion}.}
 $$
+The criterion itself is proved, for a projective morphism of varieties over an algebraically closed field, as Theorem 19.1.1 of R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §19.1], printed pp. 535--537: an injective map on points, an injection on tangent spaces and a fibre of at most one point give a closed embedding, reduced in 19.1.3--19.1.4 to the finite case. The same statement is [[T-DIVMAPPN|Hartshorne II.7.3]], which is what the card cites. What Vakil does not contain is the dimension count that produces $O$: the loci of points on secants and on tangent lines are closed of dimension at most $2r+1$, so for $n>2r+1$ a centre exists outside them, and that count is the card's steps above.
 This proves (a).
 
 :::
