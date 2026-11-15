@@ -26,7 +26,7 @@ audit:
   date: 2026-11-11
   note: >-
     No complete published solution was located; the sets searched are listed in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00.
-    Checked against Munkres, Topology (2000), §50 Exercise 9, printed p. 317, with Theorem 50.6 (compact
+    Checked against Munkres, Topology (2000), §50 Exercise 9, printed p. 316, with Theorem 50.6 (compact
     subspaces of R^N have dimension at most N), Theorem 50.1 and Corollary 50.3 for the finite union of the
     pieces of a compact set, and the preceding exercise (the card of Exercise 50.8) for the passage from the
     compact subspaces to the manifold, which is sigma-compact because it is locally compact and second
@@ -35,7 +35,7 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Searched outside the checkout (issue #144). Nothing located proves Munkres §50 Exercise 9 (printed p. 318).
+    Searched outside the checkout (issue #144). Nothing located proves Munkres §50 Exercise 9 (printed p. 316).
     Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, the ten GitHub repositories of Munkres
     solutions listed in COMPLAINTS.md stop before §36, and the AoPS post *Topology by Munkres Chapter 8 | Day
     18* (https://artofproblemsolving.com/community/c3401823h3647630) answers §50 with its formulas lost. The

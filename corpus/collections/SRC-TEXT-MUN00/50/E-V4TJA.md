@@ -36,7 +36,7 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Searched outside the checkout (issue #144). Nothing located proves Munkres §50 Exercise 4 (printed p. 305),
+    Searched outside the checkout (issue #144). Nothing located proves Munkres §50 Exercise 4 (printed p. 315),
     and the second half of it, the sketch of the linear imbedding of $K_5$, is a figure in the book that no
     written source reproduces. Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, the ten
     GitHub repositories of Munkres solutions listed in COMPLAINTS.md stop before §36, and the AoPS post

@@ -36,7 +36,7 @@ audit:
   date: 2026-11-15
   note: >-
     Searched outside the checkout (issue #144). Nothing located proves the chain of supplementary Exercise 2 of
-    §50 (printed p. 316). Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, the ten GitHub
+    §50 (printed p. 317). Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, the ten GitHub
     repositories of Munkres solutions listed in COMPLAINTS.md stop before §36, and the AoPS post *Topology by
     Munkres Chapter 8 | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630) answers §50 with
     its formulas lost. The Stack Exchange query "locally m-euclidean" returned two neighbouring statements,

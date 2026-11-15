@@ -30,7 +30,7 @@ audit:
   note: >-
     No complete published solution was located; the sets searched are listed in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00.
     Checked against Munkres, Topology (2000), §50 Exercise 1, printed p. 315, with the definitions of order and
-    of topological dimension on printed p. 304: the cover by singletons refines any open cover and has order 1.
+    of topological dimension on printed p. 305: the cover by singletons refines any open cover and has order 1.
     What was corrected: the stored statement had narrowed the exercise to nonempty discrete spaces; it now
     states the exercise as printed, and the solution says why the nonempty case is what the book's definition of
     order can speak about, the empty collection having no point to count.
@@ -38,7 +38,7 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Searched outside the checkout (issue #144). Nothing located proves Munkres §50 Exercise 1 (printed p. 305).
+    Searched outside the checkout (issue #144). Nothing located proves Munkres §50 Exercise 1 (printed p. 315).
     Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, and the ten GitHub repositories of
     Munkres solutions listed in COMPLAINTS.md reach no section past §36. The AoPS post *Topology by Munkres
     Chapter 8 | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630) reaches §50 and its

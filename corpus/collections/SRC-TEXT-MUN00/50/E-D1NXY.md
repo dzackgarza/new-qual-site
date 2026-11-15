@@ -34,7 +34,7 @@ audit:
   date: 2026-11-15
   note: >-
     Searched outside the checkout (issue #144). Nothing located treats supplementary Exercise 3 of §50 (printed
-    p. 316); the example is a two-line matter of the countable basis of intervals with rational endpoints and
+    p. 317); the example is a two-line matter of the countable basis of intervals with rational endpoints and
     the cover by $(-n,n)$, and the card gives it. Murayama's selection has no Chapter 8, dbFin has no
     chapter-8 page, the ten GitHub repositories of Munkres solutions listed in COMPLAINTS.md stop before §36,
     and the AoPS post *Topology by Munkres Chapter 8 | Day 18*

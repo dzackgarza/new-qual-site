@@ -25,7 +25,7 @@ audit:
   date: 2026-11-11
   note: >-
     No complete published solution was located; the sets searched are listed in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00.
-    Checked line by line against Munkres, Topology (2000), §50 Exercise 8, printed pp. 316-317, following the
+    Checked line by line against Munkres, Topology (2000), §50 Exercise 8, printed p. 316, following the
     exercise's own outline. Points checked in (b): the integer r chosen least with x in the interior of X_r
     exists, x lies outside X_{r-2} because X_{r-2} is contained in the interior of X_{r-1}, and X_{r-2} is closed
     because compact in the Hausdorff space; then a member of B_0 meeting X_n has n at least r-1 and so lies in
@@ -39,7 +39,7 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Searched outside the checkout (issue #144). Nothing located proves Munkres §50 Exercise 8 (printed p. 317).
+    Searched outside the checkout (issue #144). Nothing located proves Munkres §50 Exercise 8 (printed p. 316).
     Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, and the ten GitHub repositories of
     Munkres solutions listed in COMPLAINTS.md stop before §36. The AoPS post *Topology by Munkres Chapter 8 |
     Day 18* (https://artofproblemsolving.com/community/c3401823h3647630) answers §50 with its formulas lost, and
