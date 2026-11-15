@@ -26,9 +26,14 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Searched outside the checkout for a published solution of this exercise (issue #144) and located
-    none; the queries and every source searched are in the COMPLAINTS.md entry for §61--§64. The
-    The card's proof is its own, checked on 2026-11-11 against Lemma 62.1 (printed p. 381), Theorem 32.3, Lemma 26.8 and Theorem 33.1 as the note above records; it was not re-read in this pass. The printed page of the exercise is 384.
+    Munkres §62 Exercise 3, printed p. 384. Searched outside the checkout for issue #144 on the orchestrator's
+    machine, recorded in tmp/sources/mse-searches-144.md; no thread was saved because no question on the exercise
+    was found. The queries were "Munkres homotopy extension lemma", "homotopy extension normal open subset R^n", the
+    title query "homotopy extension", "homotopic to a map that is extendable" and the /similar query "map homotopic
+    to an extendable map is extendable"; two questions were read and rejected, 4208102, which proves Lemma 62.1
+    (printed p. 381) itself rather than this exercise, and 4377826, which is on another lemma. Nothing is
+    transcribed. The card's proof is its own, checked on 2026-11-11 against Lemma 62.1, Theorem 32.3, Lemma 26.8 and
+    Theorem 33.1 as the note above records; it was not re-read in this pass.
 ---
 
 ::: {.exercise}
