@@ -31,18 +31,20 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Searched outside the checkout (issue #144) for §68 Exercise 1 (printed p. 414); queries and sets are in the
-    COMPLAINTS.md entry for §66--§73 of SRC-TEXT-MUN00. Queries used: "Munkres section 68 exercise free product
-    permutations of {0,1,2} example S_3 not free product of two subgroups order 2 solution" and "Munkres Check
-    the details of Example 1 free product S_3 permutations three elements exercise 68.1". Nothing located on
-    the exercise: the questions returned are on free products in general (116233, 1835294, 4884788) and on the
-    symmetric group (368433), and no body could be read, the API reporting "too many requests from this IP" and
-    the question pages a Cloudflare human check. dbFin has no §68 page, Murayama's selection answers §68
-    Exercise 2 only, the fourteen repositories stop at Chapter 3, and no course page found treats these
-    sections. The card's own proof was re-read against Example 1 (printed p. 414) and Theorem 68.2 (printed
-    p. 415): the products pi_1 pi_2 = (0 1 2) and pi_1 pi_2 pi_1 = (0 2) were recomputed, so G_1 and G_2
-    generate P, and the two distinct reduced words are shown to represent the same element of P, which is
-    exactly what makes P not their free product. Nothing changed.
+    Munkres §68 Exercise 1 ("Check the details of Example 1"), printed p. 421, against Example 1 on printed p. 414.
+    Searched outside the checkout for issue #144; the thread the throttled address could not open was read from the
+    orchestrator's machine, recorded in tmp/sources/mse-searches-144.md, thread tmp/sources/mse-3297477-E-8NCA4.md.
+    The only hit is Math StackExchange 3297477, "Why can't S_3 be a coproduct which contains C_2?" (asked
+    2019-07-19, from Aluffi's Exercise II.6.11), answer 3297527 by Eric Wofsey (2019-07-19, accepted), read whole:
+    it counts homomorphisms, four from C_2 to S_3 and one from the trivial group against ten from S_3 to S_3, and
+    concludes that S_3 is not a coproduct of cyclic groups in the category of groups. That is a stronger conclusion
+    than the third claim of Example 1, proved by another criterion, and it checks neither the orders of G_1 and G_2
+    nor their generation of P, which is what the exercise's "Check the details" asks for; nothing is transcribed
+    from it and the card keeps its proof of all three details. dbFin has no §68 page, Murayama's selection answers
+    §68 Exercise 2 only, the fourteen repositories stop at Chapter 3, and no course page found treats these
+    sections. The card's own proof was re-read against Example 1 (printed p. 414): the products pi_1 pi_2 = (0 1 2)
+    and pi_1 pi_2 pi_1 = (0 2) were recomputed, so G_1 and G_2 generate P, and the two distinct reduced words are
+    shown to represent the same element of P, which is exactly what makes P not their free product.
 - event: source-corrected
   by: claude
   date: 2026-11-15
