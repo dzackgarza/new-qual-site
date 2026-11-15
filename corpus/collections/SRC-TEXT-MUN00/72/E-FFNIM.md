@@ -40,10 +40,12 @@ audit:
     transcribed: it argues that a CW complex X and its two-skeleton X^2 have isomorphic fundamental groups, a
     statement about a whole CW complex and not about one n-cell attached to the closed path-connected subspace A
     of the exercise, so it does not yield the isomorphism pi_1(A, a) -> pi_1(X, a) even were its argument complete.
-    Its van Kampen step takes the two sets to be A_alpha = D^n - x and A_beta = X^{n-1}, and neither is open in
-    X^n: the preimage in X^{n-1} sqcup D^n of the image of D^n - x is (D^n - x) union phi(S^{n-1}), whose second
-    part is not open in X^{n-1}, and the preimage of X^{n-1} is X^{n-1} sqcup S^{n-1}, whose second part is not
-    open in D^n, while van Kampen (Theorem 70.1, printed p. 426) needs open sets with path connected intersection.
+    Its van Kampen step takes the two sets to be A_alpha = D^n - x and A_beta = X^{n-1}, and A_beta is never open
+    in X^n: its preimage in X^{n-1} sqcup D^n is X^{n-1} sqcup S^{n-1}, and S^{n-1} is not open in D^n, while
+    van Kampen (Theorem 70.1, printed p. 426) needs open sets with path connected intersection. A_alpha need not
+    be open either, though it can be: its preimage is (D^n - x) union phi(S^{n-1}), which is open exactly when
+    phi(S^{n-1}) is open in X^{n-1}, and that holds for instance when phi(S^{n-1}) is all of X^{n-1}, as when
+    X^{n-1} is a point. The failure of A_beta alone defeats the step as written.
     It writes the conclusion as the free product pi_1(A_alpha) * pi_1(A_beta) without the normal subgroup that
     theorem produces, harmless only because pi_1(A_alpha cap A_beta) is trivial, and it quotes pi_1(S^{n-1}) = 0
     for n >= 2, which holds only for n >= 3; its own case is n >= 3. The induction step it needs at each n >= 3,
