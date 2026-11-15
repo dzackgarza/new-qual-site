@@ -38,6 +38,27 @@ audit:
     representative exists, that H^0(O_X(-D)) vanishes including the
     nowhere-vanishing-section edge case, and that the restriction k -> k in
     the divisor sequence is an isomorphism.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Two published readings added on a reader's report of issue #121, both
+    checked against the sources here. (i) Yang Pi-Yeh, Solution 5.4.12,
+    printed p. 111, read in tmp/sources/lfwin-hartshorne-solutions.md (block
+    "PDF pages 101-119") and against the folios of the PDF, asserts in its
+    second sentence that an ample divisor D on the cubic surface has
+    H^0(X, L(D)) = k on the ground that it is very ample; that is false, since
+    a very ample D embeds X in P^3 and h^0 >= 4. That false k is the source of
+    the k -> k in the sequence he then writes, whose true cokernel is O_C. The
+    remark now records it. (ii) Egbert's V.4.12, printed p. 292 in the PDF and
+    in the MinerU text version tmp/sources/hartshorne-solutions-egbert.md
+    (entry 5.4.13, line 12488), is wholly on that one page; his closing step
+    "by V.4.11, this effective divisor should meet at least one line with
+    negative intersection" is sound, the criterion meant being Theorem 4.11 of
+    the text, whose (iii) with the equivalence makes an ample D very ample and
+    so positive on every curve. COMPLAINTS.md had recorded that step as a
+    misuse of (4.11) and the entry as printed pp. 292-293; both are corrected
+    there. The card's own proof is unchanged.
 ---
 
 ::: {.problem}
@@ -253,6 +274,39 @@ and step [](#h1-negative-d-vanishes){.pf-ref} gives the required vanishing.
 :::
 :::
 
-::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.12, printed p. 292 (Kodaira vanishing on the cubic surface).
+::: {.remark title="Published solutions"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.12, printed p. 292, read in
+`tmp/sources/hartshorne-solutions-egbert.pdf` and in its MinerU text version
+`tmp/sources/hartshorne-solutions-egbert.md` (printed folio = PDF page number; the text version marks the PDF
+pages in blocks of twenty, and its entry 5.4.13 at line 12488 is the one printed at p. 292), is wholly on that
+one page and takes this card's route. He records $H^0(\OO_X)=k$, $H^1(\OO_X)=0$ and
+$H^2(\OO_X)=H^0(\OO_X(-3))=p_g=0$, writes "By chapter 1, $H^0(D,\OO_D)=k$", reads the long exact sequence of
+$0\to\OO_X(-D)\to\OO_X\to\OO_D\to0$ term by term, and closes by contradiction: "Suppose there is an effective
+divisor linearly equivalent to $-D$. Then by V.4.11, this effective divisor should meet at least one line
+with negative intersection which is silly."
+
+That closing step is sound, and the number it cites needs care because two results share it. The exercise
+printed as 4.11 in §4 is the Weyl groups exercise, which says nothing about divisors; the criterion meant is
+**Theorem 4.11** of the text, "The following conditions are equivalent, for a divisor $D$ on the cubic surface
+$X$: (i) $D$ is very ample; (ii) $D$ is ample; (iii) $D^2>0$, and for every line $L\subseteq X$, $D\cdot L>0$;
+(iv) for every line $L\subseteq X$, $D\cdot L>0$." By (iii) with the equivalence, an ample $D$ is very ample,
+hence $D\cdot C>0$ for every irreducible curve $C$, so $D\cdot E=-D^2<0$ rules out a nonzero effective
+$E\sim-D$. What his entry does not supply is the existence of a nonsingular member $C\in\abs{D}$, which step
+[](#nonsingular-curve-in-class){.pf-ref} takes from (4.11) and V.4.8.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.4.12, printed p. 111, is defective at its second sentence:
+"Clearly we have $H^0(X,\OO_X)=k$, $H^1(X,\OO_X)=0$. Then for any ample divisor $D$, it is very ample by
+theorem 4.11., we have $H^0(X,\mathcal L(D))=k$." The inference is false. A very ample divisor on the cubic
+surface embeds $X$ in $\PP^3$, so $h^0(\mathcal L(D))\ge4$: the image spans $\PP^{h^0-1}$ and has dimension
+$2$, so $h^0\ge3$, and $h^0=3$ would make the image all of $\PP^2$, that is $X\cong\PP^2$. That false $k$ is
+the source of his "$k\to k$". His next display is a sequence of $\OO_X$-modules,
+$0\to\mathcal L(-D)\to\OO_X\to\mathcal L(D)\to0$, "i.e."
+$0\to H^0(X,\mathcal L(-D))\to k\to k\to H^1(X,\mathcal L(-D))\to0$, in which the second $k$ is his
+$h^0(\mathcal L(D))$; the sheaf that occurs there is $\OO_C$ for $C\in\abs{D}$, and the sequence with
+$\mathcal L(D)$ as cokernel is not exact. With the correct sequence the map $k\to k$ is an isomorphism and the
+vanishing is immediate. His vanishing step itself is the card's: if $s\in H^0(X,\mathcal L(-D))$ were nonzero
+with $C=\operatorname{Supp}s$, then for a line $E$ not contained in $C$ one has $C\cdot E\ge0$, hence
+$D\cdot E\le0$, against (4.11). Theorem 4.11 is printed on p. 405 and the exercise itself on p. 408, its text being read in
+`tmp/sources/hartshorne-1977-algebraic-geometry.md`, where those printed pages are its PDF pages 420 and 423
+(printed page = PDF page minus fifteen, the offset that puts V.2.13 on printed p. 385).
 :::
