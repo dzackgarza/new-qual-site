@@ -700,7 +700,7 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 - V.4.9, printed **p. 290**: the entry is an abandoned manipulation of the genus formula, printed with its working notes ("move $2.5\sum b_i$ here", "schwarz won't help", "let's evict $\frac12$", "hmm move 2.5 bi here"), which never states the bound $g\ge\frac12(d-6)$, $\frac12(d-5)$ nor derives it; the following "Existence" paragraph is a separate sum-of-five-squares construction that does not meet the exercise's classes.
 - V.4.10, printed **p. 291**: the whole entry is "No algebraic geometry here. If your interested, see Nagata Rational Surfaces I, and proceed by cases" — a citation and no argument.
 - V.4.11, printed **pp. 291–292**: parts (a) and (b) have no entry at all, the page carries "I don't care about group theory", and the starred part (c) is the entry `5.4.12 b.` reading "see above".
-- V.4.12, printed **pp. 292–293**: the entry computes on $\PP^2$ ("Recall $X\approx\PP^2$ which has known cohomology", $H^2(X,\OO_X)=H^0(X,\OO_X(-3))=p_g$) although the cubic surface is $\PP^2$ with six points blown up, so the dimensions it lists are those of $\PP^2$ and the sequence is the wrong one; the closing step then invokes V.4.11 to exclude an effective $-D$, which is not what (4.11) says.
+- V.4.12, printed **p. 292** (the whole entry, in the PDF and in the MinerU text version `tmp/sources/hartshorne-solutions-egbert.md`, where it is entry `5.4.13` at line 12488): the entry computes on $\PP^2$ ("Recall $X\approx\PP^2$ which has known cohomology", $H^2(X,\OO_X)=H^0(X,\OO_X(-3))=p_g$) although the cubic surface is $\PP^2$ with six points blown up, so the dimensions it lists are those of $\PP^2$ and the sequence is the wrong one; on the cubic surface $K_X=-H$, so $H^2(X,\OO_X)=H^0(X,\OO_X(-H))=0$ and the conclusion survives the error. Its closing step is sound: "Suppose there is an effective divisor linearly equivalent to $-D$. Then by V.4.11, this effective divisor should meet at least one line with negative intersection which is silly." The number $4.11$ is carried by two different things, the Weyl-groups exercise printed as 4.11 in §4 and **Theorem 4.11** of the text, whose (iii) is "$D^2>0$, and for every line $L\subseteq X$, $D\cdot L>0$"; by (iii) with the theorem's equivalence an ample $D$ is very ample, hence $D\cdot C>0$ for every irreducible curve, so $D\cdot E=-D^2<0$ excludes an effective $E\sim-D$. An earlier pass recorded the step as a misuse of (4.11); that was wrong. What Egbert does not supply is a nonsingular member of $|D|$, the C of the divisor sequence, and his own $X\approx\PP^2$.
 - V.4.13, printed **pp. 292–294**: part (a) is complete modulo one step — the 16 classes and the Schwarz count $4a^2-6a-4\le0$ are there, but $C^2=-1$ is assumed for a degree-one curve and has to be derived by adjunction. Part (b) is closed by Egbert only at "Now use $\star$.", the star attached on p. 293 to $\OO_X(-2K_X)\cong\OO_X(2)$: p. 294 opens "Note that by Ramanujam vanishing and Serre duality, $H^1(X,\OO_X(-2K_X))=0$" and completes the count $h^0=13$ with it, "$15-13=2$" is printed nowhere, and the conclusion is never drawn, so the degree comparison that identifies $X$ with the complete intersection is missing. His Ramanujam citation is bare, the same defect this entry charges to Dolgachev. **Part (b) stays open**: Dolgachev, *Topics in Classical Algebraic Geometry* (27 September 2010), Theorem 8.5.1, printed p. 291 with its proof on pp. 291--292, proves the projective normality (his 8.4.5, printed p. 280), the dimension count $h^0(\OO_X(2))=13$ (his 8.3.1, printed p. 272) and the diagonal form of the two quadrics, and then jumps from $15-13=2$ to "$X$ is the base locus of a pencil" without showing that the quadrics have no common component or that the degree-four complete intersection is $X$ --- the same gap as the entry above. His Lemma 8.3.1 invokes Ramanujam's vanishing theorem by name with no reference; the Lazarsfeld citation for it is in his Lemma 8.1.4's proof, printed p. 248. Part (a) is not in the book either (printed p. 293 uses "the 16 lines on $X$" without the count), while Egbert's part (a) does settle it modulo one step, the adjunction derivation of $C^2=-1$ for a line, and writes $\Pic X$ as $\ZZ^6$ with generators $l,e_1,\dots,e_6$ for a five-point blow-up. The card now says all of this.
 - V.4.14, printed **p. 294**: the entry lists which degree–genus pairs remain after V.4.7, then says "For these remaining rest, I use the method of exc V.4.9 (Read that exercise solution first or this will be nonsense!)", works one case ($d=8$, $g=6$) and ends "Solve for this using sum of 5 squares as in exc V.4.9 and the rest follow similarly". No class is exhibited for the other eight pairs, and the cited method is the V.4.9 entry above.
 - V.4.15, printed **pp. 294–295**: parts (a) and (b) have no entry; part (c) is argued (`5.4.18 c.`); part (d) is the sketch `5.4.19 d.` counting $14+42=56$ and listing eight families for $r=8$ without proving that no other negative curves exist; the starred part (e) is `5.4.17 b.`, "This is Nagata, Rational Surfaces II, corollary to proposition 9, and use (a) of this problem" — a citation.
@@ -2159,7 +2159,11 @@ gap in this pass, not a finding.
 `tmp/sources/lfwin-hartshorne-solutions.pdf` (printed page = PDF page: the footer of PDF p. 105 reads 105);
 Shichijo, Chapter 1 section 2, in `tmp/sources/shitijyou-ch1-section2.md` against the folios of
 `tmp/sources/shitijyou-ch1-section2.pdf`; and Egbert's V.4.13 pages on the rendered page of
-`tmp/sources/hartshorne-solutions-egbert.pdf`, its text version not yet being in the tree. Nine of the open
+`tmp/sources/hartshorne-solutions-egbert.pdf`, whose text version did not exist yet. It exists now:
+`tmp/sources/hartshorne-solutions-egbert.md` is a MinerU extraction of all 304 PDF pages, marked in blocks of
+twenty, and is cited on the cards that read Egbert from this pass on. It loses symbols the rendered page has —
+its line 12563 reads "Now use ?." where p. 294 prints the star — so where an entry turns on a symbol, that
+symbol is read off the page image. Nine of the open
 Chapter V cards and one Chapter I card were read in full this pass, and each stops short of the printed
 requirement for the reason given. No card is closed on this reading.
 
@@ -2188,7 +2192,13 @@ requirement for the reason given. No card is closed on this reading.
   itself --- (i) very ample, (ii) ample, (iii), (iv) equivalent on the cubic surface --- so that step is the
   book's; the defect is the sequence: he writes $0\to\mathcal L(-D)\to\OO_X\to\mathcal L(D)\to0$, where the
   sequence belonging to a divisor is $0\to\mathcal L(-D)\to\OO_X\to\OO_C\to0$ with $C\in\abs D$, and the
-  cohomology he then computes is that of his own display. Open.
+  cohomology he then computes is that of his own display. His second sentence is false outright: "Then for any
+  ample divisor $D$, it is very ample by theorem 4.11., we have $H^0(X,\mathcal L(D))=k$." A very ample
+  divisor on the cubic surface embeds $X$ in $\PP^3$, so $h^0\ge4$ (the image spans $\PP^{h^0-1}$ and has
+  dimension $2$; $h^0=3$ would put $X$ in $\PP^2$ as a surface, i.e. $X\cong\PP^2$), and that false $k$ is
+  exactly the second $k$ of the "$k\to k$" he writes next. His closing step is otherwise the card's: for
+  $s\in H^0(X,\mathcal L(-D))$ nonzero with $C=\operatorname{Supp}s$ and a line $E\not\subseteq C$, $C\cdot E\ge0$
+  gives $D\cdot E\le0$, against (4.11). Open.
 - **V.4.14** (`P-AGH5414SPACECURVES`), Yang printed p. 112. A nine-row table covers exactly the nine printed
   $(d,g)$ pairs, and every row carries its printed $d$ and $p_a$ (checked row by row here); what is absent is
   the word "nonsingular": no member of any of the nine classes is shown to be nonsingular, and the table
@@ -2217,7 +2227,28 @@ requirement for the reason given. No card is closed on this reading.
   $\pi_*\OO(C_0+(B-P)f)$ is indecomposable of rank $2$ and degree $1$ on an elliptic curve, so its $h^0$ is $1$
   --- Atiyah's classification of rank-two bundles on an elliptic curve --- and the system is base-point-free, as
   his conclusion needs. (What does not work as a reason is that a class of degree one on every fibre has
-  $h^0>0$: $C_0-nf$ has degree $1$ on each fibre and $h^0=0$ for $n\gg0$.) Open.
+  $h^0>0$: $C_0-nf$ has degree $1$ on each fibre and $h^0=0$ for $n\gg0$.) **The input 5.2.12 carries two
+  further wrong values, recorded here and on the card.** On p. 104 he writes
+  $h^0(\mathcal L_X(C_0+Bf))=h^0(\mathcal L_C(\mathfrak e+B))=2$; the true value is $3$. With $e=-1$ the
+  surface is $\mathbf P(\mathcal E)$ for the unique nontrivial extension
+  $0\to\OO_C\to\mathcal E\to\mathcal L(P)\to0$ of (2.11.6), so $\deg\mathcal E=\deg\mathfrak e=-e=1$ by
+  (2.8.1) and Theorem 2.15; $\pi_*\OO(C_0+Bf)=\mathcal E\otimes\OO(B)$ is indecomposable of degree $1+2\cdot1=3$, and
+  Riemann--Roch with $h^1=0$ for degree $\ge2g-1=1$ gives $h^0=3$. His own 5.2.13 formula $2n-e$ gives the
+  same $3$ at $n=1$, so his two entries disagree. On p. 105 he then takes
+  $h^0(C_0+(A+B)f)=h^0(C_0+Bf)+2=4$, true $5$, and $h^0(C_0+(A+B-P-Q)f)=0$, true $1$. The errors cancel in
+  the only place his conclusion uses them: both tests are drops, $h^0(D-Pf)=h^0(D)-2$ and
+  $h^0(D-Pf-Qf)=h^0(D)-4$, and $0=2-2$, $0=4-4$ hold as $1=3-2$, $1=5-4$ do, so the base-point-freeness and
+  very-ampleness conclusions are sound while every absolute value is one short. The cause is the shape of his
+  display, which sits inside the splitting of 5.2.11,
+  $h^i(C_0+\mathfrak bf)=h^i(\mathfrak b)+h^i(\mathfrak b+\mathfrak e)$: that identity is derived in the
+  decomposable case $\mathcal E\cong\OO\oplus\mathcal L$, $e\ge0$ (Theorem 2.12(a)), and 5.2.12 is the case
+  $e=-1$ in which $\mathcal E$ is indecomposable, but the two-term value happens to be right there for
+  $\deg\mathfrak b\ge1$ (both equal $2\deg\mathfrak b-e$), so what fails is not the formula. On p. 104 he keeps
+  only the $h^0(\mathfrak b+\mathfrak e)$ summand, two terms becoming one, and then subtracts
+  $h^1(\mathcal L_X(Bf-Pf))$, an $h^1$ of a different sheaf, to reach his $0$; on p. 105 the same one-short
+  value is carried forward by $+2$. At $\deg\mathfrak b=0$ the two-term value itself is $2$ against the true
+  $1$, which is the one place the split formula and the indecomposable bundle part company. Recorded, not
+  repaired: the card's own steps use none of his numbers. Open.
 - **I.2.9(b)** (`P-AGH29PROJCLOSURE`), Shichijo Chapter 1 section 2, Exercise 2.9(b), printed p. 7. His (b) is
   the book's own counterexample: $xy-zw\in I_p(\bar T)$ but $xy-zw\notin\langle yw-x^2,zw^2-x^3\rangle$, the
   degree argument being that $a(yw-x^2)+b(zw^2-x^3)$ can only have $x$-degree $\le1$ at $a+bx=0$, which makes
