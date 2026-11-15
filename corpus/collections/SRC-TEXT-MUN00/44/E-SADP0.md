@@ -41,10 +41,21 @@ audit:
     continuous image of [0,1]?" (2011-10-22), https://math.stackexchange.com/questions/74766, text
     at tmp/sources/mse-74766-munkres-44-4b.md: from a continuous surjection f(t) = (u(t), v(t))
     onto I^2, the map t -> (u(t), u(v(t)), v(v(t))) is a continuous surjection onto I^3, and the
-    pattern continues. GEdgar gives the n = 3 and n = 4 cases and says that the general case is
-    then natural; the card states the general map g_n and proves its surjectivity by choosing
-    s_{n-1}, ..., s_1 backwards, which is the induction GEdgar leaves to the reader. The earlier
-    note above recording that no published solution was located is superseded.
+    same device gives I^4. GEdgar then goes on to the infinite product, writing
+    f_infinity(t) = (u(t), u(v(t)), u(v(v(t))), ...) on I^omega, and does not state a general
+    finite case; the card states the general map g_n and proves its surjectivity by choosing
+    s_{n-2}, ..., s_0 backwards, which GEdgar leaves to the reader. The earlier note above
+    recording that no published solution was located is superseded.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The display of g_n ended with u(v^(n-2)) and v(v^(n-2)) after an ellipsis that began at the
+    second coordinate, so that at n = 3 it read as five coordinates with the first two repeated,
+    and the sentence after it described the first n-2 coordinates as the u-terms. The map is now
+    given by its coordinates: the k-th is u composed with v to the k-1 for k at most n-1, and the
+    last is v composed with v to the n-2, which is GEdgar's f_3 = (u, u o v, v o v) at n = 3 and
+    f at n = 2; the surjectivity step is worded in the same coordinates.
 ---
 
 ::: {.exercise}
@@ -59,11 +70,11 @@ $$
 
 ::: {.solution}
 
-Write $f(t) = (u(t), v(t))$ for the continuous surjection $f: I \to I^2$ of Theorem 44.1, and $v^k$ for the $k$-fold composite of $v$ with itself, $v^0$ being the identity; for $n \ge 3$ let
+Write $f(t) = (u(t), v(t))$ for the continuous surjection $f: I \to I^2$ of Theorem 44.1, and $v^k$ for the $k$-fold composite of $v$ with itself, $v^0$ being the identity. For $n \ge 2$ let $g_n : I \to I^n$ be the map
 $$
-g_n(t) = \big(u(t),\, u(v(t)),\, \dots,\, u(v^{n-3}(t)),\, u(v^{n-2}(t)),\, v(v^{n-2}(t))\big),
+g_n(t) = \big(u(t),\, u(v(t)),\, \dots,\, u(v^{n-2}(t)),\, v(v^{n-2}(t))\big),
 $$
-whose first $n-2$ coordinates are $u(v^k(t))$ for $0 \le k \le n-3$ and whose last two are $u(v^{n-2}(t))$ and $v(v^{n-2}(t))$; set $g_2 = f$.
+whose $k$-th coordinate is $u(v^{k-1}(t))$ for $1 \le k \le n-1$ and whose last coordinate is $v(v^{n-2}(t))$: the ellipsis in the display stands for the coordinates between the second and the $(n-1)$-st, so that $g_2 = f$ and $g_3(t) = (u(t), u(v(t)), v(v(t)))$.
 
 ::: pf
 
@@ -80,7 +91,7 @@ Each coordinate is a composite of the continuous functions $u$ and $v$, hence co
 $g_n$ is surjective.
 
 ::: pf-proof
-Let $(a_1, \dots, a_n) \in I^n$. Since $f$ is surjective, choose $s_{n-2} \in I$ with $u(s_{n-2}) = a_{n-1}$ and $v(s_{n-2}) = a_n$. Having chosen $s_k$ for some $k$ with $1 \le k \le n-2$, choose $s_{k-1} \in I$ with $u(s_{k-1}) = a_k$ and $v(s_{k-1}) = s_k$. This produces $s_0, \dots, s_{n-2}$ with $u(s_k) = a_{k+1}$ for $0 \le k \le n-2$ and $v(s_k) = s_{k+1}$ for $0 \le k \le n-3$. Put $t = s_0$; then $v^k(t) = s_k$ for $0 \le k \le n-2$, so the first $n-2$ coordinates of $g_n(t)$ are $u(v^k(t)) = a_{k+1}$ for $0 \le k \le n-3$, that is $a_1, \dots, a_{n-2}$, and the last two are $u(v^{n-2}(t)) = u(s_{n-2}) = a_{n-1}$ and $v(v^{n-2}(t)) = v(s_{n-2}) = a_n$. Hence $g_n(t) = (a_1, \dots, a_n)$.
+Let $(a_1, \dots, a_n) \in I^n$. Since $f$ is surjective, choose $s_{n-2} \in I$ with $u(s_{n-2}) = a_{n-1}$ and $v(s_{n-2}) = a_n$. Having chosen $s_k$ for some $k$ with $1 \le k \le n-2$, choose $s_{k-1} \in I$ with $u(s_{k-1}) = a_k$ and $v(s_{k-1}) = s_k$. This produces $s_0, \dots, s_{n-2}$ with $u(s_k) = a_{k+1}$ for $0 \le k \le n-2$ and $v(s_k) = s_{k+1}$ for $0 \le k \le n-3$. Put $t = s_0$; then $v^k(t) = s_k$ for $0 \le k \le n-2$, so the $k$-th coordinate of $g_n(t)$ is $u(v^{k-1}(t)) = u(s_{k-1}) = a_k$ for $1 \le k \le n-1$, and its last coordinate is $v(v^{n-2}(t)) = v(s_{n-2}) = a_n$. Hence $g_n(t) = (a_1, \dots, a_n)$.
 :::
 
 :::
