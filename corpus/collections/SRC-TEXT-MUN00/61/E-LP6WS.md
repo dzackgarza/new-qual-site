@@ -31,6 +31,16 @@ audit:
     compact sets, which are closed in $S^2$ by Theorem 26.3 (printed p. 165). The intersection of
     $A_1$ and $A_2$ is now argued point by point rather than asserted. Nothing else on the card was
     changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    A reader of this card reported that the compactness of A_1 was used and never proved: the proof
+    established that A_1 is closed and connected and then said that h(A_1) is compact. A_1 is contained
+    in [0, 1] x [-1, 1], so it is bounded, and a closed and bounded subspace of R^2 is compact, Theorem
+    27.3 (printed p. 173); the proof now says so, and it now says that h(A_1) and h(A_2) are compact as
+    continuous images of the compact sets A_1 and A_2, Theorem 26.5 (printed p. 166), before Theorem
+    26.3 (printed p. 165) closes them in S^2. Nothing else on the card was changed.
 ---
 
 ::: {.exercise}
@@ -44,7 +54,7 @@ Show that if $C$ is a subspace of $S^2$ homeomorphic to the closed topologist's 
 
 Let $A_1$ be the topologist's sine curve, the union of the graph $\theset{(x,\sin(1/x)) \mid 0<x\le1}$ with the segment $\theset{0}\times[-1,1]$, and let $A_2$ be the broken line from $(0,-1)$ to $(0,-2)$ to $(1,-2)$ to $(1,\sin1)$; then $A=A_1\cup A_2$.
 
-The set $A_1$ is closed and connected. It is the closure in $\RR^2$ of the graph of $g(x)=(x,\sin(1/x))$ on $(0,1]$, which is connected, being a continuous image of the connected set $(0,1]$; and the closure of a connected set is connected. The broken line $A_2$ is the image of $[0,3]$ under a continuous map, so it is compact and connected. Their intersection is exactly $\theset{(0,-1),\ (1,\sin1)}$: the first segment of $A_2$ leaves $(0,-1)$ downward and meets the segment $\theset{0}\times[-1,1]$, the only part of $A_1$ on the second coordinate axis, only at $(0,-1)$; the second segment lies on the line $y=-2$, off $A_1$; and the third segment lies on the line $x=1$ from $(1,-2)$ up to $(1,\sin1)$, while the only point of $A_1$ with first coordinate $1$ is $(1,\sin1)$.
+The set $A_1$ is closed and connected. It is the closure in $\RR^2$ of the graph of $g(x)=(x,\sin(1/x))$ on $(0,1]$, which is connected, being a continuous image of the connected set $(0,1]$; and the closure of a connected set is connected. The broken line $A_2$ is the image of $[0,3]$ under a continuous map, so it is compact and connected. The set $A_1$ is compact too: being contained in $[0,1]\times[-1,1]$ it is bounded, so as a closed and bounded subspace of $\RR^2$ it is compact, Theorem 27.3 (printed p. 173). Their intersection is exactly $\theset{(0,-1),\ (1,\sin1)}$: the first segment of $A_2$ leaves $(0,-1)$ downward and meets the segment $\theset{0}\times[-1,1]$, the only part of $A_1$ on the second coordinate axis, only at $(0,-1)$; the second segment lies on the line $y=-2$, off $A_1$; and the third segment lies on the line $x=1$ from $(1,-2)$ up to $(1,\sin1)$, while the only point of $A_1$ with first coordinate $1$ is $(1,\sin1)$.
 
-Now let $h:A\to C$ be a homeomorphism. The sets $h(A_1)$ and $h(A_2)$ are connected, and compact, hence closed in $S^2$ (Theorem 26.3, printed p. 165); their intersection is the two points $h(0,-1)$ and $h(1,\sin1)$, and their union is $C$. Theorem 61.4, the general separation theorem (printed p. 380), states that two closed connected subsets of $S^2$ whose intersection consists of exactly two points have a union that separates $S^2$. Hence $C$ separates $S^2$.
+Now let $h:A\to C$ be a homeomorphism. The sets $h(A_1)$ and $h(A_2)$ are connected, and compact, being continuous images of the compact sets $A_1$ and $A_2$ (Theorem 26.5, printed p. 166), hence closed in $S^2$ (Theorem 26.3, printed p. 165); their intersection is the two points $h(0,-1)$ and $h(1,\sin1)$, and their union is $C$. Theorem 61.4, the general separation theorem (printed p. 380), states that two closed connected subsets of $S^2$ whose intersection consists of exactly two points have a union that separates $S^2$. Hence $C$ separates $S^2$.
 :::
