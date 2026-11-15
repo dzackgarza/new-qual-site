@@ -24,6 +24,31 @@ audit:
     point and the point lies in every closure; in the uniform topology R^J is complete in the uniform metric by
     Theorem 43.5 and so Baire by Theorem 48.2, which is the exercise's point that the box and product topologies
     need a different argument. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Math StackExchange 2344060, "The arbitrary product of Reals is
+    Baire" (2017-07-02), asks this exercise and has two answers, the text kept at
+    tmp/sources/mse-2344060-munkres-48-12.md. The accepted answer, by Henno Brandsma (2017-07-03), proves it
+    through Frolík's countably complete spaces: a space is countably complete when it has a sequence of bases
+    such that a nested family of closures of sets taken from them has a point in common, such a space is Baire
+    by the argument of Theorem 48.2, $\RR$ is countably complete for the bases of intervals of diameter at most
+    $1/n$, and the theorems 2.10 and 2.12 of that paper carry countable completeness to arbitrary products in
+    both the product and the box topology. That is a correct proof, but it rests on two theorems of a paper the
+    card does not cite, so it is not transcribed. The other answer, by Petra Axolotl (2023-11-02), says that the
+    proof of Theorem 48.2 "simply goes through" and that it needs regularity and the non-emptiness of a nested
+    sequence of closures of basis elements $\prod_\alpha(a_\alpha,b_\alpha)$; that is true for the box topology,
+    where a nested sequence of boxes lies in the compact box $\prod_\alpha[a_\alpha,b_\alpha]$ of Theorem 37.3,
+    and for the uniform topology by Theorem 43.5, but in the product topology the closure of a basic open set is
+    $\RR$ in all but finitely many coordinates and is not compact, so the one-line claim does not close that
+    case. The card's coordinatewise construction is what supplies it: the coordinates are restricted one finite
+    set at a time, so each coordinate is either never restricted, where any value lies in every projection, or
+    restricted from some stage on, where the closed bounded intervals are nested from then on, and in both cases
+    the assembled point lies in every closure. The post by Yougi, *Munkres Topology Solution: Chapter 8*
+    (2025-07-10, https://hexo.yougi.top/2025/07/10/Munkres-Topology-Solution-Chapter-8/), answers the exercise
+    at its Ex. 48.12 with one line for the uniform topology and "the same applies to box topology" for the
+    other two, which is a gap.
 ---
 
 ::: {.exercise}
