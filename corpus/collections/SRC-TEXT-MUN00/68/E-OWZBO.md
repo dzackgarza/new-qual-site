@@ -23,6 +23,20 @@ audit:
     not assume it. No complete published solution located; the searches are listed in the COMPLAINTS.md entry
     for §61--§73. Proof checked line by line against Lemma 68.3 and Theorem 68.4 as printed, and it is the same
     two-homomorphism argument the book uses for Theorem 67.6 (printed p. 410), which was read for comparison.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144) for §68 Exercise 4 (printed p. 418); queries and sets are in the
+    COMPLAINTS.md entry for §66--§73 of SRC-TEXT-MUN00. Query used: "Munkres Theorem 68.4 uniqueness of free
+    products exercise solution extension property proof". Nothing usable located. Math StackExchange 4884788,
+    "Munkres lemma 68.5", does contain an answer proving Theorem 68.4 in the generalized form, as its search
+    excerpt shows, but the body could not be read (the API answered "too many requests from this IP, more
+    requests available in 75550 seconds", the page a Cloudflare human check, and no Wayback snapshot exists),
+    so nothing is transcribed from it and no claim is made that its argument agrees with this card's. dbFin has
+    no §68 page, the Riverside Part 9 sheet answers §68 Exercises 2 and 3, the fourteen repositories stop at
+    Chapter 3. The card's own proof was re-read: it is the two-homomorphism argument, checked against Lemma
+    68.3 and Theorem 68.4 as printed on p. 418 and against Theorem 67.6 (printed p. 410). Nothing changed.
 ---
 
 ::: {.exercise}
