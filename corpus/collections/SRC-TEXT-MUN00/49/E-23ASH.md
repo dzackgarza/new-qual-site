@@ -60,6 +60,15 @@ audit:
     single linear piece is drawn from its interior lying in one component of $I$ minus the vertices. Nothing
     else changed: the constants, the mesh $\delta=1/(2k)$, the bound $0\le f\le\varepsilon$ and the choice
     $2k\varepsilon>n$, $4k\ge n$ are as before.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    A reader of this card reported that the sentence "For 0 < x < 1 both intervals lie in I" is false at
+    x < h and at x > 1 - h, where the backward or the forward interval of length h leaves I. The step now
+    argues that an interval leaving I has 0 or 1 in its interior, that t_0 = 0 and t_{2k} = 1 are vertices
+    of this sawtooth, and hence that the interval which has no vertex in its interior lies in I, which is
+    what the passage to "lies in one linear piece" needs. Nothing else on the card changed.
 ---
 
 ::: {.exercise}
@@ -92,7 +101,7 @@ Plainly $0\le f(x)\le\varepsilon$ for all $x$: on each subinterval $f$ is linear
 
 We show $\Delta f(x,h)\ge\varepsilon/\delta=2k\varepsilon>n$ for every $x\in I$, which gives $\Delta_h f>n$ and $f\in U_n$.
 
-Fix $x\in I$. The two intervals $[x-h,x]$ and $[x,x+h]$ have length $h=\delta/2$ each. At $x=0$ the forward interval $[0,h]$ is contained in $[0,\delta]$, and at $x=1$ the backward interval $[1-h,1]$ is contained in $[1-\delta,1]$, one linear piece in each case, since $h<\delta$; there the corresponding quotient has absolute value exactly $\varepsilon/\delta$. For $0<x<1$ both intervals lie in $I$. If both had a vertex in the interior, say $t\in(x-h,x)$ and $t'\in(x,x+h)$, then $t<x<t'$ and $t'-t<2h=\delta$, which is impossible because distinct vertices are at distance at least $\delta$. So at least one of the two intervals has no vertex in its interior, hence its interior lies in one of the open subintervals cut out by the vertices and the interval lies in the closure of that piece, which is one of the linear pieces, on which $f$ has slope $\pm\varepsilon/\delta$; the corresponding difference quotient therefore has absolute value exactly $\varepsilon/\delta$. Hence
+Fix $x\in I$. The two intervals $[x-h,x]$ and $[x,x+h]$ have length $h=\delta/2$ each. At $x=0$ the forward interval $[0,h]$ is contained in $[0,\delta]$, and at $x=1$ the backward interval $[1-h,1]$ is contained in $[1-\delta,1]$, one linear piece in each case, since $h<\delta$; there the corresponding quotient has absolute value exactly $\varepsilon/\delta$. For $0<x<1$: the backward interval can leave $I$ only when $x<h$, and then $0$ lies in its interior; the forward one only when $x>1-h$, and then $1$ lies in its interior. Both $0=t_0$ and $1=t_{2k}$ are vertices, so an interval with no vertex in its interior lies in $I$. If both had a vertex in the interior, say $t\in(x-h,x)$ and $t'\in(x,x+h)$, then $t<x<t'$ and $t'-t<2h=\delta$, which is impossible because distinct vertices are at distance at least $\delta$. So at least one of the two intervals has no vertex in its interior; that interval lies in $I$, hence its interior lies in one of the open subintervals cut out by the vertices and the interval lies in the closure of that piece, which is one of the linear pieces, on which $f$ has slope $\pm\varepsilon/\delta$; the corresponding difference quotient therefore has absolute value exactly $\varepsilon/\delta$. Hence
 $$
 \Delta f(x,h)\ge\frac{\varepsilon}{\delta}=2k\varepsilon>n .
 $$
