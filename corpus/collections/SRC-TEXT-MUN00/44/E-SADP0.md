@@ -59,16 +59,16 @@ $$
 
 ::: {.solution}
 
-Write $f(t) = (u(t), v(t))$ for the continuous surjection $f: I \to I^2$ of Theorem 44.1, and $v^k$ for the $k$-fold composite of $v$ with itself, $v^0$ being the identity.
+Write $f(t) = (u(t), v(t))$ for the continuous surjection $f: I \to I^2$ of Theorem 44.1, and $v^k$ for the $k$-fold composite of $v$ with itself, $v^0$ being the identity; for $n \ge 3$ let
+$$
+g_n(t) = \big(u(t),\, u(v(t)),\, \dots,\, u(v^{n-3}(t)),\, u(v^{n-2}(t)),\, v(v^{n-2}(t))\big),
+$$
+whose first $n-2$ coordinates are $u(v^k(t))$ for $0 \le k \le n-3$ and whose last two are $u(v^{n-2}(t))$ and $v(v^{n-2}(t))$; set $g_2 = f$.
 
 ::: pf
 
 ::: pf-step
-For $n \ge 2$ the map $g_n : I \to I^n$ defined by
-$$
-g_n(t) = \big(u(t),\, u(v(t)),\, \dots,\, u(v^{n-2}(t)),\, v^{n-1}(t)\big)
-$$
-is continuous.
+For $n \ge 2$ the map $g_n : I \to I^n$ is continuous.
 
 ::: pf-proof
 Each coordinate is a composite of the continuous functions $u$ and $v$, hence continuous, and a map into a finite product is continuous when its coordinates are.
@@ -80,7 +80,7 @@ Each coordinate is a composite of the continuous functions $u$ and $v$, hence co
 $g_n$ is surjective.
 
 ::: pf-proof
-Let $(a_1, \dots, a_n) \in I^n$. Since $f$ is surjective, choose $s_{n-1} \in I$ with $u(s_{n-1}) = a_{n-1}$ and $v(s_{n-1}) = a_n$. Having chosen $s_k$ for some $k \ge 2$, choose $s_{k-1} \in I$ with $u(s_{k-1}) = a_{k-1}$ and $v(s_{k-1}) = s_k$. This produces $s_1, \dots, s_{n-1}$ with $u(s_k) = a_k$ for $1 \le k \le n-1$ and $v(s_k) = s_{k+1}$ for $1 \le k \le n-2$. Now choose $t \in I$ with $u(t) = a_1$ and $v(t) = s_1$. Then $v^k(t) = s_k$ for $1 \le k \le n-1$, so $u(v^k(t)) = a_{k+1}$ for $0 \le k \le n-2$ and $v^{n-1}(t) = s_{n-1}$, whose coordinates are $a_{n-1}$ and $a_n$. Hence $g_n(t) = (a_1, \dots, a_n)$.
+Let $(a_1, \dots, a_n) \in I^n$. Since $f$ is surjective, choose $s_{n-2} \in I$ with $u(s_{n-2}) = a_{n-1}$ and $v(s_{n-2}) = a_n$. Having chosen $s_k$ for some $k$ with $1 \le k \le n-2$, choose $s_{k-1} \in I$ with $u(s_{k-1}) = a_k$ and $v(s_{k-1}) = s_k$. This produces $s_0, \dots, s_{n-2}$ with $u(s_k) = a_{k+1}$ for $0 \le k \le n-2$ and $v(s_k) = s_{k+1}$ for $0 \le k \le n-3$. Put $t = s_0$; then $v^k(t) = s_k$ for $0 \le k \le n-2$, so the first $n-2$ coordinates of $g_n(t)$ are $u(v^k(t)) = a_{k+1}$ for $0 \le k \le n-3$, that is $a_1, \dots, a_{n-2}$, and the last two are $u(v^{n-2}(t)) = u(s_{n-2}) = a_{n-1}$ and $v(v^{n-2}(t)) = v(s_{n-2}) = a_n$. Hence $g_n(t) = (a_1, \dots, a_n)$.
 :::
 
 :::
@@ -89,7 +89,7 @@ Let $(a_1, \dots, a_n) \in I^n$. Since $f$ is surjective, choose $s_{n-1} \in I$
 For every $n$ there is a continuous surjective map $g: I \to I^n$. $\square$
 
 ::: pf-proof
-For $n = 1$ the identity of $I$ serves; for $n \ge 2$ the map $g_n$ of step 1 is continuous and surjective by step 2.
+For $n = 1$ the identity of $I$ serves, for $n = 2$ the map $f$ of Theorem 44.1 does, and for $n \ge 3$ the map $g_n$ of step 1 is continuous and surjective by step 2.
 :::
 
 :::
