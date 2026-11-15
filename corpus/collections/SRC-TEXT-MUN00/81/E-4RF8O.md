@@ -11,6 +11,17 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The audit note of 2026-11-15 says that three published proofs are recorded beside martini's, Yang's among
+    them, while the solution named only the two answers to question 3172278; the solution now names the third,
+    David Yang's hw11.tex lines 127-153 with the commit, its URL and its line range, and says of it what the note
+    says: the same finite intersection, with g written for g_i twice and a stray restatement of U after its
+    definition. Checked against the saved file tmp/sources/gh-dyang5-MATH104-Topology-E-4RF8O.md, read whole.
+    Not covered: no step of the card's proof changed, and Yang's slips are described rather than repaired, since
+    nothing is transcribed from him.
 - event: source-checked
   by: claude
   date: 2026-11-15
@@ -53,7 +64,7 @@ Show that if $X$ is Hausdorff, and if $G$ is a finite group of homeomorphisms of
 
 ::: {.solution}
 
-The separation argument below is that of martini's accepted answer 412360 (https://math.stackexchange.com/a/412360), posted 2013-06-05 to Math Stack Exchange question 412317, "Finite group acting freely on Hausdorff space" (https://math.stackexchange.com/questions/412317, asked by alans on the same day), which states the exercise as its three parts (a), (b), (c): for each $g\ne e$ choose disjoint open sets $U_g\ni x$ and $V_g\ni g(x)$, replace $U_g$ by $U_g\cap g^{-1}(V_g)$, and intersect over the finitely many $g\ne e$ at once. The answer prints "such that $U_g\cap V_g\ne\emptyset$" where the Hausdorff choice gives "$=\emptyset$"; the intersection $\bigcap_{h\ne e}(U_h\cap\bar h^{-1}V_h)$ that it then forms and the computation $gU\cap U\subseteq \bar g\bar g^{-1}V_g\cap U_g=\emptyset$ use the equality, so the printed inequality is a slip in the answer and not a step of the argument. The steps below are that argument written out with the book's citations. Two other threads prove the same statement: answer 3534338 by Kuldeep Guha Mazumder (2020-02-04) to question 3172278, which separates the finitely many points of an orbit by induction and takes the intersection $E=\bigcap_i g_i^{-1}E_i$; and answer 3172451 by Adam Bartoš in the same thread, which is a single sentence of hint.
+The separation argument below is that of martini's accepted answer 412360 (https://math.stackexchange.com/a/412360), posted 2013-06-05 to Math Stack Exchange question 412317, "Finite group acting freely on Hausdorff space" (https://math.stackexchange.com/questions/412317, asked by alans on the same day), which states the exercise as its three parts (a), (b), (c): for each $g\ne e$ choose disjoint open sets $U_g\ni x$ and $V_g\ni g(x)$, replace $U_g$ by $U_g\cap g^{-1}(V_g)$, and intersect over the finitely many $g\ne e$ at once. The answer prints "such that $U_g\cap V_g\ne\emptyset$" where the Hausdorff choice gives "$=\emptyset$"; the intersection $\bigcap_{h\ne e}(U_h\cap\bar h^{-1}V_h)$ that it then forms and the computation $gU\cap U\subseteq \bar g\bar g^{-1}V_g\cap U_g=\emptyset$ use the equality, so the printed inequality is a slip in the answer and not a step of the argument. The steps below are that argument written out with the book's citations. Three other sources prove the same statement: answer 3534338 by Kuldeep Guha Mazumder (2020-02-04) to question 3172278, which separates the finitely many points of an orbit by induction and takes the intersection $E=\bigcap_i g_i^{-1}E_i$; answer 3172451 by Adam Bartoš in the same thread, which is a single sentence of hint; and David Yang's, *MATH104: Topology, Fall 2023*, Homework 11, in `HW/hw11.tex` lines 127--153 of `dyang5/MATH104-Topology` at commit 12686a815d58f29aeaadb90a30449ae85c0a613f (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw11.tex#L127-L153, the same finite intersection $\bigcap_i g_i^{-1}(W_i)\cap\bigcap_i V_i$, written with $g$ for $g_i$ twice and with a stray restatement of $U$ after its definition, neither of which touches the argument.
 
 The action of $G$ on $X$ is properly discontinuous if for each $x \in X$ there is a neighbourhood $U$ of $x$ with $g(U) \cap U = \varnothing$ for every $g \ne e$ (printed p. 490).
 

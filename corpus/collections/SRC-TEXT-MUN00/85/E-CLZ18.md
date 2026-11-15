@@ -11,6 +11,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The conclusion "k + 1 != 1" was left to the reader. Theorem 85.3 gives a subgroup of index k exactly k + 1
+    free generators, and to conclude that a group free on k + 1 generators cannot be the group free on 1
+    generator needs Corollary 69.5 (printed p. 423, that any system of free generators of a free group has as
+    many elements as any other); the card now cites it, and says that Yang does not. Also corrected: the
+    solution ended by saying that the card uses the transversal of user1729's answer 1278487. It does not; the
+    card proves that the right cosets H beta^n are pairwise distinct by uniqueness of reduced words, and
+    user1729's transversal is a different set of coset representatives, recorded for comparison only. The card
+    now states plainly which proof it displays — its own, over the cosets H beta^n — and which published
+    sentence it cites, Yang's index count. Checked on the page image of Corollary 69.5 (printed p. 423) and
+    against the saved files for both sources, read whole. Not covered: nothing of the exercise's statement.
 - event: source-checked
   by: claude
   date: 2026-11-15
@@ -50,7 +64,7 @@ Show that $H$ has infinite index in $F$.
 
 ::: {.solution}
 
-The count by index is David Yang's first solution, in *MATH104: Topology, Fall 2023*, Homework 12, `HW/hw12.tex` lines 102--116 of `dyang5/MATH104-Topology` at commit 12686a815d58f29aeaadb90a30449ae85c0a613f (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw12.tex#L102-L116: if $H$ had finite index $k$ in $F=\ZZ*\ZZ$, Theorem 85.3 (printed p. 515) with $n+1=2$ would give $H$ rank $k+1\ge2$, but $H=\langle\alpha\rangle\cong\ZZ$ has rank $1$. His second solution asserts that the cosets $\beta^iH$ are distinct without proving it; the reduced-word argument below is this card's and proves it. Math Stack Exchange question 1277144, "Quotienting by generators in free groups" (asked by snar on 2015-05-11), has two answers which take the same cosets apart for another purpose: 1278487 by user1729 (2015-05-12) exhibits the transversal of the right cosets of $\langle a\rangle$ as the freely reduced words beginning with $b^{\pm1}$, and shows $Hu=Hv$ implies $a^iu=a^jv$, with $i,j\in\ZZ$; 1277306 by Sammy Black explains why cancelling a generator requires a normal subgroup. Neither answer states this exercise, so the card keeps its own proof; the transversal argument of the first is the one the card uses.
+The published sentence this card cites is David Yang's first solution, in *MATH104: Topology, Fall 2023*, Homework 12, `HW/hw12.tex` lines 102--116 of `dyang5/MATH104-Topology` at commit 12686a815d58f29aeaadb90a30449ae85c0a613f (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw12.tex#L102-L116: if $H$ had finite index $k$ in $F=\ZZ*\ZZ$, Theorem 85.3 (printed p. 515) with $n+1=2$ free generators for $F$ would give $H$ a system of $k+1$ free generators, while $H=\langle\alpha\rangle\cong\ZZ$ has a system of one. Hence $k+1=1$, by Corollary 69.5 (printed p. 423): the number of free generators of a free group is determined by the group, so the two counts cannot differ, and no positive $k$ gives $k+1=1$. Yang writes that comparison without naming Corollary 69.5, and his second solution asserts that the cosets $\beta^iH$ are distinct without proving it. The proof the card displays below is not either of his: it is the card's own, by the right cosets $H\beta^n$ for $n\in\ZZ$ and the uniqueness of reduced words, and the published sentence it cites is his index count. Math Stack Exchange question 1277144, "Quotienting by generators in free groups" (asked by snar on 2015-05-11), has two answers read here for comparison: 1278487 by user1729 (2015-05-12) exhibits a transversal of the right cosets of $\langle a\rangle$ — the freely reduced words beginning with $b^{\pm1}$, a set of representatives and not the card's cosets $H\beta^n$ — and shows $Hu=Hv$ implies $a^iu=a^jv$ with $i,j\in\ZZ$; 1277306 by Sammy Black explains why cancelling a generator requires a normal subgroup. Neither answer states this exercise, and nothing of either is used.
 
 
 The index of a subgroup $H$ of $G$ is the cardinality of the set $G/H$ of right cosets when that set is finite (Definition, printed p. 514); the index is infinite exactly when there are infinitely many right cosets.

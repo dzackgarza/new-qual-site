@@ -11,6 +11,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Two corrections. First, the step chi(X) = 1 - rank pi_1(X, x_0) cited Theorem 84.7 (printed p. 511), which
+    assumes that X is not a tree; the count that covers both cases is Lemma 85.2 (printed p. 514), which the
+    card now cites, with the tree case named (trivial group, 0 generators, chi = 1) and Theorem 84.7 left to
+    the non-tree case only. Second, the preamble attributed to Yang the citations "Theorem 69.4 and Corollary
+    69.5" for the uniqueness of rank; his file cites Theorem 67.8 alone, which is what the card now says, and
+    Corollary 69.5 (printed p. 423) is the card's own citation in the step that uses it. Checked against
+    tmp/sources/gh-dyang5-MATH104-Topology-E-AL52O.md, read whole, and on the page images of Lemma 85.2
+    (printed p. 514), Theorem 84.7 (printed p. 511) and Corollary 69.5 (printed p. 423). Not covered: the
+    exercise's statement and the disconnected case, which are unchanged.
 - event: source-checked
   by: claude
   date: 2026-11-15
@@ -49,7 +62,7 @@ Show that the Euler number of a finite linear graph $X$ is a topological invaria
 
 ::: {.solution}
 
-The proof is David Yang's, *MATH104: Topology, Fall 2023*, Homework 12, in `HW/hw12.tex` lines 33--59 of `dyang5/MATH104-Topology` at commit 12686a815d58f29aeaadb90a30449ae85c0a613f (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw12.tex#L33-L59. For connected $G$ and $G'$: a homeomorphism induces an isomorphism of fundamental groups; each is free with $1-\chi$ generators (his "Theorem 85.2", which is Lemma 85.2 in the book, printed p. 514); two free groups of finite rank are isomorphic only if their ranks agree, which he reads off their abelianizations as $\ZZ^m$ and $\ZZ^n$ (Theorem 69.4 (printed p. 423) and Corollary 69.5); hence $1-\chi(G)=1-\chi(G')$. For the general case he observes that a homeomorphism carries components to components, applies the connected case to each pair, and adds. The proof below is that argument with the book's numbered results cited at each step.
+The proof is David Yang's, *MATH104: Topology, Fall 2023*, Homework 12, in `HW/hw12.tex` lines 33--59 of `dyang5/MATH104-Topology` at commit 12686a815d58f29aeaadb90a30449ae85c0a613f (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw12.tex#L33-L59. For connected $G$ and $G'$: a homeomorphism induces an isomorphism of fundamental groups; each is free with $1-\chi$ generators (his "Theorem 85.2", which is Lemma 85.2 in the book, printed p. 514); two free groups of finite rank are isomorphic only if their ranks agree, which he does through their abelianizations $\ZZ^m$ and $\ZZ^n$ and his citation of Theorem 67.8 (printed p. 411, that the rank of a free abelian group is determined by the group); hence $1-\chi(G)=1-\chi(G')$. For the general case he observes that a homeomorphism carries components to components, applies the connected case to each pair, and adds. The proof below is that argument with the book's numbered results cited at each step.
 
 
 For a finite linear graph with $V$ vertices and $E$ edges, the Euler number is $\chi(X)=V-E$ (Definition, printed p. 514). A homeomorphism $h:X\to Y$ of finite linear graphs induces an isomorphism $h_*$ of fundamental groups at corresponding base points (Corollary 52.5, printed p. 334).
@@ -68,7 +81,7 @@ $\chi(X)=1-\operatorname{rank}\pi_1(X,x_0)$.
 
 ::: {.pf-proof}
 
-Let $T$ be a maximal tree in the connected graph $X$. By Theorem 84.4 (printed p. 509) $T$ contains all $V$ vertices, and a tree with $V$ vertices has $V-1$ edges. By Theorem 84.7 (printed p. 511) the fundamental group of $X$ is free, with a system of free generators in bijective correspondence with the $E-(V-1)$ edges of $X$ not in $T$. So
+Let $T$ be a maximal tree in the connected graph $X$. By Theorem 84.4 (printed p. 509) $T$ contains all $V$ vertices of $X$, and a tree with $V$ vertices has $V-1$ edges. Lemma 85.2 (printed p. 514) draws exactly this count and gives a system of free generators of $\pi_1(X,x_0)$ of cardinality $1-\chi(X)$; it is the lemma that is needed here rather than Theorem 84.7 (printed p. 511), which assumes that $X$ is not a tree. The case $X=T$ is included: then $E=V-1$, the fundamental group is trivial, and $\chi(X)=1$ by Step 1 of the lemma's proof, so the count $1-\chi(X)=0$ is right. So
 $$
 \operatorname{rank}\pi_1(X,x_0)=E-V+1=1-\chi(X).
 $$
