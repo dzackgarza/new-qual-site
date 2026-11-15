@@ -68,6 +68,56 @@ audit:
     $S^n$ when $h$ misses the antipodes, so it uses the axioms only on self-maps. Checked against
     the book: the exercise and its three axioms on printed p. 367; not claimed: a published source
     for (a) or (c), which none of the sets searched contains.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Parts (a) and (c) now have a published source, in place of the sentences in the 2026-11-11 and
+    2026-11-14 events recording that none was located among the sets searched then. Both are
+    transcribed from Takumi Murayama, *Selected Solutions to Munkres's Topology, 2nd Ed.* (Princeton
+    MAT365, Fall 2012), Exercise 58.10, read 2026-11-15 in the LaTeX source of that set kept at
+    tmp/sources/munkres-solutions-murayama-mat365.tex and published at
+    https://github.com/awasthi/math-solutions/blob/master/Munkres/Munkres%20Solutions.tex: the
+    exercise at line 1631, the proof of (a) at lines 1646-1650 with the retraction supposed at line
+    1648 and the homotopy at line 1649, and the proof of (c) at lines 1659-1667 with the straight
+    line homotopy at line 1662. Murayama sets (a) up in polar coordinates, where his homotopy
+    H(...,t) = r(...,t) has last coordinate rho = t; the card states the same map in Cartesian
+    coordinates as H(x,t) = r(tx), and the argument is otherwise his. Checked against the book: the
+    exercise and its three axioms print on printed p. 367, not on p. 366 as the assignment for this
+    pass said -- the page image of tmp/sources/munkres-2000-topology.pdf (printed page = PDF page -
+    15) shows Exercise 9 beginning on printed p. 366 and Exercise 10 whole on p. 367 -- so this
+    card's page is unchanged. A second published source for both parts was read and is not the one
+    transcribed: Feryll, "Degree of Continuous Maps on S^n (9.58.9-10)", *Praying For Stockholm*,
+    2015-02-01, https://feryll.blogspot.com/2015/02/degree-of-continuous-maps-on-sn-9589-10.html,
+    kept at tmp/sources/feryll-2015-munkres-58-9-10.md, its (a) at line 98 and its (c) at line 114.
+    Its (c) misquotes the exercise as asking about degree different from (-1)^n where printed p. 367
+    asks about degree different from 1, and it states axiom (iii) for every coordinate reflection
+    where printed p. 367 states it for the last coordinate only; its (c) is also a one line
+    reduction to its (b) applied to the antipodal composite, not the homotopy written out. Murayama's
+    statement of the exercise agrees with the book's, the last-coordinate reflection included.
+    Not claimed: that either source's (b) or (d) was used -- those parts keep Hatcher.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Parts (a) and (c) were replaced by the transcription described in the preceding event, and the
+    solution's opening now names Murayama for them and Hatcher for (b) and (d) in one place. Part (a)
+    states the homotopy as H(x,t) = r(tx) instead of going through the inclusion and a constant map:
+    its ends are the constant map at r(0) and the identity on S^n, and the contradiction is read off
+    axioms (i) and (iii) on those two self-maps, with the remark kept that the axioms assign no
+    degree to the inclusion or to r. Part (c) is the source's straight line homotopy
+    G(x,t) = ((1-t)h(x) + tx)/||(1-t)h(x) + tx||, whose denominator vanishes only when t = 1/2 and
+    h(x) = -x, the excluded case. Parts (b) and (d) and the antipodal degree step were re-read and
+    are unchanged, as is the derivation of deg a = (-1)^{n+1} from axioms (ii) and (iii).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-15
+  note: >-
+    All four parts were read against their sources and the book: (a) and (c) against Murayama as
+    named above, (b) and (d) against Hatcher, *Algebraic Topology* (2002), printed pp. 134-135, and
+    the exercise and its axioms against printed p. 367. Checked that each transcribed step uses only
+    the axioms the exercise supplies, and that no step applies a degree to a map that is not a
+    self-map of S^n. Not checked: Murayama's and Feryll's own (b) and (d), which are not used.
 ---
 
 ::: {.exercise}
@@ -95,14 +145,21 @@ Suppose that to every map $h: S^n \to S^n$ we have assigned an integer, denoted 
 
 ::: {.solution}
 The exercise is §58 Exercise 10, printed p. 367, and its hypotheses are the
-three numbered axioms printed there. Parts (b) and (d) are transcribed from
-Hatcher, *Algebraic Topology* (2002): (b) is property (g) of degree in §2.2 with
-its proof, printed p. 134, and (d) is the first half of the proof of Theorem
-2.28, printed pp. 134--135; the preliminary degree of the antipodal map is
-Hatcher's property (f), printed p. 134, and it is re-derived here from the axioms
-because the exercise supplies the axioms and not Hatcher's homology. Parts (a)
-and (c) have no located published source, and their proofs are checked against
-the axioms on printed p. 367.
+three numbered axioms printed there. Parts (a) and (c) are transcribed from
+Takumi Murayama, *Selected Solutions to Munkres's Topology, 2nd Ed.* (Princeton
+MAT365, Fall 2012), Exercise 58.10, in the LaTeX source of that set kept at
+`tmp/sources/munkres-solutions-murayama-mat365.tex` and published at
+https://github.com/awasthi/math-solutions/blob/master/Munkres/Munkres%20Solutions.tex:
+the exercise at line 1631, the proof of (a) at lines 1646--1650 and the proof of
+(c) at lines 1659--1667. Murayama sets (a) up in polar coordinates, where the
+last coordinate of his homotopy is the radius $\rho=t$; the card states the same
+map in Cartesian coordinates, as $H(x,t)=r(tx)$. Parts (b) and (d) are
+transcribed from Hatcher, *Algebraic Topology* (2002): (b) is property (g) of
+degree in §2.2 with its proof, printed p. 134, and (d) is the first half of the
+proof of Theorem 2.28, printed pp. 134--135; the preliminary degree of the
+antipodal map is Hatcher's property (f), printed p. 134, and it is re-derived
+here from the axioms because the exercise supplies the axioms and not Hatcher's
+homology.
 
 Write $a(x)=-x$ for the antipodal map of $S^n$, and let
 $\rho(x_1,\dots,x_{n+1})=(x_1,\dots,x_n,-x_{n+1})$ be the reflection of axiom
@@ -137,16 +194,16 @@ by axiom (ii).
 (a) There is no retraction $r:B^{n+1}\to S^n$.
 
 ::: pf-proof
-Suppose $r$ is a retraction and $i:S^n\to B^{n+1}$ the inclusion, so that
-$r\circ i=\operatorname{id}_{S^n}$ by the definition of a retraction, and let
-$c:S^n\to B^{n+1}$ be the constant map at $\mathbf 0$. The ball is convex, so
-$(x,t)\mapsto(1-t)x$ is a homotopy from $i$ to $c$; composing it with $r$ gives a
-homotopy from $r\circ i=\operatorname{id}_{S^n}$ to $r\circ c$. The map $r\circ c$
-is the constant map of $S^n$ at the point $r(\mathbf 0)$. Both maps in that
-homotopy are self-maps of $S^n$, so the degree axioms apply to them: axiom (i)
-gives $\deg(\operatorname{id}_{S^n})=\deg(r\circ c)$, while axiom (iii) gives
-$\deg(\operatorname{id}_{S^n})=1$ and $\deg(r\circ c)=0$. Hence $1=0$, and no
-retraction exists.
+Suppose a retraction $r:B^{n+1}\to S^n$ exists, and let $i:S^n\to B^{n+1}$ be
+the inclusion. For $x\in S^n$ and $t\in I$ the point $tx$ lies on the radius
+from $\mathbf 0$ through $x$ at distance $t$ from the centre, so it is in
+$B^{n+1}$, and $H(x,t)=r(tx)$ is a continuous map $S^n\times I\to S^n$. Its two
+ends are $H(x,0)=r(\mathbf 0)$, which does not depend on $x$, so that $H_0$ is
+the constant map at $r(\mathbf 0)$, and $H(x,1)=r(x)=x$ because
+$r\circ i=\operatorname{id}_{S^n}$, so that $H_1=\operatorname{id}_{S^n}$. Both
+ends are self-maps of $S^n$, and $H$ is a homotopy between them, so axiom (i)
+gives $\deg H_0=\deg H_1$, while axiom (iii) gives $\deg H_0=0$ for the constant
+map and $\deg H_1=1$ for the identity. Hence $1=0$, and no such $r$ exists.
 
 The axioms assign a degree only to a map $S^n\to S^n$, so the argument never
 mentions $\deg i$ or $\deg r$, which are not defined for the inclusion
@@ -180,15 +237,19 @@ fixed points has degree $(-1)^{n+1}$, and a map of the other degree has one.
 (c) If $h:S^n\to S^n$ has $\deg h\ne1$, then $h(x)=-x$ for some $x$.
 
 ::: pf-proof
-Again contrapositively, suppose $h(x)\ne-x$ for every $x$, and consider
+Again contrapositively, suppose $h(x)\ne-x$ for every $x\in S^n$, and set
 $$
-g_t(x)=\frac{(1-t)h(x)+tx}{\norm{(1-t)h(x)+tx}},\qquad 0\le t\le1 .
+G(x,t)=\frac{(1-t)h(x)+tx}{\norm{(1-t)h(x)+tx}},\qquad 0\le t\le1 .
 $$
-A zero of the numerator gives $(1-t)\norm{h(x)}=t\norm x$, so $1-t=t$ and
-$h(x)=-x$, which is excluded; so $g_t$ is a continuous map into $S^n$, with
-$g_0=h$ and $g_1=\operatorname{id}_{S^n}$. By axiom (i) and axiom (iii),
-$\deg h=\deg(\operatorname{id})=1$, so a map of degree other than $1$ must take
-some point to its antipode.
+The denominator does not vanish: if $(1-t)h(x)+tx=\mathbf 0$, then
+$(1-t)h(x)=-tx$, and comparing norms, with $\norm{h(x)}=\norm x=1$, gives
+$1-t=t$, so $t=1/2$ and $h(x)=-x$, which is excluded. Hence $G$ is defined, and
+it is continuous on $S^n\times I$, being a composition of continuous functions of
+$x$ and $t$; its values lie in $S^n$ because the numerator has the norm of the
+denominator, and $G(x,0)=h(x)$, $G(x,1)=x$. So $G$ is a homotopy from $h$ to
+$\operatorname{id}_{S^n}$, and axioms (i) and (iii) give
+$\deg h=\deg(\operatorname{id})=1$. A map whose degree is not $1$ therefore
+takes some point to its antipode.
 :::
 
 :::
