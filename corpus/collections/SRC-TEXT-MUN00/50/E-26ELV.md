@@ -34,6 +34,26 @@ audit:
     exercise's hint; (e) needs a locally finite sum of the functions 1 - phi_n, which the card obtains from the
     nesting C_n inside the interior of C_{n+1}; (f) closes with Baire and the observation that two distinct
     points lie in some C_n at distance at least 1/n. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Two parts of Munkres §50 Exercise 6 (printed pp. 315--316) are
+    asked on Math StackExchange, and both answers agree with the card. Part (b) is question 1626767, "Exercise
+    6 in section 50 in Topology textbook of Munkres" (2016-01-25), whose answer 1627645 by Birkhoff
+    (2016-01-26), kept at tmp/sources/mse-1626767-munkres-50-6a.md, extends $f$ by $\hat f(\infty)=\infty$ and
+    gets closedness of the image from a sequence argument inside the compactification; the card's step
+    [](#s2) instead uses that $\hat f$ is an injective continuous map of the compact Hausdorff $X^*$ into a
+    Hausdorff space, hence an embedding with compact, therefore closed, image, and then
+    $f(X)=\hat f(X^*)\cap\RR^N$, which needs no sequence. Part (d) is question 1650910, "Another question from
+    Exercise 6d in section 50 in Munkres' textbook in Topology" (2016-02-11), whose answer 2825193 by Will
+    Fisher (2018-06-19), kept at tmp/sources/mse-1650910-munkres-50-6d.md, proves the density by reducing to
+    the compact metrizable case: $C$ is compact Hausdorff, second countable and of dimension at most $m$, so
+    it is metrizable by the Urysohn metrization theorem and the density lemma of the imbedding theorem applies
+    to $\mathcal{C}(C,\RR^{2m+1})$; the card's step [](#s4) is the same reduction followed by the Tietze device
+    of the exercise's hint. Neither answer touches (a), (c), (e) or (f), which remain the card's. The AoPS
+    post *Topology by Munkres Chapter 8 | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630)
+    answers §50 with its formulas lost; Murayama and dbFin have no Chapter 8. Nothing needed correction.
 ---
 
 ::: {.exercise}
