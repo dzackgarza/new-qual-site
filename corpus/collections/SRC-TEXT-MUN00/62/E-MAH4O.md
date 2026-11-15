@@ -28,9 +28,13 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Searched outside the checkout for a published solution of this exercise (issue #144) and located
-    none; the queries and every source searched are in the COMPLAINTS.md entry for §61--§64. The
-    The card's proof is its own, checked on 2026-11-11 against Lemma 61.2 (printed p. 377), the Borsuk lemma Lemma 62.2 (printed p. 382) and the definition of separation on printed p. 378, as the note above records; it was not re-read in this pass. The printed page of the exercise is 384.
+    Munkres §62 Exercise 4, printed p. 384. Searched outside the checkout for issue #144 on the orchestrator's
+    machine, recorded in tmp/sources/mse-searches-144.md; no thread was saved because no question on the exercise
+    was found. The queries were "simple closed curve punctured plane inclusion fundamental group", "Munkres Borsuk
+    lemma", the title query "simple closed curve fundamental group", "unbounded component" "j_*" trivial, and the
+    /similar query of the exercise's own statement. Nothing is transcribed. The card's proof is its own, checked on
+    2026-11-11 against Lemma 61.2 (printed p. 377), the Borsuk lemma Lemma 62.2 (printed p. 382) and the definition
+    of separation on printed p. 378, as the note above records; it was not re-read in this pass.
 ---
 
 ::: {.exercise}
