@@ -30,6 +30,18 @@ audit:
     order of refinements and the $T_1$ axiom. The argument: for distinct a, b the two open sets X - {a} and
     X - {b} cover X; a refinement of order 1 has pairwise disjoint members, none of them all of X, so splitting
     it at one member separates X, contradicting connectedness. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Nothing located proves Munkres §50 Exercise 2 (printed p. 305),
+    and the card's own argument stands: the two-set cover by the complements of two distinct points refines to
+    a cover of order at most 1 only if that cover separates the space. Murayama's selection has no Chapter 8,
+    dbFin has no chapter-8 page, the ten GitHub repositories of Munkres solutions listed in COMPLAINTS.md stop
+    before §36, and the AoPS post *Topology by Munkres Chapter 8 | Day 18*
+    (https://artofproblemsolving.com/community/c3401823h3647630) answers §50 with its formulas lost. The
+    Stack Exchange queries of this pass are in the COMPLAINTS.md entry for §43--§50; none of them returned this
+    exercise. Nothing needed correction.
 ---
 
 ::: {.exercise}
