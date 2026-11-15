@@ -22,6 +22,17 @@ audit:
     cover and the conclusion are recorded in COMPLAINTS.md under the entry for the net
     exercises of §29; the card's own proof is kept. The statement was read against Munkres,
     Topology (2000), §29 supplementary exercises on nets, printed pp. 187-188.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Transcribed from dbFin, "Supplementary Exercises*: Nets: Problem 2 Solution",
+    https://dbfin.com/topology/munkres/chapter-3/supplementary-exercises-nets/problem-2-solution/,
+    read 2026-11-15, text at tmp/sources/dbfin/supplementary-exercises-nets/problem-2.md, and
+    checked against Math StackExchange 4068934, answer 4068942 by Arturo Magidin (2021-03-20),
+    https://math.stackexchange.com/questions/4068934, which is the same two-line argument.
+    dbFin's page states the upper bound only; the card also states that the restricted order is a
+    partial order, as Magidin's answer does. This supersedes the 2026-11-10 note above.
 ---
 
 ::: {.exercise}
@@ -34,109 +45,29 @@ Show that if $J$ is a directed set and $K$ is cofinal in $J$, then $K$ is a dire
 
 ::: pf
 
-::: {.pf-step #directed-set-definition}
-Definition and properties of a directed set:
-
-::: pf-proof
-
 ::: pf-step
-A set $(J, \preceq)$ is a **directed set** if:
-(i) $\preceq$ is a preorder on $J$ (reflexive: $\alpha \preceq \alpha$, and transitive: $\alpha \preceq \beta \land \beta \preceq \gamma \implies \alpha \preceq \gamma$), and
-(ii) for every pair $\alpha_1, \alpha_2 \in J$, there exists an upper bound $\gamma \in J$ such that $\alpha_1 \preceq \gamma$ and $\alpha_2 \preceq \gamma$.
+The relation $\preceq$ restricted to $K$ is a partial order on $K$.
 
 ::: pf-proof
-definition of a directed set.
+A restriction of a reflexive, transitive and antisymmetric relation has the same three properties, and for $a, b \in K$ the statements $a \preceq b$ and $b \preceq a$ still say what they said in $J$.
 :::
 
 :::
 
 ::: pf-step
-The subset $K \subseteq J$ inherits the relation $\preceq$.
-Since reflexivity and transitivity hold on all elements of $J$, they hold on all elements of $K$.
+Every pair of elements of $K$ has an upper bound in $K$.
 
 ::: pf-proof
-restriction of a preorder to a subset.
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #common-upper-bounds-in-k}
-Existence of common upper bounds in $K$:
-
-::: pf-proof
-
-::: pf-step
-Let $k_1, k_2 \in K$ be arbitrary elements.
-Since $K \subseteq J$, $k_1, k_2 \in J$.
-
-::: pf-proof
-subset containment.
+Let $a, b \in K$. Since $J$ is directed, there is $\alpha \in J$ with $a \preceq \alpha$ and $b \preceq \alpha$. Since $K$ is cofinal in $J$, there is $\beta \in K$ with $\alpha \preceq \beta$. Transitivity gives $a \preceq \beta$ and $b \preceq \beta$, and $\beta$ lies in $K$.
 :::
 
 :::
 
 ::: pf-step
-Since $J$ is directed, there exists an element $\alpha \in J$ such that:
-$$
-k_1 \preceq \alpha \quad \text{and} \quad k_2 \preceq \alpha.
-$$
+$K$ is a directed set. $\square$
 
 ::: pf-proof
-directedness of $J$.
-:::
-
-:::
-
-::: {.pf-step #cofinal-upper-bound}
-Since $K$ is cofinal in $J$, there exists an element $\beta \in K$ such that:
-$$
-\alpha \preceq \beta.
-$$
-
-::: pf-proof
-definition of cofinality of $K$ in $J$.
-:::
-
-:::
-
-::: {.pf-step #transitivity-gives-upper-bound}
-By transitivity of $\preceq$:
-$$
-k_1 \preceq \alpha \text{ and } \alpha \preceq \beta \implies k_1 \preceq \beta,
-$$
-$$
-k_2 \preceq \alpha \text{ and } \alpha \preceq \beta \implies k_2 \preceq \beta.
-$$
-
-::: pf-proof
-transitivity of preorder $\preceq$.
-:::
-
-:::
-
-::: pf-step
-Thus $\beta \in K$ is a common upper bound for $k_1$ and $k_2$ in $K$.
-
-::: pf-proof
-Steps [](#cofinal-upper-bound){.pf-ref} and [](#transitivity-gives-upper-bound){.pf-ref}.
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-Conclusion:
-$K$ with the inherited relation is a directed set. Q.E.D.
-
-::: pf-proof
-Steps [](#directed-set-definition){.pf-ref} and [](#common-upper-bounds-in-k){.pf-ref}.
+Step 1 gives the partial order and step 2 gives the upper bound of every pair, which is the whole of the definition.
 :::
 
 :::
