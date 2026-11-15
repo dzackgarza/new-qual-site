@@ -55,7 +55,9 @@ audit:
   note: >-
     The published-solution remark now says what the two located entries contain.
     Egbert's V.5.5 is one sentence, a cross-reference to his V.2.5(a), on printed
-    p. 299 of tmp/sources/hartshorne-solutions-egbert.pdf. Yang Pi-Yeh's Solution
+    p. 299 of tmp/sources/hartshorne-solutions-egbert.pdf, whose MinerU text
+    version tmp/sources/hartshorne-solutions-egbert.md carries the same sentence
+    at its line 12794. Yang Pi-Yeh's Solution
     5.5.5 runs on printed pp. 113--114 of
     tmp/sources/lfwin-hartshorne-solutions.pdf: it opens at the foot of p. 113,
     p. 114 opens with the tail of that page's last sentence ("... we may assume
@@ -545,7 +547,9 @@ line-bundle twist.
 
 ::: {.remark title="Published solutions"}
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.5, printed p. 299 of
-`tmp/sources/hartshorne-solutions-egbert.pdf` --- his numbering is one ahead, so his "5.5.6" is this
+`tmp/sources/hartshorne-solutions-egbert.pdf`, read in its MinerU text version
+`tmp/sources/hartshorne-solutions-egbert.md` (entry `5.5.6` at line 12786; printed folio = PDF page
+number) --- his numbering is one ahead, so his "5.5.6" is this
 exercise --- says only "Consequence of my proof of exc V.2.5.a". That is a cross-reference, not a proof.
 
 Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.5.5, printed pp. 113--114 of
