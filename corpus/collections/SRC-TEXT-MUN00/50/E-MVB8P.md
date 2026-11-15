@@ -35,6 +35,19 @@ audit:
     where no retained member can occur because it would have to lie in X_n. In (d) the cover consists of the sets
     that are eventually retained, and a member through a point of X_n must appear by stage n+1, so the order
     bound passes to the limit. Nothing needed correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144). Nothing located proves Munkres §50 Exercise 8 (printed p. 317).
+    Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, and the ten GitHub repositories of
+    Munkres solutions listed in COMPLAINTS.md stop before §36. The AoPS post *Topology by Munkres Chapter 8 |
+    Day 18* (https://artofproblemsolving.com/community/c3401823h3647630) answers §50 with its formulas lost, and
+    the Stack Exchange queries of this pass, listed in the COMPLAINTS.md entry for §43--§50, returned no
+    question on it. The exercise is an outline, and the part that carries its content is (d), where the sets
+    $D(B)$ must be shown to be open and the family $\mathcal B_{n+1}$ to refine $\mathcal B_n$ and to have
+    order at most $m+1$ at points of $X_{n+1}$ while its elements are unchanged off $X_{n-1}$; the card works
+    through (a)--(d) in that form. Nothing needed correction.
 ---
 
 ::: {.exercise}
