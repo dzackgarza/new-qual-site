@@ -35,9 +35,11 @@ audit:
     Searched outside the checkout (issue #144). Math StackExchange 431747, "Construct a metric for the
     topology of compact convergence on Y^X so that Y^X is complete when (Y,d) is complete and X is
     sigma-compact" (2013-06-28), is this exercise. Answer 432280 by Daniel Fischer builds the metric
-    sup_n eps_n min{1, sup_{K_n} d(f,g)} on an exhaustion of X by compact sets, proves that it
-    induces the topology of compact convergence in both directions and that its Cauchy sequences
-    converge compactly, and answer 3353044 by tadejsv shows that a space sigma-compact in Munkres'
+    sup_n eps_n min{1, sup_{K_n} d(f,g)} on an exhaustion of X by compact sets and proves that it
+    induces the topology of compact convergence in both directions, for its supremum construction
+    only, leaving the sum construction to the reader, and it treats completeness in two sentences:
+    the pointwise limit of a delta-Cauchy sequence exists, and that the convergence is compact is
+    "an easy exercise". Answer 3353044 by tadejsv shows that a space sigma-compact in Munkres'
     sense is hemicompact, so that the exhaustion catches every compact set: with A_i the compact sets
     of the definition, K_n the union of the first n, every compact subset of X lies in some K_n
     because it is covered by finitely many interiors. The card's part (b) is the same construction by
@@ -48,6 +50,24 @@ audit:
     tmp/sources/aops-shooting-star-munkres-ch7-day17.md), also answers the exercise at its item 10 of
     §46 with its formulas lost; the queries of this pass are in the COMPLAINTS.md entry for
     §43--§50.
+- event: source-corrected
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Part (b) asserted three things it did not prove, reported by a reader of this card: that the
+    series metric induces compact convergence, that the image of the restriction map is closed, and
+    that each product factor is complete. It now proves the two inclusions of neighbourhoods in the
+    two topologies by explicit radii, B_rho(f, 2^{-N} min{eps,1}) inside B_C(f, eps) once C is
+    contained in A_N and B_{A_N}(f, eps/2) inside B_rho(f, eps) once 2^{-N} < eps/2, both using
+    A_i contained in A_N; it now proves closedness of the compatibility subspace from the fact that
+    each restriction Y_{i+1} -> Y_i is 1-Lipschitz and each Y_i is Hausdorff, so that the diagonal
+    of Y_i x Y_i is closed; and it now says why the countable product of the complete Y_i is
+    complete. The same pass corrects the 2026-11-15 note above, which credited Fischer's answer
+    with a proof of the topology for both of his constructions and with the Cauchy step: he proves
+    the topology for the supremum construction only, leaves the sum construction to the reader, and
+    leaves the compactness of the convergence of a Cauchy sequence as an exercise. The text of his
+    answer was read from the Stack Exchange API in this pass. Part (a) is unchanged and was not
+    re-read.
 ---
 
 ::: {.exercise}
@@ -73,11 +93,21 @@ Define
 $$
 \rho(f,g)=\sum_{i=1}^\infty2^{-i}\rho_i(f\restrict_{A_i},g\restrict_{A_i}).
 $$
-This induces exactly compact convergence: every compact $C\subset X$ is covered by finitely many $\operatorname{Int}A_i$, hence lies in some $A_N$, while each $A_i$ itself is compact.
+This induces exactly compact convergence, in both directions. Let $f\in Y^X$, let $C\subset X$ be compact and let $0<\epsilon\le1$. The interiors $\operatorname{Int}A_i$ cover $C$, so finitely many of them cover it, and since the $A_i$ increase, $C\subset A_N$ for some $N$. If $\rho(f,g)<2^{-N}\min\{\epsilon,1\}$ then $2^{-N}\rho_N(f,g)<2^{-N}\min\{\epsilon,1\}$, so $\rho_N(f,g)<\min\{\epsilon,1\}\le1$, and a minimum of $1$ and a number below $1$ being that number, $\sup_{A_N}d(f,g)=\rho_N(f,g)<\epsilon$; then $\sup_Cd(f,g)\le\sup_{A_N}d(f,g)<\epsilon$ because $C\subset A_N$. So
+$$
+B_\rho\bigl(f,2^{-N}\min\{\epsilon,1\}\bigr)\subset B_C(f,\epsilon).
+$$
+Conversely, choose $N$ with $2^{-N}<\epsilon/2$ and suppose $\sup_{A_N}d(f,g)<\epsilon/2$. For $i\le N$ the inclusion $A_i\subset A_N$ gives $\rho_i(f\restrict_{A_i},g\restrict_{A_i})\le\sup_{A_N}d(f,g)<\epsilon/2$, a bound that is below $1$, and for $i>N$ one has $\rho_i\le1$; hence
+$$
+\rho(f,g)\le\sum_{i=1}^{N}2^{-i}\frac{\epsilon}{2}+\sum_{i>N}2^{-i}<\frac{\epsilon}{2}+2^{-N}<\epsilon,
+$$
+that is $B_{A_N}(f,\epsilon/2)\subset B_\rho(f,\epsilon)$. A ball of radius at least $1$ is the whole space, so the two topologies have the same neighbourhoods of each point.
 
 The restriction map
 $$
 R:Y^X\to\prod_iY_i,\qquad f\mapsto(f\restrict_{A_i})
 $$
-identifies $Y^X$ with the closed compatibility subspace $u_{i+1}\restrict_{A_i}=u_i$. If $Y$ is complete, each uniform function space $Y_i$ is complete (pointwise limits of uniform Cauchy families exist and convergence is uniform), so the metric $\sum_i 2^{-i}\rho_i$ on $\prod_iY_i$ is complete, and $R$ is an isometry from $(Y^X,\rho)$ onto the compatibility subspace. A closed subspace is complete, so $(Y^X,\rho)$ is complete.
+is injective, and its image is the set of points $u$ with $u_{i+1}\restrict_{A_i}=u_i$ for every $i$. That image is closed. For fixed $i$ the restriction $\varphi_i:Y_{i+1}\to Y_i$ is $1$-Lipschitz, since $\sup_{A_i}d\le\sup_{A_{i+1}}d$, hence continuous, so $u\mapsto(u_i,\varphi_i(u_{i+1}))$ is a continuous map $\prod_jY_j\to Y_i\times Y_i$; the diagonal of $Y_i\times Y_i$ is closed there, $Y_i$ being a metric space; so the $i$-th compatibility condition is a closed subset of the product, and their intersection, the image of $R$, is closed. Moreover $R$ is an isometry onto its image, since $\rho$ was defined as a series of the coordinate metrics.
+
+If $Y$ is complete then each uniform function space $Y_i$ is complete: a $\rho_i$-Cauchy sequence is uniformly Cauchy on $A_i$ because $\rho_i$ is $1$-bounded, it converges pointwise by completeness of $Y$, and the pointwise limit is the uniform limit, a uniform Cauchy sequence converging uniformly to its pointwise limit. The metric $\sum_i2^{-i}\rho_i$ on $\prod_iY_i$ is then complete: a Cauchy sequence in it is Cauchy in each coordinate, since $2^{-i}\rho_i\le\rho$, so it converges coordinatewise, and it converges in $\rho$ as well, because for a given $\epsilon$ one takes $N$ with $2^{-N}<\epsilon/2$ and then, beyond an index where the first $N$ coordinates are within $\epsilon/2$ of their limits, every term is within $\epsilon$. A closed subspace of a complete metric space is complete, so the compatibility subspace is complete, and $R^{-1}$ carries $\rho$ back, $(Y^X,\rho)$ being isometric to it. Hence $(Y^X,\rho)$ is complete.
 :::
