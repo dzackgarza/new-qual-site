@@ -23,6 +23,23 @@ audit:
     cover and the conclusion are recorded in COMPLAINTS.md under the entry for the net
     exercises of §29; the card's own proof is kept. The statement was read against Munkres,
     Topology (2000), §29 supplementary exercises on nets, printed pp. 187-188.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Transcribed from dbFin, "Supplementary Exercises*: Nets: Problem 10 Solution",
+    https://dbfin.com/topology/munkres/chapter-3/supplementary-exercises-nets/problem-10-solution/,
+    read 2026-11-15, text at tmp/sources/dbfin/supplementary-exercises-nets/problem-10.md, which
+    follows the printed hint: the sets B_alpha = {x_beta : alpha <= beta} have the finite
+    intersection property after taking closures, compactness gives a point of the intersection, and
+    that point is an accumulation point; conversely the finite subsets of a family with the finite
+    intersection property index a net whose accumulation point lies in every member. Three things
+    are corrected, none of them mathematical: dbFin writes "let x be the intersection of the
+    closures", where compactness gives only that the intersection is nonempty and one chooses a
+    point of it; it writes "beta subset {k}" where the inclusion it uses is {k} subset beta; and its
+    second direction ends at an accumulation point without saying that the lemma of Exercise 9
+    turns one into a convergent subnet, which is how the card passes between the two forms. This
+    supersedes the 2026-11-10 note above.
 ---
 
 ::: {.exercise}
@@ -37,158 +54,29 @@ $X$ is compact if and only if every net in $X$ has a convergent subnet.
 
 ::: pf
 
-::: {.pf-step #cluster-point-subnet-equivalence}
-Equivalence of convergent subnets and cluster points:
-
-::: pf-proof
-
 ::: pf-step
-A point $x \in X$ is a **cluster point** of a net $(x_\alpha)_{\alpha \in A}$ if for every neighborhood $U$ of $x$ and every $\alpha \in A$, there exists $\beta \succeq \alpha$ such that $x_\beta \in U$.
+If $X$ is compact, then every net in $X$ has an accumulation point.
 
 ::: pf-proof
-definition of net cluster point.
+Let $(x_\alpha)_{\alpha \in J}$ be a net. For $\alpha \in J$ put $B_\alpha = \theset{x_\beta \mid \alpha \preceq \beta}$, and let $F_\alpha = \overline{B_\alpha}$. The family $\theset{F_\alpha}$ has the finite intersection property: for $\alpha_1, \dots, \alpha_n \in J$ there is $\gamma \in J$ with $\alpha_i \preceq \gamma$ for each $i$, and then $x_\gamma \in B_{\alpha_1} \cap \dots \cap B_{\alpha_n} \subset F_{\alpha_1} \cap \dots \cap F_{\alpha_n}$. The sets $F_\alpha$ are closed and $X$ is compact, so $\bigcap_\alpha F_\alpha \ne \varnothing$; choose $x$ in it. Let $U$ be a neighborhood of $x$ and $\alpha \in J$. Since $x \in \overline{B_\alpha}$, the set $U$ meets $B_\alpha$, so there is $\beta \succeq \alpha$ with $x_\beta \in U$. Thus $x$ is an accumulation point of the net.
 :::
 
 :::
 
 ::: pf-step
-A net $(x_\alpha)_{\alpha \in A}$ has a convergent subnet converging to $x$ if and only if $x$ is a cluster point of $(x_\alpha)$.
+If every net in $X$ has an accumulation point, then $X$ is compact.
 
 ::: pf-proof
-standard characterization of subnets.
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #forward-direction}
-Forward direction ($\implies$): Compactness implies every net has a convergent subnet:
-
-::: pf-proof
-
-::: pf-step
-Let $X$ be compact, and let $(x_\alpha)_{\alpha \in A}$ be a net in $X$.
-For each $\alpha \in A$, define the tail set $T_\alpha = \{x_\beta \mid \beta \succeq \alpha\}$ and its closed closure $F_\alpha = \overline{T_\alpha}$.
-
-::: pf-proof
-definition of closed tails.
+Let $\mathcal{A}$ be a collection of closed subsets of $X$ with the finite intersection property; it suffices to show $\bigcap \mathcal{A} \ne \varnothing$. Let $K$ be the set of nonempty finite subsets of $\mathcal{A}$, ordered by reverse inclusion, a directed set because the union of two finite subsets is one. For $\alpha \in K$ the set $\bigcap_{A \in \alpha} A$ is a finite intersection of members of $\mathcal{A}$, hence nonempty; choose $x_\alpha$ in it. By hypothesis the net $(x_\alpha)$ has an accumulation point $x$. Let $A \in \mathcal{A}$ and let $U$ be a neighborhood of $x$. Since $x$ is an accumulation point and $\{A\} \in K$, there is $\alpha \in K$ with $\{A\} \subset \alpha$ and $x_\alpha \in U$. Then $x_\alpha \in \bigcap_{B \in \alpha} B \subset A$, so $U \cap A \ne \varnothing$. Thus $x$ lies in the closure of $A$, which is $A$; as $A$ was arbitrary, $x \in \bigcap \mathcal{A}$.
 :::
 
 :::
 
 ::: pf-step
-The family $\{F_\alpha\}_{\alpha \in A}$ has the Finite Intersection Property (FIP):
-For any finite collection $\{\alpha_1, \dots, \alpha_n\} \subseteq A$, directedness of $A$ provides $\gamma \in A$ with $\gamma \succeq \alpha_i$ for all $1 \le i \le n$.
-Then $x_\gamma \in T_{\alpha_i} \subseteq F_{\alpha_i}$ for each $i$, so $x_\gamma \in \bigcap_{i=1}^n F_{\alpha_i} \neq \emptyset$.
+$X$ is compact if and only if every net in $X$ has a convergent subnet. $\square$
 
 ::: pf-proof
-directedness of $A$.
-:::
-
-:::
-
-::: pf-step
-Since $X$ is compact and $\{F_\alpha\}$ has the FIP, the total intersection is non-empty:
-$$
-\bigcap_{\alpha \in A} F_\alpha = \bigcap_{\alpha \in A} \overline{T_\alpha} \neq \emptyset.
-$$
-
-::: pf-proof
-FIP characterization of compactness.
-:::
-
-:::
-
-::: pf-step
-Choose $x \in \bigcap_{\alpha \in A} \overline{T_\alpha}$.
-For every neighborhood $U$ of $x$ and any $\alpha \in A$, $x \in \overline{T_\alpha} \implies U \cap T_\alpha \neq \emptyset$.
-Thus there exists $\beta \succeq \alpha$ with $x_\beta \in U$, so $x$ is a cluster point of $(x_\alpha)$.
-By step [](#cluster-point-subnet-equivalence){.pf-ref}, $(x_\alpha)$ has a subnet converging to $x$.
-
-::: pf-proof
-topological closure definition.
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #reverse-direction}
-Reverse direction ($\impliedby$): Every net having a convergent subnet implies compactness:
-
-::: pf-proof
-
-::: pf-step
-If $X=\varnothing$, it is compact. Otherwise the empty family has intersection $X\ne\varnothing$, so it suffices to consider a nonempty family $\mathcal A$ of closed subsets of $X$ with the FIP.
-Let $\mathcal{B}$ be the collection of all non-empty finite intersections of members of $\mathcal{A}$:
-$$
-\mathcal{B} = \{F_1 \cap \dots \cap F_n \mid F_i \in \mathcal{A}, \, n \ge 1\}.
-$$
-
-::: pf-proof
-definition of finite intersections.
-:::
-
-:::
-
-::: pf-step
-Direct $\mathcal{B}$ by reverse inclusion: $B_1 \preceq B_2 \iff B_2 \subseteq B_1$.
-For any $B_1, B_2 \in \mathcal{B}$, $B_1 \cap B_2 \in \mathcal{B}$ with $B_1 \cap B_2 \subseteq B_1, B_2$, so $B_1 \cap B_2 \succeq B_1, B_2$. Thus $(\mathcal{B}, \preceq)$ is a directed set.
-
-::: pf-proof
-closure of $\mathcal{B}$ under finite intersections.
-:::
-
-:::
-
-::: pf-step
-For each $B \in \mathcal{B}$, choose an element $x_B \in B$.
-This defines a net $(x_B)_{B \in \mathcal{B}}$ in $X$.
-By hypothesis, this net has a convergent subnet, hence a cluster point $x \in X$.
-
-::: pf-proof
-Axiom of Choice and hypothesis.
-:::
-
-:::
-
-::: pf-step
-For any $F \in \mathcal{A}$, note $F \in \mathcal{B}$.
-For all $B \succeq F$ in $\mathcal{B}$, $B \subseteq F$, so $x_B \in B \subseteq F$.
-Thus the tail $\{x_B \mid B \succeq F\} \subseteq F$.
-Since $F$ is closed and $x$ is a cluster point of $(x_B)$, we have $x \in \overline{\{x_B \mid B \succeq F\}} \subseteq \overline{F} = F$.
-
-::: pf-proof
-closed sets contain all cluster points of their sub-tails.
-:::
-
-:::
-
-::: pf-step
-Since $x \in F$ for every $F \in \mathcal{A}$, we obtain $x \in \bigcap_{F \in \mathcal{A}} F \neq \emptyset$.
-Thus $X$ is compact.
-
-::: pf-proof
-FIP characterization of compactness.
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-Conclusion:
-$X$ is compact if and only if every net in $X$ has a convergent subnet. Q.E.D.
-
-::: pf-proof
-Steps [](#forward-direction){.pf-ref} and [](#reverse-direction){.pf-ref}.
+If $X$ is compact, step 1 produces an accumulation point of any net and the lemma of the preceding exercise produces a subnet converging to it. Conversely if every net has an accumulation point, step 2 gives compactness, and every net then has a convergent subnet by the same lemma. So both conditions are equivalent to every net having an accumulation point.
 :::
 
 :::
