@@ -69,6 +69,30 @@ audit:
     compute the intersection, so the repair is the card's own and the source's claim stands.
     Checked against the book: the exercise and its hint on printed p. 367, the definition of
     deformation retract on printed p. 360, and the tube lemma, Lemma 26.8, on printed p. 168.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    The last step of the first part is now supplied, from a second reader's report on
+    this card. That step said that the constant map at the point x_0 and the identity
+    are homotopic "because X is contractible", but the contraction written out just
+    before it is a homotopy from the identity to the constant map at (0,0), the
+    origin of the comb, and it never reaches x_0 = (0,1). The step now goes through
+    the path t :-> (0,t), which lies in X because 0 x I is one of the comb's
+    segments, and the homotopy G(x,t) = (0,t) that it gives from the constant map at
+    (0,0) to the constant map at x_0; transitivity of homotopy (Lemma 51.1) then puts
+    the identity homotopic to i o r. The alternative route through the book is
+    recorded: a contractible space is path connected (§51 Exercise 3(b)), so the set
+    [X,X] has a single element (§51 Exercise 3(d)). The second part, that the point
+    is not a deformation retract, and with it the tube-lemma argument and the
+    computation of U cap X, is unchanged. Checked against the book: the exercise and
+    its hint on printed p. 366 -- the card and the note of 2026-11-14 gave p. 367,
+    and §58 exercises 1 to 8 are on p. 366, read on the page image of the PDF, where
+    the exercise is printed with its star -- Lemma 51.1 on printed p. 324, §51
+    Exercise 3 on printed p. 330, the definition of a deformation retract on printed
+    p. 360 and the definition of homotopy inverse on printed p. 363. Not claimed:
+    that the book's own hint is used; the card reaches the other half of the exercise
+    by the tube lemma, as its earlier note records.
 ---
 
 ::: {.exercise}
@@ -78,7 +102,7 @@ Find a space $X$ and a point $x_0$ of $X$ such that the inclusion $\theset{x_0} 
 :::
 
 ::: {.solution}
-The exercise is §58 Exercise 8, printed p. 367, with the space and the point of
+The exercise is §58 Exercise 8, printed p. 366, with the space and the point of
 its hint: $X$ is the union of the segments $\theset{1/n}\times I$ for
 $n\in\ZZ_+$, of $0\times I$ and of $I\times 0$ in $\RR^2$, and $x_0=(0,1)$.
 
@@ -108,10 +132,21 @@ retraction of the interval $I\times 0$ onto $(0,0)$. So $\operatorname{id}_X$ is
 homotopic to the constant map at $(0,0)$, and $X$ is contractible.
 
 Let $r:X\to\theset{x_0}$ be the only map. Then $r\circ i=
-\operatorname{id}_{\theset{x_0}}$, and $i\circ r$ is the constant map at $x_0$,
-which is homotopic to $\operatorname{id}_X$ because $X$ is contractible. So $i$
-and $r$ are homotopy inverse by the definition on printed p. 363, and $i$ is a
-homotopy equivalence.
+\operatorname{id}_{\theset{x_0}}$, and $i\circ r$ is the constant map at $x_0$.
+The contraction above ends at $(0,0)$ and not at $x_0$, and the step from one to the
+other is the path $t\mapsto(0,t)$: it is a path in $X$, since $0\times I\subseteq
+X$, running from $(0,0)$ to $x_0=(0,1)$, and
+$$
+G(x,t)=(0,t)
+$$
+is a homotopy, independent of $x$, from the constant map at $(0,0)$ to the constant
+map at $x_0$. So $\operatorname{id}_X$ is homotopic to the constant map at $x_0$ by
+transitivity of homotopy (Lemma 51.1), that is, $i\circ r\simeq\operatorname{id}_X$;
+equivalently, $X$ being contractible it is path connected by §51 Exercise 3(b)
+(printed p. 330), and then any two of its self-maps are homotopic by §51 Exercise
+3(d). With
+$r\circ i=\operatorname{id}_{\theset{x_0}}$, the maps $i$ and $r$ are homotopy
+inverse by the definition on printed p. 363, and $i$ is a homotopy equivalence.
 :::
 
 :::
