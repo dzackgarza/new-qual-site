@@ -26,6 +26,22 @@ audit:
     extension of pi_1, pi_2 to G_1 * G_2 by the uniqueness of the reduced word (Theorem 68.2, printed p. 415)
     and the extension condition of Lemma 68.3 (printed p. 418). The two 3-letter words are computed on the
     card rather than asserted, which is what "Check the details" asks for.
+- event: source-checked
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Searched outside the checkout (issue #144) for §68 Exercise 1 (printed p. 414); queries and sets are in the
+    COMPLAINTS.md entry for §66--§73 of SRC-TEXT-MUN00. Queries used: "Munkres section 68 exercise free product
+    permutations of {0,1,2} example S_3 not free product of two subgroups order 2 solution" and "Munkres Check
+    the details of Example 1 free product S_3 permutations three elements exercise 68.1". Nothing located on
+    the exercise: the questions returned are on free products in general (116233, 1835294, 4884788) and on the
+    symmetric group (368433), and no body could be read, the API reporting "too many requests from this IP" and
+    the question pages a Cloudflare human check. dbFin has no §68 page, Murayama's selection answers §68
+    Exercise 2 only, the fourteen repositories stop at Chapter 3, and no course page found treats these
+    sections. The card's own proof was re-read against Example 1 (printed p. 414) and Theorem 68.2 (printed
+    p. 415): the products pi_1 pi_2 = (0 1 2) and pi_1 pi_2 pi_1 = (0 2) were recomputed, so G_1 and G_2
+    generate P, and the two distinct reduced words are shown to have equal images, which is exactly what makes
+    P not their free product. Nothing changed.
 ---
 
 ::: {.exercise}
