@@ -31,6 +31,23 @@ audit:
     from the definition of diameter and the continuity of the distance function. The card's closing
     references to two step labels that no step carried are replaced by the prose sentence that closes the
     solution.
+- event: solution-written
+  by: claude
+  date: 2026-11-15
+  note: >-
+    Transcribed from the two answers to Math StackExchange 375685, "How do you prove the converse
+    Cantor's intersection theorem?" (2013-04-28), https://math.stackexchange.com/questions/375685,
+    text at tmp/sources/mse-375685-munkres-43-4.md. The converse, the property implying
+    completeness, is answer 375696 by Asaf Karagila: the closed balls about a subsequence of a
+    Cauchy sequence, decreasing, of diameters tending to zero. The other direction is answer 375690
+    by Pedro, whose addition shows the tails of a Cauchy sequence are Cauchy-diameter zero before
+    closure. Two corrections are made. Karagila's balls are \bar B(x_{i(n)}, 2/n) with thresholds
+    1/n, and these are not nested: 2/(n+1) + 1/n <= 2/n fails for n >= 2, so the card uses radius
+    2^{-n+1} about x_{i(n)} with threshold 2^{-n}, which nests because 2^{-n} + 2^{-n} = 2^{-n+1}.
+    Pedro's note that diam A = diam \bar A is not needed on this route and is not used. Neither
+    answer writes the direction "complete implies the intersection is nonempty" that the exercise
+    states; the card supplies it, choosing x_n in A_n and using diam A_n -> 0 for the Cauchy
+    condition.
 ---
 
 ::: {.exercise}
@@ -43,147 +60,32 @@ Show that the metric space $(X, d)$ is complete if and only if for every nested 
 ::: pf
 
 ::: pf-step
-
-If $(X, d)$ is complete, then every nested sequence of nonempty closed sets with diameters tending to $0$ has intersection a single point.
-    *Proof:*
+If $(X,d)$ is complete, then every nested sequence $A_1 \supset A_2 \supset \cdots$ of nonempty closed sets with $\operatorname{diam} A_n \to 0$ has nonempty intersection.
 
 ::: pf-proof
-
-::: pf-step
-
-Let $A_1 \supset A_2 \supset A_3 \supset \cdots$ be a nested sequence of non-empty closed subsets of $X$ with $\lim_{n \to \infty} \operatorname{diam}(A_n) = 0$.
-
-:::
-
-::: pf-step
-
-For each $n \ge 1$, since $A_n \ne \emptyset$, choose a point $x_n \in A_n$.
-
-:::
-
-::: pf-step
-
-We claim that $\{x_n\}_{n \ge 1}$ is a Cauchy sequence in $(X, d)$:
-        - Let $\varepsilon > 0$.
-        - Since $\operatorname{diam}(A_n) \to 0$, choose $N$ such that $\operatorname{diam}(A_N) < \varepsilon$.
-        - For any $n, m \ge N$, since the sequence of sets is nested ($A_n \subseteq A_N$ and $A_m \subseteq A_N$), we have $x_n \in A_N$ and $x_m \in A_N$.
-        - By definition of diameter:
-          $$d(x_n, x_m) \le \operatorname{diam}(A_N) < \varepsilon.$$
-        - Thus $\{x_n\}$ is a Cauchy sequence.
-
-:::
-
-::: pf-step
-
-Since $(X, d)$ is complete, there exists a limit point $x = \lim_{n \to \infty} x_n \in X$.
-
-:::
-
-::: pf-step
-
-For any fixed $k \ge 1$, the tail sequence $\{x_n\}_{n \ge k}$ is entirely contained in $A_k$ (since $x_n \in A_n \subseteq A_k$ for all $n \ge k$).
-
-:::
-
-::: pf-step
-
-Since $A_k$ is a closed set, the limit of the sequence lies in $A_k$:
-        $$x = \lim_{n \to \infty} x_n \in A_k.$$
-
-:::
-
-::: pf-step
-
-Since this holds for all $k \ge 1$, we have:
-        $$x \in \bigcap_{n=1}^\infty A_n \ne \emptyset.$$
-
-:::
-
-::: pf-step
-
-**Uniqueness:** If $x, y \in \bigcap_{n=1}^\infty A_n$, then $d(x, y) \le \operatorname{diam}(A_n)$ for all $n \ge 1$. Taking $n \to \infty$ gives $d(x, y) \le 0 \implies x = y$.
-
-:::
-
+Choose $x_n \in A_n$ for each $n$. Given $\epsilon > 0$, take $N$ with $\operatorname{diam} A_N < \epsilon$; for $n, m \ge N$ both $x_n$ and $x_m$ lie in $A_N$, so $d(x_n, x_m) < \epsilon$. Thus $(x_n)$ is a Cauchy sequence, and by completeness it converges to a point $x$. For each $k$ the tail $x_k, x_{k+1}, \dots$ lies in $A_k$, and $A_k$ is closed, so $x \in A_k$. Hence $x \in \bigcap_n A_n$. That intersection is in fact a single point, since two of its points lie in every $A_n$ and so are at distance at most $\operatorname{diam} A_n$, which tends to zero.
 :::
 
 :::
 
 ::: pf-step
-
-If every nested sequence of nonempty closed sets with diameters tending to $0$ has nonempty intersection, then $(X, d)$ is complete.
-    *Proof:*
+If every such nested sequence has nonempty intersection, then $(X,d)$ is complete.
 
 ::: pf-proof
-
-::: pf-step
-
-Let $\{x_n\}_{n \ge 1}$ be any Cauchy sequence in $(X, d)$.
+Let $(x_n)$ be a Cauchy sequence. For each $n$ choose $i(n)$ with $i(n) < i(n+1)$ and $d(x_k, x_m) < 2^{-n}$ whenever $k, m \ge i(n)$, and let $C_n$ be the closed ball of radius $2^{-n+1}$ about $x_{i(n)}$. Each $C_n$ is nonempty and closed, $C_{n+1} \subset C_n$ because $d(x_{i(n+1)}, x_{i(n)}) < 2^{-n}$ and $2^{-n} + 2^{-n} = 2^{-n+1}$, and $\operatorname{diam} C_n \le 2^{-n+2} \to 0$. By hypothesis there is $x \in \bigcap_n C_n$. Given $\epsilon > 0$ take $n$ with $2^{-n+1} < \epsilon/2$, and let $k \ge i(n)$; then $d(x, x_k) \le d(x, x_{i(n)}) + d(x_{i(n)}, x_k) \le 2^{-n+1} + 2^{-n} < \epsilon$. So $x_n \to x$, and every Cauchy sequence converges.
+:::
 
 :::
 
 ::: pf-step
+$(X,d)$ is complete if and only if every nested sequence of nonempty closed sets with diameters tending to zero has nonempty intersection. $\square$
 
-For each $n \ge 1$, define the tail set $T_n \coloneqq \{ x_k \mid k \ge n \}$.
-
-:::
-
-::: pf-step
-
-Define $A_n \coloneqq \overline{T_n}$ to be the closure of the $n$-th tail.
-
-:::
-
-::: pf-step
-
-Each $A_n$ is a closed nonempty subset of $X$, and $T_{n+1} \subseteq T_n$ gives $A_{n+1} \subseteq A_n$, so the sequence is nested.
-
-:::
-
-::: pf-step
-
-We show that $\operatorname{diam}(A_n) \to 0$:
-        - For any set $S \subseteq X$, its closure has the same diameter: $\operatorname{diam}(S) \le \operatorname{diam}(\overline{S})$ is clear, and for $x, y \in \overline{S}$ and any $\eta > 0$ choose $x', y' \in S$ with $d(x,x') < \eta$ and $d(y,y') < \eta$; then $d(x,y) \le d(x,x') + d(x',y') + d(y',y) < \operatorname{diam}(S) + 2\eta$ by the triangle inequality, so $d(x,y) \le \operatorname{diam}(S)$.
-        - Thus $\operatorname{diam}(A_n) = \operatorname{diam}(T_n) = \sup_{j, k \ge n} d(x_j, x_k)$.
-        - Since $\{x_n\}$ is Cauchy, for any $\varepsilon > 0$ there exists $N$ such that $d(x_j, x_k) < \varepsilon$ for all $j, k \ge N$, so $\operatorname{diam}(A_N) \le \varepsilon$.
-        - Therefore, $\lim_{n \to \infty} \operatorname{diam}(A_n) = 0$.
-
-:::
-
-::: pf-step
-
-By the hypothesis, the intersection is non-empty:
-        $$\bigcap_{n=1}^\infty A_n \ne \emptyset.$$
-
-:::
-
-::: pf-step
-
-Let $x \in \bigcap_{n=1}^\infty A_n$.
-
-:::
-
-::: pf-step
-
-We show that $x_n \to x$:
-        - For any $\varepsilon > 0$, choose $N$ such that $\operatorname{diam}(A_N) < \varepsilon$.
-        - Since $x \in A_N$ and for all $n \ge N$ we have $x_n \in T_N \subseteq A_N$:
-          $$d(x_n, x) \le \operatorname{diam}(A_N) < \varepsilon \quad \text{for all } n \ge N.$$
-        - Hence $\lim_{n \to \infty} x_n = x \in X$.
-
-:::
-
-::: pf-step
-
-Thus every Cauchy sequence converges in $X$, which proves that $(X, d)$ is complete.
-
+::: pf-proof
+The two implications are steps 1 and 2.
 :::
 
 :::
 
 :::
 
-:::
-
-The two directions above prove the equivalence: completeness gives nonempty intersection, and a nonempty intersection in every nested sequence of closed sets of vanishing diameter gives completeness. In the forward direction the argument also shows the intersection is a single point, which the steps record.
 :::
