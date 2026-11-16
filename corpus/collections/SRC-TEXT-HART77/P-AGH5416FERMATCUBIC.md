@@ -118,20 +118,18 @@ audit:
     statement of the characteristic zero answer. Checked against the sources:
     Gathmann's coefficient argument is carried out over C and needs only a
     primitive cube root of unity and 3 not zero, which is why the card states
-    char k not 3; Dolgachev--Duncan print at Section 5, p. 24, and in Section 1.3,
-    p. 6, that the Fermat cubic is not reduced in characteristic 3 and that the 3C
+    char k not 3; Dolgachev--Duncan print at Section 5, p. 24, and at Section 1.3,
+    p. 2, that the Fermat cubic is not reduced in characteristic 3 and that the 3C
     stratum is empty there, which is the card's reason for excluding it.
     Dolgachev--Duncan's Lemma 5.2 is printed for a Fermat hypersurface in P^n with
-    n at least 4 and displays the group d^(n-1) : S_n, which as indexed carries
-    one factor of d fewer than the hypersurface has coordinates; the card now
-    records that reading and takes the group from Lemma 5.1, which states
-    3^3 : S_4 for the cubic without indexing. What this transcription does not keep is the
+    n at least 4 and displays the group d^(n-1) : S_n; for the Fermat cubic, whose
+    ambient space is P^3 with four coordinates, its n is 4 and the displayed
+    group is 3^3 : S_4, which is Lemma 5.1's group, and the card says so instead
+    of quoting the display for P^3. What this transcription does not keep is the
     card's earlier pair-by-pair congruence criterion for the incidence of the
     three families, which is not printed in the sources; what it keeps is the
     count they prove, ten lines meeting a given one and sixteen skew to it, and
-    their count of five lines meeting two given skew lines. That pair-by-pair
-    criterion is the verification the exercise asks for, so its removal leaves
-    the incidence relations open on the card; the event appended below says so.
+    their count of five lines meeting two given skew lines.
 
 - event: source-checked
   by: claude
@@ -151,9 +149,8 @@ audit:
     printed there. Not verified here: the printed page of Gathmann's own numbering
     beyond the two the card cites, since its text version marks only five-page
     blocks; and no second source was found for the incidence count beyond
-    Gathmann's. The incidence relations themselves are a third thing, neither
-    verified here nor printed in either source; the event appended below records
-    the repair that says so on the card.
+    Gathmann's.
+
 - event: source-corrected
   by: claude
   date: 2026-11-16
@@ -214,6 +211,37 @@ audit:
     searched for a published verification of the incidence relations beyond the
     sources listed, so that part stays open.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A reader's report of this day, repaired here. (i) Two events of this day ---
+    the solution-written and the source-checked ones above --- had been rewritten
+    in place by 1a3e3c52dd, which a dated record does not allow; they are
+    restored to the text they were introduced with, and what that commit changed
+    is recorded in the event it appended, which stands. (ii) The first of the
+    orchestrator's decisions for this repair was not applied to the incidence
+    relations: the card's own pair-by-pair computation, in the steps
+    same-family-incidence, ab-family-incidence, ac-family-incidence and
+    bc-family-incidence of 83d33296ae with the counting step that closes them, had
+    been dropped when the solution was turned into a transcription. It is
+    restored, marked in the steps as the card's own, and the notation A_ab, B_ab,
+    C_ab it uses is declared there as the twenty-seven lines already found, with
+    the exponents renamed; no source listed prints that computation.
+    (iii) The step that named the part open also asserted, with no source and no
+    proof, that the two counts do not determine the configuration; that sentence
+    is withdrawn, since the restored criteria decide every pair, and what remains
+    true is only that no source listed prints such a criterion.
+    (iv) The rendered remark said that Gathmann's chapter works over C "which the
+    card's field k replaces", which is bookkeeping; it now says that his argument
+    uses only a primitive cube root of unity and 3 not zero. Read for this pass:
+    Gathmann, printed pp. 90--91, in
+    tmp/sources/gathmann-2014-alggeom-ch11-27-lines.md, whose markers are
+    five-page blocks, so the pages are those of the events above and were not
+    re-read off the PDF; and Dolgachev--Duncan, printed pp. 3--6 and 24--28, in
+    tmp/sources/dolgachev-duncan-2017-automorphisms-cubic-surfaces-char-p.md,
+    whose first marker is the block of PDF pages 1--20, so those pages are not
+    re-read off the folios either. Nothing else on the card changed.
 ---
 
 ::: {.problem}
@@ -294,11 +322,181 @@ This is Corollary 11.2(b) of Gathmann, printed p. 91, as a statement. His proof 
 
 :::
 
-::: {.pf-step #incidence-relations-open}
-The verification of the incidence relations that the exercise asks for is not carried out here, and the sources this card rests on do not carry it out.
+::: {.pf-step #three-line-families}
+For $a,b\in\ZZ/3$ put
+$$
+A_{ab}=V(x_0+\omega^a x_1,\ x_2+\omega^b x_3),\quad
+B_{ab}=V(x_0+\omega^a x_2,\ x_1+\omega^b x_3),\quad
+C_{ab}=V(x_0+\omega^a x_3,\ x_1+\omega^b x_2).
+$$
+These are the $27$ lines of step [](#twenty-seven-lines){.pf-ref} with the exponents renamed, and every incidence question about them is decided by their equations.
 
 ::: pf-proof
-The relations are those of the configuration of the twenty-seven lines in the labelling $E_i,F_{ij},G_j$: the $E_i$ are mutually skew and so are the $G_j$; $E_i$ meets $F_{jk}$ exactly when $i=j$ or $i=k$; $E_i$ meets $G_j$ exactly when $i\ne j$; $F_{ij}$ meets $F_{kl}$ exactly when $i,j,k,l$ are all distinct; $F_{ij}$ meets $G_k$ exactly when $k=i$ or $k=j$. Three consequences of them are that a line meets $10$ others, that two skew lines are met by $5$ further lines, and that two lines that meet are met by exactly one further line; the card proves the first two from Gathmann and the third is neither stated nor used here. The two counts are consequences of the relations and do not determine them, and no source listed for this card prints a criterion deciding, for each pair of the three families, whether the two lines meet. Gathmann verifies the incidence relations of the Fermat cubic as the counts of his Corollary 11.2 and leaves the proof of (b) as "analogous"; the National Taiwan University set counts intersecting pairs and points of multiplicity three and settles no pair either. So the exercise's "verify their incidence relations" is open on this card.
+Each family has $3\cdot3=9$ members. $A_{ab}$ pairs $x_0$ with $x_1$ and $x_2$ with $x_3$, $B_{ab}$ pairs $x_0$ with $x_2$ and $x_1$ with $x_3$, and $C_{ab}$ pairs $x_0$ with $x_3$ and $x_1$ with $x_2$; those are the three pairings of the displayed list, the second equation of each line carrying the cube roots of minus one, and the exponents of the first equation ranging independently over the three cube roots of unity. The four criteria that follow are the card's own computation: no source listed for this card prints them.
+:::
+
+:::
+
+::: {.pf-step #same-family-incidence}
+For two distinct lines in the same family,
+$$
+\boxed{
+A_{ab}\cap A_{cd}\ne\varnothing
+\iff
+a=c\text{ or }b=d,
+}
+$$
+and the identical criterion holds in the $B$- and $C$-families.
+
+::: pf-proof
+Suppose first that
+$$
+a=c,
+\qquad
+b\ne d.
+$$
+The two equations involving $x_2,x_3$ then force
+$$
+x_2=x_3=0,
+$$
+while the common first equation gives the point
+$$
+[-\omega^a:1:0:0].
+$$
+Thus the lines meet. If instead $b=d$ and $a\ne c$, they meet at
+$$
+[0:0:-\omega^b:1].
+$$
+
+If $a\ne c$ and $b\ne d$, the first pair of equations forces $x_0=x_1=0$ and the second pair forces $x_2=x_3=0$, so there is no projective point of intersection. The other two families are obtained by permuting the coordinates.
+:::
+
+:::
+
+::: {.pf-step #ab-family-incidence}
+Lines from the $A$- and $B$-families satisfy
+$$
+\boxed{
+A_{ab}\cap B_{cd}\ne\varnothing
+\iff
+a+d\equiv b+c\pmod3.}
+$$
+
+::: pf-proof
+On a common point we may write, from the equations of $A_{ab}$ and $B_{cd}$,
+$$
+x_2=-\omega^b x_3,
+\qquad
+x_1=-\omega^d x_3.
+$$
+Then the two expressions for $x_0$ are
+$$
+x_0=-\omega^a x_1=\omega^{a+d}x_3
+$$
+and
+$$
+x_0=-\omega^c x_2=\omega^{b+c}x_3.
+$$
+A nonzero common point therefore exists exactly when
+$$
+\omega^{a+d}=\omega^{b+c},
+$$
+which is the displayed congruence. When it holds, taking $x_3=1$ gives the unique point of intersection.
+:::
+
+:::
+
+::: {.pf-step #ac-family-incidence}
+Lines from the $A$- and $C$-families satisfy
+$$
+\boxed{
+A_{ab}\cap C_{cd}\ne\varnothing
+\iff
+c\equiv a+b+d\pmod3.}
+$$
+
+::: pf-proof
+The equations give
+$$
+x_2=-\omega^b x_3
+$$
+and then
+$$
+x_1=-\omega^d x_2=\omega^{b+d}x_3.
+$$
+Consequently the $A$-equation gives
+$$
+x_0=-\omega^{a+b+d}x_3,
+$$
+whereas the $C$-equation gives
+$$
+x_0=-\omega^c x_3.
+$$
+These are compatible exactly under the displayed congruence.
+:::
+
+:::
+
+::: {.pf-step #bc-family-incidence}
+Lines from the $B$- and $C$-families satisfy
+$$
+\boxed{
+B_{ab}\cap C_{cd}\ne\varnothing
+\iff
+a+b\equiv c+d\pmod3.}
+$$
+
+::: pf-proof
+Put $x_2=t$. The $C$-equation gives
+$$
+x_1=-\omega^d t,
+$$
+and comparison with
+$$
+x_1=-\omega^b x_3
+$$
+gives
+$$
+x_3=\omega^{d-b}t.
+$$
+Now
+$$
+x_0=-\omega^a t
+$$
+from $B_{ab}$, while $C_{cd}$ gives
+$$
+x_0=-\omega^c x_3=-\omega^{c+d-b}t.
+$$
+Compatibility is therefore equivalent to
+$$
+a+b\equiv c+d\pmod3.
+$$
+:::
+
+:::
+
+::: {.pf-step #incidence-count-ten-sixteen}
+The criteria of steps [](#same-family-incidence){.pf-ref}, [](#ab-family-incidence){.pf-ref}, [](#ac-family-incidence){.pf-ref} and [](#bc-family-incidence){.pf-ref} give the complete incidence configuration of the $27$ lines. In particular every line meets exactly $10$ of the other lines and is skew to the remaining $16$.
+
+::: pf-proof
+Fix $A_{ab}$. By step [](#same-family-incidence){.pf-ref} it meets exactly four other $A$-lines: two with the same first exponent and two with the same second exponent.
+
+For each $c\in\ZZ/3$, step [](#ab-family-incidence){.pf-ref} determines a unique $d$ for which $A_{ab}$ meets $B_{cd}$. Thus it meets exactly three $B$-lines. Likewise, for each $d$, step [](#ac-family-incidence){.pf-ref} determines a unique $c$, so it meets exactly three $C$-lines.
+
+Hence $A_{ab}$ meets
+$$
+4+3+3=10
+$$
+other lines. Coordinate symmetry gives the same count for every $B$- and $C$-line. Since there are $26$ other lines in total, each line is skew to $16$. The congruences decide every possible pair, so they give the full incidence relations.
+:::
+
+:::
+
+::: {.pf-step #incidence-relations-open}
+No source listed for this card prints a criterion deciding, pair by pair, which lines of the three families meet, nor a result that the two counts determine the configuration.
+
+::: pf-proof
+Gathmann verifies the incidence relations of the Fermat cubic as the counts of his Corollary 11.2, printed pp. 90--91, and leaves the proof of part (b) as "analogous"; the National Taiwan University set counts intersecting pairs and points of multiplicity three and settles no pair. The criteria above are therefore the card's own, and they answer the exercise's second request without a cited source.
 :::
 
 :::
@@ -355,7 +553,7 @@ In characteristic $3$ the Frobenius is additive, so $x_0^3+x_1^3+x_2^3+x_3^3=(x_
 :::
 
 ::: pf-qed
-Step [](#twenty-seven-lines){.pf-ref} gives the equations of the $27$ lines, and steps [](#incidence-ten-and-sixteen){.pf-ref} and [](#two-skew-lines-meet-five){.pf-ref} give the two counts that follow from the incidence relations: every line meets exactly $10$ of the other $26$ and is skew to $16$, and two skew lines are met by exactly $5$ further lines. The relations themselves, which are what the exercise asks to verify, are open, as step [](#incidence-relations-open){.pf-ref} records. Step [](#automorphism-group-not-two-three){.pf-ref} gives $\Aut(S)\cong3^3\rtimes\Sigma_4$ of order $648$ when $\operatorname{char}k\ne2,3$, and step [](#automorphism-group-characteristic-two){.pf-ref} gives $\Aut(S)\cong\operatorname{PSU}_4(2)$ of order $25920$ when $\operatorname{char}k=2$. In characteristic $3$ the equation is a triple plane, as step [](#characteristic-three){.pf-ref} records, so the smooth cubic surface question does not arise.
+Step [](#twenty-seven-lines){.pf-ref} gives the equations of the $27$ lines; steps [](#same-family-incidence){.pf-ref}, [](#ab-family-incidence){.pf-ref}, [](#ac-family-incidence){.pf-ref} and [](#bc-family-incidence){.pf-ref} decide every pair, and step [](#incidence-count-ten-sixteen){.pf-ref} draws the counts $10$ and $16$ from them, which is the card's own computation and answers the exercise's second request; step [](#incidence-relations-open){.pf-ref} records that no source listed prints such a criterion, and Gathmann's two counts are steps [](#incidence-ten-and-sixteen){.pf-ref} and [](#two-skew-lines-meet-five){.pf-ref}. Step [](#automorphism-group-not-two-three){.pf-ref} gives $\Aut(S)\cong3^3\rtimes\Sigma_4$ of order $648$ when $\operatorname{char}k\ne2,3$, and step [](#automorphism-group-characteristic-two){.pf-ref} gives $\Aut(S)\cong\operatorname{PSU}_4(2)$ of order $25920$ when $\operatorname{char}k=2$. In characteristic $3$ the equation is a triple plane, as step [](#characteristic-three){.pf-ref} records, so the smooth cubic surface question does not arise.
 :::
 
 :::
@@ -364,7 +562,7 @@ Step [](#twenty-seven-lines){.pf-ref} gives the equations of the $27$ lines, and
 ::: {.remark title="Published solutions"}
 The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.16, printed p. 409: the equations of the twenty-seven lines, a verification of their incidence relations, and the group of automorphisms.
 
-Andreas Gathmann, *Algebraic Geometry* (2014), Chapter 11, is the source of the lines and of the incidence count. Lemma 11.1, printed p. 90, contains the whole coefficient argument that produces exactly $27$ lines on the Fermat cubic and prints the three families; Corollary 11.2, printed pp. 90--91, then proves that exactly $10$ other lines meet a given one, working one line out in full after reducing by a coordinate permutation and multiplications by cube roots of unity, and states that exactly $5$ lines meet two given skew ones with the proof given as "analogous". What Gathmann does not print is a criterion deciding, for each pair of the three families, whether the two lines meet; the incidence relations he verifies are the two counts, and they do not determine those relations. His chapter works over $\CC$, which the card's field $k$ replaces with any algebraically closed field of characteristic not $3$, the argument using only a primitive cube root of unity.
+Andreas Gathmann, *Algebraic Geometry* (2014), Chapter 11, is the source of the lines and of the incidence count. Lemma 11.1, printed p. 90, contains the whole coefficient argument that produces exactly $27$ lines on the Fermat cubic and prints the three families; Corollary 11.2, printed pp. 90--91, then proves that exactly $10$ other lines meet a given one, working one line out in full after reducing by a coordinate permutation and multiplications by cube roots of unity, and states that exactly $5$ lines meet two given skew ones with the proof given as "analogous". What Gathmann does not print is a criterion deciding, for each pair of the three families, whether the two lines meet; the incidence relations he verifies are the two counts. His chapter works over $\CC$; the argument uses only a primitive cube root of unity and $3\ne0$.
 
 Igor V. Dolgachev and Alexander Duncan, *Automorphisms of cubic surfaces in positive characteristic*, gives the automorphism group in every characteristic. Theorem 1.1 with Table 1, printed pp. 3--4, lists the possible groups by stratum: the row $3C$ has $3^3\rtimes\mathfrak S_4$ of order $648$ for $\operatorname{char}k\ne2,3$ and $\operatorname{PSU}_4(2)$ of order $25920$ for $\operatorname{char}k=2$, and has no entry for $\operatorname{char}k=3$. Lemma 5.1, printed p. 25, states both values for the Fermat cubic itself; Lemma 5.2 with its proof, printed p. 25, is the Hessian argument for the first, and Section 5.1, printed pp. 25--28, is the Hermitian-form and Frobenius argument for the second. Section 1.3, printed p. 6, records the same two facts in words: the Fermat cubic is the unique surface with an automorphism of class $3C$, it is not reduced when $p=3$ and the $3C$ stratum is then empty, its group is generated by permutations and by multiplying coordinates by third roots of unity when $p\ge5$, and it is $\operatorname{PSU}_4(2)$ of order $25920$ when $p=2$.
 
