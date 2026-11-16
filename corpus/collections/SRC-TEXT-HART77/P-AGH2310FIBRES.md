@@ -104,6 +104,27 @@ audit:
     those pages, and the event above is left as written. Not checked: no
     other page number on this card was re-read in this pass.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report. (i) The letters were inconsistent: this
+    proof writes B for the base ring and A for the coordinate ring of the
+    total space, taking that from its first step, while Kim, Cais and
+    Egbert write A for the base and B for the total. Their displays in the
+    steps fibre-ring-tensor-localization and
+    uy-points-correspond-to-primes and uy-homeomorphism-onto-fiber are now
+    stated in the letters of this proof, with a note at the first step and
+    one in the remark that A and B are exchanged and nothing else; the one
+    verbatim quotation (Kim's "we may assume first that Y is affine")
+    carries no letters. Shichijo's phi : B -> A already matches. (ii) The
+    remark's sentence "The proof above is the published argument with its
+    sources named at each step" is removed as commentary on how the card
+    was written. Checked against the book in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md (printed p. N is PDF
+    p. N+15): II.3.10 on printed p. 92. Not checked: no source was re-read
+    in this pass beyond the passages quoted, and no step was re-derived.
+
 ---
 
 ::: {.problem}
@@ -129,9 +150,11 @@ Every step below is the published argument, and each names the source it transcr
 The homeomorphism of (a) is proved with $Y$ affine and then $X$ affine, the affine pieces gluing.
 
 ::: pf-proof
+The base ring is written $B$ and the coordinate ring of the total space $A$ throughout this proof.  Kim, Cais and Egbert use the opposite letters, writing $A$ for the base ring and $B$ for the total space; what is transcribed from them below is stated in the letters of this proof, with $A$ and $B$ interchanged and nothing else changed.  Shichijo writes $\phi:B\to A$ for the map of rings, the same letters as here.
+
 Kim, Exercise 2.3.10(a), PDF p. 23: "Since the fiber product of schemes is fiber product of affine schemes glued together, we may assume first that $Y$ is affine and then $X$ is affine."
 
-Cais, Exercise 3.10(a), PDF p. 12: for an affine neighbourhood $\Spec A$ of $y$ the universal property of the fibre product gives
+Cais, Exercise 3.10(a), PDF p. 12: for an affine neighbourhood $\Spec B$ of $y$, whose coordinate ring he calls $A$, the universal property of the fibre product gives, in the letters of this proof,
 $$
 X_y
 =
@@ -139,7 +162,7 @@ X_y
 $$
 and for $U\subseteq X$ open, $p^{-1}(U)=U\times_Y\Spec\kappa(y)$, so the affine statements glue.
 
-Shichijo, Exercise 3.10(a), printed pp. 5--7, makes the same split into an affine case and a general case, where $f^{-1}(\tilde Y)=\bigcup X_i$ is an affine cover over the affine open $\tilde Y\ni y$ and $X_y$ is the gluing of the schemes $(X_y)_i=X_i\times_{\tilde Y}\Spec(\OO_{\tilde Y,y}/\mathfrak m_{\tilde Y,y})$.
+Shichijo, Exercise 3.10(a), printed pp. 5--7, makes the same split into an affine case and a general case, where $f^{-1}(\tilde Y)=\bigcup X_i$ is an affine cover over the affine open $\tilde Y\ni y$ and $X_y$ is the gluing of the schemes $(X_y)_i=X_i\times_{\tilde Y}\Spec(\OO_{\tilde Y,y}/\mathfrak m_{\tilde Y,y})$.  He writes the affine case for $\phi:B\to A$, with $X=\Spec A$ over $Y=\Spec B$, as here.
 :::
 
 :::
@@ -155,10 +178,11 @@ S=B\setminus\mfp.
 $$
 
 ::: pf-proof
-Kim, Exercise 2.3.10(a), PDF p. 23, decomposes
+Kim, Exercise 2.3.10(a), PDF p. 23, decomposes the total ring along the base prime,
 $$
-B\longrightarrow B/\mfp B\longrightarrow (A-\mfp)^{-1}(B/\mfp B)=B\otimes_A\kappa(\mfp).
+A\longrightarrow A/\mfp A\longrightarrow (B-\mfp)^{-1}(A/\mfp A)=A\otimes_B\kappa(\mfp),
 $$
+his decomposition $B\to B/\mathfrak pB\to(A-\mathfrak p)^{-1}(B/\mathfrak pB)$ being the same with the two letters exchanged.
 
 Shichijo, Exercise 3.10(a), printed p. 6, computes the same tensor with $I_{\mfp}=\phi(\mfp)A$ and $T$ the image of $S$:
 $$
@@ -195,14 +219,15 @@ $$
 
 Egbert, Exercise II.3.10(a), printed p. 84, obtains the same set as
 $$
-\Spec(B_{\mfp}/\mfp B_{\mfp})
+\Spec(A_{\mfp}/\mfp A_{\mfp})
 \approx
-\set{\mfq\in\Spec B \st f^{-1}(\mfq)\subset\mfp,\ \mfq\supset f(\mfp)}
+\set{\mfq\in\Spec A \st f^{-1}(\mfq)\subset\mfp,\ \mfq\supset f(\mfp)}
 =
-f^{-1}(\mfp).
+f^{-1}(\mfp),
 $$
+his $A$ being the base ring and his $B$ the total, so that his display reads $\Spec(B_{\mathfrak p}/\mathfrak pB_{\mathfrak p})\approx\{\mfq\in\Spec B\}$ with his letters.
 
-Cais, Exercise 3.10(a), PDF p. 12, states the two conditions as $\mfp B\subseteq\mfq$ and $\mfq\cap g(A-\mfp)=\emptyset$, which together say $g^{-1}(\mfq)=\mfp$.
+Cais, Exercise 3.10(a), PDF p. 12, states the two conditions as $\mfp A\subseteq\mfq$ and $\mfq\cap g(B-\mfp)=\emptyset$, which together say $g^{-1}(\mfq)=\mfp$; his $g$ is the map of rings from the base to the total, $g:B\to A$ in the letters of this proof.
 :::
 
 :::
@@ -213,13 +238,14 @@ The bijection above is a homeomorphism of $\underlyingspace{U_y}$ onto $U\cap f^
 ::: pf-proof
 Cais, Exercise 3.10(a), PDF p. 12, factors the projection $p$ as
 $$
-\Spec(B\otimes_A\kappa(\mfp))
+\Spec(A\otimes_B\kappa(\mfp))
 \xrightarrow{\ \Spec\psi\ }
-\Spec(B\otimes_AA_{\mfp})
+\Spec(A\otimes_BB_{\mfp})
 \xrightarrow{\ \Spec\phi\ }
-\Spec B .
+\Spec A,
 $$
-The map $\psi$ is surjective, so by Exercise II.2.18(c) $\Spec\psi$ is a homeomorphism onto the closed subset $V(\ker\psi)$; and $\Spec\phi$ is a homeomorphism onto $\set{\mfq\in\Spec B \st \mfq\cap S=\emptyset}$ with $S=g(A-\mfp)$, since $\Spec\phi(V(I))=V(\phi^{-1}(I))\cap\Spec\phi(\Spec B)$. With $\ker\psi=\mfp B$ the composite is therefore a homeomorphism onto $\set{\mfq \st g^{-1}(\mfq)=\mfp}$.
+his factorization $\Spec(B\otimes_A\kappa(p))\to\Spec(B\otimes_AA_p)\to\Spec B$ being the same with the letters exchanged.
+The map $\psi$ is surjective, so by Exercise II.2.18(c) $\Spec\psi$ is a homeomorphism onto the closed subset $V(\ker\psi)$; and $\Spec\phi$ is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\cap S=\emptyset}$ with $S=g(B-\mfp)$, since $\Spec\phi(V(I))=V(\phi^{-1}(I))\cap\Spec\phi(\Spec B)$. With $\ker\psi=\mfp A$ the composite is therefore a homeomorphism onto $\set{\mfq \st g^{-1}(\mfq)=\mfp}$.
 
 Shichijo, Exercise 3.10(a), printed p. 6, gives the same conclusion through the general facts that $\Spec(A/\mathfrak a)$ is homeomorphic to the closed subset $V(\mathfrak a)$ and $\Spec S^{-1}A$ to the primes of $A$ avoiding $S$.
 :::
@@ -378,7 +404,7 @@ The exercise states (b) with no hypothesis on $k$ beyond algebraic closedness, a
 :::
 
 ::: {.remark title="Published solution"}
-The proof above is the published argument with its sources named at each step. For (a), Cais, Exercise 3.10(a), PDF p. 12, is the complete argument --- reduction to $Y=\Spec A$ and $X=\Spec B$ by the universal property, the factorization of $p$ through $\Spec(B\otimes_AA_{\mfp})$, and the identification of the composite as a homeomorphism onto $\set{\mfq \st g^{-1}(\mfq)=\mfp}$ --- with Kim, PDF p. 23, for the reduction, Shichijo, printed p. 6, for the affine computation $A\otimes_B\kappa(\mfp)\cong T^{-1}(A/I_{\mfp})$ and its equivalence $(\ast)$, Egbert, printed p. 84, for the chain $\Spec(B_{\mfp}/\mfp B_{\mfp})\approx f^{-1}(\mfp)$, and Shichijo for the gluing over an affine cover. For (b), the closed fibres are Kim, Shichijo and Egbert as cited, the generic fibre Kim, Shichijo, Cais and Egbert.
+For (a), Cais, Exercise 3.10(a), PDF p. 12, is the complete argument --- reduction to $Y=\Spec B$ and $X=\Spec A$ by the universal property, the factorization of $p$ through $\Spec(A\otimes_BB_{\mfp})$, and the identification of the composite as a homeomorphism onto $\set{\mfq \st g^{-1}(\mfq)=\mfp}$ --- with Kim, PDF p. 23, for the reduction, Shichijo, printed p. 6, for the affine computation $A\otimes_B\kappa(\mfp)\cong T^{-1}(A/I_{\mfp})$ and its equivalence $(\ast)$, Egbert, printed p. 84, for the chain $\Spec(A_{\mfp}/\mfp A_{\mfp})\approx f^{-1}(\mfp)$, and Shichijo for the gluing over an affine cover.  Kim, Cais and Egbert write the two rings with the opposite letters to those used here; their displays are transcribed above with $A$ and $B$ exchanged, the statements unchanged. For (b), the closed fibres are Kim, Shichijo and Egbert as cited, the generic fibre Kim, Shichijo, Cais and Egbert.
 
 Two of the six parts are not published in the form the exercise prints. The two-point assertion for $a\ne0$ is published only under $\operatorname{char}k\ne2$: all four sources pass from $k[t]/(t^2-a)$ to $k\times k$ without saying that the two roots must be distinct, and only Math StackExchange 1709194 records that the printed claim fails in characteristic two (comments 3488648 and 3489729, quoted in step [](#char-two-fibre-not-two-points){.pf-ref}). The irreducibility of $t^2-s$ over $k(s)$, finally, is asserted by the four sources rather than proved; the valuation check in step [](#t2-s-irreducible){.pf-ref} is the card's.
 :::
