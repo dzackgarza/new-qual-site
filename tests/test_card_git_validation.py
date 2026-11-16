@@ -6,9 +6,12 @@ import json
 import shlex
 import subprocess
 import sys
+from datetime import date
 from pathlib import Path
 
 import pytest
+
+from qualc.authoring import commit_day
 
 ROOT = Path(__file__).resolve().parent.parent
 CARD = (ROOT / "tests/fixtures/kinds/PRB-INDEXP.md").read_text()
@@ -22,6 +25,28 @@ RECORDED = CARD.replace(
     "  date: 2026-11-11\n"
     "  note: The statement matches the printed exercise.\n",
 )
+# A root-level complaints file carrying dated entries, whose text the gate holds.
+COMPLAINTS = """# Mathematical issues and papercuts
+
+## Recording an issue
+
+Add a descriptive heading with the observed evidence.
+
+## Open findings
+
+1. **A dated finding — 2026-11-10.** The observation.
+
+   *Further note, 2026-11-12: an appended paragraph.*
+
+2. **An earlier finding — 2026-11-09.** Another observation.
+"""
+
+
+def install_gate(root: Path) -> None:
+    """The pre-commit gate: every commit of this fixture validates its staged blobs."""
+    hook = root / ".git" / "hooks" / "pre-commit"
+    hook.write_text(f"#!/bin/sh\nexec {shlex.quote(sys.executable)} -m qualc.authoring check-staged\n")
+    hook.chmod(0o755)
 
 
 def git(root: Path, *args: str) -> str:
@@ -86,58 +111,123 @@ def test_staged_header_errors_cannot_be_hidden_by_a_valid_worktree(repo: Path, s
 
 
 def test_a_dated_audit_event_is_append_only(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
-    """QUAL-11, issue #147: a dated event is a record, so a correction is a new event.
+    """QUAL-11, issue #147: a commit that rewrites a dated event is refused by the hook.
 
-    The event is dated 2026-11-11 and the commit 2026-11-16. Rewriting the event leaves
-    the later events referring to text that is no longer there, which is what four rounds
-    of card repairs did on 2026-11-16. An appended event is the sanctioned correction, and
-    an event dated the commit's own day is still in flight.
+    The event is dated 2026-11-11 and the commit 2026-11-16, so the event is a record a
+    later session may quote. An appended event is the sanctioned correction, and an event
+    dated the commit's own day is still in flight.
     """
     assert RECORDED != CARD, "the fixture card no longer holds the front matter this test edits"
     card = repo / "corpus/one card.md"
     card.write_text(RECORDED)
     git(repo, "add", "corpus/one card.md")
     git(repo, "commit", "-qm", "record a dated event")
-    # Git writes this date into the commit the check runs for; pinning it keeps the
+    install_gate(repo)
+    # Git writes this date into the commit the hook validates; pinning it keeps the
     # boundary between the two days independent of when the suite runs.
     monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
 
+    recorded = git(repo, "rev-parse", "HEAD")
     card.write_text(RECORDED.replace("matches the printed exercise", "matches the printed statement"))
     git(repo, "add", "corpus/one card.md")
-    refused = check(repo, "check-staged")
-    assert refused.returncode == 1, refused.stdout
+    refused = subprocess.run(["git", "commit", "-qm", "repair the note"], cwd=repo, capture_output=True, text=True)
+    assert refused.returncode != 0, refused.stdout
     assert "corpus/one card.md: the source-checked event by claude dated 2026-11-11, whose note begins 'The statement matches the printed exercise.', was changed or deleted" in refused.stderr
     assert "QUAL-11" in refused.stderr
+    assert git(repo, "rev-parse", "HEAD") == recorded
 
-    head = git(repo, "rev-parse", "HEAD")
-    hook_free = check(repo, "commit", "corpus/one card.md", "repair the note")
-    assert hook_free.returncode == 1, hook_free.stdout
-    assert "QUAL-11" in hook_free.stderr
-    assert git(repo, "rev-parse", "HEAD") == head
-
-    card.write_text(
-        RECORDED.replace(
-            "  note: The statement matches the printed exercise.\n",
-            "  note: The statement matches the printed exercise.\n"
-            "- event: solution-reviewed\n"
-            "  by: claude\n"
-            "  date: 2026-11-16\n"
-            "  note: The solution follows the source's argument.\n",
-        )
+    appended = RECORDED.replace(
+        "  note: The statement matches the printed exercise.\n",
+        "  note: The statement matches the printed exercise.\n"
+        "- event: solution-reviewed\n"
+        "  by: claude\n"
+        "  date: 2026-11-16\n"
+        "  note: The solution follows the source's argument.\n",
     )
+    card.write_text(appended)
     git(repo, "add", "corpus/one card.md")
-    accepted = check(repo, "check-staged")
-    assert accepted.returncode == 0, accepted.stderr
-    assert "1 changed file(s) checked" in accepted.stdout
+    git(repo, "commit", "-qm", "append the correction")
+    assert git(repo, "rev-parse", "HEAD") != recorded
+    assert "- event: solution-reviewed" in git(repo, "show", "HEAD:corpus/one card.md")
 
-    same_day = RECORDED.replace("date: 2026-11-11", "date: 2026-11-16")
-    card.write_text(same_day)
+    in_flight = appended.replace("follows the source's argument.", "follows the source's argument, checked twice.")
+    card.write_text(in_flight)
     git(repo, "add", "corpus/one card.md")
-    git(repo, "commit", "-qm", "record the day's own event")
-    card.write_text(same_day.replace("matches the printed exercise", "matches the printed statement"))
+    git(repo, "commit", "-qm", "refine the day's own event")
+    assert git(repo, "show", "HEAD:corpus/one card.md") == in_flight
+
+
+def test_a_dated_complaints_entry_is_append_only(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """Issue #147: a dated COMPLAINTS entry is a record, so a correction is a new entry."""
+    path = repo / "COMPLAINTS.md"
+    path.write_text(COMPLAINTS)
+    git(repo, "add", "COMPLAINTS.md")
+    git(repo, "commit", "-qm", "record findings")
+    install_gate(repo)
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+    recorded = git(repo, "rev-parse", "HEAD")
+
+    path.write_text(COMPLAINTS.replace("The observation.", "The corrected observation."))
+    git(repo, "add", "COMPLAINTS.md")
+    refused = subprocess.run(["git", "commit", "-qm", "rewrite the finding"], cwd=repo, capture_output=True, text=True)
+    assert refused.returncode != 0, refused.stdout
+    assert "COMPLAINTS.md: the entry dated 2026-11-10" in refused.stderr
+    assert "QUAL-11" in refused.stderr
+    assert git(repo, "rev-parse", "HEAD") == recorded
+
+    removed = COMPLAINTS.replace(
+        "1. **A dated finding — 2026-11-10.** The observation.\n\n"
+        "   *Further note, 2026-11-12: an appended paragraph.*\n\n",
+        "",
+    )
+    path.write_text(removed)
+    git(repo, "add", "COMPLAINTS.md")
+    refused = subprocess.run(["git", "commit", "-qm", "remove the finding"], cwd=repo, capture_output=True, text=True)
+    assert refused.returncode != 0, refused.stdout
+    assert "COMPLAINTS.md: the entry dated 2026-11-10" in refused.stderr
+
+    path.write_text(COMPLAINTS + "\n3. **A later finding — 2026-11-16.** A new record.\n")
+    git(repo, "add", "COMPLAINTS.md")
+    git(repo, "commit", "-qm", "append the finding")
+    assert git(repo, "rev-parse", "HEAD") != recorded
+
+
+def test_a_renamed_card_keeps_the_audit_text_of_its_earlier_path(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """A card's earlier text follows the path Git records as the source of the move."""
+    card = repo / "corpus/one card.md"
+    card.write_text(RECORDED)
     git(repo, "add", "corpus/one card.md")
-    in_flight = check(repo, "check-staged")
-    assert in_flight.returncode == 0, in_flight.stderr
+    git(repo, "commit", "-qm", "record a dated event")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+
+    git(repo, "mv", "corpus/one card.md", "corpus/renamed card.md")
+    moved = check(repo, "check-staged")
+    assert moved.returncode == 0, moved.stderr
+    git(repo, "commit", "-qm", "move the card")
+
+    final = repo / "corpus/moved card.md"
+    final.write_text(RECORDED.replace("matches the printed exercise", "matches the printed statement"))
+    (repo / "corpus/renamed card.md").unlink()
+    git(repo, "add", "-A")
+    refused = check(repo, "check-staged")
+    assert refused.returncode == 1, refused.stdout
+    assert "corpus/moved card.md" in refused.stderr
+    assert "QUAL-11" in refused.stderr
+
+
+@pytest.mark.parametrize(
+    ("stamp", "day"),
+    [
+        ("2026-11-16T09:00:00 +0000", "2026-11-16"),
+        ("1700092800 +0000", "2023-11-16"),
+        ("@1794787200 -0800", "2026-11-15"),
+    ],
+)
+def test_the_commit_day_is_gits_parse_of_its_recorded_date(repo: Path, monkeypatch: pytest.MonkeyPatch, stamp: str, day: str) -> None:
+    """The day compared with an audit date is the one Git writes, in the commit's zone."""
+    monkeypatch.chdir(repo)
+    monkeypatch.setenv("GIT_COMMITTER_DATE", stamp)
+    assert commit_day("index") == date.fromisoformat(day)
 
 
 def test_staged_validation_ignores_unstaged_edits_and_unrelated_cards(repo: Path) -> None:
@@ -205,9 +295,7 @@ def test_added_renamed_and_deleted_cards_follow_the_outgoing_tree(repo: Path) ->
 
 
 def test_pathspec_commit_validates_its_temporary_index(repo: Path) -> None:
-    hook = repo / ".git/hooks/pre-commit"
-    hook.write_text(f"#!/bin/sh\nexec {shlex.quote(sys.executable)} -m qualc.authoring check-staged\n")
-    hook.chmod(0o755)
+    install_gate(repo)
     other = repo / "corpus/other.md"
     other.write_text(CARD.replace("title:", "title: Series: ", 1))
     git(repo, "add", "corpus/other.md")
