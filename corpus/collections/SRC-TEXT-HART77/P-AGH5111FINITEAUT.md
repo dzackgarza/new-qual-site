@@ -44,14 +44,12 @@ audit:
     so it is a lattice in Num X tensor R. Located two published treatments
     outside the twelve retained sets. Algebraic Geometry II, National Taiwan
     University, 2020 Spring, Chapter V homework, Exercise 11 (Shuang-Yen Lee),
-    PDF p. 4, downloaded to tmp/sources/ntu-ag2-chapter5.pdf, text version
-    `tmp/sources/ntu-ag2-chapter5.md`, proves (a) and
+    PDF p. 4, downloaded to tmp/sources/ntu-ag2-chapter5.pdf, proves (a) and
     (b) by the same route, but its displayed estimate for the sum of the
     c_i^2 does not follow from its adjunction line, so steps s1 to s3 are the
     corrected bookkeeping rather than a transcription. Yang Pi-Yeh,
     Hartshorne Solutions, exercise 5.1.11, printed p. 101
-    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version
-    `tmp/sources/lfwin-hartshorne-solutions.md`), never bounds the
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), never bounds the
     coefficients. Not checked: whether the NTU set's constant A is uniform in
     h; the card does not use that constant.
 - event: source-checked
@@ -91,6 +89,18 @@ audit:
     than the identity has a graph numerically equivalent to the diagonal. Not
     checked: whether some other published set supplies step s8; none in
     tmp/sources does.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Restored the event of 2026-11-11 above to its text of that date, undoing the
+    naming of a text version that a later commit of 2026-11-16 inserted into it;
+    that naming belongs in the citations, and every source cited in the remark
+    names its text version. Re-read the National Taiwan University set in its
+    text version on 2026-11-16 for its pagination: the printed pages of that set
+    are its PDF pages, Exercise 4 on p. 2, Exercise 11 on p. 4, Exercise 12 with
+    the two Exercises 1 and 2 of section 2 on p. 5, and Exercise 3 of section 2
+    on p. 6. Nothing else in the events above changes.
 ---
 
 ::: {.problem}

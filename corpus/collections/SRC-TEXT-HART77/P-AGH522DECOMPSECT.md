@@ -37,11 +37,9 @@ audit:
     E_c. Searched outside the twelve retained sets and read two further
     published treatments: Algebraic Geometry II, National Taiwan University,
     2020 Spring, Chapter V homework, Exercise 2 of section 2, PDF pp. 5-6
-    (tmp/sources/ntu-ag2-chapter5.pdf, text version
-    `tmp/sources/ntu-ag2-chapter5.md`), which proves both directions by a route
-    other than the card's, and Yang Pi-Yeh, Hartshorne Solutions, exercise
-    5.2.2, printed p. 102 (tmp/sources/lfwin-hartshorne-solutions.pdf, text version
-    `tmp/sources/lfwin-hartshorne-solutions.md`), which asserts both
+    (tmp/sources/ntu-ag2-chapter5.pdf), which proves both directions by the
+    card's argument, and Yang Pi-Yeh, Hartshorne Solutions, exercise
+    5.2.2, printed p. 102 (tmp/sources/lfwin-hartshorne-solutions.pdf), which asserts both
     directions. The card's determinant argument in step s3 is not in
     either. Not checked: nothing in the exercise depends on the characteristic.
 - event: source-checked
@@ -56,9 +54,26 @@ audit:
     the content is not argued there. Its Theorem 3.2, printed p. 15, is cited to
     the book's Theorem V.2.12 and to Nagata, and concerns only the possible values
     of e. Nothing further was located; the National Taiwan University set remains
-    the complete published treatment of both directions, by the route the remark
-    describes, and steps s1 and s3 are the card's own, shorter argument rather
-    than a transcription.
+    the complete published treatment, and steps s1 and s3 are its argument.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Re-read the remark against the National Taiwan University set's Exercise 2
+    of section 2 on 2026-11-16 and corrected what the card says of it, and
+    restored the two events above to their text of their dates. The set proves
+    both directions completely, and neither is the card's route: it reads the
+    forward one off the intersection number C_1.C_2 = 0, distinct irreducible
+    curves with no common component being disjoint when their intersection
+    number vanishes, rather than off the fibres of the bundle, and it gets the
+    converse by applying pi^* and using that pi is flat and surjective, so that
+    pi^*F = 0 forces F = 0, rather than by the determinant, its last step being
+    a chart-by-chart check that the map O_X(-C_1) + O_X(-C_2) -> O_X is onto.
+    Steps s1 and s3 are therefore the card's own shorter argument and not a
+    transcription, which is what the remark now says; the wording of the events
+    of 2026-11-11 and 2026-11-16 above, that the set proves the directions by
+    the card's argument and that s1 and s3 are its argument, is what those
+    readings recorded and stands as written.
 ---
 
 ::: {.problem}

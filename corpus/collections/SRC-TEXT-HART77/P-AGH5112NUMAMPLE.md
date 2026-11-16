@@ -45,18 +45,15 @@ audit:
     every curve, V.1, printed page 357. Searched for a published solution
     outside the twelve retained sets and found two, both defective: Algebraic
     Geometry II, National Taiwan University, 2020 Spring, Chapter V homework,
-    Exercise 12, PDF p. 5 (tmp/sources/ntu-ag2-chapter5.pdf, text version
-    `tmp/sources/ntu-ag2-chapter5.md`), and Yang Pi-Yeh, Hartshorne Solutions,
-    exercise 5.1.12, printed p. 102 (tmp/sources/lfwin-hartshorne-solutions.pdf,
-    text version `tmp/sources/lfwin-hartshorne-solutions.md`). Both take
-    D x P^1 as the
+    Exercise 12, PDF p. 5 (tmp/sources/ntu-ag2-chapter5.pdf), and Yang Pi-Yeh,
+    Hartshorne Solutions, exercise 5.1.12, printed p. 102
+    (tmp/sources/lfwin-hartshorne-solutions.pdf). Both take D x P^1 as the
     very ample member, and D x P^1 is p_1^*D, of degree 0 on every fibre, so it
     is not ample; the card's step s5 to s8 tensor the degree-one class of P^1
     on instead. Egbert, PDF p. 261, quotes Fuentes-Pedreira for the surface
-    criterion and proves only the curve comparison. Not checked here: whether
-    Fuentes-Pedreira's criterion could have been used, that paper not having been
-    in tmp/sources when this event was written; the event of the same date below
-    records the answer.
+    criterion and proves only the curve comparison. Not checked: whether
+    Fuentes-Pedreira's criterion could have been used, since that paper is not
+    in tmp/sources.
 - event: source-checked
   by: claude
   date: 2026-11-16
@@ -75,12 +72,39 @@ audit:
     exactly when it is not of the form K_C + P + Q, is correct and is the card's
     step s2 to s4. Steps s5 to s8 add the degree-one class of P^1 on both sides,
     which makes the fibre degree one and leaves the failure of very ampleness in
-    the curve factor, where step s7 reads it off a fibre. The question this event
-    left open, whether Fuentes and Pedreira, The Projective Theory of Ruled
-    Surfaces, Theorem 3.9, could supply the surface criterion, is settled in the
-    event below: their Theorem 3.9(3) does supply it for a decomposable ruled
-    surface, and their Corollary 2.13 is proved, its converse following from
-    Proposition 2.3 with Theorem 2.11.
+    the curve factor, where step s7 reads it off a fibre. Not checked: whether
+    Fuentes and Pedreira, The Projective Theory of Ruled Surfaces, Theorem 3.9,
+    could have supplied the surface criterion, since the proof of that paper's
+    Theorem 3.9(3) rests on the two-fibre test of its Corollary 2.13, whose
+    converse is asserted rather than proved, and its Section 3 covers decomposable
+    surfaces only.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Read Fuentes and Pedreira, The Projective Theory of Ruled Surfaces
+    (arXiv:math/0006204v3), in its text version
+    tmp/sources/projective-theory-ruled-surfaces.md on 2026-11-16, to settle the
+    question the two events above left open. Theorem 3.9(3) is on printed p. 18,
+    Corollary 2.13 on printed p. 14, Proposition 2.3 on printed p. 8, Theorem
+    2.11 on printed pp. 12-13 and Proposition 2.15 on printed p. 15; the printed
+    folios equal the PDF pages of this paper. Theorem 3.9(3) does supply the
+    surface criterion for a decomposable ruled surface, its hypothesis being
+    exactly that mfb and mfb+me be very ample on the base, and its proof rests
+    on Corollary 2.13, whose converse is proved there: Proposition 2.3 applied
+    to the system $\linearsystem{H-Pf}$ produces Q with h^0(H-(P+Q)f) >= h^0(H-Pf)-1 once
+    Theorem 2.11 makes P a base point of some $\linearsystem{H-Pf}$. The converse of Corollary
+    2.13 therefore holds as steps s6 and s7 state it, and the defect the event
+    above recorded against it is withdrawn. The paper uses Hartshorne's
+    conventions, C_0 the minimum-self-intersection section and e = -deg(me), so
+    there is no mismatch of hypotheses with the book. Two corrections to the
+    events above, neither of which changes their conclusions: "of degree 0 on
+    every fibre" is wrong as worded, the degree of p_1^*D being zero on the
+    fibres {c} x P^1 of p_1 and 2g on the fibres C x {t} of p_2, which is what
+    the remark says; and step s5 writes m, not e, for the degree of a map to C,
+    the letter e being the invariant from step s6 on. Not checked: whether
+    Theorem 3.9(3) extends to an indecomposable surface, its Section 3 covering
+    decomposable ones only, which this card's C x P^1 does not need.
 ---
 
 ::: {.problem}
@@ -259,9 +283,9 @@ $$
 \widetilde\Gamma\longrightarrow C
 $$
 is constant, the pullback of $L\tensor(L')^{-1}$ has degree zero. If it is
-nonconstant of degree $e$, then its pullback has degree
+nonconstant of degree $m$, then its pullback has degree
 $$
-e\deg\qty(L\tensor(L')^{-1})=0.
+m\deg\qty(L\tensor(L')^{-1})=0.
 $$
 Thus
 $$
@@ -404,5 +428,5 @@ An external product $D\times\PP^1$ is the pullback $p_1^*D$, and a fibre of $p_1
 
 Read as a decomposable ruled surface of invariant $e=0$, the same example is settled by Fuentes and Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), text version `tmp/sources/projective-theory-ruled-surfaces.md`, Theorem 3.9(3), printed p. 18: $\linearsystem{X_0+\mfb f}$ is very ample exactly when $\mfb$ and $\mfb+\mfe$ are, which at $e=0$ is very ampleness of $\mfb$ alone, and $M=X_0+Lf$ and $M'=X_0+L'f$ carry $\mfb=L$ and $\mfb=L'=K_C(P+Q)$, very ample by step [](#s3){.pf-ref} and not by step [](#s4){.pf-ref}. Steps [](#s6){.pf-ref} and [](#s7){.pf-ref} use that criterion and keep the card's direct arguments beside it.
 
-The criterion rests on the paper's Corollary 2.13, printed p. 14, and that corollary is proved. Its forward direction is Theorem 2.11; its converse is Proposition 2.3, printed p. 8, applied to the system $|H-Pf|$: if the map defined by $|H|$ is not an isomorphism at a point, Theorem 2.11, printed pp. 12--13, makes that point a base point of some $|H-Pf|$, and Proposition 2.3 then produces $Q$ with $h^0(H-(P+Q)f)\ge h^0(H-Pf)-1$, which is $h^0(H)-3$ once $|H|$ is base-point-free. The case $Q=P$ is the one Theorem 2.11 covers through tangent directions, so the two-fibre condition does test a tangent direction transverse to a fibre. Proposition 2.15, printed p. 15, rests on the same corollary and is sound for the same reason.
+The criterion rests on the paper's Corollary 2.13, printed p. 14, and that corollary is proved. Its forward direction is Theorem 2.11; its converse is Proposition 2.3, printed p. 8, applied to the system $\linearsystem{H-Pf}$: if the map defined by $\linearsystem{H}$ is not an isomorphism at a point, Theorem 2.11, printed pp. 12--13, makes that point a base point of some $\linearsystem{H-Pf}$, and Proposition 2.3 then produces $Q$ with $h^0(H-(P+Q)f)\ge h^0(H-Pf)-1$, which is $h^0(H)-3$ once $\linearsystem{H}$ is base-point-free. The case $Q=P$ is the one Theorem 2.11 covers through tangent directions, so the two-fibre condition does test a tangent direction transverse to a fibre. Proposition 2.15, printed p. 15, rests on the same corollary and is sound for the same reason.
 :::
