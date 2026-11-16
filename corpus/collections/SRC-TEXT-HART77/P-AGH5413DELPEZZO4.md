@@ -385,9 +385,8 @@ H^1(X,\OO_X(2H))
 H^1(X,\OO_X(-3H))^*
 =0
 $$
-by Kodaira vanishing applied to the ample divisor $3H$: by Serre duality
-$H^1(X,\OO_X(2H))\cong H^1(X,\OO_X(K_X+3H))^*$ with $K_X=-H$, and
-$H^1(X,\OO_X(K_X+A))=0$ for $A$ ample. Exercise V.4.12, printed p. 408, is the
+by Kodaira vanishing: $2H=K_X+3H$ with $K_X=-H$, and $H^1(X,\OO_X(K_X+A))=0$
+for $A$ ample, so the vanishing holds with $A=3H$. Exercise V.4.12, printed p. 408, is the
 characteristic-free statement of this vanishing *for the cubic surface* only,
 and the surface here is the degree-$4$ Del Pezzo, so it does not license the
 step; the vanishing over a field of characteristic $0$ is Kodaira's, and what a

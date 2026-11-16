@@ -357,7 +357,9 @@ $P_1,\ldots,P_r,P_{r+1}$ a general-position configuration.
 There are only finitely many choices of a triple of labels at each stage,
 so there are only countably many finite words of admissible transformations.
 For each word there are finitely many terminal triples. Step [](#bad-locus-proper-closed){.pf-ref} therefore
-produces only countably many proper closed bad subsets of $\PP^2$.
+produces only countably many proper closed bad subsets of $\PP^2$ --- *given* the
+properness which that step asserts and does not prove, and which is the one
+point of (c) this card leaves open.
 
 Also exclude the finitely many original lines through pairs of the fixed
 points and the finitely many points $P_i$ themselves. Let $B$ be the union
@@ -830,7 +832,7 @@ distinct curves on $X$. This proves (e).
 
 ::: pf-qed
 Steps [](#six-point-condition-preserved){.pf-ref} and [](#six-points-general-position-iff){.pf-ref} prove (a), step [](#general-position-preserved-under-sequence){.pf-ref} proves (b), and steps [](#uncountable-field-lemma){.pf-ref}, [](#bad-locus-proper-closed){.pf-ref} and [](#dense-general-position-extension){.pf-ref}
-prove (c). Steps [](#degree-bound-nonneg-square){.pf-ref}, [](#negative-curve-is-minus-one-curve){.pf-ref}, [](#minus-one-curve-numerics){.pf-ref}, [](#r7-classes-fifty-six){.pf-ref}, [](#r7-classes-realized-unique){.pf-ref}, [](#r8-classes-two-forty){.pf-ref} and [](#r8-classes-realized-unique){.pf-ref} classify all negative curves for $r=7,8$ and
+prove (c) except for the properness of the bad locus, which step [](#bad-locus-proper-closed){.pf-ref} asserts and does not prove. Steps [](#degree-bound-nonneg-square){.pf-ref}, [](#negative-curve-is-minus-one-curve){.pf-ref}, [](#minus-one-curve-numerics){.pf-ref}, [](#r7-classes-fifty-six){.pf-ref}, [](#r7-classes-realized-unique){.pf-ref}, [](#r8-classes-two-forty){.pf-ref} and [](#r8-classes-realized-unique){.pf-ref} classify all negative curves for $r=7,8$ and
 give the counts $56$ and $240$, proving (d). Steps [](#r9-orbit-unbounded-degree){.pf-ref} and [](#r9-infinitely-many-minus-one-curves){.pf-ref} prove the
 starred $r=9$ assertion (e).
 :::
