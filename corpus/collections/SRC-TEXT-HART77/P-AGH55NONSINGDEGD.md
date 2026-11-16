@@ -90,12 +90,13 @@ audit:
     by 3, with the derivative computation quoted in the remark; recomputed its
     three partials (G_x = y^{d-1} - zx^{d-2}, G_y = z^{d-1} - xy^{d-2},
     G_z = x^{d-1} - yz^{d-2}) and the consequence G = x^d + 3T = x^d, so
-    x = 0, then T = xy^{d-1} = 0. Rewrote the p | d, p != 3
+    x = 0, then T = xy^{d-1} = 0. Supplied the one step he leaves implicit, that
+    a zero coordinate forces all three to vanish, and rewrote the p | d, p != 3
     part from the Stacks Project tag 0BYA affine derivatives into homogeneous
     form, where the three terms of xy^{d-1} + yz^{d-1} + zx^{d-1} are equal and
     F = 3xy^{d-1}. Not checked: any source for the equation
     x^{d-1}y + y^{d-1}z + z^d, which stays on the card as a third example with
-    its own check and is not claimed to be published.
+    its own two-line check and is not claimed to be published.
 - event: source-corrected
   by: claude
   date: 2026-11-16
@@ -121,6 +122,39 @@ audit:
     (tmp/sources/stacks-tags/0BYA.md); the reader's item on the Borcherds
     citation was checked and is false of this file, which names
     tmp/sources/hartshorne-solutions-borcherds.md at that line.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Third-pass reader's report on this card, each item recomputed before
+    editing. (1) The source-checked event of 2026-11-16 above was rewritten in
+    place by bfa2d9145f; a dated event is not edited, so its text at its date
+    is restored here and the correction is carried by this event. The restored
+    sentence is itself false where it says the card supplied the step Matthes
+    leaves implicit: he states it, "Hence x = 0, but then by the above
+    equalities, y, z have to be equal to zero as well, which is impossible",
+    as the remark quotes him; the card does not supply that step. (2) The
+    closing paragraph of the remark said the card adds "the zero-coordinate
+    step of the second", contradicting its own quotation of Matthes above; the
+    card's additions are the homogeneous computation of
+    the first equation and the check of the third example, and it now says so.
+    (3) The third example x^{d-1}y + y^{d-1}z + z^d has partials
+    (d-1)x^{d-2}y, x^{d-1} + (d-1)y^{d-2}z and y^{d-1}, so a singular point has
+    y = 0 from the z-partial; the equation then gives z = 0, and only then does
+    the y-partial give x = 0. At d = 2 that partial reads x + z, so x = 0 does
+    not come from the partials alone. The source-corrected event of 2026-11-16
+    above puts x = 0 before z = 0 in its item (4); a dated event is left as
+    written, and this event is the record that the order is the one just given.
+    The COMPLAINTS.md sentences that repeat the wrong order are corrected
+    there, and the card's body, which had the order right, is unchanged. (4) In
+    the Stacks paragraph the reason "and x != 0 because 1 = x^{d-2}y" fails at
+    d = 2, where that equation reads 1 = y; x != 0 follows from x = y^{d-1}
+    together with y != 0, which 1 = x^{d-2}y does give, and the sentence now
+    says that. (5) The sentence in COMPLAINTS.md that the two derivatives of
+    the Stacks equation "vanish together at x = y^{d-1}" with the equation
+    "3y^{d-1}" is reversed: they vanish where 1 = x^{d-2}y and
+    x^{d-1} = y^{d-2}, which give x = y^{d-1}, and the equation there is 3x, as
+    the remark says.
 ---
 
 ::: {.problem}
@@ -265,7 +299,7 @@ The Stacks Project, *Algebraic Curves*, Section 53.9 (Plane curves), tag 0BYA (t
 
 That last clause is correct and is where that section's argument stops: on that affine piece the two partials vanish together exactly where $1=x^{d-2}y$ and $x^{d-1}=y^{d-2}$, and the first of these gives $x^{d-1}y=x$, hence $x=y^{d-2}y=y^{d-1}$, so that the equation reads
 $$x+x^{d-1}y+y^{d-1}=2x+y^{d-1}=3x,$$
-and $x\ne0$ because $1=x^{d-2}y$; so a singular point of that curve exists over $k$ exactly when $3=0$ in $k$.
+and $x\ne0$ because $x=y^{d-1}$ while $1=x^{d-2}y$ forces $y\ne0$; so a singular point of that curve exists over $k$ exactly when $3=0$ in $k$.
 
 The case $p=3$ with $3\mid d$ is supplied in Nils Matthes, answer 705947 to Mathematics Stack Exchange question 705657, *Nonsingular projective variety of degree $d$*, text version `tmp/sources/mse-705657-nonsingular-projective-variety-of-degree-d.md`, asked precisely for this residual case: the curve $V(X^d+ZX^{d-1}+XY^{d-1}+YZ^{d-1})$, and his argument, quoted: "if $[x:y:z]\in C$ is a singular point, then, by considering the partial derivatives of the equation defining $C$, we obtain $zx^{d-2}=y^{d-1}$, $xy^{d-2}=z^{d-1}$ and $yz^{d-2}=x^{d-1}$. Multiplying these equalities by $x,y,z$ respectively, we obtain $zx^{d-1}=xy^{d-1}=yz^{d-1}$ and substituting this into the above equation yields $0=x^d+zx^{d-1}+xy^{d-1}+yz^{d-1}=x^d+3zx^{d-1}=x^d$ as we are in characteristic $3$. Hence $x=0$, but then by the above equalities, $y,z$ have to be equal to zero as well, which is impossible." He also records why the three-term equation cannot be repaired by rescaling its coefficients, and that the fourth term is available because $3\mid d$ makes the partials of $x^d$ vanish. Step [](#characteristic-p-nonsingular){.pf-ref} transcribes this, and his own sentence supplies the zero-coordinate step: "Hence $x=0$, but then by the above equalities, $y,z$ have to be equal to zero as well, which is impossible."
 
@@ -273,5 +307,5 @@ Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), text
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), text version `tmp/sources/hartshorne-solutions-troiani.md`, gives no solution to 5.5.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.5, PDF p. 45, text version `tmp/sources/hartshorne-solutions-egbert.md`: the same two equations as Borcherds.
 The second equation of the published answers is singular whenever $3=0$ in $k$: at $(1:1:1)$ its value is $3$ and each of its three partial derivatives is $d$, so for $p=3$ and $3\mid d$ the point $(1:1:1)$ lies on the curve and is singular. That is why the case needs a different equation, and Matthes's four-term curve is one.
-Agree with Borcherds, the Stacks Project and Matthes where they reach: Borcherds's Fermat curve for $p\nmid d$, the Stacks Project and Shichijo for $p\mid d$ with $p\ne3$ (the latter once its integer step is read in $k$), and Matthes for $p=3$ with $3\mid d$. What this card adds is the homogeneous computation of the first equation, which Stacks leaves at two affine derivatives, and the zero-coordinate step of the second.
+Agree with Borcherds, the Stacks Project and Matthes where they reach: Borcherds's Fermat curve for $p\nmid d$, the Stacks Project and Shichijo for $p\mid d$ with $p\ne3$ (the latter once its integer step is read in $k$), and Matthes for $p=3$ with $3\mid d$. What this card adds is the homogeneous computation of the first equation, which Stacks leaves at two affine derivatives, and the check of the third example, which is in no source found.
 :::
