@@ -48,15 +48,9 @@ audit:
     "every automorphism of P^1 is fractional linear" by reducing to an
     automorphism of k[x] were removed; the remark records that route as the
     card's earlier one. Read against the book: Exercise I.6.6 on printed
-    p. 46 asks (c) for k(x), which is what the transcribed argument proves.
-    The base field is not arbitrary in the exercise: Chapter I fixes k
-    algebraically closed (text version
-    tmp/sources/hartshorne-1977-algebraic-geometry.md, line 350, "We work
-    over a fixed algebraically closed field k"), and part (b) appeals to
-    Corollary I.6.12, which is stated there for such a k. Nothing in the
-    argument for (c) uses more than that k is a field: Lemma 9.24 and
-    Example 9.25 are stated over an arbitrary field F, so the proof is
-    stronger than the exercise asks for.
+    p. 46 asks (c) for k(x), which is what the transcribed argument proves;
+    the field k is arbitrary there, and Lemma 9.24 and Example 9.25 are
+    stated over an arbitrary field F, so no hypothesis is added.
 - event: source-corrected
   by: claude
   date: 2026-11-16
@@ -76,6 +70,31 @@ audit:
     tmp/sources/milne-fields-and-galois-theory.md, and Example 3.1(b) on
     printed p. 35. Not checked in this pass: the mathematical content of the
     steps, which the reader accepted.
+- event: source-corrected
+  by: claude
+  date: 2026-11-17
+  note: >-
+    Reader's report on issue #121, third pass. The 2026-11-16 solution-written
+    note is restored to the text it had on its date, including the closing
+    clause "the field k is arbitrary there, and Lemma 9.24 and Example 9.25
+    are stated over an arbitrary field F, so no hypothesis is added". A dated
+    event records what was read on its date and is not edited: that clause is
+    false, since Hartshorne fixes k algebraically closed for Chapter I (text
+    version tmp/sources/hartshorne-1977-algebraic-geometry.md, line 350, "We
+    work over a fixed algebraically closed field k"), and the correction of it
+    is the 2026-11-16 source-corrected event that follows it, whose reference
+    to "the note above" is true again now that the note says what it said.
+    Nothing in the proof of (c) is affected: Lemma 9.24 and Example 9.25 are
+    stated over an arbitrary field, so the argument needs no hypothesis on k,
+    and the exercise is stated where Chapter I is in force.
+    Second repair: step field-automorphism-fractional-linear said p and q are
+    linear. The right statement is that both have degree at most 1, since
+    max(deg p, deg q) = 1 leaves one of them possibly constant; the
+    coprimality sentence after it is now about a pair of degree at most 1 with
+    a common root. Milne, Lemma 9.24 and Example 9.25 at the pages given were
+    re-read in tmp/sources/milne-fields-and-galois-theory.md for this, and the
+    two-page slip recorded in the 2026-11-11 note stands: 9.24 is on printed
+    p. 118 and 9.25 on printed p. 119.
 ---
 
 ::: {.problem}
@@ -194,11 +213,11 @@ Every $k$-automorphism of $k(x)$ is a fractional linear transformation.
 Let $\sigma$ be a $k$-automorphism of $k(x)$ and put $u=\sigma(x)$.
 Then $\sigma$ is determined by $u$, because $\sigma(h(x))=h(u)$ for every $h\in k(x)$; and $k(u)=\sigma(k(x))=k(x)$.
 
-Write $u=p/q$ in lowest terms, with $p,q\in k[x]$ coprime. By step [](#degree-of-a-rational-function){.pf-ref}, $\deg(u)=1$, so $p$ and $q$ are linear; after multiplying numerator and denominator by a nonzero constant,
+Write $u=p/q$ in lowest terms, with $p,q\in k[x]$ coprime. By step [](#degree-of-a-rational-function){.pf-ref}, $\deg(u)=\max(\deg p,\deg q)=1$, so $p$ and $q$ are of degree at most $1$, at least one of them of degree $1$; after multiplying numerator and denominator by a nonzero constant,
 $$
 u=\frac{ax+b}{cx+d}
 $$
-with $a,b,c,d\in k$ and $ad-bc\ne0$. Coprimality of $p$ and $q$ forbids the two linear polynomials $ax+b$ and $cx+d$ from having a common factor, and a common factor of two linear polynomials is a common root, which exists exactly when $ad-bc=0$; so $ad-bc\ne0$ is the coprimality just used.
+with $a,b,c,d\in k$ and $ad-bc\ne0$. Coprimality of $p$ and $q$ forbids the two polynomials $ax+b$ and $cx+d$, each of degree at most $1$, from having a common root, and such a pair has a common root exactly when $ad-bc=0$; so $ad-bc\ne0$ is the coprimality just used.
 
 This is J. S. Milne, *Fields and Galois Theory*, Example 9.25, printed p. 119, text version `tmp/sources/milne-fields-and-galois-theory.md`, which states the conclusion in the form "$F(X)=F(u)$ if and only if $u=\frac{aX+b}{cX+d}$ with $ad-bc\ne0$", for an arbitrary base field $F$; his $X$ is the affine coordinate $x$ of this card.
 :::

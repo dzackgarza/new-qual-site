@@ -96,6 +96,21 @@ audit:
     own proof of r = s, which the reader accepted, and the Math Stack Exchange
     search for a thread on the converse, which the reader ran and which agrees
     with the record kept in COMPLAINTS.md.
+- event: source-corrected
+  by: claude
+  date: 2026-11-17
+  note: >-
+    Reader's report on issue #121, third pass, one mislabel and no change of
+    mathematics. The 2026-11-16 note above names the three transpositions
+    (ab), (ac) and (cd); the second of the three computations is not (ac). The
+    orderings computed are [b,a,c,d], which is (ab), then [a,c,b,d], which is
+    (bc), then [a,b,d,c], which is (cd), and the three adjacent transpositions
+    (ab), (bc), (cd) generate the orderings. The 2026-11-16 note is left as
+    written, since a dated event is a record of its date; the solution now
+    names (bc), and the three values 1/lambda, 1-lambda and 1/lambda, with the
+    normalizing maps that produce them, are unchanged and were re-read. The
+    invariance of the cross ratio, the six-value orbit and the threshold r <= 2
+    are as the reader accepted them.
 ---
 
 ::: {.problem}
@@ -243,7 +258,7 @@ $$
 \qquad
 [a,b,d,c]=\frac{\rho(c)}{\lambda}=\frac1\lambda
 $$
-where the three right-hand sides use that $x\mapsto1/\rho(x)$ carries $b,a,c$ to $\infty,0,1$, that $x\mapsto1-\rho(x)$ carries $a,c,b$ to $\infty,0,1$, and that $x\mapsto\rho(x)/\lambda$ carries $a,b,d$ to $\infty,0,1$. The transpositions $(ab)$, $(ac)$ and $(cd)$ generate the group of all orderings of the four points, so every ordering of $S_\lambda$ is reached by a composite of them, and the substitutions $\lambda\mapsto1/\lambda$ and $\lambda\mapsto1-\lambda$ generate the six-element group
+where the three right-hand sides use that $x\mapsto1/\rho(x)$ carries $b,a,c$ to $\infty,0,1$, that $x\mapsto1-\rho(x)$ carries $a,c,b$ to $\infty,0,1$, and that $x\mapsto\rho(x)/\lambda$ carries $a,b,d$ to $\infty,0,1$. The transpositions $(ab)$, $(bc)$ and $(cd)$ generate the group of all orderings of the four points, so every ordering of $S_\lambda$ is reached by a composite of them, and the substitutions $\lambda\mapsto1/\lambda$ and $\lambda\mapsto1-\lambda$ generate the six-element group
 $$
 \lambda,\quad1-\lambda,\quad\lambda^{-1},\quad
 (1-\lambda)^{-1},\quad
