@@ -124,11 +124,13 @@ $O:S\to E$ gives an etale morphism
 $$
 E[2]\longrightarrow S
 $$
-whose fibre over $t$ is those four points. The morphism $[2]$ is projective
-with finite fibres, hence finite (Exercise III.11.2, printed p. 280), and a
-base change of a finite morphism is finite, so $E[2]\to S$ is finite; a finite
-etale morphism is locally free of degree equal to the number of points in a
-fibre. Therefore $E[2]\to S$ is finite etale of degree $4$.
+whose fibre over $t$ is those four points. The morphism $[2]$ is projective,
+and its fibre over a point $y\in E_t$ is the coset $\{x:2x=y\}$ of the
+four-point group $E[2]_t$, so it has finite fibres and is therefore finite
+(Exercise III.11.2, printed p. 280); a base change of a finite morphism is
+finite, so $E[2]\to S$ is finite, and a finite etale morphism is locally free
+of degree equal to the number of points in a fibre. Therefore $E[2]\to S$ is
+finite etale of degree $4$.
 
 :::
 

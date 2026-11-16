@@ -426,13 +426,15 @@ A=k[[x,y]]/(y^2-x^3).
 $$
 The element $t=y/x$ of the fraction field of $A$ satisfies $t^2=x$ and
 $t^3=y$: the series $y^2-x^3$ is irreducible in every characteristic, since
-$x^3$ is not a square in $k((x))$, so $A$ is a domain and $x\ne0$. Therefore
-the map $k[[x,y]]\to k[[t]]$ sending $x\mapsto t^2$, $y\mapsto t^3$ has kernel
-$(y^2-x^3)$, its image is $k[[t^2,t^3]]$, and the resulting inclusion
+$x^3$ is not a square in $k((x))$ and the polynomial is monic of degree two in
+$y$, so $A$ is a domain and $x\ne0$. The map $k[[x,y]]\to k[[t]]$ sending
+$x\mapsto t^2$, $y\mapsto t^3$ has image $k[[t^2,t^3]]$, which is
+one-dimensional, so its kernel is a height-one prime containing the irreducible
+element $y^2-x^3$ and is therefore $(y^2-x^3)$ itself. That gives an inclusion
 $$
 k[[t^2,t^3]]\subseteq B\subseteq k[[t]]
 $$
-of the normalization $B$ of $A$ has equality throughout: $t$ is integral over
+of the normalization $B$ of $A$ with equality throughout: $t$ is integral over
 $k[[t^2,t^3]]$, and $k[[t]]$ is a discrete valuation ring, hence integrally
 closed. Every power $t^n$ with $n\ge2$ lies in $k[[t^2,t^3]]$, so every series
 in $k[[t]]$ is congruent modulo $k[[t^2,t^3]]$ to a unique scalar multiple of

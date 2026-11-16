@@ -224,7 +224,7 @@ $$
 =t_X(\alpha\smile\beta),
 $$
 between $H^p(X,\Omega_X^p)$ and $H^{n-p}(X,\Omega_X^{n-p})$.
-With the compatibility clause of that convention the Gysin morphism
+With (G) the Gysin morphism
 $$
 j_*:H^q(Y,\Omega_Y^q)\longrightarrow H^{q+p}(X,\Omega_X^{q+p})
 $$
@@ -237,6 +237,12 @@ In particular, the class defined in the problem is
 $$
 \eta(Y)=j_*(1).
 $$
+
+That the four inputs are consistent --- that there is a trace satisfying (N),
+(R) and (B) at once, and it is unique up to the normalization (N) --- is a
+theorem of Grothendieck--Serre duality, and it is neither proved nor cited
+here. What is proved below is that the exercise's four assertions follow from
+those inputs, and that (R) itself is a theorem of the book in dimension one.
 
 ::: pf
 
