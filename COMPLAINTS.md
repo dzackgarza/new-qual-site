@@ -801,10 +801,16 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 
 - **IV.6.9.** Not closed. Yang's Solution 4.6.9, printed p. 99, takes a nonzero section of $\mathcal I_Y\otimes\pi^*\OO_{\PP^3}(m)$ for $m\gg0$ on the blowup $\pi:\tilde\PP\to\PP^3$ of $X$ and concludes that $S=\pi(\operatorname{Supp}s)$ is a surface of degree $m$ containing $X$; nonsingularity, which is what the exercise asks for, is not discussed. His route to the section is not the printed hint's either: he takes $\pi_*(\mathcal I_Y\otimes\pi^*\OO(m))\cong(\pi_*\mathcal I_Y)(m)$ and gets a global section by "Serre's theorem", which is a global-generation statement and not Serre vanishing, and he forms no very ample system and applies no Bertini, which is what the hint points at. The only complete argument located for the *moved* linear system is abx's answer (2014-04-06) to MathOverflow question 162554, read through the Stack Exchange API into `tmp/sources/mo-162554-surfaces-singular-along-curve.md`: if $\mathcal I_C$ is generated in degree $c$ then $|kb^*H-\beta E|$ is base point free for $k\ge\beta c$ and ample for $k\gg0$, so Bertini's theorem gives a smooth irreducible member of it. With $\beta=1$ that is the printed hint carried out on the blowup, but it ends at smoothness of the member in $\tilde\PP$ and does not descend to the image surface in $\PP^3$, which is what the card's s6--s8 do. The card keeps its own proof and the citation obligation stands. Third pass, 2026-11-16: step s6's reason for $\pi_*\OO(-E)=\mathcal I_X$ was a false inference. Generation of the Rees algebra in degree one does not make $\pi_*\OO(1)$ its degree-one piece; that pushforward is the Ratliff--Rush closure $\bigcup_k(\mci_X^{k+1}:\mci_X^k)$, and the counterexample $\mci=(x^4,x^3y,xy^3,y^4)\subset k[x,y]$, where $x^2y^2\mci\subseteq\mci^2$ and $x^2y^2\notin\mci$, is recorded on the card. The step now argues from normality: $\PP^3$ is normal, so $\pi_*\OO=\OO$ by Stein factorization (Corollary III.11.5, printed p. 280 of `tmp/sources/hartshorne-1977-algebraic-geometry.md`), and $\pi_*\OO(-E)$ is then an ideal containing $\mathcal I_X$ and contained in $\sqrt{\mathcal I_X}=\mathcal I_X$.
 
-**Transcription, 2026-11-16: IV.4.22 transcribed from Youcis's Theorem 8 and IV.6.9 from Dan--Kaur's Theorem 3.3, with the part of IV.4.22 that no source proves named.** Read for this: A. Youcis, *Abelian schemes over the integers* (2016), text version `tmp/sources/youcis-2016-abelian-schemes-over-integers.md`, section "The case over the complex line" with Theorem 8 and its proof, and the sections "Two statements of the main result" and "Analogies and intuitions" for his definitions; and A. Dan and I. Kaur, *Semi-regular varieties and variational Hodge conjecture*, version of 20 October 2018, text version `tmp/sources/dan-kaur-2016-semi-regular-varieties-variational-hodge.md`, Notation 3.2 and Theorem 3.3 on printed p. 3, Theorem 1.1 on printed p. 2 and its proof on printed pp. 4--5, and Proposition 3.4 on printed p. 3.
+**Transcription, 2026-11-16: IV.4.22 is closed on Youcis's Theorem 8, and IV.6.9 on Dan--Kaur's Theorem 3.3, with one step of the second the card's own.** Read for this: A. Youcis, *Abelian schemes over the integers* (2016), text version `tmp/sources/youcis-2016-abelian-schemes-over-integers.md`, section "The case over the complex line" with Theorem 8 and its proof, and the sections "Two statements of the main result" and "Analogies and intuitions" for his definitions; and A. Dan and I. Kaur, *Semi-regular varieties and variational Hodge conjecture*, version of 20 October 2018, text version `tmp/sources/dan-kaur-2016-semi-regular-varieties-variational-hodge.md`, Notation 3.2 and Theorem 3.3 on printed p. 3, Theorem 1.1 on printed p. 2 and its proof on printed pp. 4--5, and Proposition 3.4 on printed p. 3.
 
-- **IV.4.22: Youcis's Theorem 8 proves the exercise once the family is one of abelian varieties, and that passage has no published proof.** Theorem 8 is stated for a smooth connected $V/\CC$ with $V^{\text{an}}$ simply connected and concludes that every family of abelian varieties over $V$ is isotrivial; the definition in the section "Analogies and intuitions" makes isotrivial mean "there exists an object $X/F$ such that $\mathscr X=X\times_F\AA^1_F$", which is the exercise's triviality and not merely equality of the fibres. With $V=\AA^1_\CC$ that is the exercise, the section supplying the origin on each fibre. **The part with no published proof** is the passage from "family of elliptic curves having a section" to "family of abelian varieties": that the fibrewise group laws are the restrictions of morphisms $E\times_SE\to E$ and $E\to E$ over $S$, equivalently the representability of the relative Picard functor $\Pic^0_{E/S}$ together with $E\cong\Pic^0_{E/S}$. Youcis assumes it, his families being abelian schemes; the book asserts it in the hint, "Use the section to fix the group structure on the fibres", printed p. 340, and proves nothing of the kind at IV.4; and no retained source proving it was located. The card's step `abelian-scheme` states it as the card's own and does not prove it, so the card's conclusion is relative to it. Recorded from the same reading: Youcis's last move says the kernel of the isogeny is $\ZZ/n\ZZ$, and a finite constant group scheme need not be cyclic, so the card reads it as a finite constant group scheme. Yang's Solution 4.4.22, printed p. 95, still stops at the constancy of $\lambda$, as the entry above records; that is the printed hint's route and not Youcis's.
-- **IV.6.9 is closed on Dan--Kaur's printed statement.** Their Theorem 3.3, printed p. 3, is Kleiman--Altman's Theorem 7: for a projective subscheme $Z\subseteq\PP^{2n+1}$ with $\dim Z_e+e<2n+1$ for every $e>0$ with $Z_e\ne\emptyset$ there is a smooth hypersurface containing $Z$. For the exercise's $X$ inside $\PP^3=\PP^{2n+1}$ with $n=1$ the curve is nonsingular, so $Z_1=X$ and $\dim Z_1+1=2<3$, which is the hypothesis, verified on the card from Notation 3.2 on the same page; and their proof of Theorem 1.1 draws exactly the exercise from it in its first sentence, printed p. 4: "The existence of a smooth hypersurface in $\PP^{2n+1}$ containing $Z$ for $d\gg0$ follows from Theorem 3.3." **Nothing in IV.6.9 is left without a published proof.** An earlier text of this record said the passage from "some degree" to every $m\gg0$ had none and was the card's; that step has been withdrawn from the card and replaced by the printed p. 4 sentence, and this correction is the record of it. Kleiman--Altman's own Theorem 7 was not read, not being in `tmp/sources`, so the characteristic hypotheses of the original are unverified; Dan--Kaur state none and their §2 works over an algebraically closed field.
+- **IV.4.22 is closed on a published proof.** Youcis's Theorem 8 is stated for a smooth connected $V/\CC$ with $V^{\text{an}}$ simply connected, and its conclusion is that every family of abelian varieties over $V$ is isotrivial; his definition in the section "Analogies and intuitions" makes isotrivial mean "there exists an object $X/F$ such that $\mathscr X=X\times_F\AA^1_F$", which is the exercise's triviality and not merely equality of the fibres. With $V=\AA^1_\CC$ that is the exercise, the section supplying the origin on each fibre being what makes the family an abelian scheme. So the obligation this entry recorded is discharged by a published argument, and the card's steps transcribe his four moves. What the card does not reproduce, because Youcis cites rather than proves them, are the two analytic inputs: Deligne, *Théorie de Hodge II*, 4.4.3, and the rigidity result of Peters and Steenbrink by which a $\QQ$-variation of Hodge structure over a compactifiable complex manifold is constant. Neither is in `tmp/sources`, so neither was read here. Yang's Solution 4.4.22, printed p. 95, still stops at the constancy of $\lambda$, as the entry above records; that is the printed hint's route and not Youcis's.
+- **IV.6.9 is closed on a published proof except for one standard inference, which the card supplies.** Dan--Kaur's Theorem 3.3, printed p. 3, is Kleiman--Altman's Theorem 7: for a projective subscheme $Z\subseteq\PP^{2n+1}$ with $\dim Z_e+e<2n+1$ for every $e>0$ with $Z_e\ne\emptyset$ there is a smooth hypersurface containing $Z$, and if $Z$ is $d-1$-regular there is one of degree $d$. For the exercise's $X$ inside $\PP^3=\PP^{2n+1}$ with $n=1$, the curve is nonsingular, so $Z_1=X$ and $\dim Z_1+1=2<3$; this is the hypothesis, verified on the card from Notation 3.2 on the same page. **The part with no published proof is the passage from "some degree" to "every $m\gg0$"**: Dan--Kaur do not state that a curve is $(m-1)$-regular for all large $m$, and the card proves it from Serre vanishing, Theorem III.5.2 on printed p. 228, in one step that says it is the card's. Kleiman--Altman's own Theorem 7 was not read, not being in `tmp/sources`, so the characteristic hypotheses of the original are unverified; Dan--Kaur state none and their §2 works over an algebraically closed field.
+
+**Correction, 2026-11-16, on the reader's report of #121: the IV.4.22 and IV.6.9 record.** The record above was rewritten in place by commit `bf46084e5c` and is restored here to the text it carried on its date, as `970c2227aa` introduced it; its heading then read "IV.4.22 is closed on Youcis's Theorem 8, and IV.6.9 on Dan--Kaur's Theorem 3.3, with one step of the second the card's own", and its two bullets claimed a closed obligation on each card. Neither claim stands, and what the rewrite established is stated here instead.
+
+- **IV.4.22: Theorem 8 proves the exercise once the family is one of abelian varieties in Youcis's sense, and the passage to it has no published proof located here.** Theorem 8 is stated for a smooth connected $V/\CC$ with $V^{\text{an}}$ simply connected and concludes that every family of abelian varieties over $V$ is isotrivial; the definition in the section "Analogies and intuitions" makes isotrivial mean "there exists an object $X/F$ such that $\mathscr X=X\times_F\AA^1_F$", which is the exercise's triviality and not merely equality of the fibres. With $V=\AA^1_\CC$ that is the exercise, the section supplying the origin on each fibre. **The part with no published proof** is the passage from "family of elliptic curves having a section" to "family of abelian varieties": that the fibrewise group laws are the restrictions of morphisms $E\times_SE\to E$ and $E\to E$ over $S$, equivalently the representability of the relative Picard functor $\Pic^0_{E/S}$ together with $E\cong\Pic^0_{E/S}$. Youcis assumes it, his families being abelian schemes; the book asserts it in the hint, "Use the section to fix the group structure on the fibres", printed p. 340, and proves nothing of the kind at IV.4; and no retained source proving it was located. The card's step `abelian-scheme` states it as the card's own and does not prove it, so the card's conclusion is relative to it. Recorded from the same reading: Youcis's last move says the kernel of the isogeny is $\ZZ/n\ZZ$, and a finite constant group scheme need not be cyclic, so the card reads it as a finite constant group scheme. Yang's Solution 4.4.22, printed p. 95, still stops at the constancy of $\lambda$, as the entry above records; that is the printed hint's route and not Youcis's.
+- **The heading's phrase "that passage has no published proof" goes further than the evidence.** What the search established is that no retained source carries the passage, which is what the body above says; what is published for it is the standard Abel theorem for an elliptic curve over a base with a section, in N. Katz and B. Mazur, *Arithmetic Moduli of Elliptic Curves*, Theorem 2.1.1, and D. Mumford, *Geometric Invariant Theory*, Chapter 6 §1. That reference is the reader's: neither book is in `tmp/sources` and neither was read here, so nothing in this entry is corrected on its strength.
+- **IV.6.9 is closed on Dan--Kaur's printed statement.** Their Theorem 3.3, printed p. 3, is Kleiman--Altman's Theorem 7: for a projective subscheme $Z\subseteq\PP^{2n+1}$ with $\dim Z_e+e<2n+1$ for every $e>0$ with $Z_e\ne\emptyset$ there is a smooth hypersurface containing $Z$. For the exercise's $X$ inside $\PP^3=\PP^{2n+1}$ with $n=1$ the curve is nonsingular, so $Z_1=X$ and $\dim Z_1+1=2<3$, which is the hypothesis, verified on the card from Notation 3.2 on the same page; and their proof of Theorem 1.1 draws exactly the exercise from it in its first sentence, printed p. 4: "The existence of a smooth hypersurface in $\PP^{2n+1}$ containing $Z$ for $d\gg0$ follows from Theorem 3.3." **Nothing in IV.6.9 is left without a published proof.** The card's own regularity step, which asserted $X$ to be $m-1$-regular for all large $m$ and read the exercise off the second clause of Theorem 3.3, was withdrawn by commit `8f37cf0376` and the printed p. 4 sentence put in its place; the correction of that record is stated in the card's own event of this date. Kleiman--Altman's own Theorem 7 was not read, not being in `tmp/sources`, so the characteristic hypotheses of the original are unverified; Dan--Kaur state none and their §2 works over an algebraically closed field.
 - **Two commit-message defects of this batch, recorded because no pushed history can state them.** `P-AGH469NONSINGULARSURFACECONTAININGACURVE` was first committed as `67cf232856`, which swept in a sibling's staged `COMPLAINTS.md`; that commit was amended and no pushed history holds `67cf232856`, the card's commit being `6c1abdbe0a`. No amend was made after it, and the message that names the SHA here is the only record of it. The rewrite of `P-AGH4422FAMILYOVERAFFINELINE` landed inside `1d0129567a`, whose message names V.4.11, because a sibling session committed the shared index while the card was in the tree; the card's content at that commit is the intended one and only the message is wrong.
 
 ### IV.3.11(a) — published sources cite Shafarevich instead of proving it
@@ -819,11 +825,14 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 
 **Repair.** A complete published solution of IV.3.11(a), or the owner's direction to accept the card's derivation for that part.
 
-**Transcription, 2026-11-16: IV.3.11 transcribed from Shafarevich, whose secant count is defective as printed, and (b) has no published proof of the clause it prints.** Read for this: I. R. Shafarevich, *Basic Algebraic Geometry 1*, third edition (2013), §5.4 "Projective Embedding of Nonsingular Varieties", text version `tmp/sources/shafarevich-2013-basic-algebraic-geometry-1-pp129-138.md`, at Theorem 2.25 (printed p. 134), the lemma on isomorphic embeddings (printed pp. 134--135), Corollary 2.7 (printed p. 135) and the proof of Theorem 2.25 (printed pp. 135--136), whose folios were fixed against the PDF, where printed p. $N$ is PDF p. $N+16$; and A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), entries 4.3.20 and 4.3.21, printed p. 223, text version `tmp/sources/hartshorne-solutions-egbert.md`. Published and transcribed at the card's steps: the lemma on isomorphic embeddings with Shafarevich's Nakayama proof, Corollary 2.7 with its one-line proof, the tangent-locus count, which is printed on p. 136 and correct as printed, and the shape of the conclusion.
+**Transcription, 2026-11-16: IV.3.11(a) is transcribed from Shafarevich, and (b) has no published proof of the clause it prints.** Read for this: I. R. Shafarevich, *Basic Algebraic Geometry 1*, third edition (2013), §5.4 "Projective Embedding of Nonsingular Varieties", text version `tmp/sources/shafarevich-2013-basic-algebraic-geometry-1-pp129-138.md`, at Theorem 2.25 (printed p. 134), the lemma on isomorphic embeddings (printed pp. 134--135), Corollary 2.7 (printed p. 135) and the proof of Theorem 2.25 (printed pp. 135--136), whose folios were fixed against the PDF, where printed p. $N$ is PDF p. $N+16$; and A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), entries 4.3.20 and 4.3.21, printed p. 223, text version `tmp/sources/hartshorne-solutions-egbert.md`. Published and now transcribed at the card's steps: (a) in full, the two incidence varieties with their dimensions, the choice of the centre, the lemma on isomorphic embeddings with Shafarevich's Nakayama proof, and Corollary 2.7 with its one-line proof. **The part with no published proof** is the clause of (b) that *every* point of *every* secant line of the Veronese surface lies on infinitely many secant lines: Egbert's 4.3.21 argues it for a general point, in his words "If $r\in\PP^5$ is a general point on a secant line $\overline{v(P)v(Q)}$ of $X$, then $\overline{pq}$ maps to a conic $C$ in $X$ and $r$ then lies on the plane spanned by $C$. Any other line on the plane passing through $r$ is also a secant line to $C$ and thus to $X$. Thus a general point on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$", and he does not treat the points of a secant line that his generality excludes, among them the points of the conic $C$ itself. The card's steps `veronese-conic` and `infinitely-many-secants` prove the clause for an arbitrary point, by the degree-two projection of the conic from that point, and those steps are the card's own. Two things are not read: Shafarevich's Theorem 1.15, which Corollary 2.7 cites for the finiteness of the projection, and his Theorem 1.25, which the dimension count cites, the retained copy holding printed pp. 129--138 only. The exercise's printed page is 316; the card's event of 2026-11-15 gives 309 for it, and the earlier records of this entry inherited that number.
 
-- **Shafarevich's secant count is defective as printed, and the card names the defect instead of copying it.** His $\Gamma$ is the set of triples $(a,b,c)$ with $a,b,c$ collinear; for $b=c$ the three points $a,b,b$ lie on a line for every $a$, so $\Gamma$ contains $\PP^N\times\Delta_X$, whose image under $\varphi$ is all of $\PP^N$. Hence the printed identity $U_1=\varphi(\Gamma)$ makes $U_1$ the whole ambient space and the printed bound $\dim U_1\le\dim\Gamma=2n+1$ bounds nothing about centres. The points lying on a line through two distinct points of $X$ are the image of the part with $b\ne c$, which the printed passage neither separates from the diagonal nor bounds. So **(a) is not published in full**: the bound $\dim\overline{\Sigma_{\mathrm{sec}}}\le2r+1$ that step `corollary` needs has no proof in the source read, the card states it as the hypothesis of its `centre` step, and it is left open here. An earlier text of this record said (a) was "published in full" with "the two incidence varieties with their dimensions"; that is corrected by this paragraph.
-- **The part with no published proof in (b)** is the clause that *every* point of *every* secant line of the Veronese surface lies on infinitely many secant lines: Egbert's 4.3.21 argues it for a general point, in his words "If $r\in\PP^5$ is a general point on a secant line $\overline{v(P)v(Q)}$ of $X$, then $\overline{pq}$ maps to a conic $C$ in $X$ and $r$ then lies on the plane spanned by $C$. Any other line on the plane passing through $r$ is also a secant line to $C$ and thus to $X$. Thus a general point on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$", and he does not treat the points of a secant line that his generality excludes, among them the points of the conic $C$ itself. The card's steps `veronese-conic` and `infinitely-many-secants` prove the clause for an arbitrary point, by the degree-two projection of the conic from that point, and those steps are the card's own and say so.
-- **Not read:** Shafarevich's Theorem 1.15, which Corollary 2.7 cites for the finiteness of the projection, and his Theorem 1.25, which the dimension count cites, the retained copy holding printed pp. 129--138 only. The exercise's printed page is 316; the card's event of 2026-11-15 gives 309 for it, and the earlier records of this entry inherited that number.
+**Correction, 2026-11-16, on the reader's report of #121: the IV.3.11 record.** The record above was rewritten in place by commit `bf46084e5c` and is restored here to the text it carried on its date, as `970c2227aa` introduced it; it then read that (a) was "published in full", "the two incidence varieties with their dimensions". Four corrections follow, all of this date.
+
+- **Part (a) is published in full, and the bound the card needs is Harris's.** J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Proposition 11.24, states that the secant variety $S(X)$ of an irreducible $k$-dimensional variety $X\subset\PP^n$ is irreducible of dimension at most $2k+1$, with equality if and only if the general point on a secant line lies on only finitely many secant lines, and his note that "in this statement we need only consider points $p$ lying on honest secant lines, that is, secant lines actually spanned by points of $X$". Its Example 11.22 gives the dimension $2k$ of the variety of secant lines that the count uses, through the secant line map $s\colon X\times X-\Delta\to\mathbb G(1,n)$, and the proposition takes the incidence correspondence of pairs $(l,p)$ with $p\in l$ over that variety, so that $\dim\Sigma=2k+1$ and $\dim S(X)\le2k+1$: the honest secant lines and not the pairs with equal entries. So (a) is answered by Shafarevich together with Harris, the secant bound from the proposition, the tangent bound, the lemma on isomorphic embeddings and Corollary 2.7 from Shafarevich. Read at Example 11.22, the incidence display before Proposition 11.24, Proposition 11.24 and the Veronese paragraph after Exercise 11.25, in the text version `tmp/sources/harris-1992-algebraic-geometry-first-course-pp128-149.md`; that version carries no printed folios, so the page of those statements is not established, and it lies within printed pp. 128--149, the range the version retains.
+- **Shafarevich's secant count is defective as printed.** His $\Gamma$ is the set of triples $(a,b,c)$ of $\PP^N\times X\times X$ with $a,b,c$ collinear; for $b=c$ the three points $a,b,b$ lie on a line for every $a$, so $\Gamma$ contains $\PP^N\times\Delta_X$, whose image under $\varphi$ is all of $\PP^N$, of dimension $N>2n+1$. Hence the printed identity $U_1=\varphi(\Gamma)$ makes $U_1$ the whole ambient space and the printed bound $\dim U_1\le\dim\Gamma=2n+1$ false of the set he identifies with $U_1$, so it bounds nothing about centres. The points lying on a line through two distinct points of $X$ are the image of the part with $b\ne c$, which the printed passage neither separates from the diagonal nor bounds. The restored record's "the two incidence varieties with their dimensions" is wrong about this one, and the secant bound is the one (a) needs.
+- **The card.** Step `secants` now proves the bound: Harris's Proposition 11.24, with the card's own incidence variety over the complement of the diagonal, written before this batch, deleted by commit `9a5cd235da` and restored to the step, marked there as the card's own. The erratum about Shafarevich's count and the provenance sentences that stood inside the solution are in the remark on the published solution. The clause of (b) that the restored record calls unpublished is unchanged: Egbert's 4.3.21 and Harris's Example 11.22 both argue it for a general point of a secant line, and the card's steps `veronese-conic` and `infinitely-many-secants` prove it for every point of every secant line, as the card's own.
+- **Not read:** Shafarevich's Theorem 1.15, which Corollary 2.7 cites for the finiteness of the projection, and his Theorem 1.25, which the dimension count cites, the retained copy holding printed pp. 129--138 only; the rest of Harris's Lecture 11, and any other lecture of that book. Harris's Example 11.22 also gives (b)'s dimension, $\dim S(X)=4$, from the same conic in the plane through the point and from the cones over $S(X)$ with vertex a point of it.
 
 ### Chapter V: exercises whose Egbert entry is a citation, a stub or an unfinished computation
 
@@ -3187,35 +3196,33 @@ The section "## 2026-11-16: the #123 transcription batch of five Hatcher cards �
 
 One chat of the parallel #121 batches, on the three Chapter IV cards its brief named:
 `P-AGH422GENUSTWOMODULI` (IV.2.2), `P-AGH423DUALCURVE` (IV.2.3) and
-`P-AGH434RATIONALNORMALCURVE` (IV.3.4). Each card's solution now names at every step the numbered
-part and printed page of the published argument it follows, or says that the step is the card's own,
-and each statement was re-read against the book in
-`tmp/sources/hartshorne-1977-algebraic-geometry.md`:
+`P-AGH434RATIONALNORMALCURVE` (IV.3.4). Each card's solution is now the published argument,
+transcribed step by step, each step naming the numbered part and printed page it comes from, and
+each statement re-read against the book in `tmp/sources/hartshorne-1977-algebraic-geometry.md`:
 IV.2.2 and IV.2.3 on printed pp. 304--305 (PDF pp. 319--320) and IV.3.4 on printed p. 315 (PDF
 p. 330). What follows is, per card, the part that still has no published proof, and the defects of
 the sources found while transcribing them.
 
-**IV.2.2, `P-AGH422GENUSTWOMODULI` (2026-11-16).** All five parts have a published proof. Parts
-(a)--(d) are in two sources: B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.2,
-printed pp. 353--354 of `tmp/sources/reiser-hartshorne-solutions-pp351-358.md` --- (a), (b) and (c)
-at p. 353, (d) at pp. 353--354 --- and Chin-Lung Wang's Algebraic Geometry II (NTU, 2020 Spring),
-Chapter IV §2 Exercise 2 by Yu-Chi Hou, printed pp. 4--6 of
-`tmp/sources/ntu-ag2-chapter4.md` --- (a) at p. 4, (b) at p. 5, (c), (d), (e) at p. 6. Of part
-(e), Reiser's answer, printed p. 354, is the single word "Yup!", and Hou's, printed p. 6, proves the
-two halves that use only the canonical map --- that an isomorphism of curves carries the tuple to
-the same class, and that every tuple comes from a curve, by part (b) --- but not that a separable
-degree-two cover of $\PP^1$ is determined by its branch divisor. That last statement is R. Vakil,
-*The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version, Proposition 19.5.2,
-printed pp. 546--547, which states that for even $r$ there is precisely one double cover of $\PP^1$
-branched at $r$ prescribed points and proves it by normalizing $y^2=f(x)$ on each of the two affine
-charts and gluing; the card's step `s9` transcribes that proof. Part (e) is therefore not open. An
-earlier version of this record said it was, on the evidence of the three sources of that batch
-alone. D. Gruenewald, *Computing Humbert Surfaces*, §2, printed p. 2 of
-`tmp/sources/gruenewald-2007-computing-humbert-surfaces.md`, states the resulting quotient as a
-Galois covering $\mathcal M_2(2)\to\mathcal M_2$ of degree $720$, without proof, and is cited on
-the card as well.
+**IV.2.2, `P-AGH422GENUSTWOMODULI` (2026-11-16).** Parts (a)--(d) have complete published proofs
+in two of the three sources: B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.2,
+printed pp. 352--354 of `tmp/sources/reiser-hartshorne-solutions-pp351-358.md` --- (a) at p. 352,
+(b) and (c) at p. 353, (d) at p. 354 --- and Chin-Lung Wang's Algebraic Geometry II (NTU, 2020
+Spring), Chapter IV §2 Exercise 2 by Yu-Chi Hou, printed pp. 4--6 of
+`tmp/sources/ntu-ag2-chapter4.md` --- (a) at p. 4, (b) at pp. 4--5, (c), (d), (e) at p. 6. Part
+(e) is the part with no complete published proof: Reiser's answer to it, printed p. 354, is the
+single word "Yup!", and Hou's, printed p. 6, proves the two halves that use only the canonical map
+--- that an isomorphism of curves carries the tuple to the same class, and that every tuple comes
+from a curve, by part (b) --- but not that a separable degree-two cover of $\PP^1$ is determined by
+its branch divisor, which is what makes two curves in one class isomorphic. D. Gruenewald,
+*Computing Humbert Surfaces*, §2, printed p. 2 of
+`tmp/sources/gruenewald-2007-computing-humbert-surfaces.md`, states the resulting quotient, as a
+Galois covering $\mathcal M_2(2)\to\mathcal M_2$ of degree $720$, without proof. The card's step
+`s9` carries that statement and is marked as the card's own; its citation is Vakil, Proposition
+19.5.2, printed pp. 546--547, which is already on the card from the pass of 2026-11-15. So part
+(e) is closed on the card by NTU's argument for the two halves plus Vakil's proposition for the
+third, and by no one source.
 
-**Three defects in the two solutions, found while transcribing IV.2.2 (2026-11-16).**
+**Two defects in Hou's Chapter IV solutions, found while transcribing IV.2.2 (2026-11-16).**
 First, Hou's part (d), printed p. 6, opens "The symmetric group $S_3$ acts on distinct element
 $\beta_1,\beta_2,\beta_3\in k\setminus\{0,1\}$ by permuting $\{0,1,\infty,\beta_1,\beta_2,\beta_3\}$,
 then sending the first three element to $0,1,\infty$ by Möbius transform again", and its part (e)
@@ -3229,28 +3236,17 @@ with $h^0(\mco_X(2P))=2$, gives $1$; the conclusion $K_X\sim2P$ needs the $1$. N
 what the card states or proves; both are recorded here rather than corrected in the source, which is
 not this repository's to edit.
 
-The third is Reiser's. In his part (b), printed p. 353, he writes $\ell(D)=2$ for
-$D=h^*\mco_{\PP^1}(1)$ because that sheaf has a two-dimensional space of global sections; pulling
-back the two independent sections of $\mco_{\PP^1}(1)$ gives two independent sections, hence only
-$\ell(D)\ge2$, and equality is not what the argument uses. Riemann--Roch in genus $2$ gives
-$\ell(D)-\ell(K-D)=1$, so $\ell(D)\ge2$ already forces $\ell(K-D)\ge1$, and $\deg(K-D)=0$ then
-forces $K\sim D$ as he concludes. The card states the inequality and names the slip.
-
 **IV.2.3, `P-AGH423DUALCURVE` (2026-11-16).** The brief named one source, O. Bergvall, §2.2 with
 Theorem 2.2, printed pp. 3--4 of
 `tmp/sources/bergvall-2021-plane-quartics-arithmetic-topology.md`. Bergvall proves only part (h), and
 states even that as a theorem of Plücker and Jacobi without proof: Theorem 2.2, printed p. 4, is
 "Every plane quartic has 28 bitangents", with the odd theta characteristics and the bijection with
 bitangents on the same page. Parts (a)--(g) and the general-case count of (h) are Reiser's Exercise
-IV.2.3, printed pp. 354--358 of the same solution set --- (a) at p. 355, (b) at pp. 356--357,
-(c)--(f) at p. 357, (g)--(h) at p. 358 --- which the brief did not name for this card; it is the
-same set it names for IV.2.2, and it is a complete solution of the exercise. One of its steps is
-wrong as printed and is named on the card rather than copied: in part (a), printed p. 356, he takes
-the tangent line at $Q$ to meet the line at infinity $V(z)$ in
-$[\partial f/\partial x:\partial f/\partial y:0]$ and the local coordinate to be at $[1:0:0]$. The
-intersection is $[\partial f/\partial y:-\partial f/\partial x:0]$, which at the point of tangency
-is $[0:1:0]$, with $x/y$ the coordinate there; the index he computes is right, the point is not. The
-card's step `s2` computes at $[0:1:0]$ and names the slip.
+IV.2.3, printed pp. 354--358 of the same solution set --- (a) at p. 355, (b) at p. 356, (c)--(f) at
+p. 357, (g)--(h) at p. 358 --- which the brief did not name for this card; it is the same set it names
+for IV.2.2, and it is a complete solution of the exercise. Reiser records part (b) in his list of
+exercises with issues, printed p. 5, as "somewhat difficult", because an equation for the dual curve
+is hard to get at, and solves it by a formal parametrization.
 
 What still has no published proof, located: the printed parenthetical of part (h), that a tangent
 with four-fold contact gives a point of the dual curve that is a unibranch singular point of
@@ -3269,33 +3265,22 @@ what lets Reiser's $I$ and $B$ be read as those classes.
 **IV.3.4, `P-AGH434RATIONALNORMALCURVE` (2026-11-16).** The brief named part (a) of NTU's §3 Exercise
 4 by Yu-Chi Hou, printed pp. 8--9; the source also proves (b) at printed p. 10, together with the
 degree-$2$ and degree-$3$ sentences the card's statement carries as (c) and (d) there, and those are
-transcribed with it. Three statements of its part (a) are false as printed, and the card's proofs of
-part (a) are the card's own, with each false statement named where it would otherwise be used.
-
-The first is $\Frac S(X)=k(t_0,t_1)$, printed p. 8, which is false for $d\ge2$: elements of
-$\Frac S(X)$ are ratios $f/g$ of forms of $t$-degree divisible by $d$, and $t_0$ is not such a ratio.
-The second is the conclusion $d\mid\deg f$ drawn there from the degree comparison
-$f^n+a_{n-1}f^{n-1}+\cdots+a_0=0$, printed as "$mn=m(n-1)+dk_{n-1}+\cdots=m+dk_1=dk_0$. Hence,
-$m=dk_{n-1}\Rightarrow d\mid m$": the claim is false, since for $d=2$ the element $t_0$ is integral
-over $S(X)=k[t_0^2,t_0t_1,t_1^2]$, being a root of $T^2-t_0^2$, and $\deg t_0=1$. A version of
-this record that said the card "supplies the conclusion" of that line, and that the card's step `s2`
-keeps Hou's integral-closure route, was wrong twice over: the conclusion is not a step towards
-projective normality and cannot be supplied, and the card has gone back to its own proof, from
-normality of $X=\PP^1$ and the surjectivity of the restriction maps in every degree by Exercise
-II.5.14(d). The third false statement is the first of the two observations by which Hou reduces a
-lexicographic remainder in the division by the $g_{ij}$, printed p. 9, that it contains no pure power
-$x_i^l$: the leading monomial of $g_{i-1,i}=x_{i-1}x_{i+1}-x_i^2$ is $x_{i-1}x_{i+1}$, so $x_i^l$ is
-divisible by no leading monomial and survives the division. The card proves the generation of $I(X)$
-by straightening monomials modulo the quadrics, and says so.
-
-Also false, and recorded here rather than on the card because the card does not use it: the toric
-restatement at printed pp. 8--9 gives the cone
-$\sigma=\RR_{>0}\langle e_1,e_1+de_2\rangle\subset\RR^2$, whose monoid is not the monoid of the
-$d$-uple embedding.
-
-A published proof of the projective normality of the $d$-uple embedding that can be cited without
-repair is not located among the sources read in this batch; Vakil's §8.2 and Harris's lecture on the
-rational normal curve are candidates not read.
+transcribed with it. The part with no clean published proof is the projective-normality half of (a).
+Hou's division of the ideal by the quadrics $g_{ij}$ is complete, printed p. 9; its integral-closure
+half is not. The degree count that closes it, printed p. 8, reads "By comparing degree, we may assume
+that $a_0,\ldots,a_{d-1}$ are homogeneous of degree $k_0,\ldots,k_{n-1}$ in degree $d$ monomial of
+$t_0,t_1$ and $g$ is homogeneous of degree $m$ in $t_0,t_1$. Thus, equating the degree of (1) gives
+$mn=m(n-1)+dk_{n-1}+\cdots=m+dk_1=dk_0$. Hence, $m=dk_{n-1}\Rightarrow d\mid m$", whose chain is not
+a chain of equalities and whose indices mix $n$ and $d$; the display that follows, "$f=\sum_i a_i
+t_0^{dn-1-i}t_1^i$", mixes them again. The toric restatement at printed pp. 8--9 gives the cone
+$\sigma=\RR_{>0}\langle e_1,e_1+de_2\rangle\subset\RR^2$, whose monoid is not the monoid
+of the $d$-uple embedding. The card's step `s2` keeps Hou's integral-closure route and supplies the
+conclusion of the garbled line from Hou's own identification
+$S(X)=k[t_0^d,t_0^{d-1}t_1,\ldots,t_1^d]$ at printed p. 8: an element of $S(X)$ homogeneous as a
+polynomial in $t$ has $t$-degree divisible by $d$, and in such a degree $S(X)$ is the whole of
+$k[t_0,t_1]$ by the card's step `s1`. A published proof of projective normality that can be cited
+without repair is not located among the sources of this batch; Vakil's §8.2 and Harris's lecture on
+the rational normal curve are candidates not read in this pass.
 
 **Checked against the book, per card (2026-11-16).** IV.2.2: the five parts, the hypothesis
 $\characteristic k\ne2$, and the uniqueness clause of (a), printed p. 304. IV.2.3: the hypothesis
@@ -3304,26 +3289,122 @@ multiplicity $r$ with distinct tangent directions, the weighted count of (e) wit
 the hypothesis of (f), and the nine and 28 of (g) and (h), printed pp. 304--305. IV.3.4: the
 hypotheses $d\le n$ and non-degeneracy of (b), and the two sentences after it, printed p. 315.
 
-**Not done in this batch (2026-11-16).** No search outside the brief's sources, Reiser and Vakil's
-Proposition 19.5.2 was run for the parts recorded as open, so the absence claims above are about the
-sources read, not about the literature: Searched --- the brief's sources plus Reiser, and Vakil
-Proposition 19.5.2 with its proof for IV.2.2(e); Found --- the parts above; Conclusion --- the
-parenthetical of IV.2.3(h) and the projective normality of IV.3.4(a) have no published proof in the
-sources read; Confidence --- high for those files, none claimed beyond them; Gaps --- a search of the
-literature, in particular of Vakil's §8.2 and Harris's rational-normal-curve lecture for IV.3.4(a)
-and of the classical literature on the dual of a quartic with a hyperflex for IV.2.3(h). Vakil's
-19.5.4, 19.5.7 and 19.6.2 and Egbert's solutions were not re-read; their citations on the three cards
-are those of earlier events and stand unchanged.
+**Not done in this batch (2026-11-16).** No source outside the three named in the brief and Reiser
+was searched for the two open parts, so the absence claims above are about the sources read, not
+about the literature: Searched --- the brief's sources plus Reiser; Found --- the parts above;
+Conclusion --- those parts have no published proof in those files; Confidence --- high for those
+files, none claimed beyond them; Gaps --- a search of the literature, in particular of Vakil's §8.2
+and Harris's rational-normal-curve lecture for IV.3.4(a) and of the classical literature on the dual
+of a quartic with a hyperflex for IV.2.3(h). Vakil's §§19.5--19.6 and Egbert's solutions were not
+re-read; their citations on `P-AGH422GENUSTWOMODULI` and `P-AGH423DUALCURVE` are those of earlier
+events and stand unchanged.
 
 **Repair.** Per card: the three commits of this date that touch the three cards, with the audit events
-that record what each transcription and each check covered. Every part of IV.2.2 has a published proof, as the first item says.
-The open part of IV.2.3 -- the printed parenthetical of (h), and the two identifications in step
-`s12` -- stays an obligation under
-[#121](https://github.com/dzackgarza/new-qual-site/issues/121), as does IV.3.4, whose part (a) has no
-published proof located that can be cited without repair. Nothing in this record supersedes an
+that record what each transcription and each check covered. Part (e) of IV.2.2 is closed on the card
+by its two sources taken together, as the first item says; the open parts of IV.2.3 and IV.3.4 stay
+obligations under [#121](https://github.com/dzackgarza/new-qual-site/issues/121), and nothing in this
+record supersedes an earlier entry of this file.
+
+
+## 2026-11-16: `SRC-TEXT-HART77` #121, the Chapter IV record of this date is restored, and what this round's reader found on IV.2.2, IV.2.3 and IV.3.4
+
+The record above, "`SRC-TEXT-HART77` #121, the Chapter IV batch of three cards", was written on this
+date by the three commits that transcribed the cards (`0fa7d9efb0` on `P-AGH422GENUSTWOMODULI`,
+`0eaf611b02` on `P-AGH423DUALCURVE`, `199b5eb36b` on `P-AGH434RATIONALNORMALCURVE`) and then rewritten
+in place by `32089357cd`, 57 of its lines deleted. A dated record states what its pass found, so it
+stands again as the text it carried when written, byte for byte from that revision, and the
+corrections --- those `32089357cd` made and those this round's reader found --- are this record's.
+Nothing dated before 2026-11-16 was changed by any of the four commits the reader named, and the three
+cards' audit events of this date, rewritten in place by `7728785793`, `6a77ef9aab` and `e4872b53d6`,
+are restored the same way, each card's new event of this date carrying its own correction.
+
+**IV.2.2, `P-AGH422GENUSTWOMODULI`.** Two corrections to the restored text. First, the step that
+carries Vakil's Proposition 19.5.2 is `#cover-determined-by-branch`; the restored sentence calls it
+`s9`, and no step of the card has that id. Second, the restored text says that step "carries that
+statement and is marked as the card's own": what the card does is transcribe Vakil's proof, and the
+transcription was incomplete. His second chart is
+$\Spec k[Z,u]/(((-1)^r\prod_i\mathfrak p_i)Z^2-u^rf(1/u))$ — not the equation in $Z$ alone that the
+card first printed — and, as his proof says at printed p. 547, $z$ is $Z$ multiplied by a square root
+of $(-1)^r\prod_i\mathfrak p_i$; without that sentence the card's display $z^2=u^rf(1/u)=y^2/x^r$
+does not follow from the equation before it. Both of his displays, the identity
+$u^rf(1/u)=(-1)^r(\prod_i\mathfrak p_i)\prod_i(u-1/\mathfrak p_i)$ that makes them one equation, and
+his parenthetical sentence are now in the step, and the rest of the transcription was checked against
+his printed proof in this pass: the quadratic extension and its involution, the monic $y^2=f(x)$ with
+$f$ squarefree, regularity by the Jacobian criterion, the branch points as the roots of $f$, and the
+gluing with $z=\pm y/x^{r/2}$. Two defects of the sources, recorded here because the restored text
+names only Hou's: Hou's parts (d) and (e) classify by the $S_3$ of the label while the action they
+describe is the $\Sigma_6$ action of the exercise, Hou's part (b) prints
+$h^0(X,\mco_X(K_X-2P))=2$ where its own Riemann--Roch line gives $1$, and Reiser's part (b), printed
+p. 353, prints $\ell(D)=2$ for $D=h^*\mco_{\PP^1}(1)$ where the pullback of two sections gives only
+$\ell(D)\ge2$; the card states the inequality and names the slip. Commit `36f7580c34`.
+
+**IV.2.3, `P-AGH423DUALCURVE`.** The restored text gives Reiser's part (a) as "p. 355" alone. The
+solution of (a) runs over printed pp. 355--356: the case $P\in L$ is on p. 355 and the case $P\notin
+L$, with the sentence on the tangent's meeting with the line at infinity, on p. 356. In that case
+Reiser takes the tangent at $Q$ to meet $V(z)$ in $[\partial f/\partial x:\partial f/\partial y:0]$
+and reads the local coordinate at $[1:0:0]$. The intersection is
+$[\partial f/\partial y:-\partial f/\partial x:0]$, which at the point of tangency is $[0:1:0]$, and
+the coordinate there is the ratio with the opposite sign; his criterion $c=0$ in
+$f=x+ax^2+bxy+cy^2+\cdots$ is right, only the point is not, and the card's step `s2` now transcribes
+that criterion at $[0:1:0]$ and names the slip. The repair of the first pass had replaced his case
+with a computation of $e_P=v_P(\partial f/\partial y)=r-1$ that no source gives; the index is still
+needed, by step `s9`, so it stays as the card's own paragraph with its derivation. Two further
+corrections: the step wrote $t=x/y$ for the coordinate on $L$ in the letters that are the affine
+coordinates of the plane and of $X$, where the identity reads as false between two different
+functions, and the coordinate is now called $\tau$; and the eight steps `s1`, `s3`, `s5`, `s6`, `s8`,
+`s9`, `s10`, `s12` carry this card's own proofs, as the first pass's reader found, and say so. Commit
+`01163a8b4c`.
+
+**IV.3.4, `P-AGH434RATIONALNORMALCURVE`.** The restored text says that part (b) at printed p. 10 "is
+transcribed with it", and that the part with no clean published proof is the projective-normality
+half of (a). The second is right, and the first is not: Hou's (b) states $\dim\abs{D}=n$ and justifies
+it by a remark that gives only the opposite inequality, so it does not establish the completeness of
+$\abs{D}$ and the card does not take part (b)'s degree and genus from him. They are printed in A.
+Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.4(b), **printed p. 220** — "We
+have $\dim|D|=n$, $\deg(D)=d$ and $l(D)=n+1\le\deg(D)+1=d+1\le n+1$. Thus $n=d$. Since
+$\deg(D)=\dim(D)$, and $d\ne0$, then by exc IV.1.5, $g=0$" — and the card's steps `#strict-inequality`
+and `#genus-zero` transcribe it, with the identification in his closing sentence. The reader named the
+page as printed p. 219; part (a) is on that page and the proof of (b) is on the next, whose folio is
+220, read off `tmp/sources/hartshorne-solutions-egbert.pdf`. Two of Egbert's lines are slips and are
+named rather than copied: $l(D)=n+1$ is what nondegeneracy gives as $l(D)\ge n+1$, the same equality
+written for an inequality that the card names in Hou, and "$\deg(D)=\dim(D)$" compares the degree with
+the dimension of the linear system, where the citation needs $\deg D=\dim\abs{D}$. The proof written
+earlier today, from $h^0\le e+1$ by induction and then a degree-one map to $\PP^1$, is withdrawn: the
+same chain is printed, so it is transcribed. So Egbert was read in this pass, at printed pp. 219--220,
+which the restored text's last paragraph says was not done. Three statements of the card are
+corrected with it: it said the whole solution was Hou's transcription, where four of its ten steps are
+the card's own; it said a divisor of degree $d$ on $\PP^1$ "is $d$ times a point", where it is
+linearly equivalent to $dP$; and its remark said Egbert checks the surjectivity of the restriction maps
+and identifies the quadrics $Q_{ij}$ as generators, where printed p. 219 asserts both halves of (a) in
+one sentence each and names no $Q_{ij}$, and called IV.1.3.5 an exercise, where it is an Example of
+the text. Commits `df9cd73f42` and `d37c02e2b0`.
+
+**Where and how the sources were read (2026-11-16, this record's own reading).** Egbert at
+`tmp/sources/hartshorne-solutions-egbert.md`, the section headed `4.3.6` for printed p. 219 and
+`4.3.7 b. x g` for printed p. 220, both folios read off `tmp/sources/hartshorne-solutions-egbert.pdf`,
+whose printed folio is its PDF page; Reiser at
+`tmp/sources/reiser-hartshorne-solutions-pp351-358.md`, which is PDF pp. 352--359 of
+`tmp/sources/reiser-hartshorne-solutions.pdf`, the printed folio one less than the PDF page, part (a)
+on printed pp. 355--356 and the sentence on the tangent's meeting with $V(z)$ on printed p. 356; Vakil
+at `tmp/sources/vakil-rising-sea-2025-10-21.md`, Proposition 19.5.2 with its proof on printed
+pp. 546--547 and the second chart's display on printed p. 547, positions fixed on
+`tmp/sources/vakil-rising-sea-2025-10-21.pdf`, whose printed folios are its PDF pages; Hou at
+`tmp/sources/ntu-ag2-chapter4.md`, (a) on printed pp. 8--9 and (b)--(d) on printed p. 10, positions
+fixed on `tmp/sources/ntu-ag2-chapter4.pdf`; Gruenewald at
+`tmp/sources/gruenewald-2007-computing-humbert-surfaces.md`; and the book at
+`tmp/sources/hartshorne-1977-algebraic-geometry.md`. The rendered pages of the three cards no longer
+name a text version, a page-marker offset or a pass that was not made: those are here and in the
+cards' audit events (`QUAL-08`). Not read in this pass: Vakil's 19.5.4, 19.5.7 and 19.6.2 beyond the
+statements the cards cite of them, Egbert's IV.2.3 and IV.2.2, and the citations any of the sources
+makes of the book beyond the statements quoted.
+
+**Repair.** Per card: `36f7580c34` on `P-AGH422GENUSTWOMODULI`, `01163a8b4c` on
+`P-AGH423DUALCURVE`, and `df9cd73f42` with `d37c02e2b0` on `P-AGH434RATIONALNORMALCURVE`. What stays
+open is unchanged: the printed parenthetical of IV.2.3(h) and the two identifications in its step
+`s12`, and part (a)'s projective normality on IV.3.4, which is the card's own proof from Exercise
+II.5.14(d) and has no published proof located that can be cited without repair, under
+[#121](https://github.com/dzackgarza/new-qual-site/issues/121). Nothing in this record supersedes an
 earlier entry of this file.
-
-
 ## 2026-11-16: the four V-batch cards of #121, what their published proofs cover, and the parts that stay open
 
 The batch is the four cards `P-AGH5412KODAIRAVANISH` (V.4.12), `P-AGH5415GENPOSITION` (V.4.15),
