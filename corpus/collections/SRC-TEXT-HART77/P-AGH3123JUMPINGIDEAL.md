@@ -211,11 +211,13 @@ audit:
     s2 with the source named, and Yang's parametrization and ideal,
     including his fibre ideal at a = 0, are quoted in s1 as they stand on
     printed p. 82. Yang's own computation of the printed functions is
-    recorded in the remark and refuted there: he concludes from the ideal
-    (x_0x_2, x_1x_2, x_2^2, x_2x_3, x_2x_4) that H^0(O_{X_0}) is
-    k[x_2]/(x_2^2), but x_2 is annihilated by each coordinate in that
-    ideal, so it vanishes in every standard affine chart. The answer ids of
-    the two MathOverflow answers are now on the card. The exercise's
+    recorded in the remark and refuted there. The refutation given on this
+    date was wrong in its ground and is corrected in the event of even date
+    below: it took the fibre ideal (x_0x_2, x_1x_2, x_2^2, x_2x_3,
+    x_2x_4) to be the ideal of the family's fibre, which it is not. The
+    answer ids of the two MathOverflow answers were put on the card on this
+    date and have been removed again, as the event of even date below
+    records. The exercise's
     cohomology functions, twisted or not, have no published proof in any
     of these sources: Kim writes todo at that point, Yang's values are
     those refuted, Kovacs agrees with one of them and Bohm reports all
@@ -245,18 +247,47 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
-    Provenance of the two MathOverflow answer ids now on the card. The ids
-    90316 for S. Kovacs and 206742 for J. Bohm are the ones the batch names
-    for this card; the text version
+    Provenance of the two MathOverflow answer ids, and their removal. The
+    ids 90316 for S. Kovacs and 206742 for J. Bohm are the ones the batch
+    names for this card; the text version
     tmp/sources/mo-90260-trouble-with-semicontinuity.md records each
-    answer with its author, date and score and no id, so the ids were not
-    checked against the site. An attempt to confirm them through the Stack
-    Exchange API in this pass returned
+    answer with its author, date and score and no id. An attempt to
+    confirm them through the Stack Exchange API on this date returned
     error_name "throttle_violation", error_message "too many requests from
     this IP, more requests available in 35152 seconds", so nothing was
-    confirmed and the attempt was not repeated. The authors, dates and
-    contents cited beside the ids are the text version's. Not checked: the
-    ids themselves.
+    confirmed and the attempt was not repeated. The ids have accordingly
+    been removed from the rendered card, which cites the two answers by
+    author and date; they remain in the audit trail as the batch's, not as
+    a checked fact.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report. (i) Yang's six quadrics were quoted as
+    the ideal of the total family, and they are not: x_0x_4 - x_1x_3
+    vanishes on his own parametrization, both monomials being t^4u^4, and
+    it is not in the ideal they generate, whose reduction modulo a is
+    (x_0x_2, x_1x_2, x_2^2, x_2x_3, x_2x_4) = x_2 m. Step s1 now says so,
+    and says that his ideal at a = 0 cuts out the hyperplane V(x_2) and
+    not the curve X_0, and that Kovács's fibre ideal differs from Yang's
+    by containing the ideal J of the quartic. (ii) The refutation of
+    Yang's h^0 in the remark argued that x_2 is annihilated by each
+    coordinate in his ideal, which is true and refutes nothing about X_0,
+    since his ideal is not the ideal of X_0; the remark now puts the error
+    where it is, in the ideal, and adds that x_2 has degree one and so is
+    not a section of O_X_0 at all. (iii) The two MathOverflow answer ids
+    are removed from the rendered card, being unverified, and are recorded
+    in the audit only. (iv) The head of the solution no longer says which
+    steps transcribe which source or refers to a COMPLAINTS record; it
+    states the mathematics. Checked against the book in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md (printed p. N is PDF
+    p. N+15): III.12.3 on printed p. 291 and Example III.9.8.3 on printed
+    pp. 259--260. Not checked: Yang's page was re-read only in the
+    extraction and the page, not recollated; Böhm's elimination was not
+    reproduced, and the claim that his fibre ideal contains J and the
+    products x_2x_i rests on the listing in his answer as the text version
+    gives it.
 
 ---
 
@@ -313,20 +344,15 @@ The flat family and the flatness of $\mci$ are as printed, and are proved first
 (steps s1 and s2); the erratum concerns only the two displayed cohomology
 statements.
 
-Steps s1 and s2 transcribe the published argument, and name it at the step:
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III),
-text version `tmp/sources/hartshorne-solutions-kim.md`, Exercise 3.12.3, PDF
-p. 215, constructs the family as the closed immersion
-$\PP^1\times\AA^1\hookrightarrow\PP^4\times\AA^1$ and proves $\mci$ flat over
-$T$ from $0\to\mci\to\OO_{\PP^4\times T}\to\OO_X\to0$; Yang Pi-Yeh,
-*Hartshorne Solutions* (9 June 2019), text version
-`tmp/sources/lfwin-hartshorne-solutions.md`, Solution 3.12.3, printed p. 82,
-writes the ideal of the total family and its fibre at $a=0$ explicitly.  No
-published source read for this card computes the twisted functions: Kim stops
-after the flatness, and Yang's line at 3.12.3 asserts the untwisted values,
-which this solution shows to be false (the remark records his computation).
-Steps s3, s4 and s5 are therefore the card's own, and the 2026-11-16
-COMPLAINTS record names the part of the exercise that has no published proof.
+Steps s1 and s2 are Kim's, Exercise 3.12.3, PDF p. 215: he constructs the
+family as the closed immersion $\PP^1\times\AA^1\hookrightarrow\PP^4\times\AA^1$
+and proves $\mci$ flat over $T$ from
+$0\to\mci\to\OO_{\PP^4\times T}\to\OO_X\to0$.  Yang Pi-Yeh,
+*Hartshorne Solutions* (9 June 2019), Solution 3.12.3, printed p. 82, gives the
+same family by its parametrization together with six quadrics for the ideal of
+the total family, and those six do not generate it; he also computes the two
+printed functions, and that computation is refuted in the remark.  Neither
+source computes the twisted functions, and steps s3, s4 and s5 are proved here.
 
 Use homogeneous coordinates
 $$
@@ -388,21 +414,30 @@ immersion and reads the special fibre off it: "If we look at the family of
 quartic curves, we see that this is in fact isomorphic to
 $\PP^1\times\AA^1\hookrightarrow\PP^4\times\AA^1$. Hence the fiber at
 $t=0$ is just $\PP^1\hookrightarrow\PP^4$, which is the nonsingular rational
-quartic in $\PP^3$."  Yang, Solution 3.12.3, printed p. 82, writes the two
-as a parametrization and an ideal:
+quartic in $\PP^3$."  Yang, Solution 3.12.3, printed p. 82, writes the same family by its
+parametrization,
 $$
 X_a=\bigl\{(t^4:t^3u:at^2u^2:tu^3:u^4)\bigr\},
 $$
-and $\mci\subseteq\OO_{\PP^4}\otimes\AA^1$ generated by
+and gives six quadrics as generators of the ideal $\mci$ of the total family:
 $$
-(a^2x_0x_4-x_2^2,\ a^2x_1x_3-x_2^2,\ x_0x_2-ax_1^2,\ x_2x_4-ax_3^2,\ ax_0x_3-x_1x_2,\ ax_1x_4-x_2x_3),
+(a^2x_0x_4-x_2^2,\ a^2x_1x_3-x_2^2,\ x_0x_2-ax_1^2,\ x_2x_4-ax_3^2,\ ax_0x_3-x_1x_2,\ ax_1x_4-x_2x_3).
 $$
-whose fibre at $a=0$ is
+Those six do not generate $\mci$.  The polynomial $x_0x_4-x_1x_3$ vanishes
+on the parametrization, both of its monomials being $t^4u^4$, and it is not in
+the ideal they generate: modulo $a$ the six become the multiples
 $$
-(x_0x_2,\ x_1x_2,\ x_2^2,\ x_2x_3,\ x_2x_4).
+x_2^2,\ x_0x_2,\ x_1x_2,\ x_2x_3,\ x_2x_4
 $$
-That last ideal is the one in the remark: every generator is a coordinate
-times $x_2$, which is why $x_2$ is not a function on $X_0$.
+of $x_2$, and $x_0x_4-x_1x_3$ is divisible by no such thing.  His fibre at
+$a=0$ is therefore $x_2\mathfrak m=(x_0x_2,x_1x_2,x_2^2,x_2x_3,x_2x_4)$, whose
+zero locus is the hyperplane $V(x_2)$ and not the quartic curve
+$X_0\subseteq V(x_2)$: a point with $x_2\ne0$ and all other coordinates zero is
+not a point of $\PP^4$, so every point of the closed subscheme has $x_2=0$.
+The ideal of the fibre at $a=0$ is the image at $a=0$ of the kernel of
+$k[a,x_0,\ldots,x_4]\to k[a,t,u]$; J. Böhm computes that kernel by
+elimination in Macaulay 2, reports the ideal it gives at $a=0$, and finds all
+$H^i(\PP^4,\mci_0)=0$ for $i=0,\ldots,4$.  The remark returns to this.
 
 Flatness makes the Hilbert polynomial of every fibre equal to that of the
 rational normal quartic:
@@ -626,7 +661,7 @@ cohomology jump.
 ::: {.remark title="Published solution"}
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §12, Exercise 12.3, PDF p. 215, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: his solution checks that the flat limit at $t=0$ is the reduced quartic $X_0$ inside $V(x_2)\cong\PP^3$, from the closed immersion $\PP^1\times\AA^1\hookrightarrow\PP^4\times\AA^1$ that the family is, and that $\mci$ is flat over $T$ from the exact sequence $0\to\mci\to\OO_{\PP^4\times T}\to\OO_X\to0$, and then stops: it does not compute the two cohomology functions. His list of problems he has not solved, at the head of the text on PDF p. 1, asks "Exercise 3.12.3: The statement seems to be false?"; it is not a list of corrections, and it gives no reason. The printed claim is indeed false, and the erratum and steps s3--s5 above supply the computation the source omits, for $\mci(1)$.
 
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.12.3, text version `tmp/sources/lfwin-hartshorne-solutions.md`, printed p. 82, is a second published treatment and it does compute the printed functions.  It opens "According to (https://mathoverflow.net/questions/90260/trouble-with-semicontinuity) the book has a typo here", writes the ideal of the total family and the fibre ideal $(x_0x_2,x_1x_2,x_2^2,x_2x_3,x_2x_4)$ as in step [](#s1){.pf-ref}, and concludes "$H^0(X_0,\OO_{X_0})=k[x_2]/(x_2^2)$, i.e. $h^0(X_0,\OO_{X_0})=2$", then $h^1(\PP^4,\mci_0)=1$ and $h^2(\PP^4,\mci_0)=1$, with the arithmetic genus constant by flatness.  That fails at the same point as the answer he follows: in his own ideal $x_2$ is annihilated by every $x_i$, so its class is zero in the localization at each standard affine chart and $x_2$ is not a function on $X_0$; the annihilator computation in this remark is a refutation of his fibre computation as well.
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.12.3, text version `tmp/sources/lfwin-hartshorne-solutions.md`, printed p. 82, is a second published treatment, and it does compute the printed functions.  It opens "According to (https://mathoverflow.net/questions/90260/trouble-with-semicontinuity) the book has a typo here", gives the six quadrics of step [](#s1){.pf-ref}, and concludes "$H^0(X_0,\OO_{X_0})=k[x_2]/(x_2^2)$, i.e. $h^0(X_0,\OO_{X_0})=2$", then $h^1(\PP^4,\mci_0)=1$ and $h^2(\PP^4,\mci_0)=1$, with the arithmetic genus constant by flatness.  His error is in the ideal, before any cohomology: those six quadrics are not the ideal of the family, as step [](#s1){.pf-ref} shows, and their fibre at $a=0$ is $x_2\mathfrak m$, whose closed subscheme is the hyperplane $V(x_2)$ and not the curve $X_0$.  What he computes the cohomology of is therefore not $X_0$.  And even for the subscheme his ideal does define, $x_2$ has degree one, so its class would be a section of $\OO(1)$ rather than of $\OO$, and it vanishes there: $x_2x_i$ lies in the ideal for every $i$, so the class of $x_2$ is $x_2x_i/x_i^2=0$ in the coordinate ring of each standard affine chart.
 
-One published answer claims a corrected jump in the printed functions themselves, and it does not hold. MathOverflow question 90260, *Trouble with semicontinuity* (2012-03-05), answer by S. Kovács (2012-03-05, with an addendum; answer id 90316), computes $h^0(\OO_{X_0})=2$ from a nilpotent $x_2$ and concludes $h^1(\PP^4,\mci_0)=1$, which would make the printed $h^1$ line right and only the $h^0$ line wrong. His fibre ideal is $\mathcal J+(x_0x_2,x_1x_2,x_2^2,x_3x_2,x_4x_2)$ with $\mathcal J$ the ideal of the quartic in $\PP^3$, and in it $x_2$ is annihilated by every coordinate. That annihilator is decisive, and the questioner on the same thread already says so in the question body ($x_2/x_i=x_2x_i/x_i^2=0$ after the question's own edit): in the degree-zero localization at any $x_i$ the coordinate $x_i$ is invertible, so the class of $x_2$ is $x_2x_i/x_i^2=0$ in the coordinate ring of every standard affine chart, and a section of $\OO(1)$ that vanishes on each chart is the zero section. What the addendum of the answer gets wrong is the chart: for the chart $x_0\ne0$ it writes the coordinate ring of $\mathscr X_0\cap U_0$ as $k[y_1,x_2]/(y_1x_2,x_2^2)$ with $y_1=x_1/x_0$, mixing the degree-zero localization, in which $y_1$ lives, with the degree-one coordinate $x_2$; the element of that chart is $x_2/x_0$, and it satisfies $y_1\cdot(x_2/x_0)=x_1x_2/x_0^2=0$ as well as $(x_2/x_0)^2=0$, so it is zero there too. Hence $x_2$ is not a function on $X_0$, $h^0(\OO_{X_0})=1$, and $h^1(\PP^4,\mci_0)=0$. The annihilating relations are exactly what this family gives, in $\ker(k[a,x_0,\ldots,x_4]\to k[a,s,u])$ with $x_0=s^4$, $x_1=s^3u$, $x_2=as^2u^2$, $x_3=su^3$, $x_4=u^4$: $x_2x_0=ax_1^2$, $x_2x_1=ax_0x_3$, $x_2x_3=ax_1x_4$, $x_2x_4=ax_3^2$, $x_2^2=a^2x_0x_4$, all of which are $0$ at $a=0$. The contrast is Example III.12.9.2, printed p. 289, where the nilpotent $z$ of the cubic family satisfies $z^2=yz=xz=0$ but $zw\ne0$; that single non-vanishing product is why $h^0(\OO)$ is $2$ there and the jump in $h^0,h^1$ of $\OO$ is genuine. A second answer in the same thread, by J. Böhm (2015-05-15; answer id 206742), computes the fibre ideal by elimination and reports all $H^i(\PP^4,\mci_0)=0$ for $i=0,\ldots,4$, which agrees with the argument above; he asks for a reconciliation and receives none.
+One published answer claims a corrected jump in the printed functions themselves, and it does not hold. MathOverflow question 90260, *Trouble with semicontinuity* (2012-03-05), answer by S. Kovács (2012-03-05, with an addendum), computes $h^0(\OO_{X_0})=2$ from a nilpotent $x_2$ and concludes $h^1(\PP^4,\mci_0)=1$, which would make the printed $h^1$ line right and only the $h^0$ line wrong. His fibre ideal is $\mathcal J+(x_0x_2,x_1x_2,x_2^2,x_3x_2,x_4x_2)$ with $\mathcal J$ the ideal of the quartic in $\PP^3$, so unlike Yang's it does contain the curve, and its extra terms are the ones that decide the cohomology: in it $x_2$ is annihilated by every coordinate. That annihilator is decisive, and the questioner on the same thread already says so in the question body ($x_2/x_i=x_2x_i/x_i^2=0$ after the question's own edit): in the degree-zero localization at any $x_i$ the coordinate $x_i$ is invertible, so the class of $x_2$ is $x_2x_i/x_i^2=0$ in the coordinate ring of every standard affine chart, and a section of $\OO(1)$ that vanishes on each chart is the zero section. What the addendum of the answer gets wrong is the chart: for the chart $x_0\ne0$ it writes the coordinate ring of $\mathscr X_0\cap U_0$ as $k[y_1,x_2]/(y_1x_2,x_2^2)$ with $y_1=x_1/x_0$, mixing the degree-zero localization, in which $y_1$ lives, with the degree-one coordinate $x_2$; the element of that chart is $x_2/x_0$, and it satisfies $y_1\cdot(x_2/x_0)=x_1x_2/x_0^2=0$ as well as $(x_2/x_0)^2=0$, so it is zero there too. Hence $x_2$ is not a function on $X_0$, $h^0(\OO_{X_0})=1$, and $h^1(\PP^4,\mci_0)=0$. The annihilating relations are exactly what this family gives, in $\ker(k[a,x_0,\ldots,x_4]\to k[a,s,u])$ with $x_0=s^4$, $x_1=s^3u$, $x_2=as^2u^2$, $x_3=su^3$, $x_4=u^4$: $x_2x_0=ax_1^2$, $x_2x_1=ax_0x_3$, $x_2x_3=ax_1x_4$, $x_2x_4=ax_3^2$, $x_2^2=a^2x_0x_4$, all of which are $0$ at $a=0$. The contrast is Example III.12.9.2, printed p. 289, where the nilpotent $z$ of the cubic family satisfies $z^2=yz=xz=0$ but $zw\ne0$; that single non-vanishing product is why $h^0(\OO)$ is $2$ there and the jump in $h^0,h^1$ of $\OO$ is genuine. A second answer in the same thread, by J. Böhm (2015-05-15), computes the fibre ideal by elimination and reports all $H^i(\PP^4,\mci_0)=0$ for $i=0,\ldots,4$, which agrees with the argument above; he asks for a reconciliation and receives none.
 :::
