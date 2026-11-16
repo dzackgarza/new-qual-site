@@ -2849,6 +2849,9 @@ it was written on 2026-11-11, and the correction is this entry.
   states", which described the rewritten paragraph. With the paragraph restored, the condition is stated
   here and in that item itself, not in the 2026-11-11 entry; nothing in the item's mathematics changes.
 
+*This entry is of 2026-11-16. The date in its heading, 2026-11-11, is the date of the note it restores, not
+this correction's; the correction's dated entry is below.*
+
 ## `SRC-TEXT-HART77` #121: the five complaint edits `27598ae933` carried from other batches, and two dates of the round under review
 
 The reader of the round returned one item on this file, and it is right on both counts. `27598ae933`
@@ -2889,10 +2892,10 @@ The `E-HAT-2.C-6`, `E-HAT-2.C-1`, `E-HAT-3.A-1`/`4.1-1` and `E-HAT-4.1-9` paragr
 ## `SRC-TEXT-HART77` #121: the fourth pass's correction is dated 2026-11-16, and its $d=2$ second equation reads $x=1$
 
 The entry "the Chapter I reader's fourth pass --- the 2026-11-11 note restored, and the Stacks computation
-in a new entry" above is the correction the last review required, and it carries no day of its own: the only
-date on its heading, 2026-11-11, is the date of the paragraph it restores. The gate dates an entry by the
-first date on its opening line, so that entry reads as one of 2026-11-11 and is left as written. This entry
-dates the correction: the fourth pass is of 2026-11-16.
+in a new entry" above is the correction the last review required; the note at its foot dates it 2026-11-16,
+and its heading's only day, 2026-11-11, is the date of the paragraph it restores. QUAL-11 dates an entry by
+the first date on its opening line, so the section reads as one of 2026-11-11 and is left as written. This
+entry is the correction's dated entry, and it records the one mathematical repair the correction needs.
 
 Its "The computation, stated here" bullet specializes the two partial-vanishing equations at $d=2$ as
 "$1=y$ and $x=y$". The second displayed equation is $x^{d-1}=y^{d-2}$, which at $d=2$ reads $x=1$, not
