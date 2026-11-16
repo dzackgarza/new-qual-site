@@ -386,6 +386,39 @@ def test_the_dated_event_rule_through_the_shared_gate(repo: Path, monkeypatch: p
 
 
 @pytest.mark.parametrize("mode", ("staged", "push"))
+def test_restoring_both_events_of_one_identity_is_accepted(repo: Path, monkeypatch: pytest.MonkeyPatch, mode: str) -> None:
+    """Two introduced texts restore together even though no earlier snapshot holds both.
+
+    This is the punctured-line history: A was introduced and rewritten before B was
+    introduced, and B was then rewritten too. Restoring A and B brings back every text
+    introduced under their shared identity, rather than the multiset in one old revision.
+    """
+    first = "The statement matches the printed exercise."
+    rewritten_first = "The statement matches the printed statement."
+    second = "The local group is Hatcher's `M|x` on printed p. 234."
+    rewritten_second = "The local group is Hatcher's `N|y` on printed p. 235."
+    card = repo / "corpus/one card.md"
+    for source, stamp in (
+        (RECORDED, "2026-11-11T09:00:00 +0000"),
+        (RECORDED.replace(first, rewritten_first), "2026-11-12T09:00:00 +0000"),
+        (TWICE_RECORDED.replace(first, rewritten_first), "2026-11-13T09:00:00 +0000"),
+        (TWICE_RECORDED.replace(first, rewritten_first).replace(second, rewritten_second), "2026-11-14T09:00:00 +0000"),
+    ):
+        card.write_text(source)
+        git(repo, "add", "corpus/one card.md")
+        monkeypatch.setenv("GIT_COMMITTER_DATE", stamp)
+        git(repo, "commit", "-qm", "introduce or rewrite one dated event")
+    if mode == "push":
+        track(repo, git(repo, "rev-parse", "HEAD").strip())
+
+    card.write_text(TWICE_RECORDED)
+    git(repo, "add", "corpus/one card.md")
+    result = validate_candidate(repo, mode, monkeypatch, "2026-11-16T09:00:00 +0000", "corpus/one card.md")
+
+    assert result.returncode == 0, result.stderr
+
+
+@pytest.mark.parametrize("mode", ("staged", "push"))
 def test_reordering_then_duplicating_an_event_is_refused(repo: Path, monkeypatch: pytest.MonkeyPatch, mode: str) -> None:
     """An exact reorder does not make B into A's earlier record or permit A's deletion."""
     first = "- event: source-checked\n  by: claude\n  date: 2026-11-11\n  note: The statement matches the printed exercise.\n"
