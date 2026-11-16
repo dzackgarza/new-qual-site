@@ -473,9 +473,9 @@ and $m'\ne0$ in $k$ because $p\nmid m'$. Suppose $u^m=A/B$, so that
 $$
 A=B\,u^m .
 $$
-For $B\in k[t^{-1}][[s/t]]$ the coefficient of $s^j$ in $B$ lies in
-$t^{-j}k[t^{-1}]$; write $b_j$ for it, and $a_j\in k[t]$ for the coefficient of
-$s^j$ in $A$. At $j=0$ the comparison gives $a_0=b_0$, and
+For $B\in k[t^{-1}][[s/t]]$ the coefficient of $s^j$ in $B$ is
+$b_j(t^{-1})\,t^{-j}$ with $b_j\in k[t^{-1}]$; write $a_j\in k[t]$ for the
+coefficient of $s^j$ in $A$. At $j=0$ the comparison gives $a_0=b_0$, and
 $b_0=a_0\in k[t]\cap k[t^{-1}]=k$, so after multiplying $A$ and $B$ by the same
 constant we may take $a_0=b_0=1$. For $1\le j<2q$ the expansion of $u^m$ has no
 term in $s^j$, so the comparison reads
