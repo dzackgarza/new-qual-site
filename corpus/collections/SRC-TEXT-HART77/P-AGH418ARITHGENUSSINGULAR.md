@@ -96,6 +96,25 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
+    Repairs on the reader's report of this batch. The printed page of the
+    exercise is 298, not 299: all of IV.1.8 including (c) stands on PDF p.
+    313 of the text version tmp/sources/hartshorne-1977-algebraic-geometry.md
+    and printed = PDF - 15. The Egbert entry is transcribed correctly: his
+    short exact sequence is 0 -> H^0(X, sum_P Otilde_P/O_P) -> H^1(X, O_X)
+    -> H^1(Xtilde, O_Xtilde) -> 0, not the H^0 sequence the remark gave, and
+    the remark now carries his. Steps s7 and s8 now cite the analytic normal
+    forms they assert: the cusp's k[[t^2,t^3]] is I Ex. 5.14(d) on printed
+    pp. 38-39, which assumes char k != 2, and the node's k[[x,y]]/(xy) is I
+    Ex. 5.6(b) on printed p. 37 together with I Ex. 5.14(c) on printed p. 39,
+    which carries no characteristic hypothesis. The quotient computations in
+    s7 and s8 are unchanged and use no characteristic hypothesis. Checked
+    against the book in this pass: IV.1.8 on PDF p. 313, I Ex. 5.6 on printed
+    p. 37, I Ex. 5.14 on printed pp. 38-39. Not checked: nothing new; the
+    Stacks tags were not re-read in this pass.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
     Second pass on the reader's report of this batch, checked against the
     book's text version. Corrected the printed page of I Ex. 5.14(c): the
     statement that any two ordinary double points are analytically
@@ -119,6 +138,18 @@ audit:
     5.14 in the text version, PDF pp. 52-54 = printed pp. 37-39; I Ex.
     5.6(b) on printed p. 37; I Ex. 5.1; IV.1.8 on PDF p. 313. Not checked:
     the Stacks tags were not re-read in this pass.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Third pass on the reader's report of this batch, on the audit trail only.
+    The event of 2026-11-16 whose note begins "Repairs on the reader's report
+    of this batch" is restored as it was written, and this event is appended
+    after it rather than put in its place; the sentence of the event above
+    that names it therefore has its referent again, and the page it gives for
+    I Ex. 5.14(c), printed p. 39, is corrected there and here to printed
+    p. 38. The mathematics stands as the event above records it. Checked in
+    this pass: nothing new; the Stacks tags were not re-read.
 ---
 
 ::: {.problem}

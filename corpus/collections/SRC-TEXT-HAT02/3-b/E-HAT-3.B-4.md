@@ -193,6 +193,29 @@ audit:
     the 2026-11-13 notes of this card are disclosed here, that commit carrying none of its own.
     Unchanged and re-checked: the statement as printed on p. 280, the local cross product, the
     coefficient-ring step, and the coefficientwise argument for disconnected manifolds.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, third pass on this card: the record of the earlier events, not the
+    mathematics. Three disclosures. (1) Commit 039cb8ebb9 changed, in place, two mathematics spans of
+    the `source-checked` events of 2026-11-13: the span `H_m(M|x)\otimes H_n(N|y)\to H_{m+n}(M\times N|x\times y)`
+    became the same span with `\mid` for each bar, and `H_m(M|x;R)\cong\ZZ\otimes_\ZZ R` likewise.
+    QUAL-11 forbids rewriting an event dated before the commit, so those events are not restored;
+    their original spans are quoted here, in code, and the change is disclosed. (2) Commit eb71d67906
+    rewrote the `source-corrected` event of 2026-11-16 that 58a42f4703 had pushed, with no event of
+    its own; commit e945aab1c4 rewrote it again. The text now standing is the text e945aab1c4 left,
+    not the text of 58a42f4703: it keeps the `\mid` substitution of 039cb8ebb9 in the span
+    `H_{m+n}(M\times N\mid(x,y);R)`, and it changed `$E-HAT-3.3-15$` to the code span
+    `E-HAT-3.3-15`. The word "verbatim" in that event is therefore withdrawn: what was restored is
+    the text as it stood before eb71d67906, not the event 58a42f4703 pushed. (3) The two sentences
+    eb71d67906 added and e945aab1c4 removed --- "the hyphen joining the book's 'R orientable' is the
+    card's" and "Problem 3, the cap and cross product formula with the cap products of $S^m\times S^n$,
+    is not one of Hatcher's §3.B exercises" --- are not in the current text; both were false, and
+    their removal is the correction, but the removal was an in-place edit of a dated event and is
+    disclosed here rather than presented as a restoration. Nothing in the statement or the proof
+    changes: the statement as printed on p. 280, Kottke's Problem 1 on printed p. 1, and the
+    five-page length of the set stand as the card has them.
 ---
 
 ::: {.problem}
