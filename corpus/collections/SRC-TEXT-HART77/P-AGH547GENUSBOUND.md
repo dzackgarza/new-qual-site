@@ -94,6 +94,51 @@ audit:
     (4.13) does not apply to it. Not reviewed and not supplied: no proof
     that the maximum at d = 4 is achieved, and none was added; the
     2026-11-16 COMPLAINTS record names that case.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Second pass, on the reader's findings for this card. The attainment of the
+    maximum at d = 4 was left open on a false premise. The class
+    D = 4\ell-(e_1+e_2+e_3+e_4)-2(e_5+e_6) is H+F_56, and D.E_i = b_i > 0,
+    D.F_ij = 4-b_i-b_j >= 0 with 0 only at F_56, and D.G_i = b_i > 0, so D
+    meets all 27 lines nonnegatively and has D^2 = 4 > 0: it is alternative
+    (c) of Exercise V.4.8, whose sufficiency is on P-AGH548IRREDCLASSES from
+    Dolgachev's Theorem 8.2.19, Harbourne's Corollary II.3, Theorem III.1(a)
+    and Lemma II.6(b), and Bertini's theorem in characteristic 0. So the
+    exercise's second request holds for every d > 0, d = 4 included, and the
+    card now says so. Also corrected: the sentence that a = d and
+    sum b_i = 2d "in each case" of the extremal classes, which fails for the
+    d = 5 class (a = 4, sum b_i = 7, kept as its own case); and the citation
+    of Proposition 4.8(e), which the book states for effective divisors, now
+    with the source's own reduction D = D_1-D_2 and D_1, D_2 effective.
+    Checked in this pass: the three line-intersection formulas for H+F_56, its
+    self-intersection, the ampleness inequalities for each family, and that
+    the d = 5 class satisfies them too. Not checked: no source outside those
+    named was read for this card.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The card now closes both requests for every d: the bound from the source's
+    Cauchy--Schwarz argument, attainment by Corollary 4.13(b) of the book for
+    the ample classes and at d = 4 by condition (c) of Exercise V.4.8. The
+    characteristic 0 hypothesis of the Bertini step is carried at the place it
+    is used. Process and provenance commentary is removed from the rendered
+    card.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Re-read against the source and the book. Recomputed for every family the
+    degree, the self-intersection and p_a, and checked equality with the bound
+    in its residue class; checked the integrality step in the residues 1 and 2;
+    checked the hypotheses of (4.13)(a) family by family and for d = 5; checked
+    the line intersections and the self-intersection of H+F_56 and that they
+    are the hypotheses of condition (c). Not reviewed: the third family's
+    printed multiplicities are recorded as an error of the source and the
+    corrected vector is displayed, not derived from anything new; and no
+    characteristic p statement is made anywhere on the card.
 ---
 
 ::: {.problem}
@@ -106,20 +151,17 @@ Show furthermore that for every $d>0$, this maximum is achieved by some irreduci
 
 ::: {.solution}
 
-The bound and the classes attaining it are transcribed from the National Taiwan University
-*Algebraic Geometry II*, 2020 Spring, Chapter V §4, Exercise 7, by Yi-Tsung Wang, printed
-pp. 16--17 (text version `tmp/sources/ntu-ag2-chapter5.md`), and the step from a class to a curve in
-it is the book's Corollary 4.13(b), printed p. 406. The intersection-theoretic data of a class
-$a\ell-\sum_ib_ie_i$ is the book's Proposition 4.8, printed p. 401.
+Write $X$ for the cubic surface, with $-K_X=H$ its hyperplane class and $H^2=3$, and let
+$D$ be a divisor of degree $d=D\cdot H$.
 
 ::: pf
 
 ::: {.pf-step #intersection-data}
-For a divisor class
+For a class
 $$
 D\sim a\ell-\sum_{i=1}^6b_ie_i
 $$
-on the cubic surface $X$,
+one has
 $$
 d=\deg D=3a-\sum_ib_i,
 \qquad
@@ -131,13 +173,14 @@ p_a(D)=\tfrac12(D^2-d)+1 .
 $$
 
 ::: pf-proof
-These are items (c), (d), (e), (f) and (g) of Proposition 4.8 of the book, printed p. 401: the
-degree is $D\cdot h=d$, the self-intersection is $a^2-\sum_ib_i^2$ because $\ell^2=1$ and
-$e_i^2=-1$ with all other pairings zero, $D\cdot K_X=-D\cdot h=-d$, and (g) is
-$2p_a(D)-2=D\cdot(D+K_X)$, that is, $p_a(D)=\frac12(a^2-\sum_ib_i^2-d)+1$. The source states the
-first three and then writes "$2p_a(D)=D^2+D\cdot K=a^2-\sum b_i^2-\deg D$", which drops the
-$-2$ of the adjunction formula; the inequality it goes on to prove is the one obtained from the
-correct $2p_a(D)-2=a^2-\sum_ib_i^2-d$.
+The line bundle computations are items (c), (d), (e), (f) and (g) of Proposition 4.8 of the book,
+printed pp. 401--402: the degree is $D\cdot h=d$, the self-intersection is $a^2-\sum_ib_i^2$ because
+$\ell^2=1$ and $e_i^2=-1$ with all other pairings zero, $D\cdot K_X=-D\cdot h=-d$, and (g) is
+$2p_a(D)-2=D\cdot(D+K_X)$. Chapter V §4 Exercise 7 of the National Taiwan University *Algebraic
+Geometry II* homework (2020 Spring), by Yi-Tsung Wang, printed pp. 16--17, writes $D=D_1-D_2$ with
+$D_1,D_2$ effective and reads $\deg D=3a-\sum_ib_i$ and $D^2=a^2-\sum_ib_i^2$ off (4.8)(b) and (e),
+which the book states for effective divisors; it then writes "$2p_a(D)=D^2+D\cdot K=a^2-\sum
+b_i^2-\deg D$", whose left side omits the $-2$ of the adjunction formula.
 :::
 
 :::
@@ -157,10 +200,9 @@ p_a(D)\le\tfrac16(d-1)(d-2)+\tfrac23
 \iff
 a^2-\sum_ib_i^2\le\tfrac{d^2}{3},
 $$
-using $a^2-\sum b_i^2-d=2p_a(D)-2$ and $(d-1)(d-2)=d^2-3d+2$. This is the source's reduction:
-it says that to prove $p_a(D)\le\frac16(d-1)(d-2)+\frac23$ it suffices to prove
-$(d+\sum b_i)^2-9\sum b_i^2-9d\le 3d^2-9d$, which is $a^2-\sum b_i^2\le d^2/3$ after
-substituting $3a=d+\sum b_i$.
+using $a^2-\sum b_i^2-d=2p_a(D)-2$ and $(d-1)(d-2)=d^2-3d+2$. This is the reduction of the source,
+which says that it suffices to prove $(d+\sum b_i)^2-9\sum b_i^2-9d\le 3d^2-9d$, the same inequality
+after $3a=d+\sum b_i$.
 :::
 
 :::
@@ -171,7 +213,7 @@ $$
 $$
 
 ::: pf-proof
-The source's two inequalities, both for arbitrary reals:
+The two inequalities of the source, for arbitrary reals:
 $$
 2d^2\ge 2d\sum_ib_i-\tfrac12\Bigl(\sum_ib_i\Bigr)^2,
 $$
@@ -181,9 +223,8 @@ $$
 \ge
 2d\sum_ib_i+\Bigl(\sum_ib_i\Bigr)^2-9\sum_ib_i^2,
 $$
-which is $9\sum b_i^2-\frac32(\sum b_i)^2\ge0$, that is
-$6\sum_ib_i^2\ge(\sum_ib_i)^2$, Cauchy--Schwarz for six numbers, the inequality the source cites.
-Combining the two gives the displayed inequality.
+which is $6\sum_ib_i^2\ge(\sum_ib_i)^2$, Cauchy--Schwarz for six numbers, the inequality the source
+cites. Together they give the displayed inequality.
 :::
 
 :::
@@ -200,11 +241,10 @@ $$
 
 ::: pf-proof
 Steps [](#reduction-to-self-intersection){.pf-ref} and [](#hodge-inequality){.pf-ref} give
-$a^2-\sum b_i^2\le d^2/3$, hence
-$p_a(D)\le\frac16(d^2-3d+6)=\frac16(d-1)(d-2)+\frac23$. If $d\equiv1$ or $2$ modulo $3$, then
-$(d-1)(d-2)$ is divisible by $3$ and by $2$, so $\frac16(d-1)(d-2)$ is an integer, and since
-$p_a(D)$ is an integer the bound sharpens to $p_a(D)\le\frac16(d-1)(d-2)$. This is the source's
-argument in the two residues, and it proves the first display of the exercise.
+$a^2-\sum b_i^2\le d^2/3$, hence $p_a(D)\le\frac16(d^2-3d+6)=\frac16(d-1)(d-2)+\frac23$. If
+$d\equiv1$ or $2$ modulo $3$ then $(d-1)(d-2)$ is divisible by $3$ and by $2$, so
+$\frac16(d-1)(d-2)$ is an integer, and since $p_a(D)$ is an integer the bound sharpens to it. This
+is the source's argument in the two residues, and it is the first display of the exercise.
 :::
 
 :::
@@ -228,85 +268,94 @@ d=5:\quad D=4\ell-2e_1-e_2-e_3-e_4-e_5-e_6 .
 $$
 
 ::: pf-proof
-In each case $a=d$ and $\sum_ib_i=2d$, so $d=\deg D$ by step [](#intersection-data){.pf-ref}.
-For the first, $\sum_ib_i^2=6(d/3)^2=2d^2/3$, so
-$D^2=d^2-2d^2/3=d^2/3$ and $p_a(D)=\frac12(d^2/3-d)+1=\frac16(d-1)(d-2)+\frac23$, equality in
-step [](#genus-bound){.pf-ref}. For the second, with $k=\frac{d-1}{3}$,
-$\sum_ib_i^2=4k^2+2(k+1)^2=6k^2+4k+2$ and $d=3k+1$, so
-$D^2=d^2-6k^2-4k-2=\frac{d^2-4}{3}$ and
+In the first three families $a=d$ and $\sum_ib_i=2d$, so $d=\deg D$ by step
+[](#intersection-data){.pf-ref}. For the first, $\sum_ib_i^2=6(d/3)^2=2d^2/3$, so
+$D^2=d^2-2d^2/3=d^2/3$ and $p_a(D)=\frac12(d^2/3-d)+1=\frac16(d-1)(d-2)+\frac23$, which is equality in
+step [](#genus-bound){.pf-ref}. For the second, with $k=\frac{d-1}{3}$ one has
+$\sum_ib_i^2=4k^2+2(k+1)^2=6k^2+4k+2$ and $d=3k+1$, so $D^2=d^2-6k^2-4k-2=\frac{d^2-4}{3}$ and
 $p_a(D)=\frac12\left(\frac{d^2-4}{3}-d\right)+1=\frac16(d-1)(d-2)$. For the third the same
 computation with $k=\frac{d-2}{3}$ and $d=3k+2$ gives $D^2=\frac{d^2-4}{3}$ and
-$p_a(D)=\frac16(d-1)(d-2)$. For $d=5$ the class has
-$\sum_ib_i^2=4+5=9$ and $D^2=16-9=7$, so $p_a(D)=\frac12(7-5)+1=2=\frac16\cdot4\cdot3$.
+$p_a(D)=\frac16(d-1)(d-2)$. For $d=5$ the class has $a=4$, $\sum_ib_i=7$,
+$\sum_ib_i^2=4+5=9$, so $D^2=16-9=7$ and $p_a(D)=\frac12(7-5)+1=2=\frac16\cdot4\cdot3$.
 
-The source prints the third family with the multiplicities the other way round,
-$\frac{d-2}{3}$ on $e_1,\ldots,e_4$ and $\frac{d+1}{3}$ on $e_5,e_6$; for that vector
-$\sum_ib_i=2d-2$ and the degree is $3d-(2d-2)=d+2$, with $d=3m+2$, so its stated "$\deg D=d$"
-fails there. The vector displayed above is the one for which the degree and the value of $p_a$ the
-source reports both hold.
+The source prints the third family with the multiplicities interchanged, $\frac{d-2}{3}$ on
+$e_1,\ldots,e_4$ and $\frac{d+1}{3}$ on $e_5,e_6$; for that vector $\sum_ib_i=2d-2$ and the degree is
+$3d-(2d-2)=d+2$, with $d=3m+2$, so the degree it states fails there. The vector displayed above is the
+one for which the degree and the value of $p_a$ that the source reports both hold.
 :::
 
 :::
 
 ::: {.pf-step #small-degrees}
-For $d=1$ and $d=2$ the bound is attained by a line and by a conic; for $d=4$ the second family of
-step [](#extremal-classes){.pf-ref} gives a class of degree $4$ with $p_a=1$.
+For $d=1$ and $d=2$ the bound is attained by a line and by a conic, and for $d=4$ by the class
+$$
+D=4\ell-(e_1+e_2+e_3+e_4)-2(e_5+e_6),
+$$
+which is $H+F_{56}$ and has degree $4$ and $p_a=1$.
 
 ::: pf-proof
 A line has $d=1$, $D^2=-1$ and $p_a=0=\frac16\cdot0\cdot(-1)$; a conic has $d=2$, $D^2=0$ and
-$p_a=0=\frac16\cdot1\cdot0$; both are nonsingular irreducible curves, and these are the source's
-"for $d=1$ and $2$, a line and a conic achieve the maximum, respectively". At $d=4$ the second
-family of step [](#extremal-classes){.pf-ref} reads $D=4\ell-(e_1+e_2+e_3+e_4)-2(e_5+e_6)$, of
-degree $4$ and $p_a=1$, the maximum of step [](#genus-bound){.pf-ref} for $d\equiv1\pmod3$. The
-source excludes $d=4$ from that family, writes "For $d=4$, I don't know", and states its conclusion
-as holding for every $d>0$ "possibly except $d=4$".
+$p_a=0=\frac16\cdot1\cdot0$; both are nonsingular irreducible curves, and these are the source's "for
+$d=1$ and $2$, a line and a conic achieve the maximum, respectively". At $d=4$ the second family of
+step [](#extremal-classes){.pf-ref} reads
+$D=4\ell-(e_1+e_2+e_3+e_4)-2(e_5+e_6)$, which is $H+F_{56}$ and has degree $4$, self-intersection
+$16-(4+8)=4$ and $p_a=\frac12(4-4)+1=1$, the maximum of step [](#genus-bound){.pf-ref} for
+$d\equiv1\pmod3$. The source excludes $d=4$ from that family and writes "For $d=4$, I don't know".
 :::
 
 :::
 
 ::: {.pf-step #nonsingular-members}
-For every $d>0$ with $d\ne4$, the class of step [](#extremal-classes){.pf-ref} of degree $d$
-contains an irreducible nonsingular curve; hence the maximum of the exercise is attained for those
-$d$.
+For every $d>0$ the class of step [](#extremal-classes){.pf-ref} or [](#small-degrees){.pf-ref} of
+degree $d$ contains an irreducible nonsingular curve, so the maximum of the exercise is attained for
+every $d>0$.
 
 ::: pf-proof
-Apply (4.13)(a) of the book, printed p. 406: $D$ is ample exactly when $b_i>0$ for each $i$,
-$a>b_i+b_j$ for each $i,j$, and $2a>\sum_{i\ne j}b_i$ for each $j$. For the classes of step
-[](#extremal-classes){.pf-ref} one has $a=d$ and $\sum_ib_i=2d$, so the last condition reads
-$2d>2d-b_j$, which holds; the middle one reads $d>b_i+b_j$, and for the largest pairs it is
-$d>\frac{2(d+2)}{3}$, that is $d>4$, in the second family, $d>\frac{2(d+1)}{3}$, that is $d>2$, in
-the third, and $d>\frac{2d}{3}$, that is $d>0$, in the first; and $b_i>0$ holds because
-$d>0$ in the first family, $d>1$ in the second and $d>2$ in the third. The exceptions $d=1,2$ are
-the line and the conic of step [](#small-degrees){.pf-ref}, and $d=5$ is the fourth class of step
-[](#extremal-classes){.pf-ref}, for which $b_1=2$ and the remaining $b_i$ equal $1$, so
-$a=4>b_i+b_j$ holds, since the largest pair sum is $3$, and
-$2a=8>6=\sum_ib_i-1\ge\sum_{i\ne j}b_i$. By Corollary 4.13(b) of the book,
-printed p. 406, every divisor class satisfying those conditions contains an irreducible nonsingular
-curve. Hence the maximum is attained for each of those $d$. At $d=4$ the class of step
-[](#small-degrees){.pf-ref} has $D\cdot F_{56}=4-2-2=0$ for the line $F_{56}$, so it is not ample
-and (4.13) does not apply to it.
+For the classes of the first three families of step [](#extremal-classes){.pf-ref} and for the class of
+degree $5$, Corollary 4.13 of the book, printed p. 406, applies. Its part (a) says that $D$ is ample
+exactly when $b_i>0$ for each $i$, $a>b_i+b_j$ for each $i,j$, and $2a>\sum_{i\ne j}b_i$ for each $j$;
+for those classes $a=d$ and $\sum_ib_i=2d$, so the last condition reads $2d>2d-b_j$, the middle one
+$d>b_i+b_j$, which for the largest pair is $d>\frac{2(d+2)}{3}$, that is $d>4$, in the second family,
+$d>\frac{2(d+1)}{3}$, that is $d>2$, in the third, and $d>\frac{2d}{3}$ in the first, and $b_i>0$
+because $d>0$ in the first family, $d>1$ in the second and $d>2$ in the third. The class of degree $5$
+has $a=4$, $b_1=2$ and the remaining $b_i$ equal to $1$, so $a=4>b_i+b_j$ and
+$2a=8>6=\sum_ib_i-1\ge\sum_{i\ne j}b_i$. By Corollary 4.13(b) each of these classes contains an
+irreducible nonsingular curve.
+
+The classes of degrees $1$ and $2$ are the line and the conic of step
+[](#small-degrees){.pf-ref}. The class of degree $4$ is $H+F_{56}$, and
+$$
+(H+F_{56})\cdot E_i=b_i>0,
+\qquad
+(H+F_{56})\cdot F_{ij}=4-b_i-b_j,
+\qquad
+(H+F_{56})\cdot G_i=b_i>0
+$$
+for the $27$ lines, so it meets every line nonnegatively, with $0$ at $F_{56}$ alone, and its
+self-intersection is $4>0$: it satisfies condition (c) of [[P-AGH548IRREDCLASSES|Exercise V.4.8]], and
+the sufficiency of that condition, from Dolgachev's Theorem 8.2.19, Harbourne's Corollary II.3,
+Theorem III.1(a) and Lemma II.6(b), and Bertini's theorem in characteristic $0$, gives an irreducible
+nonsingular member. Hence the maximum is attained for every $d>0$, including $d=4$.
 :::
 
 :::
 
 ::: {.pf-step #conclusion}
-The bound of the exercise holds for every divisor of degree $d$, and the maximum is achieved by an
-irreducible nonsingular curve for every $d>0$ with $d\ne4$; the case $d=4$ is not covered by the
-sources.
+The bound of the exercise holds for every divisor of degree $d$, and its maximum is achieved by an
+irreducible nonsingular curve for every $d>0$.
 
 ::: pf-proof
-The bound is step [](#genus-bound){.pf-ref}. The attainment is step [](#nonsingular-members){.pf-ref}
-for $d\ne4$, and step [](#small-degrees){.pf-ref} records what the source says of $d=4$, namely that
-it does not know. No argument for $d=4$ is given on this card.
+The bound is step [](#genus-bound){.pf-ref} and the attainment is step
+[](#nonsingular-members){.pf-ref}, in the two residue classes and at $d=4$.
 :::
 
 :::
 
 ::: pf-qed
 Steps [](#intersection-data){.pf-ref}, [](#reduction-to-self-intersection){.pf-ref},
-[](#hodge-inequality){.pf-ref} and [](#genus-bound){.pf-ref} prove the bound;
-steps [](#extremal-classes){.pf-ref}, [](#small-degrees){.pf-ref} and
-[](#nonsingular-members){.pf-ref} prove the attainment of the bound, except at $d=4$.
+[](#hodge-inequality){.pf-ref} and [](#genus-bound){.pf-ref} are the bound; steps
+[](#extremal-classes){.pf-ref}, [](#small-degrees){.pf-ref} and
+[](#nonsingular-members){.pf-ref} are the classes that attain it and the curves in them.
 :::
 
 :::
@@ -314,17 +363,14 @@ steps [](#extremal-classes){.pf-ref}, [](#small-degrees){.pf-ref} and
 
 ::: {.remark title="Published solution"}
 National Taiwan University, *Algebraic Geometry II* (2020 Spring, Chin-Lung Wang), Chapter V §4,
-Exercise 7, by Yi-Tsung Wang, printed pp. 16--17, text version
-`tmp/sources/ntu-ag2-chapter5.md`. The source computes $2p_a(D)$ from $D^2+D\cdot K$, remarks that
-the inequality is Cauchy--Schwarz, and sharpens the bound in the residues $1,2$ modulo $3$ by
-integrality, which is steps [](#intersection-data){.pf-ref}--[](#genus-bound){.pf-ref}; it then
-lists the extremal classes of step [](#extremal-classes){.pf-ref} and the small cases of step
-[](#small-degrees){.pf-ref}. Three points of the printed text are not reproduced: it writes
-$2p_a(D)=D^2+D\cdot K$ for $2p_a(D)-2=D\cdot(D+K)$; the multiplicities in its $d\equiv2$ family are
-interchanged, so that family as printed has degree $d+2$; and it asserts that each listed class is
-achieved by an irreducible nonsingular curve without giving a curve or a reference, admits
-$d=4$ as unknown ("For $d=4$, I don't know"), and states only that the maximum is achieved for
-every $d>0$ possibly except $d=4$. Step [](#nonsingular-members){.pf-ref} supplies the missing
-argument from the book's Corollary 4.13(b), printed p. 406, and fails exactly at $d=4$, where the
-maximising class has $D\cdot L=0$ for one of the 27 lines and so is not ample.
+Exercise 7, by Yi-Tsung Wang, printed pp. 16--17: the reduction of $2p_a(D)-2$ to
+$a^2-\sum b_i^2-d$, the bound $a^2-\sum b_i^2\le d^2/3$ by Cauchy--Schwarz and one square, its
+sharpening in the residues $1,2$ modulo $3$ by integrality, and the classes attaining it. The source
+writes $2p_a(D)=D^2+D\cdot K$ for $2p_a(D)-2=D\cdot(D+K)$; it interchanges the two multiplicities in
+its $d\equiv2$ family, so that family as printed has degree $d+2$; and it leaves $d=4$ open, stating
+its conclusion for every $d>0$ "possibly except $d=4$".
+
+For the curves in those classes: Corollary 4.13(a),(b) of Hartshorne, printed p. 406, for the ample
+ones, and, at $d=4$, condition (c) of Exercise V.4.8 with the sources recorded on
+[[P-AGH548IRREDCLASSES]].
 :::
