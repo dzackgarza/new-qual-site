@@ -76,8 +76,8 @@ audit:
     Corollary 4.13(a),(b), printed p. 406, the numerical translation of 4.11
     and the irreducible nonsingular member, which the book derives from
     Bertini's theorem (II, 8.18) and (III, 7.9.1); Reid, Chapters on Algebraic
-    Surfaces, Section 3.9 (numerical 1-connectedness), printed p. 71, Lemma 3.11(i),(ii),
-    printed pp. 72--73, and Section 3.12, printed p. 73, being the route nef-and-big implies
+    Surfaces, Section 3.9 (numerical 1-connectedness), Lemma 3.11(i),(ii) and
+    Section 3.12, printed pp. 72--73, being the route nef-and-big implies
     1-connected implies H^0(O_D) = k implies H^1(O_X(-D)) = 0 on a surface with
     H^1(O_X) = 0. The two structure-sheaf facts were checked against the book
     rather than assumed: II.5.9, printed p. 116, for the ideal sheaf sequence of
@@ -119,6 +119,22 @@ audit:
     Read for this pass: Hartshorne pp. 405--406 and Reid pp. 71--74. Nothing
     else on the card changed.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A reader's report of this day, repaired here. (i) The solution-written event
+    of 2026-11-16 above had been rewritten in place by a697a2d9cf, which a dated
+    record does not allow; it is restored to the text it was introduced with, and
+    what that commit changed is recorded in the source-corrected event of the
+    same day that the commit appended below it. (ii) The rendered remark still
+    said how the card uses its sources --- "The proof rests on the book itself
+    and on Reid's Park City notes, and each is used at a numbered statement" ---
+    which is bookkeeping, not mathematics; the remark now states what the two
+    sources prove. Read for this pass: Hartshorne, Algebraic Geometry, Lemma
+    4.12 with Theorem 4.11 and Corollary 4.13, printed pp. 405--406. Reid's
+    pages were not re-read off the folios in this pass, and the pages above are
+    those of the restored events. Nothing else on the card changed.
 ---
 
 ::: {.problem}
@@ -235,7 +251,7 @@ By step [](#structure-sheaf){.pf-ref} one has $H^0(\OO_X)=k$ and $H^1(\OO_X)=0$,
 ::: {.remark title="Published solutions"}
 The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.12, printed p. 408.
 
-The proof rests on the book itself and on Reid's Park City notes, and each is used at a numbered statement: Theorem 4.11 with Lemma 4.12 for the passage from ample to very ample, Corollary 4.13 for the numerical translation and the nonsingular member, and Lemma 3.11 with Section 3.12 of Reid for the cohomological step. Reid's Section 3.12 gives the vanishing in the form this exercise asks for, $H^1(\OO_X(-D))=0$ for $D$ effective and $1$-connected on a surface with $H^1(\OO_X)=0$, and derives it, as on this card, from $H^0(\OO_D)=$ constants and the long exact sequence of $0\to\OO_X(-D)\to\OO_X\to\OO_D\to0$; the Discussion that closes his Section 3.12, printed p. 74, then records that the characteristic-zero proofs of the general theorem are Ramanujam's and the Bogomolov--Mumford one, neither of which the cubic surface needs.
+The book gives Theorem 4.11 with Lemma 4.12 for the passage from ample to very ample and Corollary 4.13 for the numerical translation and the nonsingular member; Reid's Park City notes give Lemma 3.11 with Section 3.12 for the cohomological step. Reid's Section 3.12 gives the vanishing in the form this exercise asks for, $H^1(\OO_X(-D))=0$ for $D$ effective and $1$-connected on a surface with $H^1(\OO_X)=0$, and derives it, as on this card, from $H^0(\OO_D)=$ constants and the long exact sequence of $0\to\OO_X(-D)\to\OO_X\to\OO_D\to0$; the Discussion that closes his Section 3.12, printed p. 74, then records that the characteristic-zero proofs of the general theorem are Ramanujam's and the Bogomolov--Mumford one, neither of which the cubic surface needs.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.12, printed p. 292, is wholly on that one page and takes the same route with the two structure-sheaf facts stated rather than derived: he records $H^0(\OO_X)=k$, $H^1(\OO_X)=0$ and $H^2(\OO_X)=H^0(\OO_X(-3))=p_g=0$, writes "By chapter 1, $H^0(D,\OO_D)=k$" for the divisor $D$, and reads the long exact sequence term by term. His closing step, "Suppose there is an effective divisor linearly equivalent to $-D$. Then by V.4.11, this effective divisor should meet at least one line with negative intersection which is silly", needs a completion. A negative intersection with a line is no contradiction: an effective $E=L+E'$ with $E'\cdot L=0$ has $E\cdot L=-1$, so a line in the support of an effective divisor can meet that divisor negatively. The contradiction is with very ampleness directly: $D$ very ample gives $D\cdot\Gamma>0$ for every irreducible curve $\Gamma$, hence $D\cdot E>0$ for every nonzero effective $E$, while $E\sim-D$ gives $D\cdot E=-D^2<0$, which $D^2>0$ excludes. The number his sentence cites needs care because two results share it: the exercise printed as 4.11 in §4 is the Weyl groups exercise and says nothing about divisors, while **Theorem 4.11** is the criterion. The existence of a nonsingular member of $\abs{D}$, which his entry does not supply, is Corollary 4.13(b) here.
 

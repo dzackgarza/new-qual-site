@@ -3414,7 +3414,7 @@ II.5.14(d) and has no published proof located that can be cited without repair, 
 [#121](https://github.com/dzackgarza/new-qual-site/issues/121). Nothing in this record supersedes an
 earlier entry of this file.
 
-## 2026-11-16: the four V-batch cards of #121, what their published proofs cover, and the parts that stay open
+## 2026-11-16: the four V-batch cards of #121, what their published proofs cover, and the two parts of V.4.15 that stay open
 
 The batch is the four cards `P-AGH5412KODAIRAVANISH` (V.4.12), `P-AGH5415GENPOSITION` (V.4.15),
 `P-AGH5416FERMATCUBIC` (V.4.16) and `P-AGH555ELEMTRANSFORM` (V.5.5). Each card's solution is now a
@@ -3425,8 +3425,8 @@ this record says what changed in status and where a published proof is still mis
 
 - **V.4.12, closed on 2026-11-16.** The published proof is Hartshorne's Theorem 4.11 with Lemma 4.12,
   printed pp. 405--406, for ample implies very ample; Corollary 4.13(a),(b), printed p. 406, for the
-  numerical translation and the irreducible nonsingular member; and Reid's Section 3.9, printed p. 71,
-  with Lemma 3.11, printed pp. 72--73, and Section 3.12, printed p. 73, for nef-and-big implies numerically 1-connected implies
+  numerical translation and the irreducible nonsingular member; and Reid's Section 3.9 with Lemma
+  3.11 and Section 3.12, printed pp. 72--73, for nef-and-big implies numerically 1-connected implies
   $H^0(\OO_D)=k$ implies $H^1(\OO_X(-D))=0$ on a surface with $H^1(\OO_X)=0$. The two structure-sheaf
   facts are now derived rather than assumed: the ideal sheaf sequence of the cubic hypersurface with
   II.5.9, printed p. 116, and Theorem III.5.1(b), printed p. 225. The earlier entry's "Open" for this
@@ -3437,15 +3437,9 @@ this record says what changed in status and where a published proof is still mis
   Theorem 3.2(2), p. 15, for the bound $e\le 2g-2$. Corollary 4.11 joins each of the two ruled
   surfaces to $X\times\PP^1$ rather than to each other; composing one sequence with the reverse of the
   other uses Definition 4.3's own sentence that the inverse of an elementary transform is one, and the
-  card states that composition as its own step. Two corrections of 2026-11-16, on a reader's report:
-  the step from $C\times\PP^1$ to the decomposable surface had the determinant sign wrong, since
-  Theorem 4.9 gives $\mathfrak e'\sim\mathfrak e-P$ and the points are chosen with
-  $-\mathfrak e_0\sim P_1+\cdots+P_e$, so the class reached is $\mathfrak e_0$ and the determinant
-  $\OO_C(\mathfrak e_0)$; and Theorem 4.9 fixes only $\bigwedge^2$ of the normalized sheaf, so it does
-  not by itself give the decomposable surface, which is Theorem 4.12(1), printed p. 31. The three
-  printed hints of the exercise are used at
+  card states that composition as its own step. The three printed hints of the exercise are used at
   the steps named on the card, with Theorem 3.2 taking the place of the book's (2.12).
-- **V.4.16, the lines and the group closed on 2026-11-16; the incidence relations open.** Gathmann's Lemma
+- **V.4.16, closed on 2026-11-16 for the lines, the incidence counts and the group.** Gathmann's Lemma
   11.1, printed p. 90, is the whole coefficient argument for the $27$ lines, and his Corollary 11.2,
   printed pp. 90--91, gives $10$ lines meeting a given one and $5$ meeting two given skew ones.
   Dolgachev and Duncan's Lemma 5.1, printed p. 25, with Lemma 5.2 and its Hessian proof, printed
@@ -3454,55 +3448,34 @@ this record says what changed in status and where a published proof is still mis
   Dolgachev's Theorem 9.5.7 with Table 9.4, printed pp. 386--387, prints the characteristic-zero
   group a second time. What no source prints is a pair-by-pair congruence criterion deciding
   whether two lines of the three families meet; the incidence relations are verified as the two
-  counts, which is what Gathmann proves, and the card no longer carries the criterion. That leaves the
-  exercise's second request unanswered, as a reader's report of this day says: the relations are the
-  configuration of the twenty-seven lines in the labelling $E_i,F_{ij},G_j$, from which the two counts
-  follow together with the single common transversal of two lines that meet, and the two counts do not
-  determine them. Gathmann's proof of his part (b) is in any case the sentence "The proof of part (b)
-  is analogous", printed p. 91, so his source states that count rather than verifying it. The card now
-  records the relations, states that the two counts do not determine them, and names the part open at
-  a step of its own.
-- **V.4.15 (a), proved on 2026-11-16.** This record first said that no published proof was located, and
-  quoted Nagata's Proposition 3, printed p. 279, with a type written $(1,1,1,0,\ldots,0)$; the paper
-  prints $(1,1,1,1,0,\ldots,0)$ with $r-3$ zeros, the class of a line through three of the points, so
-  the enumeration the first version asked for was an enumeration of the wrong class. No such
-  enumeration is needed: both directions of (a) are printed. The "only if" direction is Yang Pi-Yeh,
-  Solution 5.4.15(a), printed p. 112, where a conic $axy+byz+czx=0$ through the six points goes under
-  the quadratic transformation to the line $bx+cy+az=0$ through the images of $P_4,P_5,P_6$; the "if"
-  direction is Hartshorne's own verification in the proof of Proposition 4.10, Case 2, printed
-  pp. 403--404, that no three of $Q_1,Q_2,Q_3,P_4',P_5',P_6'$ lie on a line and no six on a conic, by
-  which the two conditions are preserved and no three points are collinear after any finite sequence.
-  Part (b) is Yang's composability argument on the same page, not Nagata's Section 2(2), and the card
-  now cites him for it. The virtual genus was also transcribed without its factor $1/2$: Nagata's
-  Section 2(3), printed p. 277, prints $(d^2-3d+2-\sum m_i(m_i-1))/2$, and Lemma 2.1(iii) is the
-  identity $3d-\sum m_i=I-2vg+2$ rather than the characterisation of curves of the first kind, which
-  is Proposition 2, printed p. 277.
+  counts, which is what Gathmann proves, and the card no longer carries the criterion.
+- **V.4.15 (a), no published proof located on 2026-11-16.** Nagata's Proposition 3, printed p. 279,
+  prints the criterion: ordinary points are special exactly when some type similar to
+  $(1,1,1,0,\ldots,0)$ has a nonempty effective system. Turning that into part (a) needs the
+  enumeration of that similarity class with six base points, and neither source prints it: the only
+  printed corollary of Nagata that lists conditions for a configuration is the one for eight ordinary
+  points, printed p. 291, whose third condition --- a cubic through all eight with a double point at
+  one of them --- has no six-point counterpart. The card states the criterion, names the enumeration
+  as the missing step, and does not supply it; nothing here is claimed as proved for (a) beyond the
+  criterion.
 - **V.4.15 (c), no published proof located on 2026-11-16.** Nagata's Lemma 2.5, printed p. 279, is the
   statement that independent generic points over the prime field are non-special; it is not the
-  dense-extension statement of (c), and its proof says nothing about a bad locus at all: it takes a
-  quadratic transformation with centres at three of the generic points and observes that its
-  corresponding base points, with the remaining points, are again independent generic over the prime
-  field. The special locus is a countable union of closed conditions, one for each finite sequence of
-  admissible transformations, and not one proper closed subset, so neither the density nor the
-  closedness of the bad locus with the first $r$ points fixed is printed. Neither source prints the
+  dense-extension statement of (c), and its proof establishes properness of the bad locus in the
+  space of all $r$-tuples, not after the first $r$ points are fixed. Neither source prints the
   countable-union lemma that Hartshorne's hint, printed p. 409, asks for. The card therefore proves
   neither the density nor the properness it rests on, and says so at the step; the earlier entry of
   this file recorded the same obstacle and stands.
 
-**Two defects in the sources, named on the cards and not repaired in the sources.** They matter to a reader of the numbers the
-cards now cite.
+**Two defects in the sources, recorded and not repaired.** They matter to a reader of the numbers the
+cards now cite, and neither changes a card's claim.
 
 - **Dolgachev's degree bound in Proposition 8.2.15, printed p. 261.** The proof says the Cauchy--Schwarz
   inequality $(3d-1)^2\le N(d^2+1)$ "gives $0\le d\le 4$". It does not: at $N=7$ it gives
   $d^2-3d-3\le0$, so $d\le3$, and at $N=8$ it gives $d^2-6d-7\le0$, so $d\le7$, with equality at
   $d=7$ impossible because it would force all eight multiplicities to equal $20/8$, so $d\le6$. His
-  printed list for $N=8$ has nothing above degree $4$ and is short by the eight vectors
-  $-2\mathbf k_8-\mathbf e_i$, each of square $-1$ with $\mathbf k_8\cdot v=-1$, which Nagata's table
-  prints on p. 284 as the row $(6;3,2,\ldots,2)$; the two printed lists are therefore not the same
-  list, and the degree-$6$ class the bound must allow is in Nagata's and not in Dolgachev's. A first
-  version of this record said instead that Dolgachev's list contained
-  $6\mathbf e_0-3\mathbf e_1-2\mathbf e_2-\cdots-2\mathbf e_8$, which it does not. The counts $56$ at
-  $N=7$ and $240$ at $N=8$ stand, from the two tables, and were rechecked here.
+  own list for $N=8$ contains a vector of degree $6$, namely $6\mathbf e_0-3\mathbf e_1-2\mathbf e_2-
+  \cdots-2\mathbf e_8$, so the printed bound contradicts the printed list. The enumeration and the
+  counts $56$ at $N=7$ and $240$ at $N=8$ are unaffected and were rechecked here.
 - **Dolgachev and Duncan's Lemma 5.2, printed p. 25.** It is stated for $F=x_0^d+\cdots+x_n^d=0$ in
   $\PP^n$ with $n\ge4$ and displays the group $d^{n-1}\rtimes\mathfrak S_n$. A Fermat hypersurface in
   $\PP^n$ has $n+1$ coordinates, and its group is $d^n\rtimes\mathfrak S_{n+1}$, so as indexed the
@@ -3520,22 +3493,9 @@ half of (d), and this pass takes the realization from Nagata's Theorem 2a, print
 gives irreducible curves of the first kind directly; Proposition 8.2.15 with its table is cited on the
 card for the count.
 
-Nothing else in this file was read or edited in this pass beyond the corrections above; the four
-cards carry the pages above in their audit events and remarks. The obligations that remain under
-[#121](https://github.com/dzackgarza/new-qual-site/issues/121) are part (c) of V.4.15 and the
-incidence relations of V.4.16.
-
-**The corrections of 2026-11-16, after this record's first version.** A reader's report on the four
-transcriptions produced four repairs, one commit per card: `a697a2d9cf` for
-`P-AGH5412KODAIRAVANISH`, which carries Lemma 4.12's hypothesis as the book prints it, Reid's pages
-71 and 72--74, the corrected step citation and the remark's provenance moved to its audit;
-`38d4d33bee` for `P-AGH5415GENPOSITION`, which proves part (a) from Hartshorne's Case 2 and Yang,
-cites Yang for part (b), and carries the Nagata and Dolgachev statements corrected above;
-`1a3e3c52dd` for `P-AGH5416FERMATCUBIC`, which names the incidence relations open and records
-Dolgachev and Duncan's Section 1.3 page and Table 1 row; and `e2d674f48d` for
-`P-AGH555ELEMTRANSFORM`, which corrects the determinant sign and cites Theorem 4.12(1) for
-decomposability. The provenance that had stood in the remarks of the last three cards is in their
-audit events instead.
+Nothing else in this file was read or edited in this pass; the four cards carry the pages above in
+their audit events and remarks, and the two open parts of V.4.15 remain obligations under
+[#121](https://github.com/dzackgarza/new-qual-site/issues/121).
 
 ## 2026-11-16: `SRC-TEXT-HART77` #121, the Chapter V cubic-surface batch (V.4.7, V.4.8, V.4.10, V.4.11)
 
@@ -3913,3 +3873,31 @@ What the round's rewrite added, and this report rejects, is its account of tom D
 **Repair.** `P-AGH5410NUMINEQ` in `c411edafd0`; `P-AGH5411WEYLGROUPS` in `9f4df289a6`; `P-AGH547GENUSBOUND` in `dfb86b8141`; `P-AGH548IRREDCLASSES` in `ed7a02da54`; the restoration of the batch record and the commits record, and this record, in the COMPLAINTS commit that carries it, which changes no card.
 
 **Uncertainty.** Read for this report, in the text versions under `tmp/sources/`: `mse-2475661-hart-v410-freshman-calculus.md`, answer 2476483 entire, its line 31 the weak order with $0\le b_1$ and its line 76 the maximiser $(0,0,0,0,0,a)$; `ntu-ag2-chapter5.md` at Chapter V §4 exercises 7, 10 and 11, and printed pp. 16--18 of `ntu-ag2-chapter5.pdf`, whose folios are the PDF pages, part (a) of Exercise 11 ending on p. 17 and part (b) beginning on p. 18; and `hartshorne-1977-algebraic-geometry.md` at Corollary 4.13 with its proof, printed p. 406, II.8.18, printed p. 179, the proof of Theorem 4.9, printed pp. 402--403, and the proof of (4.11) continued, printed pp. 420--421. Not read for this report: Dolgachev's Lemma 8.1.3, Theorem 8.2.19, Proposition 8.2.15, Corollary 8.2.16 and Proposition 9.1.3, and Harbourne's Corollary II.3, Lemma II.6 and Theorem III.1(a), beyond the statements and pages the cards give; the Dolgachev and Harbourne PDFs; the printed copies of any of these books; and no search of the literature beyond these files was made. The open parts are unchanged as obligations under [#121](https://github.com/dzackgarza/new-qual-site/issues/121): V.4.7 at $d=4$ in characteristic $p>0$, V.4.8's third alternative in characteristic $p>0$, and V.4.11's inequality $\cardinality{\mathbf E_6}\le51840$. V.4.10 is not among them: the first answer's argument, which the card transcribes, is complete, and NTU's second route is an alternative that fails beyond $b_1\le2b_2$.
+
+## 2026-11-16: a reader's report on the four V-batch cards of #121 — the round's records restored to the text they were introduced with, V.4.15(c) and V.4.16's incidence relations restored as the cards' own, and two statements of V.4.15's count corrected
+
+**Object and need.** The record of this date headed "the four V-batch cards of #121, what their published proofs cover, and the two parts of V.4.15 that stay open", and the four cards it reports: `P-AGH5412KODAIRAVANISH` (V.4.12), `P-AGH5415GENPOSITION` (V.4.15), `P-AGH5416FERMATCUBIC` (V.4.16) and `P-AGH555ELEMTRANSFORM` (V.5.5). A local reader read the round's second pass against the sources and the book and did not accept it.
+
+**The records restored, and the rule they were rewritten under.** The round's brief said that a record of the day then in progress may be corrected in place. That is not `QUAL-11`, which makes a dated record append-only: later text refers to it, and a correction is a new record of the commit's date. `d48af148a5` rewrote this file's record of the batch, its heading included --- the V.4.12 item's Reid pages, the V.5.5 item's account of the determinant sign and of decomposability, the V.4.16 item's status for the incidence relations, the whole of the V.4.15(a) item, the V.4.15(c) item's reading of Lemma 2.5, the Dolgachev defect item, the closing paragraph and the heading --- and the record is restored, whole, to the text it carried when it was introduced at `91bd4ca7d2`. The same rule restored five audit events of the same date, whose text four commits of the round had rewritten: on V.4.12 the solution-written event, rewritten by `a697a2d9cf` (`git show c2ee19d09b`); on V.4.15 the source-corrected, solution-written and source-checked events, rewritten by `38d4d33bee` (`git show ae80deb645`); on V.4.16 the solution-written and source-checked events, rewritten by `1a3e3c52dd` (`git show 38d4d33bee`); and on V.5.5 the source-checked event, rewritten by `e2d674f48d` (`git show 1a3e3c52dd`). Each card keeps the event its rewriting commit appended, which states what that commit changed; what this pass changes is in the events appended today, and every correction below is stated here instead of in the records it corrects.
+
+**V.4.12: Reid's pages.** The restored item puts Reid's Section 3.9 with Lemma 3.11 and Section 3.12 on printed pp. 72--73. Section 3.9, the definition of numerical connectedness and of $\mathcal O_D$, is printed on p. 71; Lemma 3.11 begins on p. 72 and its proof runs onto p. 73, where Section 3.12 also is; and the Discussion that closes Section 3.12, with its list of the characteristic-zero proofs of the general theorem, is on p. 74 and is not Section 3.13, which is Ramanujam's theorem. The card's steps give the four pages so.
+
+**V.4.15(a) and (b): published, in the book and in Yang.** The restored item says that no published proof of (a) was located, and names the enumeration of Nagata's Proposition 3 as the missing step, quoting the paper's type as $(1,1,1,0,\ldots,0)$. The paper prints $(1,1,1,1,0,\ldots,0)$ "with $r-3$ zeros", the class of a line through three of the points, on printed p. 279 (read at PDF 9, whose folio is 279 with PDF 1 = printed 271); the enumeration the item asks for was therefore of the wrong class, and no enumeration is needed, since both directions of (a) are printed. The "only if" direction is Yang Pi-Yeh's Solution 5.4.15(a), printed p. 112, a conic $axy+byz+czx=0$ through the six points going under the quadratic transformation to the line $bx+cy+az=0$ through the images of $P_4,P_5,P_6$. The "if" direction is Hartshorne's own verification in the proof of Proposition 4.10, Case 2, printed pp. 403--404, that no three of $Q_1,Q_2,Q_3,P_4',P_5',P_6'$ lie on a line and no six on a conic, by which the two conditions are preserved under every admissible transformation, so that no three of the six points are collinear after any finite sequence. Part (b) is Yang's composability argument on the same page and not Nagata's Section 2(2). The virtual genus was transcribed without its factor $\tfrac12$: Nagata's Section 2(3), printed p. 277, prints $(d^2-3d+2-\sum m_i(m_i-1))/2$, and Lemma 2.1(iii), printed p. 277, is the identity $3d-\sum m_i=I-2vg+2$, not the characterisation of curves of the first kind, which is Proposition 2, printed p. 277.
+
+**V.4.15(c): the card's own proof, restored.** The round removed the card's proof of (c) when it turned the solution into a transcription, and the first decision of this repair keeps a proof already on the card, marked as the card's own. Steps `uncountable-field-lemma`, `bad-locus-proper-closed` and `dense-general-position-extension` of `83d33296ae` are back; the second asserts the properness of the bad locus and does not derive it, and the card says so in the step, so (c) is proved there only given that assertion. The restored item's sentence "The card therefore proves neither the density nor the properness it rests on" described the transcription and not the card. Its reading of Nagata's Lemma 2.5 stands as a reading of the source: that lemma is the generic-point statement, its proof keeps the transformed points generic over the prime field, and it says nothing about the position of one further point with the first $r$ fixed; the special locus is a countable union of closed conditions, one for each finite sequence, so neither the density nor the closedness with the first $r$ points fixed is printed. No source listed for the card proves (c), and the countable-union lemma that Hartshorne's hint, printed p. 409, asks for is in neither source.
+
+**V.4.16: the pair-by-pair criterion, restored.** The round removed the card's own computation of the incidence relations and left the two counts, so the exercise's second request was answered by nothing, and the item said "the card no longer carries the criterion". Steps `same-family-incidence`, `ab-family-incidence`, `ac-family-incidence` and `bc-family-incidence` of `83d33296ae`, with the counting step that closes them, are back, under the notation $A_{ab},B_{ab},C_{ab}$ declared in a step of their own, and they decide every pair of the twenty-seven lines; no source listed prints them, which is what the card's step on the sources now says. Two sentences of the round are withdrawn with them: that the two counts "do not determine" the configuration, which no source and no proof supported, and the item's "the card no longer carries the criterion". Gathmann's part (b) is a statement whose printed proof is the sentence "The proof of part (b) is analogous", printed p. 91. Dolgachev and Duncan's Section 1.3 is printed on p. 6, not p. 2, and their Table 1, printed p. 4, gives the $3C$ row $3^3\rtimes\Sigma_4$ of order $648$ in characteristic not $2$ or $3$ and $\operatorname{PSU}_4(2)$ of order $25920$ in characteristic $2$, with no characteristic-$3$ entry; the item's "empty for $\operatorname{char}k=2$ and $\operatorname{char}k=3$" is therefore wrong about characteristic $2$, and contradicts the card's own characteristic-$2$ step. Lemma 5.2, printed p. 25, is stated for $x_0^d+\cdots+x_n^d$ in $\PP^n$ with $n\ge4$ and displays $d^{n-1}\rtimes\Sigma_n$; as indexed the group carries one factor of $d$ fewer than the hypersurface has coordinates, and the cubic in $\PP^3$ sits at $n=3$, below the printed bound, so the reading that gives $3^3\rtimes\Sigma_4$ takes the lemma's $n$ as the number of coordinates.
+
+**V.4.15's count: the table's first row, the converse, and the printed list.** Three corrections to what the round transcribed. (i) Nagata's table for $r=8$, printed p. 284, has first row $(0;-1,0,\ldots,0)$, the class $\mathcal L(0;-P_1)$ of an exceptional curve, which is what the proof of Theorem 2a uses; the card had written $(0;1,0,\ldots,0)$, for which $3d-\sum m_i=-1$, so it is not pre-exceptional. The card now prints the row with its negative multiplicity and names it, and its seven rows count $8+28+56+56+56+28+8=240$. (ii) "Every solution of those two equations is a pre-exceptional type" is not in Nagata's printed proof of Theorem 2a, pp. 280--281, which treats only the class of an irreducible exceptional curve, with non-negative multiplicities and positive degree; it is Dolgachev's Proposition 8.2.15, printed p. 261, that states that a vector is exceptional exactly when $\mathbf k_N\cdot v=-1$ and $v^2=-1$, with his Noether-inequality sketch. Joining his $W(\mathbf E_N)$-orbit to Nagata's similarity classes through Lemma 2.4, printed p. 279, also needs $W(\mathbf E_N)$ to be generated by the permutations and the reflection $r_{\alpha_{123}}$, which no source read here prints, and the card does not carry that passage. (iii) The round's description of Dolgachev's printed list for $N=8$ contradicted itself. As printed, after $\mathbf e_i$, $\mathbf e_0-\mathbf e_i-\mathbf e_j$ and $2\mathbf e_0-\mathbf e_1-\cdots-\mathbf e_7+\mathbf e_i+\mathbf e_j$, it lists $-\mathbf k_8+\mathbf e_i-\mathbf e_j$, $-\mathbf k_8+\mathbf e_0-\mathbf e_i-\mathbf e_j-\mathbf e_k$ and $-\mathbf k_8+2\mathbf e_{i_1}-\mathbf e_{i_2}-\cdots-\mathbf e_{i_6}$; the last family read as it stands has square $-14$ and $\mathbf k_8\cdot v=2$, so the list is not to be read as a list of exceptional vectors, and read so as to make it one it still has no family of degree $6$, while Nagata's table has the row $(6;3,2,\ldots,2)$, of square $-1$ and $\mathbf k_8\cdot v=-1$. The record's "his printed list for $N=8$ has nothing above degree $4$" and "short by the eight classes $-2\mathbf k_8-\mathbf e_i$" are both superseded by that. The counts $56$ at $N=7$ and $240$ at $N=8$ stand, from the two tables.
+
+**V.5.5: the determinant's sign, and decomposability.** The step that reaches a decomposable surface from $C\times\PP^1$ had the determinant sign wrong: Theorem 4.9 gives $\mathfrak e'\sim\mathfrak e-P$ and the points are chosen with $-\mathfrak e_0\sim P_1+\cdots+P_e$, so the class reached is $\mathfrak e_0$ and the determinant $\OO_C(\mathfrak e_0)$. Theorem 4.9 fixes only $\bigwedge^2$ of the normalized sheaf and does not give the decomposable surface, which is Theorem 4.12(1), printed p. 31. The restored source-checked event's "Not checked here: the printed pages of Lemma 4.6 ... which the card does not cite" is false of the card, which cites Lemma 4.6 at printed p. 28; its proof was read.
+
+**Rendering on the four cards.** Out of the rendered text went what `QUAL-08` and `SEC-7` keep off a card, namely notes on how a card uses its sources: V.4.12's "The proof rests on the book itself and on Reid's Park City notes, and each is used at a numbered statement"; V.4.15's "What it contributes to this exercise" and its "since the card uses its table and not its list ... they are what the card uses"; V.4.16's "which the card's field $k$ replaces with any algebraically closed field of characteristic not $3$"; and V.5.5's "Their printed pages: Proposition 1.2 at p. 3, ...". What each source proves is still stated in the remarks, and the pages of the statements used stand on the steps and in the audit events.
+
+**Repair.** Per card, the commits of this date that touch it, the transcription first and then the repairs: V.4.12 in `5b24fa522b`, `c2ee19d09b` and `a697a2d9cf`; V.4.15 in `d4d2592c1b` and `38d4d33bee`; V.4.16 in `1fa45f3008` and `1a3e3c52dd`; V.5.5 in `ec0cb972c8` and `e2d674f48d`. This pass's repairs are the four card commits that follow this record's commit chain and this record itself, which changes no card. What still has no published proof is unchanged as an obligation under [#121](https://github.com/dzackgarza/new-qual-site/issues/121): part (c) of V.4.15, proved on the card only given the properness of the bad locus that it asserts and does not derive, and the incidence relations of V.4.16, decided on the card by its own criteria and printed in no cited source.
+
+**Uncertainty.** Read for this record: Hartshorne's Proposition 4.10 with Remark 4.10.1 and the pages around them, printed pp. 403--406, with Lemma 4.12 and Corollary 4.13; Yang Pi-Yeh's Solutions 5.4.12 and 5.4.15, printed pp. 111--112; Nagata's Section 2 with Lemmas 2.1, 2.2, 2.4, 2.5 and 2.8, Proposition 2, Proposition 3, Theorems 2a, 3a and 4a with its table, by folio; Dolgachev's Proposition 8.2.15 with its table and its list and Section 8.2.6; Gathmann's Lemma 11.1 and Corollary 11.2 with their proofs; Dolgachev and Duncan's Theorem 1.1 with Table 1, Section 1.3, Lemmas 5.1 and 5.2 and Section 5.1; and Fuentes--Pedreira's Definition 4.3, Proposition 4.4(3), Lemma 4.6, Theorem 4.9, Corollaries 4.10 and 4.11 and Theorem 4.12 by page. Not read: Nagata's Part I, the pages of Dolgachev and Duncan outside those named, the National Taiwan University set on this pass, and Gathmann's and Dolgachev and Duncan's printed pages off their PDFs, their text versions marking only five- and twenty-page blocks. Not searched: any printed pair-by-pair incidence criterion for the twenty-seven lines, and any proof of the properness of the bad locus in V.4.15(c).
+
+## 2026-11-16: the count in the record above corrected, and what `3634c65e5b` changed
+
+**The count.** The record above says that `3634c65e5b` rewrote "four records" of this date, and, of the same commit, that it "changed four records", while its own enumeration gives more than four: the batch record, its four paragraph items, the record of the batch's commits, the V.4.3 record and the elliptic-ruled-surface record, eight in all, a section record and the dated paragraph items inside it being records one by one. The enumeration stands and both counts are wrong. Of those eight, the batch record, its four items and the commits record are the three this batch repaired, and the V.4.3 record and the elliptic record are the two restored in `3cc64286bb` and `db470b07ac`. Nothing else in that record changes: the `QUAL-07` point it makes is that the commit's message names one record and the commit changed eight, and the `QUAL-11` point is that no record of that round was left as it was written.
