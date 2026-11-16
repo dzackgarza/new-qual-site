@@ -147,34 +147,37 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
-    Transcription pass for issue #121. Read at the cited places: Dongryul
-    Kim, Exercise 3.11.7, PDF p. 213, text version
+    Transcription pass for issue #121, corrected in place later the same
+    day on the reader's report. Read at the cited places: Dongryul Kim,
+    Exercise 3.11.7, PDF p. 213, text version
     tmp/sources/hartshorne-solutions-kim.md, and Yang Pi-Yeh, Solution
-    3.11.7, printed p. 82, text version tmp/sources/lfwin-hartshorne-solutions.md;
-    the latter was read in the PDF at the page named, since it is the page
-    the earlier passes cite. Checked against the book in
+    3.11.7, printed p. 82, text version tmp/sources/lfwin-hartshorne-solutions.md,
+    read in the PDF at that page. Checked against the book in
     tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed p. N
     is PDF p. N+15: III.11.7(a) as printed on p. 281, and Exercise II.9.6
-    which it invokes. What the pass establishes. Kim proves, and Yang
-    repeats, the inverse limit Pic Xhat = lim Pic X_n from Exercise II.9.6,
-    the exact sequence of Exercise III.4.6, the vanishing of its H^2 term
-    on a curve, the surjectivity of Pic Xhat -> Pic Y, and the
-    identification of the successive kernels with H^1(X_n, I^{n-1}); Kim
-    gives them as the first cohomology of a coherent sheaf, Yang as
-    k[x_0,x_1,x_2]/(f^{n-1}) and its projective limit. Neither proves the
-    printed claim that the kernel is a k-vector space: Kim's parenthesis
-    says the kernel "is the inverse limit of k-vector spaces, hence is a
-    k-vector space", which is the assertion under proof and fails when the
-    transitions are not linear, and Yang reads it off a completion. On the
-    card, the steps that transcribe those two are s2, s3, s4, s7 and s8
-    with the source named at each; the dimension count of s4, the
-    identification K_r over K_{r+1} = V_r in s3, the characteristic-zero
-    logarithm of s5, the characteristic-p counterexample of s6 and the
-    passage from one non-generated twist to none in s8 are marked on the
-    card as the card's own, and the 2026-11-16 COMPLAINTS record names the
-    part of the printed statement that has no published proof. Not
-    checked: no source outside the two named was searched in this pass,
-    and no step was re-derived.
+    which it invokes. What the two sources establish. Kim gives the
+    inverse limit Pic Xhat = lim Pic X_n from Exercise II.9.6, the exact
+    sequence of Exercise III.4.6, the vanishing of its H^2 term on a curve,
+    the growth of its H^1 term, and the surjectivity of Pic Xhat -> Pic Y,
+    and he describes the kernel of Pic Y_n -> Pic Y_1 as the first
+    cohomology of a coherent sheaf. Yang writes the same inverse limit and
+    sequence, notes H^2 = 0 because X_n is one-dimensional, and concludes
+    the surjectivity from that alone, without Kim's growth sentence; he
+    also writes H^1(X_n, I^{n-1}) = k[x_0,x_1,x_2]/(f^{n-1}) and the
+    projective limit as the completion, and that equation cannot hold, the
+    left side being a finite-dimensional cohomology group on the curve and
+    the right side infinite-dimensional. Neither proves the printed claim
+    that the kernel is a k-vector space: Kim's parenthesis says the kernel
+    "is the inverse limit of k-vector spaces, hence is a k-vector space",
+    which is the assertion under proof and fails when the transitions are
+    not linear, and Yang reads it off a completion. On the card, the steps
+    that transcribe Kim are s2, s3, s7 and s8 and the one that quotes Yang
+    with his error named is s4; the identification K_r over K_{r+1} = V_r
+    in s3, the dimension count of s4, the characteristic-zero logarithm of
+    s5, the characteristic-p counterexample of s6 and the passage from one
+    non-generated twist to none in s8 are the card's own and say so. Not
+    checked: no source outside the two named was searched in this pass, and
+    no step was re-derived.
 
 ---
 
@@ -341,7 +344,7 @@ As in [[P-AGH3115PICFORMAL|Exercise III.11.5]], Exercise II.9.6 gives
 $$
 \Pic\hat X\cong\varprojlim_r\Pic X_r.
 $$
-Kim, Exercise 3.11.7(a), PDF p. 213, cites Exercise II.9.6 for this inverse limit too, and concludes the surjectivity from the same two facts: "Because $Y$ is 1-dimensional, we have that the $H^2$ term vanishes.  On the other hand, as $n$ gets larger, the term $H^1(Y,\OO_Y(-dn))$ gets larger.  This shows that we can always lift a line bundle over $Y_n$ to a line bundle over $Y_{n+1}$."  Yang Pi-Yeh, Solution 3.11.7(a), printed p. 82, gives the same two sentences and the same conclusion.  The identification $K_r/K_{r+1}\cong V_r$ is the card's, and uses the surjectivity of the transitions: every transition map in this inverse system is surjective by step [](#s2){.pf-ref}. Starting with any class in
+Kim, Exercise 3.11.7(a), PDF p. 213, cites Exercise II.9.6 for this inverse limit too, and concludes the surjectivity from the same two facts: "Because $Y$ is 1-dimensional, we have that the $H^2$ term vanishes.  On the other hand, as $n$ gets larger, the term $H^1(Y,\OO_Y(-dn))$ gets larger.  This shows that we can always lift a line bundle over $Y_n$ to a line bundle over $Y_{n+1}$."  Yang Pi-Yeh, Solution 3.11.7(a), printed p. 82, writes the same inverse limit and the same exact sequence, notes that the $H^2$ term vanishes because $X_n$ is one-dimensional, and draws the surjectivity from that alone: "Hence in limit, we have $\Pic\hat X=\varprojlim\Pic X_n\to\Pic Y$ is surjective."  He has no counterpart of Kim's sentence that the $H^1$ term grows.  The identification $K_r/K_{r+1}\cong V_r$ is the card's, and uses the surjectivity of the transitions: every transition map in this inverse system is surjective by step [](#s2){.pf-ref}. Starting with any class in
 $$
 \Pic X_1=\Pic Y,
 $$
@@ -376,7 +379,13 @@ rd^2+\frac{d(d-3)}2.
 $$
 
 ::: pf-proof
-Kim, Exercise 3.11.7(a), PDF p. 213, states only that "as $n$ gets larger, the term $H^1(Y,\OO_Y(-dn))$ gets larger", and Yang, Solution 3.11.7(a), printed p. 82, identifies the successive kernels as $H^1(X_n,\mci^{n-1})=k[x_0,x_1,x_2]/(f^{n-1})$ and calls their projective limit the completion of $k[x_0,x_1,x_2]$ at $(f)$.  The dimension count below, which makes the growth explicit, is the card's.
+Kim, Exercise 3.11.7(a), PDF p. 213, states only that "as $n$ gets larger, the term $H^1(Y,\OO_Y(-dn))$ gets larger".  The dimension count below, which makes the growth explicit, is the card's.
+
+Yang, Solution 3.11.7(a), printed p. 82, gives that growth in the form of an equation, $H^1(X_n,\mci^{n-1})=k[x_0,x_1,x_2]/(f^{n-1})$, and takes the projective limit to be the completion of $k[x_0,x_1,x_2]$ at $(f)$.  The left side is right and the equation is not: $\mci^{n-1}/\mci^n\cong\OO_Y(-(n-1)d)$, so
+$$
+H^1(X_n,\mci^{n-1})=H^1\bigl(Y,\OO_Y(-(n-1)d)\bigr),
+$$
+which is a cohomology group of a coherent sheaf on the curve $Y$ and is finite-dimensional over $k$, of the dimension computed below with $r=n-1$, while $k[x_0,x_1,x_2]/(f^{n-1})$ has classes in every degree and is infinite-dimensional.  What is infinite-dimensional is the projective limit of the successive kernels, which is the completion he names; the equality with the cohomology of a single $X_n$ is the misprint.
 
 Let $F$ be the homogeneous equation of $Y$.
 Twisting the hypersurface sequence by $-rd$ gives
