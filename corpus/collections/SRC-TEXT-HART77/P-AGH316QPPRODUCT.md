@@ -169,7 +169,28 @@ audit:
     remark's Bertram paragraph, which argued that his Proposition 4.3 covers
     (c) up to irreducibility, is reduced to the erratum on his false display,
     (c) being Harris's. Nothing in the problem statement changes.
-
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repairs on a local reader's report against the sources, five items, and the
+    provenance commentary removed from the rendered card. (1) Step s1 says that
+    answer 3469579 only asserts that the two projections are morphisms, and that
+    the Segre-chart verification is the card's own. (2) Step s2 says the
+    closedness of X_A is the card's conclusion, the answer drawing it without a
+    reason, and gives the reason. (3) The two comments on answer 1527360 are
+    attributed correctly: the closedness question is John Frank's, comment
+    10902713, and the proposal to replace pi_1 by pi_1^{-1} is zyy's, comment
+    10904560; the earlier text ran the two together as one comment. (4) Step s4
+    now says why the projections p_X and p_Y are morphisms: they are the
+    restrictions of the morphisms of step s1 to the locally closed subset
+    X x Y of S, so morphisms by I.3.10, which is P-AGH310SUBVARIETY, restored
+    to the step; Harris asserts their regularity and argues only the pair. (5)
+    The remark is now a bibliographic list with the erratum on Bertram's
+    display, without the text-version paths, the account of which source is
+    used where, and the survey of Borcherds, Troiani and Egbert. Not checked in
+    this pass: the mathematics of steps s1 to s4 as committed earlier, which the
+    reader did not dispute.
 ---
 ::: {.problem}
 Use the Segre embedding to identify $\PP^n \times \PP^m$ with its image, and hence give it the structure of a projective variety.
@@ -188,9 +209,7 @@ $$
 S\subseteq\PP^N,\qquad N=nm+n+m,
 $$
 be the Segre variety of [[P-AGH214SEGRE]], with homogeneous coordinates $z_{ij}=x_iy_j$, and let $\sigma:\PP^n\times\PP^m\to S$ be the Segre map; we identify $\PP^n\times\PP^m$ with $S$ through $\sigma$.
-Harris, *Algebraic Geometry: A First Course* (1992), Example 2.21, printed p. 28, takes that identification as the definition of the product as a variety: "The Segre embedding, however, gives it one, which we will adopt as a definition of the product as a variety."
-
-Each step names its source by author, numbered statement and printed page --- Harris's Example 2.21 on printed pp. 28--29, and the Math Stack Exchange answers 3469579, 1527360 and 5099544, which have no printed page and are cited by answer id --- and the remark at the end of the card quotes each source at the place cited and names its text version.
+Harris, *Algebraic Geometry: A First Course* (1992), Example 2.21, printed p. 28: "The Segre embedding, however, gives it one, which we will adopt as a definition of the product as a variety."
 
 ::: pf
 
@@ -206,8 +225,7 @@ are morphisms.
 
 ::: pf-proof
 
-Answer 3469579: "Let $\pi_1,\pi_2$ be the two projection maps onto the two factors of $\PP^n\times\PP^m$. These maps are morphisms."
-The charts on which that is checked are the following.
+Answer 3469579 states this: "Let $\pi_1,\pi_2$ be the two projection maps onto the two factors of $\PP^n\times\PP^m$. These maps are morphisms." It gives no proof, and the verification on the charts that follows is the card's own.
 
 The opens
 $$
@@ -269,7 +287,7 @@ $$
 X_A=\bigcap_{y\in Y}\pi_1\big((X\times\{y\})\cap A\big),
 $$
 the two sides having the same elements: $x$ lies in the intersection exactly when $(x,y)\in A$ for every $y\in Y$, which is $F_x\subseteq A$.
-For fixed $y$, the set $(X\times\{y\})\cap A$ is closed in $X\times\{y\}$, and $\pi_1$ carries $X\times\{y\}$ homeomorphically onto $X$, so its image is closed in $X$.
+For fixed $y$, the set $(X\times\{y\})\cap A$ is closed in $X\times\{y\}$, and the answer concludes that $X_A$ is closed at this point; that conclusion is the card's, and its reason is that $\pi_1$ carries $X\times\{y\}$ homeomorphically onto $X$, so the image is closed in $X$. A comment on the answer asks for the closedness (John Frank, comment 10902713), and a later one proposes replacing $\pi_1$ by $\pi_1^{-1}$ (zyy, comment 10904560), which is not needed: $\pi_1$ itself is the right map, and the homeomorphism supplies the closedness.
 An intersection of closed sets is closed, so $X_A$ is closed, and in the same way $X_B$ is closed.
 Since $X$ is irreducible and $X=X_A\cup X_B$, one of the two is $X$.
 Then every fibre lies in $A$, or every fibre lies in $B$, so that $X\times Y=A$ or $X\times Y=B$, against the choice of $A$ and $B$.
@@ -315,15 +333,10 @@ $$
 $$
 and so is regular."
 
-The restrictions
-$$
-p_X:X\times Y\to X,
-\qquad
-p_Y:X\times Y\to Y
-$$
-of step [](#s1){.pf-ref} are those projections, and the coordinates in the display are the coordinates $z_{ij}$ of the Segre embedding, so the composite is regular exactly where the source says it is.
+The regularity of $\pi_X$ and $\pi_Y$ is asserted there and not argued: they are the restrictions of the morphisms $\pi_1$ and $\pi_2$ of step [](#s1){.pf-ref} to the locally closed subset $X\times Y\subseteq S$, and restrictions of a morphism to irreducible locally closed subsets of its source and target are morphisms by [[P-AGH310SUBVARIETY]].
+The coordinates in the display are the coordinates $z_{ij}$ of the Segre embedding, so the composite is regular exactly where the source says it is, and uniqueness is its first sentence.
 
-Answer 5099544 reaches the same conclusion through the affine case: "we can use that the product of affine varieties is a product in the category of affine varieties (exercise 3.15(c)) and that any variety is covered by open affine subsets", so that for $Z$ a variety and $\phi:Z\to X$, $\psi:Z\to Y$ morphisms, the map $z\mapsto(\phi(z),\psi(z))$ "is a morphism of varieties because it is a morphism on any open affine subset of $Z$ by exercise 3.15(c). Uniqueness is clear", Exercise I.3.15(c) being [[P-AGH315AFFPRODUCT]].
+Answer 5099544 reaches the same conclusion through the affine case: "we can use that the product of affine varieties is a product in the category of affine varieties (exercise 3.15(c)) and that any variety is covered by open affine subsets", so that the map $z\mapsto(\phi(z),\psi(z))$ "is a morphism of varieties because it is a morphism on any open affine subset of $Z$ by exercise 3.15(c). Uniqueness is clear", Exercise I.3.15(c) being [[P-AGH315AFFPRODUCT]].
 
 This proves (c).
 
@@ -342,23 +355,19 @@ Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove (a), (b) and
 :::
 
 ::: {.remark title="Published solution"}
-The sources, with their text versions under `tmp/sources/`, and the place each is used.
+The Math Stack Exchange answers, which have no printed page and are cited by answer id.
 
-Math Stack Exchange answers, cited by answer id because they have no printed page.
+- Caligula, answer 3469579 to question 3469514, *Product of quasi-projective varieties is quasi-projective*: the two projections of $\PP^n\times\PP^m$ "are morphisms", asserted without proof, and the display showing that the image of $X\times Y$ under the Segre map is an "intersection of a closed set and an open set (recall that the Segre map is a homeomorphism)".
+- Parakee, accepted answer 1527360 to question 1527108, *The product of quasi-projective varieties is a quasi-projective variety*: the irreducibility argument of step [](#s2){.pf-ref}, from the fibres of the first projection.
+- Fnark Man, accepted answer 5099544 to question 5099541, *Product of varieties is categorical product (Hartshorne)*: the affine-chart route to part (c).
 
-- Caligula, answer 3469579 to question 3469514, *Product of quasi-projective varieties is quasi-projective*: the two projections of $\PP^n\times\PP^m$ "are morphisms", and $\sigma(\pi_1^{-1}(X)\cap\pi_2^{-1}(Y))$ is an "intersection of a closed set and an open set (recall that the Segre map is a homeomorphism)", which is steps [](#s1){.pf-ref} and [](#s2){.pf-ref} in their first halves and step [](#s3){.pf-ref} once $X$ and $Y$ are closed. Text version `tmp/sources/mse-3469514-hart-i316-product-quasiprojective.md`.
-- Parakee, accepted answer 1527360 to question 1527108, *The product of quasi-projective varieties is a quasi-projective variety*: the second half of step [](#s2){.pf-ref}. Its argument is that a fibre $\{x_i\}\times Y$ "is isomorphic to $Y$, hence irreducible", that therefore each fibre lies in $A$ or in $B$, and that $X_A=\bigcap_{y_i\in Y}\pi_1((X\times\{y_i\})\cap A)$ is closed; a comment on the answer asks for the closedness, which the homeomorphism $X\times\{y\}\to X$ supplies, and the same comment proposes replacing $\pi_1$ by $\pi_1^{-1}$, which is not needed, $\pi_1$ itself being the right map. Text version `tmp/sources/mse-1527108-hart-i316-product-quasiprojective-irreducible.md`.
-- Fnark Man, accepted answer 5099544 to question 5099541, *Product of varieties is categorical product (Hartshorne)*: the affine-chart route to part (c) in step [](#s4){.pf-ref}. Text version `tmp/sources/mse-5099541-hart-i316c-categorical-product.md`.
+Joe Harris, *Algebraic Geometry: A First Course*, Graduate Texts in Mathematics 133, Springer, 1992, Example 2.21, printed pp. 28--29: the definition of the product as the Segre image, and the categorical product with the regularity computation in the coordinates $[1,\ldots,f_i,\ldots,g_j,\ldots,f_ig_j,\ldots]$.
 
-Joe Harris, *Algebraic Geometry: A First Course*, Graduate Texts in Mathematics 133, Springer, 1992, Example 2.21, printed pp. 28--29: the definition of the product as the Segre image, the categorical product with the regularity computation in the coordinates $[1,\ldots,f_i,\ldots,g_j,\ldots,f_ig_j,\ldots]$, which is the main text of step [](#s4){.pf-ref}. Text version `tmp/sources/harris-1992-algebraic-geometry-first-course-pp17-36.md`.
-
-Aaron Bertram, *Algebraic Geometry* (Math 6130, University of Utah), Section 4, Proposition 4.3 with the paragraphs following it, printed pp. 5--6, text version `tmp/sources/bertram-utah-6130-varieties.md`, is not used above and does not serve: his universality is stated "in the category of prevarieties" and proved for $W\to\PP^m\times\PP^n$, the extension to subvarieties being one sentence, and the display that follows it,
+Aaron Bertram, *Algebraic Geometry* (Math 6130, University of Utah), Section 4, Proposition 4.3 with the paragraphs following it, printed pp. 5--6, states the universality "in the category of prevarieties" and proves it for $W\to\PP^m\times\PP^n$; the extension to subvarieties is one sentence, and the display that follows it,
 $$
 Y\times Z=V(\langle F_i(x_{00},\ldots,x_{m0}),\ G_j(x_{00},\ldots,x_{0n})\rangle),
 $$
-is false as printed, since it holds each $F_i$ in the zeroth column and each $G_j$ in the zeroth row only: for $Y=V(x_1)\subseteq\PP^m$ and $Z=V(y_1)\subseteq\PP^n$ with $m,n\ge1$, both ideals prime, the point $(0:1:0:\cdots:0)\times(0:1:0:\cdots:0)$ has $a_0=b_0=0$, so its zeroth column and zeroth row vanish and it satisfies the display, while it lies outside $Y\times Z$. The true statement holds each $F_i$ under the substitution in every column, and each $G_j$ in every row, since on the image of the Segre map $F_i(a)=0$ is equivalent to $b_j^{d_i}F_i(a)=0$ for each nonzero $b_j$.
-
-Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), text version `tmp/sources/hartshorne-solutions-borcherds.md`, gives no solution to 3.16; William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.16, PDF p. 14, and Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.16, PDF p. 36, prove (a) and (b) only --- Troiani by a bihomogeneous polynomial vanishing at the pair of points, Egbert by $X\times Y=(X\times\PP^m)\cap(\PP^n\times Y)$ --- and neither treats (c).
+is false as printed, since it holds each $F_i$ in the zeroth column and each $G_j$ in the zeroth row only: for $Y=V(x_1)\subseteq\PP^m$ and $Z=V(y_1)\subseteq\PP^n$ with $m,n\ge1$, the point $(0:1:0:\cdots:0)\times(0:1:0:\cdots:0)$ has $a_0=b_0=0$, so its zeroth column and zeroth row vanish and it satisfies the display, while it lies outside $Y\times Z$. The identity that holds puts each $F_i$ under the substitution in every column and each $G_j$ in every row, since on the image of the Segre map $F_i(a)=0$ is equivalent to $b_j^{d_i}F_i(a)=0$ for each nonzero $b_j$.
 :::
 
 ::: {.remark}
