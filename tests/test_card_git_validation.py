@@ -12,6 +12,16 @@ import pytest
 
 ROOT = Path(__file__).resolve().parent.parent
 CARD = (ROOT / "tests/fixtures/kinds/PRB-INDEXP.md").read_text()
+# The fixture card carrying a dated audit event, as every repaired card does.
+RECORDED = CARD.replace(
+    "\nreview: draft\n",
+    "\nreview: draft\n"
+    "audit:\n"
+    "- event: source-checked\n"
+    "  by: claude\n"
+    "  date: 2026-11-11\n"
+    "  note: The statement matches the printed exercise.\n",
+)
 
 
 def git(root: Path, *args: str) -> str:
@@ -73,6 +83,61 @@ def test_staged_header_errors_cannot_be_hidden_by_a_valid_worktree(repo: Path, s
     assert diagnostic in result.stderr
     assert git(repo, "show", ":corpus/one card.md") == source
     assert card.read_text() == CARD
+
+
+def test_a_dated_audit_event_is_append_only(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """QUAL-11, issue #147: a dated event is a record, so a correction is a new event.
+
+    The event is dated 2026-11-11 and the commit 2026-11-16. Rewriting the event leaves
+    the later events referring to text that is no longer there, which is what four rounds
+    of card repairs did on 2026-11-16. An appended event is the sanctioned correction, and
+    an event dated the commit's own day is still in flight.
+    """
+    assert RECORDED != CARD, "the fixture card no longer holds the front matter this test edits"
+    card = repo / "corpus/one card.md"
+    card.write_text(RECORDED)
+    git(repo, "add", "corpus/one card.md")
+    git(repo, "commit", "-qm", "record a dated event")
+    # Git writes this date into the commit the check runs for; pinning it keeps the
+    # boundary between the two days independent of when the suite runs.
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+
+    card.write_text(RECORDED.replace("matches the printed exercise", "matches the printed statement"))
+    git(repo, "add", "corpus/one card.md")
+    refused = check(repo, "check-staged")
+    assert refused.returncode == 1, refused.stdout
+    assert "corpus/one card.md: the source-checked event by claude dated 2026-11-11, whose note begins 'The statement matches the printed exercise.', was changed or deleted" in refused.stderr
+    assert "QUAL-11" in refused.stderr
+
+    head = git(repo, "rev-parse", "HEAD")
+    hook_free = check(repo, "commit", "corpus/one card.md", "repair the note")
+    assert hook_free.returncode == 1, hook_free.stdout
+    assert "QUAL-11" in hook_free.stderr
+    assert git(repo, "rev-parse", "HEAD") == head
+
+    card.write_text(
+        RECORDED.replace(
+            "  note: The statement matches the printed exercise.\n",
+            "  note: The statement matches the printed exercise.\n"
+            "- event: solution-reviewed\n"
+            "  by: claude\n"
+            "  date: 2026-11-16\n"
+            "  note: The solution follows the source's argument.\n",
+        )
+    )
+    git(repo, "add", "corpus/one card.md")
+    accepted = check(repo, "check-staged")
+    assert accepted.returncode == 0, accepted.stderr
+    assert "1 changed file(s) checked" in accepted.stdout
+
+    same_day = RECORDED.replace("date: 2026-11-11", "date: 2026-11-16")
+    card.write_text(same_day)
+    git(repo, "add", "corpus/one card.md")
+    git(repo, "commit", "-qm", "record the day's own event")
+    card.write_text(same_day.replace("matches the printed exercise", "matches the printed statement"))
+    git(repo, "add", "corpus/one card.md")
+    in_flight = check(repo, "check-staged")
+    assert in_flight.returncode == 0, in_flight.stderr
 
 
 def test_staged_validation_ignores_unstaged_edits_and_unrelated_cards(repo: Path) -> None:

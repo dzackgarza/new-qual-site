@@ -1009,4 +1009,7 @@ that the certificates cover part of its statement only.
 Nothing in the tables outside sections 1 and 2 certifies a card: section 6's
 repairs table names certificate files while saying no certificate exists for
 what it lists. A card's audit events (`audit:`) render on its page with their
-dates, at the foot, under `Audit trail`.
+dates, at the foot, under `Audit trail`. An event dated before the commit that
+carries it is a record, not a draft: the local gate refuses a commit that
+changes or deletes one, so a correction is a new event dated the commit's date
+(`QUAL-11`, issue #147). Events dated the commit's own day are still in flight.
