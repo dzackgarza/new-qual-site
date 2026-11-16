@@ -126,6 +126,40 @@ audit:
     whether the eight blowups are minimal. The events of 2026-11-11 and
     2026-11-16 above had been rewritten in place; both are restored to the text
     they were dated with, and this note is their correction.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Re-read for issue #121 against the printed exercise (Hartshorne V.5.8,
+    printed p. 420) and transcribed part (b) from two solution sets that
+    compute the blowups, which the earlier events above did not have. Yang
+    Pi-Yeh, solution 5.5.8(b), printed pp. 114--115 of
+    tmp/sources/lfwin-hartshorne-solutions.pdf, folios confirmed on the PDF's
+    own text layer, read in tmp/sources/lfwin-hartshorne-solutions.md: seven
+    blowups in coordinates with Jacobian checks for the first four, then "And
+    one more blow-up to separate all exceptional curves. Hence this Du Val
+    singularity is of the type E8". NTU, Exercise 8 of §5, items (i)--(viii),
+    PDF p. 21, whose equations were already recorded above. Each part-(b) step
+    now names the charts it uses in those two places. E. Brieskorn, Rationale
+    Singularitäten komplexer Flächen, Invent. Math. 4 (1968), read in
+    tmp/sources/brieskorn-1968-rationale-singularitaeten.md: Satz 2.10 and
+    Satz 2.11, printed pp. 348--349, classify the resolution graphs of the
+    two-dimensional quotient singularities by the platonic triples, and §3.2
+    and Satz 3.3, printed pp. 354--355, identify the ring of invariants of the
+    binary icosahedral group with C{x,y,z}/(x^2+y^3+z^5). The Brieskorn
+    folios were read from rendered page images of the scan, which carries no
+    text layer: PDF p. 15 is printed 349, p. 16 is 350, p. 20 is 354 and p. 21
+    is 355. What the remark was corrected to say: the eight blowups are in
+    Yang and in the NTU set, not only the NTU set, and neither derives the
+    E_8 incidences, which are stated at the end of both entries; Brieskorn
+    determines the graph through the classification and computes no blowup.
+    Not checked: the two passages of Brieskorn's table that would name the
+    (2,3,5) row entry by entry, whose MinerU extraction is garbled and whose
+    page image was not read column by column, so the identification of that
+    row with the eight-curve chain is the classification statement of 2.10 and
+    not a quotation of the table; and whether the eight blowups are minimal,
+    which no event above settled either.
+
 ---
 
 ::: {.problem}
@@ -425,6 +459,16 @@ x_1=y_1=z=0.
 $$
 Away from the exceptional divisor the blowup is an isomorphism, so this
 is the only singular point of the first strict transform.
+
+The three charts are those of Yang Pi-Yeh, *Hartshorne Solutions*, solution
+5.5.8(b), printed p. 114 of that set (read in
+`tmp/sources/lfwin-hartshorne-solutions.md`), who writes
+$1+xy_1^3+x^3z_1^5$, $x_1^2+y+y^3z_1^5$ and $x_1^2+zy_1^3+z^3$ and checks
+the first two by their Jacobians, and those of Algebraic Geometry II,
+National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework,
+Exercise 8 of §5 (solution by Yi-Heng), PDF p. 21 (read in
+`tmp/sources/ntu-ag2-chapter5.md`), whose item (i) reaches
+$x_1^2+zy_1^3+z^3$ in the chart $z_1=1$.
 :::
 
 :::
@@ -480,6 +524,11 @@ is $z_2=0$. Thus the unique remaining singular point is precisely
 $$
 E_1\cap E_2.
 $$
+
+Yang's second blowup, printed p. 114, gives $x_2^2+y_1^2z_2+y_1z_2^3$ in
+the chart $y_2=1$ and $x_2^2+z+y_2^3z^2$ in the chart $z_2=1$; the NTU
+item (ii), PDF p. 21, gives $x_2^2+z_2y_1^2+y_1z^3$ in the chart
+$y_2=1$.
 :::
 
 :::
@@ -542,6 +591,12 @@ $$
 E_1-E_3-E_2,
 $$
 with the two displayed intersection points still singular.
+
+Yang's third blowup, printed pp. 114--115, writes
+$x_3^2+z_2^2z_3+z_2z_3^2$ in the chart $y_3=1$ and
+$z_2^3+y_1y_3^2+y_1z_2$ in the chart $z_3=1$, which are the two germs
+above after renaming; the NTU items (iii), PDF p. 21, are
+$x_3^2+z_3y_1+y_1^2z_3^3$ and $x_3^2+z_2y_3^2+y_3z_2^2$.
 :::
 
 :::
@@ -574,6 +629,10 @@ Thus this blowup replaces the edge $E_1-E_3$ by
 $$
 E_1-E_4-E_3.
 $$
+
+Yang's fourth blowup, printed p. 115, blows up the first germ in its three
+charts and finds each of them nonsingular; the NTU item (iv), PDF p. 21,
+records the strict transform as nonsingular.
 :::
 
 :::
@@ -643,6 +702,12 @@ Thus all three are ordinary double points.
 The point $Z=0$ is where the strict transform of $E_3$ meets $E_5$, the
 point $V=0$ is where the strict transform of $E_2$ meets $E_5$, and the
 third point is a free point of $E_5$.
+
+Yang's fifth blowup, printed p. 115, finds on the exceptional curve the
+points $(0,0,0)$ and $(0,0,-1)$ in the chart $y_5=1$ and the point
+$(0,-1,0)$ in the chart $z_5=1$, and identifies the last two, as above;
+the NTU item (v), PDF p. 21, lists the three singular points of the strict
+transform.
 :::
 
 :::
@@ -682,6 +747,12 @@ meeting $E_5$ once.
 Each ordinary double point is resolved by its single blowup, and the
 three points are distinct. Therefore after these three blowups the strict
 transform is nonsingular.
+
+Yang's sixth blowup and seventh chart, printed p. 115, resolve the point
+in the chart $y_5=1$ and then the second of the remaining two, and his
+entry ends "And one more blow-up to separate all exceptional curves"; the
+NTU items (vi)--(viii), PDF p. 21, are the same three blows, (vii) being
+recorded only as "similar to (vi)".
 :::
 
 :::
@@ -728,6 +799,15 @@ $$
 \end{tikzcd}
 $$
 which is the Dynkin diagram $\mathbf E_8$.
+
+The count of eight and the configuration are what the two solution sets
+state and what neither derives. Yang, printed p. 115, closes "Hence this
+Du Val singularity is of the type E8" after his seventh blowup and one
+further blowup; the NTU set, PDF p. 21, closes "the inverse image of $P$ is
+a union of eight projective lines corresponding to $E_8$" after its items
+(i)--(viii). The edges above are read off the charts transcribed in the
+preceding steps, one blowup at a time: which chart holds which strict
+transform decides which exceptional curve meets which.
 :::
 
 :::
@@ -748,7 +828,13 @@ Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 :::
 
 ::: {.remark title="Published solution"}
-A published computation of the eight blowups of part (b) exists, and it states the E8 configuration at the end without deriving it. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 8 of §5 (solution by Yi-Heng), PDF p. 21, read in `tmp/sources/ntu-ag2-chapter5.pdf` and in its MinerU text version `tmp/sources/ntu-ag2-chapter5.md`, records the successive strict transforms chart by chart: (i) $x^2+y^3+z^5$ becomes $x_1^2+zy_1^3+z^3$ in the chart $z_1=1$; (ii) that becomes $x_2^2+z_2y_1^2+y_1z^3$ in the chart $y_2=1$; (iii) that becomes $x_3^2+z_3y_1+y_1^2z_3^3$ in the chart $y_3=1$ and $x_3^2+z_2y_3^2+y_3z_2^2$ in the chart $z_3=1$; (iv) the first is resolved by one further blowup; (v) the second acquires the three germs $x_4^2+z_4y_3+y_3z_4^2$, $x_4^2+z_2y_4^2+y_4z_2$ and $x_4^2+z_4y_3+y_3z_4^2$ at $z_4=-1$; (vi) and (vii)--(viii) resolve those, and "the inverse image of $P$ is a union of eight projective lines corresponding to $E_8$". The intermediate equations are the card's, and that last sentence is the second request of part (b).
+Two solution sets carry out the blows of part (b) chart by chart, and both state the $E_8$ configuration at the end without deriving it.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.5.8(b), printed pp. 114--115 (`tmp/sources/lfwin-hartshorne-solutions.pdf`, whose folios are its PDF pages; read in `tmp/sources/lfwin-hartshorne-solutions.md`), blows up the origin of $x^2+y^3+z^5$, checks the three charts of the first blowup by their Jacobians, and continues through seven blowups --- writing $x_2^2+y_1^2z_2+y_1z_2^3$ and $x_2^2+z+y_2^3z^2$ for the second, $x_3^2+z_2^2z_3+z_2z_3^2$ and $z_2^3+y_1y_3^2+y_1z_2$ for the third, three charts for the fourth, the two points $(0,0,0)$ and $(0,0,-1)$ together with $(0,-1,0)$ for the fifth, and one chart for each of the sixth and seventh --- and ends "And one more blow-up to separate all exceptional curves. Hence this Du Val singularity is of the type E8."
+
+Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 8 of §5 (solution by Yi-Heng), PDF p. 21, read in `tmp/sources/ntu-ag2-chapter5.pdf` and in its MinerU text version `tmp/sources/ntu-ag2-chapter5.md`, records the successive strict transforms in the same way: (i) $x^2+y^3+z^5$ becomes $x_1^2+zy_1^3+z^3$ in the chart $z_1=1$; (ii) that becomes $x_2^2+z_2y_1^2+y_1z^3$ in the chart $y_2=1$; (iii) that becomes $x_3^2+z_3y_1+y_1^2z_3^3$ in the chart $y_3=1$ and $x_3^2+z_2y_3^2+y_3z_2^2$ in the chart $z_3=1$; (iv) the first of these is resolved by one further blowup; (v) the second acquires the three germs $x_4^2+z_4y_3+y_3z_4^2$, $x_4^2+z_2y_4^2+y_4z_2$ and $x_4^2+z_4y_3+y_3z_4^2$ at $z_4=-1$; (vi) and (vii)--(viii) resolve those, (vii) being written only as "similar to (vi)", and the entry closes "the inverse image of $P$ is a union of eight projective lines corresponding to $E_8$". Its intermediate equations are the ones used in the steps above, and neither set checks the charts of the seventh and eighth blowups.
 
 Miles Reid, *Chapters on Algebraic Surfaces* (arXiv alg-geom/9602006), text version `tmp/sources/reid-chapters-algebraic-surfaces.md`, Chapter 4, §4.2, printed p. 82, carries out the $D_4$ resolution in full, including the divisor computation $2\Gamma_0^2+4=0$ that gives $\Gamma_0^2=-2$, and lists the equations $A_n:x^2+y^2+z^{n+1}$, $D_n:x^2+y^2z+z^{n-1}$, $E_6:x^2+y^3+z^4$, $E_7:x^2+y^3+yz^3$, $E_8:x^2+y^3+z^5$, with "the resolution is a bunch of $-2$-curves whose configuration is given by the corresponding Dynkin diagram"; that is the result of part (b) without the eight blowups.
+
+The configuration itself is a theorem of the classification of quotient singularities in E. Brieskorn, *Rationale Singularitäten komplexer Flächen*, Invent. Math. 4 (1968), pp. 336--358, text version `tmp/sources/brieskorn-1968-rationale-singularitaeten.md`. Satz 2.10, printed pp. 348--349, says that the two-dimensional quotient singularities are exactly the normal surface singularities whose resolution has one of the weighted graphs $\langle n,q\rangle$ or $\langle b;n_1,q_1;n_2,q_2;n_3,q_3\rangle$, the triple $(n_1,n_2,n_3)$ being one of the platonic triples $(2,2,n)$, $(2,3,3)$, $(2,3,4)$, $(2,3,5)$; Satz 2.11, printed pp. 348--349, lists the graph of the minimal resolution for each small subgroup; §3.2, printed p. 354, identifies the ring of invariants of the binary icosahedral group with $\CC\{x,y,z\}/(x^2+y^3+z^5)$, and Satz 3.3, printed pp. 354--355, proves that the only factorial two-dimensional analytic local rings are the regular one and the ring of invariants. The graph of the minimal resolution of this singularity is therefore the $(2,3,5)$ one, which is $\mathbf E_8$; the paper reaches it through that classification, computes none of the eight blowups, and speaks of the analytic local ring, which is the completion of $A$ at the origin.
 :::
