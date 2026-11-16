@@ -197,6 +197,33 @@ audit:
     Reiser's and Hou's IV.2.2 are corrected in the event of this date on
     P-AGH422GENUSTWOMODULI and not here. No step was re-derived and no rendered
     mathematics changes except the three sentences named above.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #121 reader's report on the event of this date above, which is left as written:
+    which commit took part (b) away from the card's own proof. That event says "The
+    2026-09-18 proof of (b) was replaced when the card was transcribed, as the
+    event of this date records, and its replacement is Egbert's chain", and the
+    sentence before it dates what was written earlier today to "199b5eb36b and
+    revised at e4872b53d6". Two commits are compressed into one there, and the
+    first of them did not put Egbert on the card. What each revision carries:
+    199b5eb36b^ holds the card's own proof of 2026-09-18, h^0 <= e+1 by induction
+    on the degree and then a degree-one morphism to PP^1; 199b5eb36b, the round's
+    first commit, replaced it with Hou's part (b) -- dim|D| = n taken from his
+    remark, the fixed points of |D| removed one at a time for d = n, and Exercise
+    IV.1.5 for g(X) = 0, all on printed p. 10 -- and cited Egbert in the
+    published-solution remark only; e4872b53d6 replaced Hou's step with the chain
+    n <= dim|D| <= deg D = d <= n read off Exercise IV.1.5, marked as the card's
+    own; and it is df9cd73f42 that made part (b) the transcription of Egbert's
+    printed p. 220. So the 2026-09-18 proof was displaced at 199b5eb36b and what
+    displaced it there was Hou's part (b), Egbert's chain only replacing Hou's at
+    df9cd73f42. The same clause stands in this date's COMPLAINTS record, which is
+    corrected in a record of this date and not rewritten. Read for this: the card
+    at 199b5eb36b and at e4872b53d6, each read as a revision of this path, and the
+    four commits named. Not read in this pass: Hou's and Egbert's text versions,
+    whose pages are those of the events above, and no rendered text of this card
+    changes.
 ---
 
 ::: {.problem}
