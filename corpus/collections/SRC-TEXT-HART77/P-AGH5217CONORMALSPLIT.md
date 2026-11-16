@@ -160,6 +160,58 @@ audit:
     a COMPLAINTS record of this date names that. Not checked: no source beyond
     the three named and the book was read in this pass, and no machine
     computation was run.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A reader's report on the transcription, and three repairs. (i) The
+    characteristic-3 sentence of step s5 was wrong and is gone. It read the
+    matrix mod 3 as [[0,-t^-4],[-t^-6,t^-5]] where the reduction of
+    [[-3t^-5,-2t^-4],[2t^-6,t^-5]] mod 3 is [[0,t^-4],[-t^-6,t^-5]], since
+    -2 = 1 there, and it then had "t times the second row added to the first"
+    giving (-1,0), which that operation does not give: it gives
+    (-t^-5, 2t^-4). The step now records the reduction as the identity
+    M = t^-5 A B over Z[t,t^-1] with A = [[1,-2t],[0,1]] and
+    B = [[1,0],[2t^-1,1]], both of determinant one, A over k[t] and B over
+    k[t^-1], which is characteristic-free and needs no case check; the two
+    elementary operations written above it are that identity's factors, and
+    the characteristic-2 observation, that the matrix is then already t^-5
+    times the identity, stands. (ii) Part (a) was called published without
+    restriction in the solution's preamble and in the remark, and no cited
+    source covers it in characteristic 3: Shifrin's answer ends at the diagonal
+    (-3t^-5,-(1/3)t^-5), whose constants need 3 invertible, Eisenbud and Van de
+    Ven's introduction assumes a field of characteristic 0, and Yang's
+    presentation gives the twisted cubic's conormal only away from
+    characteristic 2, as the remark itself states. The preamble and the remark
+    now restrict each attribution: Shifrin in a form whose constants need 3
+    invertible, Yang for (a) away from characteristic 2 and for (b) away from
+    characteristics 2 and 3, Eisenbud and Van de Ven in characteristic 0. Part
+    (a) in characteristic 3 is therefore without a published proof, and a
+    COMPLAINTS record of this date for this batch names it; on the card it is
+    step s3's class eta, which is nonzero over every field, with steps s2 and
+    s4, and those steps are marked as this card's. (iii) Out of the remark went
+    the sentences that stated publication status and the card's own share of
+    the argument --- that part (b) is "without a published argument" in
+    characteristics 2 and 3, and that the reduction of Shifrin's matrix is "the
+    card's own, as is its check in characteristics 2 and 3" --- since a mark of
+    a step as the card's own belongs on the step, where steps s2, s3, s4 and s5
+    carry it, and not on the rendered page; and out of the preamble and the
+    remark went the tmp/sources paths, which are this VM's bookkeeping. What
+    was read for this pass, and where: Shifrin's answer 1583486 to question
+    1583326 in
+    tmp/sources/mse-1583326-hart77-v217-twisted-cubic-normal-bundle.md;
+    Yang Pi-Yeh's Solution 5.2.17 in tmp/sources/lfwin-hartshorne-solutions.md,
+    printed pp. 106--107; Eisenbud and Van de Ven in
+    tmp/sources/eisenbud-van-de-ven-1981-normal-bundles-rational-space-curves.md
+    beside its PDF, whose introduction, printed p. 453, states the
+    characteristic-0 hypothesis and whose Proposition 6 is on the folio
+    numbered 458 with its proofs on pp. 458--460; and the book in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, V.2.17 on printed
+    pp. 385--386 with its answer on p. 386. Not checked: no search was made for
+    a published computation of the conormal sheaf of the twisted cubic in
+    characteristic 3 beyond the three sources above, and no machine computation
+    was run; the card's proof of part (a) in characteristic 3 is unchanged and
+    remains its own.
 
 ---
 
@@ -177,7 +229,7 @@ audit:
 :::
 
 ::: {.solution}
-Every step below names the source, numbered statement and printed page it transcribes: Ted Shifrin, Math StackExchange answer 1583486 to question 1583326, *Normal bundle of twisted cubic*, text version `tmp/sources/mse-1583326-hart77-v217-twisted-cubic-normal-bundle.md`, for (a) by transition functions; Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, Solution 5.2.17, printed pp. 106--107, for both parts by the Jacobian presentation, which settles (b) in every characteristic other than $2$ and $3$; and D. Eisenbud and A. Van de Ven, *On the Normal Bundles of Smooth Rational Space Curves*, Math. Ann. 256 (1981), 453--463, text version `tmp/sources/eisenbud-van-de-ven-1981-normal-bundles-rational-space-curves.md`, Proposition 6, printed p. 458 with its proofs on pp. 458--460, for the normal bundle of a smooth rational curve of degree $n\ge3$ lying on a smooth quadric, over a field of characteristic $0$ as the paper assumes. A step no source carries is marked as this card's.
+A step that transcribes a published argument names the source, numbered statement and printed page it comes from; a step no source carries is marked as this card's. Ted Shifrin, Math StackExchange answer 1583486 to question 1583326, *Normal bundle of twisted cubic*, for (a) by transition functions, in a form whose constants need $3$ invertible; Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.2.17, printed pp. 106--107, for both parts by the Jacobian presentation, which settles (a) in every characteristic other than $2$ and (b) in every characteristic other than $2$ and $3$; and D. Eisenbud and A. Van de Ven, *On the Normal Bundles of Smooth Rational Space Curves*, Math. Ann. 256 (1981), 453--463, Proposition 6, printed p. 458 with its proofs on pp. 458--460, for the normal bundle of a smooth rational curve of degree $n\ge3$ lying on a smooth quadric, over a field of characteristic $0$ as the paper assumes.
 
 For $n\ge2$, consider the parametrized rational curve
 $$
@@ -612,14 +664,19 @@ t^{-5}
 0 & 1
 \end{pmatrix}.
 $$
-So the conormal sheaf is $\OO(-5)\oplus\OO(-5)$ and $l=m=-5$. The frames and
-the matrix are characteristic-free, and the two operations above are valid in
-every characteristic: in characteristic $2$ the matrix is already $t^{-5}$
-times the identity, and in characteristic $3$ it is
-$\begin{pmatrix}0&-t^{-4}\\-t^{-6}&t^{-5}\end{pmatrix}$, which the same two
-kinds of operation reduce, $t$ times the second row added to the first giving
-$(-1,0)$ in the first row and $-t^{-1}$ times the second column added to the
-first clearing the lower left entry.
+So the conormal sheaf is $\OO(-5)\oplus\OO(-5)$ and $l=m=-5$.
+
+The frames and the matrix are characteristic-free, and so is the reduction: with
+$$
+A=\begin{pmatrix}1&-2t\\0&1\end{pmatrix},
+\qquad
+B=\begin{pmatrix}1&0\\2t^{-1}&1\end{pmatrix},
+$$
+the identity
+$$
+M=t^{-5}AB
+$$
+holds over $\ZZ[t,t^{-1}]$, so it holds over every field; the two factors have determinant one, $A$ is a matrix over $k[t]$ and $B$ one over $k[t^{-1}]$, and no coefficient is inverted in forming them. In characteristic $2$ the matrix is already $t^{-5}$ times the identity, and in characteristic $3$ the same identity gives $M=t^{-5}AB$ there, the entry $-3t^{-5}$ of $M$ vanishing and the entry $-2t^{-4}$ becoming $t^{-4}$.
 
 :::
 
@@ -674,10 +731,10 @@ Step [](#s5){.pf-ref} proves part (a), and step [](#s6){.pf-ref} proves part (b)
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.17, PDF p. 273: the starred exercise is entered and the entry reads only "starred", so there is no argument to check. Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.17, printed pp. 106--107, computes the conormal sheaf as the kernel of the map of graded modules given by the Jacobian of the parametrization: for the twisted cubic the presentation $R(-4)^{\oplus3}\to R(-2)^{\oplus4}$ has kernel $R(-5)^{\oplus2}$, so $\varphi^*(\mathcal I/\mathcal I^2)=\OO(-5)^{\oplus2}$; for the quartic the kernel is $R(-7)^{\oplus2}$ when $6\ne0$, and it writes "if $\operatorname{char}(k)=2,3$, $F(\varphi)$ is given by $(t^3,u^3,0)$, so $\ker F(\varphi)=R(-8)\oplus R(-6)$". That is a sound argument for every characteristic other than $2$ and $3$. The extra characteristic is wrong: in step [](#s3){.pf-ref} the extension class is $(n-1)\eta=2\eta$ for $n=3$, which vanishes exactly when $2=0$, and the printed answer for part (b) accordingly says $\operatorname{char}k=2$ and not $2$ or $3$; in characteristic $3$ the binomial coefficient $3$ vanishes in $(a^3+h)^3$, but the class $2\eta$ does not, so the splitting type is $\OO(-7)^{\oplus2}$ there as well. Nor does his characteristic-$2$ line stand: his presentation is not the conormal's in characteristic $2$, where his matrix for the twisted cubic becomes $(t^2,u^2,0)$ with kernel $R(-6)\oplus R(-4)$ instead of the printed $\OO(-5)^{\oplus2}$, so the method fails at a case whose answer is known. Characteristics $2$ and $3$ are therefore without a published argument on part (b).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.17, PDF p. 273: the starred exercise is entered and the entry reads only "starred", so there is no argument to check. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.17, printed pp. 106--107, computes the conormal sheaf as the kernel of the map of graded modules given by the Jacobian of the parametrization: for the twisted cubic the presentation $R(-4)^{\oplus3}\to R(-2)^{\oplus4}$ has kernel $R(-5)^{\oplus2}$, so $\varphi^*(\mathcal I/\mathcal I^2)=\OO(-5)^{\oplus2}$; for the quartic the kernel is $R(-7)^{\oplus2}$ when $6\ne0$, and it writes "if $\operatorname{char}(k)=2,3$, $F(\varphi)$ is given by $(t^3,u^3,0)$, so $\ker F(\varphi)=R(-8)\oplus R(-6)$". That is a sound argument for part (b) in every characteristic other than $2$ and $3$. The extra characteristic is wrong: in step [](#s3){.pf-ref} the extension class is $(n-1)\eta=2\eta$ for $n=3$, which vanishes exactly when $2=0$, and the printed answer for part (b) accordingly says $\operatorname{char}k=2$ and not $2$ or $3$; in characteristic $3$ the binomial coefficient $3$ vanishes in $(a^3+h)^3$, but the class $2\eta$ does not, so the splitting type is $\OO(-7)^{\oplus2}$ there as well. Nor does his characteristic-$2$ line stand: his presentation is not the conormal's in characteristic $2$, where his matrix for the twisted cubic becomes $(t^2,u^2,0)$ with kernel $R(-6)\oplus R(-4)$ instead of the printed $\OO(-5)^{\oplus2}$, so the method fails at a case whose answer is known.
 
 The card's computation is checked against the book's own bracket: $E_n=\varphi_n^*(\mathcal I/\mathcal I^2)$ sits in $0\to\OO(-2n-2)\to E_n\to\OO(-2n)\to0$ with class $(n-1)\eta$, which is nonzero for $n=2$ and gives $l=m=-5$ for the twisted cubic, and for $n=3$ gives $l=m=-7$ when $\operatorname{char}k\ne2$ and $\OO(-6)\oplus\OO(-8)$ when $\operatorname{char}k=2$, exactly the answer printed for part (b).
 
-Math StackExchange answer 1583486 by Ted Shifrin, to question 1583326 ("Normal bundle of twisted cubic"), saved as `tmp/sources/mse-1583326-hart77-v217-twisted-cubic-normal-bundle.md`, gives a published proof of part (a) by another route: from the conormal sequence $0\to N^\vee_{C/\PP^3}\to\Omega_{\PP^3}\restrictionof_C\to\Omega_C\to0$ it writes the two frames of $N^\vee_{C/\PP^3}$ on the overlap of the charts $[1,x,y,z]$ and $[X,Y,Z,1]$ and reads the splitting off the transition matrix, ending at the diagonal $(-3t^{-5},-\frac13t^{-5})$, a form whose constants need $3$ invertible. Step [](#s5){.pf-ref} carries his frames, the change of coordinates $X=1/z$, $Y=x/z$, $Z=y/z$ and the transition matrix, and adds one row operation over $k[t]$ and one column operation over $k[t^{-1}]$ that reduce it to exactly $t^{-5}$ times the identity; that reduction is the card's own, as is its check in characteristics $2$ and $3$. Georges Elencwajg's answer 569653 to question 569237, saved as `tmp/sources/mse-569237-hart77-v217-twisted-cubic-normal-bundle-2.md`, records the equivalent statement for the normal bundle, $N=\OO(5)\oplus\OO(5)$, as Proposition 6 of Eisenbud and Van de Ven, *On the normal bundles of smooth rational space curves*. Neither covers part (b).
+Math StackExchange answer 1583486 by Ted Shifrin, to question 1583326 ("Normal bundle of twisted cubic"), gives an argument for part (a) by another route, in a form whose constants need $3$ invertible: from the conormal sequence $0\to N^\vee_{C/\PP^3}\to\Omega_{\PP^3}\restrictionof_C\to\Omega_C\to0$ it writes the two frames of $N^\vee_{C/\PP^3}$ on the overlap of the charts $[1,x,y,z]$ and $[X,Y,Z,1]$ and reads the splitting off the transition matrix, ending at the diagonal $(-3t^{-5},-\frac13t^{-5})$. Step [](#s5){.pf-ref} carries his frames, the change of coordinates $X=1/z$, $Y=x/z$, $Z=y/z$ and the transition matrix, and adds one row operation over $k[t]$ and one column operation over $k[t^{-1}]$ that reduce it to exactly $t^{-5}$ times the identity, an identity over $\ZZ[t,t^{-1}]$ and so one that holds over every field. Georges Elencwajg's answer 569653 to question 569237 records the equivalent statement for the normal bundle, $N=\OO(5)\oplus\OO(5)$, as Proposition 6 of Eisenbud and Van de Ven, *On the normal bundles of smooth rational space curves*. Neither covers part (b).
 
 :::
