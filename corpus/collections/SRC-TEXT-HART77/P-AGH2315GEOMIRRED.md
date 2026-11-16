@@ -25,7 +25,7 @@ audit:
   date: 2026-11-11
   note: >-
     Read the Stacks Project Lemma 33.8.9 (tag 038I) and Lemma 33.6.4 (tag
-    035X) in full: the first lists geometric irreducibility, irreducibility
+    035U) in full: the first lists geometric irreducibility, irreducibility
     after every finite separable extension, and irreducibility of X over a
     separable algebraic closure as equivalent; the second lists geometric
     reducedness, reducedness after every field extension, after every finite
@@ -59,7 +59,7 @@ audit:
     step purely-inseparable-reducedness-tests is Algebra Lemma 10.44.4
     (tag 030V, printed pp. 537--538). Pages are those of the retained
     compiled book tmp/sources/stacks-project-book.pdf, whose PDF page is its
-    printed page; each page was read in that PDF.
+    printed page; each page was read in that PDF. Read against the book:
     Hartshorne II Ex. 3.15 on printed p. 93 asks exactly the three closures
     and the perfect closure that 038I and 035X list, and its X is of finite
     type over k, which no step uses beyond the definitions. Not checked:
@@ -217,6 +217,27 @@ audit:
     event's corrected attribution is untouched: the II.3.15 COMPLAINTS.md edits
     entered through 89d13d01e14. Nothing in the problem, the solution or the
     pages changes, and no page was re-read.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121 on in-place edits to dated events; two
+    records are restored to the text they were committed with, and nothing in
+    the problem, the solution or the pages changes. No page was re-read.
+    (1) Commit a54c0ddf5b (committer date 2026-11-15 19:08:16) changed the
+    2026-11-11 source-checked note's "tag 035U" to "tag 035X", a record dated
+    four days before that commit. The note is restored and reads 035U as its
+    session wrote it, which is Section 33.6 rather than its Lemma 33.6.4; the
+    tag correction it carried is the 2026-11-15 source-corrected event that
+    follows it, and the body and the published-solution remark cite 035X
+    throughout.
+    (2) Commit 4ace5f19b8 (committer date 2026-11-16 07:30:21) deleted the
+    words "Read against the book:" from the 2026-11-16 solution-written note.
+    That note and that commit carry the same day, and the note is restored
+    all the same: a record keeps the text of its day, and the words carried
+    no claim beyond introducing the comparison with Hartshorne that the
+    sentence still makes. They were also quoted, with the deletion, in the
+    event recording the fifth pass, which stands as written.
 
 ---
 
