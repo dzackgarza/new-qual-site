@@ -63,23 +63,54 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
-    The exercise itself now has published proofs, not only its commutative
+    The exercise itself now has published treatments, not only its commutative
     algebra input. Printed exercise read: Hartshorne, Algebraic Geometry (1977),
     I.3.20, printed p. 23 (PDF p. 38 of the extraction). Read hwong557's accepted
     answer 1791316 to Mathematics Stack Exchange question 1791250
     (tmp/sources/mse-1791250-regular-functions-extension-normal-points.md) and
     Hetong Xu's answer 3771982 to question 846109
     (tmp/sources/mse-846109-hartshorne-problem-i-3-20.md); both reduce to
-    O_{P,Y} = intersection of the height-one localizations, then prove the given
-    rational function g/h lies in each by producing a closed point Q != P of
-    Z(q) from dim >= 2 and the regularity of f at Q. Checked that this is step
-    s2 with q running over ht-one primes of O_{P,Y}, that the intersection
-    theorem they cite (Matsumura 11.5 in 846109) is the one step s3 applies, and
-    that neither answer proves (b), whose punctured line stays the card's. Vakil
-    13.5.19 with its proof at 13.5.21-13.5.25 stays cited for the theorem
-    itself, since Matsumura is not on this machine. Not checked: the remaining
-    part of Hetong Xu's answer after the height-one reduction, and any other
-    answer on those two questions.
+    O_{P,Y} = intersection of the height-one localizations, then look for a
+    closed point Q != P of Z(q) from dim >= 2, where f is regular. Checked that
+    the intersection theorem they cite (Matsumura 11.5 in 846109) is the one
+    step s3 applies, and that neither answer proves (b), whose punctured line
+    stays the card's. Vakil 13.5.19 with its proof at 13.5.21-13.5.25 stays
+    cited for the theorem itself, since Matsumura is not on this machine.
+    Corrected the same day, below: this note first recorded hwong557's answer as
+    step s2, which is false at its decisive inference, and said that nothing of
+    Hetong Xu's answer beyond the height-one reduction was checked, which
+    contradicted the card's use of that answer; the event of 2026-11-16 that
+    follows gives the counterexample and the reading of Xu's answer.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The local reader's report on this card, checked against both text versions
+    and the step it accuses. (1) hwong557's answer fixes one representation
+    f = g/h and infers from the regularity of f at the point Q it finds that
+    h does not vanish there. That is false: regularity at Q gives some
+    representation with denominator nonzero at Q and says nothing about the
+    fixed h. On Y = A^2 with P = (0,0) the function 1 on Y \ {P} is represented
+    by x/x, and for q = (x), Q = (0,1) is in V(x), f is regular at Q and h = x
+    vanishes there. The reply appended to that answer repeats the inference,
+    "g/h lies in A(Y)_{m_Q}. So h notin m_Q". So the card's "That is step s2"
+    was withdrawn, in the remark and in the event above, and step s2's own
+    route (choose the representation after the prime) is now stated against
+    it. (2) Hetong Xu's answer is the one that chooses g/h at the point, and it
+    is now read in full, not only to its height-one reduction; its two slips
+    are named on the card. (3) Step s5 now states that k[x]_{(x)} is a
+    discrete valuation ring, hence integrally closed, so that 0 is a normal
+    point of A^1 and (b) is a counterexample to the hypothesis as well as to
+    the conclusion. (4) Text versions named where they were missing: Vakil
+    13.5.19 in step s3. The reader's item on the remark's Vakil citation was
+    checked and is false of this file, which has named the 2025 text version
+    there since it was written; but the page range printed pp. 267--268 belongs
+    to the 2011 draft, whose file is tmp/sources/vakil-rising-sea-216blog-p267-268.md
+    (text version of tmp/sources/vakil-rising-sea-216blog-p267-268.pdf), and
+    the notes of 2026-11-11 and 2026-11-15 that quote those pages name no file
+    at all; recorded here rather than inserted into a dated note. Matsumura is
+    still not on this machine and Theorem 11.5 is quoted as the card has always
+    carried it.
 
 ---
 
@@ -179,7 +210,7 @@ For a Noetherian normal domain, the height-one intersection theorem states that,
 $$
 R=\bigcap_{\operatorname{ht}\mathfrak q=1}R_{\mathfrak q}.
 $$
-This is proved in full as the Algebraic Hartogs' Lemma of R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §13.5.19], printed p. 383, with the proof in 13.5.21--13.5.25 on printed pp. 383--385: the ideal of denominators $I=\theset{a\in R \st ar\in R}$, the module $M_{a/b}\subseteq R/(b)$, the lemma that $r\in R$ exactly when $r\in R_{\mathfrak p}$ for the associated primes of $R/(g)$, and then that those primes have height one because a Noetherian integrally closed domain is regular in codimension one. The same statement is Matsumura, *Commutative Ring Theory*, Theorem 11.5. Step [](#s2){.pf-ref} places $f$ in every ring in this intersection, so $f\in R$.
+This is proved in full as the Algebraic Hartogs' Lemma of R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §13.5.19], printed p. 383, text version `tmp/sources/vakil-rising-sea-2025-10-21.md`, with the proof in 13.5.21--13.5.25 on printed pp. 383--385: the ideal of denominators $I=\theset{a\in R \st ar\in R}$, the module $M_{a/b}\subseteq R/(b)$, the lemma that $r\in R$ exactly when $r\in R_{\mathfrak p}$ for the associated primes of $R/(g)$, and then that those primes have height one because a Noetherian integrally closed domain is regular in codimension one. The same statement is Matsumura, *Commutative Ring Theory*, Theorem 11.5. Step [](#s2){.pf-ref} places $f$ in every ring in this intersection, so $f\in R$.
 
 :::
 
@@ -217,9 +248,10 @@ Take
 $$
 Y=\AA^1,
 \qquad
-P=0,
+P=0.
 $$
-and on $Y\setminus\{0\}=D(x)$ take
+The point $P$ is normal: the local ring $\mco_{0,\AA^1}=k[x]_{(x)}$ is a discrete valuation ring, hence integrally closed, and $\dim Y=1<2$.
+On $Y\setminus\{0\}=D(x)$ take
 $$
 f=\frac1x.
 $$
@@ -256,7 +288,9 @@ The height-one intersection theorem that step [](#s3){.pf-ref} applies is proved
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), text version `tmp/sources/hartshorne-solutions-borcherds.md`, gives no solution to 3.20.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), text version `tmp/sources/hartshorne-solutions-troiani.md`, gives no solution to 3.20.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.20, PDF p. 38, text version `tmp/sources/hartshorne-solutions-egbert.md`, writes "Since projective space is proper this works" for (a) and "Consider a single variable complex function with a pole" for (b); neither is an argument for the statement.
-No Hartshorne solution set contains a proof of this exercise, and Vakil's book proves the algebra lemma rather than the exercise; the published proofs of the exercise itself are the two answers below. The proof above reduces to the local ring $\mco_{P,Y}$, shows the rational function lies in every height-one localization by finding a closed point of $V(\mathfrak p)$ other than $P$, and cites the lemma for the intersection; the punctured line $1/x\in\mco(\AA^1\setminus\theset{0})\setminus\mco_0$ is (b), and it is in neither answer.
+No Hartshorne solution set contains a proof of this exercise, and Vakil's book proves the algebra lemma rather than the exercise; the two answers below are the only treatments of the exercise itself located, and the first of them fails at the decisive step. The proof above reduces to the local ring $\mco_{P,Y}$, shows the rational function lies in every height-one localization by finding a closed point of $V(\mathfrak p)$ other than $P$, and cites the lemma for the intersection; the punctured line $1/x\in\mco(\AA^1\setminus\theset{0})\setminus\mco_0$ is (b), and it is in neither answer.
 
-The first answer is the accepted answer of hwong557, answer 1791316 to question 1791250, *Regular functions extension to normal points of varieties*, text version `tmp/sources/mse-1791250-regular-functions-extension-normal-points.md`, states the height-one intersection for $A(Y)_{\mathfrak m_P}$ and continues: "Our given $f$ is a rational function so must be of the form $g/h$, where $g$ and $h$ lie in $A(Y)$ and $h\ne0$. It remains to show that $h$ is not in any height $1$ prime $\mathfrak q\subset\mathfrak m_P$, because then $f$ will lie in $A(Y)_{\mathfrak m_P}$ so $f$ will be regular at $P$. If $h$ were in such a prime $\mathfrak q$, then $h$ would vanish on $Z(\mathfrak q)$. We can find a point $Q\ne P$ in $Z(\mathfrak q)$ because $\dim Y\ge2$ (basically $\mathfrak q\subsetneq\mathfrak m_P$ by Hartshorne Thm 3.2c). But $f$ is regular at $Q$ so $h$ cannot vanish at $Q$. So $h\notin\mathfrak q$, as desired." That is step [](#s2){.pf-ref}, with $\mathfrak q$ ranging over the height-one primes of $\mco_{P,Y}$ and $Q$ the closed point it finds. The answer of Hetong Xu, answer 3771982 to question 846109, *Hartshorne Problem I.3.20*, text version `tmp/sources/mse-846109-hartshorne-problem-i-3-20.md`, gives the same reduction to $A(Y)$ and to the height-one primes $\mathfrak q\subset\mathfrak m_P$ with the steps written out, and takes the intersection theorem itself from Matsumura, *Commutative Ring Theory*, Theorem 11.5, "Let $R$ be a normal Noetherian domain. Then $R=\bigcap_{\operatorname{ht}\mathfrak p=1}R_\mathfrak p$" --- the numbering the card has always carried. Part (b) is in neither answer: the punctured line of step [](#s5){.pf-ref} is the card's.
+The first answer is the accepted answer of hwong557, answer 1791316 to question 1791250, *Regular functions extension to normal points of varieties*, text version `tmp/sources/mse-1791250-regular-functions-extension-normal-points.md`. It states the height-one intersection for $A(Y)_{\mathfrak m_P}$ and continues: "Our given $f$ is a rational function so must be of the form $g/h$, where $g$ and $h$ lie in $A(Y)$ and $h\ne0$. It remains to show that $h$ is not in any height $1$ prime $\mathfrak q\subset\mathfrak m_P$, because then $f$ will lie in $A(Y)_{\mathfrak m_P}$ so $f$ will be regular at $P$. If $h$ were in such a prime $\mathfrak q$, then $h$ would vanish on $Z(\mathfrak q)$. We can find a point $Q\ne P$ in $Z(\mathfrak q)$ because $\dim Y\ge2$ (basically $\mathfrak q\subsetneq\mathfrak m_P$ by Hartshorne Thm 3.2c). But $f$ is regular at $Q$ so $h$ cannot vanish at $Q$. So $h\notin\mathfrak q$, as desired." **That last inference is false, and the paragraph is therefore not step [](#s2){.pf-ref}.** It fixes one representation $f=g/h$ once for all points and then concludes from regularity of $f$ at $Q$ that this fixed $h$ does not vanish at $Q$; regularity at $Q$ gives *some* representation $f=a/b$ with $b(Q)\ne0$ and says nothing about $h$. On $Y=\AA^2$ with $P=(0,0)$, the function $f\equiv1$ on $Y\sm\{P\}$ is represented by $x/x$, and for the height-one prime $(x)$, with $Q=(0,1)\in V(x)$, the function $f$ is regular at $Q$ while $h=x$ vanishes there. The reply appended to the answer makes the same inference in one line, "Since $f$ is regular at $Q$, $f\in\mco_Q$. This means $g/h$ lies in $A(Y)_{\mathfrak m_Q}$. So $h\notin\mathfrak m_Q$": membership of the fraction $g/h$ in a localization says that some denominator $s\notin\mathfrak m_Q$ clears it and nothing about $h$ itself. Step [](#s2){.pf-ref} avoids the inference by choosing the representation *after* the prime: it finds $Q$ first, represents $f$ at $Q$, and reads $b\notin I(Q)$ off $b(Q)\ne0$, hence $b\notin\mathfrak p$, since $\mathfrak p\subseteq I(Q)$.
+
+The answer of Hetong Xu, answer 3771982 to question 846109, *Hartshorne Problem I.3.20*, text version `tmp/sources/mse-846109-hartshorne-problem-i-3-20.md`, does choose the representation at the point, and with its slips repaired it is the argument of step [](#s2){.pf-ref}: for a height-one prime $\mathfrak q\subset\mathfrak m_P$ it takes $Q\ne P$ in $V_\mathfrak q$, takes a neighbourhood of $Q$ on which $f=g/h$, and concludes $h\notin\mathfrak q$ from $h(Q)\ne0$, which is correct because $\mathfrak q\subseteq I(Q)$ while $h\notin I(Q)$. Its slips are these: the neighbourhood on which $f=g/h$ is an open set of $Y$ and not, as written, a subset of $V_\mathfrak q$; $g$ and $h$ are sections of $\mco_Y$ on an affine open containing $Q$, not global sections; and the sentence "otherwise $h(Q)=0$ for all $Q\in V_\mathfrak q$" states the contrapositive for every $Q$ where the chosen one would do. Its reduction to the affine case, and its derivation of $\mathfrak q\subsetneq\mathfrak m_P$ from $\dim Y\ge2$ through Hartshorne's Theorem I.3.2 and the height of $\mathfrak m_P$, are steps [](#s1){.pf-ref} and [](#s2){.pf-ref}. It takes the intersection theorem itself from Matsumura, *Commutative Ring Theory*, Theorem 11.5, "Let $R$ be a normal Noetherian domain. Then $R=\bigcap_{\operatorname{ht}\mathfrak p=1}R_\mathfrak p$" --- the numbering the card has always carried. Part (b) is in neither answer: the punctured line of step [](#s5){.pf-ref} is the card's.
 :::
