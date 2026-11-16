@@ -242,6 +242,38 @@ audit:
     tmp/sources/dolgachev-duncan-2017-automorphisms-cubic-surfaces-char-p.md,
     whose first marker is the block of PDF pages 1--20, so those pages are not
     re-read off the folios either. Nothing else on the card changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A reader's report of this day on the count of five, repaired here. The step
+    two-skew-lines-meet-five stated the count as Gathmann's and said that his
+    proof is the sentence "The proof of part (b) is analogous" and that no check
+    was carried out on the card, so the count stood on no argument of the card's
+    own. It is now derived there from the pair-by-pair criteria of the four steps
+    above it and marked as the card's own, and the step sits after
+    incidence-count-ten-sixteen so that every step it cites comes before it. The
+    derivation runs the two positions a skew pair can occupy: in one family, where
+    the two lines of that family meeting both give 2 and exactly one of the
+    conditions a-b = c-d and a+b = c+d holds, giving 3 more; and in two families,
+    where the transposition of x_1 and x_2 preserves S and carries A to B, so that
+    A_ab, B_cd with a+d not b+c is the general case, and it is met by 2 A-lines, 2
+    B-lines and 1 C-line. Gathmann's Corollary 11.2(b), printed p. 91, states the
+    count and nothing more; the qed and the remark now say that the derivation is
+    the card's. The count was also confirmed exhaustively: over GF(7), where 2 is a
+    primitive cube root of unity and 3 is invertible, the 27 lines of the three
+    families are distinct, each meets exactly 10 of the others, every pair of the
+    four criteria of the card holds for all 27 x 27 pairs, and every one of the
+    216 skew pairs, 54 within one family and 162 across two, has exactly 5 common
+    transversals. Read for this pass: Gathmann's Lemma 11.1 and Corollary 11.2
+    with their proofs, printed pp. 90--91, in
+    tmp/sources/gathmann-2014-alggeom-ch11-27-lines.md, whose first marker is the
+    block of PDF pages 1--5, so those two printed pages were not re-read off the
+    folios of tmp/sources/gathmann-2014-alggeom-ch11-27-lines.pdf here. Not read
+    here: the National Taiwan University set, untouched by this repair, and
+    Dolgachev--Duncan, whose events above stand. Nothing was searched for a
+    published pair-by-pair incidence criterion, and none was found in the sources
+    listed, so the criteria and the count stay the card's own.
 ---
 
 ::: {.problem}
@@ -309,15 +341,6 @@ x_0+x_2\omega^j=x_3+x_1\omega^j=0\quad (0\le j\le2),\qquad
 x_0+x_1\omega^j=x_3+x_2\omega^j=0\quad (0\le j\le2),
 $$
 which are $3$ and $3$ more. That is $4+3+3=10$ lines meeting $L$, and $L$ was an arbitrary line of $S$. Since there are $26$ other lines, $16$ of them are skew to $L$.
-:::
-
-:::
-
-::: {.pf-step #two-skew-lines-meet-five}
-Two skew lines of $S$ are met by exactly $5$ further lines of $S$.
-
-::: pf-proof
-This is Corollary 11.2(b) of Gathmann, printed p. 91, as a statement. His proof of part (b) is the single sentence "The proof of part (b) is analogous", so the source states the count and does not carry the check out, and no check is carried out here either.
 :::
 
 :::
@@ -492,6 +515,19 @@ other lines. Coordinate symmetry gives the same count for every $B$- and $C$-lin
 
 :::
 
+::: {.pf-step #two-skew-lines-meet-five}
+Two skew lines of $S$ are met by exactly $5$ further lines of $S$.
+
+::: pf-proof
+Gathmann states this as Corollary 11.2(b), printed p. 91, and prints "The proof of part (b) is analogous" for it, so the count is derived here from the criteria of steps [](#same-family-incidence){.pf-ref}, [](#ab-family-incidence){.pf-ref}, [](#ac-family-incidence){.pf-ref} and [](#bc-family-incidence){.pf-ref}, and that derivation is the card's own.
+
+Two skew lines lie either in one family or in two. If they are $A_{ab}$ and $A_{cd}$ in the first family, then $a\ne c$ and $b\ne d$ by step [](#same-family-incidence){.pf-ref}. The $A$-lines meeting both are exactly $A_{ad}$ and $A_{cb}$, one for each way of matching the two first exponents with the two second ones. A $B$-line $B_{a'b'}$ meets $A_{ab}$ exactly when $a'-b'\equiv a-b$ and meets $A_{cd}$ exactly when $a'-b'\equiv c-d$, by step [](#ab-family-incidence){.pf-ref}, so it meets both exactly when $a-b\equiv c-d$, and then all three such $B$-lines do; a $C$-line $C_{a'b'}$ meets $A_{ab}$ exactly when $a'\equiv a+b+b'$ and $A_{cd}$ exactly when $a'\equiv c+d+b'$, by step [](#ac-family-incidence){.pf-ref}, so it meets both exactly when $a+b\equiv c+d$, and then all three such $C$-lines do. Writing $x=a-c$ and $y=b-d$, both nonzero, the first condition is $x\equiv y$ and the second is $x\equiv-y$, and $y$ and $-y$ are the two nonzero residues modulo $3$: exactly one of them holds, and the count is $2+3=5$.
+
+If the two lines lie in different families, the transposition of the coordinates $x_1$ and $x_2$ preserves $S$, carries $A_{ab}$ to $B_{ab}$, $B_{ab}$ to $A_{ab}$ and $C_{ab}$ to $C_{ba}$, and so carries a skew pair of either remaining pairing to one of the form $A_{ab}$, $B_{cd}$, which is skew exactly when $a+d\not\equiv b+c$ by step [](#ab-family-incidence){.pf-ref}. Such a pair is met by the two $A$-lines $A_{a,\,a+d-c}$ and $A_{b+c-d,\,b}$ and the two $B$-lines $B_{c,\,b+c-a}$ and $B_{a+d-b,\,d}$, each of which is distinct from $A_{ab}$ and from $B_{cd}$ because $a+d\not\equiv b+c$, and by one $C$-line, the one with $b'\equiv2(c+d-a-b)$ and $a'\equiv a+b+b'$, since $C_{a'b'}$ meets $A_{ab}$ exactly when $a'\equiv a+b+b'$ and meets $B_{cd}$ exactly when $a'+b'\equiv c+d$. That is $2+2+1=5$ further lines.
+:::
+
+:::
+
 ::: {.pf-step #incidence-relations-open}
 No source listed for this card prints a criterion deciding, pair by pair, which lines of the three families meet, nor a result that the two counts determine the configuration.
 
@@ -553,7 +589,7 @@ In characteristic $3$ the Frobenius is additive, so $x_0^3+x_1^3+x_2^3+x_3^3=(x_
 :::
 
 ::: pf-qed
-Step [](#twenty-seven-lines){.pf-ref} gives the equations of the $27$ lines; steps [](#same-family-incidence){.pf-ref}, [](#ab-family-incidence){.pf-ref}, [](#ac-family-incidence){.pf-ref} and [](#bc-family-incidence){.pf-ref} decide every pair, and step [](#incidence-count-ten-sixteen){.pf-ref} draws the counts $10$ and $16$ from them, which is the card's own computation and answers the exercise's second request; step [](#incidence-relations-open){.pf-ref} records that no source listed prints such a criterion, and Gathmann's two counts are steps [](#incidence-ten-and-sixteen){.pf-ref} and [](#two-skew-lines-meet-five){.pf-ref}. Step [](#automorphism-group-not-two-three){.pf-ref} gives $\Aut(S)\cong3^3\rtimes\Sigma_4$ of order $648$ when $\operatorname{char}k\ne2,3$, and step [](#automorphism-group-characteristic-two){.pf-ref} gives $\Aut(S)\cong\operatorname{PSU}_4(2)$ of order $25920$ when $\operatorname{char}k=2$. In characteristic $3$ the equation is a triple plane, as step [](#characteristic-three){.pf-ref} records, so the smooth cubic surface question does not arise.
+Step [](#twenty-seven-lines){.pf-ref} gives the equations of the $27$ lines; steps [](#same-family-incidence){.pf-ref}, [](#ab-family-incidence){.pf-ref}, [](#ac-family-incidence){.pf-ref} and [](#bc-family-incidence){.pf-ref} decide every pair, and step [](#incidence-count-ten-sixteen){.pf-ref} draws the counts $10$ and $16$ from them, which is the card's own computation and answers the exercise's second request; step [](#incidence-relations-open){.pf-ref} records that no source listed prints such a criterion; Gathmann's count of $10$ is step [](#incidence-ten-and-sixteen){.pf-ref}, and his count of $5$, step [](#two-skew-lines-meet-five){.pf-ref}, is derived there from the criteria, since he states it and leaves its proof as analogous. Step [](#automorphism-group-not-two-three){.pf-ref} gives $\Aut(S)\cong3^3\rtimes\Sigma_4$ of order $648$ when $\operatorname{char}k\ne2,3$, and step [](#automorphism-group-characteristic-two){.pf-ref} gives $\Aut(S)\cong\operatorname{PSU}_4(2)$ of order $25920$ when $\operatorname{char}k=2$. In characteristic $3$ the equation is a triple plane, as step [](#characteristic-three){.pf-ref} records, so the smooth cubic surface question does not arise.
 :::
 
 :::
@@ -562,7 +598,7 @@ Step [](#twenty-seven-lines){.pf-ref} gives the equations of the $27$ lines; ste
 ::: {.remark title="Published solutions"}
 The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.16, printed p. 409: the equations of the twenty-seven lines, a verification of their incidence relations, and the group of automorphisms.
 
-Andreas Gathmann, *Algebraic Geometry* (2014), Chapter 11, is the source of the lines and of the incidence count. Lemma 11.1, printed p. 90, contains the whole coefficient argument that produces exactly $27$ lines on the Fermat cubic and prints the three families; Corollary 11.2, printed pp. 90--91, then proves that exactly $10$ other lines meet a given one, working one line out in full after reducing by a coordinate permutation and multiplications by cube roots of unity, and states that exactly $5$ lines meet two given skew ones with the proof given as "analogous". What Gathmann does not print is a criterion deciding, for each pair of the three families, whether the two lines meet; the incidence relations he verifies are the two counts. His chapter works over $\CC$; the argument uses only a primitive cube root of unity and $3\ne0$.
+Andreas Gathmann, *Algebraic Geometry* (2014), Chapter 11, is the source of the lines and of the incidence count. Lemma 11.1, printed p. 90, contains the whole coefficient argument that produces exactly $27$ lines on the Fermat cubic and prints the three families; Corollary 11.2, printed pp. 90--91, then proves that exactly $10$ other lines meet a given one, working one line out in full after reducing by a coordinate permutation and multiplications by cube roots of unity, and states that exactly $5$ lines meet two given skew ones with the proof given as "analogous", which step [](#two-skew-lines-meet-five){.pf-ref} derives from the criteria of the three families. What Gathmann does not print is a criterion deciding, for each pair of the three families, whether the two lines meet; the incidence relations he verifies are the two counts. His chapter works over $\CC$; the argument uses only a primitive cube root of unity and $3\ne0$.
 
 Igor V. Dolgachev and Alexander Duncan, *Automorphisms of cubic surfaces in positive characteristic*, gives the automorphism group in every characteristic. Theorem 1.1 with Table 1, printed pp. 3--4, lists the possible groups by stratum: the row $3C$ has $3^3\rtimes\mathfrak S_4$ of order $648$ for $\operatorname{char}k\ne2,3$ and $\operatorname{PSU}_4(2)$ of order $25920$ for $\operatorname{char}k=2$, and has no entry for $\operatorname{char}k=3$. Lemma 5.1, printed p. 25, states both values for the Fermat cubic itself; Lemma 5.2 with its proof, printed p. 25, is the Hessian argument for the first, and Section 5.1, printed pp. 25--28, is the Hermitian-form and Frobenius argument for the second. Section 1.3, printed p. 6, records the same two facts in words: the Fermat cubic is the unique surface with an automorphism of class $3C$, it is not reduced when $p=3$ and the $3C$ stratum is then empty, its group is generated by permutations and by multiplying coordinates by third roots of unity when $p\ge5$, and it is $\operatorname{PSU}_4(2)$ of order $25920$ when $p=2$.
 
