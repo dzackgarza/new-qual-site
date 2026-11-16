@@ -142,7 +142,7 @@ audit:
 :::
 
 ::: {.solution}
-Every step below is the published argument, and each names the source it transcribes: Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Exercise 2.3.10, PDF p. 23; the Cais solutions, text version `tmp/sources/hartshorne-solutions-cais.md`, Exercise 3.10, PDF p. 12 of 29, the file having no printed folio; A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (2020/March), text version `tmp/sources/shitijyou-ch2-section3.md`, Exercise 3.10, printed pp. 5--8; A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise II.3.10, printed p. 84; and, for the characteristic-two case, comments 3488648 and 3489729 on Math StackExchange question 1709194, text version `tmp/sources/mse-1709194-geometric-generic-fibre-hart-ii310.md`.
+The sources cited at the steps are Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Exercise 2.3.10, PDF p. 23; the Cais solutions, text version `tmp/sources/hartshorne-solutions-cais.md`, Exercise 3.10, PDF p. 12 of 29, the file having no printed folio; A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (2020/March), text version `tmp/sources/shitijyou-ch2-section3.md`, Exercise 3.10, printed pp. 5--8; A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise II.3.10, printed p. 84; and, for the characteristic-two case, comments 3488648 and 3489729 on Math StackExchange question 1709194, text version `tmp/sources/mse-1709194-geometric-generic-fibre-hart-ii310.md`.
 
 ::: pf
 
