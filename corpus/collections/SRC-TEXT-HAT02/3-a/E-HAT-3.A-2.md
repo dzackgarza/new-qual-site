@@ -94,6 +94,20 @@ audit:
     Weibel, *An Introduction to Homological Algebra*, Calculation 3.1.1 on printed p. 66, and against
     Hatcher (2002), §3.A Exercise 2 on printed p. 267 with the remark on printed p. 263 that
     $\operatorname{Tor}_n=0$ for $n>1$.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Citations only; the statement and the proof are unchanged. Every citation on this card named a
+    PDF. The text versions are now named where the sources are named. Weibel's §3.1 is read in
+    `tmp/sources/weibel-03-tor-and-ext.md`, and the colimit corollaries of §2.6--2.7 in
+    `tmp/sources/weibel-02-derived-functors.md`; both were opened this pass and do contain the cited
+    items --- Calculation 3.1.1, Proposition 3.1.3 and Corollary 3.1.5 in the first, Corollaries
+    2.6.16, 2.6.17 and Theorem 2.7.2 in the second. Hatcher is read in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`. Checked against Hatcher (2002), §3.A Exercise 2
+    on printed p. 267, and against the book's remark on printed p. 263 that $\operatorname{Tor}_n=0$
+    for $n>1$. Not claimed: a text version for any other source, this card citing none; nothing was
+    read from a rendered page.
 ---
 
 ::: {.problem}
@@ -102,7 +116,7 @@ Deduce that $A$ is torsionfree iff $\operatorname{Tor}(A, B) = 0$ for all $B$.
 :::
 
 ::: {.solution}
-Write $\operatorname{Tor}=\operatorname{Tor}_1^{\ZZ}$; Hatcher notes on printed p. 263, immediately after Lemma 3A.2, that $\operatorname{Tor}_n^{\ZZ}(H,G)=0$ for $n>1$ because a free resolution $0\to F_1\to F_0\to H\to0$ always exists, and that $\operatorname{Tor}_1$ is written $\operatorname{Tor}$. So the two groups below are $\operatorname{Tor}_1^{\ZZ}(A,\QQ/\ZZ)$ and $\operatorname{Tor}_1^{\ZZ}(A,B)$. The proof is Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §3.1, printed pp. 66--67, in the book's own steps.
+Write $\operatorname{Tor}=\operatorname{Tor}_1^{\ZZ}$; Hatcher notes on printed p. 263, immediately after Lemma 3A.2, that $\operatorname{Tor}_n^{\ZZ}(H,G)=0$ for $n>1$ because a free resolution $0\to F_1\to F_0\to H\to0$ always exists, and that $\operatorname{Tor}_1$ is written $\operatorname{Tor}$. So the two groups below are $\operatorname{Tor}_1^{\ZZ}(A,\QQ/\ZZ)$ and $\operatorname{Tor}_1^{\ZZ}(A,B)$. The proof is Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §3.1, printed pp. 66--67, in the book's own steps; the §3.1 text is read in `tmp/sources/weibel-03-tor-and-ext.md` and the §2.6--2.7 colimit corollaries in `tmp/sources/weibel-02-derived-functors.md`.
 
 *Cyclic groups.* (Calculation 3.1.1, printed p. 66.) The free resolution $0\to\ZZ\xrightarrow{n}\ZZ\to\ZZ/n\to0$ computes $\operatorname{Tor}_*^{\ZZ}(\ZZ/n,B)$ as the homology of the complex $0\to B\xrightarrow{n}B\to0$, so
 $$
@@ -135,5 +149,5 @@ $$
 $$
 as Corollary 3.1.5, without a separate proof, and obtains it from Proposition 3.1.4 and the Remark. The two implications the exercise asks for are these: if $A$ is torsionfree then $\operatorname{Tor}(A,B)=0$ for every $B$, which is Proposition 3.1.4 in degree $1$; and if $\operatorname{Tor}(A,B)=0$ for every $B$ then taking $B=\QQ/\ZZ$ gives $T(A)\cong\operatorname{Tor}(A,\QQ/\ZZ)=0$, so $A$ is torsionfree.
 
-Checked against Hatcher, *Algebraic Topology* (2002), §3.A Exercise 2, printed p. 267: "Show that $\operatorname{Tor}(A,\QQ/\ZZ)$ is isomorphic to the torsion subgroup of $A$. Deduce that $A$ is torsionfree iff $\operatorname{Tor}(A,B)=0$ for all $B$." Hatcher's $\operatorname{Tor}$ is $\operatorname{Tor}_1^{\ZZ}$ (printed p. 263, where $\operatorname{Tor}_n=0$ for $n>1$ is noted), and the symmetry that the Remark supplies is his Proposition 3A.5(1), printed p. 265.
+Checked against Hatcher, *Algebraic Topology* (2002), §3.A Exercise 2, printed p. 267, read in `tmp/sources/hatcher-2002-algebraic-topology.md`: "Show that $\operatorname{Tor}(A,\QQ/\ZZ)$ is isomorphic to the torsion subgroup of $A$. Deduce that $A$ is torsionfree iff $\operatorname{Tor}(A,B)=0$ for all $B$." Hatcher's $\operatorname{Tor}$ is $\operatorname{Tor}_1^{\ZZ}$ (printed p. 263, where $\operatorname{Tor}_n=0$ for $n>1$ is noted), and the symmetry that the Remark supplies is his Proposition 3A.5(1), printed p. 265.
 :::
