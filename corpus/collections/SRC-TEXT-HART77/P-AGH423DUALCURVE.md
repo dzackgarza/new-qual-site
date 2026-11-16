@@ -157,6 +157,30 @@ audit:
     X cap L, is unaffected: its line L is chosen to contain no inflection point, so
     r = 2 there. No source was re-read for this paragraph, nothing else on the card
     changes, and the pages and paths of the sources are those of the events above.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #121 reader's report on the event of this date above, which is left as written.
+    Two errors in it. First, it calls the second term of the image,
+    (df/dy)/(df/dx) y = -x'(y) y, "of the same order r-1 as the derivative it
+    comes from". It is of order r: x'(y) has order r-1 and the multiplication by y
+    raises that by one, so the term is -r a_r y^r, of the same order as x, which is
+    why it can change the leading coefficient rather than vanishing against it.
+    The rendered step states this correctly -- x - y x'(y) = (1-r) a_r y^r +
+    O(y^{r+1}) -- and only the note was wrong. Second, the step gave the line L's
+    not being tangent to X as the reason that r = 2 at a point of X cap L that is
+    not an inflection point; that reason is wrong and is now out of the step. The
+    line L's tangency governs ord(y) = 1 in the case P in L, and nothing else:
+    r = I_P(X, T_P(X)) is at least 2 at every point of X, a tangent line meeting
+    the curve with multiplicity at least 2, and is below 3 exactly off the
+    inflection points, so r = 2 at such a point follows from the definition of an
+    inflection point in part (a) of the book. The expansion, its characteristic-0
+    hypothesis, and step s9, whose L carries no inflection point, are unchanged.
+    Read for this: the book's part (a), in tmp/sources/hartshorne-1977-algebraic-geometry.md
+    at IV.2.3, printed pp. 304--305, for the definition of an inflection point as
+    I_P(X, T_P(X)) >= 3. Not read in this pass: neither published source, whose
+    pages and paths are those of the events above; no other card is touched.
 review: draft
 ---
 
@@ -348,8 +372,10 @@ $x+(\partial f/\partial y)/(\partial f/\partial x)\,y$, which on the branch is
 $x-y\,x'(y)$; writing $x(y)=a_ry^r+O(y^{r+1})$ with $a_r\ne0$, that series is
 $(1-r)a_ry^r+O(y^{r+1})$, of valuation $r$ because $r\ge2$ and $1-r\ne0$ in
 characteristic $0$. At a point of $X\cap L$ that is not an inflection point
-$r=2$, the line $L$ not being tangent to $X$. Part (a) of the book asks only for
-ramification.
+$r=2$, an inflection point being one at which $I_P(X,T_P(X))\ge3$ and every
+point of $X$ having $I_P(X,T_P(X))\ge2$; the hypothesis that the line $L$ is
+not tangent to $X$ is what gives $\operatorname{ord}(y)=1$ in the case $P\in L$,
+and it is not what fixes $r$. Part (a) of the book asks only for ramification.
 
 :::
 
