@@ -122,6 +122,17 @@ audit:
     to the text they were dated with, and both then give printed p. 299, which
     is Egbert's page and not the book's: the exercise is printed p. 420, and
     the correction is here.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The search-status paragraph is removed from the remark. What it recorded
+    --- that no published proof of R contained in R_0 was located, which sets
+    were searched, and that the survey Egbert cites was not read --- is the
+    entry for V.5.6 in COMPLAINTS.md, which records it, and the card carries
+    no process. No mathematical claim changes: the remark still names the two
+    published entries and what each does not prove. Not checked: nothing new;
+    the card's steps were not re-derived in this pass.
 ---
 
 ::: {.problem}
@@ -527,5 +538,4 @@ The proof of the exercise is therefore this card's own. Its decisive steps are [
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.5.6, printed p. 299, states the trichotomy, identifies kinds (1) and (2) through the centre and its successive blowups, and for kind (3) says only that one "repeats and gets a type (3)", citing another book for the value-group claim.
 
-No published proof of the inclusion $R\subseteq R_0$ was located. Hartshorne's Exercise II.4.12(3), printed p. 108, builds $R_0$ and says no more than that it "is a local ring, so it is dominated by some valuation ring $R$ of $K/k$", and the Note after it defers $R_0=R$ to this exercise; Egbert and Yang Pi-Yeh assert the union and neither argues it. No other Hartshorne solution set retained in `tmp/sources` has an entry for V.5.6: Borcherds, Cais, Cutrone--Marshburn, Dongryul Kim, Lomont, Park, Saglam--Chris and Troiani have none, and Sam, Stein, Okamoto (Chapter II.9) and Nilaykumar (Chapter I) stop earlier; the NTU *Algebraic Geometry II* Chapter V homework has Section 5 exercises 1--4, 7 and 8 and nothing for exercise 6; and Reid's *Chapters on Algebraic Surfaces*, text version `tmp/sources/reid-chapters-algebraic-surfaces.md`, mentions valuation rings only as the discrete valuation rings of prime divisors. What Egbert cites for the value-group claim is, in his words, "Vaqiue Valuations and local uniformization, remark 1.14", which `tmp/sources` does not hold and which was not read.
 :::
