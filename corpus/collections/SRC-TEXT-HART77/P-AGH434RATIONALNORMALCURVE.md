@@ -111,9 +111,7 @@ audit:
     maps and identifies the quadrics Q_ij as generators, where printed p. 219
     asserts both halves of (a) in one sentence each and proves neither and names
     no Q_ij. The remark also called IV.1.3.5 an exercise, where it is an Example
-    of the text; it is cited as one. The text-version paths that stood in the
-    rendered solution's opening sentence and in both remark paragraphs are out of
-    them and recorded here. Where and how the sources were read:
+    of the text; it is cited as one. Where and how the sources were read:
     Egbert in tmp/sources/hartshorne-solutions-egbert.md, section 4.3.6 for
     printed p. 219 and the section headed "4.3.7 b. x g" for printed p. 220, the
     page positions read off the folios of
@@ -128,6 +126,77 @@ audit:
     card's own proof from Exercise II.5.14(d). The two events of this date above
     were rewritten in place by e4872b53d6; they are restored to the text they
     carried when written, and this event is the correction.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #121 reader's report on this round: what the restored event of this date says
+    step s2 does, the proof it calls written earlier today, the event one commit
+    rewrote, and three sentences of the rendered card.
+
+    What the restored event says step s2 does is not what the card does. That
+    event's s2 is the projective-normality step in the numbering the card carried
+    that day, now step #projective-normality; the event says it "keeps Hou's
+    integral-closure route and supplies the conclusion of the garbled line", and
+    that route is false. The card's projective normality is the card's own proof
+    from Exercise II.5.14(d), in step #projective-normality with
+    #surjective-restriction, which is the proof the card carried before this
+    round. Three statements of Hou's part (a) are
+    false and are named where they would otherwise be used, none of them named by
+    any record of this date before this one: that Frac S(X) = k(t_0,t_1), where
+    for d >= 2 Frac S(X) is a proper subfield of it; that d divides the t-degree
+    of every element of k[t_0,t_1] integral over S(X), which fails at d = 2, where
+    t_0 is a root of T^2 - t_0^2 over k[t_0^2,t_0t_1,t_1^2] and has degree 1;
+    and that a lexicographic remainder by the quadrics g_ij contains no pure power
+    x_i^l, whose leading monomial under g_{i-1,i} = x_{i-1}x_{i+1} - x_i^2 is
+    x_{i-1}x_{i+1}. So the statement in the restored record of this date that
+    projective normality is answered by Hou's integral-closure argument is not the
+    card's; the part that remains the card's own is (a)'s projective normality
+    proved from Exercise II.5.14(d), and the obligation under #121 stands as the
+    record states it.
+
+    The proof the restored event calls "written earlier today" is not the one
+    written today. It is the card's own proof of 2026-09-18, which revision
+    199b5eb36b^ carries: h^0(L) <= e+1 by induction on the degree, then the
+    degree-one map to PP^1. What was written earlier today, at 199b5eb36b and
+    revised at e4872b53d6, was the chain n <= dim|D| <= deg D = d <= n read off
+    Exercise IV.1.5, and that is what is withdrawn, Egbert printing the same chain
+    at printed p. 220. The 2026-09-18 proof of (b) was replaced when the card was
+    transcribed, as the event of this date records, and its replacement is
+    Egbert's chain.
+
+    QUAL-11: commit d37c02e2b0 rewrote in place, minutes after df9cd73f42 wrote
+    it, the event of this date that records the reader's report. The sentence it
+    inserted -- that the text-version paths which stood in the rendered solution's
+    opening sentence and in both remark paragraphs are out of them -- is stated
+    here instead, and not there: that event now stands as the text it carried at
+    df9cd73f42, byte for byte. Nothing else in these events was rewritten in this
+    pass.
+
+    Three sentences of the rendered card. The published-solution remark said the
+    card proves "part (b)'s degree and genus from Exercise IV.1.5", which is what
+    the card did before this round and contradicts the solution's opening sentence
+    and steps #strict-inequality and #genus-zero, both of which transcribe Egbert;
+    the remark now names Egbert's solutions, printed p. 220, with Exercise IV.1.5
+    as the bound his chain uses. In the same remark the quotation of Egbert's
+    part (a) entry ran "projectively normal; If theta is the corresponding ring
+    homomorphism", where he prints a full stop between the two sentences; the
+    quotation now has it. And step #projective-normality closed with "Neither
+    statement is used above", the word the writing policy sends to a step
+    reference or removes; it reads "in this proof".
+
+    Where and how this pass read its source: the Egbert passage quoted in the
+    remark was re-read in tmp/sources/hartshorne-solutions-egbert.md, in the
+    section headed "4.3.6 IV.3.4 x g", where the two sentences stand on separate
+    lines with a full stop after "projectively normal". His pages were not fixed
+    again here: printed p. 219 for part (a) and printed p. 220 for part (b) are
+    the pages of the event of this date above, read there off the folios of
+    tmp/sources/hartshorne-solutions-egbert.pdf. Not read in this pass: Hou's text
+    version, the book, and Egbert's entries 4.3.7 to 4.3.9 beyond the part (b)
+    sentences that steps #strict-inequality and #genus-zero quote; the pages of
+    Reiser's and Hou's IV.2.2 are corrected in the event of this date on
+    P-AGH422GENUSTWOMODULI and not here. No step was re-derived and no rendered
+    mathematics changes except the three sentences named above.
 ---
 
 ::: {.problem}
@@ -213,7 +282,7 @@ $k(t_0,t_1)$, the element $t_0$ not being such a ratio. He then concludes from
 $f^n+a_{n-1}f^{n-1}+\cdots+a_0=0$ that $d\mid\deg f$ for $f\in k[t_0,t_1]$
 integral over $S(X)$, and that is false: for $d=2$ the element $t_0$ is integral
 over $S(X)=k[t_0^2,t_0t_1,t_1^2]$, being a root of $T^2-t_0^2$, while
-$\deg t_0=1$ is not divisible by $2$. Neither statement is used above.
+$\deg t_0=1$ is not divisible by $2$. Neither statement is used in this proof.
 
 :::
 
@@ -447,7 +516,7 @@ consequences.
 
 
 ::: {.remark title="Published solution"}
-Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou, printed pp. 8--10, solves the exercise: (a) at pp. 8--9, by integral closedness of the homogeneous coordinate ring and by division of the ideal by the quadrics $g_{ij}$, and (b) with its degree-$2$ and degree-$3$ consequences at p. 10. Three statements of its part (a) are false and are named where they would otherwise be used: $\Frac S(X)=k(t_0,t_1)$, the conclusion $d\mid\deg f$ drawn from a degree comparison (for $d=2$, $t_0$ is integral over $S(X)$ and has degree $1$), and the claim that a lexicographic remainder by the $g_{ij}$ contains no pure power $x_i^l$, whose leading monomial under $g_{i-1,i}$ is $x_{i-1}x_{i+1}$. Its part (b) states $g(X)=0$ and the identification with the $d$-uple embedding, and states $\dim\abs{D}=n$ without proving it. The card proves (a) by Exercise II.5.14(d) and by straightening monomials modulo the quadrics, and part (b)'s degree and genus from Exercise IV.1.5, with IV.1.3.5, an Example of the text, for $X\cong\PP^1$.
+Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou, printed pp. 8--10, solves the exercise: (a) at pp. 8--9, by integral closedness of the homogeneous coordinate ring and by division of the ideal by the quadrics $g_{ij}$, and (b) with its degree-$2$ and degree-$3$ consequences at p. 10. Three statements of its part (a) are false and are named where they would otherwise be used: $\Frac S(X)=k(t_0,t_1)$, the conclusion $d\mid\deg f$ drawn from a degree comparison (for $d=2$, $t_0$ is integral over $S(X)$ and has degree $1$), and the claim that a lexicographic remainder by the $g_{ij}$ contains no pure power $x_i^l$, whose leading monomial under $g_{i-1,i}$ is $x_{i-1}x_{i+1}$. Its part (b) states $g(X)=0$ and the identification with the $d$-uple embedding, and states $\dim\abs{D}=n$ without proving it. The card proves (a) by Exercise II.5.14(d) and by straightening monomials modulo the quadrics, and part (b)'s degree and genus from Egbert's solutions of the same exercise, printed p. 220, with Exercise IV.1.5 for the bound that chain uses and IV.1.3.5, an Example of the text, for $X\cong\PP^1$.
 
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.4, printed pp. 219--220, asserts both halves of part (a) without proof on printed p. 219 — "Since $\PP^1$ is projectively normal, then $d$-uple is projectively normal; If $\theta$ is the corresponding ring homomorphism, then the kernel is generated by quadrics" — and proves part (b) on printed p. 220 by the chain $l(D)=n+1\le\deg(D)+1=d+1\le n+1$ and Exercise IV.1.5, with the identification in the one closing sentence quoted in step [](#genus-zero){.pf-ref}.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.4, printed pp. 219--220, asserts both halves of part (a) without proof on printed p. 219 — "Since $\PP^1$ is projectively normal, then $d$-uple is projectively normal. If $\theta$ is the corresponding ring homomorphism, then the kernel is generated by quadrics" — and proves part (b) on printed p. 220 by the chain $l(D)=n+1\le\deg(D)+1=d+1\le n+1$ and Exercise IV.1.5, with the identification in the one closing sentence quoted in step [](#genus-zero){.pf-ref}.
 :::
