@@ -76,10 +76,29 @@ audit:
     it +-2, neither 0 in characteristic not 2. A fourth defect is its list of
     the 18 triple points as (1, w^i, 0, 0) and its permutations, which are not
     on the surface, the sum of their cubes being 2; the triple points are
-    (1, -1, 0, 0) and its permutations. The set
+    (1, -w^i, 0, 0) and its permutations, i = 0,1,2, which is 18 points, and not
+    the six of (1, -1, 0, 0). The set
     therefore supplies the explicit lines and the shape of the
     group, not a proof of the incidence relations nor of the group. No card claim
     changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Corrected the count of the eighteen triple points on 2026-11-16. The event
+    above and the remark both gave them as (1, -1, 0, 0) and its permutations,
+    which is six points, not eighteen; the triple points are
+    (1, -omega^i, 0, 0) and their permutations for i = 0, 1, 2, eighteen of
+    them. The two zero coordinates pick the pair of positions in binom(4,2) = 6
+    ways, and the two nonzero entries have cubes summing to zero exactly when
+    one is -omega^i times the other, which is three more classes. A point of the
+    surface with exactly two zero coordinates lies on the three lines of one
+    pairing through it, and one with all four coordinates nonzero lies on at
+    most two, so these are exactly the points of multiplicity three, which is
+    what the National Taiwan University set's own count 18 x 3 + 27 x 3 =
+    27 x 10 / 2 needs: its list of them is wrong only in the sign. The 81 points
+    of multiplicity two are unchanged, all four coordinates nonzero with exactly
+    two negative cubes.
 ---
 
 ::: {.problem}
@@ -732,5 +751,8 @@ and one or three giving $\pm2$); and the group is computed only among the automo
 $\operatorname{Aut}(\PP^3)$, with no order stated, whereas the exercise asks for the group itself, which the
 anticanonical argument of this card's step reduces to that case. Its list of the $18$ triple points is a slip:
 $(1,\omega^i,0,0)$ and its permutations are not on $X$, the sum of their cubes being $2$, the triple points
-being $(1,-1,0,0)$ and its permutations.
+being $(1,-\omega^i,0,0)$ and its permutations for $i=0,1,2$, eighteen of them: the two zero coordinates choose the
+positions, $\binom42=6$ ways, and the third root of $-1$ in the remaining two is $\omega^i$, three values. A point
+with exactly two zero coordinates lies on three of the lines, the three with $j=0,1,2$ in one pairing, and a point
+with all four coordinates nonzero lies on at most two, so the eighteen are exactly the points where three lines meet.
 :::

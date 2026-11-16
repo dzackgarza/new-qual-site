@@ -112,6 +112,15 @@ audit:
     still not on this machine and Theorem 11.5 is quoted as the card has always
     carried it.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Named the text version of Vakil's book at each citation of it on 2026-11-16,
+    where the remark cited the PDF alone: the file is
+    tmp/sources/vakil-rising-sea-2025-10-21.md beside
+    tmp/sources/vakil-rising-sea-2025-10-21.pdf, and the citations of 13.5.19
+    and of 13.5 now name it. No page or claim changes.
 ---
 
 ::: {.problem}
