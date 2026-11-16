@@ -122,23 +122,20 @@ Usually one obtains a finite number of double points with transversal tangent pl
 ::: {.solution}
 
 Let $X\subseteq\PP^n$ be nonsingular of dimension $r$.
-Part (a) is transcribed from I. R. Shafarevich, *Basic Algebraic Geometry 1*, third edition (2013), §5.4 "Projective Embedding of Nonsingular Varieties", printed pp. 134--136, text version `tmp/sources/shafarevich-2013-basic-algebraic-geometry-1-pp129-138.md`, in which printed p. $N$ is PDF p. $N+16$ of the copy; his $N$ and $n$ are this card's $n$ and $r$, and each step names the numbered statement and printed page it transcribes.
-Part (b) is not from that source: its steps say so where they are proved, and the remark at the end of the card records what the published treatments of (b) do.
+Part (a) follows I. R. Shafarevich, *Basic Algebraic Geometry 1*, third edition (2013), §5.4, printed pp. 134--136, for the tangent bound, the lemma on isomorphic embeddings, Corollary 2.7 and the projection; his printed count for the secant locus is defective, and step [](#secants){.pf-ref} says where.
+The steps of part (b) are the card's own and each says so.
 
 ::: pf
 
 ::: {.pf-step #secants}
 
-The union of the secant lines of $X$ is the image $U_1$ of a closed subset $\Gamma\subseteq\PP^n\times X\times X$, and
-$$
-\dim U_1\le2r+1 .
-$$
+Shafarevich's printed argument for the secant locus, read at his proof of Theorem 2.25, printed pp. 135--136, does not bound the set of centres lying on secant lines: his incidence $\Gamma$ includes the pairs $(b,c)$ with $b=c$, and the image of those is all of $\PP^n$.
 
 ::: pf-proof
 
 Shafarevich, proof of Theorem 2.25, printed pp. 135--136: "In $\PP^N\times X\times X$ consider the set $\Gamma$ of triples $(a,b,c)$ with $a\in\PP^N$, $b,c\in X$ such that $a,b,c$ are collinear. $\Gamma$ is obviously a closed subset of $\PP^N\times X\times X$. The projections of $\PP^N\times X\times X$ to $\PP^N$ and to $X\times X$ define regular maps $\varphi:\Gamma\to\PP^N$ and $\psi:\Gamma\to X\times X$. Obviously if $y\in X\times X$ with $y=(b,c)$, and $b\ne c$ then $\psi^{-1}(y)$ consists of points $(a,b,c)$ where $a$ is any point of the line through $b$ and $c$. Hence $\dim\psi^{-1}(y)=1$ and it follows by Theorem 1.25 that $\dim\Gamma=2n+1$. By definition $U_1=\varphi(\Gamma)$, and the same theorem gives $\dim U_1\le\dim\Gamma=2n+1$."
-With $X$ of dimension $r$ in $\PP^n$, that is $\dim U_1\le2r+1$, and $U_1$ is the union of the secant lines.
-The triples with $b=c$ are the extra ones in $\Gamma$: there $a$ ranges over $\PP^N$ and $(b,b)$ over the diagonal copy of $X$, so they form a closed subset of dimension $n+r$, which is at most $2n+1$ and does not raise the bound; the secant locus itself is the image of the triples with $b\ne c$, on which the fibre computation above is made.
+
+The defect is the identification $U_1=\varphi(\Gamma)$ with the locus of centres on secant lines. For $b=c$ the three points $a$, $b$, $b$ lie on a line for every $a\in\PP^N$, so $\Gamma$ contains $\PP^N\times\Delta_X$, of dimension $n+r$, and that subset maps onto $\PP^N$ under $\varphi$; hence $\varphi(\Gamma)=\PP^n$, and the printed bound bounds the dimension of the whole ambient space rather than of a proper locus of centres. The points lying on a line through two distinct points of $X$ are the image of the part of $\Gamma$ with $b\ne c$, which the printed passage neither separates from the diagonal nor bounds. So the printed proof of $\dim U_1\le2r+1$ does not stand, and no bound on the secant locus is available from it.
 
 :::
 
@@ -154,7 +151,8 @@ $$
 ::: pf-proof
 
 Shafarevich, proof of Theorem 2.25, printed p. 136: "In a similar way, to study the set $U_2$ we consider in $\PP^N\times X$ the set $\Gamma'$ consisting of points $(a,b)$ such that $a\in\Theta_b$. In exactly the same way we have projections $\psi:\Gamma'\to X$ and $\varphi:\Gamma'\to\PP^N$. For $b\in X$ we have $\dim\psi^{-1}(b)=n$ since $X$ is nonsingular, and hence $\dim\Gamma'=2n$, and since $U_2=\varphi(\Gamma')$, also $\dim U_2\le2n$."
-Here $\Theta_b$ is the embedded tangent space $T_bX\subseteq\PP^N$, which is a linear subspace of dimension $n$ of the ambient $\PP^N$ when $X$ has dimension $n$ and is nonsingular at $b$; with this card's letters, $\dim T_PX=r$ and the fibre over $P$ has dimension $r$.
+
+Here $\Theta_b$ is the embedded tangent space $T_bX\subseteq\PP^N$, a linear subspace of dimension $n$ of $\PP^N$ when $X$ has dimension $n$ and is nonsingular at $b$; with this card's letters $\dim T_PX=r$, so the fibre of $\Gamma'\to X$ over $P$ has dimension $r$ and $\dim U_2\le2r$. Nothing in this passage uses the diagonal, and the identification $U_2=\varphi(\Gamma')$ is with the union of the tangent spaces itself.
 
 :::
 
@@ -162,12 +160,17 @@ Here $\Theta_b$ is the embedded tangent space $T_bX\subseteq\PP^N$, which is a l
 
 ::: {.pf-step #centre}
 
-If $n>2r+1$ there is a point $\xi\in\PP^n$ which lies on no secant line of $X$, in no embedded tangent space $T_PX$, and not on $X$.
+If the closure of the union of the secant lines of $X$ has dimension at most $2r+1$, then for $n>2r+1$ there is a point $\xi\in\PP^n$ lying on no secant line of $X$, in no embedded tangent space $T_PX$, and not on $X$.
 
 ::: pf-proof
 
 Shafarevich, proof of Theorem 2.25, printed p. 136, concludes: "We see that $\dim U_1\le\dim\Gamma=2n+1$ and $\dim U_2\le2n$; therefore if $N>2n+1$ then $U_1\cup U_2\ne\PP^N$, which was what we wanted."
-Steps [](#secants){.pf-ref} and [](#tangent-locus){.pf-ref} identify $U_1$ and $U_2$ and bound their dimensions by $2r+1$ and $2r$; both bounds are strictly below $n$ under the hypothesis $n>2r+1$, and $\dim X=r<n$, so the union $U_1\cup U_2\cup X$ is a proper closed subset of the irreducible $\PP^n$, and its complement is the nonempty open set of admissible centres.
+
+The conclusion holds for the closures: let $\Sigma_{\mathrm{sec}}$ be the union of the secant lines and $U_2$ the union of the embedded tangent spaces, as in step [](#tangent-locus){.pf-ref}. Under the hypothesis $\dim\overline{\Sigma_{\mathrm{sec}}}\le2r+1$ and with $\dim\overline{U_2}\le2r$ from that step, both closures are closed subsets of dimension strictly below $n$, and $\dim X=r<n$, so
+$$
+X\cup\overline{\Sigma_{\mathrm{sec}}}\cup\overline{U_2}
+$$
+is a proper closed subset of the irreducible $\PP^n$ and its complement is a nonempty open set, any point of which is a centre of the kind required. This is the shape of the source's conclusion, with the secant bound as a hypothesis; step [](#secants){.pf-ref} records that the source does not prove that bound, and the bound is not proved here.
 
 :::
 
@@ -175,14 +178,15 @@ Steps [](#secants){.pf-ref} and [](#tangent-locus){.pf-ref} identify $U_1$ and $
 
 ::: {.pf-step #lemma-criterion}
 
-Shafarevich, Lemma, printed p. 134: a finite map $f$ from a variety $X$ is an isomorphic embedding if and only if it is one-to-one and $d_xf$ is an isomorphism of the tangent space $\Theta_x$ for every $x\in X$. The proof, printed pp. 134--135, is a Nakayama argument.
+Shafarevich, Lemma, printed p. 134: a finite map $f$ from a variety $X$ is an isomorphic embedding if and only if it is one-to-one and $d_xf$ is an isomorphic embedding of the tangent space $\Theta_x$ for every $x\in X$. The proof, printed pp. 134--135, is a Nakayama argument.
 
 ::: pf-proof
 
 The proof is Shafarevich's, printed pp. 134--135, and runs as follows, with its own notation.
-"Set $f(X)=Y$ and $\varphi=f^{-1}$. The lemma will be proved if we show that $\varphi$ is a regular map. The assertion is local in nature. For $y\in Y$, let $x\in X$ be such that $f(x)=y$. Write $U$ and $V$ for affine neighbourhoods of $x$ and $y$ with $f(U)=V$ and such that $k[U]$ is integral over $k[V]$, and continue to write $f:U\to V$ for the restriction of $f$. It is enough to prove that $f$ is an isomorphism for suitable choice of $U$ and $V$."
 
-"The second hypothesis of the lemma is that $f^*:\mathfrak m_y/\mathfrak m_y^2\to\mathfrak m_x/\mathfrak m_x^2$ is surjective. In other words, if $\mathfrak m_y=(u_1,\ldots,u_k)$, then the elements $f^*(u_i)+\mathfrak m_x^2$ generate $\mathfrak m_x/\mathfrak m_x^2$. We apply Nakayama's lemma (Proposition A.11) to $\mathfrak m_x$ as an $\mathcal O_x$-module. It then follows from this that $\mathfrak m_x=(f^*(u_1),\ldots,f^*(u_k))$, or in other words
+"Set $f(X)=Y$ and $\varphi=f^{-1}$. The lemma will be proved if we show that $\varphi$ is a regular map. The assertion is local in nature. For $y\in Y$, let $x\in X$ be such that $f(x)=y$. Write $U$ and $V$ for affine neighbourhoods of $x$ and $y$ with $f(U)=V$ and such that $k[U]$ is integral over $k[V]$, and continue to write $f:U\to V$ for the restriction of $f$. It is enough to prove that $f$ is an isomorphism for suitable choice of $U$ and $V$, since then $\varphi=f^{-1}$ is a regular map at $y$."
+
+"Recall that the tangent space $\Theta_x$ is the dual vector space to $\mathfrak m_x/\mathfrak m_x^2$, where $\mathfrak m_x$ is the maximal ideal of the local ring $\mathcal O_x$. The second hypothesis of the lemma is that $f^*:\mathfrak m_y/\mathfrak m_y^2\to\mathfrak m_x/\mathfrak m_x^2$ is surjective. In other words, if $\mathfrak m_y=(u_1,\ldots,u_k)$, then the elements $f^*(u_i)+\mathfrak m_x^2$ generate $\mathfrak m_x/\mathfrak m_x^2$. We apply Nakayama's lemma (Proposition A.11) to $\mathfrak m_x$ as an $\mathcal O_x$-module. It then follows from this that $\mathfrak m_x=(f^*(u_1),\ldots,f^*(u_k))$, or in other words
 $$
 \mathfrak m_x=f^*(\mathfrak m_y)\mathcal O_x. \tag{2.40}
 $$"
@@ -199,19 +203,20 @@ $$"
 
 ::: {.pf-step #corollary}
 
-Shafarevich, Corollary 2.7, printed p. 135: let $X\subseteq\PP^N$ be a variety and $\xi\in\PP^N\setminus X$; if every line through $\xi$ intersects $X$ in at most one point and $\xi$ is not contained in the tangent space to $X$ at any point, then the projection from $\xi$ is an isomorphic embedding $\overline X\hookrightarrow\PP^{N-1}$. Applied to the point $\xi$ of step [](#centre){.pf-ref} it gives a closed immersion of $X$ into $\PP^{n-1}$, which proves (a).
+Shafarevich, Corollary 2.7, printed p. 135: let $X\subseteq\PP^N$ be a variety and $\xi\in\PP^N\setminus X$; if every line through $\xi$ intersects $X$ in at most one point and $\xi$ is not contained in the tangent space to $X$ at any point, then the projection from $\xi$ is an isomorphic embedding $\overline X\hookrightarrow\PP^{N-1}$. Applied to a point $\xi$ of step [](#centre){.pf-ref} it gives a closed immersion of $X$ into $\PP^{n-1}$, which is assertion (a) of the exercise under the bound on the secant locus that step [](#secants){.pf-ref} records as unproved.
 
 ::: pf-proof
 
 The statement is Corollary 2.7, printed p. 135, and its proof there is one sentence: "It is enough to apply the lemma, together with Theorem 1.15."
-By step [](#centre){.pf-ref} the point $\xi$ lies on no secant line of $X$, so every line through $\xi$ meets $X$ in at most one point, and $\xi\notin T_PX$ for every $P\in X$; the two hypotheses of the corollary are therefore met.
-The lemma of step [](#lemma-criterion){.pf-ref} needs the projection $X\to\PP^{n-1}$ to be finite, and that is what the cited Theorem 1.15 supplies; the copy at `tmp/sources/shafarevich-2013-basic-algebraic-geometry-1-pp129-138.md` retains printed pp. 129--138 only, so the statement of Theorem 1.15 is not in it and is not quoted here.
-The conclusion is that the projection restricts to an isomorphism of $X$ onto its image in $\PP^{n-1}$; that image is closed, because $X$ is projective and a morphism from a projective variety is proper, so the isomorphism onto the image is a closed immersion.
-This is assertion (a) of the exercise.
+
+Take a point $\xi$ of the open set of step [](#centre){.pf-ref}. It lies outside $\overline{\Sigma_{\mathrm{sec}}}$, so it lies on no line through two distinct points of $X$, and every line through $\xi$ therefore meets $X$ in at most one point; and it lies outside $\overline{U_2}$, so $\xi\notin T_PX$ for every $P\in X$. The two hypotheses of the corollary are met.
+
+The lemma of step [](#lemma-criterion){.pf-ref} needs the projection $X\to\PP^{n-1}$ to be finite, which is what the cited Theorem 1.15 supplies. The conclusion is that the projection restricts to an isomorphism of $X$ onto its image in $\PP^{n-1}$; that image is closed, because a morphism from the projective variety $X$ is proper, so the isomorphism onto the image is a closed immersion.
 
 :::
 
 :::
+
 ::: {.pf-step #veronese-conic}
 
 Now let
@@ -222,6 +227,8 @@ be the quadratic Veronese embedding. Every secant line to $X$ is contained
 in the plane of a Veronese conic.
 
 ::: pf-proof
+
+This step is the card's own.
 
 Let a secant line join the two distinct points
 $$
@@ -259,6 +266,8 @@ Every point of every secant line of $X$ lies on infinitely many
 secant lines of $X$.
 
 ::: pf-proof
+
+This step is the card's own.
 
 Let
 $$
@@ -300,6 +309,8 @@ they are also secant lines of the Veronese surface $X$.
 The secant variety of the Veronese surface has dimension at most $4$.
 
 ::: pf-proof
+
+This step is the card's own.
 
 Let
 $$
@@ -347,6 +358,8 @@ $$
 The secant variety has dimension at least $4$.
 
 ::: pf-proof
+
+This step is the card's own.
 
 Use the standard coordinates
 $$
@@ -417,6 +430,8 @@ $$
 
 ::: pf-proof
 
+This step is the card's own.
+
 Steps [](#secant-dim-upper){.pf-ref} and [](#secant-dim-lower){.pf-ref} give the opposite inequalities
 $$
 \dim\operatorname{Sec}(X)\le4
@@ -438,6 +453,8 @@ $$
 which is a closed immersion.
 
 ::: pf-proof
+
+This step is the card's own.
 
 By step [](#secant-dim){.pf-ref},
 $$
@@ -467,7 +484,7 @@ This is the projection asserted in (b).
 
 ::: pf-qed
 
-Steps [](#secants){.pf-ref}, [](#tangent-locus){.pf-ref}, [](#centre){.pf-ref}, [](#lemma-criterion){.pf-ref} and [](#corollary){.pf-ref} prove (a): a point outside the secant locus, the tangent locus and $X$ exists when $n>2r+1$, and projection from it is a closed immersion.
+Steps [](#secants){.pf-ref}, [](#tangent-locus){.pf-ref}, [](#centre){.pf-ref}, [](#lemma-criterion){.pf-ref} and [](#corollary){.pf-ref} carry Shafarevich's argument for (a): the tangent bound and the criterion are his, the secant bound he prints is defective as step [](#secants){.pf-ref} shows, and with that bound assumed step [](#corollary){.pf-ref} yields the closed immersion into $\PP^{n-1}$.
 Steps [](#veronese-conic){.pf-ref} and [](#infinitely-many-secants){.pf-ref} prove that each point of every secant line of the Veronese surface lies on infinitely many secant lines, steps [](#secant-dim-upper){.pf-ref}, [](#secant-dim-lower){.pf-ref} and [](#secant-dim){.pf-ref} compute the dimension of its secant variety, and step [](#closed-immersion-b){.pf-ref} gives the closed immersion into $\PP^4$ that (b) asks for.
 
 :::
@@ -477,8 +494,8 @@ Steps [](#veronese-conic){.pf-ref} and [](#infinitely-many-secants){.pf-ref} pro
 :::
 
 ::: {.remark title="Published solution"}
-Part (a) is I. R. Shafarevich, *Basic Algebraic Geometry 1*, third edition (2013), §5.4, printed pp. 134--136: Theorem 2.25, printed p. 134, is the statement, the lemma on isomorphic embeddings and Corollary 2.7 on the projection are printed on pp. 134--135, and the dimension count that produces the centre is on pp. 135--136.
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.11, printed p. 223, text version `tmp/sources/hartshorne-solutions-egbert.md`, gives (a) in entry 4.3.20 as "This is Shafarevich Algebraic Geometry 1, theorem 9, page 136", which is the numbering of an earlier edition of Shafarevich; in the 2013 edition the theorem is 2.25, its statement is on printed p. 134 and the proof that supplies the centre runs to printed p. 136.
+Part (a) is I. R. Shafarevich, *Basic Algebraic Geometry 1*, third edition (2013), §5.4, printed pp. 134--136: Theorem 2.25, printed p. 134, states it, the lemma on isomorphic embeddings and Corollary 2.7 on the projection are printed on pp. 134--135, and the count that produces the centre is on pp. 135--136 -- in the tangent case correctly, and in the secant case with the defect that step [](#secants){.pf-ref} names, his incidence containing the diagonal so that its image is the whole of $\PP^n$.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.11, printed p. 223, gives (a) in entry 4.3.20 as "This is Shafarevich Algebraic Geometry 1, theorem 9, page 136", the numbering of an earlier edition of Shafarevich; in the 2013 edition the theorem is 2.25, and the proof on pp. 135--136 contains the same secant count.
 
 His entry 4.3.21, printed p. 223, argues (b) for a general point of a secant line: "If $r\in\PP^5$ is a general point on a secant line $\overline{v(P)v(Q)}$ of $X$, then $\overline{pq}$ maps to a conic $C$ in $X$ and $r$ then lies on the plane spanned by $C$. Any other line on the plane passing through $r$ is also a secant line to $C$ and thus to $X$. Thus a general point on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$. Since we are in $\PP^5$ at any rate, then the secant variety has dimension at most $4$. On the other hand, the secant variety clearly has dimension at least $4$."
 That is the clause for a general point of a secant line; the exercise asks it for every point of every secant line, and for those points the conic of the plane through the point is the one the argument above uses.
