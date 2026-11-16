@@ -242,6 +242,45 @@ audit:
     as before, is not in tmp/sources and was read only in Dan-Kaur's
     restatement, so the characteristic hypotheses of the original remain
     unverified.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Later pass of this batch, on the reader's whole-batch report, and the
+    repair of the gap that commit 8f37cf0376 opened in the argument. (i) That
+    commit withdrew step regularity, the card's own proof that X is m-1-regular
+    for every large m, and left the conclusion reading "some smooth
+    hypersurface containing X exists" together with the printed sentence of
+    Dan-Kaur's proof of Theorem 1.1, printed p. 4, as the ground for "for
+    every d >> 0". The degree in Theorem 3.3, printed p. 3, is controlled only
+    by its second clause, whose hypothesis is that Z be d-1-regular: as quoted
+    at step transcribed-theorem the first clause gives a smooth hypersurface
+    with no control of its degree, and the printed sentence is the only bridge
+    between the two clauses. The step is restored as it stood before
+    8f37cf0376, with its proof from Serre vanishing, Theorem III.5.2, printed
+    p. 228, and it carries the mark "This step is the card's own: it is a
+    direct consequence of Serre vanishing." Step conclusion now verifies the
+    hypothesis of the second clause from it, applies that clause at d = m, and
+    cites the printed p. 4 sentence beside the application. The event above
+    whose note begins "Later pass of this batch, on the reader's report, and
+    the record of what the solution-written event of this date above left out"
+    records the withdrawal and stands as written; this event is its
+    correction, and the solution's opening now names the one step that is not
+    Dan-Kaur's. (ii) Step hypothesis wrote "dim Omega^1_{X,x} = 1" without
+    saying whether the stalk or the fibre is meant. Dan-Kaur's Notation 3.2,
+    printed p. 3, writes dim Omega^1_{Z,z} for a projective subscheme Z; the
+    step now says that this is the dimension over the residue field of the
+    fibre Omega^1_{Z,z} tensor k(z), notes that on a nonsingular variety it is
+    the rank of the locally free sheaf, and says that on the nonsingular curve
+    X both the fibre and the free stalk of rank 1 have dimension 1. Read in
+    this pass, in
+    tmp/sources/dan-kaur-2016-semi-regular-varieties-variational-hodge.md:
+    Notation 3.2 and Theorem 3.3 on printed p. 3, whose text version carries
+    the marker "PDF pages 1-5" and no per-page folios, and the first sentence
+    of the proof of Theorem 1.1 on printed p. 4, all already read in this
+    batch. Not read in this pass: Kleiman-Altman's own Theorem 7, not in
+    tmp/sources, as before; Serre vanishing was cited, not re-read; and no
+    other step was re-derived.
 ---
 
 ::: {.problem}
@@ -257,6 +296,7 @@ Apply Bertini's theorem to the projective embedding of $\tilde{\PP}$ correspondi
 Put $n=1$, so that $\PP^3=\PP^{2n+1}$ and the curve $X=Z$ is a nonsingular subscheme of $\PP^3$ of codimension $n+1=2$.
 The proof is A. Dan and I. Kaur, *Semi-regular varieties and variational Hodge conjecture*, version of 20 October 2018.
 Their Theorem 3.3 restates S. L. Kleiman and A. B. Altman, *Bertini's theorem for hypersurface sections containing a subscheme*, Communications in Algebra 7 (1979), Theorem 7.
+The one step that is not theirs is step [](#regularity){.pf-ref}, and it says so.
 
 ::: pf
 
@@ -272,8 +312,8 @@ Dan--Kaur, Notation 3.2, printed p. 3, sets
 $$
 Z_e\coloneqq\{z\in Z:\dim\Omega^1_{Z,z}=e\}
 $$
-for a projective subscheme $Z\subseteq\PP^{2n+1}$.
-The curve $X$ is nonsingular, so its sheaf of differentials is locally free of rank $1$ and $\dim\Omega^1_{X,x}=1$ at every point $x$: $Z_1=X$ and $Z_e=\emptyset$ for every $e\ne1$.
+for a projective subscheme $Z\subseteq\PP^{2n+1}$, where $\dim\Omega^1_{Z,z}$ is the dimension over the residue field $k(z)$ of the fibre $\Omega^1_{Z,z}\otimes_{\OO_{Z,z}}k(z)$; on a nonsingular variety that dimension is the rank of the locally free sheaf $\Omega^1$.
+The curve $X$ is nonsingular, so $\Omega^1_X$ is locally free of rank $1$, the fibre at every point $x$ has dimension $1$, and the stalk $\Omega^1_{X,x}$, free of rank $1$, does too: $Z_1=X$ and $Z_e=\emptyset$ for every $e\ne1$.
 The only nonempty one is therefore $Z_1=X$, of dimension $1$, and
 $$
 \dim Z_1+1=2<3,
@@ -296,6 +336,33 @@ No hypothesis on the ground field is stated there, and the paper's own context i
 
 :::
 
+::: {.pf-step #regularity}
+$X$ is $m-1$-regular in the sense of Castelnuovo--Mumford for every sufficiently large integer $m$.
+This step is the card's own: it is a direct consequence of Serre vanishing.
+
+::: pf-proof
+
+By the definition of Castelnuovo--Mumford regularity, $X\subseteq\PP^3$ is $m-1$-regular exactly when
+$$
+H^i\bigl(\PP^3,\mci_X(m-1-i)\bigr)=0
+\qquad\text{for every }i\ge1 .
+$$
+The ideal sheaf $\mci_X$ is coherent on the projective space $\PP^3$, so Serre's vanishing theorem, [[T-COHSVAN|Serre vanishing]] [@Har77, Theorem III.5.2], printed p. 228, gives for each $i\ge1$ an integer $k_i$ with
+$$
+H^i\bigl(\PP^3,\mci_X(k)\bigr)=0
+\qquad\text{for every }k\ge k_i .
+$$
+Let
+$$
+m_0\coloneqq\max_{1\le i\le3}\bigl(k_i+i+1\bigr).
+$$
+For $m\ge m_0$ and $1\le i\le3$ one has $m-1-i\ge k_i$, so all three groups above vanish, and only $i=1,2,3$ can contribute on $\PP^3$.
+Hence $X$ is $m-1$-regular for every $m\ge m_0$.
+
+:::
+
+:::
+
 ::: {.pf-step #conclusion}
 For every $m\gg0$ there is a nonsingular surface $F\subseteq\PP^3$ of degree $m$ containing $X$.
 $$
@@ -304,10 +371,10 @@ $$
 
 ::: pf-proof
 
-Step [](#hypothesis){.pf-ref} verifies the hypothesis of the first clause of Dan--Kaur's Theorem 3.3 for $Z=X$.
-Dan--Kaur apply it in the first sentence of their proof of Theorem 1.1, printed p. 4: "The existence of a smooth hypersurface in $\PP^{2n+1}$ containing $Z$ for $d\gg0$ follows from Theorem 3.3."
-So for every $d\gg0$ there is a smooth hypersurface $F\subseteq\PP^3$ of degree $d$ containing $X$.
-A hypersurface of $\PP^3$ is a surface, and Dan--Kaur's "smooth" is nonsingularity, so $F$ is a nonsingular surface of degree $d$ containing $X$, for every $d\gg0$, which is the assertion of the exercise.
+Fix $m\ge m_0$ of step [](#regularity){.pf-ref}.
+Step [](#hypothesis){.pf-ref} verifies the hypothesis of the first clause of Dan--Kaur's Theorem 3.3 for $Z=X$, and step [](#regularity){.pf-ref} supplies the hypothesis of its second clause, $X$ being $m-1$-regular.
+Applying the second clause of Theorem 3.3, printed p. 3, to $Z=X$, $d=m$ and $n=1$ gives a smooth hypersurface $F\subseteq\PP^3$ of degree $m$ containing $X$; Dan--Kaur draw the same conclusion in the first sentence of their proof of Theorem 1.1, printed p. 4: "The existence of a smooth hypersurface in $\PP^{2n+1}$ containing $Z$ for $d\gg0$ follows from Theorem 3.3."
+A hypersurface of $\PP^3$ is a surface, and Dan--Kaur's "smooth" is nonsingularity, so $F$ is a nonsingular surface of degree $m$ containing $X$, for every $m\ge m_0$, which is the assertion of the exercise.
 
 :::
 
