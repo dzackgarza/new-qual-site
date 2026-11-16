@@ -66,7 +66,7 @@ audit:
     e84fd60496037db45bb18457b7c922233f5912a41b5d067112ba75a8211c22a7, Problem 1, printed p. 1. Its
     Problem 1 states both that $M$ and $N$ are orientable if and only if $M\times N$ is and that
     $\alpha\times\beta$ is a fundamental class when $\alpha,\beta$ are, and proves them: the local
-    cross product $H_m(M\mid x)\otimes H_n(N\mid y)\to H_{m+n}(M\times N\mid x\times y)$ is an isomorphism by the
+    cross product $H_m(M|x)\otimes H_n(N|y)\to H_{m+n}(M\times N|x\times y)$ is an isomorphism by the
     relative Künneth theorem, for $R=\ZZ$ at a point and after replacing points by closed balls; the
     product of orientations is an orientation of $M\times N$; and for closed manifolds the Künneth
     formula for $M\times N$ leaves $H_m(M)\otimes H_n(N)$. So this is a complete published solution
@@ -90,7 +90,7 @@ audit:
     together with Hatcher's local definition on p. 236 --- is the one used to conclude. Filled, since
     the source leaves it to one sentence: the passage from $R=\ZZ$ to an arbitrary commutative ring,
     done on the card from Theorem 3A.3 (printed p. 264) applied to the free complex $C_*(M,M-x)$,
-    which gives $H_m(M\mid x;R)\cong\ZZ\otimes_\ZZ R$ with the generator $\zeta_x\otimes1$, together with
+    which gives $H_m(M|x;R)\cong\ZZ\otimes_\ZZ R$ with the generator $\zeta_x\otimes1$, together with
     Proposition 3B.1 and the tensor identification used on p. 276 for the coefficient change. The
     earlier proof is replaced, not kept alongside: it reached the same conclusion through charts and
     excision of the pair $(M\times N,M\times N-\{(x,y)\})$, and its ring step, on the ball pair, was
@@ -135,7 +135,7 @@ audit:
     fundamental class on p. 236, Theorem 3A.3 on p. 264 and Corollary A.12 on p. 529 read as the card
     uses them. (4) Two uses of a global computation assumed connectedness without saying so. Theorem
     3.26(a) on printed p. 236 is stated for a closed *connected* manifold, so it gives the isomorphism
-    $H_{m+n}(M\times N;R)\to H_{m+n}(M\times N\mid (x,y);R)$ only for connected $M$ and $N$; and
+    $H_{m+n}(M\times N;R)\to H_{m+n}(M\times N\,||\,(x,y);R)$ only for connected $M$ and $N$; and
     $H_{m+n}(M\times N;\ZZ)\cong\ZZ$ needs $M$ and $N$ connected as well as $\ZZ$-orientable, an
     $R$-orientable manifold with $R=\ZZ/2$ such as $\RP^2$ having $H_2(\RP^2;\ZZ)=0$
     and so no $\ZZ$ fundamental class. The card now states both hypotheses where they are used, and
@@ -154,7 +154,7 @@ audit:
     card, which is not what the book prints --- p. 234 and p. 236 print `H_n(M|x;R)`, a single bar ---
     and is a raw bar in mathematics, which STYLE-04 forbids and the shared pre-commit hook rejects for
     a changed card. It is now written with the vocabulary macro, $H_n(M\mid x;R)$, which is also how
-    `E-HAT-3.3-15` writes the same symbol. All ten raw-bar spans of the card are converted, and the
+    $E-HAT-3.3-15$ writes the same symbol. All ten raw-bar spans of the card are converted, and the
     sentence calling `M\,||\,x` Hatcher's notation is now true of $M\mid x$. Checked with
     `tools/qualc/authoring.py`'s `raw_notation`, which reports no remaining raw form on this card, and
     with `qualc.authoring check`.
@@ -225,6 +225,44 @@ audit:
     the `solution-written` event of that date, not in a `source-checked` one; the two events are the
     two dated 2026-11-13 events named in the reader's report, and the substitution and its original
     text are as that event gives them. Nothing else changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, fourth pass on this card: the dated record, and one citation.
+    Four dated events are restored to the text they carried at their date, each of which
+    a later commit had rewritten in place, and the corrections those restorations make
+    necessary are stated here. (1) The `source-checked` and `solution-written` events of
+    2026-11-13 are restored to the text they had before commit 039cb8ebb9, with the raw
+    `|` of Hatcher's local group as the session of that day wrote it; 039cb8ebb9
+    substituted `\mid` in both spans, and the third-pass event of this date recorded the
+    substitution instead of undoing it. (2) The `source-corrected` event of 2026-11-16
+    that commit 58a42f4703 pushed is restored to that commit's text; eb71d67906 rewrote
+    it in place and e945aab1c4 rewrote it again. The second-pass event of this date says
+    of that text that it stands "verbatim" with its sentence "respectively Hatcher 3.B.4,
+    3.3.21 and 3.B.3" included, and that sentence is now true of the record. The third
+    attribution in it is false, and this is its correction: §3.B of the book stops at
+    Exercise 5 on printed p. 280, and Kottke's Problem 3 is the cap and cross product
+    formula of the set, whose opening line on printed p. 3 carries the set's own update
+    about its sign, not a Hatcher exercise. The two sentences eb71d67906 added --- that
+    the hyphen of the book's "R-orientable" is the card's, and that Problem 3 is not a
+    §3.B exercise --- do not reappear: they were never in the event 58a42f4703 pushed,
+    and the first of them is false, printed p. 280 carrying the hyphen. (3) The `Markup
+    only` event of 2026-11-16 is restored to the text commit 039cb8ebb9 wrote, with the
+    card identifier in math mode as that session wrote it; e945aab1c4 changed it to a
+    code span in place. (4) Kottke's set does have a text version, and the card now names
+    it in both places where it cites the set: `tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.md`,
+    whose header reads "PDF pages 1-5", Problem 1 opening on its first page, the same five
+    pages as the PDF of that name. The restored 2026-11-16 event says the set "has no
+    `.md` version in `tmp/sources`", and the closing citation of the solution said the
+    same; the record stands as its session wrote it, and this event and that citation are
+    the correction. (5) The audit block is a record, so the style rules are no longer
+    applied to it: the raw bars restored in (1) stand as written, and the card's body,
+    which keeps the vocabulary macro $H_n(M\mid x;R)$, is still checked. Checked in this
+    pass: the text of each restored event against the commit named for it, and the text
+    version of Kottke's set, `PDF pages 1-5` and Problem 1 on its opening page. Not
+    checked: no page of any source was read from a rendered page in this pass, and
+    nothing in the statement or the proof changed.
 ---
 
 ::: {.problem}
@@ -232,7 +270,7 @@ Show that the cross product of fundamental classes for closed $R$-orientable man
 :::
 
 ::: {.solution}
-The proof below is **C. Kottke, *Math 2420 Problem Set 3 solutions*, Brown University, Spring 2012, Problem 1, printed p. 1** (`tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.pdf`), transcribed. That problem proves two things: that $M$ and $N$ are orientable if and only if $M\times N$ is, and that $\alpha\times\beta$ is a fundamental class for $M\times N$. The exercise here is the second, which is Exercise 4 of §3.B, printed p. 280. The one step the source leaves is its passage from $R=\ZZ$ to an arbitrary commutative ring, made in a single sentence --- "it still holds that the product of generators is a generator (i.e. $\pm1\times1=\pm1$ still holds in (1))" --- and it is filled in *The coefficient ring* below from Hatcher's universal coefficient theorem, printed p. 264.
+The proof below is **C. Kottke, *Math 2420 Problem Set 3 solutions*, Brown University, Spring 2012, Problem 1, printed p. 1** (text version `tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.md`, extracted from the set's PDF), transcribed. That problem proves two things: that $M$ and $N$ are orientable if and only if $M\times N$ is, and that $\alpha\times\beta$ is a fundamental class for $M\times N$. The exercise here is the second, which is Exercise 4 of §3.B, printed p. 280. The one step the source leaves is its passage from $R=\ZZ$ to an arbitrary commutative ring, made in a single sentence --- "it still holds that the product of generators is a generator (i.e. $\pm1\times1=\pm1$ still holds in (1))" --- and it is filled in *The coefficient ring* below from Hatcher's universal coefficient theorem, printed p. 264.
 
 Let $R$ be a commutative ring with identity, let $M^m$ and $N^n$ be closed $R$-orientable manifolds with fundamental classes $\alpha\in H_m(M;R)$ and $\beta\in H_n(N;R)$, and write $\alpha_x$, $\beta_y$ for their images in the local groups at $x\in M$ and $y\in N$. Write $H_m(M\mid x;R)=H_m(M,M-x;R)$, Hatcher's notation for the local group (printed p. 234).
 
@@ -273,5 +311,5 @@ $$
 $$
 and by *The coefficient ring* this is a generator whenever $\alpha_x$ and $\beta_y$ are. So $\alpha\times\beta$ has a generator as its image in every local group, which by Hatcher's definition of a fundamental class (printed p. 236) is exactly that $\alpha\times\beta$ is a fundamental class for $M\times N$ with coefficients in $R$.
 
-Hatcher's pages above are cited from the checked-in text of the book, `tmp/sources/hatcher-2002-algebraic-topology.md`, and Kottke's set has no text version in `tmp/sources`; it was read from the PDF's own text layer at `tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.pdf`.
+Hatcher's pages above are cited from the checked-in text of the book, `tmp/sources/hatcher-2002-algebraic-topology.md`, and Kottke's set from its text version, `tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.md`, the extraction of the set's own five-page PDF `tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.pdf` (sha256 e84fd60496037db45bb18457b7c922233f5912a41b5d067112ba75a8211c22a7).
 :::
