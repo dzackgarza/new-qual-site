@@ -169,17 +169,6 @@ HEADING = re.compile(r"^(?P<marks>#{1,6})\s")
 # first in the bold or italic lead that opens it.
 SECTION_DAY = re.compile(r"^#{1,6}\s+(\d{4}-\d{2}-\d{2}):")
 NUMBERED = re.compile(r"^(?P<indent>[ \t]*)\d+\.\s")
-# The sections QUAL-11 restored to the heading their own day gave them. A session of
-# 2026-11-16 moved each day to the front of its heading to follow the format, which
-# rewrites a dated record, so the restoration puts the heading back and the day stands
-# mid-title where that day left it. The gate reads those days here rather than lose the
-# three records: a heading that names a day after its first word is read through this
-# table and nowhere else.
-RESTORED_SECTIONS: dict[str, date] = {
-    "## `SRC-TEXT-HART77`: the #121 pass of 2026-11-15, the cards listed, and what the sources outside the retained sets proved": date(2026, 11, 15),
-    "## `SRC-TEXT-HART77` #121: the remaining cards against the MinerU text versions, second pass (2026-11-15)": date(2026, 11, 15),
-    "## `SRC-TEXT-HART77` #121: the third pass of 2026-11-15, four repairs and the next two cards": date(2026, 11, 15),
-}
 
 
 @dataclass(frozen=True)
@@ -265,11 +254,6 @@ def audit_records(source: str) -> list[AuditRecord]:
     return [AuditRecord(day=_audit_day(event), text=_audit_text(event)) for event in events]
 
 
-def event_notes(source: str) -> list[str]:
-    """The note of each audit event in one revision's card text."""
-    return [record.text[3] for record in audit_records(source)]
-
-
 def authored_prose(source: str) -> str:
     """A card's source without its `audit:` block.
 
@@ -301,30 +285,46 @@ def _folded(text: str) -> str:
     return " ".join(text.split())
 
 
-def earlier_texts(path: Path, revision: str, texts: set[str], records: Callable[[str], list[str]]) -> set[str]:
-    """Those of `texts` that stand as a record in an earlier revision of `path`.
+def earlier_event_notes(path: Path, revision: str, identity: tuple[date, str, str], notes: set[str]) -> set[str]:
+    """Those of `notes` that stood as a note of the events `identity` names, in an earlier revision of `path`.
 
     The one change QUAL-11 allows to a dated record is a return to the text it carried
-    when it was written, and the evidence for that is the text itself standing in the
-    history of the same path. It has to be the whole record and not a passage of one: a
-    record cut down to a prefix of what it said is not a restoration of it, and a
-    containment test would accept exactly that. Both sides are compared with their
-    whitespace folded, because an authored note that wraps is recorded as one line.
-    `records` reads the record texts out of one revision's text. This runs only where a
+    when it was written, and the evidence for that is that text standing in the history of
+    the same path under the same day, kind and author. It has to be the whole note and not
+    a passage of one: a note cut down to a prefix of what it said is not a restoration of
+    it, and a containment test would accept exactly that. Both sides are compared folded,
+    because an authored note that wraps is recorded as one line. This runs only where a
     dated record is about to be reported, so an ordinary commit pays nothing.
+    """
+    wanted = {_folded(note): note for note in notes if note}
+    found: set[str] = set()
+    for standing in earlier_versions(path, revision):
+        if not wanted:
+            break
+        notes_then = {_folded(record.text[3]) for record in audit_records(standing) if record.day == identity[0] and record.text[:2] == identity[1:]}
+        found |= {original for folded, original in wanted.items() if folded in notes_then}
+        wanted = {folded: original for folded, original in wanted.items() if original not in found}
+    return found
+
+
+def earlier_complaint_records(path: Path, revision: str, day: date, texts: set[str]) -> set[str]:
+    """Those of `texts` that stood as a record of `day` in an earlier revision of `path`.
+
+    The same rule as `earlier_event_notes`, over the whole record rather than a note of
+    one.
     """
     wanted = {_folded(text): text for text in texts if text}
     found: set[str] = set()
     for standing in earlier_versions(path, revision):
         if not wanted:
             break
-        standing_records = {_folded(record) for record in records(standing)}
-        found |= {original for folded, original in wanted.items() if folded in standing_records}
+        records_then = {_folded(record) for record_day, record in dated_records(standing) if record_day == day}
+        found |= {original for folded, original in wanted.items() if folded in records_then}
         wanted = {folded: original for folded, original in wanted.items() if original not in found}
     return found
 
 
-def rewritten_audit_events(path: Path, before: str, after: str, day: date, earlier: Callable[[set[str]], set[str]] | None = None) -> list[str]:
+def rewritten_audit_events(path: Path, before: str, after: str, day: date, earlier: Callable[[tuple[date, str, str], set[str]], set[str]]) -> list[str]:
     """Audit events dated before the commit whose text it changes or removes (QUAL-11).
 
     An event dated before the commit records what a session found on that day, and the
@@ -334,23 +334,30 @@ def rewritten_audit_events(path: Path, before: str, after: str, day: date, earli
     accepted, and an event restored to a note that stood for that event in an earlier
     revision of the path is the repair QUAL-11 asks for rather than a rewrite of it —
     which is why an edit made in place earlier in the branch can still be undone.
+
+    A day, a kind and an author do not identify an event when a card states two of them,
+    so the group is judged together and only as a restoration: every note it now stands
+    for has to have stood for that group in an earlier revision. Restoring one event
+    therefore cannot excuse the rewrite of another beside it.
     """
-    kept = Counter(record.text for record in audit_records(after))
-    later = audit_records(after)
-    errors: list[str] = []
+    standing = Counter(record.text for record in audit_records(after))
+    lost: dict[tuple[date, str, str], list[tuple[str, ...]]] = {}
     for record in audit_records(before):
         if record.day is None or record.day >= day:
             continue
-        if kept[record.text]:
-            kept[record.text] -= 1
+        if standing[record.text]:
+            standing[record.text] -= 1
             continue
-        candidates = [other for other in later if other.day == record.day and other.text[:2] == record.text[:2]]
-        restored = earlier({other.text[3] for other in candidates}) if earlier is not None and candidates else set()
-        if any(other.text[3] in restored for other in candidates):
+        lost.setdefault((record.day, record.text[0], record.text[1]), []).append(record.text)
+    later = audit_records(after)
+    errors: list[str] = []
+    for identity, records in lost.items():
+        notes = {record.text[3] for record in later if record.day == identity[0] and record.text[:2] == identity[1:]}
+        if notes and notes <= earlier(identity, notes):
             continue
-        kind, by, _, note = record.text
-        said = f", whose note begins {excerpt!r}," if (excerpt := " ".join(note.split())[:60]) else ""
-        errors.append(f"{path}: the {kind} event by {by} dated {record.day}{said} was changed or deleted; a dated event records what that session found, so a correction is a new event dated {day} (QUAL-11)")
+        for kind, by, _, note in records:
+            said = f", whose note begins {excerpt!r}," if (excerpt := " ".join(note.split())[:60]) else ""
+            errors.append(f"{path}: the {kind} event by {by} dated {identity[0]}{said} was changed or deleted; a dated event records what that session found, so a correction is a new event dated {day} (QUAL-11)")
     return errors
 
 
@@ -430,14 +437,14 @@ def dated_records(source: str) -> list[tuple[date, str]]:
     items of a list are records one by one even where no blank line separates them. A
     day the record merely mentions follows its own, and a lead that carries no day
     records none, so the bullets of an entry are not records in their own right. A
-    heading QUAL-11 restored to the text its day gave it states that day mid-title, and
-    `RESTORED_SECTIONS` supplies it.
+    heading states its day first or is not a record, so no day is read out of the middle
+    of a title.
     """
     lines = source.splitlines()
     headings = [(index, len(match["marks"])) for index, line in enumerate(lines) if (match := HEADING.match(line))]
     records: list[tuple[date, str]] = []
     for position, (start, level) in enumerate(headings):
-        day = _record_day(SECTION_DAY.match(lines[start])) or RESTORED_SECTIONS.get(lines[start])
+        day = _record_day(SECTION_DAY.match(lines[start]))
         if day is None:
             continue
         end = len(lines)
@@ -462,32 +469,33 @@ def dated_records(source: str) -> list[tuple[date, str]]:
     return list(dict.fromkeys(records))
 
 
-
-
-def record_texts(source: str) -> list[str]:
-    """The text of each dated record in one revision's COMPLAINTS text."""
-    return [record for _, record in dated_records(source)]
-
-
-def rewritten_complaint_records(path: Path, before: str, after: str, day: date, earlier: Callable[[set[str]], set[str]] | None = None) -> list[str]:
+def rewritten_complaint_records(path: Path, before: str, after: str, day: date, earlier: Callable[[date, set[str]], set[str]]) -> list[str]:
     """Dated COMPLAINTS records a commit changes or deletes (QUAL-11).
 
     A record dated before the commit is kept as it stands; text appended after it leaves
     it intact, and editing a word of it or removing it does not. A record dated the
     commit's own day is still in flight, and a record restored to the text it carried on
     its day — text that stands in an earlier revision of this file — is that repair.
+
+    Records that share a day are judged together, for the reason given on
+    `rewritten_audit_events`: the day is the whole of what identifies them, so the group
+    is a restoration only when every record now standing for that day stood in an earlier
+    revision, and restoring one cannot excuse the rewrite of another.
     """
-    errors: list[str] = []
-    later = dated_records(after)
+    lost: dict[date, list[str]] = {}
     for record_day, text in dated_records(before):
         if record_day >= day or text in after:
             continue
-        same_day = [other for other_day, other in later if other_day == record_day]
-        restored = earlier(set(same_day)) if earlier is not None and same_day else set()
-        if any(other in restored for other in same_day):
+        lost.setdefault(record_day, []).append(text)
+    later = dated_records(after)
+    errors: list[str] = []
+    for record_day, records in lost.items():
+        present = {text for other_day, text in later if other_day == record_day}
+        if present and present <= earlier(record_day, present):
             continue
-        said = " ".join(text.split())[:60]
-        errors.append(f"{path}: the record dated {record_day}, beginning {said!r}, was changed or deleted; a dated record states what that day found, so a correction is a new record dated {day} (QUAL-11)")
+        for text in records:
+            said = " ".join(text.split())[:60]
+            errors.append(f"{path}: the record dated {record_day}, beginning {said!r}, was changed or deleted; a dated record states what that day found, so a correction is a new record dated {day} (QUAL-11)")
     return errors
 
 
@@ -579,9 +587,9 @@ def removal_errors(version: str, base: str) -> list[str]:
         path = Path(name)
         before = previous_source(path, base)
         if path == COMPLAINTS:
-            errors.extend(rewritten_complaint_records(path, before, "", day, lambda texts, path=path: earlier_texts(path, base, texts, record_texts)))
+            errors.extend(rewritten_complaint_records(path, before, "", day, lambda record_day, texts, path=path: earlier_complaint_records(path, base, record_day, texts)))
         elif path.suffix == ".md":
-            errors.extend(rewritten_audit_events(path, before, "", day, lambda texts, path=path: earlier_texts(path, base, texts, event_notes)))
+            errors.extend(rewritten_audit_events(path, before, "", day, lambda identity, notes, path=path: earlier_event_notes(path, base, identity, notes)))
     return errors
 
 
@@ -626,11 +634,11 @@ def changed_audit_events(selected: list[tuple[GitChange, str]], base: str) -> li
             earlier = moves.get(change.path, change.path)
             if earlier == change.path and not previous_source(earlier, base) and (card_id := source_identity(source)) is not None:
                 earlier = retired.get(card_id, change.path)
-            errors.extend(rewritten_audit_events(change.path, previous_source(earlier, base), source, day, lambda texts, path=change.path: earlier_texts(path, base, texts, event_notes)))
+            errors.extend(rewritten_audit_events(change.path, previous_source(earlier, base), source, day, lambda identity, notes, path=change.path: earlier_event_notes(path, base, identity, notes)))
     return errors
 
 
-def check_git_changes(changes: list[GitChange], base: str, versions: tuple[str, ...] = ()) -> int:
+def check_git_changes(changes: list[GitChange], base: str, versions: tuple[str, ...]) -> int:
     """Validate card, wiki and complaint blobs selected by the shared hook or a range check.
 
     Diagrams are compiled here because the site build is the only other place
@@ -639,13 +647,13 @@ def check_git_changes(changes: list[GitChange], base: str, versions: tuple[str, 
     `base` is the revision every changed blob is compared with: the parent of the staged
     index, or the base of an outgoing range. The caller names it, because the two
     selections have different ancestors. `versions` names the trees whose deletions are
-    compared with `base`; it defaults to the versions the changes carry, and a caller
-    whose path list can be empty names its own.
+    compared with `base`; every caller names them, because the paths such a caller hands
+    over are the ones that survive the change, so a commit that only deletes has none.
     """
     cards = [change for change in changes if change.path.parts[0] in ("corpus", "wiki") and change.path.suffix == ".md"]
     complaints = [change for change in changes if change.path == COMPLAINTS]
     errors: list[str] = []
-    for version in versions or tuple(dict.fromkeys(change.version for change, _ in changes)):
+    for version in versions:
         errors.extend(removal_errors(version, base))
     bodies: list[tuple[Path, str]] = []
     selected: list[tuple[GitChange, str]] = []
@@ -675,7 +683,7 @@ def check_git_changes(changes: list[GitChange], base: str, versions: tuple[str, 
     for change in complaints:
         revision = "" if change.version == "index" else change.version
         source = subprocess.run(["git", "show", f"{revision}:{COMPLAINTS.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
-        errors.extend(rewritten_complaint_records(COMPLAINTS, previous_source(COMPLAINTS, base), source, commit_day(change.version), lambda texts: earlier_texts(COMPLAINTS, base, texts, record_texts)))
+        errors.extend(rewritten_complaint_records(COMPLAINTS, previous_source(COMPLAINTS, base), source, commit_day(change.version), lambda record_day, texts: earlier_complaint_records(COMPLAINTS, base, record_day, texts)))
     errors.extend(unread_math_errors(bodies))
     if errors:
         print("\n".join(errors), file=sys.stderr)

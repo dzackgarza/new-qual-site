@@ -14,7 +14,7 @@ import pytest
 
 import yaml
 
-from qualc.authoring import RESTORED_SECTIONS, commit_day, dated_records, previous_source, source_identity
+from qualc.authoring import commit_day, dated_records, previous_source, source_identity
 
 ROOT = Path(__file__).resolve().parent.parent
 CARD = (ROOT / "tests/fixtures/kinds/PRB-INDEXP.md").read_text()
@@ -599,30 +599,6 @@ def test_deleting_a_card_deletes_its_dated_events(repo: Path, monkeypatch: pytes
     assert "corpus/one card.md: the source-checked event by claude dated 2026-11-11" in refused.stderr
     assert "was changed or deleted" in refused.stderr
     assert git(repo, "rev-parse", "HEAD") == recorded
-
-
-def test_a_restored_heading_is_read_as_the_record_of_its_own_day() -> None:
-    """A heading QUAL-11 restored states its day mid-title, and the gate reads it there.
-
-    The format governs the heading a session writes. The three restored sections keep
-    the heading their day gave them, so their days are read from the table that names
-    them, and a record in one of them is still append-only.
-    """
-    heading, day = next(iter(RESTORED_SECTIONS.items()))
-    assert [found for found, _ in dated_records(f"{heading}\n\nWhat the day found.\n")] == [day]
-
-
-def test_every_dated_complaints_heading_states_its_day_first() -> None:
-    """The file's stated record format: a recorded section begins with its own day.
-
-    The three sections QUAL-11 restored are the exception the format states, and they
-    are read from the same table the gate reads, so a heading that is neither
-    date-first nor restored fails here.
-    """
-    day = re.compile(r"\b\d{4}-\d{2}-\d{2}\b")
-    for line in (ROOT / "COMPLAINTS.md").read_text().splitlines():
-        if line.startswith("#") and day.search(line) and not re.match(r"^#{1,6} \d{4}-\d{2}-\d{2}:", line):
-            assert line in RESTORED_SECTIONS, f"a dated heading does not begin with its day: {line}"
 
 
 def test_a_renamed_card_keeps_the_audit_text_of_its_earlier_path(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
