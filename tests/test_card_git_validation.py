@@ -12,7 +12,9 @@ from pathlib import Path
 
 import pytest
 
-from qualc.authoring import commit_day, previous_source
+import yaml
+
+from qualc.authoring import RESTORED_SECTIONS, commit_day, dated_records, previous_source, source_identity
 
 ROOT = Path(__file__).resolve().parent.parent
 CARD = (ROOT / "tests/fixtures/kinds/PRB-INDEXP.md").read_text()
@@ -69,6 +71,19 @@ Add a descriptive heading with the observed evidence.
 ## 2026-11-09: an older section
 
 Another observation.
+"""
+
+# A numbered list in the stated record format: two items with no blank line between
+# them, the first carrying a continuation line, the second a paragraph of evidence.
+NUMBERED_COMPLAINTS = """# Mathematical issues and papercuts
+
+## Open findings
+
+7. **Published-solution coverage gaps — open, 2026-11-07.** These are source obligations,
+   not claims that the displayed mathematics is false.
+8. **A later item, 2026-11-08.** Its own text stands here.
+
+   *Searched, and found nothing.* The evidence the item records.
 """
 
 
@@ -403,12 +418,121 @@ def test_a_dated_complaints_record_is_append_only(repo: Path, monkeypatch: pytes
     assert git(repo, "show", "HEAD:COMPLAINTS.md") == in_flight
 
 
+def test_a_numbered_complaint_is_one_record_with_its_continuation(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """QUAL-11 protects the numbered item, and the evidence it holds is part of it.
+
+    The items of a list are records one by one even where no blank line separates them,
+    and an item's continuation line and evidence are what the item records. Splitting
+    the file at blank lines would protect only the item's opening line and leave its
+    evidence editable or deletable.
+    """
+    path = repo / "COMPLAINTS.md"
+    path.write_text(NUMBERED_COMPLAINTS)
+    git(repo, "add", "COMPLAINTS.md")
+    git(repo, "commit", "-qm", "record the findings")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+
+    evidence = NUMBERED_COMPLAINTS.replace("The evidence the item records.", "The evidence the item records, checked twice.")
+    path.write_text(evidence)
+    git(repo, "add", "COMPLAINTS.md")
+    refused = check(repo, "check-staged")
+    assert refused.returncode == 1, refused.stdout
+    assert "COMPLAINTS.md: the record dated 2026-11-08" in refused.stderr
+    assert "QUAL-11" in refused.stderr
+
+    continuation = NUMBERED_COMPLAINTS.replace(
+        "These are source obligations,\n   not claims that the displayed mathematics is false.",
+        "These are source obligations.",
+    )
+    path.write_text(continuation)
+    git(repo, "add", "COMPLAINTS.md")
+    refused = check(repo, "check-staged")
+    assert refused.returncode == 1, refused.stdout
+    assert "COMPLAINTS.md: the record dated 2026-11-07" in refused.stderr
+
+    removed = NUMBERED_COMPLAINTS.replace("\n   *Searched, and found nothing.* The evidence the item records.\n", "")
+    path.write_text(removed)
+    git(repo, "add", "COMPLAINTS.md")
+    refused = check(repo, "check-staged")
+    assert refused.returncode == 1, refused.stdout
+    assert "COMPLAINTS.md: the record dated 2026-11-08" in refused.stderr
+
+    path.write_text(NUMBERED_COMPLAINTS + "\n9. **A correction, 2026-11-16.** The record stands.\n")
+    git(repo, "add", "COMPLAINTS.md")
+    appended = check(repo, "check-staged")
+    assert appended.returncode == 0, appended.stderr
+
+
+def test_deleting_the_complaints_file_is_refused(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """Deleting COMPLAINTS.md deletes every dated record it states (QUAL-11).
+
+    The shared hook's payload lists only the paths that survive a change, so a commit
+    that deletes the file gives the gate nothing to compare; the deletion is read from
+    Git's own diff instead.
+    """
+    path = repo / "COMPLAINTS.md"
+    path.write_text(COMPLAINTS)
+    git(repo, "add", "COMPLAINTS.md")
+    git(repo, "commit", "-qm", "record findings")
+    install_gate(repo)
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+    recorded = git(repo, "rev-parse", "HEAD")
+
+    git(repo, "rm", "-q", "COMPLAINTS.md")
+    refused = subprocess.run(["git", "commit", "-qm", "drop the complaints file"], cwd=repo, capture_output=True, text=True)
+
+    assert refused.returncode != 0, refused.stdout
+    assert "COMPLAINTS.md: the record dated 2026-11-10" in refused.stderr
+    assert "QUAL-11" in refused.stderr
+    assert git(repo, "rev-parse", "HEAD") == recorded
+    assert "D  COMPLAINTS.md" in git(repo, "status", "--porcelain")
+
+
+def test_deleting_a_card_deletes_its_dated_events(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """A card's dated events are deleted with the card, so the deletion is refused.
+
+    The path is gone from the commit, so there is no blob to read for the comparison:
+    the earlier text is read at the base and its events are compared with nothing.
+    """
+    card = repo / "corpus/one card.md"
+    card.write_text(RECORDED)
+    git(repo, "add", "corpus/one card.md")
+    git(repo, "commit", "-qm", "record a dated event")
+    install_gate(repo)
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+    recorded = git(repo, "rev-parse", "HEAD")
+
+    git(repo, "rm", "-q", "corpus/one card.md")
+    refused = subprocess.run(["git", "commit", "-qm", "drop the card"], cwd=repo, capture_output=True, text=True)
+
+    assert refused.returncode != 0, refused.stdout
+    assert "corpus/one card.md: the source-checked event by claude dated 2026-11-11" in refused.stderr
+    assert "was changed or deleted" in refused.stderr
+    assert git(repo, "rev-parse", "HEAD") == recorded
+
+
+def test_a_restored_heading_is_read_as_the_record_of_its_own_day() -> None:
+    """A heading QUAL-11 restored states its day mid-title, and the gate reads it there.
+
+    The format governs the heading a session writes. The three restored sections keep
+    the heading their day gave them, so their days are read from the table that names
+    them, and a record in one of them is still append-only.
+    """
+    heading, day = next(iter(RESTORED_SECTIONS.items()))
+    assert [found for found, _ in dated_records(f"{heading}\n\nWhat the day found.\n")] == [day]
+
+
 def test_every_dated_complaints_heading_states_its_day_first() -> None:
-    """The file's stated record format: a dated section begins with its own day."""
+    """The file's stated record format: a recorded section begins with its own day.
+
+    The three sections QUAL-11 restored are the exception the format states, and they
+    are read from the same table the gate reads, so a heading that is neither
+    date-first nor restored fails here.
+    """
     day = re.compile(r"\b\d{4}-\d{2}-\d{2}\b")
     for line in (ROOT / "COMPLAINTS.md").read_text().splitlines():
         if line.startswith("#") and day.search(line) and not re.match(r"^#{1,6} \d{4}-\d{2}-\d{2}:", line):
-            pytest.fail(f"a dated heading does not begin with its day: {line}")
+            assert line in RESTORED_SECTIONS, f"a dated heading does not begin with its day: {line}"
 
 
 def test_a_renamed_card_keeps_the_audit_text_of_its_earlier_path(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
@@ -574,6 +698,9 @@ def test_push_rejects_a_deleted_card_that_is_still_referenced(repo: Path) -> Non
     )
     git(repo, "add", "-A")
     git(repo, "commit", "-qm", "reference the card")
+    # The push gate replays the commits above the branch's upstream, so a deletion-only
+    # range still has a base to read the deleted text at.
+    track(repo, git(repo, "rev-parse", "HEAD").strip())
 
     def push() -> subprocess.CompletedProcess[str]:
         # A deletion-only range gives the shared hook no changed card to send.
@@ -665,6 +792,20 @@ def test_the_push_gate_needs_the_branch_upstream(repo: Path) -> None:
     result = run_push(repo, tip, "corpus/one card.md")
     assert result.returncode != 0
     assert "upstream" in result.stderr
+
+
+def test_a_malformed_id_line_is_reported_rather_than_read_as_no_identity() -> None:
+    """The id is read without validating the rest of the header, and not by swallowing it.
+
+    A deleted blob is read for the card it held. If a YAML error on its id line read as
+    "no identity", a move of that card would silently compare nothing, so the error is
+    raised and the commit that touches the card reports it. Only a header with no id
+    line, or an id that is not a nonempty scalar, has no identity to match.
+    """
+    with pytest.raises(yaml.YAMLError):
+        source_identity(CARD.replace("id: PRB-INDEXP\n", "id: [PRB-INDEXP\n"))
+    assert source_identity(CARD.replace("id: PRB-INDEXP\n", "")) is None
+    assert source_identity(CARD.replace("id: PRB-INDEXP\n", "id:\n")) is None
 
 
 def test_a_missing_revision_raises_rather_than_reading_as_an_empty_source(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
