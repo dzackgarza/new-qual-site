@@ -173,6 +173,21 @@ audit:
     Not checked: Harris's §1 and §§3--§5, which the card does not use, and no
     published proof of the equality case of Clifford's theorem beyond these two
     entries was sought.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    One sentence of step trivial-canonical-pg-one is corrected in the event
+    above this one: it repeated Yang's reason for |12K| nonempty without
+    naming it as his. Yang, printed p. 115, has "Since X is not contained in
+    any hyperplane, it is not a ruled surface. Then by theorem 6.2, we have
+    |12K| != 0." A ruled surface in PP^{n+1} can be nondegenerate -- P^1 x P^1
+    in PP^3 is, of degree 2 = 2n for n = 2 -- so the inference is false as a
+    general statement, and Egbert, printed p. 303, assumes X not ruled instead
+    of deriving it. The step now names the inference as Yang's and not true in
+    general, and records that the card does not need it: p_g(X) > 0 makes K_X
+    effective, hence |12K_X| nonempty, in this case. Nothing else changes; no
+    other step or line was read in this pass.
 ---
 
 ::: {.problem}
@@ -538,13 +553,16 @@ h^0(X,\omega_X)
 =1.
 $$
 
-Yang, printed p. 115, and Egbert, printed p. 303, record what follows from
-$H\cdot K_X=0$: $X$ is not ruled, so $\linearsystem{12K_X}$ is not empty by
-Theorem 6.2, printed p. 422; since $H\cdot(12K_X)=0$ with $H$ ample, the
-effective divisor in $\linearsystem{12K_X}$ is zero, so $12K_X\sim0$, and
-both record $\kappa(X)=0$ by Theorem 6.3, printed p. 422. The passage above,
-from an effective divisor of class $K_X$ meeting the ample class $A$ in zero
-to $\omega_X\cong\OO_X$ and $p_g(X)=1$, is the card's own.
+Yang, printed p. 115, and Egbert, printed p. 303, then have
+$\linearsystem{12K_X}$ nonempty by Theorem 6.2, printed p. 422, Yang's reason
+being that $X$, not being contained in a hyperplane, is not ruled --- which a
+ruled surface in $\PP^{n+1}$ need not satisfy, $\PP^1\times\PP^1$ in
+$\PP^3$ being one, and which is not needed here, since $p_g(X)>0$ already
+makes $K_X$ effective; with $H\cdot(12K_X)=0$ and $H$ ample the effective
+divisor in $\linearsystem{12K_X}$ is zero, so $12K_X\sim0$, and both record
+$\kappa(X)=0$ by Theorem 6.3, printed p. 422. The passage above, from an
+effective divisor of class $K_X$ meeting the ample class $A$ in zero to
+$\omega_X\cong\OO_X$ and $p_g(X)=1$, is the card's own.
 :::
 
 :::
