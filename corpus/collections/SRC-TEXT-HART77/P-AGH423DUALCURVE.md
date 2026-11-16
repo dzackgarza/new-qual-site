@@ -251,6 +251,59 @@ audit:
     and 3. No step is re-derived beyond that sentence, no source was reopened, and
     no part's conclusion changes; the pages and paths of the sources are those of
     the events above.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the #121 reader's report of this round: one slip of Reiser's copied
+    as if it were his result, five paragraphs of the card's own that stood inside
+    steps headed as his without being marked, and three statements the card was
+    making without saying whose they are.
+
+    Reiser's slips, each named on the card and not copied. His tangent-line formula
+    at printed p. 356 has $y-f(t_0)$ in the second factor, where the point of the
+    branch is $(f(t_0),g(t_0))$; step s1 now quotes it and names it. His dual
+    parametrization of (e) at printed p. 357, $t\mapsto[1:3ut^2+u't^3:
+    -(4ut^3+u't^4)]$, is wrong: the tangent line at $(ut^3,t)$ is
+    $x-(3ut^2+u't^3)y+(2ut^3+u't^4)z=0$, with dual point
+    $[1:-(3ut^2+u't^3):2ut^3+u't^4]$, which is what the card's own computation
+    ($v=2a_3t^3$) and his own formula of (b) at p. 356 both give. Step s10 now
+    says so; his conclusion, the cusp, is unaffected.
+
+    Marked as the card's own where no source has them. Step s4's finiteness
+    argument through the finitely many singular points of $X^*$, Reiser stating
+    only the conclusion. Step s7's count of the excluded points $O$, and its
+    unramifiedness of $\psi_O$ at $O$ read off the order of the slope
+    $a_2x+O(x^2)$, Reiser giving the degree $d-1$ and "the same argument as in
+    part (c)", where $O$ lies off $X$. Step s11's first paragraph, which was called
+    Reiser's and is the card's paraphrase of his sentence: his sentence is
+    "since we're in characteristic zero, this implies that $\varphi$ is in fact
+    birational", and the clause is what makes the inference valid, a finite
+    generically injective morphism in characteristic $p$ being able to be
+    inseparable. The paragraph now says that $\gamma$ is separable and quotes his
+    sentence in full. The pf-qed's general formula
+    $b+h=\frac12d(d-2)(d-3)(d+3)$ with hyperflexes, and its claim that at $d=4$
+    every tangent is an ordinary tangency, a bitangency, an inflection or a
+    hyperflex, are the card's own: no source treats a dual with hyperflex points,
+    Reiser having only $h=0$. Both are now marked in the qed, and the qed's first
+    sentence no longer says part (e) is a case of the identity: (e) supplies the
+    two inputs, $\deg\varphi=d(d-1)$ from step s8 and $f+2h=3d(d-2)$ from step s9.
+
+    Three further corrections. The published-solution remark said Reiser "solves
+    every part", where step s11 and this date's COMPLAINTS record say he says
+    nothing about the printed parenthetical of (h); it now says parts (a)--(g) and
+    the count of (h). The statement's hint of (f) was printed without the brackets
+    Hartshorne puts round the whole hint, and now carries them. The remark's
+    "$p_a$ computed twice" sentence is unchanged.
+
+    Where and how this pass read its source: Reiser in
+    tmp/sources/reiser-hartshorne-solutions-pp351-358.md, Exercise IV.2.3, part
+    (a)'s solution at line 110 of that file, the tangent-line formula and the
+    formal parametrization of the dual at lines 124--129, (e)'s dual
+    parametrization at line 150, and (f)'s normalization sentence at line 152,
+    printed pp. 355--358 with the printed folio one less than the PDF page of
+    tmp/sources/reiser-hartshorne-solutions.pdf; Bergvall's §2.2 and the book's
+    IV.2.3 were not re-read here, their pages being those of the events above.
 review: draft
 ---
 
@@ -290,9 +343,9 @@ If $r=3$ we call it an ordinary inflection point.)
 Show that an ordinary inflection point of $X$ corresponds to an ordinary cusp of the dual curve $X^*$.
 
 (f) Now let $X$ be a plane curve of degree $d \geq 2$, and assume that the dual curve $X^*$ has only nodes and ordinary cusps as singularities (which should be true for sufficiently general $X$). Then show that $X$ has exactly $\frac{1}{2} d(d-2)(d-3)(d+3)$ bitangents.
-Hint: Show that $X$ is the normalization of $X^*$.
+[Hint: Show that $X$ is the normalization of $X^*$.
 Then calculate $p_a(X^*)$ two ways: once as a plane curve of degree $d(d-1)$, and once using (Ex.
-1.8).
+1.8).]
 
 (g) For example, a plane cubic curve has exactly 9 inflection points, all ordinary.
 The line joining any two of them intersects the curve in a third one.
@@ -359,7 +412,7 @@ Reiser, Exercise IV.2.3(b), printed p. 356, computes the same tangent lines in p
 $$
 g'(t_0)\bigl(x-f(t_0)\bigr)-f'(t_0)\bigl(y-g(t_0)\bigr)=0,
 $$
-and for the branch $t\mapsto(ut^2,t)$ at a simple tangency he reads off the dual parametrization $t\mapsto[1:-(u't^2+2u(t)t):u't^3+u(t)t^2]$. The coordinates $(-h'(t),\,t h'(t)-h(t))$ are that line for a branch written as a graph, at contact order $r$.
+where he prints $y-f(t_0)$ in the second factor, the $y$-coordinate of the point of the branch at $t_0$ being $g(t_0)$; that is a slip of his, named here and not copied. For the branch $t\mapsto(ut^2,t)$ at a simple tangency he reads off the dual parametrization $t\mapsto[1:-(u't^2+2u(t)t):u't^3+u(t)t^2]$. The coordinates $(-h'(t),\,t h'(t)-h(t))$ are that line for a branch written as a graph, at contact order $r$.
 :::
 
 :::
@@ -507,8 +560,9 @@ For finiteness, by step [](#s3){.pf-ref} only finitely many tangents are
 inflectional; every other multiple tangent gives a point of $X^*$ with at least
 two branches, one for each of its contact points and each nonsingular with its own
 tangent direction, hence a singular point of the projective curve $X^*$, and a
-projective curve has only finitely many singular points. Reiser
-concludes at the same place "that $X$ has only finitely many multiple tangents".
+projective curve has only finitely many singular points. That argument is the
+card's own; Reiser states the conclusion only, at the same place, "that $X$ has
+only finitely many multiple tangents".
 
 :::
 
@@ -603,7 +657,9 @@ tangent lines to $X$, other than $T_O(X)$, pass through $O$.
 Reiser, Exercise IV.2.3(d), printed p. 357. By steps [](#s3){.pf-ref} and
 [](#s4){.pf-ref} there are only finitely many inflectional and multiple tangent
 lines, each meeting $X$ in finitely many points; excluding those points and the
-inflection points of $X$ removes only finitely many $O$.
+inflection points of $X$ removes only finitely many $O$. That count of the
+excluded points is the card's own: Reiser says of $O$ only that it lies on no
+inflectional or multiple tangent.
 
 For a remaining $O$, remove the fixed point $O$ from each line of the pencil
 through $O$: this is a morphism
@@ -615,7 +671,10 @@ $y=a_2x^2+O(x^3)$, a local coordinate on the pencil is the slope
 $$
 \frac{y}{x}=a_2x+O(x^2),
 $$
-of order $1$.
+of order $1$. The unramifiedness of $\psi_O$ at $O$, read off that order, is the
+card's own as well: Reiser's part (d) gives the degree $d-1$ and refers to "the
+same argument as in part (c)", where the point $O$ lies off $X$ and nothing is
+said about ramification at $O$.
 
 At a point $P\ne O$ the argument of part (c), step [](#s5){.pf-ref}, applies:
 $\psi_O$ is ramified at $P$ exactly when $OP=T_P(X)$, and by the choice of $O$
@@ -740,11 +799,15 @@ Thus the branch has multiplicity $2$ and its tangent line meets it with
 multiplicity $3$.  Equivalently, after formal changes of local coordinates it
 has parametrization $(t^2,t^3)$, the ordinary cusp.
 
-Reiser, Exercise IV.2.3(e), printed p. 357, obtains the same branch in parametrized form: at an ordinary inflection point $X$ is cut out by $x-uy^3$ with $u$ a unit, so $X$ is formally parametrized by $(ut^3,t)$ and the dual curve by
+Reiser, Exercise IV.2.3(e), printed p. 357, obtains the same branch in parametrized form: at an ordinary inflection point $X$ is cut out by $x-uy^3$ with $u$ a unit, so $X$ is formally parametrized by $(ut^3,t)$ and he reads off the dual curve as
 $$
 t\longmapsto[1:3ut^2+u't^3:-(4ut^3+u't^4)]=[1:t^2(3u+u't):-t^3(4u+u't)],
 $$
-"which is a cusp under any reasonable definition (Hartshorne does not supply one)". The multiplicities read off here are the definition the card uses.
+"which is a cusp under any reasonable definition (Hartshorne does not supply one)". That display is a slip of his. The tangent line at $(ut^3,t)$ is
+$$
+x-(3ut^2+u't^3)y+(2ut^3+u't^4)z=0,
+$$
+whose dual point is $[1:-(3ut^2+u't^3):2ut^3+u't^4]$, the point the card's computation above gives as $-3a_3t^2$ and $2a_3t^3$ to leading order; it is also what his own parametrization at printed p. 356 yields, $[1:-(u't^2+2u(t)t):u't^3+u(t)t^2]$, read for $x-uy^3$ in place of $x-uy^2$. His conclusion stands either way, since both points give a branch of multiplicity $2$ with tangent contact $3$; only the printed coordinates are wrong. The multiplicities read off here are the definition the card uses.
 :::
 
 :::
@@ -757,8 +820,11 @@ singularity with $\delta=3$.
 ::: pf-proof
 The Gauss map is nonconstant by the argument of step [](#s3){.pf-ref}, hence finite onto
 its image.  By step [](#s4){.pf-ref} there are only finitely many multiple tangents, so a
-general point of $X^*$ is the tangent line at exactly one point of $X$.
-Therefore $\gamma$ is generically one-to-one and hence birational.  Since
+general point of $X^*$ is the tangent line at exactly one point of $X$, and
+$\gamma$ is generically one-to-one on points.  It is also separable, being a
+morphism of curves over a field of characteristic $0$, which the exercise
+assumes; a finite separable morphism whose generic fibre has one point has
+degree $1$ on function fields and is therefore birational.  Since
 $X$ is nonsingular and thus normal, the finite birational map
 $$
 \gamma:X\longrightarrow X^*
@@ -797,7 +863,20 @@ $$
 $$
 This is the $E_6$ cusp (characteristic parametrization $(t^3,t^4)$).
 
-The first paragraph is Reiser, Exercise IV.2.3(f), printed p. 357: "it's clear that $\varphi:X\to X^*$ is finite, as it's a nonconstant map of curves", and "since we're in characteristic zero, this implies that $\varphi$ is in fact birational. As $X$ is smooth, it is normal, so by the universal property of normalization we find that $\varphi:X\to X^*$ is actually the normalization". The second paragraph, the local form of $X^*$ at a hyperflex and its $\delta$-invariant, is the card's own: Reiser's part (h), printed p. 358, only substitutes $d=4$ in part (f), and Bergvall's §2.2, printed pp. 3--4, counts hyperflex lines as bitangents but says nothing about the singularity of the dual curve there.
+The first paragraph is the card's paraphrase of Reiser, Exercise IV.2.3(f), printed
+p. 357, whose sentence is: "it's clear that $\varphi:X\to X^*$ is finite, as
+it's a nonconstant map of curves. We also have that it is generically
+one-to-one on points: the only way to violate injectivity is to have multiple
+tangents, which happens only finitely often by (b). Since we're in
+characteristic zero, this implies that $\varphi$ is in fact birational. As $X$
+is smooth, it is normal, so by the universal property of normalization we find
+that $\varphi:X\to X^*$ is actually the normalization". The clause "since we're
+in characteristic zero" is what makes the inference valid, and the paraphrase
+carries it as the separability of $\gamma$. The second paragraph, the local form
+of $X^*$ at a hyperflex and its $\delta$-invariant, is the card's own: Reiser's
+part (h), printed p. 358, only substitutes $d=4$ in part (f), and Bergvall's
+§2.2, printed pp. 3--4, counts hyperflex lines as bitangents but says nothing
+about the singularity of the dual curve there.
 :::
 
 :::
@@ -941,8 +1020,9 @@ step [](#s11){.pf-ref} that it uses.
 :::
 
 ::: pf-qed
-Parts (e), (f) and (h) are one identity, and the rest of the exercise supplies the
-geometry it rests on. By steps [](#s6){.pf-ref} and [](#s11){.pf-ref} the dual
+Parts (f) and (h) are the two cases of one identity, and the rest of the exercise
+supplies its inputs and the geometry it rests on. By steps [](#s6){.pf-ref} and
+[](#s11){.pf-ref} the dual
 curve is a plane curve of degree $m=d(d-1)$ and the Gauss map is its
 normalization, so
 $$
@@ -953,17 +1033,24 @@ and [](#s11){.pf-ref} those points are the nodes of the strict bitangents and th
 ordinary cusps of the ordinary inflections, each of $\delta$-invariant $1$, and
 the points of the hyperflex lines, of $\delta$-invariant $3$. So for a curve whose
 dual has no singular point of another kind, with $f$ ordinary inflections and $h$
-hyperflex lines, and with $f+2h=3d(d-2)$ from step [](#s9){.pf-ref}, the identity
+hyperflex lines, the identity
 reads
 $$
 b+h=\frac{(m-1)(m-2)}{2}-\frac{(d-1)(d-2)}{2}-3d(d-2)
 =\frac12d(d-2)(d-3)(d+3).
 $$
+That formula is the card's own: neither source treats a dual with hyperflex points,
+and it is the algebra of step [](#s12){.pf-ref} and step [](#s14){.pf-ref} written
+for general $d$ and $h$, whose inputs are step [](#s8){.pf-ref} for
+$\deg\varphi=d(d-1)$ and step [](#s9){.pf-ref} for $f+2h=3d(d-2)$.
 Part (f) is the case $h=0$ of that formula, which its own hypothesis forces, and
 step [](#s12){.pf-ref} carries its algebra; at $d=4$ the hypothesis holds for
 every smooth quartic, a tangent to which meets it in contact at most $4$ and so is
-an ordinary tangency, a bitangency, an inflection or a hyperflex, and the formula
-is $b+h=28$, the count of step [](#s14){.pf-ref}. The other parts supply the
+an ordinary tangency, a bitangency, an inflection or a hyperflex --- a sentence of
+the card's own, Reiser's part (h) substituting $d=4$ in part (f) --- and the formula
+is $b+h=28$, the count of step [](#s14){.pf-ref}. Part (e) is an input rather than
+a case: step [](#s8){.pf-ref} gives $\deg\varphi=d(d-1)$ and step
+[](#s9){.pf-ref} the weighted count $f+2h=3d(d-2)$. The other parts supply the
 geometry: (a) the ramification criterion for $\varphi$, whose ramification is
 $X\cap L$ together with the inflection points, and the finiteness of the
 inflection points; (b) the local form of $X^*$ at a multiple tangent, and the
@@ -976,7 +1063,7 @@ case $d=3$ of the weighted count.
 :::
 
 ::: {.remark title="Published solution"}
-B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.3, printed pp. 354--358, solves every part: (a) at printed pp. 355--356, by the local equation $f=x+ax^2+bxy+cy^2+\cdots$; (b) at pp. 356--357, by a formal parametrization of $X$ and its dual; (c) and (d) at p. 357, by Riemann--Hurwitz for the projection from a point off $X$ and from a general point of $X$; (e) at p. 357, by the degree of the Gauss map $d(d-1)$ and the weighted count $3d(d-2)$; (f) at p. 357, by $X\to X^*$ being the normalization and $p_a(X^*)$ computed twice; (g) at p. 358, by the group law on the cubic and (II, Ex. 6.6); and (h) at p. 358, by substituting $d=4$ in (f).
+B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.3, printed pp. 354--358, solves parts (a)--(g) and the count of (h), and says nothing about the printed parenthetical of (h), which step [](#s11){.pf-ref} carries: (a) at printed pp. 355--356, by the local equation $f=x+ax^2+bxy+cy^2+\cdots$; (b) at pp. 356--357, by a formal parametrization of $X$ and its dual; (c) and (d) at p. 357, by Riemann--Hurwitz for the projection from a point off $X$ and from a general point of $X$; (e) at p. 357, by the degree of the Gauss map $d(d-1)$ and the weighted count $3d(d-2)$; (f) at p. 357, by $X\to X^*$ being the normalization and $p_a(X^*)$ computed twice; (g) at p. 358, by the group law on the cubic and (II, Ex. 6.6); and (h) at p. 358, by substituting $d=4$ in (f).
 
 O. Bergvall, *Arithmetic and topology of classical structures associated to plane quartics* (arXiv:2106.13072v1, 24 June 2021), §2.2, printed pp. 3--4, states the count of part (h) in the convention part (h) needs: a bitangent is a line tangent at two points *or* of contact order $4$ at one point, and Theorem 2.2 (printed p. 4, after Plücker and Jacobi) counts $28$ for every smooth quartic. He also records the bijection with the odd theta characteristics, $2^{g-1}(2^g-1)=28$ of them for $g=3$, which is why a hyperflex does not change the count.
 
