@@ -337,6 +337,40 @@ audit:
     recorded above" for (B). Those statements are COMPLAINTS.md's III.7.4(b),(d)
     entry, which records them. No step, page or tag changes, and (R) and (B)
     remain inputs of this solution.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Transcription pass for issue #121, on parts (a) and (c). Read at the
+    cited places: Yang Pi-Yeh, Solution 3.7.4, printed p. 75, text version
+    tmp/sources/lfwin-hartshorne-solutions.md, read in the PDF at that
+    page; Dongryul Kim, Exercise 3.7.4, PDF p. 170, text version
+    tmp/sources/hartshorne-solutions-kim.md; Math StackExchange 1794757,
+    the answer by the account S.M. of 2016-05-22, text version
+    tmp/sources/mse-1794757-cohomology-class-of-a-subvariety.md. Checked
+    against the book in tmp/sources/hartshorne-1977-algebraic-geometry.md,
+    where printed p. N is PDF p. N+15: III.7.4 as printed on pp. 249--250,
+    whose (a) reads "show that t_X(eta(P)) = 1" and whose (c) defines dlog
+    as a homomorphism of sheaves of abelian groups and the induced map c
+    on Pic, citing Exercise III.4.5. What the pass establishes. (a) is
+    published three times and all three agree: Yang's restriction
+    argument, Kim's Yoneda pairing evaluated at 1, and the S.M. answer,
+    which additionally records that the point trace is a normalization
+    (t_P(1) can be any element of k^*) and that the exercise needs
+    t_P(1) = 1. (c) is published by Yang and Kim as the computation
+    dlog(fg) = dlog f + dlog g with the citation of Exercise III.4.5.
+    Parts (b) and (d) remain without a published proof: Yang's (b) moves
+    the count back to P^n by citing his own 3.7.3, a different
+    identification, and his (d) is a computation in homogeneous
+    coordinates that uses Euler's formula, so only for X = P^n; Kim has a
+    fragment for (b) and nothing for (d), and lists the exercise among the
+    problems he has not solved on PDF p. 1. On the card, s1 and s4 now
+    carry the three and two sources respectively, the head and the remark
+    of 2026-11-16 say which parts are transcribed and which are the
+    card's, and the COMPLAINTS record of 2026-11-16 names (b) and (d).
+    Not checked: no source outside those named was searched in this pass,
+    and steps s2, s3, s5 and s6 were not re-derived.
+
 ---
 
 ::: {.problem}
@@ -544,6 +578,20 @@ class of a point. Parts (b) and (d) are therefore theorems relative
 to (R) and (B), and open with respect to the book alone. The remark
 below records what the book does and does not determine.
 
+Parts (a) and (c) are published and are transcribed at the steps that prove
+them: (a) by Yang, Solution 3.7.4(a), printed p. 75, by Kim, Exercise 3.7.4(a),
+PDF p. 170, and, for the normalization the class needs, by the answer of
+S.M. on Math StackExchange 1794757; (c) by Yang, Solution 3.7.4(c), printed
+p. 75, and by Kim, Exercise 3.7.4(c), PDF p. 170.  Parts (b) and (d) have no
+published proof in any source read for this card: Yang's (b) moves the count
+back to $\PP^n$ by a citation to his own 3.7.3, a different identification, and
+his (d) computes in homogeneous coordinates with Euler's formula, so it treats
+$X=\PP^n$ only; Kim writes no (b) beyond a fragment and no (d).  Steps
+[](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} are
+the card's own derivation, relative to the inputs (R) and (B), and the
+2026-11-16 COMPLAINTS record names (b) and (d) as the parts with no published
+proof.
+
 Write $j:Y\hookrightarrow X$ for the closed immersion. We use the normalized Serre pairing
 $$
 \langle\alpha,\beta\rangle_X
@@ -580,6 +628,8 @@ $$
 $$
 
 ::: pf-proof
+
+This is the published proof of (a), in three forms that agree.  Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.7.4(a), text version `tmp/sources/lfwin-hartshorne-solutions.md`, printed p. 75: for a point $p=n$, and $H^0(X,\OO_X)\cong H^0(P,\OO_P)\cong k$, the morphism $H^0(X,\OO_X)\to H^0(P,\OO_P)$ "is just the restriction $s\mapsto s_P$, which is just the identity on $k$.  Hence it corresponds to the element $1$ in $H^n(X,\omega_X)\cong k$, i.e. $t_X(\eta(P))=1$".  Dongryul Kim, Exercise 3.7.4(a), text version `tmp/sources/hartshorne-solutions-kim.md`, PDF p. 170, puts the same argument in the Yoneda pairing: $H^p(X,\OO_X)\times\Ext^{n-p}(\OO_X,\omega_X)\to H^n(X,\omega_X)\xrightarrow{t_X}k$, so for $p=0$ the composite $H^0(X,\OO_X)\xrightarrow{\eta(P)}H^0(X,\OO_X)\times\Ext^n(\OO_X,\omega_X)\to H^n(\omega_X)\xrightarrow{t_X}k$ is "equal to evaluation at $P$", and plugging in $1$ gives $t_X(\eta(P))=1\in k$.  Math StackExchange 1794757, answer by the account S.M. (2016-05-22), text version `tmp/sources/mse-1794757-cohomology-class-of-a-subvariety.md`, isolates the normalization the third form needs: with $j$ the inclusion of a point, the map of the exercise is $H^0(X,\OO_X)\to H^0(P,\OO_P)$, "which is actually the identity map on $k$", the class $\zeta$ corresponds to $x=i(\zeta)\circ\varphi$ under the double dual of the pairing, and hence $t_P(1)=t_X(\zeta)$; his closing paragraph notes that $t_P(1)$ can be any element of $k^*$ and that the answer requires $t_P(1)=1$.
 
 Here $p=n$, so the functional defining $\eta(P)$ is the composite
 $$
@@ -767,6 +817,8 @@ $$
 
 ::: pf-proof
 
+Yang Pi-Yeh, Solution 3.7.4(c), printed p. 75: "We just need to prove that $d\log$ is a morphism of sheaves of abelian groups.  Since on $\Omega_X$, we know $d(fg)=f\,dg+g\,df$", and then the three-line computation displayed below.  Kim, Exercise 3.7.4(c), PDF p. 170, writes the same verification and cites Exercise III.4.5 for $\Pic X=H^1(X,\OO_X^*)$.
+
 For local units $f,g$,
 $$
 \begin{aligned}
@@ -951,4 +1003,10 @@ $$\alpha=\frac{x_0^n}{x_1\cdots x_n}\,d\Bigl(\frac{x_1}{x_0}\Bigr)\wedge\cdots\w
 which "determines a generator of $H^n(X,\omega)$, which is stable under change of variables". That fixes one isomorphism in III.7.1(a), but nothing in the text compares it with the trace on a point or on a divisor.
 
 The other side, part (d), is canonical: Appendix A defines the Chern classes in the Chow ring $A(X)$, with the normalization C1 (printed p. 430), "If $\mathcal E\cong\mathcal L(D)$ for a divisor $D$, $c_t(\mathcal E)=1+Dt$", so $c_1$ of a line bundle is the class of its divisor with no scalar freedom. The exercise's numerical identities can therefore hold only if the trace is normalized to match that integer, which is what the head of the solution states as (N), (G), (R) and (B). None of them is in the printed exercise, whose text says only "Fix one such isomorphism". Part (a) uses (N) alone, with $Y=P$ a closed point: $\eta(P)$ is defined by duality against $t_X$ itself. Part (b) uses (B) in step [](#s2){.pf-ref} to carry the count from the linear $L$ to $\PP^n$, uses (B) again in step [](#s3){.pf-ref} to prove that the class of $L$ is nonzero, and uses the normalization $1_{\PP^n}$ of that step to say which generator of $H^p(\PP^n,\Omega^p)$ the number $\deg Y$ is measured against. Part (d) is the case $\beta=1$ of (R) in step [](#s6){.pf-ref}: the book proves (R) for curves and for $n\ge2$ it is an input, which the card names and does not prove.
+:::
+
+::: {.remark title="Published solution"}
+Parts (a) and (c) are published with complete arguments, and both are transcribed at the steps that prove them.  For (a): Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.7.4(a), text version `tmp/sources/lfwin-hartshorne-solutions.md`, printed p. 75, the two-line argument through $H^0(X,\OO_X)\cong H^0(P,\OO_P)\cong k$; Dongryul Kim, Exercise 3.7.4(a), text version `tmp/sources/hartshorne-solutions-kim.md`, PDF p. 170, the same argument as the Yoneda pairing evaluated at $1$; and Math StackExchange 1794757, answer by the account S.M. (2016-05-22), text version `tmp/sources/mse-1794757-cohomology-class-of-a-subvariety.md`, which supplies what the other two leave implicit, that $t_P(1)$ can be any element of $k^*$ and that $t_P(1)=1$ is the normalization the answer needs.  For (c): Yang, Solution 3.7.4(c), printed p. 75, and Kim, Exercise 3.7.4(c), PDF p. 170, both verify $d\log(fg)=d\log(f)+d\log(g)$ and cite Exercise III.4.5 for $\Pic X=H^1(X,\OO_X^*)$.
+
+Parts (b) and (d) are not published in any source read.  Yang's (b) is the printed hint: cut $Y$ down to its $\deg Y$ points by a general linear subspace of dimension $n-p$, compute the factor there, and then assert that the maps $k\cong H^p(H,\Omega_H^p)\cong H^p(X,\Omega_X^p)\cong k$ "are just identity from the proof in 3.7.3", a citation to a different identification; the transfer that assertion needs is the projection formula, which is step [](#s3){.pf-ref} here.  His (d) writes $c(\mathcal L_Y)$ as a Čech cocycle and evaluates it in homogeneous coordinates by $\sum f_ix_k\,\partial f_i/\partial x_k=d$, which uses Euler's formula and so treats $X=\PP^n$ only.  Kim's (b) is the fragment "If $X=\PP^n$, we can always take" and he has no (d); his list of unsolved problems, at the head of the text on PDF p. 1, restates the exercise as "Compute this for $X=\PP^n$ and for $p=1$".  The Stacks Project's cycle-class material gives the class-level halves (tags 0G8C, 0G8D, 0G8E, 0G8I, quoted in the head of the solution) and no comparison with the trace of III.7.  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} are therefore the card's own derivation, carried out relative to the inputs (R) and (B) and marked as such where they use them, and the COMPLAINTS record of 2026-11-16 names (b) and (d) as the parts with no published proof.
 :::
