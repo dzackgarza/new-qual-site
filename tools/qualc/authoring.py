@@ -293,63 +293,67 @@ def _folded(text: str) -> str:
     return " ".join(text.split())
 
 
-def earlier_event_notes(path: Path, revision: str, identity: tuple[date, str, str], notes: set[str]) -> set[str]:
-    """The candidate notes that stood for this identity in an earlier revision.
-
-    A whole note must match, with whitespace folded because an authored note may wrap
-    over lines. The caller uses this only for an identity that occurs once in each of
-    the compared texts: duplicates are refused rather than separated by their order.
-    """
-    wanted = {note for note in notes if note}
-    found: set[str] = set()
-    for standing in earlier_versions(path, revision):
-        if not wanted:
-            break
-        earlier_texts = {_folded(record.text[3]) for record in audit_records(standing) if record.day == identity[0] and record.text[:2] == identity[1:]}
-        found |= {note for note in wanted if _folded(note) in earlier_texts}
-        wanted -= found
-    return found
-
-
-def earlier_complaint_records(path: Path, revision: str, day: date, texts: set[str]) -> set[str]:
-    """The candidate texts that stood for this day in an earlier revision.
-
-    The whole record is compared with whitespace folded, and is used only where the
-    compared texts do not give this day to two records.
-    """
-    wanted = {text for text in texts if text}
-    found: set[str] = set()
-    for standing in earlier_versions(path, revision):
-        if not wanted:
-            break
-        earlier_texts = {_folded(record) for record_day, record in dated_records(standing) if record_day == day}
-        found |= {text for text in wanted if _folded(text) in earlier_texts}
-        wanted -= found
-    return found
-
-
 RecordIdentity = TypeVar("RecordIdentity")
-RecordContent = TypeVar("RecordContent")
+
+
+def introduced_record_texts(
+    path: Path,
+    revision: str,
+    identity: RecordIdentity,
+    records: Callable[[str], list[tuple[RecordIdentity, str]]],
+) -> Counter[str]:
+    """The texts introduced under one identity in `path`'s history, as a multiset.
+
+    A pure rewrite is not an introduction: texts enter this multiset only at a revision
+    where the identity has more records than at the path's previous revision. Within such
+    a revision, the positive multiset difference from its predecessor supplies the new
+    texts. Consequently [A, B] -> [B, A] introduces nothing, while introducing B beside
+    an already rewritten A adds B alone. Texts are folded so source wrapping is not text.
+    """
+    introduced: Counter[str] = Counter()
+    previous: Counter[str] = Counter()
+    for standing in reversed(earlier_versions(path, revision)):
+        current = Counter(_folded(text) for other, text in records(standing) if other == identity)
+        if sum(current.values()) > sum(previous.values()):
+            introduced += current - previous
+        previous = current
+    return introduced
+
+
+def introduced_event_notes(path: Path, revision: str, identity: tuple[date, str, str]) -> Counter[str]:
+    """The audit notes introduced under this day, kind and author in the path's history."""
+    return introduced_record_texts(
+        path,
+        revision,
+        identity,
+        lambda source: [((record.day, record.text[0], record.text[1]), record.text[3]) for record in audit_records(source)],
+    )
+
+
+def introduced_complaint_records(path: Path, revision: str, day: date) -> Counter[str]:
+    """The COMPLAINTS texts introduced under this day in the path's history."""
+    return introduced_record_texts(path, revision, day, dated_records)
 
 
 def unmatched_record_indices(
-    before: list[tuple[RecordIdentity, RecordContent]],
-    after: list[tuple[RecordIdentity, RecordContent]],
-    earlier: Callable[[RecordIdentity, set[RecordContent]], set[RecordContent]],
+    before: list[tuple[RecordIdentity, str]],
+    after: list[tuple[RecordIdentity, str]],
+    introduced: Callable[[RecordIdentity], Counter[str]],
 ) -> tuple[list[int], list[RecordIdentity]]:
-    """Unmatched old records, and identities too ambiguous to compare by text.
+    """Old records not preserved or restored, and repeated identities among them.
 
-    Exact identity-and-content pairs are consumed first, including an unchanged reorder.
-    When a non-exact match is needed, an identity occurring twice in either compared text
-    is ambiguous: no occurrence order or historical text can decide which record it is.
-    Such an identity is returned separately and receives no restoration match. Unambiguous
-    records use their history in a one-to-one maximum bipartite match; every old record
-    left over is refused by the caller.
+    For each identity, the new records accept the base records when they contain them as
+    a multiset, including an unchanged reorder. Otherwise they are a restoration only
+    when they contain every text ever introduced under that identity. A group meeting
+    neither condition loses every old record without an exact match. Repeated identities
+    receive the existing additional diagnostic, but repetition alone no longer refuses
+    the comparison: the whole introduction multiset is what distinguishes a restoration
+    from [A, B] -> [B, A] -> [B, B], where A is missing.
     """
     unused = set(range(len(after)))
     lost: list[int] = []
-    for index, record in enumerate(before):
-        match = next((other for other in unused if after[other] == record), None)
+    for index, (identity, text) in enumerate(before):
+        match = next((other for other in unused if after[other][0] == identity and _folded(after[other][1]) == _folded(text)), None)
         if match is None:
             lost.append(index)
         else:
@@ -357,37 +361,21 @@ def unmatched_record_indices(
 
     before_counts = Counter(identity for identity, _ in before)
     after_counts = Counter(identity for identity, _ in after)
+    after_texts: dict[RecordIdentity, Counter[str]] = {}
+    for identity, text in after:
+        after_texts.setdefault(identity, Counter())[_folded(text)] += 1
     lost_identities = dict.fromkeys(before[old][0] for old in lost)
-    ambiguous = [identity for identity in lost_identities if before_counts[identity] > 1 or after_counts[identity] > 1]
-    restorations: dict[int, list[int]] = {}
-    for old in lost:
-        identity = before[old][0]
-        if identity in ambiguous:
-            continue
-        replacements = [index for index in sorted(unused) if after[index][0] == identity]
-        if replacements:
-            earlier_texts = earlier(identity, {after[index][1] for index in replacements})
-            restorations[old] = [index for index in replacements if after[index][1] in earlier_texts]
-
-    matched_new: dict[int, int] = {}
-
-    def match(old: int, seen: set[int]) -> bool:
-        for new in restorations.get(old, []):
-            if new in seen:
-                continue
-            seen.add(new)
-            if new not in matched_new or match(matched_new[new], seen):
-                matched_new[new] = old
-                return True
-        return False
-
-    for old in lost:
-        match(old, set())
-    restored_old = set(matched_new.values())
-    return [index for index in lost if index not in restored_old], ambiguous
+    restored: set[RecordIdentity] = set()
+    for identity in lost_identities:
+        introduced_texts = introduced(identity)
+        # No earlier introduction is no evidence that replacement text is a restoration.
+        if introduced_texts and introduced_texts <= after_texts.get(identity, Counter()):
+            restored.add(identity)
+    ambiguous = [identity for identity in lost_identities if identity not in restored and (before_counts[identity] > 1 or after_counts[identity] > 1)]
+    return [index for index in lost if before[index][0] not in restored], ambiguous
 
 
-def rewritten_audit_events(path: Path, before: str, after: str, day: date, earlier: Callable[[tuple[date, str, str], set[str]], set[str]]) -> list[str]:
+def rewritten_audit_events(path: Path, before: str, after: str, day: date, introduced: Callable[[tuple[date, str, str]], Counter[str]]) -> list[str]:
     """Audit events dated before the commit whose text it changes or removes (QUAL-11).
 
     An event dated before the commit records what a session found on that day, and the
@@ -399,8 +387,8 @@ def rewritten_audit_events(path: Path, before: str, after: str, day: date, earli
     which is why an edit made in place earlier in the branch can still be undone.
 
     A day, a kind and an author do not identify an event when a card states two of them.
-    The comparison therefore matches records one by one, by identity and content, and
-    reports every old record left unmatched rather than excusing a whole identity group.
+    The comparison therefore judges each identity's whole multiset against the base or
+    the texts introduced in the path's history, rather than assigning occurrences by order.
     """
     before_records = [
         ((record.day, record.text[0], record.text[1]), record.text[3])
@@ -413,7 +401,7 @@ def rewritten_audit_events(path: Path, before: str, after: str, day: date, earli
         if record.day is not None
     ]
     errors: list[str] = []
-    unmatched, ambiguous = unmatched_record_indices(before_records, after_records, earlier)
+    unmatched, ambiguous = unmatched_record_indices(before_records, after_records, introduced)
     for record_day, kind, by in ambiguous:
         errors.append(f"{path}: multiple dated audit events share one identity ({kind}, {by}, {record_day}); their earlier texts cannot be distinguished, so the comparison is refused (QUAL-11)")
     for index in unmatched:
@@ -531,7 +519,7 @@ def dated_records(source: str) -> list[tuple[date, str]]:
     return records
 
 
-def rewritten_complaint_records(path: Path, before: str, after: str, day: date, earlier: Callable[[date, set[str]], set[str]]) -> list[str]:
+def rewritten_complaint_records(path: Path, before: str, after: str, day: date, introduced: Callable[[date], Counter[str]]) -> list[str]:
     """Dated COMPLAINTS records a commit changes or deletes (QUAL-11).
 
     A record dated before the commit is kept as it stands; text appended after it leaves
@@ -539,13 +527,13 @@ def rewritten_complaint_records(path: Path, before: str, after: str, day: date, 
     commit's own day is still in flight, and a record restored to the text it carried on
     its day — text that stands in an earlier revision of this file — is that repair.
 
-    Records that share a day use the same one-to-one matching as audit events: the day
-    is the whole of what identifies them, and one restored record cannot excuse another.
+    Records that share a day use the same multiset comparison as audit events: the day
+    is the whole of what identifies them, and a partial restoration cannot excuse a loss.
     """
     before_records = [(record_day, text) for record_day, text in dated_records(before) if record_day < day]
     after_records = dated_records(after)
     errors: list[str] = []
-    unmatched, ambiguous = unmatched_record_indices(before_records, after_records, earlier)
+    unmatched, ambiguous = unmatched_record_indices(before_records, after_records, introduced)
     for record_day in ambiguous:
         errors.append(f"{path}: multiple dated COMPLAINTS records share one identity ({record_day}); their earlier texts cannot be distinguished, so the comparison is refused (QUAL-11)")
     for index in unmatched:
@@ -688,9 +676,9 @@ def removal_errors(version: str, base: str) -> list[str]:
         if (card_id := source_identity(before)) is not None and card_id in survivors:
             continue
         if path == COMPLAINTS:
-            errors.extend(rewritten_complaint_records(path, before, "", day, lambda record_day, texts, path=path: earlier_complaint_records(path, base, record_day, texts)))
+            errors.extend(rewritten_complaint_records(path, before, "", day, lambda record_day, path=path: introduced_complaint_records(path, base, record_day)))
         elif path.suffix == ".md":
-            errors.extend(rewritten_audit_events(path, before, "", day, lambda identity, notes, path=path: earlier_event_notes(path, base, identity, notes)))
+            errors.extend(rewritten_audit_events(path, before, "", day, lambda identity, path=path: introduced_event_notes(path, base, identity)))
     return errors
 
 
@@ -735,7 +723,7 @@ def changed_audit_events(selected: list[tuple[GitChange, str]], base: str) -> li
             earlier = moves.get(change.path, change.path)
             if earlier == change.path and not previous_source(earlier, base) and (card_id := source_identity(source)) is not None:
                 earlier = retired.get(card_id, change.path)
-            errors.extend(rewritten_audit_events(change.path, previous_source(earlier, base), source, day, lambda identity, notes, path=change.path: earlier_event_notes(path, base, identity, notes)))
+            errors.extend(rewritten_audit_events(change.path, previous_source(earlier, base), source, day, lambda identity, path=change.path: introduced_event_notes(path, base, identity)))
     return errors
 
 
@@ -784,7 +772,7 @@ def check_git_changes(changes: list[GitChange], base: str, versions: tuple[str, 
     for change in complaints:
         revision = "" if change.version == "index" else change.version
         source = subprocess.run(["git", "show", f"{revision}:{COMPLAINTS.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
-        errors.extend(rewritten_complaint_records(COMPLAINTS, previous_source(COMPLAINTS, base), source, commit_day(change.version), lambda record_day, texts: earlier_complaint_records(COMPLAINTS, base, record_day, texts)))
+        errors.extend(rewritten_complaint_records(COMPLAINTS, previous_source(COMPLAINTS, base), source, commit_day(change.version), lambda record_day: introduced_complaint_records(COMPLAINTS, base, record_day)))
     errors.extend(unread_math_errors(bodies))
     if errors:
         print("\n".join(errors), file=sys.stderr)
@@ -1142,7 +1130,7 @@ def main(argv: list[str] | None = None) -> int:
                 previous_source(Path(relative), "HEAD"),
                 path.read_text(),
                 commit_day("index"),
-                lambda identity, notes: earlier_event_notes(Path(relative), "HEAD", identity, notes),
+                lambda identity: introduced_event_notes(Path(relative), "HEAD", identity),
             )
             if rewritten:
                 raise ValueError("\n".join(rewritten))
