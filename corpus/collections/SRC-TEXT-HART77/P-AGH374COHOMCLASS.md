@@ -272,6 +272,33 @@ audit:
     comparison, of (R) or of (B) was found, and the composite functoriality of
     gamma was not located in the Stacks Project; nothing in this pass supplies
     the published solution of (b) and (d) that the exercise still needs.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Sixth pass on the reader's report, on one sentence at the head of the
+    solution. That sentence said the point identity is necessary for (R) and
+    (B) and not shown to be sufficient. The second half stands. The first is
+    withdrawn: no implication between the point identity and those two inputs
+    was established in either direction. What the fifth pass showed is that
+    sufficiency fails for want of the composite functoriality
+    gamma^{0,0}_{P/X} = gamma^{n-1,n-1}_{Y/X} o gamma^{0,0}_{P/Y}; nothing
+    there, and nothing in the tags read, derives the point comparison
+    t_X(gamma^{0,0}_{P/X}(1)) = 1 from (R) or from (B). The reason is that
+    neither input is a statement about a point: (R) constrains the trace
+    against the dlog class of a divisor and (B) constrains the square of a
+    transverse pair, so the point comparison would have to be carried to them
+    by a further identification, which this card does not make. The head now
+    says that no implication in either direction is established and that (R)
+    and (B) remain inputs. The same claim stands in the fifth-pass record of
+    COMPLAINTS.md, which is a dated record and is left as written; the
+    correction is a new record there of this date. Checked in this pass: the
+    head against the text versions of the two lemmas it names,
+    tmp/sources/stacks-tags/0G8C.md (Lemma 50.23.9, the projection formula) and
+    tmp/sources/stacks-tags/0G8D.md (Lemma 50.23.10, the transverse square),
+    neither of which mentions a trace, and the card's step s6. Not checked: no
+    source was searched in this pass, and nothing new is proved here about the
+    point comparison, (R) or (B).
 ---
 
 ::: {.problem}
@@ -423,9 +450,13 @@ states that functoriality: Section 50.23
 (`tmp/sources/stacks-tags/0G82.md`) has 0G8C, 0G8D and the compatibility with the
 de Rham differentials (0G8B), and nothing on composites, and the fourth pass's
 audit recorded the composite case as not read. The reduction of (R) and (B) to
-the single point identity is therefore not made here: (R) and (B) remain inputs
-of this solution, and the point identity is necessary for them but not shown to
-be sufficient.
+the single point identity is therefore not made here, and no implication
+between them is established in either direction: (R) and (B) remain inputs of
+this solution, the point identity is not shown to be sufficient for them, and
+it is not shown to be necessary for them either. Neither (R) nor (B) is a
+statement about a point: (R) constrains the trace against the $d\log$ class of a
+divisor and (B) constrains the square of a transverse pair, and neither the
+card nor any source read derives the point comparison from either of them.
 
 (N) is a normalization, and part (a) uses only (N). (R) is the substantive
 input, and part (d) is its case $\beta=1$. (B) is the second one, and part (b)
