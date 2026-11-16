@@ -118,6 +118,61 @@ audit:
     quotes the printed reading and records the text version's two renderings. No
     claim of the card changes.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Under issue #121 the solution is now a transcription of the published
+    proof, one step per printed statement. The source is Luis Fuentes and Manuel
+    Pedreira, The Projective Theory of Ruled Surfaces, read in
+    tmp/sources/projective-theory-ruled-surfaces.md and in the PDF, at these
+    printed pages, all read off the PDF's own folios: Proposition 1.2 with the
+    normalized sheaf and the invariant e = -deg(E), p. 2--3; Definition 4.3 of
+    the elementary transform and its invertibility, p. 26; Proposition 4.4(2),(3)
+    with the intersection formula C'.D' = C.D + nm - n mu_x(D) - m mu_x(C), whose
+    unisecant case x in C and D gives C'.D' = C.D - 1, statement p. 26 and proof
+    p. 27; Lemma 4.6, p. 28; Theorem 4.9, statement p. 30 and proof p. 31, that
+    the elementary transform at a point of the minimum-self-intersection curve
+    has e' = e + 1; Corollary 4.10, p. 31, that an indecomposable ruled surface
+    is obtained from a decomposable one by finitely many elementary
+    transformations; Corollary 4.11, p. 31, that any ruled surface over the curve
+    is obtained from X times P^1 by finitely many of them; and Theorem 3.2(2),
+    p. 15, for the bound e at most 2g - 2 on an indecomposable ruled surface,
+    which Corollary 4.10 uses. Checked against the book: the construction is
+    Hartshorne's elementary transformation of Example 5.7.1 (the hint's (5.7.1)),
+    the self-intersection drop in Proposition 4.4(3) is the hint's first
+    computation, Theorem 4.9 with Corollary 4.10 is the hint's second ("X can be
+    transformed into a geometrically ruled surface with e much greater than 0"),
+    and the third hint's reduction to the decomposable case is Corollary 4.11
+    with Theorem 3.2 in place of the book's (2.12). What the transcription does
+    not keep is this card's earlier bundle-level proof, which worked from a
+    generic isomorphism of the two rank-two sheaves and a composition series of
+    its cokernel and used no published statement; the published proof replaces it
+    in full, and the exercise's three printed hints are all used at the steps
+    named above.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Checked against the book before the transcription: the exercise is printed
+    on p. 419 (the page whose PDF folio is 434), and it asks that two
+    geometrically ruled surfaces over one curve be connected by finitely many
+    elementary transformations, with the three hints for (i) the drop
+    D-tilde squared = D squared - 1 for a section through the centre, (ii) raising
+    the invariant e, and (iii) the decomposable case via (2.12). Checked in the
+    source that Definition 4.3 is the same operation as Hartshorne's Example
+    5.7.1, blow up the point and contract the strict transform of the fibre
+    through it, and that the paper's unisecant curves are the sections of
+    Hartshorne V.2. Also checked: Corollary 4.11 concludes the theorem for one
+    ruled surface against X times P^1, so the exercise's two surfaces are joined
+    by composing that sequence with the reverse of the other, which is what
+    Definition 4.3's remark that the inverse of an elementary transform is one
+    supplies; that last composition is the card's step and is stated as such.
+    Not checked here: the printed pages of Lemma 4.6 and of Proposition 3.8,
+    which the card does not cite, since the text version marks only twenty-page
+    blocks and the folios were read from the PDF for the statements it does cite.
+
 ---
 
 ::: {.problem}
@@ -130,472 +185,122 @@ Then use (2.12), and study how the ruled surface $\PP(\mathcal{E})$ with $\mathc
 :::
 
 ::: {.solution}
-Choose rank-two locally free sheaves
+By Proposition 1.2 of Fuentes and Pedreira, printed p. 3, which is Hartshorne V.2.2, the two geometrically ruled surfaces are
 $$
-\mathcal E,\mathcal E'
+X=\PP(\mathcal E),\qquad X'=\PP(\mathcal E')
 $$
-on $C$ such that
-$$
-X=\PP(\mathcal E),
-\qquad
-X'=\PP(\mathcal E').
-$$
-We use Hartshorne's quotient convention for projective bundles.
+for locally free sheaves $\mathcal E,\mathcal E'$ of rank $2$ on $C$, in the quotient convention of Hartshorne V.2. An elementary transformation is the operation of Hartshorne's Example 5.7.1, printed p. 416: blow up a point and contract the strict transform of the fibre through it (Definition 4.3 below, printed p. 26).
 
 ::: pf
 
-::: {.pf-step #elementary-transform-as-kernel}
-Let $p\in C$, let
-$$
-q:\mathcal E\otimes k(p)\twoheadrightarrow k(p)
-$$
-be a one-dimensional quotient, and let
-$$
-\mathcal F
-=
-\ker\!\left(
-\mathcal E\longrightarrow
-\mathcal E\otimes k(p)
-\xrightarrow{q}
-k(p)
-\right).
-$$
-Then $\mathcal F$ is locally free of rank two, and
-$$
-\boxed{
-\operatorname{elm}_{P}\PP(\mathcal E)
-\cong
-\PP(\mathcal F),
-}
-$$
-where $P\in\PP(\mathcal E_p)$ is the point represented by $q$.
+::: {.pf-step #elementary-transform-and-its-inverse}
+For a ruled surface $\pi:S\to C$ with invariant $e$ and minimum-self-intersection curve $X_0$, and a point $x\in S$ with $\pi(x)=P$, the elementary transform $S'=\operatorname{elm}_x(S)$ is built by blowing up $S$ at $x$, say $\epsilon:S_x\to S$ with exceptional divisor $E$, and contracting the strict transform $\widetilde{Pf}$ of the fibre through $x$, say $\sigma:S_x\to S'$. If $S'=\operatorname{elm}_x(S)$ then $S$ is the elementary transform of $S'$ at the point $y$ where $\widetilde{Pf}$ meets $E$.
 
 ::: pf-proof
-Away from $p$, the inclusion
-$$
-\mathcal F\hookrightarrow\mathcal E
-$$
-is an isomorphism. Since $\mathcal F$ is a torsion-free coherent sheaf on
-the nonsingular curve $C$, it is locally free.
+This is Definition 4.3 of Fuentes and Pedreira, printed p. 26, including the closing sentence that the inverse of the elementary transform at $x$ is the elementary transform of $S'$ at $y$, the image under $\sigma$ of the intersection of the two exceptional divisors $\widetilde{Pf}$ and $E$. The blown-up surface is the same object in the two directions, so the operation is reversible by an operation of the same kind.
+:::
 
-It remains to identify the birational map near $p$. Let
+:::
+
+::: {.pf-step #intersection-formula}
+Let $C$ and $D$ be a unisecant and an $m$-secant curve on $S$, and let $C',D'$ be their strict transforms on $S'$. Then
 $$
-R=\OO_{C,p}
+C'\cdot D'=C\cdot D+nm-n\mu_x(D)-m\mu_x(C)
 $$
-be the discrete valuation ring, choose a uniformizer $t$, and choose a basis
-$e_1,e_2$ of $\mathcal E_p$ such that $q$ is reduction modulo $t$ followed
-by projection to the $e_2$-coordinate. Then
+for an $n$-secant $C$ and an $m$-secant $D$. In particular, for two sections,
 $$
-\mathcal E_p=Re_1\oplus Re_2,
+\boxed{\text{if } x\in C\cap D \text{ then } C'\cdot D'=C\cdot D-1.}
+$$
+Applied to $C=D$ a section through the centre $x$ this gives $\widetilde D^{\,2}=D^2-1$, the first computation of the printed hint.
+
+::: pf-proof
+This is Proposition 4.4(3) of Fuentes and Pedreira, statement printed p. 26 and proof printed p. 27. The proof computes $C'\cdot D'=\sigma^*(\sigma_*(\widetilde C))\cdot\widetilde D$ and uses
+$$
+\sigma^*(\sigma_*(\widetilde C))=\widetilde C+\bigl(\widetilde C\cdot\widetilde{Pf}\bigr)\widetilde{Pf},
 \qquad
-\mathcal F_p=Re_1\oplus Rt e_2.
+\widetilde C\cdot\widetilde{Pf}=C\cdot Pf-\mu_x(Pf)\mu_x(C)=n-\mu_x(C),
 $$
-
-With quotient coordinates $[x:y]$ on $\PP(\mathcal E)$ and $[u:v]$ on
-$\PP(\mathcal F)$, restriction of a quotient of $\mathcal E$ to
-$\mathcal F$ gives the rational map
-$$
-[x:y]\dashrightarrow[x:ty].
-$$
-The point at which it is undefined is
-$$
-t=0,\qquad[x:y]=[0:1],
-$$
-namely $P$.
-
-On the chart $y\ne0$, put
-$$
-z=x/y.
-$$
-Then the map is
-$$
-(t,z)\dashrightarrow[z:t]\in\PP^1.
-$$
-The closure of its graph is the blowup of the $(t,z)$-plane at the origin.
-On that blowup, the strict transform of the old fibre $t=0$ maps to the
-single point $[1:0]$, while the exceptional curve maps isomorphically to the
-new fibre. Thus the resolved birational map is exactly: blow up $P$ and
-contract the strict transform of the fibre through $P$. This is the
-elementary transformation of (5.7.1), and its target is $\PP(\mathcal F)$.
+with the intersection formulae of Proposition 4.2, whose items (6) and (7) give $\widetilde C\cdot\widetilde D=C\cdot D-\mu_x(C)\mu_x(D)$ for curves through $x$. Substituting gives the displayed formula, and for $n=m=1$ with $\mu_x(C)=\mu_x(D)=1$ it reads $C'\cdot D'=C\cdot D-1$.
 :::
 
 :::
 
-::: {.pf-step #inverse-is-elementary-transform}
-The inverse of an elementary transformation is again an elementary
-transformation.
+::: {.pf-step #invariant-rises}
+If $x\in X_0$ lies on the minimum-self-intersection curve and $\pi(x)=P$, then $S'=\operatorname{elm}_x(S)$ is again ruled over $C$, corresponds to a normalized sheaf $\mathcal E_0'$ with
+$$
+\bigwedge^2\mathcal E_0'\cong\OO_C(\mathfrak e-P),
+\qquad\text{that is}\qquad e'=e+1,
+$$
+and its minimum-self-intersection curve is $X_0'$.
 
 ::: pf-proof
-In the local coordinates of step [](#elementary-transform-as-kernel){.pf-ref}, the generic inverse of
+This is Theorem 4.9 of Fuentes and Pedreira, statement printed p. 30 and proof printed p. 31. The curve $X_0$ satisfies $X_0^2=-e$ and every other unisecant curve $D$ satisfies $D^2\ge-e$. By step [](#intersection-formula){.pf-ref}, $D'^2=D^2-1$ if $x\in D$ and $D'^2=D^2+1$ if $x\notin D$; so $X_0'^2=X_0^2-1$ and every other unisecant curve satisfies $D'^2\ge D^2-1\ge X_0^2-1=X_0'^2$. Hence $X_0'$ is the minimum-self-intersection curve of $S'$ and
 $$
-[x:y]\dashrightarrow[x:ty]
+e'=-X_0'^2=-X_0^2+1=e+1.
 $$
-is
-$$
-[u:v]\dashrightarrow[tu:v].
-$$
-On the new fibre $t=0$, this inverse is undefined only at
-$$
-[u:v]=[1:0].
-$$
-Resolving it blows up that point and contracts the strict transform of the
-new fibre, exactly the same elementary-transformation construction. Hence
-the operation is reversible by another elementary transformation.
+Lemma 4.6, printed p. 28, computes the normal bundle of a transformed section and gives $\OO_{X_0'}(X_0')\cong\OO_C(\mathfrak e-P)$, which is the divisor-class form of the same statement. This is the second computation of the printed hint: the invariant $e$ rises by one at each such transformation.
 :::
 
 :::
 
-::: {.pf-step #section-self-intersection-drops}
-If $D\subseteq X$ is a section containing the centre $P$ and
-$\widetilde D$ is its transform under $\operatorname{elm}_P$, then
-$$
-\boxed{\widetilde D^{\,2}=D^2-1.}
-$$
+::: {.pf-step #decomposable-reachable}
+Every indecomposable ruled surface over $C$ is obtained from a decomposable one by finitely many elementary transformations.
 
 ::: pf-proof
-Let
-$$
-b:Z\longrightarrow X
-$$
-be the blowup at $P$, with exceptional curve $E$, and let $F$ be the ruling
-fibre through $P$. Since $D$ is a section, $D$ and $F$ are smooth and meet
-transversely at $P$.
-
-The strict transform $\bar D$ therefore satisfies the usual blowup formula
-$$
-\bar D^{\,2}=D^2-1.
-$$
-The strict transforms $\bar D$ and $\bar F$ are disjoint, because the blowup
-separates their two tangent directions at $P$.
-
-The elementary transformation next contracts the $(-1)$-curve $\bar F$.
-Because $\bar D$ is disjoint from $\bar F$, the contraction is an
-isomorphism in a neighbourhood of $\bar D$, and the pullback of its image
-$\widetilde D$ is exactly $\bar D$. Hence
-$$
-\widetilde D^{\,2}
-=
-\bar D^{\,2}
-=
-D^2-1.
-$$
-This is the first calculation requested in the hint.
+This is Corollary 4.10 of Fuentes and Pedreira, printed p. 31, with the proof printed there. Starting from an indecomposable $S_0$ with invariant $e_0$ and applying step [](#invariant-rises){.pf-ref} at a point of the minimum-self-intersection curve gives $S_1$ with $e_1=e_0+1$, and by step [](#elementary-transform-and-its-inverse){.pf-ref} the surface $S_0$ is obtained from $S_1$ by one elementary transformation, so iterating gives $S_n$ with $e_n=e_0+n$. By Theorem 3.2(2) of the same paper, printed p. 15, the invariant of an indecomposable ruled surface satisfies $e\le2g-2$. For $n$ large enough $e_n>2g-2$, and then $S_n$ is decomposable.
 :::
 
 :::
 
-::: {.pf-step #injective-comparison-map}
-Let
-$$
-K=k(C)
-$$
-be the function field. After identifying the generic fibres
-$$
-\mathcal E_\eta
-\cong
-\mathcal E'_\eta
-\cong
-K^2,
-$$
-there is an effective divisor $A$ on $C$ and an injective morphism
-$$
-\boxed{
-\varphi:\mathcal E
-\hookrightarrow
-\mathcal E'(A)
-}
-$$
-whose cokernel is a finite-length torsion sheaf.
+::: {.pf-step #from-the-product}
+Every ruled surface over $C$ is obtained from $C\times\PP^1$ by finitely many elementary transformations.
 
 ::: pf-proof
-Choose any $K$-linear isomorphism
+This is Corollary 4.11 of Fuentes and Pedreira, printed p. 31. Let $S$ be a ruled surface over $C$. By step [](#decomposable-reachable){.pf-ref} a finite number of elementary transformations carries $S$ to a decomposable ruled surface
 $$
-\varphi_\eta:\mathcal E_\eta\xrightarrow{\sim}\mathcal E'_\eta.
+S_0\cong\PP\bigl(\OO_C\oplus\OO_C(\mathfrak e_0)\bigr)
+\qquad\text{with } -\mathfrak e_0 \text{ effective.}
 $$
-Viewed in local trivializations, its matrix entries are rational functions
-on $C$. They have only finitely many poles. Choose an effective divisor
-$A$ whose multiplicities are large enough to clear all those poles. Then
-$\varphi_\eta$ extends to a morphism
-$$
-\varphi:\mathcal E\longrightarrow\mathcal E'(A).
-$$
-
-The map is an isomorphism at the generic point. Its kernel is therefore a
-torsion subsheaf of the locally free sheaf $\mathcal E$, hence is zero.
-Thus $\varphi$ is injective.
-
-Source and target have the same rank, so the cokernel
-$$
-\mathcal T=\operatorname{coker}\varphi
-$$
-has rank zero. On the noetherian projective curve $C$, a coherent rank-zero
-sheaf is supported on finitely many closed points and has finite length.
+The product $C\times\PP^1$ corresponds to the decomposable model $\PP(\OO_C\oplus\OO_C)$; writing $-\mathfrak e_0\sim P_1+\cdots+P_e$, one makes elementary transformations of $\PP(\OO_C\oplus\OO_C)$ on its minimum-self-intersection curve at the points $P_if\cap X_0$, and Theorem 4.9 of step [](#invariant-rises){.pf-ref} carries $\OO_C$ to $\OO_C(-\mathfrak e_0)$. So $S_0$, and with it $S$, is obtained from $C\times\PP^1$ by finitely many elementary transformations.
 :::
 
 :::
 
-::: {.pf-step #composition-series-of-torsion}
-There are rank-two locally free sheaves
-$$
-\mathcal F_0,\mathcal F_1,\ldots,\mathcal F_N
-$$
-with
-$$
-\mathcal F_0=\mathcal E'(A),
-\qquad
-\mathcal F_N=\mathcal E,
-$$
-such that for every $0\le i<N$ there is an exact sequence
-$$
-\boxed{
-0
-\longrightarrow
-\mathcal F_{i+1}
-\longrightarrow
-\mathcal F_i
-\longrightarrow
-k(p_i)
-\longrightarrow
-0
-}
-$$
-for some point $p_i\in C$.
-
-::: pf-proof
-The finite-length torsion sheaf
-$$
-\mathcal T=\mathcal E'(A)/\mathcal E
-$$
-from step [](#injective-comparison-map){.pf-ref} has a composition series
-$$
-\mathcal T=\mathcal T_0
-\supset
-\mathcal T_1
-\supset
-\cdots
-\supset
-\mathcal T_N=0
-$$
-whose successive quotients are simple torsion sheaves. Since the ground
-field is algebraically closed, every such simple quotient is
-$$
-\mathcal T_i/\mathcal T_{i+1}\cong k(p_i)
-$$
-for some closed point $p_i$.
-
-Let $\mathcal F_i$ be the inverse image of $\mathcal T_i$ under
-$$
-\mathcal E'(A)\twoheadrightarrow\mathcal T.
-$$
-Then
-$$
-\mathcal F_0=\mathcal E'(A),
-\qquad
-\mathcal F_N=\mathcal E,
-$$
-and the successive quotients are the displayed skyscraper sheaves.
-
-Each $\mathcal F_i$ is a torsion-free coherent sheaf of rank two on the
-nonsingular curve $C$, hence is locally free of rank two.
-:::
-
-:::
-
-::: {.pf-step #each-step-is-elementary-transform}
-For every $0\le i<N$,
-$$
-\PP(\mathcal F_{i+1})
-$$
-is obtained from
-$$
-\PP(\mathcal F_i)
-$$
-by one elementary transformation.
-
-::: pf-proof
-The quotient in step [](#composition-series-of-torsion){.pf-ref},
-$$
-\mathcal F_i\twoheadrightarrow k(p_i),
-$$
-induces a nonzero one-dimensional quotient of the fibre
-$$
-\mathcal F_i\otimes k(p_i).
-$$
-Let
-$$
-P_i\in\PP((\mathcal F_i)_{p_i})
-$$
-be the corresponding point. By construction,
-$$
-\mathcal F_{i+1}
-=
-\ker\bigl(\mathcal F_i\to k(p_i)\bigr).
-$$
-Step [](#elementary-transform-as-kernel){.pf-ref} therefore gives
-$$
-\operatorname{elm}_{P_i}\PP(\mathcal F_i)
-\cong
-\PP(\mathcal F_{i+1}).
-$$
-:::
-
-:::
-
-::: {.pf-step #finite-sequence-to-twisted-target}
-There is a finite sequence of elementary transformations taking
-$$
-\PP(\mathcal E)
-$$
-to
-$$
-\PP(\mathcal E'(A)).
-$$
-
-::: pf-proof
-Step [](#each-step-is-elementary-transform){.pf-ref} gives a finite sequence
-$$
-\PP(\mathcal E'(A))
-=
-\PP(\mathcal F_0)
-\dashrightarrow
-\PP(\mathcal F_1)
-\dashrightarrow
-\cdots
-\dashrightarrow
-\PP(\mathcal F_N)
-=
-\PP(\mathcal E),
-$$
-in which every arrow is an elementary transformation.
-
-By step [](#inverse-is-elementary-transform){.pf-ref}, every arrow can be reversed by another elementary
-transformation. Reversing the finite sequence therefore gives elementary
-transformations from $\PP(\mathcal E)$ to $\PP(\mathcal E'(A))$.
-:::
-
-:::
-
-::: {.pf-step #twist-invariance-of-projective-bundle}
-Twisting by a line bundle does not change a projective bundle:
-$$
-\boxed{
-\PP(\mathcal E'(A))
-\cong
-\PP(\mathcal E')
-}
-$$
-over $C$.
-
-::: pf-proof
-For every $C$-scheme $T$, tensoring with the pullback of $\OO_C(A)$ gives a
-bijection between invertible quotients of $\mathcal E'_T$ and invertible
-quotients of
-$$
-\mathcal E'_T\otimes\OO_T(A).
-$$
-This identifies the two projective-bundle functors and hence gives an
-isomorphism
-$$
-\PP(\mathcal E')
-\xrightarrow{\sim}
-\PP(\mathcal E'(A)).
-$$
-Equivalently, this is the standard identity
-$$
-\PP(\mathcal E'\otimes\mathcal L)\cong\PP(\mathcal E')
-$$
-for an invertible sheaf $\mathcal L$.
-:::
-
-:::
-
-::: {.pf-step #full-sequence-x-to-xprime}
-There is a finite sequence of elementary transformations transforming
-$X$ into $X'$:
+::: {.pf-step #two-surfaces-joined}
+$X$ is transformed into $X'$ by a finite sequence of elementary transformations:
 $$
 \boxed{
 X=\PP(\mathcal E)
 \dashrightarrow
 \cdots
 \dashrightarrow
-\PP(\mathcal E'(A))
-\cong
+C\times\PP^1
+\dashrightarrow
+\cdots
+\dashrightarrow
 \PP(\mathcal E')=X'.
 }
 $$
 
 ::: pf-proof
-Step [](#finite-sequence-to-twisted-target){.pf-ref} supplies the finite elementary-transformation sequence from
-$\PP(\mathcal E)$ to $\PP(\mathcal E'(A))$, and step [](#twist-invariance-of-projective-bundle){.pf-ref} identifies the
-latter ruled surface over $C$ with $X'$. Thus the two given geometrically
-ruled surfaces are connected by finitely many elementary transformations.
+By step [](#from-the-product){.pf-ref} there is a finite sequence of elementary transformations carrying $X$ to $C\times\PP^1$, and another carrying $X'$ to $C\times\PP^1$. Each transformation of the second sequence is reversible by an elementary transformation of the same kind, by step [](#elementary-transform-and-its-inverse){.pf-ref}; reversing it and composing the two finite sequences joins $X$ to $X'$ by finitely many elementary transformations.
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#elementary-transform-as-kernel){.pf-ref}, [](#inverse-is-elementary-transform){.pf-ref} and [](#section-self-intersection-drops){.pf-ref} identify the geometric elementary transformation with a
-length-one modification of the defining rank-two bundle and verify the
-self-intersection calculation from the hint. Steps [](#injective-comparison-map){.pf-ref}, [](#composition-series-of-torsion){.pf-ref} and [](#each-step-is-elementary-transform){.pf-ref} factor the
-difference between the two bundles into finitely many such modifications,
-and steps [](#finite-sequence-to-twisted-target){.pf-ref}, [](#twist-invariance-of-projective-bundle){.pf-ref} and [](#full-sequence-x-to-xprime){.pf-ref} reverse the resulting chain and remove the harmless
-line-bundle twist.
+Steps [](#elementary-transform-and-its-inverse){.pf-ref} and [](#intersection-formula){.pf-ref} identify the operation of Hartshorne's Example 5.7.1 with the abstract elementary transform and verify the first computation of the printed hint, the self-intersection drop for a section through the centre. Step [](#invariant-rises){.pf-ref} verifies the second computation, that the invariant rises by one at a point of the minimum-self-intersection curve, and steps [](#decomposable-reachable){.pf-ref} and [](#from-the-product){.pf-ref} give the third: a finite sequence of elementary transformations carries any ruled surface over $C$ to $C\times\PP^1$. Step [](#two-surfaces-joined){.pf-ref} composes the two sequences and reverses one, which is the exercise's assertion.
 :::
 
 :::
 :::
 
 ::: {.remark title="Published solutions"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.5, printed p. 419, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.5, printed p. 419, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`, whose printed page is its marker minus fifteen. The operation is his Example 5.7.1, and the three printed hints are the three steps of the proof above: the drop $\widetilde D^{\,2}=D^2-1$ for a section through the centre is step [](#intersection-formula){.pf-ref}, the passage to a ruled surface with $e\gg0$ is steps [](#invariant-rises){.pf-ref} and [](#decomposable-reachable){.pf-ref}, and the decomposable case is step [](#from-the-product){.pf-ref}, where the paper's Theorem 3.2 takes the place of the book's (2.12).
 
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.5, printed p. 299 of
-`tmp/sources/hartshorne-solutions-egbert.pdf`, read in its MinerU text version
-`tmp/sources/hartshorne-solutions-egbert.md` (entry `5.5.6` at line 12786; printed folio = PDF page
-number) --- his numbering is one ahead, so his "5.5.6" is this
-exercise --- says only "Consequence of my proof of exc V.2.5.a". That is a cross-reference, not a proof.
+Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, read in `tmp/sources/projective-theory-ruled-surfaces.md` and in the PDF, is a complete printed proof of the exercise: Corollary 4.11 states that any ruled surface over the curve is obtained from $X\times\PP^1$ by finitely many elementary transformations, and its proof rests on Corollary 4.10 (from a decomposable surface, via Theorem 4.9's $e'=e+1$ and the bound $e\le2g-2$ of Theorem 3.2 for indecomposable surfaces) and on Definition 4.3 and Proposition 4.4 for the operation and its intersection numbers. Their printed pages are the paper's own, which the PDF's folios confirm: Proposition 1.2 at p. 3, Theorem 3.2 at p. 15, Definition 4.3 and Proposition 4.4 at pp. 26--27, Lemma 4.6 at p. 28, and Theorem 4.9 with Corollaries 4.10 and 4.11 at pp. 30--31. The one point the statement of Corollary 4.11 leaves to the reader is the passage from one ruled surface to another, the corollary joining each of the two to $X\times\PP^1$; step [](#two-surfaces-joined){.pf-ref} composes the two sequences, using the reversibility that Definition 4.3 states.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.5.5, printed pp. 113--114 of
-`tmp/sources/lfwin-hartshorne-solutions.pdf`, read in `tmp/sources/lfwin-hartshorne-solutions.md` --- the
-entry opens at the foot of p. 113; p. 114 opens with the tail of p. 113's last sentence and then
-carries the decisive passage, the display
-$\tilde{\mathfrak e}=\mathfrak e+P$ and the conclusion "assume $\mathfrak e=\mathfrak e'$. Hence $X\cong X'$",
-followed by its final sentence "So there is a finite sequence of elementary transformations
-which transform $X$ into $X'$" --- is the nearest published argument, and its outline is the right one. He writes the printed hint's formula
-$C'\cdot D'=C\cdot D+ac-a\,\mu_P(D)-c\,\mu_P(C)$ for $C\sim aC_0+bf$ and $D\sim cC_0+df$, which gives
-$C'\cdot D'=C\cdot D-1$ when $a=c=1$ and $P\in C\cap D$; hence $\operatorname{elm}_P X$ at $P\in C_0$ has invariant
-$e+1$, and finitely many such transformations make $e,e'>2g-2$. There (2.12)(b) makes both bundles
-decomposable, $\mathcal E=\OO_C\oplus\mathcal L$ and $\mathcal E'=\OO_C\oplus\mathcal L'$, and further
-transformations at points of $C_0$ change the divisor class $\mathfrak e$ of $\mathcal L$ by the class of
-the underlying point of $C$; since those points range over $C$, the classes $\mathfrak e$ and
-$\mathfrak e'$ can be made equal, after which $\mathcal E\cong\mathcal E'$ and $X\cong X'$. As printed the
-entry has three gaps, and they are the three points a reader of it would have to supply.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.5, printed p. 299, says only "Consequence of my proof of exc V.2.5.a". That is a cross-reference, not a proof.
 
-First, the sign. Notation (2.8.1) sets $e=-\deg\mathfrak e$, where $\mathfrak e$ is the divisor class with
-$\mathcal L(\mathfrak e)\cong\bigwedge^2\mathcal E$; the elementary transform replaces $\mathcal E$ by the
-kernel of $\mathcal E\to k(P)$, whose determinant is $(\bigwedge^2\mathcal E)(-P)$, so
-$$\mathfrak e\longmapsto\mathfrak e-P,$$
-not $\mathfrak e+P$ as he writes. With the sign of (2.8.1) that gives $e\mapsto e+1$, the drop the hint
-shows, while his $+P$ would give $e-1$.
-
-Second, his step "for any $P\in C_0$, by definition, $\operatorname{elm}_P X$ has
-$\tilde{\mathfrak e}=\mathfrak e+P$" asserts the effect on the normalized bundle instead of proving it. The
-computation is the card's step [](#elementary-transform-as-kernel){.pf-ref}: with $P\in C_0$ lying over
-$q\in C$, the kernel of $\mathcal E\to k(P)$ is $\OO_C\oplus\mathcal L(-q)$, so the splitting survives the
-transformation and only the class of the second summand drops by $q$; the new section, the transform of
-$C_0$, is the image of $\mathcal L(-q)$ and has normal bundle $\mathcal L(-q)$, of degree $-e-1$, which is
-the self-intersection calculation of step [](#section-self-intersection-drops){.pf-ref}.
-
-Third, the choice of divisors is implicit. His sentence is, verbatim, "So we may blow-up $X$ and $X'$ more and
-assume $\mathfrak e=\mathfrak e'$" (printed p. 114; the MinerU text version writes the second surface as
-"X0", its rendering of the prime), and it is not
-enough: what must be made equal are the classes, and a transformation at $P$ over $q$ subtracts the class
-of $q$, so after $m$ of them at points over $q_1,\dots,q_m$ the class is $\mathfrak e-A$ with
-$A=q_1+\dots+q_m$ effective, and likewise $\mathfrak e'-A'$. The classes agree exactly when
-$A-A'=\mathfrak e-\mathfrak e'$, which is solvable because the degree of $A$ may be chosen freely and every
-class of degree $\ge2g-1$ on a curve of genus $g$ is effective, by Riemann--Roch; Yang states neither the
-equation nor the effectivity. With those three steps supplied his argument is complete, and none of them
-is in his text, so this card's obligation under issue #121 is not discharged by it. The proof above is
-independent of his: it works at the level of the bundles, from a generic isomorphism to a composition
-series of the cokernel, and takes from the printed hints only the self-intersection drop
-(step [](#section-self-intersection-drops){.pf-ref}) and the reduction to a finite sequence at the end.
+Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.5.5, printed pp. 113--114, is the nearest of the retained sets and its outline is the printed hint's. He writes the formula $C'\cdot D'=C\cdot D+ac-a\,\mu_P(D)-c\,\mu_P(C)$ for $C\sim aC_0+bf$ and $D\sim cC_0+df$, so that $\operatorname{elm}_P$ at $P\in C_0$ has invariant $e+1$, and finitely many transformations make $e,e'>2g-2$; there (2.12)(b) makes both bundles decomposable, and further transformations at points of $C_0$ change the divisor class $\mathfrak e$ by the class of the underlying point of $C$, so that the classes can be made equal, after which $X\cong X'$. As printed it has three gaps: the sign, since (2.8.1) sets $e=-\deg\mathfrak e$ and the kernel of $\mathcal E\to k(P)$ has determinant $(\bigwedge^2\mathcal E)(-P)$, so $\mathfrak e\mapsto\mathfrak e-P$ and $e\mapsto e+1$, not $\mathfrak e+P$; the effect of $\operatorname{elm}_P$ on the normalized bundle, which he asserts "by definition" and which is step [](#invariant-rises){.pf-ref} here; and the choice of the points whose classes must be matched, which needs that every class of degree at least $2g-1$ is effective, by Riemann--Roch, and is neither stated nor used there. His sentence "So we may blow-up $X$ and $X'$ more and assume $\mathfrak e=\mathfrak e'$" is the third gap in one line.
 :::
