@@ -165,6 +165,20 @@ audit:
     repairs in 27598ae933 (committer date 2026-11-16 07:30:29). A record
     carries the day of the commit that lands it, so both are dated 2026-11-16
     now, and their text is untouched. Nothing else on the card changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121, sixth pass: the fifth-pass note above says
+    the two source-corrected events "are dated 2026-11-17" in the present
+    tense, and neither field of this card reads so. The note's sentence is
+    true in the past tense, and this event is its correction: the two events
+    it speaks of were dated 2026-11-17, a day that had not happened when
+    a9d902a1a9 (2026-11-16 07:15:38) and 27598ae933 (2026-11-16 07:30:29)
+    wrote and committed them, and their fields read 2026-11-16 now, changed
+    in 2e7631a711, the commit that added the fifth-pass note. Their text
+    stands, and the fifth-pass note stands as written, a dated event being a
+    record of its date. Nothing else on the card changes.
 
 ---
 
