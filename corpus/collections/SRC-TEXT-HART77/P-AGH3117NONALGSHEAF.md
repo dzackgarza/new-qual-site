@@ -147,37 +147,67 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
-    Transcription pass for issue #121, corrected in place later the same
-    day on the reader's report. Read at the cited places: Dongryul Kim,
-    Exercise 3.11.7, PDF p. 213, text version
+    Transcription pass for issue #121. Read at the cited places: Dongryul
+    Kim, Exercise 3.11.7, PDF p. 213, text version
     tmp/sources/hartshorne-solutions-kim.md, and Yang Pi-Yeh, Solution
-    3.11.7, printed p. 82, text version tmp/sources/lfwin-hartshorne-solutions.md,
-    read in the PDF at that page. Checked against the book in
+    3.11.7, printed p. 82, text version tmp/sources/lfwin-hartshorne-solutions.md;
+    the latter was read in the PDF at the page named, since it is the page
+    the earlier passes cite. Checked against the book in
     tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed p. N
     is PDF p. N+15: III.11.7(a) as printed on p. 281, and Exercise II.9.6
-    which it invokes. What the two sources establish. Kim gives the
-    inverse limit Pic Xhat = lim Pic X_n from Exercise II.9.6, the exact
-    sequence of Exercise III.4.6, the vanishing of its H^2 term on a curve,
-    the growth of its H^1 term, and the surjectivity of Pic Xhat -> Pic Y,
-    and he describes the kernel of Pic Y_n -> Pic Y_1 as the first
-    cohomology of a coherent sheaf. Yang writes the same inverse limit and
-    sequence, notes H^2 = 0 because X_n is one-dimensional, and concludes
-    the surjectivity from that alone, without Kim's growth sentence; he
-    also writes H^1(X_n, I^{n-1}) = k[x_0,x_1,x_2]/(f^{n-1}) and the
-    projective limit as the completion, and that equation cannot hold, the
-    left side being a finite-dimensional cohomology group on the curve and
-    the right side infinite-dimensional. Neither proves the printed claim
-    that the kernel is a k-vector space: Kim's parenthesis says the kernel
-    "is the inverse limit of k-vector spaces, hence is a k-vector space",
-    which is the assertion under proof and fails when the transitions are
-    not linear, and Yang reads it off a completion. On the card, the steps
-    that transcribe Kim are s2, s3, s7 and s8 and the one that quotes Yang
-    with his error named is s4; the identification K_r over K_{r+1} = V_r
-    in s3, the dimension count of s4, the characteristic-zero logarithm of
-    s5, the characteristic-p counterexample of s6 and the passage from one
-    non-generated twist to none in s8 are the card's own and say so. Not
-    checked: no source outside the two named was searched in this pass, and
-    no step was re-derived.
+    which it invokes. What the pass establishes. Kim proves, and Yang
+    repeats, the inverse limit Pic Xhat = lim Pic X_n from Exercise II.9.6,
+    the exact sequence of Exercise III.4.6, the vanishing of its H^2 term
+    on a curve, the surjectivity of Pic Xhat -> Pic Y, and the
+    identification of the successive kernels with H^1(X_n, I^{n-1}); Kim
+    gives them as the first cohomology of a coherent sheaf, Yang as
+    k[x_0,x_1,x_2]/(f^{n-1}) and its projective limit. Neither proves the
+    printed claim that the kernel is a k-vector space: Kim's parenthesis
+    says the kernel "is the inverse limit of k-vector spaces, hence is a
+    k-vector space", which is the assertion under proof and fails when the
+    transitions are not linear, and Yang reads it off a completion. On the
+    card, the steps that transcribe those two are s2, s3, s4, s7 and s8
+    with the source named at each; the dimension count of s4, the
+    identification K_r over K_{r+1} = V_r in s3, the characteristic-zero
+    logarithm of s5, the characteristic-p counterexample of s6 and the
+    passage from one non-generated twist to none in s8 are marked on the
+    card as the card's own, and the 2026-11-16 COMPLAINTS record names the
+    part of the printed statement that has no published proof. Not
+    checked: no source outside the two named was searched in this pass,
+    and no step was re-derived.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, on the rule that a dated event is never
+    edited. The event of 2026-11-16 above whose note begins "Transcription
+    pass for issue #121" was rewritten in place by commit 181d588a15, and it
+    is restored to the text it carried when written in 91eb357555; what that
+    text says that does not hold is corrected here, and the two passages of
+    the solution that said it with it. (i) Yang Pi-Yeh's equation for the
+    successive kernels, H^1(X_n, I^{n-1}) = k[x_0,x_1,x_2]/(f^{n-1}), does
+    not hold, and the restored event reads it as an identification of them.
+    The left side is H^1(Y, O_Y(-(n-1)d)) by I^{n-1}/I^n = O_Y(-(n-1)d),
+    a cohomology group of a coherent sheaf on the curve and finite
+    dimensional over k; the right side is a ring with classes in every
+    degree. Step s4 now says so, as the event of even date on this card
+    already did. (ii) The card nowhere identifies the kernel of
+    Pic Xhat -> Pic Y with the completion of k[x_0,x_1,x_2] at (f), and
+    the solution said in step s4 that what is infinite dimensional is "the
+    projective limit of the successive kernels, which is the completion he
+    names". That identification is Yang's and is not proved here; the
+    sentence is withdrawn, and step s4 now states what the card does prove,
+    that dim_k V_r grows with r for V_r = K_r/K_{r+1}. (iii) The head of the
+    solution said that Yang "writes the same argument and identifies the
+    successive kernels", which read the false equation as a result; it now
+    states what he writes and names step s4 for the failure. Checked against
+    the book in tmp/sources/hartshorne-1977-algebraic-geometry.md (printed
+    p. N is PDF p. N+15): III.11.7(a) on printed p. 281 and Exercise II.9.6,
+    which it invokes; Yang's text was re-read in
+    tmp/sources/lfwin-hartshorne-solutions.md at the passage quoted. Not
+    checked: no other source was read in this pass, and steps s5 and s6 were
+    not re-derived.
 
 ---
 
@@ -212,7 +242,7 @@ If $\operatorname{char}k=0$, the $I$-adic logarithm identifies that formal group
 In positive characteristic the assertion that the *group itself* is a $k$-vector space is false; step [](#s6){.pf-ref} gives an explicit counterexample.
 The surjectivity in (a), and all of (b)--(c), hold in every characteristic.
 
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Exercise 3.11.7, PDF p. 213, gives $\Pic\hat X=\varprojlim_n\Pic X_n$, the exact sequence of Exercise III.4.6, the vanishing of its $H^2$ term, the growth of its $H^1$ term, and hence the surjectivity of $\Pic\hat X\to\Pic Y$; Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), text version `tmp/sources/lfwin-hartshorne-solutions.md`, Solution 3.11.7, printed p. 82, writes the same argument and identifies the successive kernels.  Neither source proves the printed claim of the exercise, that the kernel is a $k$-vector space: Kim asserts it in a parenthetical inference from an inverse limit of $k$-vector spaces, which is false in characteristic $p$, and Yang reads it off a completion.  The characteristic-free statement is the filtered one of steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}; steps [](#s5){.pf-ref} and [](#s6){.pf-ref} are proved here and not transcribed.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Exercise 3.11.7, PDF p. 213, gives $\Pic\hat X=\varprojlim_n\Pic X_n$, the exact sequence of Exercise III.4.6, the vanishing of its $H^2$ term, the growth of its $H^1$ term, and hence the surjectivity of $\Pic\hat X\to\Pic Y$; Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), text version `tmp/sources/lfwin-hartshorne-solutions.md`, Solution 3.11.7, printed p. 82, writes the same inverse limit and the same exact sequence, notes that the $H^2$ term vanishes because $X_n$ is one-dimensional, and draws the surjectivity from that alone; his equation for the successive kernels, $H^1(X_n,\mci^{n-1})=k[x_0,x_1,x_2]/(f^{n-1})$, does not hold, as step [](#s4){.pf-ref} shows, and no identification of the kernel with a completion is made here.  Neither source proves the printed claim of the exercise, that the kernel is a $k$-vector space: Kim asserts it in a parenthetical inference from an inverse limit of $k$-vector spaces, which is false in characteristic $p$, and Yang reads it off a completion.  The characteristic-free statement is the filtered one of steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}; steps [](#s5){.pf-ref} and [](#s6){.pf-ref} are proved here and not transcribed.
 
 ::: pf
 
@@ -385,7 +415,7 @@ Yang, Solution 3.11.7(a), printed p. 82, gives that growth in the form of an equ
 $$
 H^1(X_n,\mci^{n-1})=H^1\bigl(Y,\OO_Y(-(n-1)d)\bigr),
 $$
-which is a cohomology group of a coherent sheaf on the curve $Y$ and is finite-dimensional over $k$, of the dimension computed below with $r=n-1$, while $k[x_0,x_1,x_2]/(f^{n-1})$ has classes in every degree and is infinite-dimensional.  What is infinite-dimensional is the projective limit of the successive kernels, which is the completion he names; the equality with the cohomology of a single $X_n$ is the misprint.
+which is a cohomology group of a coherent sheaf on the curve $Y$ and is finite-dimensional over $k$, of the dimension computed below with $r=n-1$, while $k[x_0,x_1,x_2]/(f^{n-1})$ has classes in every degree and is infinite-dimensional.  The equality with the cohomology of a single $X_n$ is therefore a misprint, and the conclusion drawn from it does not follow: this card computes $\dim_kV_r$ below, where $V_r=H^1(Y,\OO_Y(-rd))$ is the quotient $K_r/K_{r+1}$ of step [](#s3){.pf-ref}, and it does not identify the kernel $K$ with the completion of $k[x_0,x_1,x_2]$ at $(f)$.
 
 Let $F$ be the homogeneous equation of $Y$.
 Twisting the hypersurface sequence by $-rd$ gives
