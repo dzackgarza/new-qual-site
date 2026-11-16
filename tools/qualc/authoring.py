@@ -8,12 +8,12 @@ import random
 import re
 import subprocess
 import sys
-from collections import Counter
 from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
 from functools import cache, cached_property
 from pathlib import Path
+from typing import TypeVar
 
 import yaml
 from pydantic import TypeAdapter
@@ -335,6 +335,49 @@ def earlier_complaint_records(path: Path, revision: str, day: date, texts: set[s
     return found
 
 
+RecordIdentity = TypeVar("RecordIdentity")
+RecordContent = TypeVar("RecordContent")
+
+
+def unmatched_record_indices(
+    before: list[tuple[RecordIdentity, RecordContent]],
+    after: list[tuple[RecordIdentity, RecordContent]],
+    earlier: Callable[[RecordIdentity, set[RecordContent]], set[RecordContent]],
+) -> list[int]:
+    """The old records no one-to-one match in the new text preserves.
+
+    Exact identity-and-content pairs are consumed first, so an unchanged twin cannot
+    stand for a deleted one. A remaining new record then restores at most one old record
+    of the same identity, and only when its content stood in an earlier revision. Every
+    new record is consumed at most once: restoring one event therefore never licenses
+    the deletion or rewrite of another, while restoring an edited event to its own
+    earlier text still passes.
+    """
+    unused = set(range(len(after)))
+    lost: list[int] = []
+    for index, record in enumerate(before):
+        match = next((other for other in unused if after[other] == record), None)
+        if match is None:
+            lost.append(index)
+        else:
+            unused.remove(match)
+    restored_old: set[int] = set()
+    for identity in dict.fromkeys(before[index][0] for index in lost):
+        old = [index for index in lost if before[index][0] == identity]
+        replacements = [index for index in sorted(unused) if after[index][0] == identity]
+        if not replacements:
+            continue
+        restored = earlier(identity, {after[index][1] for index in replacements})
+        for replacement in replacements:
+            if not old:
+                break
+            if after[replacement][1] not in restored:
+                continue
+            restored_old.add(old.pop(0))
+            unused.remove(replacement)
+    return [index for index in lost if index not in restored_old]
+
+
 def rewritten_audit_events(path: Path, before: str, after: str, day: date, earlier: Callable[[tuple[date, str, str], set[str]], set[str]]) -> list[str]:
     """Audit events dated before the commit whose text it changes or removes (QUAL-11).
 
@@ -346,33 +389,25 @@ def rewritten_audit_events(path: Path, before: str, after: str, day: date, earli
     revision of the path is the repair QUAL-11 asks for rather than a rewrite of it —
     which is why an edit made in place earlier in the branch can still be undone.
 
-    A day, a kind and an author do not identify an event when a card states two of them,
-    so the group is judged together and only as a restoration: every note it now stands
-    for has to have stood for that group in an earlier revision. Restoring one event
-    therefore cannot excuse the rewrite of another beside it. An event the commit leaves
-    standing is not one of the records it brings in, so it says nothing about the text
-    that went: deleting one of two events of a day is a deletion whatever the other says.
+    A day, a kind and an author do not identify an event when a card states two of them.
+    The comparison therefore matches records one by one, by identity and content, and
+    reports every old record left unmatched rather than excusing a whole identity group.
     """
-    standing = Counter(record.text for record in audit_records(after))
-    lost: dict[tuple[date, str, str], list[tuple[str, ...]]] = {}
-    for record in audit_records(before):
-        if record.day is None or record.day >= day:
-            continue
-        if standing[record.text]:
-            standing[record.text] -= 1
-            continue
-        lost.setdefault((record.day, record.text[0], record.text[1]), []).append(record.text)
-    later = audit_records(after)
-    unchanged = {record.text for record in audit_records(before)}
+    before_records = [
+        ((record.day, record.text[0], record.text[1]), record.text[3])
+        for record in audit_records(before)
+        if record.day is not None and record.day < day
+    ]
+    after_records = [
+        ((record.day, record.text[0], record.text[1]), record.text[3])
+        for record in audit_records(after)
+        if record.day is not None
+    ]
     errors: list[str] = []
-    for identity, records in lost.items():
-        replacement = [other for other in later if other.day == identity[0] and other.text[:2] == identity[1:] and other.text not in unchanged]
-        notes = {other.text[3] for other in replacement}
-        if notes and notes <= earlier(identity, notes):
-            continue
-        for kind, by, _, note in records:
-            said = f", whose note begins {excerpt!r}," if (excerpt := " ".join(note.split())[:60]) else ""
-            errors.append(f"{path}: the {kind} event by {by} dated {identity[0]}{said} was changed or deleted; a dated event records what that session found, so a correction is a new event dated {day} (QUAL-11)")
+    for index in unmatched_record_indices(before_records, after_records, earlier):
+        (record_day, kind, by), note = before_records[index]
+        said = f", whose note begins {excerpt!r}," if (excerpt := " ".join(note.split())[:60]) else ""
+        errors.append(f"{path}: the {kind} event by {by} dated {record_day}{said} was changed or deleted; a dated event records what that session found, so a correction is a new event dated {day} (QUAL-11)")
     return errors
 
 
@@ -483,7 +518,7 @@ def dated_records(source: str) -> list[tuple[date, str]]:
         day = _record_day(DAY.search(opening_lead("\n".join(lines[start:end]))))
         if day is not None:
             records.append((day, "\n".join(lines[start:end]).strip()))
-    return list(dict.fromkeys(records))
+    return records
 
 
 def rewritten_complaint_records(path: Path, before: str, after: str, day: date, earlier: Callable[[date, set[str]], set[str]]) -> list[str]:
@@ -494,27 +529,16 @@ def rewritten_complaint_records(path: Path, before: str, after: str, day: date, 
     commit's own day is still in flight, and a record restored to the text it carried on
     its day — text that stands in an earlier revision of this file — is that repair.
 
-    Records that share a day are judged together, for the reason given on
-    `rewritten_audit_events`: the day is the whole of what identifies them, so the group
-    is a restoration only when every record now standing for that day stood in an earlier
-    revision, and restoring one cannot excuse the rewrite of another. A record the commit
-    leaves standing is not one it brings in and says nothing about the one it removes.
+    Records that share a day use the same one-to-one matching as audit events: the day
+    is the whole of what identifies them, and one restored record cannot excuse another.
     """
-    lost: dict[date, list[str]] = {}
-    for record_day, text in dated_records(before):
-        if record_day >= day or text in after:
-            continue
-        lost.setdefault(record_day, []).append(text)
-    later = dated_records(after)
-    unchanged = {text for _, text in dated_records(before)}
+    before_records = [(record_day, text) for record_day, text in dated_records(before) if record_day < day]
+    after_records = dated_records(after)
     errors: list[str] = []
-    for record_day, records in lost.items():
-        present = {text for other_day, text in later if other_day == record_day and text not in unchanged}
-        if present and present <= earlier(record_day, present):
-            continue
-        for text in records:
-            said = " ".join(text.split())[:60]
-            errors.append(f"{path}: the record dated {record_day}, beginning {said!r}, was changed or deleted; a dated record states what that day found, so a correction is a new record dated {day} (QUAL-11)")
+    for index in unmatched_record_indices(before_records, after_records, earlier):
+        record_day, text = before_records[index]
+        said = " ".join(text.split())[:60]
+        errors.append(f"{path}: the record dated {record_day}, beginning {said!r}, was changed or deleted; a dated record states what that day found, so a correction is a new record dated {day} (QUAL-11)")
     return errors
 
 
@@ -593,11 +617,13 @@ def version_source(path: Path, version: str) -> str:
 
 
 def surviving_card_ids(version: str, base: str) -> set[str]:
-    """The card ids this version carries at the paths it keeps, adds or renames to.
+    """The card ids this version carries at the Markdown paths it keeps, adds or renames to.
 
     A card moved with most of its text rewritten falls below Git's similarity threshold,
-    so the move is recorded as a deletion and an addition: the added path carries the
-    card, and the deletion is the other half of the move rather than a card deleted.
+    so the move is recorded as a deletion and an addition: the added Markdown path
+    carries the card, and the deletion is the other half of the move rather than a card
+    deleted. A non-Markdown blob cannot carry on a card or shield its deleted events:
+    audit comparison reads Markdown cards only.
     """
     command = ["git", "diff", "--find-renames", "--name-status", "-z"]
     command.extend(["--cached", base] if version == "index" else [base, version])
@@ -612,7 +638,7 @@ def surviving_card_ids(version: str, base: str) -> set[str]:
         else:
             path = Path(fields[index + 1])
             index += 2
-        if status[0] == "D":
+        if status[0] == "D" or path.suffix != ".md":
             continue
         if (card_id := source_identity(version_source(path, version))) is not None:
             ids.add(card_id)
@@ -631,7 +657,9 @@ def removal_errors(version: str, base: str) -> list[str]:
     which `changed_audit_events` compares against the retired path. Only a path whose
     card no surviving path carries is a card deleted, and only then are its events gone.
     """
-    command = ["git", "diff", "--find-renames", "--name-only", "--diff-filter=D", "-z"]
+    # Select every retired path before rename pairing. A move to Markdown is excused by
+    # the surviving card id below; a rename to a non-Markdown blob is still a card deletion.
+    command = ["git", "diff", "--no-renames", "--name-only", "--diff-filter=D", "-z"]
     command.extend(["--cached", base] if version == "index" else [base, version])
     listing = subprocess.run([*command, "--", "corpus/", "wiki/", COMPLAINTS.as_posix()], check=True, stdout=subprocess.PIPE, text=True).stdout
     if not listing:
@@ -1096,7 +1124,13 @@ def main(argv: list[str] | None = None) -> int:
             # Validate that same source before taking the content-only commit route; the
             # comparison reads the base blob by its repository-relative path.
             corpus.header(path)
-            rewritten = rewritten_audit_events(Path(relative), previous_source(Path(relative), "HEAD"), path.read_text(), commit_day("index"))
+            rewritten = rewritten_audit_events(
+                Path(relative),
+                previous_source(Path(relative), "HEAD"),
+                path.read_text(),
+                commit_day("index"),
+                lambda identity, notes: earlier_event_notes(Path(relative), "HEAD", identity, notes),
+            )
             if rewritten:
                 raise ValueError("\n".join(rewritten))
             subprocess.run(["git", "--literal-pathspecs", "commit", "--only", "--no-verify", "-m", args.message, "--", relative], check=True)

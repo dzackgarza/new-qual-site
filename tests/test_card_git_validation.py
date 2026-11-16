@@ -138,6 +138,16 @@ def run_push(root: Path, tip: str, *paths: str) -> subprocess.CompletedProcess[s
     return subprocess.run([sys.executable, str(ROOT / "scripts/local-validate.py"), "--mode", "push"], cwd=root, input=payload, capture_output=True, text=True)
 
 
+def validate_candidate(root: Path, mode: str, monkeypatch: pytest.MonkeyPatch, stamp: str, *paths: str) -> subprocess.CompletedProcess[str]:
+    """Run the shared validator on the staged candidate, or commit it and validate the push."""
+    monkeypatch.setenv("GIT_COMMITTER_DATE", stamp)
+    if mode == "staged":
+        return run_staged(root)
+    git(root, "commit", "-qm", "validate the candidate")
+    tip = git(root, "rev-parse", "HEAD").strip()
+    return run_push(root, tip, *paths)
+
+
 def track(root: Path, commit: str) -> None:
     """Give the current branch the upstream the push gate reads, at `commit`.
 
@@ -300,6 +310,73 @@ def test_a_dated_event_restored_to_its_earlier_text_is_accepted(repo: Path, monk
     assert git(repo, "show", ":corpus/one card.md") == RECORDED
 
 
+@pytest.mark.parametrize("mode", ("staged", "push"))
+@pytest.mark.parametrize(
+    ("case", "accepted"),
+    [
+        ("edit", False),
+        ("delete", False),
+        ("same-day-edit", True),
+        ("append", True),
+        ("restore", True),
+        ("same-identity-twin-delete", False),
+    ],
+)
+def test_the_dated_event_rule_through_the_shared_gate(repo: Path, monkeypatch: pytest.MonkeyPatch, mode: str, case: str, accepted: bool) -> None:
+    """The six QUAL-11 cases take the same one-to-one rule in both Git modes.
+
+    A restoration's base is the commit that rewrote the record, already upstream in push
+    mode; the candidate is only the repair. In the twin case the base holds A rewritten
+    and B original, while the candidate restores A and deletes B. B must still be named.
+    """
+    original = TWICE_RECORDED if case == "same-identity-twin-delete" else RECORDED
+    card = repo / "corpus/one card.md"
+    card.write_text(original)
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-11T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record the event on its day")
+
+    if case in ("restore", "same-identity-twin-delete"):
+        card.write_text(original.replace("matches the printed exercise", "matches the printed statement"))
+        git(repo, "add", "corpus/one card.md")
+        monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-14T09:00:00 +0000")
+        git(repo, "commit", "-qm", "rewrite the event before the repair")
+
+    base = git(repo, "rev-parse", "HEAD").strip()
+    if mode == "push":
+        track(repo, base)
+
+    candidates = {
+        "edit": RECORDED.replace("matches the printed exercise", "matches the printed statement"),
+        "delete": CARD,
+        "same-day-edit": RECORDED.replace("matches the printed exercise", "matches the printed statement"),
+        "append": RECORDED.replace(
+            "  note: The statement matches the printed exercise.\n",
+            "  note: The statement matches the printed exercise.\n"
+            "- event: solution-reviewed\n"
+            "  by: claude\n"
+            "  date: 2026-11-16\n"
+            "  note: The solution follows the source's argument.\n",
+        ),
+        "restore": RECORDED,
+        "same-identity-twin-delete": RECORDED,
+    }
+    card.write_text(candidates[case])
+    git(repo, "add", "corpus/one card.md")
+    stamp = "2026-11-11T12:00:00 +0000" if case == "same-day-edit" else "2026-11-16T09:00:00 +0000"
+
+    result = validate_candidate(repo, mode, monkeypatch, stamp, "corpus/one card.md")
+
+    if accepted:
+        assert result.returncode == 0, result.stderr
+    else:
+        assert result.returncode == 1, result.stdout
+        assert "QUAL-11" in result.stderr
+        assert "dated 2026-11-11" in result.stderr
+        if case == "same-identity-twin-delete":
+            assert "The local group is Hatcher" in result.stderr
+
+
 def test_restoring_one_event_does_not_excuse_a_rewrite_of_another(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     """QUAL-11 judges each record: a restoration beside a rewrite does not excuse it.
 
@@ -360,6 +437,32 @@ def test_restoring_one_record_does_not_excuse_a_rewrite_of_another(repo: Path, m
     assert "QUAL-11" in result.stderr
 
 
+@pytest.mark.parametrize("mode", ("staged", "push"))
+def test_restoring_one_complaint_does_not_excuse_deleting_its_twin(repo: Path, monkeypatch: pytest.MonkeyPatch, mode: str) -> None:
+    """A restored paragraph consumes only itself, not another record of its day."""
+    path = repo / "COMPLAINTS.md"
+    path.write_text(TWICE_RECORDED_COMPLAINTS)
+    git(repo, "add", "COMPLAINTS.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-10T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record both findings on their day")
+
+    path.write_text(TWICE_RECORDED_COMPLAINTS.replace("The observation.", "The corrected observation."))
+    git(repo, "add", "COMPLAINTS.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-14T09:00:00 +0000")
+    git(repo, "commit", "-qm", "rewrite the first finding")
+    if mode == "push":
+        track(repo, git(repo, "rev-parse", "HEAD").strip())
+
+    path.write_text(TWICE_RECORDED_COMPLAINTS.replace("\n**A second search on the same day (2026-11-10).** Another observation.\n", ""))
+    git(repo, "add", "COMPLAINTS.md")
+
+    result = validate_candidate(repo, mode, monkeypatch, "2026-11-16T09:00:00 +0000", "COMPLAINTS.md")
+
+    assert result.returncode == 1, result.stdout
+    assert "QUAL-11" in result.stderr
+    assert "A second search on the same day" in result.stderr
+
+
 def test_deleting_one_of_two_events_of_a_day_is_refused(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     """An event the commit leaves standing is no restoration of the one it removes.
 
@@ -408,6 +511,28 @@ def test_deleting_one_of_two_records_of_a_day_is_refused(repo: Path, monkeypatch
     assert result.returncode == 1, result.stdout
     assert "COMPLAINTS.md: the record dated 2026-11-10" in result.stderr
     assert "Searched outside the retained sets" in result.stderr
+    assert "QUAL-11" in result.stderr
+
+
+@pytest.mark.parametrize("mode", ("staged", "push"))
+def test_a_non_markdown_blob_does_not_shield_a_deleted_card(repo: Path, monkeypatch: pytest.MonkeyPatch, mode: str) -> None:
+    """Only a Markdown card can carry the retired card's id and its dated events."""
+    card = repo / "corpus/one card.md"
+    card.write_text(RECORDED)
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-11T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record the event on its day")
+    if mode == "push":
+        track(repo, git(repo, "rev-parse", "HEAD").strip())
+
+    card.unlink()
+    (repo / "corpus/not-a-card.txt").write_text(RECORDED)
+    git(repo, "add", "-A")
+
+    result = validate_candidate(repo, mode, monkeypatch, "2026-11-16T09:00:00 +0000", "corpus/not-a-card.txt")
+
+    assert result.returncode == 1, result.stdout
+    assert "corpus/one card.md: the source-checked event" in result.stderr
     assert "QUAL-11" in result.stderr
 
 
@@ -800,6 +925,22 @@ def test_added_renamed_and_deleted_cards_follow_the_outgoing_tree(repo: Path) ->
     rejected = check(repo, "check-range", base)
     assert rejected.returncode == 1
     assert "corpus/renamed card.md" in rejected.stderr
+
+
+def test_commit_card_supplies_the_restoration_history(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """The sanctioned commit-card route calls the dated-record comparison with its history."""
+    card = repo / "corpus/one card.md"
+    card.write_text(RECORDED)
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-11T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record the event on its day")
+    card.write_text(RECORDED + "\nA reviewed remark.\n")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+
+    result = check(repo, "commit", "corpus/one card.md", "review the card")
+
+    assert result.returncode == 0, result.stderr
+    assert git(repo, "show", "HEAD:corpus/one card.md") == card.read_text()
 
 
 def test_pathspec_commit_validates_its_temporary_index(repo: Path) -> None:
