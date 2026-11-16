@@ -2832,8 +2832,8 @@ it was written on 2026-11-11, and the correction is this entry.
   which on $D_+(T_2)$ reads $x+x^{d-1}y+y^{d-1}$, with partials $1-x^{d-2}y$ and $x^{d-1}-y^{d-2}$ because
   $d\equiv0$ and $d-1\equiv-1$ in characteristic $p\mid d$. The two vanish together exactly where
   $1=x^{d-2}y$ and $x^{d-1}=y^{d-2}$, which give $x=x^{d-1}y=y^{d-1}$. At a common zero $x\ne0$: for
-  $d\ge3$ that is $1=x^{d-2}y$ with $x=0$, and at $d=2$ the two equations read $1=y$ and $x=y$, so
-  $x=1$. The equation at such a point reads $x+x^{d-1}y+y^{d-1}=2x+y^{d-1}=3x=3y^{d-1}$, so a common zero
+  $d\ge3$, $x=0$ would give $0=x^{d-2}y=1$; for $d=2$ the two equations read $1=y$ and $x=y$, so $x=1$.
+  The equation at such a point reads $x+x^{d-1}y+y^{d-1}=2x+y^{d-1}=3x=3y^{d-1}$, so a common zero
   exists exactly when $3=0$ in $k$, that is in characteristic $3$; in characteristic $2$ the same value is
   $3x=x\ne0$. The restored sentence's "the two derivatives vanish together at $x=y^{d-1}$" states a
   consequence and not the condition, the two not being equivalent: at $d=3$ in characteristic $3$ the
