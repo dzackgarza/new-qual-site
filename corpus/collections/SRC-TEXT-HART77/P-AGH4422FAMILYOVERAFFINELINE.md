@@ -214,6 +214,28 @@ audit:
     Hodge II, 4.4.3, and the rigidity result of Peters and Steenbrink, as
     before; the card's own steps were not re-derived. Checked against the book
     in this pass: Hartshorne IV Ex. 4.22 on printed p. 340, unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Later pass of this batch, on the reader's second report. (i) The provenance
+    sentences that stood in the rendered solution are out of it: step
+    abelian-scheme's statement no longer says "and is not proved from the
+    sources read", and its proof no longer closes "Neither is in Youcis, and
+    neither is in the book at this exercise, which asserts the first of them in
+    its hint and no more". The step keeps the sanctioned mark "This step is the
+    card's own", and says what the passage needs, which is mathematics; the
+    search status it used to carry is in the events above and in the record of
+    this date in COMPLAINTS.md. The sentence that remains on the printed hint,
+    "The printed hint asserts the first of the two", states what the hint asks
+    for. (ii) Step deligne-argument's statement said "a finite kernel with
+    constant quotient makes it constant", which misstates the fourth move: the
+    constant family is the source of the isogeny and the family is its quotient
+    by a finite constant group scheme, as his own sentence quoted in the proof
+    has it. The statement is corrected; the quoted moves were already right.
+    Not read in this pass: nothing new; Deligne's Théorie de Hodge II, 4.4.3,
+    and the rigidity result of Peters and Steenbrink remain unread here, and no
+    step of the proof was re-derived.
 ---
 
 ::: {.problem}
@@ -241,15 +263,14 @@ His Theorem 8 is stronger than the exercise and is applied to $V=S$ in step [](#
 
 ::: {.pf-step #abelian-scheme}
 
-The section $O$ makes each fibre $E_t$ an elliptic curve with origin $O(t)$, so $E\to S$ is a family of elliptic curves pointed by $O$; that it is consequently a family of abelian varieties over $S$ in the sense of Youcis, a smooth proper group scheme with connected fibres, is the card's own step and is not proved from the sources read.
+The section $O$ makes each fibre $E_t$ an elliptic curve with origin $O(t)$, so $E\to S$ is a family of elliptic curves pointed by $O$; that it is consequently a family of abelian varieties over $S$ in the sense of Youcis, a smooth proper group scheme with connected fibres, is the card's own step.
 
 ::: pf-proof
 
 This step is the card's own.
 
 The printed hint of the exercise begins "Use the section to fix the group structure on the fibres", and each fibre $E_t$ is a smooth curve of genus $1$ with the point $O(t)$: a genus-one curve with a chosen point is an elliptic curve, and its group law has that point as identity.
-Youcis's definition, in his section "Two statements of the main result", is "an abelian scheme $\mathscr A/S$ is a smooth proper group scheme with connected fibers", and the passage from the pointed family to a smooth proper group scheme over $S$ needs two things that are not proved here: that the fibrewise group laws are the restrictions of morphisms $E\times_SE\to E$ and $E\to E$ over $S$, and the representability of the relative Picard functor $\Pic^0_{E/S}$ together with the identification $E\cong\Pic^0_{E/S}$ that would supply them.
-Neither is in Youcis, and neither is in the book at this exercise, which asserts the first of them in its hint and no more.
+Youcis's definition, in his section "Two statements of the main result", is "an abelian scheme $\mathscr A/S$ is a smooth proper group scheme with connected fibers", and the passage from the pointed family to a smooth proper group scheme over $S$ needs two things that are not proved here: that the fibrewise group laws are the restrictions of morphisms $E\times_SE\to E$ and $E\to E$ over $S$, and the representability of the relative Picard functor $\Pic^0_{E/S}$ together with the identification $E\cong\Pic^0_{E/S}$ that would supply them. The printed hint asserts the first of the two.
 
 :::
 
@@ -283,7 +304,7 @@ Its hypotheses are on $V$ and on the family being one of abelian varieties; step
 
 ::: {.pf-step #deligne-argument}
 
-Proof of Theorem 8, as published: the local system of the family is constant because $V^\text{an}$ is simply connected, the family is therefore isogenous to a constant family, and a finite kernel with constant quotient makes it constant.
+Proof of Theorem 8, as published: the local system of the family is constant because $V^\text{an}$ is simply connected, the family is therefore isogenous to a constant family $\underline A$, and $\mathscr A$ is the quotient of $\underline A$ by a finite constant group scheme, hence itself constant.
 
 ::: pf-proof
 
