@@ -63,6 +63,20 @@ audit:
     against Hatcher (2002), §4.1 Exercise 1, printed p. 358, quoted on the card, with Hatcher's $+$
     the first-coordinate sum of p. 340 and his commutativity homotopy on p. 341 a different argument
     for the last deduction. Not claimed: that tom Dieck states Hatcher's exercise.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Every citation on the card now names its source's text version. Hatcher is read in
+    `tmp/sources/hatcher-2002-algebraic-topology.md` and tom Dieck in
+    `tmp/sources/tomdieck-algebraic-topology-ranicki.md`, named in the solution where the two
+    sources are first cited, in the closing quotation of the exercise, and in the remark. This was
+    the only finding a local reader raised on the card; the mathematics is unchanged, and the
+    reader's checks — tom Dieck §4.3 on printed pp. 87--88 with the commutation rule left to
+    "unravel the definitions", the absence of any printed interchange in Davis--Kirk and May, and
+    the four-quarter verification written out on the card — are recorded as holding. Not checked
+    in this pass: the pagination of the 2008 bound volume, the pages quoted being those of the
+    Ranicki translation's printed folios.
 review: draft
 ---
 
@@ -76,7 +90,7 @@ Throughout $n\ge2$: for $n=1$ there is no coordinate other than the first. For $
 $$
 (f+_i g)(s)=\begin{cases}f(s_1,\dots,s_{i-1},2s_i,s_{i+1},\dots,s_n),&s_i\le\tfrac12,\\[2pt] g(s_1,\dots,s_{i-1},2s_i-1,s_{i+1},\dots,s_n),&s_i\ge\tfrac12.\end{cases}
 $$
-These are the group laws of tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), §4.3, printed p. 87, on $[\Sigma^kX,Y]_0$ in the cube model $\pi_n(X,x_0)=[I^n/\partial I^n,X]_0=[\Sigma^nS^0,X]_0$. The law $+_1$ is Hatcher's $+$ (printed pp. 340--341) and the exercise's $+'$ is $+_2$. A homotopy of representatives through maps of pairs induces a homotopy of $+_i$-sums, so each $+_i$ is well defined on the set $\pi_n(X,x_0)$, and the class of the constant map at $x_0$ is a two-sided unit: $f+_i0\simeq f$ by the stretching homotopy
+These are the group laws of tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), §4.3, printed p. 87, read in the text version `tmp/sources/tomdieck-algebraic-topology-ranicki.md`, on $[\Sigma^kX,Y]_0$ in the cube model $\pi_n(X,x_0)=[I^n/\partial I^n,X]_0=[\Sigma^nS^0,X]_0$. The law $+_1$ is Hatcher's $+$ (printed pp. 340--341) and the exercise's $+'$ is $+_2$. A homotopy of representatives through maps of pairs induces a homotopy of $+_i$-sums, so each $+_i$ is well defined on the set $\pi_n(X,x_0)$, and the class of the constant map at $x_0$ is a two-sided unit: $f+_i0\simeq f$ by the stretching homotopy
 $$
 H_t(s)=f\Bigl(s_1,\dots,\frac{2s_i}{1+t},\dots,s_n\Bigr)\ \text{for } s_i\le\frac{1+t}{2},\qquad H_t(s)=x_0\ \text{otherwise},
 $$
@@ -116,9 +130,9 @@ $$
 $$
 that is $g+'h\simeq h+g$, so the addition is abelian. The proposition also gives the associativity of the sum, which the exercise does not ask for. The same verification with the pair of coordinates $(i,j)$ in place of $(1,2)$ gives $+_i=+_j$ for all $i,j$, which is the book's conclusion on p. 88 that all the laws coincide and that they are abelian for $n\ge2$.
 
-Checked against Hatcher, *Algebraic Topology* (2002), §4.1 Exercise 1, printed p. 358: "Suppose a sum $f+'g$ of maps $f,g:(I^n,\partial I^n)\to(X,x_0)$ is defined using a coordinate of $I^n$ other than the first coordinate as in the usual sum $f+g$. Verify the formula $(f+g)+'(h+k)=(f+'h)+(g+'k)$, and deduce that $f+'k\simeq f+k$ so the two sums agree on $\pi_n(X,x_0)$, and also that $g+'h\simeq h+g$ so the addition is abelian." Hatcher's $+$ is the first-coordinate sum of printed p. 340 and his commutativity homotopy on p. 341 is a different argument for the last deduction than the route taken here.
+Checked against Hatcher, *Algebraic Topology* (2002), §4.1 Exercise 1, printed p. 358, read in the text version `tmp/sources/hatcher-2002-algebraic-topology.md`: "Suppose a sum $f+'g$ of maps $f,g:(I^n,\partial I^n)\to(X,x_0)$ is defined using a coordinate of $I^n$ other than the first coordinate as in the usual sum $f+g$. Verify the formula $(f+g)+'(h+k)=(f+'h)+(g+'k)$, and deduce that $f+'k\simeq f+k$ so the two sums agree on $\pi_n(X,x_0)$, and also that $g+'h\simeq h+g$ so the addition is abelian." Hatcher's $+$ is the first-coordinate sum of printed p. 340 and his commutativity homotopy on p. 341 is a different argument for the last deduction than the route taken here.
 :::
 
 ::: {.remark title="Published solution"}
-tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), §4.3, printed pp. 87--88: the composition laws $+_i$ on $[\Sigma^kX,Y]_0$ and their formula on p. 87, the commutation rule on p. 88 with the words "unravel the definitions" in place of a proof, and Proposition (4.3.1) with its proof on p. 88, which is the published proof of both deductions of the exercise. The verification of the commutation rule is written out above because the source does not print it. Hatcher prints the exercise as Exercise 1 of §4.1, p. 358, and proves commutativity directly on p. 341.
+tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), §4.3, printed pp. 87--88, read in the text version `tmp/sources/tomdieck-algebraic-topology-ranicki.md`: the composition laws $+_i$ on $[\Sigma^kX,Y]_0$ and their formula on p. 87, the commutation rule on p. 88 with the words "unravel the definitions" in place of a proof, and Proposition (4.3.1) with its proof on p. 88, which is the published proof of both deductions of the exercise. The verification of the commutation rule is written out above because the source does not print it. Hatcher prints the exercise as Exercise 1 of §4.1, p. 358, read in the text version `tmp/sources/hatcher-2002-algebraic-topology.md`, and proves commutativity directly on p. 341.
 :::
