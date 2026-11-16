@@ -101,6 +101,60 @@ audit:
     in (c). The event of 2026-11-16 above had been rewritten in place; it is
     restored to the text it was dated with, and the pages it gives there, 423
     and 424, are PDF pages. This note is its correction.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Under issue #121 the solution is now a transcription, one step per printed
+    statement, of what the listed sources prove about the five parts. Read at
+    the printed places: M. Nagata, On rational surfaces II, Section 2(c)
+    (non-special points), printed p. 279, Lemma 2.2 (corresponding base points),
+    p. 278, Lemma 2.5 (independent generic points are non-special), p. 279,
+    Proposition 3 (the criterion for special points), p. 279, Theorem 2a
+    (bijection between pre-exceptional types and irreducible exceptional curves
+    of the first kind), pp. 280--281, Theorem 4a (finitely many for r at most 8,
+    infinitely many for r = 9), pp. 283--284, Theorem 3a, p. 282, and
+    Proposition 12 (no irreducible negative curve that is not of the first kind
+    unless the points are special), p. 293; I. Dolgachev, Topics in Classical
+    Algebraic Geometry, Proposition 8.2.15 with its proof and its table,
+    printed pp. 261--262, and Section 8.2.6, printed p. 263. The paper's text
+    version marks pages only in ten-page blocks; every printed page above was
+    read off the paper's own folios in the PDF, which give PDF 1 = printed 271
+    and so PDF 7 = 277 for Lemma 2.1, PDF 8 = 278 for Lemma 2.2, PDF 9 = 279 for
+    Lemma 2.5 and Proposition 3, PDF 12 = 282 for Theorem 3a, PDF 14 = 284 for
+    Theorem 4a, and PDF 21--23 = 291--293 for Propositions 9 to 12. What the
+    transcription proves: (b) from the definition and Lemma 2.2, (d) from
+    Proposition 12 with Theorem 2a and Dolgachev's count, and (e) from the
+    second half of Theorem 4a with Theorem 2a. What it does not prove, and does
+    not supply, is named on the card and recorded in COMPLAINTS.md this day:
+    part (a) beyond its printed criterion, and part (c) in full. This card's own
+    proofs of the parts the sources do not cover --- the six-point class
+    computation, the countable-union lemma, the closedness and properness of
+    the bad locus, the density argument, and the 56 and 240 tables --- are
+    removed from the solution rather than kept beside the transcription, and the
+    arithmetic they carried was rechecked against Dolgachev's table and against
+    Nagata's r = 8 list before it was dropped.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Checked against the book before the transcription: the exercise is printed
+    on p. 409 (PDF p. 424) with parts (a)--(e) and the starred (e) last, the
+    hint for (c) being the countable-union lemma and the hint for (e) being the
+    line P_1P_2 whose strict transform is made to rise in degree, with the
+    attribution to Kodaira and "Nagata [5, II, p. 283]"; Nagata's Theorem 4a,
+    the reference the book's own note points at, is the theorem printed at
+    pp. 283--284 of the paper. Also checked: Nagata's "Cremona transformation
+    with centers within P_i" is by his Section 2(2) a product of
+    F-admissible quadratic transformations, which is the class of sequences
+    Hartshorne's definition quantifies over, so "general position" and
+    "non-special with respect to Cremona transformations" are the same
+    condition on ordinary configurations with no three collinear. Not checked:
+    the printed pages of Nagata's Lemma 2.1, cited on the card for the formula
+    relating the degree, the multiplicities and the invariants, since the text
+    version fixes only the ten-page block.
+
 ---
 
 ::: {.problem}
@@ -132,757 +186,122 @@ This example is apparently due to Kodaira -- see Nagata $[5, II, p. 283]$.
 :::
 
 ::: {.solution}
-For a labeled configuration
+Let $X=\operatorname{Bl}_{P_1,\ldots,P_r}\PP^2$ be the blowup, with $h$ the class of the pullback of a line and $e_i$ the exceptional classes, so that $K_X=-3h+\sum_ie_i$. For a class $C=dh-\sum_im_ie_i$ the intersection form gives $C^2=d^2-\sum_im_i^2$, and the virtual genus of the virtual linear system $\mathcal L(d;\sum_im_iP_i)$ is
 $$
-\mathbf P=(P_1,\ldots,P_r)
+vg=d^2-3d+2-\sum_i m_i(m_i-1),
 $$
-with no three points collinear, write
-$$
-X(\mathbf P)=\operatorname{Bl}_{P_1,\ldots,P_r}\PP^2.
-$$
-Let $h$ be the pullback of a line and let $e_i$ be the exceptional classes.
-Thus
-$$
-h^2=1,\qquad e_i^2=-1,\qquad
-h\cdot e_i=e_i\cdot e_j=0\quad(i\ne j),
-$$
-and
-$$
-K_X=-3h+\sum_{i=1}^r e_i.
-$$
+a quantity of the numerical type alone (Nagata, Section 1(3) and Section 2, printed pp. 276--277, with Lemma 2.1(iii) and Lemma 2.8). An irreducible curve of $X$ that is not one of the $e_i$ has, in Nagata's language, the class $\mathcal L(d;\sum_im_iP_i)$ with $m_i=m(P_i;C)$; Nagata's "grade" $I$ is the self-intersection and his "virtual genus" is the arithmetic genus (Section 1(3), printed p. 276).
+
+The two conditions the exercise's parts (d) and (e) turn on are Nagata's:
+
+- an irreducible curve of the first kind on $X$ is one with $C\cong\PP^1$ and $C^2=-1$, and by Lemma 2.1(iii) this is exactly $I(C)=-1$ and $vg(C)=0$;
+- a numerical type $(d,m_1,\ldots,m_r)$ is *pre-exceptional* when it is similar to $(1,1,1,0,\ldots,0)$ with $r-2$ zeros, and by Theorem 3a (printed p. 282) a virtually connected system with $I=-1$ and $vg=0$ is of pre-exceptional type.
+
+The transcription below proves (b), (d) and (e). Parts (a) and (c) are not proved by the sources listed, and the card says so at the two steps concerned rather than supplying the arguments.
 
 ::: pf
 
-::: {.pf-step #quadratic-transform-basis-change}
-An admissible quadratic transformation centered at
-$P_1,P_2,P_3$ identifies the two marked blowups and changes the Picard basis
-by
-$$
-\begin{aligned}
-h'&=2h-e_1-e_2-e_3,\\
-e_1'&=h-e_2-e_3,\\
-e_2'&=h-e_1-e_3,\\
-e_3'&=h-e_1-e_2,\\
-e_i'&=e_i\qquad(i\ge4).
-\end{aligned}
-$$
-Consequently, if
-$$
-D=ah-\sum_i b_i e_i
-=
-a'h'-\sum_i b_i'e_i',
-$$
-then
-$$
-\boxed{
-\begin{aligned}
-a'&=2a-b_1-b_2-b_3,\\
-b_1'&=a-b_2-b_3,\\
-b_2'&=a-b_1-b_3,\\
-b_3'&=a-b_1-b_2,\\
-b_i'&=b_i\qquad(i\ge4).
-\end{aligned}}
-$$
+::: {.pf-step #general-position-is-non-special}
+For ordinary points $P_1,\ldots,P_r$ of $\PP^2$ with no three collinear, being in general position is the same condition as being non-special with respect to Cremona transformations.
 
 ::: pf-proof
-The common resolution of a quadratic transformation is described in
-[[P-AGH542QUADTRANSFORM]]. The pullback of a target line is
-$$
-2h-e_1-e_2-e_3,
-$$
-and the target exceptional divisors are the strict transforms of the three
-fundamental lines, namely
-$$
-h-e_2-e_3,\qquad h-e_1-e_3,\qquad h-e_1-e_2.
-$$
-Because no other $P_i$ lies on a fundamental line, its exceptional divisor
-is unchanged. This gives the displayed basis formulas. The quadratic
-transformation is an involution, so solving for the coefficients of $D$ in
-the target basis gives the same formulas with primed and unprimed
-coefficients interchanged, which is the boxed transformation law.
-:::
-
-:::
-
-::: {.pf-step #six-point-condition-preserved}
-For six points, the condition
-$$
-\boxed{\text{no three are collinear and the six do not lie on a conic}}
-$$
-is preserved by every admissible transformation.
-
-::: pf-proof
-It suffices to consider a transformation centered at $P_1,P_2,P_3$.
-Denote the target base points by $Q_1,Q_2,Q_3$ and the images of
-$P_4,P_5,P_6$ by $R_4,R_5,R_6$.
-
-A line through $R_4,R_5,R_6$ has class
-$$
-h'-e_4'-e_5'-e_6'
-=
-2h-e_1-e_2-e_3-e_4-e_5-e_6.
-$$
-Thus these three target points are collinear exactly when the six source
-points lie on a conic.
-
-A line through, say, $Q_1,R_4,R_5$ has class
-$$
-h'-e_1'-e_4'-e_5'
-=
-h-e_1-e_4-e_5.
-$$
-Hence such a target collinearity would give three collinear source points.
-The same calculation applies after permuting the labels.
-
-A line through two of $Q_1,Q_2,Q_3$ and one $R_j$ would pull back, for
-example, to the class
-$$
-h'-e_1'-e_2'-e_j'=e_3-e_j.
-$$
-No effective curve has this class: its plane degree is zero, so an effective
-divisor of this degree is supported on exceptional curves with nonnegative
-coefficients. Finally $Q_1,Q_2,Q_3$ themselves are the three base points of
-the inverse quadratic transformation and are noncollinear.
-
-It remains to exclude a conic through all six target points. Its class pulls
-back to
-$$
-2h'-\sum_{i=1}^6e_i'
-=
-h-e_4-e_5-e_6.
-$$
-Such a conic would therefore force $P_4,P_5,P_6$ to be collinear.
-Thus the displayed source condition implies the same condition on the
-target. Since the quadratic transformation is an involution, the converse
-holds as well.
-:::
-
-:::
-
-::: {.pf-step #six-points-general-position-iff}
-Six points are in general position if and only if no three are
-collinear and not all six lie on a conic.
-
-::: pf-proof
-If the six points satisfy the two stated conditions, step [](#six-point-condition-preserved){.pf-ref} shows that
-every successive admissible transformation preserves them. In particular no
-three points become collinear after any finite sequence, so the six points
-are in general position.
-
-Conversely, general position includes the requirement that the original six
-points have no collinear triple. Suppose all six nevertheless lie on a
-conic. Choose any three as centers of an admissible transformation. By the
-first calculation in step [](#six-point-condition-preserved){.pf-ref}, the images of the other three points are
-collinear. This contradicts general position. This proves (a).
+Nagata, Section 2(c), printed p. 279, calls the points non-special when for every Cremona transformation $T$ with centres within the $P_i$ the corresponding base points to the $P_i$ under $T$ are ordinary points of $T(S)$ no three of which are collinear; the corresponding base points are the $r$ points of Lemma 2.2, printed p. 278, which are exactly $r$ in number and satisfy $F=\mathrm{dil}_{(P_1',\ldots,P_r')}(T(S))$. By Section 2(2) of the paper a Cremona transformation with centres within the $P_i$ is by definition a product of $F$-admissible quadratic Cremona transformations, and $F$-admissible here means exactly that the centres are points of the configuration, so these are the finite sequences of admissible transformations of the exercise. The two definitions therefore quantify over the same sequences and require the same thing of the resulting configuration.
 :::
 
 :::
 
 ::: {.pf-step #general-position-preserved-under-sequence}
-General position is preserved after any finite sequence of admissible
-transformations.
+General position is preserved by every finite sequence of admissible transformations, which is part (b).
 
 ::: pf-proof
-Let $\mathbf Q$ be obtained from a general-position configuration
-$\mathbf P$ by a finite admissible sequence $w$. Any further finite
-admissible sequence $v$ starting from $\mathbf Q$ gives the concatenated
-finite sequence
-$$
-v\circ w
-$$
-starting from $\mathbf P$. By general position of $\mathbf P$, the terminal
-configuration has no three collinear. Since this holds for every $v$,
-$\mathbf Q$ is itself in general position. This proves (b).
+Let $\mathbf Q$ be obtained from a general-position configuration $\mathbf P$ by a finite admissible sequence $w$. By step [](#general-position-is-non-special){.pf-ref} the configuration $\mathbf P$ is non-special, so for every Cremona transformation $T$ with centres within its points the corresponding base points are ordinary with no three collinear; $w$ is such a transformation, so $\mathbf Q$ is itself a configuration of ordinary points, no three collinear. Applying the definition to $\mathbf Q$, a further finite sequence $v$ of admissible transformations from $\mathbf Q$ composed with $w$ is a finite sequence from $\mathbf P$ --- the same composition Nagata's Section 2(2) uses to make products of quadratic transformations the objects he quantifies over --- so its terminal configuration has no three collinear. As this holds for every $v$, $\mathbf Q$ is in general position.
 :::
 
 :::
 
-::: {.pf-step #uncountable-field-lemma}
-Let $k$ be uncountable. A nonempty open subset of $\PP_k^2$ cannot be
-covered by countably many proper closed subsets.
+::: {.pf-step #six-point-criterion}
+Part (a) is not proved by the sources listed: what they print is its criterion, and the passage from that criterion to the two conditions of (a) is where the printed record stops.
 
 ::: pf-proof
-Let $U\subseteq\PP^2$ be nonempty open and let
-$$
-Z_1,Z_2,\ldots
-$$
-be proper closed subsets. Each $Z_n$ has only finitely many one-dimensional
-irreducible components. Since $k$ is uncountable, there are uncountably many
-lines in $\PP^2$, so one can choose a line $\ell$ which is not a component
-of any $Z_n$ and which meets $U$.
-
-For every $n$, the intersection
-$$
-\ell\cap Z_n
-$$
-is finite. Hence
-$$
-\ell(k)\cap\bigcup_nZ_n
-$$
-is countable. But $\ell(k)\cong\PP^1(k)$ is uncountable, and
-$U\cap\ell$ is the complement of finitely many points in $\ell$. Therefore
-$U\cap\ell$ contains a point outside every $Z_n$.
+The two conditions of part (a) are that no three of the six points are collinear and that not all six lie on a conic, which is part (a)'s own hypothesis, printed p. 409.
+The criterion the sources print is Proposition 3 of Nagata, printed p. 279: ordinary points are special if and only if there is a numerical type $(d,m_1,\ldots,m_r)$ similar to $(1,1,1,0,\ldots,0)$ such that the effective system $\mathcal L^\oplus(d;\sum_im_iP_i)$ is not empty. For $r=6$ that criterion has to be turned into the two conditions of part (a) by enumerating the class of $(1,1,1,0,\ldots,0)$ with six base points, and no source listed for this card prints that enumeration: Nagata's own printed corollary that lists the conditions for a configuration is the one for eight ordinary points, printed p. 291, whose three conditions are a collinear triple, six points on a conic, and a cubic through all eight with a double point at one of them. Part (a) is therefore not proved here, and it is recorded in the complaints file.
 :::
 
 :::
 
-::: {.pf-step #bad-locus-proper-closed}
-Fix $P_1,\ldots,P_r$ in general position. For every fixed finite word
-$w$ of admissible transformations and every fixed triple of labels, the set
-of points
-$$
-P\in\PP^2
-$$
-for which the word is defined on
-$$
-(P_1,\ldots,P_r,P)
-$$
-and the specified terminal triple is collinear is contained in a proper
-closed subset of $\PP^2$.
+::: {.pf-step #dense-extension-not-proved}
+Part (c) is not proved by the sources listed.
 
 ::: pf-proof
-Work on the open subset on which the successive centers occurring in $w$
-are noncollinear and all quadratic transformations are defined at the
-remaining labeled points. The standard quadratic formula
-[[P-AGH46CREMONA]] shows inductively that every terminal point has homogeneous
-coordinates which are rational functions of the coordinates of $P$.
-Collinearity of a specified terminal triple is therefore the vanishing of a
-rational determinant. Clearing denominators gives a closed condition on the
-initial point $P$.
-
-The determinant is not identically zero, and the proof of that is the one
-point of this step that the card does not carry out.
-
-What the argument gives is the closedness, which is all the rest of (c) uses:
-the terminal coordinates are rational functions of $P$, so after clearing
-denominators a specified terminal collinearity is the vanishing of a
-polynomial in $P$. Properness is a separate assertion. The natural route is
-induction on the length of $w$, pulling a terminal collinearity back through the
-last quadratic transformation --- a target line meets the inverse images of the
-three target base points as a conic, so the condition becomes one of a triple of
-configuration points lying on a conic through three others, of which
-collinearity is the degenerate case --- and that forces a stronger induction
-hypothesis, on incidences with curves of every degree, which is not written out
-here. So this card asserts properness and does not prove it: step
-[](#dense-general-position-extension){.pf-ref} is complete *given* it, and (c) is
-therefore not proved on this card for any particular $w$. What is proved without
-it is (a), (b), and everything in (d) and (e).
+What those sources print is the generic-point statement, Lemma 2.5 of Nagata, printed p. 279: if $P_1,\ldots,P_r$ are independent generic points of $S$ over the prime field, then they are non-special with respect to Cremona transformations. That is a statement about all $r$ points at once being generic, and it is not the statement of part (c), which fixes a configuration in general position and asks for a dense set of positions of one further point $P_{r+1}$. Neither does Nagata's proof of Lemma 2.5 give it: the proof transforms the finitely many generic points and observes that the transformed points are again generic over the prime field, so it establishes that the bad locus is a proper closed subset of the space of all $r$-tuples, not that it is proper after the first $r$ points are fixed. Hartshorne's hint for (c), printed p. 409, is the countable-union lemma for an uncountable field, and that lemma is not printed in either source. Part (c) is therefore not proved here, and it is recorded in the complaints file.
 :::
 
 :::
 
-::: {.pf-step #dense-general-position-extension}
-If $k$ is uncountable and $P_1,\ldots,P_r$ are in general position,
-there is a dense subset
-$$
-\boxed{V\subseteq\PP^2}
-$$
-such that every $P_{r+1}\in V$ makes
-$P_1,\ldots,P_r,P_{r+1}$ a general-position configuration.
+::: {.pf-step #every-negative-curve-is-exceptional}
+Assume $r\le9$ and let the $P_i$ be in general position. Then every irreducible curve $C\subseteq X$ with $C^2<0$ is an irreducible exceptional curve of the first kind: $C\cong\PP^1$ and $C^2=-1$.
 
 ::: pf-proof
-There are only finitely many choices of a triple of labels at each stage,
-so there are only countably many finite words of admissible transformations.
-For each word there are finitely many terminal triples. Step [](#bad-locus-proper-closed){.pf-ref} therefore
-produces only countably many proper closed bad subsets of $\PP^2$ --- *given* the
-properness which that step asserts and does not prove, and which is the one
-point of (c) this card leaves open.
-
-Also exclude the finitely many original lines through pairs of the fixed
-points and the finitely many points $P_i$ themselves. Let $B$ be the union
-of all these bad subsets and put
-$$
-V=\PP^2\setminus B.
-$$
-Step [](#uncountable-field-lemma){.pf-ref}, applied inside every nonempty open subset of $\PP^2$, shows that
-$V$ is dense. For $P_{r+1}\in V$, no collinear triple occurs initially or
-after any finite admissible word. This is exactly the definition of general
-position, proving (c).
+By step [](#general-position-is-non-special){.pf-ref} the points are non-special, so Proposition 12 of Nagata, printed p. 293, applies: for $r\le9$ the surface $\mathrm{dil}_{(P_1,\ldots,P_r)}(S)$ carries only finitely many irreducible curves that are not exceptional curves of the first kind and have negative grade, and the existence of such a curve is equivalent to the points being special. The points are not special, so no such curve exists; every irreducible curve of negative self-intersection is therefore an exceptional curve of the first kind, hence isomorphic to $\PP^1$ with self-intersection $-1$.
 :::
 
 :::
 
-::: {.pf-step #degree-bound-nonneg-square}
-Let $r\le8$, and let
-$$
-D=ah-\sum_{i=1}^r b_i e_i
-$$
-with
-$$
-a\ge0,
-\qquad
-b_1\ge b_2\ge\cdots\ge b_r\ge0.
-$$
-If
-$$
-a\ge b_1+b_2+b_3,
-$$
-then
-$$
-\boxed{D^2\ge0.}
-$$
+::: {.pf-step #classes-are-pre-exceptional}
+For $r\le9$ and $P_1,\ldots,P_r$ in general position, the map sending an irreducible exceptional curve of the first kind to its numerical type is a bijection onto the set of pre-exceptional types with $r$ base points.
 
 ::: pf-proof
-If $a=0$, the hypothesis forces every $b_i=0$, so the conclusion is
-immediate. Assume $a>0$.
-
-Put $c=b_3$. Since $r\le8$ and $b_i\le c$ for $i\ge3$,
-$$
-\sum_{i=1}^r b_i^2
-\le
-b_1^2+b_2^2+6c^2.
-$$
-Also
-$$
-b_1+b_2\le a-c
-$$
-and $b_2\ge c$. For fixed sum, the square sum is maximized by making the two
-entries as unequal as the constraint $b_2\ge c$ permits. Hence
-$$
-b_1^2+b_2^2
-\le
-(a-2c)^2+c^2.
-$$
-Because $b_1,b_2\ge c$ and
-$b_1+b_2+c\le a$, one has $3c\le a$. Therefore
-$$
-\begin{aligned}
-\sum_i b_i^2
-&\le
-(a-2c)^2+7c^2\\
-&=
-a^2-4ac+11c^2\\
-&\le a^2.
-\end{aligned}
-$$
-The last inequality follows from $c\le a/3$, since then
-$11c\le 11a/3<4a$. Thus
-$$
-D^2=a^2-\sum_i b_i^2\ge0.
-$$
+This is Theorem 2a of Nagata, printed pp. 280--281: if $P_1,\ldots,P_r$ are non-special with respect to Cremona transformations, there is a one-one correspondence between all pre-exceptional types $(d,m_1,\ldots,m_r)$ with $r$ base points and all irreducible exceptional curves of the first kind on $\mathrm{dil}_{(P_1,\ldots,P_r)}(S)$, in such a way that the curve corresponds to the type of $\mathrm{dil}(\mathcal L(d;\sum_im_iP_i))$. The proof runs by Lemma 2.6, which turns a pre-exceptional type into $\mathcal L(0;-P_1')$ over a Cremona transform with centres within the $P_i$ and so produces the curve, and by induction on the degree for the converse, using that $m_1+m_2+m_3>d$ for a curve of grade $-1$ and virtual genus $0$. Step [](#general-position-is-non-special){.pf-ref} supplies the hypothesis.
 :::
 
 :::
 
-::: {.pf-step #negative-curve-is-minus-one-curve}
-For $r=7$ or $8$, every irreducible curve of negative
-self-intersection is a nonsingular rational $(-1)$-curve.
+::: {.pf-step #count-fifty-six-and-two-forty}
+The number of pre-exceptional types with $r$ base points is $56$ for $r=7$ and $240$ for $r=8$.
 
 ::: pf-proof
-Let $C\subseteq X(\mathbf P)$ be irreducible with $C^2<0$. If $C$ is an
-exceptional divisor, the assertion is immediate. Otherwise its plane image
-has positive degree, so after relabeling its class is
+A pre-exceptional type has $I=-1$ and $vg=0$, and by Lemma 2.1(iii) of Nagata, printed p. 277, the invariants of a type satisfy $3d-\sum_im_i=I-2vg+2$, so a pre-exceptional type is a solution of
 $$
-C\sim ah-\sum_{i=1}^r b_i e_i,
-\qquad
-a>0,
-\qquad
-b_1\ge\cdots\ge b_r\ge0.
+d^2-\sum_{i=1}^r m_i^2=-1,\qquad 3d-\sum_{i=1}^rm_i=1
 $$
-By step [](#degree-bound-nonneg-square){.pf-ref}, negativity forces
-$$
-b_1+b_2+b_3>a.
-$$
-Perform the admissible quadratic transformation centered at the three points
-with these largest multiplicities. Step [](#quadratic-transform-basis-change){.pf-ref} gives the new plane degree
-$$
-a'=2a-b_1-b_2-b_3<a.
-$$
-If $b_i+b_j>a$ for some pair $i\ne j$, then the line through those two points
-meets $C$ with multiplicity at least $b_i+b_j>a=\deg C$, so it is a component of
-$C$, and $C$ irreducible forces $C$ to be that line: $a=1$ and
-$(b_i,b_j)=(1,1)$. That case needs no descent: the line's class is $h-e_i-e_j$, whose
-square is $1-1-1=-1$, so $C\cong\PP^1$ with $C^2=-1$ already, and it is one of
-the curves the count below lists in its $a=1$ row. In every other case
-$b_i+b_j\le a$ for all pairs $i\ne j$. So, the
-three largest multiplicities being $b_1,b_2,b_3$, the transformed class
-$$
-a'h'-\sum_i b_i'e_i',
-\qquad
-a'=2a-b_1-b_2-b_3,\quad
-b_1'=a-b_2-b_3,\ \ b_2'=a-b_1-b_3,\ \ b_3'=a-b_1-b_2,
-$$
-has nonnegative multiplicities, and $a'<a$. The argument can be repeated.
-(The bound $b_i+b_j\le a$ fails only in the line case, which is why that case
-is separated here.)
-The marked blowup itself is unchanged up to isomorphism, so the transformed
-curve remains irreducible and has the same negative self-intersection.
-Step [](#general-position-preserved-under-sequence){.pf-ref} says the new point configuration is again in general position.
-
-Repeat. The nonnegative plane degree decreases strictly, so after finitely
-many steps it is zero. An irreducible curve of plane degree zero on a
-point-blowup is one of the exceptional divisors. Reversing the sequence of
-isomorphisms shows that the original $C$ is isomorphic to an exceptional
-divisor. Hence
-$$
-C\cong\PP^1,
-\qquad
-C^2=-1.
-$$
+up to permutation, and conversely. Dolgachev, Proposition 8.2.15 with its proof, printed pp. 261--262, solves exactly these two equations for the lattice $I^{1,N}$: the Cauchy--Schwarz bound $(3d-1)^2\le N(d^2+1)$ bounds the degree, the solutions are listed degree by degree --- $\mathbf e_i$ at $d=0$, then $\mathbf e_0-\mathbf e_i-\mathbf e_j$, then $2\mathbf e_0-\sum_{j=1}^N\mathbf e_j+\mathbf e_i+\mathbf e_j$, then $-\mathbf k_7-\mathbf e_i$ at $N=7$, and at $N=8$ the two families with $\mathbf k_8$ together with $-\mathbf k_8+2\mathbf e_{i_1}-\cdots-\mathbf e_{i_6}$ --- and Noether's inequality with the reflection $r_{\alpha_{123}}$ puts them in one orbit of $W(\mathbf E_N)$. His table, printed p. 262, gives $56$ for $N=7$ and $240$ for $N=8$, the same numbers as the number of pre-exceptional types by Theorem 2a of step [](#classes-are-pre-exceptional){.pf-ref}; Nagata's own list for $r=8$, in the proof of Theorem 4a, printed p. 284, is the same list. The permutation counts $7+21+21+7$ and $8+28+56+56+56+28+8$ were recomputed here and agree.
 :::
 
 :::
 
-::: {.pf-step #minus-one-curve-numerics}
-A nonexceptional $(-1)$-curve
-$$
-C\sim ah-\sum_{i=1}^r b_i e_i
-$$
-with $b_i\ge0$ satisfies
-$$
-\boxed{
-\sum_i b_i=3a-1,
-\qquad
-\sum_i b_i^2=a^2+1.}
-$$
+::: {.pf-step #part-d}
+Part (d) holds: for $r=7$ the surface $X$ carries exactly $56$ irreducible nonsingular curves $C$ with $g=0$ and $C^2=-1$, and these are the only irreducible curves of negative self-intersection; for $r=8$ the numbers are $240$ and the same conclusion.
 
 ::: pf-proof
-Step [](#negative-curve-is-minus-one-curve){.pf-ref} gives
-$$
-C^2=-1
-$$
-and $p_a(C)=0$. Adjunction gives
-$$
--2=C\cdot(C+K_X)=-1+K_X\cdot C,
-$$
-so
-$$
-K_X\cdot C=-1.
-$$
-Using
-$$
-K_X=-3h+\sum_i e_i
-$$
-and the intersection form gives
-$$
--3a+\sum_i b_i=-1,
-$$
-which is the first equality. The equation $C^2=-1$ gives the second.
+By step [](#every-negative-curve-is-exceptional){.pf-ref} every irreducible curve of negative self-intersection is an exceptional curve of the first kind, and by step [](#classes-are-pre-exceptional){.pf-ref} the exceptional curves of the first kind correspond one to one to the pre-exceptional types. Step [](#count-fifty-six-and-two-forty){.pf-ref} counts those types: $56$ for $r=7$ and $240$ for $r=8$. An exceptional curve of the first kind is by definition a nonsingular rational curve of self-intersection $-1$, so the count is the count of the curves the exercise asks for, and the same two steps say that there are no others of negative self-intersection.
 :::
 
 :::
 
-::: {.pf-step #r7-classes-fifty-six}
-For $r=7$, the possible $(-1)$-curve classes are exactly
-$$
-\begin{array}{c|c|c}
-a & (b_1,\ldots,b_7)\text{ up to permutation} & \text{number}\\
-\hline
-0 & \text{exceptional} & 7\\
-1 & (1,1,0,0,0,0,0) & \binom72=21\\
-2 & (1,1,1,1,1,0,0) & \binom75=21\\
-3 & (2,1,1,1,1,1,1) & 7.
-\end{array}
-$$
-Thus there are $56$ such classes.
+::: {.pf-step #part-e}
+Part (e) holds: for $r=9$ the surface $X$ carries infinitely many irreducible nonsingular curves $C$ with $g=0$ and $C^2=-1$.
 
 ::: pf-proof
-For $a>0$, step [](#minus-one-curve-numerics){.pf-ref} and Cauchy--Schwarz give
-$$
-(3a-1)^2
-\le
-7(a^2+1),
-$$
-hence
-$$
-a^2-3a-3\le0.
-$$
-Thus $a\le3$.
-
-For $a=1$ or $2$, subtracting the two equations in step [](#minus-one-curve-numerics){.pf-ref} gives
-$$
-\sum_i b_i(b_i-1)=(a-1)(a-2)=0.
-$$
-Thus every $b_i$ is $0$ or $1$, and their sums are respectively $2$ and
-$5$, giving the first two nonexceptional rows.
-
-For $a=3$, put $x_i=b_i-1$. The equations become
-$$
-\sum_i x_i=1,
-\qquad
-\sum_i x_i^2=1.
-$$
-Hence exactly one $x_i$ is $1$ and the others are zero. This gives
-$(2,1,1,1,1,1,1)$.
-
-Together with the seven exceptional divisors, the total number of classes is
-$$
-7+21+21+7=\boxed{56}.
-$$
-:::
-
-:::
-
-::: {.pf-step #r7-classes-realized-unique}
-Every class in step [](#r7-classes-fifty-six){.pf-ref} is represented by exactly one irreducible
-nonsingular rational curve. Hence for $r=7$ there are exactly $56$ negative
-curves, and there are no others.
-
-::: pf-proof
-Starting with any nonexceptional row of step [](#r7-classes-fifty-six){.pf-ref}, choose three largest
-multiplicities and apply step [](#quadratic-transform-basis-change){.pf-ref}. The plane degree decreases:
-$$
-3\longmapsto2\longmapsto1\longmapsto0.
-$$
-The multiplicity patterns become successively the preceding rows, ending in
-an exceptional divisor. Because every intermediate point configuration is
-general by step [](#general-position-preserved-under-sequence){.pf-ref}, these are admissible transformations. Reversing them
-pulls the final exceptional divisor back to an irreducible nonsingular
-rational curve in the original class. Thus every listed class is effective.
-
-There cannot be two distinct irreducible curves in the same listed class:
-their intersection number would be the self-intersection $-1$, whereas
-distinct irreducible curves on a smooth surface have nonnegative
-intersection. Hence each class has exactly one representative.
-Step [](#negative-curve-is-minus-one-curve){.pf-ref} says every irreducible negative curve must be one of these
-$(-1)$-curves. This proves the $r=7$ assertion in (d).
-:::
-
-:::
-
-::: {.pf-step #r8-classes-two-forty}
-For $r=8$, the possible $(-1)$-curve classes are exactly
-$$
-\begin{array}{c|c|c}
-a & (b_1,\ldots,b_8)\text{ up to permutation} & \text{number}\\
-\hline
-0 & \text{exceptional} & 8\\
-1 & (1,1,0,0,0,0,0,0) & 28\\
-2 & (1,1,1,1,1,0,0,0) & 56\\
-3 & (2,1,1,1,1,1,1,0) & 56\\
-4 & (2,2,2,1,1,1,1,1) & 56\\
-5 & (2,2,2,2,2,2,1,1) & 28\\
-6 & (3,2,2,2,2,2,2,2) & 8.
-\end{array}
-$$
-Thus there are $240$ such classes.
-
-::: pf-proof
-Step [](#minus-one-curve-numerics){.pf-ref} and Cauchy--Schwarz give
-$$
-(3a-1)^2
-\le
-8(a^2+1),
-$$
-so
-$$
-a^2-6a-7\le0
-$$
-and hence $a\le7$. Equality in Cauchy--Schwarz would be necessary when
-$a=7$, because then
-$$
-\frac{(3a-1)^2}{8}=a^2+1=50.
-$$
-It would force all eight integers $b_i$ to equal $20/8=5/2$, impossible.
-Thus $a\le6$.
-
-For $a=1,2$, the argument of step [](#r7-classes-fifty-six){.pf-ref} gives respectively two and five
-entries equal to $1$.
-
-For $a=3$, writing $x_i=b_i-1$ gives
-$$
-\sum_i x_i=0,
-\qquad
-\sum_i x_i^2=2.
-$$
-Hence one $x_i=1$, one $x_j=-1$, and all others are zero, giving
-$(2,1,1,1,1,1,1,0)$.
-
-For $a=4$, again put $x_i=b_i-1$. Then
-$$
-\sum_i x_i=3,
-\qquad
-\sum_i x_i^2=3.
-$$
-Since
-$$
-\sum_i x_i(x_i-1)=0
-$$
-and every integer $x_i\ge-1$ has $x_i(x_i-1)\ge0$, each $x_i$ is $0$ or
-$1$. Exactly three are $1$, giving $(2,2,2,1,1,1,1,1)$.
-
-For $a=5$, put $y_i=b_i-2$. Then
-$$
-\sum_i y_i=-2,
-\qquad
-\sum_i y_i^2=2.
-$$
-Thus exactly two $y_i$ equal $-1$ and the rest are zero, giving
-$(2,2,2,2,2,2,1,1)$.
-
-For $a=6$, the same substitution gives
-$$
-\sum_i y_i=1,
-\qquad
-\sum_i y_i^2=1.
-$$
-Hence exactly one $y_i=1$, giving $(3,2,2,2,2,2,2,2)$.
-
-The numbers of permutations are
-$$
-8,\ 28,\ 56,\ 56,\ 56,\ 28,\ 8,
-$$
-whose sum is
-$$
-\boxed{240}.
-$$
-:::
-
-:::
-
-::: {.pf-step #r8-classes-realized-unique}
-Every class in step [](#r8-classes-two-forty){.pf-ref} is represented by exactly one irreducible
-nonsingular rational curve. Hence for $r=8$ there are exactly $240$
-negative curves, and there are no others.
-
-::: pf-proof
-As in step [](#r7-classes-realized-unique){.pf-ref}, apply an admissible transformation at three points with
-largest multiplicities. Direct substitution in step [](#quadratic-transform-basis-change){.pf-ref} gives the degree
-reductions
-$$
-6\longmapsto5\longmapsto4\longmapsto2\longmapsto1\longmapsto0
-$$
-for the corresponding rows, while the degree-$3$ row maps to the
-degree-$2$ row. Thus every listed class reduces to an exceptional divisor.
-Reversing the admissible sequence produces a smooth rational representative
-of that class on the original surface.
-
-Uniqueness again follows from negative self-intersection: two distinct
-irreducible curves in the same class would have intersection $-1$. Finally
-step [](#negative-curve-is-minus-one-curve){.pf-ref} excludes every other irreducible curve of negative
-self-intersection. This completes (d).
-:::
-
-:::
-
-::: {.pf-step #r9-orbit-unbounded-degree}
-For $r=9$, the orbit of a line class under admissible
-transformations contains classes of arbitrarily large plane degree.
-
-::: pf-proof
-Start with the line
-$$
-L=P_1P_2,
-$$
-whose strict-transform class is
-$$
-C_0=h-e_1-e_2.
-$$
-It is a nonsingular rational $(-1)$-curve. Suppose at some stage its image
-has class
-$$
-C=dh-\sum_{i=1}^9m_i e_i,
-\qquad
-d>0,
-\qquad
-m_i\ge0.
-$$
-Because admissible transformations identify the marked blowups, $C$ remains
-a rational $(-1)$-curve. Hence adjunction gives
-$$
-K_X\cdot C=-1,
-$$
-or equivalently
-$$
-\sum_{i=1}^9m_i=3d-1.
-$$
-
-Relabel so that
-$$
-m_1\le m_2\le m_3\le\cdots\le m_9.
-$$
-The sum of the three smallest multiplicities is at most one third of the
-total:
-$$
-m_1+m_2+m_3
-\le
-\frac{3d-1}{3}
-<
-d.
-$$
-Since it is an integer,
-$$
-m_1+m_2+m_3\le d-1.
-$$
-Transform at these three points. Step [](#quadratic-transform-basis-change){.pf-ref} gives the new degree
-$$
-d'
-=
-2d-m_1-m_2-m_3
-\ge
-d+1.
-$$
-The new multiplicities at the three target base points are
-$$
-d-m_2-m_3,\qquad
-d-m_1-m_3,\qquad
-d-m_1-m_2.
-$$
-Each is positive because each pair sum is at most
-$m_1+m_2+m_3\le d-1$; the other six multiplicities are unchanged. Thus the
-same argument applies again.
-
-Step [](#general-position-preserved-under-sequence){.pf-ref} guarantees that every successive nine-point configuration remains
-in general position. Iterating therefore gives finite admissible sequences
-for which the plane degree of the transform of $L$ tends to infinity.
-:::
-
-:::
-
-::: {.pf-step #r9-infinitely-many-minus-one-curves}
-The surface obtained by blowing up nine points in general position
-contains infinitely many irreducible nonsingular rational $(-1)$-curves.
-
-::: pf-proof
-An admissible transformation acts on the marked Picard lattice by the
-isometry of step [](#quadratic-transform-basis-change){.pf-ref}. Step [](#r9-orbit-unbounded-degree){.pf-ref} shows that the orbit of the line class
-$$
-h-e_1-e_2
-$$
-is infinite, because its plane-degree coefficient is unbounded.
-
-This line class lies in the same orbit as an exceptional class: a quadratic
-transformation centered at $P_1,P_2,P_3$ contracts the line $P_1P_2$ to the
-target exceptional point $Q_3$, so on the blowups its class becomes
-$e_3'$. Hence the orbit of an exceptional class is infinite.
-
-For any finite admissible word, take an exceptional divisor on the terminal
-marked blowup and pull it back through the induced isomorphism to the original
-surface $X$. The result is an irreducible nonsingular rational curve of
-self-intersection $-1$, and its Picard class is the corresponding orbit
-element. Infinitely many orbit classes therefore give infinitely many
-distinct curves on $X$. This proves (e).
+This is the second half of Theorem 4a of Nagata, printed pp. 283--284: if $r\ge9$ and the $P_i$ are non-special, then $\mathrm{dil}_{(P_1,\ldots,P_r)}(S)$ carries infinitely many exceptional curves of the first kind. The proof given there is that $3d-\sum_im_i$ is an invariant of the similarity class by Lemma 2.8, so a pre-exceptional type satisfies $3d-\sum_im_i=1$; ordering $m_1\le\cdots\le m_r$ then gives $m_1+m_2+m_3\le(\sum_im_i)/3=(3d-1)/3<d$, so the operator $\mathfrak q$ of Section 2, which sends $(d,m_1,\ldots,m_r)$ to $(d+a,m_1+a,m_2+a,m_3+a,m_4,\ldots,m_r)$ with $a=d-m_1-m_2-m_3>0$, produces a pre-exceptional type of strictly larger degree. Iterating gives infinitely many pre-exceptional types with $r$ base points, and Theorem 2a of step [](#classes-are-pre-exceptional){.pf-ref} turns them into that many distinct irreducible exceptional curves of the first kind on $X$.
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#six-point-condition-preserved){.pf-ref} and [](#six-points-general-position-iff){.pf-ref} prove (a), step [](#general-position-preserved-under-sequence){.pf-ref} proves (b), and steps [](#uncountable-field-lemma){.pf-ref}, [](#bad-locus-proper-closed){.pf-ref} and [](#dense-general-position-extension){.pf-ref}
-prove (c) except for the properness of the bad locus, which step [](#bad-locus-proper-closed){.pf-ref} asserts and does not prove. Steps [](#degree-bound-nonneg-square){.pf-ref}, [](#negative-curve-is-minus-one-curve){.pf-ref}, [](#minus-one-curve-numerics){.pf-ref}, [](#r7-classes-fifty-six){.pf-ref}, [](#r7-classes-realized-unique){.pf-ref}, [](#r8-classes-two-forty){.pf-ref} and [](#r8-classes-realized-unique){.pf-ref} classify all negative curves for $r=7,8$ and
-give the counts $56$ and $240$, proving (d). Steps [](#r9-orbit-unbounded-degree){.pf-ref} and [](#r9-infinitely-many-minus-one-curves){.pf-ref} prove the
-starred $r=9$ assertion (e).
+Steps [](#general-position-is-non-special){.pf-ref} and [](#general-position-preserved-under-sequence){.pf-ref} prove (b). Steps [](#every-negative-curve-is-exceptional){.pf-ref}, [](#classes-are-pre-exceptional){.pf-ref}, [](#count-fifty-six-and-two-forty){.pf-ref} and [](#part-d){.pf-ref} prove (d), and step [](#part-e){.pf-ref} proves the starred (e). Parts (a) and (c) are not proved: step [](#six-point-criterion){.pf-ref} records that the sources print the criterion for (a) but not the enumeration with six base points that turns it into (a), and step [](#dense-extension-not-proved){.pf-ref} records that the generic-point lemma they print is not the dense-extension statement of (c).
 :::
 
 :::
 :::
 
 ::: {.remark title="Published solutions"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.15, printed p. 409, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.15, printed p. 409, all five parts on that one page, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`, whose printed page is its marker minus fifteen.
 
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.15, printed p. 294 for part (a)
---- the statement that one curve of order $m$ passes through $m(m+3)/2$ points, by induction on $m$ ---
-and p. 295 for (b), (c) and (d): (b) is the single line "This is Nagata, Rational Surfaces II, corollary
-to proposition 9, and use (a) of this problem", (c) is the general-position set as the complement of the
-vanishing of finitely many determinants, (d) is a list of four families for $r=7$ summing to $56$ and a
-list of seven for $r=8$ whose counts make $240$, read in `tmp/sources/hartshorne-solutions-egbert.pdf`
-and in its MinerU text version `tmp/sources/hartshorne-solutions-egbert.md`. It has no entry for the
-starred (e).
+M. Nagata, *On rational surfaces, II*, Mem. Coll. Sci. Univ. Kyoto Ser. A 32 (1960), read in `tmp/sources/nagata-1960-rational-surfaces-ii.md`, is the source the book's own note cites ("see Nagata [5, II, p. 283]"), and its Theorem 4a is the printed theorem at those pages. What it contributes to this exercise: Section 2(c) with Lemma 2.2 for the identification of general position with non-speciality and for (b); Lemma 2.5 for the generic-point statement that (c) is a spreading-out of but is not; Proposition 3 for the printed criterion behind (a); Theorem 2a for the bijection between pre-exceptional types and irreducible exceptional curves of the first kind; Theorem 4a for finiteness at $r\le8$ and for the infinite family at $r=9$, which is the starred part (e); and Proposition 12 for the statement that an irreducible curve of negative self-intersection that is not of the first kind exists only when the points are special, which is the half of (d) that the count of classes does not give. The paper's text version marks pages only in ten-page blocks; the printed page numbers above are read off those blocks, with Lemma 2.5 at p. 279 and Theorem 4a at pp. 283--284 fixing them.
 
-Igor V. Dolgachev, *Topics in Classical Algebraic Geometry*, Proposition 8.2.15 with its proof, in §8.2.4, printed
-pp. 261--262 by its contents, read in `tmp/sources/dolgachev-topics-classical-ag.md` at line 9865 and in
-`tmp/sources/dolgachev-topics-classical-ag.pdf`, classifies and counts the classes with $K_X\cdot v=-1$ and
-$v^2=-1$ --- the $(-1)$-classes on the blowup of $\PP^2$ at $N$ points --- at $56$ for $N=7$ and $240$ for $N=8$.
-That is the counting half of part (d) and nothing else of the exercise; the exercise stays open on it.
+Igor V. Dolgachev, *Topics in Classical Algebraic Geometry*, Proposition 8.2.15 with its proof, printed pp. 261--262, and Section 8.2.6 with Lemma 8.2.18, printed pp. 263--264, read in `tmp/sources/dolgachev-topics-classical-ag.md` at line 9857 and in the PDF. Proposition 8.2.15 classifies and counts the vectors with $\mathbf k_N\cdot v=-1$ and $v^2=-1$, which are the classes with $C\cdot K_X=-1$ and $C^2=-1$, at $56$ for $N=7$ and $240$ for $N=8$; Section 8.2.6 explains why on a Del Pezzo surface the image of each exceptional vector is a $(-1)$-curve, which is Dolgachev's route to the same realization that Theorem 2a gives here. What the printed proof of 8.2.15 does not carry correctly is the degree bound: it writes that $(3d-1)^2\le N(d^2+1)$ gives $0\le d\le4$ for every $N$, whereas the inequality gives $d\le3$ at $N=7$ and $d\le6$ at $N=8$, and its own list for $N=8$ contains a vector of degree $6$, namely $6\mathbf e_0-3\mathbf e_1-2\mathbf e_2-\cdots-2\mathbf e_8$. The list and the count are right; the intermediate bound as printed is not, and it is the count that the card uses.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.4.15, printed p. 112, argues four of the five parts and leaves the decisive half of (d). Its (a) checks that the six points are not all on a conic by transforming three of them and seeing the other three land on a line, but it checks only that one transformation, not that the condition survives every finite sequence. Its (b) is sound: a collinear triple after a sequence would give a collinear triple of the original points after the composite sequence. Its (c) takes the union of the lines $P_iP_j$ and the conics through five of the points and observes that its complement is dense because $k$ is uncountable, which is the printed hint's lemma used but not proved. Its (d) lists the four rows for $r=7$ and the seven for $r=8$ and sums them to $56$ and $240$, agreeing with steps [](#r7-classes-fifty-six){.pf-ref} and [](#r8-classes-two-forty){.pf-ref}, but it says nothing about which classes are represented by irreducible curves and nothing about the curves of negative self-intersection that are not $(-1)$-curves --- the two things that make the count a count of curves, which are steps [](#negative-curve-is-minus-one-curve){.pf-ref}, [](#r7-classes-realized-unique){.pf-ref} and [](#r8-classes-realized-unique){.pf-ref}. Its (e) is the degree-increasing argument. So no located source proves the starred part or the negative-curve assertion, and the card keeps its own proof.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.15, printed p. 294 for part (a) --- the statement that one curve of order $m$ passes through $m(m+3)/2$ points, by induction on $m$ --- and p. 295 for the rest: (b) is the single line "This is Nagata, Rational Surfaces II, corollary to proposition 9, and use (a) of this problem", (c) is the general-position set as the complement of the vanishing of finitely many determinants, (d) is a list of four families for $r=7$ summing to $56$ and seven for $r=8$ whose counts make $240$, and there is no entry for the starred (e). His (b) cites the corollary at p. 291, which is the eight-point criterion and not the invariance of the definition.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.4.15, printed p. 112, argues four of the five parts and leaves the decisive half of (d): its (a) checks that six points on a conic land on a line after one transformation, (b) is the composability argument, (c) takes the union of the lines $P_iP_j$ and the conics through five points and observes that its complement is dense because $k$ is uncountable --- the printed hint's lemma used and not proved --- (d) lists the four rows for $r=7$ and the seven for $r=8$, and says nothing about which classes are represented by irreducible curves nor about negative curves that are not $(-1)$-curves, and (e) is the degree-increasing argument, labelled by him "the case $r>9$".
 :::
