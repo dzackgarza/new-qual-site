@@ -201,6 +201,39 @@ audit:
     remark spelled the Cech complex with the accent command in the same way. The
     quoted line is now written as mathematics and the accent as the character.
     Neither change is to the mathematics, and no other card was touched.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the #121 reader's report: the pages of Reiser's and Hou's parts, as
+    the two restored events of this date and this date's COMPLAINTS record give
+    them, against the pages the steps cite. The steps are right and the restored
+    texts are corrected in this event, since a dated record is not rewritten in
+    place. Reiser: the statement of parts (a)--(e) is printed on folio 352 and the
+    solution begins on folio 353, folios read off the page footers of
+    tmp/sources/reiser-hartshorne-solutions.pdf, whose printed folio is one less
+    than its PDF page; the solutions of (a), (b) and (c) and the opening of (d),
+    "To check that this defines a group action", are on printed p. 353, and (d)'s
+    cross-ratio argument with "e. Yup!" on printed p. 354. So the restored
+    source-checked event's "Part (a) is on Reiser p. 352" names the statement and
+    not the solution, which is where step #canonical-degree-two cites it, at p.
+    353; and the restored record's "(d) at p. 354" omits p. 353, on which (d)'s
+    solution begins and where the group-law question is put, which is the range
+    step #sigma-six-action cites, at pp. 353--354. Hou: part (a) is on printed
+    p. 4, part (b) on printed p. 5 alone -- the quadratic extension, the finite
+    fibres and the chart at infinity are all on the folio that opens with "(b)"
+    -- and (c), (d), (e) on printed p. 6, folios equal to the PDF pages of
+    tmp/sources/ntu-ag2-chapter4.pdf; the restored texts' "Hou (b) at pp. 4--5" is
+    wrong for the same reason, the step citing p. 5. Read for this: both text
+    versions at those places,
+    tmp/sources/reiser-hartshorne-solutions-pp351-358.md, which is PDF pp.
+    352--359 of tmp/sources/reiser-hartshorne-solutions.pdf with the printed folio
+    one less than the PDF page, so that printed pp. 352--354 are its PDF pp.
+    353--355; and tmp/sources/ntu-ag2-chapter4.md, whose printed folio is its PDF
+    page. Not read in this pass: the printed exercise in the book,
+    Vakil, Egbert and Gruenewald, whose pages are those of the events above; and no
+    statement, proof or remark on the rendered page changes, the pages being
+    recorded here and not in the step text.
 review: draft
 ---
 
