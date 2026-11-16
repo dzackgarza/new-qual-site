@@ -3463,3 +3463,109 @@ that record for each what the transcription covered, what was checked against th
 not. Nothing here supersedes an earlier entry of this file: the four cards remain open under
 [#121](https://github.com/dzackgarza/new-qual-site/issues/121) for the parts named above, and each
 card's remark states what its sources do and do not prove.
+
+## 2026-11-16: the four elliptic-ruled-surface cards of #121 — V.2.12 and V.2.13 close on Fuentes' classification, V.2.15(c) and V.2.17(b) keep one part each without a published proof
+
+The batch is the four cards `P-AGH5212ELLRULEDAMPLE` (V.2.12), `P-AGH5213ELLSCROLL` (V.2.13),
+`P-AGH5215FROBENIUSRULED` (V.2.15(c)) and `P-AGH5217CONORMALSPLIT` (V.2.17). Each card's solution is
+now a transcription of the published argument, one step to one numbered statement, with the source
+and the printed page on the step; where no source carries a step the card says so on it. The source
+that changes this batch is Luis Fuentes, *Classification of elliptic line scrolls*,
+arXiv:math/0009050v1, text version `tmp/sources/fuentes-2000-classification-elliptic-line-scrolls.md`
+with its PDF: it is a classification of exactly these scrolls, it does treat the indecomposable case,
+and it is the paper the Fuentes--Pedreira paper of the earlier entries lists as its own reference [4]
+and never cites. Pages below were read off the PDFs page by page, the extractions marking only
+20-page ranges.
+
+- **V.2.12, closed on 2026-11-16.** Fuentes, Lemma 1.2, printed p. 3, is the degree criterion on an
+  elliptic curve; Proposition 1.3, printed pp. 3--4, is base-point freeness on a decomposable surface
+  and Proposition 2.10, printed pp. 14--15, on an indecomposable one; Proposition 1.4, printed p. 3,
+  is very ampleness on a decomposable surface and Proposition 2.11, printed p. 15, on an
+  indecomposable one. Both very-ampleness propositions rest on Fuentes--Pedreira's criteria, printed
+  as Theorem 3.9(3), p. 18, Corollary 2.13, pp. 14--15, and Corollary 2.4, p. 9, of
+  `tmp/sources/projective-theory-ruled-surfaces.md`, and both are proved there. The exercise's
+  $\\deg\\mfb\\ge e+2$ and $\\deg\\mfb\\ge e+3$ fall in the main alternatives of Propositions 1.3 and
+  2.10, the exceptional cases $\\mfb\\sim0$ at $e=0$ and $\\mfb\\sim-\\mfe$ at $e\\ge2$ needing
+  $\\deg\\mfb\\le0$ and $\\deg\\mfb=e$ respectively. Two readings of the source are recorded on the
+  card: Proposition 1.3(2)(d) prints "since $\\deg(\\mathfrak b)\\le0$" where $\\deg(\\mfe)\\le0$ is
+  meant, and Proposition 2.10 cites [2, Corollary 1.8] for base-point freeness where the statement
+  with that function is [2, Corollary 2.9], printed p. 11. The dichotomy the exercise needs, that
+  $e\\ge0$ or $e\\in\\{0,-1\\}$, is Fuentes' Theorem 2.7, printed p. 13, asserted there without proof;
+  the book's Theorem V.2.15, printed p. 377, is the proof, and the card cites it. The earlier entry's
+  "Open" for this card, the Atiyah surface $e=-1$ and the indecomposable bundles of invariant $e=0$,
+  is discharged by Propositions 2.10 and 2.11, and the paragraphs of that entry which say the
+  indecomposable case lies outside the published argument stand as what they then read.
+- **V.2.13, closed on 2026-11-16.** The same paper's Theorem 1.7(2)(d), printed p. 6, is the
+  decomposable case, $b\\ge3+e$ giving a smooth elliptic scroll of degree $2b-e$ in
+  $\\PP^{2b-e-1}$; Theorem 2.13(2)(b), printed pp. 16--17, is $e=-1$ with $b\\ge2$, of degree $2b+1$
+  in $\\PP^{2b}$; and Theorem 2.13(2)(c), printed pp. 16--17, is $e=0$ with $b\\ge3$, of degree $2b$ in
+  $\\PP^{2b-1}$. Those three are the exercise for every $e\\ge-1$ and $n\\ge e+3$, and the remaining
+  base-point-free case of the same theorem, (1)(a) at $e=-1$, $b=1$, is a plane and a $3:1$ map, which
+  the exercise excludes. The dimension is Fuentes--Pedreira's Theorem 3.10(1), printed p. 19, and
+  Fuentes' own count in Theorem 2.13's proof, printed p. 17, where his $N$ is the dimension of the
+  projective space and not the number of sections. The surfaces exist by Theorem 3.2(1) of the same
+  paper, printed p. 15, for $e\\ge0$, and by the book's Theorem V.2.15, printed p. 377, for $e=-1$.
+- **V.2.15(c): (a) and (b) published on 2026-11-16, the curve published, the printed "nonsingular"
+  still without a published proof and false.** Robin Hartshorne, *Ample vector bundles on curves*,
+  Nagoya Math. J. 43 (1971), 73--89, text version
+  `tmp/sources/hartshorne-1971-ample-vector-bundles-curves.md`: Lemma 3.1, printed pp. 84--85, is
+  part (a), the identification $H^1(C,\\OO_C)\\cong H^2(\\PP^2,\\OO(-4))$ with the three negative
+  monomials, the composition of Frobenius with multiplication by $g^2$, and the vanishing checked
+  monomial by monomial; Example 3.2, printed pp. 85--86, is part (b), the extension, its degree $1$,
+  the two Riemann--Roch dimensions $3$ and $5$, and the dimension count, whose printed diagram is
+  garbled and whose count is the kernel of $H^1(\\OO_C(-3P))\\to H^1(\\OO_C)$ against the isomorphism
+  $H^1(\\OO_C(-P))\\cong H^1(\\OO_C)$. Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing
+  on Ruled Surfaces in Positive Characteristic*, text version
+  `tmp/sources/xie-2007-kawamata-viehweg-counterexamples-ruled-surfaces.md`: Example 3.1, printed
+  pp. 5--6, is the curve of (c), the section with $\\OO_X(E)\\cong\\OO_X(1)$ and $E^2=\\deg\\mathcal E$,
+  the split Frobenius pullback and an irreducible $C'$ with
+  $\\OO_X(C')\\cong\\OO_X(p)\\otimes f^*\\mathcal L^{-p}$ disjoint from the section, which at $p=3$ and
+  $\\mathcal L=\\OO_C(P)$ is the class $3C_0-3f$; Lemma 4.4(iii), printed pp. 10--11, is the pure
+  inseparability of $f\\restrictionof_R$ for an irreducible $R$ with $R^2<0$, which $Y^2=-9$ meets. The
+  pages the batch brief gave for Xie, 4--5 and 9--10, are one page low. **Still without a published
+  proof: the printed word "nonsingular".** It cannot have one: adjunction gives
+  $p_a(3C_0-3f)=1+(-9+15)/2=4$ while $\\pi\\restrictionof_Y$ is purely inseparable of degree $3$, so
+  $K(Y)=K(C)^{1/3}$ and the normalization of $Y$ is $C$ of genus $3$. Xie prints the opposite of the
+  true statement for exactly this curve --- "It is easy to verify that both $E$ and $C'$ are smooth
+  over $k$", printed p. 6 --- and that sentence is false at $p=3$ and $\\deg\\mathcal L=1$ by this
+  count. The corrected statement, an integral $Y\\equiv3C_0-3f$ with normalization $C$ and
+  $\\delta=1$, is the card's own, as is the non-ampleness of $D=2C_0$ read off $C_0\\cap Y=\\emptyset$
+  with Nakai--Moishezon; the card keeps the printed statement and records the erratum in its head.
+- **V.2.17: (a) published, (b) published except in characteristic $3$, which has no published proof
+  on 2026-11-16.** Part (a): Ted Shifrin's answer 1583486 to Math StackExchange question 1583326,
+  text version `tmp/sources/mse-1583326-hart77-v217-twisted-cubic-normal-bundle.md`, gives the two
+  frames of the conormal bundle and the transition matrix, and reads $\\OO(-5)\\oplus\\OO(-5)$ off it;
+  Eisenbud and Van de Ven, *On the Normal Bundles of Smooth Rational Space Curves*, Math. Ann. 256
+  (1981), 453--463, Proposition 6, printed p. 458 with its proofs on pp. 458--460, gives
+  $N\\cong\\OO(2n-1)\\oplus\\OO(2n-1)$ for a smooth rational curve of degree $n\\ge3$ on a smooth quadric
+  over a field of characteristic $0$, which at $n=3$ is the same answer. Part (b): Yang Pi-Yeh,
+  *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, Solution 5.2.17,
+  printed pp. 106--107, computes the Jacobian presentation and gets $R(-7)\\oplus R(-7)$ when
+  $\\operatorname{char}k\\ne2,3$ and $R(-8)\\oplus R(-6)$ when $\\operatorname{char}k=2,3$; with
+  Eisenbud--Van de Ven at $n=4$, which gives $\\OO(7)\\oplus\\OO(7)$, that is a complete published
+  argument in characteristic $2$, in characteristic $0$, and in every characteristic other than $2$
+  and $3$. **Still without a published proof: part (b) in characteristic $3$.** Yang's entry puts
+  characteristic $3$ in the split case, and the book's printed answer, printed p. 386, has the split
+  case at $\\operatorname{char}k=2$ alone; the card's own step, the extension class $(n-1)\\eta$ of the
+  conormal sequence, is what decides it, and the card marks that step as its own. This record also
+  corrects, without editing the event that states it, the second elementary operation written into
+  step `s5` earlier on 2026-11-16: adding $-2t^{-1}$ times the first column to the second leaves
+  $-2t^{-6}$ and does not reduce the matrix, while adding $-2t^{-1}$ times the second column to the
+  first, over $k[t^{-1}]$, leaves $t^{-5}$ times the identity. The reduction is the one Shifrin's
+  answer calls the row- and column-operation game.
+
+**Uncertainty.** Searched in this batch: the four briefs' named sources, read in their text versions
+and against their PDFs; the book's V.2 for the four statements, its Theorem V.2.12, Theorem V.2.15,
+Proposition 2.21(b) and Remark 2.21.1; and, for the two open parts, nothing further. Conclusion: the
+two parts named above have no published proof in the files read, and the printed "nonsingular" of
+V.2.15(c) cannot have one. Confidence: high for those files. Gaps: no search of the literature beyond
+them, in particular none for a published computation of the conormal sheaf of the rational quartic in
+characteristic $3$, and none for a published statement that no nonsingular curve of class
+$3C_0-3f$ exists on the Atiyah surface; and the number of singular points of $Y$ was not verified
+independently of $\\delta=p_a-g=1$.
+
+**Repair.** Per card, the commits of this date touching it, with the audit events that record what
+the transcription covered and what was not checked: V.2.12 in `4578427ace`, V.2.13 in `f16e32dea0`,
+V.2.15(c) in `db9f5c3b83`, V.2.17 in `2b6afd25a7`. V.2.12 and V.2.13 are closed under
+[#121](https://github.com/dzackgarza/new-qual-site/issues/121); V.2.15(c) and V.2.17(b) remain open
+for the parts named above, and each card's remark states what its sources do and do not prove.
