@@ -37,9 +37,9 @@ audit:
     E_c. Searched outside the twelve retained sets and read two further
     published treatments: Algebraic Geometry II, National Taiwan University,
     2020 Spring, Chapter V homework, Exercise 2 of section 2, PDF pp. 5-6
-    (tmp/sources/ntu-ag2-chapter5.pdf), which proves both directions by the
+    (tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`), which proves both directions by the
     card's argument, and Yang Pi-Yeh, Hartshorne Solutions, exercise 5.2.2,
-    printed p. 102 (tmp/sources/lfwin-hartshorne-solutions.pdf), which asserts
+    printed p. 102 (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), which asserts
     both directions. The card's determinant argument in step s3 is not in
     either. Not checked: nothing in the exercise depends on the characteristic.
 ---
@@ -183,9 +183,9 @@ Step [](#s2){.pf-ref} proves the forward implication, and step [](#s3){.pf-ref} 
 :::
 
 ::: {.remark title="Published solution"}
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 2 of §2 (solution by Yu-Chi Hou), PDF pp. 5--6, proves both directions. For $\Rightarrow$, the two direct summands give surjections $\mathcal E\twoheadrightarrow\mathcal L_i$, hence sections $C_1,C_2$; twisting $\pi^*\sigma_i^*\OO_X(1)=\pi^*\mathcal L_i$ by $\OO_X(-C_j)$ and restricting to $C_i$ gives $\deg_{C_i}(\OO_X(C_j)|_{C_i})=C_i\cdot C_j=0$, and distinct irreducible curves with intersection number zero are disjoint. For $\Leftarrow$, the kernel inclusions give $\mathcal N_1\oplus\mathcal N_2\to\mathcal E$, and the check is made pointwise: at a point of $C_1$ the local equation $f_1$ generates $\OO_X(-C_1)$ while $\OO_X(-C_2)=\OO_X$ there, because $C_1\cap C_2=\varnothing$, so a pair $(0,a)$ maps to $a$. That is step [](#s1){.pf-ref} and step [](#s3){.pf-ref}, with the determinant replacing the pointwise accounting of the quotient.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 2 of §2 (solution by Yu-Chi Hou), PDF pp. 5--6, proves both directions. For $\Rightarrow$, the two direct summands give surjections $\mathcal E\twoheadrightarrow\mathcal L_i$, hence sections $C_1,C_2$; twisting $\pi^*\sigma_i^*\OO_X(1)=\pi^*\mathcal L_i$ by $\OO_X(-C_j)$ and restricting to $C_i$ gives $\deg_{C_i}(\restrictionof{\OO_X(C_j)}{C_i})=C_i\cdot C_j=0$, and distinct irreducible curves with intersection number zero are disjoint. For $\Leftarrow$, the kernel inclusions give $\mathcal N_1\oplus\mathcal N_2\to\mathcal E$, and the check is made pointwise: at a point of $C_1$ the local equation $f_1$ generates $\OO_X(-C_1)$ while $\OO_X(-C_2)=\OO_X$ there, because $C_1\cap C_2=\varnothing$, so a pair $(0,a)$ maps to $a$. That is step [](#s1){.pf-ref} and step [](#s3){.pf-ref}, with the determinant replacing the pointwise accounting of the quotient.
 
 Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.2, printed p. 102, asserts both directions: "clearly the sections corresponding to $L$ and $L'$ have no intersection", and in the converse "since $C\cap C'=\emptyset$, we have $K\oplus K'\to E$ is injective".
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.2, PDF p. 261: the whole entry is the citation "Marumaye, Remark 1.20"; Maruyama's paper is not in `tmp/sources`, so there is no argument to read.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.2, PDF p. 261, text version `tmp/sources/hartshorne-solutions-egbert.md`: the whole entry is the citation "Marumaye, Remark 1.20"; Maruyama's paper is not in `tmp/sources`, so there is no argument to read.
 :::

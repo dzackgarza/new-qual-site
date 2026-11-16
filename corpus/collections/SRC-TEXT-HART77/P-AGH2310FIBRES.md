@@ -41,7 +41,7 @@ audit:
     theorem. That factorization needs the two roots distinct, i.e. char k != 2;
     in characteristic 2, a = r^2 and t^2-a = (t-r)^2, the ring is k[t]/((t-r)^2),
     one nonreduced point with residue field k, exactly the counterexample this
-    card keeps as a step. The same slip is at Kim, PDF p. 23 and Cais, 3.10(b).
+    card keeps as a step. The same slip is at Kim, PDF p. 23, text version `tmp/sources/hartshorne-solutions-kim.md` and Cais, 3.10(b).
     So no located source proves the printed two-point assertion in
     characteristic 2, and none can: the printed statement is false there. The
     card keeps its characteristic-two computation and the repair stays open on an

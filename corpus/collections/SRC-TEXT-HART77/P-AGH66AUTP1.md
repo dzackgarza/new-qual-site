@@ -24,7 +24,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    Read Milne, Fields and Galois Theory, Example 3.1(b) printed p. 35 and
+    Read Milne, Fields and Galois Theory, Example 3.1(b) printed p. 35, text version `tmp/sources/milne-fields-and-galois-theory.md` and
     Lemma 9.24 printed p. 119: [F(X):F(a_i)] = deg(a_i) for a_i in lowest
     terms, so a k-automorphism of k(x) with x -> a/b forces max(deg a, deg
     b) = [k(x):k(a/b)] = 1 and a, b linear. That is the implication

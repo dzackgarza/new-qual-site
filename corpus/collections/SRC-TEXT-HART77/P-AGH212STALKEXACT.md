@@ -95,7 +95,7 @@ $$
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.2, PDF pp. 2--3, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he reduces both identities of (a) to two facts, that sheafification does not change stalks and that kernels and images of abelian-group maps commute with the directed colimits which compute stalks, then reads (b) off as $\ker\phi=0$ and $\coker\phi=0$ and (c) off as $\ker\phi^{i}=\im\phi^{i-1}$ checked on stalks.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.2, PDF pp. 2--3, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he reduces both identities of (a) to two facts, that sheafification does not change stalks and that kernels and images of abelian-group maps commute with the directed colimits which compute stalks, then reads (b) off as $\ker\phi=0$ and $\coker\phi=0$ and (c) off as $\ker\phi^{i}=\im\phi^{i-1}$ checked on stalks.
 The proof above uses the same commutation for the kernels, but carries (a) out as an explicit chase on representatives, and the paragraph above carries the image out the same way; (b) and (c) are the same.
 Agree.
 :::

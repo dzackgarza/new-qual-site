@@ -51,7 +51,7 @@ audit:
     Published proof located for this exercise (issue #121). M. Reid, Chapters on
     Algebraic Surfaces, arXiv:alg-geom/9602006v1 (6 February 1996), a draft of
     the notes submitted to the 1993 volume of the IAS/AMS Park City lecture notes
-    series (so the draft's "Status of this draft", printed p. 2, and the arXiv
+    series (so the draft's "Status of this draft", printed p. 2, text version `tmp/sources/hartshorne-solutions-park.md`, and the arXiv
     record's comment field), Appendix A.7 "Contracted divisors are negative",
     Theorem (Negativity of exceptional locus), with its statement on printed
     p. 29 and its proof on printed pp. 30--31, is part (b) verbatim and in

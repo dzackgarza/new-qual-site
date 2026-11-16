@@ -25,7 +25,7 @@ audit:
   date: 2026-11-15
   note: >-
     Printed exercise read: Hartshorne, Algebraic Geometry (1977), IV.1.5, printed
-    p. 298 (PDF p. 313 of tmp/sources/hartshorne-1977-algebraic-geometry.pdf).
+    p. 298 (PDF p. 313 of tmp/sources/hartshorne-1977-algebraic-geometry.pdf, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md`).
     Published proof located: the Stacks Project, Chapter 53, Section 53.3
     and Section 53.10, tag by tag, read in
     tmp/sources/stacks-tags/0CCS.md and tmp/sources/stacks-tags/0C6T.md, which
@@ -260,5 +260,5 @@ Step [](#s2){.pf-ref} proves the inequality and step [](#s8){.pf-ref} characteri
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.5, printed p. 207, computes $\dim\abs{D}=h^0(D)-1=\deg D-g+h^0(K-D)\le\deg D-g+h^0(K)=\deg D$ using $h^0(K)=g$, and reads off equality exactly when $h^0(K-D)=h^0(K)$, that is $D=0$ or $g=0$. Lomont, Chapter IV §1, Exercise 1.5, PDF p. 4, has the same argument.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.5, printed p. 207, text version `tmp/sources/hartshorne-solutions-egbert.md`, computes $\dim\abs{D}=h^0(D)-1=\deg D-g+h^0(K-D)\le\deg D-g+h^0(K)=\deg D$ using $h^0(K)=g$, and reads off equality exactly when $h^0(K-D)=h^0(K)$, that is $D=0$ or $g=0$. Lomont, Chapter IV §1, Exercise 1.5, PDF p. 4, text version `tmp/sources/hartshorne-solutions-lomont.md`, has the same argument.
 :::

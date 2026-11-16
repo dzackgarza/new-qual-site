@@ -32,7 +32,7 @@ audit:
 - event: source-checked
   by: claude
   date: 2026-11-09
-  note: 'Read III.10.7 against Hartshorne p. 276 and Dongryul Kim, Solutions to Hartshorne, pp. 200-203. The printed statement is now kept in the problem (as printed, part (b) gives a two-case dichotomy), and the missing case is named and proved in the solution: the member z(x(x+z)+lambda y(y+z)) with lambda not in F_2 is the line z=0 plus the smooth conic x(x+z)+lambda y(y+z) tangent to it at [sqrt(lambda):1:0]. Kim lists the same correction. Repaired the assertion that an irreducible conic over an algebraically closed field is smooth, which fails in characteristic 2, by deriving smoothness from the order at the double point.'
+  note: 'Read III.10.7 against Hartshorne p. 276 and Dongryul Kim, Solutions to Hartshorne, pp. 200-203, text version `tmp/sources/hartshorne-solutions-kim.md`. The printed statement is now kept in the problem (as printed, part (b) gives a two-case dichotomy), and the missing case is named and proved in the solution: the member z(x(x+z)+lambda y(y+z)) with lambda not in F_2 is the line z=0 plus the smooth conic x(x+z)+lambda y(y+z) tangent to it at [sqrt(lambda):1:0]. Kim lists the same correction. Repaired the assertion that an irreducible conic over an algebraically closed field is smooth, which fails in characteristic 2, by deriving smoothness from the order at the double point.'
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29

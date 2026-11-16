@@ -174,5 +174,5 @@ conclusion.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.3, printed p. 219, computes $\omega_X=\OO_X(\sum d_i-n-1)$ for a complete intersection and observes that for $g\ge2$ the canonical sheaf is very ample, so a complete intersection cannot have genus $2$, where $|K|$ has degree two.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.3, printed p. 219, text version `tmp/sources/hartshorne-solutions-egbert.md`, computes $\omega_X=\OO_X(\sum d_i-n-1)$ for a complete intersection and observes that for $g\ge2$ the canonical sheaf is very ample, so a complete intersection cannot have genus $2$, where $\linearsystem{K}$ has degree two.
 :::

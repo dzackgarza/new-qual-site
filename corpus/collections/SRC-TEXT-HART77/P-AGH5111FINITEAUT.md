@@ -44,12 +44,12 @@ audit:
     so it is a lattice in Num X tensor R. Located two published treatments
     outside the twelve retained sets. Algebraic Geometry II, National Taiwan
     University, 2020 Spring, Chapter V homework, Exercise 11 (Shuang-Yen Lee),
-    PDF p. 4, downloaded to tmp/sources/ntu-ag2-chapter5.pdf, proves (a) and
+    PDF p. 4, downloaded to tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`, proves (a) and
     (b) by the same route, but its displayed estimate for the sum of the
     c_i^2 does not follow from its adjunction line, so steps s1 to s3 are the
     corrected bookkeeping rather than a transcription. Yang Pi-Yeh,
     Hartshorne Solutions, exercise 5.1.11, printed p. 101
-    (tmp/sources/lfwin-hartshorne-solutions.pdf), never bounds the
+    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), never bounds the
     coefficients. Not checked: whether the NTU set's constant A is uniform in
     h; the card does not use that constant.
 ---

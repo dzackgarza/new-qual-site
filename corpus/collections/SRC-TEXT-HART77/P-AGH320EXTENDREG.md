@@ -33,7 +33,7 @@ audit:
   date: 2026-11-11
   note: >-
     Read Vakil, The Rising Sea, 2 September 2011 draft, Section
-    12.3.9-12.3.11, printed pp. 267-268: the Algebraic Hartogs' Lemma and
+    12.3.9-12.3.11, printed pp. 267-268, text version `tmp/sources/vakil-rising-sea-2025-10-21.md`: the Algebraic Hartogs' Lemma and
     its proof by the ideal of denominators, which is the height-one
     intersection step the card cites to Matsumura Theorem 11.5. Matsumura's
     book is not on this machine, so that numbering is repeated from the card
@@ -233,6 +233,6 @@ The height-one intersection theorem that step [](#s3){.pf-ref} applies is proved
 
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 3.20.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 3.20.
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.20, PDF p. 38, writes "Since projective space is proper this works" for (a) and "Consider a single variable complex function with a pole" for (b); neither is an argument for the statement.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.20, PDF p. 38, text version `tmp/sources/hartshorne-solutions-egbert.md`, writes "Since projective space is proper this works" for (a) and "Consider a single variable complex function with a pole" for (b); neither is an argument for the statement.
 No Hartshorne solution set contains a proof of this exercise, and Vakil's book proves the algebra lemma rather than the exercise. The proof above reduces to the local ring $\mco_{P,Y}$, shows the rational function lies in every height-one localization by finding a closed point of $V(\mathfrak p)$ other than $P$, and cites the lemma for the intersection; the punctured line $1/x\in\mco(\AA^1\setminus\theset{0})\setminus\mco_0$ is (b).
 :::

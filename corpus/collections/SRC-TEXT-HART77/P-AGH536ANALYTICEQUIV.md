@@ -45,7 +45,7 @@ audit:
     1,x,...,x^6,y,xy,x^2y,x^3y, so tau = 11; the Groebner basis claim was
     checked by hand on the three S-polynomials. Searched outside the twelve
     retained sets: Yang Pi-Yeh, Hartshorne Solutions, exercise 5.3.6, printed
-    p. 108 (tmp/sources/lfwin-hartshorne-solutions.pdf), has the completion
+    p. 108 (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), has the completion
     argument and asserts the counterexample without computation; Algebraic
     Geometry II, National Taiwan University, 2020 Spring, has no entry for
     Exercise 6 of section 3. Wall's Singular Points of Plane Curves was searched

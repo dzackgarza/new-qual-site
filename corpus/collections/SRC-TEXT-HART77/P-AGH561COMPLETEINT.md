@@ -301,5 +301,5 @@ general type.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.1, printed p. 303 (the canonical class $K_X=(\sum d_i-n-1)H$ of a complete-intersection surface and the negative or zero canonical cases).
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.1, printed p. 303, text version `tmp/sources/hartshorne-solutions-egbert.md` (the canonical class $K_X=(\sum d_i-n-1)H$ of a complete-intersection surface and the negative or zero canonical cases).
 :::

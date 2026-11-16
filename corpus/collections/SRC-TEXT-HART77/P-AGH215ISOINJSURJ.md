@@ -54,7 +54,7 @@ The resulting inverse maps on sections are compatible with restriction and defin
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.5, PDF p. 3, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he identifies injective together with surjective with exactness of $0\to\mcf\to\mcg\to0$, which by Exercise 1.2 is exactness of every stalk sequence and hence bijectivity of every $\phi_P$; the converse builds the inverse on sections by lifting with Exercise 1.3 and gluing.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.5, PDF p. 3, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he identifies injective together with surjective with exactness of $0\to\mcf\to\mcg\to0$, which by Exercise 1.2 is exactness of every stalk sequence and hence bijectivity of every $\phi_P$; the converse builds the inverse on sections by lifting with Exercise 1.3 and gluing.
 The proof above is that argument, with the uniqueness of the lifts used explicitly so that the local inverses glue.
 Agree.
 :::

@@ -456,5 +456,5 @@ in the theorem.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.2, printed p. 303 (the Chern–Griffiths theorem on surfaces in $\PP^{n+1}$).
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.2, printed p. 303, text version `tmp/sources/hartshorne-solutions-egbert.md` (the Chern–Griffiths theorem on surfaces in $\PP^{n+1}$).
 :::

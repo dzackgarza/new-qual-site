@@ -27,7 +27,7 @@ audit:
 - event: source-checked
   by: claude
   date: 2026-11-09
-  note: 'Read III.12.5 against Hartshorne p. 291 and Dongryul Kim, Solutions to Hartshorne, p. 216, whose solution opens by saying that E must have rank at least 2. The statement is now kept as printed, without the rank hypothesis, and the solution names the rank-one counterexample P(E) = Y and proves the corrected statement for rank at least 2.'
+  note: 'Read III.12.5 against Hartshorne p. 291 and Dongryul Kim, Solutions to Hartshorne, p. 216, text version `tmp/sources/hartshorne-solutions-kim.md`, whose solution opens by saying that E must have rank at least 2. The statement is now kept as printed, without the rank hypothesis, and the solution names the rank-one counterexample P(E) = Y and proves the corrected statement for rank at least 2.'
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29

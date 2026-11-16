@@ -80,5 +80,5 @@ The function $f$ of step [](#s2){.pf-ref} satisfies $(f)+nD\ge0$, so it is regul
 :::
 
 ::: {.remark title="Published solution"}
-Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, Chapter IV §1, Exercise 2, PDF p. 30, and Lomont, *Solutions to Hartshorne's Algebraic Geometry*, Chapter IV §1, Exercise 1.2, PDF p. 4, both handle the cancellation obstruction explicitly: for $Q\notin F$ and $n>\max\{2g-2,g\}$ one has $D\in|n(P_1+\cdots+P_r-(r-1)Q)|$ of degree $n$, and in the sole bad case $D=nP_i$ one replaces $f$ by $f^\alpha g$ with $g$ from Exercise 1 having a pole only at $P_i$ and $\alpha>\max\{n_j,1\}$.
+Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, Chapter IV §1, Exercise 2, PDF p. 30, text version `tmp/sources/hartshorne-solutions-park.md`, and Lomont, *Solutions to Hartshorne's Algebraic Geometry*, Chapter IV §1, Exercise 1.2, PDF p. 4, text version `tmp/sources/hartshorne-solutions-lomont.md`, both handle the cancellation obstruction explicitly: for $Q\notin F$ and $n>\max\{2g-2,g\}$ one has $D\in\linearsystem{n(P_1+\cdots+P_r-(r-1)Q)}$ of degree $n$, and in the sole bad case $D=nP_i$ one replaces $f$ by $f^\alpha g$ with $g$ from Exercise 1 having a pole only at $P_i$ and $\alpha>\max\{n_j,1\}$.
 :::

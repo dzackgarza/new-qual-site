@@ -26,7 +26,7 @@ audit:
 - event: source-checked
   by: claude
   date: 2026-11-09
-  note: 'Read III.10.2 against Hartshorne p. 275 and Dongryul Kim, Solutions to Hartshorne, pp. 194-195. Repaired the openness step: the card cited Hartshorne Chapter III section 10 for the openness of the smooth locus, and section III.10 contains no such statement. Steps s1-s2 now identify the smooth locus with {x : dim of Omega_{X/Y} tensor kappa(x) equals dim X - dim Y}, show that set is open by Nakayama for the coherent sheaf of relative differentials, and apply Theorem III.10.2; the fibre dimension input is Corollary III.9.6.'
+  note: 'Read III.10.2 against Hartshorne p. 275 and Dongryul Kim, Solutions to Hartshorne, pp. 194-195, text version `tmp/sources/hartshorne-solutions-kim.md`. Repaired the openness step: the card cited Hartshorne Chapter III section 10 for the openness of the smooth locus, and section III.10 contains no such statement. Steps s1-s2 now identify the smooth locus with {x : dim of Omega_{X/Y} tensor kappa(x) equals dim X - dim Y}, show that set is open by Nakayama for the coherent sheaf of relative differentials, and apply Theorem III.10.2; the fibre dimension input is Corollary III.9.6.'
 ---
 
 ::: {.problem}

@@ -43,10 +43,10 @@ audit:
     v^3(u^3+uv+v^2), whose tangent cone is v^2 and which is smooth at the
     origin, so delta = 3 + 1 = 4 as the card says. Searched outside the twelve
     retained sets: NTU 2020, Exercise 7 of section 3, PDF pp. 12-13
-    (tmp/sources/ntu-ag2-chapter5.pdf), has resolutions, the same five delta
+    (tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`), has resolutions, the same five delta
     values 4,4,3,4,4 and the same equivalence classes; Yang Pi-Yeh,
     Hartshorne Solutions, printed pp. 108-109
-    (tmp/sources/lfwin-hartshorne-solutions.pdf), writes the transforms
+    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), writes the transforms
     without delta or equivalence. Not checked: whether a general ground field
     lacks the square root of -1 used in the chart of (e); the book assumes k
     algebraically closed, and over such a field the three points on the

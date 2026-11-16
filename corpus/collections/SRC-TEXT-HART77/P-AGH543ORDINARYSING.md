@@ -59,12 +59,12 @@ audit:
     line "See Algebraic Curves over Finite Fields by Hirschfeld, Theorem 3.27",
     and Hirschfeld's book is not in tmp/sources; Algebraic Geometry II,
     National Taiwan University, 2020 Spring, Chapter V homework, Exercise 3 of
-    section 4, PDF p. 15 (tmp/sources/ntu-ag2-chapter5.pdf), replaces the
+    section 4, PDF p. 15 (tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`), replaces the
     resolution blowups by quadratic transformations with two auxiliary centres
     and then analyses the multiplicity at P in a single chart, ending "so
     induction on this then we are done" without the case where every tangent
     direction must be separated; Yang Pi-Yeh, Hartshorne Solutions, exercise
-    5.4.3, printed p. 109 (tmp/sources/lfwin-hartshorne-solutions.pdf), chooses
+    5.4.3, printed p. 109 (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), chooses
     the two points so that P1Pi meets C transversally at P1, notes
     mu(R_i) < mu(P_1), and concludes that the process stops with only ordinary
     singularities, but does not show that the contracted points are ordinary.

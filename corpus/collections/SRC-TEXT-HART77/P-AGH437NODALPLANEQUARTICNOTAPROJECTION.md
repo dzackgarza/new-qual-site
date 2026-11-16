@@ -329,5 +329,5 @@ Hence it is the required counterexample.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.7, printed p. 222, notes that the nodal quartic has a single ordinary node, so its normalization has genus one less than the arithmetic genus, while a nonsingular space curve of the same degree has the larger arithmetic genus; a birational projection preserving degree is therefore impossible.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.7, printed p. 222, text version `tmp/sources/hartshorne-solutions-egbert.md`, notes that the nodal quartic has a single ordinary node, so its normalization has genus one less than the arithmetic genus, while a nonsingular space curve of the same degree has the larger arithmetic genus; a birational projection preserving degree is therefore impossible.
 :::

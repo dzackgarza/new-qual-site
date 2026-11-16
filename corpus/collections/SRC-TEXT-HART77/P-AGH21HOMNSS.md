@@ -101,7 +101,7 @@ Thus the positive-degree hypothesis cannot be dropped; in the affine argument it
 :::
 
 ::: {.remark title="Published solution"}
-Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.1, PDF p. 2, and William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.1, PDF p. 3: both read the projective statement in the affine cone, note that a positive-degree homogeneous $f$ vanishes at the cone vertex as well, and apply the affine Nullstellensatz to the affine zero set.
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.1, PDF p. 2, text version `tmp/sources/hartshorne-solutions-borcherds.md`, and William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.1, PDF p. 3, text version `tmp/sources/hartshorne-solutions-troiani.md`: both read the projective statement in the affine cone, note that a positive-degree homogeneous $f$ vanishes at the cone vertex as well, and apply the affine Nullstellensatz to the affine zero set.
 The proof above separates the two cases of the affine zero set — a nonzero point and the vertex — as a step, which is the step both published arguments take in one sentence, and it records that the vertex case is vacuous when the projective zero set is empty.
 Agree.
 :::

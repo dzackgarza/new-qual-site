@@ -426,5 +426,5 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), st
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.6, printed p. 216 (entry 4.2.18), computes $f_*$ of a divisor by summing over the points of each fibre with their ramification indices, checks linear equivalence, and identifies the determinant of $f_*\OO_X$ with $\OO_Y(-B)$ times the trace-zero data, using that $\deg f_*\OO_X$ is the rank.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.6, printed p. 216, text version `tmp/sources/hartshorne-solutions-egbert.md` (entry 4.2.18), computes $f_*$ of a divisor by summing over the points of each fibre with their ramification indices, checks linear equivalence, and identifies the determinant of $f_*\OO_X$ with $\OO_Y(-B)$ times the trace-zero data, using that $\deg f_*\OO_X$ is the rank.
 :::

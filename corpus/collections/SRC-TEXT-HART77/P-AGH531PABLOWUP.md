@@ -44,10 +44,10 @@ audit:
     p_a(Z) = (-1)^n (chi(Z,O_Z) - 1), the definition of III.5/IV.1. Searched
     outside the twelve retained sets: Algebraic Geometry II, National Taiwan
     University, 2020 Spring, Chapter V homework, Exercise 1 of section 3, PDF
-    p. 9 (tmp/sources/ntu-ag2-chapter5.pdf), proves the vanishing for a centre
+    p. 9 (tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`), proves the vanishing for a centre
     of any codimension by the formal functions theorem over E = P^{r-1};
     Yang Pi-Yeh, Hartshorne Solutions, exercise 5.3.1, printed p. 107
-    (tmp/sources/lfwin-hartshorne-solutions.pdf), assumes codimension one and
+    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), assumes codimension one and
     is not a proof of the exercise. Not checked: Chatzistamatiou-Rulling
     Theorem 1.1 itself, which is cited and not in tmp/sources; the card's own
     argument needs only that statement.

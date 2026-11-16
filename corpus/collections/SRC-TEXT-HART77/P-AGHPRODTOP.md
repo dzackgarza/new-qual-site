@@ -50,8 +50,8 @@ Projections from a product topology are open maps but need not be closed, so tha
 :::
 
 ::: {.remark title="Published solution"}
-Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.4, PDF p. 1, and Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.4, PDF p. 2: both take the diagonal $Z(x-y)$, closed in $\AA^2$ and not closed in the product, Park by listing the closed sets of the product as finite unions of sets of the form $V_1\times V_2$ with each $V_i$ empty, finite or everything.
-William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 1.4, PDF p. 2, argues that every closed set of $\AA^1\times\AA^1$ is finite, which is false — $\AA^1\times\{b\}$ is an infinite closed set of the product — and then uses that $Z(y-x)$ is infinite.
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.4, PDF p. 1, text version `tmp/sources/hartshorne-solutions-borcherds.md`, and Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.4, PDF p. 2, text version `tmp/sources/hartshorne-solutions-park.md`: both take the diagonal $Z(x-y)$, closed in $\AA^2$ and not closed in the product, Park by listing the closed sets of the product as finite unions of sets of the form $V_1\times V_2$ with each $V_i$ empty, finite or everything.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 1.4, PDF p. 2, text version `tmp/sources/hartshorne-solutions-troiani.md`, argues that every closed set of $\AA^1\times\AA^1$ is finite, which is false — $\AA^1\times\{b\}$ is an infinite closed set of the product — and then uses that $Z(y-x)$ is infinite.
 The proof above uses the diagonal as all three do, and instead of comparing against a list of closed sets it intersects a basic open box around a point off the diagonal with the diagonal, which is the missing argument in the argument Borcherds and Troiani leave at one sentence.
 Agree with Borcherds and Park, and agree with Troiani's example and conclusion but not with its reason.
 :::

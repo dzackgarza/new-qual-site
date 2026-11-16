@@ -27,7 +27,7 @@ audit:
 - event: source-checked
   by: claude
   date: 2026-11-09
-  note: 'Read III.10.3 against Hartshorne p. 275 and Dongryul Kim, Solutions to Hartshorne, pp. 195-196. Repaired the converse of the differential criterion: the card asserted a zero-dimensional unramified criterion without proof. Step s1b now proves it, by the vanishing of Omega_{kappa(x)/kappa(y)} (II.8.6A for separability), by dim O_{X_y,x} = trdeg = 0, and by the square-zero thickening argument of Kim, which forces the local ring of the fibre to be a field. Also removed a pf-step block whose opening line carried no label and whose content duplicated the closing step.'
+  note: 'Read III.10.3 against Hartshorne p. 275 and Dongryul Kim, Solutions to Hartshorne, pp. 195-196, text version `tmp/sources/hartshorne-solutions-kim.md`. Repaired the converse of the differential criterion: the card asserted a zero-dimensional unramified criterion without proof. Step s1b now proves it, by the vanishing of Omega_{kappa(x)/kappa(y)} (II.8.6A for separability), by dim O_{X_y,x} = trdeg = 0, and by the square-zero thickening argument of Kim, which forces the local ring of the fibre to be a field. Also removed a pf-step block whose opening line carried no label and whose content duplicated the closing step.'
 ---
 
 ::: {.problem}

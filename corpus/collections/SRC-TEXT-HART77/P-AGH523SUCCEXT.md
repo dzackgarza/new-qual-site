@@ -44,10 +44,10 @@ audit:
     Searched outside the twelve retained sets and read two further published
     treatments: Algebraic Geometry II, National Taiwan University, 2020 Spring,
     Chapter V homework, Exercise 3 of section 2, PDF p. 6
-    (tmp/sources/ntu-ag2-chapter5.pdf), which proves both parts and obtains (b)
+    (tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`), which proves both parts and obtains (b)
     from H^1(P^2, O(n)) = 0 against H^1(P^2, Omega) = k rather than from Chern
     classes; and Yang Pi-Yeh, Hartshorne Solutions, exercise 5.2.3, printed p.
-    101 (tmp/sources/lfwin-hartshorne-solutions.pdf), whose (b) has a sign
+    101 (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), whose (b) has a sign
     error. The card keeps the Chern-class proof, which decides the question over
     Z. Not checked: whether the Serre vanishing invoked in step s1 is available
     for a non-projective curve; the proof says projective.

@@ -71,8 +71,8 @@ audit:
     unchanged and now rests on the right statement: an isomorphism of the
     punctured lines requires those two (r+1)-point subsets to be in one
     PGL(2)-orbit, and for r = 3 they are four-point sets, where step
-    converse-fails' cross ratio separates them. Checked against Borcherds p. 8,
-    Egbert p. 55 and Cutrone--Marshburn p. 25: all three state the threshold
+    converse-fails' cross ratio separates them. Checked against Borcherds p. 8, text version `tmp/sources/hartshorne-solutions-borcherds.md`,
+    Egbert p. 55, text version `tmp/sources/hartshorne-solutions-egbert.md` and Cutrone--Marshburn p. 25, text version `tmp/sources/hartshorne-solutions-cutrone-marshburn.md`: all three state the threshold
     r <= 3, which is what makes the count matter.
 ---
 

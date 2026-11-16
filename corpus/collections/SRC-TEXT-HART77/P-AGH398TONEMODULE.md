@@ -29,7 +29,7 @@ audit:
 - event: source-checked
   by: claude
   date: 2026-11-09
-  note: 'Read III.9.8 against Hartshorne p. 267 and Dongryul Kim, Solutions to Hartshorne, pp. 184-186. Repaired step s4: for j + epsilon*p in ker q1-prime one has q2-prime(j + epsilon*p) = epsilon*delta(j), not epsilon*(delta(j) + q(p)), because q1-prime(j) = -epsilon*q(p); the conclusion phi_2 = phi_1 - delta is unchanged. Checked the lifting used in step s1 against II.8.6(b), which is exactly the polynomial-ring lifting, and replaced the unverified Stacks Project lemma numbers by the tag only.'
+  note: 'Read III.9.8 against Hartshorne p. 267 and Dongryul Kim, Solutions to Hartshorne, pp. 184-186, text version `tmp/sources/hartshorne-solutions-kim.md`. Repaired step s4: for j + epsilon*p in ker q1-prime one has q2-prime(j + epsilon*p) = epsilon*delta(j), not epsilon*(delta(j) + q(p)), because q1-prime(j) = -epsilon*q(p); the conclusion phi_2 = phi_1 - delta is unchanged. Checked the lifting used in step s1 against II.8.6(b), which is exactly the polynomial-ring lifting, and replaced the unverified Stacks Project lemma numbers by the tag only.'
 ---
 
 ::: {.problem}

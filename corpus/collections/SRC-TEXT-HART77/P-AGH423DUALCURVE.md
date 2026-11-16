@@ -685,5 +685,5 @@ the count in part (h), and step [](#s11){.pf-ref} proves its parenthetical.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.3, printed p. 212, identifies the multiple points of the dual curve with the lines tangent at several points or tangent with higher contact, so that the dual map is ramified exactly at inflection points, and counts inflection points and bitangents by projecting from a general point.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.3, printed p. 212, text version `tmp/sources/hartshorne-solutions-egbert.md`, identifies the multiple points of the dual curve with the lines tangent at several points or tangent with higher contact, so that the dual map is ramified exactly at inflection points, and counts inflection points and bitangents by projecting from a general point.
 :::

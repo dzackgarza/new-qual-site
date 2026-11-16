@@ -33,7 +33,7 @@ audit:
 - event: source-checked
   by: claude
   date: 2026-11-09
-  note: 'Read III.11.7 against Hartshorne p. 281 and Dongryul Kim, Solutions to Hartshorne, p. 213. Steps s1-s5, s7 and s8 check out. Repaired step s6: its positive-characteristic argument claimed that the first nonzero Cech term of the transition function of L^p must be a coboundary, which does not exclude the cross terms of the formal units. Step s6 now compares coefficients in the two formal charts Spf k[t][[s]] and Spf k[t^{-1}][[s/t]] and shows that no power u^m of u = 1 + z^2/(xy) is a coboundary, so the class of L has infinite order in the kernel. Against Kim: his 11.7(a) asserts without proof that the kernel is a k-vector space and computes only H^2 vanishing and surjectivity; his remark that the k-vector-space structure is the inverse limit of k-vector spaces is the assertion under discussion.'
+  note: 'Read III.11.7 against Hartshorne p. 281 and Dongryul Kim, Solutions to Hartshorne, p. 213, text version `tmp/sources/hartshorne-solutions-kim.md`. Steps s1-s5, s7 and s8 check out. Repaired step s6: its positive-characteristic argument claimed that the first nonzero Cech term of the transition function of L^p must be a coboundary, which does not exclude the cross terms of the formal units. Step s6 now compares coefficients in the two formal charts Spf k[t][[s]] and Spf k[t^{-1}][[s/t]] and shows that no power u^m of u = 1 + z^2/(xy) is a coboundary, so the class of L has infinite order in the kernel. Against Kim: his 11.7(a) asserts without proof that the kernel is a k-vector space and computes only H^2 vanishing and surjectivity; his remark that the k-vector-space structure is the inverse limit of k-vector spaces is the assertion under discussion.'
 - event: solution-reviewed
   by: claude
   date: 2026-11-11
@@ -405,7 +405,7 @@ is a unit of $\OO(U_x\cap U_y)$ congruent to $1$ modulo the ideal of $Y$.
 The formal scheme $\hat X$ is covered by the two opens $U_x,U_y$, which have no
 triple intersection; by the Čech description of invertible sheaves on a formal
 scheme, $u$ is therefore the transition function of an invertible sheaf
-$\mathfrak L$ on $\hat X$ with $\mathfrak L|_Y\cong\OO_Y$.
+$\mathfrak L$ on $\hat X$ with $\restrictionof{\mathfrak L}{Y}\cong\OO_Y$.
 
 What has to be shown is that no positive power $u^m$ is a Čech coboundary, that
 is, is not of the form $A/B$ with

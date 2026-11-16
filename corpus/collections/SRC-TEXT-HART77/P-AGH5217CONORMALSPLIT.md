@@ -47,7 +47,7 @@ audit:
     characteristic 3 but the resulting coefficient of h is 2 = -1, so the class
     is still 2 eta. Searched outside the twelve retained sets: Yang Pi-Yeh,
     Hartshorne Solutions, exercise 5.2.17, printed pp. 106-107
-    (tmp/sources/lfwin-hartshorne-solutions.pdf), computes both parts by the
+    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), computes both parts by the
     Jacobian presentation and adds characteristic 3 to the split case, which
     contradicts its own 2 eta; Algebraic Geometry II, National Taiwan
     University, 2020 Spring, has no entry for Exercise 17 of section 2. Egbert,

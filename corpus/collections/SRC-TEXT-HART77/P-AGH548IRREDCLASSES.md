@@ -619,5 +619,5 @@ conditions.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.8, printed p. 290, marked starred: irreducible classes on the cubic surface.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.8, printed p. 290, text version `tmp/sources/hartshorne-solutions-egbert.md`, marked starred: irreducible classes on the cubic surface.
 :::

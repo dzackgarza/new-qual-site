@@ -32,7 +32,7 @@ audit:
 - event: source-checked
   by: claude
   date: 2026-11-09
-  note: 'Read III.10.8 against Hartshorne p. 276 and Dongryul Kim, Solutions to Hartshorne, p. 203. Both printed defects are now recorded in the solution rather than in the statement: the statement is kept as printed, including "any characteristic" and every t, and the solution states that characteristic 2 makes C the double line and that at t=0 the cone is the plane z=0, which is not a member of the pencil <Q, XZ>. The earlier note on this card mentions a replacement smooth conic exhibiting the phenomenon in every characteristic; no such conic is part of the current solution.'
+  note: 'Read III.10.8 against Hartshorne p. 276 and Dongryul Kim, Solutions to Hartshorne, p. 203, text version `tmp/sources/hartshorne-solutions-kim.md`. Both printed defects are now recorded in the solution rather than in the statement: the statement is kept as printed, including "any characteristic" and every t, and the solution states that characteristic 2 makes C the double line and that at t=0 the cone is the plane z=0, which is not a member of the pencil <Q, XZ>. The earlier note on this card mentions a replacement smooth conic exhibiting the phenomenon in every characteristic; no such conic is part of the current solution.'
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29

@@ -36,7 +36,7 @@ audit:
     Printed exercise read: Hartshorne, Algebraic Geometry (1977), IV.3.11(a),
     printed p. 309. The closed-embedding criterion the last step invokes is
     stated in R. Vakil, The Rising Sea: Foundations of Algebraic Geometry,
-    21 October 2025 version, as Theorem 19.1.1, printed p. 536, with the
+    21 October 2025 version, as Theorem 19.1.1, printed p. 536, text version `tmp/sources/vakil-rising-sea-2025-10-21.md`, with the
     hypotheses "injective on closed points" and "injective on tangent vectors at
     closed points" and no other; he reduces it at 19.1.3, printed p. 537, to
     Theorem 19.1.2 and proves that at 19.1.4, but the reduction's last step is

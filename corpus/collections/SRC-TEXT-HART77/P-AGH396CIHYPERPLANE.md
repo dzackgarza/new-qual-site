@@ -23,7 +23,7 @@ audit:
 - event: source-checked
   by: claude
   date: 2026-11-09
-  note: 'Read III.9.6 against Hartshorne p. 267 and Dongryul Kim, Solutions to Hartshorne, pp. 182-183. The book numbers the result used by the hint Lemma 9.12 (the lemma of Hironaka), not Proposition 9.12; the two citations were corrected. Verified that II.8.4 defines a complete intersection by codimension many generators, that II.8.4(a) gives the forward direction, and that II.8.4(b) gives projective normality of the nonsingular complete intersection Y-prime, which is hypothesis (3) of the lemma.'
+  note: 'Read III.9.6 against Hartshorne p. 267 and Dongryul Kim, Solutions to Hartshorne, pp. 182-183, text version `tmp/sources/hartshorne-solutions-kim.md`. The book numbers the result used by the hint Lemma 9.12 (the lemma of Hironaka), not Proposition 9.12; the two citations were corrected. Verified that II.8.4 defines a complete intersection by codimension many generators, that II.8.4(a) gives the forward direction, and that II.8.4(b) gives projective normality of the nonsingular complete intersection Y-prime, which is hypothesis (3) of the lemma.'
 ---
 
 ::: {.problem}

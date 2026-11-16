@@ -63,7 +63,7 @@ audit:
     section of class C_0-f would have b = -1 < 0. Searched outside the twelve
     retained sets: NTU 2020 has no entry for Exercise 15 of section 2; Yang
     Pi-Yeh, Hartshorne Solutions, printed pp. 105-106
-    (tmp/sources/lfwin-hartshorne-solutions.pdf), has the (a) computation and
+    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), has the (a) computation and
     garbled (b) and (c). Egbert, PDF pp. 271-273, cites Miyanishi for (c). Not
     checked: whether Y as constructed is singular with delta = 1; the card
     asserts it from p_a(Y) - p_a(C) = 1 and does not compute the singularity.

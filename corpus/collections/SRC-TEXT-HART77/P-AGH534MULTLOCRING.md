@@ -45,9 +45,9 @@ audit:
     the vertex local ring has associated graded ring the homogeneous coordinate
     ring of Y, so mu = (s+1)! d/(s+1)! = d. Searched outside the twelve
     retained sets: NTU 2020, Exercise 4 of section 3, PDF pp. 10-11
-    (tmp/sources/ntu-ag2-chapter5.pdf), is a complete published proof of all
+    (tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`), is a complete published proof of all
     five parts; Yang Pi-Yeh, Hartshorne Solutions, printed pp. 107-108
-    (tmp/sources/lfwin-hartshorne-solutions.pdf), has a false identification of
+    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), has a false identification of
     gr_m A with a polynomial ring in (b) and a wrong length formula in (d).
     Not checked: Nagata and Zariski-Samuel, neither in tmp/sources; the card
     does not rely on them.

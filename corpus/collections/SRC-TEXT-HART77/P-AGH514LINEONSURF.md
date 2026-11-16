@@ -39,7 +39,7 @@ audit:
     Located a complete published solution outside the twelve retained sets:
     Algebraic Geometry II, National Taiwan University, 2020 Spring (course of
     Chin-Lung Wang), Chapter V Surfaces homework, Exercise 4 (Yi-Tsung Wang),
-    PDF p. 2, downloaded to tmp/sources/ntu-ag2-chapter5.pdf. Its (a) is the
+    PDF p. 2, downloaded to tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`. Its (a) is the
     card's step s1 and s2; its (b) is the card's step s3 and s4 with the surface
     x^{d-1}z + xz^{d-1} + y^{d-1}w + yw^{d-1} in place of
     xz^{d-1} + yw^{d-1} + x^d + y^d. Both surfaces are checked against the
@@ -48,7 +48,7 @@ audit:
     zero in characteristic 0. The hypersurface adjunction K_X = (K_{P^3}+X)|_X
     is Hartshorne II.8.20 and the surface adjunction C.(C+K_X) = 2p_a(C)-2 is
     V.1.3, both on printed page 361. Yang Pi-Yeh, Hartshorne Solutions,
-    exercise 5.1.4, printed p. 100, is not a solution of (b): it states the
+    exercise 5.1.4, printed p. 100, text version `tmp/sources/lfwin-hartshorne-solutions.md`, is not a solution of (b): it states the
     surface and asserts nonsingularity. Not checked: whether the exercise is
     meant for a singular X; under the standing convention opening V.1, printed
     page 357, a surface is nonsingular, which is what makes C^2 and K_X defined.

@@ -380,7 +380,7 @@ This exercise connects Hartshorne's definition of a sheaf with the espace étal�
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.13, PDF pp. 5--6, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he describes the topology by its universal property, that a set is open exactly when its inverse image under every $\bar s$ is open, checks that the image of a section is open, and then proves that a section of $\pi$ is continuous exactly when it is locally represented by a section of the presheaf, which is the germ description of $\mcf^{+}$.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.13, PDF pp. 5--6, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he describes the topology by its universal property, that a set is open exactly when its inverse image under every $\bar s$ is open, checks that the image of a section is open, and then proves that a section of $\pi$ is continuous exactly when it is locally represented by a section of the presheaf, which is the germ description of $\mcf^{+}$.
 The proof above is the same chain and adds the two facts which the identification uses, that $\pi$ is continuous and that $\bar s$ is a homeomorphism onto its image.
 Agree.
 :::

@@ -52,10 +52,10 @@ audit:
     exists, while the singularity at infinity and the multiplicities do not use
     the hypothesis. Searched outside the twelve retained sets: Algebraic
     Geometry II, National Taiwan University, 2020 Spring, Chapter V homework,
-    Exercise 5 of section 3, PDF p. 11 (tmp/sources/ntu-ag2-chapter5.pdf),
+    Exercise 5 of section 3, PDF p. 11 (tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`),
     states characteristic different from 2 and obtains the same delta and genus;
     Yang Pi-Yeh, Hartshorne Solutions, exercise 5.3.5, printed p. 108
-    (tmp/sources/lfwin-hartshorne-solutions.pdf), takes
+    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), takes
     delta = (r-2)(r-3)/2, dropping the residual term. Not checked: whether the
     printed exercise intends the affine model over a field of characteristic 2
     at all; the card keeps the printed statement and states where the

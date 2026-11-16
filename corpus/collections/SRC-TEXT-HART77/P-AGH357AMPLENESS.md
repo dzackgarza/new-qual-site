@@ -151,7 +151,7 @@ Then $L$ is ample on $Y$.
 
 ::: pf-proof
 
-The published proof of this direction is A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, III.5.7, p. 175, and it runs as follows for $f:X\to Y$ finite surjective between integral proper schemes of the same dimension over a field.
+The published proof of this direction is A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, III.5.7, p. 175, text version `tmp/sources/hartshorne-solutions-egbert.md`, and it runs as follows for $f:X\to Y$ finite surjective between integral proper schemes of the same dimension over a field.
 For an invertible sheaf $M$ on $Y$ the projection formula for the finite morphism $f$ gives, in the Chow group of $Y$ with $d=\dim X=\dim Y$,
 $$
 f_*\bigl(c_1(f^*M)^{d}\cap[X]\bigr)=\deg(f)\,c_1(M)^{d}\cap[Y],
@@ -162,7 +162,7 @@ $$
 \int_X c_1(f^*M)^{\dim X}=\deg(X\to Y)\int_Y c_1(M)^{\dim Y},
 $$
 in which both sides are integers, so the equality is between numbers on the two spaces and not between classes.
-Now let $f^*L$ be ample and let $Z\subseteq Y$ be a closed integral subscheme. Because $f$ is finite and surjective some irreducible component $W$ of $f^{-1}(Z)$ maps onto $Z$, and $W\to Z$ is finite surjective of degree $\deg(W\to Z)$; the restriction of $f^*L$ to $W$ is ample by part (a), and the identity above with $M=L|_Z$ gives $\int_Zc_1(L)^{\dim Z}=\deg(W\to Z)^{-1}\int_Wc_1(f^*L)^{\dim W}>0$.
+Now let $f^*L$ be ample and let $Z\subseteq Y$ be a closed integral subscheme. Because $f$ is finite and surjective some irreducible component $W$ of $f^{-1}(Z)$ maps onto $Z$, and $W\to Z$ is finite surjective of degree $\deg(W\to Z)$; the restriction of $f^*L$ to $W$ is ample by part (a), and the identity above with $M=\restrictionof{L}{Z}$ gives $\int_Zc_1(L)^{\dim Z}=\deg(W\to Z)^{-1}\int_Wc_1(f^*L)^{\dim W}>0$.
 The criterion applied is the Nakai–Moishezon–Kleiman criterion, in full: for $X$ proper over a field and $L$ an invertible sheaf on $X$, $L$ is ample if and only if $\int_Yc_1(L)^{\dim Y}>0$ for every closed integral subscheme $Y\subseteq X$.
 The book proves this for divisors on a surface as Theorem V.1.10, where the statement is "$D$ is ample if and only if $D^2>0$ and $D\cdot C>0$ for all irreducible curves $C$ in $X$"; the general form in arbitrary dimension is Kleiman's (*Toward a numerical theory of ampleness*, Ann. of Math. 84 (1966)), and it is the "if" direction with positivity on every closed integral subscheme that the argument above uses.
 Its hypotheses are a field base and properness of $X$, both of which hold for the one-dimensional proper scheme over the algebraically closed field that III.5.8(d) needs.
@@ -242,5 +242,5 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove (a)--(c), an
 :::
 
 ::: {.remark title="Published proofs"}
-The Saglam–Chris solutions prove (a) and (b) on pp. 137–138: (a) by the projection formula and closed direct image, (b) by the filtration of a coherent sheaf by powers of the nilradical, with the $H^1$ terms descending to zero. A. Egbert's III.5.7, p. 175, proves the forward direction of (d) by finite pushforward, and (c) by the sequence $0\to I\mcf\to\mcf\to\mcf/I\mcf\to0$ with the two outer terms supported on the two halves of the reduced scheme. For the converse of (d) that text appeals to Nakai–Moishezon and the projection formula for Chern classes, which are not available at this point of the book; the converse above is instead the descent through Chevalley's map $\beta:f_*\mcg\to\mcf^{\oplus r}$ followed by noetherian induction, using only (III.5.3) and (III.4.2).
+The Saglam–Chris solutions prove (a) and (b) on pp. 137–138, text version `tmp/sources/hartshorne-solutions-saglam-chris.md`: (a) by the projection formula and closed direct image, (b) by the filtration of a coherent sheaf by powers of the nilradical, with the $H^1$ terms descending to zero. A. Egbert's III.5.7, p. 175, proves the forward direction of (d) by finite pushforward, and (c) by the sequence $0\to I\mcf\to\mcf\to\mcf/I\mcf\to0$ with the two outer terms supported on the two halves of the reduced scheme. For the converse of (d) that text appeals to Nakai–Moishezon and the projection formula for Chern classes, which are not available at this point of the book; the converse above is instead the descent through Chevalley's map $\beta:f_*\mcg\to\mcf^{\oplus r}$ followed by noetherian induction, using only (III.5.3) and (III.4.2).
 :::

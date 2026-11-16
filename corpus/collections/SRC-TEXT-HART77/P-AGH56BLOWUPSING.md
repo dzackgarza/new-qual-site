@@ -25,7 +25,7 @@ audit:
   date: 2026-11-11
   note: >-
     Read Vakil, Foundations of Algebraic Geometry (Math 216 classes 49-50),
-    Section 5.2, printed p. 9, the only published treatment of the nodal
+    Section 5.2, printed p. 9, text version `tmp/sources/vakil-rising-sea-2025-10-21.md`, the only published treatment of the nodal
     blow-up located outside the retained sets: it factors the strict
     transform, records the two points s=+-1 and leaves nonsingularity as an
     exercise, and prints 1-s^2-y^3 where substituting x=ys into y^2=x^3+x^2
@@ -412,7 +412,7 @@ A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solut
 
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 5.6; his Chapter 1.5 answers stop at 5.5.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.6.
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.6, PDF p. 46: (a) the cusp $y^2-x^3+x^4+y^4$ blown up as $ys-xt$, with the strict transforms $1-yt+y^2t^2+y^3$ on $t=1$ and $x^2(t^2-x^2+t^2x^2)$ on $s=1$, both checked by the Jacobian criterion; (c) the tacnode $x^2=x^4+y^4$ with strict transform $t^2-y^2-y^2t^4$ on $s=1$, "the lowest degree terms $t^2-y^2$ of the strict transform factor linearly, so we get a node"; (d) $y^3=x^5$ giving $x^3(x^2-u^3)=0$ after one blowup, "which gives a cusp", and one more blowup resolving. His (b) is a paragraph about the blow-up surface and tangent directions rather than a proof of the two-point statement, and it does not show that the two points above the node are nonsingular.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.6, PDF p. 46, text version `tmp/sources/hartshorne-solutions-egbert.md`: (a) the cusp $y^2-x^3+x^4+y^4$ blown up as $ys-xt$, with the strict transforms $1-yt+y^2t^2+y^3$ on $t=1$ and $x^2(t^2-x^2+t^2x^2)$ on $s=1$, both checked by the Jacobian criterion; (c) the tacnode $x^2=x^4+y^4$ with strict transform $t^2-y^2-y^2t^4$ on $s=1$, "the lowest degree terms $t^2-y^2$ of the strict transform factor linearly, so we get a node"; (d) $y^3=x^5$ giving $x^3(x^2-u^3)=0$ after one blowup, "which gives a cusp", and one more blowup resolving. His (b) is a paragraph about the blow-up surface and tangent directions rather than a proof of the two-point statement, and it does not show that the two points above the node are nonsingular.
 
 The chart computations for (a), (c) and (d) agree with Egbert's, including the characteristic-7 and 13 caveat for the cusp quartic. Part (b) is Shichijo's, transcribed in step [](#general-node-two-points){.pf-ref}.
 :::

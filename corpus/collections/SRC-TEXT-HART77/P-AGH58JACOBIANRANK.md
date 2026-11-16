@@ -25,7 +25,7 @@ audit:
   date: 2026-11-11
   note: >-
     Read Block, Nonsingular Varieties (Columbia, 25 July 2017), Lemma 18 and
-    Proposition 17 with its proof, printed p. 4, which proves the projective
+    Proposition 17 with its proof, printed p. 4, text version `tmp/sources/block-nonsingular-varieties-notes.md`, which proves the projective
     Jacobian criterion exactly as the card states it. Checked the card
     against it: row scaling by lambda^{d_i-1}, the affine Jacobian as the
     deleted-column submatrix, and Euler's identity at a point of Y writing
@@ -180,6 +180,6 @@ The complete published argument is Adam B. Block, *Nonsingular Varieties* (Colum
 
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 5.8.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.8.
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.8, PDF p. 47: "The hint is the answer", with no argument.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.8, PDF p. 47, text version `tmp/sources/hartshorne-solutions-egbert.md`: "The hint is the answer", with no argument.
 No retained set proves this exercise; the argument of Block's Proposition 17 is the published one, and it is the printed hint: row scalings by $\lambda^{d_i-1}$ show the rank is independent of the representative, dehomogenizing on $D_+(x_\ell)$ gives the affine Jacobian as the columns other than $\ell$, and Euler's identity evaluated at a point of $Y$ writes column $\ell$ as $-\sum_{j\ne\ell}a_jC_j$, so nothing is lost by deleting it.
 :::

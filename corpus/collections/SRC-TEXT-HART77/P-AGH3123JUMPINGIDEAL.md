@@ -26,7 +26,7 @@ audit:
 - event: source-checked
   by: claude
   date: 2026-11-09
-  note: 'Read III.12.3 against Hartshorne pp. 291-292 and Dongryul Kim, Solutions to Hartshorne, p. 215, whose errata list notes that the printed statement seems false. Verified the printed claim: for every t one has h^0(I_t) = 1 - h^0(O_{X_t}) = 0 and H^1(I_t) = 0, since H^1(P^4,O) = 0, so there is no jump. The statement is now kept as printed and the erratum at the start of the solution proves the jump for I(1), where the values are 0 and 1 as displayed. Kims solution stops after the exact sequence and does not treat the cohomology, so the twisted computation here is not taken from him.'
+  note: 'Read III.12.3 against Hartshorne pp. 291-292 and Dongryul Kim, Solutions to Hartshorne, p. 215, text version `tmp/sources/hartshorne-solutions-kim.md`, whose errata list notes that the printed statement seems false. Verified the printed claim: for every t one has h^0(I_t) = 1 - h^0(O_{X_t}) = 0 and H^1(I_t) = 0, since H^1(P^4,O) = 0, so there is no jump. The statement is now kept as printed and the erratum at the start of the solution proves the jump for I(1), where the values are 0 and 1 as displayed. Kims solution stops after the exact sequence and does not treat the cohomology, so the twisted computation here is not taken from him.'
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29

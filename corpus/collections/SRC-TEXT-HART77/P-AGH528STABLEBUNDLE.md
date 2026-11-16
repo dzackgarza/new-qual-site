@@ -53,11 +53,11 @@ audit:
     "up to isomorphism" cannot hold and the classification is up to tensor
     equivalence. Searched outside the twelve retained sets: Algebraic Geometry
     II, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 8
-    of section 2, PDF p. 8 (tmp/sources/ntu-ag2-chapter5.pdf), whose (c) is the
+    of section 2, PDF p. 8 (tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`), whose (c) is the
     sentence "This is just the proof of Theorem 2.12, combined with (b)"; Yang
     Pi-Yeh, Hartshorne Solutions, exercise 5.2.8, printed pp. 103-104
-    (tmp/sources/lfwin-hartshorne-solutions.pdf), which repeats "up to
-    isomorphism"; and Egbert, PDF pp. 265-266. None repairs the printed clause.
+    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), which repeats "up to
+    isomorphism"; and Egbert, PDF pp. 265-266, text version `tmp/sources/hartshorne-solutions-egbert.md`. None repairs the printed clause.
     Not checked: whether Hartshorne intended the clause to classify the
     normalized models only; the card states the printed wording and proves the
     tensor-equivalence reading.

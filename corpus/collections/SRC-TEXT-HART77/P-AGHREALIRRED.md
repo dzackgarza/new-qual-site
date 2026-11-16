@@ -98,9 +98,9 @@ The example concerns the real point set, not a failure of irreducibility for tha
 :::
 
 ::: {.remark title="Published solution"}
-Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.12, PDF p. 1, gives $f=y^4+y^2+x^2(x-1)^2$, a sum of squares whose real zero set is $\{(0,0),(1,0)\}$.
-William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 1.12, PDF p. 3, gives $x^2+y^2+1$, whose real zero set is empty and so reducible by the convention that the empty set is not irreducible.
-Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.12, PDF p. 5, gives $(x^2-1)^2+y^2$, proves it irreducible over $\RR$ by comparing the factorization over $\CC$ with the factorization in $\RR[x,y]$, and reads the two-point zero set off the sum of squares.
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.12, PDF p. 1, text version `tmp/sources/hartshorne-solutions-borcherds.md`, gives $f=y^4+y^2+x^2(x-1)^2$, a sum of squares whose real zero set is $\{(0,0),(1,0)\}$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 1.12, PDF p. 3, text version `tmp/sources/hartshorne-solutions-troiani.md`, gives $x^2+y^2+1$, whose real zero set is empty and so reducible by the convention that the empty set is not irreducible.
+Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.12, PDF p. 5, text version `tmp/sources/hartshorne-solutions-park.md`, gives $(x^2-1)^2+y^2$, proves it irreducible over $\RR$ by comparing the factorization over $\CC$ with the factorization in $\RR[x,y]$, and reads the two-point zero set off the sum of squares.
 The proof above uses $f=x^2+(y^2-1)^2$ and proves irreducibility by the monicity in $x$, which forces two linear-in-$x$ factors and then $-a(y)^2=(y^2-1)^2$, impossible at $y=0$; that is Park's sum-of-squares example with the factorization argument done in $\RR[y][x]$ instead of through $\CC[x,y]$.
 Agree in method with all three, and the card's example is a fourth member of the same family.
 :::

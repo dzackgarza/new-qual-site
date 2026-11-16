@@ -264,5 +264,5 @@ part (c).
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.2, printed p. 218, uses $\omega_X=\OO_X(1)$ for the plane quartic, so that effective canonical divisors are exactly the hyperplane sections, and concludes that no $g^1_2$ exists: a degree-two divisor lies in at most one such section.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.2, printed p. 218, text version `tmp/sources/hartshorne-solutions-egbert.md`, uses $\omega_X=\OO_X(1)$ for the plane quartic, so that effective canonical divisors are exactly the hyperplane sections, and concludes that no $g^1_2$ exists: a degree-two divisor lies in at most one such section.
 :::

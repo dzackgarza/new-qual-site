@@ -24,7 +24,7 @@ audit:
 - event: source-checked
   by: claude
   date: 2026-11-09
-  note: 'Read III.9.5 against Hartshorne pp. 266-267 and Dongryul Kim, Solutions to Hartshorne, pp. 178-182. Two gaps repaired. Part (c) now constructs the cone family C inside P^{n+1}_T from the graded ideal sheaf and proves that its fibre at t is C(X_t) (step conefamily); the earlier text asserted very flatness of the cone family without a total space. Part (d) no longer assumes projective normality of the generic fibre, which is not a hypothesis; step s8 now uses h^0(X_t,O(d)) >= h^0(X_eta,O(d)) >= h_eta(d). Part (a) uses a family of three points becoming collinear (step s1-s3), not Kims Veronese degeneration; the Hilbert functions 1,3,3,... and 1,2,3,... and the cone polynomials 3d+1 and 3d were recomputed.'
+  note: 'Read III.9.5 against Hartshorne pp. 266-267 and Dongryul Kim, Solutions to Hartshorne, pp. 178-182, text version `tmp/sources/hartshorne-solutions-kim.md`. Two gaps repaired. Part (c) now constructs the cone family C inside P^{n+1}_T from the graded ideal sheaf and proves that its fibre at t is C(X_t) (step conefamily); the earlier text asserted very flatness of the cone family without a total space. Part (d) no longer assumes projective normality of the generic fibre, which is not a hypothesis; step s8 now uses h^0(X_t,O(d)) >= h^0(X_eta,O(d)) >= h_eta(d). Part (a) uses a family of three points becoming collinear (step s1-s3), not Kims Veronese degeneration; the Hilbert functions 1,3,3,... and 1,2,3,... and the cone polynomials 3d+1 and 3d were recomputed.'
 ---
 
 ::: {.problem}

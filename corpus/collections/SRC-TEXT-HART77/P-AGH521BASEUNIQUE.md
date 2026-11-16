@@ -44,12 +44,12 @@ audit:
     a rational map P^1 to a nonrational curve constant. Searched outside the
     twelve retained sets and read two further published treatments. Algebraic
     Geometry II, National Taiwan University, 2020 Spring, Chapter V homework,
-    Exercise 1 of section 2, PDF p. 5 (tmp/sources/ntu-ag2-chapter5.pdf): the
+    Exercise 1 of section 2, PDF p. 5 (tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`): the
     argument is the card's, except that its last case reads "if C = P^1 then
     f-tilde is a constant, which means f is a constant, a contradiction", and
     f-tilde is dominant by construction; step s4 states the unirationality that
     case needs. Yang Pi-Yeh, Hartshorne Solutions, exercise 5.2.1, printed p.
-    102 (tmp/sources/lfwin-hartshorne-solutions.pdf), passes from K(X) = L(x) to
+    102 (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), passes from K(X) = L(x) to
     "the unique curve C with K(C) = L", which assumes that L is determined by
     K(X), the content of the exercise. Not checked: the argument was not
     re-examined over a non-algebraically-closed base field.

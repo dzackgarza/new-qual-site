@@ -123,7 +123,7 @@ Such indices differ by at least two, proving (a)(i).
 When both indices are negative, both $v$ terms vanish, proving (a)(ii).
 For $a\le-2$ and $b=0$, the formula is $h^1=-a-1>0$, proving (a)(iii).
 
-The published derivation of the same vanishings from ruling-line divisors is Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, III.5.6, pp. 20–21, and it is recorded here; where that text appeals to Serre duality on $\PP^1$, (III.5.1) gives the numbers directly, so no result later than this section enters.
+The published derivation of the same vanishings from ruling-line divisors is Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, III.5.6, pp. 20–21, text version `tmp/sources/hartshorne-solutions-park.md`, and it is recorded here; where that text appeals to Serre duality on $\PP^1$, (III.5.1) gives the numbers directly, so no result later than this section enters.
 For $p>0$ let $D$ be the union of $p$ fibres of the first ruling, so that $0\to\OO_Q(-p,0)\to\OO_Q\to\OO_D\to0$ and $\OO_D(p,0)=\bigoplus_p\OO_{\PP^1}$.
 Twisting by $\OO_Q(p,0)$ and taking cohomology,
 $$
@@ -135,7 +135,7 @@ $$
 H^1(Q,\OO_Q(0,q))\longrightarrow H^1(Q,\OO_Q(p,q))\longrightarrow\bigoplus_p H^1(\PP^1,\OO_{\PP^1}(q)),
 $$
 the left term vanishes by the previous paragraph and the right one by $h^1(\PP^1,\OO(q))=0$ for $q\ge-1$ [@Har77, Theorem III.5.1], so $H^1(Q,\OO_Q(p,q))=0$ for every pair with $p,q\ge0$ at once, with no induction; that is the case $a,b\ge0$ of (a)(i) and it uses no duality.
-For the remaining pairs with $|a-b|\le1$ the published text pairs this with Serre duality on $Q$ and $K_Q=\OO_Q(-2,-2)$ (III.7, and the canonical bundle of (V, 1.4.4)), neither of which is available in this section; the closed formula of step [](#s1){.pf-ref} covers those pairs instead, so no later theorem is imported.
+For the remaining pairs with $\abs{a-b}\le1$ the published text pairs this with Serre duality on $Q$ and $K_Q=\OO_Q(-2,-2)$ (III.7, and the canonical bundle of (V, 1.4.4)), neither of which is available in this section; the closed formula of step [](#s1){.pf-ref} covers those pairs instead, so no later theorem is imported.
 The case $a\le-2$ of (a)(iii) is the ruling-line computation already carried out in step [](#s1){.pf-ref}, where $h^1=-a-1$.
 :::
 
@@ -248,5 +248,5 @@ The split-quadric cohomology formulas hold over every field; the field-extension
 :::
 
 ::: {.remark title="Published proofs"}
-Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, III.5.6, pp. 20–23, proves the exercise in the order the book sets it: the vanishing statements of (a) from the sequences $0\to\OO_Q(-p,0)\to\OO_Q\to\OO_Y\to0$ attached to ruling-line divisors together with Serre duality on $\PP^1$ and $K_Q=\OO_Q(-2,-2)$; (b)(1) from that sequence with $a,b>0$; (b)(2) from very ampleness of $\OO_Q(a,b)$ and Bertini; (b)(3) from the vanishing criterion for projective normality, with $n=b$ giving a nonzero $H^1$ when $a\ge b+2$; and (c) by Riemann–Roch on $Q$ with $c_1(N_{Y/Q})=2ab$ and $c_1(T_Q|_Y)=2(a+b)$, giving $2-2g=2(a+b)-2ab$. A. Egbert's III.5.6, pp. 173–174, and the Stein notes treat the same exercise. The computation above obtains $h^1$ from Künneth on $\PP^1\times\PP^1$ and $p_a$ from the Euler characteristic of $\OO_Y(n)$, so it uses neither Serre duality nor Chern classes; the ruling-line calculation is retained as the check in step s1.
+Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, III.5.6, pp. 20–23, proves the exercise in the order the book sets it: the vanishing statements of (a) from the sequences $0\to\OO_Q(-p,0)\to\OO_Q\to\OO_Y\to0$ attached to ruling-line divisors together with Serre duality on $\PP^1$ and $K_Q=\OO_Q(-2,-2)$; (b)(1) from that sequence with $a,b>0$; (b)(2) from very ampleness of $\OO_Q(a,b)$ and Bertini; (b)(3) from the vanishing criterion for projective normality, with $n=b$ giving a nonzero $H^1$ when $a\ge b+2$; and (c) by Riemann–Roch on $Q$ with $c_1(N_{Y/Q})=2ab$ and $c_1(\restrictionof{T_Q}{Y})=2(a+b)$, giving $2-2g=2(a+b)-2ab$. A. Egbert's III.5.6, pp. 173–174, text version `tmp/sources/hartshorne-solutions-egbert.md`, and the Stein notes treat the same exercise. The computation above obtains $h^1$ from Künneth on $\PP^1\times\PP^1$ and $p_a$ from the Euler characteristic of $\OO_Y(n)$, so it uses neither Serre duality nor Chern classes; the ruling-line calculation is retained as the check in step s1.
 :::

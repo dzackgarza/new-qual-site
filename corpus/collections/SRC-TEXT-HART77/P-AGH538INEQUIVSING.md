@@ -41,7 +41,7 @@ audit:
     delta = C(4,2)+C(3,2) = 9. Different delta means different configurations of
     infinitely near points with multiplicities, by Example 3.9.3 on printed page
     408. Searched outside the twelve retained sets: NTU 2020, Exercise 8 of
-    section 3, PDF p. 13 (tmp/sources/ntu-ag2-chapter5.pdf), obtains delta = 7
+    section 3, PDF p. 13 (tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`), obtains delta = 7
     and 9 and then guesses a different equation for (b). Not checked: whether
     the printed (b) was meant to be the guessed x^4-x^2y^2-x^2y^5+y^8; the card
     states the printed equation and proves it.

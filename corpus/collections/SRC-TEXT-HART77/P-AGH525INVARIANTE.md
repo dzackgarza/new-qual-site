@@ -46,10 +46,10 @@ audit:
     dimension is at most 2d-3 against dim P(V^*) = g+d-2, and both the dimension
     and the properness of the image were checked. Searched outside the twelve
     retained sets: Algebraic Geometry II, National Taiwan University, 2020
-    Spring, Chapter V homework (tmp/sources/ntu-ag2-chapter5.pdf), which has no
+    Spring, Chapter V homework (tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`), which has no
     entry for Exercise 5 of section 2; Yang Pi-Yeh, Hartshorne Solutions,
     exercise 5.2.5, printed p. 103
-    (tmp/sources/lfwin-hartshorne-solutions.pdf), which treats all four parts
+    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), which treats all four parts
     and whose (a) infers a nonzero section from nonnegative degree, an inference
     that fails for e >= g-1, so (a) is not a complete published proof; Egbert,
     PDF pp. 263-264, proves (b) and cites Fuentes-Pedreira and Maruyama for (a)
