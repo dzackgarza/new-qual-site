@@ -316,6 +316,27 @@ audit:
     changes: (R) and (B) remain inputs and no implication between them and the
     point identity is established. The search record is COMPLAINTS.md's
     III.7.4(b),(d) entry. Nothing was re-read in this pass.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121, fourth pass, on sixteen lines of the same
+    solution. Two things are repaired. (i) The status of the class-level halves
+    contradicted itself. The paragraph introducing the Gysin calculus said "the
+    class-level part of the two inputs is published", while the two paragraphs
+    after it make the identity c(L(Y)) cup nu = gamma^{n-1,n-1}_Y(nu|_Y) an
+    input, the comparison of the dlog class with gamma^0(1) being nowhere in
+    the tags, and the closing paragraph repeated the published claim for both.
+    The tags supply the class-level part of (B), the compatibility of gamma with
+    a transverse cartesian square, and they supply that part only: the opening
+    paragraph now says so and names (R)'s identity as an input, and the closing
+    paragraph says which half is published and why the other is not. (ii) The
+    search record left in the rendered solution is removed: the inventory of tag
+    files the passage was read in, "no tag read performs the comparison", "no
+    source read derives" the point comparison, and "the two search passes
+    recorded above" for (B). Those statements are COMPLAINTS.md's III.7.4(b),(d)
+    entry, which records them. No step, page or tag changes, and (R) and (B)
+    remain inputs of this solution.
 ---
 
 ::: {.problem}
@@ -392,8 +413,9 @@ solution $H$ is always a hyperplane of $\PP^n$. This is the compatibility the
 printed hint uses when it says to "cut with a hyperplane $H\subseteq X$"; it is
 the projection formula for the trace, read for the transverse pair $(Y,H)$.
 
-The class-level part of the two inputs is published, and it is quoted here as
-the Stacks Project states it, read in the text versions of the tags. With
+The class-level part of (B) is published, and it is quoted here as the Stacks
+Project states it; the class identity behind (R) is not, for the reason the
+paragraph after this one gives. With
 $Z\subseteq X$ a Koszul regular closed immersion of codimension $c$ in an $X$
 smooth over a base $S$, let
 $\gamma^{p,q}:H^q(Z,\Omega_{Z/S}^p)\to H^{q+c}(X,\Omega_{X/S}^{p+c})$ be the
@@ -404,11 +426,7 @@ $$
 $$
 and $\gamma$ is compatible with a transverse cartesian square (Lemma 50.23.10,
 tag 0G8D); both are stated over an arbitrary base scheme and with no
-characteristic hypothesis. The text versions read are
-`tmp/sources/stacks-tags/0G82.md` for the section,
-`tmp/sources/stacks-tags/0G83.md`, `0G84.md`, `0G88.md`, `0G8A.md`, `0G8C.md`,
-`0G8D.md` and `0G8E.md` for the environments in it, and
-`tmp/sources/stacks-tags/0FLE.md` for §50.9.
+characteristic hypothesis.
 
 The $d\log$ side is not a statement of those tags. Remark 50.23.1 with
 equation (50.23.1.1) (tags
@@ -421,8 +439,8 @@ defines the $d\log$ class of a line bundle and nowhere compares it with
 $\gamma$. Matching the two is a comparison of two classes in
 $H^1(X,\Omega_X)$, made by reading both in one Čech model under one transition
 convention; step [](#s5){.pf-ref} writes the $d\log$ side out in the convention
-of Hartshorne's Čech complex and step [](#s6){.pf-ref} fixes its sign, and no
-tag read performs the comparison. So the class identity behind (R),
+of Hartshorne's Čech complex and step [](#s6){.pf-ref} fixes its sign. So the
+class identity behind (R),
 $$
 c(\mathcal L(Y))\smile\nu=\gamma^{n-1,n-1}_Y(\restrictionof{\nu}{Y}),
 $$
@@ -471,8 +489,9 @@ between them is established in either direction: (R) and (B) remain inputs of
 this solution, the point identity is not shown to be sufficient for them, and
 it is not shown to be necessary for them either. Neither (R) nor (B) is a
 statement about a point: (R) constrains the trace against the $d\log$ class of a
-divisor and (B) constrains the square of a transverse pair, and neither the
-card nor any source read derives the point comparison from either of them.
+divisor and (B) constrains the square of a transverse pair, and the point
+comparison follows from neither: carrying either to a point takes a further
+identification, which this card does not make.
 
 (N) is a normalization, and part (a) uses only (N). (R) is the substantive
 input, and part (d) is its case $\beta=1$. (B) is the second one, and part (b)
@@ -486,7 +505,7 @@ constructs.
 There is no uniqueness in (N). What the duality gives is uniqueness up to a
 nonzero scalar: every functional on the $k$-line $H^n(X,\Omega_X^n)$ is a
 scalar multiple of every other, which is the relative uniqueness in Lemma
-50.24.3 (tag 0G8I, `tmp/sources/stacks-tags/0G8I.md`), where the trace is
+50.24.3 (tag 0G8I), where the trace is
 unique up to precomposing by a unit of $H^0(X,\OO_X)$ — and $H^0(X,\OO_X)=k$
 for $X$ projective and integral over $k$. (N) fixes the trace at a point and fixes
 nothing on $X$ itself: replacing $t_X$ by $\lambda t_X$, with every trace on a
@@ -516,9 +535,12 @@ there from the residue description of the trace in Remark III.7.14 (printed
 pp. 247--248), sign included. It proves nothing of the kind for $\dim X\ge2$:
 Remark III.7.14 says of the trace that "we know only that it exists", and its
 residue construction is stated for curves. Neither (R) nor (B) for higher
-dimension is proved in this card: the published Gysin calculus supplies their
-class-level parts, as recorded above, but not the comparison of the trace with
-the Gysin class of a point. Parts (b) and (d) are therefore theorems relative
+dimension is proved in this card: the published Gysin calculus supplies the
+class-level part of (B), while for (R) the identity
+$c(\mathcal L(Y))\smile\nu=\gamma^{n-1,n-1}_Y(\restrictionof{\nu}{Y})$ is an
+input, the comparison of the $d\log$ class with $\gamma^0(1)$ not being among
+its statements; neither half has the comparison of the trace with the Gysin
+class of a point. Parts (b) and (d) are therefore theorems relative
 to (R) and (B), and open with respect to the book alone. The remark
 below records what the book does and does not determine.
 
@@ -616,9 +638,7 @@ book does not supply: the identity is the base-change (or projection) formula
 for the trace of the transverse pair $(Y,H)$, the base-change case of the same
 compatibility of which (R) is the divisor case, and the proof of the printed
 hint's instruction to cut with a hyperplane is exactly this statement. It is
-input (B) of the head of the solution, not derived here from (N) or (R), and no
-source proving it for $\dim X\ge2$ was located in the two search passes
-recorded above.
+input (B) of the head of the solution, not derived here from (N) or (R).
 
 :::
 
