@@ -14,7 +14,7 @@ import pytest
 
 import yaml
 
-from qualc.authoring import commit_day, dated_records, previous_source, source_identity
+from qualc.authoring import RESTORED_SECTIONS, commit_day, dated_records, previous_source, source_identity
 
 ROOT = Path(__file__).resolve().parent.parent
 CARD = (ROOT / "tests/fixtures/kinds/PRB-INDEXP.md").read_text()
@@ -360,6 +360,86 @@ def test_restoring_one_record_does_not_excuse_a_rewrite_of_another(repo: Path, m
     assert "QUAL-11" in result.stderr
 
 
+def test_deleting_one_of_two_events_of_a_day_is_refused(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """An event the commit leaves standing is no restoration of the one it removes.
+
+    The two events share their day, their kind and their author, and the text that goes
+    stands in an earlier revision of the card — which is what the restoration rule looks
+    for. Read as a group without regard to which records the commit brings in, the
+    survivor would excuse the deletion.
+    """
+    card = repo / "corpus/one card.md"
+    card.write_text(TWICE_RECORDED)
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-11T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record both events on their day")
+
+    card.write_text(
+        TWICE_RECORDED.replace(
+            "- event: source-checked\n  by: claude\n  date: 2026-11-11\n  note: The local group is Hatcher's `M|x` on printed p. 234.\n",
+            "",
+        )
+    )
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+
+    result = run_staged(repo)
+
+    assert result.returncode == 1, result.stdout
+    assert "corpus/one card.md: the source-checked event by claude dated 2026-11-11" in result.stderr
+    assert "The local group is Hatcher" in result.stderr
+    assert "QUAL-11" in result.stderr
+
+
+def test_deleting_one_of_two_records_of_a_day_is_refused(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """The COMPLAINTS records of one day are judged the same way: the survivor is no shield."""
+    path = repo / "COMPLAINTS.md"
+    path.write_text(TWICE_RECORDED_COMPLAINTS)
+    git(repo, "add", "COMPLAINTS.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-10T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record both findings on their day")
+
+    path.write_text(TWICE_RECORDED_COMPLAINTS.replace("**Searched outside the retained sets (2026-11-10).** The observation.\n\n", ""))
+    git(repo, "add", "COMPLAINTS.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+
+    result = run_staged(repo)
+
+    assert result.returncode == 1, result.stdout
+    assert "COMPLAINTS.md: the record dated 2026-11-10" in result.stderr
+    assert "Searched outside the retained sets" in result.stderr
+    assert "QUAL-11" in result.stderr
+
+
+def test_a_card_moved_below_gits_similarity_threshold_is_not_a_deletion(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """A move Git cannot pair by similarity is still a move, and the card keeps its events.
+
+    With the body rewritten the two paths share too little for Git to record a rename, so
+    the move arrives as a deletion and an addition. The addition carries the card's id and
+    is compared with the retired path's text; reading the retired path as a card deleted
+    would report every one of its dated events as deleted and refuse the move.
+    """
+    card = repo / "corpus/one card.md"
+    card.write_text(RECORDED)
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-15T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record a dated event")
+
+    front, _, _ = RECORDED.partition("\n---\n")
+    moved = repo / "corpus/moved card.md"
+    (repo / "corpus/one card.md").unlink()
+    moved.write_text(front + "\n---\n\n" + "A body written at the new path, unlike the old one.\n" * 40)
+    git(repo, "add", "-A")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+
+    status = git(repo, "diff", "--cached", "--name-status")
+    assert "D\tcorpus/one card.md" in status and "A\tcorpus/moved card.md" in status, f"Git paired the paths; the test no longer exercises the threshold:\n{status}"
+
+    result = run_staged(repo)
+
+    assert result.returncode == 0, result.stderr
+
+
 def test_a_restored_event_matches_a_note_folded_over_lines(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     """An authored note is a folded scalar, and its record has no line breaks.
 
@@ -551,6 +631,25 @@ def test_a_numbered_complaint_is_one_record_with_its_continuation(repo: Path, mo
     git(repo, "add", "COMPLAINTS.md")
     appended = check(repo, "check-staged")
     assert appended.returncode == 0, appended.stderr
+
+
+def test_every_dated_complaints_heading_states_its_day_first() -> None:
+    """The file's stated record format: a recorded section begins with its own day.
+
+    The three sections QUAL-11 restored are the exception the format states, and the test
+    reads them from the same table the gate reads, so a heading that is neither
+    date-first nor restored fails here.
+    """
+    day = re.compile(r"\b\d{4}-\d{2}-\d{2}\b")
+    for line in (ROOT / "COMPLAINTS.md").read_text().splitlines():
+        if line.startswith("#") and day.search(line) and not re.match(r"^#{1,6} \d{4}-\d{2}-\d{2}:", line):
+            assert line in RESTORED_SECTIONS, f"a dated heading does not begin with its day: {line}"
+
+
+def test_a_restored_heading_is_read_as_the_record_of_its_own_day() -> None:
+    """A heading QUAL-11 restored states its day mid-title, and the gate reads it there."""
+    heading, day = next(iter(RESTORED_SECTIONS.items()))
+    assert [found for found, _ in dated_records(f"{heading}\n\nWhat the day found.\n")] == [day]
 
 
 def test_deleting_the_complaints_file_is_refused(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
