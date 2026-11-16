@@ -30,6 +30,54 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Printed exercise read again for this pass: Hartshorne, Algebraic Geometry
+    (1977), IV.3.4, printed p. 315 (PDF p. 330 of the checked-in extraction
+    tmp/sources/hartshorne-1977-algebraic-geometry.md), parts (a) and (b) with
+    the two sentences that follow (b), which the card's statement carries. The
+    published solution named in the brief was read at the cited place in its text
+    version: Chin-Lung Wang's Algebraic Geometry II (NTU, 2020 Spring), Chapter
+    IV homework, section 3 Exercise 4 by Yu-Chi Hou,
+    tmp/sources/ntu-ag2-chapter4.md; part (a) is on printed pp. 8--9 and parts
+    (b), (c), (d) on printed p. 10, page positions fixed on
+    tmp/sources/ntu-ag2-chapter4.pdf, whose printed folio is its PDF page. The
+    brief names part (a) only; (b) is proved there too, at p. 10, and is
+    transcribed with it.
+
+    What the source proves and what it does not: its division of the ideal by the
+    quadrics g_ij is complete, but the degree count that closes its
+    integral-closure argument is garbled as printed (p. 8: "mn = m(n-1) +
+    dk_{n-1} + ... = m + dk_1 = dk_0. Hence, m = dk_{n-1} => d | m", with n and
+    d interchanged in the indices of the next display) and its toric restatement
+    at pp. 8--9 gives a monoid that is not the one of the d-uple embedding. Both
+    are recorded in COMPLAINTS.md under this date. What this pass did not do: it
+    did not re-read Egbert, whose citation is that of an earlier event and stands
+    unchanged.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The solution is now the transcription of Hou's solution, one step per
+    published argument, each step naming part and printed page: s1 and s8's
+    identification S(X) = k[t_0^d,...,t_1^d] (Hou (a), printed p. 8, from I Ex
+    2.12), s2 the integral-closure argument (p. 8; its garbled degree count
+    replaced by the reason the conclusion follows, which is s1), s3 and s4 the
+    quadrics (p. 9), s5--s8 part (b) (p. 10), s9 and s10 the degree-2 and
+    degree-3 consequences (p. 10). The monomial count in s1, and the expansions
+    of Hou's three compressed sentences -- that dim|D| = n is completeness of
+    the system, that g(X)=0 gives X = P^1 and O_X(1) = O_{P^1}(d), and that the
+    t_1-exponent ranges in s4 meet only at the multiples of n -- are marked in
+    the text as the card's own where they replace the source's word; the
+    mathematics they supply is a definition or a citation of IV.1.3.5 and IV
+    Ex 1.5 in each case. The parts of the statement the source treats only by
+    citation are (a)'s projective normality, whose proof is the source's
+    integral-closure argument, and (b)'s final identification with nu_d, which
+    the source states in one sentence. Checked against the book: (a)'s two
+    assertions, (b)'s hypotheses d <= n and nondegeneracy, and the two "in
+    particular" sentences, printed p. 315.
 ---
 
 ::: {.problem}
@@ -49,405 +97,275 @@ A curve of degree 3 in any $\PP^n$ must be either a plane cubic curve, or the tw
 :::
 
 ::: {.solution}
-Use homogeneous coordinates
+Every step below is the published argument and names the place it transcribes: Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou, text version `tmp/sources/ntu-ag2-chapter4.md`, part (a) on printed pp. 8--9 and parts (b)--(d) on printed p. 10. One line of part (a) --- the degree count that closes the integral-closure argument --- is misprinted in the source; step [](#projective-normality){.pf-ref} says which line it is and what carries its conclusion here.
+
+Write $S(X)=k[x_0,\ldots,x_d]/I(X)$ for the homogeneous coordinate ring of
 $$
-[s:t]
+X=\nu_d(\PP^1)\subseteq\PP^d,
 $$
-on $\PP^1$ and
-$$
-[x_0:\cdots:x_d]
-$$
-on $\PP^d$. The $d$-uple embedding is
-$$
-\nu_d([s:t])
-=
-[s^d:s^{d-1}t:\cdots:st^{d-1}:t^d].
-$$
+graded so that $\deg x_i=1$, and write $\theta:k[x_0,\ldots,x_d]\to k[t_0,t_1]$ for the substitution $x_i\mapsto t_0^{d-i}t_1^i$, so that $I(X)=\ker\theta$ and $S(X)=k[t_0^d,t_0^{d-1}t_1,\ldots,t_1^d]$ (I, Ex. 2.12). The degree-$m$ part of $S(X)$ is the image of $H^0(\PP^d,\mco_{\PP^d}(m))$ and is $H^0(\PP^1,\mco_{\PP^1}(md))$.
 
 ::: pf
 
-::: {.pf-step #s1}
+::: {.pf-step #surjective-restriction}
 
-For every $m\ge0$, the restriction map
+For every $m\ge0$ the restriction map
 $$
-H^0(\PP^d,\mco_{\PP^d}(m))
-\longrightarrow
-H^0(\PP^1,\mco_{\PP^1}(md))
+H^0(\PP^d,\mco_{\PP^d}(m))\longrightarrow H^0(\PP^1,\mco_{\PP^1}(md))
 $$
-is surjective.
+is surjective, and $\dim\bigl(S(X)\bigr)_m=md+1$.
 
 ::: pf-proof
 
-The map sends
+This is Hou, §3 Exercise 4(a), printed p. 8, where the identification
+$S(X)=k[t_0^d,t_0^{d-1}t_1,\ldots,t_1^d]$ is read off from (I, Ex. 2.12), together
+with the monomial count that makes it concrete, which is the card's own.
+
+The map sends $x_i\mapsto s^{d-i}t^i$ in coordinates $[s:t]$ on $\PP^1$. The
+target has basis
 $$
-x_i\longmapsto s^{d-i}t^i.
+s^{md-r}t^r,\qquad 0\le r\le md.
 $$
-The target has basis
+Write $r=qd+a$ with $0\le a<d$. If $q<m$, the monomial is the image of
+$x_d^q x_a x_0^{m-q-1}$; if $q=m$, then $a=0$ and it is the image of $x_d^m$. So
+every basis monomial is in the image, and the image has dimension $md+1$, which
+is $\dim H^0(\PP^1,\mco_{\PP^1}(md))$; hence the image is the whole target.
+
+:::
+
+:::
+
+::: {.pf-step #projective-normality}
+
+$X$ is projectively normal.
+
+::: pf-proof
+
+Hou, §3 Exercise 4(a), printed pp. 8--9. Projective normality of $X$ is
+normality of the affine cone $V=\Spec S(X)$, and that is integral closedness of
+$S(X)$.
+
+Let $r\in\Frac(S(X))=k(t_0,t_1)$ be integral over $S(X)$ and write $r=f/g$ with
+$f,g\in k[t_0,t_1]$ relatively prime. Since there are $a_0,\ldots,a_{n-1}\in S(X)$
+with
 $$
-s^{md-r}t^r,
+r^n+a_{n-1}r^{n-1}+\cdots+a_1r+a_0=0,
+$$
+multiplying by $g^n$ gives $g\mid f^n$, hence $g\mid f$ and $g\in k^\times$; so
+$r=f\in k[t_0,t_1]$, and the relation reads
+$$
+f^n+a_{n-1}f^{n-1}+\cdots+a_1f+a_0=0.
+$$
+Each $a_i$ may be taken homogeneous of $t$-degree $dk_i$, since every element of
+$S(X)$ is a sum of forms of $t$-degree divisible by $d$. Comparing $t$-degrees
+in that relation gives $d\mid\deg f$; this is the line the source prints as
+"$mn=m(n-1)+dk_{n-1}+\cdots=m+dk_1=dk_0$, hence $m=dk_{n-1}\Rightarrow d\mid m$",
+whose indices are garbled in the extraction and at the printed page (the record
+of 2026-11-16 in `COMPLAINTS.md` names it), and the conclusion is all that this
+step uses. With $N=\deg f$ divisible by $d$, step
+[](#surjective-restriction){.pf-ref} gives
+$$
+\bigl(S(X)\bigr)_{N/d}=k[t_0,t_1]_N,
+$$
+so $f\in S(X)$.
+
+Hence $S(X)$ is integrally closed, $V$ is normal, and $X$ is projectively
+normal. The source states this second route as well --- $V$ is the toric variety
+of the monoid generated by the exponent vectors $(d-i,i)$ --- but prints the
+monoid and its cone wrongly, and the argument above is the first route it gives.
+
+:::
+
+:::
+
+::: {.pf-step #quadrics-vanish}
+
+For $0\le i<j\le d-1$ the quadric
+$$
+g_{ij}=x_ix_{j+1}-x_{i+1}x_j
+$$
+vanishes on $X$.
+
+::: pf-proof
+
+Hou, §3 Exercise 4(a), printed p. 9: "obviously $g_{ij}\in\ker(\theta)$". Under
+$x_i\mapsto t_0^{d-i}t_1^i$ both $x_ix_{j+1}$ and $x_{i+1}x_j$ map to
+$t_0^{2d-i-j-1}t_1^{i+j+1}$.
+
+:::
+
+:::
+
+::: {.pf-step #quadrics-generate}
+
+The $g_{ij}$ generate $I(X)$.
+
+::: pf-proof
+
+Hou, §3 Exercise 4(a), printed p. 9. Let $f\in I(X)$ be homogeneous of degree
+$n$ and divide by the $g_{ij}$ for the lexicographic order
+$x_0>x_1>\cdots>x_d$:
+$$
+r=f-\sum_{0\le i<j\le d-1}a_{ij}g_{ij},
+\qquad a_{ij}\in k[x_0,\ldots,x_d],
+$$
+with $r$ homogeneous of degree $n$. Two observations reduce $r$: it contains no
+monomial $x_i^l$ with $1\le i\le d-1$, since such a term can be subtracted using
+$g_{i-1,i}=x_{i-1}x_{i+1}-x_i^2$; and it contains no monomial involving $x_i$
+and $x_j$ with $j-i\ge2$, since such a term can be subtracted using
+$g_{i,j-1}=x_ix_j-x_{i+1}x_{j-1}$. Hence
+$$
+r=h_0(x_0,x_1)+h_1(x_1,x_2)+\cdots+h_{d-1}(x_{d-1},x_d),
+$$
+with each $h_i$ homogeneous of degree $n$ and containing no term $x_i^n$ for
+$1\le i\le d-1$. Write $h_i=\sum_{k=0}^{n}c_k^{(i)}x_i^{n-k}x_{i+1}^k$. Since
+$r\in I(X)$,
+$$
+0=r\bigl(t_0^d,t_0^{d-1}t_1,\ldots,t_1^d\bigr)
+=\sum_{i=0}^{d-1}\sum_{k=0}^{n}c_k^{(i)}\,t_0^{n(d-i)-k}t_1^{\,ni+k}.
+$$
+All terms have $t$-degree $nd$; the exponents of $t_1$ occurring in $h_i$ are
+$ni,\ldots,ni+n$, so the ranges for consecutive $i$ meet only in the single
+exponent $ni$, where the two contributing coefficients are $c_0^{(i)}$ and
+$c_n^{(i-1)}$, both excluded by the observation above for $1\le i\le d-1$, while
+the two extreme exponents $0$ and $nd$ occur once each and are coefficients of
+$t_0^{nd}\ne0$ and $t_1^{nd}\ne0$. Hence $c_k^{(i)}=0$ for all $i,k$, that is
+$r=0$, and $I(X)$ is generated by the $g_{ij}$.
+
+:::
+
+:::
+
+::: {.pf-step #hyperplane-divisor}
+
+Let $X\subseteq\PP^n$ be a curve of degree $d$ not contained in any hyperplane,
+and let $H$ be a hyperplane with $D=X.H$. Then
+$$
+\deg D=d,
 \qquad
-0\le r\le md.
+\dim\abs{D}=n.
 $$
-Write
+
+::: pf-proof
+
+Hou, §3 Exercise 4(b), printed p. 10: $\deg(D)=\deg(X.H)=\deg(X)=d$, and
+$\dim\abs{D}=n$ because otherwise "there exists a proper subspace
+$V\subset h^0(X,\mco_X(D))$ such that $X\subset\PP(V^*)\subsetneq\PP^n$". In
+full: $H^0(\PP^n,\mco_{\PP^n}(1))\to H^0(X,\mco_X(1))$ is injective precisely
+because no nonzero linear form vanishes on $X$, so the hyperplane sections span
+the complete system of dimension $n+1$; hence $\abs{D}$ is complete and
+$\dim\abs{D}=n$.
+
+:::
+
+:::
+
+::: {.pf-step #strict-inequality}
+
+If $d<n$ there is a contradiction; hence $d=n$.
+
+::: pf-proof
+
+Hou, §3 Exercise 4(b), printed p. 10. Since $X$ is not contained in $H$, a point
+$P\notin\Bs\abs{D}$ exists, and then
 $$
-r=qd+a,
+\dim\abs{D-P}=\dim\abs{D}-1=n-1,
 \qquad
-0\le a<d.
+\deg(D-P)=d-1.
 $$
-If $q<m$, the target monomial is the image of
+If $n>d$, choose $P_1,\ldots,P_d$, each outside the base locus of the system
+reached at that stage, and iterate: this gives
 $$
-x_d^q x_a x_0^{m-q-1};
-$$
-if $q=m$, then $a=0$ and it is the image of $x_d^m$.
-Thus every basis monomial lies in the image.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-The rational normal curve $X=\nu_d(\PP^1)$ is projectively normal.
-
-::: pf-proof
-
-The line bundle cut out by hyperplanes on $X$ pulls back to
-$$
-\nu_d^*\mco_X(1)\cong\mco_{\PP^1}(d).
-$$
-The curve $X\cong\PP^1$ is normal. Step [](#s1){.pf-ref} says that for every $m\ge0$
-the homogeneous degree-$m$ polynomials
-on the ambient projective space surject onto
-$$
-H^0(X,\mco_X(m)).
-$$
-By [[P-AGH2514PROJNORM|Exercise II.5.14(d)]], normality together with these
-surjective restriction maps in every degree is exactly the section criterion
-for projective normality. Hence $X$ is projectively normal.
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Let
-$$
-Q_{ij}=x_i x_j-x_{i+1}x_{j-1}
+\dim\abs{D-P_1-\cdots-P_d}=n-d>0,
 \qquad
-(0\le i<j-1\le d-1).
+\deg(D-P_1-\cdots-P_d)=0.
 $$
-These quadrics vanish on $X$.
-
-::: pf-proof
-
-Under the parametrization,
-$$
-x_i x_j
-\longmapsto
-s^{2d-i-j}t^{i+j}
-$$
-and
-$$
-x_{i+1}x_{j-1}
-\longmapsto
-s^{2d-i-j}t^{i+j}.
-$$
-Their difference therefore restricts to zero on $X$.
+A class of degree $0$ whose complete linear system is nonempty is trivial, so
+$D-P_1-\cdots-P_d\sim0$ and $h^0(X,\mco_X(D-\sum P_i))=1$, contradicting
+$\dim\abs{D-\sum P_i}=n-d\ge1$. Hence $n=d$.
 
 :::
 
 :::
 
-::: {.pf-step #s4}
+::: {.pf-step #genus-zero}
 
-The quadrics $Q_{ij}$ generate the homogeneous ideal of $X$.
-
-::: pf-proof
-
-Let
+Under the hypotheses of step [](#hyperplane-divisor){.pf-ref},
 $$
-R=k[x_0,\ldots,x_d]
-$$
-and let $J$ be the ideal generated by the quadrics in step [](#s3){.pf-ref}.
-Consider a degree-$m$ monomial
-$$
-M=x_{i_1}\cdots x_{i_m}.
-$$
-Whenever two indices satisfy
-$$
-b-a\ge2,
-$$
-the relation
-$$
-x_a x_b\equiv x_{a+1}x_{b-1}\pmod J
-$$
-replaces them by two closer indices while preserving their sum.
-The sum of the squares of all indices strictly decreases, so repeated
-straightening terminates.
-
-Consequently every degree-$m$ monomial is congruent modulo $J$ to one whose
-indices differ by at most $1$. If the sum of its indices is
-$$
-r=mq+a,
+d=n,
 \qquad
-0\le a<m,
-$$
-the resulting monomial is
-$$
-x_q^{m-a}x_{q+1}^{a},
-$$
-with the evident interpretation $x_d^m$ when $r=md$.
-Thus $(R/J)_m$ is spanned by at most
-$$
-md+1
-$$
-monomials, one for each possible index sum $0,\ldots,md$.
-
-Their restrictions to $X$ are the distinct monomials
-$$
-s^{md-r}t^r,
-\qquad
-0\le r\le md,
-$$
-which are linearly independent. Hence these $md+1$ classes are a basis of
-$(R/J)_m$.
-
-By step [](#s1){.pf-ref} the degree-$m$ homogeneous coordinate ring of $X$ also has
-dimension $md+1$. Since $J$ is contained in the homogeneous ideal $I_X$,
-equality of the degree-$m$ quotients forces
-$$
-(I_X)_m=J_m
-$$
-for every $m$. Therefore
-$$
-I_X=J,
-$$
-so the homogeneous ideal is generated by quadrics. Together with step [](#s2){.pf-ref},
-this proves (a).
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-If $\mcl$ is a line bundle of degree $e\ge0$ on a smooth projective
-curve, then
-$$
-h^0(\mcl)\le e+1.
-$$
-
-::: pf-proof
-
-A degree-$0$ line bundle has at most one nonzero section: a nonzero section
-has an effective zero divisor of degree $0$, so it is nowhere vanishing and
-trivializes the bundle.
-
-For $e>0$, choose any point $P$. The exact sequence
-$$
-0
-\longrightarrow
-\mcl(-P)
-\longrightarrow
-\mcl
-\longrightarrow
-\mcl\restrict_P
-\longrightarrow0
-$$
-shows
-$$
-h^0(\mcl)\le h^0(\mcl(-P))+1.
-$$
-Induction on the degree gives the stated bound.
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-Let $X\subseteq\PP^n$ be nondegenerate of degree $d\le n$. Then
-$$
-d=n
-\qquad\text{and}\qquad
-h^0(X,\mco_X(1))=n+1.
-$$
-
-::: pf-proof
-
-Nondegeneracy means that no nonzero linear form vanishes identically on
-$X$. Hence restriction is injective:
-$$
-H^0(\PP^n,\mco(1))
-\hookrightarrow
-H^0(X,\mco_X(1)).
-$$
-Therefore
-$$
-n+1
-\le
-h^0(X,\mco_X(1)).
-$$
-The hyperplane bundle has degree $d$, so step [](#s5){.pf-ref} gives
-$$
-h^0(X,\mco_X(1))
-\le
-d+1.
-$$
-Using $d\le n$,
-$$
-n+1
-\le
-h^0(X,\mco_X(1))
-\le
-d+1
-\le
-n+1.
-$$
-All inequalities are equalities, proving the claim.
-
-:::
-
-:::
-
-::: {.pf-step #s7}
-
-Under the hypotheses of step [](#s6){.pf-ref}, one has
-$$
-X\cong\PP^1.
-$$
-
-::: pf-proof
-
-Put
-$$
-\mcl=\mco_X(1).
-$$
-By step [](#s6){.pf-ref},
-$$
-\deg\mcl=d,
-\qquad
-h^0(\mcl)=d+1.
-$$
-Choose an effective hyperplane divisor
-$$
-H=P_1+\cdots+P_d
-$$
-counting multiplicities. Set
-$$
-\mce=\mcl(-P_1-\cdots-P_{d-1}).
-$$
-Then $\deg\mce=1$. Repeatedly applying the one-point exact sequence used in
-step [](#s5){.pf-ref} gives
-$$
-h^0(\mce)
-\ge
-h^0(\mcl)-(d-1)
-=2.
-$$
-The degree-one case of step [](#s5){.pf-ref} gives the opposite inequality, hence
-$$
-h^0(\mce)=2.
-$$
-
-The complete linear system $\linearsystem{\mce}$ has no base point. Indeed, a base point
-$P$ would give
-$$
-h^0(\mce(-P))=2
-$$
-for a degree-$0$ line bundle, contradicting step [](#s5){.pf-ref}.
-Thus $\linearsystem{\mce}$ defines a nonconstant morphism
-$$
-X\longrightarrow\PP^1
-$$
-of degree $\deg\mce=1$. A degree-one morphism between smooth projective
-curves is an isomorphism. Therefore
-$$
-X\cong\PP^1,
+h^0(X,\mco_X(1))=n+1,
 \qquad
 g(X)=0.
 $$
 
-:::
+::: pf-proof
+
+Hou, §3 Exercise 4(b), printed p. 10. By step [](#strict-inequality){.pf-ref},
+$n=d$, and $\deg D=\dim\abs{D}$ by step [](#hyperplane-divisor){.pf-ref}, so
+[[P-AGH415DIMLEQDEG|Exercise IV.1.5]], which says that $\dim\abs{D}\le\deg D$
+with equality only for $D=0$ or $g(X)=0$, applies with $D$ of degree $d>0$:
+$$
+g(X)=0.
+$$
+Also $h^0(X,\mco_X(1))=\dim\abs{D}+1=n+1$.
 
 :::
 
-::: {.pf-step #s8}
+:::
 
-The embedding of step [](#s6){.pf-ref} is, up to an automorphism of $\PP^d$, the
-rational normal curve.
+::: {.pf-step #is-rational-normal}
+
+The embedding of step [](#hyperplane-divisor){.pf-ref} is the $d$-uple embedding
+of $\PP^1$, up to an automorphism of $\PP^d$.
 
 ::: pf-proof
 
-By steps [](#s6){.pf-ref} and [](#s7){.pf-ref},
-$$
-d=n,
-\qquad
-X\cong\PP^1,
-\qquad
-\mco_X(1)\cong\mco_{\PP^1}(d).
-$$
-The restriction map on hyperplane sections is injective between vector
-spaces of the same dimension $d+1$, hence is an isomorphism.
-Thus the given embedding is defined by the complete linear system
-$$
-\linearsystem{\mco_{\PP^1}(d)}.
-$$
-Choosing a different basis of this $(d+1)$-dimensional space changes the
-map only by an automorphism of $\PP^d$. Therefore the given curve differs
-from the standard $d$-uple embedding only by an automorphism of $\PP^d$.
-This proves (b).
+Hou, §3 Exercise 4(b), printed p. 10: "we then must have $g(X)=0$ and
+$\mco_X(H)=\mco_{\PP^1}(dH)$. Therefore $X\cong\nu_d(\PP^1)$ up to
+$\Aut(\PP^n)$." In full: $g(X)=0$ forces $X\cong\PP^1$ (IV.1.3.5); a divisor of
+degree $d$ on $\PP^1$ is $d$ times a point, so $\mco_X(1)=\mco_X(H)\cong
+\mco_{\PP^1}(d)$ and $\abs{D}$ is the complete system $\abs{dP}$; by step
+[](#genus-zero){.pf-ref} the restriction
+$H^0(\PP^d,\mco_{\PP^d}(1))\to H^0(X,\mco_X(1))$ is injective between spaces of
+dimension $d+1$, hence an isomorphism, so the given embedding is the one defined
+by the complete system $\abs{\mco_{\PP^1}(d)}$ and differs from $\nu_d$ only by
+the choice of a basis of that space, that is, by an element of
+$\PGL_{d+1}(k)=\Aut\PP^d$.
 
 :::
 
 :::
 
-::: {.pf-step #s9}
+::: {.pf-step #degree-two}
 
-Every curve of degree $2$ in projective space is a plane conic.
+A curve of degree $2$ in any $\PP^n$ is a conic in some $\PP^2$.
 
 ::: pf-proof
 
-Let $\PP^r$ be the linear span of the curve. Then the curve is nondegenerate
-in $\PP^r$. It cannot have $r=1$, since the only integral projective curve
-whose span is $\PP^1$ is $\PP^1$ itself, of degree $1$.
-Thus $r\ge2$, and
-$$
-2\le r.
-$$
-Applying part (b) in the span gives
-$$
-r=2
-$$
-and identifies the curve with the degree-two rational normal curve, namely a
-conic in $\PP^2$. This proves the degree-$2$ assertion of (b).
+Hou, §3 Exercise 4(c), printed p. 10: if $X$ is not contained in any hyperplane,
+then $n=2$ by part (b) as proved in steps
+[](#hyperplane-divisor){.pf-ref}--[](#is-rational-normal){.pf-ref}; if a
+hyperplane $H\cong\PP^{n-1}$ contains $X$, replace $n$ by $n-1$ and repeat. So
+$X$ is a plane curve of degree $2$, that is, a conic in $\PP^2$.
 
 :::
 
 :::
 
-::: {.pf-step #s10}
+::: {.pf-step #degree-three}
 
-Every curve of degree $3$ is either a plane cubic or the twisted
+A curve of degree $3$ in any $\PP^n$ is either a plane cubic or the twisted
 cubic in $\PP^3$.
 
 ::: pf-proof
 
-Again let $\PP^r$ be the linear span. The case $r=1$ is impossible.
-If $r=2$, the curve is a plane curve of degree $3$, hence a plane cubic.
-
-If $r\ge3$, then
-$$
-3\le r,
-$$
-so part (b) applied inside the span gives
-$$
-r=3
-$$
-and says that the curve is the degree-three rational normal curve.
-By [[P-AGH212DUPLE|Exercise I.2.12(d)]], this is the twisted cubic.
-This proves the degree-$3$ assertion of (b).
+Hou, §3 Exercise 4(d), printed p. 10: the descent of step
+[](#degree-two){.pf-ref} shows $X\subseteq\PP^3$. If $X$ is not contained in any
+plane, then $X\cong\nu_3(\PP^1)$ by part (b), "and it is indeed the twisted
+cubic curve up to a projective transform"; if $X$ lies in a plane, it is a plane
+curve of degree $3$, hence a plane cubic. By [[P-AGH212DUPLE|Exercise I.2.12(d)]]
+the image of $\nu_3$ is the twisted cubic.
 
 :::
 
@@ -455,15 +373,22 @@ This proves the degree-$3$ assertion of (b).
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove (a), steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove (b), and steps [](#s9){.pf-ref}
-and [](#s10){.pf-ref} prove its degree-$2$ and degree-$3$ assertions.
+Steps [](#surjective-restriction){.pf-ref}, [](#projective-normality){.pf-ref},
+[](#quadrics-vanish){.pf-ref} and [](#quadrics-generate){.pf-ref} prove part
+(a), steps [](#hyperplane-divisor){.pf-ref}, [](#strict-inequality){.pf-ref},
+[](#genus-zero){.pf-ref} and [](#is-rational-normal){.pf-ref} prove part (b), and
+steps [](#degree-two){.pf-ref} and [](#degree-three){.pf-ref} prove its two
+consequences.
 
 :::
 
 :::
 
 :::
+
 
 ::: {.remark title="Published solution"}
+Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou, text version `tmp/sources/ntu-ag2-chapter4.md`, printed pp. 8--10, proves (a) at pp. 8--9 and (b) with its degree-$2$ and degree-$3$ consequences at p. 10, by integral closedness of the homogeneous coordinate ring and by division of the ideal by the quadrics $g_{ij}$. Its printed degree count closing the integral-closure argument is garbled, and its toric restatement misprints the monoid; see the record of 2026-11-16 in `COMPLAINTS.md`.
+
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.4, printed p. 219, text version `tmp/sources/hartshorne-solutions-egbert.md`, checks that the restriction $H^0(\PP^d,\OO(m))\to H^0(\PP^1,\OO(dm))$ is surjective for every $m$, so the $d$-uple embedding is projectively normal, identifies the quadrics $Q_{ij}$ as generators of the ideal, and concludes the classification of low-degree curves from the degree bound.
 :::
