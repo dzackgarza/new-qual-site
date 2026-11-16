@@ -133,6 +133,36 @@ audit:
     no process. No mathematical claim changes: the remark still names the two
     published entries and what each does not prove. Not checked: nothing new;
     the card's steps were not re-derived in this pass.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Published proof located for issue #121, and the third kind is transcribed
+    from it: S. S. Abhyankar, On the valuations centered in a local domain,
+    Amer. J. Math. 78 (1956), pp. 321--348, text version
+    tmp/sources/abhyankar-1956-valuations-centered-local-domain.md, whose
+    printed page is its PDF page plus 320 (checked on the PDF's own text
+    layer: Definition 3 stands on printed p. 335 and Proposition 3 on printed
+    p. 336). Read and checked: Definition 3, printed p. 335, and Lemma 10,
+    printed pp. 334--335, for the identification of the blowup at the centre
+    with the first quadratic transform; Proposition 3, printed pp. 336--337,
+    that the quadratic sequence along a prime divisor is finite; Lemma 7,
+    printed p. 332, Theorem 1, printed p. 330, and Lemma 12, printed
+    pp. 337--338, whose two assertions are exactly R contained in the union of
+    the successive local rings and the uniqueness of the valuation centred at
+    all of them. Steps quadratic-sequence, union-is-valuation-ring and
+    union-equals-r replace the steps union-contained-in-r,
+    element-eventually-regular and r-equals-union-type-three named in the
+    events above: Lemma 12 proves R = union A_i directly, so the card no
+    longer carries its own resolution of [f:1] by Exercise V.5.1, and the
+    remark names that route as the book's hint instead. Checked against
+    Hartshorne V.5.6, printed p. 420, and Exercise II.4.12 with its Note,
+    printed p. 108: the three kinds are as printed, and both assertions the
+    Note defers to this exercise are what Proposition 3 and Lemma 12 give. Not
+    checked: Abhyankar's Lemma 13 and Proposition 5, which the card does not
+    use, and no published proof of the third kind beyond the sets already
+    recorded here and in COMPLAINTS.md was sought.
+
 ---
 
 ::: {.problem}
@@ -306,193 +336,118 @@ construction of Exercise II.4.12.
 
 :::
 
-::: {.pf-step #union-contained-in-r}
-If no center ever becomes divisorial, then every $x_i$ is closed and
-the construction gives an infinite chain
+::: {.pf-step #quadratic-sequence}
+If no centre becomes divisorial, the rings
 $$
-X=X_0
-\longleftarrow
-X_1
-\longleftarrow
-X_2
-\longleftarrow
-\cdots
+A_i=\OO_{X_i,x_i}
 $$
-of blowups at the successive centers of $R$. Put
-$$
-A_i=\OO_{X_i,x_i},
-\qquad
-R_0=\bigcup_{i\ge0}A_i.
-$$
-Then
-$$
-\boxed{R_0\subseteq R.}
-$$
+form a strictly ascending sequence of two-dimensional regular local
+domains with quotient field $K$, and $A_{i+1}$ is the first quadratic
+transform of $A_i$ along the valuation of $R$.
 
 ::: pf-proof
-By definition of center, $R$ dominates every $A_i$, so
-$$
-A_i\subseteq R
-$$
-for all $i$. Hence their union is contained in $R$.
+Every $x_i$ is a closed point of the nonsingular surface $X_i$, so $A_i$ is
+a two-dimensional regular local domain with quotient field $K$.
 
-Moreover the transition maps are local inclusions
+Write $\mathfrak m_i$ for the maximal ideal of $A_i$ and $\nu$ for the
+valuation of $R$. The blowup
 $$
-A_i\hookrightarrow A_{i+1},
+\pi_{i+1}:X_{i+1}\longrightarrow X_i
 $$
-because $x_{i+1}$ lies above $x_i$. Thus this is precisely the third
-construction of Exercise II.4.12, except that it remains to prove the
-assertion promised there:
+is an isomorphism over $X_i\smallsetminus\{x_i\}$, so
 $$
-R_0=R.
+A_i\subseteq A_{i+1}.
 $$
+The inclusion is strict. Choose a minimal basis $u,v$ of $\mathfrak m_i$
+with
+$$
+\nu(u)\le\nu(v).
+$$
+Then $\nu(v/u)\ge0$, so $v/u$ is regular at the centre $x_{i+1}$ of $\nu$
+on $X_{i+1}$, and
+$$
+v/u\in A_{i+1}.
+$$
+On the other hand $v/u\notin A_i$: from $v/u=c\in A_i$ one gets $v=uc$ with
+$c\notin\mathfrak m_i$, since $v\notin\mathfrak m_i^2$, so $c$ is a unit and
+$(u,v)=(u)$, contrary to $u,v$ being a minimal basis.
+
+Abhyankar defines the first quadratic transform of $A_i$ along $\nu$ to be
+$$
+A_i[x_2/x_1]_{P},
+$$
+where $x_1,x_2$ is a minimal basis of $\mathfrak m_i$ with
+$\nu(x_1)\le\nu(x_2)$ and $P$ is the contraction of
+$\mathfrak m_\nu$ (Definition 3, printed p. 335); by Lemma 10, printed
+pp. 334--335, that ring is the local ring of the centre of $\nu$ on the
+blowup of $\Spec A_i$ at $\mathfrak m_i$. With $x_1=u$ and $x_2=v$, it is
+$A_{i+1}$.
 :::
 
 :::
 
-::: {.pf-step #element-eventually-regular}
-Let
+::: {.pf-step #union-is-valuation-ring}
+The union
 $$
-f\in R.
+S=\bigcup_{i\ge0}A_i
 $$
-There is an index $N$ such that, for every $i\ge N$,
-$$
-\boxed{f\in A_i=\OO_{X_i,x_i}.}
-$$
+is the valuation ring of a valuation $\nu'$ of $K$ which has centre
+$\mathfrak m_i$ in $A_i$ for every $i$ and is of $A_i$-dimension zero
+there.
 
 ::: pf-proof
-The case $f=0$ is immediate, so assume
-$$
-f\in K^\times.
-$$
-Regard $f$ as the rational map
-$$
-\varphi_f:X\dashrightarrow\PP^1,
-\qquad
-x\longmapsto[f(x):1].
-$$
-Exercise V.5.1 [[P-AGH551RESOLVERATFN]] gives a finite sequence of point
-blowups
-$$
-Y_m
-\xrightarrow{g_m}
-Y_{m-1}
-\longrightarrow
-\cdots
-\longrightarrow
-Y_1
-\xrightarrow{g_1}
-Y_0=X
-$$
-such that $\varphi_f$ extends to a morphism
-$$
-\psi:Y_m\longrightarrow\PP^1.
-$$
+This is Abhyankar's Lemma 12(1), printed p. 337, whose argument runs as
+follows. Suppose that $S$ is not a valuation ring. Then Lemma 7, printed
+p. 332, supplies a valuation $w$ of $K$ with centre $\mathfrak m_i$ in
+$A_i$ and of positive $A_i$-dimension for every $i$. By Theorem 1, printed
+p. 330, such a $w$ has $A_0$-dimension $\dim A_0-1=1$, that is, it is a
+prime divisor for $A_0$; and Proposition 3, printed pp. 336--337, says
+that the quadratic sequence along a prime divisor is finite, whereas
+$A_0\subsetneq A_1\subsetneq\cdots$ is infinite. So $S$ is the valuation
+ring $R_{\nu'}$ of a valuation $\nu'$ of $K$.
 
-For each $j$, let $y_j$ be the unique center of $R$ on $Y_j$. We compare the
-local rings at these centers with the sequence
+Its maximal ideal is
 $$
-A_0\subset A_1\subset A_2\subset\cdots.
+\mathfrak m_{\nu'}=\bigcup_{i\ge0}\mathfrak m_i
 $$
-
-Suppose the point blown up by
+(loc. cit.). Since $A_j$ dominates $A_i$ for $j\ge i$, one has
 $$
-g_j:Y_j\longrightarrow Y_{j-1}
+A_i\cap\mathfrak m_j=\mathfrak m_i
 $$
-is not $y_{j-1}$. Then $g_j$ is an isomorphism on a neighbourhood of
-$y_{j-1}$, and therefore
+for $j\ge i$, so
 $$
-\OO_{Y_j,y_j}\cong\OO_{Y_{j-1},y_{j-1}}.
+A_i\cap\mathfrak m_{\nu'}
+=
+\bigcup_{j\ge i}(A_i\cap\mathfrak m_j)
+=
+\mathfrak m_i,
 $$
-
-Suppose instead that $g_j$ blows up $y_{j-1}$. Under any identification
-$$
-\OO_{Y_{j-1},y_{j-1}}\cong A_i
-$$
-already obtained, this is the blowup at the center $x_i$ of $R$. The center
-$y_j$ selected by $R$ on that blowup is therefore the same infinitely near
-point as $x_{i+1}$, and
-$$
-\OO_{Y_j,y_j}\cong A_{i+1}.
-$$
-
-Starting from
-$$
-\OO_{Y_0,y_0}=\OO_{X,x_0}=A_0
-$$
-and proceeding through the finite sequence of blowups, we obtain some
-$N\le m$ with
-$$
-\OO_{Y_m,y_m}\cong A_N
-$$
-inside the common function field $K$.
-
-It remains to see that $f$ is regular at $y_m$. Because
-$$
-f\in R,
-$$
-the $k$-algebra map
-$$
-k[t]\longrightarrow R,
-\qquad
-t\longmapsto f,
-$$
-defines a morphism
-$$
-\Spec R\longrightarrow\AA^1\subset\PP^1
-$$
-whose restriction to $\Spec K$ is the rational map $[f:1]$.
-
-On the other hand, the center morphism
-$$
-\Spec R\longrightarrow Y_m
-$$
-followed by $\psi$ gives another extension to $\PP^1$ of the same
-generic-point map. Since $\PP^1$ is separated, the two extensions agree.
-Consequently
-$$
-\psi(y_m)\in\AA^1,
-$$
-and the affine coordinate $t$ pulls back near $y_m$ to the rational function
-$f$. Hence
-$$
-f\in\OO_{Y_m,y_m}=A_N.
-$$
-Since
-$$
-A_N\subseteq A_{N+1}\subseteq A_{N+2}\subseteq\cdots,
-$$
-the same element belongs to $A_i$ for every $i\ge N$, exactly as asserted
-in the hint.
+and $\nu'$ has centre $\mathfrak m_i$ in $A_i$. Again by Proposition 3
+with Theorem 1, the $A_i$-dimension of $\nu'$ is zero for every $i$.
 :::
 
 :::
 
-::: {.pf-step #r-equals-union-type-three}
-In the infinite closed-center case,
+::: {.pf-step #union-equals-r}
 $$
-\boxed{R=R_0=\bigcup_{i\ge0}\OO_{X_i,x_i}.}
+\boxed{R=S=\bigcup_{i\ge0}A_i,}
 $$
-Thus $R$ is of type (3) in Exercise II.4.12.
+so $R$ is of type (3) in Exercise II.4.12, and the local ring $R_0$ of the
+third construction there is itself a valuation ring.
 
 ::: pf-proof
-Step [](#union-contained-in-r){.pf-ref} gives
+Every $A_i$ is contained in $R$, because $R$ dominates $A_i$, so
 $$
-R_0\subseteq R.
+S\subseteq R.
 $$
-Conversely, step [](#element-eventually-regular){.pf-ref} shows that every element
-$$
-f\in R
-$$
-belongs to some $A_N$, hence to $R_0$. Therefore
-$$
-R\subseteq R_0.
-$$
-The two inclusions give equality.
 
-In particular, the local union $R_0$ in the third construction is itself a
-valuation ring; no additional dominating valuation ring is needed. This is
-the assertion deferred from Exercise II.4.12 to the present exercise.
+Conversely $\nu$ has centre $\mathfrak m_i$ in $A_i$ for every $i$, and
+Abhyankar's Lemma 12(2), printed p. 338, says that a valuation of $K$ whose
+centre in $A_i$ is $\mathfrak m_i$ for every $i$ is unique. Hence
+$\nu=\nu'$, and
+$$
+R=R_\nu=R_{\nu'}=S.
+$$
 :::
 
 :::
@@ -507,8 +462,8 @@ The divisorial case is type (1) by step [](#codim-one-center-type-one){.pf-ref}.
 
 Starting from a closed center, step [](#successive-centers-on-blowups){.pf-ref} gives successive centers on point
 blowups. If one of them becomes the generic point of the exceptional curve,
-step [](#divisorial-center-type-two){.pf-ref} gives type (2). If this never happens, every center remains closed
-and steps [](#union-contained-in-r){.pf-ref}, [](#element-eventually-regular){.pf-ref} and [](#r-equals-union-type-three){.pf-ref} give type (3).
+step [](#divisorial-center-type-two){.pf-ref} gives type (2). If this never happens, every center remains closed,
+and steps [](#quadratic-sequence){.pf-ref}, [](#union-is-valuation-ring){.pf-ref} and [](#union-equals-r){.pf-ref} give type (3).
 
 These alternatives exhaust all possibilities for points on the exceptional
 curve of a nonsingular surface.
@@ -518,8 +473,8 @@ curve of a nonsingular surface.
 
 ::: pf-qed
 Steps [](#unique-center-exists){.pf-ref}, [](#center-not-generic-point){.pf-ref}, [](#codim-one-center-type-one){.pf-ref}, [](#successive-centers-on-blowups){.pf-ref} and [](#divisorial-center-type-two){.pf-ref} give the first two valuation types from their centers on
-successive smooth models. Steps [](#union-contained-in-r){.pf-ref}, [](#element-eventually-regular){.pf-ref} and [](#r-equals-union-type-three){.pf-ref} prove the infinite-center case
-and the essential equality $R=R_0$ using Exercise V.5.1. Step [](#trichotomy-established){.pf-ref} assembles
+successive smooth models. Steps [](#quadratic-sequence){.pf-ref}, [](#union-is-valuation-ring){.pf-ref} and [](#union-equals-r){.pf-ref} prove the infinite-center case
+and the identity $R=R_0$, through Abhyankar's quadratic transforms. Step [](#trichotomy-established){.pf-ref} assembles
 the exhaustive trichotomy, with the trivial valuation ring $K$ separately
 excluded exactly as in Exercise II.4.12.
 :::
@@ -528,14 +483,14 @@ excluded exactly as in Exercise II.4.12.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.6, printed p. 420, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.6, printed p. 420, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15). Exercise II.4.12, printed p. 108, builds the ring $R_0=\bigcup_i\OO_{x_i,X_i}$ of the third kind, shows only that it is a local ring dominated by some valuation ring of $K/k$, and its Note after the exercise defers to the present one both that $R_0$ is itself a valuation ring and that every valuation ring of $K/k$ is one of the three kinds.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.5.6, printed p. 114 (`tmp/sources/lfwin-hartshorne-solutions.pdf`, whose folios are its PDF pages; read in `tmp/sources/lfwin-hartshorne-solutions.md`), **does not prove the exercise**, and no step of this card is a transcription of it. What he writes is Egbert's V.5.6 entry, printed p. 299, text version `tmp/sources/hartshorne-solutions-egbert.md`, with one sentence added. The valuation criterion, $X$ being projective and therefore proper, gives $\varphi:\Spec R\to X$ whose closed-point image is the centre $P$ of $\nu$, and $R$ dominates $\OO_P$; when the centre is a curve both rings are discrete valuation rings and $R=\OO_P$, which is kind (1); when it is a closed point he blows $P$ up and says the centre on $X'$ is either the exceptional curve, which is kind (2), or a point of it, and that one repeats. The added sentence is his kind (3), and it is an assertion, not an argument:
-$$R=\varprojlim\OO_{P_i,X_i}=\bigcup_i\OO_{P_i,X_i}.$$
-Two things in it are wrong. The union of the local rings is a direct limit, $\bigcup_i\OO_{P_i,X_i}=\varinjlim_i\OO_{P_i,X_i}$, its transition maps being the inclusions $\OO_{P_i,X_i}\into\OO_{P_{i+1},X_{i+1}}$; an inverse limit needs maps in the opposite direction, which this chain of rings does not carry, so neither identity in the display is established. And his numerical test does not sort the three kinds: he reads $\operatorname{tr.d.}_k(R/\mathfrak m_R)$ as the dimension of the centre and takes the value $1$ to mean kind (1), but in kind (2) the ring $R=\OO_{X_n,x_n}$ at the generic point of the exceptional curve has $\operatorname{tr.d.}_k(R/\mathfrak m_R)=1$ as well, its centre on $X$ being a closed point; the kinds are separated by where the centre sits, not by that number. His entry does not use the hint, Exercise V.5.1, at all, and it is that exercise which supplies the missing inclusion.
+The classification is Abhyankar's. S. S. Abhyankar, *On the valuations centered in a local domain*, Amer. J. Math. 78 (1956), pp. 321--348, text version `tmp/sources/abhyankar-1956-valuations-centered-local-domain.md` (printed page = its PDF page plus 320): Theorem 1, printed p. 330, sorts a valuation centred in an $n$-dimensional local domain by its $R$-dimension $d$, rational rank $r$ and rank $\rho$, with $d+r\le n$, and a valuation of $R$-dimension $n-1$ is real discrete; Definition 3, printed p. 335, defines the quadratic transforms of $R$ along the valuation, and Lemma 10, printed pp. 334--335, identifies each with the local ring of the centre of the valuation on the corresponding blowup; Proposition 3, printed pp. 336--337, proves that the quadratic sequence along a prime divisor is finite and ends in the valuation ring of the valuation itself; and Lemma 12, printed pp. 337--338, proves that a strictly ascending quadratic sequence of two-dimensional regular local domains has a valuation ring as its union, that this is the only valuation centred at the successive maximal ideals, and that it is of $R_i$-dimension zero at every stage. Steps [](#quadratic-sequence){.pf-ref}, [](#union-is-valuation-ring){.pf-ref} and [](#union-equals-r){.pf-ref} transcribe that proof for the third kind, and $R=R_0$ is its Lemma 12(2) applied to the given valuation ring.
 
-The proof of the exercise is therefore this card's own. Its decisive steps are [](#element-eventually-regular){.pf-ref}, which resolves $[f:1]$ by point blowups and compares centres to place each $f\in R$ in some $A_i$, and [](#r-equals-union-type-three){.pf-ref}, which assembles $R_0\subseteq R$ with $R\subseteq R_0$; step [](#union-contained-in-r){.pf-ref} proves only the inclusion $R_0\subseteq R$.
+The book's hint proposes a second route to the inclusion $R\subseteq R_0$, by resolving $[f:1]$ with Exercise V.5.1 for each $f\in R$; the proof above takes the published route instead.
 
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.5.6, printed p. 299, states the trichotomy, identifies kinds (1) and (2) through the centre and its successive blowups, and for kind (3) says only that one "repeats and gets a type (3)", citing another book for the value-group claim.
+Two entries of the Hartshorne solution sets identify the first two kinds and do not prove the third. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.5.6, printed p. 114 of that set (`tmp/sources/lfwin-hartshorne-solutions.pdf`, whose folios are its PDF pages; read in `tmp/sources/lfwin-hartshorne-solutions.md`), is A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.6, printed p. 299 of that set, text version `tmp/sources/hartshorne-solutions-egbert.md`, with one sentence added. Both argue kinds (1) and (2) through the centre and its successive blowups, as steps [](#codim-one-center-type-one){.pf-ref} and [](#divisorial-center-type-two){.pf-ref} do, and for kind (3) write only
+$$R=\varprojlim\OO_{P_i,X_i}=\bigcup_i\OO_{P_i,X_i},$$
+an assertion with no argument, in which the limit is also written in the wrong direction: the union is a direct limit along the inclusions $\OO_{P_i,X_i}\into\OO_{P_{i+1},X_{i+1}}$. Neither uses the book's hint, and neither proves $R\subseteq R_0$; that is what step [](#union-is-valuation-ring){.pf-ref} supplies, by Abhyankar's Lemma 12.
 
 :::
