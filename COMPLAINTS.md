@@ -2530,8 +2530,8 @@ I.5.13), and all four now have one. The sources and their printed pages:
   manner to projective varieties"; and the display that follows that sentence,
   $Y\times Z=V(\langle F_i(x_{00},\ldots,x_{m0}),G_j(x_{00},\ldots,x_{0n})\rangle)$, is false as printed,
   since it holds the generators in the zeroth column and row only and every point with $a_0=b_0=0$
-  satisfies it (corrected 2026-11-16; for $Y=V(x_0)$, $Z=V(y_0)$ the point
-  $(1:0:\cdots)\times(0:1:0:\cdots)$ is a witness). The true statement holds each $F_i$ in every column and
+  satisfies it (corrected 2026-11-16; for $Y=V(x_1)$, $Z=V(y_1)$ the point
+  $(0:1:0:\cdots)\times(0:1:0:\cdots)$ is a witness, its zeroth column and zeroth row being zero). The true statement holds each $F_i$ in every column and
   each $G_j$ in every row, and it is the card's steps `s2` and `s3`, not the source, that give (a) and (b)
   for subvarieties; the card's irreducibility step is what makes the product an object of Hartshorne's
   category.
@@ -2611,8 +2611,8 @@ per card, and where the report itself was wrong about the file.
   complete published argument for (a)--(c)", which is too much. (2) The display that follows that sentence,
   line 230, is false as printed: $Y\times Z=V(\langle F_i(x_{00},\ldots,x_{m0}),G_j(x_{00},\ldots,x_{0n})\rangle)$
   holds the generators in the zeroth column and the zeroth row only, so every point of the Segre variety with
-  $a_0=b_0=0$ satisfies it and need not lie in $Y\times Z$; for $Y=V(x_0)$, $Z=V(y_0)$ the point
-  $(1:0:\cdots:0)\times(0:1:0:\cdots:0)$ does not lie in $Y\times Z$ and does satisfy it. The audit event that
+  $a_0=b_0=0$ satisfies it and need not lie in $Y\times Z$; for $Y=V(x_1)$, $Z=V(y_1)$ the point
+  $(0:1:0:\cdots:0)\times(0:1:0:\cdots:0)$ satisfies it --- its zeroth column and zeroth row vanish --- and does not lie in $Y\times Z$. The audit event that
   had recorded that display as verified against the card is withdrawn on the card. The true row-and-column
   statement holds each $F_i$ in every column and each $G_j$ in every row. (3) The text version is now named at
   the citation. The card's own proof of (a)--(c) is unchanged and was re-read.
