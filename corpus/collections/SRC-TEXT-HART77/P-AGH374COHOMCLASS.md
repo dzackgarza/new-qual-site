@@ -196,6 +196,29 @@ audit:
     pp. 247-248, Exercise III.7.3 on printed p. 249. Not checked: no source
     proving (R) or (B) for n >= 2 was located in the two search passes
     recorded, and III.7.5 and III.7.12 were read in the text version only.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Fourth pass on the reader's report of this batch, on the two inputs. The
+    Gysin calculus of the Stacks Project was read at the tags in this pass, at
+    https://stacks.math.columbia.edu/tag/0G82 and the tags named: Lemma
+    50.23.9 (0G8C) gives gamma^{p,q}(alpha|_Z) = alpha cup gamma^{0,0}(1) for
+    a Koszul regular closed immersion of codimension c in a smooth X over a
+    base S; Lemma 50.23.10 (0G8D) gives the compatibility of gamma with a
+    transverse cartesian square, hence the class-level form of (B); Remark
+    50.23.1 with equation (50.23.1.1) (tags 0G83 and 0G84) gives gamma^0_f(1)
+    = df/f for a local equation f, which with Section 50.9 (tag 0FLE) is the
+    dlog class of a divisor, hence the class identity c_1(L(Y)) cup nu =
+    gamma^{n-1,n-1}_Y(nu|_Y) behind (R). Neither lemma compares the abstract
+    trace of III.7 with the Gysin class of a point; that comparison,
+    t_X(gamma^{0,0}_{P/X}(1)) = 1, is the case of the residue theorem which
+    the book proves only for curves (III.7.14.1, printed p. 247), and the head
+    of the solution now says so. Checked in this pass: the Stacks pages named,
+    read at the site, and III.7.14.1 in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md. Not checked: no proof
+    of the comparison was found, and the functoriality of gamma for a
+    composite of regular immersions was not read in the source.
 ---
 
 ::: {.problem}
@@ -272,6 +295,37 @@ solution $H$ is always a hyperplane of $\PP^n$. This is the compatibility the
 printed hint uses when it says to "cut with a hyperplane $H\subseteq X$"; it is
 the projection formula for the trace, read for the transverse pair $(Y,H)$.
 
+The class-level part of both inputs is published. Let $Z\subseteq X$ be a Koszul
+regular closed immersion of codimension $c$, with $X$ smooth over a base $S$,
+and let $\gamma^{p,q}:H^q(Z,\Omega_{Z/S}^p)\to H^{q+c}(X,\Omega_{X/S}^{p+c})$
+be the Gysin map of the Stacks Project. Then
+$$
+\gamma^{p,q}(\restrictionof{\alpha}{Z})=\alpha\smile\gamma^{0,0}(1)
+\qquad\text{(Lemma 50.23.9, tag 0G8C),}
+$$
+and $\gamma$ is compatible with a transverse cartesian square (Lemma 50.23.10,
+tag 0G8D), over an arbitrary base scheme and in every characteristic. For a
+divisor $D$ the class $\gamma^{0,0}_D(1)$ is the $d\log$ class of
+$\mathcal O_X(D)$: Remark 50.23.1 with equation (50.23.1.1) (tags 0G83 and
+0G84) gives $\gamma^0_f(1)=df/f$ for a local equation $f$, which is the class
+of §50.9 (tag 0FLE). So the class identity behind (R),
+$$
+c(\mathcal L(Y))\smile\nu=\gamma^{n-1,n-1}_Y(\restrictionof{\nu}{Y}),
+$$
+is a theorem, and so is the base-change compatibility behind (B).
+
+What those lemmas do not supply is the comparison of the abstract trace of
+III.7 with the Gysin class of a point: for $P\in X$ the classes $\eta(P)$ and
+$\gamma^{0,0}_{P/X}(1)$ both span the one-dimensional $H^n(X,\Omega_X^n)$, and
+the statement that they agree, equivalently
+$$
+t_X\bigl(\gamma^{0,0}_{P/X}(1)\bigr)=1,
+$$
+is the assertion that the trace of III.7 is computed by the residue at a
+point. The book proves that only for curves (III.7.14.1, printed p. 247). It
+is the comparison the two published class identities need before they can be
+read as statements about the trace, and it is not proved here.
+
 (N) is a normalization, and part (a) uses only (N). (R) is the substantive
 input, and part (d) is its case $\beta=1$. (B) is the second one, and part (b)
 is its consequence. Both are cases of one statement, the compatibility of the
@@ -295,9 +349,10 @@ there from the residue description of the trace in Remark III.7.14 (printed
 pp. 247--248), sign included. It proves nothing of the kind for $\dim X\ge2$:
 Remark III.7.14 says of the trace that "we know only that it exists", and its
 residue construction is stated for curves. Neither (R) nor (B) for higher
-dimension is proved in this card, and no source proving them was located in the
-two search passes recorded above. Parts (b) and (d) are therefore theorems
-relative to (R) and (B), and open with respect to the book alone. The remark
+dimension is proved in this card: the published Gysin calculus supplies their
+class-level parts, as recorded above, but not the comparison of the trace with
+the Gysin class of a point. Parts (b) and (d) are therefore theorems relative
+to (R) and (B), and open with respect to the book alone. The remark
 below records what the book does and does not determine.
 
 Write $j:Y\hookrightarrow X$ for the closed immersion. We use the normalized Serre pairing
