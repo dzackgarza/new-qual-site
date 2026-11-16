@@ -145,6 +145,36 @@ audit:
     than the falsity of a statement the card no longer makes. The rendered
     remark is also reduced to the mathematics and the citations, the sentences
     stating what is or is not published leaving it (QUAL-08).
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's findings on the second round of this batch, repaired here; every
+    event above is left as written. The pass above removed the marks of the
+    card's own argument from the rendered steps together with the process text
+    it removed, and the marks are put back where the step is not the source's:
+    step a-branches-separate and step b-resolves-after-blowup say in the step
+    that they are the card's own, and step claim-false says so of its inference
+    from the two delta invariants to non-equivalence. No statement, page,
+    citation or mathematical claim changes and no proof is added. Read again for
+    this pass in their text versions: Hartshorne, Algebraic Geometry (1977),
+    V.3 exercise 3.8 on printed p. 395, which is the page after the marker for
+    PDF p. 410 of tmp/sources/hartshorne-1977-algebraic-geometry.md, with
+    (3.9.3) and (3.9.4) between the markers for PDF pp. 408 and 409, printed
+    p. 393; the National Taiwan University Chapter V homework, Exercise 8 of §3
+    (by Yi-Heng), in tmp/sources/ntu-ag2-chapter5.md, whose heading for §3 is
+    at line 325 and which carries no page markers of its own, so its (a) and
+    (b) were read on PDF pp. 13 and 14 of the PDF beside it, and its (a) calls
+    x_1^4-x_1y a node with delta = 7 while its (b) reaches multiplicity 3 and
+    one further blowup, and its printed equation repeats the middle term as the
+    card records; and Math StackExchange question 2867504 in
+    tmp/sources/mse-2867504-hart-v38-infinitely-near-points.md, comment 5918658
+    at its line 20 computing x^4-xy with multiplicity 2 and comment 5918691 at
+    its line 21 withdrawing the earlier reply. Not read here: Egbert's entry on
+    PDF p. 284 and Yang Pi-Yeh's on printed pp. 108-109, which the earlier
+    passes read and which were not re-read; the NTU entry's guessed replacement
+    equation, which the card does not adopt; and any printing of these sources
+    other than their text versions.
 ---
 
 ::: {.problem}
@@ -265,6 +295,8 @@ remain nonsingular and disjoint. Further blowups may be used to make the
 *total* transform simple normal crossings with the older exceptional curve,
 but they occur at smooth points of the curve and contribute no further
 singular multiplicities.
+
+This step is the card's own.
 :::
 
 :::
@@ -374,6 +406,8 @@ At $(v,z)=(0,0)$ this is nonsingular because its linear part is $v$.
 These are the two points of the new exceptional divisor determined by the
 two tangent directions. Thus the strict transform has no singular point
 after this second blowup.
+
+This step is the card's own.
 :::
 
 :::
@@ -421,6 +455,8 @@ $$
 Consequently they do not have the same configuration with the same
 multiplicities, and in particular they are not equivalent in the sense of
 (3.9.4), printed p. 393: that equivalence preserves multiplicities and incidence at every step, while by (3.9.3), printed p. 393, $\delta_P$ is the sum of $\binom{r_Q}{2}$ over the infinitely near singular points, so the two values $7$ and $9$ separate the germs.
+
+The inference from the difference of the two invariants to non-equivalence is the card's own.
 :::
 
 :::
