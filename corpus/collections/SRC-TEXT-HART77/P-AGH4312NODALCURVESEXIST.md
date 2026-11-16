@@ -78,6 +78,41 @@ audit:
     remains readable at commit 574af010f7; the remark's account of Egbert's
     entry 4.3.22 is replaced by the two published proofs named above, which
     supersede it for this exercise. Nothing in the problem statement changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Later pass of this batch, on the reader's report, and four repairs of
+    rendered text against the sources. (i) Step theorem-seven-one's account of
+    similar markings left out their condition: Christ-He-Tyomkin, proof of
+    Theorem 7.1, in the text version
+    tmp/sources/christ-he-tyomkin-2020-severi-problem-arbitrary-characteristic.md
+    at line 725, fixes three different components L, L', L'' of C_0, sets
+    p := L cap L', q := L' cap L'' and r := L cap L'', and calls mu^tau
+    similar to mu for the transposition tau switching q and r only when p is
+    not in mu. The step now states that condition, with the three components
+    and the three nodes named. (ii) The quotation of the proof of Theorem 2.1
+    in G.-M. Greuel and E. Shustin, *Plane algebraic curves with prescribed
+    singularities*, dropped "(see Figure 1)" from the middle of the
+    quoted sentence without an ellipsis; it is restored, read at line 509 of
+    tmp/sources/greuel-shustin-2020-plane-curves-prescribed-singularities.md.
+    (iii) The remark's sentence "Their proof is over C, and it does not extend
+    to characteristic p as it stands" carried a judgement of the source that
+    nothing read supports; it is replaced by the theorem's own statement, "The
+    bound (26) is necessary and sufficient for the existence of a complex
+    plane irreducible curve of degree d with n nodes as its only
+    singularities", which is over C as the sentence before now says. (iv) The
+    paraphrase of Hartshorne's Remark 3.11.1 closed "in characteristic zero",
+    which the printed remark does not say: in the text version
+    tmp/sources/hartshorne-1977-algebraic-geometry.md the remark stands at
+    lines 9822-9839, between the markers of PDF pages 329 and 330, that is on
+    printed pp. 314-315, and it ends at "but a complete proof was given only
+    recently by Joe Harris" with no hypothesis on the field. The clause is
+    dropped. Checked in this pass: the three passages named, at the lines
+    given, and the four places on the card. Not read in this pass: the printed
+    book and the printed paper themselves, which were not reopened; no step
+    was re-derived, and the two other sources of the paper's degeneration
+    theorem remain unread as before.
 ---
 
 ::: {.problem}
@@ -151,7 +186,7 @@ For $\delta>\delta_d$: "If $\delta>\binom{d-1}{2}$, then $U^{\mathrm{irr}}_{d,\d
 
 For $\delta\le\delta_d$: the paper takes for $C_0$ the union of $d$ general lines, whose nodes number $\binom{d}{2}=\delta_d+(d-1)$, picks an irreducible component $L$ of $C_0$ and a $\delta$-element set $\vec\mu$ of nodes disjoint from $L$, which exists because $\delta\le\binom{d}{2}-(d-1)$; the curve $C_0\setminus\vec\mu$ is connected because $L$ meets every other component, so $\vec\mu$ is an irreducible marking, and "Thus, by Theorem 6.1 (2), $V^{\mathrm{irr}}_{g,d}$ is not empty, and hence so is $U^{\mathrm{irr}}_{d,\delta}$ by Proposition 6.3 (3)."
 
-For the irreducibility: the paper defines two markings to be similar when they differ by the transposition of two nodes cut out on a third component, and $\sim$ as the transitive closure; Lemma 7.2, printed p. 33, states that any two irreducible markings are equivalent, and Lemma 7.3, printed p. 33, that equivalent markings give points of one irreducible component of $U_{d,\delta}$. The proof then closes, printed p. 33: "by the lemmas, there exists a unique irreducible component $U\subseteq U_{d,\delta}$ that contains $[C_0;p_1,\ldots,p_\delta]$ for any irreducible marking", and any irreducible component $U'$ of $U^{\mathrm{irr}}_{d,\delta}$ has $\phi(\overline{U'})$ containing $C_0$ by Theorem 5.1, printed p. 22, so $U'$ contains such a point and $U'=U$.
+For the irreducibility: the paper fixes three different components $L,L',L''$ of $C_0$, sets $p\coloneqq L\cap L'$, $q\coloneqq L'\cap L''$ and $r\coloneqq L\cap L''$, and calls $\vec\mu^\tau$ similar to $\vec\mu$ when $\tau$ is the transposition switching $q$ and $r$ and $p\notin\mu$; $\sim$ is the transitive closure of similarity, and $\vec\mu$ is irreducible exactly when $\vec\mu^\tau$ is; Lemma 7.2, printed p. 33, states that any two irreducible markings are equivalent, and Lemma 7.3, printed p. 33, that equivalent markings give points of one irreducible component of $U_{d,\delta}$. The proof then closes, printed p. 33: "by the lemmas, there exists a unique irreducible component $U\subseteq U_{d,\delta}$ that contains $[C_0;p_1,\ldots,p_\delta]$ for any irreducible marking", and any irreducible component $U'$ of $U^{\mathrm{irr}}_{d,\delta}$ has $\phi(\overline{U'})$ containing $C_0$ by Theorem 5.1, printed p. 22, so $U'$ contains such a point and $U'=U$.
 
 :::
 
@@ -218,9 +253,9 @@ For $d=2$ one has $\delta_2=0$, and the curve is a nonsingular conic.
 The exercise is a finite case of the Severi problem, and the two published proofs of it differ in characteristic.
 Christ--He--Tyomkin, *On the Severi problem in arbitrary characteristic*, prove the Main Theorem quoted in step [](#main-theorem){.pf-ref} over any algebraically closed field; their §5 proves Theorem 5.1 and Zariski's theorem by tropical degeneration, and §7 the decorated Severi varieties.
 
-G.-M. Greuel and E. Shustin, *Plane algebraic curves with prescribed singularities*, Theorem 2.1, printed pp. 17--18, prove the statement over $\CC$ by Severi's construction, in four sentences: "given $n$ and $d$ satisfying (26), we take the union of $d$ straight lines in general position, which is a curve with $\frac{d(d-1)}{2}$ nodes (the maximum by (27)). Then choose some line and deform the curve by smoothing out all $d-1$ intersection points of this line with the other lines, obtaining an irreducible, rational curve with $\frac{(d-1)(d-2)}{2}$ nodes. Finally, we take another deformation by smoothing out $\frac{(d-1)(d-2)}{2}-n$ nodes and obtain an irreducible curve of degree $d$ with $n$ nodes as desired."
-Their bound (26) is $n\le\frac{(d-1)(d-2)}{2}$, and the deformation they use is Severi's: "the germ of the family of curves of degree $d$ having a node in a neighborhood of an arbitrary singular point of $C$, is a smooth hypersurface germ in $\OO_{\PP^2}(d)\cong\PP^{d(d+3)/2}$, and, moreover, all these germs intersect transversally at $C$", for which they cite [22, Corollary 6.3] and [30, Corollary 4.3.6]. Their proof is over $\CC$, and it does not extend to characteristic $p$ as it stands.
+G.-M. Greuel and E. Shustin, *Plane algebraic curves with prescribed singularities*, Theorem 2.1, printed pp. 17--18, prove the statement over $\CC$ by Severi's construction, in four sentences: "given $n$ and $d$ satisfying (26), we take the union of $d$ straight lines in general position, which is a curve with $\frac{d(d-1)}{2}$ nodes (the maximum by (27)). Then choose some line and deform the curve by smoothing out all $d-1$ intersection points of this line with the other lines, obtaining an irreducible, rational curve with $\frac{(d-1)(d-2)}{2}$ nodes (see Figure 1). Finally, we take another deformation by smoothing out $\frac{(d-1)(d-2)}{2}-n$ nodes and obtain an irreducible curve of degree $d$ with $n$ nodes as desired."
+Their bound (26) is $n\le\frac{(d-1)(d-2)}{2}$, and the deformation they use is Severi's: "the germ of the family of curves of degree $d$ having a node in a neighborhood of an arbitrary singular point of $C$, is a smooth hypersurface germ in $\OO_{\PP^2}(d)\cong\PP^{d(d+3)/2}$, and, moreover, all these germs intersect transversally at $C$", for which they cite [22, Corollary 6.3] and [30, Corollary 4.3.6]. Their theorem is stated for complex plane curves: "The bound (26) is necessary and sufficient for the existence of a complex plane irreducible curve of degree $d$ with $n$ nodes as its only singularities", and the argument above is its proof.
 
-Hartshorne states the same result in the text, immediately before the exercise, as Severi's: Remark 3.11.1, printed pp. 314--315, records that for all $d,r$ with $0\le r\le\frac12(d-1)(d-2)$ the set $V_{d,r}$ is "irreducible and nonempty of dimension $\frac12d(d+3)-r$, but a complete proof was given only recently by Joe Harris", in characteristic zero.
+Hartshorne states the same result in the text, immediately before the exercise, as Severi's: Remark 3.11.1, printed pp. 314--315, records that for all $d,r$ with $0\le r\le\frac12(d-1)(d-2)$ the set $V_{d,r}$ is "irreducible and nonempty of dimension $\frac12d(d+3)-r$, but a complete proof was given only recently by Joe Harris".
 
 :::
