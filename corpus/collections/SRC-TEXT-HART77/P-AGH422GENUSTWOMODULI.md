@@ -190,6 +190,17 @@ audit:
     makes of them, and Egbert's IV.2.2. The two events of this date above were
     rewritten in place by 7728785793; they are restored to the text they carried
     when written, and this event is the correction.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Two passages of this card that no reader named, found by the corpus gate on
+    this round's commit: the printed line quoted in #same-as-canonical stood as
+    "h^0(X, O_X(K_X - 2P)) = 2" in the middle of a sentence, where a TeX command
+    written in prose is read as raw TeX and reaches the page as nothing, and the
+    remark spelled the Cech complex with the accent command in the same way. The
+    quoted line is now written as mathematics and the accent as the character.
+    Neither change is to the mathematics, and no other card was touched.
 review: draft
 ---
 
@@ -390,7 +401,7 @@ h^0\bigl(\mco_X(2P)\bigr)-h^0\bigl(\mco_X(K_X-2P)\bigr)=\deg(2P)-g(X)+1=1
 $$
 with $h^0(\mco_X(2P))=h^0(\PP^1,\mco_{\PP^1}(1))=2$, so
 $h^0(\mco_X(K_X-2P))=1$, and $\deg(K_X-2P)=0$ forces $K_X\sim2P$; therefore
-$f^*\mco_{\PP^1}(1)=K_X$. The printed line "h^0(X,\mco_X(K_X-2P))=2" in that
+$f^*\mco_{\PP^1}(1)=K_X$. The printed line $h^0(X,\mco_X(K_X-2P))=2$ in that
 computation is a slip for $1$.
 
 :::
@@ -658,7 +669,7 @@ Steps [](#canonical-degree-two){.pf-ref} and
 
 
 ::: {.remark title="Published solution"}
-R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5--19.6], printed pp. 546--550, proves parts (a) and (b) by a different route: Theorem 19.5.1 (printed p. 546) is the count $2g+2$ of branch points, proved in 19.5.2 (printed pp. 546--547), which constructs the double cover branched at a prescribed even set of points as the normalization of $y^2=f(x)$ and is unique, and in 19.5.4 (printed pp. 547--548), which computes its genus as $r/2-1$ from the \v{C}ech complex of the two affine charts; Proposition 19.5.7 (printed pp. 548--549) shows that a curve of genus at least $2$ admits at most one double cover of $\PP^1$; and 19.6.2 (printed p. 550) assembles the bijection between genus-$2$ curves and double covers branched at six points. Proposition 19.5.2 is the statement of part (e)'s uniqueness, and the solution transcribes its proof.
+R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5--19.6], printed pp. 546--550, proves parts (a) and (b) by a different route: Theorem 19.5.1 (printed p. 546) is the count $2g+2$ of branch points, proved in 19.5.2 (printed pp. 546--547), which constructs the double cover branched at a prescribed even set of points as the normalization of $y^2=f(x)$ and is unique, and in 19.5.4 (printed pp. 547--548), which computes its genus as $r/2-1$ from the Čech complex of the two affine charts; Proposition 19.5.7 (printed pp. 548--549) shows that a curve of genus at least $2$ admits at most one double cover of $\PP^1$; and 19.6.2 (printed p. 550) assembles the bijection between genus-$2$ curves and double covers branched at six points. Proposition 19.5.2 is the statement of part (e)'s uniqueness, and the solution transcribes its proof.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.2, printed p. 210, classifies genus-2 curves by the six branch points of the canonical double cover, with Hurwitz $2g-2=2(-2)+6$ fixing the count.
 :::
