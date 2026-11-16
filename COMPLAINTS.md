@@ -2879,8 +2879,9 @@ entries changes.
   carried 2026-11-17, a day that had not happened. A record carries the day of the commit that lands it, so
   the five date fields say 2026-11-16, and each of the four cards has a new event of 2026-11-16 recording the
   correction. The same slip is in a body sentence: the I.7.7(b) paragraph of the 2026-11-16 correction above
-  reads "this paragraph cited it for the value until 2026-11-17", and the citation was in fact corrected on
-  2026-11-16, in `89d13d01e14` (07:13:27). The sentence is left as written, a correction being a new entry.
+  read "this paragraph cited it for the value until 2026-11-17"; that paragraph was rewritten in place by
+  `89d13d01e14` (07:13:27) and is restored to the text it had on its date, with the citation corrected as a
+  new entry of 2026-11-16.
 
 ## 2026-11-16: the third-pass corrections to the `SRC-TEXT-HAT02` entries of the 2026-11-11 item
 
