@@ -92,6 +92,9 @@ audit:
     in degree one does not make the pushforward of O(1) its degree-one
     piece. That pushforward is the Ratliff-Rush closure of I_X, which can be
     strictly larger, and the step now carries a counterexample in k[x,y].
+    The false reason is the sentence of the note of 2026-11-11 above which
+    says the identity is "justified from the degree-one piece of the Rees
+    algebra"; that note is left as written and this one is its correction.
     The step uses normality instead: P^3 is normal, so pi_* O = O by Stein
     factorization, and pi_* O(-E) is an ideal containing I_X and contained
     in the radical of I_X, which is I_X because a nonsingular curve is
