@@ -123,6 +123,20 @@ audit:
     corrected by a new event on each of those cards. Unchanged and re-checked: the statement as printed
     on p. 184, every step of the proof, and the description of the two Stack Exchange answers. Not
     claimed: a published solution of Exercise 2.C.1.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, third pass on this card: the timestamps are right, and the attribution of
+    them is wrong in two places of this date. Read again through the Stack Exchange API on 2026-11-16:
+    question 3590105 has `creation_date` **1584866748** and the accepted answer 3590397 has
+    **1584888044**; both are 2020-03-22. (1) The first `source-corrected` event of this date gives
+    "question `creation_date` 1584866748 and answer `creation_date` 1584866744", so its answer value
+    is wrong. (2) The second `source-corrected` event of this date calls 1584866744 "the question's
+    number": it is not, the question's being 1584866748, and it is neither the question's nor the
+    answer's. The repaired answer value 1584888044 in that event is correct, and the date 2020-03-22
+    stands. Nothing else changes: the statement as printed on p. 184, every step of the proof, and the
+    description of the two answers stand. The same correction is made in COMPLAINTS.md.
 ---
 
 ::: {.problem}
