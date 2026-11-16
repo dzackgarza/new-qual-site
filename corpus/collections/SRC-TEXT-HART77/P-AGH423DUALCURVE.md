@@ -137,6 +137,26 @@ audit:
     statements. The two events of this date above were rewritten in place by
     6a77ef9aab; they are restored to the text they carried when written, and
     this event is the correction.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the #121 reader's report, in the card's own paragraph of step s2
+    that gives the index of the morphism. That paragraph ended the case P in L
+    with "the image of t is x plus terms of higher order, of valuation r", which
+    is false for r >= 3: the second term is (df/dy)/(df/dx) y = -x'(y) y on the
+    branch, of the same order r-1 as the derivative it comes from, so it does not
+    vanish to higher order than x and can raise the valuation. The term is
+    -r a_r y^r against the a_r y^r of x, the image is x - y x'(y) =
+    (1-r) a_r y^r + O(y^{r+1}), and its valuation is r only because 1 - r != 0 in
+    characteristic 0, which the step's hypothesis supplies and which is what the
+    paragraph now says. The expansion itself is the card's, not a source's: the
+    card before this round carried exactly it, as h(t) - t h'(t) = (1-r) a_r t^r
+    in the coordinates of step s1 at revision 0eaf611b02^, and the repair of the
+    first pass dropped the factor. Step s9, which subtracts the d contributions of
+    X cap L, is unaffected: its line L is chosen to contain no inflection point, so
+    r = 2 there. No source was re-read for this paragraph, nothing else on the card
+    changes, and the pages and paths of the sources are those of the events above.
 review: draft
 ---
 
@@ -323,9 +343,13 @@ characteristic $0$, $x'(y)$ has order $r-1$, so
 $$
 e_P(\varphi)=r-1
 $$
-in the case $P\notin L$. In the case $P\in L$ the image of $t$ is $x$ plus terms
-of higher order, of valuation $r$, and $r=2$ at a point of $X\cap L$ that is not
-an inflection point. Part (a) of the book asks only for ramification.
+in the case $P\notin L$. In the case $P\in L$ the image of $t$ is
+$x+(\partial f/\partial y)/(\partial f/\partial x)\,y$, which on the branch is
+$x-y\,x'(y)$; writing $x(y)=a_ry^r+O(y^{r+1})$ with $a_r\ne0$, that series is
+$(1-r)a_ry^r+O(y^{r+1})$, of valuation $r$ because $r\ge2$ and $1-r\ne0$ in
+characteristic $0$. At a point of $X\cap L$ that is not an inflection point
+$r=2$, the line $L$ not being tangent to $X$. Part (a) of the book asks only for
+ramification.
 
 :::
 
