@@ -315,5 +315,5 @@ failure modes excluded by them.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.6, printed p. 288 (the base locus of the quartic system).
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.4.6, printed p. 288 (the base locus of the quartic system).
 :::

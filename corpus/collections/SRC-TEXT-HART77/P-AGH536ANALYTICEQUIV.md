@@ -45,7 +45,7 @@ audit:
     1,x,...,x^6,y,xy,x^2y,x^3y, so tau = 11; the Groebner basis claim was
     checked by hand on the three S-polynomials. Searched outside the twelve
     retained sets: Yang Pi-Yeh, Hartshorne Solutions, exercise 5.3.6, printed
-    p. 108 (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), has the completion
+    p. 108 (tmp/sources/lfwin-hartshorne-solutions.pdf), has the completion
     argument and asserts the counterexample without computation; Algebraic
     Geometry II, National Taiwan University, 2020 Spring, has no entry for
     Exercise 6 of section 3. Wall's Singular Points of Plane Curves was searched
@@ -53,6 +53,14 @@ audit:
     printed. Not checked: the Puiseux characteristic of C_1 and C_2 beyond the
     leading pair (3,7), which the card computes by the implicit-function
     theorem for C_2 and by an explicit parametrization for C_1.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The text version of the NTU Chapter V homework now exists: it is read in
+    tmp/sources/ntu-ag2-chapter5.pdf and in its MinerU text version
+    tmp/sources/ntu-ag2-chapter5.md. The event above predates that file, records
+    what was read from the PDF alone, and is left as it was dated.
 ---
 
 ::: {.problem}
@@ -397,9 +405,9 @@ isomorphic, proving that the converse fails.
 :::
 
 ::: {.remark title="Published solution"}
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.3.6, printed p. 108, gives the forward implication through completion: the strict transform's local ring splits as a direct sum of the local rings at the points over $P$, and because completion is flat and commutes with this splitting, the completed local ring determines the resolution, so analytically isomorphic germs are equivalent. It then states "consider two curves $C=(x^3+y^7=0)$ and $C'=(x^3+xy^5+y^7=0)$ over $\CC$; they are equivalent but not analytically isomorphic" with no computation. Steps [](#ambient-automorphism-lift){.pf-ref} and [](#automorphism-identifies-resolution-data){.pf-ref} give the forward implication directly from the Rees-algebra description of the blowup, and steps [](#tjurina-f1-twelve){.pf-ref} and [](#tjurina-f2-eleven){.pf-ref} compute the two Tjurina numbers $12$ and $11$ that separate the germs.
+Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.3.6, printed p. 108, gives the forward implication through completion: the strict transform's local ring splits as a direct sum of the local rings at the points over $P$, and because completion is flat and commutes with this splitting, the completed local ring determines the resolution, so analytically isomorphic germs are equivalent. It then states "consider two curves $C=(x^3+y^7=0)$ and $C'=(x^3+xy^5+y^7=0)$ over $\CC$; they are equivalent but not analytically isomorphic" with no computation. Steps [](#ambient-automorphism-lift){.pf-ref} and [](#automorphism-identifies-resolution-data){.pf-ref} give the forward implication directly from the Rees-algebra description of the blowup, and steps [](#tjurina-f1-twelve){.pf-ref} and [](#tjurina-f2-eleven){.pf-ref} compute the two Tjurina numbers $12$ and $11$ that separate the germs.
 
 Wall, *Singular Points of Plane Curves* (LMS Student Texts 63), Ch. 3, is the published source of the Puiseux-characteristic criterion used in steps [](#puiseux-characteristic-equivalence){.pf-ref} and [](#c1-c2-equivalent){.pf-ref}: equisingularity of plane branches is equivalent to equality of Puiseux characteristics, and analytic isomorphism preserves them. The book is not in `tmp/sources`; only the criterion is used, not a page.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.6, PDF p. 279: "See Wall's, *Singular Points of Plane Curves* where he proves that analytically isomorphic $\Rightarrow$ same puiseux characteristic $\Rightarrow$ equivalence in the sense of 3.9.4. Furthermore he shows that two curves are equisingular iff they have the same puiseux characteristic. However the example is then given of the two curves $C_1:y^3+x^7=0$ and $C_2:y^3+x^5y+x^7=0$ which are equisingular but not analytically isomorphic." Wall's book is not among the retained files, so both halves are citations; the pair of curves is his. Steps [](#ambient-automorphism-lift){.pf-ref} and [](#automorphism-identifies-resolution-data){.pf-ref} prove the forward implication directly, from the formal coordinate change lifting an analytic isomorphism and the Rees-algebra description of the blowup; the same two curves appear in steps [](#same-puiseux-pair){.pf-ref} and [](#c1-c2-equivalent){.pf-ref}, and the inequivalence that he asserts is step [](#not-analytically-isomorphic){.pf-ref}, by Tjurina numbers $12$ and $11$. Recorded in COMPLAINTS.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.6, PDF p. 279: "See Wall's, *Singular Points of Plane Curves* where he proves that analytically isomorphic $\Rightarrow$ same puiseux characteristic $\Rightarrow$ equivalence in the sense of 3.9.4. Furthermore he shows that two curves are equisingular iff they have the same puiseux characteristic. However the example is then given of the two curves $C_1:y^3+x^7=0$ and $C_2:y^3+x^5y+x^7=0$ which are equisingular but not analytically isomorphic." Wall's book is not among the retained files, so both halves are citations; the pair of curves is his. Steps [](#ambient-automorphism-lift){.pf-ref} and [](#automorphism-identifies-resolution-data){.pf-ref} prove the forward implication directly, from the formal coordinate change lifting an analytic isomorphism and the Rees-algebra description of the blowup; the same two curves appear in steps [](#same-puiseux-pair){.pf-ref} and [](#c1-c2-equivalent){.pf-ref}, and the inequivalence that he asserts is step [](#not-analytically-isomorphic){.pf-ref}, by Tjurina numbers $12$ and $11$. Recorded in COMPLAINTS.
 :::

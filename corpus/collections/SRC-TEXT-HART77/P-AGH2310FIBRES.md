@@ -46,6 +46,14 @@ audit:
     characteristic 2, and none can: the printed statement is false there. The
     card keeps its characteristic-two computation and the repair stays open on an
     erratum or on the owner's acceptance.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The text version of the Cais solutions now exists: it is read in
+    tmp/sources/hartshorne-solutions-cais.pdf and in its MinerU text version
+    tmp/sources/hartshorne-solutions-cais.md. The event above predates that file, records
+    what was read from the PDF alone, and is left as it was dated.
 ---
 
 ::: {.problem}
@@ -357,7 +365,7 @@ The exercise states (b) with no hypothesis on $k$ beyond algebraic closedness, a
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.10, PDF p. 23, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim's (a) reduces to $\Spec(B\otimes_A\kappa(\mathfrak p))$, decomposes $B\to B/\mathfrak pB\to(A-\mathfrak p)^{-1}(B/\mathfrak pB)$ and compares topologies after reducing to the case of a domain base and the generic point; (b) computes $k[t]/(t^2-a)$ and reads off $k\times k$ for $a\neq0$ and $k(s)[t]/(t^2-s)$ for the generic fibre.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Chapter II §3, Exercise 3.10, PDF p. 23, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim's (a) reduces to $\Spec(B\otimes_A\kappa(\mathfrak p))$, decomposes $B\to B/\mathfrak pB\to(A-\mathfrak p)^{-1}(B/\mathfrak pB)$ and compares topologies after reducing to the case of a domain base and the generic point; (b) computes $k[t]/(t^2-a)$ and reads off $k\times k$ for $a\neq0$ and $k(s)[t]/(t^2-s)$ for the generic fibre.
 The proof above is the same computation with the homeomorphism proved on closed subsets and on overlaps, and it separates the characteristic two case, where $a$ is a square and the fibre over $a\neq0$ is the one-point scheme $\Spec k[t]/((t-r)^2)$; Kim's step $k[t]/(t^2-a)\cong k\times k$ needs $\operatorname{char}k\neq2$.
 Agree on (a), on $a=0$ and on the generic fibre.
 :::

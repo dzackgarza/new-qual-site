@@ -26,7 +26,7 @@ audit:
 - event: source-checked
   by: claude
   date: 2026-11-09
-  note: 'Read III.10.2 against Hartshorne p. 275 and Dongryul Kim, Solutions to Hartshorne, pp. 194-195, text version `tmp/sources/hartshorne-solutions-kim.md`. Repaired the openness step: the card cited Hartshorne Chapter III section 10 for the openness of the smooth locus, and section III.10 contains no such statement. Steps s1-s2 now identify the smooth locus with {x : dim of Omega_{X/Y} tensor kappa(x) equals dim X - dim Y}, show that set is open by Nakayama for the coherent sheaf of relative differentials, and apply Theorem III.10.2; the fibre dimension input is Corollary III.9.6.'
+  note: 'Read III.10.2 against Hartshorne p. 275 and Dongryul Kim, Solutions to Hartshorne, pp. 194-195. Repaired the openness step: the card cited Hartshorne Chapter III section 10 for the openness of the smooth locus, and section III.10 contains no such statement. Steps s1-s2 now identify the smooth locus with {x : dim of Omega_{X/Y} tensor kappa(x) equals dim X - dim Y}, show that set is open by Nakayama for the coherent sheaf of relative differentials, and apply Theorem III.10.2; the fibre dimension input is Corollary III.9.6.'
 ---
 
 ::: {.problem}
@@ -183,5 +183,5 @@ from the base.
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §10, Exercise 10.2, PDF pp. 194--195, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he sets $S=\{x\in X:\dim_{\kappa(x)}(\Omega_{X/Y}\otimes\kappa(x))=n\}$ with $n=\dim X-\dim Y$, shows $S\supseteq X_y$ from $\Omega_{X_y/\kappa(y)}=\Omega_{X/Y}\otimes\OO_{X_y}$ and the smoothness of the fibre, shows $S$ is open by Nakayama for $\Omega_{X/Y}$ (Lemma 2.8.9, Exercise 2.5.7), and concludes smoothness on $S$ from Theorem 3.10.2, after which properness removes the image of $X\setminus S$. The proof above was repaired to this argument: its earlier step s2 cited Hartshorne, Chapter III, §10, for the openness of the smooth locus, and §III.10 contains no such result. Steps s1--s2 now identify the smooth locus with $S$ and prove $S$ open; the rest agrees with Kim.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Chapter III §10, Exercise 10.2, PDF pp. 194--195, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he sets $S=\{x\in X:\dim_{\kappa(x)}(\Omega_{X/Y}\otimes\kappa(x))=n\}$ with $n=\dim X-\dim Y$, shows $S\supseteq X_y$ from $\Omega_{X_y/\kappa(y)}=\Omega_{X/Y}\otimes\OO_{X_y}$ and the smoothness of the fibre, shows $S$ is open by Nakayama for $\Omega_{X/Y}$ (Lemma 2.8.9, Exercise 2.5.7), and concludes smoothness on $S$ from Theorem 3.10.2, after which properness removes the image of $X\setminus S$. The proof above was repaired to this argument: its earlier step s2 cited Hartshorne, Chapter III, §10, for the openness of the smooth locus, and §III.10 contains no such result. Steps s1--s2 now identify the smooth locus with $S$ and prove $S$ open; the rest agrees with Kim.
 :::

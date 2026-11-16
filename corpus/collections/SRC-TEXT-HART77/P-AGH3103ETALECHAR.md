@@ -27,7 +27,7 @@ audit:
 - event: source-checked
   by: claude
   date: 2026-11-09
-  note: 'Read III.10.3 against Hartshorne p. 275 and Dongryul Kim, Solutions to Hartshorne, pp. 195-196, text version `tmp/sources/hartshorne-solutions-kim.md`. Repaired the converse of the differential criterion: the card asserted a zero-dimensional unramified criterion without proof. Step s1b now proves it, by the vanishing of Omega_{kappa(x)/kappa(y)} (II.8.6A for separability), by dim O_{X_y,x} = trdeg = 0, and by the square-zero thickening argument of Kim, which forces the local ring of the fibre to be a field. Also removed a pf-step block whose opening line carried no label and whose content duplicated the closing step.'
+  note: 'Read III.10.3 against Hartshorne p. 275 and Dongryul Kim, Solutions to Hartshorne, pp. 195-196. Repaired the converse of the differential criterion: the card asserted a zero-dimensional unramified criterion without proof. Step s1b now proves it, by the vanishing of Omega_{kappa(x)/kappa(y)} (II.8.6A for separability), by dim O_{X_y,x} = trdeg = 0, and by the square-zero thickening argument of Kim, which forces the local ring of the fibre to be a field. Also removed a pf-step block whose opening line carried no label and whose content duplicated the closing step.'
 ---
 
 ::: {.problem}
@@ -267,5 +267,5 @@ $$
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §10, Exercise 10.3, PDF pp. 195--196, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: for (ii) implies (iii) he shows $\Omega_{X_y/\kappa(y)}=0$, hence $\Omega_{\kappa(x)/\kappa(y)}=0$ and a finite separable residue extension, and then proves the fibre reduced by the square-zero thickening: $\mathfrak m^2/\mathfrak m^4\to\Omega\otimes(A/\mathfrak m^2)\to\Omega_{(A/\mathfrak m^2)/k}\to0$ with $\Omega_{(k[\epsilon]/\epsilon^2)/k}\otimes k\cong k^{\oplus m}$ forcing $m=0$; (iii) implies (i) is then Theorem 3.10.2. The proof above now contains exactly that reducedness argument as step s1b, in place of the assertion of a "zero-dimensional unramified criterion" that it made before; (i) implies (ii) and (iii) implies (i) agree with Kim's steps.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Chapter III §10, Exercise 10.3, PDF pp. 195--196, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: for (ii) implies (iii) he shows $\Omega_{X_y/\kappa(y)}=0$, hence $\Omega_{\kappa(x)/\kappa(y)}=0$ and a finite separable residue extension, and then proves the fibre reduced by the square-zero thickening: $\mathfrak m^2/\mathfrak m^4\to\Omega\otimes(A/\mathfrak m^2)\to\Omega_{(A/\mathfrak m^2)/k}\to0$ with $\Omega_{(k[\epsilon]/\epsilon^2)/k}\otimes k\cong k^{\oplus m}$ forcing $m=0$; (iii) implies (i) is then Theorem 3.10.2. The proof above now contains exactly that reducedness argument as step s1b, in place of the assertion of a "zero-dimensional unramified criterion" that it made before; (i) implies (ii) and (iii) implies (i) agree with Kim's steps.
 :::

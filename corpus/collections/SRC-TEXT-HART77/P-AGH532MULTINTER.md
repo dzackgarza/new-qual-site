@@ -228,7 +228,7 @@ iterated intersection-multiplicity formula.
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.2, PDF p. 274: $\pi^*D\cdot\pi^*C=C\cdot D$, $E\cdot\pi^*C=0$, $E^2=-1$, then $\pi^*C=\widetilde C+rE$ from (3.6) and
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.2, PDF p. 274: $\pi^*D\cdot\pi^*C=C\cdot D$, $E\cdot\pi^*C=0$, $E^2=-1$, then $\pi^*C=\widetilde C+rE$ from (3.6) and
 $$
 \widetilde C\cdot\widetilde D=(\pi^*C-rE)\cdot(\pi^*D-r'E)=C\cdot D-rr',
 $$

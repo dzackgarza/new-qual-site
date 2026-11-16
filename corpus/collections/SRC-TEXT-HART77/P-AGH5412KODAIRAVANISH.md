@@ -303,7 +303,7 @@ $X$: (i) $D$ is very ample; (ii) $D$ is ample; (iii) $D^2>0$, and for every line
 which is the step used above. What his entry does not supply is the existence of a nonsingular member $C\in\abs{D}$, which step
 [](#nonsingular-curve-in-class){.pf-ref} takes from (4.11) and V.4.8.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.4.12, printed p. 111, is defective at its second sentence:
+Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, Solution 5.4.12, printed p. 111, is defective at its second sentence:
 "Clearly we have $H^0(X,\OO_X)=k$, $H^1(X,\OO_X)=0$. Then for any ample divisor $D$, it is very ample by
 theorem 4.11., we have $H^0(X,\mathcal L(D))=k$." The inference is false. A very ample divisor $D$ on the
 cubic surface embeds $X$ in $\PP^{h^0(\mathcal L(D))-1}$, so $h^0(\mathcal L(D))\ge3$: the image spans that

@@ -115,6 +115,14 @@ audit:
     The earlier events were written against the byte-identical copy
     tmp/sources/reid-chapters.md (md5 78b2b6692c5b9d22c6ab793b0fe5132d for both),
     which is the name those readings were taken under; no reading changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The text version of the NTU Chapter V homework now exists: it is read in
+    tmp/sources/ntu-ag2-chapter5.pdf and in its MinerU text version
+    tmp/sources/ntu-ag2-chapter5.md. The event above predates that file, records
+    what was read from the PDF alone, and is left as it was dated.
 ---
 
 ::: {.problem}
@@ -135,7 +143,7 @@ curves. So the exercise needs the hypothesis that $f$ be dominant, equivalently
 that $\dim f(X)=2$; it holds automatically when $f$ is surjective, and in the
 contraction setting where the exercise is used. Under that hypothesis the
 following argument proves $Y^2<0$. The published proof of the birational case is M. Reid's Theorem
-A.7(1), *Chapters on Algebraic Surfaces*, arXiv:alg-geom/9602006v1, statement on
+A.7(1), *Chapters on Algebraic Surfaces*, text version `tmp/sources/reid-chapters-algebraic-surfaces.md`, arXiv:alg-geom/9602006v1, statement on
 printed p. 29 and proof on printed pp. 30--31, applied to the single curve $Y$;
 the passage from the exercise's $f$ to Reid's birational hypothesis is the
 Stein-factorization step of the closing remark, which is the card's own and not
@@ -377,5 +385,5 @@ h_*\OO_X
 $$
 Since $h_*\OO_X=\OO_{X'}$ both inclusions are equalities, $\nu_*\OO_{\widetilde X'}=\OO_{X'}$, and a finite dominant $\nu$ with that property is an isomorphism. The target is thus normal, which is the setting Reid's proof works in. Nothing here needs $\deg f$ to be one, and it need not be. What the fibre condition $f^{-1}(P)=Y$ gives is $\#g^{-1}(P)=1$ --- $g^{-1}(P)$ contains $h(Y)$, and a second point $Q$ of it would put the whole nonempty fibre $h^{-1}(Q)$ into $f^{-1}(P)$ --- and one point over one point of the target of a finite morphism says nothing about its degree. An earlier version of this remark read $\#g^{-1}(P)=1$ as $\deg g=1$ and with it $\deg f=1$; that inference is false, and here is a counterexample to it. Let $\sigma:\PP^2\to\PP^2$ be $\sigma(x:y:z)=(-x:-y:z)$ over a field of characteristic $\ne2$. Its fixed locus is not the single point $O$: it is $O=(0:0:1)$, which is an isolated fixed point, together with the whole line $z=0$, which $\sigma$ fixes pointwise, since $(-x:-y:0)=(x:y:0)$ in $\PP^2$; for $z\ne0$ the equations $-x=\lambda x$, $-y=\lambda y$, $z=\lambda z$ force $\lambda=1$ and then $x=y=0$. What the counterexample uses is that $O$ is a fixed point, so that its orbit is $\{O\}$ and the fibre of $\PP^2\to\PP^2/\sigma$ over the image of $O$ is the single point $O$, and that $\sigma$ is not the identity, so that the quotient map is generically two-to-one. Let $X=\Bl_O\PP^2$ with exceptional curve $E$, and let $f$ be $X\to\PP^2\to\PP^2/\sigma$. Then $f^{-1}(P)=E$ exactly, while $\deg f=2$ and $f$ is not birational. Reid's theorem applied to the Stein factor of that $f$, which is $X\to\PP^2$, still gives $E^2=-1<0$. Read in `tmp/sources/reid-chapters-algebraic-surfaces.md` (the whole paper) and checked on printed pp. 29--31 of `tmp/sources/reid-chapters-algebraic-surfaces.pdf`, whose folios are its PDF pages. His proof is written, "for simplicity", for a bunch with connected union contracted to a single point with the morphism an isomorphism outside it (printed p. 30); the steps above reach the same conclusion by Hodge index and need neither the connectedness nor the single-point hypothesis.
 
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.7, printed p. 300, has one sentence: the answer follows from V.5.4 since $X$ is assumed nonsingular and $X_0$ need not be. That is a cross-reference to a defective entry, not a proof. *Algebraic Geometry II*, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 7, printed p. 21, aims at the same estimate but ends "$0=\dots\ge mY^2\Rightarrow Y^2=0$", which does not follow and is false for a contracted curve; nothing in it is used here.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.5.7, printed p. 300, has one sentence: the answer follows from V.5.4 since $X$ is assumed nonsingular and $X_0$ need not be. That is a cross-reference to a defective entry, not a proof. *Algebraic Geometry II*, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 7, printed p. 21, aims at the same estimate but ends "$0=\dots\ge mY^2\Rightarrow Y^2=0$", which does not follow and is false for a contracted curve; nothing in it is used here.
 :::

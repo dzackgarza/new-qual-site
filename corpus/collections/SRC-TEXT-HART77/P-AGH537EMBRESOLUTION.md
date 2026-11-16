@@ -43,10 +43,10 @@ audit:
     v^3(u^3+uv+v^2), whose tangent cone is v^2 and which is smooth at the
     origin, so delta = 3 + 1 = 4 as the card says. Searched outside the twelve
     retained sets: NTU 2020, Exercise 7 of section 3, PDF pp. 12-13
-    (tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`), has resolutions, the same five delta
+    (tmp/sources/ntu-ag2-chapter5.pdf), has resolutions, the same five delta
     values 4,4,3,4,4 and the same equivalence classes; Yang Pi-Yeh,
     Hartshorne Solutions, printed pp. 108-109
-    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), writes the transforms
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), writes the transforms
     without delta or equivalence. Not checked: whether a general ground field
     lacks the square root of -1 used in the chart of (e); the book assumes k
     algebraically closed, and over such a field the three points on the
@@ -562,7 +562,7 @@ equivalence classification for every singularity in the exercise.
 ::: {.remark title="Published solution"}
 Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 7 of §3 (solution by Ping-Hsun Chuang), PDF pp. 12--13, gives an embedded resolution for each of (a)--(e) with the first two blowups written out in coordinates, reads $\delta_P$ off as $\frac12\cdot3\cdot2+\frac12\cdot2\cdot1=4$ for (a), (b), (d) and $\frac12\cdot3\cdot2=3$ for (c), and $4$ for (e), and concludes from the resolution graphs that the singularities of (a), (b), (d) are equivalent while (c) and (e) are different from the others. The five values are the ones in the table of step [](#summary-table){.pf-ref}, and the equivalence classes are the ones of steps [](#abd-equivalent){.pf-ref}, [](#c-not-equivalent){.pf-ref} and [](#e-not-equivalent){.pf-ref}.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.3.7, printed pp. 108--109, writes the successive strict transforms for the same five germs and, in the case of (b), records the tangent line of the second point, but does not compute $\delta_P$ or decide the equivalence question for any of them.
+Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.3.7, printed pp. 108--109, writes the successive strict transforms for the same five germs and, in the case of (b), records the tangent line of the second point, but does not compute $\delta_P$ or decide the equivalence question for any of them.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.7, PDF pp. 279--282, is a Singular session: it prints the chart trees from `resolve`, has no $\delta_P$, and ends "these commands should show that (d) is not equivalent". Steps [](#a-first-blowup){.pf-ref} to [](#e-not-equivalent){.pf-ref} carry out the resolutions and the comparisons by hand.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.7, PDF pp. 279--282, is a Singular session: it prints the chart trees from `resolve`, has no $\delta_P$, and ends "these commands should show that (d) is not equivalent". Steps [](#a-first-blowup){.pf-ref} to [](#e-not-equivalent){.pf-ref} carry out the resolutions and the comparisons by hand.
 :::

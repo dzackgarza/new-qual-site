@@ -33,6 +33,16 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The text versions of the two sources cited above now exist: the Cais solutions are
+    read in tmp/sources/hartshorne-solutions-cais.pdf and in its MinerU text version
+    tmp/sources/hartshorne-solutions-cais.md, and the Saglam--Chris solutions in tmp/sources/hartshorne-solutions-saglam-chris.pdf and
+    in its MinerU text version tmp/sources/hartshorne-solutions-saglam-chris.md. The event above
+    predates both files, records what was read from the PDFs alone, and
+    is left as it was dated.
 ---
 
 ::: {.problem}

@@ -27,7 +27,7 @@ audit:
 - event: source-checked
   by: claude
   date: 2026-11-09
-  note: 'Read III.12.5 against Hartshorne p. 291 and Dongryul Kim, Solutions to Hartshorne, p. 216, text version `tmp/sources/hartshorne-solutions-kim.md`, whose solution opens by saying that E must have rank at least 2. The statement is now kept as printed, without the rank hypothesis, and the solution names the rank-one counterexample P(E) = Y and proves the corrected statement for rank at least 2.'
+  note: 'Read III.12.5 against Hartshorne p. 291 and Dongryul Kim, Solutions to Hartshorne, p. 216, whose solution opens by saying that E must have rank at least 2. The statement is now kept as printed, without the rank hypothesis, and the solution names the rank-one counterexample P(E) = Y and proves the corrected statement for rank at least 2.'
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
@@ -277,5 +277,5 @@ Step [](#s5){.pf-ref} proves the asserted formula.
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §12, Exercise 12.5, PDF p. 216, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he opens by writing "(Obviously, E is supposed to be of rank at least 2)", fixes the fibre degree by comparing the closed sets $\{\deg\scr L_y\ge d\}$ and $\{\deg\scr L_y\le -d\}$ on connected $Y$, applies Corollary 12.9, and reduces to $\scr L$ with $f_*\scr L=\OO_Y$ exactly as in Exercise 12.4. The corrected statement he proves is the one proved above: the printed formula needs $\operatorname{rank}\mce\ge2$, and for $\operatorname{rank}\mce=1$ one has $\PP(\mce)=Y$. Step s1 replaces his degree argument by the constancy of the Euler characteristic, which gives the same conclusion.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Chapter III §12, Exercise 12.5, PDF p. 216, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he opens by writing "(Obviously, E is supposed to be of rank at least 2)", fixes the fibre degree by comparing the closed sets $\{\deg\scr L_y\ge d\}$ and $\{\deg\scr L_y\le -d\}$ on connected $Y$, applies Corollary 12.9, and reduces to $\scr L$ with $f_*\scr L=\OO_Y$ exactly as in Exercise 12.4. The corrected statement he proves is the one proved above: the printed formula needs $\operatorname{rank}\mce\ge2$, and for $\operatorname{rank}\mce=1$ one has $\PP(\mce)=Y$. Step s1 replaces his degree argument by the constancy of the Euler characteristic, which gives the same conclusion.
 :::

@@ -23,7 +23,7 @@ audit:
 - event: source-checked
   by: claude
   date: 2026-11-09
-  note: 'Read III.9.6 against Hartshorne p. 267 and Dongryul Kim, Solutions to Hartshorne, pp. 182-183, text version `tmp/sources/hartshorne-solutions-kim.md`. The book numbers the result used by the hint Lemma 9.12 (the lemma of Hironaka), not Proposition 9.12; the two citations were corrected. Verified that II.8.4 defines a complete intersection by codimension many generators, that II.8.4(a) gives the forward direction, and that II.8.4(b) gives projective normality of the nonsingular complete intersection Y-prime, which is hypothesis (3) of the lemma.'
+  note: 'Read III.9.6 against Hartshorne p. 267 and Dongryul Kim, Solutions to Hartshorne, pp. 182-183. The book numbers the result used by the hint Lemma 9.12 (the lemma of Hironaka), not Proposition 9.12; the two citations were corrected. Verified that II.8.4 defines a complete intersection by codimension many generators, that II.8.4(a) gives the forward direction, and that II.8.4(b) gives projective normality of the nonsingular complete intersection Y-prime, which is hypothesis (3) of the lemma.'
 ---
 
 ::: {.problem}
@@ -329,5 +329,5 @@ Step [](#s1){.pf-ref} proves the forward implication, and steps [](#s2){.pf-ref}
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §9, Exercise 9.6, PDF pp. 182--183, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he applies Lemma 9.12 to the affine cones, using projective normality of $Y'$ from Exercise II.8.4(b), obtains $I_{Y'}=\{g\in k[x_0,\dots,x_{n-1}]: g+x_nh\in I_Y\}$ without saturation, lifts the equations, and then separates $Y$ from the complete intersection $\tilde Y$ by comparing Hilbert polynomials and using that a Cohen--Macaulay scheme has no embedded points. The proof above uses the same Lemma 9.12 application (steps s2--s5) and replaces Kim's Hilbert-polynomial comparison by the graded Nakayama argument of step s7; both prove $I_Y=(g_1,\dots,g_c)$.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Chapter III §9, Exercise 9.6, PDF pp. 182--183, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he applies Lemma 9.12 to the affine cones, using projective normality of $Y'$ from Exercise II.8.4(b), obtains $I_{Y'}=\{g\in k[x_0,\dots,x_{n-1}]: g+x_nh\in I_Y\}$ without saturation, lifts the equations, and then separates $Y$ from the complete intersection $\tilde Y$ by comparing Hilbert polynomials and using that a Cohen--Macaulay scheme has no embedded points. The proof above uses the same Lemma 9.12 application (steps s2--s5) and replaces Kim's Hilbert-polynomial comparison by the graded Nakayama argument of step s7; both prove $I_Y=(g_1,\dots,g_c)$.
 :::

@@ -25,7 +25,7 @@ audit:
   date: 2026-11-11
   note: >-
     Read Mark Haiman, Varieties as Schemes (Berkeley Math 256, March 2019), 8.8
-    with the proof in 8.10 (PDF p. 18, text version `tmp/sources/haiman-varieties-as-schemes.md`), which establishes the functorial
+    with the proof in 8.10 (PDF p. 18), which establishes the functorial
     equivalence between classical varieties over an algebraically closed
     field and reduced algebraic schemes over it, hence the bijection of Hom
     sets that part (c) asks for. Rechecked the card's own construction: for

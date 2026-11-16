@@ -36,6 +36,14 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The text version of the Saglam--Chris solutions now exists: it is read in
+    tmp/sources/hartshorne-solutions-saglam-chris.pdf and in its MinerU text version
+    tmp/sources/hartshorne-solutions-saglam-chris.md. The event above predates that file, records
+    what was read from the PDF alone, and is left as it was dated.
 ---
 
 ::: {.problem}

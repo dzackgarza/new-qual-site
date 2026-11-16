@@ -41,6 +41,14 @@ audit:
     vanishing. As the earlier note records, no retained solution set covers this
     exercise, so the proof is derived, and the external inputs are the theorem
     cards [[T-COHSVAN]] and [[T-MODSERRE]] with II.5.17.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The text version of the Cais solutions now exists: it is read in
+    tmp/sources/hartshorne-solutions-cais.pdf and in its MinerU text version
+    tmp/sources/hartshorne-solutions-cais.md. The event above predates that file, records
+    what was read from the PDF alone, and is left as it was dated.
 ---
 
 ::: {.problem}

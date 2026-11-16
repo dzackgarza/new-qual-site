@@ -44,12 +44,12 @@ audit:
     applied through Cayley-Bacharach for a complete intersection of two cubics.
     Searched outside the twelve retained sets for part (b): Algebraic Geometry
     II, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 4
-    part (b), PDF p. 16 (tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`), gives the
+    part (b), PDF p. 16 (tmp/sources/ntu-ag2-chapter5.pdf), gives the
     configuration P, Q, U, the lines PQ, P_0R, TU, P_0V, QU, PV and the
     collinearity of P_0, X, Y from part (a), concluding
     (P+Q)+U = T+U = W = P+Y = P+(Q+U); Yang Pi-Yeh, Hartshorne Solutions,
     exercise 5.4.4, printed p. 109
-    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), runs a different
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), runs a different
     configuration with the same shape of argument. Both use part (a) for the
     collinearity and the chord-and-tangent definition for the sums, which is
     what the card's steps do. Not checked: whether the associativity of the
@@ -468,11 +468,11 @@ that lemma, in the configuration of the published solution, to prove associativi
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.4.4, PDF pp. 286--287. For (a) he has the argument: the cubic $PP'\cup QQ'\cup RR'$ meets $C$ in the nine points, the cubic $L\cup L'\cup P''Q''$ contains eight of them, so "by Cayley--Bacharach, as in 4.4.a" the ninth $R''$ lies on $P''Q''$. Steps [](#nine-point-divisor){.pf-ref}, [](#eight-points-on-reducible-cubic){.pf-ref} and [](#cayley-bacharach-collinear-reduced){.pf-ref} are that argument, and steps [](#collinear-with-multiplicity){.pf-ref} and [](#singular-intersections-by-specialization){.pf-ref} add the cases of tangent lines and coincident points, which he does not treat. For (b), the associativity, his whole solution is "See Tate, Silverman: Rational Points. It's in the first chapter. They even give nice pictures": a citation, with no argument; steps [](#group-law-via-star-and-iota){.pf-ref} to [](#associativity){.pf-ref} derive it from part (a) by the usual two-collinear-triples configuration. Recorded in COMPLAINTS for (b).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.4.4, PDF pp. 286--287. For (a) he has the argument: the cubic $PP'\cup QQ'\cup RR'$ meets $C$ in the nine points, the cubic $L\cup L'\cup P''Q''$ contains eight of them, so "by Cayley--Bacharach, as in 4.4.a" the ninth $R''$ lies on $P''Q''$. Steps [](#nine-point-divisor){.pf-ref}, [](#eight-points-on-reducible-cubic){.pf-ref} and [](#cayley-bacharach-collinear-reduced){.pf-ref} are that argument, and steps [](#collinear-with-multiplicity){.pf-ref} and [](#singular-intersections-by-specialization){.pf-ref} add the cases of tangent lines and coincident points, which he does not treat. For (b), the associativity, his whole solution is "See Tate, Silverman: Rational Points. It's in the first chapter. They even give nice pictures": a citation, with no argument; steps [](#group-law-via-star-and-iota){.pf-ref} to [](#associativity){.pf-ref} derive it from part (a) by the usual two-collinear-triples configuration. Recorded in COMPLAINTS for (b).
 :::
 
 ::: {.remark title="Published solutions"}
 Part (b) has published arguments. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 4(b) (solution by Tzu-Yang Chou), PDF p. 16, takes three points $P,Q,U$, sets $PQ\cap C=P,Q,R$; $P_0R\cap C=P_0,R,T$; $TU\cap C=T,U,V$; $P_0V\cap C=P_0,V,W$; $QU\cap C=Q,U,X$; $PV\cap C=P,V,Y$, applies part (a) to the two triples of lines $PQR$ and $TUV$ to conclude that $P_0,X,Y$ are collinear, and reads off
 $$(P+Q)+U=T+U=W=P+Y=P+(Q+U).$$
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.4.4, printed p. 109, runs a different configuration for the same conclusion: with $PQ$ meeting $C$ at $R$, $P_0R$ at $T$, $ST$ at $U$ and $P_0U$ at $V$, it applies (a) to the lines $QPR$ and $SUT$ to get $P_0,B,A$ collinear, whence $S+Q=A$ and $P+A=V$, so $(P+Q)+S=P+(Q+S)$.
+Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.4.4, printed p. 109, runs a different configuration for the same conclusion: with $PQ$ meeting $C$ at $R$, $P_0R$ at $T$, $ST$ at $U$ and $P_0U$ at $V$, it applies (a) to the lines $QPR$ and $SUT$ to get $P_0,B,A$ collinear, whence $S+Q=A$ and $P+A=V$, so $(P+Q)+S=P+(Q+S)$.
 :::

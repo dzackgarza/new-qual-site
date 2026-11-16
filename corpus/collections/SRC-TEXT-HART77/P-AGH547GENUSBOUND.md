@@ -716,5 +716,5 @@ three residue classes modulo $3$.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.7, printed p. 288 (the genus bound for curves on a cubic surface).
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.4.7, printed p. 288 (the genus bound for curves on a cubic surface).
 :::
