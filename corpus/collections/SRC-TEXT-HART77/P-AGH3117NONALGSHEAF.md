@@ -143,6 +143,39 @@ audit:
     addition is stated here. Checked in this pass: this card's audit trail in
     git, commit by commit. Not checked: no step was re-derived, and the pages
     named were not re-read.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Transcription pass for issue #121. Read at the cited places: Dongryul
+    Kim, Exercise 3.11.7, PDF p. 213, text version
+    tmp/sources/hartshorne-solutions-kim.md, and Yang Pi-Yeh, Solution
+    3.11.7, printed p. 82, text version tmp/sources/lfwin-hartshorne-solutions.md;
+    the latter was read in the PDF at the page named, since it is the page
+    the earlier passes cite. Checked against the book in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed p. N
+    is PDF p. N+15: III.11.7(a) as printed on p. 281, and Exercise II.9.6
+    which it invokes. What the pass establishes. Kim proves, and Yang
+    repeats, the inverse limit Pic Xhat = lim Pic X_n from Exercise II.9.6,
+    the exact sequence of Exercise III.4.6, the vanishing of its H^2 term
+    on a curve, the surjectivity of Pic Xhat -> Pic Y, and the
+    identification of the successive kernels with H^1(X_n, I^{n-1}); Kim
+    gives them as the first cohomology of a coherent sheaf, Yang as
+    k[x_0,x_1,x_2]/(f^{n-1}) and its projective limit. Neither proves the
+    printed claim that the kernel is a k-vector space: Kim's parenthesis
+    says the kernel "is the inverse limit of k-vector spaces, hence is a
+    k-vector space", which is the assertion under proof and fails when the
+    transitions are not linear, and Yang reads it off a completion. On the
+    card, the steps that transcribe those two are s2, s3, s4, s7 and s8
+    with the source named at each; the dimension count of s4, the
+    identification K_r over K_{r+1} = V_r in s3, the characteristic-zero
+    logarithm of s5, the characteristic-p counterexample of s6 and the
+    passage from one non-generated twist to none in s8 are marked on the
+    card as the card's own, and the 2026-11-16 COMPLAINTS record names the
+    part of the printed statement that has no published proof. Not
+    checked: no source outside the two named was searched in this pass,
+    and no step was re-derived.
+
 ---
 
 ::: {.problem}
@@ -175,6 +208,8 @@ There is one characteristic issue in part (a). The successive kernels below are 
 If $\operatorname{char}k=0$, the $I$-adic logarithm identifies that formal group with an additive $k$-vector space, giving the assertion in the source literally.
 In positive characteristic the assertion that the *group itself* is a $k$-vector space is false; step [](#s6){.pf-ref} gives an explicit counterexample.
 The surjectivity in (a), and all of (b)--(c), hold in every characteristic.
+
+The steps below name the published source they transcribe.  Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Exercise 3.11.7, PDF p. 213, gives $\Pic\hat X=\varprojlim_n\Pic X_n$, the exact sequence of Exercise III.4.6, the vanishing of its $H^2$ term, the growth of its $H^1$ term, and hence the surjectivity of $\Pic\hat X\to\Pic Y$; Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), text version `tmp/sources/lfwin-hartshorne-solutions.md`, Solution 3.11.7, printed p. 82, writes the same argument and identifies the successive kernels.  Neither source proves the printed claim of the exercise, that the kernel is a $k$-vector space: Kim asserts it in a parenthetical inference from an inverse limit of $k$-vector spaces, which is false in characteristic $p$, and Yang reads it off a completion.  The characteristic-free statement is the filtered one of steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}; steps [](#s5){.pf-ref} and [](#s6){.pf-ref} are the card's own, as they say.
 
 ::: pf
 
@@ -248,7 +283,11 @@ $$
 \cong
 \mco_Y(-rd).
 $$
-The Picard sequence for a square-zero thickening ([Stacks Project, Tag 0C6R](https://stacks.math.columbia.edu/tag/0C6R)) contains
+Kim, Exercise 3.11.7(a), PDF p. 213, writes this sequence as the one of Exercise III.4.6,
+$$
+H^1\bigl(Y,\OO_Y(-dn)\bigr)\longrightarrow\Pic X_{n+1}\longrightarrow\Pic X_n\longrightarrow H^2\bigl(Y,\OO_Y(-dn)\bigr),
+$$
+and reads off from $H^2=0$ that every class on $X_n$ lifts to $X_{n+1}$.  The Picard sequence for a square-zero thickening ([Stacks Project, Tag 0C6R](https://stacks.math.columbia.edu/tag/0C6R)) contains
 $$
 H^0(X_{r+1},\mco_{X_{r+1}}^\times)
 \longrightarrow
@@ -269,7 +308,7 @@ Since $Y$ has dimension $1$,
 $$
 H^2\bigl(Y,\mco_Y(-rd)\bigr)=0.
 $$
-Exactness therefore gives the displayed short exact sequence.
+Exactness therefore gives the displayed short exact sequence.  Kim states the sequence for a nilpotent ideal rather than a square-zero one, and justifies that by the finite geometric series $(1+a)^{-1}=1-a+a^2-\cdots$, the ideal $\mci$ being nilpotent on $X_r$.
 :::
 
 :::
@@ -302,7 +341,7 @@ As in [[P-AGH3115PICFORMAL|Exercise III.11.5]], Exercise II.9.6 gives
 $$
 \Pic\hat X\cong\varprojlim_r\Pic X_r.
 $$
-Every transition map in this inverse system is surjective by step [](#s2){.pf-ref}. Starting with any class in
+Kim, Exercise 3.11.7(a), PDF p. 213, cites Exercise II.9.6 for this inverse limit too, and concludes the surjectivity from the same two facts: "Because $Y$ is 1-dimensional, we have that the $H^2$ term vanishes.  On the other hand, as $n$ gets larger, the term $H^1(Y,\OO_Y(-dn))$ gets larger.  This shows that we can always lift a line bundle over $Y_n$ to a line bundle over $Y_{n+1}$."  Yang Pi-Yeh, Solution 3.11.7(a), printed p. 82, gives the same two sentences and the same conclusion.  The identification $K_r/K_{r+1}\cong V_r$ is the card's, and uses the surjectivity of the transitions: every transition map in this inverse system is surjective by step [](#s2){.pf-ref}. Starting with any class in
 $$
 \Pic X_1=\Pic Y,
 $$
@@ -337,6 +376,8 @@ rd^2+\frac{d(d-3)}2.
 $$
 
 ::: pf-proof
+Kim, Exercise 3.11.7(a), PDF p. 213, states only that "as $n$ gets larger, the term $H^1(Y,\OO_Y(-dn))$ gets larger", and Yang, Solution 3.11.7(a), printed p. 82, identifies the successive kernels as $H^1(X_n,\mci^{n-1})=k[x_0,x_1,x_2]/(f^{n-1})$ and calls their projective limit the completion of $k[x_0,x_1,x_2]$ at $(f)$.  The dimension count below, which makes the growth explicit, is the card's.
+
 Let $F$ be the homogeneous equation of $Y$.
 Twisting the hypersurface sequence by $-rd$ gives
 $$
@@ -393,6 +434,8 @@ In particular $V_r\ne0$ for all sufficiently large $r$, so the filtration in ste
 If $\operatorname{char}k=0$, then $K$ is an infinite-dimensional $k$-vector space.
 
 ::: pf-proof
+No source read for this card proves this step.  Kim, Exercise 3.11.7(a), PDF p. 213, asserts the $k$-vector-space structure in a parenthesis --- the kernel "is the inverse limit of $k$-vector spaces, hence is a $k$-vector space" --- which is the assertion under proof, and Yang, Solution 3.11.7(a), printed p. 82, deduces it from the identification with a completion.  The argument below is the card's.
+
 Let
 $$
 \hat\mci=\ker(\mco_{\hat X}\to\mco_Y).
@@ -474,6 +517,8 @@ This proves the vector-space assertion in part (a) when $\operatorname{char}k=0$
 In characteristic $p>0$, the assertion that $K$ itself is a $k$-vector space is false in general.
 
 ::: pf-proof
+No source read for this card states or proves the failure in positive characteristic; the computation below is the card's.
+
 Take
 $$
 Y=\{z=0\}\subseteq\PP_k^2,
@@ -554,7 +599,7 @@ The correct characteristic-free statement is the filtered statement of steps
 There is a nonalgebraizable invertible sheaf on $\hat X$.
 
 ::: pf-proof
-By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, $K$ is nonzero in every characteristic.
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, $K$ is nonzero in every characteristic.  Kim, Exercise 3.11.7(b), PDF p. 213, reaches the same conclusion: since $\Pic X=\ZZ$ and $\Pic\hat X$ is "too large", a line bundle not coming from $\OO_X(n)$ is not algebraizable.
 Choose a nontrivial class
 $$
 [\mathfrak L]\in K.
@@ -624,7 +669,7 @@ Condition (i) of [[P-AGH3116ALGEBRAIZABLE|Exercise III.11.6(b)]] says that *ever
 Step [](#s7){.pf-ref} gives an invertible, hence locally free, counterexample.
 Therefore condition (i) is false.
 
-Exercise III.11.6(b) proves that condition (i) is equivalent to condition (ii).
+Exercise III.11.6(b) proves that condition (i) is equivalent to condition (ii).  Kim, Exercise 3.11.7(c), PDF p. 213, draws the same conclusion in one sentence: "By the equivalence of (i) and (ii) in part (b) of Exercise 3.11.6, we see that there are locally free sheaves $\mathfrak F$ on $\hat X$ such that no twist $\mathfrak F(n)$ is generated by global sections."  The passage from one non-generated twist to none at all, which follows because $\OO_{\hat X}(r)$ is globally generated, is the card's.
 Hence condition (ii) is false.
 Consequently there is a locally free sheaf $\mathfrak F$ on $\hat X$ for which no integer $n_0$ has the property that
 $$
@@ -666,5 +711,7 @@ Step [](#s7){.pf-ref} proves (b), and step [](#s8){.pf-ref} proves (c).
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Chapter III §11, Exercise 11.7, PDF p. 213, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he writes $\Pic\hat X=\varprojlim\Pic Y_n$, uses the exact sequence of Exercise III.4.6 with $H^2=0$ and $H^1(\OO_Y(-dn))$ growing, concludes that $\Pic\hat X\to\Pic Y$ is surjective with an infinite-dimensional kernel, and remarks that the kernel of $\Pic Y_n\to\Pic Y_1$ is a $k$-vector space. That last remark is the point the proof above corrects: it holds in characteristic zero (step s5, by the $I$-adic logarithm) but fails in characteristic $p$, where step s6 exhibits a line bundle of infinite order in the kernel on the line $z=0$. Kim's parts (b) and (c) agree with steps s7 and s8.
+Two published solutions are transcribed on the card, and neither proves the printed claim of (a).  Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §11, Exercise 11.7, text version `tmp/sources/hartshorne-solutions-kim.md`, PDF p. 213, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he writes $\Pic\hat X=\varprojlim_n\Pic Y_n$ from Exercise II.9.6, the exact sequence of Exercise III.4.6, notes that its $H^2$ term vanishes because $Y$ is a curve and that its $H^1$ term grows, concludes that $\Pic\hat X\to\Pic Y$ is surjective with kernel "an infinite-dimensional $k$-vector space", and adds in a parenthesis the argument he intends for the vector-space structure: the kernel of $\Pic Y_n\to\Pic Y_1$ is the first cohomology of a coherent sheaf, "Now the kernel of $\Pic\hat X\to\Pic Y$ is the inverse limit of $k$-vector spaces, hence is a $k$-vector space".  Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.11.7, text version `tmp/sources/lfwin-hartshorne-solutions.md`, printed p. 82, runs the same argument and writes the kernel as $\varprojlim k[x_0,x_1,x_2]/(f^{n-1})$, "the completion of $k[x_0,x_1,x_2]$ at $(f)$, hence infinite dimensional".
+
+The parenthetical inference is the false step in characteristic $p$: an inverse limit of $k$-vector spaces with non-linear transition maps is not a $k$-vector space, and the kernel of $\Pic X_r\to\Pic X_s$ is a filtered formal group, not an additive one.  Step [](#s6){.pf-ref} exhibits a line bundle of infinite order in the kernel on the line $z=0$.  In characteristic zero step [](#s5){.pf-ref} makes Kim's conclusion true by the $I$-adic logarithm, and that argument is the card's: no published source read here gives it.  Kim's (b) and (c) agree with steps [](#s7){.pf-ref} and [](#s8){.pf-ref}.
 :::
