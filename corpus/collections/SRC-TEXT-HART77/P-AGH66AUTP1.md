@@ -32,10 +32,6 @@ audit:
     route: an automorphism of P^1 carrying phi(infty) back to infty
     restricts to an automorphism of A^1, whose coordinate-ring automorphism
     has x -> ax+b because degrees multiply under composition.
-    The page given above for Lemma 9.24 is wrong: the lemma is on printed
-    p. 118, and Example 9.25, which states the conclusion in the form used
-    here, is on printed p. 119. Both were re-read at those folios in the
-    PDF, `tmp/sources/milne-fields-and-galois-theory.pdf`.
 - event: solution-written
   by: claude
   date: 2026-11-16
@@ -163,6 +159,23 @@ audit:
     that event stands above it. The note is a dated record and is not
     touched; the order is the one f2ec3544b1 gave the two events, which added
     both. Nothing else on the card changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121 on in-place edits to dated events; one
+    record is restored to the text it was committed with, and nothing in the
+    problem, the solution or the pages changes. Commit 5ff1108be9 (committer
+    date 2026-11-16 04:23:37) appended four lines to the 2026-11-11
+    source-checked note above: that the page given there for Lemma 9.24 is
+    wrong, the lemma being on printed p. 118 and Example 9.25 on printed
+    p. 119. A record dated five days before that commit keeps the text of its
+    day, so the four lines are removed and the note ends where its author
+    ended it. The correction is on record: the 2026-11-16 solution-written
+    event cites Lemma 9.24 at printed p. 118 and Example 9.25 at printed
+    p. 119 for the two steps it names, and the published-solution remark
+    gives both pages with the text version
+    tmp/sources/milne-fields-and-galois-theory.md. No page was re-read.
 
 ---
 
