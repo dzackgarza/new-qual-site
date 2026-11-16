@@ -110,6 +110,27 @@ audit:
     Z = V(y_1) and (0:1:0:..) x (0:1:0:..), whose zeroth column and zeroth row
     both vanish; both witnesses are valid, and the two files agree on one.
     (4) The every-column-every-row reading of what is true is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Three points on step s2 and the remark, from checks made on this pass. (1)
+    Step s2 said that the identification "does not depend on which standard
+    chart of PP^n carries U_alpha or which of PP^m carries V_beta ... and an
+    affine variety's coordinate ring is the same on any open set that carries
+    it". The last clause is false as stated: an open subset of an affine
+    variety has its own coordinate ring, k[x, 1/x] for D(x) in A^1 against
+    k[x]. What is true, and what the sentence needs, is that the affine product
+    is determined by the two affine varieties themselves, through their
+    coordinate rings, and not by the projective charts that carry them; the
+    sentence now says that. (2) The remark's witness refutes Bertram's display
+    inside his own hypothesis at line 227, which asks that Y and Z be defined
+    by homogeneous prime ideals: V(x_1) and V(y_1) are prime, and the remark
+    now says so. (3) The zeroth row of that witness is the second factor only
+    because a_0 = 1 there; in general it is a_0 b, and
+    G_j(a_0 b) = a_0^{deg G_j} G_j(b) = 0 with b in Z. The event of 2026-11-16
+    above says "the second factor" of the example it has just given, where
+    a_0 = 1, and this note records the general form.
 
 ---
 
@@ -192,7 +213,7 @@ U_\alpha\times V_\beta
 $$
 is open in $X\times Y$.
 On the corresponding Segre chart $D_+(z_{ij})$, the row-and-column formulas of step [](#s1){.pf-ref} identify this open with the affine product of $U_\alpha$ and $V_\beta$.
-That identification is with the abstract affine product of the two affine varieties, and so does not depend on which standard chart of $\PP^n$ carries $U_\alpha$ or which of $\PP^m$ carries $V_\beta$: the formulas are morphisms of the locally closed sets and are inverse to each other, and an affine variety's coordinate ring is the same on any open set that carries it.
+That identification is with the abstract affine product of the two affine varieties, and so does not depend on which standard chart of $\PP^n$ carries $U_\alpha$ or which of $\PP^m$ carries $V_\beta$: the formulas are morphisms of the locally closed sets and are inverse to each other, and the affine product is determined by the two affine varieties themselves, through their coordinate rings, not by the projective charts that carry them.
 It is therefore irreducible by [[P-AGH315AFFPRODUCT]].
 
 Any two nonempty members $U_\alpha\times V_\beta$ and $U_{\alpha'}\times V_{\beta'}$ intersect: irreducibility of $X$ gives
@@ -300,7 +321,7 @@ The published argument is Aaron Bertram, *Algebraic Geometry* (Math 6130, Univer
 $$
 Y\times Z=V(\langle F_i(x_{00},\ldots,x_{m0}),\ G_j(x_{00},\ldots,x_{0n})\rangle),
 $$
-which holds each $F_i$ in the zeroth column and each $G_j$ in the zeroth row only, so that every point of the Segre variety with $a_0=b_0=0$ satisfies it: $F_i$ and $G_j$ are homogeneous of positive degree, so both sides vanish at the origin of their column and row. Such a point need not lie in $Y\times Z$: for $Y=V(x_1)\subseteq\PP^m$ and $Z=V(y_1)\subseteq\PP^n$ with $m,n\ge1$, the point $(0:1:0:\cdots:0)\times(0:1:0:\cdots:0)$ has $a_0=b_0=0$, so its zeroth column and zeroth row vanish and it satisfies the display, while it lies outside $Y\times Z$ because its first factor has $x_1\ne0$. The statement that is true holds each $F_i$ under the substitution in every column and each $G_j$ in every row, since on the image of the Segre map a relation $F_i(a)=0$ is equivalent to $b_j^{d_i}F_i(a)=0$ for each nonzero $b_j$. What the source therefore publishes and what was checked against this card is the open case it states last, $U\times V=Y\times Z-\pi_2^{-1}(Z-V)-\pi_1^{-1}(Y-U)$, which is part (a) once $Y\times Z$ is known to be a variety, and the universality of the two projective spaces; parts (a) and (b) for subvarieties are steps [](#s2){.pf-ref} and [](#s3){.pf-ref} here, and part (c) for quasi-projective factors is step [](#s4){.pf-ref} together with the irreducibility of $X\times Y$ that makes it an object of Hartshorne's category, which is step [](#s2){.pf-ref} and is in no source found.
+which holds each $F_i$ in the zeroth column and each $G_j$ in the zeroth row only, so that every point of the Segre variety with $a_0=b_0=0$ satisfies it: $F_i$ and $G_j$ are homogeneous of positive degree, so both sides vanish at the origin of their column and row. Such a point need not lie in $Y\times Z$: for $Y=V(x_1)\subseteq\PP^m$ and $Z=V(y_1)\subseteq\PP^n$ with $m,n\ge1$, both ideals prime, so that the example meets the hypothesis of his sentence, the point $(0:1:0:\cdots:0)\times(0:1:0:\cdots:0)$ has $a_0=b_0=0$, so its zeroth column and zeroth row vanish and it satisfies the display, while it lies outside $Y\times Z$ because its first factor has $x_1\ne0$. The statement that is true holds each $F_i$ under the substitution in every column and each $G_j$ in every row, since on the image of the Segre map a relation $F_i(a)=0$ is equivalent to $b_j^{d_i}F_i(a)=0$ for each nonzero $b_j$. What the source therefore publishes and what was checked against this card is the open case it states last, $U\times V=Y\times Z-\pi_2^{-1}(Z-V)-\pi_1^{-1}(Y-U)$, which is part (a) once $Y\times Z$ is known to be a variety, and the universality of the two projective spaces; parts (a) and (b) for subvarieties are steps [](#s2){.pf-ref} and [](#s3){.pf-ref} here, and part (c) for quasi-projective factors is step [](#s4){.pf-ref} together with the irreducibility of $X\times Y$ that makes it an object of Hartshorne's category, which is step [](#s2){.pf-ref} and is in no source found.
 
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), text version `tmp/sources/hartshorne-solutions-borcherds.md`, gives no solution to 3.16.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.16, PDF p. 14, text version `tmp/sources/hartshorne-solutions-troiani.md`: for (a) and (b) he writes $X=Z(\mathfrak a)$, $Y=Z(\mathfrak b)$ and forms, for $f_1\in\mathfrak a$ and $f_2\in\mathfrak b$, the polynomial $g(\{z_{ij}\})=\sum_{i,j}\alpha_{ij}z_{ij}$ from the expansion of $f_1(x)f_2(y)$, so that $f_1(P_1)f_2(P_2)=0$ exactly when $g(\psi(P_1,P_2))=0$; he does not treat (c).
