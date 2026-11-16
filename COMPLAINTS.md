@@ -3546,43 +3546,28 @@ exercise's statement was re-read against the book in
 printed p. 407, V.4.8 on printed pp. 407--408, V.4.10 on printed p. 408 and V.4.11 on printed
 p. 408, with Proposition 4.8 on printed pp. 401--402, Theorem 4.9 on printed pp. 402--403,
 Proposition 4.10 and Remark 4.10.1 on printed pp. 403--405, Theorem 4.11 and Corollary 4.13 on
-printed p. 406, Theorem V.1.9 on printed p. 364, and Bertini's theorem as II.8.18 on printed p. 179 for hyperplane
-sections and as Corollary III.10.9 on printed p. 274 in characteristic $0$. This record of this date
-was corrected in place on a reader's report; each correction is stated at the card it concerns.
+printed p. 406, Theorem V.1.9 on printed p. 364 and Bertini's theorem II.8.18 on printed p. 179.
 What follows is, per card, the part that still has no published proof, and the defects of the
 sources found while transcribing them.
 
 **V.4.10, `P-AGH5410NUMINEQ` (2026-11-16).** Two published arguments reach the inequality
-$a^2\ge\sum b_i^2$, and each orders the variables its own way. Math StackExchange 2475661, answer
-2476483 by Dap, in `tmp/sources/mse-2475661-hart-v410-freshman-calculus.md`, orders them increasingly,
-and in that order its weak hypotheses $a\ge b_5+b_6$ and $2a\ge b_2+\cdots+b_6$ are the book's own
-strict ones read at the two largest variables and at the sum omitting the smallest. Its four
-properties of a maximiser (either $b_2+\cdots+b_6=2a$ or $b_5+b_6=a$, and $b_1=b_2$, $b_5\le a/2$,
-$b_5=b_4$) are each proved by a one-clause increase; its Case 1 prints $4b_4^2$ for the five equal
-terms $5b_4^2$ of its own maximiser while reporting at both endpoints the values of
-$5b_4^2+(a-b_4)^2$; and its equalities $b_2=b_3=b_4$ (Case 1) and $b_2+b_3+b_4=a$ (Case 2) are stated
-with the reason that otherwise $b_3$ or $b_2$ could be increased. Its Case 2 is stated for
-$\frac a3\le b_4\le\frac a2$, which is exactly where its range
-$a-2b_4\le b_2\le\frac12(a-b_4)$ for $b_2$ is nonempty, and its second subcase is the maximiser
-$(0,0,\frac a2,\frac a2,\frac a2,\frac a2)$ that it lists. The National Taiwan University *Algebraic
-Geometry II* (2020 Spring), Chapter V §4 Exercise 10 by Shuang-Yen Lee, printed p. 17 of
-`tmp/sources/ntu-ag2-chapter5.md`, orders them decreasingly. Its first case is carried out at the two
-endpoint values of the quadratic in $b_2$, but its opening move, increasing $b_3,b_4,b_5$ until
-$b_1+b_2=b_3+b_4+b_5$, is available only while $b_1\le2b_2$ and fails at $(10,1,1,1,1,1)$, where the
-three entries cannot sum to $11$ under the ordering. Its second case compares the vertex
-$\frac13(b_2+b_3+b_4+b_5)$ of a downward quadratic with the midpoint $\frac12(b_3+b_4+b_5)$ of its
-range; the comparison is correct, because $2b_2\le b_3+b_4+b_5$ follows from
-$b_1+b_2\le b_3+b_4+b_5$ and $b_1\ge b_2$, and the printed line carries a factor $2$ too large on the
-right-hand side, which does not change the sign, the constant $\ast$ not being needed for it.
-**Still without a published proof: the two reductions of the first answer** ($b_2=b_3=b_4$ and
-$b_2+b_3+b_4=a$, each resting on its one-clause reason) **and the range of the second answer's first
-case.** The card states both, names the source's slips, and adds no proof of either. Corrected in
-place in this item: an earlier version sorted the variables decreasingly while transcribing the
-increasing answer; it called the first answer's Case 2 empty for $b_4>\frac a3$, which is false in the
-increasing order; it called that answer's Case 0 forward reference a defect, whereas the answer says
-its later cases do not depend on Case 0; and it read the second answer's comparison as a misidentified
-vertex. It also called the $b_6$ and $b_1$ increases open, which the card proves, and did not name the
-$b_2/b_3$ reductions, which is the reduction actually missing.
+$a^2\ge\sum b_i^2$, and both compress their reductions. Math StackExchange 2475661, answer 2476483
+by Dap, in `tmp/sources/mse-2475661-hart-v410-freshman-calculus.md`, maximises $\sum b_i^2$ over the
+feasible set for fixed $a$; its four claims about a maximiser ("otherwise $b_6$ can be increased",
+$b_1=b_2$, $b_5\le a/2$, $b_5=b_4$) are one-clause assertions, its Case 0 refers forward to its
+Cases 1 and 2 for part of itself, its Case 1 prints $4b_4^2$ for the five equal terms $5b_4^2$ of
+the maximiser it displays while reporting at both endpoints the values of $5b_4^2+(a-b_4)^2$, and
+its Case 2 is stated for $\frac a3\le b_4\le\frac a2$ although the ordering of a maximiser allows
+$b_4=\frac a3$ only. The National Taiwan University *Algebraic Geometry II* (2020 Spring), Chapter V
+§4 Exercise 10 by Shuang-Yen Lee, printed p. 17 of `tmp/sources/ntu-ag2-chapter5.md`, completes one
+of its two cases, checking both endpoint values of the quadratic in $b_2$; in the other it leaves
+the constant term unwritten, as $\ast$, and its printed line identifying the vertex has
+$\frac13(2b_2-(b_3+b_4+b_5))$ on the right where the left side is $\frac13(b_2-2(b_3+b_4+b_5))$,
+since the two differ by $\frac13b_2$. **Still without a published proof: a written-out derivation of
+the monotone reductions** (that increasing $b_6$, or $b_1$, or $b_3$ preserves the constraints and
+increases $\sum b_i^2$), and the second case's reduction to $b_1+b_2=b_3+b_4+b_5$, whose constant
+term neither source computes. The card transcribes both arguments as they stand and names these
+three defects at the steps they occur; it adds no proof of them.
 
 **V.4.11, `P-AGH5411WEYLGROUPS` (2026-11-16).** Part (a) is complete in Math StackExchange 200840,
 answer 247553 by user26857, in `tmp/sources/mse-200840-symmetric-group-presentation.md`, whose coset
@@ -3591,31 +3576,24 @@ Chapter V §4 Exercise 11 by Pei-Hsuan Chang, printed p. 18, which checks the Co
 the images of $x_1,\ldots,x_5$ and of $y$ from a list of the action of the quadratic transformation on
 the $27$ lines; the list gives $21$ of the $27$ images, the other six being forced by $y^2=1$, and it
 verifies no incidence preservation, taking the element to be in $G$ because it is the quadratic
-transformation; the generation of $G$ that makes $\Phi$ surjective is the book's Proposition 4.10 and
-Remark 4.10.1, printed pp. 403--405, not the source's own. Part (c): I. V. Dolgachev, *Topics in
-Classical Algebraic Geometry* (27 September 2010), Corollary 8.2.16, printed p. 262, computes
-$\#W(\mathbf E_6)=27\cdot16\cdot120=51840$ for the reflection group of the $\mathbf E_6$ lattice from
-the stabilizer $W(\mathbf E_5)$ of an exceptional vector and the count $27$ of exceptional vectors
-(Proposition 8.2.15, printed p. 261), and Proposition 9.1.3, printed p. 321, gives the same order as
-$72\cdot6!$ from transitivity on sixers; the book's Remark 4.10.1, printed pp. 404--405, gives
-$\#G=27\cdot16\cdot10\cdot6\cdot2=51840$. **Still without a published proof: the inequality
-$\#\mathbf E_6\le51840$**, that is, the equality of Hartshorne's presented group with that reflection
-group; in the literature it is the faithfulness of the geometric representation (Humphreys,
-*Reflection Groups and Coxeter Groups*, §5.4), which is not one of this batch's sources and was not
-read. What the sources do give is the lower bound: the reflections in a root basis satisfy the
-diagram relations, so the presentation maps onto $W(\mathbf E_6)$, and with part (b) it follows that
-$\#\mathbf E_6\ge\#G=51840$. The two published attacks on the order of the presented group are
-partial. Answer 4736813 by KReiser to Math StackExchange 4583421, in
-`tmp/sources/mse-4583421-coxeter-e6-word-processing.md`, bounds $\mathbf E_6$ by the two coset
+transformation; the surjectivity it asserts is the book's, not its own ("the proof of proposition
+V.4.10 in the textbook says ..."). Part (c) is published: I. V. Dolgachev, *Topics in Classical
+Algebraic Geometry* (27 September 2010), Corollary 8.2.16, printed p. 262, gives
+$\#W(\mathbf E_6)=27\cdot16\cdot120=51840$ from the stabilizer $W(\mathbf E_5)$ of an exceptional
+vector and the count $27$ of exceptional vectors (Proposition 8.2.15, printed p. 261), and
+Proposition 9.1.3, printed p. 321, gives $72\cdot6!$ from transitivity on sixers; the book's Remark
+4.10.1, printed pp. 404--405, gives $\#G=27\cdot16\cdot10\cdot6\cdot2=51840$. **Still without a
+published proof: the order of the abstract group by an argument that does not pass through the
+geometric representation.** The identification of Hartshorne's presentation with the reflection
+group $W(\mathbf E_6)$ is the faithfulness of the geometric representation, cited on the card to
+Humphreys, *Reflection Groups and Coxeter Groups*, §5.4, and not verified here; the two published
+attacks on the abstract group are partial. Answer 4736813 by KReiser to Math StackExchange 4583421,
+in `tmp/sources/mse-4583421-coxeter-e6-word-processing.md`, bounds $\mathbf E_6$ by the two coset
 counts $120\cdot16\cdot27$ and says of their verification "This is actually the meat of the claim:
 proving this shows that there are at most this many right coset representatives. I will skip
 recording this in the post, it is somewhat tedious"; its two coset graphs are images in the text
 version and were not read. Answer 4736825 by Jyrki Lahtonen on the same page is one paragraph, citing
 the $72$ roots and the type $A_5$ of the stabilizer of the highest root rather than computing them.
-Corrected in place in this item: an earlier version called the order of the abstract group open and
-put the gap at "an argument that does not pass through the geometric representation", while the card
-presented part (c) as proved by citing Humphreys; the gap is the inequality above, and the card now
-states it.
 
 **V.4.7, `P-AGH547GENUSBOUND` (2026-11-16).** The bound is complete in the NTU Chapter V §4 Exercise
 7 by Yi-Tsung Wang, printed pp. 16--17: after $2p_a(D)-2=D\cdot(D+K_X)$ it reduces to
@@ -3626,41 +3604,37 @@ holds with the correct adjunction formula and fails by $2$ with the printed one)
 family the two multiplicities are interchanged, so that vector has degree $d+2$ and not $d$, while
 the vector with $\frac{d+1}{3}$ on $e_1,\ldots,e_4$ and $\frac{d-2}{3}$ on $e_5,e_6$ has the degree
 and the genus it reports; and it asserts, without argument, that each listed class is achieved by an
-irreducible nonsingular curve, leaving $d=4$ aside with "For $d=4$, I don't know". The card supplies
-the curves from published statements: Corollary 4.13(a),(b) of the book, printed p. 406, for the
-classes of the first three families and for the one of degree $5$, whose ampleness inequalities hold
-as the card checks; and at $d=4$ the class
-$H+F_{56}=4\ell-(e_1+e_2+e_3+e_4)-2(e_5+e_6)$, which meets all $27$ lines nonnegatively — $0$ at
-$F_{56}$ alone — and has square $4$, so it satisfies condition (c) of Exercise V.4.8, whose
-sufficiency is recorded on `P-AGH548IRREDCLASSES` from Dolgachev's Theorem 8.2.19, Harbourne's
-Corollary II.3, Theorem III.1(a) and Lemma II.6(b), and Bertini's theorem in characteristic $0$.
-**No part of this exercise is left open.** Corrected in place in this item: an earlier version called
-$d=4$ open because the maximising class is not ample and Corollary 4.13 does not reach it; that is
-true of Corollary 4.13 and false of the exercise, since condition (c) covers that class.
+irreducible nonsingular curve. The card supplies that last step from the book's Corollary 4.13(a),(b),
+printed p. 406, checking the ampleness inequalities for each family, which holds for every degree the
+source lists except $d=4$. **Still without a published proof: the attainment at $d=4$.** The source
+writes "For $d=4$, I don't know" and states its conclusion as holding for every $d>0$ "possibly
+except $d=4$". Corollary 4.13 does not reach it: the maximising class of degree $4$ is
+$H+F_{56}=4\ell-(e_1+e_2+e_3+e_4)-2(e_5+e_6)$, and $(H+F_{56})\cdot F_{56}=4-2-2=0$, so no
+maximising class of degree $4$ displayed by the source is ample, and the exercise's second request at
+$d=4$ is open.
 
-**V.4.8, `P-AGH548IRREDCLASSES` (2026-11-16).** All three alternatives are covered in both directions.
-Necessity: Dolgachev's Lemma 8.1.3 and its proof, printed p. 248, whose adjunction computation gives
-$C^2\ge-2$ and $C\cong\PP^1$ for an irreducible curve of negative self-intersection, with $-K$ ample
-removing $C^2=-2$; Theorem 4.9 of the book, printed pp. 402--403, reaches the same conclusion
-directly; the branch $C^2=0$ is the same adjunction computation, which the lemma does not state.
-Sufficiency of (c): Dolgachev's Theorem 8.2.19, printed p. 265, makes $D$ numerically effective from
-$D\cdot L\ge0$ on the $27$ lines; Harbourne's Corollary II.3, preprint p. 3, makes it effective;
-Theorem III.1(a), preprint p. 7, makes its system base point free because $-K\cdot D=D\cdot H\ge2$,
-the last inequality being Hodge index with $D^2>0$; Lemma II.6(b), preprint p. 4, makes a general
-section reduced and irreducible because $D^2>0$; and Bertini's theorem in Corollary III.10.9 of the
-book, printed p. 274, makes it nonsingular. Sufficiency of (b): the classes of degree $2$ with square
-$0$ are $H-L$ for the $27$ lines $L$, an enumeration of the solutions of $3a-\sum b_i=2$ and
-$a^2-\sum b_i^2=0$ that the card carries out, and $(H-L)\cdot M=1-L\cdot M\ge0$ for each of the $27$
-lines $M$, so Theorem 8.2.19 makes the class numerically effective, Corollary II.3 effective, Theorem
-III.1(a) base point free because $-K\cdot D=2$, and Lemma II.6(a) with $-K\cdot D=2r$ gives $r=1$, so
-the class is that of a reduced irreducible curve of degree $2$ and genus $0$, a nonsingular plane
-conic. **Still without a published proof: nonsingularity in characteristic $p>0$** for a class of the
-third alternative, where Lemma II.6(b) gives only a reduced irreducible member and Bertini's theorem
-fails, as Remark 10.9.3 of the book, printed p. 275, records. Corrected in place in this item: an
-earlier version called the converse of (b) open on the ground that the numerical effectivity of those
-classes is in neither source, which was false; and it cited Bertini's theorem II.8.18, printed
-p. 179, a statement about hyperplane sections, for a class that need only be numerically effective and
-big.
+**V.4.8, `P-AGH548IRREDCLASSES` (2026-11-16).** Alternatives (a) and (c) are covered in both
+directions, and alternative (b) in the direction from existence to the conic description.
+Necessity: Brian Harbourne, *Anticanonical Rational Surfaces* (24 January 1996,
+arXiv:alg-geom/9509001v2), and I. V. Dolgachev's Lemma 8.1.3, printed p. 248, whose adjunction
+computation gives $C^2\ge-2$ and $C\cong\PP^1$ for an irreducible curve of negative
+self-intersection, with $-K_S$ ample removing $C^2=-2$; Theorem 4.9 of the book, printed pp. 402--403,
+reaches the same conclusion directly. Sufficiency of (c): Dolgachev's Theorem 8.2.19, printed p. 265,
+makes $D$ numerically effective from $D\cdot L\ge0$ on the $27$ lines; Harbourne's Corollary II.3,
+preprint p. 3, makes it effective; Theorem III.1(a), preprint p. 7, makes its system base point free
+because $-K_S\cdot D=D\cdot H\ge2$, the last inequality being Hodge index with $D^2>0$; Lemma
+II.6(b), preprint p. 4, makes a general section reduced and irreducible because $D^2>0$; and
+Bertini's theorem, II.8.18 of the book, printed p. 179, makes it nonsingular. Two reservations on
+that chain: Dolgachev's Lemma 8.1.3 treats $C^2<0$ only, so the branch $C^2=0$, which the card
+needs for alternative (b), is the same computation applied where the lemma does not state it; and
+his Theorem 8.2.19's proof leaves the degrees $8$ and $9$ to the reader, the card using degree $3$.
+**Still without a published proof: the converse for alternative (b)**, that every class of degree
+$2$ with $D^2=0$ on the cubic surface contains an irreducible nonsingular conic. Harbourne's Lemma
+II.6(a) would give a reduced irreducible member of that pencil once the class is known to be
+numerically effective, and the numerical effectivity of those classes is in neither source read
+here: they are the $27$ classes $\ell-e_i$, $2\ell-e_i-e_j-e_k-e_l$ and $H-e_i$, and no published
+argument that all $27$ meet every of the $27$ lines nonnegatively was located. No proof of the case
+was added to the card, which names it as not established.
 
 **Uncertainty.** Searched, in this batch: the four briefs' named sources, the book's Chapter V §4 with
 V.1 and II.8.18, and, for the two open parts, the two Math StackExchange pages of the V.4.11 brief.
@@ -3788,15 +3762,13 @@ for the parts named above, and each card's remark states what its sources do and
 
 ## 2026-11-16: the Chapter V cubic-surface record's commits, and what the shared index carried
 
-The record of this date headed "`SRC-TEXT-HART77` #121, the Chapter V cubic-surface batch" reached
-main inside `fec3a4ad2e`, another chat's commit on its V.4.3 card, whose message does not name this
-record. It was written before any of the four card commits of this batch and says of them, in its
-last paragraph, that four commits of this date touch the four cards; they are `10189ea4af` on
-`P-AGH5410NUMINEQ`, `1d0129567a` on `P-AGH5411WEYLGROUPS`, `eaa960ebff` on `P-AGH547GENUSBOUND` and
-`7b55f0a571` on `P-AGH548IRREDCLASSES`, and nothing in this record supersedes the other. The second
-pass of this date, on a reader's report, is in the four commits `461b5341d2` on `P-AGH5410NUMINEQ`,
-`65de959ff7` on `P-AGH5411WEYLGROUPS`, `61b0374b86` on `P-AGH547GENUSBOUND` and `c28efb047f` on
-`P-AGH548IRREDCLASSES`, and the corrections it made are stated in the batch record itself.
+The record of this date headed "`SRC-TEXT-HART77` #121, the Chapter V cubic-surface batch" was
+committed by another chat's commit `67cf232856`, which also carried that chat's IV.6.9 card and whose
+message does not name this record. It was written before any of the four card commits of this batch
+and says of them, in its last paragraph, that four commits of this date touch the four cards; they
+are `10189ea4af` on `P-AGH5410NUMINEQ`, `1d0129567a` on `P-AGH5411WEYLGROUPS`, `eaa960ebff` on
+`P-AGH547GENUSBOUND` and `7b55f0a571` on `P-AGH548IRREDCLASSES`, and nothing in this record supersedes
+the other.
 
 Two facts about those commits are recorded here rather than left to the report. First, `1d0129567a`
 carries, beside its card, another chat's staged edit to `P-AGH4422FAMILYOVERAFFINELINE` (IV.4.22):
@@ -3921,3 +3893,21 @@ What the round's rewrite added, and this report rejects, is its account of tom D
 **Repair.** `P-AGH5111FINITEAUT` in `99c5921b21`, a commit whose message names `P-AGH374COHOMCLASS` and not this card (`QUAL-07`; the change is the card's, the message is not); `P-AGH5210CANONSCROLL` in `80f15489e8`; `P-AGH525INVARIANTE` in `2c94a2860e`; `P-AGH528STABLEBUNDLE` in `ae24fc116e`; the restoration of the three `§V.3` records and this record in the COMPLAINTS commit that carries it, which changes no card. Nothing here supersedes the earlier entries of this item for these cards beyond the points named above, and the open parts under [#121](https://github.com/dzackgarza/new-qual-site/issues/121) are unchanged.
 
 **Uncertainty.** Read for this report, in their text versions under `tmp/sources/`: `mse-4449474-hart-v111a-finite-automorphisms.md` (answer 4775583, the three component displays and the closing display), `bragg-2015-automorphisms-of-curves.md` (Proof 2, both paragraphs), `reid-chapters-algebraic-surfaces.md` (§2.8 Theorem with (2.8.1), printed p. 19; §2.9, printed p. 20; §2.10, printed pp. 20--21), `hartshorne-1977-algebraic-geometry.md` (V.1.11 printed p. 368, the printed hints, Corollary 2.18(b) and its proof under the marker for PDF page 395, Corollary 2.19 and its proof under that for PDF page 396), `gunning-1967-vector-bundles-riemann-surfaces-pp69-92.md` (§(c) with Lemma 14 and the paragraph after it, Lemma 15 and Theorem 14; its OCR corrupts most displays, so the statements were taken from its sentences and the mathematics checked on the cards), `lange-narasimhan-1983-maximal-subbundles.md` (Proposition 1.1, printed p. 57, Corollary 1.2, printed p. 58, and its standing hypothesis of characteristic zero), and `lange-1984-higher-secant-varieties-nagata.md` (§1 Theorem, §2 Theorem and the Lemma, with the reduction to a quotient of degree $d>3$). The PDF beside Lange's text version has no text layer, so the reading of printed p. 267 as "$d\ge3$" that the earlier record of this date records was not re-read here and nothing on the card now turns on it. Not read: Nagata's paper, behind an automated-access check; and no published proof of V.1.11(a) for a surface with a component of negative $K_X$-degree, of V.2.8(a) in rank above two, of V.2.5(a), (b) or (c) in positive characteristic, or of V.2.10's restriction isomorphism was located.
+
+## 2026-11-16: the Chapter V cubic-surface batch's records restored to the text they were introduced with, and the reader's second report on V.4.7, V.4.8, V.4.10 and V.4.11
+
+**Object and need.** The four cards `P-AGH547GENUSBOUND` (V.4.7), `P-AGH548IRREDCLASSES` (V.4.8), `P-AGH5410NUMINEQ` (V.4.10) and `P-AGH5411WEYLGROUPS` (V.4.11), and the records of this date that reported the round which transcribed them. A local reader read that round against the sources and the book and did not accept it.
+
+**The records restored.** The round's brief stated that a record of the day then in progress may be corrected in place, which is not `QUAL-11`: a dated record states what its session found that day, and a correction is a new record. `3634c65e5b` rewrote four records of this date in place under that brief: this batch's record, its four paragraph items, the record of the batch's commits, and, outside the batch, the V.4.3 record and the elliptic-ruled-surface record. The last two are restored in `3cc64286bb` and `db470b07ac`, each with its corrections in a record of its own; the batch record and the commits record are restored here, whole, to the text `67cf232856` wrote, and their corrections are stated below. Two facts about that commit's message. It names only the cubic-surface record and it changed four records, which is `QUAL-07`. And its replacement of the record's provenance is false: `67cf232856` is the commit that added the record, its parent `e472d9344d` carrying none, and its message names the IV.6.9 card; the rewrite's "reached main inside `fec3a4ad2e`" is withdrawn with the text. The commits record's rewrite added that this round's corrections "are stated in the batch record itself", which the restoration makes false; they are stated here.
+
+**V.4.10, `P-AGH5410NUMINEQ`.** Two of the restored record's readings of the first answer are wrong, and the record's open parts are wrong. Its Case 2 is stated for $\frac a3\le b_4\le\frac a2$ because that is exactly where the answer's own range $a-2b_4\le b_2\le\frac12(a-b_4)$ for $b_2$ is nonempty, so it is not a case stated "although the ordering of a maximiser allows $b_4=\frac a3$ only", and its second subcase is the maximiser $(0,0,\frac a2,\frac a2,\frac a2,\frac a2)$ that the answer lists. Its Case 0 does refer forward, but that is not a defect: the answer says its later cases do not depend on Case 0. What is open, against the restored record, is neither the monotone increases nor either of the two reductions, and it is not the first answer's argument: the increases of $b_6$ and of $b_1$ are on the card in the answer's one clause each, and so are the reductions $b_2=b_3=b_4$ and $b_2+b_3+b_4=a$, which are complete as the answer states them. At a maximiser with $b_5+b_6=a$ the second constraint has slack $a-(b_2+b_3+b_4)\ge a-3b_4\ge0$, so increasing a smaller one of $b_2,b_3$ raises $\sum b_i^2$ while keeping the ordering and the constraints; in the case $b_4\ge\frac a3$ the same increase is available up to $b_4$ because $3b_4\le\frac32a\le2a$, and if all three are equal and their sum below $a$ then $b_4<\frac a3$, which that case excludes. What is open is the range of the second answer's first case, which runs only while $b_1\le2b_2$ and fails at $(10,1,1,1,1,1)$; the first answer's maximisation proves the exercise without it. Four defects of the card, found in this report and repaired. The set $M$ of step `maximiser` carried $0<b_1$ where the answer has $0\le b_1$, so it excluded the answer's own maximiser $(0,0,0,0,0,a)$ and was not closed; it now carries the answer's order. The vector of step `case-large` was justified by "$b_2=b_3$", which the displayed vector does not satisfy, its third entry being $a-b_4-b_2$; it is now justified by $b_1=b_2$, $b_5=b_4$ and $b_6=a-b_4$ from step `maximiser` together with $b_2+b_3+b_4=a$. The claim of step `second-argument` said the inequality holds by the second argument without qualification, while that argument's first case is unavailable beyond $b_1\le2b_2$; the claim now carries that range, and its proof's clause that the increase of $b_3,b_4,b_5$ "is available only while $b_3\le b_2$", true of every datum and so no condition, is replaced by the condition that holds. And the NTU comparison line on printed p. 17 is described as printed, in place of both records' readings: its fraction $\frac{-\frac12(b_2+b_3+b_4+b_5)}{-\frac34\cdot2}$ is the vertex $b_1^{*}=\frac13(b_2+b_3+b_4+b_5)$, so the printed left side is $b_1^{*}-(b_3+b_4+b_5)=\frac13\left(b_2-2(b_3+b_4+b_5)\right)$, negative at every datum and not the printed right side, while the printed right side $\frac13(2b_2-(b_3+b_4+b_5))$ is $2b_1^{*}-(b_3+b_4+b_5)$, twice the midpoint comparison the proof uses; the slip is the doubled denominator $-\frac34\cdot2$ where $-\frac34$ is meant, and with it the two sides agree and carry the sign of $2b_2-(b_3+b_4+b_5)$. The restored record's "the two differ by $\frac13b_2$" and the rewrite's "a factor $2$ too large on the right-hand side" are both false of the printed line.
+
+**V.4.11, `P-AGH5411WEYLGROUPS`.** The restored record calls part (a) complete in answer 247553, and it is. Its open part, "the order of the abstract group by an argument that does not pass through the geometric representation", is the inequality $\cardinality{\mathbf E_6}\le51840$, which is what the card states, so nothing moved from open to proved: a surjection onto the reflection group of order $51840$ gives the other inequality, and the two orders are equal exactly when the geometric representation is injective. The second round's remark said "the same page's part (a)" of the NTU entry, whose part (b) is the page's subject; part (a) is printed on p. 17 and part (b) on p. 18, read on the PDF's own folios, and the remark now gives each its page. And the remark's closing sentence reported what "the sources cited here do not provide", which is a statement about the sources and not about the mathematics; it now states the injectivity of the geometric representation.
+
+**V.4.7, `P-AGH547GENUSBOUND`.** The restored record leaves the attainment at $d=4$ open, and the round's repair closes it from condition (c) of Exercise V.4.8, the class $H+F_{56}$ meeting all $27$ lines nonnegatively, with $0$ at $F_{56}$ alone, and having square $4$. That is sound only where (c)'s sufficiency is, and on `P-AGH548IRREDCLASSES` it is proved in characteristic $0$ alone, its Bertini being Corollary III.10.9. So the card's "for every $d>0$", stated with no hypothesis on the field, was not proved in characteristic $p>0$ at $d=4$, and no record of this date named it; the card's own event of this date, which said "no characteristic p statement is made anywhere on the card", was false of the step that already said "Bertini's theorem in characteristic 0". The card now states $k$ algebraically closed, and splits the attainment: Corollary 4.13(b) for every degree but $4$ in every characteristic, its Bertini being II.8.18 of the book, printed p. 179, a statement about hyperplane sections of a projective variety with no hypothesis on the characteristic, with III.7.9.1 adding only connectedness; and $H+F_{56}$ from condition (c) under characteristic $0$. The correction of the false sentence is a new event of this date, the event that carried it left as written.
+
+**V.4.8, `P-AGH548IRREDCLASSES`.** The restored record leaves the converse of alternative (b) open on the ground that the numerical effectivity of the classes $\ell-e_i$, $2\ell-e_i-e_j-e_k-e_l$ and $H-e_i$ is in neither source. That is false: those classes are $H-L$ for the $27$ lines $L$, and $(H-L)\cdot M=1-L\cdot M\ge0$ for each line $M$, so Theorem 8.2.19 gives numerical effectivity, Corollary II.3 effectivity, Theorem III.1(a) base point freeness because $-K\cdot D=2$, and Lemma II.6(a) at $-K\cdot D=2r$ gives $r=1$, a reduced irreducible curve of degree $2$ and genus $0$, a nonsingular conic. What remains open is the nonsingularity of the third alternative's member in characteristic $p>0$, which is where the card leaves it. Two defects of the card are repaired. The $a=3$ case of the enumeration concluded that exactly one entry is $2$ without excluding $b_i=-1$, the other integer with $b_i(b_i-1)=2$, which $\sum b_i=7$ rules out, an entry $-1$ leaving $\sum b_i\le4$. And the enumeration of the $27$ degree-$2$ classes of square $0$ from the two equations is the card's own, in the manner of the proof of Theorem 4.9, which finds the $b_i$ of a line by trial; the step now marks it, which the card's earlier event of this date claimed it did and it did not.
+
+**Repair.** `P-AGH5410NUMINEQ` in `c411edafd0`; `P-AGH5411WEYLGROUPS` in `9f4df289a6`; `P-AGH547GENUSBOUND` in `dfb86b8141`; `P-AGH548IRREDCLASSES` in `ed7a02da54`; the restoration of the batch record and the commits record, and this record, in the COMPLAINTS commit that carries it, which changes no card.
+
+**Uncertainty.** Read for this report, in the text versions under `tmp/sources/`: `mse-2475661-hart-v410-freshman-calculus.md`, answer 2476483 entire, its line 31 the weak order with $0\le b_1$ and its line 76 the maximiser $(0,0,0,0,0,a)$; `ntu-ag2-chapter5.md` at Chapter V §4 exercises 7, 10 and 11, and printed pp. 16--18 of `ntu-ag2-chapter5.pdf`, whose folios are the PDF pages, part (a) of Exercise 11 ending on p. 17 and part (b) beginning on p. 18; and `hartshorne-1977-algebraic-geometry.md` at Corollary 4.13 with its proof, printed p. 406, II.8.18, printed p. 179, the proof of Theorem 4.9, printed pp. 402--403, and the proof of (4.11) continued, printed pp. 420--421. Not read for this report: Dolgachev's Lemma 8.1.3, Theorem 8.2.19, Proposition 8.2.15, Corollary 8.2.16 and Proposition 9.1.3, and Harbourne's Corollary II.3, Lemma II.6 and Theorem III.1(a), beyond the statements and pages the cards give; the Dolgachev and Harbourne PDFs; the printed copies of any of these books; and no search of the literature beyond these files was made. The open parts are unchanged as obligations under [#121](https://github.com/dzackgarza/new-qual-site/issues/121): V.4.7 at $d=4$ in characteristic $p>0$, V.4.8's third alternative in characteristic $p>0$, and V.4.11's inequality $\cardinality{\mathbf E_6}\le51840$. V.4.10 is not among them: the first answer's argument, which the card transcribes, is complete, and NTU's second route is an alternative that fails beyond $b_1\le2b_2$.
