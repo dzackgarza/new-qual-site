@@ -151,6 +151,30 @@ audit:
     number the old one was. The date 2020-03-22 stands, answer 4874176 is dated 2024-03-02,
     and the body of the card names both by date only, so nothing on the card changes. Not
     claimed: a published solution of Exercise 2.C.1, which has not been located.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 transcription batch. The solution was rewritten as the two answers' argument for
+    $n>0$, each step citing its answer and paragraph: answer 3590397 (accepted, Paul Frost,
+    posted 2020-03-22) for the universal-cover bound (the lift $\bar f$ of the simplicial map to
+    the induced triangulations of $\RR$, $\bar f(w_{k+1})=w'_1+n$, then $n\ell+1$ vertices in
+    $[w'_1,w'_1+n]$ each in the image of $w_1,\ldots,w_{k+1}$ by the intermediate value theorem,
+    so $k\ge n\ell$) and answer 4874176 (D Ford, posted 2024-03-02) for the fundamental-cycle
+    form the card's bound step states. Both read in
+    `tmp/sources/mse-3590105-simplicial-map-circle-degree.md`, the text version of the thread.
+    Two things the transcription settles that the card had left implicit: 4874176 writes that
+    every edge is sent homeomorphically to an edge, and the vertex case is the one whose
+    coefficient is $0$, so the card's step keeps the disjunction; and 3590397's last sentence
+    ("Obviously there are solutions with $3n$ vertices") is the source of the attainment step.
+    Not transcribed, because neither answer treats them: $n<0$ and $n=0$. The card keeps its own
+    constructions for those two cases, now in a step that says so, and `COMPLAINTS.md` carries a
+    record of this date naming them as having no published proof. Checked against Hatcher (2002),
+    §2.C Exercise 1 on printed p. 184, read in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`; the printed page was confirmed against the
+    PDF, whose page 193 carries the printed folio 184 at §2.C's exercises. Not claimed: a proof of
+    the $n<0$ or $n=0$ cases in any publication.
+
 ---
 
 ::: {.problem}
@@ -158,46 +182,55 @@ What is the minimum number of edges in simplicial complex structures $K$ and $L$
 :::
 
 ::: {.solution}
-Use the argument of the accepted answer, answer 3590397 (posted 2020-03-22), to *[Simplicial map of the circle $S^1$](https://math.stackexchange.com/questions/3590105/simplicial-map-of-the-circle-s1)*. That answer bounds the domain by lifting to the universal cover $\RR\to S^1$: a simplicial map of degree $n$ lifts to a simplicial map of the induced triangulations of $\RR$, an interval spanning $k$ domain vertices is carried onto one spanning $n\ell$ target vertices, so $k\ge n\ell$ with $\ell\ge3$ the number of vertices of the target; hence $3n$ vertices, attained by wrapping a $3n$-gon around a triangle $n$ times. It is a user answer on Math StackExchange, not a publication, and the bound it gives is the one checked in the step below. Answer 4874176 (posted 2024-03-02) to the same question states the same bound in fundamental-cycle form, which is the form the step takes; $e(K)$ and $e(L)$ are the numbers of edges, and both simplicial circles are oriented.
+The case $n>0$ is the argument of the two answers to *[Simplicial map of the circle $S^1$](https://math.stackexchange.com/questions/3590105/simplicial-map-of-the-circle-s1)*, Math StackExchange question 3590105, read in `tmp/sources/mse-3590105-simplicial-map-circle-degree.md`: the accepted answer 3590397 (Paul Frost, posted 2020-03-22) bounds the domain through the universal cover of $S^1$, and answer 4874176 (D Ford, posted 2024-03-02) states the same bound in fundamental-cycle form. Both answers treat $n>0$ only. Write $e(K)$ and $e(L)$ for the numbers of edges, and orient both simplicial circles.
 
 ::: pf
 
+::: {.pf-step #cover}
+If $f:K\to L$ is a simplicial map of degree $n>0$ and $L$ has $\ell$ vertices, then $K$ has at least $n\ell$ vertices.
+
+::: pf-proof
+This is the argument of answer 3590397, paragraphs 4--8. A triangulation $\tau$ of $S^1$ with $k$ vertices induces a triangulation $\bar\tau$ of $\RR$ for which the standard covering $p(t)=e^{2\pi it}$ is simplicial, and a simplicial map $f:(\tau)\to(\tau')$, with $\ell$ vertices in $\tau'$, lifts to a simplicial map $\bar f:(\RR,\bar\tau)\to(\RR,\bar\tau')$. Choose consecutive lifts $w_1<w_2<\cdots<w_k<w_{k+1}=w_1+1$ of the $k$ vertices of $K$, and $w'_1$ a lift of the image of $w_1$. Then $\bar f(w_{k+1})=w'_1+n$ for an integer $n$, since $p\bar f(w_{k+1})=f(v_1)=p\bar f(w_1)$; and since the degree of $f$ is $\bar f(t+1)-\bar f(t)$ for any $t$, that integer is $\deg f=n$. For $n>0$ the segment $[w'_1,w'_1+n]$ contains exactly $n\ell+1$ vertices of $\bar\tau'$, and each of them is the image of one of $w_1,\ldots,w_{k+1}$, since otherwise $\bar f([w_1,w_{k+1}])$ could not contain the whole interval $[w'_1,w'_1+n]$ — this is where the answer uses the intermediate value theorem. Hence $k+1\ge n\ell+1$, that is $k\ge n\ell$. A simplicial complex structure on $S^1$ has as many edges as vertices here, so the same count is $e(K)\ge n\,e(L)$.
+:::
+
+:::
+
 ::: {.pf-step #bound}
-If $f:K\to L$ is a simplicial map of degree $n\ne0$, then
+If $f:K\to L$ is a simplicial map of degree $n>0$, then
 $$
-e(K)\ge \abs{n}\,e(L)\ge 3\abs{n}.
+e(K)\ge n\,e(L)\ge 3n.
 $$
 
 ::: pf-proof
-Write the fundamental cycles as $z_K=\sum_e\epsilon_e e$ and $z_L=\sum_a\epsilon_a a$. A simplicial map sends an edge either to a vertex or homeomorphically to an edge, so its coefficient on chains is $0$ or $\pm1$. Since $f_*(z_K)=n z_L$, every target edge receives total signed coefficient $n$, which requires at least $\abs{n}$ distinct domain edges. Hence $e(K)\ge\abs{n}\,e(L)$. A simplicial complex on $S^1$ has at least three edges: it cannot have a loop edge or two edges with the same endpoint pair.
+The first inequality is answer 4874176 in fundamental-cycle form: write $z_K=\sum_e\epsilon_e e$ and $z_L=\sum_a\epsilon_a a$ for the two simplicial fundamental cycles. The answer's computation is $f_*(\tilde e_1+\cdots+\tilde e_k)=n(e_1+e_2+e_3)$, and a simplicial map sends an edge either to a vertex or homeomorphically to an edge, so its coefficient on chains is $0$ or $\pm1$; every target edge therefore receives total signed coefficient $n$ from at least $n$ distinct domain edges. (The answer prints that each edge is sent homeomorphically to one of the three, the vertex case being the one in which its coefficient is zero.) Hence $e(K)\ge n\,e(L)$. A simplicial complex on $S^1$ cannot have a loop edge or two edges with the same pair of endpoints, so it has at least three edges: this is the observation the question itself opens with, that a simplicial structure on $S^1$ must have at least $3$ vertices, and answer 3590397 closes by applying it to $\tau'$, whose minimal number of vertices is $3$. With $e(L)\ge3$ the second inequality follows. Answer 3590397 draws the same conclusion in vertex form: for $\deg(f)=n>1$ the two triangulations cannot coincide, and $\tau$ must have at least $n$ times as many vertices as $\tau'$, hence a minimum of $3n$.
 :::
 
 :::
 
 ::: {.pf-step #attain}
-The lower bound is attained for every $n\ne0$.
+For every $n>0$ the bound $e(L)=3$, $e(K)=3n$ is attained.
 
 ::: pf-proof
-Let $L$ be a triangle and $K$ a polygon with $3\abs{n}$ edges. Map successive triples of edges of $K$ around the three edges of $L$, repeating exactly $\abs{n}$ times. Use the positive orientation if $n>0$ and the reverse orientation if $n<0$. This vertex map extends simplicially and satisfies $f_*(z_K)=n z_L$.
+Let $L$ be a triangle and $K$ a polygon with $3n$ edges, and map successive triples of edges of $K$ around the three edges of $L$, repeating exactly $n$ times with the positive orientation. On the circle this is the map $z\mapsto z^n$ from the $3n$-th roots of unity to the third roots of unity, which is simplicial of degree $n$: this is the construction in the question's second paragraph, and answer 3590397 closes by asserting that a minimum of $3n$ vertices suffices, "obviously there are solutions with $3n$ vertices".
 :::
 
 :::
 
-::: pf-step
-The case $n=0$ has the same minimum $e(K)=e(L)=3$.
+::: {.pf-step #negative-and-zero}
+The cases $n<0$ and $n=0$ are not in either source, and the card states them itself.
 
 ::: pf-proof
-Take both complexes to be triangles and use a constant simplicial map. It has degree zero.
+Neither answer treats a non-positive degree: 3590397 assumes $n>0$ before its vertex count, and 4874176 counts at least $n$ preimages. The card supplies the two cases rather than leaving the exercise half-answered. For $n<0$ the polygon of step [](#attain) traversed with the reverse orientation is a simplicial map of degree $n$ with $e(K)=3\abs{n}$, and the count of step [](#bound) with $\abs{n}$ in place of $n$ gives $e(K)\ge\abs{n}\,e(L)$ in the same way. For $n=0$ take both complexes to be triangles and $f$ constant: it is simplicial and of degree zero, with $e(K)=e(L)=3$. These two constructions are the card's own; no published proof of either case has been located, and `COMPLAINTS.md` records that on this date.
 :::
 
 :::
 
 :::
 
-The minimum is therefore
+For $n>0$ the minimum is therefore $e(L)=3$ and $e(K)=3n$, by steps [](#bound){.pf-ref} and [](#attain){.pf-ref}; with the card's own constructions for $n\le0$ the exercise's answer is
 $$
 \boxed{e(L)=3,\qquad e(K)=3\max\{1,\abs{n}\}.}
 $$
 
-The exercise is Exercise 1 of §2.C, printed p. 184 of Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`; the two Math StackExchange answers were read through the Stack Exchange API, which carries no text version of a thread.
+The exercise is Exercise 1 of §2.C, printed p. 184 of Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`; the two Math StackExchange answers were read in `tmp/sources/mse-3590105-simplicial-map-circle-degree.md`, which is the thread's text version.
 :::
