@@ -121,11 +121,15 @@ audit:
     this pass the `problem` block rendered Hatcher's coefficient ring as $\RR$ --- bold R, the real
     numbers --- in "closed $\RR$-orientable manifolds", where the book prints $R$. The statement now
     reads $R$-orientable, as Exercise 4 of §3.B on printed p. 280 has it, read in
-    `tmp/sources/hatcher-2002-algebraic-topology.md`. The "matches the print word for word" claims of
+    `tmp/sources/hatcher-2002-algebraic-topology.md`; the hyphen joining the book's "R orientable" is
+    the card's, and nothing else in the sentence differs from the print. The "matches the print word
+    for word" claims of
     the 2026-10-31 and both 2026-11-13 notes were therefore false of the statement as it then stood,
     and they are true only after this correction. (2) The note of 2026-11-16 said Kottke's set
     contains "exercises from M&T on pp. 2--3". It does not: the set is Problems 1, 2 and 3 only, on
-    printed pp. 1, 2 and 3, respectively Hatcher 3.B.4, 3.3.21 and 3.B.3. The M&T exercises named in
+    printed pp. 1, 2 and 3. Problem 1 is this exercise, Hatcher 3.B.4, and Problem 2 is Hatcher 3.3.21;
+    Problem 3, the cap and cross product formula with the cap products of $S^m\times S^n$, is not one
+    of Hatcher's §3.B exercises, which stop at Exercise 5 on printed p. 280. The M&T exercises named in
     that claim, 8.2, 8.5, 8.6 and 9.1, are in Stanford Math 215C Solution Set 4, printed pp. 2--3, not
     in Kottke. (3) The errata sentence of the same note was incomplete: Hatcher's errata also carries
     entries for printed p. 236 (§3.3, "for B any open ball in $M$" to "in $M$ containing $x$"), p. 264
