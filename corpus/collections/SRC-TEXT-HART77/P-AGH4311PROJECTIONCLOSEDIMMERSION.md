@@ -104,6 +104,52 @@ audit:
     part (a) has no complete published solution in the retained sets, which
     Shafarevich's Theorem 2.25 answers. Nothing in the problem statement
     changes.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Later pass of this batch, on the reader's report, and the record of what
+    the three events of this date above left out. (i) The secant bound of part
+    (a) is published: J. Harris, Algebraic Geometry: A First Course (1992),
+    Lecture 11, Proposition 11.24, states that the secant variety of an
+    irreducible k-dimensional variety in P^n is irreducible of dimension at
+    most 2k+1, with equality if and only if the general point lying on a
+    secant line lies on only finitely many of them, and its Example 11.22
+    supplies the dimension 2k of the variety of secant lines that the count
+    uses; the proposition's proof is the incidence correspondence of pairs
+    (l,p) with p in l, over the variety of secant lines, which is the honest
+    secant lines and not the pairs with equal entries. Read at Example 11.22,
+    the incidence display before Proposition 11.24, Proposition 11.24 and the
+    Veronese paragraph after Exercise 11.25, in the text version
+    tmp/sources/harris-1992-algebraic-geometry-first-course-pp128-149.md. That
+    text version carries no printed folios, so the printed page of these
+    statements is not established; it lies within printed pp. 128-149, the
+    range that version retains. The card cites them by lecture and number and
+    gives no page. (ii) The card's own proof of the bound, the incidence
+    variety over the complement of the diagonal in X x X, stood at step s1
+    before 9a5cd235da and was deleted by that commit; 16894bb15f did not
+    restore it, so the card carried (a) with the bound assumed. It is back in
+    step secants, marked there as the card's own, and the step now proves the
+    bound instead of reporting on the source. (iii) Corrected here, the events
+    of this date not being rewritable: their sentence "Part (a) has a complete
+    published proof", which is true of the exercise but not of Shafarevich's
+    count of it; their description of step secants as carrying "the two
+    incidence varieties with their dimensions", which Shafarevich's secant
+    passage does not do; and their sentence that the card's own secant and
+    tangent dimension count "left the card with the former steps s1-s6".
+    Also recorded here: commit 16894bb15f, which named the defect, quoted the
+    lemma and Corollary 2.7 in full and marked the (b) steps as the card's
+    own, had no event of its own until this one. (iv) The erratum and the
+    provenance sentences that stood inside the solution are now in the remark
+    on the published solution, where the account of a defective published
+    argument belongs: the defect itself, the opening sentence "his printed
+    count for the secant locus is defective, and step secants says where", and
+    a sentence that mixed Shafarevich's P^N with this card's P^n. The
+    solution's steps now prove the exercise. Not read in this pass:
+    Shafarevich's Theorem 1.15 and Theorem 1.25, as before, and no other part
+    of Harris's Lecture 11; no page of either text version was re-read beyond
+    the passages named. Checked against the book in this pass: Hartshorne
+    IV Ex. 3.11(a) on printed p. 316, unchanged.
 ---
 
 ::: {.problem}
@@ -122,20 +168,41 @@ Usually one obtains a finite number of double points with transversal tangent pl
 ::: {.solution}
 
 Let $X\subseteq\PP^n$ be nonsingular of dimension $r$.
-Part (a) follows I. R. Shafarevich, *Basic Algebraic Geometry 1*, third edition (2013), §5.4, printed pp. 134--136, for the tangent bound, the lemma on isomorphic embeddings, Corollary 2.7 and the projection; his printed count for the secant locus is defective, and step [](#secants){.pf-ref} says where.
+Part (a) is I. R. Shafarevich, *Basic Algebraic Geometry 1*, third edition (2013), §5.4, printed pp. 134--136, for the tangent bound, the lemma on isomorphic embeddings, Corollary 2.7 and the projection, and J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Example 11.22 and Proposition 11.24, for the secant bound.
 The steps of part (b) are the card's own and each says so.
 
 ::: pf
 
 ::: {.pf-step #secants}
 
-Shafarevich's printed argument for the secant locus, read at his proof of Theorem 2.25, printed pp. 135--136, does not bound the set of centres lying on secant lines: his incidence $\Gamma$ includes the pairs $(b,c)$ with $b=c$, and the image of those is all of $\PP^n$.
+The closure in $\PP^n$ of the union of the secant lines $\overline{PQ}$ of $X$, with $P,Q\in X$ distinct, has dimension at most
+$$
+2r+1.
+$$
 
 ::: pf-proof
 
-Shafarevich, proof of Theorem 2.25, printed pp. 135--136: "In $\PP^N\times X\times X$ consider the set $\Gamma$ of triples $(a,b,c)$ with $a\in\PP^N$, $b,c\in X$ such that $a,b,c$ are collinear. $\Gamma$ is obviously a closed subset of $\PP^N\times X\times X$. The projections of $\PP^N\times X\times X$ to $\PP^N$ and to $X\times X$ define regular maps $\varphi:\Gamma\to\PP^N$ and $\psi:\Gamma\to X\times X$. Obviously if $y\in X\times X$ with $y=(b,c)$, and $b\ne c$ then $\psi^{-1}(y)$ consists of points $(a,b,c)$ where $a$ is any point of the line through $b$ and $c$. Hence $\dim\psi^{-1}(y)=1$ and it follows by Theorem 1.25 that $\dim\Gamma=2n+1$. By definition $U_1=\varphi(\Gamma)$, and the same theorem gives $\dim U_1\le\dim\Gamma=2n+1$."
+J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Proposition 11.24: "The variety $\mathcal S(X)\subset\Gr(1,n)$ of secant lines to an irreducible $k$-dimensional variety $X\subset\PP^n$ is irreducible of dimension $2k$. The secant variety $S(X)\subset\PP^n$ is irreducible of dimension at most $2k+1$", with his note "that in this statement we need only consider points $p$ lying on honest secant lines, that is, secant lines actually spanned by points of $X$." His Example 11.22 defines the secant line map
+$$
+s\colon X\times X-\Delta\longrightarrow\Gr(1,n),\qquad (p,q)\longmapsto\overline{pq},
+$$
+on the complement of the diagonal, shows that its image $\mathcal S(X)$ has dimension $2k$, and takes for the proof of the proposition the incidence correspondence
+$$
+\Sigma=\{(l,p):p\in l\}\subset\mathcal S(X)\times\PP^n,
+$$
+whose image in $\PP^n$ is $S(X)$ and whose projection $\pi_1$ to the first factor is surjective with all fibres of dimension $1$; hence $\dim\Sigma=2k+1$ and $\dim S(X)\le\dim\Sigma$. With this card's letters $k=r$, and a nonsingular variety is irreducible.
 
-The defect is the identification $U_1=\varphi(\Gamma)$ with the locus of centres on secant lines. For $b=c$ the three points $a$, $b$, $b$ lie on a line for every $a\in\PP^N$, so $\Gamma$ contains $\PP^N\times\Delta_X$, of dimension $n+r$, and that subset maps onto $\PP^N$ under $\varphi$; hence $\varphi(\Gamma)=\PP^n$, and the printed bound bounds the dimension of the whole ambient space rather than of a proper locus of centres. The points lying on a line through two distinct points of $X$ are the image of the part of $\Gamma$ with $b\ne c$, which the printed passage neither separates from the diagonal nor bounds. So the printed proof of $\dim U_1\le2r+1$ does not stand, and no bound on the secant locus is available from it.
+The incidence count that follows is the card's own; it reaches the same bound over the complement of the diagonal directly.
+
+Let
+$$
+\mathcal I=\{(P,Q,O):P,Q\in X,\ P\ne Q,\ O\in\overline{PQ}\}\subseteq X\times X\times\PP^n .
+$$
+For $r\ge1$ the base $(X\times X)\setminus\Delta$ is a nonempty open subset of the irreducible $X\times X$ and so is irreducible of dimension $2r$, and the fibre of $\mathcal I$ over $(P,Q)$ is the projective line $\overline{PQ}$, of dimension $1$; hence
+$$
+\dim\mathcal I=2r+1 .
+$$
+For $r=0$ there are no distinct pairs and the union of secant lines is empty, so the bound holds there too. The image of $\mathcal I$ under the projection to $\PP^n$ is the union of the secant lines, so the dimension of its closure is at most $\dim\mathcal I=2r+1$.
 
 :::
 
@@ -160,17 +227,17 @@ Here $\Theta_b$ is the embedded tangent space $T_bX\subseteq\PP^N$, a linear sub
 
 ::: {.pf-step #centre}
 
-If the closure of the union of the secant lines of $X$ has dimension at most $2r+1$, then for $n>2r+1$ there is a point $\xi\in\PP^n$ lying on no secant line of $X$, in no embedded tangent space $T_PX$, and not on $X$.
+For $n>2r+1$ there is a point $\xi\in\PP^n$ lying on no secant line of $X$, in no embedded tangent space $T_PX$, and not on $X$.
 
 ::: pf-proof
 
 Shafarevich, proof of Theorem 2.25, printed p. 136, concludes: "We see that $\dim U_1\le\dim\Gamma=2n+1$ and $\dim U_2\le2n$; therefore if $N>2n+1$ then $U_1\cup U_2\ne\PP^N$, which was what we wanted."
 
-The conclusion holds for the closures: let $\Sigma_{\mathrm{sec}}$ be the union of the secant lines and $U_2$ the union of the embedded tangent spaces, as in step [](#tangent-locus){.pf-ref}. Under the hypothesis $\dim\overline{\Sigma_{\mathrm{sec}}}\le2r+1$ and with $\dim\overline{U_2}\le2r$ from that step, both closures are closed subsets of dimension strictly below $n$, and $\dim X=r<n$, so
+The conclusion holds for the closures: let $\Sigma_{\mathrm{sec}}$ be the union of the secant lines and $U_2$ the union of the embedded tangent spaces. By step [](#secants){.pf-ref} the closure of $\Sigma_{\mathrm{sec}}$ has dimension at most $2r+1$ and by step [](#tangent-locus){.pf-ref} $\dim\overline{U_2}\le2r$, so with $n>2r+1$ both closures are closed subsets of $\PP^n$ of dimension strictly below $n$, and $\dim X=r<n$. Hence
 $$
 X\cup\overline{\Sigma_{\mathrm{sec}}}\cup\overline{U_2}
 $$
-is a proper closed subset of the irreducible $\PP^n$ and its complement is a nonempty open set, any point of which is a centre of the kind required. This is the shape of the source's conclusion, with the secant bound as a hypothesis; step [](#secants){.pf-ref} records that the source does not prove that bound, and the bound is not proved here.
+is a proper closed subset of the irreducible $\PP^n$, and every point of its complement is a centre of the kind required: being outside $\overline{\Sigma_{\mathrm{sec}}}$ it lies on no secant line, being outside $\overline{U_2}$ it lies in no embedded tangent space, and it is not on $X$.
 
 :::
 
@@ -203,7 +270,7 @@ $$"
 
 ::: {.pf-step #corollary}
 
-Shafarevich, Corollary 2.7, printed p. 135: let $X\subseteq\PP^N$ be a variety and $\xi\in\PP^N\setminus X$; if every line through $\xi$ intersects $X$ in at most one point and $\xi$ is not contained in the tangent space to $X$ at any point, then the projection from $\xi$ is an isomorphic embedding $\overline X\hookrightarrow\PP^{N-1}$. Applied to a point $\xi$ of step [](#centre){.pf-ref} it gives a closed immersion of $X$ into $\PP^{n-1}$, which is assertion (a) of the exercise under the bound on the secant locus that step [](#secants){.pf-ref} records as unproved.
+Shafarevich, Corollary 2.7, printed p. 135: let $X\subseteq\PP^N$ be a variety and $\xi\in\PP^N\setminus X$; if every line through $\xi$ intersects $X$ in at most one point and $\xi$ is not contained in the tangent space to $X$ at any point, then the projection from $\xi$ is an isomorphic embedding $\overline X\hookrightarrow\PP^{N-1}$. Applied to a point $\xi$ of step [](#centre){.pf-ref} it gives a closed immersion of $X$ into $\PP^{n-1}$, which is assertion (a) of the exercise.
 
 ::: pf-proof
 
@@ -484,7 +551,7 @@ This is the projection asserted in (b).
 
 ::: pf-qed
 
-Steps [](#secants){.pf-ref}, [](#tangent-locus){.pf-ref}, [](#centre){.pf-ref}, [](#lemma-criterion){.pf-ref} and [](#corollary){.pf-ref} carry Shafarevich's argument for (a): the tangent bound and the criterion are his, the secant bound he prints is defective as step [](#secants){.pf-ref} shows, and with that bound assumed step [](#corollary){.pf-ref} yields the closed immersion into $\PP^{n-1}$.
+Steps [](#secants){.pf-ref}, [](#tangent-locus){.pf-ref}, [](#centre){.pf-ref}, [](#lemma-criterion){.pf-ref} and [](#corollary){.pf-ref} give (a): the secant bound is Harris's Proposition 11.24 with the card's own incidence count beside it in step [](#secants){.pf-ref}, the tangent bound, the lemma on isomorphic embeddings with its Nakayama proof and Corollary 2.7 are Shafarevich's, and step [](#corollary){.pf-ref} concludes the closed immersion into $\PP^{n-1}$.
 Steps [](#veronese-conic){.pf-ref} and [](#infinitely-many-secants){.pf-ref} prove that each point of every secant line of the Veronese surface lies on infinitely many secant lines, steps [](#secant-dim-upper){.pf-ref}, [](#secant-dim-lower){.pf-ref} and [](#secant-dim){.pf-ref} compute the dimension of its secant variety, and step [](#closed-immersion-b){.pf-ref} gives the closed immersion into $\PP^4$ that (b) asks for.
 
 :::
@@ -494,9 +561,12 @@ Steps [](#veronese-conic){.pf-ref} and [](#infinitely-many-secants){.pf-ref} pro
 :::
 
 ::: {.remark title="Published solution"}
-Part (a) is I. R. Shafarevich, *Basic Algebraic Geometry 1*, third edition (2013), §5.4, printed pp. 134--136: Theorem 2.25, printed p. 134, states it, the lemma on isomorphic embeddings and Corollary 2.7 on the projection are printed on pp. 134--135, and the count that produces the centre is on pp. 135--136 -- in the tangent case correctly, and in the secant case with the defect that step [](#secants){.pf-ref} names, his incidence containing the diagonal so that its image is the whole of $\PP^n$.
+Part (a) is completed from two printed texts. The secant bound $\dim S(X)\le2r+1$ is J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Proposition 11.24, whose proof is the incidence correspondence over the variety of secant lines, with his Example 11.22 for the dimension $2k$ of that variety. The rest is I. R. Shafarevich, *Basic Algebraic Geometry 1*, third edition (2013), §5.4, printed pp. 134--136: Theorem 2.25, printed p. 134, states it, the lemma on isomorphic embeddings and Corollary 2.7 on the projection are printed on pp. 134--135, and the count that produces the centre is on pp. 135--136, correctly in the tangent case.
+
+His secant count on p. 136 is defective as printed. His $\Gamma$ is the set of triples $(a,b,c)$ of $\PP^N\times X\times X$ with $a,b,c$ collinear, and for $b=c$ the three points $a,b,b$ lie on a line for every $a$, so $\Gamma$ contains $\PP^N\times\Delta_X$ and its image $U_1=\varphi(\Gamma)$ is the whole of $\PP^N$, of dimension $N>2n+1$; the printed bound $\dim U_1\le\dim\Gamma=2n+1$ is then false of the set he identifies with $U_1$, and it bounds the ambient space rather than the locus of centres. The centres are the image of the part of $\Gamma$ with $b\ne c$, which the printed passage neither separates from the diagonal nor bounds; that bound is Harris's, and in this card's letters it is the incidence count of step [](#secants){.pf-ref}.
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.11, printed p. 223, gives (a) in entry 4.3.20 as "This is Shafarevich Algebraic Geometry 1, theorem 9, page 136", the numbering of an earlier edition of Shafarevich; in the 2013 edition the theorem is 2.25, and the proof on pp. 135--136 contains the same secant count.
 
 His entry 4.3.21, printed p. 223, argues (b) for a general point of a secant line: "If $r\in\PP^5$ is a general point on a secant line $\overline{v(P)v(Q)}$ of $X$, then $\overline{pq}$ maps to a conic $C$ in $X$ and $r$ then lies on the plane spanned by $C$. Any other line on the plane passing through $r$ is also a secant line to $C$ and thus to $X$. Thus a general point on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$. Since we are in $\PP^5$ at any rate, then the secant variety has dimension at most $4$. On the other hand, the secant variety clearly has dimension at least $4$."
-That is the clause for a general point of a secant line; the exercise asks it for every point of every secant line, and for those points the conic of the plane through the point is the one the argument above uses.
+Harris, Lecture 11, Example 11.22, takes the same route for the Veronese surface and states the conclusion: the plane spanned by $C$ contains $r$, every line through $r$ in that plane is a secant line to $C$ and hence to $X$, so a general point of a secant line to $X$ lies on a one-dimensional family of them, whence $\dim S(X)\le4$; and $\dim S(X)=4$, since otherwise the cones over $S(X)$ with vertex a point of it would all coincide.
+That is again the clause for a general point of a secant line; the exercise asks it for every point of every secant line, and for those points the conic of the plane through the point is the one the argument above uses.
 :::
