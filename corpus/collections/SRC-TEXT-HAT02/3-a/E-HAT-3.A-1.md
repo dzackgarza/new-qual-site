@@ -120,6 +120,20 @@ audit:
     the book is tom Dieck's own. Nothing else changes: the propositions, their folios, the statement of
     Exercise 1 of §3.A on printed p. 267 and every step of the proof stand as they were, and no page was
     re-read for this correction beyond the folios 288, 289, 309 and 310 the card already gives.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, third pass on this card. The `source-corrected` event of this date that
+    begins "Two citation defects" was changed in place by commit e945aab1c4, which replaced its
+    sentence "tom Dieck is cited from the text of the Ranicki translation,
+    `tmp/sources/tomdieck-algebraic-topology-ranicki.md`" with the explanation now standing in that
+    event. A dated event records what the session that wrote it found; the original sentence is
+    therefore quoted here, and the correction is this event: tom Dieck's *Algebraic Topology* is his
+    own English text, and "ranicki" is only in the reading copy's file name and names no translator.
+    The card body and the remark were corrected at the same time and already say so; nothing in the
+    statement, the pages or the proof changes. Not verified in this pass beyond the folios already on
+    the card: nothing was read from a rendered page.
 ---
 
 ::: {.problem}
