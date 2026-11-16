@@ -61,9 +61,10 @@ audit:
   date: 2026-11-16
   note: >-
     Read Fuentes and Pedreira (arXiv:math/0006204v3) on 2026-11-16. Its Theorem
-    3.2, printed p. 15, restates the book's Theorem V.2.12: a decomposable
-    normalized bundle forces e at least zero, and an indecomposable one gives
-    -g <= e <= 2g-2. Its proof is the citation "See [8], V, 2.12 and [15]", so it
+    3.2, printed p. 15, restates the book's Theorem V.2.12 with the sharper lower
+    bound: a decomposable normalized bundle forces e at least zero, and an
+    indecomposable one gives -g <= e <= 2g-2, where the book's own proof reaches
+    only e >= -2g and sends the stronger restriction to its Exercise 2.5. Its proof is the citation "See [8], V, 2.12 and [15]", so it
     adds no argument of its own and does not reach part (a)'s existence statement
     for every e in the interval from 0 to 2g-2, nor part (c)'s range from -g to
     below zero. The lower bound is Nagata's, cited as the printed Note, as the
@@ -73,8 +74,8 @@ audit:
     J. 37 (1970), 191-196, which is also Hartshorne's own reference [8] for the
     Note, and it is not readable from here. Math StackExchange question 4398506,
     saved as tmp/sources/mse-4398506-hart77-v25-linear-system-notation.md,
-    concerns only the notation of part (b). No complete published argument for (a) or (c) was located; steps
-    s1 to s3 and s10 to s12 remain the card's.
+    concerns only the notation of part (b). No complete published argument for
+    (a) or (c) was located; steps s1 to s3 and s10 to s12 remain the card's.
 - event: source-checked
   by: claude
   date: 2026-11-16
