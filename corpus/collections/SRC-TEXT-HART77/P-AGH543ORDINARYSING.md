@@ -100,6 +100,49 @@ audit:
     printing of these sets other than their text versions. The event of
     2026-11-11 above had been rewritten in place; it is restored to the text it
     was dated with, and this note is its correction.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Transcribed for issue #121 from a published proof that covers the exercise
+    in every characteristic: William Fulton, Algebraic Curves (2008), §7.4
+    Quadratic Transformations, the standard quadratic transformation and the
+    formulas (1)-(3) on printed pp. 87-89, good and excellent position with
+    (4)-(7) on printed pp. 88-90, the invariant g* with (8) on printed p. 90,
+    Lemma 1 on printed p. 90 with Problem 5.26 and Theorem 2 of §5.4 behind it
+    on printed p. 60, Theorem 2 of §7.4 on printed p. 91, and Appendix A
+    Nonzero Characteristic on printed p. 113. Read in the text version
+    tmp/sources/fulton-2008-algebraic-curves-pp55-62-86-92-110-115.md, whose
+    markers name PDF pages 63-70, 94-100 and 118-123 against printed 55-62,
+    86-92 and 110-115, so printed page = marker - 8; the pages were checked
+    against the PDF page by page. The same theorem is proved by the same route
+    in Thomas Rüd, Resolution of singularities on projective curves (2015),
+    Proposition 19 printed p. 25, Propositions 20-21 printed pp. 26-27,
+    Proposition 22 printed p. 28, Theorem 13 printed p. 28 and §7.3 printed
+    p. 40, read in tmp/sources/rud-2015-resolution-singularities-curves.md
+    with printed page = PDF page - 1. Supplied on the card, and named as such
+    there: the calculation of (8), which Fulton gives only as "a calculation,
+    using (2) and (7)", verified by the identity binom(2n-r-1,2) - binom(n,2)
+    - 2*binom(n-r,2) = binom(n-1,2) - binom(r,2), both sides
+    (n^2-r^2-3n+r+2)/2; the passage from (6) to the ordinariness of the three
+    fundamental images, following Rüd's Propositions 20-21; the observation
+    that the two centres of the preparatory transformation of Appendix A are
+    taken off C, which is what makes deg F' = 2n - m there; and the accounting
+    that the preliminary steps of the positive-characteristic case do not
+    increase g*, so that they interleave harmlessly with the terminating
+    sequence. Checked against Hartshorne V.4.3, printed p. 407, and against
+    the multiplicity formulas of (V, 4.2), printed p. 406, which give the same
+    three target multiplicities d, d-r, d-r. The card's earlier proof, which
+    covered characteristic 0 alone and took the inseparable case from
+    Hirschfeld's Theorem 3.27, is replaced, and the remark that called the
+    published treatments of the exercise incomplete is withdrawn, the two
+    proofs above being complete. Not checked: Fulton's Problem 4.16, to which
+    his proof of Lemma 1 defers the change of coordinates carrying three lines
+    to X, Y, Z, was not read; the printed copies of either book were not
+    consulted, only the text versions beside the retained PDFs; and Rüd's
+    Remark 23, printed p. 28, which says that an ordinary multiple point
+    contributes nothing to g*, is false as printed, an ordinary double point
+    contributing 1, and is used nowhere on the card.
 ---
 
 ::: {.problem}
@@ -109,273 +152,217 @@ Then there exists a finite sequence of quadratic transformations, centered at su
 :::
 
 ::: {.solution}
-Call a singular point **bad** if it is not ordinary, i.e. if its tangent cone
-does not consist of distinct lines with multiplicity one.
+Let $C\subseteq\PP^2$ be an irreducible curve of degree $n$, and for a point $Q$ of the plane write $r_Q=\mu_Q(C)$ for the multiplicity of $C$ at $Q$. A point is *bad* if it is not an ordinary multiple point, that is, if its tangent cone is not a product of distinct lines, each with multiplicity one; the exercise asks for a finite sequence of quadratic transformations after which the strict transform has no bad point.
 
-We first give the explicit reduction in the separable case.  The final step
-records the positive-characteristic inseparable case separately, using the
-source cited for this exercise rather than a false Bertini assertion for an
-inseparable pencil.
+The argument takes successive quadratic transformations, each centred at a bad point of the current curve, and terminates on the invariant
+$$
+g^*(C)=\binom{n-1}{2}-\sum_{Q}\binom{r_Q}{2},
+$$
+the sum being taken over the multiple points of $C$. It is the proof of Fulton, *Algebraic Curves* (2008), §7.4, printed pp. 87--91, with Appendix A of that book, printed p. 113, for a field of positive characteristic. The termination measure is the pair consisting of the number of bad points and $g^*$: a step either removes the chosen bad point from the list, or lowers $g^*$ by a positive integer.
 
 ::: pf
 
-::: pf-step
-If $C$ has no bad singularities, there is nothing to prove.
-
-::: pf-proof
-In this case every singular point is already an ordinary multiple point, so
-the empty sequence of quadratic transformations has the required property.
-:::
-
-:::
-
-::: {.pf-step #choose-auxiliary-points}
-Let $P$ be a bad singular point of a current plane model
+::: {.pf-step #algebraic-transform-multiplicities}
+Set
 $$
-C\subseteq\PP^2.
+Q([x:y:z])=[yz:xz:xy],
 $$
-Assume that projection from $P$ on the normalization of $C$ is separable.
-There exist two points $A,B\in\PP^2\setminus C$ such that the three lines
+the standard quadratic transformation, with fundamental points
 $$
-PA,
+P=[0:0:1],
 \qquad
-PB,
+P'=[0:1:0],
 \qquad
-AB
+P''=[1:0:0]
 $$
-have the following properties:
-
-- they contain no singular point of $C$ other than $P$;
-- $AB$ meets $C$ transversely in distinct smooth points;
-- $PA$ and $PB$ have intersection multiplicity
-  $\mu_P(C)$ at $P$ and meet $C$ transversely in distinct smooth points
-  away from $P$.
-
-::: pf-proof
-The singular locus of the integral plane curve is finite. A general line
-avoids this finite set and is not tangent to the smooth locus, so it meets
-$C$ transversely in distinct smooth points. This applies directly to the
-unconstrained line $AB$.
-
-Among the lines through the fixed point $P$, only finitely many tangent
-directions occur in the tangent cone of $C$ at $P$. A line through $P$ whose
-direction is not in that tangent cone satisfies
+and exceptional lines
 $$
-i_P(C,L)=\mu_P(C).
-$$
-The pencil of lines through $P$ induces the projection morphism from the
-normalization of $C$ to $\PP^1$. By hypothesis this map is separable. Hence
-it is generically etale, so outside finitely many members of the pencil a
-line through $P$ meets $C$ away from $P$ in distinct smooth transverse
-points. Choose two such members with directions outside the tangent cone and
-avoiding the finitely many other singular points. Pick $A$ and $B$ on these
-two lines, off $C$, generally enough that the joining line $AB$ is also a
-transverse line avoiding the singular locus. This gives the stated
-properties.
-:::
-
-:::
-
-::: {.pf-step #quadratic-transform-realizes-blowup}
-Let
-$$
-\varphi:\PP^2\dashrightarrow\PP^{2\prime}
-$$
-be the quadratic transformation centered at
-$$
-P,A,B.
-$$
-On the common resolution
-$$
-S=\operatorname{Bl}_{P,A,B}\PP^2,
-$$
-the strict transform of $C$ near the exceptional curve over $P$ is exactly
-the strict transform obtained by the ordinary point blowup of $P$.
-
-::: pf-proof
-The resolved quadratic transformation is the blowup of the three source
-base points followed by the contraction of the three strict transforms of
-the joining lines, as in [[P-AGH542QUADTRANSFORM]].
-
-Let $E_P$ be the exceptional curve over $P$. The only two contracted curves
-meeting $E_P$ are the strict transforms of $PA$ and $PB$, and they meet
-$E_P$ at the two points representing their tangent directions at $P$.
-By step [](#choose-auxiliary-points){.pf-ref} neither direction belongs to the tangent cone of $C$ at $P$.
-Hence the strict transform of $C$ on $S$ does not meet $E_P$ at either of
-those two points.
-
-Consequently the second morphism, which contracts the three fundamental
-lines, is an isomorphism in a neighbourhood of every point where the strict
-transform of $C$ meets $E_P$. Thus the germs of the new plane curve along
-the image of $E_P$ are exactly the germs produced by blowing up $C$ at $P$.
-:::
-
-:::
-
-::: {.pf-step #contraction-points-ordinary}
-The quadratic transformation in step [](#quadratic-transform-realizes-blowup){.pf-ref} creates only ordinary
-singularities at the three contraction points of the fundamental lines.
-
-::: pf-proof
-Let
-$$
-m=\mu_P(C),
+L=V(Z),
 \qquad
-d=\deg C.
-$$
-Because $A,B\notin C$, their multiplicities on $C$ are zero. V.4.2 therefore
-gives target multiplicities
-$$
-d,
+L'=V(Y),
 \qquad
-d-m,
+L''=V(X).
+$$
+A quadratic transformation is $Q\circ T$ for a projective change of coordinates $T$, and it is centred at the three points $T^{-1}(P)$, $T^{-1}(P')$, $T^{-1}(P'')$. For an irreducible $C$ with equation $F$ of degree $n$, and
+$$
+r=\mu_P(C),
 \qquad
-d-m
+r'=\mu_{P'}(C),
+\qquad
+r''=\mu_{P''}(C),
 $$
-at the three contraction points.
-
-More importantly, step [](#choose-auxiliary-points){.pf-ref} describes the branches there. The strict
-transform of $AB$ meets the strict transform of $C$ in $d$ distinct points,
-all transversely. Contracting $AB$ identifies these points to one target
-point; on the inverse blowup they correspond to $d$ distinct points of the
-exceptional curve, hence to $d$ distinct tangent directions. Thus the target
-point is an ordinary $d$-fold point.
-
-Likewise, Bezout and
+put
 $$
-i_P(C,PA)=i_P(C,PB)=m
+F^Q=F(yz,xz,xy),
+\qquad
+F^Q=Z^{r}Y^{r'}X^{r''}F'.
 $$
-show that after removing the contribution at $P$, each of $PA$ and $PB$
-meets $C$ in exactly $d-m$ distinct transverse smooth points. Their
-contractions therefore produce ordinary $(d-m)$-fold points. If $d-m$ is
-$0$ or $1$, the corresponding target point is not singular, which is even
-better.
-:::
-
-:::
-
-::: {.pf-step #other-singularities-unchanged}
-Every singularity of $C$ away from the three fundamental lines is
-unchanged by the transformation.
+Then
+$$
+\deg F'=2n-r-r'-r'',
+\qquad
+\mu_P(C')=n-r'-r'',
+$$
+with the symmetric formulas $\mu_{P'}(C')=n-r-r''$ and $\mu_{P''}(C')=n-r-r'$; $F'$ is irreducible, $(F')'=F$, and $C'=V(F')$ is the strict transform of $C$.
 
 ::: pf-proof
-The quadratic transformation is an isomorphism away from its three base
-points and the three fundamental lines. By the choice in step [](#choose-auxiliary-points){.pf-ref}, those
-lines contain no singular point of $C$ except the chosen point $P$, while
-$A,B$ do not lie on $C$. Hence every other singular germ of $C$ lies in the
-isomorphism locus and is carried isomorphically to the new plane model.
+This is the opening of Fulton, §7.4, printed p. 87, with (1), (2) and (3) of that section, printed pp. 88--89. On $U=\PP^2-V(XYZ)$ the map $Q$ is its own inverse, so $Q$ is a birational map of $\PP^2$ with itself, and $C'=\overline{Q^{-1}(C\cap U)}$.
+
+For (1), write $F=F_r(X,Y)Z^{n-r}+\cdots+F_n(X,Y)$ with $F_i$ a form of degree $i$; substituting $YZ$, $XZ$, $XY$ for $X$, $Y$, $Z$ gives
+$$
+F^Q=Z^{r}\bigl(F_r(Y,X)(XY)^{n-r}+ZF_{r+1}(Y,X)(XY)^{n-r-1}+\cdots\bigr),
+$$
+so $Z^{r}$ is the largest power of $Z$ dividing $F^Q$, and the same computation at $P'$ and $P''$ gives the factors $Y^{r'}$ and $X^{r''}$. These are coprime, because $F$ is irreducible and is not one of the exceptional lines, so $F^Q=Z^{r}Y^{r'}X^{r''}F'$ with $\deg F'=2n-r-r'-r''$.
+
+For (2), $(F^Q)^Q=(XYZ)^nF$, whence $F'$ is irreducible and $(F')'=F$; and $V(F')$ contains $Q^{-1}(C\cap U)$, so by irreducibility it is $C'$.
+
+For (3), Fulton rewrites
+$$
+F'=\sum_{i=0}^{n-r}F_{r+i}(Y,X)\,X^{n-r-r''-i}\,Y^{n-r-r'-i}\,Z^{i},
+$$
+all of whose terms have degree at least $n-r'-r''$ at $P=[0:0:1]$, the term $i=n-r$ attaining it; the leading form of $F'$ at $P$ is therefore $F_n(Y,X)X^{-r''}Y^{-r'}$, of degree $n-r'-r''$. The two other formulas follow by symmetry.
 :::
 
 :::
 
-::: {.pf-step #one-blowup-replaced-safely}
-Thus one quadratic transformation can replace one prescribed point
-blowup at a bad singularity without introducing any new bad singularity.
+::: {.pf-step #excellent-position}
+Call $C$ in *good position* if no exceptional line is tangent to $C$ at a fundamental point, and in *excellent position* if in addition $L$ meets $C$ transversally in $n$ distinct non-fundamental points and $L'$ and $L''$ each meet $C$ transversally in $n-r$ distinct non-fundamental points. If $C$ is in excellent position, then $r'=r''=0$, so $\deg C'=2n-r$ and
+$$
+\mu_P(C')=n,
+\qquad
+\mu_{P'}(C')=\mu_{P''}(C')=n-r,
+$$
+these three points being ordinary multiple points of $C'$; every multiple point of $C$ away from the three exceptional lines is a multiple point of $C'$ of the same multiplicity, ordinary or not as before; there is no non-fundamental point on $C'\cap L'$ or on $C'\cap L''$; and the non-fundamental points $P_1,\ldots,P_s$ of $C'\cap L$ satisfy
+$$
+\mu_{P_i}(C')\le I(P_i,C'\cap L),
+\qquad
+\sum_{i=1}^{s}I(P_i,C'\cap L)=r.
+$$
 
 ::: pf-proof
-By step [](#quadratic-transform-realizes-blowup){.pf-ref}, the germs lying over the chosen bad point $P$ are exactly those
-obtained from its point blowup. Step [](#contraction-points-ordinary){.pf-ref} says all singularities introduced
-by contracting the fundamental lines are ordinary. Step [](#other-singularities-unchanged){.pf-ref} says every
-other old singularity is unchanged. Therefore the only possible bad
-singularities after the quadratic transformation are precisely the bad
-infinitely near singularities which the prescribed blowup of $P$ would
-produce.
+This is (7) of Fulton, printed p. 90. In excellent position the points of $C\cap L'$ and of $C\cap L''$ are non-fundamental, so $P'\notin C$ and $P''\notin C$, that is $r'=r''=0$; step [](#algebraic-transform-multiplicities){.pf-ref} then gives the degree $2n-r$ and the three multiplicities.
+
+Part (a) of (7) follows because $C'\cap U$ and $C\cap U$ are isomorphic. Part (c) is (6) of the same section, printed p. 89, whose computation is
+$$
+\sum_{i=1}^{s}I(P_i,F'\cap Z)=\sum_{i=1}^{s}I(P_i,F_r(Y,X)\cap Z)=r
+$$
+and which gives $\mu_{P_i}(C')\le I(P_i,C'\cap L)$; applied with $P'$ and with $P''$ in the role of the centre, (6) says that the analogous sum equals $r'=0$ and $r''=0$, so there is no non-fundamental point on $C'\cap L'$ or on $C'\cap L''$.
+
+Part (b) follows from (6) applied to $C'$ and $(C')'=C$, which is legitimate because $C'$ is in good position by (4), printed p. 88: the non-fundamental points of $C\cap L$ are then $n$ distinct points and each contributes $1$ to a sum that equals $\mu_P(C')$, so $\mu_P(C')=n$. The $n$ points of $C\cap L$ are the images on $L$ of the branches of $C'$ at $P$, one point for each tangent direction there, so $C'$ has $n$ branches at $P$ meeting $L$ transversally in $n$ distinct points, which is the ordinariness of the $n$-fold point $P$. The same reading with the other two fundamental points gives $\mu_{P'}(C')=\mu_{P''}(C')=n-r$, ordinary there too. Rüd, *Resolution of singularities on projective curves* (2015), Propositions 20 and 21, printed pp. 26--27, proves the same three statements by this route and spells out the symmetric applications.
 :::
 
 :::
 
-::: {.pf-step #resolution-sequence-exists}
-The resolution result (3.8) cited in the exercise gives a finite
-sequence of point blowups after which the strict transform of $C$ is
-nonsingular.
+::: {.pf-step #excellent-position-attained}
+Assume $\operatorname{char}k=0$. For every irreducible $F$ and every point $P\in F$ there is a projective change of coordinates $T$ such that $F^T$ is in excellent position and $T([0:0:1])=P$.
 
 ::: pf-proof
-This is exactly the curve-resolution input requested by the exercise. It
-produces finitely many ordinary point blowups, each centered at a singular
-point of the current strict transform, such that the final strict transform
-is nonsingular. Equivalently, there are only finitely many bad infinitely
-near singular germs which need to be eliminated.
+This is Lemma 1 of Fulton, §7.4, printed p. 90, and its input is Problem 5.26 of the same book, printed p. 60: for an irreducible curve of degree $n$ over a field of characteristic $0$ and a point $P$, all but finitely many lines through $P$ meet $C$ in $n-r$ distinct points other than $P$. Fulton's proof of the lemma chooses lines
+$$
+L'\cdot C=rP+P'_{r+1}+\cdots+P'_n,
+\qquad
+L''\cdot C=rP+P''_{r+1}+\cdots+P''_n,
+\qquad
+L\cdot C=P_1+\cdots+P_n,
+$$
+with all the named points distinct, and then a change of coordinates carrying $L$, $L'$, $L''$ to $Z$, $Y$, $X$; the last step he defers to Problem 4.16 of the book.
+
+Problem 5.26 is outlined there in three parts, printed p. 60: take $P=[0:1:0]$, as one may after a projective change of coordinates, and the lines $L_\lambda=\{[\lambda:t:1]\}\cup\{P\}$, and write
+$$
+F=A_r(X,Z)Y^{n-r}+\cdots+A_n(X,Z),
+\qquad
+A_r\neq0;
+$$
+then $G_\lambda(t)=F(\lambda,t,1)$ has degree $n-r$ whenever $A_r(\lambda,1)\neq0$, which fails for only finitely many $\lambda$; and $G_\lambda$ has $n-r$ distinct roots whenever in addition $F\cap F_Y\cap L_\lambda=\{P\}$, that is, whenever $G_\lambda$ and its derivative have no common root on $L_\lambda$, which again fails for only finitely many $\lambda$ because $F$ and $F_Y$ have no common component. In characteristic $0$ that is the whole condition; in characteristic $p$ it is not, which is the one place the proof breaks, and step [](#positive-characteristic){.pf-ref} repairs it.
 :::
 
 :::
 
-::: {.pf-step #separable-case-induction}
-Suppose every bad centre encountered in the resolution sequence has
-separable projection. Then replacing the successive point blowups by the
-quadratic transformations of steps [](#choose-auxiliary-points){.pf-ref}, [](#quadratic-transform-realizes-blowup){.pf-ref}, [](#contraction-points-ordinary){.pf-ref}, [](#other-singularities-unchanged){.pf-ref} and [](#one-blowup-replaced-safely){.pf-ref} gives, after finitely many
-steps, a plane strict transform having only ordinary singularities.
+::: {.pf-step #genus-invariant-nonnegative}
+$g^*(C)$ is a nonnegative integer.
 
 ::: pf-proof
-Proceed through the finite point-blowup sequence of step [](#resolution-sequence-exists){.pf-ref}. At each bad
-centre, choose the two auxiliary points generally as in step [](#choose-auxiliary-points){.pf-ref}. In
-addition, avoid the finite set of ordinary singularities already present;
-the same open conditions allow this.
-
-Step [](#one-blowup-replaced-safely){.pf-ref} shows inductively that the quadratic transformation performs the
-required next blowup on the bad germ and creates no new bad germ. Ordinary
-singularities already present and away from the chosen fundamental lines are
-preserved by step [](#other-singularities-unchanged){.pf-ref}, while the newly contracted-line singularities are
-ordinary by step [](#contraction-points-ordinary){.pf-ref}.
-
-After the finitely many prescribed centres have been processed, no bad
-infinitely near singularity remains, because the corresponding point-blowup
-sequence resolves the original curve. The remaining singularities of the
-final plane model are therefore all ordinary multiple points with distinct
-tangent directions.
+The sum is an integer. Fulton, Theorem 2 of §5.4, printed p. 60, proves
+$$
+\sum_{Q}\binom{r_Q}{2}\le\binom{n-1}{2}
+$$
+for an irreducible plane curve of degree $n$, by counting the conditions that a form $G$ of degree $n-1$ is made to satisfy at the multiple points of $C$ and at further simple points of $C$, applying Corollary 1 of Bézout to $C$ and $G$, and reading the resulting inequality backwards. Rüd proves the same nonnegativity as his Proposition 22, printed p. 28, by applying Bézout to $F$ and to $\partial F/\partial z$, with a second argument for the case in which that partial derivative vanishes.
 :::
 
 :::
 
-::: {.pf-step #inseparable-case}
-The same conclusion holds when an inseparable projection occurs in
-positive characteristic, and that case is *not* proved on this card.
+::: {.pf-step #genus-invariant-drops}
+If $C$ is in excellent position then
+$$
+g^*(C')=g^*(C)-\sum_{i=1}^{s}\binom{r_i}{2},
+\qquad
+r_i=\mu_{P_i}(C'),
+$$
+where $P_1,\dots,P_s$ are the non-fundamental points of $C'\cap L$. In particular $g^*(C')\le g^*(C)$, with equality exactly when no $P_i$ has multiplicity at least $2$.
 
 ::: pf-proof
-Over a field of characteristic $0$ a nonconstant morphism of nonsingular curves
-is separable. The projection from $P$ is nonconstant on the normalization of
-$C$: were it constant, $C$ would lie in a line through $P$, and an irreducible
-curve contained in a line is that line, while a line has no singular point.
-Hence the hypothesis of step [](#choose-auxiliary-points){.pf-ref} is automatic, and the argument above
-proves the exercise with no hypothesis. That is the case the book's own
-hypotheses give whenever $k$ has characteristic $0$.
+This is (8) of Fulton, printed p. 90, whose proof is given there as "a calculation, using (2) and (7)"; the calculation is written out here. By step [](#excellent-position){.pf-ref} the multiple points of $C'$ are the multiple points $Q\neq P$ of $C$ with their multiplicities, the three ordinary points $P$, $P'$, $P''$ of multiplicities $n$, $n-r$, $n-r$, and the points $P_i$ of multiplicities $r_i$. With $\deg C'=2n-r$ this gives
+$$
+g^*(C')=\binom{2n-r-1}{2}-\sum_{Q}\binom{r_Q}{2}-\binom{n}{2}-2\binom{n-r}{2}-\sum_{i=1}^{s}\binom{r_i}{2},
+$$
+while
+$$
+g^*(C)=\binom{n-1}{2}-\sum_{Q}\binom{r_Q}{2}-\binom{r}{2},
+$$
+the sum over $Q$ running over the multiple points of $C$ other than $P$ in both displays. The two differ by the last sum alone, because
+$$
+\binom{2n-r-1}{2}-\binom{n}{2}-2\binom{n-r}{2}=\binom{n-1}{2}-\binom{r}{2},
+$$
+both sides of which are $\tfrac12(n^2-r^2-3n+r+2)$, as $2\binom{k}{2}=k(k-1)$ shows. Since $\binom{r_i}{2}\ge0$, with equality exactly when $r_i\le1$, the statement follows.
+:::
 
-In characteristic $p$ the projection from $P$ can be inseparable --- for a
-strange curve the pencil of lines through $P$ pulls back to an inseparable
-extension of function fields --- and then a general line through $P$ meets the
-curve away from $P$ in repeated points, so the two auxiliary lines of step
-[](#choose-auxiliary-points){.pf-ref} cannot be chosen as there. The card has no
-argument for that case. What it has is the citation both the retained source and
-Egbert give: Hirschfeld, *Algebraic Curves over Finite Fields*, Theorem 3.27, a
-characteristic-free quadratic-reduction theorem. That book is not in
-`tmp/sources` and was not read; the theorem is recorded here as cited and not
-verified, so this step carries a citation where the other steps carry proofs,
-and the exercise as printed --- over the book's algebraically closed field of
-any characteristic --- is complete only through that citation.
+:::
+
+::: {.pf-step #termination}
+Suppose that at each stage the current curve can be put in excellent position with the chosen centre as $P$. Then after finitely many quadratic transformations, at most $N+g^*(C)$ where $N$ is the number of bad points of $C$, the strict transform has only ordinary multiple points.
+
+::: pf-proof
+This is the proof of Theorem 2 of Fulton, printed p. 91. Centre a quadratic transformation at a bad point $P$ of the current curve, after putting that curve in excellent position with $P$ as the point $[0:0:1]$. By step [](#excellent-position){.pf-ref}, the multiple points away from the exceptional lines keep their multiplicity and their ordinary or non-ordinary character, the point $P$ becomes the ordinary multiple point of multiplicity $n$ on $C'$, and $P'$ and $P''$ are ordinary; so either $C'$ has one bad point fewer than $C$, or the only new bad points are among the $P_i$ on $C'\cap L$. In the second case step [](#genus-invariant-drops){.pf-ref} lowers $g^*$ by $\sum_i\binom{r_i}{2}\ge1$, so the pair consisting of the number of bad points and $g^*$ decreases in the lexicographic order at each step, and $g^*$ never increases. Since $g^*$ is a nonnegative integer by step [](#genus-invariant-nonnegative){.pf-ref}, the number of bad points is a nonnegative integer as well, and the sequence of pairs cannot be infinite. The bound $N+g^*(C)$ is Fulton's: each step either lowers the count of bad points by one or lowers $g^*$ by at least one.
+:::
+
+:::
+
+::: {.pf-step #positive-characteristic}
+Assume $\operatorname{char}k=p>0$. Then the conclusion of step [](#termination){.pf-ref} still holds: the obstruction to putting the current curve in excellent position sits at one point at a time, and one quadratic transformation centred away from that point removes it.
+
+::: pf-proof
+This is Appendix A of Fulton, printed p. 113. Call $P$ *terrible* for $F$ if infinitely many lines through $P$ meet $C$ in fewer than $n-r$ distinct points other than $P$; then $p$ divides $n-r$. The lines through $P$ form a line of the dual plane, so for a terrible $P$ the dual curve of $C$ contains infinitely many points of a line and, being irreducible, is that line; hence $F$ has at most one terrible point, and lines meeting $C$ in $n$ distinct points always exist.
+
+If the chosen bad point $P$ is terrible for $F$, Fulton takes a quadratic transformation centred at a point $Q$ of multiplicity $m=0$ or $m=1$, so that $P$ lies on no fundamental line, and writes $F'$ for the transform; the two remaining centres are taken off $C$, so that $n'=\deg F'=2n-m$. Since $p$ divides $n-r$,
+$$
+n'-r\equiv 2n-m-r\equiv n-m \pmod p,
+$$
+and one of the choices $m=0$, $m=1$ makes $p$ not divide $n-m$, hence not divide $n'-r$. The transformation is an isomorphism near $P$, so the multiplicity of $P$ on $F'$ is still $r$, and the point of $F'$ corresponding to $P$ is therefore not terrible for $F'$; Fulton then proceeds as in Theorem 2.
+
+These preliminary steps do not spoil the termination. A transformation centred at a point of multiplicity $0$ or $1$ is a step to which (7) and (8) apply once the curve is put in excellent position at that centre, which is possible because the centre is not the terrible point; so by step [](#genus-invariant-drops){.pf-ref} it does not increase $g^*$, and it introduces no bad point except possibly among the $P_i$ on $C'\cap L$, which is charged against $g^*$. Since at most one preliminary step is needed between two applications of step [](#termination){.pf-ref}, the interleaved sequence has no infinite run. Fulton's printed sentence draws its conclusion as "insure that $p$ doesn't divide $n-r$", where the quantity that $n-m$ replaces in the congruence above is $n'-r$.
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#choose-auxiliary-points){.pf-ref}, [](#quadratic-transform-realizes-blowup){.pf-ref}, [](#contraction-points-ordinary){.pf-ref}, [](#other-singularities-unchanged){.pf-ref} and [](#one-blowup-replaced-safely){.pf-ref} show how to realize one required resolution blowup by a
-quadratic transformation without creating nonordinary singularities whenever
-the relevant projection is separable. Steps [](#resolution-sequence-exists){.pf-ref} and [](#separable-case-induction){.pf-ref} iterate this through
-the finite resolution sequence in that case, and step [](#inseparable-case){.pf-ref} records that the
-inseparable positive-characteristic case is taken from the source cited for V.4.3 and is not
-proved here. So the exercise is proved over a field of characteristic $0$ and cited in the
-remaining case.
+Steps [](#algebraic-transform-multiplicities){.pf-ref} and [](#excellent-position){.pf-ref} compute the multiplicities of a quadratic transform and of the multiple points it creates or preserves. Step [](#excellent-position-attained){.pf-ref} puts the current curve in excellent position at the chosen centre in characteristic $0$, and step [](#positive-characteristic){.pf-ref} does the same in characteristic $p>0$ after one preliminary transformation. Step [](#termination){.pf-ref} then iterates the transformation finitely many times, and the strict transform that results has no bad point, that is, only ordinary multiple points. This proves the exercise over an algebraically closed field of any characteristic, without using the hint (3.8): the published proof does not resolve $C$ by point blowups at all, terminating instead on the count of bad points against $g^*$.
 :::
 
 :::
 :::
 
-::: {.remark title="Published solution"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.3, printed p. 407, which directs the reader to (3.8), text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+::: {remark title="Published solution"}
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.3, printed p. 407, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15); its statement directs the reader to (3.8), and its notion of ordinary singularity is that of (I, Ex. 5.14).
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.4.3, PDF p. 286: the whole of his solution is "See Algebraic Curves over Finite Fields by Hirschfeld, Theorem 3.27", which is not among the retained files, so there is no argument to check. The reduction above is that of the standard proof: (3.8) resolves $C$ by point blowups, and one point blowup at a bad point $P$ is realized by a quadratic transformation whose two other centres are chosen so that the joining lines meet $C$ at $P$ in exactly $\mu_P(C)$ and elsewhere transversely, which makes the three contracted lines ordinary multiple points and leaves every other germ unchanged; the only case it does not cover is an inseparable projection, steps [](#choose-auxiliary-points){.pf-ref} to [](#separable-case-induction){.pf-ref} being the separable one and [](#inseparable-case){.pf-ref} the citation he gives. Recorded in COMPLAINTS.
+The proof on the card is William Fulton, *Algebraic Curves: An Introduction to Algebraic Geometry* (2008), §7.4 "Quadratic Transformations", text version `tmp/sources/fulton-2008-algebraic-curves-pp55-62-86-92-110-115.md` (printed page = its marker minus 8): the standard quadratic transformation on printed p. 87, the transform formulas (1), (2), (3) on printed pp. 88--89, good and excellent position with (4) to (7) on printed pp. 88--90, the invariant $g^*$ and (8) on printed p. 90, Lemma 1 on printed p. 90 resting on Problem 5.26 on printed p. 60 and on Theorem 2 of §5.4 on printed p. 60, Theorem 2 of §7.4 on printed p. 91, and Appendix A "Nonzero Characteristic" on printed p. 113. It proves the exercise in every characteristic, and the two places where the book leaves work to the reader are carried out on the card: the calculation in (8), which is step [](#genus-invariant-drops){.pf-ref}, and the passage from (6) to the ordinariness of the three fundamental images, which is step [](#excellent-position){.pf-ref}.
+
+Thomas Rüd, *Resolution of singularities on projective curves* (semester project, January 6 2015), text version `tmp/sources/rud-2015-resolution-singularities-curves.md` (printed page = the PDF page minus one), proves the same theorem by the same route: Proposition 19 on printed p. 25 for excellent position, Propositions 20 and 21 on printed pp. 26--27 for the multiple points of the transform, Proposition 22 on printed p. 28 for the nonnegativity of $g^*$, Theorem 13 on printed p. 28 for the finite sequence, and §7.3 on printed p. 40 for the case of a positive characteristic, including the bound $p\mid n-r$ for a terrible point and the preparatory transformation. Rüd's Remark 23 on printed p. 28, which says that an ordinary multiple point contributes nothing to $g^*$, is false as printed --- an ordinary double point contributes $1$ --- and nothing on the card uses it.
 :::
 
-::: {.remark title="Published solutions searched"}
-The published treatments of this exercise are incomplete, so the card's own proof is what was checked against the book. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 3 of §4 (solution by Shuang-Yen Lee), PDF pp. 15--16, text version `tmp/sources/ntu-ag2-chapter5.md` (coarse page markers, so the pages were read off the PDF), does choose two auxiliary centres through the bad point and analyse the chart $x=(t+\mu)y$, and its intent is the argument of steps [](#quadratic-transform-realizes-blowup){.pf-ref} to [](#one-blowup-replaced-safely){.pf-ref}; but its case analysis of the multiplicity at the image point ends "if there's a $k$ such that $e'_k+k=e$ since we can factor into linear equations such that every direction has multiplicity less than $e$ $…$ induction on this then we are done", and it never shows that the three contracted points are ordinary, which is the content of step [](#contraction-points-ordinary){.pf-ref}.
+::: {remark title="Other published treatments"}
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 3 of §4 (solution by Shuang-Yen Lee), PDF pp. 15--16, text version `tmp/sources/ntu-ag2-chapter5.md` (coarse page markers, so the pages were read off the PDF), chooses the two auxiliary points through the bad point and analyses the multiplicity at the image point in the chart $x=(t+\mu)y$, and its intent is the argument above; but its case analysis ends "if there's a $k$ such that $e'_k+k=e$ since we can factor into linear equations such that every direction has multiplicity less than $e$ \ldots induction on this then we are done", and it never shows that the three contracted points are ordinary, which is the content of step [](#excellent-position){.pf-ref}.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.4.3, printed p. 109, states the criterion correctly: choose $P_2,P_3$ so that $P_1P_i$ meets $C$ transversally at $P_1$, then $R_i$ is on neither fundamental line and $\mu(R_i)<\mu(P_1)$, so the process terminates. It does not show that the images of $R_i$ at the three contraction points are ordinary, and it does not separate the inseparable projection case.
+Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.4.3, printed p. 109, states the termination criterion correctly: with $P_2,P_3$ chosen so that $P_1P_i$ meets $C$ transversally at $P_1$, the image point $R_i$ lies on neither fundamental line and $\mu(R_i)<\mu(P_1)$, so the process stops. It does not show that the images at the three contraction points are ordinary, and it separates no characteristic.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.4.3, PDF p. 286, is the single sentence "See Algebraic Curves over Finite Fields by Hirschfeld, Theorem 3.27"; Hirschfeld's book was not read here, and the published proofs of steps [](#excellent-position-attained){.pf-ref} and [](#positive-characteristic){.pf-ref} supersede that citation.
 :::
