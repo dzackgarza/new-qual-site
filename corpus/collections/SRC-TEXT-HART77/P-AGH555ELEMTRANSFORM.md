@@ -169,9 +169,43 @@ audit:
     by composing that sequence with the reverse of the other, which is what
     Definition 4.3's remark that the inverse of an elementary transform is one
     supplies; that last composition is the card's step and is stated as such.
-    Not checked here: the printed pages of Lemma 4.6 and of Proposition 3.8,
-    which the card does not cite, since the text version marks only twenty-page
-    blocks and the folios were read from the PDF for the statements it does cite.
+    Lemma 4.6, printed p. 28, is cited on the card and its proof was read on this
+    pass; Proposition 3.8, which the card does not cite, was not looked at. The
+    text version marks only twenty-page blocks, and the printed pages above were
+    read off the paper's own folios in the PDF.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A reader's report of this day on the transcription, repaired on the card.
+    (i) Sign error in the step that reaches a decomposable surface from
+    C x P^1. Theorem 4.9 gives e' ~ e - P at each elementary transform, and the
+    points are chosen with -e_0 ~ P_1 + ... + P_e, so the e steps carry the
+    determinant O_C of the normalized sheaf of P(O_C + O_C) to O_C(e_0), not to
+    O_C(-e_0); the class reached is e_0, which is what S_0 =
+    P(O_C + O_C(e_0)) has. The step now reads O_C(e_0).
+    (ii) Gap in the same step: Theorem 4.9 fixes only the determinant of the
+    normalized sheaf, and an indecomposable normalized sheaf can share a
+    determinant with a decomposable one, so it does not identify the surface
+    reached with P(O_C + O_C(e_0)). Theorem 4.12(1) of the same paper, printed
+    p. 31, supplies exactly that: if x lies on the minimum-self-intersection
+    curve then the elementary transform is decomposable with e' ~ e - P, its
+    proof being that X_0 and X_1 stay disjoint. The step now cites it, and the
+    remark names it among the statements the proof rests on.
+    (iii) The remark's provenance --- the tmp/sources paths, the block markers
+    of the text versions, and the sentence that the PDF's folios confirm the
+    pages --- is removed from the rendered page and recorded here. Read for this
+    pass, in tmp/sources/projective-theory-ruled-surfaces.md, whose markers are
+    twenty-page blocks of the paper's own PDF: Definition 4.3, printed p. 26;
+    Theorem 4.9 with its proof, printed pp. 30--31; Corollary 4.10 and
+    Corollary 4.11 with its proof, printed p. 31; and Theorem 4.12 with the
+    proof of its first item, printed p. 31. Read also in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, printed p. 419 for the
+    exercise. Not read here: Theorem 3.2, Proposition 3.8, Corollary 3.7 and
+    Proposition 1.2 were not re-read on this pass, their pages on the card being
+    those of earlier events; and no search was made outside the sources listed.
+    No claim of the card's statement changes; the correction is in the step that
+    reaches the decomposable surface.
 
 ---
 
@@ -261,7 +295,7 @@ $$
 S_0\cong\PP\bigl(\OO_C\oplus\OO_C(\mathfrak e_0)\bigr)
 \qquad\text{with } -\mathfrak e_0 \text{ effective.}
 $$
-The product $C\times\PP^1$ corresponds to the decomposable model $\PP(\OO_C\oplus\OO_C)$; writing $-\mathfrak e_0\sim P_1+\cdots+P_e$, one makes elementary transformations of $\PP(\OO_C\oplus\OO_C)$ on its minimum-self-intersection curve at the points $P_if\cap X_0$, and Theorem 4.9 of step [](#invariant-rises){.pf-ref} carries $\OO_C$ to $\OO_C(-\mathfrak e_0)$. So $S_0$, and with it $S$, is obtained from $C\times\PP^1$ by finitely many elementary transformations.
+The product $C\times\PP^1$ corresponds to the decomposable model $\PP(\OO_C\oplus\OO_C)$; writing $-\mathfrak e_0\sim P_1+\cdots+P_e$, one makes elementary transformations of $\PP(\OO_C\oplus\OO_C)$ on its minimum-self-intersection curve at the points $P_if\cap X_0$. Each of those steps changes the determinant of the normalized sheaf by $\mathfrak e\mapsto\mathfrak e-P$, by Theorem 4.9 of step [](#invariant-rises){.pf-ref}, so the $e$ of them carry $\OO_C$ to $\OO_C(\mathfrak e_0)$, because $-\mathfrak e_0$ is congruent to $P_1+\cdots+P_e$. A determinant class fixes only $\bigwedge^2$ of the normalized sheaf, and at $e\le2g-2$ an indecomposable normalized sheaf can share it, so Theorem 4.9 alone does not identify the surface reached; Theorem 4.12(1) of the same paper, printed p. 31, does: the elementary transform of a decomposable ruled surface at a point of its minimum-self-intersection curve is again decomposable, with $\mathfrak e'\sim\mathfrak e-P$. Each of the $e$ steps therefore keeps the surface decomposable, and the decomposable normalized model with determinant $\OO_C(\mathfrak e_0)$ is $\PP(\OO_C\oplus\OO_C(\mathfrak e_0))\cong S_0$. So $S_0$, and with it $S$, is obtained from $C\times\PP^1$ by finitely many elementary transformations.
 :::
 
 :::
@@ -296,9 +330,9 @@ Steps [](#elementary-transform-and-its-inverse){.pf-ref} and [](#intersection-fo
 :::
 
 ::: {.remark title="Published solutions"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.5, printed p. 419, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`, whose printed page is its marker minus fifteen. The operation is his Example 5.7.1, and the three printed hints are the three steps of the proof above: the drop $\widetilde D^{\,2}=D^2-1$ for a section through the centre is step [](#intersection-formula){.pf-ref}, the passage to a ruled surface with $e\gg0$ is steps [](#invariant-rises){.pf-ref} and [](#decomposable-reachable){.pf-ref}, and the decomposable case is step [](#from-the-product){.pf-ref}, where the paper's Theorem 3.2 takes the place of the book's (2.12).
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.5, printed p. 419. The operation is his Example 5.7.1, and the three printed hints are the three steps of the proof above: the drop $\widetilde D^{\,2}=D^2-1$ for a section through the centre is step [](#intersection-formula){.pf-ref}, the passage to a ruled surface with $e\gg0$ is steps [](#invariant-rises){.pf-ref} and [](#decomposable-reachable){.pf-ref}, and the decomposable case is step [](#from-the-product){.pf-ref}, where the paper's Theorem 3.2 takes the place of the book's (2.12).
 
-Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, read in `tmp/sources/projective-theory-ruled-surfaces.md` and in the PDF, is a complete printed proof of the exercise: Corollary 4.11 states that any ruled surface over the curve is obtained from $X\times\PP^1$ by finitely many elementary transformations, and its proof rests on Corollary 4.10 (from a decomposable surface, via Theorem 4.9's $e'=e+1$ and the bound $e\le2g-2$ of Theorem 3.2 for indecomposable surfaces) and on Definition 4.3 and Proposition 4.4 for the operation and its intersection numbers. Their printed pages are the paper's own, which the PDF's folios confirm: Proposition 1.2 at p. 3, Theorem 3.2 at p. 15, Definition 4.3 and Proposition 4.4 at pp. 26--27, Lemma 4.6 at p. 28, and Theorem 4.9 with Corollaries 4.10 and 4.11 at pp. 30--31. The one point the statement of Corollary 4.11 leaves to the reader is the passage from one ruled surface to another, the corollary joining each of the two to $X\times\PP^1$; step [](#two-surfaces-joined){.pf-ref} composes the two sequences, using the reversibility that Definition 4.3 states.
+Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, is a complete printed proof of the exercise: Corollary 4.11 states that any ruled surface over the curve is obtained from $X\times\PP^1$ by finitely many elementary transformations, and its proof rests on Corollary 4.10 (from a decomposable surface, via Theorem 4.9's $e'=e+1$ and the bound $e\le2g-2$ of Theorem 3.2 for indecomposable surfaces) and on Definition 4.3 and Proposition 4.4 for the operation and its intersection numbers. The decomposability of the surface reached from $X\times\PP^1$ is Theorem 4.12(1); Theorem 4.9 fixes only $\bigwedge^2$ of the normalized sheaf. Their printed pages: Proposition 1.2 at p. 3, Theorem 3.2 at p. 15, Definition 4.3 and Proposition 4.4 at pp. 26--27, Lemma 4.6 at p. 28, and Theorem 4.9 with Corollaries 4.10 and 4.11 and Theorem 4.12 at pp. 30--31. The one point the statement of Corollary 4.11 leaves to the reader is the passage from one ruled surface to another, the corollary joining each of the two to $X\times\PP^1$; step [](#two-surfaces-joined){.pf-ref} composes the two sequences, using the reversibility that Definition 4.3 states.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.5, printed p. 299, says only "Consequence of my proof of exc V.2.5.a". That is a cross-reference, not a proof.
 
