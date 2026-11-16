@@ -155,6 +155,30 @@ audit:
     "3y^{d-1}" is reversed: they vanish where 1 = x^{d-2}y and
     x^{d-1} = y^{d-2}, which give x = y^{d-1}, and the equation there is 3x, as
     the remark says.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Three notes on the events of this card, which are dated and are left as
+    written. (1) The source-corrected event of 2026-11-16 above says the
+    sentence of COMPLAINTS.md that had the Stacks derivatives vanish "at
+    x = y^{d-1}" with the equation "3y^{d-1}" is reversed. It is incomplete
+    rather than reversed: the two partials vanish together exactly where
+    1 = x^{d-2}y and x^{d-1} = y^{d-2}, which give x = y^{d-1}, and at such a
+    point 2x + y^{d-1} = 3x = 3y^{d-1}, so "3y^{d-1}" was right and the
+    condition 1 = x^{d-2}y is what the sentence lacked. The COMPLAINTS.md
+    sentence now states both conditions and both values. (2) The same wrong
+    order, y = 0 then x = 0 then z = 0, stands in the solution-reviewed event
+    of 2026-11-11 above, in its clause "y^{d-1}=0 forces y=0, then x=0, then
+    z=0, so the curve is nonsingular in every characteristic dividing d,
+    d=p=2 included", and it is false at the d = p = 2 that clause names: there
+    the z-partial gives y = 0, the equation gives z = 0, and the y-partial then
+    gives x = 0. (3) The first event of 2026-11-15 above was rewritten in place
+    by 73272357f3, which replaced its closing "So the source does not settle
+    p = 3, and its elimination does not settle any prime either" by the
+    correction; its text at its date is at 96b162602a, and the second event of
+    2026-11-15 above records what it had said, so nothing is lost and both
+    events stand as written.
 ---
 
 ::: {.problem}
