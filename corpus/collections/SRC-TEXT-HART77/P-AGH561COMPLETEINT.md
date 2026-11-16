@@ -43,39 +43,74 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
-    Read for issue #121, corrected in place on a reader's report of the same
-    day. Read: Yang Pi-Yeh, solution 5.6.1, printed p. 115 of
+    Read for issue #121 and cited the published solution on the card: Yang
+    Pi-Yeh, solution 5.6.1, printed p. 115 of
+    tmp/sources/lfwin-hartshorne-solutions.pdf (folio confirmed on the PDF's
+    own text layer), read in tmp/sources/lfwin-hartshorne-solutions.md and
+    checked against the exercise at Hartshorne V.6, printed p. 423 (PDF p. 438
+    of tmp/sources/hartshorne-1977-algebraic-geometry.md, printed = PDF
+    minus 15), and against Theorems 6.1--6.5 on printed pp. 421--422. Each step
+    of the solution now names the source of its statement: the adjunction
+    formula (Hartshorne II.8.4, and Yang's opening line), the six tuples
+    (Yang's two enumerations, with the bounds n < 5 and n <= 5 made explicit),
+    the del Pezzo placement (Theorem 6.1), the K3 placement (Theorem 6.3), and
+    the general-type conclusion (Theorem 6.5). Added: the paragraph that reads
+    kappa off the sign of a in omega = O(aH), which is what makes the two
+    enumerations exhaustive and excludes kappa = 1 (Theorem 6.4). Corrected on
+    the remark: Egbert's V.6.1 entry, printed p. 303, samples cases and does
+    not reach (3;4) or (4;2,2), so it is not a complete solution of this
+    exercise, and Yang's 5.6.1 is. Not checked: nothing beyond the enumerated
+    list was recomputed; the del Pezzo and K3 identifications are the card's
+    earlier ones, re-read but not re-derived in this pass.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The event above, of the same day, had been rewritten in place by
+    2e25f12802; it is restored here to the text it carried when 4578427ace
+    wrote it, and this event carries the corrections, its own and this pass's.
+
+    Read for this pass: Yang Pi-Yeh, solution 5.6.1, printed p. 115 of
     tmp/sources/lfwin-hartshorne-solutions.pdf (folio read on the PDF's own
-    text layer), in the text version tmp/sources/lfwin-hartshorne-solutions.md;
-    the exercise at Hartshorne V.6, printed p. 423 (PDF p. 438 of
-    tmp/sources/hartshorne-1977-algebraic-geometry.md, printed = PDF minus 15);
-    Theorems 6.1--6.5, printed p. 422; Exercise II.8.4(e), printed p. 188, and
-    Example II.8.20.3, printed p. 183, for the canonical class of a complete
-    intersection; and A. Egbert, V.6.1, printed p. 303 of
-    tmp/sources/hartshorne-solutions-egbert.md.
+    text layer), in tmp/sources/lfwin-hartshorne-solutions.md; A. Egbert,
+    V.6.1, printed p. 303 of tmp/sources/hartshorne-solutions-egbert.md; the
+    exercise at Hartshorne V.6, printed p. 423 (PDF p. 438 of
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, printed page = PDF page
+    minus 15); Theorems 6.1--6.5 on printed p. 422, after the marker for PDF
+    p. 437; and Exercise II.8.4(e), printed p. 188, with Example II.8.20.3,
+    printed p. 183, for the canonical class of a complete intersection.
 
-    Corrected here, because the previous text of this note was wrong on two
-    points of attribution. First, Yang's entry cites no Theorem 6.1: he derives
-    kappa = -1 implies sum d_i - n - 1 < 0 and lists the three tuples, and it
-    is Egbert, printed p. 303, who passes from a negative multiple of the
-    hyperplane class to |12K| empty by citing 6.1. Second, the placement of the
-    negative cases through Theorem 6.1, the del Pezzo identification with its
-    degrees, the q = 0 and K3 conclusion for the a = 0 cases, and the paragraph
-    reading kappa off the sign of a are the card's own, and the steps now say
-    so; Yang's own contribution is the two enumerations, which the card cites
-    at printed p. 115.
+    Corrected: Yang's entry cites no theorem of the book. What it gives is the
+    canonical class from adjunction and the two enumerations, and it is
+    Egbert, printed p. 303, who places them --- for n = 3 with d_1 = 2 or 3 he
+    has K_X a negative multiple of the ample hyperplane class, so that
+    |12K| is empty and Theorem 6.1 makes X rational or ruled, and for n = 4
+    with (d_1,d_2) = (2,3) and n = 5 with (2,2,2) he has K_X trivial, so that
+    X is K3 by Theorem 6.3. Both placements are now transcribed in the steps
+    negative-a-del-pezzo and zero-a-k3 with those pages, and the remark cites
+    him as well.
 
-    Also corrected: Theorems 6.1 and 6.3 are on printed p. 422, not p. 421
-    (they follow the marker for PDF p. 437), and the formula for the canonical
-    class is Exercise II.8.4(e) on printed p. 188, not a statement of II.8.4,
-    with Example II.8.20.3, printed p. 183, for hypersurfaces. The remark no
-    longer carries text-version paths or an account of what Egbert's entry
-    lacks; that belongs here and in COMPLAINTS.md (QUAL-08, SEC-7).
+    Withdrawn: the paragraph in step classification-summary that read the
+    Kodaira dimension off the sign of a and excluded kappa = 1. It was
+    written in this batch and is not needed: a > 0 is general type by
+    positivity, and the six remaining tuples are placed by the two steps
+    above. With it goes the sentence of the remark that listed which of the
+    card's arguments are its own, which is curation and not mathematics
+    (QUAL-08). The sentence "these cases lie in the kappa = -infinity part of
+    the surface classification" is replaced by Theorem 6.1's statement, kappa
+    = -1, which is the book's convention at V.6, printed p. 422, and the same
+    card already used -1 in another step. The phrase "the familiar rational
+    del Pezzo surfaces", which carried an uncited rationality claim, is
+    replaced by the computation of the squares K_X^2 = 8, 3, 4 that the step
+    already makes. Also corrected: Theorems 6.1 and 6.3 are on printed p. 422,
+    not p. 421, and the canonical class formula is Exercise II.8.4(e) on
+    printed p. 188, not a statement of II.8.4.
 
-    Not checked in this pass: the del Pezzo and K3 identifications were re-read
-    but not re-derived, and no published proof of the placement in the
-    classification was sought.
-
+    Not checked in this pass: the del Pezzo and K3 identifications were
+    re-read but not re-derived, and no published proof of the placement in the
+    classification beyond Yang's enumerations and Egbert's two cases was
+    sought. Egbert samples cases rather than listing them: his entry does not
+    reach (3;4) or (4;2,2).
 ---
 
 ::: {.problem}
@@ -261,21 +296,23 @@ $$
 K_X^2=4.
 $$
 
-Thus these are the del Pezzo surfaces of degrees $8$, $3$, and $4$,
-respectively. Over the algebraically closed ground field, the smooth
-quadric is $\PP^1\times\PP^1$, while the cubic surface and the degree-$4$
-del Pezzo surface are the familiar rational del Pezzo surfaces. Hence
-these cases lie in the $\kappa=-\infty$ part of the surface
-classification.
+Thus these are the del Pezzo surfaces of degrees $8$, $3$ and $4$; over the
+algebraically closed ground field the smooth quadric is
+$\PP^1\times\PP^1$.
 
-Yang gives the same three tuples at printed p. 115, as the case
+Since $a<0$, the divisor $12K_X\sim12aH$ is a negative multiple of the ample
+class $H$, so
+$$
+\linearsystem{12K_X}=\emptyset,
+$$
+a nonzero section being an effective divisor linearly equivalent to a
+negative multiple of an ample class. Hartshorne's Theorem 6.1, printed
+p. 422, then makes $X$ rational or ruled, that is $\kappa(X)=-1$. This is
+Egbert's step at printed p. 303, who for $n=3$ takes $d_1=2$ or $d_1=3$ so
+that $K_X$ is a negative multiple of ample and concludes from
+$\linearsystem{12K}=\emptyset$ by 6.1 that $X$ is rational or ruled; Yang
+gives the same three tuples at printed p. 115, as the case
 $\sum d_i-n-1<0$.
-
-That each of the three is a del Pezzo surface of the stated degree, and
-that all three are rational, is this card's own reading of them; the
-placement in the classification is Hartshorne's Theorem 6.1, printed
-p. 422, which identifies $\kappa=-1$ with $\linearsystem{12K}=\emptyset$
-and with $X$ rational or ruled.
 :::
 
 :::
@@ -334,12 +371,12 @@ $$
 namely $4$, $6$, and $8$.
 
 Yang gives these three tuples at printed p. 115, as the case
-$\sum d_i-n-1=0$, and records that they are K3 surfaces. That conclusion is
-this card's own, from $\omega_X\cong\OO_X$ and the vanishing of
-$H^1(X,\OO_X)$ recorded in [[P-AGH355COMPINT]]: a K3 surface is one with
-$K=0$ and $q=0$, hence with $p_a=p_g=1$, and Hartshorne's Theorem 6.3,
-printed p. 422, lists the surfaces of Kodaira dimension zero with those
-invariants.
+$\sum d_i-n-1=0$, and records that they are K3 surfaces; Egbert, printed
+p. 303, places them so, taking $n=4$ with $(d_1,d_2)=(2,3)$ and $n=5$ with
+$(2,2,2)$, where $K_X\equiv0$, and citing Theorem 6.3, printed p. 422, which
+lists the surfaces of Kodaira dimension zero with those invariants. The
+verification above, that $\omega_X\cong\OO_X$ with $H^1(X,\OO_X)=0$ gives
+$q=0$ and $p_g=1$, is the card's own.
 :::
 
 :::
@@ -354,13 +391,6 @@ Step [](#exceptional-tuples-enumerated){.pf-ref} exhausts every tuple for which 
 not in that list has $a>0$, and step [](#positive-a-general-type){.pf-ref} makes $X$ of general type.
 Among the six exceptions, step [](#negative-a-del-pezzo){.pf-ref} classifies the three cases with
 $a<0$, and step [](#zero-a-k3){.pf-ref} classifies the three cases with $a=0$.
-
-This paragraph is the card's own. Since $\omega_X\cong\OO_X(aH)$ with $H$
-ample, the Kodaira dimension of $X$ is $-1$, $0$ or $2$ according as
-$a<0$, $a=0$ or $a>0$, and never $1$: the case $a<0$ makes $-K_X$ ample,
-the case $a=0$ makes $\omega_X$ trivial, and the case $a>0$ makes $K_X$
-ample. A complete intersection surface of the kind considered is therefore
-never of the elliptic kind of Hartshorne's Theorem 6.4, printed p. 422.
 :::
 
 :::
@@ -381,5 +411,5 @@ The exercise is Hartshorne, *Algebraic Geometry* (1977), V.6, exercise 6.1, prin
 
 Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.6.1, printed p. 115, gives both enumerations: $\sum_i d_i-n-1<0$ with the tuples $(3;2)$, $(3;3)$, $(4;2,2)$, and $\sum_i d_i-n-1=0$ with the tuples $(3;4)$, $(4;2,3)$, $(5;2,2,2)$, which he records as K3 surfaces. His bounds are $n<5$ and $n\le5$, that is $2(n-2)\le n$ and $2(n-2)\le n+1$.
 
-The reading of $\kappa$ off the sign of $a$ in $\omega_X\cong\OO_X(aH)$, the identification of the three cases with $a<0$ as del Pezzo surfaces of degrees $8$, $3$ and $4$, the exclusion of $\kappa=1$, and the K3 identification of the three cases with $a=0$ are this card's own arguments, and the steps say so.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.1, printed p. 303, places two of the cases: for $n=3$ with $d_1=2$ or $d_1=3$ the canonical class is a negative multiple of the ample hyperplane class, so $\linearsystem{12K}=\emptyset$ and Theorem 6.1 makes $X$ rational or ruled; for $n=4$ with $(2,3)$ and $n=5$ with $(2,2,2)$ the canonical class is trivial, and $X$ is K3 by Theorem 6.3.
 :::
