@@ -100,12 +100,26 @@ audit:
     with the definition of an additive invariant that it uses. The remark now lists the two pages
     separately and in that order. (11.6.3) and (11.6.4) were checked the same way this pass, on the
     folios 288 and 289 (PDF pages 301 and 302) the card already gave them. (2) No citation named its
-    text version. tom Dieck is cited from the text of the Ranicki translation,
-    `tmp/sources/tomdieck-algebraic-topology-ranicki.md`, and Hatcher from
+    text version. tom Dieck is cited from the text of the book as held in
+    `tmp/sources/tomdieck-algebraic-topology-ranicki.md` --- the file name carries "ranicki", which names
+    nothing in the book, since tom Dieck wrote it in English --- and Hatcher from
     `tmp/sources/hatcher-2002-algebraic-topology.md`; the sentence naming each now says so, and the
     remark's page list was rewritten to name them. Nothing in the statement or the proof changes. Not
     claimed: a text version for any other source, this card citing none; and nothing was read from a
     rendered page.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, second pass: the source was misnamed, and the record is corrected here as well
+    as on the card. tom Dieck's *Algebraic Topology* (EMS Textbooks in Mathematics, 2008) is his own
+    English text; the reading copy
+    `tmp/sources/tomdieck-algebraic-topology-ranicki.md` carries "ranicki" in its file name only, and
+    that word names no translator of the book. The card and the note of this date called it "the Ranicki
+    translation", which is withdrawn: both places now say that the file name carries the word and that
+    the book is tom Dieck's own. Nothing else changes: the propositions, their folios, the statement of
+    Exercise 1 of §3.A on printed p. 267 and every step of the proof stand as they were, and no page was
+    re-read for this correction beyond the folios 288, 289, 309 and 310 the card already gives.
 ---
 
 ::: {.problem}
@@ -143,5 +157,5 @@ Checked against Hatcher, *Algebraic Topology* (2002), §3.A Exercise 1, printed 
 :::
 
 ::: {.remark title="Published solution"}
-tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), read in the text of the Ranicki translation held as `tmp/sources/tomdieck-algebraic-topology-ranicki.md`: the definition of finite $R$-type and of $\chi(X,A;R)$ on printed p. 310; Proposition (12.4.1), the alternating sum along a chain complex, on printed p. 309; Propositions (12.4.3) and (12.4.4) on printed p. 310, the second being the exercise's statement for every principal ideal domain and proved without the universal coefficient theorem, whose route the exercise names and which the solution's last paragraph gives; and Proposition (11.6.4) on printed p. 289 for the finite free model, with Theorem (11.6.3) on printed p. 288. The exercise is Exercise 1 of §3.A, printed p. 267.
+tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), read in the text of the book held as `tmp/sources/tomdieck-algebraic-topology-ranicki.md`, whose file name carries "ranicki" and names no translator, the book being tom Dieck's own English text: the definition of finite $R$-type and of $\chi(X,A;R)$ on printed p. 310; Proposition (12.4.1), the alternating sum along a chain complex, on printed p. 309; Propositions (12.4.3) and (12.4.4) on printed p. 310, the second being the exercise's statement for every principal ideal domain and proved without the universal coefficient theorem, whose route the exercise names and which the solution's last paragraph gives; and Proposition (11.6.4) on printed p. 289 for the finite free model, with Theorem (11.6.3) on printed p. 288. The exercise is Exercise 1 of §3.A, printed p. 267.
 :::

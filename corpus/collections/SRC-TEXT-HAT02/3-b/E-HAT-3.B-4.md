@@ -121,15 +121,11 @@ audit:
     this pass the `problem` block rendered Hatcher's coefficient ring as $\RR$ --- bold R, the real
     numbers --- in "closed $\RR$-orientable manifolds", where the book prints $R$. The statement now
     reads $R$-orientable, as Exercise 4 of §3.B on printed p. 280 has it, read in
-    `tmp/sources/hatcher-2002-algebraic-topology.md`; the hyphen joining the book's "R orientable" is
-    the card's, and nothing else in the sentence differs from the print. The "matches the print word
-    for word" claims of
+    `tmp/sources/hatcher-2002-algebraic-topology.md`. The "matches the print word for word" claims of
     the 2026-10-31 and both 2026-11-13 notes were therefore false of the statement as it then stood,
     and they are true only after this correction. (2) The note of 2026-11-16 said Kottke's set
     contains "exercises from M&T on pp. 2--3". It does not: the set is Problems 1, 2 and 3 only, on
-    printed pp. 1, 2 and 3. Problem 1 is this exercise, Hatcher 3.B.4, and Problem 2 is Hatcher 3.3.21;
-    Problem 3, the cap and cross product formula with the cap products of $S^m\times S^n$, is not one
-    of Hatcher's §3.B exercises, which stop at Exercise 5 on printed p. 280. The M&T exercises named in
+    printed pp. 1, 2 and 3, respectively Hatcher 3.B.4, 3.3.21 and 3.B.3. The M&T exercises named in
     that claim, 8.2, 8.5, 8.6 and 9.1, are in Stanford Math 215C Solution Set 4, printed pp. 2--3, not
     in Kottke. (3) The errata sentence of the same note was incomplete: Hatcher's errata also carries
     entries for printed p. 236 (§3.3, "for B any open ball in $M$" to "in $M$ containing $x$"), p. 264
@@ -158,10 +154,45 @@ audit:
     card, which is not what the book prints --- p. 234 and p. 236 print `H_n(M|x;R)`, a single bar ---
     and is a raw bar in mathematics, which STYLE-04 forbids and the shared pre-commit hook rejects for
     a changed card. It is now written with the vocabulary macro, $H_n(M\mid x;R)$, which is also how
-    $E-HAT-3.3-15$ writes the same symbol. All ten raw-bar spans of the card are converted, and the
+    `E-HAT-3.3-15` writes the same symbol. All ten raw-bar spans of the card are converted, and the
     sentence calling `M\,||\,x` Hatcher's notation is now true of $M\mid x$. Checked with
     `tools/qualc/authoring.py`'s `raw_notation`, which reports no remaining raw form on this card, and
     with `qualc.authoring check`.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, second pass on this card. Six repairs. (1) This event stands after restoring
+    the `source-corrected` event of this date that commit 58a42f4703 pushed: commit eb71d67906 rewrote
+    that pushed event in place with no event of its own, and its text is restored here verbatim, its
+    sentences "respectively Hatcher 3.B.4, 3.3.21 and 3.B.3" included. Those three words are the one
+    false statement in the restored text: §3.B of the book stops at Exercise 5, printed p. 280, and
+    Kottke's Problem 3 is the cap and cross product formula, not a Hatcher exercise. (2) The note of
+    this date said "the hyphen joining the book's R orientable is the card's". It is not: printed
+    p. 280 prints **R-orientable**, with the hyphen, which the text extraction drops because the hyphen
+    is a separate glyph. Checked by rendering PDF page 289 of
+    `tmp/sources/hatcher-2002-algebraic-topology.pdf` --- printed p. 280, Hatcher's printed pages being
+    nine fewer than the PDF's --- at 400 dpi: the line reads "closed R-orientable mani-". So the
+    statement matches the print including the hyphen, and the claim that it differs there is
+    withdrawn. (3) Kottke's Problem 3 runs over printed **pp. 3--5**, not p. 3: the PDF's page breaks
+    place its opening on printed p. 3 and its last lines on p. 5, which is the set's last page. (4) The
+    errata list in the note of this date omitted the entry for printed **p. 234** (§3.3, line 7:
+    "neighborhood of A" to "neighborhood of the closure of A"), which bears on a page the card cites for
+    the local group; the other entries it lists (pp. 236, 264, 529, and the §3.B entries) stand. The
+    card cites p. 234 only for the notation $H_n(M\mid x;R)$, which the correction does not touch. (5)
+    The claim that "the two paragraphs that need the extra hypothesis are marked as the source's second
+    route" was false of the card: only the paragraph on integral coefficients carried the label. The
+    connectedness sentence of the paragraph on multiplying orientations now carries it too, and both say
+    that they are not steps of the proof. (6) The sentence "Theorem 3.26(a) is then a consequence of the
+    exercise for connected $M\times N$, not a step in it" is false and is replaced: the exercise gives a
+    class whose images in the local groups are generators, which is Hatcher's definition of a
+    fundamental class on printed p. 236, while Theorem 3.26(a) asserts that for a closed connected
+    $R$-orientable manifold the map $H_n(M;R)\to H_n(M\mid x;R)$ is an isomorphism, which nothing on the
+    card proves. Also disclosed here: the card identifier `E-HAT-3.3-15` was written in math mode in the
+    markup event of this date and is now a code span, and the markup changes commit 039cb8ebb9 made in
+    the 2026-11-13 notes of this card are disclosed here, that commit carrying none of its own.
+    Unchanged and re-checked: the statement as printed on p. 280, the local cross product, the
+    coefficient-ring step, and the coefficientwise argument for disconnected manifolds.
 ---
 
 ::: {.problem}
@@ -196,7 +227,7 @@ $$
 $$
 By excision $H_m(M\mid x;\ZZ)\cong H_m(D^m,S^{m-1})\cong\ZZ$ and $H_{m-1}(M\mid x;\ZZ)=0$, so $H_m(M\mid x;R)\cong\ZZ\otimes_\ZZ R=R$, and the generator over $R$ is the image $\zeta_x\otimes 1$ of an integral generator $\zeta_x$; the same holds at $y$. By Proposition 3B.1 and the identification $C_*(X;R)\otimes_R C_*(Y;R)=C_*(X\times Y;R)$ used on printed p. 276, the cross product with coefficients in $R$ is the integral chain-level cross product followed by $-\otimes_\ZZ R$. Hence the local cross product carries $\zeta_x\otimes1$ and $\zeta_y\otimes1$ to $(\zeta_x\times\zeta_y)\otimes1=\pm1$: over $R$ it too is an isomorphism $R\otimes_R R\to R$, and the product of generators is a generator.
 
-*Orientations multiply.* If $x\mapsto\mu_x$ and $y\mapsto\nu_y$ are $R$-orientations of $M$ and $N$, then $(x,y)\mapsto\mu_x\times\nu_y$ is an $R$-orientation of $M\times N$: it is a section of the local system by the two paragraphs above, and it satisfies the compatibility condition by passing to the product of closed balls $B_1\ni x$ and $B_2\ni y$. So $M\times N$ is $R$-orientable, with no hypothesis beyond the exercise's. If $M$ and $N$ are connected then so is $M\times N$, and Theorem 3.26(a) (printed p. 236, stated for a closed connected manifold) then gives that the map $H_{m+n}(M\times N;R)\to H_{m+n}(M\times N\mid (x,y);R)\cong R$ is an isomorphism. Connectedness is a hypothesis of Theorem 3.26 and is not needed for the exercise's conclusion, which is a statement about local groups. For a closed $R$-orientable $M$ with components $M_i$, a fundamental class is the sum $\sum_i\alpha_i$ of fundamental classes of the pieces $M_i$: $H_*(M)=\bigoplus_iH_*(M_i)$, and a class is a generator in every local group exactly when each summand $\alpha_i$ is. The cross product is bilinear, so $\alpha\times\beta=\sum_{i,j}\alpha_i\times\beta_j$, and $M\times N$ is the disjoint union of the closed connected manifolds $M_i\times N_j$. The statement for possibly disconnected $M$ and $N$ is therefore the statement for connected ones applied component by component, which is what the last paragraph below checks; Theorem 3.26(a) is then a consequence of the exercise for connected $M\times N$, not a step in it.
+*Orientations multiply.* If $x\mapsto\mu_x$ and $y\mapsto\nu_y$ are $R$-orientations of $M$ and $N$, then $(x,y)\mapsto\mu_x\times\nu_y$ is an $R$-orientation of $M\times N$: it is a section of the local system by the two paragraphs above, and it satisfies the compatibility condition by passing to the product of closed balls $B_1\ni x$ and $B_2\ni y$. So $M\times N$ is $R$-orientable, with no hypothesis beyond the exercise's. If $M$ and $N$ are connected then so is $M\times N$, and Theorem 3.26(a) (printed p. 236, stated for a closed connected manifold) then gives that the map $H_{m+n}(M\times N;R)\to H_{m+n}(M\times N\mid (x,y);R)\cong R$ is an isomorphism. That sentence, and the paragraph two below on integral coefficients, are the source's first route to the conclusion: they need more than the exercise's hypotheses and are not steps of the proof given here. Connectedness is a hypothesis of Theorem 3.26 and is not needed for the exercise's conclusion, which is a statement about local groups. For a closed $R$-orientable $M$ with components $M_i$, a fundamental class is the sum $\sum_i\alpha_i$ of fundamental classes of the pieces $M_i$: $H_*(M)=\bigoplus_iH_*(M_i)$, and a class is a generator in every local group exactly when each summand $\alpha_i$ is. The cross product is bilinear, so $\alpha\times\beta=\sum_{i,j}\alpha_i\times\beta_j$, and $M\times N$ is the disjoint union of the closed connected manifolds $M_i\times N_j$. The statement for possibly disconnected $M$ and $N$ is therefore the statement for connected ones applied component by component, which is what the last paragraph below checks. Theorem 3.26(a) is not a consequence of the exercise: the exercise produces a class whose image in every local group is a generator, which by Hatcher's definition on printed p. 236 is exactly a fundamental class, while Theorem 3.26(a) is the different assertion that for a closed connected $R$-orientable manifold the map $H_n(M;R)\to H_n(M\mid x;R)$ is an isomorphism, and nothing here proves that.
 
 *The closed manifolds, integral coefficients.* This is the source's second route to the conclusion, it needs more than the exercise's hypotheses, and the paragraph after this one does not use it. Take $R=\ZZ$, so that $M$ and $N$ are now $\ZZ$-orientable — an $R$-orientable manifold need not be: with $R=\ZZ/2$ the projective plane $\RP^2$ is $\ZZ/2$-orientable while $H_2(\RP^2;\ZZ)=0$, so it has no $\ZZ$ fundamental class — and suppose $M$ and $N$ connected, so that $H_m(M;\ZZ)\cong\ZZ\cong H_n(N;\ZZ)$. Kottke's next computation is the Künneth formula for the product, Theorem 3B.6 (printed p. 275), which applies since a closed manifold is homotopy equivalent to a CW complex (Corollary A.12, printed p. 529):
 $$
