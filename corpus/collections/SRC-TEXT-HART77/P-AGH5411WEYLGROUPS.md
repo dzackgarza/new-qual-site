@@ -155,6 +155,34 @@ audit:
     obtained is the one the sources give. Not reviewed: no proof of
     |E_6| <= 51840 was found or added; the COMPLAINTS record of this date
     names it.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Third pass, on the second reader's findings for this card. Read again:
+    Chapter V §4 Exercise 11 of tmp/sources/ntu-ag2-chapter5.md, and printed
+    pp. 17--18 of tmp/sources/ntu-ag2-chapter5.pdf, whose folios are the PDF
+    pages; part (a) is printed on p. 17, its last line the coset partition and
+    |A_n| = n!, and part (b) on p. 18. Two corrections. The remark's pointer to
+    part (a) said "the same page's part (a)" where part (b) is the page's
+    subject, and it now names part (a) with its own page. The remark's closing
+    sentence, that the faithfulness of the geometric representation is what
+    "the sources cited here do not provide", was a statement about the sources
+    rather than about the mathematics, and is replaced by the mathematical
+    statement that the equality of the two orders is the injectivity of the
+    geometric representation of a Coxeter group. Not checked in this pass: the
+    Dolgachev proposition and corollary pages were not re-read, the two order
+    computations not reopened beyond their arithmetic in the step, and no
+    source outside those named on the card was read.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The two remark corrections above: part (a) of the NTU exercise carries its
+    own page, printed p. 17, and the closing sentence states the injectivity of
+    the geometric representation instead of reporting what the sources do not
+    provide. The mathematics of the card is unchanged, and no part of it was
+    moved from "open" to "proved" or the reverse.
 ---
 
 ::: {.problem}
@@ -433,8 +461,8 @@ Part (a): Math StackExchange question 200840, answer 247553 by user26857 (2012-1
 bound is steps [](#an-cosets){.pf-ref} and [](#an-isomorphism){.pf-ref}.
 
 Part (b): National Taiwan University, *Algebraic Geometry II* (2020 Spring, Chin-Lung Wang), Chapter
-V §4 Exercise 11(b), by Pei-Hsuan Chang, printed p. 18, which checks the Coxeter relations for the
-two kinds of generator; the same page's part (a) gives the coset partition of $\mathbf A_n$ and
+V §4 Exercise 11, by Pei-Hsuan Chang: part (b), printed p. 18, checks the Coxeter relations for the
+two kinds of generator, and part (a), printed p. 17, gives the coset partition of $\mathbf A_n$ and
 $\cardinality{\mathbf A_n}=n!$ directly.
 
 Parts (b) and (c): Proposition 4.10 and Remark 4.10.1 of the book, printed pp. 403--405, for the
@@ -445,6 +473,6 @@ Part (c): I. V. Dolgachev, *Topics in Classical Algebraic Geometry* (September 2
 the count of exceptional vectors, and Theorem 9.1.2 and Proposition 9.1.3, printed pp. 320--321, for
 the same order as $72\cdot6!$ from the sixers. Both are orders of the reflection group of the
 $\mathbf E_6$ lattice, which the presentation maps onto, so they give
-$\cardinality{\mathbf E_6}\ge51840$; the equality of the two orders is the faithfulness of the
-geometric representation of a Coxeter group, which the sources cited here do not provide.
+$\cardinality{\mathbf E_6}\ge51840$; the equality of the two orders is the injectivity of the
+geometric representation of a Coxeter group.
 :::
